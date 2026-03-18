@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { RegisterForm } from "@/components/auth/register-form"
+import Link from "next/link"
 
 export default function RegisterPage() {
   const t = useTranslations("auth")
@@ -7,11 +9,15 @@ export default function RegisterPage() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-center">{t("register")}</CardTitle>
+        <CardTitle className="text-center text-2xl">{t("register")}</CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="text-center text-sm text-muted-foreground">
-          Registrierungs-Formular kommt in Tag 8-9.
+        <RegisterForm />
+        <p className="mt-4 text-center text-sm text-muted-foreground">
+          {t("hasAccount")}{" "}
+          <Link href="/login" className="font-medium text-primary hover:underline">
+            {t("login")}
+          </Link>
         </p>
       </CardContent>
     </Card>
