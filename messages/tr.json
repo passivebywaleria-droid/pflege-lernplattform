@@ -1,0 +1,94 @@
+{
+  "common": {
+    "appName": "Hemşirelik Öğrenme Platformu",
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "back": "Geri",
+    "next": "İleri",
+    "close": "Kapat",
+    "search": "Ara",
+    "language": "Dil",
+    "darkMode": "Karanlık mod",
+    "lightMode": "Aydınlık mod"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "learn": "Öğren",
+    "review": "Tekrar",
+    "progress": "İlerleme",
+    "glossary": "Sözlük",
+    "settings": "Ayarlar",
+    "dashboard": "Kontrol Paneli",
+    "students": "Öğrenciler",
+    "reports": "Raporlar",
+    "logout": "Çıkış Yap"
+  },
+  "auth": {
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol",
+    "email": "E-posta adresi",
+    "password": "Şifre",
+    "name": "Ad Soyad",
+    "forgotPassword": "Şifreni mi unuttun?",
+    "noAccount": "Hesabın yok mu?",
+    "hasAccount": "Zaten hesabın var mı?",
+    "loginSuccess": "Giriş başarılı",
+    "registerSuccess": "Kayıt başarılı",
+    "loginError": "E-posta veya şifre yanlış",
+    "registerError": "Kayıt başarısız"
+  },
+  "landing": {
+    "hero": "Hemşirelik öğren — istediğin zaman, istediğin yerde",
+    "subtitle": "Genel hemşirelik eğitimi için adaptif öğrenme platformu",
+    "cta": "Ücretsiz başla",
+    "ctaSchool": "Okullar için",
+    "feature1Title": "Adaptif Öğrenme",
+    "feature1Desc": "Yapay zeka destekli öğrenme yolları seviyenize uyum sağlar",
+    "feature2Title": "Aralıklı Tekrar",
+    "feature2Desc": "Kalıcı öğrenme için bilimsel olarak optimize edilmiş tekrar",
+    "feature3Title": "Çok Dilli",
+    "feature3Desc": "Almanca, Arapça ve Türkçe terimler"
+  },
+  "learn": {
+    "allCE": "Tüm Müfredat Birimleri",
+    "modules": "Modüller",
+    "minutes": "dakika",
+    "startModule": "Modülü Başlat",
+    "continueModule": "Devam Et",
+    "completed": "Tamamlandı",
+    "inPreparation": "Hazırlanıyor",
+    "mastery": "Ustalık"
+  },
+  "quiz": {
+    "question": "Soru",
+    "of": "/",
+    "checkAnswer": "Cevabı Kontrol Et",
+    "correct": "Doğru!",
+    "incorrect": "Tam değil.",
+    "correctAnswer": "Doğru cevap",
+    "explanation": "Açıklama",
+    "aiExplain": "Yapay Zeka Açıklaması",
+    "nextQuestion": "Sonraki Soru",
+    "finish": "Testi Bitir",
+    "score": "Sonuç",
+    "tryAgain": "Tekrar Dene"
+  },
+  "gamification": {
+    "streak": "ardışık gün",
+    "xp": "XP",
+    "dailyGoal": "Günlük Hedef",
+    "minutesToday": "bugün dakika",
+    "streakFreezes": "Seri Koruması"
+  },
+  "review": {
+    "title": "Günlük Tekrar",
+    "dueCards": "Bekleyen Kartlar",
+    "noCards": "Bekleyen kart yok — harika!",
+    "again": "Tekrar",
+    "hard": "Zor",
+    "good": "İyi",
+    "easy": "Kolay"
+  }
+}

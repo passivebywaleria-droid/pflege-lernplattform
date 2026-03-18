@@ -1,0 +1,94 @@
+{
+  "common": {
+    "appName": "Pflege-Lernplattform",
+    "loading": "Laden...",
+    "error": "Ein Fehler ist aufgetreten",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "back": "Zurueck",
+    "next": "Weiter",
+    "close": "Schliessen",
+    "search": "Suchen",
+    "language": "Sprache",
+    "darkMode": "Dunkelmodus",
+    "lightMode": "Hellmodus"
+  },
+  "nav": {
+    "home": "Start",
+    "learn": "Lernen",
+    "review": "Wiederholen",
+    "progress": "Fortschritt",
+    "glossary": "Glossar",
+    "settings": "Einstellungen",
+    "dashboard": "Dashboard",
+    "students": "Schueler",
+    "reports": "Berichte",
+    "logout": "Abmelden"
+  },
+  "auth": {
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "email": "E-Mail-Adresse",
+    "password": "Passwort",
+    "name": "Vollstaendiger Name",
+    "forgotPassword": "Passwort vergessen?",
+    "noAccount": "Noch kein Konto?",
+    "hasAccount": "Bereits registriert?",
+    "loginSuccess": "Anmeldung erfolgreich",
+    "registerSuccess": "Registrierung erfolgreich",
+    "loginError": "E-Mail oder Passwort falsch",
+    "registerError": "Registrierung fehlgeschlagen"
+  },
+  "landing": {
+    "hero": "Pflege lernen — wann und wo du willst",
+    "subtitle": "Die adaptive Lernplattform fuer die generalistische Pflegeausbildung",
+    "cta": "Kostenlos starten",
+    "ctaSchool": "Fuer Schulen anfragen",
+    "feature1Title": "Adaptives Lernen",
+    "feature1Desc": "KI-gestuetzte Lernpfade passen sich deinem Wissensstand an",
+    "feature2Title": "Spaced Repetition",
+    "feature2Desc": "Wissenschaftlich optimierte Wiederholung fuer nachhaltigen Lernerfolg",
+    "feature3Title": "Mehrsprachig",
+    "feature3Desc": "Fachbegriffe auf Deutsch, Arabisch und Tuerkisch"
+  },
+  "learn": {
+    "allCE": "Alle Curricularen Einheiten",
+    "modules": "Module",
+    "minutes": "Minuten",
+    "startModule": "Modul starten",
+    "continueModule": "Fortsetzen",
+    "completed": "Abgeschlossen",
+    "inPreparation": "In Vorbereitung",
+    "mastery": "Meisterung"
+  },
+  "quiz": {
+    "question": "Frage",
+    "of": "von",
+    "checkAnswer": "Antwort pruefen",
+    "correct": "Richtig!",
+    "incorrect": "Nicht ganz.",
+    "correctAnswer": "Richtige Antwort",
+    "explanation": "Erklaerung",
+    "aiExplain": "KI-Erklaerung anzeigen",
+    "nextQuestion": "Naechste Frage",
+    "finish": "Quiz beenden",
+    "score": "Ergebnis",
+    "tryAgain": "Nochmal versuchen"
+  },
+  "gamification": {
+    "streak": "Tage in Folge",
+    "xp": "XP",
+    "dailyGoal": "Tagesziel",
+    "minutesToday": "Minuten heute",
+    "streakFreezes": "Streak-Schutze"
+  },
+  "review": {
+    "title": "Taegliche Wiederholung",
+    "dueCards": "Faellige Karten",
+    "noCards": "Keine Karten faellig — gut gemacht!",
+    "again": "Nochmal",
+    "hard": "Schwer",
+    "good": "Gut",
+    "easy": "Leicht"
+  }
+}

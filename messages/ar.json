@@ -1,0 +1,94 @@
+{
+  "common": {
+    "appName": "منصة تعلم التمريض",
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "back": "رجوع",
+    "next": "التالي",
+    "close": "إغلاق",
+    "search": "بحث",
+    "language": "اللغة",
+    "darkMode": "الوضع الداكن",
+    "lightMode": "الوضع الفاتح"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "learn": "تعلّم",
+    "review": "مراجعة",
+    "progress": "التقدم",
+    "glossary": "المصطلحات",
+    "settings": "الإعدادات",
+    "dashboard": "لوحة التحكم",
+    "students": "الطلاب",
+    "reports": "التقارير",
+    "logout": "تسجيل الخروج"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "name": "الاسم الكامل",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "noAccount": "ليس لديك حساب؟",
+    "hasAccount": "لديك حساب بالفعل؟",
+    "loginSuccess": "تم تسجيل الدخول بنجاح",
+    "registerSuccess": "تم إنشاء الحساب بنجاح",
+    "loginError": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+    "registerError": "فشل إنشاء الحساب"
+  },
+  "landing": {
+    "hero": "تعلّم التمريض — في أي وقت وأي مكان",
+    "subtitle": "منصة التعلم التكيفية لتعليم التمريض الشامل",
+    "cta": "ابدأ مجاناً",
+    "ctaSchool": "للمدارس",
+    "feature1Title": "التعلم التكيفي",
+    "feature1Desc": "مسارات تعلم مدعومة بالذكاء الاصطناعي تتكيف مع مستواك",
+    "feature2Title": "التكرار المتباعد",
+    "feature2Desc": "مراجعة علمية محسنة لتعلم مستدام",
+    "feature3Title": "متعدد اللغات",
+    "feature3Desc": "المصطلحات بالألمانية والعربية والتركية"
+  },
+  "learn": {
+    "allCE": "جميع الوحدات الدراسية",
+    "modules": "الوحدات",
+    "minutes": "دقائق",
+    "startModule": "بدء الوحدة",
+    "continueModule": "متابعة",
+    "completed": "مكتمل",
+    "inPreparation": "قيد الإعداد",
+    "mastery": "الإتقان"
+  },
+  "quiz": {
+    "question": "سؤال",
+    "of": "من",
+    "checkAnswer": "تحقق من الإجابة",
+    "correct": "صحيح!",
+    "incorrect": "ليس تماماً.",
+    "correctAnswer": "الإجابة الصحيحة",
+    "explanation": "الشرح",
+    "aiExplain": "عرض شرح الذكاء الاصطناعي",
+    "nextQuestion": "السؤال التالي",
+    "finish": "إنهاء الاختبار",
+    "score": "النتيجة",
+    "tryAgain": "حاول مرة أخرى"
+  },
+  "gamification": {
+    "streak": "أيام متتالية",
+    "xp": "نقاط الخبرة",
+    "dailyGoal": "الهدف اليومي",
+    "minutesToday": "دقائق اليوم",
+    "streakFreezes": "حماية السلسلة"
+  },
+  "review": {
+    "title": "المراجعة اليومية",
+    "dueCards": "بطاقات مستحقة",
+    "noCards": "لا توجد بطاقات مستحقة — أحسنت!",
+    "again": "مرة أخرى",
+    "hard": "صعب",
+    "good": "جيد",
+    "easy": "سهل"
+  }
+}
