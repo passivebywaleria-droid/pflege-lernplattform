@@ -1,0 +1,36 @@
+# Ralph Loop Progress — CE-05 Content-Loop
+# Append-only. Jede Iteration schreibt Learnings ans Ende.
+
+---
+## Vorherige Erfahrungen (manueller Content-Loop)
+
+### LE 01 Einfuehrung (2026-03-21)
+- 10 Steps funktionieren gut fuer 2 UE
+- Leitfall Petra Meier (45, Erzieherin) — gut als Einstieg (Vorurteil aufbrechen)
+- Quellenrecherche: 16 Quellen gefunden, DGRh-Kerndokumentation ist Hauptquelle fuer Epidemiologie
+- B1-Differenzierung: Nicht alle Steps brauchen B1 (MC-Fragen sind sprachneutral genug)
+- steps.ts: Keine Umlaute in Strings verwenden (ae/oe/ue)
+- Step-IDs: Format "einfuehrung-01" funktioniert
+
+### LE 04 RA (2026-03-21)
+- 17 Steps fuer 3 UE
+- Leitfall Ayse Yilmaz (52, Schneiderin) — interkultureller Aspekt gut
+- 27 Glossar-Eintraege, 7 verschiedene Step-Typen genutzt
+- Bloom B3+ bei 59% der Steps (Anwendungslektion)
+- Branching Scenario bei Step 14 besonders gut angekommen
+
+---
+## Ralph Loop Iteration 1
+
+### LE 02 Anatomie (2026-03-21)
+- 12 Steps fuer 2 UE (passend, nicht ueberladen)
+- Leitfall Karim Hassan (34, Buerokaufmann, syrisch) — Diversitaet: maennlich, jung, anderer Hintergrund
+- Sprunggelenksverletzung als Anatomie-Vehikel funktioniert gut — alle Gelenkstrukturen erklaerbar
+- 12 Glossar-Eintraege, 7 verschiedene Step-Typen
+- Bloom B1-B3 (B3+ bei 17%) — niedrig aber OK fuer reine Anatomie-Grundlagen (prd.json sagt B1-B2)
+- B1-Differenzierung: 7 von 12 Steps (Text + Freetext), MC/Matching/Sorting/Branching brauchen keine B1
+- Branching-Szenario (Diagnostik in Notaufnahme) bringt Praxisbezug in Anatomie-Lektion
+- Freetext-Frage "Warum heilt Knorpel schlecht?" schlaegt Bruecke zu Rheuma (LE 03 + LE 04)
+- Ottawa Ankle Rules als Quelle fuer Branching gut recherchierbar (Kramer et al. 2024, PMC Open Access)
+- prd.json sagt ueCount: 2, Manifest sagt 3 — Diskrepanz. Habe 2 UE verwendet (12 Steps statt 15)
+- TypeScript kompiliert fehlerfrei beim ersten Versuch
