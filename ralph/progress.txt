@@ -174,3 +174,24 @@
 - B1-Differenzierung: 6 von 12 Steps (3 Text + 1 Selfrating + 1 Freetext-Satzanfaenge + 1 Transfer-Text)
 - Block C (Diagnostik & Therapie) komplett: LE 08, LE 09, LE 10 fertig
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 9
+
+### LE 11 Pflegerische Assessments bei Rheuma (2026-03-21)
+- 12 Steps fuer 2 UE (konsistent mit anderen 2-UE-Lektionen)
+- Leitfall Ingrid Braun (67, pensionierte Gymnasiallehrerin, deutsch) — Diversitaet: aeltere deutsche Frau, Akademikerin
+- Vorurteil "Langzeitpatienten kennen ihre Krankheit" als zentrales didaktisches Element
+- Diskrepanz Selbsteinschaetzung vs. Assessment-Ergebnisse als roter Faden der gesamten Lektion
+- Fatigue als "unsichtbares" Symptom: Ingrid hielt es fuer normales Altern
+- DAS28 4.1 (mittel), HAQ 1.2 (deutlich), BRAF-NRS 7/10 (stark) — konkrete Zahlenwerte fuer Praxisbezug
+- 12 Glossar-Eintraege, 7 verschiedene Step-Typen
+- Bloom B2-B4: B3+ bei 50% (6/12 Steps) — passend fuer Assessment-Lektion mit Anwendungsfokus
+- Branching "Ergebnisse kommunizieren" — Sandwich-Prinzip, wertschaetzende Kommunikation, NICHT "Ihre Werte sind schlecht"
+- Freetext "Warum reicht Selbsteinschaetzung nicht?" — Kernreflexion der gesamten Lektion
+- Matching "Instrument → Was es misst" mit 6 Paaren (NRS, HAQ, DAS28, BRAF, FFbH, CDAI)
+- Sorting "Gelenkstatus-Erhebung" — systematische Reihenfolge (Inspektion → Palpation → Funktion → Seitenvergleich → Dokumentation)
+- 10 Quellen: 1x AWMF S3-Leitlinie, 1x DNQP Expertenstandard, 1x HAQ/FFbH-Validierung, 1x BRAF-Entwicklung, 1x DAS28-Review, 1x DGRh-Kerndokumentation, 1x Digital Rheuma Lab, 1x BRAF-Validierung 6 Laender, 1x EULAR Nurse Role, 1x Lehrbuch
+- B1-Differenzierung: 6 von 12 Steps (4 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
+- Block D (Pflegerisches Handeln) begonnen — LE 12-15 folgen
+- TypeScript kompiliert fehlerfrei beim ersten Versuch

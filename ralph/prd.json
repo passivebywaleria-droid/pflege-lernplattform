@@ -108,7 +108,7 @@
       "estimatedSteps": 12,
       "bloomRange": [2, 4],
       "kompetenzbereiche": ["KB-I.1", "KB-V.1"],
-      "passes": false,
+      "passes": true,
       "themen": "Schmerzassessment (VAS, NRS). Funktionsassessment (HAQ, FFbH). Fatigue-Assessment (BRAF). Krankheitsaktivitaet (DAS28, CDAI). Lebensqualitaet (SF-36, RAQoL). Pflegerische Beobachtung: Gelenkstatus dokumentieren, Schwellung, Roetung, Uebererwaermung, Bewegungseinschraenkung. Standardisierte Dokumentation."
     },
     {
