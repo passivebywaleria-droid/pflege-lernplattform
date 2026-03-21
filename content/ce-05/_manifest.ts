@@ -144,7 +144,7 @@ export const CE05_MANIFEST: LektionManifest[] = [
     bloomRange: [1, 4],
     pruefungsrelevanz: "mittel",
     voraussetzungen: ["le-03-pathophysiologie"],
-    status: "geplant",
+    status: "fertig",
   },
 
   // ==========================================

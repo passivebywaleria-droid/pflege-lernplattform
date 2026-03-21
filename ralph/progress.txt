@@ -89,3 +89,24 @@
 - Ernaehrung bewusst NICHT als eigener Step — im Kontext der Ursachenanalyse (multifaktoriell)
 - B1-Differenzierung: 6 von 12 Steps (4 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 5
+
+### LE 07 Kollagenosen und Vaskulitiden (2026-03-21)
+- 12 Steps fuer 2 UE (konsistent mit LE 02/03/05/06)
+- Leitfall Amara Diallo (26, Grundschullehrerin, senegalesisch-deutsch) — Diversitaet: jung, weiblich, afrikanischer Hintergrund, akademisch
+- Vorurteil "Junge Frau, sieht gesund aus — kann nicht ernsthaft krank sein" als kritisch-reflexives Element
+- "Unsichtbare Krankheit" als zentrales Thema — Fatigue, Stigma, Diagnoseverzoegerung (4-6 Jahre)
+- Mutter als undiagnostizierter Fall — intergenerationale Dimension
+- 12 Glossar-Eintraege, 7 verschiedene Step-Typen
+- Bloom B1-B4: B3+ bei 58% (7/12 Steps) — hoechster Wert bisher, passend fuer Kollagenosen mit viel Anwendungsbezug
+- Branching "Proteinurie bei Amara" — Diskrepanz zwischen subjektivem Wohlbefinden und Laborwerten als didaktisches Kernelement
+- Sorting "RZA-Notfall" — Sofortmassnahmen-Reihenfolge bei ophthalmologischem Notfall
+- Freetext "Unsichtbare Krankheit" verbindet psychosoziale Dimension mit pflegerischem Handeln
+- S3-Leitlinie SLE 2025 (AWMF 060-008) als Hauptquelle — brandneu
+- EULAR 2023 SLE Recommendations + EULAR Non-pharmacological SLE/SSc 2023
+- S2k Grossgefaessvaskulitiden + S3 ANCA-Vaskulitiden 2024 + S2k Systemische Sklerose 2024
+- B1-Differenzierung: 7 von 12 Steps (5 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
+- GPA und Takayasu kompakt als Zusatzinfo im Sorting-Step (nicht eigener Step — reicht fuer Ueberblick)
+- TypeScript kompiliert fehlerfrei beim ersten Versuch

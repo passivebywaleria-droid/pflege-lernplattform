@@ -60,7 +60,7 @@
       "estimatedSteps": 12,
       "bloomRange": [1, 4],
       "kompetenzbereiche": ["KB-I.1", "KB-V.1"],
-      "passes": false,
+      "passes": true,
       "themen": "SLE (Systemischer Lupus erythematodes). Schmetterlingserythem. ANA, dsDNA-Antikoerper. Organbeteiligung (Niere, Haut, ZNS). Sjoergren-Syndrom (Sicca). Sklerodermie (SSc). Dermatomyositis/Polymyositis. Vaskulitiden: Riesenzellarteriitis, Granulomatose mit Polyangiitis. Notfall: Riesenzellarteriitis → Erblindungsgefahr."
     },
     {
