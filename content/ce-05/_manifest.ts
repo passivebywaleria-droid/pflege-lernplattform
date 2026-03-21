@@ -127,7 +127,7 @@ export const CE05_MANIFEST: LektionManifest[] = [
     bloomRange: [1, 5],
     pruefungsrelevanz: "hoch",
     voraussetzungen: ["le-03-pathophysiologie"],
-    status: "geplant",
+    status: "fertig",
   },
   {
     leId: "le-07-kollagenosen",

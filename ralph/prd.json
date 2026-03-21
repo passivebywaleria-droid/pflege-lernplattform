@@ -48,7 +48,7 @@
       "estimatedSteps": 12,
       "bloomRange": [1, 5],
       "kompetenzbereiche": ["KB-I.1", "KB-II.2", "KB-V.1"],
-      "passes": false,
+      "passes": true,
       "themen": "Harnsaeurestoffwechsel. Hyperurikaemie. Podagra. Gichtanfall (akut). Tophus. Chronische Gicht. Pseudogicht (Chondrokalzinose, CPPD). Ernaehrung und Gicht. Medikamente (Colchicin, Allopurinol, Febuxostat). Pflegerische Beobachtung beim akuten Anfall. Trigger vermeiden."
     },
     {

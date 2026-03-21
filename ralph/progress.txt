@@ -69,3 +69,23 @@
 - Freetext "Erklaere es Tobias" — Muster: Patient braucht Erklaerung ueber seine Diagnose (wiederkehrendes Pattern)
 - Physiotherapie als Transfer-Step mit Praxisauftrag (2 konkrete Fragen) — sehr praktisch
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 4
+
+### LE 06 Kristallarthropathien — Gicht und Pseudogicht (2026-03-21)
+- 12 Steps fuer 2 UE (konsistent mit LE 02/03/05)
+- Leitfall Ralf Schneider (52, Taxifahrer, deutsch) — Diversitaet: aelterer Mann, Dienstleister
+- Vorurteil "Gicht = Wohlstandskrankheit = selbst schuld" als kritisch-reflexives Element
+- HCT (Diuretika) als Hauptursache statt Alkohol — bricht Stereotyp effektiv
+- Berufsbezug (rechter Fuss = Gaspedal, Selbststaendiger = kein Einkommen) macht Anfall existenzbedrohend
+- Scham-Thematik ("hat Kollegen gesagt er hat sich verstaucht") — psychosoziale Dimension
+- 12 Glossar-Eintraege, 7 verschiedene Step-Typen
+- Bloom B1-B5: B3+ bei 42% (5/12 Steps) — knapp ueber Minimum, passend fuer Krankheitsbild mit viel Grundlagenwissen
+- Branching "Telefonberatung" — Allopurinol NICHT absetzen bei leichten Anfaellen zu Beginn ULT
+- Freetext "Warum ich?" verbindet Pathophysiologie mit Patientenberatung und Stigma-Reflexion
+- S3-Leitlinie Gicht 2025 (AWMF 060-005) als Hauptquelle — brandneu, erste interdisziplinaere S3
+- Pseudogicht kompakt in einem Step (7) + Matching (8) — genuegt fuer Ueberblick
+- Ernaehrung bewusst NICHT als eigener Step — im Kontext der Ursachenanalyse (multifaktoriell)
+- B1-Differenzierung: 6 von 12 Steps (4 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
+- TypeScript kompiliert fehlerfrei beim ersten Versuch
