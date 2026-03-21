@@ -381,7 +381,7 @@ export const CE05_MANIFEST: LektionManifest[] = [
     bloomRange: [3, 6],
     pruefungsrelevanz: "hoch",
     voraussetzungen: ["le-19-evidenz"],
-    status: "geplant",
+    status: "fertig",
   },
 ];
 

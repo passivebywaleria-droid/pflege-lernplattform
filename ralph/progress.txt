@@ -378,3 +378,28 @@
 - B1-Differenzierung: 5 von 8 Steps (3 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
 - Block F begonnen: LE 19 fertig, LE 20 ausstehend (letzte Lektion!)
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 18
+
+### LE 20 Komplexe Fallarbeit und Pruefungsvorbereitung (2026-03-21)
+- 15 Steps fuer 2 UE (prd.json estimatedSteps: 15 — Abschlusslektion mit 3 Faellen)
+- DREI Leitfaelle statt einem — Pruefungsvorbereitung erfordert verschiedene Szenarien:
+  - Margarete Wolf (74, pensionierte Postbotin, deutsch) — RA + Diabetes + CKD 3a + Osteoporose
+  - Ahmed Saidi (58, Busfahrer, tunesisch-deutsch) — Gicht + Diabetes + CKD 3b + HCT-Trigger
+  - Sophia Karagianni (29, Tieraerztin, griechisch-deutsch) — SLE + Schwangerschaft + V.a. Lupusnephritis
+- Vorurteil: "Standardpflege reicht bei multimorbiden Patienten" — fragmentierte Versorgung als Systemkritik
+- Prednisolon-Dilemma als zentrales didaktisches Element: kontrolliert RA-Schub, verschlimmert 3 Komorbiditaeten
+- NSAR-Kontraindikation bei CKD als Branching: Patientenberatung, Leitlinientreue, Kommunikation
+- SLE + Schwangerschaft als emotional schwierigste Situation: "Ist mein Baby in Gefahr?"
+- Pruefungsformat simuliert: systematische Fallbearbeitung (6 Schritte), Pflegeplanung im NANDA-I-Format
+- 12 Glossar-Eintraege, 7 verschiedene Step-Typen (selfrating, mc, text, sorting, branching, freetext, matching)
+- Bloom B3-B6: B3+ bei 100% (alle 15 Steps) — hoechster Anspruch aller Lektionen
+- KB-I.1 bei 40% (6/15), alle 5 Kompetenzbereiche abgedeckt (KB-I.1, KB-II.2, KB-III.2, KB-IV.1, KB-V.1)
+- Reflexion der gesamten CE 05 Lernreise: 20 Lektionen, 20 Leitfaelle, alle Bloecke
+- 10 Quellen: 3x AWMF S3 (RA v3.0, Gicht 2025, SLE 2025), 1x EULAR 2023 SLE, 1x NVL Diabetes, 1x NEKSA Pruefungen, 1x PflAPrV, 1x Multimorbiditaet-Review, 1x Thieme SS-Management, 1x DNQP
+- B1-Differenzierung: 7 von 15 Steps (4 Text + 1 Selfrating + 2 Freetext-Satzanfaenge)
+- Block F KOMPLETT: LE 19 + LE 20 fertig
+- **CE 05 KOMPLETT: Alle 20 Lektionen, alle 6 Bloecke, alle 40 UE fertig!**
+- **Gesamtstatistik CE 05: 18 Loop-Iterationen + 2 manuelle Lektionen = 20 Lektionen**
+- TypeScript kompiliert fehlerfrei beim ersten Versuch

@@ -216,7 +216,7 @@
       "estimatedSteps": 15,
       "bloomRange": [3, 6],
       "kompetenzbereiche": ["KB-I.1", "KB-II.2", "KB-III.2", "KB-IV.1", "KB-V.1"],
-      "passes": false,
+      "passes": true,
       "themen": "3 komplexe Fallszenarien (RA + Multimorbidität, Gicht + Diabetes, SLE + Schwangerschaft). Kompetenzorientierte Aufgaben (alle KB abgedeckt). Pflegeplanung komplett (Anamnese → Diagnose → Ziele → Massnahmen → Evaluation). Pruefungsformat simulieren. Transferaufgaben. Reflexion der gesamten LE-Reihe. Zusammenfassung und Ausblick."
     }
   ]
