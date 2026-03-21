@@ -260,3 +260,23 @@
 - B1-Differenzierung: 6 von 15 Steps (5 Text + 1 Freetext-Satzanfaenge)
 - Block D Fortschritt: LE 11-14 fertig, LE 15 ausstehend
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 13
+
+### LE 15 Nicht-medikamentoese Interventionen (2026-03-21)
+- 12 Steps fuer 2 UE (konsistent mit anderen 2-UE-Lektionen)
+- Leitfall Leyla Arslan (42, Floristin, tuerkisch-deutsch) — Diversitaet: weiblich, Unternehmerin, Migrationshintergrund
+- Vorurteil "Chemie macht krank, Natur heilt" + "Rheuma heilen ohne Medikamente" als doppeltes didaktisches Element
+- MTX-Absetzen-Wunsch als extrem haeufiges Praxis-Dilemma (~40% nutzen Komplementaermedizin)
+- Berufsbezug Floristin perfekt: Feinmotorik (Blumenbinden), Kuehlraum (Steifigkeit), ergonomische Schere
+- Evidenz-Ranking als Sorting-Step: DGRh + Cochrane als Massstab (Mediterran > Omega-3 > Kurkuma > Weihrauch > Fasten > Homoeopathie)
+- Branching "Ab morgen nur noch Kurkuma" — Sandwich-Kommunikation vs. Paternalismus vs. unkritische Zustimmung
+- Waerme/Kaelte-Anwendung als MC mit Fallbezug: gleichzeitig entzuendetes Handgelenk + steife Finger
+- 12 Glossar-Eintraege, 7 verschiedene Step-Typen
+- Bloom B1-B3: B3+ bei 42% (5/12 Steps) — knapp ueber Minimum, passend fuer Ueberblicks-Lektion
+- 10 Quellen: 1x AWMF S3, 2x EULAR (2018 Physical Activity + 2023 Fatigue), 1x Cochrane Balneo, 2x DGRh (Ernaehrung + Komplementaer), 1x Ergotherapie-Fachportal, 1x Rheuma-Liga, 1x DocCheck/Springer Ernaehrung, 1x Rheuma-Liga Thermotherapie
+- B1-Differenzierung: 7 von 12 Steps (5 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
+- Block D KOMPLETT: LE 11-15 alle fertig (11 UE Pflegerisches Handeln abgeschlossen)
+- Naechste Lektionen: Block E (Beratung & Psychosoziales) — LE 16, 17, 18
+- TypeScript kompiliert fehlerfrei beim ersten Versuch

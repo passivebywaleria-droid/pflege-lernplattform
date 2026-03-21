@@ -156,7 +156,7 @@
       "estimatedSteps": 12,
       "bloomRange": [2, 3],
       "kompetenzbereiche": ["KB-I.1", "KB-II.2", "KB-III.2"],
-      "passes": false,
+      "passes": true,
       "themen": "Physiotherapie bei Rheuma. Ergotherapie: Gelenkschutz, Hilfsmittel, Schienen. Physikalische Therapie: Waerme, Kaelte, Balneotherapie. Ernaehrung bei Rheuma (antiinflammatorisch, mediterran). Bewegungstherapie (Funktionstraining, Rehasport). Komplementaere Verfahren (Evidenzlage). Patientenorganisationen (Rheuma-Liga)."
     },
     {
