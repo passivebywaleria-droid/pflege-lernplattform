@@ -51,3 +51,21 @@
 - TNF-alpha als "Feueralarm"-Analogie in B1 funktioniert gut
 - Gicht-NLRP3-Inflammasom und Fibromyalgie-zentrale-Sensitivierung in Step 8 integriert — kompakt aber vollstaendig
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 3
+
+### LE 05 Spondyloarthritiden (2026-03-21)
+- 12 Steps fuer 2 UE (konsistent mit LE 02/03)
+- Leitfall Tobias Fischer (24, Dachdecker, deutsch) — Diversitaet: jung, maennlich, Handwerker
+- Vorurteil "Junger Mann + Rueckenschmerzen = Bandscheibe" funktioniert gut als Aufhaenger
+- Diagnoseverzoegerung (5-7 Jahre) als kritisch-reflexives Element
+- Uveitis-Branching-Szenario in Augenklinik: interprofessionelle Kommunikation als Schluessel
+- 10 Glossar-Eintraege, 7 verschiedene Step-Typen
+- Bloom B1-B5: B3+ bei 42% (5/12 Steps) — passend fuer Krankheitsbild-Lektion
+- ASAS-Kriterien als MC-Anwendung (Step 10) — Schueler lernen klinische Klassifikation
+- B1-Differenzierung: 6 von 12 Steps (5 Text + 1 Freetext-Satzanfaenge)
+- 10 Quellen: 1x AWMF S3-Leitlinie, 1x ASAS-Kriterien, 1x DGRh-Kongress, 3x Fachartikel, 4x Fachinformation
+- Freetext "Erklaere es Tobias" — Muster: Patient braucht Erklaerung ueber seine Diagnose (wiederkehrendes Pattern)
+- Physiotherapie als Transfer-Step mit Praxisauftrag (2 konkrete Fragen) — sehr praktisch
+- TypeScript kompiliert fehlerfrei beim ersten Versuch

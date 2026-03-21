@@ -36,7 +36,7 @@
       "estimatedSteps": 12,
       "bloomRange": [1, 4],
       "kompetenzbereiche": ["KB-I.1", "KB-V.1"],
-      "passes": false,
+      "passes": true,
       "themen": "Morbus Bechterew (Ankylosierende Spondylitis). Psoriasis-Arthritis. Reaktive Arthritis. Enteropathische Arthritis (CED-assoziiert). HLA-B27. Enthesitis, Daktylitis, Uveitis. Unterschied zu RA. ASAS-Kriterien. Typischer Rueckenschmerz (entzuendlich vs. mechanisch). Physiotherapie als Saule."
     },
     {

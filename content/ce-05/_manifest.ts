@@ -110,7 +110,7 @@ export const CE05_MANIFEST: LektionManifest[] = [
     bloomRange: [1, 4],
     pruefungsrelevanz: "mittel",
     voraussetzungen: ["le-04-ra"],
-    status: "geplant",
+    status: "fertig",
   },
   {
     leId: "le-06-gicht",
