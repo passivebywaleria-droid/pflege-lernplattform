@@ -343,7 +343,7 @@ export const CE05_MANIFEST: LektionManifest[] = [
     bloomRange: [1, 3],
     pruefungsrelevanz: "mittel",
     voraussetzungen: ["le-15-interventionen"],
-    status: "geplant",
+    status: "fertig",
   },
 
   // ==========================================

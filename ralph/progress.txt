@@ -331,3 +331,26 @@
 - B1-Differenzierung: 6 von 12 Steps (4 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
 - Block E Fortschritt: LE 16 + LE 17 fertig, LE 18 ausstehend
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 16
+
+### LE 18 Rehabilitation, Hilfsmittel und interprofessionelle Zusammenarbeit (2026-03-21)
+- 12 Steps fuer 2 UE (konsistent mit anderen 2-UE-Lektionen)
+- Leitfall Fatima Benali (56, Reinigungskraft im Seniorenheim, marokkanisch-deutsch) — Diversitaet: aeltere Frau, Migrationshintergrund, koerperlich anspruchsvoller Beruf
+- Vorurteil "Einfache Arbeit = einfache Reha" + "Reinigungskraft braucht nur einfache Anweisungen" als didaktisches Element
+- Synovektomie rechts, Greifkraft 8 kg (Norm 25), Schwanenhalsdeformitaet links — konkrete Zahlen fuer ICF-Anwendung
+- ICF-Modell als roter Faden der gesamten Lektion: alle 5 Komponenten am Fallbeispiel durchgespielt
+- Hilfsmittel-Ablehnung aus Stolz ("Ich brauche nichts, Samira hilft") als Branching-Kerndilemma
+- Tochter Samira (Krankenschwester) als Uebersetzerin = foerdernder Umweltfaktor (ICF) — gute MC-Frage
+- Ramadan als kultursensibler Aspekt in der Ueberleitungsplanung (Medikamenteneinnahme)
+- 12 Glossar-Eintraege, 7 verschiedene Step-Typen
+- Bloom B1-B3: B3+ bei 58% (7/12 Steps) — hoch fuer Bloom-Range [1,3], da viel Anwendung (ICF, Ueberleitung, Hilfsmittel)
+- KB-I.1 bei 42% (5/12 Steps) — knapp ueber Minimum, passend fuer Lektion mit starkem KB-III.2-Anteil (interprofessionell)
+- Sorting "Ueberleitungsplanung" — 6 Schritte von Assessment bis Entlassgespraech (§ 39 SGB V)
+- Freetext "Ueberleitungsbogen" — sehr praxisnah, 5 Bewertungskriterien, 6 Bereiche in Musterantwort
+- 10 Quellen: 1x AWMF S3, 1x BAR ICF-Praxisleitfaden, 1x BAR Reha-Bericht 2024, 1x Rheuma-Liga Gelenkschutz, 1x IQWiG Hilfsmittel, 1x EULAR Nurse Role PMC, 1x therapie-rheuma.de, 1x DGRh Kommission Reha, 1x GKV Entlassmanagement 2024, 1x SpringerMedizin ICF
+- B1-Differenzierung: 7 von 12 Steps (5 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
+- Block E KOMPLETT: LE 16 + LE 17 + LE 18 alle fertig (6 UE Beratung & Psychosoziales abgeschlossen)
+- Naechste Lektionen: Block F (Vertiefung & Pruefung) — LE 19, LE 20
+- TypeScript kompiliert fehlerfrei beim ersten Versuch

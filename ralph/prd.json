@@ -192,7 +192,7 @@
       "estimatedSteps": 12,
       "bloomRange": [1, 3],
       "kompetenzbereiche": ["KB-I.1", "KB-II.2", "KB-III.2", "KB-IV.1"],
-      "passes": false,
+      "passes": true,
       "themen": "Rehabilitation bei Rheuma (ambulant, stationaer, AHB). ICF-Modell. Hilfsmittel (Greifhilfen, Anziehhilfen, ergonomische Kuechengeraete, Orthesen). Verordnung und Kostentraeger. Interprofessionelles Team (Rheumatologe, Pflege, Physiotherapie, Ergotherapie, Sozialarbeit, Psychologie). Case Management. Ueberleitung und Versorgungskontinuitaet."
     },
     {
