@@ -34,3 +34,20 @@
 - Ottawa Ankle Rules als Quelle fuer Branching gut recherchierbar (Kramer et al. 2024, PMC Open Access)
 - prd.json sagt ueCount: 2, Manifest sagt 3 — Diskrepanz. Habe 2 UE verwendet (12 Steps statt 15)
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 2
+
+### LE 03 Pathophysiologie (2026-03-21)
+- 12 Steps fuer 2 UE (wie LE 02, prd.json ueCount: 2 vs. Manifest: 3 — prd.json gewinnt)
+- Leitfall Dimitri Nowak (28, Sportlehrer, polnisch-deutsch) — Diversitaet: jung, maennlich, sportlich
+- Familiengeschichte als didaktisches Vehikel: Dimitri=RA, Grossvater=Gicht, Mutter=Fibromyalgie → 3 Pathomechanismen in einer Familie
+- 11 Glossar-Eintraege, 7 verschiedene Step-Typen (selfrating, mc, text, sorting, matching, branching, freetext)
+- Bloom B2-B4: B3+ bei 50% (6/12 Steps) — deutlich hoeher als LE 02, passend fuer Pathophysiologie
+- Window of Opportunity als Branching-Szenario funktioniert gut — Praxisrelevanz sofort klar
+- Freetext "Erklaere es Dimitri" verbindet Pathophysiologie mit Patientenedukation
+- 10 Quellen: 3x AWMF S3-Leitlinien, 1x Review (Pannus), 1x DGRh Kerndokumentation 2025, 1x AMBOSS, 1x ResearchGate, 1x PMC
+- B1-Differenzierung: 6 von 12 Steps (5 Text + 1 Freetext)
+- TNF-alpha als "Feueralarm"-Analogie in B1 funktioniert gut
+- Gicht-NLRP3-Inflammasom und Fibromyalgie-zentrale-Sensitivierung in Step 8 integriert — kompakt aber vollstaendig
+- TypeScript kompiliert fehlerfrei beim ersten Versuch

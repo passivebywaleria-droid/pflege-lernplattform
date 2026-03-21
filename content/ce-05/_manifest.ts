@@ -72,7 +72,7 @@ export const CE05_MANIFEST: LektionManifest[] = [
     bloomRange: [2, 4],
     pruefungsrelevanz: "hoch",
     voraussetzungen: ["le-02-anatomie"],
-    status: "geplant",
+    status: "fertig",
   },
 
   // ==========================================

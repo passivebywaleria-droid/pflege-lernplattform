@@ -24,7 +24,7 @@
       "estimatedSteps": 12,
       "bloomRange": [2, 4],
       "kompetenzbereiche": ["KB-I.1", "KB-V.1"],
-      "passes": false,
+      "passes": true,
       "themen": "Autoimmunreaktion (T-Zellen, B-Zellen, Antikoerper). Entzuendungskaskade (TNF-alpha, IL-6, IL-1). Pannus-Bildung bei RA. Knorpel- und Knochenzerstoerung. Unterschied Entzuendung vs. Degeneration auf Zellebene. Harnsaeurestoffwechsel (Gicht). Fibromyalgie-Pathogenese (zentrale Sensitivierung). Warum ist fruehe Therapie entscheidend (Window of Opportunity)?"
     },
     {
