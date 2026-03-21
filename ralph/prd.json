@@ -72,7 +72,7 @@
       "estimatedSteps": 15,
       "bloomRange": [1, 3],
       "kompetenzbereiche": ["KB-I.1", "KB-III.2", "KB-V.1"],
-      "passes": false,
+      "passes": true,
       "themen": "Anamnese (Schmerzcharakter, Morgensteifigkeit, Familienanamnese). Klinische Untersuchung (Gaenslen-Zeichen, Kompressionstest). Labordiagnostik: CRP, BSG, Rheumafaktor (RF), Anti-CCP, ANA, HLA-B27, Harnsaeure. Bildgebung: Roentgen, Sonographie, MRT. ACR/EULAR-Klassifikationskriterien RA 2010. DAS28. Pflege und Diagnostik: Was beobachten Pflegende?"
     },
     {

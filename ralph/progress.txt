@@ -110,3 +110,23 @@
 - B1-Differenzierung: 7 von 12 Steps (5 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
 - GPA und Takayasu kompakt als Zusatzinfo im Sorting-Step (nicht eigener Step — reicht fuer Ueberblick)
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 6
+
+### LE 08 Diagnostik rheumatischer Erkrankungen (2026-03-21)
+- 15 Steps fuer 3 UE (prd.json estimatedSteps: 15 — passend fuer Block C)
+- Leitfall Maria Santos (38, Friseurin, portugiesisch-deutsch) — Diversitaet: weiblich, Unternehmerin, Migrationshintergrund
+- Vorurteil "Ueberlastung/psychosomatisch" als diagnostische Verzoegerung — 8 Monate, 3 Aerzte
+- RF-negativ/Anti-CCP-positiv als didaktisches Kernelement: Ein Test allein reicht nicht
+- Mutter undiagnostiziert im Rollstuhl als intergenerationale Warnung
+- 15 Glossar-Eintraege, 7 verschiedene Step-Typen
+- Bloom B1-B3: B3+ bei 47% (7/15 Steps) — ueber Minimum, passend fuer Diagnostik-Lektion
+- ACR/EULAR-Kriterien als MC-Anwendung (Step 10) — Schueler rechnen selbst den Score
+- Branching "Befundweitergabe an Arzt" — interprofessionelle Kommunikation als Schluessel
+- Freetext "Gelenkstatus dokumentieren" — pflegerische Kernkompetenz, sehr praxisnah
+- Diagnostische Verzoegerung (21 Monate Median) als Systemkritik in Reflexionsphase
+- 10 Quellen: 1x AWMF S3-Leitlinie, 1x ACR/EULAR 2010, 1x DGRh-Kerndokumentation, 1x Diagnostik-Review, 1x Bildgebung-Empfehlung, 1x DAS28, 1x Gaenslen-Test, 1x Versorgungsstudie, 1x Labormedizin, 1x Pflegerolle
+- B1-Differenzierung: 7 von 15 Steps (5 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
+- Block C (Diagnostik & Therapie) erstmals bearbeitet — LE 09 und LE 10 folgen
+- TypeScript kompiliert fehlerfrei beim ersten Versuch
