@@ -144,7 +144,7 @@
       "estimatedSteps": 15,
       "bloomRange": [2, 5],
       "kompetenzbereiche": ["KB-I.1", "KB-II.2", "KB-IV.1", "KB-V.1"],
-      "passes": false,
+      "passes": true,
       "themen": "Schmerzarten bei Rheuma (entzuendlich, mechanisch, neuropathisch, zentral). Akuter vs. chronischer Schmerz. WHO-Stufenschema. Multimodale Schmerztherapie. Nicht-medikamentoese Schmerzbehandlung (TENS, Waerme/Kaelte, Entspannung, Ergotherapie). Schmerzdokumentation. Schmerzedukation. Umgang mit chronischem Schmerz (Coping). Expertenstandard Schmerzmanagement (DNQP)."
     },
     {

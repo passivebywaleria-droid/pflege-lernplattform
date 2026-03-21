@@ -239,3 +239,24 @@
 - LE 12 referenziert LE 13 explizit — Kontinuitaet gewahrt, aber neuer Leitfall (Heinrich statt Nadia)
 - Block D Fortschritt: LE 11 + LE 12 + LE 13 fertig, LE 14-15 ausstehend
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 12
+
+### LE 14 Schmerzmanagement bei Rheuma (2026-03-21)
+- 15 Steps fuer 3 UE (prd.json estimatedSteps: 15 — passend fuer Block D)
+- Leitfall Thomas Brandt (55, LKW-Fernfahrer, deutsch) — Diversitaet: aelterer Mann, Handwerker/Fahrer, deutsch
+- Vorurteil "Ein Mann haelt Schmerzen aus" + "NSAR aus der Apotheke reichen" als doppeltes didaktisches Element
+- NSAR-induzierte GI-Blutung als dramatischer Einstieg — reales und haeufiges Problem (2.000 Tote/Jahr DE)
+- Berufsdilemma LKW-Fuehrerschein vs. Opioid-Analgesie als praxisnahes Entscheidungsszenario
+- Maennliche Schmerzsozialisation als kritisch-reflexives Element — gendersensible Pflege
+- 14 Glossar-Eintraege, 7 verschiedene Step-Typen
+- Bloom B1-B5: B3+ bei 67% (10/15 Steps) — hoch, passend fuer Anwendungslektion Schmerzmanagement
+- Branching "Ibuprofen zurueck" — NSAR nach GI-Blutung kontraindiziert, Sandwich-Kommunikation
+- Freetext "Entlassungsgespraech Schmerz" — Schmerzberatung mit 3 Pflichtaspekten (NSAR-Verbot, Selbstmanagement, Warnzeichen)
+- Matching "Nicht-medikamentoese Verfahren" mit 6 Paaren (TENS, Kaelte, Waerme, PMR, Ergo, Aqua)
+- Sorting "DNQP Schmerzersteinschaetzung" — 6 Schritte in richtiger Reihenfolge
+- 10 Quellen: 1x AWMF S3 RA, 1x AWMF S3 GeriPAIN 2025, 1x DNQP Expertenstandard, 1x EULAR 2025, 1x AkdAe NSAR-Risiko, 1x DGRh NSAR, 1x WHO Stufenschema, 1x Dt. Schmerzgesellschaft multimodal, 1x Coping-Forschung, 1x Pflegeportal
+- B1-Differenzierung: 6 von 15 Steps (5 Text + 1 Freetext-Satzanfaenge)
+- Block D Fortschritt: LE 11-14 fertig, LE 15 ausstehend
+- TypeScript kompiliert fehlerfrei beim ersten Versuch
