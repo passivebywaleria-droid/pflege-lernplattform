@@ -195,3 +195,25 @@
 - B1-Differenzierung: 6 von 12 Steps (4 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
 - Block D (Pflegerisches Handeln) begonnen — LE 12-15 folgen
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 10
+
+### LE 12 Der pflegerische Prozess bei Rheuma — Teil 1 (2026-03-21)
+- 12 Steps fuer 2 UE (konsistent mit anderen 2-UE-Lektionen)
+- Leitfall Nadia Haddad (58, Kuechenhilfe Schulkantine, irakisch-deutsch) — Diversitaet: aeltere Frau, Migrationshintergrund, Handarbeiterin
+- Vorurteil "Aeltere Migrantin = wenig Gesundheitskompetenz" als zentrales didaktisches Element
+- Nadia managt seit 12 Jahren eigenstaendig ihre RA — Patientenexpertise als Ressource im Pflegeprozess
+- Kochen als Identitaet: Berufsbezug (Kuechenhilfe) + Hobby + soziale Funktion (irakisch kochen fuer Nachbarn)
+- Scham ueber Hilfsbeduerfigkeit als psychosoziale Dimension
+- 12 Glossar-Eintraege, 7 verschiedene Step-Typen
+- Bloom B1-B5: B3+ bei 83% (10/12 Steps) — hoechster Wert aller Lektionen, passend fuer Anwendungslektion Pflegeprozess
+- NANDA-I 2024-2026 Diagnosen mit Codes: 00085, 00108, 00109, 00133, 00092, 00276
+- SMART-Ziele als Branching-Szenario: Unrealistisches vs. realistisches Ziel (DAS28 5,8 → 4-8 Wochen Besserung)
+- Freetext "Pflegeplan schreiben" — Kernkompetenz der Lektion, mit Musterantwort + 5 Bewertungskriterien
+- Matching "Beobachtung → NANDA-I-Diagnose" mit 6 Paaren — Transfer von Assessment zu Pflegediagnose
+- Partizipative Pflegeanamnese als Kernbotschaft: Patientin als Partnerin, nicht als Pflegefall
+- 10 Quellen: 1x AWMF S3 v3.0, 2x DNQP (Mobilitaet + Schmerz), 1x NANDA-I 2024-2026, 2x Pflegefachportal, 1x Rheuma-Liga Gelenkschutz, 1x therapie-rheuma.de, 1x Thieme Lehrbuch, 1x Nurseslabs
+- B1-Differenzierung: 6 von 12 Steps (4 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
+- Block D Fortschritt: LE 11 + LE 12 fertig, LE 13-15 ausstehend
+- TypeScript kompiliert fehlerfrei beim ersten Versuch

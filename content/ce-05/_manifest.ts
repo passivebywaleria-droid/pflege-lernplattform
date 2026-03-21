@@ -237,7 +237,7 @@ export const CE05_MANIFEST: LektionManifest[] = [
     bloomRange: [3, 5],
     pruefungsrelevanz: "hoch",
     voraussetzungen: ["le-11-assessments"],
-    status: "geplant",
+    status: "fertig",
   },
   {
     leId: "le-13-pflegeprozess-2",

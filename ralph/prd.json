@@ -120,7 +120,7 @@
       "estimatedSteps": 12,
       "bloomRange": [3, 5],
       "kompetenzbereiche": ["KB-I.1", "KB-II.2"],
-      "passes": false,
+      "passes": true,
       "themen": "Pflegeanamnese bei Rheuma. Pflegediagnosen (NANDA-I). Pflegeziele formulieren (SMART). Pflegeplanung am Fallbeispiel. ATL/AEDL-Einschraenkungen bei Rheuma. Mobilitaet, Koerperpflege, An-/Auskleiden, Ernaehrung. Hilfsmittel im Alltag. Pflegedokumentation."
     },
     {
