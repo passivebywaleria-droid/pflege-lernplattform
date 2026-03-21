@@ -309,7 +309,7 @@ export const CE05_MANIFEST: LektionManifest[] = [
     bloomRange: [3, 6],
     pruefungsrelevanz: "hoch",
     voraussetzungen: ["le-12-pflegeprozess-1"],
-    status: "geplant",
+    status: "fertig",
   },
   {
     leId: "le-17-psychosoziales",

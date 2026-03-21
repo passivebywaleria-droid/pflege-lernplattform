@@ -280,3 +280,27 @@
 - Block D KOMPLETT: LE 11-15 alle fertig (11 UE Pflegerisches Handeln abgeschlossen)
 - Naechste Lektionen: Block E (Beratung & Psychosoziales) — LE 16, 17, 18
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 14
+
+### LE 16 Patientenedukation und Beratung (2026-03-21)
+- 12 Steps fuer 2 UE (konsistent mit anderen 2-UE-Lektionen)
+- Leitfall Linh Nguyen (32, Grafikdesignerin/Freelancerin, vietnamesisch-deutsch) — Diversitaet: jung, weiblich, akademisch, Migrationshintergrund
+- Vorurteil "Hochgebildete brauchen keine Patientenedukation" als zentrales didaktisches Element
+- MTX-Abbruch nach Instagram-Influencer-Fehlinformation — extrem haeufiges Praxisproblem
+- Health Literacy ≠ Bildungsgrad: TUM-Studie 2024 (75,8% eingeschraenkte HL) als Kernevidenz
+- Informationen FINDEN vs. BEWERTEN als didaktischer Schluessel der ganzen Lektion
+- 12 Glossar-Eintraege, 6 verschiedene Step-Typen (selfrating, mc, text, matching, sorting, branching, freetext)
+- Bloom B3-B6: B3+ bei 100% (alle Steps, Bloom-Range [3,6]) — hoechster Wert aller Lektionen
+- KB-II.2 dominiert (83%) — korrekt fuer reine Beratungslektion (KB-I nicht im prd.json)
+- Branching "MTX ist Gift" — MI vs. Paternalismus vs. Laissez-faire als 3 Optionen
+- Freetext "Beratungsplan" — 4 Pflichtaspekte (Ziel, Edukationsform, Zeitplan, Umfeld)
+- Sorting "MI-Gespraech" — 6 Schritte von Beziehung bis Plan (Miller & Rollnick)
+- Matching "Edukationsformen" — 6 Paare (je 2x Informieren, Schulen, Beraten)
+- StruPI (DGRh) als konkretes Schulungsprogramm mit Studienbeleg (Bitzer et al. 2021, PMC)
+- Shared Decision Making: 58% Patientenwunsch (Gesundheitsmonitor) als Evidenz
+- 10 Quellen: 1x AWMF S3, 1x TUM HLS-GER 2024, 1x DGRh StruPI, 1x StruPI-RA-Studie PMC, 1x Miller/Rollnick, 1x Stiftung Gesundheitswissen SDM, 1x Rheuma-Liga Adherence, 1x BMG Roadmap, 1x Netzwerk Patientenedukation, 1x Segmueller Fachbuch
+- B1-Differenzierung: 6 von 12 Steps (4 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
+- Block E begonnen: LE 16 fertig, LE 17-18 ausstehend
+- TypeScript kompiliert fehlerfrei beim ersten Versuch
