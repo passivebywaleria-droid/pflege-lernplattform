@@ -354,3 +354,27 @@
 - Block E KOMPLETT: LE 16 + LE 17 + LE 18 alle fertig (6 UE Beratung & Psychosoziales abgeschlossen)
 - Naechste Lektionen: Block F (Vertiefung & Pruefung) — LE 19, LE 20
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 17
+
+### LE 19 Evidenzbasierte Pflege bei Rheuma und Leitlinien (2026-03-21)
+- 8 Steps fuer 1 UE (erste 1-UE-Lektion im Loop — angepasste 6-Phasen-Struktur)
+- Leitfall Jutta Kramer (62, Bibliothekarin pensioniert, deutsch) — Diversitaet: aeltere Frau, Akademikerin, Rentnerin
+- Vorurteil "Bibliothekarin kann Studien bewerten" — Recherchekompetenz ≠ medizinische Evidenzbewertung
+- Blogartikel vs. Cochrane Review als didaktisches Kernelement — "Mediterrane Ernaehrung ersetzt MTX" (falsch)
+- Ehemann als Verstaerker ("weniger Chemie"), Tochter (Apothekerin) als skeptische Stimme
+- 10 Glossar-Eintraege, 6 verschiedene Step-Typen (selfrating, text, mc, matching, branching, freetext)
+- Bloom B1-B5: B3+ bei 50% (4/8 Steps) — passend fuer Methoden-Lektion mit breitem Bloom-Range [1,5]
+- KB-IV.1 bei 50% (4/8) + KB-V.1 bei 50% (4/8) — kein KB-I.1, korrekt fuer Wissenschafts-/Methodenlektion
+- Branching "Patientin bringt Studie mit" — 3 Optionen (unkritisch zustimmen, abwimmeln, gemeinsam bewerten)
+- Freetext "Erklaere Frau Kramer warum Studie nicht reicht" — EBN 3 Saeulen als Argumentationsstruktur
+- Matching "Studientypen → Evidenzstufe" mit 6 Paaren (Cochrane, RCT, Kohorte, Fallbericht, Expertenmeinung, S3-Leitlinie)
+- MC "S1 vs. S3-Leitlinie" — AWMF-Stufenklassifikation als Kernwissen
+- Sackett (2000) EBN-Definition als theoretisches Fundament
+- Nurse-led Care Meta-Analyse (Li et al. 2024, 14 Studien, 3.369 Patienten) als Transfer — Pflege erzeugt eigene Evidenz
+- EULAR Nurse Role Recommendations (2012/2020) + DNQP Expertenstandards als pflegerische Evidenzquellen
+- 10 Quellen: 1x AWMF S3 RA, 1x Sackett 2000, 1x AWMF Regelwerk, 1x EULAR Nurse Role, 1x Li et al. Meta-Analyse PMC, 1x DNQP, 1x Cochrane Mediterranean, 1x Garcia-Diaz SLR, 1x HLS-GER 2, 1x DNEbM
+- B1-Differenzierung: 5 von 8 Steps (3 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
+- Block F begonnen: LE 19 fertig, LE 20 ausstehend (letzte Lektion!)
+- TypeScript kompiliert fehlerfrei beim ersten Versuch

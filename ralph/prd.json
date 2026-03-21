@@ -204,7 +204,7 @@
       "estimatedSteps": 8,
       "bloomRange": [1, 5],
       "kompetenzbereiche": ["KB-IV.1", "KB-V.1"],
-      "passes": false,
+      "passes": true,
       "themen": "Evidence-based Nursing (EBN). Leitlinien lesen und anwenden (AWMF S3). EULAR-Empfehlungen fuer Pflege. DNQP-Expertenstandards (Schmerz, Mobilitaet). Studien bewerten (RCT, Cochrane Reviews). Pflegerische Forschungsergebnisse bei Rheuma (nurse-led care). Evidenzstufen. Theorie-Praxis-Transfer."
     },
     {

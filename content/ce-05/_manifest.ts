@@ -364,7 +364,7 @@ export const CE05_MANIFEST: LektionManifest[] = [
     bloomRange: [1, 5],
     pruefungsrelevanz: "mittel",
     voraussetzungen: ["le-14-schmerzmanagement"],
-    status: "geplant",
+    status: "fertig",
   },
   {
     leId: "le-20-fallarbeit",
