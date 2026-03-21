@@ -182,7 +182,7 @@ export const CE05_MANIFEST: LektionManifest[] = [
     bloomRange: [1, 4],
     pruefungsrelevanz: "hoch",
     voraussetzungen: ["le-08-diagnostik"],
-    status: "geplant",
+    status: "fertig",
   },
   {
     leId: "le-10-biologika",

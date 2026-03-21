@@ -130,3 +130,25 @@
 - B1-Differenzierung: 7 von 15 Steps (5 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
 - Block C (Diagnostik & Therapie) erstmals bearbeitet — LE 09 und LE 10 folgen
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 7
+
+### LE 09 Medikamentoese Therapie — Basistherapie (DMARDs) (2026-03-21)
+- 12 Steps fuer 2 UE (konsistent mit anderen 2-UE-Lektionen)
+- Leitfall Elena Petrov (48, Altenpflegerin, russlanddeutsch) — Diversitaet: weiblich, Pflegefachkraft, Migrationshintergrund
+- Vorurteil "MTX ist Chemotherapie" als zentrales didaktisches Element — haeufigster Grund fuer Therapieablehnung
+- Elena als Pflegekraft bricht Stereotyp: medizinisches Personal ≠ automatisch therapieadhaerent
+- Dosis-Unterschied Rheuma vs. Onkologie (Faktor 50-100) als Kernargumentation
+- 12 Glossar-Eintraege, 7 verschiedene Step-Typen
+- Bloom B1-B4: B3+ bei 50% (6/12 Steps) — hoechster B3+-Anteil bisher, passend fuer Anwendungslektion
+- Branching "Uebelkeit-Anruf" — subkutane Umstellung als praxisnahe Loesung, pflanzliche Alternativen als Nicht-Option
+- Freetext "Erklaere MTX" — Patientenedukation als Kernkompetenz, Dimmer-Analogie
+- Treat-to-Target als Grundprinzip: 3/6-Monate-Regel, DAS28-Zielwerte
+- csDMARD-Vergleich (MTX, Leflunomid, Sulfasalazin, HCQ) kompakt als Matching
+- Monitoring-Reihenfolge als Sorting: Baseline → 2 Wo → 4 Wo → 8-12 Wo → Auffaelligkeiten
+- 10 Quellen: 1x AWMF S3 v3.0 (2026), 1x EULAR 2022, 1x DGRh Dosierung, 1x Cochrane Folsaeure, 1x DGRh MTX-Info, 1x Gelbe Liste, 1x Rheuma-Liga, 1x Versorgungsforschung PMC, 1x therapie-rheuma.de, 1x PZ
+- B1-Differenzierung: 6 von 12 Steps (4 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
+- 60%-Leitliniengerechtigkeits-Statistik (Albrecht 2023) als Transfer/Reflexion
+- Prednisolon explizit als "Kein DMARD" im Matching — haeufiger Verstaendnisfehler
+- TypeScript kompiliert fehlerfrei beim ersten Versuch

@@ -84,7 +84,7 @@
       "estimatedSteps": 12,
       "bloomRange": [1, 4],
       "kompetenzbereiche": ["KB-I.1", "KB-II.2", "KB-IV.1"],
-      "passes": false,
+      "passes": true,
       "themen": "Treat-to-Target-Prinzip. csDMARDs: Methotrexat (MTX), Leflunomid, Sulfasalazin, Hydroxychloroquin. MTX im Detail: Wirkung, Dosierung, Folsaeure, Nebenwirkungen, Kontraindikationen. Monitoring: Blutbild, Leberwerte, Nierenwerte. Pflegerische Aufgaben: Patientenedukation MTX, Nebenwirkungsbeobachtung, Compliance-Foerderung."
     },
     {
