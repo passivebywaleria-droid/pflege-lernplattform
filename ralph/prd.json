@@ -132,7 +132,7 @@
       "estimatedSteps": 12,
       "bloomRange": [3, 5],
       "kompetenzbereiche": ["KB-I.1", "KB-IV.1"],
-      "passes": false,
+      "passes": true,
       "themen": "Pflegeinterventionen durchfuehren. Evaluation der Pflegemassnahmen. Schubmanagement: Pflege im akuten Schub vs. Remission. Fatigue-Management. Gelenkschutz im Alltag. Waerme-/Kaelteanwendungen (wann was?). Lagerung und Positionierung. Sturzprophylaxe bei eingeschraenkter Mobilitaet."
     },
     {

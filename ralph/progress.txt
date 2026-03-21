@@ -217,3 +217,25 @@
 - B1-Differenzierung: 6 von 12 Steps (4 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
 - Block D Fortschritt: LE 11 + LE 12 fertig, LE 13-15 ausstehend
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 11
+
+### LE 13 Der pflegerische Prozess bei Rheuma — Teil 2 (2026-03-21)
+- 12 Steps fuer 2 UE (konsistent mit anderen 2-UE-Lektionen)
+- Leitfall Heinrich Vogel (72, pensionierter Tischlermeister, deutsch) — Diversitaet: aelterer Mann, Handwerker, alleinlebend
+- Vorurteil "Aeltere Maenner nehmen Hilfe nicht an" + "Wer sich gut fuehlt, braucht keine Medikamente"
+- MTX eigenmaechtig abgesetzt → Schub → Sturz in Werkstatt — didaktisch perfekter Dominoeffekt
+- Werkstatt als Identitaet: Tischlermeister versteht mechanische Prinzipien → Bruecke zu Gelenkschutz-Logik (Hebelgesetz)
+- Waerme/Kaelte als zentrales Lehrbeispiel: Heinrich benutzt Waermflasche auf entzuendetes Knie → verschlimmert Schub
+- Branching "Heinrich will in die Werkstatt" — nicht verbieten sondern sicher machen (Partizipation statt Paternalismus)
+- Sturzprophylaxe als hoechste Prioritaet (DNQP-Expertenstandard) — konkret durch Sturz motiviert
+- Fatigue-Management mit Pacing-Tagesplan (Sorting-Step) — praxisnah und uebertragbar
+- Evaluation als Freetext: Evaluationsbericht schreiben mit IST vs. SOLL Vergleich
+- 12 Glossar-Eintraege, 7 verschiedene Step-Typen
+- Bloom B1-B5: B3+ bei 67% (8/12 Steps) — hoechster Wert bisher (Durchfuehrung + Evaluation = Anwendungslektion)
+- 10 Quellen: 2x AWMF S3, 2x DNQP (Sturz + Schmerz), 1x EULAR Fatigue SR, 2x Rheuma-Liga (Gelenkschutz + Thermotherapie), 1x Cramp PMC Fatigue, 1x therapie-rheuma.de, 1x IQWiG Hilfsmittel
+- B1-Differenzierung: 6 von 12 Steps (4 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
+- LE 12 referenziert LE 13 explizit — Kontinuitaet gewahrt, aber neuer Leitfall (Heinrich statt Nadia)
+- Block D Fortschritt: LE 11 + LE 12 + LE 13 fertig, LE 14-15 ausstehend
+- TypeScript kompiliert fehlerfrei beim ersten Versuch
