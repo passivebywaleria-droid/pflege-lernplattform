@@ -180,7 +180,7 @@
       "estimatedSteps": 12,
       "bloomRange": [3, 5],
       "kompetenzbereiche": ["KB-I.1", "KB-II.2", "KB-III.2", "KB-V.1"],
-      "passes": false,
+      "passes": true,
       "themen": "Chronische Krankheit und Psyche. Depression und Angst bei Rheuma. Coping-Strategien (Lazarus). Krankheitsbewaeltigung (Corbin & Strauss). Koerperbildveraenderung. Sexualitaet und Partnerschaft. Soziale Teilhabe. Erwerbsminderung und Schwerbehinderung. Selbsthilfegruppen. Psychosoziale Beratung."
     },
     {

@@ -304,3 +304,30 @@
 - B1-Differenzierung: 6 von 12 Steps (4 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
 - Block E begonnen: LE 16 fertig, LE 17-18 ausstehend
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 15
+
+### LE 17 Psychosoziale Aspekte und Krankheitsbewaeltigung (2026-03-21)
+- 12 Steps fuer 2 UE (konsistent mit anderen 2-UE-Lektionen)
+- Leitfall Omar Mansour (40, Koch/Kuechenchef, aegyptisch-deutsch) — Diversitaet: aelterer Mann, Migrationshintergrund, Selbststaendiger
+- Vorurteil "Wer koerperlich stark wirkt, hat keine psychischen Probleme" + "Maenner aus patriarchalen Kulturen brauchen keine psychologische Hilfe"
+- PHQ-9 = 15 (mittelgradige Depression) als zentrales didaktisches Element — unerkannte Depression
+- Haende als Identitaet (Koch): Ulnardeviation = existenzielle Bedrohung + Koerperbildveraenderung
+- Yasmin (schwanger, 3. Kind) als psychosoziale Dimension — Partnerschaft, Rollenerwartung, Kommunikation
+- Bruder in Kairo als kulturelle Verstaerkung des Stigmas ("Reiss dich zusammen")
+- Sozialer Rueckzug (Moschee, Freunde) als klinisches Zeichen UND soziale Folge
+- 12 Glossar-Eintraege, 7 verschiedene Step-Typen (selfrating, mc, text, matching, sorting, branching, freetext)
+- Bloom B3-B5: B3+ bei 100% (alle 12 Steps) — Bloom-Range [3,5] komplett abgedeckt
+- KB-I.1 bei 50% (6/12 Steps) — hoechster KB-I.1-Anteil, passend fuer Assessment+Pflegeplanung
+- Lazarus Coping als Matching: 6 Verhaltensweisen von Omar → 3 Coping-Formen — sehr praxisnah
+- Corbin-Strauss Trajekt-Modell: 3 Arbeitslinien (Krankheit, Alltag, Biographie) — Biographiearbeit als Schluessel
+- Branching "Ich brauche keinen Psychologen" — kultursensible Gespraechsfuehrung, 3 Optionen
+- Sorting "Psychosoziale Versorgungskette" — 6 Schritte vom Screening zur Selbsthilfe
+- Freetext "Psychosoziale Pflegeplanung" — NANDA-I 00069, kultursensibel, ressourcenorientiert
+- GdB/Schwerbehinderung als MC: Datenschutz-Aspekt (wer erfaehrt davon?) — haeufige Patientenfrage
+- Sexualitaet bewusst nicht als eigener Step — im Kontext Koerperbildveraenderung (Step 7), genuegt fuer Sensibilisierung
+- 10 Quellen: 2x AWMF S3 (RA + NVL Depression), 2x Review/Primaerstudie Depression, 1x Lazarus, 1x Corbin-Strauss, 1x Sexualitaet, 2x GdB/Erwerbsminderung, 1x Rheuma-Liga
+- B1-Differenzierung: 6 von 12 Steps (4 Text + 1 Selfrating + 1 Freetext-Satzanfaenge)
+- Block E Fortschritt: LE 16 + LE 17 fertig, LE 18 ausstehend
+- TypeScript kompiliert fehlerfrei beim ersten Versuch
