@@ -152,3 +152,25 @@
 - 60%-Leitliniengerechtigkeits-Statistik (Albrecht 2023) als Transfer/Reflexion
 - Prednisolon explizit als "Kein DMARD" im Matching — haeufiger Verstaendnisfehler
 - TypeScript kompiliert fehlerfrei beim ersten Versuch
+
+---
+## Ralph Loop Iteration 8
+
+### LE 10 Medikamentoese Therapie — Biologika, JAK-Inhibitoren, NSAR (2026-03-21)
+- 12 Steps fuer 2 UE (konsistent mit anderen 2-UE-Lektionen)
+- Leitfall Yusuf Al-Khalil (60, Restaurantbesitzer, libanesisch-deutsch) — Diversitaet: aelterer Mann, Migrationshintergrund, Gastronom
+- Vorurteil "Biologika sind gefaehrlich — Immunsystem komplett runtergefahren" als zentrales didaktisches Element
+- Selbstinjektion als praktische Huerde — zentrale pflegerische Aufgabe (Sorting-Step)
+- Sohn als Apotheker bringt JAK-Inhibitor-Debatte natuerlich ein (ORAL Surveillance)
+- Infektionsrisiko im Beruf (Gastronomie) macht abstrakte Nebenwirkung konkret
+- 12 Glossar-Eintraege, 7 verschiedene Step-Typen
+- Bloom B1-B5: B3+ bei 58% (7/12 Steps) — hoechster B3+-Anteil bisher, passend fuer Anwendungslektion
+- Branching "Fieber unter Adalimumab" — Biologika pausieren bei Infektion, aerztliche Abklaerung
+- Freetext "Impfberatung" — Totimpfstoff vs. Lebendimpfstoff, Reisemedizin-Aspekt (Libanon)
+- Matching "Wirkstoff → Target" mit 6 Paaren inkl. Ibuprofen als "kein DMARD"-Fallstrick
+- JAK-Inhibitor-Sicherheit: ORAL Surveillance + EMA-Warnung als kritisch-reflexives Element
+- Biosimilar-Kosten und Apotheken-Substitution (G-BA 2025) als Transfer-Thema
+- 10 Quellen: 1x AWMF S3 v3.0 (2026), 1x EULAR 2022, 1x ORAL Surveillance (NEJM), 1x BfArM/EMA, 1x STIKO/DGRh Impfungen, 1x Rheuma-Liga Biologika, 1x AkdAe Biosimilars, 1x SB5 Formulierung, 1x arztCME Impfungen, 1x SpringerMedizin JAK-Debatte
+- B1-Differenzierung: 6 von 12 Steps (3 Text + 1 Selfrating + 1 Freetext-Satzanfaenge + 1 Transfer-Text)
+- Block C (Diagnostik & Therapie) komplett: LE 08, LE 09, LE 10 fertig
+- TypeScript kompiliert fehlerfrei beim ersten Versuch

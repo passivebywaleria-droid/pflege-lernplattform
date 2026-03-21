@@ -96,7 +96,7 @@
       "estimatedSteps": 12,
       "bloomRange": [1, 3],
       "kompetenzbereiche": ["KB-I.1", "KB-II.2", "KB-IV.1"],
-      "passes": false,
+      "passes": true,
       "themen": "bDMARDs: TNF-alpha-Inhibitoren (Adalimumab, Etanercept), IL-6-Inhibitoren (Tocilizumab), Anti-CD20 (Rituximab), T-Zell-Costimulationsblocker (Abatacept). Biosimilars. tsDMARDs: JAK-Inhibitoren (Baricitinib, Tofacitinib, Upadacitinib). NSAR und Coxibe. Glukokortikoide (Bridging). Infektionsrisiko unter Immunsuppression. Impfungen. Subkutane Selbstinjektion."
     },
     {

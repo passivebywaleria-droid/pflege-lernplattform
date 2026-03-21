@@ -196,10 +196,10 @@ export const CE05_MANIFEST: LektionManifest[] = [
     estimatedMinC1: 20,
     estimatedMinB1: 30,
     kompetenzbereiche: ["KB-I.1", "KB-II.2", "KB-IV.1"],
-    bloomRange: [1, 3],
+    bloomRange: [1, 5],
     pruefungsrelevanz: "hoch",
     voraussetzungen: ["le-09-dmards"],
-    status: "geplant",
+    status: "fertig",
   },
 
   // ==========================================
