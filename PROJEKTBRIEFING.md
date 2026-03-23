@@ -1,8 +1,8 @@
 # PROJEKTBRIEFING — Pflege-Lernplattform
-**Version:** 2.5 (+ Gruenderin-Interview + Recherche-Updates)
+**Version:** 2.8 (+ Nutzerkritik + Feature-Liste + Sprint-Plan)
 **Erstellt:** 2026-03-16
-**Letzte Aenderung:** 2026-03-18 (Gruenderin-Antworten eingearbeitet, Herkunftslaender-Recherche, Minderjaehrige-Recherche, Preismodell-Update)
-**Grundlage:** Alle 4 Phase-1-Ergebnisse + Klaerungen-Dialog + Pivot-Recherche + Foerderungs-Recherche + UI/UX-Analyse + Gruenderin-Interview (2026-03-18)
+**Letzte Aenderung:** 2026-03-19 (Nutzerkritik → 38 Features → 8-Sprint-Plan: MVP in 16 Wochen mit 23 Features)
+**Grundlage:** Alle 4 Phase-1-Ergebnisse + Klaerungen-Dialog + Pivot-Recherche + Foerderungs-Recherche + UI/UX-Analyse + Gruenderin-Interview (2026-03-18) + Nutzerkritik + Feature-Liste + Sprint-Plan (2026-03-19)
 **Status:** ALLE OFFENEN FRAGEN GEKLAERT — Bereit fuer Build-Start
 
 > **PIVOT-HINWEIS (2026-03-17, aktualisiert Iteration 006):** Dieses Briefing wurde fundamental ueberarbeitet. Die Plattform wird von B2C-Lern-App zu B2B-Infrastrukturloesung fuer Pflegeschulen mit Lehrermangel repositioniert. **Iteration 006 ergaenzt:** UI/UX-Referenzanalyse von 7 erfolgreichen Lernplattformen (Duolingo, Khan Academy, Brilliant, AMBOSS, Quizlet, Anki, Coursera) — Design-Patterns fuer MVP definiert (Mastery, Streak, FSRS, Clinical Pearls, Tooltips, Aufgaben-Mix, Flip-Karten). UI-Bibliothek: shadcn/ui + Tremor + dnd-kit. Iteration 005: Echte Wettbewerber-Preise (149€ vertretbar), bundesweite Mangel-Zahlen (~3.000-4.000 fehlend, nur 63 Absolventen/Jahr), Kaufprozess (Direktvergabe OK, PflAFinV-Refinanzierung), DSGVO (Hosting-Migration Vercel→Hetzner noetig), Foerderung in Wohlverhaltensphase (UG empfohlen, Gruendungsstipendium NRW 14.400€). Iteration 003: Rechtliche Absicherung (§ 2 Abs. 4 PflAPrV), Massnahmen gegen Paedagogenmangel. Iteration 002: Inverted-Classroom-Modell, Lernbegleiter-Dashboard, B2B-first Break-Even. Vollstaendige Pivot-Recherche: `recherche/PIVOT_RECHERCHE.md`. Personas und Rollenmatrix: `recherche/paedagogik/ERGEBNIS.md` Abschnitte 4.9–4.12.
@@ -11,7 +11,7 @@
 
 ## 1. EXECUTIVE SUMMARY
 
-Es wird eine digitale Lernplattform fuer die generalistische Pflegeausbildung nach PflBG 2020 gebaut, die Pflegeschulen mit Lehrermangel handlungsfaehig haelt. **Primaere Zielgruppe sind Schulleitung und Schultraeger** (1.339 Pflegeschulen DE, Destatis 2023), die strukturellen Lehrermangel haben: **~3.000-4.000 Pflegepaedagogen fehlen bundesweit** (Hochrechnung aus NRW-Daten), bei nur **63 neuen Master-Absolventen pro Jahr** (Destatis 2023) und einer Ausbildungsdauer von 8-9 Jahren ist der Mangel nicht behebbar. 50% aller Pflegeschulen finden Lehrkraftgewinnung problematisch (BIBB-Pflegepanel), nur 54% der 100.000 Ausbildungsplaetze sind besetzt. Die Plattform ermoeglicht **Inverted-Classroom-/Blended-Learning-Modell**: Schueler erarbeiten Theorie selbstgeleitet ueber die Plattform, der verbleibende Dozent wird zum Lernbegleiter. **Rechtlich abgesichert:** § 2 Abs. 4 PflAPrV kodifiziert E-Learning und selbstgesteuertes Lernen explizit als Lehrformat — ohne Prozent-Obergrenze. Eine Lehrkraft kann so 20–30% mehr Schueler effektiv begleiten — was einer Kosteneinsparung von 17.000–25.500 €/Jahr gegenueber einer Vollzeitstelle entspricht (Value-Based-Pricing-Logik). **Primaeres Preismodell: B2B 149 €/Schueler/Jahr** (am oberen Rand vs. Wettbewerb, aber vertretbar: AMBOSS+Novaheal kostet B2C bereits 144€; nur 1,4% der Ausbildungspauschale; **refinanzierbar ueber PflAFinV Pos. 3.2 + 3.7**). Break-Even ab 1 zahlender Schule. **Keine Ausschreibung noetig** — 9.000€/Jahr liegt unter jeder Direktvergabe-Grenze. Sekundaer: B2C Freemium (4,99 €/Mo) als Akquisitionskanal, der B2B treibt. Die Plattform bildet die 11 Curricularen Einheiten (CE) des BIBB-Rahmenlehrplans ab und hebt sich durch vier belegte Marktluecken vom Wettbewerb ab: (1) Lehrermangel-Loesung mit ROI-Nachweis, (2) KI-adaptives Lernen fuer selbstgesteuertes Arbeiten, (3) bilinguale Pflegeinhalte (DE/AR/TR) fuer internationale Azubis, (4) Freemium-Direktzugang als B2B-Trichter. **Marktluecke bestaetigt:** Alle bisherigen politischen Massnahmen (§ 9 PflBG Uebergangsregel, 120 neue Studienplaetze NRW, Digitalpakt 2.0) setzen auf MEHR MENSCHEN — keine einzige auf Technologie als Skalierungsloesung. KI-gestuetztes Lernen wird laut BIBB DigiK-Part "kaum eingesetzt". **DSGVO-kritisch:** Hosting muss auf Hetzner Cloud (DE) migriert werden — Vercel (US/CLOUD Act) ist Deal-Breaker fuer Schulen. Compliance-Budget: ~3.000-5.000€. **Gruendung:** UG (haftungsbeschraenkt) empfohlen, auch in Wohlverhaltensphase moeglich. Foerderung: Gruendungsstipendium NRW (14.400€), Forschungszulage (bis 27.000€/Jahr), BAFA-Beratung (80% Zuschuss). Bootstrap-Budget: ~800€ Monat 1, dann ~90€/Mo laufend. Die Gruenderin ist selbst Dozentin an einer Pflegeschule und bringt fachliche Autoritaet, Unterrichtsmaterialien und einen direkten Pilotkunden mit — ein struktureller Vorteil gegenueber tech-first Wettbewerbern ohne Pflegebranchenkenntnis. **Update 2026-03-18:** Gruenderin kuendigt aktuelle Schulstelle fuer Vollzeit-Fokus auf das Projekt. Ihre aktuelle Schule war vom Konzept begeistert (erste Marktvalidierung). Lehrbuch bestaetigt: I Care (Georg Thieme Verlag) + weitere wissenschaftliche Quellen. Eigene Materialien + I Care PDFs vorhanden. Gamification und interaktives Lernen bestaetigt. Mobile-First-Design zwingend (alle Schueler haben Smartphone). Preismodell-Update: Monatsabo teurer als Jahresabo, 6 Monate Kuendigungsfrist. Alle Schulen per E-Mail erreichbar — Testphase als Vertriebsstrategie.
+Es wird eine digitale Lernplattform fuer die generalistische Pflegeausbildung nach PflBG 2020 gebaut, die Pflegeschulen mit Lehrermangel handlungsfaehig haelt. **Primaere Zielgruppe sind Schulleitung und Schultraeger** (1.339 Pflegeschulen DE, Destatis 2023), die strukturellen Lehrermangel haben: **~3.000-4.000 Pflegepaedagogen fehlen bundesweit** (Hochrechnung aus NRW-Daten), bei nur **63 neuen Master-Absolventen pro Jahr** (Destatis 2023) und einer Ausbildungsdauer von 8-9 Jahren ist der Mangel nicht behebbar. 50% aller Pflegeschulen finden Lehrkraftgewinnung problematisch (BIBB-Pflegepanel), nur 54% der 100.000 Ausbildungsplaetze sind besetzt. Die Plattform ermoeglicht **Inverted-Classroom-/Blended-Learning-Modell**: Schueler erarbeiten Theorie selbstgeleitet ueber die Plattform, der verbleibende Dozent wird zum Lernbegleiter. **Rechtlich abgesichert:** § 2 Abs. 4 PflAPrV kodifiziert E-Learning und selbstgesteuertes Lernen explizit als Lehrformat — ohne Prozent-Obergrenze. Eine Lehrkraft kann so 20–30% mehr Schueler effektiv begleiten — was einer Kosteneinsparung von 17.000–25.500 €/Jahr gegenueber einer Vollzeitstelle entspricht (Value-Based-Pricing-Logik). **Primaeres Preismodell: B2B 149 €/Schueler/Jahr** (am oberen Rand vs. Wettbewerb, aber vertretbar: AMBOSS+Novaheal kostet B2C bereits 144€; nur 1,4% der Ausbildungspauschale; **refinanzierbar ueber PflAFinV Pos. 3.2 + 3.7**). Break-Even ab 1 zahlender Schule. **Keine Ausschreibung noetig** — 9.000€/Jahr liegt unter jeder Direktvergabe-Grenze. Sekundaer: B2C Freemium (4,99 €/Mo) als Akquisitionskanal, der B2B treibt. Die Plattform bildet die 11 Curricularen Einheiten (CE) des BIBB-Rahmenlehrplans ab und hebt sich durch vier belegte Marktluecken vom Wettbewerb ab: (1) Lehrermangel-Loesung mit ROI-Nachweis, (2) KI-adaptives Lernen fuer selbstgesteuertes Arbeiten, (3) bilinguale Pflegeinhalte (DE/AR/TR) fuer internationale Azubis, (4) Freemium-Direktzugang als B2B-Trichter. **Marktluecke bestaetigt:** Alle bisherigen politischen Massnahmen (§ 9 PflBG Uebergangsregel, 120 neue Studienplaetze NRW, Digitalpakt 2.0) setzen auf MEHR MENSCHEN — keine einzige auf Technologie als Skalierungsloesung. KI-gestuetztes Lernen wird laut BIBB DigiK-Part "kaum eingesetzt". **DSGVO-kritisch:** Hosting muss auf Hetzner Cloud (DE) migriert werden — Vercel (US/CLOUD Act) ist Deal-Breaker fuer Schulen. Compliance-Budget: ~3.000-5.000€. **Gruendung:** UG (haftungsbeschraenkt) empfohlen, auch in Wohlverhaltensphase moeglich. Foerderung: Gruendungsstipendium NRW (14.400€), Forschungszulage (bis 27.000€/Jahr), BAFA-Beratung (80% Zuschuss). Bootstrap-Budget: ~800€ Monat 1, dann ~90€/Mo laufend. Die Gruenderin ist selbst Dozentin an einer Pflegeschule und bringt fachliche Autoritaet, Unterrichtsmaterialien und einen direkten Pilotkunden mit — ein struktureller Vorteil gegenueber tech-first Wettbewerbern ohne Pflegebranchenkenntnis. **Update 2026-03-19:** Nutzerkritik-Recherche + Feature-Ableitung abgeschlossen. 25 Nutzerwuensche → **38 konkrete Features** (23 MVP, 10 V1.1, 5 V2.0). 10 Schmerzpunkte → 10 USP-Claims. Alle 4 Marktluecken durch Nutzerfeedback bestaetigt. Details: Abschnitt 3a (Feature-Liste) + Abschnitt 4.2 (Nutzerkritik) + `specs/FEATURE_LISTE.md` + `recherche/NUTZERKRITIK_PFLEGE_APPS.md`. **Update 2026-03-18:** Gruenderin kuendigt aktuelle Schulstelle fuer Vollzeit-Fokus auf das Projekt. Ihre aktuelle Schule war vom Konzept begeistert (erste Marktvalidierung). Lehrbuch bestaetigt: I Care (Georg Thieme Verlag) + weitere wissenschaftliche Quellen. Eigene Materialien + I Care PDFs vorhanden. Gamification und interaktives Lernen bestaetigt. Mobile-First-Design zwingend (alle Schueler haben Smartphone). Preismodell-Update: Monatsabo teurer als Jahresabo, 6 Monate Kuendigungsfrist. Alle Schulen per E-Mail erreichbar — Testphase als Vertriebsstrategie.
 
 ---
 
@@ -449,6 +449,93 @@ Keine einzige Lernplattform kombiniert AMBOSS-Wissensqualitaet (Tooltips, Clinic
 
 ---
 
+## 3a. FEATURE-LISTE — Abgeleitet aus Nutzerkritik-Recherche (Iteration 007)
+
+> **Methode:** Systematische Ableitung aus 25 dokumentierten Nutzerwuenschen (12 Schueler, 7 Lehrer, 6 Praxisanleiter) + 10 Schmerzpunkten. Jedes Feature ist rueckverfolgbar auf einen konkreten Nutzerwunsch. Vollstaendiges Dokument mit Aufwandsschaetzungen: `specs/FEATURE_LISTE.md`
+
+### 3a.1 MVP-Features (23 Features — Launch-kritisch)
+
+**Schueler-Features (11):**
+
+| # | Feature | Nutzerwunsch | Schmerzpunkt |
+|---|---------|-------------|--------------|
+| S1 | **All-in-One PWA** (Erklaertexte + Quiz + Karteikarten + Glossar + Pruefung) | Eine App fuer alles | #4 Fragmentierung |
+| S2 | **KI-Lernpfad** (Nebius/Llama passt Schwierigkeit + Themenreihenfolge an) | Adaptives Lernen | #2 Keine Adaptivitaet |
+| S3 | **PWA mit Service Worker** (Offline-Cache, keine App-Store-Abhaengigkeit) | Zuverlaessige Technik | #1 Instabilitaet |
+| S4 | **Cloud-Sync** (ein Account, Fortschritt ueberall — by design) | Geraete-Sync | #7 Kein Sync |
+| S5 | **Leitlinien-Versions-Tags** (AWMF-Version + Datum bei jedem Inhalt) | Aktuelle Inhalte | #5 Veraltete Inhalte |
+| S6 | **Fallvignetten pro CE** (Branching Scenarios mit Entscheidungsbaeumen) | Praxisbezug | #3 Theorie-Praxis |
+| S8 | **Freemium** (CE 01 + 02 kostenlos, Rest per Schullizenz/4,99 EUR/Mo) | Bezahlbare Preise | #8 Abo-Fallen |
+| S9 | **Mobile-First UI** (Duolingo-inspiriert, Animationen, Dark Mode) | Junges Design | — |
+| S10 | **Streak + XP** (Tagesstreak, Loss Aversion, variable Rewards) | Gamification | — |
+| S12 | **"Warum?"-Erklaerungen** (richtig UND falsch erklaert + Quellenverweis) | Ausfuehrliche Erklaerungen | — |
+| S14 | **Fachsprache-Glossar DE/AR/TR** (Definition, Aussprache, Uebersetzung) | Fachsprachlich korrekt | — |
+
+**Lehrer-Features (7):**
+
+| # | Feature | Nutzerwunsch | Schmerzpunkt |
+|---|---------|-------------|--------------|
+| L1 | **Bloom-Taxonomie-Mapping** (jede Aufgabe einer Stufe zugeordnet) | Didaktisch fundiert | #6 Keine Didaktik |
+| L2 | **Sandwich-Methode pro Session** (Reflexion → Wissen → Uebung → Transfer) | Didaktisch fundiert | #6 |
+| L3 | **1-Klick Klassen-Setup** (Einladungslink oder CSV-Import) | Einfache Integration | #10 Infrastruktur |
+| L5 | **Ampel-Dashboard** (30-Sek-Tagesuebersicht, Klassen-Detail, Einzel-Schueler) | Lernfortschritts-Tracking | #9 Kein Dashboard |
+| L6 | **11 CE navigierbar** (Lernziele, Stundenrichtwerte, Pruefungsrelevanz) | Curriculare Anbindung | — |
+| L8 | **Auto-Korrektur** (MC, Zuordnung, Lueckentext automatisch ausgewertet) | Entlastung | — |
+| L11 | **Hetzner DE Hosting** (DSGVO-konform, 99.9% Uptime, SSL, Backups) | Professionelle Infrastruktur | #1, #10 |
+
+**Praxisanleiter- und Querschnitt-Features (5):**
+
+| # | Feature | Nutzerwunsch | Schmerzpunkt |
+|---|---------|-------------|--------------|
+| P3 | **Glossar ohne Login** (Fachbegriff-Nachschlagewerk ohne Account) | Niedrigschwellige Nutzung | — |
+| P7 | **PWA Offline-Modus** (Glossar + letzte 50 Karteikarten offline) | Offline-Faehigkeit | — |
+| Q1 | **FSRS-Karteikarten** (Spaced Repetition wie Anki, eingebaut) | All-in-One | #4 |
+| Q2 | **Kompetenz-Radar** (Staerken/Schwaechen pro CE als Spinnen-Diagramm) | Adaptivitaet | #2 |
+| Q3 | **15 interaktive Fragetypen** (Hotspot, Branching, Memory, Kreuzwortraetsel, Virtual Patient, etc.) | Praxisbezug + Engagement | #3 |
+
+### 3a.2 V1.1-Features (10 Features — 3 Monate nach Launch)
+
+| # | Feature | Nutzerwunsch |
+|---|---------|-------------|
+| S7 | **Virtual Patient Dialog** (KI-Chat-Simulation fuer Anamnese-Uebung) | Praxisbezug |
+| S11 | **Rangliste + Achievements** (Klassen-Ranking opt-in, Abzeichen) | Gamification |
+| S13 | **Clinical Pearls / Tooltips** (AMBOSS-Stil Wissensvertiefung) | Erklaerungen |
+| L4 | **Aufgaben zuweisen** (Lehrer waehlt CE → Schueler sehen Deadline) | Integration |
+| L7 | **CE-Fortschrittsmatrix** (Heatmap: welche CE wie weit bearbeitet) | Tracking |
+| L10 | **Onboarding-Tutorial** (3-Min interaktive Tour beim ersten Login) | Support |
+| P1 | **Praxisaufgaben pro CE** ("Beobachte heute bei deinem Patienten...") | Theorie-Praxis |
+| P4 | **QR-Code pro CE** (Praxisanleiter scannt → sieht Lernziele) | Niedrigschwellig |
+| Q6 | **Micro-Interactions** (Lottie-Animationen, Confetti, Haptic Feedback) | Design |
+| Q8 | **DE/AR/TR Sprachumschaltung** (alle Erklaertexte + Glossar in 3 Sprachen) | Mehrsprachigkeit |
+
+### 3a.3 V2.0-Features (6 Features — spaeter)
+
+| # | Feature | Nutzerwunsch |
+|---|---------|-------------|
+| S15 | **KI-Tutor "Frag mich"** (RAG-basiert, antwortet aus CE-Inhalten) | Fragen stellen |
+| S16 | **Dozentin-Queue** (KI-unsichere Fragen → Warteschlange fuer Dozentin) | Fragen stellen |
+| L9 | **Pruefungs-Generator** (CE + Bloom-Stufe → PDF-Pruefungsbogen) | Entlastung |
+| P2 | **Praxis-Reflexionsfragen** (Freitext nach Einsatz + KI-Feedback) | Theorie-Praxis |
+| P5 | **Fortbildungszertifikat** (PDF-Zertifikat fuer 24h/Jahr-Nachweis) | Zertifikate |
+| P6 | **Schule-Praxis-Kanal** (Praxisanleiter sieht Lernstand mit Einwilligung) | Kollaboration |
+
+### 3a.4 Feature-Map: Schmerzpunkt → Feature → USP-Claim
+
+| Schmerzpunkt | Feature | USP-Claim (Pitch) |
+|-------------|---------|-------------------|
+| #1 Instabilitaet | PWA + Hetzner DE | "Funktioniert. Immer." |
+| #2 Keine Adaptivitaet | KI-Lernpfad + Kompetenz-Radar | "Lernt mit dir mit." |
+| #3 Theorie-Praxis | Fallvignetten + Virtual Patient | "Vom Buch ans Bett." |
+| #4 App-Chaos | All-in-One PWA + FSRS | "Eine App. Alles drin." |
+| #5 Veraltete Inhalte | Versions-Tags + Dozentin-Review | "Immer aktuell." |
+| #6 Keine Didaktik | Bloom + Sandwich-Methode | "Von Paedagogen gebaut." |
+| #7 Kein Sync | Web-App (by design) | "Handy, Tablet, Laptop — egal." |
+| #8 Abo-Fallen | Schullizenz + 1-Klick-Kuendigung | "Transparent. Fair." |
+| #9 Kein Dashboard | Ampel-Dashboard | "30 Sekunden Ueberblick." |
+| #10 Infrastruktur | Zero-IT + Smartphone-first | "Browser auf. Fertig." |
+
+---
+
 ## 4. WETTBEWERBSANALYSE
 
 ### 4.1 Wettbewerber-Uebersicht (aktualisiert Iteration 005 — echte Preise)
@@ -466,6 +553,47 @@ Keine einzige Lernplattform kombiniert AMBOSS-Wissensqualitaet (Tooltips, Clinic
 | **Eigene Plattform** | **Freemium + 4,99 €/Mo** | **149 €/Schueler/Jahr** | **Ja** | **Ja (DE/AR/TR)** | **Ja (Ampel-Dashboard)** | **Schulen (B2B-first) + Azubis** |
 
 > **Preisbewertung (Iteration 005):** 149 €/Schueler/Jahr liegt am oberen Rand, ist aber vertretbar: AMBOSS+Novaheal Kombi kostet B2C bereits 144 € — unser B2B-Preis ist nur 5 € teurer, bietet aber LMS, Lehrer-Dashboard, KI-Adaptivitaet und Mehrsprachigkeit. 149 € = nur 1,4% der Ausbildungspauschale (9.400-12.500 €/Schueler/Jahr). Netto-Mehrkosten nach Lehrbuch-Ersparnis: ~65-90 €/Jahr. **Risiko:** Pflegias Landeslizenz in BW ist kostenlos bis 2026 → Digitalpakt-Foerderfaehigkeit als Gegenmassnahme. Vollstaendige Preisrecherche: `recherche/wettbewerb/PREISRECHERCHE_WETTBEWERBER.md`.
+
+### 4.2 Nutzerkritik an bestehenden Plattformen (neu, Iteration 007)
+
+> **Quelle:** Systematische Recherche von App-Store-Reviews, Trustpilot, Studienergebnissen (BIBB, PMC, ResearchGate, Wolters Kluwer, ScienceDirect) und Fachforen. Vollstaendiges Dokument: `recherche/NUTZERKRITIK_PFLEGE_APPS.md`
+
+**App-spezifische Kritik (Zusammenfassung):**
+
+| App | Hauptkritik | Bewertung |
+|-----|-------------|-----------|
+| **I Care WISSEN TO GO** (Thieme) | Videos defekt, Support antwortet nicht, 171 EUR bezahlt aber Features kaputt | Gemischt |
+| **Elsevier Pflege** | Suchfunktion defekt, Abstuerze, veraltete Inhalte (z.B. Thromboseprophylaxe), schwarzer Bildschirm nach Login | 4.0/5 trotz Problemen |
+| **Pflege Trainer** | Keine Sync zwischen iPad und iPhone | Inhaltlich positiv |
+| **AMBOSS** | Intransparente Abo-Bedingungen, unerwartete Abbuchungen (198 EUR/Jahr trotz Kuendigung) | Technisch top, Abo-Kritik |
+| **simpleclub** | Fachlich ungenau, nicht fachsprachlich praezise, kein Pflege-Bereich, Tablet-Abstuerze | Nicht pflegespezifisch |
+| **Novaheal** | Keine wesentliche oeffentliche Kritik (stark positiv gefilterte Eigenangaben, 95% empfinden als hilfreich) | Direktester Wettbewerber |
+
+**Top-10 Schmerzpunkte (nach Haeufigkeit, nutzergruppenubergreifend):**
+
+| # | Schmerzpunkt | Betroffene | Unsere Loesung |
+|---|-------------|------------|----------------|
+| 1 | Technische Instabilitaet (Abstuerze, defekte Features) | Schueler | PWA/Web-App — kein App-Store-Update-Lag, automatische Updates |
+| 2 | Keine Personalisierung/Adaptivitaet | Schueler | KI-adaptives Lernen (Nebius/Llama) — unser staerkstes USP |
+| 3 | Theorie-Praxis-Kluft (kein Transfer) | Schueler, Praxisanleiter | Fallbeispiele, Virtual Patient, Branching Scenarios in jeder CE |
+| 4 | App-Fragmentierung (5+ Apps noetig) | Schueler | All-in-One: Lehrbuch + Quiz + Karteikarten + Pruefung + Glossar |
+| 5 | Veraltete/fehlerhafte Inhalte | Schueler, Lehrer | Dozentin als fachliche Reviewerin + Leitlinien-Versions-Tags |
+| 6 | Fehlende didaktische Fundierung | Lehrer | Pflegedidaktisch aufgebaut (Bloom-Taxonomie, Sandwich-Methode, FSRS) |
+| 7 | Keine Geraete-Synchronisation | Schueler | Web-App loest dies automatisch — ein Account, alle Geraete |
+| 8 | Intransparente/teure Abo-Modelle | Schueler | B2B-Schullizenz (Schule zahlt) + transparentes B2C-Freemium |
+| 9 | Kein Lernfortschritts-Tracking fuer Lehrer | Lehrer | Ampel-Dashboard (30-Sek-Tagesuebersicht, Klassen-Detail, Einzel-Schueler) |
+| 10 | Fehlende Infrastruktur an Pflegeschulen | Lehrer, Praxisanleiter | Smartphone-first — loest Hardware-Problem (alle Schueler haben Smartphone) |
+
+**Studien-Evidenz:**
+- **BIBB-Studie** (430 Lehrende, 179 Schulen): Mehrheit will digitale Medien, aber fehlende Infrastruktur und kein IT-Support
+- **Wolters Kluwer**: 92% der Nursing Students, die adaptives Lernen nutzen, sind begeistert — bestaetigt unser KI-USP
+- **PMC-Studie**: Ueberfluss an Technologie fuehrt zu sinkender Nutzungsmotivation → Argument fuer All-in-One statt App-Fragmentierung
+- **ResearchGate** (169 Teilnehmer): Praxisanleiter wuenschen niedrigschwelligen, kollaborativen Zugang
+- **ScienceDirect (2024)**: Gut designte Mobile-Apps tragen positiv bei — schlechtes Design demotiviert
+
+**Strategische Bestaetigung:** Die Recherche bestaetigt alle 4 Marktluecken aus Section 1 (Executive Summary). Besonders stark validiert: KI-Adaptivitaet (Schmerzpunkt #2), All-in-One-Ansatz (#4) und Lehrer-Dashboard (#9). Kein Wettbewerber adressiert alle 10 Schmerzpunkte gleichzeitig.
+
+---
 
 **Marktkenndaten:**
 - **1.339 Pflegeschulen** in Deutschland (Destatis 2023, Abschlussbericht Ausbildungsoffensive)
@@ -989,40 +1117,61 @@ Die Ausbildungspauschale pro Schueler: **9.400-12.500 €/Jahr** (je nach Bundes
 - [ ] **BAFA-Beratung beantragen** (80% Zuschuss, sofort moeglich)
 - [ ] **Gruendungsstipendium NRW recherchieren** (VOR Gewerbeanmeldung!)
 
-### Build-Reihenfolge (empfohlen)
+### Sprint-Plan: MVP in 8 Sprints / 16 Wochen (Iteration 007)
 
-**Sprint 1 (Woche 1–2): Technisches Fundament + Design-System**
-- Next.js 15 Projekt aufsetzen + TypeScript + Tailwind CSS
-- **shadcn/ui installieren** + Farbpalette definieren (warme Toene, semantische Farben: Gruen=Erfolg, Rot=Fehler/CAVE, Gelb=Hinweis, Blau=Info)
-- PostgreSQL auf Hetzner: Auth (E-Mail-Login, Schuler-Rolle, Lehrer-Rolle, School-Admin-Rolle)
-- Basis-Datenbankschema: users, schools, ce_units, learn_modules, quiz_questions, progress, **streaks, xp_log, mastery_levels, spaced_repetition_queue (FSRS)**
-- next-intl einrichten: de/ar/tr Sprachdateien, RTL-Layout fuer /ar
-- Deployment: Vercel Hobby (Entwicklung), Hetzner (Produktion vor Schulverkauf)
+> **Detaillierter Plan:** `specs/SPRINT_PLAN.md` (mit Tasks, Aufwaenden, Abnahmekriterien pro Sprint)
+> **Grundlage:** 23 MVP-Features aus `specs/FEATURE_LISTE.md`
+> **Kontext:** Solo-Entwicklerin + Claude Code. Gruenderin liefert Content parallel.
 
-**Sprint 2 (Woche 3–4): CE-Struktur, Lerninteraktion und erste Inhalte**
-- CE-Uebersichtsseite: Alle 11 CE als **Skill-Grid mit Mastery-Farbcodierung** (Khan-Pattern: 5 Stufen)
-- CE 01 vollstaendig implementieren: Erklaertexte mit **Clinical Pearl Boxen (gruen) + CAVE-Boxen (rot)** (AMBOSS-Pattern), Quiz (Bloom 1–2), Glossar mit **Hover-Tooltips** (AMBOSS-Pattern)
-- **Aufgaben-Mix pro Lektion:** MC + Zuordnung + Lueckentext + **Flip-Karten mit 3D-Animation** (Quizlet-Pattern)
-- **Sofort-Feedback-Panel:** Grosses gruen/rot Panel nach jeder Antwort mit Animation (Duolingo-Pattern)
-- **Fortschrittsbalken** animiert oben in jeder Lektion (Duolingo-Pattern)
-- Glossar-Grundstruktur: DE/AR/TR, erste 50 Eintraege
-- Lernfortschritt-Tracking: Schuler sieht erledigte Module, **Mastery-Level pro Fertigkeit**
+```
+Sprint 1  [Wo 1–2]   Fundament        DB + Auth + Projekt-Struktur
+Sprint 2  [Wo 3–4]   CE-Skelett       11 CE navigierbar + Lernpfad-UI + Bloom-Badges
+Sprint 3  [Wo 5–6]   Lern-Engine      Quiz-Engine + 8 Fragetypen + Auto-Korrektur + Erklaerungen
+Sprint 4  [Wo 7–8]   Gamification     Streak + XP + Kompetenz-Radar + Schueler-Dashboard
+Sprint 5  [Wo 9–10]  Karteikarten     FSRS-Algorithmus + Glossar DE/AR/TR + Tooltips
+Sprint 6  [Wo 11–12] Lehrer-Bereich   Ampel-Dashboard + Klassen-Setup + Freemium-Gate
+Sprint 7  [Wo 13–14] Content + KI     CE 01+02 Inhalte + KI-Lernpfad + Fallvignetten
+Sprint 8  [Wo 15–16] Launch-Ready     PWA + Hetzner-Deploy + Stripe + DSGVO + Polish
+```
 
-**Sprint 3 (Woche 5–7): Adaptivitaet, Gamification und Kernfunktionen**
-- **FSRS-Spaced-Repetition-Algorithmus** (Anki-Pattern): Difficulty/Stability/Retrievability pro Frage, **Intervall-Anzeige bei Rating** ("Wieder in 1d / 3d / 7d / 21d")
-- **Streak-System** (Duolingo-Pattern): Tagesstreak mit Flamme, persoenliches Tagesziel (5/10/15/20 Min), **Streak Freeze** als Safety Net
-- **XP-System:** Punkte pro Lektion, Tagesgoal-Erreichung
-- Mastery-Threshold: 80%-Schwelle pro Themenblock, Freischalt-Logik
-- CE 02 vollstaendig: Erklaertexte, Fallvignetten (Bloom 3), Quiz (Bloom 1–4), **interaktive Drag&Drop-Zuordnung** (dnd-kit)
-- B1-Modus: Leichte-Sprache-Toggle, Hover-Erklaerungen auf Fachbegriffe
+**Meilensteine:**
 
-**Sprint 4 (Woche 8–10): Monetarisierung, Lernbegleiter-Dashboard und Pilotstart**
-- Stripe-Integration: B2B-Schullizenz als primaeres Modell mit 2 Optionen: **Jahresabo 149 €/Schueler** (guenstiger, Einmalzahlung) vs. **Monatsabo ~15 €/Schueler** (teurer, flexibler, 6 Monate Kuendigungsfrist). B2C-Freemium (CE 01 kostenlos, Premium 4,99 €/Mo) als sekundaerer Akquisitionskanal
-- **Lernbegleiter-Dashboard** (Khan-Pattern + Tremor-Charts): Ampel-Tagesuebersicht, **Mastery-Balkendiagramme pro Fertigkeit** (farblich nach 5-Stufen), Klassen-Heatmap, Einzel-Schueler-Profil, Aufgaben-Zuweisung, PDF-Export fuer Traeger — Anforderungen: `recherche/paedagogik/ERGEBNIS.md` Abschnitt 4.11
-- CE 05 und CE 06 vollstaendig (oder parallel in Sprint 3/4)
-- **DSGVO-Compliance (vor Schulverkauf Pflicht):** AVV anwaltlich erstellen (~2.000€), TOM dokumentieren, VVT anlegen, Datenschutzerklaerung (~500€), DSFA (Eigenarbeit). Budget: ~3.000-5.000€. Referenz: Cornelsen-AVV.
-- **Hosting-Migration auf Hetzner Cloud** (falls noch auf Vercel): Next.js deployen, PostgreSQL migrieren, DNS umstellen
-- Pilotstart mit Pilotschule der Gruenderin (B2B-Pilot)
+| Woche | Meilenstein | Go/No-Go |
+|-------|-------------|----------|
+| 2 | Fundament steht | Auth + DB + CI gruen |
+| 6 | Alpha spielbar | 1 CE mit 8 Fragetypen durchspielbar |
+| 10 | Beta intern | Gamification + Karteikarten + Glossar |
+| 12 | Lehrer-Demo | Dashboard zeigbar fuer Pilotschule |
+| 14 | Content Complete | CE 01 + CE 02 vollstaendig, KI aktiv |
+| 16 | **MVP Launch** | Live, PWA, Stripe, Pilotschule startet |
+
+**Content-Zeitplan (Gruenderin parallel):**
+
+| Woche | Gruenderin liefert | Entwicklerin verarbeitet |
+|-------|-------------------|------------------------|
+| 1–4 | CE-01-Struktur: Lernziele, Session-Gliederung | DB-Schema, Navigation |
+| 5–8 | CE-01 Erklaertexte + 30 Quiz-Fragen | Quiz-Engine |
+| 9–10 | 100 Glossar-Begriffe (DE) + CE-02-Struktur | Glossar + FSRS |
+| 11–12 | CE-02 Erklaertexte + 30 Quiz-Fragen + 2 Fallbeispiele | Lehrer-Dashboard |
+| 13–14 | Restliche Quiz-Fragen (50+ pro CE) + Review | Content-Import + KI |
+| 15–16 | Pilotschule vorbereiten, Kolleginnen informieren | Deploy + Polish |
+
+**Sprint 8 umfasst DSGVO-Compliance (vor Schulverkauf Pflicht):**
+- AVV anwaltlich erstellen (~2.000 EUR), TOM dokumentieren, VVT anlegen
+- Datenschutzerklaerung (~500 EUR), DSFA (Eigenarbeit)
+- Hosting-Migration auf Hetzner Cloud, PostgreSQL self-hosted
+- Budget: ~3.000–5.000 EUR (aus Gruendungsstipendium NRW finanzierbar)
+
+**Budget waehrend Entwicklung (16 Wochen): ~25 EUR** (Vercel Hobby + Nebius Test). Ab Launch: ~15 EUR/Mo (Hetzner + PostgreSQL + Nebius).
+
+**Zeitplan-Risiken und Fallbacks:**
+
+| Risiko | Fallback |
+|--------|----------|
+| Content zu spaet | Dummy-Content ab Sprint 2; Gruenderin startet Woche 1 |
+| FSRS zu komplex | Leitner-System (3 Boxen) statt FSRS |
+| KI-API unzuverlaessig | Regelbasierte Schwierigkeit (ohne KI) |
+| Hetzner-Probleme | Vercel fuer Pilot (DSGVO-Risiko dokumentieren) |
 
 **Sprint 5 (Woche 11–12): Polish, Engagement und Launch**
 - **Onboarding-Flow** (Duolingo-Pattern): Value before Signup (Demo-Lektion ohne Account), persoenliches Tagesziel waehlen, Progressive Feature Disclosure
@@ -1111,13 +1260,16 @@ user_daily_goals (id, user_id, goal_minutes: 5|10|15|20, created_at)
 | **Foerderung & Gruendung (Wohlverhaltensphase)** | `recherche/FOERDERUNG_RECHERCHE.md` | Vollstaendig (Iteration 004) |
 | **Foerderung fuer Plattform-Entwicklung** | `recherche/FOERDERUNG_PLATTFORM_RECHERCHE.md` | Vollstaendig (Iteration 005) |
 | **UI/UX-Referenzanalyse (7 Plattformen)** | `recherche/UI_UX_REFERENZANALYSE.md` | Vollstaendig (Iteration 006) |
+| **Nutzerkritik Pflege-Apps (Schueler, Lehrer, Praxisanleiter)** | `recherche/NUTZERKRITIK_PFLEGE_APPS.md` | Vollstaendig (Iteration 007) |
+| **Feature-Liste (38 Features, MVP/V1.1/V2.0)** | `specs/FEATURE_LISTE.md` | Vollstaendig (Iteration 007) |
+| **Sprint-Plan (8 Sprints, 16 Wochen)** | `specs/SPRINT_PLAN.md` | Vollstaendig (Iteration 007) |
 | **Digitalpakt 2.0 Foerderfaehigkeit** | `recherche/PIVOT_RECHERCHE.md` | 6.1–6.7 (Iteration 003) |
 | **Revenue-Projektion (3 Szenarien)** | `recherche/PIVOT_RECHERCHE.md` | 3.4 (Iteration 003) |
 
 ---
 
-*Dieses Briefing ist das Deliverable der gesamten Phase 1. Es fasst alle Ergebnisse aus Paedagogik-, Technik-, Wettbewerb-, Inhalts-, Rechts-, Foerderungs-, Beschaffungs- und UI/UX-Recherche zusammen, loest identifizierte Widersprueche auf und gibt einem Entwickler alle Informationen, die fuer den direkten Bau-Start benoetigt werden.*
+*Dieses Briefing ist das Deliverable der gesamten Phase 1. Es fasst alle Ergebnisse aus Paedagogik-, Technik-, Wettbewerb-, Inhalts-, Rechts-, Foerderungs-, Beschaffungs-, UI/UX- und Nutzerkritik-Recherche zusammen, loest identifizierte Widersprueche auf und gibt einem Entwickler alle Informationen, die fuer den direkten Bau-Start benoetigt werden.*
 
-*Gruenderin-Interview abgeschlossen (2026-03-18). Alle blockierenden Fragen geklaert. Naechster Schritt: Build-Start Sprint 1.*
+*Gruenderin-Interview abgeschlossen (2026-03-18). Nutzerkritik-Recherche abgeschlossen (2026-03-19). Alle blockierenden Fragen geklaert. Naechster Schritt: Build-Start Sprint 1.*
 
-*Stand: 2026-03-18 | Version 2.5 | Pflege-Lernplattform Projekt*
+*Stand: 2026-03-19 | Version 2.8 | Pflege-Lernplattform Projekt*

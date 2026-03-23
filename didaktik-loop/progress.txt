@@ -1,0 +1,8 @@
+# Didaktik-Loop Progress
+# Format: Datum — Iteration — Lektion — Ergebnis
+
+2026-03-21: le-04-ra — PASS (Didaktik: 16/16, Fachlich: 10/10, Versuche: 1)
+  S2: 23 Steps (truefalse, fillin, dialog, mc, text, timer, branching, crossword, categorize, memory, freetext, sorting)
+  S3: 21 Steps (mc, dialog, text, truefalse, branching, freetext, crossword, timer, sorting)
+  Hinweise: S3-Steps 1-3 = 3x MC (Grenze), Interleaving-Quote S2 etwas niedrig (8,7%), Bloom-Einordnung Timer-Steps prüfen
+  Leitfälle: Ayse Yilmaz (S1+S2) + Lukas Brandt (S3) — beide dreidimensional, keine Stereotypen

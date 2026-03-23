@@ -5,8 +5,8 @@ import { routing } from "@/lib/i18n/routing"
 
 const SESSION_COOKIE = "pflege-session"
 
-const publicPaths = ["/", "/login", "/register", "/reset-password"]
-const apiPublicPaths = ["/api/health", "/api/auth/"]
+const publicPaths = ["/", "/login", "/register", "/reset-password", "/demo", "/lernen", "/dashboard"]
+const apiPublicPaths = ["/api/health", "/api/auth/", "/api/ki-feedback", "/api/ki-chat"]
 
 const intlMiddleware = createMiddleware(routing)
 
@@ -57,7 +57,7 @@ export async function middleware(request: NextRequest) {
   const pathWithoutLocale = stripLocale(pathname)
 
   // Allow public pages — let intl middleware handle locale
-  if (publicPaths.includes(pathWithoutLocale)) {
+  if (publicPaths.some((p) => pathWithoutLocale === p || pathWithoutLocale.startsWith(p + "/"))) {
     return intlMiddleware(request)
   }
 

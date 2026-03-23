@@ -1,0 +1,31 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "WebSearch"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(rm -rf /)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "file=\"$(echo $CLAUDE_TOOL_INPUT | jq -r '.file_path // .path // empty')\" && if [ -n \"$file\" ] && echo \"$file\" | grep -qE '\\.(ts|tsx|js|jsx|json|css)$'; then npx prettier --write \"$file\" 2>/dev/null; fi",
+            "timeout": 10000
+          }
+        ]
+      }
+    ]
+  }
+}

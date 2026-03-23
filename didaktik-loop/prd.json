@@ -1,0 +1,23 @@
+{
+  "name": "Didaktik-Loop CE-05",
+  "description": "Erstellt Sessionpläne (3 Sessions x 30 Min) für alle 16 Lektionen der CE 05. Krankheitsbild-zentriert nach 12-Punkte-Struktur.",
+  "version": "2.0",
+  "stories": [
+    { "id": 1, "leId": "le-01-einfuehrung", "title": "Einführung Rheumatischer Formenkreis", "block": "A", "passes": false },
+    { "id": 2, "leId": "le-02-anatomie-immunologie", "title": "Anatomie, Physiologie & Immunologie", "block": "A", "passes": false },
+    { "id": 3, "leId": "le-03-ra-definition", "title": "RA: Definition, Ursachen, Pathomechanismus", "block": "B", "passes": false },
+    { "id": 4, "leId": "le-04-ra-symptome-diagnose", "title": "RA: Symptome, Formen, Diagnose", "block": "B", "passes": false },
+    { "id": 5, "leId": "le-05-ra-therapie", "title": "RA: Therapie", "block": "B", "passes": false },
+    { "id": 6, "leId": "le-06-ra-pflege-prognose", "title": "RA: Pflege, Komplikationen, Prognose", "block": "B", "passes": false },
+    { "id": 7, "leId": "le-07-gicht-definition-diagnose", "title": "Gicht: Definition bis Diagnose", "block": "C", "passes": false },
+    { "id": 8, "leId": "le-08-gicht-therapie-pflege", "title": "Gicht: Therapie, Pflege, Prognose", "block": "C", "passes": false },
+    { "id": 9, "leId": "le-09-spa", "title": "SpA: Bechterew, PsA, Reaktive Arthritis", "block": "D", "passes": false },
+    { "id": 10, "leId": "le-10-kollagenosen", "title": "Kollagenosen: SLE, Sklerose, Sjögren", "block": "E", "passes": false },
+    { "id": 11, "leId": "le-11-vaskulitiden", "title": "Vaskulitiden", "block": "E", "passes": false },
+    { "id": 12, "leId": "le-12-schmerzmanagement", "title": "Schmerzmanagement bei Rheuma", "block": "F", "passes": false },
+    { "id": 13, "leId": "le-13-reha-interprofessionell", "title": "Rehabilitation & Interprofessionelle Zusammenarbeit", "block": "F", "passes": false },
+    { "id": 14, "leId": "le-14-psychosoziales", "title": "Psychosoziale Aspekte & Krankheitsbewältigung", "block": "F", "passes": false },
+    { "id": 15, "leId": "le-15-evidenz-leitlinien", "title": "Evidenzbasierte Pflege & Leitlinien", "block": "G", "passes": false },
+    { "id": 16, "leId": "le-16-fallarbeit-pruefung", "title": "Komplexe Fallarbeit & Prüfungsvorbereitung", "block": "G", "passes": false }
+  ]
+}
