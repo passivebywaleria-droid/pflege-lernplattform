@@ -41,42 +41,14 @@ import { StepComparison } from "@/components/learn/step-comparison";
 import { KiChat } from "@/components/learn/ki-chat";
 import { StreakBadge } from "@/components/learn/streak-badge";
 import { Confetti } from "@/components/learn/confetti";
-import { SprachlevelToggle } from "@/components/learn/sprachlevel-toggle";
 import { ModusTransition, MODUS_CONFIG } from "@/components/learn/modus-transition";
-import { BloomFeedback } from "@/components/learn/bloom-feedback";
 import { useLernFortschritt } from "@/hooks/use-lern-fortschritt";
 
-const PHASE_LABELS: Record<number, string> = {
-  1: "Ankommen",
-  2: "Situierung",
-  3: "Wissenserwerb",
-  4: "Anwendung",
-  5: "Reflexion",
-  6: "Transfer",
-};
-
-const PHASE_COLORS: Record<number, string> = {
-  1: "#0071e3",
-  2: "#FF9500",
-  3: "#30D158",
-  4: "#AF52DE",
-  5: "#FF3B30",
-  6: "#5AC8FA",
-};
-
-const BLOOM_LABELS: Record<number, string> = {
-  1: "Erinnern",
-  2: "Verstehen",
-  3: "Anwenden",
-  4: "Analysieren",
-  5: "Bewerten",
-  6: "Erschaffen",
-};
 
 export default function LernenPage() {
   const params = useParams();
   const leId = params.leId as string;
-  const { saveSessionFortschritt, updateStreakTag, getLeFortschritt, addSchwaeche, saveAntwort, incrementB1Toggle, updateAchsen, updateKompetenzEintrag, profil, loaded: profilLoaded } = useLernFortschritt();
+  const { saveSessionFortschritt, updateStreakTag, getLeFortschritt, addSchwaeche, saveAntwort, updateAchsen, updateKompetenzEintrag, profil, loaded: profilLoaded } = useLernFortschritt();
 
   const [steps, setSteps] = useState<ContentStep[]>([]);
   const [metadata, setMetadata] = useState<LektionMetadata | null>(null);
@@ -91,9 +63,6 @@ export default function LernenPage() {
   const [currentStep, setCurrentStep] = useState(0);
   const [score, setScore] = useState(0);
   const [totalQuestions, setTotalQuestions] = useState(0);
-  const [xp, setXp] = useState(0);
-  const [showXpToast, setShowXpToast] = useState(false);
-  const [xpToastAmount, setXpToastAmount] = useState(0);
   const [selfRating, setSelfRating] = useState<number | null>(null);
   const [reflexionText, setReflexionText] = useState<string | null>(null);
   const [showGlossar, setShowGlossar] = useState(false);
@@ -104,8 +73,6 @@ export default function LernenPage() {
   const [sprachLevel, setSprachLevel] = useState<"c1" | "b1">("c1");
   const [showModusTransition, setShowModusTransition] = useState(false);
   const [currentModus, setCurrentModus] = useState<ErlebnisModus | null>(null);
-  const [lastAnswerCorrect, setLastAnswerCorrect] = useState<boolean | null>(null);
-  const [showBloomFeedback, setShowBloomFeedback] = useState(false);
   // Antwort-History für Zurück-Navigation
   const [answerHistory, setAnswerHistory] = useState<Record<number, { correct: boolean | null; answered: boolean }>>({});
   const [isReviewMode, setIsReviewMode] = useState(false);
@@ -202,13 +169,6 @@ export default function LernenPage() {
   const step = adaptiveStep ?? activeRetryStep ?? steps[currentStep];
   const progress = steps.length > 0 ? ((currentStep + 1) / steps.length) * 100 : 0;
 
-  const awardXp = useCallback((amount: number) => {
-    setXp((prev) => prev + amount);
-    setXpToastAmount(amount);
-    setShowXpToast(true);
-    setTimeout(() => setShowXpToast(false), 1500);
-  }, []);
-
   // Retry-Step erzeugen: gleicher Inhalt, anderer Typ
   const createRetryStep = useCallback((original: ContentStep): ContentStep | null => {
     // Nur für Fragetypen mit Optionen
@@ -259,8 +219,6 @@ export default function LernenPage() {
     if (currentStep > 0) {
       setCurrentStep((s) => s - 1);
       setIsReviewMode(true);
-      setShowBloomFeedback(false);
-      setLastAnswerCorrect(null);
     }
   }, [currentStep]);
 
@@ -385,16 +343,12 @@ export default function LernenPage() {
 
       if (correct !== undefined) {
         setTotalQuestions((t) => t + 1);
-        setLastAnswerCorrect(correct);
-        setShowBloomFeedback(true);
 
         if (correct) {
           setScore((s) => s + 1);
           setStreak((s) => s + 1);
-          awardXp(currentStepData?.xpValue ?? 10);
         } else {
           setStreak(0);
-          awardXp(3);
 
           // Karteikarte aus Schwäche generieren
           if (currentStepData?.question?.fragetext) {
@@ -417,14 +371,11 @@ export default function LernenPage() {
           }
         }
       } else {
-        setLastAnswerCorrect(null);
-        setShowBloomFeedback(false);
-        awardXp(currentStepData?.xpValue ?? 5);
-      }
+        }
 
       advanceStep();
     },
-    [currentStep, steps, awardXp, addSchwaeche, leId, advanceStep, retryQueue, createRetryStep, profil, sessionAntworten, saveAntwort, updateKompetenzEintrag],
+    [currentStep, steps, addSchwaeche, leId, advanceStep, retryQueue, createRetryStep, profil, sessionAntworten, saveAntwort, updateKompetenzEintrag],
   );
 
   // Fortschritt nach jedem Step speichern
@@ -435,7 +386,7 @@ export default function LernenPage() {
         session: activeSession,
         currentStep,
         totalSteps: steps.length,
-        xp,
+        xp: 0,
         score,
         totalQuestions,
         hearts: 0,
@@ -445,7 +396,7 @@ export default function LernenPage() {
         updatedAt: new Date().toISOString(),
       });
     }
-  }, [currentStep, leId, activeSession, steps.length, xp, score, totalQuestions, streak, reflexionText, saveSessionFortschritt, profilLoaded]);
+  }, [currentStep, leId, activeSession, steps.length, score, totalQuestions, streak, reflexionText, saveSessionFortschritt, profilLoaded]);
 
   // Streak-Tag bei Aktivität zählen
   useEffect(() => {
@@ -577,11 +528,7 @@ export default function LernenPage() {
             </h1>
             <p className="text-lg text-[#6e6e73]">{metadata.title}</p>
 
-            <div className="grid grid-cols-3 gap-4">
-              <div className="rounded-2xl bg-[#0071e3]/5 p-4">
-                <p className="text-2xl font-bold text-[#0071e3]">{xp} XP</p>
-                <p className="text-xs text-[#6e6e73]">Erfahrung</p>
-              </div>
+            <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl bg-[#30D158]/5 p-4">
                 <p className="text-2xl font-bold text-[#30D158]">
                   {score}/{totalQuestions}
@@ -650,7 +597,6 @@ export default function LernenPage() {
                   setCurrentStep(0);
                   setScore(0);
                   setTotalQuestions(0);
-                  setXp(0);
                   setSelfRating(null);
                   setIsComplete(false);
                 }}
@@ -718,36 +664,8 @@ export default function LernenPage() {
                   ‹
                 </button>
               )}
-              {step.modus && MODUS_CONFIG[step.modus] ? (
-                <span
-                  className="inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-bold text-white"
-                  style={{ backgroundColor: MODUS_CONFIG[step.modus].farbe }}
-                >
-                  {MODUS_CONFIG[step.modus].icon} {MODUS_CONFIG[step.modus].label}
-                </span>
-              ) : (
-                <span
-                  className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-bold text-white"
-                  style={{ backgroundColor: PHASE_COLORS[step.phase] }}
-                >
-                  {PHASE_LABELS[step.phase]}
-                </span>
-              )}
-              <span className="text-xs text-[#86868b]">
-                Bloom {step.bloomLevel}: {BLOOM_LABELS[step.bloomLevel]}
-              </span>
               <StreakBadge streak={streak} />
             </div>
-            <div className="flex items-center gap-2">
-              <span className="text-sm font-bold text-[#0071e3]">
-                {xp} XP
-              </span>
-            </div>
-          </div>
-
-          {/* Zweite Zeile: Glossar + Sprachlevel */}
-          <div className="flex items-center justify-between mb-2">
-            <SprachlevelToggle level={sprachLevel} onChange={(l) => { setSprachLevel(l); if (l === "b1") incrementB1Toggle(); }} />
             <button
               onClick={() => setShowGlossar(!showGlossar)}
               className="text-xs font-medium text-[#0071e3] active:opacity-60"
@@ -773,20 +691,6 @@ export default function LernenPage() {
           </button>
         </div>
       </div>
-
-      {/* XP Toast */}
-      <AnimatePresence>
-        {showXpToast && (
-          <motion.div
-            initial={{ opacity: 0, y: 20, x: "-50%" }}
-            animate={{ opacity: 1, y: 0, x: "-50%" }}
-            exit={{ opacity: 0, y: -10, x: "-50%" }}
-            className="fixed bottom-24 left-1/2 z-50 rounded-full bg-[#0071e3] px-4 py-2 text-sm font-bold text-white shadow-lg"
-          >
-            +{xpToastAmount} XP
-          </motion.div>
-        )}
-      </AnimatePresence>
 
       {/* Glossar Overlay */}
       <AnimatePresence>
@@ -870,9 +774,7 @@ export default function LernenPage() {
                         setCurrentStep(i);
                         setIsReviewMode(i < currentStep);
                         setShowStepNav(false);
-                        setShowBloomFeedback(false);
-                        setLastAnswerCorrect(null);
-                      }}
+                                                        }}
                       className={`w-full text-left rounded-xl px-3 py-2.5 flex items-center gap-3 transition-all active:scale-[0.98] ${
                         isCurrent
                           ? "bg-[#0071e3]/10 border border-[#0071e3]/30"
@@ -904,19 +806,6 @@ export default function LernenPage() {
                           <span className="text-[10px] text-[#6e6e73] uppercase tracking-wider font-semibold">
                             {s.stepType}
                           </span>
-                          {s.modus && MODUS_CONFIG[s.modus] && (
-                            <span className="text-[10px]">
-                              {MODUS_CONFIG[s.modus].icon}
-                            </span>
-                          )}
-                          <span className="text-[10px] text-[#86868b]">
-                            B{s.bloomLevel}
-                          </span>
-                          {s.xpValue && (
-                            <span className="text-[10px] text-[#0071e3]">
-                              {s.xpValue} XP
-                            </span>
-                          )}
                         </div>
                       </div>
                     </button>
@@ -989,16 +878,9 @@ export default function LernenPage() {
                   setReflexionText(text);
                 }}
                 reflexionText={reflexionText}
-                xp={xp}
                 score={score}
                 totalQuestions={totalQuestions}
               />
-              {showBloomFeedback && lastAnswerCorrect !== null && step.bloomLevel > 0 && (
-                <BloomFeedback
-                  bloomLevel={step.bloomLevel}
-                  correct={lastAnswerCorrect}
-                />
-              )}
             </motion.div>
           )}
         </AnimatePresence>
@@ -1027,7 +909,6 @@ function StepRenderer({
   onSelfRating,
   onReflection,
   reflexionText,
-  xp,
   score,
   totalQuestions,
 }: {
@@ -1038,7 +919,6 @@ function StepRenderer({
   onSelfRating: (rating: number) => void;
   onReflection: (text: string) => void;
   reflexionText: string | null;
-  xp: number;
   score: number;
   totalQuestions: number;
 }) {
@@ -1155,7 +1035,6 @@ function StepRenderer({
           reflexionText={reflexionText ?? undefined}
           rueckbezug={step.question.summary.reflexionRueckbezug}
           kernaussagen={step.question.summary.kernaussagen}
-          xp={xp}
           score={score}
           totalQuestions={totalQuestions}
           onNext={() => onNext()}

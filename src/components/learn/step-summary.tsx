@@ -10,7 +10,6 @@ interface StepSummaryProps {
   reflexionText?: string;  // Was der Schüler am Anfang geschrieben hat
   rueckbezug: string;      // "Jetzt weißt du: ..."
   kernaussagen: string[];
-  xp: number;
   score: number;
   totalQuestions: number;
   onNext: () => void;
@@ -22,7 +21,6 @@ export function StepSummary({
   reflexionText,
   rueckbezug,
   kernaussagen,
-  xp,
   score,
   totalQuestions,
   onNext,
@@ -78,12 +76,8 @@ export function StepSummary({
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.35 }}
-        className="grid grid-cols-3 gap-3"
+        className="grid grid-cols-2 gap-3"
       >
-        <div className="rounded-2xl bg-[#0071e3]/5 p-4 text-center">
-          <p className="text-2xl font-bold text-[#0071e3]">{xp}</p>
-          <p className="text-xs text-[#6e6e73]">XP</p>
-        </div>
         <div className="rounded-2xl bg-[#30D158]/5 p-4 text-center">
           <p className="text-2xl font-bold text-[#30D158]">
             {score}/{totalQuestions}
