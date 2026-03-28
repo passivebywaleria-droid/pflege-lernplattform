@@ -67,18 +67,18 @@ export function StepHotspot({
   const allFound = found.size === zones.length;
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+      <h2 className="text-2xl font-bold text-[#1d1d1f]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 dark:text-white/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
           {body}
         </p>
       )}
 
-      <p className="text-lg font-medium text-[#1d1d1f] dark:text-white">
+      <p className="text-lg font-medium text-[#1d1d1f]">
         {instruction}
       </p>
 
@@ -92,7 +92,7 @@ export function StepHotspot({
             <div
               key={z.id}
               className={`h-2.5 w-2.5 rounded-full transition-colors ${
-                found.has(z.id) ? "bg-[#30D158]" : "bg-[#d2d2d7] dark:bg-white/20"
+                found.has(z.id) ? "bg-[#30D158]" : "bg-[#d2d2d7]"
               }`}
             />
           ))}
@@ -101,7 +101,7 @@ export function StepHotspot({
 
       {/* Bild mit Hotspots */}
       <div
-        className="relative rounded-2xl overflow-hidden border-2 border-[#d2d2d7] dark:border-white/15 cursor-crosshair select-none"
+        className="relative rounded-2xl overflow-hidden border-2 border-[#d2d2d7] cursor-crosshair select-none"
         onClick={handleClick}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -130,7 +130,7 @@ export function StepHotspot({
                 <div className="h-8 w-8 rounded-full bg-[#30D158]/30 border-2 border-[#30D158] flex items-center justify-center">
                   <span className="text-xs font-bold text-[#30D158]">✓</span>
                 </div>
-                <span className="absolute -bottom-5 whitespace-nowrap text-[10px] font-bold text-[#30D158] bg-white/80 dark:bg-[#1d1d1f]/80 px-1 rounded">
+                <span className="absolute -bottom-5 whitespace-nowrap text-[10px] font-bold text-[#30D158] bg-white/80 px-1 rounded">
                   {zone.label}
                 </span>
               </motion.div>

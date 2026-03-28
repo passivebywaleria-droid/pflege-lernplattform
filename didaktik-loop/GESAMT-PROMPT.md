@@ -54,10 +54,13 @@ Lies Rohmaterial + Leitfall der aktuellen Lektion
 Erstelle: `content/ce-05/[leId]/sessionplan.md`
 
 Sessionplan mit 3 Sessions (je ~22 Steps):
-- Step-Tabelle: #, Min, Modus, Step-Typ, Bloom, Inhalt, Begründung
+- Step-Tabelle: #, Min, Modus, Step-Typ, Bloom, 12-Pkt, **Lernziel**, Inhalt, Begründung
+- **Lernziel-IDs definieren**: Format `{ceId}-{leId}-{topic}`, z.B. `ce05-le03-ra-definition`
+- Jeder Step bekommt eine Lernziel-ID (Spalte "Lernziel" in der Tabelle)
+- Alle verwendeten Lernziel-IDs in den Metadaten des Sessionplans auflisten
 - Session 1 nutzt die bestehenden Steps als Basis (aber neu choreografiert)
 - Session 2+3 sind komplett neu
-- Beachte alle 10 Regeln des Regisseurs
+- Beachte alle 12 Regeln des Regisseurs
 
 ---
 
@@ -87,6 +90,7 @@ Erstelle:
 - `content/ce-05/[leId]/steps-s3.ts` — Session 3 (18-22 Steps)
 
 Jeder Step hat `contentC1`. Das `contentB1` wird in Schritt 6 ergänzt.
+Jeder Step hat ein `lernziel`-Feld (aus dem Sessionplan übernehmen, Format: `{ceId}-{leId}-{topic}`).
 
 WICHTIG: Exakt dem Sessionplan folgen. Jeder Step im Plan = 1 Step im Code.
 

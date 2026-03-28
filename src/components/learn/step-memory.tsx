@@ -89,13 +89,13 @@ export function StepMemory({
   const cols = pairs.length <= 4 ? 3 : pairs.length <= 6 ? 3 : 4;
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+      <h2 className="text-2xl font-bold text-[#1d1d1f]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 dark:text-white/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
           {body}
         </p>
       )}
@@ -128,7 +128,7 @@ export function StepMemory({
                   ? `${pairColor}`
                   : isFlipped
                     ? "border-[#0071e3] bg-[#0071e3]/5 text-[#0071e3]"
-                    : "border-[#d2d2d7] dark:border-white/15 bg-white dark:bg-white/5 text-[#6e6e73] hover:border-[#0071e3]/50 cursor-pointer"
+                    : "border-[#d2d2d7] bg-white text-[#6e6e73] hover:border-[#0071e3]/50 cursor-pointer"
               }`}
             >
               <AnimatePresence mode="wait">
@@ -138,7 +138,7 @@ export function StepMemory({
                     initial={{ rotateY: 90 }}
                     animate={{ rotateY: 0 }}
                     exit={{ rotateY: 90 }}
-                    className="leading-tight text-[#1d1d1f] dark:text-white"
+                    className="leading-tight text-[#1d1d1f]"
                   >
                     {card.text}
                   </motion.span>
@@ -166,7 +166,7 @@ export function StepMemory({
             animate={{ opacity: 1, y: 0 }}
             className="rounded-2xl p-4 bg-[#30D158]/10 border border-[#30D158]/30"
           >
-            <p className="font-semibold text-[#1d1d1f] dark:text-white">
+            <p className="font-semibold text-[#1d1d1f]">
               Alle Paare in {moves} Zuegen gefunden!{" "}
               {moves <= pairs.length * 2
                 ? "Hervorragend!"

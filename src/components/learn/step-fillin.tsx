@@ -31,20 +31,20 @@ export function StepFillIn({
   };
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+      <h2 className="text-2xl font-bold text-[#1d1d1f]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 dark:text-white/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
           {body}
         </p>
       )}
 
       {/* Sentence with blanks */}
-      <div className="rounded-2xl bg-white dark:bg-white/5 border border-[#d2d2d7] dark:border-white/15 p-5">
-        <p className="text-lg text-[#1d1d1f] dark:text-white leading-relaxed">
+      <div className="rounded-2xl bg-white border border-[#d2d2d7] p-5">
+        <p className="text-lg text-[#1d1d1f] leading-relaxed">
           {parts.map((part, i) => (
             <React.Fragment key={i}>
               {part}
@@ -52,12 +52,12 @@ export function StepFillIn({
                 <span
                   className={`inline-block px-3 py-0.5 mx-1 rounded-lg font-semibold transition-colors ${
                     submitted && isCorrect
-                      ? "bg-[#30D158]/20 text-[#1d1d1f] dark:text-white"
+                      ? "bg-[#30D158]/20 text-[#1d1d1f]"
                       : submitted && !isCorrect
-                        ? "bg-[#FF3B30]/20 text-[#1d1d1f] dark:text-white"
+                        ? "bg-[#FF3B30]/20 text-[#1d1d1f]"
                         : selected !== null
                           ? "bg-[#0071e3]/10 text-[#0071e3]"
-                          : "bg-[#e8e8ed] dark:bg-white/10 text-[#86868b]"
+                          : "bg-[#e8e8ed] text-[#86868b]"
                   }`}
                 >
                   {selected !== null ? options[selected] : "___"}
@@ -71,8 +71,8 @@ export function StepFillIn({
       {/* Options */}
       <div className="space-y-2">
         {options.map((opt, i) => {
-          let borderColor = "border-[#d2d2d7] dark:border-white/15";
-          let bgColor = "bg-white dark:bg-white/5";
+          let borderColor = "border-[#d2d2d7]";
+          let bgColor = "bg-white";
 
           if (submitted && correctIndex === i) {
             borderColor = "border-[#30D158]";
@@ -90,7 +90,7 @@ export function StepFillIn({
               key={i}
               onClick={() => !submitted && setSelected(i)}
               whileTap={!submitted ? { scale: 0.98 } : undefined}
-              className={`w-full rounded-xl border-2 ${borderColor} ${bgColor} p-3 text-left text-sm font-medium text-[#1d1d1f] dark:text-white transition-colors`}
+              className={`w-full rounded-xl border-2 ${borderColor} ${bgColor} p-3 text-left text-sm font-medium text-[#1d1d1f] transition-colors`}
             >
               {opt}
             </motion.button>
@@ -117,7 +117,7 @@ export function StepFillIn({
                 : "bg-[#FF3B30]/10 border border-[#FF3B30]/30"
             }`}
           >
-            <p className="font-semibold text-[#1d1d1f] dark:text-white">
+            <p className="font-semibold text-[#1d1d1f]">
               {isCorrect
                 ? "Richtig!"
                 : `Nicht ganz. Die richtige Antwort ist: ${options[correctIndex]}`}

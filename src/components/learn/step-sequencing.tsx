@@ -59,18 +59,18 @@ export function StepSequencing({
   const correctPositions = order.map((val, idx) => val === idx);
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+      <h2 className="text-2xl font-bold text-[#1d1d1f]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 dark:text-white/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
           {body}
         </p>
       )}
 
-      <p className="text-lg font-medium text-[#1d1d1f] dark:text-white">
+      <p className="text-lg font-medium text-[#1d1d1f]">
         {instruction}
       </p>
 
@@ -93,7 +93,7 @@ export function StepSequencing({
                     ? "border-[#FF3B30] bg-[#FF3B30]/5"
                     : dragIdx === pos
                       ? "border-[#0071e3] bg-[#0071e3]/5"
-                      : "border-[#d2d2d7] dark:border-white/15 bg-white dark:bg-white/5"
+                      : "border-[#d2d2d7] bg-white"
               }`}
               onPointerDown={() => !submitted && setDragIdx(pos)}
               onPointerUp={() => setDragIdx(null)}
@@ -105,7 +105,7 @@ export function StepSequencing({
                     ? "bg-[#30D158] text-white"
                     : submitted && !correctPositions[pos]
                       ? "bg-[#FF3B30] text-white"
-                      : "bg-[#f5f5f7] dark:bg-white/10 text-[#6e6e73]"
+                      : "bg-[#f5f5f7] text-[#6e6e73]"
                 }`}
               >
                 {pos + 1}
@@ -113,7 +113,7 @@ export function StepSequencing({
 
               {/* Bild (optional) */}
               {item.imageUrl && (
-                <div className="h-12 w-12 shrink-0 rounded-lg overflow-hidden bg-[#f5f5f7] dark:bg-white/10">
+                <div className="h-12 w-12 shrink-0 rounded-lg overflow-hidden bg-[#f5f5f7]">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={item.imageUrl}
@@ -124,7 +124,7 @@ export function StepSequencing({
               )}
 
               {/* Label */}
-              <p className="flex-1 text-sm font-medium text-[#1d1d1f] dark:text-white">
+              <p className="flex-1 text-sm font-medium text-[#1d1d1f]">
                 {item.label}
               </p>
 
@@ -134,14 +134,14 @@ export function StepSequencing({
                   <button
                     onClick={() => moveUp(pos)}
                     disabled={pos === 0}
-                    className="rounded-lg bg-[#f5f5f7] dark:bg-white/10 px-2 py-1 text-xs disabled:opacity-30 active:bg-[#e5e5ea]"
+                    className="rounded-lg bg-[#f5f5f7] px-2 py-1 text-xs disabled:opacity-30 active:bg-[#e5e5ea]"
                   >
                     ▲
                   </button>
                   <button
                     onClick={() => moveDown(pos)}
                     disabled={pos === order.length - 1}
-                    className="rounded-lg bg-[#f5f5f7] dark:bg-white/10 px-2 py-1 text-xs disabled:opacity-30 active:bg-[#e5e5ea]"
+                    className="rounded-lg bg-[#f5f5f7] px-2 py-1 text-xs disabled:opacity-30 active:bg-[#e5e5ea]"
                   >
                     ▼
                   </button>
@@ -180,7 +180,7 @@ export function StepSequencing({
                 <p className="text-sm text-[#6e6e73]">Richtige Reihenfolge:</p>
                 <ol className="mt-1 space-y-1">
                   {items.map((item, i) => (
-                    <li key={item.id} className="text-sm text-[#1d1d1f]/70 dark:text-white/70">
+                    <li key={item.id} className="text-sm text-[#1d1d1f]/70">
                       {i + 1}. {item.label}
                     </li>
                   ))}

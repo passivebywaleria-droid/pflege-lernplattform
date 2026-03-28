@@ -47,13 +47,13 @@ export function StepHighlight({
   };
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+      <h2 className="text-2xl font-bold text-[#1d1d1f]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 dark:text-white/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
           {body}
         </p>
       )}
@@ -66,8 +66,8 @@ export function StepHighlight({
       </p>
 
       {/* Text with markable segments */}
-      <div className="rounded-2xl bg-white dark:bg-white/5 border border-[#d2d2d7] dark:border-white/15 p-5">
-        <p className="text-sm leading-relaxed text-[#1d1d1f] dark:text-white">
+      <div className="rounded-2xl bg-white border border-[#d2d2d7] p-5">
+        <p className="text-sm leading-relaxed text-[#1d1d1f]">
           {segments.map((segment, i) => {
             const isMarked = marked.has(i);
             const isError = segment.isError;
@@ -87,13 +87,13 @@ export function StepHighlight({
                 onClick={() => toggle(i)}
                 className={`cursor-pointer px-1 py-0.5 rounded transition-all inline ${
                   isCorrectMark
-                    ? "bg-[#30D158]/20 text-[#1d1d1f] dark:text-white font-medium"
+                    ? "bg-[#30D158]/20 text-[#1d1d1f] font-medium"
                     : isWrongMark
                       ? "bg-[#FF3B30]/20 text-[#FF3B30] line-through"
                       : isMissed
-                        ? "bg-[#FF9500]/30 text-[#1d1d1f] dark:text-white underline decoration-wavy decoration-[#FF9500]"
+                        ? "bg-[#FF9500]/30 text-[#1d1d1f] underline decoration-wavy decoration-[#FF9500]"
                         : isMarked
-                          ? "bg-[#FFD60A]/40 text-[#1d1d1f] dark:text-white"
+                          ? "bg-[#FFD60A]/40 text-[#1d1d1f]"
                           : "hover:bg-[#FFD60A]/10"
                 }`}
               >
@@ -130,7 +130,7 @@ export function StepHighlight({
               <div key={i} className="flex items-start gap-2 text-xs">
                 <span className="text-[#FF9500] mt-0.5">&#8594;</span>
                 <div>
-                  <span className="font-medium text-[#1d1d1f] dark:text-white">
+                  <span className="font-medium text-[#1d1d1f]">
                     &quot;{s.text.trim()}&quot;
                   </span>
                   <span className="text-[#6e6e73] ml-1">
@@ -160,7 +160,7 @@ export function StepHighlight({
                 : "bg-[#FF9500]/10 border border-[#FF9500]/30"
             }`}
           >
-            <p className="font-semibold text-[#1d1d1f] dark:text-white">
+            <p className="font-semibold text-[#1d1d1f]">
               {allCorrect
                 ? "Perfekt! Alle Fehler erkannt."
                 : `${correctlyMarked}/${errors.length} Fehler gefunden${wronglyMarked > 0 ? `, ${wronglyMarked} falsch markiert` : ""}.`}

@@ -371,6 +371,28 @@ Fakten für Fallanalyse, interdisziplinäre Zusammenarbeit, Prüfungsniveau.
 - Keine Dopplungen zwischen Sessions
 - Fakten müssen **prüfbar** sein (können in MC, Zuordnung, Sortierung verwendet werden)
 
+#### G) Lernziel-Mapping (2026-03-27)
+
+Definiere die Lernziel-IDs für das KompetenzRegister. Jeder Step wird später einer dieser IDs zugeordnet.
+
+**Format:**
+```markdown
+## Lernziel-IDs
+
+| ID | Topic | 12-Punkte | Beschreibung |
+|----|-------|-----------|-------------|
+| ce05-le03-ra-definition | ra-definition | 1-2 | Was ist RA, Merkmale, Abgrenzung |
+| ce05-le03-ra-ursachen | ra-ursachen | 3 | Gene, Rauchen, Risikofaktoren |
+| ce05-le03-ra-pathomechanismus | ra-pathomechanismus | 4 | 4 Phasen, Pannus, TNF-alpha |
+| ce05-le03-kommunikation | kommunikation | — | Gesprächsführung, Empathie |
+| ... | ... | ... | ... |
+```
+
+**Namenskonvention:** `{ceId}-{leId}-{topic}`
+- Topics orientieren sich an der 12-Punkte-Struktur
+- Dialog-/Kommunikations-Steps → `kommunikation`
+- Pro LE typischerweise 5-8 Lernziel-IDs
+
 ---
 
 #### B) Erweitertes Glossar (15-25 Begriffe)
@@ -696,6 +718,7 @@ export const STEPS: ContentStep[] = [
   // Phase 1: Ankommen
   {
     stepId: "{kurz}-01",
+    lernziel: "{ceId}-{leId}-{topic}",  // PFLICHT — aus Lernziel-Mapping (rohmaterial.md)
     phase: 1,
     stepType: "selfrating",
     bloomLevel: 1,
@@ -794,4 +817,6 @@ Bevor du die Story als `"passes": true` markierst, prüfe:
 12. [ ] **rohmaterial.md: 5-8 Interleaving-Vorschläge?**
 13. [ ] **rohmaterial.md: Bloom-Verteilung alle 6 Stufen?**
 14. [ ] **rohmaterial.md: 4-6 offene Fragen mit Musterantwort?**
-15. [ ] Committed?
+15. [ ] **rohmaterial.md: Lernziel-IDs definiert (5-8 pro LE)?**
+16. [ ] **Jeder Step hat `lernziel`-Feld?**
+17. [ ] Committed?

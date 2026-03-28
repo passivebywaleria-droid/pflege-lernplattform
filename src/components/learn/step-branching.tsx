@@ -27,21 +27,21 @@ export function StepBranching({
   const [selected, setSelected] = useState<number | null>(null);
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+      <h2 className="text-2xl font-bold text-[#1d1d1f]">
         {title}
       </h2>
 
-      <div className="rounded-2xl bg-[#FFF9E6] dark:bg-[#FFD60A]/10 border border-[#FFD60A]/30 p-4">
+      <div className="rounded-2xl bg-[#FFF9E6] border border-[#FFD60A]/30 p-4">
         <p className="text-sm font-medium text-[#FF9500] mb-1">
           💬 Situation
         </p>
-        <p className="text-[#1d1d1f] dark:text-white/90 leading-relaxed italic">
+        <p className="text-[#1d1d1f] leading-relaxed italic">
           &ldquo;{body}&rdquo;
         </p>
       </div>
 
-      <p className="text-lg font-medium text-[#1d1d1f] dark:text-white">
+      <p className="text-lg font-medium text-[#1d1d1f]">
         {fragetext}
       </p>
 
@@ -59,11 +59,11 @@ export function StepBranching({
                 : selected !== null
                   ? option.isCorrect
                     ? "border-[#30D158]/40 bg-[#30D158]/5"
-                    : "border-[#d2d2d7] dark:border-white/15 opacity-60"
-                  : "border-[#d2d2d7] dark:border-white/15 bg-white dark:bg-white/5 hover:border-[#0071e3]/40"
+                    : "border-[#d2d2d7] opacity-60"
+                  : "border-[#d2d2d7] bg-white hover:border-[#0071e3]/40"
             }`}
           >
-            <p className="font-medium text-[#1d1d1f] dark:text-white">
+            <p className="font-medium text-[#1d1d1f]">
               {option.text}
             </p>
 
@@ -74,7 +74,7 @@ export function StepBranching({
                   animate={{ opacity: 1, height: "auto" }}
                   className="mt-3 pt-3 border-t border-current/10"
                 >
-                  <p className="text-sm text-[#6e6e73] dark:text-white/60">
+                  <p className="text-sm text-[#6e6e73]">
                     {option.feedback}
                   </p>
                 </motion.div>

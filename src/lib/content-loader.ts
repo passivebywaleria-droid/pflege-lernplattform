@@ -18,6 +18,10 @@ const CONTENT_LOADERS: Record<string, () => Promise<LektionData>> = {
     const m = await import("../../content/ce-05/le-03-ra-definition/steps");
     return { steps: m.STEPS, metadata: m.METADATA, glossar: m.GLOSSAR };
   },
+  "le-04-ra-symptome-diagnose": async () => {
+    const m = await import("../../content/ce-05/le-04-ra-symptome-diagnose/steps");
+    return { steps: m.STEPS, metadata: m.METADATA, glossar: m.GLOSSAR };
+  },
 };
 
 // Session-Loader fuer S2/S3 (wo vorhanden)
@@ -29,6 +33,16 @@ const SESSION_LOADERS: Record<string, Record<number, () => Promise<ContentStep[]
     },
     3: async () => {
       const m = await import("../../content/ce-05/le-03-ra-definition/steps-s3");
+      return m.STEPS_S3;
+    },
+  },
+  "le-04-ra-symptome-diagnose": {
+    2: async () => {
+      const m = await import("../../content/ce-05/le-04-ra-symptome-diagnose/steps-s2");
+      return m.STEPS_S2;
+    },
+    3: async () => {
+      const m = await import("../../content/ce-05/le-04-ra-symptome-diagnose/steps-s3");
       return m.STEPS_S3;
     },
   },

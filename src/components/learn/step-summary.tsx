@@ -27,7 +27,7 @@ export function StepSummary({
     totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 100;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -36,7 +36,7 @@ export function StepSummary({
         <div className="text-5xl mb-3">
           {percentage >= 80 ? "🎉" : percentage >= 60 ? "👏" : "💪"}
         </div>
-        <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+        <h2 className="text-2xl font-bold text-[#1d1d1f]">
           {title}
         </h2>
       </motion.div>
@@ -53,7 +53,7 @@ export function StepSummary({
             <p className="text-xs font-medium text-[#AF52DE] mb-1">
               Am Anfang hast du geschrieben:
             </p>
-            <p className="text-sm text-[#1d1d1f]/60 dark:text-white/60 italic">
+            <p className="text-sm text-[#1d1d1f]/60 italic">
               &ldquo;{reflexionText}&rdquo;
             </p>
           </div>
@@ -62,7 +62,7 @@ export function StepSummary({
             <p className="text-xs font-medium text-[#AF52DE] mb-1">
               Jetzt weißt du:
             </p>
-            <p className="text-sm text-[#1d1d1f]/80 dark:text-white/80 leading-relaxed">
+            <p className="text-sm text-[#1d1d1f]/80 leading-relaxed">
               {rueckbezug}
             </p>
           </div>
@@ -107,7 +107,7 @@ export function StepSummary({
             {kernaussagen.map((k, i) => (
               <li
                 key={i}
-                className="text-sm text-[#1d1d1f]/70 dark:text-white/70 flex items-start gap-2"
+                className="text-sm text-[#1d1d1f]/70 flex items-start gap-2"
               >
                 <span className="text-[#30D158] shrink-0">✓</span>
                 {k}

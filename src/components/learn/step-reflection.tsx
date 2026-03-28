@@ -68,19 +68,19 @@ export function StepReflection({
   };
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+      <h2 className="text-2xl font-bold text-[#1d1d1f]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 dark:text-white/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
           {body}
         </p>
       )}
 
       <div className="rounded-2xl bg-[#AF52DE]/5 border border-[#AF52DE]/15 p-4">
-        <p className="text-lg font-medium text-[#1d1d1f] dark:text-white">
+        <p className="text-lg font-medium text-[#1d1d1f]">
           {prompt}
         </p>
       </div>
@@ -92,7 +92,7 @@ export function StepReflection({
             onChange={(e) => setText(e.target.value)}
             placeholder={placeholder}
             rows={4}
-            className="w-full rounded-2xl border-2 border-[#d2d2d7] dark:border-white/15 bg-white dark:bg-white/5 p-4 text-[#1d1d1f] dark:text-white placeholder:text-[#86868b] focus:border-[#AF52DE] focus:outline-none resize-none transition-colors"
+            className="w-full rounded-2xl border-2 border-[#d2d2d7] bg-white p-4 text-[#1d1d1f] placeholder:text-[#86868b] focus:border-[#AF52DE] focus:outline-none resize-none transition-colors"
           />
           <p className="text-sm text-[#6e6e73]">
             {wordCount > 0
@@ -115,12 +115,12 @@ export function StepReflection({
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            className="rounded-2xl bg-[#f5f5f7] dark:bg-white/5 p-4"
+            className="rounded-2xl bg-[#f5f5f7] p-4"
           >
             <p className="text-xs font-medium text-[#6e6e73] mb-2">
               Deine Gedanken:
             </p>
-            <p className="text-sm text-[#1d1d1f]/70 dark:text-white/70 italic">
+            <p className="text-sm text-[#1d1d1f]/70 italic">
               &ldquo;{text}&rdquo;
             </p>
           </motion.div>
@@ -148,7 +148,7 @@ export function StepReflection({
                 <p className="text-sm font-medium text-[#AF52DE] mb-2">
                   Feedback
                 </p>
-                <p className="text-sm text-[#1d1d1f]/80 dark:text-white/80 leading-relaxed">
+                <p className="text-sm text-[#1d1d1f]/80 leading-relaxed">
                   {kiFeedback}
                 </p>
               </motion.div>

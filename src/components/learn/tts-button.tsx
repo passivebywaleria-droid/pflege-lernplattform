@@ -61,7 +61,7 @@ export function TtsButton({ text, className = "" }: TtsButtonProps) {
       className={`flex h-9 w-9 items-center justify-center rounded-full transition-colors ${
         playing
           ? "bg-[#0071e3] text-white"
-          : "bg-[#f5f5f7] dark:bg-white/10 text-[#6e6e73] hover:bg-[#e5e5ea] dark:hover:bg-white/15"
+          : "bg-[#f5f5f7] text-[#6e6e73] hover:bg-[#e5e5ea]"
       } ${className}`}
       title={playing ? "Stoppen" : "Vorlesen"}
     >

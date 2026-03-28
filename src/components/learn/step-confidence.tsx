@@ -91,13 +91,13 @@ export function StepConfidence({
 
   if (allDone) {
     return (
-      <div className="space-y-6">
-        <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+      <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+        <h2 className="text-2xl font-bold text-[#1d1d1f]">
           {title} — Ergebnis
         </h2>
 
-        <div className="rounded-2xl bg-[#f5f5f7] dark:bg-white/5 p-4 space-y-3">
-          <p className="text-lg font-bold text-[#1d1d1f] dark:text-white">
+        <div className="rounded-2xl bg-[#f5f5f7] p-4 space-y-3">
+          <p className="text-lg font-bold text-[#1d1d1f]">
             {correctCount} von {cards.length} richtig
           </p>
           {results.map((r, i) => {
@@ -111,7 +111,7 @@ export function StepConfidence({
                   backgroundColor: `${fb.color}08`,
                 }}
               >
-                <p className="text-sm font-medium text-[#1d1d1f] dark:text-white">
+                <p className="text-sm font-medium text-[#1d1d1f]">
                   {cards[i].statement}
                 </p>
                 <p className="text-xs mt-1" style={{ color: fb.color }}>
@@ -137,13 +137,13 @@ export function StepConfidence({
     : null;
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+      <h2 className="text-2xl font-bold text-[#1d1d1f]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 dark:text-white/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
           {body}
         </p>
       )}
@@ -161,8 +161,8 @@ export function StepConfidence({
           exit={{ opacity: 0, x: -20 }}
         >
           {/* Aussage */}
-          <div className="rounded-2xl bg-white dark:bg-white/5 border-2 border-[#d2d2d7] dark:border-white/15 p-6 mb-6">
-            <p className="text-lg font-medium text-[#1d1d1f] dark:text-white text-center">
+          <div className="rounded-2xl bg-white border-2 border-[#d2d2d7] p-6 mb-6">
+            <p className="text-lg font-medium text-[#1d1d1f] text-center">
               &ldquo;{card.statement}&rdquo;
             </p>
           </div>
@@ -201,7 +201,7 @@ export function StepConfidence({
                     <button
                       key={level}
                       onClick={() => handleConfidence(level)}
-                      className="rounded-xl border-2 border-[#d2d2d7] dark:border-white/15 bg-white dark:bg-white/5 px-3 py-3 text-sm font-medium text-[#1d1d1f] dark:text-white transition-all active:scale-[0.98]"
+                      className="rounded-xl border-2 border-[#d2d2d7] bg-white px-3 py-3 text-sm font-medium text-[#1d1d1f] transition-all active:scale-[0.98]"
                     >
                       {level === "unsicher" && "🤔"}
                       {level === "mittel" && "😊"}
@@ -241,7 +241,7 @@ export function StepConfidence({
                 <p className="text-sm font-medium text-[#0071e3] mb-1">
                   Erklärung
                 </p>
-                <p className="text-sm text-[#1d1d1f]/70 dark:text-white/70">
+                <p className="text-sm text-[#1d1d1f]/70">
                   {card.explanation}
                 </p>
               </div>

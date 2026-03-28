@@ -9,6 +9,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 1: Standort-MC (testet S1+S2-Wissen) ───
   {
     stepId: "ra-def-s3-01",
+    lernziel: "ce05-le03-ra-pathomechanismus",
     phase: 1,
     stepType: "mc",
     bloomLevel: 3,
@@ -16,7 +17,7 @@ export const STEPS_S3: ContentStep[] = [
     quellen: ["Q2"],
     contentC1: {
       title: "Standortbestimmung",
-      body: "Bevor wir eine neue Patientin kennenlernen — kurzer Check: Was weisst du noch vom Pathomechanismus?",
+      body: "Der RA-Pathomechanismus hat 4 Phasen — welche fuehrt zum bleibenden Schaden?",
     },
     question: {
       fragetext:
@@ -53,6 +54,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 2: Story — Frau Richter ───
   {
     stepId: "ra-def-s3-02",
+    lernziel: "ce05-le03-kommunikation",
     phase: 1,
     stepType: "dialog",
     bloomLevel: 2,
@@ -60,7 +62,7 @@ export const STEPS_S3: ContentStep[] = [
     quellen: [],
     contentC1: {
       title: "Neue Patientin: Elisabeth Richter",
-      body: "Eine neue Patientin wird auf die Innere Station aufgenommen. Du bist der Pflegeschueler bei der Aufnahme.",
+      body: "Eine neue Patientin wird auf die Innere Station aufgenommen. Aufnahmegespraech.",
     },
     contentB1: {
       title: "Eine neue Patientin",
@@ -101,6 +103,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 2b: DAS28-Erklaerung (Wissen aufbauen!) ───
   {
     stepId: "ra-def-s3-02b",
+    lernziel: "ce05-le03-ra-verlauf",
     phase: 1,
     stepType: "text",
     bloomLevel: 2,
@@ -108,7 +111,7 @@ export const STEPS_S3: ContentStep[] = [
     quellen: ["Q1"],
     contentC1: {
       title: "Wie misst man RA-Aktivitaet?",
-      body: "Frau Richter hat einen DAS28 von 5.8. Was bedeutet das?\n\nDer **DAS28** (Disease Activity Score) misst die Krankheitsaktivitaet bei RA anhand von 28 Gelenken:\n\n| DAS28 | Bedeutung |\n|-------|----------|\n| < 2.6 | Remission |\n| 2.6-3.2 | Niedrige Aktivitaet |\n| 3.2-5.1 | Moderate Aktivitaet |\n| > 5.1 | **Hohe Aktivitaet** |\n\n**Frau Richter: DAS28 = 5.8 = hohe Krankheitsaktivitaet.** Starke Entzuendung, viele betroffene Gelenke, dringender Handlungsbedarf.",
+      body: "Frau Richter hat einen DAS28 von 5.8. Was bedeutet das?\n\nDer DAS28 (Disease Activity Score) misst die Krankheitsaktivitaet bei RA anhand von 28 Gelenken:\n\n| DAS28 | Bedeutung |\n|-------|----------|\n| < 2.6 | Remission |\n| 2.6-3.2 | Niedrige Aktivitaet |\n| 3.2-5.1 | Moderate Aktivitaet |\n| > 5.1 | Hohe Aktivitaet |\n\nFrau Richter: DAS28 = 5.8 = hohe Krankheitsaktivitaet. Starke Entzuendung, viele betroffene Gelenke, dringender Handlungsbedarf.",
       glossarBegriffe: ["DAS28"],
     },
     contentB1: {
@@ -120,6 +123,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 2c: Brilliant — Warum versagt die Therapie? ───
   {
     stepId: "ra-def-s3-02c",
+    lernziel: "ce05-le03-ra-therapie",
     phase: 2,
     stepType: "mc",
     bloomLevel: 3,
@@ -142,13 +146,13 @@ export const STEPS_S3: ContentStep[] = [
           text: "Sie hat ihre Medikamente nicht regelmaessig genommen",
           isCorrect: false,
           explanation:
-            "Das waere eine Moeglichkeit — aber Frau Richter fuehrt seit 8 Jahren ein Tagebuch. Sie ist sehr zuverlaessig. Der Grund liegt woanders.",
+            "Moeglich — aber Frau Richter fuehrt seit 8 Jahren ein Tagebuch, sehr zuverlaessig. Der Grund liegt woanders.",
         },
         {
           text: "Die Entzuendung kann sich veraendern und staerker werden als MTX sie kontrollieren kann",
           isCorrect: true,
           explanation:
-            "Richtig gedacht! Die RA-Aktivitaet kann schwanken. Wenn csDMARDs wie MTX nicht mehr reichen, kommen andere Medikamente (Biologika) ins Spiel. Mehr dazu gleich und in LE 05.",
+            "Richtig gedacht! Die RA-Aktivitaet kann schwanken. Wenn csDMARDs wie MTX nicht reichen, kommen Biologika ins Spiel.",
         },
         {
           text: "MTX verliert nach einigen Jahren automatisch seine Wirkung",
@@ -169,6 +173,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 3: Transfer — Pannus nach 8 Jahren ───
   {
     stepId: "ra-def-s3-03",
+    lernziel: "ce05-le03-ra-pathomechanismus",
     phase: 2,
     stepType: "text",
     bloomLevel: 3,
@@ -176,7 +181,7 @@ export const STEPS_S3: ContentStep[] = [
     quellen: ["Q2"],
     contentC1: {
       title: "8 Jahre RA — was der Pannus angerichtet hat",
-      body: "Frau Richters Haende zeigen das Ergebnis von 8 Jahren Pannuswachstum:\n\n**Ulnardeviation** — die Finger weichen nach aussen ab, weil der Pannus die Sehnen und Baender zerstoert hat.\n\nDas ist Phase 4 des Pathomechanismus in Aktion: Irreversible Destruktion. Der Knorpel ist abgebaut, die Knochenstruktur veraendert.\n\nBei Mehmet (LE Anfang) war der Pannus noch am Anfang. Bei Frau Richter hat er 8 Jahre gearbeitet.",
+      body: "Frau Richters Haende zeigen das Ergebnis von 8 Jahren Pannuswachstum:\n\nUlnardeviation — die Finger weichen nach aussen ab, weil der Pannus die Sehnen und Baender zerstoert hat.\n\nDas ist Phase 4 des Pathomechanismus in Aktion: Irreversible Destruktion. Der Knorpel ist abgebaut, die Knochenstruktur veraendert.\n\nBei Mehmet (LE Anfang) war der Pannus noch am Anfang. Bei Frau Richter hat er 8 Jahre gearbeitet.",
       fallbezug:
         "Frau Richter zeigt die Langzeitfolgen dessen, was bei Mehmet gerade erst beginnt.",
       glossarBegriffe: ["Pannus", "Extraartikulaer"],
@@ -190,6 +195,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 4: MC Ulnardeviation ───
   {
     stepId: "ra-def-s3-04",
+    lernziel: "ce05-le03-ra-pathomechanismus",
     phase: 2,
     stepType: "mc",
     bloomLevel: 3,
@@ -225,7 +231,7 @@ export const STEPS_S3: ContentStep[] = [
           text: "Phase 4: Destruktion (Pannus zerstoert Knorpel/Knochen)",
           isCorrect: true,
           explanation:
-            "Richtig! Die Ulnardeviation ist das Ergebnis von Phase 4: Der Pannus hat ueber Jahre Knorpel, Knochen und Sehnen zerstoert. Die Fingergelenke haben ihre Stabilitaet verloren.",
+            "Richtig! Phase 4: Der Pannus hat ueber Jahre Knorpel, Knochen und Sehnen zerstoert — die Gelenke verloren ihre Stabilitaet.",
         },
       ],
     },
@@ -234,6 +240,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 5: Branching — Therapieversagen ───
   {
     stepId: "ra-def-s3-05",
+    lernziel: "ce05-le03-ra-therapie",
     phase: 3,
     stepType: "branching",
     bloomLevel: 4,
@@ -256,19 +263,19 @@ export const STEPS_S3: ContentStep[] = [
         {
           text: "MTX verliert grundsaetzlich nach einigen Jahren seine Wirkung — das ist normal",
           feedback:
-            "Nicht ganz korrekt. MTX kann jahrelang wirken. Das Problem ist, dass die Entzuendung sich veraendern kann und staerker wird als MTX allein kontrollieren kann. Es ist nicht 'normal' dass MTX aufhoert zu wirken.",
+            "Nicht ganz. MTX kann jahrelang wirken. Die Entzuendung kann sich aber veraendern und staerker werden als MTX sie kontrolliert.",
           isCorrect: false,
         },
         {
           text: "Die Entzuendung ist staerker geworden als MTX sie kontrollieren kann. Es gibt aber andere Medikamente wie Biologika, die helfen koennen.",
           feedback:
-            "Richtig und einfuehlsam! Die Krankheitsaktivitaet kann schwanken. Wenn csDMARDs wie MTX nicht mehr ausreichen, kommen bDMARDs (Biologika) ins Spiel — z.B. TNF-alpha-Blocker. Mehr dazu in LE 05.",
+            "Richtig! Wenn csDMARDs wie MTX nicht ausreichen, kommen bDMARDs (Biologika) ins Spiel — z.B. TNF-alpha-Blocker.",
           isCorrect: true,
         },
         {
           text: "Sie haben das Medikament wahrscheinlich nicht regelmaessig genommen",
           feedback:
-            "Problematisch! Du unterstellst Non-Compliance ohne nachzufragen. Frau Richter ist sehr zuverlaessig — sie fuehrt seit 8 Jahren ein Tagebuch. Immer erst fragen, bevor du annimmst.",
+            "Problematisch! Du unterstellst Non-Compliance ohne nachzufragen. Frau Richter fuehrt seit 8 Jahren ein Tagebuch — immer erst fragen.",
           isCorrect: false,
         },
       ],
@@ -278,6 +285,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 6: Sorting Krankheitsverlauf ───
   {
     stepId: "ra-def-s3-06",
+    lernziel: "ce05-le03-ra-verlauf",
     phase: 3,
     stepType: "sorting",
     bloomLevel: 4,
@@ -285,7 +293,7 @@ export const STEPS_S3: ContentStep[] = [
     quellen: ["Q1"],
     contentC1: {
       title: "Frau Richters Krankheitsverlauf",
-      body: "Sortiere die Ereignisse in Frau Richters Krankheitsverlauf chronologisch.",
+      body: "RA entwickelt sich ueber Jahre — von ersten Symptomen bis zur stationaeren Aufnahme.",
     },
     question: {
       fragetext: "Bringe Frau Richters Verlauf in die richtige Reihenfolge:",
@@ -303,6 +311,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 6b: Cortison-Nebenwirkung erklaeren ───
   {
     stepId: "ra-def-s3-06b",
+    lernziel: "ce05-le03-ra-therapie",
     phase: 3,
     stepType: "text",
     bloomLevel: 2,
@@ -310,7 +319,7 @@ export const STEPS_S3: ContentStep[] = [
     quellen: ["Q4"],
     contentC1: {
       title: "Langzeit-Cortison und seine Nebenwirkungen",
-      body: "Frau Richter nimmt seit Jahren Prednisolon 10 mg/Tag. Cortison (Glukokortikoide) hemmt die Entzuendung — aber bei Langzeit-Einnahme gibt es Nebenwirkungen:\n\n**Steroidinduzierte Osteoporose:** Cortison hemmt den Knochenaufbau und foerdert den Knochenabbau. Das Ergebnis: Die Knochen werden brüchig.\n\nBei Frau Richter steht deshalb als Nebendiagnose: **Osteoporose**. Nicht altersbedingt, sondern durch die Langzeit-Cortisontherapie verursacht.",
+      body: "Frau Richter nimmt seit Jahren Prednisolon 10 mg/Tag. Cortison hemmt die Entzuendung — aber Langzeit-Einnahme hat Nebenwirkungen.\n\nSteroidinduzierte Osteoporose: Cortison hemmt den Knochenaufbau und foerdert den Abbau.\n\nFrau Richters Nebendiagnose Osteoporose ist nicht altersbedingt, sondern medikamentenbedingt.",
     },
     contentB1: {
       title: "Warum hat Frau Richter Osteoporose?",
@@ -321,6 +330,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 7: MC Osteoporose ───
   {
     stepId: "ra-def-s3-07",
+    lernziel: "ce05-le03-ra-therapie",
     phase: 3,
     stepType: "mc",
     bloomLevel: 3,
@@ -365,6 +375,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 8: Vergleich Patient A vs B ───
   {
     stepId: "ra-def-s3-08",
+    lernziel: "ce05-le03-ra-verlauf",
     phase: 3,
     stepType: "text",
     bloomLevel: 3,
@@ -383,6 +394,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 9: Freetext Vergleich ───
   {
     stepId: "ra-def-s3-09",
+    lernziel: "ce05-le03-ra-verlauf",
     phase: 4,
     stepType: "freetext",
     bloomLevel: 4,
@@ -418,6 +430,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 10: Kreuzwortraetsel Gesamt ───
   {
     stepId: "ra-def-s3-10",
+    lernziel: "ce05-le03-ra-definition",
     phase: 4,
     stepType: "crossword",
     bloomLevel: 2,
@@ -425,7 +438,7 @@ export const STEPS_S3: ContentStep[] = [
     quellen: ["Q1", "Q2"],
     contentC1: {
       title: "Kreuzwortraetsel — alle 3 Sessions",
-      body: "Finde die 7 Fachbegriffe aus allen Sessions.",
+      body: "7 zentrale Fachbegriffe aus allen 3 Sessions — von Autoimmun bis Rheumafaktor.",
     },
     question: {
       fragetext: "7 Begriffe aus dem gesamten Thema:",
@@ -456,6 +469,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 11: Dialog — emotionaler Moment ───
   {
     stepId: "ra-def-s3-11",
+    lernziel: "ce05-le03-kommunikation",
     phase: 4,
     stepType: "dialog",
     bloomLevel: 4,
@@ -485,7 +499,7 @@ export const STEPS_S3: ContentStep[] = [
                 "Wissen Sie, das Schlimmste ist nicht der Schmerz. Das Schlimmste ist, dass ich morgens meine Enkelin nicht fruehstuecken kann weil ich im Bett liege. 90 Minuten Morgensteifigkeit. Sie kommt um 8 und ich liege noch.",
               score: 3,
               feedback:
-                "Einfuehlsam und professionell. Du wertschaetzt ihre Vergangenheit und gibst ihr Raum zum Erzaehlen. Die 90-Minuten-Morgensteifigkeit ist ein wichtiger Verlaufsparameter.",
+                "Einfuehlsam und professionell. Du gibst ihr Raum. Die 90-Minuten-Morgensteifigkeit ist ein wichtiger Verlaufsparameter.",
             },
             {
               text: "Vielleicht koennen Sie ein Tablet zum Schreiben benutzen?",
@@ -493,7 +507,7 @@ export const STEPS_S3: ContentStep[] = [
                 "Ein Tablet... ja, vielleicht. Aber darum geht es nicht. Es geht darum dass mein Koerper mich im Stich laesst.",
               score: 2,
               feedback:
-                "Die Loesung ist praktisch gedacht, aber Frau Richter braucht gerade Empathie, nicht Problemloesung. Zuhoeren kommt zuerst.",
+                "Praktisch gedacht, aber Frau Richter braucht gerade Empathie, nicht Problemloesung.",
             },
           ],
         },
@@ -504,6 +518,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 12: MC Interleaving ───
   {
     stepId: "ra-def-s3-12",
+    lernziel: "ce05-le03-ra-definition",
     phase: 4,
     stepType: "mc",
     bloomLevel: 4,
@@ -521,7 +536,7 @@ export const STEPS_S3: ContentStep[] = [
           text: "Klar, viskoes und zellarm",
           isCorrect: true,
           explanation:
-            "Richtig! Normale Synovialfluessigkeit ist klar wie Eiweiss, zaehfluessig und enthaelt nur wenige Zellen. Bei RA ist sie trueb und voller Entzuendungszellen.",
+            "Richtig! Normale Synovialfluessigkeit ist klar, zaehfluessig und zellarm. Bei RA trueb und voller Entzuendungszellen.",
         },
         {
           text: "Trueb, duennfluessig und zellreich",
@@ -533,13 +548,13 @@ export const STEPS_S3: ContentStep[] = [
           text: "Blutig und dickfluessig",
           isCorrect: false,
           explanation:
-            "Blutige Gelenkfluessigkeit (Haemarthros) tritt bei Verletzungen oder Blutgerinnungsstoerungen auf, nicht bei normalem Zustand.",
+            "Falsch. Blutige Gelenkfluessigkeit (Haemarthros) tritt bei Verletzungen auf, nicht im Normalzustand.",
         },
         {
           text: "Es gibt keine Fluessigkeit im gesunden Gelenk",
           isCorrect: false,
           explanation:
-            "Falsch! Jedes gesunde Gelenk enthaelt Synovialfluessigkeit. Sie schmiert das Gelenk und ernaehrt den Knorpel.",
+            "Falsch! Jedes gesunde Gelenk enthaelt Synovialfluessigkeit — sie schmiert und ernaehrt den Knorpel.",
         },
       ],
     },
@@ -548,6 +563,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 13: Freetext kritisch-reflexiv ───
   {
     stepId: "ra-def-s3-13",
+    lernziel: "ce05-le03-ra-pflege",
     phase: 4,
     stepType: "freetext",
     bloomLevel: 5,
@@ -584,6 +600,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 14: Timer Gesamtreview ───
   {
     stepId: "ra-def-s3-14",
+    lernziel: "ce05-le03-ra-definition",
     phase: 5,
     stepType: "timer",
     bloomLevel: 2,
@@ -591,7 +608,7 @@ export const STEPS_S3: ContentStep[] = [
     quellen: ["Q1", "Q2", "Q3"],
     contentC1: {
       title: "Final-Quiz!",
-      body: "7 Fragen aus allen 3 Sessions. 15 Sekunden. Inklusive Interleaving!",
+      body: "Gesamtreview: RA-Grundlagen, Pathomechanismus und Therapie.",
     },
     question: {
       fragetext: "Letzte Runde — gib alles!",
@@ -651,6 +668,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 15: Branching — Kurkuma ───
   {
     stepId: "ra-def-s3-15",
+    lernziel: "ce05-le03-kommunikation",
     phase: 5,
     stepType: "branching",
     bloomLevel: 5,
@@ -673,19 +691,19 @@ export const STEPS_S3: ContentStep[] = [
         {
           text: "Auf keinen Fall! Nehmen Sie Ihre Medikamente!",
           feedback:
-            "Zu autoritaer! Du uebergehst ihre Autonomie. Patienten haben das Recht auf eigene Entscheidungen. Deine Aufgabe ist informieren, nicht befehlen.",
+            "Zu autoritaer! Patienten haben das Recht auf eigene Entscheidungen. Informieren, nicht befehlen.",
           isCorrect: false,
         },
         {
           text: "Kurkuma kann ergaenzend helfen, aber es ersetzt die RA-Therapie nicht. Sprechen Sie mit Ihrer Aerztin bevor Sie MTX absetzen.",
           feedback:
-            "Sehr gut! Du nimmst ihre Recherche ernst (nicht abwertend), informierst sachlich und verweist an die Aerztin. Shared Decision Making.",
+            "Sehr gut! Recherche ernst nehmen, sachlich informieren, an Aerztin verweisen — Shared Decision Making.",
           isCorrect: true,
         },
         {
           text: "Da steht viel Unsinn im Internet. Hoeren Sie nicht darauf.",
           feedback:
-            "Abwertend! Du diskreditierst ihre Informationsquelle. Frau Richter ist eine gebildete Frau — sie wird sich nicht belehren lassen. Respektiere ihre Muendigkeit.",
+            "Abwertend! Du diskreditierst ihre Informationsquelle. Frau Richter ist gebildet — Muendigkeit respektieren.",
           isCorrect: false,
         },
       ],
@@ -695,6 +713,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 16: Categorize Fakten vs. Vorurteile ───
   {
     stepId: "ra-def-s3-16",
+    lernziel: "ce05-le03-ra-definition",
     phase: 5,
     stepType: "categorize",
     bloomLevel: 4,
@@ -702,7 +721,7 @@ export const STEPS_S3: ContentStep[] = [
     quellen: ["Q1", "Q3"],
     contentC1: {
       title: "Fakten vs. Vorurteile",
-      body: "Ordne die Aussagen richtig zu: Was ist ein Fakt, was ist ein Vorurteil?",
+      body: "Über Rheuma kursieren viele Vorurteile. Als Pflegekraft musst du Fakten von Mythen unterscheiden können.",
     },
     question: {
       fragetext: "Fakt oder Vorurteil? Ordne richtig zu:",
@@ -750,6 +769,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 17: Freetext Pflegebericht ───
   {
     stepId: "ra-def-s3-17",
+    lernziel: "ce05-le03-ra-pflege",
     phase: 5,
     stepType: "freetext",
     bloomLevel: 6,
@@ -785,6 +805,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 18: MC Labordiagnostik ───
   {
     stepId: "ra-def-s3-18",
+    lernziel: "ce05-le03-ra-definition",
     phase: 5,
     stepType: "mc",
     bloomLevel: 3,
@@ -809,7 +830,7 @@ export const STEPS_S3: ContentStep[] = [
           text: "Anti-CCP + Rheumafaktor (RF)",
           isCorrect: true,
           explanation:
-            "Richtig! Anti-CCP-Antikoerper sind hochspezifisch fuer RA (>95% Spezifitaet). Der Rheumafaktor ist weniger spezifisch, aber beide zusammen machen die Diagnose wahrscheinlich. Mehr dazu in LE 04!",
+            "Richtig! Anti-CCP ist hochspezifisch fuer RA (>95%). Der Rheumafaktor ist weniger spezifisch, aber beide zusammen machen die Diagnose wahrscheinlich.",
         },
         {
           text: "Leukozyten + Thrombozyten",
@@ -830,6 +851,7 @@ export const STEPS_S3: ContentStep[] = [
   // ─── Step 19: Ausblick LE 04 ───
   {
     stepId: "ra-def-s3-19",
+    lernziel: "ce05-le03-ra-verlauf",
     phase: 6,
     stepType: "text",
     bloomLevel: 2,
@@ -837,17 +859,18 @@ export const STEPS_S3: ContentStep[] = [
     quellen: [],
     contentC1: {
       title: "Geschafft — Ausblick LE 04",
-      body: "Du kennst jetzt die Grundlagen der RA: Was sie ist, warum sie entsteht, und was im Gelenk passiert.\n\nIn **LE 04** geht es weiter:\n- Welche Symptome hat RA genau?\n- Welche Formen gibt es?\n- Wie wird RA diagnostiziert?\n\nMehmet wartet noch auf seine vollstaendigen Ergebnisse. Anti-CCP, DAS28, Roentgen — was werden sie zeigen?",
+      body: "In LE 04 geht es weiter:\n- Welche Symptome hat RA genau?\n- Welche Formen gibt es?\n- Wie wird RA diagnostiziert?\n\nMehmet wartet noch auf seine vollstaendigen Ergebnisse. Anti-CCP, DAS28, Roentgen — was werden sie zeigen?",
     },
     contentB1: {
       title: "Geschafft!",
-      body: "Du weisst jetzt was RA ist, warum man sie bekommt und was im Gelenk passiert.\n\nIn der naechsten Lektion lernst du:\n- Welche Symptome hat RA?\n- Wie stellt der Arzt die Diagnose?\n\nMehmet wartet auf seine Ergebnisse.",
+      body: "Naechste Lektion:\n- Welche Symptome hat RA?\n- Wie stellt der Arzt die Diagnose?\n\nMehmet wartet auf seine Ergebnisse.",
     },
   },
 
   // ─── Step 20: Gesamt-Checkpoint ───
   {
     stepId: "ra-def-s3-20",
+    lernziel: "ce05-le03-ra-definition",
     phase: 6,
     stepType: "selfrating",
     bloomLevel: 3,
@@ -855,7 +878,7 @@ export const STEPS_S3: ContentStep[] = [
     quellen: [],
     contentC1: {
       title: "LE 03 — Gesamtergebnis",
-      body: "5 Key Takeaways aus allen 3 Sessions:\n\n1. **RA = Autoimmunerkrankung** — chronisch, systemisch, symmetrisch\n2. **Ursachen = Gene + Umwelt + Trigger** — multifaktoriell, Rauchen staerkster Risikofaktor\n3. **4 Phasen:** Initiation → Zytokine → Synovitis/Pannus → Destruktion\n4. **Pannus zerstoert irreversibel** — daher Window of Opportunity (12 Wochen!)\n5. **Gleiche Erkrankung, verschiedene Pflegesituationen** — Erstdiagnose vs. Langzeitverlauf\n\nEmpfehlung: Wiederholung in 3 Tagen (Spaced Repetition).",
+      body: "5 Key Takeaways aus allen 3 Sessions:\n\n1. RA = Autoimmunerkrankung — chronisch, systemisch, symmetrisch\n2. Ursachen = Gene + Umwelt + Trigger — multifaktoriell, Rauchen staerkster Risikofaktor\n3. 4 Phasen: Initiation → Zytokine → Synovitis/Pannus → Destruktion\n4. Pannus zerstoert irreversibel — daher Window of Opportunity (12 Wochen!)\n5. Gleiche Erkrankung, verschiedene Pflegesituationen — Erstdiagnose vs. Langzeitverlauf\n\nEmpfehlung: Wiederholung in 3 Tagen (Spaced Repetition).",
     },
     contentB1: {
       title: "Das hast du in allen 3 Sessions gelernt",

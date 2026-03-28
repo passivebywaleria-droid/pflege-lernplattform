@@ -53,18 +53,18 @@ export function StepMC({
   const labels = ["A", "B", "C", "D", "E", "F"];
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+      <h2 className="text-2xl font-bold text-[#1d1d1f]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 dark:text-white/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
           {body}
         </p>
       )}
 
-      <p className="text-lg font-medium text-[#1d1d1f] dark:text-white">
+      <p className="text-lg font-medium text-[#1d1d1f]">
         {fragetext}
       </p>
 
@@ -80,8 +80,8 @@ export function StepMC({
           const showResult = submitted;
           const optionCorrect = option.isCorrect;
 
-          let borderColor = "border-[#d2d2d7] dark:border-white/15";
-          let bgColor = "bg-white dark:bg-white/5";
+          let borderColor = "border-[#d2d2d7]";
+          let bgColor = "bg-white";
 
           if (showResult && isSelected && optionCorrect) {
             borderColor = "border-[#30D158]";
@@ -113,7 +113,7 @@ export function StepMC({
                         ? "bg-[#FF3B30] text-white"
                         : isSelected
                           ? "bg-[#0071e3] text-white"
-                          : "bg-[#f5f5f7] dark:bg-white/10 text-[#6e6e73]"
+                          : "bg-[#f5f5f7] text-[#6e6e73]"
                   }`}
                 >
                   {showResult && isSelected
@@ -123,7 +123,7 @@ export function StepMC({
                     : labels[idx]}
                 </span>
                 <div className="flex-1">
-                  <p className="font-medium text-[#1d1d1f] dark:text-white">
+                  <p className="font-medium text-[#1d1d1f]">
                     {option.text}
                   </p>
                   <AnimatePresence>
@@ -131,7 +131,7 @@ export function StepMC({
                       <motion.p
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
-                        className="mt-2 text-sm text-[#6e6e73] dark:text-white/60"
+                        className="mt-2 text-sm text-[#6e6e73]"
                       >
                         {option.explanation}
                       </motion.p>

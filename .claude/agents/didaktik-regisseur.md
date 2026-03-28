@@ -139,23 +139,26 @@ Innerhalb jeder Session: Von niedrig nach hoch, mit Wiederholungen
 
 ### 10. Session-Einstiegsmuster (je nach Session)
 
+**WICHTIG: Kein Fachwissen vor Erklärung abfragen!** (2026-03-28)
+Der erste Step einer Session darf NIE spezifisches Fachwissen testen das erst in dieser Session erklärt wird. Anticipation Guides (Swipe) verwenden Alltagsmythen, keine Lehrbuch-Fakten. Siehe `specs/content-textregeln.md` Block E.
+
 **Session 1:**
-Step 1: CHECKPOINT/selfrating (Orientierung)
-Step 2: STORY/dialog (Leitfall kennenlernen)
-Step 3: CHALLENGE/mc (Brilliant-Frage — Denkanstoß) ODER ENTDECKER/text
-Step 4: ENTDECKER/text (erstes Wissen aufbauen — Antwort auf Brilliant-Frage)
+Step 1: STORY/dialog (Leitfall kennenlernen) ODER CHALLENGE/swipe (Alltagsmythen-Anticipation)
+Step 2: STORY/dialog (Leitfall) ODER ENTDECKER/text (Brilliant-Frage als Denkanstoß)
+Step 3: ENTDECKER/text (erstes Wissen aufbauen)
 
 **Session 2:**
-Step 1: STORY/dialog (Leitfall weiterentwickeln — "Was bisher geschah" + neuer Tag)
-Step 2: ENTDECKER/text (1-2 Recall-Karten: "Zur Erinnerung: ...")
+Step 1: STORY/dialog (Leitfall weiterentwickeln — neuer Tag, neue Situation)
+Step 2: ENTDECKER/text (1-2 Recall-Karten: kurze Zusammenfassung)
 Step 3: CHALLENGE (JETZT darf getestet werden — Schüler hat Kontext)
 
 **Session 3:**
-Step 1: CHALLENGE/mc (1 Prüfungs-MC als Standortbestimmung — max. 1!)
+Step 1: CHALLENGE/mc (1 Prüfungs-MC als Standortbestimmung — NUR über S1+S2-Stoff!)
 Step 2: STORY/dialog (NEUER Patient vorstellen, emotionaler Einstieg)
 Step 3: ENTDECKER/text (neues Konzept zum neuen Patient)
 
 **Nie:**
+- Fachwissen abfragen das noch nicht erklärt wurde
 - Session 2 mit Challenge starten (Schüler ist kalt)
 - 3× Challenge am Stück am Session-Anfang
 - Session ohne Story in den ersten 5 Minuten
@@ -198,18 +201,19 @@ Ausnahme: Checkpoint und Interleaving-Steps haben keine Zuordnung.
 - Leitfall: [Name, Alter, Diagnose, Setting]
 - 12-Punkte-Abdeckung: [z.B. "Punkte 1-4: Kurzbeschreibung bis Pathomechanismus"]
 - Lernziele: [3-5 Lernziele mit Bloom-Stufe]
+- Lernziel-IDs: [Liste der Lernziel-IDs für das KompetenzRegister, Format: {ceId}-{leId}-{topic}]
 - Verwandte LEs für Interleaving: [2-3 LE-IDs]
 
 ## Session 1: "Was ist das?" (30 Min, ~22 Steps)
 
-| # | Min | Modus | Step-Typ | Bloom | 12-Pkt | Inhalt | Begründung |
-|---|-----|-------|----------|-------|--------|--------|------------|
-| 1 | 0-2 | CHECKPOINT | selfrating | B1 | — | Selbsteinschätzung: "Was weißt du über X?" | Orientierung |
-| 2 | 2-4 | STORY | dialog | B1 | 1 | Leitfall: [Patient] stellt sich vor | Emotionaler Einstieg |
-| 3 | 4-5 | CHALLENGE | mc | B2 | 2 | Brilliant-Frage: "Was glaubst du — warum...?" | Neugier wecken |
-| 4 | 5-7 | ENTDECKER | text | B1 | 2 | Info-Karten: Definition + Erklärung | Aha-Moment, Antwort auf Frage 3 |
-| ... | ... | ... | ... | ... | ... | ... | ... |
-| 22 | 29-30 | CHECKPOINT | summary | B1 | — | 5 Kernaussagen + Bloom-Profil | Abschluss |
+| # | Min | Modus | Step-Typ | Bloom | 12-Pkt | Lernziel | Inhalt | Begründung |
+|---|-----|-------|----------|-------|--------|----------|--------|------------|
+| 1 | 0-2 | CHECKPOINT | selfrating | B1 | — | — | Selbsteinschätzung: "Was weißt du über X?" | Orientierung |
+| 2 | 2-4 | STORY | dialog | B1 | 1 | ce05-le03-kommunikation | Leitfall: [Patient] stellt sich vor | Emotionaler Einstieg |
+| 3 | 4-5 | CHALLENGE | mc | B2 | 2 | ce05-le03-ra-definition | Brilliant-Frage: "Was glaubst du — warum...?" | Neugier wecken |
+| 4 | 5-7 | ENTDECKER | text | B1 | 2 | ce05-le03-ra-definition | Info-Karten: Definition + Erklärung | Aha-Moment, Antwort auf Frage 3 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| 22 | 29-30 | CHECKPOINT | summary | B1 | — | — | 5 Kernaussagen + Bloom-Profil | Abschluss |
 
 ### Fehler-Wiederholungen Session 1:
 - Step 6 (MC zu [Thema]) falsch → Einfügen: Memory mit [Thema]-Paaren nach Step 10
@@ -254,3 +258,9 @@ Prüfe deinen Sessionplan gegen diese Checkliste:
 - [ ] **Themenblock-Struktur: WISSEN → ÜBEN → VERTIEFEN**
 - [ ] Alle Glossar-Begriffe kommen mindestens 1x in Puzzle/Challenge vor
 - [ ] Alle Kompetenzbereiche sind abgedeckt
+- [ ] **Lernziel-Spalte**: Jeder Step hat eine Lernziel-ID (Format: `{ceId}-{leId}-{topic}`)
+- [ ] **Lernziel-IDs in Metadaten**: Alle verwendeten Lernziel-IDs sind oben in den Metadaten aufgelistet
+- [ ] **Anticipation Guide nur Alltagsmythen** (kein Fachwissen im Einstieg)
+- [ ] **S1-Einstieg**: Story/Swipe-Alltagsmythen, kein Fachtest
+- [ ] **S2-Einstieg**: Story-Fortsetzung + Recall, KEIN Test über neuen Stoff
+- [ ] **S3-Einstieg**: Max 1 MC über S1+S2-Stoff, kein neuer S3-Stoff

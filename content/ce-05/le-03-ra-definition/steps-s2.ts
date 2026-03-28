@@ -9,6 +9,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 1: Story — Befundbesprechung ───
   {
     stepId: "ra-def-s2-01",
+    lernziel: "ce05-le03-kommunikation",
     phase: 1,
     stepType: "dialog",
     bloomLevel: 1,
@@ -56,24 +57,26 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 2: Recall-Karten ───
   {
     stepId: "ra-def-s2-02",
+    lernziel: "ce05-le03-ra-definition",
     phase: 1,
     stepType: "text",
     bloomLevel: 1,
     kompetenzbereich: "KB-I.1",
     quellen: ["Q1"],
     contentC1: {
-      title: "Zur Erinnerung",
-      body: "Bevor wir weitergehen — kurze Wiederholung aus Session 1:\n\n**RA** = Chronische, systemische Autoimmunerkrankung der Synovialmembran.\n\n**Typisch:** Symmetrischer Befall kleiner Gelenke, Morgensteifigkeit >30 Min.\n\n**Nicht Arthrose!** RA = Entzuendung. Arthrose = Verschleiss.\n\nHeute klaeren wir: WARUM bekommt man RA? Und was passiert dabei im Gelenk?",
+      title: "Kurze Wiederholung",
+      body: "RA = Chronische, systemische Autoimmunerkrankung der Synovialmembran.\n\nTypisch: Symmetrischer Befall kleiner Gelenke, Morgensteifigkeit >30 Min.\n\nNicht Arthrose! RA = Entzündung. Arthrose = Verschleiß.",
     },
     contentB1: {
-      title: "Erinnerst du dich?",
-      body: "Kurze Wiederholung:\n\nRA ist eine Autoimmunerkrankung. Das Immunsystem greift die eigenen Gelenke an.\n\nTypisch: Beide Haende gleichzeitig. Morgens lange steife Gelenke.\n\nHeute lernst du: WARUM bekommt man RA? Was passiert im Gelenk?",
+      title: "Kurze Wiederholung",
+      body: "RA ist eine Autoimmunerkrankung. Das Immunsystem greift die eigenen Gelenke an.\n\nTypisch: Beide Hände gleichzeitig. Morgens lange steife Gelenke.",
     },
   },
 
   // ─── Step 3: Recall TrueFalse ───
   {
     stepId: "ra-def-s2-03",
+    lernziel: "ce05-le03-ra-definition",
     phase: 2,
     stepType: "truefalse",
     bloomLevel: 2,
@@ -81,7 +84,7 @@ export const STEPS_S2: ContentStep[] = [
     quellen: ["Q1", "Q3"],
     contentC1: {
       title: "Schnell-Check: Was weisst du noch?",
-      body: "4 Aussagen — Wahr oder Falsch? Neue Formulierungen, gleiches Wissen.",
+      body: "Gleicher Stoff, neue Formulierungen.",
     },
     question: {
       fragetext: "Wahr oder Falsch?",
@@ -119,6 +122,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 3b: Brilliant-Moment — Denkanstoß VOR Erklaerung ───
   {
     stepId: "ra-def-s2-03b",
+    lernziel: "ce05-le03-ra-ursachen",
     phase: 2,
     stepType: "mc",
     bloomLevel: 2,
@@ -141,19 +145,19 @@ export const STEPS_S2: ContentStep[] = [
           text: "Nichts — es ist reiner Zufall",
           isCorrect: false,
           explanation:
-            "Nicht ganz. RA ist NICHT rein zufaellig. Es gibt Risikofaktoren die das Risiko erhoehen — auch bei jungen Maennern. Lies weiter!",
+            "Nicht ganz. RA ist NICHT rein zufaellig. Es gibt Risikofaktoren die das Risiko erhoehen — auch bei jungen Maennern.",
         },
         {
           text: "Rauchen und/oder genetische Veranlagung koennten sein Risiko erhoeht haben",
           isCorrect: true,
           explanation:
-            "Guter Gedanke! Rauchen und Gene sind die wichtigsten Risikofaktoren — sie koennen auch bei jungen Maennern RA ausloesen. Gleich erfaehrst du die Details.",
+            "Guter Gedanke! Rauchen und Gene sind die wichtigsten Risikofaktoren — auch bei jungen Maennern.",
         },
         {
           text: "Sein Beruf als Fliesenleger hat die RA verursacht",
           isCorrect: false,
           explanation:
-            "Koerperliche Arbeit verursacht Verschleiss (Arthrose), aber RA ist eine Autoimmunerkrankung — die hat andere Ursachen. Gleich mehr dazu!",
+            "Koerperliche Arbeit verursacht Verschleiss (Arthrose), aber RA ist eine Autoimmunerkrankung — andere Ursachen.",
         },
         {
           text: "RA trifft NUR Frauen",
@@ -168,6 +172,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 4: Ursachen Teil 1 — Multifaktoriell ───
   {
     stepId: "ra-def-s2-04",
+    lernziel: "ce05-le03-ra-ursachen",
     phase: 2,
     stepType: "text",
     bloomLevel: 2,
@@ -175,7 +180,7 @@ export const STEPS_S2: ContentStep[] = [
     quellen: ["Q1", "Q2"],
     contentC1: {
       title: "Warum bekommt man RA?",
-      body: "Die ehrliche Antwort: Niemand weiss es genau. RA ist multifaktoriell — mehrere Faktoren muessen zusammenkommen:\n\n1. **Gene** — erhoehen das Risiko, aber verursachen allein keine RA\n2. **Umwelt** — Rauchen, Infektionen, Stress\n3. **Trigger** — der Ausloeser der die Krankheit startet\n\nStell es dir vor wie ein Puzzle: Erst wenn genug Teile zusammenkommen, entsteht RA.",
+      body: "Die ehrliche Antwort: Niemand weiss es genau. RA ist multifaktoriell — mehrere Faktoren muessen zusammenkommen:\n\n1. Gene — erhoehen das Risiko, aber verursachen allein keine RA\n2. Umwelt — Rauchen, Infektionen, Stress\n3. Trigger — der Ausloeser der die Krankheit startet\n\nStell es dir vor wie ein Puzzle: Erst wenn genug Teile zusammenkommen, entsteht RA.",
       glossarBegriffe: ["HLA-DR4"],
     },
     contentB1: {
@@ -187,6 +192,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 5: Genetik ───
   {
     stepId: "ra-def-s2-05",
+    lernziel: "ce05-le03-ra-ursachen",
     phase: 2,
     stepType: "text",
     bloomLevel: 2,
@@ -194,7 +200,7 @@ export const STEPS_S2: ContentStep[] = [
     quellen: ["Q2"],
     contentC1: {
       title: "Faktor 1: Die Gene",
-      body: "**HLA-DR4** — ein Gen das das RA-Risiko um das 5-fache erhoeht. Wer es traegt, hat ein hoeheres Risiko. ABER:\n\nGenetik erklaert nur ca. 50% des Risikos. Eineiige Zwillinge haben nur eine Konkordanz von 15-30%. Das heisst: Selbst wenn ein Zwilling RA hat, bekommt der andere es in 70-85% der Faelle NICHT.\n\n**Merke:** Gene laden die Waffe — die Umwelt drueckt ab.",
+      body: "HLA-DR4 — ein Gen das das RA-Risiko um das 5-fache erhoeht. Wer es traegt, hat ein hoeheres Risiko. ABER:\n\nGenetik erklaert nur ca. 50% des Risikos. Eineiige Zwillinge haben nur eine Konkordanz von 15-30%. Das heisst: Selbst wenn ein Zwilling RA hat, bekommt der andere es in 70-85% der Faelle NICHT.\n\nMerke: Gene laden die Waffe — die Umwelt drueckt ab.",
       glossarBegriffe: ["HLA-DR4"],
     },
     contentB1: {
@@ -206,6 +212,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 6: Rauchen ───
   {
     stepId: "ra-def-s2-06",
+    lernziel: "ce05-le03-ra-ursachen",
     phase: 2,
     stepType: "text",
     bloomLevel: 2,
@@ -213,7 +220,7 @@ export const STEPS_S2: ContentStep[] = [
     quellen: ["Q1", "Q2"],
     contentC1: {
       title: "Faktor 2: Rauchen — der staerkste Risikofaktor",
-      body: "Rauchen erhoeht das RA-Risiko um das 2-3-fache UND verschlechtert den Krankheitsverlauf.\n\nWarum? Rauchen veraendert Proteine in der Lunge durch einen Prozess namens **Citrullinierung**: Die Aminosaeure Arginin wird zu Citrullin umgewandelt. Diese veraenderten Proteine erkennt das Immunsystem als fremd — und bildet Antikoerper dagegen (Anti-CCP).\n\n**Mehmet raucht seit 25 Jahren (20 Pack-Years).** Das ist bei seiner Erkrankung besonders problematisch.",
+      body: "Rauchen erhoeht das RA-Risiko um das 2-3-fache UND verschlechtert den Krankheitsverlauf.\n\nWarum? Rauchen veraendert Proteine in der Lunge durch einen Prozess namens Citrullinierung: Die Aminosaeure Arginin wird zu Citrullin umgewandelt. Diese veraenderten Proteine erkennt das Immunsystem als fremd — und bildet Antikoerper dagegen (Anti-CCP).\n\nMehmet raucht seit 25 Jahren (20 Pack-Years). Das ist bei seiner Erkrankung besonders problematisch.",
       fallbezug: "Mehmet ist Raucher — das verschlechtert seine Prognose.",
       glossarBegriffe: ["Citrullinierung", "Anti-CCP"],
     },
@@ -226,6 +233,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 7: MC Verstaendnis — Risikofaktoren ───
   {
     stepId: "ra-def-s2-07",
+    lernziel: "ce05-le03-ra-ursachen",
     phase: 2,
     stepType: "mc",
     bloomLevel: 3,
@@ -256,7 +264,7 @@ export const STEPS_S2: ContentStep[] = [
           text: "Gene, Rauchen und Stress spielen zusammen — Rauchen ist dabei der staerkste modifizierbare Faktor",
           isCorrect: true,
           explanation:
-            "Genau! RA ist multifaktoriell. Bei Mehmet kommen genetische Veranlagung (Vater), Rauchen (25 Jahre) und Stress (Selbststaendigkeit) zusammen. Am Rauchen kann er etwas aendern.",
+            "Genau! Bei Mehmet kommen Gene (Vater), Rauchen (25 Jahre) und Stress zusammen. Am Rauchen kann er etwas aendern.",
         },
         {
           text: "RA hat keine bekannten Risikofaktoren",
@@ -271,6 +279,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 8: Categorize Risikofaktoren ───
   {
     stepId: "ra-def-s2-08",
+    lernziel: "ce05-le03-ra-ursachen",
     phase: 3,
     stepType: "categorize",
     bloomLevel: 3,
@@ -302,6 +311,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 9: Story — Rauchen ───
   {
     stepId: "ra-def-s2-09",
+    lernziel: "ce05-le03-kommunikation",
     phase: 3,
     stepType: "dialog",
     bloomLevel: 2,
@@ -350,6 +360,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 10: Pathomechanismus Teil 1 ───
   {
     stepId: "ra-def-s2-10",
+    lernziel: "ce05-le03-ra-pathomechanismus",
     phase: 3,
     stepType: "text",
     bloomLevel: 2,
@@ -357,18 +368,19 @@ export const STEPS_S2: ContentStep[] = [
     quellen: ["Q2"],
     contentC1: {
       title: "Was passiert im Gelenk? (Teil 1)",
-      body: "Der Pathomechanismus der RA laeuft in 4 Phasen ab:\n\n**Phase 1 — Initiation:** Ein unbekannter Trigger aktiviert T-Zellen. Sie erkennen koerpereigene Proteine faelschlich als fremd (Verlust der Selbsttoleranz).\n\n**Phase 2 — Entzuendung:** Die aktivierten T-Zellen stimulieren B-Zellen und Makrophagen. Diese setzen entzuendungsfoerdernde Zytokine frei — vor allem TNF-alpha, IL-1 und IL-6.",
+      body: "Der Pathomechanismus der RA laeuft in 4 Phasen ab:\n\nPhase 1 — Initiation: Ein unbekannter Trigger aktiviert T-Zellen. Sie erkennen koerpereigene Proteine faelschlich als fremd (Verlust der Selbsttoleranz).\n\nPhase 2 — Entzuendung: Die aktivierten T-Zellen stimulieren B-Zellen und Makrophagen. Diese setzen entzuendungsfoerdernde Zytokine frei — vor allem TNF-alpha, IL-1 und IL-6.",
       glossarBegriffe: ["Zytokin", "TNF-alpha"],
     },
     contentB1: {
       title: "Was passiert im Gelenk? (Teil 1)",
-      body: "Die Krankheit laeuft in 4 Schritten ab:\n\n**Schritt 1:** Ein Ausloeser aktiviert die Immunzellen. Die Immunzellen machen einen Fehler: Sie denken, das eigene Gelenk ist ein Feind.\n\n**Schritt 2:** Die Immunzellen schicken Botenstoffe aus. Diese Botenstoffe heissen Zytokine. Der wichtigste heisst TNF-alpha. Er macht Entzuendung.",
+      body: "Die Krankheit laeuft in 4 Schritten ab:\n\nSchritt 1: Ein Ausloeser aktiviert die Immunzellen. Die Immunzellen machen einen Fehler: Sie denken, das eigene Gelenk ist ein Feind.\n\nSchritt 2: Die Immunzellen schicken Botenstoffe aus. Diese Botenstoffe heissen Zytokine. Der wichtigste heisst TNF-alpha. Er macht Entzuendung.",
     },
   },
 
   // ─── Step 11: Pathomechanismus Teil 2 ───
   {
     stepId: "ra-def-s2-11",
+    lernziel: "ce05-le03-ra-pathomechanismus",
     phase: 3,
     stepType: "text",
     bloomLevel: 3,
@@ -376,26 +388,27 @@ export const STEPS_S2: ContentStep[] = [
     quellen: ["Q2"],
     contentC1: {
       title: "Was passiert im Gelenk? (Teil 2)",
-      body: "**Phase 3 — Synovitis:** Die Synovialmembran (Gelenkinnenhaut) entzuendet sich massiv. Sie schwillt an und bildet den **Pannus** — ein aggressives Granulationsgewebe das in den Gelenkspalt waechst.\n\n**Phase 4 — Destruktion:** Der Pannus zerstoert Knorpel und Knochen durch Enzyme (Metalloproteinasen) und Osteoklasten. Dieser Schaden ist **irreversibel** — zerstoerter Knorpel waechst nicht nach.\n\n**Ohne Behandlung:** 70% der Patienten haben innerhalb von 2 Jahren irreversible Gelenkschaeden.",
+      body: "Phase 3 — Synovitis: Die Synovialmembran (Gelenkinnenhaut) entzuendet sich massiv. Sie schwillt an und bildet den Pannus — ein aggressives Granulationsgewebe das in den Gelenkspalt waechst.\n\nPhase 4 — Destruktion: Der Pannus zerstoert Knorpel und Knochen durch Enzyme (Metalloproteinasen) und Osteoklasten. Dieser Schaden ist irreversibel — zerstoerter Knorpel waechst nicht nach.\n\nOhne Behandlung: 70% der Patienten haben innerhalb von 2 Jahren irreversible Gelenkschaeden.",
       glossarBegriffe: ["Pannus", "Synovitis"],
     },
     contentB1: {
       title: "Was passiert im Gelenk? (Teil 2)",
-      body: "**Schritt 3:** Die Gelenkinnenhaut entzuendet sich. Es waechst ein krankes Gewebe namens PANNUS. Der Pannus ist wie ein Unkraut im Gelenk.\n\n**Schritt 4:** Der Pannus frisst den Knorpel und den Knochen auf. Das ist NICHT mehr rueckgaengig zu machen.\n\nOhne Behandlung: Bei 70 von 100 Patienten sind die Gelenke nach 2 Jahren dauerhaft kaputt.",
+      body: "Schritt 3: Die Gelenkinnenhaut entzuendet sich. Es waechst ein krankes Gewebe namens PANNUS. Der Pannus ist wie ein Unkraut im Gelenk.\n\nSchritt 4: Der Pannus frisst den Knorpel und den Knochen auf. Das ist NICHT mehr rueckgaengig zu machen.\n\nOhne Behandlung: Bei 70 von 100 Patienten sind die Gelenke nach 2 Jahren dauerhaft kaputt.",
     },
   },
 
   // ─── Step 12: Sorting — 4 Phasen ───
   {
     stepId: "ra-def-s2-12",
+    lernziel: "ce05-le03-ra-pathomechanismus",
     phase: 3,
     stepType: "sorting",
     bloomLevel: 3,
     kompetenzbereich: "KB-I.1",
     quellen: ["Q2"],
     contentC1: {
-      title: "Bringe die 4 Phasen in die richtige Reihenfolge",
-      body: "Was passiert zuerst, was zuletzt?",
+      title: "Die 4 Phasen — richtige Reihenfolge",
+      body: "Der RA-Pathomechanismus laeuft in einer festen Abfolge ab.",
     },
     question: {
       fragetext:
@@ -412,6 +425,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 13: MC TNF-alpha ───
   {
     stepId: "ra-def-s2-13",
+    lernziel: "ce05-le03-ra-pathomechanismus",
     phase: 3,
     stepType: "mc",
     bloomLevel: 3,
@@ -434,7 +448,7 @@ export const STEPS_S2: ContentStep[] = [
           text: "TNF-alpha (Tumornekrosefaktor alpha)",
           isCorrect: true,
           explanation:
-            "Richtig! TNF-alpha ist das zentrale Entzuendungszytokin bei RA. Deshalb gibt es TNF-alpha-Blocker als Therapie (z.B. Adalimumab, Infliximab). Mehr dazu in LE 05.",
+            "Richtig! TNF-alpha ist das zentrale Entzuendungszytokin bei RA. Deshalb gibt es TNF-alpha-Blocker als Therapie (z.B. Adalimumab, Infliximab).",
         },
         {
           text: "Interferon-gamma",
@@ -455,6 +469,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 14: Branching — Beratung ───
   {
     stepId: "ra-def-s2-14",
+    lernziel: "ce05-le03-kommunikation",
     phase: 4,
     stepType: "branching",
     bloomLevel: 3,
@@ -477,19 +492,19 @@ export const STEPS_S2: ContentStep[] = [
         {
           text: "Rauchen aufhoeren ist das Wichtigste — der Rest kommt vom Arzt",
           feedback:
-            "Teilweise richtig. Rauchstopp ist wichtig, aber es gibt MEHR was Mehmet tun kann: frueher Therapiebeginn, Stressreduktion, regelmaessige Bewegung. Nicht alles auf eine Karte setzen.",
+            "Rauchstopp ist wichtig, aber es gibt MEHR: frueher Therapiebeginn, Stressreduktion, Bewegung.",
           isCorrect: false,
         },
         {
           text: "Rauchen aufhoeren + fruehe Therapie starten + Stress reduzieren + Bewegung",
           feedback:
-            "Perfekt! Alle modifizierbaren Faktoren angesprochen. Rauchen aufhoeren reduziert das Risiko, fruehe Therapie nutzt das Window of Opportunity (12 Wochen!), Stressreduktion und Bewegung unterstuetzen den Verlauf.",
+            "Perfekt! Rauchen aufhoeren, fruehe Therapie (Window of Opportunity!), Stressreduktion und Bewegung — alle modifizierbaren Faktoren angesprochen.",
           isCorrect: true,
         },
         {
           text: "Da kann man leider nichts machen, das ist genetisch bedingt",
           feedback:
-            "Falsch und gefaehrlich! Genetik erklaert nur 50% des Risikos. Es gibt VIEL was Mehmet tun kann. Mit dieser Aussage nimmt man dem Patienten die Motivation zur Verhaltensaenderung.",
+            "Falsch und gefaehrlich! Genetik erklaert nur 50%. Es gibt viel was Mehmet aendern kann — diese Aussage zerstoert seine Motivation.",
           isCorrect: false,
         },
       ],
@@ -499,14 +514,15 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 15: Fillin Pannus ───
   {
     stepId: "ra-def-s2-15",
+    lernziel: "ce05-le03-ra-pathomechanismus",
     phase: 4,
     stepType: "fillin",
     bloomLevel: 2,
     kompetenzbereich: "KB-I.1",
     quellen: ["Q2"],
     contentC1: {
-      title: "Fuelle die Luecken",
-      body: "Setze die richtigen Begriffe ein.",
+      title: "Fachbegriffe einsetzen",
+      body: "Pannus, Synovialmembran und Knorpel — die zentralen Strukturen der Gelenkzerstoerung.",
     },
     question: {
       fragetext: "Ergaenze den Satz mit dem richtigen Begriff:",
@@ -522,6 +538,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 16: MC Window of Opportunity ───
   {
     stepId: "ra-def-s2-16",
+    lernziel: "ce05-le03-ra-therapie",
     phase: 4,
     stepType: "mc",
     bloomLevel: 3,
@@ -546,7 +563,7 @@ export const STEPS_S2: ContentStep[] = [
           text: "Weil Gelenkzerstoerung irreversibel ist und das Window of Opportunity nur ca. 12 Wochen offen ist",
           isCorrect: true,
           explanation:
-            "Richtig! Zerstoerter Knorpel waechst nicht nach. In den ersten 12 Wochen spricht die Krankheit am besten auf Therapie an. Jede Woche Verzoegerung kann bleibende Schaeden bedeuten.",
+            "Richtig! Zerstoerter Knorpel waechst nicht nach. In den ersten 12 Wochen spricht RA am besten auf Therapie an.",
         },
         {
           text: "Weil RA nach 12 Wochen von selbst heilt",
@@ -567,18 +584,19 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 17: Freetext Pathomechanismus ───
   {
     stepId: "ra-def-s2-17",
+    lernziel: "ce05-le03-ra-pathomechanismus",
     phase: 4,
     stepType: "freetext",
     bloomLevel: 3,
     kompetenzbereich: "KB-I.1",
     quellen: ["Q2"],
     contentC1: {
-      title: "Beschreibe den Pathomechanismus",
-      body: "Du hast gerade die 4 Phasen gelernt. Jetzt beschreibe sie in eigenen Worten.",
+      title: "Pathomechanismus in eigenen Worten",
+      body: "Von der Initiation bis zur Destruktion — 4 Phasen, ein Gelenk.",
     },
     contentB1: {
-      title: "Beschreibe die 4 Schritte",
-      body: "Du hast gerade die 4 Schritte gelernt. Erklaere sie jetzt selbst.",
+      title: "Die 4 Schritte erklaeren",
+      body: "Von der Aktivierung der Immunzellen bis zur Zerstoerung des Knorpels.",
     },
     question: {
       fragetext:
@@ -601,6 +619,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 18: Memory Vertiefung ───
   {
     stepId: "ra-def-s2-18",
+    lernziel: "ce05-le03-ra-pathomechanismus",
     phase: 5,
     stepType: "memory",
     bloomLevel: 2,
@@ -608,7 +627,7 @@ export const STEPS_S2: ContentStep[] = [
     quellen: ["Q1", "Q2"],
     contentC1: {
       title: "Memory — Fachbegriffe festigen",
-      body: "Finde die zusammengehoerenden Paare aus Session 2.",
+      body: "6 zentrale Begriffe aus Session 2 — Ursachen und Pathomechanismus.",
     },
     question: {
       fragetext: "Finde die 6 Paare:",
@@ -626,6 +645,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 18b: Interleaving — LE 02 Anatomie ───
   {
     stepId: "ra-def-s2-18b",
+    lernziel: "ce05-le03-ra-definition",
     phase: 5,
     stepType: "mc",
     bloomLevel: 2,
@@ -643,19 +663,19 @@ export const STEPS_S2: ContentStep[] = [
           text: "Gelenkkapsel",
           isCorrect: false,
           explanation:
-            "Falsch. Die Gelenkkapsel umschliesst das Gelenk, aber sie schuetzt nicht direkt vor Reibung. Der Pannus zerstoert vor allem den Gelenkknorpel.",
+            "Falsch. Die Gelenkkapsel umschliesst das Gelenk, schuetzt aber nicht vor Reibung.",
         },
         {
           text: "Gelenkknorpel (hyaliner Knorpel)",
           isCorrect: true,
           explanation:
-            "Richtig! Der hyaline Gelenkknorpel schuetzt die Knochenenden vor Reibung. Bei RA zerstoert der Pannus genau diesen Knorpel — und er waechst nicht nach.",
+            "Richtig! Der hyaline Gelenkknorpel schuetzt die Knochenenden. Bei RA zerstoert der Pannus genau diesen Knorpel — irreversibel.",
         },
         {
           text: "Sehnen",
           isCorrect: false,
           explanation:
-            "Falsch. Sehnen verbinden Muskeln mit Knochen, schuetzen aber nicht vor Reibung. Der Knorpel ist die richtige Antwort.",
+            "Falsch. Sehnen verbinden Muskeln mit Knochen, schuetzen aber nicht vor Reibung.",
         },
         {
           text: "Periost (Knochenhaut)",
@@ -670,14 +690,15 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 19: Timer Speed-Review ───
   {
     stepId: "ra-def-s2-19",
+    lernziel: "ce05-le03-ra-definition",
     phase: 5,
     stepType: "timer",
     bloomLevel: 2,
     kompetenzbereich: "KB-I.1",
     quellen: ["Q1", "Q2", "Q3"],
     contentC1: {
-      title: "Speed-Review S1+S2!",
-      body: "6 Fragen, 15 Sekunden. Mix aus beiden Sessions. Plus 1 Frage aus einer anderen LE!",
+      title: "Speed-Review S1+S2",
+      body: "Schnelltest: RA-Grundlagen und Pathomechanismus.",
     },
     question: {
       fragetext: "Beantworte so schnell du kannst!",
@@ -736,6 +757,7 @@ export const STEPS_S2: ContentStep[] = [
   // ─── Step 20: Ausblick S3 ───
   {
     stepId: "ra-def-s2-20",
+    lernziel: "ce05-le03-ra-verlauf",
     phase: 6,
     stepType: "text",
     bloomLevel: 2,
@@ -743,17 +765,18 @@ export const STEPS_S2: ContentStep[] = [
     quellen: [],
     contentC1: {
       title: "Was kommt in Session 3?",
-      body: "Du weisst jetzt WAS RA ist und WARUM sie entsteht. In der naechsten Session triffst du eine neue Patientin:\n\n**Elisabeth Richter, 67 Jahre.** Sie lebt seit 8 Jahren mit RA. Ihr MTX wirkt nicht mehr. Ihre Fingergelenke sind sichtbar deformiert.\n\nWas hat der Pannus in 8 Jahren angerichtet? Was bedeutet das fuer die Pflege? Das klaeren wir in Session 3.",
+      body: "Naechste Session — eine neue Patientin:\n\nElisabeth Richter, 67 Jahre. 8 Jahre RA, MTX wirkt nicht mehr, Fingergelenke sichtbar deformiert.\n\nWas hat der Pannus in 8 Jahren angerichtet? Was bedeutet das fuer die Pflege?",
     },
     contentB1: {
       title: "Naechste Session",
-      body: "Du weisst jetzt, was RA ist und warum man sie bekommt.\n\nIn der naechsten Session lernst du eine neue Patientin kennen: Frau Richter. Sie hat seit 8 Jahren RA. Ihre Finger sind verformt. Was ist passiert?",
+      body: "Naechste Session: Frau Richter. Sie hat seit 8 Jahren RA. Ihre Finger sind verformt. Was ist passiert?",
     },
   },
 
   // ─── Step 21: Checkpoint ───
   {
     stepId: "ra-def-s2-21",
+    lernziel: "ce05-le03-ra-ursachen",
     phase: 6,
     stepType: "selfrating",
     bloomLevel: 2,

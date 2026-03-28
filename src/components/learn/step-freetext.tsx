@@ -32,18 +32,18 @@ export function StepFreetext({
   const minWords = 15;
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+      <h2 className="text-2xl font-bold text-[#1d1d1f]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 dark:text-white/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
           {body}
         </p>
       )}
 
-      <p className="text-lg font-medium text-[#1d1d1f] dark:text-white">
+      <p className="text-lg font-medium text-[#1d1d1f]">
         {fragetext}
       </p>
 
@@ -73,7 +73,7 @@ export function StepFreetext({
             onChange={(e) => setText(e.target.value)}
             placeholder="Schreibe hier deine Antwort..."
             rows={5}
-            className="w-full rounded-2xl border-2 border-[#d2d2d7] dark:border-white/15 bg-white dark:bg-white/5 p-4 text-[#1d1d1f] dark:text-white placeholder:text-[#86868b] focus:border-[#0071e3] focus:outline-none resize-none transition-colors"
+            className="w-full rounded-2xl border-2 border-[#d2d2d7] bg-white p-4 text-[#1d1d1f] placeholder:text-[#86868b] focus:border-[#0071e3] focus:outline-none resize-none transition-colors"
           />
           <div className="flex items-center justify-between">
             <p
@@ -103,7 +103,7 @@ export function StepFreetext({
             <p className="font-semibold text-[#0071e3]">
               ✍️ Deine Antwort wurde gespeichert
             </p>
-            <p className="text-sm text-[#1d1d1f]/70 dark:text-white/70 whitespace-pre-line bg-white/50 dark:bg-white/5 rounded-xl p-3">
+            <p className="text-sm text-[#1d1d1f]/70 whitespace-pre-line bg-white/50 rounded-xl p-3">
               {text}
             </p>
           </motion.div>
@@ -145,7 +145,7 @@ export function StepFreetext({
               <p className="font-semibold text-[#30D158] mb-2">
                 💡 Musterantwort
               </p>
-              <p className="text-sm text-[#1d1d1f]/70 dark:text-white/70 italic">
+              <p className="text-sm text-[#1d1d1f]/70 italic">
                 &ldquo;{musterantwort}&rdquo;
               </p>
             </motion.div>

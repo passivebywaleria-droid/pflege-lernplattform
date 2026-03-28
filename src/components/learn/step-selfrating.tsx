@@ -27,12 +27,12 @@ export function StepSelfrating({
   const [rating, setRating] = useState<number | null>(null);
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+      <h2 className="text-2xl font-bold text-[#1d1d1f]">
         {title}
       </h2>
 
-      <div className="space-y-4 text-[#1d1d1f]/80 dark:text-white/80 leading-relaxed">
+      <div className="space-y-4 text-[#1d1d1f]/80 leading-relaxed">
         {body.split("\n\n").map((p, i) => (
           <p key={i} className="whitespace-pre-line">
             {p}
@@ -40,7 +40,7 @@ export function StepSelfrating({
         ))}
       </div>
 
-      <p className="text-lg font-medium text-[#1d1d1f] dark:text-white">
+      <p className="text-lg font-medium text-[#1d1d1f]">
         {fragetext}
       </p>
 
@@ -53,7 +53,7 @@ export function StepSelfrating({
             className={`flex flex-col items-center gap-1 rounded-2xl border-2 p-3 transition-all ${
               rating === r.value
                 ? "border-[#0071e3] bg-[#0071e3]/5"
-                : "border-[#d2d2d7] dark:border-white/15 bg-white dark:bg-white/5"
+                : "border-[#d2d2d7] bg-white"
             }`}
           >
             <span className="text-2xl">{r.emoji}</span>

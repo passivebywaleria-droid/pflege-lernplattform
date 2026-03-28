@@ -1,6 +1,17 @@
 // Shared Types für alle Lektionen in CE 05
 // Alle steps.ts Dateien importieren von hier
 
+// 8 Erlebnis-Modi (aus le-erlebnis-konzept.md)
+export type ErlebnisModus =
+  | "story"          // Dialog, Branching — Leitfall lebt
+  | "challenge"      // Timer, MC mit Streak, TrueFalse-Swipe
+  | "puzzle"         // Crossword, Memory, Fillin, Cloze, Matching
+  | "entdecker"      // Text als Carousel — Info-Karten
+  | "sortierstation" // Sorting, Categorize
+  | "schreibtisch"   // Freetext, Reflection
+  | "praxis-sim"     // Branching mehrstufig, Hotspot
+  | "checkpoint";    // Selfrating, Summary
+
 export interface StepOption {
   text: string;
   isCorrect: boolean;
@@ -68,12 +79,19 @@ export interface DialogOption {
   patientResponse: string;
   score: number;
   feedback: string;
+  // B1-Varianten für einfache Sprache
+  textB1?: string;
+  patientResponseB1?: string;
+  feedbackB1?: string;
 }
 
 export interface DialogPhase {
   context: string;
+  speaker?: string;  // Überschreibt patientName für diese Phase (z.B. "Sarah" statt "Mehmet")
   vitals?: string;
   options: DialogOption[];
+  // B1-Variante des Kontext-Texts
+  contextB1?: string;
 }
 
 // === NEUE STEP-TYPEN ===
@@ -150,6 +168,86 @@ export interface SummaryData {
   kernaussagen: string[];
 }
 
+// === SHOWCASE STEP-TYPEN (LE 04+) ===
+
+// Swipe — Tinder-Style Karten (Stimmt/Stimmt nicht)
+export interface SwipeCard {
+  statement: string;
+  statementB1?: string;
+  isCorrect: boolean;
+  explanation: string;
+  explanationB1?: string;
+}
+
+export interface SwipeData {
+  instruction: string;
+  cards: SwipeCard[];
+}
+
+// FlipCard — 3D-Flip Vokabelkarten
+export interface FlipCardItem {
+  front: string;
+  back: string;
+  backB1?: string;
+  category?: string;
+}
+
+export interface FlipCardData {
+  instruction: string;
+  cards: FlipCardItem[];
+  shuffled?: boolean;
+}
+
+// Reveal — Tap-to-Reveal Progressive Discovery
+export interface RevealCard {
+  id: string;
+  label: string;
+  content: string;
+  contentB1?: string;
+  icon?: string;
+}
+
+export interface RevealData {
+  instruction: string;
+  cards: RevealCard[];
+  revealMode: "free" | "sequential";
+}
+
+// Timeline — Vertikale Zeitachse mit Expandern
+export interface TimelineEvent {
+  id: string;
+  time: string;
+  title: string;
+  description: string;
+  descriptionB1?: string;
+  icon?: string;
+  highlight?: boolean;
+}
+
+export interface TimelineData {
+  instruction: string;
+  events: TimelineEvent[];
+}
+
+// Comparison — Vergleichstabelle mit Sticky-Header
+export interface ComparisonColumn {
+  label: string;
+  icon?: string;
+}
+
+export interface ComparisonRow {
+  criterion: string;
+  values: string[];
+  valuesB1?: string[];
+  highlight?: number;
+}
+
+export interface ComparisonData {
+  instruction: string;
+  columns: ComparisonColumn[];
+  rows: ComparisonRow[];
+}
+
 export interface ContentStep {
   stepId: string;
   phase: 1 | 2 | 3 | 4 | 5 | 6;
@@ -175,7 +273,12 @@ export interface ContentStep {
     | "cloze"
     | "sequencing"
     | "slider"
-    | "summary";
+    | "summary"
+    | "swipe"
+    | "flipcard"
+    | "reveal"
+    | "timeline"
+    | "comparison";
   bloomLevel: 1 | 2 | 3 | 4 | 5 | 6;
   kompetenzbereich: string;
   quellen: string[];
@@ -183,9 +286,18 @@ export interface ContentStep {
   // Optionales XP-Override pro Step
   xpValue?: number;
 
+  // Adaptive Metadaten (optional — für Sequencer)
+  difficulty?: 1 | 2 | 3 | 4 | 5;
+  lernziel?: string;
+  alternativeStepTypes?: string[];
+  prerequisiteStepIds?: string[];
+
   // Optionale Illustration inline
   imageUrl?: string;
   imageAlt?: string;
+
+  // Erlebnis-Modus für Modus-Übergangs-Animation
+  modus?: ErlebnisModus;
 
   // "Wusstest du?" Collapsible-Element
   wusstestDuDas?: string;
@@ -266,6 +378,21 @@ export interface ContentStep {
 
     // Summary
     summary?: SummaryData;
+
+    // Swipe (Anticipation Guide)
+    swipe?: SwipeData;
+
+    // FlipCard (Vokabel-Entdeckung)
+    flipcard?: FlipCardData;
+
+    // Reveal (Progressive Discovery)
+    reveal?: RevealData;
+
+    // Timeline (Krankheitsverlauf)
+    timeline?: TimelineData;
+
+    // Comparison (Differentialdiagnose)
+    comparison?: ComparisonData;
   };
 }
 

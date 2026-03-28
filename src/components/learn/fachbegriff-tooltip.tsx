@@ -58,14 +58,14 @@ export function FachbegriffText({ glossar, children }: FachbegriffTooltipProps) 
               exit={{ y: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
               onClick={(e) => e.stopPropagation()}
-              className="absolute bottom-0 left-0 right-0 rounded-t-3xl bg-white dark:bg-[#2c2c2e] p-6 pb-10 shadow-xl"
+              className="absolute bottom-0 left-0 right-0 rounded-t-3xl bg-white p-6 pb-10 shadow-xl"
             >
               {/* Drag Handle */}
               <div className="mx-auto mb-4 h-1 w-12 rounded-full bg-[#d2d2d7]" />
 
               {/* Begriff + Aussprache */}
               <div className="flex items-center justify-between mb-3">
-                <h3 className="text-xl font-bold text-[#1d1d1f] dark:text-white">
+                <h3 className="text-xl font-bold text-[#1d1d1f]">
                   {activeEntry.begriff}
                 </h3>
                 {activeEntry.ausspracheAudio && (
@@ -76,17 +76,17 @@ export function FachbegriffText({ glossar, children }: FachbegriffTooltipProps) 
               </div>
 
               {/* Erklärung */}
-              <p className="text-sm text-[#1d1d1f]/80 dark:text-white/80 leading-relaxed mb-4">
+              <p className="text-sm text-[#1d1d1f]/80 leading-relaxed mb-4">
                 {activeEntry.erklaerung}
               </p>
 
               {/* Übersetzungen */}
               {(activeEntry.uebersetzungTr || activeEntry.uebersetzungAr) && (
-                <div className="space-y-2 rounded-xl bg-[#f5f5f7] dark:bg-white/5 p-3">
+                <div className="space-y-2 rounded-xl bg-[#f5f5f7] p-3">
                   {activeEntry.uebersetzungTr && (
                     <div className="flex items-center gap-2">
                       <span className="text-sm">🇹🇷</span>
-                      <span className="text-sm text-[#1d1d1f]/70 dark:text-white/70">
+                      <span className="text-sm text-[#1d1d1f]/70">
                         {activeEntry.uebersetzungTr}
                       </span>
                     </div>
@@ -94,7 +94,7 @@ export function FachbegriffText({ glossar, children }: FachbegriffTooltipProps) 
                   {activeEntry.uebersetzungAr && (
                     <div className="flex items-center gap-2">
                       <span className="text-sm">🇸🇦</span>
-                      <span className="text-sm text-[#1d1d1f]/70 dark:text-white/70" dir="rtl">
+                      <span className="text-sm text-[#1d1d1f]/70" dir="rtl">
                         {activeEntry.uebersetzungAr}
                       </span>
                     </div>

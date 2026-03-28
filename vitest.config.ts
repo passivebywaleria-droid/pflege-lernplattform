@@ -3,8 +3,9 @@ import path from "path"
 
 export default defineConfig({
   test: {
-    environment: "node",
-    include: ["tests/**/*.test.ts", "src/**/*.test.ts"],
+    environment: "jsdom",
+    include: ["tests/**/*.test.ts", "tests/**/*.test.tsx", "src/**/*.test.ts", "src/**/*.test.tsx"],
+    globals: true,
   },
   resolve: {
     alias: {

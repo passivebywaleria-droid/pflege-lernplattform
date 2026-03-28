@@ -41,19 +41,19 @@ export function StepSlider({
   const pct = ((value - min) / (max - min)) * 100;
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+      <h2 className="text-2xl font-bold text-[#1d1d1f]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 dark:text-white/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
           {body}
         </p>
       )}
 
       <div className="rounded-2xl bg-[#0071e3]/5 border border-[#0071e3]/15 p-4">
-        <p className="text-lg font-medium text-[#1d1d1f] dark:text-white">
+        <p className="text-lg font-medium text-[#1d1d1f]">
           {instruction}
         </p>
       </div>
@@ -127,7 +127,7 @@ export function StepSlider({
             <p className="text-sm font-medium text-[#0071e3] mb-1">
               Erklärung
             </p>
-            <p className="text-sm text-[#1d1d1f]/70 dark:text-white/70">
+            <p className="text-sm text-[#1d1d1f]/70">
               {explanation}
             </p>
           </motion.div>

@@ -402,6 +402,47 @@ B1:
 
 ---
 
+## 11b. Lernziel-Tracking (KompetenzRegister)
+
+### Jeder Step hat ein `lernziel`-Feld
+
+Das `lernziel`-Feld verknüpft jeden Step mit dem KompetenzRegister der Lern-Engine. Damit wird Kompetenz nicht pro Step, sondern pro **Konzept** gemessen (z.B. "RA-Definition" statt "Step 4").
+
+### Namenskonvention
+```
+{ceId}-{leId}-{topic}
+```
+
+**Beispiele:**
+- `ce05-le03-ra-definition` — Was ist RA, Merkmale, Abgrenzung
+- `ce05-le03-ra-ursachen` — Gene, Rauchen, Risikofaktoren
+- `ce05-le03-kommunikation` — Gesprächsführung, Empathie
+- `ce05-le04-ra-symptome` — Morgensteifigkeit, Schwellung, Schmerz
+
+### Wie viele Lernziele pro LE?
+- Typischerweise **5-8 Lernziel-IDs** pro LE
+- Topics orientieren sich an der 12-Punkte-Struktur
+- Dialog-/Kommunikations-Steps → `kommunikation`
+- Checkpoint-/Summary-Steps → dominantes Topic der Session
+
+### 5-Stufen-Kompetenz-Tracking
+```
+unbekannt → versucht → vertraut → sicher → gemeistert
+```
+
+Der AdaptiveSequencer nutzt die Kompetenz-Daten um:
+- Gemeisterte Quiz-Steps zu überspringen
+- Bei niedrigem Kompetenz-Level zusätzliche Hilfe-Steps einzufügen
+- Die Schwierigkeit dynamisch anzupassen
+
+### Pipeline-Integration
+1. **Fach-Rechercheur** (rohmaterial.md): Definiert Lernziel-IDs + Mapping
+2. **Didaktik-Regisseur** (sessionplan.md): Spalte "Lernziel" in der Step-Tabelle
+3. **Content-Generator** (steps-s2/s3.ts): `lernziel`-Feld in jedem Step-Objekt
+4. **Didaktik-Prüfer**: Kriterien H1-H3 prüfen Vollständigkeit und Konsistenz
+
+---
+
 ## 12. Fortschritt speichern
 
 ### Exakter Step + alle Antworten

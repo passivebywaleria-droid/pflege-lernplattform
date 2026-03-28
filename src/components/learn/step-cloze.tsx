@@ -104,13 +104,13 @@ export function StepCloze({
   }, [textWithBlanks]);
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+      <h2 className="text-2xl font-bold text-[#1d1d1f]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 dark:text-white/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
           {body}
         </p>
       )}
@@ -120,7 +120,7 @@ export function StepCloze({
       </p>
 
       {/* Text mit Lücken */}
-      <div className="rounded-2xl bg-white dark:bg-white/5 border-2 border-[#d2d2d7] dark:border-white/15 p-5 leading-relaxed text-[#1d1d1f] dark:text-white">
+      <div className="rounded-2xl bg-white border-2 border-[#d2d2d7] p-5 leading-relaxed text-[#1d1d1f]">
         {segments.map((seg, i) => {
           if (seg.type === "text") {
             return <span key={i}>{seg.content}</span>;
@@ -141,7 +141,7 @@ export function StepCloze({
                     ? "border-[#FF3B30] bg-[#FF3B30]/10 text-[#FF3B30]"
                     : filled
                       ? "border-[#0071e3] bg-[#0071e3]/10 text-[#0071e3]"
-                      : "border-[#86868b] bg-[#f5f5f7] dark:bg-white/10 text-[#86868b]"
+                      : "border-[#86868b] bg-[#f5f5f7] text-[#86868b]"
               }`}
             >
               {filled || "___"}

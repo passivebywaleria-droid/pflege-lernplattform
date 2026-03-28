@@ -427,7 +427,7 @@ Didaktik-Loop v2 validiert — kann fuer alle weiteren LEs und CEs verwendet wer
 | FSRS zu komplex | Sprint 6 verzoegert | Fallback: Leitner-System (3 Boxen) |
 | KI-Didaktik zu komplex | Sprint 4 verzoegert | Fallback: nur vorbereitete Erklaerungen, keine KI-Generierung |
 | Nebius API unzuverlaessig | Sprint 4+8 | Fallback: regelbasierte Schwierigkeit |
-| Hetzner Deployment | Sprint 10 | Fallback: Vercel fuer Pilot (DSGVO-Risiko dokumentieren) |
+| Hetzner Deployment | Sprint 10 | Vercel als Dev/Preview-Hosting. Migration zu Hetzner Frankfurt VOR Go-Live mit echten Schülerdaten (DSGVO). |
 | Lehrer-Chat zu komplex | Sprint 7 | Fallback: nur async (kein WebSocket), Echtzeit spaeter |
 | Scope Creep | Gesamter Plan | Strikte Grenze: Alles ausserhalb dieser Liste → V1.1 |
 
@@ -437,7 +437,7 @@ Didaktik-Loop v2 validiert — kann fuer alle weiteren LEs und CEs verwendet wer
 
 | Posten | Kosten |
 |--------|--------|
-| Hosting (Entwicklung) | 0 EUR (lokale DB + Vercel Hobby) |
+| Hosting (Entwicklung) | 0 EUR (Vercel Hobby für Dev/Preview + lokale DB) |
 | Nebius AI (Test) | ~10 EUR/Mo |
 | Azure TTS (Entwicklung) | 0 EUR (Free Tier: 500K Zeichen/Mo) |
 | Domain | ~12 EUR/Jahr |

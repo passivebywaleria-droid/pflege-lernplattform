@@ -8,7 +8,19 @@
 - Session 3: 21 Steps, Patient B (Brandt), B4-B6, 265 Basis-XP, 3 Interleaving
 - Die bestehenden 17 Steps aus steps.ts wurden in die Modi-Struktur der Session 1 integriert und um 5 Steps ergänzt (Memory, Timer, Dialog, TrueFalse, Summary)
 
-## LE-04 RA — Alle 3 Sessions implementiert (2026-03-21)
+## LE-04 RA Symptome/Diagnose — Sessions implementiert (2026-03-25)
+- `content/ce-05/le-04-ra-symptome-diagnose/steps.ts` — Session 1 (S1, Symptome, swipe+reveal+flipcard+comparison etc.)
+- `content/ce-05/le-04-ra-symptome-diagnose/steps-s2.ts` — Session 2 (21 Steps, "Wie wird diagnostiziert?", B2-B4, 340 XP)
+  - Step-Typen: hotspot, text(2), mc(1), reveal, comparison, sorting, dialog(4 Phasen), timeline, crossword, slider, highlight, confidence, flipcard, categorize, cloze, branching, swipe, reflection, timer, summary
+  - Brilliant-Prinzip: Step 1 (Röntgenbild-Hotspot VOR Erklärung)
+  - Interleaving: Step 20 Timer (1 Gicht-Frage)
+  - Offene Frage: Step 19 Reflection (Frühdiagnostik)
+  - Alle 5 neuen Step-Typen: swipe(18), flipcard(14), reveal(4), timeline(9), comparison(6)
+  - Patient: Mehmet Demir, 43, Fliesenleger — Diagnostik-Weg (Woche 1-5)
+  - Differentialdiagnose-Branching: RA vs. Arthrose (Frau Weber, 62)
+- `content/ce-05/le-04-ra-symptome-diagnose/steps-s3.ts` — NOCH NICHT ERSTELLT
+
+## LE-04 RA (alt, le-04-ra/) — Alle 3 Sessions (2026-03-21, veraltet)
 - `content/ce-05/le-04-ra/steps.ts` — Session 1 (22 Steps, Frau Yilmaz, B1-B3)
 - `content/ce-05/le-04-ra/steps-s2.ts` — Session 2 (23 Steps, Frau Yilmaz Tag 3-4, B2-B4)
 - `content/ce-05/le-04-ra/steps-s3.ts` — Session 3 (21 Steps, Lukas Brandt, B4-B6)

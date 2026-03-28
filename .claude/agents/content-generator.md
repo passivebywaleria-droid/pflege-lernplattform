@@ -113,11 +113,70 @@ Du darfst KEINE Steps hinzufügen oder weglassen.
 - 5-7 Kernaussagen der Session (nicht der ganzen LE)
 - Verweis auf nächste Session oder Spaced Repetition
 
-### 5. Quellen angeben
+### 5. Content-Feld-Regeln (2026-03-27)
+
+Jeder Step hat 3 Text-Felder mit VERSCHIEDENEN Aufgaben:
+- **title**: Thema-Überschrift, KEIN Fragezeichen wenn fragetext existiert
+- **body**: Fachlicher Kontext — was der Schüler wissen muss um die Aufgabe zu lösen. NIE eine UI-Anweisung ("Fülle die Lücken")
+- **fragetext**: Präzise Aufgabenstellung, kurz (1 Satz)
+
+Verboten:
+- Body = "Fülle die Lücken" / "Sortiere die Schritte" / "Entscheide ob richtig oder falsch" → das ist UI, kein Kontext
+- Title = Fragetext (z.B. beide fragen "Warum reicht Röntgen nicht?")
+- Fragetext wiederholt sentence/textWithBlanks bei Fillin/Cloze
+- Body erklärt was der Step-Typ tut statt fachlichen Kontext zu geben
+
+Richtig:
+- Body gibt dem Schüler das Wissen das er braucht um die Frage zu beantworten
+- Fragetext ist die eigentliche Aufgabe
+- Title ist neutral und beschreibt das Thema
+
+### 6. Lernziel-Feld (Pflicht, 2026-03-27)
+
+Jeder Step MUSS ein `lernziel`-Feld haben. Das Lernziel verknüpft den Step mit dem KompetenzRegister der Lern-Engine.
+
+**Namenskonvention:** `{ceId}-{leId}-{topic}`
+- Beispiele: `ce05-le03-ra-definition`, `ce05-le03-kommunikation`, `ce05-le04-ra-symptome`
+- Topics orientieren sich an der 12-Punkte-Struktur (z.B. `ra-ursachen`, `ra-pathomechanismus`, `ra-therapie`, `ra-pflege`)
+- Kommunikations-/Dialog-Steps bekommen `kommunikation` als Topic
+- Checkpoint-/Summary-Steps bekommen das dominante Topic der Session
+
+**Wo kommt die Lernziel-ID her?**
+- Der Didaktik-Regisseur definiert die Lernziel-IDs im Sessionplan (Metadaten + Spalte in der Step-Tabelle)
+- Der Content-Generator übernimmt sie 1:1 in den TypeScript-Code
+
+**Position im Step-Objekt:** Direkt nach `stepId`:
+```typescript
+{
+  stepId: "ra-def-s2-01",
+  lernziel: "ce05-le03-ra-definition",  // ← PFLICHT
+  phase: "A",
+  stepType: "truefalse",
+  // ...
+}
+```
+
+### 7. Textknappheit (2026-03-28)
+
+Siehe `specs/content-textregeln.md` für vollständige Regeln. Kurzfassung:
+
+**T1 — Satzlänge:** C1 max 20 Wörter/Satz, B1 max 15.
+**T2 — Verbotene Füllsätze:** Kein "Bevor wir einsteigen...", kein "In dieser Session lernst du...", kein "Lass uns gemeinsam...". Direkt anfangen.
+**T3 — Keine Doppel-Erklärungen:** Ein Fachbegriff = eine Erklärung, nicht zwei Formulierungen.
+**T4 — Selbstverständliches weglassen:** Keine UI-Hinweise im Body ("Wische rechts"), kein "Du bist Pflegeschüler/in".
+**T5 — Body-Länge:** Text-Steps max 5 Sätze (C1), Quiz-Steps max 3 Sätze.
+**T6 — Feedback-Knappheit:** Richtig max 2 Sätze, Falsch max 3 Sätze (Sandwich).
+
+### 8. Session-Einstiege (2026-03-28)
+
+**E1 — Kein Fachwissen vor Erklärung abfragen.** Der erste Step einer Session darf kein spezifisches Fachwissen voraussetzen.
+**E2 — Anticipation Guides verwenden Alltagsmythen**, nicht Lehrbuch-Fakten. Jeder kann raten, niemand fühlt sich dumm.
+
+### 9. Quellen angeben
 Jeder Step der Fachfakten enthält muss eine `quellen`-Angabe haben.
 Quellen aus dem Quellenregister der LE verwenden.
 
-### 6. Glossar-IDs wiederverwenden
+### 10. Glossar-IDs wiederverwenden
 Alle Glossar-Begriffe müssen die gleichen IDs wie in Session 1 verwenden.
 Keine neuen Glossar-Begriffe erfinden — nur die bestehenden referenzieren.
 
@@ -144,6 +203,7 @@ export const METADATA_S2: LektionMetadata = {
 export const STEPS_S2: ContentStep[] = [
   {
     stepId: "[leId]-s2-01",
+    lernziel: "[ceId]-[leId]-[topic]",  // PFLICHT — aus Sessionplan übernehmen
     phase: "A",
     stepType: "truefalse",
     bloomLevel: 2,

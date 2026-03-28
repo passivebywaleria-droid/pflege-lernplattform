@@ -74,6 +74,18 @@ export function StepCategorize({
     setSorted((s) => ({ ...s, [catIdx]: [...s[catIdx], item.text] }));
   };
 
+  // Undo: Antippen eines sortierten Elements → zurück in den Pool
+  const handleUnsort = (catIdx: number, text: string) => {
+    if (checked) return;
+    const item = items.find((i) => i.text === text);
+    if (!item) return;
+    setSorted((s) => ({
+      ...s,
+      [catIdx]: s[catIdx].filter((t) => t !== text),
+    }));
+    setRemaining((r) => [item, ...r]);
+  };
+
   const correctCount = items.filter((item) => {
     return sorted[item.correctCategory]?.includes(item.text);
   }).length;
@@ -82,13 +94,13 @@ export function StepCategorize({
   const allPlaced = remaining.length === 0;
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+      <h2 className="text-2xl font-bold text-[#1d1d1f]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 dark:text-white/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
           {body}
         </p>
       )}
@@ -103,63 +115,88 @@ export function StepCategorize({
           key={remaining[0].text}
           initial={{ opacity: 0, y: -10, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          className="rounded-2xl bg-[#1d1d1f] dark:bg-white/90 px-5 py-4 text-center"
+          className="rounded-2xl border-2 border-[#0071e3] bg-[#0071e3]/5 px-5 py-4 text-center"
         >
-          <p className="text-xs text-white/60 dark:text-[#1d1d1f]/60 mb-1">
-            Element ({remaining.length} uebrig)
+          <p className="text-xs text-[#86868b] mb-1">
+            Wohin gehört das? ({remaining.length} übrig)
           </p>
-          <p className="text-sm font-semibold text-white dark:text-[#1d1d1f]">
+          <p className="text-sm font-semibold text-[#1d1d1f]">
             {remaining[0].text}
           </p>
         </motion.div>
       )}
 
-      {/* Category buckets */}
-      <div
-        className="grid gap-2"
-        style={{
-          gridTemplateColumns: `repeat(${Math.min(categories.length, 3)}, 1fr)`,
-        }}
-      >
+      {/* Kategorie-Buttons als Zuordnungs-Ziele */}
+      {remaining.length > 0 && !checked && (
+        <div
+          className="grid gap-3"
+          style={{
+            gridTemplateColumns: `repeat(${Math.min(categories.length, 3)}, 1fr)`,
+          }}
+        >
+          {categories.map((cat, catIdx) => {
+            const colors = CATEGORY_COLORS[catIdx % CATEGORY_COLORS.length];
+            return (
+              <motion.button
+                key={catIdx}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => handleDrop(catIdx)}
+                className={`rounded-2xl border-2 ${colors.border} ${colors.bg} p-4 min-h-[80px] flex flex-col items-center justify-center gap-1 transition-all hover:shadow-md cursor-pointer`}
+              >
+                <span className={`text-sm font-bold ${colors.text}`}>
+                  {cat.name}
+                </span>
+                <span className="text-[10px] text-[#86868b]">
+                  Hier zuordnen
+                </span>
+              </motion.button>
+            );
+          })}
+        </div>
+      )}
+
+      {/* Sortierte Elemente pro Kategorie */}
+      <div className="space-y-3">
         {categories.map((cat, catIdx) => {
           const colors = CATEGORY_COLORS[catIdx % CATEGORY_COLORS.length];
+          const catItems = sorted[catIdx];
+          if (catItems.length === 0) return null;
+
           return (
-            <motion.button
-              key={catIdx}
-              whileTap={{ scale: 0.97 }}
-              onClick={() => handleDrop(catIdx)}
-              disabled={remaining.length === 0 || checked}
-              className={`rounded-2xl border-2 ${colors.border} ${colors.bg} p-3 min-h-[120px] flex flex-col transition-all ${
-                remaining.length > 0 && !checked
-                  ? "hover:shadow-md cursor-pointer"
-                  : ""
-              }`}
-            >
-              <span className={`text-xs font-bold mb-2 ${colors.text}`}>
-                {cat.name}
+            <div key={catIdx} className={`rounded-2xl border ${colors.border} ${colors.bg} p-3`}>
+              <span className={`text-xs font-bold ${colors.text} block mb-2`}>
+                {cat.name} ({catItems.length})
               </span>
-              <div className="flex flex-col gap-1">
-                {sorted[catIdx].map((text, i) => {
+              <div className="flex flex-wrap gap-2">
+                {catItems.map((text, i) => {
                   const item = items.find((ci) => ci.text === text)!;
                   const ok = checked && item.correctCategory === catIdx;
                   const wrong = checked && item.correctCategory !== catIdx;
                   return (
-                    <span
+                    <button
                       key={i}
-                      className={`text-[10px] px-2 py-1 rounded-lg text-[#1d1d1f] dark:text-white ${
+                      type="button"
+                      onClick={() => handleUnsort(catIdx, text)}
+                      disabled={checked}
+                      className={`text-xs px-3 py-2 rounded-xl text-[#1d1d1f] transition-all flex items-center gap-1.5 ${
                         ok
-                          ? "bg-[#30D158]/20"
+                          ? "bg-[#30D158]/20 border border-[#30D158]/30"
                           : wrong
-                            ? "bg-[#FF3B30]/20 line-through"
-                            : colors.itemBg
+                            ? "bg-[#FF3B30]/20 border border-[#FF3B30]/30 line-through"
+                            : "bg-white border border-[#d2d2d7] active:scale-95 shadow-sm"
                       }`}
                     >
                       {text}
-                    </span>
+                      {!checked && (
+                        <span className="text-[#86868b] text-[10px]">✕</span>
+                      )}
+                      {ok && <span className="text-[#30D158]">✓</span>}
+                      {wrong && <span className="text-[#FF3B30]">✗</span>}
+                    </button>
                   );
                 })}
               </div>
-            </motion.button>
+            </div>
           );
         })}
       </div>
@@ -184,7 +221,7 @@ export function StepCategorize({
                 : "bg-[#FF9500]/10 border border-[#FF9500]/30"
             }`}
           >
-            <p className="font-semibold text-[#1d1d1f] dark:text-white">
+            <p className="font-semibold text-[#1d1d1f]">
               {allCorrect
                 ? "Perfekt! Alle Elemente korrekt zugeordnet."
                 : `${correctCount}/${items.length} richtig.`}
