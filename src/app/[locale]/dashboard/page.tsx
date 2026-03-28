@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { getAllLektionen } from "@/lib/content-loader";
 import { useLernFortschritt } from "@/hooks/use-lern-fortschritt";
+import { getSessionEmpfehlungen, getRepetitionPings, zaehleWiederholungen, type SessionEmpfehlung } from "@/lib/adaptive/session-planner";
 
 // Wochentage
 const WOCHENTAGE = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
@@ -13,6 +14,16 @@ export default function DashboardPage() {
   const { profil, loaded, getLetztePosition } = useLernFortschritt();
   const lektionen = getAllLektionen();
   const letztePosition = getLetztePosition();
+
+  // Adaptive Empfehlungen
+  const empfehlungen = useMemo(() => {
+    if (!profil) return [];
+    return getSessionEmpfehlungen(profil, lektionen);
+  }, [profil, lektionen]);
+
+  const wiederholungsCount = useMemo(() => {
+    return zaehleWiederholungen(profil?.kompetenzRegister);
+  }, [profil]);
 
   // Wochenaktivität (letzte 7 Tage)
   const wochenDaten = useMemo(() => {
@@ -127,8 +138,17 @@ export default function DashboardPage() {
       </div>
 
       <div className="mx-auto max-w-3xl px-4 py-6 space-y-6">
-        {/* Weitermachen-Card */}
-        {letztePosition && (
+        {/* Empfehlungs-Karten (SessionPlanner) */}
+        {empfehlungen.length > 0 && (
+          <div className="space-y-3">
+            {empfehlungen.map((emp, i) => (
+              <EmpfehlungsKarte key={`${emp.leId}-${emp.session}-${emp.typ}`} empfehlung={emp} delay={i * 0.05} />
+            ))}
+          </div>
+        )}
+
+        {/* Fallback: Statisches Weitermachen wenn keine Empfehlungen */}
+        {empfehlungen.length === 0 && letztePosition && (
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
@@ -152,6 +172,23 @@ export default function DashboardPage() {
                 </div>
               </div>
             </Link>
+          </motion.div>
+        )}
+
+        {/* Spaced-Repetition-Hinweis */}
+        {wiederholungsCount > 0 && wiederholungsCount < 5 && (
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.05 }}
+            className="rounded-2xl bg-[#FF9500]/5 border border-[#FF9500]/20 px-5 py-3"
+          >
+            <p className="text-sm text-[#FF9500] font-medium">
+              {wiederholungsCount} Lernziel{wiederholungsCount > 1 ? "e" : ""} zur Auffrischung fällig
+            </p>
+            <p className="text-xs text-[#86868b] mt-0.5">
+              Wird automatisch in deine nächste Session eingebaut
+            </p>
           </motion.div>
         )}
 
@@ -313,5 +350,54 @@ export default function DashboardPage() {
         </motion.div>
       </div>
     </div>
+  );
+}
+
+// --- Empfehlungs-Karte ---
+
+const EMPFEHLUNG_STYLES: Record<string, { bg: string; border: string; icon: string; label: string }> = {
+  weiter: { bg: "bg-[#0071e3]", border: "", icon: "▶️", label: "Weitermachen" },
+  "neue-session": { bg: "bg-white dark:bg-white/5", border: "border border-[#0071e3]/30", icon: "📖", label: "Nächste Session" },
+  "neue-le": { bg: "bg-white dark:bg-white/5", border: "border border-[#30D158]/30", icon: "🆕", label: "Neue Lektion" },
+  wiederholung: { bg: "bg-[#FF9500]/5", border: "border border-[#FF9500]/20", icon: "🔄", label: "Wiederholung" },
+  challenge: { bg: "bg-[#AF52DE]/5", border: "border border-[#AF52DE]/20", icon: "⚡", label: "Challenge" },
+};
+
+function EmpfehlungsKarte({ empfehlung, delay }: { empfehlung: SessionEmpfehlung; delay: number }) {
+  const style = EMPFEHLUNG_STYLES[empfehlung.typ] ?? EMPFEHLUNG_STYLES["neue-session"];
+  const isWeiter = empfehlung.typ === "weiter";
+  const isWiederholung = empfehlung.typ === "wiederholung";
+
+  const content = (
+    <motion.div
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay }}
+      className={`rounded-2xl p-5 transition-all active:scale-[0.98] ${style.bg} ${style.border}`}
+    >
+      <div className="flex items-start gap-3">
+        <span className="text-lg shrink-0">{style.icon}</span>
+        <div className="flex-1 min-w-0">
+          <p className={`text-xs font-medium mb-0.5 ${isWeiter ? "text-white/80" : "text-[#86868b]"}`}>
+            {style.label}
+          </p>
+          <p className={`text-sm font-semibold ${isWeiter ? "text-white" : "text-[#1d1d1f] dark:text-white"}`}>
+            {empfehlung.grund}
+          </p>
+          <p className={`text-xs mt-1 ${isWeiter ? "text-white/70" : "text-[#86868b]"}`}>
+            ~{empfehlung.geschaetzteMinuten} Min
+          </p>
+        </div>
+      </div>
+    </motion.div>
+  );
+
+  // Wiederholung hat kein Link-Ziel (wird in nächste Session eingebaut)
+  if (isWiederholung) return content;
+
+  return (
+    <Link href={`/de/lernen/${empfehlung.leId}`}>
+      {content}
+    </Link>
   );
 }

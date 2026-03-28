@@ -5,7 +5,12 @@ import { useParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { loadLektion, getLektionManifest, loadSession, getAvailableSessions } from "@/lib/content-loader";
 import type { SessionNumber } from "@/lib/content-loader";
-import type { ContentStep, GlossarEntry, LektionMetadata } from "../../../../../content/ce-05/_types";
+import type { ContentStep, GlossarEntry, LektionMetadata, ErlebnisModus } from "../../../../../content/ce-05/_types";
+import { kategorisiereFehler } from "@/lib/adaptive/fehler-analyse";
+import { AdaptiveSequencer, createSequencer } from "@/lib/adaptive/sequencer";
+import { getSessionEmpfehlungen, getRepetitionPings, zaehleWiederholungen } from "@/lib/adaptive/session-planner";
+import { getAllLektionen } from "@/lib/content-loader";
+import type { SequencerContext } from "@/lib/adaptive/sequencer";
 import { StepText } from "@/components/learn/step-text";
 import { StepMC } from "@/components/learn/step-mc";
 import { StepMatching } from "@/components/learn/step-matching";
@@ -28,14 +33,18 @@ import { StepCrossword } from "@/components/learn/step-crossword";
 import { StepCategorize } from "@/components/learn/step-categorize";
 import { StepHighlight } from "@/components/learn/step-highlight";
 import { StepDialog } from "@/components/learn/step-dialog";
+import { StepSwipe } from "@/components/learn/step-swipe";
+import { StepFlipCard } from "@/components/learn/step-flipcard";
+import { StepReveal } from "@/components/learn/step-reveal";
+import { StepTimeline } from "@/components/learn/step-timeline";
+import { StepComparison } from "@/components/learn/step-comparison";
 import { KiChat } from "@/components/learn/ki-chat";
-import { HeartsDisplay } from "@/components/learn/hearts-display";
 import { StreakBadge } from "@/components/learn/streak-badge";
 import { Confetti } from "@/components/learn/confetti";
 import { SprachlevelToggle } from "@/components/learn/sprachlevel-toggle";
+import { ModusTransition, MODUS_CONFIG } from "@/components/learn/modus-transition";
+import { BloomFeedback } from "@/components/learn/bloom-feedback";
 import { useLernFortschritt } from "@/hooks/use-lern-fortschritt";
-
-const MAX_HEARTS = 5;
 
 const PHASE_LABELS: Record<number, string> = {
   1: "Ankommen",
@@ -67,7 +76,7 @@ const BLOOM_LABELS: Record<number, string> = {
 export default function LernenPage() {
   const params = useParams();
   const leId = params.leId as string;
-  const { saveSessionFortschritt, updateStreakTag, getLeFortschritt, addSchwaeche, loaded: profilLoaded } = useLernFortschritt();
+  const { saveSessionFortschritt, updateStreakTag, getLeFortschritt, addSchwaeche, saveAntwort, incrementB1Toggle, updateAchsen, updateKompetenzEintrag, profil, loaded: profilLoaded } = useLernFortschritt();
 
   const [steps, setSteps] = useState<ContentStep[]>([]);
   const [metadata, setMetadata] = useState<LektionMetadata | null>(null);
@@ -88,12 +97,51 @@ export default function LernenPage() {
   const [selfRating, setSelfRating] = useState<number | null>(null);
   const [reflexionText, setReflexionText] = useState<string | null>(null);
   const [showGlossar, setShowGlossar] = useState(false);
+  const [showStepNav, setShowStepNav] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
-  const [hearts, setHearts] = useState(MAX_HEARTS);
   const [streak, setStreak] = useState(0);
   const [showConfetti, setShowConfetti] = useState(false);
   const [sprachLevel, setSprachLevel] = useState<"c1" | "b1">("c1");
+  const [showModusTransition, setShowModusTransition] = useState(false);
+  const [currentModus, setCurrentModus] = useState<ErlebnisModus | null>(null);
+  const [lastAnswerCorrect, setLastAnswerCorrect] = useState<boolean | null>(null);
+  const [showBloomFeedback, setShowBloomFeedback] = useState(false);
+  // Antwort-History für Zurück-Navigation
+  const [answerHistory, setAnswerHistory] = useState<Record<number, { correct: boolean | null; answered: boolean }>>({});
+  const [isReviewMode, setIsReviewMode] = useState(false);
+  // Fehler-Wiederholung: Queue von Retry-Steps (Duolingo-Prinzip)
+  const [retryQueue, setRetryQueue] = useState<{ step: ContentStep; insertAfter: number }[]>([]);
+  const [activeRetryStep, setActiveRetryStep] = useState<ContentStep | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const hasCheckedWeitermachen = useRef(false);
+  const stepStartTime = useRef<number>(Date.now());
+  const sequencerRef = useRef<AdaptiveSequencer | null>(null);
+  const [sessionAntworten, setSessionAntworten] = useState<import("@/hooks/use-lern-fortschritt").StepAntwort[]>([]);
+  const [adaptiveStep, setAdaptiveStep] = useState<ContentStep | null>(null);
+  const [adaptiveReason, setAdaptiveReason] = useState<string | null>(null);
+  const [completionEmpfehlungen, setCompletionEmpfehlungen] = useState<ReturnType<typeof getSessionEmpfehlungen>>([]);
+  const [pingCount, setPingCount] = useState(0);
+
+  // Ping-Count berechnen
+  useEffect(() => {
+    if (profil?.kompetenzRegister) {
+      setPingCount(zaehleWiederholungen(profil.kompetenzRegister));
+    }
+  }, [profil]);
+
+  // Sequencer initialisieren wenn Steps + Profil bereit
+  useEffect(() => {
+    if (steps.length > 0 && profil) {
+      sequencerRef.current = createSequencer(steps, profil);
+    }
+  }, [steps, profil]);
+
+  // Profil im Sequencer aktualisieren
+  useEffect(() => {
+    if (sequencerRef.current && profil) {
+      sequencerRef.current.updateProfil(profil);
+    }
+  }, [profil]);
 
   const SESSION_LABELS: Record<number, string> = {
     1: "Einstieg",
@@ -139,7 +187,6 @@ export default function LernenPage() {
     setScore(0);
     setTotalQuestions(0);
     setIsComplete(false);
-    setHearts(MAX_HEARTS);
     setStreak(0);
     setShowConfetti(false);
     setReflexionText(null);
@@ -152,7 +199,7 @@ export default function LernenPage() {
     });
   }, [leId]);
 
-  const step = steps[currentStep];
+  const step = adaptiveStep ?? activeRetryStep ?? steps[currentStep];
   const progress = steps.length > 0 ? ((currentStep + 1) / steps.length) * 100 : 0;
 
   const awardXp = useCallback((amount: number) => {
@@ -162,19 +209,191 @@ export default function LernenPage() {
     setTimeout(() => setShowXpToast(false), 1500);
   }, []);
 
+  // Retry-Step erzeugen: gleicher Inhalt, anderer Typ
+  const createRetryStep = useCallback((original: ContentStep): ContentStep | null => {
+    // Nur für Fragetypen mit Optionen
+    if (!original.question?.optionen || !original.question.fragetext) return null;
+
+    // MC → TrueFalse Retry
+    if (original.stepType === "mc" && original.question.optionen.length >= 2) {
+      const correct = original.question.optionen.find((o) => o.isCorrect);
+      if (!correct) return null;
+      return {
+        ...original,
+        stepId: `${original.stepId}-retry`,
+        stepType: "truefalse",
+        modus: "challenge",
+        xpValue: 5,
+        question: {
+          ...original.question,
+          trueFalseCards: [
+            {
+              statement: `${correct.text} — stimmt das zum Thema "${original.contentC1.title}"?`,
+              isTrue: true,
+              explanation: correct.explanation,
+            },
+          ],
+        },
+      };
+    }
+
+    // Andere Typen → MC-Retry mit leicht geaenderter Frage
+    if (original.stepType !== "mc" && original.question.optionen) {
+      return {
+        ...original,
+        stepId: `${original.stepId}-retry`,
+        stepType: "mc",
+        modus: "challenge",
+        xpValue: 5,
+        contentC1: {
+          ...original.contentC1,
+          title: `Nochmal: ${original.contentC1.title}`,
+        },
+      };
+    }
+
+    return null;
+  }, []);
+
+  const goPrev = useCallback(() => {
+    if (currentStep > 0) {
+      setCurrentStep((s) => s - 1);
+      setIsReviewMode(true);
+      setShowBloomFeedback(false);
+      setLastAnswerCorrect(null);
+    }
+  }, [currentStep]);
+
+  const advanceStep = useCallback(() => {
+    // Adaptiven Step zurücksetzen wenn einer aktiv war
+    if (adaptiveStep) {
+      setAdaptiveStep(null);
+      setAdaptiveReason(null);
+      return; // Nach adaptivem Step → weiter zum normalen nächsten
+    }
+
+    // Legacy Retry-System (Fallback wenn Sequencer keinen Insert hat)
+    if (activeRetryStep === null) {
+      const dueRetry = retryQueue.find((r) => r.insertAfter <= currentStep);
+      if (dueRetry) {
+        setRetryQueue((q) => q.filter((r) => r !== dueRetry));
+        setActiveRetryStep(dueRetry.step);
+        return;
+      }
+    } else {
+      setActiveRetryStep(null);
+    }
+
+    setIsReviewMode(false);
+
+    if (currentStep < steps.length - 1) {
+      // --- Adaptive Sequencer prüfen ---
+      if (sequencerRef.current) {
+        const ctx: SequencerContext = {
+          currentIndex: currentStep,
+          lastAntwort: sessionAntworten[sessionAntworten.length - 1] ?? null,
+          sessionAntworten,
+          streak,
+          sprachLevel,
+          sessionStartTime: 0,
+        };
+
+        const result = sequencerRef.current.getNextStep(ctx);
+
+        // Eingefügter Step?
+        if (result.isInserted) {
+          setAdaptiveStep(result.step);
+          setAdaptiveReason(result.reason ?? null);
+          return; // Zeigt adaptiven Step, currentStep bleibt
+        }
+
+        // Überspringen?
+        if (result.shouldSkip && currentStep < steps.length - 2) {
+          // Überspringe den nächsten und gehe einen weiter
+          setCurrentStep((s) => s + 2);
+          const skipToStep = steps[currentStep + 2];
+          if (skipToStep?.modus && skipToStep.modus !== currentModus) {
+            setCurrentModus(skipToStep.modus);
+            setShowModusTransition(true);
+          }
+          return;
+        }
+
+        // Auto B1-Wechsel?
+        if (sequencerRef.current.shouldSwitchToB1(ctx) && sprachLevel !== "b1") {
+          setSprachLevel("b1");
+        }
+      }
+
+      const nextStep = steps[currentStep + 1];
+      const nextModus = nextStep?.modus;
+
+      if (nextModus && nextModus !== currentModus) {
+        setCurrentModus(nextModus);
+        setShowModusTransition(true);
+      }
+
+      setCurrentStep((s) => s + 1);
+    } else {
+      setShowConfetti(true);
+      setIsComplete(true);
+      updateAchsen();
+      // Empfehlungen für "Was kommt als nächstes?" berechnen
+      if (profil) {
+        const manifest = getAllLektionen();
+        setCompletionEmpfehlungen(getSessionEmpfehlungen(profil, manifest));
+      }
+    }
+  }, [currentStep, steps, currentModus, retryQueue, activeRetryStep, updateAchsen, adaptiveStep, sessionAntworten, streak, sprachLevel]);
+
   const goNext = useCallback(
     (correct?: boolean) => {
       const currentStepData = steps[currentStep];
+      const zeitMs = Date.now() - stepStartTime.current;
+
+      // Antwort in History speichern
+      setAnswerHistory((prev) => ({
+        ...prev,
+        [currentStep]: { correct: correct ?? null, answered: true },
+      }));
+
+      // --- Adaptive Datensammlung: StepAntwort erstellen ---
+      if (currentStepData) {
+        const sprachAchse = profil?.achsen?.sprache ?? 3;
+        const antwort: import("@/hooks/use-lern-fortschritt").StepAntwort = {
+          stepId: currentStepData.stepId,
+          stepType: currentStepData.stepType,
+          correct: correct ?? null,
+          zeitMs,
+          bloomLevel: currentStepData.bloomLevel,
+        };
+
+        // Fehler-Kategorisierung bei falscher Antwort
+        if (correct === false) {
+          antwort.fehlerKategorie = kategorisiereFehler(
+            antwort,
+            sessionAntworten,
+            sprachAchse,
+          );
+        }
+
+        // In Session-Antworten und globales Profil speichern
+        setSessionAntworten((prev) => [...prev, antwort]);
+        saveAntwort(antwort);
+        updateKompetenzEintrag(antwort, currentStepData.lernziel, leId);
+      }
 
       if (correct !== undefined) {
         setTotalQuestions((t) => t + 1);
+        setLastAnswerCorrect(correct);
+        setShowBloomFeedback(true);
+
         if (correct) {
           setScore((s) => s + 1);
           setStreak((s) => s + 1);
           awardXp(currentStepData?.xpValue ?? 10);
         } else {
           setStreak(0);
-          setHearts((h) => Math.max(0, h - 1));
           awardXp(3);
 
           // Karteikarte aus Schwäche generieren
@@ -187,19 +406,25 @@ export default function LernenPage() {
               falscheAntwort: "",
             });
           }
+
+          // Fehler-Wiederholung: Retry 3-5 Steps später (max 3 Retries in Queue)
+          if (retryQueue.length < 3 && currentStepData) {
+            const retry = createRetryStep(currentStepData);
+            if (retry) {
+              const insertAfter = currentStep + 3 + Math.floor(Math.random() * 3);
+              setRetryQueue((q) => [...q, { step: retry, insertAfter }]);
+            }
+          }
         }
       } else {
+        setLastAnswerCorrect(null);
+        setShowBloomFeedback(false);
         awardXp(currentStepData?.xpValue ?? 5);
       }
 
-      if (currentStep < steps.length - 1) {
-        setCurrentStep((s) => s + 1);
-      } else {
-        setShowConfetti(true);
-        setIsComplete(true);
-      }
+      advanceStep();
     },
-    [currentStep, steps, awardXp, addSchwaeche, leId],
+    [currentStep, steps, awardXp, addSchwaeche, leId, advanceStep, retryQueue, createRetryStep, profil, sessionAntworten, saveAntwort, updateKompetenzEintrag],
   );
 
   // Fortschritt nach jedem Step speichern
@@ -213,14 +438,14 @@ export default function LernenPage() {
         xp,
         score,
         totalQuestions,
-        hearts,
+        hearts: 0,
         streak,
         reflexionText,
-        antworten: [],
+        antworten: sessionAntworten,
         updatedAt: new Date().toISOString(),
       });
     }
-  }, [currentStep, leId, activeSession, steps.length, xp, score, totalQuestions, hearts, streak, reflexionText, saveSessionFortschritt, profilLoaded]);
+  }, [currentStep, leId, activeSession, steps.length, xp, score, totalQuestions, streak, reflexionText, saveSessionFortschritt, profilLoaded]);
 
   // Streak-Tag bei Aktivität zählen
   useEffect(() => {
@@ -229,9 +454,11 @@ export default function LernenPage() {
     }
   }, [profilLoaded, steps.length, updateStreakTag]);
 
-  // "Weitermachen" beim Laden prüfen
+  // "Weitermachen" NUR einmal beim initialen Laden prüfen
   useEffect(() => {
+    if (hasCheckedWeitermachen.current) return;
     if (profilLoaded && steps.length > 0) {
+      hasCheckedWeitermachen.current = true;
       const le = getLeFortschritt(leId);
       const saved = le?.sessions[activeSession];
       if (saved && saved.currentStep > 0 && saved.currentStep < saved.totalSteps - 1) {
@@ -243,12 +470,13 @@ export default function LernenPage() {
 
   useEffect(() => {
     containerRef.current?.scrollTo({ top: 0, behavior: "smooth" });
+    stepStartTime.current = Date.now();
   }, [currentStep]);
 
   // Loading State
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#f5f5f7] dark:bg-[#1d1d1f] flex items-center justify-center">
+      <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center">
         <div className="text-center space-y-4">
           <div className="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-[#0071e3] border-t-transparent" />
           <p className="text-sm text-[#6e6e73]">Lektion wird geladen...</p>
@@ -260,19 +488,19 @@ export default function LernenPage() {
   // Weitermachen-Dialog
   if (showWeitermachen && savedStep !== null && metadata) {
     return (
-      <div className="min-h-screen bg-[#f5f5f7] dark:bg-[#1d1d1f] flex items-center justify-center">
+      <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="mx-auto max-w-md rounded-3xl bg-white dark:bg-white/5 border border-[#d2d2d7] dark:border-white/10 p-8 text-center space-y-5"
+          className="mx-auto max-w-md rounded-3xl bg-white border border-[#d2d2d7] p-8 text-center space-y-5"
         >
           <div className="text-4xl">👋</div>
-          <h1 className="text-xl font-bold text-[#1d1d1f] dark:text-white">
+          <h1 className="text-xl font-bold text-[#1d1d1f]">
             Willkommen zurück!
           </h1>
           <p className="text-sm text-[#6e6e73]">
             Du warst bei:<br />
-            <strong className="text-[#1d1d1f] dark:text-white">
+            <strong className="text-[#1d1d1f]">
               {metadata.title} · Session {activeSession} · Step {savedStep + 1}/{steps.length}
             </strong>
           </p>
@@ -281,7 +509,7 @@ export default function LernenPage() {
               onClick={() => {
                 setShowWeitermachen(false);
               }}
-              className="flex-1 rounded-2xl bg-[#f5f5f7] dark:bg-white/10 px-5 py-3.5 text-sm font-semibold text-[#1d1d1f] dark:text-white transition-all active:scale-[0.98]"
+              className="flex-1 rounded-2xl bg-[#f5f5f7] px-5 py-3.5 text-sm font-semibold text-[#1d1d1f] transition-all active:scale-[0.98]"
             >
               Von vorn
             </button>
@@ -304,10 +532,10 @@ export default function LernenPage() {
   if (notFound || !metadata || !step) {
     const manifest = getLektionManifest(leId);
     return (
-      <div className="min-h-screen bg-[#f5f5f7] dark:bg-[#1d1d1f] flex items-center justify-center">
+      <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center">
         <div className="mx-auto max-w-md text-center space-y-4 px-4">
           <div className="text-5xl">📚</div>
-          <h1 className="text-2xl font-bold text-[#1d1d1f] dark:text-white">
+          <h1 className="text-2xl font-bold text-[#1d1d1f]">
             {manifest ? manifest.title : "Lektion nicht gefunden"}
           </h1>
           <p className="text-[#6e6e73]">
@@ -333,18 +561,18 @@ export default function LernenPage() {
     return (
       <div
         ref={containerRef}
-        className="min-h-screen bg-[#f5f5f7] dark:bg-[#1d1d1f]"
+        className="min-h-screen bg-[#f5f5f7]"
       >
         <div className="mx-auto max-w-2xl px-4 py-12">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="rounded-3xl bg-white dark:bg-white/5 border border-[#d2d2d7] dark:border-white/10 p-8 text-center space-y-6"
+            className="rounded-3xl bg-white border border-[#d2d2d7] p-8 text-center space-y-6"
           >
             <div className="text-6xl">
               {percentage >= 80 ? "🎉" : percentage >= 60 ? "👏" : "💪"}
             </div>
-            <h1 className="text-3xl font-bold text-[#1d1d1f] dark:text-white">
+            <h1 className="text-3xl font-bold text-[#1d1d1f]">
               Lerneinheit abgeschlossen!
             </h1>
             <p className="text-lg text-[#6e6e73]">{metadata.title}</p>
@@ -369,7 +597,7 @@ export default function LernenPage() {
             </div>
 
             {selfRating !== null && (
-              <div className="rounded-2xl bg-[#FFF9E6] dark:bg-[#FFD60A]/10 border border-[#FFD60A]/30 p-4">
+              <div className="rounded-2xl bg-[#FFF9E6] border border-[#FFD60A]/30 p-4">
                 <p className="text-sm text-[#6e6e73]">
                   Deine Selbsteinschaetzung am Anfang:{" "}
                   <strong>{selfRating}/5</strong>
@@ -377,6 +605,42 @@ export default function LernenPage() {
                 <p className="text-sm text-[#6e6e73]">
                   Hat sich dein Wissen verbessert?
                 </p>
+              </div>
+            )}
+
+            {/* Spaced-Repetition-Hinweis */}
+            {pingCount > 0 && (
+              <div className="rounded-2xl bg-[#FF9500]/5 border border-[#FF9500]/20 px-4 py-3 text-left">
+                <p className="text-sm text-[#FF9500] font-medium">
+                  {pingCount} Lernziel{pingCount > 1 ? "e" : ""} zur Auffrischung fällig
+                </p>
+                <p className="text-xs text-[#86868b] mt-0.5">
+                  Wird in deine nächste Session eingebaut
+                </p>
+              </div>
+            )}
+
+            {/* Empfehlungen: Was kommt als nächstes? */}
+            {completionEmpfehlungen.length > 0 && (
+              <div className="space-y-2 text-left">
+                <p className="text-xs font-semibold text-[#86868b] uppercase tracking-wide">
+                  Empfohlen als Nächstes
+                </p>
+                {completionEmpfehlungen.slice(0, 2).map((emp) => (
+                  <a
+                    key={`${emp.leId}-${emp.session}`}
+                    href={emp.leId ? `/de/lernen/${emp.leId}` : "/de/dashboard"}
+                    className="flex items-center gap-3 rounded-xl bg-[#f5f5f7] p-3 transition-all active:scale-[0.98]"
+                  >
+                    <span className="text-lg shrink-0">
+                      {emp.typ === "weiter" ? "▶️" : emp.typ === "neue-session" ? "📖" : emp.typ === "neue-le" ? "🆕" : emp.typ === "wiederholung" ? "🔄" : "⚡"}
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-medium text-[#1d1d1f] truncate">{emp.grund}</p>
+                      <p className="text-xs text-[#86868b]">~{emp.geschaetzteMinuten} Min</p>
+                    </div>
+                  </a>
+                ))}
               </div>
             )}
 
@@ -390,7 +654,7 @@ export default function LernenPage() {
                   setSelfRating(null);
                   setIsComplete(false);
                 }}
-                className="flex-1 rounded-2xl bg-[#f5f5f7] dark:bg-white/10 px-6 py-4 text-base font-semibold text-[#1d1d1f] dark:text-white transition-all active:scale-[0.98]"
+                className="flex-1 rounded-2xl bg-[#f5f5f7] px-6 py-4 text-base font-semibold text-[#1d1d1f] transition-all active:scale-[0.98]"
               >
                 Nochmal
               </button>
@@ -403,10 +667,10 @@ export default function LernenPage() {
                 </button>
               ) : (
                 <a
-                  href="/de/lernen"
+                  href="/de/dashboard"
                   className="flex-1 rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white text-center transition-all active:scale-[0.98]"
                 >
-                  Uebersicht
+                  Dashboard
                 </a>
               )}
             </div>
@@ -419,21 +683,21 @@ export default function LernenPage() {
   return (
     <div
       ref={containerRef}
-      className="min-h-screen bg-[#f5f5f7] dark:bg-[#1d1d1f] overflow-y-auto"
+      className="min-h-screen bg-[#f5f5f7] overflow-y-auto"
     >
       {/* Top Bar */}
-      <div className="sticky top-0 z-50 bg-white/80 dark:bg-[#1d1d1f]/80 backdrop-blur-xl border-b border-[#d2d2d7]/50 dark:border-white/10">
+      <div className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-[#d2d2d7]/50">
         <div className="mx-auto max-w-2xl px-4 py-3">
           {/* Session Tabs (nur wenn mehrere Sessions verfuegbar) */}
           {availableSessions.length > 1 && (
-            <div className="flex gap-1 mb-2 p-0.5 rounded-xl bg-[#f5f5f7] dark:bg-white/5">
+            <div className="flex gap-1 mb-2 p-0.5 rounded-xl bg-[#f5f5f7]">
               {availableSessions.map((s) => (
                 <button
                   key={s}
                   onClick={() => switchSession(s)}
                   className={`flex-1 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all ${
                     activeSession === s
-                      ? "bg-white dark:bg-white/15 text-[#1d1d1f] dark:text-white shadow-sm"
+                      ? "bg-white text-[#1d1d1f] shadow-sm"
                       : "text-[#86868b] active:opacity-60"
                   }`}
                 >
@@ -445,19 +709,36 @@ export default function LernenPage() {
 
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center gap-2">
-              <span
-                className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-bold text-white"
-                style={{ backgroundColor: PHASE_COLORS[step.phase] }}
-              >
-                {PHASE_LABELS[step.phase]}
-              </span>
+              {currentStep > 0 && (
+                <button
+                  onClick={goPrev}
+                  className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#f5f5f7] text-[#6e6e73] active:scale-95 transition-transform"
+                  aria-label="Zurück"
+                >
+                  ‹
+                </button>
+              )}
+              {step.modus && MODUS_CONFIG[step.modus] ? (
+                <span
+                  className="inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-bold text-white"
+                  style={{ backgroundColor: MODUS_CONFIG[step.modus].farbe }}
+                >
+                  {MODUS_CONFIG[step.modus].icon} {MODUS_CONFIG[step.modus].label}
+                </span>
+              ) : (
+                <span
+                  className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-bold text-white"
+                  style={{ backgroundColor: PHASE_COLORS[step.phase] }}
+                >
+                  {PHASE_LABELS[step.phase]}
+                </span>
+              )}
               <span className="text-xs text-[#86868b]">
                 Bloom {step.bloomLevel}: {BLOOM_LABELS[step.bloomLevel]}
               </span>
               <StreakBadge streak={streak} />
             </div>
             <div className="flex items-center gap-2">
-              <HeartsDisplay hearts={hearts} maxHearts={MAX_HEARTS} />
               <span className="text-sm font-bold text-[#0071e3]">
                 {xp} XP
               </span>
@@ -466,7 +747,7 @@ export default function LernenPage() {
 
           {/* Zweite Zeile: Glossar + Sprachlevel */}
           <div className="flex items-center justify-between mb-2">
-            <SprachlevelToggle level={sprachLevel} onChange={setSprachLevel} />
+            <SprachlevelToggle level={sprachLevel} onChange={(l) => { setSprachLevel(l); if (l === "b1") incrementB1Toggle(); }} />
             <button
               onClick={() => setShowGlossar(!showGlossar)}
               className="text-xs font-medium text-[#0071e3] active:opacity-60"
@@ -476,7 +757,7 @@ export default function LernenPage() {
           </div>
 
           {/* Progress bar */}
-          <div className="h-1.5 rounded-full bg-[#f5f5f7] dark:bg-white/10">
+          <div className="h-1.5 rounded-full bg-[#f5f5f7]">
             <motion.div
               className="h-full rounded-full bg-[#0071e3]"
               initial={{ width: 0 }}
@@ -484,9 +765,12 @@ export default function LernenPage() {
               transition={{ ease: [0.4, 0, 0.2, 1], duration: 0.35 }}
             />
           </div>
-          <p className="text-[10px] text-[#86868b] text-right mt-1">
-            {currentStep + 1} / {steps.length}
-          </p>
+          <button
+            onClick={() => setShowStepNav(true)}
+            className="text-[10px] text-[#0071e3] font-medium text-right mt-1 w-full active:opacity-60"
+          >
+            {currentStep + 1} / {steps.length} — Alle Steps
+          </button>
         </div>
       </div>
 
@@ -520,10 +804,10 @@ export default function LernenPage() {
               exit={{ y: "100%" }}
               transition={{ type: "spring", damping: 25 }}
               onClick={(e) => e.stopPropagation()}
-              className="absolute bottom-0 left-0 right-0 max-h-[70vh] overflow-y-auto rounded-t-3xl bg-white dark:bg-[#2c2c2e] p-6"
+              className="absolute bottom-0 left-0 right-0 max-h-[70vh] overflow-y-auto rounded-t-3xl bg-white p-6"
             >
               <div className="mx-auto mb-4 h-1 w-12 rounded-full bg-[#d2d2d7]" />
-              <h3 className="text-lg font-bold mb-4 text-[#1d1d1f] dark:text-white">
+              <h3 className="text-lg font-bold mb-4 text-[#1d1d1f]">
                 Glossar — {metadata.titleShort}
               </h3>
               {glossar.length === 0 ? (
@@ -533,9 +817,9 @@ export default function LernenPage() {
                   {glossar.map((g) => (
                     <div
                       key={g.begriff}
-                      className="rounded-xl bg-[#f5f5f7] dark:bg-white/5 p-3"
+                      className="rounded-xl bg-[#f5f5f7] p-3"
                     >
-                      <p className="font-semibold text-sm text-[#1d1d1f] dark:text-white">
+                      <p className="font-semibold text-sm text-[#1d1d1f]">
                         {g.begriff}
                       </p>
                       <p className="text-sm text-[#6e6e73]">{g.erklaerung}</p>
@@ -548,32 +832,174 @@ export default function LernenPage() {
         )}
       </AnimatePresence>
 
+      {/* Step Navigator Overlay */}
+      <AnimatePresence>
+        {showStepNav && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm"
+            onClick={() => setShowStepNav(false)}
+          >
+            <motion.div
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "100%" }}
+              transition={{ type: "spring", damping: 25 }}
+              onClick={(e) => e.stopPropagation()}
+              className="absolute bottom-0 left-0 right-0 max-h-[75vh] overflow-y-auto rounded-t-3xl bg-white p-6"
+            >
+              <div className="mx-auto mb-4 h-1 w-12 rounded-full bg-[#d2d2d7]" />
+              <h3 className="text-lg font-bold mb-1 text-[#1d1d1f]">
+                Step-Navigator
+              </h3>
+              <p className="text-xs text-[#6e6e73] mb-4">
+                Session {activeSession} — {steps.length} Steps
+              </p>
+              <div className="space-y-1.5">
+                {steps.map((s, i) => {
+                  const sContent = sprachLevel === "b1" && s.contentB1 ? s.contentB1 : s.contentC1;
+                  const isCurrent = i === currentStep;
+                  const isAnswered = answerHistory[i]?.answered;
+                  const wasCorrect = answerHistory[i]?.correct;
+                  return (
+                    <button
+                      key={s.stepId}
+                      onClick={() => {
+                        setCurrentStep(i);
+                        setIsReviewMode(i < currentStep);
+                        setShowStepNav(false);
+                        setShowBloomFeedback(false);
+                        setLastAnswerCorrect(null);
+                      }}
+                      className={`w-full text-left rounded-xl px-3 py-2.5 flex items-center gap-3 transition-all active:scale-[0.98] ${
+                        isCurrent
+                          ? "bg-[#0071e3]/10 border border-[#0071e3]/30"
+                          : "bg-[#f9f9fb] hover:bg-[#f0f0f5]"
+                      }`}
+                    >
+                      {/* Step Number + Status */}
+                      <div className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold ${
+                        isCurrent
+                          ? "bg-[#0071e3] text-white"
+                          : isAnswered
+                            ? wasCorrect
+                              ? "bg-[#30D158]/20 text-[#30D158]"
+                              : wasCorrect === false
+                                ? "bg-[#FF3B30]/20 text-[#FF3B30]"
+                                : "bg-[#0071e3]/20 text-[#0071e3]"
+                            : "bg-[#e8e8ed] text-[#6e6e73]"
+                      }`}>
+                        {i + 1}
+                      </div>
+                      {/* Title + Type */}
+                      <div className="flex-1 min-w-0">
+                        <p className={`text-sm font-medium truncate ${
+                          isCurrent ? "text-[#0071e3]" : "text-[#1d1d1f]"
+                        }`}>
+                          {sContent.title}
+                        </p>
+                        <div className="flex items-center gap-2 mt-0.5">
+                          <span className="text-[10px] text-[#6e6e73] uppercase tracking-wider font-semibold">
+                            {s.stepType}
+                          </span>
+                          {s.modus && MODUS_CONFIG[s.modus] && (
+                            <span className="text-[10px]">
+                              {MODUS_CONFIG[s.modus].icon}
+                            </span>
+                          )}
+                          <span className="text-[10px] text-[#86868b]">
+                            B{s.bloomLevel}
+                          </span>
+                          {s.xpValue && (
+                            <span className="text-[10px] text-[#0071e3]">
+                              {s.xpValue} XP
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Step Content */}
       <div className="mx-auto max-w-2xl px-4 py-6">
+        {/* Review-Modus Banner */}
+        {isReviewMode && answerHistory[currentStep] && (
+          <div className={`mb-4 rounded-2xl px-4 py-3 flex items-center justify-between ${
+            answerHistory[currentStep].correct === true
+              ? "bg-[#30D158]/10 border border-[#30D158]/30"
+              : answerHistory[currentStep].correct === false
+                ? "bg-[#FF3B30]/10 border border-[#FF3B30]/30"
+                : "bg-[#0071e3]/10 border border-[#0071e3]/30"
+          }`}>
+            <span className="text-sm font-medium text-[#1d1d1f]">
+              {answerHistory[currentStep].correct === true
+                ? "✓ Richtig beantwortet"
+                : answerHistory[currentStep].correct === false
+                  ? "✗ Falsch beantwortet"
+                  : "✓ Abgeschlossen"}
+            </span>
+            <button
+              onClick={() => advanceStep()}
+              className="text-sm font-semibold text-[#0071e3] active:opacity-60"
+            >
+              Weiter ›
+            </button>
+          </div>
+        )}
+
         <AnimatePresence mode="wait">
-          <motion.div
-            key={step.stepId}
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -40 }}
-            transition={{ ease: [0.4, 0, 0.2, 1], duration: 0.35 }}
-          >
-            <StepRenderer
-              step={step}
-              onNext={goNext}
-              onSelfRating={(r) => {
-                setSelfRating(r);
-                goNext();
-              }}
-              onReflection={(text) => {
-                setReflexionText(text);
-              }}
-              reflexionText={reflexionText}
-              xp={xp}
-              score={score}
-              totalQuestions={totalQuestions}
-            />
-          </motion.div>
+          {showModusTransition && currentModus ? (
+            <motion.div
+              key={`modus-${currentModus}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <ModusTransition
+                modus={currentModus}
+                onDone={() => setShowModusTransition(false)}
+              />
+            </motion.div>
+          ) : (
+            <motion.div
+              key={step.stepId}
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -40 }}
+              transition={{ ease: [0.4, 0, 0.2, 1], duration: 0.35 }}
+            >
+              <StepRenderer
+                step={step}
+                sprachLevel={sprachLevel}
+                onNext={goNext}
+                onSelfRating={(r) => {
+                  setSelfRating(r);
+                  goNext();
+                }}
+                onReflection={(text) => {
+                  setReflexionText(text);
+                }}
+                reflexionText={reflexionText}
+                xp={xp}
+                score={score}
+                totalQuestions={totalQuestions}
+              />
+              {showBloomFeedback && lastAnswerCorrect !== null && step.bloomLevel > 0 && (
+                <BloomFeedback
+                  bloomLevel={step.bloomLevel}
+                  correct={lastAnswerCorrect}
+                />
+              )}
+            </motion.div>
+          )}
         </AnimatePresence>
       </div>
 
@@ -594,6 +1020,7 @@ export default function LernenPage() {
 
 function StepRenderer({
   step,
+  sprachLevel,
   onNext,
   onSelfRating,
   onReflection,
@@ -603,6 +1030,7 @@ function StepRenderer({
   totalQuestions,
 }: {
   step: ContentStep;
+  sprachLevel: "c1" | "b1";
   onNext: (correct?: boolean) => void;
   onSelfRating: (rating: number) => void;
   onReflection: (text: string) => void;
@@ -611,7 +1039,7 @@ function StepRenderer({
   score: number;
   totalQuestions: number;
 }) {
-  const content = step.contentC1;
+  const content = sprachLevel === "b1" && step.contentB1 ? step.contentB1 : step.contentC1;
 
   switch (step.stepType) {
     case "selfrating":
@@ -730,6 +1158,7 @@ function StepRenderer({
           imageUrl={step.imageUrl}
           imageAlt={step.imageAlt}
           wusstestDuDas={step.wusstestDuDas}
+          carousel={step.modus === "entdecker"}
           onNext={() => onNext()}
         />
       );
@@ -887,6 +1316,74 @@ function StepRenderer({
           patientName={step.question.patientName ?? "Patient"}
           phases={step.question.dialogPhases}
           onNext={(correct) => onNext(correct)}
+          sprachLevel={sprachLevel}
+        />
+      );
+
+    case "swipe":
+      if (!step.question?.swipe) return null;
+      return (
+        <StepSwipe
+          title={content.title}
+          body={content.body || undefined}
+          instruction={step.question.swipe.instruction}
+          cards={step.question.swipe.cards}
+          sprachLevel={sprachLevel}
+          onNext={(correct) => onNext(correct)}
+        />
+      );
+
+    case "flipcard":
+      if (!step.question?.flipcard) return null;
+      return (
+        <StepFlipCard
+          title={content.title}
+          body={content.body || undefined}
+          instruction={step.question.flipcard.instruction}
+          cards={step.question.flipcard.cards}
+          sprachLevel={sprachLevel}
+          onNext={() => onNext()}
+        />
+      );
+
+    case "reveal":
+      if (!step.question?.reveal) return null;
+      return (
+        <StepReveal
+          title={content.title}
+          body={content.body || undefined}
+          instruction={step.question.reveal.instruction}
+          cards={step.question.reveal.cards}
+          revealMode={step.question.reveal.revealMode}
+          sprachLevel={sprachLevel}
+          onNext={() => onNext()}
+        />
+      );
+
+    case "timeline":
+      if (!step.question?.timeline) return null;
+      return (
+        <StepTimeline
+          title={content.title}
+          body={content.body || undefined}
+          instruction={step.question.timeline.instruction}
+          events={step.question.timeline.events}
+          sprachLevel={sprachLevel}
+          onNext={() => onNext()}
+        />
+      );
+
+    case "comparison":
+      if (!step.question?.comparison) return null;
+      return (
+        <StepComparison
+          title={content.title}
+          body={content.body || undefined}
+          instruction={step.question.comparison.instruction}
+          columns={step.question.comparison.columns}
+          rows={step.question.comparison.rows}
+          sprachLevel={sprachLevel}
+          onNext={() => onNext()}
         />
       );
 

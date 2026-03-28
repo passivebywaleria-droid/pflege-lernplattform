@@ -1,15 +1,20 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { berechneAchsen } from "@/lib/adaptive/lern-profil";
+import { updateKompetenz, lernzielVonStep, type KompetenzRegister } from "@/lib/adaptive/kompetenz-register";
 
 // --- Types ---
 
 export interface StepAntwort {
   stepId: string;
+  stepType: string;
   correct: boolean | null;  // null = Text/Reflexion (kein richtig/falsch)
   gewaehlteOption?: string;
   freitextAntwort?: string;
-  zeitMs?: number;
+  zeitMs: number;            // Antwortzeit in ms (Pflicht!)
+  bloomLevel?: number;
+  fehlerKategorie?: "raten" | "konzept" | "sprache" | "verwechslung";
 }
 
 export interface SessionFortschritt {
@@ -42,6 +47,12 @@ export interface TagesAktivitaet {
   sessionsAbgeschlossen: number;
 }
 
+export interface LernAchsen {
+  sprache: number;           // 1-5 (1=B1 schwach, 5=C1+ Muttersprachler)
+  fachwissen: number;        // 1-5 (1=Anfänger, 5=Fortgeschritten)
+  letzteBerechnung: string;  // ISO-String
+}
+
 export interface LernProfil {
   fortschritte: Record<string, LeFortschritt>;  // Key: leId
   tagesAktivitaeten: TagesAktivitaet[];
@@ -49,6 +60,11 @@ export interface LernProfil {
   letzterStreakTag: string | null;
   gesamtXp: number;
   schwaechen: SchwachstellenKarte[];
+  achsen?: LernAchsen;                      // Zwei-Achsen-Profil (global)
+  achsenProCe?: Record<string, LernAchsen>; // Pro CE differenziert
+  b1ToggleCount?: number;                   // Wie oft wurde B1-Toggle genutzt
+  alleAntworten?: StepAntwort[];            // Letzte 200 Antworten (für Profil-Berechnung)
+  kompetenzRegister?: KompetenzRegister;    // Pro-Lernziel Mastery-Tracking
 }
 
 export interface SchwachstellenKarte {
@@ -263,6 +279,52 @@ export function useLernFortschritt() {
     };
   }, [profil]);
 
+  // Einzelne Antwort speichern (für Adaptivität)
+  const saveAntwort = useCallback(
+    (antwort: StepAntwort) => {
+      setProfil((prev) => {
+        if (!prev) return prev;
+        const alleAntworten = [...(prev.alleAntworten ?? []), antwort].slice(-200);
+        return { ...prev, alleAntworten };
+      });
+    },
+    []
+  );
+
+  // B1-Toggle zählen
+  const incrementB1Toggle = useCallback(() => {
+    setProfil((prev) => {
+      if (!prev) return prev;
+      return { ...prev, b1ToggleCount: (prev.b1ToggleCount ?? 0) + 1 };
+    });
+  }, []);
+
+  // Kompetenz-Eintrag nach Antwort aktualisieren
+  const updateKompetenzEintrag = useCallback(
+    (antwort: StepAntwort, lernziel?: string, leId?: string) => {
+      setProfil((prev) => {
+        if (!prev) return prev;
+        const register = { ...(prev.kompetenzRegister ?? {}) };
+        const lernzielId = lernzielVonStep(antwort.stepId, lernziel, leId);
+        register[lernzielId] = updateKompetenz(register[lernzielId], lernzielId, antwort);
+        return { ...prev, kompetenzRegister: register };
+      });
+    },
+    [],
+  );
+
+  // Lernprofil-Achsen neu berechnen (nach jeder Session)
+  const updateAchsen = useCallback(() => {
+    setProfil((prev) => {
+      if (!prev) return prev;
+      const antworten = prev.alleAntworten ?? [];
+      if (antworten.length < 5) return prev; // Zu wenig Daten
+      const totalSteps = antworten.length;
+      const achsen = berechneAchsen(antworten, prev.schwaechen, prev.b1ToggleCount ?? 0, totalSteps);
+      return { ...prev, achsen };
+    });
+  }, []);
+
   return {
     profil,
     loaded,
@@ -272,6 +334,10 @@ export function useLernFortschritt() {
     logAktivitaet,
     getLeFortschritt,
     getLetztePosition,
+    saveAntwort,
+    incrementB1Toggle,
+    updateAchsen,
+    updateKompetenzEintrag,
   };
 }
 
