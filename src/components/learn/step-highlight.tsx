@@ -9,6 +9,7 @@ interface TextSegment {
   text: string;
   isError: boolean;
   reason?: string;
+  reasonB1?: string;
 }
 
 interface StepHighlightProps {
@@ -16,6 +17,7 @@ interface StepHighlightProps {
   body?: string;
   segments: TextSegment[];
   glossar?: GlossarEntry[];
+  sprachLevel?: "c1" | "b1";
   onNext: (correct: boolean) => void;
 }
 
@@ -24,6 +26,7 @@ export function StepHighlight({
   body,
   segments,
   glossar,
+  sprachLevel = "c1",
   onNext,
 }: StepHighlightProps) {
   const [marked, setMarked] = useState<Set<number>>(new Set());
@@ -138,7 +141,7 @@ export function StepHighlight({
                     &quot;{s.text.trim()}&quot;
                   </span>
                   <span className="text-[#6e6e73] ml-1">
-                    &mdash; {s.reason}
+                    &mdash; {(sprachLevel === "b1" && s.reasonB1) || s.reason}
                   </span>
                 </div>
               </div>

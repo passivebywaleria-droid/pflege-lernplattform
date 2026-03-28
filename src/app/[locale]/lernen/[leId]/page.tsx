@@ -1132,6 +1132,7 @@ function StepRenderer({
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
+          sprachLevel={sprachLevel}
           instruction={step.question.slider.instruction}
           unit={step.question.slider.unit}
           min={step.question.slider.min}
@@ -1140,6 +1141,7 @@ function StepRenderer({
           correctValue={step.question.slider.correctValue}
           tolerance={step.question.slider.tolerance}
           explanation={step.question.slider.explanation}
+          explanationB1={step.question.slider.explanationB1}
           onNext={(correct) => onNext(correct)}
         />
       );
@@ -1183,6 +1185,7 @@ function StepRenderer({
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
+          sprachLevel={sprachLevel}
           fragetext={step.question.fragetext}
           optionen={step.question.optionen}
           multiSelect={step.question.multiSelect}
@@ -1223,6 +1226,7 @@ function StepRenderer({
           title={content.title}
           body={content.body}
           glossar={glossar}
+          sprachLevel={sprachLevel}
           fragetext={step.question.fragetext}
           options={step.question.branchingOptions}
           onNext={(correct) => onNext(correct)}
@@ -1328,6 +1332,7 @@ function StepRenderer({
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
+          sprachLevel={sprachLevel}
           segments={step.question.highlightSegments}
           onNext={(correct) => onNext(correct)}
         />

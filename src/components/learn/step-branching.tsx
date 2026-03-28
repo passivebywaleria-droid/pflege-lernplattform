@@ -8,6 +8,7 @@ import { FachbegriffText } from "./fachbegriff-tooltip";
 interface BranchingOption {
   text: string;
   feedback: string;
+  feedbackB1?: string;
   isCorrect: boolean;
 }
 
@@ -17,6 +18,7 @@ interface StepBranchingProps {
   fragetext: string;
   options: BranchingOption[];
   glossar?: GlossarEntry[];
+  sprachLevel?: "c1" | "b1";
   onNext: (correct: boolean) => void;
 }
 
@@ -26,6 +28,7 @@ export function StepBranching({
   fragetext,
   options,
   glossar,
+  sprachLevel = "c1",
   onNext,
 }: StepBranchingProps) {
   const [selected, setSelected] = useState<number | null>(null);
@@ -79,7 +82,7 @@ export function StepBranching({
                   className="mt-3 pt-3 border-t border-current/10"
                 >
                   <p className="text-sm text-[#6e6e73]">
-                    <FachbegriffText glossar={glossar ?? []}>{option.feedback}</FachbegriffText>
+                    <FachbegriffText glossar={glossar ?? []}>{(sprachLevel === "b1" && option.feedbackB1) || option.feedback}</FachbegriffText>
                   </p>
                 </motion.div>
               )}

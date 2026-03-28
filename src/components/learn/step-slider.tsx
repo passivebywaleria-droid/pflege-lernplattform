@@ -9,6 +9,7 @@ interface StepSliderProps {
   title: string;
   body?: string;
   glossar?: GlossarEntry[];
+  sprachLevel?: "c1" | "b1";
   instruction: string;
   unit: string;
   min: number;
@@ -17,6 +18,7 @@ interface StepSliderProps {
   correctValue: number;
   tolerance: number;
   explanation: string;
+  explanationB1?: string;
   onNext: (correct: boolean) => void;
 }
 
@@ -24,6 +26,7 @@ export function StepSlider({
   title,
   body,
   glossar,
+  sprachLevel = "c1",
   instruction,
   unit,
   min,
@@ -32,6 +35,7 @@ export function StepSlider({
   correctValue,
   tolerance,
   explanation,
+  explanationB1,
   onNext,
 }: StepSliderProps) {
   const middle = Math.round((min + max) / 2 / step) * step;
@@ -132,7 +136,7 @@ export function StepSlider({
               Erklärung
             </p>
             <p className="text-sm text-[#1d1d1f]/70">
-              {explanation}
+              {(sprachLevel === "b1" && explanationB1) || explanation}
             </p>
           </motion.div>
 

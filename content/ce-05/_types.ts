@@ -16,6 +16,7 @@ export interface StepOption {
   text: string;
   isCorrect: boolean;
   explanation: string;
+  explanationB1?: string;
 }
 
 export interface MatchingPair {
@@ -71,6 +72,7 @@ export interface HighlightSegment {
   text: string;
   isError: boolean;
   reason?: string;
+  reasonB1?: string;
 }
 
 // Dialog phase data
@@ -162,6 +164,7 @@ export interface SliderData {
   correctValue: number;
   tolerance: number;
   explanation: string;
+  explanationB1?: string;
 }
 
 // Summary — Rückbezug + Ergebnis-Screen
@@ -327,6 +330,7 @@ export interface ContentStep {
     branchingOptions?: {
       text: string;
       feedback: string;
+      feedbackB1?: string;
       isCorrect: boolean;
     }[];
     musterantwort?: string;

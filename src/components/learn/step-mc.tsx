@@ -9,6 +9,7 @@ interface MCOption {
   text: string;
   isCorrect: boolean;
   explanation: string;
+  explanationB1?: string;
 }
 
 interface StepMCProps {
@@ -18,6 +19,7 @@ interface StepMCProps {
   optionen: MCOption[];
   multiSelect?: boolean;
   glossar?: GlossarEntry[];
+  sprachLevel?: "c1" | "b1";
   onNext: (correct: boolean) => void;
 }
 
@@ -28,6 +30,7 @@ export function StepMC({
   optionen,
   multiSelect,
   glossar,
+  sprachLevel = "c1",
   onNext,
 }: StepMCProps) {
   const [selected, setSelected] = useState<number[]>([]);
@@ -137,7 +140,7 @@ export function StepMC({
                         animate={{ opacity: 1, height: "auto" }}
                         className="mt-2 text-sm text-[#6e6e73]"
                       >
-                        <FachbegriffText glossar={glossar ?? []}>{option.explanation}</FachbegriffText>
+                        <FachbegriffText glossar={glossar ?? []}>{(sprachLevel === "b1" && option.explanationB1) || option.explanation}</FachbegriffText>
                       </motion.p>
                     )}
                   </AnimatePresence>
