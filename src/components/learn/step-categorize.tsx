@@ -125,7 +125,7 @@ export function StepCategorize({
             Wohin gehört das? ({remaining.length} übrig)
           </p>
           <p className="text-sm font-semibold text-[#1d1d1f]">
-            {remaining[0].text}
+            <FachbegriffText glossar={glossar ?? []}>{remaining[0].text}</FachbegriffText>
           </p>
         </motion.div>
       )}
@@ -228,7 +228,7 @@ export function StepCategorize({
             <p className="font-semibold text-[#1d1d1f]">
               {allCorrect
                 ? "Perfekt! Alle Elemente korrekt zugeordnet."
-                : `${correctCount}/${items.length} richtig.`}
+                : <FachbegriffText glossar={glossar ?? []}>{`${correctCount}/${items.length} richtig.`}</FachbegriffText>}
             </p>
           </motion.div>
 

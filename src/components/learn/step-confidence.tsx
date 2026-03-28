@@ -9,6 +9,7 @@ interface StepConfidenceProps {
   title: string;
   body?: string;
   glossar?: GlossarEntry[];
+  sprachLevel?: "c1" | "b1";
   cards: ConfidenceCard[];
   onNext: (correct: boolean) => void;
 }
@@ -50,6 +51,7 @@ export function StepConfidence({
   title,
   body,
   glossar,
+  sprachLevel = "c1",
   cards,
   onNext,
 }: StepConfidenceProps) {
@@ -115,7 +117,9 @@ export function StepConfidence({
                 }}
               >
                 <p className="text-sm font-medium text-[#1d1d1f]">
-                  {cards[i].statement}
+                  <FachbegriffText glossar={glossar ?? []}>
+                    {sprachLevel === "b1" && cards[i].statementB1 ? cards[i].statementB1 : cards[i].statement}
+                  </FachbegriffText>
                 </p>
                 <p className="text-xs mt-1" style={{ color: fb.color }}>
                   {r.isCorrect ? "Richtig" : "Falsch"} · {CONFIDENCE_LABELS[r.confidence]} — {fb.text}
@@ -166,7 +170,9 @@ export function StepConfidence({
           {/* Aussage */}
           <div className="rounded-2xl bg-white border-2 border-[#d2d2d7] p-6 mb-6">
             <p className="text-lg font-medium text-[#1d1d1f] text-center">
-              &ldquo;{card.statement}&rdquo;
+              &ldquo;<FachbegriffText glossar={glossar ?? []}>
+                {sprachLevel === "b1" && card.statementB1 ? card.statementB1 : card.statement}
+              </FachbegriffText>&rdquo;
             </p>
           </div>
 
@@ -245,7 +251,9 @@ export function StepConfidence({
                   Erklärung
                 </p>
                 <p className="text-sm text-[#1d1d1f]/70">
-                  {card.explanation}
+                  <FachbegriffText glossar={glossar ?? []}>
+                    {sprachLevel === "b1" && card.explanationB1 ? card.explanationB1 : card.explanation}
+                  </FachbegriffText>
                 </p>
               </div>
 

@@ -72,7 +72,7 @@ export function StepSorting({
       )}
 
       <p className="text-lg font-medium text-[#1d1d1f]">
-        {fragetext}
+        <FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText>
       </p>
 
       <p className="text-sm text-[#6e6e73]">
@@ -151,8 +151,8 @@ export function StepSorting({
           >
             <p className="font-semibold">
               {isCorrect
-                ? "✅ Perfekte Reihenfolge!"
-                : `❌ ${correctPositions.filter(Boolean).length} von ${items.length} an der richtigen Position`}
+                ? "Perfekte Reihenfolge!"
+                : <FachbegriffText glossar={glossar ?? []}>{`${correctPositions.filter(Boolean).length} von ${items.length} an der richtigen Position`}</FachbegriffText>}
             </p>
           </motion.div>
 

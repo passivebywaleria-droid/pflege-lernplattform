@@ -46,7 +46,7 @@ export function StepBranching({
       </div>
 
       <p className="text-lg font-medium text-[#1d1d1f]">
-        {fragetext}
+        <FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText>
       </p>
 
       <div className="space-y-3">
@@ -68,7 +68,7 @@ export function StepBranching({
             }`}
           >
             <p className="font-medium text-[#1d1d1f]">
-              {option.text}
+              <FachbegriffText glossar={glossar ?? []}>{option.text}</FachbegriffText>
             </p>
 
             <AnimatePresence>
@@ -79,7 +79,7 @@ export function StepBranching({
                   className="mt-3 pt-3 border-t border-current/10"
                 >
                   <p className="text-sm text-[#6e6e73]">
-                    {option.feedback}
+                    <FachbegriffText glossar={glossar ?? []}>{option.feedback}</FachbegriffText>
                   </p>
                 </motion.div>
               )}

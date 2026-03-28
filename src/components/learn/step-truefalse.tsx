@@ -23,14 +23,17 @@ import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface TrueFalseCard {
   statement: string;
+  statementB1?: string;
   isTrue: boolean;
   explanation: string;
+  explanationB1?: string;
 }
 
 interface StepTrueFalseProps {
   title: string;
   body?: string;
   glossar?: GlossarEntry[];
+  sprachLevel?: "c1" | "b1";
   cards: TrueFalseCard[];
   onNext: (correct: boolean) => void;
 }
@@ -39,6 +42,7 @@ export function StepTrueFalse({
   title,
   body,
   glossar,
+  sprachLevel = "c1",
   cards,
   onNext,
 }: StepTrueFalseProps) {
@@ -69,8 +73,12 @@ export function StepTrueFalse({
 
   const handleSwipe = (answeredTrue: boolean) => {
     const correct = answeredTrue === card.isTrue;
+    const explanation =
+      sprachLevel === "b1" && card.explanationB1
+        ? card.explanationB1
+        : card.explanation;
     setResults((r) => [...r, correct]);
-    setLastAnswer({ correct, explanation: card.explanation, wasTrue: card.isTrue });
+    setLastAnswer({ correct, explanation, wasTrue: card.isTrue });
     setShowResult(true);
   };
 
@@ -182,7 +190,9 @@ export function StepTrueFalse({
               className="flex-1 rounded-2xl border-2 border-[#d2d2d7] bg-white p-5 min-h-[140px] flex items-center justify-center cursor-grab active:cursor-grabbing select-none shadow-sm"
             >
               <p className="text-center text-base font-medium leading-snug">
-                {card.statement}
+                <FachbegriffText glossar={glossar ?? []}>
+                  {sprachLevel === "b1" && card.statementB1 ? card.statementB1 : card.statement}
+                </FachbegriffText>
               </p>
             </motion.div>
 
@@ -217,7 +227,9 @@ export function StepTrueFalse({
                 {lastAnswer?.correct ? "✓ Richtig!" : "✗ Falsch!"}
               </p>
               <p className="text-sm leading-relaxed" style={{ color: "#3a3a3c" }}>
-                {lastAnswer?.explanation}
+                <FachbegriffText glossar={glossar ?? []}>
+                  {lastAnswer?.explanation ?? ""}
+                </FachbegriffText>
               </p>
               {!lastAnswer?.correct && (
                 <p className="text-xs font-semibold mt-2" style={{ color: "#30D158" }}>

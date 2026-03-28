@@ -1093,6 +1093,7 @@ function StepRenderer({
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
+          sprachLevel={sprachLevel}
           cards={step.question.confidenceCards}
           onNext={(correct) => onNext(correct)}
         />
@@ -1263,6 +1264,7 @@ function StepRenderer({
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
+          sprachLevel={sprachLevel}
           cards={step.question.trueFalseCards}
           onNext={(correct) => onNext(correct)}
         />

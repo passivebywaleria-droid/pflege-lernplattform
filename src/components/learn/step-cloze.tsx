@@ -126,7 +126,7 @@ export function StepCloze({
       <div className="rounded-2xl bg-white border-2 border-[#d2d2d7] p-5 leading-relaxed text-[#1d1d1f]">
         {segments.map((seg, i) => {
           if (seg.type === "text") {
-            return <span key={i}>{seg.content}</span>;
+            return <span key={i}><FachbegriffText glossar={glossar ?? []}>{seg.content}</FachbegriffText></span>;
           }
           const blankId = seg.blankId!;
           const filled = filledBlanks[blankId];
@@ -202,7 +202,7 @@ export function StepCloze({
                   .filter((r) => !r.isCorrect)
                   .map((r) => (
                     <p key={r.id} className="text-sm text-[#FF3B30]">
-                      Lücke {r.id}: &ldquo;{r.given}&rdquo; → richtig wäre &ldquo;{r.correct}&rdquo;
+                      <FachbegriffText glossar={glossar ?? []}>{`Lücke ${r.id}: „${r.given}" → richtig wäre „${r.correct}"`}</FachbegriffText>
                     </p>
                   ))}
               </div>

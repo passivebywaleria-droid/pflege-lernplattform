@@ -48,7 +48,7 @@ export function StepFreetext({
       )}
 
       <p className="text-lg font-medium text-[#1d1d1f]">
-        {fragetext}
+        <FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText>
       </p>
 
       {satzanfaengeB1 && satzanfaengeB1.length > 0 && !submitted && (

@@ -69,7 +69,7 @@ export function StepMC({
       )}
 
       <p className="text-lg font-medium text-[#1d1d1f]">
-        {fragetext}
+        <FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText>
       </p>
 
       {multiSelect && !submitted && (
@@ -128,7 +128,7 @@ export function StepMC({
                 </span>
                 <div className="flex-1">
                   <p className="font-medium text-[#1d1d1f]">
-                    {option.text}
+                    <FachbegriffText glossar={glossar ?? []}>{option.text}</FachbegriffText>
                   </p>
                   <AnimatePresence>
                     {showResult && (isSelected || optionCorrect) && (
@@ -137,7 +137,7 @@ export function StepMC({
                         animate={{ opacity: 1, height: "auto" }}
                         className="mt-2 text-sm text-[#6e6e73]"
                       >
-                        {option.explanation}
+                        <FachbegriffText glossar={glossar ?? []}>{option.explanation}</FachbegriffText>
                       </motion.p>
                     )}
                   </AnimatePresence>

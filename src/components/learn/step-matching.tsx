@@ -150,7 +150,7 @@ export function StepMatching({
         </p>
       )}
 
-      <p className="text-lg font-semibold">{fragetext}</p>
+      <p className="text-lg font-semibold"><FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText></p>
 
       <p className="text-sm" style={{ color: "#3a3a3c" }}>
         Tippe links auf einen Begriff, dann rechts auf die passende Erklärung.
@@ -342,7 +342,7 @@ export function StepMatching({
             <p className="font-semibold">
               {allCorrect
                 ? "Perfekt! Alle richtig zugeordnet!"
-                : `${correctCount} von ${pairs.length} richtig`}
+                : <FachbegriffText glossar={glossar ?? []}>{`${correctCount} von ${pairs.length} richtig`}</FachbegriffText>}
             </p>
           </motion.div>
 

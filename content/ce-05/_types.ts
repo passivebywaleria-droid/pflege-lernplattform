@@ -122,8 +122,10 @@ export interface HotspotData {
 // Confidence — Wahr/Falsch + "Wie sicher bist du?"
 export interface ConfidenceCard {
   statement: string;
+  statementB1?: string;
   isTrue: boolean;
   explanation: string;
+  explanationB1?: string;
 }
 
 // Cloze — Lückentext mit mehreren Lücken

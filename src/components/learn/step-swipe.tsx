@@ -188,7 +188,7 @@ export function StepSwipe({
                 : "border-[#d2d2d7] bg-white"
             }`}>
               <p className="text-center text-base font-medium leading-snug">
-                {statement}
+                <FachbegriffText glossar={glossar ?? []}>{statement}</FachbegriffText>
               </p>
             </div>
 
@@ -233,7 +233,7 @@ export function StepSwipe({
                   </span>.
                 </p>
                 <p className="text-sm leading-relaxed" style={{ color: "#3a3a3c" }}>
-                  {lastAnswer.explanation}
+                  <FachbegriffText glossar={glossar ?? []}>{lastAnswer.explanation}</FachbegriffText>
                 </p>
               </div>
 

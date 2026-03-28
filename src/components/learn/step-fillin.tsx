@@ -51,7 +51,7 @@ export function StepFillIn({
         <p className="text-lg text-[#1d1d1f] leading-relaxed">
           {parts.map((part, i) => (
             <React.Fragment key={i}>
-              {part}
+              <FachbegriffText glossar={glossar ?? []}>{part}</FachbegriffText>
               {i < parts.length - 1 && (
                 <span
                   className={`inline-block px-3 py-0.5 mx-1 rounded-lg font-semibold transition-colors ${
@@ -124,7 +124,7 @@ export function StepFillIn({
             <p className="font-semibold text-[#1d1d1f]">
               {isCorrect
                 ? "Richtig!"
-                : `Nicht ganz. Die richtige Antwort ist: ${options[correctIndex]}`}
+                : <FachbegriffText glossar={glossar ?? []}>{`Nicht ganz. Die richtige Antwort ist: ${options[correctIndex]}`}</FachbegriffText>}
             </p>
           </motion.div>
 
