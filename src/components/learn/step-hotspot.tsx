@@ -2,7 +2,8 @@
 
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { HotspotZone } from "../../../content/ce-05/_types";
+import type { HotspotZone, GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepHotspotProps {
   title: string;
@@ -11,6 +12,7 @@ interface StepHotspotProps {
   imageAlt: string;
   instruction: string;
   zones: HotspotZone[];
+  glossar?: GlossarEntry[];
   onNext: (correct: boolean) => void;
 }
 
@@ -21,6 +23,7 @@ export function StepHotspot({
   imageAlt,
   instruction,
   zones,
+  glossar,
   onNext,
 }: StepHotspotProps) {
   const [found, setFound] = useState<Set<string>>(new Set());
@@ -74,7 +77,7 @@ export function StepHotspot({
 
       {body && (
         <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
-          {body}
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 

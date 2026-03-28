@@ -12,6 +12,8 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface SwipeCardProps {
   statement: string;
@@ -26,6 +28,7 @@ interface StepSwipeProps {
   body?: string;
   instruction: string;
   cards: SwipeCardProps[];
+  glossar?: GlossarEntry[];
   sprachLevel?: "c1" | "b1";
   onNext: (correct: boolean) => void;
 }
@@ -35,6 +38,7 @@ export function StepSwipe({
   body,
   instruction,
   cards,
+  glossar,
   sprachLevel = "c1",
   onNext,
 }: StepSwipeProps) {
@@ -116,7 +120,9 @@ export function StepSwipe({
       <h2 className="text-2xl font-bold">{title}</h2>
 
       {body && (
-        <p className="leading-relaxed whitespace-pre-line">{body}</p>
+        <p className="leading-relaxed whitespace-pre-line">
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
+        </p>
       )}
 
       <p className="text-sm" style={{ color: "#6e6e73" }}>

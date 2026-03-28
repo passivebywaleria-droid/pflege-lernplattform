@@ -2,11 +2,13 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { ConfidenceCard } from "../../../content/ce-05/_types";
+import type { ConfidenceCard, GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepConfidenceProps {
   title: string;
   body?: string;
+  glossar?: GlossarEntry[];
   cards: ConfidenceCard[];
   onNext: (correct: boolean) => void;
 }
@@ -47,6 +49,7 @@ function getFeedback(isCorrect: boolean, confidence: ConfidenceLevel): { text: s
 export function StepConfidence({
   title,
   body,
+  glossar,
   cards,
   onNext,
 }: StepConfidenceProps) {
@@ -144,7 +147,7 @@ export function StepConfidence({
 
       {body && (
         <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
-          {body}
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 

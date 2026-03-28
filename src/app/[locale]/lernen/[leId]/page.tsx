@@ -979,6 +979,7 @@ export default function LernenPage() {
               <StepRenderer
                 step={step}
                 sprachLevel={sprachLevel}
+                glossar={glossar}
                 onNext={goNext}
                 onSelfRating={(r) => {
                   setSelfRating(r);
@@ -1021,6 +1022,7 @@ export default function LernenPage() {
 function StepRenderer({
   step,
   sprachLevel,
+  glossar,
   onNext,
   onSelfRating,
   onReflection,
@@ -1031,6 +1033,7 @@ function StepRenderer({
 }: {
   step: ContentStep;
   sprachLevel: "c1" | "b1";
+  glossar: GlossarEntry[];
   onNext: (correct?: boolean) => void;
   onSelfRating: (rating: number) => void;
   onReflection: (text: string) => void;
@@ -1047,6 +1050,7 @@ function StepRenderer({
         <StepSelfrating
           title={content.title}
           body={content.body}
+          glossar={glossar}
           fragetext={step.question?.fragetext ?? ""}
           onNext={onSelfRating}
         />
@@ -1058,6 +1062,7 @@ function StepRenderer({
         <StepReflection
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           prompt={step.question.reflection.prompt}
           placeholder={step.question.reflection.placeholder}
           systemPrompt={step.question.reflection.systemPrompt}
@@ -1072,6 +1077,7 @@ function StepRenderer({
         <StepHotspot
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           imageUrl={step.question.hotspot.imageUrl}
           imageAlt={step.question.hotspot.imageAlt}
           instruction={step.question.hotspot.instruction}
@@ -1086,6 +1092,7 @@ function StepRenderer({
         <StepConfidence
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           cards={step.question.confidenceCards}
           onNext={(correct) => onNext(correct)}
         />
@@ -1097,6 +1104,7 @@ function StepRenderer({
         <StepCloze
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           textWithBlanks={step.question.cloze.textWithBlanks}
           blanks={step.question.cloze.blanks}
           onNext={(correct) => onNext(correct)}
@@ -1109,6 +1117,7 @@ function StepRenderer({
         <StepSequencing
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           instruction={step.question.sequencing.instruction}
           items={step.question.sequencing.items}
           onNext={(correct) => onNext(correct)}
@@ -1121,6 +1130,7 @@ function StepRenderer({
         <StepSlider
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           instruction={step.question.slider.instruction}
           unit={step.question.slider.unit}
           min={step.question.slider.min}
@@ -1138,6 +1148,7 @@ function StepRenderer({
       return (
         <StepSummary
           title={content.title}
+          glossar={glossar}
           reflexionText={reflexionText ?? undefined}
           rueckbezug={step.question.summary.reflexionRueckbezug}
           kernaussagen={step.question.summary.kernaussagen}
@@ -1153,6 +1164,7 @@ function StepRenderer({
         <StepText
           title={content.title}
           body={content.body}
+          glossar={glossar}
           fallbezug={content.fallbezug}
           glossarBegriffe={content.glossarBegriffe}
           imageUrl={step.imageUrl}
@@ -1169,6 +1181,7 @@ function StepRenderer({
         <StepMC
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           fragetext={step.question.fragetext}
           optionen={step.question.optionen}
           multiSelect={step.question.multiSelect}
@@ -1182,6 +1195,7 @@ function StepRenderer({
         <StepMatching
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           fragetext={step.question.fragetext}
           pairs={step.question.matchingPairs}
           onNext={(correct) => onNext(correct)}
@@ -1194,6 +1208,7 @@ function StepRenderer({
         <StepSorting
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           fragetext={step.question.fragetext}
           items={step.question.sortItems}
           onNext={(correct) => onNext(correct)}
@@ -1206,6 +1221,7 @@ function StepRenderer({
         <StepBranching
           title={content.title}
           body={content.body}
+          glossar={glossar}
           fragetext={step.question.fragetext}
           options={step.question.branchingOptions}
           onNext={(correct) => onNext(correct)}
@@ -1217,6 +1233,7 @@ function StepRenderer({
         <StepFreetext
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           fragetext={step.question?.fragetext ?? ""}
           musterantwort={step.question?.musterantwort}
           bewertungskriterien={step.question?.bewertungskriterien}
@@ -1231,6 +1248,7 @@ function StepRenderer({
         <StepFillIn
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           sentence={step.question.fillin.sentence}
           options={step.question.fillin.options}
           correctIndex={step.question.fillin.correctIndex}
@@ -1244,6 +1262,7 @@ function StepRenderer({
         <StepTrueFalse
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           cards={step.question.trueFalseCards}
           onNext={(correct) => onNext(correct)}
         />
@@ -1255,6 +1274,7 @@ function StepRenderer({
         <StepTimer
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           questions={step.question.timerQuestions}
           timeLimitSeconds={step.question.timeLimitSeconds}
           onNext={(correct) => onNext(correct)}
@@ -1267,6 +1287,7 @@ function StepRenderer({
         <StepMemory
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           pairs={step.question.memoryPairs}
           onNext={(correct) => onNext(correct)}
         />
@@ -1278,6 +1299,7 @@ function StepRenderer({
         <StepCrossword
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           words={step.question.crosswordWords}
           onNext={(correct) => onNext(correct)}
         />
@@ -1290,6 +1312,7 @@ function StepRenderer({
         <StepCategorize
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           categories={step.question.categories}
           items={step.question.categoryItems}
           onNext={(correct) => onNext(correct)}
@@ -1302,6 +1325,7 @@ function StepRenderer({
         <StepHighlight
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           segments={step.question.highlightSegments}
           onNext={(correct) => onNext(correct)}
         />
@@ -1313,6 +1337,7 @@ function StepRenderer({
         <StepDialog
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           patientName={step.question.patientName ?? "Patient"}
           phases={step.question.dialogPhases}
           onNext={(correct) => onNext(correct)}
@@ -1326,6 +1351,7 @@ function StepRenderer({
         <StepSwipe
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           instruction={step.question.swipe.instruction}
           cards={step.question.swipe.cards}
           sprachLevel={sprachLevel}
@@ -1339,6 +1365,7 @@ function StepRenderer({
         <StepFlipCard
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           instruction={step.question.flipcard.instruction}
           cards={step.question.flipcard.cards}
           sprachLevel={sprachLevel}
@@ -1352,6 +1379,7 @@ function StepRenderer({
         <StepReveal
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           instruction={step.question.reveal.instruction}
           cards={step.question.reveal.cards}
           revealMode={step.question.reveal.revealMode}
@@ -1366,6 +1394,7 @@ function StepRenderer({
         <StepTimeline
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           instruction={step.question.timeline.instruction}
           events={step.question.timeline.events}
           sprachLevel={sprachLevel}
@@ -1379,6 +1408,7 @@ function StepRenderer({
         <StepComparison
           title={content.title}
           body={content.body || undefined}
+          glossar={glossar}
           instruction={step.question.comparison.instruction}
           columns={step.question.comparison.columns}
           rows={step.question.comparison.rows}
@@ -1392,6 +1422,7 @@ function StepRenderer({
         <StepText
           title={content.title}
           body={content.body}
+          glossar={glossar}
           onNext={() => onNext()}
         />
       );

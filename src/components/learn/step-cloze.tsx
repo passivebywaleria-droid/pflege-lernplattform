@@ -2,11 +2,13 @@
 
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
-import type { ClozeBlank } from "../../../content/ce-05/_types";
+import type { ClozeBlank, GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepClozeProps {
   title: string;
   body?: string;
+  glossar?: GlossarEntry[];
   textWithBlanks: string;
   blanks: ClozeBlank[];
   onNext: (correct: boolean) => void;
@@ -15,6 +17,7 @@ interface StepClozeProps {
 export function StepCloze({
   title,
   body,
+  glossar,
   textWithBlanks,
   blanks,
   onNext,
@@ -111,7 +114,7 @@ export function StepCloze({
 
       {body && (
         <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
-          {body}
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 

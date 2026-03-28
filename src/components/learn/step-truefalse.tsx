@@ -18,6 +18,8 @@ import {
   useTransform,
   type PanInfo,
 } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface TrueFalseCard {
   statement: string;
@@ -28,6 +30,7 @@ interface TrueFalseCard {
 interface StepTrueFalseProps {
   title: string;
   body?: string;
+  glossar?: GlossarEntry[];
   cards: TrueFalseCard[];
   onNext: (correct: boolean) => void;
 }
@@ -35,6 +38,7 @@ interface StepTrueFalseProps {
 export function StepTrueFalse({
   title,
   body,
+  glossar,
   cards,
   onNext,
 }: StepTrueFalseProps) {
@@ -114,7 +118,9 @@ export function StepTrueFalse({
       <h2 className="text-2xl font-bold">{title}</h2>
 
       {body && (
-        <p className="leading-relaxed whitespace-pre-line">{body}</p>
+        <p className="leading-relaxed whitespace-pre-line">
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
+        </p>
       )}
 
       <p className="text-sm" style={{ color: "#6e6e73" }}>

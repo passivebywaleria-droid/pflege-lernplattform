@@ -15,6 +15,8 @@
 
 import { useState, useCallback, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface MatchingPair {
   left: string;
@@ -26,6 +28,7 @@ interface StepMatchingProps {
   body?: string;
   fragetext: string;
   pairs: MatchingPair[];
+  glossar?: GlossarEntry[];
   onNext: (correct: boolean) => void;
 }
 
@@ -43,6 +46,7 @@ export function StepMatching({
   body,
   fragetext,
   pairs,
+  glossar,
   onNext,
 }: StepMatchingProps) {
   const [selectedLeft, setSelectedLeft] = useState<number | null>(null);
@@ -141,7 +145,9 @@ export function StepMatching({
       <h2 className="text-2xl font-bold">{title}</h2>
 
       {body && (
-        <p className="leading-relaxed whitespace-pre-line">{body}</p>
+        <p className="leading-relaxed whitespace-pre-line">
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
+        </p>
       )}
 
       <p className="text-lg font-semibold">{fragetext}</p>

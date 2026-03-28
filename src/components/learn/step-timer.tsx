@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface TimerQuestion {
   question: string;
@@ -12,6 +14,7 @@ interface TimerQuestion {
 interface StepTimerProps {
   title: string;
   body?: string;
+  glossar?: GlossarEntry[];
   questions: TimerQuestion[];
   timeLimitSeconds?: number;
   onNext: (correct: boolean) => void;
@@ -20,6 +23,7 @@ interface StepTimerProps {
 export function StepTimer({
   title,
   body,
+  glossar,
   questions,
   timeLimitSeconds = 60,
   onNext,
@@ -68,7 +72,7 @@ export function StepTimer({
         </h2>
         {body && (
           <p className="text-[#1d1d1f]/70">
-            {body}
+            <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
           </p>
         )}
         <div className="rounded-2xl bg-[#FF3B30]/10 border border-[#FF3B30]/30 p-6">

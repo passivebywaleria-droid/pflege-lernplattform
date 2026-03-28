@@ -2,12 +2,15 @@
 
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepSortingProps {
   title: string;
   body?: string;
   fragetext: string;
   items: string[];
+  glossar?: GlossarEntry[];
   onNext: (correct: boolean) => void;
 }
 
@@ -16,6 +19,7 @@ export function StepSorting({
   body,
   fragetext,
   items,
+  glossar,
   onNext,
 }: StepSortingProps) {
   const [order, setOrder] = useState(() => {
@@ -63,7 +67,7 @@ export function StepSorting({
 
       {body && (
         <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
-          {body}
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 

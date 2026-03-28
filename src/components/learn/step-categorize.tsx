@@ -2,6 +2,8 @@
 
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface Category {
   name: string;
@@ -17,6 +19,7 @@ interface StepCategorizeProps {
   body?: string;
   categories: Category[];
   items: CategoryItem[];
+  glossar?: GlossarEntry[];
   onNext: (correct: boolean) => void;
 }
 
@@ -58,6 +61,7 @@ export function StepCategorize({
   body,
   categories,
   items,
+  glossar,
   onNext,
 }: StepCategorizeProps) {
   const shuffled = useRef([...items].sort(() => Math.random() - 0.5));
@@ -101,7 +105,7 @@ export function StepCategorize({
 
       {body && (
         <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
-          {body}
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 

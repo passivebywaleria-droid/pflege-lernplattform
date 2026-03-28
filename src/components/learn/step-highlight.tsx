@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface TextSegment {
   text: string;
@@ -13,6 +15,7 @@ interface StepHighlightProps {
   title: string;
   body?: string;
   segments: TextSegment[];
+  glossar?: GlossarEntry[];
   onNext: (correct: boolean) => void;
 }
 
@@ -20,6 +23,7 @@ export function StepHighlight({
   title,
   body,
   segments,
+  glossar,
   onNext,
 }: StepHighlightProps) {
   const [marked, setMarked] = useState<Set<number>>(new Set());
@@ -54,7 +58,7 @@ export function StepHighlight({
 
       {body && (
         <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
-          {body}
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 

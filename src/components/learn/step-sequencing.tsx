@@ -2,11 +2,13 @@
 
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import type { SequencingItem } from "../../../content/ce-05/_types";
+import type { SequencingItem, GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepSequencingProps {
   title: string;
   body?: string;
+  glossar?: GlossarEntry[];
   instruction: string;
   items: SequencingItem[];
   onNext: (correct: boolean) => void;
@@ -15,6 +17,7 @@ interface StepSequencingProps {
 export function StepSequencing({
   title,
   body,
+  glossar,
   instruction,
   items,
   onNext,
@@ -66,7 +69,7 @@ export function StepSequencing({
 
       {body && (
         <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
-          {body}
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 

@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FeedbackText } from "./feedback-text";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface DialogOption {
   text: string;
@@ -28,6 +30,7 @@ interface StepDialogProps {
   body?: string;
   patientName: string;
   phases: DialogPhase[];
+  glossar?: GlossarEntry[];
   onNext: (correct: boolean) => void;
   sprachLevel?: "c1" | "b1";
 }
@@ -48,6 +51,7 @@ export function StepDialog({
   body,
   patientName,
   phases,
+  glossar,
   onNext,
   sprachLevel = "c1",
 }: StepDialogProps) {
@@ -149,7 +153,7 @@ export function StepDialog({
         </h2>
         {body && (
           <p className="mt-2 text-sm text-[#6e6e73] leading-relaxed">
-            {body}
+            <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
           </p>
         )}
       </div>

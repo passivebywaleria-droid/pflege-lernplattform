@@ -1,9 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepSummaryProps {
   title: string;
+  glossar?: GlossarEntry[];
   reflexionText?: string;  // Was der Schüler am Anfang geschrieben hat
   rueckbezug: string;      // "Jetzt weißt du: ..."
   kernaussagen: string[];
@@ -15,6 +18,7 @@ interface StepSummaryProps {
 
 export function StepSummary({
   title,
+  glossar,
   reflexionText,
   rueckbezug,
   kernaussagen,

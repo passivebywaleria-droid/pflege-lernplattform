@@ -14,6 +14,8 @@
 
 import { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface CrosswordWord {
   word: string;
@@ -24,6 +26,7 @@ interface StepCrosswordProps {
   title: string;
   body?: string;
   words: CrosswordWord[];
+  glossar?: GlossarEntry[];
   onNext: (correct: boolean) => void;
 }
 
@@ -306,6 +309,7 @@ export function StepCrossword({
   title,
   body,
   words,
+  glossar,
   onNext,
 }: StepCrosswordProps) {
   const { grid, placed, width, height } = useMemo(() => generateGrid(words), [words]);
@@ -455,7 +459,9 @@ export function StepCrossword({
       <h2 className="text-2xl font-bold">{title}</h2>
 
       {body && (
-        <p className="leading-relaxed whitespace-pre-line">{body}</p>
+        <p className="leading-relaxed whitespace-pre-line">
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
+        </p>
       )}
 
       {/* Grid */}

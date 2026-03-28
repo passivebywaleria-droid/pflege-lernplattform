@@ -2,10 +2,13 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepSliderProps {
   title: string;
   body?: string;
+  glossar?: GlossarEntry[];
   instruction: string;
   unit: string;
   min: number;
@@ -20,6 +23,7 @@ interface StepSliderProps {
 export function StepSlider({
   title,
   body,
+  glossar,
   instruction,
   unit,
   min,
@@ -48,7 +52,7 @@ export function StepSlider({
 
       {body && (
         <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
-          {body}
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 

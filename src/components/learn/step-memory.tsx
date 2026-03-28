@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface MemoryPair {
   a: string;
@@ -11,6 +13,7 @@ interface MemoryPair {
 interface StepMemoryProps {
   title: string;
   body?: string;
+  glossar?: GlossarEntry[];
   pairs: MemoryPair[];
   onNext: (correct: boolean) => void;
 }
@@ -24,6 +27,7 @@ interface MemoryCard {
 export function StepMemory({
   title,
   body,
+  glossar,
   pairs,
   onNext,
 }: StepMemoryProps) {
@@ -96,7 +100,7 @@ export function StepMemory({
 
       {body && (
         <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
-          {body}
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 

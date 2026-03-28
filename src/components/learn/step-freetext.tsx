@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepFreetextProps {
   title: string;
@@ -10,6 +12,7 @@ interface StepFreetextProps {
   musterantwort?: string;
   bewertungskriterien?: string[];
   satzanfaengeB1?: string[];
+  glossar?: GlossarEntry[];
   onNext: (correct: boolean) => void;
 }
 
@@ -20,6 +23,7 @@ export function StepFreetext({
   musterantwort,
   bewertungskriterien,
   satzanfaengeB1,
+  glossar,
   onNext,
 }: StepFreetextProps) {
   const [text, setText] = useState("");
@@ -39,7 +43,7 @@ export function StepFreetext({
 
       {body && (
         <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
-          {body}
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 

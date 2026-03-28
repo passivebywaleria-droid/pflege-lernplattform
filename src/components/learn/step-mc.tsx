@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface MCOption {
   text: string;
@@ -15,6 +17,7 @@ interface StepMCProps {
   fragetext: string;
   optionen: MCOption[];
   multiSelect?: boolean;
+  glossar?: GlossarEntry[];
   onNext: (correct: boolean) => void;
 }
 
@@ -24,6 +27,7 @@ export function StepMC({
   fragetext,
   optionen,
   multiSelect,
+  glossar,
   onNext,
 }: StepMCProps) {
   const [selected, setSelected] = useState<number[]>([]);
@@ -60,7 +64,7 @@ export function StepMC({
 
       {body && (
         <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
-          {body}
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 

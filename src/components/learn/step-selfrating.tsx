@@ -2,11 +2,14 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepSelfratingProps {
   title: string;
   body: string;
   fragetext: string;
+  glossar?: GlossarEntry[];
   onNext: (rating: number) => void;
 }
 
@@ -22,6 +25,7 @@ export function StepSelfrating({
   title,
   body,
   fragetext,
+  glossar,
   onNext,
 }: StepSelfratingProps) {
   const [rating, setRating] = useState<number | null>(null);
@@ -35,7 +39,7 @@ export function StepSelfrating({
       <div className="space-y-4 text-[#1d1d1f]/80 leading-relaxed">
         {body.split("\n\n").map((p, i) => (
           <p key={i} className="whitespace-pre-line">
-            {p}
+            <FachbegriffText glossar={glossar ?? []}>{p}</FachbegriffText>
           </p>
         ))}
       </div>

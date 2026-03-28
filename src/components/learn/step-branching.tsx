@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface BranchingOption {
   text: string;
@@ -14,6 +16,7 @@ interface StepBranchingProps {
   body: string;
   fragetext: string;
   options: BranchingOption[];
+  glossar?: GlossarEntry[];
   onNext: (correct: boolean) => void;
 }
 
@@ -22,6 +25,7 @@ export function StepBranching({
   body,
   fragetext,
   options,
+  glossar,
   onNext,
 }: StepBranchingProps) {
   const [selected, setSelected] = useState<number | null>(null);
@@ -37,7 +41,7 @@ export function StepBranching({
           💬 Situation
         </p>
         <p className="text-[#1d1d1f] leading-relaxed italic">
-          &ldquo;{body}&rdquo;
+          &ldquo;<FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>&rdquo;
         </p>
       </div>
 

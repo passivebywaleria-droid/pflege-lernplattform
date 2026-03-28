@@ -3,6 +3,8 @@
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence, type PanInfo } from "framer-motion";
 import { TtsButton } from "./tts-button";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepTextProps {
   title: string;
@@ -13,6 +15,7 @@ interface StepTextProps {
   imageAlt?: string;
   wusstestDuDas?: string;
   carousel?: boolean;
+  glossar?: GlossarEntry[];
   onNext: () => void;
 }
 
@@ -161,6 +164,7 @@ export function StepText({
   imageAlt,
   wusstestDuDas,
   carousel,
+  glossar,
   onNext,
 }: StepTextProps) {
   const [showFunFact, setShowFunFact] = useState(false);
@@ -204,7 +208,7 @@ export function StepText({
                 ))}
               </ul>
             ) : (
-              <p className="whitespace-pre-line">{paragraph}</p>
+              <p className="whitespace-pre-line"><FachbegriffText glossar={glossar ?? []}>{paragraph}</FachbegriffText></p>
             )}
           </div>
         ))}

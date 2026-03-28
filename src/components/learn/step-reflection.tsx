@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepReflectionProps {
   title: string;
@@ -9,6 +11,7 @@ interface StepReflectionProps {
   prompt: string;
   placeholder: string;
   systemPrompt: string;
+  glossar?: GlossarEntry[];
   onNext: () => void;
   onTextSubmit?: (text: string) => void;
 }
@@ -19,6 +22,7 @@ export function StepReflection({
   prompt,
   placeholder,
   systemPrompt,
+  glossar,
   onNext,
   onTextSubmit,
 }: StepReflectionProps) {
@@ -75,7 +79,7 @@ export function StepReflection({
 
       {body && (
         <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
-          {body}
+          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 
