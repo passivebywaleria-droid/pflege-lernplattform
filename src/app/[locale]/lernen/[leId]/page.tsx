@@ -3,7 +3,7 @@
 import { useState, useCallback, useRef, useEffect } from "react";
 import { useParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { loadLektion, getLektionManifest, loadSession, getAvailableSessions } from "@/lib/content-loader";
+import { loadLektion, getLektionManifest, loadSession, getAvailableSessions, BLOCK_LABELS } from "@/lib/content-loader";
 import type { SessionNumber } from "@/lib/content-loader";
 import type { ContentStep, GlossarEntry, LektionMetadata, ErlebnisModus } from "../../../../../content/ce-05/_types";
 import { kategorisiereFehler } from "@/lib/adaptive/fehler-analyse";
@@ -88,6 +88,8 @@ export default function LernenPage() {
   const [adaptiveReason, setAdaptiveReason] = useState<string | null>(null);
   const [completionEmpfehlungen, setCompletionEmpfehlungen] = useState<ReturnType<typeof getSessionEmpfehlungen>>([]);
   const [pingCount, setPingCount] = useState(0);
+  const [showLeDrawer, setShowLeDrawer] = useState(false);
+  const allLektionen = getAllLektionen();
 
   // Ping-Count berechnen
   useEffect(() => {
@@ -634,26 +636,51 @@ export default function LernenPage() {
       {/* Top Bar */}
       <div className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-[#d2d2d7]/50">
         <div className="mx-auto max-w-2xl px-4 py-3">
-          {/* Session Tabs (nur wenn mehrere Sessions verfuegbar) */}
-          {availableSessions.length > 1 && (
-            <div className="flex gap-1 mb-2 p-0.5 rounded-xl bg-[#f5f5f7]">
-              {availableSessions.map((s) => (
-                <button
-                  key={s}
-                  onClick={() => switchSession(s)}
-                  className={`flex-1 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all ${
-                    activeSession === s
-                      ? "bg-white text-[#1d1d1f] shadow-sm"
-                      : "text-[#86868b] active:opacity-60"
-                  }`}
-                >
-                  S{s}: {SESSION_LABELS[s]}
-                </button>
-              ))}
-            </div>
-          )}
+          {/* Breadcrumb: CE > LE > Session */}
+          <div className="flex items-center gap-1 mb-2 text-xs">
+            <button
+              onClick={() => setShowLeDrawer(true)}
+              className="font-medium text-[#0071e3] active:opacity-60 truncate max-w-[80px]"
+            >
+              CE 05
+            </button>
+            <span className="text-[#86868b]">›</span>
+            <button
+              onClick={() => setShowLeDrawer(true)}
+              className="font-medium text-[#0071e3] active:opacity-60 truncate max-w-[140px]"
+            >
+              {metadata?.titleShort ?? leId}
+            </button>
+            <span className="text-[#86868b]">›</span>
+            {availableSessions.length > 1 ? (
+              <div className="flex gap-1">
+                {availableSessions.map((s) => (
+                  <button
+                    key={s}
+                    onClick={() => switchSession(s)}
+                    className={`rounded-full px-2 py-0.5 text-xs font-semibold transition-all ${
+                      activeSession === s
+                        ? "bg-[#0071e3] text-white"
+                        : "text-[#86868b] active:opacity-60"
+                    }`}
+                  >
+                    S{s}
+                  </button>
+                ))}
+              </div>
+            ) : (
+              <span className="text-[#1d1d1f] font-semibold">S{activeSession}</span>
+            )}
+            <div className="flex-1" />
+            <button
+              onClick={() => setShowGlossar(!showGlossar)}
+              className="text-xs font-medium text-[#0071e3] active:opacity-60 shrink-0"
+            >
+              Glossar
+            </button>
+          </div>
 
-          <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center justify-between mb-1">
             <div className="flex items-center gap-2">
               {currentStep > 0 && (
                 <button
@@ -667,10 +694,10 @@ export default function LernenPage() {
               <StreakBadge streak={streak} />
             </div>
             <button
-              onClick={() => setShowGlossar(!showGlossar)}
-              className="text-xs font-medium text-[#0071e3] active:opacity-60"
+              onClick={() => setShowStepNav(true)}
+              className="text-[10px] text-[#0071e3] font-medium active:opacity-60"
             >
-              Glossar
+              {currentStep + 1} / {steps.length}
             </button>
           </div>
 
@@ -683,12 +710,6 @@ export default function LernenPage() {
               transition={{ ease: [0.4, 0, 0.2, 1], duration: 0.35 }}
             />
           </div>
-          <button
-            onClick={() => setShowStepNav(true)}
-            className="text-[10px] text-[#0071e3] font-medium text-right mt-1 w-full active:opacity-60"
-          >
-            {currentStep + 1} / {steps.length} — Alle Steps
-          </button>
         </div>
       </div>
 
@@ -731,6 +752,92 @@ export default function LernenPage() {
                   ))}
                 </div>
               )}
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* LE-Drawer: Curriculum-Navigation */}
+      <AnimatePresence>
+        {showLeDrawer && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm"
+            onClick={() => setShowLeDrawer(false)}
+          >
+            <motion.div
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "100%" }}
+              transition={{ type: "spring", damping: 25 }}
+              onClick={(e) => e.stopPropagation()}
+              className="absolute bottom-0 left-0 right-0 max-h-[80vh] overflow-y-auto rounded-t-3xl bg-white p-6"
+            >
+              <div className="mx-auto mb-4 h-1 w-12 rounded-full bg-[#d2d2d7]" />
+              <h3 className="text-lg font-bold mb-1 text-[#1d1d1f]">
+                CE 05 — Rheumatische Erkrankungen
+              </h3>
+              <p className="text-xs text-[#86868b] mb-4">
+                {allLektionen.filter((l) => l.status === "fertig").length}/{allLektionen.length} Lerneinheiten verfügbar
+              </p>
+
+              {/* LEs gruppiert nach Blöcken */}
+              {Object.entries(BLOCK_LABELS).map(([blockKey, blockLabel]) => {
+                const blockLes = allLektionen.filter((l) => l.block === blockKey);
+                if (blockLes.length === 0) return null;
+                return (
+                  <div key={blockKey} className="mb-4">
+                    <p className="text-[10px] font-semibold text-[#86868b] uppercase tracking-wider mb-1.5">
+                      Block {blockKey}: {blockLabel}
+                    </p>
+                    <div className="space-y-1">
+                      {blockLes.map((le) => {
+                        const isCurrent = le.leId === leId;
+                        const hasContent = le.status === "fertig";
+                        return (
+                          <a
+                            key={le.leId}
+                            href={hasContent ? `/de/lernen/${le.leId}` : undefined}
+                            onClick={(e) => {
+                              if (!hasContent) { e.preventDefault(); return; }
+                              setShowLeDrawer(false);
+                            }}
+                            className={`flex items-center gap-3 rounded-xl p-3 transition-all ${
+                              isCurrent
+                                ? "bg-[#0071e3]/10 border border-[#0071e3]/20"
+                                : hasContent
+                                  ? "bg-[#f5f5f7] active:scale-[0.98]"
+                                  : "bg-[#f5f5f7] opacity-50 cursor-not-allowed"
+                            }`}
+                          >
+                            <div className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ${
+                              isCurrent
+                                ? "bg-[#0071e3] text-white"
+                                : hasContent
+                                  ? "bg-[#30D158] text-white"
+                                  : "bg-[#d2d2d7] text-white"
+                            }`}>
+                              {isCurrent ? "●" : hasContent ? "✓" : le.order}
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <p className={`text-sm font-medium truncate ${
+                                isCurrent ? "text-[#0071e3]" : "text-[#1d1d1f]"
+                              }`}>
+                                LE {String(le.order).padStart(2, "0")}: {le.titleShort}
+                              </p>
+                              <p className="text-[10px] text-[#86868b]">
+                                ~{le.estimatedMinC1} Min · {le.ueCount} UE
+                              </p>
+                            </div>
+                          </a>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
             </motion.div>
           </motion.div>
         )}

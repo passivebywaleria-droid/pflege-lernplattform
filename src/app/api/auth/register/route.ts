@@ -3,7 +3,7 @@ import { db } from "@/lib/db"
 import { users } from "@/lib/db/schema"
 import { hashPassword } from "@/lib/auth/password"
 import { createSession } from "@/lib/auth/session"
-import { registerSchema } from "@/lib/auth/validation"
+import { registerSchema, mapRoleToDb } from "@/lib/auth/validation"
 import { eq } from "drizzle-orm"
 
 export async function POST(request: NextRequest) {
@@ -18,7 +18,8 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const { email, password, name, language } = parsed.data
+    const { email, password, name, language, role: uiRole, schoolCode } = parsed.data
+    const dbRole = mapRoleToDb(uiRole || "schueler")
 
     // Check if user exists
     const existing = await db
@@ -43,7 +44,8 @@ export async function POST(request: NextRequest) {
         passwordHash,
         name,
         language,
-        role: "student",
+        role: dbRole,
+        // schoolCode wird später für Schul-Zuordnung genutzt (Sprint 2)
       })
       .returning({ id: users.id, role: users.role, schoolId: users.schoolId })
 

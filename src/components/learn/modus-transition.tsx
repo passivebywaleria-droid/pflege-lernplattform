@@ -16,13 +16,13 @@ const MODUS_CONFIG: Record<
   challenge: {
     icon: "⚡",
     label: "Challenge",
-    slogan: "Zeig was du weisst",
+    slogan: "Zeig was du weißt",
     farbe: "#FF9500",
   },
   puzzle: {
     icon: "🧩",
     label: "Puzzle",
-    slogan: "Zusammenhaenge entdecken",
+    slogan: "Zusammenhänge entdecken",
     farbe: "#AF52DE",
   },
   entdecker: {

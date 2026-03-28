@@ -76,6 +76,7 @@ export async function middleware(request: NextRequest) {
     if (
       pathWithoutLocale.startsWith("/teacher") &&
       payload.role !== "teacher" &&
+      payload.role !== "principal" &&
       payload.role !== "admin"
     ) {
       return NextResponse.redirect(new URL("/home", request.url))

@@ -18,7 +18,7 @@ const BLOCK_COLORS: Record<string, string> = {
 };
 
 const STATUS_CONFIG: Record<string, { label: string; opacity: string; badge: string }> = {
-  fertig: { label: "Verfuegbar", opacity: "opacity-100", badge: "bg-[#30D158] text-white" },
+  fertig: { label: "Verfügbar", opacity: "opacity-100", badge: "bg-[#30D158] text-white" },
   entwurf: { label: "Entwurf", opacity: "opacity-70", badge: "bg-[#FF9500] text-white" },
   geplant: { label: "In Planung", opacity: "opacity-50", badge: "bg-[#86868b] text-white" },
 };

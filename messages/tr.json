@@ -37,7 +37,13 @@
     "loginSuccess": "Giriş başarılı",
     "registerSuccess": "Kayıt başarılı",
     "loginError": "E-posta veya şifre yanlış",
-    "registerError": "Kayıt başarısız"
+    "registerError": "Kayıt başarısız",
+    "role": "Ben...",
+    "roleStudent": "Öğrenci",
+    "roleTeacher": "Öğretmen",
+    "rolePrincipal": "Okul Müdürü",
+    "schoolCode": "Okul Kodu",
+    "schoolCodePlaceholder": "Okulunuzdan alabilirsiniz"
   },
   "landing": {
     "hero": "Hemşirelik öğren — istediğin zaman, istediğin yerde",

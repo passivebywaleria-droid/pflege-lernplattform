@@ -6,7 +6,7 @@ const EXPIRY = "7d"
 
 export interface SessionPayload {
   userId: string
-  role: "student" | "teacher" | "admin"
+  role: "student" | "teacher" | "principal" | "admin"
   schoolId: string | null
   locale: "de" | "ar" | "tr"
 }

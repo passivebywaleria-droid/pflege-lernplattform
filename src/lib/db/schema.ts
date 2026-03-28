@@ -19,6 +19,7 @@ import { relations } from "drizzle-orm"
 export const userRoleEnum = pgEnum("user_role", [
   "student",
   "teacher",
+  "principal",
   "admin",
 ])
 

@@ -10,6 +10,12 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
+const ROLE_OPTIONS = [
+  { value: "schueler" as const, labelKey: "roleStudent", icon: "🎓" },
+  { value: "lehrer" as const, labelKey: "roleTeacher", icon: "👩‍🏫" },
+  { value: "schulleiter" as const, labelKey: "rolePrincipal", icon: "🏫" },
+]
+
 export function RegisterForm() {
   const t = useTranslations("auth")
   const router = useRouter()
@@ -18,13 +24,18 @@ export function RegisterForm() {
   const {
     register,
     handleSubmit,
+    watch,
+    setValue,
     formState: { errors, isSubmitting },
   } = useForm<RegisterInput>({
     resolver: zodResolver(registerSchema),
     defaultValues: {
       language: "de",
+      role: "schueler",
     },
   })
+
+  const selectedRole = watch("role") || "schueler"
 
   async function onSubmit(data: RegisterInput) {
     setError(null)
@@ -49,7 +60,30 @@ export function RegisterForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+      {/* Rollenwahl */}
+      <div className="space-y-2">
+        <Label>{t("role")}</Label>
+        <div className="grid grid-cols-3 gap-2">
+          {ROLE_OPTIONS.map((option) => (
+            <button
+              key={option.value}
+              type="button"
+              onClick={() => setValue("role", option.value)}
+              className={`flex flex-col items-center gap-1 rounded-xl border-2 p-3 text-center transition-all ${
+                selectedRole === option.value
+                  ? "border-primary bg-primary/5 shadow-sm"
+                  : "border-border hover:border-primary/30"
+              }`}
+            >
+              <span className="text-xl">{option.icon}</span>
+              <span className="text-xs font-semibold">{t(option.labelKey)}</span>
+            </button>
+          ))}
+        </div>
+        <input type="hidden" {...register("role")} />
+      </div>
+
       <div className="space-y-2">
         <Label htmlFor="name">{t("name")}</Label>
         <Input
@@ -88,6 +122,19 @@ export function RegisterForm() {
           <p className="text-sm text-destructive">{errors.password.message}</p>
         )}
       </div>
+
+      {/* Schulcode (optional, für Lehrer/Schulleiter) */}
+      {(selectedRole === "lehrer" || selectedRole === "schulleiter") && (
+        <div className="space-y-2">
+          <Label htmlFor="schoolCode">{t("schoolCode")}</Label>
+          <Input
+            id="schoolCode"
+            type="text"
+            placeholder={t("schoolCodePlaceholder")}
+            {...register("schoolCode")}
+          />
+        </div>
+      )}
 
       {error && (
         <p className="text-sm text-destructive">{error}</p>

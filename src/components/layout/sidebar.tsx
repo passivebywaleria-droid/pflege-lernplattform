@@ -19,7 +19,7 @@ const teacherNav = [
   { key: "reports" as const, href: "/teacher/reports", icon: ChartIcon },
 ]
 
-export function Sidebar({ role }: { role: "student" | "teacher" | "admin" }) {
+export function Sidebar({ role }: { role: "student" | "teacher" | "principal" | "admin" }) {
   const t = useTranslations("nav")
   const pathname = usePathname()
   const nav = role === "student" ? studentNav : teacherNav

@@ -37,7 +37,13 @@
     "loginSuccess": "تم تسجيل الدخول بنجاح",
     "registerSuccess": "تم إنشاء الحساب بنجاح",
     "loginError": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
-    "registerError": "فشل إنشاء الحساب"
+    "registerError": "فشل إنشاء الحساب",
+    "role": "أنا...",
+    "roleStudent": "طالب/ة",
+    "roleTeacher": "معلم/ة",
+    "rolePrincipal": "إدارة المدرسة",
+    "schoolCode": "رمز المدرسة",
+    "schoolCodePlaceholder": "تحصل عليه من مدرستك"
   },
   "landing": {
     "hero": "تعلّم التمريض — في أي وقت وأي مكان",
