@@ -114,5 +114,28 @@ export function getAllLektionen(): LektionManifest[] {
  * Gibt Manifest-Eintrag fuer eine leId zurueck.
  */
 export function getLektionManifest(leId: string): LektionManifest | undefined {
-  return findLektion(leId);
+  const found = findLektion(leId);
+  if (found) return found;
+  // Fallback: LE existiert in CONTENT_LOADERS aber nicht in CE05_MANIFEST
+  if (CONTENT_LOADERS[leId]) {
+    return {
+      leId,
+      ceId: "ce-01",
+      block: "A",
+      order: 1,
+      title: leId,
+      titleShort: leId,
+      ueCount: 80,
+      estimatedSteps: 22,
+      estimatedMinC1: 45,
+      estimatedMinB1: 60,
+      kompetenzbereiche: ["I"],
+      bloomRange: [1, 4],
+      pruefungsrelevanz: "hoch",
+      voraussetzungen: [],
+      status: "fertig",
+      inhaltspunkte: [1, 2, 3],
+    } as LektionManifest;
+  }
+  return undefined;
 }
