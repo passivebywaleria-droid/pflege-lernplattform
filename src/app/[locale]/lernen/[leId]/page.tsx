@@ -192,6 +192,12 @@ export default function LernenPage() {
         setGlossar(data.glossar);
       }
       setLoading(false);
+    }).catch((err) => {
+      console.error("loadLektion failed:", err);
+      if (!cancelled) {
+        setNotFound(true);
+        setLoading(false);
+      }
     });
 
     return () => { cancelled = true; };
