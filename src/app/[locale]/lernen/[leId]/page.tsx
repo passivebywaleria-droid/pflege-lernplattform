@@ -38,9 +38,13 @@ import { StepFlipCard } from "@/components/learn/step-flipcard";
 import { StepReveal } from "@/components/learn/step-reveal";
 import { StepTimeline } from "@/components/learn/step-timeline";
 import { StepComparison } from "@/components/learn/step-comparison";
+import { StepLabelImage } from "@/components/learn/step-label-image";
+import { StepDiagram } from "@/components/learn/step-diagram";
+import { StepImageInteraction } from "@/components/learn/step-image-interaction";
 import { KiChat } from "@/components/learn/ki-chat";
 import { StreakBadge } from "@/components/learn/streak-badge";
 import { Confetti } from "@/components/learn/confetti";
+import { FeedbackOverlay } from "@/components/learn/lottie-feedback";
 import { ModusTransition, MODUS_CONFIG } from "@/components/learn/modus-transition";
 import { useLernFortschritt } from "@/hooks/use-lern-fortschritt";
 
@@ -73,6 +77,12 @@ export default function LernenPage() {
   const [sprachLevel, setSprachLevel] = useState<"c1" | "b1">("c1");
   const [showModusTransition, setShowModusTransition] = useState(false);
   const [currentModus, setCurrentModus] = useState<ErlebnisModus | null>(null);
+  // Lottie-Feedback bei richtig/falsch
+  const [feedbackType, setFeedbackType] = useState<"correct" | "wrong" | null>(null);
+  // Track-System: basis (Pflicht) vs. all (inkl. Vertiefung)
+  const [activeTrack, setActiveTrack] = useState<"basis" | "all">("all");
+  const [showVertiefungPrompt, setShowVertiefungPrompt] = useState(false);
+  const allStepsRef = useRef<ContentStep[]>([]);
   // Antwort-History für Zurück-Navigation
   const [answerHistory, setAnswerHistory] = useState<Record<number, { correct: boolean | null; answered: boolean }>>({});
   const [isReviewMode, setIsReviewMode] = useState(false);
@@ -116,7 +126,45 @@ export default function LernenPage() {
     1: "Einstieg",
     2: "Vertiefung",
     3: "Transfer",
+    4: "Anwendung",
+    5: "Theorien",
+    6: "Evidenz",
+    7: "Abschluss",
+    8: "Prüfung",
   };
+
+  // Track-Filter: Filtert Steps nach aktuellem Track
+  const filterByTrack = useCallback((allSteps: ContentStep[], track: "basis" | "all"): ContentStep[] => {
+    if (track === "all") return allSteps;
+    // Alte Steps ohne track-Feld werden als "basis" behandelt
+    return allSteps.filter((s) => !s.track || s.track === "basis");
+  }, []);
+
+  // Track umschalten → Steps neu filtern, Position beibehalten
+  const toggleTrack = useCallback((newTrack: "basis" | "all") => {
+    setActiveTrack(newTrack);
+    const filtered = filterByTrack(allStepsRef.current, newTrack);
+    setSteps(filtered);
+    // Position anpassen falls nötig
+    if (currentStep >= filtered.length) {
+      setCurrentStep(Math.max(0, filtered.length - 1));
+    }
+    setShowVertiefungPrompt(false);
+  }, [filterByTrack, currentStep]);
+
+  // Adaptiver Vertiefungs-Prompt: Nach 3+ richtigen Antworten in Folge
+  // Nur anzeigen wenn Track=basis UND es Vertiefungs-Steps gibt
+  useEffect(() => {
+    if (activeTrack !== "basis") return;
+    if (streak < 3) return;
+    // Prüfe ob es Vertiefungs-Steps in den unfiltered Steps gibt
+    const hasVertiefung = allStepsRef.current.some((s) => s.track === "vertiefung");
+    if (!hasVertiefung) return;
+    // Nur einmal pro Session zeigen
+    if (!showVertiefungPrompt) {
+      setShowVertiefungPrompt(true);
+    }
+  }, [streak, activeTrack, showVertiefungPrompt]);
 
   // Lektion + Sessions laden
   useEffect(() => {
@@ -138,7 +186,8 @@ export default function LernenPage() {
       if (!data) {
         setNotFound(true);
       } else {
-        setSteps(data.steps);
+        allStepsRef.current = data.steps;
+        setSteps(filterByTrack(data.steps, activeTrack));
         setMetadata(data.metadata);
         setGlossar(data.glossar);
       }
@@ -162,11 +211,12 @@ export default function LernenPage() {
 
     loadSession(leId, session).then((sessionSteps) => {
       if (sessionSteps) {
-        setSteps(sessionSteps);
+        allStepsRef.current = sessionSteps;
+        setSteps(filterByTrack(sessionSteps, activeTrack));
       }
       setLoading(false);
     });
-  }, [leId]);
+  }, [leId, activeTrack, filterByTrack]);
 
   const step = adaptiveStep ?? activeRetryStep ?? steps[currentStep];
   const progress = steps.length > 0 ? ((currentStep + 1) / steps.length) * 100 : 0;
@@ -345,6 +395,8 @@ export default function LernenPage() {
 
       if (correct !== undefined) {
         setTotalQuestions((t) => t + 1);
+        // Lottie-Feedback triggern
+        setFeedbackType(correct ? "correct" : "wrong");
 
         if (correct) {
           setScore((s) => s + 1);
@@ -606,7 +658,7 @@ export default function LernenPage() {
               >
                 Nochmal
               </button>
-              {activeSession < 3 && availableSessions.includes((activeSession + 1) as SessionNumber) ? (
+              {availableSessions.includes((activeSession + 1) as SessionNumber) ? (
                 <button
                   onClick={() => switchSession((activeSession + 1) as SessionNumber)}
                   className="flex-1 rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
@@ -672,6 +724,19 @@ export default function LernenPage() {
               <span className="text-[#1d1d1f] font-semibold">S{activeSession}</span>
             )}
             <div className="flex-1" />
+            {/* Track-Badge (nur wenn Vertiefungs-Steps existieren) */}
+            {allStepsRef.current.some((s) => s.track === "vertiefung") && (
+              <button
+                onClick={() => toggleTrack(activeTrack === "all" ? "basis" : "all")}
+                className={`text-[10px] font-semibold px-2 py-0.5 rounded-full mr-2 transition-colors ${
+                  activeTrack === "all"
+                    ? "bg-[#AF52DE]/10 text-[#AF52DE]"
+                    : "bg-[#f5f5f7] text-[#86868b]"
+                }`}
+              >
+                {activeTrack === "all" ? "Alle Steps" : "Basis"}
+              </button>
+            )}
             <button
               onClick={() => setShowGlossar(!showGlossar)}
               className="text-xs font-medium text-[#0071e3] active:opacity-60 shrink-0"
@@ -924,6 +989,44 @@ export default function LernenPage() {
         )}
       </AnimatePresence>
 
+      {/* Vertiefungs-Prompt (adaptiv nach 3+ richtigen Antworten) */}
+      <AnimatePresence>
+        {showVertiefungPrompt && activeTrack === "basis" && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="mx-auto max-w-2xl px-4 pt-4"
+          >
+            <div className="rounded-2xl bg-[#AF52DE]/5 border border-[#AF52DE]/20 p-4 flex items-center gap-3">
+              <span className="text-2xl shrink-0">⚡</span>
+              <div className="flex-1">
+                <p className="text-sm font-semibold text-[#1d1d1f]">
+                  Läuft bei dir! Mehr Herausforderung?
+                </p>
+                <p className="text-xs text-[#6e6e73] mt-0.5">
+                  Es gibt Bonus-Aufgaben für Fortgeschrittene.
+                </p>
+              </div>
+              <div className="flex gap-2 shrink-0">
+                <button
+                  onClick={() => setShowVertiefungPrompt(false)}
+                  className="text-xs text-[#6e6e73] px-3 py-1.5 rounded-full active:opacity-60"
+                >
+                  Nein
+                </button>
+                <button
+                  onClick={() => toggleTrack("all")}
+                  className="text-xs font-semibold text-white bg-[#AF52DE] px-3 py-1.5 rounded-full active:scale-95"
+                >
+                  Ja!
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Step Content */}
       <div className="mx-auto max-w-2xl px-4 py-6">
         {/* Review-Modus Banner */}
@@ -995,6 +1098,9 @@ export default function LernenPage() {
 
       {/* Confetti bei Session-Ende */}
       <Confetti active={showConfetti} />
+
+      {/* Lottie-Feedback bei richtig/falsch */}
+      <FeedbackOverlay type={feedbackType} onDone={() => setFeedbackType(null)} />
 
       {/* KI-Chat Floating Button */}
       {metadata && (
@@ -1406,6 +1512,54 @@ function StepRenderer({
           columns={step.question.comparison.columns}
           rows={step.question.comparison.rows}
           sprachLevel={sprachLevel}
+          onNext={() => onNext()}
+        />
+      );
+
+    case "labelImage":
+      if (!step.question?.labelImage) return null;
+      return (
+        <StepLabelImage
+          title={content.title}
+          body={content.body || undefined}
+          imageUrl={step.question.labelImage.imageUrl}
+          imageAlt={step.question.labelImage.imageAlt}
+          instruction={step.question.labelImage.instruction}
+          labels={step.question.labelImage.labels}
+          mode={step.question.labelImage.mode}
+          glossar={glossar}
+          onNext={(correct) => onNext(correct)}
+        />
+      );
+
+    case "diagram":
+      if (!step.question?.diagram) return null;
+      return (
+        <StepDiagram
+          title={content.title}
+          body={content.body || undefined}
+          instruction={step.question.diagram.instruction}
+          diagramType={step.question.diagram.diagramType}
+          nodes={step.question.diagram.nodes}
+          edges={step.question.diagram.edges}
+          interactive={step.question.diagram.interactive}
+          glossar={glossar}
+          onNext={() => onNext()}
+        />
+      );
+
+    case "imageInteraction":
+      if (!step.question?.imageInteraction) return null;
+      return (
+        <StepImageInteraction
+          title={content.title}
+          body={content.body || undefined}
+          instruction={step.question.imageInteraction.instruction}
+          interactionType={step.question.imageInteraction.interactionType}
+          beforeAfter={step.question.imageInteraction.beforeAfter}
+          layerReveal={step.question.imageInteraction.layerReveal}
+          zoomPan={step.question.imageInteraction.zoomPan}
+          glossar={glossar}
           onNext={() => onNext()}
         />
       );

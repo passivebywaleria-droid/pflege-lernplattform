@@ -8,7 +8,7 @@ import type { LektionManifest } from "../../content/ce-05/_manifest";
 
 export { BLOCK_LABELS };
 
-export type SessionNumber = 1 | 2 | 3;
+export type SessionNumber = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 
 // Map leId → dynamic import
 // Nur LEs mit tatsaechlichem Content werden eingetragen
@@ -21,6 +21,13 @@ const CONTENT_LOADERS: Record<string, () => Promise<LektionData>> = {
   "le-04-ra-symptome-diagnose": async () => {
     const m = await import("../../content/ce-05/le-04-ra-symptome-diagnose/steps");
     return { steps: m.STEPS, metadata: m.METADATA, glossar: m.GLOSSAR };
+  },
+  "le-01": async () => {
+    const [s1, glossarMod] = await Promise.all([
+      import("../../content/le-01/steps-s1"),
+      import("../../content/le-01/glossar"),
+    ]);
+    return { steps: s1.STEPS_S1, metadata: s1.METADATA, glossar: glossarMod.GLOSSAR } as unknown as LektionData;
   },
 };
 
@@ -45,6 +52,14 @@ const SESSION_LOADERS: Record<string, Record<number, () => Promise<ContentStep[]
       const m = await import("../../content/ce-05/le-04-ra-symptome-diagnose/steps-s3");
       return m.STEPS_S3;
     },
+  },
+  "le-01": {
+    2: async () => (await import("../../content/le-01/steps-s2")).STEPS_S2 as unknown as ContentStep[],
+    3: async () => (await import("../../content/le-01/steps-s3")).STEPS_S3 as unknown as ContentStep[],
+    4: async () => (await import("../../content/le-01/steps-s4")).STEPS_S4 as unknown as ContentStep[],
+    5: async () => (await import("../../content/le-01/steps-s5")).STEPS_S5 as unknown as ContentStep[],
+    6: async () => (await import("../../content/le-01/steps-s6")).stepsS6 as unknown as ContentStep[],
+    7: async () => (await import("../../content/le-01/steps-s7")).STEPS_S7 as unknown as ContentStep[],
   },
 };
 
@@ -78,8 +93,12 @@ export async function loadSession(leId: string, session: SessionNumber): Promise
 export function getAvailableSessions(leId: string): SessionNumber[] {
   const sessions: SessionNumber[] = [];
   if (CONTENT_LOADERS[leId]) sessions.push(1);
-  if (SESSION_LOADERS[leId]?.[2]) sessions.push(2);
-  if (SESSION_LOADERS[leId]?.[3]) sessions.push(3);
+  const loaders = SESSION_LOADERS[leId];
+  if (loaders) {
+    ([2, 3, 4, 5, 6, 7, 8] as SessionNumber[]).forEach((n) => {
+      if (loaders[n]) sessions.push(n);
+    });
+  }
   return sessions;
 }
 
