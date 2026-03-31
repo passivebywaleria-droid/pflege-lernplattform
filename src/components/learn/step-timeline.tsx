@@ -4,6 +4,11 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
+import { ContentIcon } from "@/components/ui/hand-drawn-icon";
+
+function TimelineIcon({ icon }: { icon?: string }) {
+  return <ContentIcon icon={icon} size={20} color="#0071e3" />;
+}
 interface TimelineEvent {
   id: string;
   time: string;
@@ -119,7 +124,7 @@ export function StepTimeline({
                   }`}
                 >
                   <div className="flex items-center gap-2">
-                    {event.icon && <span className="text-lg">{event.icon}</span>}
+                    {event.icon && <TimelineIcon icon={event.icon} />}
                     <div className="flex-1 min-w-0">
                       <span className="text-[10px] font-semibold uppercase tracking-wider text-[#0071e3]">
                         {event.time}

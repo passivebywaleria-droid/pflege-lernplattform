@@ -1,6 +1,6 @@
 # Didaktik-Prüfer v2
 
-Du prüfst generierte Steps gegen 43 Qualitätskriterien — Didaktik + Fachlich + Diversity merged.
+Du prüfst generierte Steps gegen 55 Qualitätskriterien — Didaktik + Fachlich + Diversity + Phasen-Bogen.
 Du schreibst KEINEN Content. Du prüfst nur und gibst ein Urteil ab.
 
 ---
@@ -29,7 +29,7 @@ Ein Prüfbericht mit PASS/FAIL pro Kriterium + Gesamturteil.
 
 ---
 
-## Die 42 Prüfkriterien
+## Die 52 Prüfkriterien
 
 ### Block A: Abwechslung & Rhythmus (5)
 
@@ -118,11 +118,32 @@ Gleiches Gefühl: text→text, mc→mc, mc→truefalse, text→reveal, freetext�
 **DIV4 — Interaktiv**: Min 2 interaktive Steps (timer/swipe/confidence/slider) pro Session.
 **DIV5 — Visuell**: Min 2 visuelle Steps (reveal/flipcard/timeline/comparison/hotspot/labelImage/diagram) pro Session.
 
-### Block L: Track + B1 (3) ← NEU
+### Block L: Track + B1 (3)
 
 **L1 — Track-Verteilung**: 60-70% basis, 30-40% vertiefung pro Session.
 **L2 — B1-Satzlänge ≤ 15 Wörter**: Alle contentB1-Sätze.
 **L3 — B1 vorhanden**: Jeder Step hat `contentB1` (nicht optional).
+
+### Block M: Phasen-Bogen (6) ← NEU
+
+**M1 — Phase vorhanden**: Jeder Step hat `themenblockPhase` (Pflicht).
+**M2 — Pflicht-Phasen komplett**: Jeder Themenblock hat SZENE→ERKLÄRUNG→CHECKPOINT→ANWENDUNG→REFLEXION.
+**M3 — Reihenfolge korrekt**: Phasen-Reihenfolge ist 0→1→2→3→(4→5→6→7→8→9b)→9→10. Nie umgestellt.
+**M4 — Checkpoint ist MC**: Phase 3 (CHECKPOINT) ist immer `stepType: "mc"` mit Zeitmessung.
+**M5 — KB-Phasen korrekt**: KB I → Phase 6+7+9b, KB II → Phase 7+8, KB III → Phase 6, KB IV → Phase 7+5.
+**M6 — Score-A-Pfad funktioniert**: Nur Pflicht-Phasen (0,1,2,3,9,10) ergeben einen sinnvollen Lernpfad.
+
+### Block N: Pflegeplanung + Brücken (3) ← NEU
+
+**N1 — Pflegeplanung bei CE 05/KB I**: Min 1x `careplan` pro Session bei CE 05 oder wenn KB I im Rohmaterial.
+**N2 — Brücken-Regeln**: Max 1 Brücke pro Themenblock. Rückblick/Querverbindung nur wenn verknüpfte LE abgeschlossen.
+**N3 — Brücken-Content**: Brücken sind kurz (2-3 Sätze), testen nicht, aktivieren nur Vorwissen.
+
+### Block O: Exa Fact-Check (3) ← NEU
+
+**O1 — Automatischer Fact-Check**: Vor der manuellen Prüfung `npx ts-node scripts/exa-fact-check.ts content/le-{N}/` ausführen. Alle SUSPICIOUS-Treffer müssen manuell gegen Rohmaterial geprüft werden.
+**O2 — Halluzinations-Muster**: Script prüft automatisch auf bekannte KI-Halluzinations-Muster (Mehrabian-Mythos, vage Studienreferenzen, unbelegte Prozentzahlen). Bei Treffer → F11 K.O. prüfen.
+**O3 — Quellen-Verifikation**: Fakten mit Zahlen/Prozenten/Leitlinien werden gegen wissenschaftliche Datenbanken (AWMF, DNQP, PubMed, Cochrane) geprüft. UNVERIFIED ≠ automatisch falsch, aber erfordert manuelle Bestätigung gegen Rohmaterial.
 
 ---
 
@@ -146,15 +167,21 @@ Gleiches Gefühl: text→text, mc→mc, mc→truefalse, text→reveal, freetext�
 ## Zusammenfassung
 [2-3 Sätze]
 
-## Detail-Ergebnisse (42 Kriterien)
+## Detail-Ergebnisse (55 Kriterien)
 
 | # | Kriterium | Urteil | Anmerkung |
 |---|-----------|--------|-----------|
 | A1 | Aufgaben-Cap | PASS/FAIL | ... |
 | ... | ... | ... | ... |
 | L3 | B1 vorhanden | PASS/FAIL | ... |
+| M1 | Phase vorhanden | PASS/FAIL | ... |
+| ... | ... | ... | ... |
+| N3 | Brücken-Content | PASS/FAIL | ... |
+| O1 | Automatischer Fact-Check | PASS/FAIL | ... |
+| O2 | Halluzinations-Muster | PASS/FAIL | ... |
+| O3 | Quellen-Verifikation | PASS/FAIL | ... |
 
-Bestanden: {N}/43 | Nicht bestanden: {N}/43
+Bestanden: {N}/55 | Nicht bestanden: {N}/55
 
 ## Korrekturen (nur bei FAIL)
 ### [Kriterium]: [Problem]
@@ -167,7 +194,7 @@ Bestanden: {N}/43 | Nicht bestanden: {N}/43
 
 ## Gesamturteil-Regeln
 
-- **PASS**: Alle 43 Kriterien bestanden
+- **PASS**: Alle 55 Kriterien bestanden
 - **FAIL**: Min 1 Kriterium nicht bestanden
 - K.O.-Kriterien: Sofort Gesamt-FAIL, andere Checks trotzdem durchführen
 - Bei FAIL: Korrektur-Anweisungen so konkret dass Generator sie direkt umsetzen kann

@@ -46,6 +46,7 @@ Pro LE generierst du:
   track: "basis",                 // "basis" | "vertiefung"
   modus: "story",                 // ErlebnisModus (Pflicht)
   lernziel: "ce01-le01-grundlagen", // Lernziel-ID (Pflicht)
+  themenblockPhase: "SZENE",      // Phase im Phasen-Bogen (Pflicht, aus Sessionplan)
 
   // C1 + B1 IMMER BEIDE
   contentC1: { title: "...", body: "...", fallbezug: "..." },
@@ -90,8 +91,47 @@ BEI UNSICHERHEIT: Fakt weglassen, nicht erfinden.
 
 Das `quellen`-Feld im Step MUSS die Quellen-ID aus dem Rohmaterial enthalten wenn Zahlen/Statistiken verwendet werden.
 
+### 0b. Echte Umlaute (ABSOLUT — in JEDEM String)
+
+**IMMER echte Umlaute verwenden: ä, ö, ü, ß — NIEMALS ae, oe, ue, ss als Ersatz.**
+
+```
+VERBOTEN:
+  ✗ "Pflegekraefte"     → ✓ "Pflegekräfte"
+  ✗ "hoeren"            → ✓ "hören"
+  ✗ "ausfuehren"        → ✓ "ausführen"
+  ✗ "Schluessselaufgabe" → ✓ "Schlüsselaufgabe"
+  ✗ "Taetigkeiten"      → ✓ "Tätigkeiten"
+  ✗ "muessen"           → ✓ "müssen"
+  ✗ "Massnahmen"        → ✓ "Maßnahmen"
+  ✗ "wuerde"            → ✓ "würde"
+
+AUSNAHME: Nur in crossword-clues (Großbuchstaben, AE/OE/UE ist dort nötig)
+```
+
+Diese Regel gilt für ALLE Felder: title, body, fallbezug, fragetext, optionen, explanation, wusstestDuDas, Glossar — alles.
+
 ### 1. Exakt dem Sessionplan folgen
-Jeder Step im Sessionplan = 1 Step im Output. Gleicher Typ, gleicher Bloom, gleicher Inhalt. KEINE Steps hinzufügen oder weglassen.
+Jeder Step im Sessionplan = 1 Step im Output. Gleicher Typ, gleicher Bloom, gleicher Inhalt, gleiche **Phase**. KEINE Steps hinzufügen oder weglassen.
+
+### 1b. Phase-spezifische Schreibregeln (KERNSTÜCK)
+
+Jeder Step hat eine `themenblockPhase` — sie bestimmt den **Ton und Zweck** des Contents.
+
+| Phase | Ton | Schreibregel |
+|---|---|---|
+| BRÜCKE | Verbindend, kurz | Max 2-3 Sätze. "In LE-X hast du gelernt..." oder "Bald wirst du..." Kein Test, nur aktivieren. |
+| SZENE | Emotional, neugierig | Leitfall-Dialog oder narrative Situation. "Stell dir vor..." Konkret, menschlich. |
+| ERKLÄRUNG | Sachlich, klar | Kernwissen in einfachster Version (Reigeluth). Kein Storytelling. Fachbegriffe erklären. |
+| CHECKPOINT | Neutral, messend | MC mit exakt 1 richtiger Antwort. Kein "Was glaubst du?" — sondern Fakten-Check. |
+| ANDERS ERKLÄRT | Anderer Blickwinkel | Vergleichstabelle, Analogie, Bild, Diagram. NICHT wiederholen — NEU erklären. |
+| STORYTELLING | Narrativ, Konsequenzen | "Stell dir vor..." — Geschichte mit Folgen. Was passiert wenn man es falsch macht? |
+| PRAXIS-DIALOG | Gesprächston, professionell | Dialog mit Praxisanleiterin/Arzt/Dozentin. Realistische Formulierungen. |
+| PATIENTEN-PERSPEKTIVE | Empathisch | Wie erlebt der Patient das? Was fühlt/denkt er? Ich-Perspektive oder Beobachtung. |
+| ANGEHÖRIGEN-BERATUNG | Beratend, einfühlsam | "Die Tochter fragt: Was kann ich tun?" Alltagssprache der Angehörigen. |
+| PFLEGEPLANUNG | Strukturiert, prozesshaft | Problem→Ziel→Maßnahme→Evaluation. Immer am konkreten Patienten. |
+| ANWENDUNG | Herausfordernd, neu | NEUER Kontext — nicht dasselbe Beispiel wiederholen. Transfer-Aufgabe. |
+| REFLEXION | Offen, persönlich | Keine richtige/falsche Antwort. "Was bedeutet das für dich?" |
 
 ### 2. TypeScript-konform
 - Import: `import type { ContentStep, GlossarEntry } from "../_types";`
@@ -145,6 +185,15 @@ Wenn der Sessionplan "Bild? ✓" hat:
 - `imageAlt` mit sinnvoller Beschreibung
 - Hotspot/LabelImage: Bild PFLICHT
 - Diagram: Kein externes Bild nötig (wird gerendert)
+
+### 7b. Icons in Content-Steps
+
+Für `icon`-Felder in RevealCards, TimelineEvents und ComparisonColumns:
+
+- **Format:** kebab-case Lucide-Icon-Name (z.B. `"stethoscope"`, `"graduation-cap"`, `"heart-pulse"`)
+- **Alle 1700+ Lucide-Icons** funktionieren automatisch: https://lucide.dev/icons
+- **Zusätzlich 29 Hand-Drawn-Icons** (Doodle-Stil, haben Vorrang): `heart`, `star`, `brain`, `lightbulb`, `trophy`, `clipboard`, `puzzle`, `hospital`, `target`, `celebration`, `muscle`, `fire`, `lightning`, `book`, `books`, `check`, `cross`, `sparkle`, `search`, `pencil`, `arrow-right`, `refresh`, `new`, `thinking`, `smile`, `grin`, `starry-eyes`, `neutral`, `clap`
+- **Keine Emojis** als Icon-Wert verwenden — immer kebab-case Namen
 
 ### 8. Offene Fragen aus Rohmaterial
 
@@ -297,6 +346,13 @@ Rohmaterial Abschnitt C enthält 3 Patienten mit Szenen-Verlauf (S1/S2/S3). Nutz
 - Text mit Fehlern zum Markieren
 - `isError: true/false` pro Segment
 - `reason` erklärt warum falsch
+
+### careplan (NEU — Pflegeprozess üben)
+- Immer am konkreten Patienten (aus Leitfall)
+- 5-Schritte-Struktur: Problem → Ziel → Maßnahme → Durchführung → Evaluation
+- `question.steps`: Array mit 5 Schritten, je `prompt` + `options` oder `freetext`
+- Bloom-Progression: Frühe LEs B2 (zuordnen), mittlere B3-B4 (formulieren), späte B5-B6 (vollständig planen)
+- Einsatz: Phase 9b (PFLEGEPLANUNG), min 1x pro Session bei CE 05 oder KB I
 
 ### reflection
 - `prompt` für offene Reflexion

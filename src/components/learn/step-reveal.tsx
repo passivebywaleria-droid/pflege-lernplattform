@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
+import { HandDrawnIcon, ContentIcon } from "@/components/ui/hand-drawn-icon";
 interface RevealCard {
   id: string;
   label: string;
@@ -21,6 +22,11 @@ interface StepRevealProps {
   glossar?: GlossarEntry[];
   sprachLevel?: "c1" | "b1";
   onNext: (correct: boolean) => void;
+}
+
+function RevealIcon({ icon }: { icon?: string }) {
+  if (!icon) return <HandDrawnIcon name="check" size={20} color="#30D158" />;
+  return <ContentIcon icon={icon} size={20} color="#0071e3" />;
 }
 
 export function StepReveal({
@@ -108,12 +114,12 @@ export function StepReveal({
             >
               {/* Header */}
               <div className="flex items-center gap-3 p-4">
-                <span className="text-xl">
+                <span className="text-xl flex items-center">
                   {isRevealed
-                    ? card.icon || "\u2705"
+                    ? <RevealIcon icon={card.icon} />
                     : isLocked
-                      ? "\uD83D\uDD12"
-                      : "\uD83D\uDC49"}
+                      ? "🔒"
+                      : "👉"}
                 </span>
                 <span
                   className={`font-medium text-sm flex-1 ${

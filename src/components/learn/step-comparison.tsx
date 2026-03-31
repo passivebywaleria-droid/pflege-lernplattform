@@ -16,6 +16,15 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
+import { ContentIcon } from "@/components/ui/hand-drawn-icon";
+
+function ComparisonIcon({ icon }: { icon?: string }) {
+  return <ContentIcon icon={icon} size={16} color="white" />;
+}
+
+function ComparisonIconColored({ icon, color }: { icon?: string; color: string }) {
+  return <ContentIcon icon={icon} size={14} color={color} />;
+}
 
 interface ComparisonColumn {
   label: string;
@@ -42,11 +51,11 @@ interface StepComparisonProps {
 
 // Farben für Spalten (unterscheidbar, passt zum Apple-Design)
 const COLUMN_COLORS = [
-  { bg: "bg-[#0071e3]", light: "bg-[#0071e3]/10", border: "border-[#0071e3]/20", text: "text-[#0071e3]" },
-  { bg: "bg-[#30D158]", light: "bg-[#30D158]/10", border: "border-[#30D158]/20", text: "text-[#147a2a]" },
-  { bg: "bg-[#FF9500]", light: "bg-[#FF9500]/10", border: "border-[#FF9500]/20", text: "text-[#a86200]" },
-  { bg: "bg-[#AF52DE]", light: "bg-[#AF52DE]/10", border: "border-[#AF52DE]/20", text: "text-[#7B2FA0]" },
-  { bg: "bg-[#FF3B30]", light: "bg-[#FF3B30]/10", border: "border-[#FF3B30]/20", text: "text-[#c4291f]" },
+  { bg: "bg-[#0071e3]", light: "bg-[#0071e3]/10", border: "border-[#0071e3]/20", text: "text-[#0071e3]", hex: "#0071e3" },
+  { bg: "bg-[#30D158]", light: "bg-[#30D158]/10", border: "border-[#30D158]/20", text: "text-[#147a2a]", hex: "#147a2a" },
+  { bg: "bg-[#FF9500]", light: "bg-[#FF9500]/10", border: "border-[#FF9500]/20", text: "text-[#a86200]", hex: "#a86200" },
+  { bg: "bg-[#AF52DE]", light: "bg-[#AF52DE]/10", border: "border-[#AF52DE]/20", text: "text-[#7B2FA0]", hex: "#7B2FA0" },
+  { bg: "bg-[#FF3B30]", light: "bg-[#FF3B30]/10", border: "border-[#FF3B30]/20", text: "text-[#c4291f]", hex: "#c4291f" },
 ];
 
 export function StepComparison({
@@ -91,7 +100,7 @@ export function StepComparison({
               transition={{ delay: i * 0.1 }}
               className={`${color.bg} rounded-full px-3 py-1.5 flex items-center gap-1.5`}
             >
-              {col.icon && <span className="text-sm">{col.icon}</span>}
+              {col.icon && <ComparisonIcon icon={col.icon} />}
               <span className="text-xs font-semibold text-white">{col.label}</span>
             </motion.div>
           );
@@ -157,7 +166,7 @@ export function StepComparison({
                           >
                             <div className="flex items-start gap-2">
                               <span className={`text-xs font-bold ${color.text} whitespace-nowrap`}>
-                                {columns[colIdx]?.icon} {columns[colIdx]?.label}
+                                <ComparisonIconColored icon={columns[colIdx]?.icon} color={color.hex} /> {columns[colIdx]?.label}
                               </span>
                             </div>
                             <p className="text-sm leading-relaxed mt-1.5">{val}</p>
