@@ -422,6 +422,8 @@ export interface ContentStep {
   question?: {
     fragetext: string;
     multiSelect?: boolean;
+    // Flexible Felder für v2-Content (nutzt kürzere Feldnamen wie options, pairs, cards etc.)
+    [key: string]: unknown;
     optionen?: StepOption[];
     matchingPairs?: MatchingPair[];
     sortItems?: string[];

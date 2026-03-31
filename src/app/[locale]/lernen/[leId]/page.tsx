@@ -1143,6 +1143,8 @@ function StepRenderer({
   totalQuestions: number;
 }) {
   const content = sprachLevel === "b1" && step.contentB1 ? step.contentB1 : step.contentC1;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- v2 Steps nutzen kürzere Feldnamen, Fallback per runtime-check
+  const q = step.question as any;
 
   switch (step.stepType) {
     case "selfrating":
@@ -1151,115 +1153,122 @@ function StepRenderer({
           title={content.title}
           body={content.body}
           glossar={glossar}
-          fragetext={step.question?.fragetext ?? ""}
+          fragetext={q?.fragetext ?? ""}
           onNext={onSelfRating}
         />
       );
 
     case "reflection":
-      if (!step.question?.reflection) return null;
+      if (!q?.reflection) return null;
       return (
         <StepReflection
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          prompt={step.question.reflection.prompt}
-          placeholder={step.question.reflection.placeholder}
-          systemPrompt={step.question.reflection.systemPrompt}
+          prompt={q.reflection.prompt}
+          placeholder={q.reflection.placeholder}
+          systemPrompt={q.reflection.systemPrompt}
           onTextSubmit={(text) => onReflection(text)}
           onNext={() => onNext()}
         />
       );
 
     case "hotspot":
-      if (!step.question?.hotspot) return null;
+      if (!q?.hotspot) return null;
       return (
         <StepHotspot
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          imageUrl={step.question.hotspot.imageUrl}
-          imageAlt={step.question.hotspot.imageAlt}
-          instruction={step.question.hotspot.instruction}
-          zones={step.question.hotspot.zones}
+          imageUrl={q.hotspot.imageUrl}
+          imageAlt={q.hotspot.imageAlt}
+          instruction={q.hotspot.instruction}
+          zones={q.hotspot.zones}
           onNext={(correct) => onNext(correct)}
         />
       );
 
-    case "confidence":
-      if (!step.question?.confidenceCards) return null;
+    case "confidence": {
+      const confCards = q?.confidenceCards ?? q?.statements;
+      if (!confCards) return null;
       return (
         <StepConfidence
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
           sprachLevel={sprachLevel}
-          cards={step.question.confidenceCards}
+          cards={confCards}
           onNext={(correct) => onNext(correct)}
         />
       );
+    }
 
     case "cloze":
-      if (!step.question?.cloze) return null;
+      if (!q?.cloze) return null;
       return (
         <StepCloze
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          textWithBlanks={step.question.cloze.textWithBlanks}
-          blanks={step.question.cloze.blanks}
+          textWithBlanks={q.cloze.textWithBlanks}
+          blanks={q.cloze.blanks}
           onNext={(correct) => onNext(correct)}
         />
       );
 
     case "sequencing":
-      if (!step.question?.sequencing) return null;
+      if (!q?.sequencing) return null;
       return (
         <StepSequencing
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          instruction={step.question.sequencing.instruction}
-          items={step.question.sequencing.items}
+          instruction={q.sequencing.instruction}
+          items={q.sequencing.items}
           onNext={(correct) => onNext(correct)}
         />
       );
 
     case "slider":
-      if (!step.question?.slider) return null;
+      if (!q?.slider) return null;
       return (
         <StepSlider
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
           sprachLevel={sprachLevel}
-          instruction={step.question.slider.instruction}
-          unit={step.question.slider.unit}
-          min={step.question.slider.min}
-          max={step.question.slider.max}
-          step={step.question.slider.step}
-          correctValue={step.question.slider.correctValue}
-          tolerance={step.question.slider.tolerance}
-          explanation={step.question.slider.explanation}
-          explanationB1={step.question.slider.explanationB1}
+          instruction={q.slider.instruction}
+          unit={q.slider.unit}
+          min={q.slider.min}
+          max={q.slider.max}
+          step={q.slider.step}
+          correctValue={q.slider.correctValue}
+          tolerance={q.slider.tolerance}
+          explanation={q.slider.explanation}
+          explanationB1={q.slider.explanationB1}
           onNext={(correct) => onNext(correct)}
         />
       );
 
-    case "summary":
-      if (!step.question?.summary) return null;
+    case "summary": {
+      const sumData = q?.summary ?? (q?.summaryPoints ? {
+        kernaussagen: q.summaryPoints,
+        reflexionRueckbezug: q.reflexionRueckbezug,
+      } : null);
+      if (!sumData) return null;
       return (
         <StepSummary
           title={content.title}
           glossar={glossar}
           reflexionText={reflexionText ?? undefined}
-          rueckbezug={step.question.summary.reflexionRueckbezug}
-          kernaussagen={step.question.summary.kernaussagen}
+          rueckbezug={sumData.reflexionRueckbezug}
+          kernaussagen={sumData.kernaussagen}
           score={score}
           totalQuestions={totalQuestions}
           onNext={() => onNext()}
         />
       );
+    }
 
     case "text":
       return (
@@ -1277,60 +1286,68 @@ function StepRenderer({
         />
       );
 
-    case "mc":
-      if (!step.question?.optionen) return null;
+    case "mc": {
+      const mcOptions = q?.optionen ?? q?.options;
+      if (!mcOptions) return null;
       return (
         <StepMC
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
           sprachLevel={sprachLevel}
-          fragetext={step.question.fragetext}
-          optionen={step.question.optionen}
-          multiSelect={step.question.multiSelect}
+          fragetext={q.fragetext}
+          optionen={mcOptions}
+          multiSelect={q.multiSelect}
           onNext={(correct) => onNext(correct)}
         />
       );
+    }
 
-    case "matching":
-      if (!step.question?.matchingPairs) return null;
+    case "matching": {
+      const matchPairs = q?.matchingPairs ?? q?.pairs;
+      if (!matchPairs) return null;
       return (
         <StepMatching
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          fragetext={step.question.fragetext}
-          pairs={step.question.matchingPairs}
+          fragetext={q.fragetext}
+          pairs={matchPairs}
           onNext={(correct) => onNext(correct)}
         />
       );
+    }
 
-    case "sorting":
-      if (!step.question?.sortItems) return null;
+    case "sorting": {
+      const sortingItems = q?.sortItems ?? q?.items;
+      if (!sortingItems) return null;
       return (
         <StepSorting
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          fragetext={step.question.fragetext}
-          items={step.question.sortItems}
+          fragetext={q.fragetext}
+          items={sortingItems}
           onNext={(correct) => onNext(correct)}
         />
       );
+    }
 
-    case "branching":
-      if (!step.question?.branchingOptions) return null;
+    case "branching": {
+      const branchOpts = q?.branchingOptions ?? q?.options;
+      if (!branchOpts) return null;
       return (
         <StepBranching
           title={content.title}
           body={content.body}
           glossar={glossar}
           sprachLevel={sprachLevel}
-          fragetext={step.question.fragetext}
-          options={step.question.branchingOptions}
+          fragetext={q.fragetext}
+          options={branchOpts}
           onNext={(correct) => onNext(correct)}
         />
       );
+    }
 
     case "freetext":
       return (
@@ -1338,234 +1355,271 @@ function StepRenderer({
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          fragetext={step.question?.fragetext ?? ""}
-          musterantwort={step.question?.musterantwort}
-          bewertungskriterien={step.question?.bewertungskriterien}
-          satzanfaengeB1={step.question?.satzanfaengeB1}
+          fragetext={q?.fragetext ?? ""}
+          musterantwort={q?.musterantwort}
+          bewertungskriterien={q?.bewertungskriterien}
+          satzanfaengeB1={q?.satzanfaengeB1 ?? q?.satzanfaenge}
           onNext={() => onNext(true)}
         />
       );
 
     case "fillin":
-      if (!step.question?.fillin) return null;
+      if (!q?.fillin) return null;
       return (
         <StepFillIn
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          sentence={step.question.fillin.sentence}
-          options={step.question.fillin.options}
-          correctIndex={step.question.fillin.correctIndex}
+          sentence={q.fillin.sentence}
+          options={q.fillin.options}
+          correctIndex={q.fillin.correctIndex}
           onNext={(correct) => onNext(correct)}
         />
       );
 
-    case "truefalse":
-      if (!step.question?.trueFalseCards) return null;
+    case "truefalse": {
+      const tfCards = q?.trueFalseCards ?? q?.cards;
+      if (!tfCards) return null;
       return (
         <StepTrueFalse
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
           sprachLevel={sprachLevel}
-          cards={step.question.trueFalseCards}
+          cards={tfCards}
           onNext={(correct) => onNext(correct)}
         />
       );
+    }
 
     case "timer":
-      if (!step.question?.timerQuestions) return null;
+      if (!q?.timerQuestions) return null;
       return (
         <StepTimer
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          questions={step.question.timerQuestions}
-          timeLimitSeconds={step.question.timeLimitSeconds}
+          questions={q.timerQuestions}
+          timeLimitSeconds={q.timeLimitSeconds}
           onNext={(correct) => onNext(correct)}
         />
       );
 
-    case "memory":
-      if (!step.question?.memoryPairs) return null;
+    case "memory": {
+      const memPairs = q?.memoryPairs ?? q?.pairs;
+      if (!memPairs) return null;
       return (
         <StepMemory
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          pairs={step.question.memoryPairs}
+          pairs={memPairs}
           onNext={(correct) => onNext(correct)}
         />
       );
+    }
 
-    case "crossword":
-      if (!step.question?.crosswordWords) return null;
+    case "crossword": {
+      const cwWords = q?.crosswordWords ?? q?.words;
+      if (!cwWords) return null;
       return (
         <StepCrossword
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          words={step.question.crosswordWords}
+          words={cwWords}
           onNext={(correct) => onNext(correct)}
         />
       );
+    }
 
-    case "categorize":
-      if (!step.question?.categories || !step.question?.categoryItems)
+    case "categorize": {
+      const catItems = q?.categoryItems ?? q?.items;
+      if (!q?.categories || !catItems)
         return null;
       return (
         <StepCategorize
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          categories={step.question.categories}
-          items={step.question.categoryItems}
+          categories={q.categories}
+          items={catItems}
           onNext={(correct) => onNext(correct)}
         />
       );
+    }
 
     case "highlight":
-      if (!step.question?.highlightSegments) return null;
+      if (!q?.highlightSegments) return null;
       return (
         <StepHighlight
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
           sprachLevel={sprachLevel}
-          segments={step.question.highlightSegments}
+          segments={q.highlightSegments}
           onNext={(correct) => onNext(correct)}
         />
       );
 
-    case "dialog":
-      if (!step.question?.dialogPhases) return null;
+    case "dialog": {
+      const dlgPhases = q?.dialogPhases ?? q?.dialogLines;
+      if (!dlgPhases) return null;
       return (
         <StepDialog
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          patientName={step.question.patientName ?? "Patient"}
-          phases={step.question.dialogPhases}
+          patientName={q.patientName ?? "Patient"}
+          phases={dlgPhases}
           onNext={(correct) => onNext(correct)}
           sprachLevel={sprachLevel}
         />
       );
+    }
 
-    case "swipe":
-      if (!step.question?.swipe) return null;
+    case "swipe": {
+      const swipeData = q?.swipe ?? (q?.cards ? { instruction: q?.fragetext, cards: q.cards } : null);
+      if (!swipeData) return null;
       return (
         <StepSwipe
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          instruction={step.question.swipe.instruction}
-          cards={step.question.swipe.cards}
+          instruction={swipeData.instruction}
+          cards={swipeData.cards}
           sprachLevel={sprachLevel}
           onNext={(correct) => onNext(correct)}
         />
       );
+    }
 
-    case "flipcard":
-      if (!step.question?.flipcard) return null;
+    case "flipcard": {
+      const fcData = q?.flipcard ?? (q?.cards ? { instruction: q?.fragetext, cards: q.cards } : null);
+      if (!fcData) return null;
       return (
         <StepFlipCard
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          instruction={step.question.flipcard.instruction}
-          cards={step.question.flipcard.cards}
+          instruction={fcData.instruction}
+          cards={fcData.cards}
           sprachLevel={sprachLevel}
           onNext={() => onNext()}
         />
       );
+    }
 
-    case "reveal":
-      if (!step.question?.reveal) return null;
+    case "reveal": {
+      const revData = q?.reveal ?? (q?.revealItems ? { instruction: q?.fragetext, cards: q.revealItems, revealMode: "one-by-one" as const } : null);
+      if (!revData) return null;
       return (
         <StepReveal
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          instruction={step.question.reveal.instruction}
-          cards={step.question.reveal.cards}
-          revealMode={step.question.reveal.revealMode}
+          instruction={revData.instruction}
+          cards={revData.cards}
+          revealMode={revData.revealMode}
           sprachLevel={sprachLevel}
           onNext={() => onNext()}
         />
       );
+    }
 
-    case "timeline":
-      if (!step.question?.timeline) return null;
+    case "timeline": {
+      const tlData = q?.timeline ?? (q?.timelineEvents ? { instruction: q?.fragetext, events: q.timelineEvents } : null);
+      if (!tlData) return null;
       return (
         <StepTimeline
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          instruction={step.question.timeline.instruction}
-          events={step.question.timeline.events}
+          instruction={tlData.instruction}
+          events={tlData.events}
           sprachLevel={sprachLevel}
           onNext={() => onNext()}
         />
       );
+    }
 
-    case "comparison":
-      if (!step.question?.comparison) return null;
+    case "comparison": {
+      const cmpData = q?.comparison ?? (q?.comparisonItems ? {
+        instruction: q?.fragetext,
+        columns: [
+          { label: q?.labelA ?? "A", icon: q?.iconA },
+          { label: q?.labelB ?? "B", icon: q?.iconB },
+        ],
+        rows: q.comparisonItems.map((item: { aspect: string; optionA: string; optionB: string }) => ({
+          aspect: item.aspect, values: [item.optionA, item.optionB],
+        })),
+      } : null);
+      if (!cmpData) return null;
       return (
         <StepComparison
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          instruction={step.question.comparison.instruction}
-          columns={step.question.comparison.columns}
-          rows={step.question.comparison.rows}
+          instruction={cmpData.instruction}
+          columns={cmpData.columns}
+          rows={cmpData.rows}
           sprachLevel={sprachLevel}
           onNext={() => onNext()}
         />
       );
+    }
 
     case "labelImage":
-      if (!step.question?.labelImage) return null;
+      if (!q?.labelImage) return null;
       return (
         <StepLabelImage
           title={content.title}
           body={content.body || undefined}
-          imageUrl={step.question.labelImage.imageUrl}
-          imageAlt={step.question.labelImage.imageAlt}
-          instruction={step.question.labelImage.instruction}
-          labels={step.question.labelImage.labels}
-          mode={step.question.labelImage.mode}
+          imageUrl={q.labelImage.imageUrl}
+          imageAlt={q.labelImage.imageAlt}
+          instruction={q.labelImage.instruction}
+          labels={q.labelImage.labels}
+          mode={q.labelImage.mode}
           glossar={glossar}
           onNext={(correct) => onNext(correct)}
         />
       );
 
-    case "diagram":
-      if (!step.question?.diagram) return null;
+    case "diagram": {
+      const dgData = q?.diagram ?? (q?.diagramType ? {
+        instruction: q?.fragetext,
+        diagramType: q.diagramType,
+        nodes: q.nodes,
+        edges: q.edges,
+        interactive: q.interactive,
+      } : null);
+      if (!dgData) return null;
       return (
         <StepDiagram
           title={content.title}
           body={content.body || undefined}
-          instruction={step.question.diagram.instruction}
-          diagramType={step.question.diagram.diagramType}
-          nodes={step.question.diagram.nodes}
-          edges={step.question.diagram.edges}
-          interactive={step.question.diagram.interactive}
+          instruction={dgData.instruction}
+          diagramType={dgData.diagramType}
+          nodes={dgData.nodes}
+          edges={dgData.edges}
+          interactive={dgData.interactive}
           glossar={glossar}
           onNext={() => onNext()}
         />
       );
+    }
 
     case "imageInteraction":
-      if (!step.question?.imageInteraction) return null;
+      if (!q?.imageInteraction) return null;
       return (
         <StepImageInteraction
           title={content.title}
           body={content.body || undefined}
-          instruction={step.question.imageInteraction.instruction}
-          interactionType={step.question.imageInteraction.interactionType}
-          beforeAfter={step.question.imageInteraction.beforeAfter}
-          layerReveal={step.question.imageInteraction.layerReveal}
-          zoomPan={step.question.imageInteraction.zoomPan}
+          instruction={q.imageInteraction.instruction}
+          interactionType={q.imageInteraction.interactionType}
+          beforeAfter={q.imageInteraction.beforeAfter}
+          layerReveal={q.imageInteraction.layerReveal}
+          zoomPan={q.imageInteraction.zoomPan}
           glossar={glossar}
           onNext={() => onNext()}
         />
