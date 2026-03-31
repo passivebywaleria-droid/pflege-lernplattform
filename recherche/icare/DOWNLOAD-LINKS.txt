@@ -1,0 +1,103 @@
+# Dokumen.pub Download-Links — 41 Pflege-Fachbücher
+# ================================================
+# Speicherort: recherche/icare/downloads/
+#
+# Anleitung:
+# 1. Link im Browser öffnen
+# 2. 89 Sekunden Countdown abwarten
+# 3. Seite lädt neu → PDF-Download startet automatisch
+# 4. Datei in recherche/icare/downloads/ speichern
+#
+# PRIORITÄT 1 — Direkt relevant für Content-Generator:
+# (Diese 8 zuerst herunterladen)
+
+# B1-Sprachreferenz
+https://dokumen.pub/download/deutsch-a2-b1-in-der-pflege-3437062735-9783437062735.html
+https://dokumen.pub/download/deutsch-b-1-in-der-pflege-4nbsped-3437293761-9783437293764.html
+
+# Prüfungswissen (400+ Fragen)
+https://dokumen.pub/download/prfungswissen-pflegefachfrau-pflegefachmann-fr-die-generalistische-pflegeausbildung-1nbsped-9783437286216-9783437096501.html
+
+# Kompetenztrainer (Lernziele + PflAPrV-Zuordnung)
+https://dokumen.pub/download/kompetenztrainer-fr-die-pflegeausbildung-arbeitsaufgaben-fr-das-erste-ausbildungsdrittel-9783748605409.html
+
+# Fallbücher (Leitfall-Format)
+https://dokumen.pub/download/fallbuch-chirurgie-6-berarbeitetenbsped-3132420603-9783132420601.html
+https://dokumen.pub/download/fallbuch-neurologie-4-vollstndig-berarbeitete-und-erweitertenbsped-9783132417366.html
+https://dokumen.pub/download/fallbuch-ansthesie-intensivmedizin-und-notfallmedizin-4-berarbeitetenbsped-3132422584-9783132422582.html
+
+# I Care Examen Kompakt (Prüfungsformat)
+https://dokumen.pub/download/i-care-pflegeexamen-kompakt-9783132439405.html
+
+
+# PRIORITÄT 2 — Fachliche Vertiefung:
+
+# 85 Fallsituationen (Pflegediagnostik)
+https://dokumen.pub/download/lernen-mit-85-komplexen-fallsituationen-ein-arbeitsbuch-fr-das-erlernen-der-przisen-pflegediagnostik-in-studium-und-praxis-9783991118435.html
+
+# Thiemes Pflege 13. Aufl. (Standardwerk)
+https://dokumen.pub/download/thiemes-pflege-13nbsped-9783132402935.html
+
+# Pflege konkret (Chirurgie + Neuro/Psych)
+https://dokumen.pub/download/pflege-konkret-chirurgie-orthopdie-urologie-5-a-5-e-8477908.html
+https://dokumen.pub/download/pflege-konkret-neurologie-psychiatrie-6-a-6nbsped-9783437255564.html
+
+# Expertenstandards
+https://dokumen.pub/download/expertenstandards-in-der-pflege-eine-gebrauchsanleitung-4-aufl-2020-978-3-662-59636-4-978-3-662-59637-1.html
+
+# Lebensweltorientierte Pflege (Lehrbuch generalistische Ausbildung)
+https://dokumen.pub/download/lebensweltorientierte-pflege-ein-lehrbuch-fr-die-ausbildung-zur-pflegefachfrau-zum-pflegefachmann-9783748603634.html
+
+# Psychische Gesundheit pflegen
+https://dokumen.pub/download/psychische-gesundheit-pflegen-9783748603139.html
+
+# Kommunikation im Gesundheitswesen
+https://dokumen.pub/download/kommunikation-im-gesundheitswesen-1-aufl-2019-978-3-662-59219-9-978-3-662-59220-5.html
+
+# Chirurgie für Pflegeberufe
+https://dokumen.pub/download/chirurgie-fr-pflegeberufe-krankheitslehre-23-berarbeitetenbsped-9783132404373.html
+
+
+# PRIORITÄT 3 — Spezialthemen:
+
+# Deutsch für Mediziner (Fachsprachprüfung)
+https://dokumen.pub/download/deutsch-fr-mediziner-vorbereitung-auf-die-fachsprachprfung-1nbsped-1096303132-9781096303138.html
+https://dokumen.pub/download/fit-fr-die-fachsprachprfung-in-nur-1-woche-deutsch-b2-c1-medizin-fsp-fsp-prfungstraining-mit-tipps-und-musterlsungen-3754330527-9783754330524.html
+
+# Pädiatrie + Kinder
+https://dokumen.pub/download/pdiatrie-5-aufl-978-3-662-57294-8-978-3-662-57295-5.html
+https://dokumen.pub/download/gesundheits-und-kinderkrankenpflege-5-aktualisiertenbsped-3132415871-9783132415874.html
+https://dokumen.pub/download/entwicklungspsychologie-des-kindes-und-jugendalters-fr-bachelor-4-aufl-2019-978-3-662-59191-8-978-3-662-59192-5.html
+
+# Palliativ
+https://dokumen.pub/download/palliativmedizin-4-4nbsped-9783540298885-3540298886-9783540298892-3540298894.html
+https://dokumen.pub/download/palliativversorgung-von-kindern-jugendlichen-und-jungen-erwachsenen-1nbsped-9783540488750-3540488758-9783540488767-3540488766.html
+
+# Neonatologie
+https://dokumen.pub/download/checkliste-neonatologie-checklisten-medizin-6-aktualisiertenbsped-3132425559-9783132425552.html
+
+# Intensivpflege + Notfall
+https://dokumen.pub/download/handbuch-intensivpflege-medizinische-und-pflegerische-grundlagen-1.html
+https://dokumen.pub/download/neurologische-notflle-2nbsped-3132438154-9783132438156.html
+https://dokumen.pub/download/retten-fallbuch-notfallsanitter-fit-fr-die-prfung-1nbsped-3132419621-9783132419629.html
+
+# Pharmakologie
+https://dokumen.pub/download/pharmakologie-ein-lehrbuch-fr-pflegeassistenz-und-sozialbetreuungsberufe-9783991115311.html
+
+# Pflegediagnosen (NANDA)
+https://dokumen.pub/download/nanda-i-pflegediagnosen-definitionen-und-klassifikation-2018-2020-2nbsped-3897521407-9783897521407.html
+https://dokumen.pub/download/pflegediagnosen-praktisch-und-effizient-mit-39-tabellen-1nbsped-9783540255789-3540255788-9783540365853-3540365850.html
+
+# Recht
+https://dokumen.pub/download/rechtskunde-das-recht-der-pflege-alter-menschen-12nbsped-9783748604235.html
+https://dokumen.pub/download/rechtskunde-das-recht-der-pflege-alter-menschen-9783748601609.html
+
+# Sonstiges
+https://dokumen.pub/download/formulierungshilfen-aktivitten-der-sozialen-betreuung-dokumentieren-9783748601579.html
+https://dokumen.pub/download/lernkarten-pflegeassistenz-1nbsped-9783437050244.html
+https://dokumen.pub/download/hebammenkunde-lehrbuch-fr-schwangerschaft-geburt-wochenbett-und-beruf-reprint-2020nbsped-9783110871760-9783110137644.html
+https://dokumen.pub/download/ethik-der-digitalisierung-in-gesundheitswesen-und-pflege-analysen-und-ein-tool-zur-integrierten-forschung-3515135510-9783515135511.html
+https://dokumen.pub/download/rekonstruktive-fallarbeit-in-der-pflege-methodologische-reflexionen-und-praktische-relevanz-fr-pflegewissenschaft-pflegebildung-und-die-direkte-pflege-1nbsped-9783737005081-9783847105084.html
+https://dokumen.pub/download/pflegepdagogik-fr-studium-und-praxis-2nbsped-9783540255994-3540255990-9783540287711-354028771x.html
+https://dokumen.pub/download/praxisanleitung-nach-der-neuen-pflegeausbildung-die-vorgaben-erfolgreich-umsetzen-9783748601869.html
+https://dokumen.pub/download/patienten-aus-fremden-kulturen-im-notarzt-und-rettungsdienst-fallbeispiele-und-praxistipps-2-aufl-978-3-662-58291-6978-3-662-58292-3.html

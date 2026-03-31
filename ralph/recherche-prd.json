@@ -1,0 +1,1616 @@
+{
+  "project": "Recherche-Loop — Alle 55 LEs (Curriculum-basiert)",
+  "description": "Wissenschaftlich fundiertes Rohmaterial fuer alle 55 Lerneinheiten der generalistischen Pflegeausbildung. Primaerquelle: I Care PDFs. Luecken: Exa AI (nur wissenschaftliche Domains). Struktur basiert auf dem Curriculum der Pflegeschule (intern, nicht sichtbar fuer Schueler).",
+  "version": "2.0",
+  "curriculum": "55 LEs, 11 CEs, 3 Ausbildungsdrittel, ~1.910 Unterrichtsstunden",
+  "domainWhitelist": [
+    "awmf.org",
+    "register.awmf.org",
+    "dnqp.de",
+    "pubmed.ncbi.nlm.nih.gov",
+    "ncbi.nlm.nih.gov",
+    "cochrane.org",
+    "link.springer.com",
+    "thieme-connect.com",
+    "rki.de",
+    "who.int",
+    "dgrh.de"
+  ],
+  "stories": [
+    {
+      "id": "ce-01-le-01",
+      "curriculumLE": 1,
+      "ceIds": [
+        "ce-01",
+        "ce-03"
+      ],
+      "leId": "le-01-personen--und-situationsorientiert-profe",
+      "title": "Personen- und situationsorientiert professionell pflegen",
+      "stunden": 40,
+      "kbSchwerpunkt": "V.1",
+      "prinzip": "Persönlichkeit",
+      "anlage": 1,
+      "drittel": 1,
+      "kbGewichtung": {
+        "KB-I": 15,
+        "KB-II": 15,
+        "KB-III": 5,
+        "KB-IV": 15,
+        "KB-V": 50
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 1 — Professionelle Pflege (PDF S.23-36)",
+        "I Care Pflege: Kap. 3 — Pflege als Prozess (PDF S.81-102)"
+      ],
+      "themen": "Pflegeverständnis, Menschenbild, Berufliche Identität, Pflegebeziehung, Wahrnehmung und Beobachtung, Nähe und Distanz, Reflexion der eigenen Rolle",
+      "passes": true,
+      "quellenCount": 11,
+      "faktenCount": 47
+    },
+    {
+      "id": "ce-01-le-02",
+      "curriculumLE": 2,
+      "ceIds": [
+        "ce-01"
+      ],
+      "leId": "le-02-ein-erstes-berufliches-selbstverstaendni",
+      "title": "Ein erstes berufliches Selbstverständnis entwickeln",
+      "stunden": 20,
+      "kbSchwerpunkt": "V.2",
+      "prinzip": "Persönlichkeit",
+      "anlage": 1,
+      "drittel": 1,
+      "kbGewichtung": {
+        "KB-I": 15,
+        "KB-II": 15,
+        "KB-III": 5,
+        "KB-IV": 15,
+        "KB-V": 50
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 1 — Professionelle Pflege (PDF S.23-36)",
+        "I Care Pflege: Kap. 2 — Ausbildung und Beruf (PDF S.37-80)"
+      ],
+      "themen": "Berufsbild Pflegefachfrau/-mann, Geschichte der Pflege, Professionalisierung, PflBG, Vorbehaltsaufgaben, Berufsfelder, ICN-Ethikkodex",
+      "passes": true,
+      "quellenCount": 8,
+      "faktenCount": 38
+    },
+    {
+      "id": "ce-01-le-03",
+      "curriculumLE": 3,
+      "ceIds": [
+        "ce-01"
+      ],
+      "leId": "le-03-verantwortung-fuer-die-persoenliche-weit",
+      "title": "Verantwortung für die persönliche Weiterentwicklung übernehmen",
+      "stunden": 20,
+      "kbSchwerpunkt": "V.2",
+      "prinzip": "Persönlichkeit",
+      "anlage": 1,
+      "drittel": 1,
+      "kbGewichtung": {
+        "KB-I": 15,
+        "KB-II": 15,
+        "KB-III": 5,
+        "KB-IV": 15,
+        "KB-V": 50
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 2 — Ausbildung und Beruf (PDF S.37-80)",
+        "I Care Pflege: Kap. 4 — Pflegewissenschaft (PDF S.103-118)"
+      ],
+      "themen": "Lebenslanges Lernen, Lernstrategien, Selbstreflexion, Portfolio, Feedback annehmen, Fortbildung, Karrierewege in der Pflege",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 27
+    },
+    {
+      "id": "ce-01-le-04",
+      "curriculumLE": 4,
+      "ceIds": [
+        "ce-01"
+      ],
+      "leId": "le-04-ausbildungs--und-berufsbezogene-rechte-u",
+      "title": "Ausbildungs- und berufsbezogene Rechte und Pflichten überblicken",
+      "stunden": 20,
+      "kbSchwerpunkt": "V.2+IV.2",
+      "prinzip": "Persönlichkeit",
+      "anlage": 1,
+      "drittel": 1,
+      "kbGewichtung": {
+        "KB-I": 15,
+        "KB-II": 15,
+        "KB-III": 5,
+        "KB-IV": 15,
+        "KB-V": 50
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 7 — Rechtliche Grundlagen (PDF S.173-192)",
+        "I Care Pflege: Kap. 2 — Ausbildung und Beruf (PDF S.37-80)"
+      ],
+      "themen": "Ausbildungsvertrag, Arbeitsrecht, Schweigepflicht, Haftungsrecht, Delegationsrecht, Dokumentationspflicht, Datenschutz, Berufsordnung",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 30
+    },
+    {
+      "id": "ce-02-le-05",
+      "curriculumLE": 5,
+      "ceIds": [
+        "ce-02"
+      ],
+      "leId": "le-05-pflege-prozesshaft-gestalten",
+      "title": "Pflege prozesshaft gestalten",
+      "stunden": 30,
+      "kbSchwerpunkt": "I.1",
+      "prinzip": "Wissenschaft",
+      "anlage": 1,
+      "drittel": 1,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 3 — Pflege als Prozess (PDF S.81-102)",
+        "I Care Pflege: Kap. 5 — Pflegetheorien (PDF S.119-138)"
+      ],
+      "themen": "Pflegeprozess (6 Schritte), Pflegeanamnese, Pflegediagnosen (NANDA), Pflegeziele (SMART), Pflegeplanung, Pflegedokumentation, Pflegetheorien (Orem, Roper, Henderson), ABEDL, ATL",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 28
+    },
+    {
+      "id": "ce-02-le-06",
+      "curriculumLE": 6,
+      "ceIds": [
+        "ce-02"
+      ],
+      "leId": "le-06-menschen-aller-altersstufen-in-ihrer-mob",
+      "title": "Menschen aller Altersstufen in ihrer Mobilität unterstützen",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.1",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 1,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 15 — Mobilisation, Positionierung und Schlaf (PDF S.345-372)",
+        "I Care Pflege: Kap. 17 — Prophylaxen: Sturz-, Kontrakturen-, Thromboseprophylaxe (PDF S.395-444)"
+      ],
+      "themen": "Bewegungsmuster, Mobilitätsförderung, Kinästhetik, Bobath, Sturzprophylaxe (DNQP), Kontrakturenprophylaxe, Dekubitusprophylaxe (DNQP), Lagerung, Transfer, Hilfsmittel, Assessments (Braden, Tinetti)",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 24
+    },
+    {
+      "id": "ce-02-le-07",
+      "curriculumLE": 7,
+      "ceIds": [
+        "ce-02"
+      ],
+      "leId": "le-07-die-haut--und-koerperpflege-bei-menschen",
+      "title": "Die Haut- und Körperpflege bei Menschen aller Altersstufen durchführen",
+      "stunden": 50,
+      "kbSchwerpunkt": "I.1",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 1,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 16 — Körperpflege und Bekleidung (PDF S.373-394)",
+        "I Care Pflege: Kap. 13 — Hygiene (PDF S.299-320)"
+      ],
+      "themen": "Ganzkörperpflege, Teilkörperpflege, Hautbeobachtung, Hautpflege, Mundpflege, Haarpflege, Intimpflege, Ressourcenorientierung, Schamgefühl, Hygiene bei Pflegehandlungen",
+      "passes": true,
+      "quellenCount": 5,
+      "faktenCount": 24
+    },
+    {
+      "id": "ce-02-le-08",
+      "curriculumLE": 8,
+      "ceIds": [
+        "ce-02"
+      ],
+      "leId": "le-08-menschen-aller-altersstufen-bei-der-erna",
+      "title": "Menschen aller Altersstufen bei der Ernährung unterstützen",
+      "stunden": 30,
+      "kbSchwerpunkt": "I.1",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 1,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 18 — Ernährung (PDF S.445-480)"
+      ],
+      "themen": "Ernährungszustand, Mangelernährung (MNA, NRS), Kostformen, Dysphagie, Enterale Ernährung (PEG), Parenterale Ernährung, Flüssigkeitsbilanz, Dehydratation, DNQP Ernährungsmanagement",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 28
+    },
+    {
+      "id": "ce-02-le-09",
+      "curriculumLE": 9,
+      "ceIds": [
+        "ce-02"
+      ],
+      "leId": "le-09-menschen-aller-altersstufen-bei-ausschei",
+      "title": "Menschen aller Altersstufen bei Ausscheidungsvorgängen unterstützen",
+      "stunden": 30,
+      "kbSchwerpunkt": "I.1",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 1,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 19 — Ausscheidung (PDF S.481-512)"
+      ],
+      "themen": "Harnausscheidung, Stuhlausscheidung, Harninkontinenz (DNQP), Stuhlinkontinenz, Obstipation, Blasenkatheter, Stoma-Versorgung, Kontinenzförderung, Würde bei Inkontinenz",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 26
+    },
+    {
+      "id": "ce-03-le-10",
+      "curriculumLE": 10,
+      "ceIds": [
+        "ce-03"
+      ],
+      "leId": "le-10-praxiserfahrungen-reflektieren",
+      "title": "Praxiserfahrungen reflektieren",
+      "stunden": 40,
+      "kbSchwerpunkt": "II.3",
+      "prinzip": "Persönlichkeit",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 4 — Pflegewissenschaft (PDF S.103-118)",
+        "I Care Pflege: Kap. 1 — Professionelle Pflege (PDF S.23-36)"
+      ],
+      "themen": "Reflexionsmethoden (Gibbs, Kolb), Theorie-Praxis-Transfer, Belastende Situationen, Selbstfürsorge, Kollegiale Beratung, Supervision, Resilienz",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 26
+    },
+    {
+      "id": "ce-03-le-11",
+      "curriculumLE": 11,
+      "ceIds": [
+        "ce-03",
+        "ce-04"
+      ],
+      "leId": "le-11-mit-menschen-aller-altersstufen-personen",
+      "title": "Mit Menschen aller Altersstufen personen- und situationsorientiert kommunizieren",
+      "stunden": 40,
+      "kbSchwerpunkt": "II.1",
+      "prinzip": "Wissenschaft",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 10 — Kommunizieren (PDF S.251-268)",
+        "I Care Pflege: Kap. 22 — Informieren, Schulen, Beraten (PDF S.553-560)"
+      ],
+      "themen": "Kommunikationsmodelle (Schulz von Thun, Watzlawick), Aktives Zuhören, Empathie, SBAR, Interkulturelle Kommunikation, Validation (Feil), Basale Stimulation",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 30
+    },
+    {
+      "id": "ce-04-le-12",
+      "curriculumLE": 12,
+      "ceIds": [
+        "ce-04"
+      ],
+      "leId": "le-12-gesundheitsfoerdernde-massnahmen-fuer-me",
+      "title": "Gesundheitsfördernde Maßnahmen für Menschen aller Altersstufen ergreifen",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.2",
+      "prinzip": "Wissenschaft",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 4 — Pflegewissenschaft (PDF S.103-118)",
+        "I Care Pflege: Kap. 17 — Prophylaxen (PDF S.395-444)"
+      ],
+      "themen": "Salutogenese (Antonovsky), Ottawa-Charta, Primär-/Sekundär-/Tertiärprävention, Gesundheitskompetenz, Pflegeprophylaxen, Impfungen, Screening",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 26
+    },
+    {
+      "id": "ce-10-le-13",
+      "curriculumLE": 13,
+      "ceIds": [
+        "ce-10"
+      ],
+      "leId": "le-13-kinder-mit-atemwegserkrankungen-pflegen",
+      "title": "Kinder mit Atemwegserkrankungen pflegen",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.1",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 43 — Schwangerschaft, Geburt, Wochenbett (PDF S.861-892)",
+        "I Care Krankheitslehre: Atemwege Kinder"
+      ],
+      "themen": "Pseudokrupp, Epiglottitis, Bronchiolitis, Asthma bronchiale Kinder, Pneumonie Kinder, Inhalationstherapie, Sauerstoffgabe Kinder, Fieberkrampf, Monitoring Kinder",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-05-le-14",
+      "curriculumLE": 14,
+      "ceIds": [
+        "ce-05"
+      ],
+      "leId": "le-14-menschen-aller-altersstufen-mit-trauma-b",
+      "title": "Menschen aller Altersstufen mit Trauma bedingten Verletzungen im Bewegungssystem pflegen",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.1",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 51 — Pflege Bewegungssystem (PDF S.1177-1228)",
+        "I Care Pflege: Kap. 39 — Perioperative Pflege (PDF S.803-816)"
+      ],
+      "themen": "Frakturen (Formen, Heilung), Schenkelhalsfraktur, Gipsverbände, Extensionsbehandlung, Perioperative Pflege, Thromboseprophylaxe, Schmerzmanagement, Frühmobilisation, Alterstraumatologie",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 24
+    },
+    {
+      "id": "ce-06-le-15",
+      "curriculumLE": 15,
+      "ceIds": [
+        "ce-06"
+      ],
+      "leId": "le-15-in-notfall--und-katastrophensituationen",
+      "title": "In Notfall- und Katastrophensituationen handeln",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.4",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 23 — Notfallsituationen (PDF S.561-590)"
+      ],
+      "themen": "ABCDE-Schema, BLS, AED, Stabile Seitenlage, Notruf 5W, Ersteinschätzung (Triage), Schockzeichen, Anaphylaxie, Aspiration, ERC-Leitlinien",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-05-le-16",
+      "curriculumLE": 16,
+      "ceIds": [
+        "ce-05",
+        "ce-06"
+      ],
+      "leId": "le-16-in-kurativen-prozessen-fuer-menschen-in",
+      "title": "In kurativen Prozessen für Menschen in akut bedrohlichen Herz-Kreislauf-Situationen mitwirken",
+      "stunden": 50,
+      "kbSchwerpunkt": "III.2",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 47 — Pflege Herz-Kreislauf-System (PDF S.1047-1100)",
+        "I Care Pflege: Kap. 23 — Notfallsituationen (PDF S.561-590)"
+      ],
+      "themen": "Herzinfarkt (STEMI/NSTEMI), Herzinsuffizienz, Herzrhythmusstörungen, Lungenembolie, Hypertensive Krise, Monitoring, EKG-Grundlagen, Notfallmedikamente, Reanimation Pflege-Anteil",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-05-le-17",
+      "curriculumLE": 17,
+      "ceIds": [
+        "ce-05",
+        "ce-06"
+      ],
+      "leId": "le-17-bei-der-diagnostik-und-therapie-von-mens",
+      "title": "Bei der Diagnostik und Therapie von Menschen mit akutem Abdomen mitwirken",
+      "stunden": 40,
+      "kbSchwerpunkt": "III.2",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 49 — Pflege Verdauungssystem (PDF S.1109-1152)",
+        "I Care Pflege: Kap. 39 — Perioperative Pflege (PDF S.803-816)"
+      ],
+      "themen": "Akutes Abdomen (Ursachen, Diagnostik), Appendizitis, Ileus, Peritonitis, Cholezystitis, Pankreatitis, Abdominalchirurgie, Drainagen, Stoma-Anlage, Postoperative Pflege",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-05-le-18",
+      "curriculumLE": 18,
+      "ceIds": [
+        "ce-05",
+        "ce-07",
+        "ce-08"
+      ],
+      "leId": "le-18-professionelle-pflegehandlungen-unter-be",
+      "title": "Professionelle Pflegehandlungen unter Berücksichtigung verschiedener Versorgungs- und Abrechnungssysteme erbringen",
+      "stunden": 40,
+      "kbSchwerpunkt": "IV.2",
+      "prinzip": "Wissenschaft/Persönlichkeit",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 32 — Die 4 Handlungsfelder (PDF S.723-736)",
+        "I Care Pflege: Kap. 6 — Pflegeorganisation (PDF S.139-172)"
+      ],
+      "themen": "DRG-System, Pflegegrade, SGB V/XI, Pflegesatzverhandlung, Pflegepersonaluntergrenzen, Abrechnungssysteme ambulant/stationär, Case Management, Entlassungsmanagement",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-04-le-19",
+      "curriculumLE": 19,
+      "ceIds": [
+        "ce-04",
+        "ce-07"
+      ],
+      "leId": "le-19-die-qualitaet-der-pflegerischen-leistung",
+      "title": "Die Qualität der pflegerischen Leistung sicherstellen",
+      "stunden": 40,
+      "kbSchwerpunkt": "IV.1",
+      "prinzip": "Wissenschaft",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 6 — Pflegeorganisation (PDF S.139-172)",
+        "I Care Pflege: Kap. 4 — Pflegewissenschaft (PDF S.103-118)"
+      ],
+      "themen": "Qualitätsmanagement (PDCA, Donabedian), Expertenstandards (DNQP), Pflegevisiten, Audits, Beschwerdemanagement, Fehlerkultur, CIRS, Patientensicherheit",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-05-le-20",
+      "curriculumLE": 20,
+      "ceIds": [
+        "ce-05",
+        "ce-07"
+      ],
+      "leId": "le-20-im-interdisziplinaeren-team-mitwirken",
+      "title": "Im interdisziplinären Team mitwirken",
+      "stunden": 20,
+      "kbSchwerpunkt": "III.1",
+      "prinzip": "Wissenschaft",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 11 — Zusammenarbeiten (PDF S.269-282)"
+      ],
+      "themen": "Interprofessionelle Zusammenarbeit, Teamrollen, Teamentwicklung, Konflikte im Team, Übergabe strukturieren, Fallbesprechung, Delegation, Verantwortungsbereiche",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-05-le-21",
+      "curriculumLE": 21,
+      "ceIds": [
+        "ce-05",
+        "ce-08"
+      ],
+      "leId": "le-21-bei-diagnostischen-und-therapeutischen-m",
+      "title": "Bei diagnostischen und therapeutischen Maßnahmen mitwirken",
+      "stunden": 20,
+      "kbSchwerpunkt": "III.1",
+      "prinzip": "Wissenschaft",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 20 — Medikamentenmanagement (PDF S.513-532)",
+        "I Care Pflege: Kap. 24 — Vitalzeichen (PDF S.591-614)"
+      ],
+      "themen": "Vitalzeichen erheben, Blutentnahme, Injektionen, Infusionstherapie, Medikamentengabe (5R-Regel), Laborwerte interpretieren, Bildgebende Diagnostik vorbereiten",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-07-le-22",
+      "curriculumLE": 22,
+      "ceIds": [
+        "ce-07"
+      ],
+      "leId": "le-22-an-rheumatischen-erkrankungen-leidende-m",
+      "title": "An rheumatischen Erkrankungen leidende Menschen rehabilitativ unterstützen und pflegen",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.1",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Krankheitslehre: Rheumatologie (PDF S.830-870)",
+        "I Care Pflege: Kap. 51 — Pflege Bewegungssystem (PDF S.1177-1228)"
+      ],
+      "themen": "Rheumatoide Arthritis, Gicht, Spondyloarthritiden, Kollagenosen, Vaskulitiden, Schmerzmanagement, Gelenkschutz, Rheuma-Medikamente (DMARD, Biologika), Rehabilitative Pflege",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25,
+      "hinweis": "CE 05 intern: LE 03+04 fertig, LE 01-02 + 05-16 offen"
+    },
+    {
+      "id": "ce-09-le-23",
+      "curriculumLE": 23,
+      "ceIds": [
+        "ce-09"
+      ],
+      "leId": "le-23-menschen-aller-altersstufen-unter-beruec",
+      "title": "Menschen aller Altersstufen unter Berücksichtigung ihrer persönlichen Lebenswelt zu Hause pflegen, beraten und begleiten",
+      "stunden": 40,
+      "kbSchwerpunkt": "II.2",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 34 — Pflege im häuslichen Umfeld (PDF S.745-754)",
+        "I Care Pflege: Kap. 22 — Informieren, Schulen, Beraten (PDF S.553-560)"
+      ],
+      "themen": "Ambulante Pflege, Hausbesuch, Pflegeberatung (§ 7a SGB XI), Pflegebedürftigkeit, Pflegegrade, Wohnraumanpassung, Pflegende Angehörige, Entlastungsangebote",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-09-le-24",
+      "curriculumLE": 24,
+      "ceIds": [
+        "ce-09"
+      ],
+      "leId": "le-24-menschen-aller-altersstufen-zum-umgang-m",
+      "title": "Menschen aller Altersstufen zum Umgang mit Diabetes mellitus informieren und beraten",
+      "stunden": 40,
+      "kbSchwerpunkt": "II.2",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 50 — Pflege Stoffwechselsystem (PDF S.1153-1176)",
+        "I Care Krankheitslehre: Diabetes mellitus"
+      ],
+      "themen": "Diabetes Typ 1 und Typ 2, Insulintherapie, Blutzuckermessung, Hypo-/Hyperglykämie, Diabetisches Fußsyndrom, Ernährungsberatung, Patientenschulung, Selbstmanagement",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-08-le-25",
+      "curriculumLE": 25,
+      "ceIds": [
+        "ce-08"
+      ],
+      "leId": "le-25-menschen-mit-schwerwiegenden-chronischen",
+      "title": "Menschen mit schwerwiegenden chronischen respiratorischen Beeinträchtigungen pflegen und unterstützen",
+      "stunden": 30,
+      "kbSchwerpunkt": "I.3",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 46 — Pflege Atemwege (PDF S.1015-1046)",
+        "I Care Pflege: Kap. 21 — Schmerzmanagement (PDF S.533-552)"
+      ],
+      "themen": "COPD, Asthma bronchiale, Lungenemphysem, Sauerstofftherapie, NIV, Atemtherapie, Inhalation, Tracheostomapflege, Pneumonieprophylaxe, Palliative Begleitung bei Dyspnoe",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-05-le-26",
+      "curriculumLE": 26,
+      "ceIds": [
+        "ce-05",
+        "ce-08"
+      ],
+      "leId": "le-26-aerztliche-anordnungen-eigenverantwortli",
+      "title": "Ärztliche Anordnungen eigenverantwortlich umsetzen",
+      "stunden": 30,
+      "kbSchwerpunkt": "III.2",
+      "prinzip": "Situation/Wissenschaft",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 20 — Medikamentenmanagement (PDF S.513-532)",
+        "I Care Pflege: Kap. 7 — Rechtliche Grundlagen (PDF S.173-192)"
+      ],
+      "themen": "Delegation ärztlicher Tätigkeiten, Durchführungsverantwortung, Medikamentenmanagement, Injektionen, Infusionen, Wundversorgung nach Anordnung, Dokumentationspflicht, Remonstrationspflicht",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-08-le-27",
+      "curriculumLE": 27,
+      "ceIds": [
+        "ce-08"
+      ],
+      "leId": "le-27-menschen-aller-altersstufen-mit-beeintra",
+      "title": "Menschen aller Altersstufen mit Beeinträchtigungen und Erkrankungen der Sinnesorgane pflegen",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.3",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 55 — Pflege Sinnesorgane (PDF S.1359-1384)",
+        "I Care Pflege: Kap. 10 — Kommunizieren (PDF S.251-268)"
+      ],
+      "themen": "Sehbehinderung, Hörbehinderung, Glaukom, Katarakt, Otitis media, Tinnitus, Hilfsmittel (Brille, Hörgerät), Kommunikation bei Sinnesbeeinträchtigung, Orientierungshilfen, Sturzgefahr",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-08-le-28",
+      "curriculumLE": 28,
+      "ceIds": [
+        "ce-08"
+      ],
+      "leId": "le-28-sterbende-menschen-und-ihre-angehoerigen",
+      "title": "Sterbende Menschen und ihre Angehörigen in ihrer häuslichen Umgebung pflegen und begleiten",
+      "stunden": 40,
+      "kbSchwerpunkt": "II.1",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 41 — Pflege Sterbender (PDF S.835-850)",
+        "I Care Pflege: Kap. 34 — Pflege im häuslichen Umfeld (PDF S.745-754)"
+      ],
+      "themen": "Palliative Care ambulant, SAPV, Hospizversorgung, Symptommanagement zu Hause, Angehörigenbegleitung, Rituale, Versorgung Verstorbener, Patientenverfügung, Trauer",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-09-le-29",
+      "curriculumLE": 29,
+      "ceIds": [
+        "ce-09"
+      ],
+      "leId": "le-29-individuelle-lebensentwuerfe-und-lebensv",
+      "title": "Individuelle Lebensentwürfe und Lebensverläufe im Pflegehandeln aufgreifen",
+      "stunden": 30,
+      "kbSchwerpunkt": "I.5",
+      "prinzip": "Wissenschaft",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 9 — Grundlagen Entwicklung/Psychologie (PDF S.213-250)"
+      ],
+      "themen": "Biografiearbeit, Lebensqualität, Entwicklungsaufgaben (Erikson), Altern (Gerontologie), Generationen, Diversität, Migration und Pflege, Kulturelle Vielfalt",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-09-le-30",
+      "curriculumLE": 30,
+      "ceIds": [
+        "ce-09"
+      ],
+      "leId": "le-30-lebensweltorientierende-pflegehandlungen",
+      "title": "Lebensweltorientierende Pflegehandlungen ergreifen",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.5",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 35 — Pflege in Langzeiteinrichtungen (PDF S.755-762)",
+        "I Care Pflege: Kap. 42 — Pflege unterschiedlicher Kulturen (PDF S.851-860)"
+      ],
+      "themen": "Lebensweltorientierung, Tagesstruktur, Beschäftigungsangebote, Milieutherapie, Biografiearbeit in der Praxis, Kultursensibler Umgang, Religiöse Bedürfnisse, Sexualität",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-05-le-31",
+      "curriculumLE": 31,
+      "ceIds": [
+        "ce-05",
+        "ce-10"
+      ],
+      "leId": "le-31-infektionsgefaehrdungen-einschaetzen",
+      "title": "Infektionsgefährdungen einschätzen",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.2",
+      "prinzip": "Wissenschaft",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 13 — Hygiene (PDF S.299-320)",
+        "I Care Krankheitslehre: Infektiologie"
+      ],
+      "themen": "Infektionskette, Erreger (Bakterien, Viren, Pilze), Nosokomiale Infektionen, MRSA, VRE, MRGN, Infektionsschutzgesetz, Meldepflicht, RKI-Empfehlungen, Surveillance",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-05-le-32",
+      "curriculumLE": 32,
+      "ceIds": [
+        "ce-05",
+        "ce-10"
+      ],
+      "leId": "le-32-hygienische-und-gesundheitsfoerdernde-ma",
+      "title": "Hygienische und gesundheitsfördernde Maßnahmen zur Infektionsverhütung ergreifen",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.2",
+      "prinzip": "Wissenschaft",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 13 — Hygiene (PDF S.299-320)"
+      ],
+      "themen": "Standardhygiene, Händehygiene (WHO 5 Momente), Persönliche Schutzausrüstung, Desinfektion, Sterilisation, Isolierungsmaßnahmen, Hygieneplan, Antibiotic Stewardship",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-10-le-33",
+      "curriculumLE": 33,
+      "ceIds": [
+        "ce-10"
+      ],
+      "leId": "le-33-in-der-perinatalen-pflege-mitwirken",
+      "title": "In der perinatalen Pflege mitwirken",
+      "stunden": 40,
+      "kbSchwerpunkt": "III.3",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 43 — Schwangerschaft, Geburt, Wochenbett (PDF S.861-892)"
+      ],
+      "themen": "Schwangerschaftsvorsorge, Geburtsverlauf, Wochenbett, Neugeborenenversorgung, Stillen, Rückbildung, Bonding, Wochenbettdepression, Sectio-Nachsorge, APGAR",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-11-le-34",
+      "curriculumLE": 34,
+      "ceIds": [
+        "ce-11"
+      ],
+      "leId": "le-34-bei-der-begleitung-und-pflege-psychisch",
+      "title": "Bei der Begleitung und Pflege psychisch kranker Kinder und Jugendlicher mitwirken",
+      "stunden": 20,
+      "kbSchwerpunkt": "I.3",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 56 — Pflege psychische Erkrankungen (PDF S.1385-1434)"
+      ],
+      "themen": "ADHS, Essstörungen (Anorexie, Bulimie), Depression Jugendliche, Selbstverletzendes Verhalten, Suizidalität Jugendliche, Trauma und PTBS, Kinder- und Jugendpsychiatrie, Elternarbeit",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-11-le-35",
+      "curriculumLE": 35,
+      "ceIds": [
+        "ce-11"
+      ],
+      "leId": "le-35-die-lebensqualitaet-der-an-demenz-erkran",
+      "title": "Die Lebensqualität der an Demenz erkrankten Menschen fördern",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.3",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 52 — Pflege Nervensystem (PDF S.1229-1282)"
+      ],
+      "themen": "Demenzformen (Alzheimer, vaskulär, Lewy-Body), Stadien, MMSE, DemTect, Validation (Feil), Personzentrierte Pflege (Kitwood), Milieutherapie, Herausforderndes Verhalten, Angehörigenentlastung",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-11-le-36",
+      "curriculumLE": 36,
+      "ceIds": [
+        "ce-11"
+      ],
+      "leId": "le-36-suchtkranke-menschen-und-ihre-angehoerig",
+      "title": "Suchtkranke Menschen und ihre Angehörigen bei der Alltagsgestaltung unterstützen",
+      "stunden": 20,
+      "kbSchwerpunkt": "I.3",
+      "prinzip": "Situation",
+      "anlage": 1,
+      "drittel": 2,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 56 — Pflege psychische Erkrankungen (PDF S.1385-1434)"
+      ],
+      "themen": "Alkoholabhängigkeit, Medikamentenabhängigkeit, Drogenabhängigkeit, Suchtmodelle, Motivierende Gesprächsführung, Entzug, Rückfallprophylaxe, Co-Abhängigkeit, Selbsthilfe (AA)",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-11-le-37",
+      "curriculumLE": 37,
+      "ceIds": [
+        "ce-11"
+      ],
+      "leId": "le-37-demenz-aus-interkultureller-perspektive",
+      "title": "Demenz aus interkultureller Perspektive deuten",
+      "stunden": 20,
+      "kbSchwerpunkt": "II.1",
+      "prinzip": "Wissenschaft",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 52 — Pflege Nervensystem (PDF S.1229-1282)",
+        "I Care Pflege: Kap. 42 — Pflege unterschiedlicher Kulturen (PDF S.851-860)"
+      ],
+      "themen": "Kultursensible Demenzpflege, Krankheitsverständnis in verschiedenen Kulturen, Sprachbarrieren bei Demenz, Biografiearbeit interkulturell, Angehörigenarbeit interkulturell",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-08-le-38",
+      "curriculumLE": 38,
+      "ceIds": [
+        "ce-08"
+      ],
+      "leId": "le-38-die-individuellen-faehigkeiten-von-mensc",
+      "title": "Die individuellen Fähigkeiten von Menschen mit Demenz aus interkultureller Perspektive deuten",
+      "stunden": 30,
+      "kbSchwerpunkt": "II.3",
+      "prinzip": "Situation",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 52 — Pflege Nervensystem (PDF S.1229-1282)",
+        "I Care Pflege: Kap. 12 — Ethisch handeln (PDF S.283-296)"
+      ],
+      "themen": "Ressourcenorientierung bei Demenz, Fähigkeitenprofile, Ethische Fragen bei Demenz, Freiheitsentziehung, Werdenfelser Weg, Advance Care Planning bei Demenz",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-04-le-39",
+      "curriculumLE": 39,
+      "ceIds": [
+        "ce-04"
+      ],
+      "leId": "le-39-angehoerige-im-umgang-mit-demenziell-ver",
+      "title": "Angehörige im Umgang mit demenziell veränderten Menschen und in der Erhaltung der eigenen Gesundheit unterstützen",
+      "stunden": 30,
+      "kbSchwerpunkt": "II.2",
+      "prinzip": "Situation",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 52 — Pflege Nervensystem (PDF S.1229-1282)",
+        "I Care Pflege: Kap. 22 — Informieren, Schulen, Beraten (PDF S.553-560)"
+      ],
+      "themen": "Pflegende Angehörige bei Demenz, Belastung und Entlastung, Pflegekurse, Beratungsstellen, Tagespflege, Verhinderungspflege, Selbstpflege Angehörige, Vorsorgevollmacht",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-04-le-40",
+      "curriculumLE": 40,
+      "ceIds": [
+        "ce-04"
+      ],
+      "leId": "le-40-die-immunabwehr-von-menschen-mit-onkolog",
+      "title": "Die Immunabwehr von Menschen mit onkologischen Erkrankungen unterstützen und Sekundärinfektionen vermeiden",
+      "stunden": 30,
+      "kbSchwerpunkt": "I.2",
+      "prinzip": "Situation",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 44 — Pflege Onkologie (PDF S.893-932)",
+        "I Care Pflege: Kap. 13 — Hygiene (PDF S.299-320)"
+      ],
+      "themen": "Immunsuppression bei Chemotherapie, Neutropenie, Infektionsprävention onkologisch, Schutzmaßnahmen, Mundpflege bei Mukositis, Ernährung bei Immunschwäche, Impfungen bei Immunsupprimierten",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-08-le-41",
+      "curriculumLE": 41,
+      "ceIds": [
+        "ce-08"
+      ],
+      "leId": "le-41-tumor--und-therapiebedingte-leiden-linde",
+      "title": "Tumor- und therapiebedingte Leiden lindern und das Wohlbefinden fördern",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.2",
+      "prinzip": "Situation",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 44 — Pflege Onkologie (PDF S.893-932)",
+        "I Care Pflege: Kap. 21 — Schmerzmanagement (PDF S.533-552)"
+      ],
+      "themen": "Tumorschmerz, Fatigue, Übelkeit/Erbrechen, Alopezie, Lymphödem, Psychoonkologie, Palliative Onkologie, Komplementäre Verfahren, Lebensqualität bei Krebs",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-05-le-42",
+      "curriculumLE": 42,
+      "ceIds": [
+        "ce-05"
+      ],
+      "leId": "le-42-menschen-mit-chronischen-wunden-pflegen",
+      "title": "Menschen mit chronischen Wunden pflegen und unterstützen",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.1",
+      "prinzip": "Situation",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 28 — Wundmanagement (PDF S.669-694)"
+      ],
+      "themen": "Wundheilungsphasen, Chronische Wunden (Ulcus cruris, Dekubitus Grad III-IV, Diabetisches Fußsyndrom), Wundassessment, Wunddokumentation, Moderne Wundversorgung, DNQP Dekubitusprophylaxe, Schmerzmanagement bei Wundversorgung",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-05-le-43",
+      "curriculumLE": 43,
+      "ceIds": [
+        "ce-05"
+      ],
+      "leId": "le-43-menschen-aller-altersstufen-mit-akuten-e",
+      "title": "Menschen aller Altersstufen mit akuten Erkrankungen und Störungen des Urogenitalsystems pflegen",
+      "stunden": 30,
+      "kbSchwerpunkt": "I.3",
+      "prinzip": "Situation",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 53 — Pflege Urogenitalsystem (PDF S.1283-1322)"
+      ],
+      "themen": "Harnwegsinfekt, Nierensteine, Niereninsuffizienz (akut/chronisch), Dialyse (Hämo-/Peritonealdialyse), Prostatahyperplasie, Blasenkarzinom, Katheterisierung, Urostoma",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-09-le-44",
+      "curriculumLE": 44,
+      "ceIds": [
+        "ce-09"
+      ],
+      "leId": "le-44-institutionelle-und-rechtliche-rahmenbed",
+      "title": "Institutionelle und rechtliche Rahmenbedingungen ambulanter Pflegeeinrichtungen im Pflegehandeln berücksichtigen",
+      "stunden": 40,
+      "kbSchwerpunkt": "IV.2",
+      "prinzip": "Persönlichkeit",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 34 — Pflege im häuslichen Umfeld (PDF S.745-754)",
+        "I Care Pflege: Kap. 7 — Rechtliche Grundlagen (PDF S.173-192)"
+      ],
+      "themen": "Ambulante Pflegedienste (Organisation, Recht), SGB XI, Pflegeversicherung, Pflegekassenverträge, Qualitätsprüfung (MDK/PKV), Tourenplanung, Pflegevertrag, Haftung ambulant",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-05-le-45",
+      "curriculumLE": 45,
+      "ceIds": [
+        "ce-05",
+        "ce-08",
+        "ce-09"
+      ],
+      "leId": "le-45-die-qualitaet-der-pflege-in-den-verschie",
+      "title": "Die Qualität der Pflege in den verschiedenen Institutionen sicherstellen",
+      "stunden": 40,
+      "kbSchwerpunkt": "IV.1",
+      "prinzip": "Situation",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 6 — Pflegeorganisation (PDF S.139-172)"
+      ],
+      "themen": "Qualitätsmanagement (KTQ, DIN EN ISO), Expertenstandards anwenden, Pflegevisiten, Qualitätsindikatoren, Pflege-TÜV, Transparenzberichte, Nationale Pflegeleitlinien, Evidenzbasierung",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-05-le-46",
+      "curriculumLE": 46,
+      "ceIds": [
+        "ce-05"
+      ],
+      "leId": "le-46-verantwortung-fuer-die-prozesssteuerung",
+      "title": "Verantwortung für die Prozesssteuerung im Krankenhaus übernehmen",
+      "stunden": 40,
+      "kbSchwerpunkt": "III.1",
+      "prinzip": "Persönlichkeit",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 6 — Pflegeorganisation (PDF S.139-172)",
+        "I Care Pflege: Kap. 33 — Pflege im Krankenhaus (PDF S.737-744)"
+      ],
+      "themen": "Pflegeprozesssteuerung, Primary Nursing, Bezugspflege, Stationsorganisation, Dienstplanung, Entlassungsmanagement (DNQP), Bettendisposition, Delegation steuern",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-07-le-47",
+      "curriculumLE": 47,
+      "ceIds": [
+        "ce-07",
+        "ce-11"
+      ],
+      "leId": "le-47-prozesse-der-geriatrischen-komplexbehand",
+      "title": "Prozesse der geriatrischen Komplexbehandlung koordinieren und erforderliche Pflegehandlungen steuern und durchführen",
+      "stunden": 40,
+      "kbSchwerpunkt": "III.1",
+      "prinzip": "Situation",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 37 — Pflege chronisch Kranker (PDF S.773-782)",
+        "I Care Pflege: Kap. 35 — Pflege in Langzeiteinrichtungen (PDF S.755-762)"
+      ],
+      "themen": "Geriatrisches Assessment (Barthel, MMSE, GDS), Frührehabilitative Komplexbehandlung, Multimorbidität, Polypharmazie, Sturzsyndrom, Delir, Frailty, Geriatrisches Team",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-07-le-48",
+      "curriculumLE": 48,
+      "ceIds": [
+        "ce-07",
+        "ce-10"
+      ],
+      "leId": "le-48-bei-der-rehabilitation-von-menschen-mit",
+      "title": "Bei der Rehabilitation von Menschen mit neurologischen Erkrankungen mitwirken",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.1",
+      "prinzip": "Situation",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 52 — Pflege Nervensystem (PDF S.1229-1282)"
+      ],
+      "themen": "Neurologische Rehabilitation, Schädel-Hirn-Trauma, Querschnittlähmung, Multiple Sklerose, Parkinson, Bobath, Basale Stimulation, Schluckstörungen, Neuroplastizität",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-07-le-49",
+      "curriculumLE": 49,
+      "ceIds": [
+        "ce-07"
+      ],
+      "leId": "le-49-menschen-pflegen-und-bei-der-alltagsgest",
+      "title": "Menschen pflegen und bei der Alltagsgestaltung unterstützen, die einen Schlaganfall erlitten haben",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.3",
+      "prinzip": "Situation",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 52 — Pflege Nervensystem (PDF S.1229-1282)"
+      ],
+      "themen": "Schlaganfall (ischämisch, hämorrhagisch), FAST-Test, Stroke Unit, Hemiplegie-Pflege, Neglect, Aphasie, Dysphagie, Bobath-Konzept, Frühmobilisation, Langzeit-Rehabilitation, Angehörigenberatung",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-04-le-50",
+      "curriculumLE": 50,
+      "ceIds": [
+        "ce-04",
+        "ce-05"
+      ],
+      "leId": "le-50-pflegehandeln-an-aktuellen-pflegewissens",
+      "title": "Pflegehandeln an aktuellen pflegewissenschaftlichen Erkenntnissen ausrichten",
+      "stunden": 30,
+      "kbSchwerpunkt": "V.1",
+      "prinzip": "Wissenschaft",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 15,
+        "KB-II": 15,
+        "KB-III": 5,
+        "KB-IV": 15,
+        "KB-V": 50
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 4 — Pflegewissenschaft (PDF S.103-118)"
+      ],
+      "themen": "Evidence-Based Nursing, Literaturrecherche, Studiendesigns bewerten, Pflegeforschung, Leitlinien und Expertenstandards, Implementierung von Forschungsergebnissen, Pflegeinformatik",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-05-le-51",
+      "curriculumLE": 51,
+      "ceIds": [
+        "ce-05"
+      ],
+      "leId": "le-51-als-angehoerige-der-berufsgruppe-der-pfl",
+      "title": "Als Angehörige der Berufsgruppe der Pflegenden agieren",
+      "stunden": 30,
+      "kbSchwerpunkt": "V.2",
+      "prinzip": "Persönlichkeit",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 15,
+        "KB-II": 15,
+        "KB-III": 5,
+        "KB-IV": 15,
+        "KB-V": 50
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 1 — Professionelle Pflege (PDF S.23-36)",
+        "I Care Pflege: Kap. 2 — Ausbildung und Beruf (PDF S.37-80)"
+      ],
+      "themen": "Berufspolitik, Pflegekammer, Berufsverbände, Gewerkschaften, Berufliche Interessensvertretung, Professionelle Identität, Pflegeethik, Karriereentwicklung, Akademisierung der Pflege",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-11-le-52",
+      "curriculumLE": 52,
+      "ceIds": [
+        "ce-11"
+      ],
+      "leId": "le-52-menschen-mit-psychischen-beeintraechtigu",
+      "title": "Menschen mit psychischen Beeinträchtigungen therapeutisch begleiten",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.3",
+      "prinzip": "Situation",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 56 — Pflege psychische Erkrankungen (PDF S.1385-1434)"
+      ],
+      "themen": "Therapeutische Beziehung, Peplau, Deeskalation, Umgang mit Aggression, Suizidprävention, Recovery, Empowerment, Trialog, Gemeindepsychiatrie, Soteria-Konzept, PsychKG, Zwangsmaßnahmen",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-10-le-53",
+      "curriculumLE": 53,
+      "ceIds": [
+        "ce-10"
+      ],
+      "leId": "le-53-bei-der-versorgung-fruehgeborener-kinder",
+      "title": "Bei der Versorgung frühgeborener Kinder mitwirken",
+      "stunden": 40,
+      "kbSchwerpunkt": "I.3",
+      "prinzip": "Situation",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 43 — Schwangerschaft, Geburt, Wochenbett (PDF S.861-892)"
+      ],
+      "themen": "Frühgeburtlichkeit, Neonatologie, Inkubatorpflege, Känguru-Methode, Developmental Care, Ernährung Frühgeborener, Bonding, Elternbegleitung, Palliative Neonatologie, Ethische Grenzfragen",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-06-le-54",
+      "curriculumLE": 54,
+      "ceIds": [
+        "ce-06"
+      ],
+      "leId": "le-54-notfallsituationen-koordinieren",
+      "title": "Notfallsituationen koordinieren",
+      "stunden": 30,
+      "kbSchwerpunkt": "I.4",
+      "prinzip": "Situation",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 23 — Notfallsituationen (PDF S.561-590)",
+        "I Care Pflege: Kap. 40 — Pflege auf Intensivstation (PDF S.817-834)"
+      ],
+      "themen": "Advanced Life Support (Pflegeanteil), Crew Resource Management, Notfallteam koordinieren, Geriatrische Notfälle, Pädiatrische Notfälle, Psychiatrische Notfälle, Debriefing, Fehlermanagement, Katastrophenschutz",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    },
+    {
+      "id": "ce-06-le-55",
+      "curriculumLE": 55,
+      "ceIds": [
+        "ce-06"
+      ],
+      "leId": "le-55-zum-thema-organspende-und-organtransplan",
+      "title": "Zum Thema Organspende und Organtransplantation mitwirken",
+      "stunden": 30,
+      "kbSchwerpunkt": "I.4",
+      "prinzip": "Persönlichkeit",
+      "anlage": 2,
+      "drittel": 3,
+      "kbGewichtung": {
+        "KB-I": 50,
+        "KB-II": 20,
+        "KB-III": 15,
+        "KB-IV": 10,
+        "KB-V": 5
+      },
+      "icareKapitel": [
+        "I Care Pflege: Kap. 12 — Ethisch handeln (PDF S.283-296)",
+        "I Care Pflege: Kap. 41 — Pflege Sterbender (PDF S.835-850)"
+      ],
+      "themen": "Transplantationsgesetz, Hirntoddiagnostik, Organspendeprozess, Transplantationskoordinator, Pflege nach Transplantation, Immunsuppression, Ethische Aspekte, Angehörigengespräch, Organspende-Aufklärung",
+      "passes": true,
+      "quellenCount": 6,
+      "faktenCount": 25
+    }
+  ]
+}

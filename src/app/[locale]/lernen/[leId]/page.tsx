@@ -42,6 +42,7 @@ import { StepLabelImage } from "@/components/learn/step-label-image";
 import { StepDiagram } from "@/components/learn/step-diagram";
 import { StepImageInteraction } from "@/components/learn/step-image-interaction";
 import { KiChat } from "@/components/learn/ki-chat";
+import { HandDrawnIcon, EmojiIcon } from "@/components/ui/hand-drawn-icon";
 import { StreakBadge } from "@/components/learn/streak-badge";
 import { Confetti } from "@/components/learn/confetti";
 import { FeedbackOverlay } from "@/components/learn/lottie-feedback";
@@ -545,7 +546,7 @@ export default function LernenPage() {
     return (
       <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center">
         <div className="mx-auto max-w-md text-center space-y-4 px-4">
-          <div className="text-5xl">📚</div>
+          <HandDrawnIcon name="books" size={48} color="#6e6e73" />
           <h1 className="text-2xl font-bold text-[#1d1d1f]">
             {manifest ? manifest.title : "Lektion nicht gefunden"}
           </h1>
@@ -580,8 +581,8 @@ export default function LernenPage() {
             animate={{ opacity: 1, scale: 1 }}
             className="rounded-3xl bg-white border border-[#d2d2d7] p-8 text-center space-y-6"
           >
-            <div className="text-6xl">
-              {percentage >= 80 ? "🎉" : percentage >= 60 ? "👏" : "💪"}
+            <div>
+              <HandDrawnIcon name={percentage >= 80 ? "celebration" : percentage >= 60 ? "clap" : "muscle"} size={56} color={percentage >= 80 ? "#30D158" : percentage >= 60 ? "#FF9500" : "#0071e3"} />
             </div>
             <h1 className="text-3xl font-bold text-[#1d1d1f]">
               Lerneinheit abgeschlossen!
@@ -639,8 +640,8 @@ export default function LernenPage() {
                     href={emp.leId ? `/de/lernen/${emp.leId}` : "/de/dashboard"}
                     className="flex items-center gap-3 rounded-xl bg-[#f5f5f7] p-3 transition-all active:scale-[0.98]"
                   >
-                    <span className="text-lg shrink-0">
-                      {emp.typ === "weiter" ? "▶️" : emp.typ === "neue-session" ? "📖" : emp.typ === "neue-le" ? "🆕" : emp.typ === "wiederholung" ? "🔄" : "⚡"}
+                    <span className="shrink-0">
+                      <HandDrawnIcon name={emp.typ === "weiter" ? "arrow-right" : emp.typ === "neue-session" ? "book" : emp.typ === "neue-le" ? "new" : emp.typ === "wiederholung" ? "refresh" : "lightning"} size={20} color="#1d1d1f" />
                     </span>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-medium text-[#1d1d1f] truncate">{emp.grund}</p>
@@ -1005,7 +1006,7 @@ export default function LernenPage() {
             className="mx-auto max-w-2xl px-4 pt-4"
           >
             <div className="rounded-2xl bg-[#AF52DE]/5 border border-[#AF52DE]/20 p-4 flex items-center gap-3">
-              <span className="text-2xl shrink-0">⚡</span>
+              <HandDrawnIcon name="lightning" size={24} color="#AF52DE" className="shrink-0" />
               <div className="flex-1">
                 <p className="text-sm font-semibold text-[#1d1d1f]">
                   Läuft bei dir! Mehr Herausforderung?

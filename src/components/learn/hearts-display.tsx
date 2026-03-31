@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
+import { HandDrawnIcon } from "@/components/ui/hand-drawn-icon";
 
 interface HeartsDisplayProps {
   hearts: number;
@@ -19,16 +20,16 @@ export function HeartsDisplay({ hearts, maxHearts }: HeartsDisplayProps) {
               animate={{ scale: 1 }}
               className="text-sm"
             >
-              ❤️
+              <HandDrawnIcon name="heart" size={14} color="#FF3B30" />
             </motion.span>
           ) : (
             <motion.span
               key="empty"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 0.3 }}
-              className="text-sm grayscale"
+              className="text-sm"
             >
-              🤍
+              <HandDrawnIcon name="heart" size={14} color="#d2d2d7" />
             </motion.span>
           )}
         </AnimatePresence>

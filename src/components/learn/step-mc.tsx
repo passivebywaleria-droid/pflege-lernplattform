@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
+import { HandDrawnIcon } from "@/components/ui/hand-drawn-icon";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface MCOption {
@@ -171,7 +172,7 @@ export function StepMC({
             }`}
           >
             <p className="font-semibold">
-              {isCorrect ? "✅ Richtig!" : "❌ Nicht ganz richtig"}
+              <span className="inline-flex items-center gap-1.5">{isCorrect ? <><HandDrawnIcon name="check" size={18} color="#30D158" /> Richtig!</> : <><HandDrawnIcon name="cross" size={18} color="#FF3B30" /> Nicht ganz richtig</>}</span>
             </p>
           </motion.div>
 

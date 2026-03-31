@@ -1,232 +1,345 @@
-// Session 3: "Wie redet man professionell?" — LE 01
-// Generiert vom Content-Generator v2
-// Themen: Kommunikationsebenen, 4-Ohren-Modell, Distanzzonen, professionelle Naehe/Distanz
-// Leitfall: Yasemin — Naehe-Distanz-Konflikt bei Herr Brenner (Szene S2)
-// Bloom: B2-B3, 22 Steps, ~30 Min
-// Interleaving: 1 Frage aus anderem Thema (Step 19 Timer, Maslow I5)
+// Session 3: "Miteinander sprechen" — LE 01 Personen- und situationsorientiert pflegen
+// Generiert vom Content-Generator v2.1 mit Phasen-Bogen
+// TB5: Kommunikation Grundlagen (KB-II, F09-F13) + TB6: Kommunikation Praxis (KB-II, F14-F16, F12)
+// Leitfall: Yasemin Demirci — Nähe-Distanz-Wendepunkt, Herr Brenner weint (Szene S2)
+// Bloom: B1-B3, 22 Steps, ~30 Min
 
 import type { ContentStep } from "../_types";
 
 export const STEPS_S3: ContentStep[] = [
   // =============================================================
-  // Step 1: Dialog — Yasemin: Herr Brenner weint (STORY)
+  // Step 1: Session-Bookend — Vorwissen aktivieren
   // =============================================================
   {
-    stepId: "le01-s3-01",
+    stepId: "le01-s3-bk-01",
     phase: "s3",
-    stepType: "dialog",
-    bloomLevel: 2,
+    stepType: "selfrating",
+    bloomLevel: 1,
     kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.248-249"],
+    quellen: [],
     track: "basis",
-    modus: "story",
+    modus: "checkpoint",
     lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "CHECKPOINT",
     contentC1: {
-      title: "Tag 3: Der weinende Patient",
-      body: "Yasemin erlebt eine Situation, die sie an ihre Grenzen bringt.",
-      fallbezug: "Mittwoch, Nachmittagsschicht. Herr Brenner, 82, hat gerade Besuch von seiner Tochter gehabt.",
+      title: "Dein Wissensstand",
+      body: "Schätze dich ein: Wie gut kennst du dich mit Kommunikation in der Pflege aus?",
     },
     contentB1: {
-      title: "Tag 3: Der Patient weint",
-      body: "Yasemin erlebt eine schwierige Situation.",
-      fallbezug: "Es ist Mittwoch. Herr Brenner, 82 Jahre alt, hat gerade Besuch von seiner Tochter gehabt.",
+      title: "Was weißt du schon?",
+      body: "Wie gut kennst du dich mit Kommunikation aus? Schätze dich ein.",
     },
     question: {
-      fragetext: "Begleite Yasemin in dieser schwierigen Situation.",
-      patientName: "Herr Brenner",
-      dialogPhases: [
-        {
-          context: "Herr Brenner weint. Seine Frau ist vor 3 Monaten gestorben. Er sagt zu Yasemin: 'Du bist die Einzige, die mir zuhoert, Kind.'",
-          contextB1: "Herr Brenner weint. Seine Frau ist vor 3 Monaten gestorben. Er sagt: 'Du bist die Einzige, die mir zuhoert.'",
-          speaker: "Yasemin (denkt)",
-          options: [
-            {
-              text: "Ich bleibe bei ihm. Er braucht mich jetzt. Die Vitalzeichen bei den anderen Patienten koennen warten.",
-              textB1: "Ich bleibe bei ihm. Er braucht mich jetzt. Die anderen Patienten koennen warten.",
-              patientResponse: "Yasemin bleibt 40 Minuten bei Herrn Brenner. Sie hoert zu, haelt seine Hand. Dabei vergisst sie die Vitalzeichenkontrolle bei zwei anderen Patienten.",
-              patientResponseB1: "Yasemin bleibt 40 Minuten. Sie hoert zu und haelt seine Hand. Aber sie vergisst zwei andere Patienten.",
-              score: 1,
-              feedback: "Empathie ist wichtig — aber ohne Struktur koennen andere Patienten gefaehrdet werden. Professionelle Naehe braucht eine Balance.",
-              feedbackB1: "Mitgefuehl ist wichtig! Aber 40 Minuten sind zu lang, wenn andere Patienten warten.",
-            },
-            {
-              text: "Ich hoere 3 Minuten zu, sage ihm, dass ich wiederkomme — und pruefe dann die Vitalzeichen bei den anderen.",
-              textB1: "Ich hoere kurz zu, sage ihm: Ich komme wieder. Dann gehe ich zu den anderen Patienten.",
-              patientResponse: "Herr Brenner nickt. Yasemin geht, prueft die Vitalzeichen und kommt nach 20 Minuten zurueck. Herr Brenner laechelt: 'Du hast Wort gehalten.'",
-              patientResponseB1: "Herr Brenner versteht. Yasemin kommt nach 20 Minuten zurueck. Herr Brenner laechelt: 'Du hast Wort gehalten.'",
-              score: 3,
-              feedback: "Professionelle Empathie: Praesent sein, ohne die Verantwortung fuer andere zu vergessen. Ein klares Versprechen wiederzukommen schafft Vertrauen.",
-              feedbackB1: "Genau richtig! Kurz zuhoeren, versprechen wiederzukommen und dann die anderen Patienten versorgen.",
-            },
-          ],
-        },
+      fragetext: "Wie sicher fühlst du dich bei diesen Aussagen?",
+      statements: [
+        "Ich kann den Unterschied zwischen verbaler und nonverbaler Kommunikation erklären.",
+        "Ich kenne das 4-Ohren-Modell nach Schulz von Thun.",
+        "Ich weiß, was kongruente Kommunikation bedeutet.",
+        "Ich kann erklären, was Distanzzonen sind.",
+        "Ich weiß, wie man professionell auf einen weinenden Patienten reagiert.",
       ],
     },
   },
 
   // =============================================================
-  // Step 2: Swipe — Brilliant-Prinzip: Reaktionen bewerten (ENTDECKER)
+  // TB5: Kommunikation Grundlagen — SZENE (Phase 1)
   // =============================================================
   {
-    stepId: "le01-s3-02",
+    stepId: "le01-s3-tb5-01",
     phase: "s3",
-    stepType: "swipe",
+    stepType: "dialog",
     bloomLevel: 2,
     kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.254-256"],
+    quellen: [],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "SZENE",
+    contentC1: {
+      title: "Herr Brenner weint",
+      body: "Tag 3 auf der Station. Nachmittagsschicht. Yasemin hat gerade die Betten gemacht, als sie leises Schluchzen aus Zimmer 7 hört.",
+      fallbezug: "Herr Brenner, 82, hat gerade Besuch von seiner Tochter gehabt. Seine Frau ist vor 3 Monaten gestorben.",
+    },
+    contentB1: {
+      title: "Ein Patient weint",
+      body: "Tag 3. Yasemin hört jemanden weinen. Es ist Herr Brenner aus Zimmer 7.",
+      fallbezug: "Herr Brenner ist 82 Jahre alt. Seine Frau ist vor 3 Monaten gestorben.",
+    },
+    question: {
+      fragetext: "Yasemin geht in das Zimmer:",
+      dialogLines: [
+        { speaker: "Herr Brenner", text: "Du bist die Einzige, die mir zuhört, Kind." },
+        { speaker: "Yasemin", text: "Ich bin hier, Herr Brenner. Was ist passiert?" },
+        { speaker: "Herr Brenner", text: "Meine Tochter war gerade da. Sie hat mir gesagt, ich soll stark sein. Aber ich kann nicht mehr stark sein." },
+        { speaker: "Yasemin", text: "Sie müssen nicht stark sein. Es ist in Ordnung zu weinen." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB5: ERKLÄRUNG (Phase 2) — 3 Ebenen der Kommunikation
+  // =============================================================
+  {
+    stepId: "le01-s3-tb5-02",
+    phase: "s3",
+    stepType: "text",
+    bloomLevel: 1,
+    kompetenzbereich: "KB-II",
+    quellen: ["Q5 S.248-249"],
     track: "basis",
     modus: "entdecker",
     lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "ERKLÄRUNG",
+    imageUrl: "/images/content/le-01/kommunikation-ebenen.svg",
+    imageAlt: "Grafik: 3 Ebenen der Kommunikation — verbal, paraverbal, nonverbal",
     contentC1: {
-      title: "Wie haettest du reagiert?",
-      body: "Ein Patient weint und bittet dich zu bleiben. Es gibt verschiedene Reaktionen.",
+      title: "Die 3 Ebenen der Kommunikation",
+      body: "Kommunikation ist mehr als nur Worte. Sie findet auf drei Ebenen gleichzeitig statt:\n\n**Verbal:** Das gesprochene oder geschriebene Wort — der Inhalt der Nachricht.\n\n**Paraverbal:** Wie etwas gesagt wird — Tonfall, Sprechtempo, Lautstärke, Pausen. Die paraverbale Ebene verrät oft mehr als die Worte selbst.\n\n**Nonverbal:** Körpersprache, Mimik, Gestik, Blickkontakt, Körperhaltung. Studien zeigen: Über 60% der Kommunikation läuft nonverbal ab.",
+      fallbezug: "Herr Brenner sagt wenig — aber sein Weinen, seine Körperhaltung und sein Blick sagen alles. Yasemin hat das erkannt.",
     },
     contentB1: {
-      title: "Was wuerdest du tun?",
-      body: "Ein Patient weint. Er will, dass du bleibst. Was ist richtig?",
+      title: "3 Arten zu kommunizieren",
+      body: "Kommunikation hat 3 Ebenen:\n\n**Verbal:** Was man sagt — die Worte.\n\n**Paraverbal:** Wie man es sagt — laut oder leise, schnell oder langsam.\n\n**Nonverbal:** Körpersprache — Gesicht, Hände, Blick.\n\nMehr als 60% der Kommunikation läuft ohne Worte ab.",
+      fallbezug: "Herr Brenner weint. Er sagt wenig, aber Yasemin versteht ihn trotzdem.",
+    },
+  },
+
+  // =============================================================
+  // TB5: ERKLÄRUNG (Phase 2) — 4-Ohren-Modell Mindmap
+  // =============================================================
+  {
+    stepId: "le01-s3-tb5-03",
+    phase: "s3",
+    stepType: "diagram",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-II",
+    quellen: ["Q5 S.252"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "ERKLÄRUNG",
+    contentC1: {
+      title: "Das 4-Ohren-Modell nach Schulz von Thun",
+      body: "Jede Nachricht hat 4 Seiten — und der Empfänger hört mit 4 verschiedenen Ohren.",
+    },
+    contentB1: {
+      title: "4 Ohren — 4 Bedeutungen",
+      body: "Jeder Satz hat 4 Bedeutungen. Schau dir das Modell an.",
     },
     question: {
-      fragetext: "Wische rechts fuer 'professionell' und links fuer 'nicht professionell'.",
-      swipe: {
-        instruction: "Ist diese Reaktion professionell?",
-        cards: [
-          {
-            statement: "Ich bleibe so lange wie noetig — die anderen Patienten koennen warten.",
-            statementB1: "Ich bleibe so lange er will. Die anderen koennen warten.",
-            isCorrect: false,
-            explanation: "Empathie ohne Zeitmanagement gefaehrdet andere Patienten. Professionelle Naehe hat Grenzen.",
-            explanationB1: "Mitgefuehl ist gut, aber andere Patienten brauchen dich auch.",
-          },
-          {
-            statement: "Ich hoere kurz zu, sage wann ich wiederkomme und gehe dann zu den anderen Patienten.",
-            statementB1: "Ich hoere kurz zu, sage wann ich zurueckkomme und gehe dann.",
-            isCorrect: true,
-            explanation: "Professionelle Empathie: Praesent sein, Versprechen geben, Verantwortung wahren.",
-            explanationB1: "Richtig! Kurz zuhoeren, versprechen wiederzukommen, dann weiterarbeiten.",
-          },
-          {
-            statement: "Ich sage: 'Tut mir leid, ich muss zu einer anderen Patientin' und gehe sofort.",
-            statementB1: "Ich sage: 'Ich muss jetzt gehen' und gehe sofort.",
-            isCorrect: false,
-            explanation: "Abruptes Gehen beschaedigt das Vertrauensverhaeltnis. Ein Satz wie 'Ich komme wieder' kann alles veraendern.",
-            explanationB1: "Einfach gehen ist nicht gut. Ein kurzer Satz hilft: 'Ich komme in 20 Minuten wieder.'",
-          },
-          {
-            statement: "Ich frage eine Kollegin, ob sie kurz bei ihm bleiben kann, waehrend ich die Vitalzeichen pruefe.",
-            statementB1: "Ich frage eine Kollegin: 'Kannst du kurz bei ihm bleiben?'",
-            isCorrect: true,
-            explanation: "Teamarbeit nutzen: Eine Kollegin informieren zeigt Verantwortung fuer den Patienten UND das Team.",
-            explanationB1: "Gute Idee! Eine Kollegin bitten ist professionell. So ist er nicht allein.",
-          },
+      fragetext: "Beispiel: Herr Brenner sagt: 'Du bist die Einzige, die mir zuhört.'",
+      diagram: {
+        diagramType: "mindmap",
+        instruction: "Die 4 Seiten einer Nachricht am Beispiel von Herrn Brenner:",
+        nodes: [
+          { id: "center", label: "'Du bist die Einzige, die mir zuhört.'" },
+          { id: "sach", label: "Sachinhalt" },
+          { id: "sach-detail", label: "Die anderen hören mir nicht zu." },
+          { id: "selbst", label: "Selbstoffenbarung" },
+          { id: "selbst-detail", label: "Ich fühle mich einsam und unverstanden." },
+          { id: "bezieh", label: "Beziehung" },
+          { id: "bezieh-detail", label: "Du bist mir wichtig. Ich vertraue dir." },
+          { id: "appell", label: "Appell" },
+          { id: "appell-detail", label: "Bitte bleib bei mir. Geh nicht weg." },
+        ],
+        edges: [
+          { from: "center", to: "sach" },
+          { from: "center", to: "selbst" },
+          { from: "center", to: "bezieh" },
+          { from: "center", to: "appell" },
+          { from: "sach", to: "sach-detail" },
+          { from: "selbst", to: "selbst-detail" },
+          { from: "bezieh", to: "bezieh-detail" },
+          { from: "appell", to: "appell-detail" },
         ],
       },
     },
   },
 
   // =============================================================
-  // Step 3: Text — Kommunikationsebenen (ENTDECKER)
+  // TB5: CHECKPOINT (Phase 3) — MC Kongruenz
   // =============================================================
   {
-    stepId: "le01-s3-03",
+    stepId: "le01-s3-tb5-04",
     phase: "s3",
-    stepType: "text",
+    stepType: "mc",
     bloomLevel: 2,
     kompetenzbereich: "KB-II",
     quellen: ["Q5 S.248-249"],
     track: "basis",
-    modus: "entdecker",
+    modus: "challenge",
     lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "CHECKPOINT",
     contentC1: {
-      title: "Drei Ebenen der Kommunikation",
-      body: "Kommunikation besteht aus drei Ebenen: verbal (gesprochenes und geschriebenes Wort), paraverbal (Tonfall, Sprechtempo, Lautstaerke) und nonverbal (Koerpersprache, Mimik, Gestik). Watzlawicks Grundaussage lautet: 'Man kann nicht nicht kommunizieren.' Auch Schweigen ist Kommunikation.",
-      glossarBegriffe: ["Empathie"],
+      title: "Kurzer Check!",
+      body: "Ein Patient sagt 'Alles gut' — aber seine Stimme zittert und er vermeidet Blickkontakt. Was liegt hier vor?",
     },
     contentB1: {
-      title: "Wie kommunizieren wir?",
-      body: "Kommunikation hat drei Ebenen: verbal (Worte), paraverbal (Stimme, Lautstaerke) und nonverbal (Koerpersprache, Gesichtsausdruck). Wichtig: Auch wenn du nichts sagst, kommunizierst du. Dein Koerper spricht immer.",
-      glossarBegriffe: ["Empathie"],
+      title: "Kurzer Check!",
+      body: "Der Patient sagt 'Alles gut'. Aber seine Stimme zittert und er schaut weg. Was bedeutet das?",
+    },
+    question: {
+      fragetext: "Der Patient sagt 'Mir geht es gut' mit zittriger Stimme und ohne Blickkontakt. Was liegt vor?",
+      optionen: [
+        { text: "Inkongruente Kommunikation — verbale und nonverbale Botschaft widersprechen sich", isCorrect: true, explanation: "Richtig! Die Worte sagen 'gut', aber Stimme (paraverbal) und Blickvermeidung (nonverbal) signalisieren das Gegenteil. Das nennt man inkongruente Kommunikation." },
+        { text: "Kongruente Kommunikation — alles passt zusammen", isCorrect: false, explanation: "Nein. Bei kongruenter Kommunikation stimmen Worte, Stimme und Körpersprache überein. Hier widersprechen sie sich." },
+        { text: "Verbale Kommunikation ist immer wichtiger als nonverbale", isCorrect: false, explanation: "Im Gegenteil: Wenn verbale und nonverbale Signale sich widersprechen, vertrauen Menschen eher der Körpersprache." },
+        { text: "Der Patient lügt bewusst", isCorrect: false, explanation: "Inkongruenz bedeutet nicht Lüge. Oft können Patienten ihre Gefühle nicht in Worte fassen — die Körpersprache zeigt aber, wie es ihnen wirklich geht." },
+      ],
     },
   },
 
   // =============================================================
-  // Step 4: Diagram — Mindmap Kommunikation (ENTDECKER)
+  // TB5: ANDERS_ERKLÄRT (Phase 4) — Vergleichstabelle
   // =============================================================
   {
-    stepId: "le01-s3-04",
+    stepId: "le01-s3-tb5-05",
     phase: "s3",
-    stepType: "diagram",
+    stepType: "comparison",
     bloomLevel: 2,
     kompetenzbereich: "KB-II",
     quellen: ["Q5 S.248-251"],
     track: "basis",
     modus: "entdecker",
     lernziel: "ce01-le01-kommunikation",
-    imageUrl: "/images/le01/mindmap-kommunikation.svg",
-    imageAlt: "Mindmap: 3 Kommunikationsebenen mit Beispielen",
+    themenblockPhase: "ANDERS_ERKLÄRT",
     contentC1: {
-      title: "Kommunikation im Ueberblick",
-      body: "Drei Ebenen der Kommunikation — jede mit eigenen Signalen.",
+      title: "Verbal — Paraverbal — Nonverbal",
+      body: "Die drei Ebenen der Kommunikation im Vergleich. Achte auf die Beispiele aus dem Pflegealltag.",
     },
     contentB1: {
-      title: "Kommunikation im Ueberblick",
-      body: "Drei Arten zu kommunizieren — mit verschiedenen Signalen.",
+      title: "3 Ebenen im Vergleich",
+      body: "Vergleiche die 3 Arten der Kommunikation. Schau dir die Beispiele an.",
     },
     question: {
-      fragetext: "Erkunde die drei Ebenen der Kommunikation.",
-      diagram: {
-        diagramType: "mindmap",
-        instruction: "Tippe auf die Bereiche, um Beispiele zu sehen.",
-        nodes: [
-          { id: "komm", label: "Kommunikation", labelB1: "Kommunikation", highlight: true },
-          { id: "verbal", label: "Verbal", labelB1: "Verbal (Worte)" },
-          { id: "paraverbal", label: "Paraverbal", labelB1: "Paraverbal (Stimme)" },
-          { id: "nonverbal", label: "Nonverbal", labelB1: "Nonverbal (Koerper)" },
-          { id: "v1", label: "Gesprochenes Wort", labelB1: "Sprechen" },
-          { id: "v2", label: "Geschriebenes Wort", labelB1: "Schreiben" },
-          { id: "p1", label: "Tonfall", labelB1: "Tonfall" },
-          { id: "p2", label: "Lautstaerke", labelB1: "Lautstaerke" },
-          { id: "n1", label: "Mimik", labelB1: "Gesichtsausdruck" },
-          { id: "n2", label: "Gestik", labelB1: "Handbewegungen" },
+      fragetext: "Vergleiche die drei Kommunikationsebenen:",
+      comparison: {
+        instruction: "Die drei Ebenen der Kommunikation im Pflegealltag:",
+        columns: [
+          { label: "Verbal", icon: "message-square" },
+          { label: "Paraverbal", icon: "volume-2" },
+          { label: "Nonverbal", icon: "eye" },
         ],
-        edges: [
-          { from: "komm", to: "verbal" },
-          { from: "komm", to: "paraverbal" },
-          { from: "komm", to: "nonverbal" },
-          { from: "verbal", to: "v1" },
-          { from: "verbal", to: "v2" },
-          { from: "paraverbal", to: "p1" },
-          { from: "paraverbal", to: "p2" },
-          { from: "nonverbal", to: "n1" },
-          { from: "nonverbal", to: "n2" },
+        rows: [
+          { criterion: "Was?", values: ["Gesprochenes Wort, Inhalt", "Tonfall, Tempo, Lautstärke", "Mimik, Gestik, Körperhaltung"], valuesB1: ["Die Worte", "Wie man spricht", "Gesicht und Körper"] },
+          { criterion: "Beispiel", values: ["'Mir geht es gut.'", "Zittrige, leise Stimme", "Zusammengesunkene Schultern, Tränen"], valuesB1: ["'Mir geht es gut.'", "Leise, zittrige Stimme", "Weinen, zusammengekauert"] },
+          { criterion: "Steuerbar?", values: ["Ja — man wählt die Worte bewusst", "Teilweise — Stimme verrät Gefühle", "Kaum — Körper reagiert automatisch"], valuesB1: ["Ja", "Manchmal", "Kaum"] },
+          { criterion: "Pflege-Relevanz", values: ["Anamnese, Übergabe, Dokumentation", "Erkennen von Angst, Schmerz, Unsicherheit", "Beobachtung: Mimik zeigt Schmerz, Depression"], valuesB1: ["Gespräche, Berichte", "Angst oder Schmerz hören", "Schmerz im Gesicht sehen"] },
+          { criterion: "Anteil", values: ["ca. 10%", "ca. 30%", "ca. 60%"], valuesB1: ["10%", "30%", "60%"] },
         ],
-        interactive: true,
       },
     },
   },
 
   // =============================================================
-  // Step 5: Categorize — Signale sortieren (SORTIERSTATION)
+  // TB5: STORYTELLING (Phase 5) — Watzlawick
   // =============================================================
   {
-    stepId: "le01-s3-05",
+    stepId: "le01-s3-tb5-06",
+    phase: "s3",
+    stepType: "text",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-II",
+    quellen: ["Q5 S.248"],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "STORYTELLING",
+    contentC1: {
+      title: "Man kann nicht nicht kommunizieren",
+      body: "Watzlawicks berühmtester Satz: **'Man kann nicht nicht kommunizieren.'**\n\nStell dir vor: Ein Patient liegt im Bett, dreht sich zur Wand und schweigt. Er sagt kein Wort. Kommuniziert er?\n\n**Ja!** Sein Schweigen, sein abgewandter Blick, seine Körperhaltung — all das sendet eine Botschaft: 'Lasst mich in Ruhe.' oder 'Ich bin traurig.' oder 'Ich habe aufgegeben.'\n\nFür Pflegende bedeutet das: Auch wenn ein Patient nicht spricht, müssen wir hinhören — mit den Augen.",
+      fallbezug: "Herr Brenner hat 2 Tage lang kaum gesprochen. Die anderen Pflegenden dachten: 'Er braucht nichts.' Yasemin hat seine Körpersprache gelesen.",
+    },
+    contentB1: {
+      title: "Auch Schweigen ist Kommunikation",
+      body: "**'Man kann nicht nicht kommunizieren.'** — Paul Watzlawick\n\nEin Patient liegt im Bett und schaut zur Wand. Er sagt nichts. Aber er kommuniziert trotzdem: Sein Körper sagt 'Ich bin traurig' oder 'Lasst mich allein.'\n\nPflegende müssen auch auf das achten, was Patienten NICHT sagen.",
+      fallbezug: "Herr Brenner hat 2 Tage lang fast nichts gesagt. Yasemin hat trotzdem erkannt, dass er Hilfe braucht.",
+    },
+  },
+
+  // =============================================================
+  // TB5: PATIENTEN_PERSPEKTIVE (Phase 7)
+  // =============================================================
+  {
+    stepId: "le01-s3-tb5-07",
+    phase: "s3",
+    stepType: "text",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-II",
+    quellen: [],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "PATIENTEN_PERSPEKTIVE",
+    contentC1: {
+      title: "Herr Brenners Sicht",
+      body: "**Aus dem Tagebuch von Herrn Brenner:**\n\n'Die Schwester heute Morgen hat gelächelt, als sie ins Zimmer kam. Aber ihre Augen waren müde. Sie hat gesagt, es gehe mir bestimmt bald besser. Aber sie hat mich dabei nicht angeschaut — sie hat auf die Infusion geschaut.\n\nNur die junge Auszubildende hat mich wirklich angesehen. Sie hat nicht viel gesagt. Aber sie hat zugehört. Das hat mir mehr geholfen als alle Tabletten.'",
+      fallbezug: "Herr Brenner erlebt den Unterschied: Kongruente Kommunikation (Yasemin) vs. inkongruente Kommunikation (Pflegekraft mit müden Augen).",
+    },
+    contentB1: {
+      title: "So erlebt es Herr Brenner",
+      body: "Herr Brenner denkt:\n\n'Die Schwester heute hat gelächelt. Aber ihre Augen waren müde. Sie hat mich nicht richtig angeschaut.\n\nDie junge Auszubildende war anders. Sie hat zugehört. Das hat mir geholfen.'",
+      fallbezug: "Herr Brenner merkt: Zuhören hilft mehr als leere Worte.",
+    },
+  },
+
+  // =============================================================
+  // TB5: ANGEHÖRIGEN_BERATUNG (Phase 8)
+  // =============================================================
+  {
+    stepId: "le01-s3-tb5-08",
+    phase: "s3",
+    stepType: "dialog",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-II",
+    quellen: [],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "ANGEHÖRIGEN_BERATUNG",
+    contentC1: {
+      title: "Die Tochter kommt",
+      body: "Herr Brenners Tochter spricht die Praxisanleiterin an. Sie macht sich Sorgen.",
+    },
+    contentB1: {
+      title: "Die Tochter hat Sorgen",
+      body: "Herr Brenners Tochter möchte mit der Pflegekraft sprechen.",
+    },
+    question: {
+      fragetext: "Gespräch mit der Tochter:",
+      dialogLines: [
+        { speaker: "Tochter", text: "Mein Vater sagt, er braucht nichts. Aber ich sehe, dass er leidet. Er isst kaum noch." },
+        { speaker: "Praxisanleiterin", text: "Danke, dass Sie das ansprechen. Ihre Beobachtung ist wichtig für uns." },
+        { speaker: "Tochter", text: "Kann ich irgendetwas tun? Er redet nicht mehr mit mir." },
+        { speaker: "Praxisanleiterin", text: "Manchmal reicht es, einfach da zu sein. Nicht reden müssen, nur anwesend sein. Das ist auch Kommunikation." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB5: ANWENDUNG (Phase 9) — Categorize
+  // =============================================================
+  {
+    stepId: "le01-s3-tb5-09",
     phase: "s3",
     stepType: "categorize",
     bloomLevel: 2,
     kompetenzbereich: "KB-II",
     quellen: ["Q5 S.248-251"],
     track: "basis",
-    modus: "sortierstation",
+    modus: "challenge",
     lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
-      title: "Kommunikationssignale sortieren",
-      body: "Jedes Signal gehoert zu einer der drei Kommunikationsebenen.",
+      title: "Welche Ebene?",
+      body: "Ordne die Signale zu: Ist das verbal, paraverbal oder nonverbal?",
     },
     contentB1: {
-      title: "Signale sortieren",
-      body: "Ordne die Signale der richtigen Ebene zu.",
+      title: "Sortiere die Signale",
+      body: "Welches Signal gehört zu welcher Ebene? Sortiere richtig.",
     },
     question: {
-      fragetext: "Ordne die Signale der richtigen Kommunikationsebene zu.",
+      fragetext: "Ordne die Signale der richtigen Kommunikationsebene zu:",
       categories: [
         { name: "Verbal" },
         { name: "Paraverbal" },
@@ -234,400 +347,257 @@ export const STEPS_S3: ContentStep[] = [
       ],
       categoryItems: [
         { text: "'Mir geht es gut.'", correctCategory: 0 },
-        { text: "Laute, hektische Stimme", correctCategory: 1 },
-        { text: "Verschraenkte Arme", correctCategory: 2 },
-        { text: "Pflegebericht schreiben", correctCategory: 0 },
-        { text: "Langsames, ruhiges Sprechtempo", correctCategory: 1 },
-        { text: "Nicken", correctCategory: 2 },
         { text: "Zitternde Stimme", correctCategory: 1 },
-        { text: "Augenkontakt vermeiden", correctCategory: 2 },
+        { text: "Zusammengesunkene Schultern", correctCategory: 2 },
+        { text: "Lautes Stöhnen", correctCategory: 1 },
+        { text: "Nicken", correctCategory: 2 },
+        { text: "'Ich habe Schmerzen.'", correctCategory: 0 },
+        { text: "Langsames, stockendes Sprechen", correctCategory: 1 },
+        { text: "Augenrollen", correctCategory: 2 },
       ],
     },
   },
 
   // =============================================================
-  // Step 6: Text — 4-Ohren-Modell (ENTDECKER)
+  // TB5: REFLEXION (Phase 10) — Confidence
   // =============================================================
   {
-    stepId: "le01-s3-06",
+    stepId: "le01-s3-tb5-10",
     phase: "s3",
-    stepType: "text",
+    stepType: "confidence",
     bloomLevel: 2,
     kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.252"],
+    quellen: [],
     track: "basis",
-    modus: "entdecker",
+    modus: "checkpoint",
     lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "REFLEXION",
     contentC1: {
-      title: "Das 4-Ohren-Modell",
-      body: "Nach Schulz von Thun hat jede Nachricht 4 Seiten: Sachinhalt (Wortueber was?), Beziehung (Was halte ich von dir?), Selbstoffenbarung (Was sage ich ueber mich?) und Appell (Was soll der andere tun?). Der Empfaenger hoert mit 4 verschiedenen Ohren. Beispiel: 'Das Fenster ist offen' — Sachinhalt, Aufforderung, Beziehungsaussage und Selbstoffenbarung gleichzeitig.",
+      title: "Wie sicher bist du jetzt?",
+      body: "Du hast die Grundlagen der Kommunikation kennengelernt. Schätze dich ein.",
     },
     contentB1: {
-      title: "Vier Ohren beim Zuhoeren",
-      body: "Jede Nachricht hat 4 Seiten: Was sage ich? Was denke ich ueber dich? Was sage ich ueber mich? Was soll der andere tun? Der Zuhoerer hoert diese 4 Dinge. Beispiel: 'Das Fenster ist offen.' Das kann vieles bedeuten.",
+      title: "Wie sicher bist du?",
+      body: "Wie gut verstehst du die Kommunikations-Grundlagen?",
+    },
+    question: {
+      fragetext: "Wie sicher fühlst du dich bei diesen Aussagen?",
+      statements: [
+        "Ich kann verbal, paraverbal und nonverbal unterscheiden.",
+        "Ich kann das 4-Ohren-Modell an einem Beispiel erklären.",
+        "Ich weiß, was kongruente Kommunikation bedeutet.",
+      ],
     },
   },
 
   // =============================================================
-  // Step 7: Flipcard — 4-Ohren-Modell Beispiele (ENTDECKER)
+  // Snack-Step: Swipe — Kongruenz erkennen
   // =============================================================
   {
-    stepId: "le01-s3-07",
+    stepId: "le01-s3-sn-01",
     phase: "s3",
-    stepType: "flipcard",
-    bloomLevel: 2,
+    stepType: "swipe",
+    bloomLevel: 1,
     kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.252"],
-    track: "basis",
-    modus: "entdecker",
+    quellen: ["Q5 S.249"],
+    track: "vertiefung",
+    modus: "challenge",
     lernziel: "ce01-le01-kommunikation",
-    imageUrl: "/images/le01/4-ohren-modell.svg",
-    imageAlt: "4 Karten: Vier Ohren des Kommunikationsmodells",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
-      title: "Vier Ohren — ein Beispiel",
-      body: "'Das Fenster ist offen.' — Jedes Ohr hoert etwas anderes.",
+      title: "Kongruent oder nicht?",
+      body: "Wische nach rechts (kongruent) oder links (inkongruent).",
     },
     contentB1: {
-      title: "Vier Ohren — ein Beispiel",
-      body: "'Das Fenster ist offen.' — Was hoert jedes Ohr?",
+      title: "Passt das zusammen?",
+      body: "Stimmen Worte und Körpersprache überein? Wische rechts (ja) oder links (nein).",
     },
     question: {
-      fragetext: "Tippe auf ein Ohr, um zu sehen, was es hoert.",
-      flipcard: {
-        instruction: "Drehe die Karten um.",
+      fragetext: "Kongruente Kommunikation?",
+      swipe: {
+        instruction: "Kongruent (rechts) oder inkongruent (links)?",
         cards: [
-          {
-            front: "Sachohr",
-            back: "'Das Fenster ist offen.' = Es ist ein Fenster offen. Reine Information.",
-            backB1: "'Das Fenster ist offen.' = Ein Fenster ist auf. Eine einfache Information.",
-            category: "4-Ohren",
-          },
-          {
-            front: "Beziehungsohr",
-            back: "'Das Fenster ist offen.' = Du merkst nicht mal, dass es kalt ist. Du kuemerst dich nicht.",
-            backB1: "'Das Fenster ist offen.' = Du merkst nicht, dass es kalt ist. Du passt nicht auf.",
-            category: "4-Ohren",
-          },
-          {
-            front: "Selbstoffenbarungsohr",
-            back: "'Das Fenster ist offen.' = Mir ist kalt. Ich fuehle mich unwohl.",
-            backB1: "'Das Fenster ist offen.' = Mir ist kalt. Es ist mir nicht angenehm.",
-            category: "4-Ohren",
-          },
-          {
-            front: "Appellohr",
-            back: "'Das Fenster ist offen.' = Mach bitte das Fenster zu!",
-            backB1: "'Das Fenster ist offen.' = Bitte mach das Fenster zu!",
-            category: "4-Ohren",
-          },
+          { statement: "Pflegekraft sagt 'Ich habe Zeit für Sie' und setzt sich hin.", isCorrect: true, explanation: "Kongruent: Worte und Handlung stimmen überein. Die Pflegekraft zeigt mit dem Hinsetzen, dass sie wirklich Zeit hat." },
+          { statement: "Pflegekraft sagt 'Alles wird gut' und schaut dabei hektisch auf die Uhr.", isCorrect: false, explanation: "Inkongruent: Die Worte sagen 'alles gut', aber der Blick auf die Uhr signalisiert Zeitdruck und Stress." },
+          { statement: "Pflegekraft sagt 'Das tut mir leid' mit ruhiger Stimme und Blickkontakt.", isCorrect: true, explanation: "Kongruent: Tonfall, Blickkontakt und Worte drücken alle Mitgefühl aus." },
+          { statement: "Pflegekraft sagt 'Ich höre Ihnen zu' und tippt gleichzeitig am Computer.", isCorrect: false, explanation: "Inkongruent: Die Worte versprechen Aufmerksamkeit, aber die Handlung zeigt Ablenkung." },
         ],
       },
     },
   },
 
   // =============================================================
-  // Step 8: MC — 4-Ohren in der Pflege (CHALLENGE, AMBOSS)
+  // TB6: Kommunikation Praxis — SZENE (Phase 1)
   // =============================================================
   {
-    stepId: "le01-s3-08",
+    stepId: "le01-s3-tb6-01",
+    phase: "s3",
+    stepType: "dialog",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-II",
+    quellen: [],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "SZENE",
+    contentC1: {
+      title: "Nähe und Distanz",
+      body: "Yasemin erzählt der Praxisanleiterin von der Situation mit Herrn Brenner. Die Praxisanleiterin nimmt sich Zeit.",
+    },
+    contentB1: {
+      title: "Ein wichtiges Gespräch",
+      body: "Yasemin spricht mit der Praxisanleiterin über Herrn Brenner.",
+    },
+    question: {
+      fragetext: "Nach der Situation mit Herrn Brenner:",
+      dialogLines: [
+        { speaker: "Yasemin", text: "Ich konnte ihn doch nicht einfach allein lassen! Er hat so geweint." },
+        { speaker: "Praxisanleiterin", text: "Deine Empathie ist eine Stärke. Aber du hast darüber die Vitalzeichen bei zwei anderen Patienten vergessen." },
+        { speaker: "Yasemin", text: "Aber was soll ich tun, wenn jemand so leidet?" },
+        { speaker: "Praxisanleiterin", text: "Nähe und Distanz — das ist das Schwierigste in unserem Beruf. Lass uns darüber reden." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB6: ERKLÄRUNG (Phase 2) — Distanzzonen + Gesprächsführung
+  // =============================================================
+  {
+    stepId: "le01-s3-tb6-02",
+    phase: "s3",
+    stepType: "text",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-II",
+    quellen: ["Q5 S.251", "Q5 S.254-256"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "ERKLÄRUNG",
+    imageUrl: "/images/content/le-01/distanzzonen.svg",
+    imageAlt: "Grafik: Distanzzonen — Intimdistanz und persönliche Distanz",
+    contentC1: {
+      title: "Distanzzonen und professionelle Gesprächsführung",
+      body: "**Distanzzonen nach Hall:**\n- **Intimdistanz** (bis 50 cm): Nur sehr vertraute Personen — oder Pflegende bei Pflegetätigkeiten. Pflegende überschreiten regelmäßig die Intimdistanz — das erfordert besonderes Feingefühl.\n- **Persönliche Distanz** (50-120 cm): Normale Gesprächsdistanz im Pflegealltag.\n\n**Professionelle Gesprächsführung:**\nEmpathie und Mitgefühl als innere Haltung. Offene Fragen ('Wie geht es Ihnen?') statt geschlossener Fragen ('Geht es Ihnen gut?') lassen den Pflegeempfänger sich öffnen, ohne Druck aufzubauen.",
+      fallbezug: "Yasemin saß 40 Minuten bei Herrn Brenner — in seiner persönlichen Distanzzone. Das war empathisch, aber sie muss lernen, Grenzen zu setzen.",
+    },
+    contentB1: {
+      title: "Nähe und Gespräche",
+      body: "**Distanzzonen:**\n- **Intimdistanz** (bis 50 cm): Nur für enge Freunde — und für Pflegende bei der Pflege.\n- **Persönliche Distanz** (50-120 cm): Normale Gesprächsentfernung.\n\n**Professionelle Gespräche:**\nStelle offene Fragen wie 'Wie geht es Ihnen?' statt 'Geht es Ihnen gut?'. So kann der Patient frei antworten.",
+      fallbezug: "Yasemin war bei Herrn Brenner sehr nah. Das war gut, aber sie muss auch an die anderen Patienten denken.",
+    },
+  },
+
+  // =============================================================
+  // TB6: ERKLÄRUNG (Phase 2) — Flipcard: Körperkontakt + Mimik
+  // =============================================================
+  {
+    stepId: "le01-s3-tb6-03",
+    phase: "s3",
+    stepType: "flipcard",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-II",
+    quellen: ["Q5 S.250-251"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "ERKLÄRUNG",
+    contentC1: {
+      title: "Körperkontakt und Mimik in der Pflege",
+      body: "Tippe auf jede Karte, um mehr zu erfahren.",
+    },
+    contentB1: {
+      title: "Berührung und Gesichtsausdruck",
+      body: "Tippe auf jede Karte. Was sagt der Körper?",
+    },
+    question: {
+      fragetext: "Nonverbale Kommunikation in der Pflege:",
+      flipcard: {
+        instruction: "Tippe auf die Karten, um die Rückseite zu sehen:",
+        cards: [
+          { front: "Berührung bei der Pflege", back: "Über Berührung bei pflegerischen Tätigkeiten senden Pflegende Informationen: 'Bei mir sind Sie in guten Händen.' Basale Stimulation und Kinästhetik nutzen Körperkontakt therapeutisch.", backB1: "Durch Berührung zeigen Pflegende: 'Ich bin da für Sie.' Das kann dem Patienten helfen, sich sicher zu fühlen." },
+          { front: "Reduzierte Mimik", back: "Hinweis auf Depression. Der Patient zeigt wenig Gesichtsausdruck, wirkt teilnahmslos. Wichtig: Nicht verwechseln mit 'dem geht es gut'.", backB1: "Wenn ein Patient kaum noch Gesichtsausdruck zeigt, kann das ein Zeichen für Depression sein." },
+          { front: "Maskengesicht", back: "Typisch bei Morbus Parkinson. Die Mimik ist 'eingefroren' — der Patient kann Gefühle zeigen, aber sein Gesicht 'gehorcht' nicht mehr.", backB1: "Bei der Parkinson-Krankheit wird das Gesicht wie eine Maske — der Patient kann es nicht steuern." },
+          { front: "Grimassieren", back: "Unwillkürliche Gesichtsbewegungen, typisch bei Chorea Huntington. Nicht mit Schmerz oder Unwillen verwechseln!", backB1: "Manche Krankheiten verursachen unkontrollierte Gesichtsbewegungen. Das sind keine Schmerzen." },
+        ],
+      },
+    },
+  },
+
+  // =============================================================
+  // TB6: CHECKPOINT (Phase 3) — MC Mimik als Hinweis
+  // =============================================================
+  {
+    stepId: "le01-s3-tb6-04",
     phase: "s3",
     stepType: "mc",
     bloomLevel: 3,
     kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.252"],
+    quellen: ["Q5 S.250"],
     track: "basis",
     modus: "challenge",
     lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "CHECKPOINT",
     contentC1: {
-      title: "4-Ohren-Modell auf Station",
-      body: "Ein Patient sagt etwas. Auf welchem Ohr hoert Yasemin?",
+      title: "Kurzer Check!",
+      body: "Mimik als diagnostischer Hinweis — was stimmt?",
     },
     contentB1: {
-      title: "Was hoert Yasemin?",
-      body: "Ein Patient sagt etwas zu Yasemin. Was meint er damit?",
+      title: "Kurzer Check!",
+      body: "Was sagt das Gesicht des Patienten? Was bedeutet eine starre Mimik?",
     },
     question: {
-      fragetext: "Patient sagt zu Yasemin: 'Schon wieder eine Neue.' Auf welchem Ohr reagiert Yasemin, wenn sie denkt: 'Er mag mich nicht'?",
+      fragetext: "Ein Patient zeigt seit Tagen kaum Gesichtsausdruck, spricht wenig und wirkt teilnahmslos. Die reduzierte Mimik kann ein Hinweis sein auf:",
       optionen: [
-        {
-          text: "Beziehungsohr",
-          isCorrect: true,
-          explanation: "Yasemin hoert die Aussage als Beziehungsbotschaft: 'Du bist mir nicht willkommen.' Das Beziehungsohr deutet die Nachricht auf die Beziehung zwischen Sender und Empfaenger.",
-          explanationB1: "Richtig! Yasemin hoert: 'Du bist mir nicht willkommen.' Das ist das Beziehungsohr.",
-        },
-        {
-          text: "Sachohr",
-          isCorrect: false,
-          explanation: "Das Sachohr wuerde nur die Information hoeren: Es gibt eine neue Pflegende. Yasemin bezieht es aber auf sich persoenlich.",
-          explanationB1: "Das Sachohr hoert nur die Information: Eine neue Pflegende ist da. Aber Yasemin denkt an sich.",
-        },
-        {
-          text: "Appellohr",
-          isCorrect: false,
-          explanation: "Das Appellohr wuerde hoeren: 'Schick mir jemand anderen.' Yasemin deutet es aber als persoenliche Abwertung.",
-          explanationB1: "Das Appellohr hoert: 'Schick jemand anderen.' Aber Yasemin denkt: Er mag mich nicht.",
-        },
-        {
-          text: "Selbstoffenbarungsohr",
-          isCorrect: false,
-          explanation: "Das Selbstoffenbarungsohr wuerde hoeren: 'Ich habe Angst vor Veraenderung.' Yasemin bezieht es aber auf die Beziehung.",
-          explanationB1: "Das Selbstoffenbarungsohr hoert: 'Ich habe Angst.' Aber Yasemin bezieht es auf sich.",
-        },
+        { text: "Depression", isCorrect: true, explanation: "Richtig! Reduzierte Mimik ist ein typisches Zeichen einer Depression. Der Patient wirkt teilnahmslos und zeigt wenig emotionalen Ausdruck." },
+        { text: "Chorea Huntington", isCorrect: false, explanation: "Bei Chorea Huntington zeigt sich eher Grimassieren — also unwillkürliche, überschießende Mimik. Nicht reduzierte Mimik." },
+        { text: "Der Patient ist einfach müde", isCorrect: false, explanation: "Müdigkeit ist möglich, aber reduzierte Mimik über Tage ist ein pflegerisch relevantes Signal, das dokumentiert und weitergegeben werden muss." },
+        { text: "Der Patient möchte nicht kommunizieren", isCorrect: false, explanation: "Nicht kommunizieren zu wollen ist möglich, aber als Pflegende müssen wir reduzierte Mimik als mögliches Krankheitszeichen erkennen." },
       ],
     },
   },
 
   // =============================================================
-  // Step 9: Matching — 4-Ohren zuordnen (PUZZLE)
+  // TB6: ANDERS_ERKLÄRT (Phase 4) — Reveal: Professionelle Nähe
   // =============================================================
   {
-    stepId: "le01-s3-09",
-    phase: "s3",
-    stepType: "matching",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.252"],
-    track: "basis",
-    modus: "puzzle",
-    lernziel: "ce01-le01-kommunikation",
-    contentC1: {
-      title: "Vier Ohren zuordnen",
-      body: "Ordne die Pflege-Aussagen dem richtigen Ohr zu.",
-    },
-    contentB1: {
-      title: "Welches Ohr hoert was?",
-      body: "Verbinde die Aussage mit dem passenden Ohr.",
-    },
-    question: {
-      fragetext: "Verbinde jede Deutung mit dem richtigen Ohr.",
-      matchingPairs: [
-        { left: "Sachohr", right: "'Die Suppe ist kalt.' = Information ueber die Temperatur" },
-        { left: "Beziehungsohr", right: "'Du kuemmerst dich nicht richtig um mich.'" },
-        { left: "Selbstoffenbarungsohr", right: "'Ich bin unzufrieden und frustriert.'" },
-        { left: "Appellohr", right: "'Bring mir bitte eine warme Suppe.'" },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 10: Text — Distanzzonen und Kongruenz (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s3-10",
-    phase: "s3",
-    stepType: "text",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.249-251"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-kommunikation",
-    contentC1: {
-      title: "Distanzzonen und kongruente Kommunikation",
-      body: "Distanzzonen: Intimdistanz reicht bis 50 cm, die persoenliche Distanz von 50-120 cm. Pflegende ueberschreiten bei Pflegetaetigkeiten regelmaessig die Intimdistanz — das erfordert Achtsamkeit. Kongruente Kommunikation bedeutet, dass verbale und nonverbale Botschaften uebereinstimmen. Inkongruenz irritiert.",
-    },
-    contentB1: {
-      title: "Abstand und ehrliche Kommunikation",
-      body: "Intimdistanz: bis 50 cm — nur fuer sehr vertraute Personen. Bei der Pflege kommt man dem Patienten oft sehr nah. Das braucht Respekt. Kongruent bedeutet: Was du sagst und was dein Koerper zeigt, passt zusammen. Wenn nicht, wird der Patient unsicher.",
-    },
-  },
-
-  // =============================================================
-  // Step 11: Slider — Intimdistanz (CHALLENGE)
-  // =============================================================
-  {
-    stepId: "le01-s3-11",
-    phase: "s3",
-    stepType: "slider",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.251"],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-kommunikation",
-    contentC1: {
-      title: "Distanzzonen",
-      body: "Jeder Mensch hat unsichtbare Grenzen um sich herum.",
-    },
-    contentB1: {
-      title: "Wie nah ist zu nah?",
-      body: "Jeder Mensch hat einen unsichtbaren Abstand um sich.",
-    },
-    question: {
-      fragetext: "Ab welcher Entfernung (in cm) beginnt die Intimdistanz?",
-      slider: {
-        instruction: "Bewege den Regler auf den richtigen Wert.",
-        unit: "cm",
-        min: 0,
-        max: 200,
-        step: 10,
-        correctValue: 50,
-        tolerance: 10,
-        explanation: "Die Intimdistanz reicht bis 50 cm. Nur sehr vertraute Personen duerfen so nah kommen. Pflegende ueberschreiten diese Grenze regelmaessig.",
-        explanationB1: "Die Intimdistanz ist bis 50 cm. Nur Menschen, die man gut kennt, kommen so nah. In der Pflege passiert das oft.",
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 12: Hotspot — Intimdistanz in Pflegesituation (CHALLENGE)
-  // =============================================================
-  {
-    stepId: "le01-s3-12",
-    phase: "s3",
-    stepType: "hotspot",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q5 S.251"],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-beobachtung",
-    imageUrl: "/images/le01/pflegesituation-distanz.svg",
-    imageAlt: "Illustration einer Pflegesituation mit Koerperkontakt",
-    contentC1: {
-      title: "Distanzzonen in der Pflege",
-      body: "Pflegende ueberschreiten regelmaessig die Intimdistanz. Wo genau passiert das?",
-    },
-    contentB1: {
-      title: "Nah am Patienten",
-      body: "In der Pflege kommt man dem Patienten sehr nah. Wo passiert das?",
-    },
-    question: {
-      fragetext: "Tippe auf die Bereiche, in denen die Intimdistanz ueberschritten wird.",
-      hotspot: {
-        imageUrl: "/images/le01/pflegesituation-distanz.svg",
-        imageAlt: "Pflegekraft bei der Koerperpflege",
-        instruction: "Finde die Bereiche mit Intimdistanz-Ueberschreitung.",
-        zones: [
-          { id: "waschung", x: 45, y: 45, radius: 12, label: "Koerperpflege: direkter Hautkontakt innerhalb der Intimdistanz" },
-          { id: "gesicht", x: 40, y: 15, radius: 10, label: "Gesichtspflege: sehr naher Kontakt, Augenkontakt unvermeidlich" },
-          { id: "verband", x: 60, y: 55, radius: 10, label: "Verbandwechsel: konzentrierter Nahkontakt am Koerper" },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 13: Reveal — Professionelle Gespraechsfuehrung (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s3-13",
+    stepId: "le01-s3-tb6-05",
     phase: "s3",
     stepType: "reveal",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.254-256", "Q5 S.250"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-kommunikation",
-    contentC1: {
-      title: "Professionelle Gespraechsfuehrung",
-      body: "Vier zentrale Elemente fuer gute Kommunikation in der Pflege.",
-    },
-    contentB1: {
-      title: "Gut reden als Pflegende",
-      body: "Vier wichtige Dinge fuer gute Gespraeche in der Pflege.",
-    },
-    question: {
-      fragetext: "Decke die vier Elemente auf.",
-      reveal: {
-        instruction: "Tippe auf jede Karte.",
-        revealMode: "free",
-        cards: [
-          {
-            id: "r1",
-            label: "Element 1",
-            content: "Empathie: Sich in die Gefuehle des anderen hineinversetzen — ohne die professionelle Distanz zu verlieren.",
-            contentB1: "Mitfuehlen: Verstehen, wie der andere sich fuehlt. Aber trotzdem professionell bleiben.",
-            icon: "heart",
-          },
-          {
-            id: "r2",
-            label: "Element 2",
-            content: "Offene Fragen: 'Wie geht es Ihnen heute?' statt 'Geht es Ihnen gut?' — der Patient oeffnet sich ohne Druck.",
-            contentB1: "Offene Fragen: Fragen, die der Patient frei beantworten kann. Zum Beispiel: 'Wie geht es Ihnen?'",
-            icon: "message-circle",
-          },
-          {
-            id: "r3",
-            label: "Element 3",
-            content: "Aktives Zuhoeren: Blickkontakt halten, nicken, nachfragen. Zeigen: Ich hoere dir wirklich zu.",
-            contentB1: "Aktives Zuhoeren: Anschauen, nicken, nachfragen. Zeigen: Ich hoere dir zu.",
-            icon: "ear",
-          },
-          {
-            id: "r4",
-            label: "Element 4",
-            content: "Mimik als Diagnose-Hinweis: Reduzierte Mimik kann auf Depression hindeuten, Maskengesicht auf Parkinson, Grimassieren auf Chorea Huntington.",
-            contentB1: "Gesichtsausdruck beobachten: Ein starres Gesicht kann auf Krankheiten hinweisen.",
-            icon: "eye",
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 14: Dialog — Praxisanleiterin erklaert Naehe-Distanz (STORY)
-  // =============================================================
-  {
-    stepId: "le01-s3-14",
-    phase: "s3",
-    stepType: "dialog",
-    bloomLevel: 3,
+    bloomLevel: 2,
     kompetenzbereich: "KB-II",
     quellen: ["Q5 S.254-256"],
     track: "basis",
-    modus: "story",
-    lernziel: "ce01-le01-pflegebeziehung",
+    modus: "entdecker",
+    lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "ANDERS_ERKLÄRT",
     contentC1: {
-      title: "Professionelle Naehe",
-      body: "Die Praxisanleiterin spricht mit Yasemin ueber die Situation mit Herr Brenner.",
-      fallbezug: "Spaeter am Nachmittag. Die Praxisanleiterin hat Yasemin zur Seite genommen.",
+      title: "4 Stufen professioneller Nähe",
+      body: "Tippe auf jede Stufe, um sie zu entdecken. Von Distanz zu Nähe — und wieder zurück.",
     },
     contentB1: {
-      title: "Was ist professionelle Naehe?",
-      body: "Die Praxisanleiterin spricht mit Yasemin ueber den weinenden Patienten.",
-      fallbezug: "Am Nachmittag nimmt die Praxisanleiterin Yasemin zur Seite.",
+      title: "Wie nah darf ich sein?",
+      body: "Es gibt 4 Stufen. Tippe auf jede Karte.",
     },
     question: {
-      fragetext: "Was sagt die Praxisanleiterin?",
-      patientName: "Praxisanleiterin",
-      dialogPhases: [
-        {
-          context: "Praxisanleiterin: 'Yasemin, du warst empathisch — das ist gut. Aber du hast 2 Patienten vergessen. Professionelle Naehe heisst: praesent sein, ohne die Verantwortung zu vergessen.'",
-          contextB1: "Praxisanleiterin: 'Yasemin, du warst einfuehlsam. Aber du hast 2 andere Patienten vergessen. Professionell heisst: fuer alle da sein.'",
-          speaker: "Yasemin",
-          options: [
-            {
-              text: "Ich verstehe. Empathie allein reicht nicht — ich muss auch an die anderen Patienten denken und meine Zeit einteilen.",
-              textB1: "Ich verstehe. Mitgefuehl ist wichtig, aber ich muss auch an die anderen Patienten denken.",
-              patientResponse: "Genau. Professionelle Naehe heisst: Ich bin fuer dich da — UND fuer die anderen. Das ist keine Kaelte, das ist Verantwortung.",
-              patientResponseB1: "Genau! Fuer alle da sein — das ist keine Kaelte. Das ist Verantwortung.",
-              score: 3,
-              feedback: "Professionelle Empathie verbindet Mitgefuehl mit Verantwortung. Balance ist der Schluessel.",
-              feedbackB1: "Richtig! Mitgefuehl und Verantwortung zusammen — das ist professionelle Pflege.",
-            },
-            {
-              text: "Aber der Patient hat geweint! Ich konnte ihn doch nicht allein lassen!",
-              textB1: "Aber er hat geweint! Ich konnte nicht einfach gehen!",
-              patientResponse: "Ich verstehe dein Gefuehl. Aber in 3 Minuten kannst du viel Empathie zeigen — und dann deine anderen Patienten versorgen. Das lernst du mit der Zeit.",
-              patientResponseB1: "Ich verstehe. Aber in 3 Minuten kannst du viel tun. Und dann gehst du zu den anderen. Das lernst du noch.",
-              score: 1,
-              feedback: "Verstaendliche Reaktion. Professionelle Abgrenzung ist nicht angeboren — sie wird in der Ausbildung trainiert.",
-              feedbackB1: "Das ist normal am Anfang. Abgrenzung lernt man in der Ausbildung. Du wirst besser darin.",
-            },
-          ],
-        },
-      ],
+      fragetext: "Entdecke die 4 Stufen professioneller Nähe:",
+      reveal: {
+        instruction: "Tippe auf jede Stufe:",
+        cards: [
+          { id: "stufe1", label: "Stufe 1: Wahrnehmen", content: "Den Patienten bewusst wahrnehmen: Mimik, Körperhaltung, Stimme. Was sagt mir sein Verhalten, auch ohne Worte?", contentB1: "Genau hinschauen: Wie sieht der Patient aus? Wie bewegt er sich?", icon: "eye" },
+          { id: "stufe2", label: "Stufe 2: Ansprechen", content: "Das Wahrgenommene behutsam ansprechen: 'Ich sehe, dass Sie traurig sind. Möchten Sie darüber reden?' Offene Fragen, kein Druck.", contentB1: "Den Patienten fragen: 'Ich sehe, Sie sind traurig. Wollen Sie reden?'", icon: "message-circle" },
+          { id: "stufe3", label: "Stufe 3: Begleiten", content: "Präsent sein, zuhören, aushalten. Nicht sofort Lösungen anbieten. Manchmal reicht es, da zu sein.", contentB1: "Da sein und zuhören. Nicht alles lösen müssen. Einfach da sein.", icon: "heart" },
+          { id: "stufe4", label: "Stufe 4: Begrenzen", content: "Professionell begrenzen: 'Ich komme in 20 Minuten wieder zu Ihnen.' Verantwortung für andere Patienten wahren, ohne den aktuellen Patienten abzuweisen.", contentB1: "Sagen: 'Ich muss jetzt gehen, aber ich komme wieder.' Auch die anderen Patienten brauchen dich.", icon: "clock" },
+        ],
+        revealMode: "sequential",
+      },
     },
   },
 
   // =============================================================
-  // Step 15: Branching — Naehe-Distanz-Entscheidung (PRAXIS-SIM)
+  // TB6: ANWENDUNG (Phase 9) — Branching Scenario BS1
   // =============================================================
   {
-    stepId: "le01-s3-15",
+    stepId: "le01-s3-tb6-06",
     phase: "s3",
     stepType: "branching",
     bloomLevel: 3,
@@ -635,366 +605,166 @@ export const STEPS_S3: ContentStep[] = [
     quellen: ["Q5 S.254-256"],
     track: "basis",
     modus: "praxis-sim",
-    lernziel: "ce01-le01-pflegebeziehung",
-    contentC1: {
-      title: "Entscheidung: Herr Brenner weint",
-      body: "Herr Brenner weint erneut. Gleichzeitig muss bei Frau Klein der Blutdruck kontrolliert werden — sie hatte heute morgen erhoehte Werte.",
-      fallbezug: "Die gleiche Situation wie vorhin — aber jetzt musst du entscheiden.",
-    },
-    contentB1: {
-      title: "Was tust du jetzt?",
-      body: "Herr Brenner weint. Aber Frau Klein braucht eine Blutdruckkontrolle. Ihr Blutdruck war heute morgen zu hoch.",
-      fallbezug: "Du musst dich entscheiden.",
-    },
-    question: {
-      fragetext: "Wie reagierst du?",
-      branchingOptions: [
-        {
-          text: "Ich bleibe bei Herr Brenner und verschiebe die Vitalzeichen bei Frau Klein.",
-          feedbackB1: "Herr Brenner fuehlt sich gehoert. Aber Frau Kleins Blutdruck wird nicht kontrolliert. Wenn er weiter steigt, kann das gefaehrlich werden.",
-          feedback: "Herr Brenner fuehlt sich gehoert. Aber Frau Kleins Blutdruck wird nicht kontrolliert — bei vorbestehend erhoehten Werten kann das gefaehrlich werden. Die Praxisanleiterin kritisiert die fehlende Priorisierung.",
-          isCorrect: false,
-        },
-        {
-          text: "Ich hoere 3 Minuten zu, sage Herr Brenner, dass ich in 20 Minuten wiederkomme, und kontrolliere dann Frau Kleins Blutdruck.",
-          feedbackB1: "Herr Brenner weiss, dass du wiederkommst. Frau Kleins Blutdruck wird rechtzeitig gemessen. Du zeigst Empathie UND Verantwortung.",
-          feedback: "Herr Brenner weiss, dass er nicht vergessen wird. Frau Kleins Werte werden rechtzeitig erhoben. Empathie und Verantwortung sind im Gleichgewicht.",
-          isCorrect: true,
-        },
-        {
-          text: "Ich sage: 'Tut mir leid, ich muss jetzt zu einer anderen Patientin' und gehe sofort.",
-          feedbackB1: "Herr Brenner fuehlt sich zurueckgewiesen. Am Abend klingelt er immer wieder — er fuehlt sich allein. Ein kurzer Satz haette geholfen.",
-          feedback: "Herr Brenner fuehlt sich zurueckgewiesen. Das Vertrauensverhaeltnis ist beschaedigt. Am Abend klingelt er stuendlich. Kommunikation beim Grenzen-Setzen ist der Schluessel.",
-          isCorrect: false,
-        },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 16: TrueFalse — Kommunikation (CHALLENGE)
-  // =============================================================
-  {
-    stepId: "le01-s3-16",
-    phase: "s3",
-    stepType: "truefalse",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.248-249", "Q5 S.251"],
-    track: "basis",
-    modus: "challenge",
     lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
-      title: "Richtig oder falsch?",
-      body: "Teste dein Wissen ueber Kommunikation in der Pflege.",
+      title: "Was tust du?",
+      body: "Herr Brenner, 82, weint nach dem Besuch seiner Tochter. Er bittet dich zu bleiben. Gleichzeitig musst du in 10 Minuten die Vitalzeichen bei Frau Klein kontrollieren, die heute morgen einen erhöhten Blutdruck hatte.",
+      fallbezug: "Das ist die Situation, in der Yasemin steckte. Wie hättest du entschieden?",
     },
     contentB1: {
-      title: "Richtig oder falsch?",
-      body: "Welche Aussagen stimmen?",
+      title: "Was machst du?",
+      body: "Herr Brenner weint und will, dass du bleibst. Aber du musst in 10 Minuten den Blutdruck bei Frau Klein messen — ihr Blutdruck war heute morgen zu hoch.",
+      fallbezug: "Das ist Yasemins Situation. Wie entscheidest du dich?",
     },
     question: {
-      fragetext: "Welche Aussagen sind richtig?",
-      trueFalseCards: [
-        {
-          statement: "Kongruente Kommunikation bedeutet: Verbal und nonverbal stimmen ueberein.",
-          isTrue: true,
-          explanation: "Kongruenz bedeutet Uebereinstimmung. Wenn Worte und Koerpersprache dasselbe sagen, vertraut der Empfaenger der Botschaft.",
-        },
-        {
-          statement: "Schweigen ist keine Kommunikation.",
-          isTrue: false,
-          explanation: "Watzlawick: 'Man kann nicht nicht kommunizieren.' Auch Schweigen sendet Signale — Ablehnung, Nachdenklichkeit oder Ueberforderung.",
-        },
-        {
-          statement: "Die Intimdistanz reicht bis 50 cm.",
-          isTrue: true,
-          explanation: "Die Intimdistanz (bis 50 cm) ist normalerweise nur sehr vertrauten Personen vorbehalten. Pflegende ueberschreiten sie regelmaessig.",
-        },
-        {
-          statement: "Das 4-Ohren-Modell hat 3 Ebenen.",
-          isTrue: false,
-          explanation: "Das 4-Ohren-Modell nach Schulz von Thun hat 4 Seiten: Sachinhalt, Beziehung, Selbstoffenbarung und Appell.",
-        },
+      fragetext: "Herr Brenner weint. Frau Klein braucht ihre Vitalzeichenkontrolle. Was tust du?",
+      branchingOptions: [
+        { text: "Bei Herr Brenner bleiben und die Vitalzeichen verschieben", feedback: "Herr Brenner fühlt sich gehört. Aber Frau Kleins Blutdruck wird nicht kontrolliert — wenn er weiter steigt, könnte das gefährlich werden. Die Praxisanleiterin kritisiert die fehlende Priorisierung. Empathie ohne Verantwortung ist nicht professionell.", feedbackB1: "Herr Brenner ist froh. Aber Frau Kleins Blutdruck wird nicht gemessen. Das kann gefährlich sein.", isCorrect: false },
+        { text: "Kurz bei Herr Brenner bleiben (3 Min), Rückkehr versprechen, dann Vitalzeichen kontrollieren", feedback: "Herr Brenner weiß, dass er nicht vergessen wird. Frau Kleins Werte werden rechtzeitig erhoben. Empathie UND Verantwortung sind gewahrt. So geht professionelle Nähe: Wahrnehmen, Begleiten, Begrenzen.", feedbackB1: "Gut! Du bleibst kurz, versprichst wiederzukommen und kümmerst dich dann um Frau Klein. Beides klappt.", isCorrect: true },
+        { text: "Abrupt gehen — 'Ich muss jetzt zu einer anderen Patientin'", feedback: "Herr Brenner fühlt sich zurückgewiesen. Das Vertrauensverhältnis ist beschädigt. Am Abend klingelt er stündlich — weil er sich allein fühlt. Ein kurzer Satz ('Ich komme in 20 Minuten wieder zu Ihnen') hätte alles verändert.", feedbackB1: "Herr Brenner fühlt sich allein gelassen. Er klingelt danach die ganze Nacht. Ein kurzer Satz hätte geholfen.", isCorrect: false },
       ],
     },
   },
 
   // =============================================================
-  // Step 17: Crossword — Kommunikation (PUZZLE, vertiefung)
+  // TB6: REFLEXION (Phase 10) — Freetext
   // =============================================================
   {
-    stepId: "le01-s3-17",
+    stepId: "le01-s3-tb6-07",
     phase: "s3",
-    stepType: "crossword",
-    bloomLevel: 2,
+    stepType: "freetext",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-II",
+    quellen: [],
+    track: "vertiefung",
+    modus: "schreibtisch",
+    lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "REFLEXION",
+    contentC1: {
+      title: "Deine Reaktion",
+      body: "Stell dir vor, du bist Yasemin. Herr Brenner hat gerade gesagt: 'Du bist die Einzige, die mir zuhört, Kind.' Wie hättest du reagiert — und warum?",
+    },
+    contentB1: {
+      title: "Was hättest du gemacht?",
+      body: "Herr Brenner sagt: 'Du bist die Einzige, die mir zuhört.' Was hättest du getan? Schreibe deine Antwort.",
+    },
+    question: {
+      fragetext: "Wie hättest du in Yasemins Situation reagiert? Begründe, warum du so gehandelt hättest.",
+      musterantwort: "Ich hätte Herrn Brenner signalisiert, dass ich seine Gefühle wahrnehme und ernst nehme. Ich wäre kurz geblieben (2-3 Minuten), hätte aktiv zugehört und ihm gesagt, dass ich wiederkommen werde. Dann hätte ich die anderen Patienten versorgt. Professionelle Nähe bedeutet: präsent sein, ohne die Verantwortung für andere zu vergessen.",
+      bewertungskriterien: [
+        "Balance zwischen Empathie und Verantwortung",
+        "Konkreter Handlungsvorschlag",
+        "Begründung mit Bezug auf professionelle Pflegebeziehung",
+      ],
+      satzanfaengeB1: [
+        "In dieser Situation würde ich...",
+        "Ich finde es wichtig, dass...",
+        "Professionell bedeutet für mich...",
+      ],
+    },
+  },
+
+  // =============================================================
+  // Session-Abschluss: Matching
+  // =============================================================
+  {
+    stepId: "le01-s3-bk-02",
+    phase: "s3",
+    stepType: "matching",
+    bloomLevel: 1,
     kompetenzbereich: "KB-II",
     quellen: ["Q5 S.248-256"],
     track: "vertiefung",
     modus: "puzzle",
     lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
-      title: "Kreuzwortraetsel: Kommunikation",
-      body: "Teste dein Wissen spielerisch.",
+      title: "Begriffe zuordnen",
+      body: "Ordne jedes Konzept der richtigen Erklärung zu.",
     },
     contentB1: {
-      title: "Kreuzwortraetsel",
-      body: "Loese das Raetsel. Alle Woerter kennst du schon.",
+      title: "Was gehört zusammen?",
+      body: "Verbinde den Begriff mit der Erklärung.",
     },
     question: {
-      fragetext: "Fuelle das Kreuzwortraetsel aus.",
-      crosswordWords: [
-        { word: "EMPATHIE", clue: "Sich in andere hineinversetzen koennen" },
-        { word: "DISTANZZONEN", clue: "Unsichtbare Abstandsbereiche um jeden Menschen" },
-        { word: "APPELL", clue: "Was soll der andere tun? (4-Ohren-Modell)" },
-        { word: "MIMIK", clue: "Gesichtsausdruck als Kommunikationssignal" },
-        { word: "KONGRUENZ", clue: "Wenn Worte und Koerpersprache uebereinstimmen" },
-        { word: "NONVERBAL", clue: "Kommunikation ohne Worte (Koerpersprache)" },
+      fragetext: "Ordne zu:",
+      matchingPairs: [
+        { left: "4-Ohren-Modell", right: "Jede Nachricht hat 4 Seiten" },
+        { left: "Watzlawick", right: "Man kann nicht nicht kommunizieren" },
+        { left: "Kongruenz", right: "Worte und Körpersprache stimmen überein" },
+        { left: "Intimdistanz", right: "Bis 50 cm — bei Pflegetätigkeiten" },
+        { left: "Paraverbal", right: "Tonfall, Sprechtempo, Lautstärke" },
       ],
     },
   },
 
   // =============================================================
-  // Step 18: Comparison — Professionelle vs. Private Naehe (ENTDECKER)
+  // Session-Abschluss: TrueFalse mit Interleaving (10%)
+  // 4x Kommunikation + 1x Pflegeprozess (Recall S2)
   // =============================================================
   {
-    stepId: "le01-s3-18",
+    stepId: "le01-s3-bk-03",
     phase: "s3",
-    stepType: "comparison",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.254-256"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-pflegebeziehung",
-    imageUrl: "/images/le01/naehe-distanz-vergleich.svg",
-    imageAlt: "Vergleichstabelle: Professionelle Naehe vs. Private Naehe",
-    contentC1: {
-      title: "Professionelle vs. Private Naehe",
-      body: "Die Unterscheidung ist zentral fuer die Pflegebeziehung.",
-    },
-    contentB1: {
-      title: "Berufliche Naehe oder private Naehe?",
-      body: "In der Pflege ist Naehe anders als in privaten Beziehungen.",
-    },
-    question: {
-      fragetext: "Vergleiche die beiden Arten von Naehe.",
-      comparison: {
-        instruction: "Schau dir die Unterschiede an.",
-        columns: [
-          { label: "Professionelle Naehe", icon: "briefcase" },
-          { label: "Private Naehe", icon: "heart" },
-        ],
-        rows: [
-          {
-            criterion: "Grundhaltung",
-            values: ["Empathie (Mitfuehlen)", "Mitleid (Mitlciden)"],
-            valuesB1: ["Mitfuehlen: Ich verstehe dich", "Mitleiden: Ich leide mit dir"],
-            highlight: 0,
-          },
-          {
-            criterion: "Zeitrahmen",
-            values: ["Zeitbegrenzt, strukturiert", "Unbegrenzt, spontan"],
-            valuesB1: ["Hat feste Zeiten", "Hat keine festen Zeiten"],
-          },
-          {
-            criterion: "Reflexion",
-            values: ["Reflektiert: Warum handle ich so?", "Unreflektiert: Gefuehlsgesteuert"],
-            valuesB1: ["Man denkt nach: Warum mache ich das?", "Man handelt aus dem Bauch heraus"],
-            highlight: 0,
-          },
-          {
-            criterion: "Ziel",
-            values: ["Dem Patienten helfen UND andere nicht vergessen", "Fuer den einen Menschen da sein"],
-            valuesB1: ["Allen Patienten helfen", "Fuer einen Menschen da sein"],
-          },
-          {
-            criterion: "Abgrenzung",
-            values: ["Professionelle Distanz: Ich gehe nach Hause ohne Leid mitzunehmen", "Emotionale Verstrickung moeglich"],
-            valuesB1: ["Man laesst die Arbeit auf der Arbeit", "Man nimmt alles mit nach Hause"],
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 19: Timer — Speed-Fragen mit Interleaving (CHALLENGE, vertiefung)
-  // =============================================================
-  {
-    stepId: "le01-s3-19",
-    phase: "s3",
-    stepType: "timer",
+    stepType: "truefalse",
     bloomLevel: 2,
     kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.248-252"],
+    quellen: ["Q5 S.248-252", "Q2 S.78"],
     track: "vertiefung",
     modus: "challenge",
     lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
-      title: "Speed-Runde: Kommunikation",
-      body: "4 schnelle Fragen. Eine davon ist ein Rueckblick auf ein anderes Thema.",
+      title: "Stimmt das?",
+      body: "Prüfe dein Wissen — mit einer Überraschungsfrage aus der letzten Session!",
     },
     contentB1: {
-      title: "Schnelle Fragen",
-      body: "4 Fragen. Du hast 15 Sekunden pro Frage. Eine Frage ist aus einem anderen Thema.",
+      title: "Richtig oder falsch?",
+      body: "Lies jede Aussage. Stimmt sie? Eine Frage kommt aus Session 2!",
     },
     question: {
-      fragetext: "Beantworte die Fragen so schnell wie moeglich.",
-      timeLimitSeconds: 15,
-      timerQuestions: [
-        {
-          question: "Wie viele Seiten hat das 4-Ohren-Modell?",
-          options: ["3", "4", "5"],
-          correctIndex: 1,
-        },
-        {
-          question: "Was bedeutet 'kongruent' in der Kommunikation?",
-          options: ["Laut sprechen", "Worte und Koerpersprache stimmen ueberein", "Schweigen"],
-          correctIndex: 1,
-        },
-        {
-          question: "Welches Grundbeduerfnis steht bei Maslow an der Basis?",
-          options: ["Sicherheit", "Physiologische Beduerfnisse", "Soziale Beduerfnisse"],
-          correctIndex: 1,
-        },
-        {
-          question: "Bis zu welcher Entfernung reicht die Intimdistanz?",
-          options: ["30 cm", "50 cm", "100 cm"],
-          correctIndex: 1,
-        },
-      ],
-    },
-    wusstestDuDas: "Interleaving: Die Maslow-Frage stammt aus einem anderen Thema. So bleibt Wissen laenger im Gedaechtnis.",
-  },
-
-  // =============================================================
-  // Step 20: Reflection — Naehe-Distanz-Dilemma (SCHREIBTISCH, vertiefung)
-  // =============================================================
-  {
-    stepId: "le01-s3-20",
-    phase: "s3",
-    stepType: "reflection",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.254-256"],
-    track: "vertiefung",
-    modus: "schreibtisch",
-    lernziel: "ce01-le01-pflegebeziehung",
-    contentC1: {
-      title: "Reflexion: Naehe und Distanz",
-      body: "Denke ueber die Situation mit Herr Brenner nach.",
-    },
-    contentB1: {
-      title: "Nachdenken: Nah sein und Abstand halten",
-      body: "Denke ueber die Situation nach. Schreibe deine Gedanken auf.",
-    },
-    question: {
-      fragetext: "Eine Patientin weint und bittet dich zu bleiben. Du hast aber noch 3 andere Patienten zu versorgen. Was tust du — und warum?",
-      musterantwort: "Ich signalisiere der Patientin, dass ich ihre Gefuehle wahrnehme und ernst nehme. Ich bleibe kurz (2-3 Minuten), hoere aktiv zu und sage ihr, dass ich wiederkommen werde. Dann versorge ich die anderen Patienten. Professionelle Naehe bedeutet: praesent sein, ohne die Verantwortung fuer andere zu vergessen.",
-      bewertungskriterien: [
-        "Balance zwischen Empathie und Verantwortung",
-        "Konkreter Handlungsvorschlag",
-        "Begruendung mit Bezug auf professionelle Pflegebeziehung",
-      ],
-      satzanfaengeB1: [
-        "In dieser Situation wuerde ich...",
-        "Ich finde es wichtig, dass...",
-        "Professionelle Naehe bedeutet fuer mich...",
-      ],
-      reflection: {
-        prompt: "Eine Patientin weint und bittet dich zu bleiben. Du hast noch 3 andere Patienten. Was tust du — und warum?",
-        placeholder: "In dieser Situation wuerde ich...",
-        systemPrompt: "Bewerte ob der Schueler eine Balance zwischen Empathie und Verantwortung zeigt. Positiv: Konkreter Handlungsvorschlag mit Begruendung. Feedback nach Sandwich-Prinzip.",
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 21: Dialog — Yasemin: Tagesreflexion (STORY)
-  // =============================================================
-  {
-    stepId: "le01-s3-21",
-    phase: "s3",
-    stepType: "dialog",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-II",
-    quellen: [],
-    track: "basis",
-    modus: "story",
-    lernziel: "ce01-le01-pflegebeziehung",
-    contentC1: {
-      title: "Yasemin reflektiert",
-      body: "Abends denkt Yasemin ueber den Tag nach.",
-      fallbezug: "Auf dem Weg nach Hause. Der Tag war emotional.",
-    },
-    contentB1: {
-      title: "Yasemin denkt nach",
-      body: "Am Abend denkt Yasemin ueber den Tag nach.",
-      fallbezug: "Auf dem Weg nach Hause. Es war ein schwieriger Tag.",
-    },
-    question: {
-      fragetext: "Was hat Yasemin heute gelernt?",
-      patientName: "Yasemin Demirci",
-      dialogPhases: [
-        {
-          context: "Yasemin denkt: 'Heute war schwierig. Herr Brenner hat geweint und ich wollte helfen. Aber ich habe die anderen vergessen.'",
-          contextB1: "Yasemin denkt: 'Heute war schwierig. Herr Brenner hat geweint. Ich wollte helfen. Aber ich habe die anderen vergessen.'",
-          speaker: "Yasemin (denkt)",
-          options: [
-            {
-              text: "Ich glaube, ich muss lernen, professionell nah zu sein — nicht privat nah. Empathie und Struktur gehoeren zusammen.",
-              textB1: "Ich muss lernen: professionell nah sein, nicht privat nah. Mitgefuehl und Planung gehoeren zusammen.",
-              patientResponse: "Diese Erkenntnis ist der Anfang professionellen Handelns. Yasemin waechst.",
-              patientResponseB1: "Das ist eine wichtige Erkenntnis. Yasemin wird besser.",
-              score: 3,
-              feedback: "Yasemin erkennt: Professionelle Naehe verbindet Empathie mit Verantwortung. Das ist der Kern der Pflegebeziehung.",
-              feedbackB1: "Yasemin versteht: Mitgefuehl und Verantwortung zusammen — das ist professionelle Pflege.",
-            },
-            {
-              text: "Naechstes Mal bleibe ich laenger. Herr Brenner braucht mich.",
-              textB1: "Naechstes Mal bleibe ich laenger. Er braucht mich.",
-              patientResponse: "Empathie ist gut — aber ohne professionelle Distanz kann sie schaden. Die Praxisanleiterin wuerde sagen: Plane deine Empathie.",
-              patientResponseB1: "Mitgefuehl ist gut. Aber ohne Plan kann es schaden. Die Praxisanleiterin wuerde sagen: Teile deine Zeit ein.",
-              score: 1,
-              feedback: "Verstaendlich, aber riskant. Professionelle Naehe braucht Zeitmanagement und Abgrenzung.",
-              feedbackB1: "Das ist verstaendlich. Aber in der Pflege muss man Zeit fuer alle Patienten haben.",
-            },
-          ],
-        },
+      fragetext: "Wische: Stimmt oder stimmt nicht?",
+      trueFalseCards: [
+        { statement: "Nonverbale Kommunikation macht über 60% der gesamten Kommunikation aus.", isTrue: true, explanation: "Richtig! Studien zeigen, dass Körpersprache, Mimik und Gestik den größten Anteil der Kommunikation ausmachen." },
+        { statement: "Das 4-Ohren-Modell wurde von Watzlawick entwickelt.", isTrue: false, explanation: "Das 4-Ohren-Modell stammt von Schulz von Thun, nicht von Watzlawick. Watzlawicks bekanntester Satz ist: 'Man kann nicht nicht kommunizieren.'" },
+        { statement: "Bei kongruenter Kommunikation widersprechen sich verbale und nonverbale Signale.", isTrue: false, explanation: "Genau umgekehrt! Bei kongruenter Kommunikation stimmen Worte und Körpersprache überein. Widerspruch = inkongruent." },
+        { statement: "Pflegende überschreiten bei Pflegetätigkeiten regelmäßig die Intimdistanz des Patienten.", isTrue: true, explanation: "Richtig! Bei Körperpflege, Verbandwechsel und vielen anderen Tätigkeiten kommen Pflegende näher als 50 cm. Das erfordert besonderes Feingefühl." },
+        { statement: "Der Pflegeprozess nach Fiechter und Meier hat 4 Schritte.", isTrue: false, explanation: "Interleaving aus Session 2! Der Pflegeprozess hat 6 Schritte: Informationssammlung, Probleme/Ressourcen erkennen, Ziele festlegen, Maßnahmen planen, durchführen und evaluieren." },
       ],
     },
   },
 
   // =============================================================
-  // Step 22: Summary — Rueckblick Session 3 (CHECKPOINT)
+  // Session-Bookend: Summary
   // =============================================================
   {
-    stepId: "le01-s3-22",
+    stepId: "le01-s3-bk-04",
     phase: "s3",
     stepType: "summary",
-    bloomLevel: 3,
+    bloomLevel: 2,
     kompetenzbereich: "KB-II",
     quellen: [],
     track: "basis",
     modus: "checkpoint",
     lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "REFLEXION",
     contentC1: {
-      title: "Das hast du gelernt",
-      body: "Session 3 ist geschafft. Hier sind die wichtigsten Erkenntnisse.",
+      title: "Das hast du heute gelernt",
+      body: "Session 3 ist geschafft! Hier sind deine 4 wichtigsten Erkenntnisse.",
     },
     contentB1: {
-      title: "Das hast du gelernt",
-      body: "Session 3 ist fertig! Hier ist eine Zusammenfassung.",
+      title: "Zusammenfassung",
+      body: "Das hast du heute gelernt. Gut gemacht!",
     },
     question: {
-      fragetext: "Deine Kernerkenntnisse aus Session 3:",
+      fragetext: "Deine 4 Kernaussagen aus Session 3:",
       summary: {
-        reflexionRueckbezug: "Erinnerst du dich an den Swipe am Anfang? Du hast Reaktionen auf den weinenden Patienten bewertet. Jetzt weisst du: Professionelle Naehe verbindet Empathie mit Verantwortung.",
+        reflexionRueckbezug: "Yasemin hat gelernt: Empathie ist eine Stärke — aber ohne professionelle Grenzen kann sie zur Schwäche werden.",
         kernaussagen: [
-          "Kommunikation hat 3 Ebenen: verbal, paraverbal und nonverbal.",
-          "Das 4-Ohren-Modell nach Schulz von Thun: Jede Nachricht hat 4 Seiten — Sachinhalt, Beziehung, Selbstoffenbarung, Appell.",
-          "Distanzzonen: Intimdistanz bis 50 cm — Pflegende ueberschreiten sie regelmaessig und muessen dabei achtsam sein.",
-          "Professionelle Naehe ist nicht private Naehe: Empathie ja, aber mit Zeitmanagement und Reflexion.",
+          "**3 Ebenen:** Kommunikation ist verbal (Worte), paraverbal (Stimme) und nonverbal (Körpersprache). Über 60% läuft nonverbal.",
+          "**4-Ohren-Modell:** Jede Nachricht hat 4 Seiten — Sachinhalt, Beziehung, Selbstoffenbarung und Appell.",
+          "**Kongruenz:** Wenn Worte und Körpersprache nicht übereinstimmen, vertrauen Menschen der Körpersprache.",
+          "**Professionelle Nähe:** Wahrnehmen, Ansprechen, Begleiten, Begrenzen. Empathie UND Verantwortung.",
         ],
       },
     },

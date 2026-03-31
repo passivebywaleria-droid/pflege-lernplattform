@@ -1,6 +1,6 @@
 // Session 1: "Was ist Pflege?" — LE 01 Personen- und situationsorientiert pflegen
-// Generiert vom Content-Generator v2
-// Themen: Pflegeverstaendnis, Profession, vorbehaltene Taetigkeiten, Geschichte
+// Generiert vom Content-Generator v2.1 mit Phasen-Bogen
+// TB1: Was ist Pflege? (KB-V, F26-F29) + TB2: Geschichte & Profession (KB-V, F30-F31, F51, F28-F29)
 // Leitfall: Yasemin Demirci — Erster Tag auf Station (Szene S1)
 // Bloom: B1-B3, 22 Steps, ~30 Min
 
@@ -31,10 +31,10 @@ export const METADATA: LektionMetadata = {
 
 export const STEPS_S1: ContentStep[] = [
   // =============================================================
-  // Step 1: Selfrating — Vorwissen aktivieren (CHECKPOINT)
+  // Step 1: Session-Bookend — Vorwissen aktivieren
   // =============================================================
   {
-    stepId: "le01-s1-01",
+    stepId: "le01-s1-bk-01",
     phase: "s1",
     stepType: "selfrating",
     bloomLevel: 1,
@@ -42,179 +42,102 @@ export const STEPS_S1: ContentStep[] = [
     quellen: [],
     track: "basis",
     modus: "checkpoint",
-    lernziel: "ce01-le01-pflegeverstaendnis",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "CHECKPOINT",
     contentC1: {
       title: "Dein Wissensstand",
-      body: "Schaetze dich ein: Wie gut kennst du dich mit Pflege als Beruf aus?",
+      body: "Schätze dich ein: Wie gut kennst du dich mit Pflege als Beruf aus?",
     },
     contentB1: {
-      title: "Was weisst du schon?",
-      body: "Wie gut kennst du dich mit Pflege aus? Schaetze dich ein.",
+      title: "Was weißt du schon?",
+      body: "Wie gut kennst du dich mit Pflege aus? Schätze dich ein.",
     },
     question: {
-      fragetext: "Wie sicher fuehlst du dich bei diesen Aussagen?",
-    },
-  },
-
-  // =============================================================
-  // Step 2: Swipe — Anticipation Guide (ENTDECKER, Brilliant-Prinzip)
-  // =============================================================
-  {
-    stepId: "le01-s1-02",
-    phase: "s1",
-    stepType: "swipe",
-    bloomLevel: 1,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q1 S.23"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-pflegeverstaendnis",
-    contentC1: {
-      title: "Stimmt das wirklich?",
-      body: "Viele Menschen haben bestimmte Vorstellungen von Pflege. Manche stimmen, manche nicht.",
-    },
-    contentB1: {
-      title: "Stimmt das?",
-      body: "Viele Menschen denken bestimmte Dinge ueber Pflege. Stimmt das alles?",
-    },
-    question: {
-      fragetext: "Wische nach rechts fuer 'stimmt' und nach links fuer 'stimmt nicht'.",
-      swipe: {
-        instruction: "Stimmt diese Aussage? Wische nach rechts (ja) oder links (nein).",
-        cards: [
-          {
-            statement: "Pflege bedeutet vor allem Waschen und Fuettern.",
-            statementB1: "Pflege heisst vor allem: waschen und essen geben.",
-            isCorrect: false,
-            explanation: "Pflege umfasst weit mehr: Beobachtung, Beratung, Planung, Forschung und Gesundheitsfoerderung.",
-            explanationB1: "Pflege ist viel mehr: beobachten, beraten, planen und Gesundheit foerdern.",
-          },
-          {
-            statement: "Pflegekraefte fuehren nur aus, was der Arzt anordnet.",
-            statementB1: "Pflegende machen nur das, was der Arzt sagt.",
-            isCorrect: false,
-            explanation: "Pflege hat eigenverantwortliche Aufgaben. Das PflBG definiert vorbehaltene Taetigkeiten, die nur Pflegefachkraefte ausfuehren duerfen.",
-            explanationB1: "Pflege hat eigene Aufgaben. Bestimmte Dinge duerfen nur Pflegefachkraefte machen.",
-          },
-          {
-            statement: "Jeder kann pflegen — dafuer braucht man keine Ausbildung.",
-            statementB1: "Jeder kann pflegen. Man braucht keine Ausbildung.",
-            isCorrect: false,
-            explanation: "Professionelle Pflege basiert auf wissenschaftlichem Wissen, einem Ethikkodex und einer mindestens 3-jaehrigen Ausbildung.",
-            explanationB1: "Professionelle Pflege braucht Wissen, Regeln und eine 3-jaehrige Ausbildung.",
-          },
-          {
-            statement: "Pflege foerdert auch die Gesundheit gesunder Menschen.",
-            statementB1: "Pflege hilft auch gesunden Menschen, gesund zu bleiben.",
-            isCorrect: true,
-            explanation: "Laut ICN-Definition gehoert Gesundheitsfoerderung zu den Schluessselaufgaben der Pflege — nicht nur die Versorgung Kranker.",
-            explanationB1: "Richtig! Pflege kuemmert sich auch um Gesundheit. Nicht nur um Krankheit.",
-          },
-          {
-            statement: "In Deutschland ist Pflege ein akademischer Beruf mit Studium.",
-            statementB1: "In Deutschland kann man Pflege studieren.",
-            isCorrect: true,
-            explanation: "Seit dem PflBG 2017 gibt es primaerqualifizierende Pflegestudiengaenge. Die Akademisierung schreitet voran.",
-            explanationB1: "Ja! Seit 2017 kann man Pflege auch an einer Hochschule studieren.",
-          },
-          {
-            statement: "Pflege findet nur im Krankenhaus statt.",
-            statementB1: "Pflege gibt es nur im Krankenhaus.",
-            isCorrect: false,
-            explanation: "Pflege findet in vielen Settings statt: ambulant, stationaer, in Pflegeheimen, in Reha-Einrichtungen und in Hospizen.",
-            explanationB1: "Pflege gibt es ueberall: zu Hause, im Pflegeheim, im Krankenhaus und an vielen anderen Orten.",
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 3: Dialog — Yasemin: Erster Tag auf Station (STORY)
-  // =============================================================
-  {
-    stepId: "le01-s1-03",
-    phase: "s1",
-    stepType: "dialog",
-    bloomLevel: 1,
-    kompetenzbereich: "KB-II",
-    quellen: [],
-    track: "basis",
-    modus: "story",
-    lernziel: "ce01-le01-pflegebeziehung",
-    contentC1: {
-      title: "Erster Tag auf Station",
-      body: "Yasemin Demirci, 22, beginnt heute ihren ersten Praxiseinsatz auf einer internistischen Station.",
-      fallbezug: "Montag, 7:00 Uhr. Yasemin steht vor der Stationstuer und atmet tief durch.",
-    },
-    contentB1: {
-      title: "Der erste Tag",
-      body: "Yasemin ist 22 Jahre alt. Heute ist ihr erster Tag auf der Station im Krankenhaus.",
-      fallbezug: "Es ist Montag, 7 Uhr morgens. Yasemin steht vor der Tuer und ist nervoes.",
-    },
-    question: {
-      fragetext: "Begleite Yasemin bei ihrem ersten Tag.",
-      patientName: "Yasemin Demirci",
-      dialogPhases: [
-        {
-          context: "Yasemin betritt das Stationszimmer. Die Praxisanleiterin schaut von ihren Unterlagen auf.",
-          contextB1: "Yasemin kommt ins Stationszimmer. Die Praxisanleiterin schaut hoch.",
-          speaker: "Yasemin",
-          options: [
-            {
-              text: "Guten Morgen! Ich bin Yasemin Demirci, Auszubildende im ersten Drittel. Im Unterricht klingt alles logisch — aber jetzt stehe ich hier und mein Kopf ist leer.",
-              textB1: "Guten Morgen! Ich bin Yasemin. Ich bin in der Ausbildung. Ich bin sehr nervoes.",
-              patientResponse: "Willkommen, Yasemin! Das ist voellig normal am ersten Tag. Heute beobachtest du erst mal und hilfst bei der Morgenpflege.",
-              patientResponseB1: "Willkommen, Yasemin! Am ersten Tag ist jeder nervoes. Heute schaust du erst mal zu.",
-              score: 3,
-              feedback: "Ehrlichkeit ueber die eigene Unsicherheit ist professionell. Es zeigt Reflexionsfaehigkeit.",
-              feedbackB1: "Gut! Es ist okay, nervoes zu sein. Das zeigt, dass du es ernst nimmst.",
-            },
-            {
-              text: "Hallo! Wo soll ich anfangen? Ich kann schon Blutdruck messen!",
-              textB1: "Hallo! Was soll ich machen? Ich kann schon Blutdruck messen!",
-              patientResponse: "Schoen, dass du motiviert bist! Aber lass uns erst die Patienten kennenlernen. Beobachten kommt vor dem Handeln.",
-              patientResponseB1: "Du bist motiviert — sehr gut! Aber zuerst lernst du die Patienten kennen.",
-              score: 1,
-              feedback: "Motivation ist gut, aber am ersten Tag ist Beobachten wichtiger als Handeln.",
-              feedbackB1: "Motivation ist toll! Aber am ersten Tag ist Zuschauen und Verstehen am wichtigsten.",
-            },
-          ],
-        },
-        {
-          context: "Die Praxisanleiterin zeigt Yasemin die Patiententafel. 'Hier siehst du alle Patienten. Achte auf die Mimik der Patienten, nicht nur auf ihre Worte.'",
-          contextB1: "Die Praxisanleiterin zeigt Yasemin die Tafel mit den Patienten. 'Schau dir die Gesichter der Patienten an. Nicht nur das, was sie sagen.'",
-          speaker: "Yasemin (denkt)",
-          options: [
-            {
-              text: "Mimik beobachten — das ist also wichtiger als ich dachte. Nicht nur zuhoeren, sondern auch hinschauen.",
-              textB1: "Auf die Gesichter achten. Das ist wichtig. Nicht nur zuhoeren.",
-              patientResponse: "Genau! Beobachtung ist eine der wichtigsten Kompetenzen in der Pflege. Du wirst lernen, auf kleinste Zeichen zu achten.",
-              patientResponseB1: "Richtig! Beobachten ist sehr wichtig in der Pflege. Du lernst, auf kleine Zeichen zu achten.",
-              score: 3,
-              feedback: "Beobachtung ist eine Kernkompetenz der Pflege. Mimik, Koerperhaltung und Verhalten sagen oft mehr als Worte.",
-              feedbackB1: "Genau! Pflegende beobachten immer: Gesicht, Koerper und Verhalten. Das sagt oft mehr als Worte.",
-            },
-            {
-              text: "Muss ich mir das alles merken? Das sind so viele Patienten...",
-              textB1: "So viele Patienten! Kann ich mir das alles merken?",
-              patientResponse: "Keine Sorge, das kommt mit der Zeit. Heute konzentrierst du dich auf 2-3 Patienten. Schritt fuer Schritt.",
-              patientResponseB1: "Keine Sorge! Heute schaust du dir nur 2 oder 3 Patienten an. Schritt fuer Schritt.",
-              score: 1,
-              feedback: "Verstaendliche Sorge. Wichtig ist: Beobachtung laesst sich trainieren, man muss nicht alles auf einmal koennen.",
-              feedbackB1: "Verstaendlich! Man muss nicht alles auf einmal koennen. Beobachten kann man lernen.",
-            },
-          ],
-        },
+      fragetext: "Wie sicher fühlst du dich bei diesen Aussagen?",
+      statements: [
+        "Ich kann erklären was Pflege ist.",
+        "Ich kenne den Unterschied zwischen professioneller und privater Pflege.",
+        "Ich weiß wer Florence Nightingale war.",
+        "Ich kann 3 Aufgaben von Pflegefachkräften nennen.",
+        "Ich weiß was das PflBG ist.",
       ],
     },
   },
 
   // =============================================================
-  // Step 4: Text — ICN + WHO Definition (ENTDECKER)
+  // TB1: Was ist Pflege? — SZENE (Phase 1)
   // =============================================================
   {
-    stepId: "le01-s1-04",
+    stepId: "le01-s1-tb1-01",
+    phase: "s1",
+    stepType: "dialog",
+    bloomLevel: 1,
+    kompetenzbereich: "KB-V",
+    quellen: [],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "SZENE",
+    contentC1: {
+      title: "Erster Tag auf Station",
+      body: "Yasemin Demirci, 22 Jahre, steht vor der Tür der internistischen Station. Ihr erster Praxistag nach dem Theorieblock.",
+      fallbezug: "Yasemin ist Auszubildende zur Pflegefachfrau im 1. Ausbildungsdrittel. Sie hat türkische Wurzeln, lebt seit 6 Jahren in Deutschland und spricht auf B2-Niveau.",
+    },
+    contentB1: {
+      title: "Der erste Tag",
+      body: "Yasemin steht vor der Tür. Ihr erster Tag auf der Station. Sie ist aufgeregt.",
+      fallbezug: "Yasemin ist Pflege-Azubi. Sie lernt den Beruf gerade.",
+    },
+    question: {
+      fragetext: "Yasemin sagt:",
+      dialogLines: [
+        { speaker: "Yasemin", text: "Im Unterricht klingt alles logisch — aber jetzt stehe ich hier und mein Kopf ist leer." },
+        { speaker: "Praxisanleiterin", text: "Das geht jedem so am Anfang. Komm, ich zeige dir die Station." },
+        { speaker: "Yasemin", text: "Was muss ich heute als Erstes können?" },
+        { speaker: "Praxisanleiterin", text: "Erstmal: beobachten, zuhören und Fragen stellen. Der Rest kommt." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB1: SZENE (Phase 1) — Anticipation Guide
+  // =============================================================
+  {
+    stepId: "le01-s1-tb1-02",
+    phase: "s1",
+    stepType: "swipe",
+    bloomLevel: 1,
+    kompetenzbereich: "KB-V",
+    quellen: [],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "SZENE",
+    contentC1: {
+      title: "Stimmt das? Stimmt das nicht?",
+      body: "Bevor wir starten: Was denkst du — stimmen diese Aussagen über Pflege?",
+    },
+    contentB1: {
+      title: "Was denkst du?",
+      body: "Was ist richtig? Was ist falsch? Wische nach rechts (stimmt) oder links (stimmt nicht).",
+    },
+    question: {
+      fragetext: "Stimmt das?",
+      cards: [
+        { statement: "Pflege bedeutet hauptsächlich waschen und füttern.", isTrue: false, explanation: "Pflege ist viel mehr: Gesundheitsförderung, Prävention, Beratung, Forschung und Bildung gehören dazu." },
+        { statement: "Pflegefachkräfte dürfen bestimmte Aufgaben nicht an Helfer abgeben.", isTrue: true, explanation: "Richtig! Das PflBG §4 definiert vorbehaltene Tätigkeiten, die nur Pflegefachkräfte ausüben dürfen." },
+        { statement: "Pflege ist kein wissenschaftlicher Beruf.", isTrue: false, explanation: "Pflege ist auf dem Weg zur Profession — mit eigener Wissenschaft, eigenen Studiengängen und eigenem Ethikkodex." },
+        { statement: "Pflegekräfte machen nur, was der Arzt sagt.", isTrue: false, explanation: "Pflege ist ein eigenverantwortlicher Beruf. Pflegefachkräfte planen und steuern den Pflegeprozess selbstständig." },
+        { statement: "Die Pflege hat einen eigenen internationalen Ethikkodex.", isTrue: true, explanation: "Der ICN-Ethikkodex wurde 1953 verabschiedet und regelt das Verhalten von Pflegenden weltweit." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB1: ERKLÄRUNG (Phase 2) — ICN + WHO Definition
+  // =============================================================
+  {
+    stepId: "le01-s1-tb1-03",
     phase: "s1",
     stepType: "text",
     bloomLevel: 1,
@@ -222,91 +145,61 @@ export const STEPS_S1: ContentStep[] = [
     quellen: ["Q1 S.23"],
     track: "basis",
     modus: "entdecker",
-    lernziel: "ce01-le01-pflegeverstaendnis",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "ERKLÄRUNG",
+    imageUrl: "/images/content/le-01/pflege-definition.svg",
+    imageAlt: "Grafik: Pflege-Definition nach ICN und WHO",
     contentC1: {
-      title: "Was ist Pflege?",
-      body: "Die ICN definiert Pflege als eigenverantwortliche Versorgung aller Altersgruppen. Das gilt fuer kranke und gesunde Menschen, in allen Settings. Schluessselaufgaben laut ICN: Gesundheitsfoerderung, Krankheitsverhuetung, Versorgung, Forschung und Bildung. Die WHO ergaenzt: Pflege hilft dem Menschen, sein physisches, psychisches und soziales Potenzial zu verwirklichen.",
-      glossarBegriffe: ["Pflege"],
+      title: "Was ist Pflege? — Die offiziellen Definitionen",
+      body: "Es gibt zwei zentrale Definitionen, die weltweit gelten:\n\n**ICN-Definition (International Council of Nurses):**\nPflege umfasst die eigenverantwortliche Versorgung und Betreuung von Menschen aller Altersgruppen, Familien und Gruppen — ob krank oder gesund, in allen Settings. Schlüsselaufgaben sind: Gesundheitsförderung, Krankheitsverhütung, Versorgung kranker und behinderter Menschen, Forschung und Bildung.\n\n**WHO-Definition:**\nDer gesellschaftliche Auftrag der Pflege ist es, dem einzelnen Menschen zu helfen, sein physisches, psychisches und soziales Potenzial zu bestimmen und zu verwirklichen. Pflege umfasst Planung, Betreuung bei Krankheit und Rehabilitation.",
+      fallbezug: "Yasemin lernt: Pflege ist nicht nur 'am Bett stehen' — sondern ein eigenverantwortlicher Beruf mit wissenschaftlichem Anspruch.",
     },
     contentB1: {
       title: "Was ist Pflege?",
-      body: "Pflege bedeutet: sich um Menschen kuemmern. Egal ob krank oder gesund. Die fuenf Aufgaben laut ICN: Gesundheit foerdern, Krankheit verhindern, Menschen versorgen, forschen und ausbilden.",
-      glossarBegriffe: ["Pflege"],
+      body: "Es gibt zwei wichtige Definitionen:\n\n**ICN** sagt: Pflege ist die Betreuung von Menschen — ob krank oder gesund. Pflegekräfte kümmern sich um Gesundheit, verhindern Krankheiten und helfen kranken Menschen.\n\n**WHO** sagt: Pflege hilft jedem Menschen, gesund zu bleiben oder wieder gesund zu werden — körperlich, seelisch und sozial.",
+      fallbezug: "Yasemin lernt: Pflege ist viel mehr als nur waschen und füttern.",
     },
   },
 
   // =============================================================
-  // Step 5: Reveal — ICN-Schluessselaufgaben (ENTDECKER)
+  // TB1: ERKLÄRUNG (Phase 2) — 5 Schlüsselaufgaben
   // =============================================================
   {
-    stepId: "le01-s1-05",
+    stepId: "le01-s1-tb1-04",
     phase: "s1",
     stepType: "reveal",
     bloomLevel: 1,
     kompetenzbereich: "KB-V",
     quellen: ["Q1 S.23"],
-    track: "vertiefung",
+    track: "basis",
     modus: "entdecker",
-    lernziel: "ce01-le01-pflegeverstaendnis",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "ERKLÄRUNG",
     contentC1: {
-      title: "Die fuenf Aufgaben der Pflege",
-      body: "Der ICN benennt fuenf zentrale Aufgabenbereiche professioneller Pflege.",
+      title: "Die 5 Schlüsselaufgaben der Pflege",
+      body: "Tippe auf jede Karte, um die Aufgabe zu entdecken.",
     },
     contentB1: {
-      title: "Fuenf Hauptaufgaben der Pflege",
-      body: "Die ICN sagt: Pflege hat fuenf wichtige Aufgaben. Decke sie auf.",
+      title: "5 Aufgaben der Pflege",
+      body: "Tippe auf jede Karte. Was gehört alles zur Pflege?",
     },
     question: {
-      fragetext: "Decke die fuenf Aufgaben der Pflege auf.",
-      reveal: {
-        instruction: "Tippe auf jede Karte, um die Aufgabe zu entdecken.",
-        revealMode: "free",
-        cards: [
-          {
-            id: "r1",
-            label: "Aufgabe 1",
-            content: "Gesundheitsfoerderung: Menschen dabei unterstuetzen, gesund zu bleiben und gesundheitsbewusst zu leben.",
-            contentB1: "Gesundheit foerdern: Menschen helfen, gesund zu bleiben.",
-            icon: "heart",
-          },
-          {
-            id: "r2",
-            label: "Aufgabe 2",
-            content: "Krankheitsverhuetung: Risiken erkennen und Massnahmen ergreifen, bevor Krankheiten entstehen.",
-            contentB1: "Krankheit verhindern: Probleme frueh erkennen und vorbeugen.",
-            icon: "shield",
-          },
-          {
-            id: "r3",
-            label: "Aufgabe 3",
-            content: "Versorgung: Kranke und pflegebeduerftige Menschen pflegen und in ihrer Genesung unterstuetzen.",
-            contentB1: "Kranke versorgen: Kranke Menschen pflegen und bei der Genesung helfen.",
-            icon: "stethoscope",
-          },
-          {
-            id: "r4",
-            label: "Aufgabe 4",
-            content: "Forschung: Die Pflegewissenschaft entwickelt und prueft Wissen fuer eine bessere Pflegepraxis.",
-            contentB1: "Forschen: Pflege entwickelt neues Wissen. Das macht Pflege besser.",
-            icon: "microscope",
-          },
-          {
-            id: "r5",
-            label: "Aufgabe 5",
-            content: "Bildung: Aus- und Weiterbildung als Kernaufgabe der Pflege — Wissen weitergeben und sichern.",
-            contentB1: "Ausbilden: Neue Pflegekraefte ausbilden und Wissen weitergeben.",
-            icon: "graduation-cap",
-          },
-        ],
-      },
+      fragetext: "Entdecke die 5 Schlüsselaufgaben nach ICN:",
+      revealItems: [
+        { icon: "heart-pulse", label: "Gesundheitsförderung", detail: "Menschen dabei unterstützen, gesund zu bleiben — durch Beratung, Anleitung und Prävention." },
+        { icon: "shield", label: "Krankheitsverhütung", detail: "Risiken erkennen und Maßnahmen ergreifen, bevor eine Krankheit entsteht — z. B. Dekubitusprophylaxe." },
+        { icon: "stethoscope", label: "Versorgung", detail: "Kranke und behinderte Menschen pflegen — im Krankenhaus, zu Hause oder im Pflegeheim." },
+        { icon: "microscope", label: "Forschung", detail: "Pflegewissen wissenschaftlich weiterentwickeln — was wirkt? Was schadet? Was können wir besser machen?" },
+        { icon: "graduation-cap", label: "Bildung", detail: "Aus- und Weiterbildung als Kernaufgabe der Pflege — Wissen weitergeben und sich selbst weiterentwickeln." },
+      ],
     },
   },
 
   // =============================================================
-  // Step 6: MC — ICN-Aufgaben (CHALLENGE, AMBOSS-Prinzip)
+  // TB1: CHECKPOINT (Phase 3) — MC mit Zeitmessung
   // =============================================================
   {
-    stepId: "le01-s1-06",
+    stepId: "le01-s1-tb1-05",
     phase: "s1",
     stepType: "mc",
     bloomLevel: 2,
@@ -314,754 +207,544 @@ export const STEPS_S1: ContentStep[] = [
     quellen: ["Q1 S.23"],
     track: "basis",
     modus: "challenge",
-    lernziel: "ce01-le01-pflegeverstaendnis",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "CHECKPOINT",
     contentC1: {
-      title: "Pflege vs. aerztliche Aufgaben",
-      body: "Yasemin beobachtet am ersten Tag: Wer macht was auf der Station?",
+      title: "Kurzer Check!",
+      body: "Hast du die ICN-Definition verstanden? Diese Frage misst auch deine Antwortzeit.",
     },
     contentB1: {
-      title: "Was macht die Pflege?",
-      body: "Yasemin fragt sich: Was darf ich als Pflegekraft tun — und was nicht?",
+      title: "Kurzer Check!",
+      body: "Verstehst du die ICN-Definition? Antworte so schnell du kannst.",
     },
     question: {
-      fragetext: "Yasemin soll ihrem Patienten erklaeren, was Pflegende tun. Welche Aufgabe gehoert NICHT dazu?",
-      optionen: [
-        {
-          text: "Dem Patienten eine medizinische Diagnose nennen",
-          isCorrect: true,
-          explanation: "Medizinische Diagnosen stellen Aerzte. Pflegende erheben den Pflegebedarf und formulieren Pflegediagnosen — das ist eine andere Kompetenz.",
-          explanationB1: "Das macht der Arzt. Pflegende beobachten und pflegen — aber sie stellen keine medizinischen Diagnosen.",
-        },
-        {
-          text: "Den Patienten ueber Hygienemaßnahmen informieren",
-          isCorrect: false,
-          explanation: "Beratung und Gesundheitsfoerderung gehoeren zu den ICN-Schluessselaufgaben der Pflege.",
-          explanationB1: "Informieren und beraten ist Aufgabe der Pflege. Das gehoert dazu.",
-        },
-        {
-          text: "Den Pflegebedarf des Patienten einschaetzen",
-          isCorrect: false,
-          explanation: "Den Pflegebedarf erheben ist eine vorbehaltene Taetigkeit — eine Kernkompetenz der Pflegefachkraefte (PflBG §4).",
-          explanationB1: "Den Pflegebedarf feststellen — das ist eine wichtige Aufgabe von Pflegefachkraeften.",
-        },
-        {
-          text: "Den Patienten beim Aufstehen unterstuetzen",
-          isCorrect: false,
-          explanation: "Versorgung und Unterstuetzung sind Kernaufgaben der Pflege laut ICN.",
-          explanationB1: "Patienten helfen und versorgen — das ist Pflege.",
-        },
+      fragetext: "Welche Aufgabe gehört NICHT zu den Schlüsselaufgaben der Pflege nach ICN?",
+      options: [
+        { text: "Arzneimittel verschreiben", isCorrect: true, explanation: "Richtig! Arzneimittel verschreiben ist eine ärztliche Tätigkeit. Die 5 ICN-Aufgaben sind: Gesundheitsförderung, Krankheitsverhütung, Versorgung, Forschung und Bildung." },
+        { text: "Gesundheitsförderung", isCorrect: false, explanation: "Das ist eine der 5 Schlüsselaufgaben nach ICN." },
+        { text: "Forschung", isCorrect: false, explanation: "Forschung gehört laut ICN zu den Schlüsselaufgaben — Pflege entwickelt ihr Wissen wissenschaftlich weiter." },
+        { text: "Krankheitsverhütung", isCorrect: false, explanation: "Prävention ist eine zentrale Aufgabe der Pflege — z. B. Dekubitusprophylaxe oder Sturzprävention." },
       ],
     },
   },
 
   // =============================================================
-  // Step 7: Memory — Fachbegriffe (PUZZLE, vertiefung)
+  // TB1: ANDERS_ERKLÄRT (Phase 4) — ICN vs. WHO
   // =============================================================
   {
-    stepId: "le01-s1-07",
+    stepId: "le01-s1-tb1-06",
     phase: "s1",
-    stepType: "memory",
-    bloomLevel: 1,
+    stepType: "comparison",
+    bloomLevel: 2,
     kompetenzbereich: "KB-V",
-    quellen: ["Q1 S.23", "Q7 S.282"],
-    track: "vertiefung",
-    modus: "puzzle",
-    lernziel: "ce01-le01-pflegeverstaendnis",
+    quellen: ["Q1 S.23"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "ANDERS_ERKLÄRT",
     contentC1: {
-      title: "Memory: Fachbegriffe",
-      body: "Finde die zusammengehoerenden Paare: Fachbegriff und Erklaerung.",
+      title: "ICN vs. WHO — Zwei Blickwinkel",
+      body: "Beide Definitionen beschreiben Pflege — aber mit unterschiedlichem Fokus.",
     },
     contentB1: {
-      title: "Memory-Spiel",
-      body: "Finde die Paare: Welches Wort passt zu welcher Erklaerung?",
+      title: "Zwei Definitionen — ein Beruf",
+      body: "ICN und WHO beschreiben Pflege verschieden. Vergleiche selbst.",
     },
     question: {
-      fragetext: "Decke zwei Karten auf und finde das passende Paar.",
-      memoryPairs: [
-        { a: "Pflege (ICN)", b: "Eigenverantwortliche Versorgung aller Altersgruppen" },
-        { a: "Profession", b: "Beruf mit eigenem Wissen und Ethikkodex" },
-        { a: "Pflegeempfaenger", b: "Person, die professionelle Pflege erhaelt" },
-        { a: "Ethik", b: "Nachdenken ueber richtiges Handeln" },
-        { a: "Wuerde", b: "Unantastbarer Wert jedes Menschen" },
-        { a: "Menschenbild", b: "Vorstellungen darueber, was den Menschen ausmacht" },
+      fragetext: "Vergleiche die beiden Definitionen:",
+      comparisonItems: [
+        { aspect: "Fokus", optionA: "Eigenverantwortliche Versorgung und Betreuung", optionB: "Physisches, psychisches und soziales Potenzial verwirklichen" },
+        { aspect: "Zielgruppe", optionA: "Menschen aller Altersgruppen, Familien, Gruppen", optionB: "Der einzelne Mensch" },
+        { aspect: "Aufgaben", optionA: "5 Schlüsselaufgaben (Förderung, Verhütung, Versorgung, Forschung, Bildung)", optionB: "Planung, Betreuung, Rehabilitation" },
+        { aspect: "Perspektive", optionA: "Berufsperspektive (was Pflege TUT)", optionB: "Gesellschaftsperspektive (was Pflege SOLL)" },
       ],
+      labelA: "ICN-Definition",
+      labelB: "WHO-Definition",
+      iconA: "globe",
+      iconB: "building-2",
     },
   },
 
   // =============================================================
-  // Step 8: Text — Profession und Professionalisierung (ENTDECKER)
+  // TB1: STORYTELLING (Phase 5) — Konkretes Beispiel
   // =============================================================
   {
-    stepId: "le01-s1-08",
+    stepId: "le01-s1-tb1-07",
     phase: "s1",
     stepType: "text",
     bloomLevel: 2,
     kompetenzbereich: "KB-V",
-    quellen: ["Q1 S.23-24", "Q1 S.23"],
+    quellen: ["Q1 S.23"],
     track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-pflegeverstaendnis",
+    modus: "story",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "STORYTELLING",
     contentC1: {
-      title: "Pflege als Profession",
-      body: "Eine Profession zeichnet sich aus durch: wissenschaftlich fundiertes Wissen, eigene Ausbildungsgaenge, einen Ethikkodex und Autonomie. Pflege befindet sich auf dem Weg zur Profession. Das PflBG 2017 definiert erstmals vorbehaltene Taetigkeiten. Nur Pflegefachkraefte duerfen Pflegebedarf erheben, Pflegeprozess steuern und Pflegequalitaet sichern.",
-      glossarBegriffe: ["Profession"],
+      title: "Stell dir vor...",
+      body: "Frau Schneider, 85, lebt allein. Sie kann sich selbst waschen und anziehen. Sie isst regelmäßig und nimmt ihre Medikamente. Aber sie hat Angst vor Stürzen und geht kaum noch raus. Sie fühlt sich einsam.\n\nBraucht Frau Schneider Pflege?\n\nNach der ICN-Definition: **Ja.** Pflege umfasst nicht nur die Versorgung kranker Menschen — sondern auch **Gesundheitsförderung** (Sturzprävention, Mobilität) und Betreuung **gesunder** Menschen in allen Settings.\n\nPflege beginnt nicht erst wenn jemand krank ist.",
+      fallbezug: "Yasemin versteht: Auch auf der Station gibt es Patienten die 'eigentlich nichts haben' — aber trotzdem Pflege brauchen.",
     },
     contentB1: {
-      title: "Pflege — ein besonderer Beruf",
-      body: "Was macht einen Beruf besonders? Eigenes Wissen, eine eigene Ausbildung, eigene Regeln und Selbststaendigkeit. Pflege wird immer professioneller. Seit 2017 gibt es ein neues Gesetz: das PflBG. Es sagt: Nur Pflegefachkraefte duerfen den Pflegebedarf feststellen und die Pflege planen.",
-      glossarBegriffe: ["Profession"],
+      title: "Ein Beispiel",
+      body: "Frau Schneider ist 85 und lebt allein. Sie kann sich waschen und anziehen. Aber sie hat Angst vor Stürzen und geht nicht mehr raus.\n\nBraucht sie Pflege? **Ja!** Pflege hilft auch gesunden Menschen — zum Beispiel durch Sturzprävention und Beratung.\n\nPflege beginnt nicht erst bei Krankheit.",
+      fallbezug: "Yasemin lernt: Pflege ist mehr als nur kranke Menschen waschen.",
     },
   },
 
   // =============================================================
-  // Step 9: Flipcard — Merkmale einer Profession (ENTDECKER)
+  // TB1: ANWENDUNG (Phase 9) — Categorize
   // =============================================================
   {
-    stepId: "le01-s1-09",
+    stepId: "le01-s1-tb1-08",
+    phase: "s1",
+    stepType: "categorize",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-V",
+    quellen: ["Q1 S.23"],
+    track: "basis",
+    modus: "challenge",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Was gehört zur Pflege?",
+      body: "Ordne die Tätigkeiten zu: Gehört das zur Pflege nach ICN — oder nicht?",
+    },
+    contentB1: {
+      title: "Pflege oder nicht?",
+      body: "Sortiere: Was gehört zur Pflege? Was nicht?",
+    },
+    question: {
+      fragetext: "Ordne zu: Pflege nach ICN — Ja oder Nein?",
+      categories: [
+        { name: "Pflege nach ICN" },
+        { name: "Keine Pflege-Aufgabe" },
+      ],
+      items: [
+        { text: "Gesundheitsberatung für Diabetiker", correctCategory: 0 },
+        { text: "Arzneimittel verschreiben", correctCategory: 1 },
+        { text: "Sturzprophylaxe durchführen", correctCategory: 0 },
+        { text: "Operationen planen", correctCategory: 1 },
+        { text: "Pflegeforschung betreiben", correctCategory: 0 },
+        { text: "Wundversorgung dokumentieren", correctCategory: 0 },
+        { text: "Röntgenbilder befunden", correctCategory: 1 },
+        { text: "Angehörige beraten", correctCategory: 0 },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB1: REFLEXION (Phase 10) — Confidence
+  // =============================================================
+  {
+    stepId: "le01-s1-tb1-09",
+    phase: "s1",
+    stepType: "confidence",
+    bloomLevel: 1,
+    kompetenzbereich: "KB-V",
+    quellen: [],
+    track: "basis",
+    modus: "checkpoint",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "REFLEXION",
+    contentC1: {
+      title: "Wie sicher bist du jetzt?",
+      body: "Du hast die Pflege-Definitionen kennengelernt. Schätze dich ein.",
+    },
+    contentB1: {
+      title: "Wie sicher bist du?",
+      body: "Schätze dich ein. Wie gut verstehst du die Definitionen?",
+    },
+    question: {
+      fragetext: "Wie sicher fühlst du dich bei diesen Aussagen?",
+      statements: [
+        "Ich kann Pflege nach ICN definieren.",
+        "Ich kenne den Unterschied zwischen ICN und WHO.",
+        "Ich kann 5 Schlüsselaufgaben der Pflege benennen.",
+      ],
+    },
+  },
+
+  // =============================================================
+  // Snack-Step: Memory zwischen TB1 und TB2
+  // =============================================================
+  {
+    stepId: "le01-s1-sn-01",
+    phase: "s1",
+    stepType: "memory",
+    bloomLevel: 1,
+    kompetenzbereich: "KB-V",
+    quellen: [],
+    track: "vertiefung",
+    modus: "puzzle",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Begriffe-Memory",
+      body: "Finde die passenden Paare: Fachbegriff und Erklärung.",
+    },
+    contentB1: {
+      title: "Memory-Spiel",
+      body: "Finde die Paare! Welcher Begriff passt zu welcher Erklärung?",
+    },
+    question: {
+      fragetext: "Finde die 6 Paare:",
+      pairs: [
+        { a: "Pflege", b: "Eigenverantwortliche Versorgung und Betreuung" },
+        { a: "Profession", b: "Beruf mit Wissenschaft, Ausbildung und Ethikkodex" },
+        { a: "Pflegeprozess", b: "Systematischer Problemlösungsprozess" },
+        { a: "Pflegeempfänger", b: "Person die professionelle Pflege erhält" },
+        { a: "Ethik", b: "Nachdenken über richtiges Handeln" },
+        { a: "Würde", b: "Wert der jedem Menschen innewohnt" },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB2: Geschichte & Profession — SZENE (Phase 1)
+  // =============================================================
+  {
+    stepId: "le01-s1-tb2-01",
+    phase: "s1",
+    stepType: "dialog",
+    bloomLevel: 1,
+    kompetenzbereich: "KB-V",
+    quellen: [],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "SZENE",
+    contentC1: {
+      title: "Eine lange Tradition",
+      body: "Yasemin entdeckt im Stationszimmer ein altes Foto an der Wand.",
+    },
+    contentB1: {
+      title: "Woher kommt die Pflege?",
+      body: "Yasemin sieht ein altes Foto im Stationszimmer.",
+    },
+    question: {
+      fragetext: "Yasemin fragt:",
+      dialogLines: [
+        { speaker: "Yasemin", text: "Wer ist die Frau auf dem Foto?" },
+        { speaker: "Praxisanleiterin", text: "Das ist Florence Nightingale — sie hat die moderne Pflege begründet. 1859 hat sie ihr berühmtes Buch geschrieben." },
+        { speaker: "Yasemin", text: "Und in Deutschland? Wer hat hier angefangen?" },
+        { speaker: "Praxisanleiterin", text: "Agnes Karll. Sie hat 1903 die erste Berufsorganisation gegründet und für eine 3-jährige Ausbildung gekämpft. Du bist Teil einer langen Tradition." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB2: ERKLÄRUNG (Phase 2) — Timeline
+  // =============================================================
+  {
+    stepId: "le01-s1-tb2-02",
+    phase: "s1",
+    stepType: "timeline",
+    bloomLevel: 1,
+    kompetenzbereich: "KB-V",
+    quellen: ["Q1 S.21-23", "Q12 Kap.1.4.4"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "ERKLÄRUNG",
+    contentC1: {
+      title: "Geschichte der Pflege",
+      body: "Die Pflege hat sich über Jahrhunderte entwickelt — von der Nächstenliebe zum wissenschaftlichen Beruf.",
+    },
+    contentB1: {
+      title: "Pflege früher und heute",
+      body: "Die Pflege hat sich stark verändert. Schau dir die wichtigsten Ereignisse an.",
+    },
+    question: {
+      fragetext: "Die wichtigsten Meilensteine:",
+      timelineEvents: [
+        { year: "1859", title: "Notes on Nursing", description: "Florence Nightingale veröffentlicht ihr Buch — die Geburtsstunde der modernen Pflege.", icon: "book-open" },
+        { year: "1903", title: "Berufsorganisation", description: "Agnes Karll gründet die erste deutsche Berufsorganisation für Pflegende (Vorläufer des DBfK).", icon: "users" },
+        { year: "1907", title: "ICN-Präsidentin", description: "Agnes Karll wird Präsidentin des International Council of Nurses.", icon: "globe" },
+        { year: "1953", title: "ICN-Ethikkodex", description: "Der ICN verabschiedet den internationalen Ethikkodex für Pflegende.", icon: "scroll" },
+        { year: "2017", title: "PflBG", description: "Das Pflegeberufegesetz vereint Alten-, Kranken- und Kinderkrankenpflege zur generalistischen Ausbildung.", icon: "scale" },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB2: ERKLÄRUNG (Phase 2) — Flipcard Profession
+  // =============================================================
+  {
+    stepId: "le01-s1-tb2-03",
     phase: "s1",
     stepType: "flipcard",
     bloomLevel: 2,
     kompetenzbereich: "KB-V",
     quellen: ["Q1 S.23-24"],
-    track: "vertiefung",
+    track: "basis",
     modus: "entdecker",
-    lernziel: "ce01-le01-pflegeverstaendnis",
-    imageUrl: "/images/le01/profession-merkmale.svg",
-    imageAlt: "5 Karten mit Merkmalen einer Profession",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "ERKLÄRUNG",
     contentC1: {
-      title: "Merkmale einer Profession",
-      body: "Fuenf zentrale Merkmale kennzeichnen eine Profession. Pflege erfuellt immer mehr davon.",
+      title: "Was macht einen Beruf zur Profession?",
+      body: "Tippe auf jede Karte, um die Merkmale einer Profession zu entdecken.",
     },
     contentB1: {
-      title: "Was macht einen Beruf zur Profession?",
-      body: "Ein besonderer Beruf hat fuenf wichtige Merkmale. Drehe die Karten um.",
+      title: "Wann ist ein Beruf eine Profession?",
+      body: "Tippe auf jede Karte. Was macht einen Beruf besonders?",
     },
     question: {
-      fragetext: "Tippe auf eine Karte, um das Pflege-Beispiel zu sehen.",
-      flipcard: {
-        instruction: "Drehe die Karten um und entdecke die Merkmale einer Profession.",
-        cards: [
-          {
-            front: "Wissenschaftliches Wissen",
-            back: "Pflege forscht und nutzt Evidence-based Nursing (EBN) statt Tradition.",
-            backB1: "Pflege nutzt Wissen aus der Forschung. Nicht nur: 'Das machen wir schon immer so.'",
-            category: "Merkmal",
-          },
-          {
-            front: "Eigene Ausbildung",
-            back: "3-jaehrige generalistische Pflegeausbildung oder primaerqualifizierendes Studium seit PflBG 2017.",
-            backB1: "3 Jahre Ausbildung oder Studium. Seit 2017 gibt es eine neue Ausbildung fuer alle.",
-            category: "Merkmal",
-          },
-          {
-            front: "Ethikkodex",
-            back: "Der ICN-Ethikkodex formuliert Verhaltensnormen in 4 Bereichen: gegenueber Mitmenschen, in der Berufsausuebung, gegenueber der Profession und gegenueber Kollegen.",
-            backB1: "Der ICN-Ethikkodex sagt, wie Pflegende sich verhalten sollen: gegenueber Patienten, im Beruf und mit Kollegen.",
-            category: "Merkmal",
-          },
-          {
-            front: "Autonomie",
-            back: "Vorbehaltene Taetigkeiten nach PflBG §4: Pflegebedarf erheben, Pflegeprozess steuern, Qualitaet sichern.",
-            backB1: "Pflegefachkraefte entscheiden selbst ueber bestimmte Aufgaben. Das steht im Gesetz.",
-            category: "Merkmal",
-          },
-          {
-            front: "Akademisierung",
-            back: "Primaerqualifizierende Studiengaenge ermoeglichen einen Hochschulabschluss in der Pflege.",
-            backB1: "Man kann Pflege jetzt auch an einer Hochschule studieren.",
-            category: "Merkmal",
-          },
-        ],
-      },
+      fragetext: "Die 5 Merkmale einer Profession:",
+      cards: [
+        { front: "Wissenschaftliches Wissen", back: "Der Beruf basiert auf wissenschaftlicher Forschung — nicht auf Tradition oder Bauchgefühl.", icon: "flask-conical" },
+        { front: "Eigene Ausbildung", back: "Es gibt eigene, geregelte Ausbildungsgänge mit staatlicher Anerkennung.", icon: "graduation-cap" },
+        { front: "Ethikkodex", back: "Ein selbstverpflichtender Verhaltenskodex regelt, wie sich Berufsangehörige verhalten sollen.", icon: "scroll" },
+        { front: "Autonomie", back: "Der Beruf hat Mitbestimmung über Ausbildungsinhalte, Forschung und Berufsausübung.", icon: "key" },
+        { front: "Akademisierung", back: "Es gibt Studiengänge (Bachelor, Master) für den Beruf — nicht nur die Ausbildung.", icon: "book-open" },
+      ],
     },
   },
 
   // =============================================================
-  // Step 10: TrueFalse — Vorbehaltene Taetigkeiten (CHALLENGE)
+  // TB2: CHECKPOINT (Phase 3) — MC Agnes Karll
   // =============================================================
   {
-    stepId: "le01-s1-10",
+    stepId: "le01-s1-tb2-04",
     phase: "s1",
-    stepType: "truefalse",
+    stepType: "mc",
     bloomLevel: 2,
     kompetenzbereich: "KB-V",
-    quellen: ["Q1 S.23", "Q11"],
+    quellen: ["Q1 S.22"],
     track: "basis",
     modus: "challenge",
-    lernziel: "ce01-le01-pflegeverstaendnis",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "CHECKPOINT",
     contentC1: {
-      title: "Vorbehaltene Taetigkeiten",
-      body: "Seit dem PflBG gibt es Aufgaben, die nur Pflegefachkraefte ausfuehren duerfen.",
+      title: "Kurzer Check!",
+      body: "Hast du die Geschichte verstanden?",
     },
     contentB1: {
-      title: "Wer darf was?",
-      body: "Bestimmte Aufgaben duerfen nur Pflegefachkraefte machen. Welche Aussagen stimmen?",
+      title: "Kurzer Check!",
+      body: "Weißt du Bescheid über die Geschichte der Pflege?",
     },
     question: {
-      fragetext: "Welche Aussagen sind richtig?",
-      trueFalseCards: [
-        {
-          statement: "Pflegehelfer duerfen eigenstaendig den Pflegebedarf erheben.",
-          isTrue: false,
-          explanation: "Die Erhebung des Pflegebedarfs ist eine vorbehaltene Taetigkeit nach PflBG §4 — nur fuer Pflegefachkraefte.",
-        },
-        {
-          statement: "Das PflBG definiert vorbehaltene Taetigkeiten fuer Pflegefachkraefte.",
-          isTrue: true,
-          explanation: "Korrekt — PflBG §4 regelt diese vorbehaltenen Taetigkeiten.",
-        },
-        {
-          statement: "Pflege ist bereits eine vollstaendig anerkannte Profession wie Medizin.",
-          isTrue: false,
-          explanation: "Pflege befindet sich noch im Professionalisierungsprozess. Akademisierung und Forschung nehmen zu, aber der Weg ist nicht abgeschlossen.",
-        },
-        {
-          statement: "Ein Ethikkodex ist ein Merkmal einer Profession.",
-          isTrue: true,
-          explanation: "Der ICN-Ethikkodex formuliert seit 1953 verbindliche Verhaltensnormen fuer Pflegende weltweit.",
-        },
+      fragetext: "Warum gilt Agnes Karll als Pionierin der deutschen Pflege?",
+      options: [
+        { text: "Sie gründete 1903 die erste Berufsorganisation und forderte eine 3-jährige Ausbildung", isCorrect: true, explanation: "Richtig! Agnes Karll kämpfte für die Professionalisierung der Pflege in Deutschland und wurde 1907 sogar ICN-Präsidentin." },
+        { text: "Sie schrieb 1859 das Buch 'Notes on Nursing'", isCorrect: false, explanation: "Das war Florence Nightingale, nicht Agnes Karll. Nightingale gilt als Begründerin der modernen Krankenpflege weltweit." },
+        { text: "Sie führte die generalistische Pflegeausbildung ein", isCorrect: false, explanation: "Die generalistische Ausbildung kam erst 2017 mit dem PflBG — über 100 Jahre nach Agnes Karll." },
+        { text: "Sie entwickelte die 14 Grundbedürfnisse", isCorrect: false, explanation: "Die 14 Grundbedürfnisse stammen von Virginia Henderson (1950er Jahre), nicht von Agnes Karll." },
       ],
     },
   },
 
   // =============================================================
-  // Step 11: Dialog — Yasemin beobachtet Aufnahmegespraech (STORY)
+  // TB2: ANDERS_ERKLÄRT (Phase 4) — Mindmap Profession
   // =============================================================
   {
-    stepId: "le01-s1-11",
-    phase: "s1",
-    stepType: "dialog",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-II",
-    quellen: ["Q2 S.80"],
-    track: "basis",
-    modus: "story",
-    lernziel: "ce01-le01-pflegebeziehung",
-    contentC1: {
-      title: "Das Aufnahmegespraech",
-      body: "Yasemin beobachtet, wie ihre Praxisanleiterin ein Aufnahmegespraech fuehrt.",
-      fallbezug: "Die Praxisanleiterin sagt: 'Achte auf die Mimik des Patienten, nicht nur auf seine Worte.'",
-    },
-    contentB1: {
-      title: "Ein Patient kommt",
-      body: "Yasemin schaut zu, wie die Praxisanleiterin mit einem neuen Patienten spricht.",
-      fallbezug: "'Schau dir sein Gesicht an. Nicht nur, was er sagt.'",
-    },
-    question: {
-      fragetext: "Begleite Yasemin beim Aufnahmegespraech.",
-      patientName: "Praxisanleiterin",
-      dialogPhases: [
-        {
-          context: "Die Praxisanleiterin fragt Herrn Mueller: 'Was koennen Sie noch selbst?' statt 'Was koennen Sie nicht?'",
-          contextB1: "Die Praxisanleiterin fragt: 'Was koennen Sie noch selbst machen?'",
-          speaker: "Yasemin (denkt)",
-          options: [
-            {
-              text: "Interessant — sie fragt nicht nach Problemen, sondern nach Ressourcen. Sie will wissen, was er KANN.",
-              textB1: "Sie fragt, was er kann. Nicht was er nicht kann. Das ist gut.",
-              patientResponse: "Genau! Ressourcenorientierung ist ein Grundprinzip der Pflege. Wir schauen auf Staerken, nicht nur auf Defizite.",
-              patientResponseB1: "Richtig! Wir schauen auf die Staerken. Nicht nur auf die Probleme.",
-              score: 3,
-              feedback: "Ressourcenorientierung ist zentral im Pflegeprozess. Erst die Faehigkeiten erkennen, dann die Probleme.",
-              feedbackB1: "Genau! Zuerst schauen, was der Patient noch kann. Dann die Probleme anschauen.",
-            },
-            {
-              text: "Warum fragt sie nicht direkt, was ihm fehlt? Das waere doch schneller.",
-              textB1: "Warum fragt sie nicht einfach, was er nicht kann?",
-              patientResponse: "Wenn wir nur nach Defiziten fragen, sehen wir den ganzen Menschen nicht. Ressourcen sind genauso wichtig.",
-              patientResponseB1: "Wenn wir nur nach Problemen fragen, vergessen wir die Staerken.",
-              score: 1,
-              feedback: "Pflege fragt immer beides: Was ist das Problem UND was sind die Ressourcen?",
-              feedbackB1: "Gute Frage! Pflege fragt immer beides: Probleme und Staerken.",
-            },
-          ],
-        },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 12: Diagram — Mindmap "Pflege als Beruf" (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s1-12",
+    stepId: "le01-s1-tb2-05",
     phase: "s1",
     stepType: "diagram",
     bloomLevel: 2,
     kompetenzbereich: "KB-V",
-    quellen: ["Q1 S.23-24", "Q3 S.103"],
+    quellen: ["Q1 S.23-24"],
     track: "basis",
     modus: "entdecker",
-    lernziel: "ce01-le01-pflegeverstaendnis",
-    imageUrl: "/images/le01/mindmap-pflege-beruf.svg",
-    imageAlt: "Mindmap: Pflege als Beruf mit 5 Unterthemen",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "ANDERS_ERKLÄRT",
     contentC1: {
-      title: "Pflege als Beruf",
-      body: "Diese Mindmap zeigt dir die wichtigsten Bereiche der Pflege als Profession.",
+      title: "Was macht Pflege zur Profession?",
+      body: "Schau dir die Zusammenhänge an: Was hat Pflege schon — und was fehlt noch?",
     },
     contentB1: {
       title: "Pflege als Beruf",
-      body: "Diese Uebersicht zeigt: Was gehoert alles zur Pflege als Beruf?",
+      body: "Was hat die Pflege schon? Was fehlt noch? Schau dir das Bild an.",
     },
     question: {
-      fragetext: "Erkunde die Bereiche der Pflege als Profession.",
-      diagram: {
-        diagramType: "mindmap",
-        instruction: "Tippe auf die einzelnen Bereiche, um mehr zu erfahren.",
-        nodes: [
-          { id: "pflege", label: "Pflege als Beruf", labelB1: "Pflege als Beruf", highlight: true },
-          { id: "wissenschaft", label: "Pflegewissenschaft", labelB1: "Pflege-Forschung" },
-          { id: "ausbildung", label: "Eigene Ausbildung", labelB1: "Eigene Ausbildung" },
-          { id: "ethik", label: "Ethikkodex", labelB1: "Regeln fuer gutes Handeln" },
-          { id: "praxis", label: "Eigenverantwortliche Praxis", labelB1: "Eigene Aufgaben" },
-          { id: "geschichte", label: "Geschichte", labelB1: "Geschichte der Pflege" },
-        ],
-        edges: [
-          { from: "pflege", to: "wissenschaft" },
-          { from: "pflege", to: "ausbildung" },
-          { from: "pflege", to: "ethik" },
-          { from: "pflege", to: "praxis" },
-          { from: "pflege", to: "geschichte" },
-        ],
-        interactive: true,
-      },
+      fragetext: "Mindmap: Pflege auf dem Weg zur Profession",
+      diagramType: "mindmap",
+      nodes: [
+        { id: "center", label: "Pflege = Profession?", level: 0 },
+        { id: "wissen", label: "Wissenschaft ✓", level: 1, parent: "center" },
+        { id: "ausbildung", label: "Eigene Ausbildung ✓", level: 1, parent: "center" },
+        { id: "ethik", label: "ICN-Ethikkodex ✓", level: 1, parent: "center" },
+        { id: "autonomie", label: "Autonomie ◐", level: 1, parent: "center" },
+        { id: "akademie", label: "Akademisierung ◐", level: 1, parent: "center" },
+        { id: "pflbg", label: "PflBG 2017", level: 2, parent: "autonomie" },
+        { id: "studien", label: "Primärqualifizierende Studiengänge", level: 2, parent: "akademie" },
+      ],
     },
   },
 
   // =============================================================
-  // Step 13: Timeline — Geschichte der Pflege (ENTDECKER)
+  // TB2: ANWENDUNG (Phase 9) — TrueFalse
   // =============================================================
   {
-    stepId: "le01-s1-13",
+    stepId: "le01-s1-tb2-06",
     phase: "s1",
-    stepType: "timeline",
+    stepType: "truefalse",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-V",
+    quellen: ["Q1 S.23", "Q12 Kap.1.4.4"],
+    track: "basis",
+    modus: "challenge",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Stimmt das?",
+      body: "Prüfe dein Wissen: Welche Aussagen über Professionalisierung sind richtig?",
+    },
+    contentB1: {
+      title: "Richtig oder falsch?",
+      body: "Lies jede Aussage. Stimmt sie oder stimmt sie nicht?",
+    },
+    question: {
+      fragetext: "Wische: Stimmt oder stimmt nicht?",
+      cards: [
+        { statement: "Professionalisierung bedeutet, dass ein Beruf sich zu einer Profession weiterentwickelt.", isTrue: true, explanation: "Richtig! Pflege befindet sich auf diesem Weg — das PflBG und Studiengänge sind wichtige Meilensteine." },
+        { statement: "Pflege ist bereits eine vollständige Profession wie die Medizin.", isTrue: false, explanation: "Noch nicht ganz. Pflege hat einen Ethikkodex und Wissenschaft, aber bei Autonomie und Akademisierung gibt es noch Entwicklungsbedarf." },
+        { statement: "Das PflBG definiert vorbehaltene Tätigkeiten für Pflegefachkräfte.", isTrue: true, explanation: "Richtig! §4 PflBG: Pflegebedarf erheben, Pflegeprozess steuern und Qualität sichern dürfen nur Pflegefachkräfte." },
+        { statement: "Florence Nightingale gründete die erste deutsche Berufsorganisation.", isTrue: false, explanation: "Das war Agnes Karll (1903). Nightingale war Britin und schrieb 1859 'Notes on Nursing'." },
+        { statement: "Das Ausbildungsziel nach PflBG §5 umfasst auch interkulturelle Kompetenzen.", isTrue: true, explanation: "Richtig! PflBG §5 fordert fachliche, methodische, soziale, interkulturelle und kommunikative Kompetenzen." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB2: REFLEXION (Phase 10)
+  // =============================================================
+  {
+    stepId: "le01-s1-tb2-07",
+    phase: "s1",
+    stepType: "reflection",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-V",
+    quellen: [],
+    track: "vertiefung",
+    modus: "schreibtisch",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "REFLEXION",
+    contentC1: {
+      title: "Ist Pflege eine Profession?",
+      body: "Du hast gelernt, welche Merkmale eine Profession ausmachen. Jetzt bist du dran — was denkst du?",
+    },
+    contentB1: {
+      title: "Was denkst du?",
+      body: "Ist Pflege schon eine Profession? Was fehlt noch? Schreibe deine Meinung.",
+    },
+    question: {
+      fragetext: "Ist Pflege heute schon eine vollständige Profession? Begründe deine Meinung mit mindestens einem Merkmal.",
+      satzanfaenge: [
+        "Ich denke, Pflege ist...",
+        "Ein wichtiges Merkmal ist...",
+        "Was noch fehlt, ist...",
+      ],
+      minWords: 20,
+    },
+  },
+
+  // =============================================================
+  // Session-Abschluss: Crossword
+  // =============================================================
+  {
+    stepId: "le01-s1-bk-02",
+    phase: "s1",
+    stepType: "crossword",
     bloomLevel: 1,
     kompetenzbereich: "KB-V",
-    quellen: ["Q1 S.21", "Q1 S.22", "Q1 S.23", "Q9"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-pflegeverstaendnis",
-    imageUrl: "/images/le01/timeline-pflege.svg",
-    imageAlt: "Zeitstrahl der Pflegegeschichte",
-    contentC1: {
-      title: "Meilensteine der Pflege",
-      body: "Von Nightingale bis zum PflBG: Die Pflege hat eine lange Geschichte der Professionalisierung.",
-    },
-    contentB1: {
-      title: "Wichtige Daten der Pflege",
-      body: "Die Pflege hat eine lange Geschichte. Hier siehst du die wichtigsten Zeitpunkte.",
-    },
-    question: {
-      fragetext: "Erkunde die wichtigsten Meilensteine der Pflegegeschichte.",
-      timeline: {
-        instruction: "Scrolle durch den Zeitstrahl.",
-        events: [
-          {
-            id: "t1",
-            time: "1859",
-            title: "Notes on Nursing",
-            description: "Florence Nightingale veroeffentlicht das erste Pflegelehrbuch und gilt als Begruenderin der modernen Krankenpflege.",
-            descriptionB1: "Nightingale schreibt das erste Buch ueber Pflege. Sie hat die moderne Pflege gegruendet.",
-            icon: "book",
-          },
-          {
-            id: "t2",
-            time: "1903",
-            title: "Agnes Karll",
-            description: "Gruendung der ersten deutschen Berufsorganisation fuer Pflegende (Vorlaeufer des DBfK). 1907 wird sie ICN-Praesidentin.",
-            descriptionB1: "Agnes Karll gruendet den ersten Pflege-Verein in Deutschland.",
-            icon: "users",
-          },
-          {
-            id: "t3",
-            time: "12. Mai",
-            title: "Tag der Pflege",
-            description: "Der Internationale Tag der Pflege ehrt Florence Nightingales Geburtstag am 12. Mai.",
-            descriptionB1: "Am 12. Mai ist der Tag der Pflege — Nightingales Geburtstag.",
-            icon: "calendar",
-            highlight: true,
-          },
-          {
-            id: "t4",
-            time: "2017",
-            title: "PflBG",
-            description: "Das Pflegeberufegesetz vereint alle Pflegeausbildungen zur generalistischen Ausbildung und definiert vorbehaltene Taetigkeiten.",
-            descriptionB1: "Neues Gesetz: Jetzt gibt es nur noch eine Pflege-Ausbildung fuer alle.",
-            icon: "file-text",
-            highlight: true,
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 14: Slider — PflBG Jahr (CHALLENGE, vertiefung)
-  // =============================================================
-  {
-    stepId: "le01-s1-14",
-    phase: "s1",
-    stepType: "slider",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q1 S.23"],
+    quellen: [],
     track: "vertiefung",
-    modus: "challenge",
-    lernziel: "ce01-le01-pflegeverstaendnis",
+    modus: "puzzle",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
-      title: "PflBG — wann kam es?",
-      body: "Das Pflegeberufegesetz war ein Meilenstein fuer die Professionalisierung der Pflege.",
+      title: "Kreuzworträtsel",
+      body: "Teste dein Wissen spielerisch — finde die 6 Begriffe!",
     },
     contentB1: {
-      title: "Wann kam das neue Gesetz?",
-      body: "Das Pflegeberufegesetz (PflBG) war sehr wichtig fuer die Pflege.",
+      title: "Kreuzworträtsel",
+      body: "Finde 6 Wörter! Lies die Hinweise und schreibe das Wort.",
     },
     question: {
-      fragetext: "In welchem Jahr wurde das Pflegeberufegesetz (PflBG) verabschiedet?",
-      slider: {
-        instruction: "Bewege den Regler auf das richtige Jahr.",
-        unit: "",
-        min: 1990,
-        max: 2025,
-        step: 1,
-        correctValue: 2017,
-        tolerance: 2,
-        explanation: "Das PflBG wurde 2017 verabschiedet. Es vereinte die drei bisherigen Pflegeausbildungen zur generalistischen Ausbildung.",
-        explanationB1: "Das PflBG kam 2017. Seitdem gibt es nur noch eine Pflege-Ausbildung fuer alle.",
-      },
+      fragetext: "Finde die 6 Begriffe:",
+      words: [
+        { word: "NIGHTINGALE", clue: "Begründerin der modernen Pflege (1859)" },
+        { word: "PROFESSION", clue: "Beruf mit Wissenschaft, Ausbildung und Ethikkodex" },
+        { word: "ICN", clue: "International Council of Nurses (Abkürzung)" },
+        { word: "PFLEGEPROZESS", clue: "Systematischer Problemlösungsprozess in 6 Schritten" },
+        { word: "KARLL", clue: "Gründerin der ersten deutschen Berufsorganisation" },
+        { word: "WHO", clue: "Weltgesundheitsorganisation (Abkürzung)" },
+      ],
     },
   },
 
   // =============================================================
-  // Step 15: Comparison — Professionelle vs. Laienpflege (ENTDECKER)
+  // Session-Abschluss: Matching
   // =============================================================
   {
-    stepId: "le01-s1-15",
+    stepId: "le01-s1-bk-03",
     phase: "s1",
-    stepType: "comparison",
-    bloomLevel: 2,
+    stepType: "matching",
+    bloomLevel: 1,
     kompetenzbereich: "KB-V",
-    quellen: ["Q1 S.23-24", "Q3 S.101-102"],
+    quellen: ["Q1 S.21-23"],
     track: "vertiefung",
-    modus: "entdecker",
-    lernziel: "ce01-le01-pflegeverstaendnis",
-    imageUrl: "/images/le01/vergleich-pflege.svg",
-    imageAlt: "Vergleichstabelle: Professionelle Pflege vs. Laienpflege",
+    modus: "puzzle",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
-      title: "Professionelle Pflege vs. Laienpflege",
-      body: "Der Unterschied zwischen professioneller Pflege und Pflege durch Angehoerige ist zentral fuer das Pflegeverstaendnis.",
+      title: "Wer hat was geleistet?",
+      body: "Ordne jeder Person ihre wichtigste Leistung zu.",
     },
     contentB1: {
-      title: "Professionelle Pflege oder Familie?",
-      body: "Es gibt wichtige Unterschiede zwischen professioneller Pflege und Pflege durch die Familie.",
+      title: "Personen und Leistungen",
+      body: "Verbinde die Person mit ihrer Leistung.",
     },
     question: {
-      fragetext: "Vergleiche die beiden Formen der Pflege.",
-      comparison: {
-        instruction: "Schau dir die Unterschiede an.",
-        columns: [
-          { label: "Professionelle Pflege", icon: "briefcase" },
-          { label: "Laienpflege", icon: "home" },
-        ],
-        rows: [
-          {
-            criterion: "Wissensgrundlage",
-            values: ["Wissenschaftliches Wissen (EBN)", "Erfahrung und Intuition"],
-            valuesB1: ["Wissen aus der Forschung", "Eigene Erfahrung"],
-            highlight: 0,
-          },
-          {
-            criterion: "Ausbildung",
-            values: ["Mindestens 3-jaehrige Ausbildung", "Keine formale Ausbildung noetig"],
-            valuesB1: ["3 Jahre Ausbildung", "Keine Ausbildung noetig"],
-          },
-          {
-            criterion: "Ethikkodex",
-            values: ["ICN-Ethikkodex, Pflege-Charta", "Eigene Werte und Moral"],
-            valuesB1: ["Internationale Regeln fuer gutes Handeln", "Eigene Werte"],
-          },
-          {
-            criterion: "Methode",
-            values: ["Systematischer Pflegeprozess", "Situatives Handeln"],
-            valuesB1: ["Fester Ablauf in 6 Schritten", "Handeln nach Gefuehl"],
-          },
-          {
-            criterion: "Nachpruefbarkeit",
-            values: ["Dokumentiert, qualitaetsgesichert", "Nicht standardisiert"],
-            valuesB1: ["Wird aufgeschrieben und geprueft", "Wird nicht geprueft"],
-            highlight: 0,
-          },
-        ],
-      },
+      fragetext: "Ordne zu:",
+      pairs: [
+        { left: "Florence Nightingale", right: "Notes on Nursing (1859)" },
+        { left: "Agnes Karll", right: "Erste Berufsorganisation (1903)" },
+        { left: "Virginia Henderson", right: "14 Grundbedürfnisse" },
+        { left: "ICN", right: "Internationaler Ethikkodex" },
+        { left: "PflBG", right: "Vorbehaltene Tätigkeiten (§4)" },
+      ],
     },
   },
 
   // =============================================================
-  // Step 16: Dialog — Yasemin fragt nach Verantwortung (STORY)
+  // Session-Abschluss: Leitfall-Dialog
   // =============================================================
   {
-    stepId: "le01-s1-16",
+    stepId: "le01-s1-bk-04",
     phase: "s1",
     stepType: "dialog",
     bloomLevel: 2,
     kompetenzbereich: "KB-V",
-    quellen: ["Q1 S.23", "Q11"],
-    track: "basis",
-    modus: "story",
-    lernziel: "ce01-le01-pflegeverstaendnis",
-    contentC1: {
-      title: "Was darf ich als Azubi?",
-      body: "Yasemin fragt ihre Praxisanleiterin nach den Verantwortungsbereichen.",
-      fallbezug: "Yasemin hat das Aufnahmegespraech beobachtet und will jetzt mehr ueber ihre Rolle wissen.",
-    },
-    contentB1: {
-      title: "Was darf ich machen?",
-      body: "Yasemin fragt: Was darf sie als Auszubildende machen?",
-      fallbezug: "Yasemin hat zugeschaut und will jetzt wissen, was sie selbst machen darf.",
-    },
-    question: {
-      fragetext: "Was erklaert die Praxisanleiterin ueber vorbehaltene Taetigkeiten?",
-      patientName: "Yasemin",
-      dialogPhases: [
-        {
-          context: "Yasemin fragt: 'Was darf ich als Azubi eigentlich alles machen? Und was darf nur die Fachkraft?'",
-          contextB1: "Yasemin fragt: 'Was darf ich machen? Was darf nur die Pflegefachkraft?'",
-          speaker: "Praxisanleiterin",
-          options: [
-            {
-              text: "Gute Frage! Es gibt vorbehaltene Taetigkeiten: Nur Pflegefachkraefte duerfen den Pflegebedarf erheben, den Pflegeprozess steuern und die Qualitaet sichern. Du lernst das alles — aber unter Anleitung.",
-              textB1: "Gute Frage! Bestimmte Aufgaben duerfen nur Pflegefachkraefte machen: den Pflegebedarf feststellen und die Pflege planen. Du lernst das — aber mit meiner Hilfe.",
-              patientResponse: "Also mache ich das alles spaeter allein? Das ist eine grosse Verantwortung.",
-              patientResponseB1: "Also mache ich das spaeter allein? Das ist viel Verantwortung.",
-              score: 3,
-              feedback: "Yasemin versteht: Pflegefachkraefte tragen eigenverantwortliche Aufgaben. Die Ausbildung bereitet darauf vor.",
-              feedbackB1: "Richtig! Pflegefachkraefte haben eigene, wichtige Aufgaben. Die Ausbildung bereitet dich darauf vor.",
-            },
-            {
-              text: "Du machst einfach alles, was ich dir sage. Mehr musst du nicht wissen.",
-              textB1: "Mach einfach, was ich sage.",
-              patientResponse: "Hmm, aber ich moechte verstehen, warum ich etwas tue — nicht nur Anweisungen befolgen.",
-              patientResponseB1: "Aber ich will verstehen, warum ich etwas mache.",
-              score: 0,
-              feedback: "Blinder Gehorsam ist kein professionelles Handeln. Pflegende muessen verstehen, warum sie etwas tun.",
-              feedbackB1: "Pflegende muessen verstehen, warum sie etwas tun. Nicht nur Anweisungen befolgen.",
-            },
-          ],
-        },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 17: Matching — Pflege-Begriffe (PUZZLE)
-  // =============================================================
-  {
-    stepId: "le01-s1-17",
-    phase: "s1",
-    stepType: "matching",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q1 S.23", "Q2 S.78-80"],
-    track: "basis",
-    modus: "puzzle",
-    lernziel: "ce01-le01-pflegeverstaendnis",
-    contentC1: {
-      title: "Begriffe zuordnen",
-      body: "Ordne die Fachbegriffe den richtigen Definitionen zu.",
-    },
-    contentB1: {
-      title: "Pflege-Woerter",
-      body: "Welches Wort passt zu welcher Erklaerung?",
-    },
-    question: {
-      fragetext: "Verbinde jeden Begriff mit der passenden Definition.",
-      matchingPairs: [
-        { left: "Pflegeprozess", right: "Systematischer Ablauf zur Pflegeplanung in 6 Schritten" },
-        { left: "Pflegeempfaenger", right: "Person, die professionelle Pflege erhaelt" },
-        { left: "Vorbehaltene Taetigkeiten", right: "Aufgaben, die nur Pflegefachkraefte ausfuehren duerfen" },
-        { left: "Pflegeanamnese", right: "Strukturierte Datenerhebung beim Aufnahmegespraech" },
-        { left: "Ressource", right: "Faehigkeit oder Staerke, die bei Problemen hilft" },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 18: Categorize — Fachkraft vs. Helfer (SORTIERSTATION)
-  // =============================================================
-  {
-    stepId: "le01-s1-18",
-    phase: "s1",
-    stepType: "categorize",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q1 S.23", "Q11"],
-    track: "basis",
-    modus: "sortierstation",
-    lernziel: "ce01-le01-pflegeverstaendnis",
-    contentC1: {
-      title: "Wer darf was?",
-      body: "Das PflBG unterscheidet klar: Bestimmte Aufgaben sind Pflegefachkraeften vorbehalten.",
-    },
-    contentB1: {
-      title: "Fachkraft oder Helfer?",
-      body: "Sortiere: Was darf nur die Pflegefachkraft? Was darf auch der Pflegehelfer?",
-    },
-    question: {
-      fragetext: "Ordne die Taetigkeiten der richtigen Kategorie zu.",
-      categories: [
-        { name: "Nur Pflegefachkraft" },
-        { name: "Auch Pflegehelfer" },
-      ],
-      categoryItems: [
-        { text: "Pflegebedarf erheben", correctCategory: 0 },
-        { text: "Koerperpflege durchfuehren", correctCategory: 1 },
-        { text: "Pflegeprozess organisieren", correctCategory: 0 },
-        { text: "Essen anreichen", correctCategory: 1 },
-        { text: "Pflegequalitaet sichern", correctCategory: 0 },
-        { text: "Vitalzeichen messen", correctCategory: 1 },
-        { text: "Pflegeziele festlegen", correctCategory: 0 },
-        { text: "Lagerung durchfuehren", correctCategory: 1 },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 19: Crossword — Pflege-Begriffe (PUZZLE, vertiefung)
-  // =============================================================
-  {
-    stepId: "le01-s1-19",
-    phase: "s1",
-    stepType: "crossword",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q1 S.21-24", "Q7 S.282"],
-    track: "vertiefung",
-    modus: "puzzle",
-    lernziel: "ce01-le01-pflegeverstaendnis",
-    contentC1: {
-      title: "Kreuzwortraetsel: Pflege-Begriffe",
-      body: "Teste dein Wissen spielerisch. Alle Begriffe stammen aus dieser Session.",
-    },
-    contentB1: {
-      title: "Kreuzwortraetsel",
-      body: "Loese das Raetsel. Alle Woerter kennst du schon aus dieser Lektion.",
-    },
-    question: {
-      fragetext: "Fulle das Kreuzwortraetsel aus.",
-      crosswordWords: [
-        { word: "NIGHTINGALE", clue: "Begruenderin der modernen Krankenpflege (1859)" },
-        { word: "PROFESSION", clue: "Beruf mit eigenem Wissen, Ausbildung und Ethikkodex" },
-        { word: "ETHIK", clue: "Nachdenken ueber richtiges Handeln" },
-        { word: "ICN", clue: "Internationale Organisation fuer Pflege (Abkuerzung)" },
-        { word: "PFLEGEEMPFAENGER", clue: "Person, die professionelle Pflege erhaelt" },
-        { word: "WUERDE", clue: "Unantastbarer Wert jedes Menschen (Art. 1 GG)" },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 20: Reflection — Professionelle vs. Laienpflege (SCHREIBTISCH, vertiefung)
-  // =============================================================
-  {
-    stepId: "le01-s1-20",
-    phase: "s1",
-    stepType: "reflection",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q1 S.23-24", "Q3 S.101-102"],
-    track: "vertiefung",
-    modus: "schreibtisch",
-    lernziel: "ce01-le01-pflegeverstaendnis",
-    contentC1: {
-      title: "Professionell vs. Laie",
-      body: "Nutze dein Wissen aus dieser Session fuer eine kurze Reflexion.",
-    },
-    contentB1: {
-      title: "Professionelle Pflege",
-      body: "Denke nach und schreibe deine Antwort.",
-    },
-    question: {
-      fragetext: "Was unterscheidet professionelle Pflege von der Pflege durch Angehoerige? Nenne 2 Merkmale.",
-      musterantwort: "Professionelle Pflege basiert auf wissenschaftlichem Wissen (EBN), folgt einem systematischen Pflegeprozess und richtet sich nach einem Ethikkodex. Laienpflege basiert auf Intuition, Erfahrung und emotionaler Bindung.",
-      bewertungskriterien: [
-        "Mindestens 2 Merkmale korrekt benannt",
-        "Begruendung nachvollziehbar",
-        "Fachsprache angemessen verwendet",
-      ],
-      satzanfaengeB1: [
-        "Professionelle Pflege unterscheidet sich, weil...",
-        "Ein wichtiges Merkmal ist...",
-        "Pflege durch die Familie ist anders, weil...",
-      ],
-      reflection: {
-        prompt: "Was unterscheidet professionelle Pflege von der Pflege durch Angehoerige? Nenne 2 Merkmale.",
-        placeholder: "Professionelle Pflege unterscheidet sich, weil...",
-        systemPrompt: "Bewerte ob der Schueler mindestens 2 Merkmale professioneller Pflege nennt (z.B. Wissen, Ethikkodex, Pflegeprozess, Ausbildung, EBN). Gib konstruktives Feedback nach dem Sandwich-Prinzip.",
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 21: Confidence — Wissenscheck (CHALLENGE)
-  // =============================================================
-  {
-    stepId: "le01-s1-21",
-    phase: "s1",
-    stepType: "confidence",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-V",
     quellen: [],
     track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-pflegeverstaendnis",
+    modus: "story",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "REFLEXION",
     contentC1: {
-      title: "Drei Kernthemen im Check",
-      body: "Schaetze ehrlich ein: Was kannst du jetzt erklaeren?",
+      title: "Ende des ersten Tages",
+      body: "Yasemin reflektiert auf dem Heimweg.",
     },
     contentB1: {
-      title: "Was habe ich gelernt?",
-      body: "Schaetze ein: Was kannst du nach dieser Session erklaeren?",
+      title: "Yasemins Tag ist vorbei",
+      body: "Yasemin denkt nach auf dem Heimweg.",
     },
     question: {
-      fragetext: "Bewerte jede Aussage: Wie sicher bist du?",
-      confidenceCards: [
-        {
-          statement: "Ich kann erklaeren, was Pflege laut ICN ist.",
-          statementB1: "Ich kann erklaeren, was Pflege ist.",
-          isTrue: true,
-          explanation: "Pflege ist die eigenverantwortliche Versorgung von Menschen aller Altersgruppen — mit Gesundheitsfoerderung, Verhuetung, Versorgung und Begleitung.",
-          explanationB1: "Pflege ist: sich um Menschen kuemmern. Gesundheit foerdern, Krankheit verhindern, Kranke versorgen.",
-        },
-        {
-          statement: "Ich kenne mindestens 3 Merkmale einer Profession.",
-          statementB1: "Ich kenne 3 Merkmale einer Profession.",
-          isTrue: true,
-          explanation: "Wissenschaftliches Wissen, eigene Ausbildung, Ethikkodex, Autonomie und Akademisierung.",
-          explanationB1: "Eigenes Wissen, eigene Ausbildung, eigene Regeln (Ethikkodex).",
-        },
-        {
-          statement: "Ich weiss, was vorbehaltene Taetigkeiten nach PflBG sind.",
-          statementB1: "Ich weiss, was nur Pflegefachkraefte machen duerfen.",
-          isTrue: true,
-          explanation: "Pflegebedarf erheben, Pflegeprozess steuern und Pflegequalitaet sichern — nur durch Pflegefachkraefte.",
-          explanationB1: "Nur Pflegefachkraefte duerfen: Pflegebedarf feststellen, Pflege planen und Qualitaet pruefen.",
-        },
-        {
-          statement: "Ich kann Nightingale und Agnes Karll zeitlich einordnen.",
-          statementB1: "Ich kenne Nightingale und Agnes Karll.",
-          isTrue: true,
-          explanation: "Nightingale 1859 (Notes on Nursing), Agnes Karll 1903 (erste Berufsorganisation), PflBG 2017.",
-          explanationB1: "Nightingale: 1859. Agnes Karll: 1903. PflBG: 2017.",
-        },
+      fragetext: "Yasemin am Ende des Tages:",
+      dialogLines: [
+        { speaker: "Yasemin", text: "Ich glaube, Pflege ist mehr als ich dachte. Es ist nicht nur waschen und Medikamente geben." },
+        { speaker: "Yasemin", text: "Pflege ist ein eigenverantwortlicher Beruf — mit eigener Wissenschaft und eigenem Ethikkodex." },
+        { speaker: "Yasemin", text: "Nightingale, Karll, Henderson... Ich bin Teil von etwas Großem." },
+        { speaker: "Yasemin", text: "Morgen lerne ich den Pflegeprozess kennen. Ich bin gespannt!" },
       ],
     },
   },
 
   // =============================================================
-  // Step 22: Summary — Rueckblick Session 1 (CHECKPOINT)
+  // Session-Bookend: Summary
   // =============================================================
   {
-    stepId: "le01-s1-22",
+    stepId: "le01-s1-bk-05",
     phase: "s1",
     stepType: "summary",
     bloomLevel: 2,
@@ -1069,27 +752,24 @@ export const STEPS_S1: ContentStep[] = [
     quellen: [],
     track: "basis",
     modus: "checkpoint",
-    lernziel: "ce01-le01-pflegeverstaendnis",
+    lernziel: "ce01-le01-pflegeverständnis",
+    themenblockPhase: "REFLEXION",
     contentC1: {
-      title: "Das hast du gelernt",
-      body: "Session 1 ist geschafft. Du kennst jetzt die Grundlagen professioneller Pflege.",
+      title: "Das hast du heute gelernt",
+      body: "Session 1 ist geschafft! Hier sind deine 4 wichtigsten Erkenntnisse.",
     },
     contentB1: {
-      title: "Das hast du gelernt",
-      body: "Session 1 ist fertig! Hier ist eine Zusammenfassung.",
+      title: "Zusammenfassung",
+      body: "Das hast du heute gelernt. Gut gemacht!",
     },
     question: {
-      fragetext: "Deine Kernerkenntnisse aus Session 1:",
-      summary: {
-        reflexionRueckbezug: "Erinnerst du dich an den Swipe am Anfang? Vergleiche deine Einschaetzung mit dem, was du jetzt weisst. 'Pflege ist nur Waschen' — stimmt das noch?",
-        kernaussagen: [
-          "Pflege ist die eigenverantwortliche Versorgung aller Altersgruppen — weit mehr als Waschen und Fuettern.",
-          "Eine Profession hat eigenes Wissen, Ausbildung, Ethikkodex und Autonomie — Pflege ist auf diesem Weg.",
-          "Das PflBG 2017 definiert vorbehaltene Taetigkeiten: Pflegebedarf erheben, Prozess steuern, Qualitaet sichern.",
-          "Nightingale (1859) und Agnes Karll (1903) legten den Grundstein fuer die Professionalisierung.",
-          "Yasemin hat gelernt: Professionelle Pflege schaut auf Probleme UND Ressourcen.",
-        ],
-      },
+      fragetext: "Deine 4 Kernaussagen aus Session 1:",
+      summaryPoints: [
+        "**Pflege nach ICN** umfasst 5 Schlüsselaufgaben: Gesundheitsförderung, Krankheitsverhütung, Versorgung, Forschung und Bildung.",
+        "**Profession** bedeutet: wissenschaftliches Wissen, eigene Ausbildung, Ethikkodex, Autonomie und Akademisierung.",
+        "**Geschichte:** Nightingale (1859) → Karll (1903) → ICN-Ethikkodex (1953) → PflBG (2017).",
+        "**Yasemin** hat gelernt: Pflege ist ein eigenverantwortlicher, wissenschaftlicher Beruf — nicht nur 'am Bett stehen'.",
+      ],
     },
   },
 ];

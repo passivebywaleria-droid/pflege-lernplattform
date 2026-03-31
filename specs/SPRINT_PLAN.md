@@ -1,9 +1,9 @@
 # SPRINT-PLAN v3.0 — Demo-Ready + MVP
 
 **Erstellt:** 2026-03-21
-**Zuletzt aktualisiert:** 2026-03-28
+**Zuletzt aktualisiert:** 2026-03-31
 **Ersetzt:** Sprint-Plan v2.0 (2026-03-23)
-**Grundlage:** VISION.md + Schulleitung-Feedback (kritische Evaluierung 2026-03-28)
+**Grundlage:** VISION.md + Schulleitung-Feedback + Digitalpakt 2.0 Anforderungen
 **Kontext:** Solo-Entwicklerin + Claude Code. Gründerin liefert Content parallel.
 **Sprint-Länge:** 2 Wochen
 **Ziel:** Pilotfähiges MVP für 1 Pflegeschule (60 Schüler)
@@ -38,34 +38,43 @@ v3.0 ist **sales-first**: Erst etwas Zeigbares, dann Infrastruktur.
 
 ---
 
-## Aktueller Status (2026-03-28)
+## Aktueller Status (2026-03-31)
 
 ### Bereits erledigt:
 - ✅ CE 05 Neustrukturierung — 16 Lektionen, 7 Blöcke (A-G), 12-Punkte-Struktur
 - ✅ LE 03 + LE 04 komplett — 4 Sessions, ~130 Steps, 2 Leitfälle
-- ✅ Lern-Engine — 27 Step-Renderer, dynamisch, B1/C1-Toggle
-- ✅ Content-Pipeline — 9-Rollen Didaktik-Loop v2, validiert
-- ✅ KI-Features — `/api/ki-feedback`, `/api/ki-chat`, Sandwich-Feedback
+- ✅ LE 01 live — `/lernen/le-01` mit 176 Steps, App-Integration fertig
+- ✅ Lern-Engine — **29 Step-Renderer**, dynamisch, B1/C1-Toggle
+- ✅ Content-Pipeline v2 — **4-Schritte-Pipeline** (Sessionplan → Steps → Prüfung → TSC)
+- ✅ 55/55 Rohmaterialien komplett — alle 11 CEs, alle LEs
+- ✅ Content-Types v2 — `content/_types.ts` CE-übergreifend mit track, modus, lernziel
+- ✅ Adaptiver Themenbogen — `specs/ADAPTIVER-THEMENBOGEN.md` (11 Phasen + Brücke, wissenschaftlich fundiert)
+- ✅ KI-Features — `/api/ki-feedback`, `/api/ki-chat` (Nebius Llama 3.3 70B, EU)
 - ✅ Gamification — XP, Streaks, Hearts, Confetti, Dashboard
 - ✅ Persistenz — localStorage, Weitermachen-Dialog
-- ✅ Adaptive Engine — Antwortzeit, Fehleranalyse, Lernprofil, Sequencer
+- ✅ Adaptive Engine — Antwortzeit, Fehleranalyse, Lernprofil, Sequencer, KompetenzRegister
 - ✅ Fachbegriff-Tooltips — Bottom-Sheet mit DE/TR/AR
 - ✅ TTS — Browser SpeechSynthesis (MVP)
 - ✅ Mobile-First Shell — Sidebar, BottomNav, Dark Mode
 - ✅ i18n-Grundgerüst — DE/AR/TR Routing
-- ✅ CI/CD — vitest + tsc + build, 266 Tests grün
+- ✅ CI/CD — vitest + tsc + build
 - ✅ Test-Infrastruktur — Content-Linter, Style-Checker, Render-Tests, E2E
+- ✅ Datei-Cleanup — veraltete Pipeline-Dateien und Agents entfernt (2026-03-31)
 
 ### Was FEHLT (Schulleitung-Perspektive):
-- ❌ 14 von 16 LEs in CE 05 haben keinen Content
+- ❌ 53 von 55 LEs haben noch keinen generierten Content (nur LE-01, LE-03, LE-04)
 - ❌ Keine Landing Page für Schulen (Preise, DSGVO, Demo)
-- ❌ Umlaute fehlen in `messages/de.json`
 - ❌ Keine Rollenwahl bei Registrierung
 - ❌ Kein Lehrer-Dashboard
 - ❌ Kein Einstufungstest
 - ❌ Kein Lernzeit-Nachweis / PDF-Export
+- ❌ Kein KB-Stundennachweis (Digitalpakt-Pflicht für Schulen)
+- ❌ Kein Digitalpakt-Datenblatt für Förderanträge
+- ❌ Keine DSGVO-Dokumente (AVV, DSFA, TOM, VVT)
 - ❌ Keine echte Datenbank (alles localStorage)
 - ❌ Kein Offline-Modus
+- ❌ Phasen-Bogen noch nicht in Regisseur/Generator eingebaut
+- ❌ Nebius Scaffolding-Route fehlt noch
 
 ---
 
@@ -132,7 +141,7 @@ Ergebnis Sprint 0: Mindestens 8 spielbare LEs (statt 2)
 
 | # | Task | Aufwand | Deliverable |
 |---|------|---------|-------------|
-| 1.1 | **Drizzle-Schema komplett** (users, schools, classes, ce_units, learn_modules, user_progress, skill_mastery, spaced_repetition_queue, user_streaks, xp_log, learner_profiles, user_language_profiles, user_ce_knowledge, learning_events, learning_time_log, chat_messages) | 3d | Schema + Migrations |
+| 1.1 | **Drizzle-Schema komplett** (users, schools, classes, ce_units, learn_modules, user_progress, skill_mastery, spaced_repetition_queue, user_streaks, xp_log, learner_profiles, user_language_profiles, user_ce_knowledge, learning_events, learning_time_log, chat_messages) — **inkl. LE→KB Mapping (curriculum_le_kb_mapping) für Digitalpakt-Nachweis** | 3d | Schema + Migrations |
 | 1.2 | **Auth-System** (E-Mail + Passwort, 4 Rollen: Schüler/Lehrer/Schulleiter/Admin, JWT httpOnly) | 2d | Login/Register/Guards |
 | 1.3 | **Schul-Verwaltung Basis** (Schule erstellen, Klasse erstellen, Einladungslink) | 1d | Admin-Seiten |
 | 1.4 | **Seed-Daten** (2 Schulen, 3 Klassen, 10 Test-User, 11 CEs) | 0.5d | Seed-Script |
@@ -158,8 +167,9 @@ Ergebnis Sprint 0: Mindestens 8 spielbare LEs (statt 2)
 | 2.5 | **Schulleiter-Ansicht** (sieht alle Klassen, alle Lehrer, Schul-Statistiken) | 0.5d | Schulleiter-View |
 | 2.6 | **Lehrer-Onboarding** (3-Minuten Tour beim ersten Login) | 0.5d | Onboarding-Flow |
 | 2.7 | **Lehrer kann Stunden pro LE festlegen** (für Lernzeit-Dokumentation) | 0.5d | Stunden-Config |
+| 2.8 | **KB-Fortschrittsanzeige** (Balkendiagramm KB I-V Soll/Ist pro Schüler + Klasse, Ampel: Grün ≥80%, Gelb 50-80%, Rot <50%) | 1d | KB-Dashboard |
 
-**Abnahme:** Lehrer sieht Ampel für Klasse in 30 Sekunden. Schulleiter sieht alle Klassen. CSV-Import funktioniert.
+**Abnahme:** Lehrer sieht Ampel für Klasse in 30 Sekunden. Schulleiter sieht alle Klassen. CSV-Import funktioniert. KB-Fortschritt pro Schüler und Klasse sichtbar.
 
 ---
 
@@ -274,17 +284,22 @@ Ergebnis Sprint 0: Mindestens 8 spielbare LEs (statt 2)
 
 ## Sprint 9 — Nachweise + Prüfungsmodus (Woche 17-18)
 
+> **Digitalpakt-kritisch:** Ohne KB-Stundennachweis (9.3) kann keine Schule die Plattform
+> als Theorieunterricht-Ersatz bei der Landesbehörde geltend machen.
+> Siehe `specs/digitalpakt-anforderungen.md` für Details.
+
 | # | Task | Aufwand | Deliverable |
 |---|------|---------|-------------|
 | 9.1 | **Aktive Lernzeit messen** (Events, Pausen abziehen, nur aktive Zeit) | 1.5d | Tracking-System |
-| 9.2 | **Lernzeit-Dashboard** (Stunden pro CE/LE/Tag/Woche) | 1d | `/lernzeit` |
-| 9.3 | **PDF-Export** (A4, Schulname, Schüler, Stunden, KB I-V) | 1.5d | PDF-Generator |
-| 9.4 | **Klassen-Export** (CSV + PDF für Schulleitung) | 0.5d | Export-Funktion |
+| 9.2 | **Lernzeit-Dashboard** (Stunden pro CE/LE/Tag/Woche + **KB I-V Aggregation**) | 1.5d | `/lernzeit` |
+| 9.3 | **KB-Stundennachweis PDF** (A4, Schulname, Schüler, **Stunden pro KB I.1-V.2**, Anlage 1 vs. Anlage 2 getrennt) — **Digitalpakt Killer-Feature** | 2d | PDF-Generator |
+| 9.4 | **Klassen-Export** (CSV + PDF für Schulleitung, aggregiert pro KB) | 0.5d | Export-Funktion |
 | 9.5 | **Prüfungsmodus** (120 Min, keine Hilfen, fallbasiert) | 2d | `/pruefung` |
 | 9.6 | **Prüfungsreife-Indikator** (Ampel: Grün/Gelb/Rot) | 1d | Ampel-Anzeige |
 | 9.7 | **Disclaimer** ("Praktische Prüfungsreife kann digital nicht vollständig gemessen werden") | 0.5d | Hinweis-Banner |
+| 9.8 | **KB-Soll/Ist-Vergleich pro Ausbildungsdrittel** (Aufschlüsselung Drittel 1/2/3, Anlage 1 vs. Anlage 2 getrennt, Fortschrittsbalken pro KB-Unterbereich) | 0.5d | Drittel-Vergleich |
 
-**Abnahme:** Lernzeit messbar + PDF exportierbar. Prüfungsmodus spielbar. Ampel sichtbar.
+**Abnahme:** Lernzeit messbar + KB-Stundennachweis als PDF exportierbar (Anlage 1+2 getrennt). KB-Soll/Ist pro Drittel sichtbar. Prüfungsmodus spielbar. Ampel sichtbar.
 
 ---
 
@@ -298,10 +313,12 @@ Ergebnis Sprint 0: Mindestens 8 spielbare LEs (statt 2)
 | 10.4 | **Stripe-Integration** (Schullizenz 149 EUR/Jahr, monatlich kündbar) | 1.5d | Bezahlseite |
 | 10.5 | **Performance** (Lighthouse 90+, Core Web Vitals) | 0.5d | Audit + Fixes |
 | 10.6 | **E2E-Tests** (Login → Einstufung → Quiz → Dashboard → Chat → Export) | 1d | Test-Suite |
-| 10.7 | **DSGVO-Paket** (Datenschutzerklärung, TOM, VVT, KI-Anonymisierung) | 0.5d | Compliance-Docs |
-| 10.8 | **Bug-Fixing + Polish** | 1d | Release-Candidate |
+| 10.7 | **DSGVO-Paket** (Datenschutzerklärung, TOM, VVT, DSFA, KI-Anonymisierung) | 1d | Compliance-Docs |
+| 10.8 | **AVV-Vorlage** (Auftragsverarbeitung für Schulträger, anpassbar pro Bundesland) | 0.5d | AVV-Template |
+| 10.9 | **Digitalpakt-Datenblatt** (1-Seiter für Förderanträge: Produkt, DSGVO, KB-Nachweis, Preise) | 0.5d | PDF-Datenblatt |
+| 10.10 | **Bug-Fixing + Polish** | 1d | Release-Candidate |
 
-**Abnahme:** Live auf Hetzner, PWA installierbar, Stripe aktiv, Lighthouse 90+, DSGVO-Paket fertig.
+**Abnahme:** Live auf Hetzner, PWA installierbar, Stripe aktiv, Lighthouse 90+, DSGVO-Paket + Digitalpakt-Datenblatt fertig. Schule kann Förderantrag mit unserem Datenblatt stellen.
 
 ---
 
@@ -311,15 +328,15 @@ Ergebnis Sprint 0: Mindestens 8 spielbare LEs (statt 2)
 |------|-------------|-----------|----------------------|
 | Sprint 0 | **Demo-Ready** | 8+ LEs spielbar, Landing Page, Umlaute | "Professionelle Plattform mit echtem Inhalt" |
 | Wo 2 | **Fundament** | Auth + DB + 4 Rollen | "Echte Accounts, Daten bleiben" |
-| Wo 4 | **Lehrer-Demo** | Ampel-Dashboard + Klassen | "Ich sehe was meine Schüler machen" |
+| Wo 4 | **Lehrer-Demo** | Ampel-Dashboard + Klassen + KB-Fortschritt | "Ich sehe was meine Schüler machen — auch nach KB I-V" |
 | Wo 6 | **Einstufung** | 2-Achsen-Test, Profil | "Jeder Schüler wird individuell eingestuft" |
 | Wo 8 | **KI aktiv** | Fehleranalyse + Strategiewechsel | "Die KI erklärt anders wenn's nicht klappt" |
 | Wo 10 | **Beta intern** | Summaries + Meilensteine | "Schüler sehen ihren Fortschritt" |
 | Wo 12 | **Glossar + TTS** | Dreisprachig, Vorlesen | "Fachbegriffe auf Türkisch, vorgelesen" |
 | Wo 14 | **Chat + Preise** | Lehrer-Chat, Freemium | "Ich kann mit Schülern kommunizieren" |
 | Wo 16 | **3 CEs komplett** | CE 01+02+05 spielbar | "3 CEs — genug für ein Semester" |
-| Wo 18 | **Nachweise** | Lernzeit-PDF, Prüfungsmodus | "Ich kann Theoriestunden nachweisen" |
-| Wo 20 | **MVP Launch** | Hetzner, PWA, Stripe | "Kann morgen losgehen" |
+| Wo 18 | **Nachweise** | KB-Stundennachweis-PDF + Drittel-Aufschlüsselung, Prüfungsmodus | "KB-Nachweis nach Anlage 1+2 getrennt — Digitalpakt-fähig" |
+| Wo 20 | **MVP Launch** | Hetzner, PWA, Stripe, Digitalpakt-Datenblatt | "Kann morgen losgehen — inkl. Förderantrag-Unterlagen" |
 
 ---
 
@@ -378,6 +395,9 @@ Ergebnis Sprint 0: Mindestens 8 spielbare LEs (statt 2)
 | Lehrer-Dashboard zu komplex | Sprint 2 verzögert | Fallback: Read-only Dashboard ohne Chat |
 | DB-Migration bricht localStorage | Sprint 1 riskant | Migrations-Script + Backup |
 | Pilotschule will sofort starten | Zeitdruck | Sprint 0 = Minimum Viable Demo |
+| Digitalpakt-Förderrichtlinien variieren pro Bundesland | Anforderungen unklar | Standard-AVV + flexibles Datenblatt, Kontakt zu Landesbehörden |
+| KB-Stundennachweis nicht akzeptiert | Plattform-Lernzeit zählt nicht | Frühzeitig Landesbehörde einbinden, Pilotschule als Referenz |
+| BITV 2.0 (Barrierefreiheit) wird Pflicht | A11y-Audit nötig | In Sprint 10 einplanen |
 
 ---
 

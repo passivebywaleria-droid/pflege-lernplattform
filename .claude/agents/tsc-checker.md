@@ -17,7 +17,7 @@ npx tsc --noEmit
 - Alle Imports müssen auflösbar sein
 
 ### 2. Type-Konformität
-Jeder Step muss dem `ContentStep` Interface aus `content/ce-05/_types.ts` entsprechen:
+Jeder Step muss dem `ContentStep` Interface aus `content/_types.ts` entsprechen:
 - `stepId`: string (Format: "[leId]-s[1-3]-[01-99]")
 - `phase`: string
 - `stepType`: muss einer der definierten Typen sein
@@ -29,13 +29,12 @@ Jeder Step muss dem `ContentStep` Interface aus `content/ce-05/_types.ts` entspr
 - `question`: passend zum stepType
 
 ### 3. Vollständigkeitsprüfung
-- `steps-s2.ts` exportiert `STEPS_S2`, `METADATA_S2`
-- `steps-s3.ts` exportiert `STEPS_S3`, `METADATA_S3`
+- `steps-s{N}.ts` exportiert `STEPS_S{N}`, `METADATA_S{N}`
 - Alle Steps haben sowohl `contentC1` als auch `contentB1`
 - Kein Step hat leere Pflichtfelder
 
 ### 4. Content-Loader Integration
-- Neue Sessions müssen im Content-Loader (`src/lib/content-loader.ts`) registriert sein
+- Neue Sessions müssen im Content-Loader (`content/content-loader.ts`) registriert sein
 - Dynamic Imports müssen funktionieren
 
 ---
@@ -43,7 +42,7 @@ Jeder Step muss dem `ContentStep` Interface aus `content/ce-05/_types.ts` entspr
 ## Im Loop
 
 ```bash
-# Nach Content-Generator + B1-Übersetzer:
+# Nach Content-Generator (C1+B1 gleichzeitig):
 echo "=== TSC-Check ==="
 npx tsc --noEmit
 

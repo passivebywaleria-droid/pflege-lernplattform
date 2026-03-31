@@ -58,8 +58,9 @@ const SESSION_LOADERS: Record<string, Record<number, () => Promise<ContentStep[]
     3: async () => (await import("../../content/le-01/steps-s3")).STEPS_S3 as unknown as ContentStep[],
     4: async () => (await import("../../content/le-01/steps-s4")).STEPS_S4 as unknown as ContentStep[],
     5: async () => (await import("../../content/le-01/steps-s5")).STEPS_S5 as unknown as ContentStep[],
-    6: async () => (await import("../../content/le-01/steps-s6")).stepsS6 as unknown as ContentStep[],
+    6: async () => (await import("../../content/le-01/steps-s6")).STEPS_S6 as unknown as ContentStep[],
     7: async () => (await import("../../content/le-01/steps-s7")).STEPS_S7 as unknown as ContentStep[],
+    8: async () => (await import("../../content/le-01/steps-s8")).STEPS_S8 as unknown as ContentStep[],
   },
 };
 

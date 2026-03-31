@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
+import { HandDrawnIcon } from "@/components/ui/hand-drawn-icon";
 
 interface StepSummaryProps {
   title: string;
@@ -36,7 +37,7 @@ export function StepSummary({
         className="text-center"
       >
         <div className="text-5xl mb-3">
-          {percentage >= 80 ? "🎉" : percentage >= 60 ? "👏" : "💪"}
+          <HandDrawnIcon name={percentage >= 80 ? "celebration" : percentage >= 60 ? "clap" : "muscle"} size={48} color={percentage >= 80 ? "#30D158" : percentage >= 60 ? "#FF9500" : "#0071e3"} />
         </div>
         <h2 className="text-2xl font-bold text-[#1d1d1f]">
           {title}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
+  <rect width="400" height="500" fill="#f8f9fa"/>
+  <!-- Organe ausgegraut -->
+  <ellipse cx="200" cy="40" rx="25" ry="12" fill="#e8e8e8" stroke="#d0d0d0" stroke-width="1"/>
+  <path d="M200 52 L200 120" stroke="#d0d0d0" stroke-width="12" stroke-linecap="round"/>
+  <path d="M180 120 Q140 140, 150 180 Q160 220, 200 220 Q240 220, 240 180 Q240 140, 220 120 Z" fill="#f0f0f0" stroke="#d0d0d0" stroke-width="1"/>
+  <path d="M200 220 Q240 230, 250 260 Q260 290, 230 290" stroke="#d0d0d0" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <path d="M230 290 Q180 300, 160 310 Q140 320, 170 330" stroke="#d0d0d0" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M100 400 L100 280 Q100 240, 140 240 L260 240 Q300 240, 300 280 L300 400 Q300 430, 260 430 L140 430 Q100 430, 100 400" stroke="#d0d0d0" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <!-- Aorta -->
+  <path d="M200 30 L200 460" stroke="#e74c3c" stroke-width="4" opacity="0.8"/>
+  <!-- Truncus coeliacus -->
+  <path d="M200 130 Q160 120, 130 140" stroke="#e74c3c" stroke-width="2.5"/>
+  <text x="70" y="138" font-family="system-ui" font-size="8" fill="#e74c3c" font-weight="600">Tr. coeliacus</text>
+  <!-- A. mesenterica superior -->
+  <path d="M200 200 Q160 190, 130 210 Q100 230, 120 260" stroke="#e74c3c" stroke-width="2.5"/>
+  <text x="40" y="250" font-family="system-ui" font-size="8" fill="#e74c3c" font-weight="600">A. mes. sup.</text>
+  <!-- A. mesenterica inferior -->
+  <path d="M200 330 Q240 320, 270 340 Q290 360, 280 390" stroke="#e74c3c" stroke-width="2.5"/>
+  <text x="290" y="370" font-family="system-ui" font-size="8" fill="#e74c3c" font-weight="600">A. mes. inf.</text>
+  <!-- Vena portae -->
+  <path d="M130 180 Q160 170, 180 160 Q200 150, 200 130" stroke="#3498db" stroke-width="3"/>
+  <text x="65" y="180" font-family="system-ui" font-size="8" fill="#3498db" font-weight="600">V. portae</text>
+  <!-- V. cava inferior -->
+  <path d="M215 30 L215 460" stroke="#3498db" stroke-width="3.5" opacity="0.7"/>
+  <text x="225" y="60" font-family="system-ui" font-size="8" fill="#3498db" font-weight="600">V. cava inf.</text>
+  <!-- Legende -->
+  <rect x="280" y="460" width="110" height="35" rx="6" fill="white" stroke="#d0d0d0" stroke-width="1"/>
+  <line x1="290" y1="473" x2="310" y2="473" stroke="#e74c3c" stroke-width="2.5"/>
+  <text x="315" y="477" font-family="system-ui" font-size="8" fill="#1d1d1f">Arterie</text>
+  <line x1="290" y1="487" x2="310" y2="487" stroke="#3498db" stroke-width="2.5"/>
+  <text x="315" y="491" font-family="system-ui" font-size="8" fill="#1d1d1f">Vene</text>
+  <!-- Badge -->
+  <rect x="10" y="10" width="140" height="22" rx="11" fill="#AF52DE"/>
+  <text x="80" y="25" font-family="system-ui" font-size="10" fill="white" text-anchor="middle" font-weight="700">Gefäßversorgung</text>
+  <text x="200" y="495" font-family="system-ui" font-size="10" fill="#6e6e73" text-anchor="middle">Gefäßversorgung des GI-Trakts</text>
+</svg>

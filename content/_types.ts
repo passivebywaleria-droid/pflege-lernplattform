@@ -382,6 +382,8 @@ export interface ContentStep {
   question?: {
     fragetext: string;
     multiSelect?: boolean;
+    // Flexible Felder für verschiedene Step-Typen (Content-Generator nutzt diverse Strukturen)
+    [key: string]: unknown;
     optionen?: StepOption[];
     matchingPairs?: MatchingPair[];
     sortItems?: string[];

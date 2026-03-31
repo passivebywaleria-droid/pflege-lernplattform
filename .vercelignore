@@ -1,0 +1,11 @@
+recherche/
+recherche/**
+ralph/
+ralph/**
+didaktik-loop/
+didaktik-loop/**
+specs/
+specs/**
+.claude/
+.claude/**
+*.pdf

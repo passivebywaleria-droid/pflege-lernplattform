@@ -253,6 +253,98 @@ export interface ComparisonData {
   rows: ComparisonRow[];
 }
 
+// === STEP-TYPEN v2 ===
+
+// LabelImage — Beschriftungsbild (Anatomie beschriften)
+export interface LabelImageLabel {
+  id: string;
+  correct: string;
+  position: { x: number; y: number };
+  distractors?: string[];
+}
+
+export interface LabelImageData {
+  imageUrl: string;
+  imageAlt: string;
+  instruction: string;
+  labels: LabelImageLabel[];
+  mode: "drag" | "select";
+}
+
+// Diagram — Zusammenhänge-Diagramm
+export interface DiagramNode {
+  id: string;
+  label: string;
+  labelB1?: string;
+  imageUrl?: string;
+  highlight?: boolean;
+}
+
+export interface DiagramEdge {
+  from: string;
+  to: string;
+  label?: string;
+}
+
+export interface DiagramData {
+  diagramType: "flowchart" | "mindmap" | "comparison" | "cycle";
+  instruction: string;
+  nodes: DiagramNode[];
+  edges: DiagramEdge[];
+  interactive?: boolean;
+}
+
+// ImageInteraction — Vorher/Nachher, Layer-Reveal, Zoom+Pan
+export type ImageInteractionType = "beforeAfter" | "layerReveal" | "zoomPan";
+
+export interface BeforeAfterData {
+  imageBefore: string;
+  imageAfter: string;
+  labelBefore?: string;
+  labelAfter?: string;
+  startPosition?: number; // 0-100, default 50
+}
+
+export interface ImageLayer {
+  id: string;
+  label: string;
+  labelB1?: string;
+  imageUrl: string;
+  defaultVisible?: boolean;
+}
+
+export interface LayerRevealData {
+  layers: ImageLayer[];
+  baseImageUrl?: string;
+  instruction?: string;
+}
+
+export interface ZoomAnnotation {
+  id: string;
+  x: number; // % (0-100)
+  y: number;
+  label: string;
+  labelB1?: string;
+  description?: string;
+  descriptionB1?: string;
+}
+
+export interface ZoomPanData {
+  imageUrl: string;
+  imageAlt: string;
+  maxZoom?: number; // default 4
+  annotations?: ZoomAnnotation[];
+}
+
+export interface ImageInteractionData {
+  interactionType: ImageInteractionType;
+  instruction: string;
+  instructionB1?: string;
+  beforeAfter?: BeforeAfterData;
+  layerReveal?: LayerRevealData;
+  zoomPan?: ZoomPanData;
+}
+
 export interface ContentStep {
   stepId: string;
   phase: 1 | 2 | 3 | 4 | 5 | 6;
@@ -283,13 +375,19 @@ export interface ContentStep {
     | "flipcard"
     | "reveal"
     | "timeline"
-    | "comparison";
+    | "comparison"
+    | "labelImage"
+    | "diagram"
+    | "imageInteraction";
   bloomLevel: 1 | 2 | 3 | 4 | 5 | 6;
   kompetenzbereich: string;
   quellen: string[];
 
   // Optionales XP-Override pro Step
   xpValue?: number;
+
+  // Track-System: basis (Pflicht) vs. vertiefung (Bonus)
+  track?: "basis" | "vertiefung";
 
   // Adaptive Metadaten (optional — für Sequencer)
   difficulty?: 1 | 2 | 3 | 4 | 5;
@@ -399,6 +497,15 @@ export interface ContentStep {
 
     // Comparison (Differentialdiagnose)
     comparison?: ComparisonData;
+
+    // LabelImage (Anatomie beschriften)
+    labelImage?: LabelImageData;
+
+    // Diagram (Flowchart/Mindmap/Cycle)
+    diagram?: DiagramData;
+
+    // ImageInteraction (Vorher/Nachher, Layer, Zoom)
+    imageInteraction?: ImageInteractionData;
   };
 }
 

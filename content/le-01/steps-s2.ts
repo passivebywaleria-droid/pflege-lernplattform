@@ -1,216 +1,112 @@
-// Session 2: "Wie pflegt man systematisch?" — LE 01
-// Generiert vom Content-Generator v2
-// Themen: Pflegeprozess (Fiechter/Meier), Pflegeprobleme, Ressourcen, Beobachtung, Wahrnehmungsfehler
-// Leitfall: Yasemin Demirci — Aufnahmegespraech beobachten (Szene S1 Fortsetzung)
-// Bloom: B1-B3, 22 Steps, ~30 Min
+// Session 2: "Systematisch pflegen" — LE 01 Personen- und situationsorientiert pflegen
+// Generiert vom Content-Generator v2.1 mit Phasen-Bogen
+// TB3: Pflegeprozess (KB-I, F01-F06) + TB4: Beobachtung & Wahrnehmung (KB-I, F07-F08)
+// Leitfall: Yasemin Demirci — beobachtet Aufnahmegespräch (Szene S1)
+// Bloom: B1-B3, 22 Steps, ~30 Min, Interleaving: 10%
 
 import type { ContentStep } from "../_types";
 
 export const STEPS_S2: ContentStep[] = [
   // =============================================================
-  // Step 1: Dialog — Yasemin: Aufnahmegespraech-Vorbereitung (STORY)
+  // Step 1: Session-Bookend — Vorwissen aktivieren
   // =============================================================
   {
-    stepId: "le01-s2-01",
+    stepId: "le01-s2-bk-01",
     phase: "s2",
-    stepType: "dialog",
-    bloomLevel: 1,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q2 S.78"],
-    track: "basis",
-    modus: "story",
-    lernziel: "ce01-le01-pflegeprozess",
-    contentC1: {
-      title: "Tag 2: Aufnahmegespraech",
-      body: "Yasemin soll heute ein Aufnahmegespraech beobachten. Die Praxisanleiterin bereitet sie vor.",
-      fallbezug: "Dienstag morgen. Yasemin fuehlt sich sicherer als gestern.",
-    },
-    contentB1: {
-      title: "Tag 2: Ein neuer Patient kommt",
-      body: "Yasemin soll heute zuschauen, wie ein neuer Patient aufgenommen wird.",
-      fallbezug: "Es ist Dienstag. Yasemin fuehlt sich besser als gestern.",
-    },
-    question: {
-      fragetext: "Begleite Yasemin bei der Vorbereitung.",
-      patientName: "Yasemin Demirci",
-      dialogPhases: [
-        {
-          context: "Praxisanleiterin: 'Heute beobachtest du ein Aufnahmegespraech. Was meinst du — worauf sollte man dabei achten?'",
-          contextB1: "Praxisanleiterin: 'Heute schaust du bei einem Aufnahmegespraech zu. Was ist wichtig dabei?'",
-          speaker: "Yasemin",
-          options: [
-            {
-              text: "Ich denke, man muss den Patienten kennenlernen — seine Probleme UND seine Ressourcen. Gestern habe ich gelernt, dass Pflege nicht nur nach Defiziten fragt.",
-              textB1: "Ich glaube, man muss den Patienten kennenlernen. Seine Probleme und seine Staerken. Das habe ich gestern gelernt.",
-              patientResponse: "Genau richtig! Und das Ganze hat einen Namen: Pflegeanamnese. Das ist der erste Schritt im Pflegeprozess.",
-              patientResponseB1: "Sehr gut! Das nennt man Pflegeanamnese. Das ist der erste Schritt im Pflegeprozess.",
-              score: 3,
-              feedback: "Recall aus Session 1 — Ressourcenorientierung ist ein Grundprinzip. Die Pflegeanamnese ist der erste Schritt des Pflegeprozesses.",
-              feedbackB1: "Richtig! Pflegeanamnese heisst: alle wichtigen Informationen ueber den Patienten sammeln.",
-            },
-            {
-              text: "Soll ich einfach aufschreiben, was der Patient sagt?",
-              textB1: "Soll ich aufschreiben, was der Patient sagt?",
-              patientResponse: "Das ist ein Anfang — aber Beobachtung geht tiefer. Du schaust auch auf Mimik und Koerpersprache. Und du fragst gezielt nach Ressourcen.",
-              patientResponseB1: "Das ist ein Teil davon. Aber du schaust auch auf sein Gesicht und seinen Koerper. Und du fragst nach seinen Staerken.",
-              score: 1,
-              feedback: "Dokumentation ist wichtig, aber Beobachtung umfasst mehr als nur Worte — auch Mimik, Koerpersprache und Ressourcen.",
-              feedbackB1: "Aufschreiben ist gut! Aber du musst auch beobachten: Gesicht, Koerper und Staerken.",
-            },
-          ],
-        },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 2: Confidence — Vorwissen-Check (CHALLENGE)
-  // =============================================================
-  {
-    stepId: "le01-s2-02",
-    phase: "s2",
-    stepType: "confidence",
+    stepType: "selfrating",
     bloomLevel: 1,
     kompetenzbereich: "KB-I",
     quellen: [],
     track: "basis",
-    modus: "challenge",
+    modus: "checkpoint",
     lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "CHECKPOINT",
     contentC1: {
-      title: "Vorwissen-Check",
-      body: "Schaetze dich ein: Was weisst du bereits ueber den Pflegeprozess?",
+      title: "Dein Wissensstand",
+      body: "Schätze dich ein: Wie gut kennst du dich mit dem Pflegeprozess aus?",
     },
     contentB1: {
-      title: "Was weisst du schon?",
-      body: "Schaetze dich ein. Dann lernst du den Pflegeprozess kennen.",
+      title: "Was weißt du schon?",
+      body: "Wie gut kennst du den Pflegeprozess? Schätze dich ein.",
     },
     question: {
-      fragetext: "Bewerte jede Aussage: Wie sicher bist du?",
-      confidenceCards: [
-        {
-          statement: "Ich weiss, was eine Pflegeanamnese ist.",
-          statementB1: "Ich weiss, was eine Pflegeanamnese ist.",
-          isTrue: true,
-          explanation: "Die Pflegeanamnese ist eine strukturierte Datenerhebung beim Aufnahmegespraech.",
-          explanationB1: "Pflegeanamnese: Ein geplantes Gespraech, bei dem man alles Wichtige ueber den Patienten erfaehrt.",
-        },
-        {
-          statement: "Ich kenne die 6 Schritte des Pflegeprozesses.",
-          statementB1: "Ich kenne die 6 Schritte des Pflegeprozesses.",
-          isTrue: true,
-          explanation: "Informationssammlung, Probleme erkennen, Ziele festlegen, Massnahmen planen, Durchfuehren, Evaluation.",
-          explanationB1: "Informationen sammeln, Probleme finden, Ziele setzen, planen, durchfuehren, pruefen.",
-        },
-        {
-          statement: "Ich kann Pflegeprobleme von Ressourcen unterscheiden.",
-          statementB1: "Ich kann Probleme und Staerken unterscheiden.",
-          isTrue: true,
-          explanation: "Pflegeprobleme sind Einschraenkungen, Ressourcen sind Faehigkeiten und Staerken, die bei der Problemloesung helfen.",
-          explanationB1: "Probleme sind Einschraenkungen. Ressourcen sind Staerken, die helfen.",
-        },
+      fragetext: "Wie sicher fühlst du dich bei diesen Aussagen?",
+      statements: [
+        "Ich weiß, was der Pflegeprozess ist.",
+        "Ich kann die 6 Schritte des Pflegeprozesses benennen.",
+        "Ich weiß, was eine Pflegeanamnese ist.",
+        "Ich kann erklären, was systematische Beobachtung bedeutet.",
+        "Ich kenne mindestens 3 Wahrnehmungsfehler.",
       ],
     },
   },
 
   // =============================================================
-  // Step 3: Swipe — Brilliant-Prinzip: Pflegeprozess-Schritte (ENTDECKER)
+  // TB3: Pflegeprozess — BRÜCKE (Phase 0)
   // =============================================================
   {
-    stepId: "le01-s2-03",
+    stepId: "le01-s2-tb3-01",
     phase: "s2",
-    stepType: "swipe",
+    stepType: "text",
     bloomLevel: 1,
     kompetenzbereich: "KB-I",
-    quellen: ["Q2 S.78-79"],
+    quellen: [],
     track: "basis",
     modus: "entdecker",
     lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "BRÜCKE",
     contentC1: {
-      title: "Gehoert das zum Pflegeprozess?",
-      body: "Der Pflegeprozess hat 6 Schritte. Manche Taetigkeiten gehoeren dazu, manche nicht.",
+      title: "Rückblick und Ausblick",
+      body: "In Session 1 hast du gelernt, **was Pflege ist** — ein eigenverantwortlicher Beruf mit 5 Schlüsselaufgaben (ICN) und einer langen Geschichte.\n\nHeute geht es um die nächste Frage: **Wie wird Pflege systematisch geplant?**\n\nPflege passiert nicht zufällig. Es gibt einen klaren Ablauf — den **Pflegeprozess**. Yasemin wird heute ein Aufnahmegespräch beobachten und dabei lernen, wie dieser Prozess in der Praxis funktioniert.",
+      fallbezug: "Yasemin weiß jetzt, dass Pflege mehr ist als waschen und Medikamente geben. Heute lernt sie das Werkzeug, mit dem sie professionell pflegen kann.",
     },
     contentB1: {
-      title: "Was gehoert zum Pflegeprozess?",
-      body: "Der Pflegeprozess hat 6 Schritte. Was gehoert dazu und was nicht?",
-    },
-    question: {
-      fragetext: "Wische nach rechts fuer 'gehoert dazu' und nach links fuer 'gehoert nicht dazu'.",
-      swipe: {
-        instruction: "Gehoert dieser Schritt zum Pflegeprozess?",
-        cards: [
-          {
-            statement: "Informationen ueber den Patienten sammeln",
-            statementB1: "Informationen ueber den Patienten sammeln",
-            isCorrect: true,
-            explanation: "Informationssammlung ist der erste Schritt des Pflegeprozesses nach Fiechter und Meier.",
-            explanationB1: "Ja! Informationen sammeln ist der erste Schritt im Pflegeprozess.",
-          },
-          {
-            statement: "Medizinische Diagnosen stellen",
-            statementB1: "Krankheiten diagnostizieren",
-            isCorrect: false,
-            explanation: "Medizinische Diagnosen stellt der Arzt. Pflegende erheben Pflegeprobleme.",
-            explanationB1: "Nein! Diagnosen stellt der Arzt. Pflegende finden Pflegeprobleme.",
-          },
-          {
-            statement: "Pflegeziele gemeinsam mit dem Patienten festlegen",
-            statementB1: "Pflegeziele mit dem Patienten zusammen festlegen",
-            isCorrect: true,
-            explanation: "Pflegeziele werden immer gemeinsam mit dem Pflegeempfaenger formuliert — positiv und messbar.",
-            explanationB1: "Ja! Ziele legt man zusammen mit dem Patienten fest.",
-          },
-          {
-            statement: "Die Wirkung der Pflege beurteilen",
-            statementB1: "Pruefen, ob die Pflege geholfen hat",
-            isCorrect: true,
-            explanation: "Evaluation ist der 6. Schritt — sie prueft, ob die Ziele erreicht wurden.",
-            explanationB1: "Ja! Pruefen ob es geholfen hat — das ist der letzte Schritt.",
-          },
-          {
-            statement: "Blutentnahme durchfuehren",
-            statementB1: "Blut abnehmen",
-            isCorrect: false,
-            explanation: "Blutentnahme ist eine delegierte aerztliche Taetigkeit, kein Schritt des Pflegeprozesses.",
-            explanationB1: "Nein! Blut abnehmen ist keine Aufgabe im Pflegeprozess.",
-          },
-          {
-            statement: "Probleme und Ressourcen des Patienten erkennen",
-            statementB1: "Probleme und Staerken des Patienten erkennen",
-            isCorrect: true,
-            explanation: "Probleme und Ressourcen erkennen ist der 2. Schritt des Pflegeprozesses.",
-            explanationB1: "Ja! Das ist der zweite Schritt: Probleme und Staerken erkennen.",
-          },
-          {
-            statement: "Pflegemassnahmen planen und durchfuehren",
-            statementB1: "Pflege planen und durchfuehren",
-            isCorrect: true,
-            explanation: "Planung (Schritt 4) und Durchfuehrung (Schritt 5) sind zentrale Schritte.",
-            explanationB1: "Ja! Planen ist Schritt 4 und Durchfuehren ist Schritt 5.",
-          },
-          {
-            statement: "Medikamente verordnen",
-            statementB1: "Medikamente verschreiben",
-            isCorrect: false,
-            explanation: "Medikamente verordnet nur der Arzt. Pflegende verabreichen sie.",
-            explanationB1: "Nein! Medikamente verschreibt der Arzt. Pflegende geben sie dem Patienten.",
-          },
-          {
-            statement: "Therapieplaene fuer Physiotherapie erstellen",
-            statementB1: "Uebungen fuer den Physiotherapeuten planen",
-            isCorrect: false,
-            explanation: "Therapieplaene erstellt der Physiotherapeut. Pflegende erstellen Pflegeplaene.",
-            explanationB1: "Nein! Pflegende machen Pflegeplaene. Physiotherapeuten machen Therapieplaene.",
-          },
-        ],
-      },
+      title: "Was kommt heute?",
+      body: "Gestern hast du gelernt: Pflege ist ein eigenverantwortlicher Beruf.\n\nHeute lernst du: **Wie plant man Pflege?** Es gibt einen festen Ablauf — den **Pflegeprozess**. Yasemin schaut heute bei einem Aufnahmegespräch zu.",
+      fallbezug: "Yasemin lernt heute, wie man Pflege plant.",
     },
   },
 
   // =============================================================
-  // Step 4: Text — Der Pflegeprozess (ENTDECKER)
+  // TB3: Pflegeprozess — SZENE (Phase 1)
   // =============================================================
   {
-    stepId: "le01-s2-04",
+    stepId: "le01-s2-tb3-02",
+    phase: "s2",
+    stepType: "dialog",
+    bloomLevel: 1,
+    kompetenzbereich: "KB-I",
+    quellen: [],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "SZENE",
+    contentC1: {
+      title: "Das Aufnahmegespräch",
+      body: "Yasemin beobachtet, wie ihre Praxisanleiterin ein Aufnahmegespräch mit einem neuen Patienten führt.",
+      fallbezug: "Yasemin sitzt leise daneben und beobachtet. Sie merkt: Das Gespräch folgt einem roten Faden — nichts ist zufällig.",
+    },
+    contentB1: {
+      title: "Ein neuer Patient kommt",
+      body: "Yasemin schaut zu: Die Praxisanleiterin spricht mit einem neuen Patienten.",
+      fallbezug: "Yasemin beobachtet und merkt: Das Gespräch hat einen Plan.",
+    },
+    question: {
+      fragetext: "Im Aufnahmegespräch:",
+      dialogLines: [
+        { speaker: "Praxisanleiterin", text: "Herr Müller, willkommen auf unserer Station. Ich stelle Ihnen ein paar Fragen, damit wir Ihre Pflege gut planen können." },
+        { speaker: "Patient", text: "Muss das jetzt sein? Ich bin müde von der Fahrt." },
+        { speaker: "Praxisanleiterin", text: "Wir machen es kurz — maximal 30 Minuten. Und wenn Sie eine Pause brauchen, sagen Sie Bescheid." },
+        { speaker: "Yasemin (leise)", text: "So fängt der Pflegeprozess an — mit dem Zuhören." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB3: ERKLÄRUNG (Phase 2) — Pflegeprozess nach Fiechter/Meier
+  // =============================================================
+  {
+    stepId: "le01-s2-tb3-03",
     phase: "s2",
     stepType: "text",
     bloomLevel: 1,
@@ -219,23 +115,26 @@ export const STEPS_S2: ContentStep[] = [
     track: "basis",
     modus: "entdecker",
     lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "ERKLÄRUNG",
+    imageUrl: "/images/content/le-01/pflegeprozess-kreislauf.svg",
+    imageAlt: "Grafik: Die 6 Schritte des Pflegeprozesses nach Fiechter/Meier als Kreislauf",
     contentC1: {
-      title: "Der Pflegeprozess",
-      body: "Der Pflegeprozess ist ein systematischer, zielgerichteter Problemloesungsprozess. Gemeinsam mit dem Pflegeempfaenger wird der individuelle Pflegebedarf erhoben. Das Modell nach Fiechter und Meier umfasst 6 Schritte: Informationssammlung, Probleme und Ressourcen erkennen, Ziele festlegen, Massnahmen planen, Massnahmen durchfuehren und Evaluation.",
-      glossarBegriffe: ["Pflegeprozess"],
+      title: "Der Pflegeprozess — 6 Schritte",
+      body: "Der Pflegeprozess ist ein **systematischer, zielgerichteter Problemlösungsprozess**, in dem gemeinsam mit dem Pflegeempfänger der individuelle Pflegebedarf erhoben wird.\n\nDas Modell nach **Fiechter und Meier** umfasst 6 Schritte:\n\n1. **Informationssammlung** — Daten erheben (Pflegeanamnese)\n2. **Probleme und Ressourcen erkennen** — Was braucht der Patient? Was kann er selbst?\n3. **Ziele festlegen** — Wohin soll es gehen?\n4. **Maßnahmen planen** — Wie erreichen wir das Ziel?\n5. **Maßnahmen durchführen** — Handeln!\n6. **Wirkung beurteilen (Evaluation)** — Hat es funktioniert?\n\nWichtig: Der Pflegeprozess ist ein **Kreislauf** — nach der Evaluation beginnt er wieder bei Schritt 1.",
+      fallbezug: "Was Yasemin gerade beobachtet, ist Schritt 1: Die Praxisanleiterin sammelt Informationen.",
     },
     contentB1: {
-      title: "Der Pflegeprozess",
-      body: "Der Pflegeprozess ist ein fester Ablauf fuer die Pflege. Er hat 6 Schritte: Informationen sammeln, Probleme finden, Ziele setzen, Massnahmen planen, Massnahmen durchfuehren und pruefen ob es funktioniert hat. Man macht das immer zusammen mit dem Patienten.",
-      glossarBegriffe: ["Pflegeprozess"],
+      title: "6 Schritte der Pflege",
+      body: "Der Pflegeprozess ist ein **Plan in 6 Schritten**:\n\n1. **Informationen sammeln** — Was ist los?\n2. **Probleme und Stärken finden** — Was braucht der Patient?\n3. **Ziele setzen** — Was wollen wir erreichen?\n4. **Maßnahmen planen** — Was tun wir?\n5. **Maßnahmen durchführen** — Jetzt handeln!\n6. **Prüfen** — Hat es geklappt?\n\nDanach geht es wieder von vorne los.",
+      fallbezug: "Yasemin sieht gerade Schritt 1: Informationen sammeln.",
     },
   },
 
   // =============================================================
-  // Step 5: Diagram — Cycle: 6 Schritte Pflegeprozess (ENTDECKER)
+  // TB3: ERKLÄRUNG (Phase 2) — Kreislauf-Diagramm
   // =============================================================
   {
-    stepId: "le01-s2-05",
+    stepId: "le01-s2-tb3-04",
     phase: "s2",
     stepType: "diagram",
     bloomLevel: 1,
@@ -244,804 +143,589 @@ export const STEPS_S2: ContentStep[] = [
     track: "basis",
     modus: "entdecker",
     lernziel: "ce01-le01-pflegeprozess",
-    imageUrl: "/images/le01/pflegeprozess-cycle.svg",
-    imageAlt: "Kreislauf-Diagramm: 6 Schritte des Pflegeprozesses",
+    themenblockPhase: "ERKLÄRUNG",
     contentC1: {
-      title: "Pflegeprozess als Kreislauf",
-      body: "Der Pflegeprozess ist kein gerader Weg. Er ist ein Kreislauf — nach der Evaluation beginnt er von vorn.",
+      title: "Der Pflegeprozess als Kreislauf",
+      body: "Schau dir den Kreislauf an: Nach der Evaluation startet der Prozess erneut — Pflege hört nie auf.",
     },
     contentB1: {
-      title: "Der Pflegeprozess im Kreis",
-      body: "Der Pflegeprozess hoert nie auf. Nach dem letzten Schritt beginnt man wieder von vorn.",
+      title: "Ein Kreislauf",
+      body: "Der Pflegeprozess dreht sich im Kreis. Nach dem Prüfen fängt man wieder an.",
     },
     question: {
-      fragetext: "Erkunde die 6 Schritte des Pflegeprozesses.",
+      fragetext: "Die 6 Schritte nach Fiechter und Meier:",
       diagram: {
         diagramType: "cycle",
-        instruction: "Tippe auf die einzelnen Schritte, um mehr zu erfahren.",
+        instruction: "Der Pflegeprozess als Kreislauf",
         nodes: [
-          { id: "info", label: "1. Informationssammlung", labelB1: "1. Informationen sammeln", highlight: true },
-          { id: "probleme", label: "2. Probleme/Ressourcen", labelB1: "2. Probleme + Staerken" },
-          { id: "ziele", label: "3. Ziele festlegen", labelB1: "3. Ziele setzen" },
-          { id: "planung", label: "4. Massnahmen planen", labelB1: "4. Planen" },
-          { id: "durchfuehrung", label: "5. Durchfuehren", labelB1: "5. Machen" },
-          { id: "evaluation", label: "6. Evaluation", labelB1: "6. Pruefen" },
+          { id: "s1", label: "1. Informationssammlung" },
+          { id: "s2", label: "2. Probleme & Ressourcen" },
+          { id: "s3", label: "3. Ziele festlegen" },
+          { id: "s4", label: "4. Maßnahmen planen" },
+          { id: "s5", label: "5. Durchführen" },
+          { id: "s6", label: "6. Evaluation" },
         ],
         edges: [
-          { from: "info", to: "probleme" },
-          { from: "probleme", to: "ziele" },
-          { from: "ziele", to: "planung" },
-          { from: "planung", to: "durchfuehrung" },
-          { from: "durchfuehrung", to: "evaluation" },
-          { from: "evaluation", to: "info", label: "Kreislauf" },
+          { from: "s1", to: "s2" },
+          { from: "s2", to: "s3" },
+          { from: "s3", to: "s4" },
+          { from: "s4", to: "s5" },
+          { from: "s5", to: "s6" },
+          { from: "s6", to: "s1", label: "Kreislauf" },
         ],
-        interactive: true,
       },
     },
   },
 
   // =============================================================
-  // Step 6: Sequencing — 6 Schritte ordnen (SORTIERSTATION)
+  // TB3: CHECKPOINT (Phase 3) — MC
   // =============================================================
   {
-    stepId: "le01-s2-06",
+    stepId: "le01-s2-tb3-05",
     phase: "s2",
-    stepType: "sequencing",
+    stepType: "mc",
     bloomLevel: 2,
+    kompetenzbereich: "KB-I",
+    quellen: ["Q2 S.78-79"],
+    track: "basis",
+    modus: "challenge",
+    lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "CHECKPOINT",
+    contentC1: {
+      title: "Kurzer Check!",
+      body: "Hast du die 6 Schritte verstanden? Diese Frage misst auch deine Antwortzeit.",
+    },
+    contentB1: {
+      title: "Kurzer Check!",
+      body: "Kennst du die 6 Schritte? Antworte so schnell du kannst.",
+    },
+    question: {
+      fragetext: "Welcher Schritt kommt NACH der Informationssammlung im Pflegeprozess?",
+      optionen: [
+        { text: "Probleme und Ressourcen erkennen", isCorrect: true, explanation: "Richtig! Nach dem Sammeln der Informationen werden Probleme und Ressourcen des Pflegeempfängers identifiziert — erst dann können Ziele festgelegt werden." },
+        { text: "Maßnahmen durchführen", isCorrect: false, explanation: "Nein — bevor man handelt, muss man erst Probleme erkennen, Ziele setzen und Maßnahmen planen." },
+        { text: "Ziele festlegen", isCorrect: false, explanation: "Fast! Ziele kommen erst in Schritt 3 — vorher müssen in Schritt 2 die Probleme und Ressourcen erkannt werden." },
+        { text: "Evaluation", isCorrect: false, explanation: "Die Evaluation ist der letzte Schritt (Schritt 6). Erst am Ende prüft man, ob die Maßnahmen gewirkt haben." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB3: ANDERS_ERKLÄRT (Phase 4) — Pflegeprozess vs. Arztbesuch
+  // =============================================================
+  {
+    stepId: "le01-s2-tb3-06",
+    phase: "s2",
+    stepType: "comparison",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-I",
+    quellen: ["Q2 S.78-79"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "ANDERS_ERKLÄRT",
+    contentC1: {
+      title: "Pflegeprozess vs. Arztbesuch",
+      body: "Der Pflegeprozess ähnelt dem Ablauf beim Arzt — aber mit einem wichtigen Unterschied: Die Pflege sieht den ganzen Menschen, nicht nur die Krankheit.",
+    },
+    contentB1: {
+      title: "Wie beim Arzt — aber anders",
+      body: "Der Pflegeprozess funktioniert ähnlich wie ein Arztbesuch. Aber die Pflege schaut auf den ganzen Menschen.",
+    },
+    question: {
+      fragetext: "Vergleiche die beiden Abläufe:",
+      comparison: {
+        instruction: "Pflegeprozess vs. Arztbesuch",
+        columns: [
+          { label: "Pflegeprozess", icon: "heart-pulse" },
+          { label: "Arztbesuch", icon: "stethoscope" },
+        ],
+        rows: [
+          { criterion: "Schritt 1", values: ["Pflegeanamnese: Gespräch, Beobachtung, Biografie", "Anamnese: Beschwerden erfragen"] },
+          { criterion: "Schritt 2", values: ["Pflegeprobleme UND Ressourcen erkennen", "Diagnose stellen"] },
+          { criterion: "Schritt 3", values: ["Pflegeziele gemeinsam festlegen", "Therapieziel festlegen"] },
+          { criterion: "Schritt 4", values: ["Pflegemaßnahmen planen", "Therapie verordnen"] },
+          { criterion: "Schritt 5", values: ["Maßnahmen durchführen", "Behandlung durchführen"] },
+          { criterion: "Schritt 6", values: ["Evaluation: Kreislauf beginnt neu", "Kontrolle: ggf. Therapie anpassen"] },
+          { criterion: "Fokus", values: ["Ganzer Mensch: körperlich, seelisch, sozial", "Krankheit und Symptome"] },
+        ],
+      },
+    },
+  },
+
+  // =============================================================
+  // TB3: PRAXIS_DIALOG (Phase 6) — Pflegeanamnese
+  // =============================================================
+  {
+    stepId: "le01-s2-tb3-07",
+    phase: "s2",
+    stepType: "dialog",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-I",
+    quellen: ["Q2 S.80"],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "PRAXIS_DIALOG",
+    contentC1: {
+      title: "Das wichtigste Werkzeug",
+      body: "Nach dem Aufnahmegespräch erklärt die Praxisanleiterin Yasemin, warum die Pflegeanamnese so wichtig ist.",
+      fallbezug: "Yasemin versteht: Ohne gute Informationssammlung kann man keine Pflege planen.",
+    },
+    contentB1: {
+      title: "Warum das Gespräch wichtig ist",
+      body: "Die Praxisanleiterin erklärt Yasemin, warum das Aufnahmegespräch so wichtig ist.",
+      fallbezug: "Yasemin lernt: Gute Pflege beginnt mit gutem Zuhören.",
+    },
+    question: {
+      fragetext: "Nach dem Aufnahmegespräch:",
+      dialogLines: [
+        { speaker: "Yasemin", text: "Das war ja ein richtiges Interview! Woher wussten Sie, was Sie fragen müssen?" },
+        { speaker: "Praxisanleiterin", text: "Das ist die Pflegeanamnese — eine strukturierte Datenerhebung. Ich erfasse systematisch alles, was für die Pflege wichtig ist." },
+        { speaker: "Yasemin", text: "Und die 30 Minuten — ist das immer so lang?" },
+        { speaker: "Praxisanleiterin", text: "Maximal 30 Minuten, empathisch und respektvoll. Die Pflegeanamnese ist dein wichtigstes Werkzeug — sie ist die Grundlage für alles, was danach kommt." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB3: PATIENTEN_PERSPEKTIVE (Phase 7)
+  // =============================================================
+  {
+    stepId: "le01-s2-tb3-08",
+    phase: "s2",
+    stepType: "text",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-I",
+    quellen: ["Q2 S.80-82"],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "PATIENTEN_PERSPEKTIVE",
+    contentC1: {
+      title: "Wie Patienten das Aufnahmegespräch erleben",
+      body: "Herr Brenner, 82, erinnert sich an sein eigenes Aufnahmegespräch:\n\n*\"Ich war nervös, als ich hier ankam. Aber die Schwester hat sich hingesetzt, mich angeschaut und gesagt: 'Erzählen Sie mal.' Nicht sofort Blutdruck messen oder Formulare ausfüllen — sie hat zugehört.\n\nSie hat gefragt, was ich noch alleine kann. Was mir wichtig ist. Ob ich Hilfe beim Waschen brauche. Das war mir peinlich — aber sie hat es so gefragt, dass es okay war.\n\nIch hatte das Gefühl: Die wissen jetzt, wer ich bin. Nicht nur meine Diagnose.\"*\n\nDas ist der Sinn der Pflegeanamnese: Den Menschen kennenlernen — seine **Probleme UND seine Ressourcen**.",
+      fallbezug: "Yasemin versteht: Gute Pflege sieht nicht nur die Krankheit — sie sieht den ganzen Menschen.",
+    },
+    contentB1: {
+      title: "So erlebt ein Patient das Gespräch",
+      body: "Herr Brenner, 82, erzählt:\n\n*\"Die Pflegerin hat sich hingesetzt und zugehört. Sie hat gefragt: Was können Sie noch alleine? Was ist Ihnen wichtig? Ich hatte das Gefühl: Sie kennt mich jetzt — nicht nur meine Krankheit.\"*\n\nDas ist das Ziel: Den ganzen Menschen sehen — seine Probleme **und** seine Stärken.",
+      fallbezug: "Yasemin versteht: Gute Pflege beginnt mit Zuhören.",
+    },
+  },
+
+  // =============================================================
+  // TB3: ANWENDUNG (Phase 9) — Sorting 6 Schritte
+  // =============================================================
+  {
+    stepId: "le01-s2-tb3-09",
+    phase: "s2",
+    stepType: "sorting",
+    bloomLevel: 3,
     kompetenzbereich: "KB-I",
     quellen: ["Q2 S.78-79"],
     track: "basis",
     modus: "sortierstation",
     lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
       title: "Die richtige Reihenfolge",
-      body: "Die 6 Schritte des Pflegeprozesses folgen einer logischen Reihenfolge.",
+      body: "Bringe die 6 Schritte des Pflegeprozesses in die richtige Reihenfolge.",
     },
     contentB1: {
-      title: "In welcher Reihenfolge?",
-      body: "Bringe die 6 Schritte in die richtige Reihenfolge.",
+      title: "Sortiere die Schritte!",
+      body: "Welcher Schritt kommt zuerst? Sortiere alle 6 Schritte.",
     },
     question: {
-      fragetext: "Ordne die 6 Schritte des Pflegeprozesses in die richtige Reihenfolge.",
-      sequencing: {
-        instruction: "Ziehe die Schritte in die richtige Position.",
-        items: [
-          { id: "s1", label: "Informationssammlung" },
-          { id: "s2", label: "Probleme und Ressourcen erkennen" },
-          { id: "s3", label: "Pflegeziele festlegen" },
-          { id: "s4", label: "Pflegemassnahmen planen" },
-          { id: "s5", label: "Massnahmen durchfuehren" },
-          { id: "s6", label: "Evaluation (Wirkung pruefen)" },
-        ],
-      },
+      fragetext: "Sortiere die 6 Schritte des Pflegeprozesses nach Fiechter und Meier:",
+      sortItems: [
+        "Informationssammlung",
+        "Probleme und Ressourcen erkennen",
+        "Ziele festlegen",
+        "Maßnahmen planen",
+        "Maßnahmen durchführen",
+        "Evaluation (Wirkung beurteilen)",
+      ],
     },
   },
 
   // =============================================================
-  // Step 7: Reveal — Pflegeprozess mit Fallbeispielen (ENTDECKER)
+  // TB3: REFLEXION (Phase 10) — Confidence
   // =============================================================
   {
-    stepId: "le01-s2-07",
+    stepId: "le01-s2-tb3-10",
     phase: "s2",
-    stepType: "reveal",
+    stepType: "confidence",
     bloomLevel: 2,
     kompetenzbereich: "KB-I",
-    quellen: ["Q2 S.78-83"],
+    quellen: [],
     track: "basis",
-    modus: "entdecker",
+    modus: "checkpoint",
     lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "REFLEXION",
     contentC1: {
-      title: "Pflegeprozess in der Praxis",
-      body: "Jeder Schritt des Pflegeprozesses hat eine konkrete Bedeutung auf Station.",
-      fallbezug: "Yasemin beobachtet, wie die Praxisanleiterin bei Frau Mueller den Pflegeprozess anwendet.",
+      title: "Wie sicher bist du jetzt?",
+      body: "Du hast den Pflegeprozess kennengelernt. Schätze dich ein.",
     },
     contentB1: {
-      title: "Pflegeprozess auf Station",
-      body: "So sieht der Pflegeprozess in echt aus. Yasemin schaut zu.",
-      fallbezug: "Yasemin beobachtet die Praxisanleiterin bei einer Patientin.",
+      title: "Wie sicher bist du?",
+      body: "Verstehst du den Pflegeprozess? Schätze dich ein.",
     },
     question: {
-      fragetext: "Decke die Schritte nacheinander auf und entdecke das Praxisbeispiel.",
-      reveal: {
-        instruction: "Tippe auf jede Karte, um den Schritt zu sehen.",
-        revealMode: "sequential",
-        cards: [
-          {
-            id: "r1",
-            label: "Schritt 1",
-            content: "Informationssammlung: Pflegeanamnese bei Frau Mueller — Vorerkrankungen, Medikamente, Alltagsfaehigkeiten, soziales Umfeld.",
-            contentB1: "Informationen sammeln: Was hat Frau Mueller fuer Krankheiten? Welche Medikamente nimmt sie? Was kann sie noch selbst?",
-            icon: "clipboard",
-          },
-          {
-            id: "r2",
-            label: "Schritt 2",
-            content: "Probleme erkennen: Sturzgefahr durch unsicheres Gangbild. Ressource: Frau Mueller ist motiviert und hat eine unterstuetzende Familie.",
-            contentB1: "Probleme: Frau Mueller kann schlecht laufen — Sturzgefahr. Staerke: Sie ist motiviert und ihre Familie hilft.",
-            icon: "search",
-          },
-          {
-            id: "r3",
-            label: "Schritt 3",
-            content: "Ziel festlegen: 'Frau Mueller kann sich innerhalb einer Woche sicher am Rollator auf dem Flur bewegen.'",
-            contentB1: "Ziel: Frau Mueller kann in einer Woche sicher mit dem Rollator laufen.",
-            icon: "target",
-          },
-          {
-            id: "r4",
-            label: "Schritt 4",
-            content: "Massnahmen planen: 2x taeglich Gehtraining mit Rollator, rutschfeste Socken, Nachtlicht im Zimmer.",
-            contentB1: "Planen: 2 Mal am Tag laufen ueben. Rutschfeste Socken. Licht in der Nacht.",
-            icon: "list",
-          },
-          {
-            id: "r5",
-            label: "Schritt 5",
-            content: "Durchfuehren: Yasemin begleitet Frau Mueller beim Gehtraining — unter Aufsicht der Praxisanleiterin.",
-            contentB1: "Machen: Yasemin hilft Frau Mueller beim Laufen. Die Praxisanleiterin schaut zu.",
-            icon: "play",
-          },
-          {
-            id: "r6",
-            label: "Schritt 6",
-            content: "Evaluation: Nach 5 Tagen prueft die Pflegekraft: Kann Frau Mueller sicher gehen? Ist das Ziel erreicht?",
-            contentB1: "Pruefen: Nach 5 Tagen schauen: Kann Frau Mueller jetzt sicher laufen?",
-            icon: "check-circle",
-          },
-        ],
+      fragetext: "Wie sicher fühlst du dich bei diesen Aussagen?",
+      statements: [
+        "Ich kann die 6 Schritte des Pflegeprozesses benennen.",
+        "Ich weiß, was eine Pflegeanamnese ist.",
+        "Ich verstehe, warum der Pflegeprozess ein Kreislauf ist.",
+      ],
+    },
+  },
+
+  // =============================================================
+  // Snack-Step: Slider zwischen TB3 und TB4
+  // =============================================================
+  {
+    stepId: "le01-s2-sn-01",
+    phase: "s2",
+    stepType: "slider",
+    bloomLevel: 1,
+    kompetenzbereich: "KB-I",
+    quellen: [],
+    track: "vertiefung",
+    modus: "challenge",
+    lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Was schätzt du?",
+      body: "Wie viel Prozent der Arbeitszeit verbringen Pflegefachkräfte mit Dokumentation?",
+    },
+    contentB1: {
+      title: "Was denkst du?",
+      body: "Wie viel Arbeitszeit geht für das Aufschreiben drauf?",
+    },
+    question: {
+      fragetext: "Wie viel Prozent der Arbeitszeit verbringen Pflegefachkräfte mit Dokumentation?",
+      slider: {
+        instruction: "Schätze den Anteil der Dokumentation an der täglichen Arbeitszeit:",
+        unit: "%",
+        min: 0,
+        max: 100,
+        step: 5,
+        correctValue: 30,
+        tolerance: 10,
+        explanation: "Studien zeigen: Pflegefachkräfte verbringen ca. 25-35% ihrer Arbeitszeit mit Dokumentation. Das ist viel — aber nötig, weil nur gute Dokumentation den Pflegeprozess nachvollziehbar macht.",
+        explanationB1: "Pflegekräfte schreiben etwa 30% der Zeit auf, was sie tun. Das klingt viel — aber ohne Aufschreiben weiß niemand, was der Patient braucht.",
       },
     },
   },
 
   // =============================================================
-  // Step 8: Text — Pflegeanamnese und Pflegeprobleme (ENTDECKER)
+  // TB4: Beobachtung & Wahrnehmung — SZENE (Phase 1)
   // =============================================================
   {
-    stepId: "le01-s2-08",
+    stepId: "le01-s2-tb4-01",
+    phase: "s2",
+    stepType: "dialog",
+    bloomLevel: 1,
+    kompetenzbereich: "KB-I",
+    quellen: [],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-beobachtung",
+    themenblockPhase: "SZENE",
+    contentC1: {
+      title: "Gute Augen",
+      body: "Yasemin fällt etwas auf, das die Praxisanleiterin beeindruckt.",
+      fallbezug: "Yasemin hat eine gute Beobachtungsgabe — eine ihrer wichtigsten Ressourcen.",
+    },
+    contentB1: {
+      title: "Yasemin beobachtet genau",
+      body: "Yasemin fällt etwas Wichtiges auf.",
+      fallbezug: "Yasemin kann gut beobachten. Das ist eine große Stärke.",
+    },
+    question: {
+      fragetext: "Am Nachmittag auf Station:",
+      dialogLines: [
+        { speaker: "Yasemin", text: "Frau Klein atmet irgendwie anders als heute Morgen. Schneller und flacher." },
+        { speaker: "Praxisanleiterin", text: "Das hast du gut beobachtet! Das kann ein wichtiges Zeichen sein. Lass uns gemeinsam nachschauen." },
+        { speaker: "Yasemin", text: "Woher weiß ich, worauf ich achten muss?" },
+        { speaker: "Praxisanleiterin", text: "Du hast gute Augen. Aber Beobachten muss man auch systematisch lernen — damit dir nichts entgeht." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB4: ERKLÄRUNG (Phase 2) — Systematische Beobachtung
+  // =============================================================
+  {
+    stepId: "le01-s2-tb4-02",
     phase: "s2",
     stepType: "text",
     bloomLevel: 2,
     kompetenzbereich: "KB-I",
-    quellen: ["Q2 S.80-81"],
+    quellen: ["Q8 S.321-322"],
     track: "basis",
     modus: "entdecker",
-    lernziel: "ce01-le01-pflegeprozess",
+    lernziel: "ce01-le01-beobachtung",
+    themenblockPhase: "ERKLÄRUNG",
+    imageUrl: "/images/content/le-01/beobachtung-systematisch.svg",
+    imageAlt: "Grafik: Systematische Patientenbeobachtung — Sinne, Instrumente, Dokumentation",
     contentC1: {
-      title: "Pflegeanamnese und Pflegeprobleme",
-      body: "Die Pflegeanamnese ist eine strukturierte Datenerhebung beim Aufnahmegespraech — empathisch und maximal 30 Minuten. Pflegeprobleme werden unterschieden in: aktuelle (bestehen jetzt), potenzielle (drohen), verdeckte (nicht erkannt oder preisgegeben), generelle (typisch fuer das Krankheitsbild) und individuelle (persoenliche Situation).",
-      glossarBegriffe: ["Pflegeanamnese"],
+      title: "Systematische Beobachtung",
+      body: "Die systematische Patientenbeobachtung steht im **Zentrum jeden pflegerischen Handelns**. Sie ist die Grundlage für den Pflegeprozess UND die ärztliche Therapie.\n\n**Warum ist das so wichtig?** Keine andere Berufsgruppe verbringt so viel Zeit mit dem Pflegeempfänger wie die Pflege. Deshalb erkennen Pflegefachkräfte Veränderungen oft zuerst.\n\n**Systematisch** bedeutet:\n- **Geplant** — nicht zufällig, sondern gezielt\n- **Strukturiert** — mit allen Sinnen (Sehen, Hören, Riechen, Tasten)\n- **Dokumentiert** — jede Beobachtung wird festgehalten\n- **Verglichen** — Veränderungen über die Zeit erkennen\n\nEine gute Beobachtung kann Leben retten — wenn sie systematisch erfolgt.",
+      fallbezug: "Yasemin hat intuitiv beobachtet, dass Frau Klein anders atmet. Jetzt lernt sie, wie man das systematisch macht.",
     },
     contentB1: {
-      title: "Das Aufnahmegespraech und Pflegeprobleme",
-      body: "Die Pflegeanamnese ist ein Gespraech am Anfang. Es dauert hoechstens 30 Minuten. Die Pflegekraft fragt freundlich nach wichtigen Dingen. Es gibt 5 Arten von Pflegeproblemen: aktuelle, moegliche, versteckte, allgemeine und persoenliche.",
-      glossarBegriffe: ["Pflegeanamnese"],
+      title: "Genau hinschauen — aber richtig",
+      body: "Pflegekräfte beobachten Patienten den ganzen Tag. Darum bemerken sie Veränderungen oft als Erste.\n\n**Systematisch beobachten** heißt:\n- **Geplant** — nicht zufällig\n- **Mit allen Sinnen** — sehen, hören, riechen, tasten\n- **Aufschreiben** — damit nichts vergessen wird\n- **Vergleichen** — hat sich etwas verändert?\n\nGutes Beobachten kann Leben retten.",
+      fallbezug: "Yasemin hat gut hingeschaut. Jetzt lernt sie, wie man das richtig macht.",
     },
   },
 
   // =============================================================
-  // Step 9: MC — Verdecktes Pflegeproblem (CHALLENGE, AMBOSS)
+  // TB4: ERKLÄRUNG (Phase 2) — Flipcard 6 Wahrnehmungsfehler
   // =============================================================
   {
-    stepId: "le01-s2-09",
-    phase: "s2",
-    stepType: "mc",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q2 S.81"],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-pflegeprozess",
-    contentC1: {
-      title: "Pflegeprobleme erkennen",
-      body: "Nicht alle Pflegeprobleme sind offensichtlich. Manche werden vom Patienten nicht benannt.",
-    },
-    contentB1: {
-      title: "Versteckte Probleme",
-      body: "Manche Probleme sieht man nicht sofort. Der Patient sagt vielleicht nicht alles.",
-    },
-    question: {
-      fragetext: "Herr Schmidt sagt: 'Mir geht es gut.' Aber er isst seit 2 Tagen nicht. Welche Art von Pflegeproblem liegt vor?",
-      optionen: [
-        {
-          text: "Verdecktes Pflegeproblem",
-          isCorrect: true,
-          explanation: "Der Patient benennt das Problem nicht, obwohl die Beobachtung zeigt, dass etwas nicht stimmt. Verdeckte Probleme erfordern genaue Beobachtung.",
-          explanationB1: "Richtig! Der Patient sagt nichts, aber die Pflegekraft sieht: Er isst nicht. Das ist ein verstecktes Problem.",
-        },
-        {
-          text: "Aktuelles Pflegeproblem",
-          isCorrect: false,
-          explanation: "Ein aktuelles Problem ist erkannt und benannt. Hier ist das Problem dem Patienten moeglicherweise nicht bewusst — daher verdeckt.",
-          explanationB1: "Nicht ganz. Ein aktuelles Problem kennt man schon. Hier weiss man es noch nicht sicher.",
-        },
-        {
-          text: "Generelles Pflegeproblem",
-          isCorrect: false,
-          explanation: "Generelle Probleme sind typisch fuer ein Krankheitsbild. Hier geht es um eine individuelle Diskrepanz zwischen Aussage und Verhalten.",
-          explanationB1: "Nicht ganz. Generelle Probleme sind typisch fuer eine Krankheit. Hier geht es um diesen einen Patienten.",
-        },
-        {
-          text: "Potenzielles Pflegeproblem",
-          isCorrect: false,
-          explanation: "Potenzielle Probleme drohen erst. Hier besteht das Problem bereits (isst seit 2 Tagen nicht), wird nur nicht benannt.",
-          explanationB1: "Nicht ganz. Moegliche Probleme koennen noch kommen. Dieses Problem ist schon da — er isst nicht.",
-        },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 10: Matching — Problemtypen und Beispiele (PUZZLE)
-  // =============================================================
-  {
-    stepId: "le01-s2-10",
-    phase: "s2",
-    stepType: "matching",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q2 S.81"],
-    track: "basis",
-    modus: "puzzle",
-    lernziel: "ce01-le01-pflegeprozess",
-    contentC1: {
-      title: "Pflegeprobleme zuordnen",
-      body: "Ordne jeden Problemtyp dem passenden Beispiel zu.",
-    },
-    contentB1: {
-      title: "Welches Problem passt?",
-      body: "Verbinde jeden Problemtyp mit dem richtigen Beispiel.",
-    },
-    question: {
-      fragetext: "Ordne den Problemtyp dem Beispiel zu.",
-      matchingPairs: [
-        { left: "Aktuelles Problem", right: "Patient hat Fieber (39,2 Grad)" },
-        { left: "Potenzielles Problem", right: "Sturzgefahr bei eingeschraenkter Mobilitaet" },
-        { left: "Verdecktes Problem", right: "Patient sagt 'alles gut', isst aber seit 2 Tagen nichts" },
-        { left: "Generelles Problem", right: "Dekubitusgefahr bei langer Bettlaegerigkeit" },
-        { left: "Individuelles Problem", right: "Patient hat Angst vor der OP wegen frueherer Erfahrung" },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 11: Flipcard — Ressourcen-Typen (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s2-11",
+    stepId: "le01-s2-tb4-03",
     phase: "s2",
     stepType: "flipcard",
-    bloomLevel: 2,
+    bloomLevel: 3,
     kompetenzbereich: "KB-I",
-    quellen: ["Q2 S.82"],
+    quellen: ["Q8 S.320-321"],
     track: "basis",
     modus: "entdecker",
-    lernziel: "ce01-le01-pflegeprozess",
-    imageUrl: "/images/le01/ressourcen-typen.svg",
-    imageAlt: "6 Karten mit verschiedenen Ressourcen-Typen",
+    lernziel: "ce01-le01-beobachtung",
+    themenblockPhase: "ERKLÄRUNG",
     contentC1: {
-      title: "Ressourcen in der Pflege",
-      body: "Ressourcen sind Faehigkeiten und Einfluesse, die dem Patienten helfen. Es gibt 6 Arten.",
-      glossarBegriffe: ["Ressource"],
+      title: "6 Wahrnehmungsfehler",
+      body: "Unsere Wahrnehmung trügt uns manchmal. Diese 6 Fehler solltest du kennen — um sie zu vermeiden.",
     },
     contentB1: {
-      title: "Staerken des Patienten",
-      body: "Ressourcen sind Staerken. Sie helfen dem Patienten. Es gibt 6 verschiedene Arten.",
-      glossarBegriffe: ["Ressource"],
+      title: "6 Fehler beim Beobachten",
+      body: "Manchmal sehen wir nicht richtig. Kenne diese 6 Fehler — dann passieren sie dir nicht.",
     },
     question: {
-      fragetext: "Tippe auf eine Karte, um das Beispiel zu sehen.",
+      fragetext: "Tippe auf jede Karte — welche Fehler gibt es?",
       flipcard: {
-        instruction: "Drehe die Karten um und entdecke die verschiedenen Ressourcen.",
+        instruction: "Entdecke die 6 Wahrnehmungsfehler:",
         cards: [
-          {
-            front: "Koerperliche Ressource",
-            back: "Der Patient kann sich noch selbst waschen und anziehen.",
-            backB1: "Der Patient kann sich selbst waschen und anziehen.",
-            category: "Ressource",
-          },
-          {
-            front: "Innerliche Ressource",
-            back: "Der Patient hat eine positive Einstellung und will wieder gesund werden.",
-            backB1: "Der Patient ist motiviert. Er will wieder gesund werden.",
-            category: "Ressource",
-          },
-          {
-            front: "Raeumliche Ressource",
-            back: "Die Wohnung ist barrierefrei umgebaut — Haltegriffe, breite Tueren, Duschsitz.",
-            backB1: "Die Wohnung hat Griffe und breite Tueren. Der Patient kann sich dort gut bewegen.",
-            category: "Ressource",
-          },
-          {
-            front: "Soziale Ressource",
-            back: "Die Tochter besucht taeglich und unterstuetzt bei Arztbesuchen und Einkauf.",
-            backB1: "Die Tochter kommt jeden Tag und hilft beim Einkaufen und bei Arztbesuchen.",
-            category: "Ressource",
-          },
-          {
-            front: "Oekonomische Ressource",
-            back: "Der Patient hat eine Pflegeversicherung und kann sich Hilfsmittel leisten.",
-            backB1: "Der Patient hat eine Versicherung. Er kann Hilfsmittel bezahlen.",
-            category: "Ressource",
-          },
-          {
-            front: "Spirituelle Ressource",
-            back: "Der Glaube gibt dem Patienten Kraft und Zuversicht in schweren Zeiten.",
-            backB1: "Der Glaube gibt dem Patienten Kraft und Hoffnung.",
-            category: "Ressource",
-          },
+          { front: "Rosenthal-Effekt", back: "Das Urteil anderer beeinflusst deine Beobachtung. Wenn die Kollegin sagt 'Der Patient ist schwierig', siehst du ihn auch so.", backB1: "Wenn jemand sagt 'Der Patient ist schwierig', denkst du das auch — obwohl du es selbst noch nicht erlebt hast." },
+          { front: "Halo-Effekt", back: "Eine auffällige Eigenschaft überblendet alle anderen. Ein unfreundlicher Patient wird als 'insgesamt schwierig' wahrgenommen.", backB1: "Eine Sache fällt auf und überschattet alles andere. Ein unfreundlicher Patient wird als 'komplett schwierig' gesehen." },
+          { front: "Kontrastfehler", back: "Patienten werden miteinander verglichen: Nach einem sehr kranken Patienten wirkt der nächste 'gesund' — obwohl er auch Hilfe braucht.", backB1: "Man vergleicht Patienten. Nach einem sehr kranken Patienten wirkt der nächste fast gesund." },
+          { front: "Stereotype", back: "Vorurteile über Gruppen beeinflussen die Beobachtung: 'Alte Menschen klagen immer' — dabei hat der Patient echte Schmerzen.", backB1: "Vorurteile beeinflussen, was man sieht: 'Alte klagen immer' — aber vielleicht hat er echte Schmerzen." },
+          { front: "Milde-Effekt", back: "Sympathische Patienten werden milder beurteilt. Man übersieht Probleme, weil man den Patienten mag.", backB1: "Wenn man einen Patienten mag, übersieht man manchmal Probleme." },
+          { front: "Zentrale Tendenz", back: "Man vermeidet extreme Bewertungen und wählt die Mitte — 'mittel' ist bequem, aber oft ungenau.", backB1: "Man wählt immer die Mitte, nie extrem. Das ist bequem, aber oft falsch." },
         ],
       },
     },
   },
 
   // =============================================================
-  // Step 12: Cloze — Pflegeziele (CHALLENGE)
+  // TB4: CHECKPOINT (Phase 3) — MC Fallbeispiel Rosenthal
   // =============================================================
   {
-    stepId: "le01-s2-12",
+    stepId: "le01-s2-tb4-04",
     phase: "s2",
-    stepType: "cloze",
-    bloomLevel: 2,
+    stepType: "mc",
+    bloomLevel: 3,
     kompetenzbereich: "KB-I",
-    quellen: ["Q2 S.82-83"],
+    quellen: ["Q8 S.320-321"],
     track: "basis",
     modus: "challenge",
-    lernziel: "ce01-le01-pflegeprozess",
+    lernziel: "ce01-le01-beobachtung",
+    themenblockPhase: "CHECKPOINT",
     contentC1: {
-      title: "Pflegeziele formulieren",
-      body: "Pflegeziele beschreiben, was der Patient erreichen soll. Sie folgen bestimmten Regeln.",
+      title: "Erkennst du den Fehler?",
+      body: "Ein Fallbeispiel: Welcher Wahrnehmungsfehler liegt hier vor?",
     },
     contentB1: {
-      title: "Ziele in der Pflege",
-      body: "Pflegeziele sagen, was der Patient schaffen soll. Es gibt Regeln dafuer.",
+      title: "Welcher Fehler?",
+      body: "Lies die Situation. Welcher Beobachtungsfehler passiert hier?",
     },
     question: {
-      fragetext: "Fuelle die Luecken aus.",
-      cloze: {
-        textWithBlanks: "Pflegeziele beschreiben den {{1}}-Zustand. Sie werden {{2}} formuliert und in Nah-, {{3}}- und Fernziele untergliedert.",
-        blanks: [
-          {
-            id: 1,
-            correct: "Soll",
-            distractors: ["Ist", "Ideal", "End"],
-          },
-          {
-            id: 2,
-            correct: "positiv",
-            distractors: ["negativ", "neutral", "knapp"],
-          },
-          {
-            id: 3,
-            correct: "Teil",
-            distractors: ["Zwischen", "Mittel", "Halb"],
-          },
+      fragetext: "Eine Kollegin sagt in der Übergabe: 'Herr Brenner ist schwierig — er klingelt ständig.' Yasemin geht zu Herrn Brenner und denkt sofort: 'Der ist sicher wieder schwierig.' Welcher Wahrnehmungsfehler liegt vor?",
+      optionen: [
+        { text: "Rosenthal-Effekt", isCorrect: true, explanation: "Richtig! Der Rosenthal-Effekt bedeutet, dass das Urteil anderer unsere Wahrnehmung beeinflusst. Die Kollegin hat Yasemin unbewusst beeinflusst — noch bevor sie sich selbst ein Bild machen konnte." },
+        { text: "Halo-Effekt", isCorrect: false, explanation: "Beim Halo-Effekt überblendet EINE eigene Beobachtung alle anderen. Hier hat Yasemin aber noch gar keine eigene Beobachtung gemacht — sie wurde von der Kollegin beeinflusst." },
+        { text: "Kontrastfehler", isCorrect: false, explanation: "Beim Kontrastfehler vergleicht man Patienten miteinander. Hier geht es aber um die Übernahme eines Urteils von der Kollegin." },
+        { text: "Milde-Effekt", isCorrect: false, explanation: "Beim Milde-Effekt beurteilt man sympathische Patienten zu positiv. Hier passiert das Gegenteil: Ein negatives Urteil wird übernommen." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB4: ANDERS_ERKLÄRT (Phase 4) — Reveal Alltags-Beispiele
+  // =============================================================
+  {
+    stepId: "le01-s2-tb4-05",
+    phase: "s2",
+    stepType: "reveal",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-I",
+    quellen: ["Q8 S.320-321"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-beobachtung",
+    themenblockPhase: "ANDERS_ERKLÄRT",
+    contentC1: {
+      title: "Wahrnehmungsfehler im Alltag",
+      body: "Die gleichen Fehler passieren auch außerhalb der Pflege — du kennst sie bestimmt! Tippe, um Beispiele zu sehen.",
+    },
+    contentB1: {
+      title: "Kennst du das?",
+      body: "Diese Fehler passieren auch im Alltag. Tippe auf jede Karte.",
+    },
+    question: {
+      fragetext: "Erkennst du die Fehler aus deinem Alltag?",
+      reveal: {
+        instruction: "Tippe auf jede Karte für ein Alltags-Beispiel:",
+        cards: [
+          { id: "r1", label: "Rosenthal-Effekt", content: "Deine Freundin sagt: 'Der Film ist schlecht.' Du schaust ihn an und findest ihn auch schlecht — weil du schon voreingenommen warst.", contentB1: "Jemand sagt: 'Der Film ist schlecht.' Dann findest du ihn auch schlecht.", icon: "ear" },
+          { id: "r2", label: "Halo-Effekt", content: "Eine Bewerberin lächelt freundlich im Vorstellungsgespräch — und du denkst automatisch, sie ist auch kompetent.", contentB1: "Jemand lächelt nett und du denkst: Die Person ist bestimmt auch klug.", icon: "sparkles" },
+          { id: "r3", label: "Kontrastfehler", content: "Nach einem chaotischen Mitbewohner wirkt der nächste wie ein Ordnungsfanatiker — obwohl er ganz normal ist.", contentB1: "Nach einem unordentlichen Mitbewohner wirkt der nächste super ordentlich.", icon: "scale" },
+          { id: "r4", label: "Stereotype", content: "'Teenager sind faul.' — Dann übersiehst du den Teenager, der jeden Tag 2 Stunden lernt.", contentB1: "'Teenager sind faul' — aber viele lernen sehr viel.", icon: "users" },
+          { id: "r5", label: "Milde-Effekt", content: "Dein bester Freund baut Mist — aber du sagst: 'War sicher nicht so gemeint.'", contentB1: "Wenn dein Freund etwas Falsches macht, sagst du: 'War nicht so gemeint.'", icon: "heart" },
+          { id: "r6", label: "Zentrale Tendenz", content: "Bei der Bewertung im Restaurant gibst du immer 3 von 5 Sternen — nie 1 und nie 5.", contentB1: "Du gibst immer 3 Sterne — nie ganz schlecht und nie ganz gut.", icon: "bar-chart" },
         ],
+        revealMode: "free",
       },
     },
   },
 
   // =============================================================
-  // Step 13: Dialog — Yasemin beobachtet Atmung (STORY)
+  // TB4: PATIENTEN_PERSPEKTIVE (Phase 7) — Herr Brenner
   // =============================================================
   {
-    stepId: "le01-s2-13",
+    stepId: "le01-s2-tb4-06",
     phase: "s2",
-    stepType: "dialog",
+    stepType: "text",
     bloomLevel: 2,
     kompetenzbereich: "KB-I",
     quellen: ["Q8 S.321-322"],
     track: "basis",
     modus: "story",
     lernziel: "ce01-le01-beobachtung",
+    themenblockPhase: "PATIENTEN_PERSPEKTIVE",
     contentC1: {
-      title: "Yasemin beobachtet genau",
-      body: "Auf Station entdeckt Yasemin etwas Wichtiges — bevor es der Monitor anzeigt.",
-      fallbezug: "Nachmittag. Yasemin steht am Bett eines Patienten und achtet auf seine Atmung.",
+      title: "Wenn jemand genau hinschaut",
+      body: "Herr Brenner, 82, erzählt von einer Situation, in der eine Pflegekraft etwas Wichtiges bemerkt hat:\n\n*\"Ich hatte Brustschmerzen, aber ich wollte nicht klingeln. Ich dachte: Die haben genug zu tun. Aber dann kam die Nachtschwester rein — nur zur Kontrolle — und sie hat sofort gesehen, dass etwas nicht stimmt.\n\n'Herr Brenner, Sie schwitzen und Sie halten sich die Brust. Seit wann ist das so?' hat sie gefragt.\n\nSie hat sofort den Arzt gerufen. Der Arzt hat gesagt: Gut, dass sie aufgepasst hat.\n\nSie hat mir nicht geglaubt, als ich sagte 'Alles gut'. Sie hat hingeschaut. Das hat mich gerettet.\"*",
+      fallbezug: "Yasemin versteht: Systematische Beobachtung bedeutet, dem Patienten nicht nur zu glauben — sondern genau hinzuschauen.",
     },
     contentB1: {
-      title: "Yasemin bemerkt etwas",
-      body: "Yasemin sieht etwas, bevor das Geraet piepst.",
-      fallbezug: "Am Nachmittag. Yasemin steht neben einem Patienten.",
+      title: "Eine Pflegerin sieht genau hin",
+      body: "Herr Brenner erzählt:\n\n*\"Ich hatte Brustschmerzen. Aber ich sagte nichts. Dann kam die Pflegerin. Sie sah: Ich schwitze und halte mir die Brust.\n\nSie hat sofort den Arzt gerufen. Der Arzt sagte: Gut, dass sie aufgepasst hat.\n\nSie hat genau hingeschaut — nicht nur gefragt.\"*",
+      fallbezug: "Yasemin lernt: Genau hinschauen ist manchmal wichtiger als Fragen.",
+    },
+  },
+
+  // =============================================================
+  // TB4: ANWENDUNG (Phase 9) — Branching Scenario
+  // =============================================================
+  {
+    stepId: "le01-s2-tb4-07",
+    phase: "s2",
+    stepType: "branching",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-I",
+    quellen: ["Q8 S.321-322"],
+    track: "basis",
+    modus: "praxis-sim",
+    lernziel: "ce01-le01-beobachtung",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Was tust du?",
+      body: "Ein Patient sagt: 'Mir geht's gut.' Aber seine Mimik sagt etwas anderes — blasses Gesicht, zusammengekniffene Lippen, unruhige Hände.",
+      fallbezug: "Yasemin steht vor der Entscheidung: Dem Patienten glauben oder der eigenen Beobachtung vertrauen?",
+    },
+    contentB1: {
+      title: "Was machst du?",
+      body: "Der Patient sagt: 'Mir geht's gut.' Aber sein Gesicht ist blass und er presst die Lippen zusammen.",
+      fallbezug: "Yasemin muss entscheiden: Was zählt mehr — was der Patient sagt oder was sie sieht?",
     },
     question: {
-      fragetext: "Was passiert auf Station?",
-      patientName: "Yasemin Demirci",
-      dialogPhases: [
-        {
-          context: "Yasemin bemerkt, dass der Patient flacher atmet als vor einer Stunde. Der Monitor zeigt noch normale Werte.",
-          contextB1: "Yasemin sieht: Der Patient atmet flacher als vorher. Das Geraet zeigt noch normale Werte.",
-          speaker: "Yasemin",
-          options: [
-            {
-              text: "Die Atmung hat sich veraendert — ich sage der Praxisanleiterin Bescheid, auch wenn der Monitor nichts zeigt.",
-              textB1: "Die Atmung hat sich veraendert. Ich sage der Praxisanleiterin Bescheid.",
-              patientResponse: "Gut beobachtet, Yasemin! Beobachtung ist unsere wichtigste Kompetenz. Geraete zeigen Zahlen — du siehst den ganzen Menschen.",
-              patientResponseB1: "Sehr gut beobachtet! Beobachten ist die wichtigste Faehigkeit in der Pflege. Du siehst mehr als das Geraet.",
-              score: 3,
-              feedback: "Systematische Beobachtung steht im Zentrum pflegerischen Handelns. Keine andere Berufsgruppe ist so nah am Patienten.",
-              feedbackB1: "Genau richtig! Pflegende beobachten den Patienten den ganzen Tag. Das kann kein Geraet ersetzen.",
-            },
-            {
-              text: "Der Monitor zeigt normale Werte. Wahrscheinlich ist alles in Ordnung.",
-              textB1: "Das Geraet zeigt normale Werte. Dann ist alles okay.",
-              patientResponse: "Vorsicht! Geraete erkennen Veraenderungen oft spaeter als geschulte Pflegende. Verlass dich nie nur auf Technik.",
-              patientResponseB1: "Vorsicht! Geraete bemerken Veraenderungen oft spaeter als Pflegende.",
-              score: 0,
-              feedback: "Geraete ergaenzen die Beobachtung, ersetzen sie aber nicht. Pflegende erkennen Veraenderungen oft frueher.",
-              feedbackB1: "Geraete helfen, aber sie ersetzen nicht die Beobachtung. Pflegende sehen oft frueher, wenn etwas nicht stimmt.",
-            },
-          ],
-        },
+      fragetext: "Der Patient sagt 'Mir geht's gut', aber seine Mimik zeigt Schmerzen. Wie reagierst du?",
+      branchingOptions: [
+        { text: "Ich frage gezielt nach: 'Ich sehe, dass Sie die Lippen zusammenpressen. Haben Sie Schmerzen?'", feedback: "Sehr gut! Du verbindest Beobachtung mit gezieltem Nachfragen. Du nimmst den Patienten ernst, ohne seine Aussage zu ignorieren — und gibst ihm die Chance, ehrlich zu antworten.", feedbackB1: "Super! Du sagst dem Patienten, was du siehst, und fragst direkt nach. So kann er ehrlich antworten.", isCorrect: true },
+        { text: "Ich akzeptiere seine Aussage — er wird schon Bescheid sagen, wenn etwas ist.", feedback: "Vorsicht! Viele Patienten wollen nicht zur Last fallen oder wollen 'tapfer' sein. Sich nur auf die verbale Aussage zu verlassen, kann gefährlich sein — die systematische Beobachtung gibt oft ehrlichere Hinweise.", feedbackB1: "Vorsicht! Viele Patienten sagen nicht, wenn sie Schmerzen haben. Besser: genau hinschauen und nachfragen.", isCorrect: false },
+        { text: "Ich messe sofort den Blutdruck und die Temperatur, ohne weiter zu fragen.", feedback: "Vitalzeichen zu messen ist wichtig — aber ohne den Patienten einzubeziehen, fehlt der Kontext. Besser: Erst beobachten, dann gezielt fragen, dann messen. So bekommst du ein vollständiges Bild.", feedbackB1: "Messen ist gut, aber frage auch den Patienten! Erst beobachten, dann fragen, dann messen.", isCorrect: false },
       ],
     },
   },
 
   // =============================================================
-  // Step 14: Text — Systematische Beobachtung (ENTDECKER)
+  // TB4: REFLEXION (Phase 10) — Eigener Wahrnehmungsfehler
   // =============================================================
   {
-    stepId: "le01-s2-14",
+    stepId: "le01-s2-tb4-08",
     phase: "s2",
-    stepType: "text",
+    stepType: "reflection",
     bloomLevel: 2,
     kompetenzbereich: "KB-I",
-    quellen: ["Q8 S.321-322"],
-    track: "basis",
-    modus: "entdecker",
+    quellen: [],
+    track: "vertiefung",
+    modus: "schreibtisch",
     lernziel: "ce01-le01-beobachtung",
+    themenblockPhase: "REFLEXION",
     contentC1: {
-      title: "Beobachtung als Kernkompetenz",
-      body: "Systematische Patientenbeobachtung steht im Zentrum pflegerischen Handelns. Sie ist Grundlage fuer den Pflegeprozess und die aerztliche Therapie. Keine andere Berufsgruppe verbringt so viel Zeit mit dem Pflegeempfaenger.",
+      title: "Welchen Fehler machst du selbst?",
+      body: "Du hast 6 Wahrnehmungsfehler kennengelernt. Jetzt bist du dran — welchen Fehler könntest du selbst machen?",
     },
     contentB1: {
-      title: "Beobachten ist die wichtigste Aufgabe",
-      body: "Pflegende beobachten Patienten den ganzen Tag. Das ist die Grundlage fuer gute Pflege und fuer die Behandlung durch den Arzt. Keine andere Berufsgruppe ist so nah am Patienten.",
-    },
-  },
-
-  // =============================================================
-  // Step 15: Hotspot — Patientenzimmer beobachten (CHALLENGE)
-  // =============================================================
-  {
-    stepId: "le01-s2-15",
-    phase: "s2",
-    stepType: "hotspot",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q8 S.321-322"],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-beobachtung",
-    imageUrl: "/images/le01/patientenzimmer.svg",
-    imageAlt: "Illustration eines Patientenzimmers mit Patient im Bett",
-    contentC1: {
-      title: "Was beobachtest du?",
-      body: "Du betrittst ein Patientenzimmer. Trainiere deine Beobachtungsfaehigkeit.",
-    },
-    contentB1: {
-      title: "Was siehst du?",
-      body: "Du gehst in ein Patientenzimmer. Was faellt dir auf?",
+      title: "Was ist dein Fehler?",
+      body: "Du kennst jetzt 6 Beobachtungsfehler. Welchen könntest du selbst machen?",
     },
     question: {
-      fragetext: "Tippe auf die Bereiche, die du als Pflegekraft beobachten wuerdest.",
-      hotspot: {
-        imageUrl: "/images/le01/patientenzimmer.svg",
-        imageAlt: "Patientenzimmer-Szene",
-        instruction: "Finde die 4 wichtigen Beobachtungsbereiche.",
-        zones: [
-          { id: "gesicht", x: 35, y: 20, radius: 10, label: "Gesichtsausdruck: angespannt, schmerzverzerrt?" },
-          { id: "koerper", x: 40, y: 50, radius: 12, label: "Koerperhaltung: Schonhaltung, Beweglichkeit?" },
-          { id: "infusion", x: 70, y: 30, radius: 8, label: "Infusionsflasche: Fuellstand, Tropfgeschwindigkeit?" },
-          { id: "bett", x: 50, y: 70, radius: 10, label: "Bettposition: Kopfteil erhoeht, Bettgitter?" },
-        ],
-      },
+      fragetext: "Welchen der 6 Wahrnehmungsfehler könntest du dir am ehesten vorstellen, selbst zu machen? Warum?",
+      satzanfaenge: [
+        "Ich könnte mir vorstellen, dass ich...",
+        "Das liegt daran, dass...",
+        "Um das zu vermeiden, könnte ich...",
+      ],
+      minWords: 20,
     },
   },
 
   // =============================================================
-  // Step 16: Comparison — Wahrnehmungsfehler (ENTDECKER)
+  // Session-Abschluss: Crossword
   // =============================================================
   {
-    stepId: "le01-s2-16",
-    phase: "s2",
-    stepType: "comparison",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q8 S.320-321"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-beobachtung",
-    imageUrl: "/images/le01/wahrnehmungsfehler.svg",
-    imageAlt: "Vergleichstabelle der haefigsten Wahrnehmungsfehler in der Pflege",
-    contentC1: {
-      title: "Wahrnehmungsfehler in der Beobachtung",
-      body: "Unsere Wahrnehmung ist nicht objektiv. Bestimmte Fehler koennen die Beobachtung verfaelschen.",
-    },
-    contentB1: {
-      title: "Fehler beim Beobachten",
-      body: "Manchmal sehen wir Dinge falsch. Diese Fehler passieren oft.",
-    },
-    question: {
-      fragetext: "Vergleiche die Wahrnehmungsfehler und ihre Beispiele.",
-      comparison: {
-        instruction: "Schau dir die verschiedenen Fehler an.",
-        columns: [
-          { label: "Fehler", icon: "alert-triangle" },
-          { label: "Bedeutung", icon: "info" },
-          { label: "Pflege-Beispiel", icon: "stethoscope" },
-        ],
-        rows: [
-          {
-            criterion: "Rosenthal-Effekt",
-            values: ["Das Urteil anderer beeinflusst die eigene Beobachtung", "'Herr Mueller ist schwierig' — und du erwartest Probleme"],
-            valuesB1: ["Man glaubt, was andere sagen", "Kollegin sagt: 'Der Patient ist schwierig.' Du denkst das auch."],
-            highlight: 0,
-          },
-          {
-            criterion: "Halo-Effekt",
-            values: ["Eine Eigenschaft ueberblendet alle anderen", "Ein freundlicher Patient wird als 'schmerzfrei' eingeschaetzt"],
-            valuesB1: ["Ein Merkmal faerbt alles ein", "Der Patient laechelt. Du denkst: Ihm geht es gut."],
-          },
-          {
-            criterion: "Kontrastfehler",
-            values: ["Vergleich mit vorherigem Patienten verfaelscht", "Nach einem schwerkranken Patienten wirkt jeder 'gesund'"],
-            valuesB1: ["Man vergleicht mit dem letzten Patienten", "Nach einem sehr kranken Patienten denkt man: Dem hier geht es gut."],
-          },
-          {
-            criterion: "Stereotype",
-            values: ["Vorurteile ueber Gruppen beeinflussen Beobachtung", "'Aeltere Patienten klagen immer' — Schmerz wird nicht ernst genommen"],
-            valuesB1: ["Vorurteile beeinflussen das Sehen", "'Alte Patienten klagen immer.' Man nimmt Schmerz nicht ernst."],
-            highlight: 0,
-          },
-          {
-            criterion: "Milde-Effekt",
-            values: ["Sympathische Patienten werden positiver eingeschaetzt", "Netter Patient bekommt bessere Beurteilung als unsympathischer"],
-            valuesB1: ["Nette Patienten bewertet man besser", "Netter Patient bekommt eine bessere Bewertung."],
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 17: Swipe — Wahrnehmungsfehler erkennen (CHALLENGE)
-  // =============================================================
-  {
-    stepId: "le01-s2-17",
-    phase: "s2",
-    stepType: "swipe",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q8 S.320-321"],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-beobachtung",
-    contentC1: {
-      title: "Wahrnehmungsfehler oder korrekte Beobachtung?",
-      body: "In der Pflege passieren Wahrnehmungsfehler schnell. Erkennst du sie?",
-    },
-    contentB1: {
-      title: "Fehler oder richtig beobachtet?",
-      body: "Manchmal beobachtet man falsch. Erkennst du die Fehler?",
-    },
-    question: {
-      fragetext: "Wische rechts fuer 'Wahrnehmungsfehler' und links fuer 'korrekte Beobachtung'.",
-      swipe: {
-        instruction: "Ist das ein Wahrnehmungsfehler? Wische rechts (ja) oder links (nein).",
-        cards: [
-          {
-            statement: "Die Kollegin sagt: 'Herr Mueller ist immer schwierig.' Du gehst mit Vorbehalten ins Zimmer.",
-            statementB1: "Die Kollegin sagt: 'Herr Mueller ist schwierig.' Du denkst das auch, bevor du ihn siehst.",
-            isCorrect: true,
-            explanation: "Rosenthal-Effekt: Das Urteil der Kollegin beeinflusst deine eigene Beobachtung.",
-            explanationB1: "Das ist der Rosenthal-Effekt. Du glaubst der Kollegin und beobachtest nicht neutral.",
-          },
-          {
-            statement: "Du misst den Blutdruck und dokumentierst den Wert ohne Kommentar.",
-            statementB1: "Du misst den Blutdruck und schreibst den Wert auf.",
-            isCorrect: false,
-            explanation: "Korrekte Beobachtung: Objektive Messung wird dokumentiert, ohne subjektive Bewertung.",
-            explanationB1: "Richtig beobachtet! Du misst und schreibst auf. Das ist neutral.",
-          },
-          {
-            statement: "Ein Patient laechelt immer. Du denkst: 'Dem geht es gut' — ohne Schmerzen zu erfragen.",
-            statementB1: "Ein Patient laechelt. Du denkst: Er hat keine Schmerzen.",
-            isCorrect: true,
-            explanation: "Halo-Effekt: Die positive Eigenschaft (freundlich) ueberblendet moegliche Probleme.",
-            explanationB1: "Das ist der Halo-Effekt. Das Laecheln laesst dich denken, alles ist gut.",
-          },
-          {
-            statement: "Du fragst den Patienten nach seinen Schmerzen und beobachtest dabei seine Mimik.",
-            statementB1: "Du fragst den Patienten nach Schmerzen und schaust dabei auf sein Gesicht.",
-            isCorrect: false,
-            explanation: "Korrekte Beobachtung: Verbale Befragung kombiniert mit nonverbaler Beobachtung.",
-            explanationB1: "Richtig! Du fragst UND beobachtest. So bekommst du ein gutes Bild.",
-          },
-          {
-            statement: "Nach einem schwerkranken Patienten denkst du: 'Dem naechsten geht es ja richtig gut.'",
-            statementB1: "Nach einem sehr kranken Patienten denkst du: Der naechste Patient ist gesund.",
-            isCorrect: true,
-            explanation: "Kontrastfehler: Der Vergleich mit dem vorherigen Patienten verfaelscht die Einschaetzung.",
-            explanationB1: "Das ist ein Kontrastfehler. Du vergleichst mit dem letzten Patienten.",
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 18: Crossword — Pflegeprozess-Begriffe (PUZZLE, vertiefung)
-  // =============================================================
-  {
-    stepId: "le01-s2-18",
+    stepId: "le01-s2-bk-02",
     phase: "s2",
     stepType: "crossword",
-    bloomLevel: 2,
+    bloomLevel: 1,
     kompetenzbereich: "KB-I",
-    quellen: ["Q2 S.78-83", "Q8 S.320-322"],
+    quellen: [],
     track: "vertiefung",
     modus: "puzzle",
     lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
-      title: "Kreuzwortraetsel: Pflegeprozess",
-      body: "Teste dein Wissen spielerisch. Alle Begriffe stammen aus dieser Session.",
+      title: "Kreuzworträtsel",
+      body: "Teste dein Wissen spielerisch — finde die 7 Begriffe!",
     },
     contentB1: {
-      title: "Kreuzwortraetsel",
-      body: "Loese das Raetsel. Alle Woerter kennst du schon.",
+      title: "Kreuzworträtsel",
+      body: "Finde 7 Wörter! Lies die Hinweise und schreibe das Wort.",
     },
     question: {
-      fragetext: "Fuelle das Kreuzwortraetsel aus.",
+      fragetext: "Finde die 7 Begriffe:",
       crosswordWords: [
-        { word: "PFLEGEANAMNESE", clue: "Strukturierte Datenerhebung beim Aufnahmegespraech" },
+        { word: "PFLEGEANAMNESE", clue: "Strukturierte Datenerhebung beim Aufnahmegespräch" },
         { word: "EVALUATION", clue: "Letzter Schritt im Pflegeprozess: Wirkung beurteilen" },
-        { word: "RESSOURCE", clue: "Faehigkeit oder Staerke, die bei der Problemloesung hilft" },
-        { word: "HALO", clue: "Wahrnehmungsfehler: Eine Eigenschaft ueberblendet alles" },
-        { word: "PFLEGEZIEL", clue: "Beschreibt den Soll-Zustand des Patienten" },
-        { word: "BEOBACHTUNG", clue: "Kernkompetenz der Pflege: Patienten systematisch wahrnehmen" },
+        { word: "RESSOURCE", clue: "Fähigkeiten und Stärken des Pflegeempfängers" },
+        { word: "ROSENTHAL", clue: "Wahrnehmungsfehler: Urteil anderer beeinflusst eigene Beobachtung" },
+        { word: "HALO", clue: "Wahrnehmungsfehler: Eine Eigenschaft überblendet alle anderen" },
+        { word: "KREISLAUF", clue: "Der Pflegeprozess ist ein ___ — nach Schritt 6 beginnt er neu" },
+        { word: "BEOBACHTUNG", clue: "Steht im Zentrum jeden pflegerischen Handelns" },
       ],
     },
   },
 
   // =============================================================
-  // Step 19: Timer — Speed-Fragen (CHALLENGE, vertiefung)
+  // Session-Bookend: Summary
   // =============================================================
   {
-    stepId: "le01-s2-19",
-    phase: "s2",
-    stepType: "timer",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q2 S.78-83"],
-    track: "vertiefung",
-    modus: "challenge",
-    lernziel: "ce01-le01-pflegeprozess",
-    contentC1: {
-      title: "Speed-Runde: Pflegeprozess",
-      body: "4 schnelle Fragen. Du hast 15 Sekunden pro Frage.",
-    },
-    contentB1: {
-      title: "Schnelle Fragen",
-      body: "4 Fragen. Du hast 15 Sekunden fuer jede Frage.",
-    },
-    question: {
-      fragetext: "Beantworte die Fragen so schnell wie moeglich.",
-      timeLimitSeconds: 15,
-      timerQuestions: [
-        {
-          question: "Wie viele Schritte hat der Pflegeprozess nach Fiechter und Meier?",
-          options: ["4", "6", "8"],
-          correctIndex: 1,
-        },
-        {
-          question: "Welcher Schritt kommt nach der Informationssammlung?",
-          options: ["Massnahmen planen", "Probleme erkennen", "Evaluation"],
-          correctIndex: 1,
-        },
-        {
-          question: "Ein Patient sagt 'alles gut', isst aber nichts. Welcher Problemtyp?",
-          options: ["Aktuell", "Potenziell", "Verdeckt"],
-          correctIndex: 2,
-        },
-        {
-          question: "Pflegeziele werden wie formuliert?",
-          options: ["Negativ", "Positiv", "Neutral"],
-          correctIndex: 1,
-        },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 20: Freetext — Jonas-Fall (SCHREIBTISCH, vertiefung)
-  // =============================================================
-  {
-    stepId: "le01-s2-20",
-    phase: "s2",
-    stepType: "freetext",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q2 S.78-83", "Q8 S.321"],
-    track: "vertiefung",
-    modus: "schreibtisch",
-    lernziel: "ce01-le01-pflegeprozess",
-    contentC1: {
-      title: "Pflegeprozess anwenden",
-      body: "Wende dein Wissen auf einen konkreten Fall an.",
-    },
-    contentB1: {
-      title: "Pflegeprozess ausprobieren",
-      body: "Nutze dein Wissen fuer einen Fall.",
-    },
-    question: {
-      fragetext: "Jonas (8 Jahre) sagt nach seiner Blinddarm-OP: 'Mir gehts gut.' Aber sein Gesicht ist blass und er presst die Lippen zusammen. Welche 2 Schritte des Pflegeprozesses wendest du zuerst an?",
-      musterantwort: "Schritt 1 (Informationssammlung): Beobachtung der Mimik — blasses Gesicht und gepresste Lippen deuten auf Schmerzen. Altersgerechtes Schmerzassessment durchfuehren. Schritt 2 (Probleme erkennen): Verdecktes Pflegeproblem — Schmerzen, die der Patient nicht benennt.",
-      bewertungskriterien: [
-        "Beobachtung korrekt gedeutet (Mimik als Schmerzzeichen)",
-        "Mindestens 2 Schritte des Pflegeprozesses benannt",
-        "Erkennung als verdecktes Problem",
-      ],
-      satzanfaengeB1: [
-        "Zuerst beobachte ich...",
-        "Dann erkenne ich das Problem...",
-        "Der erste Schritt ist...",
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 21: TrueFalse — Beobachtung und Pflegeprozess (CHALLENGE)
-  // =============================================================
-  {
-    stepId: "le01-s2-21",
-    phase: "s2",
-    stepType: "truefalse",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q2 S.78-83", "Q8 S.321"],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-beobachtung",
-    contentC1: {
-      title: "Richtig oder falsch?",
-      body: "Teste dein Wissen ueber Pflegeprozess und Beobachtung.",
-    },
-    contentB1: {
-      title: "Richtig oder falsch?",
-      body: "Welche Aussagen stimmen?",
-    },
-    question: {
-      fragetext: "Welche Aussagen sind richtig?",
-      trueFalseCards: [
-        {
-          statement: "Die Evaluation ist der letzte Schritt im Pflegeprozess.",
-          isTrue: true,
-          explanation: "Schritt 6 nach Fiechter und Meier: Die Wirkung der Massnahmen beurteilen und pruefen, ob die Ziele erreicht wurden.",
-        },
-        {
-          statement: "Pflegeziele werden nur von der Pflegekraft festgelegt.",
-          isTrue: false,
-          explanation: "Pflegeziele werden gemeinsam mit dem Pflegeempfaenger festgelegt — nicht allein durch die Pflegekraft.",
-        },
-        {
-          statement: "Der Pflegeprozess ist ein einmaliger Ablauf.",
-          isTrue: false,
-          explanation: "Der Pflegeprozess ist ein Kreislauf. Nach der Evaluation beginnt er von vorn.",
-        },
-        {
-          statement: "Beobachtung ist Grundlage fuer den Pflegeprozess und die aerztliche Therapie.",
-          isTrue: true,
-          explanation: "Pflegende beobachten am naechsten am Patienten. Ihre Beobachtungen sind Grundlage fuer alle Entscheidungen.",
-        },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 22: Summary — Rueckblick Session 2 (CHECKPOINT)
-  // =============================================================
-  {
-    stepId: "le01-s2-22",
+    stepId: "le01-s2-bk-03",
     phase: "s2",
     stepType: "summary",
     bloomLevel: 2,
@@ -1050,24 +734,24 @@ export const STEPS_S2: ContentStep[] = [
     track: "basis",
     modus: "checkpoint",
     lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "REFLEXION",
     contentC1: {
-      title: "Das hast du gelernt",
-      body: "Session 2 ist geschafft. Hier sind die wichtigsten Erkenntnisse.",
+      title: "Das hast du heute gelernt",
+      body: "Session 2 ist geschafft! Hier sind deine 4 wichtigsten Erkenntnisse.",
     },
     contentB1: {
-      title: "Das hast du gelernt",
-      body: "Session 2 ist fertig! Hier ist eine Zusammenfassung.",
+      title: "Zusammenfassung",
+      body: "Das hast du heute gelernt. Gut gemacht!",
     },
     question: {
-      fragetext: "Deine Kernerkenntnisse aus Session 2:",
+      fragetext: "Deine 4 Kernaussagen aus Session 2:",
       summary: {
-        reflexionRueckbezug: "Erinnerst du dich an den Swipe am Anfang? Du hast geraten, welche Schritte zum Pflegeprozess gehoeren. Jetzt kennst du alle 6.",
+        reflexionRueckbezug: "Yasemin hat heute gelernt, wie Pflege systematisch geplant wird — und dass gutes Beobachten eine Schlüsselkompetenz ist.",
         kernaussagen: [
-          "Der Pflegeprozess ist ein Kreislauf mit 6 Schritten nach Fiechter und Meier.",
-          "Es gibt 5 Arten von Pflegeproblemen — auch verdeckte, die nur durch Beobachtung erkannt werden.",
-          "Ressourcen sind genauso wichtig wie Probleme: koerperlich, innerlich, raeumlich, sozial, oekonomisch, spirituell.",
-          "Beobachtung ist die Kernkompetenz der Pflege — keine andere Berufsgruppe ist so nah am Patienten.",
-          "Wahrnehmungsfehler wie Rosenthal- und Halo-Effekt koennen die Beobachtung verfaelschen.",
+          "**Der Pflegeprozess** nach Fiechter/Meier hat 6 Schritte: Informationssammlung, Probleme/Ressourcen erkennen, Ziele festlegen, Maßnahmen planen, durchführen und evaluieren.",
+          "**Die Pflegeanamnese** ist eine strukturierte Datenerhebung — empathisch, max. 30 Minuten, und die Grundlage für alles, was danach kommt.",
+          "**Systematische Beobachtung** nutzt alle Sinne, ist geplant und dokumentiert. Keine andere Berufsgruppe ist so nah am Patienten.",
+          "**6 Wahrnehmungsfehler** können die Beobachtung verfälschen: Rosenthal, Halo, Kontrast, Stereotype, Milde und zentrale Tendenz. Wer sie kennt, kann sie vermeiden.",
         ],
       },
     },

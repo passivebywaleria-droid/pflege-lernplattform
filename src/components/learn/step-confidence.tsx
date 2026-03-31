@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { ConfidenceCard, GlossarEntry } from "../../../content/ce-05/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
+import { HandDrawnIcon } from "@/components/ui/hand-drawn-icon";
 
 interface StepConfidenceProps {
   title: string;
@@ -214,7 +215,7 @@ export function StepConfidence({
                     >
                       {level === "unsicher" && "🤔"}
                       {level === "mittel" && "😊"}
-                      {level === "sicher" && "💪"}
+                      {level === "sicher" && <HandDrawnIcon name="muscle" size={16} color="#30D158" />}
                       <br />
                       <span className="text-xs">{CONFIDENCE_LABELS[level]}</span>
                     </button>

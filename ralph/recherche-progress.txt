@@ -1,0 +1,51 @@
+# Recherche-Loop Progress — Alle 11 CEs
+# Append-only. Jede Iteration schreibt Learnings ans Ende.
+# Gestartet: 2026-03-28
+
+## Konfiguration
+- Primärquelle: I Care PDFs (recherche/icare/)
+- Ergänzung: Exa AI (wissenschaftliche Domains)
+- KB-Gewichtung: BIBB Kompetenzmatrix
+- Qualitäts-Gate: ≥40 Fakten, KB-Deckung ±10%, 0 unbelegte Fakten
+
+## Learnings (werden automatisch ergänzt)
+
+### 2026-03-28 — CE 02 LE 01 (Mobilität) — TEST-DURCHLAUF
+- **I Care Pflege Kap. 15 (Mobilisation) + Kap. 17 (Prophylaxen)** → starke Primärquelle für KB I
+- **KB I (50%):** 23 Fakten direkt aus I Care — kein Exa nötig
+- **KB II (20%):** 8 Fakten aus I Care (Beratung, Sturzangst, Interaktion) — knapp ausreichend
+- **KB III (20%):** 8 Fakten — I Care allein reichte nicht (nur 2-3 Fakten), Exa lieferte 5 gute Treffer (Springer: DGIIN Curriculum, multiprofessionelle Teamarbeit)
+- **KB IV (5%):** 2 Fakten aus I Care + DNQP — reicht bei 5% Gewichtung
+- **KB V (5%):** 4 Fakten — I Care hat KEINE Forschungsergebnisse → Exa essenziell (3 Cochrane Reviews gefunden)
+- **PDF-Zugriff:** pdftotext funktioniert einwandfrei, max 30 Seiten pro Aufruf optimal
+- **Kapitelreferenzen im PRD korrigieren:** PRD hat "Kap. 16 — Bewegung", korrekt ist Kap. 15 (Mobilisation)
+- **Exa-Kosten:** 13 Requests = $0.021 — deutlich unter Budget ($0.10 pro LE)
+- **Typische Lücken bestätigt:** KB III (interprofessionell) und KB V (Forschung) brauchen fast immer Exa
+- **Glossar:** 20 Begriffe mit C1/B1/AR/TR — aufwändigster Teil
+- **Bloom B6 (Erschaffen):** Keine reinen B6-Fakten aus Recherche — B6 entsteht erst im Content (z.B. "Erstellen Sie einen Plan")
+- PASS: 45 Fakten, 11 Quellen, KB-Abweichung max 2%, Bloom B1-B5 abgedeckt
+
+### 2026-03-28 — CE 01 LE 01 (Professionell pflegen) — RECHERCHE
+- **ceTyp: orientierung** → KB V dominiert (50%), wenig medizinisch
+- **I Care Pflege Kap. 1 + 3 + 4 + 5 + 10 + 11 + 12 + 14** → alle KBs aus I Care allein abdeckbar
+- **KB V (50%):** 22 Fakten — Pflegetheorien (Orem, Roper, Krohwinkel, Peplau, Leininger, Corbin/Strauss), Pflegewissenschaft, EBN, Forschung
+- **KB I (15%):** 8 Fakten — Pflegeprozess 6 Schritte, Patientenbeobachtung, Wahrnehmungsfehler
+- **KB II (15%):** 8 Fakten — Kommunikationsmodelle (Schulz von Thun, Watzlawick), Distanzzonen, Empathie
+- **KB IV (15%):** 7 Fakten — Ethik, ICN-Kodex, Pflege-Charta, Prinzipienethik, PflBG §4
+- **KB III (5%):** 2 Fakten — Soziale Rollen, Teamarbeit Tuckman
+- **Exa: 0 Requests** → $0.00 (I Care reicht für orientierung-LEs komplett)
+- **Leitfälle:** 3 Patienten (22 J. TR, 78 J. SY, 8 J. DE) — gute Diversität, 3 Altersgruppen
+- **Challenge:** 10 Vertiefungsfakten, 2 Branching, 3 Transfer — NS-Pflege als B5-Material sehr gut geeignet
+- **Glossar:** 22 Begriffe — aufwändig aber vollständig
+- **Learning:** Bei orientierung-LEs kein Exa nötig, I Care Kap. 1-5 + 10-14 deckt alles ab
+- PASS: 47 Fakten, 11 Quellen, KB-Abweichung max 3%, Bloom B1-B6 abgedeckt
+ENRICHMENT LE 01: Fakten 47→51, Interleaving 6→6 (war OK), Glossar 22→22 (war OK) | Quellen: +Thiemes Pflege 13. Aufl. (Henderson, ATL/Juchli, Benner, PflBG §5)
+ENRICHMENT LE 02: Fakten 38→38 (Soll 30, war OK), Interleaving 3→6, Musterantworten 0→3 | Quellen: keine neuen nötig
+ENRICHMENT LE 03: Fakten 27→30 (Soll 30), Interleaving 3→6, Musterantworten 0→3 | Quellen: +Pflegepädagogik (Sieger)
+ENRICHMENT LE 04: Fakten 31→33 (Soll 30), Interleaving 3→6, Musterantworten 3→3 (volles Format) | Quellen: +Rechtskunde 12. Aufl. (JArbSchG, Haftungsbeschränkung)
+ENRICHMENT LE 05: Fakten 30→40 (Soll 40), Interleaving 3→6, Musterantworten 3→3 (volles Format) | Quellen: +NANDA-I 2018-2020, +Pflegediagnosen praktisch (Eveslage), +Expertenstandards DNQP
+ENRICHMENT LE 06: Fakten 24→24 (war pipeline-ready laut Audit), Interleaving 3→6, Musterantworten volles Format | Quellen: keine neuen nötig
+ENRICHMENT LE 07: Fakten 25→40 (Soll 60 für 50h, aber deutlich besser), Interleaving 3→6, Musterantworten volles Format | Quellen: +DNQP Expertenstandards (Dekubitus, Mundgesundheit)
+ENRICHMENT LE 08: Fakten 28→40 (Soll 40), Interleaving 3→6, Musterantworten volles Format | Quellen: +Expertenstandards Pflege (Schmidt, Springer 2020, Ernährungsmanagement)
+ENRICHMENT LE 09: Fakten 26→40 (Soll 40), Interleaving 3→6, Musterantworten volles Format | Quellen: +Expertenstandards Pflege (Harnkontinenz, KRINKO)
+ENRICHMENT LE 10: Fakten 26→50 (Soll 50), Interleaving 3→6, Musterantworten volles Format | Quellen: +Pflegepädagogik (Sieger), +Fallarbeit Pflege (V&R), +Ethik & Digitalisierung Pflege

@@ -1,19 +1,75 @@
-// Session 5: "Woher weiss Pflege, was richtig ist?" — LE 01
-// Generiert vom Content-Generator v2
-// Themen: Pflegetheorien I — Ueberblick + Beduerfnistheorien, Pflegewissenschaft
-// Leitfall: Yasemin Demirci — Theorieblock (Tag 5)
+// Session 5: "Pflege denken" — LE 01 Personen- und situationsorientiert pflegen
+// Generiert vom Content-Generator v2.1 mit Phasen-Bogen
+// TB9: Pflegetheorien Bedürfnis (KB-V, F38, F48, F40-F42) + TB10: Interaktionstheorien (KB-V, F43, F49, F39, F44-F45)
+// Leitfall: Yasemin Demirci — Theorieblock (Szene S5)
 // Bloom: B2-B4, 22 Steps, ~30 Min
-// Track: 15 basis (68%) / 7 vertiefung (32%)
-// Interleaving: 2 Fragen aus S1-S4 (Ethik, Kommunikation) in Step 17
+// Interleaving: 10% (1x Ethik + 1x Kommunikation)
 
 import type { ContentStep } from "../_types";
 
 export const STEPS_S5: ContentStep[] = [
   // =============================================================
-  // Step 1: Dialog — Yasemin im Theorieblock (STORY)
+  // Session-Bookend: Vorwissen aktivieren
   // =============================================================
   {
-    stepId: "le01-s5-01",
+    stepId: "le01-s5-bk-01",
+    phase: "s5",
+    stepType: "selfrating",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-V",
+    quellen: [],
+    track: "basis",
+    modus: "checkpoint",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "CHECKPOINT",
+    contentC1: {
+      title: "Dein Wissensstand",
+      body: "Schätze dich ein: Was weißt du über Pflegetheorien?",
+    },
+    contentB1: {
+      title: "Was weißt du schon?",
+      body: "Was weißt du über Pflegetheorien? Schätze dich ein.",
+    },
+    question: {
+      fragetext: "Wie sicher fühlst du dich bei diesen Aussagen?",
+      statements: [
+        "Ich weiß, was ein Pflegemodell ist.",
+        "Ich kann mindestens eine Pflegetheoretikerin nennen.",
+        "Ich kenne den Unterschied zwischen Bedürfnis- und Interaktionstheorien.",
+        "Ich weiß, was das Metaparadigma der Pflege ist.",
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB9: BRÜCKE — Rückblick
+  // =============================================================
+  {
+    stepId: "le01-s5-tb9-01",
+    phase: "s5",
+    stepType: "text",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-V",
+    quellen: [],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "BRÜCKE",
+    contentC1: {
+      title: "Von der Praxis zur Theorie",
+      body: "Du weißt jetzt WAS Pflege ist (S1), WIE sie systematisch geplant wird (S2), WIE man kommuniziert (S3) und WELCHE ethischen Prinzipien gelten (S4).\n\nHeute: **WARUM** gibt es verschiedene Pflegetheorien? Und welche passt wann?\n\nPflegetheorien sind keine trockene Theorie — sie bestimmen, wie du Patienten siehst und was du als Problem erkennst.",
+    },
+    contentB1: {
+      title: "Warum Pflegetheorien?",
+      body: "Du weißt schon: Was ist Pflege? Wie plant man Pflege? Wie spricht man mit Patienten?\n\nHeute: **Warum gibt es verschiedene Pflegetheorien?** Und welche passt wann?\n\nTheorien helfen dir zu entscheiden, was wichtig ist.",
+    },
+  },
+
+  // =============================================================
+  // TB9: SZENE — Yasemin im Theorieblock
+  // =============================================================
+  {
+    stepId: "le01-s5-tb9-02",
     phase: "s5",
     stepType: "dialog",
     bloomLevel: 2,
@@ -22,1012 +78,672 @@ export const STEPS_S5: ContentStep[] = [
     track: "basis",
     modus: "story",
     lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "SZENE",
     contentC1: {
-      title: "Pflegetheorien im Theorieblock",
-      body: "Yasemin sitzt im Theorieblock. Das heutige Thema: Pflegetheorien. Sie fragt sich, ob sie das auf Station wirklich braucht.",
-      fallbezug: "Yasemin Demirci, Theorieblock nach der ersten Praxiswoche",
+      title: "Der Theorieblock",
+      body: "Yasemin sitzt im Theorieblock. Auf der Tafel stehen Namen: Henderson, Orem, Krohwinkel, Peplau.",
     },
     contentB1: {
-      title: "Pflegetheorien im Unterricht",
-      body: "Yasemin ist im Unterricht. Das Thema heute: Pflegetheorien. Sie fragt sich: Brauche ich das auf Station?",
-      fallbezug: "Yasemin Demirci im Unterricht",
+      title: "Im Unterricht",
+      body: "Yasemin ist im Unterricht. An der Tafel stehen viele Namen.",
     },
     question: {
-      fragetext: "Wie reagierst du auf Yasemins Frage?",
-      patientName: "Yasemin Demirci",
-      dialogPhases: [
-        {
-          context: "Yasemin im Theorieblock. Die Dozentin beginnt das Thema Pflegetheorien.",
-          contextB1: "Yasemin ist im Unterricht. Die Lehrerin startet das Thema Pflegetheorien.",
-          speaker: "Yasemin",
-          options: [
-            {
-              text: "Pflegetheorien klingt so trocken. Braucht man das wirklich auf Station?",
-              textB1: "Pflegetheorien klingen langweilig. Brauche ich das auf Station?",
-              patientResponse: "Ohne Theorie pflegst du nach Gefuehl. Und Gefuehl allein kann schaden.",
-              patientResponseB1: "Ohne Theorie pflegst du nur nach Gefuehl. Das kann Probleme machen.",
-              score: 0,
-              feedback: "Die Dozentin erklaert: Theorie ist das Fundament professioneller Pflege.",
-              feedbackB1: "Die Lehrerin sagt: Theorie ist die Grundlage fuer gute Pflege.",
-            },
-          ],
-        },
-        {
-          context: "Die Dozentin fragt die Klasse: Woher wisst ihr eigentlich, was in der Pflege richtig ist?",
-          contextB1: "Die Lehrerin fragt: Woher wisst ihr, was in der Pflege richtig ist?",
-          speaker: "Dozentin",
-          options: [
-            {
-              text: "Aus Erfahrung — ich habe das bei meiner Oma gesehen.",
-              textB1: "Aus Erfahrung. Ich habe das bei meiner Oma gesehen.",
-              patientResponse: "Erfahrung ist wertvoll, aber sie ist subjektiv. Wir brauchen auch Forschung.",
-              patientResponseB1: "Erfahrung ist gut. Aber sie reicht nicht. Wir brauchen auch Forschung.",
-              score: 1,
-              feedback: "Erfahrung ist eine Wissensquelle — aber eine unstrukturierte.",
-              feedbackB1: "Erfahrung hilft. Aber sie ist nicht immer zuverlaessig.",
-            },
-            {
-              text: "Aus Forschung und Studien — was wissenschaftlich belegt ist.",
-              textB1: "Aus der Forschung. Was Studien zeigen.",
-              patientResponse: "Genau! Und wie wir Forschung nutzen, lernen wir heute.",
-              patientResponseB1: "Richtig! Wie wir Forschung nutzen, lernen wir heute.",
-              score: 3,
-              feedback: "Forschung ist eine strukturierte Wissensquelle — die zuverlaessigste.",
-              feedbackB1: "Forschung ist die beste Wissensquelle.",
-            },
-            {
-              text: "Von erfahrenen Kolleginnen — die wissen wie es geht.",
-              textB1: "Von erfahrenen Kolleginnen. Die wissen es.",
-              patientResponse: "Tradition und Autoritaet sind Quellen — aber nicht immer zuverlaessig.",
-              patientResponseB1: "Erfahrene Kolleginnen wissen viel. Aber sie koennen auch falsch liegen.",
-              score: 1,
-              feedback: "Autoritaet ist eine unstrukturierte Wissensquelle — kritisch hinterfragen.",
-              feedbackB1: "Wissen von Kolleginnen muss man pruefen. Es kann veraltet sein.",
-            },
-          ],
-        },
+      fragetext: "Yasemin im Theorieblock:",
+      dialogLines: [
+        { speaker: "Yasemin", text: "Henderson, Orem, Krohwinkel — welche Theorie ist denn die richtige?" },
+        { speaker: "Dozentin", text: "Keine ist die richtige. Jede betont etwas anderes. Das ist der Punkt." },
+        { speaker: "Yasemin", text: "Aber auf Station arbeiten wir doch alle gleich?" },
+        { speaker: "Dozentin", text: "Nicht ganz. Die Theorie bestimmt, was du als Problem siehst — und was du übersiehst." },
       ],
     },
   },
 
   // =============================================================
-  // Step 2: Swipe — Brilliant-Prinzip: "Was ist Wissen?" (CHALLENGE)
+  // TB9: ERKLÄRUNG — Metaparadigma + Henderson
   // =============================================================
   {
-    stepId: "le01-s5-02",
-    phase: "s5",
-    stepType: "swipe",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q3 S.101-102"],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-pflegewissenschaft",
-    contentC1: {
-      title: "Was ist zuverlaessiges Wissen?",
-      body: "Pflege braucht eine solide Wissensbasis. Nicht alles, was als Wissen gilt, ist gleich zuverlaessig.",
-    },
-    contentB1: {
-      title: "Welches Wissen ist gut?",
-      body: "Pflege braucht gutes Wissen. Aber nicht alles Wissen ist gleich gut.",
-    },
-    question: {
-      fragetext: "Wische nach rechts wenn die Aussage stimmt, nach links wenn sie falsch ist.",
-      swipe: {
-        instruction: "Stimmt die Aussage?",
-        cards: [
-          {
-            statement: "Erfahrung ist die zuverlaessigste Wissensquelle in der Pflege.",
-            statementB1: "Erfahrung ist das beste Wissen in der Pflege.",
-            isCorrect: false,
-            explanation: "Erfahrung ist subjektiv und nicht verallgemeinerbar. Wissenschaftliche Forschung ist zuverlaessiger.",
-            explanationB1: "Erfahrung ist persoenlich. Forschung ist zuverlaessiger.",
-          },
-          {
-            statement: "Tradition ist immer eine gute Grundlage fuer pflegerisches Handeln.",
-            statementB1: "Tradition ist immer gut fuer die Pflege.",
-            isCorrect: false,
-            explanation: "Tradition kann veraltet sein. 'Das machen wir schon immer so' reicht nicht als Begruendung.",
-            explanationB1: "'Das machen wir immer so' reicht nicht. Tradition kann falsch sein.",
-          },
-          {
-            statement: "Forschung kann Traditionen in der Pflege widerlegen.",
-            statementB1: "Forschung kann zeigen, dass Traditionen falsch sind.",
-            isCorrect: true,
-            explanation: "Forschung prueft systematisch. Wenn Evidenz gegen eine Tradition spricht, muss die Praxis geaendert werden.",
-            explanationB1: "Forschung prueft genau. Wenn eine Tradition nicht stimmt, muss man sie aendern.",
-          },
-          {
-            statement: "Versuch und Irrtum ist eine sichere Methode in der Pflege.",
-            statementB1: "Ausprobieren ist sicher in der Pflege.",
-            isCorrect: false,
-            explanation: "Versuch und Irrtum kann Patienten schaden. Pflege muss auf Evidenz basieren, nicht auf Ausprobieren.",
-            explanationB1: "Ausprobieren kann Patienten schaden. Pflege braucht sicheres Wissen.",
-          },
-          {
-            statement: "Wissenschaftliches Wissen ist nachpruefbar und systematisch gewonnen.",
-            statementB1: "Wissenschaftliches Wissen kann man pruefen. Es wird mit einem Plan gewonnen.",
-            isCorrect: true,
-            explanation: "Nachpruefbarkeit ist der Kern wissenschaftlichen Wissens. Ergebnisse muessen reproduzierbar sein.",
-            explanationB1: "Wissenschaftliches Wissen kann man wiederholen und pruefen. Das macht es zuverlaessig.",
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 3: Text — Pflegewissenschaft: Grundlagen (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s5-03",
+    stepId: "le01-s5-tb9-03",
     phase: "s5",
     stepType: "text",
     bloomLevel: 2,
     kompetenzbereich: "KB-V",
-    quellen: ["Q3 S.101-103"],
+    quellen: ["Q4 S.119-121", "Q8 S.321-325"],
     track: "basis",
     modus: "entdecker",
-    lernziel: "ce01-le01-pflegewissenschaft",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "ERKLÄRUNG",
+    imageUrl: "/images/content/le-01/metaparadigma.svg",
+    imageAlt: "Grafik: Metaparadigma der Pflege — Person, Umgebung, Gesundheit, Pflege",
     contentC1: {
-      title: "Pflegewissenschaft und Wissensquellen",
-      body: "Pflegewissenschaft erforscht die Pflegepraxis fuer die Pflegepraxis. Sie steht auf 3 Saeulen: Forschung, Theorie und Lehre. Wissensquellen unterscheiden sich in strukturierte (logisches Denken, Forschung) und unstrukturierte (Intuition, Erfahrung, Tradition). Induktiv bedeutet: vom Einzelfall zum Allgemeinen. Deduktiv bedeutet: vom Allgemeinen zum Einzelfall.",
-      glossarBegriffe: ["Pflegewissenschaft", "Evidence-based Nursing"],
+      title: "Das Metaparadigma der Pflege",
+      body: "Alle Pflegetheorien drehen sich um 4 zentrale Konzepte — das **Metaparadigma**:\n\n1. **Person** — Der Mensch mit seinen Bedürfnissen, Ressourcen und Problemen\n2. **Umgebung** — Alles was den Menschen umgibt (Familie, Kultur, Setting)\n3. **Gesundheit** — Nicht nur Abwesenheit von Krankheit, sondern Wohlbefinden\n4. **Pflege** — Das pflegerische Handeln, Ziele und Methoden\n\nJede Theoretikerin gewichtet diese 4 Konzepte anders.\n\n**Virginia Henderson** (1897-1996) definierte **14 Grundbedürfnisse** — von Atmen über Essen bis Lernen und Sinn finden. Pflege hilft, wenn der Mensch diese nicht selbst erfüllen kann.",
+      fallbezug: "Yasemin merkt: Henderson erklärt, warum sie auf Station so viele verschiedene Dinge gleichzeitig beachten muss.",
     },
     contentB1: {
-      title: "Pflegewissenschaft",
-      body: "Die Pflegewissenschaft untersucht Pflege, um sie besser zu machen. Sie hat 3 Teile: Forschung, Theorie und Lehre. Manche Wissensquellen sind gut geplant (Forschung). Andere sind ungeplant (Erfahrung, Bauchgefuehl). Induktiv heisst: von einem Fall auf alle schliessen. Deduktiv heisst: von einer Regel auf einen Fall schliessen.",
-      glossarBegriffe: ["Pflegewissenschaft"],
-    },
-    question: {
-      fragetext: "Lies den Text ueber Pflegewissenschaft und Wissensquellen.",
+      title: "4 Themen der Pflege",
+      body: "Alle Pflegetheorien drehen sich um 4 Themen:\n\n1. **Mensch** — Was braucht der Patient?\n2. **Umgebung** — Was ist um den Patienten herum?\n3. **Gesundheit** — Wie gesund ist der Patient?\n4. **Pflege** — Was machen Pflegende?\n\n**Virginia Henderson** hat 14 Grundbedürfnisse beschrieben: Atmen, Essen, Trinken, Schlafen, Lernen und mehr. Pflege hilft, wenn der Mensch das nicht allein kann.",
+      fallbezug: "Yasemin versteht: Deshalb achtet sie auf so viele verschiedene Dinge.",
     },
   },
 
   // =============================================================
-  // Step 4: Comparison — Strukturierte vs. Unstrukturierte Wissensquellen (ENTDECKER)
+  // TB9: ERKLÄRUNG — Orem vs. Krohwinkel Vergleich
   // =============================================================
   {
-    stepId: "le01-s5-04",
+    stepId: "le01-s5-tb9-04",
     phase: "s5",
     stepType: "comparison",
     bloomLevel: 3,
     kompetenzbereich: "KB-V",
-    quellen: ["Q3 S.101-102"],
+    quellen: ["Q4 S.125-132", "Q8 S.330-338"],
     track: "basis",
     modus: "entdecker",
-    lernziel: "ce01-le01-pflegewissenschaft",
-    imageUrl: "/images/le-01/wissensquellen-vergleich.svg",
-    imageAlt: "Vergleichstabelle: Strukturierte und unstrukturierte Wissensquellen",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "ERKLÄRUNG",
     contentC1: {
-      title: "Strukturierte vs. unstrukturierte Wissensquellen",
-      body: "Die Zuverlaessigkeit von Wissen haengt von der Quelle ab. Strukturierte Quellen sind systematisch geprueft, unstrukturierte koennen taeuschen.",
+      title: "Orem vs. Krohwinkel — zwei Ansätze",
+      body: "Beide sind Bedürfnistheorien, aber mit unterschiedlichem Fokus.",
     },
     contentB1: {
-      title: "Geplantes und ungeplantes Wissen",
-      body: "Manche Wissensquellen sind zuverlaessig. Andere koennen falsch sein. Hier siehst du den Unterschied.",
+      title: "Zwei Theorien vergleichen",
+      body: "Orem und Krohwinkel — beide schauen auf Bedürfnisse. Aber unterschiedlich.",
     },
     question: {
-      fragetext: "Vergleiche die beiden Arten von Wissensquellen.",
-      comparison: {
-        instruction: "Vergleiche strukturierte und unstrukturierte Wissensquellen.",
-        columns: [
-          { label: "Strukturiert", icon: "microscope" },
-          { label: "Unstrukturiert", icon: "lightbulb" },
-        ],
-        rows: [
-          {
-            criterion: "Beispiele",
-            values: ["Logisches Denken, wissenschaftliches Forschen", "Intuition, Erfahrung, Tradition, Versuch und Irrtum"],
-            valuesB1: ["Nachdenken mit Plan, Forschung", "Bauchgefuehl, Erfahrung, Tradition, Ausprobieren"],
-          },
-          {
-            criterion: "Zuverlaessigkeit",
-            values: ["Hoch — systematisch geprueft und nachvollziehbar", "Gering — subjektiv und nicht ueberpruefbar"],
-            valuesB1: ["Hoch — wird genau geprueft", "Niedrig — kann falsch sein"],
-          },
-          {
-            criterion: "Risiken",
-            values: ["Aufwendig, nicht immer sofort verfuegbar", "Kann Patienten schaden, bestaetigt Vorurteile"],
-            valuesB1: ["Braucht viel Zeit", "Kann Patienten schaden"],
-            highlight: 1,
-          },
-          {
-            criterion: "Rolle in der Pflege",
-            values: ["Grundlage fuer Evidence-based Nursing", "Ergaenzend, aber kritisch hinterfragen"],
-            valuesB1: ["Basis fuer gute Pflege", "Kann helfen, muss aber geprueft werden"],
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 5: TrueFalse — Wissensquellen pruefen (CHALLENGE)
-  // =============================================================
-  {
-    stepId: "le01-s5-05",
-    phase: "s5",
-    stepType: "truefalse",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q3 S.101-102"],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-pflegewissenschaft",
-    contentC1: {
-      title: "Wissensquellen in der Pflege",
-      body: "Pruefe dein Verstaendnis der verschiedenen Wissensquellen.",
-    },
-    contentB1: {
-      title: "Wissensquellen pruefen",
-      body: "Was stimmt? Pruefe dein Wissen ueber Wissensquellen.",
-    },
-    question: {
-      fragetext: "Welche Aussagen sind richtig, welche falsch?",
-      trueFalseCards: [
-        {
-          statement: "Tradition ist eine strukturierte Wissensquelle.",
-          isTrue: false,
-          explanation: "Tradition ist eine unstrukturierte Wissensquelle. Sie wird nicht systematisch geprueft und kann veraltet sein.",
-        },
-        {
-          statement: "Deduktiv bedeutet: vom Allgemeinen zum Einzelfall schliessen.",
-          isTrue: true,
-          explanation: "Richtig. Deduktives Denken geht von einer allgemeinen Regel aus und wendet sie auf einen konkreten Fall an.",
-        },
-        {
-          statement: "Intuition reicht als Grundlage fuer pflegerische Entscheidungen.",
-          isTrue: false,
-          explanation: "Intuition ist subjektiv und nicht nachpruefbar. Sie muss durch wissenschaftliche Evidenz ergaenzt werden.",
-        },
-        {
-          statement: "Nachpruefbarkeit ist der Kern wissenschaftlichen Wissens.",
-          isTrue: true,
-          explanation: "Richtig. Wissenschaftliche Ergebnisse muessen reproduzierbar und ueberpruefbar sein.",
-        },
+      fragetext: "Vergleiche die beiden Theorien:",
+      comparisonItems: [
+        { aspect: "Kernkonzept", optionA: "Selbstpflegedefizit: Pflege nötig wenn Selbstpflege nicht reicht", optionB: "AEDL-Modell: 13 Aktivitäten und existenzielle Erfahrungen des Lebens" },
+        { aspect: "Menschenbild", optionA: "Mensch als aktiver Selbstversorger", optionB: "Mensch als ganzheitliches Wesen mit Bedürfnissen und Erfahrungen" },
+        { aspect: "Pflege-Ziel", optionA: "Selbstständigkeit fördern → Pflege überflüssig machen", optionB: "Unabhängigkeit und Wohlbefinden in allen 13 AEDL-Bereichen" },
+        { aspect: "Einsatz", optionA: "Rehabilitation, ambulante Pflege", optionB: "Stationäre Langzeitpflege, Pflegeplanung" },
       ],
+      labelA: "Orem (Selbstpflegedefizit)",
+      labelB: "Krohwinkel (AEDL)",
+      iconA: "hand-helping",
+      iconB: "list-checks",
     },
   },
 
   // =============================================================
-  // Step 6: Text — 4 Schluesselkonzepte / Metaparadigma (ENTDECKER)
+  // TB9: ERKLÄRUNG — Flipcard Roper
   // =============================================================
   {
-    stepId: "le01-s5-06",
-    phase: "s5",
-    stepType: "text",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q4 S.119-120"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-pflegetheorien",
-    contentC1: {
-      title: "Die 4 Schluesselkonzepte der Pflege",
-      body: "Jede Pflegetheorie macht Aussagen zu 4 Schluesselkonzepten — dem Metaparadigma der Pflege: Person, Umwelt, Wohlbefinden (Gesundheit/Krankheit) und pflegerisches Handeln. Meleis unterscheidet 3 Schwerpunkte von Pflegetheorien: Beduerfnistheorien ('Was tun Pflegende?'), Interaktionstheorien ('Wie?') und Ergebnistheorien ('Warum?').",
-      glossarBegriffe: ["Metaparadigma", "Pflegetheorie"],
-    },
-    contentB1: {
-      title: "Die 4 Grundthemen der Pflege",
-      body: "Jede Pflegetheorie spricht ueber 4 Themen: den Menschen, die Umgebung, Gesundheit und Krankheit, und was Pflege tut. Es gibt 3 Arten von Theorien: Beduerfnistheorien (Was tun Pflegende?), Interaktionstheorien (Wie?) und Ergebnistheorien (Warum?).",
-      glossarBegriffe: ["Metaparadigma", "Pflegetheorie"],
-    },
-    question: {
-      fragetext: "Lies den Text ueber die 4 Schluesselkonzepte und die 3 Theorie-Typen.",
-    },
-  },
-
-  // =============================================================
-  // Step 7: Diagram — Mindmap Pflegetheorien (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s5-07",
-    phase: "s5",
-    stepType: "diagram",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q4 S.119-120"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-pflegetheorien",
-    contentC1: {
-      title: "Ueberblick: Pflegetheorien",
-      body: "Diese Mindmap zeigt die 3 Typen von Pflegetheorien und ihre wichtigsten Vertreterinnen.",
-    },
-    contentB1: {
-      title: "Pflegetheorien auf einen Blick",
-      body: "Diese Karte zeigt die 3 Arten von Pflegetheorien und wer sie entwickelt hat.",
-    },
-    question: {
-      fragetext: "Erkunde die Mindmap der Pflegetheorien.",
-      diagram: {
-        diagramType: "mindmap",
-        instruction: "Erkunde die verschiedenen Typen von Pflegetheorien und ihre Vertreterinnen.",
-        nodes: [
-          { id: "meta", label: "Metaparadigma", labelB1: "4 Grundthemen", highlight: true },
-          { id: "bed", label: "Beduerfnistheorien", labelB1: "Was tun Pflegende?" },
-          { id: "inter", label: "Interaktionstheorien", labelB1: "Wie pflegen wir?" },
-          { id: "erg", label: "Ergebnistheorien", labelB1: "Warum pflegen wir?" },
-          { id: "henderson", label: "Henderson (14 Grundbeduerfnisse)", labelB1: "Henderson: 14 Beduerfnisse" },
-          { id: "orem", label: "Orem (Selbstpflege)", labelB1: "Orem: Selbstpflege" },
-          { id: "roper", label: "Roper-Logan-Tierney (12 LA)", labelB1: "Roper: 12 Lebensaktivitaeten" },
-          { id: "krohwinkel", label: "Krohwinkel (13 ABEDLs)", labelB1: "Krohwinkel: 13 ABEDLs" },
-          { id: "peplau", label: "Peplau (4 Phasen)", labelB1: "Peplau: 4 Beziehungs-Phasen" },
-          { id: "roy", label: "Roy (Adaptionsmodell)", labelB1: "Roy: Anpassungs-Modell" },
-        ],
-        edges: [
-          { from: "meta", to: "bed", label: "Was?" },
-          { from: "meta", to: "inter", label: "Wie?" },
-          { from: "meta", to: "erg", label: "Warum?" },
-          { from: "bed", to: "henderson" },
-          { from: "bed", to: "orem" },
-          { from: "bed", to: "roper" },
-          { from: "bed", to: "krohwinkel" },
-          { from: "inter", to: "peplau" },
-          { from: "erg", to: "roy" },
-        ],
-        interactive: true,
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 8: Matching — 3 Theorie-Typen + Leitfragen (PUZZLE)
-  // =============================================================
-  {
-    stepId: "le01-s5-08",
-    phase: "s5",
-    stepType: "matching",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q4 S.119"],
-    track: "basis",
-    modus: "puzzle",
-    lernziel: "ce01-le01-pflegetheorien",
-    contentC1: {
-      title: "Theorie-Typen und ihre Leitfragen",
-      body: "Jeder Theorie-Typ hat eine zentrale Leitfrage, die den Fokus bestimmt.",
-    },
-    contentB1: {
-      title: "3 Arten von Pflegetheorien",
-      body: "Jede Theorie-Art hat eine wichtige Frage. Ordne richtig zu.",
-    },
-    question: {
-      fragetext: "Ordne jeden Theorie-Typ seiner Leitfrage zu.",
-      matchingPairs: [
-        { left: "Beduerfnistheorien", right: "Was tun Pflegende?" },
-        { left: "Interaktionstheorien", right: "Wie gestalten Pflegende die Beziehung?" },
-        { left: "Ergebnistheorien", right: "Warum pflegen wir — was ist das Ziel?" },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 9: Text — Henderson, Juchli, Orem (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s5-09",
-    phase: "s5",
-    stepType: "text",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q12 Kap.3.1", "Q4 S.120-122"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-pflegetheorien",
-    contentC1: {
-      title: "Beduerfnistheorien: Henderson, Juchli, Orem",
-      body: "Virginia Henderson formulierte 14 Grundbeduerfnisse als Basis der Pflege. Sie gilt als Urmutter der Pflegetheorien. Liliane Juchli entwickelte daraus die 12 ATL (Aktivitaeten des taeglichen Lebens) fuer den deutschsprachigen Raum. Dorothea Orem beschrieb 3 Teiltheorien: Selbstpflege, Selbstpflegedefizit und Pflegesysteme.",
-      glossarBegriffe: ["Selbstpflege"],
-    },
-    contentB1: {
-      title: "Henderson, Juchli und Orem",
-      body: "Henderson nannte 14 Grundbeduerfnisse des Menschen. Juchli machte daraus 12 Lebens-Aktivitaeten fuer Deutschland. Orem hat 3 Teile: Selbstpflege (Was kann der Mensch selbst?), Defizit (Wo braucht er Hilfe?) und Pflegesysteme (Wie viel Hilfe?).",
-      glossarBegriffe: ["Selbstpflege"],
-    },
-    question: {
-      fragetext: "Lies den Text ueber die drei Beduerfnistheoretikerinnen.",
-    },
-  },
-
-  // =============================================================
-  // Step 10: Flipcard — 4 Theoretikerinnen (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s5-10",
+    stepId: "le01-s5-tb9-05",
     phase: "s5",
     stepType: "flipcard",
     bloomLevel: 2,
     kompetenzbereich: "KB-V",
-    quellen: ["Q12 Kap.3.1", "Q4 S.119-126"],
+    quellen: ["Q4 S.128-130"],
     track: "basis",
     modus: "entdecker",
     lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "ERKLÄRUNG",
     contentC1: {
-      title: "4 Theoretikerinnen entdecken",
-      body: "Lerne die wichtigsten Pflegetheoretikerinnen und ihre Kernideen kennen.",
+      title: "Roper, Logan & Tierney",
+      body: "Entdecke die 12 Lebensaktivitäten und 5 Einflussfaktoren.",
     },
     contentB1: {
-      title: "4 Pflegetheoretikerinnen",
-      body: "Lerne 4 wichtige Frauen und ihre Ideen kennen. Tippe auf die Karten.",
+      title: "Roper: 12 Lebensaktivitäten",
+      body: "Tippe auf jede Karte. Was gehört alles zum Leben?",
     },
     question: {
-      fragetext: "Tippe auf jede Karte, um die Kernidee zu entdecken.",
-      flipcard: {
-        instruction: "Entdecke die Kernideen der 4 Theoretikerinnen.",
-        cards: [
-          {
-            front: "Virginia Henderson",
-            back: "14 Grundbeduerfnisse des Menschen. Pflege wird noetig, wenn ein Mensch seine Beduerfnisse nicht selbst erfuellen kann. Gilt als Urmutter der Pflegetheorien.",
-            backB1: "14 Grundbeduerfnisse. Wenn ein Mensch sich nicht selbst versorgen kann, braucht er Pflege. Henderson war die Erste.",
-            category: "Beduerfnistheorie",
-          },
-          {
-            front: "Liliane Juchli",
-            back: "12 ATL — Aktivitaeten des taeglichen Lebens. Ganzheitliches Ordnungssystem: erfasst Gesundheit UND Pflegebeduerftigkeit. Kerngedanke: 'Ich pflege als die, die ich bin.'",
-            backB1: "12 Lebens-Aktivitaeten (ATL). Schaut auf den ganzen Menschen. Ihr Motto: 'Ich pflege als die, die ich bin.'",
-            category: "Beduerfnistheorie",
-          },
-          {
-            front: "Dorothea Orem",
-            back: "Selbstpflege-Defizit-Theorie. 3 Pflegesysteme: vollstaendig kompensatorisch, teilkompensatorisch, unterstuetzend-edukativ. Pflege gleicht Defizite aus.",
-            backB1: "Selbstpflege-Theorie. 3 Stufen: Alles uebernehmen, zusammen machen oder nur anleiten. Pflege hilft, wo der Mensch nicht kann.",
-            category: "Beduerfnistheorie",
-          },
-          {
-            front: "Roper-Logan-Tierney",
-            back: "12 Lebensaktivitaeten (u.a. Atmen, Essen, Kommunikation, Mobilitaet). 5 Einflussfaktoren: biologisch, psychologisch, soziokulturell, umgebungsbezogen, politisch-oekonomisch.",
-            backB1: "12 Lebens-Aktivitaeten (z.B. Atmen, Essen, Bewegen). 5 Einfluss-Faktoren: Koerper, Psyche, Kultur, Umgebung, Politik.",
-            category: "Beduerfnistheorie",
-          },
-        ],
-        shuffled: true,
-      },
+      fragetext: "Die 12 Lebensaktivitäten (LA) nach Roper:",
+      cards: [
+        { front: "Für Sicherheit sorgen", back: "Schutz vor Gefahren — Sturzprophylaxe, Infektionsschutz, Brandschutz.", icon: "shield" },
+        { front: "Kommunizieren", back: "Austausch mit anderen — verbal und nonverbal. Hören, Sehen, Sprechen.", icon: "message-circle" },
+        { front: "Atmen", back: "Sauerstoffaufnahme und CO₂-Abgabe. Lebenswichtigste LA.", icon: "wind" },
+        { front: "Essen und Trinken", back: "Nahrungsaufnahme und Flüssigkeitszufuhr. Grundlage für alle Körperfunktionen.", icon: "utensils" },
+        { front: "Sich bewegen", back: "Mobilität, Körperhaltung, Gleichgewicht. Prävention von Kontrakturen und Thrombosen.", icon: "footprints" },
+      ],
     },
   },
 
   // =============================================================
-  // Step 11: MC — Orem-Pflegesystem fuer Herrn Brenner (CHALLENGE)
+  // TB9: CHECKPOINT — MC Orem
   // =============================================================
   {
-    stepId: "le01-s5-11",
+    stepId: "le01-s5-tb9-06",
     phase: "s5",
     stepType: "mc",
     bloomLevel: 3,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q4 S.120-122"],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-pflegetheorien",
-    wusstestDuDas: "Orems 3 Pflegesysteme bestimmen den gesamten Pflegeplan. Die Einordnung kann sich im Verlauf aendern — z.B. von vollstaendig kompensatorisch nach teilkompensatorisch.",
-    contentC1: {
-      title: "Orems Pflegesysteme anwenden",
-      body: "Yasemin betreut Herr Brenner (82). Er kann sich selbststaendig waschen, anziehen und essen. Sein Hauptproblem ist Trauer nach dem Tod seiner Frau — er braucht emotionale Unterstuetzung und Gespraechsangebote.",
-      fallbezug: "Herr Brenner, 82, trauert um seine Frau",
-    },
-    contentB1: {
-      title: "Welches Pflege-System passt?",
-      body: "Yasemin pflegt Herrn Brenner (82). Er kann sich selbst waschen und anziehen. Aber er ist traurig, weil seine Frau gestorben ist. Er braucht jemanden zum Reden.",
-      fallbezug: "Herr Brenner, 82, ist traurig",
-    },
-    question: {
-      fragetext: "Welches Orem-Pflegesystem passt zu Herr Brenner?",
-      optionen: [
-        {
-          text: "Vollstaendig kompensatorisch",
-          isCorrect: false,
-          explanation: "Dieses System ist fuer Patienten, die nichts selbst tun koennen. Herr Brenner kann sich aber selbststaendig versorgen.",
-          explanationB1: "Dieses System ist fuer Menschen, die gar nichts selbst koennen. Herr Brenner kann sich aber selbst waschen.",
-        },
-        {
-          text: "Teilkompensatorisch",
-          isCorrect: false,
-          explanation: "Teilkompensatorisch bedeutet: Pflege und Patient arbeiten koerperlich zusammen. Herr Brenners Defizit ist aber emotional, nicht koerperlich.",
-          explanationB1: "Teilkompensatorisch heisst: Pflege und Patient machen zusammen. Aber Herr Brenner braucht keine koerperliche Hilfe.",
-        },
-        {
-          text: "Unterstuetzend-edukativ",
-          isCorrect: true,
-          explanation: "Richtig. Herr Brenner kann sich koerperlich selbst versorgen. Er braucht Unterstuetzung und Begleitung im emotionalen Bereich — genau das leistet das unterstuetzend-edukative System.",
-          explanationB1: "Richtig! Herr Brenner kann alles selbst machen. Er braucht Hilfe bei seinen Gefuehlen. Das ist unterstuetzend-edukativ.",
-        },
-        {
-          text: "Kein System passt — Orem ist hier falsch",
-          isCorrect: false,
-          explanation: "Orem kann hier angewendet werden. Das unterstuetzend-edukative System umfasst auch emotionale Unterstuetzung und Beratung.",
-          explanationB1: "Orem passt auch hier. Emotionale Hilfe gehoert zum unterstuetzend-edukativen System.",
-        },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 12: Reveal — Orems 3 Pflegesysteme (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s5-12",
-    phase: "s5",
-    stepType: "reveal",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q4 S.120-122"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-pflegetheorien",
-    contentC1: {
-      title: "Orems 3 Pflegesysteme",
-      body: "Entdecke die 3 Pflegesysteme nach Orem mit je einem Patienten-Beispiel.",
-    },
-    contentB1: {
-      title: "3 Pflege-Stufen nach Orem",
-      body: "Entdecke die 3 Stufen. Jede Stufe hat ein Beispiel.",
-    },
-    question: {
-      fragetext: "Decke die 3 Pflegesysteme nacheinander auf.",
-      reveal: {
-        instruction: "Decke die Karten nacheinander auf — von der meisten zur wenigsten Hilfe.",
-        revealMode: "sequential",
-        cards: [
-          {
-            id: "voll",
-            label: "Vollstaendig kompensatorisch",
-            content: "Die Pflege uebernimmt alles. Der Patient kann nicht fuer sich sorgen. Beispiel: Ein Patient im Koma — Koerperpflege, Ernaehrung und Lagerung werden vollstaendig von Pflegenden uebernommen.",
-            contentB1: "Die Pflege macht alles. Der Mensch kann nichts selbst tun. Beispiel: Ein Patient im Koma. Pflege waescht, fuettert und lagert ihn.",
-            icon: "bed",
-          },
-          {
-            id: "teil",
-            label: "Teilkompensatorisch",
-            content: "Pflege und Patient arbeiten zusammen. Beispiel: Eine Patientin nach Hueft-OP — sie kann den Oberkoerper selbst waschen, braucht aber Hilfe bei den Beinen und beim Aufstehen.",
-            contentB1: "Pflege und Patient machen zusammen. Beispiel: Eine Patientin nach einer Hueft-OP. Sie waescht sich oben selbst. Bei den Beinen hilft die Pflege.",
-            icon: "handshake",
-          },
-          {
-            id: "edukat",
-            label: "Unterstuetzend-edukativ",
-            content: "Der Patient lernt, sich selbst zu versorgen. Pflege beratet und leitet an. Beispiel: Ein Diabetiker lernt, seinen Blutzucker selbst zu messen und Insulin zu spritzen.",
-            contentB1: "Der Patient lernt es selbst. Die Pflege zeigt ihm, wie es geht. Beispiel: Ein Diabetiker lernt, seinen Blutzucker zu messen.",
-            icon: "graduation-cap",
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 13: Categorize — Patienten in Orem-Systeme (SORTIERSTATION)
-  // =============================================================
-  {
-    stepId: "le01-s5-13",
-    phase: "s5",
-    stepType: "categorize",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q4 S.120-122"],
-    track: "basis",
-    modus: "sortierstation",
-    lernziel: "ce01-le01-pflegetheorien",
-    contentC1: {
-      title: "Patienten den Pflegesystemen zuordnen",
-      body: "Wende Orems 3 Pflegesysteme auf verschiedene Patienten-Situationen an.",
-    },
-    contentB1: {
-      title: "Welche Pflege-Stufe passt?",
-      body: "Ordne die Patienten der richtigen Pflege-Stufe nach Orem zu.",
-    },
-    question: {
-      fragetext: "Ordne jede Situation dem passenden Orem-Pflegesystem zu.",
-      categories: [
-        { name: "Vollstaendig kompensatorisch" },
-        { name: "Teilkompensatorisch" },
-        { name: "Unterstuetzend-edukativ" },
-      ],
-      categoryItems: [
-        { text: "Patient im Wachkoma — braucht kuenstliche Ernaehrung", correctCategory: 0 },
-        { text: "Patientin nach Schlaganfall — kann rechten Arm nicht bewegen, links ist fit", correctCategory: 1 },
-        { text: "Diabetiker lernt, Insulin selbst zu spritzen", correctCategory: 2 },
-        { text: "Kleinkind (2 Jahre) nach Operation — kann sich nicht selbst versorgen", correctCategory: 0 },
-        { text: "Herr Brenner (82) — koerperlich fit, braucht emotionale Unterstuetzung", correctCategory: 2 },
-        { text: "Patientin mit Gipsarm — kann Oberkoerper selbst waschen, braucht Hilfe beim Anziehen", correctCategory: 1 },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 14: Text — Roper-Logan-Tierney + Krohwinkel (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s5-14",
-    phase: "s5",
-    stepType: "text",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q4 S.123-126"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-pflegetheorien",
-    contentC1: {
-      title: "Roper-Logan-Tierney und Krohwinkel",
-      body: "Roper-Logan-Tierney beschreiben 12 Lebensaktivitaeten (u.a. Atmen, Essen, Kommunikation, Mobilitaet, Sterben). Krohwinkel entwickelte das ABEDL-Modell: Aktivitaeten, Beziehungen und existenzielle Erfahrungen des Lebens — 13 Bereiche. Das ABEDL-Modell ist die Basis vieler Pflegeplanungen in Deutschland.",
-      glossarBegriffe: ["ABEDL"],
-    },
-    contentB1: {
-      title: "Roper und Krohwinkel",
-      body: "Roper beschreibt 12 Lebens-Aktivitaeten wie Atmen, Essen und Bewegen. Krohwinkel hat 13 Bereiche: die ABEDLs. ABEDL steht fuer Aktivitaeten, Beziehungen und existenzielle Erfahrungen des Lebens. Viele Pflegeplanungen in Deutschland nutzen ABEDLs.",
-      glossarBegriffe: ["ABEDL"],
-    },
-    question: {
-      fragetext: "Lies den Text ueber Roper-Logan-Tierney und Krohwinkel.",
-    },
-  },
-
-  // =============================================================
-  // Step 15: Cloze — ABEDL-Bedeutung (CHALLENGE)
-  // =============================================================
-  {
-    stepId: "le01-s5-15",
-    phase: "s5",
-    stepType: "cloze",
-    bloomLevel: 2,
     kompetenzbereich: "KB-V",
     quellen: ["Q4 S.125-126"],
     track: "basis",
     modus: "challenge",
     lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "CHECKPOINT",
     contentC1: {
-      title: "ABEDL — Wofuer steht die Abkuerzung?",
-      body: "Krohwinkels ABEDL-Modell ist das verbreitetste Pflegemodell in Deutschland.",
+      title: "Kurzer Check!",
+      body: "Welche Theorie beschreibt dieses Konzept? Antwortzeit wird gemessen.",
     },
     contentB1: {
-      title: "Was heisst ABEDL?",
-      body: "ABEDL ist das wichtigste Pflegemodell in Deutschland. Fuelle die Luecken.",
+      title: "Kurzer Check!",
+      body: "Welche Theorie passt? Antworte so schnell du kannst.",
     },
     question: {
-      fragetext: "Ergaenze die fehlenden Woerter in der ABEDL-Erklaerung.",
-      cloze: {
-        textWithBlanks: "Krohwinkels ABEDL steht fuer: Aktivitaeten, {{1}} und {{2}} Erfahrungen des Lebens. Das Modell umfasst {{3}} Bereiche.",
-        blanks: [
-          {
-            id: 1,
-            correct: "Beziehungen",
-            distractors: ["Behandlungen", "Berufe"],
-          },
-          {
-            id: 2,
-            correct: "existenzielle",
-            distractors: ["emotionale", "koerperliche"],
-          },
-          {
-            id: 3,
-            correct: "13",
-            distractors: ["12", "14"],
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 16: Memory — Theoretikerinnen + Konzepte (PUZZLE)
-  // =============================================================
-  {
-    stepId: "le01-s5-16",
-    phase: "s5",
-    stepType: "memory",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q4 S.119-129"],
-    track: "vertiefung",
-    modus: "puzzle",
-    lernziel: "ce01-le01-pflegetheorien",
-    contentC1: {
-      title: "Memory: Theoretikerinnen und Konzepte",
-      body: "Finde die zusammengehoerenden Paare: Theoretikerin und ihr Konzept.",
-    },
-    contentB1: {
-      title: "Memory: Wer hat was entwickelt?",
-      body: "Finde die Paare: Jede Theoretikerin hat ein Konzept.",
-    },
-    question: {
-      fragetext: "Finde die 6 zusammengehoerenden Paare.",
-      memoryPairs: [
-        { a: "Henderson", b: "14 Grundbeduerfnisse" },
-        { a: "Orem", b: "Selbstpflege-Defizit" },
-        { a: "Krohwinkel", b: "13 ABEDLs" },
-        { a: "Roper-Logan-Tierney", b: "12 Lebensaktivitaeten" },
-        { a: "Juchli", b: "12 ATL" },
-        { a: "Peplau", b: "4 Beziehungsphasen" },
+      fragetext: "Das Konzept 'Selbstpflegedefizit' — wenn ein Mensch sich nicht mehr selbst versorgen kann — stammt von welcher Theoretikerin?",
+      options: [
+        { text: "Dorothea Orem", isCorrect: true, explanation: "Richtig! Orems Theorie besagt: Pflege wird nötig, wenn die Selbstpflegefähigkeit eines Menschen nicht ausreicht, um seine Selbstpflegeerfordernisse zu erfüllen." },
+        { text: "Monika Krohwinkel", isCorrect: false, explanation: "Krohwinkel entwickelte das AEDL-Modell mit 13 Aktivitäten und existenziellen Erfahrungen des Lebens — nicht das Selbstpflegedefizit-Konzept." },
+        { text: "Virginia Henderson", isCorrect: false, explanation: "Henderson formulierte 14 Grundbedürfnisse. Das Selbstpflegedefizit ist Orems Konzept." },
+        { text: "Hildegard Peplau", isCorrect: false, explanation: "Peplau ist eine Interaktionstheoretikerin — sie fokussiert auf die therapeutische Beziehung, nicht auf Selbstpflege." },
       ],
     },
   },
 
   // =============================================================
-  // Step 17: Timer — Speed-Fragen + Interleaving (CHALLENGE)
+  // TB9: ANDERS_ERKLÄRT — Mindmap Theorien
   // =============================================================
   {
-    stepId: "le01-s5-17",
+    stepId: "le01-s5-tb9-07",
     phase: "s5",
-    stepType: "timer",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q4 S.119-126", "Q7 S.285", "Q5 S.251"],
-    track: "vertiefung",
-    modus: "challenge",
-    lernziel: "ce01-le01-pflegetheorien",
-    contentC1: {
-      title: "Speed-Runde: Pflegetheorien und mehr",
-      body: "4 schnelle Fragen — 2 zu Pflegetheorien, 1 zu Ethik, 1 zu Kommunikation.",
-    },
-    contentB1: {
-      title: "Schnelle Fragen",
-      body: "4 schnelle Fragen. 2 ueber Pflegetheorien. 1 ueber Ethik. 1 ueber Kommunikation.",
-    },
-    question: {
-      fragetext: "Beantworte jede Frage in 15 Sekunden.",
-      timeLimitSeconds: 15,
-      timerQuestions: [
-        {
-          question: "Wie viele ABEDLs hat das Krohwinkel-Modell?",
-          options: ["12", "13", "14"],
-          correctIndex: 1,
-        },
-        {
-          question: "Welcher Theorie-Typ fragt 'Was tun Pflegende?'",
-          options: ["Interaktionstheorien", "Ergebnistheorien", "Beduerfnistheorien"],
-          correctIndex: 2,
-        },
-        {
-          question: "Welches ethische Prinzip schuetzt vor Schaden? (Interleaving)",
-          options: ["Autonomie", "Nonmalefizienz", "Gerechtigkeit"],
-          correctIndex: 1,
-        },
-        {
-          question: "Wie heissen die 4 Seiten einer Nachricht nach Schulz von Thun? (Interleaving)",
-          options: ["Sach-, Beziehungs-, Selbstoffenbarungs-, Appellseite", "Sach-, Gefuehls-, Wunsch-, Befehlsseite", "Inhalt, Form, Beziehung, Kontext"],
-          correctIndex: 0,
-        },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 18: Comparison — Henderson vs. Krohwinkel vs. Orem (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s5-18",
-    phase: "s5",
-    stepType: "comparison",
+    stepType: "diagram",
     bloomLevel: 3,
     kompetenzbereich: "KB-V",
-    quellen: ["Q12 Kap.3.1", "Q4 S.119-126"],
+    quellen: ["Q4 S.119-135"],
     track: "basis",
     modus: "entdecker",
     lernziel: "ce01-le01-pflegetheorien",
-    imageUrl: "/images/le-01/theorien-vergleich.svg",
-    imageAlt: "Vergleichstabelle: Henderson, Krohwinkel und Orem",
+    themenblockPhase: "ANDERS_ERKLÄRT",
     contentC1: {
-      title: "3 Beduerfnistheorien im Vergleich",
-      body: "Henderson, Krohwinkel und Orem gehoeren alle zu den Beduerfnistheorien — unterscheiden sich aber im Fokus und Umfang.",
+      title: "Die Bedürfnistheorien im Überblick",
+      body: "Wie hängen Henderson, Roper, Orem und Krohwinkel zusammen?",
     },
     contentB1: {
-      title: "Henderson, Krohwinkel und Orem",
-      body: "Alle 3 sind Beduerfnistheorien. Aber sie sind verschieden. Schau dir den Vergleich an.",
+      title: "Alle Theorien auf einen Blick",
+      body: "Diese Theorien gehören zusammen. Schau dir das Bild an.",
     },
     question: {
-      fragetext: "Vergleiche die 3 Beduerfnistheorien.",
-      comparison: {
-        instruction: "Vergleiche Henderson, Krohwinkel und Orem.",
-        columns: [
-          { label: "Henderson", icon: "heart" },
-          { label: "Krohwinkel", icon: "layout-grid" },
-          { label: "Orem", icon: "user-check" },
-        ],
-        rows: [
-          {
-            criterion: "Fokus",
-            values: ["14 Grundbeduerfnisse des Menschen", "13 ABEDLs — Aktivitaeten, Beziehungen, existenzielle Erfahrungen", "Selbstpflege-Faehigkeit und Defizite"],
-            valuesB1: ["14 Beduerfnisse", "13 Lebensbereiche", "Was kann der Mensch selbst?"],
-          },
-          {
-            criterion: "Anzahl Bereiche",
-            values: ["14", "13", "3 Pflegesysteme"],
-            valuesB1: ["14", "13", "3 Stufen"],
-          },
-          {
-            criterion: "Herkunft",
-            values: ["USA, 1950er Jahre", "Deutschland, 1980er Jahre", "USA, 1970er Jahre"],
-            valuesB1: ["USA, 1950er", "Deutschland, 1980er", "USA, 1970er"],
-          },
-          {
-            criterion: "Staerke",
-            values: ["Einfach, Grundlage fuer viele Folge-Modelle", "Verbreitetstes Modell in Deutschland, ganzheitlich", "Klar strukturiert: 3 Systeme fuer den Pflegeplan"],
-            valuesB1: ["Einfach, Basis fuer andere Modelle", "Am meisten benutzt in Deutschland", "Klare 3 Stufen fuer die Pflegeplanung"],
-            highlight: 1,
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 19: Dialog — Orem vs. Krohwinkel (STORY)
-  // =============================================================
-  {
-    stepId: "le01-s5-19",
-    phase: "s5",
-    stepType: "dialog",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-V",
-    quellen: ["Q4 S.119-126"],
-    track: "basis",
-    modus: "story",
-    lernziel: "ce01-le01-pflegetheorien",
-    contentC1: {
-      title: "Welches Modell ist besser?",
-      body: "Yasemin vergleicht Orem und Krohwinkel und fragt sich, welches Modell das richtige ist.",
-      fallbezug: "Yasemin Demirci reflektiert ueber Pflegemodelle",
-    },
-    contentB1: {
-      title: "Welches Modell soll ich nehmen?",
-      body: "Yasemin fragt sich: Orem oder Krohwinkel? Was ist besser?",
-      fallbezug: "Yasemin denkt ueber Pflegemodelle nach",
-    },
-    question: {
-      fragetext: "Was antwortest du Yasemin?",
-      patientName: "Yasemin Demirci",
-      dialogPhases: [
-        {
-          context: "Yasemin nach dem Theorieblock. Sie hat Orem und Krohwinkel kennengelernt.",
-          contextB1: "Yasemin nach dem Unterricht. Sie kennt jetzt Orem und Krohwinkel.",
-          speaker: "Yasemin",
-          options: [
-            {
-              text: "Wenn ich Orem benutze, schaue ich ob der Patient sich selbst waschen kann. Bei Krohwinkel schaue ich 13 Bereiche an. Was ist besser?",
-              textB1: "Bei Orem schaue ich: Kann der Patient sich waschen? Bei Krohwinkel schaue ich 13 Bereiche. Was ist besser?",
-              patientResponse: "Keines ist besser. Es kommt auf die Situation an.",
-              patientResponseB1: "Keines ist besser oder schlechter. Es kommt auf den Patienten an.",
-              score: 0,
-              feedback: "Yasemins Frage zeigt ein haeufiges Missverstaendnis. Pflegetheorien sind Werkzeuge — nicht wahr oder falsch.",
-              feedbackB1: "Gute Frage! Pflegetheorien sind Werkzeuge. Man waehlt das passende Werkzeug fuer die Situation.",
-            },
-          ],
-        },
-        {
-          context: "Die Dozentin erklaert: Pflegetheorien sind wie Brillen — jede zeigt etwas anderes.",
-          contextB1: "Die Lehrerin sagt: Theorien sind wie Brillen. Jede zeigt etwas anderes.",
-          speaker: "Dozentin",
-          options: [
-            {
-              text: "Orem passt gut, wenn ich wissen will, wie viel Hilfe jemand braucht.",
-              textB1: "Orem ist gut, wenn ich wissen will: Wie viel Hilfe braucht der Patient?",
-              patientResponse: "Genau. Und Krohwinkel zeigt dir alle Lebensbereiche — auch die, an die du vielleicht nicht sofort denkst.",
-              patientResponseB1: "Richtig. Und Krohwinkel zeigt alle 13 Lebensbereiche. Da vergisst du nichts.",
-              score: 3,
-              feedback: "Orem fuer die Frage nach dem Hilfebedarf, Krohwinkel fuer die ganzheitliche Sicht.",
-              feedbackB1: "Orem: Wie viel Hilfe? Krohwinkel: Welche Bereiche?",
-            },
-            {
-              text: "Ich nehme immer Krohwinkel — das ist in Deutschland am verbreitetsten.",
-              textB1: "Ich nehme immer Krohwinkel. Das kennt jeder in Deutschland.",
-              patientResponse: "Krohwinkel ist weit verbreitet. Aber manchmal passt ein anderes Modell besser.",
-              patientResponseB1: "Krohwinkel ist beliebt. Aber manchmal passt ein anderes Modell besser.",
-              score: 1,
-              feedback: "Verbreitung allein ist kein Qualitaetskriterium. Die Wahl sollte zum Patienten passen.",
-              feedbackB1: "Nur weil etwas beliebt ist, ist es nicht immer das Beste. Es kommt auf den Patienten an.",
-            },
-          ],
-        },
+      fragetext: "Mindmap: Bedürfnistheorien",
+      diagramType: "mindmap",
+      nodes: [
+        { id: "center", label: "Bedürfnistheorien", level: 0 },
+        { id: "henderson", label: "Henderson (14 Grundbedürfnisse)", level: 1, parent: "center" },
+        { id: "roper", label: "Roper (12 Lebensaktivitäten)", level: 1, parent: "center" },
+        { id: "orem", label: "Orem (Selbstpflegedefizit)", level: 1, parent: "center" },
+        { id: "krohwinkel", label: "Krohwinkel (13 AEDL)", level: 1, parent: "center" },
+        { id: "h-fokus", label: "Fokus: Was braucht der Mensch?", level: 2, parent: "henderson" },
+        { id: "r-fokus", label: "Fokus: Lebensaktivitäten + Einflussfaktoren", level: 2, parent: "roper" },
+        { id: "o-fokus", label: "Fokus: Wann wird Pflege nötig?", level: 2, parent: "orem" },
+        { id: "k-fokus", label: "Fokus: Ganzheitlich + existenziell", level: 2, parent: "krohwinkel" },
       ],
     },
   },
 
   // =============================================================
-  // Step 20: Crossword — Pflegetheorien-Begriffe (PUZZLE)
+  // TB9: ANWENDUNG — Categorize
   // =============================================================
   {
-    stepId: "le01-s5-20",
+    stepId: "le01-s5-tb9-08",
+    phase: "s5",
+    stepType: "categorize",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-V",
+    quellen: ["Q4 S.119-135"],
+    track: "basis",
+    modus: "challenge",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Wer sagt was?",
+      body: "Ordne die Kernkonzepte der richtigen Theoretikerin zu.",
+    },
+    contentB1: {
+      title: "Zuordnen!",
+      body: "Welches Konzept gehört zu welcher Theoretikerin?",
+    },
+    question: {
+      fragetext: "Ordne zu: Orem, Roper oder Krohwinkel?",
+      categories: [
+        { name: "Orem" },
+        { name: "Roper" },
+        { name: "Krohwinkel" },
+      ],
+      items: [
+        { text: "Selbstpflegedefizit", correctCategory: 0 },
+        { text: "12 Lebensaktivitäten", correctCategory: 1 },
+        { text: "13 AEDL", correctCategory: 2 },
+        { text: "5 Einflussfaktoren", correctCategory: 1 },
+        { text: "Existenzielle Erfahrungen des Lebens", correctCategory: 2 },
+        { text: "Selbstpflege-Erfordernisse", correctCategory: 0 },
+        { text: "Fördernde Prozesspflege", correctCategory: 2 },
+        { text: "Kompensatorisches Pflegesystem", correctCategory: 0 },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB9: REFLEXION — Confidence
+  // =============================================================
+  {
+    stepId: "le01-s5-tb9-09",
+    phase: "s5",
+    stepType: "confidence",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-V",
+    quellen: [],
+    track: "basis",
+    modus: "checkpoint",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "REFLEXION",
+    contentC1: {
+      title: "Wie sicher bist du jetzt?",
+      body: "Du hast die Bedürfnistheorien kennengelernt. Schätze dich ein.",
+    },
+    contentB1: {
+      title: "Wie sicher bist du?",
+      body: "Schätze dich ein. Wie gut kennst du die Theorien?",
+    },
+    question: {
+      fragetext: "Wie sicher fühlst du dich bei diesen Aussagen?",
+      statements: [
+        "Ich kann das Metaparadigma der Pflege erklären.",
+        "Ich kenne den Unterschied zwischen Orem und Krohwinkel.",
+        "Ich kann die 12 Lebensaktivitäten nach Roper benennen.",
+      ],
+    },
+  },
+
+  // =============================================================
+  // Snack: Matching Theoretikerin → Kernkonzept
+  // =============================================================
+  {
+    stepId: "le01-s5-sn-01",
+    phase: "s5",
+    stepType: "matching",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-V",
+    quellen: [],
+    track: "vertiefung",
+    modus: "puzzle",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Wer gehört wozu?",
+      body: "Ordne jeder Theoretikerin ihr Kernkonzept zu.",
+    },
+    contentB1: {
+      title: "Zuordnen!",
+      body: "Welche Theoretikerin hat was entwickelt?",
+    },
+    question: {
+      fragetext: "Ordne zu:",
+      pairs: [
+        { left: "Henderson", right: "14 Grundbedürfnisse" },
+        { left: "Orem", right: "Selbstpflegedefizit" },
+        { left: "Krohwinkel", right: "13 AEDL" },
+        { left: "Roper", right: "12 Lebensaktivitäten" },
+        { left: "Peplau", right: "Therapeutische Beziehung" },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB10: SZENE — Peplau über Herr Brenner
+  // =============================================================
+  {
+    stepId: "le01-s5-tb10-01",
+    phase: "s5",
+    stepType: "dialog",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-V",
+    quellen: ["Q8 S.339-342"],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "SZENE",
+    contentC1: {
+      title: "Warum hat das Gespräch geholfen?",
+      body: "Yasemin erinnert sich an Herr Brenner aus Session 3.",
+    },
+    contentB1: {
+      title: "Gespräch als Pflege",
+      body: "Yasemin denkt an Herr Brenner. Warum hat das Gespräch ihm geholfen?",
+    },
+    question: {
+      fragetext: "Die Dozentin erklärt:",
+      dialogLines: [
+        { speaker: "Yasemin", text: "In der Praxis hatte ich einen Patienten — Herr Brenner. Er hat geweint. Ich habe einfach nur zugehört und es hat ihm geholfen." },
+        { speaker: "Dozentin", text: "Das was du beschreibst — das ist Peplau. Die therapeutische Beziehung als Pflegeinstrument." },
+        { speaker: "Yasemin", text: "Also war mein Zuhören nicht nur nett, sondern professionell?" },
+        { speaker: "Dozentin", text: "Genau. Peplau beschreibt 4 Phasen: Orientierung, Identifikation, Nutzung und Ablösung. Du warst in Phase 1 und 2." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB10: ERKLÄRUNG — Peplau + Meleis
+  // =============================================================
+  {
+    stepId: "le01-s5-tb10-02",
+    phase: "s5",
+    stepType: "text",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-V",
+    quellen: ["Q8 S.339-342", "Q4 S.133-135"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "ERKLÄRUNG",
+    imageUrl: "/images/content/le-01/peplau-phasen.svg",
+    imageAlt: "Grafik: Peplaus 4 Phasen der therapeutischen Beziehung",
+    contentC1: {
+      title: "Interaktionstheorien: Peplau & Meleis",
+      body: "Während Bedürfnistheorien fragen **was** der Patient braucht, fragen Interaktionstheorien **wie** die Beziehung zwischen Pflegenden und Patienten gestaltet wird.\n\n**Hildegard Peplau** (1909-1999) beschreibt 4 Phasen:\n1. **Orientierung** — Patient und Pflegende lernen sich kennen\n2. **Identifikation** — Patient erkennt Pflegende als Hilfe\n3. **Nutzung** — Patient nutzt die Beziehung für seine Genesung\n4. **Ablösung** — Patient wird unabhängig, Beziehung endet\n\n**Afaf Meleis** ordnete alle Pflegetheorien in 3 Schwerpunkte:\n- **Bedürfnistheorien** (Henderson, Orem, Roper, Krohwinkel)\n- **Interaktionstheorien** (Peplau, King)\n- **Ergebnistheorien** (Roy, Rogers)",
+      fallbezug: "Yasemin erkennt: Ihr Gespräch mit Herr Brenner war Phase 1 und 2 nach Peplau.",
+    },
+    contentB1: {
+      title: "Pflege durch Beziehung",
+      body: "**Peplau** sagt: Die Beziehung zwischen Pflegekraft und Patient ist selbst Pflege.\n\n4 Phasen:\n1. **Kennenlernen** — sich vorstellen, Vertrauen aufbauen\n2. **Erkennen** — der Patient sieht: Diese Person hilft mir\n3. **Nutzen** — der Patient akzeptiert Hilfe\n4. **Loslassen** — der Patient wird selbstständig\n\n**Meleis** hat alle Theorien sortiert:\n- Bedürfnis-Theorien (was braucht der Mensch?)\n- Beziehungs-Theorien (wie helfe ich ihm?)\n- Ergebnis-Theorien (was soll am Ende rauskommen?)",
+      fallbezug: "Yasemin versteht: Ihr Gespräch mit Herr Brenner war professionelle Pflege.",
+    },
+  },
+
+  // =============================================================
+  // TB10: ERKLÄRUNG — Timeline Peplau 4 Phasen
+  // =============================================================
+  {
+    stepId: "le01-s5-tb10-03",
+    phase: "s5",
+    stepType: "timeline",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-V",
+    quellen: ["Q8 S.339-340"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "ERKLÄRUNG",
+    contentC1: {
+      title: "Peplaus 4 Phasen im Verlauf",
+      body: "Eine therapeutische Beziehung verläuft in 4 Phasen — wie bei Yasemin und Herr Brenner.",
+    },
+    contentB1: {
+      title: "4 Phasen einer Pflege-Beziehung",
+      body: "Die Beziehung zwischen Pflegekraft und Patient hat 4 Schritte.",
+    },
+    question: {
+      fragetext: "Die 4 Phasen nach Peplau:",
+      timelineEvents: [
+        { year: "Phase 1", title: "Orientierung", description: "Patient und Pflegende treffen sich. Das Problem wird definiert. Vertrauen wird aufgebaut.", icon: "compass" },
+        { year: "Phase 2", title: "Identifikation", description: "Patient erkennt die Pflegende als Hilfe. Die Beziehung vertieft sich.", icon: "handshake" },
+        { year: "Phase 3", title: "Nutzung", description: "Patient nutzt die Beziehung aktiv für seine Genesung. Er stellt Fragen, akzeptiert Hilfe.", icon: "heart-pulse" },
+        { year: "Phase 4", title: "Ablösung", description: "Patient wird unabhängig. Die professionelle Beziehung endet. Erfolg wird reflektiert.", icon: "log-out" },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB10: CHECKPOINT — MC Peplau-Phase
+  // =============================================================
+  {
+    stepId: "le01-s5-tb10-04",
+    phase: "s5",
+    stepType: "mc",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-V",
+    quellen: ["Q8 S.339-340"],
+    track: "basis",
+    modus: "challenge",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "CHECKPOINT",
+    contentC1: {
+      title: "Kurzer Check!",
+      body: "In welcher Phase nach Peplau befindet sich diese Situation?",
+    },
+    contentB1: {
+      title: "Kurzer Check!",
+      body: "Welche Phase ist das?",
+    },
+    question: {
+      fragetext: "Yasemin sitzt bei Herr Brenner. Er erzählt von seiner verstorbenen Frau und weint. Yasemin hört zu. Er sagt: 'Du bist die Einzige, die mir zuhört.' — In welcher Peplau-Phase sind sie?",
+      options: [
+        { text: "Phase 2: Identifikation", isCorrect: true, explanation: "Richtig! Herr Brenner erkennt Yasemin als Hilfe und vertraut ihr. Er identifiziert sie als die Person, die ihm zuhört — das ist Phase 2." },
+        { text: "Phase 1: Orientierung", isCorrect: false, explanation: "Die Orientierungsphase ist das erste Kennenlernen. Herr Brenner kennt Yasemin bereits und vertraut ihr — er ist schon weiter." },
+        { text: "Phase 3: Nutzung", isCorrect: false, explanation: "In Phase 3 nutzt der Patient die Beziehung aktiv. Herr Brenner öffnet sich zwar, aber er nutzt die Hilfe noch nicht gezielt für seine Genesung." },
+        { text: "Phase 4: Ablösung", isCorrect: false, explanation: "Die Ablösung kommt erst wenn der Patient unabhängig wird. Herr Brenner braucht gerade noch Unterstützung." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB10: ANDERS_ERKLÄRT — Diagram Meleis 3 Schwerpunkte
+  // =============================================================
+  {
+    stepId: "le01-s5-tb10-05",
+    phase: "s5",
+    stepType: "diagram",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-V",
+    quellen: ["Q4 S.133-135"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "ANDERS_ERKLÄRT",
+    contentC1: {
+      title: "Drei Schwerpunkte nach Meleis",
+      body: "Meleis sortiert alle Pflegetheorien in 3 Gruppen. So behältst du den Überblick.",
+    },
+    contentB1: {
+      title: "3 Gruppen von Theorien",
+      body: "Alle Pflegetheorien passen in 3 Gruppen. Schau dir das Bild an.",
+    },
+    question: {
+      fragetext: "Mindmap: Meleis' 3 Schwerpunkte",
+      diagramType: "mindmap",
+      nodes: [
+        { id: "center", label: "Pflegetheorien (Meleis)", level: 0 },
+        { id: "needs", label: "Bedürfnis", level: 1, parent: "center" },
+        { id: "interaction", label: "Interaktion", level: 1, parent: "center" },
+        { id: "outcome", label: "Ergebnis", level: 1, parent: "center" },
+        { id: "n1", label: "Henderson, Orem, Roper, Krohwinkel", level: 2, parent: "needs" },
+        { id: "i1", label: "Peplau, King", level: 2, parent: "interaction" },
+        { id: "o1", label: "Roy, Rogers", level: 2, parent: "outcome" },
+        { id: "nq", label: "Frage: WAS braucht der Mensch?", level: 2, parent: "needs" },
+        { id: "iq", label: "Frage: WIE gestalten wir die Beziehung?", level: 2, parent: "interaction" },
+        { id: "oq", label: "Frage: WAS soll erreicht werden?", level: 2, parent: "outcome" },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB10: ERKLÄRUNG — Reveal Umsetzung + Reichweiten
+  // =============================================================
+  {
+    stepId: "le01-s5-tb10-06",
+    phase: "s5",
+    stepType: "reveal",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-V",
+    quellen: ["Q4 S.136-138"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "ERKLÄRUNG",
+    contentC1: {
+      title: "Von der Theorie zur Praxis",
+      body: "Wie werden Pflegetheorien in der Praxis umgesetzt? Entdecke die 4 Stufen.",
+    },
+    contentB1: {
+      title: "Theorie in der Praxis",
+      body: "Wie nutzt man Pflegetheorien auf Station? Tippe auf die Karten.",
+    },
+    question: {
+      fragetext: "4 Stufen der Umsetzung:",
+      revealItems: [
+        { icon: "book-open", label: "Verstehen", detail: "Die Theorie kennen und erklären können — z. B. Orems Selbstpflegedefizit." },
+        { icon: "clipboard", label: "Anwenden", detail: "Die Theorie bei einem konkreten Patienten nutzen — z. B. Pflegeplanung nach AEDL." },
+        { icon: "puzzle", label: "Integrieren", detail: "Mehrere Theorien kombinieren — z. B. AEDL-Struktur + Peplau-Beziehung." },
+        { icon: "lightbulb", label: "Generieren", detail: "Eigene Erkenntnisse ableiten — z. B. neue Pflegeinterventionen entwickeln." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB10: ANWENDUNG — TrueFalse
+  // =============================================================
+  {
+    stepId: "le01-s5-tb10-07",
+    phase: "s5",
+    stepType: "truefalse",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-V",
+    quellen: ["Q4 S.119-138", "Q8 S.321-342"],
+    track: "basis",
+    modus: "challenge",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Stimmt das?",
+      body: "Teste dein Wissen über Pflegetheorien — richtig oder falsch?",
+    },
+    contentB1: {
+      title: "Richtig oder falsch?",
+      body: "Lies jede Aussage. Stimmt sie?",
+    },
+    question: {
+      fragetext: "Wische: Stimmt oder stimmt nicht?",
+      cards: [
+        { statement: "Peplau gehört zu den Interaktionstheorien.", isTrue: true, explanation: "Richtig! Peplau fokussiert auf die therapeutische Beziehung zwischen Pflegenden und Patienten." },
+        { statement: "Krohwinkels AEDL-Modell hat 14 Aktivitäten.", isTrue: false, explanation: "Falsch! Krohwinkel hat 13 AEDL (Aktivitäten und existenzielle Erfahrungen des Lebens). Henderson hat 14 Grundbedürfnisse." },
+        { statement: "Das Metaparadigma umfasst 4 Konzepte: Person, Umgebung, Gesundheit, Pflege.", isTrue: true, explanation: "Richtig! Diese 4 Konzepte bilden den Kern aller Pflegetheorien." },
+        { statement: "Orem will den Patienten abhängig von Pflege machen.", isTrue: false, explanation: "Genau das Gegenteil! Orems Ziel ist es, den Patienten zur Selbstpflege zu befähigen — Pflege soll sich überflüssig machen." },
+        { statement: "Meleis unterscheidet Bedürfnis-, Interaktions- und Ergebnistheorien.", isTrue: true, explanation: "Richtig! Meleis ordnete alle Pflegetheorien in diese 3 Schwerpunkte." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB10: REFLEXION
+  // =============================================================
+  {
+    stepId: "le01-s5-tb10-08",
+    phase: "s5",
+    stepType: "reflection",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-V",
+    quellen: [],
+    track: "vertiefung",
+    modus: "schreibtisch",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "REFLEXION",
+    contentC1: {
+      title: "Welche Theorie passt zu dir?",
+      body: "Du hast verschiedene Pflegetheorien kennengelernt. Welche spricht dich an — und warum?",
+    },
+    contentB1: {
+      title: "Was denkst du?",
+      body: "Welche Theorie gefällt dir am besten? Warum?",
+    },
+    question: {
+      fragetext: "Welche Pflegetheorie passt am besten zu deinem Bild von Pflege? Begründe deine Wahl.",
+      satzanfaenge: [
+        "Mir gefällt die Theorie von...",
+        "Weil sie...",
+        "Auf Station würde ich damit...",
+      ],
+      minWords: 20,
+    },
+  },
+
+  // =============================================================
+  // Session-Abschluss: Crossword
+  // =============================================================
+  {
+    stepId: "le01-s5-bk-02",
     phase: "s5",
     stepType: "crossword",
     bloomLevel: 2,
     kompetenzbereich: "KB-V",
-    quellen: ["Q4 S.119-126"],
+    quellen: [],
     track: "vertiefung",
     modus: "puzzle",
     lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
-      title: "Kreuzwortraetsel: Pflegetheorien",
-      body: "Teste dein Wissen ueber die wichtigsten Begriffe der Pflegetheorien.",
+      title: "Kreuzworträtsel Pflegetheorien",
+      body: "Finde die 7 Begriffe aus der heutigen Session!",
     },
     contentB1: {
-      title: "Kreuzwortraetsel: Pflegetheorien",
-      body: "Wie gut kennst du die Begriffe? Loesche das Raetsel.",
+      title: "Kreuzworträtsel",
+      body: "Finde 7 Wörter! Lies die Hinweise.",
     },
     question: {
-      fragetext: "Loese das Kreuzwortraetsel mit 6 Begriffen aus den Pflegetheorien.",
-      crosswordWords: [
-        { word: "METAPARADIGMA", clue: "Die 4 Schluesselkonzepte der Pflegewissenschaft" },
-        { word: "SELBSTPFLEGE", clue: "Orems Kernbegriff: Was der Mensch eigenstaendig fuer sich tut" },
-        { word: "ABEDL", clue: "Krohwinkels 13 Bereiche (Abkuerzung)" },
-        { word: "HENDERSON", clue: "Formulierte 14 Grundbeduerfnisse — Urmutter der Pflegetheorien" },
-        { word: "BEDUERFNISTHEORIE", clue: "Theorie-Typ, der fragt: Was tun Pflegende?" },
-        { word: "LEBENSAKTIVITAETEN", clue: "12 Bereiche nach Roper-Logan-Tierney" },
+      fragetext: "Finde die 7 Begriffe:",
+      words: [
+        { word: "METAPARADIGMA", clue: "Die 4 Grundkonzepte aller Pflegetheorien" },
+        { word: "PEPLAU", clue: "Therapeutische Beziehung in 4 Phasen" },
+        { word: "OREM", clue: "Selbstpflegedefizit-Theorie" },
+        { word: "AEDL", clue: "13 Aktivitäten und existenzielle Erfahrungen des Lebens" },
+        { word: "HENDERSON", clue: "14 Grundbedürfnisse" },
+        { word: "ROPER", clue: "12 Lebensaktivitäten" },
+        { word: "MELEIS", clue: "Ordnete Theorien in 3 Schwerpunkte" },
       ],
     },
   },
 
   // =============================================================
-  // Step 21: Freetext — Theorie-Wechsel bei Herr Brenner (SCHREIBTISCH)
+  // Interleaving: Swipe (10%)
   // =============================================================
   {
-    stepId: "le01-s5-21",
+    stepId: "le01-s5-bk-03",
     phase: "s5",
-    stepType: "freetext",
-    bloomLevel: 4,
+    stepType: "swipe",
+    bloomLevel: 2,
     kompetenzbereich: "KB-V",
-    quellen: ["Q4 S.120-129"],
+    quellen: [],
     track: "vertiefung",
-    modus: "schreibtisch",
+    modus: "challenge",
     lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
-      title: "Theorie-Wechsel: Herr Brenner",
-      body: "Herr Brenner (82) wird bisher nach dem Orem-Modell betreut. Sein Hauptproblem ist Trauer — er kann sich koerperlich selbst versorgen, braucht aber emotionale Begleitung.",
-      fallbezug: "Herr Brenner, 82, trauert — Orem-Modell reicht nicht",
+      title: "Quick-Recall!",
+      body: "Erinnerst du dich? 3x Theorien + 1x Ethik + 1x Kommunikation.",
     },
     contentB1: {
-      title: "Passt Orem noch zu Herr Brenner?",
-      body: "Herr Brenner (82) wird nach Orem gepflegt. Aber sein Problem ist Trauer. Er kann sich selbst waschen und essen. Er braucht jemanden zum Reden.",
-      fallbezug: "Herr Brenner braucht mehr als Koerperpflege",
+      title: "Schnell-Check!",
+      body: "Was weißt du noch? Wische nach rechts (stimmt) oder links (stimmt nicht).",
     },
     question: {
-      fragetext: "Passt das Orem-Modell noch zu Herr Brenner? Wenn nein, welche Theorie waere besser geeignet und warum?",
-      musterantwort: "Orem fokussiert auf physische Selbstpflegedefizite — Herr Brenner kann sich aber selbst waschen und essen. Sein Hauptproblem ist Trauer. Peplaus Interaktionstheorie waere besser geeignet: Die Beziehung steht im Mittelpunkt, das therapeutische Gespraech hat selbst eine heilende Wirkung. Die Pflegeplanung wuerde sich aendern: statt 'Hilfe bei der Koerperpflege' zu 'Regelmaessige Gespraechsangebote und emotionale Unterstuetzung'.",
-      bewertungskriterien: [
-        "Erkennt, dass Orem auf physische Defizite fokussiert und Herr Brenner keine hat",
-        "Nennt Peplaus Interaktionstheorie als Alternative",
-        "Begruendet den Wechsel mit dem Fokus auf die therapeutische Beziehung",
-        "Beschreibt, wie sich die Pflegeplanung aendern wuerde",
-      ],
-      satzanfaengeB1: [
-        "Orem passt nicht gut, weil...",
-        "Besser waere die Theorie von...",
-        "Die Pflege wuerde sich aendern: statt... jetzt...",
+      fragetext: "Stimmt das?",
+      cards: [
+        { statement: "Orems Ziel: Selbstpflege fördern.", isTrue: true, explanation: "Richtig! Orem will den Patienten befähigen, sich selbst zu pflegen." },
+        { statement: "Peplau hat 6 Phasen der Beziehung.", isTrue: false, explanation: "Falsch! Peplau hat 4 Phasen: Orientierung, Identifikation, Nutzung, Ablösung." },
+        { statement: "Roper beschreibt 12 Lebensaktivitäten.", isTrue: true, explanation: "Richtig! Roper, Logan und Tierney beschrieben 12 LA." },
+        { statement: "Autonomie ist ein ethisches Prinzip nach Beauchamp/Childress.", isTrue: true, explanation: "Richtig! Die 4 Prinzipien sind: Autonomie, Benefizienz, Nonmalefizienz, Gerechtigkeit (S4-Stoff)." },
+        { statement: "Man kann nicht nicht kommunizieren — das sagte Rogers.", isTrue: false, explanation: "Das war Watzlawick, nicht Rogers! Rogers formulierte: Empathie, Kongruenz, Wertschätzung (S3-Stoff)." },
       ],
     },
   },
 
   // =============================================================
-  // Step 22: Summary — Session-Abschluss (CHECKPOINT)
+  // Session-Bookend: Summary
   // =============================================================
   {
-    stepId: "le01-s5-22",
+    stepId: "le01-s5-bk-04",
     phase: "s5",
     stepType: "summary",
     bloomLevel: 3,
     kompetenzbereich: "KB-V",
-    quellen: ["Q3 S.101-103", "Q4 S.119-126"],
+    quellen: [],
     track: "basis",
     modus: "checkpoint",
     lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "CHECKPOINT",
     contentC1: {
-      title: "Zusammenfassung: Pflegetheorien I",
-      body: "Du hast die Grundlagen der Pflegewissenschaft und die Beduerfnistheorien kennengelernt. In der naechsten Session geht es um Interaktionstheorien, EBN und Pflegeforschung.",
+      title: "Das hast du heute gelernt",
+      body: "Session 5 ist geschafft! Pflegetheorien sind nicht trocken — sie bestimmen, wie du pflegst.",
     },
     contentB1: {
-      title: "Das hast du heute gelernt",
-      body: "Du kennst jetzt die Grundlagen der Pflegewissenschaft und die Beduerfnistheorien. Naechstes Mal lernst du mehr ueber Pflegeforschung.",
+      title: "Zusammenfassung",
+      body: "Das hast du heute gelernt. Gut gemacht!",
     },
     question: {
-      fragetext: "Das sind die wichtigsten Erkenntnisse dieser Session.",
-      summary: {
-        reflexionRueckbezug: "In Step 2 hast du ueberlegt, was zuverlaessiges Wissen ist. Jetzt weisst du: Forschung und Theorie sind die Basis — nicht Tradition oder Bauchgefuehl.",
-        kernaussagen: [
-          "Die 4 Schluesselkonzepte der Pflege (Metaparadigma): Person, Umwelt, Wohlbefinden und pflegerisches Handeln.",
-          "3 Theorie-Typen: Beduerfnistheorien (Was?), Interaktionstheorien (Wie?), Ergebnistheorien (Warum?).",
-          "Orem unterscheidet 3 Pflegesysteme: vollstaendig kompensatorisch, teilkompensatorisch, unterstuetzend-edukativ.",
-          "Krohwinkels ABEDL-Modell mit 13 Bereichen ist das verbreitetste Pflegemodell in Deutschland.",
-        ],
-      },
+      fragetext: "Deine 4 Kernaussagen aus Session 5:",
+      summaryPoints: [
+        "**Metaparadigma:** Alle Pflegetheorien drehen sich um Person, Umgebung, Gesundheit und Pflege.",
+        "**Bedürfnistheorien** (Henderson, Orem, Roper, Krohwinkel) fragen: Was braucht der Mensch?",
+        "**Interaktionstheorien** (Peplau) fragen: Wie gestalten wir die Pflege-Beziehung?",
+        "**Meleis** ordnet alle Theorien in 3 Schwerpunkte: Bedürfnis, Interaktion, Ergebnis.",
+      ],
     },
   },
 ];

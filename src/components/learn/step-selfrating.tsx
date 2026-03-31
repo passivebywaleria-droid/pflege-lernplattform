@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
+import { HandDrawnIcon, type IconName } from "@/components/ui/hand-drawn-icon";
 
 interface StepSelfratingProps {
   title: string;
@@ -13,12 +14,12 @@ interface StepSelfratingProps {
   onNext: (rating: number) => void;
 }
 
-const RATINGS = [
-  { value: 1, emoji: "😶", label: "Noch nie gehoert" },
-  { value: 2, emoji: "🤔", label: "Vage Idee" },
-  { value: 3, emoji: "🙂", label: "Grundlagen bekannt" },
-  { value: 4, emoji: "😊", label: "Kann es erklaeren" },
-  { value: 5, emoji: "🤩", label: "Sicher im Thema" },
+const RATINGS: { value: number; icon: IconName; color: string; label: string }[] = [
+  { value: 1, icon: "neutral", color: "#86868b", label: "Noch nie gehört" },
+  { value: 2, icon: "thinking", color: "#FF9500", label: "Vage Idee" },
+  { value: 3, icon: "smile", color: "#5AC8FA", label: "Grundlagen bekannt" },
+  { value: 4, icon: "grin", color: "#30D158", label: "Kann es erklären" },
+  { value: 5, icon: "starry-eyes", color: "#AF52DE", label: "Sicher im Thema" },
 ];
 
 export function StepSelfrating({
@@ -60,7 +61,7 @@ export function StepSelfrating({
                 : "border-[#d2d2d7] bg-white"
             }`}
           >
-            <span className="text-2xl">{r.emoji}</span>
+            <HandDrawnIcon name={r.icon} size={28} color={rating === r.value ? r.color : "#86868b"} />
             <span className="text-[10px] leading-tight text-center text-[#6e6e73] font-medium">
               {r.label}
             </span>

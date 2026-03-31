@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" fill="#f8f9fa"/>
+  <!-- Linke Niere -->
+  <path d="M120 60 C150 60, 170 85, 170 120 C170 155, 150 180, 120 180 C110 180, 105 170, 103 160 C101 150, 103 140, 108 135 C113 130, 113 120, 108 115 C103 110, 101 100, 103 90 C105 80, 110 60, 120 60Z" fill="#e8c4c4" stroke="#c0392b" stroke-width="2"/>
+  <!-- Nierenbecken links -->
+  <ellipse cx="140" cy="120" rx="12" ry="20" fill="#ffeaa7" stroke="#f39c12" stroke-width="1"/>
+  <!-- Rechte Niere -->
+  <path d="M280 60 C310 60, 330 85, 330 120 C330 155, 310 180, 280 180 C270 180, 265 170, 263 160 C261 150, 263 140, 268 135 C273 130, 273 120, 268 115 C263 110, 261 100, 263 90 C265 80, 270 60, 280 60Z" fill="#e8c4c4" stroke="#c0392b" stroke-width="2"/>
+  <!-- Nierenbecken rechts -->
+  <ellipse cx="300" cy="120" rx="12" ry="20" fill="#ffeaa7" stroke="#f39c12" stroke-width="1"/>
+  <!-- Nebenniere links -->
+  <path d="M105 50 Q120 30, 135 50" fill="#f0d090" stroke="#d4a060" stroke-width="1.5"/>
+  <!-- Nebenniere rechts -->
+  <path d="M265 50 Q280 30, 295 50" fill="#f0d090" stroke="#d4a060" stroke-width="1.5"/>
+  <!-- Harnleiter links -->
+  <path d="M140 140 Q135 180, 140 220 Q145 260, 170 290 Q185 310, 190 320" stroke="#f39c12" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Harnleiter rechts -->
+  <path d="M300 140 Q305 180, 300 220 Q295 260, 270 290 Q255 310, 250 320" stroke="#f39c12" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Harnblase -->
+  <ellipse cx="220" cy="340" rx="50" ry="35" fill="#dfe6f0" stroke="#3498db" stroke-width="2"/>
+  <!-- Harnroehre -->
+  <path d="M220 375 L220 395" stroke="#3498db" stroke-width="5" stroke-linecap="round"/>
+  <!-- Aorta -->
+  <path d="M200 20 L200 200" stroke="#e74c3c" stroke-width="3" opacity="0.5"/>
+  <!-- V. cava -->
+  <path d="M210 20 L210 200" stroke="#3498db" stroke-width="3" opacity="0.5"/>
+  <!-- Nierenarterie links -->
+  <path d="M200 100 Q170 100, 150 110" stroke="#e74c3c" stroke-width="2"/>
+  <!-- Nierenarterie rechts -->
+  <path d="M200 100 Q240 100, 270 110" stroke="#e74c3c" stroke-width="2"/>
+  <!-- Nierenvene links -->
+  <path d="M210 110 Q175 115, 150 120" stroke="#3498db" stroke-width="2"/>
+  <!-- Nierenvene rechts -->
+  <path d="M210 110 Q245 115, 270 120" stroke="#3498db" stroke-width="2"/>
+  <!-- Titel -->
+  <text x="200" y="15" font-family="system-ui" font-size="12" fill="#1d1d1f" text-anchor="middle" font-weight="700">Harnwege — Schema</text>
+</svg>

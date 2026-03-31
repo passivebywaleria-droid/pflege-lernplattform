@@ -1,0 +1,905 @@
+{
+  "project": "Content-Pipeline v2 — 55 LEs Steps generieren",
+  "version": "2.0",
+  "totalLEs": 55,
+  "pipeline": "4 Schritte: Sessionplan → Steps → Prüfung → Abschluss",
+  "stories": [
+    {
+      "id": "ce-01-le-01",
+      "leId": "le-01-personen--und-situationsorientiert-profe",
+      "ceIds": [
+        "ce-01",
+        "ce-03"
+      ],
+      "title": "Personen- und situationsorientiert professionell pflegen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "V.1",
+      "status": "steps-fertig",
+      "rohmaterial": true,
+      "sessionplan": true,
+      "steps": true,
+      "geprueft": false
+    },
+    {
+      "id": "ce-01-le-02",
+      "leId": "le-02-ein-erstes-berufliches-selbstverstaendni",
+      "ceIds": [
+        "ce-01"
+      ],
+      "title": "Ein erstes berufliches Selbstverständnis entwickeln",
+      "zeitrichtwert": 20,
+      "sessionCount": 4,
+      "kbSchwerpunkt": "V.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-01-le-03",
+      "leId": "le-03-verantwortung-fuer-die-persoenliche-weit",
+      "ceIds": [
+        "ce-01"
+      ],
+      "title": "Verantwortung für die persönliche Weiterentwicklung übernehmen",
+      "zeitrichtwert": 20,
+      "sessionCount": 4,
+      "kbSchwerpunkt": "V.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-01-le-04",
+      "leId": "le-04-ausbildungs--und-berufsbezogene-rechte-u",
+      "ceIds": [
+        "ce-01"
+      ],
+      "title": "Ausbildungs- und berufsbezogene Rechte und Pflichten überblicken",
+      "zeitrichtwert": 20,
+      "sessionCount": 4,
+      "kbSchwerpunkt": "V.2+IV.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-02-le-05",
+      "leId": "le-05-pflege-prozesshaft-gestalten",
+      "ceIds": [
+        "ce-02"
+      ],
+      "title": "Pflege prozesshaft gestalten",
+      "zeitrichtwert": 30,
+      "sessionCount": 6,
+      "kbSchwerpunkt": "I.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-02-le-06",
+      "leId": "le-06-menschen-aller-altersstufen-in-ihrer-mob",
+      "ceIds": [
+        "ce-02"
+      ],
+      "title": "Menschen aller Altersstufen in ihrer Mobilität unterstützen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-02-le-07",
+      "leId": "le-07-die-haut--und-koerperpflege-bei-menschen",
+      "ceIds": [
+        "ce-02"
+      ],
+      "title": "Die Haut- und Körperpflege bei Menschen aller Altersstufen durchführen",
+      "zeitrichtwert": 50,
+      "sessionCount": 10,
+      "kbSchwerpunkt": "I.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-02-le-08",
+      "leId": "le-08-menschen-aller-altersstufen-bei-der-erna",
+      "ceIds": [
+        "ce-02"
+      ],
+      "title": "Menschen aller Altersstufen bei der Ernährung unterstützen",
+      "zeitrichtwert": 30,
+      "sessionCount": 6,
+      "kbSchwerpunkt": "I.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-02-le-09",
+      "leId": "le-09-menschen-aller-altersstufen-bei-ausschei",
+      "ceIds": [
+        "ce-02"
+      ],
+      "title": "Menschen aller Altersstufen bei Ausscheidungsvorgängen unterstützen",
+      "zeitrichtwert": 30,
+      "sessionCount": 6,
+      "kbSchwerpunkt": "I.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-03-le-10",
+      "leId": "le-10-praxiserfahrungen-reflektieren",
+      "ceIds": [
+        "ce-03"
+      ],
+      "title": "Praxiserfahrungen reflektieren",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "II.3",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-03-le-11",
+      "leId": "le-11-mit-menschen-aller-altersstufen-personen",
+      "ceIds": [
+        "ce-03",
+        "ce-04"
+      ],
+      "title": "Mit Menschen aller Altersstufen personen- und situationsorientiert kommunizieren",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "II.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-04-le-12",
+      "leId": "le-12-gesundheitsfoerdernde-massnahmen-fuer-me",
+      "ceIds": [
+        "ce-04"
+      ],
+      "title": "Gesundheitsfördernde Maßnahmen für Menschen aller Altersstufen ergreifen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-10-le-13",
+      "leId": "le-13-kinder-mit-atemwegserkrankungen-pflegen",
+      "ceIds": [
+        "ce-10"
+      ],
+      "title": "Kinder mit Atemwegserkrankungen pflegen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-05-le-14",
+      "leId": "le-14-menschen-aller-altersstufen-mit-trauma-b",
+      "ceIds": [
+        "ce-05"
+      ],
+      "title": "Menschen aller Altersstufen mit Trauma bedingten Verletzungen im Bewegungssystem pflegen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-06-le-15",
+      "leId": "le-15-in-notfall--und-katastrophensituationen",
+      "ceIds": [
+        "ce-06"
+      ],
+      "title": "In Notfall- und Katastrophensituationen handeln",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.4",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-05-le-16",
+      "leId": "le-16-in-kurativen-prozessen-fuer-menschen-in",
+      "ceIds": [
+        "ce-05",
+        "ce-06"
+      ],
+      "title": "In kurativen Prozessen für Menschen in akut bedrohlichen Herz-Kreislauf-Situationen mitwirken",
+      "zeitrichtwert": 50,
+      "sessionCount": 10,
+      "kbSchwerpunkt": "III.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-05-le-17",
+      "leId": "le-17-bei-der-diagnostik-und-therapie-von-mens",
+      "ceIds": [
+        "ce-05",
+        "ce-06"
+      ],
+      "title": "Bei der Diagnostik und Therapie von Menschen mit akutem Abdomen mitwirken",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "III.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-05-le-18",
+      "leId": "le-18-professionelle-pflegehandlungen-unter-be",
+      "ceIds": [
+        "ce-05",
+        "ce-07",
+        "ce-08"
+      ],
+      "title": "Professionelle Pflegehandlungen unter Berücksichtigung verschiedener Versorgungs- und Abrechnungssysteme erbringen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "IV.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-04-le-19",
+      "leId": "le-19-die-qualitaet-der-pflegerischen-leistung",
+      "ceIds": [
+        "ce-04",
+        "ce-07"
+      ],
+      "title": "Die Qualität der pflegerischen Leistung sicherstellen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "IV.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-05-le-20",
+      "leId": "le-20-im-interdisziplinaeren-team-mitwirken",
+      "ceIds": [
+        "ce-05",
+        "ce-07"
+      ],
+      "title": "Im interdisziplinären Team mitwirken",
+      "zeitrichtwert": 20,
+      "sessionCount": 4,
+      "kbSchwerpunkt": "III.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-05-le-21",
+      "leId": "le-21-bei-diagnostischen-und-therapeutischen-m",
+      "ceIds": [
+        "ce-05",
+        "ce-08"
+      ],
+      "title": "Bei diagnostischen und therapeutischen Maßnahmen mitwirken",
+      "zeitrichtwert": 20,
+      "sessionCount": 4,
+      "kbSchwerpunkt": "III.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-07-le-22",
+      "leId": "le-22-an-rheumatischen-erkrankungen-leidende-m",
+      "ceIds": [
+        "ce-07"
+      ],
+      "title": "An rheumatischen Erkrankungen leidende Menschen rehabilitativ unterstützen und pflegen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-09-le-23",
+      "leId": "le-23-menschen-aller-altersstufen-unter-beruec",
+      "ceIds": [
+        "ce-09"
+      ],
+      "title": "Menschen aller Altersstufen unter Berücksichtigung ihrer persönlichen Lebenswelt zu Hause pflegen, beraten und begleiten",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "II.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-09-le-24",
+      "leId": "le-24-menschen-aller-altersstufen-zum-umgang-m",
+      "ceIds": [
+        "ce-09"
+      ],
+      "title": "Menschen aller Altersstufen zum Umgang mit Diabetes mellitus informieren und beraten",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "II.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-08-le-25",
+      "leId": "le-25-menschen-mit-schwerwiegenden-chronischen",
+      "ceIds": [
+        "ce-08"
+      ],
+      "title": "Menschen mit schwerwiegenden chronischen respiratorischen Beeinträchtigungen pflegen und unterstützen",
+      "zeitrichtwert": 30,
+      "sessionCount": 6,
+      "kbSchwerpunkt": "I.3",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-05-le-26",
+      "leId": "le-26-aerztliche-anordnungen-eigenverantwortli",
+      "ceIds": [
+        "ce-05",
+        "ce-08"
+      ],
+      "title": "Ärztliche Anordnungen eigenverantwortlich umsetzen",
+      "zeitrichtwert": 30,
+      "sessionCount": 6,
+      "kbSchwerpunkt": "III.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-08-le-27",
+      "leId": "le-27-menschen-aller-altersstufen-mit-beeintra",
+      "ceIds": [
+        "ce-08"
+      ],
+      "title": "Menschen aller Altersstufen mit Beeinträchtigungen und Erkrankungen der Sinnesorgane pflegen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.3",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-08-le-28",
+      "leId": "le-28-sterbende-menschen-und-ihre-angehoerigen",
+      "ceIds": [
+        "ce-08"
+      ],
+      "title": "Sterbende Menschen und ihre Angehörigen in ihrer häuslichen Umgebung pflegen und begleiten",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "II.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-09-le-29",
+      "leId": "le-29-individuelle-lebensentwuerfe-und-lebensv",
+      "ceIds": [
+        "ce-09"
+      ],
+      "title": "Individuelle Lebensentwürfe und Lebensverläufe im Pflegehandeln aufgreifen",
+      "zeitrichtwert": 30,
+      "sessionCount": 6,
+      "kbSchwerpunkt": "I.5",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-09-le-30",
+      "leId": "le-30-lebensweltorientierende-pflegehandlungen",
+      "ceIds": [
+        "ce-09"
+      ],
+      "title": "Lebensweltorientierende Pflegehandlungen ergreifen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.5",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-05-le-31",
+      "leId": "le-31-infektionsgefaehrdungen-einschaetzen",
+      "ceIds": [
+        "ce-05",
+        "ce-10"
+      ],
+      "title": "Infektionsgefährdungen einschätzen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-05-le-32",
+      "leId": "le-32-hygienische-und-gesundheitsfoerdernde-ma",
+      "ceIds": [
+        "ce-05",
+        "ce-10"
+      ],
+      "title": "Hygienische und gesundheitsfördernde Maßnahmen zur Infektionsverhütung ergreifen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-10-le-33",
+      "leId": "le-33-in-der-perinatalen-pflege-mitwirken",
+      "ceIds": [
+        "ce-10"
+      ],
+      "title": "In der perinatalen Pflege mitwirken",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "III.3",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-11-le-34",
+      "leId": "le-34-bei-der-begleitung-und-pflege-psychisch",
+      "ceIds": [
+        "ce-11"
+      ],
+      "title": "Bei der Begleitung und Pflege psychisch kranker Kinder und Jugendlicher mitwirken",
+      "zeitrichtwert": 20,
+      "sessionCount": 4,
+      "kbSchwerpunkt": "I.3",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-11-le-35",
+      "leId": "le-35-die-lebensqualitaet-der-an-demenz-erkran",
+      "ceIds": [
+        "ce-11"
+      ],
+      "title": "Die Lebensqualität der an Demenz erkrankten Menschen fördern",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.3",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-11-le-36",
+      "leId": "le-36-suchtkranke-menschen-und-ihre-angehoerig",
+      "ceIds": [
+        "ce-11"
+      ],
+      "title": "Suchtkranke Menschen und ihre Angehörigen bei der Alltagsgestaltung unterstützen",
+      "zeitrichtwert": 20,
+      "sessionCount": 4,
+      "kbSchwerpunkt": "I.3",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-11-le-37",
+      "leId": "le-37-demenz-aus-interkultureller-perspektive",
+      "ceIds": [
+        "ce-11"
+      ],
+      "title": "Demenz aus interkultureller Perspektive deuten",
+      "zeitrichtwert": 20,
+      "sessionCount": 4,
+      "kbSchwerpunkt": "II.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-08-le-38",
+      "leId": "le-38-die-individuellen-faehigkeiten-von-mensc",
+      "ceIds": [
+        "ce-08"
+      ],
+      "title": "Die individuellen Fähigkeiten von Menschen mit Demenz aus interkultureller Perspektive deuten",
+      "zeitrichtwert": 30,
+      "sessionCount": 6,
+      "kbSchwerpunkt": "II.3",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-04-le-39",
+      "leId": "le-39-angehoerige-im-umgang-mit-demenziell-ver",
+      "ceIds": [
+        "ce-04"
+      ],
+      "title": "Angehörige im Umgang mit demenziell veränderten Menschen und in der Erhaltung der eigenen Gesundheit unterstützen",
+      "zeitrichtwert": 30,
+      "sessionCount": 6,
+      "kbSchwerpunkt": "II.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-04-le-40",
+      "leId": "le-40-die-immunabwehr-von-menschen-mit-onkolog",
+      "ceIds": [
+        "ce-04"
+      ],
+      "title": "Die Immunabwehr von Menschen mit onkologischen Erkrankungen unterstützen und Sekundärinfektionen vermeiden",
+      "zeitrichtwert": 30,
+      "sessionCount": 6,
+      "kbSchwerpunkt": "I.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-08-le-41",
+      "leId": "le-41-tumor--und-therapiebedingte-leiden-linde",
+      "ceIds": [
+        "ce-08"
+      ],
+      "title": "Tumor- und therapiebedingte Leiden lindern und das Wohlbefinden fördern",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-05-le-42",
+      "leId": "le-42-menschen-mit-chronischen-wunden-pflegen",
+      "ceIds": [
+        "ce-05"
+      ],
+      "title": "Menschen mit chronischen Wunden pflegen und unterstützen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-05-le-43",
+      "leId": "le-43-menschen-aller-altersstufen-mit-akuten-e",
+      "ceIds": [
+        "ce-05"
+      ],
+      "title": "Menschen aller Altersstufen mit akuten Erkrankungen und Störungen des Urogenitalsystems pflegen",
+      "zeitrichtwert": 30,
+      "sessionCount": 6,
+      "kbSchwerpunkt": "I.3",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-09-le-44",
+      "leId": "le-44-institutionelle-und-rechtliche-rahmenbed",
+      "ceIds": [
+        "ce-09"
+      ],
+      "title": "Institutionelle und rechtliche Rahmenbedingungen ambulanter Pflegeeinrichtungen im Pflegehandeln berücksichtigen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "IV.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-05-le-45",
+      "leId": "le-45-die-qualitaet-der-pflege-in-den-verschie",
+      "ceIds": [
+        "ce-05",
+        "ce-08",
+        "ce-09"
+      ],
+      "title": "Die Qualität der Pflege in den verschiedenen Institutionen sicherstellen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "IV.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-05-le-46",
+      "leId": "le-46-verantwortung-fuer-die-prozesssteuerung",
+      "ceIds": [
+        "ce-05"
+      ],
+      "title": "Verantwortung für die Prozesssteuerung im Krankenhaus übernehmen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "III.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-07-le-47",
+      "leId": "le-47-prozesse-der-geriatrischen-komplexbehand",
+      "ceIds": [
+        "ce-07",
+        "ce-11"
+      ],
+      "title": "Prozesse der geriatrischen Komplexbehandlung koordinieren und erforderliche Pflegehandlungen steuern und durchführen",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "III.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-07-le-48",
+      "leId": "le-48-bei-der-rehabilitation-von-menschen-mit",
+      "ceIds": [
+        "ce-07",
+        "ce-10"
+      ],
+      "title": "Bei der Rehabilitation von Menschen mit neurologischen Erkrankungen mitwirken",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-07-le-49",
+      "leId": "le-49-menschen-pflegen-und-bei-der-alltagsgest",
+      "ceIds": [
+        "ce-07"
+      ],
+      "title": "Menschen pflegen und bei der Alltagsgestaltung unterstützen, die einen Schlaganfall erlitten haben",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.3",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-04-le-50",
+      "leId": "le-50-pflegehandeln-an-aktuellen-pflegewissens",
+      "ceIds": [
+        "ce-04",
+        "ce-05"
+      ],
+      "title": "Pflegehandeln an aktuellen pflegewissenschaftlichen Erkenntnissen ausrichten",
+      "zeitrichtwert": 30,
+      "sessionCount": 6,
+      "kbSchwerpunkt": "V.1",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-05-le-51",
+      "leId": "le-51-als-angehoerige-der-berufsgruppe-der-pfl",
+      "ceIds": [
+        "ce-05"
+      ],
+      "title": "Als Angehörige der Berufsgruppe der Pflegenden agieren",
+      "zeitrichtwert": 30,
+      "sessionCount": 6,
+      "kbSchwerpunkt": "V.2",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-11-le-52",
+      "leId": "le-52-menschen-mit-psychischen-beeintraechtigu",
+      "ceIds": [
+        "ce-11"
+      ],
+      "title": "Menschen mit psychischen Beeinträchtigungen therapeutisch begleiten",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.3",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-10-le-53",
+      "leId": "le-53-bei-der-versorgung-fruehgeborener-kinder",
+      "ceIds": [
+        "ce-10"
+      ],
+      "title": "Bei der Versorgung frühgeborener Kinder mitwirken",
+      "zeitrichtwert": 40,
+      "sessionCount": 8,
+      "kbSchwerpunkt": "I.3",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-06-le-54",
+      "leId": "le-54-notfallsituationen-koordinieren",
+      "ceIds": [
+        "ce-06"
+      ],
+      "title": "Notfallsituationen koordinieren",
+      "zeitrichtwert": 30,
+      "sessionCount": 6,
+      "kbSchwerpunkt": "I.4",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    },
+    {
+      "id": "ce-06-le-55",
+      "leId": "le-55-zum-thema-organspende-und-organtransplan",
+      "ceIds": [
+        "ce-06"
+      ],
+      "title": "Zum Thema Organspende und Organtransplantation mitwirken",
+      "zeitrichtwert": 30,
+      "sessionCount": 6,
+      "kbSchwerpunkt": "I.4",
+      "status": "rohmaterial",
+      "rohmaterial": true,
+      "sessionplan": false,
+      "steps": false,
+      "geprueft": false
+    }
+  ]
+}

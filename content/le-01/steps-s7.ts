@@ -1,1003 +1,734 @@
-// Session 7: "Andere Patienten, gleiche Prinzipien" — LE 01
-// Generiert vom Content-Generator v2
-// Themen: Transfer auf neue Patienten, Rollen, Teamarbeit, Ethik
-// Leitfaelle: Ahmed Al-Rashid (78, syrisch) + Jonas Berger (8, nach OP)
+// Session 7: "Alles zusammen" — LE 01 Personen- und situationsorientiert pflegen
+// Generiert vom Content-Generator v2.1 mit Phasen-Bogen
+// TB13a: Transfer Ahmed Al-Rashid + TB13b: Transfer Jonas Berger
 // Bloom: B3-B5, 22 Steps, ~30 Min
+// Interleaving: 15% (3x Recall aus S1-S6)
 
 import type { ContentStep } from "../_types";
 
 export const STEPS_S7: ContentStep[] = [
   // =============================================================
-  // Step 1: MC — Pruefungs-Recall (CHALLENGE)
+  // Session-Bookend: Transfer-Readiness
   // =============================================================
   {
-    stepId: "le01-s7-01",
+    stepId: "le01-s7-bk-01",
     phase: "s7",
-    stepType: "mc",
+    stepType: "selfrating",
     bloomLevel: 3,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q2 S.78-79"],
+    kompetenzbereich: "KB-V",
+    quellen: [],
     track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-pflegeprozess",
+    modus: "checkpoint",
+    lernziel: "ce01-le01-pflegebeziehung",
+    themenblockPhase: "CHECKPOINT",
     contentC1: {
-      title: "Pflegeprozess — Recall",
-      body: "Der Pflegeprozess nach Fiechter und Meier ist ein systematischer Kreislauf mit 6 Schritten.",
+      title: "Transfer-Check",
+      body: "Heute wendest du alles Gelernte auf neue Patienten an. Wie bereit fühlst du dich?",
     },
     contentB1: {
-      title: "Pflegeprozess — Was weisst du noch?",
-      body: "Der Pflegeprozess hat 6 Schritte. Die Schritte kommen immer in der gleichen Reihenfolge.",
+      title: "Bist du bereit?",
+      body: "Heute kommen neue Patienten. Kannst du dein Wissen anwenden?",
     },
     question: {
-      fragetext: "Welcher Schritt des Pflegeprozesses kommt NACH der Informationssammlung?",
-      optionen: [
-        {
-          text: "Pflegeprobleme und Ressourcen erkennen",
-          isCorrect: true,
-          explanation: "Richtig. Nach der Informationssammlung werden Probleme und Ressourcen identifiziert — das ist Schritt 2 nach Fiechter und Meier.",
-          explanationB1: "Richtig! Zuerst sammelt man Informationen. Dann erkennt man die Probleme.",
-        },
-        {
-          text: "Pflegeziele festlegen",
-          isCorrect: false,
-          explanation: "Pflegeziele kommen erst in Schritt 3 — nach der Problemerkennung. Ohne erkannte Probleme kann man keine Ziele formulieren.",
-          explanationB1: "Pflegeziele kommen spaeter. Zuerst muss man die Probleme erkennen.",
-        },
-        {
-          text: "Massnahmen durchfuehren",
-          isCorrect: false,
-          explanation: "Das Durchfuehren ist Schritt 5. Vorher muessen Probleme erkannt, Ziele gesetzt und Massnahmen geplant werden.",
-          explanationB1: "Massnahmen kommen erst spaeter. Es gibt noch drei Schritte davor.",
-        },
-        {
-          text: "Evaluation",
-          isCorrect: false,
-          explanation: "Die Evaluation ist der letzte Schritt (Schritt 6) des Pflegeprozesses — die Wirkungspruefung.",
-          explanationB1: "Evaluation ist der letzte Schritt. Er kommt ganz am Ende.",
-        },
+      fragetext: "Wie sicher fühlst du dich bei diesen Aussagen?",
+      statements: [
+        "Ich kann den Pflegeprozess auf einen neuen Patienten anwenden.",
+        "Ich erkenne kulturelle Besonderheiten in der Pflege.",
+        "Ich kann ethische Prinzipien bei Entscheidungen nutzen.",
+        "Ich bemerke Wahrnehmungsfehler bei mir selbst.",
       ],
     },
   },
 
   // =============================================================
-  // Step 2: Dialog — Herr Al-Rashid einfuehren (STORY)
+  // TB13a: SZENE — Ahmed Al-Rashid
   // =============================================================
   {
-    stepId: "le01-s7-02",
+    stepId: "le01-s7-tb13a-01",
     phase: "s7",
     stepType: "dialog",
     bloomLevel: 3,
     kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.248-249"],
+    quellen: ["Q5 S.251-255"],
     track: "basis",
     modus: "story",
-    lernziel: "ce01-le01-pflegebeziehung",
+    lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "SZENE",
     contentC1: {
-      title: "Neuer Patient: Herr Al-Rashid",
-      body: "Ahmed Al-Rashid, 78, syrischer Ingenieur im Ruhestand. Oberschenkelhalsfraktur nach Sturz, postoperativer Tag 3.",
-      fallbezug: "Chirurgische Station, Vormittag. Die Pflegefachkraft stellt sich vor.",
+      title: "Neuer Patient: Ahmed Al-Rashid",
+      body: "Auf der chirurgischen Station liegt ein neuer Patient. Yasemin wird gebeten, bei der Körperpflege zu helfen.",
     },
     contentB1: {
-      title: "Ein neuer Patient: Herr Al-Rashid",
-      body: "Herr Al-Rashid ist 78 Jahre alt. Er kommt aus Syrien. Er hat sich den Oberschenkel gebrochen.",
-      fallbezug: "Herr Al-Rashid liegt auf der Station. Die Pflegerin kommt zu ihm.",
+      title: "Ein neuer Patient",
+      body: "Ein neuer Patient ist auf der Station. Yasemin soll bei der Pflege helfen.",
     },
     question: {
-      fragetext: "Wie reagierst du auf Herrn Al-Rashids Wunsch?",
-      patientName: "Herr Al-Rashid",
-      dialogPhases: [
-        {
-          context: "Die Pflegefachkraft betritt das Zimmer zur Koerperpflege. Herr Al-Rashid liegt im Bett, Blick abgewandt.",
-          contextB1: "Die Pflegerin kommt ins Zimmer. Sie will Herrn Al-Rashid bei der Koerperpflege helfen.",
-          speaker: "Herr Al-Rashid",
-          options: [
-            {
-              text: "Guten Morgen, Herr Al-Rashid. Ich bin hier fuer die Koerperpflege.",
-              textB1: "Guten Morgen. Ich helfe Ihnen beim Waschen.",
-              patientResponse: "Bitte... Mann. Ich moechte Mann.",
-              patientResponseB1: "Bitte... ein Mann. Ich moechte einen Mann.",
-              score: 2,
-              feedback: "Herr Al-Rashid aeussert deutlich seinen Wunsch nach einem maennlichen Pfleger. Seine Koerpersprache — abgewandter Blick, angespannte Schultern — verstaerkt die Botschaft.",
-              feedbackB1: "Herr Al-Rashid moechte einen Mann. Er schaut weg und ist angespannt.",
-            },
-            {
-              text: "Ich verstehe. Ich schaue, ob ein maennlicher Kollege verfuegbar ist.",
-              textB1: "Ich verstehe. Ich frage, ob ein Mann helfen kann.",
-              patientResponse: "Ja... danke. Danke.",
-              patientResponseB1: "Ja... danke.",
-              score: 3,
-              feedback: "Du respektierst seine Praeferenz und suchst eine Loesung. Das entspricht kulturkongruenter Pflege nach Leininger.",
-              feedbackB1: "Sehr gut! Du respektierst seinen Wunsch und suchst eine Loesung.",
-            },
-            {
-              text: "In Deutschland ist es normal, dass Frauen pflegen. Das muessen Sie akzeptieren.",
-              textB1: "In Deutschland pflegen auch Frauen. Das ist normal.",
-              patientResponse: "...",
-              patientResponseB1: "...",
-              score: 0,
-              feedback: "Diese Reaktion ignoriert Herrn Al-Rashids kulturelle Werte und verletzt das Prinzip der Autonomie. Die Pflegebeziehung wird beschaedigt.",
-              feedbackB1: "Das ist nicht gut. Man muss die Wuensche des Patienten respektieren.",
-            },
-          ],
-        },
+      fragetext: "Die Situation:",
+      dialogLines: [
+        { speaker: "Pflegefachkraft", text: "Yasemin, kannst du bitte Herrn Al-Rashid bei der Körperpflege unterstützen? Er ist 78, postoperativ Tag 3 nach Oberschenkelhalsfraktur." },
+        { speaker: "Yasemin", text: "Natürlich. Guten Morgen, Herr Al-Rashid. Ich helfe Ihnen heute beim Waschen." },
+        { speaker: "Ahmed", text: "Bitte... Mann. Ich möchte Mann." },
+        { speaker: "Yasemin", text: "Sie möchten von einem männlichen Pfleger versorgt werden?" },
+        { speaker: "Ahmed", text: "Ja. Bitte. Ist nicht... gegen dich." },
       ],
     },
   },
 
   // =============================================================
-  // Step 3: Swipe — Reaktionen bewerten (CHALLENGE, Brilliant-Prinzip)
+  // TB13a: ERKLÄRUNG — Kulturkongruente Pflege + Pflege-Charta
   // =============================================================
   {
-    stepId: "le01-s7-03",
-    phase: "s7",
-    stepType: "swipe",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-II",
-    quellen: ["Q4 S.133-135", "Q7 S.285"],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-kommunikation",
-    contentC1: {
-      title: "Kulturelle Barrieren in der Pflege",
-      body: "Herr Al-Rashid lehnt die Koerperpflege durch eine weibliche Pflegekraft ab. Verschiedene Reaktionen sind moeglich.",
-    },
-    contentB1: {
-      title: "Was wuerdest du tun?",
-      body: "Herr Al-Rashid moechte keinen weiblichen Pfleger. Was ist die richtige Reaktion?",
-    },
-    question: {
-      fragetext: "Ist diese Reaktion professionell?",
-      swipe: {
-        instruction: "Wische nach rechts fuer 'professionell' und nach links fuer 'unprofessionell'.",
-        cards: [
-          {
-            statement: "Seinen Wunsch ignorieren und die Koerperpflege trotzdem durchfuehren.",
-            statementB1: "Den Wunsch ignorieren und trotzdem waschen.",
-            isCorrect: false,
-            explanation: "Das verletzt die Autonomie des Patienten und die Pflege-Charta Art. 1 (Selbstbestimmung). Kulturelle Praeferenzen bei der Koerperpflege beruehren die Wuerde.",
-            explanationB1: "Das ist falsch. Der Patient darf selbst entscheiden. Seine Wuerde ist wichtig.",
-          },
-          {
-            statement: "Einen maennlichen Kollegen fuer die Koerperpflege organisieren.",
-            statementB1: "Einen maennlichen Kollegen fragen, ob er helfen kann.",
-            isCorrect: true,
-            explanation: "Kulturkongruente Pflege nach Leininger: Die Organisation anpassen, um kulturelle Beduerfnisse zu respektieren, ohne die Pflegequalitaet zu senken.",
-            explanationB1: "Richtig! Man kann die Pflege anders organisieren und den Wunsch respektieren.",
-          },
-          {
-            statement: "Dem Patienten erklaeren, dass in Deutschland Gleichberechtigung gilt und er sich anpassen muss.",
-            statementB1: "Dem Patienten sagen, dass er sich an deutsche Regeln halten muss.",
-            isCorrect: false,
-            explanation: "Gleichberechtigung bedeutet nicht, kulturelle Beduerfnisse bei der Intimhygiene zu ignorieren. Respekt und Wuerde gelten fuer alle.",
-            explanationB1: "Das ist falsch. Respekt gilt fuer alle Menschen, egal woher sie kommen.",
-          },
-          {
-            statement: "Die Koerperpflege komplett weglassen, weil der Patient sie ablehnt.",
-            statementB1: "Gar nicht mehr waschen, weil der Patient nicht will.",
-            isCorrect: false,
-            explanation: "Pflegeverweigerung ist keine Loesung. Die Pflege-Charta Art. 4 fordert qualifizierte Pflege. Die Loesung liegt in kreativer Organisation, nicht im Unterlassen.",
-            explanationB1: "Das ist falsch. Pflege weglassen ist keine Loesung. Man muss einen anderen Weg finden.",
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 4: Text — Perspektivwechsel + Leininger (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s7-04",
+    stepId: "le01-s7-tb13a-02",
     phase: "s7",
     stepType: "text",
     bloomLevel: 3,
-    kompetenzbereich: "KB-II",
-    quellen: ["Q4 S.133-135"],
+    kompetenzbereich: "KB-IV",
+    quellen: ["Q8 S.343-344", "Q10"],
     track: "basis",
     modus: "entdecker",
-    lernziel: "ce01-le01-pflegebeziehung",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "ERKLÄRUNG",
+    imageUrl: "/images/content/le-01/kulturkongruente-pflege.svg",
+    imageAlt: "Grafik: Kulturkongruente Pflege nach Leininger",
     contentC1: {
-      title: "Pflegebeziehung aus Patientensicht",
-      body: "Bei Yasemin ging es um die Rolle der Pflegenden. Bei Herrn Al-Rashid sehen wir die andere Seite: Wie erlebt der Pflegeempfaenger die Situation? Leininger betont kulturkongruente Pflege — Kultur beeinflusst, wie Menschen Gesundheit, Schmerz und Koerperkontakt erleben.",
+      title: "Kulturkongruente Pflege",
+      body: "Herr Al-Rashids Wunsch ist kein Problem — er ist ein **Recht**.\n\n**Leininger** (Transkulturelle Pflege): Pflege muss kulturelle Werte, Überzeugungen und Praktiken berücksichtigen. Was in einer Kultur normal ist, kann in einer anderen unangemessen sein.\n\n**Pflege-Charta Artikel 2**: Jeder Pflegebedürftige hat das Recht auf **Selbstbestimmung** — auch bei der Wahl der Pflegeperson.\n\n**Beauchamp/Childress**: Das Prinzip der **Autonomie** — der Patient entscheidet, wer ihn pflegt.\n\nHerr Al-Rashid lehnt nicht Yasemin ab. Er wahrt seine Würde nach seinen kulturellen Werten.",
+      fallbezug: "Yasemin erkennt: Das hat nichts mit ihr persönlich zu tun. Es geht um Respekt für Ahmeds Werte.",
     },
     contentB1: {
-      title: "Wie fuehlt sich der Patient?",
-      body: "Yasemin war die Pflegende. Herr Al-Rashid ist der Patient. Kultur beeinflusst, wie Menschen Pflege erleben. Leininger sagt: Pflege muss zur Kultur passen.",
+      title: "Kultur und Pflege",
+      body: "Herr Al-Rashid möchte von einem Mann gepflegt werden. Das ist sein **Recht**.\n\n**Leininger** sagt: Pflege muss die Kultur des Patienten respektieren.\n\n**Pflege-Charta** sagt: Jeder Patient darf selbst bestimmen.\n\n**Autonomie** bedeutet: Der Patient entscheidet.\n\nHerr Al-Rashid lehnt nicht Yasemin ab. Er wahrt seine Würde.",
+      fallbezug: "Yasemin versteht: Es geht nicht um sie, sondern um seinen Respekt.",
     },
   },
 
   // =============================================================
-  // Step 5: Branching — Al-Rashid verweigert Koerperpflege (PRAXIS-SIM)
+  // TB13a: CHECKPOINT — MC Autonomie
   // =============================================================
   {
-    stepId: "le01-s7-05",
+    stepId: "le01-s7-tb13a-03",
+    phase: "s7",
+    stepType: "mc",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-IV",
+    quellen: ["Q6 S.269-272"],
+    track: "basis",
+    modus: "challenge",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "CHECKPOINT",
+    contentC1: {
+      title: "Welches Prinzip?",
+      body: "Herr Al-Rashid lehnt die Körperpflege durch eine weibliche Pflegekraft ab. Welches ethische Prinzip wird hier relevant?",
+    },
+    contentB1: {
+      title: "Welches Prinzip?",
+      body: "Herr Al-Rashid möchte nicht von einer Frau gepflegt werden. Welches Prinzip ist wichtig?",
+    },
+    question: {
+      fragetext: "Welches ethische Prinzip nach Beauchamp und Childress ist hier am wichtigsten?",
+      options: [
+        { text: "Autonomie — Selbstbestimmung des Patienten", isCorrect: true, explanation: "Richtig! Herr Al-Rashid übt sein Recht auf Selbstbestimmung aus. Seine kulturellen Werte sind zu respektieren, solange die Pflege gewährleistet bleibt." },
+        { text: "Benefizienz — Wohl des Patienten", isCorrect: false, explanation: "Benefizienz (Gutes tun) ist auch relevant, aber hier geht es primär um die Selbstbestimmung des Patienten — sein Wunsch muss respektiert werden." },
+        { text: "Gerechtigkeit — Gleichbehandlung", isCorrect: false, explanation: "Gerechtigkeit bedeutet nicht Gleichbehandlung, sondern Gleichberechtigung. Kulturelle Bedürfnisse zu berücksichtigen ist gerecht." },
+        { text: "Nonmalefizienz — Nicht schaden", isCorrect: false, explanation: "Nicht-Schaden ist ein Grundprinzip, aber hier geht es um die aktive Respektierung von Ahmeds Selbstbestimmung." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB13a: ANWENDUNG — Branching BS2
+  // =============================================================
+  {
+    stepId: "le01-s7-tb13a-04",
     phase: "s7",
     stepType: "branching",
     bloomLevel: 4,
     kompetenzbereich: "KB-IV",
-    quellen: ["Q4 S.133-135", "Q7 S.285"],
+    quellen: ["Q6 S.269-275"],
     track: "basis",
     modus: "praxis-sim",
     lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
-      title: "Ethik trifft Kultur",
-      body: "Herr Al-Rashid verweigert die Koerperpflege durch die Pflegefachkraft. Gleichzeitig muss der Wundverband am Oberschenkel gewechselt werden — das ist medizinisch notwendig.",
-      fallbezug: "Postoperativer Tag 3. Der Verband muss gewechselt werden, aber Herr Al-Rashid lehnt die weibliche Pflegekraft ab.",
+      title: "Was tust du?",
+      body: "Du bist Yasemin. Herr Al-Rashid verweigert die Körperpflege durch dich. Was machst du?",
     },
     contentB1: {
-      title: "Ein schwieriges Problem",
-      body: "Herr Al-Rashid will keine Frau bei der Koerperpflege. Aber der Verband muss gewechselt werden. Was tust du?",
-      fallbezug: "Tag 3 nach der Operation. Der Verband muss heute gewechselt werden.",
+      title: "Was tust du?",
+      body: "Du bist Yasemin. Herr Al-Rashid will nicht von dir gewaschen werden. Was machst du?",
     },
     question: {
-      fragetext: "Wie handelst du in dieser Situation?",
-      branchingOptions: [
+      fragetext: "Herr Al-Rashid verweigert die Körperpflege. Deine Reaktion?",
+      options: [
         {
-          text: "In Deutschland machen das alle Pflegekraefte, egal ob Mann oder Frau.",
-          feedback: "Herr Al-Rashid fuehlt sich nicht respektiert. Er verweigert auch den Verbandwechsel. Die Wunde wird nicht versorgt — das Infektionsrisiko steigt. Du hast das Prinzip der Autonomie verletzt.",
-          feedbackB1: "Herr Al-Rashid fuehlt sich nicht verstanden. Er will jetzt gar keine Pflege mehr. Das ist gefaehrlich fuer seine Wunde.",
-          isCorrect: false,
-        },
-        {
-          text: "Einen maennlichen Kollegen fuer die Koerperpflege organisieren. Den Verbandwechsel erklaeren und sein Einverstaendnis einholen.",
-          feedback: "Du respektierst die kulturelle Praeferenz UND stellst die medizinische Versorgung sicher. Nach Leininger ist das kulturkongruente Pflege: kreative Organisation statt Ignoranz oder Unterwerfung.",
-          feedbackB1: "Sehr gut! Du respektierst seinen Wunsch und sorgst trotzdem fuer die Wunde. So geht gute Pflege.",
+          text: "Ich akzeptiere seinen Wunsch und organisiere einen männlichen Kollegen.",
           isCorrect: true,
+          explanation: "Richtig! Du respektierst seine Autonomie und findest eine Lösung. So dokumentierst du seinen Wunsch und informierst das Team.",
+          followUp: "Du informierst das Team. Ein männlicher Pfleger übernimmt die Körperpflege. Herr Al-Rashid bedankt sich: 'Danke. Du verstehen.'",
         },
         {
-          text: "Die Koerperpflege komplett weglassen — wenn er nicht will, hat er Pech.",
-          feedback: "Pflege weglassen verletzt die Pflege-Charta Art. 4 (qualifizierte Pflege). Respekt vor kulturellen Werten darf nie zur Vernachlaessigung fuehren.",
-          feedbackB1: "Das ist falsch. Pflege einfach weglassen ist nie richtig. Der Patient braucht Hilfe.",
+          text: "Ich erkläre ihm, dass in Deutschland Frauen das auch machen.",
           isCorrect: false,
+          explanation: "Das verletzt seine Autonomie. Es spielt keine Rolle, was in Deutschland üblich ist — der Patient hat das Recht auf Selbstbestimmung. Kulturelle Werte sind zu respektieren.",
+          followUp: "Herr Al-Rashid verschließt sich. Er lässt die Körperpflege ganz ausfallen. Am nächsten Tag ist seine Haut gereizt.",
+        },
+        {
+          text: "Ich führe die Körperpflege trotzdem durch — es muss ja gemacht werden.",
+          isCorrect: false,
+          explanation: "Das ist ein schwerer Verstoß gegen das Autonomie-Prinzip. Pflege gegen den Willen des Patienten ist nur in absoluten Notfällen erlaubt — Körperpflege ist keiner.",
+          followUp: "Herr Al-Rashid wehrt sich. Er ruft nach dem Arzt. Es gibt eine Beschwerde.",
         },
       ],
     },
   },
 
   // =============================================================
-  // Step 6: Hotspot — Nonverbale Signale bei Al-Rashid (CHALLENGE)
+  // TB13a: PRAXIS_DIALOG — Dokumentation
   // =============================================================
   {
-    stepId: "le01-s7-06",
+    stepId: "le01-s7-tb13a-05",
     phase: "s7",
-    stepType: "hotspot",
+    stepType: "dialog",
     bloomLevel: 3,
     kompetenzbereich: "KB-I",
-    quellen: ["Q8 S.321-322", "Q5 S.250"],
+    quellen: ["Q2 S.95-98"],
     track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-beobachtung",
-    imageUrl: "/images/le-01/al-rashid-bett.svg",
-    imageAlt: "Herr Al-Rashid liegt im Krankenbett, Blick abgewandt, Schultern angespannt",
+    modus: "story",
+    lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "PRAXIS_DIALOG",
     contentC1: {
-      title: "Nonverbale Signale erkennen",
-      body: "Herr Al-Rashid liegt im Bett. Seine Koerpersprache verraet mehr als seine Worte. Systematische Beobachtung ist die Kernkompetenz der Pflege.",
+      title: "Dokumentation",
+      body: "Die Praxisanleiterin fragt: Wie dokumentierst du Ahmeds Wunsch?",
     },
     contentB1: {
-      title: "Was siehst du?",
-      body: "Herr Al-Rashid liegt im Bett. Schau genau hin: Sein Koerper zeigt dir etwas.",
+      title: "Aufschreiben",
+      body: "Die Praxisanleiterin fragt: Was schreibst du in die Akte?",
     },
     question: {
-      fragetext: "Welche nonverbalen Signale zeigt Herr Al-Rashid?",
-      hotspot: {
-        imageUrl: "/images/le-01/al-rashid-bett.svg",
-        imageAlt: "Herr Al-Rashid im Krankenbett",
-        instruction: "Tippe auf die Stellen, an denen du nonverbale Signale erkennst.",
-        zones: [
-          { id: "lippen", x: 48, y: 18, radius: 8, label: "Zusammengekniffene Lippen — moegliches Zeichen fuer Schmerz oder Anspannung" },
-          { id: "blick", x: 35, y: 15, radius: 8, label: "Abgewandter Blick — Vermeidung von Blickkontakt, Scham oder Unbehagen" },
-          { id: "schultern", x: 50, y: 35, radius: 10, label: "Angespannte Schultern — koerperlicher Ausdruck von Stress oder Abwehr" },
-        ],
-      },
+      fragetext: "Dialog mit der Praxisanleiterin:",
+      dialogLines: [
+        { speaker: "Praxisanleiterin", text: "Gut gemacht, Yasemin. Aber: Hast du das auch dokumentiert?" },
+        { speaker: "Yasemin", text: "Was genau soll ich dokumentieren?" },
+        { speaker: "Praxisanleiterin", text: "Den Wunsch des Patienten, die Maßnahme die du ergriffen hast, und wer die Aufgabe übernommen hat. Das gehört in die Pflegeplanung." },
+        { speaker: "Yasemin", text: "Also: Pflegeproblem → kulturelle Präferenz, Ziel → Würde wahren, Maßnahme → männlicher Pfleger?" },
+        { speaker: "Praxisanleiterin", text: "Perfekt. Du denkst schon im Pflegeprozess." },
+      ],
     },
   },
 
   // =============================================================
-  // Step 7: Comparison — Yasemin vs. Al-Rashid (ENTDECKER)
+  // TB13a: REFLEXION — Freetext
   // =============================================================
   {
-    stepId: "le01-s7-07",
+    stepId: "le01-s7-tb13a-06",
+    phase: "s7",
+    stepType: "freetext",
+    bloomLevel: 4,
+    kompetenzbereich: "KB-IV",
+    quellen: [],
+    track: "vertiefung",
+    modus: "schreibtisch",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "REFLEXION",
+    contentC1: {
+      title: "Was denkst du?",
+      body: "Eine Kollegin sagt: 'In Deutschland muss er das akzeptieren. Wir können nicht für jeden einen Mann holen.' Was sagst du dazu?",
+    },
+    contentB1: {
+      title: "Was denkst du?",
+      body: "Eine Kollegin sagt: 'Er muss das akzeptieren.' Was sagst du dazu?",
+    },
+    question: {
+      fragetext: "Beurteile die Aussage der Kollegin. Nutze ethische Prinzipien und die Pflege-Charta.",
+      satzanfaenge: [
+        "Ich finde die Aussage...",
+        "Das Prinzip der Autonomie bedeutet...",
+        "Eine Lösung wäre...",
+      ],
+      minWords: 30,
+    },
+  },
+
+  // =============================================================
+  // Snack: Slider
+  // =============================================================
+  {
+    stepId: "le01-s7-sn-01",
+    phase: "s7",
+    stepType: "slider",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-IV",
+    quellen: [],
+    track: "vertiefung",
+    modus: "challenge",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Selbsteinschätzung",
+      body: "Wie sicher fühlst du dich im Umgang mit kulturellen Unterschieden?",
+    },
+    contentB1: {
+      title: "Wie sicher bist du?",
+      body: "Wie gut kannst du mit kulturellen Unterschieden umgehen?",
+    },
+    question: {
+      fragetext: "Wie sicher im Umgang mit kulturellen Unterschieden? (1 = unsicher, 10 = sehr sicher)",
+      min: 1,
+      max: 10,
+      step: 1,
+      defaultValue: 5,
+      labels: { min: "Unsicher", max: "Sehr sicher" },
+    },
+  },
+
+  // =============================================================
+  // TB13b: SZENE — Jonas Berger
+  // =============================================================
+  {
+    stepId: "le01-s7-tb13b-01",
+    phase: "s7",
+    stepType: "dialog",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-I",
+    quellen: [],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-beobachtung",
+    themenblockPhase: "SZENE",
+    contentC1: {
+      title: "Neuer Patient: Jonas Berger, 8 Jahre",
+      body: "Auf der Kinderchirurgie liegt Jonas. Appendektomie, Tag 1 postoperativ.",
+    },
+    contentB1: {
+      title: "Ein Kind auf Station",
+      body: "Jonas ist 8 Jahre alt. Er hatte eine Blinddarm-OP. Es ist Tag 1 nach der OP.",
+    },
+    question: {
+      fragetext: "Die Pflegefachkraft fragt Jonas:",
+      dialogLines: [
+        { speaker: "Pflegefachkraft", text: "Jonas, wie geht es dir? Hast du Schmerzen?" },
+        { speaker: "Jonas", text: "Mir geht's gut." },
+        { speaker: "Erzähler", text: "Jonas' Gesicht ist blass. Seine Lippen sind zusammengepresst. Er liegt ganz still und atmet flach." },
+        { speaker: "Pflegefachkraft", text: "Sicher? Du siehst ein bisschen blass aus." },
+        { speaker: "Jonas", text: "Mama hat gesagt, ich soll tapfer sein." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB13b: CHECKPOINT — Wahrnehmungsfehler Transfer
+  // =============================================================
+  {
+    stepId: "le01-s7-tb13b-02",
+    phase: "s7",
+    stepType: "mc",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-I",
+    quellen: ["Q2 S.86-88"],
+    track: "basis",
+    modus: "challenge",
+    lernziel: "ce01-le01-beobachtung",
+    themenblockPhase: "CHECKPOINT",
+    contentC1: {
+      title: "Was passiert hier?",
+      body: "Jonas sagt 'Mir geht's gut', aber sein Körper spricht eine andere Sprache.",
+    },
+    contentB1: {
+      title: "Was passiert?",
+      body: "Jonas sagt, es geht ihm gut. Aber wie sieht er aus?",
+    },
+    question: {
+      fragetext: "Die Pflegekraft glaubt Jonas und dokumentiert: 'Patient schmerzfrei.' Welcher Wahrnehmungsfehler liegt vor?",
+      options: [
+        { text: "Primacy-Effekt — die erste Information (seine Worte) überwiegt", isCorrect: true, explanation: "Richtig! Die verbale Aussage 'Mir geht's gut' wird stärker gewichtet als die nonverbalen Signale (Blässe, Schonhaltung, flache Atmung). Bei Kindern ist die Beobachtung besonders wichtig!" },
+        { text: "Halo-Effekt — Jonas wirkt insgesamt positiv", isCorrect: false, explanation: "Der Halo-Effekt wäre, wenn ein positiver Gesamteindruck die Einzelwahrnehmung beeinflusst. Hier geht es um die erste Information (verbal vs. nonverbal)." },
+        { text: "Projektion — die Pflegekraft projiziert eigene Gefühle", isCorrect: false, explanation: "Projektion wäre, wenn die Pflegekraft ihre eigenen Gefühle auf Jonas überträgt. Hier ist es die verbale Aussage, die die Beobachtung überlagert." },
+        { text: "Stereotypisierung — Kinder übertreiben oft", isCorrect: false, explanation: "Das wäre ein Stereotyp, der hier nicht zutrifft. Im Gegenteil: Kinder verschweigen oft Schmerzen, weil sie 'tapfer' sein wollen." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB13b: ERKLÄRUNG — Komplikationskette
+  // =============================================================
+  {
+    stepId: "le01-s7-tb13b-03",
+    phase: "s7",
+    stepType: "text",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-I",
+    quellen: ["Q2 S.81-85"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "ERKLÄRUNG",
+    imageUrl: "/images/content/le-01/komplikationskette.svg",
+    imageAlt: "Grafik: Komplikationskette bei Jonas — Schmerzen → Schonatmung → Obstipation",
+    contentC1: {
+      title: "Die Komplikationskette",
+      body: "Was passiert, wenn Jonas' Schmerzen nicht erkannt werden?\n\n**Tag 1:** Schmerzen → Jonas bewegt sich nicht, atmet flach (Schonatmung)\n**Tag 2:** Flache Atmung → Atelektasengefahr. Keine Bewegung → Obstipationsgefahr.\n**Tag 3:** Bauch gebläht, kein Stuhlgang seit 2 Tagen. Erst jetzt sagt Jonas: 'Mein Bauch tut weh' — aber gemeint sind die OP-Schmerzen von Tag 1.\n**Tag 5:** Jonas weint nachts allein: 'Ich will zu Mama.'\n\nDie ganze Kette hätte an Tag 1 unterbrochen werden können — durch **systematische Beobachtung** und ein **altersgerechtes Schmerzassessment**.",
+      fallbezug: "Yasemin erkennt: Was sie in S2 über Beobachtung gelernt hat, ist lebenswichtig.",
+    },
+    contentB1: {
+      title: "Was passiert wenn man nicht aufpasst?",
+      body: "Jonas hat Schmerzen, sagt aber nichts.\n\n**Tag 1:** Schmerzen → Jonas liegt nur still\n**Tag 2:** Er atmet flach, bewegt sich nicht\n**Tag 3:** Sein Bauch ist dick und tut weh\n**Tag 5:** Jonas weint nachts allein\n\nDas alles hätte man verhindern können — wenn man am Tag 1 genau hingeschaut hätte.",
+      fallbezug: "Yasemin lernt: Beobachtung ist sehr wichtig!",
+    },
+  },
+
+  // =============================================================
+  // TB13b: ANWENDUNG — Branching Jonas
+  // =============================================================
+  {
+    stepId: "le01-s7-tb13b-04",
+    phase: "s7",
+    stepType: "branching",
+    bloomLevel: 4,
+    kompetenzbereich: "KB-I",
+    quellen: ["Q2 S.81-88"],
+    track: "basis",
+    modus: "praxis-sim",
+    lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Tag 1: Was tust du?",
+      body: "Du bist die Pflegekraft. Jonas sagt 'Mir geht's gut', sieht aber blass aus und atmet flach.",
+    },
+    contentB1: {
+      title: "Was tust du?",
+      body: "Jonas sagt, es geht ihm gut. Aber er sieht blass aus. Was machst du?",
+    },
+    question: {
+      fragetext: "Jonas, Tag 1 postoperativ. Er sagt 'Mir geht's gut.' Deine Reaktion?",
+      options: [
+        {
+          text: "Ich nutze ein altersgerechtes Schmerzassessment (z. B. Smiley-Skala) und beobachte seine Mimik und Körperhaltung.",
+          isCorrect: true,
+          explanation: "Perfekt! Kinder können Schmerzen oft nicht verbal ausdrücken. Ein altersgerechtes Assessment + systematische Beobachtung erkennt, was Worte verschweigen.",
+          followUp: "Jonas zeigt auf der Smiley-Skala eine 6/10. Du gibst die verordnete Schmerzmedikation. Jonas entspannt sich, beginnt sich zu bewegen und isst zu Mittag. Die Komplikationskette wird unterbrochen.",
+        },
+        {
+          text: "Ich glaube ihm — er sagt ja, es geht ihm gut.",
+          isCorrect: false,
+          explanation: "Verbal und nonverbal widersprechen sich. Bei Kindern ist besondere Vorsicht geboten — 'Tapfer sein' bedeutet oft 'Ich habe Schmerzen, sage es aber nicht'.",
+          followUp: "Tag 2: Jonas liegt flach, atmet kaum. Tag 3: Bauch gebläht. Die Komplikationskette beginnt.",
+        },
+        {
+          text: "Ich frage die Mutter am Telefon, ob Jonas oft übertreibt.",
+          isCorrect: false,
+          explanation: "Das ist Stereotypisierung ('Kinder übertreiben') und verlagert die Verantwortung. Pflegerische Beobachtung ist deine Aufgabe — nicht die der Mutter.",
+          followUp: "Die Mutter ist verunsichert. Jonas' Schmerzen bleiben unbehandelt.",
+        },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB13b: PATIENTEN_PERSPEKTIVE — Jonas
+  // =============================================================
+  {
+    stepId: "le01-s7-tb13b-05",
+    phase: "s7",
+    stepType: "text",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-II",
+    quellen: [],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-kommunikation",
+    themenblockPhase: "PATIENTEN_PERSPEKTIVE",
+    contentC1: {
+      title: "Jonas' Perspektive",
+      body: "Jonas liegt in seinem Bett. Es ist 22 Uhr. Die Station ist ruhig.\n\n*'Mama hat gesagt, ich soll tapfer sein. Aber mein Bauch tut so weh. Die Schwester hat gefragt und ich hab gesagt es geht mir gut. Weil ich tapfer sein will. Aber jetzt ist es dunkel und ich bin allein und ich will zu Mama. Warum kommt niemand?'*\n\nJonas ist 8. Er kann seine Bedürfnisse nicht formulieren wie ein Erwachsener. Er braucht eine Pflegekraft, die **hinschaut** statt nur **hinhört**.",
+      fallbezug: "Yasemin versteht: Bei Kindern ist systematische Beobachtung noch wichtiger als bei Erwachsenen.",
+    },
+    contentB1: {
+      title: "Was Jonas denkt",
+      body: "Jonas liegt allein im Bett. Es ist spät.\n\n*'Mama hat gesagt, ich soll tapfer sein. Aber mein Bauch tut weh. Ich will zu Mama. Warum kommt niemand?'*\n\nJonas ist 8 Jahre alt. Er kann nicht gut sagen, was er fühlt. Die Pflegekraft muss genau **hinschauen**.",
+      fallbezug: "Yasemin versteht: Bei Kindern muss man besonders aufpassen.",
+    },
+  },
+
+  // =============================================================
+  // TB13b: ANWENDUNG — Freetext Pflegeprozess bei Jonas
+  // =============================================================
+  {
+    stepId: "le01-s7-tb13b-06",
+    phase: "s7",
+    stepType: "freetext",
+    bloomLevel: 4,
+    kompetenzbereich: "KB-I",
+    quellen: ["Q2 S.78-79"],
+    track: "vertiefung",
+    modus: "schreibtisch",
+    lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Pflegeprozess anwenden",
+      body: "Wende die 6 Schritte des Pflegeprozesses auf Jonas an. Nenne für jeden Schritt ein konkretes Beispiel.",
+    },
+    contentB1: {
+      title: "6 Schritte für Jonas",
+      body: "Wende die 6 Schritte des Pflegeprozesses auf Jonas an.",
+    },
+    question: {
+      fragetext: "Beschreibe den Pflegeprozess für Jonas (mindestens 3 der 6 Schritte mit konkretem Beispiel).",
+      satzanfaenge: [
+        "1. Informationssammlung: Bei Jonas würde ich...",
+        "2. Probleme/Ressourcen: Jonas hat das Problem...",
+        "3. Ziel: Das Ziel für Jonas ist...",
+      ],
+      minWords: 40,
+    },
+  },
+
+  // =============================================================
+  // Session-Abschluss: Comparison 3 Perspektiven
+  // =============================================================
+  {
+    stepId: "le01-s7-bk-02",
     phase: "s7",
     stepType: "comparison",
     bloomLevel: 4,
-    kompetenzbereich: "KB-II",
-    quellen: ["Q5 S.248-249", "Q4 S.133-135"],
-    track: "basis",
+    kompetenzbereich: "KB-V",
+    quellen: [],
+    track: "vertiefung",
     modus: "entdecker",
     lernziel: "ce01-le01-pflegebeziehung",
-    imageUrl: "/images/le-01/perspektiven-vergleich.svg",
-    imageAlt: "Vergleichstabelle Pflegende vs. Pflegeempfaenger",
+    themenblockPhase: "REFLEXION",
     contentC1: {
-      title: "Zwei Perspektiven — ein Thema",
-      body: "Pflegebeziehung hat immer zwei Seiten. Bei Yasemin sahen wir die Perspektive der Pflegenden, bei Herrn Al-Rashid die des Pflegeempfaengers.",
+      title: "Drei Patienten — drei Welten",
+      body: "Vergleiche die drei Patienten, die du heute kennengelernt hast.",
     },
     contentB1: {
-      title: "Zwei Seiten der Pflege",
-      body: "Yasemin ist die Pflegende. Herr Al-Rashid ist der Patient. Beide erleben die Pflege anders.",
+      title: "Drei Patienten vergleichen",
+      body: "Vergleiche die drei Patienten.",
     },
     question: {
-      fragetext: "Vergleiche die beiden Perspektiven auf die Pflegebeziehung.",
-      comparison: {
-        instruction: "Welche Gemeinsamkeiten und Unterschiede erkennst du?",
-        columns: [
-          { label: "Yasemin (Pflegende)", icon: "👩‍⚕️" },
-          { label: "Herr Al-Rashid (Patient)", icon: "🧓" },
-        ],
-        rows: [
-          {
-            criterion: "Herausforderung",
-            values: ["Balance zwischen Empathie und Distanz", "Kulturelle Werte werden nicht respektiert"],
-            valuesB1: ["Wie nah darf ich sein?", "Meine Kultur wird nicht beachtet"],
-          },
-          {
-            criterion: "Betroffenes Thema",
-            values: ["Professionelle Naehe und Distanz", "Wuerde und Autonomie"],
-            valuesB1: ["Naehe und Distanz", "Wuerde und Selbstbestimmung"],
-          },
-          {
-            criterion: "Loesung",
-            values: ["Reflexion, Kommunikation, Priorisierung", "Organisation anpassen, Kultur respektieren"],
-            valuesB1: ["Nachdenken und reden", "Pflege anders organisieren"],
-          },
-          {
-            criterion: "Ethisches Prinzip",
-            values: ["Benefizienz (Wohltun)", "Autonomie (Selbstbestimmung)"],
-            valuesB1: ["Gutes tun", "Selbst entscheiden"],
-            highlight: 1,
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 8: Dialog — Jonas Berger einfuehren (STORY)
-  // =============================================================
-  {
-    stepId: "le01-s7-08",
-    phase: "s7",
-    stepType: "dialog",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-II",
-    quellen: ["Q8 S.321-322"],
-    track: "basis",
-    modus: "story",
-    lernziel: "ce01-le01-kommunikation",
-    contentC1: {
-      title: "Neuer Patient: Jonas Berger",
-      body: "Jonas Berger, 8 Jahre, Grundschueler. Appendektomie vor einem Tag. Seine Eltern arbeiten tagsuebers.",
-      fallbezug: "Kinderchirurgische Station, Tag 1 nach OP. Jonas liegt allein im Zimmer.",
-    },
-    contentB1: {
-      title: "Ein neuer Patient: Jonas",
-      body: "Jonas ist 8 Jahre alt. Er hatte eine Blinddarm-OP. Seine Eltern sind bei der Arbeit.",
-      fallbezug: "Jonas liegt allein im Zimmer. Es ist sein erster Tag nach der OP.",
-    },
-    question: {
-      fragetext: "Wie reagierst du auf Jonas?",
-      patientName: "Jonas Berger",
-      dialogPhases: [
-        {
-          context: "Die Pflegekraft kommt zur Visite. Jonas liegt still im Bett, das Gesicht ist blass, die Lippen zusammengepresst.",
-          contextB1: "Die Pflegerin kommt zu Jonas. Er liegt ganz still. Sein Gesicht ist blass.",
-          speaker: "Jonas",
-          options: [
-            {
-              text: "Hallo Jonas! Wie geht es dir heute?",
-              textB1: "Hallo Jonas! Wie geht es dir?",
-              patientResponse: "Mir gehts gut.",
-              patientResponseB1: "Mir gehts gut.",
-              score: 1,
-              feedback: "Jonas sagt 'gut', aber sein blasses Gesicht und die gepressten Lippen sprechen eine andere Sprache. Kinder verschweigen oft Schmerzen, um tapfer zu wirken.",
-              feedbackB1: "Jonas sagt 'gut'. Aber sein Gesicht zeigt etwas anderes. Kinder sagen oft nicht, wenn sie Schmerzen haben.",
-            },
-            {
-              text: "Jonas, ich sehe, dass dein Gesicht ganz blass ist. Zeig mir mal auf der Skala, wie weh es tut.",
-              textB1: "Jonas, du siehst blass aus. Zeig mir, wie stark dein Bauch weh tut.",
-              patientResponse: "...ein bisschen.",
-              patientResponseB1: "...ein bisschen.",
-              score: 3,
-              feedback: "Du beobachtest genau und nutzt ein altersgerechtes Assessment. Die KUSS-Skala eignet sich fuer Kinder besser als die numerische Schmerzskala.",
-              feedbackB1: "Sehr gut! Du schaust genau hin und fragst auf eine Weise, die ein Kind versteht.",
-            },
-          ],
-        },
+      fragetext: "Vergleiche Yasemin, Ahmed und Jonas:",
+      comparisonItems: [
+        { aspect: "Hauptproblem", optionA: "Nähe-Distanz-Balance als Pflegende", optionB: "Kulturelle Barriere bei Körperpflege" },
+        { aspect: "Kommunikation", optionA: "Kann sich ausdrücken, braucht Reflexion", optionB: "Sprachbarriere + kulturelle Scham" },
+        { aspect: "Pflegeprozess", optionA: "Emotionale Überlastung dokumentieren", optionB: "Kulturelle Präferenz in Pflegeplanung" },
       ],
+      labelA: "Yasemin (Azubi-Perspektive)",
+      labelB: "Ahmed (78, kulturelle Barriere)",
+      iconA: "user",
+      iconB: "globe",
     },
   },
 
   // =============================================================
-  // Step 9: Timeline — Jonas' Komplikationskette (ENTDECKER)
+  // Interleaving: Categorize Theorien
   // =============================================================
   {
-    stepId: "le01-s7-09",
-    phase: "s7",
-    stepType: "timeline",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q8 S.321-322"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-beobachtung",
-    imageUrl: "/images/le-01/komplikationskette.svg",
-    imageAlt: "Zeitstrahl mit Jonas' Komplikationskette von Tag 1 bis Tag 5",
-    contentC1: {
-      title: "Komplikationskette bei Jonas",
-      body: "Was passiert, wenn Schmerzen nicht erkannt werden? Eine Kettenreaktion zeigt, wie ein verschwiegenes Problem weitere Probleme nach sich zieht.",
-    },
-    contentB1: {
-      title: "Was passiert, wenn man Schmerzen nicht erkennt?",
-      body: "Jonas hat Schmerzen. Aber niemand merkt es. Dann passieren immer mehr Probleme.",
-    },
-    question: {
-      fragetext: "Verfolge die Komplikationskette von Tag 1 bis Tag 5.",
-      timeline: {
-        instruction: "Lies die Ereignisse und erkenne, wo die Kette haette unterbrochen werden koennen.",
-        events: [
-          {
-            id: "tag1",
-            time: "Tag 1",
-            title: "Schmerzen verschwiegen",
-            description: "Jonas sagt 'Mir gehts gut', obwohl er Schmerzen hat. Blasses Gesicht, gepresste Lippen.",
-            descriptionB1: "Jonas sagt 'Mir gehts gut'. Aber er hat Schmerzen. Sein Gesicht ist blass.",
-            highlight: true,
-          },
-          {
-            id: "tag2",
-            time: "Tag 2",
-            title: "Schonatmung",
-            description: "Jonas liegt nur flach, bewegt sich kaum, atmet flach. Kein Husten, kein Aufstehen, isst wenig.",
-            descriptionB1: "Jonas liegt ganz still. Er atmet flach. Er isst wenig.",
-          },
-          {
-            id: "tag3",
-            time: "Tag 3",
-            title: "Obstipation",
-            description: "Seit 2 Tagen kein Stuhlgang. Bauch geblaeht. Erst jetzt sagt Jonas: 'Mein Bauch tut weh' — gemeint sind die OP-Schmerzen von Tag 1.",
-            descriptionB1: "Jonas hat seit 2 Tagen nicht auf Toilette gekonnt. Sein Bauch tut weh.",
-          },
-          {
-            id: "tag5",
-            time: "Tag 5",
-            title: "Emotionaler Zusammenbruch",
-            description: "Nachtschwester findet Jonas weinend: 'Ich will zu Mama. Warum bin ich immer allein?'",
-            descriptionB1: "Jonas weint nachts allein. Er vermisst seine Mama.",
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 10: Slider — Wann haette man eingreifen koennen? (CHALLENGE)
-  // =============================================================
-  {
-    stepId: "le01-s7-10",
-    phase: "s7",
-    stepType: "slider",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q8 S.321-322"],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-beobachtung",
-    contentC1: {
-      title: "Der entscheidende Moment",
-      body: "Fruehe Beobachtung kann Komplikationsketten verhindern. Je frueher ein Problem erkannt wird, desto einfacher ist die Loesung.",
-    },
-    contentB1: {
-      title: "Wann haette man helfen koennen?",
-      body: "Wenn man frueher hinschaut, kann man Probleme frueher loesen.",
-    },
-    question: {
-      fragetext: "An welchem Tag haette die Pflegekraft die Kette unterbrechen koennen?",
-      slider: {
-        instruction: "Waehle den Tag, an dem die Beobachtung den Unterschied gemacht haette.",
-        unit: "Tag",
-        min: 1,
-        max: 5,
-        step: 1,
-        correctValue: 1,
-        tolerance: 0,
-        explanation: "Bereits an Tag 1 zeigten Mimik und Koerpersprache Schmerzen an. Ein altersgerechtes Schmerzassessment (KUSS-Skala) haette die gesamte Kette verhindert.",
-        explanationB1: "Schon an Tag 1! Das blasse Gesicht und die gepressten Lippen zeigten Schmerzen. Mit der richtigen Frage haette man sofort helfen koennen.",
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 11: MC — Altersgerechtes Assessment (CHALLENGE)
-  // =============================================================
-  {
-    stepId: "le01-s7-11",
-    phase: "s7",
-    stepType: "mc",
-    bloomLevel: 4,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q8 S.321-322"],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-pflegeprozess",
-    contentC1: {
-      title: "Assessment bei Kindern",
-      body: "Jonas sagt 'Mir gehts gut', aber seine Mimik zeigt Schmerzen. Das Pflegeprozess-Modell verlangt eine systematische Datenerhebung — auch bei Kindern.",
-    },
-    contentB1: {
-      title: "Schmerzerfassung bei Kindern",
-      body: "Jonas sagt, es geht ihm gut. Aber sein Gesicht zeigt Schmerzen. Wie misst man Schmerzen bei einem Kind?",
-    },
-    question: {
-      fragetext: "Welches Schmerzassessment ist fuer einen 8-Jaehrigen wie Jonas geeignet?",
-      optionen: [
-        {
-          text: "KUSS-Skala (Kindliche Unbehagens- und Schmerzskala)",
-          isCorrect: true,
-          explanation: "Die KUSS-Skala erfasst Schmerzen bei Kindern ueber Beobachtung: Weinen, Gesichtsausdruck, Rumpfhaltung, Beinhaltung, Unruhe. Sie eignet sich besonders fuer Kinder, die Schmerzen nicht benennen koennen.",
-          explanationB1: "Richtig! Die KUSS-Skala ist fuer Kinder gemacht. Man beobachtet das Kind: Weint es? Wie ist sein Gesicht?",
-        },
-        {
-          text: "NRS (Numerische Rating-Skala, 0-10)",
-          isCorrect: false,
-          explanation: "Die NRS verlangt abstrakte Zahleneinschaetzung. Fuer 8-Jaehrige ist das oft zu schwer — besonders wenn sie wie Jonas 'tapfer' sein wollen und die Zahl niedrig ansetzen.",
-          explanationB1: "Die Zahlenskala ist fuer Kinder schwierig. Ein Kind sagt vielleicht '2', obwohl es '7' fuehlt.",
-        },
-        {
-          text: "VAS (Visuelle Analogskala)",
-          isCorrect: false,
-          explanation: "Die VAS (Linie von 0-10 cm) erfordert abstraktes Denken und ist fuer juengere Kinder ungeeignet. Bei einem 8-Jaehrigen waere eine Gesichter-Skala besser.",
-          explanationB1: "Diese Skala ist fuer Kinder zu schwer. Kinder koennen mit einer Linie wenig anfangen.",
-        },
-        {
-          text: "Keine Skala noetig — das Kind sagt ja, es geht ihm gut",
-          isCorrect: false,
-          explanation: "Die verbale Aussage allein reicht nicht — besonders bei Kindern. Systematische Beobachtung ist die Kernkompetenz der Pflege. Die Mimik zeigt mehr als die Worte.",
-          explanationB1: "Falsch! Kinder sagen oft nicht die Wahrheit ueber Schmerzen. Man muss genau hinschauen.",
-        },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 12: Categorize — Beobachtung bei verschiedenen Altersgruppen (SORTIERSTATION)
-  // =============================================================
-  {
-    stepId: "le01-s7-12",
+    stepId: "le01-s7-bk-03",
     phase: "s7",
     stepType: "categorize",
-    bloomLevel: 4,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q8 S.321-322"],
-    track: "basis",
-    modus: "sortierstation",
-    lernziel: "ce01-le01-beobachtung",
-    contentC1: {
-      title: "Beobachtung ueber Altersgruppen hinweg",
-      body: "Systematische Beobachtung ist bei jedem Patienten zentral. Aber was man beobachtet, haengt auch vom Alter ab.",
-    },
-    contentB1: {
-      title: "Beobachtung bei verschiedenen Altersgruppen",
-      body: "Man beobachtet bei Kindern etwas anderes als bei alten Menschen. Manches ist aber gleich.",
-    },
-    question: {
-      fragetext: "Ordne die Beobachtungsmerkmale der richtigen Gruppe zu.",
-      categories: [
-        { name: "Gilt fuer 8-Jaehrige" },
-        { name: "Gilt fuer 82-Jaehrige" },
-        { name: "Gilt fuer beide" },
-      ],
-      categoryItems: [
-        { text: "Spielverhalten beobachten", correctCategory: 0 },
-        { text: "Sturzrisiko einschaetzen", correctCategory: 1 },
-        { text: "Mimik und Gestik beobachten", correctCategory: 2 },
-        { text: "Eltern als Informationsquelle einbeziehen", correctCategory: 0 },
-        { text: "Vitalzeichen kontrollieren", correctCategory: 2 },
-        { text: "Verwirrtheit oder Desorientiertheit erkennen", correctCategory: 1 },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 13: Text — Rollen und Rollenkonflikte (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s7-13",
-    phase: "s7",
-    stepType: "text",
-    bloomLevel: 4,
-    kompetenzbereich: "KB-III",
-    quellen: ["Q6 S.267-270"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-pflegebeziehung",
-    contentC1: {
-      title: "Rollen und Rollenkonflikte",
-      body: "Jeder Mensch hat mehrere Rollen gleichzeitig. Bei Interrollenkonflikten widersprechen sich verschiedene Rollen. Yasemin ist Auszubildende UND Vertrauensperson — das kann kollidieren. Herr Al-Rashid hat kulturelle Rollenerwartungen, die mit dem Krankenhaus-Setting kollidieren. Tuckman beschreibt 5 Teamphasen: Forming, Storming, Norming, Performing, Adjourning.",
-    },
-    contentB1: {
-      title: "Verschiedene Rollen",
-      body: "Jeder Mensch hat mehrere Rollen. Manchmal passen sie nicht zusammen. Yasemin ist Auszubildende und gleichzeitig Vertrauensperson. In Teams gibt es 5 Phasen nach Tuckman.",
-    },
-    wusstestDuDas: "Der Begriff Interrollenkonflikt beschreibt, wenn zwei verschiedene Rollen einer Person sich widersprechen — z.B. Pflegekraft und Mutter sein.",
-  },
-
-  // =============================================================
-  // Step 14: Reveal — Tuckmans 5 Phasen (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s7-14",
-    phase: "s7",
-    stepType: "reveal",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-III",
-    quellen: ["Q6 S.270"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-pflegebeziehung",
-    contentC1: {
-      title: "Teamphasen nach Tuckman",
-      body: "Jedes Pflegeteam durchlaeuft typische Entwicklungsphasen. Das Wissen darueber hilft, Konflikte einzuordnen und Geduld zu bewahren.",
-    },
-    contentB1: {
-      title: "Wie Teams sich entwickeln",
-      body: "Jedes Team durchlaeuft 5 Phasen. Es ist normal, dass es am Anfang schwierig ist.",
-    },
-    question: {
-      fragetext: "Decke die 5 Teamphasen nach Tuckman auf.",
-      reveal: {
-        instruction: "Tippe auf jede Karte, um die Phase zu entdecken.",
-        revealMode: "sequential",
-        cards: [
-          {
-            id: "forming",
-            label: "Phase 1: Forming",
-            content: "Orientierung — Das Team lernt sich kennen. Hoeflichkeit, Unsicherheit, vorsichtiges Abtasten.",
-            contentB1: "Kennenlernen. Alle sind hoeflich und unsicher.",
-            icon: "👋",
-          },
-          {
-            id: "storming",
-            label: "Phase 2: Storming",
-            content: "Konfrontation — Unterschiedliche Meinungen treffen aufeinander. Konflikte und Machtkampf gehoeren dazu.",
-            contentB1: "Konflikte. Die Menschen sind verschiedener Meinung. Das ist normal.",
-            icon: "⚡",
-          },
-          {
-            id: "norming",
-            label: "Phase 3: Norming",
-            content: "Regelbildung — Das Team einigt sich auf gemeinsame Normen und Ablaeufe. Zusammenarbeit wird besser.",
-            contentB1: "Regeln. Das Team einigt sich. Alle wissen, wie es laeuft.",
-            icon: "📋",
-          },
-          {
-            id: "performing",
-            label: "Phase 4: Performing",
-            content: "Leistung — Das Team arbeitet effektiv zusammen. Starkes Wir-Gefuehl, offene Kommunikation, gegenseitige Anerkennung.",
-            contentB1: "Gute Zusammenarbeit. Das Team funktioniert gut und hilft sich gegenseitig.",
-            icon: "🏆",
-          },
-          {
-            id: "adjourning",
-            label: "Phase 5: Adjourning",
-            content: "Aufloesung — Das Team loest sich auf, z.B. am Ende eines Praxiseinsatzes oder bei Personalwechsel.",
-            contentB1: "Abschied. Das Team loest sich auf. Das passiert z.B. am Ende eines Einsatzes.",
-            icon: "👋",
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 15: Matching — Tuckman-Phasen + Pflege-Situation (PUZZLE)
-  // =============================================================
-  {
-    stepId: "le01-s7-15",
-    phase: "s7",
-    stepType: "matching",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-III",
-    quellen: ["Q6 S.270"],
-    track: "basis",
-    modus: "puzzle",
-    lernziel: "ce01-le01-pflegebeziehung",
-    contentC1: {
-      title: "Teamphasen erkennen",
-      body: "In der Pflege durchlaufen Teams diese Phasen immer wieder — bei neuen Kollegen, neuen Auszubildenden oder nach Umstrukturierungen.",
-    },
-    contentB1: {
-      title: "Welche Phase ist das?",
-      body: "Jede Situation im Team passt zu einer Phase. Ordne richtig zu.",
-    },
-    question: {
-      fragetext: "Ordne jede Pflege-Situation der passenden Tuckman-Phase zu.",
-      matchingPairs: [
-        { left: "Neue Kollegin im Team — alle sind freundlich-zurueckhaltend", right: "Forming" },
-        { left: "Streit ueber den Dienstplan — wer macht Nachtdienst?", right: "Storming" },
-        { left: "Team einigt sich auf feste Uebergabezeiten", right: "Norming" },
-        { left: "Station laeuft reibungslos, alle unterstuetzen sich", right: "Performing" },
-        { left: "Praxiseinsatz endet, Auszubildende wird verabschiedet", right: "Adjourning" },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 16: Timer — Speed-Fragen + Interleaving (CHALLENGE)
-  // =============================================================
-  {
-    stepId: "le01-s7-16",
-    phase: "s7",
-    stepType: "timer",
     bloomLevel: 3,
     kompetenzbereich: "KB-V",
-    quellen: ["Q6 S.270", "Q7 S.285"],
+    quellen: [],
     track: "vertiefung",
     modus: "challenge",
-    lernziel: "ce01-le01-pflegebeziehung",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
-      title: "Speed-Runde: Transfer + Interleaving",
-      body: "Schnelle Fragen aus verschiedenen Themenbereichen — auch aus frueheren Sessions.",
+      title: "Theorien-Transfer",
+      body: "Welche Theorie passt zu welcher Situation?",
     },
     contentB1: {
-      title: "Schnelle Fragen",
-      body: "Beantworte die Fragen so schnell wie moeglich. Manche Fragen kommen aus frueheren Sessions.",
+      title: "Welche Theorie passt?",
+      body: "Ordne die Situation zur Theorie.",
     },
     question: {
-      fragetext: "Beantworte jede Frage in 15 Sekunden.",
-      timeLimitSeconds: 15,
-      timerQuestions: [
-        {
-          question: "Welche Tuckman-Phase ist von Konflikten gepraegt?",
-          options: ["Forming", "Storming", "Norming"],
-          correctIndex: 1,
-        },
-        {
-          question: "Wie reagierst du auf kulturelle Pflegepraeferenzen?",
-          options: ["Ignorieren", "Organisation anpassen", "Patient erziehen"],
-          correctIndex: 1,
-        },
-        {
-          question: "INTERLEAVING: Was ist ein Dekubitus?",
-          options: ["Lungenentzuendung", "Druckgeschwuer", "Knochenbruch"],
-          correctIndex: 1,
-        },
-        {
-          question: "INTERLEAVING: Welche Prophylaxe verhindert Lungenentzuendungen bei bettlaegerigen Patienten?",
-          options: ["Dekubitusprophylaxe", "Thromboseprophylaxe", "Pneumonieprophylaxe"],
-          correctIndex: 2,
-        },
-        {
-          question: "Welches ethische Prinzip betrifft 'nicht schaden'?",
-          options: ["Autonomie", "Nonmalefizienz", "Benefizienz"],
-          correctIndex: 1,
-        },
+      fragetext: "Ordne die Situation zur passenden Theorie:",
+      categories: [
+        { name: "Orem" },
+        { name: "Peplau" },
+        { name: "Leininger" },
+        { name: "Krohwinkel" },
+      ],
+      items: [
+        { text: "Patient kann sich nicht mehr selbst waschen", correctCategory: 0 },
+        { text: "Therapeutisches Gespräch mit trauerndem Patienten", correctCategory: 1 },
+        { text: "Kulturelle Wünsche bei der Körperpflege", correctCategory: 2 },
+        { text: "Ganzheitliche Pflegeplanung nach 13 AEDL", correctCategory: 3 },
       ],
     },
   },
 
   // =============================================================
-  // Step 17: Branching — Fixierung bei Demenz (PRAXIS-SIM, B5)
+  // Interleaving: TrueFalse S1-S6
   // =============================================================
   {
-    stepId: "le01-s7-17",
+    stepId: "le01-s7-bk-04",
     phase: "s7",
-    stepType: "branching",
-    bloomLevel: 5,
-    kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.285", "Q7 S.283-284"],
-    track: "basis",
-    modus: "praxis-sim",
-    lernziel: "ce01-le01-menschenbild",
+    stepType: "truefalse",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-V",
+    quellen: [],
+    track: "vertiefung",
+    modus: "challenge",
+    lernziel: "ce01-le01-pflegewissenschaft",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
-      title: "Ethisches Dilemma: Fixierung",
-      body: "Eine 85-jaehrige Patientin mit Demenz zieht sich immer wieder den Venenzugang heraus. Die Aerztin ordnet eine Fixierung der Haende an. Als Pflegefachkraft zweifelst du an der Massnahme.",
-      fallbezug: "Nachtdienst. Die Patientin ist unruhig und zieht zum dritten Mal den Venenzugang.",
+      title: "Recall: S1-S6",
+      body: "Erinnerst du dich? 5 Aussagen quer durch alle bisherigen Sessions.",
     },
     contentB1: {
-      title: "Schwere Entscheidung: Festbinden?",
-      body: "Eine alte Patientin mit Demenz zieht sich immer die Nadel aus dem Arm. Die Aerztin sagt: Haende festbinden. Ist das richtig?",
-      fallbezug: "Die Patientin ist nachts unruhig. Sie zieht sich immer die Nadel raus.",
+      title: "Was weißt du noch?",
+      body: "Lies jede Aussage. Stimmt sie oder nicht?",
     },
     question: {
-      fragetext: "Wie gehst du mit der Fixierungsanordnung um?",
-      branchingOptions: [
-        {
-          text: "Die Anordnung sofort umsetzen — die Aerztin hat das entschieden.",
-          feedback: "Pflegefachkraefte haben eine eigenstaendige Verantwortung. Blindes Befolgen einer Anordnung ohne Pruefung von Alternativen ist ethisch problematisch. Autonomie der Patientin und Pflege-Charta Art. 2 (Unversehrtheit) muessen abgewogen werden.",
-          feedbackB1: "Einfach machen, weil die Aerztin es sagt? Pflegende muessen auch selber nachdenken. Es gibt vielleicht bessere Loesungen.",
-          isCorrect: false,
-        },
-        {
-          text: "Alternativen vorschlagen: 1:1-Betreuung, Armschiene statt Fixierung, Venenzugang an anderer Stelle.",
-          feedback: "Du waegst die ethischen Prinzipien ab: Autonomie und Unversehrtheit der Patientin gegen die medizinische Notwendigkeit. Alternativen zur Fixierung pruefen entspricht dem Prinzip der Nonmalefizienz.",
-          feedbackB1: "Sehr gut! Du suchst nach besseren Loesungen, bevor du jemanden festhindest. Das ist professionelle Pflege.",
-          isCorrect: true,
-        },
-        {
-          text: "Die Anordnung verweigern — Fixierung ist immer falsch.",
-          feedback: "Grundsaetzliche Verweigerung ohne Alternativvorschlag ist nicht professionell. Es gibt Situationen, in denen Fixierung als letztes Mittel noetig sein kann — aber erst nach Pruefung aller Alternativen.",
-          feedbackB1: "Einfach nein sagen ist auch nicht richtig. Man muss eine bessere Loesung anbieten.",
-          isCorrect: false,
-        },
+      fragetext: "Stimmt oder stimmt nicht?",
+      cards: [
+        { statement: "Die ICN-Definition umfasst 5 Schlüsselaufgaben.", isTrue: true, explanation: "Richtig! Gesundheitsförderung, Krankheitsverhütung, Versorgung, Forschung und Bildung (S1)." },
+        { statement: "Der Pflegeprozess nach Fiechter/Meier hat 8 Schritte.", isTrue: false, explanation: "6 Schritte! Informationssammlung → Probleme/Ressourcen → Ziele → Planung → Durchführung → Evaluation (S2)." },
+        { statement: "Watzlawick sagt: Man kann nicht nicht kommunizieren.", isTrue: true, explanation: "Richtig! Das 1. Axiom von Watzlawick: Jedes Verhalten hat Mitteilungscharakter (S3)." },
+        { statement: "EBN basiert nur auf wissenschaftlichen Studien.", isTrue: false, explanation: "EBN kombiniert 3 Säulen: Evidenz + klinische Expertise + Patientenpräferenzen (S6)." },
+        { statement: "Pflege ist laut PflBG ein eigenverantwortlicher Beruf.", isTrue: true, explanation: "Richtig! §4 PflBG definiert vorbehaltene Tätigkeiten — Pflege ist eigenverantwortlich (S1)." },
       ],
     },
   },
 
   // =============================================================
-  // Step 18: Crossword — Gesamtbegriffe S7 (PUZZLE)
+  // Matching: Theoretikerin → Kernaussage
   // =============================================================
   {
-    stepId: "le01-s7-18",
+    stepId: "le01-s7-bk-05",
     phase: "s7",
-    stepType: "crossword",
+    stepType: "matching",
     bloomLevel: 3,
     kompetenzbereich: "KB-V",
     quellen: [],
     track: "vertiefung",
     modus: "puzzle",
-    lernziel: "ce01-le01-pflegebeziehung",
+    lernziel: "ce01-le01-pflegetheorien",
+    themenblockPhase: "ANWENDUNG",
     contentC1: {
-      title: "Kreuzwortraetsel: Transfer-Session",
-      body: "Teste dein Wissen aus dieser Session mit einem Kreuzwortraetsel.",
+      title: "Wer sagt was?",
+      body: "Ordne jeder Theoretikerin ihre Kernaussage zu.",
     },
     contentB1: {
-      title: "Kreuzwortraetsel",
-      body: "Finde die richtigen Woerter. Die Hinweise helfen dir.",
+      title: "Zuordnen!",
+      body: "Welche Theoretikerin hat was gesagt?",
     },
     question: {
-      fragetext: "Loese das Kreuzwortraetsel mit Begriffen aus dieser Session.",
-      crosswordWords: [
-        { word: "TRAJEKT", clue: "Verlaufsmodell chronischer Erkrankungen nach Corbin und Strauss" },
-        { word: "STORMING", clue: "Tuckman-Phase mit Konflikten und Machtkampf" },
-        { word: "LEININGER", clue: "Theoretikerin der kulturkongruenten Pflege" },
-        { word: "AUTONOMIE", clue: "Ethisches Prinzip: Selbstbestimmung des Patienten" },
-        { word: "FORMING", clue: "Erste Tuckman-Phase: Kennenlernen und Orientierung" },
-        { word: "KUSS", clue: "Schmerzskala fuer Kinder: Kindliche Unbehagens- und Schmerz..." },
+      fragetext: "Ordne zu:",
+      pairs: [
+        { left: "Peplau", right: "Therapeutische Beziehung in 4 Phasen" },
+        { left: "Leininger", right: "Kulturkongruente Pflege" },
+        { left: "Orem", right: "Selbstpflegedefizit" },
+        { left: "Henderson", right: "14 Grundbedürfnisse" },
+        { left: "Nightingale", right: "Notes on Nursing (1859)" },
+        { left: "Benner", right: "Novice to Expert (5 Stufen)" },
       ],
     },
   },
 
   // =============================================================
-  // Step 19: Reflection — OQ4 Ethik + Kultur (SCHREIBTISCH, B5)
+  // Leitfall-Synthese: Yasemin
   // =============================================================
   {
-    stepId: "le01-s7-19",
+    stepId: "le01-s7-bk-06",
     phase: "s7",
-    stepType: "reflection",
-    bloomLevel: 5,
-    kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.285", "Q4 S.133-135", "Q7 S.283-284"],
-    track: "vertiefung",
-    modus: "schreibtisch",
-    lernziel: "ce01-le01-menschenbild",
+    stepType: "dialog",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-V",
+    quellen: [],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-pflegebeziehung",
+    themenblockPhase: "REFLEXION",
     contentC1: {
-      title: "Ethische Reflexion: Kultur und Pflege",
-      body: "Herr Al-Rashid lehnt Koerperpflege durch eine weibliche Pflegekraft ab. Eine Kollegin sagt: 'In Deutschland muss er das akzeptieren.'",
+      title: "Yasemins Erkenntnis",
+      body: "Am Ende der Woche reflektiert Yasemin.",
     },
     contentB1: {
-      title: "Deine Meinung: Kultur und Pflege",
-      body: "Herr Al-Rashid will keine Frau bei der Koerperpflege. Eine Kollegin sagt: 'In Deutschland muss er das akzeptieren.'",
+      title: "Was Yasemin gelernt hat",
+      body: "Yasemin denkt nach über diese Woche.",
     },
     question: {
-      fragetext: "Wie beurteilst du die Aussage der Kollegin? Begruende deine Antwort.",
-      reflection: {
-        prompt: "Wie beurteilst du die Aussage der Kollegin? Welche ethischen Prinzipien sind betroffen? Was wuerdest du tun?",
-        placeholder: "Ich bin nicht einverstanden mit dieser Aussage, weil...",
-        systemPrompt: "Bewerte die Antwort auf Basis von: 1) Ethisches Prinzip korrekt benannt (Autonomie, Wuerde) 2) Kulturelle Perspektive beruecksichtigt (Leininger) 3) Praktische Loesung vorgeschlagen. Musterantwort: Die Aussage ignoriert Autonomie und Pflege-Charta Art. 1. Kulturelle Praeferenzen beruehren die Wuerde. Loesung: maennlichen Kollegen organisieren, mit Patient kommunizieren.",
-      },
-      musterantwort: "Die Aussage ignoriert das Prinzip der Autonomie und die Pflege-Charta Art. 1 (Selbstbestimmung). Kulturelle Praeferenzen bei der Koerperpflege beruehren die Wuerde und Intimsphaere. Leininger betont kulturkongruente Pflege. Loesung: maennliche Pflegekraft organisieren, wenn moeglich. Sonst mit dem Patienten eine akzeptable Loesung erarbeiten.",
-      bewertungskriterien: [
-        "Ethisches Prinzip korrekt benannt (Autonomie, Wuerde)",
-        "Kulturelle Perspektive beruecksichtigt (Leininger)",
-        "Praktische Loesung vorgeschlagen",
-      ],
-      satzanfaengeB1: [
-        "Ich bin nicht einverstanden mit dieser Aussage, weil...",
-        "Der Patient hat das Recht...",
-        "Eine bessere Loesung waere...",
+      fragetext: "Yasemin am Ende der Woche:",
+      dialogLines: [
+        { speaker: "Yasemin", text: "Herr Al-Rashid wollte von einem Mann gepflegt werden. Jonas konnte seine Schmerzen nicht sagen. Herr Brenner brauchte jemanden zum Zuhören." },
+        { speaker: "Yasemin", text: "Jeder braucht etwas anderes. Aber eines ist immer gleich:" },
+        { speaker: "Yasemin", text: "Zuhören. Beobachten. Handeln. Und den Menschen respektieren — so wie er ist." },
       ],
     },
   },
 
   // =============================================================
-  // Step 20: Confidence — Selbsteinschaetzung (CHALLENGE)
+  // Confidence: Transfer
   // =============================================================
   {
-    stepId: "le01-s7-20",
+    stepId: "le01-s7-bk-07",
     phase: "s7",
     stepType: "confidence",
     bloomLevel: 3,
     kompetenzbereich: "KB-V",
     quellen: [],
     track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-pflegebeziehung",
+    modus: "checkpoint",
+    lernziel: "ce01-le01-pflegeprozess",
+    themenblockPhase: "REFLEXION",
     contentC1: {
-      title: "Selbsteinschaetzung: Transfer",
-      body: "Pruefe, wie sicher du dich nach dieser Session fuehlst.",
+      title: "Transfer-Check",
+      body: "Wie sicher fühlst du dich jetzt bei der Anwendung?",
     },
     contentB1: {
-      title: "Wie sicher bist du jetzt?",
-      body: "Schaetze dich ein: Was kannst du nach dieser Session?",
+      title: "Wie sicher bist du?",
+      body: "Kannst du dein Wissen bei neuen Patienten anwenden?",
     },
     question: {
-      fragetext: "Wie sicher fuehlst du dich bei diesen Aussagen?",
-      confidenceCards: [
-        {
-          statement: "Ich kann Kommunikation auf Kinder anpassen.",
-          statementB1: "Ich weiss, wie man mit Kindern ueber Schmerzen spricht.",
-          isTrue: true,
-          explanation: "Kinder brauchen altersgerechte Assessments wie die KUSS-Skala und eine aufmerksame Beobachtung nonverbaler Signale.",
-          explanationB1: "Bei Kindern muss man genau hinschauen und passende Methoden nutzen.",
-        },
-        {
-          statement: "Ich erkenne kulturelle Barrieren in der Pflegebeziehung.",
-          statementB1: "Ich erkenne, wenn ein Patient wegen seiner Kultur Probleme hat.",
-          isTrue: true,
-          explanation: "Kulturelle Praeferenzen beeinflussen die Pflegebeziehung. Leininger betont kulturkongruente Pflege.",
-          explanationB1: "Kultur beeinflusst, wie Menschen Pflege erleben. Das muss man beachten.",
-        },
-        {
-          statement: "Ich kenne Tuckmans 5 Teamphasen.",
-          statementB1: "Ich kenne die 5 Phasen, die ein Team durchlaeuft.",
-          isTrue: true,
-          explanation: "Forming, Storming, Norming, Performing, Adjourning — diese Phasen helfen, Teamkonflikte einzuordnen.",
-          explanationB1: "Kennenlernen, Konflikte, Regeln, gute Arbeit, Abschied — das sind die 5 Phasen.",
-        },
-        {
-          statement: "Ich kann ethische Dilemmata in der Pflege analysieren.",
-          statementB1: "Ich kann bei schwierigen Entscheidungen die ethischen Prinzipien anwenden.",
-          isTrue: true,
-          explanation: "Ethische Dilemmata erfordern die Abwaegung der 4 Prinzipien: Autonomie, Benefizienz, Nonmalefizienz, Gerechtigkeit.",
-          explanationB1: "Bei schwierigen Fragen prueft man: Selbstbestimmung, Wohltun, Nicht-Schaden, Gerechtigkeit.",
-        },
+      fragetext: "Wie sicher fühlst du dich bei diesen Aussagen?",
+      statements: [
+        "Ich kann den Pflegeprozess auf verschiedene Patienten anwenden.",
+        "Ich erkenne kulturelle Bedürfnisse und respektiere sie.",
+        "Ich beobachte systematisch — auch wenn der Patient 'alles gut' sagt.",
+        "Ich kann ethische Prinzipien im Alltag nutzen.",
       ],
     },
   },
 
   // =============================================================
-  // Step 21: Freetext — OQ3 Jonas Pflegeprozess (SCHREIBTISCH, B4)
+  // Tiefe Reflexion
   // =============================================================
   {
-    stepId: "le01-s7-21",
+    stepId: "le01-s7-bk-08",
     phase: "s7",
-    stepType: "freetext",
+    stepType: "reflection",
     bloomLevel: 4,
-    kompetenzbereich: "KB-I",
-    quellen: ["Q2 S.78-79", "Q8 S.321-322"],
+    kompetenzbereich: "KB-V",
+    quellen: [],
     track: "vertiefung",
     modus: "schreibtisch",
-    lernziel: "ce01-le01-pflegeprozess",
+    lernziel: "ce01-le01-pflegebeziehung",
+    themenblockPhase: "REFLEXION",
     contentC1: {
-      title: "Pflegeprozess auf Jonas anwenden",
-      body: "Jonas liegt nach der OP im Bett und sagt 'Mir gehts gut'. Sein Gesicht ist blass, die Lippen zusammengepresst.",
-      fallbezug: "Kinderchirurgische Station, Tag 1 nach Appendektomie.",
+      title: "Was hast du über dich gelernt?",
+      body: "Denke über dich als zukünftige Pflegekraft nach.",
     },
     contentB1: {
-      title: "Pflegeprozess bei Jonas",
-      body: "Jonas sagt 'Mir gehts gut'. Aber er hat Schmerzen. Was machst du?",
-      fallbezug: "Jonas liegt nach der Blinddarm-OP im Bett.",
+      title: "Was hast du gelernt?",
+      body: "Was weißt du jetzt über dich als Pflegekraft?",
     },
     question: {
-      fragetext: "Welche 3 Schritte des Pflegeprozesses wendest du bei Jonas an? Beschreibe konkret.",
-      musterantwort: "Schritt 1 (Informationssammlung): Beobachtung der Mimik — blasses Gesicht und gepresste Lippen deuten auf Schmerzen. Altersgerechtes Assessment mit KUSS-Skala durchfuehren. Schritt 2 (Probleme erkennen): Verdecktes Pflegeproblem — Schmerzen, die Jonas nicht benennt. Schritt 3 (Ziel): Jonas aeussert Schmerzen frei und erhaelt adaequate Schmerztherapie.",
-      bewertungskriterien: [
-        "Beobachtung korrekt gedeutet (Mimik zeigt Schmerz)",
-        "Mindestens 3 Schritte des Pflegeprozesses benannt",
-        "Altersgerechte Anpassung erkannt (KUSS-Skala fuer Kind)",
+      fragetext: "Was hast du in den letzten 7 Sessions über dich als Pflegekraft gelernt?",
+      satzanfaenge: [
+        "Ich habe gelernt, dass ich...",
+        "Am meisten überrascht hat mich...",
+        "Als Pflegekraft möchte ich...",
       ],
-      satzanfaengeB1: [
-        "Zuerst beobachte ich...",
-        "Dann erkenne ich das Problem...",
-        "Mein Ziel ist...",
-      ],
+      minWords: 25,
     },
   },
 
   // =============================================================
-  // Step 22: Summary — Session-Abschluss (CHECKPOINT)
+  // Session-Bookend: Summary
   // =============================================================
   {
-    stepId: "le01-s7-22",
+    stepId: "le01-s7-bk-09",
     phase: "s7",
     stepType: "summary",
     bloomLevel: 4,
@@ -1006,26 +737,23 @@ export const STEPS_S7: ContentStep[] = [
     track: "basis",
     modus: "checkpoint",
     lernziel: "ce01-le01-pflegebeziehung",
+    themenblockPhase: "CHECKPOINT",
     contentC1: {
-      title: "Das Wichtigste aus Session 7",
-      body: "Du hast gelernt, Gelerntes auf neue Patienten zu uebertragen — mit unterschiedlichem Alter, unterschiedlicher Kultur und unterschiedlichen Herausforderungen.",
+      title: "Das hast du heute gelernt",
+      body: "Session 7 ist geschafft! Du hast dein Wissen auf neue Patienten übertragen.",
     },
     contentB1: {
-      title: "Das hast du heute gelernt",
-      body: "Du hast geueebt, dein Wissen bei verschiedenen Patienten anzuwenden.",
+      title: "Zusammenfassung",
+      body: "Das hast du heute gelernt. Morgen: Prüfungsvorbereitung!",
     },
     question: {
-      fragetext: "Zusammenfassung der Session.",
-      summary: {
-        reflexionRueckbezug: "In Session 1 hast du gefragt: Was ist Pflege? Heute hast du gesehen: Pflege bedeutet, gleiche Prinzipien bei ganz verschiedenen Menschen anzuwenden.",
-        kernaussagen: [
-          "Gleiche Pflegeprinzipien gelten bei verschiedenen Patienten — unabhaengig von Alter und Kultur.",
-          "Kulturelle Werte respektieren, OHNE die Pflegequalitaet zu vernachlaessigen — das ist kulturkongruente Pflege nach Leininger.",
-          "Fruehe Beobachtung kann Komplikationsketten verhindern — wie bei Jonas gezeigt.",
-          "Ethische Dilemmata erfordern Abwaegung: Autonomie, Benefizienz, Nonmalefizienz, Gerechtigkeit.",
-          "Teams entwickeln sich in 5 Phasen nach Tuckman — Konflikte gehoeren dazu.",
-        ],
-      },
+      fragetext: "Deine 4 Kernaussagen aus Session 7:",
+      summaryPoints: [
+        "**Ahmed Al-Rashid:** Kulturelle Wünsche respektieren = Autonomie wahren. Dokumentation im Pflegeprozess.",
+        "**Jonas Berger:** Kinder können Schmerzen nicht ausdrücken. Systematische Beobachtung + altersgerechtes Assessment.",
+        "**Komplikationskette:** Ein übersehenes Problem zieht weitere nach sich. Frühe Erkennung unterbricht die Kette.",
+        "**Transfer:** Gleiche Prinzipien (Beobachtung, Kommunikation, Ethik) — aber angepasst an jeden Patienten.",
+      ],
     },
   },
 ];

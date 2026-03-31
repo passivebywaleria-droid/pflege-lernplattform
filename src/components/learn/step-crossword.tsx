@@ -16,6 +16,7 @@ import { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
+import { HandDrawnIcon } from "@/components/ui/hand-drawn-icon";
 
 interface CrosswordWord {
   word: string;
@@ -642,7 +643,7 @@ export function StepCrossword({
           >
             <p className="font-semibold">
               {allCorrect
-                ? "Alle Begriffe korrekt! 🎉"
+                ? <>Alle Begriffe korrekt! <HandDrawnIcon name="celebration" size={18} color="#30D158" className="inline-block ml-1" /></>
                 : `${correctCount}/${placed.length} richtig. Falsche Buchstaben sind rot markiert — die Lösung wird angezeigt.`}
             </p>
           </motion.div>

@@ -1,1023 +1,748 @@
-// Session 4: "Was macht den Menschen aus?" — LE 01
-// Generiert vom Content-Generator v2
-// Themen: Menschenbild, Ethik vs. Moral, Wuerde, ICN-Ethikkodex, Pflege-Charta, 4 ethische Prinzipien
-// Leitfall: Yasemin — Reflexionsgespraech mit Praxisanleiterin (Szene S3)
+// Session 4: "Richtig handeln" — LE 01 Personen- und situationsorientiert pflegen
+// Generiert vom Content-Generator v2.1 mit Phasen-Bogen
+// TB7: Ethik & Menschenbild (KB-IV, F19-F24) + TB8: Recht & Teamarbeit (KB-III/IV, F17-F18, F25)
+// Leitfall: Yasemin Demirci — Reflexionsgespräch mit Praxisanleiterin (Szene S3)
 // Bloom: B2-B4, 22 Steps, ~30 Min
-// Interleaving: 2 Fragen aus S1-S3 (Step 15 Timer: Pflegeprozess + Kommunikation)
 
 import type { ContentStep } from "../_types";
 
 export const STEPS_S4: ContentStep[] = [
   // =============================================================
-  // Step 1: Dialog — Yasemin: Reflexionsgespraech (STORY)
+  // Step 1: Session-Bookend — Vorwissen aktivieren
   // =============================================================
   {
-    stepId: "le01-s4-01",
+    stepId: "le01-s4-bk-01",
     phase: "s4",
-    stepType: "dialog",
+    stepType: "selfrating",
     bloomLevel: 2,
     kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.282"],
+    quellen: [],
     track: "basis",
-    modus: "story",
+    modus: "checkpoint",
     lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "CHECKPOINT",
     contentC1: {
-      title: "Freitag: Reflexionsgespraech",
-      body: "Yasemin reflektiert ihre erste Woche mit der Praxisanleiterin.",
-      fallbezug: "Freitag, Tag 5. Yasemin und die Praxisanleiterin sitzen im Pausenraum.",
+      title: "Dein Wissensstand",
+      body: "Schätze dich ein: Wie gut kennst du dich mit Ethik in der Pflege aus?",
     },
     contentB1: {
-      title: "Freitag: Was hast du gelernt?",
-      body: "Yasemin spricht mit der Praxisanleiterin ueber ihre Woche.",
-      fallbezug: "Es ist Freitag. Yasemin und die Praxisanleiterin sitzen zusammen.",
+      title: "Was weißt du schon?",
+      body: "Wie gut kennst du dich mit Ethik aus? Schätze dich ein.",
     },
     question: {
-      fragetext: "Begleite Yasemin bei ihrem Reflexionsgespraech.",
-      patientName: "Yasemin Demirci",
-      dialogPhases: [
-        {
-          context: "Praxisanleiterin: 'Was hast du diese Woche ueber Pflege gelernt?' Yasemin denkt an den Pflegeprozess, die Beobachtung und die Situation mit Herr Brenner.",
-          contextB1: "Praxisanleiterin: 'Was hast du diese Woche gelernt?' Yasemin denkt an alles, was passiert ist.",
-          speaker: "Yasemin",
-          options: [
-            {
-              text: "Ich habe gelernt, dass Beobachtung die wichtigste Kompetenz ist — und dass Empathie ohne Struktur gefaehrlich sein kann. Ich muss professionell nah sein, nicht privat nah.",
-              textB1: "Ich habe gelernt: Beobachten ist sehr wichtig. Und Mitgefuehl braucht Grenzen. Ich muss professionell sein.",
-              patientResponse: "Das ist eine reife Erkenntnis fuer die erste Woche. Heute sprechen wir ueber etwas, das alles zusammenhaelt: Ethik und Menschenwuerde.",
-              patientResponseB1: "Das ist sehr gut fuer die erste Woche. Heute sprechen wir ueber Ethik und Menschenwuerde.",
-              score: 3,
-              feedback: "Yasemin verbindet die Erfahrungen aus Session 1-3 zu einem Gesamtbild. Die Praxisanleiterin leitet zum naechsten Thema ueber.",
-              feedbackB1: "Yasemin zeigt, was sie gelernt hat. Jetzt kommt ein neues Thema: Ethik und Wuerde.",
-            },
-            {
-              text: "Es war eine anstrengende Woche. Ich bin nicht sicher, ob ich das schaffe.",
-              textB1: "Es war schwierig. Ich weiss nicht, ob ich das kann.",
-              patientResponse: "Zweifel sind normal — sie zeigen, dass du die Verantwortung ernst nimmst. Lass uns ueber etwas sprechen, das dir Orientierung gibt: Ethik.",
-              patientResponseB1: "Zweifel sind normal. Das zeigt, dass du es ernst nimmst. Heute lernst du etwas, das dir hilft: Ethik.",
-              score: 1,
-              feedback: "Selbstzweifel sind normal in der Ausbildung. Die Praxisanleiterin reagiert unterstuetzend — kein Sandwich-Prinzip noetig, sondern echte Ermutigung.",
-              feedbackB1: "Es ist okay, unsicher zu sein. Die Ausbildung hilft dir, sicherer zu werden.",
-            },
-          ],
-        },
+      fragetext: "Wie sicher fühlst du dich bei diesen Aussagen?",
+      statements: [
+        "Ich kann den Unterschied zwischen Ethik und Moral erklären.",
+        "Ich kenne die 4 ethischen Prinzipien.",
+        "Ich weiß, was die Pflege-Charta ist.",
+        "Ich kann erklären, was Würde bedeutet.",
+        "Ich weiß, welche Aufgaben nur Pflegefachkräfte machen dürfen.",
       ],
     },
   },
 
   // =============================================================
-  // Step 2: Swipe — Brilliant-Prinzip: Ethik/Wuerde (CHALLENGE)
+  // TB7: Ethik & Menschenbild — SZENE (Phase 1)
   // =============================================================
   {
-    stepId: "le01-s4-02",
+    stepId: "le01-s4-tb7-01",
     phase: "s4",
-    stepType: "swipe",
+    stepType: "dialog",
     bloomLevel: 2,
     kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.280-285"],
+    quellen: [],
     track: "basis",
-    modus: "challenge",
+    modus: "story",
     lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "SZENE",
     contentC1: {
-      title: "Stimmt das?",
-      body: "Aussagen zu Ethik und Wuerde — bevor du die Theorie kennst.",
+      title: "Reflexionsgespräch",
+      body: "Freitag, Tag 5. Yasemin sitzt mit ihrer Praxisanleiterin im Pausenraum. Die Woche war intensiv.",
+      fallbezug: "Yasemin hat diese Woche viel erlebt: den ersten Tag, Herr Brenners Tränen, das Dilemma zwischen Nähe und Distanz. Jetzt reflektiert sie.",
     },
     contentB1: {
-      title: "Stimmt das?",
-      body: "Was denkst du ueber Ethik und Wuerde? Entscheide dich.",
+      title: "Am Ende der Woche",
+      body: "Freitag. Yasemin spricht mit ihrer Praxisanleiterin über die Woche.",
+      fallbezug: "Yasemin denkt über ihre erste Woche nach.",
     },
     question: {
-      fragetext: "Wische rechts fuer 'stimmt' und links fuer 'stimmt nicht'.",
-      swipe: {
-        instruction: "Stimmt diese Aussage?",
-        cards: [
-          {
-            statement: "Wuerde hat man nur, wenn man etwas leistet.",
-            statementB1: "Wuerde hat man nur, wenn man etwas tut.",
-            isCorrect: false,
-            explanation: "Wuerde ist jedem Menschen zu eigen — allein weil er existiert. Art. 1 GG: 'Die Wuerde des Menschen ist unantastbar.'",
-            explanationB1: "Jeder Mensch hat Wuerde. Einfach weil er da ist. Das steht im Grundgesetz.",
-          },
-          {
-            statement: "Jeder Patient hat das Recht auf Privatheit.",
-            statementB1: "Jeder Patient hat das Recht, in Ruhe gelassen zu werden.",
-            isCorrect: true,
-            explanation: "Die Pflege-Charta Artikel 3 garantiert das Recht auf Privatheit fuer hilfe- und pflegebeduerftige Menschen.",
-            explanationB1: "Richtig! Die Pflege-Charta sagt: Patienten haben das Recht auf Privatheit.",
-          },
-          {
-            statement: "Ethik und Moral sind dasselbe.",
-            statementB1: "Ethik und Moral sind das Gleiche.",
-            isCorrect: false,
-            explanation: "Moral sind die Normen und Werte einer Gesellschaft. Ethik ist das reflektierte Nachdenken ueber moralisches Handeln.",
-            explanationB1: "Moral sind die Regeln einer Gesellschaft. Ethik ist das Nachdenken ueber diese Regeln.",
-          },
-          {
-            statement: "Pflegende duerfen die Wuerde eines Patienten niemals verletzen.",
-            statementB1: "Pflegende duerfen die Wuerde eines Patienten nie verletzen.",
-            isCorrect: true,
-            explanation: "Die Wuerde ist unantastbar (Art. 1 GG). Pflegende muessen sie in jeder Situation schuetzen — auch unter Zeitdruck.",
-            explanationB1: "Richtig! Die Wuerde ist unantastbar. Pflegende muessen sie immer schuetzen.",
-          },
-          {
-            statement: "Es gibt ein internationales Regelwerk fuer ethisches Handeln in der Pflege.",
-            statementB1: "Es gibt internationale Regeln fuer gutes Handeln in der Pflege.",
-            isCorrect: true,
-            explanation: "Der ICN-Ethikkodex (1953) formuliert Verhaltensnormen fuer Pflegende weltweit in 4 Bereichen.",
-            explanationB1: "Richtig! Der ICN-Ethikkodex sagt Pflegenden weltweit, wie sie sich verhalten sollen.",
-          },
-        ],
-      },
+      fragetext: "Yasemin und ihre Praxisanleiterin:",
+      dialogLines: [
+        { speaker: "Praxisanleiterin", text: "Du hast diese Woche viel gelernt. Was hat dich am meisten beschäftigt?" },
+        { speaker: "Yasemin", text: "Ich glaube, ich muss lernen, professionell nah zu sein — nicht privat nah." },
+        { speaker: "Praxisanleiterin", text: "Das ist eine wichtige Erkenntnis. Aber es gibt noch etwas anderes: Hast du dich mal gefragt, wann du RICHTIG handelst?" },
+        { speaker: "Yasemin", text: "Richtig handeln? Ich mache doch einfach, was in der Pflegeplanung steht..." },
+        { speaker: "Praxisanleiterin", text: "Und wenn die Pflegeplanung sagt: Körperpflege — aber der Patient sagt: Nein?" },
+      ],
     },
   },
 
   // =============================================================
-  // Step 3: Text — Ethik vs. Moral, Wuerde (ENTDECKER)
+  // TB7: ERKLÄRUNG (Phase 2) — Ethik vs. Moral + Würde
   // =============================================================
   {
-    stepId: "le01-s4-03",
+    stepId: "le01-s4-tb7-02",
     phase: "s4",
     stepType: "text",
-    bloomLevel: 2,
+    bloomLevel: 1,
     kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.280-282"],
+    quellen: ["Q7 S.282", "Q7 S.280-281"],
     track: "basis",
     modus: "entdecker",
     lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "ERKLÄRUNG",
+    imageUrl: "/images/content/le-01/ethik-moral.svg",
+    imageAlt: "Grafik: Ethik vs. Moral — Unterschied",
     contentC1: {
-      title: "Ethik, Moral und Wuerde",
-      body: "Ethik ist reflektiertes Nachdenken ueber moralisches Handeln. Moral ist die Gesamtheit von Normen und Werten, die das Verhalten einer Gesellschaft regulieren. Wuerde ist jedem Menschen zu eigen — allein weil er existiert. Art. 1 GG: 'Die Wuerde des Menschen ist unantastbar.' Haker unterscheidet anthropologische Verletzlichkeit (jeder Mensch) und moralische Verletzlichkeit (Pflegebeduerftige sind besonders verletzlich, weil sie abhaengig sind).",
-      glossarBegriffe: ["Ethik", "Wuerde", "Menschenbild"],
+      title: "Ethik, Moral und Würde",
+      body: "**Ethik** ist das reflektierte Nachdenken über moralisches Handeln, um zu begründeten Entscheidungen zu gelangen.\n\n**Moral** ist die Gesamtheit von Normen, Grundsätzen und Werten, die das Verhalten einer Gesellschaft regulieren.\n\n**Würde** ist ein achtunggebietender Wert, der jedem Menschen innewohnt — allein weil er existiert. Art. 1 Grundgesetz: 'Die Würde des Menschen ist unantastbar.'\n\n**Verletzlichkeit** nach Haker: Jeder Mensch ist verletzlich (anthropologisch). Pflegebedürftige sind besonders verletzlich, weil sie von anderen abhängig sind (moralisch).",
+      fallbezug: "Yasemin versteht: Wenn sie pflegt, berührt sie nicht nur den Körper — sondern auch die Würde eines Menschen.",
     },
     contentB1: {
-      title: "Ethik, Moral und Wuerde",
-      body: "Ethik heisst: Nachdenken ueber richtiges Handeln. Moral sind die Regeln einer Gesellschaft. Wuerde hat jeder Mensch — einfach weil er da ist. Das steht im Grundgesetz. Pflegebeduerftige Menschen sind besonders verletzlich, weil sie auf andere angewiesen sind.",
-      glossarBegriffe: ["Ethik", "Wuerde", "Menschenbild"],
+      title: "Ethik und Würde",
+      body: "**Ethik** = Nachdenken über richtiges Handeln.\n**Moral** = Die Regeln, nach denen wir leben.\n\n**Würde** = Jeder Mensch ist wertvoll — einfach weil er da ist. Das steht im Grundgesetz.\n\nMenschen, die Pflege brauchen, sind besonders verletzlich. Sie brauchen besonderen Schutz.",
+      fallbezug: "Yasemin lernt: Pflege bedeutet auch, die Würde des Patienten zu schützen.",
     },
   },
 
   // =============================================================
-  // Step 4: Reveal — Wuerde in der Pflege (ENTDECKER)
+  // TB7: ERKLÄRUNG (Phase 2) — 4 ethische Prinzipien
   // =============================================================
   {
-    stepId: "le01-s4-04",
+    stepId: "le01-s4-tb7-03",
     phase: "s4",
     stepType: "reveal",
     bloomLevel: 2,
     kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.280-284"],
+    quellen: ["Q7 S.285"],
     track: "basis",
     modus: "entdecker",
     lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "ERKLÄRUNG",
+    imageUrl: "/images/content/le-01/ethische-prinzipien.svg",
+    imageAlt: "Grafik: 4 ethische Prinzipien nach Beauchamp und Childress",
     contentC1: {
-      title: "Wuerde in der Pflege",
-      body: "Vier Perspektiven auf Wuerde — von der Verfassung bis zur Pflegepraxis.",
+      title: "Die 4 ethischen Prinzipien",
+      body: "Tippe auf jede Karte, um die Prinzipien nach Beauchamp und Childress zu entdecken.",
     },
     contentB1: {
-      title: "Was bedeutet Wuerde in der Pflege?",
-      body: "Vier Blickwinkel auf Wuerde. Decke sie auf.",
+      title: "4 Regeln für richtiges Handeln",
+      body: "Tippe auf jede Karte. Was bedeuten die 4 Prinzipien?",
     },
     question: {
-      fragetext: "Decke die vier Perspektiven auf.",
-      reveal: {
-        instruction: "Tippe auf jede Karte.",
-        revealMode: "free",
-        cards: [
-          {
-            id: "r1",
-            label: "Grundgesetz",
-            content: "Art. 1 GG: 'Die Wuerde des Menschen ist unantastbar.' Sie zu achten und zu schuetzen ist Verpflichtung aller staatlichen Gewalt.",
-            contentB1: "Das Grundgesetz sagt: Die Wuerde jedes Menschen ist unantastbar. Der Staat muss sie schuetzen.",
-            icon: "book",
-          },
-          {
-            id: "r2",
-            label: "Menschenrechte",
-            content: "Allgemeine Erklaerung der Menschenrechte Art. 1: 'Alle Menschen sind frei und gleich an Wuerde und Rechten geboren.'",
-            contentB1: "Die Menschenrechte sagen: Alle Menschen haben die gleiche Wuerde. Von Geburt an.",
-            icon: "globe",
-          },
-          {
-            id: "r3",
-            label: "Verletzlichkeit",
-            content: "Anthropologische Verletzlichkeit: Jeder Mensch ist verletzlich. Moralische Verletzlichkeit: Pflegebeduerftige sind besonders verletzlich, weil sie abhaengig sind.",
-            contentB1: "Jeder Mensch ist verletzlich. Pflegebeduerftige Menschen sind besonders verletzlich, weil sie Hilfe brauchen.",
-            icon: "shield",
-          },
-          {
-            id: "r4",
-            label: "Pflege-Charta",
-            content: "Pflege-Charta Art. 1: Hilfe- und pflegebeduerftige Menschen haben das Recht auf Selbstbestimmung und auf Schutz ihrer Wuerde.",
-            contentB1: "Die Pflege-Charta sagt: Menschen, die Pflege brauchen, duerfen selbst entscheiden und ihre Wuerde muss geschuetzt werden.",
-            icon: "file-text",
-          },
-        ],
-      },
+      fragetext: "Entdecke die 4 ethischen Prinzipien:",
+      revealItems: [
+        { icon: "user-check", label: "Autonomie", detail: "Selbstbestimmung: Jeder Patient hat das Recht, selbst zu entscheiden — auch wenn wir anderer Meinung sind." },
+        { icon: "heart-handshake", label: "Benefizienz", detail: "Wohltun: Pflegende handeln zum Wohl des Patienten — sie fördern Gesundheit und Wohlbefinden." },
+        { icon: "shield-check", label: "Nonmalefizienz", detail: "Nichtschaden: Pflegende vermeiden Handlungen, die dem Patienten schaden könnten." },
+        { icon: "scale", label: "Gerechtigkeit", detail: "Faire Verteilung: Alle Patienten haben Anspruch auf gleich gute Pflege — unabhängig von Herkunft, Religion oder Status." },
+      ],
     },
   },
 
   // =============================================================
-  // Step 5: MC — Pflege-Charta Transfer (CHALLENGE, AMBOSS)
+  // TB7: CHECKPOINT (Phase 3) — MC Autonomie
   // =============================================================
   {
-    stepId: "le01-s4-05",
+    stepId: "le01-s4-tb7-04",
     phase: "s4",
     stepType: "mc",
     bloomLevel: 2,
     kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.283-284"],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-menschenbild",
-    contentC1: {
-      title: "Pflege-Charta anwenden",
-      body: "Herr Brenner steht im Krankenhemd auf dem Flur — sichtbar fuer alle.",
-    },
-    contentB1: {
-      title: "Rechte des Patienten",
-      body: "Herr Brenner steht im Krankenhemd auf dem Flur. Alle koennen ihn sehen.",
-    },
-    question: {
-      fragetext: "Welches Recht der Pflege-Charta ist hier betroffen?",
-      optionen: [
-        {
-          text: "Recht auf Privatheit (Artikel 3)",
-          isCorrect: true,
-          explanation: "Im Krankenhemd auf dem Flur zu stehen verletzt die Privatsphaere. Die Pflege-Charta schuetzt das Recht auf Privatheit.",
-          explanationB1: "Richtig! Im Krankenhemd auf dem Flur — das verletzt die Privatsphaere. Das Recht auf Privatheit ist wichtig.",
-        },
-        {
-          text: "Recht auf Selbstbestimmung (Artikel 1)",
-          isCorrect: false,
-          explanation: "Selbstbestimmung waere betroffen, wenn Herr Brenner nicht auf den Flur wollte. Hier geht es um seine Privatheit — sein Koerper ist fuer alle sichtbar.",
-          explanationB1: "Selbstbestimmung heisst: selbst entscheiden. Hier geht es aber darum, dass alle ihn sehen koennen.",
-        },
-        {
-          text: "Recht auf qualifizierte Pflege (Artikel 4)",
-          isCorrect: false,
-          explanation: "Qualifizierte Pflege bezieht sich auf die fachliche Versorgung. Hier geht es um die Wuerde und Privatheit des Patienten.",
-          explanationB1: "Qualifizierte Pflege heisst: gute Pflege bekommen. Hier geht es aber um die Privatsphaere.",
-        },
-        {
-          text: "Recht auf wuerdevolles Sterben (Artikel 8)",
-          isCorrect: false,
-          explanation: "Artikel 8 betrifft die Begleitung am Lebensende. Herr Brenner ist nicht sterbend — es geht um seine Privatsphaere im Alltag.",
-          explanationB1: "Artikel 8 ist fuer das Sterben. Herr Brenner stirbt nicht. Es geht um seine Privatsphaere.",
-        },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 6: Text — ICN-Ethikkodex, Pflege-Charta, 4 Prinzipien (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s4-06",
-    phase: "s4",
-    stepType: "text",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.283-285", "Q9"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-menschenbild",
-    contentC1: {
-      title: "Ethische Leitlinien der Pflege",
-      body: "Der ICN-Ethikkodex (1953, mehrfach aktualisiert) formuliert Verhaltensnormen in 4 Bereichen: gegenueber Mitmenschen, in der Berufsausuebung, gegenueber der Profession und gegenueber Kollegen. Die Pflege-Charta (2005) enthaelt 8 Artikel zu den Rechten hilfe- und pflegebeduertiger Menschen. Die 4 ethischen Prinzipien nach Beauchamp und Childress: Autonomie, Benefizienz, Nonmalefizienz, Gerechtigkeit.",
-      glossarBegriffe: ["ICN-Ethikkodex", "Pflege-Charta"],
-    },
-    contentB1: {
-      title: "Regeln fuer ethisches Handeln",
-      body: "Der ICN-Ethikkodex sagt, wie Pflegende sich verhalten sollen: gegenueber Patienten, im Beruf und mit Kollegen. Die Pflege-Charta hat 8 Artikel mit Rechten fuer Patienten. Es gibt 4 ethische Grundsaetze: Selbstbestimmung, Wohltun, Nichtschaden und Gerechtigkeit.",
-      glossarBegriffe: ["ICN-Ethikkodex", "Pflege-Charta"],
-    },
-  },
-
-  // =============================================================
-  // Step 7: Flipcard — 4 ethische Prinzipien (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s4-07",
-    phase: "s4",
-    stepType: "flipcard",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-IV",
     quellen: ["Q7 S.285"],
     track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-menschenbild",
-    imageUrl: "/images/le01/ethische-prinzipien.svg",
-    imageAlt: "4 Karten mit ethischen Prinzipien nach Beauchamp und Childress",
-    contentC1: {
-      title: "Vier ethische Prinzipien",
-      body: "Beauchamp und Childress formulierten 4 Prinzipien, die in der Pflegeethik zentral sind.",
-    },
-    contentB1: {
-      title: "Vier ethische Grundsaetze",
-      body: "Es gibt 4 wichtige Grundsaetze fuer ethisches Handeln in der Pflege.",
-    },
-    question: {
-      fragetext: "Tippe auf ein Prinzip, um das Pflege-Beispiel zu sehen.",
-      flipcard: {
-        instruction: "Drehe die Karten um.",
-        cards: [
-          {
-            front: "Autonomie (Selbstbestimmung)",
-            back: "Der Patient darf eine Behandlung ablehnen — auch wenn die Pflegekraft anderer Meinung ist. Sein Wille zaehlt.",
-            backB1: "Der Patient darf 'Nein' sagen. Auch wenn die Pflegekraft denkt, die Behandlung ist wichtig.",
-            category: "Ethik",
-          },
-          {
-            front: "Benefizienz (Wohltun)",
-            back: "Pflegemassnahmen sollen dem Patienten nutzen: Schmerzlinderung, Mobilitaetsfoerderung, Beratung.",
-            backB1: "Pflege soll dem Patienten helfen: Schmerzen lindern, Bewegung foerdern, beraten.",
-            category: "Ethik",
-          },
-          {
-            front: "Nonmalefizienz (Nichtschaden)",
-            back: "Pflege darf dem Patienten nicht schaden. Dekubitusprophylaxe, Sturzpraevention und Hygienestandards schuetzen vor vermeidbarem Schaden.",
-            backB1: "Pflege darf dem Patienten nicht schaden. Zum Beispiel: Druck vermeiden, Stuerze verhindern, Hygiene beachten.",
-            category: "Ethik",
-          },
-          {
-            front: "Gerechtigkeit (faire Verteilung)",
-            back: "Alle Patienten haben Anspruch auf die gleiche Qualitaet der Pflege — unabhaengig von Herkunft, Alter oder sozialem Status.",
-            backB1: "Alle Patienten bekommen die gleiche gute Pflege. Egal woher sie kommen oder wie alt sie sind.",
-            category: "Ethik",
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 8: Matching — Pflege-Charta (PUZZLE)
-  // =============================================================
-  {
-    stepId: "le01-s4-08",
-    phase: "s4",
-    stepType: "matching",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.283-284"],
-    track: "basis",
-    modus: "puzzle",
-    lernziel: "ce01-le01-menschenbild",
-    contentC1: {
-      title: "Pflege-Charta zuordnen",
-      body: "Ordne die Artikel der Pflege-Charta den richtigen Beschreibungen zu.",
-    },
-    contentB1: {
-      title: "Rechte der Patienten",
-      body: "Verbinde jedes Recht mit der richtigen Beschreibung.",
-    },
-    question: {
-      fragetext: "Ordne die Pflege-Charta-Artikel zu.",
-      matchingPairs: [
-        { left: "Selbstbestimmung (Art. 1)", right: "Jeder darf ueber seine Pflege selbst entscheiden" },
-        { left: "Unversehrtheit (Art. 2)", right: "Schutz vor koerperlichem und seelischem Schaden" },
-        { left: "Privatheit (Art. 3)", right: "Recht auf Intimsphaere und persoenlichen Raum" },
-        { left: "Qualifizierte Pflege (Art. 4)", right: "Anspruch auf fachlich gute Pflege" },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 9: Categorize — Ethische Prinzipien zuordnen (SORTIERSTATION)
-  // =============================================================
-  {
-    stepId: "le01-s4-09",
-    phase: "s4",
-    stepType: "categorize",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.285"],
-    track: "basis",
-    modus: "sortierstation",
-    lernziel: "ce01-le01-menschenbild",
-    contentC1: {
-      title: "Ethische Prinzipien anwenden",
-      body: "Ordne die Pflege-Situationen dem passenden ethischen Prinzip zu.",
-    },
-    contentB1: {
-      title: "Welches Prinzip passt?",
-      body: "Ordne die Pflege-Situation dem richtigen Grundsatz zu.",
-    },
-    question: {
-      fragetext: "Ordne jede Situation dem passenden ethischen Prinzip zu.",
-      categories: [
-        { name: "Autonomie" },
-        { name: "Benefizienz" },
-        { name: "Nonmalefizienz" },
-        { name: "Gerechtigkeit" },
-      ],
-      categoryItems: [
-        { text: "Patient darf Behandlung ablehnen", correctCategory: 0 },
-        { text: "Schmerztherapie nach Bedarf anbieten", correctCategory: 1 },
-        { text: "Dekubitusprophylaxe bei bettlaegerigem Patienten", correctCategory: 2 },
-        { text: "Alle Patienten gleich gut pflegen", correctCategory: 3 },
-        { text: "Patient entscheidet selbst ueber Besuchszeiten", correctCategory: 0 },
-        { text: "Sturzpraevention: Haltegriffe und Nachtlicht", correctCategory: 2 },
-        { text: "Mobilisation zur Gesundheitsfoerderung", correctCategory: 1 },
-        { text: "Keinen Patienten wegen Herkunft benachteiligen", correctCategory: 3 },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 10: Slider — Pflege-Charta Artikel (CHALLENGE, vertiefung)
-  // =============================================================
-  {
-    stepId: "le01-s4-10",
-    phase: "s4",
-    stepType: "slider",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.283-284"],
-    track: "vertiefung",
     modus: "challenge",
     lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "CHECKPOINT",
     contentC1: {
-      title: "Pflege-Charta",
-      body: "Die Pflege-Charta definiert die Rechte hilfe- und pflegebeduerfiger Menschen.",
+      title: "Kurzer Check!",
+      body: "Herr Al-Rashid lehnt die Körperpflege durch eine weibliche Pflegekraft ab. Welches ethische Prinzip ist hier zentral?",
     },
     contentB1: {
-      title: "Pflege-Charta",
-      body: "Die Pflege-Charta hat wichtige Rechte fuer Patienten.",
+      title: "Kurzer Check!",
+      body: "Ein Patient will nicht von einer Frau gewaschen werden. Welches Prinzip ist wichtig?",
     },
     question: {
-      fragetext: "Wie viele Artikel hat die Pflege-Charta?",
-      slider: {
-        instruction: "Bewege den Regler auf die richtige Zahl.",
-        unit: "Artikel",
-        min: 1,
-        max: 12,
-        step: 1,
-        correctValue: 8,
-        tolerance: 0,
-        explanation: "Die Pflege-Charta (2005) enthaelt 8 Artikel: Selbstbestimmung, Unversehrtheit, Privatheit, qualifizierte Pflege, Information, Kommunikation, Religion und wuerdevolles Sterben.",
-        explanationB1: "Die Pflege-Charta hat 8 Artikel mit wichtigen Rechten fuer Patienten.",
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 11: Timeline — Ethik-Meilensteine (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s4-11",
-    phase: "s4",
-    stepType: "timeline",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.280-285", "Q9", "Q10"],
-    track: "basis",
-    modus: "entdecker",
-    lernziel: "ce01-le01-menschenbild",
-    imageUrl: "/images/le01/timeline-ethik.svg",
-    imageAlt: "Zeitstrahl ethischer Meilensteine in der Pflege",
-    contentC1: {
-      title: "Ethik-Meilensteine",
-      body: "Von den Menschenrechten bis zum Pflegeberufegesetz: Ethik hat eine Geschichte.",
-    },
-    contentB1: {
-      title: "Wichtige Daten der Ethik",
-      body: "Wann wurden wichtige ethische Regeln beschlossen?",
-    },
-    question: {
-      fragetext: "Erkunde die Meilensteine.",
-      timeline: {
-        instruction: "Scrolle durch den Zeitstrahl.",
-        events: [
-          {
-            id: "t1",
-            time: "1948",
-            title: "Allgemeine Erklaerung der Menschenrechte",
-            description: "Die Vereinten Nationen verabschieden die Menschenrechtserklarung. Art. 1: Alle Menschen sind frei und gleich an Wuerde geboren.",
-            descriptionB1: "Die Vereinten Nationen beschliessen: Alle Menschen haben die gleiche Wuerde.",
-            icon: "globe",
-          },
-          {
-            id: "t2",
-            time: "1953",
-            title: "ICN-Ethikkodex",
-            description: "Der International Council of Nurses verabschiedet den ersten Ethikkodex fuer Pflegende. 4 Bereiche ethischen Handelns.",
-            descriptionB1: "Der ICN macht die ersten ethischen Regeln fuer Pflegende.",
-            icon: "file-text",
-            highlight: true,
-          },
-          {
-            id: "t3",
-            time: "2005",
-            title: "Pflege-Charta",
-            description: "Die Pflege-Charta definiert 8 Artikel zu den Rechten hilfe- und pflegebeduerfiger Menschen in Deutschland.",
-            descriptionB1: "Die Pflege-Charta beschreibt 8 Rechte fuer Menschen, die Pflege brauchen.",
-            icon: "scroll",
-            highlight: true,
-          },
-          {
-            id: "t4",
-            time: "2017",
-            title: "Pflegeberufegesetz (PflBG)",
-            description: "Das PflBG vereint Pflegeausbildungen und definiert vorbehaltene Taetigkeiten — ein Meilenstein fuer die Professionalisierung.",
-            descriptionB1: "Neues Gesetz fuer die Pflege: Eine Ausbildung fuer alle, eigene Aufgaben fuer Pflegefachkraefte.",
-            icon: "landmark",
-          },
-        ],
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 12: Dialog — Yasemin: Ethische Reflexion Herr Brenner (STORY)
-  // =============================================================
-  {
-    stepId: "le01-s4-12",
-    phase: "s4",
-    stepType: "dialog",
-    bloomLevel: 3,
-    kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.280-285"],
-    track: "basis",
-    modus: "story",
-    lernziel: "ce01-le01-menschenbild",
-    contentC1: {
-      title: "Wuerde im Alltag",
-      body: "Yasemin denkt an Herr Brenner und verbindet Ethik mit ihrer Erfahrung.",
-      fallbezug: "Yasemin erinnert sich an die Situation mit dem weinenden Patienten.",
-    },
-    contentB1: {
-      title: "Wuerde im Alltag",
-      body: "Yasemin denkt an Herr Brenner. Was hat Wuerde damit zu tun?",
-      fallbezug: "Yasemin erinnert sich an den weinenden Patienten.",
-    },
-    question: {
-      fragetext: "Was denkt Yasemin?",
-      patientName: "Yasemin Demirci",
-      dialogPhases: [
-        {
-          context: "Yasemin erinnert sich: 'Was waere passiert, wenn ich zu Herr Brenner gesagt haette: Hoeren Sie auf zu weinen?'",
-          contextB1: "Yasemin denkt: 'Was waere passiert, wenn ich gesagt haette: Hoeren Sie auf zu weinen?'",
-          speaker: "Yasemin (denkt)",
-          options: [
-            {
-              text: "Das haette seine Wuerde verletzt. Er hat ein Recht darauf, seine Gefuehle zu zeigen. Empathie schuetzt die Wuerde.",
-              textB1: "Das haette seine Wuerde verletzt. Er darf seine Gefuehle zeigen. Mitgefuehl schuetzt seine Wuerde.",
-              patientResponse: "Genau. Wuerde zu schuetzen bedeutet auch, Gefuehle zuzulassen — und gleichzeitig professionell zu handeln.",
-              patientResponseB1: "Genau! Wuerde schuetzen heisst auch: Gefuehle erlauben. Und trotzdem professionell sein.",
-              score: 3,
-              feedback: "Wuerde ist nicht nur ein Gesetzesartikel — sie wird im taeglichen Umgang geschuetzt. Empathie ist ein Werkzeug dafuer.",
-              feedbackB1: "Wuerde schuetzt man jeden Tag. Mitgefuehl hilft dabei.",
-            },
-            {
-              text: "Weinen ist im Krankenhaus normal. Das hat nichts mit Wuerde zu tun.",
-              textB1: "Weinen im Krankenhaus ist normal. Das hat nichts mit Wuerde zu tun.",
-              patientResponse: "Weinen IST normal — aber wie wir darauf reagieren, zeigt, ob wir die Wuerde achten. 'Hoeren Sie auf' wuerde bedeuten: Deine Gefuehle sind nicht wichtig.",
-              patientResponseB1: "Weinen ist normal. Aber wie wir reagieren, ist wichtig. 'Hoeren Sie auf' wuerde heissen: Deine Gefuehle sind egal.",
-              score: 1,
-              feedback: "Weinen ist menschlich. Aber die Reaktion der Pflegekraft entscheidet, ob die Wuerde gewahrt bleibt.",
-              feedbackB1: "Weinen ist menschlich. Aber die Reaktion ist wichtig. Sie kann Wuerde schuetzen oder verletzen.",
-            },
-          ],
-        },
+      fragetext: "Welches ethische Prinzip steht bei Herrn Al-Rashids Wunsch im Vordergrund?",
+      options: [
+        { text: "Autonomie — Selbstbestimmung des Patienten", isCorrect: true, explanation: "Richtig! Autonomie bedeutet: Der Patient entscheidet selbst über seinen Körper. Kulturelle und religiöse Überzeugungen gehören dazu." },
+        { text: "Benefizienz — Wohltun der Pflegekraft", isCorrect: false, explanation: "Benefizienz bedeutet, zum Wohl des Patienten zu handeln. Aber das Wohl schließt auch die Achtung seiner Wünsche ein — nicht nur die körperliche Versorgung." },
+        { text: "Gerechtigkeit — alle gleich behandeln", isCorrect: false, explanation: "Gerechtigkeit bedeutet nicht, alle gleich zu behandeln, sondern allen gleich gute Pflege zu geben. Individuelle Bedürfnisse zu berücksichtigen ist gerecht." },
+        { text: "Nonmalefizienz — keinen Schaden anrichten", isCorrect: false, explanation: "Nonmalefizienz spielt eine Rolle, wenn Pflege gegen den Willen des Patienten durchgeführt wird — aber das zentrale Prinzip hier ist die Autonomie." },
       ],
     },
   },
 
   // =============================================================
-  // Step 13: TrueFalse — Ethik-Wissen (CHALLENGE)
+  // TB7: ANDERS_ERKLÄRT (Phase 4) — Comparison Prinzipien
   // =============================================================
   {
-    stepId: "le01-s4-13",
-    phase: "s4",
-    stepType: "truefalse",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.283-285", "Q9"],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-menschenbild",
-    contentC1: {
-      title: "Richtig oder falsch?",
-      body: "Teste dein Wissen ueber Ethik in der Pflege.",
-    },
-    contentB1: {
-      title: "Richtig oder falsch?",
-      body: "Welche Aussagen stimmen?",
-    },
-    question: {
-      fragetext: "Welche Aussagen sind richtig?",
-      trueFalseCards: [
-        {
-          statement: "Der ICN-Ethikkodex formuliert Normen in 4 Bereichen.",
-          isTrue: true,
-          explanation: "4 Bereiche: gegenueber Mitmenschen, in der Berufsausuebung, gegenueber der Profession und gegenueber Kollegen.",
-        },
-        {
-          statement: "Gerechtigkeit bedeutet, alle Patienten exakt gleich zu behandeln.",
-          isTrue: false,
-          explanation: "Gerechtigkeit meint faire Verteilung. Das kann bedeuten, dass ein Patient mit groesserem Bedarf mehr Unterstuetzung erhaelt — das ist fair, nicht gleich.",
-        },
-        {
-          statement: "Die Pflege-Charta wurde 2005 veroeffentlicht.",
-          isTrue: true,
-          explanation: "Die Pflege-Charta erschien 2005 und enthaelt 8 Artikel zu den Rechten hilfe- und pflegebeduerfiger Menschen.",
-        },
-        {
-          statement: "Ethik und Moral bedeuten dasselbe.",
-          isTrue: false,
-          explanation: "Moral sind die Normen einer Gesellschaft. Ethik ist das reflektierte Nachdenken ueber diese Normen.",
-        },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 14: Memory — Ethik-Begriffe (PUZZLE, vertiefung)
-  // =============================================================
-  {
-    stepId: "le01-s4-14",
-    phase: "s4",
-    stepType: "memory",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.280-285"],
-    track: "vertiefung",
-    modus: "puzzle",
-    lernziel: "ce01-le01-menschenbild",
-    contentC1: {
-      title: "Memory: Ethik-Begriffe",
-      body: "Finde die zusammengehoerenden Paare.",
-    },
-    contentB1: {
-      title: "Memory-Spiel: Ethik",
-      body: "Finde die Paare: Welches Wort passt zu welcher Erklaerung?",
-    },
-    question: {
-      fragetext: "Decke zwei Karten auf und finde das passende Paar.",
-      memoryPairs: [
-        { a: "Autonomie", b: "Selbstbestimmung" },
-        { a: "Benefizienz", b: "Wohltun" },
-        { a: "Nonmalefizienz", b: "Nichtschaden" },
-        { a: "Gerechtigkeit", b: "Faire Verteilung" },
-        { a: "Ethik", b: "Reflektiertes Nachdenken ueber moralisches Handeln" },
-        { a: "Wuerde", b: "Unantastbarer Wert jedes Menschen" },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 15: Timer — Speed-Fragen mit Interleaving (CHALLENGE, vertiefung)
-  // =============================================================
-  {
-    stepId: "le01-s4-15",
-    phase: "s4",
-    stepType: "timer",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.283-285"],
-    track: "vertiefung",
-    modus: "challenge",
-    lernziel: "ce01-le01-menschenbild",
-    contentC1: {
-      title: "Speed-Runde: Ethik",
-      body: "4 schnelle Fragen. Zwei davon sind Rueckblicke auf andere Themen.",
-    },
-    contentB1: {
-      title: "Schnelle Fragen",
-      body: "4 Fragen. Du hast 15 Sekunden. Zwei Fragen sind aus anderen Themen.",
-    },
-    question: {
-      fragetext: "Beantworte die Fragen so schnell wie moeglich.",
-      timeLimitSeconds: 15,
-      timerQuestions: [
-        {
-          question: "Wie viele Bereiche hat der ICN-Ethikkodex?",
-          options: ["2", "4", "6"],
-          correctIndex: 1,
-        },
-        {
-          question: "Welches Prinzip schuetzt den Patienten vor Schaden?",
-          options: ["Benefizienz", "Nonmalefizienz", "Autonomie"],
-          correctIndex: 1,
-        },
-        {
-          question: "Wie viele Schritte hat der Pflegeprozess? (Interleaving)",
-          options: ["4", "6", "8"],
-          correctIndex: 1,
-        },
-        {
-          question: "Was bedeutet 'kongruent' in der Kommunikation? (Interleaving)",
-          options: ["Schweigen", "Worte und Koerpersprache stimmen ueberein", "Laut sprechen"],
-          correctIndex: 1,
-        },
-      ],
-    },
-    wusstestDuDas: "Interleaving: Zwei Fragen aus Session 2 und 3. Wiederholung aus verschiedenen Themen staerkt das Langzeitgedaechtnis.",
-  },
-
-  // =============================================================
-  // Step 16: Comparison — ICN-Ethikkodex vs. Pflege-Charta (ENTDECKER)
-  // =============================================================
-  {
-    stepId: "le01-s4-16",
+    stepId: "le01-s4-tb7-05",
     phase: "s4",
     stepType: "comparison",
     bloomLevel: 3,
     kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.283-284", "Q9", "Q10"],
+    quellen: ["Q7 S.285"],
     track: "basis",
     modus: "entdecker",
     lernziel: "ce01-le01-menschenbild",
-    imageUrl: "/images/le01/ethik-vergleich.svg",
-    imageAlt: "Vergleichstabelle: ICN-Ethikkodex vs. Pflege-Charta",
+    themenblockPhase: "ANDERS_ERKLÄRT",
+    imageUrl: "/images/content/le-01/prinzipien-vergleich.svg",
+    imageAlt: "Vergleichstabelle: Autonomie vs. Benefizienz in der Praxis",
     contentC1: {
-      title: "ICN-Ethikkodex vs. Pflege-Charta",
-      body: "Zwei wichtige Dokumente — aber mit unterschiedlichem Fokus.",
+      title: "Prinzipien in der Praxis",
+      body: "Dieselben Prinzipien — aber je nach Situation überwiegt ein anderes.",
     },
     contentB1: {
-      title: "Zwei wichtige Dokumente",
-      body: "Beide Dokumente sind wichtig fuer die Pflege. Aber sie sind unterschiedlich.",
+      title: "Zwei Beispiele — zwei Prinzipien",
+      body: "Welches Prinzip ist in welcher Situation am wichtigsten?",
     },
     question: {
-      fragetext: "Vergleiche die beiden Dokumente.",
-      comparison: {
-        instruction: "Schau dir die Unterschiede an.",
-        columns: [
-          { label: "ICN-Ethikkodex", icon: "globe" },
-          { label: "Pflege-Charta", icon: "scroll" },
-        ],
-        rows: [
-          {
-            criterion: "Herausgeber",
-            values: ["International Council of Nurses (ICN)", "BMFSFJ (Deutschland)"],
-            valuesB1: ["Internationale Pflege-Organisation", "Deutsches Ministerium"],
-          },
-          {
-            criterion: "Zielgruppe",
-            values: ["Pflegende weltweit", "Hilfe- und pflegebeduerfige Menschen in DE"],
-            valuesB1: ["Pflegende auf der ganzen Welt", "Patienten in Deutschland"],
-            highlight: 0,
-          },
-          {
-            criterion: "Fokus",
-            values: ["Verhaltensnormen fuer Pflegende (Pflichten)", "Rechte der Pflegeempfaenger"],
-            valuesB1: ["Was Pflegende tun sollen (Pflichten)", "Was Patienten duerfen (Rechte)"],
-            highlight: 1,
-          },
-          {
-            criterion: "Umfang",
-            values: ["4 Bereiche", "8 Artikel"],
-            valuesB1: ["4 Bereiche", "8 Artikel"],
-          },
-          {
-            criterion: "Jahr",
-            values: ["1953 (mehrfach aktualisiert)", "2005"],
-            valuesB1: ["1953", "2005"],
-          },
-        ],
-      },
+      fragetext: "Vergleiche die beiden Situationen:",
+      comparisonItems: [
+        { aspect: "Situation", optionA: "Patient lehnt Körperpflege ab", optionB: "Patient hat Schmerzen, sagt aber nichts" },
+        { aspect: "Zentrales Prinzip", optionA: "Autonomie — Selbstbestimmung achten", optionB: "Benefizienz — aktiv Wohl fördern" },
+        { aspect: "Pflegerische Handlung", optionA: "Alternative organisieren, Wunsch respektieren", optionB: "Beobachten, Schmerzassessment durchführen" },
+        { aspect: "Risiko bei Missachtung", optionA: "Vertrauensverlust, Patient verschließt sich", optionB: "Schmerzen bleiben unbehandelt, Komplikationen" },
+      ],
+      labelA: "Autonomie-Fall",
+      labelB: "Benefizienz-Fall",
+      iconA: "user-check",
+      iconB: "heart-handshake",
     },
   },
 
   // =============================================================
-  // Step 17: Branching — Autonomie vs. Nonmalefizienz (PRAXIS-SIM)
+  // TB7: STORYTELLING (Phase 5) — CF05 Prinzipienkonflikt
   // =============================================================
   {
-    stepId: "le01-s4-17",
+    stepId: "le01-s4-tb7-06",
     phase: "s4",
-    stepType: "branching",
-    bloomLevel: 4,
-    kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.285"],
-    track: "basis",
-    modus: "praxis-sim",
-    lernziel: "ce01-le01-menschenbild",
-    contentC1: {
-      title: "Ethischer Konflikt: Aufstehen trotz Sturzgefahr",
-      body: "Ein Patient will aufstehen, obwohl er sturzgefaehrdet ist. Zwei ethische Prinzipien stehen im Konflikt.",
-    },
-    contentB1: {
-      title: "Was tust du?",
-      body: "Ein Patient will aufstehen. Aber er koennte stuerzen. Was ist richtig?",
-    },
-    question: {
-      fragetext: "Herr Weber (75) will allein zur Toilette gehen. Er hat aber ein hohes Sturzrisiko. Wie reagierst du?",
-      branchingOptions: [
-        {
-          text: "Ich sage: 'Das ist zu gefaehrlich. Sie bleiben im Bett.' Ich bringe ihm eine Urinflasche.",
-          feedback: "Du schuetzt ihn vor Schaden (Nonmalefizienz), aber du verletzt seine Selbstbestimmung (Autonomie). Er fuehlt sich bevormundet. Es gibt eine bessere Loesung.",
-          feedbackB1: "Du schuetzt ihn vor einem Sturz. Aber er darf nicht selbst entscheiden. Er fuehlt sich bevormundet.",
-          isCorrect: false,
-        },
-        {
-          text: "Ich begleite ihn zur Toilette. So respektiere ich seinen Wunsch und sichere ihn gleichzeitig ab.",
-          feedback: "Beide Prinzipien werden beruecksichtigt: Autonomie (er darf gehen) und Nonmalefizienz (du sicherst ihn ab). Das ist die ethisch beste Loesung.",
-          feedbackB1: "Sehr gut! Er darf aufstehen (Selbstbestimmung). Und du hilfst ihm, damit er nicht stuerzt (Schutz).",
-          isCorrect: true,
-        },
-        {
-          text: "Ich sage: 'Natuerlich, gehen Sie ruhig allein.' Sein Wille zaehlt.",
-          feedback: "Autonomie ist wichtig, aber Nonmalefizienz auch. Ihn allein gehen zu lassen bei hohem Sturzrisiko kann zu Schaden fuehren. Beide Prinzipien muessen abgewogen werden.",
-          feedbackB1: "Sein Wille ist wichtig. Aber er koennte stuerzen und sich verletzen. Du musst beides beachten: seinen Wunsch und seine Sicherheit.",
-          isCorrect: false,
-        },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 18: Crossword — Ethik-Begriffe (PUZZLE, vertiefung)
-  // =============================================================
-  {
-    stepId: "le01-s4-18",
-    phase: "s4",
-    stepType: "crossword",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.280-285"],
-    track: "vertiefung",
-    modus: "puzzle",
-    lernziel: "ce01-le01-menschenbild",
-    contentC1: {
-      title: "Kreuzwortraetsel: Ethik",
-      body: "Teste dein Wissen spielerisch.",
-    },
-    contentB1: {
-      title: "Kreuzwortraetsel",
-      body: "Loese das Raetsel. Alle Woerter kennst du schon.",
-    },
-    question: {
-      fragetext: "Fuelle das Kreuzwortraetsel aus.",
-      crosswordWords: [
-        { word: "WUERDE", clue: "Unantastbarer Wert jedes Menschen (Art. 1 GG)" },
-        { word: "AUTONOMIE", clue: "Ethisches Prinzip: Selbstbestimmung" },
-        { word: "ETHIKKODEX", clue: "Internationaler Leitfaden fuer Pflegende (ICN)" },
-        { word: "VERLETZLICHKEIT", clue: "Pflegebeduerftige sind besonders davon betroffen (Haker)" },
-        { word: "BENEFIZIENZ", clue: "Ethisches Prinzip: Wohltun" },
-        { word: "CHARTA", clue: "8 Artikel zu den Rechten Pflegebeduerfiger" },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 19: Reflection — Prinzipienkonflikt (SCHREIBTISCH, vertiefung)
-  // =============================================================
-  {
-    stepId: "le01-s4-19",
-    phase: "s4",
-    stepType: "reflection",
-    bloomLevel: 4,
-    kompetenzbereich: "KB-IV",
-    quellen: ["Q7 S.285"],
-    track: "vertiefung",
-    modus: "schreibtisch",
-    lernziel: "ce01-le01-menschenbild",
-    contentC1: {
-      title: "Ethische Reflexion",
-      body: "Zwei Prinzipien kollidieren. Wie wuerdest du entscheiden?",
-    },
-    contentB1: {
-      title: "Nachdenken: Was ist richtig?",
-      body: "Zwei Grundsaetze stehen im Widerspruch. Was tust du?",
-    },
-    question: {
-      fragetext: "Ein Patient lehnt eine Behandlung ab, die ihm helfen wuerde. Welche 2 ethischen Prinzipien stehen im Konflikt? Was wuerdest du tun?",
-      musterantwort: "Es stehen Autonomie (der Patient darf selbst entscheiden) und Benefizienz (die Behandlung wuerde ihm helfen) im Konflikt. Ich wuerde den Patienten ausfuehrlich beraten und seine Gruende fuer die Ablehnung erfragen. Wenn er nach Aufklaerung weiterhin ablehnt, respektiere ich seine Entscheidung — Autonomie hat Vorrang, solange der Patient einwilligungsfaehig ist.",
-      bewertungskriterien: [
-        "Beide Prinzipien korrekt benannt (Autonomie + Benefizienz)",
-        "Handlungsvorschlag vorhanden",
-        "Begruendung nachvollziehbar",
-      ],
-      satzanfaengeB1: [
-        "Die zwei Prinzipien sind...",
-        "Ich wuerde den Patienten...",
-        "Ich finde es wichtig, dass...",
-      ],
-      reflection: {
-        prompt: "Ein Patient lehnt eine Behandlung ab, die ihm helfen wuerde. Welche 2 ethischen Prinzipien stehen im Konflikt? Was wuerdest du tun?",
-        placeholder: "Die zwei Prinzipien sind...",
-        systemPrompt: "Bewerte ob der Schueler Autonomie und Benefizienz als konfligierende Prinzipien benennt. Positiv: Konkreter Handlungsvorschlag mit Begruendung. Feedback nach Sandwich-Prinzip.",
-      },
-    },
-  },
-
-  // =============================================================
-  // Step 20: Confidence — Ethik-Wissen (CHALLENGE)
-  // =============================================================
-  {
-    stepId: "le01-s4-20",
-    phase: "s4",
-    stepType: "confidence",
-    bloomLevel: 2,
-    kompetenzbereich: "KB-IV",
-    quellen: [],
-    track: "basis",
-    modus: "challenge",
-    lernziel: "ce01-le01-menschenbild",
-    contentC1: {
-      title: "Wie sicher bist du?",
-      body: "Schaetze ehrlich ein: Was kannst du jetzt erklaeren?",
-    },
-    contentB1: {
-      title: "Was weisst du jetzt?",
-      body: "Schaetze ein: Was kannst du nach dieser Session erklaeren?",
-    },
-    question: {
-      fragetext: "Bewerte jede Aussage: Wie sicher bist du?",
-      confidenceCards: [
-        {
-          statement: "Ich kenne die 4 ethischen Prinzipien nach Beauchamp und Childress.",
-          statementB1: "Ich kenne die 4 ethischen Grundsaetze.",
-          isTrue: true,
-          explanation: "Autonomie (Selbstbestimmung), Benefizienz (Wohltun), Nonmalefizienz (Nichtschaden), Gerechtigkeit (faire Verteilung).",
-          explanationB1: "Selbstbestimmung, Wohltun, Nichtschaden und Gerechtigkeit.",
-        },
-        {
-          statement: "Ich kann den ICN-Ethikkodex von der Pflege-Charta unterscheiden.",
-          statementB1: "Ich kann den ICN-Ethikkodex und die Pflege-Charta unterscheiden.",
-          isTrue: true,
-          explanation: "ICN-Ethikkodex: Pflichten der Pflegenden (4 Bereiche, international). Pflege-Charta: Rechte der Pflegeempfaenger (8 Artikel, Deutschland).",
-          explanationB1: "ICN-Ethikkodex: Was Pflegende tun sollen. Pflege-Charta: Was Patienten duerfen.",
-        },
-        {
-          statement: "Ich kann erklaeren, was Wuerde in der Pflege bedeutet.",
-          statementB1: "Ich kann erklaeren, was Wuerde heisst.",
-          isTrue: true,
-          explanation: "Wuerde ist jedem Menschen zu eigen — allein weil er existiert. Art. 1 GG: unantastbar. Pflegebeduerftige sind besonders verletzlich.",
-          explanationB1: "Jeder Mensch hat Wuerde. Sie ist unantastbar. Patienten sind besonders verletzlich.",
-        },
-        {
-          statement: "Ich weiss, was passiert, wenn ethische Prinzipien kollidieren.",
-          statementB1: "Ich weiss, was passiert, wenn ethische Grundsaetze sich widersprechen.",
-          isTrue: true,
-          explanation: "Es gibt keine Hierarchie der Prinzipien. Jeder Fall erfordert eine Abwaegung — z.B. Autonomie vs. Nonmalefizienz bei Sturzgefahr.",
-          explanationB1: "Kein Grundsatz ist wichtiger als der andere. Man muss in jeder Situation abwaegen.",
-        },
-      ],
-    },
-  },
-
-  // =============================================================
-  // Step 21: Dialog — Yasemin: Ethik und Empathie verbinden (STORY)
-  // =============================================================
-  {
-    stepId: "le01-s4-21",
-    phase: "s4",
-    stepType: "dialog",
+    stepType: "text",
     bloomLevel: 3,
+    kompetenzbereich: "KB-IV",
+    quellen: ["Q7 S.285"],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "STORYTELLING",
+    contentC1: {
+      title: "Wenn Prinzipien kollidieren",
+      body: "Frau Meier, 79, hat eine Oberschenkelhalsfraktur. Sie will unbedingt aufstehen und zur Toilette gehen — allein. Aber sie hat eine hohe Sturzgefahr.\n\n**Autonomie** sagt: Sie darf selbst entscheiden.\n**Nonmalefizienz** sagt: Wir müssen Schaden vermeiden — ein Sturz könnte tödlich sein.\n\nWelches Prinzip überwiegt? Es gibt **keine Hierarchie** der Prinzipien nach Beauchamp und Childress. Jeder Fall erfordert eine individuelle Abwägung.\n\nMögliche Lösung: Frau Meier aufstehen lassen — aber mit Begleitung und Sicherung. So werden beide Prinzipien respektiert.",
+      fallbezug: "Yasemin erkennt: Ethik gibt keine einfachen Antworten — aber sie hilft, die richtigen Fragen zu stellen.",
+    },
+    contentB1: {
+      title: "Was tun, wenn zwei Regeln sich widersprechen?",
+      body: "Frau Meier will allein aufstehen. Aber sie kann stürzen.\n\n**Autonomie**: Sie darf entscheiden.\n**Nichtschaden**: Wir müssen sie schützen.\n\nWas tun? **Beides beachten!** Sie darf aufstehen — aber mit Hilfe. So ist sie sicher und selbstbestimmt.",
+      fallbezug: "Yasemin lernt: Manchmal muss man zwei Regeln gleichzeitig beachten.",
+    },
+  },
+
+  // =============================================================
+  // TB7: PATIENTEN_PERSPEKTIVE (Phase 7)
+  // =============================================================
+  {
+    stepId: "le01-s4-tb7-07",
+    phase: "s4",
+    stepType: "text",
+    bloomLevel: 2,
     kompetenzbereich: "KB-IV",
     quellen: [],
     track: "basis",
     modus: "story",
-    lernziel: "ce01-le01-pflegebeziehung",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "PATIENTEN_PERSPEKTIVE",
     contentC1: {
-      title: "Yasemins Erkenntnis",
-      body: "Yasemin zieht ein Fazit aus ihrer ersten Woche.",
-      fallbezug: "Ende des Reflexionsgespraeches. Yasemin laechelt.",
+      title: "Al-Rashids Perspektive",
+      body: "Herr Al-Rashid, 78, liegt auf der chirurgischen Station. Postoperativ, Tag 3.\n\nEr denkt: 'Ich war Ingenieur. 40 Jahre lang habe ich Brücken gebaut. Und jetzt soll mir eine junge Frau den Körper waschen? Das ist nicht — das geht nicht. In meiner Kultur ist das undenkbar. Warum verstehen sie das nicht?'\n\nSein Blick ist abgewandt. Die Lippen zusammengekniffen. Er schämt sich. Nicht weil er schwach ist — sondern weil seine Würde auf dem Spiel steht.",
+      fallbezug: "Yasemin versteht: Herr Al-Rashid verweigert nicht die Pflege — er schützt seine Würde.",
     },
     contentB1: {
-      title: "Was Yasemin gelernt hat",
-      body: "Yasemin fasst zusammen, was sie diese Woche gelernt hat.",
-      fallbezug: "Am Ende des Gespraeches. Yasemin laechelt.",
+      title: "Wie fühlt sich der Patient?",
+      body: "Herr Al-Rashid liegt im Krankenhaus. Er war Ingenieur. Jetzt soll eine Frau ihn waschen.\n\nEr denkt: 'Das geht nicht. In meiner Kultur ist das nicht möglich.'\n\nEr schämt sich. Er schützt seine Würde.",
+      fallbezug: "Yasemin versteht: Der Patient hat Angst um seine Würde.",
+    },
+  },
+
+  // =============================================================
+  // TB7: ANWENDUNG (Phase 9) — BS2 Branching
+  // =============================================================
+  {
+    stepId: "le01-s4-tb7-08",
+    phase: "s4",
+    stepType: "branching",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-IV",
+    quellen: ["Q7 S.285", "Q7 S.283-284"],
+    track: "basis",
+    modus: "praxis-sim",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Verweigerte Körperpflege",
+      body: "Herr Al-Rashid verweigert die Körperpflege durch dich (weibliche Pflegekraft). Aber der Wundverband am Oberschenkel muss gewechselt werden. Was tust du?",
+      fallbezug: "BS2: Kulturelle Präferenz vs. medizinische Notwendigkeit.",
+    },
+    contentB1: {
+      title: "Was tust du?",
+      body: "Herr Al-Rashid will nicht von einer Frau gewaschen werden. Aber sein Verband muss gewechselt werden.",
+      fallbezug: "Was ist die beste Lösung?",
     },
     question: {
-      fragetext: "Was sagt Yasemin?",
-      patientName: "Yasemin Demirci",
-      dialogPhases: [
+      fragetext: "Wie reagierst du?",
+      branchingOptions: [
         {
-          context: "Praxisanleiterin: 'Was nimmst du aus dieser Woche mit?' Yasemin denkt einen Moment nach.",
-          contextB1: "Praxisanleiterin: 'Was hast du gelernt?' Yasemin denkt nach.",
-          speaker: "Yasemin",
-          options: [
-            {
-              text: "Ich habe gelernt, dass Empathie und Ethik zusammengehoeren. Wenn ich dem Patienten wirklich helfen will, muss ich ueber das Richtige nachdenken — nicht nur fuehlen.",
-              textB1: "Mitgefuehl und Ethik gehoeren zusammen. Wenn ich helfen will, muss ich nachdenken — nicht nur fuehlen.",
-              patientResponse: "Das ist eine wunderbare Zusammenfassung. Empathie gibt die Richtung, Ethik gibt den Rahmen. Beides zusammen macht professionelle Pflege aus.",
-              patientResponseB1: "Das ist eine tolle Zusammenfassung! Mitgefuehl zeigt die Richtung. Ethik gibt die Regeln. Zusammen ist das professionelle Pflege.",
-              score: 3,
-              feedback: "Yasemin verbindet Empathie (Session 3) mit Ethik (Session 4). Das ist der Kern professioneller Pflege.",
-              feedbackB1: "Yasemin hat verstanden: Mitgefuehl und Ethik zusammen machen gute Pflege.",
-            },
-            {
-              text: "Ethik ist kompliziert. Ich bin froh, dass es Regeln gibt — ICN-Kodex und Pflege-Charta helfen mir bei Entscheidungen.",
-              textB1: "Ethik ist schwierig. Aber der ICN-Kodex und die Pflege-Charta helfen mir.",
-              patientResponse: "Genau dafuer gibt es diese Dokumente. Sie geben Orientierung, wenn es schwierig wird.",
-              patientResponseB1: "Genau! Regeln helfen, wenn es schwierig wird. Du musst nicht alles allein entscheiden.",
-              score: 2,
-              feedback: "Pragmatischer Ansatz. Die Dokumente bieten Orientierung — aber Reflexion bleibt wichtig.",
-              feedbackB1: "Die Regeln helfen. Aber man muss auch selbst nachdenken. Das lernst du in der Ausbildung.",
-            },
-          ],
+          text: "In Deutschland machen das alle Pflegekräfte, egal ob Mann oder Frau.",
+          feedback: "Herr Al-Rashid fühlt sich nicht respektiert. Er verweigert auch den Verbandwechsel. Die Wunde wird nicht versorgt — Infektionsrisiko steigt. Welches ethische Prinzip wurde hier verletzt? Autonomie — das Recht auf Selbstbestimmung.",
+          feedbackB1: "Der Patient fühlt sich nicht respektiert. Er will jetzt gar nichts mehr. Die Wunde kann sich entzünden.",
+          isCorrect: false,
+        },
+        {
+          text: "Einen männlichen Kollegen für die Körperpflege organisieren; den Verbandwechsel erklären und sein Einverständnis einholen.",
+          feedback: "Die kulturelle Präferenz wird respektiert (Autonomie). Der medizinisch notwendige Verbandwechsel wird klar kommuniziert und mit Einverständnis durchgeführt. Patient fühlt sich verstanden — Vertrauen wächst. Kulturkongruente Pflege nach Leininger.",
+          feedbackB1: "Gut! Du respektierst den Patienten und sorgst trotzdem für die Wunde. Der Patient fühlt sich verstanden.",
+          isCorrect: true,
+        },
+        {
+          text: "Körperpflege komplett weglassen — wenn er nicht will, ist das sein Problem.",
+          feedback: "Hygienemangel, Hautprobleme, Würde verletzt durch Vernachlässigung. Pflege-Charta Art. 4 (qualifizierte Pflege) wird missachtet. Respekt vor kulturellen Werten darf nie zur Vernachlässigung führen.",
+          feedbackB1: "Nein! Pflege weglassen ist keine Lösung. Der Patient braucht Hilfe — nur eben anders organisiert.",
+          isCorrect: false,
         },
       ],
     },
   },
 
   // =============================================================
-  // Step 22: Summary — Rueckblick Session 4 (CHECKPOINT)
+  // TB7: REFLEXION (Phase 10) — Freetext
   // =============================================================
   {
-    stepId: "le01-s4-22",
+    stepId: "le01-s4-tb7-09",
+    phase: "s4",
+    stepType: "freetext",
+    bloomLevel: 4,
+    kompetenzbereich: "KB-IV",
+    quellen: ["Q7 S.285", "Q7 S.283-284"],
+    track: "vertiefung",
+    modus: "schreibtisch",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "REFLEXION",
+    contentC1: {
+      title: "Ethische Reflexion",
+      body: "Die Kollegin sagt: 'In Deutschland muss er das akzeptieren.' Was denkst du darüber?",
+    },
+    contentB1: {
+      title: "Was denkst du?",
+      body: "Eine Kollegin sagt: 'Er muss das akzeptieren.' Bist du einverstanden?",
+    },
+    question: {
+      fragetext: "Wie beurteilst du die Aussage der Kollegin? Beziehe dich auf mindestens ein ethisches Prinzip.",
+      musterantwort: "Die Aussage ignoriert das Prinzip der Autonomie (Beauchamp/Childress) und die Pflege-Charta Art. 1 (Selbstbestimmung). Kulturelle Präferenzen bei der Körperpflege berühren die Würde. Lösung: männliche Pflegekraft organisieren, wenn möglich.",
+      bewertungskriterien: [
+        "Mindestens ein ethisches Prinzip korrekt benannt",
+        "Kulturelle Perspektive berücksichtigt",
+        "Praktische Lösung vorgeschlagen",
+      ],
+      satzanfaengeB1: [
+        "Ich bin nicht einverstanden, weil...",
+        "Der Patient hat das Recht...",
+        "Eine bessere Lösung wäre...",
+      ],
+    },
+  },
+
+  // =============================================================
+  // Snack-Step: Slider zwischen TB7 und TB8
+  // =============================================================
+  {
+    stepId: "le01-s4-sn-01",
+    phase: "s4",
+    stepType: "slider",
+    bloomLevel: 1,
+    kompetenzbereich: "KB-IV",
+    quellen: [],
+    track: "vertiefung",
+    modus: "challenge",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Kurze Schätzfrage",
+      body: "Wie oft triffst du als Pflegefachkraft ethische Entscheidungen an einem typischen Arbeitstag?",
+    },
+    contentB1: {
+      title: "Was denkst du?",
+      body: "Wie oft muss eine Pflegekraft pro Tag ethisch entscheiden?",
+    },
+    question: {
+      fragetext: "Schätze: Wie viele ethische Entscheidungen trifft eine Pflegefachkraft pro Schicht?",
+      slider: {
+        instruction: "Schiebe den Regler auf deine Schätzung.",
+        unit: "Entscheidungen",
+        min: 0,
+        max: 50,
+        step: 5,
+        correctValue: 20,
+        tolerance: 10,
+        explanation: "Studien zeigen: Pflegefachkräfte treffen durchschnittlich 15-25 ethische Entscheidungen pro Schicht — von der Frage 'Darf ich den Patienten wecken?' bis 'Muss ich den Arzt informieren?'. Die meisten sind kleine, alltägliche Abwägungen.",
+        explanationB1: "Pflegekräfte entscheiden sehr oft: etwa 15-25 Mal pro Schicht. Viele kleine Entscheidungen — zum Beispiel: Soll ich den Patienten wecken? Muss ich den Arzt rufen?",
+      },
+    },
+  },
+
+  // =============================================================
+  // TB8: Recht & Teamarbeit — SZENE (Phase 1)
+  // =============================================================
+  {
+    stepId: "le01-s4-tb8-01",
+    phase: "s4",
+    stepType: "dialog",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-III",
+    quellen: [],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "SZENE",
+    contentC1: {
+      title: "Was nur du darfst",
+      body: "Im Reflexionsgespräch kommt Yasemin auf eine wichtige Frage.",
+    },
+    contentB1: {
+      title: "Besondere Aufgaben",
+      body: "Yasemin fragt: Was dürfen nur Pflegefachkräfte?",
+    },
+    question: {
+      fragetext: "Yasemin und ihre Praxisanleiterin:",
+      dialogLines: [
+        { speaker: "Yasemin", text: "Ich habe gesehen, dass die Pflegehelferin Frau Meier die Tabletten gegeben hat. Darf die das?" },
+        { speaker: "Praxisanleiterin", text: "Medikamente verteilen — ja, wenn es delegiert wird. Aber es gibt Dinge, die darfst nur DU als Pflegefachkraft tun." },
+        { speaker: "Yasemin", text: "Was zum Beispiel?" },
+        { speaker: "Praxisanleiterin", text: "Den Pflegebedarf erheben, den Pflegeprozess steuern, die Qualität sichern. Das steht im PflBG, Paragraf 4." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB8: ERKLÄRUNG (Phase 2) — PflBG §4 + ICN-Ethikkodex
+  // =============================================================
+  {
+    stepId: "le01-s4-tb8-02",
+    phase: "s4",
+    stepType: "text",
+    bloomLevel: 1,
+    kompetenzbereich: "KB-IV",
+    quellen: ["Q1 S.23", "Q7 S.283"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "ERKLÄRUNG",
+    imageUrl: "/images/content/le-01/pflbg-vorbehaltene.svg",
+    imageAlt: "Grafik: Vorbehaltene Tätigkeiten nach PflBG §4",
+    contentC1: {
+      title: "PflBG §4 und ICN-Ethikkodex",
+      body: "**Vorbehaltene Tätigkeiten (PflBG §4):**\nNur Pflegefachkräfte dürfen:\n1. Den Pflegebedarf erheben\n2. Den Pflegeprozess organisieren und steuern\n3. Die Pflegequalität sichern\n\nDiese Aufgaben dürfen **nicht** an Pflegehelfer delegiert werden.\n\n**ICN-Ethikkodex (seit 1953):**\nVerhaltensnormen in 4 Bereichen:\n- Gegenüber Mitmenschen\n- In der Berufsausübung\n- Gegenüber der Profession\n- Gegenüber Kollegen",
+      fallbezug: "Yasemin versteht: Als Pflegefachfrau trägt sie eine besondere Verantwortung — rechtlich und ethisch.",
+    },
+    contentB1: {
+      title: "Deine besonderen Aufgaben",
+      body: "Das Gesetz sagt: Nur Pflegefachkräfte dürfen:\n1. Den Pflegebedarf feststellen\n2. Die Pflege planen und steuern\n3. Die Qualität der Pflege prüfen\n\nDas darf kein Pflegehelfer machen.\n\nDer **ICN-Ethikkodex** sagt, wie sich Pflegende verhalten sollen: gegenüber Patienten, im Beruf und mit Kollegen.",
+      fallbezug: "Yasemin lernt: Sie hat besondere Aufgaben, die nur sie machen darf.",
+    },
+  },
+
+  // =============================================================
+  // TB8: ERKLÄRUNG (Phase 2) — Pflege-Charta Flipcard
+  // =============================================================
+  {
+    stepId: "le01-s4-tb8-03",
+    phase: "s4",
+    stepType: "flipcard",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-IV",
+    quellen: ["Q7 S.283-284"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "ERKLÄRUNG",
+    imageUrl: "/images/content/le-01/pflege-charta.svg",
+    imageAlt: "Grafik: 8 Artikel der Pflege-Charta",
+    contentC1: {
+      title: "Die Pflege-Charta: 8 Rechte",
+      body: "Tippe auf jede Karte, um die 8 Artikel der Pflege-Charta (2005) zu entdecken.",
+    },
+    contentB1: {
+      title: "8 Rechte für Patienten",
+      body: "Jeder Patient hat Rechte. Tippe auf die Karten!",
+    },
+    question: {
+      fragetext: "Die 8 Artikel der Pflege-Charta:",
+      cards: [
+        { front: "Artikel 1", back: "Selbstbestimmung und Hilfe zur Selbsthilfe — Der Patient entscheidet selbst über sein Leben.", backB1: "Der Patient darf selbst entscheiden." },
+        { front: "Artikel 2", back: "Körperliche und seelische Unversehrtheit — Schutz vor Gewalt, Vernachlässigung und entwürdigender Behandlung.", backB1: "Niemand darf dem Patienten wehtun oder ihn vernachlässigen." },
+        { front: "Artikel 3", back: "Privatheit — Das Recht auf einen persönlichen Bereich und Intimsphäre.", backB1: "Der Patient hat ein Recht auf Privatsphäre." },
+        { front: "Artikel 4", back: "Pflege, Betreuung und Behandlung — Anspruch auf qualifizierte, individuelle Pflege.", backB1: "Jeder hat das Recht auf gute Pflege." },
+        { front: "Artikel 5", back: "Information, Beratung und Aufklärung — Das Recht, über alles informiert zu werden.", backB1: "Der Patient muss alles erklärt bekommen." },
+        { front: "Artikel 6", back: "Kommunikation, Wertschätzung und Teilhabe — Das Recht auf Gespräch und Mitbestimmung.", backB1: "Der Patient darf mitreden und mitentscheiden." },
+        { front: "Artikel 7", back: "Religion, Kultur und Weltanschauung — Achtung der kulturellen und religiösen Überzeugungen.", backB1: "Religion und Kultur des Patienten müssen respektiert werden." },
+        { front: "Artikel 8", back: "Palliative Begleitung, Sterben und Tod — Das Recht auf ein würdevolles Sterben.", backB1: "Jeder Mensch hat das Recht, in Würde zu sterben." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB8: CHECKPOINT (Phase 3) — MC Delegation
+  // =============================================================
+  {
+    stepId: "le01-s4-tb8-04",
+    phase: "s4",
+    stepType: "mc",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-IV",
+    quellen: ["Q1 S.23"],
+    track: "basis",
+    modus: "challenge",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "CHECKPOINT",
+    contentC1: {
+      title: "Kurzer Check!",
+      body: "Weißt du, welche Aufgaben nicht delegiert werden dürfen?",
+    },
+    contentB1: {
+      title: "Kurzer Check!",
+      body: "Was darf nur die Pflegefachkraft machen?",
+    },
+    question: {
+      fragetext: "Welche Tätigkeit darf NICHT an einen Pflegehelfer delegiert werden?",
+      options: [
+        { text: "Pflegebedarf erheben und den Pflegeprozess steuern", isCorrect: true, explanation: "Richtig! PflBG §4: Pflegebedarf erheben, Pflegeprozess steuern und Qualität sichern sind vorbehaltene Tätigkeiten — nur für Pflegefachkräfte." },
+        { text: "Blutdruck messen", isCorrect: false, explanation: "Blutdruck messen kann an geschulte Pflegehelfer delegiert werden. Es ist keine vorbehaltene Tätigkeit." },
+        { text: "Patienten beim Essen unterstützen", isCorrect: false, explanation: "Die Unterstützung beim Essen kann delegiert werden — es ist eine grundpflegerische Tätigkeit." },
+        { text: "Medikamente verteilen (nach Delegation)", isCorrect: false, explanation: "Die Medikamentenverteilung kann unter bestimmten Bedingungen delegiert werden. Die Verantwortung bleibt aber bei der Pflegefachkraft." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB8: PRAXIS_DIALOG (Phase 6) — Tuckman Dialog
+  // =============================================================
+  {
+    stepId: "le01-s4-tb8-05",
+    phase: "s4",
+    stepType: "dialog",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-III",
+    quellen: ["Q6 S.270"],
+    track: "basis",
+    modus: "story",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "PRAXIS_DIALOG",
+    contentC1: {
+      title: "Teamarbeit auf Station",
+      body: "Die Praxisanleiterin erklärt Yasemin, warum es manchmal Konflikte im Team gibt.",
+    },
+    contentB1: {
+      title: "Warum gibt es Streit im Team?",
+      body: "Die Praxisanleiterin erklärt, wie Teams funktionieren.",
+    },
+    question: {
+      fragetext: "Im Pausenraum:",
+      dialogLines: [
+        { speaker: "Yasemin", text: "Heute haben sich zwei Kolleginnen gestritten — wegen der Zimmerverteilung. Ist das normal?" },
+        { speaker: "Praxisanleiterin", text: "Ja! Das ist die Storming-Phase. Jedes Team durchläuft 5 Phasen nach Tuckman." },
+        { speaker: "Yasemin", text: "5 Phasen?" },
+        { speaker: "Praxisanleiterin", text: "Forming — man lernt sich kennen. Storming — es gibt Konflikte. Norming — man einigt sich auf Regeln. Performing — das Team arbeitet richtig gut. Adjourning — das Team löst sich auf." },
+        { speaker: "Yasemin", text: "Und wo sind wir gerade?" },
+        { speaker: "Praxisanleiterin", text: "Ich würde sagen: zwischen Storming und Norming. Das ist ein gutes Zeichen — es zeigt, dass wir uns weiterentwickeln." },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB8: ANDERS_ERKLÄRT (Phase 4) — Tuckman Timeline
+  // =============================================================
+  {
+    stepId: "le01-s4-tb8-06",
+    phase: "s4",
+    stepType: "timeline",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-III",
+    quellen: ["Q6 S.270"],
+    track: "basis",
+    modus: "entdecker",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "ANDERS_ERKLÄRT",
+    imageUrl: "/images/content/le-01/tuckman-phasen.svg",
+    imageAlt: "Grafik: 5 Teamphasen nach Tuckman",
+    contentC1: {
+      title: "Die 5 Teamphasen nach Tuckman",
+      body: "Jedes Team durchläuft diese Phasen — auch Pflegeteams auf Station.",
+    },
+    contentB1: {
+      title: "5 Phasen im Team",
+      body: "So entwickeln sich Teams. Schau dir die 5 Schritte an.",
+    },
+    question: {
+      fragetext: "Die 5 Teamphasen:",
+      timeline: {
+        instruction: "Die 5 Phasen der Teamentwicklung nach Tuckman:",
+        events: [
+          { id: "forming", time: "Phase 1", title: "Forming", description: "Orientierung: Das Team lernt sich kennen. Alle sind höflich und vorsichtig. Rollen sind noch unklar.", descriptionB1: "Alle lernen sich kennen. Jeder ist noch unsicher.", icon: "users" },
+          { id: "storming", time: "Phase 2", title: "Storming", description: "Konfrontation: Es gibt Konflikte um Rollen, Aufgaben und Regeln. Meinungsverschiedenheiten sind normal und wichtig.", descriptionB1: "Es gibt Streit. Das ist normal und sogar wichtig.", icon: "zap" },
+          { id: "norming", time: "Phase 3", title: "Norming", description: "Regelbildung: Das Team einigt sich auf gemeinsame Regeln und Standards. Vertrauen wächst.", descriptionB1: "Das Team macht gemeinsame Regeln. Man vertraut sich mehr.", icon: "handshake" },
+          { id: "performing", time: "Phase 4", title: "Performing", description: "Leistung: Das Team arbeitet effektiv zusammen. Starkes Wir-Gefühl, offene Kommunikation, gegenseitige Anerkennung.", descriptionB1: "Das Team arbeitet richtig gut zusammen.", icon: "trophy" },
+          { id: "adjourning", time: "Phase 5", title: "Adjourning", description: "Auflösung: Das Team löst sich auf (z. B. Ende des Praxiseinsatzes). Abschied und Reflexion.", descriptionB1: "Das Team löst sich auf. Man verabschiedet sich.", icon: "door-open" },
+        ],
+      },
+    },
+  },
+
+  // =============================================================
+  // TB8: ANWENDUNG (Phase 9) — Categorize Rollenkonflikte
+  // =============================================================
+  {
+    stepId: "le01-s4-tb8-07",
+    phase: "s4",
+    stepType: "categorize",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-III",
+    quellen: ["Q6 S.267-269"],
+    track: "basis",
+    modus: "challenge",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Inter- oder Intrarollenkonflikt?",
+      body: "Ordne die Situationen zu: Entsteht der Konflikt zwischen verschiedenen Rollen (inter) oder innerhalb einer Rolle (intra)?",
+    },
+    contentB1: {
+      title: "Welcher Konflikt?",
+      body: "Sortiere: Ist es ein Konflikt zwischen zwei Rollen oder innerhalb einer Rolle?",
+    },
+    question: {
+      fragetext: "Ordne zu: Interrollenkonflikt oder Intrarollenkonflikt?",
+      categories: [
+        { name: "Interrollenkonflikt (verschiedene Rollen)" },
+        { name: "Intrarollenkonflikt (innerhalb einer Rolle)" },
+      ],
+      categoryItems: [
+        { text: "Yasemin ist Azubi UND Tochter — die Mutter will, dass sie am Feiertag nach Hause kommt, aber sie hat Dienst.", correctCategory: 0 },
+        { text: "Die Stationsleitung erwartet, dass Yasemin schnell arbeitet — die Patienten erwarten, dass sie sich Zeit nimmt.", correctCategory: 1 },
+        { text: "Yasemin ist Kollegin UND Freundin einer Mitschülerin — die Mitschülerin macht einen Fehler.", correctCategory: 0 },
+        { text: "Der Arzt erwartet, dass die Pflegekraft seine Anordnungen sofort umsetzt — das Pflegeteam hat andere Prioritäten.", correctCategory: 1 },
+        { text: "Yasemin ist Pflegende UND gläubige Muslima — ein Patient macht einen abfälligen Kommentar über ihren Glauben.", correctCategory: 0 },
+        { text: "Die Patientin will selbstbestimmt entscheiden — die Pflegekraft soll aber Schaden vermeiden.", correctCategory: 1 },
+      ],
+    },
+  },
+
+  // =============================================================
+  // TB8: REFLEXION (Phase 10) — Reflection Teamphase
+  // =============================================================
+  {
+    stepId: "le01-s4-tb8-08",
+    phase: "s4",
+    stepType: "reflection",
+    bloomLevel: 3,
+    kompetenzbereich: "KB-II",
+    quellen: ["Q6 S.270"],
+    track: "vertiefung",
+    modus: "schreibtisch",
+    lernziel: "ce01-le01-pflegebeziehung",
+    themenblockPhase: "REFLEXION",
+    contentC1: {
+      title: "Dein Team",
+      body: "Denke an ein Team, in dem du gerade arbeitest oder lernst. In welcher Tuckman-Phase befindet es sich?",
+    },
+    contentB1: {
+      title: "Wie ist dein Team?",
+      body: "Denke an dein Team. In welcher Phase seid ihr?",
+    },
+    question: {
+      fragetext: "In welcher Tuckman-Phase befindet sich dein Team gerade? Begründe mit einem Beispiel.",
+      satzanfaenge: [
+        "Mein Team ist gerade in der Phase...",
+        "Das merke ich daran, dass...",
+        "Um in die nächste Phase zu kommen, müssten wir...",
+      ],
+      minWords: 20,
+    },
+  },
+
+  // =============================================================
+  // Session-Abschluss: Memory Ethik-Begriffe
+  // =============================================================
+  {
+    stepId: "le01-s4-bk-02",
+    phase: "s4",
+    stepType: "memory",
+    bloomLevel: 1,
+    kompetenzbereich: "KB-IV",
+    quellen: [],
+    track: "vertiefung",
+    modus: "puzzle",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Ethik-Memory",
+      body: "Finde die passenden Paare: Ethik-Begriff und Erklärung.",
+    },
+    contentB1: {
+      title: "Memory-Spiel",
+      body: "Finde die Paare! Welcher Begriff passt zu welcher Erklärung?",
+    },
+    question: {
+      fragetext: "Finde die 6 Paare:",
+      memoryPairs: [
+        { a: "Autonomie", b: "Selbstbestimmung des Patienten" },
+        { a: "Benefizienz", b: "Zum Wohl des Patienten handeln" },
+        { a: "Nonmalefizienz", b: "Keinen Schaden anrichten" },
+        { a: "Würde", b: "Wert der jedem Menschen innewohnt" },
+        { a: "Pflege-Charta", b: "8 Rechte für Pflegebedürftige" },
+        { a: "Vorbehaltene Tätigkeiten", b: "Nur Pflegefachkräfte dürfen das" },
+      ],
+    },
+  },
+
+  // =============================================================
+  // Session-Abschluss: Interleaving TrueFalse (10%)
+  // 3x Ethik + 1x Kommunikation + 1x Pflegeprozess
+  // =============================================================
+  {
+    stepId: "le01-s4-bk-03",
+    phase: "s4",
+    stepType: "truefalse",
+    bloomLevel: 2,
+    kompetenzbereich: "KB-IV",
+    quellen: ["Q7 S.285", "Q5 S.249", "Q2 S.78"],
+    track: "vertiefung",
+    modus: "challenge",
+    lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "ANWENDUNG",
+    contentC1: {
+      title: "Gemischte Wiederholung",
+      body: "5 Aussagen — nicht nur Ethik! Auch Kommunikation und Pflegeprozess sind dabei.",
+    },
+    contentB1: {
+      title: "Richtig oder falsch?",
+      body: "5 Aussagen aus verschiedenen Themen. Lies genau!",
+    },
+    question: {
+      fragetext: "Wische: Stimmt oder stimmt nicht?",
+      trueFalseCards: [
+        { statement: "Die 4 ethischen Prinzipien haben eine feste Rangordnung — Autonomie steht immer an erster Stelle.", isTrue: false, explanation: "Falsch! Nach Beauchamp und Childress gibt es keine Hierarchie der Prinzipien. Jeder Fall erfordert eine individuelle Abwägung." },
+        { statement: "Die Pflege-Charta enthält 8 Artikel zu den Rechten pflegebedürftiger Menschen.", isTrue: true, explanation: "Richtig! Von Selbstbestimmung (Art. 1) bis würdevolles Sterben (Art. 8) — 8 Rechte seit 2005." },
+        { statement: "Würde hat man nur, wenn man etwas Besonderes geleistet hat.", isTrue: false, explanation: "Falsch! Würde ist jedem Menschen zu eigen — allein weil er existiert. Art. 1 GG: 'Die Würde des Menschen ist unantastbar.'" },
+        { statement: "Kongruente Kommunikation bedeutet, dass verbale und nonverbale Botschaften übereinstimmen.", isTrue: true, explanation: "Richtig! Inkongruenz (Widerspruch zwischen Gesagtem und Körpersprache) irritiert und stört die Kommunikation. (Interleaving: S3 Kommunikation)" },
+        { statement: "Der Pflegeprozess beginnt mit der Festlegung von Pflegezielen.", isTrue: false, explanation: "Falsch! Der erste Schritt ist die Informationssammlung (Pflegeanamnese). Ziele werden erst im 3. Schritt festgelegt. (Interleaving: S2 Pflegeprozess)" },
+      ],
+    },
+  },
+
+  // =============================================================
+  // Session-Bookend: Summary
+  // =============================================================
+  {
+    stepId: "le01-s4-bk-04",
     phase: "s4",
     stepType: "summary",
     bloomLevel: 3,
@@ -1026,25 +751,23 @@ export const STEPS_S4: ContentStep[] = [
     track: "basis",
     modus: "checkpoint",
     lernziel: "ce01-le01-menschenbild",
+    themenblockPhase: "REFLEXION",
     contentC1: {
-      title: "Das hast du gelernt",
-      body: "Session 4 ist geschafft. Hier sind die wichtigsten Erkenntnisse.",
+      title: "Das hast du heute gelernt",
+      body: "Session 4 ist geschafft! Hier sind deine 4 wichtigsten Erkenntnisse.",
     },
     contentB1: {
-      title: "Das hast du gelernt",
-      body: "Session 4 ist fertig! Hier ist eine Zusammenfassung.",
+      title: "Zusammenfassung",
+      body: "Das hast du heute gelernt. Gut gemacht!",
     },
     question: {
-      fragetext: "Deine Kernerkenntnisse aus Session 4:",
-      summary: {
-        reflexionRueckbezug: "Erinnerst du dich an den Swipe am Anfang? Du hast Aussagen zu Ethik und Wuerde bewertet. Jetzt weisst du: Wuerde ist unantastbar und ethische Prinzipien koennen kollidieren.",
-        kernaussagen: [
-          "Wuerde ist jedem Menschen zu eigen — allein weil er existiert. Art. 1 GG: unantastbar.",
-          "4 ethische Prinzipien nach Beauchamp und Childress: Autonomie, Benefizienz, Nonmalefizienz, Gerechtigkeit.",
-          "ICN-Ethikkodex (Pflichten der Pflegenden, 4 Bereiche) und Pflege-Charta (Rechte der Patienten, 8 Artikel) geben ethische Orientierung.",
-          "Ethische Prinzipien koennen kollidieren — jeder Fall erfordert eine individuelle Abwaegung.",
-        ],
-      },
+      fragetext: "Deine 4 Kernaussagen aus Session 4:",
+      summaryPoints: [
+        "**Ethik vs. Moral:** Ethik ist das Nachdenken über richtiges Handeln. Die 4 Prinzipien (Autonomie, Benefizienz, Nonmalefizienz, Gerechtigkeit) helfen bei Entscheidungen — aber keines hat automatisch Vorrang.",
+        "**Würde ist unantastbar:** Jeder Mensch hat Würde — allein weil er existiert. Pflegebedürftige sind besonders verletzlich und brauchen besonderen Schutz.",
+        "**Recht:** PflBG §4 definiert vorbehaltene Tätigkeiten. Die Pflege-Charta schützt 8 Rechte pflegebedürftiger Menschen. Der ICN-Ethikkodex regelt das Verhalten von Pflegenden.",
+        "**Teamarbeit:** Teams durchlaufen 5 Phasen nach Tuckman. Konflikte (Storming) sind normal und notwendig für die Entwicklung.",
+      ],
     },
   },
 ];

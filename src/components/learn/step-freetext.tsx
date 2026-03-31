@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
+import { HandDrawnIcon } from "@/components/ui/hand-drawn-icon";
 
 interface StepFreetextProps {
   title: string;
@@ -147,7 +148,7 @@ export function StepFreetext({
               className="rounded-2xl bg-[#30D158]/5 border border-[#30D158]/15 p-4"
             >
               <p className="font-semibold text-[#30D158] mb-2">
-                💡 Musterantwort
+                <HandDrawnIcon name="lightbulb" size={16} color="#FF9500" className="inline-block mr-1" /> Musterantwort
               </p>
               <p className="text-sm text-[#1d1d1f]/70 italic">
                 &ldquo;{musterantwort}&rdquo;
