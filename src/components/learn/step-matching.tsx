@@ -16,7 +16,7 @@
 import { useState, useCallback, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 
 interface MatchingPair {
   left: string;
@@ -223,7 +223,7 @@ export function StepMatching({
                     >
                       {isCorrect && submitted && <span className="mr-1">✓</span>}
                       {isWrong && <span className="mr-1">✗</span>}
-                      {pairs[leftIdx].left}
+                      {renderBold(pairs[leftIdx].left)}
                     </div>
                     <div
                       className="rounded-xl p-3 text-sm border-2"
@@ -237,7 +237,7 @@ export function StepMatching({
                         color: "#1d1d1f",
                       }}
                     >
-                      {pairs[rightIdx].right}
+                      {renderBold(pairs[rightIdx].right)}
                     </div>
                   </div>
 
@@ -254,7 +254,7 @@ export function StepMatching({
                         Richtig wäre:
                       </div>
                       <div className="text-xs font-medium" style={{ color: "#1d1d1f" }}>
-                        {pairs[leftIdx].right}
+                        {renderBold(pairs[leftIdx].right)}
                       </div>
                     </div>
                   )}
@@ -288,7 +288,7 @@ export function StepMatching({
                     color: "#1d1d1f",
                   }}
                 >
-                  {pairs[idx].left}
+                  {renderBold(pairs[idx].left)}
                 </motion.button>
               );
             })}
@@ -312,7 +312,7 @@ export function StepMatching({
                   color: "#1d1d1f",
                 }}
               >
-                {pairs[origIdx].right}
+                {renderBold(pairs[origIdx].right)}
               </motion.button>
             ))}
           </div>

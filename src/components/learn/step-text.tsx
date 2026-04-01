@@ -4,7 +4,7 @@ import { useState, useCallback } from "react";
 import { motion, AnimatePresence, type PanInfo } from "framer-motion";
 import { TtsButton } from "./tts-button";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 
 interface StepTextProps {
   title: string;
@@ -108,12 +108,12 @@ function CarouselView({
                   Wusstest du?
                 </p>
                 <p className="text-sm text-[#1d1d1f]/80 leading-relaxed">
-                  {allCards[activeCard]}
+                  {renderBold(allCards[activeCard])}
                 </p>
               </div>
             ) : (
               <p className="text-[15px] text-[#1d1d1f]/80 leading-relaxed whitespace-pre-line">
-                {allCards[activeCard]}
+                {renderBold(allCards[activeCard])}
               </p>
             )}
           </motion.div>
@@ -148,7 +148,7 @@ function CarouselView({
           onClick={() => goToCard(activeCard + 1)}
           className="w-full rounded-2xl bg-[#f5f5f7] px-6 py-4 text-base font-semibold text-[#1d1d1f] transition-all active:scale-[0.98]"
         >
-          Naechste Karte ({activeCard + 1}/{allCards.length})
+          Nächste Karte ({activeCard + 1}/{allCards.length})
         </button>
       )}
     </div>
@@ -203,7 +203,7 @@ export function StepText({
                     <span className="text-[#0071e3] mt-1 shrink-0">
                       {line.match(/^\d\./) ? line.match(/^\d\./)![0] : "•"}
                     </span>
-                    <span>{line.replace(/^[-\d.]\s*/, "")}</span>
+                    <span>{renderBold(line.replace(/^[-\d.]\s*/, ""))}</span>
                   </li>
                 ))}
               </ul>

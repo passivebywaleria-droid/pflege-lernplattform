@@ -54,7 +54,7 @@ export function StepFreetext({
 
       {satzanfaengeB1 && satzanfaengeB1.length > 0 && !submitted && (
         <div className="space-y-2">
-          <p className="text-sm font-medium text-[#6e6e73]">Satzanfaenge:</p>
+          <p className="text-sm font-medium text-[#6e6e73]">Satzanfänge:</p>
           <div className="flex flex-wrap gap-2">
             {satzanfaengeB1.map((sa) => (
               <button
@@ -84,7 +84,7 @@ export function StepFreetext({
             <p
               className={`text-sm ${wordCount >= minWords ? "text-[#30D158]" : "text-[#6e6e73]"}`}
             >
-              {wordCount} Woerter {wordCount < minWords && `(mind. ${minWords})`}
+              {wordCount} Wörter {wordCount < minWords && `(mind. ${minWords})`}
             </p>
           </div>
         </>

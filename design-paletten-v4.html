@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pflege-Lernplattform — 5 Finalisten + SVG-Showcase</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Poppins', system-ui, sans-serif;
+    background: #fafafa;
+    color: #2d2a26;
+    padding: 40px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+  .subtitle { color: #888; font-size: 13px; margin-bottom: 32px; line-height: 1.6; }
+
+  .palette-card {
+    background: #fff;
+    border: 1px solid #e5e0da;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 32px;
+  }
+  .palette-header {
+    padding: 20px 28px 10px;
+    display: flex; justify-content: space-between; align-items: flex-start;
+  }
+  .palette-number { font-size: 10px; font-weight: 600; color: #aaa; text-transform: uppercase; letter-spacing: 0.06em; }
+  .palette-name { font-size: 18px; font-weight: 700; margin-top: 2px; }
+  .palette-desc { font-size: 12px; color: #888; margin-top: 2px; }
+  .palette-tags { display: flex; gap: 5px; }
+  .tag { font-size: 10px; padding: 3px 9px; border-radius: 20px; background: #f3efe9; color: #888; font-weight: 500; }
+
+  .color-strip { display: flex; height: 36px; margin: 0 28px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(0,0,0,0.04); }
+  .color-strip div { flex: 1; position: relative; cursor: pointer; }
+  .color-strip div:hover::after {
+    content: attr(data-label) "  " attr(data-hex);
+    position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%);
+    font-size: 9px; color: #888; white-space: nowrap; background: #fff;
+    padding: 2px 8px; border-radius: 4px; border: 1px solid #e5e0da; z-index: 10;
+  }
+
+  .svg-label {
+    margin: 20px 28px 4px;
+    font-size: 10px; font-weight: 600; color: #aaa; text-transform: uppercase; letter-spacing: 0.06em;
+  }
+
+  .preview-area {
+    margin: 0 28px 24px;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+  }
+  .preview-area svg { width: 100%; height: auto; display: block; }
+
+  .palette-footer {
+    padding: 0 28px 22px;
+    display: flex; gap: 28px; flex-wrap: wrap;
+  }
+  .font-sample strong {
+    display: block; font-size: 9px; color: #aaa; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1px;
+  }
+</style>
+</head>
+<body>
+
+<h1>5 Finalisten — SVG-Showcase</h1>
+<p class="subtitle">Jede Palette zeigt einen anderen SVG-Diagrammtyp der in LE 01 gebraucht wird. Einheitliche Textfarbe im Flowchart. Fast weißer Hintergrund.</p>
+
+<div id="palettes"></div>
+
+<script>
+const palettes = [
+  {
+    name: "Sage & Blaugrau",
+    desc: "Salbei + kühles Blaugrau — modern und ruhig",
+    tags: ["Kühl", "Modern"],
+    colors: [
+      { hex: "#fafaf9", label: "Hintergrund", role: "bg" },
+      { hex: "#2d2a26", label: "Text", role: "text" },
+      { hex: "#7A816C", label: "Dried Sage", role: "primary" },
+      { hex: "#6B7B8D", label: "Blaugrau", role: "secondary" },
+      { hex: "#D1A9A5", label: "Dusty Rose", role: "accent" },
+      { hex: "#E5DFD6", label: "Bone", role: "neutral" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "success" },
+      { hex: "#b45309", label: "Warnung", role: "warning" }
+    ],
+    svgType: "flowchart"
+  },
+  {
+    name: "Rust & Cream",
+    desc: "Faded Rust als Hero — kraftvoll und warm",
+    tags: ["Warm", "Kraftvoll"],
+    colors: [
+      { hex: "#fafaf8", label: "Hintergrund", role: "bg" },
+      { hex: "#362D27", label: "Text", role: "text" },
+      { hex: "#AE6965", label: "Faded Rust", role: "primary" },
+      { hex: "#9A504C", label: "Deep Rust", role: "secondary" },
+      { hex: "#7A816C", label: "Dried Sage", role: "accent" },
+      { hex: "#E5DFD6", label: "Bone", role: "neutral" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "success" },
+      { hex: "#ca8a04", label: "Warnung", role: "warning" }
+    ],
+    svgType: "comparison"
+  },
+  {
+    name: "Rose & Ivory",
+    desc: "Dusty Rose führt dezent, Sage als Komplementär",
+    tags: ["Elegant", "Dezent"],
+    colors: [
+      { hex: "#fafaf9", label: "Hintergrund", role: "bg" },
+      { hex: "#3a3530", label: "Text", role: "text" },
+      { hex: "#C49A96", label: "Rose Mittel", role: "primary" },
+      { hex: "#AE6965", label: "Faded Rust", role: "secondary" },
+      { hex: "#7A816C", label: "Dried Sage", role: "accent" },
+      { hex: "#E5DFD6", label: "Bone", role: "neutral" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "success" },
+      { hex: "#a16207", label: "Warnung", role: "warning" }
+    ],
+    svgType: "radial"
+  },
+  {
+    name: "Sage & Bone Pur",
+    desc: "Nur Sage + Bone, Rose als punktueller Highlight",
+    tags: ["Minimal", "Professionell"],
+    colors: [
+      { hex: "#fbfbf9", label: "Hintergrund", role: "bg" },
+      { hex: "#2d2a26", label: "Text", role: "text" },
+      { hex: "#5C6650", label: "Deep Sage", role: "primary" },
+      { hex: "#7A816C", label: "Dried Sage", role: "secondary" },
+      { hex: "#D1A9A5", label: "Dusty Rose", role: "accent" },
+      { hex: "#E5DFD6", label: "Bone", role: "neutral" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "success" },
+      { hex: "#b45309", label: "Warnung", role: "warning" }
+    ],
+    svgType: "levels"
+  },
+  {
+    name: "Warm Triad",
+    desc: "Alle 3 Pinterest-Farben gleichberechtigt auf weißem Grund",
+    tags: ["Ausgewogen", "Komplett"],
+    colors: [
+      { hex: "#fafaf9", label: "Hintergrund", role: "bg" },
+      { hex: "#33302b", label: "Text", role: "text" },
+      { hex: "#7A816C", label: "Dried Sage", role: "primary" },
+      { hex: "#AE6965", label: "Faded Rust", role: "secondary" },
+      { hex: "#D1A9A5", label: "Dusty Rose", role: "accent" },
+      { hex: "#E5DFD6", label: "Bone", role: "neutral" },
+      { hex: "#A58B71", label: "Warm Oak", role: "tertiary" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "success" }
+    ],
+    svgType: "studentcard"
+  }
+];
+
+function getC(p) {
+  const m = {};
+  p.colors.forEach(c => m[c.role] = c.hex);
+  return m;
+}
+
+// ========== SVG 1: Pflegeprozess Kreislauf (Flowchart) ==========
+function svgFlowchart(p) {
+  const c = getC(p);
+  return `<svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+    <rect width="600" height="260" rx="0" fill="${c.bg}"/>
+
+    <text x="300" y="22" text-anchor="middle" font-size="11" font-weight="600" fill="${c.text}" opacity="0.35" letter-spacing="0.1em">PFLEGEPROZESS — 6 SCHRITTE</text>
+
+    <!-- Circular flow: 6 steps arranged in 2 rows of 3 -->
+    <!-- Row 1: left to right -->
+    <rect x="24" y="42" width="160" height="48" rx="10" fill="${c.neutral}" stroke="${c.text}" stroke-width="0.5" stroke-opacity="0.15"/>
+    <circle cx="50" cy="66" r="12" fill="${c.primary}" opacity="0.15"/>
+    <text x="50" y="70" text-anchor="middle" font-size="11" font-weight="700" fill="${c.primary}">1</text>
+    <text x="72" y="63" font-size="10" font-weight="600" fill="${c.text}">Informationen</text>
+    <text x="72" y="76" font-size="8.5" font-weight="400" fill="${c.text}" opacity="0.5">sammeln</text>
+
+    <path d="M184,66 L208,66" stroke="${c.text}" stroke-width="0.8" stroke-opacity="0.2"/>
+    <polygon points="205,62.5 212,66 205,69.5" fill="${c.text}" opacity="0.2"/>
+
+    <rect x="216" y="42" width="160" height="48" rx="10" fill="${c.neutral}" stroke="${c.text}" stroke-width="0.5" stroke-opacity="0.15"/>
+    <circle cx="242" cy="66" r="12" fill="${c.primary}" opacity="0.15"/>
+    <text x="242" y="70" text-anchor="middle" font-size="11" font-weight="700" fill="${c.primary}">2</text>
+    <text x="264" y="63" font-size="10" font-weight="600" fill="${c.text}">Probleme</text>
+    <text x="264" y="76" font-size="8.5" font-weight="400" fill="${c.text}" opacity="0.5">erkennen</text>
+
+    <path d="M376,66 L400,66" stroke="${c.text}" stroke-width="0.8" stroke-opacity="0.2"/>
+    <polygon points="397,62.5 404,66 397,69.5" fill="${c.text}" opacity="0.2"/>
+
+    <rect x="408" y="42" width="168" height="48" rx="10" fill="${c.neutral}" stroke="${c.text}" stroke-width="0.5" stroke-opacity="0.15"/>
+    <circle cx="434" cy="66" r="12" fill="${c.primary}" opacity="0.15"/>
+    <text x="434" y="70" text-anchor="middle" font-size="11" font-weight="700" fill="${c.primary}">3</text>
+    <text x="456" y="63" font-size="10" font-weight="600" fill="${c.text}">Ziele</text>
+    <text x="456" y="76" font-size="8.5" font-weight="400" fill="${c.text}" opacity="0.5">festlegen</text>
+
+    <!-- Connecting arrow down-right -->
+    <path d="M576,90 L576,114 Q576,120 570,120 L440,120" stroke="${c.text}" stroke-width="0.8" stroke-opacity="0.15" fill="none"/>
+    <polygon points="443,116.5 436,120 443,123.5" fill="${c.text}" opacity="0.15"/>
+
+    <!-- Row 2: right to left -->
+    <rect x="408" y="110" width="168" height="48" rx="10" fill="${c.primary}" opacity="0.08" stroke="${c.primary}" stroke-width="1.2"/>
+    <circle cx="434" cy="134" r="12" fill="${c.primary}" opacity="0.2"/>
+    <text x="434" y="138" text-anchor="middle" font-size="11" font-weight="700" fill="${c.primary}">4</text>
+    <text x="456" y="131" font-size="10" font-weight="700" fill="${c.primary}">Maßnahmen</text>
+    <text x="456" y="144" font-size="8.5" font-weight="500" fill="${c.primary}" opacity="0.7">planen</text>
+
+    <path d="M408,134 L384,134" stroke="${c.text}" stroke-width="0.8" stroke-opacity="0.2"/>
+    <polygon points="387,130.5 380,134 387,137.5" fill="${c.text}" opacity="0.2"/>
+
+    <rect x="216" y="110" width="160" height="48" rx="10" fill="${c.neutral}" stroke="${c.text}" stroke-width="0.5" stroke-opacity="0.15"/>
+    <circle cx="242" cy="134" r="12" fill="${c.primary}" opacity="0.15"/>
+    <text x="242" y="138" text-anchor="middle" font-size="11" font-weight="700" fill="${c.primary}">5</text>
+    <text x="264" y="131" font-size="10" font-weight="600" fill="${c.text}">Durchführung</text>
+    <text x="264" y="144" font-size="8.5" font-weight="400" fill="${c.text}" opacity="0.5">der Pflege</text>
+
+    <path d="M216,134 L192,134" stroke="${c.text}" stroke-width="0.8" stroke-opacity="0.2"/>
+    <polygon points="195,130.5 188,134 195,137.5" fill="${c.text}" opacity="0.2"/>
+
+    <rect x="24" y="110" width="160" height="48" rx="10" fill="${c.neutral}" stroke="${c.text}" stroke-width="0.5" stroke-opacity="0.15"/>
+    <circle cx="50" cy="134" r="12" fill="${c.primary}" opacity="0.15"/>
+    <text x="50" y="138" text-anchor="middle" font-size="11" font-weight="700" fill="${c.primary}">6</text>
+    <text x="72" y="131" font-size="10" font-weight="600" fill="${c.text}">Evaluation</text>
+    <text x="72" y="144" font-size="8.5" font-weight="400" fill="${c.text}" opacity="0.5">& Anpassung</text>
+
+    <!-- Return arrow back to step 1 -->
+    <path d="M24,110 L24,100 Q24,94 30,94 L92,94 Q98,94 98,90 L98,90" stroke="${c.text}" stroke-width="0.8" stroke-opacity="0.12" stroke-dasharray="4,3" fill="none"/>
+
+    <!-- Legend -->
+    <line x1="24" y1="178" x2="576" y2="178" stroke="${c.neutral}" stroke-width="1"/>
+    <text x="24" y="200" font-size="9" font-weight="600" fill="${c.text}" opacity="0.35" letter-spacing="0.06em">LEGENDE</text>
+    <rect x="24" y="212" width="14" height="14" rx="3" fill="${c.primary}" opacity="0.12" stroke="${c.primary}" stroke-width="1"/>
+    <text x="46" y="223" font-size="10" fill="${c.text}" font-weight="500">Aktueller Schritt</text>
+    <rect x="170" y="212" width="14" height="14" rx="3" fill="${c.neutral}" stroke="${c.text}" stroke-width="0.5" stroke-opacity="0.15"/>
+    <text x="192" y="223" font-size="10" fill="${c.text}" font-weight="500">Abgeschlossen / Offen</text>
+    <path d="M370,219 L400,219" stroke="${c.text}" stroke-width="0.8" stroke-opacity="0.12" stroke-dasharray="4,3"/>
+    <text x="410" y="223" font-size="10" fill="${c.text}" font-weight="500">Wiederholung</text>
+  </svg>`;
+}
+
+// ========== SVG 2: Vergleichstabelle (Ethik vs. Moral) ==========
+function svgComparison(p) {
+  const c = getC(p);
+  return `<svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+    <rect width="600" height="280" rx="0" fill="${c.bg}"/>
+
+    <text x="300" y="22" text-anchor="middle" font-size="11" font-weight="600" fill="${c.text}" opacity="0.35" letter-spacing="0.1em">ETHIK VS. MORAL — UNTERSCHEIDUNG</text>
+
+    <!-- Two columns -->
+    <!-- Left: Ethik -->
+    <rect x="24" y="40" width="264" height="228" rx="12" fill="${c.neutral}" opacity="0.5"/>
+    <rect x="24" y="40" width="264" height="44" rx="12" fill="${c.primary}" opacity="0.1"/>
+    <rect x="24" y="72" width="264" height="1" fill="${c.primary}" opacity="0.15"/>
+    <text x="156" y="67" text-anchor="middle" font-size="14" font-weight="700" fill="${c.primary}">Ethik</text>
+
+    <text x="42" y="102" font-size="10" font-weight="600" fill="${c.text}">Definition</text>
+    <text x="42" y="117" font-size="9.5" font-weight="400" fill="${c.text}" opacity="0.65">Wissenschaftliche Reflexion</text>
+    <text x="42" y="130" font-size="9.5" font-weight="400" fill="${c.text}" opacity="0.65">über moralisches Handeln</text>
+
+    <line x1="42" y1="142" x2="270" y2="142" stroke="${c.text}" stroke-width="0.3" stroke-opacity="0.1"/>
+
+    <text x="42" y="162" font-size="10" font-weight="600" fill="${c.text}">Perspektive</text>
+    <text x="42" y="177" font-size="9.5" font-weight="400" fill="${c.text}" opacity="0.65">Theoretisch, analytisch,</text>
+    <text x="42" y="190" font-size="9.5" font-weight="400" fill="${c.text}" opacity="0.65">übergeordnet, philosophisch</text>
+
+    <line x1="42" y1="202" x2="270" y2="202" stroke="${c.text}" stroke-width="0.3" stroke-opacity="0.1"/>
+
+    <text x="42" y="222" font-size="10" font-weight="600" fill="${c.text}">Beispiel</text>
+    <text x="42" y="237" font-size="9.5" font-weight="400" fill="${c.text}" opacity="0.65">„Ist Sterbehilfe moralisch</text>
+    <text x="42" y="250" font-size="9.5" font-weight="400" fill="${c.text}" opacity="0.65">vertretbar?"</text>
+
+    <!-- Right: Moral -->
+    <rect x="312" y="40" width="264" height="228" rx="12" fill="${c.neutral}" opacity="0.5"/>
+    <rect x="312" y="40" width="264" height="44" rx="12" fill="${c.secondary}" opacity="0.1"/>
+    <rect x="312" y="72" width="264" height="1" fill="${c.secondary}" opacity="0.15"/>
+    <text x="444" y="67" text-anchor="middle" font-size="14" font-weight="700" fill="${c.secondary}">Moral</text>
+
+    <text x="330" y="102" font-size="10" font-weight="600" fill="${c.text}">Definition</text>
+    <text x="330" y="117" font-size="9.5" font-weight="400" fill="${c.text}" opacity="0.65">Gelebte Werte und Normen</text>
+    <text x="330" y="130" font-size="9.5" font-weight="400" fill="${c.text}" opacity="0.65">einer Gesellschaft oder Person</text>
+
+    <line x1="330" y1="142" x2="558" y2="142" stroke="${c.text}" stroke-width="0.3" stroke-opacity="0.1"/>
+
+    <text x="330" y="162" font-size="10" font-weight="600" fill="${c.text}">Perspektive</text>
+    <text x="330" y="177" font-size="9.5" font-weight="400" fill="${c.text}" opacity="0.65">Praktisch, konkret,</text>
+    <text x="330" y="190" font-size="9.5" font-weight="400" fill="${c.text}" opacity="0.65">kulturell geprägt, individuell</text>
+
+    <line x1="330" y1="202" x2="558" y2="202" stroke="${c.text}" stroke-width="0.3" stroke-opacity="0.1"/>
+
+    <text x="330" y="222" font-size="10" font-weight="600" fill="${c.text}">Beispiel</text>
+    <text x="330" y="237" font-size="9.5" font-weight="400" fill="${c.text}" opacity="0.65">„In meiner Familie hilft</text>
+    <text x="330" y="250" font-size="9.5" font-weight="400" fill="${c.text}" opacity="0.65">man einander — das ist richtig."</text>
+
+    <!-- VS circle -->
+    <circle cx="300" cy="62" r="14" fill="${c.bg}" stroke="${c.accent}" stroke-width="1.5"/>
+    <text x="300" y="66" text-anchor="middle" font-size="9" font-weight="700" fill="${c.accent}">VS</text>
+  </svg>`;
+}
+
+// ========== SVG 3: Metaparadigma (Radial/Hub) ==========
+function svgRadial(p) {
+  const c = getC(p);
+  const cx = 300, cy = 155;
+  return `<svg viewBox="0 0 600 290" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+    <rect width="600" height="290" rx="0" fill="${c.bg}"/>
+
+    <text x="300" y="22" text-anchor="middle" font-size="11" font-weight="600" fill="${c.text}" opacity="0.35" letter-spacing="0.1em">METAPARADIGMA DER PFLEGE</text>
+
+    <!-- Center circle -->
+    <circle cx="${cx}" cy="${cy}" r="42" fill="${c.primary}" opacity="0.08" stroke="${c.primary}" stroke-width="1.5"/>
+    <text x="${cx}" y="${cy-4}" text-anchor="middle" font-size="11" font-weight="700" fill="${c.primary}">Pflege</text>
+    <text x="${cx}" y="${cy+10}" text-anchor="middle" font-size="8.5" font-weight="400" fill="${c.primary}" opacity="0.6">4 Konzepte</text>
+
+    <!-- Connecting lines -->
+    <line x1="${cx}" y1="${cy-42}" x2="${cx}" y2="56" stroke="${c.text}" stroke-width="0.6" stroke-opacity="0.12"/>
+    <line x1="${cx+42}" y1="${cy}" x2="490" y2="${cy}" stroke="${c.text}" stroke-width="0.6" stroke-opacity="0.12"/>
+    <line x1="${cx}" y1="${cy+42}" x2="${cx}" y2="254" stroke="${c.text}" stroke-width="0.6" stroke-opacity="0.12"/>
+    <line x1="${cx-42}" y1="${cy}" x2="110" y2="${cy}" stroke="${c.text}" stroke-width="0.6" stroke-opacity="0.12"/>
+
+    <!-- Top: Mensch -->
+    <rect x="232" y="38" width="136" height="56" rx="10" fill="${c.neutral}" stroke="${c.text}" stroke-width="0.4" stroke-opacity="0.12"/>
+    <text x="${cx}" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="${c.text}">Mensch</text>
+    <text x="${cx}" y="78" text-anchor="middle" font-size="8.5" font-weight="400" fill="${c.text}" opacity="0.5">Person, die gepflegt wird</text>
+
+    <!-- Right: Gesundheit -->
+    <rect x="490" y="127" width="100" height="56" rx="10" fill="${c.neutral}" stroke="${c.text}" stroke-width="0.4" stroke-opacity="0.12"/>
+    <text x="540" y="151" text-anchor="middle" font-size="11" font-weight="700" fill="${c.text}">Gesundheit</text>
+    <text x="540" y="167" text-anchor="middle" font-size="8.5" font-weight="400" fill="${c.text}" opacity="0.5">Wohlbefinden</text>
+
+    <!-- Bottom: Umgebung -->
+    <rect x="228" y="252" width="144" height="32" rx="10" fill="${c.neutral}" stroke="${c.text}" stroke-width="0.4" stroke-opacity="0.12"/>
+    <text x="${cx}" y="273" text-anchor="middle" font-size="11" font-weight="700" fill="${c.text}">Umgebung</text>
+
+    <!-- Left: Pflege (Handlung) -->
+    <rect x="10" y="127" width="100" height="56" rx="10" fill="${c.accent}" opacity="0.12" stroke="${c.accent}" stroke-width="1.2"/>
+    <text x="60" y="151" text-anchor="middle" font-size="11" font-weight="700" fill="${c.accent}">Pflege</text>
+    <text x="60" y="167" text-anchor="middle" font-size="8.5" font-weight="500" fill="${c.accent}" opacity="0.65">Handlung</text>
+  </svg>`;
+}
+
+// ========== SVG 4: Dekubitus-Stadien (Levels/Stufen) ==========
+function svgLevels(p) {
+  const c = getC(p);
+  return `<svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+    <rect width="600" height="260" rx="0" fill="${c.bg}"/>
+
+    <text x="300" y="22" text-anchor="middle" font-size="11" font-weight="600" fill="${c.text}" opacity="0.35" letter-spacing="0.1em">DEKUBITUS — 4 STADIEN</text>
+
+    <!-- 4 level cards, getting progressively more intense -->
+    ${[
+      { n: "I", title: "Nicht wegdrückbare Rötung", desc: "Haut intakt, Rötung bleibt", op: 0.15 },
+      { n: "II", title: "Teilverlust der Haut", desc: "Blase oder flache Wunde", op: 0.3 },
+      { n: "III", title: "Verlust der Haut", desc: "Tiefe Wunde, Fett sichtbar", op: 0.5 },
+      { n: "IV", title: "Vollständiger Gewebeverlust", desc: "Knochen/Sehne sichtbar", op: 0.75 }
+    ].map((s, i) => {
+      const x = 24 + i * 142;
+      const barH = 30 + i * 30;
+      return `
+        <rect x="${x}" y="40" width="130" height="160" rx="10" fill="${c.neutral}" stroke="${c.text}" stroke-width="0.3" stroke-opacity="0.1"/>
+
+        <!-- Severity bar -->
+        <rect x="${x}" y="${200-barH}" width="130" height="${barH}" rx="0" fill="${c.primary}" opacity="${s.op}"/>
+        <rect x="${x}" y="190" width="130" height="10" rx="0 0 10 10" fill="${c.primary}" opacity="${s.op}"/>
+
+        <!-- Stadium number -->
+        <circle cx="${x+22}" cy="64" r="14" fill="${c.primary}" opacity="${s.op + 0.05}"/>
+        <text x="${x+22}" y="69" text-anchor="middle" font-size="12" font-weight="700" fill="${c.primary}">${s.n}</text>
+
+        <!-- Title -->
+        <text x="${x+14}" y="100" font-size="9.5" font-weight="700" fill="${c.text}">${s.title.split(' ').slice(0,2).join(' ')}</text>
+        <text x="${x+14}" y="113" font-size="9.5" font-weight="700" fill="${c.text}">${s.title.split(' ').slice(2).join(' ')}</text>
+
+        <!-- Description -->
+        <text x="${x+14}" y="134" font-size="8.5" font-weight="400" fill="${c.text}" opacity="0.5">${s.desc.split(',')[0]}</text>
+        <text x="${x+14}" y="147" font-size="8.5" font-weight="400" fill="${c.text}" opacity="0.5">${(s.desc.split(',')[1]||'').trim()}</text>
+      `;
+    }).join('')}
+
+    <!-- Arrow indicating severity -->
+    <line x1="40" y1="224" x2="550" y2="224" stroke="${c.text}" stroke-width="0.8" stroke-opacity="0.15"/>
+    <polygon points="547,220.5 556,224 547,227.5" fill="${c.text}" opacity="0.15"/>
+    <text x="40" y="244" font-size="9" font-weight="500" fill="${c.text}" opacity="0.3">Leicht</text>
+    <text x="530" y="244" font-size="9" font-weight="500" fill="${c.text}" opacity="0.3" text-anchor="end">Schwer</text>
+    <text x="300" y="244" font-size="9" font-weight="600" fill="${c.primary}" opacity="0.5" text-anchor="middle">Schweregrad →</text>
+  </svg>`;
+}
+
+// ========== SVG 5: Schülerprofil-Karte (Zwei-Achsen) ==========
+function svgStudentcard(p) {
+  const c = getC(p);
+  return `<svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+    <rect width="600" height="280" rx="0" fill="${c.bg}"/>
+
+    <text x="300" y="22" text-anchor="middle" font-size="11" font-weight="600" fill="${c.text}" opacity="0.35" letter-spacing="0.1em">SCHÜLERPROFIL — ZWEI-ACHSEN-EINSTUFUNG</text>
+
+    <!-- Main card -->
+    <rect x="24" y="38" width="552" height="232" rx="14" fill="white" stroke="${c.neutral}" stroke-width="1"/>
+
+    <!-- Avatar -->
+    <circle cx="72" cy="82" r="26" fill="${c.primary}" opacity="0.1"/>
+    <text x="72" y="88" text-anchor="middle" font-size="20" font-weight="700" fill="${c.primary}">YD</text>
+
+    <!-- Name & info -->
+    <text x="110" y="72" font-size="15" font-weight="700" fill="${c.text}">Yasemin Demirci</text>
+    <text x="110" y="90" font-size="10" font-weight="400" fill="${c.text}" opacity="0.45">22 Jahre — 1. Ausbildungsdrittel — CE 01</text>
+
+    <!-- Tags -->
+    <rect x="395" y="62" width="60" height="22" rx="11" fill="${c.primary}" opacity="0.1"/>
+    <text x="425" y="77" text-anchor="middle" font-size="9" font-weight="600" fill="${c.primary}">Aktiv</text>
+    <rect x="462" y="62" width="96" height="22" rx="11" fill="${c.accent}" opacity="0.15"/>
+    <text x="510" y="77" text-anchor="middle" font-size="9" font-weight="600" fill="${c.accent}">Streak: 12 Tage</text>
+
+    <!-- Divider -->
+    <line x1="44" y1="110" x2="556" y2="110" stroke="${c.neutral}" stroke-width="1"/>
+
+    <!-- Achse 1: Sprache -->
+    <text x="44" y="136" font-size="10" font-weight="600" fill="${c.text}" opacity="0.4" letter-spacing="0.04em">ACHSE 1 — SPRACHKOMPETENZ</text>
+
+    <text x="44" y="160" font-size="11" font-weight="600" fill="${c.text}">Allgemein</text>
+    <rect x="160" y="150" width="240" height="8" rx="4" fill="${c.neutral}"/>
+    <rect x="160" y="150" width="156" height="8" rx="4" fill="${c.primary}"/>
+    <text x="410" y="160" font-size="10" font-weight="600" fill="${c.primary}">B2</text>
+
+    <text x="44" y="184" font-size="11" font-weight="600" fill="${c.text}">Fachsprache</text>
+    <rect x="160" y="174" width="240" height="8" rx="4" fill="${c.neutral}"/>
+    <rect x="160" y="174" width="108" height="8" rx="4" fill="${c.secondary}"/>
+    <text x="410" y="184" font-size="10" font-weight="600" fill="${c.secondary}">B1+</text>
+
+    <!-- Achse 2: Fachwissen -->
+    <text x="44" y="214" font-size="10" font-weight="600" fill="${c.text}" opacity="0.4" letter-spacing="0.04em">ACHSE 2 — PFLEGEFACHWISSEN</text>
+
+    <text x="44" y="238" font-size="11" font-weight="600" fill="${c.text}">CE 01</text>
+    <rect x="160" y="228" width="240" height="8" rx="4" fill="${c.neutral}"/>
+    <rect x="160" y="228" width="192" height="8" rx="4" fill="${c.accent}"/>
+    <text x="410" y="238" font-size="10" font-weight="600" fill="${c.accent}">Level 3</text>
+    <!-- Level markers -->
+    ${[1,2,3,4,5].map(l => {
+      const lx = 160 + (l-1) * 48;
+      return `<circle cx="${lx}" cy="254" r="3" fill="${l <= 3 ? c.accent : c.neutral}" opacity="${l <= 3 ? 0.6 : 0.4}"/>
+              <text x="${lx}" y="268" text-anchor="middle" font-size="7" fill="${c.text}" opacity="0.3">${l}</text>`;
+    }).join('')}
+    <text x="160" y="268" font-size="7" fill="${c.text}" opacity="0.3" dx="-2"></text>
+  </svg>`;
+}
+
+const svgRenderers = {
+  flowchart: svgFlowchart,
+  comparison: svgComparison,
+  radial: svgRadial,
+  levels: svgLevels,
+  studentcard: svgStudentcard
+};
+
+const svgLabels = {
+  flowchart: "SVG-Typ: Kreislauf-Flowchart (Pflegeprozess)",
+  comparison: "SVG-Typ: Vergleichstabelle (Ethik vs. Moral)",
+  radial: "SVG-Typ: Radiales Hub-Diagramm (Metaparadigma)",
+  levels: "SVG-Typ: Stufen/Levels (Dekubitus-Stadien)",
+  studentcard: "SVG-Typ: Profil-Karte (Zwei-Achsen-Einstufung)"
+};
+
+const container = document.getElementById('palettes');
+
+palettes.forEach((p, i) => {
+  const card = document.createElement('div');
+  card.className = 'palette-card';
+
+  const stripHTML = p.colors.map(c =>
+    `<div style="background:${c.hex}" data-hex="${c.hex}" data-label="${c.label}"></div>`
+  ).join('');
+  const tagsHTML = p.tags.map(t => `<span class="tag">${t}</span>`).join('');
+  const textC = p.colors[1].hex;
+  const primC = p.colors[2].hex;
+  const accC = p.colors[4].hex;
+
+  card.innerHTML = `
+    <div class="palette-header">
+      <div>
+        <div class="palette-number">Palette ${String(i+1).padStart(2,'0')}</div>
+        <div class="palette-name">${p.name}</div>
+        <div class="palette-desc">${p.desc}</div>
+      </div>
+      <div class="palette-tags">${tagsHTML}</div>
+    </div>
+    <div class="color-strip">${stripHTML}</div>
+    <div class="svg-label">${svgLabels[p.svgType]}</div>
+    <div class="preview-area" style="background:${p.colors[0].hex}">
+      ${svgRenderers[p.svgType](p)}
+    </div>
+    <div class="palette-footer">
+      <div class="font-sample">
+        <strong>Überschrift</strong>
+        <span style="font-size:17px;font-weight:700;color:${textC}">Pflegeprozess — 6 Schritte</span>
+      </div>
+      <div class="font-sample">
+        <strong>Fließtext</strong>
+        <span style="font-size:13px;font-weight:400;color:${textC}">Der Dekubitus entsteht durch anhaltenden Druck auf die Haut.</span>
+      </div>
+      <div class="font-sample">
+        <strong>Primär</strong>
+        <span style="font-size:12px;font-weight:600;color:${primC}">Informationen sammeln</span>
+      </div>
+      <div class="font-sample">
+        <strong>Akzent</strong>
+        <span style="font-size:12px;font-weight:600;color:${accC}">Prophylaxe beachten</span>
+      </div>
+    </div>
+  `;
+  container.appendChild(card);
+});
+</script>
+</body>
+</html>

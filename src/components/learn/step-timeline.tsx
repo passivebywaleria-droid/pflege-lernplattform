@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 import { ContentIcon } from "@/components/ui/hand-drawn-icon";
 
 function TimelineIcon({ icon }: { icon?: string }) {
@@ -151,7 +151,7 @@ export function StepTimeline({
                         className="overflow-hidden"
                       >
                         <p className="text-sm text-[#1d1d1f]/80 leading-relaxed mt-3 pt-3 border-t border-[#e8e8ed]">
-                          {description}
+                          {renderBold(description)}
                         </p>
                       </motion.div>
                     )}

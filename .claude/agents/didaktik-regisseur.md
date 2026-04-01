@@ -338,3 +338,7 @@ Folge der Gliederung aus dem Rohmaterial. Keine Sprünge.
 - [ ] **Score-C-Pfad**: Voller Bogen ergibt ~10 Steps pro Themenblock
 - [ ] **Pflegeplanung**: Min 1x careplan pro Session bei CE 05 oder KB I
 - [ ] **Brücken**: Max 1 pro Themenblock, nur wo Interleaving-LE (Abschnitt D) passt
+- [ ] **Dialog = interaktiv**: Jeder `dialog`-Step hat `dialogPhases` (NIE `dialogLines`)
+- [ ] **Summary = REFLEXION**: Summary-Steps haben `themenblockPhase: "REFLEXION"`, nie CHECKPOINT
+- [ ] **Comparison-Spalten = Titel**: Wenn "3 Patienten" → 3 Spalten im Plan
+- [ ] **Schüler-Perspektive**: Dialog-Options sind IMMER aus Schüler-Sicht (fragt, ist unsicher) — NIE Mentor/Lehrer

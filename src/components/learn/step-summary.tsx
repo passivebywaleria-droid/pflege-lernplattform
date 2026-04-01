@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 import { HandDrawnIcon } from "@/components/ui/hand-drawn-icon";
 
 interface StepSummaryProps {
@@ -109,7 +109,7 @@ export function StepSummary({
                 className="text-sm text-[#1d1d1f]/70 flex items-start gap-2"
               >
                 <span className="text-[#30D158] shrink-0">✓</span>
-                {k}
+                <span>{renderBold(k)}</span>
               </li>
             ))}
           </ul>

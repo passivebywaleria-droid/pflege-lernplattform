@@ -15,7 +15,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 import { ContentIcon } from "@/components/ui/hand-drawn-icon";
 
 function ComparisonIcon({ icon }: { icon?: string }) {
@@ -136,7 +136,7 @@ export function StepComparison({
                 onClick={() => handleRowTap(rowIdx)}
                 className="w-full flex items-center justify-between p-4 text-left"
               >
-                <span className="text-sm font-semibold flex-1">{row.criterion}</span>
+                <span className="text-sm font-semibold flex-1">{renderBold(row.criterion)}</span>
                 <motion.span
                   animate={{ rotate: isExpanded ? 180 : 0 }}
                   transition={{ duration: 0.2 }}
@@ -169,7 +169,7 @@ export function StepComparison({
                                 <ComparisonIconColored icon={columns[colIdx]?.icon} color={color.hex} /> {columns[colIdx]?.label}
                               </span>
                             </div>
-                            <p className="text-sm leading-relaxed mt-1.5">{val}</p>
+                            <p className="text-sm leading-relaxed mt-1.5">{renderBold(val)}</p>
                           </div>
                         );
                       })}

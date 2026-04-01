@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pflege-Lernplattform — 20 Elfenbein/Rosa Paletten (Poppins)</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Poppins', system-ui, sans-serif;
+    background: #faf8f5;
+    color: #2d2a26;
+    padding: 40px 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  h1 { font-size: 26px; font-weight: 700; margin-bottom: 6px; color: #2d2a26; }
+  .subtitle { color: #8a8279; font-size: 14px; margin-bottom: 32px; line-height: 1.6; }
+
+  .brief {
+    background: #fff;
+    border: 1px solid #e8e2da;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 36px;
+  }
+  .brief h2 { font-size: 14px; font-weight: 600; color: #8a8279; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .brief-items { display: flex; gap: 20px; flex-wrap: wrap; font-size: 13px; color: #5c574f; }
+  .brief-item { display: flex; align-items: center; gap: 8px; }
+  .brief-dot { width: 24px; height: 24px; border-radius: 6px; border: 1px solid rgba(0,0,0,0.08); flex-shrink: 0; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(640px, 1fr));
+    gap: 24px;
+  }
+
+  .palette-card {
+    background: #fff;
+    border: 1px solid #e8e2da;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  .palette-card:hover { box-shadow: 0 8px 30px rgba(45,42,38,0.06); }
+
+  .palette-header {
+    padding: 20px 24px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .palette-number { font-size: 11px; font-weight: 600; color: #b5ae a5; text-transform: uppercase; letter-spacing: 0.06em; }
+  .palette-name { font-size: 17px; font-weight: 700; margin-top: 3px; color: #2d2a26; }
+  .palette-desc { font-size: 12px; color: #8a8279; margin-top: 2px; font-weight: 400; }
+
+  .palette-tags { display: flex; gap: 5px; flex-wrap: wrap; justify-content: flex-end; }
+  .tag { font-size: 10px; padding: 3px 8px; border-radius: 20px; background: #f5f1ec; color: #8a8279; font-weight: 500; }
+
+  .color-strip {
+    display: flex;
+    height: 44px;
+    margin: 0 24px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  .color-strip div { flex: 1; position: relative; cursor: pointer; }
+  .color-strip div:hover::after {
+    content: attr(data-hex);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: #8a8279;
+    font-family: monospace;
+    white-space: nowrap;
+    background: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid #e8e2da;
+    z-index: 10;
+  }
+
+  .color-labels { display: flex; margin: 5px 24px 0; }
+  .color-labels span { flex: 1; font-size: 9px; color: #b5aea5; text-align: center; font-weight: 500; }
+
+  .preview-area {
+    margin: 22px 24px;
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 190px;
+  }
+  .preview-area svg { width: 100%; height: auto; }
+
+  .palette-footer {
+    padding: 0 24px 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .font-sample { line-height: 1.5; }
+  .font-sample strong {
+    display: block;
+    font-size: 10px;
+    color: #b5aea5;
+    font-weight: 500;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: 1fr; }
+    body { padding: 20px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Elfenbein & Rosa — 20 Paletten</h1>
+<p class="subtitle">Alle Variationen: Poppins als Schrift. Elfenbein/Beige als Basis. Rosa (#be185d / #9d174d) nur als Akzent. Professionell, warm, edel.</p>
+
+<div class="brief">
+  <h2>Design-Briefing</h2>
+  <div class="brief-items">
+    <div class="brief-item"><div class="brief-dot" style="background:#be185d"></div> Rosa-Akzent #be185d</div>
+    <div class="brief-item"><div class="brief-dot" style="background:#9d174d"></div> Rosa-Dunkel #9d174d</div>
+    <div class="brief-item"><div class="brief-dot" style="background:#faf5f0"></div> Elfenbein-Basis</div>
+    <div class="brief-item" style="font-weight:600;">Schrift: Poppins</div>
+    <div class="brief-item" style="font-weight:600;">Stil: Professionell</div>
+  </div>
+</div>
+
+<div class="grid" id="palettes"></div>
+
+<script>
+const palettes = [
+  // --- GRUPPE 1: Klassisch Elfenbein + Rosa-Akzent ---
+  {
+    name: "Elfenbein Klassik",
+    desc: "Warmes Elfenbein, dunkelbraune Schrift, Rosa nur als Highlight",
+    tags: ["Klassisch", "Edel", "Warm"],
+    colors: {
+      basis: "#faf5f0", text: "#3d3329", beige: "#e8ddd0",
+      akzent1: "#be185d", akzent2: "#9d174d",
+      success: "#2d6a4f", warning: "#b45309", bg: "#faf5f0"
+    },
+    labels: ["Basis", "Text", "Beige", "Rosa-Akzent", "Rosa-Dunkel", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Sahne & Rosé",
+    desc: "Cremige Sahnetöne mit zartem Rosé-Akzent",
+    tags: ["Sanft", "Feminin", "Elegant"],
+    colors: {
+      basis: "#fdf8f3", text: "#44392e", beige: "#efe5d8",
+      akzent1: "#c2255c", akzent2: "#a61e4d",
+      success: "#37825c", warning: "#c2740c", bg: "#fdf8f3"
+    },
+    labels: ["Basis", "Text", "Beige", "Rosé", "Rosé-Dunkel", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Champagner",
+    desc: "Goldener Champagnerton als Basis, Rosa als Kontrast",
+    tags: ["Premium", "Gold", "Luxus"],
+    colors: {
+      basis: "#f9f3e8", text: "#362d22", beige: "#e6d9c4",
+      akzent1: "#be185d", akzent2: "#881337",
+      success: "#2b6a3e", warning: "#a16207", bg: "#f9f3e8"
+    },
+    labels: ["Basis", "Text", "Champagner", "Rosa", "Bordeaux", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Leinen & Pflaume",
+    desc: "Natürliches Leinen mit pflaumenfarbenem Akzent",
+    tags: ["Natur", "Professionell", "Gedeckt"],
+    colors: {
+      basis: "#f7f2ec", text: "#3b3228", beige: "#ddd4c7",
+      akzent1: "#a3195b", akzent2: "#831843",
+      success: "#2d6a4f", warning: "#92400e", bg: "#f7f2ec"
+    },
+    labels: ["Basis", "Text", "Leinen", "Pflaume", "Pflaume-Dunkel", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  // --- GRUPPE 2: Kühler Elfenbein + Rosa ---
+  {
+    name: "Kühles Elfenbein",
+    desc: "Leicht gräuliches Elfenbein, kühler und professioneller",
+    tags: ["Kühl", "Modern", "Business"],
+    colors: {
+      basis: "#f5f2ee", text: "#33302b", beige: "#dfdad3",
+      akzent1: "#be185d", akzent2: "#9d174d",
+      success: "#166534", warning: "#a16207", bg: "#f5f2ee"
+    },
+    labels: ["Basis", "Text", "Grau-Beige", "Rosa", "Rosa-Dunkel", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Perle & Magenta",
+    desc: "Perlmuttweißes Elfenbein mit kräftigerem Magenta",
+    tags: ["Kontrast", "Klar", "Frisch"],
+    colors: {
+      basis: "#faf7f4", text: "#2e2924", beige: "#e9e2d9",
+      akzent1: "#c026d3", akzent2: "#a21caf",
+      success: "#15803d", warning: "#ca8a04", bg: "#faf7f4"
+    },
+    labels: ["Basis", "Text", "Perlmutt", "Magenta", "Magenta-Dunkel", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Greige & Blush",
+    desc: "Greige (Grau+Beige) Basis mit Blush-Rosa",
+    tags: ["Greige", "Neutral", "Dezent"],
+    colors: {
+      basis: "#f3efea", text: "#3a3530", beige: "#d9d2c9",
+      akzent1: "#db2777", akzent2: "#be185d",
+      success: "#059669", warning: "#b45309", bg: "#f3efea"
+    },
+    labels: ["Basis", "Text", "Greige", "Blush", "Blush-Dunkel", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  // --- GRUPPE 3: Warmes Beige + Rosa-Varianten ---
+  {
+    name: "Kaschmir",
+    desc: "Weiches Kaschmir-Beige mit dezentem Rosa",
+    tags: ["Weich", "Luxus", "Wärme"],
+    colors: {
+      basis: "#f8f1e8", text: "#3f362b", beige: "#e5d8c8",
+      akzent1: "#be185d", akzent2: "#9d174d",
+      success: "#2d7a4f", warning: "#c67b08", bg: "#f8f1e8"
+    },
+    labels: ["Basis", "Text", "Kaschmir", "Rosa", "Rosa-Dunkel", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Sand & Hibiskus",
+    desc: "Sandige Wärme trifft auf lebhaften Hibiskus-Akzent",
+    tags: ["Sand", "Lebendig", "Kontrast"],
+    colors: {
+      basis: "#f6efe4", text: "#3a3127", beige: "#dfd3c2",
+      akzent1: "#e11d48", akzent2: "#be123c",
+      success: "#15803d", warning: "#d97706", bg: "#f6efe4"
+    },
+    labels: ["Basis", "Text", "Sand", "Hibiskus", "Hibiskus-Dunkel", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Porzellan",
+    desc: "Fast weißes Porzellan mit feinem Rosa-Touch",
+    tags: ["Minimal", "Rein", "Elegant"],
+    colors: {
+      basis: "#fcf9f6", text: "#2d2a26", beige: "#ede6dd",
+      akzent1: "#be185d", akzent2: "#9d174d",
+      success: "#047857", warning: "#a16207", bg: "#fcf9f6"
+    },
+    labels: ["Basis", "Text", "Porzellan", "Rosa", "Rosa-Dunkel", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  // --- GRUPPE 4: Elfenbein + Rosa mit Zusatzfarbe ---
+  {
+    name: "Elfenbein & Petrol",
+    desc: "Rosa-Akzent ergänzt durch Petrol als zweite Akzentfarbe",
+    tags: ["Duo-Akzent", "Professionell", "Kontrast"],
+    colors: {
+      basis: "#f8f4ee", text: "#2d3436", beige: "#e2d9cc",
+      akzent1: "#be185d", akzent2: "#115e59",
+      success: "#16a34a", warning: "#d97706", bg: "#f8f4ee"
+    },
+    labels: ["Basis", "Text", "Beige", "Rosa", "Petrol", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Elfenbein & Nachtblau",
+    desc: "Elegante Kombination aus warmem Elfenbein und tiefem Blau",
+    tags: ["Duo-Akzent", "Seriös", "Elegant"],
+    colors: {
+      basis: "#faf5f0", text: "#1e293b", beige: "#e5ddd2",
+      akzent1: "#be185d", akzent2: "#1e3a5f",
+      success: "#059669", warning: "#ca8a04", bg: "#faf5f0"
+    },
+    labels: ["Basis", "Text", "Beige", "Rosa", "Nachtblau", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Elfenbein & Salbei",
+    desc: "Rosa + Salbeigrün als Farbduo auf Elfenbein",
+    tags: ["Duo-Akzent", "Natur", "Harmonisch"],
+    colors: {
+      basis: "#f9f5ef", text: "#33302b", beige: "#e3dbd0",
+      akzent1: "#be185d", akzent2: "#5f7a61",
+      success: "#2d6a4f", warning: "#b45309", bg: "#f9f5ef"
+    },
+    labels: ["Basis", "Text", "Beige", "Rosa", "Salbei", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Elfenbein & Kupfer",
+    desc: "Warme Kupfertöne ergänzen Rosa auf Elfenbein",
+    tags: ["Duo-Akzent", "Warm", "Metallisch"],
+    colors: {
+      basis: "#faf3eb", text: "#3a2f24", beige: "#e8d9c6",
+      akzent1: "#be185d", akzent2: "#b45309",
+      success: "#166534", warning: "#92400e", bg: "#faf3eb"
+    },
+    labels: ["Basis", "Text", "Beige", "Rosa", "Kupfer", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  // --- GRUPPE 5: Sehr professionell / Corporate ---
+  {
+    name: "Corporate Warm",
+    desc: "Business-tauglich: gedämpftes Rosa, seriöser Text",
+    tags: ["Corporate", "Seriös", "Gedämpft"],
+    colors: {
+      basis: "#f5f1ec", text: "#292524", beige: "#d6cfc5",
+      akzent1: "#9f1239", akzent2: "#881337",
+      success: "#166534", warning: "#92400e", bg: "#f5f1ec"
+    },
+    labels: ["Basis", "Text", "Beige", "Weinrot", "Bordeaux", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Diplomatisch",
+    desc: "Zurückhaltend, fast neutral, Rosa nur als feinster Akzent",
+    tags: ["Minimal", "Zurückhaltend", "Edel"],
+    colors: {
+      basis: "#f7f4f0", text: "#1c1917", beige: "#e7e0d7",
+      akzent1: "#be185d", akzent2: "#78716c",
+      success: "#15803d", warning: "#a16207", bg: "#f7f4f0"
+    },
+    labels: ["Basis", "Text", "Beige", "Rosa", "Grau", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Anwaltskanzlei",
+    desc: "Sehr seriös: dunkle Textfarbe, minimaler Rosa-Einsatz",
+    tags: ["Ultra-Seriös", "Konservativ", "Vertrauen"],
+    colors: {
+      basis: "#f4f0ea", text: "#1a1714", beige: "#d8d0c5",
+      akzent1: "#9d174d", akzent2: "#701a3a",
+      success: "#14532d", warning: "#78350f", bg: "#f4f0ea"
+    },
+    labels: ["Basis", "Text", "Beige", "Dunkelrosa", "Weinrot", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  // --- GRUPPE 6: Spielerisch-professionell ---
+  {
+    name: "Pflege Modern",
+    desc: "Der goldene Mittelweg: warm, professionell, einladend",
+    tags: ["Empfohlen", "Ausgewogen", "Modern"],
+    colors: {
+      basis: "#faf6f1", text: "#2d2a26", beige: "#e6ddd2",
+      akzent1: "#be185d", akzent2: "#9d174d",
+      success: "#059669", warning: "#d97706", bg: "#faf6f1"
+    },
+    labels: ["Basis", "Text", "Beige", "Rosa", "Rosa-Dunkel", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Latte & Rose",
+    desc: "Wie ein Café Latte mit Rosenblüte — einladend und warm",
+    tags: ["Café", "Einladend", "Lifestyle"],
+    colors: {
+      basis: "#f5ede3", text: "#3b3228", beige: "#ddd0bf",
+      akzent1: "#d6336c", akzent2: "#c2255c",
+      success: "#2b9348", warning: "#cc8800", bg: "#f5ede3"
+    },
+    labels: ["Basis", "Text", "Latte", "Rose", "Rose-Dunkel", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Ivory Suite",
+    desc: "Reines Ivory mit selbstbewusstem Rosa-Statement",
+    tags: ["Statement", "Klar", "Selbstbewusst"],
+    colors: {
+      basis: "#fefcf8", text: "#292524", beige: "#f0e8dd",
+      akzent1: "#e11d63", akzent2: "#be185d",
+      success: "#16a34a", warning: "#ea580c", bg: "#fefcf8"
+    },
+    labels: ["Basis", "Text", "Ivory", "Rosa-Hell", "Rosa", "Erfolg", "Warnung", "Hintergrund"]
+  }
+];
+
+function createDiagramSVG(p) {
+  const c = p.colors;
+  // Use text color for main elements, akzent1/akzent2 only as highlights
+  const textC = c.text;
+  const beigeC = c.beige;
+  const ak1 = c.akzent1;
+  const ak2 = c.akzent2 || c.akzent1;
+  const suc = c.success;
+  const warn = c.warning;
+  const baseC = c.basis;
+
+  return `<svg viewBox="0 0 580 200" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Poppins', sans-serif;">
+    <rect width="580" height="200" rx="10" fill="${baseC}"/>
+
+    <!-- Flowchart: Pflegeprozess -->
+    <text x="24" y="20" font-size="10" font-weight="600" fill="${textC}" opacity="0.5" letter-spacing="0.05em">PFLEGEPROZESS</text>
+
+    <!-- Box 1 -->
+    <rect x="20" y="30" width="120" height="42" rx="8" fill="${beigeC}" stroke="${textC}" stroke-width="0.5" opacity="0.7"/>
+    <text x="80" y="55" text-anchor="middle" font-size="10.5" font-weight="600" fill="${textC}">Einschätzung</text>
+
+    <line x1="140" y1="51" x2="160" y2="51" stroke="${textC}" stroke-width="1" opacity="0.3"/>
+    <polygon points="158,47 166,51 158,55" fill="${textC}" opacity="0.3"/>
+
+    <!-- Box 2 -->
+    <rect x="166" y="30" width="100" height="42" rx="8" fill="${beigeC}" stroke="${textC}" stroke-width="0.5" opacity="0.7"/>
+    <text x="216" y="55" text-anchor="middle" font-size="10.5" font-weight="600" fill="${textC}">Planung</text>
+
+    <line x1="266" y1="51" x2="286" y2="51" stroke="${textC}" stroke-width="1" opacity="0.3"/>
+    <polygon points="284,47 292,51 284,55" fill="${textC}" opacity="0.3"/>
+
+    <!-- Box 3 - AKZENT -->
+    <rect x="292" y="30" width="125" height="42" rx="8" fill="${ak1}" opacity="0.1" stroke="${ak1}" stroke-width="1.5"/>
+    <text x="354" y="55" text-anchor="middle" font-size="10.5" font-weight="600" fill="${ak1}">Durchführung</text>
+
+    <line x1="417" y1="51" x2="437" y2="51" stroke="${textC}" stroke-width="1" opacity="0.3"/>
+    <polygon points="435,47 443,51 435,55" fill="${textC}" opacity="0.3"/>
+
+    <!-- Box 4 -->
+    <rect x="443" y="30" width="117" height="42" rx="8" fill="${beigeC}" stroke="${textC}" stroke-width="0.5" opacity="0.7"/>
+    <text x="501" y="55" text-anchor="middle" font-size="10.5" font-weight="600" fill="${textC}">Evaluation</text>
+
+    <!-- Divider -->
+    <line x1="20" y1="86" x2="560" y2="86" stroke="${beigeC}" stroke-width="1"/>
+
+    <!-- Left: mini bar chart -->
+    <text x="24" y="104" font-size="9" font-weight="600" fill="${textC}" opacity="0.5" letter-spacing="0.05em">FORTSCHRITT</text>
+
+    <rect x="20" y="156" width="50" height="32" rx="4" fill="${beigeC}"/>
+    <rect x="78" y="140" width="50" height="48" rx="4" fill="${beigeC}"/>
+    <rect x="136" y="124" width="50" height="64" rx="4" fill="${ak1}" opacity="0.2" stroke="${ak1}" stroke-width="1"/>
+    <rect x="194" y="148" width="50" height="40" rx="4" fill="${beigeC}"/>
+
+    <!-- Bar labels -->
+    <text x="45" y="176" text-anchor="middle" font-size="8" fill="${textC}" opacity="0.6" font-weight="500">CE 01</text>
+    <text x="103" y="170" text-anchor="middle" font-size="8" fill="${textC}" opacity="0.6" font-weight="500">CE 02</text>
+    <text x="161" y="154" text-anchor="middle" font-size="8" fill="${ak1}" font-weight="600">CE 03</text>
+    <text x="219" y="174" text-anchor="middle" font-size="8" fill="${textC}" opacity="0.6" font-weight="500">CE 04</text>
+
+    <!-- Right: info card -->
+    <rect x="280" y="96" width="280" height="92" rx="10" fill="white" stroke="${beigeC}" stroke-width="1"/>
+
+    <!-- Sprachniveau -->
+    <text x="300" y="118" font-size="9" font-weight="500" fill="${textC}" opacity="0.5">Sprachniveau</text>
+    <text x="300" y="133" font-size="13" font-weight="700" fill="${textC}">B2 Deutsch</text>
+    <rect x="420" y="121" width="60" height="16" rx="8" fill="${suc}" opacity="0.12"/>
+    <text x="450" y="132" text-anchor="middle" font-size="9" font-weight="600" fill="${suc}">Gut</text>
+
+    <!-- Divider in card -->
+    <line x1="296" y1="144" x2="548" y2="144" stroke="${beigeC}" stroke-width="0.5"/>
+
+    <!-- Fachwissen -->
+    <text x="300" y="160" font-size="9" font-weight="500" fill="${textC}" opacity="0.5">Fachwissen</text>
+    <text x="300" y="175" font-size="13" font-weight="700" fill="${textC}">Level 3</text>
+
+    <!-- Progress bar -->
+    <rect x="420" y="164" width="120" height="7" rx="3.5" fill="${beigeC}"/>
+    <rect x="420" y="164" width="78" height="7" rx="3.5" fill="${ak1}"/>
+
+    <!-- Akzent dot -->
+    <circle cx="504" y="164" cy="167.5" r="3" fill="${ak1}"/>
+  </svg>`;
+}
+
+const container = document.getElementById('palettes');
+
+palettes.forEach((p, i) => {
+  const card = document.createElement('div');
+  card.className = 'palette-card';
+
+  const colorEntries = Object.entries(p.colors);
+  const stripHTML = colorEntries.map(([k,v]) =>
+    `<div style="background:${v}" data-hex="${v}"></div>`
+  ).join('');
+  const labelsHTML = p.labels.map(l => `<span>${l}</span>`).join('');
+  const tagsHTML = p.tags.map(t => `<span class="tag">${t}</span>`).join('');
+
+  card.innerHTML = `
+    <div class="palette-header">
+      <div>
+        <div class="palette-number">Palette ${String(i+1).padStart(2,'0')}</div>
+        <div class="palette-name">${p.name}</div>
+        <div class="palette-desc">${p.desc}</div>
+      </div>
+      <div class="palette-tags">${tagsHTML}</div>
+    </div>
+    <div class="color-strip">${stripHTML}</div>
+    <div class="color-labels">${labelsHTML}</div>
+    <div class="preview-area" style="background:${p.colors.bg}">
+      ${createDiagramSVG(p)}
+    </div>
+    <div class="palette-footer">
+      <div class="font-sample">
+        <strong>Überschrift</strong>
+        <span style="font-size:17px;font-weight:700;color:${p.colors.text}">Pflegeprozess — 6 Schritte</span>
+      </div>
+      <div class="font-sample">
+        <strong>Fließtext</strong>
+        <span style="font-size:13px;font-weight:400;color:${p.colors.text}">Der Dekubitus entsteht durch anhaltenden Druck auf die Haut.</span>
+      </div>
+      <div class="font-sample">
+        <strong>Akzent-Label</strong>
+        <span style="font-size:12px;font-weight:600;color:${p.colors.akzent1}">Stadium I — Nicht wegdrückbare Rötung</span>
+      </div>
+    </div>
+  `;
+
+  container.appendChild(card);
+});
+</script>
+
+</body>
+</html>

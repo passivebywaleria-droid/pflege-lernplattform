@@ -1,0 +1,84 @@
+<svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+  <rect width="600" height="320" fill="#fafaf9"/>
+
+  <text x="300" y="28" text-anchor="middle" font-size="10" font-weight="600" fill="#33302b" opacity="0.35" letter-spacing="0.1em">KOMPLIKATIONSKETTE — WARUM PFLEGE VORAUSDENKT</text>
+
+  <!-- Starting point -->
+  <rect x="20" y="52" width="120" height="52" rx="10" fill="#AE6965" opacity="0.08" stroke="#AE6965" stroke-width="1"/>
+  <text x="80" y="74" text-anchor="middle" font-size="10" font-weight="700" fill="#AE6965">Schmerzen</text>
+  <text x="80" y="90" text-anchor="middle" font-size="8" font-weight="400" fill="#33302b" opacity="0.5">Ausgangspunkt</text>
+
+  <!-- Arrow 1 -->
+  <path d="M140,78 L164,78" stroke="#33302b" stroke-width="0.8" stroke-opacity="0.2"/>
+  <polygon points="161,74.5 168,78 161,81.5" fill="#33302b" opacity="0.2"/>
+
+  <!-- Step 2 -->
+  <rect x="168" y="52" width="120" height="52" rx="10" fill="#E5DFD6" opacity="0.5" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.1"/>
+  <text x="228" y="74" text-anchor="middle" font-size="10" font-weight="700" fill="#33302b">Schonatmung</text>
+  <text x="228" y="90" text-anchor="middle" font-size="8" font-weight="400" fill="#33302b" opacity="0.5">flach, oberflächlich</text>
+
+  <!-- Arrow 2 -->
+  <path d="M288,78 L312,78" stroke="#33302b" stroke-width="0.8" stroke-opacity="0.2"/>
+  <polygon points="309,74.5 316,78 309,81.5" fill="#33302b" opacity="0.2"/>
+
+  <!-- Step 3 -->
+  <rect x="316" y="52" width="130" height="52" rx="10" fill="#E5DFD6" opacity="0.5" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.1"/>
+  <text x="381" y="74" text-anchor="middle" font-size="10" font-weight="700" fill="#33302b">Pneumonie-</text>
+  <text x="381" y="90" text-anchor="middle" font-size="10" font-weight="700" fill="#33302b">Risiko ↑</text>
+
+  <!-- Arrow 3 -->
+  <path d="M446,78 L470,78" stroke="#33302b" stroke-width="0.8" stroke-opacity="0.2"/>
+  <polygon points="467,74.5 474,78 467,81.5" fill="#33302b" opacity="0.2"/>
+
+  <!-- Step 4 -->
+  <rect x="474" y="52" width="106" height="52" rx="10" fill="#AE6965" opacity="0.08" stroke="#AE6965" stroke-width="0.8"/>
+  <text x="527" y="74" text-anchor="middle" font-size="10" font-weight="700" fill="#AE6965">Infektion</text>
+  <text x="527" y="90" text-anchor="middle" font-size="8" font-weight="400" fill="#33302b" opacity="0.5">Lungenentzündung</text>
+
+  <!-- Divider -->
+  <line x1="20" y1="124" x2="580" y2="124" stroke="#E5DFD6" stroke-width="1"/>
+
+  <!-- Second chain: Immobilität -->
+  <rect x="20" y="142" width="120" height="52" rx="10" fill="#AE6965" opacity="0.08" stroke="#AE6965" stroke-width="1"/>
+  <text x="80" y="164" text-anchor="middle" font-size="10" font-weight="700" fill="#AE6965">Immobilität</text>
+  <text x="80" y="180" text-anchor="middle" font-size="8" font-weight="400" fill="#33302b" opacity="0.5">Bettlägerigkeit</text>
+
+  <path d="M140,168 L164,168" stroke="#33302b" stroke-width="0.8" stroke-opacity="0.2"/>
+  <polygon points="161,164.5 168,168 161,171.5" fill="#33302b" opacity="0.2"/>
+
+  <rect x="168" y="142" width="120" height="52" rx="10" fill="#E5DFD6" opacity="0.5" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.1"/>
+  <text x="228" y="164" text-anchor="middle" font-size="10" font-weight="700" fill="#33302b">Obstipation</text>
+  <text x="228" y="180" text-anchor="middle" font-size="8" font-weight="400" fill="#33302b" opacity="0.5">Darm wird träge</text>
+
+  <path d="M288,168 L312,168" stroke="#33302b" stroke-width="0.8" stroke-opacity="0.2"/>
+  <polygon points="309,164.5 316,168 309,171.5" fill="#33302b" opacity="0.2"/>
+
+  <rect x="316" y="142" width="130" height="52" rx="10" fill="#E5DFD6" opacity="0.5" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.1"/>
+  <text x="381" y="164" text-anchor="middle" font-size="10" font-weight="700" fill="#33302b">Thrombose-</text>
+  <text x="381" y="180" text-anchor="middle" font-size="10" font-weight="700" fill="#33302b">Risiko ↑</text>
+
+  <path d="M446,168 L470,168" stroke="#33302b" stroke-width="0.8" stroke-opacity="0.2"/>
+  <polygon points="467,164.5 474,168 467,171.5" fill="#33302b" opacity="0.2"/>
+
+  <rect x="474" y="142" width="106" height="52" rx="10" fill="#AE6965" opacity="0.08" stroke="#AE6965" stroke-width="0.8"/>
+  <text x="527" y="164" text-anchor="middle" font-size="10" font-weight="700" fill="#AE6965">Dekubitus</text>
+  <text x="527" y="180" text-anchor="middle" font-size="8" font-weight="400" fill="#33302b" opacity="0.5">Druckgeschwür</text>
+
+  <!-- Divider -->
+  <line x1="20" y1="214" x2="580" y2="214" stroke="#E5DFD6" stroke-width="1"/>
+
+  <!-- Prophylaxe section -->
+  <text x="300" y="240" text-anchor="middle" font-size="9" font-weight="600" fill="#7A816C" letter-spacing="0.05em">PROPHYLAXE UNTERBRICHT DIE KETTE</text>
+
+  <rect x="40" y="254" width="150" height="30" rx="8" fill="#7A816C" opacity="0.08" stroke="#7A816C" stroke-width="0.8"/>
+  <text x="115" y="274" text-anchor="middle" font-size="9" font-weight="600" fill="#7A816C">Schmerzmanagement</text>
+
+  <rect x="220" y="254" width="160" height="30" rx="8" fill="#7A816C" opacity="0.08" stroke="#7A816C" stroke-width="0.8"/>
+  <text x="300" y="274" text-anchor="middle" font-size="9" font-weight="600" fill="#7A816C">Frühmobilisation</text>
+
+  <rect x="410" y="254" width="150" height="30" rx="8" fill="#7A816C" opacity="0.08" stroke="#7A816C" stroke-width="0.8"/>
+  <text x="485" y="274" text-anchor="middle" font-size="9" font-weight="600" fill="#7A816C">Atemübungen</text>
+
+  <!-- Bottom -->
+  <text x="300" y="306" text-anchor="middle" font-size="9" font-weight="500" fill="#33302b" opacity="0.3">Eine Komplikation kommt selten allein — Pflege denkt voraus</text>
+</svg>

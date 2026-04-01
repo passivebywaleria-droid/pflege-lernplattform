@@ -1,0 +1,54 @@
+<svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+  <rect width="600" height="340" fill="#fafaf9"/>
+
+  <text x="300" y="28" text-anchor="middle" font-size="10" font-weight="600" fill="#33302b" opacity="0.35" letter-spacing="0.1em">4 ETHISCHE PRINZIPIEN — BEAUCHAMP &amp; CHILDRESS</text>
+
+  <!-- 2x2 Grid of principles -->
+
+  <!-- 1. Autonomie (top-left) -->
+  <rect x="20" y="48" width="270" height="126" rx="12" fill="#E5DFD6" opacity="0.4"/>
+  <circle cx="48" cy="76" r="16" fill="#7A816C" opacity="0.12"/>
+  <text x="48" y="81" text-anchor="middle" font-size="13" font-weight="700" fill="#7A816C">1</text>
+  <text x="72" y="76" font-size="13" font-weight="700" fill="#33302b">Autonomie</text>
+  <text x="72" y="92" font-size="9" font-weight="500" fill="#7A816C">Selbstbestimmung</text>
+  <line x1="36" y1="104" x2="274" y2="104" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.06"/>
+  <text x="36" y="122" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">Jeder Patient hat das Recht,</text>
+  <text x="36" y="136" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">selbst zu entscheiden — auch</text>
+  <text x="36" y="150" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">wenn wir anderer Meinung sind.</text>
+
+  <!-- 2. Benefizienz (top-right) -->
+  <rect x="310" y="48" width="270" height="126" rx="12" fill="#E5DFD6" opacity="0.4"/>
+  <circle cx="338" cy="76" r="16" fill="#AE6965" opacity="0.12"/>
+  <text x="338" y="81" text-anchor="middle" font-size="13" font-weight="700" fill="#AE6965">2</text>
+  <text x="362" y="76" font-size="13" font-weight="700" fill="#33302b">Benefizienz</text>
+  <text x="362" y="92" font-size="9" font-weight="500" fill="#AE6965">Gutes tun</text>
+  <line x1="326" y1="104" x2="564" y2="104" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.06"/>
+  <text x="326" y="122" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">Pflegende handeln zum Wohl</text>
+  <text x="326" y="136" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">des Patienten — Gesundheit</text>
+  <text x="326" y="150" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">und Wohlbefinden fördern.</text>
+
+  <!-- 3. Nonmalefizienz (bottom-left) -->
+  <rect x="20" y="192" width="270" height="126" rx="12" fill="#E5DFD6" opacity="0.4"/>
+  <circle cx="48" cy="220" r="16" fill="#D1A9A5" opacity="0.2"/>
+  <text x="48" y="225" text-anchor="middle" font-size="13" font-weight="700" fill="#A58B71">3</text>
+  <text x="72" y="220" font-size="13" font-weight="700" fill="#33302b">Nonmalefizienz</text>
+  <text x="72" y="236" font-size="9" font-weight="500" fill="#A58B71">Nicht schaden</text>
+  <line x1="36" y1="248" x2="274" y2="248" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.06"/>
+  <text x="36" y="266" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">Pflegende vermeiden Handlungen,</text>
+  <text x="36" y="280" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">die dem Patienten schaden</text>
+  <text x="36" y="294" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">könnten.</text>
+
+  <!-- 4. Gerechtigkeit (bottom-right) -->
+  <rect x="310" y="192" width="270" height="126" rx="12" fill="#E5DFD6" opacity="0.4"/>
+  <circle cx="338" cy="220" r="16" fill="#33302b" opacity="0.08"/>
+  <text x="338" y="225" text-anchor="middle" font-size="13" font-weight="700" fill="#33302b" opacity="0.6">4</text>
+  <text x="362" y="220" font-size="13" font-weight="700" fill="#33302b">Gerechtigkeit</text>
+  <text x="362" y="236" font-size="9" font-weight="500" fill="#33302b" opacity="0.5">Fairness &amp; Gleichbehandlung</text>
+  <line x1="326" y1="248" x2="564" y2="248" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.06"/>
+  <text x="326" y="266" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">Alle Patienten haben Anspruch</text>
+  <text x="326" y="280" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">auf gleiche Versorgung —</text>
+  <text x="326" y="294" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">unabhängig von Herkunft oder Status.</text>
+
+  <!-- Bottom note -->
+  <text x="300" y="334" text-anchor="middle" font-size="9" font-weight="500" fill="#33302b" opacity="0.3">Welches Prinzip Vorrang hat, hängt von der konkreten Situation ab</text>
+</svg>

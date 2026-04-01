@@ -1,0 +1,67 @@
+<svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+  <rect width="600" height="360" fill="#fafaf9"/>
+
+  <text x="300" y="28" text-anchor="middle" font-size="10" font-weight="600" fill="#33302b" opacity="0.35" letter-spacing="0.1em">ETHIK, MORAL &amp; MENSCHENWÜRDE</text>
+
+  <!-- Left column: Ethik -->
+  <rect x="20" y="48" width="175" height="180" rx="12" fill="#E5DFD6" opacity="0.45"/>
+  <rect x="20" y="48" width="175" height="40" rx="12" fill="#7A816C" opacity="0.1"/>
+  <rect x="20" y="82" width="175" height="1" fill="#7A816C" opacity="0.12"/>
+  <text x="107" y="73" text-anchor="middle" font-size="13" font-weight="700" fill="#7A816C">Ethik</text>
+
+  <text x="36" y="104" font-size="9" font-weight="600" fill="#33302b">Reflexion</text>
+  <text x="36" y="118" font-size="8.5" font-weight="400" fill="#33302b" opacity="0.6">Wissenschaftliches</text>
+  <text x="36" y="131" font-size="8.5" font-weight="400" fill="#33302b" opacity="0.6">Nachdenken über</text>
+  <text x="36" y="144" font-size="8.5" font-weight="400" fill="#33302b" opacity="0.6">moralisches Handeln</text>
+
+  <line x1="36" y1="156" x2="180" y2="156" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.08"/>
+  <text x="36" y="174" font-size="8.5" font-weight="500" fill="#7A816C">Theoretisch</text>
+  <text x="36" y="188" font-size="8.5" font-weight="500" fill="#7A816C">Analytisch</text>
+  <text x="36" y="202" font-size="8.5" font-weight="500" fill="#7A816C">Philosophisch</text>
+  <text x="36" y="216" font-size="8.5" font-weight="500" fill="#7A816C">Übergeordnet</text>
+
+  <!-- Middle column: Moral -->
+  <rect x="213" y="48" width="175" height="180" rx="12" fill="#E5DFD6" opacity="0.45"/>
+  <rect x="213" y="48" width="175" height="40" rx="12" fill="#AE6965" opacity="0.08"/>
+  <rect x="213" y="82" width="175" height="1" fill="#AE6965" opacity="0.12"/>
+  <text x="300" y="73" text-anchor="middle" font-size="13" font-weight="700" fill="#AE6965">Moral</text>
+
+  <text x="229" y="104" font-size="9" font-weight="600" fill="#33302b">Gelebte Werte</text>
+  <text x="229" y="118" font-size="8.5" font-weight="400" fill="#33302b" opacity="0.6">Normen, Prinzipien</text>
+  <text x="229" y="131" font-size="8.5" font-weight="400" fill="#33302b" opacity="0.6">und Werte die das</text>
+  <text x="229" y="144" font-size="8.5" font-weight="400" fill="#33302b" opacity="0.6">Verhalten regeln</text>
+
+  <line x1="229" y1="156" x2="373" y2="156" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.08"/>
+  <text x="229" y="174" font-size="8.5" font-weight="500" fill="#AE6965">Praktisch</text>
+  <text x="229" y="188" font-size="8.5" font-weight="500" fill="#AE6965">Konkret</text>
+  <text x="229" y="202" font-size="8.5" font-weight="500" fill="#AE6965">Kulturell geprägt</text>
+  <text x="229" y="216" font-size="8.5" font-weight="500" fill="#AE6965">Individuell</text>
+
+  <!-- Right column: Würde -->
+  <rect x="406" y="48" width="175" height="180" rx="12" fill="#E5DFD6" opacity="0.45"/>
+  <rect x="406" y="48" width="175" height="40" rx="12" fill="#D1A9A5" opacity="0.15"/>
+  <rect x="406" y="82" width="175" height="1" fill="#D1A9A5" opacity="0.15"/>
+  <text x="493" y="73" text-anchor="middle" font-size="13" font-weight="700" fill="#A58B71">Würde</text>
+
+  <text x="422" y="104" font-size="9" font-weight="600" fill="#33302b">Unantastbarer Wert</text>
+  <text x="422" y="118" font-size="8.5" font-weight="400" fill="#33302b" opacity="0.6">Jedem Menschen eigen,</text>
+  <text x="422" y="131" font-size="8.5" font-weight="400" fill="#33302b" opacity="0.6">einfach weil er existiert.</text>
+
+  <line x1="422" y1="146" x2="566" y2="146" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.08"/>
+  <text x="422" y="164" font-size="8.5" font-weight="500" fill="#A58B71">GG Artikel 1:</text>
+  <text x="422" y="178" font-size="8.5" font-weight="600" fill="#33302b" opacity="0.7">„Die Würde des</text>
+  <text x="422" y="192" font-size="8.5" font-weight="600" fill="#33302b" opacity="0.7">Menschen ist</text>
+  <text x="422" y="206" font-size="8.5" font-weight="600" fill="#33302b" opacity="0.7">unantastbar."</text>
+
+  <!-- Bottom: Verletzlichkeit -->
+  <rect x="80" y="248" width="440" height="80" rx="12" fill="#AE6965" opacity="0.04" stroke="#AE6965" stroke-width="1"/>
+  <text x="300" y="272" text-anchor="middle" font-size="11" font-weight="700" fill="#AE6965">Verletzlichkeit (Haker)</text>
+  <line x1="300" y1="282" x2="300" y2="320" stroke="#E5DFD6" stroke-width="1"/>
+  <text x="200" y="298" text-anchor="middle" font-size="9" font-weight="500" fill="#33302b" opacity="0.6">Jeder Mensch ist</text>
+  <text x="200" y="312" text-anchor="middle" font-size="9" font-weight="600" fill="#33302b" opacity="0.7">anthropologisch verletzlich</text>
+  <text x="420" y="298" text-anchor="middle" font-size="9" font-weight="500" fill="#33302b" opacity="0.6">Pflegebedürftige sind</text>
+  <text x="420" y="312" text-anchor="middle" font-size="9" font-weight="700" fill="#AE6965">besonders verletzlich</text>
+
+  <!-- Bottom note -->
+  <text x="300" y="348" text-anchor="middle" font-size="9" font-weight="500" fill="#33302b" opacity="0.3">Pflege berührt nicht nur den Körper — sondern auch die Würde eines Menschen</text>
+</svg>

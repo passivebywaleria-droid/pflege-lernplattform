@@ -1,0 +1,74 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+  <rect width="600" height="400" fill="#fafaf9"/>
+
+  <text x="300" y="28" text-anchor="middle" font-size="10" font-weight="600" fill="#33302b" opacity="0.35" letter-spacing="0.1em">PFLEGE-CHARTA — 8 RECHTE PFLEGEBEDÜRFTIGER MENSCHEN</text>
+
+  <!-- 2x4 Grid -->
+  <!-- Row 1 -->
+  <rect x="20" y="48" width="136" height="80" rx="10" fill="#E5DFD6" opacity="0.4"/>
+  <circle cx="40" cy="68" r="10" fill="#7A816C" opacity="0.15"/>
+  <text x="40" y="72" text-anchor="middle" font-size="9" font-weight="700" fill="#7A816C">1</text>
+  <text x="56" y="70" font-size="8" font-weight="600" fill="#33302b">Selbst-</text>
+  <text x="56" y="82" font-size="8" font-weight="600" fill="#33302b">bestimmung</text>
+  <text x="30" y="104" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">Patient entscheidet</text>
+  <text x="30" y="115" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">über eigenes Leben</text>
+
+  <rect x="164" y="48" width="136" height="80" rx="10" fill="#E5DFD6" opacity="0.4"/>
+  <circle cx="184" cy="68" r="10" fill="#7A816C" opacity="0.15"/>
+  <text x="184" y="72" text-anchor="middle" font-size="9" font-weight="700" fill="#7A816C">2</text>
+  <text x="200" y="70" font-size="8" font-weight="600" fill="#33302b">Körperliche &amp;</text>
+  <text x="200" y="82" font-size="8" font-weight="600" fill="#33302b">seelische Unversehrtheit</text>
+  <text x="174" y="104" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">Schutz vor Gewalt,</text>
+  <text x="174" y="115" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">Vernachlässigung</text>
+
+  <rect x="308" y="48" width="136" height="80" rx="10" fill="#E5DFD6" opacity="0.4"/>
+  <circle cx="328" cy="68" r="10" fill="#AE6965" opacity="0.12"/>
+  <text x="328" y="72" text-anchor="middle" font-size="9" font-weight="700" fill="#AE6965">3</text>
+  <text x="344" y="76" font-size="8" font-weight="600" fill="#33302b">Privatheit</text>
+  <text x="318" y="104" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">Recht auf persönlichen</text>
+  <text x="318" y="115" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">Raum und Intimsphäre</text>
+
+  <rect x="452" y="48" width="128" height="80" rx="10" fill="#E5DFD6" opacity="0.4"/>
+  <circle cx="472" cy="68" r="10" fill="#AE6965" opacity="0.12"/>
+  <text x="472" y="72" text-anchor="middle" font-size="9" font-weight="700" fill="#AE6965">4</text>
+  <text x="488" y="76" font-size="8" font-weight="600" fill="#33302b">Pflege &amp;</text>
+  <text x="488" y="88" font-size="8" font-weight="600" fill="#33302b">Betreuung</text>
+  <text x="462" y="104" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">Anspruch auf gute</text>
+  <text x="462" y="115" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">pflegerische Versorgung</text>
+
+  <!-- Row 2 -->
+  <rect x="20" y="140" width="136" height="80" rx="10" fill="#E5DFD6" opacity="0.4"/>
+  <circle cx="40" cy="160" r="10" fill="#D1A9A5" opacity="0.2"/>
+  <text x="40" y="164" text-anchor="middle" font-size="9" font-weight="700" fill="#A58B71">5</text>
+  <text x="56" y="162" font-size="8" font-weight="600" fill="#33302b">Information &amp;</text>
+  <text x="56" y="174" font-size="8" font-weight="600" fill="#33302b">Beratung</text>
+  <text x="30" y="196" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">Aufklärung in</text>
+  <text x="30" y="207" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">verständlicher Sprache</text>
+
+  <rect x="164" y="140" width="136" height="80" rx="10" fill="#E5DFD6" opacity="0.4"/>
+  <circle cx="184" cy="160" r="10" fill="#D1A9A5" opacity="0.2"/>
+  <text x="184" y="164" text-anchor="middle" font-size="9" font-weight="700" fill="#A58B71">6</text>
+  <text x="200" y="162" font-size="8" font-weight="600" fill="#33302b">Kommunikation</text>
+  <text x="200" y="174" font-size="8" font-weight="600" fill="#33302b">&amp; Wertschätzung</text>
+  <text x="174" y="196" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">Respektvoller Umgang</text>
+  <text x="174" y="207" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">und Teilhabe</text>
+
+  <rect x="308" y="140" width="136" height="80" rx="10" fill="#E5DFD6" opacity="0.4"/>
+  <circle cx="328" cy="160" r="10" fill="#33302b" opacity="0.08"/>
+  <text x="328" y="164" text-anchor="middle" font-size="9" font-weight="700" fill="#33302b" opacity="0.5">7</text>
+  <text x="344" y="162" font-size="8" font-weight="600" fill="#33302b">Religion &amp;</text>
+  <text x="344" y="174" font-size="8" font-weight="600" fill="#33302b">Kultur</text>
+  <text x="318" y="196" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">Weltanschauung und</text>
+  <text x="318" y="207" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">Glaube werden respektiert</text>
+
+  <rect x="452" y="140" width="128" height="80" rx="10" fill="#E5DFD6" opacity="0.4"/>
+  <circle cx="472" cy="160" r="10" fill="#33302b" opacity="0.08"/>
+  <text x="472" y="164" text-anchor="middle" font-size="9" font-weight="700" fill="#33302b" opacity="0.5">8</text>
+  <text x="488" y="162" font-size="8" font-weight="600" fill="#33302b">Palliative</text>
+  <text x="488" y="174" font-size="8" font-weight="600" fill="#33302b">Begleitung</text>
+  <text x="462" y="196" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">Würdevoller Umgang</text>
+  <text x="462" y="207" font-size="7.5" font-weight="400" fill="#33302b" opacity="0.5">am Lebensende</text>
+
+  <!-- Bottom summary -->
+  <text x="300" y="248" text-anchor="middle" font-size="9" font-weight="500" fill="#33302b" opacity="0.3">Jeder pflegebedürftige Mensch hat diese 8 Rechte — uneingeschränkt</text>
+</svg>

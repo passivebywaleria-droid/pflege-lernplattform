@@ -123,7 +123,7 @@ export function StepHighlight({
             markiert
           </span>
           <span className="flex items-center gap-1">
-            <span className="w-3 h-3 rounded bg-[#FF9500]/30" /> Uebersehen
+            <span className="w-3 h-3 rounded bg-[#FF9500]/30" /> Übersehen
           </span>
         </div>
       )}
@@ -154,7 +154,7 @@ export function StepHighlight({
           onClick={() => setChecked(true)}
           className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
         >
-          Pruefen
+          Prüfen
         </button>
       ) : (
         <div className="space-y-4">

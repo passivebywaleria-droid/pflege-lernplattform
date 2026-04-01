@@ -78,7 +78,7 @@ export function StepMC({
 
       {multiSelect && !submitted && (
         <p className="text-sm text-[#6e6e73]">
-          Mehrere Antworten moeglich
+          Mehrere Antworten möglich
         </p>
       )}
 
@@ -158,7 +158,7 @@ export function StepMC({
           disabled={selected.length === 0}
           className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED] disabled:opacity-40 disabled:cursor-not-allowed"
         >
-          Pruefen
+          Prüfen
         </button>
       ) : (
         <div className="space-y-4">

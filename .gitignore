@@ -51,3 +51,11 @@ ralph.sh
 memory/ralph-logs/
 memory/ralph-status.json
 memory/ralph-signal.txt
+
+# Große Recherche-PDFs (überschreiten GitHub-Limit)
+recherche/icare/*.pdf
+recherche/**/*.pdf
+*.pdf
+
+# Worktrees
+.claude/worktrees/

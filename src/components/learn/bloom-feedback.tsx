@@ -14,22 +14,22 @@ const BLOOM_DATA: Record<
   2: {
     name: "Verstehen",
     farbe: "#0071e3",
-    erklaerung: "Du musstest etwas in eigenen Worten erklaeren koennen.",
+    erklaerung: "Du musstest etwas in eigenen Worten erklären können.",
   },
   3: {
     name: "Anwenden",
     farbe: "#FFD60A",
-    erklaerung: "Du musstest Wissen auf eine neue Situation uebertragen.",
+    erklaerung: "Du musstest Wissen auf eine neue Situation übertragen.",
   },
   4: {
     name: "Analysieren",
     farbe: "#FF9500",
-    erklaerung: "Du musstest Zusammenhaenge erkennen und zergliedern.",
+    erklaerung: "Du musstest Zusammenhänge erkennen und zergliedern.",
   },
   5: {
     name: "Bewerten",
     farbe: "#FF3B30",
-    erklaerung: "Du musstest eine Situation beurteilen und begruenden.",
+    erklaerung: "Du musstest eine Situation beurteilen und begründen.",
   },
   6: {
     name: "Erschaffen",
@@ -70,7 +70,7 @@ export function BloomFeedback({ bloomLevel, correct }: BloomFeedbackProps) {
       <p className="text-xs text-[#6e6e73]">{bloom.erklaerung}</p>
       {correct && nextBloom && (
         <p className="text-xs text-[#6e6e73] mt-1">
-          Naechste Stufe:{" "}
+          Nächste Stufe:{" "}
           <span className="font-semibold" style={{ color: nextBloom.farbe }}>
             Bloom {bloomLevel + 1}: {nextBloom.name}
           </span>

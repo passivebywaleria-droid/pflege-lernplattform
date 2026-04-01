@@ -3,7 +3,7 @@
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import type { SequencingItem, GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 
 interface StepSequencingProps {
   title: string;
@@ -128,7 +128,7 @@ export function StepSequencing({
 
               {/* Label */}
               <p className="flex-1 text-sm font-medium text-[#1d1d1f]">
-                {item.label}
+                {renderBold(item.label)}
               </p>
 
               {/* Pfeil-Buttons */}

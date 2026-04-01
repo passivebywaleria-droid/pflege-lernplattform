@@ -3,7 +3,7 @@
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 
 interface StepSortingProps {
   title: string;
@@ -76,7 +76,7 @@ export function StepSorting({
       </p>
 
       <p className="text-sm text-[#6e6e73]">
-        Nutze die Pfeile, um die Reihenfolge zu aendern.
+        Nutze die Pfeile, um die Reihenfolge zu ändern.
       </p>
 
       <div className="space-y-2">
@@ -106,7 +106,7 @@ export function StepSorting({
             </span>
 
             <p className="flex-1 text-sm font-medium text-[#1d1d1f]">
-              {items[itemIdx]}
+              {renderBold(items[itemIdx])}
             </p>
 
             {!submitted && (
@@ -136,7 +136,7 @@ export function StepSorting({
           onClick={() => setSubmitted(true)}
           className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
         >
-          Pruefen
+          Prüfen
         </button>
       ) : (
         <div className="space-y-4">

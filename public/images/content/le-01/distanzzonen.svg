@@ -1,0 +1,42 @@
+<svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+  <rect width="600" height="360" fill="#fafaf9"/>
+
+  <text x="300" y="28" text-anchor="middle" font-size="10" font-weight="600" fill="#33302b" opacity="0.35" letter-spacing="0.1em">DISTANZZONEN NACH HALL</text>
+
+  <!-- Concentric zones from outside in -->
+  <!-- Social: outermost -->
+  <ellipse cx="300" cy="200" rx="270" ry="140" fill="#E5DFD6" opacity="0.3" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.08"/>
+  <text x="554" y="200" font-size="8" font-weight="500" fill="#33302b" opacity="0.3">3,6 m+</text>
+
+  <!-- Personal -->
+  <ellipse cx="300" cy="200" rx="190" ry="100" fill="#D1A9A5" opacity="0.1" stroke="#D1A9A5" stroke-width="1"/>
+  <text x="482" y="174" font-size="8.5" font-weight="600" fill="#A58B71" opacity="0.7">50–120 cm</text>
+
+  <!-- Intimate -->
+  <ellipse cx="300" cy="200" rx="90" ry="55" fill="#AE6965" opacity="0.08" stroke="#AE6965" stroke-width="1.2"/>
+  <text x="386" y="186" font-size="8.5" font-weight="600" fill="#AE6965" opacity="0.8">bis 50 cm</text>
+
+  <!-- Person icon (center) -->
+  <circle cx="300" cy="185" r="14" fill="#7A816C" opacity="0.15"/>
+  <text x="300" y="190" text-anchor="middle" font-size="14" fill="#7A816C">👤</text>
+
+  <!-- Zone labels -->
+  <text x="300" y="156" text-anchor="middle" font-size="10" font-weight="700" fill="#AE6965">Intimdistanz</text>
+
+  <text x="170" y="124" font-size="10" font-weight="700" fill="#A58B71">Persönliche</text>
+  <text x="170" y="138" font-size="10" font-weight="700" fill="#A58B71">Distanz</text>
+
+  <text x="100" y="78" font-size="10" font-weight="600" fill="#33302b" opacity="0.4">Soziale Distanz</text>
+
+  <!-- Annotations right side -->
+  <rect x="370" y="230" width="210" height="42" rx="8" fill="#AE6965" opacity="0.06" stroke="#AE6965" stroke-width="0.8"/>
+  <text x="382" y="248" font-size="8.5" font-weight="600" fill="#AE6965">Intimdistanz in der Pflege:</text>
+  <text x="382" y="262" font-size="8" font-weight="400" fill="#33302b" opacity="0.55">Körperpflege erfordert besondere Sensibilität</text>
+
+  <rect x="370" y="282" width="210" height="42" rx="8" fill="#D1A9A5" opacity="0.1" stroke="#D1A9A5" stroke-width="0.8"/>
+  <text x="382" y="300" font-size="8.5" font-weight="600" fill="#A58B71">Persönliche Distanz:</text>
+  <text x="382" y="314" font-size="8" font-weight="400" fill="#33302b" opacity="0.55">Normale Gesprächsdistanz in der Pflege</text>
+
+  <!-- Bottom note -->
+  <text x="300" y="350" text-anchor="middle" font-size="9" font-weight="500" fill="#33302b" opacity="0.3">Pflegekräfte arbeiten regelmäßig in der Intimdistanz — das erfordert Vertrauen &amp; Respekt</text>
+</svg>

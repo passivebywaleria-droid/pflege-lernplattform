@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FeedbackText } from "./feedback-text";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 
 interface DialogOption {
   text: string;
@@ -203,7 +203,7 @@ export function StepDialog({
                   Du (Pflege)
                 </span>
               )}
-              {m.text}
+              {renderBold(m.text)}
               <span className="block text-right text-[10px] text-[#667781] mt-1">
                 {new Date().toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })}
               </span>

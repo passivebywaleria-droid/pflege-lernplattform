@@ -1,0 +1,73 @@
+<svg viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+  <rect width="600" height="440" fill="#fafaf9"/>
+
+  <text x="300" y="28" text-anchor="middle" font-size="10" font-weight="600" fill="#33302b" opacity="0.35" letter-spacing="0.1em">PFLEGEPROZESS NACH FIECHTER &amp; MEIER — 6 SCHRITTE</text>
+
+  <!-- Center circle -->
+  <circle cx="300" cy="230" r="58" fill="#E5DFD6" opacity="0.5"/>
+  <circle cx="300" cy="230" r="58" fill="none" stroke="#7A816C" stroke-width="1" opacity="0.2"/>
+  <text x="300" y="224" text-anchor="middle" font-size="12" font-weight="700" fill="#33302b">Pflege-</text>
+  <text x="300" y="240" text-anchor="middle" font-size="12" font-weight="700" fill="#33302b">prozess</text>
+
+  <!-- Step 1: Top -->
+  <rect x="232" y="48" width="136" height="60" rx="10" fill="#fafaf9" stroke="#33302b" stroke-width="0.5" stroke-opacity="0.15"/>
+  <circle cx="254" cy="70" r="11" fill="#7A816C" opacity="0.15"/>
+  <text x="254" y="74" text-anchor="middle" font-size="10" font-weight="700" fill="#7A816C">1</text>
+  <text x="274" y="70" font-size="9.5" font-weight="600" fill="#33302b">Informationen</text>
+  <text x="274" y="84" font-size="8.5" font-weight="400" fill="#33302b" opacity="0.5">sammeln</text>
+  <line x1="300" y1="108" x2="300" y2="172" stroke="#33302b" stroke-width="0.6" stroke-opacity="0.12"/>
+  <polygon points="296.5,168 300,176 303.5,168" fill="#33302b" opacity="0.12"/>
+
+  <!-- Step 2: Top-Right -->
+  <rect x="420" y="114" width="160" height="60" rx="10" fill="#fafaf9" stroke="#33302b" stroke-width="0.5" stroke-opacity="0.15"/>
+  <circle cx="442" cy="136" r="11" fill="#7A816C" opacity="0.15"/>
+  <text x="442" y="140" text-anchor="middle" font-size="10" font-weight="700" fill="#7A816C">2</text>
+  <text x="462" y="134" font-size="9.5" font-weight="600" fill="#33302b">Probleme &amp;</text>
+  <text x="462" y="148" font-size="9.5" font-weight="600" fill="#33302b">Ressourcen</text>
+  <text x="462" y="161" font-size="8.5" font-weight="400" fill="#33302b" opacity="0.5">erkennen</text>
+  <line x1="420" y1="144" x2="360" y2="200" stroke="#33302b" stroke-width="0.6" stroke-opacity="0.12"/>
+  <polygon points="357,196 358,204 364,198" fill="#33302b" opacity="0.12"/>
+
+  <!-- Step 3: Bottom-Right -->
+  <rect x="420" y="280" width="160" height="60" rx="10" fill="#fafaf9" stroke="#33302b" stroke-width="0.5" stroke-opacity="0.15"/>
+  <circle cx="442" cy="302" r="11" fill="#7A816C" opacity="0.15"/>
+  <text x="442" y="306" text-anchor="middle" font-size="10" font-weight="700" fill="#7A816C">3</text>
+  <text x="462" y="302" font-size="9.5" font-weight="600" fill="#33302b">Ziele</text>
+  <text x="462" y="316" font-size="8.5" font-weight="400" fill="#33302b" opacity="0.5">festlegen</text>
+  <line x1="420" y1="300" x2="360" y2="258" stroke="#33302b" stroke-width="0.6" stroke-opacity="0.12"/>
+  <polygon points="357,260 358,252 364,258" fill="#33302b" opacity="0.12"/>
+
+  <!-- Step 4: Bottom -->
+  <rect x="232" y="356" width="136" height="60" rx="10" fill="#7A816C" opacity="0.08" stroke="#7A816C" stroke-width="1.2"/>
+  <circle cx="254" cy="378" r="11" fill="#7A816C" opacity="0.2"/>
+  <text x="254" y="382" text-anchor="middle" font-size="10" font-weight="700" fill="#7A816C">4</text>
+  <text x="274" y="376" font-size="9.5" font-weight="700" fill="#7A816C">Maßnahmen</text>
+  <text x="274" y="390" font-size="8.5" font-weight="500" fill="#7A816C" opacity="0.7">planen</text>
+  <line x1="300" y1="356" x2="300" y2="290" stroke="#33302b" stroke-width="0.6" stroke-opacity="0.12"/>
+  <polygon points="296.5,294 300,286 303.5,294" fill="#33302b" opacity="0.12"/>
+
+  <!-- Step 5: Bottom-Left -->
+  <rect x="20" y="280" width="160" height="60" rx="10" fill="#fafaf9" stroke="#33302b" stroke-width="0.5" stroke-opacity="0.15"/>
+  <circle cx="42" cy="302" r="11" fill="#7A816C" opacity="0.15"/>
+  <text x="42" y="306" text-anchor="middle" font-size="10" font-weight="700" fill="#7A816C">5</text>
+  <text x="62" y="302" font-size="9.5" font-weight="600" fill="#33302b">Durchführung</text>
+  <text x="62" y="316" font-size="8.5" font-weight="400" fill="#33302b" opacity="0.5">der Pflege</text>
+  <line x1="180" y1="300" x2="240" y2="258" stroke="#33302b" stroke-width="0.6" stroke-opacity="0.12"/>
+  <polygon points="237,260 238,252 244,258" fill="#33302b" opacity="0.12"/>
+
+  <!-- Step 6: Top-Left -->
+  <rect x="20" y="114" width="160" height="60" rx="10" fill="#fafaf9" stroke="#33302b" stroke-width="0.5" stroke-opacity="0.15"/>
+  <circle cx="42" cy="136" r="11" fill="#7A816C" opacity="0.15"/>
+  <text x="42" y="140" text-anchor="middle" font-size="10" font-weight="700" fill="#7A816C">6</text>
+  <text x="62" y="134" font-size="9.5" font-weight="600" fill="#33302b">Evaluation</text>
+  <text x="62" y="148" font-size="8.5" font-weight="400" fill="#33302b" opacity="0.5">&amp; Anpassung</text>
+  <line x1="180" y1="144" x2="240" y2="200" stroke="#33302b" stroke-width="0.6" stroke-opacity="0.12"/>
+  <polygon points="237,196 238,204 244,198" fill="#33302b" opacity="0.12"/>
+
+  <!-- Cycle arrow: from Step 6 back to Step 1 -->
+  <path d="M100,114 Q100,48 232,58" stroke="#7A816C" stroke-width="0.8" stroke-opacity="0.2" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="228,54 236,58 228,62" fill="#7A816C" opacity="0.2"/>
+
+  <!-- Legend at bottom -->
+  <text x="300" y="432" text-anchor="middle" font-size="9" font-weight="500" fill="#A58B71" opacity="0.6">↻ Nach der Evaluation beginnt der Kreislauf erneut</text>
+</svg>

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 
 interface StepSliderProps {
   title: string;
@@ -136,7 +136,7 @@ export function StepSlider({
               Erklärung
             </p>
             <p className="text-sm text-[#1d1d1f]/70">
-              {(sprachLevel === "b1" && explanationB1) || explanation}
+              {renderBold((sprachLevel === "b1" && explanationB1) || explanation)}
             </p>
           </motion.div>
 

@@ -1,0 +1,65 @@
+<svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+  <rect width="600" height="360" fill="#fafaf9"/>
+
+  <text x="300" y="28" text-anchor="middle" font-size="10" font-weight="600" fill="#33302b" opacity="0.35" letter-spacing="0.1em">KULTURKONGRUENTE PFLEGE — LEININGER &amp; PFLEGE-CHARTA</text>
+
+  <!-- Left: Leininger Sunrise Model simplified -->
+  <rect x="20" y="48" width="270" height="260" rx="12" fill="#E5DFD6" opacity="0.4"/>
+  <rect x="20" y="48" width="270" height="42" rx="12" fill="#AE6965" opacity="0.08"/>
+  <rect x="20" y="84" width="270" height="1" fill="#AE6965" opacity="0.12"/>
+  <text x="36" y="74" font-size="11" font-weight="700" fill="#AE6965">Leininger — Sunrise-Modell</text>
+
+  <text x="36" y="106" font-size="9" font-weight="500" fill="#33302b" opacity="0.45">Kultur beeinflusst Pflege auf allen Ebenen:</text>
+
+  <!-- Sunrise layers -->
+  <path d="M155,140 Q155,120 195,115 Q235,120 235,140" fill="none" stroke="#7A816C" stroke-width="1.2" opacity="0.5"/>
+  <text x="195" y="134" text-anchor="middle" font-size="8" font-weight="600" fill="#7A816C">Weltanschauung</text>
+
+  <path d="M115,170 Q115,145 195,138 Q275,145 275,170" fill="none" stroke="#A58B71" stroke-width="1.2" opacity="0.5"/>
+  <text x="195" y="162" text-anchor="middle" font-size="8" font-weight="600" fill="#A58B71">Soziale Struktur</text>
+
+  <path d="M85,200 Q85,172 195,164 Q305,172 305,200" fill="none" stroke="#AE6965" stroke-width="1.2" opacity="0.5"/>
+  <text x="195" y="190" text-anchor="middle" font-size="8" font-weight="600" fill="#AE6965">Kulturelle Werte &amp; Normen</text>
+
+  <rect x="120" y="210" width="150" height="30" rx="8" fill="#7A816C" opacity="0.1" stroke="#7A816C" stroke-width="1"/>
+  <text x="195" y="230" text-anchor="middle" font-size="9.5" font-weight="700" fill="#7A816C">Pflege-Handlung</text>
+
+  <!-- 3 Modi -->
+  <text x="36" y="262" font-size="9" font-weight="500" fill="#33302b" opacity="0.45">3 Pflege-Modi nach Leininger:</text>
+
+  <rect x="36" y="272" width="238" height="24" rx="6" fill="#fafaf9" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.1"/>
+  <text x="48" y="289" font-size="9" font-weight="600" fill="#33302b">Bewahren — Anpassen — Umgestalten</text>
+
+  <!-- Right: Pflege-Charta Art. 7 -->
+  <rect x="310" y="48" width="270" height="260" rx="12" fill="#E5DFD6" opacity="0.4"/>
+  <rect x="310" y="48" width="270" height="42" rx="12" fill="#7A816C" opacity="0.1"/>
+  <rect x="310" y="84" width="270" height="1" fill="#7A816C" opacity="0.12"/>
+  <text x="326" y="74" font-size="11" font-weight="700" fill="#7A816C">Pflege-Charta — Artikel 7</text>
+
+  <text x="326" y="108" font-size="9.5" font-weight="600" fill="#33302b">Religion, Kultur &amp; Weltanschauung</text>
+  <text x="326" y="126" font-size="9" font-weight="400" fill="#33302b" opacity="0.5">werden respektiert und berücksichtigt</text>
+
+  <!-- Practical examples -->
+  <text x="326" y="154" font-size="9" font-weight="500" fill="#33302b" opacity="0.45">Was bedeutet das konkret?</text>
+
+  <rect x="326" y="166" width="238" height="32" rx="8" fill="#fafaf9" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.1"/>
+  <circle cx="344" cy="182" r="8" fill="#D1A9A5" opacity="0.2"/>
+  <text x="344" y="186" text-anchor="middle" font-size="8" font-weight="700" fill="#A58B71">1</text>
+  <text x="360" y="186" font-size="9" font-weight="500" fill="#33302b">Ernährungswünsche beachten</text>
+
+  <rect x="326" y="206" width="238" height="32" rx="8" fill="#fafaf9" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.1"/>
+  <circle cx="344" cy="222" r="8" fill="#D1A9A5" opacity="0.2"/>
+  <text x="344" y="226" text-anchor="middle" font-size="8" font-weight="700" fill="#A58B71">2</text>
+  <text x="360" y="226" font-size="9" font-weight="500" fill="#33302b">Religiöse Rituale ermöglichen</text>
+
+  <rect x="326" y="246" width="238" height="32" rx="8" fill="#fafaf9" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.1"/>
+  <circle cx="344" cy="262" r="8" fill="#D1A9A5" opacity="0.2"/>
+  <text x="344" y="266" text-anchor="middle" font-size="8" font-weight="700" fill="#A58B71">3</text>
+  <text x="360" y="266" font-size="9" font-weight="500" fill="#33302b">Schamgefühl respektieren</text>
+
+  <rect x="326" y="286" width="238" height="20" rx="6" fill="#AE6965" opacity="0.06"/>
+  <text x="445" y="300" text-anchor="middle" font-size="8" font-weight="600" fill="#AE6965">Gilt für ALLE — nicht nur Migranten</text>
+
+  <!-- Bottom -->
+  <text x="300" y="336" text-anchor="middle" font-size="9" font-weight="500" fill="#33302b" opacity="0.3">Kultur ist kein Hindernis — sie ist Teil der Person, die wir pflegen</text>
+</svg>

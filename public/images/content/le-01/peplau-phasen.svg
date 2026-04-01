@@ -1,0 +1,75 @@
+<svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+  <rect width="600" height="340" fill="#fafaf9"/>
+
+  <text x="300" y="28" text-anchor="middle" font-size="10" font-weight="600" fill="#33302b" opacity="0.35" letter-spacing="0.1em">INTERAKTIONSTHEORIEN — PEPLAU &amp; MELEIS</text>
+
+  <!-- Peplau Section -->
+  <text x="28" y="56" font-size="9" font-weight="600" fill="#7A816C" letter-spacing="0.05em">PEPLAU — 4 PHASEN DER THERAPEUTISCHEN BEZIEHUNG</text>
+
+  <!-- 4 connected phases -->
+  <rect x="20" y="68" width="126" height="72" rx="10" fill="#7A816C" opacity="0.06" stroke="#7A816C" stroke-width="1"/>
+  <circle cx="40" cy="88" r="10" fill="#7A816C" opacity="0.12"/>
+  <text x="40" y="92" text-anchor="middle" font-size="9" font-weight="700" fill="#7A816C">1</text>
+  <text x="56" y="90" font-size="9.5" font-weight="700" fill="#33302b">Orientierung</text>
+  <text x="28" y="112" font-size="8" font-weight="400" fill="#33302b" opacity="0.5">Patient &amp; Pflegende</text>
+  <text x="28" y="124" font-size="8" font-weight="400" fill="#33302b" opacity="0.5">lernen sich kennen</text>
+
+  <path d="M146,104 L162,104" stroke="#33302b" stroke-width="0.6" stroke-opacity="0.15"/>
+  <polygon points="159,100.5 166,104 159,107.5" fill="#33302b" opacity="0.15"/>
+
+  <rect x="166" y="68" width="126" height="72" rx="10" fill="#E5DFD6" opacity="0.4" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.1"/>
+  <circle cx="186" cy="88" r="10" fill="#7A816C" opacity="0.12"/>
+  <text x="186" y="92" text-anchor="middle" font-size="9" font-weight="700" fill="#7A816C">2</text>
+  <text x="202" y="90" font-size="9.5" font-weight="700" fill="#33302b">Identifikation</text>
+  <text x="174" y="112" font-size="8" font-weight="400" fill="#33302b" opacity="0.5">Patient erkennt</text>
+  <text x="174" y="124" font-size="8" font-weight="400" fill="#33302b" opacity="0.5">Pflegende als Hilfe</text>
+
+  <path d="M292,104 L308,104" stroke="#33302b" stroke-width="0.6" stroke-opacity="0.15"/>
+  <polygon points="305,100.5 312,104 305,107.5" fill="#33302b" opacity="0.15"/>
+
+  <rect x="312" y="68" width="126" height="72" rx="10" fill="#E5DFD6" opacity="0.4" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.1"/>
+  <circle cx="332" cy="88" r="10" fill="#7A816C" opacity="0.12"/>
+  <text x="332" y="92" text-anchor="middle" font-size="9" font-weight="700" fill="#7A816C">3</text>
+  <text x="348" y="90" font-size="9.5" font-weight="700" fill="#33302b">Nutzung</text>
+  <text x="320" y="112" font-size="8" font-weight="400" fill="#33302b" opacity="0.5">Patient nutzt</text>
+  <text x="320" y="124" font-size="8" font-weight="400" fill="#33302b" opacity="0.5">Beziehung zur Genesung</text>
+
+  <path d="M438,104 L454,104" stroke="#33302b" stroke-width="0.6" stroke-opacity="0.15"/>
+  <polygon points="451,100.5 458,104 451,107.5" fill="#33302b" opacity="0.15"/>
+
+  <rect x="458" y="68" width="126" height="72" rx="10" fill="#E5DFD6" opacity="0.4" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.1"/>
+  <circle cx="478" cy="88" r="10" fill="#7A816C" opacity="0.12"/>
+  <text x="478" y="92" text-anchor="middle" font-size="9" font-weight="700" fill="#7A816C">4</text>
+  <text x="494" y="90" font-size="9.5" font-weight="700" fill="#33302b">Ablösung</text>
+  <text x="466" y="112" font-size="8" font-weight="400" fill="#33302b" opacity="0.5">Patient wird</text>
+  <text x="466" y="124" font-size="8" font-weight="400" fill="#33302b" opacity="0.5">selbstständig</text>
+
+  <!-- Divider -->
+  <line x1="20" y1="162" x2="580" y2="162" stroke="#E5DFD6" stroke-width="1"/>
+
+  <!-- Meleis Section -->
+  <text x="28" y="186" font-size="9" font-weight="600" fill="#AE6965" letter-spacing="0.05em">MELEIS — 3 THEORIE-SCHWERPUNKTE</text>
+
+  <!-- 3 Categories -->
+  <rect x="20" y="198" width="176" height="100" rx="10" fill="#7A816C" opacity="0.06" stroke="#7A816C" stroke-width="0.8"/>
+  <text x="108" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#7A816C">Bedürfnis</text>
+  <text x="108" y="235" text-anchor="middle" font-size="9" font-weight="500" fill="#33302b" opacity="0.5">WAS braucht der Patient?</text>
+  <line x1="36" y1="248" x2="180" y2="248" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.06"/>
+  <text x="36" y="266" font-size="8" font-weight="400" fill="#33302b" opacity="0.45">Henderson, Orem,</text>
+  <text x="36" y="278" font-size="8" font-weight="400" fill="#33302b" opacity="0.45">Roper, Krohwinkel</text>
+
+  <rect x="212" y="198" width="176" height="100" rx="10" fill="#AE6965" opacity="0.05" stroke="#AE6965" stroke-width="0.8"/>
+  <text x="300" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#AE6965">Interaktion</text>
+  <text x="300" y="235" text-anchor="middle" font-size="9" font-weight="500" fill="#33302b" opacity="0.5">WIE gestalte ich die Beziehung?</text>
+  <line x1="228" y1="248" x2="372" y2="248" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.06"/>
+  <text x="228" y="266" font-size="8" font-weight="400" fill="#33302b" opacity="0.45">Peplau, King</text>
+
+  <rect x="404" y="198" width="176" height="100" rx="10" fill="#D1A9A5" opacity="0.1" stroke="#D1A9A5" stroke-width="0.8"/>
+  <text x="492" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#A58B71">Ergebnis</text>
+  <text x="492" y="235" text-anchor="middle" font-size="9" font-weight="500" fill="#33302b" opacity="0.5">WAS soll erreicht werden?</text>
+  <line x1="420" y1="248" x2="564" y2="248" stroke="#33302b" stroke-width="0.3" stroke-opacity="0.06"/>
+  <text x="420" y="266" font-size="8" font-weight="400" fill="#33302b" opacity="0.45">Roy, Rogers</text>
+
+  <!-- Bottom -->
+  <text x="300" y="326" text-anchor="middle" font-size="9" font-weight="500" fill="#33302b" opacity="0.3">Die Beziehung zum Patienten IST die Pflege — nicht nur Mittel zum Zweck</text>
+</svg>

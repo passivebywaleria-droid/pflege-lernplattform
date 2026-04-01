@@ -1,0 +1,42 @@
+<svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+  <rect width="600" height="320" fill="#fafaf9"/>
+
+  <text x="300" y="28" text-anchor="middle" font-size="10" font-weight="600" fill="#33302b" opacity="0.35" letter-spacing="0.1em">METAPARADIGMA DER PFLEGE — 4 KONZEPTE</text>
+
+  <!-- Center -->
+  <circle cx="300" cy="168" r="48" fill="#7A816C" opacity="0.06" stroke="#7A816C" stroke-width="1.5"/>
+  <text x="300" y="162" text-anchor="middle" font-size="10" font-weight="700" fill="#7A816C">Pflege-</text>
+  <text x="300" y="176" text-anchor="middle" font-size="10" font-weight="700" fill="#7A816C">theorie</text>
+
+  <!-- Lines to 4 concepts -->
+  <line x1="300" y1="120" x2="300" y2="72" stroke="#33302b" stroke-width="0.6" stroke-opacity="0.1"/>
+  <line x1="348" y1="168" x2="420" y2="168" stroke="#33302b" stroke-width="0.6" stroke-opacity="0.1"/>
+  <line x1="300" y1="216" x2="300" y2="264" stroke="#33302b" stroke-width="0.6" stroke-opacity="0.1"/>
+  <line x1="252" y1="168" x2="180" y2="168" stroke="#33302b" stroke-width="0.6" stroke-opacity="0.1"/>
+
+  <!-- Top: Person -->
+  <rect x="222" y="42" width="156" height="32" rx="10" fill="#E5DFD6" stroke="#33302b" stroke-width="0.4" stroke-opacity="0.1"/>
+  <text x="300" y="63" text-anchor="middle" font-size="11" font-weight="700" fill="#33302b">Person</text>
+
+  <!-- Right: Gesundheit -->
+  <rect x="420" y="148" width="160" height="40" rx="10" fill="#E5DFD6" stroke="#33302b" stroke-width="0.4" stroke-opacity="0.1"/>
+  <text x="500" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#33302b">Gesundheit</text>
+  <text x="500" y="180" text-anchor="middle" font-size="8" font-weight="400" fill="#33302b" opacity="0.45">Wohlbefinden, nicht nur</text>
+
+  <!-- Bottom: Umgebung -->
+  <rect x="218" y="264" width="164" height="40" rx="10" fill="#E5DFD6" stroke="#33302b" stroke-width="0.4" stroke-opacity="0.1"/>
+  <text x="300" y="281" text-anchor="middle" font-size="11" font-weight="700" fill="#33302b">Umgebung</text>
+  <text x="300" y="296" text-anchor="middle" font-size="8" font-weight="400" fill="#33302b" opacity="0.45">Familie, Kultur, Setting</text>
+
+  <!-- Left: Pflege (Handlung) -->
+  <rect x="20" y="148" width="160" height="40" rx="10" fill="#D1A9A5" opacity="0.15" stroke="#D1A9A5" stroke-width="1"/>
+  <text x="100" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#A58B71">Pflege</text>
+  <text x="100" y="180" text-anchor="middle" font-size="8" font-weight="400" fill="#33302b" opacity="0.45">Handlung, Ziele, Methoden</text>
+
+  <!-- Subtexts -->
+  <text x="300" y="48" text-anchor="middle" font-size="8" font-weight="400" fill="#33302b" opacity="0.4">Mensch mit Bedürfnissen</text>
+  <text x="500" y="192" text-anchor="middle" font-size="8" font-weight="400" fill="#33302b" opacity="0.4">Abwesenheit von Krankheit</text>
+
+  <!-- Bottom note -->
+  <text x="300" y="316" text-anchor="middle" font-size="9" font-weight="500" fill="#33302b" opacity="0.3">Jede Pflegetheoretikerin gewichtet diese 4 Konzepte anders</text>
+</svg>

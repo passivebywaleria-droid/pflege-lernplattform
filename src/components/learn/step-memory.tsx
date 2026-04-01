@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 
 interface MemoryPair {
   a: string;
@@ -89,8 +89,10 @@ export function StepMemory({
     "bg-[#FF2D55]/10 text-[#FF2D55] border-[#FF2D55]/30",
   ];
 
-  // Calculate grid columns based on pair count
-  const cols = pairs.length <= 4 ? 3 : pairs.length <= 6 ? 3 : 4;
+  // Längsten Text messen um Spaltenanzahl zu berechnen
+  const longestText = cards.reduce((max, c) => Math.max(max, c.text.length), 0);
+  // Bei langen Texten (>25 Zeichen) nur 2 Spalten, sonst 3
+  const cols = longestText > 25 ? 2 : pairs.length <= 6 ? 3 : 4;
 
   return (
     <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
@@ -109,7 +111,7 @@ export function StepMemory({
           Finde die <strong>{pairs.length} Paare</strong>.
         </p>
         <span className="text-xs text-[#6e6e73]">
-          {moves} Zuege &middot; {found.length / 2}/{pairs.length} Paare
+          {moves} Züge &middot; {found.length / 2}/{pairs.length} Paare
         </span>
       </div>
 
@@ -127,7 +129,7 @@ export function StepMemory({
               key={card.id}
               whileTap={{ scale: 0.95 }}
               onClick={() => handleFlip(card.id)}
-              className={`aspect-[3/2] rounded-2xl border-2 text-xs font-medium flex items-center justify-center p-2 text-center transition-all ${
+              className={`min-h-[4.5rem] rounded-2xl border-2 text-[11px] font-medium flex items-center justify-center p-2 text-center overflow-hidden transition-colors ${
                 isFound
                   ? `${pairColor}`
                   : isFlipped
@@ -135,29 +137,19 @@ export function StepMemory({
                     : "border-[#d2d2d7] bg-white text-[#6e6e73] hover:border-[#0071e3]/50 cursor-pointer"
               }`}
             >
-              <AnimatePresence mode="wait">
-                {isFlipped || isFound ? (
-                  <motion.span
-                    key="front"
-                    initial={{ rotateY: 90 }}
-                    animate={{ rotateY: 0 }}
-                    exit={{ rotateY: 90 }}
-                    className="leading-tight text-[#1d1d1f]"
-                  >
-                    {card.text}
-                  </motion.span>
-                ) : (
-                  <motion.span
-                    key="back"
-                    initial={{ rotateY: 90 }}
-                    animate={{ rotateY: 0 }}
-                    exit={{ rotateY: 90 }}
-                    className="text-2xl"
-                  >
-                    ?
-                  </motion.span>
-                )}
-              </AnimatePresence>
+              {isFlipped || isFound ? (
+                <motion.span
+                  key="front"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="leading-tight text-[#1d1d1f] break-words hyphens-auto"
+                  lang="de"
+                >
+                  {renderBold(card.text)}
+                </motion.span>
+              ) : (
+                <span className="text-2xl">?</span>
+              )}
             </motion.button>
           );
         })}
@@ -171,12 +163,12 @@ export function StepMemory({
             className="rounded-2xl p-4 bg-[#30D158]/10 border border-[#30D158]/30"
           >
             <p className="font-semibold text-[#1d1d1f]">
-              Alle Paare in {moves} Zuegen gefunden!{" "}
+              Alle Paare in {moves} Zügen gefunden!{" "}
               {moves <= pairs.length * 2
                 ? "Hervorragend!"
                 : moves <= pairs.length * 3
                   ? "Gut gemacht!"
-                  : "Uebung macht den Meister!"}
+                  : "Übung macht den Meister!"}
             </p>
           </motion.div>
 

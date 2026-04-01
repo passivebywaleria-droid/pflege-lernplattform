@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 
 interface StepReflectionProps {
   title: string;
@@ -85,7 +85,7 @@ export function StepReflection({
 
       <div className="rounded-2xl bg-[#AF52DE]/5 border border-[#AF52DE]/15 p-4">
         <p className="text-lg font-medium text-[#1d1d1f]">
-          {prompt}
+          {renderBold(prompt)}
         </p>
       </div>
 
@@ -153,7 +153,7 @@ export function StepReflection({
                   Feedback
                 </p>
                 <p className="text-sm text-[#1d1d1f]/80 leading-relaxed">
-                  {kiFeedback}
+                  {renderBold(kiFeedback)}
                 </p>
               </motion.div>
             )

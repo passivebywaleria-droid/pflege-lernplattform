@@ -114,6 +114,50 @@ Diese Regel gilt für ALLE Felder: title, body, fallbezug, fragetext, optionen, 
 ### 1. Exakt dem Sessionplan folgen
 Jeder Step im Sessionplan = 1 Step im Output. Gleicher Typ, gleicher Bloom, gleicher Inhalt, gleiche **Phase**. KEINE Steps hinzufügen oder weglassen.
 
+### 1c. Harte Konsistenz-Regeln (K.O.-KRITERIEN)
+
+Diese Fehler crashen den Renderer oder verfälschen die Didaktik:
+
+**K1 — Dialog MUSS interaktiv sein:**
+`stepType: "dialog"` → `question.dialogPhases` mit Optionen. NIEMALS `dialogLines`. Wenn du eine reine Erzähl-Szene willst → `stepType: "text"`.
+
+**K2 — Nested question-Struktur:**
+Slider, Comparison, Reveal, Timeline, Flipcard, Diagram, Swipe, Reflection → Daten MÜSSEN unter dem benannten Objekt stehen (`question.slider`, `question.comparison`, etc.). NIEMALS flache Felder direkt in `question`.
+
+**K3 — Summary = REFLEXION:**
+Steps mit `stepType: "summary"` MÜSSEN `themenblockPhase: "REFLEXION"` haben. Nie CHECKPOINT.
+
+**K4 — Titel-Inhalt-Konsistenz:**
+Wenn der Titel "3 Patienten" / "3 Optionen" / "4 Schritte" sagt, MUSS der Content exakt diese Anzahl haben. Comparison mit "Drei Patienten" → 3 Spalten in `columns`. Nie weniger.
+
+**K5 — Comparison-Format:**
+IMMER `question.comparison: { columns: [...], rows: [...] }`. NIEMALS `comparisonItems` mit `optionA/optionB` — das ist ein veraltetes Format das im Renderer nicht korrekt funktioniert.
+
+**K6 — Schüler-Perspektive (ABSOLUT):**
+Der User IST der Pflegeschüler. In JEDEM Dialog wählt der User Antworten aus der **Schüler-Perspektive**:
+- Der User FRAGT, ist UNSICHER, ENTSCHEIDET als Lernender
+- Der User berät NIEMANDEN, belehrt NIEMANDEN, gibt KEINE Expertentipps
+
+```
+VERBOTEN (User als Mentor/Lehrer):
+  ✗ "Das ist ganz normal. Am besten beobachtest du erstmal..." (belehrt)
+  ✗ "Komm mit, ich zeige dir die Station." (übernimmt Führung)
+  ✗ "Eine Beobachtung sollte immer systematisch sein." (doziert)
+  ✗ "Der Pflegeprozess beginnt mit der Anamnese." (erklärt wie ein Lehrer)
+
+RICHTIG (User als Schüler):
+  ✓ "Ich bin unsicher — soll ich erstmal beobachten und Fragen stellen?" (fragt)
+  ✓ "Können Sie mir die Station zeigen? Ich weiß nicht wo was ist." (bittet um Hilfe)
+  ✓ "Ich glaube, ich muss systematisch beobachten — stimmt das?" (prüft Verständnis)
+  ✓ "Beginnt der Pflegeprozess mit der Anamnese?" (fragt statt erklärt)
+```
+
+**Wer spricht was:**
+- `context`/`speaker` = Patient, Praxisanleiterin, Arzt — stellt die Situation
+- `options` = Was der SCHÜLER sagt/fragt/tut — IMMER Lernenden-Perspektive
+- `patientResponse` = Wie das Gegenüber reagiert (kann loben, korrigieren, weiterführen)
+- `feedback` = Didaktisches Feedback an den Schüler (Sandwich-Prinzip)
+
 ### 1b. Phase-spezifische Schreibregeln (KERNSTÜCK)
 
 Jeder Step hat eine `themenblockPhase` — sie bestimmt den **Ton und Zweck** des Contents.
@@ -168,6 +212,17 @@ Für JEDEN Step schreibst du `contentC1` UND `contentB1` — keine separate B1-�
 **Verboten im Body:** "Fülle die Lücken", "Sortiere die Schritte", "Wische nach rechts", "Du bist Pflegeschüler/in"
 **Verboten im Title:** Fragezeichen wenn fragetext existiert
 
+### 4b. Markdown-Bold (`**fett**`) — Wo erlaubt?
+
+`**fett**` wird vom Renderer als `<strong>` gerendert. Erlaubt in:
+- `body`, `fallbezug` — für Hervorhebung von Fachbegriffen
+- `explanation`, `explanationB1` — für Schlüsselwörter
+- `kernaussagen` (Summary) — für Kernbegriffe
+- `content` (Reveal-Cards) — für Kernbegriffe
+- `description` (Timeline) — für Kernbegriffe
+
+**NICHT erlaubt in:** `title`, `fragetext`, `label`, `statement`, `front` (Flipcard), Memory-Texte — dort nur Klartext.
+
 ### 5. Track-Zuordnung
 
 Aus dem Sessionplan übernehmen. Wenn nicht angegeben:
@@ -208,156 +263,331 @@ Rohmaterial Abschnitt C enthält 3 Patienten mit Szenen-Verlauf (S1/S2/S3). Nutz
 
 ---
 
-## Step-Typ-spezifische Regeln
+## Step-Typ-spezifische Regeln + EXAKTE question-Struktur
+
+> **KRITISCH:** Die `question`-Felder müssen EXAKT diese Namen verwenden. Andere Feldnamen → Crash im Renderer.
+> Diese Strukturen sind getestet und funktionieren mit der Lern-Engine.
 
 ### text
 - Body: Max 5 Sätze (C1), 6 Sätze (B1)
 - Fallbezug wenn Leitfall-Szene passt
 - Alle ~3. Text-Step: Bild empfohlen
+- `question: {}` — leer oder weglassen
 
 ### mc
 - 4 Optionen (S1/S2), 5 Optionen (letzte Session)
 - Genau 1 richtig (oder `multiSelect: true`)
-- Jede Option hat `explanation` + `explanationB1`
 - Distraktoren plausibel
+```typescript
+question: {
+  fragetext: "Welche Aussage ist richtig?",
+  optionen: [  // ← MUSS "optionen" heißen, NICHT "options"
+    { text: "...", isCorrect: true, explanation: "...", explanationB1: "..." },
+    { text: "...", isCorrect: false, explanation: "...", explanationB1: "..." },
+  ],
+  multiSelect: false, // optional
+}
+```
 
-### dialog
+### dialog (INTERAKTIV — mit Entscheidungen)
 - 3-5 Phasen, je 2-4 Antwortoptionen
 - Patient spricht wie im Leitfall-Dossier
 - Jede Antwort: Feedback + Score + B1-Variante
-- `speaker` bei Sprecherwechsel
+```typescript
+question: {
+  fragetext: "...",
+  patientName: "Herr Brenner",
+  dialogPhases: [  // ← MUSS "dialogPhases" heißen, NICHT "dialogLines"
+    {
+      context: "Der Patient stöhnt beim Umlagern.",
+      contextB1: "Der Patient hat Schmerzen.",
+      speaker: "Herr Brenner", // optional
+      vitals: "RR 140/90, Puls 88", // optional
+      options: [
+        { text: "...", textB1: "...", patientResponse: "...", patientResponseB1: "...", score: 3, feedback: "...", feedbackB1: "..." },
+        { text: "...", textB1: "...", patientResponse: "...", patientResponseB1: "...", score: 1, feedback: "...", feedbackB1: "..." },
+      ],
+    },
+  ],
+}
+```
+> **VERBOTEN:** `dialogLines: [{speaker, text}]` — das ist KEIN interaktiver Dialog. Wenn du eine Erzähl-Szene ohne Entscheidungen brauchst → `stepType: "text"` mit Dialog im Body verwenden.
 
 ### memory
 - 6-8 Paare (Smartphone-Display)
-- Front: Fachbegriff / Back: Definition
+- **WICHTIG: Texte KURZ halten!** Max 25 Zeichen pro Seite. Lange Fachbegriffe kürzen.
 - Aus Glossar der LE
+```typescript
+question: {
+  fragetext: "Finde die Paare:",
+  memoryPairs: [  // ← MUSS "memoryPairs" heißen, NICHT "pairs"
+    { a: "Pflege", b: "Versorgung + Betreuung" },  // ← KURZ!
+    { a: "ICN", b: "Int. Pflegeratverband" },       // ← Abkürzen!
+  ],
+}
+```
+> **VERBOTEN:** Texte >25 Zeichen (z.B. "Systematischer Problemlösungsprozess"). Auf Smartphone passen sie nicht in die Karten.
 
 ### crossword
 - 5-7 Wörter
 - Hinweise = Definitionen, leicht umformuliert
 - Nur Großbuchstaben, keine Umlaute (AE/OE/UE)
+```typescript
+question: {
+  fragetext: "Finde die Begriffe:",
+  crosswordWords: [  // ← MUSS "crosswordWords" heißen, NICHT "words"
+    { word: "DEKUBITUS", clue: "Druckgeschwür durch langes Liegen" },
+  ],
+}
+```
 
 ### timer
 - 5-6 Fragen, je 3 Optionen
 - Fragen kurz (max 1 Satz)
 - Default: 15 Sekunden
+```typescript
+question: {
+  timerQuestions: [...],
+  timeLimitSeconds: 15,
+}
+```
 
 ### truefalse
 - 4-6 Aussagen, 40-60% falsch
 - Jede mit Erklärung
-- Konkret formuliert (Zahlen, Namen)
+```typescript
+question: {
+  fragetext: "Stimmt das?",
+  trueFalseCards: [  // ← MUSS "trueFalseCards" heißen, NICHT "cards"
+    { statement: "...", statementB1: "...", isTrue: true, explanation: "...", explanationB1: "..." },
+  ],
+}
+```
 
 ### fillin
 - 1 Satz mit 1 Lücke
 - 3-4 Optionen
-- Lücke = Fachbegriff oder Zahl
+```typescript
+question: {
+  fillin: { sentence: "Der ___ ist ein Druckgeschwür.", options: ["Dekubitus", "Ulcus", "Tumor"], correctIndex: 0 },
+}
+```
 
 ### cloze
 - Text mit 3-5 Lücken ({{1}}, {{2}}, ...)
-- Je Lücke: 1 correct + 2-3 distractors
+```typescript
+question: {
+  cloze: { textWithBlanks: "Der {{1}} entsteht durch {{2}}.", blanks: [{ id: 1, correct: "Dekubitus", distractors: ["Ulcus"] }] },
+}
+```
 
 ### branching
-- Min 3 Optionen
-- Min 2 Entscheidungsebenen
-- 1 richtig, 1 plausibel-falsch, 1 offensichtlich-falsch
+- Min 3 Optionen, 1 richtig, 1 plausibel-falsch, 1 offensichtlich-falsch
+```typescript
+question: {
+  fragetext: "Wie reagierst du?",
+  branchingOptions: [  // ← MUSS "branchingOptions" heißen, NICHT "options"
+    { text: "...", feedback: "...", feedbackB1: "...", isCorrect: true },
+    { text: "...", feedback: "...", feedbackB1: "...", isCorrect: false },
+  ],
+}
+```
 
 ### freetext
-- `musterantwort` (für KI-Bewertung)
-- `bewertungskriterien` (3-5 Punkte)
-- `satzanfaengeB1` (3-4 Starter für B1)
+```typescript
+question: {
+  fragetext: "Erkläre in eigenen Worten...",
+  musterantwort: "...",
+  bewertungskriterien: ["Punkt 1", "Punkt 2"],
+  satzanfaengeB1: ["Ich denke, dass...", "Wichtig ist..."],  // ← MUSS "satzanfaengeB1", NICHT "satzanfaenge"
+}
+```
 
 ### hotspot
-- `imageUrl` PFLICHT
-- 3-6 Zonen mit x/y/radius (%)
-- `instruction` sagt was zu finden ist
+```typescript
+question: {
+  hotspot: { imageUrl: "/images/...", imageAlt: "...", instruction: "...", zones: [{ x: 50, y: 30, radius: 10, label: "..." }] },
+}
+```
 
-### labelImage (NEU)
+### labelImage
 - `imageUrl` PFLICHT (Anatomie-Bild)
-- 4-8 Labels mit Position (x/y %)
-- `mode: "drag"` (Drag & Drop) oder `"select"` (Dropdown)
-- Optional: `distractors` pro Label
+```typescript
+question: {
+  labelImage: { imageUrl: "...", imageAlt: "...", instruction: "...", labels: [...], mode: "drag" },
+}
+```
 
-### diagram (NEU)
-- `diagramType`: flowchart | mindmap | comparison | cycle
-- 4-8 Nodes mit Label (+B1)
-- Edges definieren Verbindungen
-- `interactive: true` → Nodes klickbar
-- Mindmap am Session-Start: "Das lernst du heute"
-- Flowchart für Algorithmen
-- Cycle für Kreisläufe (Pflegeprozess, Wundheilung)
+### diagram
+```typescript
+question: {
+  diagram: {  // ← Alles INNERHALB von "diagram"
+    diagramType: "cycle",
+    instruction: "Der Pflegeprozess als Kreislauf",
+    nodes: [{ id: "s1", label: "Informationssammlung" }],
+    edges: [{ from: "s1", to: "s2" }],
+    interactive: true,
+  },
+}
+```
 
 ### swipe
 - 4-8 Karten
-- `isCorrect` + `explanation`
-- B1-Varianten für Statement + Explanation
+```typescript
+question: {
+  swipe: {  // ← Alles INNERHALB von "swipe"
+    instruction: "Wische richtig oder falsch",
+    cards: [
+      { statement: "...", statementB1: "...", isCorrect: true, explanation: "...", explanationB1: "..." },
+      // ← MUSS "isCorrect" heißen, NICHT "isTrue"
+    ],
+  },
+}
+```
 
 ### flipcard
 - 4-8 Karten
-- Front: Begriff/Bild
-- Back: Definition/Erklärung + B1
+```typescript
+question: {
+  flipcard: {  // ← Alles INNERHALB von "flipcard"
+    instruction: "Tippe auf die Karten",
+    cards: [
+      { front: "Dekubitus", back: "Druckgeschwür durch...", backB1: "...", category: "Wundarten" },
+    ],
+  },
+}
+```
 
 ### reveal
 - 4-6 Karten
-- `revealMode: "sequential"` für Story-Aufbau
-- `revealMode: "free"` für Entdecken
+```typescript
+question: {
+  reveal: {  // ← Alles INNERHALB von "reveal"
+    instruction: "Entdecke die Schlüsselaufgaben:",
+    revealMode: "sequential",  // "sequential" | "free"
+    cards: [
+      { id: "r1", label: "Gesundheitsförderung", content: "Menschen dabei unterstützen...", contentB1: "...", icon: "heart-pulse" },
+      // ← MUSS "id" + "content" haben, NICHT "detail"
+    ],
+  },
+}
+```
 
 ### timeline
-- 4-8 Events mit Zeit + Titel + Beschreibung
-- `highlight: true` für aktuelle Phase
-- B1: Beschreibungen kürzer
+- 4-8 Events
+```typescript
+question: {
+  timeline: {  // ← Alles INNERHALB von "timeline"
+    instruction: "Die wichtigsten Meilensteine:",
+    events: [
+      { id: "t1", time: "1859", title: "Notes on Nursing", description: "...", descriptionB1: "...", icon: "book-open", highlight: false },
+      // ← MUSS "id" + "time" haben, NICHT "year"
+    ],
+  },
+}
+```
 
 ### comparison
-- 2-3 Spalten
-- 4-6 Zeilen mit Kriterium + Werte
-- `highlight` für wichtigste Unterschiede
+- 2-3 Spalten, 4-6 Zeilen
+```typescript
+question: {
+  comparison: {  // ← Alles INNERHALB von "comparison"
+    instruction: "Vergleiche die Definitionen:",
+    columns: [
+      { label: "ICN-Definition", icon: "globe" },
+      { label: "WHO-Definition", icon: "building-2" },
+    ],
+    rows: [
+      { aspect: "Fokus", values: ["Eigenverantwortliche Versorgung", "Potenzial verwirklichen"] },
+    ],
+  },
+}
+```
 
 ### selfrating
 - Am Anfang + Ende jeder Session
 - Gleiche Formulierung für Vorher/Nachher
+```typescript
+question: { fragetext: "Wie sicher fühlst du dich bei diesem Thema?" }
+```
+
+### confidence (Selbsteinschätzung mit Aussagen-Liste)
+- Wird als Selfrating gerendert, NICHT als Wahr/Falsch-Quiz
+- 4-6 Aussagen als Strings
+```typescript
+question: {
+  fragetext: "Wie sicher fühlst du dich bei diesen Aussagen?",
+  statements: ["Ich kann erklären was Pflege ist.", "Ich kenne den Pflegeprozess."],
+  // ← Korrekt! Wird als Selfrating mit nummerierter Liste gerendert
+}
+```
+> **NICHT** `confidenceCards` mit `isTrue/explanation` verwenden — das ist ein anderes Format (CE-05).
 
 ### summary
 - 5-7 Kernaussagen der Session
-- Verweis auf nächste Session
+```typescript
+question: {
+  summary: {  // ← Alles INNERHALB von "summary"
+    kernaussagen: ["**Pflege nach ICN** umfasst 5 Schlüsselaufgaben.", "..."],
+    reflexionRueckbezug: "Deine Selbsteinschätzung am Anfang war...",
+  },
+}
+```
 
 ### sorting
 - 4-8 Items in richtige Reihenfolge
-- Klare Ordnung (zeitlich, Priorität)
+```typescript
+question: {
+  fragetext: "Sortiere die Schritte:",
+  sortItems: ["Informationssammlung", "Probleme erkennen", "Ziele festlegen"],
+  // ← MUSS "sortItems" heißen, NICHT "items"
+}
+```
 
 ### sequencing
-- Wie sorting, aber mit optionalen Bildern
-- Prozessschritte visualisieren
+```typescript
+question: {
+  sequencing: { instruction: "...", items: [{ id: "s1", text: "...", correctPosition: 1 }] },
+}
+```
 
 ### categorize
-- 2-3 Kategorien
-- 6-10 Items
-- Eindeutig zuordenbar
-
-### confidence
-- 4-6 Aussagen
-- "Wie sicher bist du?" nach jeder
-- Kombination aus Wissen + Metakognition
+- 2-3 Kategorien, 6-10 Items
+```typescript
+question: {
+  fragetext: "Ordne zu:",
+  categories: [{ name: "Pflege nach ICN" }, { name: "Keine Pflege-Aufgabe" }],
+  categoryItems: [  // ← MUSS "categoryItems" heißen, NICHT "items"
+    { text: "Gesundheitsberatung", correctCategory: 0 },
+  ],
+}
+```
 
 ### slider
-- 1 Schätzfrage mit min/max/step
-- `tolerance` für Akzeptanzbereich
-- Einheit angeben
+```typescript
+question: {
+  slider: { instruction: "...", unit: "%", min: 0, max: 100, step: 5, correctValue: 30, tolerance: 10, explanation: "...", explanationB1: "..." },
+}
+```
 
 ### highlight
-- Text mit Fehlern zum Markieren
-- `isError: true/false` pro Segment
-- `reason` erklärt warum falsch
-
-### careplan (NEU — Pflegeprozess üben)
-- Immer am konkreten Patienten (aus Leitfall)
-- 5-Schritte-Struktur: Problem → Ziel → Maßnahme → Durchführung → Evaluation
-- `question.steps`: Array mit 5 Schritten, je `prompt` + `options` oder `freetext`
-- Bloom-Progression: Frühe LEs B2 (zuordnen), mittlere B3-B4 (formulieren), späte B5-B6 (vollständig planen)
-- Einsatz: Phase 9b (PFLEGEPLANUNG), min 1x pro Session bei CE 05 oder KB I
+```typescript
+question: {
+  highlightSegments: [{ text: "...", isError: true, reason: "..." }],
+}
+```
 
 ### reflection
-- `prompt` für offene Reflexion
-- `placeholder` als Hilfe
-- `systemPrompt` für KI-Bewertung
+```typescript
+question: {
+  reflection: {  // ← Alles INNERHALB von "reflection"
+    prompt: "Was bedeutet professionelle Pflege für dich?",
+    placeholder: "Ich denke, dass...",
+    systemPrompt: "Bewerte die Reflexion auf Tiefe und Praxisbezug.",
+  },
+}
+```
+> **VERBOTEN:** Flache Struktur `{fragetext, satzanfaenge}` → Wird vom Renderer nicht erkannt.
 
 ---
 

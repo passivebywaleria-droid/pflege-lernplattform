@@ -701,7 +701,7 @@ export default function LernenPage() {
               onClick={() => setShowLeDrawer(true)}
               className="font-medium text-[#0071e3] active:opacity-60 truncate max-w-[80px]"
             >
-              CE 05
+              {metadata?.ceId?.replace("ce-", "CE ").toUpperCase() ?? "CE"}
             </button>
             <span className="text-[#86868b]">›</span>
             <button
@@ -849,7 +849,7 @@ export default function LernenPage() {
             >
               <div className="mx-auto mb-4 h-1 w-12 rounded-full bg-[#d2d2d7]" />
               <h3 className="text-lg font-bold mb-1 text-[#1d1d1f]">
-                CE 05 — Rheumatische Erkrankungen
+                {metadata?.ceId?.replace("ce-", "CE ").toUpperCase() ?? "CE"} — {metadata?.title ?? "Lerneinheiten"}
               </h3>
               <p className="text-xs text-[#86868b] mb-4">
                 {allLektionen.filter((l) => l.status === "fertig").length}/{allLektionen.length} Lerneinheiten verfügbar
@@ -1158,20 +1158,26 @@ function StepRenderer({
         />
       );
 
-    case "reflection":
-      if (!q?.reflection) return null;
+    case "reflection": {
+      // CE-05 Format: q.reflection = {prompt, placeholder, systemPrompt}
+      // v2 Format: q.fragetext + q.satzanfaenge (flach)
+      const reflPrompt = q?.reflection?.prompt ?? q?.fragetext;
+      const reflPlaceholder = q?.reflection?.placeholder ?? (q?.satzanfaenge ? q.satzanfaenge[0] + "..." : "Schreibe deine Gedanken...");
+      const reflSystem = q?.reflection?.systemPrompt ?? "Bewerte die Reflexion auf Tiefe und Bezug zum Thema.";
+      if (!reflPrompt) return null;
       return (
         <StepReflection
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
-          prompt={q.reflection.prompt}
-          placeholder={q.reflection.placeholder}
-          systemPrompt={q.reflection.systemPrompt}
+          prompt={reflPrompt}
+          placeholder={reflPlaceholder}
+          systemPrompt={reflSystem}
           onTextSubmit={(text) => onReflection(text)}
           onNext={() => onNext()}
         />
       );
+    }
 
     case "hotspot":
       if (!q?.hotspot) return null;
@@ -1189,18 +1195,36 @@ function StepRenderer({
       );
 
     case "confidence": {
-      const confCards = q?.confidenceCards ?? q?.statements;
-      if (!confCards) return null;
-      return (
-        <StepConfidence
-          title={content.title}
-          body={content.body || undefined}
-          glossar={glossar}
-          sprachLevel={sprachLevel}
-          cards={confCards}
-          onNext={(correct) => onNext(correct)}
-        />
-      );
+      const confCards = q?.confidenceCards;
+      const confStatements = q?.statements;
+      if (confCards) {
+        // CE-05 Format: echte ConfidenceCard[] mit isTrue + explanation
+        return (
+          <StepConfidence
+            title={content.title}
+            body={content.body || undefined}
+            glossar={glossar}
+            sprachLevel={sprachLevel}
+            cards={confCards}
+            onNext={(correct) => onNext(correct)}
+          />
+        );
+      }
+      if (confStatements) {
+        // v2 Format: statements ist string[] — Selbsteinschätzung, kein Quiz
+        const stmtBody = (content.body ? content.body + "\n\n" : "") +
+          confStatements.map((s: string, i: number) => `${i + 1}. ${s}`).join("\n");
+        return (
+          <StepSelfrating
+            title={content.title}
+            body={stmtBody}
+            glossar={glossar}
+            fragetext={q?.fragetext ?? "Wie sicher fühlst du dich?"}
+            onNext={onSelfRating}
+          />
+        );
+      }
+      return null;
     }
 
     case "cloze":
@@ -1229,26 +1253,40 @@ function StepRenderer({
         />
       );
 
-    case "slider":
-      if (!q?.slider) return null;
+    case "slider": {
+      const sliderData = q?.slider ?? (q?.min != null ? q : null);
+      if (!sliderData) return null;
+      // Flat slider without correctValue → render as selfrating (self-assessment)
+      if (sliderData.correctValue == null) {
+        return (
+          <StepSelfrating
+            title={content.title}
+            body={content.body || q?.fragetext || ""}
+            fragetext={q?.fragetext || content.title}
+            glossar={glossar}
+            onNext={(rating) => onSelfRating(rating)}
+          />
+        );
+      }
       return (
         <StepSlider
           title={content.title}
           body={content.body || undefined}
           glossar={glossar}
           sprachLevel={sprachLevel}
-          instruction={q.slider.instruction}
-          unit={q.slider.unit}
-          min={q.slider.min}
-          max={q.slider.max}
-          step={q.slider.step}
-          correctValue={q.slider.correctValue}
-          tolerance={q.slider.tolerance}
-          explanation={q.slider.explanation}
-          explanationB1={q.slider.explanationB1}
+          instruction={sliderData.instruction ?? q?.fragetext ?? ""}
+          unit={sliderData.unit ?? ""}
+          min={sliderData.min}
+          max={sliderData.max}
+          step={sliderData.step}
+          correctValue={sliderData.correctValue}
+          tolerance={sliderData.tolerance ?? 1}
+          explanation={sliderData.explanation ?? ""}
+          explanationB1={sliderData.explanationB1}
           onNext={(correct) => onNext(correct)}
         />
       );
+    }
 
     case "summary": {
       const sumData = q?.summary ?? (q?.summaryPoints ? {
@@ -1463,23 +1501,51 @@ function StepRenderer({
       );
 
     case "dialog": {
-      const dlgPhases = q?.dialogPhases ?? q?.dialogLines;
-      if (!dlgPhases) return null;
-      return (
-        <StepDialog
-          title={content.title}
-          body={content.body || undefined}
-          glossar={glossar}
-          patientName={q.patientName ?? "Patient"}
-          phases={dlgPhases}
-          onNext={(correct) => onNext(correct)}
-          sprachLevel={sprachLevel}
-        />
-      );
+      const dlgPhases = q?.dialogPhases;
+      const dlgLines = q?.dialogLines;
+      if (dlgPhases) {
+        // Interaktiver Dialog (CE-05 Format mit Optionen)
+        return (
+          <StepDialog
+            title={content.title}
+            body={content.body || undefined}
+            glossar={glossar}
+            patientName={q.patientName ?? "Patient"}
+            phases={dlgPhases}
+            onNext={(correct) => onNext(correct)}
+            sprachLevel={sprachLevel}
+          />
+        );
+      }
+      if (dlgLines) {
+        // Narrativer Dialog (v2 Format — nur Sprecher + Text, keine Optionen)
+        const dialogBody = dlgLines.map((l: { speaker: string; text: string }) =>
+          `**${l.speaker}:** ${l.text}`
+        ).join("\n\n");
+        return (
+          <StepText
+            title={content.title}
+            body={dialogBody}
+            glossar={glossar}
+            fallbezug={content.fallbezug}
+            onNext={() => onNext()}
+          />
+        );
+      }
+      return null;
     }
 
     case "swipe": {
-      const swipeData = q?.swipe ?? (q?.cards ? { instruction: q?.fragetext, cards: q.cards } : null);
+      const swipeRaw = q?.swipe;
+      const swipeCards = q?.cards;
+      const swipeData = swipeRaw ?? (swipeCards ? {
+        instruction: q?.fragetext,
+        cards: swipeCards.map((c: { statement: string; isTrue?: boolean; isCorrect?: boolean; explanation: string }) => ({
+          statement: c.statement,
+          isCorrect: c.isCorrect ?? c.isTrue ?? false,
+          explanation: c.explanation,
+        })),
+      } : null);
       if (!swipeData) return null;
       return (
         <StepSwipe
@@ -1511,7 +1577,18 @@ function StepRenderer({
     }
 
     case "reveal": {
-      const revData = q?.reveal ?? (q?.revealItems ? { instruction: q?.fragetext, cards: q.revealItems, revealMode: "one-by-one" as const } : null);
+      const revRaw = q?.reveal;
+      const revItems = q?.revealItems;
+      const revData = revRaw ?? (revItems ? {
+        instruction: q?.fragetext,
+        cards: revItems.map((item: { icon?: string; label: string; detail: string }, i: number) => ({
+          id: `rev-${i}`,
+          label: item.label,
+          content: item.detail,
+          icon: item.icon,
+        })),
+        revealMode: "sequential" as const,
+      } : null);
       if (!revData) return null;
       return (
         <StepReveal
@@ -1528,7 +1605,18 @@ function StepRenderer({
     }
 
     case "timeline": {
-      const tlData = q?.timeline ?? (q?.timelineEvents ? { instruction: q?.fragetext, events: q.timelineEvents } : null);
+      const tlRaw = q?.timeline;
+      const tlEvents = q?.timelineEvents;
+      const tlData = tlRaw ?? (tlEvents ? {
+        instruction: q?.fragetext,
+        events: tlEvents.map((ev: { year?: string; title: string; description: string; icon?: string }, i: number) => ({
+          id: `tl-${i}`,
+          time: ev.year ?? "",
+          title: ev.title,
+          description: ev.description,
+          icon: ev.icon,
+        })),
+      } : null);
       if (!tlData) return null;
       return (
         <StepTimeline

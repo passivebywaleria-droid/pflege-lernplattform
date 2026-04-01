@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 import { HandDrawnIcon, ContentIcon } from "@/components/ui/hand-drawn-icon";
 interface RevealCard {
   id: string;
@@ -151,7 +151,7 @@ export function StepReveal({
                     <div className="px-4 pb-4 pt-0">
                       <div className="border-t border-[#e8e8ed] pt-3">
                         <p className="text-sm text-[#1d1d1f]/80 leading-relaxed">
-                          {content}
+                          {renderBold(content)}
                         </p>
                       </div>
                     </div>

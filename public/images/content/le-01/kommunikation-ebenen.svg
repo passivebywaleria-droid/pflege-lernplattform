@@ -1,0 +1,37 @@
+<svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+  <rect width="600" height="320" fill="#fafaf9"/>
+
+  <text x="300" y="28" text-anchor="middle" font-size="10" font-weight="600" fill="#33302b" opacity="0.35" letter-spacing="0.1em">DIE 3 EBENEN DER KOMMUNIKATION</text>
+
+  <!-- Three stacked layers -->
+
+  <!-- Layer 1: Verbal (top, smallest) -->
+  <rect x="180" y="52" width="240" height="68" rx="12" fill="#7A816C" opacity="0.08" stroke="#7A816C" stroke-width="1.2"/>
+  <text x="206" y="76" font-size="13" font-weight="700" fill="#7A816C">Verbal</text>
+  <text x="206" y="93" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">Das gesprochene &amp; geschriebene Wort</text>
+  <text x="206" y="107" font-size="9" font-weight="500" fill="#33302b" opacity="0.4">→ Der Inhalt der Nachricht</text>
+
+  <!-- Layer 2: Paraverbal (middle, wider) -->
+  <rect x="110" y="134" width="380" height="68" rx="12" fill="#AE6965" opacity="0.06" stroke="#AE6965" stroke-width="1.2"/>
+  <text x="136" y="158" font-size="13" font-weight="700" fill="#AE6965">Paraverbal</text>
+  <text x="136" y="175" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">WIE etwas gesagt wird — Tonfall, Sprechtempo, Lautstärke, Pausen</text>
+  <text x="136" y="189" font-size="9" font-weight="500" fill="#33302b" opacity="0.4">→ Verrät oft mehr als die Worte selbst</text>
+
+  <!-- Layer 3: Nonverbal (bottom, widest) -->
+  <rect x="40" y="216" width="520" height="68" rx="12" fill="#D1A9A5" opacity="0.12" stroke="#D1A9A5" stroke-width="1.2"/>
+  <text x="66" y="240" font-size="13" font-weight="700" fill="#A58B71">Nonverbal</text>
+  <text x="66" y="257" font-size="9" font-weight="400" fill="#33302b" opacity="0.6">Körpersprache, Mimik, Gestik, Blickkontakt, Körperhaltung</text>
+  <text x="66" y="271" font-size="9" font-weight="500" fill="#33302b" opacity="0.4">→ Über 60 % der Kommunikation ist nonverbal</text>
+
+  <!-- Percentage indicator on the right -->
+  <rect x="500" y="58" width="4" height="56" rx="2" fill="#7A816C" opacity="0.25"/>
+  <rect x="500" y="140" width="4" height="56" rx="2" fill="#AE6965" opacity="0.25"/>
+  <rect x="500" y="222" width="4" height="56" rx="2" fill="#D1A9A5" opacity="0.5"/>
+
+  <text x="518" y="90" font-size="8" font-weight="600" fill="#7A816C" opacity="0.7">~10 %</text>
+  <text x="518" y="172" font-size="8" font-weight="600" fill="#AE6965" opacity="0.7">~30 %</text>
+  <text x="518" y="254" font-size="8" font-weight="700" fill="#A58B71">~60 %</text>
+
+  <!-- Bottom note -->
+  <text x="300" y="308" text-anchor="middle" font-size="9" font-weight="500" fill="#33302b" opacity="0.35">Je breiter die Ebene, desto größer ihr Anteil an der Gesamtkommunikation</text>
+</svg>

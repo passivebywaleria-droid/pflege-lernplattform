@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pflege-Lernplattform — 20 Paletten: Bone/Sage/Rose (Poppins)</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Poppins', system-ui, sans-serif;
+    background: #f2eeea;
+    color: #3a3530;
+    padding: 40px 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  h1 { font-size: 26px; font-weight: 700; margin-bottom: 6px; color: #3a3530; }
+  .subtitle { color: #7a756e; font-size: 14px; margin-bottom: 28px; line-height: 1.6; max-width: 800px; }
+
+  .ref-palette {
+    background: #fff;
+    border: 1px solid #d9d3cb;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 36px;
+  }
+  .ref-palette h2 { font-size: 13px; font-weight: 600; color: #7a756e; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .ref-colors { display: flex; gap: 16px; flex-wrap: wrap; }
+  .ref-swatch { display: flex; align-items: center; gap: 10px; }
+  .ref-swatch .block {
+    width: 48px; height: 48px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.06);
+    display: flex; align-items: flex-end; justify-content: center; padding-bottom: 4px;
+  }
+  .ref-swatch .block span { font-size: 8px; color: rgba(255,255,255,0.8); font-weight: 500; text-shadow: 0 1px 2px rgba(0,0,0,0.3); }
+  .ref-swatch .info { font-size: 12px; color: #5c574f; }
+  .ref-swatch .info strong { display: block; font-size: 13px; color: #3a3530; font-weight: 600; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(640px, 1fr));
+    gap: 24px;
+  }
+
+  .palette-card {
+    background: #fff;
+    border: 1px solid #d9d3cb;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  .palette-card:hover { box-shadow: 0 8px 30px rgba(58,53,48,0.07); }
+
+  .palette-header {
+    padding: 20px 24px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .palette-number { font-size: 11px; font-weight: 600; color: #b0a99f; text-transform: uppercase; letter-spacing: 0.06em; }
+  .palette-name { font-size: 17px; font-weight: 700; margin-top: 3px; color: #3a3530; }
+  .palette-desc { font-size: 12px; color: #7a756e; margin-top: 2px; font-weight: 400; max-width: 380px; }
+
+  .palette-tags { display: flex; gap: 5px; flex-wrap: wrap; justify-content: flex-end; }
+  .tag { font-size: 10px; padding: 3px 8px; border-radius: 20px; background: #f0ebe5; color: #7a756e; font-weight: 500; }
+
+  .color-strip {
+    display: flex;
+    height: 40px;
+    margin: 0 24px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  .color-strip div { flex: 1; position: relative; cursor: pointer; transition: transform 0.15s; }
+  .color-strip div:hover { transform: scaleY(1.15); z-index: 2; }
+  .color-strip div:hover::after {
+    content: attr(data-label) " " attr(data-hex);
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 9px;
+    color: #7a756e;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+    background: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px solid #d9d3cb;
+    z-index: 10;
+  }
+
+  .preview-area {
+    margin: 28px 24px 20px;
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 210px;
+  }
+  .preview-area svg { width: 100%; height: auto; }
+
+  .palette-footer {
+    padding: 0 24px 20px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .font-sample { line-height: 1.5; }
+  .font-sample strong {
+    display: block;
+    font-size: 9px;
+    color: #b0a99f;
+    font-weight: 600;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: 1fr; }
+    body { padding: 20px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Bone, Sage & Rose — 20 Paletten</h1>
+<p class="subtitle">Basierend auf deiner Pinterest-Inspiration. Alle mit Poppins. Elfenbein/Bone als Basis, Rosa/Dusty Rose nur als Akzent. Professionell, warm, natürlich.</p>
+
+<div class="ref-palette">
+  <h2>Pinterest-Referenz</h2>
+  <div class="ref-colors">
+    <div class="ref-swatch">
+      <div class="block" style="background:#7A816C"><span>#7A816C</span></div>
+      <div class="info"><strong>Dried Sage</strong>Gedämpftes Salbeigrün</div>
+    </div>
+    <div class="ref-swatch">
+      <div class="block" style="background:#D1A9A5"><span>#D1A9A5</span></div>
+      <div class="info"><strong>Dusty Rose</strong>Staubiges Rosa</div>
+    </div>
+    <div class="ref-swatch">
+      <div class="block" style="background:#AE6965"><span>#AE6965</span></div>
+      <div class="info"><strong>Faded Rust</strong>Verblasstes Rost</div>
+    </div>
+    <div class="ref-swatch">
+      <div class="block" style="background:#A58B71"><span>#A58B71</span></div>
+      <div class="info"><strong>Warm Oak</strong>Warme Eiche</div>
+    </div>
+    <div class="ref-swatch">
+      <div class="block" style="background:#E5DFD6"><span>#E5DFD6</span></div>
+      <div class="info"><strong>Bone</strong>Knochen/Elfenbein</div>
+    </div>
+  </div>
+</div>
+
+<div class="grid" id="palettes"></div>
+
+<script>
+// Pinterest reference colors
+const REF = {
+  sage: "#7A816C",
+  rose: "#D1A9A5",
+  rust: "#AE6965",
+  oak: "#A58B71",
+  bone: "#E5DFD6"
+};
+
+const palettes = [
+  // === GRUPPE 1: Originalgetreu ===
+  {
+    name: "Pinterest Original",
+    desc: "Exakte Farben aus dem Pin — 1:1 übernommen",
+    tags: ["Original", "Referenz"],
+    colors: [
+      { hex: "#E5DFD6", label: "Bone", role: "Basis" },
+      { hex: "#3a3530", label: "Espresso", role: "Text" },
+      { hex: "#7A816C", label: "Dried Sage", role: "Primär" },
+      { hex: "#D1A9A5", label: "Dusty Rose", role: "Akzent" },
+      { hex: "#AE6965", label: "Faded Rust", role: "Akzent 2" },
+      { hex: "#A58B71", label: "Warm Oak", role: "Sekundär" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "Erfolg" },
+      { hex: "#b45309", label: "Warnung", role: "Warnung" }
+    ]
+  },
+  {
+    name: "Pinterest Aufgehellt",
+    desc: "Gleiche Farben, aber heller und luftiger",
+    tags: ["Hell", "Luftig", "Frisch"],
+    colors: [
+      { hex: "#F2EDE6", label: "Bone Hell", role: "Basis" },
+      { hex: "#44403c", label: "Warmgrau", role: "Text" },
+      { hex: "#8E9580", label: "Sage Hell", role: "Primär" },
+      { hex: "#DBBFBC", label: "Rose Hell", role: "Akzent" },
+      { hex: "#C08380", label: "Rust Hell", role: "Akzent 2" },
+      { hex: "#B89F88", label: "Oak Hell", role: "Sekundär" },
+      { hex: "#37825c", label: "Erfolg", role: "Erfolg" },
+      { hex: "#c67b08", label: "Warnung", role: "Warnung" }
+    ]
+  },
+  {
+    name: "Pinterest Kräftig",
+    desc: "Gleiche Töne, aber gesättigter und kontrastreicher",
+    tags: ["Kräftig", "Kontrast", "Mutig"],
+    colors: [
+      { hex: "#E5DFD6", label: "Bone", role: "Basis" },
+      { hex: "#292524", label: "Dunkelbraun", role: "Text" },
+      { hex: "#5F6B4E", label: "Sage Kräftig", role: "Primär" },
+      { hex: "#C4908A", label: "Rose Kräftig", role: "Akzent" },
+      { hex: "#9A504C", label: "Rust Kräftig", role: "Akzent 2" },
+      { hex: "#8B7259", label: "Oak Kräftig", role: "Sekundär" },
+      { hex: "#166534", label: "Erfolg", role: "Erfolg" },
+      { hex: "#92400e", label: "Warnung", role: "Warnung" }
+    ]
+  },
+
+  // === GRUPPE 2: Sage-dominant ===
+  {
+    name: "Sage & Bone",
+    desc: "Salbei als Hauptfarbe, Rose nur als feiner Akzent",
+    tags: ["Sage-Fokus", "Ruhig", "Natur"],
+    colors: [
+      { hex: "#EDEAE3", label: "Warmes Weiß", role: "Basis" },
+      { hex: "#3a3530", label: "Espresso", role: "Text" },
+      { hex: "#6B7360", label: "Sage Mittel", role: "Primär" },
+      { hex: "#8E9580", label: "Sage Hell", role: "Sekundär" },
+      { hex: "#D1A9A5", label: "Dusty Rose", role: "Akzent" },
+      { hex: "#C8C2B8", label: "Kiesel", role: "Neutral" },
+      { hex: "#3d7a55", label: "Erfolg", role: "Erfolg" },
+      { hex: "#a16207", label: "Warnung", role: "Warnung" }
+    ]
+  },
+  {
+    name: "Botanischer Garten",
+    desc: "Sage-Variationen mit Bone — wie ein Gewächshaus",
+    tags: ["Botanisch", "Grün-Fokus", "Professionell"],
+    colors: [
+      { hex: "#EBE8E1", label: "Pergament", role: "Basis" },
+      { hex: "#2d2a26", label: "Tiefschwarz", role: "Text" },
+      { hex: "#5C6650", label: "Forest Sage", role: "Primär" },
+      { hex: "#7A816C", label: "Dried Sage", role: "Sekundär" },
+      { hex: "#A9AE9B", label: "Sage Pastell", role: "Tertiär" },
+      { hex: "#D1A9A5", label: "Dusty Rose", role: "Akzent" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "Erfolg" },
+      { hex: "#b45309", label: "Warnung", role: "Warnung" }
+    ]
+  },
+
+  // === GRUPPE 3: Rose-dominant ===
+  {
+    name: "Rose & Ivory",
+    desc: "Dusty Rose führt, Sage als Komplementär",
+    tags: ["Rose-Fokus", "Elegant", "Feminin"],
+    colors: [
+      { hex: "#F0EAE3", label: "Ivory Warm", role: "Basis" },
+      { hex: "#3a3530", label: "Espresso", role: "Text" },
+      { hex: "#C49A96", label: "Rose Mittel", role: "Primär" },
+      { hex: "#AE6965", label: "Faded Rust", role: "Sekundär" },
+      { hex: "#7A816C", label: "Dried Sage", role: "Akzent" },
+      { hex: "#D5CDC3", label: "Bone Dunkel", role: "Neutral" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "Erfolg" },
+      { hex: "#a16207", label: "Warnung", role: "Warnung" }
+    ]
+  },
+  {
+    name: "Rosenquarz",
+    desc: "Sanfte Rosétöne auf cremiger Basis — wie geschliffener Quarz",
+    tags: ["Rosé-Spektrum", "Sanft", "Edel"],
+    colors: [
+      { hex: "#F5EDE8", label: "Rosécreme", role: "Basis" },
+      { hex: "#3d3329", label: "Kakao", role: "Text" },
+      { hex: "#D1A9A5", label: "Dusty Rose", role: "Primär" },
+      { hex: "#C08380", label: "Rose Warm", role: "Sekundär" },
+      { hex: "#E5C5C1", label: "Rose Pastell", role: "Tertiär" },
+      { hex: "#7A816C", label: "Dried Sage", role: "Akzent" },
+      { hex: "#37825c", label: "Erfolg", role: "Erfolg" },
+      { hex: "#c67b08", label: "Warnung", role: "Warnung" }
+    ]
+  },
+
+  // === GRUPPE 4: Oak-dominant ===
+  {
+    name: "Eiche & Leinen",
+    desc: "Warm Oak als Leitfarbe, erdige Professionalität",
+    tags: ["Oak-Fokus", "Erdig", "Solide"],
+    colors: [
+      { hex: "#EDE8E0", label: "Leinen", role: "Basis" },
+      { hex: "#33302b", label: "Anthrazit", role: "Text" },
+      { hex: "#A58B71", label: "Warm Oak", role: "Primär" },
+      { hex: "#8B7259", label: "Oak Dunkel", role: "Sekundär" },
+      { hex: "#D1A9A5", label: "Dusty Rose", role: "Akzent" },
+      { hex: "#7A816C", label: "Dried Sage", role: "Akzent 2" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "Erfolg" },
+      { hex: "#92400e", label: "Warnung", role: "Warnung" }
+    ]
+  },
+  {
+    name: "Holz & Stein",
+    desc: "Warme Holztöne treffen kühlen Stein — wie ein Spa",
+    tags: ["Spa", "Materialmix", "Premium"],
+    colors: [
+      { hex: "#E8E3DB", label: "Sandstein", role: "Basis" },
+      { hex: "#2d2a26", label: "Kohle", role: "Text" },
+      { hex: "#96795E", label: "Nussbaum", role: "Primär" },
+      { hex: "#A58B71", label: "Warm Oak", role: "Sekundär" },
+      { hex: "#AE6965", label: "Faded Rust", role: "Akzent" },
+      { hex: "#9A9B8E", label: "Kühler Stein", role: "Neutral" },
+      { hex: "#166534", label: "Erfolg", role: "Erfolg" },
+      { hex: "#b45309", label: "Warnung", role: "Warnung" }
+    ]
+  },
+
+  // === GRUPPE 5: Kontrastvarianten ===
+  {
+    name: "High Contrast Sage",
+    desc: "Dunkler Sage-Hintergrund + helle Elemente, für Abwechslung",
+    tags: ["Dark Mode", "Kontrast", "Mutig"],
+    colors: [
+      { hex: "#F5F1EB", label: "Creme", role: "Basis" },
+      { hex: "#2B2E27", label: "Dark Sage", role: "Text" },
+      { hex: "#5C6650", label: "Deep Sage", role: "Primär" },
+      { hex: "#D1A9A5", label: "Dusty Rose", role: "Akzent" },
+      { hex: "#AE6965", label: "Faded Rust", role: "Akzent 2" },
+      { hex: "#DDD7CE", label: "Bone Mittel", role: "Neutral" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "Erfolg" },
+      { hex: "#a16207", label: "Warnung", role: "Warnung" }
+    ]
+  },
+  {
+    name: "Rust & Cream",
+    desc: "Faded Rust als Hero-Farbe, kraftvoll aber warm",
+    tags: ["Rust-Fokus", "Kraftvoll", "Wärme"],
+    colors: [
+      { hex: "#F0EBE3", label: "Elfenbein", role: "Basis" },
+      { hex: "#362D27", label: "Rostbraun", role: "Text" },
+      { hex: "#AE6965", label: "Faded Rust", role: "Primär" },
+      { hex: "#9A504C", label: "Deep Rust", role: "Sekundär" },
+      { hex: "#7A816C", label: "Dried Sage", role: "Akzent" },
+      { hex: "#D5CDC3", label: "Bone", role: "Neutral" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "Erfolg" },
+      { hex: "#ca8a04", label: "Warnung", role: "Warnung" }
+    ]
+  },
+
+  // === GRUPPE 6: Professionell / Corporate ===
+  {
+    name: "Kanzlei",
+    desc: "Sehr gedämpft, fast neutral — maximale Seriosität",
+    tags: ["Ultra-Seriös", "Gedämpft", "Corporate"],
+    colors: [
+      { hex: "#E9E5DE", label: "Pergament", role: "Basis" },
+      { hex: "#1c1917", label: "Fast Schwarz", role: "Text" },
+      { hex: "#6B6B61", label: "Sage Grau", role: "Primär" },
+      { hex: "#B8A19D", label: "Rose Grau", role: "Akzent" },
+      { hex: "#8E8478", label: "Oak Grau", role: "Sekundär" },
+      { hex: "#D1CBC2", label: "Kiesel", role: "Neutral" },
+      { hex: "#14532d", label: "Erfolg", role: "Erfolg" },
+      { hex: "#78350f", label: "Warnung", role: "Warnung" }
+    ]
+  },
+  {
+    name: "Chefarzt-Büro",
+    desc: "Seriös wie ein Ärztebüro, Bone mit minimalem Farbakzent",
+    tags: ["Medizin", "Seriös", "Minimal"],
+    colors: [
+      { hex: "#ECEAE4", label: "Praxis-Weiß", role: "Basis" },
+      { hex: "#292524", label: "Dunkelbraun", role: "Text" },
+      { hex: "#7A816C", label: "Dried Sage", role: "Primär" },
+      { hex: "#A58B71", label: "Warm Oak", role: "Sekundär" },
+      { hex: "#C49A96", label: "Rose Dezent", role: "Akzent" },
+      { hex: "#D3CEC6", label: "Kühles Bone", role: "Neutral" },
+      { hex: "#166534", label: "Erfolg", role: "Erfolg" },
+      { hex: "#b45309", label: "Warnung", role: "Warnung" }
+    ]
+  },
+  {
+    name: "Consulting",
+    desc: "Business-Premium: Sage als Trust-Farbe, Rose als Highlight",
+    tags: ["Business", "Trust", "Premium"],
+    colors: [
+      { hex: "#EFEBE4", label: "Executive Bone", role: "Basis" },
+      { hex: "#1c1917", label: "Schwarz", role: "Text" },
+      { hex: "#5C6650", label: "Deep Sage", role: "Primär" },
+      { hex: "#7A816C", label: "Dried Sage", role: "Sekundär" },
+      { hex: "#AE6965", label: "Faded Rust", role: "Akzent" },
+      { hex: "#C8C2B8", label: "Silber-Bone", role: "Neutral" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "Erfolg" },
+      { hex: "#92400e", label: "Warnung", role: "Warnung" }
+    ]
+  },
+
+  // === GRUPPE 7: Weich & Einladend ===
+  {
+    name: "Morgenröte",
+    desc: "Wie ein warmer Morgen — sanfte Rosé-Töne dominieren zart",
+    tags: ["Sanft", "Morgen", "Einladend"],
+    colors: [
+      { hex: "#F3EDE6", label: "Morgenlicht", role: "Basis" },
+      { hex: "#44403c", label: "Warmgrau", role: "Text" },
+      { hex: "#DBBFBC", label: "Morgenrose", role: "Primär" },
+      { hex: "#D1A9A5", label: "Dusty Rose", role: "Sekundär" },
+      { hex: "#8E9580", label: "Sage Hell", role: "Akzent" },
+      { hex: "#E0D9D0", label: "Bone Warm", role: "Neutral" },
+      { hex: "#37825c", label: "Erfolg", role: "Erfolg" },
+      { hex: "#c67b08", label: "Warnung", role: "Warnung" }
+    ]
+  },
+  {
+    name: "Teezeremonie",
+    desc: "Warme Erdtöne wie grüner Tee in Keramiktasse",
+    tags: ["Zen", "Wabi-Sabi", "Ruhe"],
+    colors: [
+      { hex: "#EAE5DC", label: "Ton", role: "Basis" },
+      { hex: "#33302b", label: "Tiefschwarz", role: "Text" },
+      { hex: "#7A816C", label: "Matcha", role: "Primär" },
+      { hex: "#A58B71", label: "Keramik", role: "Sekundär" },
+      { hex: "#C49A96", label: "Terrakotta", role: "Akzent" },
+      { hex: "#D5CFC6", label: "Asche", role: "Neutral" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "Erfolg" },
+      { hex: "#a16207", label: "Warnung", role: "Warnung" }
+    ]
+  },
+
+  // === GRUPPE 8: Experimentell ===
+  {
+    name: "Sage + Blaugrau",
+    desc: "Sage erweitert um kühles Blaugrau — modern und frisch",
+    tags: ["Kühl", "Modern", "Experiment"],
+    colors: [
+      { hex: "#EDEAE4", label: "Bone Kühl", role: "Basis" },
+      { hex: "#2d2a26", label: "Kohle", role: "Text" },
+      { hex: "#7A816C", label: "Dried Sage", role: "Primär" },
+      { hex: "#6B7B8D", label: "Blaugrau", role: "Sekundär" },
+      { hex: "#D1A9A5", label: "Dusty Rose", role: "Akzent" },
+      { hex: "#CDD1CC", label: "Sage-Grau", role: "Neutral" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "Erfolg" },
+      { hex: "#b45309", label: "Warnung", role: "Warnung" }
+    ]
+  },
+  {
+    name: "Rose + Aubergine",
+    desc: "Dusty Rose verlängert in tiefes Aubergine — dramatisch",
+    tags: ["Dramatisch", "Tiefe", "Experiment"],
+    colors: [
+      { hex: "#F0EBE4", label: "Creme", role: "Basis" },
+      { hex: "#2B2028", label: "Aubergine-Text", role: "Text" },
+      { hex: "#D1A9A5", label: "Dusty Rose", role: "Primär" },
+      { hex: "#7D4F5A", label: "Aubergine", role: "Sekundär" },
+      { hex: "#7A816C", label: "Dried Sage", role: "Akzent" },
+      { hex: "#D8D2C9", label: "Bone", role: "Neutral" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "Erfolg" },
+      { hex: "#a16207", label: "Warnung", role: "Warnung" }
+    ]
+  },
+  {
+    name: "Goldene Stunde",
+    desc: "Warm Oak wird zur goldenen Hauptfarbe — wie Sonnenuntergang",
+    tags: ["Golden", "Sonnenuntergang", "Experiment"],
+    colors: [
+      { hex: "#F2ECE2", label: "Goldenes Weiß", role: "Basis" },
+      { hex: "#3a3127", label: "Dunkelbraun", role: "Text" },
+      { hex: "#B8965A", label: "Gold", role: "Primär" },
+      { hex: "#A58B71", label: "Warm Oak", role: "Sekundär" },
+      { hex: "#AE6965", label: "Faded Rust", role: "Akzent" },
+      { hex: "#7A816C", label: "Dried Sage", role: "Akzent 2" },
+      { hex: "#2d6a4f", label: "Erfolg", role: "Erfolg" },
+      { hex: "#92400e", label: "Warnung", role: "Warnung" }
+    ]
+  }
+];
+
+function createDiagramSVG(p) {
+  const c = p.colors;
+  const bg = c[0].hex;
+  const text = c[1].hex;
+  const prim = c[2].hex;
+  const sec = c[3].hex;
+  const akz = c[4].hex;
+  const neutral = c[5].hex;
+  const suc = c[6].hex;
+
+  return `<svg viewBox="0 0 580 210" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Poppins', sans-serif;">
+    <rect width="580" height="210" rx="10" fill="${bg}"/>
+
+    <!-- Header -->
+    <text x="24" y="22" font-size="9" font-weight="600" fill="${text}" opacity="0.4" letter-spacing="0.08em">PFLEGEPROZESS — ÜBERSICHT</text>
+
+    <!-- Flowchart -->
+    <rect x="20" y="34" width="106" height="40" rx="8" fill="${neutral}" stroke="${text}" stroke-width="0.4" opacity="0.8"/>
+    <text x="73" y="58" text-anchor="middle" font-size="10" font-weight="600" fill="${text}">Einschätzung</text>
+
+    <line x1="126" y1="54" x2="143" y2="54" stroke="${text}" stroke-width="0.8" opacity="0.25"/>
+    <polygon points="141,50.5 148,54 141,57.5" fill="${text}" opacity="0.25"/>
+
+    <rect x="148" y="34" width="88" height="40" rx="8" fill="${neutral}" stroke="${text}" stroke-width="0.4" opacity="0.8"/>
+    <text x="192" y="58" text-anchor="middle" font-size="10" font-weight="600" fill="${text}">Planung</text>
+
+    <line x1="236" y1="54" x2="253" y2="54" stroke="${text}" stroke-width="0.8" opacity="0.25"/>
+    <polygon points="251,50.5 258,54 251,57.5" fill="${text}" opacity="0.25"/>
+
+    <!-- Highlighted box -->
+    <rect x="258" y="32" width="118" height="44" rx="9" fill="${prim}" opacity="0.12" stroke="${prim}" stroke-width="1.5"/>
+    <text x="317" y="58" text-anchor="middle" font-size="10" font-weight="700" fill="${prim}">Durchführung</text>
+
+    <line x1="376" y1="54" x2="393" y2="54" stroke="${text}" stroke-width="0.8" opacity="0.25"/>
+    <polygon points="391,50.5 398,54 391,57.5" fill="${text}" opacity="0.25"/>
+
+    <rect x="398" y="34" width="100" height="40" rx="8" fill="${neutral}" stroke="${text}" stroke-width="0.4" opacity="0.8"/>
+    <text x="448" y="58" text-anchor="middle" font-size="10" font-weight="600" fill="${text}">Evaluation</text>
+
+    <!-- Return arrow -->
+    <path d="M498,74 L498,82 Q498,86 494,86 L74,86 Q70,86 70,82 L70,74" fill="none" stroke="${text}" stroke-width="0.6" opacity="0.15" stroke-dasharray="3,3"/>
+    <polygon points="67,76 70,70 73,76" fill="${text}" opacity="0.15"/>
+
+    <!-- Divider -->
+    <line x1="20" y1="96" x2="560" y2="96" stroke="${neutral}" stroke-width="0.8"/>
+
+    <!-- Left: Bar chart with labels -->
+    <text x="24" y="114" font-size="8" font-weight="600" fill="${text}" opacity="0.35" letter-spacing="0.08em">LERNFORTSCHRITT</text>
+
+    <!-- Bars -->
+    <rect x="24" y="170" width="46" height="28" rx="4" fill="${neutral}"/>
+    <text x="47" y="188" text-anchor="middle" font-size="7.5" fill="${text}" opacity="0.5" font-weight="500">CE 01</text>
+    <text x="47" y="166" text-anchor="middle" font-size="8" fill="${text}" opacity="0.4" font-weight="500">42%</text>
+
+    <rect x="78" y="150" width="46" height="48" rx="4" fill="${sec}" opacity="0.25"/>
+    <text x="101" y="188" text-anchor="middle" font-size="7.5" fill="${sec}" font-weight="600">CE 02</text>
+    <text x="101" y="146" text-anchor="middle" font-size="8" fill="${sec}" font-weight="500">68%</text>
+
+    <rect x="132" y="128" width="46" height="70" rx="4" fill="${prim}" opacity="0.2" stroke="${prim}" stroke-width="1"/>
+    <text x="155" y="188" text-anchor="middle" font-size="7.5" fill="${prim}" font-weight="700">CE 03</text>
+    <text x="155" y="124" text-anchor="middle" font-size="8" fill="${prim}" font-weight="600">91%</text>
+
+    <rect x="186" y="162" width="46" height="36" rx="4" fill="${neutral}"/>
+    <text x="209" y="188" text-anchor="middle" font-size="7.5" fill="${text}" opacity="0.5" font-weight="500">CE 04</text>
+    <text x="209" y="158" text-anchor="middle" font-size="8" fill="${text}" opacity="0.4" font-weight="500">55%</text>
+
+    <!-- Right: Student card -->
+    <rect x="264" y="106" width="296" height="96" rx="10" fill="white" stroke="${neutral}" stroke-width="0.8"/>
+
+    <!-- Student avatar circle -->
+    <circle cx="290" cy="138" r="16" fill="${prim}" opacity="0.12"/>
+    <text x="290" y="143" text-anchor="middle" font-size="14" fill="${prim}">Y</text>
+
+    <text x="314" y="130" font-size="12" font-weight="700" fill="${text}">Yasemin Demirci</text>
+    <text x="314" y="144" font-size="9" font-weight="400" fill="${text}" opacity="0.5">1. Ausbildungsdrittel — CE 01</text>
+
+    <!-- Two metric rows -->
+    <line x1="278" y1="154" x2="546" y2="154" stroke="${neutral}" stroke-width="0.5"/>
+
+    <text x="278" y="170" font-size="9" font-weight="500" fill="${text}" opacity="0.5">Sprache</text>
+    <rect x="340" y="163" width="100" height="6" rx="3" fill="${neutral}"/>
+    <rect x="340" y="163" width="62" height="6" rx="3" fill="${prim}"/>
+    <text x="450" y="170" font-size="9" font-weight="600" fill="${prim}">B2</text>
+
+    <text x="278" y="188" font-size="9" font-weight="500" fill="${text}" opacity="0.5">Fachwissen</text>
+    <rect x="340" y="181" width="100" height="6" rx="3" fill="${neutral}"/>
+    <rect x="340" y="181" width="78" height="6" rx="3" fill="${akz}"/>
+    <text x="450" y="188" font-size="9" font-weight="600" fill="${akz}">Level 3</text>
+  </svg>`;
+}
+
+const container = document.getElementById('palettes');
+
+palettes.forEach((p, i) => {
+  const card = document.createElement('div');
+  card.className = 'palette-card';
+
+  const stripHTML = p.colors.map(c =>
+    `<div style="background:${c.hex}" data-hex="${c.hex}" data-label="${c.label}"></div>`
+  ).join('');
+  const tagsHTML = p.tags.map(t => `<span class="tag">${t}</span>`).join('');
+
+  const prim = p.colors[2].hex;
+  const akz = p.colors[4] ? p.colors[4].hex : p.colors[3].hex;
+  const textC = p.colors[1].hex;
+
+  card.innerHTML = `
+    <div class="palette-header">
+      <div>
+        <div class="palette-number">Palette ${String(i+1).padStart(2,'0')}</div>
+        <div class="palette-name">${p.name}</div>
+        <div class="palette-desc">${p.desc}</div>
+      </div>
+      <div class="palette-tags">${tagsHTML}</div>
+    </div>
+    <div class="color-strip">${stripHTML}</div>
+    <div class="preview-area" style="background:${p.colors[0].hex}">
+      ${createDiagramSVG(p)}
+    </div>
+    <div class="palette-footer">
+      <div class="font-sample">
+        <strong>Überschrift</strong>
+        <span style="font-size:17px;font-weight:700;color:${textC}">Pflegeprozess — 6 Schritte</span>
+      </div>
+      <div class="font-sample">
+        <strong>Fließtext</strong>
+        <span style="font-size:13px;font-weight:400;color:${textC}">Der Dekubitus entsteht durch anhaltenden Druck auf die Haut.</span>
+      </div>
+      <div class="font-sample">
+        <strong>Primär-Label</strong>
+        <span style="font-size:12px;font-weight:600;color:${prim}">Stadium I — Nicht wegdrückbare Rötung</span>
+      </div>
+      <div class="font-sample">
+        <strong>Akzent-Label</strong>
+        <span style="font-size:12px;font-weight:600;color:${akz}">Prophylaxe — Lagerungswechsel</span>
+      </div>
+    </div>
+  `;
+
+  container.appendChild(card);
+});
+</script>
+
+</body>
+</html>

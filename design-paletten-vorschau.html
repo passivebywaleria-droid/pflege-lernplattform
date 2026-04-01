@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pflege-Lernplattform — 20 Farbpaletten-Vorschläge für SVG-Diagramme</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Nunito:wght@400;600;700&family=Outfit:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700&family=Work+Sans:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Atkinson+Hyperlegible:wght@400;700&family=Lexend:wght@400;500;600;700&family=Figtree:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    padding: 40px 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    color: #64748b;
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .current-info {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 40px;
+  }
+
+  .current-info h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #475569;
+  }
+
+  .current-colors {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .current-swatch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #64748b;
+  }
+
+  .current-swatch .dot {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(640px, 1fr));
+    gap: 24px;
+  }
+
+  .palette-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+
+  .palette-card:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  }
+
+  .palette-header {
+    padding: 20px 24px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .palette-number {
+    font-size: 12px;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .palette-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 4px;
+  }
+
+  .palette-font {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 2px;
+  }
+
+  .palette-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 20px;
+    background: #f1f5f9;
+    color: #64748b;
+    font-weight: 500;
+  }
+
+  .color-strip {
+    display: flex;
+    height: 48px;
+    margin: 0 24px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+
+  .color-strip div {
+    flex: 1;
+    position: relative;
+  }
+
+  .color-strip div:hover::after {
+    content: attr(data-hex);
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: #64748b;
+    font-family: monospace;
+    white-space: nowrap;
+    background: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+    z-index: 10;
+  }
+
+  .color-labels {
+    display: flex;
+    margin: 6px 24px 0;
+    gap: 0;
+  }
+
+  .color-labels span {
+    flex: 1;
+    font-size: 10px;
+    color: #94a3b8;
+    text-align: center;
+  }
+
+  .preview-area {
+    margin: 24px;
+    padding: 24px;
+    border-radius: 12px;
+    min-height: 200px;
+  }
+
+  .preview-area svg {
+    width: 100%;
+    height: auto;
+  }
+
+  .palette-footer {
+    padding: 0 24px 20px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .font-sample {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.5;
+  }
+
+  .font-sample strong {
+    display: block;
+    font-size: 11px;
+    color: #94a3b8;
+    font-weight: 500;
+    margin-bottom: 2px;
+    font-family: 'Inter', sans-serif !important;
+  }
+
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: 1fr; }
+    body { padding: 20px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Farbpaletten & Schriften — SVG-Diagramme</h1>
+<p class="subtitle">20 Vorschläge für ein einheitliches Design-System der Pflege-Lernplattform. Jede Palette zeigt: Primärfarbe, Sekundär, Akzent, Erfolg, Warnung, Hintergrund + passende Schriftart mit Mini-Diagramm-Vorschau.</p>
+
+<div class="current-info">
+  <h2>Aktuell im Projekt definiert</h2>
+  <div class="current-colors">
+    <div class="current-swatch"><div class="dot" style="background:#2563eb"></div> Pflege-Blue #2563eb</div>
+    <div class="current-swatch"><div class="dot" style="background:#16a34a"></div> Pflege-Green #16a34a</div>
+    <div class="current-swatch"><div class="dot" style="background:#dc2626"></div> Pflege-Red #dc2626</div>
+    <div class="current-swatch"><div class="dot" style="background:#d97706"></div> Pflege-Amber #d97706</div>
+    <div class="current-swatch"><div class="dot" style="background:#94a3b8"></div> Mastery-NotStarted</div>
+    <div class="current-swatch"><div class="dot" style="background:#f97316"></div> Mastery-Attempted</div>
+    <div class="current-swatch"><div class="dot" style="background:#eab308"></div> Mastery-Familiar</div>
+    <div class="current-swatch"><div class="dot" style="background:#22c55e"></div> Mastery-Proficient</div>
+  </div>
+</div>
+
+<div class="grid" id="palettes"></div>
+
+<script>
+const palettes = [
+  {
+    name: "Pflege Classic",
+    font: "Geist",
+    tags: ["Aktuell im Projekt", "Clean", "Tech"],
+    colors: { primary: "#2563eb", secondary: "#6366f1", accent: "#0ea5e9", success: "#16a34a", warning: "#d97706", bg: "#f0f4ff" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Sanftes Vertrauen",
+    font: "DM Sans",
+    tags: ["Warm", "Beruhigend", "Medizin"],
+    colors: { primary: "#3b82f6", secondary: "#8b5cf6", accent: "#06b6d4", success: "#10b981", warning: "#f59e0b", bg: "#f0fdf4" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Nordisch Klar",
+    font: "Inter",
+    tags: ["Minimal", "Professionell", "Kühl"],
+    colors: { primary: "#1e40af", secondary: "#475569", accent: "#0284c7", success: "#059669", warning: "#ca8a04", bg: "#f8fafc" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Pflege Mint",
+    font: "Plus Jakarta Sans",
+    tags: ["Frisch", "Modern", "Gesundheit"],
+    colors: { primary: "#0d9488", secondary: "#2563eb", accent: "#14b8a6", success: "#22c55e", warning: "#eab308", bg: "#f0fdfa" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Warme Erde",
+    font: "Nunito",
+    tags: ["Warm", "Freundlich", "Einladend"],
+    colors: { primary: "#b45309", secondary: "#92400e", accent: "#d97706", success: "#15803d", warning: "#dc2626", bg: "#fffbeb" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Digital Health",
+    font: "Outfit",
+    tags: ["Tech", "Startup", "Modern"],
+    colors: { primary: "#7c3aed", secondary: "#2563eb", accent: "#a78bfa", success: "#10b981", warning: "#f97316", bg: "#faf5ff" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Klinisch Sauber",
+    font: "IBM Plex Sans",
+    tags: ["Klinisch", "Seriös", "Wissenschaft"],
+    colors: { primary: "#1d4ed8", secondary: "#334155", accent: "#0369a1", success: "#15803d", warning: "#b45309", bg: "#f1f5f9" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Ozean Gradient",
+    font: "Manrope",
+    tags: ["Fließend", "Elegant", "Ruhe"],
+    colors: { primary: "#0077b6", secondary: "#0096c7", accent: "#00b4d8", success: "#2d6a4f", warning: "#e9c46a", bg: "#edf6f9" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Herbst Campus",
+    font: "Source Sans 3",
+    tags: ["Akademisch", "Herbst", "Klassisch"],
+    colors: { primary: "#9a3412", secondary: "#78350f", accent: "#c2410c", success: "#166534", warning: "#a16207", bg: "#fef3c7" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Neon Lern",
+    font: "Poppins",
+    tags: ["Jung", "Energetisch", "Gamification"],
+    colors: { primary: "#6d28d9", secondary: "#db2777", accent: "#8b5cf6", success: "#059669", warning: "#ea580c", bg: "#fdf4ff" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Pflege Koralle",
+    font: "Figtree",
+    tags: ["Warm", "Pflege", "Empathie"],
+    colors: { primary: "#e11d48", secondary: "#be123c", accent: "#f43f5e", success: "#16a34a", warning: "#d97706", bg: "#fff1f2" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Wald & Wiese",
+    font: "Lexend",
+    tags: ["Natur", "Beruhigend", "Organisch"],
+    colors: { primary: "#166534", secondary: "#14532d", accent: "#22c55e", success: "#15803d", warning: "#ca8a04", bg: "#f0fdf4" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Duolingo-Style",
+    font: "Nunito",
+    tags: ["Gamification", "Spaß", "App-Feel"],
+    colors: { primary: "#58cc02", secondary: "#1cb0f6", accent: "#ff9600", success: "#58cc02", warning: "#ff4b4b", bg: "#e5f8d0" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Mitternacht Blau",
+    font: "Work Sans",
+    tags: ["Dark-freundlich", "Elegant", "Kontrast"],
+    colors: { primary: "#1e3a5f", secondary: "#0f172a", accent: "#38bdf8", success: "#34d399", warning: "#fbbf24", bg: "#e0f2fe" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Lavendel Fokus",
+    font: "Rubik",
+    tags: ["Fokus", "Ruhe", "Konzentration"],
+    colors: { primary: "#7e22ce", secondary: "#6b21a8", accent: "#a855f7", success: "#16a34a", warning: "#f59e0b", bg: "#faf5ff" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Zugänglich Plus",
+    font: "Atkinson Hyperlegible",
+    tags: ["Barrierearm", "WCAG AAA", "Lesbar"],
+    colors: { primary: "#1a56db", secondary: "#1e3a5f", accent: "#047857", success: "#15803d", warning: "#b45309", bg: "#ffffff" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Sonnenschein",
+    font: "DM Sans",
+    tags: ["Fröhlich", "Energie", "Motivation"],
+    colors: { primary: "#ca8a04", secondary: "#a16207", accent: "#facc15", success: "#16a34a", warning: "#ea580c", bg: "#fefce8" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Pflege Indigo",
+    font: "Plus Jakarta Sans",
+    tags: ["Premium", "Modern", "Vertrauen"],
+    colors: { primary: "#4338ca", secondary: "#312e81", accent: "#818cf8", success: "#059669", warning: "#d97706", bg: "#eef2ff" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Rosa Pflege",
+    font: "Outfit",
+    tags: ["Pflege", "Empathie", "Sanft"],
+    colors: { primary: "#be185d", secondary: "#9d174d", accent: "#ec4899", success: "#059669", warning: "#d97706", bg: "#fdf2f8" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  },
+  {
+    name: "Petrol Modern",
+    font: "Manrope",
+    tags: ["Professionell", "Medizin", "Zeitlos"],
+    colors: { primary: "#115e59", secondary: "#134e4a", accent: "#2dd4bf", success: "#16a34a", warning: "#f59e0b", bg: "#f0fdfa" },
+    labels: ["Primär", "Sekundär", "Akzent", "Erfolg", "Warnung", "Hintergrund"]
+  }
+];
+
+function createDiagramSVG(p, fontFamily) {
+  const c = p.colors;
+  return `<svg viewBox="0 0 560 180" xmlns="http://www.w3.org/2000/svg" style="font-family: '${fontFamily}', sans-serif;">
+    <!-- Background -->
+    <rect width="560" height="180" rx="8" fill="${c.bg}"/>
+
+    <!-- Flowchart: 4 boxes connected -->
+    <rect x="20" y="24" width="110" height="44" rx="8" fill="${c.primary}" opacity="0.12" stroke="${c.primary}" stroke-width="1.5"/>
+    <text x="75" y="50" text-anchor="middle" font-size="11" font-weight="600" fill="${c.primary}">Einschätzung</text>
+
+    <line x1="130" y1="46" x2="155" y2="46" stroke="${c.primary}" stroke-width="1.5" marker-end="url(#arrow-${p.name.replace(/\s/g,'')})" />
+
+    <rect x="155" y="24" width="110" height="44" rx="8" fill="${c.secondary}" opacity="0.12" stroke="${c.secondary}" stroke-width="1.5"/>
+    <text x="210" y="50" text-anchor="middle" font-size="11" font-weight="600" fill="${c.secondary}">Planung</text>
+
+    <line x1="265" y1="46" x2="290" y2="46" stroke="${c.secondary}" stroke-width="1.5" marker-end="url(#arrow2-${p.name.replace(/\s/g,'')})" />
+
+    <rect x="290" y="24" width="110" height="44" rx="8" fill="${c.accent}" opacity="0.15" stroke="${c.accent}" stroke-width="1.5"/>
+    <text x="345" y="50" text-anchor="middle" font-size="11" font-weight="600" fill="${c.accent}">Durchführung</text>
+
+    <line x1="400" y1="46" x2="425" y2="46" stroke="${c.accent}" stroke-width="1.5" marker-end="url(#arrow3-${p.name.replace(/\s/g,'')})" />
+
+    <rect x="425" y="24" width="115" height="44" rx="8" fill="${c.success}" opacity="0.12" stroke="${c.success}" stroke-width="1.5"/>
+    <text x="482" y="50" text-anchor="middle" font-size="11" font-weight="600" fill="${c.success}">Evaluation</text>
+
+    <!-- Bar chart -->
+    <rect x="20" y="136" width="60" height="30" rx="4" fill="${c.primary}" opacity="0.8"/>
+    <rect x="88" y="116" width="60" height="50" rx="4" fill="${c.secondary}" opacity="0.8"/>
+    <rect x="156" y="96" width="60" height="70" rx="4" fill="${c.accent}" opacity="0.8"/>
+    <rect x="224" y="126" width="60" height="40" rx="4" fill="${c.success}" opacity="0.8"/>
+
+    <text x="50" y="158" text-anchor="middle" font-size="9" fill="white" font-weight="500">CE 01</text>
+    <text x="118" y="148" text-anchor="middle" font-size="9" fill="white" font-weight="500">CE 02</text>
+    <text x="186" y="128" text-anchor="middle" font-size="9" fill="white" font-weight="500">CE 03</text>
+    <text x="254" y="152" text-anchor="middle" font-size="9" fill="white" font-weight="500">CE 04</text>
+
+    <!-- Info box -->
+    <rect x="310" y="86" width="230" height="80" rx="10" fill="white" stroke="${c.primary}" stroke-width="1" opacity="0.95"/>
+    <circle cx="334" cy="108" r="10" fill="${c.success}" opacity="0.2"/>
+    <text x="334" y="112" text-anchor="middle" font-size="12" fill="${c.success}">✓</text>
+    <text x="350" y="112" font-size="11" font-weight="600" fill="${c.primary}">Sprachniveau: B2</text>
+    <circle cx="334" cy="132" r="10" fill="${c.warning}" opacity="0.2"/>
+    <text x="334" y="136" text-anchor="middle" font-size="12" fill="${c.warning}">⚡</text>
+    <text x="350" y="136" font-size="11" font-weight="600" fill="${c.secondary}">Fachwissen: Level 3</text>
+    <rect x="322" y="148" width="80" height="6" rx="3" fill="#e2e8f0"/>
+    <rect x="322" y="148" width="52" height="6" rx="3" fill="${c.accent}"/>
+
+    <!-- Arrow markers -->
+    <defs>
+      <marker id="arrow-${p.name.replace(/\s/g,'')}" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="${c.primary}"/></marker>
+      <marker id="arrow2-${p.name.replace(/\s/g,'')}" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="${c.secondary}"/></marker>
+      <marker id="arrow3-${p.name.replace(/\s/g,'')}" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="${c.accent}"/></marker>
+    </defs>
+  </svg>`;
+}
+
+const container = document.getElementById('palettes');
+
+palettes.forEach((p, i) => {
+  const card = document.createElement('div');
+  card.className = 'palette-card';
+
+  const colorKeys = Object.keys(p.colors);
+  const stripHTML = colorKeys.map((k,j) =>
+    `<div style="background:${p.colors[k]}" data-hex="${p.colors[k]}"></div>`
+  ).join('');
+  const labelsHTML = p.labels.map(l => `<span>${l}</span>`).join('');
+  const tagsHTML = p.tags.map(t => `<span class="tag">${t}</span>`).join('');
+
+  card.innerHTML = `
+    <div class="palette-header">
+      <div>
+        <div class="palette-number">Palette ${String(i+1).padStart(2,'0')}</div>
+        <div class="palette-name">${p.name}</div>
+        <div class="palette-font">Schrift: ${p.font}</div>
+      </div>
+      <div class="palette-tags">${tagsHTML}</div>
+    </div>
+    <div class="color-strip">${stripHTML}</div>
+    <div class="color-labels">${labelsHTML}</div>
+    <div class="preview-area" style="background:${p.colors.bg}">
+      ${createDiagramSVG(p, p.font)}
+    </div>
+    <div class="palette-footer">
+      <div class="font-sample" style="font-family:'${p.font}',sans-serif">
+        <strong>Überschrift</strong>
+        <span style="font-size:18px;font-weight:700">Pflegeprozess — 6 Schritte</span>
+      </div>
+      <div class="font-sample" style="font-family:'${p.font}',sans-serif">
+        <strong>Fließtext</strong>
+        <span style="font-size:14px;font-weight:400">Der Dekubitus entsteht durch anhaltenden Druck auf die Haut.</span>
+      </div>
+      <div class="font-sample" style="font-family:'${p.font}',sans-serif">
+        <strong>Label/Legende</strong>
+        <span style="font-size:12px;font-weight:500;color:${p.colors.primary}">Stadium I — Nicht wegdrückbare Rötung</span>
+      </div>
+    </div>
+  `;
+
+  container.appendChild(card);
+});
+</script>
+
+</body>
+</html>

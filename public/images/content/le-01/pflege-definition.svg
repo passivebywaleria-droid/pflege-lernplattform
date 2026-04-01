@@ -1,0 +1,57 @@
+<svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+  <rect width="600" height="320" fill="#fafaf9"/>
+
+  <!-- Title -->
+  <text x="300" y="28" text-anchor="middle" font-size="10" font-weight="600" fill="#33302b" opacity="0.35" letter-spacing="0.1em">PFLEGE — OFFIZIELLE DEFINITIONEN</text>
+
+  <!-- Left: ICN -->
+  <rect x="20" y="46" width="270" height="220" rx="12" fill="#E5DFD6" opacity="0.45"/>
+  <rect x="20" y="46" width="270" height="46" rx="12" fill="#7A816C" opacity="0.12"/>
+  <rect x="20" y="86" width="270" height="1" fill="#7A816C" opacity="0.15"/>
+
+  <text x="36" y="63" font-size="9" font-weight="600" fill="#7A816C" letter-spacing="0.06em">ICN — INTERNATIONAL COUNCIL OF NURSES</text>
+  <text x="36" y="78" font-size="8" font-weight="400" fill="#33302b" opacity="0.4">Internationale Definition seit 2002</text>
+
+  <text x="36" y="110" font-size="10" font-weight="600" fill="#33302b">Pflege umfasst die</text>
+  <text x="36" y="124" font-size="10" font-weight="700" fill="#7A816C">eigenverantwortliche Versorgung</text>
+  <text x="36" y="138" font-size="10" font-weight="600" fill="#33302b">und Betreuung von Menschen</text>
+  <text x="36" y="152" font-size="10" font-weight="600" fill="#33302b">aller Altersstufen.</text>
+
+  <line x1="36" y1="166" x2="270" y2="166" stroke="#33302b" stroke-width="0.4" stroke-opacity="0.08"/>
+
+  <circle cx="46" cy="184" r="4" fill="#7A816C" opacity="0.2"/>
+  <text x="58" y="188" font-size="9" font-weight="500" fill="#33302b" opacity="0.7">Gesundheitsförderung</text>
+  <circle cx="46" cy="204" r="4" fill="#7A816C" opacity="0.2"/>
+  <text x="58" y="208" font-size="9" font-weight="500" fill="#33302b" opacity="0.7">Krankheitsverhütung</text>
+  <circle cx="46" cy="224" r="4" fill="#7A816C" opacity="0.2"/>
+  <text x="58" y="228" font-size="9" font-weight="500" fill="#33302b" opacity="0.7">Versorgung kranker &amp; behinderter Menschen</text>
+  <circle cx="46" cy="244" r="4" fill="#7A816C" opacity="0.2"/>
+  <text x="58" y="248" font-size="9" font-weight="500" fill="#33302b" opacity="0.7">Forschung &amp; Bildung</text>
+
+  <!-- Right: WHO -->
+  <rect x="310" y="46" width="270" height="220" rx="12" fill="#E5DFD6" opacity="0.45"/>
+  <rect x="310" y="46" width="270" height="46" rx="12" fill="#AE6965" opacity="0.1"/>
+  <rect x="310" y="86" width="270" height="1" fill="#AE6965" opacity="0.15"/>
+
+  <text x="326" y="63" font-size="9" font-weight="600" fill="#AE6965" letter-spacing="0.06em">WHO — WELTGESUNDHEITSORGANISATION</text>
+  <text x="326" y="78" font-size="8" font-weight="400" fill="#33302b" opacity="0.4">Gesellschaftlicher Auftrag</text>
+
+  <text x="326" y="110" font-size="10" font-weight="600" fill="#33302b">Gesellschaft hilft dem</text>
+  <text x="326" y="124" font-size="10" font-weight="600" fill="#33302b">Einzelnen, sein</text>
+  <text x="326" y="138" font-size="10" font-weight="700" fill="#AE6965">physisches, psychisches</text>
+  <text x="326" y="152" font-size="10" font-weight="700" fill="#AE6965">&amp; soziales Potenzial</text>
+  <text x="326" y="166" font-size="10" font-weight="600" fill="#33302b">zu bestimmen und auszuschöpfen.</text>
+
+  <line x1="326" y1="180" x2="560" y2="180" stroke="#33302b" stroke-width="0.4" stroke-opacity="0.08"/>
+
+  <circle cx="336" cy="198" r="4" fill="#AE6965" opacity="0.2"/>
+  <text x="348" y="202" font-size="9" font-weight="500" fill="#33302b" opacity="0.7">Planung &amp; Durchführung von Pflege</text>
+  <circle cx="336" cy="218" r="4" fill="#AE6965" opacity="0.2"/>
+  <text x="348" y="222" font-size="9" font-weight="500" fill="#33302b" opacity="0.7">Versorgung bei Krankheit</text>
+  <circle cx="336" cy="238" r="4" fill="#AE6965" opacity="0.2"/>
+  <text x="348" y="242" font-size="9" font-weight="500" fill="#33302b" opacity="0.7">Rehabilitation</text>
+
+  <!-- Connecting element -->
+  <rect x="228" y="280" width="144" height="30" rx="15" fill="#D1A9A5" opacity="0.15" stroke="#D1A9A5" stroke-width="1"/>
+  <text x="300" y="300" text-anchor="middle" font-size="10" font-weight="600" fill="#A58B71">Gemeinsam: Mensch im Mittelpunkt</text>
+</svg>

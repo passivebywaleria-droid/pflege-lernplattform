@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 
 interface Category {
   name: string;
@@ -190,7 +190,7 @@ export function StepCategorize({
                             : "bg-white border border-[#d2d2d7] active:scale-95 shadow-sm"
                       }`}
                     >
-                      {text}
+                      {renderBold(text)}
                       {!checked && (
                         <span className="text-[#86868b] text-[10px]">✕</span>
                       )}
@@ -210,7 +210,7 @@ export function StepCategorize({
           onClick={() => setChecked(true)}
           className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
         >
-          Pruefen
+          Prüfen
         </button>
       )}
 

@@ -17,7 +17,7 @@ export function FachbegriffText({ glossar, children }: FachbegriffTooltipProps) 
   const [activeEntry, setActiveEntry] = useState<GlossarEntry | null>(null);
 
   if (!glossar || glossar.length === 0) {
-    return <span>{children}</span>;
+    return <span>{renderBold(children)}</span>;
   }
 
   // Glossar-Begriffe im Text finden und markieren
@@ -38,7 +38,7 @@ export function FachbegriffText({ glossar, children }: FachbegriffTooltipProps) 
               </button>
             );
           }
-          return <span key={i}>{part.text}</span>;
+          return <span key={i}>{renderBold(part.text)}</span>;
         })}
       </span>
 
@@ -107,6 +107,18 @@ export function FachbegriffText({ glossar, children }: FachbegriffTooltipProps) 
       </AnimatePresence>
     </>
   );
+}
+
+/** Wandelt **bold** Markdown in <strong> Elemente um. Exportiert für Nutzung in allen Step-Komponenten. */
+export function renderBold(text: string): React.ReactNode {
+  if (!text || !text.includes("**")) return text;
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={i} className="font-semibold">{part.slice(2, -2)}</strong>;
+    }
+    return part;
+  });
 }
 
 // Hilfsfunktion: Begriffe im Text finden und in Segmente aufteilen

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 interface FlipCardItem {
   front: string;
   back: string;
@@ -54,7 +54,7 @@ function FlipCard({
             </span>
           )}
           <p className="text-sm font-semibold text-[#1d1d1f] text-center leading-snug">
-            {item.front}
+            {renderBold(item.front)}
           </p>
           <p className="text-[10px] text-[#6e6e73] mt-2">Antippen ↻</p>
         </div>
@@ -74,7 +74,7 @@ function FlipCard({
             </span>
           )}
           <p className="text-sm text-[#1d1d1f] text-center leading-relaxed">
-            {backText}
+            {renderBold(backText)}
           </p>
           <p className="text-[10px] text-[#6e6e73] mt-2 text-center">Antippen ↻</p>
         </motion.div>

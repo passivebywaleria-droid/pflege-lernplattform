@@ -15,7 +15,7 @@
 import { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/ce-05/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
+import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 import { HandDrawnIcon } from "@/components/ui/hand-drawn-icon";
 
 interface CrosswordWord {
@@ -580,7 +580,7 @@ export function StepCrossword({
                   }`}
                 >
                   <span className="font-bold text-[#0071e3] mr-2">{p.number}.</span>
-                  {p.clue}
+                  {renderBold(p.clue)}
                   <span className="text-[#86868b] ml-1">({p.word.length})</span>
                 </button>
               ))}
@@ -613,7 +613,7 @@ export function StepCrossword({
                   }`}
                 >
                   <span className="font-bold text-[#0071e3] mr-2">{p.number}.</span>
-                  {p.clue}
+                  {renderBold(p.clue)}
                   <span className="text-[#86868b] ml-1">({p.word.length})</span>
                 </button>
               ))}
