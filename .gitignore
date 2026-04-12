@@ -52,10 +52,15 @@ memory/ralph-logs/
 memory/ralph-status.json
 memory/ralph-signal.txt
 
-# Große Recherche-PDFs (überschreiten GitHub-Limit)
-recherche/icare/*.pdf
-recherche/**/*.pdf
+# Recherche (nicht für Build benötigt)
+recherche/
+
+# PDFs
 *.pdf
+
+# Debug-Artefakte
+debug-*.png
+.playwright-gemini-state/
 
 # Worktrees
 .claude/worktrees/
