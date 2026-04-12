@@ -1,5 +1,5 @@
 // Shared Types für alle 55 Lerneinheiten (CE-übergreifend)
-// Erweitert aus content/ce-05/_types.ts — Wahrheitsquelle für Content-Pipeline v2
+// Wahrheitsquelle für Content-Pipeline v2 — CE-übergreifend
 
 // 8 Erlebnis-Modi (aus le-erlebnis-konzept.md)
 export type ErlebnisModus =
@@ -14,6 +14,49 @@ export type ErlebnisModus =
 
 // Adaptives Track-System: Pflicht vs. Vertiefung
 export type LernTrack = "basis" | "vertiefung";
+
+// 3 Säulen der Pflegeausbildung (wie I Care: Anatomie, Pflege, Krankheitslehre)
+export type ContentTag = "anatomie" | "pflege" | "krankheitslehre";
+
+// Organsysteme für Themen-Übersicht (Metadaten auf LE-Ebene)
+export type Organsystem =
+  | "herz-kreislauf"
+  | "lunge"
+  | "niere"
+  | "gi-trakt"
+  | "nervensystem"
+  | "bewegungsapparat"
+  | "haut"
+  | "immunsystem"
+  | "endokrin"
+  | "sinnesorgane"
+  | "reproduktion"
+  | "blut"
+  | "psyche";
+
+// UX-Varianten für bestehende Step-Typen (Phase 3)
+export type McVariant = "standard" | "anticipation" | "bildgalerie" | "audioStimulus" | "fallstrick";
+export type MemoryVariant = "text" | "bild" | "mixed";
+export type TimerVariant = "standard" | "blitz";
+export type SliderVariant = "numeric" | "empathy" | "estimation";
+export type TrueFalseVariant = "standard" | "chain";
+export type SelfratingVariant = "standard" | "rubrik";
+
+// displayFormat-Varianten für Text-Steps (specs/CONTENT-QUALITAET.md F1)
+export type DisplayFormat =
+  | "mnemonic"     // Eselsbrücke/Akronym visuell
+  | "analogy"      // Alltags-Vergleich (Split: Bekannt ↔ Neu)
+  | "beforeafter"  // Vorher/Nachher-Kontrast
+  | "procontra"    // Pro/Contra-Karte
+  | "quote"        // Zitat + Kontext
+  | "news"         // Nachrichtenmeldung
+  | "diary"        // Tagebuch-Eintrag (Ich-Perspektive)
+  | "glossary"     // Glossar-Deep-Dive
+  | "checklist"    // Aufzählung mit Häkchen-Symbolen
+  | "stepbystep"   // Nummerierte Schritte mit Icons
+  | "scenario"     // Situationsbeschreibung mit Rollenangabe
+  | "crossref"     // Querverweise zu anderen CEs/LEs
+  | "interview";   // Frage-Antwort-Format (Interview/FAQ)
 
 // Phasen im Adaptiven Themenbogen (specs/ADAPTIVER-THEMENBOGEN.md)
 export type ThemenblockPhase =
@@ -286,6 +329,57 @@ export interface DiagramData {
   interactive?: boolean;
 }
 
+// ImageInteraction — Vorher/Nachher, Layer-Reveal, Zoom+Pan
+export type ImageInteractionType = "beforeAfter" | "layerReveal" | "zoomPan";
+
+export interface BeforeAfterData {
+  imageBefore: string;
+  imageAfter: string;
+  labelBefore?: string;
+  labelAfter?: string;
+  startPosition?: number; // 0-100, default 50
+}
+
+export interface ImageLayer {
+  id: string;
+  label: string;
+  labelB1?: string;
+  imageUrl: string;
+  defaultVisible?: boolean;
+}
+
+export interface LayerRevealData {
+  layers: ImageLayer[];
+  baseImageUrl?: string;
+  instruction?: string;
+}
+
+export interface ZoomAnnotation {
+  id: string;
+  x: number; // % (0-100)
+  y: number;
+  label: string;
+  labelB1?: string;
+  description?: string;
+  descriptionB1?: string;
+}
+
+export interface ZoomPanData {
+  imageUrl: string;
+  imageAlt: string;
+  maxZoom?: number; // default 4
+  annotations?: ZoomAnnotation[];
+}
+
+export interface ImageInteractionData {
+  interactionType: ImageInteractionType;
+  instruction: string;
+  instructionB1?: string;
+  beforeAfter?: BeforeAfterData;
+  layerReveal?: LayerRevealData;
+  zoomPan?: ZoomPanData;
+}
+
 // CarePlan — Pflegeprozess üben (Problem→Ziel→Maßnahme→Durchführung→Evaluation)
 export interface CarePlanStep {
   phase: "problem" | "ziel" | "massnahme" | "durchfuehrung" | "evaluation";
@@ -334,7 +428,199 @@ export type StepType =
   | "labelImage"
   | "diagram"
   | "imageInteraction"
-  | "careplan";
+  | "careplan"
+  | "audio"
+  | "speech"
+  // v3: Neue Step-Typen (Phase 2)
+  | "wordorder"       // Satzbausteine in richtige Reihenfolge ziehen
+  | "calculation"     // Dosierungs-/Rechenaufgabe mit Zahleneingabe
+  | "tablefillin"     // Tabelle mit Lücken ausfüllen
+  | "errorspot"       // Fehler im Text finden und markieren
+  | "matrix"          // 2×2 Prioritäten-/Eisenhower-Matrix
+  | "conceptmap"      // Konzept-Knoten verbinden
+  | "chatSim"         // KI-Patient Chat-Simulation
+  | "estimation"      // Zahlen-Schätzung mit Auflösung
+  | "crowdPoll";      // Umfrage mit Seed-Ergebnissen (Mentimeter-Stil)
+
+// === NEUE STEP-TYPEN v3 (Phase 2) ===
+
+// WordOrder — Satzbausteine in richtige Reihenfolge ziehen
+export interface WordOrderData {
+  instruction: string;
+  words: string[];           // Durcheinander-Wörter
+  correctOrder: number[];    // Richtige Reihenfolge (Indizes)
+  hint?: string;
+}
+
+// Calculation — Dosierungs-/Rechenaufgabe
+export interface CalculationData {
+  instruction: string;
+  formula?: string;          // z.B. "Dosis = Verordnung / Stärke × Menge"
+  correctValue: number;
+  unit: string;              // z.B. "ml", "Tropfen"
+  tolerance: number;         // Absolute Abweichung
+  explanation: string;
+  explanationB1?: string;
+}
+
+// TableFillIn — Tabelle mit Lücken ausfüllen
+export interface TableFillInCell {
+  value: string;
+  isBlank: boolean;
+  options?: string[];        // Dropdown-Optionen wenn isBlank
+}
+
+export interface TableFillInData {
+  instruction: string;
+  headers: string[];
+  rows: TableFillInCell[][];
+}
+
+// ErrorSpot — Fehler im Text finden und markieren
+export interface ErrorSpotError {
+  start: number;             // Zeichenposition Start
+  end: number;               // Zeichenposition Ende
+  correction: string;
+  explanation: string;
+  explanationB1?: string;
+}
+
+export interface ErrorSpotData {
+  instruction: string;
+  text: string;              // Text mit eingebauten Fehlern
+  errors: ErrorSpotError[];
+}
+
+// Matrix — 2×2 Prioritäten-Matrix (Eisenhower/Triage)
+export interface MatrixItem {
+  id: string;
+  text: string;
+  correctQuadrant: 1 | 2 | 3 | 4;
+}
+
+export interface MatrixData {
+  instruction: string;
+  axisX: { label: string; low: string; high: string };
+  axisY: { label: string; low: string; high: string };
+  items: MatrixItem[];
+}
+
+// ConceptMap — Konzept-Knoten verbinden
+export interface ConceptMapNode {
+  id: string;
+  label: string;
+  fixed?: boolean;           // Vorgegeben oder vom Schüler zu platzieren
+}
+
+export interface ConceptMapConnection {
+  from: string;
+  to: string;
+  label?: string;
+}
+
+export interface ConceptMapData {
+  instruction: string;
+  nodes: ConceptMapNode[];
+  correctConnections: ConceptMapConnection[];
+  availableLabels?: string[];
+}
+
+// ChatSim — KI-Patient Chat-Simulation
+export interface ChatSimData {
+  patientName: string;
+  situation: string;
+  situationB1?: string;
+  systemPrompt: string;      // KI-Instruktion für Patienten-Rolle
+  maxTurns: number;          // z.B. 5
+  evaluationCriteria: string[];
+}
+
+// Estimation — Zahlen-Schätzung mit Auflösung
+export interface EstimationData {
+  instruction: string;
+  unit: string;
+  correctValue: number;
+  tolerance: number;         // Prozent-Abweichung
+  funFact: string;
+  explanation: string;
+  explanationB1?: string;
+}
+
+// CrowdPoll — Umfrage mit Seed-Ergebnissen (Mentimeter-Stil)
+export interface CrowdPollSeedResponse {
+  text: string;
+  count: number;
+  highlight?: boolean;       // Besonders markieren (z.B. häufigste Antwort)
+}
+
+export interface CrowdPollOption {
+  id: string;
+  text: string;
+  textB1?: string;
+}
+
+export interface CrowdPollData {
+  question: string;
+  questionB1?: string;
+  inputType: "choice" | "freetext";
+  // Für "choice":
+  options?: CrowdPollOption[];
+  allowMultiple?: boolean;
+  // Für "freetext":
+  placeholder?: string;
+  placeholderB1?: string;
+  // Seed-Ergebnisse (Variante B — später durch echte DB-Daten ersetzt):
+  seedResponses: CrowdPollSeedResponse[];
+  totalVotes?: number;
+  // Didaktischer Hinweis nach Abstimmung:
+  fazit?: string;
+  fazitB1?: string;
+}
+
+export interface AudioData {
+  audioUrl: string;
+  audioLabel?: string;
+  transcript?: string;
+}
+
+export interface SpeechData {
+  speechType: "nachsprechen" | "erklaeren";
+  zielwort?: string;            // Typ "nachsprechen": "Dekubitus"
+  aufgabe?: string;             // Typ "erklaeren": "Erkläre dem Patienten..."
+  aufgabeB1?: string;           // B1-Version der Aufgabe
+  bewertungshinweis?: string;   // Für KI-Feedback: Was soll der Schüler sagen?
+}
+
+// CrowdPoll — Umfrage mit Seed-Ergebnissen (Mentimeter-Stil)
+export interface CrowdPollSeedResponse {
+  text: string;
+  count: number;
+  highlight?: boolean;
+}
+
+export interface CrowdPollOption {
+  id: string;
+  text: string;
+  textB1?: string;
+}
+
+export interface CrowdPollData {
+  question: string;
+  questionB1?: string;
+  inputType: "choice" | "freetext";
+  // Für "choice":
+  options?: CrowdPollOption[];
+  allowMultiple?: boolean;
+  // Für "freetext":
+  placeholder?: string;
+  placeholderB1?: string;
+  // Seed-Ergebnisse:
+  seedResponses: CrowdPollSeedResponse[];
+  totalVotes?: number;
+  // Didaktischer Hinweis nach Abstimmung:
+  fazit?: string;
+  fazitB1?: string;
+}
 
 export interface ContentStep {
   stepId: string;
@@ -350,6 +636,12 @@ export interface ContentStep {
   lernziel?: string;           // Lernziel-ID (Format: "{ceId}-{leId}-{topic}")
   themenblockPhase?: ThemenblockPhase;  // Phase im Phasen-Bogen
 
+  // 3-Säulen-Tag: Anatomie, Pflege oder Krankheitslehre
+  tag?: ContentTag;            // Pflicht für neuen Content, optional für Legacy
+
+  // Cross-LE: Patient-Referenz (für Fallverläufe + Prüfungsmodus)
+  patientId?: string;          // Verweist auf ExamPatient in _patients.ts
+
   // XP per Formel berechnet — Override nur wenn nötig
   xpValue?: number;
 
@@ -358,9 +650,24 @@ export interface ContentStep {
   alternativeStepTypes?: string[];
   prerequisiteStepIds?: string[];
 
+  // displayFormat für Text-Steps (CONTENT-QUALITAET.md F1)
+  displayFormat?: DisplayFormat;
+
   // Illustration
   imageUrl?: string;
   imageAlt?: string;
+  /** Dozentin-Hinweis: Was soll der Schüler auf dem Bild sehen/verstehen? Wird als Grundlage für Bild-Generierung genutzt. */
+  bildhinweis?: string;
+  /** Referenz zu Bild-Nr. aus Unterrichtsentwurf §9, z.B. "BILD 5" */
+  bildRef?: string;
+  /** Bildkategorie bestimmt Generierungs-Strategie und angehängte Qualitätsregeln. */
+  bildkategorie?: 'szene' | 'anatomie' | 'prozedur' | 'geraet';
+  /** Pfad zu Referenzbild (z.B. aus Servier Medical Art). Gemini erstellt daraus eine Illustration im App-Stil. */
+  referenzBild?: string;
+
+  // Audio (z.B. NotebookLM-Zusammenfassung)
+  audioUrl?: string;
+  audioLabel?: string;
 
   // "Wusstest du?" Collapsible-Element
   wusstestDuDas?: string;
@@ -382,6 +689,13 @@ export interface ContentStep {
   question?: {
     fragetext: string;
     multiSelect?: boolean;
+    // UX-Varianten (Phase 3)
+    mcVariant?: McVariant;
+    memoryVariant?: MemoryVariant;
+    timerVariant?: TimerVariant;
+    sliderVariant?: SliderVariant;
+    trueFalseVariant?: TrueFalseVariant;
+    selfratingVariant?: SelfratingVariant;
     // Flexible Felder für verschiedene Step-Typen (Content-Generator nutzt diverse Strukturen)
     [key: string]: unknown;
     optionen?: StepOption[];
@@ -423,15 +737,49 @@ export interface ContentStep {
     labelImage?: LabelImageData;
     diagram?: DiagramData;
     careplan?: CarePlanData;
+    audio?: AudioData;
+    speech?: SpeechData;
+    // v3: Neue Step-Typen (Phase 2)
+    wordorder?: WordOrderData;
+    calculation?: CalculationData;
+    tablefillin?: TableFillInData;
+    errorspot?: ErrorSpotData;
+    matrix?: MatrixData;
+    conceptmap?: ConceptMapData;
+    chatSim?: ChatSimData;
+    estimation?: EstimationData;
+    crowdPoll?: CrowdPollData;
   };
 }
 
 export interface GlossarEntry {
   begriff: string;
   erklaerung: string;
+  erklaerungB1?: string;          // B1-Erklärung (einfache Sprache)
   uebersetzungTr?: string;
   uebersetzungAr?: string;
+  uebersetzungEn?: string;        // NEU: Englisch (Brückensprache)
+  uebersetzungVi?: string;        // NEU: Vietnamesisch
+  uebersetzungTl?: string;        // NEU: Tagalog/Filipino
+  uebersetzungBs?: string;        // NEU: Bosnisch/Kroatisch/Serbisch
+  uebersetzungUk?: string;        // NEU: Ukrainisch
+  uebersetzungRo?: string;        // NEU: Rumänisch
   ausspracheAudio?: string;
+  istB1Alltagswort?: boolean;     // Markierung für B1-Alltagswörter (G2)
+  vorsilbeNachsilbe?: string;     // Wortzerlegung z.B. "hyper- (zu viel) + -tension (Druck)" (G5)
+}
+
+export type KarteikarteKategorie = "fachbegriff" | "fakt" | "handlung" | "assessment" | "recht";
+
+export interface KarteikarteVorlage {
+  id: string;                       // z.B. "le08-kk-01"
+  vorderseite: string;              // Frage oder Fachbegriff
+  rueckseiteC1: string;             // Antwort (C1-Niveau)
+  rueckseiteB1: string;             // Antwort (B1-vereinfacht)
+  tag: ContentTag;                  // "anatomie" | "pflege" | "krankheitslehre"
+  kategorie: KarteikarteKategorie;
+  pruefungsrelevant: boolean;       // true = Prüfungswissen
+  quelle?: string;                  // z.B. "I Care Pflege S. 342"
 }
 
 export interface LektionMetadata {
@@ -455,10 +803,150 @@ export interface LektionMetadata {
   };
   glossarCount: number;
   quellenCount: number;
+
+  // 3-Säulen-Tag: Organsysteme dieser LE (für Themen-Übersichtsseite)
+  organsysteme?: Organsystem[];
 }
+
+// === WISSENS-TAB: Artikel-Format (AMBOSS-Stil) ===
+
+/** Ein Abschnitt innerhalb eines Kapitels (Text, Tabelle, Bild, Warnung, etc.) */
+export type ArtikelBlockType =
+  | "text"           // Fließtext (Markdown-ähnlich, aber als Plaintext)
+  | "tabelle"        // Datentabelle (headers + rows)
+  | "bild"           // Illustration mit Alt-Text
+  | "warnung"        // Hervorgehobene Warnung (z.B. Refeeding-Syndrom)
+  | "merke"          // "Merke!"-Box (Kernaussage)
+  | "rechner"        // Interaktiver Rechner (z.B. Energiebedarf)
+  | "querverweis";   // Link zu anderem Kapitel oder anderer LE
+
+export interface ArtikelBlock {
+  type: ArtikelBlockType;
+  contentC1: string;
+  contentB1?: string;
+  /** Tabellen-Daten (nur bei type "tabelle") */
+  headers?: string[];
+  rows?: string[][];
+  /** Bild (nur bei type "bild") */
+  imageUrl?: string;
+  imageAlt?: string;
+  /** Querverweis (nur bei type "querverweis") */
+  zielLeId?: string;
+  zielKapitelId?: string;
+  /** Rechner (nur bei type "rechner") */
+  formel?: string;
+  einheit?: string;
+  /** Quellenangabe für diesen Block */
+  quelle?: string;
+}
+
+/** Ein Kapitel im Wissens-Tab */
+export interface ArtikelKapitel {
+  kapitelId: string;              // z.B. "le08-kap-01"
+  titel: string;
+  titelB1?: string;
+  tag: ContentTag;                // anatomie | pflege | krankheitslehre
+  geschaetzteDauer: number;       // Minuten zum Durchlesen
+  bloecke: ArtikelBlock[];
+  glossarBegriffe?: string[];     // Fachbegriffe die in diesem Kapitel erklärt werden
+}
+
+// === FALL-TAB: Case-Based Patientenverlauf ===
+
+/** Eine Station im Fallverlauf (z.B. "Tag 1: Aufnahme") */
+export interface FallStation {
+  stationId: string;              // z.B. "le08-fall01-st01"
+  zeitpunkt: string;              // "Tag 1", "Woche 2", "Monat 3"
+  titel: string;
+  titelB1?: string;
+  situationC1: string;            // Was passiert? (Fließtext)
+  situationB1?: string;
+  /** Welche Kapitel aus dem Wissens-Tab sind hier relevant */
+  relevanteKapitel?: string[];    // kapitelId-Referenzen
+  /** Steps die an dieser Station bearbeitet werden */
+  steps: ContentStep[];
+  bloomRange: [number, number];   // z.B. [1, 3] für frühe Stationen
+  freigeschaltet?: boolean;       // Default: nur erste Station frei
+}
+
+/** Ein kompletter Patientenverlauf */
+export interface Fallverlauf {
+  fallId: string;                 // z.B. "le08-fall-kramer"
+  patient: ExamPatient;
+  titel: string;
+  titelB1?: string;
+  stationen: FallStation[];
+  /** Fokus-Tag: Welche Perspektive steht im Vordergrund */
+  fokus: ContentTag;
+}
+
+// === PRAXIS-TAB: Simulationen ===
+
+export type PraxisUebungType =
+  | "dialog-sim"      // KI-Patient Dialog
+  | "pflegeplan"      // Pflegeprozess schreiben
+  | "beratung"        // Angehörigen-Beratung
+  | "sprechuebung"    // Whisper STT
+  | "prozedur";       // Handlungsablauf üben
+
+export interface PraxisUebung {
+  uebungId: string;
+  typ: PraxisUebungType;
+  titel: string;
+  titelB1?: string;
+  beschreibungC1: string;
+  beschreibungB1?: string;
+  bloomLevel: 3 | 4 | 5 | 6;     // Praxis = mind. B3
+  /** Steps die diese Übung ausmachen */
+  steps: ContentStep[];
+}
+
+// === ERWEITERTE LEKTION (5-Tab-Modell) ===
 
 export interface LektionData {
   steps: ContentStep[];
   metadata: LektionMetadata;
   glossar: GlossarEntry[];
+  karteikarten?: KarteikarteVorlage[];
+  /** Wissens-Tab: Strukturierte Kapitel */
+  artikel?: ArtikelKapitel[];
+  /** Fall-Tab: Patientenverläufe */
+  fallverlaeufe?: Fallverlauf[];
+  /** Praxis-Tab: Simulationen und Übungen */
+  praxisUebungen?: PraxisUebung[];
+}
+
+// === CROSS-LE PRÜFUNGSFÄLLE ===
+
+/** Patient der in mehreren LEs vorkommt (globales Register) */
+export interface ExamPatient {
+  patientId: string;          // "pat-ahmed-01" — global eindeutig
+  name: string;
+  alter: number;
+  geschlecht: "w" | "m" | "d";
+  diagnosen: string[];        // Wächst über mehrere LEs
+  sourceLEs: string[];        // ["le-01", "le-06", "le-12"]
+  steckbrief: string;         // Kurzbeschreibung für Prüfungsmodus
+}
+
+/** Eine Phase im Fallverlauf (z.B. "Tag 1", "Nach 3 Wochen") */
+export interface ExamCasePhase {
+  phaseId: string;
+  zeitpunkt: string;          // "Tag 1", "Nach 3 Wochen", "6 Monate später"
+  kontext: string;            // Situationsbeschreibung
+  kontextB1?: string;         // B1-Version
+  sourceLE: string;           // "le-01" — woher das Wissen stammt
+  steps: ContentStep[];       // 3-5 Steps pro Phase (MC, Freetext, CarePlan, ChatSim)
+}
+
+/** LE-übergreifender Prüfungsfall (wie PflAPrV schriftliche Prüfung) */
+export interface ExamCase {
+  caseId: string;             // "exam-ahmed-mobilitaet"
+  patient: ExamPatient;
+  titel: string;
+  schwierigkeit: "mittel" | "schwer";
+  sourceLEs: string[];        // Alle LEs die der Schüler bearbeitet haben muss
+  phasen: ExamCasePhase[];
+  bloomRange: [number, number]; // z.B. [4, 6] — nur höhere Bloom-Level
+  zeitLimitMinuten?: number;  // Optional: Prüfungszeitlimit
 }

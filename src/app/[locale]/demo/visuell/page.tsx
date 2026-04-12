@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLocale } from "next-intl";
 import { StepImageInteraction } from "@/components/learn/step-image-interaction";
 import { StepLabelImage } from "@/components/learn/step-label-image";
 import { StepDiagram } from "@/components/learn/step-diagram";
@@ -52,18 +53,19 @@ const DEMO_SECTIONS = [
 type SectionId = typeof DEMO_SECTIONS[number]["id"];
 
 export default function VisuellDemoPage() {
+  const locale = useLocale();
   const [activeSection, setActiveSection] = useState<SectionId>("beforeAfter");
   const [feedbackType, setFeedbackType] = useState<"correct" | "wrong" | null>(null);
 
   return (
-    <div className="min-h-screen bg-[#f5f5f7]" style={{ color: "#1d1d1f" }}>
+    <div className="min-h-screen bg-[var(--lern-bg)]" style={{ color: "var(--lern-text-primary)" }}>
       {/* Header */}
-      <div className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-[#d2d2d7]/50">
+      <div className="sticky top-0 z-50 bg-[var(--lern-bg-primary)]/80 backdrop-blur-xl border-b border-[var(--lern-border)]/50">
         <div className="mx-auto max-w-2xl px-4 py-4">
-          <h1 className="text-lg font-bold text-[#1d1d1f]">
+          <h1 className="text-lg font-bold text-[var(--lern-text-primary)]">
             Visuelle Step-Typen — Demo
           </h1>
-          <p className="text-xs text-[#6e6e73] mt-0.5">
+          <p className="text-xs text-[var(--lern-text-secondary)] mt-0.5">
             Alle Bild-Interaktionen + Lottie-Feedback
           </p>
 
@@ -76,7 +78,7 @@ export default function VisuellDemoPage() {
                 className={`whitespace-nowrap px-3 py-1.5 rounded-full text-xs font-semibold transition-all shrink-0 ${
                   activeSection === s.id
                     ? "text-white shadow-sm"
-                    : "bg-[#f5f5f7] text-[#6e6e73]"
+                    : "bg-[var(--lern-bg)] text-[var(--lern-text-secondary)]"
                 }`}
                 style={activeSection === s.id ? { backgroundColor: s.color } : {}}
               >
@@ -108,7 +110,7 @@ export default function VisuellDemoPage() {
                     >
                       {s.title}
                     </div>
-                    <p className="text-sm text-[#6e6e73]">{s.subtitle}</p>
+                    <p className="text-sm text-[var(--lern-text-secondary)]">{s.subtitle}</p>
                   </div>
                 ),
             )}
@@ -324,9 +326,9 @@ export default function VisuellDemoPage() {
             {/* ── 6. Lottie ── */}
             {activeSection === "lottie" && (
               <div className="space-y-6">
-                <div className="rounded-2xl bg-white border border-[#d2d2d7] p-6 space-y-6">
+                <div className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-6 space-y-6">
                   <h3 className="text-lg font-bold">Mikro-Feedback</h3>
-                  <p className="text-sm text-[#6e6e73]">
+                  <p className="text-sm text-[var(--lern-text-secondary)]">
                     Lottie-Animationen ersetzen statische Emojis bei richtig/falsch/Streak.
                   </p>
 
@@ -340,14 +342,14 @@ export default function VisuellDemoPage() {
                             setFeedbackType(anim);
                           }
                         }}
-                        className="flex flex-col items-center gap-2 rounded-xl bg-[#f5f5f7] p-4 active:scale-95 transition-transform"
+                        className="flex flex-col items-center gap-2 rounded-xl bg-[var(--lern-bg)] p-4 active:scale-95 transition-transform"
                       >
                         <LottieFeedback
                           animation={anim}
                           size={anim === "loading" ? 80 : anim === "streak" ? 48 : 80}
                           loop={anim === "loading" || anim === "streak"}
                         />
-                        <span className="text-xs font-semibold text-[#6e6e73] capitalize">
+                        <span className="text-xs font-semibold text-[var(--lern-text-secondary)] capitalize">
                           {anim === "levelUp" ? "Level Up" : anim}
                         </span>
                       </button>
@@ -378,8 +380,8 @@ export default function VisuellDemoPage() {
 
                 {/* Zurück */}
                 <a
-                  href="/de/demo"
-                  className="block w-full text-center rounded-2xl bg-[#f5f5f7] py-4 text-sm font-semibold text-[#1d1d1f] active:scale-[0.98]"
+                  href={`/${locale}/demo`}
+                  className="block w-full text-center rounded-2xl bg-[var(--lern-bg)] py-4 text-sm font-semibold text-[var(--lern-text-primary)] active:scale-[0.98]"
                 >
                   ← Zurück zur Demo-Übersicht
                 </a>

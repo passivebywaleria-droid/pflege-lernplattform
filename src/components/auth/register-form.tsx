@@ -52,7 +52,7 @@ export function RegisterForm() {
         return
       }
 
-      router.push("/home")
+      router.push("/dashboard")
       router.refresh()
     } catch {
       setError(t("registerError"))

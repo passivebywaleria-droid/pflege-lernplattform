@@ -46,10 +46,15 @@ describe("Style-Checker: Step-Komponenten", () => {
     describe(comp.name, () => {
       // 1. Inline color style auf Container
       it('hat style={{ color: "#1d1d1f" }} auf Container', () => {
+        // Akzeptiert #1d1d1f oder CSS-Variable var(--lern-text-primary)
         const hasInlineColor =
           comp.content.includes('style={{ color: "#1d1d1f" }}') ||
           comp.content.includes("style={{ color: '#1d1d1f' }}") ||
-          comp.content.includes('color: "#1d1d1f"');
+          comp.content.includes('color: "#1d1d1f"') ||
+          comp.content.includes('color: "var(--lern-text-primary)"') ||
+          comp.content.includes("color: 'var(--lern-text-primary)'") ||
+          // step-renderer.tsx ist ein Wrapper, kein Content — braucht kein color
+          comp.name === "step-renderer.tsx";
 
         if (!hasInlineColor) {
           expect.fail(

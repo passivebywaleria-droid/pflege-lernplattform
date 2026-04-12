@@ -1,67 +1,27 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useTts } from "@/hooks/use-tts";
 
 interface TtsButtonProps {
   text: string;
   className?: string;
+  rate?: number;
 }
 
 /**
  * Lautsprecher-Button der Text vorliest.
- * MVP: Browser SpeechSynthesis API (deutsch).
- * Später: Azure KatjaNeural.
+ * Azure KatjaNeural mit Browser-Fallback.
  */
-export function TtsButton({ text, className = "" }: TtsButtonProps) {
-  const [playing, setPlaying] = useState(false);
-  const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
-
-  const toggle = useCallback(() => {
-    if (typeof window === "undefined" || !window.speechSynthesis) return;
-
-    if (playing) {
-      window.speechSynthesis.cancel();
-      setPlaying(false);
-      return;
-    }
-
-    // Vorherige Ausgabe abbrechen
-    window.speechSynthesis.cancel();
-
-    // Klartext extrahieren (HTML-Tags und Markdown entfernen)
-    const cleanText = text
-      .replace(/[#*_~`]/g, "")
-      .replace(/\n+/g, ". ")
-      .trim();
-
-    const utterance = new SpeechSynthesisUtterance(cleanText);
-    utterance.lang = "de-DE";
-    utterance.rate = 1.0;
-
-    // Deutsche Stimme bevorzugen
-    const voices = window.speechSynthesis.getVoices();
-    const germanVoice = voices.find(
-      (v) => v.lang.startsWith("de") && v.name.includes("Female")
-    ) ?? voices.find((v) => v.lang.startsWith("de"));
-    if (germanVoice) {
-      utterance.voice = germanVoice;
-    }
-
-    utterance.onend = () => setPlaying(false);
-    utterance.onerror = () => setPlaying(false);
-
-    utteranceRef.current = utterance;
-    setPlaying(true);
-    window.speechSynthesis.speak(utterance);
-  }, [text, playing]);
+export function TtsButton({ text, className = "", rate }: TtsButtonProps) {
+  const { speak, playing } = useTts();
 
   return (
     <button
-      onClick={toggle}
+      onClick={() => speak(text, rate)}
       className={`flex h-9 w-9 items-center justify-center rounded-full transition-colors ${
         playing
-          ? "bg-[#0071e3] text-white"
-          : "bg-[#f5f5f7] text-[#6e6e73] hover:bg-[#e5e5ea]"
+          ? "bg-[var(--lern-accent)] text-white"
+          : "bg-[var(--lern-bg)] text-[var(--lern-text-secondary)] hover:bg-[var(--lern-divider)]"
       } ${className}`}
       title={playing ? "Stoppen" : "Vorlesen"}
     >

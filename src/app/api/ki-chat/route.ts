@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 const NEBIUS_API_URL = "https://api.studio.nebius.com/v1/chat/completions";
 
-const SYSTEM_PROMPT = `Du bist ein freundlicher Pflege-Tutor für Auszubildende in der generalistischen Pflegeausbildung (Deutschland).
+const SYSTEM_PROMPT_BASE = `Du bist ein freundlicher Pflege-Tutor für Auszubildende in der generalistischen Pflegeausbildung (Deutschland).
 
 Regeln:
 1. Antworte nur zu Pflege-Themen (alle 11 Curricularen Einheiten der PflAPrV).
@@ -20,9 +20,22 @@ interface ChatMessage {
 
 export async function POST(request: NextRequest) {
   try {
+    interface RecentError {
+      stepTitle: string;
+      gewaehlteOption?: string;
+      richtigeAntwort?: string;
+    }
+
     const { messages, context } = await request.json() as {
       messages: ChatMessage[];
-      context?: { leTitle?: string; stepTitle?: string; glossar?: string[] };
+      context?: {
+        leTitle?: string;
+        stepTitle?: string;
+        stepBody?: string;
+        glossar?: string[];
+        sprachLevel?: "b1" | "c1";
+        recentErrors?: RecentError[];
+      };
     };
 
     if (!messages || !Array.isArray(messages) || messages.length === 0) {
@@ -41,15 +54,42 @@ export async function POST(request: NextRequest) {
     }
 
     // System-Prompt mit Kontext anreichern
-    let enrichedPrompt = SYSTEM_PROMPT;
+    let enrichedPrompt = SYSTEM_PROMPT_BASE;
+
+    const sprachLevel = context?.sprachLevel ?? "c1";
+    if (sprachLevel === "b1") {
+      enrichedPrompt += `\n\nWICHTIG: Der Schüler lernt auf Sprachniveau B1. Verwende einfache, kurze Sätze. Erkläre Fachbegriffe immer in Klammern mit einfachen Worten. Vermeide Nebensätze und Passiv.`;
+    } else {
+      enrichedPrompt += `\n\nDer Schüler lernt auf Sprachniveau C1. Du kannst Fachsprache verwenden, erkläre aber neue Begriffe beim ersten Mal.`;
+    }
+
     if (context?.leTitle) {
-      enrichedPrompt += `\n\nAktuelles Thema: ${context.leTitle}`;
+      enrichedPrompt += `\n\nDer Schüler bearbeitet gerade: ${context.leTitle}`;
     }
     if (context?.stepTitle) {
       enrichedPrompt += `\nAktueller Step: ${context.stepTitle}`;
     }
+    if (context?.stepBody) {
+      // Nur erste 300 Zeichen, um Token zu sparen
+      const bodyShort = context.stepBody.length > 300
+        ? context.stepBody.slice(0, 300) + '...'
+        : context.stepBody;
+      enrichedPrompt += `\nInhalt des Steps: ${bodyShort}`;
+    }
+    if (context?.recentErrors && context.recentErrors.length > 0) {
+      const fehlerText = context.recentErrors
+        .map((e, i) => {
+          let line = `${i + 1}. "${e.stepTitle}"`;
+          if (e.gewaehlteOption) line += ` — gewählt: "${e.gewaehlteOption}"`;
+          if (e.richtigeAntwort) line += `, richtig wäre: "${e.richtigeAntwort}"`;
+          return line;
+        })
+        .join("\n");
+      enrichedPrompt += `\n\nLetzte Fehler des Schülers:\n${fehlerText}\nGehe auf diese Fehler ein wenn der Schüler danach fragt. Nutze das Sandwich-Prinzip: Loben, Korrigieren, Ermutigen.`;
+    }
     if (context?.glossar && context.glossar.length > 0) {
-      enrichedPrompt += `\nGlossar-Begriffe dieser LE: ${context.glossar.join(", ")}`;
+      // Nur erste 10 Begriffe — spart ~100 Tokens bei großen Glossaren
+      enrichedPrompt += `\nGlossar-Begriffe dieser LE: ${context.glossar.slice(0, 10).join(", ")}`;
     }
 
     const apiKey = process.env.NEBIUS_API_KEY;
@@ -74,8 +114,8 @@ export async function POST(request: NextRequest) {
           { role: "system", content: enrichedPrompt },
           ...messages,
         ],
-        max_tokens: 300,
-        temperature: 0.7,
+        max_tokens: 220,
+        temperature: 0.5,
       }),
     });
 

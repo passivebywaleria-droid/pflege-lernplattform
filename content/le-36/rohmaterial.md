@@ -14,6 +14,23 @@
 | Q4 | I Care Pflege, Kap. 56.8 — Informieren, Schulen, Anleiten, Beraten bei Sucht | S.1406–1407 |
 | Q5 | DHS (Deutsche Hauptstelle für Suchtfragen), S3-Leitlinie Alkoholbezogene Störungen (AWMF) | — |
 | Q6 | PflBG §5, BtMG, PsychKG, SGB V/VI | — |
+| Q-AP | I Care Anatomie Physiologie (Thieme, 2020) | Kap. Neuron, Synapse, Neurotransmitter, Vegetatives Nervensystem |
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: LE-52
+
+**A&P-01** Neuron — Aufbau: Zellkörper (Soma mit Zellkern), Dendriten (empfangen Signale), Axon (leitet Signale weiter, kann bis 1 m lang sein). Myelinscheide (Schwann-Zellen im PNS, Oligodendrozyten im ZNS): isoliert Axon → saltatorische Erregungsleitung (schneller, bis 120 m/s). Ranvier-Schnürringe = Lücken in Myelinscheide = Sprungstellen. [Q-AP]
+
+**A&P-02** Synaptische Übertragung: Aktionspotential erreicht präsynaptische Endigung → Ca²⁺-Einstrom → Vesikel verschmelzen mit Membran → Neurotransmitter werden in synaptischen Spalt freigesetzt → binden an Rezeptoren der postsynaptischen Membran → Wirkung (erregend/hemmend). Inaktivierung: enzymatischer Abbau (z.B. Acetylcholinesterase) oder Wiederaufnahme (Reuptake) in präsynaptische Zelle. [Q-AP]
+
+**A&P-03** Wichtige Neurotransmitter: Acetylcholin (neuromuskuläre Endplatte, Parasympathikus). Noradrenalin (Sympathikus, Aufmerksamkeit). Dopamin (Belohnung, Motorik — Mangel = Parkinson, Überschuss = Schizophrenie). Serotonin (Stimmung, Schlaf — Mangel = Depression). GABA (wichtigster hemmender NT im ZNS). Glutamat (wichtigster erregender NT im ZNS). Endorphine (Schmerzunterdrückung, Euphorie). [Q-AP]
+
+**A&P-04** Vegetatives (autonomes) Nervensystem: Sympathikus ("fight or flight"): Pupillen weit, HF↑, RR↑, Bronchien weit, BZ↑, Darmperistaltik↓. Parasympathikus ("rest and digest"): Pupillen eng, HF↓, Bronchien eng, Verdauung↑, Speichelfluss↑. Transmitter: Sympathikus = Noradrenalin (postganglionär), Parasympathikus = Acetylcholin. Enterisches Nervensystem = "Bauchhirn" (100 Mio. Neuronen, steuert Verdauung weitgehend autonom). [Q-AP]
 
 ---
 

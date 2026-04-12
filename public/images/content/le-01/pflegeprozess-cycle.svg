@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" fill="none">
+
+  <!-- Title -->
+  <text x="180" y="30" text-anchor="middle" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)">Der Pflegeprozess</text>
+
+  <!-- Center circle -->
+  <circle cx="180" cy="195" r="38" fill="#E5DFD6"/>
+  <text x="180" y="191" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Pflege-</text>
+  <text x="180" y="205" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">prozess</text>
+
+  <!-- Outer guide circle (invisible, r=110) -->
+  <!-- 6 steps at 60° intervals, starting top -->
+
+  <!-- Step 1: Assessment (top, 270°) -->
+  <rect x="134" y="56" width="92" height="36" rx="18" fill="#7A816C"/>
+  <text x="180" y="70" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#fafaf9">1</text>
+  <text x="180" y="84" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="#fafaf9">Assessment</text>
+
+  <!-- Step 2: Diagnose (top-right, 330°) -->
+  <rect x="249" y="101" width="92" height="36" rx="18" fill="#AE6965"/>
+  <text x="295" y="115" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#fafaf9">2</text>
+  <text x="295" y="129" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="#fafaf9">Diagnose</text>
+
+  <!-- Step 3: Ziele (bottom-right, 30°) -->
+  <rect x="249" y="247" width="92" height="36" rx="18" fill="#A58B71"/>
+  <text x="295" y="261" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#fafaf9">3</text>
+  <text x="295" y="275" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="#fafaf9">Ziele</text>
+
+  <!-- Step 4: Planung (bottom, 90°) -->
+  <rect x="134" y="296" width="92" height="36" rx="18" fill="#D1A9A5"/>
+  <text x="180" y="310" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">4</text>
+  <text x="180" y="324" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="var(--lern-text-primary, #1d1d1f)">Planung</text>
+
+  <!-- Step 5: Durchführung (bottom-left, 150°) -->
+  <rect x="14" y="247" width="108" height="36" rx="18" fill="#7A816C" opacity="0.8"/>
+  <text x="68" y="261" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#fafaf9">5</text>
+  <text x="68" y="275" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="#fafaf9">Durchführung</text>
+
+  <!-- Step 6: Evaluation (top-left, 210°) -->
+  <rect x="18" y="101" width="96" height="36" rx="18" fill="#AE6965" opacity="0.8"/>
+  <text x="66" y="115" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#fafaf9">6</text>
+  <text x="66" y="129" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="#fafaf9">Evaluation</text>
+
+  <!-- Curved arrows connecting steps -->
+  <!-- 1→2 -->
+  <path d="M222 80 Q260 80 258 105" stroke="#33302b" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+  <!-- 2→3 -->
+  <path d="M310 137 Q318 190 310 247" stroke="#33302b" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+  <!-- 3→4 -->
+  <path d="M258 280 Q240 300 226 302" stroke="#33302b" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+  <!-- 4→5 -->
+  <path d="M134 310 Q100 300 118 280" stroke="#33302b" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+  <!-- 5→6 -->
+  <path d="M52 247 Q44 190 52 137" stroke="#33302b" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+  <!-- 6→1 (back to start) -->
+  <path d="M110 105 Q130 80 134 74" stroke="#33302b" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="var(--lern-text-primary, #1d1d1f)"/>
+    </marker>
+  </defs>
+</svg>

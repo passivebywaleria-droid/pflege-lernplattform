@@ -1,9 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
+import { analysiereFehler } from "@/lib/adaptive/fehler-analyse";
+import type { FehlerAnalyse } from "@/lib/adaptive/fehler-analyse";
+import { generiereSandwichFeedback, SandwichFeedbackDisplay } from "./bloom-feedback";
 
 interface StepFillInProps {
   title: string;
@@ -12,6 +15,8 @@ interface StepFillInProps {
   sentence: string;
   options: string[];
   correctIndex: number;
+  sprachLevel?: "c1" | "b1";
+  bloomLevel?: number;
   onNext: (correct: boolean) => void;
 }
 
@@ -22,33 +27,66 @@ export function StepFillIn({
   sentence,
   options,
   correctIndex,
+  sprachLevel = "c1",
+  bloomLevel,
   onNext,
 }: StepFillInProps) {
   const [selected, setSelected] = useState<number | null>(null);
   const [submitted, setSubmitted] = useState(false);
+  const [fehlerAnalyse, setFehlerAnalyse] = useState<FehlerAnalyse | null>(null);
+  const startTimeRef = useRef<number>(Date.now());
+
+  // Reset startTime bei neuem Step
+  useEffect(() => {
+    startTimeRef.current = Date.now();
+  }, [title, sentence]);
 
   const parts = sentence.split("___");
   const isCorrect = selected === correctIndex;
 
   const handleSubmit = () => {
     setSubmitted(true);
+
+    if (!isCorrect && selected !== null) {
+      const antwortZeit = Date.now() - startTimeRef.current;
+      const analyse = analysiereFehler(
+        antwortZeit,
+        options[selected],
+        options[correctIndex],
+        options,
+        "fillin",
+        sprachLevel === "b1" ? 2 : 4,
+      );
+      setFehlerAnalyse(analyse);
+    }
   };
 
+  // Sandwich-Feedback generieren
+  const sandwich = submitted
+    ? generiereSandwichFeedback(
+        isCorrect,
+        options[correctIndex],
+        undefined,
+        fehlerAnalyse ?? undefined,
+        bloomLevel,
+      )
+    : null;
+
   return (
-    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
-      <h2 className="text-2xl font-bold text-[#1d1d1f]">
+    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+      <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
           <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 
       {/* Sentence with blanks */}
-      <div className="rounded-2xl bg-white border border-[#d2d2d7] p-5">
-        <p className="text-lg text-[#1d1d1f] leading-relaxed">
+      <div className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5">
+        <p className="text-lg text-[var(--lern-text-primary)] leading-relaxed">
           {parts.map((part, i) => (
             <React.Fragment key={i}>
               <FachbegriffText glossar={glossar ?? []}>{part}</FachbegriffText>
@@ -56,12 +94,12 @@ export function StepFillIn({
                 <span
                   className={`inline-block px-3 py-0.5 mx-1 rounded-lg font-semibold transition-colors ${
                     submitted && isCorrect
-                      ? "bg-[#30D158]/20 text-[#1d1d1f]"
+                      ? "bg-[#6B8F71]/20 text-[var(--lern-text-primary)]"
                       : submitted && !isCorrect
-                        ? "bg-[#FF3B30]/20 text-[#1d1d1f]"
+                        ? "bg-[#C96B5C]/20 text-[var(--lern-text-primary)]"
                         : selected !== null
-                          ? "bg-[#0071e3]/10 text-[#0071e3]"
-                          : "bg-[#e8e8ed] text-[#86868b]"
+                          ? "bg-[#C4877F]/10 text-[#C4877F]"
+                          : "bg-[var(--lern-border)] text-[var(--lern-text-tertiary)]"
                   }`}
                 >
                   {selected !== null ? options[selected] : "___"}
@@ -73,20 +111,20 @@ export function StepFillIn({
       </div>
 
       {/* Options */}
-      <div className="space-y-2">
+      <div className="space-y-2" role="radiogroup" aria-label="Antwortmöglichkeiten">
         {options.map((opt, i) => {
-          let borderColor = "border-[#d2d2d7]";
-          let bgColor = "bg-white";
+          let borderColor = "border-[var(--lern-border)]";
+          let bgColor = "bg-[var(--lern-bg-primary)]";
 
           if (submitted && correctIndex === i) {
-            borderColor = "border-[#30D158]";
-            bgColor = "bg-[#30D158]/5";
+            borderColor = "border-[#6B8F71]";
+            bgColor = "bg-[#6B8F71]/5";
           } else if (submitted && selected === i && correctIndex !== i) {
-            borderColor = "border-[#FF3B30]";
-            bgColor = "bg-[#FF3B30]/5";
+            borderColor = "border-[#C96B5C]";
+            bgColor = "bg-[#C96B5C]/5";
           } else if (selected === i) {
-            borderColor = "border-[#0071e3]";
-            bgColor = "bg-[#0071e3]/5";
+            borderColor = "border-[#C4877F]";
+            bgColor = "bg-[#C4877F]/5";
           }
 
           return (
@@ -94,7 +132,10 @@ export function StepFillIn({
               key={i}
               onClick={() => !submitted && setSelected(i)}
               whileTap={!submitted ? { scale: 0.98 } : undefined}
-              className={`w-full rounded-xl border-2 ${borderColor} ${bgColor} p-3 text-left text-sm font-medium text-[#1d1d1f] transition-colors`}
+              role="radio"
+              aria-checked={selected === i}
+              aria-label={`Option: ${opt}`}
+              className={`w-full rounded-xl border-2 ${borderColor} ${bgColor} p-3 text-left text-sm font-medium text-[var(--lern-text-primary)] transition-colors focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2`}
             >
               {opt}
             </motion.button>
@@ -106,31 +147,25 @@ export function StepFillIn({
         <button
           onClick={handleSubmit}
           disabled={selected === null}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED] disabled:opacity-40 disabled:cursor-not-allowed"
+          aria-label="Antwort prüfen"
+          className="w-full rounded-2xl bg-[#C4877F] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2"
         >
           Prüfen
         </button>
       ) : (
         <div className="space-y-4">
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            className={`rounded-2xl p-4 ${
-              isCorrect
-                ? "bg-[#30D158]/10 border border-[#30D158]/30"
-                : "bg-[#FF3B30]/10 border border-[#FF3B30]/30"
-            }`}
-          >
-            <p className="font-semibold text-[#1d1d1f]">
-              {isCorrect
-                ? "Richtig!"
-                : <FachbegriffText glossar={glossar ?? []}>{`Nicht ganz. Die richtige Antwort ist: ${options[correctIndex]}`}</FachbegriffText>}
-            </p>
-          </motion.div>
+          {sandwich && (
+            <SandwichFeedbackDisplay
+              feedback={sandwich}
+              correct={isCorrect}
+              fehlerKategorie={fehlerAnalyse?.kategorie}
+            />
+          )}
 
           <button
             onClick={() => onNext(isCorrect)}
-            className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+            aria-label="Weiter zum nächsten Schritt"
+            className="w-full rounded-2xl bg-[#C4877F] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2"
           >
             Weiter
           </button>

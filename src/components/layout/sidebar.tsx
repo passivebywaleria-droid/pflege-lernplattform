@@ -2,43 +2,44 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
 import { cn } from "@/lib/utils"
 
 const studentNav = [
-  { key: "home" as const, href: "/home", icon: HomeIcon },
-  { key: "learn" as const, href: "/learn", icon: BookIcon },
-  { key: "review" as const, href: "/review", icon: RepeatIcon },
-  { key: "progress" as const, href: "/progress", icon: ChartIcon },
-  { key: "glossary" as const, href: "/glossary", icon: BookOpenIcon },
+  { key: "home" as const, path: "/dashboard", icon: HomeIcon },
+  { key: "learn" as const, path: "/lernen", icon: BookIcon },
+  { key: "wochenplan" as const, path: "/wochenplan", icon: CalendarIcon },
+  { key: "review" as const, path: "/review", icon: RepeatIcon },
+  { key: "progress" as const, path: "/fortschritt", icon: ChartIcon },
+  { key: "glossary" as const, path: "/glossar", icon: BookOpenIcon },
 ]
 
 const teacherNav = [
-  { key: "dashboard" as const, href: "/teacher", icon: LayoutIcon },
-  { key: "students" as const, href: "/teacher/students", icon: UsersIcon },
-  { key: "reports" as const, href: "/teacher/reports", icon: ChartIcon },
+  { key: "dashboard" as const, path: "/lehrer", icon: LayoutIcon },
 ]
 
 export function Sidebar({ role }: { role: "student" | "teacher" | "principal" | "admin" }) {
   const t = useTranslations("nav")
   const pathname = usePathname()
+  const locale = useLocale()
   const nav = role === "student" ? studentNav : teacherNav
 
   return (
     <aside className="hidden md:flex md:w-64 md:flex-col md:border-e md:border-border md:bg-sidebar">
       <div className="flex h-16 items-center px-6">
-        <Link href="/home" className="text-lg font-bold text-primary">
+        <Link href={`/${locale}/dashboard`} className="text-lg font-bold text-primary">
           Pflege
         </Link>
       </div>
       <nav className="flex-1 space-y-1 px-3 py-4">
         {nav.map((item) => {
+          const href = `/${locale}${item.path}`
           const isActive =
-            pathname === item.href || pathname.startsWith(item.href + "/")
+            pathname === href || pathname.startsWith(href + "/")
           return (
             <Link
               key={item.key}
-              href={item.href}
+              href={href}
               className={cn(
                 "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
                 isActive
@@ -52,15 +53,7 @@ export function Sidebar({ role }: { role: "student" | "teacher" | "principal" | 
           )
         })}
       </nav>
-      <div className="border-t border-border p-3">
-        <Link
-          href="/settings"
-          className="flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-sidebar-foreground transition-colors hover:bg-sidebar-accent/50"
-        >
-          <SettingsIcon className="h-5 w-5" />
-          {t("settings")}
-        </Link>
-      </div>
+      {/* Settings-Link deaktiviert bis /settings Page existiert */}
     </aside>
   )
 }
@@ -129,6 +122,17 @@ function UsersIcon({ className }: { className?: string }) {
       <circle cx="9" cy="7" r="4" />
       <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
       <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+    </svg>
+  )
+}
+
+function CalendarIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect width="18" height="18" x="3" y="4" rx="2" />
+      <path d="M16 2v4" />
+      <path d="M8 2v4" />
+      <path d="M3 10h18" />
     </svg>
   )
 }

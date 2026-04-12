@@ -15,6 +15,27 @@
 - [Q4] S3-Leitlinie Supportive Therapie bei onkologischen Patienten (DGHO/DKG), 2020
 - [Q5] Robert Koch-Institut: Empfehlungen für immunsupprimierte Patienten
 - [Q6] PflBG §5 / Pflege-Charta
+- [Q-AP] I Care Anatomie Physiologie (Thieme, 2020), Kap. Blut, Hämatopoese, Blutgruppen
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: LE-41, LE-55
+
+**A&P-01** Blut — Zusammensetzung: Ca. 5-6 L beim Erwachsenen (7-8% des Körpergewichts). Plasma (55%): Wasser (90%), Proteine (Albumin, Globuline, Fibrinogen), Elektrolyte, Nährstoffe, Abfallstoffe, Hormone. Zelluläre Bestandteile (45% = Hämatokrit): Erythrozyten (99%), Leukozyten (<1%), Thrombozyten (<1%). [Q-AP]
+
+**A&P-02** Erythrozyten (rote Blutkörperchen): 4,5-5,5 Mio./μl. Bikonkave Scheiben, kernlos (→ mehr Platz für Hämoglobin). Hämoglobin (Hb): 12-16 g/dl (F) bzw. 14-18 g/dl (M). 1 Hb bindet 4 O₂. Lebensdauer: ca. 120 Tage. Abbau: Milz + Leber → Bilirubin (Gallenfarbstoff) → Stuhlfarbe. Bildung: Erythropoese im roten Knochenmark, gesteuert durch Erythropoetin (EPO, produziert in der Niere). [Q-AP]
+
+**A&P-03** Leukozyten (weiße Blutkörperchen): 4.000-10.000/μl. Granulozyten (60-70%): Neutrophile (Phagozytose von Bakterien), Eosinophile (Parasitenabwehr, Allergien), Basophile (Histamin → Allergie). Monozyten (2-8%): werden im Gewebe zu Makrophagen (Fresszellen). Lymphozyten (20-30%): T-Zellen, B-Zellen, NK-Zellen (s. Immunsystem). Leukozytose (>10.000) = Entzündungshinweis, Leukopenie (<4.000) = Infektanfälligkeit. [Q-AP]
+
+**A&P-04** Thrombozyten (Blutplättchen): 150.000-400.000/μl. Kernlose Zellfragmente aus Megakaryozyten (Knochenmark). Lebensdauer: 8-12 Tage. Funktion: Blutstillung (Hämostase). Primäre Hämostase: Thrombozytenadhäsion + Aggregation = Plättchenpfropf (1-3 Min). Sekundäre Hämostase: Gerinnungskaskade (intrinsisch + extrinsisch) → Fibrin-Netz = stabiler Thrombus. [Q-AP]
+
+**A&P-05** Blutgruppen (AB0-System): Gen auf Chromosom 9 bestimmt Antigene auf Erythrozyten-Oberfläche. Gruppe A: Antigen A + Anti-B-Antikörper. Gruppe B: Antigen B + Anti-A-Antikörper. Gruppe AB: beide Antigene, keine Antikörper (Universalempfänger). Gruppe 0: keine Antigene, beide Antikörper (Universalspender). Rhesusfaktor: D-Antigen positiv (85%) oder negativ (15%). Rh-negative Mutter + Rh-positiver Fetus → Rhesusprophylaxe mit Anti-D nötig! [Q-AP]
+
+**A&P-06** Hämatopoese (Blutbildung): Ort: rotes Knochenmark (beim Erwachsenen in platten Knochen: Sternum, Becken, Rippen, Wirbelkörper). Pluripotente Stammzelle → myeloische Stammzelle (Erythrozyten, Granulozyten, Monozyten, Thrombozyten) oder lymphatische Stammzelle (T-, B-, NK-Zellen). Steuerung: Wachstumsfaktoren (EPO für Erythrozyten, G-CSF für Granulozyten, Thrombopoetin für Thrombozyten). [Q-AP]
 
 ---
 

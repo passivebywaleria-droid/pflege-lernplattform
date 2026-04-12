@@ -17,6 +17,7 @@
     "home": "Ana Sayfa",
     "learn": "Öğren",
     "review": "Tekrar",
+    "wochenplan": "Haftalık Plan",
     "progress": "İlerleme",
     "glossary": "Sözlük",
     "settings": "Ayarlar",
@@ -96,5 +97,245 @@
     "hard": "Zor",
     "good": "İyi",
     "easy": "Kolay"
+  },
+  "fortschritt": {
+    "title": "İlerlemeniz",
+    "subtitle": "Tüm 11 Müfredat Biriminin genel görünümü",
+    "gesamtFortschritt": "Eğitimin {prozent}%'i tamamlandı",
+    "lesAbgeschlossen": "{total} öğrenme biriminden {done} tamamlandı",
+    "leLabel": "ÖB {nr}",
+    "abgeschlossen": "Tamamlandı",
+    "nochOffen": "Henüz başlanmadı",
+    "gestartet": "Başladı",
+    "zurueck": "Geri",
+    "lernenStarten": "Öğrenmeye başla",
+    "keinFortschritt": "Henüz ilerleme yok — ilk dersinize başlayın!"
+  },
+  "glossar": {
+    "title": "Terimler Sözlüğü",
+    "searchPlaceholder": "Terim ara...",
+    "all": "Tümü",
+    "results": "terim",
+    "noResults": "Terim bulunamadı."
+  },
+  "lehrer": {
+    "title": "Öğretmen Paneli",
+    "klasseUebersicht": "Sınıf Genel Görünümü",
+    "name": "Ad",
+    "letzterLogin": "Son Giriş",
+    "fortschritt": "İlerleme",
+    "aktiveCE": "Mevcut Birim",
+    "status": "Durum",
+    "aktiv": "Aktif",
+    "inaktiv": "Aktif değil",
+    "brauchtHilfe": "Yardıma ihtiyacı var",
+    "klassenStatistiken": "Sınıf İstatistikleri",
+    "durchschnittlicherFortschritt": "Ortalama İlerleme",
+    "aktivsteSchueler": "En Aktif Öğrenciler",
+    "schwierigsteThemen": "En Zor Konular",
+    "hilfeBereich": "Yardım Bölümü",
+    "hilfeEmpfehlung": "Bu konu yüz yüze derste işlenmelidir.",
+    "fehlversuche": "Başarısız denemeler",
+    "schueler": "öğrenci",
+    "neueNachrichten": "Yeni mesajlar",
+    "nachrichtVon": "Öğrenciden mesaj",
+    "kontextAnzeigen": "Öğrenme bağlamını göster"
+  },
+  "lehrerChat": {
+    "title": "Öğretmene sor",
+    "placeholder": "Öğretmene sorunuz...",
+    "kontextHinweis": "Öğretmen öğrenme bağlamınızı görüyor",
+    "leerText": "Öğretmeninize doğrudan soru sorabilirsiniz. Öğretmen neyin üzerinde çalıştığınızı görüyor.",
+    "gesendet": "Gönderildi",
+    "antwort": "Cevap"
+  },
+  "offline": {
+    "title": "İnternet bağlantısı yok",
+    "subtitle": "Şu anda çevrimdışısınız. İşte mevcut olan içerikler.",
+    "verfuegbar": "Çevrimdışı kullanılabilir",
+    "keineLektionen": "İndirilmiş ders yok.",
+    "karteikarten": "Kartları tekrarla",
+    "karteikartenHinweis": "Çevrimdışı da çalışır",
+    "fortschrittGespeichert": "İlerleme kaydedildi",
+    "syncHinweis": "İnternet bağlantısı geri geldiğinde senkronize edilecek",
+    "erneutVerbinden": "Yeniden bağlan",
+    "speichern": "Çevrimdışı kaydet",
+    "gespeichert": "Çevrimdışı kullanılabilir",
+    "entfernen": "Kaldır"
+  },
+  "praxis": {
+    "modusAktiv": "Uygulama modu aktif",
+    "theorieModus": "Teori modu",
+    "kurzeSessions": "Ara sırada kısa oturumlar",
+    "toggleLabel": "Stajdayım",
+    "empfohlen": "Staj sırasında önerilen",
+    "karteikarten": "Kartları tekrarla",
+    "karteikartenHinweis": "İş molası için mükemmel",
+    "reflexion": "Yansıma sorusu",
+    "reflexionFrage": "Bugün serviste ne gördün? Hangi bakım uygulaması dikkat çekiciydi?",
+    "quickReview": "Hızlı tekrar (30 dakika)",
+    "quickReviewHinweis": "Pratik deneyimini teoriyle bağla"
+  },
+  "dashboard": {
+    "greeting": {
+      "morning": "Günaydın",
+      "afternoon": "İyi günler",
+      "evening": "İyi akşamlar"
+    },
+    "subtitle": "Öğrenme ilerlemenize genel bakış",
+    "tagesplan": "Bugünkü planın",
+    "geschafft": "Başarıldı!",
+    "badges": "Rozetlerin",
+    "streakMotivation": "{count}. gün üst üste! Devam et!",
+    "sessionsDone": "{count} oturum tamamlandı",
+    "karteikartenWiederholen": "{count} kart tekrar edilecek"
+  },
+  "wochenplan": {
+    "title": "Haftalık Plan",
+    "today": "Bugün",
+    "progress": "İlerleme",
+    "startNow": "Şimdi başla",
+    "weekOverview": "Haftalık Genel Bakış",
+    "weekProgress": "Bu hafta {percent}% tamamlandı",
+    "weekend": "Hafta sonu!",
+    "weekendHint": "Boş zamanının tadını çıkar. Pazartesi devam ederiz."
+  },
+  "pruefung": {
+    "title": "Sınav Modu",
+    "subtitle": "Gerçek formatta simüle edilmiş sınavlar",
+    "infoTitle": "Gerçek sınavdaki gibi",
+    "fragen": "Çoktan seçmeli 20 soru",
+    "zeit": "Zaman limiti: Soru başına 90 saniye",
+    "keineHilfe": "Yardım yok, sözlük yok, açıklama yok",
+    "ergebnisHinweis": "Sonuç + zayıf yönlerin analizi",
+    "starten": "Sınavı başlat",
+    "abbrechen": "İptal",
+    "letzterVersuch": "Son deneme",
+    "pruefungsreif": "Sınava hazır",
+    "fastBereit": "Neredeyse hazır",
+    "nochUeben": "Daha fazla çalışmalı",
+    "nichtGetestet": "Henüz test edilmedi",
+    "richtig": "Doğru",
+    "falsch": "Yanlış",
+    "zeitLabel": "Süre",
+    "schwaechen": "Bu konuları tekrar etmelisin",
+    "alleDetails": "Tüm soruların detayı",
+    "zurueck": "Geri",
+    "schwueben": "Zayıf yönleri çalış"
+  },
+  "lernzeit": {
+    "title": "Öğrenme Süresi",
+    "subtitle": "Aktivite kanıtın",
+    "gesamt": "Toplam",
+    "gesamtXp": "Toplam XP",
+    "aktiveTage": "Aktif Günler",
+    "letzte90": "Son 90 gün",
+    "stundenProWoche": "Haftalık saatler",
+    "bearbeitete": "İşlenen öğrenme birimleri",
+    "pdfExport": "PDF dışa aktar",
+    "pdfHinweisTitle": "Okul için öğrenme süresi kanıtı",
+    "pdfHinweisText": "Aktif öğrenme sürenizin yazdırılabilir bir kanıtını oluşturmak için PDF dışa aktar butonuna tıklayın."
+  },
+  "einstufung": {
+    "welcome": {
+      "title": "Neler bildiğini keşfedelim!",
+      "subtitle": "Kısa bir test — stres yok, not yok. İçerikleri senin seviyene göre ayarlıyoruz.",
+      "duration": "Sadece 5–10 dakika sürüyor",
+      "feature1": "Bilgine göre uyum sağlar",
+      "feature2": "Dil ve uzmanlık bilgisini ayrı ayrı ölçer",
+      "feature3": "Eğlenceli ve baskısız",
+      "startButton": "Haydi başlayalım!"
+    },
+    "axes": {
+      "language": "Dil Yetkinliği",
+      "knowledge": "Hemşirelik Bilgisi"
+    },
+    "question": {
+      "counter": "Soru {current} / {total}"
+    },
+    "feedback": {
+      "correct": "Doğru!",
+      "incorrect": "Tam değil — ama sorun değil!",
+      "next": "Devam"
+    },
+    "result": {
+      "title": "Tamamlandı! İşte profilin",
+      "duration": "{minutes} dakikada tamamlandı",
+      "level": "Seviye",
+      "correct": "doğru",
+      "summary": "Bu senin için ne anlama geliyor",
+      "startLearning": "Şimdi öğrenmeye başla",
+      "languageLevels": {
+        "1": "Temel oluşturma",
+        "2": "Terimleri öğrenme",
+        "3": "İyi temel",
+        "4": "Uzmanlık dilinde güvenli",
+        "5": "Ana dil seviyesi"
+      },
+      "knowledgeLevels": {
+        "1": "Her şey yeni",
+        "2": "İlk deneyimler",
+        "3": "Sağlam temel bilgi",
+        "4": "İleri düzey",
+        "5": "Uzman bilgisi"
+      },
+      "profiles": {
+        "expert": "Hem dil hem de bilgi açısından güçlüsün. Doğrudan ileri görevler ve karmaşık vakalarla başlıyoruz.",
+        "languageStrong": "Dilin güçlü ama hemşirelik bilgisi henüz gelişiyor. Temellerden başlıyoruz — uzmanlık dilinde.",
+        "knowledgeStrong": "Çok hemşirelik deneyimin var ama Almanca uzmanlık dili pratik gerektiriyor. Her şeyi basit dille anlatıp terimleri adım adım öğretiyoruz.",
+        "beginner": "Her şey yeni — ve bu tamamen normal! Yavaş başlıyoruz, basit dille ve en önemli temellerle.",
+        "intermediate": "Sağlam bir temellin var. Bunun üzerine inşa edip hem dili hem bilgiyi hedefli olarak derinleştiriyoruz."
+      }
+    }
+  },
+  "meilensteine": {
+    "ersteSchritte": "İlk Adımlar",
+    "amBall": "Devam Ediyor",
+    "wochenkrieger": "Hafta Savaşçısı",
+    "monatsmeister": "Ay Şampiyonu",
+    "xpSammler": "XP Toplayıcı",
+    "xpMeister": "XP Ustası",
+    "xpLegende": "XP Efsanesi",
+    "ceAbgeschlossen": "Birim Tamamlandı",
+    "karteikartenStarter": "Kart Başlangıcı",
+    "karteikartenPro": "Kart Profesyoneli",
+    "volleWoche": "Tam Hafta",
+    "pruefungsreif": "Sınava Hazır",
+    "erreicht": "Başarı kazanıldı!"
+  },
+  "errorBoundary": {
+    "title": "Bir şeyler ters gitti",
+    "message": "Endişelenme, ilerlemeniz kaydedildi.",
+    "retry": "Tekrar dene",
+    "details": "Teknik detaylar"
+  },
+  "notifications": {
+    "erinnerung": "Bugün henüz çalışmadın. Sadece 15 dakika yeterli!",
+    "aktivieren": "Hatırlatıcıları etkinleştir?",
+    "aktivierenBeschreibung": "Bugün çalışmadığında seni hatırlatırız."
+  },
+  "themen": {
+    "backToLernen": "Genel bakışa dön",
+    "invalidTag": "Bilinmeyen konu",
+    "noContent": "Bu konu için henüz içerik mevcut değil.",
+    "anatomie": "Anatomi",
+    "pflege": "Bakım",
+    "krankheitslehre": "Hastalık Bilgisi",
+    "anatomieTitle": "Anatomi ve Fizyoloji",
+    "anatomieDesc": "İnsan vücudunun yapısı ve işlevleri",
+    "pflegeTitle": "Hemşirelik Uygulamaları",
+    "pflegeDesc": "Koruma, dokümantasyon, iletişim ve uygulamalar",
+    "krankheitslehreTitle": "Hastalık Bilgisi",
+    "krankheitslehreDesc": "Patofizyoloji, semptomlar, tanı ve tedavi",
+    "themenUeben": "Konuya göre çalış"
+  },
+  "checkpoint": {
+    "score_A_title": "Mükemmel anladın!",
+    "score_A_skip": "{count} bölümü atlıyorsun — onlara ihtiyacın yok.",
+    "score_A_body": "Konuyu kavradın. Uygulamaya geçelim!",
+    "score_B_title": "Aferin!",
+    "score_B_body": "Sağlam temel — şimdi adım adım derinleştiriyoruz.",
+    "score_C_title": "Sorun değil!",
+    "score_C_body": "Her şeyi baştan öğreniyoruz — adım adım."
   }
 }

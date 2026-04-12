@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 
 interface StepSliderProps {
@@ -49,26 +49,26 @@ export function StepSlider({
   const pct = ((value - min) / (max - min)) * 100;
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
-      <h2 className="text-2xl font-bold text-[#1d1d1f]">
+    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+      <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
           <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 
-      <div className="rounded-2xl bg-[#0071e3]/5 border border-[#0071e3]/15 p-4">
-        <p className="text-lg font-medium text-[#1d1d1f]">
+      <div className="rounded-2xl bg-[var(--lern-accent-bg)] border border-[var(--lern-accent)]/15 p-4">
+        <p className="text-lg font-medium text-[var(--lern-text-primary)]">
           {instruction}
         </p>
       </div>
 
       {/* Gewählter Wert */}
       <div className="text-center">
-        <p className="text-4xl font-bold text-[#0071e3]">
+        <p className="text-4xl font-bold text-[var(--lern-accent)]">
           {value} {unit}
         </p>
       </div>
@@ -84,14 +84,14 @@ export function StepSlider({
           onChange={(e) => !submitted && setValue(Number(e.target.value))}
           disabled={submitted}
           className="w-full h-2 rounded-full appearance-none cursor-pointer
-            [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-6 [&::-webkit-slider-thumb]:w-6 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[#0071e3] [&::-webkit-slider-thumb]:shadow-md
-            [&::-moz-range-thumb]:h-6 [&::-moz-range-thumb]:w-6 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-[#0071e3] [&::-moz-range-thumb]:border-0
+            [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-6 [&::-webkit-slider-thumb]:w-6 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[var(--lern-accent)] [&::-webkit-slider-thumb]:shadow-md
+            [&::-moz-range-thumb]:h-6 [&::-moz-range-thumb]:w-6 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-[var(--lern-accent)] [&::-moz-range-thumb]:border-0
             disabled:opacity-60"
           style={{
-            background: `linear-gradient(to right, #0071e3 ${pct}%, #d2d2d7 ${pct}%)`,
+            background: `linear-gradient(to right, var(--lern-accent) ${pct}%, var(--lern-border) ${pct}%)`,
           }}
         />
-        <div className="flex justify-between text-xs text-[#86868b]">
+        <div className="flex justify-between text-xs text-[var(--lern-text-tertiary)]">
           <span>{min} {unit}</span>
           <span>{max} {unit}</span>
         </div>
@@ -100,7 +100,7 @@ export function StepSlider({
       {!submitted ? (
         <button
           onClick={() => setSubmitted(true)}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)]"
         >
           Antwort abgeben
         </button>
@@ -111,10 +111,10 @@ export function StepSlider({
             animate={{ opacity: 1, y: 0 }}
             className={`rounded-2xl p-4 ${
               isCorrect
-                ? "bg-[#30D158]/10 border border-[#30D158]/30"
+                ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
                 : isClose
-                  ? "bg-[#FF9500]/10 border border-[#FF9500]/30"
-                  : "bg-[#FF3B30]/10 border border-[#FF3B30]/30"
+                  ? "bg-[#D4956A]/10 border border-[#D4956A]/30"
+                  : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
             }`}
           >
             <p className="font-semibold">
@@ -130,19 +130,19 @@ export function StepSlider({
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15 }}
-            className="rounded-2xl bg-[#0071e3]/5 border border-[#0071e3]/15 p-4"
+            className="rounded-2xl bg-[var(--lern-accent-bg)] border border-[var(--lern-accent)]/15 p-4"
           >
-            <p className="text-sm font-medium text-[#0071e3] mb-1">
+            <p className="text-sm font-medium text-[var(--lern-accent)] mb-1">
               Erklärung
             </p>
-            <p className="text-sm text-[#1d1d1f]/70">
+            <p className="text-sm text-[var(--lern-text-primary)]/70">
               {renderBold((sprachLevel === "b1" && explanationB1) || explanation)}
             </p>
           </motion.div>
 
           <button
             onClick={() => onNext(isCorrect)}
-            className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)]"
           >
             Weiter
           </button>

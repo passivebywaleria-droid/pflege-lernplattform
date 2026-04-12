@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" fill="none">
+
+  <!-- Title -->
+  <text x="180" y="30" text-anchor="middle" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)">Geschichte der Pflege</text>
+
+  <!-- Timeline line -->
+  <line x1="40" y1="100" x2="320" y2="100" stroke="#E5DFD6" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Milestone 1: 1859 -->
+  <circle cx="60" cy="100" r="10" fill="#7A816C"/>
+  <circle cx="60" cy="100" r="5" fill="#fafaf9"/>
+  <text x="60" y="80" text-anchor="middle" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#7A816C">1859</text>
+  <text x="60" y="124" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="var(--lern-text-primary, #1d1d1f)">Florence</text>
+  <text x="60" y="138" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="var(--lern-text-primary, #1d1d1f)">Nightingale</text>
+
+  <!-- Arrow 1→2 -->
+  <path d="M75 100 L120 100" stroke="#A58B71" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrowhead)"/>
+
+  <!-- Milestone 2: 1903 -->
+  <circle cx="145" cy="100" r="10" fill="#AE6965"/>
+  <circle cx="145" cy="100" r="5" fill="#fafaf9"/>
+  <text x="145" y="80" text-anchor="middle" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#AE6965">1903</text>
+  <text x="145" y="124" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="var(--lern-text-primary, #1d1d1f)">Agnes</text>
+  <text x="145" y="138" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="var(--lern-text-primary, #1d1d1f)">Karll</text>
+
+  <!-- Arrow 2→3 -->
+  <path d="M160 100 L205 100" stroke="#A58B71" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <!-- Milestone 3: 1953 -->
+  <circle cx="230" cy="100" r="10" fill="#A58B71"/>
+  <circle cx="230" cy="100" r="5" fill="#fafaf9"/>
+  <text x="230" y="80" text-anchor="middle" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#A58B71">1953</text>
+  <text x="230" y="124" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="var(--lern-text-primary, #1d1d1f)">ICN-</text>
+  <text x="230" y="138" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="var(--lern-text-primary, #1d1d1f)">Ethikkodex</text>
+
+  <!-- Arrow 3→4 -->
+  <path d="M245 100 L285 100" stroke="#A58B71" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <!-- Milestone 4: 2020 -->
+  <circle cx="310" cy="100" r="10" fill="#D1A9A5"/>
+  <circle cx="310" cy="100" r="5" fill="#fafaf9"/>
+  <text x="310" y="80" text-anchor="middle" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#D1A9A5">2020</text>
+  <text x="310" y="124" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="var(--lern-text-primary, #1d1d1f)">PflBG</text>
+  <text x="310" y="138" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="var(--lern-text-primary, #1d1d1f)">generalistisch</text>
+
+  <!-- Bottom label -->
+  <text x="180" y="172" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="#A58B71" font-style="italic">Von der Berufung zum akademischen Beruf</text>
+
+  <!-- Decorative dots -->
+  <circle cx="40" cy="100" r="3" fill="#E5DFD6"/>
+  <circle cx="320" cy="100" r="3" fill="#E5DFD6"/>
+</svg>

@@ -74,7 +74,7 @@ v3.0 ist **sales-first**: Erst etwas Zeigbares, dann Infrastruktur.
 - ❌ Keine echte Datenbank (alles localStorage)
 - ❌ Kein Offline-Modus
 - ❌ Phasen-Bogen noch nicht in Regisseur/Generator eingebaut
-- ❌ Nebius Scaffolding-Route fehlt noch
+- ✅ Nebius Scaffolding-Route (`/api/ki-scaffolding`) + Brilliant-Prinzip (Anticipation)
 
 ---
 

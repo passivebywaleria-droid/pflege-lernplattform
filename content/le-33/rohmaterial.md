@@ -15,6 +15,25 @@
 | Q4 | Mutterschaftsrichtlinien — Gemeinsamer Bundesausschuss |
 | Q5 | AWMF S3-Leitlinie — Peripartale Depression und Angststörungen |
 | Q6 | PflBG §5 — Generalistische Pflegeausbildung |
+| Q-AP | I Care Anatomie Physiologie (Thieme, 2020) | Kap. Geschlechtsorgane, Zyklus, Schwangerschaft, Mamma |
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: LE-53
+
+**A&P-01** Weibliche Geschlechtsorgane — Innere: Ovarien (Eierstöcke, paarig, ca. 3×2×1 cm, enthalten bei Geburt alle Eizellen = ca. 400.000), Tubae uterinae (Eileiter — Fimbrientrichter fängt Eizelle auf, Ort der Befruchtung), Uterus (Gebärmutter — Corpus + Cervix, Endometrium = Schleimhaut für Implantation, Myometrium = starke Muskelschicht für Wehen), Vagina (Scheide — muskulöser Schlauch, saures Milieu pH 3,8-4,5 = Döderlein-Flora schützt vor Infektionen). [Q-AP]
+
+**A&P-02** Weiblicher Zyklus: Durchschnittlich 28 Tage (21-35 normal). Follikelphase (Tag 1-14): FSH → Follikelreifung → Östrogen steigt → Endometrium baut sich auf. Ovulation (Tag 14): LH-Peak → Eisprung. Lutealphase (Tag 14-28): Gelbkörper → Progesteron (hält Endometrium aufrecht). Ohne Befruchtung: Gelbkörper degeneriert → Progesteron sinkt → Menstruation. [Q-AP]
+
+**A&P-03** Männliche Geschlechtsorgane — Innere: Testes (Hoden, paarig, im Skrotum = 2-3°C kühler als Körper für Spermatogenese, Sertoli-Zellen = Spermiogenese-Support, Leydig-Zellen = Testosteron). Nebenhoden (Speicherung + Reifung der Spermien, 5-6 m aufgewickelt). Ductus deferens (Samenleiter) → Ductus ejaculatorius → Urethra. Akzessorische Drüsen: Prostata (Sekret = 30% des Ejakulats), Samenbläschen (Sekret = 60%, Fruktose als Energiequelle), Cowper-Drüsen (Gleitschleim). [Q-AP]
+
+**A&P-04** Schwangerschaft — Grundlagen: Befruchtung im Eileiter → Zygote → Morula → Blastozyste → Implantation im Endometrium (Tag 6-7). HCG (humanes Choriongonadotropin) erhält Gelbkörper → Progesteron bleibt hoch → keine Menstruation. Plazenta (ab 3. Monat): Gasaustausch, Nährstoffversorgung, Hormonproduktion (Östrogen, Progesteron, HPL). Nabelschnur: 2 Arterien (O₂-arm, vom Fetus zur Plazenta) + 1 Vene (O₂-reich, von Plazenta zum Fetus). [Q-AP]
+
+**A&P-05** Brust (Mamma): Drüsengewebe (15-20 Lappen/Lobi, münden in Milchgänge/Ductus lactiferi → Mamille). Entwicklung ab Pubertät unter Östrogen-Einfluss. Laktation: Prolaktin (HVL) → Milchproduktion. Oxytocin (HHL) → Milchejektionsreflex (Saugreiz des Kindes). Kolostrum (Vormilch): antikörperreich (v.a. IgA), in ersten 2-3 Tagen post partum. [Q-AP]
 
 ---
 

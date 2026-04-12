@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 import { ContentIcon } from "@/components/ui/hand-drawn-icon";
 
 function TimelineIcon({ icon }: { icon?: string }) {
-  return <ContentIcon icon={icon} size={20} color="#0071e3" />;
+  return <ContentIcon icon={icon} size={20} color="var(--lern-accent)" />;
 }
 interface TimelineEvent {
   id: string;
@@ -55,7 +55,7 @@ export function StepTimeline({
   };
 
   return (
-    <div className="space-y-5 pb-20" style={{ color: "#1d1d1f" }}>
+    <div className="space-y-5 pb-20" style={{ color: "var(--lern-text-primary)" }}>
       <h2 className="text-2xl font-bold">{title}</h2>
 
       {body && (
@@ -64,17 +64,17 @@ export function StepTimeline({
         </p>
       )}
 
-      <p className="text-sm" style={{ color: "#6e6e73" }}>{instruction}</p>
+      <p className="text-lg font-medium" style={{ color: "var(--lern-text-primary)" }}>{instruction}</p>
 
       {/* Counter */}
-      <span className="text-xs" style={{ color: "#6e6e73" }}>
+      <span className="text-xs" style={{ color: "var(--lern-text-secondary)" }}>
         {expandedIds.size} von {events.length} erkundet
       </span>
 
       {/* Timeline */}
       <div className="relative pl-8">
         {/* Vertical Line */}
-        <div className="absolute left-3 top-2 bottom-2 w-0.5 bg-[#e8e8ed]" />
+        <div className="absolute left-3 top-2 bottom-2 w-0.5 bg-[var(--lern-divider)]" />
 
         <div className="space-y-1">
           {events.map((event, i) => {
@@ -96,21 +96,21 @@ export function StepTimeline({
                 <div
                   className={`absolute -left-8 top-4 w-[22px] h-[22px] rounded-full border-2 flex items-center justify-center z-10 ${
                     event.highlight
-                      ? "border-[#FF9500] bg-[#FF9500]/10"
+                      ? "border-[#D4956A] bg-[#D4956A]/10"
                       : isExpanded
-                        ? "border-[#0071e3] bg-[#0071e3]/10"
-                        : "border-[#d2d2d7] bg-white"
+                        ? "border-[var(--lern-accent)] bg-[var(--lern-accent)]/10"
+                        : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)]"
                   }`}
                 >
                   {event.highlight && (
                     <motion.div
                       animate={{ scale: [1, 1.4, 1] }}
                       transition={{ repeat: Infinity, duration: 2 }}
-                      className="w-2 h-2 rounded-full bg-[#FF9500]"
+                      className="w-2 h-2 rounded-full bg-[#D4956A]"
                     />
                   )}
                   {!event.highlight && isExpanded && (
-                    <div className="w-2 h-2 rounded-full bg-[#0071e3]" />
+                    <div className="w-2 h-2 rounded-full bg-[var(--lern-accent)]" />
                   )}
                 </div>
 
@@ -119,23 +119,23 @@ export function StepTimeline({
                   onClick={() => toggleEvent(event.id)}
                   className={`rounded-xl border p-3 cursor-pointer transition-all ${
                     isExpanded
-                      ? "border-[#0071e3]/30 bg-white shadow-sm"
-                      : "border-[#e8e8ed] bg-[#f9f9fb] hover:bg-white hover:shadow-sm"
+                      ? "border-[var(--lern-accent)]/30 bg-[var(--lern-bg-primary)] shadow-sm"
+                      : "border-[var(--lern-divider)] bg-[var(--lern-bg-secondary)] hover:bg-[var(--lern-bg-primary)] hover:shadow-sm"
                   }`}
                 >
                   <div className="flex items-center gap-2">
                     {event.icon && <TimelineIcon icon={event.icon} />}
                     <div className="flex-1 min-w-0">
-                      <span className="text-[10px] font-semibold uppercase tracking-wider text-[#0071e3]">
+                      <span className="text-[10px] font-semibold uppercase tracking-wider text-[var(--lern-accent)]">
                         {event.time}
                       </span>
-                      <p className="text-sm font-medium text-[#1d1d1f] truncate">
+                      <p className="text-sm font-medium text-[var(--lern-text-primary)] truncate">
                         {event.title}
                       </p>
                     </div>
                     <motion.span
                       animate={{ rotate: isExpanded ? 180 : 0 }}
-                      className="text-[#6e6e73] text-xs flex-shrink-0"
+                      className="text-[var(--lern-text-secondary)] text-xs flex-shrink-0"
                     >
                       &#9660;
                     </motion.span>
@@ -150,7 +150,7 @@ export function StepTimeline({
                         transition={{ duration: 0.25 }}
                         className="overflow-hidden"
                       >
-                        <p className="text-sm text-[#1d1d1f]/80 leading-relaxed mt-3 pt-3 border-t border-[#e8e8ed]">
+                        <p className="text-sm text-[var(--lern-text-primary)]/80 leading-relaxed mt-3 pt-3 border-t border-[var(--lern-divider)]">
                           {renderBold(description)}
                         </p>
                       </motion.div>
@@ -168,7 +168,7 @@ export function StepTimeline({
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         onClick={() => onNext(true)}
-        className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)]"
       >
         Weiter
       </motion.button>

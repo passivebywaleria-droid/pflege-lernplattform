@@ -17,6 +17,25 @@
 | Q5 | I Care Pflege Kap. 14 | Wahrnehmen und Beobachten, S. 321–344 |
 | Q6 | DGEM Leitlinie Parenterale Ernährung | 2007/2014 |
 | Q7 | Expertenstandards in der Pflege (Schmidt, Springer 2020) | Kap. 8 Ernährungsmanagement, S. 147–169 |
+| Q-AP | I Care Anatomie Physiologie (Thieme, 2020) | Relevante Kapitel |
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: LE-17
+
+**A&P-01** Verdauungstrakt — Überblick: Mund → Pharynx → Ösophagus → Magen → Dünndarm (Duodenum → Jejunum → Ileum) → Dickdarm (Zäkum → Kolon → Rektum) → Anus. Gesamtlänge ca. 8-9 Meter. Funktion: Nahrungsaufnahme, mechanische + chemische Zerlegung, Resorption, Ausscheidung. [Q-AP]
+
+**A&P-02** Wandaufbau (allgemein): 4 Schichten von innen nach außen: Mukosa (Schleimhaut — Epithel + Lamina propria + Muscularis mucosae), Submukosa (Bindegewebe + Gefäße + Nervenplexus), Muscularis (Ringmuskulatur + Längsmuskulatur → Peristaltik), Serosa/Adventitia (Außenhülle). Plexus myentericus (Auerbach) steuert Peristaltik autonom. [Q-AP]
+
+**A&P-03** Peristaltik: Wellenförmige Kontraktionen der glatten Muskulatur → Transport des Speisebreis (Chymus). Gesteuert durch enterisches Nervensystem ('Bauchhirn', 100 Mio. Neuronen). Parasympathikus fördert, Sympathikus hemmt Peristaltik. Darmgeräusche (Borborygmi) = normale Peristaltik. [Q-AP]
+
+**A&P-04** Resorption im Dünndarm: Hauptort der Nährstoffaufnahme. Oberflächenvergrößerung: Kerckring-Falten → Zotten (Villi) → Mikrovilli = ca. 200 m² Resorptionsfläche. Kohlenhydrate → Monosaccharide (Glukose), Fette → Fettsäuren + Glycerol (via Lymphe), Proteine → Aminosäuren. Wasser + Elektrolyte: ca. 8-9 L/Tag resorbiert. [Q-AP]
+
+**A&P-05** Dickdarm: Funktion: Wasserrückresorption (1,5-2 L/Tag), Eindickung des Stuhls, Speicherung bis zur Defäkation. Darmbakterien (Mikrobiom): ca. 100 Billionen Bakterien, produzieren Vitamin K + B12, trainieren Immunsystem. Defäkationsreflex: Dehnung der Rektumwand → Stuhldrang. [Q-AP]
 
 ---
 

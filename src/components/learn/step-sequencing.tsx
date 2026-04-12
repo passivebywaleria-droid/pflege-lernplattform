@@ -2,7 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import type { SequencingItem, GlossarEntry } from "../../../content/ce-05/_types";
+import type { SequencingItem, GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 
 interface StepSequencingProps {
@@ -62,22 +62,22 @@ export function StepSequencing({
   const correctPositions = order.map((val, idx) => val === idx);
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
-      <h2 className="text-2xl font-bold text-[#1d1d1f]">
+    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+      <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
           <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 
-      <p className="text-lg font-medium text-[#1d1d1f]">
+      <p className="text-lg font-medium text-[var(--lern-text-primary)]">
         {instruction}
       </p>
 
-      <p className="text-sm text-[#6e6e73]">
+      <p className="text-sm text-[var(--lern-text-secondary)]">
         Nutze die Pfeile, um die richtige Reihenfolge herzustellen.
       </p>
 
@@ -91,12 +91,12 @@ export function StepSequencing({
               transition={{ type: "spring", stiffness: 500, damping: 35 }}
               className={`flex items-center gap-3 rounded-xl border-2 p-3 transition-colors ${
                 submitted && correctPositions[pos]
-                  ? "border-[#30D158] bg-[#30D158]/5"
+                  ? "border-[#6B8F71] bg-[#6B8F71]/5"
                   : submitted && !correctPositions[pos]
-                    ? "border-[#FF3B30] bg-[#FF3B30]/5"
+                    ? "border-[#C96B5C] bg-[#C96B5C]/5"
                     : dragIdx === pos
-                      ? "border-[#0071e3] bg-[#0071e3]/5"
-                      : "border-[#d2d2d7] bg-white"
+                      ? "border-[var(--lern-accent)] bg-[var(--lern-accent-bg)]"
+                      : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)]"
               }`}
               onPointerDown={() => !submitted && setDragIdx(pos)}
               onPointerUp={() => setDragIdx(null)}
@@ -105,10 +105,10 @@ export function StepSequencing({
               <span
                 className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-bold ${
                   submitted && correctPositions[pos]
-                    ? "bg-[#30D158] text-white"
+                    ? "bg-[#6B8F71] text-white"
                     : submitted && !correctPositions[pos]
-                      ? "bg-[#FF3B30] text-white"
-                      : "bg-[#f5f5f7] text-[#6e6e73]"
+                      ? "bg-[#C96B5C] text-white"
+                      : "bg-[var(--lern-bg)] text-[var(--lern-text-secondary)]"
                 }`}
               >
                 {pos + 1}
@@ -116,7 +116,7 @@ export function StepSequencing({
 
               {/* Bild (optional) */}
               {item.imageUrl && (
-                <div className="h-12 w-12 shrink-0 rounded-lg overflow-hidden bg-[#f5f5f7]">
+                <div className="h-12 w-12 shrink-0 rounded-lg overflow-hidden bg-[var(--lern-bg)]">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={item.imageUrl}
@@ -127,7 +127,7 @@ export function StepSequencing({
               )}
 
               {/* Label */}
-              <p className="flex-1 text-sm font-medium text-[#1d1d1f]">
+              <p className="flex-1 text-sm font-medium text-[var(--lern-text-primary)]">
                 {renderBold(item.label)}
               </p>
 
@@ -137,14 +137,14 @@ export function StepSequencing({
                   <button
                     onClick={() => moveUp(pos)}
                     disabled={pos === 0}
-                    className="rounded-lg bg-[#f5f5f7] px-2 py-1 text-xs disabled:opacity-30 active:bg-[#e5e5ea]"
+                    className="rounded-lg bg-[var(--lern-bg)] px-2 py-1 text-xs disabled:opacity-30 active:bg-[var(--lern-divider)]"
                   >
                     ▲
                   </button>
                   <button
                     onClick={() => moveDown(pos)}
                     disabled={pos === order.length - 1}
-                    className="rounded-lg bg-[#f5f5f7] px-2 py-1 text-xs disabled:opacity-30 active:bg-[#e5e5ea]"
+                    className="rounded-lg bg-[var(--lern-bg)] px-2 py-1 text-xs disabled:opacity-30 active:bg-[var(--lern-divider)]"
                   >
                     ▼
                   </button>
@@ -158,7 +158,7 @@ export function StepSequencing({
       {!submitted ? (
         <button
           onClick={() => setSubmitted(true)}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)]"
         >
           Prüfen
         </button>
@@ -169,8 +169,8 @@ export function StepSequencing({
             animate={{ opacity: 1, y: 0 }}
             className={`rounded-2xl p-4 ${
               isCorrect
-                ? "bg-[#30D158]/10 border border-[#30D158]/30"
-                : "bg-[#FF3B30]/10 border border-[#FF3B30]/30"
+                ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+                : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
             }`}
           >
             <p className="font-semibold">
@@ -180,10 +180,10 @@ export function StepSequencing({
             </p>
             {!isCorrect && (
               <div className="mt-2">
-                <p className="text-sm text-[#6e6e73]">Richtige Reihenfolge:</p>
+                <p className="text-sm text-[var(--lern-text-secondary)]">Richtige Reihenfolge:</p>
                 <ol className="mt-1 space-y-1">
                   {items.map((item, i) => (
-                    <li key={item.id} className="text-sm text-[#1d1d1f]/70">
+                    <li key={item.id} className="text-sm text-[var(--lern-text-primary)]/70">
                       {i + 1}. {item.label}
                     </li>
                   ))}
@@ -194,7 +194,7 @@ export function StepSequencing({
 
           <button
             onClick={() => onNext(isCorrect)}
-            className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)]"
           >
             Weiter
           </button>

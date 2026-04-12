@@ -1,0 +1,60 @@
+<svg viewBox="0 0 360 360" width="360" height="360" xmlns="http://www.w3.org/2000/svg" style="font-family:'Poppins',sans-serif">
+
+  <!-- Background -->
+
+  <!-- Subtitle label -->
+  <text x="180" y="22" text-anchor="middle" font-size="9.5" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)" opacity="0.32" letter-spacing="0.08em">ICN — 5 SCHLÜSSELAUFGABEN DER PFLEGE</text>
+
+  <!-- ─── Connector lines (center → each node) ─── -->
+  <!-- Top: Gesundheitsförderung -->
+  <line x1="180" y1="158" x2="180" y2="92" stroke="#7A816C" stroke-width="1.4" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+  <!-- Top-right: Krankheitsverhütung -->
+  <line x1="196" y1="163" x2="255" y2="118" stroke="#A58B71" stroke-width="1.4" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+  <!-- Bottom-right: Versorgung -->
+  <line x1="199" y1="178" x2="258" y2="240" stroke="#D1A9A5" stroke-width="1.4" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+  <!-- Bottom-left: Forschung -->
+  <line x1="161" y1="178" x2="102" y2="240" stroke="#7A816C" stroke-width="1.4" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+  <!-- Top-left: Bildung -->
+  <line x1="164" y1="163" x2="105" y2="118" stroke="#AE6965" stroke-width="1.4" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+
+  <!-- ─── Central circle ─── -->
+  <circle cx="180" cy="170" r="38" fill="#7A816C"/>
+  <circle cx="180" cy="170" r="38" fill="white" fill-opacity="0.08"/>
+  <text x="180" y="165" text-anchor="middle" font-size="18" font-weight="700" fill="white" letter-spacing="0.01em">Pflege</text>
+  <text x="180" y="182" text-anchor="middle" font-size="9" font-weight="500" fill="white" fill-opacity="0.72" letter-spacing="0.05em">ICN 2021</text>
+
+  <!-- ─── Node 1 — Top: Gesundheitsförderung ─── -->
+  <rect x="108" y="38" width="144" height="50" rx="12" fill="#AE6965"/>
+  <rect x="108" y="38" width="144" height="50" rx="12" fill="white" fill-opacity="0.07"/>
+  <text x="180" y="59" text-anchor="middle" font-size="11" font-weight="700" fill="white" letter-spacing="0.01em">Gesundheits-</text>
+  <text x="180" y="74" text-anchor="middle" font-size="11" font-weight="700" fill="white" letter-spacing="0.01em">förderung</text>
+
+  <!-- ─── Node 2 — Top-right: Krankheitsverhütung ─── -->
+  <rect x="248" y="82" width="96" height="50" rx="12" fill="#A58B71"/>
+  <rect x="248" y="82" width="96" height="50" rx="12" fill="white" fill-opacity="0.07"/>
+  <text x="296" y="103" text-anchor="middle" font-size="10.5" font-weight="700" fill="white" letter-spacing="0.01em">Krankheits-</text>
+  <text x="296" y="118" text-anchor="middle" font-size="10.5" font-weight="700" fill="white" letter-spacing="0.01em">verhütung</text>
+
+  <!-- ─── Node 3 — Bottom-right: Versorgung ─── -->
+  <rect x="248" y="218" width="96" height="50" rx="12" fill="#AE6965" fill-opacity="0.75"/>
+  <rect x="248" y="218" width="96" height="50" rx="12" fill="white" fill-opacity="0.07"/>
+  <text x="296" y="239" text-anchor="middle" font-size="10.5" font-weight="700" fill="white" letter-spacing="0.01em">Versorgung</text>
+  <text x="296" y="256" text-anchor="middle" font-size="9.5" font-weight="500" fill="white" fill-opacity="0.82" letter-spacing="0.01em">&amp; Betreuung</text>
+
+  <!-- ─── Node 4 — Bottom-left: Forschung ─── -->
+  <rect x="16" y="218" width="96" height="50" rx="12" fill="#7A816C" fill-opacity="0.72"/>
+  <rect x="16" y="218" width="96" height="50" rx="12" fill="white" fill-opacity="0.07"/>
+  <text x="64" y="239" text-anchor="middle" font-size="10.5" font-weight="700" fill="white" letter-spacing="0.01em">Forschung</text>
+  <text x="64" y="256" text-anchor="middle" font-size="9.5" font-weight="500" fill="white" fill-opacity="0.82" letter-spacing="0.01em">&amp; Evidenz</text>
+
+  <!-- ─── Node 5 — Top-left: Bildung ─── -->
+  <rect x="16" y="82" width="96" height="50" rx="12" fill="#D1A9A5"/>
+  <rect x="16" y="82" width="96" height="50" rx="12" fill="white" fill-opacity="0.07"/>
+  <text x="64" y="103" text-anchor="middle" font-size="10.5" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)" letter-spacing="0.01em">Bildung</text>
+  <text x="64" y="118" text-anchor="middle" font-size="9.5" font-weight="500" fill="var(--lern-text-primary, #1d1d1f)" fill-opacity="0.72" letter-spacing="0.01em">&amp; Ausbildung</text>
+
+  <!-- ─── Bottom label ─── -->
+  <rect x="60" y="310" width="240" height="28" rx="14" fill="#E5DFD6" opacity="0.7" stroke="#A58B71" stroke-width="0.6" stroke-opacity="0.4"/>
+  <text x="180" y="329" text-anchor="middle" font-size="11" font-weight="600" fill="#A58B71">Mensch im Mittelpunkt</text>
+
+</svg>

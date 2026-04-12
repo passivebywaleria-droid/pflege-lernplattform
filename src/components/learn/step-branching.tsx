@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface BranchingOption {
@@ -34,21 +34,21 @@ export function StepBranching({
   const [selected, setSelected] = useState<number | null>(null);
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
-      <h2 className="text-2xl font-bold text-[#1d1d1f]">
+    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+      <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
         {title}
       </h2>
 
-      <div className="rounded-2xl bg-[#FFF9E6] border border-[#FFD60A]/30 p-4">
-        <p className="text-sm font-medium text-[#FF9500] mb-1">
+      <div className="rounded-2xl bg-[var(--lern-warning)]/5 border border-[var(--lern-warning)]/15 p-4">
+        <p className="text-sm font-medium text-[var(--lern-warning)] mb-1">
           💬 Situation
         </p>
-        <p className="text-[#1d1d1f] leading-relaxed italic">
+        <p className="text-[var(--lern-text-primary)] leading-relaxed italic">
           &ldquo;<FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>&rdquo;
         </p>
       </div>
 
-      <p className="text-lg font-medium text-[#1d1d1f]">
+      <p className="text-lg font-medium text-[var(--lern-text-primary)]">
         <FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText>
       </p>
 
@@ -61,16 +61,16 @@ export function StepBranching({
             className={`w-full rounded-2xl border-2 p-4 text-left transition-all ${
               selected === idx
                 ? option.isCorrect
-                  ? "border-[#30D158] bg-[#30D158]/5"
-                  : "border-[#FF3B30] bg-[#FF3B30]/5"
+                  ? "border-[var(--lern-success)] bg-[var(--lern-success)]/5"
+                  : "border-[var(--lern-error)] bg-[var(--lern-error)]/5"
                 : selected !== null
                   ? option.isCorrect
-                    ? "border-[#30D158]/40 bg-[#30D158]/5"
-                    : "border-[#d2d2d7] opacity-60"
-                  : "border-[#d2d2d7] bg-white hover:border-[#0071e3]/40"
+                    ? "border-[var(--lern-success)]/40 bg-[var(--lern-success)]/5"
+                    : "border-[var(--lern-border)] opacity-60"
+                  : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)] hover:border-[var(--lern-accent)]/40"
             }`}
           >
-            <p className="font-medium text-[#1d1d1f]">
+            <p className="font-medium text-[var(--lern-text-primary)]">
               <FachbegriffText glossar={glossar ?? []}>{option.text}</FachbegriffText>
             </p>
 
@@ -81,7 +81,7 @@ export function StepBranching({
                   animate={{ opacity: 1, height: "auto" }}
                   className="mt-3 pt-3 border-t border-current/10"
                 >
-                  <p className="text-sm text-[#6e6e73]">
+                  <p className="text-sm text-[var(--lern-text-secondary)]">
                     <FachbegriffText glossar={glossar ?? []}>{(sprachLevel === "b1" && option.feedbackB1) || option.feedback}</FachbegriffText>
                   </p>
                 </motion.div>
@@ -96,7 +96,7 @@ export function StepBranching({
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           onClick={() => onNext(options[selected].isCorrect)}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
         >
           Weiter
         </motion.button>

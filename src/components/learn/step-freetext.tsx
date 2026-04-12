@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 import { HandDrawnIcon } from "@/components/ui/hand-drawn-icon";
 
@@ -37,24 +37,24 @@ export function StepFreetext({
   const minWords = 15;
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
-      <h2 className="text-2xl font-bold text-[#1d1d1f]">
+    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+      <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
           <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 
-      <p className="text-lg font-medium text-[#1d1d1f]">
+      <p className="text-lg font-medium text-[var(--lern-text-primary)]">
         <FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText>
       </p>
 
       {satzanfaengeB1 && satzanfaengeB1.length > 0 && !submitted && (
         <div className="space-y-2">
-          <p className="text-sm font-medium text-[#6e6e73]">Satzanfänge:</p>
+          <p className="text-sm font-medium text-[var(--lern-text-secondary)]">Satzanfänge:</p>
           <div className="flex flex-wrap gap-2">
             {satzanfaengeB1.map((sa) => (
               <button
@@ -62,7 +62,7 @@ export function StepFreetext({
                 onClick={() =>
                   setText((prev) => (prev ? `${prev} ${sa}` : sa))
                 }
-                className="rounded-full bg-[#0071e3]/10 px-3 py-1.5 text-sm text-[#0071e3] font-medium active:bg-[#0071e3]/20 transition-colors"
+                className="rounded-full bg-[var(--lern-accent)]/10 px-3 py-1.5 text-sm text-[var(--lern-accent)] font-medium active:bg-[var(--lern-accent)]/20 transition-colors"
               >
                 {sa}
               </button>
@@ -78,11 +78,12 @@ export function StepFreetext({
             onChange={(e) => setText(e.target.value)}
             placeholder="Schreibe hier deine Antwort..."
             rows={5}
-            className="w-full rounded-2xl border-2 border-[#d2d2d7] bg-white p-4 text-[#1d1d1f] placeholder:text-[#86868b] focus:border-[#0071e3] focus:outline-none resize-none transition-colors"
+            aria-label="Freitextantwort"
+            className="w-full rounded-2xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-4 text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:border-[var(--lern-accent)] focus:outline-2 focus:outline-[var(--lern-accent)] resize-none transition-colors"
           />
           <div className="flex items-center justify-between">
             <p
-              className={`text-sm ${wordCount >= minWords ? "text-[#30D158]" : "text-[#6e6e73]"}`}
+              className={`text-sm ${wordCount >= minWords ? "text-[var(--lern-success)]" : "text-[var(--lern-text-secondary)]"}`}
             >
               {wordCount} Wörter {wordCount < minWords && `(mind. ${minWords})`}
             </p>
@@ -94,7 +95,8 @@ export function StepFreetext({
         <button
           onClick={() => setSubmitted(true)}
           disabled={wordCount < minWords}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED] disabled:opacity-40 disabled:cursor-not-allowed"
+          aria-label="Antwort abgeben"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
         >
           Antwort abgeben
         </button>
@@ -103,12 +105,12 @@ export function StepFreetext({
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            className="rounded-2xl bg-[#0071e3]/5 border border-[#0071e3]/15 p-4 space-y-3"
+            className="rounded-2xl bg-[var(--lern-accent-bg)] border border-[var(--lern-accent)]/15 p-4 space-y-3"
           >
-            <p className="font-semibold text-[#0071e3]">
+            <p className="font-semibold text-[var(--lern-accent)]">
               ✍️ Deine Antwort wurde gespeichert
             </p>
-            <p className="text-sm text-[#1d1d1f]/70 whitespace-pre-line bg-white/50 rounded-xl p-3">
+            <p className="text-sm text-[var(--lern-text-primary)]/70 whitespace-pre-line bg-[var(--lern-bg-primary)]/50 rounded-xl p-3">
               {text}
             </p>
           </motion.div>
@@ -118,21 +120,21 @@ export function StepFreetext({
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.15 }}
-              className="rounded-2xl bg-[#AF52DE]/5 border border-[#AF52DE]/15 p-4"
+              className="rounded-2xl bg-[var(--lern-info)]/5 border border-[var(--lern-info)]/15 p-4"
             >
-              <p className="font-semibold text-[#AF52DE] mb-2">
+              <p className="font-semibold text-[var(--lern-info)] mb-2">
                 🤖 KI-Feedback (kommt bald)
               </p>
-              <p className="text-sm text-[#6e6e73] mb-2">
+              <p className="text-sm text-[var(--lern-text-secondary)] mb-2">
                 In der fertigen Plattform bewertet die KI deine Antwort nach:
               </p>
               <ul className="space-y-1">
                 {bewertungskriterien.map((k, i) => (
                   <li
                     key={i}
-                    className="text-sm text-[#6e6e73] flex items-start gap-2"
+                    className="text-sm text-[var(--lern-text-secondary)] flex items-start gap-2"
                   >
-                    <span className="text-[#AF52DE]">•</span>
+                    <span className="text-[var(--lern-info)]">•</span>
                     {k}
                   </li>
                 ))}
@@ -145,12 +147,12 @@ export function StepFreetext({
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="rounded-2xl bg-[#30D158]/5 border border-[#30D158]/15 p-4"
+              className="rounded-2xl bg-[var(--lern-success)]/5 border border-[var(--lern-success)]/15 p-4"
             >
-              <p className="font-semibold text-[#30D158] mb-2">
-                <HandDrawnIcon name="lightbulb" size={16} color="#FF9500" className="inline-block mr-1" /> Musterantwort
+              <p className="font-semibold text-[var(--lern-success)] mb-2">
+                <HandDrawnIcon name="lightbulb" size={16} color="#D4956A" className="inline-block mr-1" /> Musterantwort
               </p>
-              <p className="text-sm text-[#1d1d1f]/70 italic">
+              <p className="text-sm text-[var(--lern-text-primary)]/70 italic">
                 &ldquo;{musterantwort}&rdquo;
               </p>
             </motion.div>
@@ -158,7 +160,8 @@ export function StepFreetext({
 
           <button
             onClick={() => onNext(true)}
-            className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+            aria-label="Weiter zum nächsten Schritt"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
           >
             Weiter
           </button>

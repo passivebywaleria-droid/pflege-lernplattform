@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface TimerQuestion {
@@ -66,26 +66,26 @@ export function StepTimer({
   // Start screen
   if (!started) {
     return (
-      <div className="space-y-6 text-center pb-20" style={{ color: "#1d1d1f" }}>
-        <h2 className="text-2xl font-bold text-[#1d1d1f]">
+      <div className="space-y-6 text-center pb-20" style={{ color: "var(--lern-text-primary)" }}>
+        <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
           {title}
         </h2>
         {body && (
-          <p className="text-[#1d1d1f]/70">
+          <p className="text-[var(--lern-text-primary)]/70">
             <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
           </p>
         )}
-        <div className="rounded-2xl bg-[#FF3B30]/10 border border-[#FF3B30]/30 p-6">
-          <p className="text-4xl font-bold text-[#FF3B30] mb-2">
+        <div className="rounded-2xl bg-[#C96B5C]/10 border border-[#C96B5C]/30 p-6">
+          <p className="text-4xl font-bold text-[#C96B5C] mb-2">
             {timeLimitSeconds}s
           </p>
-          <p className="text-sm text-[#6e6e73]">
+          <p className="text-sm text-[var(--lern-text-secondary)]">
             {questions.length} Fragen in {timeLimitSeconds} Sekunden
           </p>
         </div>
         <button
           onClick={() => setStarted(true)}
-          className="w-full rounded-2xl bg-[#FF3B30] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#FF453A] animate-pulse"
+          className="w-full rounded-2xl bg-[#C96B5C] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#FF453A] animate-pulse"
         >
           Los geht&apos;s!
         </button>
@@ -98,19 +98,19 @@ export function StepTimer({
     const totalAnswered = Math.min(qIdx + 1, questions.length);
     const allCorrect = timerScore === totalAnswered && totalAnswered === questions.length;
     return (
-      <div className="space-y-6 text-center pb-20" style={{ color: "#1d1d1f" }}>
-        <h2 className="text-2xl font-bold text-[#1d1d1f]">
+      <div className="space-y-6 text-center pb-20" style={{ color: "var(--lern-text-primary)" }}>
+        <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
           Blitzrunde geschafft!
         </h2>
-        <div className="text-5xl font-bold text-[#0071e3]">
+        <div className="text-5xl font-bold text-[var(--lern-accent)]">
           {timerScore}/{totalAnswered}
         </div>
-        <p className="text-[#6e6e73]">
+        <p className="text-[var(--lern-text-secondary)]">
           richtig in {timeLimitSeconds - timeLeft} Sekunden
         </p>
         <button
           onClick={() => onNext(allCorrect)}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
         >
           Weiter
         </button>
@@ -121,16 +121,16 @@ export function StepTimer({
   // Quiz screen
   const q = questions[qIdx];
   return (
-    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
+    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-bold text-[#1d1d1f]">
+        <h2 className="text-lg font-bold text-[var(--lern-text-primary)]">
           Blitzrunde
         </h2>
         <span
           className={`text-lg font-bold ${
             timeLeft <= 10
-              ? "text-[#FF3B30] animate-pulse"
-              : "text-[#1d1d1f]"
+              ? "text-[#C96B5C] animate-pulse"
+              : "text-[var(--lern-text-primary)]"
           }`}
         >
           {timeLeft}s
@@ -138,9 +138,9 @@ export function StepTimer({
       </div>
 
       {/* Timer bar */}
-      <div className="h-1.5 bg-[#e8e8ed] rounded-full overflow-hidden">
+      <div className="h-1.5 bg-[var(--lern-divider)] rounded-full overflow-hidden">
         <motion.div
-          className="h-full bg-[#FF3B30] rounded-full"
+          className="h-full bg-[#C96B5C] rounded-full"
           animate={{ width: `${(timeLeft / timeLimitSeconds) * 100}%` }}
           transition={{ duration: 0.3 }}
         />
@@ -167,7 +167,7 @@ export function StepTimer({
         transition={{ duration: 0.4 }}
         className="rounded-2xl p-1"
       >
-        <h3 className="text-lg font-bold text-[#1d1d1f] mb-4">
+        <h3 className="text-lg font-bold text-[var(--lern-text-primary)] mb-4">
           {q.question}
         </h3>
         <div className="space-y-2">
@@ -176,7 +176,7 @@ export function StepTimer({
               key={i}
               onClick={() => answer(i)}
               whileTap={{ scale: 0.97 }}
-              className="w-full text-left p-3.5 rounded-xl border-2 border-[#d2d2d7] bg-white text-sm font-medium text-[#1d1d1f] hover:border-[#0071e3] transition-all"
+              className="w-full text-left p-3.5 rounded-xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] text-sm font-medium text-[var(--lern-text-primary)] hover:border-[var(--lern-accent)] transition-all"
             >
               {opt}
             </motion.button>
@@ -184,7 +184,7 @@ export function StepTimer({
         </div>
       </motion.div>
 
-      <p className="text-center text-xs text-[#6e6e73]">
+      <p className="text-center text-xs text-[var(--lern-text-secondary)]">
         Frage {qIdx + 1} von {questions.length} &middot; {timerScore} richtig
       </p>
     </div>

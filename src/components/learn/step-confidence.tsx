@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { ConfidenceCard, GlossarEntry } from "../../../content/ce-05/_types";
+import type { ConfidenceCard, GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 import { HandDrawnIcon } from "@/components/ui/hand-drawn-icon";
 
@@ -31,21 +31,21 @@ const CONFIDENCE_LABELS: Record<ConfidenceLevel, string> = {
 
 function getFeedback(isCorrect: boolean, confidence: ConfidenceLevel): { text: string; color: string } {
   if (isCorrect && confidence === "sicher") {
-    return { text: "Sitzt! Du wusstest es und warst dir sicher.", color: "#30D158" };
+    return { text: "Sitzt! Du wusstest es und warst dir sicher.", color: "var(--lern-success)" };
   }
   if (isCorrect && confidence === "mittel") {
-    return { text: "Richtig! Vertrau dir ruhig mehr.", color: "#30D158" };
+    return { text: "Richtig! Vertrau dir ruhig mehr.", color: "var(--lern-success)" };
   }
   if (isCorrect && confidence === "unsicher") {
-    return { text: "Gut geraten — lies nochmal nach, damit es beim nächsten Mal sitzt.", color: "#FF9500" };
+    return { text: "Gut geraten — lies nochmal nach, damit es beim nächsten Mal sitzt.", color: "var(--lern-warning)" };
   }
   if (!isCorrect && confidence === "sicher") {
-    return { text: "Achtung — Fehlkonzept! Du warst dir sicher, aber es stimmt nicht. Lies die Erklärung genau.", color: "#FF3B30" };
+    return { text: "Achtung — Fehlkonzept! Du warst dir sicher, aber es stimmt nicht. Lies die Erklärung genau.", color: "var(--lern-error)" };
   }
   if (!isCorrect && confidence === "mittel") {
-    return { text: "Leider falsch. Schau dir die Erklärung an.", color: "#FF3B30" };
+    return { text: "Leider falsch. Schau dir die Erklärung an.", color: "var(--lern-error)" };
   }
-  return { text: "Falsch, aber du warst unsicher — das ist okay. Jetzt weißt du es!", color: "#FF9500" };
+  return { text: "Falsch, aber du warst unsicher — das ist okay. Jetzt weißt du es!", color: "var(--lern-warning)" };
 }
 
 export function StepConfidence({
@@ -97,13 +97,13 @@ export function StepConfidence({
 
   if (allDone) {
     return (
-      <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
-        <h2 className="text-2xl font-bold text-[#1d1d1f]">
+      <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+        <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
           {title} — Ergebnis
         </h2>
 
-        <div className="rounded-2xl bg-[#f5f5f7] p-4 space-y-3">
-          <p className="text-lg font-bold text-[#1d1d1f]">
+        <div className="rounded-2xl bg-[var(--lern-bg)] p-4 space-y-3">
+          <p className="text-lg font-bold text-[var(--lern-text-primary)]">
             {correctCount} von {cards.length} richtig
           </p>
           {results.map((r, i) => {
@@ -117,7 +117,7 @@ export function StepConfidence({
                   backgroundColor: `${fb.color}08`,
                 }}
               >
-                <p className="text-sm font-medium text-[#1d1d1f]">
+                <p className="text-sm font-medium text-[var(--lern-text-primary)]">
                   <FachbegriffText glossar={glossar ?? []}>
                     {sprachLevel === "b1" && cards[i].statementB1 ? cards[i].statementB1 : cards[i].statement}
                   </FachbegriffText>
@@ -132,7 +132,7 @@ export function StepConfidence({
 
         <button
           onClick={() => onNext(correctCount >= cards.length / 2)}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
         >
           Weiter
         </button>
@@ -145,19 +145,19 @@ export function StepConfidence({
     : null;
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
-      <h2 className="text-2xl font-bold text-[#1d1d1f]">
+    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+      <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
           <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 
       {/* Progress */}
-      <p className="text-sm text-[#6e6e73]">
+      <p className="text-sm text-[var(--lern-text-secondary)]">
         Aussage {currentCard + 1} von {cards.length}
       </p>
 
@@ -169,8 +169,8 @@ export function StepConfidence({
           exit={{ opacity: 0, x: -20 }}
         >
           {/* Aussage */}
-          <div className="rounded-2xl bg-white border-2 border-[#d2d2d7] p-6 mb-6">
-            <p className="text-lg font-medium text-[#1d1d1f] text-center">
+          <div className="rounded-2xl bg-[var(--lern-bg-primary)] border-2 border-[var(--lern-border)] p-6 mb-6">
+            <p className="text-lg font-medium text-[var(--lern-text-primary)] text-center">
               &ldquo;<FachbegriffText glossar={glossar ?? []}>
                 {sprachLevel === "b1" && card.statementB1 ? card.statementB1 : card.statement}
               </FachbegriffText>&rdquo;
@@ -182,13 +182,13 @@ export function StepConfidence({
             <div className="grid grid-cols-2 gap-3">
               <button
                 onClick={() => handleAnswer(true)}
-                className="rounded-2xl border-2 border-[#30D158] bg-[#30D158]/5 px-6 py-4 text-base font-semibold text-[#30D158] transition-all active:scale-[0.98]"
+                className="rounded-2xl border-2 border-[var(--lern-success)] bg-[var(--lern-success)]/5 px-6 py-4 text-base font-semibold text-[var(--lern-success)] transition-all active:scale-[0.98]"
               >
                 Wahr
               </button>
               <button
                 onClick={() => handleAnswer(false)}
-                className="rounded-2xl border-2 border-[#FF3B30] bg-[#FF3B30]/5 px-6 py-4 text-base font-semibold text-[#FF3B30] transition-all active:scale-[0.98]"
+                className="rounded-2xl border-2 border-[var(--lern-error)] bg-[var(--lern-error)]/5 px-6 py-4 text-base font-semibold text-[var(--lern-error)] transition-all active:scale-[0.98]"
               >
                 Falsch
               </button>
@@ -202,7 +202,7 @@ export function StepConfidence({
               animate={{ opacity: 1, y: 0 }}
               className="space-y-3"
             >
-              <p className="text-center text-sm font-medium text-[#6e6e73]">
+              <p className="text-center text-sm font-medium text-[var(--lern-text-secondary)]">
                 Wie sicher bist du?
               </p>
               <div className="grid grid-cols-3 gap-2">
@@ -211,11 +211,11 @@ export function StepConfidence({
                     <button
                       key={level}
                       onClick={() => handleConfidence(level)}
-                      className="rounded-xl border-2 border-[#d2d2d7] bg-white px-3 py-3 text-sm font-medium text-[#1d1d1f] transition-all active:scale-[0.98]"
+                      className="rounded-xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-3 py-3 text-sm font-medium text-[var(--lern-text-primary)] transition-all active:scale-[0.98]"
                     >
                       {level === "unsicher" && "🤔"}
                       {level === "mittel" && "😊"}
-                      {level === "sicher" && <HandDrawnIcon name="muscle" size={16} color="#30D158" />}
+                      {level === "sicher" && <HandDrawnIcon name="muscle" size={16} color="var(--lern-success)" />}
                       <br />
                       <span className="text-xs">{CONFIDENCE_LABELS[level]}</span>
                     </button>
@@ -247,11 +247,11 @@ export function StepConfidence({
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-[#0071e3]/5 border border-[#0071e3]/15 p-4">
-                <p className="text-sm font-medium text-[#0071e3] mb-1">
+              <div className="rounded-2xl bg-[var(--lern-accent)]/5 border border-[var(--lern-accent)]/15 p-4">
+                <p className="text-sm font-medium text-[var(--lern-accent)] mb-1">
                   Erklärung
                 </p>
-                <p className="text-sm text-[#1d1d1f]/70">
+                <p className="text-sm text-[var(--lern-text-primary)]/70">
                   <FachbegriffText glossar={glossar ?? []}>
                     {sprachLevel === "b1" && card.explanationB1 ? card.explanationB1 : card.explanation}
                   </FachbegriffText>
@@ -260,7 +260,7 @@ export function StepConfidence({
 
               <button
                 onClick={handleNext}
-                className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+                className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
               >
                 {currentCard < cards.length - 1 ? "Nächste Aussage" : "Ergebnis"}
               </button>

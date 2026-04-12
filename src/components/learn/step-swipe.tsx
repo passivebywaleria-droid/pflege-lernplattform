@@ -1,18 +1,16 @@
 "use client";
 
 /**
- * StepSwipe — Stimmt/Stimmt-nicht Karten (Anticipation Guide)
+ * StepSwipe — Wahr/Falsch Statement Cards
  *
- * Design-Standards:
- * - STIMMT NICHT Button links, STIMMT Button rechts — neben dem Statement
- * - Kein Drag — nur Buttons (zuverlässiger auf Mobile)
- * - Nach Antwort: Erklärung bleibt bis manuell "Nächste Aussage" geklickt wird
- * - Inline-style color auf Container (shadcn-glass-ui Fix)
+ * Design: Große zentrierte Statement-Card mit "WAHR ODER FALSCH?" Header.
+ * Zwei große Buttons darunter: Falsch (links) / Wahr (rechts).
+ * Nach Antwort: Erklärung + Nächste-Button.
  */
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface SwipeCardProps {
@@ -76,25 +74,25 @@ export function StepSwipe({
     const correctCount = results.filter(Boolean).length;
     const allCorrect = correctCount === cards.length;
     return (
-      <div className="space-y-6" style={{ color: "#1d1d1f" }}>
-        <h2 className="text-2xl font-bold">
+      <div className="space-y-6" style={{ color: "var(--lern-text-primary)" }}>
+        <h2 className="text-xl font-bold text-center">
           Einschätzung abgeschlossen!
         </h2>
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          className={`rounded-2xl p-4 ${
+          className={`rounded-2xl p-5 text-center ${
             allCorrect
-              ? "bg-[#30D158]/10 border border-[#30D158]/30"
-              : "bg-[#FF9500]/10 border border-[#FF9500]/30"
+              ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+              : "bg-[#D4956A]/10 border border-[#D4956A]/30"
           }`}
         >
-          <p className="font-semibold text-lg">
+          <p className="font-bold text-lg">
             {allCorrect
-              ? `Alle ${cards.length} richtig eingeschätzt!`
+              ? `Alle ${cards.length} richtig!`
               : `${correctCount} von ${cards.length} richtig.`}
           </p>
-          <p className="text-sm mt-1" style={{ color: "#6e6e73" }}>
+          <p className="text-sm mt-1" style={{ color: "var(--lern-text-secondary)" }}>
             {allCorrect
               ? "Du hattest ein gutes Vorwissen!"
               : "Kein Problem — jetzt weißt du es besser."}
@@ -102,7 +100,7 @@ export function StepSwipe({
         </motion.div>
         <button
           onClick={() => onNext(allCorrect)}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+          className="w-full rounded-full bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
         >
           Weiter
         </button>
@@ -116,20 +114,17 @@ export function StepSwipe({
       : card.statement;
 
   return (
-    <div className="space-y-5 pb-20" style={{ color: "#1d1d1f" }}>
-      <h2 className="text-2xl font-bold">{title}</h2>
+    <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }}>
+      {/* Title */}
+      <h2 className="text-xl font-bold">{title}</h2>
 
       {body && (
-        <p className="leading-relaxed whitespace-pre-line">
+        <p className="text-sm leading-relaxed" style={{ color: "var(--lern-text-secondary)" }}>
           <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 
-      <p className="text-sm" style={{ color: "#6e6e73" }}>
-        {instruction}
-      </p>
-
-      {/* Progress */}
+      {/* Progress Dots */}
       <div className="flex items-center gap-2">
         {cards.map((_, i) => (
           <div
@@ -137,81 +132,67 @@ export function StepSwipe({
             className={`h-2 flex-1 rounded-full transition-colors ${
               i < results.length
                 ? results[i]
-                  ? "bg-[#30D158]"
-                  : "bg-[#FF3B30]"
+                  ? "bg-[#6B8F71]"
+                  : "bg-[#C96B5C]"
                 : i === cardIdx
-                  ? "bg-[#0071e3] animate-pulse"
-                  : "bg-[#e8e8ed]"
+                  ? "bg-[var(--lern-accent)]"
+                  : "bg-[var(--lern-divider)]"
             }`}
           />
         ))}
-        <span className="text-xs ml-1" style={{ color: "#6e6e73" }}>
+        <span className="text-xs ml-1" style={{ color: "var(--lern-text-secondary)" }}>
           {cardIdx + 1}/{cards.length}
         </span>
       </div>
 
-      {/* Statement — bleibt immer sichtbar */}
+      {/* Statement Card */}
       <AnimatePresence mode="wait">
         <motion.div
           key={`card-${cardIdx}`}
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.9 }}
-          className="space-y-3"
+          className="space-y-4"
         >
-          {/* Aussage + Buttons */}
-          <div className="flex items-stretch gap-2">
-            {/* STIMMT NICHT Button — links */}
-            <button
-              onClick={() => !showResult && handleAnswer(false)}
-              disabled={showResult}
-              className={`flex-shrink-0 w-16 rounded-2xl border-2 flex flex-col items-center justify-center gap-1 transition-all ${
-                showResult && lastAnswer?.userAgreed === false
-                  ? "border-[#FF3B30] bg-[#FF3B30]/20"
-                  : showResult
-                    ? "border-[#e8e8ed] bg-[#f5f5f7] opacity-40"
-                    : "border-[#FF3B30]/30 bg-[#FF3B30]/5 active:scale-95 active:bg-[#FF3B30]/20"
-              }`}
-            >
-              <span className="text-lg">✗</span>
-              <span className="text-[9px] font-bold leading-tight text-center" style={{ color: showResult && lastAnswer?.userAgreed !== false ? "#6e6e73" : "#FF3B30" }}>
-                STIMMT NICHT
-              </span>
-            </button>
+          {/* "WAHR ODER FALSCH?" Label */}
+          <p className="text-center text-xs font-bold uppercase tracking-widest" style={{ color: "var(--lern-accent)" }}>
+            Wahr oder Falsch?
+          </p>
 
-            {/* Statement — Mitte */}
-            <div className={`flex-1 rounded-2xl border-2 p-5 min-h-[120px] flex items-center justify-center shadow-sm ${
-              showResult
-                ? lastAnswer?.correct
-                  ? "border-[#30D158] bg-[#30D158]/5"
-                  : "border-[#FF3B30] bg-[#FF3B30]/5"
-                : "border-[#d2d2d7] bg-white"
-            }`}>
-              <p className="text-center text-base font-medium leading-snug">
-                <FachbegriffText glossar={glossar ?? []}>{statement}</FachbegriffText>
-              </p>
-            </div>
-
-            {/* STIMMT Button — rechts */}
-            <button
-              onClick={() => !showResult && handleAnswer(true)}
-              disabled={showResult}
-              className={`flex-shrink-0 w-16 rounded-2xl border-2 flex flex-col items-center justify-center gap-1 transition-all ${
-                showResult && lastAnswer?.userAgreed === true
-                  ? "border-[#30D158] bg-[#30D158]/20"
-                  : showResult
-                    ? "border-[#e8e8ed] bg-[#f5f5f7] opacity-40"
-                    : "border-[#30D158]/30 bg-[#30D158]/5 active:scale-95 active:bg-[#30D158]/20"
-              }`}
-            >
-              <span className="text-lg">✓</span>
-              <span className="text-[9px] font-bold" style={{ color: showResult && lastAnswer?.userAgreed !== true ? "#6e6e73" : "#30D158" }}>
-                STIMMT
-              </span>
-            </button>
+          {/* Die große Statement-Card */}
+          <div className={`rounded-2xl border-2 p-6 text-center transition-colors ${
+            showResult
+              ? lastAnswer?.correct
+                ? "border-[#6B8F71] bg-[#6B8F71]/5"
+                : "border-[#C96B5C] bg-[#C96B5C]/5"
+              : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)] shadow-sm"
+          }`}>
+            <p className="text-base font-medium leading-relaxed">
+              &ldquo;<FachbegriffText glossar={glossar ?? []}>{statement}</FachbegriffText>&rdquo;
+            </p>
           </div>
 
-          {/* Erklärung — erscheint unter dem Statement */}
+          {/* Buttons: Falsch / Wahr */}
+          {!showResult && (
+            <div className="grid grid-cols-2 gap-3">
+              <button
+                onClick={() => handleAnswer(false)}
+                className="flex items-center justify-center gap-2 rounded-full border-2 border-[#C96B5C]/40 bg-[#C96B5C]/5 px-5 py-3.5 text-sm font-bold text-[#C96B5C] transition-all active:scale-[0.96] active:bg-[#C96B5C]/20"
+              >
+                <span className="text-base">✗</span>
+                Falsch
+              </button>
+              <button
+                onClick={() => handleAnswer(true)}
+                className="flex items-center justify-center gap-2 rounded-full border-2 border-[#6B8F71]/40 bg-[#6B8F71]/5 px-5 py-3.5 text-sm font-bold text-[#6B8F71] transition-all active:scale-[0.96] active:bg-[#6B8F71]/20"
+              >
+                <span className="text-base">✓</span>
+                Wahr
+              </button>
+            </div>
+          )}
+
+          {/* Erklärung nach Antwort */}
           {showResult && lastAnswer && (
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -220,26 +201,26 @@ export function StepSwipe({
             >
               <div className={`rounded-2xl p-4 ${
                 lastAnswer.correct
-                  ? "bg-[#30D158]/10 border border-[#30D158]/30"
-                  : "bg-[#FF3B30]/10 border border-[#FF3B30]/30"
+                  ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+                  : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
               }`}>
                 <p className="font-bold text-sm mb-1">
-                  {lastAnswer.correct ? "✓ Richtig eingeschätzt!" : "✗ Nicht ganz!"}
+                  {lastAnswer.correct ? "✓ Richtig!" : "✗ Nicht ganz!"}
                 </p>
-                <p className="text-xs mb-2" style={{ color: "#6e6e73" }}>
+                <p className="text-xs mb-2" style={{ color: "var(--lern-text-secondary)" }}>
                   Die Aussage ist{" "}
                   <span className="font-semibold">
-                    {card.isCorrect ? "richtig" : "falsch"}
+                    {card.isCorrect ? "wahr" : "falsch"}
                   </span>.
                 </p>
-                <p className="text-sm leading-relaxed" style={{ color: "#3a3a3c" }}>
+                <p className="text-sm leading-relaxed" style={{ color: "var(--lern-text-primary)" }}>
                   <FachbegriffText glossar={glossar ?? []}>{lastAnswer.explanation}</FachbegriffText>
                 </p>
               </div>
 
               <button
                 onClick={nextCard}
-                className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+                className="w-full rounded-full bg-[var(--lern-accent)] px-6 py-3.5 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
               >
                 {cardIdx + 1 < cards.length ? "Nächste Aussage" : "Weiter"}
               </button>

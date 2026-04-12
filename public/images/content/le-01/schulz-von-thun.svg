@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" fill="none">
+
+  <!-- Title -->
+  <text x="180" y="28" text-anchor="middle" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)">4-Ohren-Modell</text>
+  <text x="180" y="44" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="#A58B71">nach Schulz von Thun</text>
+
+  <!-- Center: Nachricht -->
+  <rect x="128" y="150" width="104" height="50" rx="25" fill="var(--lern-text-primary, #1d1d1f)"/>
+  <text x="180" y="172" text-anchor="middle" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#fafaf9">Nachricht</text>
+  <text x="180" y="189" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10" fill="#E5DFD6">"Das Fenster ist offen."</text>
+
+  <!-- Top: Sachinhalt -->
+  <rect x="110" y="60" width="140" height="56" rx="10" fill="#7A816C"/>
+  <text x="180" y="82" text-anchor="middle" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#fafaf9">Sachinhalt</text>
+  <text x="180" y="98" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10.5" fill="#fafaf9" opacity="0.9">"Das Fenster steht offen."</text>
+  <text x="180" y="110" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10" fill="#fafaf9" opacity="0.7">→ reine Information</text>
+  <!-- Arrow down -->
+  <line x1="180" y1="116" x2="180" y2="150" stroke="#7A816C" stroke-width="2"/>
+  <polygon points="176,148 184,148 180,154" fill="#7A816C"/>
+
+  <!-- Right: Selbstkundgabe -->
+  <rect x="248" y="130" width="104" height="90" rx="10" fill="#AE6965"/>
+  <text x="300" y="152" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#fafaf9">Selbst-</text>
+  <text x="300" y="166" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#fafaf9">kundgabe</text>
+  <text x="300" y="186" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10.5" fill="#fafaf9" opacity="0.9">"Mir ist kalt."</text>
+  <text x="300" y="200" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10" fill="#fafaf9" opacity="0.7">→ über mich</text>
+  <!-- Arrow left -->
+  <line x1="248" y1="175" x2="232" y2="175" stroke="#AE6965" stroke-width="2"/>
+  <polygon points="234,171 234,179 228,175" fill="#AE6965"/>
+
+  <!-- Bottom: Beziehung -->
+  <rect x="110" y="234" width="140" height="56" rx="10" fill="#D1A9A5"/>
+  <text x="180" y="254" text-anchor="middle" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Beziehung</text>
+  <text x="180" y="270" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10.5" fill="var(--lern-text-primary, #1d1d1f)" opacity="0.9">"Du merkst es nicht mal."</text>
+  <text x="180" y="282" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10" fill="var(--lern-text-primary, #1d1d1f)" opacity="0.7">→ was ich von dir halte</text>
+  <!-- Arrow up -->
+  <line x1="180" y1="234" x2="180" y2="200" stroke="#D1A9A5" stroke-width="2"/>
+  <polygon points="176,202 184,202 180,196" fill="#D1A9A5"/>
+
+  <!-- Left: Appell -->
+  <rect x="8" y="130" width="104" height="90" rx="10" fill="#A58B71"/>
+  <text x="60" y="158" text-anchor="middle" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#fafaf9">Appell</text>
+  <text x="60" y="182" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10.5" fill="#fafaf9" opacity="0.9">"Mach bitte das</text>
+  <text x="60" y="195" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10.5" fill="#fafaf9" opacity="0.9">Fenster zu!"</text>
+  <text x="60" y="210" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10" fill="#fafaf9" opacity="0.7">→ was du tun sollst</text>
+  <!-- Arrow right -->
+  <line x1="112" y1="175" x2="128" y2="175" stroke="#A58B71" stroke-width="2"/>
+  <polygon points="126,171 126,179 132,175" fill="#A58B71"/>
+
+  <!-- Footer -->
+  <text x="180" y="316" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="#A58B71" font-style="italic">Jede Nachricht hat 4 Seiten</text>
+  <text x="180" y="332" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" fill="#A58B71" font-style="italic">— und 4 Ohren zum Hören.</text>
+</svg>

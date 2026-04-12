@@ -27,7 +27,7 @@ export function FeedbackText({ children, sprachLevel = "c1" }: FeedbackTextProps
               <button
                 key={i}
                 onClick={() => setActiveEntry(part.entry!)}
-                className="inline text-[#0071e3] underline decoration-[#0071e3]/30 underline-offset-2 font-medium"
+                className="inline text-[var(--lern-accent)] underline decoration-[var(--lern-accent)]/30 underline-offset-2 font-medium"
               >
                 {part.text}
               </button>
@@ -53,23 +53,23 @@ export function FeedbackText({ children, sprachLevel = "c1" }: FeedbackTextProps
               exit={{ y: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
               onClick={(e) => e.stopPropagation()}
-              className="absolute bottom-0 left-0 right-0 max-h-[60vh] overflow-y-auto rounded-t-3xl bg-white p-6 pb-10 shadow-xl"
+              className="absolute bottom-0 left-0 right-0 max-h-[60vh] overflow-y-auto rounded-t-3xl bg-[var(--lern-bg-primary)] p-6 pb-10 shadow-xl"
             >
               {/* Drag Handle */}
-              <div className="mx-auto mb-4 h-1 w-12 rounded-full bg-[#d2d2d7]" />
+              <div className="mx-auto mb-4 h-1 w-12 rounded-full bg-[var(--lern-border)]" />
 
               {/* Begriff */}
-              <h3 className="text-xl font-bold text-[#1d1d1f] mb-1">
+              <h3 className="text-xl font-bold text-[var(--lern-text-primary)] mb-1">
                 {activeEntry.begriff}
               </h3>
 
               {/* Sprachlevel-Badge */}
-              <span className="inline-block text-[10px] font-semibold uppercase tracking-wider text-[#0071e3] bg-[#0071e3]/10 px-2 py-0.5 rounded-full mb-3">
+              <span className="inline-block text-[10px] font-semibold uppercase tracking-wider text-[var(--lern-accent)] bg-[var(--lern-accent)]/10 px-2 py-0.5 rounded-full mb-3">
                 {sprachLevel === "b1" ? "Einfache Sprache" : "Fachsprache"}
               </span>
 
               {/* Erklärung */}
-              <p className="text-sm text-[#1d1d1f]/80 leading-relaxed mb-4">
+              <p className="text-sm text-[var(--lern-text-primary)]/80 leading-relaxed mb-4">
                 {sprachLevel === "b1"
                   ? activeEntry.erklaerungB1
                   : activeEntry.erklaerungC1}
@@ -77,13 +77,13 @@ export function FeedbackText({ children, sprachLevel = "c1" }: FeedbackTextProps
 
               {/* Akronym / Aufschlüsselung */}
               {activeEntry.akronym && activeEntry.akronym.length > 0 && (
-                <div className="space-y-1.5 rounded-xl bg-[#f5f5f7] p-3">
+                <div className="space-y-1.5 rounded-xl bg-[var(--lern-bg)] p-3">
                   {activeEntry.akronym.map((item, idx) => (
                     <div key={idx} className="flex items-start gap-2.5">
-                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#0071e3]/10 text-xs font-bold text-[#0071e3]">
+                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--lern-accent)]/10 text-xs font-bold text-[var(--lern-accent)]">
                         {item.buchstabe}
                       </span>
-                      <span className="text-sm text-[#1d1d1f]/70 leading-relaxed pt-0.5">
+                      <span className="text-sm text-[var(--lern-text-primary)]/70 leading-relaxed pt-0.5">
                         {item.bedeutung}
                       </span>
                     </div>
@@ -94,7 +94,7 @@ export function FeedbackText({ children, sprachLevel = "c1" }: FeedbackTextProps
               {/* Schließen-Button */}
               <button
                 onClick={() => setActiveEntry(null)}
-                className="mt-4 w-full rounded-2xl bg-[#f5f5f7] py-3 text-sm font-semibold text-[#1d1d1f] active:bg-[#e8e8ed]"
+                className="mt-4 w-full rounded-2xl bg-[var(--lern-bg)] py-3 text-sm font-semibold text-[var(--lern-text-primary)] active:bg-[var(--lern-divider)]"
               >
                 Verstanden
               </button>

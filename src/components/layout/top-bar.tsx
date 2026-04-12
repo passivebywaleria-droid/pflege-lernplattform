@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import {
   DropdownMenu,
@@ -17,6 +17,7 @@ interface TopBarProps {
 
 export function TopBar({ userName }: TopBarProps) {
   const t = useTranslations("nav")
+  const locale = useLocale()
   const initials = userName
     ? userName
         .split(" ")
@@ -29,7 +30,7 @@ export function TopBar({ userName }: TopBarProps) {
   return (
     <header className="flex h-16 items-center justify-between border-b border-border bg-background px-4 md:px-6">
       {/* Mobile: brand */}
-      <Link href="/home" className="text-lg font-bold text-primary md:hidden">
+      <Link href={`/${locale}/dashboard`} className="text-lg font-bold text-primary md:hidden">
         Pflege
       </Link>
 
@@ -45,11 +46,6 @@ export function TopBar({ userName }: TopBarProps) {
             </Avatar>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuItem>
-              <Link href="/settings" className="w-full">
-                {t("settings")}
-              </Link>
-            </DropdownMenuItem>
             <DropdownMenuItem>
               <Link href="/api/auth/logout" className="w-full">
                 {t("logout")}

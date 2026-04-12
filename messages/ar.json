@@ -17,6 +17,7 @@
     "home": "الرئيسية",
     "learn": "تعلّم",
     "review": "مراجعة",
+    "wochenplan": "خطة الأسبوع",
     "progress": "التقدم",
     "glossary": "المصطلحات",
     "settings": "الإعدادات",
@@ -96,5 +97,245 @@
     "hard": "صعب",
     "good": "جيد",
     "easy": "سهل"
+  },
+  "fortschritt": {
+    "title": "تقدمك",
+    "subtitle": "نظرة عامة على جميع الوحدات الدراسية الـ 11",
+    "gesamtFortschritt": "{prozent}% من التدريب مكتمل",
+    "lesAbgeschlossen": "{done} من {total} وحدات تعليمية مكتملة",
+    "leLabel": "وحدة {nr}",
+    "abgeschlossen": "مكتمل",
+    "nochOffen": "لم يبدأ بعد",
+    "gestartet": "بدأ",
+    "zurueck": "رجوع",
+    "lernenStarten": "ابدأ التعلم",
+    "keinFortschritt": "لا يوجد تقدم بعد — ابدأ أول درس لك!"
+  },
+  "glossar": {
+    "title": "قاموس المصطلحات",
+    "searchPlaceholder": "ابحث عن مصطلح...",
+    "all": "الكل",
+    "results": "مصطلحات",
+    "noResults": "لم يتم العثور على مصطلحات."
+  },
+  "lehrer": {
+    "title": "لوحة تحكم المعلم",
+    "klasseUebersicht": "نظرة عامة على الفصل",
+    "name": "الاسم",
+    "letzterLogin": "آخر تسجيل دخول",
+    "fortschritt": "التقدم",
+    "aktiveCE": "الوحدة الحالية",
+    "status": "الحالة",
+    "aktiv": "نشط",
+    "inaktiv": "غير نشط",
+    "brauchtHilfe": "يحتاج مساعدة",
+    "klassenStatistiken": "إحصائيات الفصل",
+    "durchschnittlicherFortschritt": "متوسط التقدم",
+    "aktivsteSchueler": "الطلاب الأكثر نشاطاً",
+    "schwierigsteThemen": "المواضيع الأصعب",
+    "hilfeBereich": "قسم المساعدة",
+    "hilfeEmpfehlung": "يجب تناول هذا الموضوع في الدرس الحضوري.",
+    "fehlversuche": "محاولات خاطئة",
+    "schueler": "طلاب",
+    "neueNachrichten": "رسائل جديدة",
+    "nachrichtVon": "رسالة من طالب",
+    "kontextAnzeigen": "عرض سياق التعلم"
+  },
+  "lehrerChat": {
+    "title": "اسأل المعلم",
+    "placeholder": "سؤالك للمعلم...",
+    "kontextHinweis": "المعلم يرى سياق تعلمك",
+    "leerText": "يمكنك طرح سؤال مباشر على معلمك. المعلم يرى ما تعمل عليه حالياً.",
+    "gesendet": "تم الإرسال",
+    "antwort": "إجابة"
+  },
+  "offline": {
+    "title": "لا يوجد اتصال بالإنترنت",
+    "subtitle": "أنت غير متصل حالياً. إليك ما هو متاح.",
+    "verfuegbar": "متاح بدون إنترنت",
+    "keineLektionen": "لم يتم تحميل أي دروس.",
+    "karteikarten": "مراجعة البطاقات",
+    "karteikartenHinweis": "يعمل بدون إنترنت أيضاً",
+    "fortschrittGespeichert": "تم حفظ التقدم",
+    "syncHinweis": "ستتم المزامنة عندما تعود للإنترنت",
+    "erneutVerbinden": "إعادة الاتصال",
+    "speichern": "حفظ للاستخدام بدون إنترنت",
+    "gespeichert": "متاح بدون إنترنت",
+    "entfernen": "إزالة"
+  },
+  "praxis": {
+    "modusAktiv": "وضع التدريب العملي نشط",
+    "theorieModus": "وضع النظري",
+    "kurzeSessions": "جلسات قصيرة للأوقات بين العمل",
+    "toggleLabel": "أنا في فترة التدريب العملي",
+    "empfohlen": "مُوصى به أثناء التدريب",
+    "karteikarten": "مراجعة البطاقات",
+    "karteikartenHinweis": "مثالي لاستراحة العمل",
+    "reflexion": "سؤال تأملي",
+    "reflexionFrage": "ماذا رأيت اليوم في القسم؟ أي إجراء تمريضي كان مميزاً؟",
+    "quickReview": "مراجعة سريعة (30 دقيقة)",
+    "quickReviewHinweis": "اربط تجربتك العملية بالنظرية"
+  },
+  "dashboard": {
+    "greeting": {
+      "morning": "صباح الخير",
+      "afternoon": "مرحباً",
+      "evening": "مساء الخير"
+    },
+    "subtitle": "نظرة عامة على تقدمك في التعلم",
+    "tagesplan": "خطتك لليوم",
+    "geschafft": "تم الإنجاز!",
+    "badges": "شاراتك",
+    "streakMotivation": "اليوم {count} على التوالي! استمر!",
+    "sessionsDone": "{count} جلسة مكتملة",
+    "karteikartenWiederholen": "{count} بطاقات للمراجعة"
+  },
+  "wochenplan": {
+    "title": "خطة الأسبوع",
+    "today": "اليوم",
+    "progress": "التقدم",
+    "startNow": "ابدأ الآن",
+    "weekOverview": "نظرة عامة على الأسبوع",
+    "weekProgress": "{percent}% أنجزت هذا الأسبوع",
+    "weekend": "عطلة نهاية الأسبوع!",
+    "weekendHint": "استمتع بوقتك الحر. يوم الاثنين نكمل."
+  },
+  "pruefung": {
+    "title": "وضع الامتحان",
+    "subtitle": "امتحانات محاكاة بالشكل الحقيقي",
+    "infoTitle": "كما في الامتحان الحقيقي",
+    "fragen": "20 سؤال بصيغة الاختيار المتعدد",
+    "zeit": "حد زمني: 90 ثانية لكل سؤال",
+    "keineHilfe": "بدون مساعدة، بدون قاموس، بدون شرح",
+    "ergebnisHinweis": "النتيجة + تحليل نقاط الضعف في النهاية",
+    "starten": "بدء الامتحان",
+    "abbrechen": "إلغاء",
+    "letzterVersuch": "المحاولة الأخيرة",
+    "pruefungsreif": "جاهز للامتحان",
+    "fastBereit": "تقريباً جاهز",
+    "nochUeben": "يحتاج مزيد من التدريب",
+    "nichtGetestet": "لم يتم الاختبار بعد",
+    "richtig": "صحيح",
+    "falsch": "خطأ",
+    "zeitLabel": "الوقت",
+    "schwaechen": "هذه المواضيع يجب مراجعتها",
+    "alleDetails": "جميع الأسئلة بالتفصيل",
+    "zurueck": "رجوع",
+    "schwueben": "تدريب نقاط الضعف"
+  },
+  "lernzeit": {
+    "title": "وقت التعلم",
+    "subtitle": "إثبات نشاطك التعليمي",
+    "gesamt": "الإجمالي",
+    "gesamtXp": "إجمالي نقاط الخبرة",
+    "aktiveTage": "الأيام النشطة",
+    "letzte90": "آخر 90 يوماً",
+    "stundenProWoche": "ساعات في الأسبوع",
+    "bearbeitete": "الوحدات التعليمية المعالجة",
+    "pdfExport": "تصدير PDF",
+    "pdfHinweisTitle": "إثبات وقت التعلم للمدرسة",
+    "pdfHinweisText": "انقر على تصدير PDF لإنشاء إثبات قابل للطباعة لوقت تعلمك النشط."
+  },
+  "einstufung": {
+    "welcome": {
+      "title": "لنكتشف ما تعرفه بالفعل!",
+      "subtitle": "اختبار قصير — بدون ضغط، بدون درجات. نحن نكيّف المحتوى حسب مستواك.",
+      "duration": "يستغرق فقط 5–10 دقائق",
+      "feature1": "يتكيف مع معرفتك",
+      "feature2": "يقيس اللغة والمعرفة التخصصية بشكل منفصل",
+      "feature3": "بأسلوب ممتع وبدون ضغط",
+      "startButton": "هيا نبدأ!"
+    },
+    "axes": {
+      "language": "الكفاءة اللغوية",
+      "knowledge": "المعرفة التمريضية"
+    },
+    "question": {
+      "counter": "سؤال {current} من {total}"
+    },
+    "feedback": {
+      "correct": "صحيح!",
+      "incorrect": "ليس تماماً — لكن لا مشكلة!",
+      "next": "التالي"
+    },
+    "result": {
+      "title": "تم! هذا ملفك الشخصي",
+      "duration": "انتهيت في {minutes} دقائق",
+      "level": "المستوى",
+      "correct": "صحيح",
+      "summary": "هذا يعني لك",
+      "startLearning": "ابدأ التعلم الآن",
+      "languageLevels": {
+        "1": "بناء الأساسيات",
+        "2": "تعلم المصطلحات",
+        "3": "أساس جيد",
+        "4": "متمكن في اللغة المتخصصة",
+        "5": "مستوى اللغة الأم"
+      },
+      "knowledgeLevels": {
+        "1": "كل شيء جديد",
+        "2": "خبرات أولى",
+        "3": "معرفة أساسية متينة",
+        "4": "متقدم",
+        "5": "معرفة خبير"
+      },
+      "profiles": {
+        "expert": "لديك قدرات لغوية ومعرفية عالية. سنبدأ مباشرة بمهام متقدمة وحالات معقدة.",
+        "languageStrong": "لغتك قوية، لكن المعرفة التمريضية تحتاج إلى بناء. سنبدأ بالأساسيات — باللغة المتخصصة.",
+        "knowledgeStrong": "لديك خبرة تمريضية كبيرة، لكن اللغة الألمانية المتخصصة تحتاج تدريباً. سنشرح كل شيء بلغة بسيطة ونبني المصطلحات خطوة بخطوة.",
+        "beginner": "كل شيء جديد — وهذا طبيعي تماماً! سنبدأ ببطء، بلغة بسيطة وبأهم الأساسيات.",
+        "intermediate": "لديك أساس متين. سنبني عليه ونعمّق اللغة والمعرفة بشكل هادف."
+      }
+    }
+  },
+  "meilensteine": {
+    "ersteSchritte": "الخطوات الأولى",
+    "amBall": "مستمر",
+    "wochenkrieger": "محارب الأسبوع",
+    "monatsmeister": "بطل الشهر",
+    "xpSammler": "جامع النقاط",
+    "xpMeister": "خبير النقاط",
+    "xpLegende": "أسطورة النقاط",
+    "ceAbgeschlossen": "وحدة مكتملة",
+    "karteikartenStarter": "مبتدئ البطاقات",
+    "karteikartenPro": "محترف البطاقات",
+    "volleWoche": "أسبوع كامل",
+    "pruefungsreif": "جاهز للامتحان",
+    "erreicht": "تم تحقيق إنجاز!"
+  },
+  "errorBoundary": {
+    "title": "حدث خطأ ما",
+    "message": "لا تقلق، تقدمك محفوظ.",
+    "retry": "حاول مرة أخرى",
+    "details": "تفاصيل تقنية"
+  },
+  "notifications": {
+    "erinnerung": "لم تتعلم اليوم بعد. 15 دقيقة فقط تكفي!",
+    "aktivieren": "تفعيل التذكيرات؟",
+    "aktivierenBeschreibung": "سنذكرك إذا لم تتعلم اليوم."
+  },
+  "themen": {
+    "backToLernen": "العودة إلى النظرة العامة",
+    "invalidTag": "موضوع غير معروف",
+    "noContent": "لا يوجد محتوى متاح لهذا الموضوع بعد.",
+    "anatomie": "التشريح",
+    "pflege": "التمريض",
+    "krankheitslehre": "علم الأمراض",
+    "anatomieTitle": "التشريح وعلم وظائف الأعضاء",
+    "anatomieDesc": "بنية ووظائف جسم الإنسان",
+    "pflegeTitle": "الإجراءات التمريضية",
+    "pflegeDesc": "الوقاية والتوثيق والتواصل والإجراءات",
+    "krankheitslehreTitle": "علم الأمراض",
+    "krankheitslehreDesc": "الفيزيولوجيا المرضية والأعراض والتشخيص والعلاج",
+    "themenUeben": "تدرب حسب الموضوع"
+  },
+  "checkpoint": {
+    "score_A_title": "فهم ممتاز!",
+    "score_A_skip": "تخطيت {count} أقسام — لست بحاجة إليها.",
+    "score_A_body": "أنت تتقن الموضوع. هيا إلى التطبيق!",
+    "score_B_title": "أحسنت!",
+    "score_B_body": "أساس متين — سنعمق الآن خطوة بخطوة.",
+    "score_C_title": "لا مشكلة!",
+    "score_C_body": "سنتعلم كل شيء من البداية — خطوة بخطوة."
   }
 }

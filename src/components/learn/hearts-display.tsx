@@ -20,7 +20,7 @@ export function HeartsDisplay({ hearts, maxHearts }: HeartsDisplayProps) {
               animate={{ scale: 1 }}
               className="text-sm"
             >
-              <HandDrawnIcon name="heart" size={14} color="#FF3B30" />
+              <HandDrawnIcon name="heart" size={14} color="#C96B5C" />
             </motion.span>
           ) : (
             <motion.span
@@ -29,7 +29,7 @@ export function HeartsDisplay({ hearts, maxHearts }: HeartsDisplayProps) {
               animate={{ scale: 1, opacity: 0.3 }}
               className="text-sm"
             >
-              <HandDrawnIcon name="heart" size={14} color="#d2d2d7" />
+              <HandDrawnIcon name="heart" size={14} color="var(--lern-border)" />
             </motion.span>
           )}
         </AnimatePresence>

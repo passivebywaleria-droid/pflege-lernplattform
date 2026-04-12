@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" fill="none">
+
+  <!-- Title -->
+  <text x="180" y="28" text-anchor="middle" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)">Distanzzonen nach Hall</text>
+
+  <!-- Outermost ring: Öffentlich -->
+  <ellipse cx="180" cy="178" rx="164" ry="126" fill="#E5DFD6" stroke="#A58B71" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- Social ring -->
+  <ellipse cx="180" cy="178" rx="126" ry="98" fill="#D1A9A5" opacity="0.3" stroke="#D1A9A5" stroke-width="1"/>
+
+  <!-- Personal ring -->
+  <ellipse cx="180" cy="178" rx="84" ry="66" fill="#AE6965" opacity="0.2" stroke="#AE6965" stroke-width="1"/>
+
+  <!-- Intimate ring -->
+  <ellipse cx="180" cy="178" rx="40" ry="34" fill="#7A816C" opacity="0.25" stroke="#7A816C" stroke-width="1.5"/>
+
+  <!-- Center icon -->
+  <circle cx="180" cy="178" r="12" fill="#7A816C"/>
+  <text x="180" y="182" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" fill="#fafaf9">P</text>
+
+  <!-- Labels with backgrounds for readability -->
+
+  <!-- Intim label -->
+  <text x="180" y="156" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#7A816C">Intim</text>
+  <text x="180" y="204" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">0 – 45 cm</text>
+
+  <!-- Persönlich label -->
+  <text x="180" y="118" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#AE6965">Persönlich</text>
+  <text x="180" y="240" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">45 – 120 cm</text>
+
+  <!-- Sozial label -->
+  <text x="180" y="88" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#D1A9A5">Sozial</text>
+  <text x="180" y="270" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">1,2 – 3,6 m</text>
+
+  <!-- Öffentlich label -->
+  <text x="180" y="62" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#A58B71">Öffentlich</text>
+  <text x="180" y="298" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">&gt; 3,6 m</text>
+
+  <!-- Pflege-Beispiele (right side annotations) -->
+  <rect x="272" y="100" width="80" height="24" rx="6" fill="#AE6965" opacity="0.15"/>
+  <text x="312" y="116" text-anchor="middle" font-family="Poppins, sans-serif" font-size="9" fill="#AE6965">Körperpflege</text>
+
+  <rect x="272" y="132" width="80" height="24" rx="6" fill="#D1A9A5" opacity="0.15"/>
+  <text x="312" y="148" text-anchor="middle" font-family="Poppins, sans-serif" font-size="9" fill="#D1A9A5">Beratung</text>
+
+  <rect x="272" y="164" width="80" height="24" rx="6" fill="#A58B71" opacity="0.15"/>
+  <text x="312" y="180" text-anchor="middle" font-family="Poppins, sans-serif" font-size="9" fill="#A58B71">Übergabe</text>
+
+  <!-- Left side annotations -->
+  <rect x="8" y="100" width="80" height="24" rx="6" fill="#7A816C" opacity="0.15"/>
+  <text x="48" y="116" text-anchor="middle" font-family="Poppins, sans-serif" font-size="9" fill="#7A816C">Wundversorg.</text>
+
+  <rect x="8" y="132" width="80" height="24" rx="6" fill="#AE6965" opacity="0.15"/>
+  <text x="48" y="148" text-anchor="middle" font-family="Poppins, sans-serif" font-size="9" fill="#AE6965">Aufnahme</text>
+
+  <rect x="8" y="164" width="80" height="24" rx="6" fill="#A58B71" opacity="0.15"/>
+  <text x="48" y="180" text-anchor="middle" font-family="Poppins, sans-serif" font-size="9" fill="#A58B71">Vortrag</text>
+</svg>

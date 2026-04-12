@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 400" role="img" aria-label="Henderson 14 Grundbedürfnisse in 3 Kategorien">
+  <style>
+    text { font-family: 'Poppins', sans-serif; }
+  </style>
+
+  <!-- Title -->
+  <text x="180" y="32" text-anchor="middle" font-size="15" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)">Henderson: 14 Grundbedürfnisse</text>
+  <line x1="60" y1="42" x2="300" y2="42" stroke="#D1A9A5" stroke-width="2"/>
+
+  <!-- Column 1: Physiologisch -->
+  <rect x="12" y="56" width="108" height="332" rx="8" fill="#E5DFD6" opacity="0.6"/>
+  <rect x="12" y="56" width="108" height="32" rx="8" fill="#7A816C"/>
+  <rect x="12" y="80" width="108" height="8" fill="#7A816C"/>
+  <text x="66" y="78" text-anchor="middle" font-size="12" font-weight="700" fill="#fafaf9">Physiologisch</text>
+
+  <circle cx="32" cy="108" r="4" fill="#7A816C"/>
+  <text x="42" y="112" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Atmen</text>
+
+  <circle cx="32" cy="138" r="4" fill="#7A816C"/>
+  <text x="42" y="142" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Essen &amp;</text>
+  <text x="42" y="156" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Trinken</text>
+
+  <circle cx="32" cy="178" r="4" fill="#7A816C"/>
+  <text x="42" y="182" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Ausscheiden</text>
+
+  <circle cx="32" cy="212" r="4" fill="#7A816C"/>
+  <text x="42" y="216" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Bewegen &amp;</text>
+  <text x="42" y="230" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Lagern</text>
+
+  <circle cx="32" cy="252" r="4" fill="#7A816C"/>
+  <text x="42" y="256" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Schlafen &amp;</text>
+  <text x="42" y="270" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Ruhen</text>
+
+  <text x="66" y="310" text-anchor="middle" font-size="28" fill="#7A816C" opacity="0.3">5</text>
+  <text x="66" y="340" text-anchor="middle" font-size="11" fill="#7A816C">Bedürfnisse</text>
+
+  <!-- Column 2: Psychosozial -->
+  <rect x="126" y="56" width="108" height="332" rx="8" fill="#E5DFD6" opacity="0.6"/>
+  <rect x="126" y="56" width="108" height="32" rx="8" fill="#AE6965"/>
+  <rect x="126" y="80" width="108" height="8" fill="#AE6965"/>
+  <text x="180" y="78" text-anchor="middle" font-size="12" font-weight="700" fill="#fafaf9">Psychosozial</text>
+
+  <circle cx="146" cy="108" r="4" fill="#AE6965"/>
+  <text x="156" y="112" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Kommuni-</text>
+  <text x="156" y="126" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">zieren</text>
+
+  <circle cx="146" cy="148" r="4" fill="#AE6965"/>
+  <text x="156" y="152" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Glauben &amp;</text>
+  <text x="156" y="166" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Werte</text>
+
+  <circle cx="146" cy="188" r="4" fill="#AE6965"/>
+  <text x="156" y="192" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Arbeiten &amp;</text>
+  <text x="156" y="206" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Leisten</text>
+
+  <circle cx="146" cy="228" r="4" fill="#AE6965"/>
+  <text x="156" y="232" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Spielen &amp;</text>
+  <text x="156" y="246" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Erholen</text>
+
+  <circle cx="146" cy="268" r="4" fill="#AE6965"/>
+  <text x="156" y="272" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Lernen &amp;</text>
+  <text x="156" y="286" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Entwickeln</text>
+
+  <text x="180" y="325" text-anchor="middle" font-size="28" fill="#AE6965" opacity="0.3">5</text>
+  <text x="180" y="355" text-anchor="middle" font-size="11" fill="#AE6965">Bedürfnisse</text>
+
+  <!-- Column 3: Sicherheit -->
+  <rect x="240" y="56" width="108" height="332" rx="8" fill="#E5DFD6" opacity="0.6"/>
+  <rect x="240" y="56" width="108" height="32" rx="8" fill="#A58B71"/>
+  <rect x="240" y="80" width="108" height="8" fill="#A58B71"/>
+  <text x="294" y="78" text-anchor="middle" font-size="12" font-weight="700" fill="#fafaf9">Sicherheit</text>
+
+  <circle cx="260" cy="108" r="4" fill="#A58B71"/>
+  <text x="270" y="112" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Temperatur</text>
+  <text x="270" y="126" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">regulieren</text>
+
+  <circle cx="260" cy="148" r="4" fill="#A58B71"/>
+  <text x="270" y="152" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Körper-</text>
+  <text x="270" y="166" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">pflege</text>
+
+  <circle cx="260" cy="188" r="4" fill="#A58B71"/>
+  <text x="270" y="192" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Kleidung</text>
+  <text x="270" y="206" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">wählen</text>
+
+  <circle cx="260" cy="228" r="4" fill="#A58B71"/>
+  <text x="270" y="232" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">Gefahren</text>
+  <text x="270" y="246" font-size="12" fill="var(--lern-text-primary, #1d1d1f)">vermeiden</text>
+
+  <text x="294" y="310" text-anchor="middle" font-size="28" fill="#A58B71" opacity="0.3">4</text>
+  <text x="294" y="340" text-anchor="middle" font-size="11" fill="#A58B71">Bedürfnisse</text>
+
+  <!-- Footer -->
+  <text x="180" y="392" text-anchor="middle" font-size="10" fill="#7A816C" opacity="0.6">Virginia Henderson, 1966</text>
+</svg>

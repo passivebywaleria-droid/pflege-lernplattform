@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" fill="none">
+
+  <!-- Title -->
+  <text x="180" y="30" text-anchor="middle" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)">Pflegerische Beobachtung</text>
+  <text x="180" y="48" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" fill="#A58B71">Die 4 Sinneskanäle</text>
+
+  <!-- Grid: 2×2 -->
+  <!-- Cell 1: Sehen (top-left) -->
+  <rect x="16" y="64" width="158" height="112" rx="12" fill="#E5DFD6"/>
+  <circle cx="48" cy="96" r="18" fill="#7A816C"/>
+  <text x="48" y="100" text-anchor="middle" font-family="Poppins, sans-serif" font-size="16">👁</text>
+  <text x="78" y="92" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)">Sehen</text>
+  <text x="78" y="106" font-family="Poppins, sans-serif" font-size="11" fill="#7A816C" font-style="italic">visuell</text>
+  <line x1="32" y1="118" x2="158" y2="118" stroke="#7A816C" stroke-width="0.5" opacity="0.4"/>
+  <text x="32" y="136" font-family="Poppins, sans-serif" font-size="11.5" fill="var(--lern-text-primary, #1d1d1f)">Hautfarbe, Mimik,</text>
+  <text x="32" y="152" font-family="Poppins, sans-serif" font-size="11.5" fill="var(--lern-text-primary, #1d1d1f)">Schwellung, Wunden</text>
+  <text x="32" y="168" font-family="Poppins, sans-serif" font-size="11.5" fill="var(--lern-text-primary, #1d1d1f)">Körperhaltung</text>
+
+  <!-- Cell 2: Hören (top-right) -->
+  <rect x="186" y="64" width="158" height="112" rx="12" fill="#E5DFD6"/>
+  <circle cx="218" cy="96" r="18" fill="#AE6965"/>
+  <text x="218" y="100" text-anchor="middle" font-family="Poppins, sans-serif" font-size="16">👂</text>
+  <text x="248" y="92" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)">Hören</text>
+  <text x="248" y="106" font-family="Poppins, sans-serif" font-size="11" fill="#AE6965" font-style="italic">auditiv</text>
+  <line x1="202" y1="118" x2="328" y2="118" stroke="#AE6965" stroke-width="0.5" opacity="0.4"/>
+  <text x="202" y="136" font-family="Poppins, sans-serif" font-size="11.5" fill="var(--lern-text-primary, #1d1d1f)">Atemgeräusche,</text>
+  <text x="202" y="152" font-family="Poppins, sans-serif" font-size="11.5" fill="var(--lern-text-primary, #1d1d1f)">Sprache, Husten,</text>
+  <text x="202" y="168" font-family="Poppins, sans-serif" font-size="11.5" fill="var(--lern-text-primary, #1d1d1f)">Darmgeräusche</text>
+
+  <!-- Cell 3: Tasten (bottom-left) -->
+  <rect x="16" y="188" width="158" height="112" rx="12" fill="#E5DFD6"/>
+  <circle cx="48" cy="220" r="18" fill="#A58B71"/>
+  <text x="48" y="224" text-anchor="middle" font-family="Poppins, sans-serif" font-size="16">🤚</text>
+  <text x="78" y="216" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)">Tasten</text>
+  <text x="78" y="230" font-family="Poppins, sans-serif" font-size="11" fill="#A58B71" font-style="italic">taktil</text>
+  <line x1="32" y1="242" x2="158" y2="242" stroke="#A58B71" stroke-width="0.5" opacity="0.4"/>
+  <text x="32" y="260" font-family="Poppins, sans-serif" font-size="11.5" fill="var(--lern-text-primary, #1d1d1f)">Puls, Temperatur,</text>
+  <text x="32" y="276" font-family="Poppins, sans-serif" font-size="11.5" fill="var(--lern-text-primary, #1d1d1f)">Muskeltonus,</text>
+  <text x="32" y="292" font-family="Poppins, sans-serif" font-size="11.5" fill="var(--lern-text-primary, #1d1d1f)">Hautturgor</text>
+
+  <!-- Cell 4: Riechen (bottom-right) -->
+  <rect x="186" y="188" width="158" height="112" rx="12" fill="#E5DFD6"/>
+  <circle cx="218" cy="220" r="18" fill="#D1A9A5"/>
+  <text x="218" y="224" text-anchor="middle" font-family="Poppins, sans-serif" font-size="16">👃</text>
+  <text x="248" y="216" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)">Riechen</text>
+  <text x="248" y="230" font-family="Poppins, sans-serif" font-size="11" fill="#D1A9A5" font-style="italic">olfaktorisch</text>
+  <line x1="202" y1="242" x2="328" y2="242" stroke="#D1A9A5" stroke-width="0.5" opacity="0.4"/>
+  <text x="202" y="260" font-family="Poppins, sans-serif" font-size="11.5" fill="var(--lern-text-primary, #1d1d1f)">Wundgeruch,</text>
+  <text x="202" y="276" font-family="Poppins, sans-serif" font-size="11.5" fill="var(--lern-text-primary, #1d1d1f)">Mundgeruch, Urin,</text>
+  <text x="202" y="292" font-family="Poppins, sans-serif" font-size="11.5" fill="var(--lern-text-primary, #1d1d1f)">Aceton (Diabetes)</text>
+</svg>

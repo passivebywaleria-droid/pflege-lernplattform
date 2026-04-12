@@ -1,11 +1,23 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
+import { Poppins } from "next/font/google"
 import { NextIntlClientProvider } from "next-intl"
 import { getMessages } from "next-intl/server"
 import { ThemeProvider } from "next-themes"
 import { locales, isRTL } from "@/lib/i18n/request"
 import type { Locale } from "@/lib/i18n/request"
+import { LearningReminderBanner } from "@/components/pwa/learning-reminder-banner"
+import { NotificationPrompt } from "@/components/pwa/notification-prompt"
+import { ErrorBoundaryWrapper } from "@/components/error-boundary-wrapper"
+import { DarkModeInit } from "@/components/layout/dark-mode-init"
 import "../globals.css"
+
+const poppins = Poppins({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-poppins',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: {
@@ -13,7 +25,20 @@ export const metadata: Metadata = {
     template: "%s | Pflege-Lernplattform",
   },
   description:
-    "Adaptive Lernplattform fuer die generalistische Pflegeausbildung nach PflBG 2020",
+    "Adaptive Lernplattform für die generalistische Pflegeausbildung nach PflBG 2020",
+  manifest: "/manifest.json",
+  themeColor: "#C4877F",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Pflege-Lernplattform",
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  other: {
+    "mobile-web-app-capable": "yes",
+  },
 }
 
 export function generateStaticParams() {
@@ -38,7 +63,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} dir={dir} suppressHydrationWarning>
-      <body className="min-h-screen bg-background text-foreground antialiased">
+      <body className={`${poppins.variable} min-h-screen bg-background text-foreground antialiased font-[family-name:var(--font-poppins)]`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -46,7 +71,12 @@ export default async function LocaleLayout({
           disableTransitionOnChange
         >
           <NextIntlClientProvider messages={messages}>
-            {children}
+            <DarkModeInit />
+            <ErrorBoundaryWrapper>
+              {children}
+            </ErrorBoundaryWrapper>
+            <LearningReminderBanner />
+            <NotificationPrompt />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

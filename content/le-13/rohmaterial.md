@@ -17,6 +17,31 @@
 | Q4 | I Care Pflege, Thieme 2020. Kap. 30 — Pflege bei Fieber | S. 707–714 |
 | Q5 | AWMF S2k-Leitlinie Asthma bronchiale im Kindes- und Jugendalter, 2021 | — |
 | Q6 | Robert Koch-Institut: Epidemiologisches Bulletin — Impfempfehlungen STIKO, 2023 | — |
+| Q-AP | I Care Anatomie Physiologie (Thieme, 2020) | Relevante Kapitel |
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: LE-25, LE-54
+
+**A&P-01** Atemwege — Überblick: Obere Atemwege: Nase (Erwärmung, Befeuchtung, Filtration) → Pharynx → Larynx (Stimmbildung, Schutz vor Aspiration). Untere Atemwege: Trachea → Bronchien → Bronchiolen → Alveolen. Gesamtoberfläche der Alveolen: ca. 100 m² (Tennisplatz). [Q-AP]
+
+**A&P-02** Lunge (Pulmo): Rechte Lunge = 3 Lappen (Ober-, Mittel-, Unterlappen), linke Lunge = 2 Lappen (Ober-, Unterlappen — Herzbucht). Von Pleura umgeben: Pleura visceralis (Lungenfell) + Pleura parietalis (Rippenfell). Pleuraspalt: Flüssigkeitsfilm + Unterdruck = Lunge wird an Thoraxwand gehalten. [Q-AP]
+
+**A&P-03** Bronchialbaum: Trachea → 2 Hauptbronchien → Lappenbronchien → Segmentbronchien → Bronchiolen → terminale Bronchiolen → respiratorische Bronchiolen → Alveolargänge → Alveolen. Ca. 300 Millionen Alveolen. Mukoziliäre Clearance: Flimmerepithel + Schleim transportieren Partikel rachenwärts. [Q-AP]
+
+**A&P-04** Gasaustausch: In den Alveolen über alveolokapilläre Membran (0,2-0,5 μm dünn). Diffusion nach Partialdruckgefälle: O₂ von Alveole → Blut (pO₂ Alveole 100 mmHg > pO₂ Blut 40 mmHg). CO₂ von Blut → Alveole (pCO₂ Blut 46 mmHg > pCO₂ Alveole 40 mmHg). Surfactant (Typ-II-Pneumozyten) senkt Oberflächenspannung → verhindert Alveolarkollaps. [Q-AP]
+
+**A&P-05** Atemmechanik: Inspiration = aktiv (Zwerchfell kontrahiert → flacht ab → Thoraxraum vergrößert + Interkostalmuskeln heben Rippen). Expiration = passiv (elastischer Rückstellkraft der Lunge). Atemhilfsmuskulatur: M. sternocleidomastoideus, Mm. scaleni (bei Atemnot = Einsatz sichtbar). [Q-AP]
+
+**A&P-06** Atemvolumina: Atemzugvolumen (AZV) = 500 ml. Inspiratorisches Reservevolumen = 3000 ml. Expiratorisches Reservevolumen = 1100 ml. Residualvolumen = 1200 ml (bleibt immer in Lunge). Vitalkapazität = AZV + IRV + ERV = ca. 4600 ml. Atemfrequenz: Erwachsener 12-20/min, Neugeborenes 40-50/min. [Q-AP]
+
+**A&P-07** Atemregulation: Atemzentrum in Medulla oblongata + Pons. Chemische Steuerung: CO₂-Anstieg im Blut (Hyperkapnie) = stärkster Atemantrieb. Zentrale Chemorezeptoren (Medulla) messen pH des Liquors. Periphere Chemorezeptoren (Glomus caroticum, Glomus aorticum) messen pO₂ + pCO₂ + pH im Blut. [Q-AP]
+
+**A&P-08** Sauerstofftransport: O₂ bindet an Hämoglobin in Erythrozyten (1 Hb bindet 4 O₂). Sauerstoffsättigung (SpO₂): normal 96-100%. Sauerstoffbindungskurve: S-förmig, bei niedrigem pH/hoher Temperatur Rechtsverschiebung = O₂ wird leichter abgegeben (Bohr-Effekt — wichtig bei Fieber/Muskelarbeit). [Q-AP]
 
 ---
 

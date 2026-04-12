@@ -2,7 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { HotspotZone, GlossarEntry } from "../../../content/ce-05/_types";
+import type { HotspotZone, GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepHotspotProps {
@@ -70,32 +70,32 @@ export function StepHotspot({
   const allFound = found.size === zones.length;
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
-      <h2 className="text-2xl font-bold text-[#1d1d1f]">
+    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+      <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
           <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 
-      <p className="text-lg font-medium text-[#1d1d1f]">
+      <p className="text-lg font-medium text-[var(--lern-text-primary)]">
         {instruction}
       </p>
 
       {/* Progress Dots */}
       <div className="flex items-center gap-2">
-        <span className="text-sm text-[#6e6e73]">
+        <span className="text-sm text-[var(--lern-text-secondary)]">
           {found.size} von {zones.length} gefunden
         </span>
         <div className="flex gap-1">
           {zones.map((z) => (
             <div
               key={z.id}
-              className={`h-2.5 w-2.5 rounded-full transition-colors ${
-                found.has(z.id) ? "bg-[#30D158]" : "bg-[#d2d2d7]"
+              className={`h-2 w-2 rounded-full transition-colors ${
+                found.has(z.id) ? "bg-[var(--lern-success)]" : "bg-[var(--lern-border)]"
               }`}
             />
           ))}
@@ -104,7 +104,7 @@ export function StepHotspot({
 
       {/* Bild mit Hotspots */}
       <div
-        className="relative rounded-2xl overflow-hidden border-2 border-[#d2d2d7] cursor-crosshair select-none"
+        className="relative rounded-2xl overflow-hidden border-2 border-[var(--lern-border)] cursor-crosshair select-none"
         onClick={handleClick}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -130,10 +130,10 @@ export function StepHotspot({
                   transform: "translate(-50%, -50%)",
                 }}
               >
-                <div className="h-8 w-8 rounded-full bg-[#30D158]/30 border-2 border-[#30D158] flex items-center justify-center">
-                  <span className="text-xs font-bold text-[#30D158]">✓</span>
+                <div className="h-8 w-8 rounded-full bg-[#6B8F71]/30 border-2 border-[#6B8F71] flex items-center justify-center">
+                  <span className="text-xs font-bold text-[#6B8F71]">✓</span>
                 </div>
-                <span className="absolute -bottom-5 whitespace-nowrap text-[10px] font-bold text-[#30D158] bg-white/80 px-1 rounded">
+                <span className="absolute -bottom-5 whitespace-nowrap text-[10px] font-bold text-[#6B8F71] bg-[var(--lern-bg-primary)]/80 px-1 rounded">
                   {zone.label}
                 </span>
               </motion.div>
@@ -149,7 +149,7 @@ export function StepHotspot({
               exit={{ opacity: 0 }}
               transition={{ duration: 0.6 }}
               className={`absolute h-6 w-6 rounded-full ${
-                ripple.hit ? "bg-[#30D158]" : "bg-[#FF3B30]"
+                ripple.hit ? "bg-[var(--lern-success)]" : "bg-[#C96B5C]"
               }`}
               style={{
                 left: `${ripple.x}%`,
@@ -169,7 +169,7 @@ export function StepHotspot({
             .map((z) => (
               <span
                 key={z.id}
-                className="rounded-full bg-[#30D158]/10 px-3 py-1 text-sm font-medium text-[#30D158]"
+                className="rounded-full bg-[#6B8F71]/10 px-3 py-1 text-sm font-medium text-[#6B8F71]"
               >
                 {z.label}
               </span>
@@ -184,14 +184,14 @@ export function StepHotspot({
           animate={{ opacity: 1, y: 0 }}
           className="space-y-4"
         >
-          <div className="rounded-2xl bg-[#30D158]/10 border border-[#30D158]/30 p-4">
-            <p className="font-semibold text-[#30D158]">
+          <div className="rounded-2xl bg-[#6B8F71]/10 border border-[#6B8F71]/30 p-4">
+            <p className="font-semibold text-[#6B8F71]">
               Alle {zones.length} Punkte gefunden!
             </p>
           </div>
           <button
             onClick={() => onNext(allFound)}
-            className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
           >
             Weiter
           </button>

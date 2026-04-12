@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FeedbackText } from "./feedback-text";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 
 interface DialogOption {
@@ -65,6 +65,8 @@ export function StepDialog({
   const [showChoices, setShowChoices] = useState(false);
   const [finished, setFinished] = useState(false);
   const [initialized, setInitialized] = useState(false);
+  const [showConsequence, setShowConsequence] = useState<string | null>(null);
+  const [firstAttemptCorrect, setFirstAttemptCorrect] = useState<boolean[]>([]);
   const chatRef = useRef<HTMLDivElement>(null);
   const current = phases[phase];
 
@@ -102,11 +104,21 @@ export function StepDialog({
     const optResponse = t(opt.patientResponse, opt.patientResponseB1, sprachLevel);
     const optFeedback = t(opt.feedback, opt.feedbackB1, sprachLevel);
 
+    const isGoodChoice = opt.score >= 2;
+    setFirstAttemptCorrect((prev) => [...prev, isGoodChoice]);
+
     setShowChoices(false);
     setMessages((m) => [...m, { sender: "pflege", text: optText }]);
     setTyping(true);
     setTotalScore((s) => s + opt.score);
     setMaxScore((s) => s + 3);
+
+    // Konsequenz-Nachricht bei schlechter Wahl (score 0 oder 1)
+    const consequenceText = !isGoodChoice
+      ? opt.score === 0
+        ? "Diese Reaktion kann das Vertrauen beeinträchtigen. Versuche, empathischer zu kommunizieren."
+        : "Das war nicht optimal. Achte auf eine wertschätzende und professionelle Kommunikation."
+      : null;
 
     setTimeout(() => {
       setTyping(false);
@@ -114,8 +126,19 @@ export function StepDialog({
         ...m,
         { sender: "patient", text: optResponse, speakerName: speaker },
       ]);
-      setShowFeedback(optFeedback);
-      setWaitingForUser(true);
+
+      if (consequenceText) {
+        setShowConsequence(consequenceText);
+        // Konsequenz kurz anzeigen, dann Feedback
+        setTimeout(() => {
+          setShowConsequence(null);
+          setShowFeedback(optFeedback);
+          setWaitingForUser(true);
+        }, 2500);
+      } else {
+        setShowFeedback(optFeedback);
+        setWaitingForUser(true);
+      }
     }, 1200);
   };
 
@@ -145,14 +168,14 @@ export function StepDialog({
     maxScore > 0 ? Math.round((totalScore / maxScore) * 100) : 0;
 
   return (
-    <div className="space-y-4 pb-20" style={{ color: "#1d1d1f" }}>
+    <div className="space-y-3" style={{ color: "var(--lern-text-primary)" }}>
       {/* Header */}
       <div>
-        <h2 className="text-2xl font-bold text-[#1d1d1f]">
+        <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
           {title}
         </h2>
         {body && (
-          <p className="mt-2 text-sm text-[#6e6e73] leading-relaxed">
+          <p className="mt-2 text-sm text-[var(--lern-text-secondary)] leading-relaxed">
             <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
           </p>
         )}
@@ -161,17 +184,17 @@ export function StepDialog({
       {/* Vitals monitor */}
       {current && !finished && current.vitals && (
         <div className="bg-[#1d1d1f] rounded-xl px-4 py-2.5 flex items-center gap-3">
-          <span className="w-2 h-2 rounded-full bg-[#30D158] animate-pulse" />
-          <span className="text-xs text-[#30D158] font-mono">
+          <span className="w-2 h-2 rounded-full bg-[#6B8F71] animate-pulse" />
+          <span className="text-xs text-[#6B8F71] font-mono">
             {current.vitals}
           </span>
         </div>
       )}
 
-      {/* Chat — WhatsApp-Style */}
+      {/* Chat — WhatsApp-Style, kompakter auf Mobile */}
       <div
         ref={chatRef}
-        className="space-y-3 max-h-[50vh] overflow-y-auto rounded-2xl bg-[#efeae2] p-4"
+        className="space-y-3 max-h-[35vh] overflow-y-auto rounded-2xl bg-[#efeae2] p-3"
         style={{
           backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
         }}
@@ -190,16 +213,16 @@ export function StepDialog({
               className={`max-w-[85%] px-3.5 py-2.5 text-sm leading-relaxed shadow-sm ${
                 m.sender === "pflege"
                   ? "bg-[#d9fdd3] text-[#111b21] rounded-2xl rounded-tr-md"
-                  : "bg-white text-[#111b21] rounded-2xl rounded-tl-md"
+                  : "bg-[var(--lern-bg-primary)] text-[#111b21] rounded-2xl rounded-tl-md"
               }`}
             >
               {m.sender === "patient" && (
-                <span className="text-xs font-semibold text-[#0071e3] block mb-0.5">
+                <span className="text-xs font-semibold text-[var(--lern-accent)] block mb-0.5">
                   {m.speakerName ?? patientName}
                 </span>
               )}
               {m.sender === "pflege" && (
-                <span className="text-xs font-semibold text-[#30D158] block mb-0.5">
+                <span className="text-xs font-semibold text-[#6B8F71] block mb-0.5">
                   Du (Pflege)
                 </span>
               )}
@@ -218,7 +241,7 @@ export function StepDialog({
             animate={{ opacity: 1 }}
             className="flex justify-start"
           >
-            <div className="bg-white rounded-2xl rounded-tl-md px-4 py-3 shadow-sm">
+            <div className="bg-[var(--lern-bg-primary)] rounded-2xl rounded-tl-md px-4 py-3 shadow-sm">
               <div className="flex gap-1">
                 <span
                   className="w-2 h-2 rounded-full bg-[#667781] animate-bounce"
@@ -238,6 +261,21 @@ export function StepDialog({
         )}
       </div>
 
+      {/* Konsequenz bei schlechter Wahl */}
+      <AnimatePresence>
+        {showConsequence && (
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            className="rounded-2xl bg-[#D4956A]/10 border border-[#D4956A]/20 p-4"
+          >
+            <p className="text-xs font-semibold text-[#D4956A] mb-1">Konsequenz</p>
+            <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">{showConsequence}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Feedback */}
       <AnimatePresence>
         {showFeedback && (
@@ -245,10 +283,10 @@ export function StepDialog({
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            className="rounded-2xl bg-[#0071e3]/10 border border-[#0071e3]/20 p-4"
+            className="rounded-2xl bg-[var(--lern-accent)]/10 border border-[var(--lern-accent)]/20 p-4"
           >
-            <p className="text-xs font-semibold text-[#0071e3] mb-1">Feedback</p>
-            <p className="text-sm text-[#1d1d1f] leading-relaxed">
+            <p className="text-xs font-semibold text-[var(--lern-accent)] mb-1">Feedback</p>
+            <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">
               <FeedbackText sprachLevel={sprachLevel}>{showFeedback}</FeedbackText>
             </p>
           </motion.div>
@@ -259,7 +297,7 @@ export function StepDialog({
       {waitingForUser && showFeedback && (
         <button
           onClick={nextPhase}
-          className="w-full rounded-2xl bg-[#f5f5f7] px-6 py-4 text-base font-semibold text-[#1d1d1f] transition-all active:scale-[0.98]"
+          className="w-full rounded-2xl bg-[var(--lern-bg)] px-6 py-4 text-base font-semibold text-[var(--lern-text-primary)] transition-all active:scale-[0.98]"
         >
           Weiter
         </button>
@@ -274,7 +312,7 @@ export function StepDialog({
             exit={{ opacity: 0, y: 12 }}
             className="space-y-2"
           >
-            <p className="text-xs text-[#6e6e73] font-medium px-1">Wähle deine Antwort:</p>
+            <p className="text-xs text-[var(--lern-text-secondary)] font-medium px-1">Wähle deine Antwort:</p>
             {current.options.map((opt, i) => (
               <motion.button
                 key={i}
@@ -283,7 +321,7 @@ export function StepDialog({
                 transition={{ delay: i * 0.1 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => choose(opt)}
-                className="w-full text-left px-4 py-3.5 border-2 border-[#d2d2d7] rounded-2xl text-sm text-[#1d1d1f] hover:border-[#0071e3] transition-colors bg-white"
+                className="w-full text-left px-4 py-3.5 border-2 border-[var(--lern-border)] rounded-2xl text-sm text-[var(--lern-text-primary)] hover:border-[var(--lern-accent)] transition-colors bg-[var(--lern-bg-primary)]"
               >
                 {t(opt.text, opt.textB1, sprachLevel)}
               </motion.button>
@@ -307,7 +345,7 @@ export function StepDialog({
                 r="16"
                 fill="none"
                 stroke="currentColor"
-                className="text-[#e8e8ed]"
+                className="text-[var(--lern-divider)]"
                 strokeWidth="3"
               />
               <motion.circle
@@ -315,7 +353,7 @@ export function StepDialog({
                 cy="18"
                 r="16"
                 fill="none"
-                stroke={scorePercent >= 70 ? "#30D158" : "#FF9500"}
+                stroke={scorePercent >= 70 ? "#6B8F71" : "#D4956A"}
                 strokeWidth="3"
                 strokeLinecap="round"
                 strokeDasharray={`${scorePercent} 100`}
@@ -324,11 +362,11 @@ export function StepDialog({
                 transition={{ duration: 1, ease: "easeOut" }}
               />
             </svg>
-            <span className="absolute text-xl font-bold text-[#1d1d1f]">
+            <span className="absolute text-xl font-bold text-[var(--lern-text-primary)]">
               {scorePercent}%
             </span>
           </div>
-          <p className="text-sm text-[#6e6e73]">
+          <p className="text-sm text-[var(--lern-text-secondary)]">
             {scorePercent >= 80
               ? "Hervorragende Kommunikation!"
               : scorePercent >= 50
@@ -336,9 +374,18 @@ export function StepDialog({
                 : "Hier gibt es Übungsbedarf."}
           </p>
 
+          {/* Beim-ersten-Versuch-Statistik */}
+          {firstAttemptCorrect.length > 0 && (
+            <div className="rounded-2xl bg-[var(--lern-bg)] px-4 py-3">
+              <p className="text-xs text-[var(--lern-text-secondary)]">
+                Beim ersten Versuch richtig: {firstAttemptCorrect.filter(Boolean).length}/{firstAttemptCorrect.length} Phasen
+              </p>
+            </div>
+          )}
+
           <button
             onClick={() => onNext(scorePercent >= 70)}
-            className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
           >
             Weiter
           </button>

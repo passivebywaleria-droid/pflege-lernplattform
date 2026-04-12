@@ -14,8 +14,9 @@
 
 import { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
+import { generiereSandwichFeedback, SandwichFeedbackDisplay } from "./bloom-feedback";
 import { HandDrawnIcon } from "@/components/ui/hand-drawn-icon";
 
 interface CrosswordWord {
@@ -456,7 +457,7 @@ export function StepCrossword({
   const downClues = placed.filter((p) => p.direction === "down");
 
   return (
-    <div className="space-y-5 pb-20" style={{ color: "#1d1d1f" }}>
+    <div className="space-y-5 pb-20" style={{ color: "var(--lern-text-primary)" }}>
       <h2 className="text-2xl font-bold">{title}</h2>
 
       {body && (
@@ -494,19 +495,19 @@ export function StepCrossword({
                   key={`${row}-${col}`}
                   className={`relative border transition-colors ${
                     status === "correct"
-                      ? "border-[#30D158] bg-[#30D158]/10"
+                      ? "border-[#6B8F71] bg-[#6B8F71]/10"
                       : status === "wrong"
-                        ? "border-[#FF3B30] bg-[#FF3B30]/10"
+                        ? "border-[#C96B5C] bg-[#C96B5C]/10"
                         : isActive
-                          ? "border-[#0071e3] bg-[#0071e3]/5"
-                          : "border-[#d2d2d7] bg-white"
+                          ? "border-[var(--lern-accent)] bg-[var(--lern-accent-bg)]"
+                          : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)]"
                   }`}
                   style={{ width: cellSize, height: cellSize }}
                 >
                   {/* Nummer */}
                   {cell.number && (
                     <span
-                      className="absolute font-bold text-[#0071e3] leading-none"
+                      className="absolute font-bold text-[var(--lern-accent)] leading-none"
                       style={{
                         fontSize: Math.max(8, cellSize * 0.25),
                         top: 1,
@@ -525,6 +526,7 @@ export function StepCrossword({
                     inputMode="text"
                     autoComplete="off"
                     autoCapitalize="characters"
+                    aria-label={`Buchstabe Zeile ${row + 1}, Spalte ${col + 1}${cell.number ? `, Nummer ${cell.number}` : ""}`}
                     value={
                       checked && status === "wrong"
                         ? cell.letter
@@ -534,15 +536,15 @@ export function StepCrossword({
                     onKeyDown={(e) => handleCellKeyDown(row, col, e)}
                     onFocus={() => handleCellFocus(row, col)}
                     readOnly={checked}
-                    className={`w-full h-full text-center font-bold uppercase bg-transparent focus:outline-none ${
+                    className={`w-full h-full text-center font-bold uppercase bg-transparent focus:outline-2 focus:outline-[var(--lern-accent)] ${
                       checked && status === "wrong"
-                        ? "text-[#FF3B30]"
-                        : "text-[#1d1d1f]"
+                        ? "text-[#C96B5C]"
+                        : "text-[var(--lern-text-primary)]"
                     }`}
                     style={{
                       fontSize: Math.max(12, cellSize * 0.5),
                       paddingTop: cell.number ? Math.max(4, cellSize * 0.15) : 0,
-                      caretColor: "#0071e3",
+                      caretColor: "var(--lern-accent)",
                     }}
                     maxLength={2}
                   />
@@ -558,7 +560,7 @@ export function StepCrossword({
         {acrossClues.length > 0 && (
           <div>
             <h3 className="text-sm font-bold mb-2 flex items-center gap-2">
-              <span className="w-5 h-5 rounded bg-[#0071e3]/10 text-[#0071e3] flex items-center justify-center text-xs">→</span>
+              <span className="w-5 h-5 rounded bg-[var(--lern-accent)]/10 text-[var(--lern-accent)] flex items-center justify-center text-xs">→</span>
               Waagerecht
             </h3>
             <div className="space-y-1.5">
@@ -571,17 +573,17 @@ export function StepCrossword({
                   }}
                   className={`w-full text-left rounded-xl px-3 py-2.5 text-sm transition-all ${
                     activeWordIdx !== null && placed[activeWordIdx] === p
-                      ? "bg-[#0071e3]/10 border border-[#0071e3]/20"
-                      : "bg-[#f5f5f7] border border-transparent"
+                      ? "bg-[var(--lern-accent)]/10 border border-[var(--lern-accent)]/20"
+                      : "bg-[var(--lern-bg)] border border-transparent"
                   } ${
                     checked && wordResults[placed.indexOf(p)]
                       ? "opacity-60 line-through"
                       : ""
                   }`}
                 >
-                  <span className="font-bold text-[#0071e3] mr-2">{p.number}.</span>
+                  <span className="font-bold text-[var(--lern-accent)] mr-2">{p.number}.</span>
                   {renderBold(p.clue)}
-                  <span className="text-[#86868b] ml-1">({p.word.length})</span>
+                  <span className="text-[var(--lern-text-tertiary)] ml-1">({p.word.length})</span>
                 </button>
               ))}
             </div>
@@ -591,7 +593,7 @@ export function StepCrossword({
         {downClues.length > 0 && (
           <div>
             <h3 className="text-sm font-bold mb-2 flex items-center gap-2">
-              <span className="w-5 h-5 rounded bg-[#0071e3]/10 text-[#0071e3] flex items-center justify-center text-xs">↓</span>
+              <span className="w-5 h-5 rounded bg-[var(--lern-accent)]/10 text-[var(--lern-accent)] flex items-center justify-center text-xs">↓</span>
               Senkrecht
             </h3>
             <div className="space-y-1.5">
@@ -604,17 +606,17 @@ export function StepCrossword({
                   }}
                   className={`w-full text-left rounded-xl px-3 py-2.5 text-sm transition-all ${
                     activeWordIdx !== null && placed[activeWordIdx] === p
-                      ? "bg-[#0071e3]/10 border border-[#0071e3]/20"
-                      : "bg-[#f5f5f7] border border-transparent"
+                      ? "bg-[var(--lern-accent)]/10 border border-[var(--lern-accent)]/20"
+                      : "bg-[var(--lern-bg)] border border-transparent"
                   } ${
                     checked && wordResults[placed.indexOf(p)]
                       ? "opacity-60 line-through"
                       : ""
                   }`}
                 >
-                  <span className="font-bold text-[#0071e3] mr-2">{p.number}.</span>
+                  <span className="font-bold text-[var(--lern-accent)] mr-2">{p.number}.</span>
                   {renderBold(p.clue)}
-                  <span className="text-[#86868b] ml-1">({p.word.length})</span>
+                  <span className="text-[var(--lern-text-tertiary)] ml-1">({p.word.length})</span>
                 </button>
               ))}
             </div>
@@ -626,31 +628,26 @@ export function StepCrossword({
       {!checked ? (
         <button
           onClick={() => setChecked(true)}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+          aria-label="Kreuzworträtsel prüfen"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
         >
           Prüfen
         </button>
       ) : (
         <div className="space-y-4">
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            className={`rounded-2xl p-4 ${
-              allCorrect
-                ? "bg-[#30D158]/10 border border-[#30D158]/30"
-                : "bg-[#FF9500]/10 border border-[#FF9500]/30"
-            }`}
-          >
-            <p className="font-semibold">
-              {allCorrect
-                ? <>Alle Begriffe korrekt! <HandDrawnIcon name="celebration" size={18} color="#30D158" className="inline-block ml-1" /></>
-                : `${correctCount}/${placed.length} richtig. Falsche Buchstaben sind rot markiert — die Lösung wird angezeigt.`}
-            </p>
-          </motion.div>
+          <SandwichFeedbackDisplay
+            feedback={generiereSandwichFeedback(
+              allCorrect,
+              allCorrect ? "" : `${correctCount} von ${placed.length} Wörtern richtig. Falsche Buchstaben sind rot markiert.`,
+              allCorrect ? "Alle Begriffe korrekt!" : undefined,
+            )}
+            correct={allCorrect}
+          />
 
           <button
             onClick={() => onNext(allCorrect)}
-            className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+            aria-label="Weiter zum nächsten Schritt"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
           >
             Weiter
           </button>

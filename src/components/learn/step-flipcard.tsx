@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 interface FlipCardItem {
   front: string;
@@ -47,16 +47,16 @@ function FlipCard({
     >
       {/* Nicht geflippt: Front */}
       {!isFlipped && (
-        <div className="rounded-2xl border-2 border-[#d2d2d7] bg-white p-5 flex flex-col items-center justify-center shadow-sm min-h-[120px]">
+        <div className="rounded-2xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-5 flex flex-col items-center justify-center shadow-sm min-h-[120px]">
           {item.category && (
-            <span className="text-[10px] text-[#6e6e73] font-medium uppercase tracking-wider mb-2">
+            <span className="text-[10px] text-[var(--lern-text-secondary)] font-medium uppercase tracking-wider mb-2">
               {item.category}
             </span>
           )}
-          <p className="text-sm font-semibold text-[#1d1d1f] text-center leading-snug">
+          <p className="text-sm font-semibold text-[var(--lern-text-primary)] text-center leading-snug">
             {renderBold(item.front)}
           </p>
-          <p className="text-[10px] text-[#6e6e73] mt-2">Antippen ↻</p>
+          <p className="text-[10px] text-[var(--lern-text-secondary)] mt-2">Antippen ↻</p>
         </div>
       )}
 
@@ -66,17 +66,17 @@ function FlipCard({
           initial={{ rotateY: 90 }}
           animate={{ rotateY: 0 }}
           transition={{ duration: 0.3 }}
-          className="rounded-2xl border-2 border-[#0071e3] bg-[#0071e3]/5 p-5 min-h-[120px]"
+          className="rounded-2xl border-2 border-[var(--lern-accent)] bg-[var(--lern-accent-bg)] p-5 min-h-[120px]"
         >
           {item.category && (
-            <span className="text-[10px] text-[#0071e3] font-medium uppercase tracking-wider block mb-2 text-center">
+            <span className="text-[10px] text-[var(--lern-accent)] font-medium uppercase tracking-wider block mb-2 text-center">
               {item.category}
             </span>
           )}
-          <p className="text-sm text-[#1d1d1f] text-center leading-relaxed">
+          <p className="text-sm text-[var(--lern-text-primary)] text-center leading-relaxed">
             {renderBold(backText)}
           </p>
-          <p className="text-[10px] text-[#6e6e73] mt-2 text-center">Antippen ↻</p>
+          <p className="text-[10px] text-[var(--lern-text-secondary)] mt-2 text-center">Antippen ↻</p>
         </motion.div>
       )}
     </motion.div>
@@ -109,7 +109,7 @@ export function StepFlipCard({
   };
 
   return (
-    <div className="space-y-5 pb-20" style={{ color: "#1d1d1f" }}>
+    <div className="space-y-5 pb-20" style={{ color: "var(--lern-text-primary)" }}>
       <h2 className="text-2xl font-bold">{title}</h2>
 
       {body && (
@@ -118,11 +118,11 @@ export function StepFlipCard({
         </p>
       )}
 
-      <p className="text-sm" style={{ color: "#6e6e73" }}>{instruction}</p>
+      <p className="text-lg font-medium" style={{ color: "var(--lern-text-primary)" }}>{instruction}</p>
 
       {/* Progress */}
       <div className="flex items-center justify-between">
-        <span className="text-xs text-[#6e6e73]">
+        <span className="text-xs text-[var(--lern-text-secondary)]">
           {flippedCards.size} von {cards.length} aufgedeckt
         </span>
         <div className="flex gap-1">
@@ -130,7 +130,7 @@ export function StepFlipCard({
             <div
               key={i}
               className={`w-2 h-2 rounded-full transition-colors ${
-                flippedCards.has(i) ? "bg-[#0071e3]" : "bg-[#e8e8ed]"
+                flippedCards.has(i) ? "bg-[var(--lern-accent)]" : "bg-[var(--lern-divider)]"
               }`}
             />
           ))}
@@ -156,7 +156,7 @@ export function StepFlipCard({
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         onClick={() => onNext(true)}
-        className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)]"
       >
         Weiter
       </motion.button>

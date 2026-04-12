@@ -15,6 +15,27 @@
 | Q4 | TRBA 250 — Biologische Arbeitsstoffe im Gesundheitswesen |
 | Q5 | Aktion Saubere Hände (ASH) — WHO-Kampagne |
 | Q6 | PflBG §5 — Generalistische Pflegeausbildung |
+| Q-AP | I Care Anatomie Physiologie (Thieme, 2020) | Kap. Immunsystem, Lymphsystem, Entzündung |
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: LE-40, LE-55
+
+**A&P-01** Immunsystem — Überblick: Abwehrsystem gegen Krankheitserreger (Bakterien, Viren, Pilze, Parasiten) und entartete Zellen. 2 Teile: angeborenes (unspezifisches) Immunsystem (sofort wirksam, keine Erinnerung) + erworbenes (spezifisches/adaptives) Immunsystem (langsamer, bildet Gedächtniszellen). [Q-AP]
+
+**A&P-02** Angeborene Immunabwehr: 1. Barriere: Haut, Schleimhäute, Magensäure, Lysozym (Tränen, Speichel). 2. Zelluläre Abwehr: Granulozyten (v.a. neutrophile = Phagozytose), Makrophagen (Fresszellen), Natürliche Killerzellen (NK-Zellen = töten virusinfizierte/Tumorzellen). 3. Humorale Abwehr: Komplementsystem (Enzymkaskade → Lyse von Erregern), Interferone, Akute-Phase-Proteine (CRP). [Q-AP]
+
+**A&P-03** Erworbene Immunabwehr: T-Lymphozyten (zelluläre Immunität, reifen im Thymus): T-Helferzellen (CD4+, koordinieren), Zytotoxische T-Zellen (CD8+, töten), T-Gedächtniszellen. B-Lymphozyten (humorale Immunität, reifen im Knochenmark): differenzieren zu Plasmazellen → produzieren Antikörper (Immunglobuline: IgG, IgM, IgA, IgE, IgD). Antigen-Antikörper-Reaktion = Schlüssel-Schloss-Prinzip. [Q-AP]
+
+**A&P-04** Lymphatische Organe: Primär (Reifungsorte): Knochenmark (B-Zellen), Thymus (T-Zellen, bildet sich ab Pubertät zurück). Sekundär (Abwehrstationen): Lymphknoten (filtern Lymphe, ca. 600-700 im Körper), Milz (filtert Blut, Abbau alter Erythrozyten, größtes Lymphorgan), Tonsillen (Waldeyer-Rachenring), MALT (mukosaassoziiertes lymphatisches Gewebe, z.B. Peyer-Plaques im Dünndarm). [Q-AP]
+
+**A&P-05** Lymphsystem: Lymphe = Gewebsflüssigkeit (Plasma-Ultrafiltrat) die über Lymphkapillaren → Lymphkollektoren → Lymphknoten → Lymphstämme → Ductus thoracicus → Venenwinkel (V. subclavia + V. jugularis interna links) ins Blut zurückfließt. Funktion: Drainage überschüssiger Gewebsflüssigkeit (ca. 2-3 L/Tag), Transport von Fetten (Chylomikronen aus Darm), Immunüberwachung. [Q-AP]
+
+**A&P-06** Entzündungsreaktion — 5 Kardinalsymptome: Rubor (Rötung), Calor (Überwärmung), Tumor (Schwellung), Dolor (Schmerz), Functio laesa (eingeschränkte Funktion). Ablauf: Gewebeschädigung → Histamin/Prostaglandine → lokale Vasodilatation → erhöhte Kapillarpermeabilität → Leukozyten wandern ein → Phagozytose → Heilung oder Chronifizierung. Fieber = systemische Entzündungsantwort (Pyrogene → Hypothalamus erhöht Sollwert). [Q-AP]
 
 ---
 

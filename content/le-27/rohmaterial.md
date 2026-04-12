@@ -14,6 +14,31 @@
 | Q4 | DNQP (2013/2022): Expertenstandard Sturzprophylaxe in der Pflege |
 | Q5 | AWMF S2k-Leitlinie Hörsturz (2014) — Diagnostik und Therapie |
 | Q6 | Deutsche Ophthalmologische Gesellschaft (DOG): Leitlinie Glaukom (2020) |
+| Q-AP | I Care Anatomie Physiologie (Thieme, 2020) |
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: LE-35, LE-47
+
+**A&P-01** Auge — Aufbau: Augapfel (Bulbus oculi) in knöcherner Augenhöhle (Orbita). 3 Schichten: Sklera (Lederhaut, weiß, vorne transparent = Kornea), Choroidea (Aderhaut, Gefäße), Retina (Netzhaut, Photorezeptoren). Brechende Medien: Kornea → Kammerwasser → Linse → Glaskörper. [Q-AP]
+
+**A&P-02** Sehen — Lichtbrechung und Akkommodation: Licht wird durch Kornea (stärkste Brechkraft, 43 dpt) + Linse (variabel, 10-20 dpt) auf Retina fokussiert. Akkommodation: Ziliarmuskel spannt/entspannt → Linse wird dicker/flacher → Nah-/Ferneinstellung. Presbyopie (Alterssichtigkeit): Linse verliert ab ca. 45 Jahren Elastizität. [Q-AP]
+
+**A&P-03** Retina und Sehbahn: Stäbchen (120 Mio. = Hell-Dunkel, Dämmerungssehen) + Zapfen (6 Mio. = Farbsehen, 3 Typen: rot/grün/blau, konzentriert in Fovea centralis = schärfstes Sehen). Blinder Fleck = Papilla nervi optici (Austritt N. opticus, keine Rezeptoren). Sehbahn: Retina → N. opticus → Chiasma opticum (Teilkreuzung) → Tractus opticus → visueller Kortex (Okzipitallappen). [Q-AP]
+
+**A&P-04** Ohr — Aufbau: Äußeres Ohr (Ohrmuschel, äußerer Gehörgang). Mittelohr (Trommelfell, Gehörknöchelchen: Hammer-Amboss-Steigbügel = Schallübertragung und -verstärkung um Faktor 20, Eustachische Röhre = Druckausgleich zum Nasopharynx). Innenohr (Cochlea = Schnecke für Hören, Vestibularorgan = Gleichgewicht). [Q-AP]
+
+**A&P-05** Hören: Schallwellen → Trommelfell vibriert → Gehörknöchelchen übertragen auf ovales Fenster → Perilymphe in Cochlea bewegt sich → Basilarmembran schwingt → Haarzellen im Corti-Organ werden abgeschert → elektrischer Impuls → N. vestibulocochlearis → Hörrinde (Temporallappen). Frequenzbereich: 16-20.000 Hz, Sprachbereich: 500-4.000 Hz. [Q-AP]
+
+**A&P-06** Gleichgewicht (Vestibularorgan): 3 Bogengänge (Drehbeschleunigung in 3 Ebenen) + 2 Maculaorgane: Utriculus (horizontale Beschleunigung) + Sacculus (vertikale Beschleunigung/Schwerkraft). Endolymphe bewegt sich → Sinneshärchen kippen → N. vestibularis → Hirnstamm. Zusammenspiel mit Augen (VOR = vestibulookulärer Reflex) + Propriozeption + visuelles System. [Q-AP]
+
+**A&P-07** Geruchssinn (Olfaktorisches System): Riechepithel in oberer Nasenmuschel (ca. 5 cm², 10-30 Mio. Riechzellen). Riechzellen = bipolare Neuronen mit Zilien (Rezeptoren für Duftmoleküle). Signalweg: Riechzellen → Fila olfactoria → durch Lamina cribrosa → Bulbus olfactorius → limbisches System (Emotionen! → Gerüche wecken Erinnerungen). [Q-AP]
+
+**A&P-08** Geschmackssinn (Gustatorisches System): 4 Grundqualitäten (+ umami): süß (Zungenspitze), sauer (Zungenrand), salzig (Zungenrand), bitter (Zungengrund). Geschmacksknospen in Papillen der Zunge (ca. 5.000-10.000). Signalweg: N. facialis (VII, vordere 2/3) + N. glossopharyngeus (IX, hinteres 1/3) → Nucleus tractus solitarii → Thalamus → gustatorischer Kortex. Geschmack = 80% Geruch! [Q-AP]
 
 ---
 

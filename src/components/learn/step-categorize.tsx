@@ -2,8 +2,9 @@
 
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
+import { generiereSandwichFeedback, SandwichFeedbackDisplay } from "./bloom-feedback";
 
 interface Category {
   name: string;
@@ -25,34 +26,34 @@ interface StepCategorizeProps {
 
 const CATEGORY_COLORS = [
   {
-    bg: "bg-[#FF3B30]/10",
-    border: "border-[#FF3B30]/30",
-    text: "text-[#FF3B30]",
-    itemBg: "bg-[#FF3B30]/5",
+    bg: "bg-[#C96B5C]/10",
+    border: "border-[#C96B5C]/30",
+    text: "text-[#C96B5C]",
+    itemBg: "bg-[#C96B5C]/5",
   },
   {
-    bg: "bg-[#0071e3]/10",
-    border: "border-[#0071e3]/30",
-    text: "text-[#0071e3]",
-    itemBg: "bg-[#0071e3]/5",
+    bg: "bg-[var(--lern-accent)]/10",
+    border: "border-[var(--lern-accent)]/30",
+    text: "text-[var(--lern-accent)]",
+    itemBg: "bg-[var(--lern-accent-bg)]",
   },
   {
-    bg: "bg-[#FF9500]/10",
-    border: "border-[#FF9500]/30",
-    text: "text-[#FF9500]",
-    itemBg: "bg-[#FF9500]/5",
+    bg: "bg-[#D4956A]/10",
+    border: "border-[#D4956A]/30",
+    text: "text-[#D4956A]",
+    itemBg: "bg-[#D4956A]/5",
   },
   {
-    bg: "bg-[#30D158]/10",
-    border: "border-[#30D158]/30",
-    text: "text-[#30D158]",
-    itemBg: "bg-[#30D158]/5",
+    bg: "bg-[#6B8F71]/10",
+    border: "border-[#6B8F71]/30",
+    text: "text-[#6B8F71]",
+    itemBg: "bg-[#6B8F71]/5",
   },
   {
-    bg: "bg-[#AF52DE]/10",
-    border: "border-[#AF52DE]/30",
-    text: "text-[#AF52DE]",
-    itemBg: "bg-[#AF52DE]/5",
+    bg: "bg-[#9B7EA6]/10",
+    border: "border-[#9B7EA6]/30",
+    text: "text-[#9B7EA6]",
+    itemBg: "bg-[#9B7EA6]/5",
   },
 ];
 
@@ -98,18 +99,18 @@ export function StepCategorize({
   const allPlaced = remaining.length === 0;
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
-      <h2 className="text-2xl font-bold text-[#1d1d1f]">
+    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+      <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
           <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 
-      <p className="text-sm text-[#6e6e73]">
+      <p className="text-sm text-[var(--lern-text-secondary)]">
         Ordne jedes Element der richtigen Kategorie zu.
       </p>
 
@@ -119,12 +120,12 @@ export function StepCategorize({
           key={remaining[0].text}
           initial={{ opacity: 0, y: -10, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          className="rounded-2xl border-2 border-[#0071e3] bg-[#0071e3]/5 px-5 py-4 text-center"
+          className="rounded-2xl border-2 border-[var(--lern-accent)] bg-[var(--lern-accent-bg)] px-5 py-4 text-center"
         >
-          <p className="text-xs text-[#86868b] mb-1">
+          <p className="text-xs text-[var(--lern-text-tertiary)] mb-1">
             Wohin gehört das? ({remaining.length} übrig)
           </p>
-          <p className="text-sm font-semibold text-[#1d1d1f]">
+          <p className="text-sm font-semibold text-[var(--lern-text-primary)]">
             <FachbegriffText glossar={glossar ?? []}>{remaining[0].text}</FachbegriffText>
           </p>
         </motion.div>
@@ -134,6 +135,8 @@ export function StepCategorize({
       {remaining.length > 0 && !checked && (
         <div
           className="grid gap-3"
+          role="group"
+          aria-label="Kategorien zum Zuordnen"
           style={{
             gridTemplateColumns: `repeat(${Math.min(categories.length, 3)}, 1fr)`,
           }}
@@ -145,12 +148,14 @@ export function StepCategorize({
                 key={catIdx}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => handleDrop(catIdx)}
-                className={`rounded-2xl border-2 ${colors.border} ${colors.bg} p-4 min-h-[80px] flex flex-col items-center justify-center gap-1 transition-all hover:shadow-md cursor-pointer`}
+                aria-label={`Zuordnen zu: ${cat.name}`}
+                aria-dropeffect="move"
+                className={`rounded-2xl border-2 ${colors.border} ${colors.bg} p-4 min-h-[80px] flex flex-col items-center justify-center gap-1 transition-all hover:shadow-md cursor-pointer focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2`}
               >
                 <span className={`text-sm font-bold ${colors.text}`}>
                   {cat.name}
                 </span>
-                <span className="text-[10px] text-[#86868b]">
+                <span className="text-[10px] text-[var(--lern-text-tertiary)]">
                   Hier zuordnen
                 </span>
               </motion.button>
@@ -182,20 +187,20 @@ export function StepCategorize({
                       type="button"
                       onClick={() => handleUnsort(catIdx, text)}
                       disabled={checked}
-                      className={`text-xs px-3 py-2 rounded-xl text-[#1d1d1f] transition-all flex items-center gap-1.5 ${
+                      className={`text-xs px-3 py-2 rounded-xl text-[var(--lern-text-primary)] transition-all flex items-center gap-1.5 ${
                         ok
-                          ? "bg-[#30D158]/20 border border-[#30D158]/30"
+                          ? "bg-[#6B8F71]/20 border border-[#6B8F71]/30"
                           : wrong
-                            ? "bg-[#FF3B30]/20 border border-[#FF3B30]/30 line-through"
-                            : "bg-white border border-[#d2d2d7] active:scale-95 shadow-sm"
+                            ? "bg-[#C96B5C]/20 border border-[#C96B5C]/30 line-through"
+                            : "bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] active:scale-95 shadow-sm"
                       }`}
                     >
                       {renderBold(text)}
                       {!checked && (
-                        <span className="text-[#86868b] text-[10px]">✕</span>
+                        <span className="text-[var(--lern-text-tertiary)] text-[10px]">✕</span>
                       )}
-                      {ok && <span className="text-[#30D158]">✓</span>}
-                      {wrong && <span className="text-[#FF3B30]">✗</span>}
+                      {ok && <span className="text-[#6B8F71]">✓</span>}
+                      {wrong && <span className="text-[#C96B5C]">✗</span>}
                     </button>
                   );
                 })}
@@ -208,7 +213,8 @@ export function StepCategorize({
       {allPlaced && !checked && (
         <button
           onClick={() => setChecked(true)}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+          aria-label="Zuordnung prüfen"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
         >
           Prüfen
         </button>
@@ -216,25 +222,19 @@ export function StepCategorize({
 
       {checked && (
         <div className="space-y-4">
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            className={`rounded-2xl p-4 ${
-              allCorrect
-                ? "bg-[#30D158]/10 border border-[#30D158]/30"
-                : "bg-[#FF9500]/10 border border-[#FF9500]/30"
-            }`}
-          >
-            <p className="font-semibold text-[#1d1d1f]">
-              {allCorrect
-                ? "Perfekt! Alle Elemente korrekt zugeordnet."
-                : <FachbegriffText glossar={glossar ?? []}>{`${correctCount}/${items.length} richtig.`}</FachbegriffText>}
-            </p>
-          </motion.div>
+          <SandwichFeedbackDisplay
+            feedback={generiereSandwichFeedback(
+              allCorrect,
+              allCorrect ? "" : `${correctCount} von ${items.length} richtig zugeordnet`,
+              allCorrect ? "Perfekt! Alle Elemente korrekt zugeordnet." : undefined,
+            )}
+            correct={allCorrect}
+          />
 
           <button
             onClick={() => onNext(allCorrect)}
-            className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+            aria-label="Weiter zum nächsten Schritt"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
           >
             Weiter
           </button>

@@ -2,32 +2,36 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
 import { cn } from "@/lib/utils"
 
 const navItems = [
-  { key: "home" as const, href: "/home", icon: HomeIcon },
-  { key: "learn" as const, href: "/learn", icon: BookIcon },
-  { key: "review" as const, href: "/review", icon: RepeatIcon },
-  { key: "progress" as const, href: "/progress", icon: ChartIcon },
+  { key: "home" as const, path: "/dashboard", icon: HomeIcon, ariaLabel: "Dashboard" },
+  { key: "learn" as const, path: "/lernen", icon: BookIcon, ariaLabel: "Lernen" },
+  { key: "wochenplan" as const, path: "/wochenplan", icon: CalendarIcon, ariaLabel: "Wochenplan" },
+  { key: "review" as const, path: "/review", icon: RepeatIcon, ariaLabel: "Karteikarten" },
+  { key: "progress" as const, path: "/fortschritt", icon: ChartIcon, ariaLabel: "Fortschritt" },
 ]
 
 export function BottomNav() {
   const t = useTranslations("nav")
   const pathname = usePathname()
+  const locale = useLocale()
 
   return (
     <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-background md:hidden">
       <div className="flex h-16 items-center justify-around">
         {navItems.map((item) => {
+          const href = `/${locale}${item.path}`
           const isActive =
-            pathname === item.href || pathname.startsWith(item.href + "/")
+            pathname === href || pathname.startsWith(href + "/")
           return (
             <Link
               key={item.key}
-              href={item.href}
+              href={href}
+              aria-label={item.ariaLabel}
               className={cn(
-                "flex flex-col items-center gap-1 px-3 py-2 text-xs font-medium transition-colors",
+                "flex flex-col items-center justify-center gap-1 min-h-[44px] min-w-[44px] px-3 py-2 text-xs font-medium transition-colors",
                 isActive
                   ? "text-primary"
                   : "text-muted-foreground hover:text-foreground"
@@ -67,6 +71,17 @@ function RepeatIcon({ className }: { className?: string }) {
       <path d="M3 11v-1a4 4 0 0 1 4-4h14" />
       <path d="m7 22-4-4 4-4" />
       <path d="M21 13v1a4 4 0 0 1-4 4H3" />
+    </svg>
+  )
+}
+
+function CalendarIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect width="18" height="18" x="3" y="4" rx="2" />
+      <path d="M16 2v4" />
+      <path d="M8 2v4" />
+      <path d="M3 10h18" />
     </svg>
   )
 }

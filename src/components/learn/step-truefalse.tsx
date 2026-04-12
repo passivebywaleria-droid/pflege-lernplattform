@@ -18,7 +18,7 @@ import {
   useTransform,
   type PanInfo,
 } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface TrueFalseCard {
@@ -92,7 +92,7 @@ export function StepTrueFalse({
     const correctCount = results.filter(Boolean).length;
     const allCorrect = correctCount === cards.length;
     return (
-      <div className="space-y-6" style={{ color: "#1d1d1f" }}>
+      <div className="space-y-6" style={{ color: "var(--lern-text-primary)" }}>
         <h2 className="text-2xl font-bold">
           Wahr/Falsch abgeschlossen!
         </h2>
@@ -101,8 +101,8 @@ export function StepTrueFalse({
           animate={{ opacity: 1, y: 0 }}
           className={`rounded-2xl p-4 ${
             allCorrect
-              ? "bg-[#30D158]/10 border border-[#30D158]/30"
-              : "bg-[#FF9500]/10 border border-[#FF9500]/30"
+              ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+              : "bg-[#D4956A]/10 border border-[#D4956A]/30"
           }`}
         >
           <p className="font-semibold">
@@ -113,7 +113,7 @@ export function StepTrueFalse({
         </motion.div>
         <button
           onClick={() => onNext(allCorrect)}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
         >
           Weiter
         </button>
@@ -122,7 +122,7 @@ export function StepTrueFalse({
   }
 
   return (
-    <div className="space-y-5" style={{ color: "#1d1d1f" }}>
+    <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }}>
       <h2 className="text-2xl font-bold">{title}</h2>
 
       {body && (
@@ -131,7 +131,7 @@ export function StepTrueFalse({
         </p>
       )}
 
-      <p className="text-sm" style={{ color: "#6e6e73" }}>
+      <p className="text-sm" style={{ color: "var(--lern-text-secondary)" }}>
         Tippe Falsch oder Wahr — oder wische die Karte.
       </p>
 
@@ -143,15 +143,15 @@ export function StepTrueFalse({
             className={`h-2 flex-1 rounded-full transition-colors ${
               i < results.length
                 ? results[i]
-                  ? "bg-[#30D158]"
-                  : "bg-[#FF3B30]"
+                  ? "bg-[#6B8F71]"
+                  : "bg-[#C96B5C]"
                 : i === cardIdx
-                  ? "bg-[#0071e3] animate-pulse"
-                  : "bg-[#e8e8ed]"
+                  ? "bg-[var(--lern-accent)] animate-pulse"
+                  : "bg-[var(--lern-divider)]"
             }`}
           />
         ))}
-        <span className="text-xs ml-1" style={{ color: "#6e6e73" }}>
+        <span className="text-xs ml-1" style={{ color: "var(--lern-text-secondary)" }}>
           {cardIdx + 1}/{cards.length}
         </span>
       </div>
@@ -169,10 +169,10 @@ export function StepTrueFalse({
             <motion.button
               onClick={() => handleSwipe(false)}
               style={{ backgroundColor: leftBg }}
-              className="flex-shrink-0 w-16 rounded-2xl border-2 border-[#FF3B30]/30 flex flex-col items-center justify-center gap-1 active:scale-95 transition-transform"
+              className="flex-shrink-0 w-16 rounded-2xl border-2 border-[#C96B5C]/30 flex flex-col items-center justify-center gap-1 active:scale-95 transition-transform"
             >
               <span className="text-lg">✗</span>
-              <span className="text-[10px] font-bold" style={{ color: "#FF3B30" }}>
+              <span className="text-[10px] font-bold" style={{ color: "#C96B5C" }}>
                 FALSCH
               </span>
             </motion.button>
@@ -187,7 +187,7 @@ export function StepTrueFalse({
                 if (info.offset.x > 80) handleSwipe(true);
                 else if (info.offset.x < -80) handleSwipe(false);
               }}
-              className="flex-1 rounded-2xl border-2 border-[#d2d2d7] bg-white p-5 min-h-[140px] flex items-center justify-center cursor-grab active:cursor-grabbing select-none shadow-sm"
+              className="flex-1 rounded-2xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-5 min-h-[140px] flex items-center justify-center cursor-grab active:cursor-grabbing select-none shadow-sm"
             >
               <p className="text-center text-base font-medium leading-snug">
                 <FachbegriffText glossar={glossar ?? []}>
@@ -200,10 +200,10 @@ export function StepTrueFalse({
             <motion.button
               onClick={() => handleSwipe(true)}
               style={{ backgroundColor: rightBg }}
-              className="flex-shrink-0 w-16 rounded-2xl border-2 border-[#30D158]/30 flex flex-col items-center justify-center gap-1 active:scale-95 transition-transform"
+              className="flex-shrink-0 w-16 rounded-2xl border-2 border-[#6B8F71]/30 flex flex-col items-center justify-center gap-1 active:scale-95 transition-transform"
             >
               <span className="text-lg">✓</span>
-              <span className="text-[10px] font-bold" style={{ color: "#30D158" }}>
+              <span className="text-[10px] font-bold" style={{ color: "#6B8F71" }}>
                 WAHR
               </span>
             </motion.button>
@@ -219,20 +219,20 @@ export function StepTrueFalse({
             <div
               className={`rounded-2xl border-2 p-5 ${
                 lastAnswer?.correct
-                  ? "border-[#30D158] bg-[#30D158]/5"
-                  : "border-[#FF3B30] bg-[#FF3B30]/5"
+                  ? "border-[#6B8F71] bg-[#6B8F71]/5"
+                  : "border-[#C96B5C] bg-[#C96B5C]/5"
               }`}
             >
               <p className="font-bold text-base mb-1">
                 {lastAnswer?.correct ? "✓ Richtig!" : "✗ Falsch!"}
               </p>
-              <p className="text-sm leading-relaxed" style={{ color: "#3a3a3c" }}>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--lern-text-primary)" }}>
                 <FachbegriffText glossar={glossar ?? []}>
                   {lastAnswer?.explanation ?? ""}
                 </FachbegriffText>
               </p>
               {!lastAnswer?.correct && (
-                <p className="text-xs font-semibold mt-2" style={{ color: "#30D158" }}>
+                <p className="text-xs font-semibold mt-2" style={{ color: "#6B8F71" }}>
                   Richtige Antwort: {lastAnswer?.wasTrue ? "WAHR" : "FALSCH"}
                 </p>
               )}
@@ -240,7 +240,7 @@ export function StepTrueFalse({
 
             <button
               onClick={nextCard}
-              className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+              className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
             >
               {cardIdx + 1 < cards.length ? "Nächste Karte" : "Weiter"}
             </button>

@@ -9,7 +9,7 @@ import type {
   ZoomPanData,
   ZoomAnnotation,
   GlossarEntry,
-} from "../../../content/ce-05/_types";
+} from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 
 // ─── BeforeAfter Slider ───
@@ -71,20 +71,20 @@ function BeforeAfterSlider({ data }: { data: BeforeAfterData }) {
         {/* Griff */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M7 4L3 10L7 16" stroke="#6e6e73" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M13 4L17 10L13 16" stroke="#6e6e73" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M7 4L3 10L7 16" stroke="var(--lern-text-secondary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M13 4L17 10L13 16" stroke="var(--lern-text-secondary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
       </div>
 
       {/* Labels */}
       {data.labelBefore && (
-        <span className="absolute top-3 left-3 text-xs font-semibold bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[#1d1d1f] shadow-sm">
+        <span className="absolute top-3 left-3 text-xs font-semibold bg-[var(--lern-bg-primary)]/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[var(--lern-text-primary)] shadow-sm">
           {data.labelBefore}
         </span>
       )}
       {data.labelAfter && (
-        <span className="absolute top-3 right-3 text-xs font-semibold bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[#1d1d1f] shadow-sm">
+        <span className="absolute top-3 right-3 text-xs font-semibold bg-[var(--lern-bg-primary)]/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[var(--lern-text-primary)] shadow-sm">
           {data.labelAfter}
         </span>
       )}
@@ -115,7 +115,7 @@ function LayerRevealViewer({ data }: { data: LayerRevealData }) {
   return (
     <div className="space-y-4">
       {/* Bild-Stack */}
-      <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-[#f5f5f7]">
+      <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-[var(--lern-bg)]">
         {/* Base Image */}
         {data.baseImageUrl && (
           <img
@@ -155,8 +155,8 @@ function LayerRevealViewer({ data }: { data: LayerRevealData }) {
               onClick={() => toggleLayer(layer.id)}
               className={`px-3.5 py-2 rounded-full text-sm font-medium transition-all active:scale-95 ${
                 active
-                  ? "bg-[#0071e3] text-white shadow-sm"
-                  : "bg-[#f5f5f7] text-[#6e6e73] border border-[#d2d2d7]"
+                  ? "bg-[var(--lern-accent)] text-white shadow-sm"
+                  : "bg-[var(--lern-bg)] text-[var(--lern-text-secondary)] border border-[var(--lern-border)]"
               }`}
             >
               {active ? "✓ " : ""}{layer.label}
@@ -166,7 +166,7 @@ function LayerRevealViewer({ data }: { data: LayerRevealData }) {
       </div>
 
       {data.instruction && (
-        <p className="text-xs text-center text-[#6e6e73]">{data.instruction}</p>
+        <p className="text-xs text-center text-[var(--lern-text-secondary)]">{data.instruction}</p>
       )}
     </div>
   );
@@ -235,7 +235,7 @@ function ZoomPanViewer({ data }: { data: ZoomPanData }) {
       {/* Bild-Container */}
       <div
         ref={containerRef}
-        className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-[#f5f5f7] cursor-grab active:cursor-grabbing touch-none"
+        className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-[var(--lern-bg)] cursor-grab active:cursor-grabbing touch-none"
         onWheel={handleWheel}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
@@ -267,12 +267,12 @@ function ZoomPanViewer({ data }: { data: ZoomPanData }) {
               }}
               className={`absolute w-6 h-6 -ml-3 -mt-3 rounded-full border-2 transition-all ${
                 activeAnnotation?.id === ann.id
-                  ? "bg-[#0071e3] border-white scale-125 shadow-lg"
-                  : "bg-white/90 border-[#0071e3] hover:scale-110"
+                  ? "bg-[var(--lern-accent)] border-white scale-125 shadow-lg"
+                  : "bg-[var(--lern-bg-primary)]/90 border-[var(--lern-accent)] hover:scale-110"
               }`}
               style={{ left: `${ann.x}%`, top: `${ann.y}%` }}
             >
-              <span className="text-[8px] font-bold text-[#0071e3]">
+              <span className="text-[8px] font-bold text-[var(--lern-accent)]">
                 {activeAnnotation?.id === ann.id ? "✕" : "i"}
               </span>
             </button>
@@ -292,20 +292,20 @@ function ZoomPanViewer({ data }: { data: ZoomPanData }) {
         <button
           onClick={zoomOut}
           disabled={zoom <= 1}
-          className="w-9 h-9 rounded-full bg-[#f5f5f7] flex items-center justify-center text-lg font-bold text-[#1d1d1f] disabled:opacity-30 active:scale-95 transition-all"
+          className="w-9 h-9 rounded-full bg-[var(--lern-bg)] flex items-center justify-center text-lg font-bold text-[var(--lern-text-primary)] disabled:opacity-30 active:scale-95 transition-all"
         >
           −
         </button>
-        <div className="w-24 h-1.5 rounded-full bg-[#e8e8ed] relative">
+        <div className="w-24 h-1.5 rounded-full bg-[var(--lern-divider)] relative">
           <div
-            className="h-full rounded-full bg-[#0071e3] transition-all"
+            className="h-full rounded-full bg-[var(--lern-accent)] transition-all"
             style={{ width: `${((zoom - 1) / (maxZoom - 1)) * 100}%` }}
           />
         </div>
         <button
           onClick={zoomIn}
           disabled={zoom >= maxZoom}
-          className="w-9 h-9 rounded-full bg-[#f5f5f7] flex items-center justify-center text-lg font-bold text-[#1d1d1f] disabled:opacity-30 active:scale-95 transition-all"
+          className="w-9 h-9 rounded-full bg-[var(--lern-bg)] flex items-center justify-center text-lg font-bold text-[var(--lern-text-primary)] disabled:opacity-30 active:scale-95 transition-all"
         >
           +
         </button>
@@ -318,17 +318,17 @@ function ZoomPanViewer({ data }: { data: ZoomPanData }) {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
-            className="rounded-2xl bg-white border border-[#d2d2d7] shadow-lg p-4"
+            className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] shadow-lg p-4"
           >
-            <p className="font-semibold text-sm text-[#1d1d1f]">{activeAnnotation.label}</p>
+            <p className="font-semibold text-sm text-[var(--lern-text-primary)]">{activeAnnotation.label}</p>
             {activeAnnotation.description && (
-              <p className="text-sm text-[#6e6e73] mt-1">{activeAnnotation.description}</p>
+              <p className="text-sm text-[var(--lern-text-secondary)] mt-1">{activeAnnotation.description}</p>
             )}
           </motion.div>
         )}
       </AnimatePresence>
 
-      <p className="text-xs text-center text-[#86868b]">
+      <p className="text-xs text-center text-[var(--lern-text-tertiary)]">
         Doppeltippen zum Zoomen • Ziehen zum Verschieben
       </p>
     </div>
@@ -362,27 +362,27 @@ export function StepImageInteraction({
   onNext,
 }: StepImageInteractionProps) {
   return (
-    <div className="space-y-5" style={{ color: "#1d1d1f" }}>
+    <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }}>
       {/* Header */}
       <div>
         <div className="flex items-center gap-2 mb-1">
-          <span className="text-[10px] font-semibold text-[#AF52DE] uppercase tracking-wider bg-[#AF52DE]/10 px-2 py-0.5 rounded-full">
+          <span className="text-[10px] font-semibold text-[#9B7EA6] uppercase tracking-wider bg-[#9B7EA6]/10 px-2 py-0.5 rounded-full">
             {interactionType === "beforeAfter" ? "Vergleich" : interactionType === "layerReveal" ? "Schichten" : "Detail"}
           </span>
         </div>
-        <h2 className="text-xl font-bold text-[#1d1d1f]">
+        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
           <FachbegriffText glossar={glossar}>{title}</FachbegriffText>
         </h2>
         {body && (
-          <p className="text-sm text-[#6e6e73] mt-1.5 leading-relaxed">
+          <p className="text-sm text-[var(--lern-text-secondary)] mt-1.5 leading-relaxed">
             <FachbegriffText glossar={glossar}>{body}</FachbegriffText>
           </p>
         )}
       </div>
 
       {/* Instruction */}
-      <div className="rounded-xl bg-[#0071e3]/5 border border-[#0071e3]/20 px-4 py-3">
-        <p className="text-sm font-medium text-[#0071e3]">{instruction}</p>
+      <div className="rounded-xl bg-[var(--lern-accent)]/5 border border-[var(--lern-accent)]/20 px-4 py-3">
+        <p className="text-sm font-medium text-[var(--lern-accent)]">{instruction}</p>
       </div>
 
       {/* Interaction Content */}
@@ -399,7 +399,7 @@ export function StepImageInteraction({
       {/* Weiter */}
       <button
         onClick={onNext}
-        className="w-full rounded-2xl bg-[#0071e3] py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+        className="w-full rounded-2xl bg-[var(--lern-accent)] py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
       >
         Weiter
       </button>

@@ -15,6 +15,27 @@
 | Q4 | Nationale VersorgungsLeitlinie (NVL) Typ-2-Diabetes (AWMF, 2023) | Gesamtdokument |
 | Q5 | DDG Praxisempfehlungen Diabetes mellitus (Deutsche Diabetes Gesellschaft, 2024) | Kapitel Schulung + Selbstmanagement |
 | Q6 | DNQP Expertenstandard Ernährungsmanagement (2017) | Gesamtdokument |
+| Q-AP | I Care Anatomie Physiologie (Thieme, 2020) | Relevante Kapitel |
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: LE-42, LE-43
+
+**A&P-01** Endokrines System — Überblick: Hormonsteuernde Drüsen ohne Ausführungsgang (→ geben Hormone direkt ins Blut). Hypothalamus (Steuerungszentrale) → Hypophyse (Hirnanhangsdrüse) → periphere Drüsen. Regelkreise mit negativer Rückkopplung. Hormone: Botenstoffe, wirken über Rezeptoren, kleinste Mengen = große Wirkung. [Q-AP]
+
+**A&P-02** Schilddrüse (Glandula thyroidea): Schmetterlingsförmig, vor der Trachea (Höhe C5-C7), ca. 20g. Produziert T3 (Trijodthyronin) + T4 (Thyroxin) → Stoffwechselregulation. Calcitonin → senkt Kalzium. Steuerung: Hypothalamus → TRH → Hypophyse → TSH → Schilddrüse → T3/T4 → negative Rückkopplung auf Hypophyse. Jod ist essenziell für Hormonproduktion. [Q-AP]
+
+**A&P-03** Nebenniere (Glandula suprarenalis): Auf oberen Nierenpolen. Nebennierenrinde (NNR): Mineralkortikoide (Aldosteron → Na⁺/H₂O-Retention), Glukokortikoide (Cortisol → Stresshormon, Entzündungshemmung), Androgene. Nebennierenmark (NNM): Katecholamine (Adrenalin + Noradrenalin → Sympathikus-Effekte: HF↑, RR↑, BZ↑). [Q-AP]
+
+**A&P-04** Pankreas — Endokrine Funktion: Langerhans-Inseln (ca. 1-2 Mio.). B-Zellen (β, 60-80%): Insulin → senkt Blutzucker (Glukoseaufnahme in Zellen↑, Glykogensynthese↑). A-Zellen (α, 15-20%): Glukagon → hebt Blutzucker (Glykogenolyse, Glukoneogenese). D-Zellen (δ): Somatostatin → hemmt Insulin + Glukagon. [Q-AP]
+
+**A&P-05** Blutzuckerregulation: Nüchtern-BZ: 70-100 mg/dl (3,9-5,6 mmol/l). Nach Mahlzeit: Insulin steigt → Zellen nehmen Glukose auf → BZ sinkt. Nüchtern/Fasten: Glukagon steigt → Leber gibt Glukose frei → BZ steigt. Gehirn ist glukoseabhängig (kann Fette kaum nutzen) → Hypoglykämie = Bewusstlosigkeit. [Q-AP]
+
+**A&P-06** Hypothalamus-Hypophysen-Achse: Hypothalamus = übergeordnetes Steuerungszentrum. Releasing-Hormone (z.B. TRH, CRH, GnRH) → Hypophysenvorderlappen (HVL) setzt glandotrope Hormone frei (TSH, ACTH, FSH/LH, GH, Prolaktin). Hypophysenhinterlappen (HHL): speichert + sezerniert ADH (Vasopressin → Wasserrückresorption in Niere) + Oxytocin (Wehen, Milchejektionsreflex). [Q-AP]
 
 ---
 

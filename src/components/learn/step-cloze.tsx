@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
-import type { ClozeBlank, GlossarEntry } from "../../../content/ce-05/_types";
+import type { ClozeBlank, GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepClozeProps {
@@ -107,23 +107,23 @@ export function StepCloze({
   }, [textWithBlanks]);
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
-      <h2 className="text-2xl font-bold text-[#1d1d1f]">
+    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+      <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
           <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 
-      <p className="text-sm text-[#6e6e73]">
+      <p className="text-lg font-medium text-[var(--lern-text-primary)]">
         Fülle die Lücken mit den passenden Begriffen.
       </p>
 
       {/* Text mit Lücken */}
-      <div className="rounded-2xl bg-white border-2 border-[#d2d2d7] p-5 leading-relaxed text-[#1d1d1f]">
+      <div className="rounded-2xl bg-[var(--lern-bg-primary)] border-2 border-[var(--lern-border)] p-5 leading-relaxed text-[var(--lern-text-primary)]">
         {segments.map((seg, i) => {
           if (seg.type === "text") {
             return <span key={i}><FachbegriffText glossar={glossar ?? []}>{seg.content}</FachbegriffText></span>;
@@ -139,12 +139,12 @@ export function StepCloze({
               disabled={submitted}
               className={`inline-flex items-center min-w-[80px] mx-1 px-3 py-1 rounded-lg border-2 border-dashed text-sm font-medium transition-colors ${
                 submitted && result?.isCorrect
-                  ? "border-[#30D158] bg-[#30D158]/10 text-[#30D158]"
+                  ? "border-[#6B8F71] bg-[#6B8F71]/10 text-[#6B8F71]"
                   : submitted && !result?.isCorrect
-                    ? "border-[#FF3B30] bg-[#FF3B30]/10 text-[#FF3B30]"
+                    ? "border-[#C96B5C] bg-[#C96B5C]/10 text-[#C96B5C]"
                     : filled
-                      ? "border-[#0071e3] bg-[#0071e3]/10 text-[#0071e3]"
-                      : "border-[#86868b] bg-[#f5f5f7] text-[#86868b]"
+                      ? "border-[var(--lern-accent)] bg-[var(--lern-accent)]/10 text-[var(--lern-accent)]"
+                      : "border-[var(--lern-text-tertiary)] bg-[var(--lern-bg)] text-[var(--lern-text-tertiary)]"
               }`}
             >
               {filled || "___"}
@@ -156,14 +156,14 @@ export function StepCloze({
       {/* Wörter-Pool */}
       {!submitted && (
         <div className="space-y-2">
-          <p className="text-xs font-medium text-[#6e6e73]">Verfügbare Begriffe:</p>
+          <p className="text-xs font-medium text-[var(--lern-text-secondary)]">Verfügbare Begriffe:</p>
           <div className="flex flex-wrap gap-2">
             {availableWords.map((word, i) => (
               <button
                 key={`${word}-${i}`}
                 onClick={() => handleSelectWord(word)}
                 disabled={!blanks.some((b) => filledBlanks[b.id] === undefined)}
-                className="rounded-full bg-[#0071e3]/10 px-4 py-2 text-sm font-medium text-[#0071e3] transition-all active:scale-95 disabled:opacity-40"
+                className="rounded-full bg-[var(--lern-accent)]/10 px-4 py-2 text-sm font-medium text-[var(--lern-accent)] transition-all active:scale-95 disabled:opacity-40"
               >
                 {word}
               </button>
@@ -176,7 +176,7 @@ export function StepCloze({
         <button
           onClick={() => setSubmitted(true)}
           disabled={!allFilled}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED] disabled:opacity-40 disabled:cursor-not-allowed"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40 disabled:cursor-not-allowed"
         >
           Prüfen
         </button>
@@ -187,8 +187,8 @@ export function StepCloze({
             animate={{ opacity: 1, y: 0 }}
             className={`rounded-2xl p-4 ${
               allCorrect
-                ? "bg-[#30D158]/10 border border-[#30D158]/30"
-                : "bg-[#FF3B30]/10 border border-[#FF3B30]/30"
+                ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+                : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
             }`}
           >
             <p className="font-semibold">
@@ -201,7 +201,7 @@ export function StepCloze({
                 {blankResults
                   .filter((r) => !r.isCorrect)
                   .map((r) => (
-                    <p key={r.id} className="text-sm text-[#FF3B30]">
+                    <p key={r.id} className="text-sm text-[#C96B5C]">
                       <FachbegriffText glossar={glossar ?? []}>{`Lücke ${r.id}: „${r.given}" → richtig wäre „${r.correct}"`}</FachbegriffText>
                     </p>
                   ))}
@@ -211,7 +211,7 @@ export function StepCloze({
 
           <button
             onClick={() => onNext(allCorrect)}
-            className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
           >
             Weiter
           </button>

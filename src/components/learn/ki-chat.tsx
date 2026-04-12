@@ -3,10 +3,19 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+interface RecentError {
+  stepTitle: string;
+  gewaehlteOption?: string;
+  richtigeAntwort?: string;
+}
+
 interface KiChatProps {
   leTitle: string;
   stepTitle: string;
+  stepBody?: string;
   glossar?: string[];
+  sprachLevel?: "b1" | "c1";
+  recentErrors?: RecentError[];
 }
 
 interface Message {
@@ -16,7 +25,7 @@ interface Message {
 
 const MAX_MESSAGES = 5;
 
-export function KiChat({ leTitle, stepTitle, glossar }: KiChatProps) {
+export function KiChat({ leTitle, stepTitle, stepBody, glossar, sprachLevel, recentErrors }: KiChatProps) {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -45,7 +54,7 @@ export function KiChat({ leTitle, stepTitle, glossar }: KiChatProps) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           messages: updatedMessages,
-          context: { leTitle, stepTitle, glossar },
+          context: { leTitle, stepTitle, stepBody, glossar, sprachLevel, recentErrors },
         }),
       });
 
@@ -73,7 +82,7 @@ export function KiChat({ leTitle, stepTitle, glossar }: KiChatProps) {
       {/* Floating Action Button */}
       <button
         onClick={() => setOpen(true)}
-        className="fixed bottom-6 right-6 z-30 flex h-14 w-14 items-center justify-center rounded-full bg-[#0071e3] text-white shadow-lg transition-all active:scale-95 hover:bg-[#0077ED]"
+        className="fixed bottom-6 right-6 z-30 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--lern-accent)] text-white shadow-lg transition-all active:scale-95 hover:bg-[#B07A72]"
       >
         <svg
           width="24"
@@ -105,17 +114,17 @@ export function KiChat({ leTitle, stepTitle, glossar }: KiChatProps) {
               exit={{ y: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
               onClick={(e) => e.stopPropagation()}
-              className="absolute bottom-0 left-0 right-0 flex h-[75vh] flex-col rounded-t-3xl bg-white shadow-xl"
+              className="absolute bottom-0 left-0 right-0 flex h-[75vh] flex-col rounded-t-3xl bg-[var(--lern-bg-primary)] shadow-xl"
             >
               {/* Header */}
-              <div className="shrink-0 border-b border-[#d2d2d7]/50 p-4">
-                <div className="mx-auto mb-2 h-1 w-12 rounded-full bg-[#d2d2d7]" />
+              <div className="shrink-0 border-b border-[var(--lern-border)]/50 p-4">
+                <div className="mx-auto mb-2 h-1 w-12 rounded-full bg-[var(--lern-border)]" />
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="text-lg font-bold text-[#1d1d1f]">
+                    <h3 className="text-lg font-bold text-[var(--lern-text-primary)]">
                       Frag mich!
                     </h3>
-                    <p className="text-xs text-[#6e6e73]">
+                    <p className="text-xs text-[var(--lern-text-secondary)]">
                       {remainingMessages > 0
                         ? `Noch ${remainingMessages} Fragen in dieser Session`
                         : "Keine Fragen mehr in dieser Session"}
@@ -123,7 +132,7 @@ export function KiChat({ leTitle, stepTitle, glossar }: KiChatProps) {
                   </div>
                   <button
                     onClick={() => setOpen(false)}
-                    className="flex h-8 w-8 items-center justify-center rounded-full bg-[#f5f5f7] text-[#6e6e73]"
+                    className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--lern-bg)] text-[var(--lern-text-secondary)]"
                   >
                     ✕
                   </button>
@@ -137,7 +146,7 @@ export function KiChat({ leTitle, stepTitle, glossar }: KiChatProps) {
               >
                 {messages.length === 0 && (
                   <div className="text-center py-8">
-                    <p className="text-sm text-[#6e6e73]">
+                    <p className="text-sm text-[var(--lern-text-secondary)]">
                       Ich kann dir Fragen zu <strong>{leTitle}</strong> beantworten.
                       Was möchtest du wissen?
                     </p>
@@ -152,8 +161,8 @@ export function KiChat({ leTitle, stepTitle, glossar }: KiChatProps) {
                     <div
                       className={`max-w-[85%] rounded-2xl px-4 py-3 ${
                         msg.role === "user"
-                          ? "bg-[#0071e3] text-white"
-                          : "bg-[#f5f5f7] text-[#1d1d1f]"
+                          ? "bg-[var(--lern-accent)] text-white"
+                          : "bg-[var(--lern-bg)] text-[var(--lern-text-primary)]"
                       }`}
                     >
                       <p className="text-sm leading-relaxed">{msg.content}</p>
@@ -163,11 +172,11 @@ export function KiChat({ leTitle, stepTitle, glossar }: KiChatProps) {
 
                 {loading && (
                   <div className="flex justify-start">
-                    <div className="rounded-2xl bg-[#f5f5f7] px-4 py-3">
+                    <div className="rounded-2xl bg-[var(--lern-bg)] px-4 py-3">
                       <div className="flex gap-1">
-                        <span className="h-2 w-2 rounded-full bg-[#86868b] animate-bounce" />
-                        <span className="h-2 w-2 rounded-full bg-[#86868b] animate-bounce [animation-delay:0.15s]" />
-                        <span className="h-2 w-2 rounded-full bg-[#86868b] animate-bounce [animation-delay:0.3s]" />
+                        <span className="h-2 w-2 rounded-full bg-[var(--lern-text-tertiary)] animate-bounce" />
+                        <span className="h-2 w-2 rounded-full bg-[var(--lern-text-tertiary)] animate-bounce [animation-delay:0.15s]" />
+                        <span className="h-2 w-2 rounded-full bg-[var(--lern-text-tertiary)] animate-bounce [animation-delay:0.3s]" />
                       </div>
                     </div>
                   </div>
@@ -175,7 +184,7 @@ export function KiChat({ leTitle, stepTitle, glossar }: KiChatProps) {
               </div>
 
               {/* Input */}
-              <div className="shrink-0 border-t border-[#d2d2d7]/50 p-4">
+              <div className="shrink-0 border-t border-[var(--lern-border)]/50 p-4">
                 <div className="flex gap-2">
                   <input
                     type="text"
@@ -188,12 +197,12 @@ export function KiChat({ leTitle, stepTitle, glossar }: KiChatProps) {
                         : "Keine Fragen mehr in dieser Session"
                     }
                     disabled={remainingMessages <= 0 || loading}
-                    className="flex-1 rounded-xl border border-[#d2d2d7] bg-[#f5f5f7] px-4 py-3 text-sm text-[#1d1d1f] placeholder:text-[#86868b] focus:border-[#0071e3] focus:outline-none disabled:opacity-50"
+                    className="flex-1 rounded-xl border border-[var(--lern-border)] bg-[var(--lern-bg)] px-4 py-3 text-sm text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:border-[var(--lern-accent)] focus:outline-none disabled:opacity-50"
                   />
                   <button
                     onClick={sendMessage}
                     disabled={!input.trim() || loading || remainingMessages <= 0}
-                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#0071e3] text-white transition-all active:scale-95 disabled:opacity-40"
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--lern-accent)] text-white transition-all active:scale-95 disabled:opacity-40"
                   >
                     <svg
                       width="18"

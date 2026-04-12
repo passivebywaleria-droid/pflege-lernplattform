@@ -30,5 +30,5 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "scripts/generate-medical-images.ts", "scripts/gemini-image-bot.ts", "scripts/generate-foto-prompts.ts", "scripts/image-review-server.ts", "scripts/generate-anatomy-test.ts", "scripts/gemini-direct-bot.ts"]
 }

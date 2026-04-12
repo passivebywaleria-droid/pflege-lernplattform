@@ -2,7 +2,7 @@
 
 > **CE:** CE 02 | **Stunden:** 40 UE | **KB-Schwerpunkt:** I.1
 > **Prinzip:** Pflegeprozess | **Drittel:** 1 | **Anlage:** 1
-> **Fakten:** 24 | **Glossar:** 18 | **Interleaving:** 6 | **Musterantworten:** 3
+> **Fakten:** 28 | **Glossar:** 21 | **Interleaving:** 6 | **Musterantworten:** 3
 
 ## Quellenverzeichnis
 
@@ -14,6 +14,27 @@
 | Q4 | DNQP Expertenstandard Dekubitusprophylaxe (2017) | |
 | Q5 | Thiemes Pflege (2019) | Kap. Mobilisation |
 | Q6 | I Care Pflege — Kap. 9: Grundlagen Entwicklung | PDF S. 213-250 |
+| Q-AP | I Care Anatomie Physiologie (Thieme, 2020) | Relevante Kapitel |
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: LE-14, LE-22
+
+**A&P-01** Skelett: 206 Knochen beim Erwachsenen. Funktionen: Stütze, Schutz (Gehirn, Organe), Ansatz für Muskeln, Mineralstoffspeicher (Kalzium, Phosphat), Blutbildung (rotes Knochenmark). Knochenarten: Röhrenknochen (Femur), platte Knochen (Schädel), kurze Knochen (Wirbel), irreguläre Knochen (Gesichtsknochen). [Q-AP]
+
+**A&P-02** Gelenke: Verbindung zwischen 2+ Knochen. Aufbau eines echten Gelenks (Diarthrose): Gelenkkapsel, Gelenkknorpel (hyaliner Knorpel, 2-5mm, gefäßlos), Gelenkspalt mit Synovialflüssigkeit (Schmierung + Ernährung des Knorpels). Gelenktypen: Kugelgelenk (Schulter, Hüfte), Scharniergelenk (Ellbogen, Knie), Sattelgelenk (Daumen), Drehgelenk (Atlas-Axis). [Q-AP]
+
+**A&P-03** Skelettmuskulatur: Quergestreift, willkürlich steuerbar. Ca. 650 Muskeln (40% des Körpergewichts). Aufbau: Muskelfasern → Muskelfaserbündel → Muskel. Muskelkontraktion: Aktin-Myosin-Gleitmechanismus, benötigt ATP + Kalzium. Agonist (Spieler) + Antagonist (Gegenspieler) = koordinierte Bewegung. [Q-AP]
+
+**A&P-04** Wirbelsäule: 33-34 Wirbel (7 HWS, 12 BWS, 5 LWS, 5 Kreuzbein, 4-5 Steißbein). Doppel-S-Form = Stoßdämpfung. Bandscheiben (Nucleus pulposus + Anulus fibrosus) zwischen Wirbelkörpern = Puffer + Beweglichkeit. Wirbelkanal schützt Rückenmark. [Q-AP]
+
+**A&P-05** Venen: Führen sauerstoffarmes Blut zum Herz (Ausnahme: Lungenvenen). Dünnere Wand als Arterien, größeres Lumen. Venenklappen (Taschenklappen) verhindern Rückfluss. Muskelpumpe der Wade = Motor für venösen Rückstrom. Oberflächliche Venen (Vena saphena magna/parva) vs. tiefe Venen (Vena femoralis, poplitea). [Q-AP]
+
+**A&P-06** Venöser Rückstrom: Antrieb durch Muskelpumpe (Wadenmuskeln), Gelenkpumpe (Sprunggelenk), Thorakale Sogwirkung (Einatmung), Restdruck des arteriellen Systems. Bei Immobilität: Muskelpumpe fällt aus → Blut staut → Thromboserisiko steigt. [Q-AP]
 
 ---
 
@@ -77,6 +98,16 @@
 
 **V-03** Dokumentation: Mobilisationsplan, Sturzprotokoll, Positionierungsprotokoll (Intervalle, Position, Hautinspektion). Sturzrisikoerfassung bei Aufnahme und regelmäßig. [Q2 S.400]
 
+### Ergänzungen — Curriculum-Abgleich
+
+**I-17** Barthel-Index: Standardisiertes ADL-Assessment zur Messung der Selbstständigkeit. 10 Bereiche: Essen, Baden, Körperpflege, An-/Auskleiden, Stuhlkontrolle, Harnkontrolle, Toilettenbenutzung, Bett-Rollstuhl-Transfer, Mobilität (Gehen/Rollstuhl), Treppensteigen. Punkteskala 0-100 (0 = komplett abhängig, 100 = selbstständig). Einstufung: 0-30 weitgehend pflegeabhängig, 35-80 pflegebedürftig, 85-100 punktuell hilfsbedürftig. Wird bei Aufnahme erhoben und regelmäßig re-evaluiert. Wichtig für Mobilisationsplanung und Dokumentation des Fortschritts. [Q5] [Q1 S.346]
+
+**I-18** Transfer-Technik Bett→Rollstuhl (5-Schritt-Verfahren): 1) Rollstuhl schräg zum Bett stellen, Bremsen feststellen, Fußstützen wegklappen. 2) Patient an die Bettkante setzen, Füße flach auf dem Boden. 3) Patient stützt sich auf der Bettkante ab oder greift zur starken Seite (Bobath: betroffene Seite einbeziehen). 4) Pflegekraft stabilisiert am Becken (NICHT Achselhöhle!), Patient dreht sich zum Rollstuhl. 5) Kontrolliertes Hinsetzen, Fußstützen zurückklappen, Sitz prüfen. Bei hoher Abhängigkeit: Rutschbrett oder Drehscheibe einsetzen. [Q1 S.346-347] [Q5]
+
+**I-19** Hilfsmittel-Übersicht Mobilisation: Gehstock (leichte Gangunsicherheit, kontralateral einsetzen), Unterarmgehstütze (nach OP, Teilbelastung), Rollator (mittlere Gangunsicherheit, beide Hände frei), Rollstuhl (bei fehlender Gehfähigkeit, Selbstantrieb oder Schieberollstuhl), Rutschbrett (sitzender Transfer bei Parese), Drehscheibe (stehender Transfer bei eingeschränkter Drehfähigkeit), Patientenlifter (bei komplettem Bewegungsverlust, 2 Pflegekräfte). Auswahl abhängig von: Barthel-Index, Belastungsvorgabe (nach OP), Gleichgewicht, kognitivem Status. [Q1 S.346] [Q5]
+
+**I-20** Dekubitus-Klassifikation nach EPUAP/NPUAP: Grad I — Nicht wegdrückbare Rötung bei intakter Haut (Fingertest: Rötung bleibt bestehen bei Druck). Grad II — Teilzerstörung der Haut mit Blasenbildung oder flachem Ulkus (Dermis betroffen). Grad III — Verlust aller Hautschichten, subkutanes Fettgewebe sichtbar, KEIN Knochen/Sehne/Muskel sichtbar. Grad IV — Vollständiger Gewebeverlust mit freiliegendem Knochen, Sehne oder Muskel. Prädilektionsstellen bei Rückenlage: Hinterhaupt, Schulterblätter, Ellbogen, Kreuzbein/Steißbein, Fersen. Bei Seitenlage: Ohr, Schulter, Trochanter major, Knie (Innenseite), Außenknöchel. 30°-Seitenlage entlastet gezielt Kreuzbein UND Trochanter. [Q4] [Q2 S.424-430]
+
 ---
 
 ## B) Glossar
@@ -101,6 +132,9 @@
 | 16 | Timed-Up-and-Go-Test | Ein Test: Aufstehen, 3 Meter gehen, umdrehen, zurück, hinsetzen — wie schnell? | اختبار النهوض والمشي | Zamanlı kalk-yürü testi |
 | 17 | Scherkraft | Reibung auf der Haut wenn der Patient rutscht → kann Dekubitus verursachen | قوة القص | Kesme kuvveti |
 | 18 | Grundposition | 7 Körperpositionen von liegend bis stehend (z.B. Rückenlage, Schneidersitz, Stand) | الوضع الأساسي | Temel pozisyon |
+| 19 | Barthel-Index | Ein Test mit 10 Bereichen: Wie viel kann der Patient alleine? 0 = braucht bei allem Hilfe, 100 = alles alleine | مؤشر بارثل | Barthel indeksi |
+| 20 | Rollator | Ein Gehgestell mit Rädern und Bremsen zum sicheren Gehen | المشاية | Yürüteç |
+| 21 | Transfer | Den Patienten von einem Platz zum anderen bewegen (z.B. vom Bett in den Rollstuhl) | النقل | Transfer |
 
 ---
 
@@ -213,6 +247,9 @@
 | ce02-le06-thrombose | Thromboserisiko (Virchow-Trias) und Prophylaxe verstehen | 4-5 |
 | ce02-le06-pneumonie | Pneumonieprophylaxe bei immobilen Patienten | 3-4 |
 | ce02-le06-bobath | Bobath-Konzept bei neurologischen Patienten anwenden | 3-4 |
+| ce02-le06-assessment | Barthel-Index erheben und Mobilisationsplanung ableiten | 3-4 |
+| ce02-le06-transfer | Transfer-Techniken und Hilfsmittel situationsgerecht einsetzen | 3-4 |
+| ce02-le06-dekubitus | Dekubitus-Grade klassifizieren und Prädilektionsstellen kennen | 3-4 |
 
 ---
 

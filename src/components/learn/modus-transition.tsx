@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { ErlebnisModus } from "../../../content/ce-05/_types";
+import type { ErlebnisModus } from "../../../content/_types";
 import { HandDrawnIcon, type IconName } from "@/components/ui/hand-drawn-icon";
 
 const MODUS_CONFIG: Record<
@@ -12,49 +12,49 @@ const MODUS_CONFIG: Record<
     icon: "book",
     label: "Story",
     slogan: "Der Leitfall lebt",
-    farbe: "#0071e3",
+    farbe: "#C4877F",
   },
   challenge: {
     icon: "lightning",
     label: "Challenge",
     slogan: "Zeig was du weißt",
-    farbe: "#FF9500",
+    farbe: "#D4956A",
   },
   puzzle: {
     icon: "puzzle",
     label: "Puzzle",
     slogan: "Zusammenhänge entdecken",
-    farbe: "#AF52DE",
+    farbe: "#9B7EA6",
   },
   entdecker: {
     icon: "search",
     label: "Entdecker",
     slogan: "Neues Wissen aufnehmen",
-    farbe: "#30D158",
+    farbe: "#6B8F71",
   },
   sortierstation: {
     icon: "clipboard",
     label: "Sortierstation",
     slogan: "Ordnung schaffen",
-    farbe: "#5AC8FA",
+    farbe: "#8AABB5",
   },
   schreibtisch: {
     icon: "pencil",
     label: "Schreibtisch",
     slogan: "Selber formulieren",
-    farbe: "#FF3B30",
+    farbe: "#C96B5C",
   },
   "praxis-sim": {
     icon: "hospital",
     label: "Praxis-Simulation",
     slogan: "Handeln lernen",
-    farbe: "#FF375F",
+    farbe: "#B07A72",
   },
   checkpoint: {
     icon: "target",
     label: "Checkpoint",
     slogan: "Wo stehst du?",
-    farbe: "#FFD60A",
+    farbe: "#BFA48E",
   },
 };
 
@@ -100,7 +100,7 @@ export function ModusTransition({ modus, onDone }: ModusTransitionProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
-        className="text-sm text-[#6e6e73] mt-2"
+        className="text-sm text-[var(--lern-text-secondary)] mt-2"
       >
         {config.slogan}
       </motion.p>

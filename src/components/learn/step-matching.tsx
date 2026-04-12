@@ -6,8 +6,8 @@
  * Design-Standards (für alle LEs):
  * - Gematchte Paare rutschen animiert nach oben und werden nebeneinander angezeigt
  * - Alle ungematchten Karten haben gleiche Höhe (bestimmt durch längsten Text)
- * - Inline-style `color: #1d1d1f` auf Container wegen shadcn-glass-ui `button { color: inherit }`
- * - Karten: bg-[#f5f5f7] mit border-[#d2d2d7] für Kontrast auf weißem Seitenhintergrund
+ * - Inline-style `color: var(--lern-text-primary)` auf Container
+ * - Karten: bg-[var(--lern-card-bg)] mit border-[var(--lern-border)] für Kontrast
  * - Farbcodierte Borders für Matches (6 Farben rotierend)
  * - Nach Submit: Grün = richtig, Rot = falsch
  * - Antippen auf gematchtes Paar löst die Verbindung wieder
@@ -15,8 +15,9 @@
 
 import { useState, useCallback, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
+import { generiereSandwichFeedback, SandwichFeedbackDisplay } from "./bloom-feedback";
 
 interface MatchingPair {
   left: string;
@@ -33,12 +34,12 @@ interface StepMatchingProps {
 }
 
 const MATCH_COLORS = [
-  "#0071e3",
-  "#30D158",
-  "#FF9500",
-  "#AF52DE",
-  "#FF3B30",
-  "#5AC8FA",
+  "#C4877F",
+  "#6B8F71",
+  "#D4956A",
+  "#9B7EA6",
+  "#C96B5C",
+  "#8AABB5",
 ];
 
 export function StepMatching({
@@ -141,7 +142,7 @@ export function StepMatching({
     MATCH_COLORS[matchedLeftIndices.indexOf(leftIdx) % MATCH_COLORS.length];
 
   return (
-    <div className="space-y-5" style={{ color: "#1d1d1f" }}>
+    <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }} role="group" aria-label="Zuordnungsaufgabe">
       <h2 className="text-2xl font-bold">{title}</h2>
 
       {body && (
@@ -152,7 +153,7 @@ export function StepMatching({
 
       <p className="text-lg font-semibold"><FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText></p>
 
-      <p className="text-sm" style={{ color: "#3a3a3c" }}>
+      <p className="text-sm" style={{ color: "var(--lern-text-secondary)" }}>
         Tippe links auf einen Begriff, dann rechts auf die passende Erklärung.
       </p>
 
@@ -183,7 +184,7 @@ export function StepMatching({
             animate={{ opacity: 1 }}
             className="space-y-2"
           >
-            <span className="text-xs font-semibold" style={{ color: "#6e6e73" }}>
+            <span className="text-xs font-semibold" style={{ color: "var(--lern-text-secondary)" }}>
               {matchedLeftIndices.length} von {pairs.length} zugeordnet
             </span>
             {matchedLeftIndices.map((leftIdx) => {
@@ -193,8 +194,8 @@ export function StepMatching({
               const isWrong = submitted && leftIdx !== rightIdx;
               const borderColor = submitted
                 ? isCorrect
-                  ? "#30D158"
-                  : "#FF3B30"
+                  ? "#6B8F71"
+                  : "#C96B5C"
                 : color;
 
               return (
@@ -218,7 +219,7 @@ export function StepMatching({
                             ? "rgba(48,209,88,0.1)"
                             : "rgba(255,59,48,0.1)"
                           : `${color}10`,
-                        color: "#1d1d1f",
+                        color: "var(--lern-text-primary)",
                       }}
                     >
                       {isCorrect && submitted && <span className="mr-1">✓</span>}
@@ -234,7 +235,7 @@ export function StepMatching({
                             ? "rgba(48,209,88,0.1)"
                             : "rgba(255,59,48,0.1)"
                           : `${color}10`,
-                        color: "#1d1d1f",
+                        color: "var(--lern-text-primary)",
                       }}
                     >
                       {renderBold(pairs[rightIdx].right)}
@@ -246,14 +247,14 @@ export function StepMatching({
                     <div
                       className="grid grid-cols-2 gap-1 mt-1 rounded-xl border-2 p-2"
                       style={{
-                        borderColor: "#30D158",
+                        borderColor: "#6B8F71",
                         backgroundColor: "rgba(48,209,88,0.05)",
                       }}
                     >
-                      <div className="text-xs font-medium" style={{ color: "#30D158" }}>
+                      <div className="text-xs font-medium" style={{ color: "#6B8F71" }}>
                         Richtig wäre:
                       </div>
-                      <div className="text-xs font-medium" style={{ color: "#1d1d1f" }}>
+                      <div className="text-xs font-medium" style={{ color: "var(--lern-text-primary)" }}>
                         {renderBold(pairs[leftIdx].right)}
                       </div>
                     </div>
@@ -269,7 +270,7 @@ export function StepMatching({
       {unmatchedLeftIndices.length > 0 && (
         <div className="grid grid-cols-2 gap-3">
           {/* Left column */}
-          <div className="space-y-2">
+          <div className="space-y-2" role="listbox" aria-label="Begriffe">
             {unmatchedLeftIndices.map((idx) => {
               const isSelected = selectedLeft === idx;
               return (
@@ -278,14 +279,17 @@ export function StepMatching({
                   layout
                   onClick={() => handleLeftClick(idx)}
                   whileTap={{ scale: 0.97 }}
-                  className={`w-full rounded-xl border-2 p-3 text-left text-sm font-medium transition-all ${
+                  role="option"
+                  aria-selected={isSelected}
+                  aria-label={`Begriff: ${pairs[idx].left}`}
+                  className={`w-full rounded-xl border-2 p-3 text-left text-sm font-medium transition-all focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2 ${
                     isSelected
-                      ? "border-[#0071e3] bg-[#0071e3]/10"
-                      : "border-[#d2d2d7] bg-[#f5f5f7]"
+                      ? "border-[#C4877F] bg-[#C4877F]/10"
+                      : "border-[var(--lern-border)] bg-[var(--lern-card-bg)]"
                   }`}
                   style={{
                     minHeight: cardHeight > 0 ? cardHeight : undefined,
-                    color: "#1d1d1f",
+                    color: "var(--lern-text-primary)",
                   }}
                 >
                   {renderBold(pairs[idx].left)}
@@ -295,21 +299,24 @@ export function StepMatching({
           </div>
 
           {/* Right column (shuffled, unmatched only) */}
-          <div className="space-y-2">
+          <div className="space-y-2" role="listbox" aria-label="Zuordnungen">
             {unmatchedRightOrigIndices.map((origIdx) => (
               <motion.button
                 key={`r-${origIdx}`}
                 layout
                 onClick={() => handleRightClick(origIdx)}
                 whileTap={selectedLeft !== null ? { scale: 0.97 } : undefined}
-                className={`w-full rounded-xl border-2 p-3 text-left text-sm transition-all ${
+                role="option"
+                aria-selected={false}
+                aria-label={`Zuordnung: ${pairs[origIdx].right}`}
+                className={`w-full rounded-xl border-2 p-3 text-left text-sm transition-all focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2 ${
                   selectedLeft !== null
-                    ? "border-[#0071e3]/40 bg-[#0071e3]/5 hover:bg-[#0071e3]/10"
-                    : "border-[#d2d2d7] bg-[#f5f5f7]"
+                    ? "border-[#C4877F]/40 bg-[#C4877F]/5 hover:bg-[#C4877F]/10"
+                    : "border-[var(--lern-border)] bg-[var(--lern-card-bg)]"
                 }`}
                 style={{
                   minHeight: cardHeight > 0 ? cardHeight : undefined,
-                  color: "#1d1d1f",
+                  color: "var(--lern-text-primary)",
                 }}
               >
                 {renderBold(pairs[origIdx].right)}
@@ -324,31 +331,26 @@ export function StepMatching({
         <button
           onClick={handleSubmit}
           disabled={matches.size < pairs.length}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED] disabled:opacity-40 disabled:cursor-not-allowed"
+          aria-label="Zuordnung prüfen"
+          className="w-full rounded-2xl bg-[#C4877F] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2"
         >
           Prüfen
         </button>
       ) : (
         <div className="space-y-4">
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            className={`rounded-2xl p-4 ${
-              allCorrect
-                ? "bg-[#30D158]/10 border border-[#30D158]/30"
-                : "bg-[#FF9500]/10 border border-[#FF9500]/30"
-            }`}
-          >
-            <p className="font-semibold">
-              {allCorrect
-                ? "Perfekt! Alle richtig zugeordnet!"
-                : <FachbegriffText glossar={glossar ?? []}>{`${correctCount} von ${pairs.length} richtig`}</FachbegriffText>}
-            </p>
-          </motion.div>
+          <SandwichFeedbackDisplay
+            feedback={generiereSandwichFeedback(
+              allCorrect,
+              allCorrect ? "" : `${correctCount} von ${pairs.length} richtig zugeordnet`,
+              allCorrect ? "Perfekt! Alle richtig zugeordnet!" : undefined,
+            )}
+            correct={allCorrect}
+          />
 
           <button
             onClick={() => onNext(allCorrect)}
-            className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+            aria-label="Weiter zum nächsten Schritt"
+            className="w-full rounded-2xl bg-[#C4877F] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2"
           >
             Weiter
           </button>

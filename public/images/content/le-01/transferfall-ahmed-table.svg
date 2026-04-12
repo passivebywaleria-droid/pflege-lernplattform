@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" role="img" aria-label="Transferfall Ahmed: Herausforderungen und Maßnahmen als Tabelle">
+  <style>
+    text { font-family: 'Poppins', sans-serif; }
+  </style>
+
+  <!-- Title -->
+  <text x="180" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)">Transferfall: Ahmed Al-Rashid</text>
+  <text x="180" y="44" text-anchor="middle" font-size="11" fill="#A58B71">Kultursensible Pflege in der Praxis</text>
+
+  <!-- Table Header -->
+  <rect x="12" y="56" width="336" height="32" rx="6" fill="#7A816C"/>
+  <text x="58" y="77" text-anchor="middle" font-size="11" font-weight="700" fill="#fafaf9">Bereich</text>
+  <text x="170" y="77" text-anchor="middle" font-size="11" font-weight="700" fill="#fafaf9">Herausforderung</text>
+  <text x="296" y="77" text-anchor="middle" font-size="11" font-weight="700" fill="#fafaf9">Maßnahme</text>
+
+  <!-- Column dividers -->
+  <line x1="104" y1="56" x2="104" y2="88" stroke="#fafaf9" stroke-width="1" opacity="0.3"/>
+  <line x1="236" y1="56" x2="236" y2="88" stroke="#fafaf9" stroke-width="1" opacity="0.3"/>
+
+  <!-- Row 1: Sprache -->
+  <rect x="12" y="92" width="336" height="48" rx="0" fill="#E5DFD6" opacity="0.3"/>
+  <rect x="12" y="92" width="92" height="48" fill="#AE6965" opacity="0.08"/>
+  <circle cx="28" cy="116" r="10" fill="#AE6965" opacity="0.2"/>
+  <text x="28" y="120" text-anchor="middle" font-size="13">&#x1F5E3;</text>
+  <text x="68" y="112" text-anchor="middle" font-size="11" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Sprache</text>
+  <text x="68" y="126" text-anchor="middle" font-size="9" fill="#AE6965">(Barriere)</text>
+  <line x1="104" y1="92" x2="104" y2="140" stroke="#E5DFD6" stroke-width="1"/>
+  <text x="170" y="110" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">Arabisch als</text>
+  <text x="170" y="124" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">Muttersprache,</text>
+  <text x="170" y="136" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">wenig Deutsch</text>
+  <line x1="236" y1="92" x2="236" y2="140" stroke="#E5DFD6" stroke-width="1"/>
+  <text x="296" y="110" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">Dolmetscher,</text>
+  <text x="296" y="124" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">Bildkarten,</text>
+  <text x="296" y="136" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">einfache Sprache</text>
+
+  <!-- Row 2: Ernährung -->
+  <rect x="12" y="140" width="336" height="48" rx="0" fill="#fafaf9"/>
+  <rect x="12" y="140" width="92" height="48" fill="#7A816C" opacity="0.08"/>
+  <circle cx="28" cy="164" r="10" fill="#7A816C" opacity="0.2"/>
+  <text x="28" y="168" text-anchor="middle" font-size="13">&#x1F957;</text>
+  <text x="68" y="160" text-anchor="middle" font-size="11" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Ernährung</text>
+  <text x="68" y="174" text-anchor="middle" font-size="9" fill="#7A816C">(Halal)</text>
+  <line x1="104" y1="140" x2="104" y2="188" stroke="#E5DFD6" stroke-width="1"/>
+  <text x="170" y="158" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">Halal-Ernährung,</text>
+  <text x="170" y="172" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">Ramadan-</text>
+  <text x="170" y="184" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">Fastenzeit</text>
+  <line x1="236" y1="140" x2="236" y2="188" stroke="#E5DFD6" stroke-width="1"/>
+  <text x="296" y="158" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">Speiseplan</text>
+  <text x="296" y="172" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">anpassen,</text>
+  <text x="296" y="184" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">Küche informieren</text>
+
+  <!-- Row 3: Religion -->
+  <rect x="12" y="188" width="336" height="48" rx="0" fill="#E5DFD6" opacity="0.3"/>
+  <rect x="12" y="188" width="92" height="48" fill="#A58B71" opacity="0.08"/>
+  <circle cx="28" cy="212" r="10" fill="#A58B71" opacity="0.2"/>
+  <text x="28" y="216" text-anchor="middle" font-size="13">&#x1F54C;</text>
+  <text x="68" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Religion</text>
+  <text x="68" y="222" text-anchor="middle" font-size="9" fill="#A58B71">(Islam)</text>
+  <line x1="104" y1="188" x2="104" y2="236" stroke="#E5DFD6" stroke-width="1"/>
+  <text x="170" y="206" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">5x täglich Gebet,</text>
+  <text x="170" y="220" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">Gebetsrichtung</text>
+  <text x="170" y="234" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">wichtig</text>
+  <line x1="236" y1="188" x2="236" y2="236" stroke="#E5DFD6" stroke-width="1"/>
+  <text x="296" y="206" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">Gebetsraum,</text>
+  <text x="296" y="220" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">Ruhezeiten</text>
+  <text x="296" y="234" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">einplanen</text>
+
+  <!-- Row 4: Familie -->
+  <rect x="12" y="236" width="336" height="48" rx="0" fill="#fafaf9"/>
+  <rect x="12" y="236" width="92" height="48" fill="#D1A9A5" opacity="0.12"/>
+  <rect x="12" y="276" width="336" height="8" rx="0" fill="#fafaf9"/>
+  <circle cx="28" cy="260" r="10" fill="#D1A9A5" opacity="0.3"/>
+  <text x="28" y="264" text-anchor="middle" font-size="13">&#x1F46A;</text>
+  <text x="68" y="256" text-anchor="middle" font-size="11" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Familie</text>
+  <text x="68" y="270" text-anchor="middle" font-size="9" fill="#AE6965">(Besuch)</text>
+  <line x1="104" y1="236" x2="104" y2="284" stroke="#E5DFD6" stroke-width="1"/>
+  <text x="170" y="254" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">Große Familie,</text>
+  <text x="170" y="268" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">viele Besucher</text>
+  <text x="170" y="282" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">gleichzeitig</text>
+  <line x1="236" y1="236" x2="236" y2="284" stroke="#E5DFD6" stroke-width="1"/>
+  <text x="296" y="254" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">Besuchsregelung</text>
+  <text x="296" y="268" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">klären, Raum</text>
+  <text x="296" y="282" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)">bereitstellen</text>
+
+  <!-- Bottom border -->
+  <rect x="12" y="284" width="336" height="4" rx="2" fill="#7A816C" opacity="0.2"/>
+</svg>

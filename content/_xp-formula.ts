@@ -44,6 +44,19 @@ const BASE_XP: Record<StepType, number> = {
   labelImage: 25,
   imageInteraction: 20,
   careplan: 25,
+  audio: 10,
+  speech: 20,
+
+  // v3: Neue Step-Typen
+  wordorder: 15,
+  calculation: 20,
+  tablefillin: 20,
+  errorspot: 20,
+  matrix: 20,
+  conceptmap: 25,
+  chatSim: 25,
+  estimation: 15,
+  crowdPoll: 10,
 };
 
 /**

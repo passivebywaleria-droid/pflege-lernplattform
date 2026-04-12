@@ -17,6 +17,23 @@
 | Q5 | I Care Pflege Kap. 17 | Prophylaxen, S. 392–444 |
 | Q6 | RKI — Prävention nosokomialer Infektionen | KRINKO-Empfehlung Harnwegskatheter |
 | Q7 | Expertenstandards in der Pflege (Schmidt, Springer 2020) | Kap. 5 Harnkontinenz, Kap. 4 Sturzprophylaxe |
+| Q-AP | I Care Anatomie Physiologie (Thieme, 2020) | Relevante Kapitel |
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: LE-43
+
+**A&P-01** Harnwege — Überblick: Nierenbecken → Ureter (Harnleiter, 25-30 cm, peristaltische Wellen) → Harnblase (Vesica urinaria) → Urethra (Harnröhre, Frau 3-5 cm, Mann 20 cm). Funktion: Transport, Speicherung und kontrollierte Ausscheidung des Urins. [Q-AP]
+
+**A&P-02** Harnblase: Hohlorgan, Kapazität 300-500 ml. Wandaufbau: Urothel (dehnbares Übergangsepithel), Muscularis (M. detrusor vesicae = glatte Muskulatur → Entleerung). 2 Schließmuskeln: innerer (glatt, unwillkürlich), äußerer (quergestreift, willkürlich). Harndrang ab ca. 200-350 ml Füllung. [Q-AP]
+
+**A&P-03** Miktion (Blasenentleerung): Dehnungsrezeptoren melden Füllungsgrad → Miktionszentrum (sakrales Rückenmark S2-S4) → Parasympathikus → M. detrusor kontrahiert, innerer Sphinkter öffnet. Willkürliche Kontrolle: Großhirn hemmt/erlaubt äußeren Sphinkter. Bei Kindern: Blasenkontrolle entwickelt sich bis ca. 5. Lebensjahr. [Q-AP]
+
+**A&P-04** Urin — Zusammensetzung: 95% Wasser, 5% gelöste Stoffe (Harnstoff, Kreatinin, Harnsäure, Elektrolyte). Normale Menge: 1,5-2 L/Tag (abhängig von Trinkmenge). pH: 4,5-8,0 (durchschnittlich 6,0 = leicht sauer). Farbe: hellgelb (Urochrom). Normaler Urin: steril, klar, schwach riechend. [Q-AP]
 
 ---
 

@@ -9,7 +9,7 @@
  * @vitest-environment jsdom
  */
 
-import { describe, it, expect, vi } from "vitest";
+import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import React from "react";
 
@@ -487,13 +487,13 @@ describe("Step-Komponenten Render-Tests", () => {
     describe(`Step: ${stepType}`, () => {
       it("rendert ohne Crash", () => {
         expect(() => {
-          render(React.createElement(Component as React.ComponentType<Record<string, unknown>>, props as Record<string, unknown>));
+          render(React.createElement(Component as unknown as React.ComponentType<Record<string, unknown>>, props as Record<string, unknown>));
         }).not.toThrow();
       });
 
       it("zeigt den Titel an", () => {
         const { container } = render(
-          React.createElement(Component as React.ComponentType<Record<string, unknown>>, props as Record<string, unknown>)
+          React.createElement(Component as unknown as React.ComponentType<Record<string, unknown>>, props as Record<string, unknown>)
         );
         const titleEl = container.querySelector("h2");
         expect(titleEl).not.toBeNull();

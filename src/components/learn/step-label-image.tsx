@@ -2,7 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { LabelImageLabel, GlossarEntry } from "../../../content/ce-05/_types";
+import type { LabelImageLabel, GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepLabelImageProps {
@@ -62,34 +62,34 @@ export function StepLabelImage({
   const allCorrect = correctCount === labels.length;
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
-      <h2 className="text-2xl font-bold text-[#1d1d1f]">{title}</h2>
+    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+      <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">{title}</h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
           <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 
-      <p className="text-lg font-medium text-[#1d1d1f]">{instruction}</p>
+      <p className="text-lg font-medium text-[var(--lern-text-primary)]">{instruction}</p>
 
       {/* Fortschritt */}
       <div className="flex items-center gap-2">
-        <span className="text-sm text-[#6e6e73]">
+        <span className="text-sm text-[var(--lern-text-secondary)]">
           {Object.keys(answers).length} von {labels.length} beschriftet
         </span>
         <div className="flex gap-1">
           {labels.map((l) => (
             <div
               key={l.id}
-              className={`h-2.5 w-2.5 rounded-full transition-colors ${
+              className={`h-2 w-2 rounded-full transition-colors ${
                 checked
                   ? answers[l.id] === l.correct
-                    ? "bg-[#30D158]"
-                    : "bg-[#FF3B30]"
+                    ? "bg-[var(--lern-success)]"
+                    : "bg-[var(--lern-error)]"
                   : answers[l.id]
-                  ? "bg-[#0071e3]"
-                  : "bg-[#d2d2d7]"
+                  ? "bg-[var(--lern-accent)]"
+                  : "bg-[var(--lern-border)]"
               }`}
             />
           ))}
@@ -97,7 +97,7 @@ export function StepLabelImage({
       </div>
 
       {/* Bild mit Labels */}
-      <div className="relative rounded-2xl overflow-hidden border-2 border-[#d2d2d7]">
+      <div className="relative rounded-2xl overflow-hidden border-2 border-[var(--lern-border)]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={imageUrl}
@@ -125,13 +125,13 @@ export function StepLabelImage({
               className={`h-8 w-8 rounded-full border-2 flex items-center justify-center text-xs font-bold transition-all ${
                 checked
                   ? answers[label.id] === label.correct
-                    ? "bg-[#30D158]/30 border-[#30D158] text-[#30D158]"
-                    : "bg-[#FF3B30]/30 border-[#FF3B30] text-[#FF3B30]"
+                    ? "bg-[#6B8F71]/30 border-[#6B8F71] text-[#6B8F71]"
+                    : "bg-[#C96B5C]/30 border-[#C96B5C] text-[#C96B5C]"
                   : answers[label.id]
-                  ? "bg-[#0071e3]/30 border-[#0071e3] text-[#0071e3]"
+                  ? "bg-[var(--lern-accent)]/30 border-[var(--lern-accent)] text-[var(--lern-accent)]"
                   : activeLabel === label.id
-                  ? "bg-[#FF9500]/30 border-[#FF9500] text-[#FF9500] scale-125"
-                  : "bg-white/80 border-[#d2d2d7] text-[#6e6e73]"
+                  ? "bg-[#D4956A]/30 border-[#D4956A] text-[#D4956A] scale-125"
+                  : "bg-[var(--lern-bg-primary)]/80 border-[var(--lern-border)] text-[var(--lern-text-secondary)]"
               }`}
             >
               {checked
@@ -149,9 +149,9 @@ export function StepLabelImage({
                 className={`absolute top-full mt-1 left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px] font-bold px-1.5 py-0.5 rounded ${
                   checked
                     ? answers[label.id] === label.correct
-                      ? "bg-[#30D158]/20 text-[#30D158]"
-                      : "bg-[#FF3B30]/20 text-[#FF3B30]"
-                    : "bg-[#0071e3]/20 text-[#0071e3]"
+                      ? "bg-[#6B8F71]/20 text-[#6B8F71]"
+                      : "bg-[#C96B5C]/20 text-[#C96B5C]"
+                    : "bg-[var(--lern-accent)]/20 text-[var(--lern-accent)]"
                 }`}
               >
                 {checked && answers[label.id] !== label.correct
@@ -168,9 +168,9 @@ export function StepLabelImage({
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="rounded-2xl bg-white border border-[#d2d2d7] p-3 shadow-lg"
+          className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-3 shadow-lg"
         >
-          <p className="text-sm text-[#6e6e73] mb-2">Wähle den Begriff:</p>
+          <p className="text-sm text-[var(--lern-text-secondary)] mb-2">Wähle den Begriff:</p>
           <div className="flex flex-wrap gap-2">
             {allOptions.map((opt) => {
               const used = Object.values(answers).includes(opt) && answers[activeLabel] !== opt;
@@ -181,10 +181,10 @@ export function StepLabelImage({
                   disabled={used}
                   className={`rounded-full px-3 py-1.5 text-sm font-medium transition-all ${
                     answers[activeLabel] === opt
-                      ? "bg-[#0071e3] text-white"
+                      ? "bg-[var(--lern-accent)] text-white"
                       : used
-                      ? "bg-[#f5f5f7] text-[#d2d2d7] cursor-not-allowed"
-                      : "bg-[#f5f5f7] text-[#1d1d1f] hover:bg-[#e8e8ed] active:scale-95"
+                      ? "bg-[var(--lern-bg)] text-[var(--lern-border)] cursor-not-allowed"
+                      : "bg-[var(--lern-bg)] text-[var(--lern-text-primary)] hover:bg-[var(--lern-divider)] active:scale-95"
                   }`}
                 >
                   {opt}
@@ -197,8 +197,8 @@ export function StepLabelImage({
 
       {/* Drag-Modus: Begriffe zum Antippen */}
       {mode === "drag" && !checked && !activeLabel && (
-        <div className="rounded-2xl bg-[#f5f5f7] p-3">
-          <p className="text-sm text-[#6e6e73] mb-2">
+        <div className="rounded-2xl bg-[var(--lern-bg)] p-3">
+          <p className="text-sm text-[var(--lern-text-secondary)] mb-2">
             Tippe zuerst auf einen Punkt im Bild, dann auf den passenden Begriff:
           </p>
           <div className="flex flex-wrap gap-2">
@@ -209,8 +209,8 @@ export function StepLabelImage({
                   key={opt}
                   className={`rounded-full px-3 py-1.5 text-sm font-medium ${
                     used
-                      ? "bg-[#d2d2d7]/50 text-[#d2d2d7] line-through"
-                      : "bg-white text-[#1d1d1f] border border-[#d2d2d7]"
+                      ? "bg-[var(--lern-border)]/50 text-[var(--lern-border)] line-through"
+                      : "bg-[var(--lern-bg-primary)] text-[var(--lern-text-primary)] border border-[var(--lern-border)]"
                   }`}
                 >
                   {opt}
@@ -225,9 +225,9 @@ export function StepLabelImage({
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="rounded-2xl bg-[#FF9500]/10 border border-[#FF9500]/30 p-3"
+          className="rounded-2xl bg-[#D4956A]/10 border border-[#D4956A]/30 p-3"
         >
-          <p className="text-sm font-medium text-[#FF9500] mb-2">
+          <p className="text-sm font-medium text-[#D4956A] mb-2">
             Punkt ausgewählt — tippe auf den passenden Begriff:
           </p>
           <div className="flex flex-wrap gap-2">
@@ -240,8 +240,8 @@ export function StepLabelImage({
                   disabled={used}
                   className={`rounded-full px-3 py-1.5 text-sm font-medium transition-all ${
                     used
-                      ? "bg-[#d2d2d7]/50 text-[#d2d2d7] cursor-not-allowed"
-                      : "bg-white text-[#1d1d1f] border border-[#FF9500] hover:bg-[#FF9500]/10 active:scale-95"
+                      ? "bg-[var(--lern-border)]/50 text-[var(--lern-border)] cursor-not-allowed"
+                      : "bg-[var(--lern-bg-primary)] text-[var(--lern-text-primary)] border border-[#D4956A] hover:bg-[#D4956A]/10 active:scale-95"
                   }`}
                 >
                   {opt}
@@ -258,7 +258,7 @@ export function StepLabelImage({
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           onClick={handleCheck}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
         >
           Überprüfen
         </motion.button>
@@ -275,13 +275,13 @@ export function StepLabelImage({
             <div
               className={`rounded-2xl p-4 border ${
                 allCorrect
-                  ? "bg-[#30D158]/10 border-[#30D158]/30"
-                  : "bg-[#FF9500]/10 border-[#FF9500]/30"
+                  ? "bg-[#6B8F71]/10 border-[#6B8F71]/30"
+                  : "bg-[#D4956A]/10 border-[#D4956A]/30"
               }`}
             >
               <p
                 className={`font-semibold ${
-                  allCorrect ? "text-[#30D158]" : "text-[#FF9500]"
+                  allCorrect ? "text-[#6B8F71]" : "text-[#D4956A]"
                 }`}
               >
                 {allCorrect
@@ -289,7 +289,7 @@ export function StepLabelImage({
                   : `${correctCount} von ${labels.length} richtig`}
               </p>
               {!allCorrect && (
-                <p className="text-sm text-[#6e6e73] mt-1">
+                <p className="text-sm text-[var(--lern-text-secondary)] mt-1">
                   Die richtigen Begriffe sind jetzt am Bild angezeigt.
                 </p>
               )}
@@ -297,7 +297,7 @@ export function StepLabelImage({
 
             <button
               onClick={() => onNext(allCorrect)}
-              className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+              className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
             >
               Weiter
             </button>

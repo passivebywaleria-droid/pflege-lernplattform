@@ -15,6 +15,27 @@
 | Q4 | I Care Pflege (Thieme, 2020), Kap. 34 — Pflege von Menschen mit Drainagen | S. 662–680 |
 | Q5 | AWMF S3-Leitlinie Appendizitis (2021) | Diagnostik + Therapie |
 | Q6 | AWMF S3-Leitlinie Pankreatitis (2022) | Akute Pankreatitis, Therapie |
+| Q-AP | I Care Anatomie Physiologie (Thieme, 2020) | Relevante Kapitel |
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: LE-41
+
+**A&P-01** Leber (Hepar): Größtes inneres Organ (1,5 kg). Lage: rechter Oberbauch unter dem Zwerchfell. 4 Lappen. Doppelte Blutversorgung: A. hepatica (O₂-reich, 25%) + V. portae (nährstoffreich aus Darm, 75%). Funktionen: Stoffwechsel (Glukose, Fette, Proteine), Entgiftung, Galleproduktion (600-800 ml/Tag), Speicher (Glykogen, Vitamine A/D/B12, Eisen). [Q-AP]
+
+**A&P-02** Gallenblase und Gallenwege: Gallenblase = Speicherorgan (50-80 ml), Eindickung der Leber-Galle um Faktor 10. Ductus cysticus → Ductus choledochus → mündet mit Ductus pancreaticus in Papilla Vateri (Duodenum). Sphinkter Oddi reguliert Gallefluss. Galle: emulgiert Fette (Gallensäuren = Detergenzien). [Q-AP]
+
+**A&P-03** Pankreas (Bauchspeicheldrüse): 15 cm, retroperitoneal, Kopf im Duodenum-C. Exokrine Funktion (98%): Pankreassaft (1,5 L/Tag) mit Enzymen — Trypsin/Chymotrypsin (Proteine), Lipase (Fette), Amylase (Stärke). Bikarbonat neutralisiert Magensäure. Endokrine Funktion (2%): Langerhans-Inseln — B-Zellen (Insulin), A-Zellen (Glukagon). [Q-AP]
+
+**A&P-04** Magen (Gaster): Fassungsvermögen 1,5-2,5 L. Regionen: Kardia, Fundus, Korpus, Antrum, Pylorus. Magendrüsen: Belegzellen (HCl + Intrinsic Factor), Hauptzellen (Pepsinogen), Nebenzellen (Schleim = Schutz). Magensäure pH 1-2 = tötet Bakterien + aktiviert Pepsinogen zu Pepsin. Magenentleerung: 2-7h (Fett am langsamsten). [Q-AP]
+
+**A&P-05** Ösophagus (Speiseröhre): Ca. 25 cm, 3 physiologische Engen (Ösophagusmund, Aortenenge, Zwerchfellenge). Peristaltische Wellen transportieren Bolus (auch kopfüber möglich). Unterer Ösophagussphinkter: Verschluss gegen Magenreflux. Schleimhaut: unverhorntes Plattenepithel (robust gegen mechanische Reize). [Q-AP]
+
+**A&P-06** Dünndarm — Spezialfunktionen: Duodenum (25 cm): Pankreassaft + Galle münden → chemische Verdauung. Jejunum (2,5 m): Hauptresorptionsort. Ileum (3,5 m): Vitamin-B12-Resorption (Terminal Ileum + Intrinsic Factor), Gallensäure-Rückresorption (enterohepatischer Kreislauf). Brunner-Drüsen (nur Duodenum): alkalischer Schleim schützt vor Magensäure. [Q-AP]
 
 ---
 

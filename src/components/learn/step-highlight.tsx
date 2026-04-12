@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface TextSegment {
@@ -54,18 +54,18 @@ export function StepHighlight({
   };
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
-      <h2 className="text-2xl font-bold text-[#1d1d1f]">
+    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+      <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
           <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 
-      <p className="text-sm text-[#6e6e73]">
+      <p className="text-sm text-[var(--lern-text-secondary)]">
         Markiere alle fehlerhaften Formulierungen.
         <span className="ml-2 text-xs">
           ({marked.size} markiert, {errors.length} Fehler vorhanden)
@@ -73,8 +73,8 @@ export function StepHighlight({
       </p>
 
       {/* Text with markable segments */}
-      <div className="rounded-2xl bg-white border border-[#d2d2d7] p-5">
-        <p className="text-sm leading-relaxed text-[#1d1d1f]">
+      <div className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5">
+        <p className="text-sm leading-relaxed text-[var(--lern-text-primary)]">
           {segments.map((segment, i) => {
             const isMarked = marked.has(i);
             const isError = segment.isError;
@@ -94,14 +94,14 @@ export function StepHighlight({
                 onClick={() => toggle(i)}
                 className={`cursor-pointer px-1 py-0.5 rounded transition-all inline ${
                   isCorrectMark
-                    ? "bg-[#30D158]/20 text-[#1d1d1f] font-medium"
+                    ? "bg-[#6B8F71]/20 text-[var(--lern-text-primary)] font-medium"
                     : isWrongMark
-                      ? "bg-[#FF3B30]/20 text-[#FF3B30] line-through"
+                      ? "bg-[#C96B5C]/20 text-[#C96B5C] line-through"
                       : isMissed
-                        ? "bg-[#FF9500]/30 text-[#1d1d1f] underline decoration-wavy decoration-[#FF9500]"
+                        ? "bg-[#D4956A]/30 text-[var(--lern-text-primary)] underline decoration-wavy decoration-[#D4956A]"
                         : isMarked
-                          ? "bg-[#FFD60A]/40 text-[#1d1d1f]"
-                          : "hover:bg-[#FFD60A]/10"
+                          ? "bg-[#BFA48E]/40 text-[var(--lern-text-primary)]"
+                          : "hover:bg-[#BFA48E]/10"
                 }`}
               >
                 {segment.text}
@@ -113,17 +113,17 @@ export function StepHighlight({
 
       {/* Legend after check */}
       {checked && (
-        <div className="flex flex-wrap gap-3 text-xs text-[#6e6e73]">
+        <div className="flex flex-wrap gap-3 text-xs text-[var(--lern-text-secondary)]">
           <span className="flex items-center gap-1">
-            <span className="w-3 h-3 rounded bg-[#30D158]/20" /> Richtig
+            <span className="w-3 h-3 rounded bg-[#6B8F71]/20" /> Richtig
             markiert
           </span>
           <span className="flex items-center gap-1">
-            <span className="w-3 h-3 rounded bg-[#FF3B30]/20" /> Falsch
+            <span className="w-3 h-3 rounded bg-[#C96B5C]/20" /> Falsch
             markiert
           </span>
           <span className="flex items-center gap-1">
-            <span className="w-3 h-3 rounded bg-[#FF9500]/30" /> Übersehen
+            <span className="w-3 h-3 rounded bg-[#D4956A]/30" /> Übersehen
           </span>
         </div>
       )}
@@ -135,12 +135,12 @@ export function StepHighlight({
             .filter((s) => s.isError)
             .map((s, i) => (
               <div key={i} className="flex items-start gap-2 text-xs">
-                <span className="text-[#FF9500] mt-0.5">&#8594;</span>
+                <span className="text-[#D4956A] mt-0.5">&#8594;</span>
                 <div>
-                  <span className="font-medium text-[#1d1d1f]">
+                  <span className="font-medium text-[var(--lern-text-primary)]">
                     &quot;{s.text.trim()}&quot;
                   </span>
-                  <span className="text-[#6e6e73] ml-1">
+                  <span className="text-[var(--lern-text-secondary)] ml-1">
                     &mdash; {(sprachLevel === "b1" && s.reasonB1) || s.reason}
                   </span>
                 </div>
@@ -152,7 +152,7 @@ export function StepHighlight({
       {!checked ? (
         <button
           onClick={() => setChecked(true)}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
         >
           Prüfen
         </button>
@@ -163,11 +163,11 @@ export function StepHighlight({
             animate={{ opacity: 1, y: 0 }}
             className={`rounded-2xl p-4 ${
               allCorrect
-                ? "bg-[#30D158]/10 border border-[#30D158]/30"
-                : "bg-[#FF9500]/10 border border-[#FF9500]/30"
+                ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+                : "bg-[#D4956A]/10 border border-[#D4956A]/30"
             }`}
           >
-            <p className="font-semibold text-[#1d1d1f]">
+            <p className="font-semibold text-[var(--lern-text-primary)]">
               {allCorrect
                 ? "Perfekt! Alle Fehler erkannt."
                 : `${correctlyMarked}/${errors.length} Fehler gefunden${wronglyMarked > 0 ? `, ${wronglyMarked} falsch markiert` : ""}.`}
@@ -176,7 +176,7 @@ export function StepHighlight({
 
           <button
             onClick={() => onNext(allCorrect)}
-            className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
           >
             Weiter
           </button>

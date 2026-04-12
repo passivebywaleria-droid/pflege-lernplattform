@@ -2,15 +2,33 @@
 
 Du führst den kompletten Content-Pipeline für EINE Lektion durch. 4 Schritte nacheinander.
 
-**Voraussetzung:** Rohmaterial ist fertig (`content/le-{N}/rohmaterial.md`).
+**Voraussetzung:** Rohmaterial ist fertig (`content/le-{N}/rohmaterial.md`) + als JSON konvertiert + von Dozentin freigegeben.
 
 ---
 
-## Schritt 0: Nächste LE finden
+## Schritt 0: Nächste LE finden + Rohmaterial-Freigabe prüfen
 
+### 0a: Nächste LE identifizieren
 1. Lies `didaktik-loop/prd-v2.json`
 2. Finde die erste LE mit `"status": "rohmaterial"` (= bereit für Content-Generierung)
 3. Merke dir `leId`, `ceId`, `zeitrichtwert`
+
+### 0b: Rohmaterial → Strukturiertes JSON
+1. Falls `content/le-{N}/rohmaterial.json` noch nicht existiert:
+   ```bash
+   npx tsx scripts/convert-rohmaterial.ts le-{N}
+   ```
+2. JSON manuell nacharbeiten: `schluesselwoerter[]`, `zahlen[]`, `namen[]` prüfen und ergänzen
+3. Dozentin-Rohmaterial-Checkliste generieren:
+   ```bash
+   npx tsx scripts/validate-le.ts le-{N}
+   ```
+   → Erzeugt `content/le-{N}/dozentin-rohmaterial-checkliste.md`
+
+### 0c: Dozentin-Freigabe Rohmaterial (BLOCKER)
+1. Dozentin prüft `dozentin-rohmaterial-checkliste.md` (Fakten + Quellen + Leitfälle)
+2. Bei Freigabe: `dozentinFreigabeRohmaterial: true` in `rohmaterial.json` setzen
+3. **OHNE Freigabe darf NICHT generiert werden** — Validator blockiert
 
 ---
 
@@ -29,7 +47,8 @@ Lies die Rolle: `.claude/agents/didaktik-regisseur.md`
 - Session-Anzahl = Zeitrichtwert / 5
 - CE-Typ-spezifische Gliederung (nicht nur 12-Punkte)
 - Track-Zuordnung (basis/vertiefung) für jeden Step
-- Diversity-Regeln V1-V6 (Mindestquoten, kein gleiches Gefühl, emotionaler Rhythmus)
+- Diversity-Regeln V1-V6 + V10 Tag-Verteilung (Mindestquoten, kein gleiches Gefühl, emotionaler Rhythmus)
+- **3-Säulen-Tag**: Jeder Step bekommt `tag: "anatomie" | "pflege" | "krankheitslehre"` (V10)
 - Visuelle Mindestquote: ≥30% Bilder-Spalte ✓
 - Lernziel-IDs aus Rohmaterial Abschnitt G
 - Leitfälle aus Rohmaterial Abschnitt C (kein separates Dossier)
@@ -77,75 +96,109 @@ Lies die Rolle: `.claude/agents/content-generator.md`
 **Beachte:**
 - Exakt dem Sessionplan folgen (1 Step = 1 Step)
 - C1 + B1 gleichzeitig (kein separater B1-Pass)
-- Pflichtfelder: `track`, `modus`, `lernziel`, `contentB1`, `themenblockPhase`
+- Pflichtfelder: `track`, `modus`, `lernziel`, `contentB1`, `themenblockPhase`, `tag`
 - XP per Formel (kein manuelles xpValue)
 - 3-Felder-Regel: title≠fragetext, body=Kontext
 - Offene Fragen 1:1 aus Rohmaterial Abschnitt F
 - **Phasen-spezifischer Ton** (12 Regeln aus Generator Regel 1b)
 - **careplan-Steps** bei CE 05 oder KB I (5-Phasen Pflegeprozess)
+- **Dialog-Mindestphasen**: Reguläre Dialoge ≥3 Phasen (Szenenverlauf mit Eskalation). Brücken-Steps (`bk`) dürfen 1-2 Phasen haben.
 
 ---
 
-## Schritt 3: Prüfung (Lint + Exa Fact-Check + Didaktik-Prüfer)
+## Schritt 3: Prüfung (5 Auto-Checks → Prüfer Opus → Dozentin → Feedback-Loop)
 
-### 3a: TypeScript-Check
-
-```bash
-npx tsc --noEmit content/le-{N}/steps-s*.ts
-```
-
-### 3b: Content-Lint (automatisch)
-
-Content-Lint Checks (manuell gegen die Kriterien in `scripts/content-lint.ts`):
-- Diversity-Checks (K.O.): ≥15 Step-Typen, nie gleiches Gefühl
-- Pflichtfelder: track, modus, lernziel, contentB1, themenblockPhase
-- Textqualität: Satzlänge, Füllsätze, Body-Länge
-- Track-Verteilung: 60-70% basis
-- Phasen-Bogen: Pflicht-Phasen (0,1,2,3,9,10) pro Themenblock vorhanden
-
-### 3c: Exa Fact-Check (NEU — automatisiert)
+### 3a: Unified Validator (5 automatische Checks)
 
 ```bash
-npx ts-node scripts/exa-fact-check.ts content/le-{N}/
+npx tsx scripts/validate-le.ts le-{N}
 ```
 
-Prüft automatisch:
-- **Halluzinations-Muster**: Mehrabian-Mythos, vage Studienreferenzen, unbelegte Prozentzahlen
-- **Quellen-Verifikation**: Fakten mit Zahlen gegen AWMF, DNQP, PubMed, Cochrane
-- Output: VERIFIED / UNVERIFIED / SUSPICIOUS pro Fakt
-- Bei SUSPICIOUS → manuell gegen Rohmaterial prüfen (→ F11 K.O.)
+Führt automatisch aus:
+1. **Schema-Check**: Zod-Validierung jedes Steps gegen per-stepType Pflichtfelder
+2. **Fakten-Check**: Deterministischer Abgleich gegen `rohmaterial.json` (Keywords, Zahlen, Namen, Leitfälle)
+3. **MC-Linter**: Bias-Erkennung (Antwortlänge, Fachbegriff-Verteilung, Position)
+4. **Dialog-Linter**: Score-Position-Bias (beste Antwort nicht immer auf A)
+5. **Glossar-Checker**: Vollständigkeit (Steps↔Glossar↔Rohmaterial, AR/TR-Übersetzungen)
 
-### 3d: KI-Prüfung (Didaktik-Prüfer)
+Plus: TSC + Content-Lint
+
+**Output:** Zusammenfassung + `dozentin-checkliste.md` (auto-generiert)
+
+### 3b: Exa Fact-Check (optional, bei Verdacht)
+
+```bash
+npx tsx scripts/exa-fact-check.ts content/le-{N}/
+```
+
+Prüft: Halluzinations-Muster, Quellen-Verifikation gegen AWMF/DNQP/PubMed/Cochrane.
+
+### 3b2: B1-Sprachprüfung (automatisch + manuell)
+
+**Automatisch:**
+```bash
+npx tsx scripts/b1-linter.ts le-{N}
+```
+Prüft: Verbotene Konstruktionen (Partizip I/II, Passiv+Modal, Genitivketten, Konjunktiv I), verbotene Wörter, Komposita >20 Zeichen, Satzlänge >15 Wörter, fehlende B1-Subdatenfelder.
+
+**Manuell (bei Bedarf):**
+Lies die Rolle: `.claude/agents/b1-dozentin.md`
+- Verständlichkeit für B1-Lerner (nicht nur Syntax)
+- Fachbegriff-Einführungsreihenfolge
+- Dialog-Natürlichkeit in B1-Sprache
+
+### 3c: KI-Prüfung (Didaktik-Prüfer — Opus)
 
 Lies die Rolle: `.claude/agents/didaktik-pruefer.md`
 
 **Input:**
-- Generierte Step-Dateien
-- Sessionplan
-- Rohmaterial
-- Exa Fact-Check Ergebnis (aus 3c)
+- Generierte Step-Dateien + Sessionplan + Rohmaterial (MD + JSON)
+- Validator-Ergebnis (aus 3a)
+- `content/_generator-feedback.md` (bekannte Fehler-Patterns)
 
-**Prüfe 55 Kriterien** in 15 Blöcken (A-O).
-K.O.-Kriterien: B5 (Wissensaufbau), DIV1 (Vielfalt), DIV2 (Gefühl), F7 (Korrektheit), F10 (Gefahr), F11 (Halluzination).
+**Prüfe 75+ Kriterien** in 17 Blöcken (A-T).
+K.O.-Kriterien: B5, DIV1, DIV2, F7, F10, F11 + CQ-O1..CQ-A1.
+TAG-Kriterien: TAG1-TAG3.
+Phasen-Bogen: M1-M6.
+Exa Fact-Check: O1-O3.
 
-**Phasen-Bogen-Kriterien (Block M, 6 Stück):**
-- M1: `themenblockPhase` bei jedem Step vorhanden
-- M2: Pflicht-Phasen (SZENE→ERKLÄRUNG→CHECKPOINT→ANWENDUNG→REFLEXION) pro Themenblock komplett
-- M3: Phasen-Reihenfolge korrekt (0→1→2→3→...→9→10)
-- M4: CHECKPOINT ist immer MC mit Zeitmessung
-- M5: KB-Phasen korrekt zugeordnet
-- M6: Score-A-Pfad (nur Pflicht-Phasen) ergibt sinnvollen Lernpfad
+### 3d: Dozentin-Steps-Prüfung (100%, PFLICHT)
 
-**Exa Fact-Check-Kriterien (Block O, 3 Stück):**
-- O1: Automatischer Fact-Check ausgeführt
-- O2: Keine Halluzinations-Muster erkannt
-- O3: UNVERIFIED-Fakten manuell gegen Rohmaterial bestätigt
+Dozentin prüft `content/le-{N}/dozentin-checkliste.md`:
+- **A) Kernfakt-Abgleich**: Jeder Fakt aus JSON vs. Step-Text (auto-flags: COVERED/PARTIAL/MISSING/MISMATCH)
+- **B) Leitfall-Check**: Name + Alter + Diagnose stimmen mit JSON überein
+- **C) Glossar + MC + Dialog**: Auto-generierte Warnungen prüfen
+- **D) Freigabe**: Alle MISMATCH/MISSING geprüft → Freigabe Steps
+- **E) Feedback für Generator (PFLICHT bei Korrekturen)**: Jede Korrektur → neue Regel in `content/_generator-feedback.md`
+
+### 3e: Feedback-Loop
+
+Bei Dozentin-Korrekturen:
+1. Korrektur in Steps umsetzen
+2. Neue Regel in `content/_generator-feedback.md` eintragen
+3. Erneut `validate-le.ts` laufen lassen
+4. So lernt der Generator aus jeder Korrektur — gleicher Fehler nie zweimal
 
 ---
 
 ## Schritt 4: Abschluss
 
-### Bei PASS:
+### 4a: Pre-Live-Gate (BLOCKER)
+
+```bash
+npx tsx scripts/pre-live-check.ts le-{N}
+```
+
+7-Punkt-Checkliste. ALLE müssen ✅ sein:
+1. rohmaterial.json existiert + valide
+2. Dozentin-Freigabe Rohmaterial
+3. Mindest-Steps (≥100)
+4. Glossar vorhanden
+5. Dozentin-Checkliste Steps freigegeben
+6. Generator-Feedback existiert
+7. Content-Loader Eintrag
+
+### Bei PASS (alle 7 ✅):
 1. PRD updaten: `"status": "geprueft"`
 2. Content-Loader aktualisieren: `content/content-loader.ts` — neuen LE-Eintrag hinzufügen
 3. Weiter mit nächster LE (Schritt 0)
@@ -177,17 +230,19 @@ content/le-{N}/
 
 ```
 content/
-├── _types.ts               ← TypeScript Interfaces (30 Step-Typen inkl. careplan)
+├── _types.ts               ← TypeScript Interfaces (30 Step-Typen inkl. careplan, ContentTag, Organsystem)
 ├── _xp-formula.ts           ← XP-Berechnung per Formel
 ├── _b1-pflegedeutsch.md     ← B1-Sprachregeln (aus Literatur)
 ├── _pruefungsfragen.md      ← 400+ Prüfungsfragen (aus Literatur)
 ├── _leitfall-template.md    ← Leitfall-Standardformat (aus Fallbüchern)
 ├── _kompetenz-mapping.md    ← Lernziel-IDs + PflAPrV-Zuordnung
 ├── _bild-katalog.md         ← Verfügbare Bilder mit Pfaden
-└── content-loader.ts        ← Dynamischer Loader
+├── _patients.ts             ← Globales Patienten-Register (Cross-LE)
+└── content-loader.ts        ← Dynamischer Loader (+ Cross-LE Loader)
 
 scripts/
 ├── content-lint.ts          ← Diversity + Qualitäts-Checks
+├── b1-linter.ts             ← B1-Sprachqualität-Linter
 └── exa-fact-check.ts        ← Halluzinations-Erkennung + Quellen-Verifikation
 
 specs/

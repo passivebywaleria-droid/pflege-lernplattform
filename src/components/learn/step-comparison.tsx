@@ -14,7 +14,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 import { ContentIcon } from "@/components/ui/hand-drawn-icon";
 
@@ -51,11 +51,11 @@ interface StepComparisonProps {
 
 // Farben für Spalten (unterscheidbar, passt zum Apple-Design)
 const COLUMN_COLORS = [
-  { bg: "bg-[#0071e3]", light: "bg-[#0071e3]/10", border: "border-[#0071e3]/20", text: "text-[#0071e3]", hex: "#0071e3" },
-  { bg: "bg-[#30D158]", light: "bg-[#30D158]/10", border: "border-[#30D158]/20", text: "text-[#147a2a]", hex: "#147a2a" },
-  { bg: "bg-[#FF9500]", light: "bg-[#FF9500]/10", border: "border-[#FF9500]/20", text: "text-[#a86200]", hex: "#a86200" },
-  { bg: "bg-[#AF52DE]", light: "bg-[#AF52DE]/10", border: "border-[#AF52DE]/20", text: "text-[#7B2FA0]", hex: "#7B2FA0" },
-  { bg: "bg-[#FF3B30]", light: "bg-[#FF3B30]/10", border: "border-[#FF3B30]/20", text: "text-[#c4291f]", hex: "#c4291f" },
+  { bg: "bg-[var(--lern-accent)]", light: "bg-[var(--lern-accent)]/10", border: "border-[var(--lern-accent)]/20", text: "text-[var(--lern-accent)]", hex: "var(--lern-accent)" },
+  { bg: "bg-[#6B8F71]", light: "bg-[#6B8F71]/10", border: "border-[#6B8F71]/20", text: "text-[#147a2a]", hex: "#147a2a" },
+  { bg: "bg-[#D4956A]", light: "bg-[#D4956A]/10", border: "border-[#D4956A]/20", text: "text-[#a86200]", hex: "#a86200" },
+  { bg: "bg-[#9B7EA6]", light: "bg-[#9B7EA6]/10", border: "border-[#9B7EA6]/20", text: "text-[#7B2FA0]", hex: "#7B2FA0" },
+  { bg: "bg-[#C96B5C]", light: "bg-[#C96B5C]/10", border: "border-[#C96B5C]/20", text: "text-[#c4291f]", hex: "#c4291f" },
 ];
 
 export function StepComparison({
@@ -77,7 +77,7 @@ export function StepComparison({
   };
 
   return (
-    <div className="space-y-5 pb-20" style={{ color: "#1d1d1f" }}>
+    <div className="space-y-5 pb-20" style={{ color: "var(--lern-text-primary)" }}>
       <h2 className="text-2xl font-bold">{title}</h2>
 
       {body && (
@@ -86,7 +86,7 @@ export function StepComparison({
         </p>
       )}
 
-      <p className="text-sm" style={{ color: "#6e6e73" }}>{instruction}</p>
+      <p className="text-lg font-medium" style={{ color: "var(--lern-text-primary)" }}>{instruction}</p>
 
       {/* Spalten-Legende */}
       <div className="flex flex-wrap gap-2">
@@ -125,10 +125,10 @@ export function StepComparison({
               transition={{ delay: rowIdx * 0.06 }}
               className={`rounded-2xl border overflow-hidden transition-all ${
                 isExpanded
-                  ? "border-[#0071e3]/30 bg-white shadow-sm"
+                  ? "border-[var(--lern-accent)]/30 bg-[var(--lern-bg-primary)] shadow-sm"
                   : isViewed
-                    ? "border-[#e8e8ed] bg-white"
-                    : "border-[#e8e8ed] bg-[#f5f5f7]"
+                    ? "border-[var(--lern-divider)] bg-[var(--lern-bg-primary)]"
+                    : "border-[var(--lern-divider)] bg-[var(--lern-bg)]"
               }`}
             >
               {/* Kriterium-Header (antippbar) */}
@@ -140,7 +140,7 @@ export function StepComparison({
                 <motion.span
                   animate={{ rotate: isExpanded ? 180 : 0 }}
                   transition={{ duration: 0.2 }}
-                  className="text-[#86868b] ml-2"
+                  className="text-[var(--lern-text-tertiary)] ml-2"
                 >
                   ▼
                 </motion.span>
@@ -183,7 +183,7 @@ export function StepComparison({
       </div>
 
       {/* Fortschritt */}
-      <p className="text-xs text-center" style={{ color: "#86868b" }}>
+      <p className="text-xs text-center" style={{ color: "var(--lern-text-tertiary)" }}>
         {viewedRows.size} von {rows.length} Kriterien angesehen
       </p>
 
@@ -192,7 +192,7 @@ export function StepComparison({
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         onClick={() => onNext(true)}
-        className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
       >
         Weiter
       </motion.button>

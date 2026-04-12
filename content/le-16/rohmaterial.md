@@ -15,6 +15,35 @@
 | Q4 | I Care Pflege (Thieme, 2020), Kap. 23 — Notfallsituationen | S. 561–590 |
 | Q5 | ESC/DGK Leitlinien Akutes Koronarsyndrom (2023) | Diagnostik + Therapie STEMI/NSTEMI |
 | Q6 | AWMF S3-Leitlinie Herzinsuffizienz (2021) | NYHA-Klassifikation, Therapie |
+| Q-AP | I Care Anatomie Physiologie (Thieme, 2020) | Relevante Kapitel |
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: LE-42, LE-54
+
+**A&P-01** Lage und Größe des Herzens: Im Mediastinum, hinter dem Sternum, leicht nach links verlagert. Faustgroß, ca. 300g. Herzspitze (Apex) zeigt nach links unten (5. ICR medioklavikular — Herzspitzenstoß tastbar). [Q-AP]
+
+**A&P-02** Herzwand — 3 Schichten: Endokard (Innenhaut, glatt, Herzklappen), Myokard (Herzmuskel — quergestreift aber unwillkürlich, Arbeitsmyokard + Erregungsleitungssystem), Epikard (Außenhaut = viszerales Blatt des Perikards). Perikard (Herzbeutel): schützt, fixiert, verhindert Überdehnung. [Q-AP]
+
+**A&P-03** Herzhöhlen und Klappen: 4 Höhlen — rechter Vorhof (RA) + rechter Ventrikel (RV) + linker Vorhof (LA) + linker Ventrikel (LV). 4 Klappen: Trikuspidalklappe (RA→RV), Pulmonalklappe (RV→A. pulmonalis), Mitralklappe (LA→LV), Aortenklappe (LV→Aorta). Segelklappen (AV-Klappen) = Trikuspidal + Mitral. Taschenklappen = Pulmonal + Aorta. [Q-AP]
+
+**A&P-04** Kleiner Kreislauf (Lungenkreislauf): RV → Truncus pulmonalis → Aa. pulmonales → Lungenkapillaren (Gasaustausch: CO₂ ab, O₂ auf) → Vv. pulmonales → LA. Niederdruck-System (25/10 mmHg). Lungenvenen führen sauerstoffREICHES Blut (Ausnahme von der Regel!). [Q-AP]
+
+**A&P-05** Großer Kreislauf (Körperkreislauf): LV → Aorta → Arterien → Arteriolen → Kapillaren (Gasaustausch + Stoffaustausch im Gewebe) → Venolen → Venen → Vv. cavae superior + inferior → RA. Hochdrucksystem (120/80 mmHg). Aorta = größte Arterie (2-3 cm Durchmesser). [Q-AP]
+
+**A&P-06** Erregungsleitungssystem: Sinusknoten (Taktgeber, 60-80/min, im RA) → AV-Knoten (Verzögerung, 40-60/min) → His-Bündel → Tawara-Schenkel (rechts + links) → Purkinje-Fasern → Myokard kontrahiert. Hierarchie: Fällt Sinusknoten aus → AV-Knoten übernimmt (langsamer). [Q-AP]
+
+**A&P-07** Herzzyklus: Systole (Kontraktion, ca. 0,3s): Anspannungsphase → Austreibungsphase (Blut in Aorta/Pulmonalis). Diastole (Erschlaffung, ca. 0,5s): Entspannungsphase → Füllungsphase. Herzzeitvolumen (HZV) = Schlagvolumen (ca. 70 ml) × Herzfrequenz (ca. 70/min) = ca. 5 L/min in Ruhe. [Q-AP]
+
+**A&P-08** Koronararterien: A. coronaria dextra (rechts) versorgt RA, RV, Hinterwand. A. coronaria sinistra teilt sich in: R. interventricularis anterior (RIVA/LAD — Vorderwand) + R. circumflexus (RCX — Seitenwand). Koronarien füllen sich in der Diastole (nicht Systole!). [Q-AP]
+
+**A&P-09** Blutdruck: Systolischer Druck = Auswurfphase (normal 120 mmHg). Diastolischer Druck = Füllungsphase (normal 80 mmHg). Regulation: kurzfristig (Barorezeptoren im Carotissinus/Aortenbogen → Sympathikus/Parasympathikus), langfristig (RAAS = Renin-Angiotensin-Aldosteron-System → Niere reguliert Volumen). [Q-AP]
+
+**A&P-10** Arterieller vs. venöser Kreislauf: Arterien: dicke Wand (3 Schichten: Intima, Media mit glatter Muskulatur, Adventitia), hoher Druck, pulsierend. Venen: dünnere Wand, niedrigerer Druck, Venenklappen. Kapillaren: einschichtig (Endothel), Ort des Stoffaustauschs. Windkesselfunktion der Aorta: Druckspitzen abpuffern. [Q-AP]
 
 ---
 

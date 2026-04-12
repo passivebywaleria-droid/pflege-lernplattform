@@ -4,7 +4,8 @@
 // Springer (2023): Fast-Forward bei Overlearning
 
 import type { LernProfil, LernAchsen, SessionFortschritt } from "@/hooks/use-lern-fortschritt";
-import type { LektionManifest } from "../../../content/ce-05/_manifest";
+import type { LeManifestEntry } from "../../../content/content-loader";
+import { getLektionManifest } from "../content-loader";
 import type { SessionNumber } from "../content-loader";
 import {
   faelligeWiederholungen,
@@ -87,7 +88,7 @@ export function zaehleWiederholungen(register: KompetenzRegister | undefined): n
  */
 export function getSessionEmpfehlungen(
   profil: LernProfil,
-  manifest: LektionManifest[],
+  manifest: LeManifestEntry[],
 ): SessionEmpfehlung[] {
   const empfehlungen: SessionEmpfehlung[] = [];
   const achsen = profil.achsen ?? { sprache: 3, fachwissen: 3, letzteBerechnung: "" };
@@ -132,7 +133,7 @@ export function getSessionEmpfehlungen(
         : `${le?.titleShort ?? naechste.leId} · Session ${naechste.session}`,
       geschaetzteMinuten: schaetzeSessionDauer(achsen, naechste.session, {
         gemeistert: 0,
-        gesamt: le?.estimatedSteps ?? 20,
+        gesamt: le ? le.sessions.length * 22 : 20,
       }),
       prioritaet: naechste.session === 1 ? 4 : 3,
     });
@@ -223,8 +224,10 @@ export function kannSessionUeberspringen(
     return { skip: false, masteryQuote: 0, grund: "Kein Kompetenz-Register vorhanden" };
   }
 
-  // Lernziel-Prefix für diese LE: z.B. "ce05-le03"
-  const lePrefix = `ce05-${leId.replace(/-/g, "").replace(/le(\d+).*/, "le$1")}`;
+  // Lernziel-Prefix für diese LE: z.B. "ce01-le01"
+  const leManifest = getLektionManifest(leId);
+  const cePrefix = leManifest?.ceId?.replace("-", "") ?? "ce01";
+  const lePrefix = `${cePrefix}-${leId.replace(/-/g, "").replace(/le(\d+).*/, "le$1")}`;
   const uebersicht = kompetenzUebersicht(register, lePrefix);
 
   if (uebersicht.gesamt === 0) {
@@ -295,19 +298,16 @@ function schaetzeRestdauer(fortschritt: SessionFortschritt, achsen: LernAchsen):
  */
 function findeNaechsteSession(
   profil: LernProfil,
-  manifest: LektionManifest[],
+  manifest: LeManifestEntry[],
 ): { leId: string; session: SessionNumber } | null {
-  // Sortiert nach order
-  const sortiert = [...manifest].sort((a, b) => a.order - b.order);
-
-  for (const le of sortiert) {
-    // Nur LEs mit Content (status "fertig" oder "entwurf")
-    if (le.status === "geplant") continue;
+  for (const le of manifest) {
+    // Nur LEs mit Content
+    if (le.status === "rohmaterial" || le.status === "sessionplan") continue;
 
     const fortschritt = profil.fortschritte[le.leId];
-    const sessions: SessionNumber[] = [1, 2, 3];
+    const availableSessions = le.sessions.map((_, i) => (i + 1) as SessionNumber);
 
-    for (const sess of sessions) {
+    for (const sess of availableSessions) {
       const sessionData = fortschritt?.sessions[sess];
 
       // Session noch nicht gestartet
@@ -318,15 +318,6 @@ function findeNaechsteSession(
           if (!vorherigeData || vorherigeData.currentStep < vorherigeData.totalSteps - 1) {
             break; // Vorherige Session nicht fertig → diese LE erstmal abschließen
           }
-        }
-
-        // Voraussetzungs-LEs prüfen
-        if (sess === 1 && le.voraussetzungen.length > 0) {
-          const alleVoraussetzungenErfuellt = le.voraussetzungen.every((vorId) => {
-            const vorFortschritt = profil.fortschritte[vorId];
-            return vorFortschritt?.abgeschlossen;
-          });
-          if (!alleVoraussetzungenErfuellt) continue;
         }
 
         return { leId: le.leId, session: sess };
@@ -350,14 +341,14 @@ function findeNaechsteSession(
  */
 function findeChallengeLE(
   profil: LernProfil,
-  manifest: LektionManifest[],
-): LektionManifest | null {
+  manifest: LeManifestEntry[],
+): LeManifestEntry | null {
   if (!profil.kompetenzRegister) return null;
 
   for (const le of manifest) {
-    if (le.pruefungsrelevanz !== "hoch") continue;
+    if (le.status === "rohmaterial" || le.status === "sessionplan") continue;
 
-    const lePrefix = `ce05-${le.leId.replace(/-/g, "").replace(/le(\d+).*/, "le$1")}`;
+    const lePrefix = `${le.ceId}-${le.leId.replace(/-/g, "").replace(/le(\d+).*/, "le$1")}`;
     const uebersicht = kompetenzUebersicht(profil.kompetenzRegister, lePrefix);
 
     if (uebersicht.gesamt === 0) continue;

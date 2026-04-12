@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 
 interface StepReflectionProps {
@@ -72,19 +72,19 @@ export function StepReflection({
   };
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
-      <h2 className="text-2xl font-bold text-[#1d1d1f]">
+    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+      <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
           <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 
-      <div className="rounded-2xl bg-[#AF52DE]/5 border border-[#AF52DE]/15 p-4">
-        <p className="text-lg font-medium text-[#1d1d1f]">
+      <div className="rounded-2xl bg-[var(--lern-info)]/5 border border-[var(--lern-info)]/15 p-4">
+        <p className="text-lg font-medium text-[var(--lern-text-primary)]">
           {renderBold(prompt)}
         </p>
       </div>
@@ -96,9 +96,10 @@ export function StepReflection({
             onChange={(e) => setText(e.target.value)}
             placeholder={placeholder}
             rows={4}
-            className="w-full rounded-2xl border-2 border-[#d2d2d7] bg-white p-4 text-[#1d1d1f] placeholder:text-[#86868b] focus:border-[#AF52DE] focus:outline-none resize-none transition-colors"
+            aria-label="Reflexion schreiben"
+            className="w-full rounded-2xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-4 text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:border-[var(--lern-info)] focus:outline-2 focus:outline-[var(--lern-accent)] resize-none transition-colors"
           />
-          <p className="text-sm text-[#6e6e73]">
+          <p className="text-sm text-[var(--lern-text-secondary)]">
             {wordCount > 0
               ? `${wordCount} Wörter`
               : "Schreib einfach drauf los — es gibt kein richtig oder falsch."}
@@ -106,7 +107,8 @@ export function StepReflection({
           <button
             onClick={handleSubmit}
             disabled={wordCount < 3}
-            className="w-full rounded-2xl bg-[#AF52DE] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#9B3DC8] disabled:opacity-40 disabled:cursor-not-allowed"
+            aria-label="Gedanken teilen"
+            className="w-full rounded-2xl bg-[var(--lern-info)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:brightness-90 disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
           >
             Gedanken teilen
           </button>
@@ -119,12 +121,12 @@ export function StepReflection({
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            className="rounded-2xl bg-[#f5f5f7] p-4"
+            className="rounded-2xl bg-[var(--lern-bg)] p-4"
           >
-            <p className="text-xs font-medium text-[#6e6e73] mb-2">
+            <p className="text-xs font-medium text-[var(--lern-text-secondary)] mb-2">
               Deine Gedanken:
             </p>
-            <p className="text-sm text-[#1d1d1f]/70 italic">
+            <p className="text-sm text-[var(--lern-text-primary)]/70 italic">
               &ldquo;{text}&rdquo;
             </p>
           </motion.div>
@@ -134,10 +136,10 @@ export function StepReflection({
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="rounded-2xl bg-[#AF52DE]/5 border border-[#AF52DE]/15 p-4 flex items-center gap-3"
+              className="rounded-2xl bg-[var(--lern-info)]/5 border border-[var(--lern-info)]/15 p-4 flex items-center gap-3"
             >
-              <div className="h-5 w-5 animate-spin rounded-full border-2 border-[#AF52DE] border-t-transparent" />
-              <p className="text-sm text-[#AF52DE] font-medium">
+              <div className="h-5 w-5 animate-spin rounded-full border-2 border-[var(--lern-info)] border-t-transparent" />
+              <p className="text-sm text-[var(--lern-info)] font-medium">
                 Lese deine Gedanken...
               </p>
             </motion.div>
@@ -147,12 +149,12 @@ export function StepReflection({
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="rounded-2xl bg-[#AF52DE]/5 border border-[#AF52DE]/15 p-4"
+                className="rounded-2xl bg-[var(--lern-info)]/5 border border-[var(--lern-info)]/15 p-4"
               >
-                <p className="text-sm font-medium text-[#AF52DE] mb-2">
+                <p className="text-sm font-medium text-[var(--lern-info)] mb-2">
                   Feedback
                 </p>
-                <p className="text-sm text-[#1d1d1f]/80 leading-relaxed">
+                <p className="text-sm text-[var(--lern-text-primary)]/80 leading-relaxed">
                   {renderBold(kiFeedback)}
                 </p>
               </motion.div>
@@ -165,7 +167,8 @@ export function StepReflection({
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
               onClick={onNext}
-              className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+              aria-label="Weiter zum nächsten Schritt"
+              className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
             >
               Weiter
             </motion.button>

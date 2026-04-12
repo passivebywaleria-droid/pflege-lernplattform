@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { GlossarEntry } from "../../../content/ce-05/_types";
+import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 import { HandDrawnIcon, ContentIcon } from "@/components/ui/hand-drawn-icon";
 interface RevealCard {
@@ -25,8 +25,8 @@ interface StepRevealProps {
 }
 
 function RevealIcon({ icon }: { icon?: string }) {
-  if (!icon) return <HandDrawnIcon name="check" size={20} color="#30D158" />;
-  return <ContentIcon icon={icon} size={20} color="#0071e3" />;
+  if (!icon) return <HandDrawnIcon name="check" size={20} color="var(--lern-success)" />;
+  return <ContentIcon icon={icon} size={20} color="var(--lern-accent)" />;
 }
 
 export function StepReveal({
@@ -61,7 +61,7 @@ export function StepReveal({
   };
 
   return (
-    <div className="space-y-5 pb-20" style={{ color: "#1d1d1f" }}>
+    <div className="space-y-5 pb-20" style={{ color: "var(--lern-text-primary)" }}>
       <h2 className="text-2xl font-bold">{title}</h2>
 
       {body && (
@@ -70,16 +70,16 @@ export function StepReveal({
         </p>
       )}
 
-      <p className="text-sm" style={{ color: "#6e6e73" }}>{instruction}</p>
+      <p className="text-lg font-medium" style={{ color: "var(--lern-text-primary)" }}>{instruction}</p>
 
       {/* Counter */}
       <div className="flex items-center justify-between">
-        <span className="text-xs font-medium text-[#0071e3]">
+        <span className="text-xs font-medium text-[var(--lern-accent)]">
           {revealed.size} von {cards.length} enthüllt
         </span>
-        <div className="h-1.5 flex-1 mx-3 bg-[#e8e8ed] rounded-full overflow-hidden">
+        <div className="h-1.5 flex-1 mx-3 bg-[var(--lern-divider)] rounded-full overflow-hidden">
           <motion.div
-            className="h-full bg-[#0071e3] rounded-full"
+            className="h-full bg-[var(--lern-accent)] rounded-full"
             animate={{ width: `${(revealed.size / cards.length) * 100}%` }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           />
@@ -106,10 +106,10 @@ export function StepReveal({
               onClick={() => handleReveal(card)}
               className={`rounded-2xl border-2 overflow-hidden transition-all ${
                 isLocked
-                  ? "border-[#e8e8ed] bg-[#f5f5f7] opacity-50 cursor-not-allowed"
+                  ? "border-[var(--lern-divider)] bg-[var(--lern-bg)] opacity-50 cursor-not-allowed"
                   : isRevealed
-                    ? "border-[#0071e3]/30 bg-white cursor-pointer shadow-sm"
-                    : "border-[#d2d2d7] bg-white cursor-pointer hover:border-[#0071e3]/50 hover:shadow-sm"
+                    ? "border-[var(--lern-accent)]/30 bg-[var(--lern-bg-primary)] cursor-pointer shadow-sm"
+                    : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)] cursor-pointer hover:border-[var(--lern-accent)]/50 hover:shadow-sm"
               }`}
             >
               {/* Header */}
@@ -123,7 +123,7 @@ export function StepReveal({
                 </span>
                 <span
                   className={`font-medium text-sm flex-1 ${
-                    isRevealed ? "text-[#1d1d1f]" : "text-[#6e6e73]"
+                    isRevealed ? "text-[var(--lern-text-primary)]" : "text-[var(--lern-text-secondary)]"
                   }`}
                 >
                   {card.label}
@@ -131,7 +131,7 @@ export function StepReveal({
                 {isRevealed && (
                   <motion.span
                     animate={{ rotate: isExpanded ? 180 : 0 }}
-                    className="text-[#6e6e73] text-xs"
+                    className="text-[var(--lern-text-secondary)] text-xs"
                   >
                     &#9660;
                   </motion.span>
@@ -149,8 +149,8 @@ export function StepReveal({
                     className="overflow-hidden"
                   >
                     <div className="px-4 pb-4 pt-0">
-                      <div className="border-t border-[#e8e8ed] pt-3">
-                        <p className="text-sm text-[#1d1d1f]/80 leading-relaxed">
+                      <div className="border-t border-[var(--lern-divider)] pt-3">
+                        <p className="text-sm text-[var(--lern-text-primary)]/80 leading-relaxed">
                           {renderBold(content)}
                         </p>
                       </div>
@@ -168,7 +168,7 @@ export function StepReveal({
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         onClick={() => onNext(true)}
-        className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)]"
       >
         Weiter
       </motion.button>

@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { DiagramNode, DiagramEdge, GlossarEntry } from "../../../content/ce-05/_types";
+import type { DiagramNode, DiagramEdge, GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 
 interface StepDiagramProps {
@@ -82,10 +82,10 @@ function FlowchartDiagram({
                   interactive ? "cursor-pointer active:scale-95" : "cursor-default"
                 } ${
                   node.highlight
-                    ? "bg-[#0071e3]/10 border-[#0071e3] text-[#0071e3]"
+                    ? "bg-[var(--lern-accent)]/10 border-[var(--lern-accent)] text-[var(--lern-accent)]"
                     : expandedNode === node.id
-                    ? "bg-[#FF9500]/10 border-[#FF9500] text-[#1d1d1f]"
-                    : "bg-[#f5f5f7] border-[#d2d2d7] text-[#1d1d1f]"
+                    ? "bg-[#D4956A]/10 border-[#D4956A] text-[var(--lern-text-primary)]"
+                    : "bg-[var(--lern-bg)] border-[var(--lern-border)] text-[var(--lern-text-primary)]"
                 }`}
               >
                 {node.imageUrl && (
@@ -98,7 +98,7 @@ function FlowchartDiagram({
                 )}
                 <span>{node.label}</span>
                 {interactive && (
-                  <span className="block text-[10px] text-[#6e6e73] mt-0.5">
+                  <span className="block text-[10px] text-[var(--lern-text-secondary)] mt-0.5">
                     Tippen für Details
                   </span>
                 )}
@@ -109,8 +109,8 @@ function FlowchartDiagram({
           {li < levels.length - 1 && (
             <div className="flex justify-center py-1">
               <div className="flex flex-col items-center">
-                <div className="h-4 w-0.5 bg-[#d2d2d7]" />
-                <div className="h-0 w-0 border-l-[5px] border-r-[5px] border-t-[6px] border-l-transparent border-r-transparent border-t-[#d2d2d7]" />
+                <div className="h-4 w-0.5 bg-[var(--lern-border)]" />
+                <div className="h-0 w-0 border-l-[5px] border-r-[5px] border-t-[6px] border-l-transparent border-r-transparent border-t-[var(--lern-border)]" />
                 {/* Edge label */}
                 {edges
                   .filter(
@@ -123,7 +123,7 @@ function FlowchartDiagram({
                     e.label ? (
                       <span
                         key={`${e.from}-${e.to}`}
-                        className="text-[10px] text-[#6e6e73] mt-0.5"
+                        className="text-[10px] text-[var(--lern-text-secondary)] mt-0.5"
                       >
                         {e.label}
                       </span>
@@ -160,20 +160,17 @@ function MindmapDiagram({
 
   return (
     <div className="flex flex-col items-center gap-4">
-      {/* Center */}
+      {/* Center — nicht klickbar, nur Label */}
       {center && (
-        <button
-          onClick={() => interactive && onNodeClick(center.id)}
-          className={`rounded-2xl px-6 py-4 text-base font-bold border-2 transition-all ${
-            interactive ? "cursor-pointer active:scale-95" : "cursor-default"
-          } bg-[#0071e3]/10 border-[#0071e3] text-[#0071e3]`}
+        <div
+          className="rounded-2xl px-6 py-4 text-base font-bold border-2 bg-[var(--lern-accent)]/10 border-[var(--lern-accent)] text-[var(--lern-accent)]"
         >
           {center.label}
-        </button>
+        </div>
       )}
 
       {/* Lines + Children */}
-      <div className="w-full border-t-2 border-[#d2d2d7]" />
+      <div className="w-full border-t-2 border-[var(--lern-border)]" />
       <div className="grid grid-cols-2 gap-3 w-full">
         {children.map((child) => {
           const edge = edges.find((e) => e.to === child.id);
@@ -185,10 +182,10 @@ function MindmapDiagram({
                 interactive ? "cursor-pointer active:scale-95" : "cursor-default"
               } ${
                 child.highlight
-                  ? "bg-[#FF9500]/10 border-[#FF9500] text-[#1d1d1f]"
+                  ? "bg-[#D4956A]/10 border-[#D4956A] text-[var(--lern-text-primary)]"
                   : expandedNode === child.id
-                  ? "bg-[#0071e3]/5 border-[#0071e3] text-[#1d1d1f]"
-                  : "bg-[#f5f5f7] border-[#d2d2d7] text-[#1d1d1f]"
+                  ? "bg-[var(--lern-accent)]/5 border-[var(--lern-accent)] text-[var(--lern-text-primary)]"
+                  : "bg-[var(--lern-bg)] border-[var(--lern-border)] text-[var(--lern-text-primary)]"
               }`}
             >
               {child.imageUrl && (
@@ -201,7 +198,7 @@ function MindmapDiagram({
               )}
               <span className="block">{child.label}</span>
               {edge?.label && (
-                <span className="block text-[10px] text-[#6e6e73] mt-0.5">
+                <span className="block text-[10px] text-[var(--lern-text-secondary)] mt-0.5">
                   {edge.label}
                 </span>
               )}
@@ -239,33 +236,33 @@ function CycleDiagram({
                 interactive ? "cursor-pointer active:scale-95" : "cursor-default"
               } ${
                 node.highlight
-                  ? "bg-[#0071e3]/10 border-[#0071e3]"
+                  ? "bg-[var(--lern-accent)]/10 border-[var(--lern-accent)]"
                   : expandedNode === node.id
-                  ? "bg-[#FF9500]/10 border-[#FF9500]"
-                  : "bg-[#f5f5f7] border-[#d2d2d7]"
+                  ? "bg-[#D4956A]/10 border-[#D4956A]"
+                  : "bg-[var(--lern-bg)] border-[var(--lern-border)]"
               }`}
             >
               <span
                 className={`h-7 w-7 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${
                   node.highlight
-                    ? "bg-[#0071e3] text-white"
-                    : "bg-[#d2d2d7] text-[#6e6e73]"
+                    ? "bg-[var(--lern-accent)] text-white"
+                    : "bg-[var(--lern-border)] text-[var(--lern-text-secondary)]"
                 }`}
               >
                 {i + 1}
               </span>
-              <span className="text-[#1d1d1f]">{node.label}</span>
+              <span className="text-[var(--lern-text-primary)]">{node.label}</span>
             </button>
 
             {/* Arrow to next */}
             {i < nodes.length - 1 && (
               <div className="flex items-center justify-center py-1">
                 <div className="flex flex-col items-center">
-                  <div className="h-3 w-0.5 bg-[#d2d2d7]" />
-                  <div className="h-0 w-0 border-l-[4px] border-r-[4px] border-t-[5px] border-l-transparent border-r-transparent border-t-[#d2d2d7]" />
+                  <div className="h-3 w-0.5 bg-[var(--lern-border)]" />
+                  <div className="h-0 w-0 border-l-[4px] border-r-[4px] border-t-[5px] border-l-transparent border-r-transparent border-t-[var(--lern-border)]" />
                 </div>
                 {edge?.label && (
-                  <span className="text-[10px] text-[#6e6e73] ml-2">
+                  <span className="text-[10px] text-[var(--lern-text-secondary)] ml-2">
                     {edge.label}
                   </span>
                 )}
@@ -275,7 +272,7 @@ function CycleDiagram({
             {/* Loop-back arrow for last node */}
             {i === nodes.length - 1 && edges.some((e) => e.from === node.id && e.to === nodes[0]?.id) && (
               <div className="flex items-center justify-center py-1">
-                <span className="text-[10px] text-[#6e6e73]">↻ Zyklus wiederholt sich</span>
+                <span className="text-[10px] text-[var(--lern-text-secondary)]">↻ Zyklus wiederholt sich</span>
               </div>
             )}
           </div>
@@ -299,12 +296,34 @@ export function StepDiagram({
   const [expandedNode, setExpandedNode] = useState<string | null>(null);
   const [viewed, setViewed] = useState<Set<string>>(new Set());
 
+  // Explorable = nur Kindknoten (nicht Root, nicht Enkel) bei Mindmap
+  const explorableNodes = useMemo(() => {
+    if (diagramType === "mindmap") {
+      const targets = new Set(edges.map((e) => e.to));
+      const center = nodes.find((n) => !targets.has(n.id)) || nodes[0];
+      if (!center) return nodes;
+      const childIds = new Set(
+        edges.filter((e) => e.from === center.id).map((e) => e.to)
+      );
+      return nodes.filter((n) => childIds.has(n.id));
+    }
+    return nodes;
+  }, [diagramType, nodes, edges]);
+
+  const explorableIds = useMemo(
+    () => new Set(explorableNodes.map((n) => n.id)),
+    [explorableNodes]
+  );
+
   const handleNodeClick = (id: string) => {
     setExpandedNode(expandedNode === id ? null : id);
-    setViewed((prev) => new Set([...prev, id]));
+    if (explorableIds.has(id)) {
+      setViewed((prev) => new Set([...prev, id]));
+    }
   };
 
-  const allViewed = !interactive || viewed.size >= nodes.length;
+  const viewedExplorableCount = [...viewed].filter((id) => explorableIds.has(id)).length;
+  const allViewed = !interactive || viewedExplorableCount >= explorableNodes.length;
   const expandedData = nodes.find((n) => n.id === expandedNode);
 
   const DiagramComponent = useMemo(() => {
@@ -321,29 +340,29 @@ export function StepDiagram({
   }, [diagramType]);
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "#1d1d1f" }}>
-      <h2 className="text-2xl font-bold text-[#1d1d1f]">{title}</h2>
+    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+      <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">{title}</h2>
 
       {body && (
-        <p className="text-[#1d1d1f]/70 leading-relaxed whitespace-pre-line">
+        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
           <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
 
-      <p className="text-lg font-medium text-[#1d1d1f]">{instruction}</p>
+      <p className="text-lg font-medium text-[var(--lern-text-primary)]">{instruction}</p>
 
       {/* Fortschritt bei interaktiv */}
       {interactive && (
         <div className="flex items-center gap-2">
-          <span className="text-sm text-[#6e6e73]">
-            {viewed.size} von {nodes.length} erkundet
+          <span className="text-sm text-[var(--lern-text-secondary)]">
+            {viewedExplorableCount} von {explorableNodes.length} erkundet
           </span>
           <div className="flex gap-1">
-            {nodes.map((n) => (
+            {explorableNodes.map((n) => (
               <div
                 key={n.id}
-                className={`h-2.5 w-2.5 rounded-full transition-colors ${
-                  viewed.has(n.id) ? "bg-[#0071e3]" : "bg-[#d2d2d7]"
+                className={`h-2 w-2 rounded-full transition-colors ${
+                  viewed.has(n.id) ? "bg-[var(--lern-accent)]" : "bg-[var(--lern-border)]"
                 }`}
               />
             ))}
@@ -352,7 +371,7 @@ export function StepDiagram({
       )}
 
       {/* Diagramm */}
-      <div className="rounded-2xl bg-white border border-[#d2d2d7] p-4">
+      <div className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-4">
         <DiagramComponent
           nodes={nodes}
           edges={edges}
@@ -369,13 +388,13 @@ export function StepDiagram({
             initial={{ opacity: 0, y: 8, height: 0 }}
             animate={{ opacity: 1, y: 0, height: "auto" }}
             exit={{ opacity: 0, y: -8, height: 0 }}
-            className="rounded-2xl bg-[#0071e3]/5 border border-[#0071e3]/30 p-4 overflow-hidden"
+            className="rounded-2xl bg-[var(--lern-accent)]/5 border border-[var(--lern-accent)]/30 p-4 overflow-hidden"
           >
-            <h3 className="font-semibold text-[#0071e3] mb-1">
+            <h3 className="font-semibold text-[var(--lern-accent)] mb-1">
               {expandedData.label}
             </h3>
             {expandedData.labelB1 && (
-              <p className="text-sm text-[#6e6e73]">
+              <p className="text-sm text-[var(--lern-text-secondary)]">
                 Einfach: {expandedData.labelB1}
               </p>
             )}
@@ -389,7 +408,7 @@ export function StepDiagram({
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           onClick={() => onNext(true)}
-          className="w-full rounded-2xl bg-[#0071e3] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#0077ED]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
         >
           Weiter
         </motion.button>

@@ -14,6 +14,31 @@
 | Q4 | I Care Pflege, Kap. 56.12 — Pflege bei Demenz (Ernährung, Prophylaxen, Angehörige) | S.1426–1428 |
 | Q5 | RKI 2005, S3-Leitlinie Demenzen (AWMF/DGN/DGPPN 2016), Kitwood 1997, Feil/Richard IVA | — |
 | Q6 | PflBG §5, Werdenfelser Weg, HeimG, BGB §1631b/§1906 | — |
+| Q-AP | I Care Anatomie Physiologie (Thieme, 2020) | Kap. Gehirn, Rückenmark, Hirnhäute, Liquor, Blut-Hirn-Schranke |
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: LE-48, LE-49
+
+**A&P-01** Gehirn — Überblick: Ca. 1,3-1,5 kg (2% des Körpergewichts, aber 20% des O₂-Verbrauchs!). Teile: Großhirn (Cerebrum), Zwischenhirn (Diencephalon mit Thalamus + Hypothalamus), Hirnstamm (Mittelhirn, Brücke/Pons, Medulla oblongata), Kleinhirn (Cerebellum). Geschützt durch Schädelknochen + Hirnhäute + Liquor. [Q-AP]
+
+**A&P-02** Großhirn (Cerebrum): 2 Hemisphären, verbunden durch Corpus callosum (Balken). Großhirnrinde (Cortex): stark gefaltet (Gyri = Windungen, Sulci = Furchen), 2-4 mm dick, ca. 100 Mrd. Neuronen. 4 Lappen pro Hemisphäre: Frontallappen (Motorik, Planung, Persönlichkeit), Parietallappen (Sensibilität, Raumwahrnehmung), Temporallappen (Hören, Sprache, Gedächtnis), Okzipitallappen (Sehen). [Q-AP]
+
+**A&P-03** Hirnhäute (Meningen): 3 Schichten: Dura mater (harte Hirnhaut, äußen, derb), Arachnoidea (Spinnwebhaut, Mitte), Pia mater (weiche Hirnhaut, innen, liegt dem Gehirn direkt auf). Subarachnoidalraum: zwischen Arachnoidea und Pia mater, enthält Liquor (ca. 150 ml). Epiduralraum: zwischen Schädelknochen und Dura (Blutung hier = Epiduralhämatom). [Q-AP]
+
+**A&P-04** Liquor cerebrospinalis: Klare, wasserklare Flüssigkeit. Bildung: Plexus choroideus in den Ventrikeln (ca. 500 ml/Tag, zirkulierend ca. 150 ml). Funktion: Stoßdämpfer, Nährstoffversorgung, Abfalltransport. Zirkulation: Seitenventrikel → 3. Ventrikel → Aquädukt → 4. Ventrikel → Subarachnoidalraum → Resorption über Arachnoidalzotten ins venöse Blut. [Q-AP]
+
+**A&P-05** Hirnstamm: Mittelhirn (Mesencephalon): Reflexzentren (Pupillenreflex), Substantia nigra (Dopamin → Parkinson bei Degeneration). Brücke (Pons): Verbindung Großhirn-Kleinhirn, Atemregulation. Medulla oblongata (verlängertes Mark): lebenswichtige Zentren — Atemzentrum, Kreislaufzentrum, Brechzentrum, Schluckzentrum. Formatio reticularis: Wachheits-/Bewusstseinssteuerung (ARAS). [Q-AP]
+
+**A&P-06** Kleinhirn (Cerebellum): Hinter dem Hirnstamm, unter dem Okzipitallappen. Funktion: Koordination von Bewegungen (Feinmotorik), Gleichgewicht, Muskeltonus, motorisches Lernen. Erhält Informationen aus Vestibularorgan, Propriozeptoren, Großhirnrinde. Schädigung → Ataxie (unsicherer Gang, Intentionstremor, Dysarthrie). [Q-AP]
+
+**A&P-07** Rückenmark (Medulla spinalis): Ca. 45 cm lang, im Wirbelkanal von C1 bis L1/L2. Querschnitt: graue Substanz innen (H-Form, Nervenzellkörper), weiße Substanz außen (Nervenfasern/Bahnen). Vorderhorn: motorische Neuronen. Hinterhorn: sensorische Verarbeitung. Seitenhorn (nur thorakal): vegetatives Nervensystem. 31 Spinalnervenpaare (8 zervikal, 12 thorakal, 5 lumbal, 5 sakral, 1 kokzygeal). [Q-AP]
+
+**A&P-08** Blut-Hirn-Schranke: Endothelzellen der Hirnkapillaren sind durch tight junctions eng verbunden → selektive Barriere. Durchlässig für: O₂, CO₂, Glukose, Wasser, fettlösliche Stoffe. Undurchlässig für: viele Medikamente, Proteine, Bakterien. Klinische Bedeutung: viele Antibiotika erreichen das Gehirn nicht → bei Meningitis müssen spezielle ZNS-gängige Antibiotika gewählt werden. [Q-AP]
 
 ---
 

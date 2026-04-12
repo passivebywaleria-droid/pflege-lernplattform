@@ -619,6 +619,26 @@ Review nach 90 Tagen:
 
 ---
 
+## 12b. 3-Säulen-Tag-System (Anatomie · Pflege · Krankheitslehre)
+
+Jeder Step wird einer der 3 Säulen der Pflegeausbildung zugeordnet (wie I Care Thieme):
+
+| Tag | Beschreibung | Typische Phasen |
+|-----|-------------|-----------------|
+| `anatomie` | Aufbau & Funktion von Organsystemen | ERKLÄRUNG, ANDERS_ERKLÄRT (bei A&P-Content) |
+| `pflege` | Pflegerisches Handeln, Prophylaxen, Dokumentation | PRAXIS_DIALOG, ANWENDUNG, PFLEGEPLANUNG |
+| `krankheitslehre` | Pathophysiologie, Symptome, Diagnostik, Therapie | CHECKPOINT, ANWENDUNG (bei Krankheitsbildern) |
+
+**Integration in den Phasen-Bogen:**
+- **Erstnennung-LE** (Organsystem wird erstmals eingeführt): S1-S2 haben ≥40% `anatomie`-Steps
+- **Auffrischungs-LE** (Organsystem kommt wieder vor): S1 Steps 1-3 sind A&P-Auffrischung
+- **Jede Session** enthält alle 3 Tags (kein Tag >60%, kein Tag <15%)
+- Der Phasen-Bogen bestimmt die didaktische Struktur, der Tag die fachliche Zuordnung
+
+**Themen-Übersichtsseite:** Schüler können gezielt "nur Anatomie" oder "nur Krankheitslehre" üben — quer über alle LEs.
+
+---
+
 ## 13. Umsetzung: Was muss wo geändert werden?
 
 | # | Datei | Änderung | Prio |
@@ -638,6 +658,9 @@ Review nach 90 Tagen:
 | 13 | LLM-Integration | Feedback-Modul: Adaptiver Ton + Scaffolding-Abbau | 4 |
 | 14 | Wochenplan-Generator | Review-Slots automatisch in Tages-/Wochenplan einbauen | 4 |
 | 15 | Lehrer-Dashboard | Review-Fortschritt, Schwächen-Übersicht, Lernzeit-Export | 5 |
+| 16 | `content/_types.ts` | `ContentTag` Type + `tag` Pflichtfeld + `Organsystem` auf LE-Ebene | 1 |
+| 17 | Pipeline-Agenten | TAG1-TAG3 Kriterien in Prüfer, V10 Tag-Verteilung in Regisseur, 4c Zuordnung in Generator | 1 |
+| 18 | `/lernen/themen/[tag]/page.tsx` | Themen-Übersichtsseite: Alle Sessions nach Tag filtern | 3 |
 
 ### Priorisierung
 

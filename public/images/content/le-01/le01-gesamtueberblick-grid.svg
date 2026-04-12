@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 400" role="img" aria-label="LE-01 Gesamtüberblick: 8 Sessions als Raster">
+  <style>
+    text { font-family: 'Poppins', sans-serif; }
+  </style>
+
+  <!-- Title -->
+  <text x="180" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)">LE-01: Gesamtüberblick</text>
+  <text x="180" y="46" text-anchor="middle" font-size="11" fill="#A58B71">8 Sessions — 176 Steps — Dein Weg durch CE 01</text>
+
+  <!-- Grid: 2 columns x 4 rows -->
+  <!-- Row 1 -->
+  <!-- S1 -->
+  <rect x="14" y="60" width="162" height="70" rx="10" fill="#7A816C" opacity="0.1"/>
+  <rect x="14" y="60" width="162" height="70" rx="10" fill="none" stroke="#7A816C" stroke-width="1.5"/>
+  <rect x="14" y="60" width="32" height="70" rx="10" fill="#7A816C" opacity="0.2"/>
+  <rect x="36" y="60" width="10" height="70" fill="#7A816C" opacity="0.2"/>
+  <text x="30" y="100" text-anchor="middle" font-size="14" font-weight="800" fill="#7A816C">S1</text>
+  <text x="118" y="86" text-anchor="middle" font-size="12" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Was ist Pflege?</text>
+  <text x="118" y="102" text-anchor="middle" font-size="10" fill="#7A816C">Definitionen &amp;</text>
+  <text x="118" y="115" text-anchor="middle" font-size="10" fill="#7A816C">Profession</text>
+
+  <!-- S2 -->
+  <rect x="184" y="60" width="162" height="70" rx="10" fill="#AE6965" opacity="0.1"/>
+  <rect x="184" y="60" width="162" height="70" rx="10" fill="none" stroke="#AE6965" stroke-width="1.5"/>
+  <rect x="184" y="60" width="32" height="70" rx="10" fill="#AE6965" opacity="0.2"/>
+  <rect x="206" y="60" width="10" height="70" fill="#AE6965" opacity="0.2"/>
+  <text x="200" y="100" text-anchor="middle" font-size="14" font-weight="800" fill="#AE6965">S2</text>
+  <text x="288" y="86" text-anchor="middle" font-size="12" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Pflegeprozess</text>
+  <text x="288" y="102" text-anchor="middle" font-size="10" fill="#AE6965">Beobachtung &amp;</text>
+  <text x="288" y="115" text-anchor="middle" font-size="10" fill="#AE6965">Dokumentation</text>
+
+  <!-- Row 2 -->
+  <!-- S3 -->
+  <rect x="14" y="138" width="162" height="70" rx="10" fill="#A58B71" opacity="0.1"/>
+  <rect x="14" y="138" width="162" height="70" rx="10" fill="none" stroke="#A58B71" stroke-width="1.5"/>
+  <rect x="14" y="138" width="32" height="70" rx="10" fill="#A58B71" opacity="0.2"/>
+  <rect x="36" y="138" width="10" height="70" fill="#A58B71" opacity="0.2"/>
+  <text x="30" y="178" text-anchor="middle" font-size="14" font-weight="800" fill="#A58B71">S3</text>
+  <text x="118" y="164" text-anchor="middle" font-size="12" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Kommunikation</text>
+  <text x="118" y="180" text-anchor="middle" font-size="10" fill="#A58B71">Nähe, Distanz &amp;</text>
+  <text x="118" y="193" text-anchor="middle" font-size="10" fill="#A58B71">Pflegebeziehung</text>
+
+  <!-- S4 -->
+  <rect x="184" y="138" width="162" height="70" rx="10" fill="#D1A9A5" opacity="0.15"/>
+  <rect x="184" y="138" width="162" height="70" rx="10" fill="none" stroke="#D1A9A5" stroke-width="1.5"/>
+  <rect x="184" y="138" width="32" height="70" rx="10" fill="#D1A9A5" opacity="0.25"/>
+  <rect x="206" y="138" width="10" height="70" fill="#D1A9A5" opacity="0.25"/>
+  <text x="200" y="178" text-anchor="middle" font-size="14" font-weight="800" fill="#AE6965">S4</text>
+  <text x="288" y="164" text-anchor="middle" font-size="12" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Ethik &amp; Recht</text>
+  <text x="288" y="180" text-anchor="middle" font-size="10" fill="#AE6965">Menschenbild &amp;</text>
+  <text x="288" y="193" text-anchor="middle" font-size="10" fill="#AE6965">Würde</text>
+
+  <!-- Row 3 -->
+  <!-- S5 -->
+  <rect x="14" y="216" width="162" height="70" rx="10" fill="#7A816C" opacity="0.15"/>
+  <rect x="14" y="216" width="162" height="70" rx="10" fill="none" stroke="#7A816C" stroke-width="2"/>
+  <rect x="14" y="216" width="32" height="70" rx="10" fill="#7A816C" opacity="0.3"/>
+  <rect x="36" y="216" width="10" height="70" fill="#7A816C" opacity="0.3"/>
+  <text x="30" y="256" text-anchor="middle" font-size="14" font-weight="800" fill="#7A816C">S5</text>
+  <text x="118" y="242" text-anchor="middle" font-size="12" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Pflegetheorien</text>
+  <text x="118" y="258" text-anchor="middle" font-size="10" fill="#7A816C">Henderson, Orem,</text>
+  <text x="118" y="271" text-anchor="middle" font-size="10" fill="#7A816C">Peplau</text>
+
+  <!-- S6 -->
+  <rect x="184" y="216" width="162" height="70" rx="10" fill="#AE6965" opacity="0.15"/>
+  <rect x="184" y="216" width="162" height="70" rx="10" fill="none" stroke="#AE6965" stroke-width="2"/>
+  <rect x="184" y="216" width="32" height="70" rx="10" fill="#AE6965" opacity="0.3"/>
+  <rect x="206" y="216" width="10" height="70" fill="#AE6965" opacity="0.3"/>
+  <text x="200" y="256" text-anchor="middle" font-size="14" font-weight="800" fill="#AE6965">S6</text>
+  <text x="288" y="242" text-anchor="middle" font-size="12" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Forschung &amp; EBN</text>
+  <text x="288" y="258" text-anchor="middle" font-size="10" fill="#AE6965">Evidenzbasierte</text>
+  <text x="288" y="271" text-anchor="middle" font-size="10" fill="#AE6965">Pflegepraxis</text>
+
+  <!-- Row 4 -->
+  <!-- S7 -->
+  <rect x="14" y="294" width="162" height="70" rx="10" fill="#A58B71" opacity="0.15"/>
+  <rect x="14" y="294" width="162" height="70" rx="10" fill="none" stroke="#A58B71" stroke-width="2"/>
+  <rect x="14" y="294" width="32" height="70" rx="10" fill="#A58B71" opacity="0.3"/>
+  <rect x="36" y="294" width="10" height="70" fill="#A58B71" opacity="0.3"/>
+  <text x="30" y="334" text-anchor="middle" font-size="14" font-weight="800" fill="#A58B71">S7</text>
+  <text x="118" y="320" text-anchor="middle" font-size="12" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Transfer</text>
+  <text x="118" y="336" text-anchor="middle" font-size="10" fill="#A58B71">Fälle lösen &amp;</text>
+  <text x="118" y="349" text-anchor="middle" font-size="10" fill="#A58B71">Wissen vernetzen</text>
+
+  <!-- S8 -->
+  <rect x="184" y="294" width="162" height="70" rx="10" fill="var(--lern-text-primary, #1d1d1f)" opacity="0.08"/>
+  <rect x="184" y="294" width="162" height="70" rx="10" fill="none" stroke="#33302b" stroke-width="2" opacity="0.3"/>
+  <rect x="184" y="294" width="32" height="70" rx="10" fill="var(--lern-text-primary, #1d1d1f)" opacity="0.12"/>
+  <rect x="206" y="294" width="10" height="70" fill="var(--lern-text-primary, #1d1d1f)" opacity="0.12"/>
+  <text x="200" y="334" text-anchor="middle" font-size="14" font-weight="800" fill="var(--lern-text-primary, #1d1d1f)" opacity="0.6">S8</text>
+  <text x="288" y="320" text-anchor="middle" font-size="12" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Prüfung</text>
+  <text x="288" y="336" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)" opacity="0.6">Reflexion &amp;</text>
+  <text x="288" y="349" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)" opacity="0.6">Selbstbewertung</text>
+
+  <!-- Legend bar -->
+  <rect x="14" y="376" width="100" height="14" rx="4" fill="#7A816C" opacity="0.15"/>
+  <text x="64" y="387" text-anchor="middle" font-size="9" fill="#7A816C">Grundlagen B1-B3</text>
+  <rect x="120" y="376" width="100" height="14" rx="4" fill="#AE6965" opacity="0.15"/>
+  <text x="170" y="387" text-anchor="middle" font-size="9" fill="#AE6965">Vertiefung B2-B4</text>
+  <rect x="226" y="376" width="120" height="14" rx="4" fill="#A58B71" opacity="0.15"/>
+  <text x="286" y="387" text-anchor="middle" font-size="9" fill="#A58B71">Transfer &amp; Prüfung B4-B6</text>
+</svg>

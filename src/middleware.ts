@@ -79,14 +79,14 @@ export async function middleware(request: NextRequest) {
       payload.role !== "principal" &&
       payload.role !== "admin"
     ) {
-      return NextResponse.redirect(new URL("/home", request.url))
+      return NextResponse.redirect(new URL("/dashboard", request.url))
     }
 
     if (
       pathWithoutLocale.startsWith("/admin") &&
       payload.role !== "admin"
     ) {
-      return NextResponse.redirect(new URL("/home", request.url))
+      return NextResponse.redirect(new URL("/dashboard", request.url))
     }
 
     // Authenticated — apply intl middleware for locale handling
@@ -100,5 +100,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!_next/static|_next/image|favicon.ico|images/).*)"],
 }

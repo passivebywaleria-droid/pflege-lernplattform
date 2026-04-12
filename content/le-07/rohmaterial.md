@@ -15,6 +15,25 @@
 | Q4 | Thiemes Pflege (2019) | Kap. Körperpflege |
 | Q5 | I Care Pflege — Kap. 14: Wahrnehmen und Beobachten | PDF S. 318-344 |
 | Q6 | Expertenstandards in der Pflege (DNQP) — Dekubitusprophylaxe + Mundgesundheit | Kap. 2 |
+| Q-AP | I Care Anatomie Physiologie (Thieme, 2020) | Relevante Kapitel |
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: LE-42
+
+**A&P-01** Haut (Cutis): Größtes Organ (1,5-2 m², 3-4 kg). 3 Schichten: Epidermis (Oberhaut), Dermis/Corium (Lederhaut), Subcutis (Unterhaut). Funktionen: Schutzbarriere, Temperaturregulation, Sinnesorgan (Tastsinn), Vitamin-D-Synthese, Immunabwehr. [Q-AP]
+
+**A&P-02** Epidermis: Mehrschichtiges verhornendes Plattenepithel, keine Blutgefäße (Ernährung durch Diffusion aus Dermis). 5 Schichten von außen: Stratum corneum (Hornschicht) → S. lucidum → S. granulosum → S. spinosum → S. basale (Keimschicht mit Stammzellen). Erneuerungszyklus: ca. 28 Tage. Melanozyten im S. basale produzieren Melanin (UV-Schutz). [Q-AP]
+
+**A&P-03** Dermis: Bindegewebe mit Kollagen + Elastin = Festigkeit + Elastizität. Enthält: Blutgefäße, Lymphgefäße, Nervenenden (Meissner-Tastkörperchen, Pacini-Körperchen für Druck), Haarfollikel, Talg- und Schweißdrüsen. Papillarkörper = Verzahnung mit Epidermis (Fingerabdruck). [Q-AP]
+
+**A&P-04** Subcutis: Fettgewebe = Wärmeisolierung, Energiespeicher, Polster. Dicke individuell verschieden (Bauchhaut bis 3 cm, Augenlid < 1 mm). Enthält größere Blutgefäße und Nerven. [Q-AP]
+
+**A&P-05** Hautanhangsgebilde: Haare (Schutz, Wärme), Nägel (Schutz der Fingerkuppen, Greifen), Schweißdrüsen (ekkrin = Thermoregulation, ca. 3 Mio.; apokrin = Achsel/Genital = Duftdrüsen), Talgdrüsen (Sebum = Hautfettung, münden in Haarfollikel). [Q-AP]
 
 ---
 

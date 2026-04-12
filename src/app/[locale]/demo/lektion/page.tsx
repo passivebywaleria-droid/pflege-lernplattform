@@ -213,7 +213,7 @@ function Confetti() {
         x: Math.random() * 100,
         delay: Math.random() * 0.5,
         duration: 1.5 + Math.random() * 1.5,
-        color: ["#0071e3", "#30D158", "#FFD60A", "#FF9500", "#BF5AF2", "#FF3B30"][
+        color: ["var(--lern-accent)", "#30D158", "#FFD60A", "#FF9500", "#BF5AF2", "#FF3B30"][
           Math.floor(Math.random() * 6)
         ],
         rotation: Math.random() * 360,
@@ -245,7 +245,7 @@ function XPToast({ xp }: { xp: number }) {
       initial={{ opacity: 0, y: 20, scale: 0.8 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       exit={{ opacity: 0, y: -20 }}
-      className="fixed bottom-6 right-6 z-[90] bg-[#FFD60A] text-[#1d1d1f] px-4 py-2 rounded-full font-bold text-sm shadow-lg"
+      className="fixed bottom-6 right-6 z-[90] bg-[#FFD60A] text-[var(--lern-text-primary)] px-4 py-2 rounded-full font-bold text-sm shadow-lg"
     >
       +{xp} XP
     </motion.div>
@@ -340,13 +340,13 @@ export default function LektionDemo() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-[#f5f5f7] overflow-x-hidden">
+    <div className="min-h-screen bg-[var(--lern-bg)] overflow-x-hidden">
       {showConfetti && <Confetti />}
       <AnimatePresence>{showXPToast && <XPToast xp={lastXP} />}</AnimatePresence>
 
       {/* Top bar — auto-hides on scroll down (TypingClub pattern) */}
       <motion.div
-        className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-[#d2d2d7]/50"
+        className="sticky top-0 z-50 bg-[var(--lern-bg-primary)]/80 backdrop-blur-xl border-b border-[var(--lern-border)]/50"
         animate={{ y: hideBar ? -80 : 0, opacity: hideBar ? 0 : 1 }}
         transition={{ duration: 0.3 }}
       >
@@ -355,26 +355,26 @@ export default function LektionDemo() {
             {step > 0 ? (
               <button
                 onClick={prev}
-                className="text-[#0071e3] text-sm font-medium hover:underline flex-shrink-0"
+                className="text-[var(--lern-accent)] text-sm font-medium hover:underline flex-shrink-0"
               >
                 ← Zurück
               </button>
             ) : (
               <Link
                 href={`/${locale}/demo`}
-                className="text-[#0071e3] text-sm font-medium hover:underline flex-shrink-0"
+                className="text-[var(--lern-accent)] text-sm font-medium hover:underline flex-shrink-0"
               >
                 ← Menü
               </Link>
             )}
-            <div className="flex-1 h-2 bg-[#e8e8ed] rounded-full overflow-hidden">
+            <div className="flex-1 h-2 bg-[var(--lern-divider)] rounded-full overflow-hidden">
               <motion.div
-                className="h-full bg-[#0071e3] rounded-full"
+                className="h-full bg-[var(--lern-accent)] rounded-full"
                 animate={{ width: `${progress}%` }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
               />
             </div>
-            <span className="text-xs text-[#86868b] font-medium flex-shrink-0">
+            <span className="text-xs text-[var(--lern-text-tertiary)] font-medium flex-shrink-0">
               {step + 1}/{STEPS.length}
             </span>
           </div>
@@ -473,19 +473,19 @@ export default function LektionDemo() {
 function IntroStep({ data, onNext }: { data: Extract<StepType, { kind: "intro" }>; onNext: () => void }) {
   return (
     <div className="text-center py-12 sm:py-20">
-      <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#0071e3]/10 text-[#0071e3] rounded-full text-sm font-medium mb-6">
-        <span className="w-2 h-2 bg-[#0071e3] rounded-full animate-pulse" />
+      <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[var(--lern-accent)]/10 text-[var(--lern-accent)] rounded-full text-sm font-medium mb-6">
+        <span className="w-2 h-2 bg-[var(--lern-accent)] rounded-full animate-pulse" />
         CE 01 · Lerneinheit 1
       </div>
-      <h1 className="text-3xl sm:text-5xl font-bold text-[#1d1d1f] tracking-tight mb-4">
+      <h1 className="text-3xl sm:text-5xl font-bold text-[var(--lern-text-primary)] tracking-tight mb-4">
         {data.title}
       </h1>
-      <p className="text-lg sm:text-xl text-[#6e6e73] mb-2">{data.subtitle}</p>
-      <p className="text-sm text-[#86868b] mb-10">ca. 20 Minuten · {STEPS.length} Schritte</p>
+      <p className="text-lg sm:text-xl text-[var(--lern-text-secondary)] mb-2">{data.subtitle}</p>
+      <p className="text-sm text-[var(--lern-text-tertiary)] mb-10">ca. 20 Minuten · {STEPS.length} Schritte</p>
       <button
         onClick={onNext}
         data-main-btn
-        className="px-8 py-3.5 bg-[#0071e3] text-white rounded-full text-base font-semibold hover:bg-[#0077ED] active:scale-[0.97] transition-all"
+        className="px-8 py-3.5 bg-[var(--lern-accent)] text-white rounded-full text-base font-semibold hover:bg-[#0077ED] active:scale-[0.97] transition-all"
       >
         Lektion starten
       </button>
@@ -512,19 +512,19 @@ function SelfRatingStep({
   return (
     <div>
       <StepBadge label="Einschätzung" color="purple" icon="🎯" />
-      <h2 className="text-xl sm:text-2xl font-bold text-[#1d1d1f] mb-2">{data.prompt}</h2>
+      <h2 className="text-xl sm:text-2xl font-bold text-[var(--lern-text-primary)] mb-2">{data.prompt}</h2>
       {data.phase === "after" && beforeValue !== null && (
-        <p className="text-sm text-[#86868b] mb-4">Vorher hast du dich bei <strong>&ldquo;{labels[beforeValue]}&rdquo;</strong> eingestuft.</p>
+        <p className="text-sm text-[var(--lern-text-tertiary)] mb-4">Vorher hast du dich bei <strong>&ldquo;{labels[beforeValue]}&rdquo;</strong> eingestuft.</p>
       )}
       <div className="flex gap-2 sm:gap-3 mt-6 mb-8 justify-center">
         {labels.map((label, i) => (
           <button
             key={i}
             onClick={() => onChange(i)}
-            className={`flex flex-col items-center gap-1.5 p-3 sm:p-4 rounded-2xl border-2 transition-all ${value === i ? "border-[#0071e3] bg-[#0071e3]/5 scale-105" : "border-[#d2d2d7] bg-white hover:border-[#0071e3]/40"}`}
+            className={`flex flex-col items-center gap-1.5 p-3 sm:p-4 rounded-2xl border-2 transition-all ${value === i ? "border-[var(--lern-accent)] bg-[var(--lern-accent)]/5 scale-105" : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)] hover:border-[var(--lern-accent)]/40"}`}
           >
             <span className="text-2xl">{emojis[i]}</span>
-            <span className="text-[10px] sm:text-xs text-[#1d1d1f] font-medium">{label}</span>
+            <span className="text-[10px] sm:text-xs text-[var(--lern-text-primary)] font-medium">{label}</span>
           </button>
         ))}
       </div>
@@ -566,34 +566,34 @@ function ReflectionStep({
   return (
     <div>
       <StepBadge label="Einstieg" color="purple" icon="💭" />
-      <h2 className="text-xl sm:text-2xl font-bold text-[#1d1d1f] mb-2">Deine ersten Gedanken</h2>
-      <p className="text-[#6e6e73] mb-6">{data.prompt}</p>
+      <h2 className="text-xl sm:text-2xl font-bold text-[var(--lern-text-primary)] mb-2">Deine ersten Gedanken</h2>
+      <p className="text-[var(--lern-text-secondary)] mb-6">{data.prompt}</p>
       <textarea
         value={value || ""}
         onChange={(e) => { if (!submitted) onChange(e.target.value) }}
         placeholder={data.placeholder}
         rows={4}
-        className={`w-full p-4 bg-white border rounded-2xl text-[#1d1d1f] placeholder:text-[#86868b] focus:outline-none focus:ring-2 focus:ring-[#0071e3]/30 focus:border-[#0071e3] resize-none text-base ${submitted ? "border-[#30D158] bg-[#30D158]/5" : "border-[#d2d2d7]"}`}
+        className={`w-full p-4 bg-[var(--lern-bg-primary)] border rounded-2xl text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:outline-none focus:ring-2 focus:ring-[var(--lern-accent)]/30 focus:border-[var(--lern-accent)] resize-none text-base ${submitted ? "border-[#30D158] bg-[#30D158]/5" : "border-[var(--lern-border)]"}`}
       />
       {!submitted && (
-        <p className="text-xs text-[#86868b] mt-2 mb-6">Es gibt hier kein Richtig oder Falsch — schreibe einfach drauflos!</p>
+        <p className="text-xs text-[var(--lern-text-tertiary)] mt-2 mb-6">Es gibt hier kein Richtig oder Falsch — schreibe einfach drauflos!</p>
       )}
 
       {submitted && feedback && (
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-3 mb-4 p-4 bg-[#0071e3]/5 border border-[#0071e3]/20 rounded-2xl"
+          className="mt-3 mb-4 p-4 bg-[var(--lern-accent)]/5 border border-[var(--lern-accent)]/20 rounded-2xl"
         >
           <div className="flex gap-3 items-start">
             <span className="text-xl flex-shrink-0">💬</span>
             <div>
-              <p className="text-sm font-semibold text-[#1d1d1f] mb-1">Rückmeldung</p>
-              <p className="text-sm text-[#1d1d1f]">{feedback}</p>
+              <p className="text-sm font-semibold text-[var(--lern-text-primary)] mb-1">Rückmeldung</p>
+              <p className="text-sm text-[var(--lern-text-primary)]">{feedback}</p>
               {matchedKeywords.length >= 2 && (
                 <div className="flex flex-wrap gap-1.5 mt-2">
                   {matchedKeywords.slice(0, 4).map((kw) => (
-                    <span key={kw} className="px-2 py-0.5 bg-[#30D158]/15 text-[#1d1d1f] text-xs rounded-full font-medium">
+                    <span key={kw} className="px-2 py-0.5 bg-[#30D158]/15 text-[var(--lern-text-primary)] text-xs rounded-full font-medium">
                       {kw}
                     </span>
                   ))}
@@ -620,21 +620,21 @@ function ContentStep({ data, onNext }: { data: Extract<StepType, { kind: "conten
   return (
     <div>
       <StepBadge label="Wissen" color="blue" icon="📖" />
-      <h2 className="text-xl sm:text-2xl font-bold text-[#1d1d1f] mb-4">{data.title}</h2>
-      <div className="bg-white rounded-2xl border border-[#d2d2d7] p-5 sm:p-6 mb-4">
+      <h2 className="text-xl sm:text-2xl font-bold text-[var(--lern-text-primary)] mb-4">{data.title}</h2>
+      <div className="bg-[var(--lern-bg-primary)] rounded-2xl border border-[var(--lern-border)] p-5 sm:p-6 mb-4">
         {data.body.split("\n\n").map((para, i) => (
-          <p key={i} className={`text-[#1d1d1f] leading-relaxed ${i > 0 ? "mt-4" : ""}`}>{para}</p>
+          <p key={i} className={`text-[var(--lern-text-primary)] leading-relaxed ${i > 0 ? "mt-4" : ""}`}>{para}</p>
         ))}
       </div>
       {data.highlight && (
         <div className="bg-[#FFF9E6] border border-[#FFD60A]/30 rounded-2xl p-4 flex gap-3 items-start mb-3">
           <span className="text-xl flex-shrink-0">💡</span>
-          <p className="text-sm font-medium text-[#1d1d1f]">{data.highlight}</p>
+          <p className="text-sm font-medium text-[var(--lern-text-primary)]">{data.highlight}</p>
         </div>
       )}
       {data.funfact && (
         <div className="mb-3">
-          <button onClick={() => setShowFun(!showFun)} className="text-sm text-[#0071e3] font-medium hover:underline">
+          <button onClick={() => setShowFun(!showFun)} className="text-sm text-[var(--lern-accent)] font-medium hover:underline">
             {showFun ? "▲ Wusstest du?" : "▼ Wusstest du? (antippen)"}
           </button>
           <AnimatePresence>
@@ -642,7 +642,7 @@ function ContentStep({ data, onNext }: { data: Extract<StepType, { kind: "conten
               <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
                 <div className="bg-[#F0F0FF] border border-[#BF5AF2]/20 rounded-2xl p-4 mt-2 flex gap-3 items-start">
                   <span className="text-xl flex-shrink-0">🤓</span>
-                  <p className="text-sm text-[#1d1d1f]">{data.funfact}</p>
+                  <p className="text-sm text-[var(--lern-text-primary)]">{data.funfact}</p>
                 </div>
               </motion.div>
             )}
@@ -659,7 +659,7 @@ function ContentStep({ data, onNext }: { data: Extract<StepType, { kind: "conten
               <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
                 <div className="bg-[#FFF5EB] border border-[#FF9500]/20 rounded-2xl p-4 mt-2 flex gap-3 items-start">
                   <span className="text-xl flex-shrink-0">🧠</span>
-                  <p className="text-sm text-[#1d1d1f] font-medium">{data.mnemonic}</p>
+                  <p className="text-sm text-[var(--lern-text-primary)] font-medium">{data.mnemonic}</p>
                 </div>
               </motion.div>
             )}
@@ -692,24 +692,24 @@ function MCStep({
   return (
     <div>
       <StepBadge label="Frage" color="green" icon="❓" />
-      <h2 className="text-lg sm:text-xl font-bold text-[#1d1d1f] mb-5">{data.question}</h2>
+      <h2 className="text-lg sm:text-xl font-bold text-[var(--lern-text-primary)] mb-5">{data.question}</h2>
       <motion.div animate={shakeWrong ? { x: [0, -8, 8, -6, 6, 0] } : {}} transition={{ duration: 0.4 }} className="space-y-3">
         {data.options.map((opt, i) => {
           const isSel = selected === i
           const isAns = data.correct === i
-          let border = "border-[#d2d2d7]"
-          let bg = "bg-white"
+          let border = "border-[var(--lern-border)]"
+          let bg = "bg-[var(--lern-bg-primary)]"
           if (showFeedback && isAns) { border = "border-[#30D158]"; bg = "bg-[#30D158]/5" }
           else if (showFeedback && isSel && !isAns) { border = "border-[#FF3B30]"; bg = "bg-[#FF3B30]/5" }
-          else if (isSel) { border = "border-[#0071e3]"; bg = "bg-[#0071e3]/5" }
+          else if (isSel) { border = "border-[var(--lern-accent)]"; bg = "bg-[var(--lern-accent)]/5" }
           return (
             <button key={i} disabled={showFeedback} onClick={() => setSelected(i)}
-              className={`w-full text-left p-4 rounded-2xl border-2 ${border} ${bg} transition-all ${!showFeedback ? "hover:border-[#0071e3]/50 active:scale-[0.99]" : ""}`}>
+              className={`w-full text-left p-4 rounded-2xl border-2 ${border} ${bg} transition-all ${!showFeedback ? "hover:border-[var(--lern-accent)]/50 active:scale-[0.99]" : ""}`}>
               <div className="flex items-start gap-3">
-                <span className={`w-7 h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${isSel ? "border-[#0071e3] bg-[#0071e3] text-white" : "border-[#d2d2d7] text-[#86868b]"} ${showFeedback && isAns ? "border-[#30D158] bg-[#30D158] text-white" : ""} ${showFeedback && isSel && !isAns ? "border-[#FF3B30] bg-[#FF3B30] text-white" : ""}`}>
+                <span className={`w-7 h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 ${isSel ? "border-[var(--lern-accent)] bg-[var(--lern-accent)] text-white" : "border-[var(--lern-border)] text-[var(--lern-text-tertiary)]"} ${showFeedback && isAns ? "border-[#30D158] bg-[#30D158] text-white" : ""} ${showFeedback && isSel && !isAns ? "border-[#FF3B30] bg-[#FF3B30] text-white" : ""}`}>
                   {showFeedback && isAns ? "✓" : showFeedback && isSel && !isAns ? "✗" : String.fromCharCode(65 + i)}
                 </span>
-                <span className="text-[#1d1d1f] text-sm sm:text-base">{opt}</span>
+                <span className="text-[var(--lern-text-primary)] text-sm sm:text-base">{opt}</span>
               </div>
             </button>
           )
@@ -720,9 +720,9 @@ function MCStep({
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
           className={`mt-4 p-4 rounded-2xl ${isCorrect ? "bg-[#30D158]/10 border border-[#30D158]/30" : "bg-[#FF3B30]/10 border border-[#FF3B30]/30"}`}>
           <p className="font-semibold text-sm mb-1">{isCorrect ? "✅ Richtig!" : "❌ Leider falsch"}</p>
-          <p className="text-sm text-[#1d1d1f]">{data.explanation}</p>
+          <p className="text-sm text-[var(--lern-text-primary)]">{data.explanation}</p>
           {data.peerPct && (
-            <p className="text-xs text-[#86868b] mt-2">📊 {data.peerPct}% der Lernenden haben diese Frage richtig beantwortet.</p>
+            <p className="text-xs text-[var(--lern-text-tertiary)] mt-2">📊 {data.peerPct}% der Lernenden haben diese Frage richtig beantwortet.</p>
           )}
         </motion.div>
       )}
@@ -748,13 +748,13 @@ function FillInStep({
   return (
     <div>
       <StepBadge label="Lückentext" color="green" icon="✍️" />
-      <div className="bg-white rounded-2xl border border-[#d2d2d7] p-5 sm:p-6 mb-5">
-        <p className="text-lg text-[#1d1d1f] leading-relaxed">
+      <div className="bg-[var(--lern-bg-primary)] rounded-2xl border border-[var(--lern-border)] p-5 sm:p-6 mb-5">
+        <p className="text-lg text-[var(--lern-text-primary)] leading-relaxed">
           {parts.map((part, i) => (
             <React.Fragment key={i}>
               {part}
               {i < parts.length - 1 && (
-                <span className={`inline-block px-3 py-0.5 mx-1 rounded-lg font-semibold ${showFeedback && isCorrect ? "bg-[#30D158]/20 text-[#1d1d1f]" : showFeedback && !isCorrect ? "bg-[#FF3B30]/20 text-[#1d1d1f]" : selected !== null ? "bg-[#0071e3]/10 text-[#0071e3]" : "bg-[#e8e8ed] text-[#86868b]"}`}>
+                <span className={`inline-block px-3 py-0.5 mx-1 rounded-lg font-semibold ${showFeedback && isCorrect ? "bg-[#30D158]/20 text-[var(--lern-text-primary)]" : showFeedback && !isCorrect ? "bg-[#FF3B30]/20 text-[var(--lern-text-primary)]" : selected !== null ? "bg-[var(--lern-accent)]/10 text-[var(--lern-accent)]" : "bg-[var(--lern-divider)] text-[var(--lern-text-tertiary)]"}`}>
                   {selected !== null ? data.options[selected].split(" / ")[i] || "___" : "___"}
                 </span>
               )}
@@ -766,7 +766,7 @@ function FillInStep({
       <div className="space-y-2">
         {data.options.map((opt, i) => (
           <button key={i} disabled={showFeedback} onClick={() => setSelected(i)}
-            className={`w-full text-left p-3 rounded-xl border-2 transition-all text-sm ${selected === i ? "border-[#0071e3] bg-[#0071e3]/5" : "border-[#d2d2d7] bg-white"} ${showFeedback && data.correct === i ? "border-[#30D158] bg-[#30D158]/5" : ""} ${showFeedback && selected === i && data.correct !== i ? "border-[#FF3B30] bg-[#FF3B30]/5" : ""} ${!showFeedback ? "hover:border-[#0071e3]/50 active:scale-[0.99]" : ""}`}>
+            className={`w-full text-left p-3 rounded-xl border-2 transition-all text-sm ${selected === i ? "border-[var(--lern-accent)] bg-[var(--lern-accent)]/5" : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)]"} ${showFeedback && data.correct === i ? "border-[#30D158] bg-[#30D158]/5" : ""} ${showFeedback && selected === i && data.correct !== i ? "border-[#FF3B30] bg-[#FF3B30]/5" : ""} ${!showFeedback ? "hover:border-[var(--lern-accent)]/50 active:scale-[0.99]" : ""}`}>
             {opt}
           </button>
         ))}
@@ -825,8 +825,8 @@ function TrueFalseStep({
     return (
       <div>
         <StepBadge label="Ergebnis" color="green" icon="✅" />
-        <h2 className="text-xl font-bold text-[#1d1d1f] mb-4">Wahr/Falsch abgeschlossen!</h2>
-        <p className="text-[#6e6e73] mb-6">{correct} von {data.cards.length} richtig erkannt.</p>
+        <h2 className="text-xl font-bold text-[var(--lern-text-primary)] mb-4">Wahr/Falsch abgeschlossen!</h2>
+        <p className="text-[var(--lern-text-secondary)] mb-6">{correct} von {data.cards.length} richtig erkannt.</p>
         <NextButton onClick={onNext} label="Weiter" />
       </div>
     )
@@ -835,8 +835,8 @@ function TrueFalseStep({
   return (
     <div>
       <StepBadge label="Wahr oder Falsch" color="orange" icon="👈👉" />
-      <p className="text-sm text-[#86868b] mb-4">Wische nach rechts für WAHR, nach links für FALSCH — oder tippe die Buttons.</p>
-      <p className="text-xs text-[#86868b] mb-4">Karte {cardIdx + 1} von {data.cards.length}</p>
+      <p className="text-sm text-[var(--lern-text-tertiary)] mb-4">Wische nach rechts für WAHR, nach links für FALSCH — oder tippe die Buttons.</p>
+      <p className="text-xs text-[var(--lern-text-tertiary)] mb-4">Karte {cardIdx + 1} von {data.cards.length}</p>
 
       <AnimatePresence mode="wait">
         {!showResult ? (
@@ -853,11 +853,11 @@ function TrueFalseStep({
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
-            className="relative bg-white rounded-2xl border-2 border-[#d2d2d7] p-6 sm:p-8 min-h-[200px] flex items-center justify-center cursor-grab active:cursor-grabbing select-none"
+            className="relative bg-[var(--lern-bg-primary)] rounded-2xl border-2 border-[var(--lern-border)] p-6 sm:p-8 min-h-[200px] flex items-center justify-center cursor-grab active:cursor-grabbing select-none"
           >
             <motion.div style={{ opacity: leftOpacity }} className="absolute top-4 left-4 px-3 py-1 bg-[#FF3B30] text-white text-xs font-bold rounded-full">FALSCH</motion.div>
             <motion.div style={{ opacity: rightOpacity }} className="absolute top-4 right-4 px-3 py-1 bg-[#30D158] text-white text-xs font-bold rounded-full">WAHR</motion.div>
-            <p className="text-center text-lg font-medium text-[#1d1d1f]">{card.statement}</p>
+            <p className="text-center text-lg font-medium text-[var(--lern-text-primary)]">{card.statement}</p>
           </motion.div>
         ) : (
           <motion.div
@@ -867,7 +867,7 @@ function TrueFalseStep({
             className={`rounded-2xl border-2 p-6 ${lastAnswer?.correct ? "border-[#30D158] bg-[#30D158]/5" : "border-[#FF3B30] bg-[#FF3B30]/5"}`}
           >
             <p className="font-bold text-base mb-2">{lastAnswer?.correct ? "✅ Richtig!" : "❌ Falsch!"}</p>
-            <p className="text-sm text-[#1d1d1f]">{lastAnswer?.explanation}</p>
+            <p className="text-sm text-[var(--lern-text-primary)]">{lastAnswer?.explanation}</p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -933,9 +933,9 @@ function TimerChallengeStep({
     return (
       <div className="text-center">
         <StepBadge label="Blitzrunde" color="red" icon="⚡" />
-        <h2 className="text-xl sm:text-2xl font-bold text-[#1d1d1f] mb-3">60-Sekunden-Challenge!</h2>
-        <p className="text-[#6e6e73] mb-6">Beantworte so viele Fragen wie möglich in 60 Sekunden.</p>
-        <p className="text-sm text-[#86868b] mb-8">{data.questions.length} Fragen warten auf dich.</p>
+        <h2 className="text-xl sm:text-2xl font-bold text-[var(--lern-text-primary)] mb-3">60-Sekunden-Challenge!</h2>
+        <p className="text-[var(--lern-text-secondary)] mb-6">Beantworte so viele Fragen wie möglich in 60 Sekunden.</p>
+        <p className="text-sm text-[var(--lern-text-tertiary)] mb-8">{data.questions.length} Fragen warten auf dich.</p>
         <button data-main-btn onClick={() => setStarted(true)}
           className="px-8 py-3.5 bg-[#FF3B30] text-white rounded-full text-base font-semibold hover:bg-[#FF453A] active:scale-[0.97] transition-all animate-pulse">
           Los geht&apos;s!
@@ -948,9 +948,9 @@ function TimerChallengeStep({
     return (
       <div className="text-center">
         <StepBadge label="Ergebnis" color="green" icon="🏆" />
-        <h2 className="text-2xl font-bold text-[#1d1d1f] mb-3">Blitzrunde geschafft!</h2>
-        <div className="text-5xl font-bold text-[#0071e3] mb-2">{timerScore}/{Math.min(qIdx + 1, data.questions.length)}</div>
-        <p className="text-[#6e6e73] mb-6">richtig in {60 - timeLeft} Sekunden</p>
+        <h2 className="text-2xl font-bold text-[var(--lern-text-primary)] mb-3">Blitzrunde geschafft!</h2>
+        <div className="text-5xl font-bold text-[var(--lern-accent)] mb-2">{timerScore}/{Math.min(qIdx + 1, data.questions.length)}</div>
+        <p className="text-[var(--lern-text-secondary)] mb-6">richtig in {60 - timeLeft} Sekunden</p>
         <NextButton onClick={() => onDone(timerScore, Math.min(qIdx + 1, data.questions.length))} label="Weiter" />
       </div>
     )
@@ -961,13 +961,13 @@ function TimerChallengeStep({
     <div>
       <div className="flex items-center justify-between mb-4">
         <StepBadge label="Blitzrunde" color="red" icon="⚡" />
-        <div className={`text-lg font-bold ${timeLeft <= 10 ? "text-[#FF3B30] animate-pulse" : "text-[#1d1d1f]"}`}>
+        <div className={`text-lg font-bold ${timeLeft <= 10 ? "text-[#FF3B30] animate-pulse" : "text-[var(--lern-text-primary)]"}`}>
           {timeLeft}s
         </div>
       </div>
 
       {/* Timer bar */}
-      <div className="h-1.5 bg-[#e8e8ed] rounded-full mb-6 overflow-hidden">
+      <div className="h-1.5 bg-[var(--lern-divider)] rounded-full mb-6 overflow-hidden">
         <motion.div className="h-full bg-[#FF3B30] rounded-full" animate={{ width: `${(timeLeft / 60) * 100}%` }} transition={{ duration: 0.3 }} />
       </div>
 
@@ -976,18 +976,18 @@ function TimerChallengeStep({
         transition={{ duration: 0.4 }}
         className="rounded-2xl p-1"
       >
-        <h3 className="text-lg font-bold text-[#1d1d1f] mb-4">{q.q}</h3>
+        <h3 className="text-lg font-bold text-[var(--lern-text-primary)] mb-4">{q.q}</h3>
         <div className="space-y-2">
           {q.options.map((opt, i) => (
             <button key={i} onClick={() => answer(i)}
-              className="w-full text-left p-3.5 rounded-xl border-2 border-[#d2d2d7] bg-white text-sm font-medium text-[#1d1d1f] hover:border-[#0071e3] active:scale-[0.97] transition-all">
+              className="w-full text-left p-3.5 rounded-xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] text-sm font-medium text-[var(--lern-text-primary)] hover:border-[var(--lern-accent)] active:scale-[0.97] transition-all">
               {opt}
             </button>
           ))}
         </div>
       </motion.div>
 
-      <p className="text-center text-xs text-[#86868b] mt-4">Frage {qIdx + 1} von {data.questions.length} · {timerScore} richtig</p>
+      <p className="text-center text-xs text-[var(--lern-text-tertiary)] mt-4">Frage {qIdx + 1} von {data.questions.length} · {timerScore} richtig</p>
     </div>
   )
 }
@@ -1011,31 +1011,31 @@ function FreetextStep({
   return (
     <div>
       <StepBadge label="Denkfrage" color="orange" icon="🤔" />
-      <h2 className="text-lg sm:text-xl font-bold text-[#1d1d1f] mb-2">{data.question}</h2>
-      {!submitted && <p className="text-sm text-[#86868b] mb-4">💡 Tipp: {data.hint}</p>}
+      <h2 className="text-lg sm:text-xl font-bold text-[var(--lern-text-primary)] mb-2">{data.question}</h2>
+      {!submitted && <p className="text-sm text-[var(--lern-text-tertiary)] mb-4">💡 Tipp: {data.hint}</p>}
       <textarea
         value={value || ""}
         onChange={(e) => { if (!submitted) onChange(e.target.value) }}
         placeholder="Deine Antwort..."
         rows={4}
-        className={`w-full p-4 bg-white border rounded-2xl text-[#1d1d1f] placeholder:text-[#86868b] focus:outline-none focus:ring-2 focus:ring-[#0071e3]/30 focus:border-[#0071e3] resize-none text-base ${submitted ? "border-[#30D158] bg-[#30D158]/5" : "border-[#d2d2d7]"}`}
+        className={`w-full p-4 bg-[var(--lern-bg-primary)] border rounded-2xl text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:outline-none focus:ring-2 focus:ring-[var(--lern-accent)]/30 focus:border-[var(--lern-accent)] resize-none text-base ${submitted ? "border-[#30D158] bg-[#30D158]/5" : "border-[var(--lern-border)]"}`}
       />
 
       {submitted && (
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mt-3 space-y-3">
           {/* Keyword feedback */}
           {data.keywords && (
-            <div className={`p-4 rounded-2xl ${matchedKeywords.length >= 2 ? "bg-[#30D158]/5 border border-[#30D158]/20" : "bg-[#0071e3]/5 border border-[#0071e3]/20"}`}>
+            <div className={`p-4 rounded-2xl ${matchedKeywords.length >= 2 ? "bg-[#30D158]/5 border border-[#30D158]/20" : "bg-[var(--lern-accent)]/5 border border-[var(--lern-accent)]/20"}`}>
               <div className="flex gap-3 items-start">
                 <span className="text-xl flex-shrink-0">{matchedKeywords.length >= 2 ? "🎯" : "💬"}</span>
                 <div>
-                  <p className="text-sm font-semibold text-[#1d1d1f] mb-1">
+                  <p className="text-sm font-semibold text-[var(--lern-text-primary)] mb-1">
                     {matchedKeywords.length >= 2 ? data.keywordFeedback || "Gut erkannt!" : "Gute Überlegung! Vergleiche deine Antwort mit der Musterantwort."}
                   </p>
                   {matchedKeywords.length >= 2 && (
                     <div className="flex flex-wrap gap-1.5 mt-1.5">
                       {matchedKeywords.slice(0, 5).map((kw) => (
-                        <span key={kw} className="px-2 py-0.5 bg-[#30D158]/15 text-[#1d1d1f] text-xs rounded-full font-medium">{kw}</span>
+                        <span key={kw} className="px-2 py-0.5 bg-[#30D158]/15 text-[var(--lern-text-primary)] text-xs rounded-full font-medium">{kw}</span>
                       ))}
                     </div>
                   )}
@@ -1046,9 +1046,9 @@ function FreetextStep({
 
           {/* Model answer */}
           {data.modelAnswer && (
-            <div className="p-4 bg-[#f5f5f7] border border-[#d2d2d7] rounded-2xl">
-              <p className="text-xs font-semibold text-[#86868b] uppercase tracking-wide mb-1.5">Musterantwort</p>
-              <p className="text-sm text-[#1d1d1f] leading-relaxed">{data.modelAnswer}</p>
+            <div className="p-4 bg-[var(--lern-bg)] border border-[var(--lern-border)] rounded-2xl">
+              <p className="text-xs font-semibold text-[var(--lern-text-tertiary)] uppercase tracking-wide mb-1.5">Musterantwort</p>
+              <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">{data.modelAnswer}</p>
             </div>
           )}
         </motion.div>
@@ -1078,22 +1078,22 @@ function SortingStep({
   return (
     <div>
       <StepBadge label="Sortieren" color="purple" icon="🔢" />
-      <h2 className="text-lg sm:text-xl font-bold text-[#1d1d1f] mb-5">{data.question}</h2>
+      <h2 className="text-lg sm:text-xl font-bold text-[var(--lern-text-primary)] mb-5">{data.question}</h2>
 
       <div className="space-y-2 mb-4 min-h-[60px]">
         {order.map((itemIdx, pos) => {
-          let bg = "bg-[#0071e3]/5 border-[#0071e3]"
+          let bg = "bg-[var(--lern-accent)]/5 border-[var(--lern-accent)]"
           if (showFeedback) bg = itemIdx === data.correctOrder[pos] ? "bg-[#30D158]/10 border-[#30D158]" : "bg-[#FF3B30]/10 border-[#FF3B30]"
           return (
             <motion.button key={`placed-${itemIdx}`} layout initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}
               onClick={() => removeItem(pos)} className={`w-full text-left p-3 rounded-xl border-2 ${bg} flex items-center gap-3 transition-all ${!showFeedback ? "active:scale-[0.98]" : ""}`}>
-              <span className="w-6 h-6 rounded-full bg-[#0071e3] text-white flex items-center justify-center text-xs font-bold flex-shrink-0">{pos + 1}</span>
-              <span className="text-sm text-[#1d1d1f]">{data.items[itemIdx]}</span>
+              <span className="w-6 h-6 rounded-full bg-[var(--lern-accent)] text-white flex items-center justify-center text-xs font-bold flex-shrink-0">{pos + 1}</span>
+              <span className="text-sm text-[var(--lern-text-primary)]">{data.items[itemIdx]}</span>
             </motion.button>
           )
         })}
         {order.length === 0 && (
-          <div className="text-sm text-[#86868b] text-center py-4 border-2 border-dashed border-[#d2d2d7] rounded-xl">Tippe auf die Schritte in der richtigen Reihenfolge</div>
+          <div className="text-sm text-[var(--lern-text-tertiary)] text-center py-4 border-2 border-dashed border-[var(--lern-border)] rounded-xl">Tippe auf die Schritte in der richtigen Reihenfolge</div>
         )}
       </div>
 
@@ -1103,7 +1103,7 @@ function SortingStep({
             if (order.includes(i)) return null
             return (
               <motion.button key={`rem-${i}`} layout onClick={() => addItem(i)}
-                className="px-4 py-2.5 bg-white border border-[#d2d2d7] rounded-xl text-sm text-[#1d1d1f] hover:border-[#0071e3] active:scale-[0.97] transition-all">
+                className="px-4 py-2.5 bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] rounded-xl text-sm text-[var(--lern-text-primary)] hover:border-[var(--lern-accent)] active:scale-[0.97] transition-all">
                 {item}
               </motion.button>
             )
@@ -1116,7 +1116,7 @@ function SortingStep({
           className={`mb-4 p-4 rounded-2xl ${isCorrect ? "bg-[#30D158]/10 border border-[#30D158]/30" : "bg-[#FF3B30]/10 border border-[#FF3B30]/30"}`}>
           <p className="font-semibold text-sm">{isCorrect ? "✅ Perfekt! Die Reihenfolge stimmt!" : "❌ Nicht ganz. Die richtige Reihenfolge ist:"}</p>
           {!isCorrect && (
-            <ol className="mt-2 text-sm text-[#1d1d1f] list-decimal list-inside space-y-1">
+            <ol className="mt-2 text-sm text-[var(--lern-text-primary)] list-decimal list-inside space-y-1">
               {data.correctOrder.map((idx) => <li key={idx}>{data.items[idx]}</li>)}
             </ol>
           )}
@@ -1213,8 +1213,8 @@ function MatchingStep({
   return (
     <div ref={containerRef}>
       <StepBadge label="Zuordnung" color="blue" icon="🔗" />
-      <h2 className="text-lg sm:text-xl font-bold text-[#1d1d1f] mb-2">{data.question}</h2>
-      <p className="text-xs text-[#86868b] mb-5">Ziehe die Beschreibungen auf den passenden Begriff oder tippe zum Zuordnen.</p>
+      <h2 className="text-lg sm:text-xl font-bold text-[var(--lern-text-primary)] mb-2">{data.question}</h2>
+      <p className="text-xs text-[var(--lern-text-tertiary)] mb-5">Ziehe die Beschreibungen auf den passenden Begriff oder tippe zum Zuordnen.</p>
 
       {/* Left side: drop zones */}
       <div className="space-y-3 mb-5">
@@ -1223,17 +1223,17 @@ function MatchingStep({
           const isHover = hoverTarget === i && draggingIdx !== null
           const isSel = selectedLeft === i
 
-          let border = "border-[#d2d2d7] border-dashed"
-          let bg = "bg-[#f5f5f7]"
+          let border = "border-[var(--lern-border)] border-dashed"
+          let bg = "bg-[var(--lern-bg)]"
           if (showFeedback && matchedRight !== null) {
             border = matchedRight === i ? "border-[#30D158] border-solid" : "border-[#FF3B30] border-solid"
             bg = matchedRight === i ? "bg-[#30D158]/5" : "bg-[#FF3B30]/5"
           } else if (isHover) {
-            border = "border-[#0071e3] border-solid"; bg = "bg-[#0071e3]/5"
+            border = "border-[var(--lern-accent)] border-solid"; bg = "bg-[var(--lern-accent)]/5"
           } else if (isSel) {
-            border = "border-[#0071e3] border-solid"; bg = "bg-[#0071e3]/5"
+            border = "border-[var(--lern-accent)] border-solid"; bg = "bg-[var(--lern-accent)]/5"
           } else if (matchedRight !== null) {
-            border = "border-[#0071e3]/40 border-solid"; bg = "bg-white"
+            border = "border-[var(--lern-accent)]/40 border-solid"; bg = "bg-[var(--lern-bg-primary)]"
           }
 
           return (
@@ -1244,19 +1244,19 @@ function MatchingStep({
               animate={isHover ? { scale: 1.02 } : { scale: 1 }}
               className={`relative p-3 rounded-xl border-2 ${border} ${bg} transition-colors min-h-[60px] cursor-pointer`}
             >
-              <span className="text-sm font-semibold text-[#1d1d1f]">{left}</span>
+              <span className="text-sm font-semibold text-[var(--lern-text-primary)]">{left}</span>
               {matchedRight !== null ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   className="mt-1.5 flex items-center gap-2"
                 >
-                  <span className="text-xs text-[#0071e3] bg-[#0071e3]/10 px-2 py-1 rounded-lg flex-1">
+                  <span className="text-xs text-[var(--lern-accent)] bg-[var(--lern-accent)]/10 px-2 py-1 rounded-lg flex-1">
                     {data.pairs[matchedRight][1]}
                   </span>
                   {!showFeedback && (
                     <button onClick={(e) => { e.stopPropagation(); removeMatch(i) }}
-                      className="text-[#86868b] hover:text-[#FF3B30] text-xs p-1 transition-colors">
+                      className="text-[var(--lern-text-tertiary)] hover:text-[#FF3B30] text-xs p-1 transition-colors">
                       ✕
                     </button>
                   )}
@@ -1265,7 +1265,7 @@ function MatchingStep({
                   )}
                 </motion.div>
               ) : (
-                <div className="mt-1.5 text-xs text-[#86868b] italic">
+                <div className="mt-1.5 text-xs text-[var(--lern-text-tertiary)] italic">
                   {isHover ? "Hier ablegen" : isSel ? "Jetzt rechts tippen" : "Hierher ziehen"}
                 </div>
               )}
@@ -1277,7 +1277,7 @@ function MatchingStep({
       {/* Right side: draggable items */}
       {!showFeedback && (
         <div className="space-y-2">
-          <p className="text-xs font-medium text-[#86868b] uppercase tracking-wider mb-2">Beschreibungen</p>
+          <p className="text-xs font-medium text-[var(--lern-text-tertiary)] uppercase tracking-wider mb-2">Beschreibungen</p>
           <div className="flex flex-wrap gap-2">
             {shuffledRight.map((origIdx) => {
               const isUsed = usedRight.has(origIdx)
@@ -1285,7 +1285,7 @@ function MatchingStep({
               if (isUsed) return (
                 <motion.div key={`drag-${origIdx}`}
                   initial={{ opacity: 1 }} animate={{ opacity: 0.3, scale: 0.95 }}
-                  className="px-3 py-2 rounded-xl border border-[#d2d2d7] bg-[#f5f5f7] text-xs text-[#86868b] line-through">
+                  className="px-3 py-2 rounded-xl border border-[var(--lern-border)] bg-[var(--lern-bg)] text-xs text-[var(--lern-text-tertiary)] line-through">
                   {data.pairs[origIdx][1]}
                 </motion.div>
               )
@@ -1302,9 +1302,9 @@ function MatchingStep({
                   onClick={() => handleRightTap(origIdx)}
                   whileDrag={{ scale: 1.05, zIndex: 50, boxShadow: "0 8px 30px rgba(0,0,0,0.15)" }}
                   whileTap={{ scale: 0.97 }}
-                  className={`px-3 py-2 rounded-xl border-2 bg-white text-xs text-[#1d1d1f] cursor-grab active:cursor-grabbing touch-none select-none
-                    ${isDragging ? "border-[#0071e3] shadow-lg" : "border-[#d2d2d7]"}
-                    ${selectedLeft !== null ? "hover:border-[#0071e3]/50" : ""}`}
+                  className={`px-3 py-2 rounded-xl border-2 bg-[var(--lern-bg-primary)] text-xs text-[var(--lern-text-primary)] cursor-grab active:cursor-grabbing touch-none select-none
+                    ${isDragging ? "border-[var(--lern-accent)] shadow-lg" : "border-[var(--lern-border)]"}
+                    ${selectedLeft !== null ? "hover:border-[var(--lern-accent)]/50" : ""}`}
                   style={{ position: "relative", zIndex: isDragging ? 50 : 1 }}
                 >
                   {data.pairs[origIdx][1]}
@@ -1319,7 +1319,7 @@ function MatchingStep({
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
           className={`mt-4 p-4 rounded-2xl ${isCorrect ? "bg-[#30D158]/10 border border-[#30D158]/30" : "bg-[#FF3B30]/10 border border-[#FF3B30]/30"}`}>
           <p className="font-semibold text-sm">{isCorrect ? "✅ Alle richtig zugeordnet!" : "❌ Nicht ganz richtig. Hier die Lösung:"}</p>
-          {!isCorrect && <div className="mt-2 space-y-1">{data.pairs.map(([l, r], i) => <p key={i} className="text-sm text-[#1d1d1f]">{l} → {r}</p>)}</div>}
+          {!isCorrect && <div className="mt-2 space-y-1">{data.pairs.map(([l, r], i) => <p key={i} className="text-sm text-[var(--lern-text-primary)]">{l} → {r}</p>)}</div>}
         </motion.div>
       )}
 
@@ -1350,22 +1350,22 @@ function CaseStep({
   return (
     <div>
       <StepBadge label="Fallbeispiel" color="red" icon="🏥" />
-      <h2 className="text-lg sm:text-xl font-bold text-[#1d1d1f] mb-3">{data.title}</h2>
-      <div className="bg-white rounded-2xl border border-[#d2d2d7] p-5 mb-5">
-        <p className="text-[#1d1d1f] leading-relaxed text-sm sm:text-base italic">&ldquo;{data.scenario}&rdquo;</p>
+      <h2 className="text-lg sm:text-xl font-bold text-[var(--lern-text-primary)] mb-3">{data.title}</h2>
+      <div className="bg-[var(--lern-bg-primary)] rounded-2xl border border-[var(--lern-border)] p-5 mb-5">
+        <p className="text-[var(--lern-text-primary)] leading-relaxed text-sm sm:text-base italic">&ldquo;{data.scenario}&rdquo;</p>
       </div>
-      <p className="font-semibold text-[#1d1d1f] mb-4">{data.question}</p>
+      <p className="font-semibold text-[var(--lern-text-primary)] mb-4">{data.question}</p>
 
       <motion.div animate={shakeWrong ? { x: [0, -8, 8, -6, 6, 0] } : {}} transition={{ duration: 0.4 }} className="space-y-3">
         {data.options.map((opt, i) => {
           const isSel = selected === i; const isAns = data.correct === i
-          let border = "border-[#d2d2d7]"; let bg = "bg-white"
+          let border = "border-[var(--lern-border)]"; let bg = "bg-[var(--lern-bg-primary)]"
           if (showFeedback && isAns) { border = "border-[#30D158]"; bg = "bg-[#30D158]/5" }
           else if (showFeedback && isSel && !isAns) { border = "border-[#FF3B30]"; bg = "bg-[#FF3B30]/5" }
-          else if (isSel) { border = "border-[#0071e3]"; bg = "bg-[#0071e3]/5" }
+          else if (isSel) { border = "border-[var(--lern-accent)]"; bg = "bg-[var(--lern-accent)]/5" }
           return (
             <button key={i} disabled={showFeedback} onClick={() => setSelected(i)}
-              className={`w-full text-left p-4 rounded-2xl border-2 ${border} ${bg} transition-all text-sm sm:text-base ${!showFeedback ? "hover:border-[#0071e3]/50 active:scale-[0.99]" : ""}`}>
+              className={`w-full text-left p-4 rounded-2xl border-2 ${border} ${bg} transition-all text-sm sm:text-base ${!showFeedback ? "hover:border-[var(--lern-accent)]/50 active:scale-[0.99]" : ""}`}>
               {opt}
             </button>
           )
@@ -1376,7 +1376,7 @@ function CaseStep({
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
           className={`mt-4 p-4 rounded-2xl ${isCorrect ? "bg-[#30D158]/10 border border-[#30D158]/30" : "bg-[#FF3B30]/10 border border-[#FF3B30]/30"}`}>
           <p className="font-semibold text-sm mb-1">{isCorrect ? "✅ Genau richtig!" : "❌ Nicht ganz"}</p>
-          <p className="text-sm text-[#1d1d1f]">{data.explanation}</p>
+          <p className="text-sm text-[var(--lern-text-primary)]">{data.explanation}</p>
         </motion.div>
       )}
 
@@ -1394,13 +1394,13 @@ function SummaryStep({ data, onNext }: { data: Extract<StepType, { kind: "summar
   return (
     <div>
       <StepBadge label="Zusammenfassung" color="blue" icon="📋" />
-      <h2 className="text-xl sm:text-2xl font-bold text-[#1d1d1f] mb-5">Das hast du heute gelernt</h2>
+      <h2 className="text-xl sm:text-2xl font-bold text-[var(--lern-text-primary)] mb-5">Das hast du heute gelernt</h2>
       <div className="space-y-3">
         {data.points.map((point, i) => (
           <motion.div key={i} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.15 }}
-            className="flex items-start gap-3 bg-white rounded-xl border border-[#d2d2d7] p-4">
+            className="flex items-start gap-3 bg-[var(--lern-bg-primary)] rounded-xl border border-[var(--lern-border)] p-4">
             <span className="w-6 h-6 rounded-full bg-[#30D158] text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">✓</span>
-            <p className="text-sm text-[#1d1d1f]">{point}</p>
+            <p className="text-sm text-[var(--lern-text-primary)]">{point}</p>
           </motion.div>
         ))}
       </div>
@@ -1429,39 +1429,39 @@ function ResultStep({ score, total, xp, locale, selfBefore, selfAfter, onConfett
 
   return (
     <div className="text-center py-8">
-      <h2 className="text-2xl sm:text-3xl font-bold text-[#1d1d1f] mb-6">Session abgeschlossen!</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold text-[var(--lern-text-primary)] mb-6">Session abgeschlossen!</h2>
 
       <div className="relative w-40 h-40 mx-auto mb-4">
         <svg viewBox="0 0 120 120" className="w-full h-full -rotate-90">
-          <circle cx="60" cy="60" r={radius} fill="none" stroke="#e8e8ed" strokeWidth="8" />
+          <circle cx="60" cy="60" r={radius} fill="none" stroke="var(--lern-divider)" strokeWidth="8" />
           <motion.circle cx="60" cy="60" r={radius} fill="none"
             stroke={pct >= 75 ? "#30D158" : pct >= 50 ? "#FFD60A" : "#FF3B30"} strokeWidth="8" strokeLinecap="round"
             strokeDasharray={circ} initial={{ strokeDashoffset: circ }} animate={{ strokeDashoffset: offset }} transition={{ duration: 1.5, ease: "easeOut" }} />
         </svg>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <span className="text-3xl font-bold text-[#1d1d1f]">{pct}%</span>
-          <span className="text-xs text-[#86868b]">{score}/{total} richtig</span>
+          <span className="text-3xl font-bold text-[var(--lern-text-primary)]">{pct}%</span>
+          <span className="text-xs text-[var(--lern-text-tertiary)]">{score}/{total} richtig</span>
         </div>
       </div>
 
       {/* XP earned */}
       <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#FFD60A]/20 rounded-full mb-4">
         <span className="text-lg">⭐</span>
-        <span className="font-bold text-[#1d1d1f]">{xp} XP verdient</span>
+        <span className="font-bold text-[var(--lern-text-primary)]">{xp} XP verdient</span>
       </div>
 
       {/* Self-rating comparison */}
       {selfBefore !== null && selfAfter !== null && (
-        <div className="bg-white rounded-2xl border border-[#d2d2d7] p-4 mx-auto max-w-xs mb-4">
-          <p className="text-xs text-[#86868b] mb-2 font-medium">Deine Selbsteinschätzung</p>
+        <div className="bg-[var(--lern-bg-primary)] rounded-2xl border border-[var(--lern-border)] p-4 mx-auto max-w-xs mb-4">
+          <p className="text-xs text-[var(--lern-text-tertiary)] mb-2 font-medium">Deine Selbsteinschätzung</p>
           <div className="flex items-center justify-between">
             <div className="text-center">
-              <p className="text-xs text-[#86868b]">Vorher</p>
-              <p className="font-bold text-[#1d1d1f]">{labels[selfBefore]}</p>
+              <p className="text-xs text-[var(--lern-text-tertiary)]">Vorher</p>
+              <p className="font-bold text-[var(--lern-text-primary)]">{labels[selfBefore]}</p>
             </div>
             <span className="text-xl">→</span>
             <div className="text-center">
-              <p className="text-xs text-[#86868b]">Nachher</p>
+              <p className="text-xs text-[var(--lern-text-tertiary)]">Nachher</p>
               <p className="font-bold text-[#30D158]">{labels[selfAfter]}</p>
             </div>
           </div>
@@ -1469,17 +1469,17 @@ function ResultStep({ score, total, xp, locale, selfBefore, selfAfter, onConfett
         </div>
       )}
 
-      <p className="text-[#6e6e73] mb-2">
+      <p className="text-[var(--lern-text-secondary)] mb-2">
         {pct >= 75 ? "Sehr gut! Du hast den Pflegeprozess verstanden." : pct >= 50 ? "Guter Anfang! Wiederhole die Lektion, um dich zu verbessern." : "Nicht schlimm — Übung macht den Meister!"}
       </p>
-      <p className="text-sm text-[#86868b] mb-8">Die nächste Wiederholung wird automatisch geplant.</p>
+      <p className="text-sm text-[var(--lern-text-tertiary)] mb-8">Die nächste Wiederholung wird automatisch geplant.</p>
 
       <div className="flex flex-col sm:flex-row gap-3 justify-center">
-        <Link href={`/${locale}/demo`} className="px-6 py-3 border border-[#d2d2d7] text-[#1d1d1f] rounded-full text-sm font-semibold hover:bg-[#f5f5f7] transition-all">
+        <Link href={`/${locale}/demo`} className="px-6 py-3 border border-[var(--lern-border)] text-[var(--lern-text-primary)] rounded-full text-sm font-semibold hover:bg-[var(--lern-bg)] transition-all">
           Zur Übersicht
         </Link>
         <button onClick={() => window.location.reload()}
-          className="px-6 py-3 bg-[#0071e3] text-white rounded-full text-sm font-semibold hover:bg-[#0077ED] active:scale-[0.97] transition-all">
+          className="px-6 py-3 bg-[var(--lern-accent)] text-white rounded-full text-sm font-semibold hover:bg-[#0077ED] active:scale-[0.97] transition-all">
           Nochmal üben
         </button>
       </div>
@@ -1492,7 +1492,7 @@ function ResultStep({ score, total, xp, locale, selfBefore, selfAfter, onConfett
    ═══════════════════════════════════════════════════════════════════════════ */
 function StepBadge({ label, color, icon }: { label: string; color: string; icon: string }) {
   const colors: Record<string, string> = {
-    blue: "bg-[#0071e3]/10 text-[#0071e3]",
+    blue: "bg-[var(--lern-accent)]/10 text-[var(--lern-accent)]",
     green: "bg-[#30D158]/10 text-[#30D158]",
     purple: "bg-[#BF5AF2]/10 text-[#BF5AF2]",
     orange: "bg-[#FF9500]/10 text-[#FF9500]",
@@ -1510,7 +1510,7 @@ function NextButton({ onClick, disabled, label = "Weiter" }: { onClick: () => vo
   return (
     <div className="mt-6">
       <button data-main-btn onClick={onClick} disabled={disabled}
-        className="w-full py-3.5 bg-[#0071e3] text-white rounded-full text-base font-semibold hover:bg-[#0077ED] active:scale-[0.98] transition-all disabled:opacity-40 disabled:pointer-events-none">
+        className="w-full py-3.5 bg-[var(--lern-accent)] text-white rounded-full text-base font-semibold hover:bg-[#0077ED] active:scale-[0.98] transition-all disabled:opacity-40 disabled:pointer-events-none">
         {label}
       </button>
     </div>

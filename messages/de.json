@@ -17,6 +17,7 @@
     "home": "Start",
     "learn": "Lernen",
     "review": "Wiederholen",
+    "wochenplan": "Wochenplan",
     "progress": "Fortschritt",
     "glossary": "Glossar",
     "settings": "Einstellungen",
@@ -96,5 +97,245 @@
     "hard": "Schwer",
     "good": "Gut",
     "easy": "Leicht"
+  },
+  "fortschritt": {
+    "title": "Dein Fortschritt",
+    "subtitle": "Alle 11 Curricularen Einheiten im Überblick",
+    "gesamtFortschritt": "{prozent}% der Ausbildung geschafft",
+    "lesAbgeschlossen": "{done} von {total} LEs abgeschlossen",
+    "leLabel": "LE {nr}",
+    "abgeschlossen": "Abgeschlossen",
+    "nochOffen": "Noch offen",
+    "gestartet": "Gestartet",
+    "zurueck": "Zurück",
+    "lernenStarten": "Lernen starten",
+    "keinFortschritt": "Noch kein Fortschritt — starte deine erste Lektion!"
+  },
+  "glossar": {
+    "title": "Fachbegriffe-Glossar",
+    "searchPlaceholder": "Fachbegriff suchen...",
+    "all": "Alle",
+    "results": "Begriffe",
+    "noResults": "Keine Begriffe gefunden."
+  },
+  "lehrer": {
+    "title": "Lehrer-Dashboard",
+    "klasseUebersicht": "Klassenübersicht",
+    "name": "Name",
+    "letzterLogin": "Letzter Login",
+    "fortschritt": "Fortschritt",
+    "aktiveCE": "Aktuelle CE",
+    "status": "Status",
+    "aktiv": "Aktiv",
+    "inaktiv": "Inaktiv",
+    "brauchtHilfe": "Braucht Hilfe",
+    "klassenStatistiken": "Klassen-Statistiken",
+    "durchschnittlicherFortschritt": "Durchschnittlicher Fortschritt",
+    "aktivsteSchueler": "Aktivste Schüler",
+    "schwierigsteThemen": "Schwierigste Themen",
+    "hilfeBereich": "Braucht-Hilfe-Bereich",
+    "hilfeEmpfehlung": "Dieses Thema sollte im Präsenzunterricht behandelt werden.",
+    "fehlversuche": "Fehlversuche",
+    "schueler": "Schüler",
+    "neueNachrichten": "Neue Nachrichten",
+    "nachrichtVon": "Nachricht von Schüler",
+    "kontextAnzeigen": "Lernkontext anzeigen"
+  },
+  "lehrerChat": {
+    "title": "Lehrer fragen",
+    "placeholder": "Deine Frage an den Lehrer...",
+    "kontextHinweis": "Der Lehrer sieht deinen Lernkontext",
+    "leerText": "Du kannst deinem Lehrer direkt eine Frage stellen. Der Lehrer sieht, was du gerade bearbeitest.",
+    "gesendet": "Gesendet",
+    "antwort": "Antwort"
+  },
+  "offline": {
+    "title": "Keine Internetverbindung",
+    "subtitle": "Du bist gerade offline. Hier siehst du, was trotzdem verfügbar ist.",
+    "verfuegbar": "Offline verfügbar",
+    "keineLektionen": "Keine Lektionen heruntergeladen.",
+    "karteikarten": "Karteikarten wiederholen",
+    "karteikartenHinweis": "Funktioniert auch offline",
+    "fortschrittGespeichert": "Lernfortschritt gespeichert",
+    "syncHinweis": "Wird synchronisiert, sobald du wieder online bist",
+    "erneutVerbinden": "Erneut verbinden",
+    "speichern": "Für Offline speichern",
+    "gespeichert": "Offline verfügbar",
+    "entfernen": "Entfernen"
+  },
+  "praxis": {
+    "modusAktiv": "Praxis-Modus aktiv",
+    "theorieModus": "Theorie-Modus",
+    "kurzeSessions": "Kurze Sessions für zwischendurch",
+    "toggleLabel": "Ich bin gerade im Praktikum",
+    "empfohlen": "Empfohlen im Praktikum",
+    "karteikarten": "Karteikarten wiederholen",
+    "karteikartenHinweis": "Perfekt für die Pause auf Station",
+    "reflexion": "Reflexionsfrage",
+    "reflexionFrage": "Was hast du heute auf Station gesehen? Welche Pflegemaßnahme war besonders eindrücklich?",
+    "quickReview": "Quick-Review (30 Min)",
+    "quickReviewHinweis": "Verbinde deine Praxiserfahrung mit der Theorie"
+  },
+  "dashboard": {
+    "greeting": {
+      "morning": "Guten Morgen",
+      "afternoon": "Guten Tag",
+      "evening": "Guten Abend"
+    },
+    "subtitle": "Dein Lernfortschritt auf einen Blick",
+    "tagesplan": "Dein Plan für heute",
+    "geschafft": "Geschafft!",
+    "badges": "Deine Badges",
+    "streakMotivation": "Tag {count} in Folge! Weiter so!",
+    "sessionsDone": "{count} Session abgeschlossen",
+    "karteikartenWiederholen": "{count} Karteikarten wiederholen"
+  },
+  "wochenplan": {
+    "title": "Wochenplan",
+    "today": "Heute",
+    "progress": "Fortschritt",
+    "startNow": "Jetzt starten",
+    "weekOverview": "Wochenübersicht",
+    "weekProgress": "{percent}% diese Woche geschafft",
+    "weekend": "Wochenende!",
+    "weekendHint": "Genieße deine freie Zeit. Am Montag geht es weiter."
+  },
+  "pruefung": {
+    "title": "Prüfungsmodus",
+    "subtitle": "Simulierte Prüfungen im echten Format",
+    "infoTitle": "Wie in der echten Prüfung",
+    "fragen": "20 Fragen im Multiple-Choice-Format",
+    "zeit": "Zeitlimit: 90 Sekunden pro Frage",
+    "keineHilfe": "Keine Hilfen, kein Glossar, keine Erklärungen",
+    "ergebnisHinweis": "Ergebnis + Schwächen-Analyse am Ende",
+    "starten": "Prüfung starten",
+    "abbrechen": "Abbrechen",
+    "letzterVersuch": "Letzter Versuch",
+    "pruefungsreif": "Prüfungsreif",
+    "fastBereit": "Fast bereit",
+    "nochUeben": "Noch üben",
+    "nichtGetestet": "Noch nicht getestet",
+    "richtig": "Richtig",
+    "falsch": "Falsch",
+    "zeitLabel": "Zeit",
+    "schwaechen": "Diese Themen solltest du wiederholen",
+    "alleDetails": "Alle Fragen im Detail",
+    "zurueck": "Zurück",
+    "schwueben": "Schwächen üben"
+  },
+  "lernzeit": {
+    "title": "Lernzeit",
+    "subtitle": "Dein Aktivitäts-Nachweis",
+    "gesamt": "Gesamt",
+    "gesamtXp": "Gesamt-XP",
+    "aktiveTage": "Aktive Tage",
+    "letzte90": "Letzte 90 Tage",
+    "stundenProWoche": "Stunden pro Woche",
+    "bearbeitete": "Bearbeitete Lerneinheiten",
+    "pdfExport": "PDF exportieren",
+    "pdfHinweisTitle": "Lernzeit-Nachweis für die Schule",
+    "pdfHinweisText": "Klicke auf PDF exportieren um einen druckbaren Nachweis deiner aktiven Lernzeit zu erstellen."
+  },
+  "einstufung": {
+    "welcome": {
+      "title": "Lass uns herausfinden, was du schon weißt!",
+      "subtitle": "Ein kurzer Test — kein Stress, keine Note. Wir passen die Inhalte an dein Niveau an.",
+      "duration": "Dauert nur 5–10 Minuten",
+      "feature1": "Passt sich an dein Wissen an",
+      "feature2": "Misst Sprache und Fachwissen getrennt",
+      "feature3": "Spielerisch und ohne Druck",
+      "startButton": "Los geht's!"
+    },
+    "axes": {
+      "language": "Sprachkompetenz",
+      "knowledge": "Pflegefachwissen"
+    },
+    "question": {
+      "counter": "Frage {current} von {total}"
+    },
+    "feedback": {
+      "correct": "Richtig!",
+      "incorrect": "Nicht ganz — aber kein Problem!",
+      "next": "Weiter"
+    },
+    "result": {
+      "title": "Geschafft! Hier ist dein Profil",
+      "duration": "Fertig in {minutes} Minuten",
+      "level": "Level",
+      "correct": "richtig",
+      "summary": "Das bedeutet für dich",
+      "startLearning": "Jetzt mit dem Lernen starten",
+      "languageLevels": {
+        "1": "Grundlagen aufbauen",
+        "2": "Fachbegriffe lernen",
+        "3": "Gute Basis",
+        "4": "Sicher in Fachsprache",
+        "5": "Muttersprachlich"
+      },
+      "knowledgeLevels": {
+        "1": "Alles neu",
+        "2": "Erste Erfahrungen",
+        "3": "Solides Grundwissen",
+        "4": "Fortgeschritten",
+        "5": "Expertenwissen"
+      },
+      "profiles": {
+        "expert": "Du bringst sowohl sprachlich als auch fachlich viel mit. Wir starten direkt mit anspruchsvolleren Aufgaben und komplexen Fallbeispielen.",
+        "languageStrong": "Sprachlich bist du sicher, aber pflegerisches Fachwissen baust du noch auf. Wir starten mit den Grundlagen — in Fachsprache.",
+        "knowledgeStrong": "Du hast viel Pflegeerfahrung, aber die deutsche Fachsprache braucht noch Übung. Wir erklären alles in einfacher Sprache und bauen die Fachbegriffe Schritt für Schritt auf.",
+        "beginner": "Alles ist neu — und das ist völlig in Ordnung! Wir starten langsam, mit einfacher Sprache und den wichtigsten Grundlagen.",
+        "intermediate": "Du hast eine solide Basis. Wir bauen darauf auf und vertiefen sowohl Sprache als auch Fachwissen gezielt."
+      }
+    }
+  },
+  "meilensteine": {
+    "ersteSchritte": "Erste Schritte",
+    "amBall": "Am Ball",
+    "wochenkrieger": "Wochenkrieger",
+    "monatsmeister": "Monatsmeister",
+    "xpSammler": "XP-Sammler",
+    "xpMeister": "XP-Meister",
+    "xpLegende": "XP-Legende",
+    "ceAbgeschlossen": "CE Abgeschlossen",
+    "karteikartenStarter": "Karteikarten-Starter",
+    "karteikartenPro": "Karteikarten-Pro",
+    "volleWoche": "Volle Woche",
+    "pruefungsreif": "Prüfungsreif",
+    "erreicht": "Meilenstein erreicht!"
+  },
+  "errorBoundary": {
+    "title": "Etwas ist schiefgelaufen",
+    "message": "Keine Sorge, dein Fortschritt ist gespeichert.",
+    "retry": "Nochmal versuchen",
+    "details": "Technische Details"
+  },
+  "notifications": {
+    "erinnerung": "Du hast heute noch nicht gelernt. Nur 15 Minuten reichen!",
+    "aktivieren": "Erinnerungen aktivieren?",
+    "aktivierenBeschreibung": "Wir erinnern dich, wenn du heute noch nicht gelernt hast."
+  },
+  "themen": {
+    "backToLernen": "Zurück zur Übersicht",
+    "invalidTag": "Unbekanntes Thema",
+    "noContent": "Noch keine Inhalte für dieses Thema verfügbar.",
+    "anatomie": "Anatomie",
+    "pflege": "Pflege",
+    "krankheitslehre": "Krankheitslehre",
+    "anatomieTitle": "Anatomie & Physiologie",
+    "anatomieDesc": "Aufbau und Funktion des menschlichen Körpers",
+    "pflegeTitle": "Pflegerisches Handeln",
+    "pflegeDesc": "Prophylaxen, Dokumentation, Kommunikation und Maßnahmen",
+    "krankheitslehreTitle": "Krankheitslehre",
+    "krankheitslehreDesc": "Pathophysiologie, Symptome, Diagnostik und Therapie",
+    "themenUeben": "Nach Thema üben"
+  },
+  "checkpoint": {
+    "score_A_title": "Perfekt verstanden!",
+    "score_A_skip": "Du überspringst {count} Abschnitte — du brauchst sie nicht.",
+    "score_A_body": "Du hast das Thema drauf. Weiter zur Anwendung!",
+    "score_B_title": "Gut gemacht!",
+    "score_B_body": "Solide Grundlage — wir vertiefen jetzt Schritt für Schritt.",
+    "score_C_title": "Kein Problem!",
+    "score_C_body": "Wir gehen den vollen Weg — du lernst jetzt alles von Grund auf."
   }
 }

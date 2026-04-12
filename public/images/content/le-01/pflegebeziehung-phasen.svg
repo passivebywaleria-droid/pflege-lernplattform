@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" role="img" aria-label="Phasen der Pflegebeziehung als Kreislauf">
+  <style>
+    text { font-family: 'Poppins', sans-serif; }
+  </style>
+
+  <!-- Title -->
+  <text x="180" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)">Pflegebeziehung: Phasen-Kreislauf</text>
+
+  <!-- Center label -->
+  <circle cx="180" cy="168" r="30" fill="#E5DFD6"/>
+  <text x="180" y="164" text-anchor="middle" font-size="10" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Pflege-</text>
+  <text x="180" y="177" text-anchor="middle" font-size="10" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">beziehung</text>
+
+  <!-- Circular path (invisible, just for reference) -->
+  <!-- Radius 85px from center (180,168) -->
+
+  <!-- Phase 1: Kontaktaufnahme (top) -->
+  <rect x="120" y="42" width="120" height="50" rx="10" fill="#7A816C" opacity="0.12"/>
+  <rect x="120" y="42" width="120" height="50" rx="10" fill="none" stroke="#7A816C" stroke-width="2"/>
+  <circle cx="140" cy="60" r="10" fill="#7A816C"/>
+  <text x="140" y="64" text-anchor="middle" font-size="11" font-weight="700" fill="#fafaf9">1</text>
+  <text x="190" y="62" text-anchor="middle" font-size="11" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Kontakt-</text>
+  <text x="190" y="76" text-anchor="middle" font-size="11" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">aufnahme</text>
+  <text x="180" y="85" text-anchor="middle" font-size="9" fill="#7A816C">Erstes Gespräch</text>
+
+  <!-- Phase 2: Vertrauensaufbau (right) -->
+  <rect x="258" y="138" width="96" height="60" rx="10" fill="#AE6965" opacity="0.12"/>
+  <rect x="258" y="138" width="96" height="60" rx="10" fill="none" stroke="#AE6965" stroke-width="2"/>
+  <circle cx="278" cy="154" r="10" fill="#AE6965"/>
+  <text x="278" y="158" text-anchor="middle" font-size="11" font-weight="700" fill="#fafaf9">2</text>
+  <text x="310" y="162" text-anchor="middle" font-size="11" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Vertrauens-</text>
+  <text x="310" y="176" text-anchor="middle" font-size="11" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">aufbau</text>
+  <text x="306" y="192" text-anchor="middle" font-size="9" fill="#AE6965">Nähe zulassen</text>
+
+  <!-- Phase 3: Zusammenarbeit (bottom) -->
+  <rect x="120" y="240" width="120" height="50" rx="10" fill="#A58B71" opacity="0.12"/>
+  <rect x="120" y="240" width="120" height="50" rx="10" fill="none" stroke="#A58B71" stroke-width="2"/>
+  <circle cx="140" cy="258" r="10" fill="#A58B71"/>
+  <text x="140" y="262" text-anchor="middle" font-size="11" font-weight="700" fill="#fafaf9">3</text>
+  <text x="195" y="260" text-anchor="middle" font-size="11" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Zusammenarbeit</text>
+  <text x="180" y="280" text-anchor="middle" font-size="9" fill="#A58B71">Gemeinsame Ziele</text>
+
+  <!-- Phase 4: Abschied (left) -->
+  <rect x="6" y="138" width="96" height="60" rx="10" fill="#D1A9A5" opacity="0.15"/>
+  <rect x="6" y="138" width="96" height="60" rx="10" fill="none" stroke="#D1A9A5" stroke-width="2"/>
+  <circle cx="26" cy="154" r="10" fill="#D1A9A5"/>
+  <text x="26" y="158" text-anchor="middle" font-size="11" font-weight="700" fill="var(--lern-text-primary, #1d1d1f)">4</text>
+  <text x="58" y="162" text-anchor="middle" font-size="11" font-weight="600" fill="var(--lern-text-primary, #1d1d1f)">Abschied</text>
+  <text x="54" y="182" text-anchor="middle" font-size="9" fill="#AE6965">Loslassen &amp;</text>
+  <text x="54" y="194" text-anchor="middle" font-size="9" fill="#AE6965">Übergabe</text>
+
+  <!-- Curved arrows (simplified with arcs) -->
+  <!-- 1→2 (top-right) -->
+  <path d="M240,72 Q270,72 268,138" stroke="#7A816C" stroke-width="2" fill="none"/>
+  <polygon points="268,140 263,132 273,132" fill="#7A816C"/>
+
+  <!-- 2→3 (right-bottom) -->
+  <path d="M310,198 Q310,230 240,260" stroke="#AE6965" stroke-width="2" fill="none"/>
+  <polygon points="238,261 247,256 244,266" fill="#AE6965"/>
+
+  <!-- 3→4 (bottom-left) -->
+  <path d="M120,265 Q90,265 92,198" stroke="#A58B71" stroke-width="2" fill="none"/>
+  <polygon points="92,196 87,204 97,204" fill="#A58B71"/>
+
+  <!-- 4→1 (left-top, with "nächster Patient" label) -->
+  <path d="M50,138 Q50,100 120,72" stroke="#D1A9A5" stroke-width="2" fill="none" stroke-dasharray="5 3"/>
+  <polygon points="122,71 113,67 116,77" fill="#D1A9A5"/>
+  <text x="56" y="105" font-size="9" fill="#D1A9A5" font-style="italic">Nächster</text>
+  <text x="56" y="116" font-size="9" fill="#D1A9A5" font-style="italic">Patient</text>
+
+  <!-- Footer -->
+  <text x="180" y="310" text-anchor="middle" font-size="10" fill="var(--lern-text-primary, #1d1d1f)" opacity="0.4">Kontinuierlicher Prozess</text>
+</svg>

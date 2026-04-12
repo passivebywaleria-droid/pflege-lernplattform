@@ -1,0 +1,50 @@
+[
+  {
+    "stepId": "le01-s1-tb1-11",
+    "slug": "pflegefachkraft-am-bett",
+    "prompt": "Professional nurse in white scrubs standing next to elderly patient in hospital bed, warm lighting, caring expression, clean hospital room, educational style, respectful dignified portrayal, no text overlay",
+    "type": "situation"
+  },
+  {
+    "stepId": "le01-s2-tb3-03",
+    "slug": "aufnahmegespraech",
+    "prompt": "Nurse conducting patient admission interview, clipboard in hand, sitting at eye level with elderly patient, hospital room, professional caring atmosphere, educational medical illustration, no text overlay",
+    "type": "situation"
+  },
+  {
+    "stepId": "le01-s3-tb5-06",
+    "slug": "kommunikation-pflege",
+    "prompt": "Nurse holding hand of crying elderly male patient in hospital bed, empathetic expression, soft lighting, respectful portrayal of emotional nursing moment, educational style, no text overlay",
+    "type": "situation"
+  },
+  {
+    "stepId": "le01-s4-tb7-06",
+    "slug": "ethische-entscheidung",
+    "prompt": "Two nurses in discussion at nursing station, one gesturing thoughtfully, ethical dilemma body language, professional hospital setting, educational medical illustration, no text overlay",
+    "type": "situation"
+  },
+  {
+    "stepId": "le01-s5-tb9-03",
+    "slug": "maslow-beduerfnisse",
+    "prompt": "Educational illustration of Maslow hierarchy of needs applied to nursing care, pyramid shape, each level showing a nursing care example, clean labeled diagram, white background, no text overlay",
+    "type": "illustration"
+  },
+  {
+    "stepId": "le01-s6-tb11-08",
+    "slug": "pflegeforschung-literatur",
+    "prompt": "Nursing student studying research papers and medical journals at desk, laptop open, stethoscope nearby, concentrated expression, modern library setting, educational style, no text overlay",
+    "type": "situation"
+  },
+  {
+    "stepId": "le01-s7-tb13a-02",
+    "slug": "patient-ahmed-pflege",
+    "prompt": "Middle-aged Middle Eastern male patient in hospital bed, nurse checking vital signs, culturally sensitive care, warm respectful atmosphere, educational medical illustration, no text overlay",
+    "type": "situation"
+  },
+  {
+    "stepId": "le01-s8-tb14-07",
+    "slug": "pruefungssituation",
+    "prompt": "Nursing student in oral exam situation with two examiners at table, professional setting, slight nervousness but competence showing, educational illustration, respectful, no text overlay",
+    "type": "situation"
+  }
+]

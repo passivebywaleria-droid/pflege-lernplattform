@@ -15,6 +15,31 @@
 | Q4 | I Care Krankheitslehre (Thieme, 2020), Kap. 20 — Erkrankungen der männlichen Geschlechtsorgane (BPH, Prostatakarzinom), S. 1108-1118 |
 | Q5 | DNQP Expertenstandard „Förderung der Harnkontinenz in der Pflege", 2014 |
 | Q6 | PflBG 2017, §5 — Generalistische Pflegeausbildung |
+| Q-AP | I Care Anatomie Physiologie (Thieme, 2020) | Kap. Niere, Nephron, Elektrolyte, Säure-Basen-Haushalt, RAAS |
+
+---
+
+## A0) Anatomie & Physiologie — Grundlagen
+
+> Diese Fakten bilden die A&P-Basis für das Organsystem dieser LE.
+> Sie werden in Session 1-2 als interaktive Steps mit tag: "anatomie" vermittelt.
+> Auffrischung in: —
+
+**A&P-01** Niere — Lage und Aufbau: Paarig, retroperitoneal (Höhe Th12-L3), bohnenförmig, ca. 12×6×3 cm, 150g. Rechte Niere etwas tiefer (wegen Leber). Aufbau: Nierenrinde (Cortex) + Nierenmark (Medulla mit Nierenpyramiden) + Nierenbecken (Pelvis renalis → Ureter). Hilum = Eintrittsstelle für A. renalis, V. renalis, Ureter. [Q-AP]
+
+**A&P-02** Nephron — Funktionseinheit: Ca. 1 Million pro Niere. Aufbau: Glomerulus (Kapillarknäuel im Bowman-Kapsel = Filtration) → proximaler Tubulus → Henle-Schleife → distaler Tubulus → Sammelrohr. Glomeruläre Filtrationsrate (GFR): ca. 120 ml/min = 180 L Primärharn/Tag. Nur 1-2 L werden als Endharn ausgeschieden (99% Rückresorption!). [Q-AP]
+
+**A&P-03** Nierenfunktionen (5 Hauptaufgaben): 1) Ausscheidung harnpflichtiger Substanzen (Harnstoff, Kreatinin, Harnsäure). 2) Wasser- und Elektrolythaushalt (Na⁺, K⁺, Ca²⁺). 3) Säure-Basen-Haushalt (H⁺-Sekretion, HCO₃⁻-Rückresorption). 4) Blutdruckregulation (RAAS + Volumenregulation). 5) Hormonproduktion: Erythropoetin (EPO → Erythropoese), aktives Vitamin D (Calcitriol → Kalziumaufnahme Darm), Renin (→ RAAS). [Q-AP]
+
+**A&P-04** Tubuläre Prozesse: Proximaler Tubulus: Rückresorption von 65% Na⁺/H₂O, Glukose (vollständig!), Aminosäuren, Bikarbonat. Henle-Schleife: Gegenstromprinzip → Konzentration des Urins. Distaler Tubulus + Sammelrohr: Feinregulation unter Hormonkontrolle — ADH (Wasserrückresorption↑), Aldosteron (Na⁺-Rückresorption↑, K⁺-Sekretion↑), ANP (Na⁺-Ausscheidung↑). [Q-AP]
+
+**A&P-05** RAAS (Renin-Angiotensin-Aldosteron-System): Niere registriert Blutdruckabfall/Na⁺-Mangel → Renin (juxtaglomeruläre Zellen) → Angiotensinogen (Leber) wird zu Angiotensin I → ACE (Lunge) wandelt in Angiotensin II → Vasokonstriktion + Aldosteron-Freisetzung (NNR) → Na⁺/H₂O-Retention → RR↑. Medikamentöse Blockade: ACE-Hemmer (Ramipril), AT1-Blocker (Valsartan). [Q-AP]
+
+**A&P-06** Elektrolythaushalt: Natrium (Na⁺, 135-145 mmol/l): wichtigstes extrazelluläres Kation, bestimmt Osmolarität → Wasserverteilung. Kalium (K⁺, 3,5-5,0 mmol/l): wichtigstes intrazelluläres Kation, essentiell für Herzrhythmus (Hyper-/Hypokaliämie → Herzrhythmusstörungen!). Kalzium (Ca²⁺, 2,2-2,6 mmol/l): Knochen, Muskelkontraktion, Blutgerinnung. Niere reguliert alle drei über Filtration/Rückresorption/Sekretion. [Q-AP]
+
+**A&P-07** Säure-Basen-Haushalt: Normaler Blut-pH: 7,35-7,45 (lebensbedrohlich < 7,0 oder > 7,8). 3 Puffersysteme: Bikarbonat-Puffer (HCO₃⁻/CO₂, wichtigster), Phosphat-Puffer, Protein-Puffer (Hämoglobin). Lunge reguliert CO₂ (schnell, Minuten). Niere reguliert HCO₃⁻ und H⁺ (langsam, Stunden-Tage). Azidose: pH < 7,35 (respiratorisch = CO₂↑ oder metabolisch = HCO₃⁻↓). Alkalose: pH > 7,45. [Q-AP]
+
+**A&P-08** Nierendurchblutung: Ca. 1200 ml/min (25% des HZV!). A. renalis → Aa. interlobares → Aa. arcuatae → Aa. interlobulares → Vas afferens → Glomerulus → Vas efferens → peritubuläre Kapillaren (Nährstoffversorgung + Rückresorption). Autoregulation: konstante GFR bei RR 80-180 mmHg (myogener Mechanismus + tubuloglomeruläres Feedback). Unter RR 80: GFR sinkt → akutes Nierenversagen. [Q-AP]
 
 ---
 
