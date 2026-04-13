@@ -39,46 +39,11 @@ const LE_MANIFEST: LeManifestEntry[] = [
     title: "Personen- und situationsorientiert professionell pflegen",
     titleShort: "Professionell pflegen",
     zeitrichtwert: 40,
-    sessions: ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8"],
+    sessions: ["s1", "s2", "s3", "s4", "s5", "s6"],
     hasGlossar: true,
     status: "geprueft",
   },
-  // === CE 02 (neu, Pipeline v2) ===
-  {
-    leId: "le-06",
-    ceId: "ce-02",
-    title: "Menschen aller Altersstufen in ihrer Mobilität unterstützen",
-    titleShort: "Mobilität unterstützen",
-    zeitrichtwert: 40,
-    sessions: ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8"],
-    hasGlossar: true,
-    status: "steps",
-  },
-  // === CE 02 (Ernährung, Pipeline v2 + Dozentin) — 12 themenbasierte Pfade ===
-  {
-    leId: "le-08",
-    ceId: "ce-02",
-    title: "Menschen aller Altersstufen bei der Nahrungsaufnahme unterstützen",
-    titleShort: "Ernährung unterstützen",
-    zeitrichtwert: 30,
-    sessions: ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11", "s12"],
-    hasGlossar: true,
-    status: "steps",
-    sessionLabels: {
-      s1:  { title: "Verdauungstrakt", titleShort: "Verdauung", tag: "anatomie", bloomRange: "1–3" },
-      s2:  { title: "Nährstoffe & Energiebedarf", titleShort: "Nährstoffe", tag: "pflege", bloomRange: "1–3" },
-      s3:  { title: "Ernährung in Lebensphasen", titleShort: "Lebensphasen", tag: "pflege", bloomRange: "1–2" },
-      s4:  { title: "Mangelernährung & Refeeding", titleShort: "Mangel", tag: "krankheitslehre", bloomRange: "1–3" },
-      s5:  { title: "Dehydratation & Exsikkose", titleShort: "Dehydratation", tag: "krankheitslehre", bloomRange: "1–3" },
-      s6:  { title: "Ernährungszustand erfassen", titleShort: "Assessment", tag: "pflege", bloomRange: "1–3" },
-      s7:  { title: "Essen & Trinken anreichen", titleShort: "Anreichen", tag: "pflege", bloomRange: "1–4" },
-      s8:  { title: "Schluckstörungen & Aspiration", titleShort: "Dysphagie", tag: "krankheitslehre", bloomRange: "1–4" },
-      s9:  { title: "Künstliche Ernährung", titleShort: "Künstl. Ernähr.", tag: "pflege", bloomRange: "1–4" },
-      s10: { title: "Kostformen & Diäten", titleShort: "Kostformen", tag: "pflege", bloomRange: "1–2" },
-      s11: { title: "Flüssigkeitsbilanz", titleShort: "Bilanz", tag: "pflege", bloomRange: "1–2" },
-      s12: { title: "Ethik & Recht", titleShort: "Ethik", tag: "pflege", bloomRange: "1–2" },
-    },
-  },
+  // LE-06 und LE-08 werden neu produziert (Pipeline v5) — Manifest-Einträge kommen zurück wenn Content fertig
   // Neue LEs werden hier eingefügt wenn Content generiert wird
 ];
 
@@ -110,40 +75,7 @@ const LOADERS: Record<string, LeLoaders> = {
     glossar: async () => (await import("./le-01/glossar")).GLOSSAR,
     karteikarten: async () => (await import("./le-01/karteikarten")).KARTEIKARTEN_LE01,
   },
-  "le-06": {
-    sessions: {
-      s1: async () => (await import("./le-06/steps-s1")).STEPS_S1,
-      s2: async () => (await import("./le-06/steps-s2")).STEPS_S2,
-      s3: async () => (await import("./le-06/steps-s3")).STEPS_S3,
-      s4: async () => (await import("./le-06/steps-s4")).STEPS_S4,
-      s5: async () => (await import("./le-06/steps-s5")).STEPS_S5,
-      s6: async () => (await import("./le-06/steps-s6")).STEPS_S6,
-      s7: async () => (await import("./le-06/steps-s7")).STEPS_S7,
-      s8: async () => (await import("./le-06/steps-s8")).STEPS_S8,
-    },
-    metadata: async () => (await import("./le-06/steps-s1")).METADATA,
-    glossar: async () => (await import("./le-06/glossar")).GLOSSAR_LE06,
-    karteikarten: async () => (await import("./le-06/karteikarten")).KARTEIKARTEN_LE06,
-  },
-  "le-08": {
-    sessions: {
-      s1: async () => (await import("./le-08/steps-s1")).STEPS_S1,
-      s2: async () => (await import("./le-08/steps-s2")).STEPS_S2,
-      s3: async () => (await import("./le-08/steps-s3")).STEPS_S3,
-      s4: async () => (await import("./le-08/steps-s4")).STEPS_S4,
-      s5: async () => (await import("./le-08/steps-s5")).STEPS_S5,
-      s6: async () => (await import("./le-08/steps-s6")).STEPS_S6,
-      s7: async () => (await import("./le-08/steps-s7")).STEPS_S7,
-      s8: async () => (await import("./le-08/steps-s8")).STEPS_S8,
-      s9: async () => (await import("./le-08/steps-s9")).STEPS_S9,
-      s10: async () => (await import("./le-08/steps-s10")).STEPS_S10,
-      s11: async () => (await import("./le-08/steps-s11")).STEPS_S11,
-      s12: async () => (await import("./le-08/steps-s12")).STEPS_S12,
-    },
-    metadata: async () => (await import("./le-08/steps-s1")).METADATA,
-    glossar: async () => (await import("./le-08/glossar")).GLOSSAR_LE08,
-    karteikarten: async () => (await import("./le-08/karteikarten")).KARTEIKARTEN_LE08,
-  },
+  // LE-06 und LE-08 Loader kommen zurück nach Neuproduktion (Pipeline v5)
 };
 
 /**

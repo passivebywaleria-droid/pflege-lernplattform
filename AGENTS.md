@@ -162,4 +162,15 @@ export const mockLearnModules: LearnModule[] = [
 
 ## Learnings
 
-_Wird ergaenzt wenn neue Patterns entdeckt werden._
+### Urheberrecht / I Care Abstandstest
+- `npx tsx scripts/check-artikel-abstand.ts le-{N}` prueft N-Gramm-Abstand gegen alle I Care Extrakte
+- Schwellenwerte: ≥3 Treffer = WARN, ≥6 = FAIL (pro Block)
+- Statistik-Fakten (Zahlen, Prozente) sind haeufige False Positives — manuell pruefen
+- Primärquellen statt I-Care-Referenzen: `(§ 5 PflBG)`, `(ICN 2021)`, `(Fiechter/Meier 1981)`
+- KI-Prüfer Block U1 ist K.O.-Kriterium in der Pipeline
+
+### Lern-Snack Tab
+- 6. Tab im Tab-Modell (zwischen Wissen und Üben)
+- localStorage-Persistenz: `lernSnack:{leId}:{itemId}`
+- Content-Typ: `LernSnack[]` in `content/_types.ts`
+- Template: `specs/templates/lern-snack-plan.tmpl.md`

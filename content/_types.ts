@@ -851,6 +851,25 @@ export interface ArtikelKapitel {
   glossarBegriffe?: string[];     // Fachbegriffe die in diesem Kapitel erklärt werden
 }
 
+// === LERN-SNACK-TAB: Kompakte Kernfakten-Checkliste ===
+
+/** Ein einzelner Kernfakt zum Abhaken */
+export interface LernSnackItem {
+  id: string;                       // z.B. "le01-snack-kap01-01"
+  faktC1: string;                   // Kernaussage (C1-Niveau)
+  faktB1?: string;                  // Vereinfacht (B1-Niveau)
+  kapitelRef: string;               // Verweis auf ArtikelKapitel-ID
+}
+
+/** Lern-Snack für ein Kapitel — 5-8 Kernfakten */
+export interface LernSnack {
+  kapitelId: string;                // Gleiche ID wie ArtikelKapitel
+  titel: string;
+  titelB1?: string;
+  tag: ContentTag;
+  items: LernSnackItem[];
+}
+
 // === FALL-TAB: Case-Based Patientenverlauf ===
 
 /** Eine Station im Fallverlauf (z.B. "Tag 1: Aufnahme") */

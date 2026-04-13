@@ -200,6 +200,12 @@
     "weekend": "Wochenende!",
     "weekendHint": "Genieße deine freie Zeit. Am Montag geht es weiter."
   },
+  "lernSnack": {
+    "title": "Lern-Snack",
+    "subtitle": "Kernwissen auf einen Blick — hake ab, was du kannst.",
+    "progress": "{count} von {total} Kernfakten",
+    "allDone": "Alle Kernfakten abgehakt!"
+  },
   "pruefung": {
     "title": "Prüfungsmodus",
     "subtitle": "Simulierte Prüfungen im echten Format",

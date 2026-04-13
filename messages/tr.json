@@ -200,6 +200,12 @@
     "weekend": "Hafta sonu!",
     "weekendHint": "Boş zamanının tadını çıkar. Pazartesi devam ederiz."
   },
+  "lernSnack": {
+    "title": "Öğrenme Atıştırması",
+    "subtitle": "Temel bilgiler bir bakışta — bildiklerini işaretle.",
+    "progress": "{count} / {total} temel bilgi",
+    "allDone": "Tüm temel bilgiler işaretlendi!"
+  },
   "pruefung": {
     "title": "Sınav Modu",
     "subtitle": "Gerçek formatta simüle edilmiş sınavlar",

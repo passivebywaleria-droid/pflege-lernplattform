@@ -16,23 +16,23 @@ export const LE01_ARTIKEL: ArtikelKapitel[] = [
     bloecke: [
       {
         type: "text",
-        contentC1: `Die Geschichte der Pflege reicht weit zurück. Bereits um 500 v. Chr. wurden in Indien Pflegefachkräfte als eigenständige Berufsgruppe erwähnt, die neben Ärzten in Vorläufern heutiger Krankenhäuser arbeiteten. [I Care Pflege S.20] Pflege war also kein \u201Emodernes\u201C Phänomen, sondern von Beginn an eine gesellschaftlich anerkannte Tätigkeit.
+        contentC1: `Wer denkt, Pflege sei ein moderner Beruf, irrt. Schon in altindischen Schriften aus der Zeit um 500 v. Chr. tauchen Beschreibungen von Menschen auf, die Kranke versorgten — organisiert, mit festen Aufgaben, neben den Ärzten. Es sind die frühesten bekannten Belege dafür, dass Pflege keine zufällige Hilfeleistung war, sondern eine gesellschaftlich anerkannte Tätigkeit.
 
-Den entscheidenden Impuls für die Professionalisierung gab Florence Nightingale ab 1845. Sie hospitierte in der Kaiserswerther Diakonie, pflegte im Krimkrieg verwundete britische Soldaten und veröffentlichte 1859 \u201ENotes on Nursing\u201C \u2014 das erste systematische Werk zur Pflege. 1860 gründete sie die erste Schwesternschule Englands. Nightingale gilt als erste Pflegetheoretikerin. [I Care Pflege S.21]
+Die Frage, wann Pflege zur Profession wurde, führt unweigerlich zu einer Engländerin: Florence Nightingale. Als junge Frau aus wohlhabendem Haus widersetzte sie sich den Konventionen ihrer Zeit. 1845 lernte sie in der Kaiserswerther Diakonie bei Düsseldorf, wie systematische Krankenpflege aussehen konnte. Jahre später, während des Krimkriegs (1853–1856), organisierte sie die Versorgung verwundeter britischer Soldaten — und senkte die Sterblichkeitsrate dramatisch. 1859 fasste sie ihre Beobachtungen in „Notes on Nursing" zusammen, dem ersten methodischen Pflegewerk überhaupt. Ein Jahr später eröffnete sie in London die erste professionelle Pflegeschule.
 
-In Deutschland trieb Agnes Karll die Entwicklung voran. 1903 forderte sie eine dreijährige Ausbildung für Pflegerinnen und gründete die erste deutsche Berufsorganisation, aus der sich der Deutsche Berufsverband für Pflegeberufe (DBfK) entwickelte. 1907 wurde sie Präsidentin des International Council of Nurses (ICN). [I Care Pflege S.21] Nur ein Jahr zuvor, 1906, hatte Preußen Vorschriften über die staatliche Prüfung von Pflegepersonen eingeführt. Pflege wurde damit erstmals ein gesetzlich anerkannter und geregelter Beruf. [I Care Pflege S.21]`,
-        contentB1: `Die Geschichte der Pflege ist sehr alt. Schon vor 2500 Jahren gab es Pflege als Beruf. In Indien arbeiteten Pflegekräfte um 500 v. Chr. neben Ärzten. Sie arbeiteten in frühen Formen von Krankenhäusern. [I Care Pflege S.20] Pflege ist also kein neuer Beruf.
+In Deutschland schrieb Agnes Karll Geschichte. Als freiberufliche Krankenschwester erlebte sie um 1900 die miserablen Arbeitsbedingungen ihrer Kolleginnen — unbezahlte Überstunden, keine Altersvorsorge, totale Abhängigkeit von den Arbeitgebern. 1903 gründete sie eine Standesorganisation, aus der später der DBfK (Deutscher Berufsverband für Pflegeberufe) hervorging. Vier Jahre später wurde sie zur Präsidentin des ICN gewählt. Parallel dazu führte Preußen 1906 die erste staatliche Pflegeprüfung ein — ein Meilenstein, denn damit war Pflege erstmals gesetzlich als Beruf verankert.`,
+        contentB1: `Pflege ist ein sehr alter Beruf. Schon vor 2500 Jahren gab es in Indien Menschen, die Kranke versorgten. Sie arbeiteten neben Ärzten. Pflege ist also kein neuer Beruf.
 
-Eine sehr wichtige Person war Florence Nightingale. Sie lebte in England. Ab 1845 lernte sie Pflege in Deutschland. Der Ort hieß Kaiserswerth. Dann pflegte sie verwundete Soldaten im Krimkrieg. 1859 schrieb sie das Buch \u201ENotes on Nursing\u201C. Das war das erste Fachbuch über Pflege. 1860 gründete sie die erste Pflege-Schule in England. Man nennt sie die Begründerin der modernen Pflege. [I Care Pflege S.21]
+Eine sehr wichtige Person war Florence Nightingale aus England. 1845 lernte sie in Deutschland, wie gute Pflege funktioniert. Der Ort hieß Kaiserswerth bei Düsseldorf. Später pflegte sie verwundete Soldaten im Krimkrieg. Sie machte die Pflege viel besser — weniger Soldaten starben. 1859 schrieb sie das Buch „Notes on Nursing". Das war das erste Fachbuch über Pflege. 1860 eröffnete sie die erste Pflege-Schule in London.
 
-In Deutschland war Agnes Karll sehr wichtig. 1903 forderte sie: Die Ausbildung in der Pflege soll drei Jahre dauern. Sie gründete die erste Berufs-Organisation in Deutschland. Daraus entstand später der DBfK. Das ist der Deutsche Berufsverband für Pflegeberufe. 1907 wurde Agnes Karll Präsidentin vom ICN. ICN bedeutet International Council of Nurses. [I Care Pflege S.21] Schon 1906 machte Preußen ein Gesetz: Pflegekräfte mussten eine staatliche Prüfung bestehen. Pflege wurde damit ein anerkannter Beruf. [I Care Pflege S.21]`,
-        quelle: "I Care Pflege S.20\u201322",
+In Deutschland war Agnes Karll sehr wichtig. Sie sah: Die Arbeitsbedingungen für Pflegende sind schlecht. 1903 gründete sie eine Berufs-Organisation. Daraus entstand später der DBfK (Deutscher Berufsverband für Pflegeberufe). 1907 wurde sie Präsidentin vom ICN (International Council of Nurses). Schon 1906 gab es in Preußen die erste staatliche Pflege-Prüfung. Pflege wurde damit ein anerkannter Beruf.`,
+        quelle: "Vgl. Nightingale, Notes on Nursing, 1859; Agnes-Karll-Institut, Historische Quellen",
       },
       {
         type: "warnung",
-        contentC1: `Die dunkelste Phase der Pflegegeschichte fällt in die Zeit des Nationalsozialismus (1933\u20131945). Berufsverbände wurden unter NS-Führung gestellt. Im sogenannten \u201EEuthanasie\u201C-Programm ab 1940 wurden geistig behinderte und psychisch kranke Patienten in \u201EHeil- und Pflegeanstalten\u201C ermordet. Pflegefachkräfte bereiteten Patienten für den Transport in die Tötungsanstalten vor. [I Care Pflege S.22] Diese Verstrickung mahnt bis heute: Professionelle Pflege braucht nicht nur Fachwissen, sondern auch eine ethische Haltung, die das Wohl jedes einzelnen Menschen über institutionelle Anweisungen stellt. [Transfer]`,
-        contentB1: `Die schlimmste Zeit in der Pflege-Geschichte war der Nationalsozialismus (= NS-Zeit, 1933\u20131945). Die Nazis übernahmen die Kontrolle über die Berufsverbände. Ab 1940 töteten sie Menschen mit Behinderungen und psychischen Krankheiten. Das nannte man \u201EEuthanasie\u201C-Programm. Pflegekräfte halfen dabei. Sie bereiteten Patienten für den Transport vor. [I Care Pflege S.22] Das zeigt uns heute: Pflege braucht mehr als Fachwissen. Pflege braucht auch eine ethische Haltung. Das bedeutet: Man muss immer das Wohl der Patienten an die erste Stelle setzen. [Transfer]`,
-        quelle: "I Care Pflege S.22",
+        contentC1: `Zur Pflegegeschichte gehört auch ihr dunkelstes Kapitel: die Zeit des Nationalsozialismus (1933–1945). Das NS-Regime instrumentalisierte den Pflegeberuf für seine Ideologie. Berufsverbände wurden gleichgeschaltet. Im sogenannten „Euthanasie"-Programm (Aktion T4) ab 1940 wurden hunderttausende Menschen mit Behinderungen und psychischen Erkrankungen systematisch ermordet — in Einrichtungen, die sich „Heil- und Pflegeanstalten" nannten. Pflegepersonal war daran aktiv beteiligt: bei der Selektion, beim Transport, bei der Verabreichung tödlicher Medikamente. Diese Verstrickung ist kein historisches Detail am Rande. Sie ist die zentrale Mahnung unseres Berufsstandes: Fachkompetenz allein schützt nicht vor Unrecht. Professionelle Pflege verlangt eine ethische Haltung, die das Wohl jedes einzelnen Menschen über jede Anweisung stellt.`,
+        contentB1: `Die schlimmste Zeit der Pflege-Geschichte war der Nationalsozialismus (1933–1945). Die Nazis übernahmen die Kontrolle über die Pflege-Verbände. Ab 1940 ermordeten sie systematisch Menschen mit Behinderungen und psychischen Krankheiten. Das nannte man „Euthanasie"-Programm. Pflegekräfte halfen dabei. Sie wählten Patienten aus. Sie bereiteten Transporte vor. Sie gaben tödliche Medikamente. Das zeigt uns heute: Pflege braucht mehr als Fachwissen. Pflege braucht eine ethische Haltung. Das bedeutet: Man muss immer das Wohl der Patienten über jede Anweisung stellen.`,
+        quelle: "Vgl. Steppe, Krankenpflege im Nationalsozialismus, 1993; Gedenkstätte T4",
       },
     ],
   },
@@ -48,27 +48,68 @@ In Deutschland war Agnes Karll sehr wichtig. 1903 forderte sie: Die Ausbildung i
     bloecke: [
       {
         type: "text",
-        contentC1: `Pflege lässt sich auf verschiedene Weisen definieren. Der International Council of Nurses (ICN) beschreibt Pflege als die eigenverantwortliche Versorgung und Betreuung von Menschen aller Altersgruppen, von Familien oder Lebensgemeinschaften sowie von Gruppen und sozialen Gemeinschaften \u2014 ob krank oder gesund, in allen Lebenssituationen. [I Care Pflege S.23] Die WHO ergänzt diese Perspektive: Der gesellschaftliche Auftrag der Pflege sei es, dem Einzelnen, der Familie und ganzen Gruppen dabei zu helfen, ihr physisches, psychisches und soziales Potenzial zu bestimmen und zu verwirklichen. [I Care Pflege S.23]`,
-        contentB1: `Was ist Pflege? Dafür gibt es verschiedene Definitionen (= Erklärungen).
+        contentC1: `Was genau meinen wir, wenn wir von \u201EPflege\u201C sprechen? Zwei internationale Organisationen haben Antworten formuliert, die bis heute als Orientierung dienen.
 
-Der ICN (International Council of Nurses) sagt: Pflege bedeutet, Menschen in allen Altersgruppen eigenverantwortlich zu versorgen und zu betreuen. Das gilt für Familien und für Gruppen. Das gilt für kranke und für gesunde Menschen. [I Care Pflege S.23] Die WHO (Welt-Gesundheits-Organisation) ergänzt: Pflege soll den Menschen helfen. Sie sollen ihre körperlichen, seelischen und sozialen Fähigkeiten erkennen. Und sie sollen diese Fähigkeiten nutzen können. [I Care Pflege S.23]`,
-        quelle: "I Care Pflege S.23",
+Der ICN (International Council of Nurses) betont in seiner Definition die Eigenverantwortlichkeit: Pflege richtet sich an Menschen jeder Altersgruppe \u2014 an Einzelpersonen ebenso wie an Familien und ganze Gemeinschaften. Sie findet in allen Lebenssituationen statt und unterscheidet nicht zwischen gesund und krank. Entscheidend ist, dass Pflegefachkräfte dabei nicht nur assistieren, sondern eigenständig handeln.
+
+Die WHO rückt einen anderen Aspekt in den Vordergrund: Sie sieht den gesellschaftlichen Auftrag der Pflege darin, Menschen dabei zu unterstützen, ihre körperlichen, psychischen und sozialen Möglichkeiten zu erkennen und auszuschöpfen. Pflege wird hier als Befähigung verstanden \u2014 nicht nur als Versorgung.
+
+Beide Perspektiven ergänzen sich: Der ICN beschreibt, WER gepflegt wird und WIE autonom. Die WHO beschreibt, WOZU Pflege da ist.`,
+        contentB1: `Was bedeutet \u201EPflege\u201C eigentlich? Zwei große Organisationen haben das beschrieben.
+
+Der ICN (International Council of Nurses) sagt: Pflege ist für alle Menschen da. Für alte und junge. Für Familien und für Gruppen. Für kranke und für gesunde Menschen. Wichtig ist: Pflegekräfte arbeiten eigenverantwortlich. Das heißt: Sie entscheiden selbst, was zu tun ist.
+
+Die WHO (Welt-Gesundheits-Organisation) sagt: Pflege soll den Menschen helfen. Sie sollen ihre Fähigkeiten erkennen \u2014 körperliche, seelische und soziale. Und sie sollen diese Fähigkeiten nutzen können.
+
+Beide Beschreibungen passen zusammen: Der ICN sagt, für WEN Pflege da ist. Die WHO sagt, WOZU Pflege da ist.`,
+        quelle: "Vgl. ICN, Definition of Nursing, 2002; WHO, 1987",
       },
       {
         type: "merke",
-        contentC1: `Pflege ist mehr als ein Beruf im allgemeinen Sinne. Ein Beruf ist eine dauerhaft angelegte, in der Regel eine Ausbildung voraussetzende Arbeit, die gegen Bezahlung ausgeübt wird. Eine Profession hingegen muss bestimmte Merkmale aufweisen: Wissen auf wissenschaftlicher Grundlage, kontrollierter Berufszugang durch Abschlussprüfung, verbindliche Berufsrichtlinien wie den Ethikkodex des ICN, Berufsverbände, Autonomie des Berufsstands, gesellschaftliche Relevanz sowie angemessenes Entgelt und Fort- und Weiterbildungsmöglichkeiten. [I Care Pflege S.23-24] Professionalisierung bezeichnet den Prozess, in dem sich ein Beruf zu einer Profession weiterentwickelt. [I Care Pflege S.23]`,
-        contentB1: `Pflege ist mehr als nur ein Beruf. Ein Beruf ist eine Arbeit mit Ausbildung und Gehalt. Eine Profession (= gehobener Beruf) hat besondere Merkmale. Es gibt 7 Merkmale: Wissen aus der Wissenschaft, eine Abschluss-Prüfung, Berufsregeln wie den Ethikkodex (= Regeln für richtiges Handeln), Berufsverbände, Selbstständigkeit des Berufs, Bedeutung für die Gesellschaft und gute Bezahlung mit Weiterbildung. [I Care Pflege S.23-24] Professionalisierung (= Weg zur Profession) bedeutet: Ein Beruf entwickelt sich weiter zu einer Profession. [I Care Pflege S.23]`,
-        quelle: "I Care Pflege S.23\u201324",
+        contentC1: `Ist Pflege ein Beruf oder eine Profession? Der Unterschied ist wichtig. Jede bezahlte Arbeit, die eine Ausbildung voraussetzt, ist ein Beruf. Eine Profession geht darüber hinaus \u2014 sie erfüllt zusätzliche Kriterien:
+
+\u2022 Sie stützt sich auf eigene Forschung und wissenschaftliches Wissen.
+\u2022 Der Zugang ist geregelt \u2014 durch eine staatliche Abschlussprüfung.
+\u2022 Es existieren verbindliche Berufsregeln, etwa ein Ethikkodex (wie der ICN-Ethikkodex).
+\u2022 Der Berufsstand organisiert sich selbst in Verbänden und handelt fachlich autonom.
+\u2022 Die Arbeit hat eine hohe Bedeutung für die Gesellschaft.
+\u2022 Weiterbildung und angemessene Vergütung sind selbstverständlich.
+
+Erfüllt die Pflege all das? Viele dieser Punkte sind erreicht \u2014 eigene Pflegewissenschaft, dreijährige Ausbildung mit Staatsexamen, der ICN-Ethikkodex. Andere Punkte, wie die volle berufliche Autonomie, sind noch in Entwicklung. Diesen Weg vom Beruf zur Profession nennt man Professionalisierung.`,
+        contentB1: `Ist Pflege ein Beruf oder eine Profession (= gehobener Beruf)? Das ist ein wichtiger Unterschied.
+
+Ein Beruf ist eine Arbeit mit Ausbildung und Gehalt. Eine Profession hat noch mehr. Sie braucht:
+\u2022 Eigenes Wissen aus der Forschung
+\u2022 Eine geregelte Prüfung für den Berufszugang
+\u2022 Feste Berufsregeln (zum Beispiel einen Ethikkodex)
+\u2022 Eigene Berufsverbände
+\u2022 Fachliche Selbstständigkeit
+\u2022 Große Bedeutung für die Gesellschaft
+\u2022 Gute Bezahlung und Weiterbildung
+
+Hat die Pflege das alles? Vieles davon ja: eigene Wissenschaft, Staatsexamen, Ethikkodex. Aber nicht alles ist schon erreicht. Den Weg dahin nennt man Professionalisierung (= der Weg zur Profession).`,
+        quelle: "Vgl. ICN, Code of Ethics for Nurses, 2021; PflBG 2017",
       },
       {
         type: "text",
-        contentC1: `Das Pflegeberufegesetz (PflBG) unterstreicht den professionellen Anspruch durch die Definition vorbehaltener Tätigkeiten in § 4: die Erhebung und Feststellung des Pflegebedarfs, die Organisation, Gestaltung und Steuerung des Pflegeprozesses sowie die Analyse, Evaluation, Sicherung und Entwicklung der Pflegequalität. Diese Tätigkeiten dürfen nicht an Pflegehelfer delegiert werden. [I Care Pflege S.23]
+        contentC1: `Einen konkreten Ausdruck findet der professionelle Anspruch im Pflegeberufegesetz (PflBG). Dort legt § 4 drei Tätigkeiten fest, die ausschließlich Pflegefachkräften vorbehalten sind \u2014 und nicht an Pflegehelfer delegiert werden dürfen:
 
-Berufliche Pflege grenzt sich von Laienpflege durch vier Merkmale ab: den Abschluss einer pflegerischen Ausbildung, ein tarifliches Gehalt, wissenschaftliche Grundlagen sowie ein definiertes Berufsbild mit Berufskodex. [I Care Pflege S.26] Ende 2017 waren in Deutschland 3,4 Millionen Menschen pflegebedürftig. Davon wurden 1,76 Millionen allein von Angehörigen zu Hause gepflegt \u2014 in zwei von drei Fällen von Frauen. [I Care Pflege S.26] Diese Zahlen verdeutlichen: Ohne pflegende Angehörige wäre die Versorgung nicht tragbar, doch die professionelle Pflege bleibt unverzichtbar, weil sie fachliches Wissen, ethische Standards und systematisches Vorgehen einbringt. [Transfer]`,
-        contentB1: `Das Pflegeberufegesetz (PflBG) beschreibt vorbehaltene Tätigkeiten in § 4. Das sind Aufgaben, die nur Pflegefachkräfte machen dürfen. Pflegehelfer dürfen das nicht. Diese Aufgaben sind: den Pflegebedarf feststellen, den Pflegeprozess planen und steuern, und die Pflege-Qualität prüfen und verbessern. [I Care Pflege S.23]
+1. Den Pflegebedarf einer Person erheben und feststellen
+2. Den Pflegeprozess organisieren, gestalten und steuern
+3. Die Qualität der Pflege analysieren, sichern und weiterentwickeln
 
-Was ist der Unterschied zwischen Laienpflege (= Pflege durch Familie) und beruflicher Pflege? Es gibt 4 Merkmale: eine Pflege-Ausbildung, ein Gehalt nach Tarif, Wissen aus der Wissenschaft und ein festes Berufsbild mit Regeln. [I Care Pflege S.26] Ende 2017 brauchten in Deutschland 3,4 Millionen Menschen Pflege. 1,76 Millionen von ihnen pflegten Angehörige zu Hause. In 2 von 3 Fällen waren das Frauen. [I Care Pflege S.26] Das zeigt: Ohne die Hilfe von Familien geht es nicht. Aber die professionelle Pflege ist trotzdem sehr wichtig. Sie bringt Fachwissen, ethische Regeln und ein systematisches Vorgehen mit. [Transfer]`,
-        quelle: "I Care Pflege S.23, S.26",
+Diese sogenannten vorbehaltenen Tätigkeiten sind das juristische Fundament dafür, dass Pflege kein beliebig austauschbarer Dienst ist, sondern Fachkompetenz erfordert.
+
+Davon zu unterscheiden ist die sogenannte Laienpflege: die Versorgung durch Angehörige und Bezugspersonen, die keine pflegerische Ausbildung haben. Sie ist unverzichtbar \u2014 laut Statistischem Bundesamt wurden 2017 von den rund 3,4 Millionen Pflegebedürftigen in Deutschland über die Hälfte ausschließlich durch Angehörige zu Hause versorgt, davon überwiegend durch Frauen. Ohne diese Leistung wäre das Versorgungssystem nicht tragfähig. Und doch kann Laienpflege die professionelle Pflege nicht ersetzen: Wer den Pflegeprozess steuert, braucht eine fundierte Ausbildung, ethische Leitlinien und ein systematisches Vorgehen.`,
+        contentB1: `Das Pflegeberufegesetz (PflBG) sagt in § 4: Drei Aufgaben dürfen nur Pflegefachkräfte machen. Pflegehelfer dürfen das nicht. Diese drei Aufgaben sind:
+1. Den Pflegebedarf feststellen: Was braucht der Patient?
+2. Den Pflegeprozess steuern: Wie wird die Pflege geplant?
+3. Die Pflegequalität prüfen: Ist die Pflege gut genug?
+
+Das nennt man vorbehaltene Tätigkeiten. Nur Pflegefachkräfte mit Ausbildung dürfen das.
+
+Daneben gibt es die Laienpflege (= Pflege durch Familie). Viele Menschen werden zu Hause von Angehörigen gepflegt. 2017 waren in Deutschland 3,4 Millionen Menschen pflegebedürftig. Mehr als die Hälfte davon wurde nur durch die Familie versorgt \u2014 meistens durch Frauen. Das ist sehr wichtig. Aber Angehörige können die Fachpflege nicht ersetzen. Denn den Pflegeprozess steuern \u2014 das braucht Ausbildung, Regeln und ein System.`,
+        quelle: "Vgl. § 4 PflBG; Statistisches Bundesamt, Pflegestatistik 2017",
       },
     ],
   },
@@ -84,23 +125,23 @@ Was ist der Unterschied zwischen Laienpflege (= Pflege durch Familie) und berufl
     bloecke: [
       {
         type: "text",
-        contentC1: `Das Pflegeverständnis beschreibt, wie Pflege aus der Perspektive einzelner Personen, Institutionen oder des Gesetzgebers aufgefasst und ausgeübt werden soll. Wesentliche Aspekte sind das Verständnis von Gesundheit und Krankheit, das Menschenbild, die innere Haltung und die Ziele pflegerischen Handelns. [I Care Pflege S.27]
+        contentC1: `Fragen Sie drei Pflegefachkräfte, was gute Pflege ausmacht — und Sie bekommen drei verschiedene Antworten. Die eine betont die körperliche Versorgung: Wundmanagement, Medikamentengabe, Vitalzeichen. Die andere sagt: Es geht darum, den ganzen Menschen zu sehen — mit seinen Ängsten, seiner Biografie, seinen Wünschen. Die dritte meint: Pflege bedeutet vor allem, Menschen zu befähigen, so viel wie möglich selbst zu tun.
 
-Jede Pflegefachkraft bringt ein individuelles Pflegeverständnis mit, das durch persönliche und soziale Einflüsse geprägt ist: eigene Erfahrungen mit Krankheit und Pflege, soziale Herkunft, kultureller Hintergrund, gesellschaftliche Erwartungshaltungen, Geschlechterrollen, Ausbildung und berufliche Vorerfahrungen. [I Care Pflege S.27] Zwei Pflegende können denselben Patienten betreuen und dabei von unterschiedlichen Grundannahmen ausgehen \u2014 etwa ob Pflege primär körperliche Versorgung oder ganzheitliche Begleitung bedeutet. [Transfer]
+Keine dieser Antworten ist falsch. Aber sie zeigen: Hinter dem, was wir täglich tun, steht ein Pflegeverständnis — ein inneres Bild davon, was Pflege sein soll. Dieses Bild wird geformt durch viele Einflüsse: eigene Erfahrungen mit Krankheit oder Pflege in der Familie, kultureller Hintergrund, Geschlechterrollen, die Art der Ausbildung und die Stationen der bisherigen Berufslaufbahn. Zwei Kolleginnen können denselben Patienten betreuen und trotzdem aus völlig unterschiedlichen Grundannahmen heraus handeln.
 
-Das Berufsverständnis unterscheidet sich vom individuellen Pflegeverständnis dadurch, dass es Haltung, Handlungsanweisungen und Normen beschreibt, die für alle Angehörigen der Berufsgruppe allgemeingültig sein sollen. [I Care Pflege S.27] Es gibt also einen verbindlichen Rahmen, innerhalb dessen sich individuelle Auffassungen bewegen dürfen.`,
-        contentB1: `Was ist Pflege-Verständnis? Es beschreibt, wie man Pflege sieht und macht. Wichtige Fragen sind: Was ist Gesundheit? Was ist Krankheit? Welches Bild hat man vom Menschen? Welche Ziele hat die Pflege? [I Care Pflege S.27]
+Vom individuellen Pflegeverständnis zu unterscheiden ist das Berufsverständnis: der gemeinsame Rahmen, auf den sich alle Pflegefachpersonen verpflichten. Berufsverbände wie der ICN formulieren diesen Rahmen in Ethikkodizes und Positionspapieren. Einrichtungen konkretisieren ihn in Pflegeleitbildern. Der Einzelne darf innerhalb dieses Rahmens eigene Schwerpunkte setzen — aber die Grundwerte gelten für alle.`,
+        contentB1: `Was bedeutet Pflege-Verständnis? Es ist das innere Bild davon, was gute Pflege sein soll. Fragen Sie drei Pflegekräfte — und Sie bekommen drei Antworten. Eine sagt: Pflege ist Körperpflege und Medikamente. Eine andere sagt: Pflege ist den ganzen Menschen sehen. Die dritte sagt: Pflege ist Hilfe zur Selbsthilfe. Alle drei haben recht.
 
-Jede Pflegekraft hat ein eigenes Pflege-Verständnis. Das hängt von vielen Dingen ab: eigene Erfahrungen mit Krankheit, die Familie und Herkunft, die Kultur, die Rolle von Männern und Frauen, die Ausbildung und die Arbeit vorher. [I Care Pflege S.27] Zwei Pflegende betreuen denselben Patienten. Aber sie denken vielleicht anders darüber. Eine Person denkt: Pflege ist vor allem Körperpflege. Die andere denkt: Pflege ist Begleitung vom ganzen Menschen. [Transfer]
+Jede Pflegekraft hat ein eigenes Pflege-Verständnis. Es kommt von vielen Dingen: eigene Erfahrungen, Familie, Kultur, Ausbildung und Beruf. Zwei Pflegende betreuen denselben Patienten — aber sie denken vielleicht ganz anders darüber.
 
-Das Berufsverständnis ist etwas anderes als das Pflege-Verständnis. Das Berufsverständnis gilt für alle Pflegekräfte. Es beschreibt Regeln und Normen für den ganzen Beruf. [I Care Pflege S.27] Es gibt also feste Regeln. Aber jede Pflegekraft darf innerhalb dieser Regeln eigene Ideen haben.`,
-        quelle: "I Care Pflege S.27",
+Das Berufsverständnis ist etwas anderes. Es gilt für alle Pflegekräfte. Es ist der gemeinsame Rahmen: Werte und Regeln, die für den ganzen Beruf gelten. Zum Beispiel der Ethikkodex vom ICN. Oder das Pflegeleitbild einer Einrichtung. Die Grundwerte gelten für alle — aber eigene Schwerpunkte darf man setzen.`,
+        quelle: "Vgl. ICN, Code of Ethics, 2021; Pflegeleitbild-Konzepte",
       },
       {
         type: "text",
-        contentC1: `Das Pflegeverständnis hat sich im Laufe der Jahrzehnte grundlegend gewandelt. Bis in die 1950er-Jahre wurde Pflege eher intuitiv ausgeübt; die Motivation war häufig Nächstenliebe und Barmherzigkeit. In den 1960er- und 1970er-Jahren vereinheitlichten sich Methoden und Abläufe. Nach 1980 setzte eine gezielte Professionalisierung ein: Pflegewissenschaft etablierte sich als eigenständige Disziplin, das Bewusstsein für Eigenständigkeit, Ganzheitlichkeit und Interdisziplinarität wuchs. [I Care Pflege S.27] Dieser Wandel ist nicht abgeschlossen. Auch heute noch ringen Pflegende um die Balance zwischen fachlicher Professionalität und menschlicher Zugewandtheit. [Transfer]`,
-        contentB1: `Das Pflege-Verständnis hat sich über die Jahre stark verändert. Bis in die 1950er-Jahre war Pflege eher nach Gefühl. Die Motivation war oft Nächsten-Liebe. In den 1960er- und 1970er-Jahren wurden die Methoden einheitlicher. Ab 1980 begann die Professionalisierung (= der Weg zum anerkannten Beruf). Die Pflege-Wissenschaft wurde eine eigene Disziplin (= Fachrichtung). [I Care Pflege S.27] Dieser Wandel geht weiter. Auch heute suchen Pflegende die richtige Balance. Sie wollen fachlich gut und gleichzeitig menschlich nah sein. [Transfer]`,
-        quelle: "I Care Pflege S.27",
+        contentC1: `Das Pflegeverständnis in Deutschland hat sich in wenigen Jahrzehnten grundlegend gewandelt. Bis in die 1950er-Jahre dominierte ein karitativer Ansatz: Pflege galt als Dienst am Nächsten, getragen von Mitgefühl und religiöser Motivation. Systematisches Fachwissen spielte eine untergeordnete Rolle. In den 1960er- und 1970er-Jahren begann eine Phase der Standardisierung — Abläufe wurden vereinheitlicht, Dokumentation eingeführt, erste Ausbildungsordnungen geschaffen. Der Wendepunkt kam in den 1980er-Jahren: Pflegewissenschaft etablierte sich als eigenständige akademische Disziplin, zunächst in den USA und Skandinavien, dann auch im deutschsprachigen Raum. Begriffe wie Ganzheitlichkeit, Patientenorientierung und evidenzbasierte Praxis prägten ein neues Selbstbild. Dieser Wandel ist bis heute nicht abgeschlossen. Auch in Ihrer Ausbildung werden Sie immer wieder vor der Frage stehen: Wie verbinde ich fachliche Professionalität mit menschlicher Nähe?`,
+        contentB1: `Das Pflege-Verständnis hat sich über die Jahre stark verändert. Bis in die 1950er-Jahre war Pflege vor allem Nächsten-Liebe. Man half, weil man Mitgefühl hatte. Fachwissen war weniger wichtig. In den 1960er- und 1970er-Jahren wurden die Abläufe einheitlicher. Man fing an, alles aufzuschreiben (Dokumentation). Ab den 1980er-Jahren wurde Pflege eine eigene Wissenschaft. Neue Begriffe kamen: Ganzheitlichkeit (= den ganzen Menschen sehen), Patientenorientierung, evidenzbasierte Praxis (= Pflege nach dem neuesten Wissen). Dieser Wandel geht weiter. Auch in Ihrer Ausbildung werden Sie sich fragen: Wie kann ich fachlich gut UND menschlich nah sein?`,
+        quelle: "Vgl. Robert Bosch Stiftung, Pflege braucht Eliten, 1992; DGP Positionspapiere",
       },
     ],
   },
@@ -116,29 +157,29 @@ Das Berufsverständnis ist etwas anderes als das Pflege-Verständnis. Das Berufs
     bloecke: [
       {
         type: "text",
-        contentC1: `Pflege ist nicht nur eine Tätigkeit am Bett, sondern auch ein Berufsstand mit politischer Vertretung. Drei Organisationsformen prägen die berufspolitische Landschaft: Berufsverbände, Gewerkschaften und Pflegekammern.
+        contentC1: `Stellen Sie sich vor: Sie arbeiten seit Monaten auf einer unterbesetzten Station. Überstunden häufen sich, die Bezahlung stimmt nicht mit der Verantwortung überein, und bei den Gesundheitsreformen werden Pflegende nicht gefragt. Wer setzt sich für Sie ein? In Deutschland gibt es dafür drei verschiedene Organisationstypen — und es lohnt sich, ihre Unterschiede zu kennen.
 
-Berufsverbände repräsentieren die Pflegeprofession in der Öffentlichkeit. Sie setzen sich bei Ministerien und Behörden für die Belange der Pflegenden ein, beraten Mitglieder in Rechtsfragen und organisieren Fort- und Weiterbildungen. Der Deutsche Pflegerat (DPR) ist der Dachverband der bedeutendsten Pflegeverbände in Deutschland. [I Care Pflege S.30]
+Berufsverbände vertreten die fachlichen und berufspolitischen Interessen der Pflege. Der bekannteste ist der DBfK (Deutscher Berufsverband für Pflegeberufe), der zum internationalen Netzwerk des ICN gehört. Über ihm steht als Dachorganisation der Deutsche Pflegerat (DPR), der alle großen Pflegeverbände bündelt und gegenüber der Politik mit einer Stimme spricht. Berufsverbände beraten ihre Mitglieder, nehmen Stellung zu Gesetzentwürfen und organisieren fachliche Weiterbildung. Was sie nicht können: direkt über Ihr Gehalt verhandeln.
 
-Gewerkschaften sind demokratische Vereinigungen von Arbeitnehmern, die sich freiwillig zusammengeschlossen haben, um gemeinsame Interessen durchzusetzen. Der entscheidende Unterschied zu Berufsverbänden: Gewerkschaften schließen Tarifverträge ab und verhandeln direkt über Gehälter und Arbeitsbedingungen. [I Care Pflege S.31]`,
-        contentB1: `Pflege ist nicht nur Arbeit am Bett. Pflege hat auch eine politische Seite. Es gibt drei wichtige Organisationen: Berufsverbände, Gewerkschaften und Pflegekammern.
+Genau das ist die Domäne der Gewerkschaften. Als Zusammenschlüsse von Arbeitnehmerinnen und Arbeitnehmern haben sie ein juristisches Werkzeug, das Berufsverbänden fehlt: die Tarifverhandlung. ver.di — die größte Gewerkschaft im Dienstleistungssektor — verhandelt direkt mit Arbeitgebern über Löhne, Arbeitszeiten und Zuschläge. Wenn Verhandlungen scheitern, darf eine Gewerkschaft zum Streik aufrufen. Ein Berufsverband darf das nicht.`,
+        contentB1: `Stellen Sie sich vor: Sie arbeiten auf einer Station. Es gibt zu wenig Personal. Sie machen viele Überstunden. Das Gehalt ist zu niedrig. Wer hilft Ihnen? Dafür gibt es drei Arten von Organisationen: Berufsverbände, Gewerkschaften und Pflegekammern.
 
-Ein Berufsverband vertritt den Pflege-Beruf in der Öffentlichkeit. Er spricht mit der Politik für die Pflegenden. Er berät Mitglieder bei Rechts-Fragen. Und er organisiert Weiterbildungen. Der Deutsche Pflegerat (DPR) ist der Dach-Verband. Das bedeutet: Er ist die große Organisation über allen Pflege-Verbänden in Deutschland. [I Care Pflege S.30]
+Ein Berufsverband vertritt die Pflege in der Politik. Der bekannteste ist der DBfK (Deutscher Berufsverband für Pflegeberufe). Über allen Verbänden steht der Deutsche Pflegerat (DPR). Er spricht für alle Pflege-Verbände zusammen. Berufsverbände beraten ihre Mitglieder und organisieren Weiterbildung. Aber: Sie können nicht über Ihr Gehalt verhandeln.
 
-Gewerkschaften sind Vereinigungen von Arbeitnehmern. Sie sind freiwillig. Der wichtige Unterschied zu Berufsverbänden: Gewerkschaften verhandeln über das Gehalt. Sie schließen Tarif-Verträge (= Verträge über Bezahlung und Arbeitszeit) ab. [I Care Pflege S.31]`,
-        quelle: "I Care Pflege S.30\u201331",
+Das können Gewerkschaften. Die größte Gewerkschaft für Pflegende ist ver.di. Sie verhandelt direkt mit den Arbeitgebern über Löhne, Arbeitszeiten und Zuschläge. Wenn die Verhandlung scheitert, darf eine Gewerkschaft zum Streik aufrufen. Ein Berufsverband darf das nicht.`,
+        quelle: "Vgl. DBfK Satzung; DPR Geschäftsordnung; ver.di Tarifpolitik Gesundheitswesen",
       },
       {
         type: "text",
-        contentC1: `Pflegekammern sind Körperschaften des öffentlichen Rechts mit Pflichtmitgliedschaft für alle Pflegefachkräfte. Ihre Aufgaben umfassen die Erarbeitung einer eigenen Berufsordnung, Qualitätsempfehlungen, das Führen eines Berufsregisters, Regelungen über Fort- und Weiterbildung sowie disziplinarische Maßnahmen bei Regelverstößen. Deutschland hatte 2020 drei Pflegekammern in Rheinland-Pfalz, Schleswig-Holstein und Niedersachsen. [I Care Pflege S.31-32]`,
-        contentB1: `Pflegekammern sind anders als Verbände und Gewerkschaften. Sie sind Körperschaften des öffentlichen Rechts (= offizielle staatliche Einrichtungen). Alle Pflegefachkräfte müssen Mitglied sein. Das nennt man Pflicht-Mitgliedschaft. Die Pflegekammer macht eine eigene Berufsordnung (= Regeln für den Beruf). Sie führt ein Register aller Pflegekräfte. Sie regelt die Weiterbildung. Und sie kann bei Regel-Verstößen Strafen geben. 2020 gab es in Deutschland drei Pflegekammern. Sie waren in Rheinland-Pfalz, Schleswig-Holstein und Niedersachsen. [I Care Pflege S.31-32]`,
-        quelle: "I Care Pflege S.31\u201332",
+        contentC1: `Pflegekammern funktionieren nach einem anderen Prinzip. Sie sind Körperschaften des öffentlichen Rechts — vergleichbar mit der Ärztekammer oder der Anwaltskammer. Alle Pflegefachpersonen eines Bundeslandes müssen Mitglied sein (Pflichtmitgliedschaft). Dafür erhält die Berufsgruppe etwas Einzigartiges: die Selbstverwaltung. Die Kammer erstellt eine verbindliche Berufsordnung, führt ein Berufsregister, definiert Weiterbildungsstandards — und kann bei Verstößen berufsrechtliche Verfahren einleiten. Rheinland-Pfalz richtete 2016 die erste deutsche Pflegekammer ein, Nordrhein-Westfalen folgte 2022 mit dem bundesweit größten Modell.`,
+        contentB1: `Pflegekammern sind noch einmal anders. Sie sind offizielle staatliche Einrichtungen. Alle Pflegefachkräfte in einem Bundesland müssen Mitglied sein. Das nennt man Pflicht-Mitgliedschaft. Dafür kann die Pflege sich selbst verwalten. Die Kammer macht eigene Regeln (Berufsordnung). Sie führt ein Register aller Pflegekräfte. Sie legt Weiterbildungs-Standards fest. Und sie kann bei Regel-Verstößen ein Verfahren einleiten und Strafen geben. Rheinland-Pfalz hatte 2016 die erste Pflegekammer. Nordrhein-Westfalen folgte 2022.`,
+        quelle: "Vgl. Heilberufsgesetze RLP, NRW; PflegeKG NRW 2022",
       },
       {
         type: "merke",
-        contentC1: `Die Debatte um Pflegekammern ist kontrovers. Befürworter argumentieren: Selbstverwaltung schärft das Profil der Pflege, stärkt die Stellung in Politik und Gesellschaft und ermöglicht eine eigene Berufsordnung mit Aufsicht. Kritiker wenden ein: Die Pflichtmitgliedschaft wird als undemokratisch empfunden, es entsteht Bürokratie und bestehende Organisationen könnten die Aufgaben ebenso erfüllen. [I Care Pflege S.31-32] Für Auszubildende ist wichtig zu verstehen: Der Unterschied liegt in der Verbindlichkeit. Ein Berufsverband kann bei Verstößen gegen Standards appellieren, eine Kammer kann Disziplinarverfahren einleiten. [Transfer]`,
-        contentB1: `Es gibt eine Diskussion über die Pflegekammer. Manche sind dafür. Sie sagen: Die Kammer stärkt die Pflege in der Politik. Die Pflege bekommt eigene Regeln und eigene Kontrolle. Andere sind dagegen. Sie sagen: Die Pflicht-Mitgliedschaft ist nicht gerecht. Es entsteht zu viel Bürokratie (= Verwaltung). [I Care Pflege S.31-32] Für Auszubildende ist ein Unterschied wichtig: Ein Berufsverband kann nur bitten und mahnen. Eine Kammer kann ein Verfahren (= offizielle Untersuchung) einleiten. [Transfer]`,
-        quelle: "I Care Pflege S.31\u201332",
+        contentC1: `Die Pflegekammer-Debatte spaltet die Berufsgruppe. Befürworter sehen in ihr die Chance auf echte Mitbestimmung: Wer eine Kammer hat, hat eine Stimme, die Gesetzgeber anhören müssen — vergleichbar mit der Macht der Ärztekammer. Kritiker hingegen empfinden die Pflichtmitgliedschaft als Bevormundung und fürchten zusätzliche Bürokratie bei ohnehin knappen Zeitressourcen. Für Ihre Praxis ist ein Unterschied entscheidend: Wenn eine Kollegin gegen die Berufsordnung verstößt, kann ein Berufsverband nur appellieren. Eine Kammer kann ein Disziplinarverfahren einleiten — mit realen Konsequenzen bis hin zum Berufsverbot.`,
+        contentB1: `Die Pflegekammer ist umstritten. Manche sind dafür: Die Kammer gibt der Pflege eine starke Stimme — wie die Ärztekammer für Ärzte. Andere sind dagegen: Die Pflicht-Mitgliedschaft fühlt sich unfair an. Und es gibt mehr Verwaltungsarbeit. Für Auszubildende ist ein Unterschied wichtig: Ein Berufsverband kann nur bitten und empfehlen. Eine Pflegekammer kann ein Verfahren einleiten — mit echten Konsequenzen.`,
+        quelle: "Vgl. DBfK Positionspapier Pflegekammer; ver.di Stellungnahme",
       },
     ],
   },
@@ -154,13 +195,13 @@ Gewerkschaften sind Vereinigungen von Arbeitnehmern. Sie sind freiwillig. Der wi
     bloecke: [
       {
         type: "text",
-        contentC1: `Das Pflegeberufegesetz (PflBG) trat am 1. Januar 2020 in Kraft und löste die bis dahin getrennten Ausbildungen in Gesundheits- und Krankenpflege, Gesundheits- und Kinderkrankenpflege sowie Altenpflege ab. Das Ziel: Vermittlung von Kompetenzen zu einer selbstständigen, umfassenden und prozessorientierten Pflege von Menschen aller Altersstufen. [I Care Pflege S.38]
+        contentC1: `Bis Ende 2019 gab es in Deutschland drei getrennte Pflegeausbildungen: eine für die Krankenpflege, eine für die Kinderkrankenpflege und eine für die Altenpflege. Wer Krankenpflege gelernt hatte, durfte nicht ohne Weiteres im Pflegeheim arbeiten — und umgekehrt. Das war nicht nur unpraktisch, sondern entsprach auch nicht mehr der Versorgungsrealität: Patienten im Krankenhaus werden immer älter, Bewohner im Pflegeheim immer kränker. Die Grenzen zwischen den Feldern verschwimmen längst.
 
-Die generalistische Pflegeausbildung dauert in Vollzeit drei Jahre, in Teilzeit bis zu fünf Jahre. Der theoretische Unterricht umfasst 2100 Stunden, die praktische Ausbildung mindestens 2500 Stunden. [I Care Pflege S.38]`,
-        contentB1: `Seit dem 1. Januar 2020 gibt es ein neues Gesetz: das Pflegeberufegesetz (PflBG). Vorher gab es drei getrennte Ausbildungen: Kranken-Pflege, Kinder-Kranken-Pflege und Alten-Pflege. Jetzt gibt es eine gemeinsame Ausbildung. Das Ziel: Man lernt, Menschen in jedem Alter selbstständig zu pflegen. [I Care Pflege S.38]
+Das Pflegeberufegesetz (PflBG), seit dem 1. Januar 2020 gültig, zog die Konsequenz: eine einzige generalistische Ausbildung, die auf alle Versorgungsbereiche vorbereitet (Vgl. § 5 PflBG). Drei Jahre Vollzeit (oder bis zu fünf in Teilzeit), aufgeteilt in 2100 Stunden Theorie und mindestens 2500 Stunden Praxis in wechselnden Einsatzfeldern. Das Ziel laut Gesetz: Pflegefachpersonen sollen Menschen aller Altersgruppen eigenverantwortlich und ganzheitlich pflegen können.`,
+        contentB1: `Bis Ende 2019 gab es in Deutschland drei verschiedene Pflege-Ausbildungen: Krankenpflege, Kinderkrankenpflege und Altenpflege. Das war unpraktisch. Zum Beispiel: Wer Krankenpflege gelernt hatte, durfte nicht einfach im Pflegeheim arbeiten. Seit dem 1. Januar 2020 gibt es ein neues Gesetz: das Pflegeberufegesetz (PflBG). Jetzt gibt es nur noch eine Ausbildung für alle. Sie heißt: generalistische Pflegeausbildung. Man lernt, alle Menschen zu pflegen — egal ob jung oder alt, ob im Krankenhaus oder zu Hause.
 
-Die Ausbildung dauert 3 Jahre in Vollzeit. In Teilzeit dauert sie bis zu 5 Jahre. Der Unterricht in der Schule hat 2100 Stunden. Die Praxis hat mindestens 2500 Stunden. [I Care Pflege S.38]`,
-        quelle: "I Care Pflege S.38",
+Die Ausbildung dauert 3 Jahre in Vollzeit (oder bis zu 5 Jahre in Teilzeit). Es gibt 2100 Stunden Theorie in der Schule und mindestens 2500 Stunden Praxis.`,
+        quelle: "Vgl. § 5, § 6 PflBG; PflAPrV (Ausbildungs- und Prüfungsverordnung)",
       },
       {
         type: "tabelle",
@@ -176,21 +217,21 @@ Die Ausbildung dauert 3 Jahre in Vollzeit. In Teilzeit dauert sie bis zu 5 Jahre
           ["Frei", "Zur freien Verteilung", "200"],
           ["Gesamt", "", "2100"],
         ],
-        quelle: "I Care Pflege S.39",
+        quelle: "Vgl. Anlage 1 PflAPrV",
       },
       {
         type: "text",
-        contentC1: `Die ersten beiden Ausbildungsjahre erfolgen generalistisch. Zwischen dem 18. und 20. Ausbildungsmonat können Auszubildende wählen: Sie bleiben in der generalistischen Ausbildung und erwerben den Abschluss Pflegefachfrau bzw. Pflegefachmann \u2014 EU-weit anerkannt \u2014 oder sie spezialisieren sich auf Gesundheits- und Kinderkrankenpflege oder Altenpflege. [I Care Pflege S.38]
+        contentC1: `Ein besonderes Merkmal der neuen Ausbildung: Im dritten Jahr gibt es eine Wahlmöglichkeit. Wer die generalistische Ausbildung durchläuft, schließt als Pflegefachfrau bzw. Pflegefachmann ab — ein Titel, der dank der EU-Berufsanerkennungsrichtlinie (2005/36/EG) in allen Mitgliedstaaten gilt. Alternativ können Auszubildende sich nach dem zweiten Jahr auf Kinderkrankenpflege oder Altenpflege spezialisieren. Dieser Abschluss gilt dann nur in Deutschland.
 
-Zugangsvoraussetzungen sind ein mittlerer Bildungsabschluss oder ein Hauptschulabschluss mit einer abgeschlossenen zweijährigen Berufsausbildung, einer einjährigen Assistenz- oder Helferausbildung oder dem Abschluss einer zehnjährigen allgemeinen Schulbildung. [I Care Pflege S.38]
+Um zur Ausbildung zugelassen zu werden, brauchen Sie mindestens einen mittleren Schulabschluss (Realschule). Mit Hauptschulabschluss ist der Einstieg möglich, wenn Sie zusätzlich eine abgeschlossene Berufsausbildung (mindestens zwei Jahre) oder eine einjährige Pflegehelferausbildung vorweisen können (Vgl. § 11 PflBG).
 
-Die Pflichteinsätze im ersten und zweiten Ausbildungsdrittel umfassen: Orientierungseinsatz (400 Stunden), stationäre Akutpflege (400 Stunden), stationäre Langzeitpflege (400 Stunden), ambulante Pflege (400 Stunden) und pädiatrische Versorgung (120 Stunden) \u2014 insgesamt 1720 Stunden. Am Ende des zweiten Drittels steht eine verpflichtende Zwischenprüfung. [I Care Pflege S.42]`,
-        contentB1: `Die ersten 2 Jahre sind für alle gleich. Das nennt man generalistisch (= allgemein). Zwischen dem 18. und 20. Monat kann man wählen. Man kann die generalistische Ausbildung weitermachen. Dann bekommt man den Abschluss Pflegefachfrau oder Pflegefachmann. Dieser Abschluss gilt in der ganzen EU. Oder man kann sich spezialisieren auf Kinder-Kranken-Pflege oder Alten-Pflege. [I Care Pflege S.38]
+Die Praxiseinsätze folgen einem festen Schema: Orientierungseinsatz zu Beginn (400 Stunden), dann stationäre Akutpflege (400 Stunden), Langzeitpflege (400 Stunden), ambulante Pflege (400 Stunden) und pädiatrische Versorgung (120 Stunden). Insgesamt 1720 Pflichtstunden in den ersten zwei Dritteln. Am Ende des zweiten Drittels steht eine verpflichtende Zwischenprüfung, die Ihren Lernstand dokumentiert.`,
+        contentB1: `Im dritten Jahr kann man wählen: Entweder die generalistische Ausbildung fertigmachen — dann wird man Pflegefachfrau oder Pflegefachmann. Dieser Abschluss gilt in der ganzen EU. Oder man spezialisiert sich auf Kinderkrankenpflege oder Altenpflege — dieser Abschluss gilt dann nur in Deutschland.
 
-Wer die Ausbildung machen will, braucht mindestens einen mittleren Schulabschluss. Mit einem Hauptschulabschluss geht es auch. Aber dann braucht man zusätzlich eine andere abgeschlossene Ausbildung. [I Care Pflege S.38]
+Wer die Ausbildung machen will, braucht mindestens einen mittleren Schulabschluss (Realschule). Mit Hauptschulabschluss geht es auch — aber dann braucht man zusätzlich eine andere Ausbildung (mindestens 2 Jahre) oder eine Pflegehelfer-Ausbildung (1 Jahr).
 
-In den ersten 2 Jahren gibt es Pflicht-Einsätze: Orientierung (400 Stunden), Akut-Pflege im Krankenhaus (400 Stunden), Langzeit-Pflege im Pflegeheim (400 Stunden), ambulante Pflege (400 Stunden) und Kinder-Pflege (120 Stunden). Das sind zusammen 1720 Stunden. Am Ende vom zweiten Drittel gibt es eine Zwischen-Prüfung. [I Care Pflege S.42]`,
-        quelle: "I Care Pflege S.38, S.42",
+In den ersten 2 Jahren gibt es feste Praxis-Einsätze: Orientierung (400 Stunden), Krankenhaus (400), Pflegeheim (400), ambulante Pflege (400) und Kinderpflege (120). Das sind zusammen 1720 Stunden. Am Ende des zweiten Drittels gibt es eine Zwischen-Prüfung.`,
+        quelle: "Vgl. § 6, § 11 PflBG; § 1 PflAPrV; RL 2005/36/EG",
       },
     ],
   },
@@ -206,29 +247,29 @@ In den ersten 2 Jahren gibt es Pflicht-Einsätze: Orientierung (400 Stunden), Ak
     bloecke: [
       {
         type: "text",
-        contentC1: `Der Begriff Kompetenz stammt aus dem Lateinischen und bedeutet \u201EBefähigung, etwas zu tun\u201C oder \u201EZuständigkeit\u201C. Im pflegerischen Kontext steht nicht die reine Wissensvermittlung im Vordergrund, sondern die Anwendbarkeit von Kenntnissen in konkreten Berufssituationen. [I Care Pflege S.47]
+        contentC1: `Ein Beispiel: Sie wissen, dass der Blutdruck Ihres Patienten zu niedrig ist. Sie kennen die Theorie — Flüssigkeitszufuhr, Lagewechsel, Arzt informieren. Aber können Sie das auch umsetzen, wenn gleichzeitig das Telefon klingelt, der Patient ängstlich ist und die Kollegin auf dem Flur Hilfe ruft? Genau das unterscheidet Wissen von Kompetenz.
 
-Handlungskompetenz ist nach der Kultusministerkonferenz (KMK, 2011) die Fähigkeit, sich in beruflichen, gesellschaftlichen und privaten Situationen sachgerecht und verantwortlich zu verhalten. Sie setzt sich aus drei Dimensionen zusammen: Fachkompetenz, Personale Kompetenz und Sozialkompetenz. [I Care Pflege S.47]`,
-        contentB1: `Das Wort Kompetenz (= Fähigkeit) kommt aus dem Lateinischen. Es bedeutet: Man kann etwas tun und ist dafür zuständig. In der Pflege ist wichtig: Man lernt nicht nur Wissen. Man lernt auch, das Wissen in der Praxis zu nutzen. [I Care Pflege S.47]
+Kompetenz in der Pflege bedeutet nicht, Fakten aufzählen zu können. Sie bedeutet, in einer realen Situation richtig zu handeln — fachlich korrekt, menschlich angemessen und eigenverantwortlich. Die Kultusministerkonferenz (KMK) beschreibt Handlungskompetenz seit 2011 als Bereitschaft und Fähigkeit, im Beruf, im Alltag und im Zusammenleben eigenständig und verantwortungsvoll zu handeln. Drei Dimensionen bilden das Fundament: Fachkompetenz, Sozialkompetenz und Personale Kompetenz (Vgl. KMK, Handreichung für die Erarbeitung von Rahmenlehrplänen, 2011).`,
+        contentB1: `Ein Beispiel: Sie wissen, dass der Blutdruck Ihres Patienten zu niedrig ist. Aber was tun Sie, wenn gleichzeitig das Telefon klingelt und der Patient Angst hat? Wissen allein reicht nicht. Man muss auch handeln können.
 
-Handlungs-Kompetenz bedeutet: Man kann in beruflichen Situationen richtig und verantwortlich handeln. Das sagt die KMK (Kultus-Minister-Konferenz) seit 2011. Es gibt drei Teile: Fach-Kompetenz, Personale Kompetenz und Sozial-Kompetenz. [I Care Pflege S.47]`,
-        quelle: "I Care Pflege S.47",
+Kompetenz bedeutet: Man kann in einer echten Situation richtig handeln. Man handelt fachlich richtig. Man handelt menschlich gut. Und man handelt eigenverantwortlich. Handlungs-Kompetenz hat drei Teile: Fach-Kompetenz, Sozial-Kompetenz und Personale Kompetenz (Vgl. KMK, 2011).`,
+        quelle: "Vgl. KMK, Handreichung Rahmenlehrpläne, 2011; § 5 PflBG Ausbildungsziel",
       },
       {
         type: "text",
-        contentC1: `Fachkompetenz bedeutet, Aufgaben und Probleme auf der Grundlage fachlichen Wissens und Könnens eigenständig zu lösen und das Ergebnis zu beurteilen. Dazu gehören Fachwissen, Fachsprache, fachspezifische Methoden und fachübergreifendes Wissen aus Medizin, Soziologie, Psychologie, Ethik und Recht. [I Care Pflege S.47] Wer eine Pflegeanamnese erhebt, braucht nicht nur Wissen über die richtigen Fragen, sondern auch die Fähigkeit, Antworten fachlich einzuordnen. [Transfer]
+        contentC1: `Fachkompetenz meint die Fähigkeit, pflegerische Aufgaben mit dem nötigen Wissen und Können selbstständig zu lösen und das Ergebnis kritisch einzuschätzen. Dazu gehört nicht nur pflegespezifisches Wissen — etwa über Wundversorgung oder Medikamentenwirkung — sondern auch Wissen aus Nachbardisziplinen: Anatomie, Psychologie, Recht, Ethik. Wer bei der Aufnahme eines Patienten eine Pflegeanamnese erhebt, muss nicht nur die richtigen Fragen stellen. Sie muss die Antworten fachlich einordnen können: Ist das, was der Patient beschreibt, ein Pflegeproblem? Welche Ressource steckt dahinter?
 
-Sozialkompetenz ist in der Pflege besonders bedeutsam, weil Pflege immer mit und an Menschen stattfindet \u2014 sowohl mit Pflegeempfängern als auch im interdisziplinären Team. Sie umfasst Beziehungs- und Teamfähigkeit, Einfühlungsvermögen, Kooperations- und Konfliktlösebereitschaft, Konsensfähigkeit und Toleranz. [I Care Pflege S.48]`,
-        contentB1: `Was ist Fach-Kompetenz? Man kann Aufgaben und Probleme selbstständig lösen. Man hat Fachwissen und kennt die Fachsprache. Man kennt auch Wissen aus anderen Bereichen: Medizin, Psychologie, Ethik und Recht. [I Care Pflege S.47] Ein Beispiel: Bei der Pflege-Anamnese (= erste Befragung des Patienten) muss man die richtigen Fragen stellen. Und man muss die Antworten fachlich verstehen. [Transfer]
+Sozialkompetenz ist in der Pflege untrennbar mit dem Arbeitsalltag verwoben, weil jede pflegerische Handlung am und mit einem anderen Menschen stattfindet. Sie umfasst Empathie — die Fähigkeit, sich in das Erleben des Gegenübers hineinzuversetzen —, Teamfähigkeit im interdisziplinären Umfeld, Konfliktlösungskompetenz und die Bereitschaft, unterschiedliche Wertvorstellungen zu respektieren. Wenn ein Patient eine Maßnahme ablehnt, brauchen Sie Sozialkompetenz, um seine Perspektive zu verstehen, bevor Sie fachlich argumentieren.`,
+        contentB1: `Was ist Fach-Kompetenz? Man hat Fachwissen und kann es anwenden. Man kennt Pflege-Wissen (zum Beispiel Wundversorgung). Man kennt auch Wissen aus anderen Bereichen: Anatomie, Psychologie, Recht, Ethik. Ein Beispiel: Bei der Pflege-Anamnese (= erste Befragung des Patienten) muss man die richtigen Fragen stellen. Und man muss die Antworten fachlich verstehen.
 
-Was ist Sozial-Kompetenz? Man kann gut mit anderen Menschen arbeiten. Das ist in der Pflege besonders wichtig. Man arbeitet mit Patienten und im Team. Sozial-Kompetenz bedeutet: Teamfähigkeit, Einfühlungsvermögen (= Empathie), Zusammenarbeit, Konflikte lösen und Toleranz (= andere Meinungen akzeptieren). [I Care Pflege S.48]`,
-        quelle: "I Care Pflege S.47\u201348",
+Was ist Sozial-Kompetenz? Man kann gut mit anderen Menschen umgehen. Das ist in der Pflege besonders wichtig. Man arbeitet immer mit Menschen: mit Patienten und im Team. Sozial-Kompetenz bedeutet: Einfühlungsvermögen (= Empathie), Teamfähigkeit, Konflikte lösen und andere Meinungen respektieren. Wenn ein Patient eine Maßnahme ablehnt, muss man erst seine Sicht verstehen.`,
+        quelle: "Vgl. KMK Rahmenlehrpläne, 2011; § 5 PflBG",
       },
       {
         type: "merke",
-        contentC1: `Die drei Dimensionen bedingen sich gegenseitig. Fachkompetenz ohne Sozialkompetenz führt zu technisch korrekter, aber menschlich kalter Pflege. Sozialkompetenz ohne Fachkompetenz erzeugt Zuwendung, die fachlich nicht fundiert ist. Personale Kompetenz \u2014 also Selbstreflexion, Eigenverantwortung und Belastbarkeit \u2014 hält beides zusammen. [Transfer] In der Pflegeausbildung werden alle drei Dimensionen gleichzeitig entwickelt: im Unterricht, in der Praxis und in der Reflexion.`,
-        contentB1: `Die drei Teile gehören zusammen. Fach-Kompetenz allein ist zu wenig. Dann ist die Pflege fachlich richtig, aber kalt. Sozial-Kompetenz allein ist auch zu wenig. Dann ist man freundlich, aber weiß nicht genug. Personale Kompetenz verbindet beides. Sie bedeutet: Man denkt über sich selbst nach. Man ist verantwortlich und belastbar. [Transfer] In der Ausbildung lernt man alle drei Teile gleichzeitig.`,
-        quelle: "I Care Pflege S.47\u201348",
+        contentC1: `Die drei Dimensionen lassen sich nicht isoliert betrachten — sie greifen wie Zahnräder ineinander. Fachkompetenz ohne Sozialkompetenz führt zu technisch korrekter, aber emotional kalter Pflege: alles richtig gemacht, aber den Menschen nicht erreicht. Sozialkompetenz ohne Fachkompetenz erzeugt warme Zuwendung ohne fundiertes Handeln — nett gemeint, aber potenziell gefährlich. Personale Kompetenz — Selbstreflexion, Verantwortungsbewusstsein, Belastbarkeit — ist das Verbindungsstück: Sie sorgt dafür, dass Sie erkennen, wenn Ihnen Fachwissen fehlt, und dass Sie Grenzen wahren, wenn die emotionale Belastung zu groß wird. In der Ausbildung entwickeln Sie alle drei Dimensionen gleichzeitig: im Unterricht (Fach), in der Praxis (Sozial) und in der Reflexion (Personal).`,
+        contentB1: `Die drei Teile gehören zusammen — wie Zahnräder. Fach-Kompetenz allein reicht nicht. Dann ist die Pflege fachlich richtig, aber kalt. Sozial-Kompetenz allein reicht auch nicht. Dann ist man freundlich, aber macht vielleicht Fehler. Personale Kompetenz verbindet beides. Sie bedeutet: über sich selbst nachdenken, Verantwortung übernehmen und belastbar sein. In der Ausbildung lernt man alle drei Teile gleichzeitig: im Unterricht (Fach), in der Praxis (Sozial) und in der Reflexion (Personal).`,
+        quelle: "Vgl. KMK Rahmenlehrpläne, 2011",
       },
     ],
   },
@@ -244,39 +285,52 @@ Was ist Sozial-Kompetenz? Man kann gut mit anderen Menschen arbeiten. Das ist in
     bloecke: [
       {
         type: "text",
-        contentC1: `Der Pflegeprozess ist das zentrale Arbeitsinstrument professioneller Pflege. Er ist ein systematischer und zielgerichteter Arbeits- und Problemlösungsprozess, in dem gemeinsam mit dem Pflegeempfänger sein individueller Pflegebedarf erhoben wird, um darauf aufbauend eine bestmögliche Pflege zu erreichen. Laut § 4 PflBG zählt der Pflegeprozess zu den vorbehaltenen Tätigkeiten der Pflegefachkräfte. [I Care Pflege S.78]`,
-        contentB1: `Der Pflege-Prozess ist das wichtigste Werkzeug in der Pflege. Er hilft, die Pflege systematisch (= Schritt für Schritt) zu planen. Man arbeitet zusammen mit dem Patienten. Man findet heraus: Was braucht dieser Patient? Dann plant man die beste Pflege. Laut Gesetz (§ 4 PflBG) dürfen nur Pflegefachkräfte den Pflege-Prozess machen. [I Care Pflege S.78]`,
-        quelle: "I Care Pflege S.78",
+        contentC1: `Stellen Sie sich vor, Sie kommen morgens auf Station und übernehmen die Versorgung von fünf Patienten. Einer klingelt wegen Schmerzen, eine andere braucht Hilfe beim Aufstehen, der dritte wartet auf seine Medikamente. Wie entscheiden Sie, was zuerst passiert? Genau dafür gibt es den Pflegeprozess: ein Denkwerkzeug, das Ihnen hilft, individuelle Bedürfnisse zu erkennen, Prioritäten zu setzen und Ihre Arbeit nachvollziehbar zu machen.
+
+Das Pflegeberufegesetz gibt diesem Werkzeug besonderes Gewicht. Laut § 5 Abs. 3 Nr. 1 PflBG gehört die Steuerung des Pflegeprozesses zu den Aufgaben, die ausschließlich Pflegefachpersonen übernehmen dürfen — eine sogenannte vorbehaltene Tätigkeit. Der Gesetzgeber sagt damit: Wer den Pflegeprozess verantwortet, trägt professionelle Verantwortung, die nicht delegiert werden kann.`,
+        contentB1: `Stellen Sie sich vor: Sie kommen morgens auf die Station. Sie sind für fünf Patienten zuständig. Ein Patient hat Schmerzen. Eine Patientin braucht Hilfe beim Aufstehen. Ein dritter Patient wartet auf Medikamente. Was machen Sie zuerst? Dabei hilft der Pflege-Prozess. Er ist ein Denk-Werkzeug. Er hilft Ihnen, die Pflege zu planen und Schritt für Schritt vorzugehen.
+
+Der Pflege-Prozess ist sehr wichtig. Das steht sogar im Gesetz: Im Pflegeberufegesetz (§ 5 Abs. 3 Nr. 1 PflBG). Dort steht: Nur Pflegefachpersonen dürfen den Pflege-Prozess steuern. Das nennt man eine vorbehaltene Tätigkeit.`,
+        quelle: "Vgl. § 5 Abs. 3 Nr. 1 PflBG",
       },
       {
         type: "merke",
-        contentC1: `Im deutschsprachigen Raum hat sich das sechsschrittige Pflegeprozessmodell nach Fiechter und Meier durchgesetzt. Die sechs Schritte bilden einen Regelkreis: (1) Informationssammlung, (2) Erkennen von Pflegeproblemen und Ressourcen, (3) Festlegung der Pflegeziele, (4) Planung der Pflegemaßnahmen, (5) Durchführung der Pflege, (6) Evaluation. [I Care Pflege S.78] Der Begriff \u201ERegelkreis\u201C bedeutet: Nach der Evaluation beginnt der Prozess bei Bedarf erneut \u2014 Pflege ist kein linearer Vorgang, sondern eine fortlaufende Anpassung. [Transfer]`,
-        contentB1: `In Deutschland nutzt man das Modell von Fiechter und Meier. Es hat 6 Schritte. Die Schritte bilden einen Kreis. Das bedeutet: Nach dem letzten Schritt fängt man wieder von vorne an.
+        contentC1: `Liliane Juchli, Wegbereiterin der Pflegewissenschaft im deutschsprachigen Raum, beschrieb Pflege als kreisförmigen Vorgang: beobachten, planen, handeln, überprüfen — und wieder von vorn. Auf dieser Idee bauten Verena Fiechter und Martha Meier 1981 ihr Sechs-Phasen-Modell auf, das bis heute in der Ausbildung verwendet wird:
 
-Die 6 Schritte sind:
-1. Informationen sammeln
-2. Pflege-Probleme und Ressourcen (= Stärken) erkennen
-3. Pflege-Ziele festlegen
-4. Pflege-Maßnahmen planen
-5. Die Pflege machen
-6. Evaluation (= Prüfen: Hat es geholfen?)
+1. Informationen sammeln — Was wissen wir über diesen Menschen?
+2. Probleme und Stärken benennen — Wo braucht er Unterstützung, was kann er selbst?
+3. Ziele formulieren — Was soll sich verändern, bis wann?
+4. Maßnahmen planen — Welche Schritte führen zum Ziel?
+5. Pflege durchführen — Geplantes umsetzen und dokumentieren.
+6. Ergebnis bewerten — Hat sich etwas verbessert? Falls nicht: zurück zu Phase 1.
 
-[I Care Pflege S.78] Pflege ist kein gerader Weg. Man prüft immer wieder und passt die Pflege an. [Transfer]`,
-        quelle: "I Care Pflege S.78",
+Das Entscheidende ist der letzte Punkt: Pflege endet nicht nach der Durchführung. Sie prüft ihr eigenes Ergebnis und beginnt den Kreislauf erneut. Deshalb spricht man von einem Regelkreis.`,
+        contentB1: `Die Schweizer Pflegewissenschaftlerinnen Verena Fiechter und Martha Meier haben 1981 ein Modell entwickelt. Dieses Modell hat 6 Phasen. Es wird bis heute in der Ausbildung benutzt.
+
+Die 6 Phasen sind:
+1. Informationen sammeln — Was wissen wir über den Patienten?
+2. Probleme und Stärken erkennen — Was kann der Patient? Wo braucht er Hilfe?
+3. Ziele festlegen — Was soll besser werden? Bis wann?
+4. Maßnahmen planen — Wie erreichen wir das Ziel?
+5. Pflege durchführen — Den Plan umsetzen und aufschreiben.
+6. Ergebnis prüfen — Hat die Pflege geholfen?
+
+Wichtig: Nach dem letzten Schritt geht es wieder von vorne los. Pflege hört nie auf. Man prüft immer wieder und passt die Pflege an. Das nennt man einen Regelkreis.`,
+        quelle: "Vgl. Fiechter/Meier, Pflegeplanung, 1981",
       },
       {
         type: "text",
-        contentC1: `Im ersten Schritt werden alle pflegerelevanten Daten über den Pflegeempfänger erhoben. Dabei wird zwischen direkten und indirekten Informationen sowie zwischen objektiven und subjektiven Informationen unterschieden. Die Pflegeanamnese ist eine Methode der strukturierten Datenerhebung, die in der Regel bei der Aufnahme durchgeführt wird. [I Care Pflege S.80]
+        contentC1: `Die erste Phase — Informationen sammeln — gleicht der Arbeit eines Detektivs. Sie beobachten den Patienten (direkte Information), lesen seine Akte (indirekte Information), messen seinen Blutdruck (objektives Datum) und fragen, wie er sich fühlt (subjektive Angabe). Das strukturierte Erstgespräch bei der Aufnahme heißt Pflegeanamnese.
 
-Im zweiten Schritt werden Pflegeprobleme identifiziert: physische, psychische, emotionale, soziale oder organisatorische Beeinträchtigungen, die den Pflegeempfänger in der Selbstpflege einschränken. Pflegeprobleme können aktuell, potenziell, verdeckt, generell oder individuell sein. [I Care Pflege S.81] Gleichzeitig werden Ressourcen erfasst \u2014 Fähigkeiten, Fertigkeiten und Einflüsse, die den Betroffenen bei der Bearbeitung seiner Probleme unterstützen können. Ressourcen lassen sich in sechs Kategorien einteilen: körperliche, innere, räumliche, soziale, ökonomische und spirituelle. [I Care Pflege S.82]
+Aus diesen Daten leiten Sie in Phase 2 ab, welche Probleme vorliegen. Ein Pflegeproblem ist jede Einschränkung — körperlich, seelisch oder sozial —, bei der der Patient Unterstützung benötigt. Manche Probleme bestehen bereits (aktuell), andere könnten entstehen (potenziell). Genauso wichtig sind die Ressourcen: Was bringt der Patient mit? Kann er sich selbst motivieren? Hat er Angehörige, die unterstützen? Körperkraft, innere Haltung, soziales Umfeld, finanzielle Absicherung — all das fließt in die Planung ein.
 
-Pflegeziele geben Richtung, Art und Umfang der Pflegemaßnahmen vor und dienen als Evaluationsgrundlage. Sie müssen spezifisch, messbar, akzeptiert, realisierbar und terminierbar formuliert sein. [I Care Pflege S.82-83]`,
-        contentB1: `Im ersten Schritt sammelt man alle wichtigen Informationen über den Patienten. Es gibt verschiedene Arten von Informationen: direkte (man sieht oder misst etwas selbst) und indirekte (man liest in der Akte). Es gibt auch objektive Informationen (zum Beispiel der Blutdruck) und subjektive Informationen (der Patient sagt, wie er sich fühlt). Die Pflege-Anamnese (= erste Befragung) macht man bei der Aufnahme. [I Care Pflege S.80]
+In Phase 3 formulieren Sie Pflegeziele. Ein gut formuliertes Ziel folgt dem SMART-Prinzip: spezifisch (was genau?), messbar (woran erkennbar?), akzeptiert (stimmt der Patient zu?), realistisch (ist es erreichbar?) und terminiert (bis wann?). Beispiel: „Herr Weber geht bis Freitag mit Rollator 20 Meter selbstständig über den Flur." Das ist überprüfbar — anders als „Herr Weber soll mobiler werden".`,
+        contentB1: `Phase 1 — Informationen sammeln: Sie arbeiten wie ein Detektiv. Sie schauen den Patienten an (direkte Information). Sie lesen die Akte (indirekte Information). Sie messen den Blutdruck (objektive Information). Sie fragen den Patienten, wie er sich fühlt (subjektive Information). Das Erstgespräch bei der Aufnahme heißt Pflege-Anamnese.
 
-Im zweiten Schritt sucht man die Pflege-Probleme. Das sind Einschränkungen des Patienten. Zum Beispiel: Der Patient kann sich nicht alleine waschen. Pflege-Probleme können aktuell sein. Oder sie können in der Zukunft kommen. Gleichzeitig schaut man auf die Ressourcen (= Stärken und Fähigkeiten). Es gibt 6 Arten: körperliche, innere, räumliche, soziale, finanzielle und geistliche Ressourcen. [I Care Pflege S.81-82]
+Phase 2 — Probleme und Stärken erkennen: Aus den Informationen finden Sie heraus: Wo braucht der Patient Hilfe? Das ist ein Pflege-Problem. Zum Beispiel: Der Patient kann nicht allein aufstehen. Manche Probleme gibt es jetzt schon (aktuell). Andere könnten kommen (potenziell). Aber Sie schauen auch: Was kann der Patient gut? Hat er Familie, die hilft? Kann er sich selbst motivieren? Das sind Ressourcen (= Stärken).
 
-Pflege-Ziele beschreiben: Was soll die Pflege erreichen? Gute Ziele sind: spezifisch (= genau), messbar, akzeptiert vom Patienten, realisierbar (= erreichbar) und terminiert (= mit Zeitangabe). [I Care Pflege S.82-83]`,
-        quelle: "I Care Pflege S.80\u201383",
+Phase 3 — Ziele formulieren: Ein gutes Pflege-Ziel ist SMART. Das bedeutet: spezifisch (= genau), messbar, akzeptiert (der Patient ist einverstanden), realistisch (= erreichbar) und terminiert (= mit Zeitangabe). Ein Beispiel: „Herr Weber geht bis Freitag mit dem Rollator 20 Meter über den Flur." Das ist ein gutes Ziel. Man kann prüfen: Hat er es geschafft?`,
+        quelle: "Vgl. Fiechter/Meier, 1981; § 5 Abs. 3 PflBG",
       },
     ],
   },
@@ -292,33 +346,46 @@ Pflege-Ziele beschreiben: Was soll die Pflege erreichen? Gute Ziele sind: spezif
     bloecke: [
       {
         type: "text",
-        contentC1: `Professionelle Pflege erfordert nicht nur Fachwissen und Handlungskompetenz, sondern auch eine ethische Grundhaltung. Der International Council of Nurses (ICN) formulierte bereits 1953 einen internationalen Ethikkodex für Pflegefachkräfte (Code of Ethics for Nurses). Er wurde seitdem mehrfach überarbeitet und definiert die ethischen Pflichten professionell Pflegender gegenüber Pflegeempfängern, der eigenen Berufsausübung, der Profession und den Kollegen. [I Care Pflege S.24]
+        contentC1: `Ein 82-jähriger Patient mit fortgeschrittener Demenz wehrt sich gegen das Waschen. Sie wissen, dass seine Haut ohne regelmäßige Körperpflege Schaden nehmen wird. Gleichzeitig sagt Ihnen Ihr Berufsethos: Kein Mensch darf gegen seinen Willen angefasst werden. Was tun Sie? Genau in solchen Momenten zeigt sich, warum Pflege mehr verlangt als Handgriffe — sie verlangt eine ethische Haltung.
 
-Auf nationaler Ebene besagt die Rahmenberufsordnung des Deutschen Pflegerats, dass Pflegende ihren Beruf \u201Eentsprechend dem allgemein anerkannten Stand pflegewissenschaftlicher, medizinischer und weiterer bezugswissenschaftlicher Erkenntnisse ausüben sollen\u201C. [I Care Pflege S.46] Diese Formulierung ist anspruchsvoll: Sie verlangt, dass Pflegende sich kontinuierlich weiterbilden und ihr Handeln an aktueller Evidenz ausrichten.`,
-        contentB1: `Gute Pflege braucht nicht nur Fachwissen. Sie braucht auch eine ethische Haltung. Ethik (= die Lehre vom richtigen Handeln) ist sehr wichtig in der Pflege.
+Seit 1953 gibt es dafür einen internationalen Orientierungsrahmen: den Ethikkodex des ICN (International Council of Nurses). Dieses Dokument wurde mehrfach überarbeitet, zuletzt 2021. Es beschreibt vier Verantwortungsbereiche: gegenüber den Menschen, denen wir pflegen, gegenüber der eigenen Berufsausübung, gegenüber dem Berufsstand als Ganzes und gegenüber den Kolleginnen und Kollegen (Vgl. ICN, Code of Ethics for Nurses, 2021).
 
-Der ICN hat schon 1953 einen Ethikkodex geschrieben. Das ist ein Regel-Werk für richtiges Verhalten. Auf Englisch heißt er \u201ECode of Ethics for Nurses\u201C. Er beschreibt die Pflichten von Pflegekräften. Es gibt vier Bereiche: Pflichten gegenüber den Patienten, Pflichten bei der eigenen Arbeit, Pflichten gegenüber dem Beruf und Pflichten gegenüber den Kollegen. [I Care Pflege S.24]
+In Deutschland ergänzt die Rahmenberufsordnung des Deutschen Pflegerats diese Grundsätze. Ihr Kernsatz lautet sinngemäß: Pflegende richten ihr Handeln am aktuellen Stand der Pflegewissenschaft aus. Wer das ernst nimmt, verpflichtet sich zu lebenslangem Lernen — Stillstand wäre ein Verstoß gegen die eigene Berufsordnung.`,
+        contentB1: `Ein Beispiel: Ein alter Patient mit Demenz will nicht gewaschen werden. Aber ohne Körperpflege bekommt er Hautprobleme. Was tun Sie? Zwingen Sie ihn? Oder lassen Sie ihn? Solche Fragen gehören zur Ethik. Ethik bedeutet: die Lehre vom richtigen Handeln.
 
-In Deutschland gibt es die Rahmen-Berufsordnung vom Deutschen Pflegerat. Dort steht: Pflegende sollen nach dem neuesten Stand der Pflege-Wissenschaft arbeiten. [I Care Pflege S.46] Das bedeutet: Man muss sich immer weiterbilden. Man muss immer nach dem neuesten Wissen arbeiten.`,
-        quelle: "I Care Pflege S.24, S.46",
+Seit 1953 gibt es den Ethikkodex vom ICN. ICN heißt International Council of Nurses. Der Ethikkodex ist ein Regelwerk für Pflegekräfte. Er beschreibt vier Bereiche:
+1. Pflichten gegenüber den Patienten
+2. Pflichten bei der eigenen Arbeit
+3. Pflichten gegenüber dem Beruf
+4. Pflichten gegenüber den Kollegen
+(Vgl. ICN, Code of Ethics for Nurses, 2021)
+
+In Deutschland gibt es auch Regeln: die Rahmen-Berufsordnung vom Deutschen Pflegerat. Dort steht: Pflegende sollen immer nach dem neuesten Wissen arbeiten. Das bedeutet: Man muss sich weiterbilden.`,
+        quelle: "Vgl. ICN, Code of Ethics for Nurses, 2021; Deutscher Pflegerat, Rahmenberufsordnung",
       },
       {
         type: "merke",
-        contentC1: `Allerdings gibt es einen wichtigen Unterschied in der Durchsetzbarkeit. Berufsverbände können bei Verstößen gegen die Berufsordnung keine Konsequenzen veranlassen \u2014 die Berufsordnung ist derzeit hauptsächlich eine Selbstverpflichtung. Pflegekammern hingegen, wo sie existieren, können Disziplinarverfahren einleiten und berufsrechtliche Konsequenzen durchsetzen. [I Care Pflege S.24]`,
-        contentB1: `Aber es gibt einen wichtigen Unterschied. Ein Berufsverband kann bei Regel-Verstößen nichts machen. Die Berufsordnung ist eine freiwillige Verpflichtung. Eine Pflegekammer ist anders. Sie kann ein Verfahren einleiten und Strafen geben. [I Care Pflege S.24]`,
-        quelle: "I Care Pflege S.24",
+        contentC1: `Wer überwacht die Einhaltung dieser Regeln? Hier liegt ein Knackpunkt: Berufsverbände wie der DBfK können nur appellieren — wenn jemand gegen die Berufsordnung verstößt, fehlt ihnen die rechtliche Handhabe. Anders bei Pflegekammern: Wo sie existieren (etwa in Rheinland-Pfalz und Nordrhein-Westfalen), können sie berufsrechtliche Verfahren einleiten und Sanktionen verhängen. Die Berufsordnung wird damit vom freiwilligen Leitbild zum verbindlichen Maßstab.`,
+        contentB1: `Wer kontrolliert die Regeln? Ein Berufsverband (zum Beispiel der DBfK) kann nur bitten. Er kann keine Strafen geben. Eine Pflegekammer ist anders. Sie hat mehr Macht. In manchen Bundesländern (zum Beispiel Rheinland-Pfalz) gibt es Pflegekammern. Sie können ein Verfahren einleiten und Strafen geben.`,
+        quelle: "Vgl. Heilberufsgesetze der Länder; DBfK Positionspapiere",
       },
       {
         type: "text",
-        contentC1: `Die ethische Reflexion in der Pflege stützt sich auf vier Prinzipien nach Beauchamp und Childress: Autonomie (das Recht des Pflegeempfängers auf Selbstbestimmung), Fürsorge (die Verpflichtung, das Wohl des Pflegeempfängers zu fördern), Gerechtigkeit (gleiche Versorgung für alle, unabhängig von Herkunft, Status oder Diagnose) und Nicht-Schaden (die Pflicht, dem Pflegeempfänger keinen Schaden zuzufügen). [I Care Pflege S.753-754] Diese vier Prinzipien stehen nicht immer im Einklang. Wenn ein Patient die Behandlung ablehnt, kollidieren Autonomie und Fürsorge. Solche Spannungen auszuhalten und reflektiert zu entscheiden gehört zum Kern professioneller Pflege. [Transfer]`,
-        contentB1: `In der Pflege gibt es 4 ethische Prinzipien (= Grundsätze). Sie kommen von Beauchamp und Childress:
-1. Autonomie (= Selbst-Bestimmung): Der Patient darf selbst entscheiden.
-2. Fürsorge: Die Pflegekraft sorgt für das Wohl des Patienten.
-3. Gerechtigkeit: Alle Patienten bekommen die gleiche Versorgung.
-4. Nicht-Schaden: Man darf dem Patienten keinen Schaden zufügen.
+        contentC1: `Wenn im Alltag ethische Konflikte auftreten, hilft ein Denkmodell aus der Medizinethik weiter. Tom Beauchamp und James Childress formulierten 1979 vier Prinzipien, die sich auch in der Pflege als Kompass bewährt haben:
 
-[I Care Pflege S.753-754] Diese 4 Prinzipien passen nicht immer zusammen. Ein Beispiel: Ein Patient will keine Behandlung. Er hat das Recht dazu (Autonomie). Aber die Pflegekraft will ihm helfen (Fürsorge). Das ist ein Konflikt. Solche Konflikte gehören zur Pflege. Man muss darüber nachdenken und gut entscheiden. [Transfer]`,
-        quelle: "I Care Pflege S.753\u2013754",
+Erstens Selbstbestimmung: Jeder Patient hat das Recht, Behandlungen abzulehnen — selbst wenn Sie das für unvernünftig halten. Zweitens Wohltun: Sie sind verpflichtet, aktiv zum Wohl des Patienten beizutragen. Drittens Nicht-Schaden: Jede Handlung muss so gestaltet sein, dass sie keinen vermeidbaren Schaden anrichtet. Viertens Gerechtigkeit: Alle Patienten verdienen die gleiche Qualität der Versorgung — unabhängig von Herkunft, Diagnose oder Versicherungsstatus (Vgl. Beauchamp/Childress, Principles of Biomedical Ethics, 1979).
+
+Das Schwierige: Diese vier Prinzipien widersprechen sich regelmäßig. Zurück zum Demenz-Patienten: Sein Recht auf Selbstbestimmung kollidiert mit Ihrer Pflicht, Hautschäden zu verhindern (Wohltun). Solche Spannungen lassen sich nicht mit einer Formel auflösen. Sie verlangen, dass Sie innehalten, die Perspektiven abwägen und eine begründete Entscheidung treffen — genau das macht professionelle Pflege aus.`,
+        contentB1: `Für schwierige Entscheidungen gibt es ein Denkmodell. Es kommt von Beauchamp und Childress (1979). Es hat vier Grundsätze:
+
+1. Selbstbestimmung: Der Patient darf selbst entscheiden. Auch wenn Sie denken: Das ist falsch.
+2. Wohltun: Sie sollen dem Patienten Gutes tun.
+3. Nicht-Schaden: Sie dürfen dem Patienten nicht schaden.
+4. Gerechtigkeit: Alle Patienten bekommen die gleiche Versorgung.
+(Vgl. Beauchamp/Childress, Principles of Biomedical Ethics, 1979)
+
+Das Problem: Diese vier Grundsätze passen nicht immer zusammen. Erinnern Sie sich an den Demenz-Patienten? Er will nicht gewaschen werden (Selbstbestimmung). Aber ohne Pflege bekommt er Hautprobleme (Wohltun). Was wiegt mehr? Darüber muss man nachdenken. Das gehört zur Pflege dazu.`,
+        quelle: "Vgl. Beauchamp/Childress, Principles of Biomedical Ethics, 1979; ICN, Code of Ethics, 2021",
       },
     ],
   },
@@ -334,31 +401,31 @@ In Deutschland gibt es die Rahmen-Berufsordnung vom Deutschen Pflegerat. Dort st
     bloecke: [
       {
         type: "text",
-        contentC1: `Pflegefachkräfte arbeiten unter hoher körperlicher und psychischer Belastung. Zu den Risiken gehören Rückenschmerzen durch Heben und Tragen, Schichtarbeit mit den Folgen eines sozialen Jetlags sowie emotionale Belastung durch die tägliche Konfrontation mit Leid und Tod. Die Burnout-Gefährdung ist in Pflegeberufen überdurchschnittlich hoch. [I Care Pflege S.56-63] Selbstpflege ist deshalb keine Luxusoption, sondern eine berufliche Notwendigkeit. Wer sich nicht um sich selbst kümmert, kann langfristig nicht für andere sorgen. [Transfer]`,
-        contentB1: `Pflegekräfte haben eine schwere Arbeit. Der Körper wird stark belastet. Viele bekommen Rücken-Schmerzen vom Heben und Tragen. Die Schichtarbeit ist anstrengend. Man arbeitet manchmal nachts oder am Wochenende. Und die Arbeit ist emotional schwer. Man sieht jeden Tag Leid und manchmal auch Tod. Die Gefahr für Burnout (= totale Erschöpfung durch die Arbeit) ist in der Pflege besonders hoch. [I Care Pflege S.56-63] Deshalb ist Selbst-Pflege sehr wichtig. Man muss auch auf sich selbst achten. Wer nicht auf sich achtet, kann irgendwann nicht mehr gut für andere sorgen. [Transfer]`,
-        quelle: "I Care Pflege S.56\u201363",
+        contentC1: `Es klingt paradox: Menschen, die beruflich für die Gesundheit anderer sorgen, vernachlässigen häufig ihre eigene. Pflegefachpersonen heben und lagern täglich Patienten, stehen stundenlang, arbeiten im Wechsel zwischen Früh-, Spät- und Nachtschicht. Die körperlichen Folgen — Rückenschmerzen, Schlafstörungen, chronische Erschöpfung — gehören zu den häufigsten Berufskrankheiten der Branche. Dazu kommt die emotionale Seite: Sie begleiten Menschen in Angst, Schmerz und Trauer. Manche Patienten sterben während Ihrer Schicht. Studien der Berufsgenossenschaft für Gesundheitsdienst und Wohlfahrtspflege (BGW) zeigen, dass Pflegekräfte ein überdurchschnittlich hohes Risiko für Burnout tragen. Selbstpflege ist deshalb keine Wellness-Option nach Feierabend — sie ist eine professionelle Kernkompetenz. Wer langfristig für andere sorgen will, muss zuerst für sich selbst sorgen.`,
+        contentB1: `Es klingt seltsam: Pflegekräfte kümmern sich um die Gesundheit anderer — aber oft nicht um ihre eigene. Der Körper wird stark belastet. Man hebt und lagert Patienten. Man steht stundenlang. Man arbeitet im Wechsel: Früh-Schicht, Spät-Schicht, Nacht-Schicht. Viele bekommen Rückenschmerzen und Schlafprobleme. Und die Arbeit ist emotional schwer. Man sieht Leid, Schmerz und Tod. Die Gefahr für Burnout (= totale Erschöpfung) ist in der Pflege besonders hoch. Deshalb ist Selbst-Pflege sehr wichtig. Wer für andere sorgen will, muss zuerst auf sich selbst achten.`,
+        quelle: "Vgl. BGW Gesundheitsreport Pflege; DAK Gesundheitsreport",
       },
       {
         type: "text",
-        contentC1: `Ein bewährtes Instrument für das Zeitmanagement ist die Eisenhower-Methode. Sie teilt Aufgaben in vier Kategorien ein: dringend und wichtig \u2014 sofort erledigen; nicht dringend, aber wichtig \u2014 terminieren; nicht wichtig, aber dringend \u2014 delegieren; weder wichtig noch dringend \u2014 nicht bearbeiten. Kategorie zwei wird im Pflegealltag oft unterschätzt, bietet aber den nötigen Ausgleich: Sport, Erholung, Fortbildung und soziale Kontakte fallen typischerweise in diese Kategorie. [I Care Pflege S.73]`,
-        contentB1: `Für ein gutes Zeit-Management gibt es die Eisenhower-Methode. Man teilt Aufgaben in 4 Gruppen ein:
+        contentC1: `Ein einfaches, aber wirkungsvolles Werkzeug für den Umgang mit der täglichen Aufgabenflut stammt vom ehemaligen US-Präsidenten Dwight D. Eisenhower. Seine Methode sortiert Aufgaben nach zwei Achsen — Dringlichkeit und Wichtigkeit — in vier Felder: Was dringend UND wichtig ist, erledigen Sie sofort. Was wichtig, aber nicht dringend ist, planen Sie bewusst ein. Was dringend, aber unwichtig ist, delegieren Sie. Was weder dringend noch wichtig ist, streichen Sie. Die zweite Kategorie ist die entscheidende: Hier liegen Sport, Erholung, Weiterbildung und soziale Kontakte — also alles, was Sie langfristig gesund hält, aber im Tagesgeschäft immer als Erstes wegfällt.`,
+        contentB1: `Für ein gutes Zeit-Management gibt es die Eisenhower-Methode. Man sortiert alle Aufgaben in 4 Gruppen:
 1. Dringend und wichtig: Sofort erledigen.
-2. Nicht dringend, aber wichtig: Einen Termin dafür planen.
-3. Nicht wichtig, aber dringend: An jemand anderen geben.
+2. Wichtig, aber nicht dringend: Einen Termin dafür planen.
+3. Dringend, aber nicht wichtig: An jemand anderen geben.
 4. Nicht wichtig und nicht dringend: Nicht machen.
 
-Gruppe 2 wird oft vergessen. Aber sie ist sehr wichtig. Dazu gehören: Sport, Erholung, Weiterbildung und Treffen mit Freunden. [I Care Pflege S.73]`,
-        quelle: "I Care Pflege S.73",
+Gruppe 2 wird oft vergessen. Aber sie ist am wichtigsten für die eigene Gesundheit. Dazu gehören: Sport, Erholung, Weiterbildung und Treffen mit Freunden.`,
+        quelle: "Vgl. Covey, Die 7 Wege zur Effektivität, 1989; Eisenhower-Prinzip",
       },
       {
         type: "text",
-        contentC1: `Für akute Stresssituationen stehen kurzfristige Bewältigungsmethoden zur Verfügung: spontane Entspannung durch die 4-6-8-Atemtechnik (vier Sekunden einatmen, sechs Sekunden halten, acht Sekunden ausatmen), positives Selbstgespräch, kontrolliertes Abreagieren, Wahrnehmungslenkung und Gedankenstopp. [I Care Pflege S.75] Diese Techniken lassen sich direkt im Arbeitsalltag anwenden \u2014 etwa in einer kurzen Pause zwischen zwei Pflegesituationen. [Transfer]
+        contentC1: `Wenn der Stress bereits da ist — etwa nach einer belastenden Situation auf Station — helfen kurzfristige Techniken, die Sie in wenigen Minuten anwenden können: Die 4-6-8-Atemtechnik (vier Sekunden einatmen, sechs Sekunden halten, acht Sekunden langsam ausatmen) aktiviert den Parasympathikus und senkt den Puls messbar. Ein kurzes, bewusstes Selbstgespräch („Ich habe getan, was ich konnte") kann emotionale Spiralen unterbrechen. Die Wahrnehmungslenkung — bewusst auf etwas Neutrales oder Angenehmes achten — hilft, sich nach belastenden Bildern zu lösen. All das funktioniert in einer Zwei-Minuten-Pause auf dem Flur.
 
-Langfristig wirksam sind körperliche Bewegung wie Joggen, Walken oder Schwimmen, aber auch Yoga, Qigong und Tai-Chi. Besonders empfehlenswert ist die Progressive Muskelentspannung nach Jacobson: Durch abwechselndes Anspannen und Entspannen einzelner Muskelgruppen wird das Wohlbefinden gesteigert. Die Methode ist leicht erlernbar und eignet sich auch für Einsteiger. [I Care Pflege S.77]`,
-        contentB1: `Bei akutem Stress helfen schnelle Methoden. Eine gute Übung ist die 4-6-8-Atem-Technik: Man atmet 4 Sekunden ein. Man hält 6 Sekunden die Luft an. Man atmet 8 Sekunden aus. Andere Methoden sind: positives Selbst-Gespräch (= sich selbst Mut machen), Gedanken-Stopp (= negative Gedanken bewusst stoppen) und Wahrnehmungs-Lenkung (= an etwas Schönes denken). [I Care Pflege S.75] Diese Methoden kann man direkt bei der Arbeit nutzen. Zum Beispiel in einer kurzen Pause. [Transfer]
+Langfristig bewährt sich vor allem regelmäßige Bewegung: Laufen, Schwimmen, Radfahren — alles, was den Kopf frei macht. Eine besonders niedrigschwellige Methode ist die Progressive Muskelentspannung (PMR) nach Edmund Jacobson: Sie spannen einzelne Muskelgruppen für einige Sekunden bewusst an und lassen dann gezielt locker. Der Wechsel zwischen Spannung und Entspannung trainiert das Nervensystem, schneller in den Ruhemodus zu schalten. PMR lässt sich ohne Hilfsmittel üben — im Pausenraum, zu Hause oder sogar im Sitzen.`,
+        contentB1: `Wenn der Stress schon da ist, helfen schnelle Methoden. Zum Beispiel die 4-6-8-Atem-Technik: 4 Sekunden einatmen, 6 Sekunden Luft anhalten, 8 Sekunden langsam ausatmen. Das beruhigt den Körper. Eine andere Methode: sich selbst etwas Gutes sagen, zum Beispiel: „Ich habe getan, was ich konnte." Das hilft gegen negative Gedanken. Diese Methoden kann man in einer kurzen Pause nutzen.
 
-Langfristig hilft Bewegung am besten. Zum Beispiel: Joggen, Walken, Schwimmen, Yoga oder Qigong. Sehr gut ist auch die Progressive Muskel-Entspannung nach Jacobson. Das funktioniert so: Man spannt einzelne Muskeln an. Dann entspannt man sie wieder. Das steigert das Wohl-Befinden (= man fühlt sich besser). Die Methode ist leicht zu lernen. Sie ist auch gut für Anfänger. [I Care Pflege S.77]`,
-        quelle: "I Care Pflege S.75, S.77",
+Langfristig hilft Bewegung am besten: Laufen, Schwimmen, Radfahren. Sehr gut ist auch die Progressive Muskel-Entspannung (PMR) nach Jacobson. So funktioniert es: Man spannt einzelne Muskeln bewusst an. Dann entspannt man sie wieder. Der Wechsel zwischen Spannung und Entspannung beruhigt den Körper. Man kann PMR überall üben — ohne Geräte.`,
+        quelle: "Vgl. Jacobson, Progressive Relaxation, 1938; BGW Stressprävention",
       },
     ],
   },

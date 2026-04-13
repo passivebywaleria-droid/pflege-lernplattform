@@ -20,7 +20,7 @@ import { useLernFortschritt } from "@/hooks/use-lern-fortschritt";
 import { useKarteikarten } from "@/hooks/use-karteikarten";
 import { XpPop, SessionXpCounter } from "@/components/learn/xp-display";
 import { SessionSummary } from "@/components/learn/session-summary";
-import type { StepType, ThemenblockPhase } from "../../../../../content/_types";
+import type { StepType, ThemenblockPhase, ContentStep } from "../../../../../content/_types";
 import { SprachLevelProvider } from "@/components/learn/fachbegriff-tooltip";
 import { useSessionLoader } from "@/hooks/use-session-loader";
 import { useStepNavigation } from "@/hooks/use-step-navigation";
@@ -35,14 +35,16 @@ import { getMotivationsText, resetMotivationsTracking } from "@/lib/motivation";
 import { LeTabs } from "@/components/learn/le-tabs";
 import type { LeTab } from "@/components/learn/le-tabs";
 import { ArtikelRenderer } from "@/components/learn/artikel-renderer";
-import { LE08_ARTIKEL } from "../../../../../content/le-08/artikel";
+import { LE01_ARTIKEL } from "../../../../../content/le-01/artikel";
 import { FallZeitleiste } from "@/components/learn/fall-zeitleiste";
-import { LE08_FALLVERLAEUFE } from "../../../../../content/le-08/fallverlaeufe";
+import { LE01_FALLVERLAEUFE } from "../../../../../content/le-01/fallverlaeufe";
 import { PraxisUebungen } from "@/components/learn/praxis-uebungen";
-import { LE08_PRAXIS } from "../../../../../content/le-08/praxis";
+import { LE01_PRAXIS } from "../../../../../content/le-01/praxis";
 import { ExamCaseStart } from "@/components/learn/exam-case-start";
-import { LE08_PRUEFUNGSFALL } from "../../../../../content/le-08/pruefungsfall";
+import { LE01_PRUEFUNGSFALL } from "../../../../../content/le-01/pruefungsfall";
 import { PfadPicker } from "@/components/learn/pfad-picker";
+import { LernSnackTab } from "@/components/learn/lern-snack-tab";
+import { LE01_LERN_SNACK } from "../../../../../content/le-01/lern-snack";
 
 
 export default function LernenPage() {
@@ -74,17 +76,19 @@ export default function LernenPage() {
   const [activeTab, setActiveTab] = useState<LeTab>("ueben");
   const [geleseneKapitel, setGeleseneKapitel] = useState<Set<string>>(new Set());
 
-  // Artikel-Daten laden (nur für LE-08 Prototyp — später dynamisch)
-  const artikelKapitel = leId === "le-08" ? LE08_ARTIKEL : undefined;
-  const fallverlaeufe = leId === "le-08" ? LE08_FALLVERLAEUFE : undefined;
-  const praxisUebungen = leId === "le-08" ? LE08_PRAXIS : undefined;
-  const pruefungsfall = leId === "le-08" ? LE08_PRUEFUNGSFALL : undefined;
+  // Artikel-Daten laden (pro LE — später dynamisch via Content-Loader)
+  const artikelKapitel = leId === "le-01" ? LE01_ARTIKEL : undefined;
+  const fallverlaeufe = leId === "le-01" ? LE01_FALLVERLAEUFE : undefined;
+  const praxisUebungen = leId === "le-01" ? LE01_PRAXIS : undefined;
+  const pruefungsfall = leId === "le-01" ? LE01_PRUEFUNGSFALL : undefined;
+  const lernSnack = leId === "le-01" ? LE01_LERN_SNACK : undefined;
 
   const handleKapitelGelesen = useCallback((kapitelId: string) => {
     setGeleseneKapitel((prev) => new Set(prev).add(kapitelId));
   }, []);
 
   const handleKapitelNavigieren = useCallback((kapitelId: string) => {
+    setInlinePlayback(null);
     setActiveTab("wissen");
   }, []);
 
@@ -97,6 +101,51 @@ export default function LernenPage() {
   const [completionEmpfehlungen, setCompletionEmpfehlungen] = useState<ReturnType<typeof getSessionEmpfehlungen>>([]);
   const [motivationText, setMotivationText] = useState<string | null>(null);
   const sessionStartTimeRef = useRef<string>(new Date().toISOString());
+
+  // Fall/Praxis inline Step-Playback
+  const [inlinePlayback, setInlinePlayback] = useState<{
+    steps: ContentStep[];
+    title: string;
+    source: "fall" | "praxis";
+  } | null>(null);
+  const [inlineStepIndex, setInlineStepIndex] = useState(0);
+
+  const handleStationStarten = useCallback((fallId: string, stationId: string) => {
+    if (!fallverlaeufe) return;
+    const fall = fallverlaeufe.find((f) => f.fallId === fallId);
+    if (!fall) return;
+    const station = fall.stationen.find((s) => s.stationId === stationId);
+    if (station?.steps && station.steps.length > 0) {
+      setInlinePlayback({ steps: station.steps, title: `${fall.patient.name}: ${station.titel}`, source: "fall" });
+      setInlineStepIndex(0);
+    }
+  }, [fallverlaeufe]);
+
+  const handleStartUebung = useCallback((uebungId: string) => {
+    if (!praxisUebungen) return;
+    const uebung = praxisUebungen.find((u) => u.uebungId === uebungId);
+    if (uebung?.steps && uebung.steps.length > 0) {
+      setInlinePlayback({ steps: uebung.steps, title: uebung.titel, source: "praxis" });
+      setInlineStepIndex(0);
+    }
+  }, [praxisUebungen]);
+
+  // Reset inline playback when switching tabs
+  const handleTabChange = useCallback((tab: LeTab) => {
+    setInlinePlayback(null);
+    setInlineStepIndex(0);
+    setActiveTab(tab);
+  }, []);
+
+  const handleInlineNext = useCallback((correct?: boolean) => {
+    if (!inlinePlayback) return;
+    if (inlineStepIndex < inlinePlayback.steps.length - 1) {
+      setInlineStepIndex((i) => i + 1);
+    } else {
+      setInlinePlayback(null);
+      setInlineStepIndex(0);
+    }
+  }, [inlinePlayback, inlineStepIndex]);
 
   const allLektionen = getAllLektionen();
 
@@ -667,10 +716,11 @@ export default function LernenPage() {
       {/* Tab-Navigation (5-Tabs: Wissen, Üben, Fall, Praxis, Prüfung) */}
       <LeTabs
         activeTab={activeTab}
-        onTabChange={setActiveTab}
+        onTabChange={handleTabChange}
         hasArtikel={!!artikelKapitel && artikelKapitel.length > 0}
         hasFallverlaeufe={!!fallverlaeufe && fallverlaeufe.length > 0}
         hasPraxis={!!praxisUebungen && praxisUebungen.length > 0}
+        hasLernSnack={!!lernSnack && lernSnack.length > 0}
       />
 
       {/* === TAB CONTENT === */}
@@ -688,13 +738,55 @@ export default function LernenPage() {
         </div>
       )}
 
-      {/* Fall-Tab: Patienten-Zeitleiste */}
-      {activeTab === "fall" && fallverlaeufe && (
+      {/* Snack-Tab: Kompakte Kernfakten-Checkliste */}
+      {activeTab === "snack" && lernSnack && (
+        <div className="mx-auto max-w-2xl">
+          <LernSnackTab
+            snacks={lernSnack}
+            sprachLevel={adaptive.sprachLevel === "b1" ? "B1" : "C1"}
+            leId={leId}
+          />
+        </div>
+      )}
+
+      {/* Fall-Tab: Patienten-Zeitleiste oder Inline-Steps */}
+      {activeTab === "fall" && inlinePlayback?.source === "fall" && (
+        <div className="mx-auto max-w-2xl px-4">
+          <div className="mb-4 flex items-center gap-3">
+            <button
+              onClick={() => { setInlinePlayback(null); setInlineStepIndex(0); }}
+              className="rounded-full bg-[var(--lern-card-bg)] p-2 text-[var(--lern-text-secondary)] hover:bg-[var(--lern-border)] transition-colors"
+              aria-label="Zurück zur Übersicht"
+            >
+              ←
+            </button>
+            <div>
+              <h2 className="text-sm font-bold text-[var(--lern-text-primary)]">{inlinePlayback.title}</h2>
+              <p className="text-xs text-[var(--lern-text-tertiary)]">Aufgabe {inlineStepIndex + 1} / {inlinePlayback.steps.length}</p>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-5 shadow-sm">
+            <StepRenderer
+              step={inlinePlayback.steps[inlineStepIndex]}
+              sprachLevel={adaptive.sprachLevel}
+              glossar={glossar}
+              onNext={handleInlineNext}
+              onSelfRating={() => handleInlineNext()}
+              onReflection={() => {}}
+              reflexionText={null}
+              score={0}
+              totalQuestions={inlinePlayback.steps.length}
+            />
+          </div>
+        </div>
+      )}
+      {activeTab === "fall" && !inlinePlayback?.source && fallverlaeufe && (
         <div className="mx-auto max-w-2xl">
           <FallZeitleiste
             fallverlaeufe={fallverlaeufe}
             sprachLevel={adaptive.sprachLevel}
             onKapitelNavigieren={handleKapitelNavigieren}
+            onStationStarten={handleStationStarten}
           />
         </div>
       )}
@@ -706,12 +798,43 @@ export default function LernenPage() {
         </div>
       )}
 
-      {/* Praxis-Tab */}
-      {activeTab === "praxis" && praxisUebungen && (
+      {/* Praxis-Tab: Übungen oder Inline-Steps */}
+      {activeTab === "praxis" && inlinePlayback?.source === "praxis" && (
+        <div className="mx-auto max-w-2xl px-4">
+          <div className="mb-4 flex items-center gap-3">
+            <button
+              onClick={() => { setInlinePlayback(null); setInlineStepIndex(0); }}
+              className="rounded-full bg-[var(--lern-card-bg)] p-2 text-[var(--lern-text-secondary)] hover:bg-[var(--lern-border)] transition-colors"
+              aria-label="Zurück zur Übersicht"
+            >
+              ←
+            </button>
+            <div>
+              <h2 className="text-sm font-bold text-[var(--lern-text-primary)]">{inlinePlayback.title}</h2>
+              <p className="text-xs text-[var(--lern-text-tertiary)]">Aufgabe {inlineStepIndex + 1} / {inlinePlayback.steps.length}</p>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-5 shadow-sm">
+            <StepRenderer
+              step={inlinePlayback.steps[inlineStepIndex]}
+              sprachLevel={adaptive.sprachLevel}
+              glossar={glossar}
+              onNext={handleInlineNext}
+              onSelfRating={() => handleInlineNext()}
+              onReflection={() => {}}
+              reflexionText={null}
+              score={0}
+              totalQuestions={inlinePlayback.steps.length}
+            />
+          </div>
+        </div>
+      )}
+      {activeTab === "praxis" && !inlinePlayback?.source && praxisUebungen && (
         <div className="mx-auto max-w-2xl">
           <PraxisUebungen
             uebungen={praxisUebungen}
             sprachLevel={adaptive.sprachLevel === "b1" ? "b1" : "c1"}
+            onStartUebung={handleStartUebung}
           />
         </div>
       )}
@@ -729,7 +852,7 @@ export default function LernenPage() {
           <ExamCaseStart
             examCase={pruefungsfall}
             leTitle={getLektionManifest(leId)?.title ?? leId}
-            onExit={() => setActiveTab("ueben")}
+            onExit={() => handleTabChange("ueben")}
           />
         </div>
       )}
