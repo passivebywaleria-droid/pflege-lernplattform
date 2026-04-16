@@ -35,16 +35,12 @@ import { getMotivationsText, resetMotivationsTracking } from "@/lib/motivation";
 import { LeTabs } from "@/components/learn/le-tabs";
 import type { LeTab } from "@/components/learn/le-tabs";
 import { ArtikelRenderer } from "@/components/learn/artikel-renderer";
-import { LE01_ARTIKEL } from "../../../../../content/le-01/artikel";
 import { FallZeitleiste } from "@/components/learn/fall-zeitleiste";
-import { LE01_FALLVERLAEUFE } from "../../../../../content/le-01/fallverlaeufe";
 import { PraxisUebungen } from "@/components/learn/praxis-uebungen";
-import { LE01_PRAXIS } from "../../../../../content/le-01/praxis";
 import { ExamCaseStart } from "@/components/learn/exam-case-start";
-import { LE01_PRUEFUNGSFALL } from "../../../../../content/le-01/pruefungsfall";
 import { PfadPicker } from "@/components/learn/pfad-picker";
 import { LernSnackTab } from "@/components/learn/lern-snack-tab";
-import { LE01_LERN_SNACK } from "../../../../../content/le-01/lern-snack";
+import { useLeContent } from "@/hooks/use-le-content";
 
 
 export default function LernenPage() {
@@ -73,15 +69,17 @@ export default function LernenPage() {
   const { addKarteikarte, getGemeistarteKarten, importVorlagen } = useKarteikarten();
 
   // Tab-Navigation (5-Tabs Redesign)
-  const [activeTab, setActiveTab] = useState<LeTab>("ueben");
+  const [activeTab, setActiveTab] = useState<LeTab>("wissen");
   const [geleseneKapitel, setGeleseneKapitel] = useState<Set<string>>(new Set());
 
-  // Artikel-Daten laden (pro LE — später dynamisch via Content-Loader)
-  const artikelKapitel = leId === "le-01" ? LE01_ARTIKEL : undefined;
-  const fallverlaeufe = leId === "le-01" ? LE01_FALLVERLAEUFE : undefined;
-  const praxisUebungen = leId === "le-01" ? LE01_PRAXIS : undefined;
-  const pruefungsfall = leId === "le-01" ? LE01_PRUEFUNGSFALL : undefined;
-  const lernSnack = leId === "le-01" ? LE01_LERN_SNACK : undefined;
+  // Tab-Content dynamisch laden (API-First mit Static-Fallback)
+  const {
+    artikel: artikelKapitel,
+    fallverlaeufe,
+    praxisUebungen,
+    pruefungsfall,
+    lernSnack,
+  } = useLeContent(leId);
 
   const handleKapitelGelesen = useCallback((kapitelId: string) => {
     setGeleseneKapitel((prev) => new Set(prev).add(kapitelId));
@@ -642,7 +640,7 @@ export default function LernenPage() {
               (navigation.lastCheckpointScore === "A" || activeTrack !== "all") && (
               <button
                 onClick={() => toggleTrack(activeTrack === "all" ? "basis" : "all")}
-                className={`text-[10px] font-semibold px-2 py-0.5 rounded-full mr-2 transition-colors ${
+                className={`text-xs font-semibold px-2 py-0.5 rounded-full mr-2 transition-colors ${
                   activeTrack === "all"
                     ? "bg-[#9B7EA6]/10 text-[#9B7EA6]"
                     : "bg-[var(--lern-card-bg)] text-[var(--lern-text-tertiary)]"
@@ -679,7 +677,7 @@ export default function LernenPage() {
               )}
               <StreakBadge streak={navigation.streak} />
               {adaptive.sprachLevel === "b1" && (
-                <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#6B8F71]/10 text-[#6B8F71]">
+                <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-[#6B8F71]/10 text-[#6B8F71]">
                   Einfache Sprache
                 </span>
               )}
@@ -688,7 +686,7 @@ export default function LernenPage() {
               <SessionXpCounter sessionXp={gamification.sessionXp} />
               <button
                 onClick={() => setShowStepNav(true)}
-                className="text-[10px] text-[#C4877F] font-medium active:opacity-60"
+                className="text-xs text-[#C4877F] font-medium active:opacity-60"
               >
                 {navigation.currentStep + 1} / {steps.length}
               </button>
@@ -934,13 +932,13 @@ export default function LernenPage() {
                 {metadata?.ceId?.replace("ce-", "CE ").toUpperCase() ?? "CE"} — {metadata?.title ?? "Lerneinheiten"}
               </h3>
               <p className="text-xs text-[var(--lern-text-tertiary)] mb-4">
-                {allLektionen.filter((l) => l.status === "geprueft" || l.status === "steps").length}/{allLektionen.length} Lerneinheiten verfügbar
+                {allLektionen.filter((l) => l.status === "geprueft" || l.status === "steps" || l.status === "published").length}/{allLektionen.length} Lerneinheiten verfügbar
               </p>
 
               <div className="space-y-1">
                 {allLektionen.map((le) => {
                   const isCurrent = le.leId === leId;
-                  const hasContent = le.status === "geprueft" || le.status === "steps";
+                  const hasContent = le.status === "geprueft" || le.status === "steps" || le.status === "published";
                   return (
                     <a
                       key={le.leId}
@@ -972,7 +970,7 @@ export default function LernenPage() {
                         }`}>
                           {le.titleShort}
                         </p>
-                        <p className="text-[10px] text-[var(--lern-text-tertiary)]">
+                        <p className="text-xs text-[var(--lern-text-tertiary)]">
                           {le.sessions.length} Sessions · {le.zeitrichtwert} UE
                         </p>
                       </div>
@@ -1061,7 +1059,7 @@ export default function LernenPage() {
                           {sContent.title}
                         </p>
                         <div className="flex items-center gap-2 mt-0.5">
-                          <span className="text-[10px] text-[var(--lern-text-secondary)] uppercase tracking-wider font-semibold">
+                          <span className="text-xs text-[var(--lern-text-secondary)] uppercase tracking-wider font-semibold">
                             {s.stepType}
                           </span>
                         </div>

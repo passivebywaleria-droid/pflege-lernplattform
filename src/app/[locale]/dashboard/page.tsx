@@ -116,7 +116,7 @@ export default function DashboardPage() {
       let status: "locked" | "available" | "in_progress" | "done" = "locked";
       let prozent = 0;
 
-      if (le.status === "geprueft" || le.status === "steps") {
+      if (le.status === "geprueft" || le.status === "steps" || le.status === "published") {
         if (fortschritt?.abgeschlossen) {
           status = "done";
           prozent = 100;
@@ -537,7 +537,7 @@ export default function DashboardPage() {
                   <div className="w-12 h-12 rounded-xl bg-[var(--lern-accent)]/10 flex items-center justify-center text-2xl">
                     {m.icon}
                   </div>
-                  <p className="text-[10px] font-medium text-[var(--lern-text-primary)] leading-tight">
+                  <p className="text-xs font-medium text-[var(--lern-text-primary)] leading-tight">
                     {m.titel}
                   </p>
                 </motion.div>
@@ -550,7 +550,7 @@ export default function DashboardPage() {
                   <div className="w-12 h-12 rounded-xl bg-[var(--lern-text-tertiary)]/10 flex items-center justify-center text-2xl">
                     ?
                   </div>
-                  <p className="text-[10px] font-medium text-[var(--lern-text-tertiary)] leading-tight">
+                  <p className="text-xs font-medium text-[var(--lern-text-tertiary)] leading-tight">
                     {m.titel}
                   </p>
                 </div>
@@ -588,7 +588,7 @@ export default function DashboardPage() {
                     style={{ minHeight: d.minuten > 0 ? "4px" : "2px" }}
                   />
                 </div>
-                <span className="text-[10px] text-[var(--lern-text-tertiary)]">{d.tag}</span>
+                <span className="text-xs text-[var(--lern-text-tertiary)]">{d.tag}</span>
                 {d.minuten > 0 && (
                   <span className="text-[9px] font-medium text-[var(--lern-accent)]">
                     {d.minuten} Min

@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useLocale } from "next-intl";
 import { motion } from "framer-motion";
-import { getAllLektionen } from "@/lib/content-loader";
+import { getAllLektionen, getAllLektionenAsync } from "@/lib/content-loader";
 import type { LeManifestEntry } from "@/lib/content-loader";
 import { useEinstufungsStatus } from "@/lib/einstufung/use-einstufung";
 import { useLernFortschritt } from "@/hooks/use-lern-fortschritt";
@@ -44,6 +44,7 @@ const CE_LABELS: Record<string, string> = {
 };
 
 const STATUS_CONFIG: Record<string, { label: string; opacity: string; badge: string }> = {
+  published: { label: "Verfügbar", opacity: "opacity-100", badge: "bg-[#6B8F71] text-white" },
   geprueft: { label: "Verfügbar", opacity: "opacity-100", badge: "bg-[#6B8F71] text-white" },
   steps: { label: "Verfügbar", opacity: "opacity-100", badge: "bg-[#6B8F71] text-white" },
   sessionplan: { label: "Entwurf", opacity: "opacity-70", badge: "bg-[#D4956A] text-white" },
@@ -52,7 +53,7 @@ const STATUS_CONFIG: Record<string, { label: string; opacity: string; badge: str
 
 function LektionCard({ lektion, locale }: { lektion: LeManifestEntry; locale: string }) {
   const status = STATUS_CONFIG[lektion.status] ?? STATUS_CONFIG.rohmaterial;
-  const isClickable = lektion.status === "geprueft" || lektion.status === "steps";
+  const isClickable = lektion.status === "geprueft" || lektion.status === "steps" || lektion.status === "published";
   const ceColor = CE_COLORS[lektion.ceId] ?? "var(--lern-accent)";
 
   const card = (
@@ -71,7 +72,7 @@ function LektionCard({ lektion, locale }: { lektion: LeManifestEntry; locale: st
           >
             {lektion.leId.replace("le-", "").replace(/^0/, "")}
           </span>
-          <span className={`rounded-full px-2 py-0.5 text-[10px] font-semibold ${status.badge}`}>
+          <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${status.badge}`}>
             {status.label}
           </span>
         </div>
@@ -82,7 +83,7 @@ function LektionCard({ lektion, locale }: { lektion: LeManifestEntry; locale: st
         {lektion.title}
       </h3>
 
-      <div className="flex items-center gap-2 text-[10px] text-[var(--lern-text-tertiary)]">
+      <div className="flex items-center gap-2 text-xs text-[var(--lern-text-tertiary)]">
         <span>{lektion.sessions.length} Sessions</span>
         <span>·</span>
         <span>{lektion.ceId.replace("ce-", "CE ").toUpperCase()}</span>
@@ -109,7 +110,14 @@ export default function LernenUebersichtPage() {
     }
   }, [einstufungLoaded, hatEinstufung, router, locale]);
 
-  const lektionen = getAllLektionen();
+  const [lektionen, setLektionen] = useState<LeManifestEntry[]>(getAllLektionen());
+
+  // Load from API to get new LEs from DB
+  useEffect(() => {
+    getAllLektionenAsync().then((les) => {
+      if (les.length > 0) setLektionen(les);
+    });
+  }, []);
 
   // Wochenplan-Empfehlung
   const wochenplan = useMemo(() => {
@@ -131,7 +139,7 @@ export default function LernenUebersichtPage() {
   }, {});
 
   const totalSessions = lektionen.reduce((sum, l) => sum + l.sessions.length, 0);
-  const fertigCount = lektionen.filter((l) => l.status === "geprueft" || l.status === "steps").length;
+  const fertigCount = lektionen.filter((l) => l.status === "geprueft" || l.status === "steps" || l.status === "published").length;
 
   return (
     <div className="min-h-screen bg-[var(--lern-bg)]">

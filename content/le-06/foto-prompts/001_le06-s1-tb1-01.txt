@@ -1,0 +1,56 @@
+Step: le06-s1-tb1-01
+Typ: positionen
+Trigger: Körperposition (Kinästhetik)
+Beschreibung: Bewegung beginnt im Kopf
+Priorität: HOCH
+Output: /images/content/le-06/le06-s1-tb1-01.png
+
+--- PROMPT (English, für Gemini/DALL-E/fal.ai) ---
+
+Professional illustration for a nursing education mobile app.
+Style: clean flat vector illustration with soft shadows and rounded shapes, modern educational app aesthetic (similar to Brilliant.org or Duolingo). Warm, friendly, approachable.
+Characters have diverse appearances (different genders, skin tones, ages, body types, including hijab), simple expressive faces with warm eyes, professional nursing scrubs.
+Soft natural window light, warm atmosphere, three-quarter camera angle.
+[VISUAL IDENTITY]
+Color palette: dusty rose (#C4877F), sage green (#6B8F71), warm cream background (#fafaf9), warm gray contours (#78716c).
+Status colors: success green (#6B8F71), warning amber (#D4956A), error coral (#C96B5C), info lavender (#9B7EA6).
+All illustrations must feel warm, professional, and encouraging — like a trusted friend explaining medicine.
+Absolutely no text, no labels, no annotations, no watermarks, no written words anywhere in the image.
+High educational clarity, readable at mobile phone card size (4:3 aspect ratio).
+
+Älterer Patient (Herr K.) sitzt auf der Bettkante und stützt sich selbst ab — er steht gerade allein auf, zum ersten Mal seit Wochen. Die Kinästhetik-Trainerin steht daneben, eine Hand ermutigend auf seiner Schulter, die andere locker an der Seite. Sie lächelt stolz und greift NICHT ein. Kernaussage: Eigenbewegung fördern statt für den Patienten machen. Der Moment des Erfolgs.
+
+CAREGIVER APPEARANCE (German hospital, realistic):
+- Wears a short-sleeved Kasack (medical scrub top) in white, light blue, or sage green, paired with matching scrub pants. Clean, wrinkle-free, professional fit.
+- Hair is tied back in a bun or braid (long hair always secured). Short hair neatly styled.
+- Bare forearms: no wristwatch, no bracelet, no rings. Short, clean natural fingernails with no nail polish.
+- Small ear studs are acceptable. No other visible jewelry.
+- Bare hands during patient contact (gloves only during wound care, catheter care, or contact with bodily fluids).
+- Comfortable, closed professional shoes (clogs or nursing shoes) in white or light colors.
+- DIVERSITY: Show a mix of genders, skin tones, ages, and body types across images. Include male nurses, nurses wearing hijab (tucked into scrubs), nurses with different hair textures. Avoid only young, slim, white, female nurses.
+
+PATIENT APPEARANCE:
+- Wears a hospital gown (Patientenhemd) or comfortable personal clothing (T-shirt, sweatpants). Covered with a light blanket when lying in bed.
+- Patients look like real people: elderly with wrinkles and gray hair, or younger adults. Various skin tones and body types.
+- Patients are always shown as active participants — sitting up, reaching out, stepping, holding on to grab bars — with the caregiver guiding and encouraging, never carrying or dragging.
+- Patients have dignified, calm, or gently smiling expressions. They look comfortable and safe.
+
+ROOM SETTING (German hospital, realistic):
+- Modern German hospital room: adjustable electric bed with side rails (lowered), bedside table (Nachttisch) with water glass and personal items.
+- Overhead trapeze bar (Bettgalgen) above the bed for patient self-support.
+- Call button (Rufknopf) clipped to the pillow or bed rail, within arm's reach.
+- IV pole (Infusionsständer) nearby if medically relevant.
+- Large window with daylight, cream or light-colored walls, clean linoleum floor.
+- Grab handles on walls near the bed. Anti-slip mat on the floor beside the bed.
+- Bathroom door visible in background. Room feels clean, bright, and calming — not sterile or cold.
+- Mobility aids nearby when relevant: walker (Rollator), wheelchair, transfer board, standing aid.
+
+INTERACTION STYLE:
+- Caregivers always have an open, welcoming posture: arms relaxed at sides, or one hand gently on the patient's shoulder or hand.
+- Caregivers always face the patient, making warm eye contact at the patient's eye level (bending knees or sitting down if patient is seated/lying).
+- When helping a patient move: caregiver supports at the torso or hip with flat palms, knees bent, back straight. Use of transfer aids visible (slide sheet, transfer board, standing aid).
+- Every touch is respectful: gentle flat-palm contact on shoulder, upper back, or hand.
+- The mood is warm, safe, encouraging, and professional. Like a trusted friend helping, not a clinical procedure.
+
+--- SPEICHERN ALS ---
+le06-s1-tb1-01.png

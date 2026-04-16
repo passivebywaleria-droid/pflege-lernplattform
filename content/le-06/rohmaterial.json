@@ -1,0 +1,637 @@
+{
+  "leId": "le-06",
+  "ceId": "ce-02",
+  "titel": "le-06",
+  "quellen": [
+    {
+      "id": "Q1",
+      "typ": "buch",
+      "titel": "I Care Pflege (Thieme, 2020) — Kap. 15: Mobilisation, Positionierung und Schlaf",
+      "jahr": 2020,
+      "seiten": "PDF S. 342-372"
+    },
+    {
+      "id": "Q2",
+      "typ": "buch",
+      "titel": "I Care Pflege — Kap. 17: Prophylaxen",
+      "jahr": 2020,
+      "seiten": "PDF S. 392-444"
+    },
+    {
+      "id": "Q3",
+      "typ": "leitlinie",
+      "titel": "DNQP Expertenstandard Sturzprophylaxe (2013, Update 2022)",
+      "jahr": 2013,
+      "seiten": ""
+    },
+    {
+      "id": "Q4",
+      "typ": "leitlinie",
+      "titel": "DNQP Expertenstandard Dekubitusprophylaxe (2017)",
+      "jahr": 2017,
+      "seiten": ""
+    },
+    {
+      "id": "Q5",
+      "typ": "buch",
+      "titel": "Thiemes Pflege (2019)",
+      "jahr": 2019,
+      "seiten": "Kap. Mobilisation"
+    },
+    {
+      "id": "Q6",
+      "typ": "buch",
+      "titel": "I Care Pflege — Kap. 9: Grundlagen Entwicklung",
+      "jahr": 2020,
+      "seiten": "PDF S. 213-250"
+    },
+    {
+      "id": "Q-AP",
+      "typ": "buch",
+      "titel": "I Care Anatomie Physiologie (Thieme, 2020)",
+      "jahr": 2020,
+      "seiten": "Relevante Kapitel"
+    }
+  ],
+  "kernfakten": [
+    {
+      "id": "F01",
+      "text": "Kinästhetik: Werkzeug/Instrument das sich mit dem Ablauf menschlicher Bewegung und Aktivität beschäftigt. Entwickelt in den 1970ern von Dr. Frank Hatch (Tänzer/Verhaltenskybernetiker) und Dr. Lenny Maietta (Psychologin) in den USA. Ziele: Ressourcen nutzen, Selbstständigkeit fördern, Körperbewusstsein stärken, physiologische Bewegung, nonverbale Kommunikation.",
+      "schluesselwoerter": [
+        "USA"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q1",
+      "quelleSeite": "S.342-343",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F02",
+      "text": "6 Kinästhetik-Konzepte: 1) Interaktion (Sinne + kinästhetisches Sinnessystem), 2) Funktionale Anatomie (Knochen tragen Gewicht, Muskeln halten Position — „Massen fassen, Zwischenräume spielen lassen\"), 3) Menschliche Bewegung (Haltungs-/Transportbewegung, parallel/spiralig), 4) Anstrengung (Drücken/Ziehen), 5) Menschliche Funktion (7 Grundpositionen), 6) Umgebung.",
+      "schluesselwoerter": [
+        "Massen fassen, Zwischenräume spielen lassen"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q1",
+      "quelleSeite": "S.343-346",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F03",
+      "text": "7 Massen: Kopf, Brustkorb, Becken, 2 Arme, 2 Beine. 6 Zwischenräume: Hals, Taille, 2 Achselhöhlen, 2 Leisten. Regel: Massen unterstützen, NICHT in Zwischenräume greifen (blockiert Eigenbewegung).",
+      "schluesselwoerter": [
+        "NICHT"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q1",
+      "quelleSeite": "S.344",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F04",
+      "text": "7 Grundpositionen (aufsteigend komplexer): 1) Rückenlage, 2) Bauchlage mit Ellbogenstütz, 3) Schneidersitz, 4) Hand-Knie-Stand, 5) Einbein-Knie-Stand, 6) Einbeinstand, 7) Zweibeinstand. Sichere Grundposition = beste Voraussetzung für weitere Bewegung.",
+      "schluesselwoerter": [],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q1",
+      "quelleSeite": "S.345-346",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F05",
+      "text": "Parallele vs. spiralige Bewegung: Parallel = rechte und linke Seite synchron (1 Achse, schwerer). Spiralig = Drehbewegung (2 Achsen, leichter, natürlicher). Kleinkinder nutzen spontan spiralige Muster beim Drehen. Bei Mobilisation spiralige Bewegungen bevorzugen.",
+      "schluesselwoerter": [],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q1",
+      "quelleSeite": "S.345",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F06",
+      "text": "Kinästhetik-Praxisregeln: 1) Ressourcen zuerst einschätzen, 2) Kommunikation vor Aktivität, 3) Zeit lassen, 4) Unterstützen nicht übernehmen, 5) Eindeutige Sprache („Kopfende\" statt „oben\"), 6) Schritt-für-Schritt-Anweisungen, 7) Anatomische Grundlagen kennen.",
+      "schluesselwoerter": [
+        "Kopfende",
+        "oben"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q1",
+      "quelleSeite": "S.347",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F07",
+      "text": "Kinästhetik Infant Handling: Prinzipien auf Säuglinge/Neugeborene angewendet. Kind über die Seite aufheben (nicht parallel). Spiralige Bewegungen bevorzugen. Beim Ablegen: Füße zuerst Kontakt zur Unterlage → über Seitenlage in Rückenlage. Nicht „kopfüber\" ablegen (vestibuläre Überreizung).",
+      "schluesselwoerter": [
+        "kopfüber"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q1",
+      "quelleSeite": "S.348",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F08",
+      "text": "Positionierung: Spezielle Lagerungen zur Prophylaxe und Therapie. Prinzipien: bequem, gezielte Hilfsmittel (nicht zu viel!), Ressourcen nutzen, keine Scherkräfte, individuelle Zeitintervalle, Kontraindikationen beachten.",
+      "schluesselwoerter": [],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q1",
+      "quelleSeite": "S.348-349",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F09",
+      "text": "Wichtige Positionierungen: Rückenlage (flach — bei Wirbelsäulen-OP), Oberkörperhochlage (Herz-/Lungenerkrankung, Essen), 30°-Seitenlage (Dekubitusprophylaxe — Trochanter/Schulter/Sitzbein entlasten), 90°-Seitenlage (Hemiplegie, nach Lungen-OP), 135°-Lage, Bauchlage (ARDS auf Intensivstation).",
+      "schluesselwoerter": [
+        "OP",
+        "ARDS"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q1",
+      "quelleSeite": "S.349-351",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F10",
+      "text": "Umgebungsgestaltung: Bett so einstellen, dass Füße den Boden erreichen. Weiche Matratzen = Bewegungshindernis (obwohl Anti-Dekubitus). Eingerollte Handtücher besser als weiche Kissen (bieten Widerstand zum Abdrücken). Hilfsmittel des Patienten bereitstellen, nicht im Schrank vergessen.",
+      "schluesselwoerter": [],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q1",
+      "quelleSeite": "S.346",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F11",
+      "text": "Sturzprophylaxe (DNQP Expertenstandard): Sturzrisikofaktoren: Alter >65, Medikamente (Sedativa, Antihypertensiva), Sehstörungen, Gleichgewichtsstörungen, kognitive Einschränkungen, Sturzanamnese, Umgebungsgefahren. Assessment: Timed-Up-and-Go-Test (aufstehen, 3m gehen, umdrehen, zurück, hinsetzen — <10s normal, 10-19s leichtes Risiko, ≥20s erhöhtes Risiko). [Q2 S.398-400]",
+      "schluesselwoerter": [
+        "DNQP",
+        "Sturzanamnese"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q3",
+      "quelleSeite": "",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F12",
+      "text": "Sturzprophylaxe-Maßnahmen: Festes Schuhwerk, Haltegriffe, Beleuchtung (auch nachts), Stolperfallen beseitigen, Bettbremsen, Klingel in Reichweite, Krafttraining/Gleichgewichtstraining, Medikamentenüberprüfung, Sturzprotokoll nach jedem Sturz. [Q2 S.400-404]",
+      "schluesselwoerter": [],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q3",
+      "quelleSeite": "",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F13",
+      "text": "Kontrakturenprophylaxe: Kontraktur = Versteifung eines Gelenks durch Schrumpfung von Muskeln/Sehnen/Bändern bei Immobilität. Prophylaxe: Bewegungsübungen (aktiv und passiv), Mobilisation, physiologische Positionierung, Hilfsmittel (Schienen). Besonders gefährdet: Sprunggelenk (Spitzfuß), Handgelenk (Krallenhand), Hüfte, Knie.",
+      "schluesselwoerter": [],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q2",
+      "quelleSeite": "S.404-408",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F14",
+      "text": "Thromboseprophylaxe: Virchow-Trias = 3 Risikofaktoren: 1) Verlangsamter Blutfluss (Immobilität), 2) Gefäßwandschädigung (OP, Trauma), 3) Veränderte Blutzusammensetzung (Gerinnungsstörung). Maßnahmen: Frühmobilisation, Beinbewegungen, Anti-Thrombose-Strümpfe (MTS), medikamentöse Prophylaxe (Heparin s.c.), Hochlagerung der Beine.",
+      "schluesselwoerter": [
+        "OP",
+        "MTS"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q2",
+      "quelleSeite": "S.410-416",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F15",
+      "text": "Pneumonieprophylaxe: Risikofaktoren: Bettlägerigkeit, Immobilität, Schmerzen (Schonatmung), Bewusstseinsstörung, Schluckstörung (Aspiration). Maßnahmen: Oberkörperhochlage, Atemübungen (Kontaktatmung, Lippenbremse), Inhalation, Frühmobilisation, Mundpflege.",
+      "schluesselwoerter": [],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q2",
+      "quelleSeite": "S.418-422",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F16",
+      "text": "Bobath-Konzept: Ganzheitliches Therapiekonzept für neurologische Patienten (Schlaganfall, MS, Parkinson). Ziel: Normalisierung des Muskeltonus, Anbahnung physiologischer Bewegungsmuster. Grundprinzip: Betroffene Seite einbeziehen, nicht kompensieren. Handling: Patient von betroffener Seite ansprechen, Nachttisch auf betroffene Seite stellen. [Q1 S.347]",
+      "schluesselwoerter": [
+        "MS",
+        "Therapiekonzept",
+        "Grundprinzip"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q5",
+      "quelleSeite": "",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F17",
+      "text": "Sprache bei Mobilisation: Eindeutige, verständliche Anweisungen. Richtungsbegriffe aus Sicht des liegenden Patienten formulieren. Schritt-für-Schritt-Anleitung, keine Anweisungsketten.",
+      "schluesselwoerter": [],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-II",
+      "quelleId": "Q1",
+      "quelleSeite": "S.347",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F18",
+      "text": "Vor jeder Mobilisation: Ziel besprechen, Zwischenschritte erklären, Hilfsmittel benennen. Patient muss wissen WAS passiert und WARUM.",
+      "schluesselwoerter": [
+        "WAS",
+        "WARUM"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-II",
+      "quelleId": "Q1",
+      "quelleSeite": "S.347",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F19",
+      "text": "Zusammenarbeit mit Physiotherapie: Gemeinsame Mobilisationsplanung, Rücksprache über Belastungsgrenzen (nach OP), abgestimmte Übungsprogramme. Kinästhetik-Trainerin als Ressource im Team.",
+      "schluesselwoerter": [
+        "OP"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-III",
+      "quelleId": "Q1",
+      "quelleSeite": "S.347",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F20",
+      "text": "Autonomie bei Mobilisation: Pflegeempfänger entscheidet mit, ob und wann mobilisiert wird. Verweigerung respektieren, aber Risiken erklären. Motivation statt Zwang.",
+      "schluesselwoerter": [
+        "Pflegeempfänger"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-IV",
+      "quelleId": "Q1",
+      "quelleSeite": "S.347",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F21",
+      "text": "Freiheitsbeschränkende Maßnahmen bei Sturzgefahr: Bettseitenteile, Fixierung NUR mit richterlicher Genehmigung (s. LE 04). Alternativen: Niedrigbett, Sensormatten, Sturzhelm.",
+      "schluesselwoerter": [
+        "NUR",
+        "LE"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-IV",
+      "quelleId": "Q2",
+      "quelleSeite": "S.400",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F22",
+      "text": "Arbeitsschutz: Rückenschonendes Arbeiten bei Mobilisation. Kinästhetik reduziert körperliche Belastung der Pflegenden. Hilfsmittel nutzen: Rutschbrett, Drehscheibe, Patientenlifter.",
+      "schluesselwoerter": [],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-V",
+      "quelleId": "Q1",
+      "quelleSeite": "S.343",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F23",
+      "text": "Schlaf als Ressource: Schlafhygiene fördern. Individuelle Schlafgewohnheiten berücksichtigen. Störfaktoren minimieren (Licht, Lärm, Schmerzen). Bei älteren Menschen: Veränderter Schlaf-Wach-Rhythmus (kürzere Tiefschlafphasen, häufigeres Erwachen). Schlafmedikamente: nur als letztes Mittel, Sturzgefahr erhöht!",
+      "schluesselwoerter": [],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-V",
+      "quelleId": "Q1",
+      "quelleSeite": "S.360-368",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F24",
+      "text": "Dokumentation: Mobilisationsplan, Sturzprotokoll, Positionierungsprotokoll (Intervalle, Position, Hautinspektion). Sturzrisikoerfassung bei Aufnahme und regelmäßig.",
+      "schluesselwoerter": [],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-V",
+      "quelleId": "Q2",
+      "quelleSeite": "S.400",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F25",
+      "text": "Barthel-Index: Standardisiertes ADL-Assessment zur Messung der Selbstständigkeit. 10 Bereiche: Essen, Baden, Körperpflege, An-/Auskleiden, Stuhlkontrolle, Harnkontrolle, Toilettenbenutzung, Bett-Rollstuhl-Transfer, Mobilität (Gehen/Rollstuhl), Treppensteigen. Punkteskala 0-100 (0 = komplett abhängig, 100 = selbstständig). Einstufung: 0-30 weitgehend pflegeabhängig, 35-80 pflegebedürftig, 85-100 punktuell hilfsbedürftig. Wird bei Aufnahme erhoben und regelmäßig re-evaluiert. Wichtig für Mobilisationsplanung und Dokumentation des Fortschritts. [Q5]",
+      "schluesselwoerter": [
+        "ADL"
+      ],
+      "zahlen": [
+        {
+          "wert": "10",
+          "kontext": "10 Bereiche"
+        }
+      ],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q1",
+      "quelleSeite": "S.346",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F26",
+      "text": "Transfer-Technik Bett→Rollstuhl (5-Schritt-Verfahren): 1) Rollstuhl schräg zum Bett stellen, Bremsen feststellen, Fußstützen wegklappen. 2) Patient an die Bettkante setzen, Füße flach auf dem Boden. 3) Patient stützt sich auf der Bettkante ab oder greift zur starken Seite (Bobath: betroffene Seite einbeziehen). 4) Pflegekraft stabilisiert am Becken (NICHT Achselhöhle!), Patient dreht sich zum Rollstuhl. 5) Kontrolliertes Hinsetzen, Fußstützen zurückklappen, Sitz prüfen. Bei hoher Abhängigkeit: Rutschbrett oder Drehscheibe einsetzen. [Q1 S.346-347]",
+      "schluesselwoerter": [
+        "NICHT"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q5",
+      "quelleSeite": "",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F27",
+      "text": "Hilfsmittel-Übersicht Mobilisation: Gehstock (leichte Gangunsicherheit, kontralateral einsetzen), Unterarmgehstütze (nach OP, Teilbelastung), Rollator (mittlere Gangunsicherheit, beide Hände frei), Rollstuhl (bei fehlender Gehfähigkeit, Selbstantrieb oder Schieberollstuhl), Rutschbrett (sitzender Transfer bei Parese), Drehscheibe (stehender Transfer bei eingeschränkter Drehfähigkeit), Patientenlifter (bei komplettem Bewegungsverlust, 2 Pflegekräfte). Auswahl abhängig von: Barthel-Index, Belastungsvorgabe (nach OP), Gleichgewicht, kognitivem Status. [Q1 S.346]",
+      "schluesselwoerter": [
+        "OP"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q5",
+      "quelleSeite": "",
+      "dozentinGeprueft": true
+    },
+    {
+      "id": "F28",
+      "text": "Dekubitus-Klassifikation nach EPUAP/NPUAP: Grad I — Nicht wegdrückbare Rötung bei intakter Haut (Fingertest: Rötung bleibt bestehen bei Druck). Grad II — Teilzerstörung der Haut mit Blasenbildung oder flachem Ulkus (Dermis betroffen). Grad III — Verlust aller Hautschichten, subkutanes Fettgewebe sichtbar, KEIN Knochen/Sehne/Muskel sichtbar. Grad IV — Vollständiger Gewebeverlust mit freiliegendem Knochen, Sehne oder Muskel. Prädilektionsstellen bei Rückenlage: Hinterhaupt, Schulterblätter, Ellbogen, Kreuzbein/Steißbein, Fersen. Bei Seitenlage: Ohr, Schulter, Trochanter major, Knie (Innenseite), Außenknöchel. 30°-Seitenlage entlastet gezielt Kreuzbein UND Trochanter. [Q4]",
+      "schluesselwoerter": [
+        "EPUAP",
+        "NPUAP",
+        "II",
+        "III",
+        "KEIN",
+        "IV",
+        "UND"
+      ],
+      "zahlen": [],
+      "namen": [],
+      "bloomLevel": 1,
+      "kompetenzbereich": "KB-I",
+      "quelleId": "Q2",
+      "quelleSeite": "S.424-430",
+      "dozentinGeprueft": true
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Nr",
+      "erklaerungC1": "Fachbegriff (C1)",
+      "erklaerungB1": "Erklärung (B1)",
+      "ar": "Arabisch",
+      "tr": "Türkisch"
+    },
+    {
+      "begriff": "1",
+      "erklaerungC1": "Kinästhetik",
+      "erklaerungB1": "Eine Methode: Wie bewegen wir uns richtig? Wie helfen wir dem Patienten bei der Bewegung?",
+      "ar": "علم الحركة",
+      "tr": "Kinestetik"
+    },
+    {
+      "begriff": "2",
+      "erklaerungC1": "Mobilisation",
+      "erklaerungB1": "Den Patienten aus dem Bett helfen und beim Bewegen unterstützen",
+      "ar": "التعبئة",
+      "tr": "Mobilizasyon"
+    },
+    {
+      "begriff": "3",
+      "erklaerungC1": "Positionierung",
+      "erklaerungB1": "Den Patienten in eine bestimmte Lage bringen (z.B. Seitenlage)",
+      "ar": "التموضع",
+      "tr": "Pozisyon verme"
+    },
+    {
+      "begriff": "4",
+      "erklaerungC1": "Kontraktur",
+      "erklaerungB1": "Ein Gelenk ist steif geworden, weil es sich lange nicht bewegt hat",
+      "ar": "التقلص",
+      "tr": "Kontraktür"
+    },
+    {
+      "begriff": "5",
+      "erklaerungC1": "Thrombose",
+      "erklaerungB1": "Ein Blutgerinnsel in einem Blutgefäß (gefährlich!)",
+      "ar": "الجلطة",
+      "tr": "Tromboz"
+    },
+    {
+      "begriff": "6",
+      "erklaerungC1": "Sturz",
+      "erklaerungB1": "Wenn ein Patient hinfällt",
+      "ar": "السقوط",
+      "tr": "Düşme"
+    },
+    {
+      "begriff": "7",
+      "erklaerungC1": "Spitzfuß",
+      "erklaerungB1": "Der Fuß steht nach unten und kann nicht mehr flach stehen",
+      "ar": "القدم المدببة",
+      "tr": "Çarpık ayak"
+    },
+    {
+      "begriff": "8",
+      "erklaerungC1": "Virchow-Trias",
+      "erklaerungB1": "3 Gründe für eine Thrombose (langsamer Blutfluss + Gefäßschaden + Blut-Veränderung)",
+      "ar": "ثالوث فيرخوف",
+      "tr": "Virchow triadı"
+    },
+    {
+      "begriff": "9",
+      "erklaerungC1": "Dekubitus",
+      "erklaerungB1": "Druckgeschwür — die Haut geht kaputt weil zu lange Druck darauf war",
+      "ar": "قرحة الضغط",
+      "tr": "Bası yarası"
+    },
+    {
+      "begriff": "10",
+      "erklaerungC1": "Prophylaxe",
+      "erklaerungB1": "Vorbeugung — etwas tun, BEVOR ein Problem entsteht",
+      "ar": "الوقاية",
+      "tr": "Profilaksi"
+    },
+    {
+      "begriff": "11",
+      "erklaerungC1": "Bobath-Konzept",
+      "erklaerungB1": "Eine Methode für Patienten nach Schlaganfall: Die kranke Seite wird einbezogen",
+      "ar": "مفهوم بوباث",
+      "tr": "Bobath konsepti"
+    },
+    {
+      "begriff": "12",
+      "erklaerungC1": "Pneumonie",
+      "erklaerungB1": "Lungenentzündung",
+      "ar": "التهاب رئوي",
+      "tr": "Pnömoni"
+    },
+    {
+      "begriff": "13",
+      "erklaerungC1": "Aspiration",
+      "erklaerungB1": "Essen oder Trinken kommt in die Lunge statt in den Magen",
+      "ar": "الشفط",
+      "tr": "Aspirasyon"
+    },
+    {
+      "begriff": "14",
+      "erklaerungC1": "Anti-Thrombose-Strümpfe (MTS)",
+      "erklaerungB1": "Enge Strümpfe die das Blut in den Beinen schneller fließen lassen",
+      "ar": "جوارب مضادة للجلطة",
+      "tr": "Anti-tromboz çorabı"
+    },
+    {
+      "begriff": "15",
+      "erklaerungC1": "Heparin",
+      "erklaerungB1": "Ein Medikament das Blutgerinnsel verhindert (Spritze unter die Haut)",
+      "ar": "الهيبارين",
+      "tr": "Heparin"
+    },
+    {
+      "begriff": "16",
+      "erklaerungC1": "Timed-Up-and-Go-Test",
+      "erklaerungB1": "Ein Test: Aufstehen, 3 Meter gehen, umdrehen, zurück, hinsetzen — wie schnell?",
+      "ar": "اختبار النهوض والمشي",
+      "tr": "Zamanlı kalk-yürü testi"
+    },
+    {
+      "begriff": "17",
+      "erklaerungC1": "Scherkraft",
+      "erklaerungB1": "Reibung auf der Haut wenn der Patient rutscht → kann Dekubitus verursachen",
+      "ar": "قوة القص",
+      "tr": "Kesme kuvveti"
+    },
+    {
+      "begriff": "18",
+      "erklaerungC1": "Grundposition",
+      "erklaerungB1": "7 Körperpositionen von liegend bis stehend (z.B. Rückenlage, Schneidersitz, Stand)",
+      "ar": "الوضع الأساسي",
+      "tr": "Temel pozisyon"
+    },
+    {
+      "begriff": "19",
+      "erklaerungC1": "Barthel-Index",
+      "erklaerungB1": "Ein Test mit 10 Bereichen: Wie viel kann der Patient alleine? 0 = braucht bei allem Hilfe, 100 = alles alleine",
+      "ar": "مؤشر بارثل",
+      "tr": "Barthel indeksi"
+    },
+    {
+      "begriff": "20",
+      "erklaerungC1": "Rollator",
+      "erklaerungB1": "Ein Gehgestell mit Rädern und Bremsen zum sicheren Gehen",
+      "ar": "المشاية",
+      "tr": "Yürüteç"
+    },
+    {
+      "begriff": "21",
+      "erklaerungC1": "Transfer",
+      "erklaerungB1": "Den Patienten von einem Platz zum anderen bewegen (z.B. vom Bett in den Rollstuhl)",
+      "ar": "النقل",
+      "tr": "Transfer"
+    }
+  ],
+  "leitfaelle": [
+    {
+      "patientId": "A",
+      "name": "Siebert",
+      "alter": 81,
+      "geschlecht": "w",
+      "diagnose": "Z.n. Hüft-TEP nach Oberschenkelhalsfraktur, Teilbelastung 20 kg",
+      "setting": "Akutstation, Tag 2 post-OP",
+      "kernproblem": "Ausgeprägte Sturzangst, Barthel 40, BMI 19,8 — Mobilisation mit vollständigem Prophylaxe-Bündel (Dekubitus, Thrombose, Pneumonie, Kontraktur, Sturz).",
+      "szenen": []
+    },
+    {
+      "patientId": "B",
+      "name": "Demir",
+      "alter": 64,
+      "geschlecht": "m",
+      "diagnose": "Ischämischer Schlaganfall links-hemisphärisch, rechtsseitige Hemiparese, Dysphagie",
+      "setting": "Stroke Unit, Tag 6",
+      "kernproblem": "Barthel 25, Bobath-Konzept über betroffene Seite, kultursensible Anleitung Ehefrau Elif, Dysphagie-Management.",
+      "szenen": []
+    },
+    {
+      "patientId": "C",
+      "name": "Nisa",
+      "alter": 0,
+      "geschlecht": "w",
+      "diagnose": "Frühgeborenes 31. SSW, hypotoner Muskeltonus, Trinkprobleme, motorische Entwicklungsverzögerung",
+      "setting": "Neonatologie / Pädiatrie ambulant, 4 Monate alt",
+      "kernproblem": "Kinästhetik Infant Handling, Eltern-Anleitung (Mutter Yasemin, Vater Kemal), Abgrenzung traditionelle vs. fachliche Empfehlungen.",
+      "szenen": []
+    }
+  ],
+  "dozentinFreigabeRohmaterial": true,
+  "dozentinFreigabeDatum": "2026-04-16"
+}

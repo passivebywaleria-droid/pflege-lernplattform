@@ -69,7 +69,7 @@ function bestimmeNaechsteLEs(
   }
 
   // Verfügbare LEs (die Content haben)
-  const verfuegbar = alleLektionen.filter((le) => le.status === "geprueft" || le.status === "steps");
+  const verfuegbar = alleLektionen.filter((le) => le.status === "geprueft" || le.status === "steps" || le.status === "published");
 
   // Angefangene zuerst
   const angefangen = verfuegbar.filter((le) => angefangeneLEs.includes(le.leId));
@@ -127,7 +127,7 @@ export function generiereWochenplan(
   const { aktuelle, wiederholung } = bestimmeNaechsteLEs(fortschritt, alleLektionen);
 
   // Thema 1: Erstes aktuelles Thema (oder erstes verfügbares)
-  const thema1 = aktuelle[0] ?? alleLektionen.find((le) => le.status === "geprueft" || le.status === "steps") ?? alleLektionen[0];
+  const thema1 = aktuelle[0] ?? alleLektionen.find((le) => le.status === "geprueft" || le.status === "steps" || le.status === "published") ?? alleLektionen[0];
 
   // Thema 2: Zweites aktuelles Thema (anderes CE für Abwechslung)
   const thema2 = aktuelle.find((le) => le.ceId !== thema1?.ceId) ?? aktuelle[1] ?? thema1;
