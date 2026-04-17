@@ -1,0 +1,171 @@
+{
+  "leId": "le-01",
+  "timestamp": "2026-04-17T09:50:05.657Z",
+  "verdict": "FAIL",
+  "koFailures": [
+    "Urheberrecht (Abstandstest)"
+  ],
+  "totalChecks": 11,
+  "passedChecks": 7,
+  "gates": [
+    {
+      "id": "typescript",
+      "name": "TypeScript Compilation",
+      "pass": true,
+      "ko": true,
+      "details": {
+        "errorCount": 0
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "naming",
+      "name": "Naming-Standard (LE-Schablone)",
+      "pass": false,
+      "ko": false,
+      "details": {
+        "output": "sprungen (kein JSON)\n3. MC-Bias ................... 4 MC ⚠️ (5 Warnungen)\n4. Dialog-Bias ............... 1 Dialoge ⚠️ (1 Warnungen)\n5. Glossar-Vollständigkeit ... 25 Einträge ✅ (0 FEHLT)\n6. Track-Verteilung .......... 61b/5v ⚠️ (1 Warnungen)\n   ⚠️  Zu wenig vertiefung: 5/66 (8%, soll ≥15%)\n8. Bloom-Progression ......... ✅ (0 Warnungen)\n\n═══════════════════════════════════════════════════════\n  ERGEBNIS: ❌ Fehler gefunden — siehe Checkliste\n═══════════════════════════════════════════════════════\n"
+      },
+      "errors": [
+        "2 kritische Naming-Fehler"
+      ],
+      "warnings": [
+        "Naming-Warnungen vorhanden (MEDIUM/LOW)"
+      ]
+    },
+    {
+      "id": "renderable",
+      "name": "Renderer-Kompatibilität",
+      "pass": true,
+      "ko": true,
+      "details": {
+        "output": "kel: 9 Kapitel\n  Fallverläufe: 3 Patienten\n  Praxis: 4 Übungen\n  Prüfungsfall: Amara D.\n  Glossar: 25 Einträge\n  Karteikarten: 38 Karten\n\n════════════════════════════════════════════════════════════\n  ✅ ALLE 0 STEPS IN 6 SESSIONS RENDERBAR\n════════════════════════════════════════════════════════════"
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "urheberrecht",
+      "name": "Urheberrecht (Abstandstest)",
+      "pass": false,
+      "ko": true,
+      "details": {
+        "fails": 1,
+        "warns": 2
+      },
+      "errors": [
+        "1 FAIL-Blöcke (≥6 N-Gramm-Treffer)"
+      ],
+      "warnings": [
+        "2 WARN-Blöcke (3-5 Treffer)"
+      ]
+    },
+    {
+      "id": "schema",
+      "name": "Schema-Validierung",
+      "pass": false,
+      "ko": false,
+      "details": {
+        "total": 66,
+        "passed": 10,
+        "critical": 4,
+        "high": 0,
+        "medium": 55,
+        "low": 4
+      },
+      "errors": [
+        "le01-s1-cf-08: question.statements — Array mit mind. 1 Einträgen (Statements als string[])",
+        "le01-s1-cf-08: question.confidenceCards — Nicht question.confidenceCards sondern question.statements (als string[])",
+        "le01-s4-cf-08: question.statements — Array mit mind. 1 Einträgen (Statements als string[])",
+        "le01-s4-cf-08: question.confidenceCards — Nicht question.confidenceCards sondern question.statements (als string[])"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "fakten",
+      "name": "Fakten-Abdeckung",
+      "pass": true,
+      "ko": false,
+      "details": {},
+      "errors": [],
+      "warnings": [
+        "Kein rohmaterial.json — übersprungen"
+      ],
+      "skipped": true
+    },
+    {
+      "id": "mcBias",
+      "name": "MC-Bias-Check",
+      "pass": true,
+      "ko": false,
+      "details": {
+        "totalMc": 4,
+        "warningCount": 5
+      },
+      "errors": [],
+      "warnings": [
+        "le01-s1-mc-05: FACHBEGRIFF — \"Gleichschaltung\" nur in korrekter Antwort, nicht in Distraktoren",
+        "le01-s3-mc-04: FACHBEGRIFF — \"Qualifikation\" nur in korrekter Antwort, nicht in Distraktoren",
+        "le01-s4-mc-05: FACHBEGRIFF — \"Effizienz\" nur in korrekter Antwort, nicht in Distraktoren",
+        "le01-s5-mc-07: LAENGE — Korrekte Antwort 90 Zeichen, Distraktoren Ø 28 Zeichen (225% länger)",
+        "le01-s5-mc-07: FACHBEGRIFF — \"Entlassung\" nur in korrekter Antwort, nicht in Distraktoren"
+      ]
+    },
+    {
+      "id": "dialogBias",
+      "name": "Dialog-Bias-Check",
+      "pass": true,
+      "ko": false,
+      "details": {
+        "totalDialogs": 1,
+        "warningCount": 1
+      },
+      "errors": [],
+      "warnings": [
+        "GESAMT: POSITION_BIAS — Position A hat den besten Score in 67% aller Phasen (2/3)"
+      ]
+    },
+    {
+      "id": "b1Quality",
+      "name": "B1-Sprachqualität",
+      "pass": true,
+      "ko": false,
+      "details": {
+        "critical": 0,
+        "high": 0,
+        "medium": 7,
+        "low": 5,
+        "total": 12
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "glossar",
+      "name": "Glossar-Vollständigkeit",
+      "pass": true,
+      "ko": false,
+      "details": {
+        "inGlossar": 25,
+        "fehlt": 0,
+        "ungenutzt": 25
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "preLive",
+      "name": "Pre-Live 7-Punkt-Gate",
+      "pass": false,
+      "ko": false,
+      "details": {
+        "blocked": true
+      },
+      "errors": [
+        "Pre-Live-Gate BLOCKED"
+      ],
+      "warnings": []
+    }
+  ]
+}

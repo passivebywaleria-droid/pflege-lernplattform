@@ -10,11 +10,14 @@ import { StepFillIn } from "./step-fillin";
 import { StepSequencing } from "./step-sequencing";
 import { StepCategorize } from "./step-categorize";
 import { StepSlider } from "./step-slider";
+import { StepFreetext } from "./step-freetext";
+import { StepCloze } from "./step-cloze";
 
 // Fragetypen die im Prüfungsmodus sinnvoll sind (keine reinen Lese-Steps)
 const PRUEFUNGS_STEP_TYPES = new Set([
   "mc", "matching", "sorting", "fillin", "sequencing",
   "categorize", "slider", "truefalse", "cloze",
+  "freetext", "careplan",
 ]);
 
 interface PruefungsModusProps {
@@ -36,7 +39,7 @@ export function PruefungsModus({ steps, leTitle, glossar, onExit }: PruefungsMod
   // Nur Frage-Steps filtern
   const frageSteps = steps.filter((s) => PRUEFUNGS_STEP_TYPES.has(s.stepType));
   const maxFragen = Math.min(frageSteps.length, 20);
-  const pruefungsSteps = frageSteps.slice(0, maxFragen);
+  const pruefungsSteps = [...frageSteps].sort(() => Math.random() - 0.5).slice(0, maxFragen);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [ergebnis, setErgebnis] = useState<PruefungsErgebnis | null>(null);
@@ -391,6 +394,47 @@ function renderPruefungsStep(
           tolerance={slider.tolerance}
           explanation={slider.explanation}
           onNext={onNext}
+        />
+      );
+    }
+
+    case "cloze": {
+      const cloze = question?.cloze;
+      if (!cloze) return null;
+      return (
+        <StepCloze
+          title={contentC1.title}
+          body={contentC1.body}
+          textWithBlanks={cloze.textWithBlanks}
+          blanks={cloze.blanks}
+          onNext={onNext}
+        />
+      );
+    }
+
+    case "freetext":
+      return (
+        <StepFreetext
+          title={contentC1.title}
+          body={contentC1.body}
+          fragetext={question?.fragetext ?? ""}
+          musterantwort={question?.musterantwort}
+          bewertungskriterien={question?.bewertungskriterien}
+          onNext={() => onNext(true)}
+        />
+      );
+
+    case "careplan": {
+      const cp = question?.careplan;
+      if (!cp) return null;
+      // Careplan als Freitext-Aufgabe rendern
+      const cpBody = `**Patient:** ${cp.patientName}\n**Situation:** ${cp.situation}\n\n${cp.steps.map((s: { phase: string; prompt: string }) => `**${s.phase}:** ${s.prompt}`).join("\n\n")}`;
+      return (
+        <StepFreetext
+          title={contentC1.title}
+          body={cpBody}
+          fragetext={question?.fragetext ?? "Erstellen Sie eine Pflegeplanung."}
+          onNext={() => onNext(true)}
         />
       );
     }

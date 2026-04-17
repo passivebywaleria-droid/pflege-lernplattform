@@ -178,7 +178,7 @@ export default function ReviewPage() {
                     <p className="mt-1 text-xs font-semibold text-[#C96B5C]">
                       {t("again")}
                     </p>
-                    <p className="text-[10px] text-[var(--lern-text-tertiary)]">1 Tag</p>
+                    <p className="text-xs text-[var(--lern-text-tertiary)]">1 Tag</p>
                   </button>
 
                   <button
@@ -189,7 +189,7 @@ export default function ReviewPage() {
                     <p className="mt-1 text-xs font-semibold text-[#D4956A]">
                       {t("hard")}
                     </p>
-                    <p className="text-[10px] text-[var(--lern-text-tertiary)]">
+                    <p className="text-xs text-[var(--lern-text-tertiary)]">
                       {aktuelleKarte.intervall} {aktuelleKarte.intervall === 1 ? "Tag" : "Tage"}
                     </p>
                   </button>
@@ -202,7 +202,7 @@ export default function ReviewPage() {
                     <p className="mt-1 text-xs font-semibold text-[#6B8F71]">
                       {t("good")}
                     </p>
-                    <p className="text-[10px] text-[var(--lern-text-tertiary)]">
+                    <p className="text-xs text-[var(--lern-text-tertiary)]">
                       {Math.max(1, aktuelleKarte.intervall * 2)} Tage
                     </p>
                   </button>
@@ -215,7 +215,7 @@ export default function ReviewPage() {
                     <p className="mt-1 text-xs font-semibold text-[#C4877F]">
                       {t("easy")}
                     </p>
-                    <p className="text-[10px] text-[var(--lern-text-tertiary)]">
+                    <p className="text-xs text-[var(--lern-text-tertiary)]">
                       {Math.max(3, aktuelleKarte.intervall * 3)} Tage
                     </p>
                   </button>

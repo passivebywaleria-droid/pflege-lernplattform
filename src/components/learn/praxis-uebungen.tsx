@@ -23,7 +23,7 @@ export function PraxisUebungen({ uebungen, sprachLevel, onStartUebung }: PraxisU
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
   return (
-    <div className="space-y-4 px-4 py-6" style={{ color: "#1d1d1f" }}>
+    <div className="space-y-4 px-4 py-6" style={{ color: "var(--lern-text-primary)" }}>
       <div className="mb-6">
         <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
           Praxis-Simulationen
@@ -51,6 +51,7 @@ export function PraxisUebungen({ uebungen, sprachLevel, onStartUebung }: PraxisU
             {/* Header */}
             <button
               onClick={() => setExpandedId(isExpanded ? null : uebung.uebungId)}
+              aria-expanded={isExpanded}
               className="flex w-full items-start gap-3 p-4 text-left transition-colors hover:bg-[var(--lern-bg-secondary)]"
             >
               <div
@@ -62,12 +63,12 @@ export function PraxisUebungen({ uebungen, sprachLevel, onStartUebung }: PraxisU
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1">
                   <span
-                    className="inline-block rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white"
+                    className="inline-block rounded-full px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-white"
                     style={{ backgroundColor: config.color }}
                   >
                     {config.label}
                   </span>
-                  <span className="text-[10px] font-medium text-[var(--lern-text-secondary)]">
+                  <span className="text-xs font-medium text-[var(--lern-text-secondary)]">
                     Bloom {uebung.bloomLevel} · {uebung.steps.length} {uebung.steps.length === 1 ? "Schritt" : "Schritte"}
                   </span>
                 </div>
@@ -102,7 +103,7 @@ export function PraxisUebungen({ uebungen, sprachLevel, onStartUebung }: PraxisU
                           key={step.stepId}
                           className="flex items-center gap-2 text-xs text-[var(--lern-text-secondary)]"
                         >
-                          <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--lern-bg-secondary)] text-[10px] font-bold">
+                          <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--lern-bg-secondary)] text-xs font-bold">
                             {idx + 1}
                           </span>
                           <span className="capitalize font-medium" style={{ color: config.color }}>

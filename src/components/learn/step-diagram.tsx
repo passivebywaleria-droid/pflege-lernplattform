@@ -98,7 +98,7 @@ function FlowchartDiagram({
                 )}
                 <span>{node.label}</span>
                 {interactive && (
-                  <span className="block text-[10px] text-[var(--lern-text-secondary)] mt-0.5">
+                  <span className="block text-xs text-[var(--lern-text-secondary)] mt-0.5">
                     Tippen für Details
                   </span>
                 )}
@@ -123,7 +123,7 @@ function FlowchartDiagram({
                     e.label ? (
                       <span
                         key={`${e.from}-${e.to}`}
-                        className="text-[10px] text-[var(--lern-text-secondary)] mt-0.5"
+                        className="text-xs text-[var(--lern-text-secondary)] mt-0.5"
                       >
                         {e.label}
                       </span>
@@ -198,7 +198,7 @@ function MindmapDiagram({
               )}
               <span className="block">{child.label}</span>
               {edge?.label && (
-                <span className="block text-[10px] text-[var(--lern-text-secondary)] mt-0.5">
+                <span className="block text-xs text-[var(--lern-text-secondary)] mt-0.5">
                   {edge.label}
                 </span>
               )}
@@ -262,7 +262,7 @@ function CycleDiagram({
                   <div className="h-0 w-0 border-l-[4px] border-r-[4px] border-t-[5px] border-l-transparent border-r-transparent border-t-[var(--lern-border)]" />
                 </div>
                 {edge?.label && (
-                  <span className="text-[10px] text-[var(--lern-text-secondary)] ml-2">
+                  <span className="text-xs text-[var(--lern-text-secondary)] ml-2">
                     {edge.label}
                   </span>
                 )}
@@ -272,7 +272,7 @@ function CycleDiagram({
             {/* Loop-back arrow for last node */}
             {i === nodes.length - 1 && edges.some((e) => e.from === node.id && e.to === nodes[0]?.id) && (
               <div className="flex items-center justify-center py-1">
-                <span className="text-[10px] text-[var(--lern-text-secondary)]">↻ Zyklus wiederholt sich</span>
+                <span className="text-xs text-[var(--lern-text-secondary)]">↻ Zyklus wiederholt sich</span>
               </div>
             )}
           </div>

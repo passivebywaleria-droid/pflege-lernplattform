@@ -29,14 +29,14 @@ export function ExamCaseStart({ examCase, leTitle, onExit }: ExamCaseStartProps)
   }
 
   return (
-    <div className="px-4 py-6 space-y-6" style={{ color: "#1d1d1f" }}>
+    <div className="px-4 py-6 space-y-6" style={{ color: "var(--lern-text-primary)" }}>
       {/* Header */}
       <div className="text-center space-y-3">
         <div className="w-16 h-16 mx-auto rounded-2xl bg-[#D4956A]/10 flex items-center justify-center">
           <Target size={28} className="text-[#D4956A]" />
         </div>
         <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
-          Pruefungssimulation
+          Prüfungssimulation
         </h2>
         <p className="text-sm text-[var(--lern-text-secondary)]">
           {examCase.titel}
@@ -55,7 +55,7 @@ export function ExamCaseStart({ examCase, leTitle, onExit }: ExamCaseStartProps)
           {examCase.patient.diagnosen.map((d) => (
             <span
               key={d}
-              className="inline-block rounded-full bg-[var(--lern-bg-secondary)] px-2.5 py-0.5 text-[10px] font-medium text-[var(--lern-text-secondary)]"
+              className="inline-block rounded-full bg-[var(--lern-bg-secondary)] px-2.5 py-0.5 text-xs font-medium text-[var(--lern-text-secondary)]"
             >
               {d}
             </span>
@@ -70,28 +70,28 @@ export function ExamCaseStart({ examCase, leTitle, onExit }: ExamCaseStartProps)
           <p className="text-lg font-bold text-[var(--lern-text-primary)]">
             {examCase.zeitLimitMinuten ?? 60}
           </p>
-          <p className="text-[10px] text-[var(--lern-text-secondary)]">Minuten</p>
+          <p className="text-xs text-[var(--lern-text-secondary)]">Minuten</p>
         </div>
         <div className="rounded-2xl bg-[var(--lern-card)] border border-[var(--lern-border)] p-3 text-center">
           <BookOpen size={16} className="mx-auto mb-1 text-[var(--lern-text-secondary)]" />
           <p className="text-lg font-bold text-[var(--lern-text-primary)]">
             {examCase.phasen.length}
           </p>
-          <p className="text-[10px] text-[var(--lern-text-secondary)]">Phasen</p>
+          <p className="text-xs text-[var(--lern-text-secondary)]">Phasen</p>
         </div>
         <div className="rounded-2xl bg-[var(--lern-card)] border border-[var(--lern-border)] p-3 text-center">
           <Brain size={16} className="mx-auto mb-1 text-[var(--lern-text-secondary)]" />
           <p className="text-lg font-bold text-[var(--lern-text-primary)]">
             {alleSteps.length}
           </p>
-          <p className="text-[10px] text-[var(--lern-text-secondary)]">Fragen</p>
+          <p className="text-xs text-[var(--lern-text-secondary)]">Fragen</p>
         </div>
       </div>
 
       {/* Phasen-Uebersicht */}
       <div className="space-y-2">
         <h3 className="text-sm font-semibold text-[var(--lern-text-primary)]">
-          Pruefungsablauf
+          Prüfungsablauf
         </h3>
         {examCase.phasen.map((phase, idx) => (
           <div
@@ -116,8 +116,8 @@ export function ExamCaseStart({ examCase, leTitle, onExit }: ExamCaseStartProps)
       {/* Hinweis */}
       <div className="rounded-xl bg-[#D4956A]/5 border border-[#D4956A]/20 p-3">
         <p className="text-xs text-[var(--lern-text-secondary)]">
-          Im Pruefungsmodus gibt es keine Erklaerungen, kein Glossar und keinen KI-Chat.
-          Antworten Sie aus dem Gedaechtnis — wie in der echten Pruefung.
+          Im Prüfungsmodus gibt es keine Erklärungen, kein Glossar und keinen KI-Chat.
+          Antworte aus dem Gedächtnis — wie in der echten Prüfung.
         </p>
       </div>
 
@@ -127,14 +127,14 @@ export function ExamCaseStart({ examCase, leTitle, onExit }: ExamCaseStartProps)
           onClick={onExit}
           className="flex-1 rounded-2xl bg-[var(--lern-bg-secondary)] px-5 py-3.5 text-sm font-semibold text-[var(--lern-text-primary)] transition-all active:scale-[0.98]"
         >
-          Zurueck
+          Zurück
         </button>
         <motion.button
           whileTap={{ scale: 0.98 }}
           onClick={() => setGestartet(true)}
           className="flex-1 rounded-2xl bg-[#D4956A] px-5 py-3.5 text-sm font-semibold text-white transition-all"
         >
-          Pruefung starten
+          Prüfung starten
         </motion.button>
       </div>
     </div>

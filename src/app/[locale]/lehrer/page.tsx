@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import {
@@ -8,10 +8,121 @@ import {
   schwierigsteThemen,
   berechneKlassenStatistiken,
   type SchuelerStatus,
+  type MockSchueler,
 } from "@/lib/mock/lehrer-daten";
-import { getMockLehrerNachrichten } from "@/components/learn/lehrer-chat";
 
-/** Status-Badge mit Farb-Kodierung */
+// ── API Response Types ──
+
+interface ApiStudent {
+  id: string;
+  name: string;
+  email: string;
+  classId: string | null;
+  language: string | null;
+  sprachLevel: number | null;
+  fachwissenLevel: number | null;
+  isActive: boolean;
+  createdAt: string;
+  leProgress: {
+    leId: string;
+    gesamtXp: number;
+    abgeschlossen: boolean;
+    letzteAktivitaet: string;
+  }[];
+  streak: {
+    currentStreak: number;
+    longestStreak: number;
+    lastActivityDate: string | null;
+  } | null;
+}
+
+interface ApiMessage {
+  id: string;
+  senderId: string;
+  receiverId: string;
+  content: string;
+  contextLeId: string | null;
+  contextStepId: string | null;
+  isRead: boolean;
+  createdAt: string;
+}
+
+interface ApiClassResponse {
+  classes: { id: string; name: string }[];
+  students: ApiStudent[];
+}
+
+// ── API → Dashboard Transformer ──
+
+function transformStudent(s: ApiStudent): MockSchueler {
+  const now = new Date();
+
+  // Letzte Aktivität berechnen
+  const letzteDaten = s.leProgress.map((p) => new Date(p.letzteAktivitaet).getTime());
+  const letzteAktivitaet = letzteDaten.length > 0 ? new Date(Math.max(...letzteDaten)) : new Date(s.createdAt);
+  const diffTage = Math.floor((now.getTime() - letzteAktivitaet.getTime()) / (1000 * 60 * 60 * 24));
+
+  // Fortschritt: % abgeschlossene LEs (oder 0)
+  const abgeschlossen = s.leProgress.filter((p) => p.abgeschlossen).length;
+  const total = Math.max(s.leProgress.length, 1);
+  const fortschritt = Math.round((abgeschlossen / total) * 100);
+
+  // Aktive CE aus letztem bearbeiteten LE
+  const sortiert = [...s.leProgress].sort(
+    (a, b) => new Date(b.letzteAktivitaet).getTime() - new Date(a.letzteAktivitaet).getTime()
+  );
+  const aktiveCE = sortiert[0]?.leId
+    ? `CE ${sortiert[0].leId.replace("le-", "").padStart(2, "0")}`
+    : "—";
+
+  // Status berechnen
+  let status: SchuelerStatus = "aktiv";
+  if (diffTage >= 5) status = "inaktiv";
+  else if (diffTage >= 2 && fortschritt < 30) status = "brauchtHilfe";
+
+  // Letzter Login formatieren
+  let letzterLogin = "—";
+  if (diffTage === 0) letzterLogin = "Heute";
+  else if (diffTage === 1) letzterLogin = "Gestern";
+  else letzterLogin = `Vor ${diffTage} Tagen`;
+
+  // Sprachlevel
+  const sl = s.sprachLevel ?? 3;
+  const sprachLevel: "b1" | "b2" | "c1" = sl <= 2 ? "b1" : sl <= 3 ? "b2" : "c1";
+
+  return {
+    id: s.id,
+    name: s.name,
+    letzterLogin,
+    fortschritt,
+    aktiveCE,
+    status,
+    tageInaktiv: diffTage,
+    sprachLevel,
+    streak: s.streak?.currentStreak ?? 0,
+  };
+}
+
+interface DashboardNachricht {
+  id: string;
+  text: string;
+  kontext: { ceId?: string; thema?: string } | null;
+  zeit: string;
+}
+
+function transformMessages(msgs: ApiMessage[]): DashboardNachricht[] {
+  return msgs.slice(0, 10).map((m) => ({
+    id: m.id,
+    text: m.content,
+    kontext: m.contextLeId
+      ? { ceId: `ce-${m.contextLeId.replace("le-", "")}`, thema: m.contextStepId ?? undefined }
+      : null,
+    zeit: m.createdAt,
+  }));
+}
+
+// ── UI Helper Components ──
+
 function StatusBadge({ status, label }: { status: SchuelerStatus; label: string }) {
   const farbe =
     status === "aktiv"
@@ -33,7 +144,6 @@ function StatusBadge({ status, label }: { status: SchuelerStatus; label: string 
   );
 }
 
-/** Fortschrittsbalken */
 function FortschrittsBalken({ prozent }: { prozent: number }) {
   const farbe =
     prozent >= 70
@@ -59,7 +169,6 @@ function FortschrittsBalken({ prozent }: { prozent: number }) {
   );
 }
 
-/** Statistik-Karte */
 function StatKarte({
   label,
   wert,
@@ -90,11 +199,78 @@ function StatKarte({
   );
 }
 
+// ── Skeleton Loader ──
+
+function DashboardSkeleton() {
+  return (
+    <div className="min-h-screen bg-[var(--lern-bg)]">
+      <div className="sticky top-0 z-40 bg-[var(--lern-bg-primary)]/80 backdrop-blur-xl border-b border-[var(--lern-border)]">
+        <div className="max-w-3xl mx-auto px-4 py-4">
+          <div className="h-7 w-48 bg-[var(--lern-border)] rounded animate-pulse" />
+          <div className="h-4 w-24 bg-[var(--lern-border)] rounded animate-pulse mt-2" />
+        </div>
+      </div>
+      <div className="max-w-3xl mx-auto px-4 py-6 space-y-4">
+        <div className="grid grid-cols-2 gap-3">
+          {[1, 2, 3, 4].map((i) => (
+            <div key={i} className="h-20 bg-[var(--lern-bg-primary)] rounded-2xl border border-[var(--lern-border)]/50 animate-pulse" />
+          ))}
+        </div>
+        <div className="h-64 bg-[var(--lern-bg-primary)] rounded-2xl border border-[var(--lern-border)]/50 animate-pulse" />
+      </div>
+    </div>
+  );
+}
+
+// ── Main Page ──
+
 export default function LehrerDashboardPage() {
   const t = useTranslations("lehrer");
+  const [schueler, setSchueler] = useState<MockSchueler[] | null>(null);
+  const [nachrichten, setNachrichten] = useState<DashboardNachricht[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [isLive, setIsLive] = useState(false);
 
-  const stats = useMemo(() => berechneKlassenStatistiken(mockSchueler), []);
-  const lehrerNachrichten = useMemo(() => getMockLehrerNachrichten(), []);
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const [classRes, msgRes] = await Promise.all([
+          fetch("/api/teacher/class"),
+          fetch("/api/teacher/messages"),
+        ]);
+
+        if (classRes.ok && msgRes.ok) {
+          const classData: ApiClassResponse = await classRes.json();
+          const msgData: ApiMessage[] = await msgRes.json();
+
+          if (classData.students.length > 0) {
+            setSchueler(classData.students.map(transformStudent));
+            setNachrichten(transformMessages(msgData.filter((m) => !m.isRead)));
+            setIsLive(true);
+            setLoading(false);
+            return;
+          }
+        }
+      } catch {
+        // API nicht erreichbar → Mock-Fallback
+      }
+
+      // Fallback: Mock-Daten
+      setSchueler(mockSchueler);
+      setNachrichten([]);
+      setIsLive(false);
+      setLoading(false);
+    }
+
+    loadData();
+  }, []);
+
+  const stats = useMemo(
+    () => (schueler ? berechneKlassenStatistiken(schueler) : null),
+    [schueler]
+  );
+
+  if (loading || !stats || !schueler) return <DashboardSkeleton />;
 
   function statusLabel(status: SchuelerStatus): string {
     if (status === "aktiv") return t("aktiv");
@@ -107,7 +283,14 @@ export default function LehrerDashboardPage() {
       {/* Header */}
       <div className="sticky top-0 z-40 bg-[var(--lern-bg-primary)]/80 backdrop-blur-xl border-b border-[var(--lern-border)]">
         <div className="max-w-3xl mx-auto px-4 py-4">
-          <h1 className="text-2xl font-bold">{t("title")}</h1>
+          <div className="flex items-center gap-2">
+            <h1 className="text-2xl font-bold">{t("title")}</h1>
+            {!isLive && (
+              <span className="px-2 py-0.5 rounded-full bg-[#D4956A]/10 text-[#B07A52] text-xs font-medium">
+                Demo
+              </span>
+            )}
+          </div>
           <p className="text-sm text-[#8e8e93]">
             {stats.gesamt} {t("schueler")}
           </p>
@@ -167,7 +350,7 @@ export default function LehrerDashboardPage() {
         </div>
 
         {/* === Neue Nachrichten === */}
-        {lehrerNachrichten.length > 0 && (
+        {nachrichten.length > 0 && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -182,12 +365,12 @@ export default function LehrerDashboardPage() {
               </div>
               <h2 className="text-base font-semibold">{t("neueNachrichten")}</h2>
               <span className="ml-auto px-2 py-0.5 rounded-full bg-[#6B8F71]/10 text-[#4A7350] text-xs font-bold">
-                {lehrerNachrichten.length}
+                {nachrichten.length}
               </span>
             </div>
 
             <div className="space-y-2.5">
-              {lehrerNachrichten.map((msg) => (
+              {nachrichten.map((msg) => (
                 <div key={msg.id} className="rounded-xl bg-[var(--lern-bg)] p-3">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="text-sm font-medium">{msg.text.length > 80 ? msg.text.slice(0, 80) + "..." : msg.text}</p>
@@ -232,7 +415,7 @@ export default function LehrerDashboardPage() {
                 </tr>
               </thead>
               <tbody>
-                {mockSchueler.map((s) => (
+                {schueler.map((s) => (
                   <tr key={s.id} className="border-b border-[var(--lern-divider)] last:border-0 hover:bg-[var(--lern-bg)] transition-colors">
                     <td className="px-4 py-3 font-medium">{s.name}</td>
                     <td className="px-4 py-3 text-[#8e8e93]">{s.letzterLogin}</td>
@@ -255,7 +438,7 @@ export default function LehrerDashboardPage() {
 
           {/* Mobile-Karten */}
           <div className="sm:hidden divide-y divide-[var(--lern-bg)]">
-            {mockSchueler.map((s) => (
+            {schueler.map((s) => (
               <div key={s.id} className="px-4 py-3">
                 <div className="flex items-center justify-between mb-1.5">
                   <span className="font-medium text-sm">{s.name}</span>

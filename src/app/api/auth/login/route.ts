@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 import { db } from "@/lib/db"
-import { users } from "@/lib/db/schema"
+import { users, schools } from "@/lib/db/schema"
 import { verifyPassword } from "@/lib/auth/password"
 import { createSession } from "@/lib/auth/session"
 import { loginSchema } from "@/lib/auth/validation"
@@ -50,12 +50,24 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Subscription-Status prüfen
+    let subscriptionActive = user.subscriptionStatus === "active"
+    if (!subscriptionActive && user.schoolId) {
+      const [school] = await db
+        .select({ licenseType: schools.licenseType })
+        .from(schools)
+        .where(eq(schools.id, user.schoolId))
+        .limit(1)
+      subscriptionActive = school?.licenseType === "paid" || school?.licenseType === "pilot"
+    }
+
     // Create session
     await createSession({
       userId: user.id,
       role: user.role,
       schoolId: user.schoolId,
       locale: user.language,
+      subscriptionActive,
     })
 
     return NextResponse.json({

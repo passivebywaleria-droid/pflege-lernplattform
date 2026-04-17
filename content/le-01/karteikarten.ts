@@ -5,7 +5,7 @@
 
 import type { KarteikarteVorlage } from "../_types";
 
-export const KARTEIKARTEN_LE01: KarteikarteVorlage[] = [
+export const LE01_KARTEIKARTEN: KarteikarteVorlage[] = [
 
   // ===================================================================
   // KAPITEL 1: GESCHICHTE DER PFLEGE (Karten 1–5)

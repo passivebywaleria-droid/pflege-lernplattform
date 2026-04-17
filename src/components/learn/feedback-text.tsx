@@ -64,7 +64,7 @@ export function FeedbackText({ children, sprachLevel = "c1" }: FeedbackTextProps
               </h3>
 
               {/* Sprachlevel-Badge */}
-              <span className="inline-block text-[10px] font-semibold uppercase tracking-wider text-[var(--lern-accent)] bg-[var(--lern-accent)]/10 px-2 py-0.5 rounded-full mb-3">
+              <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[var(--lern-accent)] bg-[var(--lern-accent)]/10 px-2 py-0.5 rounded-full mb-3">
                 {sprachLevel === "b1" ? "Einfache Sprache" : "Fachsprache"}
               </span>
 

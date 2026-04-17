@@ -49,14 +49,14 @@ function FlipCard({
       {!isFlipped && (
         <div className="rounded-2xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-5 flex flex-col items-center justify-center shadow-sm min-h-[120px]">
           {item.category && (
-            <span className="text-[10px] text-[var(--lern-text-secondary)] font-medium uppercase tracking-wider mb-2">
+            <span className="text-xs text-[var(--lern-text-secondary)] font-medium uppercase tracking-wider mb-2">
               {item.category}
             </span>
           )}
           <p className="text-sm font-semibold text-[var(--lern-text-primary)] text-center leading-snug">
             {renderBold(item.front)}
           </p>
-          <p className="text-[10px] text-[var(--lern-text-secondary)] mt-2">Antippen ↻</p>
+          <p className="text-xs text-[var(--lern-text-secondary)] mt-2">Antippen ↻</p>
         </div>
       )}
 
@@ -69,14 +69,14 @@ function FlipCard({
           className="rounded-2xl border-2 border-[var(--lern-accent)] bg-[var(--lern-accent-bg)] p-5 min-h-[120px]"
         >
           {item.category && (
-            <span className="text-[10px] text-[var(--lern-accent)] font-medium uppercase tracking-wider block mb-2 text-center">
+            <span className="text-xs text-[var(--lern-accent)] font-medium uppercase tracking-wider block mb-2 text-center">
               {item.category}
             </span>
           )}
           <p className="text-sm text-[var(--lern-text-primary)] text-center leading-relaxed">
             {renderBold(backText)}
           </p>
-          <p className="text-[10px] text-[var(--lern-text-secondary)] mt-2 text-center">Antippen ↻</p>
+          <p className="text-xs text-[var(--lern-text-secondary)] mt-2 text-center">Antippen ↻</p>
         </motion.div>
       )}
     </motion.div>

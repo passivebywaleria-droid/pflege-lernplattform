@@ -1002,7 +1002,7 @@ function ConfidenceRating() {
                       }`}
                     >
                       <span className="text-xl block mb-1">{c.emoji}</span>
-                      <span className="text-[10px] text-zinc-500">{c.label}</span>
+                      <span className="text-xs text-zinc-500">{c.label}</span>
                     </motion.button>
                   ))}
                 </div>
@@ -1067,7 +1067,7 @@ function MultiStepCalc() {
         {calcSteps.map((s, i) => (
           <div key={i} className="flex-1">
             <div className={`h-2 rounded-full mb-1 ${i < results.length ? (results[i] ? "bg-emerald-500" : "bg-red-400") : i === step ? "bg-orange-400" : "bg-zinc-200"}`} />
-            <p className="text-[10px] text-zinc-400 text-center">{s.unit}</p>
+            <p className="text-xs text-zinc-400 text-center">{s.unit}</p>
           </div>
         ))}
       </div>
@@ -1411,7 +1411,7 @@ function CategorizeQuestion() {
                 const ok = checked && item.correct === catIdx;
                 const wrong = checked && item.correct !== catIdx;
                 return (
-                  <span key={i} className={`text-[10px] px-2 py-1 rounded-lg ${
+                  <span key={i} className={`text-xs px-2 py-1 rounded-lg ${
                     ok ? "bg-emerald-200 text-emerald-800" : wrong ? "bg-red-200 text-red-800 line-through" : "bg-white/60"
                   }`}>{text}</span>
                 );

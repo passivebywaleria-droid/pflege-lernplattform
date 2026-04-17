@@ -121,7 +121,7 @@ export function StepMatrix({
                 selectedItem ? "cursor-pointer hover:scale-[1.02]" : "cursor-default"
               } ${!selectedItem && !submitted ? "opacity-60" : ""}`}
             >
-              <p className="text-[10px] text-[var(--lern-text-tertiary)] mb-1">{quadrantLabels[q]}</p>
+              <p className="text-xs text-[var(--lern-text-tertiary)] mb-1">{quadrantLabels[q]}</p>
               <div className="flex flex-wrap gap-1">
                 {items
                   .filter((it) => placements[it.id] === q)

@@ -172,7 +172,7 @@ export function StepTrueFalse({
               className="flex-shrink-0 w-16 rounded-2xl border-2 border-[#C96B5C]/30 flex flex-col items-center justify-center gap-1 active:scale-95 transition-transform"
             >
               <span className="text-lg">✗</span>
-              <span className="text-[10px] font-bold" style={{ color: "#C96B5C" }}>
+              <span className="text-xs font-bold" style={{ color: "var(--lern-error)" }}>
                 FALSCH
               </span>
             </motion.button>
@@ -203,7 +203,7 @@ export function StepTrueFalse({
               className="flex-shrink-0 w-16 rounded-2xl border-2 border-[#6B8F71]/30 flex flex-col items-center justify-center gap-1 active:scale-95 transition-transform"
             >
               <span className="text-lg">✓</span>
-              <span className="text-[10px] font-bold" style={{ color: "#6B8F71" }}>
+              <span className="text-xs font-bold" style={{ color: "#6B8F71" }}>
                 WAHR
               </span>
             </motion.button>

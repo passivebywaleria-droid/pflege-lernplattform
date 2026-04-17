@@ -174,3 +174,24 @@ export const mockLearnModules: LearnModule[] = [
 - localStorage-Persistenz: `lernSnack:{leId}:{itemId}`
 - Content-Typ: `LernSnack[]` in `content/_types.ts`
 - Template: `specs/templates/lern-snack-plan.tmpl.md`
+
+### Quality-Gate + Review-Pipeline (2026-04-17)
+- **Master-Script**: `npx tsx scripts/quality-gate.ts le-{N}` — 11 Checks, JSON+MD Report
+  - K.O.: TypeScript, Renderer, Urheberrecht (FAIL = 0)
+  - Non-K.O.: Naming, Schema, Fakten, MC-Bias, Dialog-Bias, B1, Glossar, Pre-Live
+  - Output: `content/le-{N}/quality-report.json` + `quality-report.md`
+- **Cross-LE**: `npx tsx scripts/cross-le-checker.ts` — Glossar-Konsistenz, Duplikate, Patienten
+- **Student-Walkthrough**: `npx tsx scripts/student-walkthrough.ts le-{N}` — Flow, Lese-Last, Interaktion, Monotonie
+- **Pipeline-Status**: `npx tsx scripts/pipeline-checklist.ts le-{N}|--all` — zeigt naechsten Schritt
+- **KI-Prüfer**: Liest `quality-report.json` VOR semantischer Prüfung — bei FAIL oder fehlend → Stop
+- **Vorsicht**: Scripts wie `validate-le.ts` geben exit 1 auch bei MEDIUM-Warnungen — Quality-Gate parst Output statt Exit-Code
+- **A11y-Block**: In `content-schema.ts` integriert — Bild-Steps brauchen bildhinweis/altText, Dialog-Phasen brauchen sprecher
+
+### 6-Rollen-Review (2026-04-14)
+- **Pipeline-Kriterien**: 32 semantisch (8 K.O.) — inkl. Block LS + Block SK (UE-Skalierung)
+- **Code-Regeln**: Keine `text-[10px]` (min text-xs), keine hardcoded Hex-Farben (CSS-Vars), `aria-expanded` auf ALLE Akkordeons
+- **Anrede**: IMMER "du" — nie "Sie" (auch in B1-Texten)
+- **Statistiken**: Immer mit Jahresangabe, >5 Jahre alt → aktualisieren
+- **Definitionen im Snack**: VOLLSTÄNDIG (ICN = 4 Kernaufgaben, nicht 2)
+- **Keine Duplikate**: Snack-Items über Kapitelgrenzen prüfen
+- **iOS Safari**: Text-Highlighting via Selection API funktioniert NICHT — Feature entfernt

@@ -411,7 +411,7 @@ export default function OriginDemoPage() {
           <div className="flex items-center gap-3">
             <button className="relative w-9 h-9 flex items-center justify-center rounded-lg border border-zinc-200 bg-white hover:bg-zinc-50 transition-colors">
               <Bell className="w-4 h-4 text-zinc-600" />
-              <span className="absolute -top-1 -right-1 w-4 h-4 bg-zinc-900 text-white text-[10px] font-semibold rounded-full flex items-center justify-center">
+              <span className="absolute -top-1 -right-1 w-4 h-4 bg-zinc-900 text-white text-xs font-semibold rounded-full flex items-center justify-center">
                 3
               </span>
             </button>
@@ -530,7 +530,7 @@ export default function OriginDemoPage() {
                     }`}
                   />
                 </div>
-                <span className="text-[10px] text-zinc-400 font-medium">
+                <span className="text-xs text-zinc-400 font-medium">
                   {WEEK_LABELS[i]}
                 </span>
               </div>
@@ -940,12 +940,12 @@ export default function OriginDemoPage() {
                   >
                     <div>
                       <p className="text-xs font-medium text-zinc-900">{q.title}</p>
-                      <p className="text-[10px] text-zinc-400">{q.count}</p>
+                      <p className="text-xs text-zinc-400">{q.count}</p>
                     </div>
                     {q.done ? (
                       <CheckCircle className="w-4 h-4 text-zinc-900" />
                     ) : (
-                      <span className="text-[10px] border border-zinc-200 rounded-full px-2 py-0.5 text-zinc-500">
+                      <span className="text-xs border border-zinc-200 rounded-full px-2 py-0.5 text-zinc-500">
                         Offen
                       </span>
                     )}
@@ -1230,7 +1230,7 @@ export default function OriginDemoPage() {
                   >
                     <div>
                       <p className="text-xs font-medium text-zinc-900">{item.label}</p>
-                      <p className="text-[10px] text-zinc-400 mt-0.5">{item.sub}</p>
+                      <p className="text-xs text-zinc-400 mt-0.5">{item.sub}</p>
                     </div>
                     <Toggle checked={item.value} onChange={item.set} />
                   </div>

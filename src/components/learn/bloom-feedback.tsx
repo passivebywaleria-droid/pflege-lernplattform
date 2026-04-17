@@ -136,7 +136,7 @@ export function BloomFeedback({ bloomLevel, correct }: BloomFeedbackProps) {
     >
       <div className="flex items-center gap-2 mb-1">
         <span
-          className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-bold text-white"
+          className="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-bold text-white"
           style={{ backgroundColor: bloom.farbe }}
         >
           Bloom {bloomLevel}
@@ -215,7 +215,7 @@ export function SandwichFeedbackDisplay({
 
       {/* Fehler-Kategorie-Hinweis (nur bei Fehler, klein) */}
       {fehlerKategorie && !correct && (
-        <p className="text-[10px] text-[var(--lern-text-tertiary,#8e8e93)] mt-1">
+        <p className="text-xs text-[var(--lern-text-tertiary,#8e8e93)] mt-1">
           {getFehlerHinweisKurz(fehlerKategorie)}
         </p>
       )}

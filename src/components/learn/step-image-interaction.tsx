@@ -281,7 +281,7 @@ function ZoomPanViewer({ data }: { data: ZoomPanData }) {
 
         {/* Zoom Level Indicator */}
         {zoom > 1 && (
-          <span className="absolute top-3 left-3 text-[10px] font-semibold bg-black/60 text-white px-2 py-0.5 rounded-full">
+          <span className="absolute top-3 left-3 text-xs font-semibold bg-black/60 text-white px-2 py-0.5 rounded-full">
             {zoom.toFixed(1)}×
           </span>
         )}
@@ -366,7 +366,7 @@ export function StepImageInteraction({
       {/* Header */}
       <div>
         <div className="flex items-center gap-2 mb-1">
-          <span className="text-[10px] font-semibold text-[#9B7EA6] uppercase tracking-wider bg-[#9B7EA6]/10 px-2 py-0.5 rounded-full">
+          <span className="text-xs font-semibold text-[#9B7EA6] uppercase tracking-wider bg-[#9B7EA6]/10 px-2 py-0.5 rounded-full">
             {interactionType === "beforeAfter" ? "Vergleich" : interactionType === "layerReveal" ? "Schichten" : "Detail"}
           </span>
         </div>

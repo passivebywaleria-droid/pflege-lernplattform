@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 import { db } from "@/lib/db"
-import { users } from "@/lib/db/schema"
+import { users, schools, classes } from "@/lib/db/schema"
 import { hashPassword } from "@/lib/auth/password"
 import { createSession } from "@/lib/auth/session"
 import { registerSchema, mapRoleToDb } from "@/lib/auth/validation"
@@ -35,6 +35,39 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Schulcode validieren (optional)
+    let schoolId: string | null = null
+    let classId: string | null = null
+
+    if (schoolCode) {
+      // Schulcode = schools.id (UUID) oder ein lesbarer Code
+      const school = await db
+        .select({ id: schools.id })
+        .from(schools)
+        .where(eq(schools.id, schoolCode))
+        .limit(1)
+
+      if (school.length === 0) {
+        return NextResponse.json(
+          { error: "Ungültiger Schulcode" },
+          { status: 400 }
+        )
+      }
+
+      schoolId = school[0].id
+
+      // Erste aktive Klasse der Schule zuweisen (falls vorhanden)
+      const activeClass = await db
+        .select({ id: classes.id })
+        .from(classes)
+        .where(eq(classes.schoolId, schoolId))
+        .limit(1)
+
+      if (activeClass.length > 0) {
+        classId = activeClass[0].id
+      }
+    }
+
     // Create user
     const passwordHash = await hashPassword(password)
     const [user] = await db
@@ -45,9 +78,21 @@ export async function POST(request: NextRequest) {
         name,
         language,
         role: dbRole,
-        // schoolCode wird später für Schul-Zuordnung genutzt (Sprint 2)
+        schoolId,
+        classId,
       })
       .returning({ id: users.id, role: users.role, schoolId: users.schoolId })
+
+    // Subscription-Status: Neue User haben noch kein Abo (Schule könnte aber bezahlt haben)
+    let subscriptionActive = false
+    if (user.schoolId) {
+      const [school] = await db
+        .select({ licenseType: schools.licenseType })
+        .from(schools)
+        .where(eq(schools.id, user.schoolId))
+        .limit(1)
+      subscriptionActive = school?.licenseType === "paid" || school?.licenseType === "pilot"
+    }
 
     // Create session
     await createSession({
@@ -55,6 +100,7 @@ export async function POST(request: NextRequest) {
       role: user.role,
       schoolId: user.schoolId,
       locale: language,
+      subscriptionActive,
     })
 
     return NextResponse.json(

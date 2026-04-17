@@ -818,7 +818,9 @@ export type ArtikelBlockType =
   | "warnung"        // Hervorgehobene Warnung (z.B. Refeeding-Syndrom)
   | "merke"          // "Merke!"-Box (Kernaussage)
   | "rechner"        // Interaktiver Rechner (z.B. Energiebedarf)
-  | "querverweis";   // Link zu anderem Kapitel oder anderer LE
+  | "querverweis"    // Link zu anderem Kapitel oder anderer LE
+  | "wusstestdu"     // "Wusstest du?"-Box — überraschender Fakt
+  | "vertiefung";    // Collapsible Vertiefungs-Block ("Mehr erfahren →")
 
 export interface ArtikelBlock {
   type: ArtikelBlockType;
@@ -838,6 +840,15 @@ export interface ArtikelBlock {
   einheit?: string;
   /** Quellenangabe für diesen Block */
   quelle?: string;
+  /** Kernaussage-Highlight: erster Satz/Absatz wird visuell hervorgehoben */
+  kernaussage?: string;
+  kernaussageB1?: string;
+  /** Block-Level Vereinfachen/Vertiefen: kürzere Version des Textes */
+  contentKurz?: string;
+  contentKurzB1?: string;
+  /** Block-Level Vereinfachen/Vertiefen: ausführlichere Version des Textes */
+  contentErweitert?: string;
+  contentErweitertB1?: string;
 }
 
 /** Ein Kapitel im Wissens-Tab */
@@ -849,6 +860,13 @@ export interface ArtikelKapitel {
   geschaetzteDauer: number;       // Minuten zum Durchlesen
   bloecke: ArtikelBlock[];
   glossarBegriffe?: string[];     // Fachbegriffe die in diesem Kapitel erklärt werden
+  /** TL;DR: 1-Satz-Zusammenfassung für schnelle Orientierung */
+  zusammenfassung?: string;
+  zusammenfassungB1?: string;
+  /** Header-Bild/Illustration für visuelle Auflösung */
+  headerImageUrl?: string;
+  /** Explizites Lernziel: "Nach diesem Kapitel kannst du..." */
+  lernzielRef?: string;
 }
 
 // === LERN-SNACK-TAB: Kompakte Kernfakten-Checkliste ===
@@ -933,6 +951,49 @@ export interface LektionData {
   fallverlaeufe?: Fallverlauf[];
   /** Praxis-Tab: Simulationen und Übungen */
   praxisUebungen?: PraxisUebung[];
+}
+
+// === LE-MANIFEST (Engine-Vertrag) ===
+
+export type SessionId = string; // "s1", "s2", "s3", ...
+
+/** Pfad-Label für themenbasierte Sessions (Mentimeter-Stil: Sessions = Pfade) */
+export interface SessionLabel {
+  title: string;
+  titleShort: string;
+  tag: ContentTag;
+  bloomRange: string;
+}
+
+/**
+ * Manifest-Eintrag pro LE — Single Source of Truth in `content/_manifest.ts`.
+ * Wird von Engine + Auto-Loader + Auto-Import-Script gelesen.
+ *
+ * Naming-Standard: Jede LE muss exakt diesen Vertrag erfüllen.
+ * Validiert via `npx tsx scripts/validate-le.ts le-{NN}`.
+ *
+ * Status-Workflow (PDCA):
+ *   "rohmaterial" → "sessionplan" → "steps" → "geprueft" → "published"
+ *
+ * Engine-Import-fähig ab "geprueft".
+ */
+export interface LeManifestEntry {
+  leId: string;                                                       // "le-01"
+  ceId: string;                                                       // "ce-01"
+  ceNumber?: number;                                                  // 1
+  title: string;
+  titleShort: string;
+  zeitrichtwert: number;                                              // UE
+  sessions: SessionId[];                                              // ["s1", ..., "s6"]
+  hasGlossar: boolean;
+  hasSnack?: boolean;
+  hasFall?: boolean;
+  hasPraxis?: boolean;
+  hasPruefung?: boolean;
+  status: "rohmaterial" | "sessionplan" | "steps" | "geprueft" | "published";
+  sortOrder?: number;
+  /** Themenbasierte Pfad-Labels (optional, für Pfad-Picker) */
+  sessionLabels?: Record<SessionId, SessionLabel>;
 }
 
 // === CROSS-LE PRÜFUNGSFÄLLE ===

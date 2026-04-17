@@ -24,8 +24,30 @@ export function NotificationPrompt() {
 
   async function requestPermission() {
     localStorage.setItem(NOTIFICATION_ASKED_KEY, "true")
-    await Notification.requestPermission()
+    const permission = await Notification.requestPermission()
     setShow(false)
+
+    // Nach Erlaubnis: Push-Subscription an Server senden
+    if (permission === "granted" && "serviceWorker" in navigator) {
+      try {
+        const registration = await navigator.serviceWorker.ready
+        const vapidKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY
+        if (!vapidKey) return
+
+        const subscription = await registration.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: vapidKey,
+        })
+
+        await fetch("/api/notifications/subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(subscription.toJSON()),
+        })
+      } catch {
+        // Push-Subscription fehlgeschlagen — kein Fehler für User
+      }
+    }
   }
 
   function dismiss() {

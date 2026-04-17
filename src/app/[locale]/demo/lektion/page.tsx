@@ -524,7 +524,7 @@ function SelfRatingStep({
             className={`flex flex-col items-center gap-1.5 p-3 sm:p-4 rounded-2xl border-2 transition-all ${value === i ? "border-[var(--lern-accent)] bg-[var(--lern-accent)]/5 scale-105" : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)] hover:border-[var(--lern-accent)]/40"}`}
           >
             <span className="text-2xl">{emojis[i]}</span>
-            <span className="text-[10px] sm:text-xs text-[var(--lern-text-primary)] font-medium">{label}</span>
+            <span className="text-xs sm:text-xs text-[var(--lern-text-primary)] font-medium">{label}</span>
           </button>
         ))}
       </div>

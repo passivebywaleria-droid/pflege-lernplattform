@@ -62,7 +62,7 @@ export function StepSelfrating({
             }`}
           >
             <HandDrawnIcon name={r.icon} size={28} color={rating === r.value ? r.color : "var(--lern-text-tertiary)"} />
-            <span className="text-[10px] leading-tight text-center text-[var(--lern-text-secondary)] font-medium">
+            <span className="text-xs leading-tight text-center text-[var(--lern-text-secondary)] font-medium">
               {r.label}
             </span>
           </motion.button>

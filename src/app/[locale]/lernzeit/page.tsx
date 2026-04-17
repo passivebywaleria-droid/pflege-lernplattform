@@ -386,12 +386,12 @@ export default function LernzeitPage() {
           <h2 className="text-sm font-semibold mb-4">Letzte 90 Tage</h2>
           <KalenderHeatmap aktivitaeten={profil?.tagesAktivitaeten ?? []} />
           <div className="flex items-center justify-end gap-1.5 mt-3">
-            <span className="text-[10px] text-[var(--lern-text-secondary)]">Weniger</span>
+            <span className="text-xs text-[var(--lern-text-secondary)]">Weniger</span>
             <div className="w-3 h-3 rounded-sm bg-[var(--lern-accent)]/20" />
             <div className="w-3 h-3 rounded-sm bg-[var(--lern-accent)]/40" />
             <div className="w-3 h-3 rounded-sm bg-[var(--lern-accent)]/70" />
             <div className="w-3 h-3 rounded-sm bg-[var(--lern-accent)]" />
-            <span className="text-[10px] text-[var(--lern-text-secondary)]">Mehr</span>
+            <span className="text-xs text-[var(--lern-text-secondary)]">Mehr</span>
           </div>
         </motion.div>
 
@@ -415,7 +415,7 @@ export default function LernzeitPage() {
                     style={{ minHeight: w.minuten > 0 ? "4px" : "2px" }}
                   />
                 </div>
-                <span className="text-[10px] text-[var(--lern-text-tertiary)]">{w.label}</span>
+                <span className="text-xs text-[var(--lern-text-tertiary)]">{w.label}</span>
                 {w.minuten > 0 && (
                   <span className="text-[9px] font-medium text-[var(--lern-accent)]">
                     {Math.round(w.minuten / 60)}h {w.minuten % 60}m
@@ -446,12 +446,12 @@ export default function LernzeitPage() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-[var(--lern-border)]">
-                    <th className="text-left py-2 px-2 text-[10px] font-semibold uppercase tracking-wider text-[var(--lern-text-secondary)]">LE</th>
-                    <th className="text-left py-2 px-2 text-[10px] font-semibold uppercase tracking-wider text-[var(--lern-text-secondary)]">Thema</th>
-                    <th className="text-center py-2 px-2 text-[10px] font-semibold uppercase tracking-wider text-[var(--lern-text-secondary)]">Aktive Zeit</th>
-                    <th className="text-center py-2 px-2 text-[10px] font-semibold uppercase tracking-wider text-[var(--lern-text-secondary)]">Sessions</th>
-                    <th className="text-center py-2 px-2 text-[10px] font-semibold uppercase tracking-wider text-[var(--lern-text-secondary)]">Fortschritt</th>
-                    <th className="text-center py-2 px-2 text-[10px] font-semibold uppercase tracking-wider text-[var(--lern-text-secondary)]">Letzte Aktivit&auml;t</th>
+                    <th className="text-left py-2 px-2 text-xs font-semibold uppercase tracking-wider text-[var(--lern-text-secondary)]">LE</th>
+                    <th className="text-left py-2 px-2 text-xs font-semibold uppercase tracking-wider text-[var(--lern-text-secondary)]">Thema</th>
+                    <th className="text-center py-2 px-2 text-xs font-semibold uppercase tracking-wider text-[var(--lern-text-secondary)]">Aktive Zeit</th>
+                    <th className="text-center py-2 px-2 text-xs font-semibold uppercase tracking-wider text-[var(--lern-text-secondary)]">Sessions</th>
+                    <th className="text-center py-2 px-2 text-xs font-semibold uppercase tracking-wider text-[var(--lern-text-secondary)]">Fortschritt</th>
+                    <th className="text-center py-2 px-2 text-xs font-semibold uppercase tracking-wider text-[var(--lern-text-secondary)]">Letzte Aktivit&auml;t</th>
                   </tr>
                 </thead>
                 <tbody>

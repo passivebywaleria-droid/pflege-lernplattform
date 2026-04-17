@@ -223,7 +223,7 @@ export default function GlossarPage() {
                   {/* Fachgebiet-Badge + Chevron */}
                   <div className="flex items-center gap-2 shrink-0 mt-0.5">
                     <span
-                      className={`px-2 py-0.5 rounded-md text-[10px] font-medium ${
+                      className={`px-2 py-0.5 rounded-md text-xs font-medium ${
                         FACHGEBIET_FARBEN[eintrag.fachgebiet] ?? "bg-[var(--lern-bg)] text-[#636366]"
                       }`}
                     >

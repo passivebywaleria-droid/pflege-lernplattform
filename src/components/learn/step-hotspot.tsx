@@ -133,7 +133,7 @@ export function StepHotspot({
                 <div className="h-8 w-8 rounded-full bg-[#6B8F71]/30 border-2 border-[#6B8F71] flex items-center justify-center">
                   <span className="text-xs font-bold text-[#6B8F71]">✓</span>
                 </div>
-                <span className="absolute -bottom-5 whitespace-nowrap text-[10px] font-bold text-[#6B8F71] bg-[var(--lern-bg-primary)]/80 px-1 rounded">
+                <span className="absolute -bottom-5 whitespace-nowrap text-xs font-bold text-[#6B8F71] bg-[var(--lern-bg-primary)]/80 px-1 rounded">
                   {zone.label}
                 </span>
               </motion.div>

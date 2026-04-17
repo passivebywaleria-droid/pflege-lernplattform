@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-04-17T09:48:41.268Z",
+  "lesChecked": [
+    "le-01",
+    "le-06"
+  ],
+  "findings": [
+    {
+      "check": "DUPLIKAT_STEP",
+      "severity": "HIGH",
+      "detail": "le01-s1-sw-06 ↔ le06-s1-sw-05: 8 4-Gramm-Treffer",
+      "les": [
+        "le-01",
+        "le-06"
+      ]
+    },
+    {
+      "check": "DUPLIKAT_STEP",
+      "severity": "HIGH",
+      "detail": "le01-s2-sw-08 ↔ le06-s1-sw-05: 8 4-Gramm-Treffer",
+      "les": [
+        "le-01",
+        "le-06"
+      ]
+    },
+    {
+      "check": "CURRICULUM_LUECKE",
+      "severity": "LOW",
+      "detail": "9/11 CEs ohne LE: ce-03, ce-04, ce-05, ce-06, ce-07, ce-08, ce-09, ce-10, ce-11",
+      "les": [
+        "le-01",
+        "le-06"
+      ]
+    }
+  ]
+}

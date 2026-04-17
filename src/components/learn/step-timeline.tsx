@@ -126,7 +126,7 @@ export function StepTimeline({
                   <div className="flex items-center gap-2">
                     {event.icon && <TimelineIcon icon={event.icon} />}
                     <div className="flex-1 min-w-0">
-                      <span className="text-[10px] font-semibold uppercase tracking-wider text-[var(--lern-accent)]">
+                      <span className="text-xs font-semibold uppercase tracking-wider text-[var(--lern-accent)]">
                         {event.time}
                       </span>
                       <p className="text-sm font-medium text-[var(--lern-text-primary)] truncate">

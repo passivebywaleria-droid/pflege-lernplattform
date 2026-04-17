@@ -155,7 +155,7 @@ export function StepCategorize({
                 <span className={`text-sm font-bold ${colors.text}`}>
                   {cat.name}
                 </span>
-                <span className="text-[10px] text-[var(--lern-text-tertiary)]">
+                <span className="text-xs text-[var(--lern-text-tertiary)]">
                   Hier zuordnen
                 </span>
               </motion.button>
@@ -197,7 +197,7 @@ export function StepCategorize({
                     >
                       {renderBold(text)}
                       {!checked && (
-                        <span className="text-[var(--lern-text-tertiary)] text-[10px]">✕</span>
+                        <span className="text-[var(--lern-text-tertiary)] text-xs">✕</span>
                       )}
                       {ok && <span className="text-[#6B8F71]">✓</span>}
                       {wrong && <span className="text-[#C96B5C]">✗</span>}

@@ -6,7 +6,7 @@
 
 import type { ContentStep } from "../_types";
 
-export const STEPS_S4: ContentStep[] = [
+export const LE01_STEPS_S4: ContentStep[] = [
   // =============================================================
   // Step 1: crowdPoll — Einstieg: Ethisch falsch und fachlich richtig?
   // =============================================================

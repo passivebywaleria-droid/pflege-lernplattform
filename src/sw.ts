@@ -92,3 +92,52 @@ const serwist = new Serwist({
 });
 
 serwist.addEventListeners();
+
+// ── Push Notifications ──
+
+self.addEventListener("push", (event) => {
+  if (!event.data) return;
+
+  try {
+    const data = event.data.json() as {
+      title?: string;
+      body?: string;
+      icon?: string;
+      url?: string;
+    };
+
+    const title = data.title ?? "Pflege-Lernplattform";
+    const options: NotificationOptions = {
+      body: data.body ?? "Zeit zum Lernen!",
+      icon: data.icon ?? "/icons/icon-192x192.svg",
+      badge: "/icons/icon-192x192.svg",
+      data: { url: data.url ?? "/lernen" },
+      tag: "pflege-reminder",
+    };
+
+    event.waitUntil(self.registration.showNotification(title, options));
+  } catch {
+    // Ungültiges Push-Format ignorieren
+  }
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+
+  const url = (event.notification.data?.url as string) ?? "/lernen";
+
+  event.waitUntil(
+    self.clients.matchAll({ type: "window" }).then((clientList) => {
+      // Existierendes Fenster fokussieren
+      for (const client of clientList) {
+        if ("focus" in client) {
+          client.focus();
+          client.navigate(url);
+          return;
+        }
+      }
+      // Neues Fenster öffnen
+      self.clients.openWindow(url);
+    })
+  );
+});

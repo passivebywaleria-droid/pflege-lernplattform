@@ -5,7 +5,7 @@
 
 import type { ContentStep } from "../_types";
 
-export const STEPS_S3: ContentStep[] = [
+export const LE01_STEPS_S3: ContentStep[] = [
   // ================================================================
   // Step 1: crowdPoll — Weißt du, was eine Pflegekammer ist?
   // ================================================================

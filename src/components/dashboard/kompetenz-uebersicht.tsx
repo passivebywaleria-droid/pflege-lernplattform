@@ -29,25 +29,25 @@ export function KompetenzUebersicht({ kompetenzRegisterStats }: KompetenzUebersi
           <p className="text-2xl font-bold text-[#6B8F71]">
             {kompetenzRegisterStats.counts.gemeistert}
           </p>
-          <p className="text-[10px] text-[var(--lern-text-secondary)]">gemeistert</p>
+          <p className="text-xs text-[var(--lern-text-secondary)]">gemeistert</p>
         </div>
         <div className="text-center">
           <p className="text-2xl font-bold text-[var(--lern-accent)]">
             {kompetenzRegisterStats.counts.sicher}
           </p>
-          <p className="text-[10px] text-[var(--lern-text-secondary)]">sicher</p>
+          <p className="text-xs text-[var(--lern-text-secondary)]">sicher</p>
         </div>
         <div className="text-center">
           <p className="text-2xl font-bold text-[#D4956A]">
             {kompetenzRegisterStats.counts.vertraut}
           </p>
-          <p className="text-[10px] text-[var(--lern-text-secondary)]">vertraut</p>
+          <p className="text-xs text-[var(--lern-text-secondary)]">vertraut</p>
         </div>
         <div className="text-center">
           <p className="text-2xl font-bold text-[#C96B5C]">
             {kompetenzRegisterStats.counts.versucht}
           </p>
-          <p className="text-[10px] text-[var(--lern-text-secondary)]">unsicher</p>
+          <p className="text-xs text-[var(--lern-text-secondary)]">unsicher</p>
         </div>
       </div>
       <div className="h-2 rounded-full bg-[var(--lern-bg)] flex overflow-hidden">

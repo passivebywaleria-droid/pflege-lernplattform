@@ -9,6 +9,7 @@ export interface SessionPayload {
   role: "student" | "teacher" | "principal" | "admin"
   schoolId: string | null
   locale: "de" | "ar" | "tr"
+  subscriptionActive: boolean
 }
 
 function getSecret() {

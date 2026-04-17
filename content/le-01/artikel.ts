@@ -12,6 +12,9 @@ export const LE01_ARTIKEL: ArtikelKapitel[] = [
     titelB1: "Wie hat die Pflege begonnen?",
     tag: "pflege",
     geschaetzteDauer: 7,
+    zusammenfassung: "Von den ersten Pflegenden in der Antike über Nightingale bis zur NS-Zeit — wie Pflege zum anerkannten Beruf wurde.",
+    zusammenfassungB1: "Pflege ist ein sehr alter Beruf. Nightingale und Agnes Karll haben ihn verändert. Die NS-Zeit war das dunkelste Kapitel.",
+    headerImageUrl: "/images/content/le-01/header/kap-01-geschichte.svg",
     glossarBegriffe: ["Profession", "Professionalisierung", "ICN (International Council of Nurses)"],
     bloecke: [
       {
@@ -26,7 +29,26 @@ In Deutschland schrieb Agnes Karll Geschichte. Als freiberufliche Krankenschwest
 Eine sehr wichtige Person war Florence Nightingale aus England. 1845 lernte sie in Deutschland, wie gute Pflege funktioniert. Der Ort hieß Kaiserswerth bei Düsseldorf. Später pflegte sie verwundete Soldaten im Krimkrieg. Sie machte die Pflege viel besser — weniger Soldaten starben. 1859 schrieb sie das Buch „Notes on Nursing". Das war das erste Fachbuch über Pflege. 1860 eröffnete sie die erste Pflege-Schule in London.
 
 In Deutschland war Agnes Karll sehr wichtig. Sie sah: Die Arbeitsbedingungen für Pflegende sind schlecht. 1903 gründete sie eine Berufs-Organisation. Daraus entstand später der DBfK (Deutscher Berufsverband für Pflegeberufe). 1907 wurde sie Präsidentin vom ICN (International Council of Nurses). Schon 1906 gab es in Preußen die erste staatliche Pflege-Prüfung. Pflege wurde damit ein anerkannter Beruf.`,
+        contentKurz: `Pflege gibt es seit über 2500 Jahren. Florence Nightingale gründete 1860 die erste Pflegeschule. Agnes Karll gründete 1903 die erste deutsche Berufsorganisation. 1906 gab es die erste staatliche Pflegeprüfung.`,
+        contentKurzB1: `Pflege gibt es seit über 2500 Jahren. Florence Nightingale hat 1860 die erste Pflege-Schule gegründet. Agnes Karll hat 1903 die erste Berufs-Organisation gegründet. 1906 gab es die erste Pflege-Prüfung.`,
+        contentErweitert: `Wer denkt, Pflege sei ein moderner Beruf, irrt. Schon in altindischen Schriften aus der Zeit um 500 v. Chr. tauchen Beschreibungen von Menschen auf, die Kranke versorgten — organisiert, mit festen Aufgaben, neben den Ärzten. Im antiken Rom übernahmen Frauen und Sklaven die Versorgung Kranker, während im Mittelalter christliche Ordensgemeinschaften diese Aufgabe institutionalisierten — etwa die Johanniter (gegründet um 1099) und die Barmherzigen Brüder (gegründet 1540).
+
+Die Frage, wann Pflege zur Profession wurde, führt unweigerlich zu Florence Nightingale. 1845 lernte sie in der Kaiserswerther Diakonie bei Düsseldorf, wie systematische Krankenpflege aussehen konnte. Dort erlebte sie das Modell von Theodor Fliedner, der bereits 1836 eine Diakonissenanstalt mit strukturierter Pflegeausbildung gegründet hatte. Während des Krimkriegs (1853–1856) organisierte Nightingale die Versorgung verwundeter britischer Soldaten und senkte die Sterblichkeitsrate von über 40 % auf unter 5 % — vor allem durch Hygienemaßnahmen, Belüftung und systematische Dokumentation. 1859 veröffentlichte sie „Notes on Nursing", 1860 eröffnete sie die erste professionelle Pflegeschule am St Thomas' Hospital in London.
+
+In Deutschland schrieb Agnes Karll Geschichte. 1903 gründete sie die Berufsorganisation der Krankenpflegerinnen Deutschlands (B.O.K.D.), die erste freie Standesvertretung — unabhängig von Kirche und Roten Kreuz. Ihre Forderungen waren revolutionär: geregelte Arbeitszeiten, Altersversorgung, freie Berufswahl. 1907 wurde sie zur ICN-Präsidentin gewählt. Preußen führte 1906 die erste staatliche Pflegeprüfung ein. 1938 wurde mit dem Krankenpflegegesetz erstmals eine reichseinheitliche Regelung geschaffen — allerdings bereits unter nationalsozialistischem Einfluss.`,
+        contentErweitertB1: `Pflege ist ein sehr alter Beruf. Schon vor 2500 Jahren gab es in Indien Menschen, die Kranke versorgten. Im alten Rom pflegten Frauen und Sklaven die Kranken. Im Mittelalter übernahmen Klöster und religiöse Gruppen die Pflege — zum Beispiel die Johanniter (gegründet um 1099).
+
+Florence Nightingale war eine sehr wichtige Person. 1845 lernte sie in Kaiserswerth bei Düsseldorf gute Pflege. Dort hatte Theodor Fliedner schon 1836 eine Pflege-Schule gegründet. Nightingale pflegte dann im Krimkrieg verwundete Soldaten. Sie machte alles sauberer und organisierter. Dadurch sank die Sterblichkeit von über 40 % auf unter 5 %. 1859 schrieb sie das Buch „Notes on Nursing". 1860 eröffnete sie die erste Pflege-Schule in London.
+
+Agnes Karll war sehr wichtig für Deutschland. 1903 gründete sie die erste freie Berufs-Organisation für Pflegende. Sie kämpfte für bessere Arbeitsbedingungen: feste Arbeitszeiten, Rente, freie Berufswahl. 1907 wurde sie ICN-Präsidentin. 1906 gab es in Preußen die erste staatliche Pflege-Prüfung. 1938 kam das erste Krankenpflege-Gesetz für ganz Deutschland.`,
+        kernaussage: "Pflege ist seit über 2500 Jahren eine gesellschaftlich anerkannte Tätigkeit.",
+        kernaussageB1: "Pflege ist ein sehr alter Beruf — über 2500 Jahre alt.",
         quelle: "Vgl. Nightingale, Notes on Nursing, 1859; Agnes-Karll-Institut, Historische Quellen",
+      },
+      {
+        type: "wusstestdu",
+        contentC1: "Florence Nightingale senkte die Sterblichkeitsrate verwundeter Soldaten im Krimkrieg von über 40 % auf unter 5 % — allein durch bessere Hygiene und Organisation der Pflege.",
+        contentB1: "Florence Nightingale hat im Krieg die Sterblichkeit von über 40 % auf unter 5 % gesenkt. Nur durch bessere Hygiene und Organisation!",
       },
       {
         type: "warnung",
@@ -44,6 +66,9 @@ In Deutschland war Agnes Karll sehr wichtig. Sie sah: Die Arbeitsbedingungen fü
     titelB1: "Was bedeutet Pflege? Was ist eine Profession?",
     tag: "pflege",
     geschaetzteDauer: 8,
+    zusammenfassung: "ICN und WHO definieren Pflege unterschiedlich. Das PflBG schützt drei Tätigkeiten als exklusiv für Fachkräfte.",
+    zusammenfassungB1: "Pflege ist für alle Menschen da. Drei Aufgaben dürfen nur Pflegefachkräfte machen — das steht im Gesetz.",
+    headerImageUrl: "/images/content/le-01/header/kap-02-definitionen.svg",
     glossarBegriffe: ["Profession", "Professionalisierung", "Vorbehaltene Tätigkeiten", "ICN (International Council of Nurses)", "Laienpflege"],
     bloecke: [
       {
@@ -62,6 +87,22 @@ Der ICN (International Council of Nurses) sagt: Pflege ist für alle Menschen da
 Die WHO (Welt-Gesundheits-Organisation) sagt: Pflege soll den Menschen helfen. Sie sollen ihre Fähigkeiten erkennen \u2014 körperliche, seelische und soziale. Und sie sollen diese Fähigkeiten nutzen können.
 
 Beide Beschreibungen passen zusammen: Der ICN sagt, für WEN Pflege da ist. Die WHO sagt, WOZU Pflege da ist.`,
+        contentKurz: `Der ICN definiert Pflege als eigenverantwortliche Versorgung aller Menschen in allen Lebenssituationen. Die WHO ergänzt: Pflege soll Menschen befähigen, ihre Möglichkeiten auszuschöpfen. Beide Perspektiven ergänzen sich.`,
+        contentKurzB1: `Der ICN sagt: Pflege ist für alle Menschen da — eigenverantwortlich. Die WHO sagt: Pflege soll Menschen helfen, ihre Fähigkeiten zu nutzen. Beide Beschreibungen passen zusammen.`,
+        contentErweitert: `Was genau meinen wir, wenn wir von \u201EPflege\u201C sprechen? Zwei internationale Organisationen haben Antworten formuliert, die bis heute als Orientierung dienen.
+
+Der ICN (International Council of Nurses) veröffentlichte seine Definition erstmals 2002 und aktualisierte sie seitdem mehrfach. Die Kernelemente: Pflege richtet sich an Menschen jeder Altersgruppe — an Einzelpersonen ebenso wie an Familien und ganze Gemeinschaften. Sie findet in allen Lebenssituationen statt und unterscheidet nicht zwischen gesund und krank. Entscheidend ist, dass Pflegefachkräfte dabei nicht nur assistieren, sondern eigenständig handeln. Konkret nennt der ICN vier Kernaufgaben: Gesundheit fördern, Krankheit verhüten, Gesundheit wiederherstellen sowie Leiden lindern und ein würdevolles Sterben begleiten.
+
+Die WHO rückt einen anderen Aspekt in den Vordergrund: Sie sieht den gesellschaftlichen Auftrag der Pflege darin, Menschen dabei zu unterstützen, ihre körperlichen, psychischen und sozialen Möglichkeiten zu erkennen und auszuschöpfen. Pflege wird hier als Befähigung (Empowerment) verstanden — nicht nur als Versorgung. Die WHO betont dabei auch, dass Pflege in der Lebenswelt der Menschen stattfindet — nicht nur im Krankenhaus.
+
+Beide Perspektiven ergänzen sich: Der ICN beschreibt, WER gepflegt wird und WIE autonom die Pflegenden dabei handeln. Die WHO beschreibt, WOZU Pflege da ist — nämlich zur Befähigung. In Deutschland verbindet das PflBG (§ 5) beide Ansätze, indem es die Ausbildungsziele an den ICN-Kernaufgaben orientiert und gleichzeitig die WHO-Perspektive der Gesundheitsförderung aufgreift.`,
+        contentErweitertB1: `Was bedeutet \u201EPflege\u201C eigentlich? Zwei große Organisationen haben das beschrieben.
+
+Der ICN (International Council of Nurses) hat seine Beschreibung 2002 veröffentlicht. Er sagt: Pflege ist für alle Menschen da — für alte und junge, für Familien und für Gruppen, für kranke und für gesunde Menschen. Pflegekräfte arbeiten eigenverantwortlich. Der ICN nennt vier Kern-Aufgaben: 1. Gesundheit fördern. 2. Krankheit verhindern. 3. Gesundheit wiederherstellen. 4. Leiden lindern und beim Sterben begleiten.
+
+Die WHO (Welt-Gesundheits-Organisation) sagt etwas anderes: Pflege soll den Menschen helfen, ihre Fähigkeiten zu erkennen und zu nutzen — körperliche, seelische und soziale. Das nennt man Empowerment (= Befähigung). Pflege passiert überall — nicht nur im Krankenhaus.
+
+Beide Beschreibungen passen zusammen: Der ICN sagt, für WEN Pflege da ist. Die WHO sagt, WOZU Pflege da ist. Das deutsche Pflegeberufegesetz (PflBG, § 5) verbindet beide Ideen.`,
         quelle: "Vgl. ICN, Definition of Nursing, 2002; WHO, 1987",
       },
       {
@@ -121,6 +162,9 @@ Daneben gibt es die Laienpflege (= Pflege durch Familie). Viele Menschen werden 
     titelB1: "Was ist Pflege-Verständnis? Was ist Berufs-Verständnis?",
     tag: "pflege",
     geschaetzteDauer: 6,
+    zusammenfassung: "Jede Pflegekraft hat ein eigenes Pflegeverständnis — der Berufsstand hat einen gemeinsamen Rahmen aus Ethikkodex und Leitbild.",
+    zusammenfassungB1: "Jede Pflegekraft denkt anders über Pflege. Aber es gibt gemeinsame Regeln und Werte für alle.",
+    headerImageUrl: "/images/content/le-01/header/kap-03-verstaendnis.svg",
     glossarBegriffe: ["Pflegeverständnis", "Berufsverständnis", "Pflegeleitbild"],
     bloecke: [
       {
@@ -135,6 +179,18 @@ Vom individuellen Pflegeverständnis zu unterscheiden ist das Berufsverständnis
 Jede Pflegekraft hat ein eigenes Pflege-Verständnis. Es kommt von vielen Dingen: eigene Erfahrungen, Familie, Kultur, Ausbildung und Beruf. Zwei Pflegende betreuen denselben Patienten — aber sie denken vielleicht ganz anders darüber.
 
 Das Berufsverständnis ist etwas anderes. Es gilt für alle Pflegekräfte. Es ist der gemeinsame Rahmen: Werte und Regeln, die für den ganzen Beruf gelten. Zum Beispiel der Ethikkodex vom ICN. Oder das Pflegeleitbild einer Einrichtung. Die Grundwerte gelten für alle — aber eigene Schwerpunkte darf man setzen.`,
+        contentKurz: `Pflegeverständnis = persönliches Bild von guter Pflege (geprägt durch Erfahrung, Kultur, Ausbildung). Berufsverständnis = gemeinsamer Rahmen für alle (Ethikkodex, Leitbilder, Berufsverbände). Beides zusammen formt professionelles Handeln.`,
+        contentKurzB1: `Pflege-Verständnis = eigenes Bild von guter Pflege. Berufs-Verständnis = gemeinsame Regeln für alle Pflegekräfte (Ethikkodex, Leitbilder). Beides ist wichtig.`,
+        contentErweitert: `Fragen Sie drei Pflegefachkräfte, was gute Pflege ausmacht — und Sie bekommen drei verschiedene Antworten. Die eine betont die körperliche Versorgung: Wundmanagement, Medikamentengabe, Vitalzeichen. Die andere sagt: Es geht darum, den ganzen Menschen zu sehen — mit seinen Ängsten, seiner Biografie, seinen Wünschen. Die dritte meint: Pflege bedeutet vor allem, Menschen zu befähigen, so viel wie möglich selbst zu tun.
+
+Keine dieser Antworten ist falsch. Aber sie zeigen: Hinter dem, was wir täglich tun, steht ein Pflegeverständnis — ein inneres Bild davon, was Pflege sein soll. Dieses Bild wird geformt durch viele Einflüsse: eigene Erfahrungen mit Krankheit oder Pflege in der Familie, kultureller Hintergrund, Geschlechterrollen, die Art der Ausbildung und die Stationen der bisherigen Berufslaufbahn. Die Pflegewissenschaftlerin Patricia Benner zeigte in ihrem Stufenmodell „From Novice to Expert" (1984), dass sich das Pflegeverständnis mit zunehmender Berufserfahrung grundlegend wandelt: Während Anfängerinnen sich an Regeln und Checklisten orientieren, handeln Expertinnen intuitiv aus einem tiefen Situationsverständnis heraus.
+
+Vom individuellen Pflegeverständnis zu unterscheiden ist das Berufsverständnis: der gemeinsame Rahmen, auf den sich alle Pflegefachpersonen verpflichten. Der ICN-Ethikkodex (zuletzt überarbeitet 2021) definiert vier grundlegende Verantwortungsbereiche: Pflege und Patienten, Pflege und Praxis, Pflege und Profession, Pflege und globale Gesundheit. Einrichtungen konkretisieren diesen Rahmen in Pflegeleitbildern — etwa durch Festlegungen wie „Wir pflegen ressourcenorientiert" oder „Wir beziehen Angehörige aktiv ein". Der Einzelne darf innerhalb dieses Rahmens eigene Schwerpunkte setzen — aber die Grundwerte gelten für alle. Die Spannung zwischen persönlichem und professionellem Pflegeverständnis ist kein Problem, sondern Motor der beruflichen Entwicklung.`,
+        contentErweitertB1: `Was bedeutet Pflege-Verständnis? Es ist das eigene Bild von guter Pflege. Drei Pflegekräfte haben drei verschiedene Antworten: Körperpflege, den ganzen Menschen sehen, oder Hilfe zur Selbsthilfe. Alle haben recht.
+
+Jede Pflegekraft hat ein eigenes Pflege-Verständnis. Es kommt von vielen Dingen: Erfahrung, Familie, Kultur, Ausbildung. Die Forscherin Patricia Benner hat gezeigt: Am Anfang arbeitet man nach Regeln und Checklisten. Mit mehr Erfahrung handelt man intuitiv (= aus dem Gefühl heraus). Das Pflege-Verständnis wächst mit der Erfahrung.
+
+Das Berufsverständnis ist etwas anderes. Es gilt für alle Pflegekräfte. Der ICN-Ethikkodex (zuletzt aktualisiert 2021) nennt vier Bereiche: 1. Pflege und Patienten. 2. Pflege und Praxis. 3. Pflege und Beruf. 4. Pflege und globale Gesundheit. Einrichtungen haben auch eigene Pflege-Leitbilder. Die Grundwerte gelten für alle — aber eigene Schwerpunkte darf man setzen.`,
         quelle: "Vgl. ICN, Code of Ethics, 2021; Pflegeleitbild-Konzepte",
       },
       {
@@ -153,6 +209,9 @@ Das Berufsverständnis ist etwas anderes. Es gilt für alle Pflegekräfte. Es is
     titelB1: "Wer vertritt die Pflege in der Politik?",
     tag: "pflege",
     geschaetzteDauer: 7,
+    zusammenfassung: "Drei Organisationstypen vertreten Pflegende: Berufsverbände für Fachpolitik, Gewerkschaften für Gehalt, Pflegekammern für Selbstverwaltung.",
+    zusammenfassungB1: "Berufsverbände, Gewerkschaften und Pflegekammern — drei verschiedene Organisationen helfen Pflegekräften.",
+    headerImageUrl: "/images/content/le-01/header/kap-04-berufspolitik.svg",
     glossarBegriffe: ["Pflegekammer", "Deutscher Pflegerat (DPR)"],
     bloecke: [
       {
@@ -191,6 +250,9 @@ Das können Gewerkschaften. Die größte Gewerkschaft für Pflegende ist ver.di.
     titelB1: "Das neue Pflege-Gesetz und die Ausbildung",
     tag: "pflege",
     geschaetzteDauer: 8,
+    zusammenfassung: "Seit 2020 gibt es eine einzige generalistische Ausbildung statt drei getrennter — 2100h Theorie, 2500h Praxis, EU-weit anerkannt.",
+    zusammenfassungB1: "Seit 2020 gibt es nur noch eine Pflege-Ausbildung für alle. 3 Jahre, Theorie und Praxis zusammen.",
+    headerImageUrl: "/images/content/le-01/header/kap-05-pflbg.svg",
     glossarBegriffe: ["Pflegeberufegesetz (PflBG)", "Generalistische Pflegeausbildung", "Vorbehaltene Tätigkeiten", "Praxisanleiter"],
     bloecke: [
       {
@@ -202,6 +264,11 @@ Das Pflegeberufegesetz (PflBG), seit dem 1. Januar 2020 gültig, zog die Konsequ
 
 Die Ausbildung dauert 3 Jahre in Vollzeit (oder bis zu 5 Jahre in Teilzeit). Es gibt 2100 Stunden Theorie in der Schule und mindestens 2500 Stunden Praxis.`,
         quelle: "Vgl. § 5, § 6 PflBG; PflAPrV (Ausbildungs- und Prüfungsverordnung)",
+      },
+      {
+        type: "wusstestdu",
+        contentC1: "Der generalistische Abschluss als Pflegefachfrau/Pflegefachmann wird dank EU-Richtlinie 2005/36/EG in allen 27 EU-Mitgliedstaaten automatisch anerkannt — ohne zusätzliche Prüfung.",
+        contentB1: "Mit dem neuen Abschluss kann man in allen 27 EU-Ländern als Pflegekraft arbeiten — ohne Extra-Prüfung!",
       },
       {
         type: "tabelle",
@@ -243,6 +310,9 @@ In den ersten 2 Jahren gibt es feste Praxis-Einsätze: Orientierung (400 Stunden
     titelB1: "Was bedeutet Kompetenz in der Pflege?",
     tag: "pflege",
     geschaetzteDauer: 6,
+    zusammenfassung: "Kompetenz heißt nicht Wissen, sondern richtiges Handeln in realen Situationen — aus Fach-, Sozial- und Personaler Kompetenz.",
+    zusammenfassungB1: "Kompetenz bedeutet: Man kann in einer echten Situation richtig handeln. Dafür braucht man drei Dinge.",
+    headerImageUrl: "/images/content/le-01/header/kap-06-kompetenz.svg",
     glossarBegriffe: ["Handlungskompetenz", "Fachkompetenz"],
     bloecke: [
       {
@@ -281,6 +351,9 @@ Was ist Sozial-Kompetenz? Man kann gut mit anderen Menschen umgehen. Das ist in 
     titelB1: "Was ist der Pflege-Prozess?",
     tag: "pflege",
     geschaetzteDauer: 8,
+    zusammenfassung: "Der Pflegeprozess nach Fiechter/Meier hat 6 Phasen im Regelkreis — und ist laut PflBG eine vorbehaltene Tätigkeit.",
+    zusammenfassungB1: "Der Pflege-Prozess hat 6 Schritte. Er ist ein Kreislauf: Am Ende prüft man das Ergebnis und fängt wieder an.",
+    headerImageUrl: "/images/content/le-01/header/kap-07-pflegeprozess.svg",
     glossarBegriffe: ["Pflegeprozess", "Fiechter und Meier", "Pflegeanamnese", "Pflegeproblem", "Ressourcen (pflegerisch)", "Pflegeziel", "Evaluation (Pflege)"],
     bloecke: [
       {
@@ -332,6 +405,21 @@ Phase 2 — Probleme und Stärken erkennen: Aus den Informationen finden Sie her
 Phase 3 — Ziele formulieren: Ein gutes Pflege-Ziel ist SMART. Das bedeutet: spezifisch (= genau), messbar, akzeptiert (der Patient ist einverstanden), realistisch (= erreichbar) und terminiert (= mit Zeitangabe). Ein Beispiel: „Herr Weber geht bis Freitag mit dem Rollator 20 Meter über den Flur." Das ist ein gutes Ziel. Man kann prüfen: Hat er es geschafft?`,
         quelle: "Vgl. Fiechter/Meier, 1981; § 5 Abs. 3 PflBG",
       },
+      {
+        type: "vertiefung",
+        contentC1: `SMART-Ziele im Detail:
+S — Spezifisch: Nicht „Mobilität verbessern", sondern „Herr Weber geht mit Rollator über den Flur".
+M — Messbar: Distanz in Metern, Häufigkeit pro Tag, Schmerzskala.
+A — Akzeptiert: Der Patient muss einverstanden sein — kein Ziel über seinen Kopf hinweg.
+R — Realistisch: Erreichbar in der geplanten Zeit, mit den vorhandenen Ressourcen.
+T — Terminiert: „Bis Freitag", „innerhalb von 3 Tagen", „bei Entlassung".`,
+        contentB1: `SMART-Ziele erklärt:
+S — Spezifisch: Genau sagen, was passieren soll.
+M — Messbar: Man kann prüfen, ob es geklappt hat.
+A — Akzeptiert: Der Patient ist einverstanden.
+R — Realistisch: Das Ziel ist erreichbar.
+T — Terminiert: Es gibt einen Zeitpunkt.`,
+      },
     ],
   },
 
@@ -342,6 +430,9 @@ Phase 3 — Ziele formulieren: Ein gutes Pflege-Ziel ist SMART. Das bedeutet: sp
     titelB1: "Ethik in der Pflege \u2014 was bedeutet das?",
     tag: "pflege",
     geschaetzteDauer: 6,
+    zusammenfassung: "Der ICN-Ethikkodex und die 4 Prinzipien von Beauchamp/Childress bilden den ethischen Kompass für pflegerische Entscheidungen.",
+    zusammenfassungB1: "Es gibt Regeln für richtiges Handeln in der Pflege. Vier Grundsätze helfen bei schwierigen Entscheidungen.",
+    headerImageUrl: "/images/content/le-01/header/kap-08-ethik.svg",
     glossarBegriffe: ["Ethikkodex (ICN)", "Pflegekammer", "Profession"],
     bloecke: [
       {
@@ -397,12 +488,17 @@ Das Problem: Diese vier Grundsätze passen nicht immer zusammen. Erinnern Sie si
     titelB1: "Wie kann ich als Pflegekraft auf mich achten?",
     tag: "pflege",
     geschaetzteDauer: 6,
+    zusammenfassung: "Selbstpflege ist Kernkompetenz — Eisenhower-Methode für Zeitmanagement, 4-6-8-Atmung und PMR gegen akuten Stress.",
+    zusammenfassungB1: "Pflegekräfte müssen auch auf sich selbst achten. Es gibt einfache Methoden gegen Stress.",
+    headerImageUrl: "/images/content/le-01/header/kap-09-selbstpflege.svg",
     glossarBegriffe: ["Eisenhower-Methode", "Progressive Muskelentspannung (PMR)"],
     bloecke: [
       {
         type: "text",
         contentC1: `Es klingt paradox: Menschen, die beruflich für die Gesundheit anderer sorgen, vernachlässigen häufig ihre eigene. Pflegefachpersonen heben und lagern täglich Patienten, stehen stundenlang, arbeiten im Wechsel zwischen Früh-, Spät- und Nachtschicht. Die körperlichen Folgen — Rückenschmerzen, Schlafstörungen, chronische Erschöpfung — gehören zu den häufigsten Berufskrankheiten der Branche. Dazu kommt die emotionale Seite: Sie begleiten Menschen in Angst, Schmerz und Trauer. Manche Patienten sterben während Ihrer Schicht. Studien der Berufsgenossenschaft für Gesundheitsdienst und Wohlfahrtspflege (BGW) zeigen, dass Pflegekräfte ein überdurchschnittlich hohes Risiko für Burnout tragen. Selbstpflege ist deshalb keine Wellness-Option nach Feierabend — sie ist eine professionelle Kernkompetenz. Wer langfristig für andere sorgen will, muss zuerst für sich selbst sorgen.`,
         contentB1: `Es klingt seltsam: Pflegekräfte kümmern sich um die Gesundheit anderer — aber oft nicht um ihre eigene. Der Körper wird stark belastet. Man hebt und lagert Patienten. Man steht stundenlang. Man arbeitet im Wechsel: Früh-Schicht, Spät-Schicht, Nacht-Schicht. Viele bekommen Rückenschmerzen und Schlafprobleme. Und die Arbeit ist emotional schwer. Man sieht Leid, Schmerz und Tod. Die Gefahr für Burnout (= totale Erschöpfung) ist in der Pflege besonders hoch. Deshalb ist Selbst-Pflege sehr wichtig. Wer für andere sorgen will, muss zuerst auf sich selbst achten.`,
+        kernaussage: "Selbstpflege ist keine Wellness-Option — sie ist eine professionelle Kernkompetenz.",
+        kernaussageB1: "Selbst-Pflege ist kein Luxus — sie ist eine wichtige Fähigkeit für den Beruf.",
         quelle: "Vgl. BGW Gesundheitsreport Pflege; DAK Gesundheitsreport",
       },
       {

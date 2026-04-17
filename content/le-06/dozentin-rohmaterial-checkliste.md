@@ -1,6 +1,6 @@
 # Rohmaterial-Prüfung: LE-06
 
-Generiert: 2026-04-16
+Generiert: 2026-04-17
 
 ## Kernfakten (28 Stück)
 

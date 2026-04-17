@@ -170,7 +170,7 @@ export function LehrerChat({ lernKontext }: LehrerChatProps) {
         </svg>
         {/* Ungelesene Badge */}
         {ungelesen > 0 && (
-          <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-[#C96B5C] text-[10px] font-bold text-white">
+          <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-[#C96B5C] text-xs font-bold text-white">
             {ungelesen}
           </span>
         )}
@@ -248,7 +248,7 @@ export function LehrerChat({ lernKontext }: LehrerChatProps) {
                     <div className="max-w-[85%]">
                       {/* Kontext-Tag bei Schüler-Nachrichten */}
                       {msg.von === "schueler" && msg.kontext?.thema && (
-                        <p className="text-[10px] text-[var(--lern-text-tertiary)] text-right mb-1 mr-1">
+                        <p className="text-xs text-[var(--lern-text-tertiary)] text-right mb-1 mr-1">
                           {msg.kontext.thema}
                         </p>
                       )}
@@ -261,7 +261,7 @@ export function LehrerChat({ lernKontext }: LehrerChatProps) {
                       >
                         <p className="text-sm leading-relaxed">{msg.text}</p>
                       </div>
-                      <p className="text-[10px] text-[var(--lern-text-tertiary)] mt-1 px-1">
+                      <p className="text-xs text-[var(--lern-text-tertiary)] mt-1 px-1">
                         {msg.von === "lehrer" ? "Lehrer" : "Du"} · {formatZeit(msg.zeit)}
                       </p>
                     </div>

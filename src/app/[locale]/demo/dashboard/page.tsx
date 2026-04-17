@@ -126,7 +126,7 @@ function TimePickerSheet({ onSelect, onClose }: { onSelect: (min: number) => voi
                 <span className="text-xs text-zinc-500">{o.sub}</span>
               </div>
               {o.recommended && (
-                <span className="text-[10px] font-medium text-blue-600 bg-blue-100 px-2 py-0.5 rounded-full">Empfohlen</span>
+                <span className="text-xs font-medium text-blue-600 bg-blue-100 px-2 py-0.5 rounded-full">Empfohlen</span>
               )}
             </button>
           ))}
@@ -198,7 +198,7 @@ export default function DashboardDemo() {
               </p>
             </div>
             <RadialProgress value={Math.min(100, (USER.lernzeit.heute / (dailyGoal ?? USER.lernzeit.ziel)) * 100)} size={52} color="#2563eb">
-              <span className="text-[10px] font-bold text-blue-600">
+              <span className="text-xs font-bold text-blue-600">
                 {Math.round((USER.lernzeit.heute / (dailyGoal ?? USER.lernzeit.ziel)) * 100)}%
               </span>
             </RadialProgress>
@@ -240,7 +240,7 @@ export default function DashboardDemo() {
                     animate={{ height: d.min > 0 ? `${Math.max(4, (d.min / maxMin) * 48)}px` : "3px" }}
                     transition={{ duration: 0.5, delay: 0.15 + i * 0.04 }}
                   />
-                  <span className={`text-[10px] ${isToday ? "font-semibold text-blue-600" : "text-zinc-400"}`}>{d.day}</span>
+                  <span className={`text-xs ${isToday ? "font-semibold text-blue-600" : "text-zinc-400"}`}>{d.day}</span>
                 </div>
               )
             })}
@@ -267,7 +267,7 @@ export default function DashboardDemo() {
                 >
                   <div className="flex items-center justify-between mb-1">
                     <div className="flex items-center gap-2 min-w-0">
-                      <span className="text-[10px] font-mono text-zinc-400 shrink-0">{c.id}</span>
+                      <span className="text-xs font-mono text-zinc-400 shrink-0">{c.id}</span>
                       <span className="text-sm text-zinc-800 truncate">{c.label}</span>
                     </div>
                     <span className="text-xs font-medium text-zinc-500 shrink-0 ml-2">{c.sessions}/{c.total}</span>
@@ -293,7 +293,7 @@ export default function DashboardDemo() {
         >
           <div className="flex items-center justify-between mb-1">
             <p className="text-sm font-medium text-zinc-900">Lernpfad</p>
-            <span className="text-[10px] font-mono text-zinc-400">CE 01</span>
+            <span className="text-xs font-mono text-zinc-400">CE 01</span>
           </div>
           <p className="text-xs text-zinc-500 mb-4">2 von 8 Lektionen abgeschlossen</p>
 
@@ -356,9 +356,9 @@ export default function DashboardDemo() {
                   }`} />
                   <div className="flex-1 min-w-0">
                     <p className="text-sm text-zinc-800 group-hover:text-blue-600 transition-colors">{t.topic}</p>
-                    <p className="text-[10px] text-zinc-400">{t.lastPracticed}</p>
+                    <p className="text-xs text-zinc-400">{t.lastPracticed}</p>
                   </div>
-                  <span className={`text-[10px] font-medium px-1.5 py-0.5 rounded ${
+                  <span className={`text-xs font-medium px-1.5 py-0.5 rounded ${
                     t.strength === "weak" ? "bg-red-50 text-red-600" : t.strength === "medium" ? "bg-amber-50 text-amber-600" : "bg-emerald-50 text-emerald-600"
                   }`}>
                     {t.strength === "weak" ? "Unsicher" : t.strength === "medium" ? "Auffrischen" : "Sicher"}
@@ -387,7 +387,7 @@ export default function DashboardDemo() {
                 className={`flex items-center gap-3 px-3 py-2 rounded-lg ${c.isUser ? "bg-blue-50/70" : ""}`}
               >
                 <span className="text-xs text-zinc-400 w-4 text-right">{i + 1}</span>
-                <div className={`w-7 h-7 rounded-full flex items-center justify-center text-[10px] font-bold ${
+                <div className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold ${
                   c.isUser ? "bg-blue-600 text-white" : "bg-zinc-200 text-zinc-600"
                 }`}>
                   {c.initials}
@@ -397,7 +397,7 @@ export default function DashboardDemo() {
                 </span>
                 <div className="text-right">
                   <p className="text-xs font-medium text-zinc-700">{c.sessions} Sessions</p>
-                  <p className="text-[10px] text-zinc-400">Ø {c.avg}%</p>
+                  <p className="text-xs text-zinc-400">Ø {c.avg}%</p>
                 </div>
               </motion.div>
             ))}
@@ -426,7 +426,7 @@ export default function DashboardDemo() {
                     {m.icon === "exam" && <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 2h8a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1zM5.5 5.5h5M5.5 8h5M5.5 10.5h3" stroke="#6b7280" strokeWidth="1.2" strokeLinecap="round" className="group-hover:stroke-blue-600 transition-colors"/></svg>}
                   </div>
                   <p className="text-sm font-medium text-zinc-800 group-hover:text-blue-600 transition-colors">{m.label}</p>
-                  <p className="text-[10px] text-zinc-400 mt-0.5">{m.sub}</p>
+                  <p className="text-xs text-zinc-400 mt-0.5">{m.sub}</p>
                 </div>
               </Link>
             ))}
@@ -453,7 +453,7 @@ export default function DashboardDemo() {
               <svg width="22" height="22" viewBox="0 0 16 16" fill="none">
                 <path d={t.d} stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <span className="text-[10px] font-medium">{t.label}</span>
+              <span className="text-xs font-medium">{t.label}</span>
             </button>
           ))}
         </div>

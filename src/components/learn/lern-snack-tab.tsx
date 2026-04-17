@@ -117,10 +117,11 @@ export function LernSnackTab({ snacks, sprachLevel, leId }: LernSnackTabProps) {
             {/* Kapitel-Header */}
             <button
               onClick={() => toggleCollapse(snack.kapitelId)}
+              aria-expanded={!isCollapsed}
               className="flex w-full items-center justify-between px-4 py-3 text-left"
             >
               <div className="flex items-center gap-2">
-                <span className={`inline-block rounded px-1.5 py-0.5 text-[10px] font-medium ${TAG_COLORS[snack.tag] ?? "bg-gray-100 text-gray-700"}`}>
+                <span className={`inline-block rounded px-1.5 py-0.5 text-xs font-medium ${TAG_COLORS[snack.tag] ?? "bg-gray-100 text-gray-700"}`}>
                   {snack.tag}
                 </span>
                 <span className="text-sm font-medium" style={{ color: "var(--lern-text)" }}>

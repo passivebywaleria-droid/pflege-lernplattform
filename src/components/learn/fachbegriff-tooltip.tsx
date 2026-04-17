@@ -29,7 +29,7 @@ function FachbegriffTtsButton({ text }: { text: string }) {
   return (
     <button
       onClick={(e) => { e.stopPropagation(); speak(text, 0.85); }}
-      className={`inline-flex items-center justify-center w-5 h-5 rounded-full text-[10px] ml-0.5 align-middle transition-colors ${
+      className={`inline-flex items-center justify-center w-5 h-5 rounded-full text-xs ml-0.5 align-middle transition-colors ${
         playing ? "bg-[var(--lern-accent)] text-white" : "bg-[var(--lern-accent)]/10 text-[var(--lern-accent)]"
       }`}
       title="Vorlesen"

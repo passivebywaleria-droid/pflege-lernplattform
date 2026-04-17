@@ -4,7 +4,7 @@
 
 import type { GlossarEntry } from "../_types";
 
-export const GLOSSAR: GlossarEntry[] = [
+export const LE01_GLOSSAR: GlossarEntry[] = [
 
   // === Berufsidentität & Professionalisierung ===
   {

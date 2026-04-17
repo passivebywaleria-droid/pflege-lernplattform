@@ -23,7 +23,7 @@ export function SprachlevelToggle({ level, onChange }: SprachlevelToggleProps) {
         transition={{ type: "spring", stiffness: 500, damping: 30 }}
       />
       <span
-        className={`relative z-10 flex-1 text-center text-[10px] font-semibold transition-colors ${
+        className={`relative z-10 flex-1 text-center text-xs font-semibold transition-colors ${
           level === "c1"
             ? "text-[var(--lern-text-primary)]"
             : "text-[var(--lern-text-tertiary)]"
@@ -32,7 +32,7 @@ export function SprachlevelToggle({ level, onChange }: SprachlevelToggleProps) {
         Fachsprache
       </span>
       <span
-        className={`relative z-10 flex-1 text-center text-[10px] font-semibold transition-colors ${
+        className={`relative z-10 flex-1 text-center text-xs font-semibold transition-colors ${
           level === "b1"
             ? "text-[var(--lern-text-primary)]"
             : "text-[var(--lern-text-tertiary)]"

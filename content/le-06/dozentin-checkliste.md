@@ -1,8 +1,8 @@
 # Dozentin-Checkliste: LE-06
 
-Generiert: 2026-04-16
+Generiert: 2026-04-17
 Rohmaterial freigegeben: ✅ 2026-04-16
-Validator: Schema 40, MC 28, Dialog 4, Glossar 0 Warnungen
+Validator: Schema 65, MC 28, Dialog 4, Glossar 0 Warnungen
 
 ## A) Kernfakt-Abgleich (28 Fakten)
 
@@ -52,7 +52,7 @@ Bei Abweichung: ❌ ankreuzen + Korrektur in Spalte "Anmerkung".
 
 | Typ | Anzahl | Details |
 |-----|--------|--------|
-| Schema-Fehler | 40 | Renderer-Bugs — MUSS vor Live gefixt werden |
+| Schema-Fehler | 65 | Renderer-Bugs — MUSS vor Live gefixt werden |
 | MC-Bias | 28 | Antwortlänge/Position ungleich verteilt |
 | Dialog-Bias | 4 | Beste Antwort immer auf gleicher Position |
 | Glossar-Lücken | 0 | ✅ |

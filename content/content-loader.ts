@@ -1,136 +1,146 @@
-// Content-Loader v2: Lädt Lektionsdaten dynamisch für alle 55 LEs
-// CE-übergreifend, variable Session-Anzahl, Track-Filter
+// Content-Loader v4: Auto-Loader basierend auf `_manifest.ts`.
+// API-Layer befindet sich in `src/lib/content-loader.ts`.
+//
+// Neue LE registrieren:
+//   1. Eintrag in `content/_manifest.ts` ergänzen
+//   2. Datei-Set in `content/le-{NN}/` mit Naming-Standard ablegen (`LE{NN}_*`)
+//   3. Eintrag in `LE_MODULES` unten ergänzen (eine Zeile)
+//
+// Sonst nichts ändern.
 
-import type { ContentStep, LektionData, LektionMetadata, GlossarEntry, LernTrack, KarteikarteVorlage } from "./_types";
+import type {
+  ContentStep,
+  LektionData,
+  LektionMetadata,
+  GlossarEntry,
+  LernTrack,
+  KarteikarteVorlage,
+  ArtikelKapitel,
+  LernSnack,
+  Fallverlauf,
+  PraxisUebung,
+  ExamCase,
+  LeManifestEntry,
+  SessionId,
+  SessionLabel,
+  StepType,
+} from "./_types";
 import { calculateXP } from "./_xp-formula";
-import type { StepType } from "./_types";
+import { LE_MANIFEST, lePrefix } from "./_manifest";
 
-export type SessionId = string; // "s1", "s2", "s3", ...
+// Re-Export für Konsumenten (Frontend nutzt diese Typen via `src/lib/content-loader.ts`)
+export type { LeManifestEntry, SessionId, SessionLabel };
 
-// Pfad-Label für themenbasierte Sessions
-export interface SessionLabel {
-  title: string;
-  titleShort: string;
-  tag: "anatomie" | "pflege" | "krankheitslehre";
-  bloomRange: string;
-}
+// ── LE-Modul-Loader (Webpack-friendly explicit map) ──
+//
+// Hintergrund: Next.js/Webpack unterstützt dynamische Imports mit Template-Literalen,
+// erzeugt dabei aber einen Context-Bundle für ALLE Matching-Dateien (Build-Warnung).
+// Daher: eine Zeile pro LE hier — bleibt vorhersagbar und tree-shakable.
 
-// Manifest-Eintrag pro LE
-export interface LeManifestEntry {
-  leId: string;
-  ceId: string;
-  title: string;
-  titleShort: string;
-  zeitrichtwert: number;
-  sessions: SessionId[];   // Verfügbare Sessions ["s1", "s2", "s3"]
-  hasGlossar: boolean;
-  status: "rohmaterial" | "sessionplan" | "steps" | "geprueft";
-  // Optional: Themenbasierte Pfad-Labels (Mentimeter: Sessions = Pfade)
-  sessionLabels?: Record<SessionId, SessionLabel>;
-}
-
-// Statisches Manifest — wird vom Content-Generator aktualisiert
-// Nur LEs mit generiertem Content sind hier eingetragen
-const LE_MANIFEST: LeManifestEntry[] = [
-  // === CE 01 (Pipeline v2) ===
-  {
-    leId: "le-01",
-    ceId: "ce-01",
-    title: "Personen- und situationsorientiert professionell pflegen",
-    titleShort: "Professionell pflegen",
-    zeitrichtwert: 40,
-    sessions: ["s1", "s2", "s3", "s4", "s5", "s6"],
-    hasGlossar: true,
-    status: "geprueft",
-  },
-  // LE-06 und LE-08 werden neu produziert (Pipeline v5) — Manifest-Einträge kommen zurück wenn Content fertig
-  // Neue LEs werden hier eingefügt wenn Content generiert wird
-];
-
-// Session-Loader Registry — statische Imports für Webpack/Next.js
-// Jeder Eintrag: leId → sessionId → () => Promise<ContentStep[]>
-type SessionLoader = () => Promise<ContentStep[]>;
-type MetadataLoader = () => Promise<LektionMetadata>;
-type GlossarLoader = () => Promise<GlossarEntry[]>;
-type KarteikartenLoader = () => Promise<KarteikarteVorlage[]>;
-
-interface LeLoaders {
-  sessions: Record<string, SessionLoader>;
-  metadata: MetadataLoader;
-  glossar?: GlossarLoader;
-  karteikarten?: KarteikartenLoader;
-}
-
-const LOADERS: Record<string, LeLoaders> = {
-  "le-01": {
-    sessions: {
-      s1: async () => (await import("./le-01/steps-s1")).STEPS_S1,
-      s2: async () => (await import("./le-01/steps-s2")).STEPS_S2,
-      s3: async () => (await import("./le-01/steps-s3")).STEPS_S3,
-      s4: async () => (await import("./le-01/steps-s4")).STEPS_S4,
-      s5: async () => (await import("./le-01/steps-s5")).STEPS_S5,
-      s6: async () => (await import("./le-01/steps-s6")).STEPS_S6,
-    },
-    metadata: async () => (await import("./le-01/steps-s1")).METADATA,
-    glossar: async () => (await import("./le-01/glossar")).GLOSSAR,
-    karteikarten: async () => (await import("./le-01/karteikarten")).KARTEIKARTEN_LE01,
-  },
-  // LE-06 und LE-08 Loader kommen zurück nach Neuproduktion (Pipeline v5)
+const LE_MODULES: Record<string, () => Promise<Record<string, unknown>>> = {
+  "le-01": () => import("./le-01/index"),
+  "le-06": () => import("./le-06/index"),
 };
 
-/**
- * Alle LEs aus dem Manifest (ohne Content zu laden).
- */
+async function loadLeModule(leId: string): Promise<Record<string, unknown> | null> {
+  const loader = LE_MODULES[leId];
+  if (!loader) return null;
+  return loader();
+}
+
+// ── Loader-Factory ──
+
+interface LeLoaders {
+  sessions: Record<string, () => Promise<ContentStep[]>>;
+  metadata: () => Promise<LektionMetadata | null>;
+  glossar: () => Promise<GlossarEntry[]>;
+  karteikarten: () => Promise<KarteikarteVorlage[]>;
+  artikel: () => Promise<ArtikelKapitel[]>;
+  snack: () => Promise<LernSnack[]>;
+  fall: () => Promise<Fallverlauf[]>;
+  praxis: () => Promise<PraxisUebung[]>;
+  pruefung: () => Promise<ExamCase | null>;
+}
+
+function createLoadersForLE(le: LeManifestEntry): LeLoaders {
+  const prefix = lePrefix(le.leId); // "le-01" → "LE01"
+
+  const get = async <T>(key: string, fallback: T): Promise<T> => {
+    const mod = await loadLeModule(le.leId);
+    if (!mod) return fallback;
+    const value = mod[key];
+    return (value as T | undefined) ?? fallback;
+  };
+
+  const sessions: Record<string, () => Promise<ContentStep[]>> = {};
+  for (const s of le.sessions) {
+    const upper = s.toUpperCase(); // "s1" → "S1"
+    sessions[s] = () => get<ContentStep[]>(`${prefix}_STEPS_${upper}`, []);
+  }
+
+  return {
+    sessions,
+    metadata: async () => {
+      const mod = await loadLeModule(le.leId);
+      return ((mod?.[`${prefix}_METADATA`] as LektionMetadata | undefined) ?? null);
+    },
+    glossar: () => get<GlossarEntry[]>(`${prefix}_GLOSSAR`, []),
+    karteikarten: () => get<KarteikarteVorlage[]>(`${prefix}_KARTEIKARTEN`, []),
+    artikel: () => get<ArtikelKapitel[]>(`${prefix}_ARTIKEL`, []),
+    snack: () => get<LernSnack[]>(`${prefix}_LERN_SNACK`, []),
+    fall: () => get<Fallverlauf[]>(`${prefix}_FALLVERLAEUFE`, []),
+    praxis: () => get<PraxisUebung[]>(`${prefix}_PRAXIS`, []),
+    pruefung: async () => {
+      const mod = await loadLeModule(le.leId);
+      return ((mod?.[`${prefix}_PRUEFUNGSFALL`] as ExamCase | undefined) ?? null);
+    },
+  };
+}
+
+const LOADERS: Record<string, LeLoaders> = Object.fromEntries(
+  LE_MANIFEST.map((le) => [le.leId, createLoadersForLE(le)]),
+);
+
+// ── Public API ──
+
+/** Alle LEs aus dem Manifest (synchron, ohne Content zu laden). */
 export function getAllLektionen(): LeManifestEntry[] {
   return LE_MANIFEST;
 }
 
-/**
- * LEs nach CE filtern.
- */
+/** LEs nach CE filtern. */
 export function getLektionenByCe(ceId: string): LeManifestEntry[] {
   return LE_MANIFEST.filter((le) => le.ceId === ceId);
 }
 
-/**
- * Manifest-Eintrag für eine leId.
- */
+/** Manifest-Eintrag für eine leId. */
 export function getLeManifest(leId: string): LeManifestEntry | undefined {
   return LE_MANIFEST.find((le) => le.leId === leId);
 }
 
-/**
- * Gibt Pfad-Label für eine Session zurück (Themen-Name, Tag, Bloom).
- * Null wenn keine sessionLabels definiert (= generisches Label).
- */
+/** Pfad-Label für eine Session (optional, je nach LE). */
 export function getSessionLabel(leId: string, sessionId: SessionId): SessionLabel | null {
   const manifest = getLeManifest(leId);
   return manifest?.sessionLabels?.[sessionId] ?? null;
 }
 
-/**
- * Verfügbare Sessions für eine LE.
- */
+/** Verfügbare Sessions für eine LE. */
 export function getAvailableSessions(leId: string): SessionId[] {
   return getLeManifest(leId)?.sessions ?? [];
 }
 
-/**
- * Lädt Steps für eine bestimmte Session.
- */
+/** Steps für eine Session (static only). */
 export async function loadSession(leId: string, sessionId: SessionId): Promise<ContentStep[] | null> {
   const loader = LOADERS[leId]?.sessions[sessionId];
   if (!loader) return null;
   return loader();
 }
 
-/**
- * Lädt Steps gefiltert nach Track (basis/vertiefung).
- */
+/** Steps gefiltert nach Track. */
 export async function loadSessionByTrack(
   leId: string,
   sessionId: SessionId,
-  track: LernTrack | "all" = "all"
+  track: LernTrack | "all" = "all",
 ): Promise<ContentStep[] | null> {
   const steps = await loadSession(leId, sessionId);
   if (!steps) return null;
@@ -138,36 +148,63 @@ export async function loadSessionByTrack(
   return steps.filter((s) => s.track === track);
 }
 
-/**
- * Lädt Metadata für eine LE.
- */
+/** Metadata für eine LE. */
 export async function loadMetadata(leId: string): Promise<LektionMetadata | null> {
   const loader = LOADERS[leId]?.metadata;
   if (!loader) return null;
   return loader();
 }
 
-/**
- * Lädt Glossar für eine LE.
- */
+/** Glossar für eine LE. */
 export async function loadGlossar(leId: string): Promise<GlossarEntry[] | null> {
   const loader = LOADERS[leId]?.glossar;
   if (!loader) return null;
   return loader();
 }
 
-/**
- * Lädt pre-generierte Karteikarten für eine LE.
- */
+/** Pre-generierte Karteikarten für eine LE. */
 export async function loadKarteikarten(leId: string): Promise<KarteikarteVorlage[] | null> {
   const loader = LOADERS[leId]?.karteikarten;
   if (!loader) return null;
   return loader();
 }
 
-/**
- * Lädt eine komplette Lektion (alle Sessions + Metadata + Glossar).
- */
+/** Artikel-Kapitel für eine LE. */
+export async function loadArtikel(leId: string): Promise<ArtikelKapitel[] | null> {
+  const loader = LOADERS[leId]?.artikel;
+  if (!loader) return null;
+  return loader();
+}
+
+/** Lern-Snack-Kapitel für eine LE. */
+export async function loadSnack(leId: string): Promise<LernSnack[] | null> {
+  const loader = LOADERS[leId]?.snack;
+  if (!loader) return null;
+  return loader();
+}
+
+/** Fallverläufe für eine LE. */
+export async function loadFall(leId: string): Promise<Fallverlauf[] | null> {
+  const loader = LOADERS[leId]?.fall;
+  if (!loader) return null;
+  return loader();
+}
+
+/** Praxis-Übungen für eine LE. */
+export async function loadPraxis(leId: string): Promise<PraxisUebung[] | null> {
+  const loader = LOADERS[leId]?.praxis;
+  if (!loader) return null;
+  return loader();
+}
+
+/** Prüfungsfall für eine LE. */
+export async function loadPruefung(leId: string): Promise<ExamCase | null> {
+  const loader = LOADERS[leId]?.pruefung;
+  if (!loader) return null;
+  return loader();
+}
+
+/** Komplette Lektion (alle Sessions + Metadata + Glossar + Karteikarten). */
 export async function loadLektion(leId: string): Promise<LektionData | null> {
   const manifest = getLeManifest(leId);
   if (!manifest) return null;
@@ -178,7 +215,6 @@ export async function loadLektion(leId: string): Promise<LektionData | null> {
   const glossar = (await loadGlossar(leId)) ?? [];
   const karteikarten = (await loadKarteikarten(leId)) ?? undefined;
 
-  // Alle Sessions laden und zusammenführen
   const allSteps: ContentStep[] = [];
   for (const sessionId of manifest.sessions) {
     const steps = await loadSession(leId, sessionId);
@@ -188,16 +224,13 @@ export async function loadLektion(leId: string): Promise<LektionData | null> {
   return { steps: allSteps, metadata, glossar, karteikarten };
 }
 
-/**
- * Berechnet XP für einen Step (convenience export).
- */
+/** XP-Berechnung für einen Step. */
 export function getXP(step: ContentStep): number {
   return step.xpValue ?? calculateXP(step.stepType as StepType, step.bloomLevel);
 }
 
-/**
- * Tag-Statistiken pro LE (für Themen-Übersichtsseite).
- */
+// ── Tag-Statistiken ──
+
 export interface LeTagStats {
   leId: string;
   ceId: string;
@@ -210,10 +243,6 @@ export interface LeTagStats {
   sessions: SessionId[];
 }
 
-/**
- * Lädt Tag-Statistiken für alle LEs mit Content.
- * Gibt für jede LE die Anzahl Steps pro Tag zurück.
- */
 export async function loadAllTagStats(): Promise<LeTagStats[]> {
   const results: LeTagStats[] = [];
 
@@ -234,7 +263,7 @@ export async function loadAllTagStats(): Promise<LeTagStats[]> {
         total++;
         if (step.tag === "anatomie") anatomie++;
         else if (step.tag === "krankheitslehre") krankheitslehre++;
-        else pflege++; // Default: pflege (auch für steps ohne tag)
+        else pflege++;
       }
     }
 
@@ -256,21 +285,14 @@ export async function loadAllTagStats(): Promise<LeTagStats[]> {
   return results;
 }
 
-// === CROSS-LE PRÜFUNGSFÄLLE ===
+// ── Cross-LE Patient Steps ──
 
-/**
- * Lädt alle Steps einer LE die einem bestimmten Patienten zugeordnet sind.
- */
 export async function loadPatientSteps(leId: string, patientId: string): Promise<ContentStep[]> {
   const data = await loadLektion(leId);
   if (!data) return [];
   return data.steps.filter((s) => s.patientId === patientId);
 }
 
-/**
- * Lädt Steps für einen Patienten über ALLE seine LEs hinweg.
- * Gibt Steps gruppiert nach LE zurück.
- */
 export async function loadPatientAcrossLEs(
   patientId: string,
   sourceLEs: string[],

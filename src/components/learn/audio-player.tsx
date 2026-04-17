@@ -104,7 +104,7 @@ export function AudioPlayer({ src, label }: AudioPlayerProps) {
               style={{ width: `${progress}%` }}
             />
           </div>
-          <div className="flex justify-between text-[10px] text-[var(--lern-text-tertiary)]">
+          <div className="flex justify-between text-xs text-[var(--lern-text-tertiary)]">
             <span>{formatTime(currentTime)}</span>
             <span>{duration ? formatTime(duration) : "--:--"}</span>
           </div>

@@ -218,7 +218,7 @@ export default function UIShowcase() {
             <AnimatedCircularProgress value={73} gaugePrimaryColor={SAGE} gaugeSecondaryColor={BONE}>
               <div className="text-center">
                 <div className="text-2xl font-bold" style={{ color: SAGE }}>73%</div>
-                <div className="text-[10px] text-[#86868b]">Session</div>
+                <div className="text-xs text-[#86868b]">Session</div>
               </div>
             </AnimatedCircularProgress>
             <div className="space-y-3">
@@ -299,7 +299,7 @@ export default function UIShowcase() {
                   <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-[#E5DFD6]/60">
                     <div className="h-full rounded-full transition-all" style={{ width: `${card.progress}%`, backgroundColor: card.color }} />
                   </div>
-                  <span className="text-[10px] font-medium" style={{ color: card.color }}>
+                  <span className="text-xs font-medium" style={{ color: card.color }}>
                     {card.progress}%
                   </span>
                 </div>
@@ -472,7 +472,7 @@ export default function UIShowcase() {
                       : "border-[#E5DFD6] hover:border-[#D1A9A5]/50 hover:bg-[#D1A9A5]/5"
                   }`}
                 >
-                  <span className="mr-2 inline-flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-bold" style={{ backgroundColor: opt.correct ? `${SAGE}20` : `${BONE}`, color: opt.correct ? SAGE : "#86868b" }}>
+                  <span className="mr-2 inline-flex h-5 w-5 items-center justify-center rounded-full text-xs font-bold" style={{ backgroundColor: opt.correct ? `${SAGE}20` : `${BONE}`, color: opt.correct ? SAGE : "#86868b" }}>
                     {String.fromCharCode(65 + i)}
                   </span>
                   {opt.text}
@@ -485,7 +485,7 @@ export default function UIShowcase() {
         {/* Variante B: Pill Buttons */}
         <VariantCard label="B" name="Pill Buttons" description="Runde Optionen, Duolingo-Style">
           <div className="py-6">
-            <div className="mb-1 text-[10px] font-semibold uppercase tracking-wider" style={{ color: OAK }}>Frage 7 von 22</div>
+            <div className="mb-1 text-xs font-semibold uppercase tracking-wider" style={{ color: OAK }}>Frage 7 von 22</div>
             <div className="mb-5 text-base font-bold">Was bedeutet &quot;Dekubitus&quot;?</div>
             <div className="grid grid-cols-2 gap-2">
               {[
@@ -514,7 +514,7 @@ export default function UIShowcase() {
         <VariantCard label="C" name="Statement Card" description="Wahr/Falsch als Swipe-Karte">
           <div className="flex flex-col items-center py-8">
             <div className="w-full max-w-sm rounded-2xl border border-[#E5DFD6] bg-gradient-to-b from-white to-[#fafaf9] p-6 text-center shadow-sm">
-              <div className="mb-2 text-[10px] font-semibold uppercase tracking-wider" style={{ color: RUST }}>Wahr oder Falsch?</div>
+              <div className="mb-2 text-xs font-semibold uppercase tracking-wider" style={{ color: RUST }}>Wahr oder Falsch?</div>
               <p className="mb-6 text-sm font-semibold leading-relaxed">
                 &quot;Der ICN-Ethikkodex gilt nur für Krankenpfleger, nicht für Altenpfleger.&quot;
               </p>
@@ -550,7 +550,7 @@ export default function UIShowcase() {
                 ].map((item) => (
                   <button key={item.label} className="flex flex-col items-center gap-0.5 px-2 py-1">
                     <div style={{ color: item.active ? SAGE : "#86868b" }}>{item.icon}</div>
-                    <span className="text-[10px] font-medium" style={{ color: item.active ? SAGE : "#86868b" }}>{item.label}</span>
+                    <span className="text-xs font-medium" style={{ color: item.active ? SAGE : "#86868b" }}>{item.label}</span>
                   </button>
                 ))}
               </div>
@@ -697,21 +697,21 @@ export default function UIShowcase() {
                   <Flame className="h-5 w-5" style={{ color: RUST }} />
                 </div>
                 <div className="text-lg font-bold leading-tight" style={{ color: RUST }}>12</div>
-                <div className="text-[10px] text-[#86868b]">Tage-Streak</div>
+                <div className="text-xs text-[#86868b]">Tage-Streak</div>
               </div>
               <div className="flex flex-col items-center gap-1 text-center">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#A58B71]/15">
                   <Zap className="h-5 w-5" style={{ color: OAK }} />
                 </div>
                 <div className="text-lg font-bold leading-tight" style={{ color: OAK }}>2.450</div>
-                <div className="text-[10px] text-[#86868b]">XP gesamt</div>
+                <div className="text-xs text-[#86868b]">XP gesamt</div>
               </div>
               <div className="flex flex-col items-center gap-1 text-center">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#C4877F]/15">
                   <Target className="h-5 w-5" style={{ color: SAGE }} />
                 </div>
                 <div className="text-lg font-bold leading-tight" style={{ color: SAGE }}>87%</div>
-                <div className="text-[10px] text-[#86868b]">Richtig-Quote</div>
+                <div className="text-xs text-[#86868b]">Richtig-Quote</div>
               </div>
             </div>
           </div>
@@ -738,7 +738,7 @@ export default function UIShowcase() {
                   >
                     {badge.icon}
                   </div>
-                  <span className="text-[10px] font-medium leading-tight">{badge.label}</span>
+                  <span className="text-xs font-medium leading-tight">{badge.label}</span>
                 </div>
               ))}
             </div>
@@ -757,15 +757,15 @@ export default function UIShowcase() {
               <div className="mb-4 flex justify-center gap-6 text-center">
                 <div>
                   <div className="text-xl font-bold" style={{ color: OAK }}>+120</div>
-                  <div className="text-[10px] text-[#86868b]">XP</div>
+                  <div className="text-xs text-[#86868b]">XP</div>
                 </div>
                 <div>
                   <div className="text-xl font-bold" style={{ color: SAGE }}>87%</div>
-                  <div className="text-[10px] text-[#86868b]">Richtig</div>
+                  <div className="text-xs text-[#86868b]">Richtig</div>
                 </div>
                 <div>
                   <div className="text-xl font-bold" style={{ color: RUST }}>12</div>
-                  <div className="text-[10px] text-[#86868b]">Streak</div>
+                  <div className="text-xs text-[#86868b]">Streak</div>
                 </div>
               </div>
               <button className="w-full rounded-2xl py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.02] active:scale-95" style={{ backgroundColor: SAGE }}>
@@ -842,7 +842,7 @@ export default function UIShowcase() {
               {["A) Informationssammlung", "B) Pflegeplanung", "C) Durchführung", "D) Evaluation"].map((opt, i) => (
                 <div key={i} className={`rounded-xl border p-3 text-sm ${i === 0 ? "border-[#C4877F]/30 bg-[#C4877F]/5 font-medium" : "border-[#E5DFD6]"}`}>
                   {opt}
-                  {i === 0 && <span className="ml-2 text-[10px] text-[#C4877F]">✓ Richtig</span>}
+                  {i === 0 && <span className="ml-2 text-xs text-[#C4877F]">✓ Richtig</span>}
                 </div>
               ))}
             </div>
@@ -853,7 +853,7 @@ export default function UIShowcase() {
         <VariantCard label="2" name="Wahr/Falsch (truefalse)" description="Schnelle Ja/Nein-Entscheidung">
           <div className="py-5">
             <div className="rounded-xl border border-[#E5DFD6] bg-[#fafaf9] p-5 text-center">
-              <div className="mb-1 text-[10px] font-semibold uppercase tracking-wider" style={{ color: RUST }}>Wahr oder Falsch?</div>
+              <div className="mb-1 text-xs font-semibold uppercase tracking-wider" style={{ color: RUST }}>Wahr oder Falsch?</div>
               <p className="mb-5 text-sm font-semibold">&quot;Florence Nightingale begründete die moderne Krankenpflege.&quot;</p>
               <div className="flex justify-center gap-3">
                 <button className="rounded-full border-2 border-[#C4877F]/30 bg-[#C4877F]/5 px-6 py-2 text-sm font-semibold text-[#C4877F]">✓ Wahr</button>
@@ -929,7 +929,7 @@ export default function UIShowcase() {
                 ))}
               </div>
             </div>
-            <div className="mt-2 text-center text-[10px] text-[#86868b]">1/3 Paare gefunden</div>
+            <div className="mt-2 text-center text-xs text-[#86868b]">1/3 Paare gefunden</div>
           </div>
         </VariantCard>
 
@@ -943,14 +943,14 @@ export default function UIShowcase() {
                   i === 2 ? "border-[#BFA48E] bg-[#BFA48E]/5 shadow-md scale-[1.02] -translate-y-0.5" : "border-[#E5DFD6]"
                 }`}>
                   <GripVertical className="h-4 w-4 shrink-0 cursor-grab text-[#b0b0b5] active:text-[#6e6e73]" />
-                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg text-[10px] font-bold text-white" style={{ backgroundColor: SAGE }}>
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg text-xs font-bold text-white" style={{ backgroundColor: SAGE }}>
                     {i + 1}
                   </div>
                   <span className="text-xs font-medium">{item}</span>
                 </div>
               ))}
             </div>
-            <div className="mt-2 text-center text-[10px] text-[#86868b]">≡ Halten & ziehen zum Sortieren</div>
+            <div className="mt-2 text-center text-xs text-[#86868b]">≡ Halten & ziehen zum Sortieren</div>
           </div>
         </VariantCard>
 
@@ -992,7 +992,7 @@ export default function UIShowcase() {
               {["Dekubitus", "Druckgeschwür", "?", "Thrombose", "?", "?", "Kontraktur", "?"].map((text, i) => (
                 <div
                   key={i}
-                  className={`flex h-16 items-center justify-center rounded-xl text-center text-[10px] font-medium transition-all break-words hyphens-auto px-1 ${
+                  className={`flex h-16 items-center justify-center rounded-xl text-center text-xs font-medium transition-all break-words hyphens-auto px-1 ${
                     text === "?"
                       ? "border-2 border-[#E5DFD6] bg-[#E5DFD6]/30 text-[#86868b]"
                       : i < 2
@@ -1004,7 +1004,7 @@ export default function UIShowcase() {
                 </div>
               ))}
             </div>
-            <div className="mt-2 text-center text-[10px] text-[#86868b]">3 Züge · 1/4 Paare gefunden</div>
+            <div className="mt-2 text-center text-xs text-[#86868b]">3 Züge · 1/4 Paare gefunden</div>
           </div>
         </VariantCard>
 
@@ -1099,7 +1099,7 @@ export default function UIShowcase() {
                 <div className="h-1.5 w-6 rounded-full bg-[#E5DFD6]" />
                 <div className="h-1.5 w-6 rounded-full bg-[#E5DFD6]" />
               </div>
-              <span className="text-[10px] text-[#86868b]">Karte 1/3 — wischen →</span>
+              <span className="text-xs text-[#86868b]">Karte 1/3 — wischen →</span>
             </div>
           </div>
         </VariantCard>
@@ -1109,16 +1109,16 @@ export default function UIShowcase() {
           <div className="py-5">
             <div className="mb-3 space-y-2">
               <div className="flex gap-2">
-                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#AE6965]/15 text-[10px] font-bold" style={{ color: RUST }}>P</div>
+                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#AE6965]/15 text-xs font-bold" style={{ color: RUST }}>P</div>
                 <div className="rounded-2xl rounded-tl-sm bg-[#E5DFD6]/40 px-3 py-2 text-xs">Schwester, mir ist schwindelig und ich fühle mich schwach...</div>
               </div>
               <div className="flex justify-end gap-2">
                 <div className="rounded-2xl rounded-tr-sm px-3 py-2 text-xs text-white" style={{ backgroundColor: SAGE }}>Ich messe jetzt Ihren Blutdruck und Puls.</div>
-                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#C4877F]/15 text-[10px] font-bold" style={{ color: SAGE }}>Du</div>
+                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#C4877F]/15 text-xs font-bold" style={{ color: SAGE }}>Du</div>
               </div>
             </div>
             <div className="space-y-1.5">
-              <div className="text-[10px] font-semibold" style={{ color: OAK }}>Wie reagierst du?</div>
+              <div className="text-xs font-semibold" style={{ color: OAK }}>Wie reagierst du?</div>
               {["Vitaldaten erfassen", "Arzt informieren", "Abwarten"].map((opt, i) => (
                 <button key={i} className={`w-full rounded-xl border p-2.5 text-left text-xs transition-all ${i === 0 ? "border-[#BFA48E] bg-[#BFA48E]/10" : "border-[#E5DFD6] hover:bg-[#E5DFD6]/20"}`}>
                   {opt}
@@ -1134,14 +1134,14 @@ export default function UIShowcase() {
             <div className="grid grid-cols-2 gap-3">
               <div className="flex min-h-[100px] flex-col items-center justify-center rounded-2xl border-2 border-[#E5DFD6] bg-white p-4 text-center shadow-sm">
                 <div className="text-xs font-bold" style={{ color: SAGE }}>Dekubitus</div>
-                <div className="mt-1 text-[10px] text-[#86868b]">Antippen zum Umdrehen</div>
+                <div className="mt-1 text-xs text-[#86868b]">Antippen zum Umdrehen</div>
               </div>
               <div className="flex min-h-[100px] flex-col items-center justify-center rounded-2xl border-2 p-4 text-center shadow-sm" style={{ borderColor: SAGE, backgroundColor: `${SAGE}08` }}>
-                <div className="text-[10px] font-semibold" style={{ color: SAGE }}>Definition:</div>
+                <div className="text-xs font-semibold" style={{ color: SAGE }}>Definition:</div>
                 <div className="mt-1 text-[11px] leading-relaxed">Durch Druck verursachte Schädigung der Haut und des darunterliegenden Gewebes</div>
               </div>
             </div>
-            <div className="mt-2 text-center text-[10px] text-[#86868b]">2/6 Karten umgedreht</div>
+            <div className="mt-2 text-center text-xs text-[#86868b]">2/6 Karten umgedreht</div>
           </div>
         </VariantCard>
 
@@ -1157,7 +1157,7 @@ export default function UIShowcase() {
                 { title: "Pflege & Kollegen", revealed: false },
               ].map((card, i) => (
                 <div key={i} className={`rounded-xl border p-3 text-center transition-all ${card.revealed ? "border-[#E5DFD6] bg-white" : "border-dashed border-[#E5DFD6] bg-[#E5DFD6]/20"}`}>
-                  <div className="text-[10px] font-bold" style={{ color: card.revealed ? SAGE : "#86868b" }}>{card.title}</div>
+                  <div className="text-xs font-bold" style={{ color: card.revealed ? SAGE : "#86868b" }}>{card.title}</div>
                   {card.revealed ? (
                     <div className="mt-1 text-[11px]">{card.text}</div>
                   ) : (
@@ -1182,7 +1182,7 @@ export default function UIShowcase() {
               ].map((evt, i) => (
                 <div key={i} className="relative">
                   <div className="absolute -left-[31px] flex h-4 w-4 items-center justify-center rounded-full border-2 border-white" style={{ backgroundColor: evt.color }} />
-                  <div className="text-[10px] font-bold" style={{ color: evt.color }}>{evt.year}</div>
+                  <div className="text-xs font-bold" style={{ color: evt.color }}>{evt.year}</div>
                   <div className="text-xs">{evt.text}</div>
                 </div>
               ))}
@@ -1204,7 +1204,7 @@ export default function UIShowcase() {
                 <p className="text-[11px] leading-relaxed">Umfasst Förderung der Gesundheit, Verhütung von Krankheiten</p>
               </div>
             </div>
-            <div className="mt-2 rounded-xl bg-[#E5DFD6]/20 p-2 text-center text-[10px]">
+            <div className="mt-2 rounded-xl bg-[#E5DFD6]/20 p-2 text-center text-xs">
               <strong>Gemeinsamkeit:</strong> Beide betonen ganzheitliche Versorgung
             </div>
           </div>
@@ -1274,7 +1274,7 @@ export default function UIShowcase() {
               </div>
               <div className="mt-2 flex flex-wrap gap-1">
                 {["Ich war überrascht, dass...", "Mir ist aufgefallen...", "Das wusste ich noch nicht:"].map((s, i) => (
-                  <span key={i} className="rounded-full border border-[#E5DFD6] bg-white px-2.5 py-1 text-[10px] font-medium">{s}</span>
+                  <span key={i} className="rounded-full border border-[#E5DFD6] bg-white px-2.5 py-1 text-xs font-medium">{s}</span>
                 ))}
               </div>
             </div>
@@ -1315,7 +1315,7 @@ export default function UIShowcase() {
                 <div className="absolute left-0 h-full w-[70%] rounded-full" style={{ backgroundColor: SAGE }} />
                 <div className="absolute left-[70%] top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white shadow-md" style={{ backgroundColor: SAGE }} />
               </div>
-              <div className="flex justify-between text-[10px] text-[#86868b]">
+              <div className="flex justify-between text-xs text-[#86868b]">
                 <span>Weniger wichtig</span>
                 <span className="font-semibold" style={{ color: SAGE }}>70%</span>
                 <span>Sehr wichtig</span>
@@ -1337,7 +1337,7 @@ export default function UIShowcase() {
                 readOnly
               />
               <div className="mt-2 flex items-center justify-between">
-                <span className="text-[10px] text-[#86868b]">Min. 20 Wörter · KI-Feedback</span>
+                <span className="text-xs text-[#86868b]">Min. 20 Wörter · KI-Feedback</span>
                 <button className="rounded-lg px-3 py-1.5 text-xs font-semibold text-white" style={{ backgroundColor: SAGE }}>Absenden</button>
               </div>
             </div>
@@ -1348,7 +1348,7 @@ export default function UIShowcase() {
         <VariantCard label="21" name="Branching Scenario (branching)" description="Entscheidungsbaum mit Konsequenzen">
           <div className="py-5">
             <div className="rounded-xl bg-[#E5DFD6]/20 p-4">
-              <div className="mb-1 text-[10px] font-bold uppercase tracking-wider" style={{ color: RUST }}>Fallbeispiel</div>
+              <div className="mb-1 text-xs font-bold uppercase tracking-wider" style={{ color: RUST }}>Fallbeispiel</div>
               <p className="mb-3 text-xs leading-relaxed">
                 <strong>Frau Schmidt, 82 Jahre</strong>, wurde gestern operiert. Sie klingelt und sagt, ihr sei schwindelig. Was tust du zuerst?
               </p>
@@ -1407,11 +1407,11 @@ export default function UIShowcase() {
               <div className="flex justify-center gap-4 mb-4">
                 <div className="text-center">
                   <div className="text-lg font-bold" style={{ color: SAGE }}>87%</div>
-                  <div className="text-[10px] text-[#86868b]">Richtig</div>
+                  <div className="text-xs text-[#86868b]">Richtig</div>
                 </div>
                 <div className="text-center">
                   <div className="text-lg font-bold" style={{ color: OAK }}>+120 XP</div>
-                  <div className="text-[10px] text-[#86868b]">Verdient</div>
+                  <div className="text-xs text-[#86868b]">Verdient</div>
                 </div>
               </div>
               <div className="rounded-xl bg-white/80 p-3 text-left text-xs space-y-1">
@@ -1480,7 +1480,7 @@ export default function UIShowcase() {
               </span>
               <span>.</span>
             </div>
-            <div className="mt-2 flex items-center gap-2 text-[10px] text-[#86868b]">
+            <div className="mt-2 flex items-center gap-2 text-xs text-[#86868b]">
               <span className="inline-block h-2.5 w-2.5 rounded bg-[#A06B63]/10 border border-[#A06B63]/30" /> Fehler gefunden
               <span className="inline-block h-2.5 w-2.5 rounded bg-[#E5DFD6]/50 border border-[#E5DFD6]" /> Noch prüfen
             </div>
@@ -1509,7 +1509,7 @@ export default function UIShowcase() {
                 <circle cx="50" cy="160" r="6" fill={`${SAGE}30`} stroke={SAGE} strokeWidth="1.5" strokeDasharray="3,2" />
                 <circle cx="60" cy="30" r="6" fill={`${SAGE}30`} stroke={SAGE} strokeWidth="1.5" strokeDasharray="3,2" />
               </svg>
-              <div className="mt-1 text-center text-[10px] text-[#86868b]">1/3 Stellen gefunden</div>
+              <div className="mt-1 text-center text-xs text-[#86868b]">1/3 Stellen gefunden</div>
             </div>
           </div>
         </VariantCard>
@@ -1567,13 +1567,13 @@ export default function UIShowcase() {
                   }`}
                 >
                   <GripVertical className="h-4 w-4 shrink-0 cursor-grab text-[#86868b]" />
-                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg text-[10px] font-bold text-white"
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg text-xs font-bold text-white"
                     style={{ backgroundColor: item.correct ? SAGE : RUST }}>
                     {item.pos}
                   </div>
                   <span className="text-xs font-medium">{item.text}</span>
                   {!item.correct && (
-                    <span className="ml-auto text-[10px]" style={{ color: RUST }}>↕ tauschen</span>
+                    <span className="ml-auto text-xs" style={{ color: RUST }}>↕ tauschen</span>
                   )}
                 </div>
               ))}
@@ -1642,7 +1642,7 @@ export default function UIShowcase() {
             </div>
             <div className="mt-2 flex justify-center gap-1.5">
               {["Steißbein", "Schulterblatt", "Knöchel"].map((label, i) => (
-                <span key={i} className="cursor-grab rounded-lg border border-[#E5DFD6] bg-white px-2.5 py-1 text-[10px] font-medium shadow-sm">
+                <span key={i} className="cursor-grab rounded-lg border border-[#E5DFD6] bg-white px-2.5 py-1 text-xs font-medium shadow-sm">
                   {label}
                 </span>
               ))}
@@ -1666,7 +1666,7 @@ export default function UIShowcase() {
                   <Check className="h-3.5 w-3.5 text-[#C4877F]" />
                   <span className="text-xs font-semibold text-[#C4877F]">92% Übereinstimmung</span>
                 </div>
-                <div className="text-[10px] text-[#C4877F]">Erkannt: &quot;Dekubitusprophylaxe&quot; — Super ausgesprochen!</div>
+                <div className="text-xs text-[#C4877F]">Erkannt: &quot;Dekubitusprophylaxe&quot; — Super ausgesprochen!</div>
               </div>
             </div>
           </div>
@@ -1682,7 +1682,7 @@ export default function UIShowcase() {
           <div className="py-5">
             <div className="mb-3 flex items-center justify-between">
               <div className="text-sm font-semibold">Lernaktivität der letzten 12 Wochen</div>
-              <div className="text-[10px] text-[#86868b]">127 Stunden gelernt</div>
+              <div className="text-xs text-[#86868b]">127 Stunden gelernt</div>
             </div>
             <div className="flex gap-[3px]">
               {Array.from({ length: 12 }).map((_, week) => (
@@ -1753,12 +1753,12 @@ export default function UIShowcase() {
                 <div key={col.title} className="rounded-xl bg-[#fafaf9] p-2">
                   <div className="mb-2 flex items-center gap-1.5 px-1">
                     <div className="h-2 w-2 rounded-full" style={{ backgroundColor: col.color }} />
-                    <span className="text-[10px] font-bold">{col.title}</span>
-                    <span className="ml-auto text-[10px] text-[#86868b]">{col.items.length}</span>
+                    <span className="text-xs font-bold">{col.title}</span>
+                    <span className="ml-auto text-xs text-[#86868b]">{col.items.length}</span>
                   </div>
                   <div className="space-y-1.5">
                     {col.items.map((item) => (
-                      <div key={item} className="rounded-lg border border-[#E5DFD6] bg-white p-2 text-[10px] font-medium shadow-sm">
+                      <div key={item} className="rounded-lg border border-[#E5DFD6] bg-white p-2 text-xs font-medium shadow-sm">
                         {item}
                       </div>
                     ))}
@@ -1832,7 +1832,7 @@ export default function UIShowcase() {
               <div className="mb-5 flex items-center justify-center gap-2">
                 {["Sprache", "Erfahrung", "Ziel", "Fertig"].map((step, i) => (
                   <div key={step} className="flex items-center gap-2">
-                    <div className={`flex h-7 w-7 items-center justify-center rounded-full text-[10px] font-bold ${
+                    <div className={`flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold ${
                       i < 2 ? "bg-[#C4877F] text-white" : i === 2 ? "border-2 border-[#C4877F] text-[#C4877F]" : "border-2 border-[#E5DFD6] text-[#86868b]"
                     }`}>
                       {i < 2 ? <Check className="h-3.5 w-3.5" /> : i + 1}
@@ -1843,7 +1843,7 @@ export default function UIShowcase() {
               </div>
               {/* Current step content */}
               <div className="rounded-2xl border border-[#E5DFD6] bg-[#fafaf9] p-5 text-center">
-                <div className="mb-1 text-[10px] font-semibold uppercase tracking-wider" style={{ color: OAK }}>Schritt 3 von 4</div>
+                <div className="mb-1 text-xs font-semibold uppercase tracking-wider" style={{ color: OAK }}>Schritt 3 von 4</div>
                 <div className="mb-3 text-base font-bold">Was ist dein Lernziel?</div>
                 <div className="space-y-2">
                   {["Prüfung bestehen", "Wissen vertiefen", "Sprache verbessern"].map((goal, i) => (
@@ -1867,9 +1867,9 @@ export default function UIShowcase() {
               <span className="relative inline-block">
                 <span className="cursor-pointer rounded border-b-2 border-dashed px-0.5 font-semibold" style={{ borderColor: OAK, color: OAK }}>Dekubitus</span>
                 <div className="absolute -top-[72px] left-1/2 z-10 w-48 -translate-x-1/2 rounded-xl border border-[#E5DFD6] bg-white p-3 shadow-xl">
-                  <div className="text-[10px] font-bold" style={{ color: OAK }}>Dekubitus</div>
-                  <div className="mt-0.5 text-[10px] text-[#86868b]">🇩🇪 Druckgeschwür · 🇹🇷 Basınç yarası</div>
-                  <div className="mt-1 text-[10px] leading-relaxed">Durch anhaltenden Druck verursachte Schädigung der Haut.</div>
+                  <div className="text-xs font-bold" style={{ color: OAK }}>Dekubitus</div>
+                  <div className="mt-0.5 text-xs text-[#86868b]">🇩🇪 Druckgeschwür · 🇹🇷 Basınç yarası</div>
+                  <div className="mt-1 text-xs leading-relaxed">Durch anhaltenden Druck verursachte Schädigung der Haut.</div>
                   <div className="absolute -bottom-1.5 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 border-b border-r border-[#E5DFD6] bg-white" />
                 </div>
               </span>{" "}
@@ -1963,7 +1963,7 @@ export default function UIShowcase() {
           <div className="py-5">
             <div className="mb-3 flex items-center justify-between">
               <div className="text-sm font-semibold">Dein Plan für heute</div>
-              <div className="rounded-full bg-[#C4877F]/10 px-2.5 py-0.5 text-[10px] font-semibold" style={{ color: SAGE }}>4 Blöcke · ~2h</div>
+              <div className="rounded-full bg-[#C4877F]/10 px-2.5 py-0.5 text-xs font-semibold" style={{ color: SAGE }}>4 Blöcke · ~2h</div>
             </div>
             <div className="space-y-2">
               {[
@@ -1978,11 +1978,11 @@ export default function UIShowcase() {
                   block.pause ? "border-dashed border-[#E5DFD6]" :
                   "border-[#E5DFD6]"
                 }`}>
-                  <div className="text-[10px] font-mono font-semibold text-[#86868b] w-10">{block.time}</div>
+                  <div className="text-xs font-mono font-semibold text-[#86868b] w-10">{block.time}</div>
                   <span className="text-base">{block.icon}</span>
                   <div className="flex-1">
                     <div className={`text-xs font-medium ${block.done ? "line-through text-[#86868b]" : ""}`}>{block.title}</div>
-                    <div className="text-[10px] text-[#86868b]">{block.duration}</div>
+                    <div className="text-xs text-[#86868b]">{block.duration}</div>
                   </div>
                   {block.done && <Check className="h-4 w-4 text-[#C4877F]" />}
                   {block.active && <div className="h-2 w-2 animate-pulse rounded-full" style={{ backgroundColor: SAGE }} />}
@@ -2009,7 +2009,7 @@ export default function UIShowcase() {
                   <span className="mt-0.5 text-lg">{notif.icon}</span>
                   <div className="flex-1">
                     <div className="text-xs font-semibold">{notif.title}</div>
-                    <div className="text-[10px] text-[#6e6e73]">{notif.msg}</div>
+                    <div className="text-xs text-[#6e6e73]">{notif.msg}</div>
                   </div>
                   <div className="text-[9px] text-[#86868b] whitespace-nowrap">{notif.time}</div>
                 </div>
@@ -2061,7 +2061,7 @@ export default function UIShowcase() {
                   }`}>
                     {node.icon}
                   </div>
-                  <div className={`mt-1 text-[10px] font-medium ${node.status === "locked" ? "text-[#86868b]" : ""}`}>
+                  <div className={`mt-1 text-xs font-medium ${node.status === "locked" ? "text-[#86868b]" : ""}`}>
                     {node.title}
                   </div>
                 </div>
@@ -2116,7 +2116,7 @@ export default function UIShowcase() {
                   ].map((entry) => (
                     <div key={entry.term} className="flex items-start gap-2 rounded-lg bg-[#fafaf9] p-2">
                       <span className="text-[11px] font-bold" style={{ color: OAK }}>{entry.term}</span>
-                      <span className="text-[10px] text-[#6e6e73]">— {entry.def}</span>
+                      <span className="text-xs text-[#6e6e73]">— {entry.def}</span>
                     </div>
                   ))}
                 </div>
@@ -2132,19 +2132,19 @@ export default function UIShowcase() {
               <div className="mb-3 flex items-center justify-between">
                 <div className="flex items-center gap-1.5">
                   <div className="h-2.5 w-2.5 animate-pulse rounded-full bg-[#A06B63]" />
-                  <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: RUST }}>Prüfungsmodus</span>
+                  <span className="text-xs font-bold uppercase tracking-wider" style={{ color: RUST }}>Prüfungsmodus</span>
                 </div>
                 <div className="rounded-full bg-[#AE6965]/10 px-3 py-1 text-xs font-mono font-bold" style={{ color: RUST }}>
                   23:45
                 </div>
               </div>
-              <div className="mb-1 text-[10px] text-[#86868b]">Frage 12 von 30</div>
+              <div className="mb-1 text-xs text-[#86868b]">Frage 12 von 30</div>
               <div className="mb-2 h-1.5 overflow-hidden rounded-full bg-[#E5DFD6]">
                 <div className="h-full w-[40%] rounded-full" style={{ backgroundColor: RUST }} />
               </div>
               <div className="mb-3 text-sm font-semibold">Nennen Sie drei Prophylaxe-Maßnahmen bei Dekubitusgefahr.</div>
               <textarea className="w-full rounded-xl border border-[#E5DFD6] bg-[#fafaf9] p-3 text-xs" rows={2} placeholder="Antwort eingeben..." readOnly />
-              <div className="mt-2 flex items-center gap-2 text-[10px] text-[#86868b]">
+              <div className="mt-2 flex items-center gap-2 text-xs text-[#86868b]">
                 <AlertCircle className="h-3 w-3" /> Kein Glossar · Kein KI-Tutor · Keine Erklärungen
               </div>
             </div>
@@ -2156,13 +2156,13 @@ export default function UIShowcase() {
           <div className="py-5">
             <div className="mb-3 flex items-center justify-between">
               <div className="text-sm font-semibold">Klasse 1a — 24 Schüler</div>
-              <div className="text-[10px] text-[#86868b]">Heute aktiv: 19</div>
+              <div className="text-xs text-[#86868b]">Heute aktiv: 19</div>
             </div>
             <div className="grid grid-cols-6 gap-1.5 mb-3">
               {Array.from({ length: 24 }).map((_, i) => {
                 const status = i < 4 ? "green" : i < 16 ? "oak" : i < 19 ? "rust" : "gray"
                 return (
-                  <div key={i} className="flex h-9 w-full items-center justify-center rounded-lg text-[10px] font-bold text-white" style={{
+                  <div key={i} className="flex h-9 w-full items-center justify-center rounded-lg text-xs font-bold text-white" style={{
                     backgroundColor: status === "green" ? SAGE : status === "oak" ? OAK : status === "rust" ? RUST : "#c8c8cc"
                   }}>
                     {String.fromCharCode(65 + i)}
@@ -2170,7 +2170,7 @@ export default function UIShowcase() {
                 )
               })}
             </div>
-            <div className="flex gap-3 text-[10px]">
+            <div className="flex gap-3 text-xs">
               <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded" style={{ backgroundColor: SAGE }} /> Prüfungsreif</span>
               <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded" style={{ backgroundColor: OAK }} /> Auf Kurs</span>
               <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded" style={{ backgroundColor: RUST }} /> Braucht Hilfe</span>
@@ -2184,7 +2184,7 @@ export default function UIShowcase() {
           <div className="py-5">
             <div className="mx-auto max-w-sm">
               <div className="mb-3 rounded-2xl border border-[#E5DFD6] bg-white p-5 text-center shadow-sm">
-                <div className="mb-1 text-[10px] font-semibold text-[#86868b]">Wiederholung · Intervall 7 Tage</div>
+                <div className="mb-1 text-xs font-semibold text-[#86868b]">Wiederholung · Intervall 7 Tage</div>
                 <div className="mb-4 text-base font-bold">Was ist eine Kontraktur?</div>
                 <div className="text-xs text-[#86868b]">Tippe um die Antwort zu sehen</div>
               </div>
@@ -2208,7 +2208,7 @@ export default function UIShowcase() {
         {/* 19. Animated Score Counter */}
         <VariantCard label="L19" name="Score-Animation" description="XP-Zähler mit Confetti nach Session-Ende">
           <div className="py-6 text-center">
-            <div className="mb-2 text-[10px] font-semibold uppercase tracking-wider" style={{ color: OAK }}>Session beendet!</div>
+            <div className="mb-2 text-xs font-semibold uppercase tracking-wider" style={{ color: OAK }}>Session beendet!</div>
             <div className="mb-1 text-4xl font-bold" style={{ color: SAGE }}>
               +<NumberTicker value={240} /> XP
             </div>
@@ -2224,7 +2224,7 @@ export default function UIShowcase() {
                 </div>
               ))}
             </div>
-            <div className="mt-1 text-[10px] text-[#86868b]">Level 8 — Noch 60 XP bis Level 9</div>
+            <div className="mt-1 text-xs text-[#86868b]">Level 8 — Noch 60 XP bis Level 9</div>
           </div>
         </VariantCard>
 
@@ -2264,9 +2264,9 @@ export default function UIShowcase() {
                 ))}
               </div>
               <div className="px-5 py-8 text-center">
-                <div className="mb-1 text-[10px] font-semibold text-[#86868b]">WUSSTEST DU?</div>
+                <div className="mb-1 text-xs font-semibold text-[#86868b]">WUSSTEST DU?</div>
                 <div className="mb-3 text-sm font-bold">Florence Nightingale senkte die Sterblichkeit von 42% auf 2%</div>
-                <div className="text-[10px] text-[#6e6e73] leading-relaxed">
+                <div className="text-xs text-[#6e6e73] leading-relaxed">
                   Im Krimkrieg 1854 revolutionierte sie die Hygiene in Lazaretten.
                 </div>
                 <div className="mt-6 text-[9px] text-[#86868b]">← wischen →</div>
@@ -2279,15 +2279,15 @@ export default function UIShowcase() {
         <VariantCard label="L22" name="3D-Karteikarte" description="Echte 3D-Drehung — Vorder- und Rückseite">
           <div className="py-5 flex justify-center gap-4">
             <div className="flex h-40 w-56 flex-col items-center justify-center rounded-2xl border-2 border-[#E5DFD6] bg-white p-4 text-center shadow-lg">
-              <div className="mb-1 text-[10px] font-semibold uppercase tracking-wider" style={{ color: OAK }}>Fachbegriff</div>
+              <div className="mb-1 text-xs font-semibold uppercase tracking-wider" style={{ color: OAK }}>Fachbegriff</div>
               <div className="text-xl font-bold" style={{ color: SAGE }}>Anamnese</div>
-              <div className="mt-3 text-[10px] text-[#86868b]">Antippen zum Umdrehen ↻</div>
+              <div className="mt-3 text-xs text-[#86868b]">Antippen zum Umdrehen ↻</div>
             </div>
             <div className="flex h-40 w-56 flex-col items-center justify-center rounded-2xl border-2 p-4 text-center shadow-lg"
               style={{ borderColor: SAGE, backgroundColor: `${SAGE}08` }}>
-              <div className="mb-1 text-[10px] font-semibold" style={{ color: SAGE }}>Definition</div>
+              <div className="mb-1 text-xs font-semibold" style={{ color: SAGE }}>Definition</div>
               <div className="text-xs leading-relaxed">Systematische Befragung eines Patienten zur Erhebung seiner Krankengeschichte</div>
-              <div className="mt-2 text-[10px]" style={{ color: OAK }}>🇹🇷 Anamnez · 🇬🇧 Anamnesis</div>
+              <div className="mt-2 text-xs" style={{ color: OAK }}>🇹🇷 Anamnez · 🇬🇧 Anamnesis</div>
             </div>
           </div>
         </VariantCard>
@@ -2304,7 +2304,7 @@ export default function UIShowcase() {
                 </svg>
                 <div>
                   <div className="text-3xl font-bold font-mono" style={{ color: SAGE }}>17:04</div>
-                  <div className="text-[10px] text-[#86868b]">Fokus-Phase</div>
+                  <div className="text-xs text-[#86868b]">Fokus-Phase</div>
                 </div>
               </div>
               <div className="mb-3 flex justify-center gap-1.5">
@@ -2312,7 +2312,7 @@ export default function UIShowcase() {
                   <div key={i} className="h-2 w-8 rounded-full" style={{ backgroundColor: i <= 2 ? SAGE : BONE }} />
                 ))}
               </div>
-              <div className="text-[10px] text-[#86868b]">Pomodoro 3 von 4 · Pause in 17 Min</div>
+              <div className="text-xs text-[#86868b]">Pomodoro 3 von 4 · Pause in 17 Min</div>
               <div className="mt-3 flex justify-center gap-2">
                 <button className="rounded-full px-4 py-1.5 text-xs font-semibold text-white" style={{ backgroundColor: SAGE }}>⏸ Pause</button>
                 <button className="rounded-full border border-[#E5DFD6] px-4 py-1.5 text-xs font-medium">⏭ Skip</button>
@@ -2330,12 +2330,12 @@ export default function UIShowcase() {
                 <span className="text-xs font-semibold text-white">KI-Tutor</span>
                 <div className="ml-auto flex items-center gap-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-[#C4877F] animate-pulse" />
-                  <span className="text-[10px] text-white/80">Online</span>
+                  <span className="text-xs text-white/80">Online</span>
                 </div>
               </div>
               <div className="space-y-2 p-3 bg-[#fafaf9]">
                 <div className="flex gap-2">
-                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[10px]" style={{ backgroundColor: `${SAGE}20`, color: SAGE }}>🤖</div>
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs" style={{ backgroundColor: `${SAGE}20`, color: SAGE }}>🤖</div>
                   <div className="rounded-2xl rounded-tl-sm bg-white border border-[#E5DFD6] px-3 py-2 text-[11px] max-w-[80%]">
                     Hallo! Frag mich alles zum Pflegeprozess 👋
                   </div>
@@ -2346,7 +2346,7 @@ export default function UIShowcase() {
                   </div>
                 </div>
                 <div className="flex gap-2">
-                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[10px]" style={{ backgroundColor: `${SAGE}20`, color: SAGE }}>🤖</div>
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs" style={{ backgroundColor: `${SAGE}20`, color: SAGE }}>🤖</div>
                   <div className="rounded-2xl rounded-tl-sm bg-white border border-[#E5DFD6] px-3 py-2 text-[11px] max-w-[80%]">
                     Gute Frage! Die <strong>Pflegediagnose</strong> beschreibt Reaktionen des Patienten. Die <strong>ärztliche Diagnose</strong> benennt die Krankheit.
                   </div>
@@ -2370,7 +2370,7 @@ export default function UIShowcase() {
                 <strong>Fun Fact:</strong> In Deutschland gibt es über 1,7 Mio professionell Pflegende — mehr als Polizisten und Feuerwehrleute zusammen.
               </div>
               <div className="flex items-center gap-1">
-                <span className="text-[10px] text-[#86868b] mr-1">Reaktion:</span>
+                <span className="text-xs text-[#86868b] mr-1">Reaktion:</span>
                 {[
                   { emoji: "🤯", count: 42, active: true },
                   { emoji: "💡", count: 18, active: false },
@@ -2380,7 +2380,7 @@ export default function UIShowcase() {
                   <button key={i} className={`flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] transition-all ${
                     r.active ? "border-[#BFA48E] bg-[#BFA48E]/10" : "border-[#E5DFD6] hover:bg-[#E5DFD6]/30"
                   }`}>
-                    {r.emoji} <span className="text-[10px] font-medium">{r.count}</span>
+                    {r.emoji} <span className="text-xs font-medium">{r.count}</span>
                   </button>
                 ))}
                 <button className="ml-auto rounded-full border border-dashed border-[#E5DFD6] px-2 py-0.5 text-[11px] text-[#86868b]">+</button>
@@ -2432,15 +2432,15 @@ export default function UIShowcase() {
                   </div>
                   <div className="flex flex-1 items-center gap-1.5 rounded-lg border border-dashed border-[#E5DFD6] bg-[#fafaf9] px-2 min-h-[40px]">
                     {row.items.map(item => (
-                      <span key={item} className="rounded-md bg-white border border-[#E5DFD6] px-2 py-1 text-[10px] font-medium shadow-sm">{item}</span>
+                      <span key={item} className="rounded-md bg-white border border-[#E5DFD6] px-2 py-1 text-xs font-medium shadow-sm">{item}</span>
                     ))}
-                    {row.items.length === 0 && <span className="text-[10px] text-[#c8c8cc]">Hierher ziehen...</span>}
+                    {row.items.length === 0 && <span className="text-xs text-[#c8c8cc]">Hierher ziehen...</span>}
                   </div>
                 </div>
               ))}
               <div className="mt-2 flex gap-1.5">
                 {["Bettseitenteil", "Physiotherapie"].map(item => (
-                  <span key={item} className="cursor-grab rounded-md border border-[#E5DFD6] bg-white px-2.5 py-1.5 text-[10px] font-medium shadow-sm">{item}</span>
+                  <span key={item} className="cursor-grab rounded-md border border-[#E5DFD6] bg-white px-2.5 py-1.5 text-xs font-medium shadow-sm">{item}</span>
                 ))}
               </div>
             </div>
@@ -2452,7 +2452,7 @@ export default function UIShowcase() {
           <div className="py-5">
             <div className="mb-3 flex items-center justify-between">
               <div className="text-sm font-semibold">KW 14 — Rückblick</div>
-              <div className="text-[10px] text-[#86868b]">31. März – 4. April</div>
+              <div className="text-xs text-[#86868b]">31. März – 4. April</div>
             </div>
             <div className="grid grid-cols-5 gap-1 mb-3">
               {["Mo", "Di", "Mi", "Do", "Fr"].map((day, i) => {
@@ -2495,7 +2495,7 @@ export default function UIShowcase() {
               <div className="absolute inset-0 rounded-2xl border border-[#E5DFD6] bg-white shadow-sm"
                 style={{ transform: "rotate(2deg) translateY(4px) scale(0.97)", opacity: 0.7 }} />
               <div className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border-2 border-[#E5DFD6] bg-white p-5 shadow-lg">
-                <div className="mb-1 text-[10px] font-semibold" style={{ color: OAK }}>Karte 3 / 12</div>
+                <div className="mb-1 text-xs font-semibold" style={{ color: OAK }}>Karte 3 / 12</div>
                 <div className="mb-3 text-center text-sm font-bold">Was bedeutet &quot;Aspiration&quot;?</div>
                 <div className="text-xs text-center text-[#6e6e73]">Einatmen von Fremdkörpern in die Atemwege</div>
                 <div className="mt-4 flex gap-6">
@@ -2559,11 +2559,11 @@ export default function UIShowcase() {
                     }} />
                   })}
                 </div>
-                <span className="text-[10px] font-mono text-[#86868b]">0:03</span>
+                <span className="text-xs font-mono text-[#86868b]">0:03</span>
               </div>
               <div className="flex items-center gap-2 rounded-lg bg-[#C4877F]/5 border border-[#C4877F]/20 p-2">
                 <Check className="h-3.5 w-3.5 text-[#C4877F] shrink-0" />
-                <span className="text-[10px] text-[#C4877F]"><strong>94%</strong> — &quot;Dekubitusprophylaxe&quot;</span>
+                <span className="text-xs text-[#C4877F]"><strong>94%</strong> — &quot;Dekubitusprophylaxe&quot;</span>
               </div>
             </div>
           </div>
@@ -2636,7 +2636,7 @@ export default function UIShowcase() {
                   <BookOpen className="h-7 w-7" style={{ color: SAGE }} />
                 </div>
                 <div className="text-sm font-bold">CE 01 — Ausbildungsstart</div>
-                <div className="text-[10px] text-[#86868b]">Session 3 von 8</div>
+                <div className="text-xs text-[#86868b]">Session 3 von 8</div>
               </div>
               <div className="mb-3 h-2 overflow-hidden rounded-full"
                 style={{ background: "#e8e2da", boxShadow: "inset 2px 2px 4px #c5c0b8, inset -2px -2px 4px #fffef8" }}>
@@ -2660,7 +2660,7 @@ export default function UIShowcase() {
                 </div>
                 <div>
                   <div className="text-sm font-bold">Pflege-Azubi</div>
-                  <div className="text-[10px] text-[#86868b]">Level 8 · 2.450 XP</div>
+                  <div className="text-xs text-[#86868b]">Level 8 · 2.450 XP</div>
                   <div className="mt-1 h-2 w-32 overflow-hidden rounded-full bg-[#E5DFD6]">
                     <div className="h-full w-[60%] rounded-full" style={{ backgroundColor: OAK }} />
                   </div>
@@ -2698,7 +2698,7 @@ export default function UIShowcase() {
                 <div className="text-center">
                   <div className="text-4xl mb-2">🫁</div>
                   <div className="text-xs font-semibold" style={{ color: ROSE }}>Lunge — Anatomie</div>
-                  <div className="text-[10px] text-[#86868b]">Illustration: Servier Medical Art</div>
+                  <div className="text-xs text-[#86868b]">Illustration: Servier Medical Art</div>
                 </div>
               </div>
               <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5">
@@ -2720,7 +2720,7 @@ export default function UIShowcase() {
           <div className="py-5">
             <div className="mb-3 flex items-center justify-between">
               <span className="text-sm font-semibold">April 2026</span>
-              <span className="text-[10px]" style={{ color: ROSE }}>🔥 12 Tage Streak</span>
+              <span className="text-xs" style={{ color: ROSE }}>🔥 12 Tage Streak</span>
             </div>
             <div className="grid grid-cols-7 gap-1 text-center text-[9px]">
               {["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"].map(d => (
@@ -2732,7 +2732,7 @@ export default function UIShowcase() {
                 const learned = [1,2,3,5,6,7,8,9,10,12,13,14,15,16,17,19,20,21,22,23,24,26,27].includes(d)
                 const today = d === 3
                 return (
-                  <div key={d} className={`flex h-7 items-center justify-center rounded-lg text-[10px] font-medium ${
+                  <div key={d} className={`flex h-7 items-center justify-center rounded-lg text-xs font-medium ${
                     today ? "ring-2 font-bold" : ""
                   }`} style={{
                     backgroundColor: learned ? `${ROSE}${d > 20 ? "30" : "20"}` : "transparent",
@@ -2789,17 +2789,17 @@ export default function UIShowcase() {
                 <div className="bg-[${BONE}]/50 p-4 text-center">
                   <div className="mb-1 text-2xl">🟡</div>
                   <div className="text-xs font-bold" style={{ color: OAK }}>Grad 1</div>
-                  <div className="text-[10px] text-[#86868b]">Hautrötung, nicht wegdrückbar</div>
+                  <div className="text-xs text-[#86868b]">Hautrötung, nicht wegdrückbar</div>
                 </div>
                 <div className="p-4 text-center" style={{ backgroundColor: `${MAUVE}08` }}>
                   <div className="mb-1 text-2xl">🔴</div>
                   <div className="text-xs font-bold" style={{ color: MAUVE }}>Grad 3</div>
-                  <div className="text-[10px] text-[#86868b]">Tiefe Gewebeschädigung</div>
+                  <div className="text-xs text-[#86868b]">Tiefe Gewebeschädigung</div>
                 </div>
               </div>
               <div className="absolute inset-y-0 left-1/2 flex -translate-x-1/2 items-center">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-lg border-2" style={{ borderColor: SAND }}>
-                  <span className="text-[10px] font-bold text-[#86868b]">⟷</span>
+                  <span className="text-xs font-bold text-[#86868b]">⟷</span>
                 </div>
               </div>
             </div>
@@ -2899,7 +2899,7 @@ export default function UIShowcase() {
                   </div>
                 </div>
                 <div className="text-sm font-bold">Fast prüfungsreif</div>
-                <div className="text-[10px] text-[#86868b]">Noch 2-3 Themen wiederholen</div>
+                <div className="text-xs text-[#86868b]">Noch 2-3 Themen wiederholen</div>
               </div>
               <div className="space-y-1.5">
                 {[
@@ -2919,7 +2919,7 @@ export default function UIShowcase() {
                         backgroundColor: item.status === "ready" ? ROSE : item.status === "almost" ? OAK : MAUVE
                       }} />
                     </div>
-                    <span className="text-[10px] font-bold w-8 text-right" style={{
+                    <span className="text-xs font-bold w-8 text-right" style={{
                       color: item.status === "ready" ? ROSE : item.status === "almost" ? OAK : MAUVE
                     }}>{item.pct}%</span>
                   </div>
@@ -2940,13 +2940,13 @@ export default function UIShowcase() {
               <div className="flex items-center gap-4 mb-3">
                 <div className="flex-1 text-center">
                   <div className="mx-auto mb-1 flex h-10 w-10 items-center justify-center rounded-full text-lg" style={{ backgroundColor: `${ROSE}15` }}>👩‍⚕️</div>
-                  <div className="text-[10px] font-bold">Du</div>
+                  <div className="text-xs font-bold">Du</div>
                   <div className="text-lg font-bold" style={{ color: ROSE }}>340 XP</div>
                 </div>
                 <div className="text-xs font-bold text-[#86868b]">VS</div>
                 <div className="flex-1 text-center">
                   <div className="mx-auto mb-1 flex h-10 w-10 items-center justify-center rounded-full text-lg" style={{ backgroundColor: `${OAK}15` }}>👨‍⚕️</div>
-                  <div className="text-[10px] font-bold">Lern-Partner</div>
+                  <div className="text-xs font-bold">Lern-Partner</div>
                   <div className="text-lg font-bold" style={{ color: OAK }}>285 XP</div>
                 </div>
               </div>
@@ -2967,7 +2967,7 @@ export default function UIShowcase() {
               <div className="text-center mb-4">
                 <div className="text-2xl mb-1">🌅</div>
                 <div className="text-sm font-bold">Guten Abend!</div>
-                <div className="text-[10px] text-[#86868b]">Das hast du heute geschafft:</div>
+                <div className="text-xs text-[#86868b]">Das hast du heute geschafft:</div>
               </div>
               <div className="grid grid-cols-3 gap-2 mb-4">
                 <div className="rounded-xl bg-white/80 p-2 text-center shadow-sm">
@@ -3011,7 +3011,7 @@ export default function UIShowcase() {
                   borderColor: step.done ? `${ROSE}30` : step.active ? ROSE : SAND,
                   backgroundColor: step.done ? `${ROSE}05` : step.active ? `${ROSE}08` : "white",
                 }}>
-                  <div className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[10px] font-bold ${
+                  <div className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold ${
                     step.done ? "text-white" : ""
                   }`} style={{
                     backgroundColor: step.done ? ROSE : step.active ? `${ROSE}20` : BONE,
@@ -3034,7 +3034,7 @@ export default function UIShowcase() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-full text-xl" style={{ backgroundColor: `${ROSE}15` }}>👵</div>
                 <div>
                   <div className="text-sm font-bold">Frau Helga Schmidt, 82 J.</div>
-                  <div className="text-[10px] text-[#86868b]">Station 3B · Zimmer 214 · Tag 5</div>
+                  <div className="text-xs text-[#86868b]">Station 3B · Zimmer 214 · Tag 5</div>
                 </div>
               </div>
               <div className="p-4 space-y-2 text-[11px]">
@@ -3077,7 +3077,7 @@ export default function UIShowcase() {
           <div className="py-5">
             <div className="mx-auto max-w-sm rounded-2xl border-2 border-dashed p-5 text-center" style={{ borderColor: OAK, backgroundColor: `${OAK}05` }}>
               <div className="mb-2 text-2xl">🧠💡</div>
-              <div className="mb-1 text-[10px] font-bold uppercase tracking-wider" style={{ color: OAK }}>Merkhilfe</div>
+              <div className="mb-1 text-xs font-bold uppercase tracking-wider" style={{ color: OAK }}>Merkhilfe</div>
               <div className="text-base font-bold mb-2">
                 {["A", "T", "L"].map((letter, i) => (
                   <span key={i}>
@@ -3107,7 +3107,7 @@ export default function UIShowcase() {
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2.5 rounded-xl border px-3 py-2" style={{ borderColor: SAND }}>
                   <span className="text-base">{item.emoji}</span>
-                  <div className="flex-1 text-[10px]">
+                  <div className="flex-1 text-xs">
                     <span className="font-semibold">{item.name}</span>{" "}
                     <span className="text-[#6e6e73]">{item.action}</span>
                   </div>
@@ -3129,7 +3129,7 @@ export default function UIShowcase() {
               {/* Tab Header */}
               <div className="flex border-b" style={{ borderColor: SAND, backgroundColor: `${BONE}50` }}>
                 {["Stamm", "Anamnese", "Befunde", "Verlauf", "Pflege"].map((tab, i) => (
-                  <button key={tab} className="flex-1 py-2.5 text-[10px] font-semibold transition-all border-b-2"
+                  <button key={tab} className="flex-1 py-2.5 text-xs font-semibold transition-all border-b-2"
                     style={{
                       borderColor: i === 1 ? ROSE : "transparent",
                       color: i === 1 ? ROSE : "#86868b",
@@ -3145,15 +3145,15 @@ export default function UIShowcase() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-full text-lg" style={{ backgroundColor: `${ROSE}10` }}>👵</div>
                   <div>
                     <div className="text-sm font-bold">Frau Helga Schmidt, 82 J.</div>
-                    <div className="text-[10px] text-[#86868b]">Aufnahme: 28.03.2026 · Station 3B</div>
+                    <div className="text-xs text-[#86868b]">Aufnahme: 28.03.2026 · Station 3B</div>
                   </div>
                 </div>
                 <div>
-                  <div className="text-[10px] font-bold mb-1" style={{ color: OAK }}>Hauptdiagnose</div>
+                  <div className="text-xs font-bold mb-1" style={{ color: OAK }}>Hauptdiagnose</div>
                   <div className="text-xs">Schenkelhalsfraktur rechts, Z.n. Hüft-TEP (30.03.)</div>
                 </div>
                 <div>
-                  <div className="text-[10px] font-bold mb-1" style={{ color: OAK }}>Nebendiagnosen</div>
+                  <div className="text-xs font-bold mb-1" style={{ color: OAK }}>Nebendiagnosen</div>
                   <div className="flex flex-wrap gap-1">
                     {["Diabetes Typ 2", "Hypertonie", "Osteoporose"].map(d => (
                       <span key={d} className="rounded-full px-2 py-0.5 text-[9px] font-medium" style={{ backgroundColor: `${BLUSH}20`, color: MAUVE }}>{d}</span>
@@ -3161,13 +3161,13 @@ export default function UIShowcase() {
                   </div>
                 </div>
                 <div>
-                  <div className="text-[10px] font-bold mb-1" style={{ color: OAK }}>Allergien</div>
+                  <div className="text-xs font-bold mb-1" style={{ color: OAK }}>Allergien</div>
                   <div className="flex gap-1">
                     <span className="rounded-full px-2 py-0.5 text-[9px] font-bold" style={{ backgroundColor: `${MAUVE}10`, color: MAUVE }}>⚠ Penicillin</span>
                   </div>
                 </div>
                 <div>
-                  <div className="text-[10px] font-bold mb-1" style={{ color: OAK }}>Sozialanamnese</div>
+                  <div className="text-xs font-bold mb-1" style={{ color: OAK }}>Sozialanamnese</div>
                   <div className="text-[11px] text-[#6e6e73]">Lebt allein, Tochter kommt 2x/Woche. Wohnung 2. OG ohne Aufzug. Vor Sturz selbstständig mobil mit Rollator.</div>
                 </div>
               </div>
@@ -3183,7 +3183,7 @@ export default function UIShowcase() {
               <div className="rounded-xl p-3 mb-3 text-xs leading-relaxed" style={{ backgroundColor: `${ROSE}05`, border: `1px solid ${ROSE}20` }}>
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-base">🏥</span>
-                  <span className="text-[10px] font-bold" style={{ color: ROSE }}>SITUATION</span>
+                  <span className="text-xs font-bold" style={{ color: ROSE }}>SITUATION</span>
                 </div>
                 Du kommst in Zimmer 214. Frau Schmidt sitzt im Bett, hält sich den Kopf und sagt: <em>&quot;Mir ist so schwindelig, Schwester.&quot;</em> Ihr Gesicht ist blass.
               </div>
@@ -3191,13 +3191,13 @@ export default function UIShowcase() {
               <div className="flex items-center gap-2 mb-2 ml-4">
                 <div className="h-6 w-0.5" style={{ backgroundColor: ROSE }} />
               </div>
-              <div className="rounded-xl p-2 mb-2 ml-4 text-[10px]" style={{ backgroundColor: `${ROSE}08`, border: `1px solid ${ROSE}15` }}>
+              <div className="rounded-xl p-2 mb-2 ml-4 text-xs" style={{ backgroundColor: `${ROSE}08`, border: `1px solid ${ROSE}15` }}>
                 <Check className="inline h-3 w-3 mr-1" style={{ color: ROSE }} />
                 <span className="font-semibold">Deine Wahl:</span> Vitaldaten messen
               </div>
               {/* Result */}
               <div className="rounded-xl p-3 mb-3 ml-4 text-xs" style={{ backgroundColor: `${OAK}05`, border: `1px solid ${OAK}20` }}>
-                <div className="text-[10px] font-bold mb-1" style={{ color: OAK }}>ERGEBNIS</div>
+                <div className="text-xs font-bold mb-1" style={{ color: OAK }}>ERGEBNIS</div>
                 <div className="grid grid-cols-3 gap-2 text-center mb-2">
                   <div className="rounded-lg p-1.5" style={{ backgroundColor: `${MAUVE}08` }}>
                     <div className="text-xs font-bold" style={{ color: MAUVE }}>85/50</div>
@@ -3215,7 +3215,7 @@ export default function UIShowcase() {
                 Der Blutdruck ist deutlich zu niedrig. Frau Schmidt fühlt sich noch schwächer.
               </div>
               {/* Next choices */}
-              <div className="text-[10px] font-bold mb-2 ml-4" style={{ color: ROSE }}>Was tust du jetzt?</div>
+              <div className="text-xs font-bold mb-2 ml-4" style={{ color: ROSE }}>Was tust du jetzt?</div>
               <div className="space-y-1.5 ml-4">
                 {[
                   { text: "Flachlagerung + Beine hoch", icon: "🛏️", hint: "Kreislauf stabilisieren" },
@@ -3243,12 +3243,12 @@ export default function UIShowcase() {
           <div className="py-5">
             <div className="mx-auto max-w-sm">
               <div className="rounded-xl p-3 mb-3 text-xs" style={{ backgroundColor: `${OAK}05`, border: `1px solid ${OAK}20` }}>
-                <div className="text-[10px] font-bold mb-1" style={{ color: OAK }}>Aufgabe</div>
+                <div className="text-xs font-bold mb-1" style={{ color: OAK }}>Aufgabe</div>
                 Dokumentiere die Situation mit Frau Schmidt. Beschreibe: Was hast du beobachtet? Was hast du getan? Wie hat die Patientin reagiert?
               </div>
               <div className="rounded-xl border p-3 mb-2" style={{ borderColor: SAND }}>
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-[10px] font-bold" style={{ color: TAUPE }}>Pflegebericht</span>
+                  <span className="text-xs font-bold" style={{ color: TAUPE }}>Pflegebericht</span>
                   <span className="text-[9px] text-[#86868b]">28.03.2026, 14:30 Uhr</span>
                 </div>
                 <div className="rounded-lg border p-2 text-xs leading-relaxed" style={{ borderColor: SAND, backgroundColor: "#fafaf9" }}>
@@ -3256,14 +3256,14 @@ export default function UIShowcase() {
                 </div>
                 <div className="flex justify-between items-center mt-2">
                   <span className="text-[9px] text-[#86868b]">47 Wörter · Min. 30</span>
-                  <button className="rounded-lg px-3 py-1 text-[10px] font-semibold text-white" style={{ backgroundColor: ROSE }}>KI-Feedback</button>
+                  <button className="rounded-lg px-3 py-1 text-xs font-semibold text-white" style={{ backgroundColor: ROSE }}>KI-Feedback</button>
                 </div>
               </div>
               {/* KI Feedback */}
               <div className="rounded-xl p-3 space-y-2" style={{ backgroundColor: `${ROSE}05`, border: `1px solid ${ROSE}15` }}>
                 <div className="flex items-center gap-1.5">
                   <Brain className="h-3.5 w-3.5" style={{ color: ROSE }} />
-                  <span className="text-[10px] font-bold" style={{ color: ROSE }}>KI-Feedback</span>
+                  <span className="text-xs font-bold" style={{ color: ROSE }}>KI-Feedback</span>
                 </div>
                 <div className="text-[11px] leading-relaxed space-y-1.5">
                   <div className="flex gap-2"><span>👍</span><span><strong>Gut:</strong> Vitaldaten korrekt dokumentiert, Maßnahme beschrieben.</span></div>
@@ -3288,10 +3288,10 @@ export default function UIShowcase() {
               ].map((item) => (
                 <div key={item.step} className="rounded-xl border p-3" style={{ borderColor: `${item.color}30`, backgroundColor: `${item.color}05` }}>
                   <div className="flex items-center gap-2 mb-1.5">
-                    <div className="flex h-6 w-6 items-center justify-center rounded-lg text-[10px] font-bold text-white" style={{ backgroundColor: item.color }}>
+                    <div className="flex h-6 w-6 items-center justify-center rounded-lg text-xs font-bold text-white" style={{ backgroundColor: item.color }}>
                       {item.step}
                     </div>
-                    <span className="text-[10px] font-bold" style={{ color: item.color }}>{item.label}</span>
+                    <span className="text-xs font-bold" style={{ color: item.color }}>{item.label}</span>
                   </div>
                   {item.text && <div className="text-[11px] leading-relaxed text-[#4a4a4a]">{item.text}</div>}
                   {item.items && (
@@ -3408,7 +3408,7 @@ export default function UIShowcase() {
                     {item.letter}
                   </div>
                   <div>
-                    <div className="text-[10px] font-bold mb-0.5" style={{ color: item.color }}>{item.title}</div>
+                    <div className="text-xs font-bold mb-0.5" style={{ color: item.color }}>{item.title}</div>
                     <div className="text-[11px] leading-relaxed text-[#4a4a4a]">{item.content}</div>
                   </div>
                 </div>
@@ -3421,12 +3421,12 @@ export default function UIShowcase() {
         <VariantCard label="L58" name="Angehörigen-Gespräch" description="Dialog-Simulation mit der Tochter der Patientin">
           <div className="py-5">
             <div className="mx-auto max-w-sm">
-              <div className="rounded-xl p-2 mb-3 text-[10px] text-center" style={{ backgroundColor: `${BLUSH}15`, color: MAUVE }}>
+              <div className="rounded-xl p-2 mb-3 text-xs text-center" style={{ backgroundColor: `${BLUSH}15`, color: MAUVE }}>
                 📞 Anruf von Tochter Frau Müller
               </div>
               <div className="space-y-2 mb-3">
                 <div className="flex gap-2">
-                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[10px]" style={{ backgroundColor: `${BLUSH}20`, color: MAUVE }}>👩</div>
+                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs" style={{ backgroundColor: `${BLUSH}20`, color: MAUVE }}>👩</div>
                   <div className="rounded-2xl rounded-tl-sm px-3 py-2 text-[11px]" style={{ backgroundColor: `${BONE}` }}>
                     Hallo, ich bin die Tochter. Wie geht es meiner Mutter? Mir wurde gesagt, sie hatte einen Schwächeanfall?
                   </div>
@@ -3435,16 +3435,16 @@ export default function UIShowcase() {
                   <div className="rounded-2xl rounded-tr-sm px-3 py-2 text-[11px] text-white" style={{ backgroundColor: ROSE }}>
                     Guten Tag Frau Müller. Ihrer Mutter geht es jetzt besser. Sie hatte einen kurzzeitigen Blutdruckabfall.
                   </div>
-                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[10px]" style={{ backgroundColor: `${ROSE}20`, color: ROSE }}>Du</div>
+                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs" style={{ backgroundColor: `${ROSE}20`, color: ROSE }}>Du</div>
                 </div>
                 <div className="flex gap-2">
-                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[10px]" style={{ backgroundColor: `${BLUSH}20`, color: MAUVE }}>👩</div>
+                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs" style={{ backgroundColor: `${BLUSH}20`, color: MAUVE }}>👩</div>
                   <div className="rounded-2xl rounded-tl-sm px-3 py-2 text-[11px]" style={{ backgroundColor: `${BONE}` }}>
                     Oh nein! Ist das gefährlich? Muss ich kommen? Was hat das zu bedeuten?
                   </div>
                 </div>
               </div>
-              <div className="text-[10px] font-semibold mb-1.5" style={{ color: OAK }}>Wie antwortest du? (Empathisch + informativ)</div>
+              <div className="text-xs font-semibold mb-1.5" style={{ color: OAK }}>Wie antwortest du? (Empathisch + informativ)</div>
               <div className="space-y-1.5">
                 {[
                   "Beruhigen: Werte haben sich stabilisiert, Ärztin ist informiert",
@@ -3467,7 +3467,7 @@ export default function UIShowcase() {
             <div className="mx-auto max-w-sm">
               <div className="mb-3 flex items-center justify-between">
                 <div className="text-sm font-semibold">Braden-Skala: Dekubitusrisiko</div>
-                <div className="rounded-full px-2.5 py-0.5 text-[10px] font-bold" style={{ backgroundColor: `${MAUVE}10`, color: MAUVE }}>Score: 14 — Risiko!</div>
+                <div className="rounded-full px-2.5 py-0.5 text-xs font-bold" style={{ backgroundColor: `${MAUVE}10`, color: MAUVE }}>Score: 14 — Risiko!</div>
               </div>
               <div className="space-y-1.5">
                 {[
@@ -3479,7 +3479,7 @@ export default function UIShowcase() {
                   { label: "Reibung / Scherkräfte", value: 1, max: 3, desc: "Problem" },
                 ].map((item) => (
                   <div key={item.label} className="flex items-center gap-2 rounded-lg border p-2" style={{ borderColor: SAND }}>
-                    <div className="w-28 text-[10px] font-medium">{item.label}</div>
+                    <div className="w-28 text-xs font-medium">{item.label}</div>
                     <div className="flex gap-0.5 flex-1">
                       {Array.from({ length: item.max }).map((_, i) => (
                         <div key={i} className="h-3 flex-1 rounded-sm" style={{
@@ -3487,7 +3487,7 @@ export default function UIShowcase() {
                         }} />
                       ))}
                     </div>
-                    <div className="w-6 text-center text-[10px] font-bold" style={{ color: item.value <= 2 ? MAUVE : OAK }}>{item.value}</div>
+                    <div className="w-6 text-center text-xs font-bold" style={{ color: item.value <= 2 ? MAUVE : OAK }}>{item.value}</div>
                   </div>
                 ))}
               </div>
@@ -3534,7 +3534,7 @@ export default function UIShowcase() {
               </div>
               {/* Verlauf mini-chart */}
               <div className="rounded-xl border p-3" style={{ borderColor: SAND }}>
-                <div className="text-[10px] font-bold mb-2" style={{ color: OAK }}>Größenverlauf (cm²)</div>
+                <div className="text-xs font-bold mb-2" style={{ color: OAK }}>Größenverlauf (cm²)</div>
                 <div className="flex items-end gap-1 h-10">
                   {[5.2, 4.8, 4.5, 4.5, 4.1, 3.8].map((v, i) => (
                     <div key={i} className="flex-1 rounded-t-sm" style={{
@@ -3557,7 +3557,7 @@ export default function UIShowcase() {
           <div className="py-5">
             <div className="mx-auto max-w-sm">
               <div className="rounded-xl p-3 mb-3" style={{ backgroundColor: `${ROSE}05`, border: `1px solid ${ROSE}15` }}>
-                <div className="text-[10px] font-bold mb-1" style={{ color: ROSE }}>🎯 Aufgabe</div>
+                <div className="text-xs font-bold mb-1" style={{ color: ROSE }}>🎯 Aufgabe</div>
                 <div className="text-xs leading-relaxed">
                   Frau Schmidt fragt: <em>&quot;Warum muss ich diese Strümpfe tragen? Die drücken so!&quot;</em><br />
                   Erkläre ihr in <strong>einfacher Sprache</strong> die Thromboseprophylaxe.
@@ -3566,7 +3566,7 @@ export default function UIShowcase() {
               <div className="rounded-2xl border-2 border-dashed p-5 text-center" style={{ borderColor: ROSE }}>
                 <Mic className="mx-auto h-8 w-8 mb-2" style={{ color: ROSE }} />
                 <div className="text-xs font-semibold mb-1">Sprich deine Antwort laut aus</div>
-                <div className="text-[10px] text-[#86868b]">Whisper STT erkennt deine Sprache</div>
+                <div className="text-xs text-[#86868b]">Whisper STT erkennt deine Sprache</div>
                 <button className="mt-3 rounded-full px-5 py-2 text-xs font-semibold text-white" style={{ backgroundColor: ROSE }}>
                   🎙️ Aufnahme starten
                 </button>
@@ -3594,7 +3594,7 @@ export default function UIShowcase() {
           <div className="py-5">
             <div className="mx-auto max-w-sm">
               <div className="rounded-xl p-4 mb-3" style={{ backgroundColor: `${MAUVE}05`, border: `1px solid ${MAUVE}15` }}>
-                <div className="text-[10px] font-bold mb-1" style={{ color: MAUVE }}>⚖️ Ethisches Dilemma</div>
+                <div className="text-xs font-bold mb-1" style={{ color: MAUVE }}>⚖️ Ethisches Dilemma</div>
                 <div className="text-xs leading-relaxed">
                   Frau Schmidt möchte unbedingt allein zur Toilette gehen. Sie sagt: <em>&quot;Ich bin doch kein Kind! Ich will das alleine schaffen.&quot;</em> Sie hat aber Sturzgefahr. Ihr Wunsch nach Autonomie steht gegen Ihre Fürsorgepflicht.
                 </div>
@@ -3608,15 +3608,15 @@ export default function UIShowcase() {
                   <div key={item.principle} className="rounded-xl border p-3" style={{ borderColor: `${item.color}25` }}>
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-sm">{item.icon}</span>
-                      <span className="text-[10px] font-bold" style={{ color: item.color }}>{item.principle}</span>
+                      <span className="text-xs font-bold" style={{ color: item.color }}>{item.principle}</span>
                     </div>
                     <div className="text-[11px] text-[#4a4a4a]">{item.arg}</div>
                   </div>
                 ))}
               </div>
               <div className="rounded-xl p-3 text-center" style={{ backgroundColor: `${BONE}` }}>
-                <div className="text-[10px] font-bold mb-1" style={{ color: TAUPE }}>Deine Position?</div>
-                <div className="text-[10px] text-[#86868b]">Es gibt keine &quot;richtige&quot; Antwort — begründe deine Abwägung</div>
+                <div className="text-xs font-bold mb-1" style={{ color: TAUPE }}>Deine Position?</div>
+                <div className="text-xs text-[#86868b]">Es gibt keine &quot;richtige&quot; Antwort — begründe deine Abwägung</div>
               </div>
             </div>
           </div>
@@ -3638,7 +3638,7 @@ export default function UIShowcase() {
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-[9px] font-bold rounded px-1.5 py-0.5 text-white" style={{ backgroundColor: ROSE }}>{item.kb}</span>
                     <span className="text-[11px] font-semibold">{item.name}</span>
-                    <span className="ml-auto text-[10px] font-bold" style={{ color: ROSE }}>{item.pct}%</span>
+                    <span className="ml-auto text-xs font-bold" style={{ color: ROSE }}>{item.pct}%</span>
                   </div>
                   <div className="h-1 overflow-hidden rounded-full mb-1.5" style={{ backgroundColor: BONE }}>
                     <div className="h-full rounded-full" style={{ width: `${item.pct}%`, backgroundColor: ROSE }} />
@@ -3661,7 +3661,7 @@ export default function UIShowcase() {
               <div className="p-5 text-center" style={{ background: `linear-gradient(to bottom, ${ROSE}10, white)` }}>
                 <div className="text-3xl mb-2">📋</div>
                 <div className="text-base font-bold mb-0.5">Fallarbeit abgeschlossen!</div>
-                <div className="text-[10px] text-[#86868b]">Fall &quot;Frau Schmidt&quot; · 12 Stationen · 35 Min</div>
+                <div className="text-xs text-[#86868b]">Fall &quot;Frau Schmidt&quot; · 12 Stationen · 35 Min</div>
               </div>
               <div className="p-4 space-y-3">
                 <div className="grid grid-cols-3 gap-2 text-center">
@@ -3706,7 +3706,7 @@ export default function UIShowcase() {
                 <p>&quot;Mittags wurde mir plötzlich schwarz vor Augen. Ich hatte solche Angst. Aber die Schwester war sofort da und hat ganz ruhig meinen Blutdruck gemessen. Das hat mich beruhigt.&quot;</p>
                 <p>&quot;Am Nachmittag hat meine Tochter angerufen. Ich hoffe sie macht sich nicht zu viele Sorgen...&quot;</p>
               </div>
-              <div className="mt-3 rounded-xl p-2 text-center text-[10px]" style={{ backgroundColor: `${TAUPE}08` }}>
+              <div className="mt-3 rounded-xl p-2 text-center text-xs" style={{ backgroundColor: `${TAUPE}08` }}>
                 <span className="font-bold" style={{ color: TAUPE }}>Reflexion:</span> Was sagt dir dieser Eintrag über Frau Schmidts Bedürfnisse?
               </div>
             </div>
@@ -3823,7 +3823,7 @@ export default function UIShowcase() {
               </div>
               <div className="flex items-center justify-between px-4 py-3">
                 <span className="text-[11px] font-medium" style={{ color: MAUVE }}>Dekubitus-Prädilektionsstellen</span>
-                <button className="flex items-center gap-1 rounded-full px-3 py-1 text-[10px] font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>
+                <button className="flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>
                   <ZoomIn className="h-3 w-3" /> Vergrößern
                 </button>
               </div>
@@ -3861,7 +3861,7 @@ export default function UIShowcase() {
                 </div>
                 <div className="mt-3 flex items-center gap-2">
                   <Mic className="h-4 w-4" style={{ color: ROSE }} />
-                  <span className="text-[10px]" style={{ color: ROSE }}>Oder: Sprich deine Antwort ein</span>
+                  <span className="text-xs" style={{ color: ROSE }}>Oder: Sprich deine Antwort ein</span>
                 </div>
               </div>
             </div>
@@ -3928,7 +3928,7 @@ export default function UIShowcase() {
                     })}
                   </div>
                 </div>
-                <span className="text-[10px] font-medium text-[#86868b]">1:23</span>
+                <span className="text-xs font-medium text-[#86868b]">1:23</span>
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex gap-1">
@@ -3936,7 +3936,7 @@ export default function UIShowcase() {
                   <button className="rounded-full px-2 py-0.5 text-[9px] text-[#86868b]" style={{ backgroundColor: `${SAND}40` }}>1.5×</button>
                   <button className="rounded-full px-2 py-0.5 text-[9px] text-[#86868b]" style={{ backgroundColor: `${SAND}40` }}>2×</button>
                 </div>
-                <button className="flex items-center gap-1 text-[10px]" style={{ color: ROSE }}>
+                <button className="flex items-center gap-1 text-xs" style={{ color: ROSE }}>
                   <SkipForward className="h-3 w-3" /> Kapitel
                 </button>
               </div>
@@ -3952,7 +3952,7 @@ export default function UIShowcase() {
                 <FileAudio className="h-5 w-5" style={{ color: OAK }} />
                 <div>
                   <p className="text-[11px] font-semibold">Du hast gerade gehört:</p>
-                  <p className="text-[10px] text-[#86868b]">Dekubitus-Prophylaxe — Die 5 wichtigsten Maßnahmen</p>
+                  <p className="text-xs text-[#86868b]">Dekubitus-Prophylaxe — Die 5 wichtigsten Maßnahmen</p>
                 </div>
                 <Check className="ml-auto h-4 w-4" style={{ color: ROSE }} />
               </div>
@@ -3960,7 +3960,7 @@ export default function UIShowcase() {
                 <p className="mb-3 text-xs font-semibold" style={{ color: MAUVE }}>🎧 Was war die wichtigste Prophylaxe-Maßnahme?</p>
                 {["Regelmäßige Lagerungswechsel", "Hautpflege mit Creme", "Schmerzmedikation", "Bettruhe einhalten"].map((opt, i) => (
                   <div key={i} className="mb-2 flex items-center gap-3 rounded-lg px-3 py-2.5 text-xs" style={{ backgroundColor: i === 0 ? `${ROSE}12` : `${BONE}`, border: `1px solid ${i === 0 ? ROSE : "transparent"}`, color: i === 0 ? ROSE : "#1d1d1f", fontWeight: i === 0 ? 600 : 400 }}>
-                    <div className="flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-bold" style={{ backgroundColor: i === 0 ? ROSE : SAND, color: i === 0 ? "white" : "#86868b" }}>
+                    <div className="flex h-5 w-5 items-center justify-center rounded-full text-xs font-bold" style={{ backgroundColor: i === 0 ? ROSE : SAND, color: i === 0 ? "white" : "#86868b" }}>
                       {String.fromCharCode(65 + i)}
                     </div>
                     {opt}
@@ -3993,7 +3993,7 @@ export default function UIShowcase() {
                   <div className="h-1 flex-1 rounded-full" style={{ backgroundColor: SAND }}>
                     <div className="h-full rounded-full" style={{ width: "66%", backgroundColor: ROSE }} />
                   </div>
-                  <span className="text-[10px] font-medium" style={{ color: ROSE }}>6/9</span>
+                  <span className="text-xs font-medium" style={{ color: ROSE }}>6/9</span>
                 </div>
               </div>
             </div>
@@ -4015,7 +4015,7 @@ export default function UIShowcase() {
               ].map((item, i) => (
                 <motion.div key={i} className="flex flex-col items-center rounded-xl p-3 cursor-grab" style={{ backgroundColor: `${BONE}`, border: `1.5px dashed ${SAND}` }} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <span className="text-2xl mb-1">{item.icon}</span>
-                  <span className="text-[10px] font-medium text-center">{item.label}</span>
+                  <span className="text-xs font-medium text-center">{item.label}</span>
                   <span className="mt-1 text-[9px] font-bold" style={{ color: ROSE }}>Schritt ?</span>
                 </motion.div>
               ))}
@@ -4032,7 +4032,7 @@ export default function UIShowcase() {
                   <Headphones className="h-4 w-4" style={{ color: MAUVE }} />
                   <span className="text-xs font-semibold" style={{ color: MAUVE }}>Pflege-Situation anhören</span>
                 </div>
-                <p className="mt-1 text-[10px] text-[#86868b]">Dialog: Pflegekraft Ayşe bemerkt etwas bei Herrn Weber</p>
+                <p className="mt-1 text-xs text-[#86868b]">Dialog: Pflegekraft Ayşe bemerkt etwas bei Herrn Weber</p>
               </div>
               <div className="px-4 py-3">
                 {/* Mini-Player */}
@@ -4043,7 +4043,7 @@ export default function UIShowcase() {
                   <div className="flex-1 h-1 rounded-full" style={{ backgroundColor: SAND }}>
                     <div className="h-full rounded-full" style={{ width: "45%", backgroundColor: ROSE }} />
                   </div>
-                  <span className="text-[10px] text-[#86868b]">0:38</span>
+                  <span className="text-xs text-[#86868b]">0:38</span>
                 </div>
                 {/* Transkript-Auszug */}
                 <div className="mb-3 rounded-lg p-2.5 text-[11px] italic" style={{ backgroundColor: `${BONE}`, color: "#555" }}>
@@ -4087,7 +4087,7 @@ export default function UIShowcase() {
               </div>
               <div className="px-4 py-3">
                 <p className="text-xs font-semibold" style={{ color: MAUVE }}>Markiere die Stelle mit dem höchsten Dekubitus-Risiko</p>
-                <p className="text-[10px] text-[#86868b]">Tippe und zeichne einen Kreis um die Stelle</p>
+                <p className="text-xs text-[#86868b]">Tippe und zeichne einen Kreis um die Stelle</p>
               </div>
             </div>
           </div>
@@ -4110,11 +4110,11 @@ export default function UIShowcase() {
                 </motion.button>
                 <p className="mt-3 text-[11px] font-medium" style={{ color: ROSE }}>Antippen zum Aufnehmen</p>
                 <div className="mt-4 w-full rounded-lg p-3" style={{ backgroundColor: "white", border: `1px solid ${SAND}` }}>
-                  <div className="flex items-center gap-2 text-[10px] text-[#86868b]">
+                  <div className="flex items-center gap-2 text-xs text-[#86868b]">
                     <FileAudio className="h-3.5 w-3.5" />
                     <span>Letzte Aufnahme: 1:23 min — Gestern</span>
                   </div>
-                  <p className="mt-1 text-[10px] italic text-[#86868b]">KI-Transkript: &ldquo;Heute habe ich zum ersten Mal eine Wundversorgung gemacht...&rdquo;</p>
+                  <p className="mt-1 text-xs italic text-[#86868b]">KI-Transkript: &ldquo;Heute habe ich zum ersten Mal eine Wundversorgung gemacht...&rdquo;</p>
                 </div>
               </div>
             </div>
@@ -4147,7 +4147,7 @@ export default function UIShowcase() {
                   whileTap={{ scale: 0.95 }}
                 >
                   {card.flipped ? (
-                    <span className={card.type === "img" ? "text-2xl" : "text-[10px] font-semibold px-1"} style={{ color: card.type === "text" ? MAUVE : undefined }}>
+                    <span className={card.type === "img" ? "text-2xl" : "text-xs font-semibold px-1"} style={{ color: card.type === "text" ? MAUVE : undefined }}>
                       {card.label}
                     </span>
                   ) : (
@@ -4157,8 +4157,8 @@ export default function UIShowcase() {
               ))}
             </div>
             <div className="mt-3 flex items-center justify-between">
-              <span className="text-[10px] text-[#86868b]">2 von 4 Paaren gefunden</span>
-              <span className="text-[10px] font-medium" style={{ color: ROSE }}>6 Versuche</span>
+              <span className="text-xs text-[#86868b]">2 von 4 Paaren gefunden</span>
+              <span className="text-xs font-medium" style={{ color: ROSE }}>6 Versuche</span>
             </div>
           </div>
         </VariantCard>
@@ -4190,7 +4190,7 @@ export default function UIShowcase() {
                 </div>
               </div>
               <p className="mb-1 text-center text-xs font-semibold">Welches Atemgeräusch hörst du?</p>
-              <p className="mb-3 text-center text-[10px] text-[#86868b]">Tippe auf Play und höre genau hin</p>
+              <p className="mb-3 text-center text-xs text-[#86868b]">Tippe auf Play und höre genau hin</p>
               <div className="grid grid-cols-2 gap-2">
                 {["Normales Vesikuläratmen", "Rasselgeräusche (RG)", "Giemen / Brummen", "Stridor"].map((opt, i) => (
                   <button key={i} className="rounded-xl px-3 py-3 text-[11px] font-medium" style={{ backgroundColor: i === 1 ? `${ROSE}15` : "white", color: i === 1 ? ROSE : "#1d1d1f", border: `1.5px solid ${i === 1 ? ROSE : SAND}` }}>
@@ -4250,7 +4250,7 @@ export default function UIShowcase() {
                 <span className="rounded-full px-2 py-0.5 text-[9px] font-bold text-white" style={{ backgroundColor: ROSE }}>Frage 3/8</span>
                 <div className="flex items-center gap-1">
                   <Clock className="h-3 w-3" style={{ color: OAK }} />
-                  <motion.span className="text-[10px] font-mono font-bold" style={{ color: OAK }} animate={{ opacity: [1, 0.4, 1] }} transition={{ repeat: Infinity, duration: 1 }}>4.2s</motion.span>
+                  <motion.span className="text-xs font-mono font-bold" style={{ color: OAK }} animate={{ opacity: [1, 0.4, 1] }} transition={{ repeat: Infinity, duration: 1 }}>4.2s</motion.span>
                 </div>
               </div>
               <p className="mb-3 text-sm font-medium">Was ist ein Dekubitus?</p>
@@ -4263,10 +4263,10 @@ export default function UIShowcase() {
               </div>
             </div>
             <div className="rounded-xl p-3" style={{ backgroundColor: `${ROSE}08` }}>
-              <p className="mb-2 text-[10px] font-bold" style={{ color: MAUVE }}>Dein Profil nach 8 Fragen:</p>
+              <p className="mb-2 text-xs font-bold" style={{ color: MAUVE }}>Dein Profil nach 8 Fragen:</p>
               <div className="space-y-2">
                 <div>
-                  <div className="flex items-center justify-between text-[10px]">
+                  <div className="flex items-center justify-between text-xs">
                     <span>🗣️ Sprachkompetenz</span>
                     <span className="font-bold" style={{ color: OAK }}>B2</span>
                   </div>
@@ -4275,7 +4275,7 @@ export default function UIShowcase() {
                   </div>
                 </div>
                 <div>
-                  <div className="flex items-center justify-between text-[10px]">
+                  <div className="flex items-center justify-between text-xs">
                     <span>🏥 Pflegefachwissen</span>
                     <span className="font-bold" style={{ color: ROSE }}>Fortgeschritten</span>
                   </div>
@@ -4301,7 +4301,7 @@ export default function UIShowcase() {
                 <div key={i} className="flex items-center gap-3 rounded-lg px-3 py-2" style={{ backgroundColor: BONE, opacity: 0.6 }}>
                   <span className="text-sm">❌</span>
                   <div className="flex-1">
-                    <span className="text-[10px] font-semibold">Versuch {step.attempt}: {step.type}</span>
+                    <span className="text-xs font-semibold">Versuch {step.attempt}: {step.type}</span>
                     <span className="ml-2 text-[9px] text-[#86868b]">{step.strategy}</span>
                   </div>
                 </div>
@@ -4312,7 +4312,7 @@ export default function UIShowcase() {
                 </div>
                 <div>
                   <p className="text-[11px] font-bold" style={{ color: ROSE }}>Versuch 4: Alltags-Analogie</p>
-                  <p className="text-[10px] text-[#86868b]">&ldquo;Stell dir vor, du drückst deinen Finger 2 Stunden auf dein Knie...&rdquo;</p>
+                  <p className="text-xs text-[#86868b]">&ldquo;Stell dir vor, du drückst deinen Finger 2 Stunden auf dein Knie...&rdquo;</p>
                 </div>
               </motion.div>
             </div>
@@ -4355,12 +4355,12 @@ export default function UIShowcase() {
               ].map((opt, i) => (
                 <div key={i} className="rounded-xl overflow-hidden" style={{ border: `1.5px solid ${opt.correct ? ROSE : SAND}` }}>
                   <div className="flex items-center gap-3 px-3 py-2.5" style={{ backgroundColor: opt.correct ? `${ROSE}10` : "white" }}>
-                    <div className="flex h-6 w-6 items-center justify-center rounded-full text-[10px] font-bold text-white" style={{ backgroundColor: opt.correct ? ROSE : TAUPE }}>
+                    <div className="flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold text-white" style={{ backgroundColor: opt.correct ? ROSE : TAUPE }}>
                       {opt.correct ? <Check className="h-3.5 w-3.5" /> : opt.letter}
                     </div>
                     <span className="text-xs font-medium">{opt.text}</span>
                   </div>
-                  <div className="px-3 py-2 text-[10px]" style={{ backgroundColor: opt.correct ? `${ROSE}05` : BONE, color: "#555" }}>
+                  <div className="px-3 py-2 text-xs" style={{ backgroundColor: opt.correct ? `${ROSE}05` : BONE, color: "#555" }}>
                     💡 {opt.why}
                   </div>
                 </div>
@@ -4377,9 +4377,9 @@ export default function UIShowcase() {
               <span className="rounded-full px-2 py-0.5 text-[9px] font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>3 neu · 9 Wiederholung</span>
             </div>
             <motion.div className="rounded-2xl p-5 text-center shadow-sm" style={{ backgroundColor: "white", border: `1.5px solid ${SAND}` }} whileHover={{ rotateY: 5 }}>
-              <p className="mb-1 text-[10px] text-[#86868b]">Tippe zum Umdrehen</p>
+              <p className="mb-1 text-xs text-[#86868b]">Tippe zum Umdrehen</p>
               <p className="text-lg font-bold" style={{ color: MAUVE }}>Dekubitus</p>
-              <p className="mt-1 text-[10px] text-[#86868b]">Was ist das? Nenne die 4 Stadien.</p>
+              <p className="mt-1 text-xs text-[#86868b]">Was ist das? Nenne die 4 Stadien.</p>
             </motion.div>
             <div className="mt-3 grid grid-cols-4 gap-2">
               {[
@@ -4402,7 +4402,7 @@ export default function UIShowcase() {
           <div className="py-4">
             <div className="mb-3 flex items-center justify-between">
               <span className="text-xs font-bold">KW 14 — Dein Wochenplan</span>
-              <span className="text-[10px] text-[#86868b]">KI-generiert</span>
+              <span className="text-xs text-[#86868b]">KI-generiert</span>
             </div>
             <div className="space-y-1.5">
               {[
@@ -4449,7 +4449,7 @@ export default function UIShowcase() {
                   <span className="text-base">{session.icon}</span>
                   <div className="flex-1">
                     <div className="flex items-center gap-2">
-                      <span className="text-[10px] font-bold" style={{ color: MAUVE }}>UE {session.ue}</span>
+                      <span className="text-xs font-bold" style={{ color: MAUVE }}>UE {session.ue}</span>
                       <span className="text-[9px] rounded-full px-1.5 py-0.5" style={{ backgroundColor: `${SAND}40`, color: OAK }}>{session.type}</span>
                     </div>
                     <p className="text-[11px]">{session.topic}</p>
@@ -4473,7 +4473,7 @@ export default function UIShowcase() {
                 </div>
                 <div className="flex items-center gap-1 rounded-full bg-white/20 px-2 py-0.5">
                   <Clock className="h-3 w-3 text-white" />
-                  <span className="text-[10px] font-mono font-bold text-white">42:18</span>
+                  <span className="text-xs font-mono font-bold text-white">42:18</span>
                 </div>
               </div>
               <div className="p-4">
@@ -4488,7 +4488,7 @@ export default function UIShowcase() {
                     </div>
                   ))}
                 </div>
-                <p className="mb-2 text-[10px] text-[#86868b]">Frage 8 von 20</p>
+                <p className="mb-2 text-xs text-[#86868b]">Frage 8 von 20</p>
                 <p className="mb-3 text-sm font-medium">Nennen Sie drei Risikofaktoren für die Entstehung eines Dekubitus.</p>
                 <div className="rounded-lg p-3" style={{ backgroundColor: BONE }}>
                   <p className="text-[11px] italic text-[#86868b]">Tippe deine Antwort ein...</p>
@@ -4523,13 +4523,13 @@ export default function UIShowcase() {
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 rounded-lg px-3 py-2" style={{ backgroundColor: BONE }}>
                   <span className="text-xs">{item.status}</span>
-                  <span className="w-12 text-[10px] font-bold" style={{ color: MAUVE }}>{item.ce}</span>
-                  <span className="flex-1 text-[10px]">{item.label}</span>
-                  <span className="text-[10px] font-bold" style={{ color: item.pct > 80 ? ROSE : item.pct > 50 ? OAK : MAUVE }}>{item.pct}%</span>
+                  <span className="w-12 text-xs font-bold" style={{ color: MAUVE }}>{item.ce}</span>
+                  <span className="flex-1 text-xs">{item.label}</span>
+                  <span className="text-xs font-bold" style={{ color: item.pct > 80 ? ROSE : item.pct > 50 ? OAK : MAUVE }}>{item.pct}%</span>
                 </div>
               ))}
             </div>
-            <p className="mt-3 text-center text-[10px]" style={{ color: MAUVE }}>⚠️ CE 08 solltest du wiederholen bevor du in die Prüfung gehst</p>
+            <p className="mt-3 text-center text-xs" style={{ color: MAUVE }}>⚠️ CE 08 solltest du wiederholen bevor du in die Prüfung gehst</p>
           </div>
         </VariantCard>
 
@@ -4539,7 +4539,7 @@ export default function UIShowcase() {
             <div className="rounded-xl overflow-hidden" style={{ border: `1px solid ${SAND}` }}>
               <div className="flex items-center gap-2 px-4 py-2" style={{ backgroundColor: `${MAUVE}08` }}>
                 <Target className="h-3.5 w-3.5" style={{ color: MAUVE }} />
-                <span className="text-[10px]" style={{ color: MAUVE }}>Kontext: CE 05 LE 02 — Dekubitus, Step 14, 2× falsch</span>
+                <span className="text-xs" style={{ color: MAUVE }}>Kontext: CE 05 LE 02 — Dekubitus, Step 14, 2× falsch</span>
               </div>
               <div className="space-y-3 p-4">
                 <div className="flex justify-end">
@@ -4570,7 +4570,7 @@ export default function UIShowcase() {
         <VariantCard label="L96" name="Fehleranalyse" description="KI analysiert WARUM der Schüler falsch antwortet (VISION: 4 Möglichkeiten)">
           <div className="py-4">
             <div className="mb-3 rounded-xl px-4 py-3" style={{ backgroundColor: `${MAUVE}08` }}>
-              <p className="mb-1 text-[10px] font-bold" style={{ color: MAUVE }}>🧠 KI-Analyse deiner letzten Antwort</p>
+              <p className="mb-1 text-xs font-bold" style={{ color: MAUVE }}>🧠 KI-Analyse deiner letzten Antwort</p>
               <p className="text-[11px] text-[#555]">Du hast &ldquo;Kontraktur&rdquo; statt &ldquo;Dekubitus&rdquo; gewählt</p>
             </div>
             <div className="space-y-2">
@@ -4584,16 +4584,16 @@ export default function UIShowcase() {
                   <span className="text-base">{item.icon}</span>
                   <div className="flex-1">
                     <div className="flex items-center gap-2">
-                      <span className="text-[10px] font-bold" style={{ color: item.active ? ROSE : "#86868b" }}>{item.type}</span>
+                      <span className="text-xs font-bold" style={{ color: item.active ? ROSE : "#86868b" }}>{item.type}</span>
                       <span className="text-[9px] font-mono" style={{ color: item.active ? ROSE : "#aaa" }}>{item.prob}%</span>
                     </div>
-                    <p className="text-[10px] text-[#555]">{item.desc}</p>
+                    <p className="text-xs text-[#555]">{item.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
             <div className="mt-3 rounded-xl px-3 py-2.5" style={{ backgroundColor: `${ROSE}08` }}>
-              <p className="text-[10px] font-semibold" style={{ color: ROSE }}>→ Nächster Schritt: Vergleichstabelle Dekubitus vs. Kontraktur</p>
+              <p className="text-xs font-semibold" style={{ color: ROSE }}>→ Nächster Schritt: Vergleichstabelle Dekubitus vs. Kontraktur</p>
             </div>
           </div>
         </VariantCard>
@@ -4607,28 +4607,28 @@ export default function UIShowcase() {
             </div>
             <div className="space-y-3">
               <div className="rounded-xl p-3" style={{ backgroundColor: `${ROSE}06` }}>
-                <p className="mb-2 text-[10px] font-bold" style={{ color: ROSE }}>📚 Gelernt heute</p>
+                <p className="mb-2 text-xs font-bold" style={{ color: ROSE }}>📚 Gelernt heute</p>
                 <div className="flex flex-wrap gap-1.5">
                   {["Dekubitus-Stadien", "Prophylaxen", "Braden-Skala", "Lagerungstechniken"].map(t => (
-                    <span key={t} className="rounded-full px-2.5 py-1 text-[10px] font-medium" style={{ backgroundColor: `${ROSE}15`, color: MAUVE }}>{t}</span>
+                    <span key={t} className="rounded-full px-2.5 py-1 text-xs font-medium" style={{ backgroundColor: `${ROSE}15`, color: MAUVE }}>{t}</span>
                   ))}
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-2">
                 <div className="rounded-xl p-3" style={{ backgroundColor: `${BLUSH}15` }}>
-                  <p className="mb-1 text-[10px] font-bold" style={{ color: ROSE }}>💪 Stärken</p>
-                  <p className="text-[10px]">Stadien-Erkennung</p>
-                  <p className="text-[10px]">Risikofaktoren</p>
+                  <p className="mb-1 text-xs font-bold" style={{ color: ROSE }}>💪 Stärken</p>
+                  <p className="text-xs">Stadien-Erkennung</p>
+                  <p className="text-xs">Risikofaktoren</p>
                 </div>
                 <div className="rounded-xl p-3" style={{ backgroundColor: `${OAK}08` }}>
-                  <p className="mb-1 text-[10px] font-bold" style={{ color: OAK }}>🔄 Wiederholen</p>
-                  <p className="text-[10px]">Braden-Skala</p>
-                  <p className="text-[10px]">Dokumentation</p>
+                  <p className="mb-1 text-xs font-bold" style={{ color: OAK }}>🔄 Wiederholen</p>
+                  <p className="text-xs">Braden-Skala</p>
+                  <p className="text-xs">Dokumentation</p>
                 </div>
               </div>
               <div className="rounded-xl p-3" style={{ backgroundColor: BONE }}>
-                <p className="text-[10px] font-bold" style={{ color: MAUVE }}>🌅 Morgen wartet auf dich:</p>
-                <p className="text-[10px] text-[#555]">CE 04 — Fallbeispiele + Wiederholung Braden-Skala</p>
+                <p className="text-xs font-bold" style={{ color: MAUVE }}>🌅 Morgen wartet auf dich:</p>
+                <p className="text-xs text-[#555]">CE 04 — Fallbeispiele + Wiederholung Braden-Skala</p>
               </div>
             </div>
           </div>
@@ -4639,7 +4639,7 @@ export default function UIShowcase() {
           <div className="py-4">
             <div className="mb-2 flex items-center gap-2">
               <span className="rounded-full px-2 py-0.5 text-[9px] font-bold text-white" style={{ backgroundColor: OAK }}>B1</span>
-              <span className="text-[10px] text-[#86868b]">Einfache Sprache aktiv</span>
+              <span className="text-xs text-[#86868b]">Einfache Sprache aktiv</span>
             </div>
             <div className="rounded-xl p-4" style={{ backgroundColor: BONE }}>
               <p className="mb-3 text-sm leading-relaxed">
@@ -4662,10 +4662,10 @@ export default function UIShowcase() {
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <button className="flex items-center gap-1 rounded-full px-3 py-1.5 text-[10px] font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>
+                <button className="flex items-center gap-1 rounded-full px-3 py-1.5 text-xs font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>
                   <Volume2 className="h-3.5 w-3.5" /> Ganzen Text vorlesen
                 </button>
-                <button className="flex items-center gap-1 rounded-full px-3 py-1.5 text-[10px] font-medium" style={{ backgroundColor: `${SAND}40`, color: OAK }}>
+                <button className="flex items-center gap-1 rounded-full px-3 py-1.5 text-xs font-medium" style={{ backgroundColor: `${SAND}40`, color: OAK }}>
                   <Mic className="h-3.5 w-3.5" /> Nachsprechen
                 </button>
               </div>
@@ -4679,7 +4679,7 @@ export default function UIShowcase() {
             <div className="rounded-xl p-4" style={{ backgroundColor: `${MAUVE}06`, border: `1.5px dashed ${MAUVE}40` }}>
               <div className="mb-2 flex items-center gap-2">
                 <Lightbulb className="h-4 w-4" style={{ color: MAUVE }} />
-                <span className="text-[10px] font-bold" style={{ color: MAUVE }}>WAS DENKST DU?</span>
+                <span className="text-xs font-bold" style={{ color: MAUVE }}>WAS DENKST DU?</span>
                 <span className="rounded-full px-1.5 py-0.5 text-[8px]" style={{ backgroundColor: `${MAUVE}15`, color: MAUVE }}>kein Score</span>
               </div>
               <p className="mb-3 text-sm font-medium">Wie viele Menschen in Deutschland bekommen jährlich einen Dekubitus?</p>
@@ -4769,14 +4769,14 @@ export default function UIShowcase() {
                 </div>
               </div>
               <div className="text-right">
-                <p className="text-[10px] font-bold" style={{ color: OAK }}>Längster: 21 Tage</p>
+                <p className="text-xs font-bold" style={{ color: OAK }}>Längster: 21 Tage</p>
                 <p className="text-[9px] text-[#86868b]">Weiter so! 🔥</p>
               </div>
             </div>
             <div className="rounded-xl p-3" style={{ backgroundColor: BONE }}>
               <div className="mb-2 flex items-center justify-between">
                 <span className="text-[11px] font-bold" style={{ color: MAUVE }}>🎯 Wochenziel</span>
-                <span className="text-[10px] font-medium" style={{ color: ROSE }}>2 von 3 LEs</span>
+                <span className="text-xs font-medium" style={{ color: ROSE }}>2 von 3 LEs</span>
               </div>
               <div className="flex gap-1">
                 {[true, true, false].map((done, i) => (
@@ -4803,23 +4803,23 @@ export default function UIShowcase() {
           <div className="py-4">
             <div className="mb-3 flex items-center gap-2 rounded-full px-3 py-1.5" style={{ backgroundColor: `${OAK}10`, border: `1px solid ${OAK}30` }}>
               <Stethoscope className="h-3.5 w-3.5" style={{ color: OAK }} />
-              <span className="text-[10px] font-bold" style={{ color: OAK }}>PRAXISPHASE — Chirurgie, Woche 2</span>
+              <span className="text-xs font-bold" style={{ color: OAK }}>PRAXISPHASE — Chirurgie, Woche 2</span>
             </div>
             <div className="space-y-2">
               <div className="rounded-xl p-3" style={{ backgroundColor: BONE }}>
-                <p className="mb-1 text-[10px] font-bold" style={{ color: MAUVE }}>🏥 Heute auf Station</p>
+                <p className="mb-1 text-xs font-bold" style={{ color: MAUVE }}>🏥 Heute auf Station</p>
                 <p className="text-[11px]">Achte heute mal auf Dekubitus-Prophylaxe bei deinen Patienten. Wie wird gelagert? Wie oft?</p>
               </div>
               <div className="rounded-xl p-3" style={{ backgroundColor: `${ROSE}06` }}>
-                <p className="mb-1 text-[10px] font-bold" style={{ color: ROSE }}>📝 Reflexionsfrage</p>
+                <p className="mb-1 text-xs font-bold" style={{ color: ROSE }}>📝 Reflexionsfrage</p>
                 <p className="text-[11px]">Was hast du heute auf Station gesehen? Welche Pflegemaßnahme war das?</p>
                 <div className="mt-2 flex gap-2">
-                  <button className="flex-1 rounded-lg py-2 text-[10px] font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>✍️ Schreiben</button>
-                  <button className="flex-1 rounded-lg py-2 text-[10px] font-medium" style={{ backgroundColor: `${OAK}10`, color: OAK }}>🎤 Einsprechen</button>
+                  <button className="flex-1 rounded-lg py-2 text-xs font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>✍️ Schreiben</button>
+                  <button className="flex-1 rounded-lg py-2 text-xs font-medium" style={{ backgroundColor: `${OAK}10`, color: OAK }}>🎤 Einsprechen</button>
                 </div>
               </div>
               <div className="rounded-xl p-3" style={{ backgroundColor: `${SAND}20` }}>
-                <p className="mb-1 text-[10px] font-bold" style={{ color: OAK }}>🃏 Quick-Review (15 Min)</p>
+                <p className="mb-1 text-xs font-bold" style={{ color: OAK }}>🃏 Quick-Review (15 Min)</p>
                 <p className="text-[11px]">8 Karteikarten zu Wundversorgung — perfekt für die Pause</p>
               </div>
             </div>
@@ -4832,7 +4832,7 @@ export default function UIShowcase() {
           <div className="py-4">
             <div className="mb-3 flex items-center justify-between">
               <span className="text-xs font-bold" style={{ color: MAUVE }}>Lernzeit-Nachweis</span>
-              <button className="flex items-center gap-1 rounded-full px-3 py-1 text-[10px] font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>
+              <button className="flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>
                 <Download className="h-3 w-3" /> PDF Export
               </button>
             </div>
@@ -4849,7 +4849,7 @@ export default function UIShowcase() {
                 { ce: "CE 04 LE 01", hours: "5:20", active: "4:45", pct: 89 },
                 { ce: "CE 05 LE 02", hours: "2:15", active: "1:50", pct: 82 },
               ].map((row, i) => (
-                <div key={i} className="grid grid-cols-4 gap-0 border-t px-3 py-2 text-[10px]" style={{ borderColor: `${SAND}60` }}>
+                <div key={i} className="grid grid-cols-4 gap-0 border-t px-3 py-2 text-xs" style={{ borderColor: `${SAND}60` }}>
                   <span className="font-medium">{row.ce}</span>
                   <span className="text-center">{row.hours}</span>
                   <span className="text-center" style={{ color: ROSE }}>{row.active}</span>
@@ -4866,7 +4866,7 @@ export default function UIShowcase() {
           <div className="py-4">
             <div className="mb-3 flex items-center gap-2 rounded-full px-3 py-1.5" style={{ backgroundColor: `${SAND}30` }}>
               <WifiOff className="h-3.5 w-3.5" style={{ color: OAK }} />
-              <span className="text-[10px] font-medium" style={{ color: OAK }}>Offline verfügbar machen</span>
+              <span className="text-xs font-medium" style={{ color: OAK }}>Offline verfügbar machen</span>
             </div>
             <div className="space-y-2">
               {[
@@ -4884,7 +4884,7 @@ export default function UIShowcase() {
                     <p className="text-[9px] text-[#86868b]">{item.size}</p>
                   </div>
                   {!item.downloaded && (
-                    <button className="rounded-full px-3 py-1 text-[10px] font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>
+                    <button className="rounded-full px-3 py-1 text-xs font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>
                       Laden
                     </button>
                   )}
@@ -4892,8 +4892,8 @@ export default function UIShowcase() {
               ))}
             </div>
             <div className="mt-3 flex items-center justify-between rounded-lg px-3 py-2" style={{ backgroundColor: `${ROSE}06` }}>
-              <span className="text-[10px]" style={{ color: MAUVE }}>📱 5.5 MB heruntergeladen</span>
-              <span className="text-[10px] text-[#86868b]">Sync bei Verbindung</span>
+              <span className="text-xs" style={{ color: MAUVE }}>📱 5.5 MB heruntergeladen</span>
+              <span className="text-xs text-[#86868b]">Sync bei Verbindung</span>
             </div>
           </div>
         </VariantCard>
@@ -4931,7 +4931,7 @@ export default function UIShowcase() {
                   <span className="text-2xl">{goal.icon}</span>
                   <div>
                     <p className="text-xs font-semibold" style={{ color: goal.selected ? ROSE : "#1d1d1f" }}>{goal.label}</p>
-                    <p className="text-[10px] text-[#86868b]">{goal.desc}</p>
+                    <p className="text-xs text-[#86868b]">{goal.desc}</p>
                   </div>
                   {goal.selected && <Check className="ml-auto h-4 w-4" style={{ color: ROSE }} />}
                 </button>
@@ -4977,7 +4977,7 @@ export default function UIShowcase() {
                     <span className="text-[11px] font-semibold">{student.name}</span>
                     <span className="ml-2 text-[9px] text-[#86868b]">{student.topic}</span>
                   </div>
-                  <span className="text-[10px] font-bold" style={{ color: student.pct > 75 ? ROSE : student.pct > 50 ? OAK : MAUVE }}>{student.pct}%</span>
+                  <span className="text-xs font-bold" style={{ color: student.pct > 75 ? ROSE : student.pct > 50 ? OAK : MAUVE }}>{student.pct}%</span>
                   {student.flag && <span className="rounded-full px-1.5 py-0.5 text-[8px] font-bold text-white" style={{ backgroundColor: MAUVE }}>{student.flag}</span>}
                 </div>
               ))}
@@ -5009,7 +5009,7 @@ export default function UIShowcase() {
               ))}
             </div>
             <div className="mt-3 text-center">
-              <span className="text-[10px] text-[#86868b]">4 von 8 Badges freigeschaltet</span>
+              <span className="text-xs text-[#86868b]">4 von 8 Badges freigeschaltet</span>
             </div>
           </div>
         </VariantCard>
@@ -5033,7 +5033,7 @@ export default function UIShowcase() {
                   <div className="h-2 flex-1 rounded-full" style={{ backgroundColor: `${SAND}60` }}>
                     <motion.div className="h-full rounded-full" style={{ backgroundColor: ROSE }} initial={{ width: 0 }} whileInView={{ width: "65%" }} transition={{ duration: 1 }} viewport={{ once: true }} />
                   </div>
-                  <span className="text-[10px] font-mono" style={{ color: ROSE }}>1.840 / 2.800 XP</span>
+                  <span className="text-xs font-mono" style={{ color: ROSE }}>1.840 / 2.800 XP</span>
                 </div>
                 <p className="mt-0.5 text-[9px] text-[#86868b]">Noch 960 XP bis Level 8</p>
               </div>
@@ -5048,8 +5048,8 @@ export default function UIShowcase() {
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 rounded-lg px-3 py-1.5" style={{ backgroundColor: BONE }}>
                   <Zap className="h-3 w-3" style={{ color: ROSE }} />
-                  <span className="flex-1 text-[10px]">{item.action}</span>
-                  <span className="text-[10px] font-bold" style={{ color: ROSE }}>{item.xp}</span>
+                  <span className="flex-1 text-xs">{item.action}</span>
+                  <span className="text-xs font-bold" style={{ color: ROSE }}>{item.xp}</span>
                   <span className="text-[8px] text-[#86868b]">{item.time}</span>
                 </div>
               ))}
@@ -5072,7 +5072,7 @@ export default function UIShowcase() {
                     <span className="text-[11px] font-bold">{notif.title}</span>
                     <span className="text-[8px] text-[#86868b]">{notif.time}</span>
                   </div>
-                  <p className="text-[10px] text-[#555]">{notif.body}</p>
+                  <p className="text-xs text-[#555]">{notif.body}</p>
                 </div>
               </motion.div>
             ))}
@@ -5093,7 +5093,7 @@ export default function UIShowcase() {
                 <div key={i} className="flex items-center gap-3 mb-1">
                   {/* Vertikale Linie */}
                   <div className="flex flex-col items-center w-8">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full text-[10px] font-bold" style={{
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold" style={{
                       backgroundColor: station.done ? ROSE : station.active ? "white" : `${SAND}40`,
                       color: station.done ? "white" : station.active ? ROSE : "#86868b",
                       border: station.active ? `2px solid ${ROSE}` : "none",
@@ -5104,8 +5104,8 @@ export default function UIShowcase() {
                     {i < 4 && <div className="h-4 w-0.5" style={{ backgroundColor: station.done ? ROSE : SAND }} />}
                   </div>
                   <div className="flex-1 rounded-xl px-3 py-2" style={{ backgroundColor: station.active ? `${ROSE}06` : "transparent" }}>
-                    <span className="text-[10px] font-bold" style={{ color: station.done ? ROSE : station.active ? ROSE : "#86868b" }}>{station.label}</span>
-                    <span className="ml-2 text-[10px]" style={{ opacity: station.done || station.active ? 1 : 0.5 }}>{station.name}</span>
+                    <span className="text-xs font-bold" style={{ color: station.done ? ROSE : station.active ? ROSE : "#86868b" }}>{station.label}</span>
+                    <span className="ml-2 text-xs" style={{ opacity: station.done || station.active ? 1 : 0.5 }}>{station.name}</span>
                   </div>
                 </div>
               ))}
@@ -5173,7 +5173,7 @@ export default function UIShowcase() {
                       <Volume2 className="h-3 w-3" style={{ color: ROSE }} />
                     </button>
                   </div>
-                  <p className="text-[10px] text-[#555]">{entry.b1}</p>
+                  <p className="text-xs text-[#555]">{entry.b1}</p>
                   <div className="mt-1.5 flex gap-1.5 text-[8px]">
                     <span className="rounded px-1.5 py-0.5" style={{ backgroundColor: `${SAND}30` }}>🇹🇷 {entry.tr}</span>
                     <span className="rounded px-1.5 py-0.5" style={{ backgroundColor: `${SAND}30` }}>🇸🇦 {entry.ar}</span>
@@ -5189,13 +5189,13 @@ export default function UIShowcase() {
           <div className="py-4">
             <div className="mb-2 flex items-center gap-2">
               <Wand2 className="h-3.5 w-3.5" style={{ color: MAUVE }} />
-              <span className="text-[10px]" style={{ color: MAUVE }}>KI hat erkannt: Du verwechselst diese Begriffe</span>
+              <span className="text-xs" style={{ color: MAUVE }}>KI hat erkannt: Du verwechselst diese Begriffe</span>
             </div>
             <div className="rounded-xl overflow-hidden" style={{ border: `1px solid ${SAND}` }}>
               <div className="grid grid-cols-3 text-center">
                 <div className="py-2" style={{ backgroundColor: BONE }} />
-                <div className="py-2 text-[10px] font-bold" style={{ backgroundColor: `${ROSE}10`, color: ROSE }}>Dekubitus</div>
-                <div className="py-2 text-[10px] font-bold" style={{ backgroundColor: `${OAK}10`, color: OAK }}>Kontraktur</div>
+                <div className="py-2 text-xs font-bold" style={{ backgroundColor: `${ROSE}10`, color: ROSE }}>Dekubitus</div>
+                <div className="py-2 text-xs font-bold" style={{ backgroundColor: `${OAK}10`, color: OAK }}>Kontraktur</div>
               </div>
               {[
                 { label: "Was ist es?", a: "Druckgeschwür", b: "Gelenkversteifung" },
@@ -5203,7 +5203,7 @@ export default function UIShowcase() {
                 { label: "Prävention", a: "Lagerungswechsel", b: "Mobilisation + Bewegungsübungen" },
                 { label: "Risikoskala", a: "Braden-Skala", b: "Keine Standard-Skala" },
               ].map((row, i) => (
-                <div key={i} className="grid grid-cols-3 border-t text-[10px]" style={{ borderColor: `${SAND}40` }}>
+                <div key={i} className="grid grid-cols-3 border-t text-xs" style={{ borderColor: `${SAND}40` }}>
                   <div className="px-2 py-2 font-semibold" style={{ backgroundColor: BONE, color: MAUVE }}>{row.label}</div>
                   <div className="px-2 py-2" style={{ backgroundColor: `${ROSE}04` }}>{row.a}</div>
                   <div className="px-2 py-2" style={{ backgroundColor: `${OAK}04` }}>{row.b}</div>
@@ -5235,7 +5235,7 @@ export default function UIShowcase() {
                   <span className="flex-1 text-[11px] font-medium" style={{ color: entry.you ? ROSE : "#1d1d1f" }}>{entry.name}</span>
                   <div className="flex items-center gap-1">
                     <Zap className="h-3 w-3" style={{ color: ROSE }} />
-                    <span className="text-[10px] font-bold" style={{ color: entry.you ? ROSE : OAK }}>{entry.xp} XP</span>
+                    <span className="text-xs font-bold" style={{ color: entry.you ? ROSE : OAK }}>{entry.xp} XP</span>
                   </div>
                 </div>
               ))}
@@ -5259,7 +5259,7 @@ export default function UIShowcase() {
                 <ThumbsUp className="h-7 w-7" style={{ color: ROSE }} />
               </motion.button>
             </div>
-            <p className="mt-3 text-center text-[10px] text-[#86868b]">Dein Feedback verbessert zukünftige Sessions</p>
+            <p className="mt-3 text-center text-xs text-[#86868b]">Dein Feedback verbessert zukünftige Sessions</p>
           </div>
         </VariantCard>
 
@@ -5344,7 +5344,7 @@ export default function UIShowcase() {
               </div>
               {/* Tooltip Overlay */}
               <motion.div className="absolute top-2 right-2 w-48 rounded-xl p-3 shadow-lg" style={{ backgroundColor: MAUVE }} initial={{ scale: 0.9, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} viewport={{ once: true }}>
-                <p className="text-[10px] font-bold text-white">📊 Fortschrittsbalken</p>
+                <p className="text-xs font-bold text-white">📊 Fortschrittsbalken</p>
                 <p className="text-[9px] text-white/80">Hier siehst du wie weit du in der Session bist. Grün = geschafft!</p>
                 <div className="mt-2 flex items-center justify-between">
                   <span className="text-[8px] text-white/60">2 von 5</span>
@@ -5419,7 +5419,7 @@ export default function UIShowcase() {
                     {setting.icon}
                   </div>
                   <span className="flex-1 text-[11px] font-medium">{setting.label}</span>
-                  <span className="text-[10px]" style={{ color: setting.color }}>{setting.value}</span>
+                  <span className="text-xs" style={{ color: setting.color }}>{setting.value}</span>
                   <ChevronRight className="h-3.5 w-3.5 text-[#ccc]" />
                 </div>
               ))}
@@ -5432,7 +5432,7 @@ export default function UIShowcase() {
           <div className="py-4">
             <div className="mb-3 text-center">
               <p className="text-base font-bold">Deine Woche 🎉</p>
-              <p className="text-[10px] text-[#86868b]">KW 14 — 31. März bis 4. April</p>
+              <p className="text-xs text-[#86868b]">KW 14 — 31. März bis 4. April</p>
             </div>
             {/* Activity Heatmap */}
             <div className="mb-4 grid grid-cols-7 gap-1.5 text-center">
@@ -5470,7 +5470,7 @@ export default function UIShowcase() {
           <div className="py-4">
             <div className="mb-3 flex items-center justify-between">
               <span className="text-xs font-bold" style={{ color: MAUVE }}>Deine Lesezeichen</span>
-              <span className="text-[10px] text-[#86868b]">6 gespeichert</span>
+              <span className="text-xs text-[#86868b]">6 gespeichert</span>
             </div>
             <div className="space-y-2">
               {[
@@ -5509,7 +5509,7 @@ export default function UIShowcase() {
               <p className="text-[9px] uppercase tracking-widest" style={{ color: TAUPE }}>Zertifikat</p>
               <p className="mt-1 text-base font-bold" style={{ color: MAUVE }}>CE 01 — Ausbildungsstart</p>
               <p className="mt-0.5 text-xs">Ayşe Kaya</p>
-              <p className="mt-1 text-[10px] text-[#86868b]">hat alle Lerneinheiten erfolgreich abgeschlossen</p>
+              <p className="mt-1 text-xs text-[#86868b]">hat alle Lerneinheiten erfolgreich abgeschlossen</p>
               <div className="mt-3 flex items-center justify-center gap-4 text-[9px]" style={{ color: OAK }}>
                 <span>89% Richtig-Quote</span>
                 <span>·</span>
@@ -5518,10 +5518,10 @@ export default function UIShowcase() {
                 <span>04.04.2026</span>
               </div>
               <div className="mt-4 flex justify-center gap-2">
-                <button className="flex items-center gap-1 rounded-full px-3 py-1.5 text-[10px] font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>
+                <button className="flex items-center gap-1 rounded-full px-3 py-1.5 text-xs font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>
                   <Download className="h-3 w-3" /> PDF
                 </button>
-                <button className="flex items-center gap-1 rounded-full px-3 py-1.5 text-[10px] font-medium" style={{ backgroundColor: `${SAND}30`, color: OAK }}>
+                <button className="flex items-center gap-1 rounded-full px-3 py-1.5 text-xs font-medium" style={{ backgroundColor: `${SAND}30`, color: OAK }}>
                   <Share2 className="h-3 w-3" /> Teilen
                 </button>
               </div>
@@ -5573,7 +5573,7 @@ export default function UIShowcase() {
               {" "}versorgt.&rdquo;
             </div>
             <div className="mt-2 flex items-center justify-between">
-              <span className="text-[10px]" style={{ color: ROSE }}>2 von 3 Fehlern gefunden</span>
+              <span className="text-xs" style={{ color: ROSE }}>2 von 3 Fehlern gefunden</span>
               <span className="text-[9px] text-[#86868b]">Tippe auf die falschen Stellen</span>
             </div>
           </div>
@@ -5606,7 +5606,7 @@ export default function UIShowcase() {
             </div>
             <div className="mt-2 flex gap-2">
               {["Prophylaxe", "Schmerz", "Wundheilung"].map((w, i) => (
-                <span key={i} className="rounded-full px-3 py-1 text-[10px] font-medium cursor-grab" style={{ backgroundColor: "white", border: `1.5px solid ${SAND}`, boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }}>
+                <span key={i} className="rounded-full px-3 py-1 text-xs font-medium cursor-grab" style={{ backgroundColor: "white", border: `1.5px solid ${SAND}`, boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }}>
                   {w}
                 </span>
               ))}
@@ -5679,16 +5679,16 @@ export default function UIShowcase() {
             <p className="mb-3 text-xs font-medium">Patient lehnt Lagerungswechsel ab. Was spricht dafür, was dagegen?</p>
             <div className="grid grid-cols-2 gap-3">
               <div className="rounded-xl p-3" style={{ backgroundColor: `${ROSE}06` }}>
-                <p className="mb-2 text-[10px] font-bold" style={{ color: ROSE }}>✅ Pro (Lagerung)</p>
+                <p className="mb-2 text-xs font-bold" style={{ color: ROSE }}>✅ Pro (Lagerung)</p>
                 <div className="space-y-1">
-                  <div className="rounded-lg px-2 py-1.5 text-[10px]" style={{ backgroundColor: "white" }}>Dekubitus-Prophylaxe</div>
-                  <div className="rounded-lg px-2 py-1.5 text-[10px]" style={{ backgroundColor: "white" }}>Fachlicher Standard</div>
+                  <div className="rounded-lg px-2 py-1.5 text-xs" style={{ backgroundColor: "white" }}>Dekubitus-Prophylaxe</div>
+                  <div className="rounded-lg px-2 py-1.5 text-xs" style={{ backgroundColor: "white" }}>Fachlicher Standard</div>
                 </div>
               </div>
               <div className="rounded-xl p-3" style={{ backgroundColor: `${MAUVE}06` }}>
-                <p className="mb-2 text-[10px] font-bold" style={{ color: MAUVE }}>❌ Contra (Ablehnung)</p>
+                <p className="mb-2 text-xs font-bold" style={{ color: MAUVE }}>❌ Contra (Ablehnung)</p>
                 <div className="space-y-1">
-                  <div className="rounded-lg px-2 py-1.5 text-[10px]" style={{ backgroundColor: "white" }}>Patientenautonomie</div>
+                  <div className="rounded-lg px-2 py-1.5 text-xs" style={{ backgroundColor: "white" }}>Patientenautonomie</div>
                 </div>
               </div>
             </div>
@@ -5722,7 +5722,7 @@ export default function UIShowcase() {
             </div>
             <div className="mt-2 flex items-center gap-2 rounded-lg px-3 py-2" style={{ backgroundColor: "white", border: `1px solid ${SAND}` }}>
               <input className="flex-1 bg-transparent text-xs outline-none" placeholder="Noch ein Begriff..." />
-              <button className="rounded-full px-3 py-1 text-[10px] font-medium text-white" style={{ backgroundColor: ROSE }}>+</button>
+              <button className="rounded-full px-3 py-1 text-xs font-medium text-white" style={{ backgroundColor: ROSE }}>+</button>
             </div>
           </div>
         </VariantCard>
@@ -5772,7 +5772,7 @@ export default function UIShowcase() {
                 { stadium: "III", tiefe: "Bis Subkutis", merkmale: "???" },
                 { stadium: "IV", tiefe: "???", merkmale: "???" },
               ].map((row, i) => (
-                <div key={i} className="grid grid-cols-3 border-t text-[10px]" style={{ borderColor: `${SAND}40` }}>
+                <div key={i} className="grid grid-cols-3 border-t text-xs" style={{ borderColor: `${SAND}40` }}>
                   <span className="px-2 py-2 font-bold" style={{ color: MAUVE }}>{row.stadium}</span>
                   <span className="px-2 py-2" style={{ color: row.tiefe === "???" ? ROSE : "#1d1d1f", fontWeight: row.tiefe === "???" ? 600 : 400, backgroundColor: row.tiefe === "???" ? `${ROSE}06` : "transparent" }}>
                     {row.tiefe}
@@ -5800,7 +5800,7 @@ export default function UIShowcase() {
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
                   <div className="flex flex-col items-center">
-                    <div className="flex h-7 w-7 items-center justify-center rounded-full text-[10px] font-bold" style={{
+                    <div className="flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold" style={{
                       backgroundColor: item.done ? ROSE : item.active ? "white" : `${SAND}30`,
                       color: item.done ? "white" : item.active ? ROSE : "#86868b",
                       border: item.active ? `2px solid ${ROSE}` : "none"
@@ -5845,7 +5845,7 @@ export default function UIShowcase() {
             </div>
             <div className="mt-2 flex gap-2">
               {["Dermis", "Subkutis", "Muskel"].map((w, i) => (
-                <span key={i} className="rounded-full px-2.5 py-1 text-[10px] font-medium cursor-grab" style={{ backgroundColor: "white", border: `1px solid ${SAND}` }}>{w}</span>
+                <span key={i} className="rounded-full px-2.5 py-1 text-xs font-medium cursor-grab" style={{ backgroundColor: "white", border: `1px solid ${SAND}` }}>{w}</span>
               ))}
             </div>
           </div>
@@ -5867,12 +5867,12 @@ export default function UIShowcase() {
                   <div className="absolute left-[-13px] h-3 w-3 rounded-full" style={{ backgroundColor: event.placed ? ROSE : "white", border: event.placed ? "none" : `2px dashed ${ROSE}` }} />
                   <div className="ml-2 flex-1 rounded-xl px-3 py-2" style={{ backgroundColor: event.placed ? BONE : `${ROSE}06`, border: event.placed ? "none" : `1.5px dashed ${ROSE}40` }}>
                     <span className="text-[9px] font-bold" style={{ color: event.placed ? OAK : ROSE }}>{event.time}</span>
-                    <p className="text-[10px]" style={{ color: event.placed ? "#1d1d1f" : ROSE }}>{event.text}</p>
+                    <p className="text-xs" style={{ color: event.placed ? "#1d1d1f" : ROSE }}>{event.text}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <span className="mt-1 inline-block rounded-lg px-3 py-1.5 text-[10px] font-medium cursor-grab" style={{ backgroundColor: "white", border: `1.5px solid ${SAND}`, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+            <span className="mt-1 inline-block rounded-lg px-3 py-1.5 text-xs font-medium cursor-grab" style={{ backgroundColor: "white", border: `1.5px solid ${SAND}`, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
               Braden-Score erhoben (Tag 7)
             </span>
           </div>
@@ -5918,7 +5918,7 @@ export default function UIShowcase() {
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 rounded-xl px-3 py-2.5" style={{ backgroundColor: item.done ? `${ROSE}06` : BONE }}>
                   <span className="text-sm font-bold font-mono" style={{ color: item.done ? ROSE : MAUVE }}>{item.abbr}</span>
-                  <span className="flex-1 text-[10px]" style={{ color: item.done ? "#555" : "#86868b" }}>{item.full}</span>
+                  <span className="flex-1 text-xs" style={{ color: item.done ? "#555" : "#86868b" }}>{item.full}</span>
                   {item.done && <Check className="h-3 w-3" style={{ color: ROSE }} />}
                 </div>
               ))}
@@ -5939,7 +5939,7 @@ export default function UIShowcase() {
                   { label: "Temp", value: "38.4", unit: "°C", color: "#fbbf24", normal: false },
                 ].map((vital, i) => (
                   <div key={i} className="flex items-center justify-between">
-                    <span className="text-[10px] font-mono" style={{ color: vital.color }}>{vital.label}</span>
+                    <span className="text-xs font-mono" style={{ color: vital.color }}>{vital.label}</span>
                     <div className="flex items-center gap-1">
                       <span className="text-lg font-bold font-mono" style={{ color: vital.color }}>{vital.value}</span>
                       <span className="text-[9px] font-mono" style={{ color: `${vital.color}80` }}>{vital.unit}</span>
@@ -5969,7 +5969,7 @@ export default function UIShowcase() {
         {/* ── L141: Formulierung bewerten ── */}
         <VariantCard label="L141" name="Formulierung bewerten" description="Ist dieser Pflegebericht-Satz korrekt formuliert? Bewerte und verbessere">
           <div className="py-4">
-            <p className="mb-2 text-[10px] font-bold" style={{ color: MAUVE }}>Bewerte diese Dokumentation:</p>
+            <p className="mb-2 text-xs font-bold" style={{ color: MAUVE }}>Bewerte diese Dokumentation:</p>
             <div className="mb-3 rounded-xl p-3 text-[11px] italic" style={{ backgroundColor: BONE }}>
               &ldquo;Patient hat heute schlecht geschlafen und war müde.&rdquo;
             </div>
@@ -5986,8 +5986,8 @@ export default function UIShowcase() {
               ))}
             </div>
             <div className="mt-3 rounded-xl p-3" style={{ backgroundColor: `${ROSE}06` }}>
-              <p className="text-[10px] font-bold" style={{ color: ROSE }}>Bessere Formulierung:</p>
-              <p className="text-[10px] text-[#555]">&ldquo;Pat. berichtet über Ein- und Durchschlafstörungen. Wirkung der Schlafmedikation unzureichend. Tagesmüdigkeit beobachtet.&rdquo;</p>
+              <p className="text-xs font-bold" style={{ color: ROSE }}>Bessere Formulierung:</p>
+              <p className="text-xs text-[#555]">&ldquo;Pat. berichtet über Ein- und Durchschlafstörungen. Wirkung der Schlafmedikation unzureichend. Tagesmüdigkeit beobachtet.&rdquo;</p>
             </div>
           </div>
         </VariantCard>
@@ -6005,7 +6005,7 @@ export default function UIShowcase() {
                   <Clock className="h-3 w-3" style={{ color: MAUVE }} />
                   <span className="text-[11px] font-mono font-bold" style={{ color: MAUVE }}>0:38</span>
                 </motion.div>
-                <span className="text-[10px] font-bold" style={{ color: ROSE }}>7/10</span>
+                <span className="text-xs font-bold" style={{ color: ROSE }}>7/10</span>
               </div>
             </div>
             <div className="mb-3 rounded-xl p-4 text-center" style={{ backgroundColor: BONE }}>
@@ -6048,7 +6048,7 @@ export default function UIShowcase() {
                 <span className="text-base font-bold" style={{ color: ROSE }}>Alle 2 Stunden</span>
               </div>
             </div>
-            <div className="mt-3 rounded-xl p-2.5 text-center text-[10px]" style={{ backgroundColor: `${ROSE}06` }}>
+            <div className="mt-3 rounded-xl p-2.5 text-center text-xs" style={{ backgroundColor: `${ROSE}06` }}>
               ✅ Korrekt! Laut DNQP-Standard: spätestens alle 2 Stunden
             </div>
           </div>
@@ -6074,7 +6074,7 @@ export default function UIShowcase() {
                 ))}
               </div>
               <div className="mt-3 flex justify-center gap-2">
-                <button className="rounded-full px-3 py-1.5 text-[10px] font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>
+                <button className="rounded-full px-3 py-1.5 text-xs font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>
                   <Bookmark className="inline h-3 w-3 mr-1" />Merken
                 </button>
               </div>
@@ -6087,7 +6087,7 @@ export default function UIShowcase() {
           <div className="py-4">
             <div className="mb-2 flex items-center justify-between">
               <span className="text-xs font-bold" style={{ color: MAUVE }}>Pflege-Bingo!</span>
-              <span className="text-[10px]" style={{ color: ROSE }}>4 von 5 in einer Reihe!</span>
+              <span className="text-xs" style={{ color: ROSE }}>4 von 5 in einer Reihe!</span>
             </div>
             <div className="grid grid-cols-5 gap-1">
               {[
@@ -6185,7 +6185,7 @@ export default function UIShowcase() {
                 </div>
               </div>
             </div>
-            <p className="mb-2 text-[10px] font-bold" style={{ color: MAUVE }}>Was ist hier problematisch? (Mehrfachauswahl)</p>
+            <p className="mb-2 text-xs font-bold" style={{ color: MAUVE }}>Was ist hier problematisch? (Mehrfachauswahl)</p>
             <div className="space-y-1.5">
               {[
                 { text: "Keine Erklärung warum umgelagert wird", selected: true },
@@ -6234,7 +6234,7 @@ export default function UIShowcase() {
                 { label: "Tag 7", items: [{ text: "Rötung 2×2 cm", y: 40, changed: true }, { text: "Kleine Blase", y: 70, changed: true }, { text: "Normal", y: 100, changed: true }] },
               ].map((side, i) => (
                 <div key={i} className="rounded-xl overflow-hidden" style={{ border: `1px solid ${SAND}` }}>
-                  <div className="px-3 py-1.5 text-center text-[10px] font-bold" style={{ backgroundColor: BONE, color: MAUVE }}>{side.label}</div>
+                  <div className="px-3 py-1.5 text-center text-xs font-bold" style={{ backgroundColor: BONE, color: MAUVE }}>{side.label}</div>
                   <div className="relative h-32 flex flex-col items-center justify-center gap-2 p-2" style={{ backgroundColor: `${BLUSH}10` }}>
                     <div className="h-12 w-12 rounded-full" style={{ backgroundColor: i === 0 ? `${MAUVE}30` : `${BLUSH}30` }} />
                     {side.items.map((item, j) => (
@@ -6250,7 +6250,7 @@ export default function UIShowcase() {
                 </div>
               ))}
             </div>
-            <div className="mt-2 text-center text-[10px]" style={{ color: ROSE }}>1 von 3 Unterschieden gefunden</div>
+            <div className="mt-2 text-center text-xs" style={{ color: ROSE }}>1 von 3 Unterschieden gefunden</div>
           </div>
         </VariantCard>
 
@@ -6260,7 +6260,7 @@ export default function UIShowcase() {
             <div className="mb-3 rounded-xl p-3" style={{ backgroundColor: BONE }}>
               <p className="text-[11px] italic">&ldquo;Frau Schmidt, ich sehe dass Sie Schmerzen haben. Darf ich Ihnen helfen, eine bequemere Position zu finden?&rdquo;</p>
             </div>
-            <p className="mb-2 text-[10px] font-bold" style={{ color: MAUVE }}>Wie empathisch ist diese Aussage?</p>
+            <p className="mb-2 text-xs font-bold" style={{ color: MAUVE }}>Wie empathisch ist diese Aussage?</p>
             <div className="px-2">
               <div className="relative mb-1">
                 <div className="h-3 rounded-full" style={{ background: `linear-gradient(to right, ${MAUVE}, ${OAK}, ${ROSE})` }} />
@@ -6272,7 +6272,7 @@ export default function UIShowcase() {
                 <span style={{ color: ROSE }}>Einfühlsam</span>
               </div>
             </div>
-            <div className="mt-3 rounded-lg p-2 text-center text-[10px]" style={{ backgroundColor: `${ROSE}06`, color: ROSE }}>
+            <div className="mt-3 rounded-lg p-2 text-center text-xs" style={{ backgroundColor: `${ROSE}06`, color: ROSE }}>
               ✅ Sehr empathisch! Schmerz wird anerkannt + Hilfe angeboten + Autonomie gewahrt
             </div>
           </div>
@@ -6402,14 +6402,14 @@ export default function UIShowcase() {
               </div>
             </div>
             <div className="mt-3 rounded-xl p-3" style={{ backgroundColor: BONE }}>
-              <p className="text-[10px] font-bold" style={{ color: OAK }}>🔗 Verbindung:</p>
+              <p className="text-xs font-bold" style={{ color: OAK }}>🔗 Verbindung:</p>
               <p className="text-[11px] text-[#555]">Genau das passiert bei einem liegenden Patienten — nur über Stunden. Das Gewebe bekommt kein Blut mehr und stirbt ab.</p>
             </div>
             <div className="mt-2 text-center">
-              <p className="text-[10px] font-semibold" style={{ color: MAUVE }}>Hast du die Analogie verstanden?</p>
+              <p className="text-xs font-semibold" style={{ color: MAUVE }}>Hast du die Analogie verstanden?</p>
               <div className="mt-1 flex justify-center gap-3">
-                <button className="rounded-full px-4 py-1.5 text-[10px] font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>Ja, weiter!</button>
-                <button className="rounded-full px-4 py-1.5 text-[10px] font-medium" style={{ backgroundColor: `${SAND}20`, color: TAUPE }}>Nochmal erklären</button>
+                <button className="rounded-full px-4 py-1.5 text-xs font-medium" style={{ backgroundColor: `${ROSE}15`, color: ROSE }}>Ja, weiter!</button>
+                <button className="rounded-full px-4 py-1.5 text-xs font-medium" style={{ backgroundColor: `${SAND}20`, color: TAUPE }}>Nochmal erklären</button>
               </div>
             </div>
           </div>
@@ -6429,9 +6429,9 @@ export default function UIShowcase() {
             <div className="rounded-xl p-3" style={{ backgroundColor: `${ROSE}06` }}>
               <div className="flex items-center gap-3 mb-1">
                 <span className="text-lg font-bold" style={{ color: ROSE }}>8-12%</span>
-                <span className="text-[10px]" style={{ color: ROSE }}>← Richtige Antwort</span>
+                <span className="text-xs" style={{ color: ROSE }}>← Richtige Antwort</span>
               </div>
-              <p className="text-[10px] text-[#555]">Deine Schätzung: 12% — Sehr nah dran! Laut DNQP liegt die Prävalenz in deutschen Pflegeheimen bei 8-12%.</p>
+              <p className="text-xs text-[#555]">Deine Schätzung: 12% — Sehr nah dran! Laut DNQP liegt die Prävalenz in deutschen Pflegeheimen bei 8-12%.</p>
             </div>
           </div>
         </VariantCard>
@@ -6442,7 +6442,7 @@ export default function UIShowcase() {
             <div className="flex items-center justify-center mb-3">
               <div className="rounded-full px-4 py-2 text-xs font-bold text-white" style={{ backgroundColor: ROSE }}>Dekubitus</div>
             </div>
-            <p className="mb-2 text-center text-[10px] text-[#86868b]">Verknüpft mit:</p>
+            <p className="mb-2 text-center text-xs text-[#86868b]">Verknüpft mit:</p>
             <div className="space-y-1.5">
               {[
                 { ce: "CE 04", topic: "Ernährung & Hautzustand", link: "Mangelernährung ↔ Dekubitus-Risiko", pct: 85 },
@@ -6456,7 +6456,7 @@ export default function UIShowcase() {
                     <p className="text-[9px] text-[#86868b]">{ref.link}</p>
                   </div>
                   <div className="text-right">
-                    <span className="text-[10px] font-bold" style={{ color: ref.pct > 70 ? ROSE : OAK }}>{ref.pct}%</span>
+                    <span className="text-xs font-bold" style={{ color: ref.pct > 70 ? ROSE : OAK }}>{ref.pct}%</span>
                     <p className="text-[7px] text-[#86868b]">verstanden</p>
                   </div>
                 </div>
@@ -6480,7 +6480,7 @@ export default function UIShowcase() {
               <div className="h-36 flex items-center justify-center" style={{ backgroundColor: BONE }}>
                 <div className="text-center">
                   <span className="text-4xl">🧤</span>
-                  <p className="mt-1 text-[10px] text-[#86868b]">Illustration: Handschuhe anziehen</p>
+                  <p className="mt-1 text-xs text-[#86868b]">Illustration: Handschuhe anziehen</p>
                 </div>
               </div>
               <div className="p-3">
@@ -6499,10 +6499,10 @@ export default function UIShowcase() {
         <VariantCard label="L158" name="Wahr/Falsch Kette" description="Aussagen schnell als wahr oder falsch einordnen — Ketten-Modus">
           <div className="py-4">
             <div className="mb-3 flex items-center justify-between">
-              <span className="flex items-center gap-1 text-[10px] font-bold" style={{ color: ROSE }}>
+              <span className="flex items-center gap-1 text-xs font-bold" style={{ color: ROSE }}>
                 <Flame className="h-3.5 w-3.5" /> 7er Kette!
               </span>
-              <span className="text-[10px] font-mono" style={{ color: MAUVE }}>+140 XP</span>
+              <span className="text-xs font-mono" style={{ color: MAUVE }}>+140 XP</span>
             </div>
             <motion.div className="rounded-2xl p-5 text-center" style={{ backgroundColor: BONE }} initial={{ scale: 0.95 }} animate={{ scale: 1 }} transition={{ type: "spring" }}>
               <p className="text-sm font-medium">&ldquo;Ein Dekubitus Grad IV heilt in der Regel vollständig ab.&rdquo;</p>
@@ -6517,7 +6517,7 @@ export default function UIShowcase() {
             </div>
             <div className="mt-2 flex justify-center gap-1">
               {["✓","✓","✓","✓","✓","✓","✓","?"].map((c, i) => (
-                <span key={i} className="text-[10px] font-bold" style={{ color: c === "✓" ? ROSE : SAND }}>{c}</span>
+                <span key={i} className="text-xs font-bold" style={{ color: c === "✓" ? ROSE : SAND }}>{c}</span>
               ))}
             </div>
           </div>
@@ -6536,7 +6536,7 @@ export default function UIShowcase() {
                 <div key={i} className="flex items-start gap-3 rounded-xl px-3 py-2.5" style={{ backgroundColor: item.filled ? `${item.color}06` : BONE }}>
                   <div className="flex h-7 w-7 items-center justify-center rounded-lg text-xs font-bold text-white" style={{ backgroundColor: item.color }}>{item.label}</div>
                   <div className="flex-1">
-                    <p className="text-[10px] font-bold" style={{ color: item.color }}>{item.full}</p>
+                    <p className="text-xs font-bold" style={{ color: item.color }}>{item.full}</p>
                     {item.filled ? (
                       <p className="text-[11px] text-[#555]">{item.value}</p>
                     ) : (
@@ -6554,7 +6554,7 @@ export default function UIShowcase() {
           <div className="py-4">
             <div className="mb-3 text-center">
               <p className="text-base font-bold" style={{ color: MAUVE }}>Wer wird Pflegeprofi? 🏆</p>
-              <p className="text-[10px] text-[#86868b]">Frage 6 von 10 — 600 XP</p>
+              <p className="text-xs text-[#86868b]">Frage 6 von 10 — 600 XP</p>
             </div>
             {/* Schwierigkeits-Leiter */}
             <div className="mb-3 flex items-center justify-center gap-1">
@@ -6584,7 +6584,7 @@ export default function UIShowcase() {
                 { icon: "📞", used: true },
                 { icon: "👥", used: false },
               ].map((joker, i) => (
-                <button key={i} className="flex h-9 w-9 items-center justify-center rounded-full text-[10px] font-bold" style={{ backgroundColor: joker.used ? `${SAND}20` : `${MAUVE}10`, color: joker.used ? "#ccc" : MAUVE, border: `1px solid ${joker.used ? SAND : MAUVE}30`, opacity: joker.used ? 0.5 : 1 }}>
+                <button key={i} className="flex h-9 w-9 items-center justify-center rounded-full text-xs font-bold" style={{ backgroundColor: joker.used ? `${SAND}20` : `${MAUVE}10`, color: joker.used ? "#ccc" : MAUVE, border: `1px solid ${joker.used ? SAND : MAUVE}30`, opacity: joker.used ? 0.5 : 1 }}>
                   {joker.icon}
                 </button>
               ))}
@@ -6631,19 +6631,19 @@ export default function UIShowcase() {
               </div>
               <div className="space-y-3">
                 <div>
-                  <p className="mb-1 text-[10px] font-bold" style={{ color: ROSE }}>Was habe ich heute gelernt?</p>
+                  <p className="mb-1 text-xs font-bold" style={{ color: ROSE }}>Was habe ich heute gelernt?</p>
                   <div className="rounded-lg px-3 py-2 text-[11px]" style={{ backgroundColor: "white", border: `1px solid ${SAND}` }}>
                     Die 4 Stadien des Dekubitus und warum Lagerung so wichtig ist...
                   </div>
                 </div>
                 <div>
-                  <p className="mb-1 text-[10px] font-bold" style={{ color: OAK }}>Was war schwer?</p>
+                  <p className="mb-1 text-xs font-bold" style={{ color: OAK }}>Was war schwer?</p>
                   <div className="rounded-lg px-3 py-2 text-[11px]" style={{ backgroundColor: "white", border: `1px solid ${SAND}`, color: "#86868b" }}>
                     Tippe hier...
                   </div>
                 </div>
                 <div>
-                  <p className="mb-1 text-[10px] font-bold" style={{ color: TAUPE }}>Mein Ziel für morgen:</p>
+                  <p className="mb-1 text-xs font-bold" style={{ color: TAUPE }}>Mein Ziel für morgen:</p>
                   <div className="rounded-lg px-3 py-2 text-[11px]" style={{ backgroundColor: "white", border: `1px solid ${SAND}`, color: "#86868b" }}>
                     Tippe hier...
                   </div>
@@ -6658,7 +6658,7 @@ export default function UIShowcase() {
           <div className="py-4">
             <div className="mb-2 flex items-center gap-2">
               <AlertCircle className="h-4 w-4" style={{ color: MAUVE }} />
-              <span className="text-[10px] font-bold" style={{ color: MAUVE }}>ACHTUNG: Lies genau!</span>
+              <span className="text-xs font-bold" style={{ color: MAUVE }}>ACHTUNG: Lies genau!</span>
             </div>
             <div className="mb-3 rounded-xl p-3" style={{ backgroundColor: BONE }}>
               <p className="text-xs font-medium">Welche Aussage über Dekubitus Stadium I ist <strong style={{ color: ROSE }}>FALSCH</strong>?</p>
@@ -6749,20 +6749,20 @@ function ImageCompareSlider() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center">
             <div className="mx-auto mb-1 h-16 w-16 rounded-full" style={{ backgroundColor: `${MAUVE}30` }} />
-            <span className="text-[10px] text-[#86868b]">Tag 1 — Grad II</span>
+            <span className="text-xs text-[#86868b]">Tag 1 — Grad II</span>
           </div>
         </div>
         {/* "Nachher" Seite (clippt) */}
         <div className="absolute inset-0 flex items-center justify-center" style={{ clipPath: `inset(0 0 0 ${position}%)` }}>
           <div className="text-center">
             <div className="mx-auto mb-1 h-16 w-16 rounded-full" style={{ backgroundColor: `${BLUSH}40` }} />
-            <span className="text-[10px]" style={{ color: ROSE }}>Tag 7 — Heilung ✓</span>
+            <span className="text-xs" style={{ color: ROSE }}>Tag 7 — Heilung ✓</span>
           </div>
         </div>
         {/* Slider-Linie */}
         <div className="absolute top-0 bottom-0 w-0.5" style={{ left: `${position}%`, backgroundColor: ROSE }}>
           <div className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 flex h-8 w-8 items-center justify-center rounded-full shadow-md" style={{ backgroundColor: "white", border: `2px solid ${ROSE}` }}>
-            <span className="text-[10px]" style={{ color: ROSE }}>↔</span>
+            <span className="text-xs" style={{ color: ROSE }}>↔</span>
           </div>
         </div>
         {/* Drag area */}
@@ -6775,7 +6775,7 @@ function ImageCompareSlider() {
           className="absolute inset-0 h-full w-full cursor-ew-resize opacity-0"
         />
       </div>
-      <div className="flex justify-between px-4 py-2 text-[10px] text-[#86868b]">
+      <div className="flex justify-between px-4 py-2 text-xs text-[#86868b]">
         <span>← Vorher</span>
         <span>Nachher →</span>
       </div>
@@ -6788,7 +6788,7 @@ function ImageCompareSlider() {
 function SectionHeader({ id, title, subtitle }: { id: string; title: string; subtitle: string }) {
   return (
     <div id={id} className="mb-6 mt-16 first:mt-0 scroll-mt-16">
-      <div className="mb-1 text-[10px] font-semibold uppercase tracking-widest" style={{ color: OAK }}>
+      <div className="mb-1 text-xs font-semibold uppercase tracking-widest" style={{ color: OAK }}>
         {id}
       </div>
       <h2 className="text-xl font-bold">{title}</h2>

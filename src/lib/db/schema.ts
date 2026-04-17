@@ -9,12 +9,15 @@ import {
   pgEnum,
   real,
   date,
+  jsonb,
+  uniqueIndex,
+  index,
 } from "drizzle-orm/pg-core"
 import { relations } from "drizzle-orm"
 
-// ──────────────────────────────────────────────
-// Enums
-// ──────────────────────────────────────────────
+// ══════════════════════════════════════════════
+// ENUMS
+// ══════════════════════════════════════════════
 
 export const userRoleEnum = pgEnum("user_role", [
   "student",
@@ -31,43 +34,60 @@ export const licenseTypeEnum = pgEnum("license_type", [
   "paid",
 ])
 
-export const contentTypeEnum = pgEnum("content_type", [
-  "text",
-  "quiz",
-  "case",
-  "glossary",
-])
-
-export const questionTypeEnum = pgEnum("question_type", [
-  "mc",
-  "ordering",
-  "gap",
-  "flip",
-  "dragdrop",
-])
-
-export const masteryLevelEnum = pgEnum("mastery_level", [
-  "not_started",
-  "attempted",
-  "familiar",
-  "proficient",
-  "mastered",
-])
-
-export const xpSourceEnum = pgEnum("xp_source", [
-  "lesson",
-  "quiz",
-  "streak_bonus",
-  "daily_goal",
-  "mastery_up",
-])
-
 export const subscriptionStatusEnum = pgEnum("subscription_status", [
   "active",
   "canceled",
   "past_due",
   "none",
 ])
+
+export const contentTrackEnum = pgEnum("content_track", [
+  "basis",
+  "vertiefung",
+])
+
+export const contentTagEnum = pgEnum("content_tag", [
+  "anatomie",
+  "pflege",
+  "krankheitslehre",
+])
+
+export const masteryLevelEnum = pgEnum("mastery_level", [
+  "unbekannt",
+  "versucht",
+  "vertraut",
+  "sicher",
+  "gemeistert",
+])
+
+export const xpSourceEnum = pgEnum("xp_source", [
+  "step",
+  "session_complete",
+  "streak_bonus",
+  "daily_goal",
+  "mastery_up",
+  "exam",
+  "flashcard",
+])
+
+export const contentStatusEnum = pgEnum("content_status", [
+  "draft",
+  "review",
+  "published",
+  "archived",
+])
+
+export const errorCategoryEnum = pgEnum("error_category", [
+  "raten",
+  "konzept",
+  "sprache",
+  "verwechslung",
+  "fluechtig",
+])
+
+// ══════════════════════════════════════════════
+// PART 1: CONTENT TABLES (14)
+// ══════════════════════════════════════════════
 
 // ──────────────────────────────────────────────
 // 1. Schools (B2B)
@@ -86,7 +106,369 @@ export const schools = pgTable("schools", {
 })
 
 // ──────────────────────────────────────────────
-// 2. Users
+// 2. CE Units (11 Curriculare Einheiten)
+// ──────────────────────────────────────────────
+
+export const ceUnits = pgTable("ce_units", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  number: integer("number").notNull().unique(),
+  titleDe: varchar("title_de", { length: 500 }).notNull(),
+  titleAr: varchar("title_ar", { length: 500 }),
+  titleTr: varchar("title_tr", { length: 500 }),
+  ausbildungsdrittel: integer("ausbildungsdrittel").notNull(),
+  zeitrichtwertH: integer("zeitrichtwert_h").notNull(),
+  pruefungsrelevanz: jsonb("pruefungsrelevanz"),
+  isActive: boolean("is_active").notNull().default(true),
+})
+
+// ──────────────────────────────────────────────
+// 3. Lerneinheiten (55 total, ersetzt learnModules)
+// ──────────────────────────────────────────────
+
+export const lerneinheiten = pgTable(
+  "lerneinheiten",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    leId: varchar("le_id", { length: 20 }).notNull(),
+    ceId: uuid("ce_id")
+      .notNull()
+      .references(() => ceUnits.id, { onDelete: "cascade" }),
+    title: varchar("title", { length: 500 }).notNull(),
+    titleShort: varchar("title_short", { length: 200 }).notNull(),
+    titleAr: varchar("title_ar", { length: 500 }),
+    titleTr: varchar("title_tr", { length: 500 }),
+    zeitrichtwert: integer("zeitrichtwert").notNull(), // UE
+    sessionCount: integer("session_count").notNull().default(6),
+    geschaetzteLernzeit: jsonb("geschaetzte_lernzeit").notNull(), // { c1: 30, b1: 40 }
+    kompetenzbereiche: jsonb("kompetenzbereiche").notNull(), // ["KB-V.1"]
+    bloomStufen: jsonb("bloom_stufen").notNull(), // [1,2,3]
+    voraussetzungen: jsonb("voraussetzungen").notNull().default([]), // ["le-xx"]
+    leitfall: jsonb("leitfall"), // { name, alter, diagnose, setting }
+    sortOrder: integer("sort_order").notNull(),
+    status: contentStatusEnum("status").notNull().default("draft"),
+    version: integer("version").notNull().default(1),
+    publishedAt: timestamp("published_at"),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+    updatedAt: timestamp("updated_at").defaultNow().notNull(),
+  },
+  (table) => [
+    uniqueIndex("idx_lerneinheiten_le_id").on(table.leId),
+    index("idx_lerneinheiten_ce_id").on(table.ceId),
+    index("idx_lerneinheiten_status").on(table.status),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 4. Lernziele — Brücke Content ↔ Mastery
+// ──────────────────────────────────────────────
+
+export const lernziele = pgTable(
+  "lernziele",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    lernzielId: varchar("lernziel_id", { length: 100 }).notNull(),
+    leId: uuid("le_id")
+      .notNull()
+      .references(() => lerneinheiten.id, { onDelete: "cascade" }),
+    title: varchar("title", { length: 500 }).notNull(),
+    titleB1: varchar("title_b1", { length: 500 }),
+    kompetenzbereich: varchar("kompetenzbereich", { length: 20 }).notNull(),
+    bloomTarget: integer("bloom_target").notNull(),
+    tag: contentTagEnum("tag").notNull(),
+    sortOrder: integer("sort_order").notNull(),
+  },
+  (table) => [
+    uniqueIndex("idx_lernziele_id").on(table.lernzielId),
+    index("idx_lernziele_le_id").on(table.leId),
+    index("idx_lernziele_tag").on(table.tag),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 5. Content Steps — Kern-Tabelle (42+ Step-Typen)
+// ──────────────────────────────────────────────
+
+export const contentSteps = pgTable(
+  "content_steps",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    stepId: varchar("step_id", { length: 60 }).notNull(),
+    leId: uuid("le_id")
+      .notNull()
+      .references(() => lerneinheiten.id, { onDelete: "cascade" }),
+    session: varchar("session", { length: 10 }).notNull(), // "s1"–"s8"
+    stepType: varchar("step_type", { length: 30 }).notNull(),
+    bloomLevel: integer("bloom_level").notNull(),
+    kompetenzbereich: varchar("kompetenzbereich", { length: 20 }).notNull(),
+    track: contentTrackEnum("track").notNull().default("basis"),
+    modus: varchar("modus", { length: 30 }),
+    tag: contentTagEnum("tag").notNull(),
+
+    // Lernziel-Link (für Mastery + Multi-Strategie)
+    lernzielId: varchar("lernziel_id", { length: 100 }),
+    themenblockPhase: varchar("themenblock_phase", { length: 30 }),
+
+    // Multi-Strategie: gleicher lernzielId, anderer Variant = alternativer Weg
+    strategyVariant: integer("strategy_variant").notNull().default(1),
+
+    // Content (C1/B1 dual-level)
+    contentC1: jsonb("content_c1").notNull(), // { title, body }
+    contentB1: jsonb("content_b1"),
+
+    // Polymorphes question-Feld (JSONB)
+    question: jsonb("question"),
+
+    // Display & Media
+    displayFormat: varchar("display_format", { length: 30 }),
+    imageUrl: varchar("image_url", { length: 500 }),
+    imageAlt: varchar("image_alt", { length: 500 }),
+    audioUrl: varchar("audio_url", { length: 500 }),
+    bildkategorie: varchar("bildkategorie", { length: 20 }),
+
+    // Adaptive Metadata
+    difficulty: integer("difficulty"),
+    xpValue: integer("xp_value"),
+    quellen: jsonb("quellen").notNull().default([]),
+    patientId: varchar("patient_id", { length: 50 }),
+
+    // Versionierung
+    version: integer("version").notNull().default(1),
+    status: contentStatusEnum("status").notNull().default("draft"),
+    sortOrder: integer("sort_order").notNull(),
+
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+    updatedAt: timestamp("updated_at").defaultNow().notNull(),
+  },
+  (table) => [
+    uniqueIndex("idx_steps_step_id").on(table.stepId),
+    index("idx_steps_le_session").on(table.leId, table.session),
+    index("idx_steps_lernziel").on(table.lernzielId),
+    index("idx_steps_type").on(table.stepType),
+    index("idx_steps_bloom").on(table.bloomLevel),
+    index("idx_steps_track").on(table.track),
+    index("idx_steps_tag").on(table.tag),
+    index("idx_steps_strategy").on(table.lernzielId, table.strategyVariant),
+    index("idx_steps_status").on(table.status),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 6. Content Step History (Versionierung)
+// ──────────────────────────────────────────────
+
+export const contentStepHistory = pgTable(
+  "content_step_history",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    stepId: varchar("step_id", { length: 60 }).notNull(),
+    version: integer("version").notNull(),
+    fullSnapshot: jsonb("full_snapshot").notNull(),
+    changedBy: varchar("changed_by", { length: 100 }),
+    changeReason: text("change_reason"),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (table) => [index("idx_step_history").on(table.stepId, table.version)]
+)
+
+// ──────────────────────────────────────────────
+// 7. Artikel-Kapitel (Wissen-Tab)
+// ──────────────────────────────────────────────
+
+export const artikelKapitel = pgTable(
+  "artikel_kapitel",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    kapitelId: varchar("kapitel_id", { length: 60 }).notNull(),
+    leId: uuid("le_id")
+      .notNull()
+      .references(() => lerneinheiten.id, { onDelete: "cascade" }),
+    titel: varchar("titel", { length: 500 }).notNull(),
+    titelB1: varchar("titel_b1", { length: 500 }),
+    tag: contentTagEnum("tag").notNull(),
+    geschaetzteDauer: integer("geschaetzte_dauer").notNull(), // Minuten
+    bloecke: jsonb("bloecke").notNull(), // ArtikelBlock[]
+    glossarBegriffe: jsonb("glossar_begriffe"), // string[]
+    zusammenfassung: text("zusammenfassung"),
+    zusammenfassungB1: text("zusammenfassung_b1"),
+    headerImageUrl: varchar("header_image_url", { length: 500 }),
+    lernzielRef: varchar("lernziel_ref", { length: 100 }),
+    sortOrder: integer("sort_order").notNull(),
+    version: integer("version").notNull().default(1),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+    updatedAt: timestamp("updated_at").defaultNow().notNull(),
+  },
+  (table) => [
+    uniqueIndex("idx_artikel_kapitel_id").on(table.kapitelId),
+    index("idx_artikel_le").on(table.leId, table.sortOrder),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 8. Glossar-Entries (Fachbegriffe)
+// ──────────────────────────────────────────────
+
+export const glossarEntries = pgTable(
+  "glossar_entries",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    leId: uuid("le_id")
+      .notNull()
+      .references(() => lerneinheiten.id, { onDelete: "cascade" }),
+    begriff: varchar("begriff", { length: 255 }).notNull(),
+    erklaerung: text("erklaerung").notNull(),
+    erklaerungB1: text("erklaerung_b1"),
+    uebersetzungen: jsonb("uebersetzungen").notNull().default({}),
+    ausspracheAudio: varchar("aussprache_audio", { length: 500 }),
+    istB1Alltagswort: boolean("ist_b1_alltagswort").default(false),
+    vorsilbeNachsilbe: varchar("vorsilbe_nachsilbe", { length: 255 }),
+    sortOrder: integer("sort_order").notNull().default(0),
+  },
+  (table) => [
+    index("idx_glossar_le").on(table.leId),
+    index("idx_glossar_begriff").on(table.begriff),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 9. Karteikarten (Flashcard-Vorlagen)
+// ──────────────────────────────────────────────
+
+export const karteikarten = pgTable(
+  "karteikarten",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    karteikarteId: varchar("karteikarte_id", { length: 60 }).notNull(),
+    leId: uuid("le_id")
+      .notNull()
+      .references(() => lerneinheiten.id, { onDelete: "cascade" }),
+    vorderseite: text("vorderseite").notNull(),
+    rueckseiteC1: text("rueckseite_c1").notNull(),
+    rueckseiteB1: text("rueckseite_b1").notNull(),
+    tag: contentTagEnum("tag").notNull(),
+    kategorie: varchar("kategorie", { length: 30 }).notNull(),
+    pruefungsrelevant: boolean("pruefungsrelevant").notNull().default(false),
+    quelle: varchar("quelle", { length: 255 }),
+    sortOrder: integer("sort_order").notNull().default(0),
+  },
+  (table) => [
+    uniqueIndex("idx_karteikarte_id").on(table.karteikarteId),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 10. Lern-Snacks (Kernfakten-Checklisten)
+// ──────────────────────────────────────────────
+
+export const lernSnacks = pgTable(
+  "lern_snacks",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    leId: uuid("le_id")
+      .notNull()
+      .references(() => lerneinheiten.id, { onDelete: "cascade" }),
+    kapitelId: varchar("kapitel_id", { length: 60 }).notNull(),
+    titel: varchar("titel", { length: 500 }).notNull(),
+    titelB1: varchar("titel_b1", { length: 500 }),
+    tag: contentTagEnum("tag").notNull(),
+    items: jsonb("items").notNull(), // LernSnackItem[]
+    sortOrder: integer("sort_order").notNull(),
+  },
+  (table) => [index("idx_snacks_le").on(table.leId, table.sortOrder)]
+)
+
+// ──────────────────────────────────────────────
+// 11. Exam Patients (LE-übergreifend)
+// ──────────────────────────────────────────────
+
+export const examPatients = pgTable(
+  "exam_patients",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    patientId: varchar("patient_id", { length: 50 }).notNull(),
+    name: varchar("name", { length: 255 }).notNull(),
+    alter: integer("alter").notNull(),
+    geschlecht: varchar("geschlecht", { length: 5 }).notNull(),
+    diagnosen: jsonb("diagnosen").notNull(),
+    sourceLEs: jsonb("source_les").notNull(),
+    steckbrief: text("steckbrief").notNull(),
+  },
+  (table) => [uniqueIndex("idx_patient_id").on(table.patientId)]
+)
+
+// ──────────────────────────────────────────────
+// 12. Fallverläufe (Fall-Tab)
+// ──────────────────────────────────────────────
+
+export const fallverlaeufe = pgTable(
+  "fallverlaeufe",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    fallId: varchar("fall_id", { length: 60 }).notNull(),
+    leId: uuid("le_id")
+      .notNull()
+      .references(() => lerneinheiten.id, { onDelete: "cascade" }),
+    patientId: varchar("patient_id", { length: 50 }).notNull(),
+    titel: varchar("titel", { length: 500 }).notNull(),
+    titelB1: varchar("titel_b1", { length: 500 }),
+    fokus: contentTagEnum("fokus").notNull(),
+    stationen: jsonb("stationen").notNull(), // FallStation[] mit stepId-Referenzen
+    sortOrder: integer("sort_order").notNull().default(0),
+  },
+  (table) => [uniqueIndex("idx_fall_id").on(table.fallId)]
+)
+
+// ──────────────────────────────────────────────
+// 13. Praxis-Übungen (Praxis-Tab)
+// ──────────────────────────────────────────────
+
+export const praxisUebungen = pgTable(
+  "praxis_uebungen",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    uebungId: varchar("uebung_id", { length: 60 }).notNull(),
+    leId: uuid("le_id")
+      .notNull()
+      .references(() => lerneinheiten.id, { onDelete: "cascade" }),
+    typ: varchar("typ", { length: 30 }).notNull(),
+    titel: varchar("titel", { length: 500 }).notNull(),
+    titelB1: varchar("titel_b1", { length: 500 }),
+    beschreibungC1: text("beschreibung_c1").notNull(),
+    beschreibungB1: text("beschreibung_b1"),
+    bloomLevel: integer("bloom_level").notNull(),
+    stepIds: jsonb("step_ids").notNull(), // string[]
+    sortOrder: integer("sort_order").notNull().default(0),
+  },
+  (table) => [uniqueIndex("idx_uebung_id").on(table.uebungId)]
+)
+
+// ──────────────────────────────────────────────
+// 14. Exam Cases (Prüfungs-Tab)
+// ──────────────────────────────────────────────
+
+export const examCases = pgTable(
+  "exam_cases",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    caseId: varchar("case_id", { length: 60 }).notNull(),
+    leId: uuid("le_id")
+      .notNull()
+      .references(() => lerneinheiten.id, { onDelete: "cascade" }),
+    patientId: varchar("patient_id", { length: 50 }).notNull(),
+    titel: varchar("titel", { length: 500 }).notNull(),
+    schwierigkeit: varchar("schwierigkeit", { length: 20 }).notNull(),
+    bloomRange: jsonb("bloom_range").notNull(),
+    zeitLimitMinuten: integer("zeit_limit_minuten"),
+    phasen: jsonb("phasen").notNull(), // ExamCasePhase[] mit stepId-Referenzen
+  },
+  (table) => [uniqueIndex("idx_case_id").on(table.caseId)]
+)
+
+// ══════════════════════════════════════════════
+// PART 2: LEARNER TABLES (8)
+// ══════════════════════════════════════════════
+
+// ──────────────────────────────────────────────
+// 15. Users (erweitert)
 // ──────────────────────────────────────────────
 
 export const users = pgTable("users", {
@@ -98,7 +480,9 @@ export const users = pgTable("users", {
   schoolId: uuid("school_id").references(() => schools.id, {
     onDelete: "set null",
   }),
+  classId: uuid("class_id"),
   language: languageEnum("language").notNull().default("de"),
+  muttersprache: varchar("muttersprache", { length: 10 }),
   subscriptionStatus: subscriptionStatusEnum("subscription_status")
     .notNull()
     .default("none"),
@@ -106,155 +490,317 @@ export const users = pgTable("users", {
   isActive: boolean("is_active").notNull().default(true),
   isMinor: boolean("is_minor").notNull().default(false),
   parentalConsentAt: timestamp("parental_consent_at"),
+
+  // Zwei-Achsen-Profil (global)
+  sprachLevel: real("sprach_level"),
+  fachwissenLevel: real("fachwissen_level"),
+  achsenLetztBerechnet: timestamp("achsen_letzt_berechnet"),
+
+  // Lern-Präferenzen (KI lernt pro Schüler)
+  lernpraeferenzen: jsonb("lernpraeferenzen"), // { textEffektiv, bildEffektiv, audioEffektiv }
+
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 })
 
 // ──────────────────────────────────────────────
-// 3. CE Units (Curriculare Einheiten)
+// 16. User CE Profiles (Zwei-Achsen pro CE)
 // ──────────────────────────────────────────────
 
-export const ceUnits = pgTable("ce_units", {
-  id: uuid("id").defaultRandom().primaryKey(),
-  number: integer("number").notNull().unique(), // 1-11
-  titleDe: varchar("title_de", { length: 500 }).notNull(),
-  titleAr: varchar("title_ar", { length: 500 }),
-  titleTr: varchar("title_tr", { length: 500 }),
-  ausbildungsdrittel: integer("ausbildungsdrittel").notNull(), // 1, 2, or 3
-  zeitrichtwertH: integer("zeitrichtwert_h").notNull(), // hours
-  pruefungsrelevanz: text("pruefungsrelevanz"), // JSON string with Tag1/Tag2/Tag3/Muendlich/Praktisch
-  isActive: boolean("is_active").notNull().default(true),
-})
+export const userCeProfiles = pgTable(
+  "user_ce_profiles",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    ceId: uuid("ce_id")
+      .notNull()
+      .references(() => ceUnits.id, { onDelete: "cascade" }),
+    sprachLevel: real("sprach_level").notNull().default(3.0),
+    fachwissenLevel: real("fachwissen_level").notNull().default(1.0),
+    lastUpdated: timestamp("last_updated").defaultNow().notNull(),
+  },
+  (table) => [
+    uniqueIndex("idx_user_ce_profile").on(table.userId, table.ceId),
+  ]
+)
 
 // ──────────────────────────────────────────────
-// 4. Learn Modules
+// 17. User Lernziel Mastery (Khan-5-Level pro Lernziel)
 // ──────────────────────────────────────────────
 
-export const learnModules = pgTable("learn_modules", {
-  id: uuid("id").defaultRandom().primaryKey(),
-  ceId: uuid("ce_id")
-    .notNull()
-    .references(() => ceUnits.id, { onDelete: "cascade" }),
-  title: varchar("title", { length: 500 }).notNull(),
-  titleAr: varchar("title_ar", { length: 500 }),
-  titleTr: varchar("title_tr", { length: 500 }),
-  bloomLevel: integer("bloom_level").notNull(), // 1-6
-  order: integer("order").notNull(),
-  contentType: contentTypeEnum("content_type").notNull().default("text"),
-  contentDe: text("content_de"), // MDX/HTML content
-  contentAr: text("content_ar"),
-  contentTr: text("content_tr"),
-  durationMin: integer("duration_min").default(15),
-  isPublished: boolean("is_published").notNull().default(false),
-})
+export const userLernzielMastery = pgTable(
+  "user_lernziel_mastery",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    lernzielId: varchar("lernziel_id", { length: 100 }).notNull(),
+    stufe: masteryLevelEnum("stufe").notNull().default("unbekannt"),
+    richtigInFolge: integer("richtig_in_folge").notNull().default(0),
+    gesamtVersuche: integer("gesamt_versuche").notNull().default(0),
+    gesamtRichtig: integer("gesamt_richtig").notNull().default(0),
+    bloomMax: integer("bloom_max").notNull().default(0),
+    naechsteWiederholung: timestamp("naechste_wiederholung").notNull(),
+    letzteAntwort: timestamp("letzte_antwort"),
+  },
+  (table) => [
+    uniqueIndex("idx_mastery_user_lernziel").on(
+      table.userId,
+      table.lernzielId
+    ),
+    index("idx_mastery_user_due").on(
+      table.userId,
+      table.naechsteWiederholung
+    ),
+    index("idx_mastery_stufe").on(table.userId, table.stufe),
+  ]
+)
 
 // ──────────────────────────────────────────────
-// 5. Quiz Questions
+// 18. Step Responses (jede Antwort)
 // ──────────────────────────────────────────────
 
-export const quizQuestions = pgTable("quiz_questions", {
-  id: uuid("id").defaultRandom().primaryKey(),
-  moduleId: uuid("module_id")
-    .notNull()
-    .references(() => learnModules.id, { onDelete: "cascade" }),
-  questionDe: text("question_de").notNull(),
-  questionAr: text("question_ar"),
-  questionTr: text("question_tr"),
-  type: questionTypeEnum("type").notNull().default("mc"),
-  bloomLevel: integer("bloom_level").notNull().default(1),
-  difficulty: integer("difficulty").notNull().default(1), // 1-5
-  explanationDe: text("explanation_de"),
-  explanationAr: text("explanation_ar"),
-  metadata: text("metadata"), // JSON for ordering/dragdrop config
-})
+export const stepResponses = pgTable(
+  "step_responses",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    stepId: varchar("step_id", { length: 60 }).notNull(),
+    sessionLogId: uuid("session_log_id"),
+    correct: boolean("correct"),
+    gewaehlteOption: text("gewaehlte_option"),
+    freitextAntwort: text("freitext_antwort"),
+    zeitMs: integer("zeit_ms").notNull(),
+    zeitKlasse: varchar("zeit_klasse", { length: 15 }),
+    fehlerKategorie: errorCategoryEnum("fehler_kategorie"),
+    // Denormalisiert für Query-Performance
+    stepType: varchar("step_type", { length: 30 }).notNull(),
+    bloomLevel: integer("bloom_level").notNull(),
+    lernzielId: varchar("lernziel_id", { length: 100 }),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (table) => [
+    index("idx_responses_user").on(table.userId, table.createdAt),
+    index("idx_responses_user_step").on(table.userId, table.stepId),
+    index("idx_responses_user_lernziel").on(table.userId, table.lernzielId),
+    index("idx_responses_session").on(table.sessionLogId),
+  ]
+)
 
 // ──────────────────────────────────────────────
-// 6. Quiz Answers
+// 19. User Schwächen (Auto-Karteikarten bei Fehlern)
 // ──────────────────────────────────────────────
 
-export const quizAnswers = pgTable("quiz_answers", {
-  id: uuid("id").defaultRandom().primaryKey(),
-  questionId: uuid("question_id")
-    .notNull()
-    .references(() => quizQuestions.id, { onDelete: "cascade" }),
-  answerTextDe: text("answer_text_de").notNull(),
-  answerTextAr: text("answer_text_ar"),
-  answerTextTr: text("answer_text_tr"),
-  isCorrect: boolean("is_correct").notNull().default(false),
-  order: integer("order"), // for ordering questions
-})
+export const userSchwaechen = pgTable(
+  "user_schwaechen",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    leId: varchar("le_id", { length: 20 }).notNull(),
+    begriff: varchar("begriff", { length: 255 }).notNull(),
+    fragetext: text("fragetext").notNull(),
+    richtigeAntwort: text("richtige_antwort").notNull(),
+    falscheAntwort: text("falsche_antwort").notNull(),
+    naechsteWiederholung: timestamp("naechste_wiederholung").notNull(),
+    intervallTage: integer("intervall_tage").notNull().default(1),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (table) => [
+    index("idx_schwaechen_user_due").on(
+      table.userId,
+      table.naechsteWiederholung
+    ),
+  ]
+)
 
 // ──────────────────────────────────────────────
-// 7. Glossary Terms
+// 20. Placement Test Results (Einstufung)
 // ──────────────────────────────────────────────
 
-export const glossaryTerms = pgTable("glossary_terms", {
-  id: uuid("id").defaultRandom().primaryKey(),
-  ceId: uuid("ce_id").references(() => ceUnits.id, { onDelete: "cascade" }),
-  termDe: varchar("term_de", { length: 255 }).notNull(),
-  definitionDe: text("definition_de").notNull(),
-  termAr: varchar("term_ar", { length: 255 }),
-  definitionAr: text("definition_ar"),
-  termTr: varchar("term_tr", { length: 255 }),
-  definitionTr: text("definition_tr"),
-})
+export const placementTestResults = pgTable(
+  "placement_test_results",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    sprachLevel: real("sprach_level").notNull(),
+    fachwissenLevel: real("fachwissen_level").notNull(),
+    details: jsonb("details").notNull(),
+    completedAt: timestamp("completed_at").defaultNow().notNull(),
+  },
+  (table) => [
+    index("idx_placement_user").on(table.userId, table.completedAt),
+  ]
+)
 
 // ──────────────────────────────────────────────
-// 8. User Progress
+// 21. User Karteikarten Status
 // ──────────────────────────────────────────────
 
-export const userProgress = pgTable("user_progress", {
-  id: uuid("id").defaultRandom().primaryKey(),
-  userId: uuid("user_id")
-    .notNull()
-    .references(() => users.id, { onDelete: "cascade" }),
-  moduleId: uuid("module_id")
-    .notNull()
-    .references(() => learnModules.id, { onDelete: "cascade" }),
-  completedAt: timestamp("completed_at"),
-  scorePct: integer("score_pct"), // 0-100
-  attempts: integer("attempts").notNull().default(0),
-})
+export const userKarteikartenStatus = pgTable(
+  "user_karteikarten_status",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    karteikarteId: varchar("karteikarte_id", { length: 60 }).notNull(),
+    stufe: masteryLevelEnum("stufe").notNull().default("unbekannt"),
+    naechsteWiederholung: timestamp("naechste_wiederholung").notNull(),
+    intervallTage: real("intervall_tage").notNull().default(1),
+    letztesReview: timestamp("letztes_review"),
+  },
+  (table) => [
+    uniqueIndex("idx_kk_user").on(table.userId, table.karteikarteId),
+    index("idx_kk_due").on(table.userId, table.naechsteWiederholung),
+  ]
+)
 
 // ──────────────────────────────────────────────
-// 9. Skill Mastery (Khan Academy 5-stage pattern)
+// 22. User Lern-Snack Checks (ersetzt localStorage)
 // ──────────────────────────────────────────────
 
-export const skillMastery = pgTable("skill_mastery", {
-  id: uuid("id").defaultRandom().primaryKey(),
-  userId: uuid("user_id")
-    .notNull()
-    .references(() => users.id, { onDelete: "cascade" }),
-  moduleId: uuid("module_id")
-    .notNull()
-    .references(() => learnModules.id, { onDelete: "cascade" }),
-  level: masteryLevelEnum("level").notNull().default("not_started"),
-  updatedAt: timestamp("updated_at").defaultNow().notNull(),
-})
+export const userLernSnackChecks = pgTable(
+  "user_lern_snack_checks",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    snackItemId: varchar("snack_item_id", { length: 60 }).notNull(),
+    checked: boolean("checked").notNull().default(true),
+    checkedAt: timestamp("checked_at").defaultNow().notNull(),
+  },
+  (table) => [
+    uniqueIndex("idx_snack_user_item").on(table.userId, table.snackItemId),
+  ]
+)
+
+// ══════════════════════════════════════════════
+// PART 3: PLANNING TABLES (7)
+// ══════════════════════════════════════════════
 
 // ──────────────────────────────────────────────
-// 10. Spaced Repetition Queue (FSRS algorithm)
+// 23. Session Logs (Lernzeit-Nachweis)
 // ──────────────────────────────────────────────
 
-export const spacedRepetitionQueue = pgTable("spaced_repetition_queue", {
-  id: uuid("id").defaultRandom().primaryKey(),
-  userId: uuid("user_id")
-    .notNull()
-    .references(() => users.id, { onDelete: "cascade" }),
-  questionId: uuid("question_id")
-    .notNull()
-    .references(() => quizQuestions.id, { onDelete: "cascade" }),
-  nextReviewAt: timestamp("next_review_at").notNull(),
-  difficulty: real("difficulty").notNull().default(0),
-  stability: real("stability").notNull().default(0),
-  retrievability: real("retrievability").notNull().default(0),
-  intervalDays: real("interval_days").notNull().default(0),
-  reps: integer("reps").notNull().default(0),
-  lastReviewAt: timestamp("last_review_at"),
-})
+export const sessionLogs = pgTable(
+  "session_logs",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    leId: varchar("le_id", { length: 20 }).notNull(),
+    ceId: varchar("ce_id", { length: 20 }).notNull(),
+    session: varchar("session", { length: 10 }).notNull(),
+    startzeit: timestamp("startzeit").notNull(),
+    endzeit: timestamp("endzeit"),
+    aktivMinuten: real("aktiv_minuten").notNull().default(0),
+    stepsBearbeitet: integer("steps_bearbeitet").notNull().default(0),
+    stepsGesamt: integer("steps_gesamt").notNull().default(0),
+    score: integer("score"),
+    xpEarned: integer("xp_earned").notNull().default(0),
+    track: contentTrackEnum("track").notNull().default("basis"),
+    isComplete: boolean("is_complete").notNull().default(false),
+  },
+  (table) => [
+    index("idx_session_logs_user").on(table.userId, table.startzeit),
+    index("idx_session_logs_user_le").on(table.userId, table.leId),
+    index("idx_session_logs_ce").on(table.userId, table.ceId),
+  ]
+)
 
 // ──────────────────────────────────────────────
-// 11. User Streaks (Duolingo pattern)
+// 24. Spaced Repetition Queue (FSRS, Lernziel-Ebene)
+// ──────────────────────────────────────────────
+
+export const spacedRepetitionQueue = pgTable(
+  "spaced_repetition_queue",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    lernzielId: varchar("lernziel_id", { length: 100 }).notNull(),
+    nextReviewAt: timestamp("next_review_at").notNull(),
+    difficulty: real("difficulty").notNull().default(0.3),
+    stability: real("stability").notNull().default(0),
+    retrievability: real("retrievability").notNull().default(0),
+    intervalDays: real("interval_days").notNull().default(0),
+    reps: integer("reps").notNull().default(0),
+    lastReviewAt: timestamp("last_review_at"),
+    lastRating: integer("last_rating"),
+  },
+  (table) => [
+    uniqueIndex("idx_sr_user_lernziel").on(table.userId, table.lernzielId),
+    index("idx_sr_due").on(table.userId, table.nextReviewAt),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 25. User LE Progress (LE-Level Fortschritt)
+// ──────────────────────────────────────────────
+
+export const userLeProgress = pgTable(
+  "user_le_progress",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    leId: varchar("le_id", { length: 20 }).notNull(),
+    gesamtXp: integer("gesamt_xp").notNull().default(0),
+    abgeschlossen: boolean("abgeschlossen").notNull().default(false),
+    letzterScore: integer("letzter_score"),
+    naechsteWiederholung: timestamp("naechste_wiederholung"),
+    letzteAktivitaet: timestamp("letzte_aktivitaet").defaultNow().notNull(),
+    sessionProgress: jsonb("session_progress").notNull().default({}),
+  },
+  (table) => [
+    uniqueIndex("idx_le_progress_user_le").on(table.userId, table.leId),
+    index("idx_le_progress_wiederholung").on(
+      table.userId,
+      table.naechsteWiederholung
+    ),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 26. Daily Activity
+// ──────────────────────────────────────────────
+
+export const dailyActivity = pgTable(
+  "daily_activity",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    datum: date("datum").notNull(),
+    minutenAktiv: real("minuten_aktiv").notNull().default(0),
+    xpVerdient: integer("xp_verdient").notNull().default(0),
+    sessionsAbgeschlossen: integer("sessions_abgeschlossen")
+      .notNull()
+      .default(0),
+    stepsBearbeitet: integer("steps_bearbeitet").notNull().default(0),
+  },
+  (table) => [
+    uniqueIndex("idx_daily_user_date").on(table.userId, table.datum),
+    index("idx_daily_date").on(table.datum),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 27. User Streaks
 // ──────────────────────────────────────────────
 
 export const userStreaks = pgTable("user_streaks", {
@@ -272,21 +818,26 @@ export const userStreaks = pgTable("user_streaks", {
 })
 
 // ──────────────────────────────────────────────
-// 12. XP Log
+// 28. XP Log
 // ──────────────────────────────────────────────
 
-export const xpLog = pgTable("xp_log", {
-  id: uuid("id").defaultRandom().primaryKey(),
-  userId: uuid("user_id")
-    .notNull()
-    .references(() => users.id, { onDelete: "cascade" }),
-  xpAmount: integer("xp_amount").notNull(),
-  source: xpSourceEnum("source").notNull(),
-  createdAt: timestamp("created_at").defaultNow().notNull(),
-})
+export const xpLog = pgTable(
+  "xp_log",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    xpAmount: integer("xp_amount").notNull(),
+    source: xpSourceEnum("source").notNull(),
+    referenceId: varchar("reference_id", { length: 100 }),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (table) => [index("idx_xp_log_user").on(table.userId, table.createdAt)]
+)
 
 // ──────────────────────────────────────────────
-// 13. User Daily Goals
+// 29. User Daily Goals
 // ──────────────────────────────────────────────
 
 export const userDailyGoals = pgTable("user_daily_goals", {
@@ -295,96 +846,279 @@ export const userDailyGoals = pgTable("user_daily_goals", {
     .notNull()
     .references(() => users.id, { onDelete: "cascade" })
     .unique(),
-  goalMinutes: integer("goal_minutes").notNull().default(10), // 5, 10, 15, 20
+  goalMinutes: integer("goal_minutes").notNull().default(10),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+})
+
+// ══════════════════════════════════════════════
+// PART 4: SCHOOL / TEACHER TABLES (5)
+// ══════════════════════════════════════════════
+
+// ──────────────────────────────────────────────
+// 30. Classes (Klassen-Gruppierung)
+// ──────────────────────────────────────────────
+
+export const classes = pgTable("classes", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  schoolId: uuid("school_id")
+    .notNull()
+    .references(() => schools.id, { onDelete: "cascade" }),
+  name: varchar("name", { length: 255 }).notNull(),
+  ausbildungsdrittel: integer("ausbildungsdrittel").notNull(),
+  teacherId: uuid("teacher_id")
+    .notNull()
+    .references(() => users.id),
+  startDate: date("start_date"),
+  endDate: date("end_date"),
+  isActive: boolean("is_active").notNull().default(true),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 })
 
 // ──────────────────────────────────────────────
-// Relations
+// 31. Class Assignments (Lehrer → Klasse → LE)
 // ──────────────────────────────────────────────
+
+export const classAssignments = pgTable("class_assignments", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  classId: uuid("class_id")
+    .notNull()
+    .references(() => classes.id, { onDelete: "cascade" }),
+  leId: varchar("le_id", { length: 20 }).notNull(),
+  dueDate: date("due_date"),
+  notes: text("notes"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+})
+
+// ──────────────────────────────────────────────
+// 32. Teacher-Student Messages (In-App Chat)
+// ──────────────────────────────────────────────
+
+export const teacherStudentMessages = pgTable(
+  "teacher_student_messages",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    senderId: uuid("sender_id")
+      .notNull()
+      .references(() => users.id),
+    receiverId: uuid("receiver_id")
+      .notNull()
+      .references(() => users.id),
+    content: text("content").notNull(),
+    contextLeId: varchar("context_le_id", { length: 20 }),
+    contextStepId: varchar("context_step_id", { length: 60 }),
+    isRead: boolean("is_read").notNull().default(false),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (table) => [
+    index("idx_messages_receiver").on(
+      table.receiverId,
+      table.isRead,
+      table.createdAt
+    ),
+    index("idx_messages_sender").on(table.senderId, table.createdAt),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 33. Lernzeit Reports (Materialisierte Berichte)
+// ──────────────────────────────────────────────
+
+export const lernzeitReports = pgTable(
+  "lernzeit_reports",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    ceId: varchar("ce_id", { length: 20 }).notNull(),
+    kompetenzbereich: varchar("kompetenzbereich", { length: 20 }).notNull(),
+    totalMinuten: real("total_minuten").notNull(),
+    totalSteps: integer("total_steps").notNull(),
+    avgScore: real("avg_score"),
+    zeitraum: varchar("zeitraum", { length: 50 }).notNull(),
+    updatedAt: timestamp("updated_at").defaultNow().notNull(),
+  },
+  (table) => [
+    index("idx_lernzeit_user").on(table.userId, table.ceId, table.zeitraum),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 34. Crowd Poll Responses (echte Daten)
+// ──────────────────────────────────────────────
+
+export const crowdPollResponses = pgTable(
+  "crowd_poll_responses",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    stepId: varchar("step_id", { length: 60 }).notNull(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    response: text("response").notNull(),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (table) => [
+    index("idx_poll_step").on(table.stepId),
+    uniqueIndex("idx_poll_unique").on(table.stepId, table.userId),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 35. Push Subscriptions (Web Push API)
+// ──────────────────────────────────────────────
+
+export const pushSubscriptions = pgTable(
+  "push_subscriptions",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    endpoint: text("endpoint").notNull(),
+    p256dh: text("p256dh").notNull(),
+    auth: text("auth").notNull(),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (table) => [
+    uniqueIndex("idx_push_endpoint").on(table.endpoint),
+    index("idx_push_user").on(table.userId),
+  ]
+)
+
+// ══════════════════════════════════════════════
+// RELATIONS
+// ══════════════════════════════════════════════
 
 export const schoolsRelations = relations(schools, ({ many }) => ({
   users: many(users),
+  classes: many(classes),
 }))
+
+export const ceUnitsRelations = relations(ceUnits, ({ many }) => ({
+  lerneinheiten: many(lerneinheiten),
+  userCeProfiles: many(userCeProfiles),
+}))
+
+export const lerneinheitenRelations = relations(
+  lerneinheiten,
+  ({ one, many }) => ({
+    ceUnit: one(ceUnits, {
+      fields: [lerneinheiten.ceId],
+      references: [ceUnits.id],
+    }),
+    lernziele: many(lernziele),
+    contentSteps: many(contentSteps),
+    artikelKapitel: many(artikelKapitel),
+    glossarEntries: many(glossarEntries),
+    lernSnacks: many(lernSnacks),
+    fallverlaeufe: many(fallverlaeufe),
+    praxisUebungen: many(praxisUebungen),
+    examCases: many(examCases),
+  })
+)
+
+export const lernzieleRelations = relations(lernziele, ({ one, many }) => ({
+  lerneinheit: one(lerneinheiten, {
+    fields: [lernziele.leId],
+    references: [lerneinheiten.id],
+  }),
+  contentSteps: many(contentSteps),
+}))
+
+export const contentStepsRelations = relations(contentSteps, ({ one }) => ({
+  lerneinheit: one(lerneinheiten, {
+    fields: [contentSteps.leId],
+    references: [lerneinheiten.id],
+  }),
+}))
+
+export const artikelKapitelRelations = relations(
+  artikelKapitel,
+  ({ one }) => ({
+    lerneinheit: one(lerneinheiten, {
+      fields: [artikelKapitel.leId],
+      references: [lerneinheiten.id],
+    }),
+  })
+)
+
+export const glossarEntriesRelations = relations(
+  glossarEntries,
+  ({ one }) => ({
+    lerneinheit: one(lerneinheiten, {
+      fields: [glossarEntries.leId],
+      references: [lerneinheiten.id],
+    }),
+  })
+)
 
 export const usersRelations = relations(users, ({ one, many }) => ({
   school: one(schools, {
     fields: [users.schoolId],
     references: [schools.id],
   }),
-  progress: many(userProgress),
-  mastery: many(skillMastery),
+  class: one(classes, {
+    fields: [users.classId],
+    references: [classes.id],
+  }),
+  ceProfiles: many(userCeProfiles),
+  mastery: many(userLernzielMastery),
+  stepResponses: many(stepResponses),
+  schwaechen: many(userSchwaechen),
+  leProgress: many(userLeProgress),
+  sessionLogs: many(sessionLogs),
   streaks: one(userStreaks),
   xpLogs: many(xpLog),
   dailyGoal: one(userDailyGoals),
   repetitionQueue: many(spacedRepetitionQueue),
 }))
 
-export const ceUnitsRelations = relations(ceUnits, ({ many }) => ({
-  modules: many(learnModules),
-  glossaryTerms: many(glossaryTerms),
-}))
-
-export const learnModulesRelations = relations(
-  learnModules,
-  ({ one, many }) => ({
+export const userCeProfilesRelations = relations(
+  userCeProfiles,
+  ({ one }) => ({
+    user: one(users, {
+      fields: [userCeProfiles.userId],
+      references: [users.id],
+    }),
     ceUnit: one(ceUnits, {
-      fields: [learnModules.ceId],
+      fields: [userCeProfiles.ceId],
       references: [ceUnits.id],
     }),
-    questions: many(quizQuestions),
-    progress: many(userProgress),
-    mastery: many(skillMastery),
   })
 )
 
-export const quizQuestionsRelations = relations(
-  quizQuestions,
-  ({ one, many }) => ({
-    module: one(learnModules, {
-      fields: [quizQuestions.moduleId],
-      references: [learnModules.id],
+export const userLernzielMasteryRelations = relations(
+  userLernzielMastery,
+  ({ one }) => ({
+    user: one(users, {
+      fields: [userLernzielMastery.userId],
+      references: [users.id],
     }),
-    answers: many(quizAnswers),
-    repetitionEntries: many(spacedRepetitionQueue),
   })
 )
 
-export const quizAnswersRelations = relations(quizAnswers, ({ one }) => ({
-  question: one(quizQuestions, {
-    fields: [quizAnswers.questionId],
-    references: [quizQuestions.id],
-  }),
-}))
-
-export const glossaryTermsRelations = relations(glossaryTerms, ({ one }) => ({
-  ceUnit: one(ceUnits, {
-    fields: [glossaryTerms.ceId],
-    references: [ceUnits.id],
-  }),
-}))
-
-export const userProgressRelations = relations(userProgress, ({ one }) => ({
+export const stepResponsesRelations = relations(stepResponses, ({ one }) => ({
   user: one(users, {
-    fields: [userProgress.userId],
+    fields: [stepResponses.userId],
     references: [users.id],
   }),
-  module: one(learnModules, {
-    fields: [userProgress.moduleId],
-    references: [learnModules.id],
+  sessionLog: one(sessionLogs, {
+    fields: [stepResponses.sessionLogId],
+    references: [sessionLogs.id],
   }),
 }))
 
-export const skillMasteryRelations = relations(skillMastery, ({ one }) => ({
-  user: one(users, {
-    fields: [skillMastery.userId],
-    references: [users.id],
-  }),
-  module: one(learnModules, {
-    fields: [skillMastery.moduleId],
-    references: [learnModules.id],
-  }),
-}))
+export const sessionLogsRelations = relations(
+  sessionLogs,
+  ({ one, many }) => ({
+    user: one(users, {
+      fields: [sessionLogs.userId],
+      references: [users.id],
+    }),
+    responses: many(stepResponses),
+  })
+)
 
 export const spacedRepetitionQueueRelations = relations(
   spacedRepetitionQueue,
@@ -393,9 +1127,15 @@ export const spacedRepetitionQueueRelations = relations(
       fields: [spacedRepetitionQueue.userId],
       references: [users.id],
     }),
-    question: one(quizQuestions, {
-      fields: [spacedRepetitionQueue.questionId],
-      references: [quizQuestions.id],
+  })
+)
+
+export const userLeProgressRelations = relations(
+  userLeProgress,
+  ({ one }) => ({
+    user: one(users, {
+      fields: [userLeProgress.userId],
+      references: [users.id],
     }),
   })
 )
@@ -419,6 +1159,55 @@ export const userDailyGoalsRelations = relations(
   ({ one }) => ({
     user: one(users, {
       fields: [userDailyGoals.userId],
+      references: [users.id],
+    }),
+  })
+)
+
+export const classesRelations = relations(classes, ({ one, many }) => ({
+  school: one(schools, {
+    fields: [classes.schoolId],
+    references: [schools.id],
+  }),
+  teacher: one(users, {
+    fields: [classes.teacherId],
+    references: [users.id],
+  }),
+  students: many(users),
+  assignments: many(classAssignments),
+}))
+
+export const classAssignmentsRelations = relations(
+  classAssignments,
+  ({ one }) => ({
+    class: one(classes, {
+      fields: [classAssignments.classId],
+      references: [classes.id],
+    }),
+  })
+)
+
+export const teacherStudentMessagesRelations = relations(
+  teacherStudentMessages,
+  ({ one }) => ({
+    sender: one(users, {
+      fields: [teacherStudentMessages.senderId],
+      references: [users.id],
+      relationName: "sentMessages",
+    }),
+    receiver: one(users, {
+      fields: [teacherStudentMessages.receiverId],
+      references: [users.id],
+      relationName: "receivedMessages",
+    }),
+  })
+)
+
+export const lernzeitReportsRelations = relations(
+  lernzeitReports,
+  ({ one }) => ({
+    user: one(users, {
+      fields: [lernzeitReports.userId],
       references: [users.id],
     }),
   })

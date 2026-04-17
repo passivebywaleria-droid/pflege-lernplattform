@@ -153,7 +153,7 @@ export function StepFreetext({
                 <HandDrawnIcon name="lightbulb" size={16} color="#D4956A" className="inline-block mr-1" /> Musterantwort
               </p>
               <p className="text-sm text-[var(--lern-text-primary)]/70 italic">
-                &ldquo;{musterantwort}&rdquo;
+                &ldquo;{musterantwort.replace(/\s*\[I Care[^\]]*\]/g, "")}&rdquo;
               </p>
             </motion.div>
           )}

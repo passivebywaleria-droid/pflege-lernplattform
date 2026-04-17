@@ -38,7 +38,7 @@ export function LeTabs({ activeTab, onTabChange, hasArtikel, hasFallverlaeufe, h
   };
 
   return (
-    <div className="flex w-full border-b border-[var(--lern-border)]" style={{ color: "#1d1d1f" }}>
+    <div className="flex w-full border-b border-[var(--lern-border)]" style={{ color: "var(--lern-text-primary)" }}>
       {TABS.map((tab) => {
         const Icon = tab.icon;
         const disabled = isDisabled(tab.id);

@@ -146,7 +146,7 @@ export function StepLabelImage({
             {/* Gewählter/Richtiger Begriff */}
             {(answers[label.id] || checked) && (
               <span
-                className={`absolute top-full mt-1 left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px] font-bold px-1.5 py-0.5 rounded ${
+                className={`absolute top-full mt-1 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs font-bold px-1.5 py-0.5 rounded ${
                   checked
                     ? answers[label.id] === label.correct
                       ? "bg-[#6B8F71]/20 text-[#6B8F71]"

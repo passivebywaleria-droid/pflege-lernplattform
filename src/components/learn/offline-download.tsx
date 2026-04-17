@@ -139,7 +139,7 @@ export function OfflineDownload({ leId, leTitle, sessionCount = 8 }: OfflineDown
             <p className="text-xs font-medium text-[var(--lern-text-primary)]">
               {isCached ? "Offline verfügbar" : "Für Offline speichern"}
             </p>
-            <p className="text-[10px] text-[var(--lern-text-tertiary)]">{leTitle}</p>
+            <p className="text-xs text-[var(--lern-text-tertiary)]">{leTitle}</p>
           </div>
         </div>
 

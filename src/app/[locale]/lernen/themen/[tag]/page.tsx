@@ -71,7 +71,7 @@ export default function ThemenTagPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[var(--lern-bg)]" style={{ color: "#1d1d1f" }}>
+    <div className="min-h-screen bg-[var(--lern-bg)]" style={{ color: "var(--lern-text-primary)" }}>
       {/* Header */}
       <div className="bg-[var(--lern-bg-primary)] border-b border-[var(--lern-border)]/50">
         <div className="mx-auto max-w-3xl px-4 py-6">
@@ -191,7 +191,7 @@ export default function ThemenTagPage() {
                           />
                         )}
                       </div>
-                      <div className="flex gap-3 mt-1.5 text-[10px] text-[var(--lern-text-tertiary)]">
+                      <div className="flex gap-3 mt-1.5 text-xs text-[var(--lern-text-tertiary)]">
                         {le.anatomie > 0 && (
                           <span>🦴 {le.anatomie}</span>
                         )}

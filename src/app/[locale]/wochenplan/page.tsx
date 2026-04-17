@@ -63,7 +63,7 @@ function TagKarte({
             {TAG_NAMEN[tag.tag]}
           </span>
           {istHeute && (
-            <span className="rounded-full bg-[#C4877F] px-2 py-0.5 text-[10px] font-semibold text-white">
+            <span className="rounded-full bg-[#C4877F] px-2 py-0.5 text-xs font-semibold text-white">
               {t("today")}
             </span>
           )}

@@ -227,7 +227,7 @@ export function StepDialog({
                 </span>
               )}
               {renderBold(m.text)}
-              <span className="block text-right text-[10px] text-[#667781] mt-1">
+              <span className="block text-right text-xs text-[#667781] mt-1">
                 {new Date().toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })}
               </span>
             </div>

@@ -27,7 +27,7 @@ export const LE01_LERN_SNACK: LernSnack[] = [
     titelB1: "Was bedeutet Pflege?",
     tag: "pflege",
     items: [
-      { id: "le01-snack-k02-01", faktC1: "Die ICN-Definition (2002) beschreibt Pflege als Förderung von Gesundheit, Verhütung von Krankheit und Betreuung Kranker", faktB1: "Der ICN sagt: Pflege fördert Gesundheit und kümmert sich um kranke Menschen", kapitelRef: "le01-kap-02" },
+      { id: "le01-snack-k02-01", faktC1: "Die ICN-Definition (2002) nennt vier Kernaufgaben: Gesundheit fördern, Krankheit verhüten, Gesundheit wiederherstellen sowie Leiden lindern und würdevolles Sterben begleiten", faktB1: "Der ICN nennt 4 Aufgaben: Gesundheit fördern, Krankheit verhindern, Gesundheit wiederherstellen und Leiden lindern", kapitelRef: "le01-kap-02" },
       { id: "le01-snack-k02-02", faktC1: "Laienpflege (durch Angehörige) und professionelle Pflege ergänzen sich — ersetzen sich nicht", faktB1: "Pflege durch Familie und Pflege durch Fachkräfte gehören zusammen", kapitelRef: "le01-kap-02" },
       { id: "le01-snack-k02-03", faktC1: "Eine Profession zeichnet sich aus durch: wissenschaftliche Grundlage, Ethikkodex, Berufsverbände und Autonomie", faktB1: "Ein Beruf ist eine Profession wenn er Wissenschaft, Regeln und eigene Verbände hat", kapitelRef: "le01-kap-02" },
       { id: "le01-snack-k02-04", faktC1: "Vorbehaltene Tätigkeiten (§ 4 PflBG) dürfen nur Pflegefachpersonen ausführen", faktB1: "Manche Aufgaben dürfen nur Pflegefachkräfte machen (steht im Gesetz)", kapitelRef: "le01-kap-02" },

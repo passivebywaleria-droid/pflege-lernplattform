@@ -175,8 +175,8 @@ async function factCheckFile(filePath: string): Promise<FactCheckResult[]> {
   // Steps aus Datei laden (dynamisch)
   const content = fs.readFileSync(filePath, "utf-8");
 
-  // Export-Name extrahieren (STEPS_S1, STEPS_S2, etc.)
-  const exportMatch = content.match(/export\s+const\s+(STEPS_S\d+)/);
+  // Export-Name extrahieren (Naming-Standard 2026-04-16: LE{NN}_STEPS_S{N}, Fallback STEPS_S{N})
+  const exportMatch = content.match(/export\s+const\s+((?:LE\d+_)?STEPS_S\d+)/);
   if (!exportMatch) {
     console.error(`Kein STEPS_Sx Export in ${filePath} gefunden.`);
     return [];

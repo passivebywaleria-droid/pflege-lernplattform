@@ -50,7 +50,7 @@ export function PfadPicker({
           transition={{ type: "spring", damping: 25, stiffness: 300 }}
           onClick={(e) => e.stopPropagation()}
           className="relative w-full max-w-lg max-h-[80vh] overflow-y-auto rounded-t-3xl sm:rounded-3xl bg-white shadow-2xl"
-          style={{ color: "#1d1d1f" }}
+          style={{ color: "var(--lern-text-primary)" }}
         >
           {/* Handle */}
           <div className="sticky top-0 bg-white pt-3 pb-2 px-6 rounded-t-3xl z-10">
@@ -117,7 +117,7 @@ export function PfadPicker({
                             </p>
                             <div className="flex items-center gap-2 mt-0.5">
                               <span
-                                className={`inline-flex items-center gap-1 text-[10px] font-medium px-1.5 py-0.5 rounded-full ${tagColor.bg} ${tagColor.text}`}
+                                className={`inline-flex items-center gap-1 text-xs font-medium px-1.5 py-0.5 rounded-full ${tagColor.bg} ${tagColor.text}`}
                               >
                                 <span
                                   className={`w-1.5 h-1.5 rounded-full ${tagColor.dot}`}
@@ -127,7 +127,7 @@ export function PfadPicker({
                                   : label.tag.charAt(0).toUpperCase() +
                                     label.tag.slice(1)}
                               </span>
-                              <span className="text-[10px] text-gray-400">
+                              <span className="text-xs text-gray-400">
                                 Bloom {label.bloomRange}
                               </span>
                             </div>

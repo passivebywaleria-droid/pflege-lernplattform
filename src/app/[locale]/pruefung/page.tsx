@@ -13,7 +13,8 @@ import {
 } from "@/lib/pruefung/fragen-pool";
 import { useLernFortschritt } from "@/hooks/use-lern-fortschritt";
 import { getCrossLEPatienten } from "../../../../content/_patients";
-import type { ExamPatient } from "../../../../content/_types";
+import type { ExamPatient, ExamCase } from "../../../../content/_types";
+import { FallverlaufEngine } from "@/components/learn/fallverlauf-engine";
 
 // --- Typen ---
 
@@ -61,12 +62,56 @@ function letzterVersuch(ceId: string): GespeichertesErgebnis | null {
 
 // --- Hauptkomponente ---
 
-// --- Fallverlauf-Platzhalter ---
+// --- Fallverlauf-Tab ---
 
 function FallverlaufTab({ locale }: { locale: string }) {
   const crossLEPatienten = useMemo(() => getCrossLEPatienten(), []);
+  const [examCases, setExamCases] = useState<ExamCase[]>([]);
+  const [activeCase, setActiveCase] = useState<ExamCase | null>(null);
+  const [loading, setLoading] = useState(true);
 
-  if (crossLEPatienten.length === 0) {
+  // Lade ExamCases aus allen published LEs
+  useEffect(() => {
+    async function loadCases() {
+      try {
+        const { loadPruefung, getAllLektionen } = await import("../../../../content/content-loader");
+        const lektionen = getAllLektionen();
+        const cases: ExamCase[] = [];
+        for (const le of lektionen) {
+          if (le.status === "published" || le.status === "geprueft") {
+            const examCase = await loadPruefung(le.leId);
+            if (examCase && examCase.phasen.length > 0) {
+              cases.push(examCase);
+            }
+          }
+        }
+        setExamCases(cases);
+      } catch {
+        // Content-Loader nicht verfügbar
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadCases();
+  }, []);
+
+  // Aktiver Fallverlauf — Engine anzeigen
+  if (activeCase) {
+    return <FallverlaufEngine examCase={activeCase} onExit={() => setActiveCase(null)} />;
+  }
+
+  if (loading) {
+    return (
+      <div className="mx-auto max-w-2xl px-4 py-6 space-y-4">
+        {[1, 2].map((i) => (
+          <div key={i} className="animate-pulse rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5 h-40" />
+        ))}
+      </div>
+    );
+  }
+
+  // Keine Fälle verfügbar + keine Cross-LE-Patienten
+  if (examCases.length === 0 && crossLEPatienten.length === 0) {
     return (
       <div className="mx-auto max-w-2xl px-4 py-6 space-y-4">
         <motion.div
@@ -74,33 +119,19 @@ function FallverlaufTab({ locale }: { locale: string }) {
           animate={{ opacity: 1, y: 0 }}
           className="rounded-2xl bg-[#9B7EA6]/5 border border-[#9B7EA6]/20 p-5"
         >
-          <h2 className="text-sm font-semibold text-[#9B7EA6] mb-2">Fallverl&auml;ufe</h2>
+          <h2 className="text-sm font-semibold text-[#9B7EA6] mb-2">Fallverläufe</h2>
           <p className="text-sm text-[var(--lern-text-secondary)] leading-relaxed">
-            Hier werden LE-&uuml;bergreifende Patientenf&auml;lle erscheinen — wie in der echten PflAPrV-Pr&uuml;fung.
-            Ein Patient durchl&auml;uft mehrere Stationen und Zeitpunkte. Du triffst Entscheidungen, planst Pflege und begr&uuml;ndest dein Handeln.
+            Hier werden LE-übergreifende Patientenfälle erscheinen — wie in der echten PflAPrV-Prüfung.
+            Ein Patient durchläuft mehrere Stationen und Zeitpunkte. Du triffst Entscheidungen, planst Pflege und begründest dein Handeln.
           </p>
           <p className="text-sm text-[var(--lern-text-tertiary)] mt-3">
-            Verf&uuml;gbar sobald du mindestens 2 Lerneinheiten abgeschlossen hast, die denselben Patienten teilen.
-          </p>
-        </motion.div>
-
-        {/* Vorschau: Welche Patienten kommen */}
-        <motion.div
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.05 }}
-          className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5"
-        >
-          <h3 className="text-sm font-semibold mb-3">Geplante Fallverl&auml;ufe</h3>
-          <p className="text-xs text-[var(--lern-text-tertiary)]">
-            Patienten werden &uuml;ber mehrere LEs hinweg wiederverwendet. Sobald Cross-LE-Content generiert wird, erscheinen hier die Fallverl&auml;ufe.
+            Verfügbar sobald du mindestens eine Lerneinheit mit Prüfungsfall abgeschlossen hast.
           </p>
         </motion.div>
       </div>
     );
   }
 
-  // Wenn Cross-LE-Patienten existieren
   return (
     <div className="mx-auto max-w-2xl px-4 py-6 space-y-4">
       <motion.div
@@ -108,43 +139,80 @@ function FallverlaufTab({ locale }: { locale: string }) {
         animate={{ opacity: 1, y: 0 }}
         className="rounded-2xl bg-[#9B7EA6]/5 border border-[#9B7EA6]/20 p-5"
       >
-        <h2 className="text-sm font-semibold text-[#9B7EA6] mb-2">Fallverl&auml;ufe — Pr&uuml;fungssimulation</h2>
+        <h2 className="text-sm font-semibold text-[#9B7EA6] mb-2">Fallverläufe — Prüfungssimulation</h2>
         <ul className="text-sm text-[var(--lern-text-secondary)] space-y-1">
-          <li>Patienten-Fallverlauf &uuml;ber mehrere Zeitpunkte</li>
-          <li>Pflegeplanung, Entscheidungen und Begr&uuml;ndungen</li>
+          <li>Patienten-Fallverlauf über mehrere Zeitpunkte</li>
+          <li>Pflegeplanung, Entscheidungen und Begründungen</li>
           <li>Bloom-Level 4-6 (Analysieren, Bewerten, Erschaffen)</li>
-          <li>Kein Glossar, keine Hilfen — wie in der Pr&uuml;fung</li>
+          <li>Kein Glossar, keine Hilfen — wie in der Prüfung</li>
         </ul>
       </motion.div>
 
-      {crossLEPatienten.map((patient: ExamPatient, i: number) => (
+      {/* Verfügbare ExamCases (mit Phasen) */}
+      {examCases.map((ec, i) => (
         <motion.div
-          key={patient.patientId}
+          key={ec.caseId}
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.05 * (i + 1) }}
           className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5"
         >
           <div className="mb-3">
-            <h3 className="text-base font-semibold">{patient.name}</h3>
+            <div className="flex items-center gap-2 mb-1">
+              <h3 className="text-base font-semibold">{ec.patient.name}</h3>
+              <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${
+                ec.schwierigkeit === "schwer"
+                  ? "bg-[#C96B5C]/10 text-[#C96B5C]"
+                  : "bg-[#D4956A]/10 text-[#D4956A]"
+              }`}>
+                {ec.schwierigkeit}
+              </span>
+            </div>
             <p className="text-xs text-[var(--lern-text-secondary)]">
-              {patient.alter} Jahre, {patient.diagnosen.join(", ")}
-            </p>
-            <p className="text-xs text-[var(--lern-text-tertiary)] mt-1">
-              Lerneinheiten: {patient.sourceLEs.join(", ")}
+              {ec.patient.alter} Jahre · {ec.phasen.length} Phasen · {ec.phasen.reduce((s, p) => s + p.steps.length, 0)} Aufgaben
             </p>
           </div>
 
-          <p className="text-sm text-[var(--lern-text-secondary)] mb-3">{patient.steckbrief}</p>
+          <p className="text-sm text-[var(--lern-text-secondary)] mb-3">{ec.patient.steckbrief}</p>
 
           <button
-            disabled
-            className="w-full rounded-2xl bg-[var(--lern-accent)]/40 px-5 py-3 text-sm font-semibold text-white cursor-not-allowed"
+            onClick={() => setActiveCase(ec)}
+            className="w-full rounded-2xl bg-[#9B7EA6] px-5 py-3 text-sm font-semibold text-white transition-all active:scale-[0.98]"
           >
-            Bald verf&uuml;gbar
+            Fallverlauf starten
           </button>
         </motion.div>
       ))}
+
+      {/* Cross-LE Patienten ohne ExamCase (Vorschau) */}
+      {crossLEPatienten
+        .filter((p: ExamPatient) => !examCases.some((ec) => ec.patient.patientId === p.patientId))
+        .map((patient: ExamPatient, i: number) => (
+          <motion.div
+            key={patient.patientId}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.05 * (examCases.length + i + 1) }}
+            className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5 opacity-60"
+          >
+            <div className="mb-3">
+              <h3 className="text-base font-semibold">{patient.name}</h3>
+              <p className="text-xs text-[var(--lern-text-secondary)]">
+                {patient.alter} Jahre · {patient.diagnosen.join(", ")}
+              </p>
+              <p className="text-xs text-[var(--lern-text-tertiary)] mt-1">
+                LEs: {patient.sourceLEs.join(", ")}
+              </p>
+            </div>
+            <p className="text-sm text-[var(--lern-text-secondary)] mb-3">{patient.steckbrief}</p>
+            <button
+              disabled
+              className="w-full rounded-2xl bg-[var(--lern-bg-secondary)] px-5 py-3 text-sm font-semibold text-[var(--lern-text-tertiary)] cursor-not-allowed"
+            >
+              Bald verfügbar
+            </button>
+          </motion.div>
+        ))}
     </div>
   );
 }
@@ -449,7 +517,7 @@ export default function PruefungPage() {
               {/* Schwierigkeit */}
               <div className="flex items-center gap-2">
                 <span
-                  className="text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full"
+                  className="text-xs font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full"
                   style={{
                     backgroundColor:
                       frage.schwierigkeit === "leicht"

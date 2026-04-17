@@ -34,7 +34,7 @@ export const LE_MANIFEST: LeManifestEntry[] = [
     hasFall: true,
     hasPraxis: true,
     hasPruefung: true,
-    status: "geprueft",
+    status: "published",
     sortOrder: 1,
   },
   // === CE 02 — An der Pflege von Menschen mitwirken (Mobilität) ===
