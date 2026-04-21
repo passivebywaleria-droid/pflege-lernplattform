@@ -69,6 +69,89 @@ Bücher lesen             Kernfakten →           B1-Varianten           TypeSc
                                                               2× FAIL? → Flag an Gründerin
 ```
 
+## Beantwortete Fragen F37-F41 (2026-04-21)
+
+| # | Frage | Entscheidung |
+|---|-------|-------------|
+| F37 | displayFormats | 8 behalten: mnemonic, analogy, beforeafter, procontra, quote, checklist, stepbystep, scenario. 5 gestrichen: news, diary, glossary, crossref, interview |
+| F38 | Erlebnis-Modi | Alle 8 behalten (story, challenge, puzzle, entdecker, sortierstation, schreibtisch, praxis-sim, checkpoint) |
+| F39 | UX-Varianten | Alle 18 Varianten behalten + Generator-Regeln wann welche Variante genutzt wird |
+| F40 | Bilder/Illustrationen | Mix-Strategie: (1) Copic-Marker-Stil für Szenen via Gemini-Bot (~36s/Bild), (2) eigene SVGs für Anatomie mit deutschen Labels, (3) Excalidraw-Skill für Diagramme. Bot-Bilder immer OHNE Text generieren, Labels nachträglich als SVG-Overlay |
+| F41 | Audio/TTS | **Ziel: Piper TTS selbst gehostet** (DSGVO-USP, langfristig kostengünstig, Thorsten-Voice für Deutsch). Setup-Aufwand: ~1,5 Tage. **Priorität: niedrig — später umsetzen**. Bis dahin: Browser Web Speech API als Fallback |
+| F42 | Speech/Whisper | **Post-Launch-Feature**. Step-Renderer `step-speech.tsx` existiert bereits. Generator produziert vorerst keine Speech-Steps. Nach Launch: adaptiv (B1 mehr, C1 wenig) via Browser-Whisper |
+| F43 | MC-Qualität + Step-Typ-Verteilung | **Mehrschichtig:** (1) Step-Mix: MC nur bei Bloom 1-2, max 15-20% aller Steps. Handlungs-Typen (Branching, Dialog, Sequencing, Freitext) dominieren. (2) Distraktoren = dokumentierte Misconceptions (Dozentin B sammelt pro Wissensbaustein "typische Fehlvorstellungen"). (3) Feedback: spezifisch pro falscher Antwort, Sandwich-Prinzip (Lob→Korrektur→Vertiefung→Ermutigung). (4) Item-Writing-Flaws via Post-Processor (Shuffling, Längen-Balance). (5) **Stichproben-Review 10-20% durch Dozentin (Mensch) vor Launch + Pflegeschüler-Feedback nach Launch als echte Validierung** |
+| F43a | Bloom → Step-Typ | Bloom 1-2 (Erinnern/Verstehen): MC, Flipcard, Memory, Zuordnung. Bloom 3 (Anwenden): Sequencing, Checkliste, einfaches Branching, Hotspot. Bloom 4 (Analysieren): Fehler finden, Matrix, Bild-Interpretation. Bloom 5-6 (Bewerten/Erschaffen): Komplex-Branching, Dialog/Rollenspiel, Freitext+KI-Feedback |
+| F43b | Verteilungs-Richtwerte | Fakten (Bloom 1-2): 15-20%, Verstehen: 15-20%, Anwenden: 20-25%, Handeln: 20-25%, Transfer: 10-15%. Keine strengen Grenzen — je nach Situation Schwerpunkte möglich |
+| F43c | Wer kontrolliert was | Dozentin A: Lernziele + Bloom. Dozentin B: Didaktik (Lernziele-Ausbau, Misconceptions, Wissensbausteine). Regisseur (Update auf v3 nötig für Situationsformat): Step-Typ-Auswahl aus Bloom + Phase. Generator: Konkrete Steps + UX-Variante. Post-Processor (NEU): Shuffling, Längen-Check. KI-Prüfer: Bloom-Match, Verteilung, Monotonie |
+
+## Pipeline v9 — Kompletter Neuentwurf (2026-04-21)
+
+**Entscheidung:** Pipeline komplett neu strukturiert — 9 Stufen, klare Autoritätsmatrix, 2 menschliche Review-Punkte.
+
+### Leitprinzipien
+1. Didaktik vor Technik — Lernziel bestimmt alles
+2. Eine Verantwortung pro Agent — keine doppelte Entscheidungs-Autorität
+3. Mensch bleibt im Loop — 2 kritische Review-Punkte
+4. Daten fließen nur vorwärts — keine rückwärts-Änderungen ohne Trigger
+5. Situations-Format ist Standard — LE ist Legacy, raus aus aktiver Pipeline
+
+### Pipeline-Stufen
+
+| # | Stufe | Agent | Output |
+|---|-------|-------|--------|
+| 1 | Recherche | Dozentin A (Opus) | kernfakten.md (**+ Misconceptions-Abschnitt NEU**) |
+| 2a | Didaktik — Wissensebene | Dozentin B Phase 1 (Opus) | bausteine-plan.md (+ Bloom + Misconceptions) |
+| — | **🔒 Review #1** (Mensch) | — | Lernziele/Bausteine/Bloom stichprobenartig prüfen |
+| 2b | Didaktik — Situationsebene | Dozentin B Phase 2 (Opus) | phasen-plan.md + patient-plan.md |
+| 3 | Choreografie | **Regisseur v3 (NEU, Opus)** | sessionsplan.md mit Step-Slots |
+| 4 | B1-Adaption | B1-Dozentin (Opus) | Inline B1-Felder |
+| 5 | Generierung | Content-Generator (Sonnet) | .ts-Dateien |
+| 6 | Normalisierung | **Post-Processor (NEU, Script)** | Normalisierte .ts + post-processor-report.json |
+| 7 | Technische Prüfung | Scripts | quality-report.json |
+| 8 | Didaktische Prüfung | Didaktik-Prüfer (Opus) | didaktik-report.md (**+5 neue Checks NEU**) |
+| 9 | Step-Qualität | Step-KI-Prüfer (Haiku, auf Situations umschreiben) | Ergänzung report |
+| — | **🔒 Review #2** (Mensch) | — | 10-20% der Steps durchspielen |
+| — | PUBLISHED | — | Status `published` |
+
+### Detail-Entscheidungen
+
+| # | Frage | Entscheidung |
+|---|-------|-------------|
+| D1 | Wissensbausteine pro Thema | **8-12 Mikro-Bausteine** — maximale Adaptivität, Sequencer kann gezielt auf einzelne Lücken reagieren |
+| D2 | Loop-Verhalten bei FAIL | **Differenziert nach Fehler-Typ**: technisch 1x, didaktisch+feedback 2x, urheberrecht 1x, inhaltlich+misconceptions 0x (direkt Mensch) |
+| D3 | Stichprobe-Auswahl Review | **Option D**: Erste CE (CE-02) zu 100% prüfen, ab CE-03 Mix (Pflicht-Checks bei kritischen Triggern + 10-20% Zufall) |
+| D4 | Post-Processor Flaws | **Konservativ**: FIX nur deterministisch (Shuffling, correctIndex, Pairs-Shuffle). WARN: Längen, absolute Wörter, Stichwort-Wiederholung, Grammatik-Muster. Nicht fixbar → Didaktik-Prüfer |
+
+### Neue Arbeitspakete (Pipeline-Umsetzung ~4-5 Tage)
+
+| # | Arbeit | Aufwand |
+|---|--------|---------|
+| 1 | Dozentin A: Misconceptions-Abschnitt ergänzen | 1-2h |
+| 2 | Dozentin B: Bloom-Level + Misconceptions-Mapping + 8-12 Bausteine | 2-3h |
+| 3 | **Regisseur v3** komplett neu für Situationen | 4-6h |
+| 4 | **Post-Processor** Script schreiben | 2-3h |
+| 5 | Didaktik-Prüfer: 5 neue Checks (Bloom, Misconceptions, Feedback, Verteilung, Monotonie) | 2-3h |
+| 6 | Step-KI-Prüfer: Situations-Format | 1-2h |
+| 7 | Review-Templates + pick-review-sample.ts Script | 1-2h |
+| 8 | **Expertenstandards-Index erstellen** (8 Standards, ~400 Seiten) | 4-6h |
+| 9 | **Pflege heute Index erstellen** (~1200 Seiten) | 8-12h |
+
+## Beantwortete Fragen F44, F71, F73 (2026-04-21)
+
+| # | Frage | Entscheidung |
+|---|-------|-------------|
+| F44 | Feedback-Texte Sandwich-Details | **Option C: Kontext-abhängig gestuft** + **Spezifitäts-Regeln**. Länge nach Bloom (2-10 Sätze), Pflicht-Elemente: spezifische Misconception bei falsch, Vertiefung bei richtig. Nie mit "Falsch" starten. B1 immer zusätzlich (≤15 Wörter/Satz) |
+| F44a | Sandwich-Struktur bei falschen Antworten | Bloom 1-2: 2-3 Sätze (Bestätigung+Korrektur+Erklärung). Bloom 3-4: 4-6 Sätze (Lob+Korrektur+Vertiefung+Ermutigung). Bloom 5-6: 6-10 Sätze (mit Fallbezug) |
+| F44b | Prüfregeln für Didaktik-Prüfer | Q1: Spezifität (nennt Grund, nicht Bewertung). Q2: Misconception-Match bei falsch. Q3: Länge im Richtwert. Q4: Nicht mit "Falsch" starten. Q5: B1-Version einfacher |
+| F71 | Pflege heute Index | **Voll erstellen** (~8-12h), vor Pipeline-Start. Zweck: Dozentin A findet gezielt relevante Stellen |
+| F73 | Expertenstandards Index | **Voll erstellen** (~4-6h), vor Pipeline-Start. Abdeckt 8 nationale Standards (Dekubitus, Sturz, Schmerz, Entlass, Wunde, Ernährung, Kontinenz, Demenz) |
+
+### Quellen-Priorität für Dozentin A
+1. **I Care** (bereits indiziert) — Primär für 80% aller Themen
+2. **Expertenstandards** (neu indizieren) — Pflicht bei Standard-Themen
+3. **Pflege heute** (neu indizieren) — Cross-Check + Ergänzung
+4. **Exa API** — Fakten-Verifikation, Konsens bei Widersprüchen
+
 ## Beantwortete Frage F36
 
 | # | Frage | Entscheidung |
