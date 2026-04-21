@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <defs>
+    <linearGradient id="bg8" x1="0" y1="0" x2="400" y2="280">
+      <stop offset="0%" stop-color="#EFF5F0"/>
+      <stop offset="100%" stop-color="#F0E8E6"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" rx="16" fill="url(#bg8)"/>
+
+  <text x="200" y="28" text-anchor="middle" fill="#4A6A50" font-size="13" font-family="system-ui" font-weight="600" letter-spacing="1.5">VIER ETHISCHE PRINZIPIEN</text>
+  <text x="200" y="44" text-anchor="middle" fill="#999" font-size="10" font-family="system-ui">Beauchamp &amp; Childress (1979)</text>
+
+  <!-- 1. Selbstbestimmung -->
+  <rect x="20" y="56" width="175" height="68" rx="12" fill="white" stroke="#6B8F71" stroke-width="1.5"/>
+  <text x="107" y="78" text-anchor="middle" fill="#4A6A50" font-size="13" font-family="system-ui" font-weight="600">Selbstbestimmung</text>
+  <text x="107" y="96" text-anchor="middle" fill="#5A7A60" font-size="10" font-family="system-ui">Patient darf</text>
+  <text x="107" y="110" text-anchor="middle" fill="#5A7A60" font-size="10" font-family="system-ui">immer ablehnen</text>
+
+  <!-- 2. Wohltun -->
+  <rect x="205" y="56" width="175" height="68" rx="12" fill="white" stroke="#C4877F" stroke-width="1.5"/>
+  <text x="292" y="78" text-anchor="middle" fill="#8B6B66" font-size="13" font-family="system-ui" font-weight="600">Wohltun</text>
+  <text x="292" y="96" text-anchor="middle" fill="#9B8580" font-size="10" font-family="system-ui">Aktiv zum Wohl</text>
+  <text x="292" y="110" text-anchor="middle" fill="#9B8580" font-size="10" font-family="system-ui">beitragen</text>
+
+  <!-- 3. Nicht-Schaden -->
+  <rect x="20" y="134" width="175" height="68" rx="12" fill="white" stroke="#B8926E" stroke-width="1.5"/>
+  <text x="107" y="156" text-anchor="middle" fill="#8B7355" font-size="13" font-family="system-ui" font-weight="600">Nicht-Schaden</text>
+  <text x="107" y="174" text-anchor="middle" fill="#9B8B75" font-size="10" font-family="system-ui">Keinen vermeidbaren</text>
+  <text x="107" y="188" text-anchor="middle" fill="#9B8B75" font-size="10" font-family="system-ui">Schaden anrichten</text>
+
+  <!-- 4. Gerechtigkeit -->
+  <rect x="205" y="134" width="175" height="68" rx="12" fill="white" stroke="#7B8BA0" stroke-width="1.5"/>
+  <text x="292" y="156" text-anchor="middle" fill="#5A6A7A" font-size="13" font-family="system-ui" font-weight="600">Gerechtigkeit</text>
+  <text x="292" y="174" text-anchor="middle" fill="#7B8BA0" font-size="10" font-family="system-ui">Gleiche Versorgung</text>
+  <text x="292" y="188" text-anchor="middle" fill="#7B8BA0" font-size="10" font-family="system-ui">für alle</text>
+
+  <!-- Tension -->
+  <rect x="110" y="216" width="180" height="26" rx="13" fill="#C4877F" opacity="0.1" stroke="#C4877F" stroke-width="1"/>
+  <text x="200" y="234" text-anchor="middle" fill="#C4877F" font-size="11" font-family="system-ui" font-weight="600">Widersprechen sich oft!</text>
+
+  <!-- Example -->
+  <text x="200" y="262" text-anchor="middle" fill="#888" font-size="10" font-family="system-ui" font-style="italic">z. B. Demenz-Patient verweigert Körperpflege:</text>
+  <text x="200" y="276" text-anchor="middle" fill="#888" font-size="10" font-family="system-ui" font-style="italic">Selbstbestimmung ↔ Wohltun</text>
+</svg>

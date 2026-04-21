@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="400" y2="280">
+      <stop offset="0%" stop-color="#FDF2F0"/>
+      <stop offset="100%" stop-color="#F0E8E6"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" rx="16" fill="url(#bg1)"/>
+
+  <text x="200" y="32" text-anchor="middle" fill="#6B5450" font-size="13" font-family="system-ui" font-weight="600" letter-spacing="1.5">MEILENSTEINE DER PFLEGE</text>
+
+  <!-- Timeline vertical -->
+  <line x1="70" y1="55" x2="70" y2="260" stroke="#C4877F" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <circle cx="70" cy="70" r="8" fill="#C4877F"/>
+  <text x="90" y="68" fill="#6B5450" font-size="12" font-family="system-ui" font-weight="600">500 v. Chr.</text>
+  <text x="90" y="82" fill="#8B7B76" font-size="11" font-family="system-ui">Erste Pflegende in Indien</text>
+
+  <circle cx="70" cy="115" r="10" fill="#C4877F"/>
+  <circle cx="70" cy="115" r="6" fill="#FDF2F0"/>
+  <text x="90" y="113" fill="#6B5450" font-size="12" font-family="system-ui" font-weight="600">1860 — Nightingale</text>
+  <text x="90" y="127" fill="#8B7B76" font-size="11" font-family="system-ui">Erste Pflegeschule in London</text>
+
+  <circle cx="70" cy="160" r="9" fill="#6B8F71"/>
+  <text x="90" y="158" fill="#4A6A50" font-size="12" font-family="system-ui" font-weight="600">1903 — Agnes Karll</text>
+  <text x="90" y="172" fill="#5A7A60" font-size="11" font-family="system-ui">Erste Berufsorganisation (DE)</text>
+
+  <circle cx="70" cy="200" r="7" fill="#6B8F71"/>
+  <text x="90" y="198" fill="#4A6A50" font-size="12" font-family="system-ui" font-weight="600">1906</text>
+  <text x="90" y="212" fill="#5A7A60" font-size="11" font-family="system-ui">Erste staatliche Pflegeprüfung</text>
+
+  <circle cx="70" cy="245" r="10" fill="#C4877F"/>
+  <circle cx="70" cy="245" r="6" fill="#FDF2F0"/>
+  <text x="90" y="243" fill="#6B5450" font-size="12" font-family="system-ui" font-weight="600">2020 — PflBG</text>
+  <text x="90" y="257" fill="#8B7B76" font-size="11" font-family="system-ui">Generalistische Ausbildung</text>
+</svg>

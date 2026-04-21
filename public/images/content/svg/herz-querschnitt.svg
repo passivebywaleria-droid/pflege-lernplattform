@@ -1,0 +1,378 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 740" width="450" height="740" shape-rendering="geometricPrecision">
+  <rect width="450" height="740" fill="#fafaf9"/>
+
+  <defs>
+    <linearGradient id="myokard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ECDDD0"/>
+      <stop offset="100%" stop-color="#E0CEBC"/>
+    </linearGradient>
+    <linearGradient id="myokard-lv" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E0CEBC"/>
+      <stop offset="100%" stop-color="#D8C4B2"/>
+    </linearGradient>
+    <linearGradient id="septum-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D4C5B5"/>
+      <stop offset="50%" stop-color="#DACCBE"/>
+      <stop offset="100%" stop-color="#D4C5B5"/>
+    </linearGradient>
+    <marker id="flow-blue" markerWidth="8" markerHeight="6" refX="4" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#5A8A9A"/>
+    </marker>
+    <marker id="flow-red" markerWidth="8" markerHeight="6" refX="4" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#B07A72"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="225" y="30" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="17" font-weight="700" fill="#3D3530" letter-spacing="0.5">Herz — Frontalschnitt</text>
+  <text x="225" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8B7D6B">Cor — Sectio coronalis</text>
+
+  <!-- ================================================ -->
+  <!-- VESSELS (behind heart)                           -->
+  <!-- ================================================ -->
+
+  <!-- Vena cava superior (SVC) — wide tube -->
+  <path d="M108,55 L108,140 Q108,152 118,152 L148,152 Q158,152 158,140 L158,55"
+        fill="#C5D9E0" stroke="#7A9BA5" stroke-width="1.5"/>
+  <text x="133" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" font-weight="500" fill="#5A8A9A">V. cava superior</text>
+
+  <!-- Vena cava inferior (IVC) — enters RA from below-right -->
+  <path d="M100,555 L100,495 Q100,482 112,480 L148,477 Q160,475 160,488 L160,555"
+        fill="#C5D9E0" stroke="#7A9BA5" stroke-width="1.5"/>
+  <text x="130" y="570" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" font-weight="500" fill="#5A8A9A">V. cava inferior</text>
+
+  <!-- Aorta — thick arch, exits LV center-left -->
+  <path d="M228,100 Q228,62 255,55 L295,50 Q330,48 340,72 L340,110"
+        fill="none" stroke="#C4877F" stroke-width="16" stroke-linecap="round" opacity="0.2"/>
+  <path d="M228,100 Q228,62 255,55 L295,50 Q330,48 340,72 L340,110"
+        fill="none" stroke="#B5766E" stroke-width="2"/>
+  <!-- Aorta inner lumen hint -->
+  <path d="M228,100 Q228,68 255,61 L290,56 Q322,54 332,72 L332,105"
+        fill="none" stroke="#E4C8C2" stroke-width="8" opacity="0.4"/>
+  <text x="300" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#B07A72">Aorta</text>
+
+  <!-- Truncus pulmonalis — exits RV, bifurcates -->
+  <path d="M178,135 L178,100 Q178,78 162,72 L130,66 Q108,62 92,76 L92,110"
+        fill="none" stroke="#8AABB5" stroke-width="14" stroke-linecap="round" opacity="0.2"/>
+  <path d="M178,135 L178,100 Q178,78 162,72 L130,66 Q108,62 92,76 L92,110"
+        fill="none" stroke="#5A8A9A" stroke-width="2"/>
+  <!-- Truncus inner lumen -->
+  <path d="M178,130 L178,104 Q178,84 164,78 L133,72 Q114,68 100,80 L100,108"
+        fill="none" stroke="#C5D9E0" stroke-width="7" opacity="0.3"/>
+  <!-- Bifurcation labels -->
+  <text x="66" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#5A8A9A">Truncus</text>
+  <text x="66" y="71" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#5A8A9A">pulmonalis</text>
+  <!-- A. pulmonalis dextra + sinistra branches -->
+  <path d="M92,85 Q70,80 55,88" fill="none" stroke="#5A8A9A" stroke-width="1.3" stroke-dasharray="3,2"/>
+  <text x="38" y="92" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="7" fill="#5A8A9A">→ Lunge</text>
+
+  <!-- Pulmonary veins (4 entering LA from right) -->
+  <path d="M375,185 Q355,190 338,198" fill="none" stroke="#B5766E" stroke-width="8" stroke-linecap="round" opacity="0.2"/>
+  <path d="M375,185 Q355,190 338,198" fill="none" stroke="#B5766E" stroke-width="1.5"/>
+  <path d="M378,215 Q358,218 340,222" fill="none" stroke="#B5766E" stroke-width="8" stroke-linecap="round" opacity="0.2"/>
+  <path d="M378,215 Q358,218 340,222" fill="none" stroke="#B5766E" stroke-width="1.5"/>
+  <path d="M376,242 Q358,243 340,244" fill="none" stroke="#B5766E" stroke-width="7" stroke-linecap="round" opacity="0.15"/>
+  <path d="M376,242 Q358,243 340,244" fill="none" stroke="#B5766E" stroke-width="1.3"/>
+  <path d="M372,266 Q356,264 340,262" fill="none" stroke="#B5766E" stroke-width="7" stroke-linecap="round" opacity="0.15"/>
+  <path d="M372,266 Q356,264 340,262" fill="none" stroke="#B5766E" stroke-width="1.3"/>
+  <text x="392" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#B07A72">Vv. pulmonales</text>
+  <text x="392" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="7" fill="#B07A72">(4 Lungenvenen)</text>
+  <text x="392" y="248" font-family="system-ui, -apple-system, sans-serif" font-size="7" fill="#B07A72">← Lunge</text>
+
+  <!-- ================================================ -->
+  <!-- PERICARDIUM (thin outer layer)                  -->
+  <!-- ================================================ -->
+  <path d="M205,118
+           C120,118 52,158 48,250
+           C44,335 58,410 98,472
+           C130,520 162,542 182,548
+           C190,550 198,548 205,545
+           C255,530 330,468 358,390
+           C378,330 380,248 360,178
+           C345,128 275,115 205,118 Z"
+        fill="none" stroke="#B8ADA0" stroke-width="1" stroke-dasharray="5,3" opacity="0.6"/>
+  <text x="56" y="142" font-family="system-ui, -apple-system, sans-serif" font-size="7" fill="#B8ADA0">Perikard</text>
+
+  <!-- ================================================ -->
+  <!-- HEART OUTER WALL (Myokard) — asymmetric!        -->
+  <!-- Apex shifted LEFT, LV wall MUCH thicker         -->
+  <!-- ================================================ -->
+
+  <path d="M205,130
+           C140,130 72,162 66,248
+           C62,325 74,400 108,460
+           C135,505 163,530 182,538
+           C190,541 196,540 202,537
+           C250,520 318,460 348,382
+           C368,325 372,252 355,185
+           C340,135 272,127 205,130 Z"
+        fill="url(#myokard)" stroke="#9B8E7E" stroke-width="2.2"/>
+
+  <!-- LV extra wall thickness overlay — makes LV wall visually thicker -->
+  <path d="M348,382 C368,325 372,252 355,185 C345,152 310,135 270,130
+           L270,138 C305,143 335,158 345,188
+           C360,250 358,322 340,378
+           C322,445 265,505 210,530
+           L205,537 C255,520 318,460 348,382 Z"
+        fill="#D8C4B2" stroke="none" opacity="0.5"/>
+
+  <!-- ================================================ -->
+  <!-- CHAMBERS (inside heart)                          -->
+  <!-- ================================================ -->
+
+  <!-- Right Atrium (RA) — O₂-arm, viewer's left, THIN wall -->
+  <path d="M196,142
+           C155,142 95,158 80,205
+           C70,240 68,270 73,295
+           L196,295 Z"
+        fill="#C5D9E0" stroke="none"/>
+  <!-- RA endocardium texture (Musculi pectinati) -->
+  <path d="M82,210 Q88,215 82,220" fill="none" stroke="#A5C5CE" stroke-width="0.7" opacity="0.5"/>
+  <path d="M78,230 Q84,235 78,240" fill="none" stroke="#A5C5CE" stroke-width="0.7" opacity="0.5"/>
+  <path d="M75,252 Q81,257 75,262" fill="none" stroke="#A5C5CE" stroke-width="0.7" opacity="0.5"/>
+  <path d="M74,272 Q80,277 74,282" fill="none" stroke="#A5C5CE" stroke-width="0.7" opacity="0.5"/>
+
+  <!-- Right Ventricle (RV) — O₂-arm, THIN wall (~3-5mm), crescent shape -->
+  <path d="M73,308
+           C70,350 76,405 100,452
+           C122,488 150,512 180,530
+           L190,525
+           L192,308 Z"
+        fill="#B8D0D9" stroke="none"/>
+  <!-- RV Trabeculae carneae (Muskelbalken) — key anatomical feature -->
+  <path d="M82,340 Q92,345 85,355 Q92,360 82,370" fill="none" stroke="#9BBCC5" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M80,380 Q90,385 83,395 Q90,400 80,410" fill="none" stroke="#9BBCC5" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M85,420 Q95,425 88,435 Q95,440 87,448" fill="none" stroke="#9BBCC5" stroke-width="1.3" stroke-linecap="round"/>
+  <!-- Moderatorband (Trabecula septomarginalis) — RV-specific! -->
+  <path d="M192,410 Q150,445 105,440" fill="none" stroke="#9BBCC5" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <text x="148" y="455" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="6.5" fill="#7A9BA5" opacity="0.7">Moderatorband</text>
+
+  <!-- Left Atrium (LA) — O₂-reich, viewer's right -->
+  <path d="M218,142
+           C260,140 318,155 334,200
+           C342,228 340,260 336,288
+           L218,288 Z"
+        fill="#EEDDD8" stroke="none"/>
+
+  <!-- Left Ventricle (LV) — O₂-reich, THICK wall (~12-15mm) -->
+  <path d="M336,308
+           C338,350 330,400 312,445
+           C295,482 262,510 222,528
+           L218,308 Z"
+        fill="#E4C8C2" stroke="none"/>
+  <!-- LV smooth inner wall (no trabeculae — LV has fewer, smoother) -->
+  <!-- Subtle endocardium line -->
+  <path d="M334,310 C336,348 328,398 312,440 C296,475 264,505 226,524"
+        fill="none" stroke="#D4A9A2" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- ================================================ -->
+  <!-- SEPTUM — CURVED (bulges toward RV)              -->
+  <!-- ================================================ -->
+
+  <!-- Interatrial septum — slight curve toward RV (left) -->
+  <path d="M218,142 C217,180 216,230 217,288
+           L196,295 C197,235 198,180 196,142 Z"
+        fill="url(#septum-grad)" stroke="none"/>
+  <!-- Fossa ovalis (remnant of foramen ovale) -->
+  <ellipse cx="207" cy="215" rx="8" ry="12" fill="none" stroke="#C5B8A8" stroke-width="0.8" stroke-dasharray="2,2"/>
+  <text x="207" y="240" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="5.5" fill="#B8ADA0">Fossa ovalis</text>
+
+  <!-- Interventricular septum — CURVED, bulges toward RV (left) -->
+  <path d="M218,308
+           C214,360 210,420 214,528
+           L192,525
+           C196,415 200,355 192,308 Z"
+        fill="url(#septum-grad)" stroke="none"/>
+  <!-- Septum center line (shows curvature) -->
+  <path d="M205,308 C202,380 204,450 205,525"
+        fill="none" stroke="#C5B8A8" stroke-width="0.5" stroke-dasharray="2,3"/>
+
+  <!-- ================================================ -->
+  <!-- VALVES — anatomically correct leaflet count     -->
+  <!-- ================================================ -->
+
+  <!-- AV valve plane background strip -->
+  <path d="M66,295 L355,288" fill="none" stroke="#D4C5B5" stroke-width="8" opacity="0.4"/>
+
+  <!-- TRICUSPID VALVE — 3 Segel (anterior, posterior, septal) -->
+  <!-- Segel 1 (anterior) -->
+  <path d="M90,298 Q110,315 120,298" fill="#D4C5B5" fill-opacity="0.3" stroke="#C4877F" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Segel 2 (posterior) -->
+  <path d="M120,298 Q142,318 155,298" fill="#D4C5B5" fill-opacity="0.3" stroke="#C4877F" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Segel 3 (septal) -->
+  <path d="M155,298 Q172,312 188,298" fill="#D4C5B5" fill-opacity="0.3" stroke="#C4877F" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Chordae tendineae (Sehnenfäden) — 6 Fäden zu 3 Papillarmuskeln -->
+  <line x1="105" y1="310" x2="98" y2="385" stroke="#C4877F" stroke-width="0.6" opacity="0.45"/>
+  <line x1="120" y1="315" x2="115" y2="390" stroke="#C4877F" stroke-width="0.6" opacity="0.45"/>
+  <line x1="138" y1="316" x2="140" y2="392" stroke="#C4877F" stroke-width="0.6" opacity="0.45"/>
+  <line x1="155" y1="312" x2="148" y2="388" stroke="#C4877F" stroke-width="0.6" opacity="0.45"/>
+  <line x1="170" y1="308" x2="165" y2="380" stroke="#C4877F" stroke-width="0.6" opacity="0.45"/>
+  <!-- 3 Papillarmuskeln (RV has 3: anterior, posterior, septal) -->
+  <ellipse cx="100" cy="390" rx="9" ry="6" fill="#D4C0B0" stroke="#B8ADA0" stroke-width="0.8"/>
+  <ellipse cx="140" cy="395" rx="8" ry="5" fill="#D4C0B0" stroke="#B8ADA0" stroke-width="0.8"/>
+  <ellipse cx="165" cy="384" rx="7" ry="5" fill="#D4C0B0" stroke="#B8ADA0" stroke-width="0.8"/>
+
+  <!-- MITRAL VALVE — 2 Segel (anterior = groß, posterior = klein) -->
+  <!-- Segel 1 (anterior — größer) -->
+  <path d="M228,292 Q258,318 282,292" fill="#D4C5B5" fill-opacity="0.3" stroke="#C4877F" stroke-width="2" stroke-linecap="round"/>
+  <!-- Segel 2 (posterior — kleiner) -->
+  <path d="M282,292 Q305,310 322,292" fill="#D4C5B5" fill-opacity="0.3" stroke="#C4877F" stroke-width="2" stroke-linecap="round"/>
+  <!-- Chordae tendineae — 4 Fäden zu 2 Papillarmuskeln -->
+  <line x1="250" y1="312" x2="245" y2="395" stroke="#C4877F" stroke-width="0.7" opacity="0.45"/>
+  <line x1="268" y1="316" x2="258" y2="400" stroke="#C4877F" stroke-width="0.7" opacity="0.45"/>
+  <line x1="290" y1="310" x2="285" y2="395" stroke="#C4877F" stroke-width="0.7" opacity="0.45"/>
+  <line x1="308" y1="306" x2="298" y2="392" stroke="#C4877F" stroke-width="0.7" opacity="0.45"/>
+  <!-- 2 Papillarmuskeln (LV has 2: anterolateral, posteromedial) -->
+  <ellipse cx="248" cy="400" rx="10" ry="6" fill="#D4C0B0" stroke="#B8ADA0" stroke-width="0.9"/>
+  <ellipse cx="290" cy="396" rx="10" ry="6" fill="#D4C0B0" stroke="#B8ADA0" stroke-width="0.9"/>
+
+  <!-- PULMONARY VALVE — 3 Semilunar cusps -->
+  <path d="M165,140 Q171,130 177,140" fill="none" stroke="#C4877F" stroke-width="1.6"/>
+  <path d="M177,140 Q183,130 189,140" fill="none" stroke="#C4877F" stroke-width="1.6"/>
+  <path d="M158,140 Q164,132 165,140" fill="none" stroke="#C4877F" stroke-width="1.2" opacity="0.6"/>
+
+  <!-- AORTIC VALVE — 3 Semilunar cusps -->
+  <path d="M218,138 Q226,128 234,138" fill="none" stroke="#C4877F" stroke-width="1.6"/>
+  <path d="M234,138 Q242,128 250,138" fill="none" stroke="#C4877F" stroke-width="1.6"/>
+  <path d="M250,138 Q255,130 258,138" fill="none" stroke="#C4877F" stroke-width="1.2" opacity="0.6"/>
+
+  <!-- ================================================ -->
+  <!-- CORONARY ARTERIES (on heart surface)            -->
+  <!-- ================================================ -->
+
+  <!-- LAD (Left Anterior Descending) — runs along interventricular groove -->
+  <path d="M225,138 C218,200 210,320 205,450 Q200,500 195,530"
+        fill="none" stroke="#D4665A" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
+  <!-- RCA (Right Coronary Artery) — runs along right AV groove -->
+  <path d="M215,132 C180,135 110,160 80,230 Q68,268 68,298"
+        fill="none" stroke="#D4665A" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
+  <!-- LCx (Left Circumflex) — runs along left AV groove -->
+  <path d="M232,138 C270,142 320,165 342,220 Q350,250 348,290"
+        fill="none" stroke="#D4665A" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- Coronary label -->
+  <line x1="82" y1="232" x2="38" y2="210" stroke="#D4665A" stroke-width="0.6" opacity="0.5"/>
+  <text x="35" y="206" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="7" fill="#D4665A" opacity="0.7">RCA</text>
+  <text x="200" y="350" font-family="system-ui, -apple-system, sans-serif" font-size="7" fill="#D4665A" opacity="0.6" transform="rotate(-85,200,350)">LAD (RIVA)</text>
+
+  <!-- ================================================ -->
+  <!-- BLOOD FLOW ARROWS                               -->
+  <!-- ================================================ -->
+
+  <!-- SVC → RA (down) -->
+  <path d="M133,115 L133,185" fill="none" stroke="#5A8A9A" stroke-width="2" marker-end="url(#flow-blue)"/>
+  <!-- IVC → RA (up) -->
+  <path d="M130,477 L118,350" fill="none" stroke="#5A8A9A" stroke-width="1.6" marker-end="url(#flow-blue)" opacity="0.65"/>
+  <!-- RA → RV (down through tricuspid) -->
+  <path d="M140,260 L140,330" fill="none" stroke="#5A8A9A" stroke-width="2" marker-end="url(#flow-blue)"/>
+  <!-- RV → Pulmonary trunk (up) -->
+  <path d="M165,345 Q168,260 178,155" fill="none" stroke="#5A8A9A" stroke-width="2" marker-end="url(#flow-blue)"/>
+  <!-- Pulm veins → LA (into heart from right) -->
+  <path d="M355,225 L305,228" fill="none" stroke="#B07A72" stroke-width="1.6" marker-end="url(#flow-red)"/>
+  <!-- LA → LV (down through mitral) -->
+  <path d="M275,258 L275,330" fill="none" stroke="#B07A72" stroke-width="2" marker-end="url(#flow-red)"/>
+  <!-- LV → Aorta (up) -->
+  <path d="M248,340 Q245,260 235,155" fill="none" stroke="#B07A72" stroke-width="2" marker-end="url(#flow-red)"/>
+
+  <!-- ================================================ -->
+  <!-- CHAMBER LABELS                                   -->
+  <!-- ================================================ -->
+
+  <text x="132" y="205" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#3D6B75">Rechter</text>
+  <text x="132" y="220" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#3D6B75">Vorhof</text>
+  <text x="132" y="233" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#5A8A9A">(Atrium dextrum)</text>
+
+  <text x="140" y="428" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#3D6B75">Rechte</text>
+  <text x="140" y="443" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#3D6B75">Kammer</text>
+  <text x="140" y="456" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#5A8A9A">(Ventriculus dexter)</text>
+
+  <text x="280" y="205" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#8B4F46">Linker</text>
+  <text x="280" y="220" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#8B4F46">Vorhof</text>
+  <text x="280" y="233" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#B07A72">(Atrium sinistrum)</text>
+
+  <text x="282" y="425" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#8B4F46">Linke</text>
+  <text x="282" y="440" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#8B4F46">Kammer</text>
+  <text x="282" y="453" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#B07A72">(Ventriculus sinister)</text>
+
+  <!-- ================================================ -->
+  <!-- VALVE LABELS                                     -->
+  <!-- ================================================ -->
+
+  <line x1="80" y1="300" x2="38" y2="300" stroke="#B8ADA0" stroke-width="0.7"/>
+  <text x="35" y="295" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="500" fill="#C4877F">Trikuspidalklappe</text>
+  <text x="35" y="306" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="7.5" fill="#9B8E7E">(3 Segel)</text>
+
+  <line x1="330" y1="296" x2="382" y2="296" stroke="#B8ADA0" stroke-width="0.7"/>
+  <text x="386" y="292" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="500" fill="#C4877F">Mitralklappe</text>
+  <text x="386" y="303" font-family="system-ui, -apple-system, sans-serif" font-size="7.5" fill="#9B8E7E">(2 Segel)</text>
+
+  <line x1="155" y1="135" x2="38" y2="123" stroke="#B8ADA0" stroke-width="0.7"/>
+  <text x="35" y="119" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#9B8E7E">Pulmonalklappe</text>
+  <text x="35" y="128" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="7" fill="#9B8E7E">(3 Taschen)</text>
+
+  <line x1="258" y1="135" x2="390" y2="125" stroke="#B8ADA0" stroke-width="0.7"/>
+  <text x="394" y="121" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#9B8E7E">Aortenklappe</text>
+  <text x="394" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="7" fill="#9B8E7E">(3 Taschen)</text>
+
+  <!-- ================================================ -->
+  <!-- WALL THICKNESS COMPARISON                       -->
+  <!-- ================================================ -->
+
+  <!-- RV wall thickness (~3-5mm) -->
+  <line x1="67" y1="370" x2="76" y2="370" stroke="#5A8A9A" stroke-width="0.8"/>
+  <line x1="67" y1="366" x2="67" y2="374" stroke="#5A8A9A" stroke-width="0.8"/>
+  <line x1="76" y1="366" x2="76" y2="374" stroke="#5A8A9A" stroke-width="0.8"/>
+  <text x="40" y="368" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="6.5" fill="#5A8A9A">~4 mm</text>
+
+  <!-- LV wall thickness (~12-15mm) -->
+  <line x1="322" y1="390" x2="355" y2="390" stroke="#B07A72" stroke-width="0.8"/>
+  <line x1="322" y1="386" x2="322" y2="394" stroke="#B07A72" stroke-width="0.8"/>
+  <line x1="355" y1="386" x2="355" y2="394" stroke="#B07A72" stroke-width="0.8"/>
+  <text x="390" y="388" font-family="system-ui, -apple-system, sans-serif" font-size="6.5" fill="#B07A72">~13 mm</text>
+  <text x="390" y="397" font-family="system-ui, -apple-system, sans-serif" font-size="6" fill="#9B8E7E">(3× dicker!)</text>
+
+  <!-- ================================================ -->
+  <!-- O₂ BADGES                                       -->
+  <!-- ================================================ -->
+
+  <rect x="78" y="155" width="55" height="16" rx="8" fill="#8AABB5" opacity="0.3"/>
+  <text x="105" y="166" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#3D6B75">O₂-arm</text>
+
+  <rect x="270" y="155" width="55" height="16" rx="8" fill="#C4877F" opacity="0.25"/>
+  <text x="297" y="166" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#8B4F46">O₂-reich</text>
+
+  <!-- ================================================ -->
+  <!-- LEGEND                                           -->
+  <!-- ================================================ -->
+
+  <rect x="25" y="595" width="400" height="132" rx="10" fill="#F5F0EB" stroke="#E5DFD6" stroke-width="0.8"/>
+
+  <text x="225" y="614" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#3D3530">Blutkreislauf durch das Herz</text>
+
+  <!-- Row 1 -->
+  <rect x="42" y="624" width="12" height="12" rx="2" fill="#C5D9E0" stroke="#7A9BA5" stroke-width="0.8"/>
+  <text x="60" y="634" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5A5248">Rechtes Herz → Lunge (Lungenkreislauf)</text>
+
+  <rect x="42" y="644" width="12" height="12" rx="2" fill="#EEDDD8" stroke="#C4877F" stroke-width="0.8"/>
+  <text x="60" y="654" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5A5248">Linkes Herz → Körper (Körperkreislauf)</text>
+
+  <!-- Row 2 -->
+  <rect x="42" y="664" width="12" height="12" rx="2" fill="url(#myokard)" stroke="#9B8E7E" stroke-width="0.8"/>
+  <text x="60" y="674" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5A5248">Myokard (Herzmuskel)</text>
+
+  <path d="M250,670 Q256,663 262,670" fill="#D4C5B5" fill-opacity="0.3" stroke="#C4877F" stroke-width="1.5"/>
+  <text x="270" y="674" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5A5248">Klappensegel</text>
+
+  <!-- Row 3 -->
+  <path d="M42,695 L58,695" fill="none" stroke="#D4665A" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+  <text x="65" y="699" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5A5248">Koronararterien</text>
+
+  <line x1="245" y1="695" x2="262" y2="695" stroke="#5A8A9A" stroke-width="1.5" marker-end="url(#flow-blue)"/>
+  <text x="270" y="699" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5A8A9A">O₂-arm</text>
+  <line x1="315" y1="695" x2="332" y2="695" stroke="#B07A72" stroke-width="1.5" marker-end="url(#flow-red)"/>
+  <text x="340" y="699" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#B07A72">O₂-reich</text>
+
+  <!-- Row 4 -->
+  <text x="42" y="718" font-family="system-ui, -apple-system, sans-serif" font-size="7.5" fill="#B8ADA0">Trikuspidal (3 Segel) · Mitral (2 Segel) · Pulmonal + Aorta (je 3 Taschen) = 4 Klappen</text>
+
+</svg>

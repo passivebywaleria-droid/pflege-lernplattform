@@ -1,6 +1,7 @@
 # SPRINT-PLAN v4.0 — Von 90% Code zu Launch
 
 **Erstellt:** 2026-04-18
+**Letztes Update:** 2026-04-21 (UI-Refactor ergänzt)
 **Ersetzt:** Sprint-Plan v3.0 (2026-03-31)
 **Grundlage:** VISION.md + Ist-Zustand der Codebase
 **Kontext:** Solo-Entwicklerin + Claude Code. Plattform-Code ~90% fertig.
@@ -25,7 +26,7 @@ Komponenten:   134 (71 Lern-Komponenten)
 Step-Typen:    42+
 DB-Tabellen:   35
 Hooks:         13
-Tests:         7
+Tests:         387 (62 neue Unit-Tests)
 i18n:          25 Namespaces (DE/AR/TR)
 Content:       2/55 LEs live (LE-01 + LE-06)
 Live:          https://pflege-lernplattform.vercel.app
@@ -94,23 +95,34 @@ Sprint D  [Wo 5-6]   Launch         Polish + Pilotschule
 
 | # | Task | Aufwand | Status |
 |---|------|---------|--------|
-| A.1 | **Einstufungstest-Onboarding** | 2-3d | ⏳ Offen |
+| A.1 | **Einstufungstest-Onboarding** | 2-3d | ✅ Fertig |
 |  | → Spielerischer Flow beim ersten Login | | |
 |  | → 5-8 Fragen Sprache (Leseverständnis, Fachbegriffe) | | |
 |  | → 5-8 Fragen Fachwissen (adaptiv schwerer) | | |
 |  | → Antwortzeit-Messung (unsichtbar, 5 Stufen) | | |
 |  | → Lernprofil anlegen aus Ergebnis | | |
-|  | → Middleware-Redirect wenn `!placement_completed` | | |
-| A.2 | **KI-Fehleranalyse + Strategiewechsel** | 3d | ⏳ Offen |
-|  | → 4 Fehlertypen: Sprach-/Begriffs-/Konzept-/Rateproblem | | |
-|  | → Antwortzeit + Antwortmuster als Signal | | |
-|  | → 3 Erklärungswege pro Lernziel (Text, Bild, Fallbeispiel) | | |
-|  | → Lernprofil-Update nach jeder Interaktion | | |
-|  | → "Bei diesem Schüler funktionieren Bilder besser als Text" | | |
-| A.3 | **Tests erweitern** (≥30 Tests) | 2d | ⏳ Offen |
-|  | → Unit: Adaptive Engine, FSRS, Auth-Guards | | |
-|  | → Integration: API-Routes (Progress, Stripe-Mock) | | |
-|  | → E2E: Login → Einstufung → Lernen → Prüfung | | |
+|  | → EinstufungsGuard im Dashboard-Layout | | |
+|  | → Fehler-Kategorisierung (raten/sprache/konzept/begriff) | | |
+|  | → Mid-Test Persistenz (Resume bei Browser-Schließung) | | |
+|  | → Accessibility (aria, Keyboard A-D/1-4, Focus) | | |
+| A.2 | **KI-Fehleranalyse + Strategiewechsel** | 3d | ✅ Fertig |
+|  | → 6 Strategietypen: einfach/analogie/vergleich/schrittweise/fallbeispiel/bild | | |
+|  | → Fehler-Kategorie → Strategie-Ranking (STRATEGIE_MAP) | | |
+|  | → Schüler-Präferenzen: Erfolgs-Rate pro Strategie | | |
+|  | → Nie 2× dieselbe Strategie (bereitsVersucht-Filter) | | |
+|  | → Sequencer R1/R3 reaktiviert mit waehleStrategie() | | |
+|  | → Effektivitäts-Tracking: Retry nach Hilfe → strategieEffektiv? | | |
+|  | → LernProfil.strategiePraeferenzen persistent | | |
+| A.3 | **Tests erweitern** (≥30 Tests) | 2d | ✅ Fertig |
+|  | → 62 neue Unit-Tests in 6 Dateien (strategie, fehler-analyse, antwortzeit, kompetenz-register, einstufung, lern-profil) | | |
+|  | → Gesamt: 387 Tests grün (war: 314) | | |
+| A.4 | **UI-Refactor: App-Layout + Step-Vereinheitlichung** | 1d | ✅ Fertig (2026-04-21) |
+|  | → h-dvh flex-col Layout (kein Root-Scroll, Bottom-Tabs) | | |
+|  | → 38 Step-Renderer: border-[1.5px], Farben, Hover vereinheitlicht | | |
+|  | → BONE ersetzt durch ROSE 8%, --lern-divider angepasst | | |
+|  | → Fall-Zeitleiste: doppelten Steckbrief entfernt | | |
+|  | → LernSnackTab: Dedup-Fix für DB-Import-Duplikate | | |
+|  | → Chat-Buttons über Bottom-Tabs positioniert | | |
 
 **Existierende Dateien (wiederverwenden!):**
 - `src/app/[locale]/einstufung/page.tsx` — UI existiert bereits

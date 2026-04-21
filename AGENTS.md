@@ -187,6 +187,17 @@ export const mockLearnModules: LearnModule[] = [
 - **Vorsicht**: Scripts wie `validate-le.ts` geben exit 1 auch bei MEDIUM-Warnungen — Quality-Gate parst Output statt Exit-Code
 - **A11y-Block**: In `content-schema.ts` integriert — Bild-Steps brauchen bildhinweis/altText, Dialog-Phasen brauchen sprecher
 
+### App-Layout + Step-Design (2026-04-21)
+- **Lern-Seite Root**: `h-dvh flex flex-col overflow-hidden` — nie `min-h-screen` mit Root-Scroll
+- **Content-Area**: `flex-1 min-h-0 overflow-y-auto` (scrollt intern, Root bleibt fix)
+- **Bottom-Tabs**: `shrink-0`, `border-t` (nicht `border-b`), `pb-[env(safe-area-inset-bottom)]`
+- **Floating Buttons**: `bottom-20` (nicht `bottom-6`) — über Bottom-Tab-Leiste
+- **Border-Standard**: `border-[1.5px]` überall (nicht `border` 1px, nicht `border-2` 2px)
+- **Hover-Standard**: `hover:bg-[#B07A72]` für alle Accent-Buttons
+- **BONE Farbe**: `${ROSE}08` (8% Opacity), NICHT mehr `#EAE0D5`
+- **Step-Card padding**: `p-3` (Standard), `p-4` max — kompakter für mobile Screens
+- **Turbopack-Cache**: Bei "Internal Server Error" → `rm -rf .next && npm run dev`
+
 ### 6-Rollen-Review (2026-04-14)
 - **Pipeline-Kriterien**: 32 semantisch (8 K.O.) — inkl. Block LS + Block SK (UE-Skalierung)
 - **Code-Regeln**: Keine `text-[10px]` (min text-xs), keine hardcoded Hex-Farben (CSS-Vars), `aria-expanded` auf ALLE Akkordeons

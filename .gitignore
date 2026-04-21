@@ -64,3 +64,11 @@ debug-*.png
 
 # Worktrees
 .claude/worktrees/
+
+# Backups
+content/*.backup/
+content/**/*.backup/
+
+# Service Worker (Serwist generiert)
+public/sw.js
+public/swe-worker-*.js

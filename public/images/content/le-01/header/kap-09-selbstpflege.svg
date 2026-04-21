@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="bg9" x1="0" y1="0" x2="400" y2="300">
+      <stop offset="0%" stop-color="#FDF2F0"/>
+      <stop offset="100%" stop-color="#EFF5F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#bg9)"/>
+
+  <text x="200" y="28" text-anchor="middle" fill="#6B5450" font-size="13" font-family="system-ui" font-weight="600" letter-spacing="1.5">SELBSTPFLEGE-METHODEN</text>
+
+  <!-- Eisenhower -->
+  <text x="200" y="52" text-anchor="middle" fill="#6B5450" font-size="11" font-family="system-ui" font-weight="600">Eisenhower-Matrix</text>
+
+  <!-- Grid -->
+  <text x="25" y="80" fill="#999" font-size="9" font-family="system-ui">Wichtig</text>
+
+  <rect x="65" y="64" width="148" height="42" rx="8" fill="#C4877F" opacity="0.12" stroke="#C4877F" stroke-width="1"/>
+  <text x="139" y="82" text-anchor="middle" fill="#8B6B66" font-size="10" font-family="system-ui" font-weight="600">Sofort tun</text>
+  <text x="139" y="96" text-anchor="middle" fill="#8B6B66" font-size="9" font-family="system-ui">Notfall auf Station</text>
+
+  <rect x="220" y="64" width="148" height="42" rx="8" fill="#6B8F71" opacity="0.15" stroke="#6B8F71" stroke-width="2"/>
+  <text x="294" y="82" text-anchor="middle" fill="#4A6A50" font-size="10" font-family="system-ui" font-weight="600">Einplanen!</text>
+  <text x="294" y="96" text-anchor="middle" fill="#4A6A50" font-size="9" font-family="system-ui">Sport, Erholung</text>
+
+  <rect x="65" y="112" width="148" height="34" rx="8" fill="#B8926E" opacity="0.1"/>
+  <text x="139" y="133" text-anchor="middle" fill="#8B7355" font-size="10" font-family="system-ui">Delegieren</text>
+
+  <rect x="220" y="112" width="148" height="34" rx="8" fill="#ddd" opacity="0.3"/>
+  <text x="294" y="133" text-anchor="middle" fill="#aaa" font-size="10" font-family="system-ui">Streichen</text>
+
+  <text x="139" y="158" text-anchor="middle" fill="#999" font-size="9" font-family="system-ui">Dringend →</text>
+
+  <!-- Akut-Techniken -->
+  <text x="200" y="182" text-anchor="middle" fill="#6B5450" font-size="11" font-family="system-ui" font-weight="600">Akut-Techniken</text>
+
+  <!-- 4-6-8 -->
+  <rect x="30" y="192" width="340" height="30" rx="8" fill="#6B8F71" opacity="0.08" stroke="#6B8F71" stroke-width="1"/>
+  <text x="50" y="212" fill="#4A6A50" font-size="11" font-family="system-ui" font-weight="600">4-6-8 Atmen</text>
+  <text x="170" y="212" fill="#5A7A60" font-size="11" font-family="system-ui">4s ein · 6s halten · 8s aus</text>
+
+  <!-- Selbstgespräch -->
+  <rect x="30" y="228" width="340" height="30" rx="8" fill="#C4877F" opacity="0.08" stroke="#C4877F" stroke-width="1"/>
+  <text x="50" y="248" fill="#8B6B66" font-size="11" font-family="system-ui" font-weight="600">Selbstgespräch</text>
+  <text x="170" y="248" fill="#9B8580" font-size="11" font-family="system-ui" font-style="italic">„Ich habe getan, was ich konnte."</text>
+
+  <!-- PMR -->
+  <rect x="30" y="264" width="340" height="30" rx="8" fill="#B8926E" opacity="0.08" stroke="#B8926E" stroke-width="1"/>
+  <text x="50" y="284" fill="#8B7355" font-size="11" font-family="system-ui" font-weight="600">PMR</text>
+  <text x="100" y="284" fill="#9B8B75" font-size="11" font-family="system-ui">Anspannen → Loslassen → Ruhe</text>
+</svg>
