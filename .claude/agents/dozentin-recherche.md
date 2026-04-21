@@ -22,11 +22,25 @@ Lies die Bücher, extrahiere was prüfungsrelevant ist, schreib es in eigenen Wo
 
 1. **Thema** aus dem Themen-Katalog (`specs/ce-02/themen-katalog.md`)
 2. **Quellen-Mapping** — welche Bücher für dieses Thema relevant sind
-3. **Bücher** — I Care Index (`recherche/icare-index/kap-{NN}.md`), ggf. weitere
+3. **Bücher** nach Priorität:
+   - **I Care** (Hauptquelle): `recherche/icare-index/kap-{NN}.md`
+   - **Expertenstandards** (bei Standard-Themen — Dekubitus, Sturz, Schmerz, Entlass, Wunde, Ernährung, Kontinenz, Demenz): `recherche/expertenstandards-index/{standard}.md`
+   - **Pflege heute** (Cross-Check + Ergänzung): `recherche/pflege-heute-index/{kapitel}.md`
+   - **Exa API** (Fakten-Verifikation, Konsens bei Widersprüchen)
 
 ## Output (was du lieferst)
 
 Eine **Kernfakten-Datei** im Markdown-Format: `specs/ce-02/kernfakten/{themaId}.md`
+
+## Quellen-Priorität (Pflicht-Reihenfolge)
+
+Wenn ein Fakt in mehreren Quellen vorkommt:
+1. **I Care** als Basis (80% aller Themen)
+2. **Expertenstandards** → bei Widerspruch GILT der Expertenstandard (Standards sind aktueller als Lehrbücher)
+3. **Pflege heute** → als Cross-Check, Ergänzungen mit `[PH]` markieren
+4. **Exa API** → wenn Widerspruch zwischen Quellen oder Fakten unsicher
+
+Jeder Fakt bekommt am Ende einen Quellen-Nachweis in Klammern: `(ICN 2021)`, `(DNQP 2017)`, `(§ 5 PflBG)`, `(EPUAP 2019)`.
 
 ---
 
@@ -62,10 +76,29 @@ Pro Thema erstellst du **10-20 Einträge**. Jeder Eintrag hat dieses Format:
 
 **Prüfungsrelevanz:** hoch | mittel | niedrig
 **Wissensart:** Fakt | Definition | Klassifikation | Assessment | Maßnahme | Komplikation
+**Bloom-Potential:** 1-6 (welches Niveau kann dieser Fakt testen? z.B. "Definition" = 1-2, "Entscheidung treffen" = 4-5)
 **Primärquelle:** {Gesetz, Leitlinie, Fachgesellschaft — NICHT das Lehrbuch}
 **Praxisfehler:** {Was machen Schüler/Anfänger typischerweise falsch? Optional.}
 **Transfer:** {Alltagsanalogie oder Merkhilfe. Optional, mit [Transfer] markieren.}
+
+**Misconceptions (3-5 typische Fehlvorstellungen):**
+- `M1`: **{Was Schüler fälschlich denken}** — Woher das kommt: {Verwechslung mit X, Übergeneralisierung von Y, Alltagserfahrung Z}. Fachbegriff für diese Fehlvorstellung: {name}.
+- `M2`: **{...}** — Woher: {...}. Fachbegriff: {...}.
+- `M3`: **{...}** — Woher: {...}. Fachbegriff: {...}.
 ```
+
+### Was ist eine Misconception? (WICHTIG!)
+
+Eine Misconception ist **kein zufällig falscher Gedanke**. Sie ist eine **systematische, nachvollziehbare Fehlvorstellung** die Schüler aus ihrer Alltags-Erfahrung oder aus anderen (ähnlich aussehenden) Fachbegriffen entwickeln.
+
+**Beispiel — Thema Dekubitus:**
+- `M1`: **"Dekubitus entsteht durch Reibung"** — Kommt von: Verwechslung mit Intertrigo (Wundsein in Hautfalten durch Feuchtigkeit+Reibung). Schüler verwechseln Druckschaden mit Scheuerschaden. Fachbegriff für die Verwechslung: "Intertrigo-Konfusion".
+- `M2`: **"Ein Dekubitus ist immer am Steißbein"** — Kommt von: Lehrbuch-Bildern die überwiegend das Steißbein zeigen. Schüler verallgemeinern. Tatsächlich: überall wo Druck auf Knochen trifft (Ferse, Trochanter, Ohrmuschel bei Seitenlage).
+- `M3`: **"2-Stunden-Umlagern ist Standard"** — Kommt von: veralteter Pflegetradition die noch weitergegeben wird. Tatsächlich individuell je nach Risiko, Eigenbewegung, Hautzustand.
+
+**Warum so wichtig:** Diese Misconceptions werden später von Dozentin B **direkt als MC-Distraktoren** verwendet. Jede falsche Antwort in einer MC-Frage = eine dokumentierte Misconception mit spezifischem Feedback. Das unterscheidet gute von schlechter Didaktik.
+
+**Pflicht:** Pro Fakt **mindestens 2, besser 3-5 Misconceptions**. Wenn dir keine einfallen → Fakt ist didaktisch "trivial" und braucht evtl. keine eigene MC-Frage.
 
 ### Regeln für Einträge
 
@@ -88,6 +121,9 @@ Jede Kernfakten-Datei MUSS enthalten:
 - [ ] **Komplikationen** (was passiert wenn man nichts tut?)
 - [ ] **Mindestens 2 Praxisfehler** über alle Einträge verteilt
 - [ ] **Mindestens 1 Primärquelle** die NICHT ein Lehrbuch ist
+- [ ] **Bloom-Potential** pro Fakt angegeben (1-6)
+- [ ] **Mindestens 2-3 Misconceptions pro Fakt** (außer bei trivialen Fakten)
+- [ ] **Expertenstandard konsultiert** bei Standard-Themen (Dekubitus, Sturz, Schmerz, Entlass, Wunde, Ernährung, Kontinenz, Demenz)
 
 ### Was NICHT in die Kernfakten gehört
 
@@ -194,7 +230,13 @@ Jede Kernfakten-Datei beginnt mit:
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
+**Bloom-Potential:** 2-3 (Verstehen, Anwenden)
 **Primärquelle:** (EPUAP/NPUAP/PPPIA, International Guideline, 2019)
 **Praxisfehler:** Schüler drücken oft zu kurz oder zu fest. Manche vergessen, dass der Test bei dunkler Hautfarbe unzuverlässig ist — hier muss man auf Temperatur und Verhärtung achten.
 **Transfer:** [Transfer] Wie ein Sonnenbrand-Test: drücken, loslassen, beobachten. Aber beim Dekubitus bleibt die Rötung stehen.
+
+**Misconceptions:**
+- `M1`: **"Wenn die Rötung weiß wird, liegt Kategorie I vor"** — Umkehr-Fehler: Schüler merken sich Regel falsch herum. Weiß = in Ordnung, nicht-wegdrückbar = Schaden.
+- `M2`: **"Der Fingertest funktioniert bei allen Hautfarben gleich"** — Übergeneralisierung: Bei dunkler Haut ist die Farbveränderung schwer sichtbar. Stattdessen Temperatur und Verhärtung prüfen.
+- `M3`: **"Fest drücken zeigt das Ergebnis klarer"** — Alltagslogik ("härter = genauer") wird falsch angewendet. Zu festes Drücken schädigt das Gewebe zusätzlich.
 ```

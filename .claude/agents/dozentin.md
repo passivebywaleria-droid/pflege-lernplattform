@@ -192,6 +192,12 @@ Ein Wissensbaustein ist ein Fakt oder Konzept, aufbereitet in 3 Stufen für vers
 
 ### bausteinId: {themaId}-{kurzname}
 
+### Metadaten
+- **bloomLevel:** {1-6} — welches kognitive Niveau testet dieser Baustein?
+- **wissensart:** fakt | definition | klassifikation | assessment | maßnahme | komplikation | entscheidung
+- **zeitBudget:** {3-5} Min (Zielzeit für Durchschnittsschüler, Stufe 2+3 zusammen)
+- **quelleFakten:** [F-XX aus Dozentin A Kernfakten]
+
 ### Stufe 1 — Denkfrage
 - **Frage:** "..."
 - **Erwartete Antwort:** "..."
@@ -210,11 +216,32 @@ Ein Wissensbaustein ist ein Fakt oder Konzept, aufbereitet in 3 Stufen für vers
   - Glossar-Begriffe: [{begriffe}]
   - TTS-relevant: ja/nein (für Vorlesefunktion)
 
-### Verknüpfte Karteikarten
-- Karte 1: Vorderseite → Rückseite
-- Karte 2: ...
+### Misconceptions → Distraktoren
+(Aus Dozentin A übernehmen, erweitern wenn nötig. Pflicht bei Bloom ≥ 2.)
 
-### Glossar-Beitrag
+- `D1`: **"{Fehlvorstellung}"**
+  - Fachbegriff: {Name der Fehlvorstellung, z.B. "Intertrigo-Konfusion"}
+  - **Feedback (C1):** "Nicht ganz — du denkst an {Verwechslung}. Der Unterschied: {Kern-Erklärung}. Merke: {Merkhilfe}."
+  - **Feedback (B1):** (wird von B1-Dozentin ergänzt, Sätze max 15 Wörter)
+
+- `D2`: **"{zweite Fehlvorstellung}"**
+  - Feedback (C1): "..."
+  - Feedback (B1): (ergänzt durch B1-Dozentin)
+
+- `D3`: **"{dritte Fehlvorstellung}"**
+  - Feedback (C1): "..."
+  - Feedback (B1): (ergänzt durch B1-Dozentin)
+
+### Richtig-Feedback (bei korrekter Antwort)
+- **Feedback (C1):** "{Bestätigung + Vertiefung mit 1 Praxis-Bezug oder Merkhilfe}" (2-4 Sätze)
+- **Feedback (B1):** (ergänzt durch B1-Dozentin)
+
+### Verknüpfte Karteikarte
+- **Vorderseite:** {Prüfungsrelevante Frage}
+- **Rückseite:** {Kernantwort in 1-2 Sätzen}
+- **Kategorie:** fachbegriff | fakt | handlung | assessment | recht
+
+### Glossar-Beitrag (wenn neuer Fachbegriff)
 - **Begriff:** {Fachbegriff}
 - **Definition (C1):** "..."
 - **Quelle:** (Primärquelle)
@@ -227,28 +254,79 @@ Ein Wissensbaustein ist ein Fakt oder Konzept, aufbereitet in 3 Stufen für vers
 ### Regeln Phase 1
 
 1. **Jeder Fakt hat eine überprüfbare Quelle** (Primärquelle bevorzugt)
-2. **Min 5 Bausteine pro Thema** (bei großen Themen wie Dekubitus: 8-12)
+2. **8-12 Mikro-Bausteine pro Thema** (Standard) — Ziel: **maximale Adaptivität** für den Sequencer
 3. **Stufe 3 muss eigenständig verständlich sein** (ohne Stufe 1 oder 2)
-4. **Karteikarten: 3-8 pro Thema**, Kategorien: fachbegriff, fakt, handlung, assessment, recht
-5. **Glossar: Jeder neue Fachbegriff**, mit C1-Definition + Quelle
-6. **Denkfragen testen NICHT Wissen** — sie regen zum Nachdenken an ("Was passiert wenn...?" nicht "Wie heißt...?")
+4. **Pflicht-Feld `bloomLevel` pro Baustein** (1-6) — bestimmt wie Regisseur v3 Steps wählt
+5. **Karteikarten: 1 Karteikarte pro Baustein** (8-12 pro Thema), Kategorien: fachbegriff, fakt, handlung, assessment, recht
+6. **Glossar: Jeder neue Fachbegriff**, mit C1-Definition + Quelle
+7. **Denkfragen testen NICHT Wissen** — sie regen zum Nachdenken an ("Was passiert wenn...?" nicht "Wie heißt...?")
+8. **Misconceptions aus Dozentin A übernehmen + erweitern** (siehe unten)
+9. **Zeit-Budget**: 3-5 Min Lernzeit pro Baustein (Microlearning-Prinzip) — wird von `scripts/calculate-step-time.ts` geprüft
 
-### UE-Skalierung für Wissensbausteine
+### Misconceptions → Distraktoren (NEU — Pflicht)
 
-| Themen-Größe | Bausteine | Karteikarten | Glossar-Einträge |
-|--------------|-----------|--------------|-----------------|
-| Klein (z.B. Mundpflege) | 5-7 | 3-5 | 3-5 |
-| Mittel (z.B. Mobilisation) | 8-10 | 6-8 | 5-8 |
-| Groß (z.B. Dekubitus) | 10-14 | 8-12 | 8-12 |
+Dozentin A liefert pro Fakt 2-5 dokumentierte Misconceptions. Du musst sie strukturieren für MC-Distraktoren:
+
+```markdown
+### Baustein X: {Titel}
+
+**bloomLevel:** 3
+
+**Kernfakt:** {1-2 Sätze Kernwissen}
+
+**Misconceptions (für Distraktoren):**
+- `D1`: {Fehlvorstellung aus Dozentin A} | **Feedback bei Wahl:** "Nicht ganz — du denkst an {Verwechslung}. Der Unterschied: {Kernerklärung in 2-3 Sätzen}. Merke dir: {Merkhilfe}."
+- `D2`: {zweite Fehlvorstellung} | **Feedback:** "{Spezifischer Sandwich-Feedback}"
+- `D3`: {dritte Fehlvorstellung} | **Feedback:** "{Spezifischer Sandwich-Feedback}"
+```
+
+**Regel:** Pro Baustein mit Bloom ≥ 2 **mindestens 3 Distraktoren** mit spezifischem Feedback. Bei Bloom 1 (reines Erinnern) reichen 2.
+
+### Sandwich-Feedback-Vorlagen (F44)
+
+Feedback-Länge und -Struktur hängt vom Bloom-Level ab:
+
+| Bloom | Länge (Sätze) | Struktur bei falsch | Beispiel-Länge |
+|-------|---------------|---------------------|----------------|
+| 1-2 | 2-3 | Bestätigung-Teil + Korrektur + Erklärung | 100-200 Zeichen |
+| 3-4 | 4-6 | Lob + Korrektur + Vertiefung + Ermutigung | 200-400 Zeichen |
+| 5-6 | 6-10 | Ausführlich + Fallbezug + Alternative + Ermutigung | 400-700 Zeichen |
+
+**Verbote:**
+- ❌ Feedback NIE mit "Falsch" oder "Leider nicht" starten
+- ❌ Generisches "Die richtige Antwort ist X" ohne Begründung
+- ❌ Bei richtig: nicht nur "Genau!" — immer Vertiefung oder Merkhilfe
+
+**Pflicht:**
+- ✅ Falsch-Feedback adressiert die SPEZIFISCHE Misconception (aus D1/D2/D3)
+- ✅ Richtig-Feedback hat mind. 1 Vertiefung oder Praxis-Bezug
+- ✅ B1-Version: Sätze max 15 Wörter, einfache Wörter, Fachbegriffe erklären
+
+### UE-Skalierung für Wissensbausteine (v2 — Mikro-Bausteine)
+
+| Themen-UE | Bausteine | Karteikarten | Glossar-Einträge | Zielzeit Thema (App) |
+|-----------|-----------|--------------|------------------|----------------------|
+| 3 UE | 8-10 | 8-10 | 4-6 | ~75 Min |
+| 4 UE | 10-12 | 10-12 | 5-8 | ~99 Min |
+| 5-7 UE | 12-15 | 12-15 | 7-10 | ~125-175 Min |
+| 8-10 UE | 15-20 | 15-20 | 10-14 | ~200-250 Min |
+| 12+ UE (z.B. Ganzkörperpflege) | 20-25 | 20-25 | 15-20 | ~300+ Min |
+
+**Zielzeit-Formel:** `UE × 45 Min × 0,55 (App-Dichte-Faktor, Zeit-Modell v3)`
+
+Nach Baustein-Plan: Zeit-Budget-Check mit `npx tsx scripts/calculate-step-time.ts` (zeigt ob Content-Menge zum Zielzeit-Budget passt ±20%).
 
 ### Output Phase 1
 
 Pro Thema ein Ordner in `content/ce-{NN}/themen/{themaId}/`:
-- `bausteine-plan.md` — Alle Bausteine in 3 Stufen
+- `bausteine-plan.md` — Alle Bausteine in 3 Stufen **+ bloomLevel + Distraktoren + Feedback-Vorlagen**
 - `glossar-plan.md` — Fachbegriffe
-- `karteikarten-plan.md` — FSRS-Karten
+- `karteikarten-plan.md` — FSRS-Karten (1 pro Baustein)
 
-→ 🔒 **Veto-Punkt**: Zusammenfassung aller Themen-Bausteine. Kein Einspruch = weiter.
+→ 🔒 **Veto-Punkt 1** (= Menschliche Review #1, Pipeline v9):
+   - 10-20% aller Bausteine stichprobenartig prüfen
+   - Lernziele handlungsorientiert? Bloom-Level korrekt? Misconceptions plausibel?
+   - Kein Einspruch = weiter zu Phase 2.
 
 ---
 

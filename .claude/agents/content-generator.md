@@ -130,12 +130,59 @@ Diese Fehler führen zu sofortigem FAIL:
 | **P8** | **Hotspot** → MUSS `question.hotspot: { imageUrl, imageAlt, instruction, zones[] }`. NIE flaches `hotspots: []`. imageUrl ist PFLICHT — ohne Bild wird nichts gerendert. |
 | **P9** | `DialogOption`, `MemoryPair`, `ComparisonColumn`, `CategoryDef` → KEIN `id`-Feld (nicht im Interface). |
 
-### 5. MC-Regeln
+### 5. MC-Regeln (erweitert — F43)
 
-- Distraktoren ±30% gleich lang (F006)
-- Position der richtigen Antwort: gleichmäßig A/B/C/D (F007)
-- Jede Option hat `explanation` + `explanationB1`
-- `score` IMMER Number, NIE String
+**Pflicht:**
+- **Distraktoren KOMMEN AUS DER MISCONCEPTIONS-LISTE** des Bausteins (Dozentin B). **NIEMALS erfinden.** Wenn im Plan D1/D2/D3 definiert sind → exakt diese als Distraktoren nutzen.
+- Distraktoren ±20% gleich lang wie richtige Antwort (strenger als F006 ±30%)
+- Position der richtigen Antwort: **Post-Processor shuffelt später** → du kannst in natürlicher Reihenfolge schreiben
+- **Jede Option hat `explanation` + `explanationB1`**
+- **Feedback-Texte KOMMEN AUS DEM BAUSTEIN-PLAN** — spezifisch pro Antwort (Sandwich-Prinzip F44):
+  - Richtig-Feedback: Bestätigung + Vertiefung (2-4 Sätze)
+  - Falsch-Feedback: Adressiert die spezifische Misconception (nicht generisch!)
+  - Niemals mit "Falsch" starten — stattdessen "Nicht ganz", "Fast", "Naher dran als du denkst"
+
+**Feedback-Länge nach Bloom (F44):**
+| Bloom | Falsch-Feedback Länge | Richtig-Feedback Länge |
+|-------|----------------------|------------------------|
+| 1-2 | 100-200 Zeichen (2-3 Sätze) | 80-150 Zeichen |
+| 3-4 | 200-400 Zeichen (4-6 Sätze) | 150-250 Zeichen |
+| 5-6 | 400-700 Zeichen (6-10 Sätze) | 250-400 Zeichen |
+
+**Kein Duplikat zwischen `explanation` und `explanationB1`** — B1 ist einfachere Sprache, gleiche Information, max 15 Wörter/Satz.
+
+`score` IMMER Number, NIE String.
+
+### 5b. Bild-Slots (NEU — aus Regisseur-Plan übernehmen)
+
+Wenn der Regisseur im Sessionplan einen `imageSlot` definiert hat, setzt du ihn in den TypeScript-Step:
+
+```typescript
+{
+  stepId: "ce02-sturz-wb-03",
+  stepType: "hotspot",
+  // ... standard fields ...
+  imageSlot: {
+    id: "ce02-sturz-wb-03-img",
+    type: "scene", // "scene" | "anatomy-svg" | "excalidraw"
+    style: "copic", // nur bei type "scene"
+    prompt: "Elderly patient in hospital bed, showing body pressure points in supine position, respectful medical illustration",
+    altText: "Patient in Rückenlage mit markierten Druckstellen",
+    status: "pending", // wird nach Bild-Generation zu "ready"
+    path: null, // wird nach Bild-Auswahl gesetzt
+  }
+}
+```
+
+**Regeln:**
+- Bei `type: "scene"` IMMER `style: "copic"` + vollständiger englischer Prompt
+- Prompt-Template IMMER mit Suffix: `", absolutely no text no labels no words"` (Gemini macht sonst englische Beschriftungen)
+- Bei `type: "anatomy-svg"` ist `prompt` leer, `path` zeigt auf existierende SVG (z.B. `/images/content/svg/herz-querschnitt.svg`)
+- Bei `type: "excalidraw"` ist `prompt` eine Beschreibung des Diagramms, kein KI-Prompt
+- `altText` IMMER auf Deutsch (Screenreader)
+- `status: "pending"` ist normal — Bild wird später manuell durch `scripts/generate-images.ts` produziert und durch `scripts/choose-images.ts` ausgewählt
+
+**Fallback wenn noch kein Bild da:** Renderer zeigt Platzhalter "Bild folgt" — Step bleibt funktionsfähig.
 
 ### 6. 3-Felder-Regel
 

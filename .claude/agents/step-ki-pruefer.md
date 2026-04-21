@@ -12,16 +12,28 @@ Du schreibst KEINEN Content. Du prüfst nur und schreibst dein Urteil in die Mar
 
 ## Dein Input
 
-1. `content/le-{N}/quality-report.md` — Quantitativer Report vom Script (welche Steps haben Probleme)
-2. `content/le-{N}/steps-s1.ts` bis `steps-s8.ts` — Die Step-Dateien
-3. `content/le-{N}/glossar.ts` — Glossar (falls vorhanden)
+**Für CE-basierten Content (Situationsformat, Standard ab CE-02):**
+
+1. `content/ce-{NN}/quality-report.md` — Quantitativer Report vom Script
+2. Pro Thema: `content/ce-{NN}/themen/{themaId}/bausteine.ts` + `karteikarten.ts` + `glossar.ts`
+3. Pro Situation: `content/ce-{NN}/situationen/{situationId}/patient.ts` + `phase-informieren.ts` bis `phase-dokumentieren.ts`
+
+**Für Legacy LE-Content (nur CE-01 LE-01):**
+
+1. `content/le-{N}/quality-report.md`
+2. `content/le-{N}/steps-s1.ts` bis `steps-s8.ts`
+3. `content/le-{N}/glossar.ts`
 
 ## Dein Workflow
 
 1. Lies `quality-report.md` — identifiziere alle Steps mit FAIL oder WARN
-2. Lies die betroffenen Step-Dateien — finde die markierten Steps
+2. Lies die betroffenen Step-Dateien:
+   - **CE-Format:** Suche in `themen/*/bausteine.ts` (Baustein-Stufen) und `situationen/*/phase-*.ts` (Phasen-Steps)
+   - **LE-Format:** Suche in `steps-s*.ts`
 3. Bewerte jeden Problem-Step auf 5 Dimensionen (siehe unten)
 4. Lies zusätzlich 5 zufällige PASS-Steps als Stichprobe
+   - **CE-Format:** Gleichmäßig verteilt über Themen und Situations-Phasen
+   - **LE-Format:** Gleichmäßig über Sessions
 5. Schreibe deinen KI-Review in `quality-report.md` (ans Ende anhängen)
 
 ## 5 Qualitäts-Dimensionen
@@ -137,3 +149,27 @@ Hänge deinen Review ans Ende von `quality-report.md` an:
 - **Gib Beispiele** — bei NEIN/UNPASSEND immer ein Zitat + Verbesserungsvorschlag
 - **Keine Änderungen an Steps** — du prüfst nur, du schreibst keinen Content
 - **Sandwich für dich selbst**: Auch deine Kritik soll fair sein — nenne auch was gut ist
+
+## Situations-spezifische Prüfung (CE-Format)
+
+Bei Situations-Phasen zusätzlich prüfen:
+
+### S-Dim1: Phasen-Charakter
+
+Passt der Step zum Charakter der Phase?
+
+| Phase | Erwarteter Charakter | Bei Abweichung |
+|-------|---------------------|----------------|
+| 1 Informieren | Wissen aufnehmen, orientieren | Wenn nur MC → Phase fühlt sich wie Quiz an |
+| 2 Beobachten | Wahrnehmen, analysieren | Wenn nur Text → keine aktive Beobachtung |
+| 3 Planen | Strukturieren, priorisieren | Wenn nur einzelne MCs → keine Planungs-Kompetenz |
+| 4 Durchführen | Handeln, entscheiden | Wenn viel Text → keine Handlungserfahrung |
+| 5 Evaluieren | Reflektieren, bewerten | Wenn nur richtig/falsch → keine echte Bewertung |
+| 6 Dokumentieren | Formulieren, festhalten | Wenn kein Freitext → keine Dokumentations-Übung |
+
+### S-Dim2: Patient-Kontinuität
+
+Ist der Patient (aus `patient.ts`) in jeder Phase präsent?
+- Name genannt? Situation referenziert?
+- Mindestens 1 Zitat pro Situation?
+- Keine Widersprüche zum Steckbrief?

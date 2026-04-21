@@ -232,6 +232,16 @@ content/ce-{NN}/rohmaterial/
 |---|-----------|---------|-------|
 | **WB1** | **3-Stufen-Vollständigkeit** | Jeder Wissensbaustein hat alle 3 Stufen: Stufe 1 (Denkfrage mit `frage` + `richtigeAntwort`), Stufe 2 (Hinweis mit `text` + optional `textB1`), Stufe 3 (Erklärung als ContentStep + optional `stepB1`). Keine leeren Stufen, keine Platzhalter. | Nein |
 
+### Block M: MC-Qualität + Feedback (5 Kriterien, 2 K.O.) — NEU aus F43/F44
+
+| # | Kriterium | Prüfung | K.O.? |
+|---|-----------|---------|-------|
+| **M1** | **Bloom-Match** | Jeder Step-Typ passt zum Bloom-Level des Lernziels (siehe Regisseur-Tabelle Bloom→Step-Typ). Bloom 5-6 NIE als MC/Flipcard. Bloom 1 NIE als Freitext/komplexes Branching. | **K.O.** |
+| **M2** | **Misconceptions-Qualität** | Bei MC-Steps mit Bloom ≥ 2: Alle Distraktoren sind dokumentierte Misconceptions aus Dozentin B's Baustein-Plan (D1/D2/D3). Keine zufällig-falschen, keine offensichtlich-falschen Antworten. Stichprobe: Bei jedem MC-Step prüfen, ob Distraktoren Referenz zu Baustein-Misconceptions haben. | **K.O.** |
+| **M3** | **Feedback-Spezifität** | Jede falsche Antwort hat Feedback das die spezifische Misconception adressiert (nicht generisch "Leider falsch"). Richtig-Feedback hat mindestens 1 Vertiefung/Praxisbezug. Feedback startet NIE mit "Falsch" — stattdessen "Nicht ganz", "Fast", etc. | Nein |
+| **M4** | **Feedback-Länge nach Bloom (F44)** | Falsch-Feedback: Bloom 1-2 = 100-200 Zeichen, Bloom 3-4 = 200-400, Bloom 5-6 = 400-700. Richtig-Feedback: entsprechend 80-400 Zeichen. Abweichungen ±30% akzeptabel. | Nein |
+| **M5** | **Step-Typ-Verteilung (Anti-Monotonie)** | In einer Situation (6 Phasen) keine 2× gleicher Step-Typ hintereinander. Min 8 verschiedene Step-Typen. Kein Bloom-Level >50% der Steps. Verteilung grob in Bandbreite 15-25-25-25-15 (Fakten-Verstehen-Anwenden-Handeln-Transfer). | Nein |
+
 ---
 
 ## Zusammenfassung
@@ -252,9 +262,10 @@ content/ce-{NN}/rohmaterial/
 | displayFormat (R) | 1 | 0 |
 | Tonalität + Glossar (CQ) | 3 | 0 |
 | **Wissensbausteine (WB)** | **1** | **0** |
-| **Gesamt** | **39** (+2 neue Blöcke) | **10 K.O.** |
+| **MC-Qualität + Feedback (M)** | **5** | **2 (M1, M2)** |
+| **Gesamt** | **44** | **12 K.O.** |
 
-**K.O.-Kriterien (10):** U1, F7, F10, F11, B5, B6, S1, S4, I7, P6
+**K.O.-Kriterien (12):** U1, F7, F10, F11, B5, B6, S1, S4, I7, P6, M1, M2
 
 ---
 
