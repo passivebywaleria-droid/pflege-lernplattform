@@ -52,8 +52,11 @@ memory/ralph-logs/
 memory/ralph-status.json
 memory/ralph-signal.txt
 
-# Recherche (nicht für Build benötigt)
-recherche/
+# Recherche (PDFs nicht für Build benötigt, Indices schon)
+recherche/*
+!recherche/icare-index/
+!recherche/expertenstandards-index/
+!recherche/pflege-heute-index/
 
 # PDFs
 *.pdf
