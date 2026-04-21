@@ -21,15 +21,18 @@ import type {
   PraxisUebung,
   ExamCase,
   LeManifestEntry,
+  CEManifestEntry,
   SessionId,
   SessionLabel,
   StepType,
+  Thema,
+  Lernsituation,
 } from "./_types";
 import { calculateXP } from "./_xp-formula";
-import { LE_MANIFEST, lePrefix } from "./_manifest";
+import { LE_MANIFEST, CE_MANIFEST, lePrefix } from "./_manifest";
 
 // Re-Export für Konsumenten (Frontend nutzt diese Typen via `src/lib/content-loader.ts`)
-export type { LeManifestEntry, SessionId, SessionLabel };
+export type { LeManifestEntry, CEManifestEntry, SessionId, SessionLabel };
 
 // ── LE-Modul-Loader (Webpack-friendly explicit map) ──
 //
@@ -305,4 +308,63 @@ export async function loadPatientAcrossLEs(
     }
   }
   return result;
+}
+
+// ═══════════════════════════════════════════════════
+// CE-BASIERTER CONTENT-LOADER (Situationsbasiert)
+// ═══════════════════════════════════════════════════
+
+// CE-Modul-Loader (Webpack-friendly explicit map)
+const CE_MODULES: Record<string, () => Promise<Record<string, unknown>>> = {
+  // Wird ergänzt wenn CE-02 Content produziert wird:
+  // "ce-02": () => import("./ce-02/index"),
+};
+
+async function loadCeModule(ceId: string): Promise<Record<string, unknown> | null> {
+  const loader = CE_MODULES[ceId];
+  if (!loader) return null;
+  return loader();
+}
+
+/** Alle CEs aus dem Manifest (synchron). */
+export function getAllCEs(): CEManifestEntry[] {
+  return CE_MANIFEST;
+}
+
+/** CE-Manifest per ceId. */
+export function getCeManifest(ceId: string): CEManifestEntry | undefined {
+  return CE_MANIFEST.find((ce) => ce.ceId === ceId);
+}
+
+/** Themen einer CE laden. */
+export async function loadThemen(ceId: string): Promise<Thema[]> {
+  const mod = await loadCeModule(ceId);
+  if (!mod) return [];
+  const prefix = ceId.replace("-", "").toUpperCase(); // "ce-02" → "CE02"
+  return (mod[`${prefix}_THEMEN`] as Thema[] | undefined) ?? [];
+}
+
+/** Einzelnes Thema per themaId laden. */
+export async function loadThema(ceId: string, themaId: string): Promise<Thema | null> {
+  const themen = await loadThemen(ceId);
+  return themen.find((t) => t.themaId === themaId) ?? null;
+}
+
+/** Lernsituationen einer CE laden. */
+export async function loadSituationen(ceId: string): Promise<Lernsituation[]> {
+  const mod = await loadCeModule(ceId);
+  if (!mod) return [];
+  const prefix = ceId.replace("-", "").toUpperCase();
+  return (mod[`${prefix}_SITUATIONEN`] as Lernsituation[] | undefined) ?? [];
+}
+
+/** Einzelne Lernsituation per situationId laden. */
+export async function loadSituation(ceId: string, situationId: string): Promise<Lernsituation | null> {
+  const situationen = await loadSituationen(ceId);
+  return situationen.find((s) => s.situationId === situationId) ?? null;
+}
+
+/** Prüft ob ein Content-Eintrag CE-basiert (situationsbasiert) oder LE-basiert (legacy) ist. */
+export function isCEBasiert(ceId: string): boolean {
+  return CE_MANIFEST.some((ce) => ce.ceId === ceId);
 }

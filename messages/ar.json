@@ -250,14 +250,19 @@
       "feature1": "يتكيف مع معرفتك",
       "feature2": "يقيس اللغة والمعرفة التخصصية بشكل منفصل",
       "feature3": "بأسلوب ممتع وبدون ضغط",
-      "startButton": "هيا نبدأ!"
+      "startButton": "هيا نبدأ!",
+      "resumeButton": "متابعة الاختبار",
+      "restartButton": "البدء من جديد",
+      "loading": "جاري التحميل...",
+      "featuresLabel": "ما الذي ينتظرك"
     },
     "axes": {
       "language": "الكفاءة اللغوية",
       "knowledge": "المعرفة التمريضية"
     },
     "question": {
-      "counter": "سؤال {current} من {total}"
+      "counter": "سؤال {current} من {total}",
+      "progress": "التقدم"
     },
     "feedback": {
       "correct": "صحيح!",
@@ -343,5 +348,60 @@
     "score_B_body": "أساس متين — سنعمق الآن خطوة بخطوة.",
     "score_C_title": "لا مشكلة!",
     "score_C_body": "سنتعلم كل شيء من البداية — خطوة بخطوة."
+  },
+  "situation": {
+    "title": "مواقف تعليمية",
+    "subtitle": "ارعَ مريضاً حقيقياً — من المقابلة الأولى حتى التوثيق.",
+    "startSituation": "بدء الموقف",
+    "continueSituation": "متابعة التعلم",
+    "completedBadge": "مكتمل",
+    "spirale": "المستوى الحلزوني {level}",
+    "patient": "المريض/ة",
+    "diagnosen": "التشخيصات",
+    "setting": "البيئة",
+    "themenLabel": "المواضيع المرتبطة",
+    "geschaetzteZeit": "~{ue} وحدة تعليمية",
+    "phasen": {
+      "informieren": "الاستعلام",
+      "beobachten": "الملاحظة",
+      "planen": "التخطيط",
+      "durchfuehren": "التنفيذ",
+      "evaluieren": "التقييم",
+      "dokumentieren": "التوثيق"
+    },
+    "phasenBeschreibung": {
+      "informieren": "تعرّف على المريض — التاريخ المرضي، التشخيصات، الوضع.",
+      "beobachten": "لاحظ العلامات الحيوية والأعراض والحالة.",
+      "planen": "أنشئ خطة رعاية بالأهداف والإجراءات.",
+      "durchfuehren": "نفّذ إجراءات الرعاية التمريضية.",
+      "evaluieren": "قيّم نجاح الإجراءات.",
+      "dokumentieren": "وثّق كل شيء بشكل مهني."
+    },
+    "phaseScore": {
+      "A": "ممتاز — أنت جاهز للمرحلة التالية!",
+      "B": "جيد — مراجعة قصيرة ثم نكمل.",
+      "C": "سنتعمق في الموضوع — خطوة بخطوة."
+    },
+    "baustein": {
+      "title": "وحدة معرفية",
+      "denkfrage": "سؤال تفكيري",
+      "hinweis": "تلميح",
+      "erklaerung": "شرح"
+    },
+    "fortschritt": "التقدم",
+    "alleAbgeschlossen": "جميع المراحل مكتملة!",
+    "phaseAbgeschlossen": "المرحلة مكتملة",
+    "komplikation": "حدث تعقيد!",
+    "noSituationen": "لا توجد مواقف تعليمية متاحة بعد.",
+    "zurueckZurUebersicht": "العودة إلى النظرة العامة"
+  },
+  "themaNav": {
+    "title": "المواضيع",
+    "subtitle": "اختر موضوعاً للمراجعة أو التعمق.",
+    "quickCheck": "فحص سريع (5 أسئلة)",
+    "karteikarten": "بطاقات تعليمية",
+    "wissensbausteine": "وحدات معرفية",
+    "voraussetzungen": "المتطلبات السابقة",
+    "noThemen": "لا توجد مواضيع متاحة بعد."
   }
 }

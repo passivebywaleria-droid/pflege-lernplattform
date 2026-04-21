@@ -250,14 +250,19 @@
       "feature1": "Bilgine göre uyum sağlar",
       "feature2": "Dil ve uzmanlık bilgisini ayrı ayrı ölçer",
       "feature3": "Eğlenceli ve baskısız",
-      "startButton": "Haydi başlayalım!"
+      "startButton": "Haydi başlayalım!",
+      "resumeButton": "Teste devam et",
+      "restartButton": "Yeniden başla",
+      "loading": "Yükleniyor...",
+      "featuresLabel": "Seni neler bekliyor"
     },
     "axes": {
       "language": "Dil Yetkinliği",
       "knowledge": "Hemşirelik Bilgisi"
     },
     "question": {
-      "counter": "Soru {current} / {total}"
+      "counter": "Soru {current} / {total}",
+      "progress": "İlerleme"
     },
     "feedback": {
       "correct": "Doğru!",
@@ -343,5 +348,60 @@
     "score_B_body": "Sağlam temel — şimdi adım adım derinleştiriyoruz.",
     "score_C_title": "Sorun değil!",
     "score_C_body": "Her şeyi baştan öğreniyoruz — adım adım."
+  },
+  "situation": {
+    "title": "Öğrenme Durumları",
+    "subtitle": "Gerçek bir hastaya bakım ver — kabul görüşmesinden dokümantasyona kadar.",
+    "startSituation": "Durumu başlat",
+    "continueSituation": "Öğrenmeye devam et",
+    "completedBadge": "Tamamlandı",
+    "spirale": "Spiral {level}",
+    "patient": "Hasta",
+    "diagnosen": "Tanılar",
+    "setting": "Ortam",
+    "themenLabel": "İlgili Konular",
+    "geschaetzteZeit": "~{ue} ÖB",
+    "phasen": {
+      "informieren": "Bilgi Toplama",
+      "beobachten": "Gözlem",
+      "planen": "Planlama",
+      "durchfuehren": "Uygulama",
+      "evaluieren": "Değerlendirme",
+      "dokumentieren": "Dokümantasyon"
+    },
+    "phasenBeschreibung": {
+      "informieren": "Hastayı tanı — anamnez, tanılar, durum.",
+      "beobachten": "Vital bulguları, semptomları ve durumu gözlemle.",
+      "planen": "Hedefler ve önlemlerle bir bakım planı oluştur.",
+      "durchfuehren": "Bakım önlemlerini uygula.",
+      "evaluieren": "Önlemlerin başarısını değerlendir.",
+      "dokumentieren": "Her şeyi profesyonelce belgele."
+    },
+    "phaseScore": {
+      "A": "Çok iyi — bir sonraki aşamaya hazırsın!",
+      "B": "İyi — kısa bir tekrar, sonra devam.",
+      "C": "Konuyu derinleştiriyoruz — adım adım."
+    },
+    "baustein": {
+      "title": "Bilgi Yapıtaşı",
+      "denkfrage": "Düşünme Sorusu",
+      "hinweis": "İpucu",
+      "erklaerung": "Açıklama"
+    },
+    "fortschritt": "İlerleme",
+    "alleAbgeschlossen": "Tüm aşamalar tamamlandı!",
+    "phaseAbgeschlossen": "Aşama tamamlandı",
+    "komplikation": "Komplikasyon oluştu!",
+    "noSituationen": "Henüz öğrenme durumu mevcut değil.",
+    "zurueckZurUebersicht": "Genel bakışa dön"
+  },
+  "themaNav": {
+    "title": "Konular",
+    "subtitle": "Tekrar etmek veya derinleştirmek için bir konu seç.",
+    "quickCheck": "Hızlı Test (5 Soru)",
+    "karteikarten": "Kartlar",
+    "wissensbausteine": "Bilgi Yapıtaşları",
+    "voraussetzungen": "Ön Koşullar",
+    "noThemen": "Henüz konu mevcut değil."
   }
 }

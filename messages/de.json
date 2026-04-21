@@ -250,14 +250,19 @@
       "feature1": "Passt sich an dein Wissen an",
       "feature2": "Misst Sprache und Fachwissen getrennt",
       "feature3": "Spielerisch und ohne Druck",
-      "startButton": "Los geht's!"
+      "startButton": "Los geht's!",
+      "resumeButton": "Test fortsetzen",
+      "restartButton": "Neu starten",
+      "loading": "Wird geladen...",
+      "featuresLabel": "Was dich erwartet"
     },
     "axes": {
       "language": "Sprachkompetenz",
       "knowledge": "Pflegefachwissen"
     },
     "question": {
-      "counter": "Frage {current} von {total}"
+      "counter": "Frage {current} von {total}",
+      "progress": "Fortschritt"
     },
     "feedback": {
       "correct": "Richtig!",
@@ -343,5 +348,60 @@
     "score_B_body": "Solide Grundlage — wir vertiefen jetzt Schritt für Schritt.",
     "score_C_title": "Kein Problem!",
     "score_C_body": "Wir gehen den vollen Weg — du lernst jetzt alles von Grund auf."
+  },
+  "situation": {
+    "title": "Lernsituationen",
+    "subtitle": "Pflege einen echten Patienten — vom Aufnahmegespräch bis zur Dokumentation.",
+    "startSituation": "Situation starten",
+    "continueSituation": "Weiter lernen",
+    "completedBadge": "Abgeschlossen",
+    "spirale": "Spirale {level}",
+    "patient": "Patient/in",
+    "diagnosen": "Diagnosen",
+    "setting": "Setting",
+    "themenLabel": "Verknüpfte Themen",
+    "geschaetzteZeit": "~{ue} UE",
+    "phasen": {
+      "informieren": "Informieren",
+      "beobachten": "Beobachten",
+      "planen": "Planen",
+      "durchfuehren": "Durchführen",
+      "evaluieren": "Evaluieren",
+      "dokumentieren": "Dokumentieren"
+    },
+    "phasenBeschreibung": {
+      "informieren": "Lerne den Patienten kennen — Anamnese, Diagnosen, Situation.",
+      "beobachten": "Beobachte Vitalzeichen, Symptome und den Zustand.",
+      "planen": "Erstelle einen Pflegeplan mit Zielen und Maßnahmen.",
+      "durchfuehren": "Führe die Pflegemaßnahmen durch.",
+      "evaluieren": "Bewerte den Erfolg der Maßnahmen.",
+      "dokumentieren": "Dokumentiere alles fachgerecht."
+    },
+    "phaseScore": {
+      "A": "Sehr gut — du bist bereit für die nächste Phase!",
+      "B": "Gut — eine kurze Wiederholung, dann weiter.",
+      "C": "Wir vertiefen das Thema — Schritt für Schritt."
+    },
+    "baustein": {
+      "title": "Wissensbaustein",
+      "denkfrage": "Denkfrage",
+      "hinweis": "Hinweis",
+      "erklaerung": "Erklärung"
+    },
+    "fortschritt": "Fortschritt",
+    "alleAbgeschlossen": "Alle Phasen abgeschlossen!",
+    "phaseAbgeschlossen": "Phase abgeschlossen",
+    "komplikation": "Komplikation aufgetreten!",
+    "noSituationen": "Noch keine Lernsituationen verfügbar.",
+    "zurueckZurUebersicht": "Zurück zur Übersicht"
+  },
+  "themaNav": {
+    "title": "Themen",
+    "subtitle": "Wähle ein Thema zum Wiederholen oder Vertiefen.",
+    "quickCheck": "Quick-Check (5 Fragen)",
+    "karteikarten": "Karteikarten",
+    "wissensbausteine": "Wissensbausteine",
+    "voraussetzungen": "Voraussetzungen",
+    "noThemen": "Noch keine Themen verfügbar."
   }
 }

@@ -1212,3 +1212,146 @@ export const lernzeitReportsRelations = relations(
     }),
   })
 )
+
+// ══════════════════════════════════════════════
+// PART 5: SITUATIONSBASIERTES LERNEN (CE-02+)
+// ══════════════════════════════════════════════
+
+export const pflegeProzessPhaseEnum = pgEnum("pflege_prozess_phase", [
+  "informieren",
+  "beobachten",
+  "planen",
+  "durchfuehren",
+  "evaluieren",
+  "dokumentieren",
+])
+
+export const spiraleEnum = pgEnum("spirale", ["1", "2", "3", "4"])
+
+export const ceContentStatusEnum = pgEnum("ce_content_status", [
+  "themen-rohmaterial",
+  "situationsplan",
+  "steps",
+  "geprueft",
+  "published",
+])
+
+// ──────────────────────────────────────────────
+// 36. Situations-Fortschritt (pro User + Situation)
+// ──────────────────────────────────────────────
+
+export const situationFortschritt = pgTable(
+  "situation_fortschritt",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    situationId: varchar("situation_id", { length: 100 }).notNull(),
+    ceId: varchar("ce_id", { length: 20 }).notNull(),
+    currentPhase: pflegeProzessPhaseEnum("current_phase")
+      .notNull()
+      .default("informieren"),
+    /** Ergebnisse pro Phase: { informieren: { score: "A", stepsBearbeitet: 5 }, ... } */
+    phaseResults: jsonb("phase_results").notNull().default({}),
+    spirale: spiraleEnum("spirale").notNull().default("1"),
+    isComplete: boolean("is_complete").notNull().default(false),
+    gesamtXp: integer("gesamt_xp").notNull().default(0),
+    startedAt: timestamp("started_at").defaultNow().notNull(),
+    completedAt: timestamp("completed_at"),
+    updatedAt: timestamp("updated_at").defaultNow().notNull(),
+  },
+  (table) => [
+    uniqueIndex("idx_situation_user").on(table.userId, table.situationId),
+    index("idx_situation_ce").on(table.userId, table.ceId),
+    index("idx_situation_phase").on(table.userId, table.currentPhase),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 37. Lernzeit-Log (tägliche CE-basierte Lernzeit)
+// ──────────────────────────────────────────────
+
+export const lernzeitLog = pgTable(
+  "lernzeit_log",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    ceId: varchar("ce_id", { length: 20 }).notNull(),
+    datum: date("datum").notNull(),
+    /** "situation" | "thema" | "karteikarten" | "pruefung" */
+    modus: varchar("modus", { length: 30 }).notNull(),
+    aktivMinuten: real("aktiv_minuten").notNull().default(0),
+    /** themaIds die bearbeitet wurden */
+    themen: jsonb("themen").notNull().default([]),
+    situationId: varchar("situation_id", { length: 100 }),
+    stepsBearbeitet: integer("steps_bearbeitet").notNull().default(0),
+  },
+  (table) => [
+    index("idx_lernzeit_user_datum").on(table.userId, table.datum),
+    index("idx_lernzeit_user_ce").on(table.userId, table.ceId),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 38. Themen-Mastery (pro User + Thema)
+// ──────────────────────────────────────────────
+
+export const userThemaMastery = pgTable(
+  "user_thema_mastery",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    themaId: varchar("thema_id", { length: 100 }).notNull(),
+    ceId: varchar("ce_id", { length: 20 }).notNull(),
+    stufe: masteryLevelEnum("stufe").notNull().default("unbekannt"),
+    richtigInFolge: integer("richtig_in_folge").notNull().default(0),
+    gesamtVersuche: integer("gesamt_versuche").notNull().default(0),
+    gesamtRichtig: integer("gesamt_richtig").notNull().default(0),
+    /** Welche Wissensbausteine wurden bereits eingeblendet */
+    geseheneBasuteine: jsonb("gesehene_bausteine").notNull().default([]),
+    naechsteWiederholung: timestamp("naechste_wiederholung").notNull(),
+    letzteAntwort: timestamp("letzte_antwort"),
+  },
+  (table) => [
+    uniqueIndex("idx_thema_mastery_user").on(table.userId, table.themaId),
+    index("idx_thema_mastery_ce").on(table.userId, table.ceId),
+    index("idx_thema_mastery_due").on(
+      table.userId,
+      table.naechsteWiederholung
+    ),
+  ]
+)
+
+// Relations für neue Tabellen
+
+export const situationFortschrittRelations = relations(
+  situationFortschritt,
+  ({ one }) => ({
+    user: one(users, {
+      fields: [situationFortschritt.userId],
+      references: [users.id],
+    }),
+  })
+)
+
+export const lernzeitLogRelations = relations(lernzeitLog, ({ one }) => ({
+  user: one(users, {
+    fields: [lernzeitLog.userId],
+    references: [users.id],
+  }),
+}))
+
+export const userThemaMasteryRelations = relations(
+  userThemaMastery,
+  ({ one }) => ({
+    user: one(users, {
+      fields: [userThemaMastery.userId],
+      references: [users.id],
+    }),
+  })
+)

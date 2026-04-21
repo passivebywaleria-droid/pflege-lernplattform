@@ -5,8 +5,8 @@ import { useRouter } from "next/navigation";
 import { useState, useEffect, useMemo } from "react";
 import { useLocale } from "next-intl";
 import { motion } from "framer-motion";
-import { getAllLektionen, getAllLektionenAsync } from "@/lib/content-loader";
-import type { LeManifestEntry } from "@/lib/content-loader";
+import { getAllLektionen, getAllLektionenAsync, getAllCEs } from "@/lib/content-loader";
+import type { LeManifestEntry, CEManifestEntry } from "@/lib/content-loader";
 import { useEinstufungsStatus } from "@/lib/einstufung/use-einstufung";
 import { useLernFortschritt } from "@/hooks/use-lern-fortschritt";
 import {
@@ -234,7 +234,46 @@ export default function LernenUebersichtPage() {
         </div>
       </div>
 
-      {/* CE-Gruppen */}
+      {/* CE-basierte Kurse (Situationsbasiert) */}
+      {getAllCEs().length > 0 && (
+        <div className="mx-auto max-w-3xl px-4 pt-6">
+          <h2 className="text-sm font-semibold text-[var(--lern-text-primary)] mb-3">Situationsbasiert lernen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {getAllCEs().map((ce) => {
+              const ceColor = CE_COLORS[ce.ceId] ?? "var(--lern-accent)";
+              return (
+                <Link key={ce.ceId} href={`/${locale}/lernen/ce/${ce.ceId}`}>
+                  <motion.div
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-4 cursor-pointer hover:shadow-lg transition-shadow"
+                  >
+                    <div className="flex items-start justify-between mb-2">
+                      <span
+                        className="inline-flex h-7 w-7 items-center justify-center rounded-lg text-xs font-bold text-white"
+                        style={{ backgroundColor: ceColor }}
+                      >
+                        {ce.ceNumber}
+                      </span>
+                      <span className="text-xs text-[var(--lern-text-tertiary)]">{ce.gesamtUE} UE</span>
+                    </div>
+                    <h3 className="text-sm font-semibold text-[var(--lern-text-primary)] mb-1 line-clamp-2">
+                      {ce.titelShort}
+                    </h3>
+                    <div className="flex items-center gap-2 text-xs text-[var(--lern-text-tertiary)]">
+                      <span>{ce.themen.length} Themen</span>
+                      <span>·</span>
+                      <span>{ce.situationen.length} Situationen</span>
+                    </div>
+                  </motion.div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* CE-Gruppen (LE-basiert) */}
       <div className="mx-auto max-w-3xl px-4 py-6 space-y-8">
         {Object.entries(ceGroups).map(([ceId, items]) => (
           <section key={ceId}>

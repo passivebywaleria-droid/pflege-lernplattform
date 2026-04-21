@@ -1030,3 +1030,155 @@ export interface ExamCase {
   bloomRange: [number, number]; // z.B. [4, 6] — nur höhere Bloom-Level
   zeitLimitMinuten?: number;  // Optional: Prüfungszeitlimit
 }
+
+// ═══════════════════════════════════════════════════
+// SITUATIONSBASIERTES LERNEN (CE-02+)
+// ═══════════════════════════════════════════════════
+
+/** Die 6 Phasen des Pflegeprozesses — Struktur jeder Lernsituation */
+export type PflegeProzessPhase =
+  | "informieren"
+  | "beobachten"
+  | "planen"
+  | "durchfuehren"
+  | "evaluieren"
+  | "dokumentieren";
+
+/** Wissensstufe: Denkfrage (stark) → Hinweis (mittel) → Erklärung (schwach) */
+export type WissensStufe = 1 | 2 | 3;
+
+/** Spiralcurriculares Prinzip: gleiche Kompetenzen, steigende Komplexität */
+export type Spirale = 1 | 2 | 3 | 4;
+
+/** Wissensart nach didaktischer Taxonomie */
+export type Wissensart = "handlung" | "konzept" | "orientierung";
+
+/** Status-Workflow für CE-basierten Content */
+export type CEContentStatus =
+  | "themen-rohmaterial"
+  | "situationsplan"
+  | "steps"
+  | "geprueft"
+  | "published";
+
+// --- Themen + Wissensbausteine ---
+
+/** Ein Thema innerhalb einer CE (z.B. "Dekubitus-Prophylaxe") */
+export interface Thema {
+  themaId: string;              // "dekubitus-prophylaxe"
+  ceId: string;                 // "ce-02"
+  titel: string;
+  kompetenzbereich: string;     // "I.1"
+  wissensart: Wissensart;
+  voraussetzungen: string[];    // themaIds die vorher beherrscht sein müssen
+  cluster: string;              // "mobilitaet", "koerperpflege" etc.
+  geschaetzteUE: number;        // Unterrichtseinheiten (à 45 Min)
+  bausteine: Wissensbaustein[];
+  glossar: GlossarEntry[];
+  karteikarten: KarteikarteVorlage[];
+}
+
+/** Ein Wissensbaustein — 3 Stufen zum selben Fakt */
+export interface Wissensbaustein {
+  bausteinId: string;           // "wb-dekubitus-01"
+  themaId: string;
+  titel: string;
+  /** Stufe 1: Denkfrage (starke Schüler, Bloom ≥3) */
+  stufe1: {
+    typ: "denkfrage";
+    frage: string;
+    antwort: string;
+  };
+  /** Stufe 2: Hinweis (mittlere Schüler, Bloom 2-3) */
+  stufe2: {
+    typ: "hinweis";
+    text: string;
+    textB1?: string;
+  };
+  /** Stufe 3: Erklärung als ContentStep (schwache Schüler, Bloom 1-2) */
+  stufe3: {
+    typ: "erklaerung";
+    step: ContentStep;
+    stepB1?: ContentStep;
+  };
+  glossarBegriffe: string[];
+  karteikarten: KarteikarteVorlage[];
+}
+
+// --- Lernsituationen ---
+
+/** Patient einer Lernsituation */
+export interface PatientBeschreibung {
+  patientId: string;            // "pat-yilmaz"
+  name: string;
+  alter: number;
+  geschlecht: "w" | "m" | "d";
+  diagnosen: string[];
+  nebendiagnosen?: string[];
+  setting: string;              // "Orthopädische Station"
+  hintergrund: string;          // Biografie, soziales Umfeld
+  hintergrundB1?: string;
+  persoenlichkeit: string;      // Kommunikationsstil, Ängste
+  zitate?: string[];            // Typische Aussagen des Patienten
+}
+
+/** Eine Phase innerhalb einer Lernsituation */
+export interface SituationsPhase {
+  phaseId: string;              // "ls-01-informieren"
+  phase: PflegeProzessPhase;
+  titel: string;
+  titelB1?: string;
+  kontext: string;              // Situationsbeschreibung für diese Phase
+  kontextB1?: string;
+  kernSteps: ContentStep[];     // Jeder Schüler sieht diese
+  optionaleSteps: ContentStep[]; // Sequencer wählt basierend auf Profil
+  geschaetzteDauer: number;     // Minuten
+}
+
+/** Wann wird ein Wissensbaustein eingeblendet? */
+export interface BausteinTrigger {
+  phase: PflegeProzessPhase;
+  trigger: string;              // "dekubitus-frage-falsch"
+  bausteinId: string;           // Verweis auf Wissensbaustein
+  stufe: WissensStufe;          // Sequencer wählt basierend auf Profil
+}
+
+/** Komplikation/Branching-Punkt in einer Lernsituation */
+export interface Komplikation {
+  komplikationId: string;
+  phase: PflegeProzessPhase;
+  ausloeser: string;            // Was triggert die Komplikation
+  beschreibung: string;
+  beschreibungB1?: string;
+  steps: ContentStep[];         // Zusätzliche Steps bei Komplikation
+}
+
+/** Eine komplette Lernsituation (Patientenfall mit 6 Phasen) */
+export interface Lernsituation {
+  situationId: string;          // "ls-01-yilmaz-hueft-tep"
+  ceId: string;
+  patient: PatientBeschreibung;
+  titel: string;
+  titelB1?: string;
+  themen: string[];             // themaIds die verwoben werden
+  spirale: Spirale;
+  geschaetzteUE: number;
+  phasen: SituationsPhase[];
+  komplikationen: Komplikation[];
+  bausteinTrigger: BausteinTrigger[];
+}
+
+// --- CE-Manifest ---
+
+/** Manifest-Eintrag pro CE (situationsbasiert) */
+export interface CEManifestEntry {
+  ceId: string;                 // "ce-02"
+  ceNumber: number;
+  titel: string;
+  titelShort: string;
+  gesamtUE: number;
+  themen: string[];             // themaIds
+  situationen: string[];        // situationIds
+  status: CEContentStatus;
+  sortOrder: number;
+}
