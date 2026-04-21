@@ -127,12 +127,18 @@ function FeedbackContent({ data, onClose }: { data: ScaffoldingResult; onClose: 
 
 function strategieLabel(typ: string): string {
   switch (typ) {
+    // KI-API Strategien
     case "analogie": return "Anders gedacht";
     case "geschichte": return "Eine Geschichte";
     case "vergleich": return "Im Vergleich";
     case "schritt-fuer-schritt": return "Schritt für Schritt";
     case "alltagsbezug": return "Aus dem Alltag";
     case "eselsbruecke": return "Eselsbrücke";
+    // Engine-Strategien (aus strategie.ts)
+    case "einfach": return "Einfach erklärt";
+    case "schrittweise": return "Schritt für Schritt";
+    case "fallbeispiel": return "Am Beispiel";
+    case "bild": return "Visuell erklärt";
     default: return "Anders erklärt";
   }
 }

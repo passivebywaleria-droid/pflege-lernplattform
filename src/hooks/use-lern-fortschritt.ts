@@ -4,6 +4,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { berechneAchsen } from "@/lib/adaptive/lern-profil";
 import { updateKompetenz, lernzielVonStep, type KompetenzRegister } from "@/lib/adaptive/kompetenz-register";
 import type { EinstufungsErgebnis } from "@/lib/einstufung/algorithmus";
+import type { StrategieTyp, StrategiePraeferenzen } from "@/lib/adaptive/strategie";
+import { updateStrategiePraeferenz } from "@/lib/adaptive/strategie";
 
 // --- Types ---
 
@@ -16,6 +18,8 @@ export interface StepAntwort {
   zeitMs: number;            // Antwortzeit in ms (Pflicht!)
   bloomLevel?: number;
   fehlerKategorie?: "raten" | "konzept" | "sprache" | "verwechslung" | "fluechtig";
+  verwendeteStrategie?: StrategieTyp;     // Welche Strategie wurde bei Hilfe genutzt?
+  strategieEffektiv?: boolean;            // true = Retry nach Strategie war korrekt
 }
 
 export interface SessionFortschritt {
@@ -90,6 +94,7 @@ export interface LernProfil {
   sessionLogs?: SessionLog[];               // Detaillierte Session-Logs für Lernzeit-Nachweis (max 500)
   einstufungsErgebnis?: EinstufungsErgebnis; // Vollständiges Einstufungsergebnis (aus einstufung/page.tsx)
   modus?: "theorie" | "praxis";             // Praktikums-Modus (default: theorie)
+  strategiePraeferenzen?: StrategiePraeferenzen; // KI-Didaktik: Welche Strategien funktionieren?
 }
 
 export interface SchwachstellenKarte {
@@ -765,6 +770,24 @@ export function useLernFortschritt() {
     return () => window.removeEventListener("beforeunload", handler);
   }, []); // Leeres Array = nur 1x registriert
 
+  // Strategie-Präferenz aktualisieren (nach Retry mit Strategie)
+  const updateStrategiePraeferenzFn = useCallback(
+    (strategie: StrategieTyp, effektiv: boolean) => {
+      setProfil((prev) => {
+        if (!prev) return prev;
+        return {
+          ...prev,
+          strategiePraeferenzen: updateStrategiePraeferenz(
+            prev.strategiePraeferenzen,
+            strategie,
+            effektiv,
+          ),
+        };
+      });
+    },
+    [],
+  );
+
   // Praktikums-Modus umschalten
   const toggleModus = useCallback(() => {
     setProfil((prev) => {
@@ -798,6 +821,7 @@ export function useLernFortschritt() {
     bereinigeDaten,
     getStorageNutzungKB,
     toggleModus,
+    updateStrategiePraeferenzFn,
   };
 }
 

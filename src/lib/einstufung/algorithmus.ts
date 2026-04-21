@@ -7,12 +7,15 @@ import { getZufaelligeFrage } from "./fragen"
 
 // --- Typen ---
 
+export type FehlerKategorie = "raten" | "konzept" | "sprache" | "begriffsproblem" | null
+
 export interface FrageAntwort {
   frageId: string
   achse: Achse
   schwierigkeit: Schwierigkeit
   korrekt: boolean
   zeitMs: number // Antwortzeit in Millisekunden
+  fehlerKategorie: FehlerKategorie // Warum falsch? (null wenn korrekt)
 }
 
 export interface AchsenErgebnis {
@@ -23,11 +26,19 @@ export interface AchsenErgebnis {
   durchschnittZeitMs: number
 }
 
+export interface FehlerVerteilung {
+  raten: number
+  konzept: number
+  sprache: number
+  begriffsproblem: number
+}
+
 export interface EinstufungsErgebnis {
   sprache: AchsenErgebnis
   fachwissen: AchsenErgebnis
   gesamtDauerMs: number
   abgeschlossenAm: string // ISO-String
+  fehlerVerteilung: FehlerVerteilung // Wie viele Fehler pro Kategorie
 }
 
 export interface EinstufungsState {
@@ -156,12 +167,18 @@ export function verarbeiteAntwort(
   const zeitMs = Date.now() - state.frageStartZeit
   const korrekt = gewaehlteOptionId === state.aktuelleFrage.richtig
 
+  // Fehler-Kategorisierung (VISION.md: "Warum falsch?")
+  const fehlerKategorie = korrekt
+    ? null
+    : kategorisiereFehler(state, zeitMs)
+
   const antwort: FrageAntwort = {
     frageId: state.aktuelleFrage.id,
     achse: state.aktuelleAchse,
     schwierigkeit: state.aktuelleFrage.schwierigkeit,
     korrekt,
     zeitMs,
+    fehlerKategorie,
   }
 
   return {
@@ -172,6 +189,45 @@ export function verarbeiteAntwort(
       state.aktuelleFrage.id,
     ],
   }
+}
+
+/**
+ * Fehler-Kategorisierung nach VISION.md:
+ * - raten: Sehr schnelle Antwort (<2s) bei 4 Optionen = Zufall
+ * - sprache: Fachwissen-Frage falsch bei niedrigem Sprach-Level
+ * - begriffsproblem: Sprach-Frage falsch auf niedrigem Level (kennt den Begriff nicht)
+ * - konzept: Langsam nachgedacht, trotzdem falsch (versteht das Konzept nicht)
+ */
+function kategorisiereFehler(
+  state: EinstufungsState,
+  zeitMs: number
+): FehlerKategorie {
+  const RATE_GRENZE_MS = 2000 // <2s bei 4 Optionen = geraten
+
+  // Geraten: Sehr schnelle Antwort
+  if (zeitMs < RATE_GRENZE_MS) {
+    return "raten"
+  }
+
+  // Sprach-Achse + niedriges Level → Begriffsproblem (kennt Fachbegriff nicht)
+  if (state.aktuelleAchse === "sprache" && state.aktuellesLevel <= 2) {
+    return "begriffsproblem"
+  }
+
+  // Fachwissen-Frage falsch + schwacher Sprach-Score → evtl. Sprachproblem
+  if (state.aktuelleAchse === "fachwissen") {
+    const sprachAntworten = state.antworten.filter((a) => a.achse === "sprache")
+    if (sprachAntworten.length >= 3) {
+      const sprachRichtig = sprachAntworten.filter((a) => a.korrekt).length
+      const sprachRate = sprachRichtig / sprachAntworten.length
+      if (sprachRate < 0.5) {
+        return "sprache" // Versteht evtl. die Frage sprachlich nicht
+      }
+    }
+  }
+
+  // Default: Konzeptproblem (hat nachgedacht aber falsch)
+  return "konzept"
 }
 
 // --- Phase starten ---
@@ -199,11 +255,21 @@ export function berechneErgebnis(
     (a) => a.achse === "fachwissen"
   )
 
+  // Fehler-Verteilung berechnen
+  const falscheAntworten = state.antworten.filter((a) => !a.korrekt)
+  const fehlerVerteilung: FehlerVerteilung = {
+    raten: falscheAntworten.filter((a) => a.fehlerKategorie === "raten").length,
+    konzept: falscheAntworten.filter((a) => a.fehlerKategorie === "konzept").length,
+    sprache: falscheAntworten.filter((a) => a.fehlerKategorie === "sprache").length,
+    begriffsproblem: falscheAntworten.filter((a) => a.fehlerKategorie === "begriffsproblem").length,
+  }
+
   return {
     sprache: berechneAchsenScore(spracheAntworten),
     fachwissen: berechneAchsenScore(fachwissenAntworten),
     gesamtDauerMs: Date.now() - state.gesamtStartZeit,
     abgeschlossenAm: new Date().toISOString(),
+    fehlerVerteilung,
   }
 }
 

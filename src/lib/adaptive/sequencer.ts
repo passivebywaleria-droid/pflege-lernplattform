@@ -4,8 +4,9 @@
 import type { ContentStep } from "../../../content/_types";
 import type { StepAntwort, LernProfil } from "@/hooks/use-lern-fortschritt";
 import { klassifiziereZeit, zeitKonfidenz } from "./antwortzeit";
-import { zaehleThemaFehler } from "./fehler-analyse";
+import { zaehleThemaFehler, kategorisiereFehler } from "./fehler-analyse";
 import { istGemeistert, lernzielVonStep } from "./kompetenz-register";
+import { waehleStrategie, type StrategieTyp } from "./strategie";
 
 // --- Typen ---
 
@@ -35,6 +36,7 @@ export interface SequencerResult {
   isInserted: boolean;
   reason?: InsertionReason;
   shouldSkip: boolean;
+  verwendeteStrategie?: StrategieTyp;
 }
 
 export interface SequencerContext {
@@ -47,6 +49,10 @@ export interface SequencerContext {
   leId?: string;
   /** Intern: stepIds die als Challenge vorgezogen wurden */
   _challengedStepIds?: Set<string>;
+  /** Strategien die in dieser Session bereits versucht wurden (pro stepId-Prefix) */
+  _bereitsVersuchteStrategien?: StrategieTyp[];
+  /** Letzte verwendete Strategie (für Effektivitäts-Tracking) */
+  letzteVerwendeteStrategie?: StrategieTyp;
 }
 
 // --- Regel-System ---
@@ -130,29 +136,32 @@ function createTypWechsel(original: ContentStep, vermeiden: string): ContentStep
 }
 
 /**
- * Erstellt einen Erklär-Step basierend auf der Fehlerkategorie.
- * Problem #3: Verschiedene Fehlertypen → verschiedene Erklärungen.
+ * Erstellt einen Erklär-Step basierend auf der gewählten Strategie.
+ * VISION.md: "Jeder Versuch ist ein anderer didaktischer Ansatz."
  *
- * - raten: Thema nochmal von Grund auf, Schritt für Schritt
- * - sprache: Einfachere Sprache, Glossar, B1-Version
- * - verwechslung: Unterschied zwischen Konzepten erklären
- * - konzept: Anderer Erklärungsweg, Analogie aus Alltag
+ * Strategien (aus strategie.ts):
+ * - schrittweise: Kernaussage zuerst, dann Details
+ * - einfach: B1-Version, einfache Sprache, Glossar
+ * - vergleich: Unterschied zwischen Konzepten erklären
+ * - analogie: Anderer Erklärungsweg, Vergleich mit Alltag
+ * - fallbeispiel: Konkreter Patient statt abstrakte Theorie
+ * - bild: Visuell, Glossar-Begriffe hervorheben
  */
 function createHilfeStep(
   original: ContentStep,
-  fehlerKategorie?: "raten" | "konzept" | "sprache" | "verwechslung" | "fluechtig",
+  strategieTyp?: StrategieTyp,
 ): ContentStep {
   const richtigeAntwort = original.question?.optionen?.find((o) => o.isCorrect);
-  const kategorie = fehlerKategorie ?? "konzept";
+  const strategie = strategieTyp ?? "analogie";
 
   let title: string;
   let body: string;
   let titleB1: string | undefined;
   let bodyB1: string | undefined;
 
-  switch (kategorie) {
-    case "raten": {
-      // Schüler hat geraten → Thema nochmal erklären, langsam
+  switch (strategie) {
+    case "schrittweise": {
+      // Kernaussage zuerst, dann Schritt für Schritt
       title = `Schritt für Schritt: ${original.contentC1.title}`;
       body = original.contentC1.body;
       if (richtigeAntwort) {
@@ -162,15 +171,14 @@ function createHilfeStep(
       bodyB1 = original.contentB1?.body;
       break;
     }
-    case "sprache": {
-      // Sprachproblem → B1-Version, einfache Sprache
+    case "einfach": {
+      // B1-Version, einfache Sprache
       title = `Einfach erklärt: ${original.contentC1.title}`;
       body = original.contentB1?.body ?? original.contentC1.body;
       if (richtigeAntwort) {
         const erklaerung = richtigeAntwort.explanationB1 ?? richtigeAntwort.explanation;
         body = `${erklaerung}\n\n---\n\n${body}`;
       }
-      // Glossar-Begriffe hervorheben
       if (original.contentC1.glossarBegriffe?.length) {
         body += `\n\n**Wichtige Wörter:** ${original.contentC1.glossarBegriffe.join(", ")}`;
       }
@@ -178,8 +186,8 @@ function createHilfeStep(
       bodyB1 = body;
       break;
     }
-    case "verwechslung": {
-      // Verwechslung → Unterschied zwischen Optionen erklären
+    case "vergleich": {
+      // Unterschied zwischen Konzepten
       title = `Unterschied erklärt: ${original.contentC1.title}`;
       const vergleiche: string[] = [];
       if (richtigeAntwort) {
@@ -197,14 +205,37 @@ function createHilfeStep(
       bodyB1 = original.contentB1?.body;
       break;
     }
-    case "konzept":
-    default: {
-      // Konzeptproblem → anderer Erklärungsweg
+    case "analogie": {
+      // Anderer Erklärungsweg
       title = `Anders erklärt: ${original.contentC1.title}`;
       body = richtigeAntwort
         ? `${richtigeAntwort.explanation}\n\n---\n\n${original.contentC1.body}`
         : original.contentC1.body;
       titleB1 = original.contentB1 ? `Anders erklärt: ${original.contentB1.title}` : undefined;
+      bodyB1 = original.contentB1?.body;
+      break;
+    }
+    case "fallbeispiel": {
+      // Konkreter Patient statt abstrakte Theorie
+      title = `Am Beispiel: ${original.contentC1.title}`;
+      body = richtigeAntwort
+        ? `**Stell dir vor:** Ein Patient kommt zu dir. ${richtigeAntwort.explanation}\n\n---\n\n${original.contentC1.body}`
+        : original.contentC1.body;
+      titleB1 = original.contentB1 ? `Am Beispiel: ${original.contentB1.title}` : undefined;
+      bodyB1 = original.contentB1?.body;
+      break;
+    }
+    case "bild": {
+      // Visuell, Glossar hervorheben
+      title = `Visuell erklärt: ${original.contentC1.title}`;
+      body = original.contentC1.body;
+      if (richtigeAntwort) {
+        body = `${richtigeAntwort.explanation}\n\n---\n\n${body}`;
+      }
+      if (original.contentC1.glossarBegriffe?.length) {
+        body += `\n\n**Wichtige Wörter:** ${original.contentC1.glossarBegriffe.join(", ")}`;
+      }
+      titleB1 = original.contentB1 ? `Visuell erklärt: ${original.contentB1.title}` : undefined;
       bodyB1 = original.contentB1?.body;
       break;
     }
@@ -227,16 +258,91 @@ function createHilfeStep(
 // --- Die 10 Regeln ---
 
 const REGELN: AdaptiveRegel[] = [
-  // R1, R3, R3b, R3c: DEAKTIVIERT — Scaffolding-Overlay übernimmt die Fehler-Erklärung.
-  // Das Overlay zeigt KI-generiertes Sandwich-Feedback mit ECHTEN alternativen Erklärungen
-  // statt den gleichen Body-Text mit anderem Titel zu wiederholen.
-  // createHilfeStep() bleibt als Fallback-Funktion erhalten (z.B. ohne Internet).
+  // R1: Fehler-Hilfe — Bei falscher Antwort → Strategie wählen → Hilfe-Step einfügen
+  // Strategie-Auswahl via waehleStrategie() statt hardcoded
+  {
+    id: "R1",
+    name: "Fehlerhilfe mit Strategiewechsel",
+    priority: 10,
+    check: (ctx, profil, steps) => {
+      if (!ctx.lastAntwort || ctx.lastAntwort.correct !== false) return null;
 
-  // R2: Typ-Wechsel nach 2+ gleichen Fehlern (bleibt aktiv — erzeugt ANDEREN Fragetyp)
+      // Nur bei erstem Fehler — R3 übernimmt bei Wiederholungen
+      const fehlerCount = zaehleThemaFehler(ctx.sessionAntworten, ctx.lastAntwort.stepId);
+      if (fehlerCount >= 2) return null; // R3 oder R2 übernehmen
+
+      const originalStep = steps.find((s) => s.stepId === ctx.lastAntwort!.stepId);
+      if (!originalStep) return null;
+
+      // Fehler-Kategorie bestimmen
+      const sprachLevel = profil.achsen?.sprache ?? 3;
+      const fehlerKategorie = kategorisiereFehler(
+        ctx.lastAntwort,
+        ctx.sessionAntworten,
+        sprachLevel,
+      );
+
+      // Strategie wählen (berücksichtigt Präferenzen + bereits versuchte)
+      const strategie = waehleStrategie(
+        fehlerKategorie,
+        profil.strategiePraeferenzen,
+        ctx._bereitsVersuchteStrategien ?? [],
+        sprachLevel,
+      );
+
+      // Strategie tracken
+      ctx.letzteVerwendeteStrategie = strategie;
+      if (!ctx._bereitsVersuchteStrategien) ctx._bereitsVersuchteStrategien = [];
+      ctx._bereitsVersuchteStrategien.push(strategie);
+
+      return createHilfeStep(originalStep, strategie);
+    },
+  },
+
+  // R3: Wiederholung mit ANDERER Strategie — Bei 2+ Fehlern im selben Thema
+  {
+    id: "R3",
+    name: "Wiederholung mit anderer Strategie",
+    priority: 9,
+    check: (ctx, profil, steps) => {
+      if (!ctx.lastAntwort || ctx.lastAntwort.correct !== false) return null;
+      const fehlerCount = zaehleThemaFehler(ctx.sessionAntworten, ctx.lastAntwort.stepId);
+      if (fehlerCount < 2) return null;
+
+      // Max 3 Hilfe-Steps pro Thema (VISION.md: 6 Versuche, aber nicht endlos)
+      if (fehlerCount > 4) return null;
+
+      const originalStep = steps.find((s) => s.stepId === ctx.lastAntwort!.stepId);
+      if (!originalStep) return null;
+
+      const sprachLevel = profil.achsen?.sprache ?? 3;
+      const fehlerKategorie = kategorisiereFehler(
+        ctx.lastAntwort,
+        ctx.sessionAntworten,
+        sprachLevel,
+      );
+
+      // ANDERE Strategie als beim letzten Mal
+      const strategie = waehleStrategie(
+        fehlerKategorie,
+        profil.strategiePraeferenzen,
+        ctx._bereitsVersuchteStrategien ?? [],
+        sprachLevel,
+      );
+
+      ctx.letzteVerwendeteStrategie = strategie;
+      if (!ctx._bereitsVersuchteStrategien) ctx._bereitsVersuchteStrategien = [];
+      ctx._bereitsVersuchteStrategien.push(strategie);
+
+      return createHilfeStep(originalStep, strategie);
+    },
+  },
+
+  // R2: Typ-Wechsel nach 2+ gleichen Fehlern (erzeugt ANDEREN Fragetyp)
   {
     id: "R2",
     name: "Typ-Wechsel bei Wiederholung",
-    priority: 9,
+    priority: 8,
     check: (ctx, _profil, steps) => {
       if (!ctx.lastAntwort || ctx.lastAntwort.correct !== false) return null;
       const fehlerCount = zaehleThemaFehler(ctx.sessionAntworten, ctx.lastAntwort.stepId);
@@ -328,6 +434,9 @@ export class AdaptiveSequencer {
     // challengedStepIds Set im Context mitgeben für R4
     ctx._challengedStepIds = this.challengedStepIds;
 
+    // bereitsVersuchteStrategien initialisieren falls nicht vorhanden
+    if (!ctx._bereitsVersuchteStrategien) ctx._bereitsVersuchteStrategien = [];
+
     // 1. Pending Insertions zuerst abarbeiten
     if (this.pendingInsertions.length > 0) {
       const inserted = this.pendingInsertions.shift()!;
@@ -340,9 +449,15 @@ export class AdaptiveSequencer {
       const result = regel.check(ctx, this.profil, this.steps);
       if (result) {
         const reason = regel.id === "R4" ? "challenge" as const :
-                       regel.id === "R1" ? "hilfe" as const :
+                       (regel.id === "R1" || regel.id === "R3") ? "hilfe" as const :
                        "retry" as const;
-        return { step: result, isInserted: true, reason, shouldSkip: false };
+        return {
+          step: result,
+          isInserted: true,
+          reason,
+          shouldSkip: false,
+          verwendeteStrategie: ctx.letzteVerwendeteStrategie,
+        };
       }
     }
 

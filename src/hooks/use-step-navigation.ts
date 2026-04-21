@@ -5,6 +5,7 @@ import type { ContentStep, ErlebnisModus } from "../../content/_types";
 import type { StepAntwort } from "./use-lern-fortschritt";
 import { kategorisiereFehler } from "@/lib/adaptive/fehler-analyse";
 import type { AdaptiveSequencer, SequencerContext, CheckpointScore } from "@/lib/adaptive/sequencer";
+import type { StrategieTyp } from "@/lib/adaptive/strategie";
 import { calculateXP } from "../../content/_xp-formula";
 import type { StepType, ThemenblockPhase, ErlebnisModus as ErlebnisModusV2 } from "../../content/_types";
 
@@ -51,6 +52,7 @@ interface UseStepNavigationParams {
   onWrong: () => void;
   setFeedbackType: (type: "correct" | "wrong" | null) => void;
   incrementB1Toggle: () => void;
+  updateStrategiePraeferenzFn: (strategie: StrategieTyp, effektiv: boolean) => void;
 }
 
 export function useStepNavigation({
@@ -78,6 +80,7 @@ export function useStepNavigation({
   onWrong,
   setFeedbackType,
   incrementB1Toggle,
+  updateStrategiePraeferenzFn,
 }: UseStepNavigationParams) {
   const [currentStep, setCurrentStep] = useState(0);
   const [score, setScore] = useState(0);
@@ -108,6 +111,8 @@ export function useStepNavigation({
   const stepStartTime = useRef<number>(Date.now());
   const sessionStartTime = useRef<number>(Date.now());
   const containerRef = useRef<HTMLDivElement>(null);
+  /** Letzte verwendete Strategie — für Effektivitäts-Tracking beim nächsten Retry */
+  const letzteStrategieRef = useRef<StrategieTyp | null>(null);
 
   // Retry-Step erzeugen: gleicher Inhalt, anderer Typ
   const createRetryStep = useCallback((original: ContentStep): ContentStep | null => {
@@ -236,6 +241,10 @@ export function useStepNavigation({
         if (result.isInserted) {
           setAdaptiveStep(result.step);
           setAdaptiveReason(result.reason ?? null);
+          // Strategie merken für Effektivitäts-Tracking
+          if (result.verwendeteStrategie) {
+            letzteStrategieRef.current = result.verwendeteStrategie;
+          }
           return;
         }
 
@@ -302,6 +311,16 @@ export function useStepNavigation({
             sessionAntworten,
             sprachAchse,
           );
+        }
+
+        // Strategie-Effektivitäts-Tracking:
+        // Wenn die letzte Aktion ein Hilfe-Step mit Strategie war,
+        // prüfe ob dieser Retry erfolgreich war
+        if (letzteStrategieRef.current && correct !== null) {
+          antwort.verwendeteStrategie = letzteStrategieRef.current;
+          antwort.strategieEffektiv = correct === true;
+          updateStrategiePraeferenzFn(letzteStrategieRef.current, correct === true);
+          letzteStrategieRef.current = null;
         }
 
         setSessionAntworten((prev) => [...prev, antwort]);
@@ -415,7 +434,7 @@ export function useStepNavigation({
 
       advanceStep();
     },
-    [currentStep, steps, addSchwaeche, leId, advanceStep, retryQueue, createRetryStep, profil, sessionAntworten, saveAntwort, updateKompetenzEintrag, updateAchsen, onXpEarned, onCorrect, onWrong, setFeedbackType, sprachLevel],
+    [currentStep, steps, addSchwaeche, leId, advanceStep, retryQueue, createRetryStep, profil, sessionAntworten, saveAntwort, updateKompetenzEintrag, updateAchsen, onXpEarned, onCorrect, onWrong, setFeedbackType, sprachLevel, updateStrategiePraeferenzFn],
   );
 
   // Reset für Session-Wechsel

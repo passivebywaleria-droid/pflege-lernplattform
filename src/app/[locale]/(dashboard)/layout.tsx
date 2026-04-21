@@ -3,6 +3,7 @@ import { redirect } from "next/navigation"
 import { Sidebar } from "@/components/layout/sidebar"
 import { TopBar } from "@/components/layout/top-bar"
 import { BottomNav } from "@/components/layout/bottom-nav"
+import { EinstufungsGuard } from "@/components/auth/einstufungs-guard"
 
 export default async function DashboardLayout({
   children,
@@ -18,7 +19,9 @@ export default async function DashboardLayout({
       <div className="flex flex-1 flex-col overflow-hidden">
         <TopBar userName={undefined} />
         <main className="flex-1 overflow-y-auto pb-16 md:pb-0">
-          {children}
+          <EinstufungsGuard>
+            {children}
+          </EinstufungsGuard>
         </main>
         <BottomNav />
       </div>

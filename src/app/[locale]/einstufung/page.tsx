@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useCallback, useEffect } from "react"
+import { useState, useCallback, useEffect, useRef } from "react"
 import { useRouter } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import { useTranslations } from "next-intl"
@@ -24,6 +24,59 @@ const TEXT = "var(--lern-text-primary)"
 const GRAU = "var(--lern-text-secondary)"
 const HELLGRAU = "var(--lern-bg)"
 
+const STORAGE_KEY = "pflege-einstufung-progress"
+
+// --- Persistenz Hilfsfunktionen ---
+
+function speichereZwischenstand(state: EinstufungsState) {
+  try {
+    // Nur speichern wenn Test läuft (nicht willkommen, nicht ergebnis)
+    if (state.phase === "sprache" || state.phase === "fachwissen") {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({
+        state,
+        gespeichertAm: Date.now(),
+      }))
+    }
+  } catch {
+    // localStorage nicht verfügbar
+  }
+}
+
+function ladeZwischenstand(): EinstufungsState | null {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY)
+    if (!raw) return null
+
+    const { state, gespeichertAm } = JSON.parse(raw) as {
+      state: EinstufungsState
+      gespeichertAm: number
+    }
+
+    // Zwischenstand nur 30 Minuten gültig
+    const MAX_ALTER_MS = 30 * 60 * 1000
+    if (Date.now() - gespeichertAm > MAX_ALTER_MS) {
+      localStorage.removeItem(STORAGE_KEY)
+      return null
+    }
+
+    // Nur laden wenn Test lief (Sprache oder Fachwissen Phase)
+    if (state.phase === "sprache" || state.phase === "fachwissen") {
+      return state
+    }
+    return null
+  } catch {
+    return null
+  }
+}
+
+function loescheZwischenstand() {
+  try {
+    localStorage.removeItem(STORAGE_KEY)
+  } catch {
+    // ignorieren
+  }
+}
+
 // --- Hauptkomponente ---
 export default function EinstufungPage() {
   const t = useTranslations("einstufung")
@@ -33,27 +86,55 @@ export default function EinstufungPage() {
   const [state, setState] = useState<EinstufungsState>(createInitialState)
   const [gewaehlteOption, setGewaehlteOption] = useState<string | null>(null)
   const [zeigeErklaerung, setZeigeErklaerung] = useState(false)
-  const [animDirection, setAnimDirection] = useState(1) // 1 = forward
+  const [animDirection, setAnimDirection] = useState(1)
+  const [hatZwischenstand, setHatZwischenstand] = useState(false)
 
   // Redirect wenn schon eingestuft
   useEffect(() => {
     if (loaded && profil?.achsen) {
       router.replace(`/${locale}/lernen`)
     }
-  }, [loaded, profil, router])
+  }, [loaded, profil, router, locale])
+
+  // Zwischenstand laden beim Mount
+  useEffect(() => {
+    const gespeicherterState = ladeZwischenstand()
+    if (gespeicherterState) {
+      setHatZwischenstand(true)
+    }
+  }, [])
+
+  // State bei jeder Änderung persistieren
+  useEffect(() => {
+    speichereZwischenstand(state)
+  }, [state])
 
   const handleStart = useCallback(() => {
+    setAnimDirection(1)
+    setHatZwischenstand(false)
+    setState((prev) => starteEinstufung(prev))
+  }, [])
+
+  const handleFortsetzen = useCallback(() => {
+    const gespeicherterState = ladeZwischenstand()
+    if (gespeicherterState) {
+      setState(gespeicherterState)
+      setHatZwischenstand(false)
+    }
+  }, [])
+
+  const handleNeuStarten = useCallback(() => {
+    loescheZwischenstand()
+    setHatZwischenstand(false)
     setAnimDirection(1)
     setState((prev) => starteEinstufung(prev))
   }, [])
 
   const handleOptionClick = useCallback(
     (optionId: string) => {
-      if (gewaehlteOption !== null) return // Bereits beantwortet
+      if (gewaehlteOption !== null) return
       setGewaehlteOption(optionId)
       setZeigeErklaerung(true)
-
-      // Antwort verarbeiten
       setState((prev) => verarbeiteAntwort(prev, optionId))
     },
     [gewaehlteOption]
@@ -68,6 +149,7 @@ export default function EinstufungPage() {
 
   const handleErgebnisSpeichern = useCallback(() => {
     if (!state.ergebnis) return
+    loescheZwischenstand()
     setEinstufungsErgebnis(state.ergebnis)
     router.push(`/${locale}/lernen`)
   }, [state.ergebnis, router, locale, setEinstufungsErgebnis])
@@ -75,8 +157,9 @@ export default function EinstufungPage() {
   // Loading
   if (!loaded) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-[var(--lern-bg-primary)]">
+      <div className="flex min-h-screen items-center justify-center bg-[var(--lern-bg-primary)]" role="status">
         <div className="h-8 w-8 animate-spin rounded-full border-2 border-[#C4877F] border-t-transparent" />
+        <span className="sr-only">{t("welcome.loading")}</span>
       </div>
     )
   }
@@ -85,7 +168,14 @@ export default function EinstufungPage() {
     <div className="min-h-screen bg-[var(--lern-bg-primary)]" style={{ color: TEXT }}>
       <AnimatePresence mode="wait">
         {state.phase === "willkommen" && (
-          <WillkommenPhase key="willkommen" t={t} onStart={handleStart} />
+          <WillkommenPhase
+            key="willkommen"
+            t={t}
+            onStart={handleStart}
+            hatZwischenstand={hatZwischenstand}
+            onFortsetzen={handleFortsetzen}
+            onNeuStarten={handleNeuStarten}
+          />
         )}
 
         {(state.phase === "sprache" || state.phase === "fachwissen") &&
@@ -121,9 +211,15 @@ export default function EinstufungPage() {
 function WillkommenPhase({
   t,
   onStart,
+  hatZwischenstand,
+  onFortsetzen,
+  onNeuStarten,
 }: {
   t: ReturnType<typeof useTranslations>
   onStart: () => void
+  hatZwischenstand: boolean
+  onFortsetzen: () => void
+  onNeuStarten: () => void
 }) {
   return (
     <motion.div
@@ -132,6 +228,8 @@ function WillkommenPhase({
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.4 }}
       className="flex min-h-screen flex-col items-center justify-center px-6"
+      role="main"
+      aria-label={t("welcome.title")}
     >
       <div className="mx-auto max-w-lg text-center">
         {/* Icon */}
@@ -141,6 +239,7 @@ function WillkommenPhase({
           transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
           className="mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-3xl"
           style={{ backgroundColor: `${BLAU}10` }}
+          aria-hidden="true"
         >
           <span className="text-4xl">🎯</span>
         </motion.div>
@@ -156,21 +255,42 @@ function WillkommenPhase({
         </p>
 
         {/* Feature-Punkte */}
-        <div className="mb-10 space-y-3 text-left">
+        <ul className="mb-10 space-y-3 text-left" aria-label={t("welcome.featuresLabel")}>
           <FeaturePunkt icon="🧠" text={t("welcome.feature1")} />
           <FeaturePunkt icon="⏱️" text={t("welcome.feature2")} />
           <FeaturePunkt icon="🎮" text={t("welcome.feature3")} />
-        </div>
+        </ul>
 
-        <motion.button
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          onClick={onStart}
-          className="w-full rounded-2xl py-4 text-lg font-semibold text-white shadow-lg transition-shadow hover:shadow-xl"
-          style={{ backgroundColor: BLAU, boxShadow: `0 8px 24px ${BLAU}40` }}
-        >
-          {t("welcome.startButton")}
-        </motion.button>
+        {hatZwischenstand ? (
+          <div className="space-y-3">
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={onFortsetzen}
+              className="w-full rounded-2xl py-4 text-lg font-semibold text-white shadow-lg transition-shadow hover:shadow-xl"
+              style={{ backgroundColor: BLAU, boxShadow: `0 8px 24px ${BLAU}40` }}
+            >
+              {t("welcome.resumeButton")}
+            </motion.button>
+            <button
+              onClick={onNeuStarten}
+              className="w-full rounded-2xl py-3 text-sm font-medium transition-colors"
+              style={{ color: GRAU }}
+            >
+              {t("welcome.restartButton")}
+            </button>
+          </div>
+        ) : (
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={onStart}
+            className="w-full rounded-2xl py-4 text-lg font-semibold text-white shadow-lg transition-shadow hover:shadow-xl"
+            style={{ backgroundColor: BLAU, boxShadow: `0 8px 24px ${BLAU}40` }}
+          >
+            {t("welcome.startButton")}
+          </motion.button>
+        )}
       </div>
     </motion.div>
   )
@@ -178,10 +298,10 @@ function WillkommenPhase({
 
 function FeaturePunkt({ icon, text }: { icon: string; text: string }) {
   return (
-    <div className="flex items-center gap-3 rounded-xl p-3" style={{ backgroundColor: HELLGRAU }}>
-      <span className="text-xl">{icon}</span>
+    <li className="flex items-center gap-3 rounded-xl p-3" style={{ backgroundColor: HELLGRAU }}>
+      <span className="text-xl" aria-hidden="true">{icon}</span>
       <span className="text-sm font-medium">{text}</span>
-    </div>
+    </li>
   )
 }
 
@@ -211,6 +331,38 @@ function FragePhase({
   )
   const frageNrInAchse = achsenAntworten.length + (gewaehlteOption ? 0 : 1)
   const istKorrekt = gewaehlteOption === frage.richtig
+  const weiterRef = useRef<HTMLButtonElement>(null)
+
+  // Focus auf Weiter-Button wenn Erklärung angezeigt wird
+  useEffect(() => {
+    if (zeigeErklaerung && weiterRef.current) {
+      const timer = setTimeout(() => weiterRef.current?.focus(), 400)
+      return () => clearTimeout(timer)
+    }
+  }, [zeigeErklaerung])
+
+  // Keyboard: Enter/Space für Weiter wenn Erklärung sichtbar
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if (zeigeErklaerung && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault()
+        onWeiter()
+      }
+      // Tastenkürzel 1-4 / A-D für Optionen
+      if (!gewaehlteOption) {
+        const idx = "1234".indexOf(e.key)
+        const letterIdx = "abcd".indexOf(e.key.toLowerCase())
+        const optionIdx = idx >= 0 ? idx : letterIdx
+        if (optionIdx >= 0 && optionIdx < frage.optionen.length) {
+          onOptionClick(frage.optionen[optionIdx].id)
+        }
+      }
+    }
+    window.addEventListener("keydown", handleKeyDown)
+    return () => window.removeEventListener("keydown", handleKeyDown)
+  }, [zeigeErklaerung, gewaehlteOption, frage.optionen, onOptionClick, onWeiter])
+
+  const progressPercent = (frageNrInAchse / state.maxFragen) * 100
 
   return (
     <motion.div
@@ -219,6 +371,7 @@ function FragePhase({
       exit={{ opacity: 0, x: direction * -50 }}
       transition={{ duration: 0.3 }}
       className="flex min-h-screen flex-col px-6 pb-8 pt-6"
+      role="main"
     >
       {/* Header */}
       <div className="mx-auto w-full max-w-lg">
@@ -233,35 +386,42 @@ function FragePhase({
           >
             {state.aktuelleAchse === "sprache" ? t("axes.language") : t("axes.knowledge")}
           </span>
-          <span className="text-sm font-medium" style={{ color: GRAU }}>
+          <span className="text-sm font-medium" style={{ color: GRAU }} aria-live="polite">
             {t("question.counter", { current: frageNrInAchse, total: state.maxFragen })}
           </span>
         </div>
 
         {/* Progress Bar */}
-        <div className="mb-8 h-2 overflow-hidden rounded-full" style={{ backgroundColor: HELLGRAU }}>
+        <div
+          className="mb-8 h-2 overflow-hidden rounded-full"
+          style={{ backgroundColor: HELLGRAU }}
+          role="progressbar"
+          aria-valuenow={Math.round(progressPercent)}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-label={t("question.progress")}
+        >
           <motion.div
             className="h-full rounded-full"
             style={{ backgroundColor: state.aktuelleAchse === "sprache" ? BLAU : "#9B7EA6" }}
             initial={{ width: 0 }}
-            animate={{
-              width: `${(frageNrInAchse / state.maxFragen) * 100}%`,
-            }}
+            animate={{ width: `${progressPercent}%` }}
             transition={{ duration: 0.5 }}
           />
         </div>
 
         {/* Frage */}
-        <h2 className="mb-8 text-xl font-bold leading-relaxed sm:text-2xl">
+        <h2 className="mb-8 text-xl font-bold leading-relaxed sm:text-2xl" id="frage-text">
           {frage.text}
         </h2>
 
         {/* Optionen */}
-        <div className="space-y-3">
+        <div className="space-y-3" role="radiogroup" aria-labelledby="frage-text">
           {frage.optionen.map((option, idx) => {
             const istGewaehlt = gewaehlteOption === option.id
             const istRichtig = option.id === frage.richtig
             const istBeantwortet = gewaehlteOption !== null
+            const buchstabe = String.fromCharCode(65 + idx)
 
             let borderColor = "var(--lern-border)"
             let bgColor = "var(--lern-bg-primary)"
@@ -289,6 +449,9 @@ function FragePhase({
                 transition={{ delay: idx * 0.08 }}
                 onClick={() => onOptionClick(option.id)}
                 disabled={istBeantwortet}
+                role="radio"
+                aria-checked={istGewaehlt}
+                aria-label={`${buchstabe}: ${option.text}`}
                 className="flex w-full items-center gap-3 rounded-2xl border-2 p-4 text-left transition-all"
                 style={{
                   borderColor,
@@ -301,6 +464,7 @@ function FragePhase({
                 {/* Buchstabe */}
                 <span
                   className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg text-sm font-bold"
+                  aria-hidden="true"
                   style={{
                     backgroundColor: istBeantwortet
                       ? istRichtig
@@ -312,7 +476,7 @@ function FragePhase({
                     color: istBeantwortet && (istRichtig || istGewaehlt) ? "white" : TEXT,
                   }}
                 >
-                  {String.fromCharCode(65 + idx)}
+                  {buchstabe}
                 </span>
                 <span className="text-sm font-medium leading-relaxed sm:text-base">
                   {option.text}
@@ -323,6 +487,7 @@ function FragePhase({
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     className="ml-auto flex-shrink-0 text-lg"
+                    aria-label={t("feedback.correct")}
                   >
                     ✓
                   </motion.span>
@@ -332,6 +497,7 @@ function FragePhase({
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     className="ml-auto flex-shrink-0 text-lg"
+                    aria-label={t("feedback.incorrect")}
                   >
                     ✗
                   </motion.span>
@@ -350,6 +516,7 @@ function FragePhase({
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
               className="mt-6 overflow-hidden"
+              aria-live="polite"
             >
               <div
                 className="rounded-2xl p-4"
@@ -367,6 +534,7 @@ function FragePhase({
               </div>
 
               <motion.button
+                ref={weiterRef}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
@@ -406,6 +574,8 @@ function ErgebnisPhase({
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.4 }}
       className="flex min-h-screen flex-col items-center justify-center px-6 py-12"
+      role="main"
+      aria-label={t("result.title")}
     >
       <div className="mx-auto w-full max-w-lg">
         {/* Confetti-Emoji */}
@@ -415,6 +585,7 @@ function ErgebnisPhase({
           transition={{ type: "spring", stiffness: 200, delay: 0.2 }}
           className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-3xl"
           style={{ backgroundColor: `${GRUEN}15` }}
+          aria-hidden="true"
         >
           <span className="text-4xl">🎉</span>
         </motion.div>
@@ -518,7 +689,15 @@ function AchsenKarte({
       </div>
 
       {/* Progress */}
-      <div className="mb-3 h-3 overflow-hidden rounded-full" style={{ backgroundColor: HELLGRAU }}>
+      <div
+        className="mb-3 h-3 overflow-hidden rounded-full"
+        style={{ backgroundColor: HELLGRAU }}
+        role="progressbar"
+        aria-valuenow={ergebnis.score}
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-label={`${label}: ${ergebnis.score}%`}
+      >
         <motion.div
           className="h-full rounded-full"
           style={{ backgroundColor: farbe }}
