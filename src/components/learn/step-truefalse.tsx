@@ -169,7 +169,7 @@ export function StepTrueFalse({
             <motion.button
               onClick={() => handleSwipe(false)}
               style={{ backgroundColor: leftBg }}
-              className="flex-shrink-0 w-16 rounded-2xl border-2 border-[#C96B5C]/30 flex flex-col items-center justify-center gap-1 active:scale-95 transition-transform"
+              className="flex-shrink-0 w-16 rounded-2xl border-[1.5px] border-[#C96B5C]/30 flex flex-col items-center justify-center gap-1 active:scale-95 transition-transform"
             >
               <span className="text-lg">✗</span>
               <span className="text-xs font-bold" style={{ color: "var(--lern-error)" }}>
@@ -187,7 +187,7 @@ export function StepTrueFalse({
                 if (info.offset.x > 80) handleSwipe(true);
                 else if (info.offset.x < -80) handleSwipe(false);
               }}
-              className="flex-1 rounded-2xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-5 min-h-[140px] flex items-center justify-center cursor-grab active:cursor-grabbing select-none shadow-sm"
+              className="flex-1 rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-5 min-h-[140px] flex items-center justify-center cursor-grab active:cursor-grabbing select-none shadow-sm"
             >
               <p className="text-center text-base font-medium leading-snug">
                 <FachbegriffText glossar={glossar ?? []}>
@@ -200,7 +200,7 @@ export function StepTrueFalse({
             <motion.button
               onClick={() => handleSwipe(true)}
               style={{ backgroundColor: rightBg }}
-              className="flex-shrink-0 w-16 rounded-2xl border-2 border-[#6B8F71]/30 flex flex-col items-center justify-center gap-1 active:scale-95 transition-transform"
+              className="flex-shrink-0 w-16 rounded-2xl border-[1.5px] border-[#6B8F71]/30 flex flex-col items-center justify-center gap-1 active:scale-95 transition-transform"
             >
               <span className="text-lg">✓</span>
               <span className="text-xs font-bold" style={{ color: "#6B8F71" }}>
@@ -217,7 +217,7 @@ export function StepTrueFalse({
           >
             {/* Ergebnis */}
             <div
-              className={`rounded-2xl border-2 p-5 ${
+              className={`rounded-2xl border-[1.5px] p-5 ${
                 lastAnswer?.correct
                   ? "border-[#6B8F71] bg-[#6B8F71]/5"
                   : "border-[#C96B5C] bg-[#C96B5C]/5"

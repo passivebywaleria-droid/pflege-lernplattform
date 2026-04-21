@@ -123,7 +123,7 @@ export function StepCloze({
       </p>
 
       {/* Text mit Lücken */}
-      <div className="rounded-2xl bg-[var(--lern-bg-primary)] border-2 border-[var(--lern-border)] p-5 leading-relaxed text-[var(--lern-text-primary)]">
+      <div className="rounded-2xl bg-[var(--lern-bg-primary)] border-[1.5px] border-[var(--lern-border)] p-5 leading-relaxed text-[var(--lern-text-primary)]">
         {segments.map((seg, i) => {
           if (seg.type === "text") {
             return <span key={i}><FachbegriffText glossar={glossar ?? []}>{seg.content}</FachbegriffText></span>;
@@ -137,7 +137,7 @@ export function StepCloze({
               key={i}
               onClick={() => handleRemoveWord(blankId)}
               disabled={submitted}
-              className={`inline-flex items-center min-w-[80px] mx-1 px-3 py-1 rounded-lg border-2 border-dashed text-sm font-medium transition-colors ${
+              className={`inline-flex items-center min-w-[80px] mx-1 px-3 py-1 rounded-lg border-[1.5px] border-dashed text-sm font-medium transition-colors ${
                 submitted && result?.isCorrect
                   ? "border-[#6B8F71] bg-[#6B8F71]/10 text-[#6B8F71]"
                   : submitted && !result?.isCorrect

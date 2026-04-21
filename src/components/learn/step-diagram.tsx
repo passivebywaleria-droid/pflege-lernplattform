@@ -78,7 +78,7 @@ function FlowchartDiagram({
               <button
                 key={node.id}
                 onClick={() => interactive && onNodeClick(node.id)}
-                className={`rounded-xl px-4 py-3 text-sm font-medium transition-all border-2 min-w-[120px] ${
+                className={`rounded-xl px-4 py-3 text-sm font-medium transition-all border-[1.5px] min-w-[120px] ${
                   interactive ? "cursor-pointer active:scale-95" : "cursor-default"
                 } ${
                   node.highlight
@@ -163,7 +163,7 @@ function MindmapDiagram({
       {/* Center — nicht klickbar, nur Label */}
       {center && (
         <div
-          className="rounded-2xl px-6 py-4 text-base font-bold border-2 bg-[var(--lern-accent)]/10 border-[var(--lern-accent)] text-[var(--lern-accent)]"
+          className="rounded-2xl px-6 py-4 text-base font-bold border-[1.5px] bg-[var(--lern-accent)]/10 border-[var(--lern-accent)] text-[var(--lern-accent)]"
         >
           {center.label}
         </div>
@@ -178,7 +178,7 @@ function MindmapDiagram({
             <button
               key={child.id}
               onClick={() => interactive && onNodeClick(child.id)}
-              className={`rounded-xl px-3 py-2.5 text-sm font-medium border-2 transition-all text-left ${
+              className={`rounded-xl px-3 py-2.5 text-sm font-medium border-[1.5px] transition-all text-left ${
                 interactive ? "cursor-pointer active:scale-95" : "cursor-default"
               } ${
                 child.highlight
@@ -232,7 +232,7 @@ function CycleDiagram({
           <div key={node.id}>
             <button
               onClick={() => interactive && onNodeClick(node.id)}
-              className={`w-full rounded-xl px-4 py-3 text-sm font-medium border-2 transition-all text-left flex items-center gap-3 ${
+              className={`w-full rounded-xl px-4 py-3 text-sm font-medium border-[1.5px] transition-all text-left flex items-center gap-3 ${
                 interactive ? "cursor-pointer active:scale-95" : "cursor-default"
               } ${
                 node.highlight
@@ -371,7 +371,7 @@ export function StepDiagram({
       )}
 
       {/* Diagramm */}
-      <div className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-4">
+      <div className="rounded-2xl bg-[var(--lern-bg-primary)] border-[1.5px] border-[var(--lern-border)] p-4">
         <DiagramComponent
           nodes={nodes}
           edges={edges}

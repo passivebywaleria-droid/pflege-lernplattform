@@ -100,7 +100,7 @@ export function StepSlider({
       {!submitted ? (
         <button
           onClick={() => setSubmitted(true)}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
         >
           Antwort abgeben
         </button>
@@ -142,7 +142,7 @@ export function StepSlider({
 
           <button
             onClick={() => onNext(isCorrect)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
           >
             Weiter
           </button>

@@ -89,7 +89,7 @@ export function StepSequencing({
               key={item.id}
               layout
               transition={{ type: "spring", stiffness: 500, damping: 35 }}
-              className={`flex items-center gap-3 rounded-xl border-2 p-3 transition-colors ${
+              className={`flex items-center gap-3 rounded-xl border-[1.5px] p-3 transition-colors ${
                 submitted && correctPositions[pos]
                   ? "border-[#6B8F71] bg-[#6B8F71]/5"
                   : submitted && !correctPositions[pos]
@@ -158,7 +158,7 @@ export function StepSequencing({
       {!submitted ? (
         <button
           onClick={() => setSubmitted(true)}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
         >
           Prüfen
         </button>
@@ -194,7 +194,7 @@ export function StepSequencing({
 
           <button
             onClick={() => onNext(isCorrect)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
           >
             Weiter
           </button>

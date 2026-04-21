@@ -86,8 +86,8 @@ export function StepErrorSpot({
       </div>
 
       {/* Text mit klickbaren Segmenten */}
-      <div className="rounded-2xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] p-5">
-        <p className="text-[15px] leading-relaxed">
+      <div className="rounded-2xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] p-5">
+        <p className="text-sm leading-relaxed">
           {segments.map((seg, i) => {
             const isError = seg.errorIdx !== null;
             const isFound = isError && found.has(seg.errorIdx!);
@@ -122,7 +122,7 @@ export function StepErrorSpot({
       {!submitted ? (
         <button
           onClick={() => setSubmitted(true)}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
         >
           {allFound ? "Alle gefunden — Auflösung zeigen" : "Auflösung zeigen"}
         </button>
@@ -154,7 +154,7 @@ export function StepErrorSpot({
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * (i + 1) }}
-              className="rounded-xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] p-3"
+              className="rounded-xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] p-3"
             >
               <p className="text-sm">
                 <span className="line-through text-[#C96B5C]">{text.slice(err.start, err.end)}</span>
@@ -169,7 +169,7 @@ export function StepErrorSpot({
 
           <button
             onClick={() => onNext(score >= 0.8)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
           >
             Weiter
           </button>

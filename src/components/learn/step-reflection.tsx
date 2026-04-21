@@ -97,7 +97,7 @@ export function StepReflection({
             placeholder={placeholder}
             rows={4}
             aria-label="Reflexion schreiben"
-            className="w-full rounded-2xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-4 text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:border-[var(--lern-info)] focus:outline-2 focus:outline-[var(--lern-accent)] resize-none transition-colors"
+            className="w-full rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-4 text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:border-[var(--lern-info)] focus:outline-2 focus:outline-[var(--lern-accent)] resize-none transition-colors"
           />
           <p className="text-sm text-[var(--lern-text-secondary)]">
             {wordCount > 0
@@ -138,7 +138,7 @@ export function StepReflection({
               animate={{ opacity: 1 }}
               className="rounded-2xl bg-[var(--lern-info)]/5 border border-[var(--lern-info)]/15 p-4 flex items-center gap-3"
             >
-              <div className="h-5 w-5 animate-spin rounded-full border-2 border-[var(--lern-info)] border-t-transparent" />
+              <div className="h-5 w-5 animate-spin rounded-full border-[1.5px] border-[var(--lern-info)] border-t-transparent" />
               <p className="text-sm text-[var(--lern-info)] font-medium">
                 Lese deine Gedanken...
               </p>
@@ -168,7 +168,7 @@ export function StepReflection({
               transition={{ delay: 0.4 }}
               onClick={onNext}
               aria-label="Weiter zum nächsten Schritt"
-              className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
+              className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
             >
               Weiter
             </motion.button>

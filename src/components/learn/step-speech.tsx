@@ -150,7 +150,7 @@ export function StepSpeech({
     <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }}>
       {/* Titel + Aufgabe */}
       <div>
-        <h2 className="text-xl font-bold mb-2">
+        <h2 className="text-2xl font-bold mb-2">
           <FachbegriffText glossar={glossar}>{title}</FachbegriffText>
         </h2>
         <p className="text-sm text-[var(--lern-text-secondary)] leading-relaxed">
@@ -281,7 +281,7 @@ export function StepSpeech({
             className="space-y-4"
           >
             {/* Transkript */}
-            <div className="p-4 rounded-2xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)]">
+            <div className="p-4 rounded-2xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)]">
               <p className="text-xs text-[var(--lern-text-tertiary)] mb-1">Du hast gesagt:</p>
               <p className="text-base font-medium text-[var(--lern-text-primary)]">
                 &ldquo;{transcript}&rdquo;
@@ -332,7 +332,7 @@ export function StepSpeech({
                 <>
                   <button
                     onClick={handleNochmal}
-                    className="flex-1 py-3 rounded-xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] text-sm font-medium text-[var(--lern-text-primary)]"
+                    className="flex-1 py-3 rounded-xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] text-sm font-medium text-[var(--lern-text-primary)]"
                   >
                     Nochmal versuchen
                   </button>

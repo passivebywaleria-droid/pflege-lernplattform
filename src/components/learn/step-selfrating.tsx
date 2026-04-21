@@ -55,7 +55,7 @@ export function StepSelfrating({
             key={r.value}
             onClick={() => setRating(r.value)}
             whileTap={{ scale: 0.9 }}
-            className={`flex flex-col items-center gap-1 rounded-2xl border-2 p-3 transition-all ${
+            className={`flex flex-col items-center gap-1 rounded-2xl border-[1.5px] p-3 transition-all ${
               rating === r.value
                 ? "border-[var(--lern-accent)] bg-[var(--lern-accent)]/5"
                 : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)]"

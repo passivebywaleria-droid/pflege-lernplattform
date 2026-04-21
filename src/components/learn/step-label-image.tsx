@@ -97,7 +97,7 @@ export function StepLabelImage({
       </div>
 
       {/* Bild mit Labels */}
-      <div className="relative rounded-2xl overflow-hidden border-2 border-[var(--lern-border)]">
+      <div className="relative rounded-2xl overflow-hidden border-[1.5px] border-[var(--lern-border)]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={imageUrl}
@@ -122,7 +122,7 @@ export function StepLabelImage({
               onClick={() =>
                 !checked && setActiveLabel(activeLabel === label.id ? null : label.id)
               }
-              className={`h-8 w-8 rounded-full border-2 flex items-center justify-center text-xs font-bold transition-all ${
+              className={`h-8 w-8 rounded-full border-[1.5px] flex items-center justify-center text-xs font-bold transition-all ${
                 checked
                   ? answers[label.id] === label.correct
                     ? "bg-[#6B8F71]/30 border-[#6B8F71] text-[#6B8F71]"
@@ -168,7 +168,7 @@ export function StepLabelImage({
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-3 shadow-lg"
+          className="rounded-2xl bg-[var(--lern-bg-primary)] border-[1.5px] border-[var(--lern-border)] p-3 shadow-lg"
         >
           <p className="text-sm text-[var(--lern-text-secondary)] mb-2">Wähle den Begriff:</p>
           <div className="flex flex-wrap gap-2">
@@ -210,7 +210,7 @@ export function StepLabelImage({
                   className={`rounded-full px-3 py-1.5 text-sm font-medium ${
                     used
                       ? "bg-[var(--lern-border)]/50 text-[var(--lern-border)] line-through"
-                      : "bg-[var(--lern-bg-primary)] text-[var(--lern-text-primary)] border border-[var(--lern-border)]"
+                      : "bg-[var(--lern-bg-primary)] text-[var(--lern-text-primary)] border-[1.5px] border-[var(--lern-border)]"
                   }`}
                 >
                   {opt}

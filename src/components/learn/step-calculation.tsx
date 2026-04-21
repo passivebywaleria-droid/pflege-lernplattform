@@ -56,7 +56,7 @@ export function StepCalculation({
       </div>
 
       {formula && (
-        <div className="rounded-xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] p-4 text-center">
+        <div className="rounded-xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] p-4 text-center">
           <p className="text-xs font-bold text-[var(--lern-text-tertiary)] mb-1 uppercase tracking-wide">Formel</p>
           <p className="text-base font-mono font-semibold text-[var(--lern-text-primary)]">{formula}</p>
         </div>
@@ -71,7 +71,7 @@ export function StepCalculation({
           onChange={(e) => !submitted && setInput(e.target.value)}
           disabled={submitted}
           placeholder="Ergebnis eingeben"
-          className="flex-1 rounded-2xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] px-4 py-4 text-xl font-bold text-center text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:outline-2 focus:outline-[var(--lern-accent)] disabled:opacity-60"
+          className="flex-1 rounded-2xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] px-4 py-4 text-xl font-bold text-center text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:outline-2 focus:outline-[var(--lern-accent)] disabled:opacity-60"
         />
         <span className="text-lg font-medium text-[var(--lern-text-secondary)] shrink-0">{unit}</span>
       </div>
@@ -80,7 +80,7 @@ export function StepCalculation({
         <button
           onClick={() => setSubmitted(true)}
           disabled={input.trim() === ""}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] disabled:opacity-40"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40"
         >
           Antwort prüfen
         </button>
@@ -120,7 +120,7 @@ export function StepCalculation({
 
           <button
             onClick={() => onNext(isCorrect)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
           >
             Weiter
           </button>

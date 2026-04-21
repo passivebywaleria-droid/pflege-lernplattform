@@ -58,7 +58,7 @@ export function StepBranching({
             key={idx}
             onClick={() => selected === null && setSelected(idx)}
             whileTap={selected === null ? { scale: 0.98 } : undefined}
-            className={`w-full rounded-2xl border-2 p-4 text-left transition-all ${
+            className={`w-full rounded-2xl border-[1.5px] p-4 text-left transition-all ${
               selected === idx
                 ? option.isCorrect
                   ? "border-[var(--lern-success)] bg-[var(--lern-success)]/5"

@@ -149,7 +149,7 @@ export function LehrerChat({ lernKontext }: LehrerChatProps) {
             return next;
           });
         }}
-        className="fixed bottom-6 left-6 z-30 flex h-12 w-12 items-center justify-center rounded-full bg-[#6B8F71] text-white shadow-lg transition-all active:scale-95 hover:bg-[#5A7D5F]"
+        className="fixed bottom-20 left-6 z-30 flex h-12 w-12 items-center justify-center rounded-full bg-[#6B8F71] text-white shadow-lg transition-all active:scale-95 hover:bg-[#5A7D5F]"
         title="Lehrer fragen"
       >
         {/* Person-Icon */}

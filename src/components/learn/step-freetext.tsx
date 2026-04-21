@@ -79,7 +79,7 @@ export function StepFreetext({
             placeholder="Schreibe hier deine Antwort..."
             rows={5}
             aria-label="Freitextantwort"
-            className="w-full rounded-2xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-4 text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:border-[var(--lern-accent)] focus:outline-2 focus:outline-[var(--lern-accent)] resize-none transition-colors"
+            className="w-full rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-4 text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:border-[var(--lern-accent)] focus:outline-2 focus:outline-[var(--lern-accent)] resize-none transition-colors"
           />
           <div className="flex items-center justify-between">
             <p

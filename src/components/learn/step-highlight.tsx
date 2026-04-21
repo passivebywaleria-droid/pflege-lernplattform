@@ -73,7 +73,7 @@ export function StepHighlight({
       </p>
 
       {/* Text with markable segments */}
-      <div className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5">
+      <div className="rounded-2xl bg-[var(--lern-bg-primary)] border-[1.5px] border-[var(--lern-border)] p-5">
         <p className="text-sm leading-relaxed text-[var(--lern-text-primary)]">
           {segments.map((segment, i) => {
             const isMarked = marked.has(i);

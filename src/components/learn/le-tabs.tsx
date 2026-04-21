@@ -38,7 +38,7 @@ export function LeTabs({ activeTab, onTabChange, hasArtikel, hasFallverlaeufe, h
   };
 
   return (
-    <div className="flex w-full border-b border-[var(--lern-border)]" style={{ color: "var(--lern-text-primary)" }}>
+    <div className="flex w-full shrink-0 border-t border-[var(--lern-border)] bg-[var(--lern-bg)] pb-[env(safe-area-inset-bottom)]" style={{ color: "var(--lern-text-primary)" }}>
       {TABS.map((tab) => {
         const Icon = tab.icon;
         const disabled = isDisabled(tab.id);
@@ -62,7 +62,7 @@ export function LeTabs({ activeTab, onTabChange, hasArtikel, hasFallverlaeufe, h
             {active && (
               <motion.div
                 layoutId="le-tab-indicator"
-                className="absolute bottom-0 left-2 right-2 h-0.5 rounded-full bg-[var(--lern-accent)]"
+                className="absolute top-0 left-2 right-2 h-0.5 rounded-full bg-[var(--lern-accent)]"
                 transition={{ type: "spring", bounce: 0.2, duration: 0.4 }}
               />
             )}

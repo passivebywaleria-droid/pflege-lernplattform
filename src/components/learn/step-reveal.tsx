@@ -104,7 +104,7 @@ export function StepReveal({
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.06 }}
               onClick={() => handleReveal(card)}
-              className={`rounded-2xl border-2 overflow-hidden transition-all ${
+              className={`rounded-2xl border-[1.5px] overflow-hidden transition-all ${
                 isLocked
                   ? "border-[var(--lern-divider)] bg-[var(--lern-bg)] opacity-50 cursor-not-allowed"
                   : isRevealed
@@ -168,7 +168,7 @@ export function StepReveal({
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         onClick={() => onNext(true)}
-        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)]"
+        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
       >
         Weiter
       </motion.button>

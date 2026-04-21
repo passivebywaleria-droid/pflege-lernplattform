@@ -117,7 +117,7 @@ export function StepMatrix({
               key={q}
               onClick={() => handleQuadrantClick(q)}
               disabled={submitted || !selectedItem}
-              className={`min-h-[80px] rounded-xl border-2 p-2 transition-all ${quadrantColors[q]} ${
+              className={`min-h-[80px] rounded-xl border-[1.5px] p-2 transition-all ${quadrantColors[q]} ${
                 selectedItem ? "cursor-pointer hover:scale-[1.02]" : "cursor-default"
               } ${!selectedItem && !submitted ? "opacity-60" : ""}`}
             >
@@ -172,7 +172,7 @@ export function StepMatrix({
         <button
           onClick={() => setSubmitted(true)}
           disabled={!allPlaced}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] disabled:opacity-40"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40"
         >
           Antwort prüfen
         </button>
@@ -198,7 +198,7 @@ export function StepMatrix({
 
           <button
             onClick={() => onNext(allCorrect)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
           >
             Weiter
           </button>

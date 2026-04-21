@@ -211,7 +211,7 @@ export function StepMatching({
                   {/* Deine Zuordnung */}
                   <div className="grid grid-cols-2 gap-1">
                     <div
-                      className="rounded-xl p-3 text-sm font-medium border-2"
+                      className="rounded-xl p-3 text-sm font-medium border-[1.5px]"
                       style={{
                         borderColor,
                         backgroundColor: submitted
@@ -227,7 +227,7 @@ export function StepMatching({
                       {renderBold(pairs[leftIdx].left)}
                     </div>
                     <div
-                      className="rounded-xl p-3 text-sm border-2"
+                      className="rounded-xl p-3 text-sm border-[1.5px]"
                       style={{
                         borderColor,
                         backgroundColor: submitted
@@ -245,7 +245,7 @@ export function StepMatching({
                   {/* Richtige Lösung anzeigen wenn falsch */}
                   {isWrong && (
                     <div
-                      className="grid grid-cols-2 gap-1 mt-1 rounded-xl border-2 p-2"
+                      className="grid grid-cols-2 gap-1 mt-1 rounded-xl border-[1.5px] p-2"
                       style={{
                         borderColor: "#6B8F71",
                         backgroundColor: "rgba(48,209,88,0.05)",
@@ -282,7 +282,7 @@ export function StepMatching({
                   role="option"
                   aria-selected={isSelected}
                   aria-label={`Begriff: ${pairs[idx].left}`}
-                  className={`w-full rounded-xl border-2 p-3 text-left text-sm font-medium transition-all focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2 ${
+                  className={`w-full rounded-xl border-[1.5px] p-3 text-left text-sm font-medium transition-all focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2 ${
                     isSelected
                       ? "border-[#C4877F] bg-[#C4877F]/10"
                       : "border-[var(--lern-border)] bg-[var(--lern-card-bg)]"
@@ -309,7 +309,7 @@ export function StepMatching({
                 role="option"
                 aria-selected={false}
                 aria-label={`Zuordnung: ${pairs[origIdx].right}`}
-                className={`w-full rounded-xl border-2 p-3 text-left text-sm transition-all focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2 ${
+                className={`w-full rounded-xl border-[1.5px] p-3 text-left text-sm transition-all focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2 ${
                   selectedLeft !== null
                     ? "border-[#C4877F]/40 bg-[#C4877F]/5 hover:bg-[#C4877F]/10"
                     : "border-[var(--lern-border)] bg-[var(--lern-card-bg)]"

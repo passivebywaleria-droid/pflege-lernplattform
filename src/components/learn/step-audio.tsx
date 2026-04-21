@@ -60,7 +60,7 @@ export function StepAudio({
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="rounded-2xl overflow-hidden border border-[var(--lern-border)]"
+          className="rounded-2xl overflow-hidden border-[1.5px] border-[var(--lern-border)]"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={imageUrl} alt={imageAlt || title} className="w-full h-auto" />
@@ -82,7 +82,7 @@ export function StepAudio({
         >
           <button
             onClick={() => setShowTranscript(!showTranscript)}
-            className="w-full flex items-center justify-between rounded-2xl bg-[var(--lern-bg)] border border-[var(--lern-border)] px-4 py-3 transition-colors active:bg-[var(--lern-divider)]"
+            className="w-full flex items-center justify-between rounded-2xl bg-[var(--lern-bg)] border-[1.5px] border-[var(--lern-border)] px-4 py-3 transition-colors active:bg-[var(--lern-divider)]"
           >
             <span className="text-sm font-medium text-[var(--lern-text-primary)]">
               Transkript anzeigen

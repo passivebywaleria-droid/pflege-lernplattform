@@ -104,7 +104,7 @@ export function StepHotspot({
 
       {/* Bild mit Hotspots */}
       <div
-        className="relative rounded-2xl overflow-hidden border-2 border-[var(--lern-border)] cursor-crosshair select-none"
+        className="relative rounded-2xl overflow-hidden border-[1.5px] border-[var(--lern-border)] cursor-crosshair select-none"
         onClick={handleClick}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -130,7 +130,7 @@ export function StepHotspot({
                   transform: "translate(-50%, -50%)",
                 }}
               >
-                <div className="h-8 w-8 rounded-full bg-[#6B8F71]/30 border-2 border-[#6B8F71] flex items-center justify-center">
+                <div className="h-8 w-8 rounded-full bg-[#6B8F71]/30 border-[1.5px] border-[#6B8F71] flex items-center justify-center">
                   <span className="text-xs font-bold text-[#6B8F71]">✓</span>
                 </div>
                 <span className="absolute -bottom-5 whitespace-nowrap text-xs font-bold text-[#6B8F71] bg-[var(--lern-bg-primary)]/80 px-1 rounded">

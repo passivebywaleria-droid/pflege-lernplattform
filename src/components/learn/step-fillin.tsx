@@ -85,7 +85,7 @@ export function StepFillIn({
       )}
 
       {/* Sentence with blanks */}
-      <div className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5">
+      <div className="rounded-2xl bg-[var(--lern-bg-primary)] border-[1.5px] border-[var(--lern-border)] p-5">
         <p className="text-lg text-[var(--lern-text-primary)] leading-relaxed">
           {parts.map((part, i) => (
             <React.Fragment key={i}>
@@ -135,7 +135,7 @@ export function StepFillIn({
               role="radio"
               aria-checked={selected === i}
               aria-label={`Option: ${opt}`}
-              className={`w-full rounded-xl border-2 ${borderColor} ${bgColor} p-3 text-left text-sm font-medium text-[var(--lern-text-primary)] transition-colors focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2`}
+              className={`w-full rounded-xl border-[1.5px] ${borderColor} ${bgColor} p-3 text-left text-sm font-medium text-[var(--lern-text-primary)] transition-colors focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2`}
             >
               {opt}
             </motion.button>

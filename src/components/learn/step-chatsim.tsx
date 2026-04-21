@@ -134,7 +134,7 @@ export function StepChatSim({
       </div>
 
       {/* Chat-Verlauf */}
-      <div className="rounded-2xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] p-4 space-y-3 max-h-[360px] overflow-y-auto">
+      <div className="rounded-2xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] p-4 space-y-3 max-h-[360px] overflow-y-auto">
         {messages.length === 0 && (
           <p className="text-sm text-[var(--lern-text-tertiary)] italic text-center py-4">
             Beginne das Gespräch mit {patientName}…
@@ -186,7 +186,7 @@ export function StepChatSim({
               onKeyDown={(e) => e.key === "Enter" && sendMessage()}
               disabled={loading || turnsLeft <= 0}
               placeholder={turnsLeft > 0 ? "Deine Nachricht…" : "Gespräch beenden"}
-              className="flex-1 rounded-2xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] px-4 py-3 text-sm text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:outline-2 focus:outline-[var(--lern-accent)] disabled:opacity-60"
+              className="flex-1 rounded-2xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] px-4 py-3 text-sm text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:outline-2 focus:outline-[var(--lern-accent)] disabled:opacity-60"
             />
             <button
               onClick={sendMessage}
@@ -226,7 +226,7 @@ export function StepChatSim({
 
           <button
             onClick={() => onNext(true)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
           >
             Weiter
           </button>

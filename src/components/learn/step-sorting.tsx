@@ -88,7 +88,7 @@ export function StepSorting({
             role="listitem"
             aria-label={`Position ${pos + 1}: ${items[itemIdx]}`}
             transition={{ type: "spring", stiffness: 500, damping: 35 }}
-            className={`flex items-center gap-3 rounded-xl border-2 p-3 transition-colors ${
+            className={`flex items-center gap-3 rounded-xl border-[1.5px] p-3 transition-colors ${
               submitted && correctPositions[pos]
                 ? "border-[#6B8F71] bg-[#6B8F71]/5"
                 : submitted && !correctPositions[pos]

@@ -107,7 +107,7 @@ export function StepCrowdPoll({
               placeholder={placeholder}
               rows={4}
               aria-label="Deine Antwort"
-              className="w-full rounded-2xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-4 text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:border-[var(--lern-accent)] focus:outline-2 focus:outline-[var(--lern-accent)] resize-none transition-colors"
+              className="w-full rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-4 text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:border-[var(--lern-accent)] focus:outline-2 focus:outline-[var(--lern-accent)] resize-none transition-colors"
             />
             <p
               className={`text-sm ${
@@ -132,7 +132,7 @@ export function StepCrowdPoll({
                 <button
                   key={opt.id}
                   onClick={() => handleOptionToggle(opt.id)}
-                  className={`w-full p-4 rounded-xl border-2 transition-all text-left ${
+                  className={`w-full p-4 rounded-xl border-[1.5px] transition-all text-left ${
                     isSelected
                       ? "bg-[var(--lern-accent)]/10 border-[var(--lern-accent)] font-medium"
                       : "bg-[var(--lern-bg-primary)] border-[var(--lern-border)] hover:border-[var(--lern-accent)]/40"

@@ -47,7 +47,7 @@ function FlipCard({
     >
       {/* Nicht geflippt: Front */}
       {!isFlipped && (
-        <div className="rounded-2xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-5 flex flex-col items-center justify-center shadow-sm min-h-[120px]">
+        <div className="rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-5 flex flex-col items-center justify-center shadow-sm min-h-[120px]">
           {item.category && (
             <span className="text-xs text-[var(--lern-text-secondary)] font-medium uppercase tracking-wider mb-2">
               {item.category}
@@ -66,7 +66,7 @@ function FlipCard({
           initial={{ rotateY: 90 }}
           animate={{ rotateY: 0 }}
           transition={{ duration: 0.3 }}
-          className="rounded-2xl border-2 border-[var(--lern-accent)] bg-[var(--lern-accent-bg)] p-5 min-h-[120px]"
+          className="rounded-2xl border-[1.5px] border-[var(--lern-accent)] bg-[var(--lern-accent-bg)] p-5 min-h-[120px]"
         >
           {item.category && (
             <span className="text-xs text-[var(--lern-accent)] font-medium uppercase tracking-wider block mb-2 text-center">
@@ -156,7 +156,7 @@ export function StepFlipCard({
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         onClick={() => onNext(true)}
-        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)]"
+        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
       >
         Weiter
       </motion.button>

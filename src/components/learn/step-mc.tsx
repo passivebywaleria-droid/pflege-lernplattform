@@ -193,7 +193,7 @@ export function StepMC({
               aria-checked={isSelected}
               aria-label={`Option ${labels[idx]}: ${option.text}`}
               tabIndex={0}
-              className={`w-full rounded-2xl border-2 ${borderColor} ${bgColor} p-4 text-left transition-colors focus:outline-2 focus:outline-offset-2`}
+              className={`w-full rounded-2xl border-[1.5px] ${borderColor} ${bgColor} p-4 text-left transition-colors focus:outline-2 focus:outline-offset-2`}
               style={{ outlineColor: accentColor }}
             >
               <div className="flex items-start gap-3">

@@ -75,7 +75,7 @@ export function StepSwipe({
     const allCorrect = correctCount === cards.length;
     return (
       <div className="space-y-6" style={{ color: "var(--lern-text-primary)" }}>
-        <h2 className="text-xl font-bold text-center">
+        <h2 className="text-2xl font-bold text-center">
           Einschätzung abgeschlossen!
         </h2>
         <motion.div
@@ -100,7 +100,7 @@ export function StepSwipe({
         </motion.div>
         <button
           onClick={() => onNext(allCorrect)}
-          className="w-full rounded-full bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
         >
           Weiter
         </button>
@@ -116,7 +116,7 @@ export function StepSwipe({
   return (
     <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }}>
       {/* Title */}
-      <h2 className="text-xl font-bold">{title}</h2>
+      <h2 className="text-2xl font-bold">{title}</h2>
 
       {body && (
         <p className="text-sm leading-relaxed" style={{ color: "var(--lern-text-secondary)" }}>
@@ -160,7 +160,7 @@ export function StepSwipe({
           </p>
 
           {/* Die große Statement-Card */}
-          <div className={`rounded-2xl border-2 p-6 text-center transition-colors ${
+          <div className={`rounded-2xl border-[1.5px] p-6 text-center transition-colors ${
             showResult
               ? lastAnswer?.correct
                 ? "border-[#6B8F71] bg-[#6B8F71]/5"
@@ -177,14 +177,14 @@ export function StepSwipe({
             <div className="grid grid-cols-2 gap-3">
               <button
                 onClick={() => handleAnswer(false)}
-                className="flex items-center justify-center gap-2 rounded-full border-2 border-[#C96B5C]/40 bg-[#C96B5C]/5 px-5 py-3.5 text-sm font-bold text-[#C96B5C] transition-all active:scale-[0.96] active:bg-[#C96B5C]/20"
+                className="flex items-center justify-center gap-2 rounded-full border-[1.5px] border-[#C96B5C]/40 bg-[#C96B5C]/5 px-5 py-3.5 text-sm font-bold text-[#C96B5C] transition-all active:scale-[0.96] active:bg-[#C96B5C]/20"
               >
                 <span className="text-base">✗</span>
                 Falsch
               </button>
               <button
                 onClick={() => handleAnswer(true)}
-                className="flex items-center justify-center gap-2 rounded-full border-2 border-[#6B8F71]/40 bg-[#6B8F71]/5 px-5 py-3.5 text-sm font-bold text-[#6B8F71] transition-all active:scale-[0.96] active:bg-[#6B8F71]/20"
+                className="flex items-center justify-center gap-2 rounded-full border-[1.5px] border-[#6B8F71]/40 bg-[#6B8F71]/5 px-5 py-3.5 text-sm font-bold text-[#6B8F71] transition-all active:scale-[0.96] active:bg-[#6B8F71]/20"
               >
                 <span className="text-base">✓</span>
                 Wahr
@@ -220,7 +220,7 @@ export function StepSwipe({
 
               <button
                 onClick={nextCard}
-                className="w-full rounded-full bg-[var(--lern-accent)] px-6 py-3.5 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+                className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-3.5 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
               >
                 {cardIdx + 1 < cards.length ? "Nächste Aussage" : "Weiter"}
               </button>

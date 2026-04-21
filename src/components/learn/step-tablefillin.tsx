@@ -70,7 +70,7 @@ export function StepTableFillIn({
       </div>
 
       {/* Tabelle */}
-      <div className="overflow-x-auto rounded-2xl border border-[var(--lern-border)]">
+      <div className="overflow-x-auto rounded-2xl border-[1.5px] border-[var(--lern-border)]">
         <table className="w-full text-sm">
           <thead>
             <tr className="bg-[var(--lern-accent)]/8">
@@ -172,14 +172,14 @@ export function StepTableFillIn({
         <button
           onClick={() => setSubmitted(true)}
           disabled={!allFilled}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] disabled:opacity-40"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40"
         >
           Antwort prüfen
         </button>
       ) : (
         <button
           onClick={() => onNext(correctBlanks === totalBlanks)}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
         >
           Weiter
         </button>

@@ -21,7 +21,11 @@ function storageKey(leId: string, itemId: string): string {
   return `lernSnack:${leId}:${itemId}`;
 }
 
-export function LernSnackTab({ snacks, sprachLevel, leId }: LernSnackTabProps) {
+export function LernSnackTab({ snacks: rawSnacks, sprachLevel, leId }: LernSnackTabProps) {
+  // Deduplizierung nach kapitelId (DB-Import kann Duplikate erzeugen)
+  const snacks = rawSnacks.filter(
+    (s, i, arr) => arr.findIndex((x) => x.kapitelId === s.kapitelId) === i,
+  );
   const [checked, setChecked] = useState<Set<string>>(new Set());
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
 

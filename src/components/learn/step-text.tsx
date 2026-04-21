@@ -138,7 +138,7 @@ function CarouselView({
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15 }}
-          className="rounded-2xl overflow-hidden border border-[var(--lern-border)]"
+          className="rounded-2xl overflow-hidden border-[1.5px] border-[var(--lern-border)]"
         >
           {imageUrl.endsWith(".svg") ? (
             <InlineSvg src={imageUrl} alt={imageAlt || title} />
@@ -153,7 +153,7 @@ function CarouselView({
       {/* Carousel — Text-Karten */}
       {!imageUrl && (
         <>
-          <div className="relative overflow-hidden rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] min-h-[140px]">
+          <div className="relative overflow-hidden rounded-2xl bg-[var(--lern-bg-primary)] border-[1.5px] border-[var(--lern-border)] min-h-[140px]">
             <AnimatePresence mode="wait" custom={direction}>
               <motion.div
                 key={activeCard}
@@ -179,7 +179,7 @@ function CarouselView({
                     </p>
                   </div>
                 ) : (
-                  <p className="text-[15px] text-[var(--lern-text-primary)]/80 leading-relaxed whitespace-pre-line">
+                  <p className="text-sm text-[var(--lern-text-primary)]/80 leading-relaxed whitespace-pre-line">
                     <FachbegriffText glossar={glossar ?? []}>{allCards[activeCard]}</FachbegriffText>
                   </p>
                 )}
@@ -246,7 +246,7 @@ function DisplayFormatView({ format, title, body, glossar }: { format: DisplayFo
             const match = line.match(/^([A-ZÄÖÜ])\s*[—–-]\s*(.+)$/);
             if (match) {
               return (
-                <div key={i} className="flex items-start gap-3 rounded-xl bg-[var(--lern-card-bg)] p-3 border border-[var(--lern-border)]">
+                <div key={i} className="flex items-start gap-3 rounded-xl bg-[var(--lern-card-bg)] p-3 border-[1.5px] border-[var(--lern-border)]">
                   <span className="shrink-0 w-9 h-9 rounded-lg bg-[var(--lern-accent)]/10 text-[var(--lern-accent)] font-bold text-lg flex items-center justify-center">{match[1]}</span>
                   <span className="text-sm text-[var(--lern-text-primary)]/80 leading-relaxed pt-1.5"><FachbegriffText glossar={glossar ?? []}>{match[2]}</FachbegriffText></span>
                 </div>
@@ -326,7 +326,7 @@ function DisplayFormatView({ format, title, body, glossar }: { format: DisplayFo
 
     case "news": {
       return (
-        <div className="rounded-xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] overflow-hidden">
+        <div className="rounded-xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] overflow-hidden">
           <div className="bg-[var(--lern-accent)]/10 px-4 py-2 border-b border-[var(--lern-border)]">
             <p className="text-xs font-bold text-[var(--lern-accent)] uppercase tracking-widest">Pflege-Aktuell</p>
           </div>
@@ -354,7 +354,7 @@ function DisplayFormatView({ format, title, body, glossar }: { format: DisplayFo
             const match = line.match(/^(.+?):\s*(.+)$/);
             if (match) {
               return (
-                <div key={i} className="rounded-xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] p-4">
+                <div key={i} className="rounded-xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] p-4">
                   <p className="text-sm font-bold text-[var(--lern-accent)] mb-1">{match[1]}</p>
                   <p className="text-sm text-[var(--lern-text-primary)]/80 leading-relaxed"><FachbegriffText glossar={glossar ?? []}>{match[2]}</FachbegriffText></p>
                 </div>
@@ -370,7 +370,7 @@ function DisplayFormatView({ format, title, body, glossar }: { format: DisplayFo
       return (
         <div className="space-y-2">
           {lines.map((line, i) => (
-            <div key={i} className="flex items-start gap-3 rounded-xl bg-[var(--lern-card-bg)] p-3 border border-[var(--lern-border)]">
+            <div key={i} className="flex items-start gap-3 rounded-xl bg-[var(--lern-card-bg)] p-3 border-[1.5px] border-[var(--lern-border)]">
               <span className="shrink-0 w-6 h-6 rounded-full bg-[#6B8F71]/15 text-[#6B8F71] flex items-center justify-center text-sm mt-0.5">✓</span>
               <span className="text-sm text-[var(--lern-text-primary)]/80 leading-relaxed"><FachbegriffText glossar={glossar ?? []}>{line.replace(/^[-•✓✔]\s*/, "")}</FachbegriffText></span>
             </div>
@@ -385,7 +385,7 @@ function DisplayFormatView({ format, title, body, glossar }: { format: DisplayFo
           {lines.map((line, i) => (
             <div key={i} className="flex items-start gap-3">
               <span className="shrink-0 w-8 h-8 rounded-full bg-[var(--lern-accent)]/10 text-[var(--lern-accent)] font-bold text-sm flex items-center justify-center">{i + 1}</span>
-              <div className="flex-1 rounded-xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] p-3">
+              <div className="flex-1 rounded-xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] p-3">
                 <p className="text-sm text-[var(--lern-text-primary)]/80 leading-relaxed"><FachbegriffText glossar={glossar ?? []}>{line.replace(/^\d+[.)]\s*/, "")}</FachbegriffText></p>
               </div>
             </div>
@@ -399,7 +399,7 @@ function DisplayFormatView({ format, title, body, glossar }: { format: DisplayFo
       const setting = lines[0] || "";
       const description = lines.slice(1).join("\n") || body;
       return (
-        <div className="rounded-xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] overflow-hidden">
+        <div className="rounded-xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] overflow-hidden">
           <div className="bg-[#D4956A]/10 px-4 py-2 border-b border-[var(--lern-border)]">
             <p className="text-xs font-bold text-[#D4956A] uppercase tracking-widest">Situation</p>
           </div>
@@ -417,7 +417,7 @@ function DisplayFormatView({ format, title, body, glossar }: { format: DisplayFo
           {lines.map((line, i) => {
             const match = line.match(/^(.+?):\s*(.+)$/);
             return (
-              <div key={i} className="flex items-center gap-3 rounded-xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] p-3">
+              <div key={i} className="flex items-center gap-3 rounded-xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] p-3">
                 <span className="shrink-0 w-8 h-8 rounded-lg bg-[var(--lern-accent)]/10 text-[var(--lern-accent)] flex items-center justify-center text-sm">↗</span>
                 <div className="flex-1">
                   {match ? (
@@ -443,7 +443,7 @@ function DisplayFormatView({ format, title, body, glossar }: { format: DisplayFo
             const match = line.match(/^(.+?)[?？]\s*[-—–]\s*(.+)$/) || line.match(/^(.+?)\?\s*(.+)$/);
             if (match) {
               return (
-                <div key={i} className="rounded-xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] p-4 space-y-2">
+                <div key={i} className="rounded-xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] p-4 space-y-2">
                   <p className="text-sm font-semibold text-[var(--lern-accent)]">{match[1]}?</p>
                   <p className="text-sm text-[var(--lern-text-primary)]/80 leading-relaxed"><FachbegriffText glossar={glossar ?? []}>{match[2]}</FachbegriffText></p>
                 </div>
@@ -525,7 +525,7 @@ export function StepText({
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15 }}
-          className="rounded-2xl overflow-hidden border border-[var(--lern-border)]"
+          className="rounded-2xl overflow-hidden border-[1.5px] border-[var(--lern-border)]"
         >
           {imageUrl.endsWith(".svg") ? (
             <InlineSvg src={imageUrl} alt={imageAlt || title} />

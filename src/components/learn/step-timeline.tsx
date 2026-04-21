@@ -94,7 +94,7 @@ export function StepTimeline({
               >
                 {/* Dot */}
                 <div
-                  className={`absolute -left-8 top-4 w-[22px] h-[22px] rounded-full border-2 flex items-center justify-center z-10 ${
+                  className={`absolute -left-8 top-4 w-[22px] h-[22px] rounded-full border-[1.5px] flex items-center justify-center z-10 ${
                     event.highlight
                       ? "border-[#D4956A] bg-[#D4956A]/10"
                       : isExpanded
@@ -168,7 +168,7 @@ export function StepTimeline({
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         onClick={() => onNext(true)}
-        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[var(--lern-accent)]"
+        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
       >
         Weiter
       </motion.button>

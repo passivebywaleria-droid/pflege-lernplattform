@@ -143,7 +143,7 @@
   --lern-text-secondary: #6e6e73;
   --lern-text-tertiary: #86868b;
   --lern-border: #E5DFD6;
-  --lern-divider: #EAE0D5;
+  --lern-divider: rgba(196, 135, 127, 0.10);
   --lern-card-bg: #fafaf9;
   --lern-accent: #C4877F;
   --lern-accent-bg: rgba(196, 135, 127, 0.08);

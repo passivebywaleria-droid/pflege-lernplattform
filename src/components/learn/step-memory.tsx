@@ -136,7 +136,7 @@ export function StepMemory({
               onClick={() => handleFlip(card.id)}
               aria-label={isFlipped || isFound ? card.text : "Verdeckte Karte"}
               aria-hidden={isFound ? true : undefined}
-              className={`min-h-[4.5rem] rounded-2xl border-2 text-[11px] font-medium flex items-center justify-center p-2 text-center overflow-hidden transition-colors focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2 ${
+              className={`min-h-[4.5rem] rounded-2xl border-[1.5px] text-[11px] font-medium flex items-center justify-center p-2 text-center overflow-hidden transition-colors focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2 ${
                 isFound
                   ? `${pairColor}`
                   : isFlipped

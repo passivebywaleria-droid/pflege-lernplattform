@@ -120,7 +120,7 @@ export function StepCategorize({
           key={remaining[0].text}
           initial={{ opacity: 0, y: -10, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          className="rounded-2xl border-2 border-[var(--lern-accent)] bg-[var(--lern-accent-bg)] px-5 py-4 text-center"
+          className="rounded-2xl border-[1.5px] border-[var(--lern-accent)] bg-[var(--lern-accent-bg)] px-5 py-4 text-center"
         >
           <p className="text-xs text-[var(--lern-text-tertiary)] mb-1">
             Wohin gehört das? ({remaining.length} übrig)
@@ -150,7 +150,7 @@ export function StepCategorize({
                 onClick={() => handleDrop(catIdx)}
                 aria-label={`Zuordnen zu: ${cat.name}`}
                 aria-dropeffect="move"
-                className={`rounded-2xl border-2 ${colors.border} ${colors.bg} p-4 min-h-[80px] flex flex-col items-center justify-center gap-1 transition-all hover:shadow-md cursor-pointer focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2`}
+                className={`rounded-2xl border-[1.5px] ${colors.border} ${colors.bg} p-4 min-h-[80px] flex flex-col items-center justify-center gap-1 transition-all hover:shadow-md cursor-pointer focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2`}
               >
                 <span className={`text-sm font-bold ${colors.text}`}>
                   {cat.name}
@@ -192,7 +192,7 @@ export function StepCategorize({
                           ? "bg-[#6B8F71]/20 border border-[#6B8F71]/30"
                           : wrong
                             ? "bg-[#C96B5C]/20 border border-[#C96B5C]/30 line-through"
-                            : "bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] active:scale-95 shadow-sm"
+                            : "bg-[var(--lern-bg-primary)] border-[1.5px] border-[var(--lern-border)] active:scale-95 shadow-sm"
                       }`}
                     >
                       {renderBold(text)}

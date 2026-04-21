@@ -114,7 +114,7 @@ export function StepConceptMap({
       </div>
 
       {/* Concept Map — Node Grid */}
-      <div className="relative rounded-2xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] p-6 min-h-[200px]">
+      <div className="relative rounded-2xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] p-6 min-h-[200px]">
         {/* SVG Verbindungslinien */}
         <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 0 }}>
           {connections.map((conn, i) => {
@@ -160,7 +160,7 @@ export function StepConceptMap({
               onClick={() => handleNodeClick(node.id)}
               disabled={submitted}
               whileTap={{ scale: 0.95 }}
-              className={`rounded-xl px-3 py-3 text-sm font-medium text-center border-2 transition-all ${
+              className={`rounded-xl px-3 py-3 text-sm font-medium text-center border-[1.5px] transition-all ${
                 selectedNode === node.id
                   ? "border-[var(--lern-accent)] bg-[var(--lern-accent)]/15 text-[var(--lern-accent)] shadow-md"
                   : submitted
@@ -219,7 +219,7 @@ export function StepConceptMap({
         <button
           onClick={() => setSubmitted(true)}
           disabled={connections.length === 0}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] disabled:opacity-40"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40"
         >
           Antwort prüfen
         </button>
@@ -273,7 +273,7 @@ export function StepConceptMap({
 
           <button
             onClick={() => onNext(score >= 0.8)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
           >
             Weiter
           </button>

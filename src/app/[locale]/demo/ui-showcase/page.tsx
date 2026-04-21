@@ -88,7 +88,7 @@ const MAUVE = "#A06B63"   // Deep — tiefes Mauve
 const TAUPE = "#BFA48E"   // Neutral — warmes Taupe
 const OAK   = "#B09179"   // Warm — sandiges Braun
 const SAND  = "#D4C3B2"   // Subtle — heller Sand
-const BONE  = "#EAE0D5"   // Background — warmes Creme
+const BONE  = `${ROSE}08`  // Background — helles Rose (8% Opacity)
 
 // Aliases (SAGE → ROSE, RUST → MAUVE für bestehende Referenzen)
 const SAGE = ROSE

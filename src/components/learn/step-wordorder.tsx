@@ -68,7 +68,7 @@ export function StepWordOrder({
       </div>
 
       {/* Gewählte Reihenfolge */}
-      <div className="min-h-[56px] rounded-2xl bg-[var(--lern-card-bg)] border-2 border-dashed border-[var(--lern-border)] p-3 flex flex-wrap gap-2">
+      <div className="min-h-[56px] rounded-2xl bg-[var(--lern-card-bg)] border-[1.5px] border-dashed border-[var(--lern-border)] p-3 flex flex-wrap gap-2">
         {selected.length === 0 && (
           <p className="text-sm text-[var(--lern-text-tertiary)] italic">Tippe auf die Wörter in der richtigen Reihenfolge…</p>
         )}
@@ -100,7 +100,7 @@ export function StepWordOrder({
             layout
             onClick={() => handleSelect(wordIdx)}
             disabled={submitted}
-            className="rounded-xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)] px-3 py-2 text-sm font-medium text-[var(--lern-text-primary)] transition-all active:scale-95 hover:border-[var(--lern-accent)]/50"
+            className="rounded-xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] px-3 py-2 text-sm font-medium text-[var(--lern-text-primary)] transition-all active:scale-95 hover:border-[var(--lern-accent)]/50"
           >
             {words[wordIdx]}
           </motion.button>
@@ -115,7 +115,7 @@ export function StepWordOrder({
         <button
           onClick={() => setSubmitted(true)}
           disabled={selected.length !== words.length}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] disabled:opacity-40"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40"
         >
           Antwort prüfen
         </button>
@@ -142,7 +142,7 @@ export function StepWordOrder({
 
           <button
             onClick={() => onNext(isCorrect)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
           >
             Weiter
           </button>

@@ -321,7 +321,7 @@ export function StepDialog({
                 transition={{ delay: i * 0.1 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => choose(opt)}
-                className="w-full text-left px-4 py-3.5 border-2 border-[var(--lern-border)] rounded-2xl text-sm text-[var(--lern-text-primary)] hover:border-[var(--lern-accent)] transition-colors bg-[var(--lern-bg-primary)]"
+                className="w-full text-left px-4 py-3.5 border-[1.5px] border-[var(--lern-border)] rounded-2xl text-sm text-[var(--lern-text-primary)] hover:border-[var(--lern-accent)] transition-colors bg-[var(--lern-bg-primary)]"
               >
                 {t(opt.text, opt.textB1, sprachLevel)}
               </motion.button>

@@ -156,7 +156,7 @@ function LayerRevealViewer({ data }: { data: LayerRevealData }) {
               className={`px-3.5 py-2 rounded-full text-sm font-medium transition-all active:scale-95 ${
                 active
                   ? "bg-[var(--lern-accent)] text-white shadow-sm"
-                  : "bg-[var(--lern-bg)] text-[var(--lern-text-secondary)] border border-[var(--lern-border)]"
+                  : "bg-[var(--lern-bg)] text-[var(--lern-text-secondary)] border-[1.5px] border-[var(--lern-border)]"
               }`}
             >
               {active ? "✓ " : ""}{layer.label}
@@ -265,7 +265,7 @@ function ZoomPanViewer({ data }: { data: ZoomPanData }) {
                 e.stopPropagation();
                 setActiveAnnotation(activeAnnotation?.id === ann.id ? null : ann);
               }}
-              className={`absolute w-6 h-6 -ml-3 -mt-3 rounded-full border-2 transition-all ${
+              className={`absolute w-6 h-6 -ml-3 -mt-3 rounded-full border-[1.5px] transition-all ${
                 activeAnnotation?.id === ann.id
                   ? "bg-[var(--lern-accent)] border-white scale-125 shadow-lg"
                   : "bg-[var(--lern-bg-primary)]/90 border-[var(--lern-accent)] hover:scale-110"
@@ -318,7 +318,7 @@ function ZoomPanViewer({ data }: { data: ZoomPanData }) {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
-            className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] shadow-lg p-4"
+            className="rounded-2xl bg-[var(--lern-bg-primary)] border-[1.5px] border-[var(--lern-border)] shadow-lg p-4"
           >
             <p className="font-semibold text-sm text-[var(--lern-text-primary)]">{activeAnnotation.label}</p>
             {activeAnnotation.description && (
@@ -370,7 +370,7 @@ export function StepImageInteraction({
             {interactionType === "beforeAfter" ? "Vergleich" : interactionType === "layerReveal" ? "Schichten" : "Detail"}
           </span>
         </div>
-        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
           <FachbegriffText glossar={glossar}>{title}</FachbegriffText>
         </h2>
         {body && (

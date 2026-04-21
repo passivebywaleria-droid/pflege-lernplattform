@@ -47,7 +47,7 @@ export default function LernenPage() {
   const locale = useLocale();
   const params = useParams();
   const leId = params.leId as string;
-  const { saveSessionFortschritt, updateStreakTag, getLeFortschritt, addSchwaeche, saveAntwort, updateAchsen, updateKompetenzEintrag, logSession, logAktivitaet, profil, loaded: profilLoaded, incrementB1Toggle, synchronisiereStores } = useLernFortschritt();
+  const { saveSessionFortschritt, updateStreakTag, getLeFortschritt, addSchwaeche, saveAntwort, updateAchsen, updateKompetenzEintrag, logSession, logAktivitaet, profil, loaded: profilLoaded, incrementB1Toggle, synchronisiereStores, updateStrategiePraeferenzFn } = useLernFortschritt();
 
   // Dark Mode
   useDarkModeInit();
@@ -206,6 +206,7 @@ export default function LernenPage() {
     onWrong: () => {},
     setFeedbackType: gamification.setFeedbackType,
     incrementB1Toggle,
+    updateStrategiePraeferenzFn,
   });
 
   // Vertiefungs-Prompt bei Streak >= 3
@@ -465,8 +466,7 @@ export default function LernenPage() {
       navigation.totalQuestions > 0 ? Math.round((navigation.score / navigation.totalQuestions) * 100) : 100;
     return (
       <div
-        ref={navigation.containerRef}
-        className="min-h-screen bg-[var(--lern-bg)]"
+        className="h-dvh bg-[var(--lern-bg)] flex flex-col overflow-y-auto"
       >
         <div className="mx-auto max-w-2xl px-4 py-12">
           <motion.div
@@ -586,14 +586,13 @@ export default function LernenPage() {
 
   return (
     <div
-      ref={navigation.containerRef}
-      className="min-h-screen bg-[var(--lern-bg)] overflow-y-auto"
+      className="h-dvh bg-[var(--lern-bg)] flex flex-col overflow-hidden"
     >
       {/* Top Bar */}
-      <div className="sticky top-0 z-50 bg-[var(--lern-topbar-bg)] backdrop-blur-xl border-b border-[var(--lern-border)]/50">
-        <div className="mx-auto max-w-2xl px-4 py-3">
+      <div className="shrink-0 z-50 bg-[var(--lern-topbar-bg)] backdrop-blur-xl border-b border-[var(--lern-border)]/50">
+        <div className="mx-auto max-w-2xl px-4 py-2">
           {/* Breadcrumb: CE > LE > Session */}
-          <div className="flex items-center gap-1 mb-2 text-xs">
+          <div className="flex items-center gap-1 mb-1 text-xs">
             <button
               onClick={() => setShowLeDrawer(true)}
               className="font-medium text-[#C4877F] active:opacity-60 truncate max-w-[80px]"
@@ -664,7 +663,7 @@ export default function LernenPage() {
             </button>
           </div>
 
-          <div className="flex items-center justify-between mb-1 relative">
+          <div className="flex items-center justify-between mb-0.5 relative">
             <div className="flex items-center gap-2">
               {navigation.currentStep > 0 && (
                 <button
@@ -711,15 +710,8 @@ export default function LernenPage() {
         </div>
       </div>
 
-      {/* Tab-Navigation (5-Tabs: Wissen, Üben, Fall, Praxis, Prüfung) */}
-      <LeTabs
-        activeTab={activeTab}
-        onTabChange={handleTabChange}
-        hasArtikel={!!artikelKapitel && artikelKapitel.length > 0}
-        hasFallverlaeufe={!!fallverlaeufe && fallverlaeufe.length > 0}
-        hasPraxis={!!praxisUebungen && praxisUebungen.length > 0}
-        hasLernSnack={!!lernSnack && lernSnack.length > 0}
-      />
+      {/* === SCROLLABLE CONTENT AREA === */}
+      <div ref={navigation.containerRef} className="flex-1 min-h-0 overflow-y-auto">
 
       {/* === TAB CONTENT === */}
 
@@ -763,7 +755,7 @@ export default function LernenPage() {
               <p className="text-xs text-[var(--lern-text-tertiary)]">Aufgabe {inlineStepIndex + 1} / {inlinePlayback.steps.length}</p>
             </div>
           </div>
-          <div className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-5 shadow-sm">
+          <div className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-3 shadow-sm">
             <StepRenderer
               step={inlinePlayback.steps[inlineStepIndex]}
               sprachLevel={adaptive.sprachLevel}
@@ -812,7 +804,7 @@ export default function LernenPage() {
               <p className="text-xs text-[var(--lern-text-tertiary)]">Aufgabe {inlineStepIndex + 1} / {inlinePlayback.steps.length}</p>
             </div>
           </div>
-          <div className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-5 shadow-sm">
+          <div className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-3 shadow-sm">
             <StepRenderer
               step={inlinePlayback.steps[inlineStepIndex]}
               sprachLevel={adaptive.sprachLevel}
@@ -1132,12 +1124,12 @@ export default function LernenPage() {
 
       {/* Session-Intro: Themenübersicht bevor es losgeht */}
       {showSessionIntro && metadata && session.steps.length > 0 && (
-        <div className="mx-auto max-w-2xl px-4 py-6">
+        <div className="mx-auto max-w-2xl px-4 py-3">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-6 shadow-sm"
+            className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-4 shadow-sm"
           >
             {/* Session-Nummer */}
             <div className="mb-4 flex items-center gap-2">
@@ -1230,7 +1222,7 @@ export default function LernenPage() {
       {/* Step Content */}
       {!showSessionIntro && (
       <SprachLevelProvider level={adaptive.sprachLevel}>
-        <div className="mx-auto max-w-2xl px-4 py-6">
+        <div className="mx-auto max-w-2xl px-4 py-2">
         {/* Checkpoint-Score Feedback (#35) */}
         {navigation.lastCheckpointScore && (
           <motion.div
@@ -1332,7 +1324,7 @@ export default function LernenPage() {
               <PraxisTipp phase={step.themenblockPhase as ThemenblockPhase | undefined} />
 
               {/* Step-Card: Visueller Rahmen um jeden Step */}
-              <div className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-5 shadow-sm">
+              <div className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-3 shadow-sm">
                 <StepRenderer
                   step={step}
                   sprachLevel={adaptive.sprachLevel}
@@ -1358,6 +1350,18 @@ export default function LernenPage() {
       )}
       </>
       )}
+
+      </div>{/* END SCROLLABLE CONTENT AREA */}
+
+      {/* Tab-Navigation (Bottom) */}
+      <LeTabs
+        activeTab={activeTab}
+        onTabChange={handleTabChange}
+        hasArtikel={!!artikelKapitel && artikelKapitel.length > 0}
+        hasFallverlaeufe={!!fallverlaeufe && fallverlaeufe.length > 0}
+        hasPraxis={!!praxisUebungen && praxisUebungen.length > 0}
+        hasLernSnack={!!lernSnack && lernSnack.length > 0}
+      />
 
       {/* Muttersprache-Auswahl — beim ersten Besuch */}
       <MutterspracheModal

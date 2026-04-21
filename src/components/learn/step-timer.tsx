@@ -176,7 +176,7 @@ export function StepTimer({
               key={i}
               onClick={() => answer(i)}
               whileTap={{ scale: 0.97 }}
-              className="w-full text-left p-3.5 rounded-xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] text-sm font-medium text-[var(--lern-text-primary)] hover:border-[var(--lern-accent)] transition-all"
+              className="w-full text-left p-3.5 rounded-xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] text-sm font-medium text-[var(--lern-text-primary)] hover:border-[var(--lern-accent)] transition-all"
             >
               {opt}
             </motion.button>

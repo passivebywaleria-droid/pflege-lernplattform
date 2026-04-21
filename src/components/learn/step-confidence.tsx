@@ -169,7 +169,7 @@ export function StepConfidence({
           exit={{ opacity: 0, x: -20 }}
         >
           {/* Aussage */}
-          <div className="rounded-2xl bg-[var(--lern-bg-primary)] border-2 border-[var(--lern-border)] p-6 mb-6">
+          <div className="rounded-2xl bg-[var(--lern-bg-primary)] border-[1.5px] border-[var(--lern-border)] p-6 mb-6">
             <p className="text-lg font-medium text-[var(--lern-text-primary)] text-center">
               &ldquo;<FachbegriffText glossar={glossar ?? []}>
                 {sprachLevel === "b1" && card.statementB1 ? card.statementB1 : card.statement}
@@ -182,13 +182,13 @@ export function StepConfidence({
             <div className="grid grid-cols-2 gap-3">
               <button
                 onClick={() => handleAnswer(true)}
-                className="rounded-2xl border-2 border-[var(--lern-success)] bg-[var(--lern-success)]/5 px-6 py-4 text-base font-semibold text-[var(--lern-success)] transition-all active:scale-[0.98]"
+                className="rounded-2xl border-[1.5px] border-[var(--lern-success)] bg-[var(--lern-success)]/5 px-6 py-4 text-base font-semibold text-[var(--lern-success)] transition-all active:scale-[0.98]"
               >
                 Wahr
               </button>
               <button
                 onClick={() => handleAnswer(false)}
-                className="rounded-2xl border-2 border-[var(--lern-error)] bg-[var(--lern-error)]/5 px-6 py-4 text-base font-semibold text-[var(--lern-error)] transition-all active:scale-[0.98]"
+                className="rounded-2xl border-[1.5px] border-[var(--lern-error)] bg-[var(--lern-error)]/5 px-6 py-4 text-base font-semibold text-[var(--lern-error)] transition-all active:scale-[0.98]"
               >
                 Falsch
               </button>
@@ -211,7 +211,7 @@ export function StepConfidence({
                     <button
                       key={level}
                       onClick={() => handleConfidence(level)}
-                      className="rounded-xl border-2 border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-3 py-3 text-sm font-medium text-[var(--lern-text-primary)] transition-all active:scale-[0.98]"
+                      className="rounded-xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-3 py-3 text-sm font-medium text-[var(--lern-text-primary)] transition-all active:scale-[0.98]"
                     >
                       {level === "unsicher" && "🤔"}
                       {level === "mittel" && "😊"}
