@@ -122,7 +122,7 @@ export const CE_MANIFEST: CEManifestEntry[] = [
       // Spirale 4
       "ls-pruefung-ce02",
     ],
-    status: "themen-rohmaterial",
+    status: "geprueft",
     sortOrder: 2,
   },
   // Neue CEs hier eintragen

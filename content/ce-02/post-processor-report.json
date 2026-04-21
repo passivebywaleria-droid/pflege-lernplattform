@@ -1,10 +1,168 @@
 {
   "ce": "ce-02",
-  "generatedAt": "2026-04-21T19:16:47.176Z",
+  "generatedAt": "2026-04-21T21:39:01.567Z",
   "dryRun": false,
-  "totalFiles": 0,
-  "totalSteps": 0,
+  "totalFiles": 13,
+  "totalSteps": 3,
   "totalShuffled": 0,
-  "totalWarnings": 0,
-  "reports": []
+  "totalWarnings": 12,
+  "reports": [
+    {
+      "file": "/Users/macminiwaleria/Desktop/Moneymaker/pflege-lernplattform/content/ce-02/index.ts",
+      "stepsTotal": 0,
+      "shuffled": 0,
+      "warnings": []
+    },
+    {
+      "file": "/Users/macminiwaleria/Desktop/Moneymaker/pflege-lernplattform/content/ce-02/situationen/frau-m-nacht-sturz/index.ts",
+      "stepsTotal": 0,
+      "shuffled": 0,
+      "warnings": []
+    },
+    {
+      "file": "/Users/macminiwaleria/Desktop/Moneymaker/pflege-lernplattform/content/ce-02/situationen/frau-m-nacht-sturz/patient.ts",
+      "stepsTotal": 0,
+      "shuffled": 0,
+      "warnings": []
+    },
+    {
+      "file": "/Users/macminiwaleria/Desktop/Moneymaker/pflege-lernplattform/content/ce-02/situationen/frau-m-nacht-sturz/phase-beobachten.ts",
+      "stepsTotal": 1,
+      "shuffled": 0,
+      "warnings": [
+        {
+          "stepId": "unknown-context",
+          "type": "absolute_word",
+          "severity": "info",
+          "detail": "Absolutwort \"alle\": \"Markiere alle Wirkstoffe, die dir im Zusammenhang mit dem nächtlichen Sturz verd...\""
+        },
+        {
+          "stepId": "unknown-context",
+          "type": "absolute_word",
+          "severity": "info",
+          "detail": "Absolutwort \"immer\": \"Du setzt dich zu Frau M., die immer noch auf dem Boden liegt (mit Decke). Du fra...\""
+        }
+      ]
+    },
+    {
+      "file": "/Users/macminiwaleria/Desktop/Moneymaker/pflege-lernplattform/content/ce-02/situationen/frau-m-nacht-sturz/phase-dokumentieren.ts",
+      "stepsTotal": 0,
+      "shuffled": 0,
+      "warnings": [
+        {
+          "stepId": "unknown-context",
+          "type": "absolute_word",
+          "severity": "info",
+          "detail": "Absolutwort \"alle\": \"Schreibe das Sturzprotokoll für Frau M. Dein Text soll alle 9 Pflicht-Elemente e...\""
+        },
+        {
+          "stepId": "unknown-context",
+          "type": "all_correct",
+          "severity": "warn",
+          "detail": "Muster \"Alle/Keine richtig\" gefunden: \"keine sichtbare Deformität; Schmerz linke Hüfte NRS 4/10, keine Verkürzung oder \""
+        }
+      ]
+    },
+    {
+      "file": "/Users/macminiwaleria/Desktop/Moneymaker/pflege-lernplattform/content/ce-02/situationen/frau-m-nacht-sturz/phase-durchfuehren.ts",
+      "stepsTotal": 1,
+      "shuffled": 0,
+      "warnings": [
+        {
+          "stepId": "unknown-context",
+          "type": "absolute_word",
+          "severity": "info",
+          "detail": "Absolutwort \"alle\": \"Ja, grundsätzlich für alle über 80....\""
+        },
+        {
+          "stepId": "unknown-context",
+          "type": "all_correct",
+          "severity": "warn",
+          "detail": "Muster \"Alle/Keine richtig\" gefunden: \"alles: Würde (kein Bettpfanne), akutes Bedürfnis (jetzt gehen), Sicherheit (2 Pe\""
+        },
+        {
+          "stepId": "unknown-context",
+          "type": "all_correct",
+          "severity": "warn",
+          "detail": "Muster \"Alle/Keine richtig\" gefunden: \"Keine sichtbare Hüftfraktur-Zeichen (keine Verkürzung, keine Außenrotation), Sch\""
+        }
+      ]
+    },
+    {
+      "file": "/Users/macminiwaleria/Desktop/Moneymaker/pflege-lernplattform/content/ce-02/situationen/frau-m-nacht-sturz/phase-evaluieren.ts",
+      "stepsTotal": 0,
+      "shuffled": 0,
+      "warnings": [
+        {
+          "stepId": "unknown-context",
+          "type": "all_correct",
+          "severity": "warn",
+          "detail": "Muster \"Alle/Keine richtig\" gefunden: \"Keine Musterantwort — deine Überlegungen sind der\""
+        }
+      ]
+    },
+    {
+      "file": "/Users/macminiwaleria/Desktop/Moneymaker/pflege-lernplattform/content/ce-02/situationen/frau-m-nacht-sturz/phase-informieren.ts",
+      "stepsTotal": 1,
+      "shuffled": 0,
+      "warnings": [
+        {
+          "stepId": "unknown-context",
+          "type": "all_correct",
+          "severity": "warn",
+          "detail": "Muster \"Alle/Keine richtig\" gefunden: \"allein, mit einer gerade gestürzten Patientin. Wir fragen dich jetzt nach deiner\""
+        },
+        {
+          "stepId": "unknown-context",
+          "type": "all_correct",
+          "severity": "warn",
+          "detail": "Muster \"Alle/Keine richtig\" gefunden: \"Keine sichtbare Verletzung. Schmerz in der\""
+        }
+      ]
+    },
+    {
+      "file": "/Users/macminiwaleria/Desktop/Moneymaker/pflege-lernplattform/content/ce-02/situationen/frau-m-nacht-sturz/phase-planen.ts",
+      "stepsTotal": 0,
+      "shuffled": 0,
+      "warnings": [
+        {
+          "stepId": "unknown-context",
+          "type": "all_correct",
+          "severity": "warn",
+          "detail": "Muster \"Alle/Keine richtig\" gefunden: \"keine Stürze — sie erhöhen die Fall-Höhe und können Verletzungen verschlimmern (\""
+        }
+      ]
+    },
+    {
+      "file": "/Users/macminiwaleria/Desktop/Moneymaker/pflege-lernplattform/content/ce-02/themen/sturz-prophylaxe/bausteine.ts",
+      "stepsTotal": 0,
+      "shuffled": 0,
+      "warnings": [
+        {
+          "stepId": "unknown-context",
+          "type": "all_correct",
+          "severity": "warn",
+          "detail": "Muster \"Alle/Keine richtig\" gefunden: \"keine Griffe zum Festhalten, Bett zu hoch oder\""
+        }
+      ]
+    },
+    {
+      "file": "/Users/macminiwaleria/Desktop/Moneymaker/pflege-lernplattform/content/ce-02/themen/sturz-prophylaxe/glossar.ts",
+      "stepsTotal": 0,
+      "shuffled": 0,
+      "warnings": []
+    },
+    {
+      "file": "/Users/macminiwaleria/Desktop/Moneymaker/pflege-lernplattform/content/ce-02/themen/sturz-prophylaxe/index.ts",
+      "stepsTotal": 0,
+      "shuffled": 0,
+      "warnings": []
+    },
+    {
+      "file": "/Users/macminiwaleria/Desktop/Moneymaker/pflege-lernplattform/content/ce-02/themen/sturz-prophylaxe/karteikarten.ts",
+      "stepsTotal": 0,
+      "shuffled": 0,
+      "warnings": []
+    }
+  ]
 }
