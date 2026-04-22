@@ -106,9 +106,11 @@ export default function SituationLernenPage() {
               <h1 className="text-lg font-bold text-[var(--lern-text-primary)]">
                 {situation.titel}
               </h1>
-              <p className="text-xs text-[var(--lern-text-secondary)] mt-0.5">
-                {t("patient")}: {situation.patient.name}, {situation.patient.alter} · {situation.patient.setting}
-              </p>
+              {situation.patient && (
+                <p className="text-xs text-[var(--lern-text-secondary)] mt-0.5">
+                  {t("patient")}: {situation.patient.name}, {situation.patient.alter} · {situation.patient.setting}
+                </p>
+              )}
             </div>
             <span className="shrink-0 rounded-full bg-[var(--lern-accent-bg)] px-2 py-0.5 text-xs font-semibold text-[var(--lern-accent)]">
               {t("spirale", { level: situation.spirale })}
@@ -116,7 +118,7 @@ export default function SituationLernenPage() {
           </div>
 
           {/* Diagnosen */}
-          {situation.patient.diagnosen.length > 0 && (
+          {situation.patient && situation.patient.diagnosen.length > 0 && (
             <div className="flex flex-wrap gap-1 mb-3">
               {situation.patient.diagnosen.map((d) => (
                 <span

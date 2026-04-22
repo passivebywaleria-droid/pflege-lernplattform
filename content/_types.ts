@@ -1086,6 +1086,35 @@ export type PflegeProzessPhase =
   | "evaluieren"
   | "dokumentieren";
 
+/** Bestimmt welches Phasenmodell und welche Lernstruktur eine Lernsituation verwendet */
+export type SituationsTyp =
+  | "pflegeprozess"       // CE-02, CE-05, CE-07, CE-10: Standard 6-Phasen Pflegeprozess
+  | "orientierung"        // CE-01: Rollensituationen ohne Patientenfall (wahrnehmen→einordnen→handeln→reflektieren)
+  | "kommunikation"       // CE-03: Gesprächsführung im Vordergrund (beobachten→einleiten→gestalten→evaluieren→dokumentieren→reflektieren)
+  | "beratung"            // CE-04: Gesundheitsberatung (wahrnehmen→einschätzen→informieren→beraten→evaluieren→dokumentieren)
+  | "akutsituation"       // CE-06: Notfall-Erstversorgung (erkennen→alarmieren→erstmassnahmen→uebergeben→reflektieren)
+  | "begleitung"          // CE-08: Palliativpflege + Emotionsarbeit (begegnen→verstehen→begleiten→entlasten→abschiednehmen→reflektieren)
+  | "lebensgestaltung"    // CE-09: Biografie + ambulant (erkunden→verstehen→gestalten→vernetzen→evaluieren→dokumentieren)
+  | "psychiatrisch";      // CE-11: Psychiatrische Pflege (beobachten→beziehungaufbauen→unterstuetzen→krisenbewältigen→evaluieren→dokumentieren)
+
+/** Phasen für SituationsTyp 'orientierung' (CE-01) */
+export type OrientierungsPhase = "wahrnehmen" | "einordnen" | "handeln" | "reflektieren" | "dokumentieren";
+
+/** Phasen für SituationsTyp 'kommunikation' (CE-03) */
+export type KommunikationsPhase = "beobachten" | "einleiten" | "gestalten" | "evaluieren" | "dokumentieren" | "reflektieren";
+
+/** Phasen für SituationsTyp 'beratung' (CE-04) */
+export type BeratungsPhase = "wahrnehmen" | "einschaetzen" | "informieren" | "beraten" | "evaluieren" | "dokumentieren";
+
+/** Phasen für SituationsTyp 'akutsituation' (CE-06) */
+export type AkutPhase = "erkennen" | "alarmieren" | "erstmassnahmen" | "uebergeben" | "reflektieren";
+
+/** Phasen für SituationsTyp 'begleitung' (CE-08) */
+export type BegleitungsPhase = "begegnen" | "verstehen" | "begleiten" | "entlasten" | "abschiednehmen" | "reflektieren";
+
+/** Alle möglichen Phasen über alle SituationsTypen */
+export type AnyPhase = PflegeProzessPhase | OrientierungsPhase | KommunikationsPhase | BeratungsPhase | AkutPhase | BegleitungsPhase | string;
+
 /** Wissensstufe: Denkfrage (stark) → Hinweis (mittel) → Erklärung (schwach) */
 export type WissensStufe = 1 | 2 | 3;
 
@@ -1167,7 +1196,7 @@ export interface PatientBeschreibung {
 /** Eine Phase innerhalb einer Lernsituation */
 export interface SituationsPhase {
   phaseId: string;              // "ls-01-informieren"
-  phase: PflegeProzessPhase;
+  phase: AnyPhase;              // PflegeProzessPhase oder CE-spezifische Phase
   titel: string;
   titelB1?: string;
   kontext: string;              // Situationsbeschreibung für diese Phase
@@ -1179,7 +1208,7 @@ export interface SituationsPhase {
 
 /** Wann wird ein Wissensbaustein eingeblendet? */
 export interface BausteinTrigger {
-  phase: PflegeProzessPhase;
+  phase: AnyPhase;
   trigger: string;              // "dekubitus-frage-falsch"
   bausteinId: string;           // Verweis auf Wissensbaustein
   stufe: WissensStufe;          // Sequencer wählt basierend auf Profil
@@ -1188,18 +1217,19 @@ export interface BausteinTrigger {
 /** Komplikation/Branching-Punkt in einer Lernsituation */
 export interface Komplikation {
   komplikationId: string;
-  phase: PflegeProzessPhase;
+  phase: AnyPhase;
   ausloeser: string;            // Was triggert die Komplikation
   beschreibung: string;
   beschreibungB1?: string;
   steps: ContentStep[];         // Zusätzliche Steps bei Komplikation
 }
 
-/** Eine komplette Lernsituation (Patientenfall mit 6 Phasen) */
+/** Eine komplette Lernsituation */
 export interface Lernsituation {
   situationId: string;          // "ls-01-yilmaz-hueft-tep"
   ceId: string;
-  patient: PatientBeschreibung;
+  situationsTyp: SituationsTyp; // Bestimmt Phasenmodell und Lernstruktur
+  patient?: PatientBeschreibung; // Optional: fehlt bei CE-01 (Rollensituationen)
   titel: string;
   titelB1?: string;
   themen: string[];             // themaIds die verwoben werden

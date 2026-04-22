@@ -62,9 +62,15 @@ function SituationCard({
         </h3>
 
         <div className="flex items-center gap-2 text-xs text-[var(--lern-text-tertiary)] mb-2">
-          <span>{t("patient")}: {situation.patient.name}, {situation.patient.alter}</span>
-          <span>·</span>
-          <span>{situation.patient.setting}</span>
+          {situation.patient ? (
+            <>
+              <span>{t("patient")}: {situation.patient.name}, {situation.patient.alter}</span>
+              <span>·</span>
+              <span>{situation.patient.setting}</span>
+            </>
+          ) : (
+            <span>{situation.themen.join(", ")}</span>
+          )}
         </div>
 
         <div className="flex flex-wrap gap-1">
