@@ -49,7 +49,7 @@ export function LeTabs({ activeTab, onTabChange, hasArtikel, hasFallverlaeufe, h
             key={tab.id}
             onClick={() => !disabled && onTabChange(tab.id)}
             disabled={disabled}
-            className={`relative flex flex-1 flex-col items-center gap-1 py-3 text-xs font-medium transition-colors ${
+            className={`relative flex flex-1 flex-col items-center gap-1 py-2.5 text-[11px] font-medium transition-all active:scale-95 ${
               disabled
                 ? "cursor-not-allowed opacity-30"
                 : active
