@@ -81,7 +81,7 @@ export function StepCrowdPoll({
       >
         <div className="flex items-center gap-2">
           <span className="text-2xl">📊</span>
-          <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
+          <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
             {title}
           </h2>
         </div>
@@ -92,7 +92,7 @@ export function StepCrowdPoll({
           </p>
         )}
 
-        <p className="text-lg font-medium text-[var(--lern-text-primary)]">
+        <p className="text-sm font-medium text-[var(--lern-text-primary)]">
           <FachbegriffText glossar={glossar ?? []}>
             {question}
           </FachbegriffText>
@@ -165,7 +165,7 @@ export function StepCrowdPoll({
     >
       <div className="flex items-center gap-2">
         <span className="text-2xl">📊</span>
-        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
           {title}
         </h2>
       </div>

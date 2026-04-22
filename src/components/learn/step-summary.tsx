@@ -39,7 +39,7 @@ export function StepSummary({
         <div className="text-5xl mb-3">
           <HandDrawnIcon name={percentage >= 80 ? "celebration" : percentage >= 60 ? "clap" : "muscle"} size={48} color={percentage >= 80 ? "var(--lern-success)" : percentage >= 60 ? "var(--lern-warning)" : "var(--lern-accent)"} />
         </div>
-        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
           {title}
         </h2>
       </motion.div>
@@ -80,13 +80,13 @@ export function StepSummary({
         className="grid grid-cols-2 gap-3"
       >
         <div className="rounded-2xl bg-[var(--lern-success)]/5 p-4 text-center">
-          <p className="text-xl font-bold text-[var(--lern-success)]">
+          <p className="text-base font-bold text-[var(--lern-success)]">
             {score}/{totalQuestions}
           </p>
           <p className="text-xs text-[var(--lern-text-secondary)]">Richtig</p>
         </div>
         <div className="rounded-2xl bg-[var(--lern-info)]/5 p-4 text-center">
-          <p className="text-xl font-bold text-[var(--lern-info)]">{percentage}%</p>
+          <p className="text-base font-bold text-[var(--lern-info)]">{percentage}%</p>
           <p className="text-xs text-[var(--lern-text-secondary)]">Score</p>
         </div>
       </motion.div>

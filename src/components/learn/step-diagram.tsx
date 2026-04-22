@@ -341,7 +341,7 @@ export function StepDiagram({
 
   return (
     <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
-      <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">{title}</h2>
+      <h2 className="text-base font-bold text-[var(--lern-text-primary)]">{title}</h2>
 
       {body && (
         <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
@@ -349,7 +349,7 @@ export function StepDiagram({
         </p>
       )}
 
-      <p className="text-lg font-medium text-[var(--lern-text-primary)]">{instruction}</p>
+      <p className="text-sm font-medium text-[var(--lern-text-primary)]">{instruction}</p>
 
       {/* Fortschritt bei interaktiv */}
       {interactive && (

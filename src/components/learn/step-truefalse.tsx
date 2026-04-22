@@ -93,7 +93,7 @@ export function StepTrueFalse({
     const allCorrect = correctCount === cards.length;
     return (
       <div className="space-y-6" style={{ color: "var(--lern-text-primary)" }}>
-        <h2 className="text-xl font-bold">
+        <h2 className="text-base font-bold">
           Wahr/Falsch abgeschlossen!
         </h2>
         <motion.div
@@ -123,7 +123,7 @@ export function StepTrueFalse({
 
   return (
     <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }}>
-      <h2 className="text-xl font-bold">{title}</h2>
+      <h2 className="text-base font-bold">{title}</h2>
 
       {body && (
         <p className="leading-relaxed whitespace-pre-line">

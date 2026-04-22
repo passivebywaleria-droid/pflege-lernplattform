@@ -150,7 +150,7 @@ export function StepSpeech({
     <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }}>
       {/* Titel + Aufgabe */}
       <div>
-        <h2 className="text-xl font-bold mb-2">
+        <h2 className="text-base font-bold mb-2">
           <FachbegriffText glossar={glossar}>{title}</FachbegriffText>
         </h2>
         <p className="text-sm text-[var(--lern-text-secondary)] leading-relaxed">
@@ -180,7 +180,7 @@ export function StepSpeech({
             <p className="text-xs text-[var(--lern-text-tertiary)] mb-0.5">
               {sprachLevel === "b1" ? "Hör zu und sprich nach:" : "Sprich diesen Begriff aus:"}
             </p>
-            <p className="text-xl font-bold text-[var(--lern-accent)]">{speech.zielwort}</p>
+            <p className="text-base font-bold text-[var(--lern-accent)]">{speech.zielwort}</p>
           </div>
         </div>
       )}

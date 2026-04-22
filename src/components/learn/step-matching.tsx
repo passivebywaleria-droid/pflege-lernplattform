@@ -143,7 +143,7 @@ export function StepMatching({
 
   return (
     <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }} role="group" aria-label="Zuordnungsaufgabe">
-      <h2 className="text-xl font-bold">{title}</h2>
+      <h2 className="text-base font-bold">{title}</h2>
 
       {body && (
         <p className="leading-relaxed whitespace-pre-line">
@@ -151,7 +151,7 @@ export function StepMatching({
         </p>
       )}
 
-      <p className="text-lg font-semibold"><FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText></p>
+      <p className="text-base font-semibold"><FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText></p>
 
       <p className="text-sm" style={{ color: "var(--lern-text-secondary)" }}>
         Tippe links auf einen Begriff, dann rechts auf die passende Erklärung.

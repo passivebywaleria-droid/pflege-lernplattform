@@ -39,7 +39,7 @@ export function StepAudio({
     <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
       {/* Title */}
       <div className="flex items-start justify-between gap-3">
-        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">{title}</h2>
+        <h2 className="text-base font-bold text-[var(--lern-text-primary)]">{title}</h2>
         <TtsButton text={`${title}. ${body || ""}`} className="shrink-0 mt-1" />
       </div>
 

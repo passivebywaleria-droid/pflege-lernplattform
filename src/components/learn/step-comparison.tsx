@@ -78,7 +78,7 @@ export function StepComparison({
 
   return (
     <div className="space-y-5 pb-20" style={{ color: "var(--lern-text-primary)" }}>
-      <h2 className="text-xl font-bold">{title}</h2>
+      <h2 className="text-base font-bold">{title}</h2>
 
       {body && (
         <p className="leading-relaxed whitespace-pre-line">
@@ -86,7 +86,7 @@ export function StepComparison({
         </p>
       )}
 
-      <p className="text-lg font-medium" style={{ color: "var(--lern-text-primary)" }}>{instruction}</p>
+      <p className="text-sm font-medium" style={{ color: "var(--lern-text-primary)" }}>{instruction}</p>
 
       {/* Spalten-Legende */}
       <div className="flex flex-wrap gap-2">

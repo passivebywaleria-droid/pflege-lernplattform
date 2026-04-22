@@ -80,7 +80,7 @@ export function LernSnackTab({ snacks: rawSnacks, sprachLevel, leId }: LernSnack
     <div className="space-y-6 pb-12">
       {/* Header + Fortschritt */}
       <div className="space-y-3">
-        <h2 className="text-lg font-semibold" style={{ color: "var(--lern-text)" }}>
+        <h2 className="text-base font-semibold" style={{ color: "var(--lern-text)" }}>
           Lern-Snack
         </h2>
         <p className="text-sm" style={{ color: "var(--lern-text-secondary)" }}>

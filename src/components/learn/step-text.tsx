@@ -126,7 +126,7 @@ function CarouselView({
   return (
     <div className="space-y-5 pb-20" style={{ color: "var(--lern-text-primary)" }}>
       <div className="flex items-start justify-between gap-3">
-        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
           {title}
         </h2>
         <TtsButton text={`${title}. ${allCards[activeCard]}`} className="shrink-0 mt-1" />
@@ -513,7 +513,7 @@ export function StepText({
   return (
     <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }} role="article" aria-label={title}>
       <div className="flex items-start justify-between gap-3">
-        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
           {title}
         </h2>
         <TtsButton text={`${title}. ${body}`} className="shrink-0 mt-1" />

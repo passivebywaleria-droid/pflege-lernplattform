@@ -75,7 +75,7 @@ export function StepSwipe({
     const allCorrect = correctCount === cards.length;
     return (
       <div className="space-y-6" style={{ color: "var(--lern-text-primary)" }}>
-        <h2 className="text-xl font-bold text-center">
+        <h2 className="text-base font-bold text-center">
           Einschätzung abgeschlossen!
         </h2>
         <motion.div
@@ -116,7 +116,7 @@ export function StepSwipe({
   return (
     <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }}>
       {/* Title */}
-      <h2 className="text-xl font-bold">{title}</h2>
+      <h2 className="text-base font-bold">{title}</h2>
 
       {body && (
         <p className="text-sm leading-relaxed" style={{ color: "var(--lern-text-secondary)" }}>

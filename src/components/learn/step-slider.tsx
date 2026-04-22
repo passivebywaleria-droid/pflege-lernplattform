@@ -50,7 +50,7 @@ export function StepSlider({
 
   return (
     <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
-      <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
+      <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
         {title}
       </h2>
 
@@ -61,7 +61,7 @@ export function StepSlider({
       )}
 
       <div className="rounded-2xl bg-[var(--lern-accent-bg)] border border-[var(--lern-accent)]/15 p-4">
-        <p className="text-lg font-medium text-[var(--lern-text-primary)]">
+        <p className="text-sm font-medium text-[var(--lern-text-primary)]">
           {instruction}
         </p>
       </div>

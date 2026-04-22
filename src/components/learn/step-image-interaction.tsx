@@ -292,7 +292,7 @@ function ZoomPanViewer({ data }: { data: ZoomPanData }) {
         <button
           onClick={zoomOut}
           disabled={zoom <= 1}
-          className="w-9 h-9 rounded-full bg-[var(--lern-bg)] flex items-center justify-center text-lg font-bold text-[var(--lern-text-primary)] disabled:opacity-30 active:scale-95 transition-all"
+          className="w-9 h-9 rounded-full bg-[var(--lern-bg)] flex items-center justify-center text-base font-bold text-[var(--lern-text-primary)] disabled:opacity-30 active:scale-95 transition-all"
         >
           −
         </button>
@@ -305,7 +305,7 @@ function ZoomPanViewer({ data }: { data: ZoomPanData }) {
         <button
           onClick={zoomIn}
           disabled={zoom >= maxZoom}
-          className="w-9 h-9 rounded-full bg-[var(--lern-bg)] flex items-center justify-center text-lg font-bold text-[var(--lern-text-primary)] disabled:opacity-30 active:scale-95 transition-all"
+          className="w-9 h-9 rounded-full bg-[var(--lern-bg)] flex items-center justify-center text-base font-bold text-[var(--lern-text-primary)] disabled:opacity-30 active:scale-95 transition-all"
         >
           +
         </button>
@@ -370,7 +370,7 @@ export function StepImageInteraction({
             {interactionType === "beforeAfter" ? "Vergleich" : interactionType === "layerReveal" ? "Schichten" : "Detail"}
           </span>
         </div>
-        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
           <FachbegriffText glossar={glossar}>{title}</FachbegriffText>
         </h2>
         {body && (

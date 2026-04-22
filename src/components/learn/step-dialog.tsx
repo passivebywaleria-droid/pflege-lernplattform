@@ -171,7 +171,7 @@ export function StepDialog({
     <div className="space-y-3" style={{ color: "var(--lern-text-primary)" }}>
       {/* Header */}
       <div>
-        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
           {title}
         </h2>
         {body && (
@@ -362,7 +362,7 @@ export function StepDialog({
                 transition={{ duration: 1, ease: "easeOut" }}
               />
             </svg>
-            <span className="absolute text-xl font-bold text-[var(--lern-text-primary)]">
+            <span className="absolute text-base font-bold text-[var(--lern-text-primary)]">
               {scorePercent}%
             </span>
           </div>

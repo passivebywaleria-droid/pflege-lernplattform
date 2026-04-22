@@ -67,7 +67,7 @@ export function StepTimer({
   if (!started) {
     return (
       <div className="space-y-6 text-center pb-20" style={{ color: "var(--lern-text-primary)" }}>
-        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
           {title}
         </h2>
         {body && (
@@ -99,7 +99,7 @@ export function StepTimer({
     const allCorrect = timerScore === totalAnswered && totalAnswered === questions.length;
     return (
       <div className="space-y-6 text-center pb-20" style={{ color: "var(--lern-text-primary)" }}>
-        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
           Blitzrunde geschafft!
         </h2>
         <div className="text-5xl font-bold text-[var(--lern-accent)]">
@@ -123,11 +123,11 @@ export function StepTimer({
   return (
     <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
           Blitzrunde
         </h2>
         <span
-          className={`text-lg font-bold ${
+          className={`text-base font-bold ${
             timeLeft <= 10
               ? "text-[#C96B5C] animate-pulse"
               : "text-[var(--lern-text-primary)]"
@@ -167,7 +167,7 @@ export function StepTimer({
         transition={{ duration: 0.4 }}
         className="rounded-2xl p-1"
       >
-        <h3 className="text-lg font-bold text-[var(--lern-text-primary)] mb-4">
+        <h3 className="text-base font-bold text-[var(--lern-text-primary)] mb-4">
           {q.question}
         </h3>
         <div className="space-y-2">

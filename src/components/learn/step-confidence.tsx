@@ -98,12 +98,12 @@ export function StepConfidence({
   if (allDone) {
     return (
       <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
-        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
           {title} — Ergebnis
         </h2>
 
         <div className="rounded-2xl bg-[var(--lern-bg)] p-4 space-y-3">
-          <p className="text-lg font-bold text-[var(--lern-text-primary)]">
+          <p className="text-base font-bold text-[var(--lern-text-primary)]">
             {correctCount} von {cards.length} richtig
           </p>
           {results.map((r, i) => {
@@ -146,7 +146,7 @@ export function StepConfidence({
 
   return (
     <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
-      <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
+      <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
         {title}
       </h2>
 
@@ -170,7 +170,7 @@ export function StepConfidence({
         >
           {/* Aussage */}
           <div className="rounded-2xl bg-[var(--lern-bg-primary)] border-[1.5px] border-[var(--lern-border)] p-6 mb-6">
-            <p className="text-lg font-medium text-[var(--lern-text-primary)] text-center">
+            <p className="text-sm font-medium text-[var(--lern-text-primary)] text-center">
               &ldquo;<FachbegriffText glossar={glossar ?? []}>
                 {sprachLevel === "b1" && card.statementB1 ? card.statementB1 : card.statement}
               </FachbegriffText>&rdquo;

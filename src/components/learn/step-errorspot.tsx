@@ -72,14 +72,14 @@ export function StepErrorSpot({
 
   return (
     <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
-      <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">{title}</h2>
+      <h2 className="text-base font-bold text-[var(--lern-text-primary)]">{title}</h2>
 
       {body && (
         <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">{body}</p>
       )}
 
       <div className="rounded-2xl bg-[#C96B5C]/8 border border-[#C96B5C]/20 p-4">
-        <p className="text-lg font-medium text-[var(--lern-text-primary)]">{instruction}</p>
+        <p className="text-sm font-medium text-[var(--lern-text-primary)]">{instruction}</p>
         <p className="text-sm text-[var(--lern-text-tertiary)] mt-1">
           {found.size}/{errors.length} Fehler gefunden
         </p>

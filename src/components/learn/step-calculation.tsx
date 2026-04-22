@@ -43,7 +43,7 @@ export function StepCalculation({
 
   return (
     <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
-      <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">{title}</h2>
+      <h2 className="text-base font-bold text-[var(--lern-text-primary)]">{title}</h2>
 
       {body && (
         <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
@@ -52,7 +52,7 @@ export function StepCalculation({
       )}
 
       <div className="rounded-2xl bg-[var(--lern-accent-bg)] border border-[var(--lern-accent)]/15 p-4">
-        <p className="text-lg font-medium text-[var(--lern-text-primary)]">{instruction}</p>
+        <p className="text-sm font-medium text-[var(--lern-text-primary)]">{instruction}</p>
       </div>
 
       {formula && (
@@ -71,9 +71,9 @@ export function StepCalculation({
           onChange={(e) => !submitted && setInput(e.target.value)}
           disabled={submitted}
           placeholder="Ergebnis eingeben"
-          className="flex-1 rounded-2xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] px-4 py-4 text-xl font-bold text-center text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:outline-2 focus:outline-[var(--lern-accent)] disabled:opacity-60"
+          className="flex-1 rounded-2xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)] px-4 py-4 text-base font-bold text-center text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:outline-2 focus:outline-[var(--lern-accent)] disabled:opacity-60"
         />
-        <span className="text-lg font-medium text-[var(--lern-text-secondary)] shrink-0">{unit}</span>
+        <span className="text-sm font-medium text-[var(--lern-text-secondary)] shrink-0">{unit}</span>
       </div>
 
       {!submitted ? (
