@@ -171,7 +171,7 @@ export function StepDialog({
     <div className="space-y-3" style={{ color: "var(--lern-text-primary)" }}>
       {/* Header */}
       <div>
-        <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
           {title}
         </h2>
         {body && (

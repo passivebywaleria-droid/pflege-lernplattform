@@ -67,7 +67,7 @@ export function StepTimer({
   if (!started) {
     return (
       <div className="space-y-6 text-center pb-20" style={{ color: "var(--lern-text-primary)" }}>
-        <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
           {title}
         </h2>
         {body && (
@@ -99,7 +99,7 @@ export function StepTimer({
     const allCorrect = timerScore === totalAnswered && totalAnswered === questions.length;
     return (
       <div className="space-y-6 text-center pb-20" style={{ color: "var(--lern-text-primary)" }}>
-        <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
           Blitzrunde geschafft!
         </h2>
         <div className="text-5xl font-bold text-[var(--lern-accent)]">

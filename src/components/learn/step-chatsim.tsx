@@ -117,7 +117,7 @@ export function StepChatSim({
 
   return (
     <div className="space-y-5 pb-20" style={{ color: "var(--lern-text-primary)" }}>
-      <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">{title}</h2>
+      <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">{title}</h2>
 
       {body && (
         <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">

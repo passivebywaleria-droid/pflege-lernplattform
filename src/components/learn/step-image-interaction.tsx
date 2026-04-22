@@ -370,7 +370,7 @@ export function StepImageInteraction({
             {interactionType === "beforeAfter" ? "Vergleich" : interactionType === "layerReveal" ? "Schichten" : "Detail"}
           </span>
         </div>
-        <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
+        <h2 className="text-xl font-bold text-[var(--lern-text-primary)]">
           <FachbegriffText glossar={glossar}>{title}</FachbegriffText>
         </h2>
         {body && (
