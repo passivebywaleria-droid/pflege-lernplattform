@@ -1032,6 +1032,48 @@ export interface ExamCase {
 }
 
 // ═══════════════════════════════════════════════════
+// PRÜFUNGSFALL (PflAPrV-Format, CE-übergreifend)
+// ═══════════════════════════════════════════════════
+
+/** AFB-Operatoren nach PflAPrV — bestimmen Punkte + Bloom-Level */
+export type PruefungsOperator =
+  | "nennen" | "benennen" | "beschreiben"         // AFB I — 1P
+  | "erlaeutern" | "erklaeren" | "vergleichen" | "einordnen"  // AFB II — 2P
+  | "begruenden"                                   // AFB III — 3P
+  | "beurteilen" | "bewerten" | "entwickeln" | "planen";      // AFB III — 4P
+
+/** Anforderungsbereich */
+export type AFBStufe = 1 | 2 | 3;
+
+/** Eine Aufgabe im Prüfungsfall */
+export interface PruefungsAufgabe {
+  aufgabeId: string;          // "pf-01-a1"
+  operator: PruefungsOperator;
+  afb: AFBStufe;
+  punkte: number;             // 1-4 (je nach Operator)
+  fragetext: string;          // "Nennen Sie 3 sturzfördernde Faktoren..."
+  fragetextB1?: string;
+  musterloesung: string[];    // Kernaussagen als Bullet-Liste
+  bewertungskriterien: string; // Hinweis für KI-Bewertung
+}
+
+/** Ein vollständiger Prüfungsfall (PflAPrV-Format) */
+export interface Pruefungsfall {
+  pruefungsfallId: string;    // "pf-ce02-sturz-01"
+  ceIds: string[];            // CE-übergreifend möglich: ["ce-02", "ce-03"]
+  /** Alle Themen die der Schüler abgeschlossen haben muss */
+  voraussetzungen: string[];  // "ce-02/sturz-prophylaxe", "ce-02/dekubitus"
+  gesamtpunkte: number;       // 20-30P
+  zielzeitMin: number;        // ~35 Min für 25P
+  /** "delayed" = kein Feedback bis alle Aufgaben abgegeben (Prüfungsmodus) */
+  feedbackMode: "delayed" | "immediate";
+  /** Patientenfall-Text (~300 Wörter, situationsbeschreibend) */
+  fallText: string;
+  fallTextB1?: string;
+  aufgaben: PruefungsAufgabe[];
+}
+
+// ═══════════════════════════════════════════════════
 // SITUATIONSBASIERTES LERNEN (CE-02+)
 // ═══════════════════════════════════════════════════
 
