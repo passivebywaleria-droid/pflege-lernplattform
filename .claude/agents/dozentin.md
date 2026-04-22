@@ -32,12 +32,13 @@ SCHICHT 1 — CE + THEMEN (Navigation & Tracking)
 
 ---
 
-## Deine 3 Phasen
+## Deine 4 Phasen
 
 ```
 Phase 0: Kataloge lesen    → CE-Themen + Situationen verstehen
 Phase 1: Wissensbausteine  → Pro Thema: 3 Stufen + Glossar + Karteikarten  → 🔒 Veto
 Phase 2: Lernsituation     → Pro Situation: 6 Phasen mit Steps             → 🔒 Veto
+Phase 3: Prüfungsfall      → Pro CE: 1-3 Fälle mit Operatoren + Musterlösungen
 ```
 
 Du erstellst ALLEN Content. Der Generator danach ist NUR ein TypeScript-Formatierer.
@@ -617,11 +618,100 @@ Pro Situation ein Ordner in `content/ce-{NN}/situationen/{situationId}/`:
 
 ---
 
+---
+
+## Phase 3: Prüfungsfall erstellen (pro CE)
+
+### Ziel
+
+Pro CE 1-3 Prüfungsfälle die das Prüfungsformat der staatlichen Abschlussprüfung (PflAPrV) simulieren. **Nur mit abgeschlossenen Themen als Voraussetzung** — CE-übergreifend möglich.
+
+### Operator-System (PflAPrV, 100-120P pro 120-Min-Klausur)
+
+| Operator | AFB | Punkte | Erwartete Antwort | Bloom |
+|----------|-----|--------|-------------------|-------|
+| nennen / benennen / beschreiben | I | 1P pro Element | 1 Begriff / 1 Satz | B4 |
+| erläutern / erklären / vergleichen | II | 2P pro Aspekt | 3-5 Sätze mit Kontext | B5 |
+| begründen | III | 3P | Argumentation + Kausalität | B5 |
+| beurteilen / bewerten / entwickeln / planen | III | 4P | Strukturierte Lösung | B6 |
+
+**Plattform-Format:** 20-30P pro Fall → ~35 Min auf Mobile (nicht die vollen 120-Min-Klausur).
+
+### Struktur pro Prüfungsfall
+
+```markdown
+# Prüfungsfall: {Titel}
+
+## Metadaten
+- pruefungsfallId: {id}
+- ceIds: [{ceId}, ...]           ← kann CE-übergreifend sein
+- voraussetzungen: [             ← ALLE müssen vom Schüler abgeschlossen sein
+    "ce-02/sturz-prophylaxe",
+    "ce-02/pflegeprozess",
+    "ce-03/kommunikation-sbar"
+  ]
+- gesamtpunkte: {20-30}P
+- zielzeitMin: ~35 Min
+
+## Patient (NEU — nicht aus Lernsituationen bekannt)
+- Name: {Vorname Nachname}
+- Alter: {N} Jahre
+- Setting: {anders als Lernsituationen}
+- Diagnosen: ...
+
+## Fallbeschreibung (~300 Wörter / ~1800 Zeichen)
+[Prüfungsnah formuliert. Alle relevanten Infos für die Aufgaben enthalten.]
+
+## Aufgaben
+
+### Aufgabe 1
+- Operator: {nennen / erläutern / begründen / planen / ...}
+- Punkte: {N}P
+- Fragetext: "..."
+- Musterlösung:
+  - {Kernaussage 1}
+  - {Kernaussage 2}
+  - {Kernaussage 3}
+- Bewertungskriterien: "Was zeigt der Schüler mit dieser Antwort?"
+
+### Aufgabe 2
+...
+```
+
+### Regeln Phase 3
+
+1. **Patient ist NEU** — nicht aus Phase-2-Situationen bekannt, anderes Setting
+2. **Voraussetzungen vollständig** — alle referenzierten Themen explizit gelistet
+3. **Falltext ~300 Wörter** — alle Infos die für Aufgaben nötig sind enthalten
+4. **4-8 Aufgaben** — Gesamt 20-30P
+5. **Bloom 4-6 Pflicht** — keine Bloom-1-3-Aufgaben im Prüfungsfall
+6. **Musterlösung als Bullet-Liste** — Kernaussagen die in der Antwort vorkommen müssen
+7. **Kein Feedback während Bearbeitung** — erst nach Abgabe aller Aufgaben
+8. **Aufgaben-Mix:** min 1× AFB I, min 2× AFB II, min 1× AFB III
+
+### K.O.-Checkliste Prüfungsfall
+
+```
+- [ ] Patient NEU (nicht aus Phase-2-Situationen)
+- [ ] Voraussetzungen-Liste vollständig
+- [ ] Falltext ~300 Wörter, prüfungsnah
+- [ ] 20-30 Gesamtpunkte
+- [ ] Bloom 4-6 für alle Aufgaben
+- [ ] Musterlösung als Kernaussagen-Liste (nicht als Freitext)
+- [ ] Bewertungskriterien pro Aufgabe
+- [ ] Mix AFB I + II + III
+- [ ] Kein Feedback-Text (feedbackMode: delayed)
+- [ ] Alle Fakten in Aufgaben aus Primärquellen belegt
+```
+
+---
+
 ## Workflow-Kontext
 
 ```
 DU (Phase 1)       → Wissensbausteine pro Thema              → 🔒 Veto
 DU (Phase 2)       → Lernsituationen (6 Phasen, Steps)       → 🔒 Veto
+DU (Phase 3)       → Prüfungsfälle mit Operatoren + Musterlösungen
 B1-Dozentin         → Inline B1 bei Stufe 3 + Situationstexte
 Generator (Sonnet)  → Markdown → TypeScript (nur Format)
 Scripts             → Automatische Kriterien
@@ -660,8 +750,9 @@ content/
 │   │   │   └── index.ts          (Barrel)
 │   │   └── ...
 │   │
-│   └── pruefung/
-│       └── pruefungsfall-plan.md → pruefungsfall.ts
+│   └── pruefung/                 ← Phase 3: Prüfungsfälle
+│       └── {pruefungsfallId}/
+│           └── pruefungsfall-plan.md → pruefungsfall.ts
 ```
 
 ---

@@ -198,6 +198,36 @@ export const mockLearnModules: LearnModule[] = [
 - **Step-Card padding**: `p-3` (Standard), `p-4` max — kompakter für mobile Screens
 - **Turbopack-Cache**: Bei "Internal Server Error" → `rm -rf .next && npm run dev`
 
+### Content-Budget + Prüfungsfall-Architektur (2026-04-22)
+
+**Budget-Scripts:**
+- `scripts/calculate-step-time.ts` — Zeit pro Step (MC, Matching, etc.)
+- `scripts/calculate-content-budget.ts` — Gesamt-Budget: Wissenstexte + Snacks + Steps + Prüfungsfall
+
+**Zwei Lernmodi:**
+- **Lernen-Modus**: Verzahnt (Wissenstext → sofort Steps → nächster Text), Bloom 1-4
+- **Prüfungs-Modus**: Langer Patientenfall + offene Fragen (freetext), Bloom 4-6, kein Feedback bis Ende
+
+**Prüfungsfall-Architektur:**
+- Eigene Entität (nicht Teil eines Themas), CE-übergreifend möglich
+- Freischaltung: ALLE referenzierten Themen müssen vom Schüler abgeschlossen sein
+- Format: `pruefungsfallId`, `voraussetzungen[]`, `aufgaben[]` mit Operator + Punkte + Musterlösung
+- Ordner: `content/ce-{NN}/pruefung/{pruefungsfallId}/pruefungsfall-plan.md`
+
+**Operator-System (PflAPrV, 100-120P pro 120-Min-Klausur):**
+- AFB I (nennen/benennen/beschreiben): 1P = ~78s mobil
+- AFB II (erläutern/erklären/vergleichen): 2P = ~156s mobil
+- AFB III (begründen): 3P = ~234s mobil
+- AFB III (beurteilen/bewerten/entwickeln/planen): 4P = ~312s mobil
+- Plattform-Format: 20-30P pro Fall → ~35 Min
+
+**Ausbildungsdrittel → CE-Mapping:**
+- 1./2. AD: CE 01-03 komplett, CE 04+05 begonnen
+- CE 01-03 haben KEINE Stunden im 3. AD
+- CE 04+05 setzen sich im 3. AD fort (je 80h/140h)
+
+**Wissen-Tab:** stilles Nachschlagewerk — zählt NICHT ins Budget, gleicher Content wie Stufe-3-Bausteine
+
 ### 6-Rollen-Review (2026-04-14)
 - **Pipeline-Kriterien**: 32 semantisch (8 K.O.) — inkl. Block LS + Block SK (UE-Skalierung)
 - **Code-Regeln**: Keine `text-[10px]` (min text-xs), keine hardcoded Hex-Farben (CSS-Vars), `aria-expanded` auf ALLE Akkordeons

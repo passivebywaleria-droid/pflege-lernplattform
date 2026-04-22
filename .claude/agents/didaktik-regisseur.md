@@ -23,9 +23,14 @@ Der Generator nach dir ist NUR ein TypeScript-Formatierer — er darf keine dida
 - `content/ce-{NN}/situationen/{situationId}/patient-plan.md`
 - Baustein-Trigger-Plan: welche Bausteine werden in welcher Phase aufgerufen
 
+### Pro Prüfungsfall (Prüfungsmodus-Sessionplan)
+- `content/ce-{NN}/pruefung/{pruefungsfallId}/pruefungsfall-plan.md` (von Dozentin Phase 3)
+- Enthält: Patienten-Fall-Text, Aufgaben mit Operator + Punkte, Musterlösungen
+
 ### Zusätzlich
 - `content/_types.ts` — 33 Step-Typen (siehe F36)
-- `scripts/calculate-step-time.ts` — Zeit-Budget-Berechnung (Zeit-Modell v3)
+- `scripts/calculate-step-time.ts` — Zeit-Budget pro Step (Zeit-Modell v3)
+- `scripts/calculate-content-budget.ts` — Gesamt-Budget (Wissenstexte + Snacks + Steps + Prüfungsfall)
 
 ---
 
@@ -38,6 +43,10 @@ Der Generator nach dir ist NUR ein TypeScript-Formatierer — er darf keine dida
 ### Pro Situation
 - `content/ce-{NN}/situationen/{situationId}/sessionsplan.md`
 - Enthält: 6 Phasen × (Kern-Steps + optionale Steps + Baustein-Trigger-Steps)
+
+### Pro Prüfungsfall
+- `content/ce-{NN}/pruefung/{pruefungsfallId}/sessionsplan.md`
+- Enthält: Falltext-Step + Aufgaben-Steps (offene Fragen, Bloom 4-6, kein Feedback bis Ende)
 
 ---
 
@@ -72,36 +81,52 @@ Bei **jedem MC-Step mit Bloom ≥ 2** gilt: **Alle Distraktoren MÜSSEN aus der 
 
 ---
 
-## Zeit-Budget-Binding (Zeit-Modell v3)
+## Zeit-Budget-Binding (Zeit-Modell v3 + Content-Budget)
 
 ### Zielzeit pro Einheit
 
 ```
-Thema:     UE × 45 Min × 0,55 = Zielzeit in Minuten
-Situation: UE × 45 Min × 0,55 = Zielzeit in Minuten
+Thema:         UE × 45 Min × 0,55 = Gesamtzeit neuer Content
+Situation:     UE × 45 Min × 0,55 = Gesamtzeit
+Prüfungsfall:  20-30P × 1,3 Min/P + Falltext-Lesezeit ≈ 35 Min
 ```
 
-**Beispiel:** Thema "Sturz-Prophylaxe" 4 UE → **99 Min** App-Content für Durchschnittsschüler.
+**Beispiel:** Thema "Sturz-Prophylaxe" 4 UE → **99 Min** App-Content.
+**Prüfungsfall** zählt NICHT ins Thema-Budget — separates Budget.
 
 ### Wie das Budget verteilt wird
 
-**Pro Thema:**
-- 40-50% auf isolierte Baustein-Lernzeit (Stufe 2 Texte + Stufe 3 Erklärungen)
-- 30-40% auf Thema-Übungs-Steps (MC, Matching, Sequencing etc.)
-- 10-20% auf Karteikarten-Erstausgabe (aktiviert FSRS-Zyklus)
+**Pro Thema (verzahnte Lernsession):**
+- Wissenstexte + Snacks: Zeichenzahl ÷ Lesegeschwindigkeit
+- Übungs-Steps: via `calculate-step-time.ts`
+- Wissen-Tab (stilles Nachschlagewerk): zählt NICHT ins Budget
 
 **Pro Situation:**
 - 100% auf 6 Phasen verteilt (je ~16-20% der Gesamtzeit)
 - Pro Phase: Kontext-Lesen + 6-12 Steps + Baustein-Trigger-Steps
 
+**Pro Prüfungsfall:**
+- Falltext lesen: ~1800 Zeichen ÷ 13,6 Z/s × Bloom-4-Faktor ≈ 3-4 Min
+- Aufgaben: Punkte × 1,3 Min/P (Mobile-Faktor)
+- Ziel: 20-30P → ~35 Min → ≈ 1 UE
+
 ### Budget-Check (Pflicht)
 
-Nach dem Sessionplan:
+Nach dem Sessionplan — unterschiedliche Scripts je nach Typ:
+
+**Thema:**
 ```bash
-npx tsx scripts/calculate-step-time.ts --sessionsplan content/ce-02/themen/sturz-prophylaxe/sessionsplan.md
+npx tsx scripts/calculate-content-budget.ts
+# Prüft: Wissenstexte + Snacks + Steps gemeinsam gegen UE-Budget
 ```
 
-**FAIL-Kriterium:** Mehr als ±20% Abweichung vom Zielbudget → Anpassen.
+**Prüfungsfall:**
+```bash
+npx tsx scripts/calculate-content-budget.ts
+# Prüft: Falltext-Lesezeit + Aufgaben-Punkte → Ziel 35 Min ±20%
+```
+
+**FAIL-Kriterium:** Mehr als ±20% Abweichung → Anpassen.
 
 ---
 
@@ -303,19 +328,83 @@ Write content/ce-{NN}/themen/{themaId}/sessionsplan.md
 
 ---
 
+## Prüfungsfall-Sessionplan (eigenes Format)
+
+Prüfungsfälle folgen NICHT dem normalen Bloom-Mapping. Andere Regeln:
+
+### Regeln Prüfungsfall
+- **Kein Erlebnis-Modus** — kein story/challenge/puzzle
+- **Kein Feedback während Bearbeitung** — `feedbackMode: "delayed"`
+- **Bloom 4-6 Pflicht** — kein Bloom 1-3
+- **Nur freetext-Steps** für Aufgaben (offene Fragen)
+- **1 Falltext-Step** am Anfang (displayFormat: `scenario`, kein Interaktionselement)
+- **1 Summary-Step** am Ende (Auswertung nach Abgabe aller Antworten)
+
+### Step-Mapping Prüfungsfall
+
+| Operator | AFB | Punkte | Step-Typ | Bloom |
+|----------|-----|--------|----------|-------|
+| nennen / benennen / beschreiben | I | 1P | freetext (kurz) | 4 |
+| erläutern / erklären / vergleichen | II | 2P | freetext (mittel) | 5 |
+| begründen | III | 3P | freetext (lang) | 5 |
+| beurteilen / bewerten / entwickeln / planen | III | 4P | freetext (lang) | 6 |
+
+### Output-Format Prüfungsfall-Sessionplan
+
+```markdown
+# Prüfungsfall-Sessionplan: {pruefungsfallId}
+
+## Metadaten
+- pruefungsfallId: {id}
+- voraussetzungen: [{themaId}, ...] — alle müssen abgeschlossen sein
+- gesamtpunkte: {N}P
+- zielzeitMin: ~{N} Min
+
+## Steps
+
+| # | Step-Typ | Operator | Punkte | Bloom | Zeit | Musterlösung-Ref |
+|---|----------|----------|--------|-------|------|-----------------|
+| 1 | text (scenario) | — | — | — | ~3 Min | — |
+| 2 | freetext | nennen | 5P | B4 | ~6 Min | ml-01 |
+| 3 | freetext | erläutern | 6P | B5 | ~8 Min | ml-02 |
+| 4 | freetext | begründen | 6P | B5 | ~8 Min | ml-03 |
+| 5 | freetext | planen | 8P | B6 | ~10 Min | ml-04 |
+| 6 | summary | — | — | — | ~2 Min | alle |
+
+## Budget-Check
+- Gesamtpunkte: {N}P
+- Zielzeit: ~{N} Min
+- Status: PASS | FAIL
+```
+
+---
+
 ## Qualitäts-Checkliste (vor Abgabe)
 
+**Thema + Situation:**
 ```
 - [ ] Bloom-Match: Jeder Step-Typ passt zum Bloom-Level
 - [ ] Distraktoren: Alle MC-Steps nutzen Misconceptions aus Dozentin B
 - [ ] Anti-Monotonie: Kein 2× gleicher Typ hintereinander
 - [ ] Modi-Rotation: Min 5 verschiedene Erlebnis-Modi
 - [ ] Step-Typ-Vielfalt: Min 8 verschiedene Typen in Situation
-- [ ] Zeit-Budget: ±20% vom Zielwert (calculate-step-time.ts)
+- [ ] Zeit-Budget: ±20% vom Zielwert (calculate-content-budget.ts)
 - [ ] Bloom-Verteilung: kein Bloom-Level >50%
 - [ ] Bild-Slots: Alle visuellen Step-Typen haben imageSlot
 - [ ] UX-Varianten: MC mit Misconceptions = fallstrick-Variante
 - [ ] Text-Verteilung: Max 3 text-Steps pro Phase, min 2 verschiedene displayFormats
+```
+
+**Prüfungsfall:**
+```
+- [ ] Nur freetext-Steps für Aufgaben (kein MC, kein Matching)
+- [ ] feedbackMode: "delayed" gesetzt
+- [ ] Bloom 4-6 für alle Aufgaben
+- [ ] Voraussetzungen-Liste vollständig (alle referenzierten Themen)
+- [ ] Gesamtpunkte 20-30P
+- [ ] Zielzeit 30-40 Min (calculate-content-budget.ts)
+- [ ] Musterlösung-Ref pro Aufgabe gesetzt
+- [ ] Patient ist NEU (nicht aus Lern-Situationen bekannt)
 ```
 
 ---

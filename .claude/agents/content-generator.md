@@ -41,6 +41,12 @@ KI-Prüfer (Opus)  → Semantische Prüfung
 | `patient.md` | `patient.ts` | Patientenbeschreibung |
 | `phasen-plan.md` | `phase-informieren.ts` ... `phase-dokumentieren.ts` | Je 1 Datei pro Pflegeprozess-Phase |
 
+### Pro Prüfungsfall (aus `content/ce-{NN}/pruefung/{pruefungsfallId}/`)
+
+| Plan-Datei | Output | Beschreibung |
+|-----------|--------|-------------|
+| `pruefungsfall-plan.md` | `pruefungsfall.ts` | Falltext + Aufgaben + Musterlösungen |
+
 ### Zusätzlich erzeugt (ohne Plan-Datei)
 
 | Datei | Quelle | Beschreibung |
@@ -85,6 +91,38 @@ KI-Prüfer (Opus)  → Semantische Prüfung
 | Import-Statements | Typen korrekt importieren |
 
 ### 3. Pflicht-Interfaces
+
+**Pro Prüfungsfall:**
+
+```typescript
+// pruefungsfall.ts
+import type { Pruefungsfall, PruefungsAufgabe } from "../../_types";
+
+export const CE{NN}_PRUEFUNGSFALL_{ID}: Pruefungsfall = {
+  pruefungsfallId: "...",
+  ceIds: ["ce-02", "ce-03"],
+  voraussetzungen: ["ce-02/sturz-prophylaxe", "ce-03/kommunikation-sbar"],
+  gesamtpunkte: 25,
+  zielzeitMin: 35,
+  feedbackMode: "delayed",        // kein Feedback bis alle Aufgaben abgegeben
+  fallTextZeichen: 1800,
+  fallText: "...",                // ~300 Wörter Patientenfall
+  aufgaben: [
+    {
+      aufgabeId: "...",
+      operator: "nennen",         // nennen | erlaeutern | begruenden | planen | ...
+      afb: 1,                     // 1 | 2 | 3
+      punkte: 5,
+      fragetext: "...",
+      musterloesung: [            // Kernaussagen die in der Antwort vorkommen müssen
+        "...",
+        "...",
+      ],
+      bewertungskriterien: "...", // Was zeigt der Schüler damit?
+    }
+  ],
+}
+```
 
 **Pro Thema:**
 
@@ -342,10 +380,15 @@ Jede Phase hat zwei Step-Arrays. **Nie mischen.**
        phase-dokumentieren.ts(CE{NN}_SIT_{SITID}_DOKUMENTIEREN: SituationsPhase)
  9. Erzeuge content/ce-{NN}/situationen/{situationId}/index.ts (Barrel)
 
+--- PRO PRÜFUNGSFALL (aus pruefung/) ---
+10. Lies content/ce-{NN}/pruefung/{pruefungsfallId}/pruefungsfall-plan.md
+    → Erzeuge pruefungsfall.ts (Export: CE{NN}_PRUEFUNGSFALL_{ID}: Pruefungsfall)
+
 --- ABSCHLUSS ---
-10. Erzeuge content/ce-{NN}/index.ts (Master-Barrel: alle Themen + Situationen)
-11. Status-Update: CE_MANIFEST → status: "steps"
-12. GATE: npx tsc --noEmit → 0 Fehler (K.O.)
+11. Erzeuge content/ce-{NN}/index.ts (Master-Barrel: alle Themen + Situationen + Prüfungsfälle)
+12. Status-Update: CE_MANIFEST → status: "steps"
+13. GATE: npx tsc --noEmit → 0 Fehler (K.O.)
+14. Budget-Check: npx tsx scripts/calculate-content-budget.ts (Themen + Prüfungsfälle)
 ```
 
 **Reihenfolge ist verbindlich** — Themen vor Situationen (Situationen referenzieren Bausteine). Master-Barrel zuletzt.

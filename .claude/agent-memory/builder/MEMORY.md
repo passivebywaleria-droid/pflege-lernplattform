@@ -1,5 +1,60 @@
 # Builder Memory
 
+## CE-02 Didaktik-Review PASS (2026-04-22)
+- **Status**: `CE_MANIFEST[ce-02].status = "geprueft"` — von "steps" auf "geprueft" erhöht
+- **Reports**:
+  - `content/ce-02/themen/sturz-prophylaxe/didaktik-report.md` — PASS (44/44 Kriterien)
+  - `content/ce-02/situationen/frau-m-nacht-sturz/didaktik-report.md` — PASS (44/44, 3 non-blocking Warnings)
+- **12 K.O.-Kriterien alle PASS**: U1 (Urheberrecht, nur Primärquellen WHO/DNQP/PRISCUS/Cochrane/§1906a), F7/F10/F11 (Fakten-Treue), B5/B6 (Didaktik), S1/S4 (6 Phasen + Patient vollständig), I7 (Sandwich), P6 (Schüler-Perspektive), M1/M2 (Bloom-Match + Misconceptions)
+- **Highlights für Folge-LEs**:
+  - Brilliant-Prinzip Step 2.1 (Medikamenten-Highlight VOR Zolpidem-Erklärung) — didaktisches Gold
+  - Confidence-Vorher-Nachher-Bogen macht Lernen sichtbar (Step 1.2 ↔ 5.3)
+  - 6 Patientenzitate bilden emotionalen Bogen (Scham → "wie in Watte" → "Es waren die Tabletten")
+  - 12 Step-Typen verteilt auf 30 Steps — keine Monotonie
+  - Feedback-Sandwich durchgehend (nie "Falsch" als Einstieg)
+- **Warnings (non-blocking)**: Bild-Schema-Empfehlungen für Hüftfraktur-Zeichen (Baustein 10) und Transfer-Schritte (Step 4.1)
+- **Nächster Schritt**: Human-Final-Review + Manifest-Status `"published"`
+
+## CE-02 Sturz-Prophylaxe + Frau-M-Situation generiert (2026-04-22, Vor-Review)
+- **13 neue .ts-Dateien** + 1 Master-Barrel-Update:
+  - Thema Sturz-Prophylaxe (4): `bausteine.ts`, `glossar.ts`, `karteikarten.ts`, `index.ts`
+  - Situation Frau-M (8): `patient.ts`, `phase-{informieren,beobachten,planen,durchfuehren,evaluieren,dokumentieren}.ts`, `index.ts`
+  - `content/ce-02/index.ts` — Master-Barrel (referenziert nur Sturz-Thema + Frau-M-Situation; Kinästhetik/Thrombose/Dekubitus als Kommentare gekennzeichnet)
+- **Export-Naming**: `CE02_THEMA_STURZ_PROPHYLAXE_*` / `CE02_SIT_FRAU_M_NACHT_STURZ_*`
+- **Content-Umfang**:
+  - 13 Wissensbausteine (alle mit Stufe 1-3: Denkfrage, Hinweis, Erklärung-ContentStep)
+  - 15 Glossar-Einträge (mit B1 + TR + AR)
+  - 13 Karteikarten (FSRS-ready)
+  - 30 Situations-Steps über 6 Phasen (5+6+5+7+4+3)
+  - 3 Branchings, 3 Freetexte, 3 Dialoge (max 4 Phasen)
+- **Wichtig — imageSlot-Fallstrick**: content-generator.md beschreibt `imageSlot: {id, type, style, prompt, altText, status, path}`, aber das Feld existiert NICHT in `ContentStep` Interface. Stattdessen: `bildkategorie: "szene"`, `imageAlt: "..."`, `bildhinweis: "<englischer Prompt mit 'absolutely no text no labels no words'>"`. Renderer nutzt diese Felder.
+- **Validierung**: TypeScript 0 Fehler, 387 Tests PASS, Build PASS, Umlaut-Check (.ts only) PASS
+- **Misconceptions-Pipeline**: Alle MC-Distraktoren kommen aus dem Bausteine-Plan (D1/D2/D3 pro Baustein). Feedback ist pro Option spezifisch (Sandwich: Validierung + Korrektur + Ermutigung).
+
+## LE-06 Umlaut-Fix + Hotspot-imageUrl (2026-04-16)
+- **Blocker 1**: Umlaute in steps-s1..s6 (ASCII → Unicode)
+  - Script: `scripts/fix-le06-umlaute.py` — Whitelist mit ~260 Wortpaaren
+  - Strategie: Whole-word-replacement global (keine Keys/Props betroffen)
+  - Ersetzte Begriffe: Maßnahme, Körper, Rücken, Hüft, Höhe, Prädilektion, Rötung, Schädigung, Ernährung, Übung, für/Für, über/Über, müssen, können, Stürze, Drück, ausfüllen, schläft, würde, gebückt, Flüssigkeit, Lücken, Schlüssel, Gefährd/gefährlich, Vollständig, Fällt, Gespräch, Prüfe, Fülle uvm.
+  - Nicht angetastet: "Masse/Massen" (Kinästhetik-Fachbegriff, mehrdeutig), "Paediatrie", Property-Keys (z.B. `minMassnahmenProProphylaxe`), Step-Typ-Werte (`sequencing`, `truefalse`, `crossword`)
+  - Rest: 0 deutsche ae/oe/ue-Wörter in Strings; verbleibend nur "Influenza", "sequencing" (Keys), "Risikoeinschätzung" (false positive durch ss)
+- **Blocker 3**: Hotspot in `le-06-s4-tb13-04` (Rückenlage) + `le-06-s4-tb13-05` (Seitenlage)
+  - Falsches Schema: `question.hotspots[]` mit `{id,x,y,label,correct}` → wurde im Renderer ignoriert (return null)
+  - Gefixt: `question.hotspot = { imageUrl, imageAlt, instruction, zones[{id,x,y,radius:8,label}] }`
+  - Placeholder-Pfade: `/images/content/le-06/hotspot-koerper-rueckenlage.svg` + `-seitenlage.svg`
+- Validierung: `npx tsc --noEmit` = 0 Fehler, `npm run build` = PASS, 314 Tests PASS
+- Backups: `/tmp/le06-s{1-6}-pre-umlaut.ts`
+
+## LE-06 TypeScript-Schema-Fixes (2026-04-16)
+- **306 → 0 Fehler** in `content/le-06/steps-s2.ts` bis `steps-s6.ts`
+- 3 Python-Scripts fuer systematische Transformation:
+  - `scripts/fix-le06-types.py` — Hauptscript mit `find_balanced_block` Parser (306 → 77)
+  - `scripts/fix-le06-types-v2.py` — 77 → 16 (DialogPhase situation→context, CategoryDef id entfernen, ComparisonColumn Strings wrappen, LabelImageLabel id→string, Reflection/Matrix/Diagram Pflichtfelder)
+  - `scripts/fix-le06-types-v3.py` — 16 → 0 (DialogPhase question→context mergen, DiagramData connections→edges)
+- Transformationen: ThemenblockPhase (einstieg→SZENE, erarbeitung→ERKLAERUNG, vertiefung/transfer→ANWENDUNG), Swipe-Blocks (leftLabel/rightLabel/items → instruction/cards), Estimation/Slider (zielwert→correctValue, einheit→unit, toleranz→tolerance, feedback→explanation), Reveal (items→cards, revealMode "free"), Hotspot (hotspots→zones), LabelImage (x/y/text → correct/position), Comparison (columns id entfernen, rows label→criterion, values Object→Array), Categorize (categories label→name, id→index, categoryId→correctCategory:N), Matrix (columns→axisX/axisY, add correctQuadrant), Cloze (alternatives→distractors, id String→Number, sentence→textWithBlanks), DialogPhase (id/question/questionB1/situation entfernen/mergen)
+- Alle 5 Dateien laden TypeScript-konform + runtime
+- Backups: `/tmp/le06-s{2-6}-pre-v{2,3}.ts`
+
 ## LE-01 Steps S1-S4 generiert (2026-03-30)
 - `content/le-01/steps-s1.ts` — 22 Steps, "Was ist Pflege?", B1-B3, Yasemin Tag 1
   - Brilliant: Step 2 Swipe (Anticipation Guide VOR Erklaerung)
