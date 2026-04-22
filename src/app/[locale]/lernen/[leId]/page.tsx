@@ -586,7 +586,7 @@ export default function LernenPage() {
 
   return (
     <div
-      className="h-dvh bg-[var(--lern-bg)] flex flex-col overflow-hidden"
+      className="h-[100svh] bg-[var(--lern-bg)] flex flex-col overflow-hidden"
     >
       {/* Top Bar */}
       <div className="shrink-0 z-50 bg-[var(--lern-topbar-bg)] backdrop-blur-xl border-b border-[var(--lern-border)]/50">
@@ -711,7 +711,7 @@ export default function LernenPage() {
       </div>
 
       {/* === SCROLLABLE CONTENT AREA === */}
-      <div ref={navigation.containerRef} className="flex-1 min-h-0 overflow-y-auto">
+      <div ref={navigation.containerRef} data-scroll-container className="flex-1 min-h-0 overflow-y-auto">
 
       {/* === TAB CONTENT === */}
 

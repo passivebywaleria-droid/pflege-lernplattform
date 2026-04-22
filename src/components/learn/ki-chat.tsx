@@ -30,7 +30,33 @@ export function KiChat({ leTitle, stepTitle, stepBody, glossar, sprachLevel, rec
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  // Auto-hide beim Scrollen nach unten, wieder einblenden beim Scrollen nach oben
+  useEffect(() => {
+    const scrollContainer = document.querySelector<HTMLElement>("[data-scroll-container]");
+    const target = scrollContainer ?? window;
+    let lastY = scrollContainer ? scrollContainer.scrollTop : window.scrollY;
+    let ticking = false;
+
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const y = scrollContainer ? scrollContainer.scrollTop : window.scrollY;
+        const delta = y - lastY;
+        if (Math.abs(delta) > 10) {
+          setHidden(delta > 0 && y > 100);
+          lastY = y;
+        }
+        ticking = false;
+      });
+    };
+
+    target.addEventListener("scroll", onScroll, { passive: true });
+    return () => target.removeEventListener("scroll", onScroll);
+  }, []);
 
   const userMessageCount = messages.filter((m) => m.role === "user").length;
   const remainingMessages = MAX_MESSAGES - userMessageCount;
@@ -82,11 +108,13 @@ export function KiChat({ leTitle, stepTitle, stepBody, glossar, sprachLevel, rec
       {/* Floating Action Button */}
       <button
         onClick={() => setOpen(true)}
-        className="fixed bottom-20 right-6 z-30 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--lern-accent)] text-white shadow-lg transition-all active:scale-95 hover:bg-[#B07A72]"
+        className={`fixed bottom-[96px] right-3 z-30 flex h-10 w-10 items-center justify-center rounded-full bg-[var(--lern-accent)] text-white shadow-md transition-all duration-300 active:scale-95 hover:bg-[#B07A72] ${
+          hidden ? "translate-y-24 opacity-0 pointer-events-none" : "translate-y-0 opacity-100"
+        }`}
       >
         <svg
-          width="24"
-          height="24"
+          width="18"
+          height="18"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"

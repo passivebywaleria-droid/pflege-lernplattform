@@ -64,9 +64,34 @@ function zufaelligeAntwort(): string {
 
 export function LehrerChat({ lernKontext }: LehrerChatProps) {
   const [open, setOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const [nachrichten, setNachrichten] = useState<LehrerNachricht[]>([]);
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
+
+  useEffect(() => {
+    const scrollContainer = document.querySelector<HTMLElement>("[data-scroll-container]");
+    const target = scrollContainer ?? window;
+    let lastY = scrollContainer ? scrollContainer.scrollTop : window.scrollY;
+    let ticking = false;
+
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const y = scrollContainer ? scrollContainer.scrollTop : window.scrollY;
+        const delta = y - lastY;
+        if (Math.abs(delta) > 10) {
+          setHidden(delta > 0 && y > 100);
+          lastY = y;
+        }
+        ticking = false;
+      });
+    };
+
+    target.addEventListener("scroll", onScroll, { passive: true });
+    return () => target.removeEventListener("scroll", onScroll);
+  }, []);
   const scrollRef = useRef<HTMLDivElement>(null);
   const [loaded, setLoaded] = useState(false);
 
@@ -149,13 +174,15 @@ export function LehrerChat({ lernKontext }: LehrerChatProps) {
             return next;
           });
         }}
-        className="fixed bottom-20 left-6 z-30 flex h-12 w-12 items-center justify-center rounded-full bg-[#6B8F71] text-white shadow-lg transition-all active:scale-95 hover:bg-[#5A7D5F]"
+        className={`fixed bottom-[96px] left-3 z-30 flex h-10 w-10 items-center justify-center rounded-full bg-[#6B8F71] text-white shadow-md transition-all duration-300 active:scale-95 hover:bg-[#5A7D5F] ${
+          hidden ? "translate-y-24 opacity-0 pointer-events-none" : "translate-y-0 opacity-100"
+        }`}
         title="Lehrer fragen"
       >
         {/* Person-Icon */}
         <svg
-          width="22"
-          height="22"
+          width="18"
+          height="18"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"

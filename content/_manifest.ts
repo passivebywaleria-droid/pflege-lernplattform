@@ -108,6 +108,7 @@ export const CE_MANIFEST: CEManifestEntry[] = [
     ],
     situationen: [
       // Spirale 1
+      "frau-m-nacht-sturz", // ✅ PILOT — fertig produziert durch Pipeline v9
       "ls-yilmaz-hueft-tep",
       "ls-bauer-demenz-sturz",
       "ls-emilia-saeugling",
@@ -122,7 +123,7 @@ export const CE_MANIFEST: CEManifestEntry[] = [
       // Spirale 4
       "ls-pruefung-ce02",
     ],
-    status: "geprueft",
+    status: "published",
     sortOrder: 2,
   },
   // Neue CEs hier eintragen
