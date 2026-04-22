@@ -39,10 +39,10 @@ function FallKarte({
   return (
     <button
       onClick={onClick}
-      className={`flex-shrink-0 rounded-xl p-2.5 text-left transition-all active:scale-[0.98] ${
+      className={`flex-shrink-0 rounded-xl p-2.5 text-left transition-all active:scale-[0.98] border-[1.5px] ${
         isActive
-          ? "bg-[var(--lern-accent)]/10 border-[1.5px] border-[var(--lern-accent)]/40"
-          : "bg-[var(--lern-card-bg)] border border-[var(--lern-border)]"
+          ? "bg-[var(--lern-accent)]/10 border-[var(--lern-accent)]/40"
+          : "bg-[var(--lern-card-bg)] border-[var(--lern-border)]"
       }`}
       style={{ minWidth: "140px", maxWidth: "180px" }}
     >
@@ -101,7 +101,7 @@ function StationCard({
       {/* Timeline-Linie + Dot */}
       <div className="flex flex-col items-center">
         <div
-          className={`flex h-8 w-8 items-center justify-center rounded-full border-2 ${
+          className={`flex h-8 w-8 items-center justify-center rounded-full border-[1.5px] ${
             istGesperrt
               ? "border-[var(--lern-divider)] bg-[var(--lern-card-bg)]"
               : istErsteStation

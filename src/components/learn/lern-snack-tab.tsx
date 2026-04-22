@@ -115,7 +115,7 @@ export function LernSnackTab({ snacks: rawSnacks, sprachLevel, leId }: LernSnack
         return (
           <div
             key={snack.kapitelId}
-            className="overflow-hidden rounded-lg border"
+            className="overflow-hidden rounded-2xl border-[1.5px]"
             style={{ borderColor: "var(--lern-border)", backgroundColor: "var(--lern-card)" }}
           >
             {/* Kapitel-Header */}
