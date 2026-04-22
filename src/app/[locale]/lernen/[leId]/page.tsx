@@ -707,7 +707,7 @@ export default function LernenPage() {
               <p className="text-xs text-[var(--lern-text-tertiary)]">Aufgabe {inlineStepIndex + 1} / {inlinePlayback.steps.length}</p>
             </div>
           </div>
-          <div className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-3 shadow-sm">
+          <div className="rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-3 shadow-sm">
             <StepRenderer
               step={inlinePlayback.steps[inlineStepIndex]}
               sprachLevel={adaptive.sprachLevel}
@@ -756,7 +756,7 @@ export default function LernenPage() {
               <p className="text-xs text-[var(--lern-text-tertiary)]">Aufgabe {inlineStepIndex + 1} / {inlinePlayback.steps.length}</p>
             </div>
           </div>
-          <div className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-3 shadow-sm">
+          <div className="rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-3 shadow-sm">
             <StepRenderer
               step={inlinePlayback.steps[inlineStepIndex]}
               sprachLevel={adaptive.sprachLevel}
@@ -1081,7 +1081,7 @@ export default function LernenPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-4 shadow-sm"
+            className="rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-4 shadow-sm"
           >
             {/* Session-Nummer */}
             <div className="mb-4 flex items-center gap-2">
@@ -1262,8 +1262,6 @@ export default function LernenPage() {
               exit={{ opacity: 0, x: -40 }}
               transition={{ ease: [0.4, 0, 0.2, 1], duration: 0.35 }}
             >
-              <PhaseLabel phase={step.themenblockPhase as ThemenblockPhase | undefined} />
-
               <LeitfallBanner
                 fallbezug={
                   (adaptive.sprachLevel === "b1" && step.contentB1?.fallbezug)
@@ -1275,8 +1273,9 @@ export default function LernenPage() {
 
               <PraxisTipp phase={step.themenblockPhase as ThemenblockPhase | undefined} />
 
-              {/* Step-Card: Visueller Rahmen um jeden Step */}
-              <div className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-3 shadow-sm">
+              {/* Step-Card: Visueller Rahmen um jeden Step. Badge innen, oben. */}
+              <div className="rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-3 shadow-sm">
+                <PhaseLabel phase={step.themenblockPhase as ThemenblockPhase | undefined} />
                 <StepRenderer
                   step={step}
                   sprachLevel={adaptive.sprachLevel}
