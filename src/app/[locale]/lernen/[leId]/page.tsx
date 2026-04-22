@@ -1383,16 +1383,15 @@ function PhaseLabel({ phase }: { phase?: ThemenblockPhase }) {
   const config = PHASE_LABELS[phase];
   if (!config) return null;
   return (
-    <div className="mb-3">
+    <div className="mb-2">
       <span
-        className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold"
+        className="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium"
         style={{
           backgroundColor: `${config.color}10`,
           color: config.color,
-          border: `1px solid ${config.color}25`,
         }}
       >
-        <span>{config.icon}</span>
+        <span className="text-[10px]">{config.icon}</span>
         {config.label}
       </span>
     </div>

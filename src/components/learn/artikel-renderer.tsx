@@ -686,9 +686,9 @@ function KapitelAccordion({
       : kapitel.zusammenfassung;
 
   const tagColors: Record<string, string> = {
-    anatomie: "bg-blue-100 text-blue-700",
-    pflege: "bg-green-100 text-green-700",
-    krankheitslehre: "bg-orange-100 text-orange-700",
+    anatomie: "bg-[#7A93A8]/10 text-[#7A93A8]",
+    pflege: "bg-[#6B8F71]/10 text-[#6B8F71]",
+    krankheitslehre: "bg-[#C4877F]/10 text-[#C4877F]",
   };
 
   // Filtere Glossar-Einträge auf dieses Kapitel

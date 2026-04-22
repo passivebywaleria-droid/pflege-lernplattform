@@ -12,9 +12,9 @@ interface LernSnackTabProps {
 }
 
 const TAG_COLORS: Record<string, string> = {
-  pflege: "bg-blue-100 text-blue-700",
-  anatomie: "bg-green-100 text-green-700",
-  krankheitslehre: "bg-red-100 text-red-700",
+  pflege: "bg-[#6B8F71]/10 text-[#6B8F71]",
+  anatomie: "bg-[#7A93A8]/10 text-[#7A93A8]",
+  krankheitslehre: "bg-[#C4877F]/10 text-[#C4877F]",
 };
 
 function storageKey(leId: string, itemId: string): string {
@@ -125,7 +125,7 @@ export function LernSnackTab({ snacks: rawSnacks, sprachLevel, leId }: LernSnack
               className="flex w-full items-center justify-between px-4 py-3 text-left"
             >
               <div className="flex items-center gap-2">
-                <span className={`inline-block rounded px-1.5 py-0.5 text-xs font-medium ${TAG_COLORS[snack.tag] ?? "bg-gray-100 text-gray-700"}`}>
+                <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${TAG_COLORS[snack.tag] ?? "bg-gray-100 text-gray-700"}`}>
                   {snack.tag}
                 </span>
                 <span className="text-sm font-medium" style={{ color: "var(--lern-text)" }}>
