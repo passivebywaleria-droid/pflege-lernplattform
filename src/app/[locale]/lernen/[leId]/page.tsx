@@ -30,7 +30,7 @@ import { useDarkModeStore, useDarkModeInit } from "@/hooks/use-dark-mode";
 import { useMutterspracheStore, useMutterspracheInit } from "@/hooks/use-muttersprache";
 import { MutterspracheModal } from "@/components/learn/muttersprache-modal";
 import { ScaffoldingOverlay } from "@/components/learn/scaffolding-overlay";
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon, BookOpen } from "lucide-react";
 import { getMotivationsText, resetMotivationsTracking } from "@/lib/motivation";
 import { LeTabs } from "@/components/learn/le-tabs";
 import type { LeTab } from "@/components/learn/le-tabs";
@@ -588,106 +588,58 @@ export default function LernenPage() {
     <div
       className="h-[100svh] bg-[var(--lern-bg)] flex flex-col overflow-hidden"
     >
-      {/* Top Bar */}
+      {/* Top Bar — kompakt (2 Zeilen: Titel/Navigation + Progress) */}
       <div className="shrink-0 z-50 bg-[var(--lern-topbar-bg)] backdrop-blur-xl border-b border-[var(--lern-border)]/50">
-        <div className="mx-auto max-w-2xl px-4 py-2">
-          {/* Breadcrumb: CE > LE > Session */}
-          <div className="flex items-center gap-1 mb-1 text-xs">
+        <div className="mx-auto max-w-2xl px-3 py-2">
+          {/* Zeile 1: Titel + Session | Step-Counter + Glossar + Dark */}
+          <div className="flex items-center justify-between gap-2 mb-1.5 relative">
             <button
-              onClick={() => setShowLeDrawer(true)}
-              className="font-medium text-[#C4877F] active:opacity-60 truncate max-w-[80px]"
+              onClick={() => (availableSessions.length > 1 ? setShowPfadPicker(true) : setShowLeDrawer(true))}
+              className="flex items-center gap-1 min-w-0 flex-1 active:opacity-60"
             >
-              {metadata?.ceId?.replace("ce-", "CE ").toUpperCase() ?? "CE"}
-            </button>
-            <span className="text-[var(--lern-text-tertiary)]">›</span>
-            <button
-              onClick={() => setShowLeDrawer(true)}
-              className="font-medium text-[#C4877F] active:opacity-60 truncate max-w-[140px]"
-            >
-              {metadata?.titleShort ?? leId}
-            </button>
-            <span className="text-[var(--lern-text-tertiary)]">›</span>
-            {hasPfadLabels ? (
-              <button
-                onClick={() => setShowPfadPicker(true)}
-                className="flex items-center gap-1 rounded-full bg-[#C4877F]/10 px-2.5 py-0.5 text-xs font-semibold text-[#C4877F] active:opacity-60 transition-all"
-              >
-                {getSessionTitle(activeSession)} ▾
-              </button>
-            ) : availableSessions.length > 1 ? (
-              <div className="flex gap-1">
-                {availableSessions.map((s) => (
-                  <button
-                    key={s}
-                    onClick={() => switchSession(s)}
-                    className={`rounded-full px-2 py-0.5 text-xs font-semibold transition-all ${
-                      activeSession === s
-                        ? "bg-[#C4877F] text-white"
-                        : "text-[var(--lern-text-tertiary)] active:opacity-60"
-                    }`}
-                  >
-                    S{s}
-                  </button>
-                ))}
-              </div>
-            ) : (
-              <span className="text-[var(--lern-text-primary)] font-semibold">S{activeSession}</span>
-            )}
-            <div className="flex-1" />
-            {/* Track-Badge (nur wenn Vertiefungs-Steps existieren UND Schüler Checkpoint A hatte oder bereits umgeschaltet) */}
-            {session.allStepsRef.current.some((s) => s.track === "vertiefung") &&
-              (navigation.lastCheckpointScore === "A" || activeTrack !== "all") && (
-              <button
-                onClick={() => toggleTrack(activeTrack === "all" ? "basis" : "all")}
-                className={`text-xs font-semibold px-2 py-0.5 rounded-full mr-2 transition-colors ${
-                  activeTrack === "all"
-                    ? "bg-[#9B7EA6]/10 text-[#9B7EA6]"
-                    : "bg-[var(--lern-card-bg)] text-[var(--lern-text-tertiary)]"
-                }`}
-              >
-                {activeTrack === "all" ? "Alle Steps" : "Basis"}
-              </button>
-            )}
-            <button
-              onClick={toggleDarkMode}
-              className="flex items-center justify-center w-7 h-7 rounded-full bg-[var(--lern-card-bg)] active:scale-95 transition-transform shrink-0"
-              aria-label={isDark ? "Helles Design aktivieren" : "Dunkles Design aktivieren"}
-            >
-              {isDark ? <Sun size={14} className="text-[var(--lern-text-secondary)]" /> : <Moon size={14} className="text-[var(--lern-text-secondary)]" />}
-            </button>
-            <button
-              onClick={() => setShowGlossar(!showGlossar)}
-              className="text-xs font-medium text-[#C4877F] active:opacity-60 shrink-0"
-            >
-              Glossar
-            </button>
-          </div>
-
-          <div className="flex items-center justify-between mb-0.5 relative">
-            <div className="flex items-center gap-2">
-              {navigation.currentStep > 0 && (
-                <button
-                  onClick={navigation.goPrev}
-                  className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[var(--lern-card-bg)] text-[var(--lern-text-secondary)] active:scale-95 transition-transform"
-                  aria-label="Zurück"
-                >
-                  ‹
-                </button>
+              <span className="truncate text-sm font-semibold text-[var(--lern-text-primary)]">
+                {metadata?.titleShort ?? leId}
+              </span>
+              {availableSessions.length > 1 && (
+                <>
+                  <span className="text-[var(--lern-text-tertiary)] text-xs mx-0.5 shrink-0">·</span>
+                  <span className="text-xs font-semibold text-[#C4877F] shrink-0">
+                    S{activeSession}
+                  </span>
+                  <span className="text-[var(--lern-text-tertiary)] text-[10px] shrink-0">▾</span>
+                </>
               )}
-              <StreakBadge streak={navigation.streak} />
               {adaptive.sprachLevel === "b1" && (
-                <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-[#6B8F71]/10 text-[#6B8F71]">
-                  Einfache Sprache
+                <span className="ml-1 text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-[#6B8F71]/10 text-[#6B8F71] shrink-0">
+                  B1
                 </span>
               )}
-            </div>
-            <div className="flex items-center gap-2">
-              <SessionXpCounter sessionXp={gamification.sessionXp} />
+            </button>
+            <div className="flex items-center gap-1.5 shrink-0">
               <button
                 onClick={() => setShowStepNav(true)}
-                className="text-xs text-[#C4877F] font-medium active:opacity-60"
+                className="text-xs text-[#C4877F] font-medium active:opacity-60 px-1 tabular-nums"
+                aria-label="Zu Step springen"
               >
-                {navigation.currentStep + 1} / {steps.length}
+                {navigation.currentStep + 1}/{steps.length}
+              </button>
+              <button
+                onClick={() => setShowGlossar(!showGlossar)}
+                className="w-7 h-7 flex items-center justify-center rounded-full bg-[var(--lern-card-bg)] active:scale-95 transition-transform"
+                aria-label="Glossar öffnen"
+              >
+                <BookOpen size={13} className="text-[var(--lern-text-secondary)]" />
+              </button>
+              <button
+                onClick={toggleDarkMode}
+                className="w-7 h-7 flex items-center justify-center rounded-full bg-[var(--lern-card-bg)] active:scale-95 transition-transform"
+                aria-label={isDark ? "Helles Design" : "Dunkles Design"}
+              >
+                {isDark ? (
+                  <Sun size={13} className="text-[var(--lern-text-secondary)]" />
+                ) : (
+                  <Moon size={13} className="text-[var(--lern-text-secondary)]" />
+                )}
               </button>
             </div>
             <XpPop
@@ -698,8 +650,8 @@ export default function LernenPage() {
             />
           </div>
 
-          {/* Progress bar */}
-          <div className="h-1.5 rounded-full bg-[var(--lern-card-bg)]">
+          {/* Zeile 2: Progress-Bar */}
+          <div className="h-1 rounded-full bg-[var(--lern-card-bg)] overflow-hidden">
             <motion.div
               className="h-full rounded-full bg-[#C4877F]"
               initial={{ width: 0 }}
