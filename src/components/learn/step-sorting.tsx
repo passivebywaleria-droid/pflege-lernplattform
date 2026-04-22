@@ -1,10 +1,26 @@
 "use client";
 
-import { useState, useCallback } from "react";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import {
+  DndContext,
+  closestCenter,
+  PointerSensor,
+  TouchSensor,
+  useSensor,
+  useSensors,
+  type DragEndEvent,
+} from "@dnd-kit/core";
+import {
+  SortableContext,
+  verticalListSortingStrategy,
+  useSortable,
+  arrayMove,
+} from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
+import { motion, AnimatePresence } from "framer-motion";
 import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
-import { generiereSandwichFeedback, SandwichFeedbackDisplay } from "./bloom-feedback";
+import { GripVertical } from "lucide-react";
 
 interface StepSortingProps {
   title: string;
@@ -15,6 +31,71 @@ interface StepSortingProps {
   onNext: (correct: boolean) => void;
 }
 
+function SortableItem({
+  id,
+  pos,
+  label,
+  submitted,
+  isCorrect,
+  glossar,
+}: {
+  id: string;
+  pos: number;
+  label: string;
+  submitted: boolean;
+  isCorrect: boolean;
+  glossar: GlossarEntry[];
+}) {
+  const { attributes, listeners, setNodeRef, transform, transition, isDragging } =
+    useSortable({ id, disabled: submitted });
+
+  const style = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+    zIndex: isDragging ? 50 : undefined,
+    opacity: isDragging ? 0.85 : 1,
+  };
+
+  const borderColor = submitted
+    ? isCorrect ? "border-[#6B8F71]" : "border-[#C96B5C]"
+    : isDragging ? "border-[#C4877F]" : "border-[var(--lern-border)]";
+
+  const bgColor = submitted
+    ? isCorrect ? "bg-[#6B8F71]/5" : "bg-[#C96B5C]/5"
+    : isDragging ? "bg-[#C4877F]/5" : "bg-[var(--lern-bg-primary)]";
+
+  const numBg = submitted
+    ? isCorrect ? "bg-[#6B8F71] text-white" : "bg-[#C96B5C] text-white"
+    : "bg-[var(--lern-card-bg,#f5f5f7)] text-[var(--lern-text-secondary)]";
+
+  return (
+    <div
+      ref={setNodeRef}
+      style={style}
+      className={`flex items-center gap-3 rounded-xl border-[1.5px] ${borderColor} ${bgColor} p-3 transition-colors select-none`}
+    >
+      <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ${numBg}`}>
+        {submitted ? (isCorrect ? "✓" : pos + 1) : pos + 1}
+      </span>
+
+      <p className="flex-1 text-sm font-medium text-[var(--lern-text-primary)] leading-snug">
+        <FachbegriffText glossar={glossar}>{renderBold(label) as unknown as string}</FachbegriffText>
+      </p>
+
+      {!submitted && (
+        <button
+          {...attributes}
+          {...listeners}
+          className="shrink-0 touch-none cursor-grab active:cursor-grabbing rounded-lg p-1.5 text-[var(--lern-text-tertiary,#8e8e93)] hover:text-[var(--lern-text-secondary)] hover:bg-[var(--lern-card-bg)]"
+          aria-label="Ziehen um Position zu ändern"
+        >
+          <GripVertical size={18} />
+        </button>
+      )}
+    </div>
+  );
+}
+
 export function StepSorting({
   title,
   body,
@@ -23,147 +104,133 @@ export function StepSorting({
   glossar,
   onNext,
 }: StepSortingProps) {
-  const [order, setOrder] = useState(() => {
-    const indices = items.map((_, i) => i);
-    for (let i = indices.length - 1; i > 0; i--) {
+  // IDs = "item-0", "item-1", ... (shuffle on init)
+  const [order, setOrder] = useState<string[]>(() => {
+    const ids = items.map((_, i) => `item-${i}`);
+    for (let i = ids.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [indices[i], indices[j]] = [indices[j], indices[i]];
+      [ids[i], ids[j]] = [ids[j], ids[i]];
     }
-    return indices;
+    return ids;
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const moveUp = useCallback(
-    (pos: number) => {
-      if (submitted || pos === 0) return;
-      setOrder((prev) => {
-        const next = [...prev];
-        [next[pos - 1], next[pos]] = [next[pos], next[pos - 1]];
-        return next;
-      });
-    },
-    [submitted],
+  const sensors = useSensors(
+    useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
+    useSensor(TouchSensor, { activationConstraint: { delay: 100, tolerance: 5 } }),
   );
 
-  const moveDown = useCallback(
-    (pos: number) => {
-      if (submitted || pos === order.length - 1) return;
+  function handleDragEnd(event: DragEndEvent) {
+    const { active, over } = event;
+    if (over && active.id !== over.id) {
       setOrder((prev) => {
-        const next = [...prev];
-        [next[pos], next[pos + 1]] = [next[pos + 1], next[pos]];
-        return next;
+        const oldIndex = prev.indexOf(String(active.id));
+        const newIndex = prev.indexOf(String(over.id));
+        return arrayMove(prev, oldIndex, newIndex);
       });
-    },
-    [submitted, order.length],
-  );
+    }
+  }
 
-  const isCorrect = order.every((val, idx) => val === idx);
-  const correctPositions = order.map((val, idx) => val === idx);
+  const isFullyCorrect = order.every((id, idx) => id === `item-${idx}`);
+  const correctCount = order.filter((id, idx) => id === `item-${idx}`).length;
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
-      <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
-        {title}
-      </h2>
+    <div className="flex flex-col h-full" style={{ color: "var(--lern-text-primary)" }}>
+      <div className="flex-1 min-h-0 overflow-y-auto space-y-4 pb-2">
+        <h2 className="text-base font-bold">{title}</h2>
 
-      {body && (
-        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
-          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
+        {body && (
+          <p className="text-sm text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
+            <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
+          </p>
+        )}
+
+        <p className="text-sm font-medium">
+          <FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText>
         </p>
-      )}
 
-      <p className="text-sm font-medium text-[var(--lern-text-primary)]">
-        <FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText>
-      </p>
+        {!submitted && (
+          <p className="text-xs text-[var(--lern-text-secondary)] flex items-center gap-1">
+            <GripVertical size={12} className="shrink-0" />
+            Halte und ziehe zum Sortieren
+          </p>
+        )}
 
-      <p className="text-sm text-[var(--lern-text-secondary)]">
-        Nutze die Pfeile, um die Reihenfolge zu ändern.
-      </p>
+        <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+          <SortableContext items={order} strategy={verticalListSortingStrategy}>
+            <div className="space-y-2">
+              {order.map((id, pos) => {
+                const itemIdx = parseInt(id.replace("item-", ""));
+                return (
+                  <SortableItem
+                    key={id}
+                    id={id}
+                    pos={pos}
+                    label={items[itemIdx]}
+                    submitted={submitted}
+                    isCorrect={id === `item-${pos}`}
+                    glossar={glossar ?? []}
+                  />
+                );
+              })}
+            </div>
+          </SortableContext>
+        </DndContext>
 
-      <div className="space-y-2" role="list" aria-label="Sortierbare Elemente">
-        {order.map((itemIdx, pos) => (
-          <motion.div
-            key={itemIdx}
-            layout
-            role="listitem"
-            aria-label={`Position ${pos + 1}: ${items[itemIdx]}`}
-            transition={{ type: "spring", stiffness: 500, damping: 35 }}
-            className={`flex items-center gap-3 rounded-xl border-[1.5px] p-3 transition-colors ${
-              submitted && correctPositions[pos]
-                ? "border-[#6B8F71] bg-[#6B8F71]/5"
-                : submitted && !correctPositions[pos]
-                  ? "border-[#C96B5C] bg-[#C96B5C]/5"
-                  : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)]"
-            }`}
-          >
-            <span
-              className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-bold ${
-                submitted && correctPositions[pos]
-                  ? "bg-[#6B8F71] text-white"
-                  : submitted && !correctPositions[pos]
-                    ? "bg-[#C96B5C] text-white"
-                    : "bg-[var(--lern-card-bg)] text-[var(--lern-text-secondary)]"
+        <AnimatePresence>
+          {submitted && (
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              className={`rounded-2xl p-4 ${
+                isFullyCorrect
+                  ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+                  : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
               }`}
             >
-              {pos + 1}
-            </span>
-
-            <p className="flex-1 text-sm font-medium text-[var(--lern-text-primary)]">
-              {renderBold(items[itemIdx])}
-            </p>
-
-            {!submitted && (
-              <div className="flex flex-col gap-1">
-                <button
-                  onClick={() => moveUp(pos)}
-                  disabled={pos === 0}
-                  aria-label={`${items[itemIdx]} nach oben verschieben`}
-                  className="rounded-lg bg-[var(--lern-card-bg)] px-2 py-1 text-xs disabled:opacity-30 active:bg-[var(--lern-border)] focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2"
-                >
-                  ▲
-                </button>
-                <button
-                  onClick={() => moveDown(pos)}
-                  disabled={pos === order.length - 1}
-                  aria-label={`${items[itemIdx]} nach unten verschieben`}
-                  className="rounded-lg bg-[var(--lern-card-bg)] px-2 py-1 text-xs disabled:opacity-30 active:bg-[var(--lern-border)] focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2"
-                >
-                  ▼
-                </button>
-              </div>
-            )}
-          </motion.div>
-        ))}
+              <p className="font-semibold text-sm">
+                {isFullyCorrect
+                  ? "Perfekte Reihenfolge! ✓"
+                  : `${correctCount} von ${items.length} an der richtigen Position`}
+              </p>
+              {!isFullyCorrect && (
+                <div className="mt-2">
+                  <p className="text-xs text-[var(--lern-text-secondary)] mb-1">Richtige Reihenfolge:</p>
+                  <ol className="space-y-0.5">
+                    {items.map((item, i) => (
+                      <li key={i} className="text-xs text-[var(--lern-text-primary)]/70">
+                        {i + 1}. {item}
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              )}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
-      {!submitted ? (
-        <button
-          onClick={() => setSubmitted(true)}
-          aria-label="Reihenfolge prüfen"
-          className="w-full rounded-2xl bg-[#C4877F] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2"
-        >
-          Prüfen
-        </button>
-      ) : (
-        <div className="space-y-4">
-          <SandwichFeedbackDisplay
-            feedback={generiereSandwichFeedback(
-              isCorrect,
-              isCorrect ? "" : `${correctPositions.filter(Boolean).length} von ${items.length} an der richtigen Position`,
-              isCorrect ? "Perfekte Reihenfolge!" : undefined,
-            )}
-            correct={isCorrect}
-          />
-
+      <div className="shrink-0 pt-3">
+        {!submitted ? (
           <button
-            onClick={() => onNext(isCorrect)}
-            aria-label="Weiter zum nächsten Schritt"
-            className="w-full rounded-2xl bg-[#C4877F] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2"
+            onClick={() => setSubmitted(true)}
+            className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+            style={{ backgroundColor: "#C4877F" }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#B07A72")}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#C4877F")}
+          >
+            Prüfen
+          </button>
+        ) : (
+          <button
+            onClick={() => onNext(isFullyCorrect)}
+            className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+            style={{ backgroundColor: isFullyCorrect ? "#6B8F71" : "#C96B5C" }}
           >
             Weiter
           </button>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

@@ -114,7 +114,8 @@ export function StepSwipe({
       : card.statement;
 
   return (
-    <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }}>
+    <div className="flex flex-col h-full" style={{ color: "var(--lern-text-primary)" }}>
+      <div className="flex-1 min-h-0 overflow-y-auto space-y-5">
       {/* Title */}
       <h2 className="text-base font-bold">{title}</h2>
 
@@ -228,6 +229,7 @@ export function StepSwipe({
           )}
         </motion.div>
       </AnimatePresence>
+      </div>
     </div>
   );
 }

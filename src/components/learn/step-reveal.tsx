@@ -61,7 +61,8 @@ export function StepReveal({
   };
 
   return (
-    <div className="space-y-5 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+    <div className="flex flex-col h-full" style={{ color: "var(--lern-text-primary)" }}>
+      <div className="flex-1 min-h-0 overflow-y-auto space-y-4 pb-2">
       <h2 className="text-base font-bold">{title}</h2>
 
       {body && (
@@ -162,16 +163,19 @@ export function StepReveal({
           );
         })}
       </div>
+      </div>
 
       {/* Continue — immer sichtbar, Reveal ist Info-Step */}
-      <motion.button
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        onClick={() => onNext(true)}
-        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
-      >
-        Weiter
-      </motion.button>
+      <div className="shrink-0 pt-3">
+        <motion.button
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          onClick={() => onNext(true)}
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+        >
+          Weiter
+        </motion.button>
+      </div>
     </div>
   );
 }

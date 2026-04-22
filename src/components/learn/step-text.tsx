@@ -124,7 +124,8 @@ function CarouselView({
   };
 
   return (
-    <div className="space-y-5 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+    <div className="flex flex-col h-full" style={{ color: "var(--lern-text-primary)" }}>
+      <div className="flex-1 min-h-0 overflow-y-auto space-y-5 pb-2">
       <div className="flex items-start justify-between gap-3">
         <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
           {title}
@@ -212,22 +213,26 @@ function CarouselView({
         <AudioPlayer src={audioUrl} label={audioLabel} />
       )}
 
-      {/* Navigation */}
-      {isLast ? (
-        <button
-          onClick={onNext}
-          className="w-full rounded-2xl bg-[#C4877F] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
-        >
-          Weiter
-        </button>
-      ) : (
-        <button
-          onClick={() => goToCard(activeCard + 1)}
-          className="w-full rounded-2xl bg-[var(--lern-card-bg)] px-6 py-4 text-base font-semibold text-[var(--lern-text-primary)] transition-all active:scale-[0.98]"
-        >
-          Nächste Karte ({activeCard + 1}/{allCards.length})
-        </button>
-      )}
+      </div>
+
+      {/* Navigation — fix am Boden */}
+      <div className="shrink-0 pt-3">
+        {isLast ? (
+          <button
+            onClick={onNext}
+            className="w-full rounded-2xl bg-[#C4877F] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+          >
+            Weiter
+          </button>
+        ) : (
+          <button
+            onClick={() => goToCard(activeCard + 1)}
+            className="w-full rounded-2xl bg-[var(--lern-card-bg)] px-6 py-4 text-base font-semibold text-[var(--lern-text-primary)] transition-all active:scale-[0.98]"
+          >
+            Nächste Karte ({activeCard + 1}/{allCards.length})
+          </button>
+        )}
+      </div>
     </div>
   );
 }

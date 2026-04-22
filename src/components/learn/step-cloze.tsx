@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import type { ClozeBlank, GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 
@@ -14,6 +14,11 @@ interface StepClozeProps {
   onNext: (correct: boolean) => void;
 }
 
+interface PoolItem {
+  id: string;
+  text: string;
+}
+
 export function StepCloze({
   title,
   body,
@@ -22,201 +27,255 @@ export function StepCloze({
   blanks,
   onNext,
 }: StepClozeProps) {
-  const [filledBlanks, setFilledBlanks] = useState<Record<number, string>>({});
-  const [submitted, setSubmitted] = useState(false);
-
-  // Wörter-Pool: alle korrekten + Distraktoren, gemischt
-  const wordPool = useMemo(() => {
-    const words: string[] = [];
-    for (const blank of blanks) {
-      words.push(blank.correct);
-      words.push(...blank.distractors);
-    }
-    // Fisher-Yates Shuffle
-    for (let i = words.length - 1; i > 0; i--) {
+  // Stabiler Pool mit eindeutigen IDs pro Wort-Instanz
+  const wordPool = useMemo<PoolItem[]>(() => {
+    const items: PoolItem[] = [];
+    blanks.forEach((blank, bi) => {
+      items.push({ id: `b${bi}-correct`, text: blank.correct });
+      blank.distractors.forEach((d, di) => {
+        items.push({ id: `b${bi}-d${di}`, text: d });
+      });
+    });
+    for (let i = items.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [words[i], words[j]] = [words[j], words[i]];
+      [items[i], items[j]] = [items[j], items[i]];
     }
-    return words;
+    return items;
   }, [blanks]);
 
-  // Welche Wörter sind noch im Pool (nicht verwendet)?
-  const usedWords = Object.values(filledBlanks);
-  const availableWords = wordPool.filter((w) => {
-    const usedCount = usedWords.filter((u) => u === w).length;
-    const poolCount = wordPool.filter((p) => p === w).length;
-    return usedCount < poolCount;
-  });
+  // blankId → PoolItem (nicht nur Text, sondern das konkrete Item für layoutId)
+  const [filledBlanks, setFilledBlanks] = useState<Record<number, PoolItem>>({});
+  // Welche Lücke ist aktiv (wartet auf Wort)?
+  const [activeBlank, setActiveBlank] = useState<number | null>(null);
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleSelectWord = (word: string) => {
-    // Finde die erste leere Lücke
-    const emptyBlank = blanks.find((b) => filledBlanks[b.id] === undefined);
-    if (emptyBlank) {
-      setFilledBlanks((prev) => ({ ...prev, [emptyBlank.id]: word }));
-    }
-  };
+  const usedIds = new Set(Object.values(filledBlanks).map((item) => item.id));
+  const availableItems = wordPool.filter((item) => !usedIds.has(item.id));
 
-  const handleRemoveWord = (blankId: number) => {
+  function handleBlankClick(blankId: number) {
     if (submitted) return;
-    setFilledBlanks((prev) => {
-      const next = { ...prev };
-      delete next[blankId];
-      return next;
-    });
-  };
+    const filled = filledBlanks[blankId];
+    if (filled) {
+      // Wort aus Lücke entfernen → zurück in Pool
+      setFilledBlanks((prev) => {
+        const next = { ...prev };
+        delete next[blankId];
+        return next;
+      });
+      setActiveBlank(null);
+    } else {
+      // Lücke aktivieren / deaktivieren
+      setActiveBlank((prev) => (prev === blankId ? null : blankId));
+    }
+  }
+
+  function handleWordClick(item: PoolItem) {
+    if (submitted) return;
+    // Aktive Lücke verwenden — sonst erste leere Lücke
+    const targetId =
+      activeBlank !== null && filledBlanks[activeBlank] === undefined
+        ? activeBlank
+        : blanks.find((b) => filledBlanks[b.id] === undefined)?.id ?? null;
+
+    if (targetId === null) return;
+    setFilledBlanks((prev) => ({ ...prev, [targetId]: item }));
+    setActiveBlank(null);
+  }
 
   const allFilled = blanks.every((b) => filledBlanks[b.id] !== undefined);
 
-  // Prüfung
   const blankResults = blanks.map((b) => ({
     ...b,
-    given: filledBlanks[b.id] ?? "",
-    isCorrect: filledBlanks[b.id] === b.correct,
+    given: filledBlanks[b.id]?.text ?? "",
+    isCorrect: filledBlanks[b.id]?.text === b.correct,
   }));
   const allCorrect = blankResults.every((r) => r.isCorrect);
   const correctCount = blankResults.filter((r) => r.isCorrect).length;
 
-  // Text in Segmente aufteilen: normaler Text + Lücken
+  // Text in Segmente aufteilen
   const segments = useMemo(() => {
     const parts: { type: "text" | "blank"; content: string; blankId?: number }[] = [];
-    const regex = /\{\{(\d+)\}\}/g;
+    const regex = /\[(\d+)\]/g;
     let lastIndex = 0;
     let match;
-
     while ((match = regex.exec(textWithBlanks)) !== null) {
       if (match.index > lastIndex) {
-        parts.push({
-          type: "text",
-          content: textWithBlanks.slice(lastIndex, match.index),
-        });
+        parts.push({ type: "text", content: textWithBlanks.slice(lastIndex, match.index) });
       }
-      parts.push({
-        type: "blank",
-        content: "",
-        blankId: parseInt(match[1]),
-      });
+      parts.push({ type: "blank", content: "", blankId: parseInt(match[1]) });
       lastIndex = match.index + match[0].length;
     }
     if (lastIndex < textWithBlanks.length) {
-      parts.push({
-        type: "text",
-        content: textWithBlanks.slice(lastIndex),
-      });
+      parts.push({ type: "text", content: textWithBlanks.slice(lastIndex) });
     }
     return parts;
   }, [textWithBlanks]);
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
-      <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
-        {title}
-      </h2>
+    <div className="flex flex-col h-full" style={{ color: "var(--lern-text-primary)" }}>
+      <div className="flex-1 min-h-0 overflow-y-auto space-y-4 pb-2">
+        <h2 className="text-base font-bold">{title}</h2>
 
-      {body && (
-        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
-          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
+        {body && (
+          <p className="text-sm text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
+            <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
+          </p>
+        )}
+
+        <p className="text-sm font-medium">
+          {activeBlank !== null
+            ? "Wähle jetzt ein Wort unten ↓"
+            : "Tippe auf eine Lücke, dann auf ein Wort."}
         </p>
-      )}
 
-      <p className="text-sm font-medium text-[var(--lern-text-primary)]">
-        Fülle die Lücken mit den passenden Begriffen.
-      </p>
+        {/* Text mit Lücken */}
+        <div className="rounded-2xl bg-[var(--lern-bg-primary)] border-[1.5px] border-[var(--lern-border)] p-4 leading-relaxed text-sm">
+          {segments.map((seg, i) => {
+            if (seg.type === "text") {
+              return (
+                <span key={i}>
+                  <FachbegriffText glossar={glossar ?? []}>{seg.content}</FachbegriffText>
+                </span>
+              );
+            }
 
-      {/* Text mit Lücken */}
-      <div className="rounded-2xl bg-[var(--lern-bg-primary)] border-[1.5px] border-[var(--lern-border)] p-5 leading-relaxed text-[var(--lern-text-primary)]">
-        {segments.map((seg, i) => {
-          if (seg.type === "text") {
-            return <span key={i}><FachbegriffText glossar={glossar ?? []}>{seg.content}</FachbegriffText></span>;
-          }
-          const blankId = seg.blankId!;
-          const filled = filledBlanks[blankId];
-          const result = submitted ? blankResults.find((r) => r.id === blankId) : null;
+            const blankId = seg.blankId!;
+            const filled = filledBlanks[blankId];
+            const isActive = !submitted && activeBlank === blankId;
+            const result = submitted ? blankResults.find((r) => r.id === blankId) : null;
 
-          return (
-            <button
-              key={i}
-              onClick={() => handleRemoveWord(blankId)}
-              disabled={submitted}
-              className={`inline-flex items-center min-w-[80px] mx-1 px-3 py-1 rounded-lg border-[1.5px] border-dashed text-sm font-medium transition-colors ${
-                submitted && result?.isCorrect
-                  ? "border-[#6B8F71] bg-[#6B8F71]/10 text-[#6B8F71]"
-                  : submitted && !result?.isCorrect
-                    ? "border-[#C96B5C] bg-[#C96B5C]/10 text-[#C96B5C]"
-                    : filled
-                      ? "border-[var(--lern-accent)] bg-[var(--lern-accent)]/10 text-[var(--lern-accent)]"
-                      : "border-[var(--lern-text-tertiary)] bg-[var(--lern-bg)] text-[var(--lern-text-tertiary)]"
+            const borderClass = submitted
+              ? result?.isCorrect
+                ? "border-[#6B8F71] bg-[#6B8F71]/10 text-[#6B8F71]"
+                : "border-[#C96B5C] bg-[#C96B5C]/10 text-[#C96B5C]"
+              : isActive
+                ? "border-[#C4877F] bg-[#C4877F]/15 border-solid ring-2 ring-[#C4877F]/30"
+                : filled
+                  ? "border-[#C4877F]/60 bg-[#C4877F]/8 border-solid"
+                  : "border-dashed border-[var(--lern-text-tertiary)]/50 bg-[var(--lern-bg)]";
+
+            return (
+              <button
+                key={i}
+                onClick={() => handleBlankClick(blankId)}
+                disabled={submitted}
+                className={`inline-flex items-center justify-center min-w-[90px] mx-1 my-0.5 px-3 py-1.5 rounded-lg border-[1.5px] transition-all align-middle ${borderClass} ${
+                  !submitted ? "cursor-pointer active:scale-95" : ""
+                }`}
+              >
+                {filled ? (
+                  <motion.span
+                    layoutId={filled.id}
+                    className="text-sm font-semibold text-[var(--lern-text-primary)] whitespace-nowrap"
+                    transition={{ type: "spring", damping: 22, stiffness: 300 }}
+                  >
+                    {filled.text}
+                  </motion.span>
+                ) : (
+                  <span
+                    className={`text-sm font-medium ${
+                      isActive ? "text-[#C4877F]" : "text-[var(--lern-text-tertiary)]/60"
+                    }`}
+                  >
+                    {isActive ? "?" : "___"}
+                  </span>
+                )}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Wörter-Pool */}
+        {!submitted && (
+          <div className="space-y-2">
+            <p className="text-xs font-medium text-[var(--lern-text-secondary)]">
+              {activeBlank !== null ? "Wähle ein Wort:" : "Begriffe:"}
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <AnimatePresence>
+                {availableItems.map((item) => (
+                  <motion.button
+                    key={item.id}
+                    layoutId={item.id}
+                    onClick={() => handleWordClick(item)}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.8, transition: { duration: 0.15 } }}
+                    transition={{ type: "spring", damping: 22, stiffness: 300 }}
+                    className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors active:scale-95 ${
+                      activeBlank !== null
+                        ? "bg-[#C4877F] text-white shadow-md"
+                        : "bg-[#C4877F]/12 text-[#C4877F]"
+                    }`}
+                  >
+                    {item.text}
+                  </motion.button>
+                ))}
+              </AnimatePresence>
+              {availableItems.length === 0 && (
+                <p className="text-xs text-[var(--lern-text-secondary)] py-1">
+                  Alle Wörter platziert ✓
+                </p>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* Feedback nach Prüfen */}
+        <AnimatePresence>
+          {submitted && (
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              className={`rounded-2xl p-4 ${
+                allCorrect
+                  ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+                  : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
               }`}
             >
-              {filled || "___"}
-            </button>
-          );
-        })}
+              <p className="font-semibold text-sm">
+                {allCorrect ? "Perfekt — alle Lücken richtig! ✓" : `${correctCount} von ${blanks.length} richtig`}
+              </p>
+              {!allCorrect && (
+                <div className="mt-2 space-y-1">
+                  {blankResults
+                    .filter((r) => !r.isCorrect)
+                    .map((r) => (
+                      <p key={r.id} className="text-xs text-[#C96B5C]">
+                        <FachbegriffText glossar={glossar ?? []}>
+                          {`Lücke ${r.id}: „${r.given}" → richtig: „${r.correct}"`}
+                        </FachbegriffText>
+                      </p>
+                    ))}
+                </div>
+              )}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
-      {/* Wörter-Pool */}
-      {!submitted && (
-        <div className="space-y-2">
-          <p className="text-xs font-medium text-[var(--lern-text-secondary)]">Verfügbare Begriffe:</p>
-          <div className="flex flex-wrap gap-2">
-            {availableWords.map((word, i) => (
-              <button
-                key={`${word}-${i}`}
-                onClick={() => handleSelectWord(word)}
-                disabled={!blanks.some((b) => filledBlanks[b.id] === undefined)}
-                className="rounded-full bg-[var(--lern-accent)]/10 px-4 py-2 text-sm font-medium text-[var(--lern-accent)] transition-all active:scale-95 disabled:opacity-40"
-              >
-                {word}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {!submitted ? (
-        <button
-          onClick={() => setSubmitted(true)}
-          disabled={!allFilled}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40 disabled:cursor-not-allowed"
-        >
-          Prüfen
-        </button>
-      ) : (
-        <div className="space-y-4">
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            className={`rounded-2xl p-4 ${
-              allCorrect
-                ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
-                : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
-            }`}
+      <div className="shrink-0 pt-3">
+        {!submitted ? (
+          <button
+            onClick={() => setSubmitted(true)}
+            disabled={!allFilled}
+            className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed"
+            style={{ backgroundColor: "#C4877F" }}
+            onMouseEnter={(e) => !e.currentTarget.disabled && (e.currentTarget.style.backgroundColor = "#B07A72")}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#C4877F")}
           >
-            <p className="font-semibold">
-              {allCorrect
-                ? "Perfekt — alle Lücken richtig!"
-                : `${correctCount} von ${blanks.length} richtig`}
-            </p>
-            {!allCorrect && (
-              <div className="mt-2 space-y-1">
-                {blankResults
-                  .filter((r) => !r.isCorrect)
-                  .map((r) => (
-                    <p key={r.id} className="text-sm text-[#C96B5C]">
-                      <FachbegriffText glossar={glossar ?? []}>{`Lücke ${r.id}: „${r.given}" → richtig wäre „${r.correct}"`}</FachbegriffText>
-                    </p>
-                  ))}
-              </div>
-            )}
-          </motion.div>
-
+            Prüfen
+          </button>
+        ) : (
           <button
             onClick={() => onNext(allCorrect)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+            className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+            style={{ backgroundColor: allCorrect ? "#6B8F71" : "#C96B5C" }}
           >
             Weiter
           </button>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

@@ -6,7 +6,8 @@ import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 import { analysiereFehler } from "@/lib/adaptive/fehler-analyse";
 import type { FehlerAnalyse } from "@/lib/adaptive/fehler-analyse";
-import { generiereSandwichFeedback, SandwichFeedbackDisplay } from "./bloom-feedback";
+import { generiereSandwichFeedback } from "./bloom-feedback";
+import { AnswerSheet } from "./answer-sheet";
 
 interface MCOption {
   text: string;
@@ -134,13 +135,18 @@ export function StepMC({
     : null;
 
   return (
-    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
+    <div
+      className="flex flex-col h-full"
+      style={{ color: "var(--lern-text-primary)" }}
+    >
+      {/* Scrollbarer Content-Bereich */}
+      <div className="flex-1 min-h-0 overflow-y-auto space-y-4 pb-2">
       <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
         {title}
       </h2>
 
       {body && (
-        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
+        <p className="text-sm text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
           <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
         </p>
       )}
@@ -150,7 +156,7 @@ export function StepMC({
       </p>
 
       {multiSelect && !submitted && (
-        <p className="text-sm text-[var(--lern-text-secondary)]">
+        <p className="text-xs text-[var(--lern-text-secondary)]">
           Mehrere Antworten möglich
         </p>
       )}
@@ -248,24 +254,26 @@ export function StepMC({
           );
         })}
       </div>
+      </div>{/* Ende scrollbarer Content */}
 
-      {!submitted ? (
-        <button
-          onClick={handleSubmit}
-          disabled={selected.length === 0}
-          aria-label={isAnticipation ? "Vermutung abgeben" : "Antwort prüfen"}
-          className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-offset-2"
-          style={{ backgroundColor: accentColor, outlineColor: accentColor }}
-          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = accentHover)}
-          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = accentColor)}
-        >
-          {isAnticipation ? "Bin gespannt!" : "Prüfen"}
-        </button>
-      ) : (
-        <div className="space-y-4">
-          {isAnticipation ? (
+      {/* Fixer Button-Bereich — immer unten sichtbar */}
+      <div className="shrink-0 pt-3">
+        {!submitted ? (
+          <button
+            onClick={handleSubmit}
+            disabled={selected.length === 0}
+            aria-label={isAnticipation ? "Vermutung abgeben" : "Antwort prüfen"}
+            className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-offset-2"
+            style={{ backgroundColor: accentColor, outlineColor: accentColor }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = accentHover)}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = accentColor)}
+          >
+            {isAnticipation ? "Bin gespannt!" : "Prüfen"}
+          </button>
+        ) : isAnticipation ? (
+          <div className="space-y-3">
             <div
-              className="rounded-2xl p-4 text-center"
+              className="rounded-2xl p-3 text-center"
               style={{
                 backgroundColor: `color-mix(in srgb, ${accentColor} 8%, var(--lern-bg-primary))`,
                 border: `1px solid color-mix(in srgb, ${accentColor} 20%, transparent)`,
@@ -275,34 +283,29 @@ export function StepMC({
                 Spannend! Lies jetzt die Erklärung — danach prüfen wir richtig.
               </p>
             </div>
-          ) : (
-            sandwich && (
-              <SandwichFeedbackDisplay
-                feedback={sandwich}
-                correct={isCorrect}
-                fehlerKategorie={fehlerAnalyse?.kategorie}
-              />
-            )
-          )}
+            <button
+              onClick={() => onNext(undefined as unknown as boolean)}
+              aria-label="Weiter zur Erklärung"
+              className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] focus:outline-2 focus:outline-offset-2"
+              style={{ backgroundColor: accentColor, outlineColor: accentColor }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = accentHover)}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = accentColor)}
+            >
+              Weiter zur Erklärung
+            </button>
+          </div>
+        ) : null}
+      </div>
 
-          <button
-            onClick={() => {
-              if (isAnticipation) {
-                // Anticipation: kein Score, undefined = nicht gewertet
-                onNext(undefined as unknown as boolean);
-              } else {
-                onNext(isCorrect, selected.map((i) => optionen[i].text).join(", "));
-              }
-            }}
-            aria-label={isAnticipation ? "Weiter zur Erklärung" : "Weiter zum nächsten Schritt"}
-            className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] focus:outline-2 focus:outline-offset-2"
-            style={{ backgroundColor: accentColor, outlineColor: accentColor }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = accentHover)}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = accentColor)}
-          >
-            {isAnticipation ? "Weiter zur Erklärung" : "Weiter"}
-          </button>
-        </div>
+      {/* Feedback Bottom-Sheet — nur für nicht-Anticipation */}
+      {sandwich && !isAnticipation && (
+        <AnswerSheet
+          open={submitted}
+          isCorrect={isCorrect}
+          feedback={sandwich}
+          fehlerKategorie={fehlerAnalyse?.kategorie}
+          onNext={() => onNext(isCorrect, selected.map((i) => optionen[i].text).join(", "))}
+        />
       )}
     </div>
   );

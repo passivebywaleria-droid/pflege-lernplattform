@@ -142,7 +142,8 @@ export function StepMatching({
     MATCH_COLORS[matchedLeftIndices.indexOf(leftIdx) % MATCH_COLORS.length];
 
   return (
-    <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }} role="group" aria-label="Zuordnungsaufgabe">
+    <div className="flex flex-col h-full" style={{ color: "var(--lern-text-primary)" }} role="group" aria-label="Zuordnungsaufgabe">
+      <div className="flex-1 min-h-0 overflow-y-auto space-y-4 pb-2">
       <h2 className="text-base font-bold">{title}</h2>
 
       {body && (
@@ -326,27 +327,31 @@ export function StepMatching({
         </div>
       )}
 
-      {/* Submit / Result */}
-      {!submitted ? (
-        <button
-          onClick={handleSubmit}
-          disabled={matches.size < pairs.length}
-          aria-label="Zuordnung prüfen"
-          className="w-full rounded-2xl bg-[#C4877F] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2"
-        >
-          Prüfen
-        </button>
-      ) : (
-        <div className="space-y-4">
-          <SandwichFeedbackDisplay
-            feedback={generiereSandwichFeedback(
-              allCorrect,
-              allCorrect ? "" : `${correctCount} von ${pairs.length} richtig zugeordnet`,
-              allCorrect ? "Perfekt! Alle richtig zugeordnet!" : undefined,
-            )}
-            correct={allCorrect}
-          />
+      {/* Feedback nach Submit */}
+      {submitted && (
+        <SandwichFeedbackDisplay
+          feedback={generiereSandwichFeedback(
+            allCorrect,
+            allCorrect ? "" : `${correctCount} von ${pairs.length} richtig zugeordnet`,
+            allCorrect ? "Perfekt! Alle richtig zugeordnet!" : undefined,
+          )}
+          correct={allCorrect}
+        />
+      )}
+      </div>
 
+      {/* Submit / Weiter — fix am Boden */}
+      <div className="shrink-0 pt-3">
+        {!submitted ? (
+          <button
+            onClick={handleSubmit}
+            disabled={matches.size < pairs.length}
+            aria-label="Zuordnung prüfen"
+            className="w-full rounded-2xl bg-[#C4877F] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2"
+          >
+            Prüfen
+          </button>
+        ) : (
           <button
             onClick={() => onNext(allCorrect)}
             aria-label="Weiter zum nächsten Schritt"
@@ -354,8 +359,8 @@ export function StepMatching({
           >
             Weiter
           </button>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

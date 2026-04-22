@@ -109,57 +109,61 @@ export function StepFlipCard({
   };
 
   return (
-    <div className="space-y-5 pb-20" style={{ color: "var(--lern-text-primary)" }}>
-      <h2 className="text-base font-bold">{title}</h2>
+    <div className="flex flex-col h-full" style={{ color: "var(--lern-text-primary)" }}>
+      <div className="flex-1 min-h-0 overflow-y-auto space-y-4 pb-2">
+        <h2 className="text-base font-bold">{title}</h2>
 
-      {body && (
-        <p className="leading-relaxed whitespace-pre-line">
-          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
-        </p>
-      )}
+        {body && (
+          <p className="leading-relaxed whitespace-pre-line">
+            <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
+          </p>
+        )}
 
-      <p className="text-sm font-medium" style={{ color: "var(--lern-text-primary)" }}>{instruction}</p>
+        <p className="text-sm font-medium" style={{ color: "var(--lern-text-primary)" }}>{instruction}</p>
 
-      {/* Progress */}
-      <div className="flex items-center justify-between">
-        <span className="text-xs text-[var(--lern-text-secondary)]">
-          {flippedCards.size} von {cards.length} aufgedeckt
-        </span>
-        <div className="flex gap-1">
-          {cards.map((_, i) => (
-            <div
+        {/* Progress */}
+        <div className="flex items-center justify-between">
+          <span className="text-xs text-[var(--lern-text-secondary)]">
+            {flippedCards.size} von {cards.length} aufgedeckt
+          </span>
+          <div className="flex gap-1">
+            {cards.map((_, i) => (
+              <div
+                key={i}
+                className={`w-2 h-2 rounded-full transition-colors ${
+                  flippedCards.has(i) ? "bg-[var(--lern-accent)]" : "bg-[var(--lern-divider)]"
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Card Grid */}
+        <div className="grid grid-cols-1 gap-3">
+          {cards.map((card, i) => (
+            <FlipCard
               key={i}
-              className={`w-2 h-2 rounded-full transition-colors ${
-                flippedCards.has(i) ? "bg-[var(--lern-accent)]" : "bg-[var(--lern-divider)]"
-              }`}
+              item={card}
+              index={i}
+              isFlipped={flippedCards.has(i)}
+              onFlip={() => toggleFlip(i)}
+              sprachLevel={sprachLevel}
             />
           ))}
         </div>
       </div>
 
-      {/* Card Grid */}
-      <div className="grid grid-cols-1 gap-3">
-        {cards.map((card, i) => (
-          <FlipCard
-            key={i}
-            item={card}
-            index={i}
-            isFlipped={flippedCards.has(i)}
-            onFlip={() => toggleFlip(i)}
-            sprachLevel={sprachLevel}
-          />
-        ))}
-      </div>
-
       {/* Continue — immer sichtbar */}
-      <motion.button
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        onClick={() => onNext(true)}
-        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
-      >
-        Weiter
-      </motion.button>
+      <div className="shrink-0 pt-3">
+        <motion.button
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          onClick={() => onNext(true)}
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+        >
+          Weiter
+        </motion.button>
+      </div>
     </div>
   );
 }

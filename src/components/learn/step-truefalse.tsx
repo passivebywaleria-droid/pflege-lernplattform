@@ -122,7 +122,8 @@ export function StepTrueFalse({
   }
 
   return (
-    <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }}>
+    <div className="flex flex-col h-full" style={{ color: "var(--lern-text-primary)" }}>
+      <div className="flex-1 min-h-0 overflow-y-auto space-y-5">
       <h2 className="text-base font-bold">{title}</h2>
 
       {body && (
@@ -247,6 +248,7 @@ export function StepTrueFalse({
           </motion.div>
         )}
       </AnimatePresence>
+      </div>
     </div>
   );
 }
