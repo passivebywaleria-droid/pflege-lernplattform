@@ -41,8 +41,7 @@ export type { LeManifestEntry, CEManifestEntry, SessionId, SessionLabel };
 // Daher: eine Zeile pro LE hier — bleibt vorhersagbar und tree-shakable.
 
 const LE_MODULES: Record<string, () => Promise<Record<string, unknown>>> = {
-  "le-01": () => import("./le-01/index"),
-  "le-06": () => import("./le-06/index"),
+  // Alle LEs entfernt — Plattform nutzt CE+Themen+Situationen Format
 };
 
 async function loadLeModule(leId: string): Promise<Record<string, unknown> | null> {

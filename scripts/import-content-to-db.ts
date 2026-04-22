@@ -22,10 +22,8 @@ import { LE_MANIFEST, lePrefix } from "../content/_manifest"
 import type { LeManifestEntry } from "../content/_types"
 
 // ── Static module map (Webpack/tsx-friendly) ──
-const LE_MODULES: Record<string, () => Promise<Record<string, any>>> = {
-  "le-01": () => import("../content/le-01/index"),
-  "le-06": () => import("../content/le-06/index"),
-}
+// LEs entfernt — Plattform nutzt CE+Themen+Situationen Format
+const LE_MODULES: Record<string, () => Promise<Record<string, any>>> = {}
 
 const connectionString = process.env.DATABASE_URL
 if (!connectionString) {
