@@ -38,8 +38,18 @@ KI-Prüfer (Opus)  → Semantische Prüfung
 
 | Plan-Datei | Output | Beschreibung |
 |-----------|--------|-------------|
-| `patient.md` | `patient.ts` | Patientenbeschreibung |
-| `phasen-plan.md` | `phase-informieren.ts` ... `phase-dokumentieren.ts` | Je 1 Datei pro Pflegeprozess-Phase |
+| `patient.md` | `patient.ts` | Patientenbeschreibung — **NUR wenn SituationsTyp Patient vorsieht** (bei `orientierung` KEIN `patient.ts` erzeugen) |
+| `phase-{phasenname}.md` | `phase-{phasenname}.ts` | Je 1 Datei pro Phase — **Dateiname = Phasenname aus SituationsTyp** (nicht hardcoded `phase-informieren`) |
+
+**SituationsTyp → Dateinamen:**
+- `pflegeprozess`: `phase-informieren.ts`, `phase-beobachten.ts`, `phase-planen.ts`, `phase-durchfuehren.ts`, `phase-evaluieren.ts`, `phase-dokumentieren.ts`
+- `orientierung`: `phase-wahrnehmen.ts`, `phase-einordnen.ts`, `phase-handeln.ts`, `phase-reflektieren.ts`, `phase-dokumentieren.ts`
+- `kommunikation`: `phase-beobachten.ts`, `phase-einleiten.ts`, `phase-gestalten.ts`, `phase-evaluieren.ts`, `phase-dokumentieren.ts`, `phase-reflektieren.ts`
+- `beratung`: `phase-wahrnehmen.ts`, `phase-einschaetzen.ts`, `phase-informieren.ts`, `phase-beraten.ts`, `phase-evaluieren.ts`, `phase-dokumentieren.ts`
+- `akutsituation`: `phase-erkennen.ts`, `phase-alarmieren.ts`, `phase-erstmassnahmen.ts`, `phase-uebergeben.ts`, `phase-reflektieren.ts`
+- `begleitung`: `phase-begegnen.ts`, `phase-verstehen.ts`, `phase-begleiten.ts`, `phase-entlasten.ts`, `phase-abschiednehmen.ts`, `phase-reflektieren.ts`
+- `lebensgestaltung`: `phase-kennenlernen.ts`, `phase-erkunden.ts`, `phase-begleiten.ts`, `phase-staerken.ts`, `phase-vernetzen.ts`, `phase-reflektieren.ts`
+- `psychiatrisch`: `phase-begegnen.ts`, `phase-einschaetzen.ts`, `phase-beziehung-aufbauen.ts`, `phase-intervenieren.ts`, `phase-evaluieren.ts`, `phase-dokumentieren.ts`
 
 ### Pro Prüfungsfall (aus `content/ce-{NN}/pruefung/{pruefungsfallId}/`)
 
@@ -147,11 +157,15 @@ export const CE{NN}_THEMA_{THEMAID}_KARTEIKARTEN: KarteikarteVorlage[] = [...]
 import type { PatientBeschreibung } from "../../_types";
 export const CE{NN}_SIT_{SITID}_PATIENT: PatientBeschreibung = {...}
 
-// phase-informieren.ts
+// phase-{phasenname}.ts (Name hängt vom situationsTyp ab)
 import type { SituationsPhase } from "../../_types";
-export const CE{NN}_SIT_{SITID}_INFORMIEREN: SituationsPhase = {...}
+export const CE{NN}_SIT_{SITID}_{PHASENNAME_UPPER}: SituationsPhase = {
+  phase: "{phasenname}",    // AnyPhase — aus situationsTyp ableiten
+  ...
+}
 
-// phase-beobachten.ts ... phase-dokumentieren.ts (analog)
+// Beispiel pflegeprozess: CE02_SIT_FRAU_M_INFORMIEREN, CE02_SIT_FRAU_M_BEOBACHTEN, ...
+// Beispiel orientierung:  CE01_SIT_ERSTTAG_WAHRNEHMEN, CE01_SIT_ERSTTAG_EINORDNEN, ...
 ```
 
 ### 4. Renderer-Kompatibilität (K.O.)

@@ -42,7 +42,8 @@ Der Generator nach dir ist NUR ein TypeScript-Formatierer — er darf keine dida
 
 ### Pro Situation
 - `content/ce-{NN}/situationen/{situationId}/sessionsplan.md`
-- Enthält: 6 Phasen × (Kern-Steps + optionale Steps + Baustein-Trigger-Steps)
+- Enthält: N Phasen × (Kern-Steps + optionale Steps + Baustein-Trigger-Steps)
+- N = Anzahl Phasen des SituationsTyps (5 bei `akutsituation`, 6 bei allen anderen)
 
 ### Pro Prüfungsfall
 - `content/ce-{NN}/pruefung/{pruefungsfallId}/sessionsplan.md`
@@ -102,7 +103,8 @@ Prüfungsfall:  20-30P × 1,3 Min/P + Falltext-Lesezeit ≈ 35 Min
 - Wissen-Tab (stilles Nachschlagewerk): zählt NICHT ins Budget
 
 **Pro Situation:**
-- 100% auf 6 Phasen verteilt (je ~16-20% der Gesamtzeit)
+- 100% gleichmäßig auf alle Phasen verteilt (je ~100%/N, N = Phasenanzahl des SituationsTyps)
+- 5 Phasen (z.B. `akutsituation`): je ~20% | 6 Phasen: je ~16-17%
 - Pro Phase: Kontext-Lesen + 6-12 Steps + Baustein-Trigger-Steps
 
 **Pro Prüfungsfall:**

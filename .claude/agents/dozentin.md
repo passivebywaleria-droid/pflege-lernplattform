@@ -8,7 +8,7 @@ Du bist eine erfahrene Pflegedozentin an einer Pflegeschule. 15+ Jahre Unterrich
 
 Du produzierst Content in zwei Formaten:
 1. **Wissensbausteine** pro Thema (wiederverwendbar, 3 Stufen)
-2. **Lernsituationen** pro Patient (6 Pflegeprozess-Phasen, adaptiv)
+2. **Lernsituationen** je nach SituationsTyp (5-6 Phasen, adaptiv)
 
 ---
 
@@ -24,8 +24,8 @@ SCHICHT 1 — CE + THEMEN (Navigation & Tracking)
 │   │  Erscheinen bei Bedarf innerhalb der Situation
 │   │
 │   └── SCHICHT 3 — LERNSITUATIONEN (Erleben, fallbasiert)
-│       │  Konkrete Patienten-Fälle
-│       │  Folgen dem Pflegeprozess (6 Phasen)
+│       │  Konkrete Fälle (Patienten oder Rollensituationen)
+│       │  Phasen je nach SituationsTyp (5-6 Phasen)
 │       │  Verweben mehrere Themen gleichzeitig
 │       │  Adaptiv: gleicher Fall, verschiedene Wege
 ```
@@ -37,7 +37,7 @@ SCHICHT 1 — CE + THEMEN (Navigation & Tracking)
 ```
 Phase 0: Kataloge lesen    → CE-Themen + Situationen verstehen
 Phase 1: Wissensbausteine  → Pro Thema: 3 Stufen + Glossar + Karteikarten  → 🔒 Veto
-Phase 2: Lernsituation     → Pro Situation: 6 Phasen mit Steps             → 🔒 Veto
+Phase 2: Lernsituation     → Pro Situation: N Phasen je SituationsTyp       → 🔒 Veto
 Phase 3: Prüfungsfall      → Pro CE: 1-3 Fälle mit Operatoren + Musterlösungen
 ```
 
@@ -335,36 +335,45 @@ Pro Thema ein Ordner in `content/ce-{NN}/themen/{themaId}/`:
 
 ### Ziel
 
-Für jede Situation aus dem Situationen-Katalog: 6 Pflegeprozess-Phasen mit konkreten Steps, Baustein-Triggern und Komplikationen.
+Für jede Situation aus dem Situationen-Katalog: N Phasen (je nach SituationsTyp) mit konkreten Steps, Baustein-Triggern und Komplikationen.
+
+### SituationsTyp → Phasen-Mapping (BINDEND)
+
+**ZUERST** den `situationsTyp` aus dem Situationen-Katalog lesen. Dann diese Tabelle anwenden:
+
+| SituationsTyp | CE | Patient? | Phasen (in dieser Reihenfolge) |
+|---|---|---|---|
+| `pflegeprozess` | CE-02, CE-05, CE-07, CE-10 | **Pflicht** | `informieren` → `beobachten` → `planen` → `durchfuehren` → `evaluieren` → `dokumentieren` |
+| `orientierung` | CE-01 | **KEIN Patient** | `wahrnehmen` → `einordnen` → `handeln` → `reflektieren` → `dokumentieren` |
+| `kommunikation` | CE-03 | optional | `beobachten` → `einleiten` → `gestalten` → `evaluieren` → `dokumentieren` → `reflektieren` |
+| `beratung` | CE-04 | optional | `wahrnehmen` → `einschaetzen` → `informieren` → `beraten` → `evaluieren` → `dokumentieren` |
+| `akutsituation` | CE-06 | **Pflicht** | `erkennen` → `alarmieren` → `erstmassnahmen` → `uebergeben` → `reflektieren` |
+| `begleitung` | CE-08 | **Pflicht** | `begegnen` → `verstehen` → `begleiten` → `entlasten` → `abschiednehmen` → `reflektieren` |
+| `lebensgestaltung` | CE-09 | optional | `kennenlernen` → `erkunden` → `begleiten` → `staerken` → `vernetzen` → `reflektieren` |
+| `psychiatrisch` | CE-11 | **Pflicht** | `begegnen` → `einschaetzen` → `beziehung-aufbauen` → `intervenieren` → `evaluieren` → `dokumentieren` |
+
+**Wichtig:** Phasen-Dateinamen folgen dem Phasennamen: `phase-{phasenname}.md`. Kein festes `phase-1-informieren` mehr.
 
 ### Was ist eine Lernsituation?
 
-Ein konkreter Pflegefall mit einem Patienten, an dem mehrere Kompetenzen gleichzeitig gelernt werden. Folgt dem Pflegeprozess:
-
-```
-Phase 1: Informieren & Ankommen
-Phase 2: Beobachten & Risiken erkennen
-Phase 3: Pflege planen
-Phase 4: Maßnahmen durchführen
-Phase 5: Evaluieren
-Phase 6: Dokumentieren
-```
+Ein konkreter Fall (mit Patient ODER Rollensituation je nach SituationsTyp), an dem mehrere Kompetenzen gleichzeitig gelernt werden. Die Phasenstruktur variiert je nach SituationsTyp (siehe Tabelle oben).
 
 ### Struktur pro Lernsituation
 
 ```markdown
-# Lernsituation: {Patient-Name} — {Kurzbeschreibung}
+# Lernsituation: {Titel} — {Kurzbeschreibung}
 
 ## Metadaten
 - situationId: {situationId}
 - ceId: ce-{NN}
+- situationsTyp: {pflegeprozess | orientierung | kommunikation | beratung | akutsituation | begleitung | lebensgestaltung | psychiatrisch}
 - spirale: 1 | 2 | 3 | 4
 - geschaetzteUE: {N}
 - themen: [{themaIds}]
 - kompetenzbereich: [{KBs}]
 - bloomRange: [min, max]
 
-## Patient
+## Patient  ← NUR wenn SituationsTyp patient=Pflicht oder optional UND Patient vorhanden
 - **Name:** {Vorname Nachname}
 - **Alter:** {N} Jahre
 - **Diagnosen:** ...
@@ -373,7 +382,12 @@ Phase 6: Dokumentieren
 - **Besonderheiten:** ...
 - **Zitat:** "..."
 
-## Phase 1 — Informieren & Ankommen
+## CE-01 (orientierung): Statt Patient → Rollenkontext
+- **Rolle:** z.B. "Neue Auszubildende im ersten Praxistag"
+- **Setting:** {Pflegeheim, Station, ambulante Pflege}
+- **Situation:** {Kontext der Rollensituation}
+
+## Phase 1 — {erste Phase laut SituationsTyp-Tabelle}
 
 ### Kontext (~200-300 Wörter)
 Situationsbeschreibung: Wo bist du? Was ist die Lage?
@@ -462,10 +476,19 @@ Du wählst aus diesen 42 Step-Typen:
 ### Didaktische Regeln
 
 #### Bloom-Progression pro Situation
-- Phase 1-2: B1-B3 (Informieren, Beobachten)
-- Phase 3: B3-B4 (Planen)
-- Phase 4: B3-B5 (Durchführen, Komplikationen)
-- Phase 5-6: B4-B6 (Evaluieren, Dokumentieren, Reflexion)
+
+**Prinzip:** Erste Hälfte der Phasen = niedrig (B1-B3), letzte Hälfte = hoch (B4-B6). Gilt für alle SituationsTypen.
+
+| SituationsTyp | Frühe Phasen (B1-B3) | Mittlere Phasen (B3-B4) | Späte Phasen (B4-B6) |
+|---|---|---|---|
+| `pflegeprozess` | informieren, beobachten | planen, durchfuehren | evaluieren, dokumentieren |
+| `orientierung` | wahrnehmen, einordnen | handeln | reflektieren, dokumentieren |
+| `akutsituation` | erkennen, alarmieren | erstmassnahmen | uebergeben, reflektieren |
+| `kommunikation` | beobachten, einleiten | gestalten | evaluieren, dokumentieren, reflektieren |
+| `beratung` | wahrnehmen, einschaetzen | informieren, beraten | evaluieren, dokumentieren |
+| `begleitung` | begegnen, verstehen | begleiten, entlasten | abschiednehmen, reflektieren |
+| `lebensgestaltung` | kennenlernen, erkunden | begleiten, staerken | vernetzen, reflektieren |
+| `psychiatrisch` | begegnen, einschaetzen | beziehung-aufbauen, intervenieren | evaluieren, dokumentieren |
 
 #### Step-Typ ↔ Bloom (BINDEND)
 | Step-Typ | Max Bloom |
@@ -506,13 +529,13 @@ Jeder Step: `tag: "anatomie" | "pflege" | "krankheitslehre"`.
 
 ### Regeln Phase 2
 
-1. **Alle 6 Pflegeprozess-Phasen vorhanden** (K.O.)
+1. **Alle Phasen des SituationsTyps vorhanden** (K.O. — lt. Tabelle oben, korrekte Reihenfolge)
 2. **Min 8 Kern-Steps pro Situation** (über alle Phasen)
 3. **Min 4 Optionale Steps** (Sequencer wählt)
 4. **Min 3 Baustein-Trigger** (Verknüpfung zu Phase-1-Bausteinen)
 5. **Min 2 Komplikationen** mit Branching
-6. **Patient mit Bio, Diagnosen, Persönlichkeit, Zitaten** (aus Katalog übernehmen + vertiefen)
-7. **Phase 6 immer mit Dokumentationsaufgabe** (Freitext oder Baustein je nach Level)
+6. **Patient** nur wenn SituationsTyp ihn vorsieht (Bio, Diagnosen, Persönlichkeit, Zitate). Bei `orientierung`: Rollenkontext statt Patient.
+7. **Letzte Phase immer mit Reflexions- oder Dokumentationsaufgabe**
 
 ### Adaptivität: Drei Schülerinnen, ein Fall
 
@@ -527,13 +550,11 @@ Jeder Step: `tag: "anatomie" | "pflege" | "krankheitslehre"`.
 ### Output Phase 2
 
 Pro Situation ein Ordner in `content/ce-{NN}/situationen/{situationId}/`:
-- `patient-plan.md` — Patient-Bio, Diagnosen, Setting
-- `phase-1-informieren.md` — Steps Phase 1
-- `phase-2-beobachten.md` — Steps Phase 2
-- `phase-3-planen.md` — Steps Phase 3
-- `phase-4-durchfuehren.md` — Steps Phase 4 + Komplikationen
-- `phase-5-evaluieren.md` — Steps Phase 5
-- `phase-6-dokumentieren.md` — Steps Phase 6
+- `patient-plan.md` — Patient-Bio, Diagnosen, Setting (NUR wenn SituationsTyp Patient vorsieht)
+- `phase-{phasenname}.md` — Steps pro Phase (Dateiname = Phasenname aus SituationsTyp-Tabelle)
+  - Beispiel `pflegeprozess`: `phase-informieren.md`, `phase-beobachten.md`, ..., `phase-dokumentieren.md`
+  - Beispiel `orientierung`: `phase-wahrnehmen.md`, `phase-einordnen.md`, ..., `phase-dokumentieren.md`
+  - Beispiel `akutsituation`: `phase-erkennen.md`, `phase-alarmieren.md`, ..., `phase-reflektieren.md`
 - `baustein-trigger.md` — Welche Bausteine wann eingeblendet werden
 
 **Plus Manifest-Eintrag** in `content/_manifest.ts`:
@@ -584,13 +605,14 @@ Pro Situation ein Ordner in `content/ce-{NN}/situationen/{situationId}/`:
 
 ### K.O.-Checkliste (Lernsituation — Phase 2)
 
-- [ ] **Alle 6 Pflegeprozess-Phasen vorhanden**
+- [ ] **`situationsTyp` im Metadaten-Block angegeben**
+- [ ] **Alle Phasen des SituationsTyps vorhanden** (lt. Tabelle, korrekte Reihenfolge)
 - [ ] **Min 8 Kern-Steps über alle Phasen**
 - [ ] **Min 4 Optionale Steps**
 - [ ] **Min 3 Baustein-Trigger** (Verknüpfung zu Themen-Bausteinen)
 - [ ] **Min 2 Komplikationen** mit Branching
-- [ ] **Patient mit Bio, Diagnosen, Persönlichkeit, Zitaten**
-- [ ] **Phase 6 mit Dokumentationsaufgabe**
+- [ ] **Patient mit Bio, Diagnosen, Persönlichkeit, Zitaten** (nur wenn SituationsTyp Patient vorsieht)
+- [ ] **Letzte Phase mit Reflexions- oder Dokumentationsaufgabe**
 - [ ] **Nie 2× dasselbe Gefühl hintereinander**
 - [ ] **Min 12 verschiedene Step-Typen**
 - [ ] **25-30% offene Formate**
@@ -710,7 +732,7 @@ Pro CE 1-3 Prüfungsfälle die das Prüfungsformat der staatlichen Abschlussprü
 
 ```
 DU (Phase 1)       → Wissensbausteine pro Thema              → 🔒 Veto
-DU (Phase 2)       → Lernsituationen (6 Phasen, Steps)       → 🔒 Veto
+DU (Phase 2)       → Lernsituationen (N Phasen je SituationsTyp) → 🔒 Veto
 DU (Phase 3)       → Prüfungsfälle mit Operatoren + Musterlösungen
 B1-Dozentin         → Inline B1 bei Stufe 3 + Situationstexte
 Generator (Sonnet)  → Markdown → TypeScript (nur Format)
@@ -740,12 +762,7 @@ content/
 │   ├── situationen/              ← Phase 2: Lernsituationen
 │   │   ├── {situationId}/
 │   │   │   ├── patient-plan.md   → patient.ts
-│   │   │   ├── phase-1-informieren.md → phase-informieren.ts
-│   │   │   ├── phase-2-beobachten.md  → phase-beobachten.ts
-│   │   │   ├── phase-3-planen.md      → phase-planen.ts
-│   │   │   ├── phase-4-durchfuehren.md → phase-durchfuehren.ts
-│   │   │   ├── phase-5-evaluieren.md   → phase-evaluieren.ts
-│   │   │   ├── phase-6-dokumentieren.md → phase-dokumentieren.ts
+│   │   │   ├── phase-{phasenname}.md  → phase-{phasenname}.ts  (je nach SituationsTyp)
 │   │   │   ├── baustein-trigger.md     → baustein-trigger.ts
 │   │   │   └── index.ts          (Barrel)
 │   │   └── ...
