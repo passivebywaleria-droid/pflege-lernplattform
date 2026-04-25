@@ -1,875 +1,607 @@
-# Kapitel 36: Grundlagen der Pflege von Menschen mit geistiger Behinderung
+# Teil 36
 
-> Quelle: I Care Pflege (Thieme, 2020), S. 760-769
+> Quelle: Icare Pflege
 > Automatisch extrahiert — Formatierung kann abweichen
 
 ---
 
-Wohnen und Alltag
-zentrale Maßnahmen vorgestellt, die unterstützend wirken
-können, um eine positive Beziehung zwischen Pflegefachkräften und Pflegeempfängern zu gestalten.
+                                                                          Rollenverhalten erwartet.
+     mann seiner Berufsgruppe entsprechend bestimmte Fähig-
+     keiten und Kompetenzen besitzt und sich ihr außerdem
+                                                                          Rollen können das Leben erleichtern • Eine bestimmte Rolle
+     menschlich zugewandt verhalten wird (▶ Abb. 11.1). Umge-
+                                                                          einzunehmen, kann unter Umständen Handlungen verein-
+     kehrt hat aber auch der Pflegefachmann Erwartungen an
+                                                                          fachen. Das ist z. B. der Fall, wenn ein Reisender als Tourist
+     Frau L. In ihrer Rolle als Patientin sollte sie angebotene Hilfe
+                                                                          erkannt wird und ihm dadurch in einem Land, dessen Spra-
+     annehmen und den Empfehlungen der medizinischen Fach-
+                                                                          che er nicht spricht, das Einkaufen in einem Geschäft auch
+     kräfte folgen.
+                                                                          ohne Sprachkenntnisse durch Handzeichen ermöglicht wird.
 
-Personenzentrierter Ansatz
-nach T. Kitwood
-Tom Kitwood distanziert sich mit seinem personenzentrierten Ansatz von der oft medizinisch geprägten Sichtweise auf
-Menschen mit Demenz, bei der häufig die hirnorganischen
-Veränderungen fokussiert werden. Statt dieser oft sehr defizitorientierten Sichtweise rückt er die psychosozialen Bedürfnisse von Menschen mit Demenz in den Mittelpunkt.
-Damit wird das Ziel verfolgt, das „Personsein“ von Menschen mit Demenz zu erhalten, zu fördern oder wiederherzustellen. Für Kitwood ist dabei „Personsein“ gleichbedeutend mit Wohlbefinden und beinhaltet
-● das Gefühl von Sicherheit, Vertrauen und Hoﬀnung,
-● Kontakt zu anderen Menschen zu haben und dazuzugehören,
-● etwas wert zu sein und
-● etwas tun und bewirken zu können.
-● Pflegefachkräfte müssen empathisch, wertschätzend und
-echt (= kongruent) sein, um das Wohlbefinden von Menschen mit Demenz zu unterstützen und zu fördern oder,
-wenn notwendig, wiederherstellen zu können.
 
-● Taktil-haptische Stimulation (= Tast- und Berührungssinn):
 
-Die Haut dient als natürliche Grenze zur Umwelt, stellt
-aber gleichzeitig auch eine Kontaktfläche dar. Bei Menschen, die in ihrer Wahrnehmung und Kommunikation
-eingeschränkt sind, kann Berührung als gute Möglichkeit
-zur Kontaktaufnahme verwendet werden. Hierbei achten
-Pflegefachkräfte auf klare und angekündigte sowie konstante Berührungen und vermeiden gleichzeitig Berührungen durch mehrere Personen.
-● Auditive Stimulation (= Hörsinn): Die Vielfalt der auditiven
-Reize muss teilweise reduziert werden, um die Aufmerksamkeit auf die Stimme zu lenken. Pflegefachkräfte schalten daher z. B. beim Kontakt mit dem Pflegeempfänger das
-Radio aus und achten darauf, dass nicht mehrere Personen
-gleichzeitig sprechen.
-● Orale und olfaktorische Stimulation (= Geschmacks- und
-Geruchssinn): Zur Aktivierung des Geschmackssinns können z. B. süße oder saure Speisen sowie Lieblingsspeisen
-angeboten werden. Den Geruchssinn aktivieren Pflegefachkräfte über biografiebezogene Düfte, z. B. Blumen für
-Gärtner oder Maschinenöl für Mechaniker.
-● Visuelle Stimulation (= Sehsinn): Zur visuellen Stimulation
-wird die Umgebung sinnvoll gestaltet. Hierfür können Fotos, Farben oder Dekorationsgegenstände mit biografischem Bezug verwendet werden.
-
-Berührungstherapie
-Psychobiografisches Pflegemodell
-nach Böhm
-Das von Prof. Erwin Böhm entwickelte Pflegemodell soll dazu beitragen, die Verhaltensweisen demenziell erkrankter
-Menschen besser zu verstehen und dadurch eine individuelle und reaktivierende Pflege zu ermöglichen. Böhm geht davon aus, dass Betroﬀene in frühere Phasen ihrer Prägungszeit (dies entspricht den ersten 20–30 Lebensjahren) zurückfallen, weshalb viele Verhaltensweisen durch die Kenntnisse der Biografie erklärbar werden. Bedeutsam ist dabei
-v. a. das Normalitätsprinzip. Darunter versteht Böhm die Annahme, dass jeder Mensch durch seine Kultur, Sozialisation
-und individuellen Erfahrungen geprägt wird. Diese Prägung
-bildet seine Normalität.
-Je besser es Pflegefachkräften gelingt, diese Normalität
-auch im pflegerischen Alltag zu berücksichtigen, desto besser wird auch eine (Re-)Aktivierung der Pflegeempfänger
-gelingen. So kann z. B. eine vertraute Umgebung dazu beitragen, einen Pflegeempfänger zu beruhigen und einen besseren Zugang zu ihm zu erlangen. Deshalb wird ein Zimmer,
-das mit alten Möbeln und Gegenständen ausgestattet ist,
-von Menschen mit Demenz häufig gut angenommen. Es ist
-jedoch zu beachten, dass individuelle und spezifische Maßnahmen notwendig sind, um Erinnerungen aus der Prägungszeit des Pflegeempfängers zu wecken und ein für ihn
-normales Umfeld zu schaﬀen. Dafür sind gute Kenntnisse
-des Pflegemodells, fundiertes Wissen über die Biografie des
-Betroﬀenen und eine hohe Reflexionsfähigkeit im Umgang
-mit Menschen mit Demenz erforderlich.
-
-Basale Stimulation
-Durch Maßnahmen der Basalen Stimulation soll die Wahrnehmung gefördert und Körper- sowie Bewegungserfahrungen angeregt werden. Es geht also darum, dass Menschen
-sich selbst und ihre Umwelt erfahren können. Hierfür werden verschiedene Arten der Stimulation unterschieden:
-
-Es gibt Hinweise darauf, dass die Berührungstherapie einen
-positiven Einfluss auf den Gemütszustand von Menschen
-mit eingeschränkter Wahrnehmung und Möglichkeit zur
-Kommunikation haben kann. Ebenso kann die Selbstwahrnehmung positiv beeinflusst werden.
-Sinnvoll kann v. a. die rhythmische Einreibung sein. Diese
-zeichnet sich durch rhythmische Streichbewegungen, meist
-in Kreisen oder Spiralen, aus. Die Berührungsintensität
-wechselt zwischen Phasen mit festem und leichtem Kontakt,
-wodurch die Selbstwahrnehmung unterstützt und eine positive Körpererfahrung ermöglicht werden soll. Der Mensch
-soll sich dadurch wieder als Ganzes erleben.
-
-Realitätsorientierungstraining (ROT)
-Dieses Training soll die Gedächtnisleistung fördern und die
-Orientierung der Pflegeempfänger verbessern (u. a. durch
-Orientierungshilfen). Das zentrale Element ist der Realitätsbezug, d. h., der Pflegeempfänger erhält bei jeder Gelegenheit grundlegende Informationen zu seiner Person sowie zu
-Zeit, Ort und Situation.
-
-Beispiel Orientierung fördern
-Beim Betreten des Zimmers der 83-jährigen Frau K., die eine
-Demenz im Anfangsstadium hat, begrüßt die Auszubildende
-sie wie folgt: „Guten Morgen, Frau K., heute ist Donnerstag,
-der 13. Mai. Wenn Sie bereit sind, helfe ich Ihnen jetzt bei der
-Körperpflege und begleite Sie ins Badezimmer, das sich gleich
-nebenan befindet.“
-
-Dem Pflegeempfänger werden bei Pflegemaßnahmen einfache Fragen gestellt, um ihm die Möglichkeit zur Selbstbestimmung zu geben und um ihm Erfolgserlebnisse zu bieten. Dabei werden richtige Antworten immer direkt bestärkt.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-757
-
+            I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen                267
+            Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+             Usage subject to terms and conditions of license.
 l
-35
+11    Mit Menschen zusammenarbeiten
 
-Pflege in Langzeiteinrichtungen
 
-Validation
-Validation ist eine Gesprächsform für Menschen mit Demenz, die von Naomi Feil konzipiert und von Nicole Richard
-unter dem Namen „Integrative Validation“ (IVA) weiterentwickelt wurde. Validation ist eine spezielle Kommunikationstechnik, bei der das individuelle Erleben des Menschen
-mit Demenz in den Vordergrund rückt. Es wird weniger auf
-der Inhaltsebene, sondern mehr auf der Beziehungsebene
-kommuniziert. Besonders wichtig ist, dass die Gefühle und
-Antriebe des Betroﬀenen wahrgenommen und respektiert
-sowie in kurzen Sätzen wiedergegeben werden. Antriebe
-sind z. B. Pflicht- oder Verantwortungsbewusstsein, Ehrgeiz,
-Pünktlichkeit oder Genauigkeit. Anschließend kann ein Gespräch auf einer allgemeineren Ebene geführt werden. Der
-Mensch mit Demenz fühlt sich dadurch verstanden und angenommen („Da ist jemand, der versteht, was ich fühle!“).
-Diese Methode kann das Vertrauensverhältnis zwischen
-Pflegeempfänger und Pflegefachkraft verbessern und das
-Wohlbefinden steigern.
+      Solche Rollenerwartungen funktionieren i. d. R. implizit,               Von Patienten wird erwartet, dass sie sich den Empfehlun-
+      d. h., sie müssen nicht ausgesprochen werden.                        gen der Fachkräfte unterordnen. Der Patient, der eigentlich
+                                                                           letztlich über alle Maßnahmen selbst entscheidet, scheint in
+                                                                           einem Gesundheitsbetrieb in eine abhängige und machtlose
+      Die Rolle von Pflegefachkräften                                      Rolle zu schlüpfen. Wird er z. B. von einer Pflegefachkraft
+      Von Angehörigen eines Berufs erwartet man implizit ein be-           unfreundlich behandelt, hat er zunächst kaum eine Möglich-
+      stimmtes Verhalten: Eine Journalistin hat ein großes sprach-         keit, sich dagegen zu wehren. Denn schließlich muss er sich
+      liches Geschick und eine gute Allgemeinbildung. Ein Koch             möglicherweise weiterhin von ihr waschen lassen. Patienten
+      legt bei der Ernährung Wert auf gesunde und frische Zuta-            bleibt kaum etwas anderes übrig, als sich an die vorgege-
+      ten und bereitet Speisen kreativ zu. Für professionelle Tätig-       benen Strukturen zu halten.
+      keiten existiert eine Vielzahl von Erwartungen.                         Die Patientenrolle erscheint vielen als eine unmündige.
+         Professionelle Beziehungen sind von den jeweiligen Er-            Daher ist es besonders wichtig, dem Patienten stets mit Res-
+      wartungen an die speziellen Berufsrollen geprägt, zu denen           pekt zu begegnen und ihn in alle Entscheidungen einzube-
+      sich deren Mitglieder bekennen und deren Erfüllung sie ge-           ziehen, soweit er dies wünscht. Das heißt: Pflegende sollten
+      genüber der Gesellschaft zugesagt haben.                             einem Frischoperierten erklären, warum es angezeigt ist,
+         Das ist besonders der Fall, wenn es sich dabei nicht um           postoperativ noch einige Zeit nüchtern zu bleiben, anstatt
+      eine Arbeit am Objekt, sondern an einem anderen Men-                 ihm zu sagen: „Sie dürfen noch nichts essen.“
+      schen handelt. So wird von Pflegefachkräften neben der                  Insbesondere chronisch kranke Patienten sind häufig
+      fachlichen Professionalität auch erwartet, dass sie sich in          selbst Experten ihrer Erkrankung. Sie übernehmen immer
+      ihre Patienten einfühlen und mit ihnen mitfühlen können              mehr die Rolle des informierten, mündigen Patienten. Pa-
+      (Empathie). Hier ist aber eine strikte Trennung zwischen Be-         tienten in dieser Rolle zu unterstützen, erfordert von Pflege-
+      rufsrolle und Alltagsrolle wichtig. Nähe in einer professio-         fachkräften deswegen eine hohe Professionalität im Umgang
+      nellen Beziehung sollte nicht mit privater Nähe verwechselt          mit diesen Patienten, weil es nicht die übliche Rolle eines
+      werden – auch wenn Gefühle wie Vertrauen oder Empathie               Patienten ist.
+      im Spiel sind. Zu viel Nähe kann z. B. dazu führen, dass sich
+      ein Patient in eine Pflegende verliebt, weil er erlebt, dass
+      sich jemand besonders intensiv um ihn kümmert.                           WISSEN TO GO
+         Persönliche Gefühle, Stimmungen und Einstellungen soll-
+      ten aber auch deshalb in den Hintergrund treten, damit die
+                                                                             Soziale Rollen
+      private und die berufliche Rolle der Pflegefachkraft sich
+      nicht vermischen oder zu einem Rollenkonflikt führen kön-              Der Begriﬀ „Rolle“ bezeichnet die expliziten (ausdrück-
+      nen. Pflegende sollten ihre Berufsrolle für die Zeit ihres             lichen) und impliziten (nicht ausdrücklich gesagten) Erwar-
+      Dienstes bestmöglich von ihren anderen Rollen trennen.                 tungen, die an die Mitglieder einer bestimmten Gruppe
+                                                                             gestellt werden. So hat man z. B. die Erwartung, dass ein
+                                                                             Pflegender seiner Berufsgruppe entsprechend bestimmte
+      Die Rolle von Patienten                                                Fähigkeiten und Kompetenzen besitzt und sich seinen Pa-
+      Der kranke Mensch wird im Gesundheitswesen zu einem                    tienten menschlich zugewandt verhält. Umgekehrt sollte
+      Patienten – alle anderen Rollen, die die Person in ihrem               ein Patient – dem Rollenkonzept „Patient“ gemäß – ange-
+      sonstigen Leben einnimmt, geraten ab diesem Zeitpunkt                  botene Hilfe annehmen und den Empfehlungen der medi-
+      i. d. R. in den Hintergrund (▶ Abb. 11.2). So verliert z. B. ein       zinischen Fachkräfte folgen.
+      Polizist als Patient in einer Klinik seine Rolle als Autoritäts-
+      person. Der Hochschulprofessor für Architektur erklärt nicht
+      mehr, sondern bekommt erklärt. Die Mutter kann sich nicht            Rollenkonflikte
+      um ihre Kinder kümmern, sondern ist selbst auf Hilfe ange-
+      wiesen.                                                              Interrollenkonflikt • Alle Menschen erfüllen in ihrem Alltag
+                                                                           mehrere unterschiedliche Rollen. Jede dieser Rollen ist mit
+                                                                           bestimmten Erwartungen verbunden: Die Erwartungen
+      Abb. 11.2 Die Rolle als Patient.                                     eines Ehemanns an seine Frau sind andere als die des Vor-
+                                                                           gesetzten an dieselbe Frau in ihrer Rolle als Angestellte. Die-
+                                                                           se unterschiedlichen Erwartungen können miteinander kon-
+                                                                           kurrieren oder gar widersprüchlich sein. Es liegt ein Inter-
+                                                                           rollenkonflikt vor. Für Pflegefachkräfte führt mitunter der
+                                                                           Schichtdienst (S. 162) zu einem solchen Rollenkonflikt. Die-
+                                                                           ser kann nämlich mit ihrer Rolle im Freundeskreis in Wider-
+                                                                           spruch geraten, wenn zu wenig Zeit für gemeinsame Aktivi-
+                                                                           täten bleibt.
 
-Beispiel Die Lebenswelt verstehen
-Herr B. ist nach dem Aufwachen sehr unruhig. Als die Pflegefachkraft ihm einen Kaﬀee anbietet, wird er laut: „Jetzt lass
-mich doch endlich gehen, ich muss zur Arbeit!“ Anstatt Herrn
-B. zu korrigieren, kann die Pflegefachkraft direkt die Gefühle
-und Antriebe ansprechen, die hinter dieser Aussage erkennbar
-sind: „Sie sind immer sehr pünktlich!“, „Sie waren schon immer
-so fleißig!“ oder „Auf Sie kann man sich einfach immer verlassen!“ Anschließend kann die Pflegefachkraft mit Herrn B. z. B.
-ein Gespräch über seine Arbeit führen oder darüber, wie wichtig Pünktlichkeit ist. Wenn sie das richtige Gefühl und den richtigen Antrieb anspricht, wird sich Herr B. vermutlich gerne auf
-das Gespräch einlassen, da seine Gefühle und Antriebe eine viel
-höhere Bedeutung für ihn haben als der Inhalt seiner ursprünglichen Aussage.
 
-Pflegefachkräfte sollten sich nicht entmutigen lassen, wenn
-ihr Gegenüber nicht so reagiert, wie sie es sich vorgestellt
-haben. Sie können prüfen, ob sie tatsächlich das richtige Gefühl bzw. den richtigen Antrieb angesprochen haben, und
-versuchen es einfach noch einmal. Auch wenn sie keinen Erfolg haben sollten, ist es besser, das Erleben des Pflegeempfängers wertzuschätzen und zu respektieren als korrigierend auf ihn einzuwirken.
 
-! Merke Sein Gegenüber verstehen
 
-Auch wenn die Technik der Validation ursprünglich für Menschen
-mit Demenz entwickelt wurde, lässt sie sich auch auf alle anderen
-Menschen übertragen. Schließlich tut es jedem von uns gut, wenn
-wir spüren, dass jemand auf uns eingeht und uns versteht. Vor allem in der stationären Langzeitversorgung ist dieser Aspekt besonders bedeutsam, da eine gute Beziehung zwischen Pflegefachkraft
-und Pflegeempfänger den Alltag positiv beeinflusst.
+      Im Krankenhaus nimmt ein kranker Mensch die Rolle des Patien-
+      ten ein. Alle anderen Rollen treten zunächst in den Hintergrund.
+      Foto: K. Oborny, Thieme
 
-10-Minuten-Aktivierung
-Die Pflegeempfänger in stationären Langzeiteinrichtungen
-können sich aufgrund ihrer Erkrankungen oft nur für eine
-begrenzte Zeit konzentrieren. Die 10-Minuten-Aktivierung
-nutzt diesen Zeitraum und kann auch bei knappen Zeitressourcen der Pflegefachkräfte fast täglich eingesetzt werden.
-Für die 10-Minuten-Aktivierung werden in verschiedenen
-758
 
-Abb. 35.3 10-Minuten-Aktivierung.
 
-Wenn die Pflegeempfängerin ihr Leben lang ihre Kleider selbst
-genäht hat, dann wecken Stoﬀreste, Fäden, Fingerhut und Nadelkissen viele Erinnerungen (Symbolbild). Foto: K. Oborny, Thieme
+268     I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+        Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+         Usage subject to terms and conditions of license.
+                                                                                                      Soziale Gruppen und Teams
 
-Themenkästen (z. B. Schuhkartons) Materialien zu unterschiedlichen Themen gesammelt (▶ Abb. 35.3). Für das Thema „Kochen“ kann die Kiste z. B. einen Kochlöﬀel, getrocknete Kräuter, einen Küchenschwamm und weitere Küchenutensilien enthalten. Folgende Aspekte sind zu beachten:
-● Das Thema sollte für den Pflegeempfänger so gewählt
-werden, dass er der „Experte“ ist. Das heißt, er sollte Interesse an dem Thema haben und etwas dazu erzählen oder
-erklären können.
-● Nach Möglichkeit sollte für jeden Sinn etwas in der Themenkiste sein, also Gegenstände, die der Pflegeempfänger
-anfassen, riechen, schmecken, sehen und hören kann.
-● Es geht nicht immer darum, dass der Pflegeempfänger aktiv etwas mit den Gegenständen tut. Bereits wenn ihm
-Fragen gestellt werden oder etwas riechen oder anfassen
-kann, werden Erinnerungen geweckt.
-Der Vorteil ist, dass die Pflegefachkraft nur wenig Vorbereitungszeit braucht. Zudem kann sie die Methode spontan
-verwenden und jederzeit an die Pflegeempfänger anpassen.
-Die 10-Minuten-Aktivierung fördert das Gedächtnis sowie
-das Auﬀassungs-, Erinnerungs- und Konzentrationsvermögen des Pflegeempfängers. Durch einfache Angebote und
-den klar begrenzten zeitlichen Umfang wird eine kognitive
-Überforderung vermieden.
 
-Erinnerungspflege
-Die Erinnerungspflege ist nicht nur ein Aktivierungsangebot, sondern auch ein wichtiger Bestandteil der täglichen
-Zusammenarbeit von Pflegefachkräften und Pflegeempfängern in stationären Langzeiteinrichtungen. Die Biografie des
-Pflegeempfängers ist die Grundlage, die von allen Pflegefachkräften bei allen Pflege- und Betreuungsmaßnahmen
-berücksichtigt werden sollte.
-Bei gezielten Aktivitäten können bestimmte Gegenstände
-oder Fotos genutzt werden, um den Pflegeempfänger z. B.
-an seine berufliche Tätigkeit oder seine liebste Freizeitbeschäftigung zu erinnern (▶ Abb. 35.4). Bei den täglichen
-Pflegemaßnahmen lassen sich Erinnerungen wecken, indem
-z. B. das Deo und die Seife aus dem Zuhause des Pflegeempfängers verwendet werden. Die Erinnerungspflege kann
-zwar die kognitiven Fähigkeiten des Pflegeempfängers nicht
-verbessern, fördert aber sein Wohlbefinden und damit seine
-Ressourcen. Bei jüngeren Pflegeempfängern sind diese Ge-
+                                                                       Gruppen unterscheiden sich untereinander darin, wie
+                                                                     stark ihr Zusammenhalt ist. Man spricht auch von einer Ko-
+  Beispiel Interrollenkonflikt                                       häsion. Je größer die Kohäsion, desto größer ist das Bestre-
+                                                                     ben der Mitglieder, in einer Gruppe zu verbleiben.
+  Auf der Station sind mehrere Pflegende erkrankt und die Stati-
+  onsleitung erwartet von der Pflegefachkraft Johanna T., dass
+  sie am Wochenende eine zusätzliche Schicht übernimmt. Jo-
+                                                                     11.3.2 Formelle und informelle
+  hannas Freund wird enttäuscht sein, weil er einen Großteil des     Gruppen
+  Wochenendes ohne seine Freundin verbringen muss.
+                                                                     ● Formelle Gruppe: Ziele, Normen    und Rollen der Gruppe
+                                                                       sind oﬃziell festgesetzt. Arbeitsgruppen, in denen Lei-
+Intrarollenkonflikt • Werden unterschiedliche Erwartungen              tungspositionen und oﬃzielle Zuständigkeiten klar fest-
+an dieselbe Rolle eines Menschen gerichtet, kann daraus ein            gelegt sind, sind typische formelle Gruppen. Auch eine
+Intrarollenkonflikt entstehen, z. B. wenn gleichzeitig ein An-         Schulklasse ist eine formelle Gruppe, in der sich informelle
+gehöriger informiert werden möchte, der Arzt erwartet, dass            Gruppen bilden.
+                                                                     ● Informelle Gruppe: Sie werden in Bezug auf Ziele, Normen
+die Pflegende assistiert, und ein Patient beim Toilettengang
+unterstützt werden muss. Denn einerseits ist ihr Ziel, den             und Rollenverteilungen nicht geplant, sondern entwickeln
+Arzt bestmöglich bei medizinischen Maßnahmen zu unter-                 sich spontan. Freundeskreise sind hierfür typische Beispie-
+stützen. Andererseits vertreten Pflegefachkräfte aber vor al-          le.
+lem die Interessen ihrer Patienten. Hinzu kommen Erwar-
+tungen der Angehörigen. Mitunter widersprechen sich die              11.3.3 Gruppenphänomene
+Erwartungen der unterschiedlichen Personen an eine Pfle-
+gefachkraft.                                                         Nachteile großer Gruppen • Die Leistungsfähigkeit einer
+                                                                     Gruppe wächst nicht unbedingt mit der Anzahl ihrer Mit-
+                                                                     glieder. In einer großen Gruppe haben die einzelnen Mit-
+                                                                     glieder weniger „Redezeit“ als in einer kleineren und sie
+  Beispiel Intrarollenkonflikte                                      können ihre Ideen und Anregungen in geringerem Maße
+                                                                     einbringen. So fühlen sich die Mitglieder möglicherweise
+  Eine multimorbide Patientin fühlt sich müde und kraftlos. Zum      weniger verantwortlich für die Leistungen der Gruppe. Dies
+  wiederholten Mal verweigert sie die ärztlich verordneten mobi-     kann zu Motivationsverlusten führen und die Gruppenmit-
+  lisierenden Maßnahmen. Die zuständige Pflegefachkraft akzep-       glieder strengen sich weniger an. Dieser Eﬀekt nennt sich
+  tiert dies und lässt die Patientin, soweit es geht, in Ruhe. Da-   „social loafing“ (soziales Faulenzen). In großen Gruppen set-
+  raufhin beschwert sich die Tochter der Frau. Sie verlangt, dass    zen sich außerdem vor allem dominante Gruppenmitglieder
+  ihre Mutter bestmöglich gefördert wird, damit sie bald wieder      durch.
+  fit ist. Die Pflegefachkraft fühlt sich den Bedürfnissen der Pa-
+  tienten verpflichtet, möchte aber auch den dem Wunsch der          Vorteile großer Gruppen • Aber eine große Gruppe bietet
+  Angehörigen entsprechen.                                           auch Vorteile. Zum Beispiel verfügt sie über ein größeres
+      Die Pflegefachkraft versucht eine Lösung zu finden. In einem   Wissen. Indem sie Ressourcen bündelt, kann sie unter Um-
+  ausführlichen Gespräch versucht sie, der Patientin den Nutzen      ständen bessere Leistungen erbringen und dadurch eine hö-
+  der Maßnahme zu erläutern, ohne Druck aufzubauen. Am               here Zufriedenheit erreichen. Eine größere Gruppe kann
+  Ende respektiert sie die Entscheidung der Patientin, die sie so    Probleme von verschiedenen Blickwinkeln aus angehen
+  auch der Tochter mitteilt.                                         (▶ Abb. 11.3). Im günstigsten Fall motivieren sich die Mit-
+                                                                     glieder gegenseitig.
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
+11.3 Soziale Gruppen und                                             Abb. 11.3 Individualität ist Trumpf.
+Teams
+11.3.1 Soziale Gruppen
+Räumliche Nähe und bloßes Miteinander alleine machen
+noch keine soziale Gruppe aus. Hier spricht man stattdessen
+von einem Aggregat. Zu einer „echten“ sozialen Gruppe wird
+eine Personenkonstellation erst, wenn zwischen den Mit-
+gliedern eine Interaktion (wechselseitige Beeinflussung) be-
+steht.
 
-Wohnen und Alltag
-Abb. 35.4 Erinnerungen wecken.
+Definition Soziale Gruppe
+Eine soziale Gruppe besteht aus mindestens 2 Personen, die zur Er-
+reichung gemeinsamer Ziele, Interessen und Handlungserlebnisse
+über einen längeren Zeitraum miteinander kommunizieren und in-
+teragieren und ein Gefühl der Zusammengehörigkeit entwickeln.        Gruppen profitieren davon, dass jedes Teammitglied seine ganz
+                                                                     individuellen Stärken einbringen kann. So fügt sich im Prozess
+Eine Gruppe zeichnet sich durch gemeinsame Normen und                des gemeinsamen Arbeitens, ähnlich wie bei einem Puzzle, das
+eine Aufgabenverteilung aus. Dadurch ist sie fähig, bestimm-         Beste der Einzelnen zu einem perfekten Gesamtbild zusammen
+te Ziele zu erreichen und eine eigene Identität zu entwickeln        (Symbolbild). © shock/stock.adobe.com
+und aufrechtzuerhalten.
 
-Fotos können helfen, die Erinnerung an das eigene Leben und
-die eigene Identität lebendig zu halten. Das gibt den Erkrankten
-Sicherheit (Symbolbild). © jovannig/stock.adobe.com
 
-spräche ebenfalls bedeutsam und tragen dazu bei, die Beziehung zwischen Pflegefachkräften und Pflegeempfängern zu
-verbessern.
-
-Biografiearbeit
-Die Biografie eines Menschen ist die Grundlage für eine förderliche Beschäftigung und Aktivierung von Pflegeempfängern in stationären Langzeiteinrichtungen. Validation, 10Minuten-Aktivierung und Erinnerungspflege lassen sich nur
-dann als therapeutisch sinnvolle Mittel einsetzen, wenn die
-Biografie des Menschen bekannt ist. Dieses Wissen liefert
-die notwendigen Ansatzpunkte für eine aktivierende Kommunikation und Interaktion. Die Biografie eines Menschen
-ist mehr als nur die Ansammlung von Eckdaten, wie Name,
-Geburtsort, Ausbildung und Beruf. Am hilfreichsten sind
-meist die „kleinen Lebensgeschichten“, da sie häufig noch
-lange abrufbar sind und eine positive Wirkung auf den Menschen haben.
-
-Beispiel Die Biografie berücksichtigen
-Die 85-jährige Frau M. leidet unter einer fortgeschrittenen Demenz und spricht nur noch sehr selten. Sie reagiert weder auf
-ihren Nachnamen noch auf ihren Vornamen. Auch bei ihrem
-Geburtsnamen zeigt sie keine Reaktion. Von Frau M.s Tochter
-erfährt die Pflegefachkraft, dass ihre Mutter bis zu ihrem 70.
-Lebensjahr in einem Kiosk Lottoscheine verkauft hat und von
-allen nur „Lottofee“ genannt wurde. Die Pflegefachkraft kann
-Frau M. mit ihrem altbekannten Spitznamen ansprechen und
-evtl. eine 10-Minuten-Aktivierung zu diesem Thema durchführen.
-
-Snoezelen
-Diese Methode wurde in den Niederlanden als Freizeitaktivität in der Pflege von Menschen mit Behinderung entwickelt. „Snoezelen“ (ausgesprochen „snuselen“) ist ein
-Kunstwort und besteht aus den niederländischen Wörtern
-„snuﬀelen“ (= schnüﬀeln) und „doezelen“ (= dösen). Snoezelen nutzt sensorische Stimulation, um Sicherheit zu vermitteln, Entspannung zu ermöglichen und Aggressionen abzubauen.
-Pflegefachkräfte können spezielle Snoezelenräume oder
-Snoezelenwagen nutzen. Snoezelenwagen sind mobil und
-daher auf allen Wohnbereichen einsetzbar. Auf diesen Wagen können sich u. a. Lichtspiele und -projektoren, Duftlampen, Kuscheltiere oder Spielkugeln befinden. Der Wagen
-wird vorübergehend im Zimmer des Pflegeempfängers aufgestellt und der Pflegeempfänger erhält visuelle, akustische
-oder olfaktorische Reize. So lässt sich eine sensorische Deprivation vermeiden, siehe Kap. „Depritvationsprophylaxe“
-(S. 434). Snoezelenräume sind für alle Pflegeempfänger geeignet, die Ruhe und Entspannung suchen. Für Pflegeempfänger mit fortgeschrittenem Pflegebedarf wird eher der
-Snoezelenwagen eingesetzt.
-
-WISSEN TO GO
-Wohnen und Alltag in einer stationären
-Langzeiteinrichtung
-● Der Einzug in eine Langzeiteinrichtung ist ein wichtiger
-
-Einschnitt im Leben.
-● Ein Informationsgespräch vor dem Einzug kann die Vor-
-
-stellungen des Pflegeempfängers mit den Möglichkeiten
-der Einrichtung übereinbringen.
-● Einzug und Eingewöhnung sollten durch eine feste Bezugspflegefachkraft begleitet werden.
-● Viele Einrichtungen haben einen eigenen Umgang mit
-dem Tod gefunden (z. B. Trauerecken).
-Psychosoziale Begleitung
-Geeignete Techniken für die Förderung der Bewohner
-sind:
-● Realitätsorientierungstraining (ROT)
-● Validation
-● 10-Minuten-Aktivierung
-● Erinnerungspflege
-● Biografiearbeit
-● Snoezelen
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-759
-
-36
-
-Grundlagen der Pflege von
-Menschen mit geistiger
-Behinderung
-
-36.1 Kompetent pflegen
-Die Pflege von Menschen mit geistiger Behinderung erfordert besondere Flexibilität und Kompetenzen von den Pflegenden. Zu den „normalen“ Kenntnissen von Krankheit, Kinderkrankenpflege, Altenpflege oder (geronto-)psychiatrischer Pflege kommen Kompetenzen auf dem Gebiet der
-Heilerziehungspflege hinzu. Die Pflege von Menschen mit
-geistiger Behinderung stellt zudem hohe Ansprüche an die
-soziale Kompetenz der Pflegefachkräfte.
-In diesem Kapitel lernen Sie u. a.,
-● die häufigsten Ursachen geistiger Behinderung kennen,
-● mit welchen Begleiterkrankungen Sie bei Pflegeempfängern mit einer geistigen Behinderung rechnen sollten und
-wodurch diese begünstigt werden können,
-● in welchen Gesetzen Sie Informationen zu den Rechten
-von Menschen mit (geistiger) Behinderung finden und z. B.
-welche Hilfsmittel diesen zur Verfügung stehen,
-● worauf Sie bei der Pflege eines Menschen mit geistiger Behinderung, v. a. im Krankenhaus, achten sollten und wie
-Sie die Pflege für diesen so gut wie möglich gestalten können.
-
-36.2 Grundlagen
-
-ben – wie alle – den Wunsch nach Eigenständigkeit. Sie und
-ihre Bezugspersonen benötigen dabei individuelle Unterstützung, die im schnellen und anspruchsvollen Pflegealltag
-nicht immer (leicht) umsetzbar ist.
-Die Pflege von Menschen mit geistiger Behinderung findet
-an vielen Orten statt. Zu Hause durch Bezugspersonen mit
-Unterstützung eines ambulanten Pflegedienstes, in Tagespflegeeinrichtungen oder in Einrichtungen der stationären
-Langzeitpflege.
-Ein Aufenthalt im Krankenhaus stellt sowohl für Menschen mit geistiger Behinderung als auch für Pflegende eine
-besondere Herausforderung dar. Für Menschen mit geistiger
-Behinderung ist eine Änderung der gewohnten Lebensumstände wie ein Krankenhausaufhalt oder der Umzug in
-eine Pflegeeinrichtung oft noch unverständlicher und beängstigender als für Menschen ohne Behinderung. Ihre
-Möglichkeiten, sich auf neue Situationen mit nicht vertrauten Menschen (Pflegende, Therapeuten, Ärzte) einzustellen,
-sind begrenzt.
-Nicht selten haben Menschen mit geistiger Behinderung
-zusätzliche Behinderungen wie Spastiken, Schluckstörungen, Sinnesbehinderungen oder Mobilitätseinschränkungen.
-Menschen mit geistiger Behinderung waren als Pflegeempfänger in der Klinik – vielleicht mit Ausnahme von
-Kinderstationen – lange Zeit eine Ausnahme. Das wird sich
-in Zukunft vermutlich ändern. Heute haben Menschen mit
-geistiger Behinderung eine Lebenserwartung wie alle anderen auch. Synonyme für geistige Behinderung sind: Intelligenzminderung, mentale Retardierung, Lernbehinderung.
-
-Etwa 2–3 % der Bevölkerung sind laut Schätzungen von einer
-leichten, bis zu 0,5 % von einer schweren Form der geistigen
-Behinderung betroﬀen.
-Menschen mit geistiger Behinderung möchten und sollen
-gleichberechtigt an allen Lebensbereichen teilhaben. Sie ha760
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Kompetent pflegen
-
-▶ S. 760
-
-Was heißt geistige Behinderung? ▶ S. 761
-Ursachen geistiger Behinderungen ▶ S. 761
-Grundlagen
-
-Häufige Begleiterkrankungen ▶ S. 762
-Inklusion von Menschen mit geistiger Behinderung ▶ S. 764
-Rechtliche Grundlagen ▶ S. 765
-
-Situation des Pflegeempfängers ▶ S. 765
-Empfehlungen zum Umgang ▶ S. 766
-Das Kapitel vermittelt
-Kompetenzen im
-KB I (v.a. I.5 und I.6),
-II.1, II.3 und IV.2c
-
-Pflegeschwerpunkte
-
-Veränderungen wahrnehmen
-
-Eine eindeutige und allgemeingültige Definition gibt es
-nicht. Die Weltgesundheitsorganisation (Regionalbüro Europa) definiert eine geistige Behinderung folgendermaßen:
-
-Definition Geistige Behinderung
-„Geistige Behinderung bedeutet eine signifikant verringerte Fähigkeit, neue oder komplexe Informationen zu verstehen und neue Fähigkeiten zu erlernen und anzuwenden (beeinträchtigte Intelligenz).
-Dadurch verringert sich die Fähigkeit, ein unabhängiges Leben zu
-führen (beeinträchtigte soziale Kompetenz). Dieser Prozess beginnt
-vor dem Erwachsenenalter und hat dauerhafte Auswirkungen auf
-die Entwicklung.
-Behinderung ist nicht nur von der individuellen Gesundheit oder
-den Beeinträchtigungen eines Kindes abhängig, sondern hängt auch
-entscheidend davon ab, in welchem Maße die vorhandenen Rahmenbedingungen seine vollständige Beteiligung am gesellschaftlichen Leben begünstigen (WHO 2020).“
-Allerdings gibt es auch geistige Behinderungen, die im Erwachsenenalter, z. B. durch einen Unfall mit Gehirnverletzung, erworben werden. Die Internationale statistische Klassifikation der Krankheiten und verwandter Gesundheitsprobleme (ICD-10) spricht bei einer geistigen Behinderung von
-einem „Zustand von verzögerter oder unvollständiger Entwicklung der geistigen Fähigkeiten“. Eine allgemeingültige
-Definition ist schwierig, da die Symptome, Ausprägungen
-und Eigenschaften von Menschen mit geistigen Behinderungen zu vielfältig sind, als dass sie sich in einen Satz fassen
-ließen.
-Eine geistige Behinderung zeigt sich häufig bereits im Kindes- oder Jugendalter und kann ganz unterschiedlich ausgeprägt sein. Abhängig vom Intelligenzquotienten (IQ) wird
-nach der ICD-10 zwischen leichter, mittelgradiger, schwerer
-
-▶ S. 767
-
-Klinik: individuellen Tagesablauf berücksichtigen ▶ S. 767
-Klinik: Aufnahme- und Entlassungsmanagement anpassen ▶ S. 767
-Weitere Tipps
-
-36.2.1 Was heißt geistige
-Behinderung?
-
-▶ S. 766
-
-Pflege empfängergerecht planen
-
-▶ S. 768
-
-und schwerster geistiger Behinderung unterschieden. Zwar
-sind die intellektuellen Fähigkeiten vermindert, trotzdem
-empfinden Menschen mit geistiger Behinderung Freude und
-Trauer, sie können unterscheiden zwischen Gut und Böse
-und sind individuelle Persönlichkeiten wie jeder andere
-auch. Geistig behinderte Menschen haben zudem häufig
-eine hohe emotionale Intelligenz.
-
-ACHTUNG
-Geistige Behinderung ist keine Krankheit!
-
-36.2.2 Ursachen geistiger
-Behinderungen
-Eine geistige Behinderung von Geburt an kann verschiedene
-Ursachen haben. Am häufigsten sind genetische Mutationen.
-Diese entstehen in den meisten Fällen spontan, selten werden Gendefekte vererbt. Auch ein Sauerstoﬀmangel während der Schwangerschaft oder der Geburt kann eine geistige Behinderung auslösen. Alkohol oder sonstige Drogen
-während der Schwangerschaft können die Entwicklung des
-Kindes stören (z. B. fetales Alkoholsyndrom – FAS). Zu den
-Ursachen für eine geistige Behinderung zählen u. a.:
-● Genetische Mutationen oder Chromosomenanomalien:
-Der häufigste chromosomale Defekt ist das Down-Syndrom (Trisomie 21). Hier liegt das 21. Chromosom 3-fach
-statt doppelt vor (daher der Name Trisomie 21). Ursache
-ist, dass anstatt eines Chromosoms 21 gleich zwei in eine
-Keimzelle gelangen. Dies kommt v. a. mit steigendem Alter
-der Mutter gehäuft vor. Die zweithäufigste Chromosomenanomalie ist das Fragile-X-Syndrom, hier ist auf dem XChromosom ein kurzer Abschnitt der Erbinformation fehlerhaft. Menschen mit Down-Syndrom haben mandelförmige Augen, einen eher gedrungenen Körperbau, kurze
-und breite Hände und Füße, außerdem häufig eine Vierfingerfurche sowie einen vergrößerten Abstand zwischen
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-761
-
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen       269
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
 l
-36
+11    Mit Menschen zusammenarbeiten
 
-Menschen mit geistiger Behinderung
-Abb. 36.1 Keine Sackgasse – einfach ein anderer Weg.
 
-sprechen nicht, nehmen nicht an Spielen teil, zeigen kein Interesse an Beziehungen. Typisch für diese Kinder ist: Sie
-wiederholen bestimmte Verhaltensweisen oder aufgeschnappte Satzfragmente. Ausführliche Informationen
-zum Autismus finden Sie im Kap. „Pflege von Menschen mit
-Erkrankungen der Psyche“ (S. 1382).
+        In jedem Fall gilt: Die Gruppenleistung ist nicht die Sum-          sames Ziel definiert, sie arbeiten regelmäßig miteinander
+      me der Einzelleistungen. Sie kann höher oder niedriger sein.          und entwickeln so ein stärkendes „Wir-Gefühl“.
+      Denn innerhalb einer Gruppe finden viele Interaktionspro-           ● Kommunikation wird großgeschrieben: Jeder redet mit je-
 
-WISSEN TO GO
-Ursachen geistiger Behinderungen
+      zesse statt, die ihre Leistung beeinflussen.                          dem.
+                                                                          ● Jeder hat Interesse am Wohlbefinden des anderen. Jeder
 
-Es kommt auf die richtige Förderung an: Der Spanier Pablo Pineda Ferrer z. B. hat ein abgeschlossenes Universitätsstudium und
-ist Lehrer und Autor; der Amerikaner Chris Burke ist Sänger und
-Schauspieler mit einer eigenen Fernsehserie. Potenziale variieren
-– völlig unabhängig von einer Behinderung.
+      Konformitätsdruck • Die Tendenz einer Gruppe, gemeinsame              trägt immer wieder etwas für eine gute Zusammenarbeit
+      Verhaltensregeln und -vorschriften zu entwickeln, nennt               bei. Die Mitglieder schenken einander Anerkennung und
+      man Konformität. Sie nachhaltig durchzusetzen, nennt man              schätzen die Leistung der anderen.
+      Konformitätsdruck. Dieses Phänomen wird häufig in sozia-            ● Sie sind bereit, voneinander zu lernen und ihr Wissen an
 
-der 1. und 2. Zehe (Sandalenfurche). Oft bestehen Konzentrations- und Lernschwierigkeiten. Ihre Denkfähigkeit variiert, sie können sich gleichwohl sehr gut intellektuell
-entwickeln – bei entsprechender Förderung (▶ Abb. 36.1).
-Die inneren Organe sind oft parallel von Fehlbildungen betroﬀen. Sehr häufig sind Vorhof- oder Ventrikelseptumdefekte, seltener Darmfehlbildungen (z. B. Duodenalstenose,
-Morbus Hirschsprung).
-● Pränatale Schädigungen (Schädigungen vor der Geburt):
-Fehlbildungen des Nervensystems (Makrozephalie, Mikrozephalie), fetaler Hirninfarkt, Infektionen (Röteln, Toxoplasmose), chemische Einflüsse (Drogen, Medikamente),
-Strahlen, Umweltbelastungen.
-● Perinatale Schädigungen (Schädigungen während der Geburt): Frühgeburt, Hypoxisch-ischämische Enzephalopathie (unzureichende Versorgung des Hirngewebes mit
-Sauerstoﬀ und Blut).
-● Postnatale Schädigungen (Schädigungen nach der Geburt): entzündliche Erkrankungen des Zentralnervensystems, Schädel-Hirn-Trauma, Hirntumoren, Hirnschädigungen durch Intoxikationen, Hypoxie (Sauerstoﬀmangel),
-Stoﬀwechselkrisen, psychiatrische Störungen.
-Hypoxie – Zerebralparese • Kommt es während der Geburt
-oder danach zu einer Hypoxie, wird das Hirngewebe geschädigt. Häufig sind permanente Störungen der Bewegung, Haltung und der motorischen Funktion die Folge. Typisch für
-die Zerebralparese sind Spastiken (Steifheit der Muskulatur
-und dadurch bedingte langsame Bewegungen), Athetose
-(unwillkürliche, verkrampfte Bewegungen) und Ataxie (unkoordinierte und überschüssige Bewegungen).
-Die Krankheitsbilder werden als Zerebralparese zusammengefasst. Häufig sind diese von Störungen der Sprache,
-des Hörens, Sehens oder der Wahrnehmung sowie von geistigen Behinderungen begleitet. Auch eine Epilepsie kann
-vorliegen.
-Psychiatrische Störungen – Autismus-Spektrum-Störungen •
-Autismus-Spektrum-Störungen sind in Einrichtungen der
-Behindertenhilfe recht häufig. Sie zählen zu den psychischen
-Behinderungen, die Intelligenz der Betroﬀenen ist oft gemindert. Unter der Autismus-Spektrum-Störung werden die
-Diagnosen frühkindlicher Autismus, Asperger-Syndrom und
-atypischer Autismus zusammengefasst. Kinder mit frühkindlichem Autismus stellen z. B. meist noch vor ihrem 3.
-Lebensjahr die Kommunikation mit Mitmenschen ein: Sie
-762
+      len Gruppen beschrieben. Das einzelne Gruppenmitglied hat             die anderen weiterzugeben. Sie tolerieren, wenn einmal
+      das Gefühl, sich konform verhalten zu müssen. Gruppenmit-             nicht alles perfekt läuft.
+      glieder fügen sich mitunter sogar dann dem Gruppendruck,            ● Auch Humor findet seinen Platz, aber nicht auf Kosten
 
-Zu den Ursachen einer geistigen Behinderung zählen u. a.:
-● Genetische Mutationen oder Chromosomenanomalien: Down-Syndrom (Trisomie 21) mit Verdreifachung
-des Chromosom 21, Fragile-X-Syndrom.
-● Pränatale Schädigungen (Schädigungen vor der Geburt): Fehlbildungen des Nervensystems (Makrozephalie,
-Mikrozephalie), fetaler Hirninfarkt, Infektionen (Röteln,
-Toxoplasmose), chemische Einflüsse (Drogen, Medikamente), Strahlen, Umweltbelastungen.
-● Perinatale Schädigungen (Schädigungen während der
-Geburt): Frühgeburt, Hypoxisch-ischämische Enzephalopathie (unzureichende Versorgung des Hirngewebes mit
-Sauerstoﬀ und Blut).
-● Postnatale Schädigungen (Schädigungen nach der Geburt): entzündliche Erkrankungen des Zentralnervensystems, Schädel-Hirn-Trauma, Hirntumoren, Hirnschädigungen durch Intoxikationen, Hypoxie (Sauerstoﬀmangel), Stoﬀwechselkrisen, psychiatrische Störungen (z. B.
-Autismus-Spektrum-Störung).
+      wenn sie mit den gegebenen Verhaltensregeln nicht über-               eines anderen.
+      einstimmen.
+                                                                          Kennzeichen von Teamarbeit • Dies sind:
+      Groupthink (Gruppendenken) • Davon spricht man, wenn die            ● Es besteht ein starkes „Wir-Gefühl“.
 
-36.2.3 Häufige
-Begleiterkrankungen
-Alle bekannten körperlichen und psychischen Erkrankungen
-können auch bei Menschen mit geistiger Behinderung auftreten. Nur ist es manchmal schwer, sie zu erkennen. Einige
-Erkrankungen treten bei Menschen mit geistiger Behinderung jedoch häufiger auf als gewöhnlich, weil in dem Fall
-eine Prädisposition (Empfänglichkeit) für bestimmte Erkrankungen vorliegt. Im Folgenden werden einige dieser Erkrankungen vorgestellt (▶ Abb. 36.2).
+      Mitglieder einer Gruppe ihre Auﬀassungen für unantastbar            ● Jeder Einzelne übernimmt Verantwortung sowohl für die
 
-Abb. 36.2 Begleiterkrankungen.
-Epilepsie Spastiken
-Sehbeeinträchtigung
-Hörbeeinträchtigung
-Zahnerkrankungen
-Reflux
-Skoliose
-Obstipation
-Skelettdeformationen
+      halten und keine Kritik von außen zulassen. Dies beein-               eigene als auch für die Leistung der Gruppe.
+      trächtigt das Urteilvermögen, was zu gefährlichen Fehlent-          ● Die einzelnen Mitglieder unterstützen und ergänzen sich.
 
-!
+      scheidungen führen kann.                                            ● Es wird oﬀen gesprochen.
+                                                                          ● Neben der Gruppenleistung sind auch Erfolge einzelner
 
-Achtung bei ...
+                                                                            Mitglieder möglich und erwünscht.
+      11.3.4 Von der Gruppe zum Team                                      ● Alle Mitglieder engagieren sich gleichermaßen und sind
 
-• der Gabe von
-Antikonvulsiva
-Reflux, Zahnfleischwucherungen
-• Korsettanwendung
-Reflux
-• zu langer Immobilität
-Obstipation,
-Skoliose
+      Viele Arbeitsgruppen bezeichnen sich gerne als Team. Doch             hoch motiviert.
+                                                                          ● Die Zusammenarbeit ist zielorientiert und eﬃzient.
+      was macht eigentlich ein Team aus? Der Begriﬀ stammt ur-
+      sprünglich aus dem Sport, hat aber in den vergangenen
+      Jahrzehnten vermehrt Einzug in das Arbeitsleben gehalten.
+                                                                              WISSEN TO GO
+      Definition Team
+      Ein Team ist eine leistungsfähige Gruppe mit gemeinsamer Zielset-     Gruppen und Teams
+      zung und der Verantwortung für einen geschlossenen Arbeitspro-
+                                                                            Eine soziale Gruppe besteht aus mindestens 2 Personen,
+      zess. Zudem weist ein Team intensive wechselseitige Beziehungen
+                                                                            die zur Erreichung gemeinsamer Ziele, Interessen und
+      und Interaktionen sowie einen ausgeprägten Gemeinschaftssinn
+                                                                            Handlungserlebnisse über einen längeren Zeitraum mit-
+      und einen starken Gruppenzusammenhalt auf (Vergnaud 2004).
+                                                                            einander kommunizieren und interagieren und ein Gefühl
+                                                                            der Zusammengehörigkeit entwickeln.
+      „Sind Sie teamfähig?“ – „Ja, klar!“ Wer in einem Bewer-
+                                                                               Ein Team ist eine soziale Gruppe mit einem besonders
+      bungsgespräch diese Frage gestellt bekommt, antwortet
+                                                                            starken „Wir“-Gefühl, das sich für seine Leistungen ge-
+      i. d. R. mit einem überzeugten Ja. Wenn das alle sagen und
+                                                                            meinsam verantwortlich fühlt und in dem die Mitglieder in
+      auch so meinen, bleibt die Frage: Wieso gibt es in so vielen
+                                                                            hohem Maß miteinander in Beziehung treten.
+      Teams im Pflegealltag Unstimmigkeiten, Schwierigkeiten,
+      Ablehnung, Machtkämpfe und wenig erfreuliche Zusam-
+      menarbeit? Oder: Warum sind viele Arbeitsgruppen eigent-
+      lich keine Teams im oben genannten Sinne? Auch hier gilt            Phasen der Teamentwicklung
+      oﬀenbar: Gesagt ist leichter als getan. Was also braucht es,        Jedes Team erlebt Entwicklungs- und Reifephasen. Erkennt
+      um aus einer Gruppe, in der die einzelnen Individuen formal         man, in welchem Entwicklungsstand sich ein Team befindet,
+      zusammenarbeiten, ein wirkliches Team werden zu lassen?             besteht die Möglichkeit, steuernd einzugreifen. Mit jedem
+                                                                          neuen Teammitglied beginnt die Teamentwicklung von vor-
+      Das gemeinsame Ziel • In einem Team brauchen alle Mitglie-          ne und sollte vom Teamleiter in die richtige Richtung ge-
+      der ein gemeinsames Ziel bzw. eine gemeinsame Aufgabe,              steuert werden. Ein Modell, das die Teambildung beschreibt,
+      mit der sich jeder Einzelne identifizieren kann. Für ein Pfle-      ist das Phasenmodell von Tuckman (1965). Er beschreibt
+      geteam heißt das gemeinsame Ziel z. B.: „Wir engagieren             eine Entwicklung in 5 Phasen (▶ Abb. 11.4).
+      uns miteinander für pflege- und hilfebedürftige Menschen,
+      die krank oder alt sind. Das Ziel unserer Pflege ist, die Ge-       Phase 1: Orientierung (Forming) • Kennenlernphasen, in der
+      sundheit unserer Pflegeempfänger zu fördern und ihnen ein           sich die Mitglieder zum ersten Mal begegnen. Ist von den
+      lebenswertes Leben oder in manchen Fällen ein friedvolles           Fragen „Was soll ich tun?“, „Wo stehe ich?“ und „Werde ich
+      Sterben zu ermöglichen. Für diese Aufgabe bündeln wir un-           im Team akzeptiert?“.
+      sere Fach- und Pflegekompetenz und unsere Menschlich-
+      keit.“                                                              Phase 2: Konfrontation (Stroming) • In dieser Phase werden
+                                                                          die Rollen verteilt, hier kann es zu Konflikten kommen. Dies
+      Voraussetzungen einer guten Teamentwicklung • Faktoren, die         ist eine kritische Phase, in die Kommunikation untereinan-
+      die Teambildung fördern, sind:                                      der und die Moderation von außen (z. B. Lehrperson oder
+      ● Die Mitglieder sind diszipliniert, zielorientiert, gesprächs-     Stationsleitung) einen wichtigen Stellenwert hat.
+        bereit, kritikfähig und verantwortungsbewusst. Sie ver-
+        trauen sich gegenseitig.                                          Phase 3: Ausrichtung (Norming) • Hier organisiert sich die
+      ● Die Teammitglieder kennen einander und haben mit-                 Gruppe und die Rollen der einzelnen Mitglieder werden klar
+        einander gemeinsame Verhaltensregeln und ein gemein-
 
-Die Risiken für verschiedene Erkrankungen sind je nach Ausprägung und Art der Behinderung erhöht.
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
+270    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                                Soziale Gruppen und Teams
 
-Grundlagen
 
-Gastroösophagealer Reflux
-Viele Menschen mit geistigen Behinderungen haben einen
-gastroösophagealen Reflux, d. h., Mageninhalt gelangt zurück in die Speiseröhre und löst dort eine Reizung der
-Schleimhaut aus. Sodbrennen, Dysphagie und retrosternale
-Schmerzen sind typische Symptome. Prädisponierende Faktoren sind:
-● veränderte Körperhaltung durch Skoliose (Verbiegung der
-Wirbelsäule zur Seite und zusätzliche Rotation der Wirbelkörper)
-● neurogen bedingte Spastiken
-● Antikonvulsiva (Antiepileptika)
-● Epilepsie
-● Obstipation
-● evtl. einengende Korsette
-Neben Sodbrennen, Schluckstörungen und Schmerzen zeigen sich oft auch Symptome wie:
-● ausgeprägte Regurgitation (pathologisches Zurückströmen
-von Speisebrei aus der Speiseröhre in den Mund)
-● Rumination (das bewusste „Heraufholen“ von Mageninhalt, der erneut gekaut und geschluckt wird)
-● Zahnschmelzerosion
+Abb. 11.4 Phasen der Teambildung.
 
-Obstipation
-Viele Menschen mit geistiger Behinderung leiden an Obstipation (S. 482). Gleichwohl ist es auch hier schwer, die
-Symptome zu erkennen und einzuordnen. Prädisponierende
-Faktoren können u. a. sein:
-● Bewegungsmangel (z. B. Rollstuhl, spastische Gehbehinderung)
-● Medikamente (z. B. Antidepressiva, Neuroleptika, Diuretika, Schmerzmittel oder Abusus von Laxanzien)
-● Verletzungen oder Dysfunktionen des Darms (z. B. Divertikel, Entzündungen, Analfissuren, schmerzhafte Hämorrhoiden, Beckenbodendysfunktion)
-● endokrine Störungen (z. B. Hypothyreose durch Unterfunktion der Schilddrüse)
-● psychiatrische Erkrankungen (Depression, Essstörungen)
-● ggf. falsche Ernährung (z. B. zu wenig Flüssigkeit, faserarme Kost)
-Neben den typischen zeigen sich oft zusätzlich folgende
-Symptome:
-● Verhaltensstörung/-a
-̈ nderung
-(Unruhe,
-Unwohlsein,
-Schreien)
-̈ berlauf-Enkopresis
-● Stuhlschmieren als Zeichen einer U
-(Einkoten aufgrund eines Sensibilitätsverlustes des Rektums durch Verstopfung oder Stuhlretention bzw. Stuhlverhaltung. Die Betroﬀenen merken nicht mehr, dass der
-Darm gefüllt ist und entleert werden sollte.)
+                                                                                                                        Adjourning
+                                                                                        Performing
 
-Seh- und Hörbeeinträchtigungen
-Bei geistig Behinderten treten häufig Seh- und Hörstörungen auf, oft auch beides gleichzeitig. Ursachen können u. a.
-sein:
-● angeborene Defekte des Hörgangs, des Mittelohrs und/
-oder des Auges
-● Beeinträchtigungen am Hör- und/oder Sehsinn (z. B. bei
-Trisomie 21), zerebrale Lähmungen oder eine Enzephalitis
-● Zerumen und/oder Fremdkörper im Ohr
+   Leistung
 
-das auch ein klassisches Symptom für eine Sinnesbeeinträchtigung bei nicht behinderten Menschen ist!
 
-Skelettdeformationen
-Oft treten bei Menschen mit geistiger Behinderung – in diesem Fall auch körperlicher Behinderung – Abweichungen im
-Aufbau des Skeletts auf. Man kann diese nach 2 Ursachen
-unterscheiden:
-● Sie sind angeboren. So ist z. B. das Coﬃn-Lowry-Syndrom
-ein genetisch bedingter, angeborener Symptomkomplex,
-bei der sich neben der eingeschränkten geistigen Entwicklung auch körperliche Symptome wie die fortschreitende
-Kyphoskoliose (Verkrümmung der Wirbelsäule zum Buckel mit gleichzeitiger seitlicher Verkrümmung) entwickeln. Diese Erkrankungen sind dann nur schwer zu beeinflussen. Pflegende sollten darauf hinarbeiten, dass sich
-der Zustand nicht weiter verschlechtert, z. B. durch Behandlung der Skoliose (S. 1208).
-● Sie sind erworben, z. B. durch
-– bevorzugte Lagen: Wenn ein Kind seinen Kopf stets nach
-rechts dreht, entsteht ein Plagiozephalus, der Schiefliegeschädel.
-– vorzeitige Nahtverknöcherung am Schädel: Aus bislang
-ungeklärter Ursache verknöchern die Nähte am Schädel
-zu früh und es kommt zu einer Deformation des Schädels. Das Phänomen tritt manchmal zusammen mit syndromhaften Fehlbildungen auf.
-– ungleichmäßige Innervation der Muskulatur: Dauerhafte
-und einseitige Belastung von Muskulatur führt stets zu
-Deformationen, z. B. einer Skoliose.
-Die Behandlung und die Prävention von Skelettdeformationen sind bei Menschen mit Behinderungen die gleichen wie
-bei Menschen ohne Behinderung. Die Handlungsmaximen
-sind frühzeitiges Erkennen und frühzeitige Intervention,
-z. B. durch Physiotherapie oder Hilfsmittel.
-Osteoporose • Immobilität gilt immer als ein Risikofaktor für
-Osteoporose. Menschen mit geistigen Behinderungen sind
-oft in der Bewegung eingeschränkt und deshalb auch in jungen Jahren anfällig dafür, Osteoporose zu entwickeln.
 
-Epilepsie
-Anfallsleiden treten bei Menschen mit geistigen Behinderungen etwa 20-mal häufiger auf als bei nicht behinderten Personen. Sie zeigen häufig Mischformen verschiedener
-Anfallsarten. Da die Diagnostik wegen der mangelnden Kooperation schwierig sein kann, setzen Mediziner manchmal
-Videoüberwachung ein (meist in Zentren), um die Qualität
-der Anfälle beurteilen zu können. Die Therapie entspricht
-im Wesentlichen der nicht behinderter Menschen. Allerdings können sich zusätzliche Schwierigkeiten einstellen,
-weil z. B.
-● Menschen mit Behinderung nicht immer Auskunft über
-ihr Wohlbefinden und damit über mögliche Nebenwirkungen der Antikonvulsiva (Medikamente gegen Krampfleiden) geben können,
-● die Nebenwirkungsgrenze bei ihnen wahrscheinlich niedriger liegt,
-● Antikonvulsiva
-bei ihnen psychiatrische Symptome
-schneller verstärken.
+                                                               Norming
 
-Leitsymptom ist die Veränderung des Verhaltens, z. B. Nichtreagieren bei Ansprache oder verwaschene Sprache – wobei
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
 
-763
 
+                                         Storming
+
+
+                 Forming
+
+                       hallo ich
+                        bin...
+
+
+
+
+                                                                                                                                     Zeit
+
+
+
+
+definiert. Außerdem legt die Gruppe in dieser Phase Regeln                  eines informellen Gesprächs (z. B. während der Übergabe)
+fest, wie Ziele erreicht werden können.                                     geklärt werden.
+                                                                               Ein professionelles Setting liefert die kollegiale Beratung.
+Phase 4: Integration (Performing) • Dies ist eigentliche Ar-                In diesem Rahmen versuchen beruflich Gleichgestellte ein
+beitsphase, in der die einzelnen Gruppenmitglieder aus ih-                  bestehendes Problem zu reflektieren und gemeinsam Lö-
+ren Rollen heraus dem Ziel verpflichtet handeln. In dieser                  sungsansätze zu entwickeln. Das Wissen und die Erfahrung
+Phase ist das System am leistungsfähigsten.                                 aller Beteiligten wird genutzt, um das Problem eines einzel-
+                                                                            nen zu lösen.
+Phase 5: Auflösung (Adjourning) • Die Teammitglieder, die
+nur vorübergehend zusammenkommen (wie z. B. Ausbil-                         Definition Kollegiale Beratung
+dungskurse), lösen sich in dieser Phase voneinander. Die                    Sie ist eine Form der professionellen Problemlösung aus der Gruppe
+Gruppe trennt sich, die Zusammenarbeit endet.                               heraus und wird auch als Intervision bezeichnet.
+
+                                                                            Die kollegiale Beratung findet innerhalb einer festen Gruppe
+       WISSEN TO GO                                                         von 5 bis 10 Personen statt, die sich regelmäßig treﬀen. Die
+                                                                            Treﬀen selbst laufen immer nach einem anfangs vereinbar-
+  Phasen der Teambildung (nach Tuckman)                                     ten Muster aus gleichbleibenden Schritten ab, zum Beispiel:
+                                                                            1. Die Rollen werden verteilt: Eine Person agiert als Fra-
+  1. Orientierung (Forming): Kennenlernphase, Fragen wie                       gesteller, eine Person moderiert, eine führt Protokoll, die
+     „Wo stehe ich?“, „Werde ich akzeptiert?“ spielen eine                     restlichen agieren als Berater.
+     Rolle.                                                                 2. Die fragestellende Person berichtet kurz von einem Pro-
+  2. Konfrontation (Stroming): Phase der Rollenverteilung                      blem, z. B. einem Fachproblem oder einer Frage zur Rolle
+     im Team, es kann zu Konflikten kommen.                                    am Arbeitsplatz.
+  3. Ausrichtung (Norming): Team findet sich, Rollen und                    3. Die fragestellende Person stellt eine möglichst konkrete
+     Regeln sind festgelegt.                                                   Frage zu diesem Problem, ggf. unterstützt vom Modera-
+  4. Integration (Performing): Arbeitsphase mit höchster                       tor.
+     Leistungsfähigkeit des Teams.                                          4. Die Berater stellen ggf. Verständnisfragen.
+  5. Auflösung (Adjouring): Team löst sich auf, Ende der                    5. Die Berater formulieren ihre Gedanken nach einer spe-
+     Zusammenarbeit.                                                           ziellen Methode. Zum Beispiel: Zuerst äußern sie frei As-
+                                                                               soziationen und Emotionen zum Erzählten, dann folgt ein
+                                                                               Feedback durch die fragestellende Person, dann formu-
+Kollegiale Beratung                                                            liert die Gruppe konkrete Lösungsvorschläge.
+                                                                            6. Die fragestellende Person beurteilt die Vorschläge und er-
+Hat sich die Gruppe zum Team entwickelt, bietet dieses gro-
+                                                                               zählt wie sie nun weiter vorgehen wird.
+ßes Potenzial für die einzelnen Gruppenmitglieder und für
+die Gemeinschaft an sich. Als Team lassen sich Schwierigkei-
+ten und herausfordernde Situationen gemeinsam lösen.                        ACHTUNG
+Nicht immer findet sich jedoch eine Station als Team zu-                    Voraussetzung für die kollegiale Beratung ist absolute Vertraulich-
+sammen und nicht immer können Probleme im Rahmen                            keit über die Inhalte des Besprochenen.
+
+
+
+
+              I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen           271
+              Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+               Usage subject to terms and conditions of license.
 l
-36
+11    Mit Menschen zusammenarbeiten
 
-Menschen mit geistiger Behinderung
-Mehr zur Pflege bei Menschen mit Epilepsie finden Sie im
-Kap. „Pflege von Menschen mit Erkrankungen des Nervensystems“ (S. 1265).
 
-Abb. 36.3 Wie jeder andere.
+                                                                             Abb. 11.5 Konflikt.
+      11.3.5 Konflikte und Krisen im
+      Team
+      ! Merke Nicht vermeiden
+      Es reicht nicht aus, darauf zu warten, dass der andere kommt –
+      wenn keiner geht! Je mehr Sie vermeiden wollen und je öfter Sie
+      schweigen, umso größer ist die Wahrscheinlichkeit nachfolgender
+      Eskalationsstufen (von der Kritik über den Konflikt zur Krise).
 
-Zahnerkrankungen
-Menschen mit geistigen Behinderungen haben oft erhebliche Zahnprobleme. Sie werden z. B. verursacht durch
-● Trauma nach Sturz
-● Bruxismus (Zähneknirschen)
-● mangelnde Mundhygiene
-● Wucherungen der Gingiva (Zahnfleisch), z. B. als Nebenwirkung antikonvulsiver Therapie
-● Reflux (S. 763)
-Bei Menschen mit einer leichten Intelligenzminderung lassen sich kleinere Eingriﬀe oft problemlos vornehmen. Bei
-Menschen mit schweren geistigen Behinderungen oder auch
-bei großen Sanierungen wird die Behandlung unter Sedierung oder in Narkose durchgeführt.
 
-WISSEN TO GO
-Geistige Behinderung – häufige Begleiterkrankungen
-Geistig Behinderte leiden aufgrund einer entsprechenden
-Disposition häufiger an bestimmten Erkrankungen/Symptomen als nicht behinderte Menschen, u. a.:
-● gastroösophagealer Reflux: Gründe sind evtl. eine Skoliose, neurogen bedingte Spastiken, Epilepsie, Obstipation oder Nebenwirkungen von Antiepileptika.
-● Obstipation: häufig aufgrund von Bewegungsmangel,
-Dysfunktionen des Darmes oder Nebenwirkungen der
-Medikamente.
-● Seh- und Hörbeeinträchtigungen: Ursachen sind mögliche Defekte am Ohr oder am Auge, Beeinträchtigungen
-am Hör- oder Sehsinn, zerebrale Lähmungen oder
-Fremdkörper/Zerumen im Ohr.
-● Skelettdeformationen: Veränderungen am Skelettaufbau sind entweder angeboren oder erworben. Durch Immobilität besteht ein erhöhtes Risiko für Osteoporose.
-● Epilepsie: Menschen mit Behinderungen erleiden etwa
-20-mal häufiger epileptische Anfälle als Nichtbehinderte.
-● Zahnerkrankungen: Mögliche Ursachen sind Zähneknirschen (Bruxismus), mangelnde Mundhygiene, Reflux,
-Wucherungen am Zahnfleisch (als Nebenwirkung der
-Antikonvulsiva) oder Traumen nach Stürzen.
+      Kritik
+      Definition Kritik
+      Kritik ist die Kunst der Beurteilung. Ein Gegenstand oder eine Hand-
+      lung wird anhand von bestimmten Maßstäben beurteilt.
 
-36.2.4 Inklusion von Menschen mit
-geistiger Behinderung
-Inklusion (lat. Inclusio = Einschluss) meint die gleichberechtigte und uneingeschränkte Teilhabe aller Menschen an der
-Gesellschaft (▶ Abb. 36.3). Das Recht auf Inklusion ist in der
-UN-Behindertenrechtskonvention festgeschrieben – einem
-Vertrag, den auch Deutschland unterzeichnet hat. Gemäß
-dieser aus 50 Artikeln bestehenden Vereinbarung müssen
-die gesellschaftlichen Rahmenbedingungen von vornherein
-so gestaltet sein, dass sie allen Menschen (mit und ohne Behinderung) Zugang und gesellschaftliche Teilhabe ermöglichen. Ziel ist ein selbstbestimmtes menschenwürdiges Leben ohne Diskriminierung. Nicht die Menschen sollen sich
-anpassen, sondern die Umstände sollen den Menschen angepasst werden (z. B. sollen Schulen so gestaltet sein, dass
-764
+      Kritikfähigkeit beinhaltet 2 Aufgaben: Kritik annehmen und             In Teams sind Konflikte fast unvermeidlich – ein professioneller
+      konstruktiv Kritik üben können. Beides ist im Umgang mit-              Umgang ist gefragt (Symbolbild). Foto: A. Fischer, Thieme
+      einander wesentlich. Ziel der Kritik ist es,
+      ● fachlich zu wachsen,
+      ● Fehler zu minimieren,                                                   2. Polarisation/Debatte: Beharren auf dem eigenen Stand-
+      ● die Qualität der Tätigkeit zu steigern und                                 punkt; Schwarz-Weiß-Denken; verbale Gewalt. Bei-
+      ● eine gemeinsame Arbeitsebene zu erreichen.                                 spiel: PK beschimpft L als inkompetent; L wirft PK vor,
+                                                                                   für den Beruf ungeeignet zu sein.
+      Dabei können folgende Hinweise helfen:                                    3. Taten statt Worte: „Reden hilft nicht mehr, jetzt kön-
+      ● Kritik sollte zeitnah angesprochen werden. Je länger etwas                 nen nur noch Taten folgen“; Misstrauen und negative
+        zurückliegt, umso schwieriger wird es.                                     Gefühle. Beispiel: PK meldet sich bei nächster Gelegen-
+      ● Die Betreﬀenden sollten persönlich angesprochen werden.                    heit für den Wochenenddienst krank; L unterstellt der
+      ● Es sollte diskret vorgegangen werden. Kritisiert werden                    PK, krank „zu machen“.
+        sollte unter 4 Augen und nicht in Gegenwart eines Dritten.           b) Ebene II (Win-lose: Eine der Parteien ist der Verlierer):
+      ● Kritik sollte sachlich und freundlich und in der Ich-Form               1. Image und Koalitionen: Gerüchte streuen, Verbündete
+        vorgebracht werden.                                                        für die eigenen Position suchen, schlechtmachen der
+      ● Hilfreich ist es, sich in die Lage des Gegenübers zu verset-               Gegenpartei. Beispiel: PK lästert oﬀen im Team über L;
+        zen: Wie könnte ich selbst die Kritik annehmen? Wie kann                   L erkundigt sich bei früherer Arbeitsstelle/Station, ob
+        er „sein Gesicht wahren“?                                                  die PK bereits wegen solchen Verhaltens aufgefallen
+      ● Verwendung von Ich-Botschaften (S. 253): Diese sind we-                    ist.
+        niger vorwurfsvoll.                                                     2. Gesichtsverlust: direkte Angriﬀe auf die Gegenpartei,
+                                                                                   Bloßstellung. Beispiel: In der Teambesprechung greif
+      ACHTUNG                                                                      PK L frontal an und unterstellt ihr, die Dienstplan-
+      Kleinere Kritikpunkte, die nicht ausgesprochen werden, können sich           gestaltung nicht im Griﬀ zu haben; L reagiert ebenfalls
+      zu einem handfesten Konflikt entwickeln.                                     mit Unterstellungen.
+                                                                                3. Drohstrategie: Drohgebärden zur Machtdemonstrati-
+                                                                                   on. Beispiel: L droht PK mit Rauswurf; PK kontaktiert
+      Konflikt                                                                     den Betriebsrat.
+                                                                             c) Ebene III (Lose-lose: beide Parteien verlieren):
+      Definition Konflikt                                                       1. Begrenzte Vernichtungsschläge: Werte und Tugenden
+      Von einem Konflikt spricht man, wenn entgegengesetzte Interessen,            sind nicht mehr so wichtig; Menschlichkeit ist aus-
+      Zielsetzungen oder Wertvorstellungen von Personen oder Gruppen               geschaltet. Beispiel: L und PK grüßen sich nicht mal
+      aufeinanderprallen.                                                          mehr, in gemeinsamen Schichten wird nur das Allernö-
+                                                                                   tigste kommuniziert.
+      Verschiedene Themen haben in der Pflege Konfliktpotenzial                 2. Zersplitterung: Auflösung der Gegenpartei, es geht um
+      (▶ Abb. 11.5). In der Ausbildung und dann auch im anschlie-                  Zerstörung. Beispiel: L schaltet dem Vorgesetzen ein
+      ßenden Berufsalltag bieten u. a. die Dienstplangestaltung                    und fordert den Rauswurf; PK geht mit dem Betriebsrat
+      (wie im folgenden Beispiel), Angehörige oder auch Vor-                       gegen die L vor.
+      gesetzte Potenzial für Konflikte.                                         3. Gemeinsam in den Abgrund: „Kein Weg zurück!“, abso-
+                                                                                   lute Konfrontation und „Vernichtung“ beider Positions-
+      Stufen der Konflikteskalation • Friedrich Glasls (*1941) Theo-               parteien. Beispiel: Die PK kündigt; L zieht sich aus ihrer
+      rie zur Konflikteskalation beschreibt 9 Stufen und 3 Ebenen:                 Führungsposition zurück und arbeitet nun als „ein-
+      a) Ebene I (Win-win: Beide Parteien kommen noch gut aus                      faches“ Teammitglied.
+         der Sache raus):
+         1. Verhärtung: erste Spannungen, Standpunkte verhärten
+            sich und prallen aufeinander. Beispiel: Schwelender
+            Konflikt bezüglich der Dienstplangestaltung verhärtet
+            sich, Pflegefachkraft (PK) möchte jedes zweite Wo-
+            chenende freihaben, Leitung (L) ermöglicht das nicht.
 
-Inklusion heißt, dass alle Menschen gleichberechtigt in ihrer
-Umwelt leben können, egal wie unterschiedlich sie sind.
 
-alle Schüler mit ihren jeweiligen Talenten am Unterricht
-teilhaben können). Kein Mensch soll ausgegrenzt oder stigmatisiert werden, behinderte Menschen sollen nicht die
-Ausnahme in der Öﬀentlichkeit, sondern die Regel sein. Jeder Mensch wird so akzeptiert, wie er ist. Natürlich bleiben
-Unterschiede und Abweichungen bestehen (wie auch bei
-den sog. „Gesunden“ oder „Normalen“), sie haben aber keine
-besondere Bedeutung.
-Die Modelle der ICF • Diesen Gedanken spiegelt auch die „Internationale Klassifikation der Funktionsfähigkeit, Behinderung und Gesundheit“ (ICF) der WHO wider. Die ICF gehört zu der „Familie“ von Klassifikationen der WHO. Sie ermöglichen, dass weltweit auf gleicher Grundlage über Aspekte von Gesundheit kommuniziert werden kann. Das
-wichtigste dieser Klassifikationssysteme ist die ICD („Internationale Klassifikation der Krankheiten“). Die ICD spielt in
-der Verschlüsselung von Diagnosen in der medizinischen
-Versorgung eine überragende Rolle. Ihr Nachteil ist der sehr
-„mechanistische“ diagnoseorientierte Ansatz, der keinen
-kompletten Blick auf die Krankheitsfolgen für den Patienten
-erlaubt. Die 2001 erstellte ICF versucht dagegen, 2 unterschiedliche Modelle zur Behinderung zusammenzuführen,
-das medizinische und das soziale Modell:
-● Das medizinische Modell sieht Behinderung als das Problem einer Person, d. h. als Folge einer Krankheit, eines Unfalls oder einer anderen mit Gesundheit zusammenhängenden Störung. Demnach muss der Erkrankte behandelt
-und Heilung angestrebt werden.
-● Das soziale Modell sieht Behinderung nicht als Merkmal
-einer Person an. Sie sieht es als ein Problem, das wesentlich von der Gesellschaft erschaﬀen wird – es ist also eine
-Folge der Interaktion zwischen dem Betroﬀenen und seiner Umwelt. Die Forderung ist, soziale und gesellschaftliche Bedingungen so zu verändern, dass volle Integration
-für alle Menschen möglich wird.
-Die Standpunkte sind in Aspekten durchaus vergleichbar
-mit der Auseinandersetzung zwischen Medizin und Pädagogik. Diese Klassifikation wendet den Blick damit weg vom
-medizinisch dominierten ICD-Modell hin zu einem ganzheitlichen Menschenbild, das nicht nur eine körperliche Beeinträchtigung per se in den Blick nimmt – sondern auch die
-spezifische Umwelt-Situation, in der ein Mensch sich befindet.
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
 
-Pflegeschwerpunkte
+272    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                            Soziale Gruppen und Teams
 
-! Merke Teilhabe
 
-Ein wichtiges Prinzip ist Teilhabe – an Gesellschaft und Umwelt. Ist
-ein Mensch, warum auch immer, in seiner Teilhabe am Leben eingeschränkt, steht die Rehabilitation im Fokus – und nicht „nur“ die
-Heilung eines bestimmten körperlichen oder geistigen Defizits.
+Konfliktprävention • Die beste Konfliktprävention ist ein               ● seinen Teil der Verantwortung tragen
 
-WISSEN TO GO
-Inklusion
-Die gesellschaftlichen und sozialen Rahmenbedingungen
-haben großen Einfluss auf die Entwicklung geistig behinderter Menschen und ihrer Teilhabe am Leben. Gesellschaftliches Ziel ist die Inklusion, d. h. die vollständige
-und gleichberechtigte Teilhabe behinderter Menschen am
-sozialen und gesellschaftlichen Leben. Die Inklusion will
-von Anfang an ein gemeinsames System für alle Menschen, in dem niemand ausgegrenzt oder stigmatisiert
-wird. Nicht der Mensch soll sich an das System anpassen,
-sondern das System an den Menschen. Dieses Recht ist in
-der UN-Behindertenrechtsonvention verankert. Einen
-ganzheitlichen Blick auf die Folgen von Behinderung und
-Krankheit für den einzelnen Menschen erlaubt das ICF-Modell der WHO.
+freundlicher und wohlwollender Grundton im Umgang mit-                  ● eine klare Entscheidung treﬀen: „Ich will etwas auflösen.“
 
-36.2.5 Rechtliche Grundlagen
-Welche Rechte ein Mensch mit Behinderung hat und wie
-seine Gleichstellung und Teilhabe erreicht werden soll, regeln v. a. folgende Gesetze und Gesetzesbücher:
-● Das Sozialgesetzbuch (SGB), insbesondere SGB IX Rehabilitation und Teilhabe behinderter Menschen. Ziel ist die
-Selbstbestimmung behinderter Menschen und ihre umfassende Teilhabe am Leben in der Gesellschaft (§ 1 SGB IX).
-● Das Bundesteilhabegesetz (BTHG) von 2017. Es soll die
-Teilhabe von Menschen mit Behinderungen und ihre
-Selbstbestimmung stärken. Es betriﬀt v. a. Eingliederungshilfeleistungen, z. B. Leistungen zur medizinischen Rehabilitation, Teilhabe am Arbeitsleben oder Teilhabe an Bildung. Das BTHG führt zu Änderungen im SGB IX. Bisher
-(Stand 2019) sind einige Teile des BTHG noch nicht umgesetzt, sie folgen 2020 und 2023.
-● Das Behindertengleichstellungsgesetz (BGG). Es regelt die
-Gleichstellung von Menschen mit Behinderungen im Bereich des öﬀentlichen Rechts.
-● Das
-Allgemeine Gleichbehandlungsgesetz (AGG). Es
-schützt Menschen mit Behinderung im privaten Rechtsverkehr, z. B. Schutz von Beschäftigen vor Diskriminierung
-aufgrund ihrer Behinderung.
-● Schwerbehinderung nach SGB IX. Menschen mit Behinderungen können sog. Nachteilsausgleiche in Anspruch
-nehmen, z. B. durch einen Schwerbehindertenausweis, einen früheren Renteneintritt, Steuervorteile, besonderen
-Kündigungsschutz etc.
+einander.                                                               ● sich für Hilfe von außen öﬀnen, z. B. Teamgespräche, Su-
 
-SGB IX – Rehabilitation von Menschen mit
-Behinderungen
-Nach dem SGB sind Menschen mit Behinderung Menschen,
-die
-● körperliche,
-● seelische,
-● geistige oder
-● Sinnesbeeinträchtigungen
+   Tipps, um Konflikte (▶ Abb. 11.5) zu meistern:                         pervision, Mediation
+● Ein Konflikt sollte gewagt werden. Nichtansprechen ver-               ● zurückliegende  Erlebnisse selbstkritisch und menschlich
+  schlimmert die Situation und nährt den Konflikt. Bei einer              reflektieren
+  Aussprache kann eine weitere Eskalation mit aktivem Zu-               ● Konfliktpartner ansprechen und ihm eine Hand reichen
 
-haben, die sie an der gleichberechtigten Teilhabe an der Gesellschaft länger als 6 Monate hindern können.
-Das Sozialgesetzbuch IX ist in 3 Teile gegliedert:
-● Teil 1 (§§ 1 bis 89): Regelungen für Menschen mit Behinderungen und von Behingerung bedrohte Menschen. Er
-betriﬀt weitere Gesetze an anderer Stelle zu Regelungen
-der Rehabilitation und Teilhabe, z. B. die gesetzliche Kranken-, Unfall- und Rentenversicherung.
-● Teil 2 (§§ 90 bis 150): Besondere Leistungen zur selbstbestimmten Lebensführung für Menschen mit Behinderungen (Eingliederungshilferecht). Dieser Teil wird durch das
-BTHG (s. o.) umgestaltet. Hier werden die Eingliederungshilfeleistungen geregelt.
-● Teil 3 (§§ 151 bis 241): Besondere Regelungen zur Teilhabe
-schwerbehinderter Menschen (Schwerbehindertenrecht).
-Er betriﬀt Menschen, die als schwerbehindert anerkannt
-sind, aber auch Rechte und Pflichten von Arbeitgebern.
-Hier finden sich z. B. Regelungen zu den Schwerbehindertenausweisen.
-Eine Schwerbehinderung liegt nach § 2 Absatz 3 SGB vor,
-wenn die ärztlichen Gutachter des Versorgungsamts einen
-Grad der Behinderung (GdB) von 50 und mehr feststellen.
+  hören (S. 255) verhindert werden.                                     ● an sich und das Team glauben
+● Man sollte versuchen, sachlich zu reflektieren und nicht              ● miteinander nach vorne schauen
 
-36.3 Pflegeschwerpunkte
-Auch wenn das Lebensalter von Menschen mit Behinderungen gestiegen ist – die medizinischen Versorgungsstrukturen in Deutschland sind nicht mitgewachsen. Zwar gibt es
-für Kinder und Jugendliche mit geistigen Behinderungen sozialpä diatrische Zentren, die eigens für sie eingerichtet sind.
-Auch Kinderkliniken sind auf sie eingestellt. Aber was ist
-mit den „Alten“? Denen, die das Erwachsenenalter erreicht
-haben? In der Praxis werden sie manchmal auf den geriatrischen Stationen versorgt. Aber ist das für einen 45-jährigen
-Mann mit leichter geistiger Behinderung und einer Fraktur
-am Oberarm der richtige Ort?
-Darüber hinaus stellen die Kommunikation und die Beobachtung bzw. das frühzeitige Erkennen möglicher Symptome bei mental retardierten Pflegeempfängern in der Klinik
-eine besondere Herausforderung für das pflegerische und
-ärztliche Personal dar. Im Folgenden werden daher einige
-Grundlagen der Kommunikation aufgeführt sowie wesentliche Aspekte der Pflege angesprochen.
+  persönlich zu werden. Die Verwendung von Ich-Botschaf-
+  ten (S. 253) verhindert eine vorwurfsvolle Grundhaltung.
+● Man sollte sich selbstkritisch hinterfragen: Was ist mein
+                                                                        ! Merke Das Gute daran
+                                                                        Ein Team, das eine Krise gemeinsam meistert, bringt so schnell
+  Anteil an diesem Konflikt?                                            nichts mehr auseinander.
 
-36.3.1 Situation des
-Pflegeempfängers
-Für Menschen mit geistiger Behinderung ist ein Arztbesuch
-oder Klinikaufenthalt zunächst einmal etwas, das nichts mit
-der vertrauten Routine zu Hause oder in der Einrichtung zu
-tun hat. Zu bedenken ist auch, dass sie vielleicht ein Leben
-lang in (unterschiedlichen) Institutionen gelebt haben, in
-denen sie wahrscheinlich nicht nur gute Erfahrungen gemacht haben.
-Kognitiv können sie die Situation vielleicht nicht bewältigen. Sie können sich das Geschehen nicht so erklären, dass
-dabei ein Verhalten entsteht, das wir als „vernünftig“ bezeichnen würden. Für sie sind die Menschen und die Umgebung fremd, vermutlich ist die Umgebung darüber hinaus
-wenig freundlich: kalt, hell, fremde Gerüche, fremde Menschen. Man wird überall angefasst, gestochen, es wird kaltes
-Gel auf die Haut aufgetragen. Und manchmal herrscht unverständliche, hektische Betriebsamkeit. Häufig reagieren
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
+                                                                             WISSEN TO GO
+  Beispiel Ein Konflikt bahnt sich an
+  Auf einer internistischen Station arbeiten viele Pflegefachkräfte,      Kritik, Konflikte und Krisen
+  die nicht gerne Nachtdienst machen. Die eine Pflegefachkraft
+                                                                          ● Kritik (Kunst des Beurteilens) sollte immer zeitnah, per-
+  behauptet, sie könne nachts nicht arbeiten, weil sie eine chro-
+                                                                            sönlich und sachbezogen sein. Ich-Botschaften helfen,
+  nische Magenschleimhautentzündung habe, die sich durch die-
+                                                                            professionell und nicht verletzend Kritik zu üben.
+  se Dienste verschlechtern würde. Die andere Pflegefachkraft
+                                                                          ● Konflikte (entgegengesetzte Positionen treﬀen auf-
+  sagt, sie leide unter Schlafstörungen, wenn sie tagsüber schla-
+                                                                            einander) eskalieren meist in Stufen (Theorie nach Glasl).
+  fen müsse. Eine weitere Pflegefachkraft gibt an, ihr sei im
+                                                                            Es ist deshalb wichtig, einen Konflikt frühzeitig anzuspre-
+  Nachtdienst die Verantwortung zu groß. Der Stationsleiter
+                                                                            chen, um eine Abwärtsspirale zu vermeiden. Das aktive
+  möchte nur im Tagdienst arbeiten, um besser administrative
+                                                                            Zuhören ermöglicht es, die Gegenposition zu verstehen.
+  Dinge erledigen zu können. Pflegefachkraft Johanna T. ist erst          ● Krisen (Wendepunkt in einer stark angespannten Situa-
+  seit ein paar Monaten auf der Station tätig. In dieser Zeit hat
+                                                                            tion) haben oftmals zur Folge, dass sich etwas ändern
+  sie überdurchschnittlich viele Nachtdienste leisten müssen. Bis-
+                                                                            muss. Auch für ein Team ist dies Chance zur Entwick-
+  her hat sie sich nicht getraut, etwas dagegen zu sagen. Im
+                                                                            lung. Hier kann Hilfe von außen (z. B. Supervision) Unter-
+  Dienstplan für den kommenden Monat sieht sie nun während
+                                                                            stützung bieten.
+  der Frühstückspause, dass sie wieder 2-mal für jeweils 4 Nacht-
+  dienste hintereinander eingeteilt ist.
+     Johanna: „Das kann doch nicht wahr sein, ich hab schon wie-
+  der 2-mal Nachtdienst!“ Der Stationsleiter: „Ja und?“ Johanna:        11.3.6 Interdisziplinäre
+  „Ich finde, das ist eine Unverschämtheit. Du und die anderen          Zusammenarbeit
+  macht alle nicht eine einzige Nacht.“ Der Stationsleiter fühlt sich
+  angegriﬀen und erwidert gereizt: „Du hast mir nie gesagt, dass        Definition Interdisziplinarität
+  du nicht gerne Nachtdienst machst. Ich dachte, ich tu dir einen       Interdisziplinarität bedeutet, dass Menschen unterschiedlicher Fach-
+  Gefallen wegen der Schichtzulage.“ Johanna denkt: „So ein             gruppen die eigene Fachkompetenz, neue Ansätze und andere Mei-
+  Quatsch. Du willst nur selbst keinen Nachtdienst machen“, will        nungen miteinander verbinden, um neue Lösungsmöglichkeiten für
+  das aber nicht sagen und schweigt stattdessen. Der Stationslei-       komplexe Aufgaben zu entwickeln.
+  ter: „Jeder macht hier lieber Tagdienst. Wie soll ich da einen ver-
+  nünftigen Dienstplan schreiben? Jeder meckert immer nur he-           Interdisziplinäre Teams im Gesundheitswesen setzen sich
+  rum. Ich schreibe bald gar keinen Dienstplan mehr.“                   aus den Mitgliedern der Berufsgruppen zusammen, die an
+     Die neue Pflegefachkraft Johanna hätte besser schon früher         der Therapie eines Patienten beteiligt sind, z. B. Ärzten, Pfle-
+  mit ihrer Stationsleitung darüber gesprochen, dass sie selbst         gepersonal, Physiotherapeuten, Ergotherapeuten, Logopä-
+  auch lieber weniger Nachtdienste machen würde. So hat sich            den, Psychologen, Seelsorgern, Sozialarbeitern.
+  der Ärger in ihr aufgestaut und sie hat unsachlich Kritik geübt,
+  um sich Luft zu machen. Der Konflikt hat sich zugespitzt, weil
+  die Stationsleitung oﬀensichtlich ebenfalls schon länger einen        Ziele
+  Konflikt mit sich herumträgt (alle meckern nur über ihre              Die wichtigsten Ziele interdisziplinärer Zusammenarbeit
+  Dienstpläne).                                                         sind:
+                                                                        ● Bündelung von fächerübergreifendem Wissen: keine
 
-765
+                                                                          Sichtweise geht verloren (Transparenz), eine Berufsgruppe
+Krise                                                                     profitiert von der Sichtweise der anderen
+                                                                        ● erfolgreiches Zusammenspiel von medizinischen, thera-
+Definition Krise                                                          peutischen und pflegerischen Kompetenzen zum Wohle
+Der Begriﬀ Krise beschreibt einen Wendepunkt in einer stark ange-         und zur Genesung des Patienten
+spannten Situation.                                                     ● Optimierung der wirtschaftlichen Situation (und damit
 
+                                                                          auch die Arbeitsplätze) des Unternehmens durch erfolgrei-
+Versteckte Konflikte können eine Krise produzieren. Die                   che Behandlungen, einen guten Ruf, ein gutes Arbeitsklima
+Stimmung im Team ist dann so angespannt, dass ein „Knall“                 und eine gemeinsame Entwicklungsbereitschaft zu si-
+nicht zu verhindern ist. Diese Phase ist anstrengend – je-                chern
+doch auch heilsam: „So geht es nicht weiter. Es muss etwas
+passieren.“ Tipps, um eine Krise zu bewältigen:
+
+
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen                273
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
 l
-36
+11    Mit Menschen zusammenarbeiten
 
-Menschen mit geistiger Behinderung
-Menschen mit geistiger Behinderung auf diese zusätzlichen
-Belastungen mit Verhaltensproblemen.
-Menschen mit geistigen Behinderungen können – natürlich abhängig vom Grad der Einschränkung – oft nicht so
-gut verstehen, was geschieht. Sie können Informationen kognitiv nicht so gut verarbeiten, sich nicht (leicht) verständigen oder ihre Bedürfnisse klar formulieren. Dies stellt nicht
-eigens geschultes Personal vor Schwierigkeiten – bei der Diagnosefindung und bei Eingriﬀen. Zudem erschwert es die
-Compliance (Kooperation des Pflegeempfängers) in der Therapie.
 
-! Merke Erstkontakt
+      Voraussetzungen                                                     Fallbesprechungen • Hier wird die Situation eines Patienten
+                                                                          von allen am Behandlungsprozess Beteiligten besprochen. In
+      Auch für das Gelingen interdisziplinärer Zusammenarbeit             der Regel erfolgt die Fallbesprechung im Rahmen einer vor-
+      (▶ Abb. 11.6) bedarf es einiger Grundvoraussetzungen:               gegebenen Struktur in regelmäßigen Abständen. Außerdem
+      ● gemeinsame Fachsprache: Mitglieder des interdisziplinä-
+                                                                          gibt es eine vorgegebene Rollenstruktur (z. B. Moderator,
+        ren Teams müssen sich untereinander verständigen kön-             Falleinbringer, Protokollant). Ziel von Fallbesprechungen ist
+        nen, um sich zu verstehen                                         es, eine gemeinsame Handlungsbasis zu schaﬀen, Wissen
+      ● Anerkennung der Kernkompetenzen: Beispiele wären die
+                                                                          und Information auszutauschen und Lösungswege zu ent-
+        Diagnostik als eine Kernkompetenz der Medizin oder die            wickeln. Siehe dazu auch das Kapitel „Patientenfallbespre-
+        Elemente des Pflegeprozesses als Kernkompetenzen der              chung“ (S. 203).
+        Pflege
+      ● Kommunikationskompetenz: beinhaltet die gegenseitige
+                                                                          Gemeinsame Dokumentationssysteme • Im Bereich der Reha-
+        Achtung und Wertschätzung, Toleranz und die Bereit-               bilitation gibt es das ICF-Klassifikationssystem (S. 764), das
+        schaft, sich andere Argumente anzuhören                           in der internationalen Zusammenarbeit genutzt wird.
+      ● Kooperationsbereitschaft: beinhaltet die Verpflichtung zu
 
-● Ständiges Auf-den-Tisch-Klopfen mit den Fingerknöcheln
+        einem gemeinsamen übergeordneten Ziel, nämlich dem                Disease-Management-Programme (DMP) • Dies sind struktu-
+        Wohl des Patienten                                                rierte Behandlungsprogramme für chronisch kranke Men-
+      ● strukturelle Bedingungen: z. B. Möglichkeiten zur zeitli-
+                                                                          schen. Ziel ist es, Behandlungsablauf und die Qualität der Pa-
+        chen und räumlichen Abstimmung gemeinsamer Termine                tientenversorgung zu verbessern und das Fortschreiten der
+        (Visiten oder Fallbesprechungen); gemeinsame Fortbil-             Erkrankung mit Komplikation und Folgeschäden zu verhin-
+        dungstermine                                                      dern. Die Programme werden von den gesetzlichen Kran-
+                                                                          kenkassen angeboten. Sie beinhalten regelmäßige Arztbesu-
+      Instrumente interdisziplinärer                                      che, Beratungs- und Schulungsangebote.
+      Zusammenarbeit                                                      Integrierte Versorgung (IV) • Der Begriﬀ beschreibt die Ver-
+      Interdisziplinäre Zusammenarbeit erfolgt nicht unstruktu-           netzung der unterschiedlichen Bereiche des Gesundheits-
+      riert und nebenbei, sondern mittels bestimmter Instrumen-           systems. Dazu zählen Hausärzte, Fachärzte, Kliniken, aber
+      te.                                                                 auch Apotheker. Diese schließen mit den Krankenkassen
+                                                                          Verträge ab. Gewährleistet wird hier eine Abstimmung der
+      Case Management • Das Case Management (Fallmanage-                  Behandlung der Patienten zwischen den einzelnen Sektoren.
+      ment) ist die Koordination aller an der Pflege und Therapie
+      eines Patienten Beteiligten. Das Case Management erfolgt
+      sowohl während seines Krankenhausaufenthaltes als auch                  WISSEN TO GO
+      im Anschluss an eine stationäre Versorgung. Für weitere De-
+      tails siehe das Kapitel „Pflegeorganisationssysteme“ (S. 160).        Interdisziplinäre Zusammenarbeit
 
-ist ein Zeichen für Langeweile.
-Pflegende sollten die Betreuer oder Bezugspersonen z. B.
-auch fragen, wie sie die Kommunikation am besten starten.
-Häufig geht das z. B. durch eine bestimmte initiale Berührung oder einen Laut (Schnalzen, ein Wort, den Namen nennen). Manchmal haben die Betreuer oder Bezugspersonen
-auch eigene Kommunikationshilfsmittel, z. B. selbst gefertigte Piktogramme. Maßnahmen der Basalen Stimulation
-(S. 386) können den Beziehungsaufbau erleichtern und beruhigend wirken.
+      Primary Nursing • Primary Nursing (S. 161) kann ebenfalls             Interdisziplinarität bedeutet, dass Menschen unterschiedli-
+      als Instrument interdisziplinärer Zusammenarbeit gesehen              cher Fachgruppen zusammenarbeiten, um neue Lösungs-
+      werden. Eine Pflegefachkraft ist hier maßgeblich für die Ge-          möglichkeiten für komplexe Aufgaben zu entwickeln. Ziele
+      staltung des Pflegeprozesses zuständig. Die primäre Bezugs-           sind:
+      person (Primary Nurse) erhält im Prozess Unterstützung                ● fächerübergreifende Bündelung von Wissen und Sicht-
 
-Pflegende sollten sich zunächst an den Pflegeempfänger selbst wenden. Sie sollten sich überzeugen, welche Fähigkeiten er hat, und herausfinden, wie der Kontakt am besten aufgebaut wird. Kann sich
-der Betroﬀene nicht verbal äußern, kennen im Allgemeinen die Betreuer, z. B. die Eltern oder das Personal der Einrichtung, Möglichkeiten der nonverbalen Kommunikation. Meist ist es hilfreich, die Bezugspersonen (wenn möglich) mit einzubeziehen.
+      von anderen Berufsgruppen (z. B. Physiotherapeuten), die                weisen
+      ihren Teil zur Zielerfüllung beitragen.                               ● Zusammenspiel aller Kompetenzen zum Wohl des Pa-
 
-Hilfsmittel einsetzen • Pflegende sollten sich alle Hilfsmittel
-erklären lassen: für die Kommunikation (z. B. Piktogramme),
-für die Bewegung, für die Selbstversorgung (Essbesteck, Becher, Anziehhilfen usw.). Häufig werden häusliche „Eigenkreationen“ verwendet. Pflegende sollten versuchen, diese
-in den Alltag bei der ambulanten Pflege oder, im Fall eines
-Klinikaufenthaltes, in den Klinikalltag zu integrieren.
+                                                                              tienten
+                                                                            ● Sicherung der wirtschaftlichen Situation des Unterneh-
 
-Pflegeempfänger mit geistiger Behinderung klagen z. B., dass
-Entscheidungen und Gespräche über ihren Kopf hinweg geführt und sie nicht in Entscheidungen mit einbezogen werden. Sie fühlen sich in der Klinik weniger selbstständig, ihnen wird durch Ärzte und Pflegende Autonomie entzogen.
-Das empfinden sie als demütigend und es macht ihnen
-Angst. Manche Eltern oder Betreuer versuchen deswegen,
-so lange wie möglich (manchmal rund um die Uhr) bei dem
-Pflegeempfänger zu bleiben. Sie wissen, dass ihre Anwesenheit ihm Sicherheit vermittelt und sie die besten Übersetzer
-zwischen Fremden und dem Pflegeempfänger sind. Eine Untersuchung hat darüber hinaus gezeigt, dass Angehörige und
-Betreuer Angst haben, dass der geistig behinderte Pflegeempfänger in der Klinik vernachlässigt und nicht adäquat
-versorgt wird.
+                                                                              mens
+      Abb. 11.6 Interdisziplinäres Arbeiten.
+                                                                            Zu den Voraussetzungen gehören u. a. die gemeinsame
+                                                                            Fachsprache, Anerkennung von unterschiedlichen Kern-
+                                                                            kompetenzen sowie strukturelle Voraussetzungen.
+                                                                               Zu den Instrumenten der interdisziplinären Zusammen-
+                                                                            arbeit in der Pflege gehören:
+                                                                            ● Case Management
+                                                                            ● Primary Nursing
+                                                                            ● Fallbesprechung
+                                                                            ● gemeinsame Dokumentationssysteme
+                                                                            ● Disease-Management-Programme
+                                                                            ● Integrierte Versorgung
 
-Assessments anwenden • Auch bei Menschen mit geistiger
-Behinderung können Pflegende Assessments einsetzen. Abhängig vom kognitiven Zustand können z. B. für die Einschätzung der Schmerzintensität die Visuelle Analogskala
-(VAS) oder die Wong-Baker-Gesichtsskala verwendet werden. Für die Einschätzung des Ernährungszustands können
-Pflegende den BMI oder die Waist-to-Hip-Ratio anwenden.
-Wichtig hierbei ist, dass die Instrumente den kognitiven Fähigkeiten der Betroﬀenen entsprechen. Näheres zur
-Schmerzerfassung bei Menschen mit kognitiven Einschränkungen finden Sie im Kap. „Schmerzmanagement“ (S. 539).
 
-WISSEN TO GO
-Geistige Behinderung – Kommunikation und Umgang
 
-36.3.2 Empfehlungen zum Umgang
-Wie geht man mit geistig behinderten Menschen um? Möglichst so „normal“ wie möglich – ganz im Sinne der Inklusion. Gleichwohl fordern insbesondere Klinikaufenthalte
-Menschen mit Behinderungen und auch Pflegende und Mediziner mitunter besonders heraus. Und auch wenn im
-„Uhrwerk Klinik“ kaum Abweichungen von den standardisierten Arbeitsabläufen und den klinischen Pfaden möglich
-sind, so ist doch im Umgang mit Menschen mit geistiger Behinderung mehr Flexibilität notwendig.
-Fort- oder Weiterbildungen über den Umgang mit Menschen mit geistiger Behinderung bieten am ehesten Einrichtungen der Behindertenhilfe an. In der Pflege selbst sind sie
-(noch) nicht zu finden.
-Betreuer einbeziehen • Bei Menschen mit schweren geistigen
-Behinderungen, die zu eigener (verbaler oder durch Hilfsmittel geführter) Kommunikation kaum oder gar nicht in
-der Lage sind, sind die Betreuer oder Bezugspersonen Drehund Angelpunkt. Denn sie kennen ihren Schutzbefohlenen
-ganz genau. Manchmal haben sie, die Eltern oder die Bezugspersonen, eine Art kleines Lexikon, in dem vermerkt ist,
-wie sich die betroﬀene Person äußert, z. B.:
-● Unruhiges Hin- und Herrutschen auf dem Stuhl ist ein Zeichen für Urin- oder Stuhldrang.
-● Ausgeprägte Lutschbewegungen signalisieren Hunger oder
-Durst.
 
-766
+                                                                          11.3.7 Autorität und Führung
+                                                                          Auch in Pflegeteams ist das Konzept von Führung und Auto-
+      Der Betroﬀene profitiert von den unterschiedlichen fachlichen       rität relevant. Dies gilt nicht nur für Führungskräfte wie Sta-
+      Hintergründen, dem breiten Wissensspektrum und den unter-           tions- oder Bereichsleitung. Jede Pflegefachkraft führt ande-
+      schiedlichen Blickwinkeln der Mitglieder in interdisziplinären      re Berufsgruppen. Dazu zählen Auszubildende oder auch
+      Teams. Foto: K. Oborny, Thieme                                      Pflegehilfskräfte.
 
-Der Umgang sollte so normal wie möglich sein, ganz im
-Sinne der Inklusion. Sowohl in der ambulanten Pflege als
-auch bei einem Klinikaufenthalt ist es hilfreich, die Bezugspersonen zu beteiligen. Geistig behinderte Menschen sollten in die Kommunikation miteinbezogen werden.
-Kognitiv eingeschränkte Menschen werden durch einen
-Arztbesuch oder Klinikaufenthalt aus ihrer gewohnten Umgebung gerissen und finden sich in der fremden Welt einer
-Klinik oder Praxis nicht immer ohne Weiteres zurecht. Ihre
-Möglichkeiten, Informationen zu verarbeiten und sich zu
-artikulieren, sind begrenzt. Schnell können sich Ängste,
-Unsicherheit oder Gefühle von Überforderung oder Unselbstständigkeit einstellen.
-Beim Umgang ist auf Folgendes zu achten:
-● Bezugspersonen und Betreuer mit einbeziehen und sie
-über Vorlieben, Abneigungen und erprobte Kommunikationswege befragen
-● Fähigkeiten der Betroﬀenen frühzeitig erkennen und einsetzen
-● (Möglichst vertraute) Hilfsmittel bereitstellen
 
-36.3.3 Veränderungen wahrnehmen
-Eine weitere Herausforderung besteht darin zu erkennen,
-dass überhaupt ein gesundheitliches Problem vorliegt. Selbst
-Menschen mit leichten geistigen Behinderungen können
-teils nicht klar artikulieren, dass sie Bauchschmerzen haben
-oder ihnen der Mund wehtut. Die Betreuer bemerken, dass
+274    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                                 Aufbau einer Pflegebeziehung
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
 
-
+Formen der Autorität                                                               Eine Form der Führung, die beides beherrscht, gilt als ideal.
+                                                                                   Welche Form der Führung angezeigt ist, hängt von der je-
+Es gibt verschieden Autoritätsformen, die auf unterschiedli-                       weiligen Situation ab. So kann z. B. zur Optimierung von Sta-

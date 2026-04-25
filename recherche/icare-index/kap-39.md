@@ -1,1178 +1,607 @@
-# Kapitel 39: Pflege von Menschen in der perioperativen Phase
+# Teil 39
 
-> Quelle: I Care Pflege (Thieme, 2020), S. 800-813
+> Quelle: Icare Pflege
 > Automatisch extrahiert — Formatierung kann abweichen
 
 ---
 
-Strahlentherapie
-Abb. 38.12 Teletherapie.
 
-a
 
-b
-
-a Tumor im Halsbereich. Nach 7-wöchiger perkutaner Bestrahlung hat sich der Tumor komplett zurückgebildet.
-b Individuell angefertigte Maske mit eingezeichneten Bestrahlungsfeldern.
-Foto: W. Krüper, Thieme
-
-● Beim Abbau von Cyclophosphamid entsteht ein Nebenpro-
-
-dukt, das eine hämorrhagische Harnblasenentzündung
-(Zystitis) hervorrufen kann. Als Schutz für die Blase sollte
-zu der Gabe und jeweils nach 4 und 8 Stunden i. v. (bzw.
-nach 2 und 4 Stunden bei oraler Gabe) später der Wirkstoﬀ Mesna gegeben werden. Pflegefachkräfte sollten darauf achten, dass die Intervalle und eine ausreichende
-Flüssigkeitszufuhr eingehalten werden.
-● Bei der Gabe von monoklonalen Antikörpern sollte besonders auf allergische Symptome geachtet werden. Diese
-können auch schon bei der Erstgabe zu heftigen allergischen Reaktionen führen. Die Infusion wird daher unter
-Kreislaufüberwachung langsam gestartet und bei guter
-Verträglichkeit allmählich gesteigert. Häufig werden vor
-Infusionsbeginn prophylaktisch Antiallergika und Kortison
-verabreicht.
-
-38.8 Strahlentherapie
-Ziel der strahlentherapeutischen Behandlung ist die Zerstörung der Tumorzellen, indem sie die Zellteilung stört oder
-komplett verhindert. Anders als die Chemotherapie wirkt
-die Strahlentherapie nicht systemisch im gesamten Körper,
-sondern nur lokal im Bereich des jeweiligen Bestrahlungsfelds. Dies gilt sowohl für die erwünschte Zerstörung der Tumorzellen als auch die unerwünschten Nebenwirkungen,
-z. B. Hautreaktionen.
-Meist wird Photonenstrahlung verwendet – die Energien
-sind sehr hoch und können viele Schäden anrichten, daher
-befindet sich das Personal immer außerhalb des Bestrahlungsraums. Die Dosiseinheit der Photonenstrahlung wird
-in Gray (Gy) angegeben.
-Strahlentherapie wird auch palliativ eingesetzt, z. B. bei
-Frakturgefährdung durch Knochenmetastasen oder bei therapieresistenten Schmerzen. Auch durch Bestrahlung vor
-oder nach Operationen kann die Heilungsrate verbessert
-bzw. die Operation weniger invasiv ausgeführt werden. Die
-Kombination von Radio- und Chemotherapie erhöht für einige Tumoren die Heilungsrate.
-Bei der Strahlentherapie kann die Strahlenquelle innerhalb des Körpers (Bestrahlung von innen, sog. Brachytherapie) oder außerhalb des Körpers (Bestrahlung von außen,
-sog. Teletherapie/perkutane Bestrahlung) platziert werden.
-
-Teletherapie/perkutane Bestrahlung • Sie wird zu etwa 90 %
-angewendet (▶ Abb. 38.12). Der Tumor wird je nach Lage
-aus einer oder mehreren Richtungen bestrahlt, um eine
-größtmögliche Schonung der Umgebungsstrukturen zu gewährleisten. Bei mehreren Bestrahlungsfeldern spricht man
-von isozentrischer Bestrahlung, d. h., der zentrale Punkt
-liegt in der Körpermitte. Die erforderliche Strahlendosis pro
-Bestrahlung wird auf die einzelnen Felder verteilt; die geplante Gesamtdosis der Strahlen teilt man auf mehrere Sitzungen auf (fraktionierte Bestrahlung). Diese Tumorvernichtungsdosis beträgt bei den meisten Tumoren 60–70 Gray,
-sodass die Patienten meist mit 5-mal 2 Gray über einen Zeitraum von 6 Wochen bestrahlt werden.
-Brachytherapie • Hier findet die Bestrahlung mittels radioaktiver Substanz direkt am Tumor statt. Die Strahlenquelle
-wird entweder in eine Körperhöhle eingeführt (meist bei
-gynäkologischen Tumoren) oder direkt mittels Hohlnadel in
-das Gewebe eingebracht und der Tumor von dort aus bestrahlt (z. B. HNO-Tumoren, Prostatakarzinom). Häufig wird
-die radioaktive Substanz nach der Bestrahlungssitzung direkt entfernt, ggf. kann sie jedoch auch länger im Gewebe
-verbleiben.
-Diese Art der Bestrahlung ist relativ aufwendig und
-manchmal nur unter Narkose möglich. Allerdings kann dabei eine hohe Strahlendosis verabreicht werden, da das umliegende Gewebe kaum betroﬀen wird.
-Permanente Spickung mittels radioaktiver Seeds • Sie ist eine
-Sonderform, die z. B. bei Prostatakarzinom angewendet
-wird; die Strahlenquellen verbleiben im Körper und im Gegensatz zu den anderen Bestrahlungsformen gibt der Patient
-Strahlung ab. Für die Dauer dieser Strahlung sollte er engen
-Körperkontakt mit anderen Menschen meiden.
-Ansonsten sind bestrahlte Pflegeempfänger für ihre Umgebung ungefährlich.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-797
-
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen     289
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
 l
-38
+12    Ethisch handeln
 
-Pflege von Menschen mit malignen Tumoren
 
-WISSEN TO GO
-Strahlentherapie
-Ziel ist die Zerstörung der Tumorzellen. Meist wird Photonenstrahlung verwendet – die Energien sind sehr hoch
-und können viele Schäden anrichten, das Personal befindet
-sich immer außerhalb des Bestrahlungsraums. Unterschieden wird in:
-● perkutane Bestrahlung: Der Tumor wird in mehreren
-Einzelsitzungen über einen Zeitraum von mehreren Wochen von außen bestrahlt.
-● Brachytherapie: Die Bestrahlung findet mittels radioaktiver Substanz direkt am Tumor statt.
+      Beachtung der Rechte aller Beteiligten zu finden. Es zeigt             Das Töten auf Verlangen lehnt sie strikt ab. Auch die Pflege-
+      sich, dass hierbei ethische Theorien wie die Prinzipienethik           verbände verlangen eine intensive Palliative Care. Von der
+      ein hilfreiches Werkzeug sind. Die Suche nach ethisch ange-            Bundesärztekammer heißt es, am Ende des Lebens solle die
+      messenen Lösungen ist nicht nur eine Forderung der Pfle-               palliativmedizinische Versorgung zentral sein. Und: „Die
+      geethik, sondern eine große Hilfe für alle beteiligten Per-            Mitwirkung bei der Selbsttötung ist keine ärztliche Auf-
+      sonen. Für den Pflegeempfänger, da seine Würde und seine               gabe.“ Die Deutsche Gesellschaft für Humanes Sterben
+      Integrität geschützt sind. Für Pflegefachkräfte, da ethische           (DGHS) plädiert hingegen dafür, Sterbende selbst entschei-
+      Konflikte, die nicht gelöst werden können, bei ihnen selbst            den zu lassen, wie lange sie ihre Leiden ertragen können –
+      moralischen Stress auslösen (Corley 2002). Für das Gesund-             und möchten. Sie befürwortet die Palliative Care, toleriert
+      heitssystem, da Konflikte auch viele Ressourcen (Energie,              aber Hilfe zur Beendigung eines Lebens.
+      Zeit, Gelder) in Anspruch nehmen.
 
-38.9 Schmerztherapie in der
-Onkologie
-Die meisten Tumorpatienten werden im Verlauf ihrer Krankheit mit Schmerzen konfrontiert. Tumorbedingte Schmerzen
-entstehen u. a. durch Knochenmetastasen, Nervenkompressionen oder Infiltrationen. Aber auch andere Ursachen sind
-möglich, z. B. therapiebedingte Schmerzen durch OP, orale
-Mukositis, aber auch unabhängig vom Tumorleiden, z. B. Migräne, Arthrose.
-Schmerzen und psychische Faktoren beeinflussen sich oft
-gegenseitig. Eine Zunahme an Schmerzen ist oft mit der
-Angst verbunden, dass auch die Erkrankung fortschreitet.
-Hinzu kommt in vielen Fällen die Angst vor den Nebenwirkungen starker Schmerzmittel/Opiate. Mitunter empfinden
-Pflegeempfänger und Bezugspersonen deren Einsatz als Zeichen, dass die Krankheit sich nun im „Endstadium“ befindet.
-Daher sollte ein Schmerzpatient über seinen Zustand und
-die geplanten Maßnahmen sehr gut informiert sein. Außerdem sollte er das Gefühl haben, dass seine Schmerzen und
-Ängste ernst genommen werden und alles Machbare für ihn
-getan wird. Es gibt heute eine Reihe gut wirksamer
-Schmerzmedikamente. Der Patient sollte nicht über einen
-längeren Zeitraum unter Schmerzen leiden müssen. Pflegefachkräfte sollten erfragen, ob Schmerzen sich unter einer
-Therapie ausreichend gebessert haben. Für eine bessere Verlaufsdokumentation sollten Schmerzskalen (S. 537) verwendet werden.
-Pflegefachkräfte sollten außerdem mit dem Pflegeempfänger besprechen, inwiefern er mögliche Nebenwirkungen
-tolerieren möchte, z. B. wie viel Sedierung für ihn akzeptabel
-ist. Möglicherweise möchte er lieber nicht ganz schmerzfrei
-sein, dafür aber „wacher“ am Leben teilhaben können.
-Es empfiehlt sich, die Medikamente nach dem WHO-Stufenplan (S. 543) einzusetzen. Wichtig ist, dass die Medikamente regelmäßig gegeben werden.
-Neben dem Einsatz von Schmerzmitteln ist die Tumorbehandlung an sich die wichtigste Schmerzbehandlung. Auch
-die Therapie von Komplikationen, wie Knochenmetastasen,
-Darmverschluss, Schmerzen durch Herpesinfektionen, ist
-eine wichtige Säule in der Behandlung von Schmerzen. So
-profitieren etwa Pflegeempfänger mit Knochenmetastasen
-häufig – auch ihre Schmerzen betreﬀend – von einer Strahlentherapie und einer Bisphosphonatgabe (diese hemmen
-den Knochenabbau).
-Nicht medikamentöse Methoden der Schmerztherapie
-wie Wärme/Kälte-Behandlungen, Massagen, Akupunktur,
-Hypnose, Entspannung und Ablenkungsmethoden sind bei
-798
+                                                                             12.6.2 Patientenverfügung
+      12.6 Ethische Grenzsituationen                                         Darf man ein lebenserhaltendes Gerät oder eine künstliche
+                                                                             Ernährung ausschalten? Und vor allem: Wer entscheidet da-
+      in der Pflege                                                          rüber? Hat der Betroﬀene eine klare Patientenverfügung for-
+      Immer wieder geraten Mitarbeiter in Kliniken und Pfle-                 muliert oder sich gegenüber Familie oder Freunden klar
+      geeinrichtungen in ethische Konflikte. In einer solchen Situ-          mündlich geäußert, dann gilt sein Wille. Das hat der Gesetz-
+      ation ist es Aufgabe des Fachpersonals, den Prozess der Ent-           geber so festgelegt und gewährleistet mit der Regelung
+      scheidung im Sinne des Pflegeempfängers zu begleiten –                 zweierlei: Die Patientenverfügung (PV)
+                                                                             ● sichert das Selbstbestimmungsrecht des Menschen zu je-
+      mit Wissen, Erfahrung und aller gebotenen Oﬀenheit.
+                                                                               der Zeit und
+                                                                             ● gewährleistet dem medizinischen Personal bei existenziel-
+      12.6.1 Sterbehilfe                                                       len Fragen am Lebensende Handlungssicherheit und juris-
+                                                                               tische Absicherung.
+      Bislang wird zwischen „aktiver“, „passiver“ und „indirekter“
+      Sterbehilfe unterschieden, die Ausführungen dazu lesen Sie
+                                                                             In der Praxis ist es oft so, dass keine PV vorliegt oder der
+      im Kap. „Rechtliche Grundlagen der Pflege“ (S. 170). Der
+                                                                             Verfasser seine Anweisungen sehr unkonkret formuliert hat,
+      Deutsche Ethikrat schlägt vor, die zwar bekannte, aber teils
+                                                                             z. B.: „In dem Fall, dass ich sterbenskrank bin, wünsche ich
+      irreführende Terminologie von aktiver, passiver und indi-
+                                                                             keine lebensverlängernden Maßnahmen.“ Was aber ist
+      rekter Sterbehilfe aufzugeben. Er unterteilt die Entscheidun-
+                                                                             „sterbenskrank“? Liegt keine ausdrückliche Erklärung vor,
+      gen und Handlungen am Lebensende genauer, dies soll den
+                                                                             werden das medizinische Personal und die Angehörigen zu-
+      Handelnden im Alltag mehr Sicherheit geben.
+                                                                             sammen versuchen, in seinem mutmaßlichen Willen zu ent-
+      ● Sterbebegleitung: die Pflege von Sterbenden. Sie bekämpft
+                                                                             scheiden. Können sich beide Parteien nicht auf ein Vorgehen
+        Durst, Schmerzen, Übelkeit, Angst und bietet psychosozia-
+                                                                             einigen, müssen sich die Vertreter eine Genehmigung des
+        len Beistand.
+                                                                             Betreuungsgerichts (S. 177) einholen.
+      ● Therapien am Lebensende: Das Leben wird auf Wunsch
 
-chronischen Tumorschmerzen als alleinige Maßnahme i. d. R.
-nicht ausreichend, können jedoch ergänzend eingesetzt
-werden. In manchen Kliniken gibt es spezielle „Schmerzambulanzen“, deren Ärzte zur Mitbetreuung der Pflegeempfänger eingesetzt werden können und die noch andere Methoden der Schmerzbekämpfung anbieten können, z. B. Nervenblockaden oder PDA-Katheter (S. 545). Ausführliche Informationen zur Schmerztherapie finden Sie im Kap.
-„Schmerzmanagement“ (S. 542).
+        des Sterbenden verlängert, dabei werden seine Leiden ge-
+        lindert.
+      ● Sterbenlassen: umschreibt, was vorher unter „passive“                  Beispiel Patientenverfügung
+        Sterbehilfe gefasst wurde.
+      ● Beihilfe zur Selbsttötung: Jemand stellt ein todbringendes             Herr D., 45 Jahre alt, ehemaliger Leistungssportler, hatte einen
+        Mittel in die Reichweite des Sterbenden. Die Person, die               Motorradunfall. Die Folgen sind u. a.: Schädel-Hirn-Trauma mit
+        das Mittel bereitstellt, verabreicht es aber nicht, der Ster-          bleibender starker geistiger Beeinträchtigung, hohe Fraktur der
+        bende nutzt das Mittel selbst. Diese Handlung ist juristisch           Halswirbelsäule, die eine lebenslange Beatmung notwendig
+        nicht strafbar. Diese Straﬀreiheit ist aber immer wieder               macht. In seiner PV steht: „Bei einem Unfall wünsche ich jede
+        Gegenstand intensiver Diskussionen.                                    Form der akuten Versorgung. Stellt sich jedoch heraus, dass ich
+      ● Tötung auf Verlangen: Entspricht dem, was bisher unter                 langfristig
+        „aktive Sterbehilfe“ gefasst wurde.                                    ● ein starkes geistiges Handicap davontrage und/oder
+                                                                               ● dauerhaft künstlich beatmet sein sollte,
 
-38.10 Gesundheitsförderung
-und Alltagsbewältigung
-Unter medizinischer Nachsorge versteht man die Betreuung
-der Pflegeempfänger nach Ende der Therapie. Ziel ist dabei
-die Erkennung/Behandlung von Rezidiven, aber auch von
-krankheits- oder therapiebedingten Folgeerkrankungen. Außerdem sollte der oft krankheitsbedingt verunsicherte Patient psychisch betreut werden.
-Rehabilitationsmaßnahmen • Sie sollen die Wiedereingliederung nach abgeschlossener Therapie in das Alltagsleben
-erleichtern, aber nicht für alle onkologischen Pflegeempfänger ist die Rückkehr in das alte Leben oder an den früheren
-Arbeitsplatz möglich. Pflegefachkräfte sollten frühzeitig den
-Sozialdienst des Krankenhauses/der Einrichtung hinzuziehen, um dem Pflegeempfänger alle Möglichkeiten der Unterstützung anbieten zu können.
-Selbsthilfegruppen • Auch der Kontakt zu Selbsthilfegruppen
-ist für manche Pflegeempfänger hilfreich. Pflegefachkräfte
-können dabei unterstützen, Angebote im Umfeld zu finden
-und evtl. eine Kontaktaufnahme bereits während des Krankenhausaufenthalts zu ermöglichen. Ein Verzeichnis der
-Selbsthilfeorganisationen ist z. B. über die Internetseite des
-Krebsinformationsdienstes zu finden: www.krebsinformationsdienst.de.
-Sport • Regelmäßige sportliche Betätigung von geringer bis
-mittlerer Intensität wirkt sich auch bei onkologischen Pflegeempfängern positiv auf Lebensqualität, Fatigue und körperliche Fitness aus (▶ Abb. 38.13). Besonders eﬀektiv ist die
-Teilnahme an Sportprogrammen im Rahmen der Rehamaßnahmen oder bei speziellen Sportgruppen. Schonen sollten
-Abb. 38.13 Leichte sportliche Betätigung.
+                                                                               wünsche ich, dass alle lebenserhaltenden Therapien unverzüg-
+                                                                               lich abgebrochen und/oder eingestellt werden. Gleichzeitig
+        Beispiel Beihilfe zur Selbsttötung                                     wünsche ich Medikamente, damit ich von meinem Sterben
+                                                                               nichts bemerke.“
+        Herr M. leidet an einem metastasierenden Prostatakarzinom.
+                                                                                  Herr D. erhält sedierende Medikamente, das Beatmungsgerät
+        Als er bemerkt, wie schnell er verfällt, beschließt er, seinem Le-
+                                                                               wird abgestellt. Um (aktive) Sterbehilfe oder Tötung auf Verlan-
+        ben vorzeitig ein Ende zu setzen. Er bittet seine Frau, ihm eine
+                                                                               gen handelt es sich in dem Fall nicht, weil das Personal dem
+        Ampulle schnell wirkendes Insulin zu geben. Diese stellt er sich
+                                                                               Willen von Herr D. nachkommt.
+        an das Bett. Er plant, sich das Insulin über den Port zu spritzen
+        – solange er dazu noch selbst die Kraft hat. Seine Frau leistet
+        demnach Beihilfe zur Selbsttötung. Sie kann ihm – juristisch         Pflegende werden vielleicht erleben, dass sich ein Angehöri-
+        betrachtet – das Insulin in Reichweite stellen, ohne sich strafbar   ger weigert, einer Patientenverfügung (▶ Abb. 12.5) nach-
+        zu machen.                                                           zukommen, oder sagt: „Ich kann die Geräte nicht ausschal-
+                                                                             ten lassen!“ Sie sollten Gesprächsbereitschaft zeigen, zuhö-
+                                                                             ren und auf den Willen des Pflegeempfängers hinweisen.
+      Kritische Stimmen zur Sterbehilfe • Vor allem die Deutsche
+                                                                             Menschen brauchen Zeit, um Abschied zu nehmen, ein ve-
+      Hospizstiftung setzt sich für die Palliative Care (S. 840) ein.
+                                                                             hementes Drängen ist hier fehl am Platz. Pflegende sollten
 
-Nach der Genesung können Aktivitäten wie Spazierengehen
-oder Radfahren dauerhaft zu einer besseren Lebensqualität beitragen (Symbolbild). © Halfpoint/stock.adobe.com
+290    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                            Ethische Grenzsituationen in der Pflege
+
+
+Abb. 12.5 Patientenverfügung.                                          Hirntoddiagnostik
+                                                                       Der Hirntod muss zweifelsfrei bewiesen sein. Seine Diagnose
+                                                                       erfordert:
+
+                                                                       Erfüllung der Voraussetzungen • Es muss eine primäre (das
+                                                                       Gehirn selbst betreﬀend, z. B. durch Blutung) oder eine se-
+                                                                       kundäre Hirnschädigung (z. B. bedingt durch Sauerstoﬀman-
+                                                                       gel, durch Stoﬀwechselstörungen oder Intoxikation) vorlie-
+                                                                       gen. Andere Ursachen für ein Koma, z. B. eine reversible In-
+                                                                       toxikation oder eine Unterkühlung, müssen ausgeschlossen
+                                                                       werden.
+
+                                                                       Klinische Symptome • Die Zeichen des Hirntodes sind:
+                                                                       ● Bewusstlosigkeit (Koma): Der Komagrad ist definiert als
+
+                                                                         Bewusstlosigkeit ohne Augenöﬀnung und ohne Reaktion
+                                                                         auf wiederholte Schmerzreize.
+Selbstbestimmt und in Würde gehen zu dürfen, ist der Wunsch            ● lichstarre mittel- bis maximalweite Pupillen: Beide Pupil-
+vieler Menschen. Sie wünschen z. B. keine lebenserhaltenden Maß-
+                                                                         len reagieren nicht auf Lichteinfall.
+nahmen, sobald eine gravierende geistige Beeinträchtigung er-          ● beidseitiges Fehlen des okulozephalen/vestibulookulären
+kennbar ist. Derartige Wünsche müssen in einer Patientenver-
+                                                                         Reflexes: Wird der Kopf gedreht, bewegen sich die Augen
+fügung festgehalten sein (Symbolbild). © Ramona Heim/stock.adobe.com
+                                                                         nicht in die Gegenrichtung (Puppenkopfphänomen).
+                                                                       ● beidseitiges Fehlen des Kornealreflexes: Bei Berühren des
+
+                                                                         Augapfels schließen sich die Augen nicht.
+                                                                       ● Fehlen von Reaktionen auf Schmerzreize: Schmerzreize lö-
+seelsorgerische Begleitung anbieten. Denn trotz Patienten-
+verfügung fühlen sich manche Menschen schuldig, auch                     sen keine Reaktion aus.
+                                                                       ● Fehlen des Pharyngeal- und Trachealreflexes: Wird die
+wenn sie dem Wunsch des Pflegeempfängers entsprechen.
+                                                                         hintere Rachenwand berührt, folgt kein Würgen oder Hus-
+                                                                         ten.
+12.6.3 Hirntod                                                         ● Ausfall der Spontanatmung: Bei diesem Test wird der Ge-
+
+                                                                         halt von Kohlendioxid (CO2) im Blut erhöht. Bei einem
+Definition Hirntod                                                       lungengesunden Menschen ist der CO2 -Gehalt der Atem-
+Ein Mensch gilt laut Bundesärztekammer als hirntot, wenn die Ge-         antrieb. Die Hyperkapnie wird durch Diskonnektion vom
+samtfunktion des Großhirns, des Kleinhirns und des Hirnstamms            Respirator oder durch Hypoventilation (ungenügende Be-
+endgültig und irreversibel erloschen ist.                                atmung) herbeigeführt. Setzt bei einer Konzentration des
+                                                                         CO2 ≥ 60 mmHg keine Eigenatmung ein, liegt ein zentraler
+Bei einigen Menschen mit Schädel-Hirn-Trauma, intrazere-                 Atemstillstand vor.
+braler Blutung oder nach einer Reanimation kommt es zum
+Hirntod. Klinisch sind diese Menschen komatös, sie zeigen              Nachweis der Irreversibilität • Abschließend muss sich zeigen,
+keine Reflexe des Hirnstamms und atmen nicht selbststän-               ob die klinischen Symptome tatsächlich irreversibel, d. h.
+dig. Der Körper kann aber womöglich noch die Temperatur                nicht umkehrbar, sind. Dies leisten apparative Untersuchun-
+regulieren und Kreislaufreaktionen zeigen, z. B. erhöhte               gen, z. B. EEG, Dopplersonografie oder Angiografie. Sie wei-
+Herzfrequenz. Auch Gähnen oder Schwitzen sind möglich.                 sen entweder nach, dass keine elektrische Aktivität im Hirn
+Diese „Reaktionen“ sind vom Rückenmark autonom gesteu-                 mehr vorhanden ist oder dass das Hirn nicht mehr durch-
+erte Reflexe. Die BÄK empfiehlt, nach Eintritt des Hirntods            blutet wird. Der Ausfall der klinischen Symptome muss für
+die Therapie bald zu beenden, Ausnahmen sind Schwangere                die Diagnose bei Erwachsenen und Kindern ab dem 3. Le-
+oder die Bereitschaft zur Organspende.                                 bensjahr
+                                                                       ● bei primärer Hirnschädigung nach mindestens 12 Stunden
+                                                                       ● bei sekundärer Hirnschädigung nach mindestens 72 Stun-
+Hirntod und Organspende                                                  den
+Hierbei sind die Regelungen in anderen Ländern, auch                   erneut übereinstimmend nachgewiesen werden.
+deutschsprachigen, teils profund anders. Zum Beispiel gilt in            Alle Untersuchungen müssen 2 dafür qualifizierte Ärzte
+Österreich jeder „automatisch“ als Spender – auch wenn er              durchführen. Sie dürfen nicht in den Organspendeprozess
+dort nur im Urlaub ist. Einen Widerspruch kann jeder zu                direkt eingebunden sein. Für die Feststellung des Hirntods
+Lebzeiten abgeben. In Deutschland gelten als Voraussetzun-             bei Kindern gelten teilweise abweichende Bestimmungen.
+gen für eine Organspende, dass der Betroﬀene hirntot ist
+und sich willentlich (zu Lebzeiten über einen Organspende-
+ausweis oder eine PV) für eine Spende ausgesprochen hat.
+                                                                       Die ethische Herausforderung
+Liegt keine schriftliche Erklärung vor, müssen Ärzte die An-           Ist der Hirntod tatsächlich die klare Zäsur zwischen Leben
+gehörigen befragen, ob sich der Angehörige je anderweitig              und Tod? Die Bundesärztekammer hat ihre Definition ver-
+schriftlich oder mündlich zu seiner Organspendebereit-                 schriftlicht und die Frage positiv bestätigt. Tritt der Hirntod
+schaft geäußert hat. Ist darüber nichts bekannt, wird das              ein, wird der Totenschein ausgefüllt, die Therapie eingestellt.
+medizinische Team zusammen mit den Angehörigen ver-                    Kritiker halten diese „neurologische“ Todesdefinition für
+suchen, den mutmaßlichen Willen des Verstorbenen he-                   falsch. Sie sagen, der Mensch funktioniere „biologisch“ wei-
+rauszufinden und in seinem Willen zu entscheiden.                      ter und könne noch Tage, Wochen oder gar Jahre leben. Er
+                                                                       sei kein toter, sondern ein sterbender Mensch. Zudem sei
+                                                                       nicht abschließend klar, ob die heute möglichen Unter-
+
+
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen          291
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+l
+12    Ethisch handeln
+
+
+      suchungen tatsächlich alle Hirnfunktionen erfassen könn-
+      ten. Einig sind sich beide Parteien in einem: Der Ausfall der
+      Hirnfunktionen ist nach bisherigem Wissen nicht reversibel.           Beispiel Oﬀene Kommunikation
+      Jeder muss für sich entscheiden, welche Argumentations-
+      linie dem eigenen Empfinden entspricht.                               Hat sich der Patient (oder seine Angehörigen, sofern keine Pa-
+                                                                            tientenverfügung vorliegt) für eine Organentnahme entschie-
+      Pflegerische Herausforderung • Pflegende fordert ein Organ-           den, startet der Entnahmeprozess. Für Details siehe das Kapitel
+      spendeprozess heraus: Nachdem der Hirntod bescheinigt                 „Pflege bei Transplantationen“ (S. 827).
+      ist, werden alle für den Organismus biologisch wichtigen                 Im folgenden Fall wurde ein 50 Jahre alter Mann mit Hirn-
+      Funktionen bis zur Entnahme aufrechterhalten. Das kann                blutung, dessen Zustand stabil ist, als potenzieller Spender er-
+      viele Stunden dauern. Der Körper trägt trotz der Hirntod-             mittelt. Der Empfänger ist ein 26-jähriger Student, der nach
+      bescheinigung keine sichtbaren Todeszeichen, er ist rosig             einem Infekt eine schwere Kardiomyopathie entwickelt hat. Er
+      und warm. Der Betroﬀene kann zudem noch bestimmte Spi-                ist im kritischen Zustand.
+      nalreflexe (Lazarus-Zeichen) und einen Anstieg des Blut-                 Die Ärzte möchten ganz sichergehen, dass das Spenderherz
+      drucks aufweisen. Auch dass der Betroﬀene schwitzt, ist               in Ordnung ist. Die Ärzte planen deshalb, beim Spender noch
+      nicht unüblich. Der hirntote Mensch erscheint nicht leblos.           eine Koronarangiografie durchzuführen. Die Bezugspersonen
+      Ein Umstand, den Pflegefachkräfte auch als belastend emp-             sind über ein solches Vorgehen irritiert und möchten ihrem An-
+      finden können.                                                        gehörigen dieses Vorgehen ersparen.
+         Auch nach der Entscheidung für eine Organentnahme                     Arzt, Pflegekraft sowie Mitarbeiter der DSO klären die Be-
+      werden die pflegerischen Maßnahmen aufrechterhalten –                 zugspersonen in einem oﬀenen, ausführlichen Gespräch über
+      sofern der Zustand es zulässt. Der Patient wird weiterhin             den Prozess und die Wichtigkeit dieser Maßnahme auf. Größt-
+      positioniert, regelmäßig werden Körperpflege und Bronchi-             mögliche Transparenz bietet hier den Bezugspersonen die Mög-
+      altoilette durchgeführt und die Diurese und Temperatur                lichkeit, das Verfahren zu verstehen und dieses auch zu akzep-
+      kontrolliert. Weiterhin sollte dem Patienten während der              tieren.
+      Pflegehandlungen mit Respekt begegnet werden. Oberster
+      Anspruch der Pflege sollte es sein, den Menschen unter
+      Wahrung seiner Würde auf die Explantation vorzubereiten.
+         Bringt eine Pflegefachkraft diese Grenzsituation in ein Di-
+      lemma (sei es z. B. ethischen oder emotionalen Ursprungs),              WISSEN TO GO
+      sollte sie das klar in ihrem Team kommunizieren. Viele Ab-
+      teilungen (z. B. Intensivstation und OP) haben freiwillige            Ethische Grenzsituationen
+      Teams etabliert, die im Fall einer Organspende die Pflege
+      und Begleitung übernehmen.                                            Der (definierte) Hirntod eines Menschen bedeutet eine
+                                                                            Herausforderung für Angehörige, Pflegefachkräfte und
+      Herausforderung für Angehörige • Auch betroﬀene Bezugs-               Ärzte. Der Hirntod wird über neurologische Kriterien fest-
+      personen fordert eine solche Situation heraus. Vielleicht be-         gestellt.
+      fürworten sie selbst eine Spende nicht. Meist sind plötzliche            Um Angehörigen und Personal ethische Dilemmas zu er-
+      Ereignisse (z. B. Unfälle, Ruptur eines Aneurysmas) ursäch-           sparen, sollten Menschen frühzeitig definieren, was sie
+      lich für den Hirntod, sodass sich die Ereignisse z. T. über-          wünschen. Ein Organspendeausweis kann die Entschei-
+      schlagen. Für die meisten Angehörigen „lebt“ der Mensch               dung rechtlich klären, für die Angehörigen bleibt es
+      noch, der (Hirn-)Tod ist nicht unmittelbar erfahrbar.                 manchmal dennoch eine schwere Situation.
+         Bei jedem Organspendeprozess ist ein Koordinator der                  Pflegefachkräfte und Ärzte sollten den Bezugspersonen
+      Deutschen Stiftung Organspende (DSO) die gesamte Zeit vor             oﬀen, ehrlich und mit all ihrem Wissen und ihrer Erfahrung
+      Ort. Er triﬀt dann ein, wenn der Hirntod festgestellt ist, und        begleiten. Die Mitarbeiter der Deutschen Stiftung Organ-
+      bleibt bis zum Ende der Organentnahme. Wenn Angehörige                spende sind für diese Situationen besonders geschult. Der
+      es wünschen, wird er sie auch bei der Verabschiedung von              professionelle Umgang mit den Angehörigen fordert ein
+      ihrem Angehörigen begleiten. Die meisten Kliniken bieten              hohes Maß an Sensibilität und die Fähigkeit, auf die Situa-
+      den Angehörigen an, dass sie ihren Angehörigen nach der               tion einzugehen. Wichtigste Aufgabe des Teams ist es,
+      Organentnahme, z. B. im Zimmer des Abschieds, sehen kön-              den betroﬀenen Menschen bis zuletzt respektvoll medizi-
+      nen.                                                                  nisch-pflegerisch zu versorgen.
+         Pflegende begleiten die Angehörigen, spenden Trost, be-
+      antworten Fragen und klären auf. Wenn sie selbst unsicher
+      sind oder auf Fragen der Angehörigen nicht antworten kön-           12.6.4 Freiheitsentziehende
+      nen, können auch sie sich direkt an den Mitarbeiter der Stif-
+      tung wenden.                                                        Maßnahmen
+                                                                          In der Praxis werden immer wieder Situationen auftreten,
+                                                                          in der freiheitsentziehende Maßnahmen für einen Men-
+                                                                          schen in Betracht gezogen werden. Fixiert werden darf ein
+                                                                          Pflegeempfänger nur, wenn die Notwendigkeit der Frei-
+                                                                          heitsbeschränkung unausweichlich ist. Über die verschiede-
+                                                                          nen Formen freiheitsbeschränkender Maßnahmen sowie die
+                                                                          entsprechenden Gesetzesgrundlagen lesen Sie im Kap.
+                                                                          „Rechtliche Grundlagen der Pflege“ (S. 170).
+                                                                            In der Durchführung spielt ein ethisch verantwortungs-
+                                                                          voller Umgang mit freiheitsentziehenden Maßnahmen eine
+                                                                          wichtige Rolle.
+
+
+292    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                          Ethische Grenzsituationen in der Pflege
+
+
+Freiheitsentziehende Maßnahmen und                                  was zu vermeiden ist. Fixierungsgurte können Hautabschür-
+                                                                    fungen und Druckstellen verursachen. Nicht sachgerecht an-
+ethische Prinzipien                                                 gebrachte Gurte können für den Betroﬀenen ggf. lebens-
+Die ethischen Prinzipien (S. 285) können auch im Falle der          bedrohliche Folgen haben (z. B. Strangulation). Deshalb darf
+freiheitsentziehenden Maßnahmen als Grundlage der Pro-              nur geschultes Personal diese Gurte anbringen. Außerdem
+blemlösung dienen: Darf einem Pflegeempfänger seine Frei-           muss ein Pflegeempfänger unter freiheitsentziehenden
+heit (vorübergehend) entzogen werden? Indem die ethi-               Maßnahmen engmaschig überwacht werden. Neben den
+schen Grundprinzipien abgewägt werden, kann eine indivi-            körperlichen Schäden durch freiheitsentziehende Maßnah-
+duelle Entscheidung ermöglicht werden.                              men sind auch negative psychische Folgen möglich.
+                                                                      Allerdings kann auch durch eine eigentlich erforderliche,
+Prinzip der Autonomie • Jeder Pflegeempfänger hat das Recht         aber nicht durchgeführte Maßnahme (Unterlassung) Scha-
+auf selbstbestimmte Entscheidungen. Schwierig wird es,              den entstehen bzw. das Fürsorgeprinzip nicht erfüllt sein.
+wenn die Person nicht entscheidungsfähig ist, wie es etwa           Eine freiheitsentziehende Maßnahme kann also auch dem
+bei dementen oder psychisch veränderten Menschen der                Prinzip des Nichtschadens verpflichtet sein, indem sie po-
+Fall ist. Das Prinzip steht den freiheitsentziehenden Maß-          tenziellen Schaden (z. B. durch Stürze – Eigengefährdung)
+nahmen entgegen, da sie den Pflegeempfänger daran hin-              verhindert.
+dern, ihren Aufenthaltsort oder ihre Handlungen selbst zu
+wählen.                                                             Prinzip der Gerechtigkeit • Pflegefachkräfte müssen allen
+   Die Achtung der Selbstbestimmung sollte so lange wie             Pflegeempfängern unter gerechter Verteilung von Ressour-
+möglich gesichert werden, z. B. indem kreativ individuelle          cen die notwendige Pflege zukommen lassen. Häufig wer-
+Konzepte für den einzelnen Betroﬀenen entwickelt werden,            den aus Personalmangel (begrenzte personelle Ressourcen)
+um so auf freiheitsentziehende Maßnahmen so lange wie               freiheitsentziehende Maßnahmen erwogen. Das ist jedoch
+möglich verzichten zu können. Das Prinzip der Autonomie             keine Indikation! Nicht zuletzt auch deshalb, weil z. B. die
+gilt auch noch im Kleinsten: Auch ein Pflegeempfänger un-           Fixierung eine regelmäßige Überwachung nötig macht.
+ter freiheitsentziehenden Maßnahmen kann entscheiden,
+ob er lieber Kaﬀee oder Tee trinken möchte.                         ! Merke Pflegeaufwand
+                                                                    Entgegen den Annahmen ist der Pflegeaufwand bei freiheitsentzie-
+Prinzip der Fürsorge • Die pflegerische Arbeit muss immer           henden Maßnahmen nicht geringer, sondern aufgrund der eng-
+zum Wohle des Pflegeempfängers sein. Dies bedeutet auch,            maschigen Beobachtung des Pflegeempfängers zeitintensiver.
+ihn vor Schaden zu schützen, den er sich ggf. selbst zufügt.
+Nach sorgfältigem Abwägen der Vor- und Nachteile kann               Prinzipien als Diskussionsgrundlage • Die ethischen Grund-
+eine freiheitsentziehende Maßnahme dem Wohl des Patien-             prinzipien helfen, sich bei der Erwägung freiheitsentziehen-
+ten dienen. Jedoch muss gerade dieser Punkt immer mithilfe          der Maßnahmen einer Entscheidung anzunähern. Das Ge-
+des Prinzips der Autonomie kritisch hinterfragt werden.             setz hat einige Regeln definiert, wann Freiheitsentzug mög-
+                                                                    lich (und sinnvoll) ist. Generell gilt: In jedem Fall müssen
+Prinzip des Nichtschadens • Einem Pflegeempfänger darf kein         freiheitsentziehende Maßnahmen sorgsam abgewogen sein
+Schaden zugefügt werden. Allerdings können durch frei-              – im juristischen wie im ethischen Sinn.
+heitsentziehende Maßnahmen Verletzungen entstehen –
+
+
+
+
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen        293
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+       3
+I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+ Usage subject to terms and conditions of license.
+III Pflegebasismaßnahmen
+                    13 Hygiene . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 296
+
+                    14 Wahrnehmen und Beobachten . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 318
+
+                    15 Mobilisation, Positionierung und Schlaf . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 342
+
+                    16 Körperpflege und Bekleidung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 370
+
+                    17 Prophylaxen . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 392
+
+                    18 Ernährung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 442
+
+                    19 Ausscheidung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 478
+
+                    20 Medikamentenmanagement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 510
+
+                    21 Schmerzmanagement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 530
+
+                    22 Informieren, Schulen, Anleiten und Beraten. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 550
+
+                    23 Notfallsituationen. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 558
+
+
+
 
 I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
 Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
+ Usage subject to terms and conditions of license.
+13                                           Hygiene
 
-Gesundheitsförderung und Alltagsbewältigung
-sich die Pflegeempfänger allerdings in den ersten 24 Stunden nach einer Chemotherapie, wenn diese besonders herzoder nierenbelastend war, nach Mediastinal- oder Ganzkörperbestrahlung und bei niedrigen Hämoglobinwerten. Bei
-Thrombozytenwerten unter 20 000/μl sollte wegen des Blutungsrisikos keine intensive körperliche Belastung stattfinden; Krafttraining ist erst bei Werten über 50 000/μl zu
-empfehlen. Bei Granulozytopenie sollten die sportlichen Aktivitäten möglichst nicht im Freien stattfinden (Belastung
-durch Sporen etc.).
 
-38.10.1 Palliative Versorgung
-Bedauerlicherweise enden nicht alle Tumorerkrankungen
-mit einer Heilung. Um für diese Pflegeempfänger die bestmögliche weitere Versorgung sicherzustellen, sollten die
-Fachleute der Palliativmedizin (S. 840) frühzeitig hinzugezogen werden. Speziell weitergebildete Ärzte und Pflegepersonal ermöglichen auch eine ambulante/häusliche Betreuung in der letzten Lebensphase. Falls eine häusliche Versorgung nicht mehr möglich ist, stehen Betreuungsmöglichkeiten auf einer Palliativstation bzw. im Hospiz zur Verfügung.
 
-WISSEN TO GO
-Tumortherapie – Informieren, Schulen, Anleiten,
-Beraten
-Ziel der medizinischen Nachsorge sind die Erkennung/Behandlung von Rezidiven, krankheits- oder therapiebedingten Folgeerkrankungen sowie die psychische Betreuung.
-● Rehabilitationsmaßnahmen: Der Sozialdienst sollte
-frühzeitig hinzugezogen werden, um alle Möglichkeiten
-der Unterstützung anbieten zu können.
-● Selbsthilfegruppen: Information, evtl. Kontaktaufnahme bereits während des Krankenhausaufenthalts.
-● sportliche Betätigung: wirkt sich positiv aus. Schonung
-in den ersten 24 h nach Chemotherapie, wenn diese besonders herz- oder nierenbelastend war, nach Mediastinal- oder Ganzkörperbestrahlung und bei niedrigen Hämoglobinwerten. Bei Thrombozytenwerten unter
-20 000/μl keine intensive körperliche Belastung; bei Granulozytopenie kein Sport im Freien.
-● Palliative Versorgung: Ist keine Heilung möglich, sollten die Fachleute der Palliativmedizin hinzugezogen werden.
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
+                                                                          13.2 Grundlagen der
+                                                                          Infektionslehre
+      13.1 Kompetent pflegen                                              13.2.1 Krankheitserreger
+      Krankheitserreger sind Organismen, die in anderen Lebewe-
+      sen eine Infektion oder übertragbare Krankheit auslösen             Definition Pathogenität von Krankheitserregern
+      können. Diese Eigenschaft bezeichnet man als Pathogenität.          Nicht alle Krankheitserreger (Bakterien, Viren, Pilze, Parasiten [Wür-
+      Einige Erreger befallen dabei nur bestimmte Organe wie              mer und Protozoen] und Prionen) sind gleich pathogen. Es gibt fa-
+      etwa die Atemwege, andere nur bestimmte Gewebe. Zu den              kultativ pathogene Erreger, die nur bei einem geschwächten Im-
+      gängigsten Krankheitserregern zählen Bakterien, Viren, Pil-         munsystem pathogen sind, während obligat pathogene Erreger
+      ze, Parasiten (Würmer und Protozoen) und Prionen. Im pfle-          auch bei einem intakten Immunsystem eine Infektion auslösen kön-
+      gerischen Alltag sind Pflegefachkräfte tagtäglich von poten-        nen.
+      ziell krankheitsauslösenden Erregern umgeben. Um sich
+      selbst, Kollegen, Pflegeempfänger und ihre Bezugspersonen           Bakterien • Bakterien sind einzellige Kleinstlebewesen, die
+      zu schützen, ist eine sorgfältige Einhaltung der Hygiene be-        sich durch Zellteilung vermehren (▶ Abb. 13.1). Sie haben ei-
+      sonders wichtig.                                                    nen Durchmesser von 0,1–700 μm und können unter dem
+        In diesem Kapitel lernen Sie u. a.,                               Lichtmikroskop betrachtet werden. Bakterien können unter-
+      ● die Grundlagen der Infektionslehre kennen und wissen              schiedlich eingeteilt werden:
+        anschließend, was Sie tun müssen, um eine Übertragung             ● Nach ihrem Aussehen unterscheidet man z. B. kugel-, stäb-
 
-799
+        eines Krankheitserregers zu vermeiden.                              chen-, faden- oder schraubenförmige Bakterien.
+      ● was nosokomiale Infektionen sind und welche hygie-                ● Unterteilt man sie nach ihrem Färbeverhalten unter dem
 
-39
+        nischen Maßnahmen Sie zur Eindämmung dieser berück-                 Mikroskop, gibt es gramnegative und grampositive Bakte-
+        sichtigen müssen.                                                   rien.
+      ● was die sog. Standardhygiene beinhaltet und wie Sie eine          ● Weiterhin gibt es aerobe Bakterien, die zum Überleben
 
-Pflege von Menschen in der
-perioperativen Phase
+        hygienische Händedesinfektion durchführen.                          Sauerstoﬀ benötigen, und anaerobe Bakterien, die nur
+      ● was Sie tun müssen, wenn Sie sich an einer Kanüle gesto-            ohne Sauerstoﬀ überleben.
+        chen haben.
+      ● wie Sie die Pflege von isolierten Pflegeempfängern durch-         Nicht alle Bakterien machen uns krank, mit sehr vielen le-
+        führen und worauf Sie dabei besonders achten müssen.              ben wir zusammen in einer Symbiose. Auf und in unserem
+      ● was multiresistente Erreger sind und wieso sich diese so          Körper befinden sich unzählige Bakterien, die für unsere Ge-
+        schnell verbreiten.                                               sundheit wichtig sind. Hierzu zählen z. B. die Bakterien der
+                                                                          Darmflora, die für die Verdauung unerlässlich sind. Aber
+                                                                          auch die Haut ist mit einer Vielzahl von Bakterien besiedelt.
 
-39.1.1 Grundlagen
-Definition Operation
+296    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                           Kompetent pflegen       ▶ S. 296
 
-39.1 Kompetent pflegen
-In deutschen Kliniken wird tagtäglich operiert – vom „einfachen“ Kaiserschnitt bis hin zur hochkomplexen Transplantation eines Organs. Für die Mitarbeiter im jeweiligen Funktionsbereich gehören Ablauf und Verfahren zur Routine. Für
-die Patienten und ihre Bezugspersonen hingegen stellt eine
-Operation immer eine Ausnahmesituation dar. Im Rahmen
-der sog. „perioperativen Pflege“ unterstützen Pflegefachkräfte den Pflegeempfänger vor, während und nach der
-Operation. Sie begleiten ihn in dieser Zeit, die oft von Sorgen
-und Ängsten geprägt ist: Wie werde ich nach der Operation
-zu Hause zurechtkommen? Wache ich wieder aus der Narkose auf? Werde ich Schmerzen haben?
-In diesem Kapitel lernen Sie u. a.,
-● was das Fast-Track-Konzept ist und wie es den Patienten
-bei der Genesung hilft.
-● wie Sie den Patienten in der präoperativen Phase bestmöglich begleiten können (z. B. Einüben postoperativer
-Fähigkeiten) und was alles zu organisieren ist.
-● wie der Ablauf vom Abruf in den OP bis hin zum Aufwachen des Patienten im Aufwachraum verläuft.
-● worauf Sie bei der postoperativen Pflege besonders achten
-müssen und wie die anschließende Überwachung auf der
-Station erfolgt.
-● was die intraoperative Pflege im OP beinhaltet.
-● worauf Sie beim Faden- oder Klammerzug achten müssen
-und wie sie diesen korrekt durchführen.
+                                                                                        Krankheitserreger     ▶ S. 296
+                                                                                        Kolonisation und Infektion ▶ S. 297
+                                             Grundlagen der Infektionslehre
+                                                                                        Übertragungswege ▶ S. 297
+                                                                                        Nosokomiale Infektionen ▶ S. 299
 
-800
 
-Eine Operation (OP) ist ein chirurgischer Eingriﬀ in den Organismus
-eines Menschen.
-Operationen können sowohl ambulant (kleinerer Eingriﬀ,
-z. B. Adenotomie beim Kind) als auch stationär erfolgen. Vorteile einer ambulanten Operation sind u. a., dass der Patient
-noch am selben Tag nach Hause entlassen wird. Es kommt
-seltener zu Wundinfektionen und auch die Belastung mit
-Krankenhauskeimen ist deutlich reduziert. Darüber hinaus
-können sich die meisten Patienten in ihrer gewohnten Umgebung besser erholen.
-Muss ein Kind operiert werden und eine ambulante Operation ist nicht möglich, sollte immer ein Elternteil mitaufgenommen werden. Gerade für Kinder ist die Anwesenheit
-einer Bezugsperson besonders wichtig, um mit der ungewohnten Situation und den damit verbundenen Ängsten
-besser zurechtzukommen. Operationen, die nicht zwingend
-im Kleinkindalter durchgeführt müssen, sollten ggf. auf einen späteren Zeitpunkt verschoben werden. Ab dem Schulalter können Kinder die Situation besser verstehen und einordnen.
+                                                                                 Händehygiene ▶ S. 302
+                                                                                 Persönliche Schutzausrüstung ▶ S. 304
+                                                                                 Reinigung, Desinfektion und Sterilisation ▶ S. 307
+                                                  Standardhygiene                Umgang und Aufbereitung von Medizinprodukten           ▶ S. 308
+                                                                                 Schutz vor Stich- und Schnittverletzungen    ▶ S. 309
+                                                                                 Umgang mit Klinikwäsche ▶ S. 310
+                                                                                 Umgang mit Pflegeutensilien ▶ S. 310
 
-39.1.2 Einteilung von Operationen
-Abgesehen von der Chirurgie, werden Operationen auch in
-anderen medizinischen Fachbereichen durchgeführt. Hierzu
-zählen u. a.:
-● Dermatologie
-● Gynäkologie
-● Augenheilkunde
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
 
-Kompetent pflegen
-
-Grundlagen ▶ S. 800
-Einteilung von Operationen ▶ S. 800
-
-Einüben postoperativer Fähigkeiten ▶ S. 802
-Präoperatives Abführen ▶ S. 803
-Präoperative Pflege
-
-Psychische Begleitung ▶ S. 803
-Vorbereitung der Unterlagen ▶ S. 803
-Maßnahmen am OP-Tag ▶ S. 804
-
-Intraoperative Pflege
-
+                                                                                                           Isolationsmaßnahmen      ▶ S. 311
+                                                Spezielle Maßnahmen bei bekanntem Erreger
+                                                                                                           Infektionsstation ▶ S. 314
 Das Kapitel vermittelt
 Kompetenzen im
-KB I.1, III.2 und III.3
+KB I und v.a. KB III.2a
+                                                                               MRSA     ▶ S. 315
+                                         Multiresistente Erreger (MRE)
+                                                                               ESBL und VRE     ▶ S. 317
 
-Personal im OP-Bereich ▶ S. 808
-Positionierung des Patienten zur Operation ▶ S. 808
 
-Im Aufwachraum ▶ S. 809
-Postoperative Pflege
 
-Pflege auf der Station ▶ S. 809
-Fäden ziehen
 
-● Urologie
-● HNO-Heilkunde
+ Diese physiologische Hautflora schützt die Haut vor dem Be-
+ fall mit schädlichen Keimen.
+                                                                           WISSEN TO GO
+ Viren • Viren sind im klassischen Sinn keine Lebewesen, da
+ sie keinen eigenen Stoﬀwechsel besitzen. Sie sind noch klei-            Krankheitserreger
+ ner als Bakterien und können nur mit einem Elektronenmi-
+                                                                         Krankheitserreger sind Organismen, die in anderen Lebe-
+ kroskop sichtbar gemacht werden. Viren benötigen immer
+                                                                         wesen eine Infektion oder übertragbare Krankheit aus-
+ eine Wirtszelle, um sich vermehren zu können. Sie bestehen
+                                                                         lösen können. Zu ihnen zählen: Bakterien, Viren, Pilze, Pa-
+ aus Nukleinsäure, auf der ihre Erbinformationen gespeichert
+                                                                         rasiten und Prionen.
+ sind. Bei den Viren unterscheidet man RNA- von DNA-Viren
+ und unbehüllte von behüllten Viren mit einer Lipidhülle.
+ Diese Unterscheidung spielt bei der Desinfektion eine ent-
+ scheidende Rolle.                                                    13.2.2 Kolonisation und Infektion
+                                                                      Man spricht von Kolonisation, wenn Erreger die Haut, oﬀene
+ Pilze • Sie haben im Gegensatz zu den Bakterien und Viren
+                                                                      Wunden oder Schleimhäute besiedeln oder in Sekreten oder
+ einen Zellkern und Zellorganellen. Pilze können sich über
+                                                                      Exkreten zu finden sind, aber keine Krankheitssymptome
+ Sporen vermehren, die sehr widerstandsfähig und dadurch
+                                                                      auslösen. Eine reine Kolonisation ist keine Infektion.
+ schwer abzutöten sind. Als Krankheitserreger kommen vor
+                                                                        Erst wenn die Krankheitserreger in den Körper eindringen
+ allem Hefen (Sprosspilze, z. B. Candida) und Schimmelpilze
+                                                                      und sich vermehren und dadurch eine Abwehrreaktion des
+ in Betracht.
+                                                                      Körpers auslösen, spricht man von einer Infektion. Grund-
+                                                                      sätzlich lässt sich die Infektion von der Kolonisation dadurch
+ Parasiten • Parasiten sind Lebewesen, die andere Lebewesen
+                                                                      unterscheiden, dass bei der Infektion i. d. R. Zeichen einer
+ (Wirt) befallen und von ihnen leben. Diesen Wirt nutzen sie
+                                                                      Entzündung bestehen:
+ auch zur Fortpflanzung und Vermehrung. Zu den Parasiten
+                                                                      ● Rötung = lat. rubor
+ zählen unter anderem Amöben, Milben, Zecken und Wür-
+                                                                      ● Überwärmung = lat. calor
+ mer. Es gibt Blut-, Darm- und Gewebeparasiten (Hautparasi-
+                                                                      ● Schwellung = lat. tumor
+ ten).
+                                                                      ● Schmerz = lat. dolor
+                                                                      ● eingeschränkte Funktion = lat. functio laesa
+ Prionen • Prionen kommen sowohl im tierischen als auch im
+ menschlichen Organismus vor. Bis heute gibt es über den
+ Ursprung eines Prions nur Hypothesen. Der Name leitet sich           13.2.3 Übertragungswege
+ vom Englischen ab: „proteinaceous infectious par-
+ ticle“ = proteinartiges infektiöses Partikel. Eine durch Prio-       Die meisten Krankheitserreger haben einen typischen Über-
+ nen ausgelöste Erkrankung ist z. B. die Creutzfeld-Jakob-            tragungsweg. Weiß man, wie ein Erreger übertragen wird,
+ Krankheit.                                                           kann man Infektionen durch bestimmte Hygienemaßnah-
+                                                                      men vermeiden.
 
-Die Einteilung der verschiedenen Operationen erfolgt dabei
-sowohl nach Technik (oﬀene oder geschlossene bzw. minimalinvasive Operation) als auch nach Dringlichkeit (elektive
-Operation oder Notfalloperation). Die Einteilung nach Dringlichkeit wird nachfolgend beschrieben.
 
-Elektive Operationen
-Definition Elektive Operationen
-„Elektiv“ bedeutet „auswählend“. In der Medizin sind mit elektiven
-Operationen solche gemeint, die medizinisch zwar indiziert sind,
-aber nicht umgehend durchgeführt werden müssen.
-Bei geplanten, nicht dringlichen Eingriﬀen (z. B. Knie-OP bei
-Arthrose), die vorbereitet werden können, werden die Voruntersuchungen und Aufklärungsgespräche heute meist ambulant durchgeführt, da so die stationäre Verweildauer kürzer ist.
 
-Voruntersuchungen
-Zu den allgemeinen Voruntersuchungen gehören i. d. R. die
-Bestimmung des Blutbilds, der Gerinnungsfaktoren, der
-Elektrolyte und Enzyme sowie des Blutzuckers. Bei Operationen, bei denen ein höherer Blutverlust zu erwarten ist,
-wird zusätzlich die Blutgruppe bestimmt und eine Kreuzblutprobe (S. 634) durchgeführt.
-Ergeben sich Hinweise darauf, dass der Patient z. B. kardiale oder pulmonale Schwierigkeiten haben könnte, erhält
-der Betroﬀene z. B. einen Röntgenthorax, ein EKG oder eine
-Abklärung der Lungenfunktion. Die Voruntersuchungen
-richten sich nach den internen Hausstandards. Sie dienen
-dazu, das Narkose- und Operationsrisiko durch möglicher-
-
-▶ S. 812
-
-weise bestehende Vorerkrankungen im höheren Lebensalter
-besser einschätzen und evtl. gegensteuern zu können.
-
-Aufklärung und Einwilligung
-Sowohl das chirurgische als auch das anästhesiologische
-Aufklärungsgespräch muss ein Arzt durchführen – es ist
-nicht delegierbar. Ärzte müssen über den geplanten Eingriﬀ,
-mögliche Alternativen, mögliche Komplikationen und bestehende Risiken ausführlich aufklären. Anschließend muss der
-Patient Zeit haben, um sich mithilfe dieser Informationen
-für oder gegen die Operation zu entscheiden. Zeit heißt laut
-Gesetz: einen Tag zuvor; gleichwohl kann in dringenden Fällen die Zeit kürzer sein. Durch Unterzeichnung des Einverständniserklärungsformulars ist sein Einverständnis dokumentiert.
-Kinder und Jugendliche • Bei Kindern bis zum 14. Lebensjahr
-obliegt es den Erziehungsberechtigten, die Einverständniserklärungen zu unterzeichnen (nach Aufklärung). Jugendliche über 14 Jahre können schon selbst rechtswirksam einwilligen, allerdings muss der Arzt die Art und Schwere des
-konkreten Eingriﬀs berücksichtigen und von der Einsichtsund Urteilsfähigkeit des Jugendlichen zur sachgemäßen Bewertung ausgehen können. Im Zweifelsfall sollte der Arzt sowohl die Zustimmung der Eltern als auch des Minderjährigen einholen.
-Menschen unter Betreuung • Bei Patienten, die unter (gesetzlicher) Betreuung stehen, entscheidet der Betreuer im Anschluss an die Aufklärung über die Durchführung des geplanten Eingriﬀs. Er dokumentiert sein Einverständnis ebenfalls durch seine Unterschrift.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-801
-
+        I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen              297
+        Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+         Usage subject to terms and conditions of license.
 l
-39
-
-Pflege von Menschen in der perioperativen Phase
-
-Notfalloperationen
-Definition Notfalloperation
-Bei einer Notfalloperation handelt es sich, wie das Wort „Notfall“
-schon vermuten lässt, um einen ungeplanten, dringlichen Eingriﬀ,
-der sich nicht aufschieben lässt, da das Leben des Patienten sonst
-akut gefährdet ist.
-Hier obliegt es dem Operateur und dem Anästhesisten, welche Voruntersuchungen sie benötigen, um den Eingriﬀ vorzunehmen. Ist der Patient nicht ansprechbar und konnte
-nicht rechtzeitig eine Einwilligung eingeholt werden (z. B.
-Polytrauma mit Hirnblutung), kommt die mutmaßliche Einwilligung in Betracht, d. h., der Wille des Patienten wird vermutet (oft gefasst unter dem Begriﬀ „Notfallindikation“). Er
-wird in erster Linie aus den persönlichen Umständen des
-Betroﬀenen, aus seinen individuellen Interessen, Wünschen,
-Bedürfnissen und Wertvorstellungen ermittelt. Siehe hierzu
-auch das Kap. „Rechtliche Grundlagen der Pflege“ (S. 170).
-
-WISSEN TO GO
-Präoperative Pflege – Grundlagen
-● perioperative
-
-Pflege: pflegerische Versorgung vor,
-während und nach der Operation.
-● ambulant vor stationär: Ist eine ambulante Operation
-möglich, ist diese der stationären Operation vorzuziehen
-(besonders bei Kindern).
-● Einteilung der Operationen: nach Technik (oﬀene oder
-geschlossene bzw. minimalinvasive Operation) und nach
-Dringlichkeit (elektive Operation oder Notfalloperation)
-● elektive Operation: medizinisch indizierte OP, muss jedoch nicht sofort erfolgen
-● Aufklärung und Einwilligung: Kinder bis 14 Jahre (Eltern übernehmen Einverständnis), Jugendliche > 14 Jahre können unter bestimmten Bedingungen schon selbst
-rechtswirksam einwilligen, bei betreuten Patienten entscheidet der (gesetzliche) Betreuer.
-● Notfalloperation: dringlicher Eingriﬀ, der sich nicht aufschieben lässt, da das Leben des Patienten sonst akut gefährdet ist. Bei nicht ansprechbaren Patienten wird die
-mutmaßliche Einwilligung vorausgesetzt.
-
-Fast-Track-Chirurgie
-Definition Fast-Track-Chirurgie
-Unter „Fast-Track-Chirurgie“ versteht man ein therapeutisches Konzept, das durch die gezielte Anwendung verschiedener perioperativer
-Maßnahmen darauf abzielt, die Rekonvaleszenz (Genesung) des Patienten zu unterstützen und Komplikationen zu vermeiden. Eine andere Bezeichnung ist auch „Rapid Recovery“.
-Die „Fast-Track-Chirurgie“ ist eine prinzipiell in der gesamten operativen Medizin einsetzbare, bisher v. a. aber in der
-Bauch- und Darmchirurgie validierte Kombination verschiedener perioperativer Maßnahmen.
-Das Fast-Track-Konzept basiert auf mehreren Säulen:
-● Vermeidung stressauslösender Faktoren (ausreichende
-Aufklärung des Patienten)
-● optimale
-Schmerzbehandlung (Schmerzkatheter mit
-Schmerzperfusor bzw. Schmerzpumpe), die Patienten sind
-wacher und kooperativer, eine Nachbeatmung wird selten
-benötigt
-802
-
-● ausgewählter OP-Verlauf – kaum Drainagen und Sonden
-● Anwendung
-
-minimalinvasiver Operationsmethoden (z. B.
-laparoskopische Eingriﬀe) (S. 802) → Ziel: kleinstmögliche
-Verletzung von Haut und Weichteilen
-● Einschränkungen der Darmvorbereitung vor größeren Magen-Darm-Eingriﬀen
-● frühzeitige Mobilisation
-● frühzeitig enterale Ernährung
-Die Fast-Track-Chirurgie ist nicht für jeden Patienten geeignet. Die Entscheidung, ob nach dem Fast-Trakt-Konzept gearbeitet oder konventionell (oﬀenes Operationsverfahren)
-vorgegangen wird, obliegt dem behandelnden Chirurgen.
-
-Laparoskopie
-
-Definition Laparoskopie
-Eine Laparoskopie ist ein minimalinvasiver endoskopischer Eingriﬀ zur
-Diagnose und Therapie von Krankheiten in der Bauch- oder der Beckenhöhle; in letzterem Fall spricht man auch von einer Pelviskopie.
-Über eine Kanüle, die über den Bauchraum gelegt wird, wird
-Kohlensäuregas in die Bauch- bzw. Beckenhöhle eingebracht
-und gebläht, um die eng aneinanderliegenden Bauchorgane
-voneinander zu lösen und Platz zum Operieren zu schaﬀen.
-Durch einen kleinen Bauchschnitt wird das Laparoskop eingeführt. Der Bauchraum und die Organe können damit betrachtet werden. Bei Bedarf werden Gewebeproben entnommen oder es wird chirurgisch interveniert, z. B. werden
-Verklebungen gelöst, Zysten abgetragen. Der Eingriﬀ wird in
-Vollnarkose durchgeführt.
-
-39.2 Präoperative Pflege
-Definition Präoperative Pflege
-Unter dem Begriﬀ „präoperative Pflege“ versteht man alle pflegerischen Tätigkeiten und Handlungen, die vor einer Operation durchgeführt werden.
-Ziel der präoperativen Phase ist es, den Patienten optimal auf
-die geplante Operation vorzubereiten und dadurch mögliche
-Risiken und Komplikationen nach Möglichkeit auszuschließen. Der Patient wird dabei gezielt in die präoperativen Vorbereitungen einbezogen und gewinnt durch das Einüben
-postoperativer Fähigkeiten an Sicherheit. Dies kann Ängste
-reduzieren und sich positiv auf die Genesung auswirken.
-
-39.2.1 Einüben postoperativer
-Fähigkeiten
-Um Komplikationen wie eine Thrombose, Pneumonie, Stürze oder bewegungsbedingte Schmerzen nach der Operation
-zu vermeiden, können Pflegefachkräfte gemeinsam mit dem
-Patienten bereits präoperativ Fähigkeiten und Techniken
-einüben, die postoperativ notwendig sind. Lernt der Patient
-bereits vor der Operation, wie er z. B. en bloc aus dem Bett
-aufsteht oder wie er mit Unterarmgehstöcken gehen kann,
-gibt ihm diese Vorbereitung deutlich mehr Sicherheit und
-erleichtert die spätere Umsetzung (▶ Abb. 39.1).
-Folgende Fähigkeiten und Techniken können u. a. präoperativ mit dem Patienten eingeübt werden:
-● postoperative Mobilisation (En-bloc-Aufstehen)
-● Anwendung eines Atemtrainers, einfache Atemübungen
-und Hustentechnicken (leichter Gegendruck auf Wunde)
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Präoperative Pflege
-Abb. 39.1 Übung macht den Meister.
-
-Darmes das Peritonitisrisiko zu senken. Eventuell wird am
-Operationsvortag morgens ein orales Laxans angeordnet
-(abhängig vom Klinikstandard).
-● Eingriﬀe am Dickdarm (z. B. Kolektomie, Hemikolektomie,
-Rektumexstirpation): Manchmal erhält der Patient 1–2
-Tage vor der Operation nur noch flüssige Kost (Tee, Suppe,
-Trinknahrung). Die früher gängige orthograde Darmlavage,
-bei der der Patient am Vortag der Operation zur mechanischen Reinigung des Darms 2 Liter einer Spüllösung (z. B.
-Endofalk) und 2 Liter klare Flüssigkeit (z. B. Wasser, Brühe,
-Kamillentee) trinken und anschließend abführen muss,
-wird heute nur noch selten durchgeführt, z. B. bei Anlage
-eines Stomas.
-
-39.2.3 Psychische Begleitung
-Fähigkeiten, die postoperativ wichtig sind, sollten präoperativ
-eingeübt werden, um dem Patienten mehr Sicherheit nach der
-OP zu geben. Foto: K. Oborny, Thieme
-
-● Anheben des Gesäßes (bei alten Menschen)
-● Essen und Trinken in Rückenlage
-● einfache
-
-Gymnastikübungen (Steigerung des venösen
-Rückflusses der Beine)
-● Gebrauch von Hilfsmitteln
-● Gehen mit Unterarmgehstützen/Gehwagen
-● Umgang mit dem Rollstuhl
-Da bei elektiven Operationen die präoperative Phase häufig
-ambulant erfolgt, ist es z. T. schwierig, die postoperativ benötigten Fähigkeiten und Techniken vorab einzuüben. Nur
-bei größeren Eingriﬀen, z. B. großen abdominellen Operationen, werden die Patienten oft bereits einige Tage vor der OP
-stationär aufgenommen. Pflegefachkräfte sollten deshalb
-darauf achten, dass sie trotz der ggf. nur sehr kurzen Vorbereitungszeit schrittweise und einfühlsam vorgehen und
-Hektik vermeiden. Sonst kann es schnell zur Überforderung
-kommen. Eventuell lassen sich auch Physio- oder Ergotherapeuten oder auch Bezugspersonen mit in die präoperativen
-Übungen einbeziehen.
-
-39.2.2 Präoperatives Abführen
-Ob und wie präoperativ abgeführt wird, richtet sich nach
-der Art des geplanten Eingriﬀs und dem jeweiligen Standard
-der Klinik (▶ Abb. 39.2).
-Über das präoperative Abführen kann einer intraoperativen Inkontinenz (bedingt durch die Erschlaﬀung verschiedener Muskeln und Sphinkter durch die Narkose) und erhöhten Flatulenzen vorgebeugt werden. Außerdem erleichtert
-es bei großen Operationen auch die postoperative Stuhlentleerung.
-● Eingriﬀe außerhalb des Intestinaltrakts (z. B. an den Extremitäten, am Kopf oder am Hals): Hier wird manchmal mittels Microklist eine Leerung der Rektumampulle am Operationsvorabend oder -morgen empfohlen, um eine intraoperative Defäkation während der Narkoseeinleitung und
-Operation zu vermeiden.
-● Eingriﬀe im oberen Intestinaltrakt mit Eröﬀnung des Peritoneums (z. B. Magen, Dünndarm, Galle): Auch hier wird
-ein Klistier über ein Darmrohr zur Dickdarmentleerung
-empfohlen, um bei einem versehentlichen Verletzen des
-
-Jeder Patient hat vor einer Operation mit mehr oder weniger
-starken Ängsten zu kämpfen, z. B., nicht mehr aus der Narkose aufzuwachen, oder der Angst vor starken Schmerzen
-nach der Operation. Auch die Grunderkrankungen können
-ursächlich für verschiedene Ängste sein, z. B. Angst aufgrund
-einer schlechten Prognose durch histologischen Befund.
-Die Aufgabe der Pflegefachkräfte liegt in der präoperativen Beobachtung und Begleitung des Patienten. Nur einfühlsame Betreuung und Gesprächsbereitschaft können die
-Ängste des Patienten in der präoperativen Phase erfassen.
-Darüber hinaus sollten Pflegefachkräfte den Patienten altersentsprechend über alle Schritte in der Vorbereitungsphase informieren. Sie sollten ihn über den Ablauf aufklären
-und versuchen, alle Fragen zu beantworten. Nur so können
-sie Vertrauen aufbauen und die nötige Sicherheit vermitteln.
-Auch Entspannungsübungen, bewusste Atemübungen oder
-Teilbäder mit z. B. Melisse oder Lavendel können helfen,
-Ängste besser zu verarbeiten.
-Der Arzt sollte über die Beobachtungen informiert und
-ggf. über die weitere Vorgehensweise gesprochen werden.
-Bei starken Angstzuständen müssen evtl. angstreduzierende
-Medikamente wie Anxiolytika (auch Ataraktika oder Minor
-Tranquilizer genannt) verabreicht werden.
-
-39.2.4 Vorbereitung der Unterlagen
-Am Tag vor der Operation müssen alle notwendigen Unterlagen vollständig bereitgelegt werden (vor der Prämedikationsvisite). Diese umfassen folgende Dokumente:
-● Patientenkurve
-● Einverständniserklärungen (Operation, Narkoseverfahren)
-● Anästhesieprotokoll mit Prämedikationsanordnung
-● alle aktuellen Befunde (Labor, Röntgenbilder, EKG usw.)
-● alle alten Arztbriefe, Unterlagen des Patienten
-● falls vorhanden, die präoperative Checkliste (Hausstandard beachten)
-● Vorhandensein des Patientenidentifikationsarmbändchens
-überprüfen (wird meist direkt bei Aufnahme am Handgelenk befestigt)
-Checklisten anwenden • Viele Einrichtungen verwenden bereits OP-Checklisten, in denen alle notwendigen präoperativen Maßnahmen aufgeführt sind und die Pflegefachkraft jeden durchgeführten Schritt mit Handzeichen abzeichnen
-muss. Checklisten ermöglichen einen sicheren, reibungslosen Ablauf bis zum Beginn der Operation.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-803
-
-l
-39
-
-Pflege von Menschen in der perioperativen Phase
-Abb. 39.2 Präoperatives Abführen.
-
-präoperatives
-Abführen
-Eingriffe am Dickdarm
-
-Eingriffe im oberen
-Intestinaltrakt,
-z. B. Magen,
-Dünndarm, Galle
-
-Eingriffe außerhalb
-des Intestinaltrakts
-OP
-
-OP
-
-2L
-1L
-2L
-
-eventuell Laxans
-am Operationsvortag
-
-1 – 2 Tage
-vor OP nur
-Trinknahrung
-
-orthograde
-Darmlavage
-am Vortag
-
-Klistier mit
-Darmrohr am
-Vorabend
-
-Brühe und
-Flüssigkeit
-bis zur OP
-OP
-
-Miniklist am Vorabend
-
-Je nach Lokalisierung des Eingriﬀes bedarf es einer anderen Vorbereitung des Patienten. Bei einem Eingriﬀ am Magen-Darm-Trakt ist
-eine gründliche Darmreinigung erforderlich.
-
-39.2.5 Maßnahmen am OP-Tag
-WISSEN TO GO
-Allgemeine präoperative Vorbereitung
-● präoperative
-
-Pflege: alle pflegerischen Tätigkeiten und
-Handlungen, die vor einer Operation durchgeführt werden
-● Bereits vor der Operation sollten Pflegefachkräfte gemeinsam mit dem Patienten postoperative Fähigkeiten
-einüben (fördert Sicherheit und Kooperation).
-● Die präoperativen Abführmaßnahmen richten sich nach
-dem geplanten Eingriﬀ und dem hausinternen Standard.
-● psychische Situation des Patienten beobachten und altersentsprechend über Abläufe aufklären. Gespräche anbieten, Patienten mit seinen Sorgen und Ängsten ernst
-nehmen. Ggegebenenfalls zu einfachen Atem- und Entspannungsübungen anleiten.
-● Für die OP wichtige Unterlagen am Tag vor der Operation vorbereiten und bereitlegen.
-● Vorhandensein
-des Patientenidentifikationsarmbändchens überprüfen (wird meist direkt bei Aufnahme am
-Handgelenk befestigt)
-
-804
-
-Präoperative Nüchternheit
-Um bei der Narkoseeinleitung eine Aspiration von Mageninhalt zu verhindern, sollte vor Operationen eine Nahrungskarenz von mind. 4–6 h eingehalten werden. Eine präoperative Flüssigkeitsgabe (Glukosedrink) ist bis 2 Stunden vor
-Operationsbeginn möglich. Orale Glukoselösungen führen
-außerdem zu einer Verbesserung des postoperativen Wohlbefindens. Dabei müssen Pflegefachkräfte auf die hausinternen Vorgaben der Anästhesie achten. In der Praxis werden
-die meisten Patienten ab 0 Uhr des Operationstags nüchtern
-gelassen. Bei Kindern und alten Menschen müssen Pflegefachkräfte besonders darauf achten, dass die parenterale
-Flüssigkeitszufuhr gewährleistet ist. Bei Säuglingen entscheidet der Anästhesist, wann das letzte Mal gestillt werden darf. So können Komplikationen durch einen Flüssigkeitsmangel verhindert werden. ▶ Abb. 39.3 zeigt die Maßnahmen in der Übersicht.
-Besonderheiten bei Kindern • Kinder < Jahr können bis zu 4
-Stunden vor OP Muttermilch bzw. 4–6 Stunden vor OP Formulanahrung erhalten. Kinder > 1 Jahr sollten eine präope-
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Präoperative Pflege
-Abb. 39.3 Präoperative Nüchternheit.
-
-Dauermedikation am
-Morgen auf Anordnung
-
-KEINE blutverdünnenden
-Medikamente
-
-> 2 h vor der OP
-NICHT rauchen
-Medikation
-
-präoperative
-Nüchternheit
-
-> 2 h vor der OP
-KEINE Flüssigkeit
-
-Nahrungskarenz
-
-KEINE oralen
-Antidiabetika
-
-Insulinabgabe auf Anordnung
-
-≥ 4 h vor der OP
-KEINE feste Nahrung
-
-> 2 h vor der OP
-KEINE Bonbons oder
-Kaugummis
-Anforderungen an Nahrungs-, Flüssigkeits- und Medikamentenkarenz im Überblick.
-rative Nahrungskarenz von 6 Stunden einhalten. Bis zu 2
-Stunden vorher darf noch (klare) Flüssigkeit getrunken werden.
-
-ACHTUNG
-Süßigkeiten sollten bei Kindern präoperativ aus dem Nachtisch entfernt werden, sofern Zweifel bestehen, dass sie die Dringlichkeit der
-Nahrungskarenz vollumfänglich verstehen.
-Besonderheiten bei kognitiven Einschränkungen • Bei Patienten mit kognitiven Einschränkungen (z. B. Patienten mit Demenz oder Menschen mit geistiger Behinderung) müssen
-Pflegefachkräfte darauf achten, dass keine Nahrungsmittel
-und Getränke während der Nüchternphase in Reichweite
-stehen. Sie sollten Besucher über die Nahrungs- und Flüssigkeitskarenz informieren, damit sie nicht versehentlich oder
-unwissentlich Nahrung oder Flüssigkeit geben. Dasselbe gilt
-für Kleinkinder. Auch beim Zähneputzen am Morgen sollten
-Pflegefachkräfte darauf achten, dass der Patient nicht das
-Zahnputzwasser trinkt. Besonders bei Kindern und bei Patienten mit einer demenziellen Erkrankung kann dies bei
-großem Durstgefühl vorkommen.
-
-Präoperative Haarentfernung
-Trotz diverser Studien, die sich mit dem Thema „präoperative Haarentfernung“ beschäftigen, gibt es keine konkrete Evidenz für oder gegen eine Haarentfernung. Der Chirurg muss
-von Fall zu Fall entscheiden, ob diese notwendig ist oder
-nicht. Gründe, die für eine Haarentfernung sprechen, sind
-z. B. starke Behaarung des Patienten (schlechte Sicht), Vermeidung von Kontamination durch lange Haare, bessere An-
-
-haftung selbstklebender OP-Abdecktücher, bessere postoperative Wundversorgung mit Wundauflagen.
-Wird eine Haarentfernung angeordnet, wird diese kurz
-vor dem Eingriﬀ (geringeres Infektionsrisiko) mithilfe eines
-Clippers gekürzt. Bei geringer Behaarung ist prinzipiell auch
-eine chemische Depilation mit einer Enthaarungscreme
-möglich, allerdings können hier vermehrt Hautirritationen
-oder allergische Reaktionen auftreten (RKI 2018).
-
-! Merke Keine Rasur
-
-Von einer Rasur, z. B. mit einem Einmalrasierer, sollte abgesehen
-werden, da es durch die Rasur zu Mikroverletzungen der Haut kommen kann und die Infektionsgefahr dadurch steigt.
-Regeln • Bei der Haarentfernung im Operationsgebiet sollten
-folgende Regeln berücksichtigt werden:
-● Die Haare sollten mind. 30 cm um das Operationsgebiet
-herum entfernt werden. Hausübliche Rasurschemata beachten.
-● Auf Hautunebenheiten (z. B. Pickel, Blasen) und Hautfalten
-achten.
-● Bei Hautfalten sollte das Hautareal zunächst mit der 2.
-Hand gestraﬀt werden, bevor die Haare entfernt werden.
-● Bei unklaren Bauchoperationen Haare großzügig entfernen, da das Operationsgebiet während der OP möglicherweise erweitert wird.
-● Bei Operationen am Schädel gilt der Grundsatz: so viel wie
-nötig, so wenig wie möglich. Aus kosmetischen Gründen
-sollten möglichst keine Deckhaare oder Augenbrauen rasiert werden.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-805
-
-l
-39
-
-Pflege von Menschen in der perioperativen Phase
-● Bei Hauttransplantationen oder Bypass-Operationen muss
-
-immer auch das Entnahmegebiet in die präoperative Vorbereitung einbezogen werden.
-● Empfindet der Patient die Haarentfernung als schmerzhaft
-(z. B. bei Abszessen oder Frakturen), sollte mit dem zuständigen Arzt abgeklärt werden, ob die Haarkürzung in
-Narkose möglich ist.
-
-(S. 420) (MTPS) erhalten haben, müssen Pflegefachkräfte
-mit dem behandelnden Arzt die prophylaktische Kompressionstherapie absprechen. Werden MTPS angeordnet, ermitteln Pflegefachkräfte die korrekte Größe durch Ausmessen
-(S. 420) und unterstützen den Patienten beim Anziehen bzw.
-übernehmen dies. Bei ambulanten Operationen erhält der
-Patient die MTPS vor dem Verabreichen der Prämedikation.
-
-Körperreinigung und Hygiene
-
-Prämedikation
-
-Ziel der präoperativen Körperreinigung und Hygiene ist es,
-die Anzahl der Hautkeime auf ein Minimum zu reduzieren
-und so zur Infektionsprophylaxe beizutragen. Abhängig vom
-Allgemeinzustand und von der körperlichen Belastbarkeit
-des Patienten, sollte die Pflegefachkraft gemeinsam mit dem
-Patienten entscheiden, ob dieser duschen möchte (Vorabend
-oder OP-Morgen) oder eine Körperpflege im Bett besser ist.
-Säuglinge werden meist gebadet. Die Pflegefachkraft unterstützt den Patienten dabei nach Bedarf (▶ Abb. 39.4).
-
-Die Prämedikation dient der Anxiolyse (Angstlösung) und
-Sedierung (Beruhigung) des Patienten und erleichtert die
-Einleitung der Narkose. Den Zeitpunkt, zu dem die Prämedikation verabreicht werden soll, legt der Anästhesist in der
-Prämedikationsvisite fest. Er bestimmt die Art des Medikaments, die Menge und den Verabreichungszeitpunkt. Zudem
-ordnet er an, wie mit der bisherigen Medikation des Patienten (Dauermedikation) verfahren werden soll, welche Medikamente er rechtzeitig absetzen muss (z. B. ASS zur Blutverdünnung oder orale Antidiabetika) und welche Medikamente er auch am OP-Tag noch einnehmen muss. All das ist im
-Anästhesieprotokoll dokumentiert. Kinder erhalten in der
-Regel eine Prämedikation.
-
-Regeln
-der Körperreinigung sollten Pflegefachkräfte besonders vor Bauchoperationen auf die Reinigung des Nabelbereichs und auf eine gründliche Körperpflege bei bestehenden Hautfalten achten.
-● Haut nicht eincremen (schlecht für Desinfektion)
-● nach der Körperreinigung am OP-Tag frische Kleidung anziehen (meist Patientenhemd, Netzhose, Vorlage, nach Anordnung und Hausstandard medizinische Thromboseprophylaxestrümpfe [MTPS] anziehen, s. u.)
-● Nagellack vor OP entfernen (Grund: An einer Blaufärbung
-der Nägel kann man einen Sauerstoﬀmangel erkennen;
-Zyanose). Auch liefert die Pulsoxymetrie (Sauerstoﬀsättigung des Blutes über einen Fingerclip) nur ohne Nagellack
-oder Gelnägel verlässliche Werte.
-● Möglichst auf Make-up verzichten (die Hautfarbe ist während der Narkose ein wichtiger Beobachtungsaspekt).
-● Schmuck und Piercings entfernen (Hygiene- und Unfallverhütungsgründe, zumal während vieler Operationen mit
-Strom gearbeitet wird)
-● Bei
-
-Thromboseprophylaxe
-Am Operationstag selbst erhält der Patient keine medikamentöse Thromboseprophylaxe (z. B. Heparin). Sollte er
-noch keine medizinischen Thromboseprophylaxestrümpfe
-Abb. 39.4 Körperreinigung.
-
-ACHTUNG
-Eine Prämedikation mit Benzodiazepinen sollte besonders bei älteren
-Menschen kritisch hinterfragt werden. Studien zeigen, dass die Gabe
-von Benzodiazepinen zur Anxiolyse keinen direkten Nutzen bringt.
-Hinzu kommt, dass sich die Aufwachzeit durch Benzodiazepine verlängert und die kognitive Erholung länger dauert (Rossaint et al.
-2017).
-Bevor die Pflegefachkraft am OP-Tag die angeordnete Prämedikation verabreicht, kontrolliert sie nochmals,
-● ob die Haarentfernung im OP-Gebiet korrekt und ausreichend ist,
-● dass der Patient frische Kleidung und MTPS nach Anordnung trägt,
-● dass der Patient eine reizlose, problemlos befahrbare Venenverweilkanüle (VVK) liegen hat (bei Kindern vor Anlage der VVK Emla-Pflaster kleben)
-● dass der Patient sein korrektes, gut lesbares Patientenidentifikationsarmband trägt und fragt,
-● ob der Patient noch mal zur Toilette möchte, um Blase
-und/oder Darm zu entleeren.
-Erst wenn der Patient wieder in seinem Bett liegt, erhält er
-die Prämedikation. Aufgrund der sedierenden Wirkung sollte der Patient engmaschig beobachtet werden.
-
-! Merke Sturzgefahr
-
-Aufgrund der erhöhten Sturzgefahr darf der Patient nach der Einnahme der Prämedikation nur in Begleitung aufstehen!
-
-Transport und Übergabe
-
-Ist der Patient stabil, kann er am Vorabend oder am OP-Morgen
-duschen. Die Pflegefachkraft unterstützt ihn dabei nach Bedarf.
-Foto: A. Fischer, Thieme
-
-806
-
-Der Transport in die Operationsabteilung erfolgt entweder
-nach einem festgelegten Zeitplan oder nach Abruf durch das
-Operationspersonal. Zahnprothesen, Körperprothesen und
-Wertgegenstände werden kurz vor dem Transport abgelegt.
-Pflegefachkräfte sollten sicherstellen, dass die Gegenstände
-sachgerecht entfernt und aufbewahrt werden. Ausnahmen
-sind Perücken und Haartoupets (Schamgefühl), ebenso wie
-Seh- oder Hörhilfen (bei ausgeprägter Seh- oder Hörschwäche). Diese sollten erst im Operationsvorraum entfernt werden. Alle gerichteten OP-Dokumente (S. 803) des Patienten
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Präoperative Pflege
-werden mitgenommen. Je nach Operation müssen ggf. auch
-Lagerungsmittel, Bauchbinden usw. mitgeführt werden, damit der Patient postoperativ korrekt positioniert werden
-kann.
-Im Eingangsbereich der OP-Abteilung erfolgt das sog.
-„Einschleusen“. Kinder werden i. d. R. von ihren Bezugspersonen bis zur Schleuse begleitet. Die Schleuse trennt den allgemeinen Krankenhausbereich vom Operationsbereich. Hier
-wird der Patient vom Operationsfachpersonal übernommen
-und auf dem Operationstisch positioniert. Bei der Übergabe
-● stellt die Pflegefachkraft den Patienten vor,
-● nennt den Namen des Patienten,
-● die geplante Operation und
-● andere wichtige Besonderheiten.
-Das dient v. a. dazu, Verwechselungen zu vermeiden. Danach
-verabschieden sie sich vom Patienten und nehmen das Bett
-mit aus der Schleuse.
-Sollte das Patientenbett am Morgen noch nicht komplett
-frisch bezogen worden sein, können Pflegefachkräfte das
-nun machen (das saubere Bett vermeidet eine Verschleppung der Keime). In vielen Kliniken stehen im Bettenlagerungsbereich Wäscheabwurfbehälter und ein Wäschewagen
-mit frischer Bettwäsche bereit. Wenn der Patient erst am
-Vortag oder am Morgen aufgenommen wurde, muss das
-Bett nicht neu bezogen werden.
-▶ Abb. 39.5 zeigt alle Maßnahmen am OP-Tag in der Übersicht.
-
-Präoperative Schmerzkatheter
-Gegebenenfalls können bereits präoperativ Schmerzkatheter
-(z. B. lumbaler oder thorakaler Periduralkatheter) notwendig
-sein. Diese können zu Beginn der präoperativen Phase oder
-direkt zu OP-Beginn im Narkoseeinleitungsraum durch die
-Anästhesie gelegt werden. Die Aufgabe des Pflegepersonals
-in der Anästhesie besteht in der Vorbereitung und in der
-Arztassistenz sowie der Patientenbetreuung bei der Anlage.
-
-WISSEN TO GO
-Vorbereitungen am OP-Tag
-● Nahrungskarenz:
-
-– i d. R. 4–6 h (4 h keine feste Nahrung, 2 h keine Flüssigkeit)
-– meist ab 0 Uhr des OP-Tages nüchtern bleiben → hausinterne Vorgaben beachten
-● Haarentfernung im OP-Gebiet:
-– Kürzung der Körperhaare nach Anordnung mit einem
-Clipper, hausinterne Vorgaben beachten
-– nicht rasieren, kann zu Mikroverletzungen der Haut
-führen (erhöht Infektionsgefahr)
-● Präoperative Körperreinigung:
-– Duschen, sofern Patient stabil ist, sonst Körperpflege
-im Bett (nach Bedarf unterstützen)
-– Nabelbereich bei Bauchoperationen reinigen, Nagellack, Schmuck oder Piercings entfernen
-– persönliche Gegenstände und Hilfsmittel vor dem
-Transport in den OP sicher verwahren, ggf. notwendige Hilfsmittel beim Patienten belassen, falls sonst die
-Kommunikation stark beeinträchtigt ist
-● MTPS ausmessen und anziehen, Patientenhemd anlegen; fragen, ob Patient zur Toilette muss
-● Patient darf nach der Gabe der Prämedikation aufgrund
-der erhöhten Sturzgefahr nicht mehr allein aufstehen.
-● Transport in den OP: nach Zeitplan oder Abruf, neben
-allen OP-Dokumenten ggf. Lagerungsmittel, Bauchbinden mitnehmen
-● Im Schleusenbereich den Patienten dem OP-Personal
-mit Namen, geplanter Operation, Besonderheiten und
-Station vorstellen.
-
-Abb. 39.5 Maßnahmen am OP-Tag.
-Nagellack entfernen, Nabelbereich bei
-Bauchoperationen reinigen, Hautfalten
-säubern, Make-up entfernen, Schmuck
-und Piercings entfernen, MTPS
-anlegen, Prämedikation verabreichen,
-danach Bettruhe
-Sturzgefahr!
-
-Zahnprothesen und
-Körperprothesen entfernen,
-OP-Unterlagen mitnehmen
-
-Seh- und/oder Hörhilfen bei
-starker Einschränkung bis
-nach der Übergabe an das
-OP-Personal belassen,
-Perücken und Haartoupets
-entfernen
-
-Übergabe an das
-Operationspersonal
-
-Einschleusen
-
-am Operationstag
-
-Transport zum OP
-
-Operationsvorraum
-
-OP
-
-Maßnahmen am OP-Tag in der Übersicht.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-807
-
-l
-39
-
-Pflege von Menschen in der perioperativen Phase
-
-39.3 Intraoperative Pflege
-Definition Intraoperative Pflege
-Unter dem Begriﬀ „intraoperative Pflege“ versteht man alle pflegerischen Tätigkeiten und Handlungen, die während einer Operation
-durchgeführt werden.
-Die intraoperative Phase ist speziell weitergebildetem Pflegepersonal oder Operationstechnischen Assistenten (OTA)
-vorbehalten. Pflegefachkräfte mit Grundausbildung betreuen die Patienten vorrangig in der prä- und postoperativen
-Zeit.
-Operationseinheiten
-sind
-besonders
-aufgebaut
-(▶ Abb. 39.6). Wegen der speziellen Hygienebedingungen
-z. B. sind besondere Anforderungen gestellt an:
-● bauliche Gegebenheiten
-● Klimatisierung
-● Medizintechnik
-● Material
-● Personal
-
-39.3.1 Personal im OP-Bereich
-Auch an das im OP arbeitende Personal werden spezielle Anforderungen im Hygienebereich gestellt. Vor dem Betreten
-des Operationstrakts legt das Personal in der Personalschleuse die Straßenkleidung und Schmuck ab und legt die
-Bereichskleidung (farblich gekennzeichnet; meist grün oder
-blau), eine Haube zum Haarschutz und einen Mund-NasenSchutz sowie desinfizierbare Schuhe an.
-
-Es werden im OP 2 Aufgabenschwerpunkte im Funktionsdienst unterschieden (▶ Abb. 39.7):
-1. Der operative Funktionsdienst, der durch OP-Pflegefachkräfte mit Weiterbildung oder ausgebildete Operationstechnische Assistenten (OTA) besetzt ist. Zu deren Aufgaben zählen die Vor- und Nachbereitung des Operationsplatzes, der Instrumente und Medizinprodukte. Auch
-administrative und Dokumentationsaufgaben sowie Personalmanagementaufgaben fallen in das Aufgabengebiet.
-2. Der anästhesiologische Funktionsdienst, der durch Anästhesiefachkräfte mit Weiterbildung oder ausgebildete anästhesietechnische Assistenten (ATA) besetzt ist. Zu den
-Aufgaben der Anästhesiefachkraft gehören die Vor- und
-Nachbereitung des Anästhesiearbeitsplatzes sowie die Assistenz bei der Narkoseeinleitung, deren Aufrechterhaltung und bei der Narkoseausleitung. Auch die erste postoperative Versorgung im Aufwachraum erfolgt meist
-durch Anästhesiefachkräfte.
-
-39.3.2 Positionierung des Patienten
-zur Operation
-Je nach Eingriﬀ muss der Patient auf dem Operationstisch
-entsprechend positioniert werden. Die fachgerechte Positionierung obliegt dem operativen Funktionsdienst und sollte
-in Anwesenheit des Operateurs erfolgen. Wichtig dabei:
-● freier Zugang zum Operationsgebiet,
-● Komplikationen wie Nervenverletzungen oder
-● Druckulzera vermeiden.
-
-Abb. 39.6 Bauplan einer OP-Einheit.
-
-Sterilgutversorgungsweg
-aus der ZSVA
-
-Sterilflur mit Lagerungskapazität
-
-Rüstraum
-OP
-
-Rüstraum
-OP
-OP
-
-OP
-
-OP
-
-OP
-
-Waschplätze
-
-Lafettenstauraum
-
-Waschplätze
-
-Patientenflur, Ver- und Entsorgung, Personalverkehrsweg
-
-Anästhesie,
-Ein- und Ausleitung
-
-Anästhesie,
-Ein- und Ausleitung
-Schleusen
-
-Aufwachraum
-
-Holding Area
-POBE
-
-Abb. nach: Schewior Popp S, Sitzmann F, Ullrich L. Thiemes Pflege. Thieme; 2017
-
-808
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Postoperative Pflege
-Abb. 39.7 Berufsgruppenbezogene Kerntätigkeiten.
-
-Beispiele für Kernaufgaben im
-OP-Funktionsdienst:
-
-Beispiele für Kernaufgaben im
-Anästhesie-Funktionsdienst:
-
-Beispiele für Bereiche gegenseitiger
-Unterstützung:
-
-• Instrumente anreichen und
-
-• Mitwirkung an der Narkosevorbe-
-
-Instrumententisch vorbereiten
-• Medizintechnik bedienen
-• Untersuchungsmaterial, Proben
-versorgen und weiterleiten
-• Instrumentenentsorgung
-• Einarbeitung neuer Mitarbeiter
-• Dokumentation
-
-reitung, Ein- und Ausleitung
-• Überwachung während der Narkose
-• Notfall- und Schmerzmanagement
-• Umgang mit BTM
-• Entsorgung und Aufbereitung von
-Anästhesiezubehör
-• Dokumentation
-
-• Patientenmanagement
-• Ein- und Ausschleusen
-• Anlage Blasenverweilkatheter
-• Unterstützung bei der Positionierung
-• steriles Anreichen
-• allgemeine Dokumentation
-• Hol- und Bringdienst
-• Patiententransport
-
-39.4 Postoperative Pflege
-Definition Postoperative Pflege
-Unter dem Begriﬀ „postoperative Pflege“ versteht man alle pflegerischen Tätigkeiten und Handlungen, die nach einer Operation
-durchgeführt werden.
-
-39.4.1 Im Aufwachraum
-Ist die Operation abgeschlossen, kommt der frisch Operierte
-in den Aufwachraum. Hier wird er so lange überwacht, bis
-seine Vitalfunktionen stabil sind und er auf die periphere
-Pflegestation zurückkann (meist 1–2 Stunden). Bei großen,
-lang andauernden und komplikationsreichen Operationen,
-schweren Vorerkrankungen oder intraoperativ aufgetretenen Komplikationen kann es notwendig werden, dass der
-Patient postoperativ auf einer Intensivstation oder einer Intermediate Care Station (IMC) weiterbetreut wird. Die Indikation stellen Anästhesist und Operateur gemeinsam.
-
-Pflegerische Schwerpunkte
-In der postoperativen Phase im Aufwachraum überwachen
-Pflegefachkräfte primär den Patienten und achten auf:
-● Bewusstseinslage
-● Atem- und Kreislauﬀunktionen
-● postoperative Schmerztherapie
-● Komplikationen und Nachblutungen
-Diese Aufgabe übernimmt meist speziell ausgebildetes Pflegefachpersonal. Der Patient wird mittels Monitor überwacht
-und kann seine Narkose ausschlafen. Bei auftretenden Komplikationen kann schnell eingegriﬀen und gehandelt werden.
-Während der Patient im Aufwachraum liegt, kann auf der
-Station das Patientenzimmer für die postoperative Versorgung vorbereitet werden, z. B. Infusionsständer bereitstellen, Überwachungsprotokoll anlegen, RR-Gerät bereitlegen.
-Ist der Patient aufgewacht, überprüft der Anästhesist im
-Aufwachraum nochmals seinen Bewusstseinsstatus. Erst
-wenn er stabil genug ist, um verlegt werden zu können,
-wird die Pflegeabteilung informiert und der Patient kann
-aus dem Aufwachraum abgeholt werden.
-
-Regeln
-● Abholung: Patient möglichst zu zweit aus dem Aufwachraum abholen. Eine examinierte Pflegefachkraft muss dabei sein.
-● Übergabe perioperativer Verlauf: Was wurde gemacht?
-Gab es Besonderheiten oder Komplikationen während der
-OP? Gab es Besonderheiten im Aufwachraum (erhaltene
-Medikamente und Infusionen, Schmerzen, besondere Positionierung).
-● Kontrolle: Kontrolle des Bewusstseins des Patienten, des
-Wundverbands und der Drainagen (bei massiven Blutungen kann die Verantwortung für die Übernahme nicht
-übernommen werden), des Befindens des Patienten und
-ob dieser schon Spontanurin gelassen hat.
-● Zu- und Ableitungen: Vor dem Transport werden alle Zuund Ableitungen gesichert, um ein versehentliches Herausziehen während des Transports zu vermeiden.
-Ein Patient sollte nur dann übernommen, wenn folgende
-Verlegungskriterien erfüllt sind:
-● ausreichende Spontanatmung
-● stabile Herz-Kreislauf-Verhältnisse
-● klares Bewusstsein
-● ausreichende Schutzreflexe
-● Normothermie
-● adäquate Schmerztherapie
-
-39.4.2 Pflege auf der Station
-Positionierung
-Auf der Station wird der Patient in sein Zimmer gebracht
-und nach Anordnung des Operateurs positioniert. Beispiele:
-● Nach größeren Eingriﬀen am Magen-Darm-Trakt wird der
-Patient z. B. mit leicht erhöhtem Oberkörper positioniert
-und die Knie mit einer Knierolle oder einem Bettknick im
-Pflegebett unterstützt.
-● Bei traumatologischen oder gefäßchirurgischen Eingriﬀen
-muss die operierte Extremität ggf. auf einer Schiene positioniert sein.
-● Bei einigen Operationen an der Wirbelsäule darf das Kopfteil des Bettes nicht erhöht werden.
-Zur korrekten Positionierung sollten sich Pflegefachkräfte
-nach den jeweiligen Haus- und/oder Abteilungsstandards
-richten. Der Patientenruf wird in Reichweite gelegt und auf
-seine Funktionsfähigkeit hin überprüft.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-809
-
-l
-39
-
-Pflege von Menschen in der perioperativen Phase
-
-Postoperative Überwachung
-In der ersten postoperativen Phase muss der Patient intensiv
-überwacht werden (▶ Abb. 39.8). Die Zeitabstände der Überwachung sind abhängig von der Art der Operation und erfolgen auf ärztliche Anordnung. Häufige postoperative Komplikationen sind u. a.: Fieber, Harnverhalt, Hypertonie, respiratorische Insuﬃzienz, Übelkeit, Erbrechen, Schluckauf, Verwirrtheit, Volumenmangel, Wundheilungsstörungen.
-Kreislaufsituation • Puls, Blutdruck und Atmung des Patienten
-engmaschig überwachen. Ziel: Ein etwaiger Volumenmangel
-(Schocksymptome, Durst, Verwirrtheitszustände) oder eine
-Hypoxie (veränderte Atemgeräusche, Dyspnoe, Zyanose, Bläs-
-
-se, Unruhe) werden schnell erkannt und mit dem behandelnden Arzt geeignete Sofortmaßnahmen eingeleitet.
-Bewusstsein und Orientierung • Das Bewusstsein und die Orientierung des Patienten sollten regelmäßig kontrolliert werden. So lässt sich ein Narkoseüberhang oder neurologische
-Störungen (Ateminsuﬃzienz, Schläfrigkeit, Sprachstörungen) frühzeitig erkennen und geeignete Sofortmaßnahmen
-lassen sich einleiten.
-Wundverband und Drainagen • Bei jedem Patientenkontakt
-sollte der Wundverband auf Nachblutungen (durchgebluteter Verband) und der Füllstand der Drainagen (S. 657) kontrolliert werden (Menge und Aussehen).
-
-Abb. 39.8 Patientenüberwachung.
-
-Postaggressionssyndrom
-nach großen Traumata und OPs,
-Verbrennungen, schweren
-Infektionen
-• Tachykardie, Hypertonie
-• Tachypnoe mit oberflächlicher
-Atmung
-• erhöhte Körpertemperatur
-• Hyperglykämie
-• Abnahme des Serumkaliums
-• Durst und Oligurie
-• Appetitlosigkeit
-• Müdigkeit, Interesselosigkeit,
-Depression
-
-Kreislaufsituation
-• Puls
-• Blutdruck
-• Atmung
-• Volumenmangel?
-• Hypoxie?
-
-Orientierung und Bewusstsein
-• Narkoseüberhang?
-• neurologische Störungen?
-
-N
-
-W
-
-O
-
-S
-
-Körpertemperatur
-Resorptionsfieber bis 5 Tage
-nach der OP normal,
-Temperatur sollte nicht über
-38,5 °C steigen
-• Wundinfektion?
-• Sepsis?
-
-Wundverband und Drainagen
-• Nachblutungen?
-• erhöhter Füllstand der Drainage?
-
-Flüssigkeitshaushalt und
-Ausscheidung
-Wasserlassen bis spätestens
-12 Stunden nach der OP
-• postoperative Harnretention?
-
-Die Illustration zeigt die Hauptelemente der postoperativen Patientenüberwachung.
-810
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-
+13    Hygiene
+
+
+      Abb. 13.1 Krankheitserreger.                                        Eintrittspforten • Es gibt unterschiedliche Eintrittspforten für
+                                                                          Krankheitserreger im menschlichen Körper. Die meisten Er-
+                                                                          reger dringen durch die natürlichen Körperöﬀnungen ein.
+                                                                          Auch über Hautwunden oder Gefäßzugänge kann ein Erre-
+                                                                          ger in den Körper gelangen. Ebenso gibt es Erreger, die die
+                                                                          intakte Haut durchdringen können. Weiterhin können Erre-
+                                                                          ger durch Injektionen bzw. durch Needle sharing (den ge-
+                                                                          meinsamen Gebrauch von Injektionsnadeln und Spritzen-
+                                                                          besteck) in den Körper gelangen.
+
+                                                                          Enterale und parenterale Infektion • Von enteraler Infektion
+                                                                          spricht man, wenn die Erreger über den Verdauungstrakt
+                                                                          bzw. über den Mund aufgenommen werden. Unter parente-
+                                                                          raler Infektion werden demnach alle Infektionen verstan-
+                                                                          den, bei denen die Aufnahme nicht über den Verdauungs-
+                                                                          trakt erfolgt. Hierzu gehören z. B. die Inhalationsinfektion,
+        a                                                                 bei der die Erreger eingeatmet werden, die permuköse In-
+                                                                          fektion über die Schleimhaut oder die urogenitale Infektion
+                                                                          über den Harntrakt.
+
+
+                                                                          Tröpfcheninfektion
+                                                                          Der häufigste Übertragungsweg ist die Tröpfcheninfektion,
+                                                                          bei der die Erreger über Sekrettröpfchen (> 5 μm) übertra-
+                                                                          gen werden. Die erregerhaltigen Tröpfchen gelangen durch
+                                                                          Sprechen, Niesen oder Husten in die Luft und können im
+                                                                          Umkreis von 1–4 m von anderen Menschen über das Ein-
+                                                                          atmen aufgenommen werden, in seltenen Fällen auch über
+        b                                                                 Hautverletzungen.
+
+
+                                                                          Aerogene Infektion
+                                                                          Bei der aerogenen Infektion werden die Erreger über sehr
+                                                                          kleine Sekrettröpfchen (Aerosole, Tröpfchenkerne < 5 μm)
+                                                                          oder Staubpartikel durch die Luft übertragen. Diese erreger-
+                                                                          haltigen Partikel sind so klein, dass sie von der Luft getragen
+                                                                          werden und deswegen relativ weite Entfernungen zurück-
+                                                                          legen können. Die Tröpfcheninfektion und die aerogene In-
+                                                                          fektion können auch unter aerogene Übertragung zusam-
+                                                                          menfasst werden, da die Übertragung bei beiden über die
+                                                                          Luft erfolgt. Der Unterschied besteht im Prinzip nur in der
+                                                                          Größe der Tröpfchen.
+        c
+                                                                          Kontaktinfektion
+      a Bakterien. © norman blue/stock.adobe.com
+      b Viren. © sveta/stock.adobe.com                                    Die Kontaktinfektion entsteht durch direkten oder indirek-
+      c Schimmelpilze. © science photo/stock.adobe.com                    ten Kontakt mit erregerhaltigem Material, das kann Stuhl,
+                                                                          Urin, Sputum, Eiter oder Blut sein. Indirekt werden die Erre-
+                                                                          ger über kontaminierte Gegenstände, Wasser oder Lebens-
+                                                                          mittel übertragen. Bei der Schmierinfektion werden die
+      Endogene und exogene Infektion • Der Übertragungsweg be-            krank machenden Erreger aus Stuhl, Blut, Sputum o. Ä.
+      ginnt bei der Infektionsquelle. Am häufigsten stammt der            durch eine Kontamination der Hände auf Gegenstände „ge-
+      Erreger aus der Umgebung, man spricht von einer exogenen            schmiert“ oder direkt in eine Eintrittspforte gebracht, z. B.
+      Infektion. Infiziert man sich mit körpereigenen Erregern,           den Mund oder eine Hautverletzung.
+      handelt es sich um eine endogene Infektion. Gelangen z. B.            Bei der fäkal-oralen Infektion werden Erreger aus dem
+      Darmkeime an Stellen im Körper, wohin sie nicht hingehö-            Stuhl oral aufgenommen. Meist erfolgt die Infektion indirekt
+      ren, können diese an sich harmlosen Bakterien dort eine In-         über kontaminiertes Wasser oder Lebensmittel, die mit dem
+      fektion auslösen, z. B. eine Blasenentzündung.                      Wasser Kontakt hatten oder darin leben (Muscheln oder
+                                                                          Fisch). Sie kann aber auch erfolgen, wenn man sich nach
+      Direkte und indirekte Übertragung • „Direkt“ bedeutet, die Er-      dem Stuhlgang nicht die Hände wäscht und die Erreger
+      reger gehen direkt von einem Menschen auf den anderen               dann beim Essen in den Mund gelangen. Dies kann z. B. bei
+      über. Indirekt wird eine Infektion dann weitergegeben,              Kindern oder älteren Menschen mit einer Demenzerkran-
+      wenn sie über einen Zwischenträger übertragen wird. Zwi-            kung vorkommen.
+      schenträger können Staub, Wasser, Gegenstände, Lebens-                Es gibt Krankheitserreger, die durch direkten Kontakt se-
+      mittel, aber auch Vektoren (z. B. Insekten) und andere Per-         xuell über Samen- oder Vaginalflüssigkeit übertragen wer-
+      sonen sein.                                                         den. Kleinste Haut- oder Schleimhautdefekte reichen als
+
+
+298    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                      Grundlagen der Infektionslehre
+
+
+Eintrittspforte für die Erreger aus. Die Übertragung kann
+auch über den Mund oder das Auge erfolgen.
+                                                                      13.2.4 Nosokomiale Infektionen
+  Bei einer Übertragung von der Mutter auf ihr ungebore-              Definition Nosokomiale Infektion
+nes Kind spricht man von der diaplazentaren Übertragung.
+                                                                      Nosokomiale Infektionen sind Infektionen, die im Krankenhaus, Pfle-
+Der Krankheitserreger wird dabei von der Plazenta oder
+                                                                      geheim oder ambulant durch ärztliche oder pflegerische Maßnah-
+dem Fruchtwasser auf das Kind übertragen. Eine Anste-
+                                                                      men erworben wurden und vorher nicht bestanden.
+ckung im Geburtskanal während der Geburt wird als perina-
+tal bezeichnet. Wird ein Krankheitserreger über das Stillen
+                                                                      Endogene Infektionen durch Erreger der physiologischen
+übertragen, so spricht man von postnatal.
+                                                                      Bakterienflora des Pflegeempfängers treten vor allem dann
+  Wenn ein Erreger über einen tierischen Zwischenüberträ-
+                                                                      auf, wenn das Immunsystem des Pflegeempfängers durch
+ger (Vektor) wie Mücke, Floh oder Zecke weitergegeben
+                                                                      die Therapie stark geschwächt ist. Bei der exogenen Infek-
+wird, so spricht man von einer vektoriellen Übertragung.
+                                                                      tion spielen vor allem die nicht oder unzureichend desinfi-
+  Die ▶ Infografik (S. 300) zeigt die Übertragungswege, die
+                                                                      zierten Hände des Personals oder kontaminierte Gegenstän-
+wichtigsten Eintrittspforten und Hygienemaßnahmen, die
+                                                                      de eine Rolle.
+eine Übertragung verhindern.
+                                                                         Das Robert Koch-Institut (RKI) führt folgende Ursachen
+                                                                      für nosokomiale Infektionen auf:
+Definition Inkubationszeit                                            ● Faktor Pflegeempfänger: Aufgrund von Vorerkrankungen
+Die Inkubationszeit für eine bestimmte Infektionserkrankung ent-        des Pflegeempfängers steigt das Risiko für Krankenhaus-
+spricht der Zeit, die vom Eindringen des Krankheitserregers bis zum     infektionen.
+Auftreten der ersten Symptome vergeht.                                ● Umwelt: Die Krankenhausumgebung schaﬀt günstige Be-
+
+                                                                        dingungen für eine Übertragung und fördert die Ausbrei-
+                                                                        tung von nosokomialen Infektionserregern, z. B. die Nähe
+    WISSEN TO GO                                                        der Pflegeempfänger zueinander, die Kontamination von
+                                                                        Geräten, die Exposition zu kontaminiertem Wasser, Bau-
+  Übertragungswege                                                      und Renovierungsarbeiten und nicht desinfizierte Hände
+                                                                        des medizinischen Personals.
+  ● Infektionsquelle:
+                                                                      ● Technologie: Fortschritte der Medizintechnik, die bessere
+    – exogene Infektion: Erreger aus der Umgebung
+                                                                        Methoden des Monitorings und der Pflege ermöglichen,
+    – endogene Infektion: Erreger aus dem eigenen Körper
+                                                                        bedingen gleichzeitig neue Eintrittspforten für Infektions-
+  ● Direkte und indirekte Übertragung:
+                                                                        erreger.
+    – direkt: von einem Menschen direkt auf den anderen               ● Menschliche Faktoren: Medizinisches Personal ist im All-
+    – indirekt: über einen Zwischenträger, z. B. Wasser, Ge-
+                                                                        gemeinen heute mehr in Anspruch genommen als früher.

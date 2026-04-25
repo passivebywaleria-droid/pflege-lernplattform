@@ -1,651 +1,607 @@
-# Kapitel 35: Pflege von Menschen in stationaeren Langzeiteinrichtungen
+# Teil 35
 
-> Quelle: I Care Pflege (Thieme, 2020), S. 752-759
+> Quelle: Icare Pflege
 > Automatisch extrahiert — Formatierung kann abweichen
 
 ---
 
-Formen der ambulanten Pflege
-Abb. 34.2 Hilfsmittel.
+      sprächspartner und fordern eine hohe Auﬀassungsgabe, Fle-           Mit Kollegen, mit denen man persönlich nicht „so warm“
+      xibilität und die stete Bereitschaft, sich auf ein Gespräch ein-    wird, sollte eine solide beruflich orientierte Ebene gefunden
+      zulassen. In den folgenden Beispielen werden die wechseln-          werden, die das Ziel der Zusammenarbeit in den Vorder-
+      den Anforderungen, die Ziele, die innere Haltung, der               grund stellt.
+      sprachliche Ausdruck und die sich daraus ergebende Kom-
+      petenzentwicklung aufgezeigt.
+                                                                          10.4.2 Kommunikation mit
+      10.4.1 Kommunikation im Team                                        Pflegeempfängern aller Altersstufen
 
-Unter bestimmten Bedingungen leistet die Pflegeversicherung
-einen Zuschuss zur Anschaﬀung eines Treppenlifts (Symbolbild).
-© Ingo Bartussek/stock.adobe.com - Stock photo - posed by a model
+        Beispiel Kommunikation im Team                                      Beispiel Kommunikation mit
+                                                                            Pflegeempfängern
+        Pflegefachkraft Johanna hat heute ihren 1. Arbeitstag auf der
+        Unfallchirurgie. Kollege Alexander nimmt sich ihrer an. Nach-       Frau L. ist die Treppe hinuntergestürzt und hat sich eine schwe-
+        dem sie sich einander vorgestellt haben, sagt Alexander: „Wir       re Rippenprellung und eine komplizierte Fraktur am rechten
+        beide werden in den nächsten Wochen in denselben Schichten          Fuß zugezogen. Die 34-jährige Frau ist bei ihrer Aufnahme sehr
+        arbeiten, damit du einen guten Überblick in tägliche Abläufe        aufgeregt. Sie ist alleinerziehende Mutter eines 2-jährigen Soh-
+        bekommst. Ich bin dein Ansprechpartner. Du wirst sehen, hier        nes. Ihre Gedanken kreisen: „Leon muss von der Kita abgeholt
+        herrscht eine gute Atmosphäre. Jeder weiß, dass es viel zu tun      werden. Wo soll er nur hin, während ich hier bin? Ich will nicht
+        gibt, doch wir sind gut organisiert und es gibt klar definierte     operiert werden. Ah, diese Schmerzen ... Bitte, bitte keine Sprit-
+        Aufgabenbereiche. Klar, es ist oft auch stressig, wie überall.      zen!“ Frau L. hat eine Spritzenphobie und es ist ihr peinlich, da-
+        Aber wir unterstützen uns gegenseitig.“                             von zu sprechen. Sie überlegt schon, wie sie „um die Spritzen
+           In den nächsten Wochen überzeugt Johanna sich davon,             herumkommt“.
+        dass alle auf eine gute Zusammenarbeit bedacht sind und kon-           Charlotte ist mit ihrer Kollegin Johanna im Spätdienst und
+        zentriert miteinander gearbeitet wird. Allgemein herrscht im        nimmt die Pflegeempfängerin auf: „Guten Tag, Frau L. Ich bin
+        Team ein respektvoller Umgangston. Die Kollegen lassen sich         Charlotte R. und bin als Pflegefachkraft Ihre Ansprechpart-
+        bei den Dienstübergaben gegenseitig aussprechen und von Pa-         nerin. Ich begleite Sie nach oben auf die Station und zeige Ih-
+        tienten wird fachlich und wertschätzend gesprochen. Außer-          nen Ihr Bett. Ihr gebrochener Fuß wird voraussichtlich morgen
+        dem beginnen die Übergaben pünktlich und es wird auf Ruhe           früh operiert. Dr. B. wird nachher noch mit Ihnen sprechen und
+        geachtet, damit keine Informationen verloren gehen. Dass da-        bis dahin sind meine Kollegin Johanna und ich gerne für Ihre
+        rauf im Allgemeinen Wert gelegt wird, hatte ihr Alexander zu        Fragen da. Gibt es jemanden, den ich benachrichtigen soll?“
+        Beginn mitgeteilt. Nach 6 Wochen im neuen Team hat sie sich
 
-34.6 Formen der ambulanten
-Pflege
-34.6.1 Häusliche Intensivpflege und
-Heimbeatmung
-Die Zahl intensivpflegebedürftiger Menschen zu Hause
-steigt, dabei müssen die Betroﬀenen häufig auch beatmet
-werden. Oft leben Angehörige des Intensivpflegedienstes 24
-Stunden täglich mit dem Pflegeempfänger zusammen, meist
-im 2- oder 3-Schicht-System. Die Pflegenden begleiten den
-Menschen den ganzen Tag, zur Arbeit, zu Freizeitaktivitäten
-oder in den Urlaub. Möglich ist auch eine zeitweise Betreuung, da manche Pflegeempfänger nur ein paar Stunden am
-Tag oder in der Nacht pflegerisch versorgt, z. B. beatmet
-oder abgesaugt werden müssen.
-Zu den Leistungen dieser Pflegedienste gehören z. B.:
-● Pflege bei Beatmung (S. 820)
-● Absaugung (S. 961)
-● Tracheostomaversorgung (S. 966)
-● Portkatheterversorgung (S. 619)
-● Infusionstherapie (S. 621)
 
-Beispiel Häusliche Intensivpflege
-Herr N., 32 Jahre alt, ist körperlich und geistig behindert und
-auf einen Rollstuhl angewiesen. Er lebt zusammen mit seinen
-Eltern. Beide sind über 70 Jahre alt, aber körperlich und geistig
-fit. Wegen seiner starken Skoliose hatte Herr N. eine Pneumonie. Er lag mehrere Wochen beatmet auf der Intensivstation.
-Auch nach der Entlassung konnte er noch nicht alleine atmen.
-Ein ambulanter Pflegedienst übernahm die Pflege zu Hause mit
-dem Ziel, Herr N. von der Beatmung zu entwöhnen und ihn
-wieder ganz in sein voriges Leben zu entlassen. Die Mitarbeiter
-des Dienstes begleiteten ihn u. a. jeden Tag zu seiner Arbeit in
-einer Behindertenwerkstatt und übten mit ihm stundenweise,
-ohne Respirator zurechtzukommen. Sechs Wochen später
-konnte er aus der Unterstützung entlassen werden.
+260    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                              Kommunikation in der Anwendung
 
-34.6.2 Häusliche
-Kinderkrankenpflege
-Die ambulante Kinderkrankenpflege ist eine ganzheitliche
-und familienorientierte Pflege. Chronisch erkrankte, behinderte oder sterbende Kinder können oftmals zu Hause, im
-familiären Umfeld wirkungsvoller gepflegt werden als in
-der Klinik. Allein schon deswegen, weil auf ihre Bedürfnisse
-und Wünsche individueller eingegangen werden kann.
-Die Herausforderung für Pflegende in diesem Setting ist,
-dass sie nicht nur den Pflegeempfänger an sich, sondern
-auch dessen Umfeld mit seinen Stärken und Schwächen miteinbeziehen und darauf eingehen müssen. Nur dann können
-die Chancen und Ressourcen, die sich aus dieser Konstellation ergeben, optimal genutzt werden.
-Üblicherweise ergibt sich die ambulante Pflegesituation
-aus einem vorangegangenen Klinikaufenthalt. In solchen
-Fällen ist wichtig, dass die ambulante Pflegefachkraft bereits
-an der Überleitung beteiligt ist. Durch das Kennenlernen des
-Kindes und dessen Eltern schon in der Klinik kann sich bereits eine Vertrauensbasis bilden. Zu den pflegerischen Basishandlungen wie die Versorgung von Sonden, Mobilisation, Waschung etc. kommt dann noch der psychosoziale Aspekt: Eltern pflegebedürftiger Kinder sind oft chronisch
-überfordert. Pflegende können hier zur Entlastung beitragen, indem sie Ängste und Sorgen reflektieren und auf zusätzliche Hilfsangebote hinweisen. Geschwisterkinder können integriert werden, indem sie bei der Pflege mithelfen.
 
-34.6.3 Interkulturelle Pflegedienste
-Interkulturelle Pflegedienste nehmen besondere Rücksicht
-auf die sprachlichen, kulturellen und religiösen Besonderheiten von Pflegeempfängern mit Migrationshintergrund.
-Besonderheiten interkultureller Pflegedienste sind:
-● die Pflege wird in der jeweiligen Muttersprache des Pflegeempfängers durchgeführt
-● kulturelle Bedürfnisse werden berücksichtigt (z. B. Verhältnis Mann/Frau)
-● es besteht teilweise das Angebot, bestimmte kulturelle Rituale (z. B. religiöse Waschung) durchzuführen
-Insbesondere bei demenziellen Erkrankungen (S. 1418) ist
-eine Pflege, die die Herkunft eines Menschen berücksichtigt,
-sinnvoll. Da die Vergangenheit (dazu zählt auch die Muttersprache) im Leben der Menschen mit Demenz eine große
-Rolle spielt, werden die Betroﬀenen so in ihrer Lebenswirklichkeit abgeholt – dies schaﬀt Vertrauen. Dies kann sich positiv auf die Situation des Pflegeempfängers auswirken.
-Siehe das Kapitel „Pflege von Menschen unterschiedlicher
-Kulturen“ (S. 848).
+● Kommunikationsziele mit Pflegeempfängern: Der Mensch              (S. 249) des Menschen mit Demenz beobachten. Wenn sie
+  fühlt sich ernst genommen, akzeptiert und sicher.                 den Eindruck haben, dass ihm die Berührung unangenehm
+● Innere Haltung: Jeder Mensch verdient Aufmerksamkeit              ist, sollten sie diese beenden. Berührungen an Schulter oder
+  und Respekt. Neben der fachlich-medizinischen Betreuung           Gesicht (S. 251) setzen Vertrauen voraus. Dieses muss sich in
+  spielt die menschliche Ebene eine große Rolle. Jede ver-          einer Beziehung erst entwickeln. Je eingeschränkter die ver-
+  trauensbildende Kommunikation trägt zur Entspannung               bale Ausdrucksfähigkeit eines Menschen ist, desto mehr
+  und Heilung des Patienten bei.                                    sollte die nonverbale Kommunikation beachtet werden.
+● Sprachlicher Ausdruck                                             Hierzu zählen u. a. Mimik, Gestik oder Körperhaltung, z. B.
+  – mit Gruß und Namen ansprechen                                   ein Lächeln, eine ablehnende Geste oder eine verspannte
+  – Blickkontakt aufnehmen                                          Körperhaltung. Pflegende sollten zudem beachten, dass ihre
+  – einfache Sprache (wenig Fachsprache) nutzen, Informa-           eigene Mimik und Gestik mit ihren verbalen Äußerungen
+    tionen in kurzen, klaren Sätzen weitergeben                     übereinstimmen (S. 249).
+  – eindeutig sprechen
+● Kompetenzentwicklung: Jeder Mensch kommt mit einer                Über Biografie einen Zugang finden • Das Wissen über die Le-
+  eigenen Geschichte und verdient Aufmerksamkeit. Pfle-             bensgeschichte eines Menschen mit Demenz ist in vielen Be-
+  gende vermitteln Kompetenz und Vertrauen, wenn sie in             reichen wichtig. Wenn Pflegende seine Biografie kennen,
+  der Kontaktaufnahme aktiv sind. Der erste Eindruck zählt.         können sie seine Verhaltensweisen in Bezug zu seiner Bio-
+  In der ersten Verunsicherung der Patienten ist der                grafie setzen, sie leichter interpretieren und verständnisvol-
+  „menschliche Kontakt“ zu Fachpersonal entscheidend für            ler reagieren. Außerdem können sie dadurch identitätsstif-
+  das Stimmungsbild des Patienten. Transparenz im Ablauf            tende Gespräche führen (▶ Abb. 10.10). Aus der Biografie
+  zu geben hilft, Patienten zu beruhigen. Pflegende sollten         können auch Hinweise abgeleitet werden, die eventuell die
+  immer erklären, warum sie etwas tun und wie sie es tun.           Kommunikation vereinfachen. Ein Pflegeempfänger, der in
+                                                                    Bayern aufgewachsen ist, wird vielleicht nicht auf „Guten
+Pflegende sollten sich immer wieder bewusst machen, dass            Tag“ reagieren, aber sehr wohl auf „Grüß Gott“.
+sie von den Pflegeempfängern kaum etwas wissen und
+„schwieriges“ oder „übertriebenes“ Verhalten immer einen            Sich kurzfassen • Pflegende sollten in einfachen, kurzen Sät-
+inneren, verborgenen Grund haben kann, z. B. eine scham-            zen sprechen und zu viele Informationen in einem Satz ver-
+besetzte Spritzenphobie.                                            meiden. Pflegende sollten zudem die verlängerte Reaktions-
+                                                                    zeit beachten und die nonverbalen Reaktionen beobachten.
+Kommunikation mit demenziell                                        Geschlossene Fragen stellen • Menschen mit Demenz haben
+Erkrankten                                                          Schwierigkeiten, Entscheidungen zu treﬀen. Pflegende soll-
+Die Kommunikation mit einem Menschen mit Demenz kann                ten oﬀene Fragen vermeiden. Statt „Möchten Sie das rote
+manchmal herausfordernd sein. Das gesprochene Wort ver-             oder das blaue T-Shirt anziehen?“ fragen Sie lieber: „Möch-
+liert an Bedeutung, Zusammenhänge können nicht mehr er-             ten Sie das rote T-Shirt anziehen?“ Pflegende sollten die Re-
+kannt werden. Folgende Hinweise können in dieser speziel-           aktion abwarten und, falls nötig, erst in der nächsten Frage
+len Kommunikationssituation hilfreich sein.                         eine Alternative anbieten. Pflegende sollten nicht nach dem
+                                                                    Warum fragen. Damit kann man einen Menschen mit De-
+Sich zentrieren • Bevor Pflegende auf einen an Demenz er-           menz in Erklärungsnöte bringen. Da er die Antwort darauf
+krankten Menschen treﬀen, kann es helfen, die eigene mo-            meist nicht mehr geben kann, konfrontieren Pflegende ihn
+mentane Gefühlslage zu überprüfen. Negative Empfindun-              dadurch eventuell mit seiner Unzulänglichkeit oder mit der
+gen sollten vorher abgeschüttelt werden, denn wenn Pfle-            Erkrankung selbst. Darauf reagiert er emotional mit Scham,
+gende selber aufgeregt, verärgert oder gestresst sind, über-        Ärger, Traurigkeit, Angst, Abneigung oder Niedergeschlagen-
+tragen sie diese Stimmung unbewusst. Menschen mit De-               heit. Diese können sich dann in herausforderndem Verhal-
+menz sind dafür sehr empfänglich, haben aber Schwierig-             ten zeigen.
+keiten damit, die Stimmungslage „richtig“ zu deuten. Unter
+Umständen reagieren sie negativ. Ärger oder Aussagen des
+Menschen mit Demenz sollten nicht persönlich genommen               Abb. 10.10 Zeit für Erzählungen.
+werden.
 
-34.6.4 24-Stunden-Betreuung
-Dieses Angebot kommt dem Wunsch der pflegebedürftigen
-Menschen nach, möglichst lange zu Hause zu leben, auch im
-Falle einer langfristigen Pflegebedürftigkeit. Bei der 24Stunden-Versorgung ist eine Betreuungskraft rund um die
-Uhr für den Pflegeempfänger zuständig. Häufig sind die Betreuungskräfte Frauen aus Osteuropa, die sich für jeweils 2
-Wochen im Wechsel um einen Pflegeempfänger kümmern.
+Blickkontakt aufnehmen • Bevor Pflegende ein Gespräch be-
+ginnen, sollten sie Blickkontakt aufbauen. Dafür gehen sie
+ggf. in die Hocke oder nehmen sich einen Stuhl. Der Mensch
+mit Demenz hat dadurch die Möglichkeit, seine Aufmerk-
+samkeit auf die Pflegeperson zu richten. Wenn der Pfle-
+geempfänger von oben, von hinten oder von weiter weg an-
+gesprochen wird, kann es sein, dass er die Pflegeperson ent-
+weder nicht wahrnimmt oder gar erschrickt. Demgegenüber
+vermittelt eine Ansprache auf Augenhöhe Wertschätzung
+für den Menschen.
 
-Mehr zum Thema Intensivpflege im Kap. „Pflege von Menschen auf der Intensivstation“ (S. 814).
+Über den Körper sprechen • Es kann hilfreich sein, den Pfle-
+geempfänger leicht zu berühren, z. B. an der Hand oder am
+Arm. Dies signalisiert: „Ich bin da.“ Die Berührung kann ihm        Das gemeinsame Betrachten alter Fotografien kann die interes-
+helfen, seine Aufmerksamkeit auf die Pflegeperson zu len-           santesten Hintergrundgeschichten hervorlocken.
+ken. Pflegende sollten die nonverbale Kommunikation                 Foto: K. Oborny, Thieme
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
 
-749
 
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen      261
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
 l
-34
+10    Mit Menschen kommunizieren
 
-Pflege von Menschen im häuslichen Umfeld
 
-34.6.5 Ergänzende Angebote für
-pflegende Bezugspersonen
-Diese Angebote dienen der Entlastung pflegender Bezugspersonen, die durch die Pflege eines Angehörigen, häufig zusätzlich zu Familie und Beruf, großen psychischen und physischen Belastungen ausgesetzt sind.
-Kurzeitpflege • Pflegebedürftige, die sonst weitestgehend
-nur mit wenig Unterstützung zu Hause leben, können z. B.
-nach einem Krankenhausaufenthalt kurzzeitig auf vollstationäre Pflege angewiesen sein. Für diesem Fall gibt es bestimmte Einrichtungen, die diese vorübergehende Betreuung übernehmen. Für Kurzzeitpflege erstattet die Pflegeversicherung bis zu 1612 Euro. Auch wenn z. B. die pflegende
-Bezugsperson erkrankt, sichert eine Kurzzeitpflege die Versorgung des Pflegeempfängers.
-Tagespflege • Ist eine Einrichtung der teilstationären Versorgung, bei der Pflegeempfänger über den Tag in einer Betreuungseinrichtung versorgt werden. Schwerpunkt der Tagespflege ist es, die geistigen und praktischen Fähigkeiten der
-Pflegeempfänger zu fördern und ihnen soziale Kontakte zu
-ermöglichen. Unter professioneller Betreuung werden u. a.
-Gedächtnistraining, Gesellschaftsspiele, Gymnastikübungen
-und Spaziergänge angeboten. Die Kosten werden von der
-Pflegeversicherung in Abhängigkeit vom Pflegegrad bezuschusst.
-Nachtpflege • Auch die Nachtpflege ist ein teilstationäres
-Versorgungsangebot. Es bietet die Möglichkeit, dass der
-Pflegeempfänger die Nacht in einer vollstationären Pflegeeinrichtung verbringt. Dort werden sie von Pflegefachkräften betreut. Auch hier übernimmt die Pflegeversicherung einen Teilbetrag.
-Verhinderungspflege (§ 39 SGB XI) • Erkranken pflegende Bezugspersonen bzw. ist ein Urlaub geplant, kann die Verhinderungspflege für bis zu 6 Wochen/Jahr in Anspruch genommen werden. Voraussetzung ist der Pflegegrad 2. Die Kostenerstattung von bis zu 1612 Euro/Jahr übernimmt die
-Pflegekasse. Verhinderungspflege kann von ambulanten
-Pflegediensten, aber auch von stationären Einrichtungen
-übernommen werden.
+      Wertschätzung zeigen • Ihre Wertschätzung können Pflegen-           Abb. 10.11 Herantasten an die Untersuchung.
+      de darin ausdrücken, dass sie die Realität, die der Pfle-
+      geempfänger erlebt, akzeptieren. Pflegende sollten seine
+      Aussagen nicht korrigieren. Gerade wenn sich Pflegende
+      durch Verhaltensweisen des Pflegeempfängers herausgefor-
+      dert fühlen, sollten sie ihre Logik bei Seite lassen. Die Ver-
+      haltensweisen stehen für Gefühle oder Bedürfnisse, die er
+      nicht mehr adäquat äußern kann. Wenn man das Gefühl
+      hinter dem Verhalten erkennen kann, kann man evtl. verste-
+      hen, welches Bedürfnis der demenziell Erkrankte gerade hat.
+      Und wie das Bedürfnis befriedigt werden kann. Denn: Das
+      Denkvermögen schwindet zwar, die Fähigkeit zu fühlen aber
+      bleibt.
 
-34.7 Umgang mit Angehörigen
-Pflegende treﬀen in der häuslichen Pflege auf Klienten, die
-bestimmte Rituale, Umgangsformen oder Traditionen haben.
-Pflegende sollten diese Aspekte des Umgangs und der Lebensgestaltung akzeptieren, auch wenn sie nicht ihrer eigenen Einstellung entsprechen.
-Meist übernehmen die Bezugspersonen den überwiegenden Teil der Pflege. Pflegende können dabei auf ganz unterschiedliche Einstellungen treﬀen. Manche Bezugspersonen
-„bemuttern“ den Pflegebedürftigen, manche versorgen ihn
-pflegerisch oder sozial eher ungenügend. Die meisten Haushalte bilden aber eine konstruktive und liebevolle Welt für
-den Pflegebedürftigen.
-Pflegende können und dürfen immer aus ihrer fachlichen
-Sicht versuchen, mit Bezugspersonen und Pflegeempfänger
-über Verbesserungen zu reden– aber sie können nicht davon
-ausgehen, dass diese auch umgesetzt werden.
+      Kontakt beenden • Genau wie eine angemessene Begrüßung
+      ist auch ein deutlicher Abschied notwendig. Pflegende soll-
+      ten den Pflegeempfänger darauf hinweisen, dass sie gehen
+      müssen. Sie können ihm z. B. die Hand geben und langsam
+      die Distanz vergrößern. Wenn Pflegende während einer
+      Pflegetätigkeit den Raum verlassen müssen, sollten sie den
+      Pflegeempfänger ebenfalls darüber informieren. Ebenso
+      sollten sie ihn informieren, dass sie wiederkommen.
+                                                                          Oft kann es helfen, den kleinen Patienten sehr behutsam an die
+                                                                          anstehende Behandlung heranzuführen. Pflegefachkräfte können
+          WISSEN TO GO                                                    ihn z. B. den Herzschlag seines Plüschtieres abhören lassen, bevor
+                                                                          sie die gleiche Handlung an ihm durchführen. Foto: K. Oborny, Thieme
+        Menschen mit Demenz – Kommunikationshilfen
+        ● Bewusstes    Zentrieren: kurz durchatmen, Gefühlslage
+          prüfen
+                                                                          Klinik abgeben und sie befinden sich außerhalb ihres ge-
+        ● Blickkontakt aufnehmen: sich auf gleicher Augenhöhe
+                                                                          schützten privaten Rahmens.
+          begegnen
+        ● Über den Körper sprechen: den Pflegeempfänger leicht
+                                                                          Ehrlichkeit • Viele Kinder brauchen Zeit, um ein Vertrauens-
+          berühren, um Kontakt aufzunehmen. Mimik und Gestik
+                                                                          verhältnis aufzubauen. Ehrlichkeit ist unabdingbar, um das
+          beobachten und einsetzen.
+                                                                          Vertrauen eines Kindes zu erlangen! Kinder verzeihen keine
+        ● Über Biografie Zugang finden: Biografische Informatio-
+                                                                          Lügen. Pflegende sollten keine Aussagen treﬀen, wenn sie
+          nen fördern das Verständnis und Verhaltensweisen kön-
+                                                                          nicht der Wahrheit entsprechen, z. B. „Das tut nicht weh“
+          nen leichter interpretiert werden.
+                                                                          oder „Die Medizin schmeckt gut“. Sie sollten die Kinder ge-
+        ● Sich kurzfassen: einfache, kurze Sätze. Verlängerte Re-
+                                                                          meinsam mit den Eltern auf unangenehme Situationen vor-
+          aktionszeit beachten.
+                                                                          bereiten. Aufgabe von Pflegenden ist zu erkennen, ob sich
+        ● Geschlossene Fragen stellen: Sie erleichtern Menschen
+                                                                          Kinder in einer Stresssituation befinden, um dann ausglei-
+          mit Demenz, eine Entscheidung zu treﬀen.
+                                                                          chend darauf zu reagieren. Pflegende können z. B. eine ange-
+        ● Wertschätzung leben: Realität des Pflegeempfängers
+                                                                          nehmere Atmosphäre gestalten, indem das Kind ein Lieb-
+          akzeptieren und Aussagen nicht korrigieren, Gefühle
+                                                                          lingskuscheltier mit zu Untersuchungen nehmen kann
+          und Bedürfnisse hinter herausforderndem Verhalten er-
+                                                                          (▶ Abb. 10.11).
+          kennen und befriedigen.
+        ● Kontakt beenden: Deutlicher Abschied ist notwendig:
+                                                                          Einbindung von Bezugspersonen • Die Einbindung der Eltern
+          verbal durch Hinweis, evtl. Hand geben, Distanz vergrö-
+                                                                          in die Behandlung oder pflegerische Maßnahmen kann zu
+          ßern.
+                                                                          einer Stressreduktion für Eltern und Kind führen. Manchmal
+                                                                          wirkt schon das Halten der Hand, eine Berührung oder das
+                                                                          Singen von Kinderliedern beruhigend. Bei manchen Kindern
+      Kommunikation mit Kindern und ihren                                 hilft auch eine indirekte Kommunikation, z. B. über Hand-
+      Bezugspersonen                                                      puppen (▶ Abb. 10.12). Wichtig ist, dass das Kind eine Be-
+                                                                          gleitung und Unterstützung erfährt. Gleichzeitig müssen
+      Vertrauensverhältnis aufbauen • Maßgeblich für eine gelun-          auch die Bezugspersonen zum Beispiel durch ein kurzes In-
+      gene Kommunikation ist der Aufbau eines Vertrauensver-              formations-/Beratungsgespräch auf ihre Rolle vorbereitet
+      hältnisses zwischen Kind, Eltern und Pflegefachkraft                werden.
+      (S. 276). Für Pflegende ist es wichtig, sich nicht allein die Si-
+      tuation des Kindes, sondern auch die Situation der Eltern           Geeignete Kommunikationsform wählen • Je jünger ein Kind
+      bewusst zu machen: Sie sind durch die Erkrankung ihres              ist, umso mehr findet Kommunikation nonverbal statt. Pfle-
+      Kindes oft in einer emotionalen Ausnahmesituation. Sie              gende sollten immer den Entwicklungsstand des Kindes be-
+      können ihr Kind vor den Belastungen des Krankenhausauf-             rücksichtigen. Bei kranken Kindern kann dieser von der Re-
+      enthalts nicht schützen und fühlen sich dadurch selbst be-          gel abweichen.
+      lastet. Gleichzeitig müssen sie einen Teil ihrer Verantwor-
+      tung für die Betreuung ihres Kindes an die Fachkräfte der
 
-750
 
-Beispiel Angehörige
-Frau N. ist seit Jahren bettlägerig. Ihr Pflegebett steht in einem
-Zimmer der 4-Zimmer-Wohnung, sie kann es aber nicht mehr
-verlassen. Außerhalb des bewohnten Zimmers haben die Bezugspersonen oﬀenbar alles aus der Wohnung ausgeräumt,
-Frau N. scheint das nicht zu wissen. Eines Tages sagt Frau N.
-zur Pflegefachkraft: „Bringen Sie mir doch bitte das gelbe flauschige Tuch, das in dem Schrank rechts an der Wand im Schlafzimmer liegt.“ Aber da sind kein Schrank und kein Tuch. Es ist
-sicherlich kein Zeichen von Schwäche, sich zurückzuziehen und
-zu sagen: „Ich kann das Tuch nicht finden. Fragen Sie doch das
-nächste Mal Ihren Sohn, wenn er vorbeikommt.“ Familiäre
-Konflikte oder nicht intakte Beziehungen sollten zur Kenntnis
-genommen werden – und machen sicherlich oft traurig –, aber
-man sollte nicht versuchen, sie zu lösen.
-Ernährung • Unter anderem bei der Ernährung, und v. a. bei
-der Pflege von Kindern, weichen Bezugspersonen von den
-Vorgaben der professionellen Pflege ab. Bezugspersonen pürieren z. B. das Familienessen, statt dass sie Sondenkost verabreichen. Verflüssigt wird das Essen z. B. mit einem Schluck
-Milch (das Weißbrot mit Nutella zum Frühstück) oder Brühe
-(für das Mittagessen). Dahinter steckt die Erfahrung, dass
-mit diesem Essen weniger Diarrhöen auftreten. Außerdem
-versprechen sich die Angehörigen davon Geschmackserlebnisse für den Pflegebedürftigen, z. B. weil er nach der Applikation aufstößt und so das Essen im Nachhinein „schmecken“ kann.
 
-34.7.1 Problematisches Umfeld
-Bei der häuslichen Pflege treten Pflegende sehr weit in den
-privaten Bereich eines Pflegeempfängers ein. Pflegende sind
-besonders gefordert, sich professionell zu verhalten. Die
-meisten mobilen Dienste besprechen während ihrer Konferenzen auch Fälle, in denen das Umfeld problematisch ist,
-und suchen im Zweifel nach Entlastung.
 
-Beispiel Problematischer Fall
-Der jüngste Sohn (6 Jahre) einer Großfamilie hat durch einen Unfall eine Querschnittlähmung und lebt beatmet zu Hause. Er wird
-durch einen mobilen Dienst betreut. Für die Familie scheint die
-Erkrankung nicht sonderlich schwer zu sein und sie ändert ihr
-Verhalten kaum. Die anderen Kinder treiben Schabernack mit ihrem Bruder. Sie schubsen ihn im Rollstuhl herum, lösen die Verbindung seiner Trachealkanüle und schleppen ihn zu jeder Aktivität mit. Der Kleine kommt kaum zur Ruhe. Die Anweisungen des
-mobilen Dienstes werden nur in Maßen respektiert. Für die Pflegenden ist der Dienst dort sehr anstrengend. Sie wünschen sich,
-mehr als 2 Arme zu haben, um ihren Klienten zu schützen. Der
-mobile Dienst versucht, seine Mitarbeiter zu entlasten, und bietet
-die Möglichkeit, jederzeit eine Pause bei der Betreuung zu erhalten. Schlussendlich wechseln sich fast alle Mitarbeiter in der intensiven Betreuung ab. Die PDL macht regelmäßig Pflegevisiten,
-um die Zustände zu dokumentieren. Nach einem halben Jahr
-trägt das Engagement erste Früchte: Die Geschwister respektieren
-den mobilen Dienst als eine Instanz, die ihnen Anweisungen geben darf. Sie erkennen, dass ihr kleiner Bruder vorsichtigen Umgang und ab und zu etwas Ruhe braucht.
+262    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                    Kommunikation in der Anwendung
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
 
-Umgang mit Angehörigen
+Abb. 10.12 Handpuppenbesuch am Krankenbett.                            ● Kommunikationsziele mit Bezugspersonen:
 
-34.7.2 Lebensqualität verbessern
-Wenn Pflegende bemerken, dass eine Bezugsperson unter
-der Pflegesituation zu leiden scheint und z. B. erschöpft
-oder überfordert wirkt, können sie helfend eingreifen
-(▶ Abb. 34.3). Sie können ihm z. B. Alternativvorschläge wie
-die Kurzzeitpflege (S. 749) machen. Oder sie können auf
-Unterstützungsmaßnahmen hinweisen, z. B. auf Angehörigenkurse und Selbsthilfegruppen (S. 747). Manchmal nehmen Bezugspersonen Angebote nur zögerlich und nach viel
-gutem Zureden oder eben auch gar nicht an.
+                                                                         – Bezugspersonen respektieren
+                                                                         – durch vertrauensbildende Kommunikation eine koope-
+                                                                           rative Ebene anstreben
+                                                                       ● Innere Haltung: Bezugspersonen leiden oft noch mehr als
 
-34.7.3 Verhalten in besonderen
-Situationen
-Klient macht die Tür nicht auf • Meist haben die mobilen
-Dienste einen Schlüssel von den Klienten, um in die Wohnung zu gelangen. Ist dies nicht der Fall, muss der Mitarbeiter klingeln. Wenn der Klient nicht öﬀnet, sollte die Pflegefachkraft versuchen, beim Pflegeempfänger im Haus oder
-mobil anzurufen. Erreicht sie ihn nicht, kann sie Bezugsperson oder Betreuer, die einen Schlüssel haben, anfragen. Bleiben alle Versuche fruchtlos, kann die Pflegeperson bei der
-PDL ihres Dienstes anrufen. Die meisten mobilen Dienste haben für den Fall einen „Notfallstandard“. Pflegende sollten
-immer von einem Ernstfall ausgehen. Sie dürfen z. B. durch
-die Terrassentür spähen, ob jemand am Boden liegt. In diesem Fall müssen sie die Notrufnummer 110 (Polizei) oder
-112 (Rettungsleitstelle) wählen. Es ist jedoch nicht erlaubt,
-eigenständig eine Tür aufzubrechen oder ein Fenster einzuschlagen.
-Verwahrlosung • Mitarbeiter des mobilen Dienstes können
-bisweilen Wohnungen betreten, die ihren Geruchssinn und
-ihr Verständnis von Ordnung und Sauberkeit fundamental
-erschüttern. Dabei ist es nicht immer einfach zu unterscheiden, ob sich der Pflegeempfänger vernachlässigt, weil er ein
-anderes Verständnis von Sauberkeit hat, süchtig oder depressiv ist. Oder ob er an einer psychischen Störung leidet,
-Abb. 34.3 Beratung für pflegende Angehörige.
+                                                                         der Patient selbst und agieren dann auf emotionaler Ebe-
+                                                                         ne. Mit diesem Wissen ist es einfacher, ein gutes Maß an
+                                                                         Nähe und Distanz zu pflegen und Empathie (ein „Ja“) für
+                                                                         Bezugspersonen zu entwickeln.
+                                                                       ● Sprachlicher Ausdruck:
 
-Auch pflegende Angehörige benötigen Begleitung und Unterstützung. Ambulante Pflegefachkräfte können durch Gespräche
-Wertschätzung vermitteln (Symbolbild).
+                                                                         – Blickkontakt aufnehmen, grüßen, sich vorstellen und in
+                                                                           klaren, einfachen Sätzen sprechen
+                                                                         – eindeutig in der Person sprechen, „ich“ und „Sie“ ver-
+                                                                           wenden; „wir“ und „man“ vermeiden
+                                                                       ● Kompetenzentwicklung: Bezugspersonen sind oft das
 
-dem sog. Vermüllungs- oder Diogenes-Syndrom. Mobile
-Dienste unterstützen den Klienten dabei, eine Lösung zu finden. Sie können auch den Hausarzt oder sozialpsychiatrische
-Dienste (ambulante psychiatrische Dienste) hinzuziehen.
-Nach Absprache mit Angehörigen können sie ein Betreuungsverfahren einleiten. Pflegende sollten auf eine wertfreie
-Dokumentation achten. Die Beschreibung sollte nicht lauten: „Hier stinkt es wie im Pumakäfig, überall sind Viecher.“
-Pflegende sollten beschreiben, was sie sehen: „Lebensmittel
-auf dem Tisch verschimmelt, Ungeziefer (Ratten, Mäuse) in
-der Küche.“
-Unterschiedliche Ansichten • Gerade Bezugspersonen mit
-langjähriger Pflegeerfahrung haben zuweilen ihre eigene
-Vorstellung von „guter“ Pflege. Hier ist es eine Gratwanderung, die pflegende Bezugsperson nicht zu belehren und
-gleichzeitig die Gesundheit des Pflegeempfängers im Fokus
-zu behalten.
+                                                                         „Sprachrohr“ von Patienten. Durch eine starke emotionale
+Kindern kann es leichterfallen, indirekt mit der Pflegeperson zu         Belastung wirken sie im Verhalten manchmal „schwierig“.
+kommunizieren. Handpuppen sind ein lustiger Ansprechpartner              Ordnen Sie solche Situationen sachlich und auf keinen Fall
+auf Augenhöhe, dem gegenüber sie sich ungezwungener ver-                 persönlich ein.
+halten können. Foto: K. Oborny, Thieme
+                                                                       Es ist hilfreich, sich im Kontakt mit Angehörigen selbst-
+                                                                       bewusst zu zeigen – nicht überheblich oder übertrieben
+                                                                       freundlich (ironisch). Gelingt es Pflegenden, Bezugsper-
+                                                                       sonen zu gewinnen, zeigen sie sich oft als freundliche Helfer
+    WISSEN TO GO                                                       und Begleiter im Pflegealltag. Fühlen sich Bezugspersonen
+                                                                       abgelehnt oder ausgegrenzt, können sie „sehr viel Arbeit
+                                                                       und Ärger“ verursachen (Ablehnung erzeugt Gegendruck!).
+  Kommunikation mit Kindern
+  ● Einer der wichtigsten Punkte in der Kinderkrankenpflege
 
-Beispiel Beratungsresistenz
-Herr M. ist nach einem Schlaganfall mit Hemiplegie wieder zu
-Hause. Seine Frau pflegt ihn und hat sehr eigensinnige Ansichten darüber, wie die Pflege auszusehen hat. Den ganzen Tag
-versucht sie, ihren Mann mit Kinderbrei zu „füttern“ – das habe
-die Kinder schließlich auch groß und stark gemacht. Sie wischt
-ihm ständig durch das Gesicht, lässt ihn keine 5 Minuten allein.
-Argumenten ist sie nicht zugänglich. Der Mann versucht, seine
-Frau abzuwehren. Die Kinder sehen, wie verzweifelt die beiden
-sind, und wenden sich an den Pflegedienst.
+    ist die Rolle der Bezugspersonen. Sie sind fester Bestand-         10.4.4 Kommunikation mit Ärzten
+    teil der pflegerischen Beratung und der medizinischen
+    Versorgung.
+  ● Je jünger ein Kind ist, umso mehr findet Kommunikation               Beispiel Kommunikation mit Ärzten
+    über nonverbale Kanäle statt. Der Aufbau eines vertrau-
+    ensvollen Verhältnisses ist elementar. Kinder verzeihen              Charlotte begleitet heute die Visite von Dr. B. Er ist ein struktu-
+    keine Lügen!                                                         rierter und anspruchsvoller Arzt und legt großen Wert auf eine
+  ● Pflegende sollten sich immer auch die Situation der El-              gute Dokumentation und Vorbereitung der Visiten. Charlotte
+    tern bewusst machen.                                                 teilt ihm vor dem Patientenzimmer mit, dass Frau L. in der Nacht
+  ● Auch sehr kleine Kinder, z. B. Säuglinge, sollten immer
+                                                                         über starke Schmerzen geklagt hat. Er erkundigt sich bei der Pa-
+    wissen, was mit ihnen geschieht.                                     tientin nach ihrem Befinden. Anschließend sagt er zu ihr: „Wir
+                                                                         erhöhen die Dosis Ihres Schmerzmedikaments“, und zu Charlot-
+                                                                         te: „Frau L. erhält weiterhin Pantoprazol 20 mg nüchtern und
+                                                                         wir erhöhen die Dosis Ibuprofen auf 4-mal tägl. 600 mg.“
+10.4.3 Kommunikation mit                                                    Als Charlotte das nächste Mal zu Frau L. geht, fragt diese:
+Bezugspersonen                                                           „Wieso bekomme ich denn 2 Medikamente? Sind die beide ge-
+                                                                         gen Schmerzen? Warum muss ich das eine nüchtern nehmen
+                                                                         und das andere kurz danach zum Frühstück?“ Merle erklärt
+  Beispiel Kommunikation mit Bezugspersonen                              Frau L.: „Schmerzmittel wie das Ibuprofen können die Magen-
+                                                                         schleimhaut angreifen. Pantoprazol ist ein Medikament, das
+  Frau L. hat die OP gut überstanden und bekommt nun Besuch              die Magenschleimhaut schützt. Sie nehmen es nüchtern ein,
+  von ihrer Schwester. Die Schwester hütet den kleinen Leon und          um Ihren Magen auf das Schmerzmittel vorzubereiten.“
+  steht ihrer Schwester sehr nahe. Sie selbst hat im Krankenhaus
+  schlechte Erfahrungen gemacht, insbesondere mit dem Pflege-
+                                                                       Das Beispiel spiegelt wider, dass Pflegefachkräfte die Infor-
+  personal. Pflegefachkraft Charlotte teilt Medikamente aus und
+                                                                       mationen des Arztes wiederholen, einordnen und „überset-
+  bringt die tägliche Heparinspritze für Frau L. mit. Deren
+                                                                       zen“ müssen. Wenn Patienten etwas nicht verstanden haben
+  Schwester spricht Charlotte an: „Ist denn diese Spritze für mei-
+                                                                       oder unsicher sind, sind die Pflegefachkräfte meist der erste
+  ne Schwester wirklich nötig? Sind Sie befugt, Medikamente zu
+                                                                       Ansprechpartner. Fachwissen und kommunikative Fähigkei-
+  verteilen? Schließlich hört man ja viel von Aushilfskräften in der
+                                                                       ten ermöglichen einer Pflegefachkraft, dieser Aufgabe nach-
+  Pflege.“
+                                                                       zukommen und den nötigen Informationsfluss für den Pa-
+     Charlotte bleibt ruhig und stellt sich mit Namen und Profes-
+                                                                       tienten zu gewährleisten.
+  sion vor (Namensschild). Sie antwortet: „Sie dürfen beruhigt
+                                                                       ● Kommunikationsziel:
+  sein. Dr. B. hat die Therapie mit Ihrer Schwester genau bespro-
+                                                                         – verantwortungsbewusste fachlich orientierte Informati-
+  chen. Die Heparinspritze ist notwendig, damit sie keine Throm-
+                                                                           onswiedergabe
+  bose bekommt. Frau L., darf ich Ihnen die Spritze in einer hal-
+                                                                         – Klarheit im Therapieverlauf
+  ben Stunde geben?“
+                                                                         – Pflegende fungieren als „Brücke“ zwischen Arzt und Pa-
+                                                                           tient
 
-In solchen Fällen kann der Pflegedienst versuchen, durch
-Gespräche und Beratungsangebote die Situation zu verbessern. Auch der Hausarzt kann hinzugezogen werden. Allgemein können Pflegende argumentieren und Lösungen anbieten, müssen aber damit rechnen, dass ihre Bemühungen
-erfolglos bleiben.
-Gewalt • Wenn Pflegende regelmäßig Hämatome oder sogar
-Frakturen bei einem Klienten bemerken, sollten sie Rücksprache mit der PDL des mobilen Dienstes halten und die
-Dokumentation sichten. Erhärtet sich der Verdacht auf Gewalt oder Missbrauch, gleich welcher Art, sollte der mobile
-Dienst das Gespräch mit den Angehörigen suchen, evtl. mit
-Unterstützung des Hausarztes. Bessert sich die Situation
-nicht schnell, kann der Dienst die Polizei einschalten.
-Üble Gerüche • Chronische Wunden oder exulzerierende Tumoren riechen oft sehr stark. Dies kann die Betroﬀenen und
-die Bezugspersonen belasten und zu sozialer Isolation führen. Der Besuch von Freunden oder Nachbarn wird in diesen
-Fällen meist seltener. Um diese Art Wunden sollte sich ein
-Wundexperte kümmern. Er kann mit speziellen, verschließenden Verbänden versuchen, die Belastung so gering wie
-möglich zu halten. Pflegende sollten nach Rücksprache regelmäßig das Fenster öﬀnen. Sie können auch Duftsäckchen
-oder Raumdüfte nutzen. Chemische Raumsprays sollten sie
-allerdings meiden.
 
-© leszekglasner/stock.adobe.com - Stock photo - posed by a model
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-751
-
-35
-
-Pflege von Menschen in
-stationären
-Langzeiteinrichtungen
-
-35.1 Kompetent pflegen
-Anders als in der ambulanten Versorgung, im Krankenhaus
-oder in teilstationären Einrichtungen ist für die meisten
-Pflegeempfänger die stationäre Langzeitpflegeeinrichtung
-das letzte Zuhause. Der Umzug dorthin findet oft aufgrund
-fortschreitender Pflegebedürftigkeit statt, häufig auch in
-Verbindung mit einer demenziellen Erkrankung. Die Betroffenen werden in der Einrichtung meist bis zu ihrem Tod versorgt. Als Pflegefachkraft ist es wichtig, sich dieser Besonderheit bewusst zu sein, um den pflegebedürftigen Menschen bestmöglich pflegerisch unterstützen und begleiten
-zu können.
-In diesem Kapitel lernen Sie u. a.,
-● die Grundlagen des Heimgesetzes und der Pflegeversicherung kennen.
-● die Rahmen- und Organisationsstrukturen einer stationären Langzeitpflegeeinrichtung kennen.
-● wie Sie den Pflegeempfänger beim Einzug in eine neue
-Wohnumgebung bestmöglich unterstützen können und
-worauf Sie besonders achten müssen.
-● warum die Gestaltung einer ansprechenden, persönlichen
-Umgebung so wichtig ist.
-● wie Bezugs- und Bereichspflege in Langzeiteinrichtungen
-arbeiten.
-● wie Sie die Bewohner über die Auswahl geeigneter Konzepte und Modelle bestmöglich in ihrem Erleben und
-Wahrnehmen unterstützen und fördern können.
-
-752
-
-35.2 Rahmenbedingungen und
-Organisation in stationären
-Langzeiteinrichtungen
-In Deutschland sind etwa 3,4 Millionen Menschen pflegebedürftig. Der überwiegende Teil der Pflegebedürftigen (ca.
-76 %) wird im häuslichen Umfeld versorgt. Rund 818 000
-Pflegebedürftige leben in stationären Langzeiteinrichtungen. Die meisten Einrichtungen (94 %) versorgen dabei überwiegend Menschen im höheren Lebensalter (Statistisches
-Bundesamt 2018), dennoch ist zu berücksichtigen, dass auch
-jüngere Menschen – z. B. aufgrund chronischer Erkrankungen, Behinderungen oder anderer Beeinträchtigungen – in
-stationären Langzeiteinrichtungen leben. Für den Betrieb
-einer stationären Langzeiteinrichtung sind verschiedene gesetzliche Bestimmungen zu beachten. Die wichtigsten Regelungen des Heimgesetzes sowie der Pflegeversicherung werden nachfolgend vorgestellt.
-
-35.2.1 Gesetzliche
-Rahmenbedingungen
-Heimgesetz
-Das Bundes-Heimgesetz (HeimG) dient u. a. dem Schutz der
-Heimbewohner sowie der Förderung der Selbstständigkeit,
-Selbstbestimmung und Selbstverantwortung der Pflegeempfänger (§ 2 Abs. 1 und 2 HeimG). Das Bundes-Heimgesetz wurde zwischenzeitlich zwar von den landesrechtlichen Regelungen der einzelnen Bundesländer abgelöst,
-dennoch sind die Zielsetzungen und Inhalte in wesentlichen
-Bereichen identisch (daher wird auf eine Auflistung der ein-
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Kompetent pflegen
-
-▶ S. 752
-
-Gesetzliche Rahmenbedingungen ▶ S. 752
-Rahmenbedingungen und Organisation
-in stationären Langzeiteinrichtungen
-
-Rahmenkonzepte
-
-▶ S. 753
-
-Organisationsstrukturen ▶ S. 754
-
-Das Kapitel vermittelt
-Kompetenzen im
-KB I (v.a. I.3, I.5, I.6),
-KB II.3 und IV.2
-
-Wohnen und Alltag in einer
-stationären Langzeiteinrichtung
-
-zelnen Landesgesetze verzichtet). Zentrale Aspekte der
-Heimgesetze sind:
-● Heimverträge: Pflegeheimbetreiber und Pflegeempfänger
-schließen einen schriftlichen Heimvertrag, der die Rechte
-und Pflichten der beiden Vertragsparteien regelt. Wichtige
-Inhalte des Heimvertrags sind z. B. die Leistungen des
-Heimbetreibers und das vom Pflegeempfänger zu entrichtende Heimentgelt.
-● Heimbeirat: Der Heimbeirat wird von den Pflegeempfängern gewählt und stellt deren Mitwirkung sicher. Mitglieder des Heimbeirates können Pflegeempfänger, deren Angehörige bzw. Bezugspersonen oder andere Vertrauenspersonen sein. Der Heimbeirat dient u. a. als Ansprechpartner für Anregungen und Beschwerden von Pflegeempfängern, er kann Maßnahmen beim Heimbetreiber beantragen und die Teilhabe der Pflegeempfänger im Heim fördern (z. B. durch Anregungen zur Alltags- und Freizeitgestaltung oder durch die Planung und Durchführung von
-Veranstaltungen).
-● Heimaufsicht: Die Einhaltung der Bestimmungen aus dem
-Heimgesetz wird durch die Heimaufsichtsbehörden der
-Bundesländer geprüft. Dabei prüfen die Aufsichtsbehörden regelmäßig mind. 1-mal jährlich (sog. Regelprüfung).
-Diese Prüfungen erfolgen generell ohne vorherige Anmeldung. Zusätzlich sind anlassbezogene Prüfungen möglich,
-z. B. bei Beschwerden.
-
-Einzug und Eingewöhnung ▶ S. 755
-Psychosoziale Begleitung und
-Beziehungsgestaltung
-
-▶ S. 756
-
-rung“ konzipiert ist, d. h., sie gewährt, in Abhängigkeit vom
-Grad der Pflegebedürftigkeit, einen Zuschuss zu den entstehenden Kosten:
-● Pflegegrad 1 = 0 Euro
-● Pflegegrad 2 = 770 Euro
-● Pflegegrad 3 = 1262 Euro
-● Pflegegrad 4 = 1775 Euro
-● Pflegegrad 5 = 2005 Euro
-Darüber hinaus entstehende Kosten (im Bundesdurchschnitt
-sind das über 1800 Euro monatlich) sind von den Pflegeempfängern selbst zu entrichten. Sind keine eigenen Mittel vorhanden, kann ein Anspruch auf Sozialhilfe (Hilfe zur
-Pflege) geltend gemacht werden. In bestimmten Fällen können auch unterhaltspflichtige Personen (Eltern, Kinder, Ehepartner) zur Deckung der Kosten herangezogen werden. Im
-Kapitel „Pflege von Menschen im häuslichen Umfeld“ finden
-Sie mehr zum Thema „Pflegegrade“ (S. 744).
-
-35.2.2 Rahmenkonzepte
-Rahmenkonzepte berücksichtigen aktuelle Bedürfnisse,
-Trends und Entwicklungen in speziellen Bereichen und formulieren überprüfbare Zielsetzungen und Qualitätskriterien. Sie bieten Pflegefachkräften somit eine Orientierung
-und unterstützen sie damit bei ihrer praktischen Arbeit.
-
-Pflegeversicherung
-
-Hauswirtschaftliche Versorgung
-
-Die Pflegeversicherung wurde im Jahr 1995 für den ambulanten und im Jahr 1996 für den stationären Bereich eingeführt, um das Risiko der Pflegebedürftigkeit finanziell abzusichern. Für Pflegeempfänger in stationären Langzeiteinrichtungen übernimmt die Pflegeversicherung anteilig Kosten für körperbezogene Pflegemaßnahmen, Behandlungspflege und Betreuungsmaßnahmen. Grundsätzlich ist zu beachten, dass die Pflegeversicherung als „Teilkaskoversiche-
-
-Selbstverständlich steht die pflegerische Versorgung in stationären Langzeiteinrichtungen oft im Mittelpunkt. Dennoch
-hat auch die hauswirtschaftliche Versorgung einen besonderen Stellenwert. Einerseits haben die Bereiche „Essen und
-Trinken“ für viele Menschen eine zentrale Bedeutung und einen engen Bezug zur Lebensqualität. Andererseits macht die
-Vielzahl der beteiligten Schnittstellen es notwendig, ein fundiertes Konzept zu erstellen, das u. a. die Zubereitung und
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-753
-
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen                263
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
 l
-35
+10    Mit Menschen kommunizieren
 
-Pflege in Langzeiteinrichtungen
-Verteilung von Speisen regelt. Die folgenden Fragen geben einen Einblick in die zu berücksichtigenden Bereiche:
-● Kann der Zeitpunkt des Essens flexibel gewählt werden?
-● Kann der Pflegeempfänger selbst bestimmen, wo er seine
-Mahlzeiten zu sich nehmen möchte?
-● Werden die Portionsgrößen an die Vorlieben der Pflegeempfänger angepasst?
-● Gibt es feste Sitzordnungen im Speisesaal oder ist der Sitzplatz immer frei wählbar?
-● Herrscht eine angenehme Atmosphäre im Speiseraum?
-● Können die Pflegeempfänger bei der Zubereitung der
-Mahlzeiten mitwirken?
-Mahlzeiten zubereiten oder Wäsche versorgen gehören oft zu
-den sog. pflegefremden Tätigkeiten, die auch hauswirtschaftliche Mitarbeiter erledigen können. Unter Berücksichtigung des
-Krankheitsbildes und abhängig vom Grad des Unterstützungsbedarfs des Pflegeempfängers können diese Tätigkeiten
-jedoch wichtige Maßnahmen in der Pflegeplanung sein.
 
-dem zum Zuhause dazu und vermittelt eine gewisse Normalität (▶ Abb. 35.1). Für Pflegefachkräfte kann die Dekoration
-ein guter Gesprächseinstieg sein, um mehr über die Biografie der Pflegeempfänger zu erfahren.
+      ● Innere Haltung: Die Zeit der Visite ist für alle Beteiligten       ● Endorphine werden aus der Hypophyse ausgeschüttet.
 
-35.2.3 Organisationsstrukturen
-Klar geregelte Organisationsstrukturen sind erforderlich,
-um die Pflegefachkräfte bei der fach- und sachgerechten
-Ausführung der vielen Tätigkeiten zu unterstützen. Dazu
-müssen Zuständigkeiten und Verantwortlichkeiten, Kommunikation und Informationsweitergabe klar geregelt sein.
-Jede stationäre Langzeiteinrichtung sollte daher über ein Organisationskonzept verfügen, das verbindlich regelt,
-● wer welche Aufgabe
-● zu welchem Zeitpunkt und
-● mit welchen Mitteln
-zu erfüllen hat.
+        von großer Bedeutung. Die Klarheit für die Patienten steht         ● Immunzellen werden vermehrt ausgeschüttet.
 
-Aufbau- und Ablauforganisation
-Beispiel Eine Aufgabe haben
-Die 83-jährige Frau C. kann nach einem Schlaganfall ihre rechte Hand fast gar nicht mehr bewegen. Kontrakturen im rechten
-Ellbogen erschweren ihr zudem viele alltägliche Verrichtungen.
-In der Pflegeplanung legt die zuständige Pflegefachkraft fest,
-dass Frau C. täglich die gewaschenen und getrockneten Handtücher des Wohnbereichs (gemeinsam mit einer Pflegeperson)
-zusammenlegen soll. Das soll die Bewegungsfähigkeit der
-Hand und des Ellbogens erhalten und fördern – was für die
-selbstständige Durchführung der Körperpflege hilfreich ist. Da
-Frau C. eine begeisterte Hausfrau war, macht ihr diese Tätigkeit
-Spaß und sie freut sich, helfen zu können. Die anwesende Pflegefachkraft stellt sicher, dass Frau C. keine Schonhaltung einnimmt und die Finger der rechten Hand sowie den Ellbogen so
-oft und viel wie möglich bewegt.
+        im Vordergrund. Ein hohes Verantwortungsbewusstsein,
+        ein grundsätzliches Vertrauen in der Zusammenarbeit und            Die Wirkung des Lachens geht also weit über den Spaß hi-
+        ein gesundes Selbstwertgefühl fördern einen guten Ge-              naus und hat ganzheitliche, gesundheitsfördernde Wirkung
+        sprächsverlauf.                                                    auf den Menschen.
+      ● Sprachlicher Ausdruck:
 
-Gestaltung der Einrichtung
-Rahmenkonzepte regeln auch die jahreszeitlich passende,
-wohnliche und freundliche Gestaltung, an denen Pflegefachkräfte beteiligt sein sollten. Gerade eine der Jahreszeit entsprechende Gestaltung des Raum- oder Tischschmucks ist
-eine gute Orientierungshilfe für Pflegeempfänger mit kognitiver Einschränkung. Für viele gehört die Dekoration außerAbb. 35.1 Persönliche Einrichtung.
+        – Blickkontakt mit Arzt und Patient aufnehmen (nonver-
+          bal)
+        – Informationen an den Arzt in kurzen und eindeutigen
+                                                                             Beispiel Lachen als Pneumonieprophylaxe
+          Sätzen weitergeben
+                                                                             Die Auszubildende Charlotte versorgt mit dem Pflegefachmann
+        – konkret und eindeutig nachfragen
+                                                                             Alexander die immobile Frau L. Bevor sie mit der Versorgung
+        – auf einen diﬀerenzierten, fachlichen Wortschatz achten
+                                                                             beginnen, begrüßt Alexander Frau L. erst mal mit einem heite-
+          (Patientenbeobachtung)
+                                                                             ren Witz zum Thema Hunde (Frau L., so weiß er aus Gesprä-
+        – Füllwörter vermeiden (eigentlich, vielleicht, mal)
+                                                                             chen, ist eine große Hundefreundin). Frau L. lacht daraufhin
+        – für den Patienten Fachsprache in eine einfache Sprache
+                                                                             herzhaft und antwortet ihrerseits mit einem Witz über Kran-
+          übersetzen
+      ● Kompetenzentwicklung: wesentliche Informationen „auf
+                                                                             kenhäuser.
+                                                                                Nach der Versorgung sagt Pflegefachkraft Alexander: „Jetzt
+        den Punkt bringen“
+                                                                             haben wir Frau L. nicht nur gute Laune bereitet, sondern haben
+                                                                             sie mit dem Lachen auch zur vermehrten Belüftung der Lunge
+      Die Herausforderung liegt darin, in einem engen Zeitkorri-
+                                                                             gebracht – das ist Teil meiner Pneumonieprophylaxe.“ Alexan-
+      dor die Anliegen des Arztes, die Anliegen des Patienten und
+                                                                             der grinst breit. Auszubildende Charlotte ist beeindruckt, wel-
+      die eigenen Ressourcen in Einklang zu bringen. Wichtig sind
+                                                                             chen Unterschied eine kleine Alltäglichkeit wie das Lachen für
+      die fachliche Orientierung und die Diskretion im Beisein
+                                                                             die Gesundheit eines Menschen machen kann. Sie nimmt sich
+      Dritter – beide Merkmale von kommunikativer Fachkom-
+                                                                             vor, bei der nächsten Gelegenheit gemeinsam mit einem Pfle-
+      petenz im medizinisch-pflegerischen Kontext.
+                                                                             geempfänger ein Lied zu singen – auch das, so hat sie gelernt,
+                                                                             kann einer Lungenentzündung vorbeugen.
+      10.4.5 Humor in der Pflege
+      Definition Humor                                                     Psychosoziale Auswirkungen des Lachens
+      Die Fähigkeit eines Menschen, negativen Dingen, Unzulänglichkeiten   Lachen ist sehr tief im menschlichen Verhalten verankert.
+      oder Missgeschicken mit heiterer Gelassenheit zu begegnen und        Schon nach 4 Monaten entwickelt sich bei Neugeborenen
+      über sich und andere lachen zu können.                               das soziale Lächeln (oder auch Widerlächeln; Fähigkeit eines
+                                                                           Säuglings, auf Gesichter mit einem Lächeln zu reagieren).
+      Humor ist dabei nicht nur für erkrankte Menschen wichtig.              Ein heiterer, lachender Mensch begegnet seiner Umwelt
+      Auch für Pflegende kann Humor in der Bewältigung schwie-             anders als ein pessimistischer Mensch. Humor, Lachen und
+      riger Situationen hilfreich sein. In der Burnoutprävention           eine optimistische Grundhaltung haben positive Auswir-
+      gilt Humor als geeignetes Mittel, um Stress abzubauen.               kungen.
+         Bei der Patientenbeobachtung (S. 321) sollte darauf geach-
+      tet werden, ob und wie der Pflegeempfänger Humor ge-                 Psychologische Auswirkungen • Diese können sein:
+      braucht. Wird ein Witz genutzt, um eine schwierige Situa-            ● Steigerung des Wohlbefindens
+      tion zu bewältigen? Oder versucht ein vermeintlich humor-            ● Distanzierung von schmerzhaften Geisteszuständen und
+      voller Mensch vielmehr Ängste, Scham oder Ärger zu ver-                Durchbrechen von negativen Gedankenspiralen
+      bergen? Hier sind Sensibilität und Aufmerksamkeit gefragt.           ● Stärkung von Copingstrategien (S. 55) und Resilienz
+      In einem solchen Fall sollte versucht werden, das Gespräch             (S. 257)
+      mit dem Pflegeempfänger zu suchen und die Ursache für                ● Verbesserung des Gedächtnisses
+      vordergründigen Humor zu klären.                                     ● Akzeptanz der Krankheit wird durch humorvollen Um-
 
-Die Aufbauorganisation teilt die Aufgaben der Einrichtung
-in verschiedene Aufgabenbereiche und legt die zuständigen
-Stellen fest. Grafisch lässt sich das Ergebnis dieser Regelungen als Organigramm darstellen (▶ Abb. 6.10). An der Spitze
-kann z. B. die Einrichtungsleitung stehen, unter der sich die
-Pflegedienstleitung, die Leitung des Sozialdienstes, die Küchen- und die Hauswirtschaftsleitung unterordnen. Nach
-der Pflegedienstleitung folgen schließlich die Wohnbereichsleitungen, denen wiederum die Pflegefachkräfte zugeordnet werden. Die Aufbauorganisation beeinflusst maßgeblich die Strukturqualität der Pflegeeinrichtung.
-Die eigentliche Arbeits- und Leistungserbringung wird
-durch die Ablauforganisation beschrieben. Sie füllt somit die
-Aufbauorganisation mit Leben und beeinflusst die Prozessqualität der Einrichtung.
+                                                                             gang damit verbessert
+      Das Lachen
+                                                                           Soziale Auswirkungen • Beinhalten u. a. die
+      Physiologie des Lachens                                              ● Reduktion von zwischenmenschlichen Spannungen,
 
-Beispiel Aufbau- und Ablauforganisation
-In der Aufbauorganisation eines Pflegeheims wird das Organigramm der Einrichtung festgelegt. Durch die Ablauforganisation wird der Heimeinzug eines neuen Bewohners geregelt. Sie
-regelt z. B., dass die Begrüßung und Begleitung auf den Wohnbereich durch die Pflegedienstleitung zu erfolgen haben, die
-Wohnbereichsleitung die Eingewöhnung begleitet und die pflegerische Versorgung in den ersten 2 Wochen die Bezugspflegeperson übernimmt.
+      Vom Gesicht bis zum Bauch sind beim Lachen fast 300 ver-             ● die Stärkung des Gemeinschaftsgefühls und
 
-Pflegeorganisation: Funktions-, Bereichsund Bezugspflege
-Ganz allgemein lassen sich ganzheitliche und funktionale
-Pflegesysteme unterscheiden:
-● Ganzheitliche Systeme: Pflegefachkräfte sind für viele
-pflegerische, hauswirtschaftliche, therapeutische und organisatorische Tätigkeiten bei einer kleineren Gruppe von
-Pflegeempfängern zuständig.
-● Funktionale Systeme: Sie sind dadurch gekennzeichnet,
-dass Pflegefachkräfte bei einer größeren Zahl von Pflegeempfängern für immer die gleichen Arbeitsschritte zuständig sind.
+      schiedene Muskeln beteiligt. Bei einem richtigen Lachanfall          ● die Enttabuisierung von peinlichen Situationen.
 
-Foto: K. Oborny, Thieme
+      pressen die Bauchmuskeln die Luft mit einer Geschwindig-
+      keit von 100 Stundenkilometern hinaus. Die Atmung geht
+      um ein Vielfaches schneller und die Lunge nimmt rund drei-
+                                                                           Humor im Pflegealltag
+      bis viermal so viel Sauerstoﬀ auf wie gewöhnlich.                    Es gibt einige grundsätzliche Punkte, die im Umgang mit
+      ● Blutdruck und Puls werden gesenkt und normalisiert, da             Humor im Pflegealltag berücksichtigt werden sollten
+        Adrenalin abgebaut wird.                                           (▶ Tab. 10.1).
+      ● Das Stresshormon Cortisol wird abgebaut.
+      ● Die Verdauungsdrüsen werden angeregt.
+      ● Spannung in Muskulatur wird reduziert.
+      ● Die Durchblutung wird angeregt.
+      ● Die Bewegung des Zwerchfells wird aktiviert und der Sau-
 
-754
+        erstoﬀaustausch wird angeregt.
 
-Da sich funktionale Systeme meist nicht mit einer personenbezogenen und individuellen Pflege und Versorgung verein-
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
+264    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                Kommunikation in der Anwendung
 
-Wohnen und Alltag
-baren lassen, haben sich bei den meisten stationären Langzeiteinrichtungen die Bereichs- und Bezugspflege (S. 160)
-als Formen der ganzheitlichen Pflegesysteme durchgesetzt.
-Bereichspflege • Bei der Bereichspflege werden die Pflegeempfänger in kleine Gruppen von jeweils etwa 10 bis 15
-Personen eingeteilt und die Fachkräfte darauf verteilt. Diese
-Aufteilung erfolgt häufig aufgrund räumlicher bzw. baulicher Gegebenheiten. So werden z. B. alle Bewohner, die auf
-einem Flur leben, zu einer Gruppe zusammengefasst und
-von einer bestimmten Anzahl Mitarbeiter versorgt. Im Sinne
-der ganzheitlichen Pflege übernehmen sie alle direkten und
-indirekten Pflegemaßnahmen. Bei der Bereichspflege können die Fähigkeiten und Fertigkeiten aller zuständigen
-Teammitglieder optimal genutzt werden.
-Bezugspflege • Die Bezugspflege (auch Bezugspersonenpflege genannt) fasst ebenfalls Gruppen von Pflegeempfängern
-zusammen, die jedoch ein immer gleichbleibendes Pflegeteam versorgt. Die Pflegeempfänger werden somit immer
-von derselben Fachkraft versorgt (bei Abwesenheit von
-einer festgelegten Vertretung), wodurch ein einfacherer Beziehungsaufbau möglich ist und die Besonderheiten der
-Pflegeempfänger noch besser berücksichtigt werden können. Die Bezugsperson ist für die Erstellung und Umsetzung
-des Pflegeplans zuständig, weshalb nur Pflegefachkräfte als
-Bezugspflegeperson eingesetzt werden können.
 
-Beispiel Persönliche Gewohnheiten
-Ein Pflegeheim setzt die Bezugspflege bestmöglich um. Festgelegt ist, dass die Grundpflege – abhängig von den Wünschen
-der Pflegeempfänger – den ganzen Tag über stattfinden kann.
-Ebenso ist ganztägig Essen verfügbar (Zeitpunkt von Frühstück,
-Mittag- und Abendessen können die Bewohner selbst entscheiden). Herr B., ein ehemaliger Landwirt, möchte möglichst auch
-in der Langzeitpflegeeinrichtung bereits um 5 Uhr morgens
-aufstehen. Damit er sich bis zum Eintreﬀen des Frühdienstes
-sinnvoll beschäftigen kann, füttert er die Hasen auf dem
-Wohnbereich und kümmert sich um die im Hochbeet angepflanzten Kräuter. Seine Bezugspflegefachkraft kennt die Vorlieben und Abläufe von Herrn B., weshalb sie ihm bereits um
-6 Uhr ein kleines Frühstück bereitstellt (▶ Abb. 35.2). Die Körperpflege führt er erst gegen 11 Uhr durch, wenn alle anderen
-Pflegeempfänger bereits versorgt sind. Herr B. nutzt die Zeit,
-um in der Zeitung zu lesen und nochmal etwas zu dösen –
-ganz so, wie er es von zu Hause gewohnt ist.
+Tab. 10.1 Humor – Grundsätze für die Pflegepraxis                     Abb. 10.13 Humor an der Kleidung
 
-Abb. 35.2 Individualität leben – auch beim Essen.
 
-WISSEN TO GO
-Rahmenbedingungen und Organisation
-● Die wichtigsten gesetzlichen Grundlagen sind das Heim-
+ So geht’s!                       Besser nicht!
 
-gesetz (regelt z. B. Heimvertrag, -beirat und aufsicht)
-und die Pflegeversicherung.
-● Rahmenkonzepte: Formulieren Zielsetzungen und Qualitätskriterien einer Einrichtung.
-● Organisationsstrukturen: Legen fest, wie Pflegefachkräfte ihre Tätigkeiten fach- und sachgerecht ausführen
-können.
-● Aufbauorganisation: Teilt die Aufgaben der Einrichtung
-den verschiedenen Aufgabenbereichen zu und legt die
-zuständigen Stellen fest.
-● Ganzheitliche Systeme: Pflegefachkräfte sind für viele
-pflegerische, hauswirtschaftliche, therapeutische und organisatorische Tätigkeiten bei einer kleineren Gruppe
-von Pflegeempfängern zuständig.
-● Funktionale Systeme: Pflegefachkräfte sind bei einer
-größeren Zahl von Pflegeempfängern für immer die gleichen Arbeitsschritte zuständig.
-● In Langzeiteinrichtungen haben sich die Bereichs- und
-Bezugspflege als Formen der ganzheitlichen Pflegesysteme durchgesetzt.
+ ● zunächst Beziehung zum         ● die falschen Witze machen
 
-35.3 Wohnen und Alltag in
-einer stationären Langzeiteinrichtung
-35.3.1 Einzug und Eingewöhnung
-Der Einzug in eine stationäre Langzeiteinrichtung ist ein bedeutender Einschnitt in die Biografie eines Menschen. Oft
-erfolgt dieser Schritt auch nicht geplant, sondern aufgrund
-einer plötzlichen Erkrankung bzw. der Verschlechterung
-einer bestehenden Erkrankung oder des Todes des Partners,
-der vorher die Pflege übernommen hat. Unabhängig von
-den Gründen ist der Schritt, sein eigenes Zuhause aufzugeben und in eine stationäre Langzeiteinrichtung umzuziehen,
-häufig mit Ängsten und Sorgen – aufseiten der Angehörigen
-bzw. Bezugspersonen vielleicht auch mit einem schlechten
-Gewissen – verbunden.
-Die Aufgabe der Pflegefachkräfte besteht darin, den Einzug und die Eingewöhnung so zu gestalten, dass
-● der Pflegeempfänger sich sicher und angenommen fühlt,
-● eine möglichst vertraute Gestaltung des Zimmers sichergestellt ist,
-● die Angehörigen sich einbezogen fühlen und
-● für die Eingewöhnungszeit ein fester Ansprechpartner zur
-Verfügung steht.
+   Pflegeempfänger aufbauen         (sexistisch, zynisch, diskrimi-
+ ● geeignete Witze wählen, die      nierend, herabwürdigend)
+   auf die Person passen (nicht   ● Witze, um das Aussprechen
 
-Informationsgespräch
-Um den Einzug so positiv wie möglich zu gestalten, sollte
-die Einrichtung bereits im Vorfeld ein Informationsgespräch
-führen, bei dem alle relevanten Fragen geklärt werden können. Der Pflegeempfänger und/oder die Angehörigen bzw.
-Bezugspersonen sollten die Möglichkeit bekommen, die gesamte Einrichtung kennenzulernen und ein Bewohnerzimmer zu besichtigen. Die Einrichtung sollte hinweisen auf
-Foto: K. Oborny, Thieme
+   jeder Spruch passt bei jedem     unangenehmer Tatsachen zu
+   Menschen)                        vermeiden
+ ● situationsgerechter Humor      ● das Leid humorvoller Men-
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
+   (nicht jeder Spruch geht in      schen weniger ernst nehmen
+   jeder Situation)               ● weiterhin Humor anwenden,
+ ● Humor zulassen, bestärken        wo er kein Gehör findet und
+   und nicht ignorieren             nicht gut ankommt
+ ● mit dem Menschen lachen        ● über den Menschen lachen
 
-755
 
-l
-35
 
-Pflege in Langzeiteinrichtungen
-● die Möglichkeit, eigene Möbel und Dekorationsgegenstän-
+                                                                      Abb. 10.13 Ein Schuh, der bestimmt immer wieder Ausgangs-
+                                                                      punkt für ein heiteres Gespräch bietet. Foto: K. Oborny, Thieme
+Selbst Humor schaﬀen
+Man muss als Pflegefachkraft nicht immer gleich die
+Clownsnase in der Kasaktasche tragen und dennoch kann
+man für Aufheiterung im Alltag der Pflegeempfänger sor-               ● Untertreibung: „Wir bräuchten da noch einen      Fingerhut
+gen.                                                                    Urin von ihnen“ und einen Sammelurinbehälter auf den
+                                                                        Tisch stellen.
+Kleine Details an der Kleidung • Auch wenn es für Pflegefach-         ● Doppelspiel: Einen Überraschungseﬀekt erzeugen. „Er hat-
 
-de mitzubringen,
-● die Betreuungs- und Beschäftigungsangebote,
-● die hauswirtschaftliche Versorgung und
-● das Pflegekonzept.
-Zum Abschluss des Vorgesprächs können alle notwendigen
-Unterlagen (Anamnesebögen, ärztlicher Fragebogen, Essenswünsche, Biografieerhebung und weitere) mitgegeben werden.
+kräfte enge Regelungen zur Arbeitskleidung (S. 60) gelten,              te sich fest vorgenommen zu überleben, selbst wenn ihn
+können z. B. bunte Socken oder Schuhe (▶ Abb. 10.13) mit                das das Leben kosten sollte.“
+Motiven zur Unterhaltung der Menschen führen – und dies               ● Necken: Diese Methode sollte nur dann angewendet wer-
 
-Einzug
-Ist ein Einzugstermin vereinbart, muss die zuständige Pflegefachperson u. a. eine Bewohnerakte anlegen, notwendige
-Medikamente und Hilfsmittel bestellen und alle zuständigen
-Pflegefachkräfte sowie die Küche und die Hauswirtschaftsleitung über den Einzug informieren. Am Einzugstag selbst
-sollte das Bewohnerzimmer sauber und ordentlich zum Bezug bereitstehen. Die Wohnbereichsleitung sowie die zuständige Pflegefachkraft sollten als Ansprechpartner verfügbar sein und den Pflegeempfänger sowie seine Angehörigen
-begleiten und mit den Gegebenheiten auf dem Wohnbereich
-vertraut machen.
-Bereits kurz nach dem Einzug (i. d. R. innerhalb der ersten
-24 h nach Einzug) sind weitere administrative Tätigkeiten
-erforderlich. Mit dem Pflegeempfänger wird ein sog. Erstgespräch geführt, um
-● die Pflegeanamnese zu erstellen,
-● bestehende und potenzielle Risiken zu erheben und
-● die Pflegeprozessplanung zu beginnen.
-Dieses Gespräch muss, abhängig von den zugrunde liegenden Erkrankungen, ggf. auf mehrere Termine aufgeteilt werden, um den Pflegeempfänger nicht zu überfordern.
-Gerade innerhalb der ersten 2 Wochen sollte der Pflegeempfänger noch etwas intensiver begleitet und mit den
-Gegebenheiten in der Einrichtung bekannt gemacht werden.
-Hierzu gehören auch Informationen zum Beschäftigungsangebot, zu Veranstaltungen, aber auch zum Beschwerdemanagement.
-In einem abschließenden Gespräch lassen sich noch oﬀene Fragen oder Probleme klären. Außerdem sollte spätestens
-dann die Pflegeprozessplanung besprochen und mit den
-Wünschen und Bedürfnissen des Pflegeempfängers abgeglichen werden.
+gilt nicht nur für die Kinderkrankenpflege. Kleine, individu-           den, wenn es sicher ist, dass sie beim Publikum ankommt:
+elle Details der Kleidung können immer wieder auch zum                  „Dann waschen wir mal die alte Haut.“
+Gesprächsthema zwischen Pflegeempfänger und Pflegefach-               ● Selbstironie: Eigene „Schnitzer“ kommentieren. „Hatten
 
-! Merke Persönliches Gespräch
+kraft werden.                                                           Sie auch schon mal das Gefühl, im falschen Beruf zu sein?“
+                                                                      ● Komische Aufzählung: Einen lustigen Punkt in eine seriöse
 
-Der Einzug in stationäre Langzeiteinrichtungen erfolgt oft sehr
-plötzlich, z. B. aufgrund eines Sturzes oder eines Schlaganfalls, die
-einen Verbleib in der eigenen Häuslichkeit unmöglich machen. Die
-Pflegefachkräfte sind dann gefordert, ohne längere Vorlaufzeiten die
-Pflege und Betreuung des Pflegeempfängers zu planen und durchzuführen. Beginnen Sie in diesem Fall mit den wichtigsten Informationen (ärztliche und pflegerische Anamnese) und nutzen Sie die folgenden Tage, um in persönlichen Gesprächen mehr über den Pflegeempfänger zu erfahren.
+Sprache, Wortwitz und Humor • Hier eine beispielhafte Aus-              Aufzählung platzieren.
+wahl, wie lustige Sprüche in den Pflegealltag integriert wer-         ● Sichtbare Komik: Unterstreichen der Gags durch Gesten
 
-Alltagsbegleitung
-Das Leben in einer stationären Langzeiteinrichtung unterscheidet sich für die meisten Pflegeempfänger sehr stark
-von ihrem Leben im bisherigen Zuhause. Während dieses
-vielleicht geprägt war von Hausarbeit, Kontakt zu Nachbarn
-und Freunden oder Reisen, ist der Alltag in der stationären
-Langzeiteinrichtung häufig verbunden mit dem Verlust von
+den können.                                                             und Körpersprache.
+● Anekdoten: Lustige Geschichten, die man selbst erlebt hat,
 
-756
+  erzählen, unterstützende Mimik und Gestik einsetzen                 Humorvolles Vorbild sein • Auszubildende bringen auto-
+  oder die Pflegeempfänger nach eigenen Witzen und Anek-              matisch neue Impulse in das System „Station“. Diese Chance
+  doten fragen.                                                       kann auch genutzt werden, um Heiterkeit, Freude und Hu-
+● Übertreibungen: „Meine Lehrerin in der Ausbildung war               mor mit in die Gruppe und zu den Pflegeempfängern zu
+  so alt, die Geschichte der Krankenpflege konnte sie kom-            transportieren. Damit wird eine Umgebung geschaﬀen, die
+  plett aus eigenen Erfahrungen unterrichten.“                        zu einem positiven (Arbeits-)Klima für alle beiträgt.
 
-Aufgaben und Verantwortung. Nicht selten äußern Pflegeempfänger dann auch, dass sie niemand mehr brauche
-und dass sie zu nichts mehr nutze seien. In der Alltagsbegleitung ist es daher sehr bedeutsam, den Pflegeempfängern sinnstiftende Tätigkeiten zu ermöglichen. Gleichzeitig
-geben diese Tätigkeiten dem Tag eine Struktur und steigern
-das Wohlbefinden.
-Die Tagesgestaltung soll sich immer an den Wünschen
-und Bedürfnissen sowie den Ressourcen des Pflegeempfängers orientieren und so individuell wie möglich sein. Bestimmte feststehende Tätigkeiten, wie Körperpflege und
-Mahlzeiten, bieten einen 1. Rahmen, der die weitere Tagesstruktur beeinflusst.
-So beginnt der Tag für die meisten Pflegeempfänger mit
-dem Frühstück oder der morgendlichen Körperpflege – Uhrzeit und Reihenfolge bestimmt der Pflegeempfänger und
-nicht der Arbeitsablauf. Am Vormittag werden oft hauswirtschaftliche Tätigkeiten, Spaziergänge oder auch Zeitungsrunden (Vorlesen aus der Tageszeitung) angeboten. Die genauen Tätigkeiten sollten sich immer nach der Biografie und
-den Interessen des Pflegeempfängers richten und nicht allgemeingültig für alle Pflegeempfänger festgelegt sein.
-Am Nachmittag stehen meist weitere Beschäftigungsangebote zur Auswahl. Vom gemeinsamen Musizieren und Singen über Gesprächsrunden bis zu Aktivierungs- und Bewegungsangeboten sollte der Pflegeempfänger eine abwechslungsreiche Auswahl an Aktivitäten haben. Selbstverständlich ist es auch zu akzeptieren, wenn sich Pflegeempfänger
-nicht an den Gemeinschaftsangeboten beteiligen möchten.
-Zu klären ist dann, welche Einzelbeschäftigung möglich ist
-und wie der Pflegeempfänger bei der Alltagsgestaltung unterstützt werden kann.
 
-Tod und Verabschiedung
-Der Tod gehört zum Leben und dennoch ist er auch in unserer Gesellschaft immer noch ein Tabuthema. Pflegefachkräfte in stationären Langzeiteinrichtungen sind aber relativ
-häufig mit diesem Thema konfrontiert. Zudem ist die Verweildauer deutlich länger als im Krankenhaus oder teilstationären Einrichtungen, wodurch oftmals eine intensivere
-Beziehung zwischen Pflegefachkräften und Pflegeempfängern entsteht. Für die Pflegefachkräfte selbst, aber auch für
-die anderen Pflegeempfänger, ist daher eine Abschiedskultur wichtig, die es ermöglicht, des Verstorbenen zu gedenken, sich aber auch mit der eigenen Vergänglichkeit zu beschäftigen, siehe auch Kap. „Trauer- und Abschiedsrituale“
-(S. 839).
-In stationären Langzeiteinrichtungen finden sich häufig
-Trauerecken, die für alle frei zugänglich sind. Hier finden
-sich Fotos von Verstorbenen, Blumen, Gedenkbücher und
-oftmals auch religiöse Symbole. Die anderen Pflegeempfänger des Wohnbereichs können sich so ebenfalls von teilweise langjährigen Mitbewohnern verabschieden. Vielen Pflegeempfängern verdeutlicht der Tod eines Mitbewohners die
-eigene Endlichkeit, woraus ein größerer Gesprächsbedarf resultieren kann. Pflegefachkräfte sollten daher für Gespräche
-zur Verfügung stehen und die Ängste und Gedanken der anderen Pflegeempfänger ernst nehmen.
 
-35.3.2 Psychosoziale Begleitung
-und Beziehungsgestaltung
-Aufgrund der längeren Verweildauer sind psychosoziale Begleitung und Beziehungsgestaltung in stationären Langzeiteinrichtungen sehr bedeutsam. In der Folge werden einige
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen         265
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+11                                           Mit Menschen
+                                             zusammenarbeiten
 
-
+
+
+
+                                                                          11.2 Individuen und Einfluss-
+                                                                          faktoren auf ihr Miteinander
+      11.1 Kompetent pflegen                                              So wie jeder Mensch individuelle körperliche Merkmale hat,
+                                                                          so hat er auch individuelle Persönlichkeitsmerkmale, Eigen-
+      In der Pflege arbeiten heißt, mit vielen verschiedenen Men-
+                                                                          schaften, Motive, Ziele, Bedürfnisse und Werte, die sein Ver-
+      schen in Kontakt zu kommen. An ihrem Arbeitsplatz treﬀen
+                                                                          halten beeinflussen. Individualität ergibt sich aus angebore-
+      Pflegefachkräfte auf Männer und Frauen, auf Junge und Alte,
+                                                                          nen Persönlichkeitsmerkmalen, aber auch aus der sog. So-
+      auf Kranke und Gesunde, auf Pflegeempfänger, Kollegen,
+                                                                          zialisation heraus, d. h. daraus, wie ein Mensch aufgewach-
+      Ärzte, Angehörige und Auszubildende – jeder ist individuell
+                                                                          sen ist, wie er in seiner Kindheit und Jugend geprägt wurde,
+      verschieden. Mit anderen Worten: In einem Krankenhaus
+                                                                          wie und was er gelernt hat.
+      oder jeder anderen Pflegeeinrichtung tummeln sich die un-
+                                                                             Im Arbeitsalltag kommen Individuen zusammen, die sich
+      terschiedlichsten Persönlichkeiten.
+                                                                          dieses spezielle Zusammenfinden primär nicht ausgesucht
+         In diesem Kapitel lernen Sie u. a.,
+      ● dass soziale Rollen und die damit verbundenen Erwartun-
+                                                                          haben. Das ist anders als im Privatleben. Meinen Partner
+                                                                          und meine Freunde suche ich mir in aller Regel selbst aus.
+        gen Einfluss auf Ihre tägliche Arbeit haben.
+      ● wie soziale Gruppen funktionieren und wie aus ihnen ech-
+                                                                          Ich entscheide, ob sie zu mir passen und ob ich mit ihnen
+                                                                          zusammensein möchte oder nicht. Im Arbeitsleben ist das
+        te Teams werden.
+      ● wie Konflikte in Teams entstehen und wie sie gelöst wer-
+                                                                          anders. Hier treﬀen wir mit Menschen zusammen, die wir
+                                                                          uns oft nicht aussuchen können. Dieses Aufeinandertreﬀen
+        den können.
+      ● dass Sie als Pflegefachkraft geführt werden, aber auch
+                                                                          kann bereichernd und spannend sein, da es neue Sichtwei-
+                                                                          sen eröﬀnet. Meist ist es auch genau das, was das Zusam-
+        selbst führen.
+      ● wie Sie eine professionelle Beziehung zum Pflegeempfän-
+                                                                          menarbeiten mit und für Menschen so interessant macht.
+                                                                          Doch gute Zusammenarbeit passiert nicht einfach. Die Zu-
+        ger aufbauen, die dem Erfolg des Pflegeprozesses dient.
+      ● inwieweit die Unternehmenskultur den Umgang in Ge-
+                                                                          sammenarbeit wird durch zahlreiche Faktoren beeinflusst,
+                                                                          die förderlich, aber auch hinderlich sein können. Faktoren,
+        sundheitseinrichtungen prägt.
+      ● was Mobbing ist, wie Betroﬀene sich verhalten sollten und
+                                                                          die das Miteinander am Arbeitsplatz beeinflussen, sind z. B.:
+                                                                          ● individuelle Faktoren: Persönlichkeitsmerkmale und ande-
+        wie verhindert werden kann, dass es überhaupt zu Mob-
+                                                                            re Eigenschaften, Bedürfnisse, innere Haltung der Einzel-
+        bing kommt.
+                                                                            nen
+                                                                          ● gesellschaftliche Faktoren: Gesetze, Normen, Werte, Kon-
+
+                                                                            ventionen, Arbeitsplatzrichtlinien, Dienstanweisungen,
+                                                                            Leitbilder und vieles mehr
+
+
+
+266    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                       Kompetent pflegen       ▶ S. 266
+
+
+
+                                                                 Individuen und Einflussfaktoren
+                                                                                                         Soziale Rollen     ▶ S. 267
+                                                                 auf ihr Miteinander
+
+
+
+                                                                                                  Soziale Gruppen ▶ S. 269
+                                                                                                  Formelle und informelle Gruppen ▶ S. 269
+                                                              Soziale Gruppen und Teams           Gruppenphänomene ▶ S. 269
+                                                                                                  Von der Gruppe zum Team ▶ S. 270
+                                                                                                  Konflikte und Krisen im Team ▶ S. 272
+                                                                                                  Interdisziplinäre Zusammenarbeit        ▶ S. 273
+                                                                                                  Autorität und Führung ▶ S. 274
+
+
+
+
+                                                                                                Pflegebeziehung und Pflegeprozess        ▶ S. 275
+                                                          Aufbau einer Pflegebeziehung
+Das Kapitel vermittelt                                                                          Professionelle Beziehungsgestaltung      ▶ S. 276
+v.a. Kompetenzen im
+KB II.1, III.1 und III.3
+                                                                                          Grundlagen ▶ S. 277
+                                                        Unternehmenskultur                Umgangskultur unter Pflegenden      ▶ S. 277
+                                                        im Gesundheitswesen
+                                                                                          Mobbing im Pflegeberuf und
+                                                                                                                          ▶ S. 278
+                                                                                          Interventionsmöglichkeiten
+
+
+
+
+     ● räumliche  und zeitliche Faktoren: Art der Pausenräume,            Abb. 11.1 Orientierungshilfen.
+       Arbeitsdichte, Pausenzeiten
+     ● strukturelle Faktoren: Zahl der Mitarbeiter, Verfügbarkeit
+
+       von Material, Arbeitszeiten
+
+
+     11.2.1 Soziale Rollen
+
+       Beispiel Soziale Rollen
+       Frau L. soll operiert und zu diesem Zweck stationär aufgenom-
+       men werden. Pflegefachmann Alexander S. begrüßt sie und
+       führt das Aufnahmegespräch. Frau L. äußert Ängste vor
+       Schmerzen nach der OP. Im Anschluss an das Gespräch erklärt
+       Alexander Frau L. den Stationsalltag.
+          Der Pflegefachmann setzt voraus, dass sich Frau L. an die
+                                                                          Uniformen und Dienstkleidung dienen als Orientierungshilfen.
+       üblichen Abläufe halten wird. Frau L. wiederum geht von einem
+                                                                          Wenn wir eine Rolle erkennen können, wissen wir, an wen wir
+       einfühlsamen Umgang mit dem Thema Schmerz aus.
+                                                                          uns z. B. mit unseren Fragen in einer bestimmten Angelegenheit
+                                                                          wenden können. Foto: K. Oborny, Thieme
+     Das Beispiel zeigt, wie in einem Krankenhaus 2 Menschen,
+     die einander nie zuvor gesehen haben, in Kontakt miteinan-
+                                                                          Explizite und implizite Erwartungen • Der Begriﬀ „Rolle“ be-
+     der treten. Sowohl die Pflegeempfängerin als auch der Pfle-
+                                                                          zeichnet die expliziten (ausdrücklichen) und impliziten
+     ger haben dabei von vornherein bestimmte Erwartungen an
+                                                                          (nicht ausdrücklich gesagten) Erwartungen, die an die Mit-
+     den jeweils anderen. Diese Erwartungen ergeben sich aus
+                                                                          glieder einer bestimmten Gruppe gestellt werden. Gruppen-
+     der Zugehörigkeit der Personen zu verschiedenen Gruppen
+                                                                          normen bieten ihren Angehörigen Orientierung und Identi-
+     und aus den Normen, die für diese Gruppen gelten. So geht
+                                                                          tät. Gleichzeitig wird von jedem Mitglied ein bestimmtes
+     z. B. die Pflegeempfängerin davon aus, dass der Pflegefach-

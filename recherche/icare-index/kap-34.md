@@ -1,925 +1,607 @@
-# Kapitel 34: Pflege von Menschen im haeuslichen Umfeld
+# Teil 34
 
-> Quelle: I Care Pflege (Thieme, 2020), S. 742-751
+> Quelle: Icare Pflege
 > Automatisch extrahiert — Formatierung kann abweichen
 
 ---
 
-Alte Menschen im Krankenhaus
-Abb. 33.3 Herantasten an die Untersuchung.
+                                                                       Die Kommunikation zwischen Menschen findet nach
+Paul Watzlawick                                                        Watzlawick auf zwei verschiedenen Ebenen statt – der di-
+Der Kommunikationswissenschaftler Paul Watzlawick                      gitalen und der analogen Ebene. Die digitale Ebene be-
+(1921–2007) hat in seiner Theorie 5 Grundsätze (Axiome)                dient sich der Sachinformation. Worte wie „Bett“ oder
+zur zwischenmenschlichen Kommunikation zusammenge-                     „Medikament“ transportieren das Thema, die sachliche
+fasst. Das Modell zeigt, wie eng Kommunikation mit Bezie-              Information. Die digitale Ausdruckform transportiert Ein-
+hung und Emotion zusammenhängen. Missverständnisse,                    deutigkeit und Logik. Die analoge Ebene drückt sich über
+Kommunikationsstörungen und Konflikte haben hier häufig                Gestik, Mimik und Tonfall aus. Sie liefert Hinweise zur Be-
+ihre Ursache. Die 5 beschriebenen Axiome sind:                         ziehungsebene.
+1. Man kann nicht nicht kommunizieren.                              5. Zwischenmenschliches zeigt sich entweder symmetrisch
+   Dieser Satz kommt Ihnen sicherlich bekannt vor. Axiom               oder komplementär
+   Nr. 1 besagt, dass Menschen, die mindestens zu zweit in             Kommunizieren Menschen miteinander gleichrangig
+   einem Raum sind, keineswegs nur mit Worten kommuni-                 (symmetrisch) oder nicht gleichrangig (komplementär)?
+   zieren, sondern auch paraverbale Signale, wie Sprech-               In hierarchischen Strukturen überwiegt eine komplemen-
+   geschwindigkeit, Tonfall, Satzpausen oder Satzbrüche von            täre, in Teams überwiegt eine eher symmetrische Kom-
+   Bedeutung sind. Die Körperhaltung, der Atemrhythmus,                munikation. Hier sind die Kolleginnen eher imstande, den
+   ein Seufzen, jedes Verhalten ist bereits Ausdruck und so-           anderen so zu akzeptieren, wie er ist. Dies führt zu gegen-
+   mit Kommunikation. Simpel ausgedrückt, kann ein                     seitigem Respekt und Vertrauen in den Respekt des ande-
+   Mensch sich nicht nicht verhalten. Ob Sie schweigen oder            ren. In komplementärer Kommunikation sind der aktive
+   sprechen, beides trägt einen Mitteilungscharakter in sich.          und passive Redeanteil der Beteiligten durch die Hierar-
+   Beispiel: Eine Auszubildende sitzt mit einer Pflegefach-            chie und den jeweiligen Status beeinflusst.
+   kraft in der Pause. Die Pflegefachkraft schweigt oder ant-          Beispiel: Während der Übergabe möchte der Auszubilden-
+   wortet einsilbig. Die Auszubildende hat mindestens zwei             de gerne einige Punkte zu den Pflegeempfängern ergän-
+   denkbare Interpretationsmöglichkeiten. Sie kann anneh-              zen, die er versorgt hat. Der zuständige Pflegefachmann
+   men, dass die Kollegin müde ist und deshalb nicht spre-             unterbricht seine Anmerkungen immer wieder und ver-
+   chen möchte. Sie kann aber auch das Gefühl haben, dass              sucht sie als unerheblich darzustellen (komplementäre
+   die Kollegin sie nicht mag und sie deshalb nicht auf sie            Kommunikation). Unterhalten sich dieselben Beteiligten
+   eingeht. Egal wie die Interpretation ausfällt, das Beispiel         in der Pause über die Fußballergebnisse vom Wochen-
+   veranschaulicht, dass das Schweigen der Pflegefachkraft             ende, ist das Gespräch jedoch ausgewogen und es ist ein
+   auch einen Kommunikationsakt darstellt, der beim Ge-                Fachsimpeln auf Augenhöhe (symmetrische Kommunika-
+   genüber eine Reaktion auslöst.                                      tion).
+2. Jede Kommunikation hat einen Inhalts- und einen Bezie-
+   hungsaspekt, wobei Letzterer den Ersteren bestimmt.
+   Kommunikation gelingt, wenn Inhalts- und Beziehungs-             10.2.5 Kommunikationsstörungen
+   aspekt ein funktionierendes Ganzes ergeben. Sie miss-            In der Regel beherrschen wir die eben beschriebenen Vor-
+   lingt, wenn verschiedene oder gegensätzliche Botschaften         gänge ganz gut. Trotzdem kommt es vor, dass wir manchmal
+   gesendet werden oder wenn die Botschaften anders in-             wie vom Donner gerührt dastehen und völlig verdutzt darü-
+   terpretiert werden, was im Alltäglichen vielfach ge-             ber sind, was unser Gesprächspartner verstanden hat. Wir
+   schieht:                                                         rechtfertigen uns dann, indem wir sagen: „Das habe ich
 
-33.3 Alte Menschen im
-Krankenhaus
-33.3.1 Grundlagen
-Ein Krankenhausaufenthalt ist für alte Menschen, genauso
-wie für junge, häufig eine Krisensituation. Was erleben alte
-Menschen in dieser Situation anders als jüngere?
 
-Beispiel Gedankenkarussell
-
-Oft kann es helfen, die kleinen Patienten behutsam an die anstehende Behandlung heranzuführen. Pflegende können sie z. B.
-den Herzschlag ihres Plüschtieres abhören lassen, bevor sie die
-gleiche Prozedur an ihnen durchführen (Symbolbild).
-© pressmaster/stock.adobe.com - Stock photo - posed by a model
-
-dem Kind sprechen. Pflegende sind auch immer Vorbild für
-den Umgang mit Kindern, gerade bei Eltern, die ihr erstes
-Kind bekommen haben.
-Die Pflegenden sollten sich als Experten ihres Fachs für
-die Betreuung des Kindes positionieren, ohne die Eltern in
-ihrer Kompetenz anzugreifen. Häufig haben Eltern in der
-Klinik das Gefühl, hilflos zu sein und nichts machen zu können, um zur Genesung ihres Kindes beizutragen. Gerade
-dann sollten Pflegende ihnen zeigen, wie sie durch scheinbare Kleinigkeiten wie das Halten oder Streicheln ihres Kindes oder indem sie zu ihm sprechen zu dessen Heilung und
-Wohlbefinden beitragen.
-Unstimmigkeiten zwischen Eltern und Pflegenden können
-zu Misstrauen beim Kind führen. Ein vertrauensvoller,
-freundlicher Umgang mit den Eltern dagegen ermöglicht oft
-einen besseren Zugang zu den Kindern.
-Rechte von Kindern im Krankenhaus • Näheres zu den Rechten
-von Kindern im Krankenhaus lesen Sie im Kap. „Rechtliche
-Grundlagen der Pflege – Rechte von Kindern im Krankenhaus“ (S. 187).
-
-WISSEN TO GO
-Kommunikation mit Kindern
-● Einer der wichtigsten Punkte in der Kinderkrankenpflege
-
-ist die Rolle der Bezugspersonen. Sie sind fester Bestandteil der pflegerischen Beratung und der medizinischen
-Versorgung.
-● Je jünger ein Kind ist, umso mehr findet Kommunikation
-über nonverbale Kanäle statt. Der Aufbau eines vertrauensvollen Verhältnisses ist elementar. Kinder verzeihen
-keine Lügen!
-● Pflegende sollten sich immer auch die Situation der Eltern bewusst machen. Die Eltern sind außerdem eine
-gute Informationsquelle für Pflegende.
-● Auch sehr kleine Kinder, z. B. Säuglinge, sollten immer
-wissen, was mit ihnen geschieht.
-
-Die 82-jährige Frau B. wird aufgrund unerträglicher Rückenschmerzen mit Ausstrahlungen in die Brust in ein Krankenhaus
-eingewiesen. Ihre Tochter kann sie nicht begleiten, da sie arbeiten muss. Sie ist sonst immer bei Arztbesuchen dabei, „sie versteht den Herrn Doktor ja viel besser“. Frau B. ist sehr beunruhigt: „Hoﬀentlich ist es nicht wieder etwas Schlimmes, aber
-diese Schmerzen. Was, wenn ich operiert werden muss, ich will
-kein Pflegefall werden. Verkraftet mein Herz eine weitere Operation? Und wenn ich diesmal nicht mehr aufwache? …“
-Ängste und Befürchtungen • Die Jahre des letzten Lebensabschnitts sind eher geprägt von der Angst vor einer Zukunft in dauerhafter Abhängigkeit und der Konfrontation
-mit der eigenen Sterblichkeit: „Dieser Krankenhausaufenthalt könnte mein letzter sein.“
-Verlust der vertrauten Umgebung • In ihrem Zuhause können
-sich viele alte Menschen trotz Einschränkungen arrangieren.
-Der Tagesablauf und die anfallenden Aufgaben sind eingespielt. Gewohnheiten, Rituale und Routine vermitteln Sicherheit. Dazu im Widerspruch steht ein Krankenhaus mit
-seinen eigenen Strukturen, Hierarchien und Abläufen. Die
-Prozesse im Krankenhaus sind meist schnell, das Personal
-wechselt je nach Organisationsform häufig, verschiedene diagnostische und therapeutische Maßnahmen finden in verschiedenen Räumen statt. Der alte Mensch mit verlängerter
-Reaktionszeit (S. 228) kann in diesen Strukturen schnell
-überfordert sein.
-Viele Informationen in kurzer Zeit • Im Krankenhaus erhalten
-Pflegeempfänger oft in kurzer Zeit eine Fülle von Informationen. Alte Menschen können Probleme haben, diese in der
-Kürze der Zeit zu verarbeiten. Wird Fachsprache verwendet
-und schnell gesprochen, ist das Verständnis zusätzlich erschwert. Überforderung und „nicht wissen“, was nun eigentlich los ist, verstärken häufig die bereits vorhandenen
-Ängste und Befürchtungen (▶ Abb. 33.4).
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-739
-
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen      253
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
 l
-33
+10    Mit Menschen kommunizieren
 
-Pflege von Menschen im Krankenhaus: Kinder und alte Menschen
-Abb. 33.4 Befürchtungen und Ängste alter Menschen.
-• trotz Einschränkungen
-zurechtkommen
-• sich sicher fühlen durch
-Gewohnheiten, Rituale
-und Routine
 
-• Angst davor, ein Pflegefall zu werden
-• Konfrontation mit der eigenen Sterblichkeit
+      doch gar nicht so gemeint!“ Umgekehrt gibt es den beliebten         Abb. 10.6 Auswirkungen des Kommunikationsverhaltens.
+      Vorwurf: „Du hörst nur das, was du hören willst!“ Beide             (Video)
+      Aussagen bekräftigen die Annahme, dass unsere Ohren
+      (S. 252) unterschiedlich stark ausgeprägt sind und wir sozu-
+      sagen auf einem Ohr besonders hellhörig sind.
+         Es kommt zu Kommunikationsstörungen, wenn der Sen-
+      der und der Empfänger unterschiedliche Seiten einer Nach-
+      richt als Kernaussage gewichten. Für Schulz von Thun ist
+      entscheidend, welche Nachrichtenseite der Empfänger ge-
+      wichtet. Denn bei ihm entsteht die Botschaft.
+         Um Missverständnissen vorzubeugen, kann der Sender
+      nachfragen, ob und wie seine Nachricht beim Empfänger an-
+      gekommen ist. Umgekehrt kann sich der Empfänger rück-
+      versichern, ob er den Sender richtig verstanden hat. Durch
+      Rückfragen können Unklarheiten beseitigt werden. Dieser
+      Vorgang wird Feedback (Rückmeldung) geben genannt.
 
-eintauschen für
-• fremde Strukturen, Hierarchien
-und Abläufe
-• viele unterschiedliche Räume,
-Wege, Menschen
-• alles muss schnell gehen
+      Feedbackregeln bei gestörter Kommunikation • Um Missver-            Sehen Sie sich dazu das Video „Stressfrei und verständlich kom-
+      ständnisse zu vermeiden bzw. aufzudecken, haben sich fol-           munizieren“ an, indem Sie die Abbildung scannen oder den
+      gende Feedbackregeln bewährt:                                       Code 321001 eingeben. Foto: A. Fischer, Thieme
+      ● gegenseitiger Respekt und Achtung voreinander zeigen
+      ● Kritik am Verhalten üben und nicht die Person bewerten,
 
-• Überforderung durch
-Informationsfülle und
-Verständnisprobleme
+        z. B. „Sie haben sich mir gegenüber im Ton vergriﬀen“ an-
+        statt „Sie sind schlecht erzogen. Hat man Ihnen keine Ma-         10.3.1 Innere Haltung
+        nieren beigebracht?“                                              Die innere Haltung wird in der Beziehung zu anderen Men-
+      ● Ich-Botschaften senden: von sich und seiner Wahrneh-              schen im Kommunikationsverhalten erfahrbar. In der Pflege
+        mung sprechen, seine Gefühle mitteilen.                           wird oftmals vom Menschenbild gesprochen. Gemeint ist in
+      ● über die konkrete Situation sprechen und Allgemeinplätze          diesem Zusammenhang die Sichtweise Pflegender auf ihre
+        vermeiden, z. B. „immer“, „schon wieder“, „nie“, „man“            Pflegeempfänger, Bewohner oder deren Bezugspersonen.
+      ● Wünsche an den Gesprächspartner formulieren                       Aus der inneren Haltung heraus werden die Beziehung, die
+                                                                          Kommunikation und die Pflege gestaltet.
 
-? bla
 
-blabla..
+        Beispiel Gutes Feedback                                           Personenzentrierter Ansatz nach Rogers
+                                                                          Für den US-amerikanischen Psychologen und Psychothera-
+        „Alexander, gestern bei der Übergabe bist du mir 2-mal ins
+                                                                          peuten Carl Ransom Rogers (1902–1987) stand die zwi-
+        Wort gefallen und hast mich nicht ausreden lassen. Im ersten
+                                                                          schenmenschliche Beziehung zwischen Therapeuten/Berater
+        Moment war ich ganz perplex, dann wurde ich wütend, weil
+                                                                          und Klienten im Zentrum seines Interesses. Rogers wurde
+        ich mir vorkam, als sei meine Meinung nicht wichtig. (Ich-Bot-
+                                                                          durch sein Arbeiten und Forschen zu einem Wegbereiter der
+        schaft) Ich weiß, dass du das nicht so gemeint hast, ich möch-
+                                                                          humanistischen Psychologie und Begründer des personen-
+        te dich aber bitten, darauf zu achten, mich aussprechen zu las-
+                                                                          zentrierten Ansatzes der Gesprächstherapie/Beratung.
+        sen.“
+                                                                             Rogers ist überzeugt, dass jeder Mensch die Fähigkeit be-
+                                                                          sitzt, sich zu verändern, in seiner Persönlichkeit zu wachsen
+                                                                          und seine Probleme selbst zu lösen (= humanistisches Men-
+      10.3 Professionelle                                                 schenbild). Der Therapeut/Berater verzichtet dabei auf eine
+                                                                          „Expertenattitüde“ („Ich weiß, was für dich richtig ist“);
+      Kommunikationsgestaltung                                            stattdessen ermöglicht er es dem Klienten, sich selbst mit
+      Pflegefachkräfte haben den Auftrag, pflege- und hilfsbedürf-        seinen Möglichkeiten, Fähigkeiten und Ressourcen zu ent-
+      tige Menschen in Krankheit medizinisch-pflegerisch zu ver-          decken (Hilfe zur Selbsthilfe). Voraussetzung ist eine ver-
+      sorgen und sie in Richtung Gesundheit zu führen. Was hat            trauensvolle Beziehung zwischen Klient und Therapeut/Be-
+      dieser Auftrag mit Kommunikation zu tun?                            rater. Vertrauen entsteht in einer Beziehung von Person zu
+         Pflege findet in Beziehung zu anderen Menschen statt. Die        Person, von Mensch zu Mensch.
+      Art und Weise, wie Menschen miteinander kommunizieren,                 In der Beziehung, wie sie Rogers versteht, ist der Thera-
+      beeinflusst das jeweilige Wohlbefinden (▶ Abb. 10.6). Das ei-       peut/Berater ein aufrichtiger und echter Begleiter, der eine
+      gene Kommunikationsverhalten kann Menschen stärken oder             sichere und wertschätzende Atmosphäre voller Wärme und
+      schwächen.                                                          Anteilnahme schaﬀt. In diesem Raum kann sich der Klient
+         In den nachfolgenden Kapiteln werden die theoretischen           zeigen, wie er in Wahrheit ist. Der Therapeut nimmt ihn in
+      Inhalte beschrieben, die für die Entwicklung einer professio-       seinem Sein an. Wenn der Klient spürt, dass er bedingungs-
+      nellen Beziehungs- und Kommunikationsgestaltung im Sin-             frei akzeptiert wird, kann er sich zu sich selbst hin öﬀnen.
+      ne einer menschenstärkenden Kommunikation als grund-                   Auszubildende in Pflegefachberufen sollen keine Ge-
+      legend angesehen werden. Die Entwicklung startet mit der            sprächstherapeuten werden. Doch auch sie werden zu Ge-
+      inneren Haltung.                                                    sundheitsberatern. Parallelen zum Gesprächstherapeuten
+                                                                          bestehen z. B. darin:
+                                                                          ● Pflegende unterstützen Menschen in schwierigen Lebens-
 
-?
+                                                                            situationen.
 
-?
 
-bla blabla..
-bla blabla..
 
-?
+254    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                       Professionelle Kommunikationsgestaltung
 
-Einfühlungsvermögen zeigt sich in einem verstehenden Zugang zu den Gedanken, Gefühlen und Sichtweisen anderer Menschen.
 
-33.3.2 Pflegeprobleme
-Das Alter ist oftmals von typischen Pflegeproblemen begleitet:
-● Exsikkose (S. 1084)/hypertone Dehydratation: Wasserverlust des Körpers bei gleichzeitigem Natriumüberschuss
-● Mangelernährung (S. 461): Mangel an Nährstoﬀen im Körper durch unzureichende Zufuhr
-● Multimorbidität (S. 775): alte Menschen leiden häufig an
-mehreren Krankheiten gleichzeitig
-● Harninkontinenz (S. 425): unwillkürlicher, nicht unterdrückbarer Urinabgang
-● Verwirrtheitszustände:
-– akut: plötzliches Auftreten von Gedächtnis-, Orientierungs- und Bewusstseinsstörungen
-– chronisch: länger als 6 Monate anhaltender Verwirrtheitszustand, Ursache ist meist eine Demenz
+● Pflegende   unterstützen Menschen bei der Bewältigung
+  konkreter Probleme.
+                                                                    10.3.2 Gesprächstechniken
+● Pflegende beraten und begleiten Menschen in Verände-              Aktives Zuhören ist eine Methode der Gesprächsführung,
+  rungsprozessen.                                                   die auf den Grundhaltungen von Empathie, Akzeptanz und
+● In der Pflege steht der Mensch im Mittelpunkt.                    Echtheit basiert. Sie zielt darauf ab, dass sich ein hilfe- oder
+● Pflegende orientieren sich an den Ressourcen (z. B. Hoﬀ-          ratsuchender Mensch verstanden und angenommen fühlt,
+  nung, Sinn, Freude, Wissen, Humor, Kreativität, Menschen,         sich selbst bewusst und gestärkt wird.
+  Orte, Hilfsmittel) der hilfe- und pflegebedürftigen Men-
+  schen.
+                                                                    Aktives Zuhören
+Im Rahmen helfender Beziehungen ist Vertrauen der hilfe-            Eine Person signalisiert einer Pflegenden Gesprächsbedarf.
+und pflegebedürftigen Menschen in ihre pflegerischen Be-            Während des Gesprächs ist die Körperhaltung der Pflegen-
+gleiter der Schlüssel, um sich öﬀnen zu können. Rogers be-          den der Person zugewandt und oﬀen. In ihrer Art ist sie
+schreibt 3 Grundhaltungen, die ein Berater in sich entfalten        wertschätzend und nicht wertend. Das Gespräch zwischen
+muss, damit sich ein Klient verstanden und angenommen               den beiden kann man sich bildlich als einen Raum vorstel-
+fühlt sowie sich und seine eigenen Ressourcen entdecken             len. Die Pflegende nimmt sich darin mit ihren Meinungen,
+kann.                                                               Ratschlägen und Urteilen zurück. Das heißt, sie überlässt
+                                                                    dem Menschen diesen Raum, damit er ihn ausfüllen und sei-
+                                                                    ne Lösungen finden kann.
+Grundhaltungen nach Rogers                                             Die Pflegende wechselt die Perspektive und fühlt sich in
+Empathie • Ich bin Gast in der Erlebniswelt des anderen. Ich        den Menschen ein. Sie hört ihm mit allen 4 Ohren zu. Dabei
+schaue und höre mich um, bin aufmerksam und diskret. Ich            achtet sie auf die Körpersprache des Gegenübers, hört die
+erkunde im Gespräch die Bedürfnisse und die Bedeutung               wichtigen Botschaften des Pflegeempfängers heraus und
+der Emotionen meines Gegenübers. Ich bin interessierter             gibt ihm darüber Rückmeldung. Das Feedback kann Teile
+und vertrauensvoller Begleiter für den anderen: „Ah, Herr           des Inhalts wiedergeben; dadurch erfährt der Patient, dass
+M., das ist bestimmt wichtig für Sie.“                              er inhaltlich verstanden wurde. Doch bei Gesprächen mit
+                                                                    Patienten sind ebenso die mitschwingenden Botschaften auf
+Akzeptanz • Ich lerne, meinen Gesprächspartner zu schät-            der Selbstoﬀenbarungsebene von Interesse. Sie geben über
+zen, „wie er jetzt ist“. Ich bin in meiner inneren Haltung be-      seinen emotionalen Zustand Auskunft. Aktives Zuhören be-
+dingungsfrei bei ihm und lasse ihn „so sein“. Im Inneren            deutet, die Gefühle des Gesprächspartners wahrzunehmen,
+bleibe ich zugewandt, auch wenn ich anderer Meinung bin.            herauszuhören (Worin liegt die eigentliche Botschaft? Wel-
+Das Erleben und die Sichtweise des anderen stehen im Mit-           che Gefühle, Bedürfnisse oder Absichten schwingen mit?)
+telpunkt des Gesprächs. „Herr M., Sie sind ja ganz empört –         und dem Patienten diese „rückzumelden“.
+wollen Sie mir davon erzählen?“                                        Nicht immer können Menschen ihre Gefühle in Worte fas-
+                                                                    sen. Entweder, weil sie sich ihrer nicht bewusst sind oder
+Kongruenz (Echtheit) • Ich lerne und erlaube mir im Ge-             weil es ihnen schwerfällt, sie auszusprechen. Durch ein ent-
+spräch, „ich“ zu sein. Ich lege keine Maske an und verstelle        sprechendes Feedback erfährt der Pflegeempfänger, dass er
+mich nicht. Ich bin echt mit mir, echt in der Situation und         emotional verstanden wird. Im Bild des Gesprächsraums ge-
+echt mit meinem Gesprächspartner. Alte und kranke Men-              sprochen, spiegelt die Pflegende dem Patienten seine Gefüh-
+schen haben eine sehr feine Wahrnehmung für „Echtheit“.             le, dadurch kann er sich sehen bzw. sich selbst begegnen.
+„Oje, Herr M., da weiß ich gar nicht, was ich sagen soll.“          Ziel des aktiven Zuhörens ist, dass sich der Pflegeempfänger
+                                                                    verstanden fühlt.
 
-33.3.3 Pflegerische Grundprinzipien
-Grundsätzlich gelten für alle pflegebedürftigen Menschen
-im Krankenhaus dieselben pflegerischen Grundprinzipien:
-● Hilfe zur Selbsthilfe
-● Ressourcenorientierung vor Defizitorientierung
-● Selbstständigkeit und Mobilität erhalten
-● Sicherheit geben
-● Informationen altersentsprechend vermitteln
-Bei alten Menschen sind diese pflegerischen Grundprinzipien
-ganz besonders zu beachten. Denn es gilt, ihnen insbesondere
-für die Zeit nach dem Krankenhaus ein möglichst selbstständiges und selbstbestimmtes Leben zu ermöglichen.
-Bei alten Menschen ist die Gefahr, dass ihre Ressourcen
-verkannt werden, häufig größer als bei jüngeren Pflegeempfängern. Der Körper kann bei einer akuten Erkrankung
-durch die Krankheit selbst oder durch Operationen geschwächt werden. Wenn die Schwächung trotz erfolgreicher
-Therapie länger als üblich andauert, sollte nach möglichen
-Ursachen gesucht werden, auch bei alten Menschen. Dazu
-können geriatrische Assessments (S. 90) genutzt werden.
-Die Schwächung kann zudem den normalen Alterungsprozess verstärken.
-Bei der Pflege akut erkrankter alter Menschen im Krankenhaus kommt es v. a. darauf an, die Entwicklungen zu be740
+    WISSEN TO GO
+                                                                         WISSEN TO GO
+  Innere Haltung und Beziehungsgestaltung
+                                                                       Aktives Zuhören
+  Pflege findet in Beziehung zu pflege- und hilfsbedürftigen
+  Menschen statt. Die Sicht auf die Pflegeempfänger ist Teil           Methode der Gesprächsführung, die auf den 3 Grundhal-
+  der inneren Haltung Pflegender und beeinflusst maßgeb-               tungen von Rogers aufbaut. Hilfe- oder ratsuchende Men-
+  lich die Beziehungsgestaltung und das Kommunikations-                schen sollen sich im Gespräch verstanden und angenom-
+  verhalten. Dieses kann Menschen stärken oder schwächen.              men fühlen, sich selbst bewusst und gestärkt werden. Ak-
+  Der Psychologe Carl Rogers war der Ansicht, dass jeder               tives Zuhören zeigt sich durch:
+  Mensch die Fähigkeit besitzt, sich zu verändern, in seiner           ● zugewandte und oﬀene Körperhaltung
 
-obachten und möglichst keine voreiligen Schlüsse zu ziehen.
-Der Heilungsprozess darf nicht durch zu frühe Überforderung gefährdet werden. Hierbei können folgende Maßnahmen helfen.
+  Persönlichkeit zu wachsen und seine Probleme selbst zu               ● wertschätzende und nicht wertende Art
 
-Allgemeine Maßnahmen
-● Ausgangssituation erfassen: Pflegende sollten sich in der
+  lösen. Der Klient selbst hat die Ressourcen und Fähigkeiten          ● Zurücknehmen der eigenen Meinungen, Ratschläge und
 
-Pflegeanamnese ein klares Bild über die Ausgangssituation
-des Pflegeempfängers vor seiner Erkrankung/Operation
-machen und diese Ausgangssituation für alle am Pflegeprozess Beteiligten dokumentieren.
-● Geduldiger Ansprechpartner sein: Insbesondere in Akutsituationen, die per se von Unsicherheit, möglicherweise
-von Schmerzen und sonstigem Krankheitsgefühl geprägt
-sind, benötigen alte Menschen Zuspruch und einen geduldigen Ansprechpartner.
-● Orientierung geben: Pflegende sollten auf mögliche Probleme bei der Orientierung, v. a. in der Anfangszeit nach der
-Aufnahme achten. Sie sollten dem Pflegeempfänger die
-wichtigsten Räume, z. B. die Lage der Toilette, des Badezimmers und des Dienstzimmers zeigen, um die Orientierung im eigenen Zimmer und auf der Station zu fördern –
-wenn nötig, auch mehrmals.
-● Funktionen und Abläufe erklären: Dinge wie die Funktion
-der Rufanlage, des Telefons oder Fernsehers und auch Abläufe sollten in Ruhe erklärt werden – wenn nötig, auch
-mehrmals.
-● Aktivierende Pflege: Pflegende sollten es dem alten Menschen ermöglichen, seine Fähigkeiten zu erkennen und zu
-nutzen. Überforderungen sollten vermieden werden. Der
-alte Mensch sollte in den Pflegeprozess einbezogen werden. Pflegende sollten mit ihm sprechen und nicht über
-ihn entscheiden. ▶ Tab. 33.2 zeigt die Vorteile aktivierender Pflege bei alten Menschen im Krankenhaus.
+  dafür in sich. In der Beziehungsgestaltung zwischen Bera-               Urteile
+  ter und Klient wird der Berater zum aufrichtigen Begleiter           ● Übernahme der Patientenperspektive
 
-Selbstpflege unterstützen
-Wenn Pflegende alte Menschen bei Pflegetätigkeiten unterstützen müssen, sollten sie die Handlungen nicht vorschnell
-komplett übernehmen (▶ Abb. 33.4). Pflegende sollten deutlich sprechen und dem alten Menschen Zeit geben, Informationen zu verarbeiten und sich auf die bevorstehende Pflegehandlung einzustellen. Mit den folgenden Anleitungs-
+  auf der Selbstentdeckungsreise des Klienten. Ein Berater             ● mit allen 4 Ohren zuhören
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
+  muss nach Rogers 3 Grundhaltungen entwickeln:                        ● wichtige Botschaften auf inhaltlicher und Selbstoﬀen-
 
-Alte Menschen im Krankenhaus
+  ● Empathie (sich in den Gesprächspartner hineinverset-                  barungsebene wahrnehmen
+     zen)                                                              ● Rückmeldung der wahrgenommenen Gefühle, Bedürf-
 
-Tab. 33.2 Vorteile aktivierender Pflege beim alten Menschen im Krankenhaus.
-Sicherheit
+  ● bedingungsfreie Akzeptanz (den Gesprächspartner in                    nisse oder Absichten
+     seinem Sein akzeptieren)
+  ● Kongruenz (ich stehe zu mir und bin authentisch)
 
-Selbstständigkeit
 
-Mobilität
 
-Der Pflegeempfänger kann die Pflegetätigkeiten so durchführen, wie er sie gewohnt
-ist. Diese Vertrautheit vermittelt Sicherheit
-in ungewohnter Umgebung.
 
-Der Pflegeempfänger erlebt, dass er für sich
-selbst sorgen kann; die Selbstpflegefähigkeit
-und damit die Möglichkeit, auch nach dem
-Krankenhausaufenthalt ein selbstständiges
-Leben zu führen, bleiben erhalten.
-
-Jede Tätigkeit, die der Pflegeempfänger
-selbst übernimmt, fördert seine Mobilität
-und Beweglichkeit. Die Bewegung wirkt
-prophylaktisch, z. B. Dekubitus-, Kontrakturen-, Thrombose- oder Pneumonieprophylaxe.
-
-schritten kann getestet werden, welche Ressourcen vorhanden sind. Diese sollten gezielt genutzt werden, um die
-Selbstpflegefähigkeit zu fördern (▶ Abb. 33.5):
-● verbale Anleitung: Pflegende können den alten Menschen
-verbal dazu auﬀordern, sich z. B. das Gesicht zu waschen.
-● visuelle Anleitung: Pflegende können den alten Menschen
-verbal dazu auﬀordern, sich z. B. das Gesicht zu waschen,
-und die Tätigkeit gleichzeitig vormachen, indem sie z. B.
-kreisende Bewegungen mit dem Waschlappen vor dem eigenen Gesicht ausführen.
-● pragmatische/assistierende Anleitung: Der Pflegeempfänger wird unterstützt, indem Pflegende z. B. die Hand des
-Menschen über sein Gesicht führen und mit den Waschbewegungen beginnen, bis sie evtl. von ihm übernommen
-werden.
-
-Abb. 33.5 Eigenständigkeit fördern und erhalten.
-
-Erst wenn der Pflegeempfänger auch nach dem Führen der
-Hände die Handlung nicht selbst erledigt, sollten Pflegende
-übernehmen. Dann spricht man von voller Übernahme der
-Pflege.
-
-So viel Hilfe wie nötig, so wenig Hilfe wie möglich.
-
-Beispiel Aktivierende Pflege zu Hause
-In meiner Zeit in einem ambulanten Pflegedienst fuhr ich zu
-einem neuen Klienten. Der über 80-jährige Mann war nach
-einem längeren Krankenhausaufenthalt geschwächt und benötigte Unterstützung bei der Ganzkörperpflege sowie beim
-Transfer aus dem Bett in den Rollstuhl. Nach der freundlichen
-Begrüßung bereitete ich alles Nötige vor und gab ihm das nasse Waschtuch in seine Hand. Irgendetwas war seltsam, ich war
-irritiert und er war es auch, das meinte ich seinem Blick entnommen zu haben. Wir sagten beide nichts. Er fing an, sich
-selbst zu waschen, und ich assistierte ihm bei allem, wobei er
-Unterstützung benötigte. Am nächsten Tag fragte ich ihn, ob
-er sich über mich geärgert hätte und ob alles in Ordnung sei.
-„In der Tat habe ich mich geärgert. Ich bezahle, damit Sie mich
-pflegen, und Sie haben mich alles selbst machen lassen.“ Daraufhin entschuldigte ich mich und erklärte ihm meine Gründe:
-„Ich möchte Sie darin unterstützen, wieder zu Kräften zu kommen, damit Sie so viel wie möglich und dies so lange wie möglich selbstständig tun können. Wenn ich Ihnen alles abnehme,
-wozu Sie noch selbst in der Lage sind, werden Sie das bald
-nicht mehr können. Sie möchten gerne weiterhin zu Hause leben, jedoch würden Sie durch meine Hilfe immer unselbstständiger werden.“ Von nun an war er bei allem sehr tatkräftig und
-manchmal musste ich seinen Elan bremsen, wenn ich den Eindruck hatte, dass er sich überforderte.
-
-Foto: K. Oborny, Thieme
-
-WISSEN TO GO
-Alte Menschen im Krankenhaus
-Der Krankenhausaufenthalt ist häufig eine Krisensituation,
-gekennzeichnet durch:
-● Ängste und Befürchtungen des letzten Lebensabschnitts
-● Verlust der vertrauten Umgebung und Personen
-● viele Informationen in kurzer Zeit
-Beachtung der pflegerischen Grundprinzipien
-● Hilfe zur Selbsthilfe
-● Ressourcenorientierung vor Defizitorientierung
-● Selbstständigkeit und Mobilität erhalten
-● Sicherheit vermitteln
-Hilfreiche konkrete Maßnahmen
-● Ausgangssituation erfassen
-● geduldiger Ansprechpartner sein
-● Orientierung geben
-● Funktionen und Abläufe erklären
-● aktivierende Pflege und Unterstützung bei der Selbstpflege
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-741
-
-34
-
-Pflege von Menschen im
-häuslichen Umfeld
-
-34.2 Grundlagen
-34.1 Kompetent pflegen
-Nur zu Hause ist der Mensch ganz. Dieser Satz gilt auch für
-Menschen, die von Einschränkung und Krankheit betroﬀen
-sind. Nicht selten wünschen sich Betroﬀene während eines
-Klinikaufenthalts nichts sehnlicher, als wieder zu Hause zu
-sein. Da für viele nach Ende der stationären Versorgung der
-Genesungsprozess noch nicht abgeschlossen ist bzw. eine
-dauerhafte Pflegebedürftigkeit besteht, gibt es die häusliche
-Pflege. Ambulante Pflegedienste versorgen die Pflegeempfänger in ihrer gewohnten Umgebung und ermöglichen so
-ein selbstbestimmtes Leben in den eigenen 4 Wänden mit
-der Sicherheit einer professionellen Pflege.
-In diesem Kapitel lernen Sie u. a.,
-● welche Aufgaben ambulante Pflegedienste übernehmen.
-● auf welcher gesetzlichen Grundlage diese Versorgungsform steht und wie sich die Finanzierung gestaltet.
-● was Pflegegrade sind und welche Leistungen damit verbunden sind.
-● welche Besonderheiten das Arbeiten in der ambulanten
-Pflege mit sich bringt.
-● dass die häusliche Pflege ein vielfältiges Angebot aufweist.
-● was Sie im Umgang mit Bezugspersonen in der häuslichen
-Umgebung beachten müssen.
-
-742
-
-Definition Häusliche Pflege
-Häusliche Pflege ist die Pflege und Betreuung im häuslichen Umfeld
-des Pflegeempfängers. Der Begriﬀ ambulante Pflege wird häufig synonym verwendet.
-Laut Statistischem Bundesamt wurden 2017 in Deutschland
-24,3 % der Pflegebedürftigen von ambulanten Pflegediensten betreut. Das sind insgesamt 829 958 Menschen.
-Die Versorgung reicht dabei von der Unterstützung im
-Haushalt über die Versorgung von Wunden bis hin zur intensivmedizinischen Betreuung des Pflegeempfängers. Dabei übernehmen ambulante Pflegedienste die Versorgung
-des Pflegeempfängers vollständig oder unterstützen pflegende Angehörige.
-Versorgungsschwerpunkte der ambulanten Pflege • Die häusliche Pflege umfasst:
-● Maßnahmen der Grundpflege (S. 746)
-● medizinisch-diagnostische bzw. medizinisch-therapeutische Maßnahmen, die sog. Behandlungspflege (S. 747)
-● Pflegeberatung und Anleitung von Bezugspersonen und
-Pflegeempfängern (S. 747)
-● hauswirtschaftliche Versorgung (S. 747)
-● Betreuungs-, Beschäftigungs- und Aktivierungsangebote
-(S. 747)
-● weitere Angebote können z. B. sein: „Essen auf Rädern“;
-Hausnotrufsysteme, Pflegekurse für pflegende Bezugspersonen, Demenzgruppen etc.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Kompetent pflegen ▶ S. 742
-Grundlagen
-
-▶ S. 742
-Einschätzung des Pflegegrads ▶ S. 745
-Pflegegrade
-
-Finanzielle Leistungen ▶ S. 745
-Grundpflege ▶ S. 746
-
-Versorgung im
-häuslichen Umfeld
-
-Behandlungspflege
-
-▶ S. 747
-
-Beratung und Anleitung von Bezugspersonen ▶ S. 747
-Hauswirtschaftliche Versorgung
-sowie Betreuungs- und
-Aktivierungsangebote
-
-▶ S. 747
-
-Besonderheiten der häuslichen Pflege ▶ S. 747
-Häusliche Intensivpflege und Heimbeatmung ▶ S. 749
-
-Das Kapitel vermittelt
-Kompetenzen im
-KB I bis III sowie
-IV.2c und 2d
-
-Formen der
-ambulanten Pflege
-
-Häusliche Kinderkrankenpflege ▶ S. 749
-Interkulturelle Pflegedienste ▶ S. 749
-24-Stunden-Betreuung ▶ S. 749
-Ergänzende Angebote für pflegende Bezugspersonen ▶ S. 750
-
-Problematisches Umfeld ▶ S. 750
-Umgang mit Angehörigen
-
-Lebensqualität verbessern ▶ S. 751
-Verhalten in besonderen Situationen ▶ S. 751
-
-Aufgaben und Ziele • Die Versorgung dient der Sicherstellung
-folgender Aspekte:
-● Ressourcenerhalt durch Förderung der vorhandenen Fähigkeiten des Pflegeempfängers
-● Ermöglichung eines selbstständigen Lebens, das der Pflegeempfänger selbstbestimmt führen kann.
-● Gewährleistung der Sicherungspflege (nach § 37 Abs. 2
-SGB V) zur Sicherung der ärztlichen Behandlung; Kostenübernahme der Behandlungspflege, solange medizinisch
-erforderlich
-● Durchführung der Krankenhausvermeidungspflege (nach
-§ 37 Abs. 1 SGB V), wenn eine notwendige Krankenhausbehandlung nicht durchgeführt oder wenn die Krankenhausbehandlung durch häusliche Pflegemaßnahmen vermieden bzw. verkürzt werden kann.
-● Entlastung und Miteinbezug pflegender Bezugspersonen
-Anbieter und Aufbau • Die häusliche Pflege wird von ambulanten Pflegeeinrichtungen unterschiedlicher Trägerschaften angeboten, z. B. Wohlfahrtsverbänden, Kommunen oder
-privaten Pflegediensten. Mehr zu den unterschiedlichen Trägern finden Sie im Kap. „Das deutsche Sozial- und Gesundheitssystem“ (S. 136).
-Die Einrichtungen der häuslichen Pflege versorgen Pflegebedürftige in der häuslichen Umgebung. Eine oder mehrere
-Pflegedienstleitungen führen die Einrichtungen. Die Pflegedienstleitung hat vorwiegend administrative und organisatorische Aufgaben, z. B. Dienst- und Tourenpläne erstellen,
-Verhandlungen mit Ärzten, Kranken- oder Pflegekassen führen und Qualitätsmanagement, z. B. im Rahmen der Pflegevisite (S. 747), durchführen. Zu den Aufgaben der Mitarbeiter gehören neben pflegerischen Tätigkeiten die Kommunikation mit und Koordination von Ärzten, Physio- und Ergotherapeuten.
-Da die Versorgung ein breites Spektrum umfasst (von speziellen Pflegemaßnahmen bis hin zu Beschäftigungs- und
-Aktivierungsangeboten), werden die Schwerpunkte von un-
-
-terschiedlichen Personengruppen durchgeführt. Haushaltsnahe Arbeiten und Beschäftigungsangebote (wie z. B. Vorlesen oder Spaziergänge) werden von geschulten Mitarbeitern durchgeführt, während Pflegemaßnahmen, die Fachwissen voraussetzen (z. B. die Wundversorgung), von examinierten Pflegefachkräften durchgeführt werden.
-Gesetzliche Grundlage und Finanzierung • Die gesetzlichen
-Grundlagen der häuslichen Pflege inklusive der Finanzierung sind im Sozialgesetzbuch (SGB) geregelt. Regeln zur
-Krankenversicherung stehen im SGB V, zur Pflegeversicherung im SGB XI. Die Bücher beschreiben allerdings nur die
-groben Grundlagen – die genauen Leistungen und deren Bezahlung handeln die Landesverbände der Pflegekassen mit
-den Trägern der ambulanten Pflegeeinrichtungen, dem Medizinischen Dienst der Krankenkassen (MDK) sowie Vertretern der privaten Krankenversicherung und der Sozialhilfe
-aus. In diesen Vereinbarungen werden sog. Leistungskomplexe beschrieben. Ein Leistungssatz kann dabei in den verschiedenen Bundesländern unterschiedlich viel kosten.
-Die Kosten für Maßnahmen der Behandlungspflege übernimmt die Krankenkasse. Grundpflege und hauswirtschaftliche Versorgung werden von der Pflegekasse mitfinanziert.
-Voraussetzung für die (teilweise) Kostenübernahme der
-Kassen sind eine ärztliche Verordnung sowie die Einstufung
-in einen Pflegegrad.
-Mehr zur Finanzierung der häuslichen Pflege finden Sie
-im Kap. „Das deutsche Sozial- und Gesundheitssystem“
-(S. 163).
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-743
-
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen        255
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
 l
-34
+10    Mit Menschen kommunizieren
 
-Pflege von Menschen im häuslichen Umfeld
 
-WISSEN TO GO
-Häusliche Pflege
-● Definition: Pflegerische Versorgung im häuslichen Um-
+      Weitere Techniken der Gesprächsführung                                 fessionellen Nähe-Distanz-Verhältnisses von Pflegefachkräf-
+                                                                             ten zu Hilfebedürftigen thematisiert.
+      ● Oﬀene Fragen stellen: Oﬀene Fragen geben Raum, darauf
+                                                                               Einerseits wird bei Pflegenden z. B. davon ausgegangen,
+        zu antworten, z. B.: Was bereitet Ihnen Kopfzerbrechen?              dass sie einer besonders empathischen Berufsgruppe ange-
+        Worüber denken Sie nach? Was ist geschehen? Wie macht                hören. Andererseits wird der Vorwurf laut, dass Pflegenden
+        sich das bemerkbar? Geschlossene Fragen haben nur ein Ja             manchmal eine gesunde Distanz bzw. Abgrenzung zum Lei-
+        oder Nein als Antwortmöglichkeit. Dabei kommt der Pfle-              den ihrer Patienten fehlt. Sind Pflegende in ihrem Verhalten
+        geempfänger nicht in einen Gedanken- bzw. Redefluss.                 gegenüber Pflegeempfängern distanziert, gelten sie leicht
+      ● Aufmerksamkeit und Verständnis signalisieren: über Mi-
+                                                                             als kühl und wenig einfühlend. Wie können Pflegende dem
+        mik und Gestik, z. B. mit dem Kopf nicken, und mit kurzen            Anspruch auf ein professionelles Nähe-Distanz-Verhältnis
+        Bestätigungen, z. B. „ja“, „hmhm“.                                   gerecht werden? Antworten darauf sind in der Empathiefor-
+      ● Paraphrasieren: wichtige Gefühle und Gedanken mit eige-
+                                                                             schung der letzten Jahre zu finden, denn diese hat heraus-
+        nen Worten wiederholen.                                              gefunden, dass es 2 unterschiedliche Formen von Empathie
+      ● Verbalisieren: Gefühle des Gegenübers in Worte fassen
+                                                                             gibt:
+        (spiegeln), z. B.: „Ich habe den Eindruck, Sie sind ent-
+        täuscht und traurig darüber.“
+      ● Auf inkongruentes Verhalten aufmerksam machen: eigene                Kognitive Empathie
+        Wahrnehmung über die Widersprüchlichkeit von verbalen
+        und nonverbalen Aussagen des Pflegeempfängers anspre-                Definition Kognitive Empathie
+        chen.                                                                Empathie bezeichnet allgemein die Fähigkeit, sich in Gedanken, Ge-
+      ● Zusammenfassen: über einen längeren Zeitraum geäußer-                fühle und Sichtweisen anderer Menschen hineinzuversetzen. Kogni-
+        te Inhalte oder Gefühle kurz zusammenfassen.                         tive Empathie ist die kognitive Fähigkeit, die eigene Perspektive vorü-
+      ● Unklares klären: wenn etwas nicht verstanden wurde, den              bergehend zu verlassen und die Perspektive eines anderen Menschen
+        Patienten um Erklärung bitten oder abklären, ob man ihn              zu übernehmen. Dabei wird das Leid anderer Menschen gesehen
+        richtig verstanden hat, z. B. „Ich habe Sie so verstanden ...,       und abstrakt als schlimm eingeschätzt, jedoch ohne selbst mit-
+        ist das richtig?“                                                    zufühlen.
+      ● Schweigen aushalten und nutzen: Wenn das Gespräch
 
-feld. Sie umfasst u. a. die Umsetzung medizinisch-therapeutischer/diagnostischer Maßnahmen, Maßnahmen
-der Grundpflege, Pflegeberatung und die hauswirtschaftliche Versorgung
-● Ziele und Aufgaben: Ressourcenförderung und Ermöglichung eines selbstbestimmten Lebens, Gewährleistung
-von Sicherungspflege, Krankenhausvermeidungspflege
-sowie Entlastung pflegender Bezugspersonen
-● Gesetzliche Grundlage und Finanzierung: Sozialgesetzbuch (SGB V und XI), (teilweise) Kostenübernahme
-durch Kranken- und Pflegekasse. Voraussetzung: ärztliche Verordnung bzw. Pflegegrad
-Vorteile häuslicher Versorgung • Pflegeempfänger, die Pflegende aus der Klinik kennen, sind zu Hause wie ausgewechselt. Sie fühlen sich selbstständiger, wirken oft selbstbewusster und sind meist mobiler (▶ Abb. 34.1).
+        stockt, sollte versucht werden, das Schweigen einige Mo-             Aus der eigenen Perspektive herauszutreten und sich in ei-
+        mente auszuhalten, da es der Selbstbesinnung des Patien-             nen anderen Menschen hineinzuversetzen, ist ein hilfrei-
+        ten dienen kann.                                                     ches Mittel, um dessen (Kommunikations-)Verhalten zu ver-
+      ● Nachfragen: zeigt dem Gegenüber Interesse und kann z. B.             stehen oder um einen Zugang zu ihm zu finden. Pflegende
+        ein ins Stocken geratenes Gespräch weiterführen. Beispie-            fragen sich z. B., wie ein Pflegeempfänger seine Situation be-
+        le: „Nachdem Sie Ihre Tochter angerufen hatten, hat die              wertet. Was empfindet er, aber spricht es nicht aus? Was
+        sich nicht mehr bei Ihnen gemeldet?“ „Wie ging es dann               motiviert ihn zu diesem oder jenem Verhalten? Was kann
+        weiter?“ „Wie soll ich Ihr Schweigen interpretieren?“ „Ich           ihn in seinem Genesungsprozess stärken? Die Perspektive
+        habe den Eindruck, dass Sie sich schwer damit tun, darü-             eines anderen Menschen einzunehmen und sich der Bedeu-
+        ber zu sprechen. Macht es das Schweigen darüber leichter             tung zu öﬀnen, die die Dinge für ihn haben, ohne vorschnell
+        oder schwerer für Sie?“                                              zu bewerten, ist eine Kunst. Wo der Laie mit seinen Bewer-
+                                                                             tungen stehen bleibt, sucht der Profi einen verstehenden Zu-
+      ACHTUNG                                                                gang.
+      Vermeiden Sie Warum-Fragen! Dadurch kann sich der Pflegeemp-
+      fänger in die Ecke gedrängt fühlen und meinen, sich für seine Gefüh-
+      le rechtfertigen zu müssen.                                              Beispiel Der eigenartige Herr M.
+                                                                               Herr M. lebt seit 3 Monaten in einem Pflegeheim. Sein rechtes
+           Techniken der Gesprächsführung                                      Bein wurde unterhalb des Knies amputiert. Er bewegt sich zwar
+                                                                               selbstständig im Rollstuhl, aber selten außerhalb seines Zim-
+        Techniken der Gesprächsführung                                         mers. Er spricht wenig, wirkt jedoch orientiert und kann noch
+                                                                               viele Belange des täglichen Lebens selbst meistern. Beim Toilet-
+        Folgende Methoden dienen dazu, dem Gesprächspartner                    tengang benötigt er Unterstützung, nimmt diese jedoch nur
+        Aufmerksamkeit zu signalisieren:                                       mürrisch an. Er zeigt zudem eine Eigenart, die Mitbewohner
+        ● oﬀene Fragen
+                                                                               und Pflegepersonal an ihre Grenzen bringt. Er ruft immer wie-
+        ● Aufmerksamkeit und Verständnis signalisieren
+                                                                               der am Tag laut „Haaaaaaaaaalo!“. Mitbewohner und Bezugs-
+        ● paraphrasieren und verbalisieren
+                                                                               personen fangen an zu munkeln, dass Herr M. „extra und mit
+        ● auf inkongruentes Verhalten aufmerksam machen
+                                                                               Absicht“ rufe, um die Menschen zu ärgern. Das Pflegepersonal
+        ● zusammenfassen, Unklares klären
+                                                                               bemüht sich um Toleranz. Der Arzt spricht mit dem Patienten,
+        ● Schweigen aushalten und nutzen
+                                                                               bekommt jedoch keine Antwort. Pflegefachkraft Alexander
+        ● nachfragen
+                                                                               S. betreut Herrn M. oft und beobachtet, dass er häufiger ruft,
+                                                                               wenn er im Bett liegt oder lange alleine in seinem Zimmer im
+                                                                               Rollstuhl sitzt. Er hat den Verdacht, dass Herr M. Schmerzen,
+      10.3.3 Empathie und Mitgefühl                                            vielleicht auch Phantomschmerzen, hat und diese nicht äußern
+                                                                               möchte oder kann. Alexander bespricht seine Gedanken im
+      Die Wortbedeutung von Empathie ist Einfühlungsvermögen.
+                                                                               Team und mit dem zuständigen Arzt. Sie beobachten nun das
+      Menschen in helfenden Berufen wird ein hohes Maß an Ein-
+                                                                               Rufen des Bewohners mit großer Aufmerksamkeit und tau-
+      fühlungsvermögen nachgesagt und gleichzeitig als Eig-
+                                                                               schen die Informationen engmaschig aus. Sie erkennen häufi-
+      nungsmerkmal für einen solchen Beruf gefordert. In diesem
+                                                                               ges Rufen in folgenden Situationen und interpretieren diese:
+      Zusammenhang wird die besondere Bedeutung eines pro-
 
-Beispiel Selbstständigkeit
-Frau P. ist 100 Jahre alt. Sie ist geistig fit, aber auf eine Gehhilfe angewiesen. Seit 70 Jahren lebt sie in ihrer Wohnung. Heute
-kann sie sie nur noch verlassen, wenn ihr jemand hilft – das
-übernehmen meist Mitglieder der Familie. Leider sind die Türen
-des Bads und der Küche so eng, dass Frau P. dort mit ihrem
-Rollator nicht durchkommt. Sie hat ein eigenes System entwickelt: Sie lässt den Rollator vor der Tür stehen und hat sich in
-den Räumen eine Art eigenen „Parcours“ gebaut: Im Bad steht
-direkt neben der Tür ein Gehstock, in der Küche stützt sie sich
-auf Lehnen stabiler Stühle und an der Arbeitsplatte ab. Auch
-wenn das Personal des Pflegedienstes das Arrangement eher
-kritisch betrachtet – Frau P. meint, sie komme so wunderbar
-zurecht und benötige keine weiteren Hilfen. Sie bietet dem Pflegedienst stets einen Tee an und wünscht zum Abschied immer:
-„Allzeit gute Fahrt!“
+256    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                         Professionelle Kommunikationsgestaltung
 
-Abb. 34.1 Pflege in den eigenen vier Wänden.
 
-Die Pflegeempfänger sind oft sehr viel motivierter, an sich
-zu arbeiten, als sie es in der Klinik waren. Oft ist der Genesungsprozess kürzer und die Betroﬀenen erholen sich
-schneller. In der Klinik machen oft die äußeren Umstände,
-wie Sekundärinfektion oder Reoperationen, eine regelmäßige Neubeschreibung z. B. der Pflegeziele und -maßnahmen notwendig. Pflegeempfänger können dies als Verzögerung und daher als demotivierend empfinden.
-Zudem ist in der häuslichen Umgebung die Gefahr für Infektionen, die im klinischen Umfeld zu Komplikationen und
-einer Verlängerung der Liegedauer führen können, geringer.
-In Deutschland erkranken laut Bundesregierung (November
-2018) jährlich 400 000 bis 600 000 Menschen an nosokomialen Infektionen während einer stationären Behandlung.
-6000 bis 15 000 Menschen sterben jährlich an diesen Infektionen.
-Meist werden Pflegeempfänger sehr früh aus dem Krankenhaus entlassen. Pflegefachkräfte der ambulanten Versorgung dagegen begleiten den Pflegeempfänger häufig über
-einen längeren Zeitraum und können ihn systematisch unterstützen und die Entwicklung verfolgen. Wenn der Pflegeempfänger wieder zu einem unabhängigen Leben fähig
-ist, kann sich der Pflegedienst u. U. ganz aus der Pflege zurückziehen. Dieser Prozess wird Rückzugspflege genannt.
-Mitarbeiter mobiler Dienste können häufig eigenständiger
-arbeiten als Pflegende in einer Klinik. Da sie meist alleine
-unterwegs sind, können sie auch in besonderen Situationen
-eigene Entscheidungen treﬀen.
-Auch die Gesundheitspolitik vertritt den Grundsatz „ambulant vor stationär“. Nicht zuletzt deshalb, da die Versorgung zu Hause meist kostengünstiger ist.
+                                                                       schen mitzuschwingen, das eingangs beschriebene „Zuviel“
+  ● in der Nacht (langes Liegen auf einer Stelle)
+                                                                       an Nähe zum Betroﬀenen.
+  ● im Rollstuhl (langes Sitzen, weniger Durchblutung)
+  ● wenn    er alleine ist (mehr Aufmerksamkeit für mögliche
+    Schmerzen)                                                         Mitgefühlstraining
+  Weiterhin gibt Herr M. keine Antwort auf die Frage, warum er         Die Lösung des Problems emotionalen Mitschwingens be-
+  rufe. Vielleicht aus Scham, vielleicht hält er sich für verrückt,    steht im Trainieren von Mitgefühl (engl. compassion). Im
+  weil er Schmerzen hat, wo kein Bein mehr ist.                        Gegensatz zu Empathie ist Mitgefühl ein warmes, positives
+     Der zuständige Arzt arbeitet eng mit dem Pflegepersonal zu-       Gefühl der Sorge, ähnlich wie sie eine Mutter für ihr Kind
+  sammen und nimmt die Informationen auf. Er verschreibt ein           empfindet, und dem Gefühl der Liebe sehr nahe ist. Der
+  entsprechendes Schmerzmedikament. Zusätzlich werden Mat-             Wunsch zu helfen steht dabei im Vordergrund.
+  ratze und Rollstuhlauflage für Herrn M. von einem Sanitäts-            Studienergebnisse zeigen, dass emotionale Empathie mit-
+  haus angepasst. Das Rufen wird weniger und hört schließlich          hilfe von Mitgefühlstraining umgewandelt werden kann. Ein
+  ganz auf. Herr M. spricht mehr und lässt sich motivieren, beim       wesentlicher Bestandteil ist dabei das Erlernen von Mit-
+  „Krafttraining für Senioren“ mitzuwirken. Er lernt, auf einem        gefühlsmeditationen. Dadurch wird nachweislich emotiona-
+  Bein zu stehen, und braucht selbst beim Toilettengang kaum           le Resilienz (Widerstandsfähigkeit) gestärkt. Ein trainiertes
+  noch Hilfe.                                                          Mitgefühl stellt eine Strategie dar, den empfundenen
+                                                                       Schmerz beim emotionalen Mitschwingen zu überwinden
+                                                                       und das helfende Verhalten des Mitfühlenden zu verstärken.
+Schulen kognitiver Empathie • Kognitive Empathie lässt sich              Mittlerweile werden Workshops zum Erlernen von Selbst-
+üben. Hilfreich sind dabei z. B. folgende Punkte:                      mitgefühl für Bezugspersonen psychosozialer Berufe ange-
+● bewusst und aktiv Perspektivwechsel vornehmen
+                                                                       boten.
+● bewusst auf die eigene Körpersprache und die anderer
 
-34.3 Pflegegrade
-Das 2. Pflegestärkungsgesetz (PSG II, 1.1.2017) ist eine
-grundlegende Veränderung des Pflegesystems, das die Situation für Pflegeempfänger, Bezugspersonen und Pflegefachkräfte verbessern soll. Vor allem die Pflege im häuslichen
-Umfeld soll mit diesem Gesetz verbessert werden. Die Kernelemente des PSG II sind:
-● neue Definition des Begriﬀs der Pflegebedürftigkeit
-● 5 Pflegegrade ersetzen 3 Pflegestufen
-● Pflegebedürftigkeit mit einem neuen Begutachtungsinstrument (NBA)
+  achten
+● Wahrnehmungs- und Beurteilungsfehler kennen (S. 318)                     WISSEN TO GO
+● Kommunikationsverhalten von sich und anderen mit dem
 
-Definition Pflegebedürftigkeit nach SGB XI
-Pflegebedürftig sind Personen, die gesundheitlich bedingte Beeinträchtigungen der Selbstständigkeit oder Fähigkeiten aufweisen und
-deshalb Hilfe bedürfen. Pflegebedürftig ist, wer körperliche, kognitive, psychische oder gesundheitliche Belastungen nicht selbstständig
-ausgleichen kann.
-Die Pflegebedürftigkeit muss auf Dauer, für mindestens 6 Monate
-bestehen.
+  4-Ohren-Modell analysieren
+● eigene Grundhaltungen bewusst machen und im Kom-
+                                                                         Empathie und Mitgefühl
+  munikationsverhalten überprüfen                                        Empathie ist die Fähigkeit, sich in andere Menschen hinein-
+● aktives Zuhören üben                                                   zuversetzen. Kognitive Empathie bezeichnet die Fähigkeit
+● gegenseitiges Feedbackgeben üben                                       zur kognitiven Perspektivübernahme, diese ist trainierbar.
+                                                                         Emotionale Empathie bezeichnet die angeborene Fähig-
+Emotionale Empathie                                                      keit des Menschen, emotional mit Schmerzen oder Leiden
+                                                                         anderer Menschen mitzuschwingen. Diese körperlich spür-
+Definition Emotionale Empathie                                           bare Erfahrung geht mit negativen Gefühlen einher und
+Diese bezeichnet ein reales Mitfühlen, das mit körperlichen Reaktio-     damit mit emotionalem Stress.
+nen einhergeht. Es ist ein emotionales Mitschwingen mit Schmerzen           Mitgefühl (Compassion) ist ein positives Gefühl der Sor-
+oder Leiden anderer Menschen.                                            ge und geht mit dem Wunsch zu helfen einher. Es lässt
+                                                                         sich trainieren und stärkt die emotionale Widerstands-
+                                                                         fähigkeit sowie das helfende Verhalten.
 
-Zu Hause kennen die Klienten jeden Winkel der Wohnung und
-den Inhalt jedes Schranks. Die bessere Orientierung stärkt das
-Selbstbewusstsein und damit den Menschen (Symbolbild).
+  Beispiel Emotionales Mitschwingen
+  Waren Sie schon einmal Zeuge eines Streits unter Freunden? Al-
+                                                                       Seelische Unterstützung von
+  lein das Beobachten eines Streits kann beim Beobachter dazu          Pflegeempfängern
+  führen, dass z. B. ein unangenehmer Druck in Brust oder Bauch        Was hilft Ihnen, wenn Sie Sorgen haben und die Gedanken
+  ausgelöst wird und die Pulsfrequenz ansteigt. Ohne involviert        um etwas Unangenehmes kreisen? Wenn Sie Angst vor
+  oder Adressat von Beschimpfungen oder Beschuldigungen zu             etwas haben und vor lauter Sorge nicht loslassen können?
+  sein, löst bereits das Beobachten negative Gefühle aus.              Was hilft Ihnen, wenn Sie sich in einer emotionalen Notlage
+                                                                       befinden? Wodurch erfahren Sie Kraft, schöpfen Hoﬀnung
+                                                                       und Zuversicht, um wieder zu erstarken?
+Emotional empathisch mit jemandem zu sein, der leidet, ist               Wie klingen folgende Antworten? Einen Menschen zu ha-
+eine angeborene Fähigkeit. Aus Schmerzempathiestudien                  ben, der sich Ihnen und Ihren Sorgen zuwendet. Jemanden,
+weiß man, dass durch Beobachtung anderer Personen, die
+                                                                       der zuhört und versteht. Jemanden, der Ihnen hilft, in einem
+gerade Schmerzen empfinden, der Beobachter selbst
+                                                                       Gefühlschaos wieder klarzusehen. Jemanden, der Sie unter-
+Schmerzen verspürt, obwohl er aktuell keine Schmerzen er-              stützt und an Ihre Stärken erinnert. Jemanden, der Sie er-
+leidet. Der Beobachter schwingt emotional mit. Diese neuro-            mutigt (▶ Abb. 10.7).
+logischen Vorgänge lassen sich mittels Magnetresonanz-
+tomografie nachweisen.                                                 Stärkung • Was kann Pflegeempfänger stärken? Glaube,
+   Allerdings geht das emotionale Mitschwingen mit stark               Hoﬀnung, Liebe, Familie, Sinn, Werte und Überzeugungen,
+negativ erlebten Gefühlen einher. Häufiges Mitfühlen und
+                                                                       Humor (S. 264), aber auch Erfahrung, Wissen und Kenntnis-
+damit einhergehende negative Gefühle können hohen psy-                 se, Fähigkeiten und Fertigkeiten – allgemein: Ressourcen
+chischen Stress (S. 52) auslösen. Menschen in helfenden Be-            (S. 82). Jeder Mensch hat seine eigenen; wir nehmen sie nur
+rufen sind besonders burnoutgefährdet, da sie einem hohen
+                                                                       meist bei uns selbst nicht wahr, wenn wir emotional belastet
+Maß an menschlichem Leid ausgesetzt sind. Demnach wäre
+                                                                       sind. Patienten dabei behilflich zu sein, sich ihre persönli-
+die Fähigkeit des Menschen, emotional mit anderen Men-                 chen Ressourcen in einer schwierigen Situation wieder be-
+                                                                       wusst zu machen, stärkt. Die Pflegeempfänger finden wie-
 
-Die Neudefinition von Pflegebedürftigkeit ist für die häusliche Versorgung deshalb wichtig, da sie nicht nur körperliche
-Einschränkungen berücksichtigt. Demnach können nun
-auch demenzielle Erkrankungen („kognitive und psychische
-Belastungen“) zu Pflegebedürftigkeit führen. Diese Krankheitsbilder finden sich häufig bei Menschen, die zwar noch
-in ihrer häuslichen Umgebung leben, sich jedoch vielleicht
-mehr „schlecht als recht“ selbst versorgen. Auch diese Personengruppe können nun finanzielle Unterstützung in Anspruch nehmen.
-
-© Bojan/stock.adobe.com - Stock photo - posed by a model
-
-744
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Pflegegrade
-
-34.3.1 Einschätzung des
-Pflegegrads
-Um die Pflegebedürftigkeit einschätzen zu können, erheben
-die Gutachter in 6 Lebensbereichen den Grad der Selbstständigkeit der pflegebedürftigen Person. Sie arbeiten mit dem
-Neuen Begutachtungsassessment (NBA), einem pflegewissenschaftlich fundierten Begutachtungsansatz.
-Die 6 Lebensbereiche („Module“) (inkl. der für die Begutachtung relevanten Gewichtung und Beispielen für die Beurteilungskriterien):
-1. Mobilität (10 %): Wie gut gelingen Positionswechsel im
-Bett? Wie kann sich der Pflegeempfänger in der Wohnung fortbewegen? Wie gut kann er Treppen steigen?
-Kann er stabil sitzen?
-2. Kognitive und kommunikative Fähigkeiten (7,5 %): Wie
-gut ist die Orientierung zu Ort und Zeit? Versteht der
-Pflegeempfänger einfache Sachverhalte, die seinen Alltag
-betreﬀen? Erkennt er Personen aus dem näheren Umfeld?
-Ist die Steuerung von Alltagshandlungen erhalten?
-3. Verhaltensweisen und psychische Problemlagen (7,5 %):
-Ist der Pflegeempfänger verhaltensauﬀällig? Verhält er
-sich z. B. aggressiv gegen andere oder gegen sich selbst?
-Wehrt er pflegerische Maßnahmen ab? Leidet er unter
-Ängsten, Wahn oder Depressionen?
-4. Selbstversorgung (40 %): Wie gelingt die Körperpflege?
-Kann sich der Pflegeempfänger selbst waschen? Wie gelingt das An- und Ausziehen? Kann er sich selbst Essen
-zubereiten und dieses selbstständig zu sich nehmen?
-Muss er ggf. über PEG oder Sonde ernährt werden? Kann
-er eine Toilette aufsuchen? Besteht Kontinenz? Bei Kindern bis 18 Monaten: Besteht ein gravierendes Problem
-mit der Nahrungsaufnahme?
-5. Bewältigung von und selbstständiger Umgang mit krankheits- oder therapiebedingten Anforderungen oder Belastungen (20 %): Wie funktioniert die Einnahme von Medikamenten? Müssen regelmäßig Verbände gewechselt
-werden? Wer kümmert sich darum? Ist eine regelmäßige
-Einmalkatheterisierung erforderlich – und wie funktioniert diese? Kommt ein Arzt regelmäßig zu Besuch oder
-kann der Pflegeempfänger diesen selbstständig aufsuchen?
-6. Gestaltung des Alltagslebens und sozialer Kontakte
-(15 %): Kann der Pflegeempfänger seinen Alltag selbstständig gestalten? Hat er regelmäßige Wach- und Schlafenszeiten? Hat er soziale Kontakte?
-2 weitere Module werden auch begutachtet, haben aber keinen Einfluss auf die Einstufung in einem Pflegegrad. Sie sollen lediglich Informationen für eine Pflegeplanung bringen:
-1. Außerhäusliche Aktivitäten: Kann sich die Person selbstständig im öﬀentlichen Raum bewegen, an Veranstaltungen teilnehmen, Transportmittel nutzen?
-2. Haushaltsführung: Kann die Person z. B. selbstständig einkaufen oder Behördengänge erledigen?
-Zu jedem Modul muss der Gutachter pro Einzelkriterium
-Punkte vergeben, z. B. nach dem Muster:
-● selbstständig: 0 Punkte
-● überwiegend selbstständig: 1 Punkt
-● überwiegende unselbstständig: 2 Punkte
-● unselbstständig: 3 Punkte
-Danach werden die Punkte pro Einzelmodule addiert. Aus
-diesen Punktwerten wird eine Gesamtpunktzahl gebildet,
-
-auf deren Basis die Pflegeempfänger dann in einen der 5
-Pflegegrade eingeordnet werden:
-● Pflegegrad 1 (12,5 bis < 27 Punkte): geringe Beeinträchtigung der Selbstständigkeit oder der Fähigkeiten
-● Pflegegrad 2 (27 bis < 47,5 Punkte): erhebliche Beeinträchtigung der Selbstständigkeit oder der Fähigkeiten
-● Pflegegrad 3 (47,5 bis < 70 Punkte): schwere Beeinträchtigung der Selbstständigkeit oder der Fähigkeiten
-● Pflegegrade 4 (70 bis < 90 Punkte): schwerste Beeinträchtigung der Selbstständigkeit oder der Fähigkeiten
-● Pflegegrad 5 (90 bis < 100 Punkte): schwerste Beeinträchtigung der Selbstständigkeit oder der Fähigkeiten mit besonderen Anforderungen an die pflegerische Versorgung
-Je nach Pflegegrad erhalten die Pflegeempfänger dann im
-gesetzlich festgelegten Umfang Leistungen, z. B. Pflegegeld,
-Pflegesachleistungen oder die Übernahme von Kosten für
-eine evtl. erforderliche teil- oder vollstationäre Pflege.
-Die Einstufung nimmt bei gesetzlich Versicherten der
-MDK vor, bei privat Versicherten prüft eine GmbH namens
-Medicproof. Neben dem MDK können neuerdings auch zugelassene, unabhängige Gutachter die Pflegegrade prüfen.
-Der jeweilige Dienst besucht den Pflegeempfänger zu Hause
-und erfasst, wie viel Unterstützung der Pflegeempfänger benötigt, um seinen Alltag zu bewältigen. Hin und wieder
-kann es vorkommen, dass Pflegebedürftige aus Stolz ihre Lage gegenüber dem MDK beschönigen und ein höheres Maß
-an Selbstständigkeit angeben, als sie tatsächlich noch haben,
-oder umgekehrt. In diesem Fall können Pflegende den Mitarbeiter des MDK beiseitenehmen oder nach dem Besuch
-anrufen und die tatsächliche Lage schildern. Auch das
-Pflegetagebuch kann hierfür genutzt werden.
-Begutachtung bei Kindern • Auch bei Kindern wird der Grad
-der Selbstständigkeit in den Lebensbereichen Mobilität, kognitive und kommunikative Fähigkeiten, Verhaltensweisen
-und psychische Problemlagen, Selbstversorgung, selbstständige Bewältigung von Belastungen sowie Gestaltung des Alltagslebens und sozialer Kontakte beurteilt. Für die Punkteberechnung ist als Vergleichsmaßstab die Selbstständigkeit
-von Kindern im vergleichbaren Alter ohne Beeinträchtigung
-hinterlegt. Der Gutachter gibt außerdem Empfehlung zur
-Hilfeplanung, Präventionsmaßnahmen und Rehabilitation.
-Kinder unter 18 Monaten werden automatisch einen Pflegegrad höher als ältere Kinder und Erwachsene mit gleicher
-Punktzahl eingestuft. Dieser bleibt dann bis Ende des 18. Lebensmonates bestehen. So wird die häufige Neubegutachtung, die aufgrund der rasanten Entwicklungsveränderung
-in diesem Alter nötig wäre, vermieden.
-
-34.3.2 Finanzielle Leistungen
-Der jeweilige Pflegegrad entspricht einer festgelegten finanziellen Leistung, die monatlich ausgezahlt wird. ▶ Tab. 34.1
-zeigt die finanziellen Leistungen für die Pflegegrade für die
-ambulante und die vollstationäre Versorgung.
-Pflege zu Hause • Pflegebedürftige können, wenn sie daheim
-von Bezugspersonen oder Ehrenamtlichen versorgt werden,
-ambulante Pflegesachleistungen beantragen, darunter fallen
-auch die Leistungen der ambulanten Pflegedienste.
-Pflegegeld für Bezugspersonen • Pflegebedürftige, die sich
-für eine Pflege zu Hause durch Bezugspersonen entscheiden,
-können zudem Pflegegeld beantragen (▶ Tab. 34.2). Die
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-745
-
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen        257
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
 l
-34
+10    Mit Menschen kommunizieren
 
-Pflege von Menschen im häuslichen Umfeld
 
-Tab. 34.1 Die Leistungen der Pflegegrade.
-Pflegegrade
+      Abb. 10.7 Zuhören.                                                   Bamberger bezeichnet dies als „Haltung der Eingelassen-
+                                                                           heit“, die zunächst nichts anderes beinhaltet als die persön-
+                                                                           liche Entscheidung des Sich-einlassen-Wollens.
+                                                                              Nun liegt die Entscheidung beim Pflegeempfänger, das
+                                                                           Gesprächsangebot anzunehmen und sich auf die emotionale
+                                                                           Nähe einzulassen oder nicht. Pflegende reagieren somit auf
+                                                                           das emotionale Bedürfnis seitens des Patienten und handeln
+                                                                           gleichzeitig im Sinne der Selbstfürsorge, weil sie auf sein
+                                                                           emotionales Leiden reagieren. Darüber hinaus behalten sie
+                                                                           die Kontrolle und Entscheidungsfreiheit über einen passen-
+                                                                           den Gesprächszeitpunkt und können sich und ihre Arbeiten
+                                                                           dementsprechend organisieren.
+                                                                              Das Ausbalancieren der Selbstpflege und der Patienten-
+                                                                           pflege ist ein Ansatz der „Wittener Werkzeuge“, die Sie im
+                                                                           Kap. „Informieren, Schulen, Anleiten, Beraten“ (S. 555) nach-
+                                                                           lesen können.
+      „Zuhören, das ist die Seele des Gesprächs.“ (Gerd B. Achenbach)
+      © pholidito/stock.adobe.com                                          Tipps zum Umgang mit Zeit
+                                                                           Vor dem Gespräch sollte man sich Folgendes überlegen:
+                                                                           Wann wäre ein passender Gesprächszeitpunkt im Stations-
+      der Kraft, um aktiv im medizinisch-pflegerischen Behand-
+                                                                           ablauf? Wie viel Zeit steht Ihnen zur Verfügung? Lässt sich
+      lungsprozess mitzuwirken.
+                                                                           ein Gespräch mit einer pflegerischen Handlung beim Patien-
+                                                                           ten kombinieren? Gerade in der Pflege von Menschen erge-
+      Das Dilemma Pflegender                                               ben sich zahlreiche Situationen der Nähe, die wirksam ge-
+                                                                           nutzt werden können.
+      Viele Pflegeempfänger erleben Angst und Unsicherheit, füh-
+                                                                              Zu Beginn eines Gesprächs ist es hilfreich, den zur Ver-
+      len sich hilflos oder ausgeliefert, da Krankheit ihr Leben,
+                                                                           fügung stehenden Zeitrahmen zu nennen. Dies eröﬀnet bei-
+      ihre Selbstständigkeit oder ihr Wohlempfinden bedroht. Ge-
+                                                                           den Seiten einen sicheren Raum, um sich aufeinander ein-
+      wöhnlich spüren Pflegende, wenn ein Pflegeempfänger
+                                                                           lassen zu können. Gegen Ende der Zeit sollte man den Pfle-
+      emotional belastet ist – dafür sorgt ihre Fähigkeit zur Empa-
+                                                                           geempfänger z. B. darauf aufmerksam, dass z. B. noch 5 Mi-
+      thie.
+                                                                           nuten verbleiben oder dass man sich langsam dem Ende nä-
+         Der Diplompsychologe Günter G. Bamberger sagt: Wenn
+                                                                           hern sollte. Hilfreiche Sätze, die aus einem Gespräch heraus-
+      es bei Pflegenden beim emotionalen Mitschwingen mit dem
+                                                                           führen, sind z. B.:
+      Leid ihrer Patienten bleibt, ohne aktiv zu werden, werden
+                                                                           ● „Möchten Sie zum Schluss noch einmal sagen, was Ihnen
+      Pflegende selbst emotional belastet. Stress entsteht und
+                                                                             im Gespräch besonders wichtig war?“
+      kann mit der Zeit in psychische Überbelastung führen. Doch
+                                                                           ● „Wie geht es Ihnen jetzt am Ende unseres Gesprächs?“
+      Pflegende erleben sich oftmals im Zwiespalt von mangeln-
+                                                                           ● „Ist es in Ordnung, dass wir das Gespräch nun beenden?“
+      der Zeit und dem zu leistenden Arbeitspensum. Kommt
+                                                                           ● „Wie wollen wir für heute verbleiben?“
+      hierzu noch Gesprächsbedarf von Patienten, kann dies eben-
+      falls Stress auslösen. Bei Pflegenden besteht u. a. die Sorge,
+      in das Leid eines Patienten hineingezogen zu werden und              10.3.4 Entfaltung der
+      einem Gespräch kein Ende setzen zu können.
+         Im Sinne der Selbstpflege und Selbstfürsorge (S. 52) beu-         Gesprächskompetenz
+      gen Pflegende, die sich auf einen emotionalen Gesprächs-             Gesprächskompetenz ist ein Ziel in der Ausbildung von Pfle-
+      bedarf eines Patienten einlassen, der eben erwähnten emo-            gefachkräften. Kompetenz zeigt sich immer im Handeln, sie
+      tionalen Belastung vor. Außerdem verstärkt sich der Drang            geht über Wissen hinaus. Kompetenzentwicklung vollzieht
+      des Patienten nach seelischer Unterstützung, wenn sein Ge-           sich über das Erlernen von Wissen und die Anwendung die-
+      sprächsbedarf ignoriert wird. Dieser Drang kann zu einem             ses Wissens. Dafür bedarf es der Übung z. B. durch Rollen-
+      Klammerverhalten des Patienten führen, indem er z. B. häu-           spiele in der Schule. Es gibt in der Pflege zahlreiche Ge-
+      fig klingelt. Verschleppter Gesprächsbedarf „wird meist              sprächsanlässe, die alle unterschiedliche Ziele haben, z. B.
+      kompliziert und zeitaufwendig“ (Bamberger 2013). Ist die-            das Aufnahmegespräch eines Pflegeempfängers, das Über-
+      ses Dilemma zu lösen?                                                gabegespräch, die Pflegevisite oder Konfliktgespräche.
+                                                                              Kompetenzentwicklung ist ein individueller Weg, den je-
+      Sich auf den Menschen einlassen                                      der Lernende im Inneren und im Äußeren geht. Gerade zu
+      Pflegende können nicht auf jeden Gesprächsbedarf von je-             Beginn dieses Weges gilt es daher, sich die eigenen Denk-
+      dem Pflegeempfänger reagieren. Dies erwarten auch Pfle-              und Sprachmuster bewusst zu machen. Pflegende sollten
+      geempfänger i. d. R. nicht. Außerdem lässt es der Stations-          ihre Potenziale nutzen. Als Sinnbild dient eine kleine Raupe,
+      ablauf oftmals nicht zu, sofort für ein Gespräch parat zu ste-       in der bereits ein Schmetterling schlummert (▶ Abb. 10.8):
+                                                                           ● Beginnen Sie zu hören, was Sie sagen.
+      hen. Doch was ist mit der Möglichkeit, einem Patienten für
+                                                                           ● Nehmen Sie wahr, wie Sie etwas sagen.
+      einen späteren Zeitpunkt ein Gespräch anzubieten? Auch
+                                                                           ● Machen Sie sich bewusst, dass jeder Mensch in seiner Welt
+      dies bedeutet, auf einen Gesprächsbedarf zu reagieren. Der
+      Patient erfährt in diesem Moment, dass er wahr- und ernst              lebt, wahrnimmt und wertet!
+                                                                           ● Erkennen Sie an, dass Sie als Ansprechpartner (Fachkraft/
+      genommen wird.
+        Doch die Frage, die sich Pflegende situativ selbst beant-            Profi) mehr Verantwortung im Gespräch tragen als Ihr Ge-
+      worten müssen, ist, ob sie sich überhaupt auf den Patienten            sprächspartner (Laie).
+      und ein Gespräch emotionaler Nähe einlassen möchten.
 
-Geldleistung ambulant
+258     I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+        Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+         Usage subject to terms and conditions of license.
+                                                                                              Professionelle Kommunikationsgestaltung
 
-Sachleistung ambulant
 
-Pflegegrad 1
+Abb. 10.8 Entfaltung.
 
-Leistungsbetrag
-vollstationär
 
-125 Euro
 
-125 Euro
 
-Pflegegrad 2
+Das Potenzial des Schmetterlings trägt die Raupe bereits in sich. © JPS/stock.adobe.com
 
-316 Euro
 
-689 Euro
 
-125 Euro
+● Tragen Sie die Verantwortung für Ihre Sprache und Äuße-               Abb. 10.9 Papillon nach Sandra Mantz – Der Schmetterling
+  rungen selbst.                                                        im Gespräch.
+● Werden Sie sich Ihrer eigenen Gefühle und Empfindungen
 
-770 Euro
+  im Gespräch bewusst.                                                    Bewusstsein
+● Erkennen Sie Ihr Wachstumspotenzial!
 
-Pflegegrad 3
+                                                                                                    Wechselwirkung
+So wie die Raupe sich verpuppt, so können Pflegende mit
+Bildung und bewusstem Üben mehr und mehr Gesprächs-                                                    bewusste
+                                                                                                     Gedanken und
+kompetenz für ihren Beruf entfalten.
+                                                                                                        Worte
+   Die Entfaltung der Gesprächskompetenz ist in der                                  innere Haltung                  sprachlicher Ausdruck
+Schmetterlingsdarstellung (▶ Abb. 10.9) symbolisch dar-                                Menschenbild     Worte        Wortschatz
+                                                                                          Selbstwert                 Körpersprache
+gestellt Der linke Flügel steht für eine professionelle innere                        Verantwortung                  Sprachtempo
+Gesprächshaltung. Der rechte Flügel beinhaltet einen kom-                                    Ja/Nein   Gedanken      Sprachstruktur
+petenten sprachlichen Ausdruck. Zusammen wirken beide                                   Nähe/Distanz                 Sprachmelodie
+als Gesprächsfalter und unterstützen darin, die eigene Ge-                           Lösung/Problem                  Eindeutigkeit
+                                                                                Vertrauen/Misstrauen innere Bilder   Empathie
+sprächskompetenz zu reflektieren, zu trainieren und zu ent-
+                                                                                         Liebe/Angst                 Kompetenz
+falten.
+                                                                                                        Gefühle
+Linker Flügel – innere Haltung • Er besteht aus:
+● Menschenbild: Wie sehe ich Menschen in ihrem Sein und                                                  Impuls
+  ihrem Verhalten?
+● Selbstwert: Wie selbstsicher und selbstbewusst bin ich im
 
-545 Euro
+  Gespräch?                                                                                           Impulskraft
+● Verantwortung: Wie hoch ist meine Verantwortungs-
 
-1.298 Euro
+  bereitschaft, wenn es im Gespräch „schwierig“ wird?
+● Ja oder Nein: Möchte ich mich einlassen?                                Unterbewusstsein
+● Nähe oder Distanz: Kann und möchte ich mich in die Per-
 
-125 Euro
+  spektive anderer hineinversetzen?                                     Gesprächskompetenz auf einen Blick: Bedeutung und Entfal-
+● Lösung oder Problem: Tendiere ich mehr zu dem, was                    tung. Abb. nach: Vorlage Sandra Mantz
+  nicht geht, oder zu dem, was möglich ist?
+● Vertrauen oder Misstrauen: Traue ich mir und den Men-
 
-1.262 Euro
+  schen oder bin ich eher misstrauisch gestimmt?                        ● Sprachmelodie: Sprechen Sie ruhig in angemessener Laut-
+● Liebe oder Angst: Welche Emotionen und Stimmungsbil-
+                                                                          stärke. Senken Sie die Stimme am Satzende.
+  der überwiegen in mir? Erlebe ich Stress (ich muss …)                 ● Eindeutigkeit: Drücken Sie sich klar und eindeutig aus (ich
+  oder innere Sammlung (ich will …)?                                      statt wir und Sie statt man). Sprechen Sie Menschen mit
+                                                                          Namen an.
+Rechter Flügel – sprachlicher Ausdruck • Dieser Flügel beinhal-         ● Empathie: Zeigen Sie Ihr Interesse durch Nachfragen. Fas-
+tet:                                                                      sen Sie Gefühle in Worte. Geben Sie Feedback.
+● Wortschatz: Pflegen Sie einen reichen Wortschatz und
+                                                                        ● Kompetenz: Gesprächskompetenz beginnt erst, wenn es
+  wählen Sie angemessene Worte (Person und Situation).                    „schwierig“ wird. Seien Sie echt, fachlich orientiert und
+● Körpersprache: Nehmen Sie Blickkontakt zum Gesprächs-
+                                                                          dem Menschen im Gespräch professionell zugewandt.
+  partner auf. Achten Sie auf seine und Ihre Körpersprache.               Denn: Reden IST Pflegen und Sprache IST wie Medizin.
+  Führen Sie Gespräche, wann immer es geht, im Stehen
+  oder Sitzen – nicht im Gehen und Laufen.                              Der Gesprächsprofi hat immer beide Flügel im Blick. Innere
+● Sprachtempo: Sprechen Sie in gemäßigtem Tempo und
+                                                                        Haltung und sprachlicher Ausdruck wirken aufeinander ein
+  mit klarer Aussprache.                                                (Wechselwirkung) und stärken oder schwächen die Ge-
+● Sprachstruktur: Achten Sie auf kurze und vollständige Sätze.
+                                                                        sprächspartner und die Situation (Impulskraft).
 
-Pflegegrad 4
 
-728 Euro
 
-1.612 Euro
-
-125 Euro
-
-1.775 Euro
-
-Pflegegrad 5
-
-901 Euro
-
-1.995 Euro
-
-125 Euro
-
-2.005 Euro
-
-Tab. 34.2 Beiträge des Pflegegelds.
-Pflegegrad
-
-max. Leistung im Monat
-
-1
-
-0 Euro
-
-2
-
-316 Euro
-
-3
-
-545 Euro
-
-4
-
-728 Euro
-
-5
-
-901 Euro
-
-pflegende Bezugsperson erhält das Geld nicht direkt, sondern es wird an den Pflegeempfänger gezahlt.
-Zusätzlich können Pflegebedürftige noch Gelder für z. B.
-Pflegehilfsmittel (S. 59), Kurzzeit- bzw. Verhinderungspflege
-(S. 749) oder Zuschüsse zum Wohnungsumbau beantragen.
-
-WISSEN TO GO
-Pflegegrade
-Die 5 Pflegegrade wurden im Rahmen des 2. Pflegestärkungsgesetzes eingeführt und ersetzen seit 2017 die 3
-Pflegestufen. Grundlage der Pflegegrade ist die neue Definition von Pflegebedürftigkeit, die nun über den Grad der
-Selbstständigkeit bestimmt wird.
-Der Pflegegrad eines Pflegeempfängers wird mithilfe
-des Neuen Begutachtungsassessments (NBA) erfasst. Beurteilt werden folgende Lebensbereiche („Module“):
-● Mobilität
-● kognitive und kommunikative Fähigkeiten
-● Verhaltensweisen und psychische Problemlagen
-● Selbstversorgung
-● Bewältigung von und selbstständiger Umgang mit
-krankheits- und therapiebedingten Anforderungen und
-Belastungen
-● Gestaltung des Alltagslebens und sozialer Kontakt
-Der jeweilige Pflegegrad entspricht einer bestimmten finanziellen Leistung. Bei gesetzlich Versicherten führt der
-MDK die Einschätzung des Pflegegrads durch. Für Privatversicherte ist die Firma Medicproof zuständig.
-
-746
-
-Entlastungsbetrag ambulant (zweckgebunden)
-
-34.4 Versorgung im häuslichen
-Umfeld
-Wie eingangs erwähnt umfasst das Leistungsangebot der
-häuslichen Pflege ein breites Spektrum – es reicht von der
-Grundpflege bis hin zur Anleitung und Beratung pflegender
-Angehöriger.
-
-34.4.1 Grundpflege
-Im Rahmen der Pflegeversicherung umfasst die Grundpflege
-folgende Bereiche:
-● Körperpflege: z. B. Waschen, Duschen, Baden, Zahnpflege,
-Kämmen, Rasieren, Blasen- oder Darmentleerung
-● Ernährung: Vorbereitung der Nahrungsmittel (z. B. Brot in
-mundgerechte Stücke schneiden) und Unterstützung bei
-der Nahrungsaufnahme
-● Mobilität: Aufstehen und Zubettgehen, An- und Auskleiden, Treppensteigen, Verlassen der Wohnung (z. B. für
-Arztbesuche, Behördengänge)
-Die Durchführung der Grundpflege durch einen ambulanten
-Pflegedienst muss vom Pflegebedürftigen oder von seinen
-Bezugspersonen bei der Pflegeversicherung beantragt werden.
-Ist im Anschluss an einen Klinikaufenthalt eine Weiterversorgung durch einen ambulanten Dienst notwendig, so werden Pflegeempfänger und ihre Bezugspersonen i. d. R. von
-Mitarbeitern des Sozialdienstes bei der Organisation der
-Pflegeüberleitung (S. 725) unterstützt.
-
-WISSEN TO GO
-Grundpflege
-Sie umfasst z. B. Körperpflege, Unterstützung bei der Nahrungsaufnahme und Mobilität. Die Durchführung der
-Grundpflege durch einen ambulanten Pflegedienst muss
-bei der Pflegeversicherung beantragt werden.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Besonderheiten der häuslichen Pflege
-
-34.4.2 Behandlungspflege
-Die Behandlungspflege umfasst medizinisch-diagnostische
-oder medizinisch-therapeutische Pflegemaßnahmen, die
-von einem Arzt angeordnet werden. Dazu gehören u. a.:
-● Verbandwechsel
-● Wundversorgung
-● Injektionen
-● Blutzuckerkontrolle
-● medizinische Einreibungen
-● Medikamentenüberwachung
-Die Erstverordnung gilt meist für 14 Tage, sie ist auf ärztliche Anordnung verlängerbar. Sie wird von examinierten
-Pflegefachkräften durchgeführt. Die Kosten für die Behandlungspflege übernimmt die Krankenkasse des Pflegeempfängers, da sie Teil der ärztlichen Therapie ist. Die Behandlungspflege gewährleistet im Sinne der sog. Sicherungspflege (§ 37 Abs. 2 SGB V) die ärztliche Behandlung (z. B. die
-Einstellung des Blutzuckers).
-Behandlungspflege kann auch verordnet werden, um Klinikaufenthalte zu verkürzen (z. B. nach ambulanten Operationen, nach denen der Betroﬀene vorübergehend Unterstützung bei der Wundversorgung benötigt). Sie kann außerdem dazu dienen, Komplikationen und (weitere) Krankenhausaufenthalte zu vermeiden (siehe folgendes Fallbeispiel). Hier erfolgt die Behandlungspflege im Rahmen der
-Krankenhausvermeidungspflege (§ 37 Abs. 1 SGB V).
-Sowohl bei der Sicherungs- als auch bei der Krankenhausvermeidungspflege kann der Arzt im Einzelfall auch zusätzlich Grundpflege und hauswirtschaftliche Versorgung anordnen.
-
-Beispiel Behandlungspflege
-Herr S. lebt allein. Nach einem Unfall sind ein Bein und ein Arm
-in Gips. Er möchte gerne nach Hause und erhält Behandlungspflege: Mitarbeiter eines ambulanten Pflegedienstes führen eine
-medikamentöse Thromboseprophylaxe durch und injizieren ein
-Antikoagulans (z. B. Heparin).
-Mit dieser Maßnahme soll eine postoperative Thrombose
-und damit eine Komplikation, die zu einem erneuten Klinikaufenthalt führen kann, verhindert werden.
-
-WISSEN TO GO
-Behandlungspflege
-Sie wird vom Arzt zunächst für 14 Tage verordnet, ist aber
-verlängerbar. Die Leistungen umfassen medizinisch-diagnostische oder medizinisch-therapeutische Maßnahmen,
-u. a. Verbandwechsel, Injektionen und Blutzuckerkontrollen. Die Kosten übernimmt die Krankenkasse des Pflegeempfängers.
-
-34.4.3 Beratung und Anleitung von
-Bezugspersonen
-Ambulante Pflegedienste bieten teilweise ein vielfältiges Beratungs- und Schulungsangebot für Pflegeempfänger und
-ihre Bezugspersonen. Angebote können sein:
-
-für Pflegende Bezugspersonen: Pflegefachkräfte schulen eine Gruppe pflegender Bezugspersonen.
-Diese Kurse dienen der Qualitätssicherung der häuslichen
-Pflege, bieten aber auch eine gute Austauschmöglichkeit
-für Betroﬀene.
-● Pflegeanleitung zu Hause: individuelles Anleitungsangebot
-in der Häuslichkeit, das sich an den Bedürfnissen des Pflegeempfängers und den pflegenden Bezugspersonen orientiert; Themen können z. B. Durchführung der Grundpflege,
-Umgang mit Medikamenten, spezielle Pflegeprobleme bei
-bestimmten Erkrankungen oder rückenschonendes Arbeiten sein
-● Beratung nach § 37 Abs. 3 SGB XI: Pflegegeldempfänger,
-die ihre Versorgung eigenständig sichern, müssen regelmäßig eine Beratung in Anspruch nehmen, diese wird
-häufig von ambulanten Pflegediensten durchgeführt.
-● Beratung zu Leistungen der Krankenkasse und Pflegeversicherung und Unterstützung bei der Antragstellung.
-● Beratung zu Hilfsmitteln und Vermittlung von Selbsthilfegruppen
-● Pflegekurse
-
-34.4.4 Hauswirtschaftliche
-Versorgung sowie Betreuungs- und
-Aktivierungsangebote
-Bei erhöhter Pflegebedürftigkeit ist häufig eine hauswirtschaftliche Versorgung notwendig. Auch Unterstützung im
-Haushalt gehört in den Bereich der häuslichen Pflege. Dazu
-zählen:
-● Einkäufe und Besorgungen
-● Unterstützung bei der Essenszubereitung
-● Wäschepflege
-● Unterstützung bei der Hausarbeit
-Die Aufgaben im Rahmen der hauswirtschaftlichen Versorgung werden nicht von Pflegefachkräften durchgeführt,
-sondern z. B. von Mitarbeitern der Nachbarschaftshilfe, die
-häufig ehrenamtlich tätig sind. Dies gilt auch für Betreuungs- und Aktivierungsangebote wie:
-● Gespräche
-● Vorlesen, Gesellschaftsspiele
-● Spaziergänge
-● Begleitung zu kulturellen Angeboten
-
-34.5 Besonderheiten der
-häuslichen Pflege
-Vom Pflegeempfänger zum Klienten • Wie in der klinischen
-Pflege gelten in der häuslichen Pflege bestimmte Standards.
-Pflegerische Maßnahmen müssen z. B. dokumentiert werden. Eines aber ist fundamental anders: Als Pflegefachkraft
-ist man nicht mehr der „Hausherr“, sondern zu Gast bei
-einem Klienten oder Kunden. Das bedeutet, dass Pflegende
-z. B. klingeln und warten müssen, bevor sie ins Haus gelassen werden. Gegenstände in der Wohnung dürfen nicht einfach weggeräumt werden, z. B. weil ein Läufer im Flur die
-Sturzgefahr erhöht – dies muss mit dem Bewohner geklärt
-werden. Auch abgelaufene oder verschimmelte Lebensmittel
-dürfen nicht ohne Rücksprache entfernt werden. Die Rollen
-sind hier umgekehrt – nicht mehr die Klinik gibt den Takt
-vor, sondern der Mensch in seiner häuslichen Umgebung.
-Erstgespräch • Wenn sich ein neuer Klient bei einem Pflegedienst meldet, macht meist die Pflegedienstleitung einen
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-747
-
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen              259
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
 l
-34
+10    Mit Menschen kommunizieren
 
-Pflege von Menschen im häuslichen Umfeld
-ersten Besuch im häuslichen Umfeld. Dabei wird u. a. geklärt, ob bereits ein Pflegegrad beantragt ist und welcher
-Bedarf an Unterstützung besteht.
-Pflegevisite • Die Pflegedienstleitung besucht den Klienten
-regelmäßig zu Pflegevisiten. Sie dienen der Qualitätssicherung (S. 190). Dabei fragt sie u. a., wie zufrieden die Klienten
-mit der fachlichen und organisatorischen Versorgung sind
-und ob es weiteren Unterstützungsbedarf gibt. Sie kontrolliert neben dem MDK den Zustand des Pflegebedürftigen
-und begutachtet die Dokumentation. Die Aufgabe kann auch
-an eine Bezugspflegefachkraft delegiert werden. Mehr zum
-Begriﬀ der Pflegevisite finden Sie im Kap. „Instrumente zur
-Steigerung der Qualität“ (S. 203).
-Pflegedokumentation • Mit der Pflegedokumentation wird in
-erster Linie die geleistete Arbeit festgehalten. Sie dient als
-Information für Pflegende und andere Therapeuten sowie
-als Grundlage, um Pflegeleistungen abzurechnen. Die Dokumentation kann auf Papier oder computergestützt, z. B. mit
-einem Tablet, geführt werden. Bei einer Papierfassung wird
-die Dokumentation im Haus des Kunden aufbewahrt. Die
-Eintragungen müssen mit Datum und Namen des Verfassers
-versehen sein, damit sie rückverfolgt werden können. Mehr
-zur Pflegedokumentation allgemein finden Sie im Kap.
-„Pflegediagnostischer Prozess und Pflegedokumentation“
-(S. 202).
-Zusätzlich zur Pflegedokumentation haben manche ambulanten Dienste ein handschriftlich geführtes „Übergabebuch“ im Haushalt des Klienten. Die Bezeichnungen für
-das Buch können variieren. Über das Buch können die Angehörigen mit den Pflegenden, aber auch die Pflegenden untereinander kommunizieren. Beispielsweise könnte dort stehen: „Rezept für Herrn S. beim Arzt angefordert, hole es
-morgen auf dem Weg ab“ oder „Wir haben Theaterkarten
-für Mittwoch, 18 Uhr, könnten Sie eine Stunde früher kommen?“. Der Name des Verfassers muss unter jedem Eintrag
-stehen. Man kann damit vermeiden, den Pflegedienst wegen Kleinigkeiten anzurufen.
-Pflegefachkräfte als Gesprächspartner • Meist sind Mitarbeiter der häuslichen Pflege alleine unterwegs. Auch wenn die
-Zeit für die Arbeit mit den Klienten manchmal knapp wird,
-nehmen sich viele Pflegende hin und wieder 5 Minuten
-mehr für ein Gespräch. Das kann jede Pflegefachkraft für
-sich entscheiden und organisieren. Für manche Klienten
-sind die Mitarbeiter des mobilen Pflegedienstes die einzigen
-Gesprächspartner, die sie am Tag haben. Um einen Augenblick Zeit für ein paar persönliche Worte mit den Mitarbeitern zu haben, kann es vorkommen, dass die Klienten sich
-bemühen, die eigentlichen Tätigkeiten des Pflegedienstes so
-gut wie möglich vorzubereiten. Sie richten dann z. B. das Badezimmer oder das Bett, selbst wenn es Zeit und Kraft kostet.
-Hausnotrufsysteme • Manche Träger und Unternehmen bieten ein Hausnotrufsystem an. Er bietet die Möglichkeit, Tag
-und Nacht unkompliziert Hilfe anzufordern. Ein „Notfallknopf“ in Form eines Armbands oder einer Kette ist direkt
-mit der Notfallzentrale verbunden, die umgehend reagieren
-kann. Der Vorteil ist, dass das Rufsystem nah am Körper getragen wird, sodass auch z. B. bei einem Sturz, bei dem das
-Telefon meist außer Reichweite ist, dennoch Hilfe gerufen
-werden kann.
 
-748
 
-! Merke Notfälle
+      ! Merke Wechselwirkung und Impulskraft                                gut eingelebt. Geholfen haben ihr die gute Stimmung im Team
+      Unter innerlichem Druck und Stress wird häufig (unbewusst!) das       und Alexanders Transparenz über die Gesprächskultur im
+      Wort „müssen“ verwendet. Wird das Wort „müssen“ häufig ver-           Team. Das Wissen um die Erwartungen an sie gab ihr Sicher-
+      wendet, steigen innerer Druck und Stress (unbewusst!) an.             heit. Was sie am meisten freut, ist, dass auch ihr Wissen und
+                                                                            ihre Erfahrungen wertgeschätzt werden. Die Kollegen haben
+                                                                            sie dazu ermutigt, in der kommenden Teambesprechung von
+          WISSEN TO GO                                                      ihren Erfahrungen im Umgang mit demenziell erkrankten Men-
+                                                                            schen zu berichten.
+        Entfaltung der Gesprächskompetenz
+        Machen Sie sich Ihre eigenen Denk- und Sprachmuster be-           ● Kommunikationsziele im Team:
 
-Alle mobilen Dienste sind verpflichtet, eine 24-Stunden-Rufbereitschaft für den Notfall vorzuhalten. Dies ist meist eine zentrale Rufnummer.
-Schweigepflicht • Selbstverständlich unterliegen Pflegende
-in der häuslichen Pflege der Schweigepflicht. Die Schweigepflicht betriﬀt bei mobilen Diensten u. a. das Postgeheimnis oder das Fernmelde- oder Telekommunikationsgeheimnis. Krankenakten müssen in geschlossenen Umschlägen
-oder Boxen transportiert werden. Pflegende dürfen keine
-Angaben zur Gesundheit oder zum Krankheitsstand ihrer
-Klienten machen. Selbst wenn sich ein wohlmeinender
-Nachbar erkundigt, dürfen Mitarbeiter des Pflegedienstes
-keine Auskunft geben.
-Hilfsmittelbeschaﬀung • Pflegende unterstützen bei der Organisation der Hilfsmittel, die zur Förderung der Selbstständigkeit bzw. zur Unterstützung der Pflege dienen. Der Hausarzt verordnet das Hilfsmittel zunächst (▶ Abb. 34.2). Die
-Krankenkasse prüft den Antrag, bei positivem Bescheid
-übernimmt sie die Kosten. Bis die Kasse die Kostenübernahme zusichert, erhält der Betroﬀene ein Leihgerät von der
-Kasse.
+        wusst, indem Sie                                                    – den gemeinsamen Pflegeauftrag zum Wohl der Patien-
+        ● hören, was Sie sagen,                                               ten ausüben
+        ● wahrnehmen, wie Sie etwas sagen,                                  – ein wertschätzendes Arbeitsklima pflegen
+        ● sich bewusst machen, dass jeder in seiner Welt lebt und         ● Innere Haltung: Jedes Teammitglied trägt seinen Teil zu
 
-WISSEN TO GO
-Häusliche Pflege – Besonderheiten
-● Erstgespräch: beim Klienten zu Hause, Themen u. a., ob
+          fühlt,                                                            einer guten Kommunikation im Team bei.
+        ● erkennen, dass Sie als Profi im Gespräch mehr Verant-             – Die Gesprächskultur ist fachlich orientiert, vertrauens-
+          wortung tragen,                                                     würdig und aktiv.
+        ● die Verantwortung für Ihre Sprache und Äußerungen                 – Jeder im Team ist wichtig und gehört dazu.
+          selbst tragen und                                                 – Interesse aneinander und gegenseitige Toleranz pflegen.
+        ● sich Ihrer Gefühle und Empfindungen im Gespräch be-             ● Sprachlicher Ausdruck:
 
-bereits ein Pfleggrad vorliegt; außerdem erfolgt die Pflegebedarfserhebung
-● Pflegevisite: Sie dient der Qualitätssicherung; Pflegedienstleitung oder Bezugspflegefachkraft besucht den
-Klienten regelmäßig, um:
-– Zufriedenheit und weiteren Unterstützungsbedarf zu
-klären
-– Zustand des Pflegebedürftigen zu kontrollieren
-– Dokumentation zu prüfen
-● Pflegedokumentation:
-– Informationsweitergabe
-– Nachweis der geleisteten Arbeit: Grundlage der Abrechnung
-● Hausnotrufsysteme: manche Träger und Unternehmen
-bieten Armbänder oder Halsketten an, mit denen zu jeder Tages- und Nachtzeit einfach per Knopfdruck Hilfe
-gerufen werden kann
-● Schweigepflicht:
-– gilt für alle Pflegenden
-– betriﬀt auch das Post- und Fernmeldegeheimnis
-– Krankenakten in geschlossenen Umschlägen oder Boxen transportieren
-– Pflegende dürfen keine Angaben zur Gesundheit ihrer
-Klienten machen
-● Hilfsmittelbeschaﬀung:
-– Pflegende fordern benötigte Hilfsmittel beim Hausarzt
-an
-– Krankenkasse prüft und genehmigt ggf. die Verordnung des Hausarztes
+          wusst werden.                                                     – mit Namen ansprechen, grüßen, Blickkontakt aufnehmen
+                                                                            – Informationen aktiv und vollständig weitergeben, aus-
+                                                                              reden lassen, Worte der Anerkennung (fachlich/persön-
+                                                                              lich) finden
+      10.4 Kommunikation in der                                             – miteinander lachen
+      Anwendung                                                             – Feedback geben und einholen
+                                                                          ● Kompetenzentwicklung: Eine gute Kommunikation im
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-
+      Pflegende haben täglich unzählige Gesprächssituationen mit            Team bedeutet „tägliche Arbeit“! Wichtig ist, selbst aktiv
+      Kollegen, Pflegeempfängern, Bezugspersonen, Ärzten und                zu sein, seine eigenen und die Kompetenzen von Kollegen
+      Lehrern usw. Jeder stellt unterschiedliche Erwartungen an             anzuerkennen und sich als Teil des Ganzen zu sehen.
+      die Pflegenden und ihr Kommunikationsverhalten. Form, In-
+      halt und Anspruch des Gesprächs wechseln mit dem Ge-                Kritische Situationen sollten zeitnah angesprochen werden.

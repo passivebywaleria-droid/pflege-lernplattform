@@ -1,1444 +1,607 @@
-# Kapitel 12: Ethisch handeln
+# Teil 12
 
-> Quelle: I Care Pflege (Thieme, 2020), S. 280-295
+> Quelle: Icare Pflege
 > Automatisch extrahiert — Formatierung kann abweichen
 
 ---
 
-Unternehmenskultur in Gesundheitseinrichtungen
-
-11.5 Unternehmenskultur in
-Gesundheitseinrichtungen
-11.5.1 Grundlagen
-Wer von einer guten Unternehmenskultur spricht, denkt
-möglicherweise an ein freundliches Arbeitsklima, an Weihnachtsfeiern und andere Geselligkeiten mit Kollegen und
-Vorgesetzten. Dies alles ist tatsächlich Bestandteil einer Unternehmenskultur, doch es stellt bildlich gesprochen nur die
-Spitze eines Eisbergs dar. Denn neben Riten, Feiern, Umgangsformen und anderen für jeden ersichtlichen Verhaltensweisen eines Unternehmens gehört noch viel mehr zu
-seiner Kultur (▶ Abb. 11.9).
-Der Begriﬀ Unternehmenskultur beschreibt das gesamte
-Werte- und Normensystem eines Unternehmens, wobei sich
-die Basis (der Teil des Eisbergs unter der Wasseroberfläche)
-aus seinen Grundüberzeugungen bildet, die zunächst oft unbewusst das Verhalten der Mitarbeiter bestimmen. Auf der
-nächsthöheren Ebene – zwischen der Basis und der Spitze
-des Eisbergs – folgen die von dem Unternehmen ausformulierten Werte, z. B. Leitbilder oder mitarbeiterorientierter
-Führungsanspruch.
-Die Unternehmenskultur trägt maßgeblich zum Erfolg
-eines Unternehmens bei. Denn zum einen trägt sie zum Ansehen beim Kunden (in diesem Fall dem Patienten) und in
-der Öﬀentlichkeit bei und zum anderen hat sie einen erheblichen Einfluss darauf, ob sich die Mitarbeiter in dem Unternehmen wohlfühlen.
-
-11.5.2 Umgangskultur unter
-Pflegenden
-Für einen freundlichen Umgang im Arbeitsalltag sind Pflegende mitverantwortlich. Welche Möglichkeiten hat jeder
-Einzelne, um einen Beitrag zu einer guten Umgangskultur
-zu leisten?
-
-Abb. 11.9 Miteinander und aneinander arbeiten.
-
-Eine gute Unternehmenskultur hängt stark vom Verhalten des
-Einzelnen ab. Regelmäßige Besprechungen im Team müssen
-nicht immer nur patientenbezogen sein. Oﬀene Gesprächsrunden tragen dazu bei, Missverständnisse und Probleme zu lösen,
-bevor sie eskalieren. Foto: K. Oborny, Thieme
-
-Selbstreflexion
-Ein Schlüssel zu einem gelingenden Miteinander liegt im
-persönlichen Anspruch, sich das eigene Denken, Bewerten
-und Handeln bewusster machen zu wollen (Selbstreflexion).
-
-Definition Reflexion und Selbstreflexion
-Reflexion bedeutet bildungssprachlich: Nachdenken; Überlegung,
-prüfende Betrachtung. Selbstreflexion bedeutet: kritische Selbstbetrachtung, im Sinne von sich selbst und das eigene Handeln zu
-hinterfragen.
-Reflektieren Sie Ihre Gedanken:
-● Denken Sie eher positiv oder negativ, lösungs- oder defizitorientiert?
-● Was denken Sie über sich? Sind Sie streng mit sich oder
-erlauben Sie sich, Fehler zu machen?
-● Geht es Ihnen gut in Ihrer Gedankenwelt? Welche Gefühle
-erleben Sie oft in Ihrer inneren Welt?
-Die Inhalte Ihrer Gedanken aktivieren in Ihnen Bilder, Assoziationen und Emotionen. Ihre Gedanken nehmen Einfluss
-auf Ihr Wohlbefinden, auf Ihr Menschenbild und auf Ihren
-Umgang mit anderen Menschen oder mit herausfordernden
-Situationen. Hier ist der Ursprung von innerer Freiheit, Mut,
-Freundlichkeit und Humor. Hier ist auch der Ursprung von
-innerer Gefangenschaft, Trotz, Ängstlichkeit und Ungeduld.
-Reflektieren Sie Ihre Sprachmuster:
-● Welche Worte sagen Sie oft?
-● Wie schnell sprechen Sie?
-● Sprechen Sie laut oder leise?
-● Haben Sie Blickkontakt zu Ihrem Gesprächspartner, wenn
-Sie sprechen?
-● Reden Sie ohne Punkt und Komma oder kommen Sie auf
-den Punkt?
-Mit Ihrem sprachlichen Ausdruck geben Sie viel von sich
-preis: Kultur, Erziehung, innere Haltung, Emotionen, Bildung, Selbstbewusstsein, Vertrauenswürdigkeit, Fachkompetenz. Reflektieren Sie Ihre Sprachmuster im Beruf. Ihre
-Sprache spiegelt (reflektiert) sich im Arbeitsklima und Pflegeklima wider. In Ihren Umgangsformen bringen Sie die
-Sprachmuster zum Ausdruck.
-Reflektieren Sie Ihr tägliches Tun:
-● Wie schnell bewegen Sie sich?
-● Wie bewusst handeln Sie?
-● Arbeiten Sie konzentriert?
-● Sind Sie in Gedanken schon bei der nächsten und übernächsten Aufgabe?
-● Haben Sie Freude an Ihrem Tun?
-● Arbeiten Sie im Team oder sind Sie ein Einzelkämpfer?
-Wenn Sie üben, sich selbst bewusst wahrzunehmen, eröﬀnen sich Ihnen mit der Zeit gesunde und professionelle
-Handlungsmöglichkeiten. Selbsterkenntnis erweitert Ihr
-Selbstbewusstsein. Sie gewinnen Selbstsicherheit und
-Selbstvertrauen. Dadurch werden Sie innerlich stark und
-das überträgt sich nach außen. Sie zeigen Reife und Verantwortungsbewusstsein im Miteinander. Sie spiegeln Vertrauenswürde und Kompetenz einer Pflegefachkraft wider.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-277
-
-l
-11
-
-Mit Menschen zusammenarbeiten
-
-Innere Haltung und Sprachausdruck
-Mit dem Anspruch und der Bereitschaft, sich aktiv für einen
-gelungenen Umgang miteinander zu engagieren, werden
-gute Voraussetzungen geschaﬀen. Eine hohe soziale Kompetenz zeigt sich, wenn jemand erfassen kann, welche Umgangsform, welche Worte und welche innere Haltung bei
-welchem Menschen in entsprechender Situation angemessen sind und welche nicht (▶ Tab. 11.1).
-
-Mobbinghandlungen:
-● Gerüchte und Unwahrheiten
-● falsche Bewertung von Arbeitsleistungen
-● Sticheleien und Hänseleien
-● Verweigerung wichtiger Informationen
-● massive und ungerechte Kritik
-● Ausgrenzung und Isolierung
-● Darstellung als unfähiger Mitarbeiter
-● Beleidigungen
-● Arbeitsbehinderung
-
-11.5.3 Mobbing im Pflegeberuf und
-Interventionsmöglichkeiten
-Definition Mobbing
-Mobbing ist ein ständiges Schikanieren von Arbeitskollegen mit der
-Absicht, den Betroﬀenen auszugrenzen und ggf. vom Arbeitsplatz
-zu vertreiben. Es bedeutet allgemein „belästigen, anpöbeln“.
-Statistisch betrachtet sind in einem Unternehmen von 100
-Beschäftigen 3 Mitarbeiter von Mobbing betroﬀen. Damit
-kommt dieses Problem recht häufig vor. Soziale Berufe, Verkaufspersonal und Bank- und Versicherungsfachleute unterliegen einem erhöhten Mobbingrisiko. Das Mobbingrisiko ist
-bei Auszubildenden deutlich erhöht.
-
-● Arbeitsentzug
-
-Frauen werden tendenziell eher auf der sozialen Ebene,
-Männer hingegen eher auf fachlicher Ebene gemobbt.
-Mobbing verläuft in verschiedenen Phasen (▶ Tab. 11.2),
-die mit unterschiedlichen Auswirkungen beim Betroﬀenen
-einhergehen.
-Interventionsmöglichkeiten • Kommt es zu Mobbing, können
-Betroﬀene folgende Maßnahmen ergreifen:
-● sich aktiv verhalten und sich wehren
-● sich beschweren und Vorgesetzte in Kenntnis setzen
-● Probleme ansprechen, das Gespräch suchen
-● Mobbingberater oder Vertrauensperson hinzuziehen
-● Stressbewältigungsmechanismen für sich definieren und
-trainieren
-
-Tab. 11.1 Unternehmenskultur.
-förderndes Verhalten
-
-blockierendes Verhalten
-
-innere Haltung
-Menschlichkeit, Diskretion, Toleranz, Achtsamkeit und Wertschätzung, Interesse am anderen, Verantwortung für eigenes Sprechen
-und Handeln tragen, Schwächen akzeptieren, vielfältige Sichtweisen
-tolerieren, Talente anerkennen, Lösungsorientierung usw.
-
-Misstrauen, Neid und Missgunst (Wer ist hier besser dran?),
-Intoleranz, Selbstmitleid, sich minderwertig fühlen, Desinteresse,
-Ignoranz, Ironie, Zusammenarbeit verweigern, Besserwisserei,
-Machtstreben
-
-sprachlicher Ausdruck
-ausreden lassen, grüßen, informieren und anleiten, aktive Kontaktaufnahme, die Hand geben, freundliche Blicke, Humor, gemäßigte
-Lautstärke auf Station/Wohnbereich, mit Namen ansprechen,
-reicher und differenzierter Wortschatz, klare Aussagen und Aufforderungen gegenüber Kollegen, aktiv Kontakt aufnehmen, Komplimente machen, aufmerksam beobachten, sich vorstellen, loben,
-Kritik zeitnah ansprechen, Leistungen und Erfolge ansprechen, sich
-an Diskussionen beteiligen usw.
-
-nicht grüßen, Augen verdrehen, vielsagend schweigen, mehrdeutig
-sprechen, stöhnen, Vereinbarungen und Regeln missachten, beleidigt sein, schüchternes Verhalten, Blickkontakt meiden, floskelhaftes Reden, generelles Duzen von Pflegeempfängern/Senioren, hohes
-Sprechtempo, Sprechen im Laufen ohne Blickkontakte, über den
-Gang rufen, Wortfetzen und Abkürzungen verwenden, übereinander
-reden statt miteinander, übertriebene Fachsprache, Kommunikation
-vermeiden, sich raushalten, weghören, überhören, passiv im
-Gespräch sein usw.
-
-mögliche Ergebnisse dieser Verhaltensweisen
-hochwertige Zusammenarbeit, starkes Berufsimage, guter Ruf des
-Hauses, Vertrauen in eine gute Pflege, zufriedene Pflegeempfänger,
-Bewohner und Angehörige, würdige Sterbekultur, transparente
-Begleitung und Beratung, zufriedene Mitarbeiter, Führungskraft und
-Führungsfreude, Kreativität und Pioniergeist, Lern- und Entwicklungsbereitschaft, stark in Krisen, bewusster Umgang mit Nähe und
-Distanz, Selbstpflege/Psychohygiene, gesunde Mitarbeiter, langjährige Mitarbeiter, vertrauensvoller Teamgeist, Freude am Beruf,
-Individualität, Nachsicht, Persönlichkeit, hohe soziale Kompetenzen,
-hohe Frustrationstoleranz, gute Stimmung, Zusammenhalt, Stolz
-auf den Beruf usw.
-
-278
-
-unzufriedene Pflegeempfänger, Bewohner und Angehörige, Dauernörgler (Pflegeempfänger und Kollegen), lückenhafte Informationen, hoher Krankenstand im Team, hohe Fluktuation,
-Überforderung, Erschöpfung, Tratsch und Gerüchte untereinander,
-Grüppchenbildung in Teams, Burnout, Pflegefehler, Konkurrenz,
-Unfreundlichkeit, Unkonzentriertheit, gereizter Umgangston, viele
-Beschwerden, Hektik, durchgehend hohes Stressempfinden, Leistungsdruck, Ablehnung bei Entwicklungsprozessen, Ausgrenzungen
-im Team, Einzelkämpfer, durchhalten, Frust, problemorientiert,
-starre Strukturen, Druck, durchschnittliche und schlechte Pflegequalität usw.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Unternehmenskultur in Gesundheitseinrichtungen
-
-Tab. 11.2 Phasen des Mobbings.
-Allgemeine Phasenspezifika
-
-Individuelle Symptome
-
-Individuelle Reaktionsweisen
-
-Vorphase: eventuell latente Konflikte
-
-Keine Symptome
-
-Keine Reaktion
-
-Phase I: manifeste Konflikte entstehen
-
-Psychosomatische Reaktionen
-
-Versuch rationaler Konfliktbewältigung
-
-Phase II: erste Angriffe/Eskalationen
-
-Zunahme psychosomatischer Reaktionen
-
-Argumentation/erste Abwehraktionen
-
-Phase III: Eskalation/Stigmatisierung
-
-Behandlungsbedürftigkeit
-
-Hilflose/aggressive Abwehraktionen
-
-Phase IV: Steigerung der Aggression
-
-Psychosomatisches Krankheitsbild
-
-Gegenattacken/Existenzangst
-
-Phase V: Kündigung/Prozesse
-
-Kompensatorische Flucht in Krankheit
-
-Arbeitsplatzverlust/Isolation
-
-Präventionsmöglichkeiten • Um Mobbing zu verhindern, gibt
-es verschiedene Vorbeugestrategien.
-Für das Team:
-● Teamentwicklungsangebote wahrnehmen
-● teamübergreifendes Training zu Kritik- und Konfliktthemen
-● eigene Kommunikationskompetenz stärken
-Für den Einzelnen:
-● Selbstwert aufbauen
-● eigene Resilienz stärken
-● soziales Umfeld und Netzwerk pflegen
-
-WISSEN TO GO
-Mobbing
-Mobbing ist das ständige Schikanieren eines Kollegen. Ziel
-ist die Ausgrenzung des Betroﬀenen. Zu Mobbinghandlungen zählen z. B. Gerüchtestreuen, Informationsverweigerung und Arbeitsentzug. Mobbing verläuft in 5 verschiedenen Phasen:
-1. Konflikt
-2. Angriﬀ
-3. Stigmatisierung
-4. Steigerung der Aggression
-5. Kündigung
-Grundsätzlich sollten sich Betroﬀene aktiv verhalten, Vorgesetze informieren und die eigene Widerstandsfähigkeit
-fördern. Teamentwicklungsangebote können Mobbing
-ggf. verhindern.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-279
-
-12
-
-Ethisch handeln
-
-12.1 Kompetent pflegen
-Ethische Konflikte oder Fragen werden im Alltag oft dann
-bewusst wahrgenommen, wenn sich die Frage nach der
-Sinnhaftigkeit pflegerischer oder medizinischer Maßnahmen stellt, wenn es um Fragen zwischen Leben/Tod und
-Sterben geht oder wenn Pflegeempfänger nicht mehr in der
-Lage sind, ihre Wünsche zu äußern. Jedes pflegerische Handeln ist in einem ethisch-moralischen Kontext zu betrachten, da es immer darum geht, wie wir Menschen in Krankheit, Gesundheit und Sterben betreuen und begleiten. Die
-Fähigkeit, das eigene pflegerische Handeln moralisch reflektieren und begründen zu können, ist daher eine notwendige
-und wichtige Fähigkeit aller in der Pflege tätigen Personen.
-In diesem Kapitel lernen Sie u. a.,
-● welche Begriﬀe und Konzepte die theoretische Grundlage
-der ethischen Diskussion bilden.
-● was Pflegeethik ist.
-● wie sie mithilfe eines Leitfadens ethisches Handeln reflektieren können.
-● welche die ethischen Grundprinzipien sind.
-● wie Entscheidungsfindungsmodelle Teil der ethischen
-Problemlösung sein können.
-● wie ethische Fragestellungen in der Praxis umgesetzt werden.
-● wo Sie ethische Grenzsituationen in der Praxis vorfinden
-und wie Sie damit umgehen.
-
-280
-
-12.2 Notwendigkeit einer Ethik
-in der Pflege
-Die Ethikerin Hille Haker ruft uns mit ihrem Artikel „Vom
-Umgang mit der Verletzlichkeit des Menschen“ ins Gedächtnis, dass wir bei Fragen in Medizin und Pflege immer wieder
-auf die Begriﬀe der Verletzlichkeit und Würde treﬀen. Die
-beiden ethischen Konzepte fordern uns dazu auf, im Umgang mit anderen Menschen achtsam zu sein.
-Verletzlichkeit • Haker unterscheidet zwischen der Verletzlichkeit als anthropologischer Kategorie und der Verletzlichkeit als moralischer Kategorie:
-● Verletzlichkeit als anthropologische Kategorie besagt, dass
-jeder Mensch verletzlich ist und dies Teil des Menschseins
-ist.
-● Verletzlichkeit als moralische Kategorie spielt in Krankheit
-und Alter eine besondere Rolle. Denn Menschen sind darin
-auf Hilfe und Unterstützung anderer Menschen angewiesen. Diese Abhängigkeit vom Handeln anderer Menschen
-macht verletzlich: Pflege kann wohltun, sie kann aber
-auch andere in ethisch nicht zu rechtfertigender Weise
-missachten oder sogar schädigen (Haker 2014).
-Würde • Die Würde des Menschen ist ein hohes moralisches
-Gut (Wert). Aber was versteht man unter Würde? Ein Blick
-ins Wörterbuch verrät, dass die Würde ein achtunggebietender Wert ist, der einem Menschen innewohnt.
-● Rechtliche Dimension: „Alle Menschen sind frei und gleich
-an Würde und Rechten geboren“, dies benennt die allgemeine Erklärung der Menschenrechte in Artikel 1 als
-oberstes Prinzip der Menschenrechte. Das Grundgesetz
-der BRD ist auf den Grundsätzen der Menschenrechte von
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Kompetent pflegen
-
-▶ S. 280
-
-Notwendigkeit einer
-Ethik in der Pflege
-
-Grundlagen
-der Ethik
-
-Verantwortungsbereiche der Pflege ▶ S. 281
-Nutzen einer Pflegeethik
-
-▶ S. 282
-
-Werte ▶ S. 282
-Normen ▶ S. 283
-
-Ethische Normen
-für die Pflege
-
-Ethische Reflexion und
-Entscheidungsfindung
-
-ICN-Ethikkodex
-
-▶ S. 283
-
-Pflege-Charta ▶ S. 283
-
-Prinzipienethik ▶ S. 285
-Entscheidungsfindungsmodelle ▶ S. 287
-Ethische Entscheidungsfindung in der Anwendung ▶ S. 288
-
-Das Kapitel vermittelt
-Kompetenzen im
-KB I.3, II.3 und z.T. IV
-
-Ethische Grenzsituationen
-in der Pflege
-
-Sterbehilfe
-
-▶ S. 290
-
-Patientenverfügung ▶ S. 290
-Hirntod ▶ S. 291
-Freiheitentziehende Maßnahmen ▶ S. 292
-
-Freiheit, Gleichheit und der Würde aller begründet. Artikel
-1 des Grundgesetzes besagt: „Die Würde des Menschen ist
-unantastbar. Sie zu achten und zu schützen ist Verpflichtung aller staatlichen Gewalt.“ Basierend auf Grundrechten hat der Gesetzgeber eine Reihe von Gesetzen (Normen) erlassen, die den Schutz der Menschenwürde gewährleisten sollen. Für unser Zusammenleben bedeutet
-dies, dass wir unsere Gleichheit an Würde und an Rechten
-gegenseitig anerkennen sowie unsere Rechte und Pflichten wahrnehmen, um zum Schutz der Menschenwürde
-beizutragen.
-● Moralische Dimension: Würde ist jedem Menschen zu eigen. Allein deshalb, weil er existiert, und nicht, weil er besondere Eigenschaften oder Fähigkeiten aufweist. Die
-Würde kann einem Menschen nicht genommen, jedoch
-kann sie durch andere missachtet werden. Weil der
-Mensch Würde hat, hat er einen Anspruch auf Unversehrtheit. Die Würde der Menschen, die aufgrund körperlicher
-und/oder geistiger Beeinträchtigung nicht in der Lage sind,
-für sich selbst ihren Anspruch auf Unversehrtheit und
-Achtung ihrer Rechte selbst durchzusetzen, ist besonders
-zu schützen (Lanius 2010). Darin besteht die Verantwortung der ihnen helfenden Menschen.
-
-dürfnissen, die von Pflegenden verlangen, Entscheidungen
-zu treﬀen. Diese Entscheidungen haben immer auch gewichtigen Einfluss auf die Lebensqualität während des Genesungsprozesses, der Krankheits- oder Sterbephase.
-
-Bedeutung für Pflegende • Pflegefachkräfte verbringen viel
-Zeit mit dem Pflegeempfänger. Unweigerlich greifen viele
-der Pflegetätigkeiten in die Intimsphäre des Pflegeempfängers ein. Pflegefachkräfte sind Ansprechpartner für Bedürfnisse wie auch für Sorgen und Ängste. In all diesen Situationen spielen die von Haker beschriebene Verletzlichkeit sowie die Achtung und der Schutz der Würde hilfe- und pflegebedürftiger Menschen eine wesentliche Rolle. Dies fordert
-Pflegefachkräfte auf, ihr Handeln ethisch zu reflektieren.
-Hinzu kommt, dass pflegerische Tätigkeiten innerhalb
-zeitlicher, finanzieller und qualitativer Vorgaben durchgeführt werden müssen. Immer wieder kommt es hierbei zu
-Konflikten zwischen unterschiedlichen Interessen und Be-
-
-12.2.1 Verantwortungsbereiche der
-Pflege
-
-WISSEN TO GO
-Notwendigkeit einer Pflegeethik
-Hilfe- und pflegebedürftige Menschen sind von der Unterstützung anderer Menschen abhängig, dies macht sie besonders verletzlich. Der Anspruch auf Unversehrtheit, den
-jeder Mensch aufgrund seiner Würde hat, ist bei hilfe- und
-pflegebedürftigen Menschen durch die ihnen helfenden
-Menschen besonders zu schützen.
-Pflege ist ein Beruf nah am Menschen, der in einem
-Konfliktfeld aus unterschiedlichen Interessen und Bedürfnissen stattfindet. Die Entscheidungen, die Pflegende hierbei treﬀen müssen, haben immer auch Einfluss auf die Lebensqualität während des Genesungsprozesses, der Krankheits- oder Sterbephase.
-
-Pflegeethik als eigenständige Bereichsethik bedarf nicht
-notwendigerweise neuer ethischer Grundsätze oder Theorien. Es geht darum, die spezifischen Merkmale von Pflege
-und Pflegesituationen aufzugreifen, in denen Pflegende Verantwortung tragen, und diese ethisch zu betrachten
-(▶ Abb. 12.1). Diese besonderen Merkmale ergeben sich
-● innerhalb des eigenständigen Tätigkeitsbereichs durch Besonderheiten in der Pflegeempfänger-Pflegefachkraft-Beziehung (wie im Rahmen der Verletzlichkeit und Schutzbedürftigkeit beschrieben).
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-281
-
-l
-12
-
-Ethisch handeln
-Abb. 12.1 Ethische Betrachtung.
-
-Was ist der Wille eines bewusstlosen Patienten?
-
-Mit steigernder Komplexität medizinethischer Fragestellungen und zunehmendem Bewusstsein dafür, dass ethische
-Entscheidungen im Dialog verschiedener Berufsgruppen getroﬀen werden sollten (z. B. interdisziplinäre ethische Fallbesprechungen), werden Pflegende mehr und mehr gefordert sein, sich auch in medizinethischen Fragestellungen
-kompetent mit ihrer pflegeethischen Perspektive zu positionieren – als bereichernder Beitrag und Ergänzung zur Medizinethik. Ein kompetenter Gesprächspartner in ethischen
-Fragestellungen zu sein heißt, ethisch schwierige Situationen erkennen und analysieren sowie ethisch urteilen und
-begründen zu können.
-Aus all den zuvor dargelegten Aspekten geht hervor, wie
-wichtig es ist, dass sich Pflegende ihrer ethischen Verantwortung bewusst sind. Pflegeethik ist ein Teil von Ausbildung und täglicher Praxis, dazu bedarf es einiger ethischer
-Grundlagenkenntnisse.
-
-Foto: K. Oborny, Thieme
-
-12.3 Grundlagen der Ethik
-● im
-
-mitverantwortlichen Tätigkeitsbereich, da in diesem
-pflegerischen Handlungsfeld die Durchführung einer Tätigkeit angeordnet bzw. übertragen wird. Hier kommt es
-zu schwierigen Situationen, wenn Pflegende die übertragene Aufgabe ethisch oder fachlich als falsch beurteilen
-und entscheiden müssen, wie sie nun handeln sollen.
-● durch den medizinischen Fortschritt und die Anwendung
-neuer Techniken, die auch Pflegende vor ethisch herausfordernde Situationen stellen, z. B. die Pflege von hirntoten
-Menschen (S. 291).
-● in den Bereichen Pflegeforschung, -wissenschaft, -management, -pädagogik und -organisation, da Pflegende
-auch hier Verantwortung übernehmen. Diese Aufgaben
-gehen mit einer ethischen Verantwortung einher und bedürfen deshalb unweigerlich ethischer Reflexion durch die
-Pflegenden selbst.
-
-12.2.2 Nutzen einer Pflegeethik
-Die Auseinandersetzung mit Pflegeethik führt zur Reflexion
-der persönlichen sowie der berufseigenen Werte und Wertvorstellungen. Des Weiteren dient die Auseinandersetzung
-mit ethischen Aspekten des pflegerischen Handelns
-● einer Sicherung der Pflegequalität. Denn ethische Prinzipien wie Autonomie oder Nichtschaden werden geachtet
-und das Wohl und die Bedürfnisse des hilfe- und pflegebedürftigen Menschen in den Mittelpunkt des pflegerischen
-Handelns gestellt.
-● der Bewältigung von Konflikten (z. B. mit Pflegeempfängern oder im interdisziplinären Team). Eigene Positionen
-und Entscheidungen können ethisch begründet und für
-das Gegenüber verständlich gemacht werden. Ethik fordert auch, die eigene Haltung in Konflikten zu überdenken
-und aktiv zu einem gegenseitigen Verständnis beizutragen
-● der Analyse von Rahmenbedingungen. Rahmenbedingungen werden dahin gehend betrachtet, ob bzw. inwieweit
-ethische Prinzipien und Rechte der betroﬀenen Menschen
-in einem System oder einer Organisation beachtet werden
-(können).
-Eine eigene Berufsethik ist Teil eines Professionalisierungsprozesses. Nicht nur die fachliche und die bildungspolitische
-Entwicklung einer Berufsgruppe sind hierbei Bestandteil,
-sondern auch die Entwicklung, Verpflichtung und Orientierung an berufsethischen Normen.
-
-282
-
-Ethik wird im Allgemeinen als philosophische Disziplin verstanden, die sich darum bemüht, moralisches Handeln
-durch theoretische Reflexion zu hinterfragen und zu begründen. Der Gegenstand, mit dem sich die Ethik auseinandersetzt, ist die Moral.
-
-Definition Moral
-Moral ist die Gesamtheit von Normen, Grundsätzen und Werten, die
-das zwischenmenschliche Verhalten einer Gesellschaft regulieren,
-die von ihr als verbindlich akzeptiert werden. (Duden 2010)
-Unsere moralischen Einstellungen beeinflussen unser tägliches Handeln und Urteilen meist unbewusst. Der Unterschied zwischen Ethik und Moral liegt darin, dass Ethik ein
-reflektiertes Nachdenken über unser moralisches Handeln
-fordert, damit wir zu begründeten Entscheidungen gelangen, nach denen wir handeln können.
-
-12.3.1 Werte
-Werte sind angestrebte Zustände (z. B. Frieden) oder bewusste bzw. unbewusste Vorstellungen darüber, was Menschen in ihrem Leben als gut, wertvoll und erstrebenswert
-erachten. Jeder Mensch hat andere Vorstellungen darüber
-und somit ist auch das Handeln jedes Menschen von unterschiedlichen Werten motiviert. Wenn von Werten geredet
-wird, handelt es sich nicht immer um moralische Werte
-(▶ Tab. 12.1). Reichtum, Kunst oder Erfolg können ebenfalls
-Werte sein, nach denen eine Person strebt und die ihr Handeln leiten. In der Ethik sind moralische Werte von Bedeutung. Moralische Werte sind Grundsätze, die das menschliche Miteinander betreﬀen, z. B. Gerechtigkeit oder Ehrlichkeit.
-
-Beispiel Persönliche Werte reflektieren
-Welche Werte sind Ihnen in Ihrem Privatleben wichtig? Welche
-Werte stehen hinter Ihrer Berufswahl? Welche Werte leiten Sie
-in Ihrem pflegerischen Handeln? Notieren Sie Ihre Antworten.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Ethische Normen für die Pflege
-
-Tab. 12.1 Unterschiedliche Werte im Überblick.
-Werte
-
-Beispiele
-
-moralische Werte
-
-Gerechtigkeit, Mitmenschlichkeit, Treue, Ehrlichkeit, Frieden, Liebe, Leben
-
-religiöse Werte
-
-Gottesfurcht, Nächstenliebe, Feindesliebe, Barmherzigkeit, Gehorsam
-
-politische Werte
-
-Freiheit, Gleichheit, Solidarität
-
-ästhetische Werte
-
-Schönheit, Jugendlichkeit, Kunst
-
-materielle Werte
-
-Wohlstand, Reichtum, Erfolg, Haltbarkeit
-
-pflegeethische Werte der Pflege-Charta
-(S. 283)
-
-● Stärkung der Position hilfe- und pflegebedürftiger Menschen
-● Achtung der Individualität
-● Selbstbestimmung und Hilfe zur Selbsthilfe
-● Fürsorge
-● Respekt
-● Schutz von Privatheit und Intimsphäre
-● Teilhabe, Kommunikation
-● Gesundheitsförderung
-
-12.3.2 Normen
-Die Anerkennung gemeinsamer Werte macht ein friedliches
-Zusammenleben überhaupt erst möglich. Damit das Leben
-in einer Gemeinschaft oder Gruppe funktioniert, gibt es
-Normen (Regeln, Gebote, Gesetze, Handlungsvorschriften).
-Über Normen sollen Werte geschützt und realisiert werden.
-Normen unterscheiden sich von Werten darin, dass sie sagen, wie eine Person handeln sollte, z. B.:
-● Du sollst nicht töten.
-● Pflegende sollen zum Wohl des Pflegeempfängers handeln.
-● Es ist verboten, anderen Menschen zu schaden.
-Ethische Normen, z. B. ethische Prinzipien (S. 285), sollen den
-Menschen bei der Entscheidungsfindung unterstützen. Im
-konkreten Einzelfall (z. B. einer bestimmten Pflegesituation)
-ist der Mensch jedoch aufgefordert, sich kritisch mit diesen
-Normen auseinanderzusetzen und ihre Bedeutung für den
-Einzelfall zu reflektieren. Dies ist eine wichtige Voraussetzung
-für den Umgang mit ethischen Normen in der Pflege.
-
-WISSEN TO GO
-Ethik und Moral
-Moral ist die Gesamtheit von Normen, Grundsätzen und
-Werten, die das zwischenmenschliche Verhalten einer Gesellschaft regulieren und von ihr als verbindlich akzeptiert
-werden. Moral beeinflusst das tägliche Handeln und Urteilen meist unbewusst. Ethik ist ein reflektiertes Nachdenken über das moralische Handeln, um zu begründeten Entscheidungen zu gelangen.
-Werte sind angestrebte Zustände oder bewusste bzw.
-unbewusste Vorstellungen darüber, was Menschen in ihrem Leben als gut, wertvoll und erstrebenswert erachten.
-Es gibt moralische, religiöse, politische, ästhetische und
-materielle Werte; sie dienen der Orientierung, leiten bei
-Entscheidungen, motivieren zum Handeln, geben ihm Sinn
-und dienen als Begründung
-Normen sind Regeln, Gebote, Gesetze oder Handlungsvorschriften, die Werte schützen und realisieren und das Zusammenleben in einer Gesellschaft oder Gruppe ermöglichen sollen. Ethische Normen dienen der Entscheidungsfindung. Ihre
-Bedeutung sollte im Einzelfall kritisch reflektiert werden.
-
-12.4 Ethische Normen für die
-Pflege
-12.4.1 ICN-Ethikkodex
-Das bedeutendste Dokument, das die ethischen Standards
-der Pflegeprofession zum Ausdruck bringt, ist der ICN-Ethikkodex für Pflegende. Dieser Kodex wurde 1953 vom International Council of Nurses (Zusammenschluss von mehr als
-130 Berufsverbänden) verabschiedet. Er basiert auf der Achtung der Menschenrechte und der Würde des Menschen sowie einem respektvollen Umgang miteinander. Der ICNEthikkodex ist ein Leitfaden ethischer Verhaltensnormen,
-nach denen Pflegende handeln sollen, um sozialen Werten
-und Bedürfnissen gerecht zu werden. Er nennt 4 Bereiche,
-in denen Verhaltensnormen dafür formuliert sind, wie sich
-Pflegende in Bezug auf
-● ihre Mitmenschen,
-● ihre Berufsausübung,
-● ihre Profession und
-● ihre Kollegen
-verhalten sollen.
-Der Ethikkodex bestärkt die ethische Verantwortung der
-Pflegeprofession und macht diese Verantwortung sowohl
-nach außen für die Gesellschaft wie auch nach innen für die
-eigene Profession sichtbar. Damit der Kodex nicht nur ein
-mit Worten beschriebenes Papier darstellt, ist es die Aufgabe
-von Pflegepädagogen, Pflegefachkräften, Pflegemanagement
-und Berufsverbänden, sich mit den Inhalten auseinanderzusetzen und sie in die Praxis zu überführen. Anhand der
-aufgestellten Verhaltensnormen ist das jeweilige Praxisfeld
-zu reflektieren und Handlungen daraus abzuleiten.
-
-12.4.2 Pflege-Charta
-Auf Initiative des Bundesministeriums für Familie, Senioren,
-Frauen und Jugend (BMFSFJ) und des Bundesministeriums
-für Gesundheit und soziale Sicherung fand in den Jahren
-2003–2005 der „Runde Tisch Pflege“ statt. Über 200 Experten aus Verbänden, Bund, Ländern, Kommunen, Praxis und
-Wissenschaft erarbeiteten die „Charta der Rechte hilfe- und
-pflegebedürftiger Menschen“ (▶ Abb. 12.2). Ziel der Charta
-ist es, „die Rolle und die Rechtsstellung hilfe- und pflegebe-
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-283
-
-l
-12
-
-Ethisch handeln
-Abb. 12.2 Pflege-Charta (nach BMFSFJ 2018).
-
-Artikel 1: Selbstbestimmung und Hilfe zur Selbsthilfe
-Jeder hilfe- und pflegebedürftige Mensch hat das Recht auf Hilfe zur Selbsthilfe sowie auf Unterstützung, um
-ein möglichst selbstbestimmtes und selbstständiges Leben führen zu können.
-
-Artikel 2: Körperliche und seelische Unversehrtheit, Freiheit und Sicherheit
-Jeder hilfe- und pflegebedürftige Mensch hat das Recht, vor Gefahren für Leib und Seele geschützt zu werden.
-
-Artikel 3: Privatheit
-Jeder hilfe- und pflegebedürftige Mensch hat das Recht auf Wahrung und Schutz seiner Privat- und Intimsphäre.
-
-Artikel 4: Pflege, Betreuung und Behandlung
-Jeder hilfe- und pflegebedürftige Mensch hat das Recht auf eine an seinem persönlichen Bedarf ausgerichtete,
-gesundheitsfördernde und qualifizierte Pflege, Betreuung und Behandlung.
-
-?
-!
-
-Artikel 5: Information, Beratung und Aufklärung
-Jeder hilfe- und pflegebedürftige Mensch hat das Recht auf umfassende Informationen über Möglichkeiten und
-Angebote der Beratung, der Hilfe, der Pflege sowie der Behandlung.
-
-Artikel 6: Kommunikation, Wertschätzung und Teilhabe an der Gesellschaft
-Jeder hilfe- und pflegebedürftige Mensch hat das Recht auf Wertschätzung, Austausch mit anderen Menschen
-und Teilhabe am gesellschaftlichen Leben.
-
-Artikel 7: Religion, Kultur und Weltanschauung
-Jeder hilfe- und pflegebedürftige Mensch hat das Recht, seiner Kultur und Weltanschauung entsprechend zu leben
-und seine Religion auszuüben.
-
-†
-
-Artikel 8: Palliative Begleitung, Sterben und Tod
-Jeder hilfe- und pflegebedürftige Mensch hat das Recht, in Würde zu sterben.
-
-Die 8 Artikel der Pflege-Charta.
-
-dürftiger Menschen zu stärken“ und ihre Lebenssituation zu
-verbessern (Deutsches Zentrum für Altersfragen 2005).
-Die einzelnen Artikel formulieren die Rechte der hilfeund pflegebedürftigen Menschen. Sie dienen dem Schutz
-der Menschenwürde und basieren auf den Grundrechten
-des Grundgesetzes sowie Gesetzen des Sozialrechts. In der
-Pflege-Charta werden die einzelnen Artikel erläutert und
-kommentiert. Dabei werden auch Qualitätsmerkmale und
-Ziele für eine würdevolle Pflege genannt. Die Pflege-Charta
-soll den verantwortlichen Menschen und Institutionen in
-Pflege, Betreuung und Behandlung als Handlungsleitlinie
-dienen.
-
-284
-
-Umsetzung der Pflege-Charta
-Für die Umsetzung müssen alle aus der Pflege mitmachen –
-vom Pflegeschüler bis zum Pflegedirektor. Alle müssen bereit sein, das eigene Berufsverständnis, die eigenen Sichtweisen über eine würdevolle Pflege sowie das eigene Handeln kritisch zu hinterfragen und das Handeln nach den
-Leitsätzen der Pflege-Charta auszurichten. Politische Instanzen und Einrichtungsträger sind dazu aufgerufen, die notwendigen Rahmenbedingungen zur Gewährleistung der in
-der Pflege-Charta beschriebenen Rechte weiterzuentwickeln
-und sicherzustellen.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Ethische Reflexion und Entscheidungsfindung
-
-WISSEN TO GO
-
-Diese Prinzipien sind gut auf die Pflege übertragbar. Sie sind
-hilfreich bei der Analyse und Reflexion des pflegerischen
-Handelns und herausfordernder Situationen (Fölsch 2012).
-
-Ethische Normen für die Pflege
-
-Prinzip des Respekts vor der Autonomie
-
-ICN-Ethikkodex für Pflegende
-Er ist der bedeutendste ethische Standard der Pflegeprofession. Er ist ein Leitfaden ethischer Verhaltensnormen,
-nach denen Pflegende in Bezug auf ihre Mitmenschen, ihre
-Berufsausübung, ihre Profession und ihre Kolleginnen und
-Kollegen handeln sollen, um sozialen Werten und Bedürfnissen gerecht zu werden. Aufgabe von Pflegenden ist es,
-sich mit den Inhalten des Ethikkodex auseinanderzusetzen
-und daraus Handlungen für die Praxis abzuleiten.
-
-Definition Autonomie
-
-Pflege-Charta
-Sie wurde zum Schutz der Menschenwürde hilfe- und pflegebedürftiger Menschen erstellt, um die Rolle und Rechtsstellung dieser Menschen zu stärken und eine würdevolle
-Pflege zu ermöglichen. Sie enthält 8 Artikel, die die Rechte
-hilfe- und pflegebedürftiger Menschen formulieren
-(▶ Abb. 12.2). Diese basieren auf den Grundrechten des
-Grundgesetzes sowie Gesetzen des Sozialrechts.
-
-12.5 Ethische Reflexion und
-Entscheidungsfindung
-Durch ethische Reflexion soll eine verantwortbare Praxis gelebt werden. „Verantwortung“ enthält das Wort Antwort. Jemand, der verantwortlich handelt, ist in der Lage, vernünftig
-auf die Frage zu antworten, warum er so und nicht anders
-gehandelt hat. Er kann seine Handlung auf rationaler Ebene,
-d. h. vernünftig, einsichtig und nachvollziehbar begründen.
-Zur ethischen Reflexion pflegerischer und medizinischer
-Praxis werden z. B. Prinzipien als Hilfsmittel verwendet.
-Prinzipien dienen hierbei zur moralischen Orientierung.
-
-Dieses Prinzip fordert von Pflegenden, das Recht des Pflegeempfängers zu achten, gemäß seinen Wertvorstellungen und seinem Glauben für sich zu wählen und Entscheidungen zu treﬀen.
-Monika Bobbert, Pflegeethikerin und Psychologin, formulierte 2002 zur Klärung dieses Rechts in der Pflege weitere
-Rechte (▶ Abb. 12.3):
-● Recht auf informierte Zustimmung/Ablehnung: Der Patient hat ein Recht auf verständliche Informationen, auf
-deren Basis er entscheiden kann, ob er einer pflegerischen
-Handlung zustimmt oder diese ablehnt.
-● Recht auf Selbstbestimmung in Bezug auf das Eigenwohl:
-Der Pflegeempfänger hat das Recht, für sich zu entscheiden, was ihm guttut, auch wenn dies der pflegerischen
-Vorstellung widerspricht, z. B. Häufigkeit der Körperpflege.
-● Recht auf Wahl zwischen möglichen Alternativen: Alternativangebote bei der Wahl und Durchführung von Pflegemaßnahmen vergrößern die Wahrscheinlichkeit, dass den
-Vorlieben des Pflegeempfängers Sorge getragen wird. Zum
-Beispiel gibt es verschiedene Möglichkeiten, eine Inkontinenz pflegerisch zu versorgen. Stellt man diese dem Patienten vor, kann er nach seinen Bedürfnissen und Wünschen eine autonome Entscheidung treﬀen.
-● Recht auf eine möglichst geringe Einschränkung des Handlungsspielraums: Arbeitsabläufe, Vorschriften und institutionelle Rahmenbedingungen schränken den individuellen
-Handlungsspielraum des Patienten immer wieder ein. Diese Einschränkungen sollten jedoch dahin gehend überdacht werden, ob sie zur Gewährleistung der Versorgung
-der Patienten notwendig sind oder „nur“ pflegerischen Arbeitsabläufen dienen.
-
-Definition Prinzip
-Bei einem Prinzip handelt es sich um eine Gesetzmäßigkeit, eine
-(Verhaltens-)Norm oder eine feste Regel, die jemand zur Richtschnur
-seines Handelns macht, durch die er sich in seinem Denken und
-Handeln leiten lässt.
-Innerhalb der Ethik gibt es verschiedene prinzipienorientierte Ansätze. Gemeinsam ist ihnen, dass über die Anwendung ethischer Prinzipien bestimmte Werte geschützt werden sollen. Folgend wird die in der Medizin- und Pflegeethik
-vorrangig angewandte Prinzipienethik näher betrachtet.
-
-12.5.1 Prinzipienethik
-Die Prinzipienethik vereint unterschiedliche Aspekte mehrerer Ethiktheorien. Es hat sich gezeigt, dass die Prinzipienethik
-gut auf die Praxis anwendbar ist. In ihrem Buch „Principles of
-Biomedical Ethics“ stellen Tom L. Beauchamp und James F.
-Childress 4 Prinzipien vor, die zur Orientierung bei der ethischen Entscheidungsfindung dienen. Die einzelnen Prinzipien
-sind gleichwertig, nicht hierarchisch eingeteilt. Sie lauten:
-● Prinzip des Respekts vor der Autonomie (Selbstbestimmung)
-● Prinzip der Fürsorge
-● Prinzip des Nichtschadens
-● Prinzip der Gerechtigkeit
-
-Abb. 12.3 Ausdiﬀerenzierung des Autonomieprinzips.
-
-Nein!
-
-1
-
-Ja!
-
-2
-
-Wahl zwischen
-möglichen Alternativen
-
-Recht
-auf
-
-informierte Zustimmung/Ablehnung
-
-Nein!
-Ja!
-
-möglichst geringe
-Einschränkung des
-Handlungsspielraums
-
-Selbstbestimmung
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-285
-
-l
-12
-
-Ethisch handeln
-Um die Achtung der Autonomie des Pflegeempfängers zu
-fördern, gibt es in der Pflege viele weitere Aspekte, z. B. indem man Gehhilfen bereitstellt, die mehr Selbstständigkeit
-ermöglichen.
-Es stellen sich Fragen, inwieweit Depressionen, Schmerz
-oder das Gefühl der Abhängigkeit es einem Menschen möglich machen, für sich selbst zu entscheiden, und was Autonomie bei Menschen bedeutet, die nicht – oder nur eingeschränkt – entscheidungsfähig sind.
-
-! Merke Haltung
-
-Wesentlich im Rahmen der Autonomie ist die persönliche Haltung
-Pflegender. Wie begegne ich einem Pflegeempfänger? Gebe ich ihm
-durch meine Haltung und mein Verhalten Raum und Gelegenheit,
-seine Wünsche und Bedürfnisse auszudrücken? Inwieweit ein Pflegeempfänger seine Autonomie wahrnehmen kann, ist wesentlich
-davon beeinflusst, wie ihm begegnet wird.
-
-Prinzip der Fürsorge
-Definition Fürsorge
-Das Prinzip der Fürsorge fordert Pflegende dazu auf, zum Wohle des
-Pflegeempfängers zu handeln.
-Für den Pflegeempfänger und sein Wohlbefinden zu sorgen,
-liegt im Wesen der Pflege. Oft wissen Pflegende aufgrund
-ihrer pflegerischen Kompetenzen, wie sie zum Wohl des Patienten handeln können. Beauchamp und Childress (2009)
-leiten aus dem Prinzip der Fürsorge die Pflicht ab, den Patienten vor Schaden zu schützen bzw. schädigende Bedingungen zu entfernen und für die Rechte des anderen einzutreten und diese zu schützen.
-Beachtet werden muss, dass es zu unterschiedlichen Einschätzungen zwischen Pflegeempfänger und Pflegefachkraft
-kommen kann. Das Wohl des Pflegeempfängers kann aus
-pflegerischer Perspektive anders beurteilt werden als vom
-Pflegeempfängers selbst. Nicht alles, was aus der Motivation, „Gutes zu tun“, gemacht wird, liegt auch im Interesse
-des Gegenübers.
-Bei nicht urteilsfähigen oder desorientierten Menschen ist
-es manchmal schwer zu beurteilen, was zum Wohle des Patienten ist. Hier sind Pflegende auf ihre pflegerischen Kompetenzen, auf Aussagen von Angehörigen sowie auf Beobachtungen des betroﬀenen Menschen angewiesen, z. B. Anzeichen von Schmerz, Zusammenpressen der Lippen bei Essenseingabe.
-Aus der Forderung, zum Wohle des Pflegeempfängers zu
-handeln, ergeben sich weitere wichtige Aspekte, die beachtet werden müssen:
-● Um zum Wohle eines anderen Menschen handeln zu können, bedarf es der Bereitschaft und Fähigkeit seitens der
-Pflegenden, sich in andere Menschen hineinzuversetzen
-(Perspektivenwechsel).
-● Pflegende sollten ein aktuelles Pflegefachwissen haben.
-● Die Zusammenarbeit im inter- wie auch im intradisziplinären Team sollte von Pflegenden gefördert werden.
-● Es bedarf grundlegender arbeitsorganisatorischer Rahmenbedingungen sowie technisch-baulicher, organisatorischer, persönlicher und personeller Voraussetzungen.
-● Pflegende müssen sich auch um ihr eigenes Wohlbefinden
-sorgen (Selbstfürsorge).
-
-286
-
-Prinzip des Nichtschadens
-Definition Nichtschaden
-Pflegende sollen dem Pflegeempfänger keinen Schaden zufügen.
-Schaden für den Pflegeempfänger entsteht durch nicht fachgerecht durchgeführte Pflege, Nachlässigkeit oder mangelnde Sorgfalt, z. B. unnötiges Zufügen von Schmerzen, Infektionen durch mangelnde Hygiene. Dieses Prinzip spricht sich
-auch gegen jegliche Form von Gewalt in der Pflege (S. 68)
-aus.
-Das Nichtschadensprinzip ist von großer Relevanz bei
-schwierigen Therapieentscheidungen. Eine Therapie ist
-dann gerechtfertigt, wenn sie dem Patienten mehr Nutzen
-als Schaden bringt. Schaden und Nutzen werden gegeneinander abgewogen.
-
-Prinzip der Gerechtigkeit
-Gerechtigkeit bedeutet einerseits Gleichbehandlung aller
-Menschen, unabhängig von Herkunft, Alter, Religion oder
-sozialem Status. Dies wird von vielen Pflegenden als Selbstverständlichkeit in ihrer Profession verstanden. Gerechtigkeit in der Pflege bedeutet andererseits, die zur Verfügung
-stehenden Ressourcen gerecht zu verteilen. Dabei gilt es, die
-Rechte der betroﬀenen Menschen zu wahren, auch die Interessen der Pflegenden selbst. Pflegende stehen in der Praxis
-vor der Herausforderung, ihre Zeit und ihre Zuwendung
-zwischen den Patienten gerecht zu verteilen. Dabei können
-sich Pflegende an folgenden Kriterien orientieren:
-● am Nutzen einer Handlung für den Einzelnen
-● am Nutzen für alle Betroﬀenen (Gesamtnutzen)
-● am Bedürfnis von Einzelnen
-Nach welchem Kriterium sich pflegerisches Handeln richtet,
-ist situationsabhängig.
-Utilitarismus • Werfen wir einen Blick auf eine andere ethische Theorie, den Utilitarismus. Diese Theorie spielt insbesondere bei der Verteilung von knappen Ressourcen eine
-Rolle. Im Utilitarismus wird eine Handlung nach dem größten Nutzen und dem geringsten Schaden für die größte Anzahl von Menschen beurteilt.
-
-Beispiel Gerechtes Handeln
-Ein Pflegeempfänger wünscht von Ihnen sofortige Unterstützung bei der Durchführung der Körperpflege. Ihr pflegerischer
-Auftrag besteht in diesem Moment jedoch darin, Infusionen
-und i. v.-Medikamente für Ihre Station vorzubereiten. Die ethische Grundfrage lautet: Was soll ich tun?
-Gemäß dem Utilitarismus entscheiden Sie sich, zuerst die
-Medikamente vorzubereiten, da diese a) zeitgerecht verabreicht
-werden müssen und b) eine größere Anzahl von Patienten davon profitiert sowie c) die organisatorischen Abläufe eingehalten werden müssen. Vom reibungslosen Ablauf profitieren Ihre
-Kollegen, Ärzte und andere Berufsgruppen sowie die Mehrheit
-der Patienten (Fölsch 2012).
-Bedürfte dagegen ein Patient dringend der Hilfe, z. B. aufgrund einer lebensbedrohlichen Situation oder starker Schmerzen, ist zuerst zum Nutzen für den Einzelnen (z. B. Erhalt des
-Lebens oder Schmerzfreiheit) zu handeln und anschließend
-zum Gesamtnutzen.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Ethische Reflexion und Entscheidungsfindung
-
-Anwendung in der Pflege
-Die hier vorgestellten Prinzipien werden in einer konkreten
-Situation gegeneinander abgewogen und dienen so der Entscheidungsfindung. Pflegerisches Handeln kann anhand der
-Prinzipien ethisch reflektiert werden: Worauf sollen wir in
-der Pflege achten? Was sollen wir tun?
-Das Abwägen der Prinzipien voneinander ist Aufgabe der
-Pflegefachkraft und geschieht innerhalb eines Entscheidungsfindungsprozesses. Zum Beispiel möchte ein Pflegeempfänger nicht mobilisiert werden (Autonomie); aus
-pflegerischer Perspektive ist die Mobilisation jedoch notwendig, um Schäden wie Dekubitus oder Lungenentzündung zu vermeiden (Fürsorge). Durch Reflexion der Situation mithilfe der Prinzipien werden Hintergründe des Konflikts oﬀensichtlich und verschiedene Perspektiven und
-Rechte werden wahrgenommen. Nun können Wege und Alternativen gefunden werden (Fölsch 2012).
-
-WISSEN TO GO
-Ethische Reflexion
-Sie hilft dabei, die eigenen Entscheidungen vernünftig,
-einsichtig und nachvollziehbar zu begründen. Zur Reflexion pflegerischer und medizinischer Praxis können begründete Prinzipien (handlungsleitende Verhaltensnormen) als
-Hilfsmittel verwendet werden.
-Prinzipienethik
-Tom L. Beauchamp und James F. Childress formulieren 4
-Prinzipien, die als Orientierung zur ethischen Entscheidungsfindung in der Medizin- und Pflegeethik dienen:
-● Prinzip des Respekts vor der Autonomie: Das Recht
-des Patienten achten, nach seinen Wertvorstellungen
-und seinem Glauben zu wählen und Entscheidungen zu
-treﬀen. Dies beinhaltet das Recht auf
-● informierte Zustimmung/Ablehnung
-● Selbstbestimmung bzgl. des Eigenwohls
-● Wahl zwischen möglichen Alternativen
-● eine möglichst geringe Einschränkung des Handlungsspielraums
-● Prinzip der Fürsorge: Es fordert dazu auf, zum Wohle
-des Patienten zu handeln. Das bedeutet, den Patienten
-vor Schaden zu schützen, schädigende Bedingungen zu
-entfernen, für seine Rechte einzutreten und diese zu
-schützen.
-● Prinzip des Nichtschadens: Pflegende sollen dem Patienten keinen Schaden zufügen. Wichtig bei schwierigen Therapieentscheidungen: Ist der Nutzen für den Patienten größer als der Schaden?
-● Prinzip der Gerechtigkeit: Gleichbehandlung aller Menschen und gerechte Verteilung von Ressourcen.
-
-12.5.2 Entscheidungsfindungsmodelle
-In ethisch herausfordernden Situationen können Entscheidungsfindungsmodelle eingesetzt werden. Sie dienen der
-persönlichen Orientierung, aber auch als Leitfaden bei ethischen Fallbesprechungen. Je nach Komplexität einer ethischen Fragestellung ist es sinnvoll und wichtig, sich mit Kollegen, Ethikexperten oder im interdisziplinären Team
-(S. 273) zu besprechen (z. B. Seelsorger, Juristen, Bezugspersonen und Pflegeempfänger). Entscheidungsfindungs-
-
-modelle dienen dabei als Hilfe zur systematischen Betrachtung und als Leitfaden auf dem Weg der gemeinsamen Entscheidungsfindung.
-Die im Folgenden angeführten Schritte sind ein Querschnitt durch verschiedene Modelle und fassen die am häufigsten wiederkehrenden Schritte in ähnlicher Reihenfolge
-zusammen (Rabe 2009; Steinkamp und Gordijn 2010; Schleger et al. 2011; Park 2012).
-
-Schritte der Entscheidungsfindung
-1. Identifikation des ethischen Problems
-● Problem beschreiben: In diesem Schritt geht es darum,
-einen Ausgangspunkt und ein gemeinsames Verständnis zu schaﬀen – sehen wir das Problem ähnlich? Welche Unsicherheiten haben wir?
-● Das Vorgehen unterscheidet sich in den Entscheidungsfindungsmodellen von einer einfachen Fragestellung bis
-hin zu einer konkreten Identifikation des Problems
-durch einen Fragenkatalog und ethische Reflexion –
-wer ist betroﬀen? Wer ist verantwortlich? Welche Prinzipien sind betroﬀen? Das Vorgehen im ersten Schritt
-ist von den ethischen Vorkenntnissen der fragenden
-Person bzw. des Teams abhängig.
-2. Informationssammlung
-● Sammeln der pflegerischen, medizinischen, rechtlichen,
-sozialen und organisatorischen Fakten, die für die Entscheidungsfindung relevant sind.
-● Was ist über Werte, Lebenseinstellung und den Willen
-des Patienten bekannt?
-3. Analyse mithilfe der Prinzipienethik
-● Welche Prinzipien und Rechte sind betroﬀen?
-● Was ist aus dem Blickwinkel der Professionen das Beste
-für den Patienten (Fürsorge)?
-● Was wünscht der Patient selbst bzw. wie ist sein Patientenwille zu erkunden (Autonomie)?
-● Welcher Schaden kann für den Patienten entstehen
-(Nichtschaden) oder besteht bereits?
-● Welche Rechte anderer Personen, der Gesellschaft oder
-von Institutionen sind betroﬀen? Wie werden die Ressourcen eingesetzt (Gerechtigkeit)?
-● Gibt es Konflikte zwischen den Prinzipien und, wenn ja,
-welche?
-4. Entwickeln, Analysieren, Vergleichen und Bewerten von
-Handlungsmöglichkeiten
-● Welche Handlungsmöglichkeiten gibt es?
-● Verschiedene Möglichkeiten werden einer weiteren
-Analyse- und Bewertungsphase unterzogen.
-5. Auswahl der Handlung und Begründung
-6. Kritische Reflexion und Überprüfung
-● Die gewählte Handlungsmöglichkeit noch einmal gegen
-Einwände prüfen.
-● Für zukünftige Situationen stellt sich die Frage, was
-man hätte tun können, um den Konflikt zu vermeiden,
-bzw. was wir aus dieser Situation gelernt haben.
-Ein Entscheidungsfindungsmodell ist ein wichtiges Hilfsmittel. Die Qualität der Entscheidung und des Entscheidungsfindungsprozesses ist jedoch von vielen weiteren Faktoren
-abhängig, z. B. dem Wissen über ethische Prinzipien und
-Werte, Umgang mit Gefühlen, der Fähigkeit und Bereitschaft
-zur Reflexion sowie kommunikativer Fähigkeiten.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-287
-
-l
-12
-
-Ethisch handeln
-
-12.5.3 Ethische Entscheidungsfindung in Anwendung
-
-Der Prozess der Entscheidungsfindung durchläuft die Schritte des beschriebenen Entscheidungsfindungsmodells.
-
-Beispiel aus der Pflegepraxis
-
-Identifikation des ethischen Problems
-
-Die Überführung des ethischen Problemlösungsprozesses in
-den praktischen Pflegealltag lässt sich anhand eines Beispiels veranschaulichen (▶ Abb. 12.4).
-
-Je nach ethischem Vorwissen könnte die Fragestellung in
-diesem Fall lauten:
-1. Sollen wir Frau L. gegen ihren Willen umpositionieren?
-(Diese Frage drückt die Unsicherheit der Pflegenden aus.)
-2. Wie ist es uns Pflegenden möglich, den Willen und die
-Wünsche von Frau L. zu achten und sie vor Schaden zu
-schützen? (Hier ist bereits ethisches Vorwissen vorhanden.)
-
-Beispiel Im Sinne des Pflegeempfängers?
-Frau L. ist aufgrund einer malignen Erkrankung bettlägerig. Sie
-wurde vor 2 Wochen stationär aufgenommen. Starke Medikamente lindern ihre Schmerzen, verschaﬀen ihr jedoch keine
-Schmerzfreiheit. Sie schläft trotz Schlafmedikation sehr
-schlecht. Bei den pflegerischen Tätigkeiten, wie Waschen, Drehen oder Aufsetzen im Bett, klagt Frau L. trotz Medikation über
-starke Schmerzen. Sie kann kaum eine erträgliche Lage finden.
-Aufgrund ihrer Bettlägerigkeit und des schlechten Allgemeinzustands besteht eine erhöhte Dekubitusgefahr. Die daraufhin
-angebotene Wechseldruckmatratze muss nach 2 Nächten entfernt werden, da Frau L. aufgrund der störenden Motorgeräusche nicht schlafen kann. Zudem findet sie auch auf dieser
-Matratze keine angenehme Lage. Als Alternative wird eine weiche Positionierung gewählt, die jedoch aufgrund des schlechten Allgemeinzustands von Frau L. nicht ausreichend ist. Um
-Druckschäden zu verhindern, müssen trotz Mikrolagerungen
-regelmäßige Positionswechsel durchgeführt werden. Aufgrund
-ihrer Schmerzen und der Störungen ihres Schlafes möchte Frau
-L. die Positionswechsel nicht durchführen lassen (Fölsch 2012).
-
-Je geübter eine Pflegefachkraft/ein Team ist, umso leichter
-wird es sein, das ethische Problem zu identifizieren oder
-eine Fragestellung zu formulieren. Eine Entscheidungsfindung ist immer auch ein Prozess. Es kann sich im Laufe des
-Entscheidungsfindungsprozesses zeigen, dass sich das beschriebene Problem anders darstellt. Der nächste Schritt
-wäre das Sammeln von Informationen, diese sind hier dem
-Fallbeispiel zu entnehmen.
-
-Analyse und Reflexion mithilfe der
-Prinzipienethik
-Schritt für Schritt wird nun jedes Prinzip im Hinblick auf
-den konkreten Fall reflektiert. Was bedeutet jedes einzelne
-Prinzip im Fall von Frau L.?
-Prinzip der Fürsorge • Ein regelmäßiger Positionswechsel
-verhindert eine Schädigung der Haut. Die Gefahr einer
-
-Abb. 12.4 Prozess der Entscheidungsfindung.
-
-?
-!
-1. Identifikation
-des Problems
-
-2. Informationen
-sammeln
-
-3. Analysieren
-
-Welche Rechte/Prinzipien
-sind betroffen?
-
-Aber...
-6. kritische Reflexion
-
-5. Auswahl der
-Handlung &
-Begründung
-
-?
-?
-
-Prinzip der Fürsorge
-Prinzip des Respekts
-vor der Autonomie
-
-?
-?
-
-Prinzip der Gerechtigkeit
-Prinzip des Nichtschadens
-
-4. Entwickeln,
-Analysieren,
-Vergleichen und
-Bewerten von
-Handlungsmöglichkeiten
-
-Das Modell in der Übersicht.
-288
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Ethische Reflexion und Entscheidungsfindung
-Pneumonie wird verringert. Auch wird einer Schleimansammlung in der Lunge vorgebeugt, die häufig zu vermehrter Atemnot führt. Aus pflegerischer Sicht erscheint
-daher ein regelmäßiger Positionswechsel sinnvoll und notwendig. Wird dieser nicht durchgeführt, besteht ein hohes
-Risiko von zusätzlichen körperlichen Schäden, Schmerzen
-und Leid.
-Im Rahmen der Fürsorge ist es wichtig, die pflegerischen
-Handlungen auf ihre Notwendigkeit zu überprüfen. Nicht
-Standards und Routinehandlungen zählen, sondern das pflegerische Fachwissen auf den konkreten Fall auszurichten.
-Aus pflegerischer Sicht ist es notwendig, Frau L. aufgrund ihrer eingeschränkten Mobilität, aufgrund ihres Hautzustands,
-aufgrund ihres Allgemeinzustands und aufgrund ihrer mangelnden Lungenbelüftung regelmäßig zu positionieren.
-
-wird diese Handlungsalternative kurz mit den Handlungsalternativen „Positionswechsel gegen Patientenwillen“ bzw.
-„Respektieren des Wunsches der Patientin“ verglichen.
-
-Prinzip des Respekts vor der Autonomie • Frau L. will keine Positionswechsel durchführen lassen, weil diese ihr Schmerzen bereiten und sie in der Nacht dadurch geweckt wird. Die
-Patientin hat das Recht, Pflegemaßnahmen abzulehnen.
-
-Autonomie • Frau L. wird darüber aufgeklärt, warum dieses
-pflegerische Vorgehen zu empfehlen ist. Bei der Suche nach
-Handlungsalternativen wurden und werden ihre Wünsche
-und Bedürfnisse geachtet.
-
-Prinzip der Gerechtigkeit • Durch Druckschäden kann es zu
-einem zeitlichen und finanziellen Mehraufwand für die Pflege und für das Gesundheitssystem kommen, weil zusätzliche Ressourcen eingesetzt werden müssen, z. B. durch teure
-Wundversorgung, evtl. chirurgische Versorgung, Infektionen. Gerechtigkeit spielt auch dann eine Rolle, wenn vonseiten der Patientin Wünsche an Pflegefachkräfte gerichtet
-werden, die sie mit ihrem Berufsbild nicht vereinbaren können. In diesem Fall der Verzicht auf alle pflegerischen Maßnahmen und die Ablehnung aller angebotenen Alternativen.
-
-Fürsorge • Frau L. wird vor weiteren Schäden geschützt und
-die pflegerische Fürsorge zum Wohl der Patientin unter Berücksichtigung der Bedürfnisse und Wünsche von Frau L.
-durchgeführt.
-
-Prinzip des Nichtschadens • Beim Positionswechsel werden
-der Patientin Schmerzen zugefügt und ihr Wille missachtet.
-Die Missachtung des Willens und der Wünsche der Patientin
-kann auch Auswirkung auf ihr Selbstbild und ihre psychische Befindlichkeit nehmen. Denn Frau L., die sich als hilfe- und pflegebedürftiger Mensch bereits in der Abhängigkeit von Pflegenden befindet, dürfte nun nicht einmal mehr
-für sich selbst entscheiden.
-
-Gerechtigkeit • Ein vermehrter Zeitaufwand (intensive Recherche nach pflegewissenschaftlichen Erkenntnissen, nicht
-medikamentöses Schmerzmanagement und ein evtl. pflegerischer Mehraufwand bei den Positionswechseln) wird aufgrund des Prinzips der Autonomie, der Fürsorge und des
-Nichtschadens in Kauf genommen. Andererseits werden
-Ressourcen nicht belastet, die durch mögliche Druckschäden
-in Anspruch genommen werden müssten.
-
-Abwägung der Prinzipien • Im Falle von Frau L. spielen alle 4
-Prinzipien eine Rolle und treten auch miteinander in Konflikt (Konflikte zwischen Prinzipien). Wird Frau L. aufgrund
-des Prinzips der Fürsorge „einfach“ umpositioniert, wird
-ihre Autonomie verletzt und auch das Prinzip des Nichtschadens, da ihr Schmerzen zugefügt werden und ihre Integrität
-verletzt wird. Wird die Autonomie von Frau L. hingegen geachtet, können Folgeschäden auftreten (Nichtschaden), die
-die Patientin noch mehr belasten (Fürsorge). Dies kann auch
-einen finanziellen und zeitlichen Mehraufwand nach sich
-ziehen (Gerechtigkeit).
-Die Durchführung der hier notwendigen Prophylaxen
-wird sowohl von den Pflegenden als ihre berufliche Pflicht
-(Fürsorge) gesehen wie auch zur Sicherung der Pflegequalität gefordert. Kann von Pflegefachkräften verlangt werden,
-diese Pflichten zu vernachlässigen (Gerechtigkeit, Rechte
-der Pflegefachkräfte), bzw. kann von der Patientin verlangt
-werden, dass sie Positionswechsel durchführen lassen muss
-(Recht auf Achtung der Autonomie)?
-
-Begründung • Der Konflikt zwischen der Pflicht Pflegender,
-pflegerische Grundversorgung zu leisten, und der Pflicht,
-dem Willen von Frau L. zu folgen, löst sich in dieser Handlungsalternative auf. Sie ist ethisch ausgewogen und berücksichtigt die unterschiedlichen Positionen.
-Die Handlungsalternativen „Positionswechsel gegen den
-Willen des Pflegeempfängers“ bzw. „Respektieren des Patientenwunsches“ würden beide die beschriebenen Prinzipien negieren. Wie sich gezeigt hat, gibt es Alternativen. Im
-Vergleich der 3 Alternativen ist die zuvor ausführlich vorgestellte Handlungsalternative ethisch am angemessensten.
-Sie achtet alle 4 Prinzipien und gibt im Falle der Gerechtigkeit an, warum die anderen Prinzipien übergeordnet werden können. Es konnte ein guter Weg gefunden werden, da
-dem Grund für die Ablehnung der pflegerischen Fürsorge
-(Schmerzen) entgegengewirkt werden konnte.
-
-Entwickeln, Analysieren, Vergleichen und
-Bewerten von Handlungsmöglichkeiten
-Hier wird exemplarisch eine Handlungsalternative vorgestellt und anhand der Prinzipien analysiert. Zum Schluss
-
-Eine gelungene Handlungsalternative • Es wird auf Basis pflegewissenschaftlicher Erkenntnisse nach verschiedenen
-Möglichkeiten der Hilfsmittel und Positionierungen gesucht,
-um Makrolagerungen so wenig wie möglich durchführen zu
-müssen. Vor dem Positionswechsel werden Frau L. alle möglichen medikamentösen und nicht medikamentösen Maßnahmen des Schmerzmanagements angeboten. In der Nacht
-wird darauf geachtet, Frau L. dann zu positionieren, wenn
-sie wach ist, mindestens jedoch 2-mal während der Nachtstunden. Das Vorgehen wird mit der Patientin abgesprochen.
-
-Nichtschaden • Durch ein umfassendes Schmerzmanagement wird versucht, die Schmerzen der Patientin so gering
-wie möglich zu halten. Die Nachtruhe von Frau L. wird teilweise gestört, jedoch wird dabei darauf geachtet, diese Störung so gering wie möglich zu halten.
-
-Fazit • In diesem Beispiel zeigt sich, dass es Wege gibt, sowohl das Wohl der Pflegeempfängern (aus Sicht der Pflegeexpertise) als auch ihre Wünsche zu achten. Solche Wege
-können in der Pflegepraxis häufig gefunden werden. Dafür
-braucht es von Pflegenden die Bereitschaft, sich auf Gespräche mit Pflegeempfängern einzulassen, zuzuhören und nach
-Alternativen und kreativen Möglichkeiten zu suchen. Es geht
-um das ernsthafte Bemühen, bestmögliche Lösungen unter
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-289
-
-l
-12
-
-Ethisch handeln
-Beachtung der Rechte aller Beteiligten zu finden. Es zeigt
-sich, dass hierbei ethische Theorien wie die Prinzipienethik
-ein hilfreiches Werkzeug sind. Die Suche nach ethisch angemessenen Lösungen ist nicht nur eine Forderung der Pflegeethik, sondern eine große Hilfe für alle beteiligten Personen. Für den Pflegeempfänger, da seine Würde und seine
-Integrität geschützt sind. Für Pflegefachkräfte, da ethische
-Konflikte, die nicht gelöst werden können, bei ihnen selbst
-moralischen Stress auslösen (Corley 2002). Für das Gesundheitssystem, da Konflikte auch viele Ressourcen (Energie,
-Zeit, Gelder) in Anspruch nehmen.
-
-12.6 Ethische Grenzsituationen
-in der Pflege
-Immer wieder geraten Mitarbeiter in Kliniken und Pflegeeinrichtungen in ethische Konflikte. In einer solchen Situation ist es Aufgabe des Fachpersonals, den Prozess der Entscheidung im Sinne des Pflegeempfängers zu begleiten –
-mit Wissen, Erfahrung und aller gebotenen Oﬀenheit.
-
-12.6.1 Sterbehilfe
-Bislang wird zwischen „aktiver“, „passiver“ und „indirekter“
-Sterbehilfe unterschieden, die Ausführungen dazu lesen Sie
-im Kap. „Rechtliche Grundlagen der Pflege“ (S. 170). Der
-Deutsche Ethikrat schlägt vor, die zwar bekannte, aber teils
-irreführende Terminologie von aktiver, passiver und indirekter Sterbehilfe aufzugeben. Er unterteilt die Entscheidungen und Handlungen am Lebensende genauer, dies soll den
-Handelnden im Alltag mehr Sicherheit geben.
-● Sterbebegleitung: die Pflege von Sterbenden. Sie bekämpft
-Durst, Schmerzen, Übelkeit, Angst und bietet psychosozialen Beistand.
-● Therapien am Lebensende: Das Leben wird auf Wunsch
-des Sterbenden verlängert, dabei werden seine Leiden gelindert.
-● Sterbenlassen: umschreibt, was vorher unter „passive“
-Sterbehilfe gefasst wurde.
-● Beihilfe zur Selbsttötung: Jemand stellt ein todbringendes
-Mittel in die Reichweite des Sterbenden. Die Person, die
-das Mittel bereitstellt, verabreicht es aber nicht, der Sterbende nutzt das Mittel selbst. Diese Handlung ist juristisch
-nicht strafbar. Diese Straﬀreiheit ist aber immer wieder
-Gegenstand intensiver Diskussionen.
-● Tötung auf Verlangen: Entspricht dem, was bisher unter
-„aktive Sterbehilfe“ gefasst wurde.
-
-Beispiel Beihilfe zur Selbsttötung
-Herr M. leidet an einem metastasierenden Prostatakarzinom.
-Als er bemerkt, wie schnell er verfällt, beschließt er, seinem Leben vorzeitig ein Ende zu setzen. Er bittet seine Frau, ihm eine
-Ampulle schnell wirkendes Insulin zu geben. Diese stellt er sich
-an das Bett. Er plant, sich das Insulin über den Port zu spritzen
-– solange er dazu noch selbst die Kraft hat. Seine Frau leistet
-demnach Beihilfe zur Selbsttötung. Sie kann ihm – juristisch
-betrachtet – das Insulin in Reichweite stellen, ohne sich strafbar
-zu machen.
-Kritische Stimmen zur Sterbehilfe • Vor allem die Deutsche
-Hospizstiftung setzt sich für die Palliative Care (S. 840) ein.
-290
-
-Das Töten auf Verlangen lehnt sie strikt ab. Auch die Pflegeverbände verlangen eine intensive Palliative Care. Von der
-Bundesärztekammer heißt es, am Ende des Lebens solle die
-palliativmedizinische Versorgung zentral sein. Und: „Die
-Mitwirkung bei der Selbsttötung ist keine ärztliche Aufgabe.“ Die Deutsche Gesellschaft für Humanes Sterben
-(DGHS) plädiert hingegen dafür, Sterbende selbst entscheiden zu lassen, wie lange sie ihre Leiden ertragen können –
-und möchten. Sie befürwortet die Palliative Care, toleriert
-aber Hilfe zur Beendigung eines Lebens.
-
-12.6.2 Patientenverfügung
-Darf man ein lebenserhaltendes Gerät oder eine künstliche
-Ernährung ausschalten? Und vor allem: Wer entscheidet darüber? Hat der Betroﬀene eine klare Patientenverfügung formuliert oder sich gegenüber Familie oder Freunden klar
-mündlich geäußert, dann gilt sein Wille. Das hat der Gesetzgeber so festgelegt und gewährleistet mit der Regelung
-zweierlei: Die Patientenverfügung (PV)
-● sichert das Selbstbestimmungsrecht des Menschen zu jeder Zeit und
-● gewährleistet dem medizinischen Personal bei existenziellen Fragen am Lebensende Handlungssicherheit und juristische Absicherung.
-In der Praxis ist es oft so, dass keine PV vorliegt oder der
-Verfasser seine Anweisungen sehr unkonkret formuliert hat,
-z. B.: „In dem Fall, dass ich sterbenskrank bin, wünsche ich
-keine lebensverlängernden Maßnahmen.“ Was aber ist
-„sterbenskrank“? Liegt keine ausdrückliche Erklärung vor,
-werden das medizinische Personal und die Angehörigen zusammen versuchen, in seinem mutmaßlichen Willen zu entscheiden. Können sich beide Parteien nicht auf ein Vorgehen
-einigen, müssen sich die Vertreter eine Genehmigung des
-Betreuungsgerichts (S. 177) einholen.
-
-Beispiel Patientenverfügung
-Herr D., 45 Jahre alt, ehemaliger Leistungssportler, hatte einen
-Motorradunfall. Die Folgen sind u. a.: Schädel-Hirn-Trauma mit
-bleibender starker geistiger Beeinträchtigung, hohe Fraktur der
-Halswirbelsäule, die eine lebenslange Beatmung notwendig
-macht. In seiner PV steht: „Bei einem Unfall wünsche ich jede
-Form der akuten Versorgung. Stellt sich jedoch heraus, dass ich
-langfristig
-● ein starkes geistiges Handicap davontrage und/oder
-● dauerhaft künstlich beatmet sein sollte,
-wünsche ich, dass alle lebenserhaltenden Therapien unverzüglich abgebrochen und/oder eingestellt werden. Gleichzeitig
-wünsche ich Medikamente, damit ich von meinem Sterben
-nichts bemerke.“
-Herr D. erhält sedierende Medikamente, das Beatmungsgerät
-wird abgestellt. Um (aktive) Sterbehilfe oder Tötung auf Verlangen handelt es sich in dem Fall nicht, weil das Personal dem
-Willen von Herr D. nachkommt.
-
-Pflegende werden vielleicht erleben, dass sich ein Angehöriger weigert, einer Patientenverfügung (▶ Abb. 12.5) nachzukommen, oder sagt: „Ich kann die Geräte nicht ausschalten lassen!“ Sie sollten Gesprächsbereitschaft zeigen, zuhören und auf den Willen des Pflegeempfängers hinweisen.
-Menschen brauchen Zeit, um Abschied zu nehmen, ein vehementes Drängen ist hier fehl am Platz. Pflegende sollten
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Ethische Grenzsituationen in der Pflege
-Abb. 12.5 Patientenverfügung.
-
-Hirntoddiagnostik
-Der Hirntod muss zweifelsfrei bewiesen sein. Seine Diagnose
-erfordert:
-Erfüllung der Voraussetzungen • Es muss eine primäre (das
-Gehirn selbst betreﬀend, z. B. durch Blutung) oder eine sekundäre Hirnschädigung (z. B. bedingt durch Sauerstoﬀmangel, durch Stoﬀwechselstörungen oder Intoxikation) vorliegen. Andere Ursachen für ein Koma, z. B. eine reversible Intoxikation oder eine Unterkühlung, müssen ausgeschlossen
-werden.
-
-Selbstbestimmt und in Würde gehen zu dürfen, ist der Wunsch
-vieler Menschen. Sie wünschen z. B. keine lebenserhaltenden Maßnahmen, sobald eine gravierende geistige Beeinträchtigung erkennbar ist. Derartige Wünsche müssen in einer Patientenverfügung festgehalten sein (Symbolbild). © Ramona Heim/stock.adobe.com
-
-seelsorgerische Begleitung anbieten. Denn trotz Patientenverfügung fühlen sich manche Menschen schuldig, auch
-wenn sie dem Wunsch des Pflegeempfängers entsprechen.
-
-12.6.3 Hirntod
-Definition Hirntod
-Ein Mensch gilt laut Bundesärztekammer als hirntot, wenn die Gesamtfunktion des Großhirns, des Kleinhirns und des Hirnstamms
-endgültig und irreversibel erloschen ist.
-Bei einigen Menschen mit Schädel-Hirn-Trauma, intrazerebraler Blutung oder nach einer Reanimation kommt es zum
-Hirntod. Klinisch sind diese Menschen komatös, sie zeigen
-keine Reflexe des Hirnstamms und atmen nicht selbstständig. Der Körper kann aber womöglich noch die Temperatur
-regulieren und Kreislaufreaktionen zeigen, z. B. erhöhte
-Herzfrequenz. Auch Gähnen oder Schwitzen sind möglich.
-Diese „Reaktionen“ sind vom Rückenmark autonom gesteuerte Reflexe. Die BÄK empfiehlt, nach Eintritt des Hirntods
-die Therapie bald zu beenden, Ausnahmen sind Schwangere
-oder die Bereitschaft zur Organspende.
-
-Hirntod und Organspende
-Hierbei sind die Regelungen in anderen Ländern, auch
-deutschsprachigen, teils profund anders. Zum Beispiel gilt in
-Österreich jeder „automatisch“ als Spender – auch wenn er
-dort nur im Urlaub ist. Einen Widerspruch kann jeder zu
-Lebzeiten abgeben. In Deutschland gelten als Voraussetzungen für eine Organspende, dass der Betroﬀene hirntot ist
-und sich willentlich (zu Lebzeiten über einen Organspendeausweis oder eine PV) für eine Spende ausgesprochen hat.
-Liegt keine schriftliche Erklärung vor, müssen Ärzte die Angehörigen befragen, ob sich der Angehörige je anderweitig
-schriftlich oder mündlich zu seiner Organspendebereitschaft geäußert hat. Ist darüber nichts bekannt, wird das
-medizinische Team zusammen mit den Angehörigen versuchen, den mutmaßlichen Willen des Verstorbenen herauszufinden und in seinem Willen zu entscheiden.
-
-Klinische Symptome • Die Zeichen des Hirntodes sind:
-● Bewusstlosigkeit (Koma): Der Komagrad ist definiert als
-Bewusstlosigkeit ohne Augenöﬀnung und ohne Reaktion
-auf wiederholte Schmerzreize.
-● lichstarre mittel- bis maximalweite Pupillen: Beide Pupillen reagieren nicht auf Lichteinfall.
-● beidseitiges Fehlen des okulozephalen/vestibulookulären
-Reflexes: Wird der Kopf gedreht, bewegen sich die Augen
-nicht in die Gegenrichtung (Puppenkopfphänomen).
-● beidseitiges Fehlen des Kornealreflexes: Bei Berühren des
-Augapfels schließen sich die Augen nicht.
-● Fehlen von Reaktionen auf Schmerzreize: Schmerzreize lösen keine Reaktion aus.
-● Fehlen des Pharyngeal- und Trachealreflexes: Wird die
-hintere Rachenwand berührt, folgt kein Würgen oder Husten.
-● Ausfall der Spontanatmung: Bei diesem Test wird der Gehalt von Kohlendioxid (CO2) im Blut erhöht. Bei einem
-lungengesunden Menschen ist der CO2 -Gehalt der Atemantrieb. Die Hyperkapnie wird durch Diskonnektion vom
-Respirator oder durch Hypoventilation (ungenügende Beatmung) herbeigeführt. Setzt bei einer Konzentration des
-CO2 ≥ 60 mmHg keine Eigenatmung ein, liegt ein zentraler
-Atemstillstand vor.
-Nachweis der Irreversibilität • Abschließend muss sich zeigen,
-ob die klinischen Symptome tatsächlich irreversibel, d. h.
-nicht umkehrbar, sind. Dies leisten apparative Untersuchungen, z. B. EEG, Dopplersonografie oder Angiografie. Sie weisen entweder nach, dass keine elektrische Aktivität im Hirn
-mehr vorhanden ist oder dass das Hirn nicht mehr durchblutet wird. Der Ausfall der klinischen Symptome muss für
-die Diagnose bei Erwachsenen und Kindern ab dem 3. Lebensjahr
-● bei primärer Hirnschädigung nach mindestens 12 Stunden
-● bei sekundärer Hirnschädigung nach mindestens 72 Stunden
-erneut übereinstimmend nachgewiesen werden.
-Alle Untersuchungen müssen 2 dafür qualifizierte Ärzte
-durchführen. Sie dürfen nicht in den Organspendeprozess
-direkt eingebunden sein. Für die Feststellung des Hirntods
-bei Kindern gelten teilweise abweichende Bestimmungen.
-
-Die ethische Herausforderung
-Ist der Hirntod tatsächlich die klare Zäsur zwischen Leben
-und Tod? Die Bundesärztekammer hat ihre Definition verschriftlicht und die Frage positiv bestätigt. Tritt der Hirntod
-ein, wird der Totenschein ausgefüllt, die Therapie eingestellt.
-Kritiker halten diese „neurologische“ Todesdefinition für
-falsch. Sie sagen, der Mensch funktioniere „biologisch“ weiter und könne noch Tage, Wochen oder gar Jahre leben. Er
-sei kein toter, sondern ein sterbender Mensch. Zudem sei
-nicht abschließend klar, ob die heute möglichen Unter-
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-291
-
-l
-12
-
-Ethisch handeln
-suchungen tatsächlich alle Hirnfunktionen erfassen könnten. Einig sind sich beide Parteien in einem: Der Ausfall der
-Hirnfunktionen ist nach bisherigem Wissen nicht reversibel.
-Jeder muss für sich entscheiden, welche Argumentationslinie dem eigenen Empfinden entspricht.
-Pflegerische Herausforderung • Pflegende fordert ein Organspendeprozess heraus: Nachdem der Hirntod bescheinigt
-ist, werden alle für den Organismus biologisch wichtigen
-Funktionen bis zur Entnahme aufrechterhalten. Das kann
-viele Stunden dauern. Der Körper trägt trotz der Hirntodbescheinigung keine sichtbaren Todeszeichen, er ist rosig
-und warm. Der Betroﬀene kann zudem noch bestimmte Spinalreflexe (Lazarus-Zeichen) und einen Anstieg des Blutdrucks aufweisen. Auch dass der Betroﬀene schwitzt, ist
-nicht unüblich. Der hirntote Mensch erscheint nicht leblos.
-Ein Umstand, den Pflegefachkräfte auch als belastend empfinden können.
-Auch nach der Entscheidung für eine Organentnahme
-werden die pflegerischen Maßnahmen aufrechterhalten –
-sofern der Zustand es zulässt. Der Patient wird weiterhin
-positioniert, regelmäßig werden Körperpflege und Bronchialtoilette durchgeführt und die Diurese und Temperatur
-kontrolliert. Weiterhin sollte dem Patienten während der
-Pflegehandlungen mit Respekt begegnet werden. Oberster
-Anspruch der Pflege sollte es sein, den Menschen unter
-Wahrung seiner Würde auf die Explantation vorzubereiten.
-Bringt eine Pflegefachkraft diese Grenzsituation in ein Dilemma (sei es z. B. ethischen oder emotionalen Ursprungs),
-sollte sie das klar in ihrem Team kommunizieren. Viele Abteilungen (z. B. Intensivstation und OP) haben freiwillige
-Teams etabliert, die im Fall einer Organspende die Pflege
-und Begleitung übernehmen.
-Herausforderung für Angehörige • Auch betroﬀene Bezugspersonen fordert eine solche Situation heraus. Vielleicht befürworten sie selbst eine Spende nicht. Meist sind plötzliche
-Ereignisse (z. B. Unfälle, Ruptur eines Aneurysmas) ursächlich für den Hirntod, sodass sich die Ereignisse z. T. überschlagen. Für die meisten Angehörigen „lebt“ der Mensch
-noch, der (Hirn-)Tod ist nicht unmittelbar erfahrbar.
-Bei jedem Organspendeprozess ist ein Koordinator der
-Deutschen Stiftung Organspende (DSO) die gesamte Zeit vor
-Ort. Er triﬀt dann ein, wenn der Hirntod festgestellt ist, und
-bleibt bis zum Ende der Organentnahme. Wenn Angehörige
-es wünschen, wird er sie auch bei der Verabschiedung von
-ihrem Angehörigen begleiten. Die meisten Kliniken bieten
-den Angehörigen an, dass sie ihren Angehörigen nach der
-Organentnahme, z. B. im Zimmer des Abschieds, sehen können.
-Pflegende begleiten die Angehörigen, spenden Trost, beantworten Fragen und klären auf. Wenn sie selbst unsicher
-sind oder auf Fragen der Angehörigen nicht antworten können, können auch sie sich direkt an den Mitarbeiter der Stiftung wenden.
-
-Beispiel Oﬀene Kommunikation
-Hat sich der Patient (oder seine Angehörigen, sofern keine Patientenverfügung vorliegt) für eine Organentnahme entschieden, startet der Entnahmeprozess. Für Details siehe das Kapitel
-„Pflege bei Transplantationen“ (S. 827).
-Im folgenden Fall wurde ein 50 Jahre alter Mann mit Hirnblutung, dessen Zustand stabil ist, als potenzieller Spender ermittelt. Der Empfänger ist ein 26-jähriger Student, der nach
-einem Infekt eine schwere Kardiomyopathie entwickelt hat. Er
-ist im kritischen Zustand.
-Die Ärzte möchten ganz sichergehen, dass das Spenderherz
-in Ordnung ist. Die Ärzte planen deshalb, beim Spender noch
-eine Koronarangiografie durchzuführen. Die Bezugspersonen
-sind über ein solches Vorgehen irritiert und möchten ihrem Angehörigen dieses Vorgehen ersparen.
-Arzt, Pflegekraft sowie Mitarbeiter der DSO klären die Bezugspersonen in einem oﬀenen, ausführlichen Gespräch über
-den Prozess und die Wichtigkeit dieser Maßnahme auf. Größtmögliche Transparenz bietet hier den Bezugspersonen die Möglichkeit, das Verfahren zu verstehen und dieses auch zu akzeptieren.
-
-WISSEN TO GO
-Ethische Grenzsituationen
-Der (definierte) Hirntod eines Menschen bedeutet eine
-Herausforderung für Angehörige, Pflegefachkräfte und
-Ärzte. Der Hirntod wird über neurologische Kriterien festgestellt.
-Um Angehörigen und Personal ethische Dilemmas zu ersparen, sollten Menschen frühzeitig definieren, was sie
-wünschen. Ein Organspendeausweis kann die Entscheidung rechtlich klären, für die Angehörigen bleibt es
-manchmal dennoch eine schwere Situation.
-Pflegefachkräfte und Ärzte sollten den Bezugspersonen
-oﬀen, ehrlich und mit all ihrem Wissen und ihrer Erfahrung
-begleiten. Die Mitarbeiter der Deutschen Stiftung Organspende sind für diese Situationen besonders geschult. Der
-professionelle Umgang mit den Angehörigen fordert ein
-hohes Maß an Sensibilität und die Fähigkeit, auf die Situation einzugehen. Wichtigste Aufgabe des Teams ist es,
-den betroﬀenen Menschen bis zuletzt respektvoll medizinisch-pflegerisch zu versorgen.
-
-12.6.4 Freiheitsentziehende
-Maßnahmen
-In der Praxis werden immer wieder Situationen auftreten,
-in der freiheitsentziehende Maßnahmen für einen Menschen in Betracht gezogen werden. Fixiert werden darf ein
-Pflegeempfänger nur, wenn die Notwendigkeit der Freiheitsbeschränkung unausweichlich ist. Über die verschiedenen Formen freiheitsbeschränkender Maßnahmen sowie die
-entsprechenden Gesetzesgrundlagen lesen Sie im Kap.
-„Rechtliche Grundlagen der Pflege“ (S. 170).
-In der Durchführung spielt ein ethisch verantwortungsvoller Umgang mit freiheitsentziehenden Maßnahmen eine
-wichtige Rolle.
-
-292
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-
+     Die Pflegeplanung in der ambulanten Pflege ähnelt der der             Kontext eine aufgrund gezielter Beobachtung und Unter-
+     stationären Altenpflege. Pflegefachkräfte arbeiten mit Pfle-          suchung mögliche Feststellung oder Beurteilung über den
+     geplänen, Leistungsnachweisen, Protokollen oder Medika-               Zustand bzw. die Beschaﬀenheit einer Erkrankung. Für die
+     mentenplänen für die individuelle Betreuung. Zu Beginn der            Pflege wurde der Begriﬀ der Pflegediagnose erstmals von
+     Pflegeübernahme schließt der Pflegeempfänger einen Ver-               Virginia Frey 1953 in den USA geprägt. Sie sah die Formulie-
+     trag mit dem gewählten Pflegedienst ab. Der Inhalt des Ver-           rung von Pflegediagnosen als wichtigen Schritt für die Pla-
+     trags fließt in die Pflegeplanung mit ein.                            nung und Gestaltung von Pflege.
+        Auch in der ambulanten Pflege hat der MDK eine kontrol-
+     lierende Funktion. Dort überprüft er bei Hausbesuchen die             Definition Pflegediagnosen
+     Dokumentation und Pflegeplanung. Alle Unterlagen dienen               Pflegediagnosen stellen eine systematische klinische Beurteilung der
+     als Grundlage für die weitere Einstufung des Pflegeempfän-            Reaktionen eines Pflegeempfängers auf aktuelle oder potenzielle Ge-
+     gers in einen Pflegegrad und für die Genehmigung von zu-              sundheitsprobleme und/oder Lebensprozesse dar. Sie sind somit Be-
+     sätzlichen Leistungen, z. B. Umbaumaßnahmen in der Woh-               standteil des Pflegeprozesses und bilden die Grundlage für die Aus-
+     nung.                                                                 wahl pflegerischer Maßnahmen, anhand derer die gemeinsam mit
+
+     ! Merke Qualität und Leistung
+                                                                           dem Pflegeempfänger erarbeiteten pflegerischen Ziele erreicht wer-
+                                                                           den.
+     Die Pflegeplanung ist ein wichtiges schriftliches Dokument, das die
+     Qualität der pflegerischen Leistungen belegt.                         Durch die enge Verbindung zum medizinischen Begriﬀ des
+                                                                           Diagnostizierens setzte sich in der Pflege der Begriﬀ „Pflege-
+     Für die ambulante Pflege gilt zusätzlich: Der Pflegeempfän-           diagnose“ anfangs nur schleppend durch. Über die Jahre hat
+     ger entscheidet in noch deutlich größerem Umfang als in               sich dieser jedoch zunehmend etabliert, insbesondere durch
+     der stationären Pflege, was in den Pflegeplan aufgenommen             die Arbeit der North American Nursing Association (NANDA)
+     wird. Er entscheidet, was von der professionellen Pflege-             in den USA, die sich mit der Entwicklung, Verbreitung und
+     fachkraft getan werden soll – wofür die Leistungen der Pfle-          Evaluation von Pflegediagnosen beschäftigt.
+     gekasse aufgewendet werden sollen – und was nicht. Im Un-
+     terschied zur stationären Pflege kann der Pflegeempfänger             NANDA International • Die Taxonomie II der NANDA Interna-
+     mit seinen Bezugspersonen gemeinsam verfügen, welchen                 tional (NANDA-I) ist das derzeit in den USA und vielen ande-
+     Anteil des verfügbaren Pflegegelds (S. 143) als Sachleistung          ren Ländern am häufigsten eingesetzte System, um Pflege-
+     – also als Leistung von einer Pflegefachkraft des ambulanten          diagnosen anzuwenden. Neu vorgeschlagene wie bereits
+     Dienstes – und welcher Anteil direkt in Geldleistung aus-             existierende Pflegediagnosen werden dabei nach festgeleg-
+     gezahlt werden soll. Entscheidet sich ein Pflegeempfänger,            ten Kriterien bewertet und evaluiert, vorhandene überarbei-
+     dass z. B. eine nach Ansicht der Pflegefachkraft erforderliche        tet bzw. ausgemustert. In der aktuellen Version (2018) sind
+     Prophylaxe nicht vorgenommen werden soll, sollte sie auch             244 NANDA-I-Pflegediagnosen gelistet, jedoch mit unter-
+     nicht in die Planung aufgenommen werden. Häufig ge-                   schiedlichen LOE (Level Of Evidence – Evidenzgraden). Ein
+
+
+88    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+                                                                                                                       Pflegediagnosen
+
+
+Großteil der NANDA-I-Pflegediagnosen wurde ins Deutsche
+übersetzt und ist wissenschaftlich überprüft (validiert). In
+der Buchveröﬀentlichung gibt NANDA-I auch Literaturhin-                 Beispiel Beeinträchtigte Mobilität
+weise, die die Pflegediagnose bestätigen und die bei der Ent-
+wicklung der Pflegediagnose maßgeblich waren. Die über-
+                                                                        (Z. n. Fraktur)
+wiegende Mehrheit an Neuentwicklungen, wie z. B. die elek-
+                                                                        Beeinträchtigte Gehfähigkeit (P) beeinflusst durch (b/d) musku-
+tronische Dokumentation, bezieht sich auf sie.
+                                                                        loskelettale Beeinträchtigungen (Frakturen) und Schmerzen
+                                                                        (Ä), angezeigt durch (a/d) die beeinträchtigte Fähigkeit, erfor-
+NIC und NOC • Die NANDA-I-Pflegediagnosen sind eng mit
+                                                                        derliche Strecken zu gehen (S).
+den NIC (Nursing Interventions Classification – Pflegeinter-
+ventionsklassifikation) und NOC (Nursing Outcomes Classifi-
+cation – Pflegeergebnisklassifikation), die das gewünschte
+Ergebnis der Pflegeaktion beschreiben, abgestimmt. Dies gilt
+                                                                      Risikopflegediagnosen
+sowohl für Konzepte als auch für Begriﬄichkeiten. Alle 3
+                                                                      Definition Risikopflegediagnosen
+Pflegeklassifikationssysteme gemeinsam sind ein Instru-
+                                                                      Risikopflegediagnosen sind „eine klinische Beurteilung der Vulnera-
+ment, das geeignet ist, den vollständigen Pflegeprozess ab-
+                                                                      bilität eines Individuums, Familie, Gruppe oder Gemeinschaft, eine
+zubilden (NNN).
+                                                                      unerwünschte menschliche Reaktion auf Gesundheitszustände/Le-
+
+! Merke Pflegediagnose oder Pflegeproblem?                            bensprozesse zu entwickeln“. (NANDA-I 2016)
+
+Der Unterschied einer Pflegediagnose zu einem Pflegeproblem ist,      Bei Risikopflegediagnosen hat der Pflegeempfänger mindes-
+dass Pflegediagnosen einer festen und einheitlichen Terminologie      tens ein oder mehrere Risiken für ein Gesundheitsproblem.
+unterliegen und meist einem speziellen Aufbau folgen (PÄS[R]-         Risikopflegediagnosen werden anders als die problemfokus-
+Schema). Pflegeprobleme hingegen lassen eine individuelle und so-     sierten Pflegediagnosen nicht aus 3, sondern aus 2 Anteilen
+mit auch freie Form der Formulierung zu.                              gebildet und nach dem PRi-Schema formuliert:
+                                                                      ● dem Pflegediagnosetitel (P)
+PÄS(R)-Schema • Eine Pflegediagnose besteht meist aus 3–4             ● und einem oder mehreren Risikofaktoren (Ri).
+Elementen und folgt in ihrer Formulierung dem PÄS(R)-
+Schema (auch PES[R]-Schema). Das „R“ ist hierbei spezifisch           Bei der Formulierung einer Risikopflegediagnose wird dem
+für den deutschsprachigen Raum und wird nur bei Bedarf                Diagnosetitel das Wort „Gefahr“ vorangestellt.
+angegeben.
+● P = Pflegediagnosentitel
+● Ä = Ätiologien (engl. Etiology), beeinflussende, ursächliche
+
+  Faktoren                                                              Beispiel Risiko Hautschädigung (Z. n. Fraktur)
+● S = bestimmende Merkmale, Kennzeichen oder Symptome,
+
+  die das Vorliegen der Pflegediagnose bestätigen                       Gefahr einer Hautschädigung (P) beeinflusst durch (b/d) kör-
+● (R = Ressourcen)                                                      perliche Immobilisierung (Ri).
+
+
+3.5.2 Arten von Pflegediagnosen                                       Pflegediagnosen der
+Bei den NANDA-I-Pflegediagnosen gibt es 3 unterschiedliche            Gesundheitsförderung
+Arten von Pflegediagnosen: problemfokussierte Pflegediag-
+nosen, Risikopflegediagnosen und Pflegediagnosen der Ge-              Definition Pflegediagnosen der
+sundheitsförderung.                                                   Gesundheitsförderung
+                                                                      Pflegediagnosen der Gesundheitsförderung sind „eine klinische Be-
+Problemfokussierte Pflegediagnosen                                    urteilung der Motivation und des Wunsches, das Wohlbefinden zu
+                                                                      steigern und das menschliche Gesundheitspotenzial zu verwirk-
+Definition Problemfokussierte Pflegediagnosen                         lichen. Diese Reaktionen werden durch die Bereitschaft ausgedrückt,
+Problemfokussierte Pflegediagnosen sind „eine klinische Beurteilung   spezielle Gesundheitsverhaltensweisen zu verbessern, und können
+einer unerwünschten menschlichen Reaktion auf einen Gesund-           bei jedem Gesundheitszustand angewendet werden. Gesundheits-
+heitszustand/Lebensprozesse, die bei einem Individuum, Familie,       fördernde Reaktionen können bei einem Individuum, einer Familie,
+Gruppe oder Gemeinschaft auftreten“. (NANDA-I 2016)                   Gruppe oder Gemeinschaft vorliegen.“ (NANDA-I 2016)
+
+Bei problemfokussierten Pflegediagnosen hat der Pfle-                 Gesundheitsförderungsdiagnosen werden dann formuliert,
+geempfänger mindestens ein oder mehrere Gesundheits-                  wenn der Pflegeempfänger selbst den Wunsch nach Verbes-
+probleme. Problemfokussierte Pflegediagnosen bestehen                 serung seines Gesundheitszustandes äußert. Bei dieser Art
+aus 3 Bestandteilen:                                                  von Pflegediagnose stehen Prävention und Gesundheits-
+● dem Pflegediagnosentitel (P)                                        beratung besonders im Fokus.
+● den beeinflussenden, ursächlichen Faktoren (Ä)                        Eine Pflegediagnose der Gesundheitsförderung besteht
+● den bestimmenden Merkmalen (S) (objektive oder subjek-              aus 2 Bestandteilen:
+                                                                      ● dem Pflegediagnosetitel (P)
+  tive Kennzeichen/Symptome)
+                                                                      ● und den bestimmenden Merkmalen (S) (objektive oder
+
+Die unterschiedlichen Bestandteile werden bei der Formu-                subjektive Kennzeichen/Symptome).
+lierung einer problemfokussierten Pflegediagnose mit „be-
+einflusst durch (b/d)“ bzw. „angezeigt durch (a/d)“ verbun-
+den.
+
+
+
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen             89
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+l3   Pflege als Prozess gestalten
+
+
+                                                                            achtungen abbilden kann. Diese Klassifikation ist in einigen
+                                                                            Rehabilitationskliniken in Deutschland im Einsatz. Bei LEP
+       Beispiel Wunsch nach mehr Gesundheit                                 (Leistungserfassung in der Pflege) handelt es sich um ein
+                                                                            Klassifikationssystem der pflegerischen Leistungen, das sei-
+       (Z. n. Fraktur)                                                      nen Ursprung in der Schweiz hat. Das System wird in
+                                                                            Deutschland auf einigen Intensivstationen zur Leistungsdar-
+       Bereitschaft für ein verbessertes Gesundheitsmanagement (P)
+                                                                            stellung und Pflegepersonalberechnung eingesetzt.
+       (a/d); Pflegeempfänger äußert den Wunsch, das Management
+       der Risikofaktoren zu verbessern (S).
+                                                                            Pflegeklassifikation nach NANDA-I
+                                                                            Hintergrund • Die von der NANDA-I anerkannten Pflegediag-
+     Syndrompflegediagnosen                                                 nosen werden in einem Klassifikationssystem, das von 13
+     Abgesehen von den einzelnen Pflegediagnosen existieren                 Domänen und 47 Klassen ausgeht, geordnet. Aktuell gibt es
+     auch sog. Syndrompflegediagnosen, die häufig gemeinsam                 244 Pflegediagnosen, allerdings werden die NANDA-I-Pfle-
+     auftretende Syndrome bündeln und somit zeitsparend ge-                 gediagnosen im 3-jährlichen Turnus überarbeitet, ergänzt,
+     meinsam geplant werden können. Der Aufbau von Syn-                     erweitert oder gestrichen.
+     drompflegediagnosen folgt im Einzelfall dem der problem-
+     fokussierten Pflegediagnose oder dem einer Risikopflegedi-             Aufbau • Die Pflegediagnosen sind i. d. R. aus mehreren Begrif-
+     agnose.                                                                fen zusammengesetzt (präkombiniert), die aus den verschie-
+       Ein Beispiel hierfür wäre etwa die „Gefahr eines Immobili-           denen Teilbereichen der NANDA-I stammen (▶ Abb. 3.7).
+     tätssyndroms“ (risk of disuse syndrome) in Klasse 2: Aktivi-
+     tät/Bewegung, Domäne 4: Aktivität/Ruhe. Diese Syndrom-                 ENP
+     diagnose wird häufig mit einer mit Immobilisierung verbun-
+     denen Pflegediagnose gebündelt, sodass nur eine Pflege-                Hintergrund • ENP (European Nursing care Pathways) ist ein
+     diagnose anstelle einer Reihe von Diagnosen geplant werden             Pflegeklassifikationssystem, das seit 1989 in Deutschland
+     muss.                                                                  entwickelt wird, um im Rahmen einer Pflegedokumentation
+                                                                            den Pflegeprozess in einer einheitlichen, sektorenübergrei-
+                                                                            fenden und standardisierten Sprache abzubilden. Auch hier
+                                                                            findet sich eine Aufteilung in Domänen, Klassen und Kate-
+       Beispiel Pflegeempfänger mit schlechtem                              gorien. Die Formulierung selbst baut auf weitere, zugeord-
+       Allgemeinzustand                                                     nete Begriﬀe und Konzepte auf. Die Pflegediagnosen werden
+                                                                            aus den Anteilen Individuum, Spezifikation und Pflegepro-
+       Gefahr eines Immobilitätssyndroms (P) beeinflusst durch (b/d)        blem präkombiniert. Im Pflegeprozess werden ebenfalls
+       starke chronische Schmerzen und neuromuskuläre Einschrän-            ENP-Pflegeinterventionen und ENP-Pflegeergebnisse mit
+       kungen (Ri).                                                         einer jeweils eigenen Syntax zugeordnet und bilden dadurch
+                                                                            Praxisleitlinien, die die Arbeit der Pflegefachkräfte unter-
+                                                                            stützen. ENP ist in mehreren Sprachen verfügbar und wird
+     3.5.3 Klassifikationssysteme                                           durch verschiedene Forschungsarbeiten und Studien regel-
+                                                                            mäßig wissenschaftlich überprüft und weiterentwickelt.
+     Definition Klassifikation und Taxonomie                                ENP wird in mehreren Ländern zur Pflegeprozessdokumen-
+     Eine Klassifikation ist ein Ordnungssystem, das auf dem Prinzip der    tation eingesetzt und zeichnet sich u. a. durch eine hohe Pra-
+     Klassenbildung beruht. Eine Klassifikationsstruktur ist eine Auflis-   xisnähe und sehr detaillierte Formulierungen aus.
+     tung von Begriﬀen oder Konzepten, die in einer hierarchischen
+     Struktur dargestellt ist. Wird von der reinen Ordnungslogik gespro-    Aufbau • ENP klassifiziert insgesamt 7 Konzeptgruppen,
+     chen, so wird der Begriﬀ Taxonomie verwendet.                          ebenfalls mit einem streng hierarchischen Aufbau: Pflege-
+                                                                            diagnosen, Kennzeichen, Ursachen, Ressourcen, Pflegeziele,
+     Wie die Klassifikationssysteme für medizinische Diagnosen              Pflegemaßnahmen und handlungsleitende Beschreibungen
+     – z. B. ICD-10 oder das Abrechnungssystem OPS, mit deren               (▶ Abb. 3.8).
+     Hilfe die DRG (S. 164) ermittelt werden – können auch Pfle-               Jeder Begriﬀ in ENP hat eine eindeutige und unabänderli-
+     gediagnosen systematisch geordnet werden. Einheitlich an-              che Identifikationsnummer. Diese Nummer dient dazu si-
+     erkannte Pflegediagnosen aus einem Pflegeklassifikations-              cherzustellen, dass sich z. B. bei Verlegung eines Pflegebe-
+     system können genutzt werden, um die Ziele und das Ar-                 dürftigen in eine andere Einrichtung die einzelnen Informa-
+     beitsfeld der Pflege besser gegenüber der Politik und der Ge-          tionsbausteine in ihrer Bedeutung nicht ändern. Somit eig-
+     sellschaft zu vertreten.                                               net sich das System auch für die Nutzung innerhalb einer
+        Es gibt verschiedene Klassifikationssysteme für Pflege-             elektronischen Behandlungsakte. Wie bei NANDA-I gibt es
+     diagnosen, Pflegeoutcomes (Pflegeziele) und/oder Pflege-               ebenfalls Domänen, Klassen und Subklassen innerhalb der
+     maßnahmen. Genauer vorgestellt werden im Folgenden die                 jeweiligen Konzeptgruppen.
+     ● Pflegeklassifikationssysteme der NANDA-I (International),               Die Begriﬀe aus den Konzeptgruppen sind in Form einer
+     ● ENP (European Nursing care Pathways) sowie                           ENP-Praxisleitlinie strukturiert. Das bedeutet, dass zu einer
+     ● ICNP (International Classification for Nursing Practice).            ENP-Pflegediagnose aus internationaler Literatur systema-
+                                                                            tisch erarbeitete Kennzeichen, Ursachen und Ressourcen zu-
+     Neben diesen 3 Systemen, die im deutschsprachigen Raum                 geordnet werden, die es der Pflegefachkraft ermöglichen,
+     die höchste Bedeutung haben, gibt es noch zahlreiche wei-              den Zustand des Pflegeempfängers individuell zu beschrei-
+     tere Pflegeklassifikationssysteme, z. B. die ICF (International        ben. Den Pflegediagnosen wiederum sind pflegewissen-
+     Classification of Functioning, Disability and Health), eine in-        schaftlich begründete Pflegeziele und Pflegemaßnahmen
+     terdisziplinäre Klassifikation, die auch pflegerische Beob-            zugeordnet. Somit erhalten Pflegefachkräfte eine Unterstüt-
+
+
+90    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+                                                                                                                                     Pflegediagnosen
+
+
+Abb. 3.7 Beispiel für den Aufbau der Pflegediagnosen nach NANDA-I.
+
+
+   DOMÄNE 1 GESUNDHEITSFÖRDERUNG
+   Das Bewusstsein des Wohlbefindens oder die Normalität einer Funktion und die angewendeten
+   Strategien, um die Kontrolle des Wohlbefindens oder die Normalität einer Funktion
+   aufrechtzuerhalten und diese(s) zu verstärken
+
+   Klasse 1 Gesundheitsbewusstsein Erkennen der normalen Funktion und des Wohlbefindens
+        Angenommene Diagnosen
+        00097 Beschäftigungsdefizit
+        00168 Bewegungsarmer Lebensstil
+
+   Klasse 2 Gesundheitsmanagement Identifizieren, Kontrollieren, Durchführen und Integrieren
+   von Aktivitäten, um die Gesundheit und das Wohlbefinden aufrechtzuerhalten
+        Angenommene Diagnosen
+        00079 Noncompliance
+        00257 Frailty-Syndrom im Alter
+        00231 Gefahr eines Frailty-Syndroms im Alter
+        00215 Gesundheitsdefizit einer Gemeinschaft
+        00078 Unwirksames Gesundheitsmanagement
+        00162 Bereitschaft für ein verbessertes Gesundheitsmanagement
+        00080 Unwirksames familiäres Gesundheitsmanagement
+        00099 Unwirksames Gesundheitsverhalten
+        00188 Gefahrengeneigtes Gesundheitsverhalten
+        00043 Unwirksamer Selbstschutz
+
+
+Abb. nach: NANDA International. Pflegediagnosen. Definition und Klassifikation 2015–2017. RECOM; 2016
+
+
+zung bei der Entscheidungsfindung und der Maßnahmen-                               nis zusammengesetzt werden können. Für die Formulierung
+auswahl entsprechend dem aktuellen Pflegefachwissen.                               müssen nicht aus allen Achsen Begriﬀe verwendet werden, je-
+   Ähnlich wie NANDA-I haben ENP-Pflegediagnosen eben-                             doch sind für das Stellen einer Pflegediagnose von den Ent-
+falls eine Definition, Literaturverweise, eine Bearbeitungs-                       wicklern Regeln vorgegeben. In der aktuellen Version (2017)
+historie sowie Angaben zur wissenschaftlichen Ausdrucks-                           gibt es 7 Achsen, Pflegediagnosen/Outcomes (DC) sowie
+kraft und Gültigkeit (Evidenzlevel).                                               Pflegeinterventionen (IC). Die Klassifikation beschreibt grund-
+                                                                                   legende medizinische und pflegerische Fachbegriﬀe, z. B.
+                                                                                   „Dyspnoe“ oder „Geburtsschmerz“. Ebenso werden Begriﬀs-
+ICNP                                                                               bestimmungen z. B. in der Beurteilungsachse zur Verfügung
+Hintergrund • Seit 1989 entwickelt der Weltbund der Pflege                         gestellt, um das Ausmaß einer Einschränkung zu beschreiben.
+(International Council of Nurses, ICN) eine Klassifikation der
+Pflegesprache. Seit 1997 gibt es eine deutschsprachige Nut-
+zergruppe der Länder Deutschland, Österreich und Schweiz.                                WISSEN TO GO
+Das System des ICN heißt ICNP = International Classification
+of Nursing Practice (Internationale Klassifikation für die
+                                                                                       Pflegediagnosen
+Pflegepraxis). Ziel der ICNP ist es, eine Sammlung von pfle-
+gerelevanten Fachbegriﬀen weltweit in vielen Sprachen zur                              bieten eine einheitliche Bezeichnung für wiederkehrende
+Kommunikation zur Verfügung zu stellen.                                                Pflegeprobleme und Ressourcen. Am häufigsten werden
+   Die ICNP hat ursprünglich ausschließlich eine Sammlung                              im deutschen Sprachraum die Klassifikationen der NANDA-
+von Begriﬀen angeboten, die Pflegefachkräfte nutzen konn-                              I, der International Classification of Nursing Practice (ICNP)
+ten, um Pflegediagnosen, Pflegeinterventionen und Pfle-                                sowie die European Nursing care Pathways (ENP) verwen-
+geergebnisse zu erstellen. Da es sich in der praktischen Um-                           det.
+setzung herausgestellt hat, dass die Zusammenstellung von                              ● NANDA-I-Taxonomie II: gibt Pflegediagnosen vor und
+
+Pflegediagnosen und Maßnahmen sehr zeitintensiv ist, wer-                                 unterteilt in Domänen und Klassen (▶ Abb. 3.7)
+den seit einigen Jahren aus den Einzelbegriﬀen vordefinierte                           ● ENP bietet Pflegediagnosen, Pflegeziele und Pflegemaß-
+
+Sub-Sets (Pflegediagnosen) entwickelt. Neben 7 sog. Achsen                                nahmen in der Form von Praxisleitlinien an und unter-
+bietet ICNP auch Pflegediagnosen/Outcomes (DC = Diagnos-                                  stützt somit Pflegefachkräfte bei der Auswahl geeig-
+tic Concepts) und Pflegeinterventionen (IC = Intervention                                 neter und u. a. durch internationale Fachliteratur bestä-
+Concepts) an. „Beeinträchtigtes Schlucken“ ist z. B. eine                                 tigter Pflegemaßnahmen anhand der gestellten Pflege-
+ICNP-Pflegediagnose, die aus dem Begriﬀ „Schlucken“ aus                                   diagnose(n).
+der Fokusachse und dem Begriﬀ „beeinträchtigt“ aus der                                 ● ICNP: Sammlung von systematisch in 7 Achsen einge-
+
+Achse der Beurteilung bereits zusammengestellt ist.                                       ordneten Begriﬀen, aus denen Pflegediagnosen, Pflege-
+                                                                                          interventionen und Pflegeergebnisse erstellt werden
+Aufbau • Die ICNP ist in verschiedene Achsen eingeteilt, in de-                           können. Darüber hinaus bestehen bereits vorformulierte
+nen Begriﬀe hierarchisch geordnet sind und aus denen eine                                 Pflegediagnosen/Outcomes (DC) sowie Pflegeinterven-
+Pflegediagnose, eine Pflegeintervention oder ein Pflegeergeb-                             tionen (IC).
+
+
+        I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen                       91
+        Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+         Usage subject to terms and conditions of license.
+l3   Pflege als Prozess gestalten
+
+
+     Abb. 3.8 Struktur einer ENP-Praxisleitlinie.
+
+
+
+
+     Abb. aus: Wieteck P. ENP-Praxisleitlinien: Pflegediagnosen, Pflegeziele, Pflegemaßnahmen. Stuttgart: RECOM; 2020
+
+
+
+
+92     I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                     Pflegestandards und Assessments
+
+
+3.5.4 Pflegediagnosen im
+Pflegeprozess                                                             Beispiel Verbandwechsel
+Definition Pflegediagnostischer Prozess                                   Jede Klinik hat einen hausinternen Standard für den Ablauf
+Das Sammeln aller Informationen, etwa durch Untersuchung und              eines postoperativen Verbandwechsels. Definiert ist dort u. a.,
+Beobachtung, das Erkennen von Ursachenzusammenhängen und                  welches Desinfektionsmittel und Verbandmaterial genutzt wer-
+das Dokumentieren der Ergebnisse in Form einer Pflegediagnose in          den sollen. Beim Ablösen eines alten Verbandes stellen Sie nun
+der PÄS(R)-Struktur wird auch als pflegediagnostischer Prozess be-        jedoch fest, dass Ihr Pflegeempfänger auf das bislang verwen-
+zeichnet.                                                                 dete Verbandmaterial allergisch reagiert. Für den neuen Ver-
+                                                                          band entscheiden Sie sich deshalb für ein anderes Verbandma-
+Grundlage für die Formulierung von Pflegediagnosen im                     terial, das nicht dem eigentlichen Standard entspricht. Die Ab-
+Rahmen des pflegediagnostischen Prozesses ist u. a. der ge-               weichung und die Begründung dokumentieren Sie in der Akte
+zielte Einsatz von Assessmentinstrumenten. Was Assess-                    des Pflegeempfängers.
+mentinstrumente sind und wofür sie gut sind, wird im
+nachfolgenden Unterkapitel erläutert.
+                                                                        Standardpflegepläne
+3.6 Pflegestandards und                                                 Einige Einrichtungen verwenden für Bereiche, die mit im-
+                                                                        mer wiederkehrenden und gleichförmig verlaufenden
+Assessments                                                             Krankheitsabläufen zu tun haben, Standardpflegepläne
+                                                                        (▶ Abb. 3.9). Diese enthalten die generellen Pflegeprobleme
+3.6.1 Pflegestandards                                                   (S. 81) bzw. Pflegediagnosen, die typischerweise während
+                                                                        eines Aufenthalts auftreten. Die üblichen Pflegemaßnahmen
+In vielen Kliniken existieren Standards für verschiedene
+                                                                        können ebenfalls bereits als Vorschlag enthalten sein.
+Pflegehandlungen, z. B. wie und mit welchen Hilfsmitteln
+                                                                           Zwingende Voraussetzung für die Verwendung solcher
+eine Ganzkörperpflege, eine Prophylaxe, ein bestimmter
+                                                                        Standardpflegepläne ist, dass sie sowohl an die Einrichtung
+Verbandwechsel durchgeführt werden oder wann welche
+                                                                        angepasst als auch auf eine bestimmte Gruppe an Pfle-
+hygienische Maßnahme erfolgen sollte. Pflegestandards
+                                                                        geempfängern zugeschnitten werden. Sie können als eine
+werden von Pflegefachkräften unter Rücksprache mit ggf.
+                                                                        Art Mindestanforderung gesehen werden und müssen durch
+anderen Berufsgruppen formuliert. Auch im Rahmen von in-
+                                                                        die Pflegefachkräfte ggf. nach den individuellen Bedürfnis-
+dividuellen Pflegeplanungen wird auf vorhandene Stan-
+                                                                        sen des einzelnen Menschen erweitert werden.
+dards verwiesen. Dies kann den Umfang der Pflegeplanung
+deutlich reduzieren.
+  Jedoch ist festzuhalten, dass der Begriﬀ Standard (Pfle-              ! Merke Unterstützen
+gestandard) nicht überall einheitlich verwendet und ver-                Standardpflegepläne können die individuelle Planung unterstützen,
+standen wird. Ein Standard legt i. d. R. aufgrund eines Kon-            aber niemals ersetzen!
+senses ein bestimmtes Qualitätsniveau oder zu erreichendes
+Leistungsniveau fest.
+                                                                        Abb. 3.9 Pflegeplanung EDV.
+Definition Pflegestandards
+Pflegestandards sind Maßstäbe für angemessenes pflegerisches
+Handeln, mittels derer eine bestimmte Pflegequalität definiert und
+geprüft werden kann.
+
+Standards beschreiben die übliche Vorgehensweise z. B. bei
+einem Behandlungsfall, einer Pflegemaßnahme oder einer
+pflegerischen Problemstellung. Sie sind i. d. R. durch eine an-
+erkannte Instanz (z. B. Berufsverbände, wissenschaftliche
+Abteilung einer Klinik) oder belegt durch Pflegeforschung
+entstanden.
+
+! Merke Pflegestandards
+Standards legen eine Vorgehensweise für eine Tätigkeit fest, die alle
+Pflegefachkräfte in genau dieser Art ausführen. Um den jeweils ak-
+tuellsten Erkenntnissen zu entsprechen, werden Pflegestandards          Pflegefachkräfte können standardisierte Pflegeplanungen z. B.
+häufig überarbeitet (etwa alle 3–5 Jahre).                              mithilfe der EDV individueller gestalten. In speziellen Planungs-
+                                                                        programmen können sie Textbausteine nutzen, die z. B. an die
+                                                                        NANDA-I-Kategorie angelehnt sind. Aber auch hier gilt: Pflege-
+                                                                        fachkräfte müssen den Standardpflegeplan immer individuell
+                                                                        überprüfen und ergänzen. Foto: K. Oborny, Thieme
+
+
+
+
+       I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen            93
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+l3   Pflege als Prozess gestalten
+
+
+                                                                            im Aufgabenbereich der Pflegefachkraft selbst (z. B. Durch-
+                                                                            führung eines Screenings oder Assessments bei Aufnahme
+       Beispiel Standardpflegepläne                                         des Pflegeempfängers)
+                                                                          ● Ergebniskriterien: Evaluation bzw. Auswertung der Ziele,
+
+       Bei einem Pflegeempfänger (Junge, 9 Jahre) können die Pflege-        die über Struktur- und Prozesskriterien erreicht werden
+       fachkräfte nach einer Tonsillektomie einen Standardpflegeplan        sollen (wichtig für das Qualitätsmanagement)
+       anwenden. Dieser beschreibt die allgemein auftretenden post-
+       operativen Probleme wie Schmerzen, Nachblutungsrisiko und          Aktuelle Expertenstandards • Die Entwicklung eines Exper-
+       Kreislaufstörungen beim ersten Aufstehen. Ergänzen müssen          tenstandards dauert ungefähr 1 Jahr. Da in der Pflege kon-
+       sie die individuellen Besonderheiten, auf die speziell eingegan-   tinuierlich neues Wissen hinzukommt und sich Wissens-
+       gen werden muss, z. B. hat der Pflegeempfänger aufgrund sei-       bestände fortlaufend verändern, müssen die Expertenstan-
+       nes Alters Angst und Heimweh, da er über Nacht alleine im          dards regelmäßig überarbeitet und aktualisiert werden. Fol-
+       Krankenhaus ist.                                                   gende Expertenstandards sind bisher erschienen und über
+                                                                          den folgenden Link abrufbar: www.dnqp.de/de/experten
+                                                                          standards-und-auditinstrumente (Stand 2020).
+                                                                          ● Dekubitusprophylaxe in der Pflege (S. 392)
+     Expertenstandards                                                    ● Entlassungsmanagement in der Pflege
+     Hintergrund • Die nationalen Expertenstandards sind ein              ● Schmerzmanagement in der Pflege bei akuten Schmerzen
+     zentrales Instrument der Qualitätsentwicklung in der Pflege.           (S. 534)
+     Sie tragen zur Sicherung und Weiterentwicklung der Pflege            ● Schmerzmanagement in der Pflege bei chronischen
+     bei und dienen professionell Pflegenden als Basis und Orien-           Schmerzen (S. 534)
+     tierung für ihr pflegerisches Handeln. Ziel der Standards ist        ● Sturzprophylaxe in der Pflege (S. 438)
+     es, in allen Versorgungsbereichen der Pflege, egal ob ambu-          ● Förderung der Harnkontinenz in der Pflege (S. 425)
+     lant oder stationär, anwendbar zu sein. Anders als z. B. haus-       ● Pflege von Menschen mit chronischen Wunden (S. 667)
+     intern entwickelte Pflegestandards sind Expertenstandards            ● Ernährungsmanagement zur Sicherung und Förderung der
+     wissenschaftlich fundierte Abhandlungen über zentral be-               oralen Ernährung in der Pflege (S. 451)
+     deutsame Themen der Pflege. Sie werden vom Deutschen                 ● Förderung der physiologischen Geburt (S. 870)
+     Netzwerk für Qualitätsentwicklung in der Pflege (DNQP) he-           ● Beziehungsgestaltung in der Pflege von Menschen mit De-
+     rausgegeben und von wechselnden Expertengruppen erar-                  menz (S. 1420)
+     beitet. Sie enthalten Handlungsrichtlinien, auf deren Grund-         ● Erhaltung und Förderung der Mobilität
+     lage Einrichtungen des Gesundheitswesens eigene Pfle-
+     gestandards entwickeln können.                                       Expertenstandards in der Pflegepraxis • Expertenstandards
+                                                                          sind in allen Settings der Pflege hilfreich und relevant – am-
+     Aufbau • Die Expertenstandards werden immer nach dem-                bulant wie stationär, in der akuten Pflege ebenso wie in
+     selben Prinzip aufgebaut und folgen dabei der inneren Logik          Langzeiteinrichtungen. Um sie in der täglichen pflegeri-
+     des Pflegeprozesses:                                                 schen Arbeit anwenden zu können, ist jeweils eine individu-
+     ● Präambel: Darstellung der Problematik und Einbettung in            elle Anpassung auf die jeweiligen Gegebenheiten der Ein-
+       den pflegerischen Kontext                                          richtung erforderlich, die in der Regel durch bereichsüber-
+     ● „Tabelle Expertenstandard“: Zielsetzung und Begründung;            greifende Arbeitsgruppen vorgenommen wird. Die einzelne
+       Strukturkriterien, Prozesskriterien, Ergebniskriterien (s. u.)     Pflegefachkraft sollte jedoch neben der individuellen Anpas-
+     ● Kommentierung der Standardkriterien: Erläuterung und               sung auch den Inhalt des zugrunde liegenden Standards
+       tiefer gehende Erklärung der Standardkriterien in der Ta-          kennen, um auf die sich ständig verändernden Grundsätze
+       belle                                                              und Neuerungen reagieren und diese in die alltägliche Pfle-
+     ● Literaturanalyse: Vorgehen und Auswahl der verwendeten             ge integrieren zu können.
+       Literatur und ausführliche Erläuterung der fachlichen Hin-
+       tergründe des Standards
+     ● Dokumentation der Implementierung: Audit (wo vorhan-               3.6.2 Screening
+       den), Implementierung und Evaluation                               In der Medizin versteht man unter Screening den Einsatz
+     ● Weiterführende Hinweise: wo vorhanden, werden Hin-
+                                                                          solcher Instrumente, die Risikofaktoren und -personen aus
+       weise auf unterstützende Screening- oder Assessment-               einer großen Personengruppe identifizieren können. Somit
+       instrumente gegeben                                                können zu einem möglichst frühen Zeitpunkt entspre-
+                                                                          chende Maßnahmen getroﬀen werden. Beispiele sind post-
+     Struktur, Prozess, Ergebnis • Die Aussagen des Expertenstan-         natale Screenings zum Erkennen von genetischen Erkran-
+     dards sind u. a. tabellarisch aufbereitet und in Struktur-, Pro-     kungen oder MRSA-Screening bei Eintritt in eine Pflegeein-
+     zess- und Ergebniskriterien untergliedert. Diese Tabelle gibt        richtung.
+     in verkürzter Form den Inhalt des Expertenstandards wie-                Auch Pflegende „screenen“ Pflegebedürftige nach häufi-
+     der, reicht jedoch alleine und ohne Ansicht der jeweiligen           gen oder altersgemäß zu erwartenden Risiken, beispielswei-
+     Erläuterungen nicht zur Umsetzung im Pflegealltag aus.               se um bei der Aufnahme in die Klinik oder dem Einzug in
+     ● Strukturkriterien: Kompetenzen und Fähigkeiten, die die
+                                                                          eine Pflegeeinrichtung einen schlechten Ernährungszustand
+       Pflegefachkraft für die Umsetzung der Pflege braucht, so-          (z. B. mittels Mini Nutritional Assessment MNA) frühzeitig
+       wie Rahmenbedingungen und Ressourcen, die vonseiten                zu erkennen und vertiefende Maßnahmen einleiten zu kön-
+       der Einrichtung für die Umsetzung geschaﬀen bzw. zur               nen. Sie dienen somit einer ersten Einschätzung und Erfas-
+       Verfügung gestellt werden müssen (z. B. räumliche Vo-              sung eines potenziellen Risikos. Ist das Ergebnis des Screen-
+       raussetzungen, ausreichend Personal)                               ings positiv, folgt eine weitere Abklärung, u. a. mittels vertie-
+     ● Prozesskriterien: Durchführung und Umsetzung der Pfle-
+                                                                          fender Assessments.
+       gemaßnahmen innerhalb des Pflegeprozesses. Dies liegt
+
+
+94    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+                                                                                                 Pflegestandards und Assessments
+
+
+                                                                        kungen in 10 Bereichen des täglichen Lebens beurteilt: Es-
+3.6.3 Assessment                                                        sen und Trinken, Bett-Stuhl-Transfer, Waschen, Toiletten-
+Definition Assessment                                                   benutzung, Baden, Gehen bzw. Rollstuhlfahren in der Ebe-
+                                                                        ne, Treppen steigen, An- und Auskleiden, Stuhlkontrolle,
+Der Begriﬀ stammt aus dem Englischen und bedeutet so viel wie Ein-
+                                                                        Urinkontrolle. Jeder Bereich wird in 5er-Schritten mit
+schätzung, Bewertung.
+                                                                        Punkten bewertet. Maximal ergibt der Test 100 und mini-
+                                                                        mal 0 Punkte. Ein niedriger Wert spricht für eine geringe
+Dieser aus dem Englischen übernommene Begriﬀ wird in
+                                                                        Selbstständigkeit und einen hohen Pflegebedarf.
+deutschen Pflegefachkreisen nicht immer einheitlich ver-
+                                                                      ● Dementia Care Mapping (DCM): Schätzt die Bedürfnisse
+wendet. Im weiteren Sinne wird unter dem Begriﬀ „Assess-
+                                                                        dementer Menschen und Bewohner in Pflegeheimen ein.
+ment“ die Informationssammlung über den Pflegeempfän-
+                                                                      ● Assessmentinstrumente zur Erfassung von Schmerzen:
+ger zur Problemerfassung verstanden. Im engeren Sinne
+                                                                        Berner Schmerzscore für Neu- und Frühgeborene, die visu-
+wird er für Instrumente (Skalen oder andere Messinstru-
+                                                                        elle Analogskala (VAS) oder der BESD, zur Beurteilung von
+mente) verwendet, die es Pflegefachkräften ermöglichen,
+                                                                        Schmerzen bei Demenz, siehe auch Kap. „Schmerzmana-
+eine genaue Einschätzung der Situation des Pflegeempfän-
+                                                                        gement“ (S. 539).
+gers vorzunehmen – meist bezogen auf einen bestimmten
+                                                                      ● Verschiedene Risikoassessments: Für pflegerisch relevante
+Faktor, z. B. die Erfassung des Dekubitusrisikos durch die
+                                                                        Risiken, etwa das Dekubitusrisiko, wurden verschiedene
+Braden-Skala.
+                                                                        Skalen entwickelt. Häufig verwendet wird die Braden-Ska-
+   Assessmentinstrumente können bei der Informations-
+                                                                        la, die mit der Braden-Q-Skala auch für Kinder angewen-
+sammlung (S. 80) genutzt werden, um das individuelle Risi-
+                                                                        det werden kann.
+ko eines Pflegeempfängers für ein bestimmtes Pflegepro-
+                                                                      ● Ziel des Geriatrischen Assessments ist die ganzheitliche
+blem zu erfassen. Ziel des Assessments ist es dabei, die für
+                                                                        Feststellung der körperlich-funktionellen und psycho-
+die Pflege relevanten Phänomene so zu strukturieren, dass
+                                                                        sozialen Situation des älteren Menschen mit geriatrischen
+Probleme klar erfasst, Ziele geplant und Maßnahmen be-
+                                                                        Problemen. Es ist ein multidimensionales Verfahren, das
+gründet ausgewählt werden können. Das Ergebnis lässt sich
+                                                                        mehrere Einzelinstrumente integriert:
+üblicherweise in Zahlen darstellen, die bestimmten Ergeb-
+                                                                        – In einer ersten Stufe wird zunächst das Geriatrische
+niskategorien zugeordnet werden. Die Ergebnisse lassen
+                                                                          Screening („Screening nach Lachs“ oder „Geriatrie-
+dann darauf schließen, was pflegerisch zu tun ist. Nicht im-
+                                                                          Check“) durch den Arzt durchgeführt. Zielfrage ist hier:
+mer ist ein Fremdassessment durch Pflegefachkräfte nötig,
+                                                                          Hat der ältere Mensch ein geriatrisches Problem?
+gerade in Bezug auf Schmerzustände eignet sich z. B. auch
+                                                                        – In der zweiten Stufe, dem Geriatrischen Basisassessment,
+die Selbsteinschätzung mittels Schmerztagebuch. Mittler-
+                                                                          wird dann zum einen diagnostisch abgeprüft, ob eine
+weile liegen viele Assessmentinstrumente in digitaler und
+                                                                          therapierelevante Störung vorliegt und welche. Zum an-
+analoger Form vor und sind fester Bestandteil im Pflegepro-
+                                                                          deren werden auf spezielle Bereiche bezogene Probleme
+zess.
+                                                                          und Ressourcen getestet, z. B. mit dem dem Mini-Men-
+   Ein kritischer Umgang mit Assessments ist empfehlens-
+                                                                          tal-State-Test, der Depressionsskala, einem Schmerz-
+wert, denn viele Assessments weisen z. B. Schwächen hin-
+                                                                          und Sozialassessment, Mobilitätstests und ggf. weiteren
+sichtlich der Spezifität aus und nicht alle sind ausreichend
+                                                                          Tests wie dem „Geldzähl-Test“ oder dem Barthel-Index.
+auf ihre Validität und Reliabilität hin untersucht.
+                                                                        – In der dritten Stufe erfolgt eine vertiefte Abklärung be-
+! Merke Assessment bei Evaluation                                         stimmter Beeinträchtigungen bei Bedarf.
+
+Neben der Einschätzung des Pflegebedarfs dienen Assessmentinstru-
+mente auch der Evaluation. Assessmentinstrumente erheben den              WISSEN TO GO
+aktuellen Zustand des Patienten, in der Regel nach einem bestimm-
+ten Kriterium, beispielsweise Schmerz. In der Evaluation werden das
+Ergebnis der Pflege bzw. der aktuelle Ist-Zustand und der Ausgangs-     Pflegestandards und Assessments
+zustand miteinander verglichen, innerhalb des Pflegeprozesses auch      ● Pflegestandards:     bestimmte, einheitlich festgelegte
+unter Berücksichtigung eines angestrebten Zielzustandes abgegli-          Vorgehensweisen bei Pflegemaßnahmen; Maßstab oder
+chen.                                                                     Richtlinie dafür, wie eine Tätigkeit erfolgt
+                                                                        ● Standardpflegepläne: enthalten häufig wiederkehrende
+Beispiele für Assessmentinstrumente • Sie werden sowohl bei               Pflegeprobleme und Maßnahmen; sie sollten individuell
+Kindern und Erwachsenen im Klinikbereich als auch in der                  auf die jeweilige Situation des Pflegeempfängers hin an-
+Altenpflege eingesetzt. Mittels der verschiedenen Assess-                 gepasst werden
+mentinstrumente können körperliche, geistige oder rein                  ● Expertenstandards: wissenschaftlich fundierte Abhand-
+funktionale Aspekte erfasst werden:                                       lungen zu einzelnen, in der Pflege bedeutsamen Themen
+● Resident Assessment Instrument (RAI): Stellt fest, inwie-             ● Screening: Instrument zum Erkennen von Risiken in gro-
+  weit eine selbstständige Lebensführung eingeschränkt                    ßen Personengruppen
+  oder noch möglich ist, und ist damit besonders gut für die            ● Assessmentinstrumente: Skalen oder Messinstrumen-
+  Altenpflege und die Langzeitpflege geeignet.                            te, um Probleme und Risiken beim Pflegeempfänger zu
+● Assessmentinstrumente zur Erfassung der Ernährungs-
+                                                                          erfassen, z. B. Barthel-Index, Dementia Care Mapping
+  situation: MNA-Assessment, das Mini Nutritional Assess-                 oder Geriatrisches Assessment
+  ment, ist zur Bestimmung des Ernährungszustandes beim
+  älteren Menschen entwickelt worden, PEMU-Assessment
+  zur Einschätzung der Ernährungssituation in der Langzeit-
+  pflege.
+● Barthel-Index: Er schätzt die Selbstpflegefähigkeit von
+
+  Pflegeempfängern mit Erkrankungen des Nervensystems
+  und des Bewegungsapparats ein. Dazu werden Einschrän-
+
+
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen       95
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+l3   Pflege als Prozess gestalten
+
+
+                                                                           den, muss durch die Pflegefachkräfte bzw. die jeweilige Ein-
+     3.7 Pflegedokumentation und                                           richtung nachgewiesen werden, dass alle erforderlichen
+     Pflegeübergabe                                                        Maßnahmen unternommen wurden und die Mitarbeiter
+                                                                           keinen vermeidbaren Schaden verursacht haben. Dies wird
+     Eine lückenlose Pflegedokumentation ist wichtig, um den               auch als Beweislastumkehr bezeichnet.
+     Pflege-, Betreuungs- und Behandlungsprozess transparent
+     und nachvollziehbar für alle Beteiligten abzubilden. Sie dient
+     der Verlaufskontrolle und ist Grundlage für die Evaluation
+                                                                           Dokumentationssysteme
+     der Pflege. Zudem ist sie wichtiger Nachweis für erbrachte            Die Pflege hat verschiedene Möglichkeiten, Daten von Pfle-
+     Pflegeleistungen und dient als Rechtsgrundlage.                       geempfängern zu dokumentieren. Es gibt sowohl standardi-
+                                                                           sierte schriftliche als auch elektronische Dokumentations-
+                                                                           systeme.
+     3.7.1 Dokumentation
+                                                                           Schriftliche Dokumentationssysteme • Diese werden nach wie
+     Definition Dokumentation                                              vor in vielen Einrichtungen eingesetzt. Sie beinhalten
+     In einer pflegerischen Dokumentation werden alle Informationen        ● die klassische „Fieberkurve“, in der Pflegefachkräfte die
+     über den Pflegeempfänger und dessen Behandlung umfassend und            täglichen Informationen über Vitalzeichen, verordnete
+     lückenlos schriftlich festgehalten. Sie enthält geplante und durch-     und verabreichte Medikamente, Ein- und Ausfuhr eintra-
+     geführte Maßnahmen, weitere Beobachtungen sowie Besonderhei-            gen,
+     ten und Veränderungen.                                                ● den Pflegebericht, in dem Besonderheiten und Beobach-
+
+                                                                             tungen stehen,
+     Aufgaben • Die Pflegedokumentation erfüllt verschiedene               ● die Pflegeplanung,
+     wichtige Aufgaben, z. B.:                                             ● weitere spezialisierte Einlegeblätter und Protokolle, z. B.
+     ● Sie dient dazu, die Mitarbeiter des therapeutischen Teams
+                                                                             Wund-, Trink- oder Blutzuckerdokumentationen, Pflege-
+       über allgemeine und aktuelle Angaben zu informieren.                  komplexmaßnahmen-Score (PKMS) usw.
+     ● Sie fungiert als Informationsquelle, um einen individuellen         ● die ärztliche Dokumentation wie Anordnungen oder aktu-
+       Pflegeplan zu erstellen.                                              elle Untersuchungsergebnisse (z. B. Laborberichte).
+     ● Sie führt zu einer besseren Versorgung des Pflegeempfän-
+
+       gers und zu einem funktionierenden Qualitätsmanage-                 In der Altenpflege existieren vergleichbare schriftliche Sys-
+       ment, da Entwicklung und Verlauf der individuellen                  teme. Sie legen allerdings einen deutlich höheren Wert auf

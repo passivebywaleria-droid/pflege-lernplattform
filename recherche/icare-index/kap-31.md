@@ -1,656 +1,607 @@
-# Kapitel 31: Wickel und Auflagen
+# Teil 31
 
-> Quelle: I Care Pflege (Thieme, 2020), S. 712-719
+> Quelle: Icare Pflege
 > Automatisch extrahiert — Formatierung kann abweichen
 
 ---
 
-Pflegerische Maßnahmen
-
-30.3.5 Fieber bei älteren Menschen
-
-Abb. 30.2 Messen allein reicht nicht.
-
-Bei älteren Menschen reagiert das Immunsystem nicht mehr
-so heftig wie in jüngeren Jahren. Daher bekommen sie auch
-bei schweren Infekten wie einer Lungenentzündung mitunter nur geringes Fieber. Bei vielen älteren Menschen ist
-das Herz geschwächt und auch die Blutgefäße sind nicht
-mehr so elastisch. Das hat zur Folge, dass Fieber bei ihnen
-viel eher zu Kreislaufproblemen führt als bei jüngeren Menschen. Auch ist das Durstgefühl nicht mehr so ausgeprägt,
-sodass sie zu wenig Flüssigkeit zu sich nehmen. Dann besteht die Gefahr eines Nierenversagens. Ältere Menschen
-sollten daher immer wieder zum Trinken aufgefordert und
-ggf. dabei unterstützt werden.
-
-! Merke Prophylaxen bei Fieber
-
-Denken Sie bei länger andauernden Fieberzuständen und schlechtem Allgemeinzustand des Pflegeempfängers immer auch an die
-Prophylaxen! Durch Immobilität, Flüssigkeitsverlust und starkes
-Schwitzen sind folgende Prophylaxen bei Fieber besonders wichtig:
-Dekubitus-, Thrombose-, Pneumonie-, Obstipations-, Intertrigoprophylaxe (S. 392) .
-
-WISSEN TO GO
-Pflege bei Fieber
-Die Pflege von fiebernden Pflegeempfängern hat 3 Ziele:
-Ursache(n) erkennen, Komplikationen vermeiden und
-Wohlbefinden fördern. Die Maßnahmen richten sich nach
-der Fieberphase:
-● Fieberanstieg: Erreichen einer höheren Körpertemperatur durch warme Kleidung, Decken und warme Getränke
-unterstützen.
-● Fieberhöhe: Hitzestau vermeiden: Der Mensch sollte viel
-trinken und Puls und Blutdruck sollten engmaschig kontrolliert werden; auf Anordnung ggf. fiebersenkende
-Maßnahmen durchführen, z. B. Antibiotikagabe, Infusionen und Schmerzmittel.
-● Fieberabfall: Da der Pflegeempfänger stark schwitzt,
-sollte für viel Flüssigkeit gesorgt und nasse Wäsche gewechselt werden; auf Anordnung ggf. fiebersenkende
-Maßnahmen; Vitalparameter engmaschig kontrollieren
-→ starker und schneller Fieberabfall kann zu Kreislaufproblemen und Schock führen.
-● Kleine Kinder: Sie bekommen manchmal auch ohne
-Krankheit hohes Fieber. Andererseits kann leichtes Fieber ein Symptom für eine schwerwiegende Erkrankung
-sein. Wenn ein fieberndes Kind nicht ausreichend trinkt,
-muss ein Arzt informiert werden.
-● Ältere Menschen: Sie bekommen selbst bei schweren
-Infekten oft nur geringes Fieber. Da Fieber bei älteren
-Menschen häufig zu Kreislaufproblemen oder sogar Nierenversagen führt, sollten sie immer wieder zum Trinken
-aufgefordert und ggf. dabei unterstützt werden.
-
-30.3.6 Fiebersenkende Maßnahmen
-Ob Fieber als Freund oder Feind anzusehen ist, ist eine strittige Frage. Denn auf der einen Seite hilft es beim Kampf gegen Krankheitserreger, auf der anderen Seite belastet es den
-Körper. Leider gibt es keine klare Grenze, oberhalb deren
-Fieber mehr Schaden anrichtet als es nützt. Nicht nur ältere
-Menschen und Kinder reagieren verschieden darauf, sondern auch jeder einzelne Mensch.
-
-Ob fiebersenkende Maßnahmen angebracht sind oder nicht, ist
-nicht nur von der Temperatur, sondern von vielen weiteren Faktoren abhängig und wird immer individuell entschieden.
-Foto: K. Oborny, Thieme
-
-Der Arzt wird daher immer individuell über Zeitpunkt,
-Art und Umfang der fiebersenkenden Maßnahmen entscheiden. Pflegefachkräfte unterstützen ihn bei dieser Entscheidung durch eine gezielte Krankenbeobachtung. Die Grunderkrankungen, der allgemeine Zustand des Pflegeempfängers, die Höhe und die Dauer des Fiebers sind wichtige Faktoren, die einbezogen werden sollten. Der Zustand von Menschen mit einer verminderten Herz- oder Lungenleistung
-verschlechtert sich i. d. R. unter Fieber, weil ihr Herz die höhere Leistung nicht erbringen oder ihre Atmung den höheren Sauerstoﬀbedarf nicht decken kann (Messen allein
-reicht nicht, ▶ Abb. 30.2). In diesen Fällen können fiebersenkende Maßnahmen angebracht sein. Bei kleinen Kindern
-empfiehlt es sich wegen der Gefahr von Fieberkrämpfen, die
-Wärmeabgabe schon bei mildem Fieber durch Wadenwickel
-zu unterstützen und höhere Temperaturen medikamentös
-zu senken.
-Es gibt 2 Ansätze, die Körpertemperatur zu senken:
-1. Zum einen durch Medikamente, die den Temperaturregler im Gehirn wieder nach unten stellen, sog. Antipyretika. Die bekanntesten Wirkstoﬀe sind: Acetylsalicylsäure,
-Paracetamol, Ibuprofen und Metamizol. Weil sie gleichzeitig Schmerzen lindern, sind sie bei starken Kopf- oder
-Gliederschmerzen besonders geeignet.
-2. Zum anderen können kühlende Maßnahmen dem Körper
-Wärme entziehen. Sie gehören zu den physikalischen
-Maßnahmen.
-
-ACHTUNG
-In der Phase des Fieberanstiegs sind kühlende Maßnahmen kontraindiziert, weil sie der Temperaturregelung im Gehirn entgegenwirken und dadurch Schüttelfrost und einen erneuten Fieberanstieg begünstigen können. Wenn der Pflegeempfänger friert bzw. Zeichen
-von Frieren zeigt und sich seine Haut kühl anfühlt, kommen ausschließlich fiebersenkende Medikamente in Betracht.
-
-Kühlende Maßnahmen
-Wadenwickel
-
-! Merke Kontraindikationen
-
-Bei Durchblutungsstörungen und kalten Füßen oder Händen sind
-Wadenwickel kontraindiziert.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-709
-
-l
-30
-
-Pflege bei Fieber
-Durchführung • Unter die Beine wird ein Nässeschutz gelegt.
-2 Tücher (z. B. Geschirrtücher) werden mit lauwarmem
-Wasser getränkt (nicht kälter als ca. 10 °C unter Körpertemperatur) und anschließend ausgewrungen. Die Tücher werden locker, aber faltenfrei um die Waden gewickelt und der
-Pflegeempfänger auf Wunsch zugedeckt (▶ Abb. 30.3). Die
-Beine sollten nicht zu fest eingepackt sein, damit die Flüssigkeit aus den Wickeln verdunsten kann. Nach einigen Minuten (i. d. R. 5–10) haben die Tücher sich erwärmt und müssen gewechselt werden. Auf gar keinen Fall darf es zum Hitzestau kommen. Je nach Höhe des Fiebers kann der Vorgang
-2–3-mal wiederholt werden.
-Wirkungsweise • Die feuchten Tücher leiten die Wärme des
-Pflegeempfängers direkt ab und durch Verdunstung entziehen sie dem Körper zusätzlich Wärme (manche sprechen
-von „Verdunstungskälte“).
-Tipp • Probieren Sie Wadenwickel an sich selbst aus, wenn
-Sie einmal Fieber haben. So bekommen Sie ein Gefühl für
-die geeignete Temperatur der Wickel und die Länge der
-Durchführung.
-
-Waschungen
-Statt ihnen Wadenwickel anzulegen, können fiebernde Pflegeempfänger auch mit lauwarmem Wasser gewaschen werden. Das eignet sich besonders dann, wenn dem Betroﬀenen
-subjektiv sehr heiß ist. Es sollte an den Beinen und Armen
-begonnen und anschließend die wärmere Körpermitte gewaschen werden. So sind die Extremitäten noch am besten
-durchblutet und geben daher Wärme ab. Bei der Waschung
-sollte immer nur die zu waschende Körperpartie aufgedeckt
-werden, um eine zu rasche Abkühlung zu vermeiden und
-den Intimschutz zu wahren. Die gewaschenen Partien sollten wegen der Verdunstungskälte kurz an der Luft trocknen,
-bevor mit der nächsten Körperpartie begonnen wird.
-
-Zusätze
-Dem Wasser für Wadenwickel oder Waschungen können
-fiebersenkende Zusätze beigemischt werden, z. B. ein Schuss
-Zitronensaft oder auch Pfeﬀerminztee. Beide enthalten ätherische Öle, die die Durchblutung fördern und schnell verdunsten.
-
-! Merke Ätherische Öle
-
-Wegen der starken Wirkung von konzentrierten ätherischen Ölen
-können Hautreizungen und andere Komplikationen auftreten (Vorsicht besonders bei Kindern!). Benutzen Sie sie daher niemals unverdünnt und halten Sie sich an die Dosierungsanweisungen. In den
-meisten Fällen reichen 2–4 Tropfen auf eine Waschschüssel Wasser.
-Vermischen Sie es mit einem Emulgator, z. B. 1 EL Milch oder Kaﬀeesahne, um das eigentlich wasserunlösliche Öl gleichmäßig im Wasser zu verteilen.
-Testen Sie Waschwasser mit Zusätzen immer erst an einer kleinen
-Hautstelle am Pflegeempfänger, da nicht jeder alle ätherischen Öle
-verträgt. Auf keinen Fall dürfen sie in die Augen kommen! Gesicht
-und Intimbereich sollten immer nur mit Wasser ohne Zusatz gewaschen werden.
-
-Trockene Kälteanwendungen
-Kühlmatten • In manchen Kliniken gibt es Kühlmatten, die
-zwischen Betttuch und Matratze gelegt werden können.
-Diese bieten zwar den Vorteil, dass sie ihre Temperatur automatisch einem einstellbaren Zielwert der Körpertempera710
-
-Abb. 30.3 Wadenwickel.
-
-Material für einen Wadenwickel. Foto: K. Oborny, Thieme
-
-tur des Pflegeempfängers anpassen; aber durch den großflächigen Kontakt können sie sehr schnell Wärme ableiten und
-dadurch zu Schüttelfrost führen. Kühlmatten sind eine Therapieoption, wenn Fieber trotz anderer Maßnahmen nicht
-ausreichend sinkt.
-Lokale Kühlelemente • Sie können Fieber ebenfalls senken,
-wenn sie in der Nähe großer Blutgefäße aufgelegt werden,
-z. B. an den Leisten. Weil hier aber eine große Temperaturdifferenz besteht (Kühlelemente kommen i. d. R. aus dem Eisfach), besteht die Gefahr von lokalen Erfrierungen. Das Aggregat sollte deshalb nie direkt auf die Haut, sondern umwickelt
-mit einem Tuch und nicht länger als ein paar Minuten ohne
-Pause aufliegen. Das Aggregat sollte spätestens entfernt bzw.
-auf eine andere Körperstelle gelegt werden, wenn sich die
-Haut darunter deutlich kühl anfühlt. Die Körperstelle darf
-erst dann wieder gekühlt werden, wenn sie sich erwärmt hat.
-Die Maßnahme sollte beendet werden, wenn sie nach etwa
-30 min keine Wirkung gezeigt hat bzw. wenn das Fieber ausreichend gesenkt ist. Es muss darauf geachtet werden, die
-Körperkerntemperatur nicht zu schnell zu senken.
-
-Beispiele
-Beispiel Kind
-Ein 3-jähriges Kind hat Husten, 38,7 °C Fieber und dabei kühle
-Extremitäten. Weil es ein Jahr zuvor einen Fieberkrampf erlitten
-hat, verordnet ihm ein Arzt ein Zäpfchen Paracetamol in der
-seinem Körpergewicht entsprechenden Dosierung. Auf kühlende Maßnahmen verzichtet das Behandlungsteam, weil das Kind
-sich noch in der Phase des Fieberanstiegs befindet.
-
-Beispiel Junger Mann
-Ein junger Mann mit einer Lungenentzündung hat 39 °C Fieber. Zugedeckt mit einer leichten Decke ist ihm subjektiv weder
-eindeutig zu warm noch zu kalt. Er hat großen Durst und trinkt
-viel. Das Behandlungsteam verzichtet auf temperatursenkende
-Maßnahmen. Eine Pflegefachkraft erklärt dem Pflegeempfänger, dass das Fieber die Krankheitserreger in seinem Körper bekämpft. Zwei Stunden später sinkt das Fieber von allein.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Pflegerische Maßnahmen
-
-Fieberkrämpfe
-Beispiel Ältere Frau
-Eine 84-jährige Frau hat 38,1 °C Fieber. Sie ist schläfrig, nur
-schwer zu wecken und trinkt nichts. Ihre Haut fühlt sich am ganzen Körper warm an. Eine Pflegefachkraft macht der Frau Wadenwickel. Der hinzugerufene Stationsarzt verordnet außerdem
-intravenös Flüssigkeit. Eine Stunde später ist die Temperatur um
-½ °C gesunken und die Pflegeempfängerin wieder wacher.
-
-WISSEN TO GO
-Fiebersenkende Maßnahmen
-Medikamente oder kühlende Maßnahmen können Fieber
-senken. Ob fiebersenkende Maßnahmen ergriﬀen werden,
-entscheidet der Arzt. Empfohlen sind sie z. B. bei Pflegeempfängern mit verminderter Herz- oder Lungenleistung
-und bei Kindern wegen der Gefahr von Fieberkrämpfen.
-● Wadenwickel: Feuchte Tücher leiten Wärme durch Verdunstung ab. Bei Durchblutungsstörungen bzw. kalten
-Extremitäten sind sie kontraindiziert!
-● Kühlende Waschungen: Eine Waschung mit lauwarmem Wasser eignet sich besonders, wenn dem Pflegeempfänger subjektiv sehr heiß ist.
-● Trockene Kälteanwendungen: Kühlmatten werden eingesetzt, wenn Fieber trotz anderer Maßnahmen nicht
-ausreichend sinkt. Lokale Kühlelemente in der Nähe großer Blutgefäße können Fieber ebenfalls senken.
-
-30.3.7 Fieberbedingte
-Begleiterscheinungen
-Vor allem bei sehr hohem Fieber können Schüttelfrost, Fieberkrämpfe und Fieberdelir auftreten.
-
-Schüttelfrost
-Schüttelfrost entsteht, wenn der Körper seine Solltemperatur
-erheblich höherfahren möchte als die normalerweise bestehenden 37 °C. Das Muskelzittern kann dabei so heftig sein,
-dass der Pflegeempfänger sich möglicherweise verletzt. In
-diesem Fall sollte ein Arzt verständigt und der Betroﬀene
-möglichst nicht allein gelassen werden. Maßnahmen:
-● evtl. Heizung hochstellen.
-● Pflegeempfänger mit warmen Decken zudecken.
-● scharfe Kanten in seiner Nähe evtl. abpolstern.
-● evtl. zusätzlich eine Wärmedecke oder Wärmematte anwenden.
-● ruhig mit dem Pflegeempfänger sprechen und erklären,
-dass das Muskelzittern bald nachlassen wird.
-In Ausnahmefällen kann der Arzt Pethidin (ein Opiat) anordnen. Es wirkt sehr gut gegen Schüttelfrost, weil es das Temperaturzentrum dämpft. Wie andere Opiate dämpft es aber
-gleichzeitig das Atemzentrum. Nach der Gabe sollte deshalb
-die Atemfrequenz kontrolliert werden.
-
-Fieberkrämpfe sind Gelegenheitskrämpfe bei Fieber von Kindern. Rund 90 % der Fieberkrämpfe sind generalisiert, d. h., sie
-betreﬀen beide Körperhälften, bei 80 % verlaufen die Krämpfe
-tonisch-klonisch (Vassella 2003). Das bedeutet, zunächst verkrampft sich der ganze Körper plötzlich mit gestreckten Armen und Beinen, verzerrtem Gesicht und verdrehten Augen
-(= tonisch). Oft entleeren sich Blase und Enddarm. Diese tonische Verkrampfung geht nach einigen Sekunden in rhythmische Zuckungen über, bei denen es zu unkoordinierten Bewegungen des gesamten Körpers kommt (= klonisch).
-Treten Fieberkrämpfe auf, sollten Pflegefachkräfte einen
-Arzt verständigen, bei dem Kind bleiben und es durch Polsterungen vor Verletzungen schützen. Meist hört ein Fieberkrampf nach wenigen Minuten von allein auf. Ansonsten
-kann Diazepam als Rektiole (Miniklistier) den Anfall unterbrechen. Wie alle Benzodiazepine macht Diazepam müde.
-Nach einem Fieberkrampf ist der Betroﬀene i. d. R. aber auch
-ohne solche Medikamente schläfrig. Zu beachten: Fieber
-möglichst langsam senken, ein zu schneller Abfall kann wieder zu einem Krampfanfall führen.
-In der Aufregung auch an die Bezugspersonen des Kindes
-denken: Ein Krampfanfall verursacht bei ihnen meist große
-Angst. Deshalb sollte beruhigend auf die Eltern des Kindes
-eingegangen werden.
-
-Fieberdelir
-Wenn ein hochfiebernder Mensch plötzlich unruhig und desorientiert ist, spricht man von einem Fieberdelir. Ein Delirium
-ist immer ein Hinweis auf eine schwere Störung. Schon bei
-ersten Anzeichen sollten Pflegefachkräfte einen Arzt informieren. Ist Fieber die Ursache, sollte es unbedingt gesenkt
-werden. Möglicherweise hat der Pflegeempfänger zu wenig
-Flüssigkeit oder sein Blut enthält durch das Fieber nicht die
-richtige Konzentration an Elektrolyten (Mineralstoﬀen wie
-Natrium und Chlor). Alte Menschen sind dann besonders
-sturzgefährdet. Deshalb sollte auf Zeichen einer Exsikkose
-(z. B. trockene Schleimhäute, stehende Hautfalten) geachtet
-und Blut für die Laboruntersuchung entnommen werden.
-
-WISSEN TO GO
-Fieberbedingte Begleiterscheinungen
-● Schüttelfrost entsteht, wenn der Körper seine Tempera-
-
-tur erheblich steigern möchte.
-– Arzt rufen und beim Pflegeempfänger bleiben.
-– Pflegeempfänger warm zudecken.
-– Heizung hochstellen und ggf. scharfe Kanten abpolstern.
-– Atemfrequenz nach der Gabe von Pethidin (Opiat)
-kontrollieren.
-● Fieberkrämpfe treten bei fiebernden Kindern auf.
-– Arzt rufen und beim Kind bleiben.
-– Durch Polsterungen schützen.
-– Medikamentös evtl. Diazepam als Rektiole verabreichen.
-– Fieber langsam senken.
-● Fieberdelir besteht, wenn ein hochfiebernder Mensch
-unruhig und desorientiert wird.
-– Arzt rufen und Fieber senken.
-– Auf Zeichen einer Exsikkose achten.
-– Auf Anordnung Elektrolytwerte kontrollieren.
-– Betroﬀene beruhigen.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-711
-
-31
-
-Wickel und Auflagen
-
-31.1 Kompetent pflegen
-Wärme, Kälte, Wasser und Zusätze – das sind zentrale Bestandteile bei Wickeln und Auflagen. Dort arbeiten z. B. die
-thermischen Eigenschaften des Wassers und die heilsamen
-Kräfte ätherischer Öle. Diese Verfahren benötigen zwar
-etwas Zeit, sie lassen sich aber gut in den Pflegealltag integrieren. Pflegefachkräfte setzen Wickel und Auflagen dabei
-gezielt in bestimmten Pflegesituationen ein, z. B. die Quarkauflage bei Sonnenbrand oder die Eukalyptusauflage bei
-chronischer Blasenentzündung. Ziel ist es, Leistungsfähigkeit
-und das Wohlbefinden des Pflegeempfängers zu erhöhen.
-In diesem Kapitel lernen Sie u. a.,
-● welche verschiedenen Wickel und Auflagen es gibt und
-wann sie zum Einsatz kommen.
-● die Wirkungsweise von Wickeln und Auflagen kennen
-und wie Sie diese in der Praxis gezielt anwenden können.
-● worauf Sie bei der Applikation von Wickeln und Auflagen
-bei Kindern besonders achten müssen.
-
-31.2 Grundlagen
-Wickel und Auflagen gehören zur Thermotherapie bzw. in
-Kombination mit Wasser zur Hydrothermotherapie. Der Gedanke dahinter ist: Wasser ist ein Vermittler natürlicher Lebensreize. Es steigert die Leistungsfähigkeit, regt die Abwehrkräfte an und verbessert das Körperbewusstsein. Vorbeugend wie auch therapeutisch wirken die Wasseranwendungen ausgleichend auf das Nerven- und Hormonsystem
-sowie auf die Seele des Menschen. Weil Wasser verschiede712
-
-ne Aggregatzustände hat (flüssig, gasförmig, gefroren), kann
-die Therapie diese physikalischen und chemischen Eigenschaften nutzen – und das macht es so wertvoll.
-Die thermischen Eigenschaften des Wassers nutzt man
-z. B. zum Kühlen oder Erwärmen einzelner Körperabschnitte
-oder des ganzen Körpers. Oder Wasser wird bei Auflagen als
-Trägersubstanz genutzt, z. B. für Tee, Sud oder Packungen.
-Hydrothermotherapie hat ihren Platz v. a. in der Prävention
-und Rehabilitation sowie in klassischen Naturheilverfahren.
-Die Hydrothermotherapie kennt aber auch jeder aus der
-Akutmedizin – etwa als fiebersenkenden Wadenwickel
-(S. 709).
-
-Definition Hydrotherapie
-Die Hydrotherapie, wie sie heute in Kliniken und Kuren eingesetzt
-wird, entwickelten der Naturheiler Vincenz Prießnitz (1799–1851)
-und der Pfarrer Sebastian Kneipp (1821–1897). Sie umfasst: Waschungen, Abreibungen, Güsse, Wickel, Ganzkörperpackungen, Bäder und Teilbäder. Das Vorgehen dabei ist so: Die Therapie geht
-vom kleinsten Reiz (z. B. Waschungen) bis hin zu starken Reizen
-(z. B. einer Ganzkörperpackung). Was sich eignet, richtet sich nach
-Konstitution und Beschwerdebild des Pflegeempfängers. Der Prießnitz-Wickel ist ein Ganz- oder Teilwickel mit kaltem Wasser. KneippWickel werden mit kaltem oder heißem Wasser, mit und ohne Zusätze durchgeführt.
-Häufig werden Wickel und Auflagen mit Zusätzen (Heilkräuter, ätherische Öle, Essenzen usw.) versehen, die neben
-der hydrothermischen Wirkung zusätzliche spezifische Wirkungen ausüben.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Kompetent pflegen
-
-▶ S. 712
-
-Unterscheidung Wickel und Auflagen ▶ S. 713
-Grundlagen
-
-Wirkung von Wickeln und Auflagen ▶ S. 713
-Grundsätzliches zu Wickeln und Auflagen ▶ S. 714
-Wickel und Auflagen im Stationsalltag ▶ S. 714
-
-Eukalyptusauflage ▶ S. 714
-Kartoffelhalswickel ▶ S. 715
-Klassischer Brustwickel ▶ S. 715
-Verschiedene Wickel
-und Auflagen anwenden
-Das Kapitel vermittelt
-Kompetenzen im
-KB I.1, I.2 und I.3
-
-31.2.1 Unterscheidung Wickel und
-Auflagen
-Damit sie besseren Kontakt mit der Haut haben, werden Wickel um den Körper oder einen bestimmten Körperteil angelegt. Wickel bestehen immer aus mehreren Lagen von Tüchern. Jede Schicht dient einem bestimmten Zweck:
-● Das innere Tuch trägt das „Heilmittel“ (Wasser, bestimmte
-Zusätze).
-● Das 2. Tuch umhüllt den Körperteil. Es bewirkt einen innigen Kontakt des Heilmittels mit der Haut und verhindert
-gleichzeitig, dass das Mittel in die 3., wärmende Schicht
-eindringt.
-Auflagen sind Anwendungen, bei denen der heilende Zusatz
-mit einem Tuch – oft nur einlagig – auf der betreﬀenden
-Körperstelle liegt.
-Wickel und Auflagen tragen entweder ihre Namen nach
-ihren Zusätzen, z. B. Kohl-, Quark-, Kartoﬀelwickel oder -auflage. Oder sie heißen nach dem Ort, der behandelt wird, z. B.
-Brust-, Leib-, Halswickel. Sie können aber auch nach der Methode (Wickel oder Auflagen) oder Temperatur (kalt oder
-warm) bezeichnet werden.
-
-Kohlauflage ▶ S. 715
-Kümmelölauflage ▶ S. 715
-Quarkauflage ▶ S. 716
-Rosmarinölauflage ▶ S. 716
-Senfmehlauflage ▶ S. 717
-
-men. Ihre Anwendung eignet sich z. B. bei akuten Entzündungen wie Gicht, Arthritis oder Fieber.
-Warme Wickel • Sie werden vorwiegend bei chronischen Beschwerden des Bewegungsapparats (Arthrose) und akuten
-Verspannungen der Muskulatur eingesetzt. Warme Auflagen
-können aber auch bei akuten Entzündungen der Atemwege,
-der Blase und krampfhaften Beschwerden im Magen-DarmTrakt helfen. Warme Wickel und Auflagen führen die Wärme von außen zu und sorgen für eine Entspannung und Entkrampfung der Muskulatur.
-Ansonsten wirken kalte und warme Wickel und Auflagen,
-je nach Art der Zusätze und Dauer der Anwendung,
-schmerzlindernd, schleimlösend, entkrampfend oder antibakteriell. Warme Wickel liegen so lange auf, wie sie als angenehm und warm empfunden werden.
-Hinzu kommt bei allen Wickeln und Auflagen:
-● Der Pflegeempfänger fühlt sich allgemein umsorgter und
-wird ruhiger. Hydrotherapie senkt die Kosten im Gesundheitswesen: Vorbeugen ist besser als Heilen.
-● Pflegeempfänger können sich nach einer Anleitung selbst
-zu Hause behandeln und unterstützen den Heilungsprozess ihres Körpers.
-● Beschwerden werden gelindert und das Wohlempfinden
-gefördert.
-
-31.2.2 Wirkung von Wickeln und
-Auflagen
-Kalte Wickel und Auflagen • Sie entziehen dem Körper zunächst Wärme – die Gefäße verengen sich. Der Körper arbeitet (über das vegetative Nervensystem) gegen diesen Kältereiz an und nach kurzer Zeit weiten sich reflektorisch die
-Blutgefäße wieder. Das führt zu einer Erwärmung (Reiz-Reaktions-Therapie). Nur kurz aufliegende kalte Wickel oder
-Auflagen entziehen dem Körper Wärme. Hierbei wird der
-Wickel immer wieder erneuert und sollte sich nicht erwär-
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-713
-
-l
-31
-
-Wickel und Auflagen
-
-WISSEN TO GO
-Wirkung von Wickel und Auflagen
-● Wickel und Auflagen gehören zur Hydrothermotherapie.
-
-Oft werden sie mit Zusätzen versehen, z. B. Heilkräutern,
-ätherischen Ölen, Essenzen.
-● Wickeln umhüllen Körperteile. Sie haben 3 Schichten:
-– die innere trägt das Heilmittel,
-– die 2. umhüllt und
-– die 3. wärmt.
-● Auflagen sind Anwendungen, bei denen der heilende
-Zusatz mit einem Tuch – oft nur einlagig – auf der betreﬀenden Körperstelle liegt.
-● Kalte Wickel und Auflagen erwärmen über die Reiz-Reaktions-Therapie. Nur kurz aufgelegt und immer wieder erneuert, ohne sich zu erwärmen, entziehen sie dem Körper Hitze, z. B. bei akuten Entzündungen wie Gicht, Arthritis oder Fieber.
-● Warme Wickel werden vorwiegend bei chronischen Beschwerden des Bewegungsapparats und akuten Verspannungen der Muskulatur eingesetzt. Sie führen Wärme von außen zu und entspannen und entkrampfen die
-Muskulatur.
-● Alle Wickel und Auflagen wirken auch durch ihnen zugesetzte Wirkstoﬀe.
-
-digem Personal beraten lassen, z. B. Aromatherapeuten
-oder Hebammen.
-● Das Zimmer, die Materialien und der Pflegeempfänger
-sollten gut vorbereitet werden, um zügig arbeiten zu können. Dadurch wird ebenfalls verhindert, dass der Pflegeempfänger auskühlt.
-
-31.2.4 Wickel und Auflagen im
-Stationsalltag
-Für den Praxisalltag hat sich bewährt, spezielle Zeiten für
-Wickel und Auflagen freizuhalten. Je nach Pflegeempfänger,
-Terminen und Stationsroutine können diese Zeiten variieren. Pflegefachkräfte können Wickel und Auflagen auch in
-die normale Versorgung einbauen, z. B. während des abendlichen Rundgangs. Sie sollten den Ablauf mit den anderen
-Therapeuten (Physiotherapeuten, Ärzten) absprechen und
-gemeinsame Standards entwickeln.
-Tipp • Konzentrieren Sie sich anfangs auf einige wenige und
-auch einfachere Anwendungen. Probieren Sie die Wickel
-und Auflagen ruhig erst einmal bei sich selbst aus. So können Sie sich auch besser in den Pflegeempfänger einfühlen.
-
-WISSEN TO GO
-Wickel und Auflagen anwenden
-
-31.2.3 Grundsätzliches zu Wickeln
-und Auflagen
-Für Wickel und Auflagen werden keine speziellen Materialien benötigt. Nutzbar sind z. B. Tücher (Geschirrhandtücher), alte Bettlaken, Stecklaken, Handtücher aus natürlichen, kochfesten Materialien oder Mullkompressen. Auch
-ein Wasserkocher, Tabletts (zum Transport), Schüsseln und
-Wärmflaschen sind in jedem Haus zu finden. Der Zeitaufwand variiert je nach Wickel und Auflage. Gleichzeitig ist
-aber die persönliche Zuwendung zum Pflegeempfänger automatisch höher!
-
-! Merke Wärmestau
-
-Wärmestau vermeiden! Benutzen Sie keine Gummiunterlagen, synthetischen Stoﬀe oder Ähnliches.
-Beachtet werden sollte:
-● Der Pflegeempfänger sollte vor der Anwendung immer
-über Art, Dauer, Durchführung und Zweck/ggf. Wirkweise
-informiert und nach Allergien gefragt werden.
-● Nach Absprache mit dem Arzt werden das Einverständnis
-des Pflegeempfängers und die Durchführung dokumentiert.
-● Der Pflegeempfänger und seine Reaktion auf die Anwendung sollten gut beobachtet werden: v. a. Kinder (Säuglinge, Kleinkinder) und ältere Pflegeempfänger reagieren oft
-besonders empfindlich auf Temperaturreize oder Zusatzstoﬀe. Bei ihnen sollte mit milderen Temperaturen und geringerer Dosierung begonnen werden.
-● Bei Kindern gilt: nie mit unverdünnten Ölen arbeiten. Gesicht immer aussparen. Keine scharfen Öle wie Kampfer,
-Eukalyptus und Menthol nutzen. Am besten sollten Pflegende nur Produkte, die speziell für Kleinkinder und Säuglinge ausgewiesen sind, anwenden und sich von fachkun-
-
-714
-
-Es werden keine speziellen Materialien benötigt – normale
-Produkte aus Leinen oder Baumwolle genügen. Gummiunterlagen und synthetische Stoﬀe sollten nicht verwendet werden. Wichtig sind
-● Information des Pflegeempfängers,
-● Dokumentation und
-● Beobachtung.
-Wickel und Auflagen können in den normalen Stationsablauf eingebunden werden – dafür gezielte Ruhezeiten
-einplanen.
-
-31.3 Verschiedene Wickel und
-Auflagen anwenden
-31.3.1 Eukalyptusauflage
-Indikation und Wirkung • Eukalyptus (▶ Abb. 31.1) kann bei
-beginnenden und chronischen Harnwegsinfekten als Blasenauflage – zusammen mit einer gesteigerten Trinkmenge –
-die Ausbreitung von Bakterien eindämmen. Dabei ist allerdings entscheidend, wie weit ein Harnwegsinfekt bereits
-fortgeschritten ist. Verspürt der Pflegeempfänger nur leichtes Brennen beim Wasserlassen, kann er sich problemlos
-auch zu Hause eine Eukalyptuskompresse als Auflage auf
-den Bauch legen. Sollte die Entzündung weiter fortgeschritten sein, sollte der Hausarzt konsultiert werden.
-Durchführung • Eine Kompresse (10 × 10 cm) wird mit ca. 5
-Tr. 2 %iger Eukalyptuslösung beträufelt. Die Kompresse wird
-zwischen 2 Wärmflaschen gelegt, bis sie die Wärme angenommen hat. Nun wird die Kompresse auf den Unterbauch
-in Höhe der Blase gelegt und mit einem Handtuch abgedeckt. Um die Wärme eine Weile zu erhalten, kann der Wärmeträger auf das Handtuch gelegt werden. Die Auflage kann
-täglich ca. 30 min angewendet werden.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Verschiedene Wickel und Auflagen anwenden
-Abb. 31.1 Eukalyptus.
-
-peratur den Wickel gut durchwärmt hat. Das kann 45–
-60 min dauern.
-● Kann er nicht genug eigene Wärme entwickeln, sollte
-Wärme von außen zugeführt werden, z. B. über eine Wärmeflasche oder ein angewärmtes Körnerkissen (auf Temperatur achten!).
-
-31.3.4 Kohlauflage
-Indikation und Wirkung • Kohl galt schon bei den alten Römern als Allheilmittel. Kohl hat viele Eigenschaften: Er wirkt
-entzündungshemmend, stoﬀwechselanregend, schmerzstillend und abschwellend. Die Auflage eignet sich für verschiedene Symptome, z. B. Gelenkschmerzen, Spannungskopfschmerz, Lymphstau, Dekubitus bis hin zum Ulcus cruris.
-Die heilende Wirkung des Kohls liegt im Saft der Blätter.
-Obwohl Eukalyptusblätter eine kräftig grüne Farbe aufweisen,
-ist Eukalyptusöl in den meisten Fällen blassgelblich oder durchsichtig. © amy_Iv/stock.adobe.com
-
-31.3.2 Kartoﬀelhalswickel
-Indikation und Wirkung • Der Kartoﬀelhalswickel ist ein
-schnell gemachter heißer Wickel. Die Kartoﬀel hält relativ
-lange und intensiv warm. Ein Wickel wirkt bei akuten Halsschmerzen. Er hilft aber auch bei einer Bronchitis oder wenn
-der Rücken schmerzt. In dem Fall wird er als Wickel auf
-Brust oder Wirbelsäule gelegt.
-Durchführung
-● Eine noch heiße ungeschälte Kartoﬀel wird in ein Geschirrtuch gelegt und darin zerdrückt.
-● Das Tuch um den Hals oder die betroﬀene Stelle legen und
-mit einem Tuch oder Schal fixieren. Die Temperatur der
-Wickel vor Auflage testen!
-● Der Wickel bleibt ca. 30 min auf der betroﬀenen Stelle liegen oder so lange, wie er als angenehm warm empfunden
-wird.
-
-Durchführung
-● Die äußeren Blätter des Kohls (egal ob Weißkohl oder Wirsing) abtrennen, waschen und mittleren Strunk heraustrennen.
-● Kohlblätter mit einem Nudelholz o. Ä. walken (rollen), bis
-der Saft aus den Blättern austritt.
-● Kohlblatt direkt auf die Stelle legen, die zu behandeln ist,
-und mit einem Tuch fixieren (an Gelenken mit einer elastischen Mullbinde). Bei einem Ulkus werden die Kohlblätter
-dachziegelartig auf die betroﬀene Stelle aufgelegt.
-● Das Kohlblatt sollte mind. 2 h direkt aufliegen. Wenn möglich, sollte die Auflage vor der Nachtruhe angelegt werden
-– so kann sie über Nacht wirken.
-● Sollte das Kohlblatt zu kalt sein, kann es vor dem Walken
-in warmes Wasser gelegt oder mit einer Wärmflasche kurz
-angewärmt werden.
-
-WISSEN TO GO
-Verschiedene Wickel und Auflagen
-● Eukalyptusauflage: Dämmt das Ausbreiten von Bakte-
-
-rien ein und hilft bei beginnenden Harnwegsinfekten.
-
-31.3.3 Klassischer Brustwickel
-
-● Kartoﬀelhalswickel: Lindert akute Halsschmerzen.
-
-Indikation und Wirkung • Schon bei Pfarrer Kneipp galt der
-Brustwickel als ein gutes Mittel, um die Selbstheilungskräfte
-zu aktivieren. Wirkweise: Allgemein entziehen kalte Wickel
-Körperwärme. Was zur Folge hat, dass der Sympathikotonus
-steigt – mit Gefäßverengung, mäßigem Blutdruckanstieg
-und Stoﬀwechselanregung. Die Atmung vertieft und beschleunigt sich. Der Körper reagiert darauf, indem er den
-Vagotonus erhöht – als Gegenspieler. Die Folge: Die Muskulatur und auch die inneren Organe entspannen sich, was
-Schmerzen lindern kann. Der Brustwickel eignet sich bei
-Bronchitis, Lungen- und Rippenfellentzündungen sowie
-Bluthochdruck.
-
-der Pflegeempfänger. Er eignet sich bei Erkrankungen
-der Atemorgane.
-● Kohlauflage: Lindert Gelenkschmerzen, Spannungskopfschmerz, Lymphstau und eignet sich für die Behandlung
-chronischer Wunden.
-
-Durchführung
-● Der Wickel besteht aus 3 Tüchern. Das Innentuch aus Lei-
-
-nen oder Baumwolle wird in kaltes Wasser gelegt, gut ausgewrungen und faltenlos straﬀ um die Brust gewickelt.
-● Das Zwischentuch aus Molton oder Frottee fixiert die Auflage und saugt die Feuchtigkeit auf.
-● Von außen erhält der Pflegeempfänger eine Bettdecke
-oder ein Wolltuch, um ihn warm zu halten.
-● Der Wickel bleibt so lange um den Brustkorb gewickelt,
-bis der Pflegeempfänger durch seine eigene Körpertem-
-
-● Klassische Brustwickel: Stärkt die Selbstheilungskräfte
-
-31.3.5 Kümmelölauflage
-Indikation und Wirkung • Die Kümmelölauflage ist eine wirksame Methode, um Blähungen, Bauchschmerzen, Koliken
-oder Völlegefühl zu lindern. Der Kümmel hat eine entkrampfende und verdauungsfördernde Wirkung. Gerade bei
-Kindern, die in solchen Momenten viel Zuwendung benötigen, können Pflegende darüber wunderbar Körperkontakt,
-Streicheleinheiten und Wärme zukommen lassen.
-Durchführung
-● Etwas Olivenöl wird mit ca. 2 % Kümmelöl vermischt. Die
-Konzentration sollte nicht höher als 5 % sein (der Geruch
-wird sonst sehr intensiv).
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-715
-
-l
-31
-
-Wickel und Auflagen
-● Etwa ½ TL des verdünnten Kümmelöls in die Handfläche
-
-Abb. 31.2 Quarkauflage.
-
-geben und anschließend gleichmäßig, sanft und im Uhrzeigersinn in den Bauch massieren.
-● Danach ein Geschirrtuch auf den Bauch legen, das kurz
-vorher in warmes Wasser getaucht und ausgewrungen
-wurde. Darüber wird ein Frotteetuch und obenauf ein angewärmtes Körnerkissen gelegt (auf Temperatur achten!).
-● Die Auflage bleibt so lange liegen, wie sie als angenehm
-warm empfunden wird. Die Prozedur kann mehrmals wiederholt werden.
-
-31.3.6 Quarkauflage
-Indikation und Wirkung • Quark eignet sich wunderbar als
-therapeutische Auflage. Neben der kühlenden, schmerzlindernden und abschwellenden Wirkung des Quarks kommt
-noch eine entzündungshemmende und hautpflegende Wirkung hinzu. Eine Quarkauflage wird angewendet bei Entzündungen (z. B. bei einer Arthritis auf den geschwollenen
-Gelenken), Sonnenbrand, Insektenstichen oder auch leichten stumpfen Traumen (z. B. Bänderdehnung/-zerrung) und
-Blutergüssen.
-
-a
-
-Durchführung
-● Der Quark sollte in einem Sieb über einer Schüssel oder
-
-Spüle gut abtropfen.
-Kompresse oder Tuch wird ausgebreitet, der abgetropfte Quark etwa fingerdick auf der Kompresse ausgestrichen und wie ein Päckchen eingewickelt (Quarkauflage, ▶ Abb. 31.2).
-● Das Päckchen auf die zu behandelnde Stelle legen und mit
-einem Geschirrtuch abdecken, als Bettschutz kann ein 2.
-Tuch darumgewickelt werden.
-● Eine
-
-b
-
-! Merke Überwärmung
-
-Soll der Körperstelle Wärme entzogen werden (z. B. bei überwärmten Gelenken), wird die Kompresse entfernt, sobald sie sich erwärmt
-hat. Sonst belässt man die Auflage auf der zu behandelnden Stelle,
-bis der Quark trocken ist.
-
-31.3.7 Rosmarinölauflage
-Indikation und Wirkung • Durch ihre kreislaufanregende und
-durchblutungsfördernde Wirkung hilft die Auflage bei niedrigem Blutdruck oder Kreislaufschwäche.
-Durchführung
-● Etwas Rosmarinöl mit Olivenöl verdünnen und auf ein Geschirrtuch geben.
-● Etwa ½ TL Rosmarinöl wird im Herzbereich und auf dem
-Brustbein des Pflegeempfängers verrieben.
-● Ein Geschirrtuch kurz in kaltes Wasser tauchen, auswringen, auf etwa DIN-A5-Größe (Größe eines Vokabelhefts)
-falten und auf die Herzgegend bzw. das Brustbein auflegen. Die Auflage kann ca. 15 min belassen werden. Danach sollte sich der Kreislauf wieder stabilisiert haben und
-der Blutdruck etwas gestiegen sein.
-
-716
-
-c
-
-a Materialien.
-b Quark gleichmäßig ausstreichen.
-c Innentuch, Zwischentuch und Außentuch umschlagen.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-
+                                                                       besseren Zustand zu erreichen.
+                                                                          Der Psychologe Abraham Maslow hat die Bedürfnisse
+Bedürfnisse der Pflegenden • Selbstverständlich haben nicht
+                                                                       des Menschen in hierarchisch höhere und niedrigere un-
+nur die Pflegeempfänger, sondern auch die Mitarbeiter Be-
+                                                                       terteilt und in einer Pyramide dargestellt. Darin finden sich
+dürfnisse. So hat eine Pflegefachkraft i. d. R. das Bedürfnis,
+                                                                       ganz unten die körperlichen Bedürfnisse wie Hunger und
+ihre Pflegeempfänger professionell zu versorgen, um Aner-
+                                                                       Durst. Darauf folgen die Bedürfnisse nach Sicherheit, Liebe
+kennung in ihrer Rolle als Pflegende zu bekommen. Mit-
+                                                                       und Zugehörigkeit, Wertschätzung und Selbstverwirk-
+unter ist es aber wichtig, diesen Wunsch zurückzustellen,
+                                                                       lichung. Höher stehende Bedürfnisse werden dann wirk-
+weil dem Pflegeempfänger etwas anderes viel wichtiger ist.
+                                                                       sam, wenn die darunter aufgeführten erfüllt sind. Wer
+  Dennoch gilt: Bestimmte Bedürfnisse von Pflegenden
+                                                                       krank ist, braucht mitunter sogar Hilfe, seine existenziellen
+müssen erfüllt sein, um gute Arbeit zu gewährleisten. Eine
+                                                                       Bedürfnisse zu befriedigen.
+Pflegefachkraft kann nicht für andere professionell da sein,
+                                                                          Die Bedürfnishierarchie kann individuell abweichen. Für
+wenn sie z. B. Hunger hat und seit mehreren Stunden nicht
+                                                                       die Pflegeplanung ist es wichtig herauszufinden, welche
+zum Essen kommt.
+                                                                       Bedürfnisse für den Pflegeempfänger in seiner Situation
+                                                                       am wichtigsten sind.
+
+
+
+
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen         231
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+l9    Grundlagen der Entwicklung und Psychologie
+
+
+      Motivation                                                            Abb. 9.11 Positives Feedback stärkt die Motivation.
+
+
+
+        Beispiel Unzufriedenheit
+        Herr M. wird nach einem längeren Aufenthalt in der Angiologie
+        auf eine kardiologische Station verlegt. Dort will ihn eine Pfle-
+        gende an einen EKG-Monitor anschließen. Beim Anbringen der
+        Elektroden kratzt sie Herr M. aus Versehen mit einem Fingerna-
+        gel an seinem Brustkorb. Der Mann schreit sie zornig an: „Pas-
+        sen Sie doch auf!“ Die Schwester entschuldigt sich, doch Herr
+        M. bleibt weiterhin aggressiv. Daraufhin fragt ihn die Pflegerin,
+        was denn los sei und ob er mit seiner bisherigen Behandlung
+        möglicherweise unzufrieden sei. Herr M. bejaht dies sofort und
+        erzählt, dass er seit Wochen wahnsinnige Schmerzen habe und
+        bisher kein wirksames Medikament dagegen erhalten habe.
+                                                                            Foto: K. Oborny, Thieme
+
+      Die Pflegende hat zu Recht einen Grund (Unzufriedenheit)
+      hinter dem aggressiven Verhalten von Herrn M. vermutet.
+                                                                            Art der Aufgabe spielt eine Rolle: Aufgaben, die Spaß machen,
+      Die starken Schmerzen haben den Pflegeempfänger gereizt
+                                                                            motivieren mehr als Aufgaben, die man nicht so gerne macht.
+      gemacht. Seine Reaktion war ein Ventil für seinen Zorn.
+                                                                              Um im Pflegealltag bestmöglich zu motivieren, sollten
+        Es gibt viele Situationen im Pflegealltag, in denen es sich
+                                                                            Pflegetechniken angewendet werden, die sich an den Res-
+      lohnt, nach einem Motiv für ein bestimmtes Verhalten zu
+                                                                            sourcen des Pflegeempfängers orientieren. Pflegende sollten
+      forschen. Im Fall von Herrn M. war es das Motiv, „Wut zu
+                                                                            so oft wie möglich positives Feedback geben und dadurch
+      entladen“ – ausgelöst durch das Bedürfnis, schmerzfrei zu
+                                                                            die Eigenmotivation des Pflegeempfängers verstärken
+      sein. Indem die Pflegefachkraft für eine wirksame Schmerz-
+                                                                            (▶ Abb. 9.11). Sie sollten Empathie zeigen, dem Menschen
+      therapie sorgt, kann sie den Zorn des Pflegeempfängers
+                                                                            Zeit lassen, seine Stärken würdigen und fördern und Ziele
+      möglicherweise durchbrechen.
+                                                                            vereinbaren, die realistisch und messbar sind. Pflegende
+                                                                            sollten einschätzen und darauf vertrauen können, dass Ziele
+      Leistungsmotivation                                                   erreichbar sind, und versuchen, dieses Vertrauen auch beim
+      Neben der Suche nach dem Motiv für ein bestimmtes Ver-                Pflegeempfänger zu initiieren.
+      halten haben Pflegende oft die Aufgabe, Pflegeempfänger zu
+      einem gesundheitsfördernden Verhalten zu motivieren, z. B.            Die eigene Motivation • Finden Sie heraus, was Sie persönlich
+      nach einer Operation zu einer aktiven Krankengymnastik. In            motiviert. Was motiviert Sie besonders? Geld? Anerken-
+      diesem Fall spricht man von „Leistungsmotivation“, d. h.              nung? Wenn eine Aufgabe schwierig ist? Wenn Sie mit an-
+      dem Bestreben, seine Situation durch ein bestimmtes Ver-              deren zusammenarbeiten können? Wenn Sie wissen, was
+      halten zu verbessern.                                                 Sie besonders motiviert, können Sie sich damit selbst beein-
+        Leistungsmotivation steckt z. B. auch hinter dem Wunsch             flussen. Stellen Sie sich selbst Belohnungen in Aussicht, z. B.
+      eines Auszubildenden, im Examen eine gute Note zu bekom-              den Kauf eines Kleidungsstücks oder den Besuch eines Fuß-
+      men. Wenn er viel lernt, steigt die Wahrscheinlichkeit, dieses        ballspiels. Setzen Sie sich eine Deadline, wenn Sie unter Zeit-
+      Ziel zu erreichen. Sein Lernverhalten wird davon abhängen,            druck besser arbeiten können. Achten Sie außerdem auf Ihre
+      wie wichtig ihm gute Noten sind und wie viel Anstrengung              Einstellung. Sagen Sie sich selbst, dass Ihnen die Aufgabe
+      ihn das Lernen kostet. Bei einer optimalen Leistungsmotivati-         Spaß macht und dass sie ganz schnell erledigt ist.
+      on fühlt sich der Mensch weder unter- noch überfordert.
+        Motivation lässt sich als Produkt aus der Wahrscheinlich-
+      keit, etwas zu erreichen, und der Wertigkeit dieses Ziels be-              WISSEN TO GO
+      schreiben: Je wahrscheinlicher eine Zielerreichung und je
+      wichtiger das Ziel, umso höher ist die Motivation.                       Motivation
+                                                                               Ein Motiv ist ein antreibender Grund für ein Verhalten. Im
+      Intrinsische und extrinsische Motivation
+                                                                               Pflegealltag kann es sinnvoll sein, nach dem Motiv für ein
+      Definition Motivation                                                    bestimmtes Verhalten von Pflegeempfängern zu suchen
+                                                                               (z. B. bei aggressivem Verhalten).
+      Menschen können aus einem inneren Antrieb handeln oder von au-
+                                                                                  Die aus einem Motiv resultierende Handlungsbereit-
+      ßen zu einer Handlung motiviert werden. In der Fachsprache spricht
+                                                                               schaft bezeichnet man als Motivation. Menschen können
+      man von intrinsischer und extrinsischer Motivation.
+                                                                               aus einem inneren Antrieb handeln (intrinsische Motivati-
+                                                                               on) oder von außen motiviert werden (extrinsische Moti-
+      Motivation stärken • Ist der eigene Antrieb nicht groß genug,
+                                                                               vation). Man spricht von Leistungsmotivation, wenn je-
+      kann möglicherweise ein äußerer Anreiz motivieren. Eltern
+                                                                               mand seine Situation durch ein bestimmtes Verhalten ver-
+      können z. B. zu ihrem Kind sagen: „Wenn du in der Schule
+                                                                               bessern möchte.
+      eine gute Note schreibst, gehen wir zusammen in den Zoo.“
+                                                                                  Um im Pflegealltag bestmöglich zu motivieren, sollten
+         Je größer die intrinsische Motivation zu lernen ist, umso
+                                                                               Pflegende positives Feedback geben, Empathie zeigen,
+      leichter wird gelernt und umso besser wird das Gelernte be-
+                                                                               dem Pflegeempfänger Zeit lassen, seine Stärken würdigen
+      halten. Es gilt deshalb, intrinsische Motive zu stärken und ex-
+                                                                               und fördern und Ziele vereinbaren, die messbar sind.
+      trinsische Motivation in intrinsische umzuwandeln. Auch die
+
+
+232    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                Bedürfnisse, Motive und Emotionen
+
+
+                                                                    Stavemann geht davon aus, dass weitere emotionale Zu-
+9.7.2 Emotionen                                                     standsbeschreibungen entweder Mischformen dieser
+Emotionen gleich Gefühle?                                           Grundgefühle sind (z. B. Stolz oder Eifersucht) oder aber le-
+                                                                    diglich die Gefühlsintensität der Grundgefühle näher be-
+Die beiden Begriﬀe „Emotion“ und „Gefühl“ werden im all-
+                                                                    schreiben, z. B. Liebe, Verzweiflung, Hass, Panik usw. So ist
+täglichen Sprachgebrauch und auch in der Fachliteratur oft
+                                                                    z. B. Liebe die starke Ausprägung von Zuneigung, Verzweif-
+gleichbedeutend verwendet. Auch der Duden bezeichnet sie
+                                                                    lung die von Niedergeschlagenheit, Hass und Ekel die von
+als Synonym für das jeweilig andere Wort. Manche Autoren
+                                                                    Abneigung und Panik die von Angst.
+sprechen aber von einem Unterschied. Demnach bezeichnet
+                                                                       Wie intensiv ein Gefühl subjektiv empfunden wird, hängt
+„Gefühl“ eine innere, also nach außen zunächst verborgene
+                                                                    unter anderem damit zusammen, wie stark die Erregung ist,
+subjektive Empfindung. Das kann sowohl eine Sinnesemp-
+                                                                    die eine Situation, ein Mensch oder ein Objekt in uns aus-
+findung als auch eine Gemütsbewegung sein. Hingegen las-
+                                                                    löst. Je höher die Erregung, desto intensiver das subjektive
+sen sich „Emotionen“ meist von außen erkennen, weil sie
+                                                                    Empfinden und desto intensiver die körperlichen Begleit-
+eine körperliche Reaktion hervorrufen. Bestimmt haben Sie
+                                                                    symptome. Wenn Erregungszustände über einen längeren
+schon einmal einem Menschen, den Sie gut kennen, angese-
+                                                                    Zeitraum bestehen, ohne dass es zur Entspannung kommt,
+hen, dass er sich vor etwas fürchtet, z. B. wenn er einen Vor-
+                                                                    entsteht psychischer (emotionaler) Stress. Deshalb ist es ge-
+trag halten muss. Das Wort „Emotion“ stammt auch von
+                                                                    rade für Menschen in helfenden Berufen wichtig, dass sie ei-
+dem lateinischen Wort „emovere“ für „hinausschaﬀen“ bzw.
+                                                                    nen gesunden Umgang mit sich selbst pflegen oder diesen
+„vertreiben“ ab. Weil die Begriﬀe „Emotion“ und „Gefühl“
+                                                                    erlernen, da sie vermehrt emotionalen Belastungssituatio-
+inhaltlich aber nur schwer voneinander zu trennen sind,
+                                                                    nen ausgesetzt sind. Mehr dazu lesen Sie im Kap. „Selbstfür-
+verwenden wir sie im Folgenden synonym.
+                                                                    sorge und Stressmanagement“ (S. 52).
+                                                                       Emotionale Labilität bzw. Stabilität gilt als Persönlich-
+Ablauf von Emotionen                                                keitsmerkmal (S. 229). Emotional stabile Menschen haben
+                                                                    gelernt, ihre Emotionen zu beeinflussen bzw. zu kontrollie-
+Emotionen beinhalten verschiedene Prozesse:
+                                                                    ren, und sind eher ausgeglichen. Sie sind in der Lage, ange-
+● Wahrnehmen und Bewerten (kognitive Anteile)
+                                                                    messen auf Stress zu reagieren. Sie haben zielführende Be-
+● Intensität (subjektives Empfinden)
+                                                                    wältigungsstrategien erlernt und können sich rasch davon
+● körperliche Reaktionen (physiologische Anteile)
+                                                                    erholen.
+● Ausdruck (Verhaltenskomponente)
+
+                                                                    Körperliche Reaktionen • Emotionen beeinflussen unseren
+                                                                    Körper, denn sie gehen mit Veränderungen der physiologi-
+  Beispiel Brennender Baum                                          schen Funktionen wie Herz- und Atemfrequenz, Blutdruck
+                                                                    und Schweißproduktion einher. Sie drücken sich in körper-
+  Stellen Sie sich vor, Ihr Weihnachtsbaum hat Feuer gefangen.      lichen Symptomen wie Schwitzen, Erröten, Ohrensausen,
+  Zu Beginn der Emotion nehmen Sie die Situation wahr und be-       Übelkeit, Harndrang, Muskelspannung, Erblassen, Zittern
+  werten sie aufgrund Ihres Wissens und früherer Erfahrungen        oder Schwindel aus.
+  (Feuer kann zerstören/verletzen/wehtun/töten) als Bedrohung.         Dieses Phänomen kennen Sie auch aus vielen Redewen-
+  Dann erst empfinden Sie das Gefühl der Angst, das dazu führt,     dungen. Aussagen wie „Ich war gelähmt vor Angst“, „Ich er-
+  dass Ihr Organismus Stresshormone ausschüttet, die Sie zu         röte vor Scham“, „Ich mache Luftsprünge vor Freude“ oder
+  einer schnellen Reaktion und somit zur Bewältigung der Gefahr     „Ich bin blind vor Wut“ zeigen, wie sich Emotionen körper-
+  befähigen sollen.                                                 lich äußern können.
+
+
+Wahrnehmen und Bewerten • Dabei handelt es sich um auto-
+matische, meist unbewusst ablaufende Prozesse, die es be-             Beispiel Prüfungsangst
+reits unseren steinzeitlichen Vorfahren ermöglichten, sich
+z. B. bei Gefahr durch Flucht in Sicherheit zu bringen. Mit an-       Stellen Sie sich vor, Sie sind auf einer Station und Ihre prakti-
+deren Worten: Emotionen sind eine Antwort darauf, wie                 sche Examensprüfung steht direkt bevor. Sie sind nervös und
+                                                                      können an nichts anderes denken. Ihr Herz klopft spürbar. Ob-
+wir die Realität sehen und bewerten. Die Bewertung erfolgt
+                                                                      wohl Ihnen nicht zu warm ist, schwitzen Sie unter den Armen
+anhand unserer Erfahrungen und verinnerlichten Wertesys-
+teme.                                                                 und auch Ihre Hände sind feucht. Möglicherweise laufen Sie
+                                                                      unruhig hin und her oder aber Sie fühlen sich „wie gelähmt“.
+   Emotionen entstehen über emotionale Schaltkreise im
+                                                                      Als es endlich so weit ist, droht Ihre Stimme fast zu versagen.
+limbischen System, die eine erste unbewusste Bewertung
+der Situation vornehmen und ein entsprechendes Verhalten              Anhand der körperlichen Veränderungen kann auch der Prüfer
+                                                                      Ihre Emotionen deutlich wahrnehmen.
+vorbereiten, bevor die Regionen des bewussten Wahrneh-
+mens im Großhirnbereich (Kortex) dann Gefühle wie Angst,
+Freude, Zuneigung, Ärger, Trauer, Scham, Abneigung oder
+                                                                    Ausdruck • Gefühle sind starke Motive, sich auf eine be-
+Niedergeschlagenheit wahrnehmen.
+                                                                    stimmte Art zu verhalten. Die Angst, bei einer Prüfung
+                                                                    durchzufallen, führt z. B. dazu, vorher zu lernen. Wer ent-
+Intensität • Der Psychologe und Psychotherapeut Harlich
+                                                                    täuscht von einem Menschen ist, wendet sich möglicher-
+H. Stavemann spricht von 9 Grundgefühlen, die er unterteilt
+                                                                    weise von ihm ab. Ein Pflegeempfänger, der große Angst vor
+in:
+                                                                    Schmerzen hat, entscheidet sich möglicherweise gegen eine
+● angenehme Grundgefühle: Freude und Zuneigung
+                                                                    Operation, die zunächst mehr Schmerzen verursachen wird.
+● neutrales Grundgefühl: Gleichgültigkeit
+                                                                    Dies zu erkennen ist wichtig. Denn die Information, dass er
+● unangenehme Grundgefühle: Ärger, Angst, Abneigung,
+                                                                    ausreichend Schmerzmittel bekommen würde, könnte seine
+  Niedergeschlagenheit, Scham und Trauer
+                                                                    Entscheidung vermutlich beeinflussen. Umgekehrt kann das
+
+
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen           233
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+l9    Grundlagen der Entwicklung und Psychologie
+
+
+      Abb. 9.12 Fröhlich oder traurig.
+
+
+
+
+       a                                                                    b
+
+      Wir erkennen die emotionale Einstellung unseres Gegenübers in Sekundenbruchteilen an Mimik und Haltung. Foto: K. Oborny, Thieme
+      a Fröhlich.
+      b Traurig.
+
+
+      Verhalten eines Menschen Hinweise darauf geben, wie er                Einfluss auf das Miteinander • Emotionen zeigen sich in Mi-
+      sich fühlt. Ein Mensch, der sich oft aggressiv verhält, leidet        mik, Gestik, Klang der Stimme und unserem Verhalten nach
+      möglicherweise unter großen Ängsten oder Schmerzen, die               außen (▶ Abb. 9.12). Ein erheblicher Teil aller Informationen
+      therapeutisch zu beheben wären.                                       in einem Gespräch wird nonverbal vermittelt. Somit haben
+                                                                            Emotionen für die Kommunikation und damit für das soziale
+      ! Merke Emotionen erkennen                                            Miteinander eine zentrale Funktion. Wie wichtig diese
+                                                                            Funktion ist, zeigt sich bei Menschen mit einer autistischen
+      Wenn Sie fähig sind, Emotionen bei Ihren Pflegeempfängern zu er-
+      spüren und darauf einzugehen, trägt das wesentlich zu einer profes-   Störung: Sie sind gewissermaßen unfähig, nonverbal vermit-
+      sionellen Pflege bei.                                                 telte Emotionen zu erkennen. Weil sie den emotionalen Aus-
+                                                                            druck anderer nicht verstehen können, neigen sie dazu, sich
+                                                                            aus ihrer Umwelt zurückzuziehen.
+      Funktionen von Emotionen
+      Menschen, die Emotionen aufgrund einer Hirnschädigung
+      nicht richtig verarbeiten können, haben vielerlei Probleme,                WISSEN TO GO
+      in ihrem Alltag zurechtzukommen. Sie können sich weniger
+      vor Gefahren schützen, ihnen fehlt oft der nötige Antrieb,                Emotionen
+      z. B. eine Entscheidung zu treﬀen, und sie haben Schwierig-
+      keiten im Umgang mit anderen Menschen.                                    Die Begriﬀe „Emotion“ und „Gefühl“ werden im alltägli-
+                                                                                chen Sprachgebrauch und auch in der Fachliteratur oft
+      Schutzfunktion • In der Evolution hatten Emotionen ur-                    gleichbedeutend verwendet. Emotionen beinhalten ver-
+      sprünglich die Funktion, das Überleben zu sichern. Sie dien-              schiedene Prozesse:
+                                                                                ● Wahrnehmen und Bewerten einer Situation, beeinflusst
+      ten dem Menschen und seinem Organismus, sich rasch
+      wechselnden Umweltbedingungen anzupassen. Auch heute                        durch Erfahrungen
+                                                                                ● subjektives Empfinden von Gefühlen, z. B. Freude, Zunei-
+      noch können Schreckreaktionen das Leben retten, etwa der
+      Sprung zurück auf den Gehsteig, wenn plötzlich neben uns                    gung, Gleichgültigkeit, Ärger, Angst, Abneigung, Nieder-
+      die Hupe ertönt. Ebenso schützt Ekel den Menschen bis heu-                  geschlagenheit, Scham und Trauer
+                                                                                ● physiologische Reaktionen, z. B. Herzrasen bei großer
+      te davor, potenziell krankheitserregende Lebensmittel zu
+      verspeisen.                                                                 Angst
+                                                                                ● Ausdruck der Emotionen, z. B. ein bestimmtes Verhalten
+        Emotionen zeigen uns auch, dass etwas in unserem Leben
+      nicht in Ordnung ist. Wenn man sich z. B. über einen länge-               Emotionen sind wichtig, um Entscheidungen zu treﬀen
+      ren Zeitraum niedergeschlagen fühlt, ist dies ein Anzeichen               und sich vor Gefahren zu schützen. Auch beim Umgang
+      dafür, dass etwas in unserer Umwelt nicht stimmig ist. Da                 mit anderen Menschen spielen sie eine erhebliche Rolle.
+      wir nach Lebensqualität und Wohlbefinden streben, werden
+      wir nach dem Auslöser für das Gefühl der Niedergeschla-
+      genheit in unserem Leben suchen. Sprich: Wir bewerten
+      eine Situation, schauen nach Möglichkeiten für eine Verän-
+                                                                            9.8 Sexualität und Geschlecht
+      derung und versuchen, sie zu verbessern.                              9.8.1 Bedeutung für den Menschen
+      Motivationscharakter • Gefühle    motivieren, bestimmte               – Grundlagen
+      Handlungen durchzuführen. Eine verliebte Frau macht sich
+                                                                            Den Wunsch, gesund und glücklich zu sein, haben die meis-
+      z. B. gerne stundenlang hübsch, um dem Mann ihrer Träume
+                                                                            ten Menschen. Was das genau heißt, kann für jeden etwas
+      zu gefallen. Emotionen spielen eine wichtige Rolle dabei,
+                                                                            ganz anderes bedeuten. Menschen haben das Ziel, dem Le-
+      Entscheidungen zu treﬀen und andere Menschen oder Situ-
+                                                                            ben einen Sinn zu geben, trotz allem glücklich zu sein und
+      ationen einzuschätzen.
+                                                                            sich auf keinen Fall unterkriegen zu lassen. Jeder mobilisiert
+
+
+234    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                         Sexualität und Geschlecht
+
+
+seine Kräfte, um z. B. schmerzliche Ereignisse oder Konflikte       Individualität • Der Begriﬀ Individualität (lat.: Ungeteiltheit)
+zu bewältigen oder einfach die eigenen Grenzen auszutes-            bezeichnet im weitesten Sinne die Tatsache, dass ein
+ten. Dabei wird das eigene Ich-Bewusstsein stark von der            Mensch oder Gegenstand einzeln ist und sich von anderen
+Rolle als Kind, Frau oder Mann in einer bestimmten Lebens-          Menschen bzw. Gegenständen unterscheidet. Wenn in der
+phase unter bestimmten Umweltbedingungen beeinflusst.               Psychologie oder den Sozialwissenschaften von der Indivi-
+  Das primäre Interesse der Pflege besteht darin, für die           dualität des Menschen gesprochen wird, sind damit alle,
+pflegebedürftige Person den Erhalt der eigenen Wertvorstel-         auch über seinen Charakter hinausgehenden Eigenheiten bis
+lungen und die Lebensform zu ermöglichen. Es stellen sich           hin zu Körperbau und Aussehen gemeint.
+insbesondere Fragen nach der aktuellen Rolle und eigenen
+Lebenssicht. Welche Ziele möchte die Person erreichen, die
+evtl. durch Krankheit usw. gefährdet sind? Wo kann/soll             9.8.3 Grundlagen der
+Pflege dabei unterstützen? Handelt es sich mehr um instru-          Geschlechtsentwicklung
+mentelle Unterstützung oder geht es um Informationen?
+Auch emotionale Unterstützung kann pflegerische Aufgabe             Für eine gesunde Entwicklung ist es fördernd, wenn die Ge-
+sein. Hinzu kommen Fragen nach der Geschlechtsbestim-               schlechtlichkeit bewusst erlebt und gelebt werden kann.
+mung, nach Nähe/Distanz, Intimsphäre und Intimität,                 Man kann die Entwicklung eines Kindes und Jugendlichen
+Schamgefühlen sowie dem Umgang mit der eigenen Ge-                  in 3 Abschnitte unterteilen:
+                                                                    ● frühe Kindheit bis 6 Jahre
+schlechtlichkeit.
+                                                                    ● eigentliche Kindheit von 6–12 Jahre
+                                                                    ● Reifezeit von 12–18 Jahre
+9.8.2 Das Geschlecht
+                                                                    Die Pubertät (lat.: pubertas) liegt am Beginn der Reifezeit,
+Das menschliche Genom verteilt sich auf 46 Chromosomen
+                                                                    ist also der Übergang von der Kindheit zur Jugendzeit.
+und umfasst etwa 3 Milliarden Basenpaare, es beherbergt
+50 000–100 000 Gene. Jeder Mensch definiert sich auch über
+                                                                    Körperliche Entwicklung während der Pubertät • Das auﬀäl-
+sein Geschlecht. Fehlt die Akzeptanz des eigenen Ge-
+                                                                    ligste Merkmal der Pubertät ist zwar die Geschlechtsreife,
+schlechts, kann das schwere Folgen für das eigene Wohl-
+                                                                    dennoch kommt es während dieser Zeit zu einer Fülle wei-
+befinden haben. Grundsätzlich werden die folgenden Aspek-
+                                                                    terer Veränderungen. Umgekehrt beginnt die sexuelle Ent-
+te unterschieden: biologisch-genetisches Geschlecht, Ge-
+                                                                    wicklung nicht erst in der Pubertät, denn bereits Kleinkin-
+schlechtsidentität und Geschlechtsrolle/Individualität.
+                                                                    der nehmen sich als „Jungen“ oder „Mädchen“ wahr.
+                                                                       Zum Anfang der Pubertät ist oftmals ein körperlicher
+Biologisch-genetisches Geschlecht • Das genetische Geschlecht
+                                                                    Wachstumsschub zu erkennen, es bilden sich Schritt für
+wird durch den Chromosomensatz bestimmt. Ein 46-XY-
+                                                                    Schritt die sekundären Geschlechtsmerkmale des Erwachse-
+oder 46-XX-Karyotyp legt das chromosomale Muster fest
+                                                                    nen aus, dazu gehört bei den Mädchen z. B. die Entwicklung
+und markiert den Beginn von komplexen genetischen Ereig-
+                                                                    der Brust und bei den Jungen der Bartwuchs. In dieser Phase
+nissen, die zur Entwicklung einer weiblichen oder männ-
+                                                                    werden Mädchen und Jungen geschlechtsreif. Die Mädchen
+lichen Gonade, Ovar oder Hoden, führen.
+                                                                    erleben ihre erste Regelblutung (Menarche) und die Jungen
+                                                                    den ersten Samenerguss, sie sind ab jetzt zeugungsfähig.
+Geschlechtsidentität • Die Identität mit dem eigenen Ge-
+                                                                       Im Gehirn finden in dieser Zeit ebenfalls Veränderungen
+schlecht entwickelt sich in den ersten Lebensjahren eines
+                                                                    statt. Gehirnanteile, die für kognitive Aufgaben verantwort-
+Menschen. Hier spielen nicht nur die biologischen Faktoren
+                                                                    lich sind (Abstraktionsvermögen o. Ä.) reifen früher als die-
+eine besondere Rolle, sondern auch das Erziehungsverhalten
+                                                                    jenigen für moralische Wertvorstellungen.
+der Eltern. Durch entsprechende Erziehung kann die Identi-
+tät mit dem eigenen Geschlecht maßgeblich beeinflusst
+                                                                    Entwicklung einer eigenen Persönlichkeit • Die Pubertät ist
+werden. Manche Menschen haben Schwierigkeiten, ihre ge-
+                                                                    nicht zuletzt stark durch die Entwicklung der eigenen Per-
+netische und geschlechtliche Identität in Einklang zu brin-
+                                                                    sönlichkeit gekennzeichnet. Neue Wege werden gesucht
+gen. Erhebliche Störungen können die Folge sein, besonders
+                                                                    und ausprobiert, veränderte kognitive Fähigkeiten führen
+dadurch, weil auch in der Gesellschaft die Meinung vor-
+                                                                    oftmals zu Kritik und Rebellion gegenüber Eltern und Er-
+herrscht, dass man einen bestimmten Körper benötigt, um
+                                                                    wachsenen.
+Mann oder Frau sein zu können.
+                                                                       Nicht in allen Kulturen wird die Pubertät als Krise oder
+                                                                    Problemphase erlebt. Das Konfliktpotenzial dieser Lebens-
+Geschlechterrolle • Mit dem Begriﬀ werden äußere Verhal-
+                                                                    phase hängt stark mit der gesellschaftlichen Rolle der Ju-
+tensweisen erfasst. Trotz Emanzipation und Gleichberechti-
+                                                                    gendlichen in der jeweiligen Gesellschaft zusammen (Oerter
+gung gibt es immer noch bestimmte Vorstellungen darüber,
+                                                                    u. Montada 2008).
+wie Jungen oder Mädchen aussehen oder sich verhalten soll-
+ten. Dennoch ist ein gesellschaftlicher Wandel erkennbar, in
+dem es nicht mehr unmöglich erscheint, wenn Jungen Röcke            9.8.4 Sexualität und Pflege – ein
+tragen und Mädchen den „Männersport“ Fußball zum Hob-
+by ergreifen.                                                       Tabuthema?
+  Mit der Einführung des Geschlechts „divers“ hat auch die          Als Tabuthema wird häufig das Verhältnis von Sexualität
+Politik der Tatsache Rechnung getragen, dass sich Menschen          und Pflege angesehen. Ein Tabu beschreibt immer etwas
+nicht nur dem weiblichen oder männlichen Geschlecht zu-             Verbotenes, in diesem Fall das Verbot von sexuellen Elemen-
+gehörig fühlen können. Die vorgefertigte Definition, wie            ten in der Pflege. Der Duden erklärt, dass sich ein Tabu dem
+man sich als Frau bzw. Mann verhalten und fühlen soll,              (sprachlichen) Zugriﬀ aus Gründen moralischer, religiöser
+weicht somit auf und ermöglicht es den Menschen, ihr Ge-            oder konventioneller Scheu entzieht. Es kann also dann von
+schlecht selbst zu bestimmen.                                       einem Tabu gesprochen werden, wenn ein bestimmter Tat-
+                                                                    bestand zwar existiert, aus unterschiedlichen Erwägungen
+
+
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen        235
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+l9    Grundlagen der Entwicklung und Psychologie
+
+
+      heraus aber nicht zum Gegenstand erlaubter Kommunika-               ● ein nur teilweises Aufdecken von Körperbereichen wäh-
+
+      tion wird.                                                            rend der Pflege reduziert häufig das Gefühl der Schutz-
+         Die Begriﬀserklärung ist im Zusammenhang von Sexuali-              losigkeit
+      tät und Pflege außerordentlich wichtig. Es ist davon aus-           ● Intimbereich oder weibliche Brüste werden nur nach An-
+
+      zugehen, dass nicht die Existenz von sexuellen Momenten               kündigung berührt, in diesem Zusammenhang muss auch
+      in der Pflege infrage steht, oﬀen ist nur, ob und in welcher          auf umgangssprachliche Begriﬀe verzichtet werden
+      Form darüber gesprochen wird.                                       ● auch der Mund ist als „intime Zone“ zu berücksichtigen,
+
+                                                                            das gilt sowohl für die Mundpflege als auch für das Anrei-
+      Intimsphäre • Zahlreiche Pflegehandlungen erfordern die               chen von Speisen
+      Aufnahme eines engen Kontakts zum Körper der zu pflegen-            ● außerdem stellt die Bezugspflege (insbesondere bei der
+
+      den Person. In diesem Zusammenhang wird immer von der                 Körperpflege) strukturell den Schutz der Intimsphäre si-
+      Wahrung der Intimsphäre gesprochen. Intimsphäre bezeich-              cher
+      net die intimsten, innersten bzw. persönlichsten Gedanken
+      und Gefühle sowie die Sexualität eines Menschen. Das Preis-         Die Wahrung einer angemessenen Intimsphäre ist ein ele-
+      geben der Intimsphäre geschieht in der Regel nur in äußers-         mentares Menschenrecht. Eine akzeptierende Grundhaltung
+      ter Vertrautheit und wird außerhalb dieser als „Verletzung          im Umgang mit Pflegeempfängern ist die zentrale Voraus-
+      der Intimsphäre“ bezeichnet.                                        setzung für eine erfolgreiche Pflege und daher müssen alle
+         Nicht selten sind Pflegehandlungen, wie etwa die Ganz-           Pflegenden für die Thematik sensibilisiert sein.
+      körperpflege, mit der Entblößung des Körpers verbunden
+      (▶ Abb. 9.13). Häufig werden Pflegeempfänger von Pflegen-
+      den des jeweils anderen Geschlechts versorgt. Was bedeutet          9.8.5 Sexualität im Alter
+      in diesem konkreten Fall die Wahrung der Intimsphäre?               „Sexualität“ und „Alter“ sind zwei Begriﬀe, die sich für viele
+      Schon bei der Aufnahme von Pflegeempfängern können re-              Menschen ausschließen. Wer jedoch mit alten Menschen ar-
+      levante Faktoren wie Religionszugehörigkeit, sexuelle Orien-        beitet, weiß, dass der Wunsch nach Sexualität, intimer Nähe,
+      tierung, konservative oder liberale Erziehung abgeklärt wer-        körperlicher Partnerschaft präsent bleibt – vielleicht unter-
+      den.                                                                drückt, mit Schamgefühlen behaftet, unbesprochen, in
+         Insbesondere wenn die zu pflegende Person etwa gleich-           heimlichen Wünschen verborgen.
+      altrig ist, kann die eigene Geschlechtlichkeit angesprochen           Sexualität ist lebenslang ein zentraler Aspekt der eigenen
+      werden. Pflegende sind vielleicht beschämt, weil sie sich           Körperlichkeit. Sexualität ist ein wesentlicher Teil von Bezie-
+      den intimsten Lebensbereichen einer anderen Person nicht            hung und ein identitätsstiftendes Moment für Menschen –
+      entziehen können. Daher ist ein oﬀener Austausch immer              wenn auch in individuell sehr unterschiedlicher Weise ge-
+      wichtig, um zu klären, wann sich die eigenen Schamgefühle           fühlt, gelebt und ausgedrückt.
+      melden und was für den Pflegenden, aber auch den zu Pfle-
+      genden beschämend ist.                                              Unsicherheiten auf beiden Seiten • Eingeklemmt zwischen
+         Vor allem bei der Körperpflege sollen Regeln beachtet            den Bildern von Alter als einerseits bloßem Gebrechen,
+      werden:                                                             Mühsal und Todesnahen auf der einen Seite und der Aktiv-
+      ● vor dem Betreten eines Zimmers klopft die Pflegefachkraft
+                                                                          plus-Leistungsnorm vital-rüstiger Modellrentner auf der an-
+        an                                                                deren Seite wissen alte Menschen häufig nicht, wie sie ihre
+      ● Nachttische, Schränke etc. werden nicht ohne Zustim-
+                                                                          sexuellen Gefühle, Wünsche und Realitäten einschätzen, äu-
+        mung des Pflegeempfängers geöﬀnet                                 ßern und leben sollen.
+      ● übertriebene Distanz kann von Patienten als Ablehnung
+                                                                             Sexualität im Alter wird zwischen den Generationen weit-
+        ihrer Person aufgefasst werden, darunter fällt das Tragen         gehend tabuisiert und auch in der Öﬀentlichkeit wird über
+        von Handschuhen bei Tätigkeiten, bei denen dies nicht nö-         Sexualität im Alter wenig gesprochen. So findet man in ein-
+        tig ist                                                           schlägigen Zeitschriften für Frauen reiferen Alters kaum
+      ● während der Körperpflege sollte keine weitere Pflegefach-
+                                                                          praktische Tipps zur Sexualität. So wie das Thema Sexualität
+        kraft das Zimmer betreten                                         seit den 60er-Jahren in die gesamte Gesellschaft Einzug ge-
+      ● die Bettdecke wird nicht ohne Ankündigung entfernt
+                                                                          halten hat, könnte das Thema Sexualität im Alter schon al-
+                                                                          lein aufgrund der bevölkerungsbedingten Altersverschie-
+                                                                          bung bald auf breites Interesse stoßen.
+      Abb. 9.13 Intimsphäre wahren.                                          Auch Fachkräfte der Pflege erhalten in Ausbildung und
+                                                                          Beruf kaum professionelle Qualifizierung zu diesem bedeut-
+                                                                          samen Begleitungsthema. Tatsächlich sehen sich Pflegefach-
+                                                                          kräfte mit zwei Aspekten konfrontiert: Wie grenze ich mich
+                                                                          als Pflegefachkraft bei Annäherungsversuchen ab? Wie er-
+                                                                          mögliche ich den Pflegeempfängern sexuelle Selbst-
+                                                                          bestimmtheit? Fallbesprechungen bieten eine Chance, die
+                                                                          erste Frage zu adressieren. Hier kann in der Gruppe eine
+                                                                          konkrete Situation reflektiert und Handlungsempfehlungen
+                                                                          erarbeitet werden. Um die sexuelle Selbstbestimmtheit der
+                                                                          Pflegeempfänger sicherzustellen, gibt es in einigen Langzeit-
+                                                                          einrichtungen sogenannte passive Sexualassistenten. Diese
+                                                                          sind Ansprechpartner zum Thema Sexualität und sollen da-
+                                                                          zu beitragen, dass Sexualität als normales Bedürfnis von
+      Um auf das Schamgefühl der Pflegeempfänger Rücksicht zu             Pflegeempfängern verstanden wird.
+      nehmen, sollte bei Pflegehandlungen immer der Sichtschutz zu-
+      gezogen werden. © COK House/stock.adobe.com
+
+
+236    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                Der Mensch zwischen Gesundheit und Krankheit
+
+
+Bedürfnisse der Pflegeempfänger achten • Intime und sexuel-         eigene Körperbild beeinflussen. Es gelingt sicher nicht, von
+le Kontakte sind sehr menschliche Bedürfnisse. Dennoch er-          heute auf morgen damit umgehen zu können, und stellt
+lebt man, besonders in Pflegeheimen, eher eine Arbeits-             manchmal auch das Pflegepersonal vor große emotionale
+atmosphäre mit geplanten Arbeitsabläufen. Es geht weniger           und sozial-kommunikative Herausforderungen. Daher spie-
+darum, die Abläufe an die realen Bedürfnisse der Bewohner           len Zeit und Geduld auf beiden Seiten eine große Rolle. Ge-
+anzupassen. Selten gibt es im Heim räumliche Nischen oder           rade in der Pflege sind in diesem Bereich Zuhören und Un-
+Rückzugsmöglichkeiten. Der einzelne Bewohner hat es nicht           terstützen wichtige Aspekte, die es zu erlernen und zu üben
+leicht, seine Intimsphäre zu wahren. Es gibt z. B. oftmals kei-     gilt.
+ne Briefkästen für die einzelnen Bewohner, die Zimmer sind
+häufig nicht abschließbar oder die Bewohner haben keinen
+eigenen Schlüssel. Das sind nicht die besten Voraussetzun-          9.9 Der Mensch zwischen
+gen, um Sexualität auszuleben. Es hängt vom Personal eines
+jeden Heimes ab, inwieweit es auf die Bedürfnisse seiner Be-        Gesundheit und Krankheit
+wohner eingeht. Eine Voraussetzung für Intimsphäre im
+                                                                    „Ein gesunder Mensch ist auch nur ein Mensch, der nicht
+Heim ist die Art der Zimmer. Sind viele Einzelzimmer vor-
+                                                                    gründlich genug untersucht wurde.“ (Anonym)
+handen, so ist es für die Bewohner leichter, sich eine Intim-
+                                                                       Dieser Eindruck entsteht in Anbetracht der vielseitigen di-
+sphäre aufzubauen, als wenn vorwiegend Doppelzimmer
+                                                                    agnostischen Möglichkeiten heute leicht. Doch wann ist ein
+bewohnt werden. Auch immobile Menschen müssen die
+                                                                    Mensch tatsächlich gesund? Wann ist er krank? Fühlen Sie
+Möglichkeit bekommen, körperliche Nähe zu erfahren, dies
+                                                                    sich selbst zu 100 % gesund oder haben Sie sich schon einmal
+kann zum Beispiel schon das Nebeneinandersitzen bedeu-
+                                                                    so gefühlt? Wenn ja, hätten Sie ausschließen können, dass
+ten.
+                                                                    nicht doch eine versteckte Krankheit in Ihnen schlummert,
+                                                                    von der Sie nur noch nichts spüren? Ist Gesundheit wirklich
+9.8.6 Auswirkung von Krankheit auf                                  nur die Abwesenheit von Krankheit, oder gehört nicht viel-
+                                                                    mehr ein seelisches Wohlbefinden dazu, das selbst Medizi-
+Sexualität                                                          ner heute noch nicht messen können?
+Sich selbst mit allen normalen Unzulänglichkeiten anzuneh-
+men und im eigenen Körper wohlzufühlen, ist die Basis für
+erfüllten Sex. Vor diesem Hintergrund kann die Wahrneh-
+                                                                    9.9.1 Gesundheit und Wohlbefinden
+mung der eigenen Attraktivität durch eine schwerwiegende            Wenn man Menschen zum Thema Gesundheit befragt, den-
+Krankheit zutiefst erschüttert werden.                              ken paradoxerweise viele zuerst an Krankheiten und deren
+   Pflegeempfänger mit chronischen Krankheiten oder chro-           ärztliche Behandlung. Gesundheit wird oft als das Fehlen
+nischen Schmerzen erleben häufig eine sexuelle Beeinträch-          von Krankheiten oder Behinderungen verstanden.
+tigung oder sexuelle Funktionsstörungen, unabhängig von                Die Weltgesundheitsorganisation (WHO) betrachtet Ge-
+ihrer angenommenen oder nachgewiesenen Entstehung.                  sundheit aus einem anderen, positiven Blickwinkel und de-
+Die Betroﬀenen stehen unter Leidensdruck, die individuel-           finiert sie umfassender. Sie bezeichnet Gesundheit als „ei-
+len Ansprüche an eine erfüllte Sexualität scheinen nicht er-        nen Zustand vollkommenen körperlichen, geistigen und so-
+reichbar. Dies beeinflusst die Lebenszufriedenheit, die Inti-       zialen Wohlbefindens“ (WHO 1948). Alle 3 Bereiche beein-
+mität und Paarverbundenheit, die allgemeine Leistungs-              flussen sich gegenseitig. So können z. B. körperliche Sympto-
+fähigkeit und die Befriedigung im persönlichen und emotio-          me auf eine soziale Vereinsamung zurückzuführen sein. Ge-
+nalen Bereich.                                                      nauso kann ein Mensch, der aus medizinischer Sicht krank
+   Unter anderem findet das Thema Sexualität in der                 ist, sich durchaus in einem gesunden Zustand befinden,
+Schmerztherapie kaum Raum. In der Schmerzanamnese                   wenn er sich durch die Krankheit noch nicht beeinträchtigt
+sollte daher nach Beeinträchtigung der Sexualität gefragt           fühlt.
+werden. Betroﬀene sind dankbar, wenn ihre Beeinträchti-                Gesund zu sein bedeutet danach, sich rundum wohlzufüh-
+gung ernst genommen wird und ein Zusammenhang mit                   len. Umgekehrt ist aber nicht jeder, der sich wohlfühlt, auch
+der Schmerzerkrankung erläutert werden kann.                        „gesund“ im medizinischen Sinne. Denn auch Menschen mit
+   Belastende Veränderungen der körperlichen Integrität             einer diagnostizierten Erkrankung können sich „wohl“-füh-
+sind z. B. neben einer Brustamputation bei bestehendem              len. So muss sich z. B. eine Frau mit Down-Syndrom oder ein
+Mammakarzinom der Verlust einer Extremität oder ein                 junger Mann mit einem Diabetes mellitus nicht unwohl-
+künstlicher Darmausgang. Solche Eingriﬀe können heftige             und auch nicht zwingend krank fühlen. Erst wenn Aspekte
+Gefühlsreaktionen wie Scham oder auch Ekel auslösen, und            der Erkrankung das körperliche oder geistige Befinden be-
+es ist oft ein langer Weg, bis sich die Betroﬀenen mit ihrer        einträchtigen und den gewohnten Alltag behelligen, wird
+veränderten körperlichen Situation arrangieren bzw. diese           eine Diagnose als Krankheit erfahren. Dies kann auch bei vo-
+annehmen können.                                                    rübergehenden Erkrankungen der Fall sein.
+   Krankheiten, die einen Menschen schwer beeinträchtigen,
+stellen eine tiefe seelische Verletzung dar. Selbstzweifel, die     Soziales Wohlbefinden • Es hängt unter anderem davon ab,
+Angst, nicht zu genügen bzw. zu versagen, sowie depressive          ob man durch andere Menschen Unterstützung erfährt.
+Verstimmungen können bei sexuellen Problemen eine Rolle             Aber auch andere Umstände, z. B. politische, beeinflussen
+spielen. Hinzu kommt, dass nicht nur der betroﬀene Patient,         das soziale Wohlbefinden. So spielt es für das soziale Wohl-
+sondern auch der Partner lernen muss, mit der neuen Situa-          befinden eine große Rolle, ob man sich ohne Angst frei be-
+tion umzugehen.                                                     wegen und seine Meinung sagen kann.
+   Die eigene Körperwahrnehmung verändert sich, wenn
+eine Krankheit tief greifend ist und Spuren hinterlässt. Ein
+künstlicher Darmausgang kann angelegt werden müssen,
+aber auch Haarausfall als Folge von Medikamenten sowie
+veränderte Körperbehaarung, Fettverteilung etc. können das
+
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen      237
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+l9    Grundlagen der Entwicklung und Psychologie
+
+
+                                                                          Salutogenese nach Antonovsky
+          WISSEN TO GO                                                    Konzept
+                                                                          Das Konzept der Salutogenese („salus“, lat. für „Gesundheit“,
+        Gesundheit und Wohlbefinden                                       genesis, griech. für „Entstehung“) wurde von dem Medizin-
+                                                                          soziologen Aaron Antonovsky (1923–1994) entwickelt. An-
+        Laut der Weltgesundheitsorganisation ist Gesundheit ein
+                                                                          geregt hierzu hat ihn seine Studie über die Auswirkungen
+        Zustand vollkommenen körperlichen, geistigen und sozia-
+                                                                          der Wechseljahre bei Frauen unterschiedlicher ethnischer
+        len Wohlbefindens. Nicht jeder, der sich wohlfühlt, ist auch
+                                                                          Herkunft. Sie zeigte, dass Frauen, welche in einem national-
+        „gesund“ im medizinischen Sinne. Umgekehrt kann sich
+                                                                          sozialistischen Konzentrationslager inhaftiert waren, zwar
+        jemand, der aus medizinischer Sicht krank ist, in einem ge-
+                                                                          signifikant stärker gesundheitlich belastet waren als andere
+        sunden Zustand befinden.
+                                                                          Frauen, dass aber dennoch 29 % dieser ehemals inhaftierten

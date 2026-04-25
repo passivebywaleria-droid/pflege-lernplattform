@@ -1,911 +1,607 @@
-# Kapitel 42: Pflege von Menschen unterschiedlicher Kulturen
+# Teil 42
 
-> Quelle: I Care Pflege (Thieme, 2020), S. 848-857
+> Quelle: Icare Pflege
 > Automatisch extrahiert — Formatierung kann abweichen
 
 ---
 
-Die Arbeit der Palliativpflege
-schen zur Mundbefeuchtung verwendet und mit der Lieblingsflüssigkeit gefüllt.
 
-Abb. 41.8 Mundpflege.
 
-ACHTUNG
-Verwenden Sie wegen einer Aspirationsgefahr keine Sprühflasche,
-wenn der Pflegeempfänger in seinem Bewusstsein eingeschränkt ist.
-Pflegende sollten die Mundpflege bei Schluckstörungen nur
-vorsichtig mit kleinen Mengen Flüssigkeit durchführen. Eine
-behutsame Lippenpflege als erste Berührung kann bei Bewusstlosen dazu führen, dass sie ihren Mund bereitwilliger
-öﬀnen lassen.
-Um langfristig Linderung zu verschaﬀen, kann eine häufige Mundbefeuchtung (z. B. halbstündlich) notwendig sein.
-Entsprechend angeleitet, können Angehörige diese Aufgabe
-übernehmen. In vielen Fällen sind sie froh, dem Sterbenden
-auf diese Weise helfen zu können.
-Auch bei der Mundpflege steht die Lebensqualität des Betroﬀenen an oberster Stelle. Möglicherweise hat der Betroffene bereits eine Mykose (S. 1336). Unter „normalen Umständen“ wäre Mundpflege mit einer zuckerhaltigen Flüssigkeit wie Cola hier ungeeignet – in einer palliativen Situation
-steht die Behandlung der Mykose hinter der Lebensqualität
-(▶ Abb. 41.8).
 
-WISSEN TO GO
-Palliative Pflege – Symptomkontrolle
-● Schmerzen/Total Pain: Eine Schmerztherapie ist in der
-
-Sterbephase fast immer notwendig. Neben körperlichen
-Schmerzen gibt es aber auch seelische, spirituelle und
-soziale Schmerzen. Alle diese Dimensionen zusammen
-ergeben den „Total Pain“. Sie können sich gegenseitig
-auslösen, verstärken oder lindern.
-● Dyspnoe: Sie kann panische Angst auslösen. Bei Sterbenden ist sie meist nicht ursächlich behandelbar, eine
-symptomatische Linderung steht im Vordergrund. Das
-subjektive Empfinden bzw. die Bedürfnisse der Pflegeempfänger sollten immer ernst genommen werden.
-In manchen Fällen gibt es seelische Auslöser und ein Gespräch hilft mehr als Medikamente.
-● Übelkeit und Erbrechen: Sie treten bei Sterbenden sehr
-oft auf. Mitunter können auch medikamentöse Maßnahmen nicht ausreichend helfen. Selbst dann kann der
-Wunsch bestehen, etwas zu essen. Gemeinsam mit dem
-Pflegeempfänger, seinen Bezugspersonen und dem Arzt
-sollte über das beste Vorgehen gesprochen werden.
-● Obstipation: Bewegungsmangel, Schmerztherapie, eingeschränkte Flüssigkeitsaufnahme und andere Faktoren
-können zu Obstipation führen. Frühzeitig sollten schonende Maßnahmen zur Obstipationsprophylaxe eingeleitet werden.
-● Mundtrockenheit: Sterbende atmen oft über den
-Mund. Damit die Mundschleimhaut nicht austrocknet,
-sollte sie häufig befeuchtet werden. Dazu eignen sich
-alle Arten von Flüssigkeiten, die der Pflegeempfänger
-gerne zu sich genommen hat. Das Lutschen von gefrorenen Ananas- oder Obststücken kann den Speichelfluss
-anregen.
-
-Zur Befeuchtung der Mundschleimhaut sollten Mittel gewählt werden, die der sterbende Mensch gerne mag. Foto: T. Stephan, Thieme
-
-Angst
-Selbst das beste Palliative-Care-Team kann einem Sterbenden nicht die Angst vor dem Tod nehmen, denn niemand
-weiß sicher, was mit oder nach dem Tod kommen wird.
-Dennoch kann es einem Sterbenden helfen, wenn man ihm
-beisteht und mögliche Ängste oﬀen anspricht. Denn Unausgesprochenes kann Unsicherheiten verstärken und Furcht
-auslösen. Manche Ängste können durch ein Gespräch reduziert werden, z. B. die Angst vor Schmerz oder Luftnot. Denn
-palliativmedizinische Maßnahmen sollen diese Symptome
-so weit lindern, dass sich die Pflegeempfänger nicht quälen
-müssen. Bereits diese Gewissheit kann Betroﬀene und deren
-Familien beruhigen. Bei Bedarf sollten Pflegende vorschlagen, einen Hospizhelfer oder auch Psychoonkologen hinzuzuziehen.
-Pflegende sollten einem sterbenden Menschen immer
-auch einen Seelsorger anbieten, um Ängste zu mildern.
-Selbst wenn der Pflegeempfänger in früheren Zeiten nicht
-religiös oder kein großer Kirchgänger gewesen ist, kann ein
-Gespräch mit einem Pfarrer helfen und erwünscht sein,
-wenn das Ende des Lebens unmittelbar bevorsteht. Bei einer
-nicht christlichen Religionszugehörigkeit kann evtl. die Familie des Sterbenden einen Beistand organisieren. Die meisten Pflegedirektionen oder Sozialdienste verfügen außerdem über Kontaktadressen entsprechender Institutionen.
-Medikamentös können Angstlöser (Anxiolytika) helfen.
-Diese können zwar Müdigkeit auslösen bzw. eine bestehende Müdigkeit verstärken, viele Pflegeempfänger empfinden
-dies in der finalen Phase aber sogar als positiv.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-845
-
+     I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen                313
+     Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+      Usage subject to terms and conditions of license.
 l
-41
+13    Hygiene
 
-Pflege des sterbenden Menschen
 
-Unruhe
-Unruhe tritt meist als Symptom in der finalen Phase auf,
-wenn der Pflegeempfänger nicht mehr klar orientiert ist. Sie
-kann sich folgendermaßen äußern:
-● Die Pflegeempfänger nesteln herum.
-● Sie verändern besonders häufig ihre Lage im Bett.
-● Sie wollen immer wieder aufstehen.
-● Sie stecken ihre Beine wiederholt durch die Bettgitter.
-● Sie stöhnen ständig laut oder rufen nach Hilfe.
-Pflegende sollten versuchen herauszufinden, ob die Unruhe
-einen bestimmten Grund hat. Möglicherweise hat der Pflegeempfänger Stuhl- oder Urindrang oder das dauerhafte Liegen verursacht ihm Schmerzen. Oftmals ist es aber nicht
-möglich, die Ursache herauszufinden. Möglicherweise entsteht die Unruhe durch die Angst vor dem Unbekannten und
-Ungewissen. Pflegende sollten sich Zeit nehmen, vielleicht
-die Hand des Betroﬀenen halten, beruhigend zu ihm sprechen oder ein Lied summen.
-Nicht immer fühlt sich der Mensch unwohl, wenn er
-durch Unruhezeichen auﬀällt. Für seine Bezugspersonen
-kann es z. B. belastend sein, wenn die Person ständig laut
-stöhnt, aber sie selbst scheint trotz des Stöhnens zu schlafen.
-Falls die Ursache der Unruhe nicht zu beseitigen ist, sind
-unter Umständen beruhigende Medikamente angezeigt (Sedativa). Diese Medikamente wirken oft auch angstlösend.
-Obwohl auch sie müde machen können, wird der Eintritt
-des Todes durch sie nicht beschleunigt.
+      Tab. 13.1 Fortsetzung.
 
-ACHTUNG
-Es muss immer sorgfältig zwischen einer finalen Unruhe und einer
-geistigen Verwirrung unterschieden werden. Auch hier ist eine entsprechende medikamentöse Hilfe möglich.
+       Erkrankung              Erreger               Übertragungswege                             spezielle Hygienemaßnahmen
 
-Juckreiz
-Juckreiz kann vielfältige Ursachen haben und ist meist ein
-sehr quälendes Symptom für die Betroﬀenen.
-Manche Schmerzmittel können Juckreiz auslösen. Dann
-ist ein Wechsel zu einem anderen Wirkstoﬀ ratsam. Ebenso
-können Stoﬀwechselerkrankungen Juckreiz verursachen. Bei
-Erkrankungen der Leber tritt sehr oft ein starker quälender
-Juckreiz auf. Einreibungen mit kühlenden Lotionen oder
-Ölen können Linderung bringen. Oftmals empfinden Pflegeempfänger gekühlte Lotionen als angenehm. Hierzu kann
-die persönliche Lotion des Pflegeempfängers im Kühlschrank aufbewahrt werden.
-Symptomatisch helfen Antihistaminika (S. 1171). Manche
-von ihnen verstärken ähnlich wie Opioide die Müdigkeit.
+       Windpocken              Varizella-Zoster-     aerogene Übertragung durch Spre-             ● Isolierung
 
-Müdigkeit und Schwäche
-In der letzten Lebensphase kommt es bei fast allen Palliativpatienten zu starker Müdigkeit bis hin zu Dauerschlaf oder
-zu starker Verwirrtheit. Dieser Zustand wird auch als Fatigue
-bezeichnet, im Kap. „Pflege von Menschen mit malignen Tumoren“ (S. 787) finden sich weiterführende Informationen
-zum Thema. Die notwendige Schlafdauer kann im Verlauf
-auf bis zu 20 Stunden steigen. In dieser Phase sollten Pflegende darauf achten, dass der Pflegeempfänger ausreichend
-lange Ruhephasen hat und die wenige wache Zeit für ihn
-bestmöglich genutzt wird, z. B. für Besuche der Angehörigen.
-Die Müdigkeit kann teileweise so stark sein, dass Außenstehende nur schwer Kontakt mit den Betroﬀenen aufneh846
+                               Virus                 chen, Husten, Niesen                         ● beim Öffnen von Fenstern darauf achten, dass
 
-men können. Besonders die Bezugspersonen sind dadurch
-oft stark verunsichert und belastet. Eine wertvolle Hilfe, um
-den Kranken trotzdem zu erreichen, bietet die Basale Stimulation. Sie will durch gezielte Reize die verbliebenen
-Wahrnehmungsfähigkeiten der Betroﬀenen ansprechen. Das
-können z. B. optische, akustische oder auch andere Reize
-sein. Auch Laien können darin angeleitet werden. So können
-sie z. B. mit Massagebällen die Druckrezeptoren der Haut auf
-angenehme Weise anregen oder dem Pflegeempfänger einen bekannten Duft von zu Hause mitbringen, z. B. Blumen
-aus dem Garten, die er besonders mag.
-Die Wahl der Sinnesebene sollte nach den Vorlieben, Gewohnheiten und Interessen des Sterbenden getroﬀen werden. Ausführliche Informationen zu den Maßnahmen lesen
-Sie im Kap. „Grundlagen der Basalen Stimulation“ (S. 386).
+                                                     direkte und indirekte Kontaktinfektion         Fenster in benachbarten Zimmern geschlos-
+                                                     durch mit Sekret oder Bläscheninhalt der       sen sind
+                                                     Krusten kontaminierte Hände oder kon-        ● Personal darf Pflegeempfänger nur dann
 
-ACHTUNG
-Eine Überreizung wirkt sich eher negativ auf den Betroﬀenen aus,
-da er zu viele Eindrücke kaum einordnen kann und dadurch seine
-Unruhe verstärkt wird. Beobachten Sie Gestik, Mimik, Muskeltonus,
-Atemfrequenz des Pflegeempfängers und beurteilen Sie darüber die
-Wirkung der Maßnahme.
-Aromapflege/Wickel und Auflagen • Duftöle (ätherische Öle)
-können entspannend, angst-, krampf- oder schleimlösend
-wirken. Man kann sie in stark verdünnter Form entweder
-inhalativ oder über die Haut verabreichen. Wobei Waschungen, Wickel, Auflagen, Massagen und Einreibungen mit
-Duftölen eine besondere Form der Zuwendung sind.
-Schwerstkranke Menschen und deren Bezugspersonen empfinden sie oft als „Balsam für Leib und Seele“. Es gibt eine
-spezielle Ausbildung zum Aromatherapeuten. Viele Palliativbzw. Hospizfachkräfte haben eine solche Ausbildung absolviert. Angehörige sind aber oft dankbar, wenn sie selbst dazu
-angeleitet werden, einen Sterbenden zu massieren. Dadurch
-fühlen sie sich aktiv eingebunden und weniger hilflos. Ätherische Öle können auch in Form von Duftkerzen oder Lampen für einen angenehmen Duft und eine besondere Stimmung im Raum sorgen.
+                                                     taminierte Gegenstände                         versorgen, wenn gesicherter Schutz durch
+                                                                                                    Impfung oder durchgemachte Erkrankung
+                                                                                                    besteht, dann ist kein Mund-Nasen-Schutz
+                                                                                                    FFP2 oder FFP3 erforderlich
 
-! Merke Hautreizung
 
-Konzentrierte ätherische Öle sind hautreizend. Sie sollten nur in
-einer geeigneten Dosierung verwendet werden.
 
-WISSEN TO GO
-Aromapflege
-Aromapflege ist der professionelle Einsatz von ätherischen
-Ölen, um einen bestimmten gesundheitsförderlichen Effekt zu erzielen (z. B. Entspannung und Anregung).
-Auch in der letzten Lebensphase können z. B. Düfte und
-Öle zum Einsatz kommen, um die Sinne des Pflegeempfängers anzuregen und mit ihm in Kontakt zu treten. Es
-kommen dabei Duftöle zum Einsatz, die u. a. über Massagen, Inhalation, Wickeln oder Auflagen angewendet werden. Auch Duftlampen und -kerzen können Teil der Behandlung sein.
+      ! Merke Standardhygiene                                                Abb. 13.14 Betreuung von Pflegeempfängern in Isolation.
+      Die Maßnahmen der Standardhygiene gelten für den Umgang mit
+      allen Pflegeempfängern im Krankenhaus. Sie sind in der nachfolgen-
+      den Tabelle nicht noch einmal gesondert aufgeführt. Ebenso werden
+      die grundsätzlichen Maßnahmen der Isolierung nicht noch einmal
+      genannt.
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
 
-Die Arbeit der Palliativpflege
+      Psychische Unterstützung des
+      Pflegeempfängers
+      Situation des Pflegeempfängers • Die Isolationsunterbringung
+      ist sowohl für den Pflegeempfänger als auch die Bezugsper-
+      sonen eine belastende Situation. Der Pflegeempfänger sieht
+      die betreuende Pflegefachkraft ausschließlich in Schutzklei-
+      dung, oft sind sogar nur die Augen sichtbar. Alle Mitarbeiter
+      sehen für den Pflegeempfänger „gleich“ aus. Er weiß nicht,
+      welches Gesicht sich hinter der Maske verbirgt. Dies schaﬀt            Die Pflegefachkraft sollte sich Zeit für den Pflegeempfänger
+      unweigerlich eine Distanz zwischen Pflegefachkraft und                 nehmen und auf seine Ängste und Wünsche eingehen.
+                                                                             Foto: K. Oborny, Thieme
+      Pflegeempfänger – zwar eine notwendige, für den Pfle-
+      geempfänger aber unangenehme Distanz. 90 % der Kommu-
+      nikation finden über Mimik und Gestik statt. In diesem Fall            tion, Mund-Nasen-Schutz. Dies ist vor allem dann wichtig,
+      fällt die Mimik nahezu komplett weg, die Kommunikation                 wenn es sich um eine längere Isolationszeit handelt.
+      erfolgt hauptsächlich verbal, also über die Stimme.                       Bezugspersonen sollten darüber aufgeklärt werden, dass
+         Durch die Isolation kann der Pflegeempfänger nicht am               Besuche für den Pflegeempfänger wichtig sind und zur Ge-
+      Stationsalltag teilnehmen und darf i. d. R. bestimmte Berei-           nesung beitragen. Je nach Erreger müssen sich Bezugsper-
+      che wie Teeküche und Aufenthaltsraum nicht nutzen. Sein                sonen auch nicht komplett „verkleiden“, was häufig als Er-
+      Zimmer darf er nur für Untersuchungen verlassen. Der Pfle-             leichterung gesehen wird.
+      geempfänger verbringt viel Zeit allein und kann sich nicht
+      mit anderen Pflegeempfängern austauschen. Auch der Kon-
+      takt zwischen Pflegefachkräften, Arzt und Pflegeempfänger              13.4.2 Infektionsstation
+      wird auf ein Minimum reduziert. Der Pflegeempfänger wird
+                                                                             Hier liegen Pflegeempfänger mit Infektionskrankheiten.
+      „ausgegrenzt“ und fühlt sich im wahrsten Sinne des Wortes
+                                                                             Dies können z. B. Pflegeempfänger mit Durchfällen, Menin-
+      „isoliert“. Aus diesem Grund sollten die Isolationsmaßnah-
+                                                                             gitis, Masern oder oﬀener Tuberkulose sein. Nicht jeder Pfle-
+      men auf ein Minimum beschränkt bzw. so früh wie möglich
+                                                                             geempfänger ist auf der Infektionsstation isoliert, dennoch
+      wiederaufgehoben werden.
+                                                                             sind die Zimmer so ausgestattet, dass Isolationsmaßnahmen
+         Besonders für Kinder und ihre Eltern ist eine Isolation
+                                                                             einfacher durchgeführt werden können. Die Zimmer ver-
+      sehr bedrückend. Um den Aufenthalt in der Klinik angeneh-
+                                                                             fügen z. B. über eine Schleuse, die das hygienische An- und
+      mer und erträglicher zu gestalten, können desinfizierbare
+                                                                             Ablegen der persönlichen Schutzausrüstung erleichtert. Es
+      Spielsachen benutzt werden, aber auch ein Laptop/Tablet
+                                                                             handelt sich entweder um Einzelzimmer oder Zweibettzim-
+      mit Internetzugang ist in der Regel im Zimmer möglich.
+                                                                             mer mit eigener Nasszelle, Toilette und Steckbeckenspüle.
+                                                                             Häufig sind die Zimmer von außen (z. B. Garten oder über
+      Was können Pflegefachkräfte tun? • Zum einen sollten sie
+                                                                             einen Balkon) zugänglich, sodass infektiöse Pflegeempfän-
+      versuchen, sich Zeit zu nehmen, wenn sie den Pflegeemp-
+                                                                             ger über den Außenzugang aufgenommen werden können,
+      fänger versorgen, insbesondere auch für ein Gespräch. Sie
+                                                                             ohne den Stationsflur zu kontaminieren. Infektionsstationen
+      sollten daran denken, dass der Pflegeempfänger nicht viel
+                                                                             verfügen häufig über eine Unterdruck-Raumluft-Technik,
+      Gelegenheit hat, mit jemandem zu reden (▶ Abb. 13.14).
+                                                                             damit beim Öﬀnen der Türen keine Krankheitserreger nach
+        Pflegefachkräfte sollten versuchen, ihm seine Wünsche zu
+                                                                             außen dringen können. Nicht jede Klinik hat eine Infektions-
+      erfüllen, sofern dies möglich ist, z. B. Wunschkost, ausrei-
+                                                                             station, Kinderkliniken haben sehr häufig eine.
+      chend Lesestoﬀ, Fernsehen, Internetzugang.
+                                                                               Neben den „normalen“ Infektionsstationen gibt es in
+        Sofern das Krankheitsbild es erlaubt, sollte der Pfle-
+                                                                             Deutschland noch Zentren, die sich auf Pflegeempfänger mit
+      geempfänger den Außenbereich der Klinik nutzen dürfen –
+                                                                             hochpathogenen lebensbedrohlichen Erkrankungen spezia-
+      natürlich unter Einhaltung der Hygiene, z. B. Händedesinfek-
 
-Exulzerierende Wunden
-Oﬀene (exulzerierende) Wunden (z. B. durch einen Tumor)
-sind für Betroﬀene, Familienmitglieder und betreuende Mitarbeiter eine große Herausforderung. Sie sind nach außen
-sichtbar und können das Schamgefühl der Betroﬀenen verletzen. Außerdem verbreiten sie oft einen sehr intensiven
-und üblen Geruch. Pflegende sollten mit Feingefühl vorgehen, Probleme aber oﬀen ansprechen, um eine gemeinsame Lösung zu finden, z. B. Durchlüften nach dem Verbandwechsel.
+314    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                     Multiresistente Erreger (MRE)
 
-WISSEN TO GO
-Palliative Pflege – Symptomkontrolle
-● Angst:
 
-Mögliche Ängste sollten oﬀen angesprochen
-werden. Bei Bedarf sollte ein Seelsorger, Hospizhelfer
-oder Psychoonkologe hinzugezogen werden. Medikamentös können Anxiolytika eingesetzt werden.
-● Unruhe: Nestelt ein Sterbender herum, verändert er
-häufig seine Lage im Bett, will ständig aufstehen, steckt
-seine Beine wiederholt durch das Bettgitter oder ruft er
-laut um Hilfe oder stöhnt, sollte versucht werden, die
-Ursache herauszufinden. Möglicherweise hat er Schmerzen oder muss auf die Toilette? Unter Umständen sind
-beruhigende Medikamente angezeigt.
-● Juckreiz: Erkrankungen der Leber, Stoﬀwechselstörungen oder bestimmte Medikamente (Sedativa) können zu
-einem quälenden Juckreiz führen. Kühlende Einreibungen und die Gabe von Antihistaminika sind mögliche
-Maßnahmen.
-● Müdigkeit und Schwäche: Bei Sterbenden kann die
-notwendige Schlafdauer enorm steigen. Es sollte darauf
-geachtet werden, dass die Person ausreichend lange Ruhephasen haben und die wenige wache Zeit bestmöglich
-genutzt wird. Außerdem können gezielte Maßnahmen
-der Basalen Stimulation oder der Aromapflege anregend
-wirken.
-● Exulzerierende Wunden: Oﬀene und eitrige Wunden
-können das Schamgefühl der Pflegeempfänger verletzen. Behutsam sollte über mögliche Probleme gesprochen und z. B. durch Lüften nach dem Verbandwechsel
-intensive üble Gerüche verhindert werden.
+lisiert haben: Berlin, Düsseldorf, Frankfurt, Hamburg, Leip-
+zig, München, Stuttgart. Dort werden Pflegeempfänger auf-
+                                                                       13.5.1 MRSA
+genommen, deren Erkrankungen hochgefährlich (z. B. Ebola)              Staphylococcus aureus ist ein kugelförmiges Bakterium und
+oder noch unbekannt (z. B. SARS) und für die Bevölkerung               einer der bedeutendsten Erreger von Infektionen, die häufig
+risikoreich sind. Jedes dieser Zentren hat eine besondere              antibiotisch therapiert werden müssen. Aus oben genannten
+Raumlufttechnik, entsprechende Konzepte und geschultes                 Gründen haben die Staphylokokken im Laufe der letzten
+Personal zur Behandlung der Pflegeempfänger. Die Spezia-               40 Jahre Resistenzen gegen die gängigen Antibiotika ent-
+listen dieser Zentren arbeiten sehr eng mit den Gesund-                wickelt.
+heitsbehörden zusammen und sind miteinander vernetzt.                     Besondere Resistenzen sind entstanden gegen Methicillin.
+                                                                       Methicillin-resistente Staphylococcus-aureus-Stämme be-
+Definition Kontagiosität                                               zeichnet man als MRSA. Oxacillin-resistente Staphylococ-
+Sie beschreibt die Ausbreitungsfähigkeit eines Krankheitserregers,     cus-aureus-Stämme werden ORSA genannt. Sehr häufig liegt
+also wie leicht oder wie schwer er übertragen werden kann.             gleichzeitig eine Resistenz gegen viele weitere Antibiotika-
+                                                                       gruppen vor. Eine andere geläufige Bedeutung der Abkür-
+                                                                       zung ist deswegen auch „multiresistenter Staphylococcus
+13.5 Multiresistente Erreger                                           aureus“.
+                                                                          Die Resistenzentwicklung nimmt weiter zu. Mittlerweile
+(MRE)                                                                  findet man diese Erreger nicht nur in der Klinik, sondern
+                                                                       auch in stationären Pflegeeinrichtungen oder anderen Ge-
+Definition Multiresistente Erreger                                     meinschaftseinrichtungen.
+Multiresistente Erreger sind gegen mehrere Antibiotika resistent.
+Diese Antibiotika sind also gegen sie wirkungslos. Sie sind deswegen
+sehr schwer zu bekämpfen und behindern eine optimale Antibioti-        Besiedlungsbereiche und Infektionen
+kabehandlung. Der bedeutendste multiresistente Erreger ist MRSA        Besiedlung • Staphylokokken gedeihen dort, wo es warm
+(Methicillin-resistenter Staphylococcus aureus). Aber auch ESBL (ex-   und feucht ist. Sie finden sich auch beim gesunden Men-
+tended spectrum betalactamase) produzierende Enterokokken und          schen immer wieder auf der Haut, in der Nase oder im Ra-
+VRE (Vancomycin-resistente Enterokokken) gewinnen immer mehr           chen. Weitere häufig besiedelte Bereiche sind Achseln, Leiste
+an Bedeutung.                                                          und Perianalbereich. MRSA kann sich aber ebenso in Sekre-
+                                                                       ten der Atemwege, in Wundsekreten oder Urin und Blut an-
+Entstanden sind resistente Bakterien durch unüberlegten                siedeln.
+Einsatz von Antibiotika. Teilweise werden Antibiotika z. B.               Circa 2 % der Bevölkerung sind MRSA-positiv (Bundes-
+bei viralen Infekten wie Grippe eingesetzt, obwohl sie aus-            institut für Risikobewertung, BFR 2014). Bei gesunden Per-
+schließlich gegen Bakterien wirken und nicht gegen Viren.              sonen löst MRSA aber keine Infektion aus. Diese Personen
+Oft werden Antibiotika verordnet, ohne dass man getestet               sind zwar mit MRSA besiedelt bzw. kolonisiert, werden aber
+hat, ob diese Antibiotika überhaupt gegen den Keim wirk-               nicht krank.
+sam sind. Damit man möglichst viele Keime erwischt, ver-
+wendet man häufig Breitbandantibiotika, die ein breites                Nosokomiale Infektionen • Eine große Bedeutung haben
+Spektrum an vielen verschiedenen Bakterien abtöten.                    MRSA allerdings als Verursacher von nosokomialen Infektio-
+   Durch diese unnötigen Einsätze von Antibiotika kommen               nen. Denn wenn das Immunsystem wie bei vielen Pfle-
+Bakterien häufiger als nötig mit Antibiotika in Kontakt und            geempfängern im Krankenhaus geschwächt ist, können
+können Resistenzen entwickeln. Ein vorzeitiger Abbruch der             multiresistente Erreger zu schweren Infektionen führen, z. B.
+Therapie oder eine unregelmäßige Einnahme können eben-                 postoperativen Wundinfektionen, blasenkatheterassoziier-
+falls dazu führen, dass überlebende Bakterien eine Resistenz           ten Harnwegsinfektionen, gefäßkatheterassoziierten Ent-
+entwickeln. Auch in der Tiermast werden Antibiotika oft un-            zündungen oder Beatmungspneumonien (Lungenentzün-
+kritisch eingesetzt. Sie werden dem Tierfutter beigemischt,            dungen, die bei beatmeten Pflegeempfängern auf der Inten-
+um so den Ertrag zu steigern. Hat ein Bakterium eine Resis-            sivstation auftreten).
+tenz entwickelt, kann es sie an die Folgegeneration weiter-
+geben, wodurch resistente Bakterienstämme entstehen.
+                                                                       Übertragung
+                                                                       Die Erreger werden fast ausschließlich als Kontaktinfektion
+     WISSEN TO GO                                                      direkt über die Hände übertragen oder indirekt, z. B. über
+                                                                       Flächen, Kleidung oder Akten. Um die Übertragung zu ver-
+  Multiresistente Erreger (MRE)                                        meiden, sind korrekte Hände- und Flächendesinfektion un-
+                                                                       abdingbar. In seltenen Fällen erfolgt die Übertragung über
+  Multiresistente Erreger sind gegen mehrere Antibiotika re-           Tröpfchen. Eine aerogene Infektion über die Luft ist nicht
+  sistent. Sie sind deswegen sehr schwer zu bekämpfen und              möglich.
+  behindern eine optimale Antibiotikabehandlung. Der be-
+  deutendste multiresistente Erreger ist MRSA (Methicillin-
+  resistenter Staphylococcus aureus). Aber auch ESBL (ex-              Gefährdete Pflegeempfänger
+  tended spectrum betalactamase) produzierende Entero-                 Besonders gefährdet sind:
+  kokken und VRE (Vancomycin-resistente Enterokokken)                  ● Menschen mit chronischen Erkrankungen, z. B. Diabetes
+  gewinnen immer mehr an Bedeutung. Entstanden sind re-                  mellitus
+  sistente Bakterien durch unüberlegten Einsatz von Antibio-           ● Pflegeempfänger mit Wunden, z. B. Operationswunden
+  tika.                                                                ● Pflegeempfänger mit chronischen Hautläsionen, z. B. De-
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
+                                                                         kubitus, Ulcus cruris
+                                                                       ● Pflegeempfänger mit Dialyse
 
-847
 
-42
 
-Pflege von Menschen
-unterschiedlicher Kulturen
 
-Kultur einer gesamten Gesellschaft ausmacht. Tatsächlich
-umfasst der Kulturbegriﬀ weit mehr:
-
-42.1 Kompetent pflegen
-Pflege ist international. Ob das interdisziplinäre Team, die
-Kollegen des Pflegeteams oder die Gruppe der Pflegeempfänger. Die Menschen, denen man begegnet, sind unterschiedlicher Herkunft, Religion und Kultur. Die Arbeit mit
-Menschen mit unterschiedlichstem Hintergrund erfordert
-Oﬀenheit, Neugier und Fachwissen zum Thema transkulturelles Arbeiten. So können auch Situationen, in denen die
-Verständigung in jeglicher Hinsicht schwierig erscheint, bewältigt werden.
-In diesem Kapitel lernen Sie u. a.,
-● wie der Begriﬀ Kultur definiert wird.
-● welche Bedeutung die Kultur auf Gruppen und das Leben
-Einzelner hat.
-● was transkulturelle Pflege ist.
-● wie Sie transkulturelle Fähigkeiten erlangen und einsetzen
-können.
-● dass transkulturelle Kommunikation bestimmten Kriterien folgt.
-● inwieweit die Religion einer Person Einfluss auf den Pflegealltag haben kann.
-
-42.2 Was ist Kultur eigentlich?
-Viele Menschen denken bei dem Wort „Kultur“ zuerst an
-Malerei, Musik, Theater und Opern – an Caspar David Friedrich, Johann Sebastian Bach, Friedrich Schiller und Richard
-Wagner. Dies ist jedoch nur ein Teilbereich dessen, was die
-
-848
-
-Definition Kultur
-Kultur kann in ihrem weitesten Sinne als die Gesamtheit der einzigartigen geistigen, materiellen, intellektuellen und emotionalen Aspekte angesehen werden, die eine Gesellschaft oder eine soziale
-Gruppe kennzeichnen. Dies schließt nicht nur Kunst und Literatur
-ein, sondern auch Lebensformen, die Grundrechte des Menschen,
-Wertsysteme, Traditionen und Glaubensrichtungen (UNESCO 1982).
-Äußerst verkürzt, aber dennoch treﬀend, fasst folgende englische Redewendung zusammen, was Kultur eigentlich ist –
-nämlich „The way we do things around here“.
-
-42.2.1 Modelle der Kulturtheorie
-Es gibt verschieden Theorien, die versuchen den Einfluss der
-Kultur auf die Persönlichkeit und das Verhalten des Einzelnen zu erklären.
-Das Eisbergmodell der Kultur • Bei einem Eisberg befindet
-sich ca. ¹/₇ an der Wasseroberfläche, ⁶/₇ liegen darunter und
-sind nicht unmittelbar sichtbar (▶ Abb. 42.1). Die Kulturtheorie gebraucht das Modell des Eisberges, um zu beschreiben, dass manche Aspekte der Kultur eines Menschen direkt
-sichtbar sind, während andere verborgen liegen und indirekt wirken. Kleidung, Umgangsformen, Kunst, Ernährungsform und Sprache geben unmittelbare Hinweise auf die kulturelle Zugehörigkeit, während Werte, Beziehungen, Vorstellungen, Traditionen, Glauben oder Rituale nicht (alle) direkt
-wahrnehmbar sind.
-Zwei Aspekte dieses Models sind wichtig, wenn es um
-transkulturelle Kompetenzen geht:
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Kompetent pflegen ▶ S. 848
-
-Modelle der Kulturtheorie
-
-Was ist Kultur eigentlich?
-
-Bedeutung von Kultur
-
-▶ S. 848
-
-▶ S. 849
-
-Transkulturelle Kompetenz ▶ S. 850
-Kultursensibel pflegen
-
-Religionen
-
-Das Kapitel vermittelt
-Kompetenzen v.a. in
-KB I.5c und II.1a
-
-▶ S. 851
-
-Religion im Klinikalltag ▶ S. 853
-Christentum
-
-▶ S. 853
-
-Islam ▶ S. 854
-Judentum
-
-1. Die kulturelle Identität eines Menschen ist nur zu einem
-sehr geringen Teil sichtbar, deshalb ist es vorschnell (und
-nicht ausreichend), sich auf Grundlage dieser Eindrücke
-ein Urteil zu erlauben.
-2. Eine Person ist sich selbst nicht (immer) bewusst, von
-welchen Aspekten er/sie kulturell geprägt ist.
-
-Abb. 42.1 Das Eisbergmodell der Kultur.
-Sprache, Umgangsformen,
-Kleidung, Kunst, Ernährung etc.
-
-bewusst
-
-unbewusst
-
-Kommunikation in der
-transkulturellen Pflegepraxis
-
-Werte, Normen, Beziehung,
-Tradition, Glaube und
-Rituale etc.
-
-Nur ein kleiner Teil des Eisbergs ist sichtbar, der weitaus größere
-Teil bleibt unterhalb der Wasseroberfläche verborgen.
-
-▶ S. 856
-
-Die drei Ebenen der menschlichen Programmierung • Das Modell von Geert Hofstede beschreibt die menschliche Programmierung in 3 Ebenen. Die Ebenen folgen pyramidenförmig aufeinander. Den Boden der Pyramide bildet die „Ebene
-der menschlichen Natur“. Sie ist das, was alle Menschen verbindet, dazu zählen die Grundbedürfnisse (z. B. Bewegung,
-Nahrung, Schlaf), aber auch der Wunsch nach Austausch mit
-anderen und die Fähigkeit zum Ausdruck von Emotionen
-wie Freude oder Wut. Diese Merkmale sind universell und
-ererbt. In der Mitte der Pyramide steht die „Kulturebene“.
-Bestimmte Eigenschaften einer Person sind abhängig von
-der Gruppe, der die Person angehört. Ein Mensch gehört
-meist mehrere Gruppen an und wird durch diese unterschiedlich geprägt. Zum Beispiel wird eine 26-jährige italienischstämmige Pflegefachfrau von ihrer Zugehörigkeit zu ihrer Altersgruppe, ihrem Geschlecht, ihrer Nationalität, aber
-auch ihrem Berufsstand beeinflusst. Nach Hofstedes Theorie
-sind Kulturmerkmale erlernt. An der Spitze der Pyramide
-steht die „Persönlichkeitsebene“. Die Merkmale dieser Ebene sind individualspezifisch, basieren auf den Charakterzügen, die teilweise ererbt und teilweise erlernt sind.
-Auch dieses Modell zeigt, dass sich die Eigenschaften eines
-Menschen aus einem Zusammenspiel verschiedener Faktoren ergeben. Es bietet eine Möglichkeit, bestimmte Muster
-des Denkens, Fühlens und Handelns eines Menschen zu erkennen und einzuordnen.
-
-42.2.2 Bedeutung von Kultur
-Kultur trägt zur Identitätsfindung von Einzelpersonen und
-Gruppen bei (▶ Abb. 42.2). Sie bietet Orientierung und Bezugsrahmen, anhand derer Erfahrungen und Verhalten eingeteilt werden. Gleichzeitig „standardisiert“ die Kultur in
-gewisser Weise Denken, Fühlen und Handeln und gibt vor,
-wie etwas sein muss: Kultur ist damit auch Teil Wahrnehmungsschablone, mit der wir Dinge (auch das Fremde) betrachten und bewerten.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-849
-
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen        315
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
 l
-42
+13    Hygiene
 
-Pflege von Menschen unterschiedlicher Kulturen
-Abb. 42.2 Kulturelle individuelle Identität.
 
-Kulturelle Identität
+      ● Pflegeempfänger mit dauerhaft liegenden Zugängen, Tra-                Wenn ein Pflegeempfänger intubiert ist, wird zusätzlich
+        cheostoma oder PEG                                                 Sekret aus der Lunge abgesaugt und ein Abstrich am Trache-
+      ● Pflegeempfänger, die häufig Antibiotika nehmen müssen              ostoma genommen. Bei Pflegeempfängern mit Blasenkathe-
+        oder sehr oft im Krankenhaus sind, sind ebenfalls gefähr-          ter wird Urin abgenommen. Wundabstriche werden z. B. bei
+        deter als andere.                                                  Pflegeempfängern mit einem Dekubitus oder Ulcus cruris
+      ● Ältere Menschen haben aufgrund altersspezifischer, phy-            abgenommen.
+        siologischer Veränderungen des Immunsystems und ver-                  Die Abstriche werden im Labor der Klinik untersucht. Es
+        schiedener Organe eine erhöhte Disposition für die Be-             gibt auch Schnelltests, diese sind aber teurer und manchmal
+        siedlung mit MRSA. Heimbewohner sind deshalb beson-                falsch positiv. Bis zum Ergebnis des Tests muss der Pfle-
+        ders gefährdet, sich im Krankenhaus mit MRSA zu infizie-           geempfänger in einem Einzelzimmer untergebracht werden.
+        ren.                                                               Das Testergebnis liegt spätestens am nächsten Tag vor.
+      ● Personen mit häufigen Kontakten zu MRSA-Trägern, z. B.
 
-fremde Kultur
-Individuelle
-Identität
+        Pflegefachkräfte und Ärzte, sind häufig besiedelt.
+      ● Auch Schweinezüchter gehören zur Risikogruppe für eine                 WISSEN TO GO
+        Besiedlung.
+                                                                             MRSA – Grundlagen
+      Je mehr Keime auf einen Menschen übertragen werden, des-
+      to wahrscheinlicher ist es, dass er von ihnen besiedelt wird.          Methicillin-resistente Staphylococcus-aureus-Stämme be-
+                                                                             zeichnet man als MRSA, Oxacillin-resistente als ORSA. Wei-
+                                                                             tere Bezeichnung MRSA = multiresistenter Staphylococcus
+      Screening auf MRSA                                                     aureus.
+      In manchen Kliniken werden bestimmte Pflegeempfänger-                  ● Besiedlung: Haut, Nase, Rachen, Achseln, Leiste, Peri-
 
-Kollektiv
-• Sicherheit
-• Heimat
-• Stärke
+      gruppen bereits bei der Aufnahme auf MRSA untersucht                     analbereich, Sekrete der Atemwege, Wundsekrete, Urin
+      bzw. gescreent.                                                          und Blut. Bei gesunden Personen löst MRSA keine Infek-
+                                                                               tion aus.
+      Pflegeempfängergruppen • Das Robert Koch-Institut emp-                 ● Infektion: Wenn das Immunsystem geschwächt ist, kön-
 
-Zugehörigkeitsgefühl
+      fiehlt dies für folgende Pflegeempfänger:                                nen sie zu schweren nosokomialen Infektionen führen,
+      ● Pflegeempfänger, bei denen bekannt ist, dass sie schon ei-             z. B. postoperative Wundinfektionen oder blasenkathe-
+        nen MRSA in der Vorgeschichte hatten.                                  terassoziierte Harnwegsinfektionen.
+      ● Bei Übernahme von Pflegeempfängern aus einer anderen                 ● Übertragung: fast ausschließlich direkt über die Hände
 
-Wissen
+        Klinik, wenn sie dort länger als 3 Tage in den letzten 12              oder indirekt, z. B. über Flächen, Kleidung oder Akten.
+        Monaten lagen.                                                       ● Gefährdung: Besonders gefährdet sind Menschen mit
 
-Dynamik
-• Offenheit, Neugierde
-• Abgrenzung
-• Vorurteile
-• ...
+      ● Pflegeempfänger, die beruflich direkten Kontakt mit Tie-               chronischen Erkrankungen, Pflegeempfänger mit Wun-
+        ren in der Landwirtschaft (Schweinemast) haben.                        den, chronischen Hautläsionen, Pflegeempfänger mit
+      ● Pflegeempfänger mit mehr als 2 der folgenden Risikofak-                Dialyse, Pflegeempfänger mit dauerhaft liegenden Zu-
+        toren:                                                                 gängen, Tracheostoma oder PEG, ältere Menschen.
+        – chronische Pflegebedürftigkeit                                     ● Screening: In manchen Kliniken werden bestimmte Pfle-
 
-Individualität
+        – Antibiotikatherapie in den letzten 6 Monaten                         geempfängergruppen bereits bei der Aufnahme auf
+        – liegende Zugänge wie Blasendauerkatheter, PEG, Trache-               MRSA untersucht bzw. gescreent. Bis zum Ergebnis wird
+          ostoma                                                               der Pflegeempfänger in einem Einzelzimmer unterge-
+        – Dialyse                                                              bracht.
+        – chronische Wunden
+        – Brandwunden
+                                                                           Isolationsmaßnahmen
+      Durchführung • Mit jeweils einem Abstrichtupfer werden
+      beide Seiten der Nase abgestrichen (▶ Abb. 13.15). Für den           Pflegeempfänger mit MRSA werden isoliert und entweder
+      Abstrich im Rachen wird der Tupfer vorher mit steriler               in einem Einzelzimmer oder zusammen mit anderen Pfle-
+      Kochsalzlösung angefeuchtet.                                         geempfängern, bei denen ebenfalls ein MRSA nachgewiesen
+                                                                           wurde, in einem Zimmer untergebracht (Kohortenisolation).
+                                                                           Es gelten die oben beschriebenen Maßnahmen der Isolation
+      Abb. 13.15 Abstrichröhrchen.
+                                                                           (S. 311) oder der klinikinterne Hygienestandard. Bei Betre-
+                                                                           ten des Zimmers tragen Pflegefachkräfte einen langärmeli-
+                                                                           gen Einmalschutzkittel über ihrer Dienstkleidung. Bei direk-
+                                                                           tem Kontakt mit dem Pflegeempfänger tragen sie Hand-
+                                                                           schuhe und einen Mund-Nasen-Schutz, wenn der Erreger
+                                                                           im Mund-Nasen-Raum oder in der Lunge sitzt. Bei Verlassen
+                                                                           des Zimmers entsorgen sie ihren Schutzkittel, Mund-Nasen-
+                                                                           Schutz und die Handschuhe im Abfallsack. Danach desinfi-
+                                                                           zieren sie sich die Hände.
 
-Eindrücke
+                                                                           ACHTUNG
+                                                                           MRSA kann Monate auf Flächen, Instrumenten und Kleidung über-
+                                                                           leben. Wird der Pflegeempfänger entlassen, muss das Zimmer
+                                                                           grundgereinigt und desinfiziert werden. Die Vorhänge werden abge-
+                                                                           nommen und geöﬀnete Pflegeutensilien weggeworfen.
 
-Abgrenzung
+      Foto: K. Oborny, Thieme
 
-Jeder Mensch möchte sich abgrenzen, aber auch Sicherheit und Heimat in einer kulturellen Gruppe finden.
 
-! Merke Wirkung von Kultur
+316     I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+        Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+         Usage subject to terms and conditions of license.
+                                                                                                      Multiresistente Erreger (MRE)
 
-Die „Kultur“ hat zwei Seiten: Nach innen stiftet sie Zusammenhalt
-(sie wirkt integrativ), nach außen hin funktioniert sie abgrenzend
-bzw. ausgrenzend.
-Eine Kultur darf nicht als starre, einheitliche (homogene)
-Gemeinschaft wahrgenommen werden. Eine jede Kultur in
-sich ist vielfältig und uneinheitlich (heterogen). Tatsächlich
-befinden sich auch Kulturen im ständigen Wandel und beeinflussen sich gegenseitig (Transkulturalität).
 
-WISSEN TO GO
-Was ist Kultur?
-Kultur ist (im weitesten Sinne) die Gesamtheit der einzigartigen geistigen, materiellen, intellektuellen und emotionalen Aspekte, die Gemeinschaften kennzeichnen. Dies
-beinhaltet nicht nur die Kunst, sondern auch Lebensformen, Grundrechte, Wert, Traditionen und Glaubensrichtungen.
-Die jeweilige Kultur hat Einfluss auf die Persönlichkeit
-und auf das Verhalten des Einzelnen, ist somit identitätsstiftend und bewirkt das Gefühl der Gruppenzugehörigkeit. Gleichzeitig wirkt sie abgrenzend nach außen.
+Therapie von MRSA                                                   einem Tracheostoma entlassen, müssen andere Schutzmög-
+                                                                    lichkeiten genutzt werden als bei einem Pflegeempfänger,
+Der Erreger ist zwar gegen sehr viele Antibiotika resistent,        der den Erreger im Urin hat.
+dennoch gibt es einige wenige Antibiotika zur Behandlung               Das A und O der Schutzmaßnahmen ist, sowohl in der Kli-
+einer Infektion. Sind Pflegeempfänger nur mit dem Keim be-          nik als auch in einer stationären Pflegeeinrichtung, die kon-
+siedelt, wird keine Antibiotikatherapie, sondern ausschließ-        sequente Händehygiene. Neben der korrekten Händehygie-
+lich eine Sanierung durchgeführt. Ziel ist es, den Erreger vom      ne muss zur Pflege des Pflegeempfängers eine Einmalschür-
+Körper zu entfernen; man bezeichnet das als Eradikation.            ze oder ein Schutzkittel (flüssigkeitsdicht) getragen werden.
+   Aber nicht alle Pflegeempfänger, die mit einem MRSA be-
+siedelt sind, werden behandelt. Bei Pflegeempfängern mit
+großflächigen chronischen Wunden, einem Tracheostoma                     WISSEN TO GO
+oder einer PEG ist eine Sanierung nicht erfolgversprechend,
+da das Immunsystem dieser Patientengruppe geschwächt
+ist. Die Pflegeempfänger bleiben besiedelt.                            MRSA – Isolationsmaßnahmen, Therapie und Sanierung
+                                                                       ● Isolationsmaßnahmen: Pflegeempfänger mit MRSA wer-
 
-850
+Sanierungsmaßnahmen bei                                                  den isoliert: Einzelzimmer oder Kohortenisolation. Es gel-
+                                                                         ten die allgemeinen Maßnahmen der Isolation (S. 311).
+MRSA-Besiedlung                                                        ● Therapie und Sanierung: Es gibt wenige Antibiotika zur
 
-Eine jede Kultur in sich ist vielfältig, im ständigen Wandel und wird von anderen Kulturen beeinflusst (Transkulturalität).
+Ist die Nase besiedelt, wird eine antibiotische Nasensalbe               Behandlung. Bei Besiedlung wird ausschließlich eine Sa-
+nach Anordnung des Arztes für 5 Tage in der Nase aufgetra-               nierung durchgeführt und der Erreger vom Körper ent-
+gen. Befindet sich der Erreger im Rachen, muss der Pfle-                 fernt (Eradikation).
+geempfänger mit einer entsprechenden Mundspüllösung                    Sanierungsmaßnahmen
+ebenfalls 5 Tage gurgeln.                                              ● Nase: antibiotische Nasensalbe 5 Tage in der Nase auf-
+   Sehr aufwendig ist die Sanierung, wenn der MRSA auf der               tragen
+Haut sitzt. In diesem Falle werden der Körper und die Haare            ● Rachen: mit Mundspüllösung 5 Tage gurgeln
+des Pflegeempfängers 5 Tage hintereinander täglich mit                 ● Haut: Körper und Haare 5 Tage mit antibakterieller
+einer antibakteriellen Waschlotion gewaschen. Das Bett                   Waschlotion waschen, Bett frisch beziehen und Matratze
+wird frisch bezogen und die Matratze wischdesinfiziert. Da-              wischdesinfizieren, alle Pflegeutensilien wischdesinfizieren.
+nach werden Handschuhe und Schutzkittel gewechselt und                   Zähne mit Einmalzahnbürste putzen, Einmalrasierer ver-
+alle Pflegeutensilien im Zimmer wischdesinfiziert.                       wenden, Kamm und Bürste nach Gebrauch desinfizieren.
+   Der Pflegeempfänger sollte in der Zeit der Sanierung seine          ● 3 Tage nach Abschluss der Sanierung an 3 verschiede-
+Zähne mit einer Einmalzahnbürste putzen und zur Rasur ei-                nen Tagen Abstriche nehmen → bei negativem Ergebnis
+nen Einmalrasierer verwenden. Kamm und Bürste müssen                     Isolation aufheben
+nach Gebrauch desinfiziert werden. Eine Rekontamination                ● während der Sanierung unbedingt Einzelzimmerunter-
+über die Gebrauchsgegenstände muss vermieden werden.                     bringung
+   Drei Tage nach Abschluss der Sanierung werden an 3 ver-
+schiedenen Tagen Abstriche genommen. Wenn die Sanie-
+rung erfolgreich war und alle Abstriche negativ sind, kann
+die Isolation aufgehoben werden.                                    13.5.2 ESBL und VRE
+   Während der Sanierung muss der Pflegeempfänger unbe-             Resistente Enterobakterien wie Eschericha coli oder Kleb-
+dingt im Einzelzimmer liegen, um sich nicht bei seinem              siellen werden abgekürzt als ESBL bezeichnet: Extended
+Bettnachbarn wieder mit MRSA anzustecken.                           Spectrum beta Lactamase. VRE sind Vancomycin-resistente
+   Sitzt der Krankheitserreger ausschließlich in einer Wunde,       Enterokokken. Diese Krankheitserreger sind gegen be-
+so kann versucht werden, die Wunde mit z. B. nanokristalli-         stimmte Antibiotika (z. B. Carbapeneme oder Vancomycin)
+nen Silberwundauflagen und/oder Polihexanid-Wundspüllö-             resistent. Je nachdem, gegen welche Antibiotikagruppe der
+sungen zu dekontaminieren.                                          Keim resistent ist, wird er als RE für resistent, MRE als multi-
+                                                                    resistent, als XRE extensivresistent oder als PAN-resistent
+Entlassung von Pflegeempfängern mit                                 bezeichnet.
+                                                                       Die Isolations- und Hygienemaßnahmen unterscheiden sich
+MRSA                                                                nicht von denen des MRSA. Eine Sanierung ist bei ESBL und
+Wenn ein Pflegeempfänger mit MRSA von einem ambulan-                VRE möglich. Man testet zunächst aus, welches Antibiotikum
+ten Pflegedienst betreut wird, wird dieser vor der Entlas-          wirksam ist, und verabreicht es dann dem Pflegeempfänger.
+sung informiert. Das Pflegepersonal des ambulanten Pflege-
+dienstes trägt ähnliche Schutzkleidung wie das Klinikper-
+sonal. Allerdings werden hier meist keine Einmalschutzkit-               WISSEN TO GO
+tel getragen, sondern ein Kittel, der beim Pflegeempfänger
+in der Wohnung bleibt und mehrfach benutzt wird. Der                   ESBL und VRE
+Pflegeempfänger darf seine Wohnung verlassen und am öf-
+fentlichen Leben teilhaben.                                            Resistente Enterobakterien wie Escherichia coli oder Kleb-
+   Bei einer Verlegung in eine stationäre Pflegeeinrichtung            siellen werden abgekürzt als ESBL bezeichnet: Extended
+wird ebenfalls die Einrichtung informiert. Hier müssen ent-            Spectrum beta Lactamase. VRE sind Vancomycin-resisten-
+sprechende Maßnahmen getroﬀen werden, um gefährdete                    te Enterokokken. Die Isolations- und Hygienemaßnahmen
+Mitbewohner zu schützen. Der Pflegeempfänger wird aber                 unterscheiden sich nicht von denen des MRSA.
+nicht isoliert. Es wird individuell entschieden, welche Hygie-            Eine Sanierung ist möglich. Man testet aus, welches
+nemaßnahmen für den Pflegeempfänger notwendig sind.                    Antibiotikum wirksam ist, und verabreicht es dann dem
+Wird ein Pflegeempfänger mit chronischen Wunden oder                   Pflegeempfänger.
 
-42.3 Kultursensibel pflegen
-Als Pflegefachkraft kommt man mit unterschiedlichsten
-Menschen aus den unterschiedlichsten Kulturen in Kontakt.
-Die Globalisierung der Welt macht es erforderlich (und auch
-möglich!), über die Grenzen der eigenen Kultur hinaus Menschen zu versorgen (transkulturell). Transkulturelle Kompetenzen sind deshalb von Pflegefachkräften gefragt, um
-Menschen aller Kulturen die angemessene Pflege zuteilwerden zu lassen. Und tatsächlich können diese Kompetenzen
-nicht nur im Umgang mit Pflegeempfängern nützlich sein,
-auch in einem multikulturellen Team, das im Gesundheitsbereich nicht selten ist, sind diese Kompetenzen wichtiger
-Bestandteil einer guten Zusammenarbeit.
 
-42.3.1 Transkulturelle Kompetenz
-Bereits in den 1950er-Jahren hat die Pflegewissenschaftlerin
-Madeleine Leininger das Konzept der transkulturellen Pflege
-entwickelt, siehe dazu das Kap. Pflegewissenschaft. Ein
-neueres Modell, das sich mit der Pflege von Menschen mit
-Migrationshintergrund befasst, ist die Theorie von Dagmar
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen          317
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+14                                           Wahrnehmen und
+                                             Beobachten
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
 
-Kultursensibel pflegen
-Domening. Für sie bedeutet transkulturelle Kompetenz, individuelle Lebenswelten in besonderen Situationen und in
-unterschiedlichen Kontexten zu erfassen, zu verstehen und
-entsprechende Handlungsweisen daraus abzuleiten.
 
-Definition Transkulturelle Kompetenz
-Transkulturelle Kompetenz heißt also:
-1. Ich nehme wahr, dass mein Gegenüber eine Situation anders
-sieht, einordnet oder bewertet.
-2. Ich weiß, verstehe und kann einschätzen, warum er dies tut.
-3. Ich kann mit dieser unterschiedlichen Perspektive meines Gegenübers umgehen und entsprechend darauf reagieren.
-Um eine gelungene Interaktion über kulturelle Grenzen hinweg zu ermöglichen, muss eine Pflegefachkraft
-● zur Selbstreflexion fähig sein,
-● Hintergrundwissen und kulturelle Erfahrung haben und
-● die Fähigkeit haben, sich in andere Menschen und ihre
-Sicht auf die Dinge hineinzuversetzen.
-Selbstreflexion • Der 1. Schritt ist dabei immer die Frage: Wie
-sieht meine Lebenswirklichkeit aus? Aus welcher Perspektive
-nehme ich die Dinge wahr? Dieser Schritt ist wichtig, um im
-2. Schritt zu erkennen, dass die Sicht des Gegenübers eine
-andere ist. Die Perspektive des Gegenübers sollte neutral
-und wertfrei betrachtet werden. Durch das bewusste Reflektieren der eigenen Position kann sich eine Oﬀenheit gegenüber einer anderen, fremden Sichtweise entwickeln: Wo unterscheiden wir uns? Wo gibt es Anknüpfungspunkte? Nur indem die andere Sichtweise wahrgenommen wird, kann eine
-darauf abgestimmte Handlung erfolgen.
-Hintergrundwissen und transkulturelle Erfahrung • Wissen ist
-die Basis, auf der transkulturelle Kompetenz entstehen
-kann. Dazu zählen u. a. Kenntnisse
-● über Kultur, Migration, Integration, Grundrechte und
-Menschenrechte,
-● darüber, wie Familien mit Migrationshintergrund leben
-und welche Auswirkung das ggf. auf die Gesundheit hat,
-● darüber, wie in anderen Kulturen mit Gesundheit und
-Krankheit umgegangen wird,
-● über den Zusammenhang zwischen Migration und Gesundheit.
-Transkulturelle Erfahrung kann nur über Interaktion entstehen, durch Gespräche und die bewusste Auseinandersetzung mit den ausländischen Pflegeempfängern. Der falsche
-Weg wäre es, diese Menschen nur als potenziellen Störfaktor für einen reibungslosen Stationsablauf zu sehen. So z. B.
-wenn ein Pflegeempfänger vermehrt klingelt, um nach
-Schmerzmitteln zu fragen. Die Pflegefachkraft muss sich an
-dieser Stelle vielmehr fragen, ob ein Bedürfnis, eine Frage
-besteht, die von der Pflegefachkraft nur noch nicht in Erwägung gezogen worden ist. Vielleicht steht hinter dem Klingeln Angst oder mangelnde Information (etwa über einen
-Operationsverlauf). Transkulturelle Erfahrung besteht zu
-einem großen Teil aus dem Verstehenwollen des Gegenübers.
-Sich in andere Menschen hineinversetzen • Die Pflegefachkraft
-sollte immer versuchen, sich in die andere Perspektive einzufühlen, s. Empathie (S. 256). Auch hier sind Neugier und
-Oﬀenheit die Voraussetzung. Professionell empathisch zu
-sein kann hier heißen, dem Menschen zuzuhören, ihn reden
-zu lassen und sich im richtigen Moment mit geeigneten
-kommunikativen Mitteln (S. 254) ins Gespräch einzubrin-
 
-gen. Auf diese Weise werden Interesse und Anteilnahme bekundet.
-Das professionell-empathische Gespräch ist eine der Kernaufgaben der Pflege, und Reden ist ein wichtiger Aspekt in
-der Krankheitsbewältigung Betroﬀener – dies gilt auch für
-ausländische Pflegeempfänger.
-Letztlich sollte sich die Pflegefachkraft jedoch bewusst
-sein, dass sie nicht alles verstehen muss. Das ist es nicht das
-Ziel. Das Fremde kann und darf fremd bleiben. Dennoch
-kann man dem Gegenüber mit Respekt begegnen.
+                                                                          Die 6 Sinnesorgane
+                                                                          Die 6 Sinne des Menschen, mit denen er Reize wahrnimmt,
+                                                                          sind (▶ Abb. 14.1):
+      14.1 Kompetent pflegen                                              ● Sehen: visuelle Wahrnehmung
+                                                                          ● Hören: auditive Wahrnehmung
+      Die Situation eines Pflegeempfängers einzuschätzen, um              ● Riechen: olfaktorische Wahrnehmung
+      dann die richtigen Handlungsschritte einzuleiten, gehört zur        ● Schmecken: gustatorische Wahrnehmung
+      Kernkompetenz einer jeden Pflegefachkraft. Die Grund-               ● Fühlen: Dazu zählen das Tasten (taktile Wahrnehmung)
+      voraussetzungen dafür sind ein sensibles Wahrnehmungs-                und andere Wahrnehmungen über die Haut oder die inne-
+      vermögen und eine zielgerichtete Beobachtungsfähigkeit.               ren Organe. In der Haut sitzen verschiedene Rezeptoren
+         In diesem Kapitel lernen Sie u. a.,                                für die Wahrnehmung von Druck/Berührung (Mechano-
+      ● auf welchen physiologischen und psychologischen Grund-
+                                                                            rezeption), Temperatur (Thermorezeption) und Schmer-
+        lagen die Wahrnehmung abläuft.                                      zen (Nozizeption). Außerdem gibt es auch in Muskeln, Ge-
+      ● welche Faktoren die Wahrnehmung beeinflussen können.
+                                                                            lenken und inneren Organen Sinneszellen. Rezeptoren in
+      ● wie sich diese Erkenntnisse bei der Patientenbeobachtung
+                                                                            den Muskeln können z. B. einen Reflex auslösen.
+        nutzen lassen.                                                    ● Gleichgewicht: vestibuläre Wahrnehmung
+      ● wie Sie die Vitalzeichenkontrolle im klinischen Alltag vor-
 
-! Merke Akzeptanz entwickeln
+        nehmen und wie Sie die dabei erhobenen Werte richtig              Die Sinnesorgane nehmen chemische oder physikalische
+        einschätzen.                                                      Reize über Rezeptoren auf und wandeln sie in einen elektri-
+                                                                          schen Nervenimpuls um, der dann an das Gehirn weiterge-
+                                                                          leitet wird. Bei chemischen Reizen führen Moleküle, die an
+      14.2 Wahrnehmen                                                     Rezeptoren andocken, zu einem elektrischen Impuls. Bei
+                                                                          physikalischen Reizen wird der Impuls durch Druck- oder
+      14.2.1 Physiologischer Prozess der                                  Temperaturänderungen oder durch Licht ausgelöst. Riechen
+      Wahrnehmung                                                         und Schmecken sind chemische Sinne. Sehen, Hören, Fühlen
+                                                                          und das Gleichgewicht sind physikalische Sinne. Die Nozi-
+      Definition Wahrnehmung                                              zeption, Wahrnehmung von Schmerzen (S. 532), ist eine
+      Die Biologie definiert die Wahrnehmung als Vorgang, bei dem die     Ausnahme, sie wird durch mechanische, thermische und
+      Reize aus der Umwelt mithilfe der Sinnesorgane aufgenommen und      chemische Reize ausgelöst.
+      verarbeitet werden.
 
-Die Elemente der transkulturellen Kompetenz lassen sich problemlos
-auch auf den Umgang mit nichtausländischen Pflegeempfängern
-übertragen. Da, wo unterschiedliche Menschen in Kontakt kommen,
-treﬀen unterschiedliche Sichtweisen, Werte, Einstellungen und Lebenswelten aufeinander, für die Akzeptanz aufzubringen ist.
 
-42.3.2 Kommunikation in der
-transkulturellen Pflegepraxis
-Grundprinzipien
-Alle Grundlagen der Kommunikation (S. 248) spielen auch
-hier eine große Rolle. Die innere Haltung bekommt hier allerdings eine extrem wichtige Bedeutung. Achten Sie v. a.
-auf:
-● vertrauensbildende Worte, Gesten, Augenblicke und Berührungen
-● Erkennen und Anerkennen von schwierigen Verständigungssituationen
-● Akzeptanz und Einfühlungsvermögen für die Ängste der
-Menschen, die auf Unterstützung angewiesen sind
-Insbesondere bei Pflegeempfängern, die die deutsche Sprache nicht gut verstehen oder sprechen, sollten Sie Folgendes
-beachten:
-● Sprechen Sie respektvoll in ganzen Sätzen. Beachten Sie
-ein gemäßigtes Sprechtempo und halten Sie Blickkontakt,
-um das Verstehen gut einschätzen zu können.
-● Sprechen Sie in einfachen und kurzen Sätzen. Fachsprache
-nutzen Sie bitte nur in Kombination mit einem Dolmetscher oder übersetzenden Angehörigen.
-● Wenn Sie über Ausdrücke stolpern, die Sie nicht kennen,
-fragen Sie höflich nach, was der Pflegeempfänger damit
-meint.
 
-ACHTUNG
-Redewendungen und ihre Bedeutung können sich in verschiedenen
-Kulturen unterscheiden. Im türkischen Sprachgebrauch etwa hat die
-Leber im übertragenen Sinn etwa die Funktion wie im Deutschen
-das Herz. Ein türkischsprachiger Mensch von einer „brennenden Leber“ berichten, wenn er traurig ist oder ihn etwas belastet.
-In anderen Sprachen „fallen“ oder „verrutschen“ Organe: Fällt der
-Nabel, steht das z. B. für Übelkeit, Schwäche oder Schmerzen an
-ganzen Körper. Fällt das Herz, ist der Mensch traurig verstimmt.
 
-Die Bedeutung von Mimik und Gestik
-Nicht nur die gesprochene Sprache, auch die Körpersprache
-drückt aus, was ein Mensch gerade denkt oder fühlt. Die Körperhaltung sowie Mimik und Gestik spiegeln die inneren Bilder und aktuellen Befindlichkeiten. Im Umgang mit Pflegeempfängern sind Pflegende aufgefordert, diese inneren Bilder des anderen zu verstehen, zu beachten und zu respektieren, auch wenn sie ihnen fremd und eigenartig erscheinen.
+318    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                       Kompetent pflegen     ▶ S. 318
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
 
-851
 
+                                                                           Physiologischer Prozess der Wahrnehmung ▶ S. 318
+                                                      Wahrnehmen
+                                                                           Psychologische Prozesse der Wahrnehmung ▶ S. 319
+
+
+
+                                                                                       Grundlagen ▶ S. 321
+                                                                                       Beobachtungskriterien    ▶ S. 323
+                                                                                       Objektive und subjektive Beobachtung ▶ S. 323
+                                                    Die systematische
+                                                    Patientenbeobachtung               Beobachten des psychischen Befindens ▶ S. 323
+                                                                                       Hilfsmittel zur Interpretation und
+                                                                                       Beurteilung der Beobachtung          ▶ S. 324
+
+                                                                                       Dokumentation ▶ S. 324
+
+
+
+                                                                             Einführung    ▶ S. 325
+Das Kapitel vermittelt                                                       Puls ▶ S. 325
+Kompetenzen im
+KB I (v.a. I.1d und I.2a)                                                    Blutdruck ▶ S. 329
+                                                   Vitalparameter
+und KB III.2c                                                                Atmung   ▶ S. 332
+                                                                             Körpertemperatur ▶ S. 337
+                                                                             Bewusstsein     ▶ S. 340
+
+
+
+
+  Abb. 14.1 Sinneswahrnehmung.                                          3. Im entsprechenden Zentrum werden die ankommenden
+                                                                           Reize „sortiert“ und mit gespeicherten Mustern aus der
+                            Gleichgewichtssinn                             Erinnerung verglichen: Der Mensch nimmt z. B. einen Ge-
+                                                                           ruch wahr.
+                                                                        4. Reize können an andere Zentren des Gehirns weitergelei-
+                                                                           tet werden, z. B. an das limbische System, wo Gefühle ver-
+                                                                           arbeitet werden.
+         visuelle                                                       5. Auf diese Weise entstehen Reaktionen, z. B. das Gefühl
+       Wahrnehmung                               Geschmackssinn            von Ekel bei unangenehmen Gerüchen oder Angst bei
+                                                                           Brandgeruch.
+
+                                                                        Die verschiedenen Sinneszellen leiten permanent unzählige
+                                  Reize =                               Reize an das Gehirn weiter. Um eine Reizüberflutung zu ver-
+                            Erfahren & Erleben                          hindern, filtert das Gehirn die wichtigsten Informationen
+           Tastsinn                                Geruchssinn          heraus. Nur ein Bruchteil der Reize erreicht daher das Be-
+                                                                        wusstsein.
+
+
+                                Gehörsinn                               14.2.2 Psychologische Prozesse der
+                                                                        Wahrnehmung
+                                                                        In der Psychologie wird die Wahrnehmung ebenfalls als
+                                                                        komplexer Prozess verstanden, bei dem Reize verarbeitet
+                                                                        werden. Die Reizverarbeitung wird, so die Vorstellung von
+  Die Einflüsse unserer Umwelt gelangen über 6 Sinne als physika-
+                                                                        Psychologen, in erster Linie von subjektiven Kriterien beein-
+  lische oder chemische Reize in unser Gehirn und werden dort
+                                                                        flusst. Subjektive Kriterien entwickeln sich aus Erfahrungen
+  verarbeitet. So erfahren wir unsere Umwelt.
+                                                                        und vorangegangenen Lernprozessen. Die Wahrnehmung
+                                                                        wird als etwas Individuelles verstanden. Das zeigt sich nicht
+                                                                        zuletzt daran, dass auch psychologische Prozesse in die
+  Der Wahrnehmungsprozess                                               Wahrnehmung eingreifen. Dazu zählen:
+                                                                        ● Selektion: Die Aufmerksamkeit kann bewusst auf be-
+  Der Wahrnehmungsprozess setzt sich physiologisch aus                    stimmte Wahrnehmungen gerichtet werden. Menschen
+  mehreren Schritten zusammen:                                            neigen außerdem dazu, verstärkt das wahrzunehmen, was
+  1. Reize werden vom Sinnesorgan aufgenommen, in elektri-                sie wahrnehmen wollen oder was gut in ihre Erwartungs-
+     sche Nervenimpulse umgewandelt und verstärkt.                        haltung passt. Aufmerksamkeit und Wahrnehmung sind
+  2. Die Nervenimpulse werden an das entsprechende Zen-                   eng miteinander verknüpft. Wenn eine Pflegefachkraft
+     trum im Gehirn weitergeleitet, z. B. an das Riechzentrum.            z. B. seit Kurzem in einer Augenklinik arbeitet, erkennt sie
+
+
+         I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen       319
+         Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+          Usage subject to terms and conditions of license.
 l
-42
-
-Pflege von Menschen unterschiedlicher Kulturen
-
-ACHTUNG
-
-● Piktogramme (▶ Abb. 42.3)
-
-Uns vertraute Gesten haben in andere Kulturen vielleicht andere Bedeutungen – was in der Praxis schnell zu Missverständnissen führen
-kann.
-
-● Informationstafeln
-
-Der Augen-Blick • In westlichen Ländern ist der Augenkontakt, also dem Gegenüber ins Gesicht zu schauen, selbstverständlich und gilt darüber hinaus als ein Zeichen von Ehrlichkeit. Wer Blicken ausweicht, könnte etwas zu verbergen
-haben. Das ist in einigen asiatischen Kulturen völlig anders.
-Dort ist der Augenkontakt eher untersagt – als ein Zeichen
-des Respekts vor dem anderen (v. a. gegenüber Vorgesetzten
-oder einem anderen Mann als dem Ehemann). Treﬀen diese
-Kulturen – z. B. bei einem Geschäftstreﬀen – aufeinander,
-können darüber Irrtümer entstehen.
-Das Lächeln • Bei uns gilt ein Lächeln generell eher als
-freundlich. Aber Japaner z. B. haben allein für den geschäftlichen Bereich 6 verschiedene Arten zu lächeln (Kercher
-2013). Sie drücken darüber wahlweise etwa Zuneigung, Zustimmung, Entschuldigung oder Ablehnung aus. Und finden
-wir in unserer Kultur lautes Lachen als positiv und „ansteckend“, so halten Japaner es eher für unhöflich oder unsicher.
-Kopfschütteln • Auch Gesten können unterschiedliche Bedeutungen haben. Bei uns in Deutschland wird Kopfschütteln als „Nein“ verstanden, in Indien und Bulgarien bedeutet
-es „Ja“. Im vorderen Orient zeigt man nur mit einem Nicken
-nach unten seine Zustimmung, während Nach-oben-Nicken
-das Gegenteil signalisiert. In manchen Teilen Asien bewegen
-die Menschen den Kopf nach rechts und links, um ihre Zustimmung auszudrücken. In Indien kann Kopfschütteln
-„Nein“, genauso aber auch „vielleicht“ oder „Ja“ bedeuten. In
-Tibet begrüßt man sich mit ausgestreckter Zunge und auf
-den Philippinen sagt man „Hallo“, indem man die Augenbraue hochzieht.
-Zeichensprache • Die Ringgeste steht in Europa meist für
-„okay“, in Frankreich und Italien hingegen bedeutet sie
-„null“ oder „schlecht“, in Japan steht sie z. B. für „Geld“. In
-arabischen Ländern kann sie eine Drohgebärde sein oder
-eine sexuelle Beleidigung oder Auﬀorderung bedeuten.
-
-und Beschilderungen in mehreren
-Sprachen
-● Broschüren zu Abläufen, Regeln und Schutzmaßnahmen
-während des Klinikaufenthalts in mehreren Sprachen
-● Kurzvideos, in denen Pflegeempfänger anderer Kulturkreise zu kooperativem Verhalten und Kommunikationsbereitschaft mit Ärzten und Pflegepersonal der deutschen
-Kultur auﬀordern
-
-WISSEN TO GO
-Kommunikation in der transkulturellen Pflegepraxis
-Grundprinzipien gelungener transkultureller Kommunikation sind:
-● vertrauensbildende Worte und Gesten
-● Erkennen von schwierigen Verständigungssituationen
-● Einfühlungsvermögen für die Ängste der Menschen
-Außerdem sollte Folgendes beachtet werden:
-● Sprechen Sie respektvoll in einfachen Sätzen und in gemäßigtem Sprechtempo, halten Sie Blickkontakt.
-● Fachsprache ist nur sinnvoll, wenn ein Dolmetscher anwesend ist.
-● Fragen Sie höflich nach, wenn Sie etwas nicht verstehen.
-Wenn es sprachliche Barrieren gibt, wird die nonverbale
-Kommunikation wichtiger. Allerdings haben gerade Mimik
-und Gestik in unterschiedlichen Kulturen eine andere Bedeutung. Dies kann zu Missverständnissen führen.
-Bei Sprachbarrieren sollte ein Dolmetscher hinzugerufen
-werden. Die Kommunikation kann auch mithilfe von Piktogrammen oder Broschüren in der jeweiligen Muttersprache unterstützt werden.
-
-Abb. 42.3 Piktogramm.
-Zähne
-putzen
-Hilfe!
-
-Medikament
-
-Rollstuhl
-
-Schwester
-
-schlafen
-Kopfende
-hoch
-
-Gehhilfe
-
-nieder
-Fußende
-
-auf zu
-Türe
-
-trinken
-
-essen
-
-Mund
-spülen
-
-Fruchtsaft
-
-Buch
-
-kämmen
-
-Tee/Kaffee
-
-Radio
-
-Übersetzungshilfen
-Wenn der Pflegeempfänger sehr wenig oder kein Deutsch
-spricht oder Sie nicht sicher sind, ob Sinn und Bedeutung im
-Gespräch ankommen, sind Dolmetscher, klinikinterne Übersetzerdienste und auch interkulturelle Pflegefachkräfte eine
-sinnvolle Hilfe, um die Sprachbarrieren zum Wohle des Pflegeempfängers zu überwinden. Nehmen Sie diesen in Anspruch, wenn
-● sich
-der Pflegeempfänger eine Übersetzungshilfe
-wünscht,
-● der Pflegeempfänger erst seit Kurzem in Deutschland ist,
-● keine Angehörigen für die Übersetzung infrage kommen,
-● der Pflegeempfänger auf alle Ihre Fragen gleich reagiert,
-z. B. „nickt“,
-● Sie nicht sicher sind, ob der Pflegeempfänger oder auch
-Sie „richtig verstanden“ haben.
-Von Vorteil ist, wenn die beratenden Übersetzer sowohl allgemeinsprachliche als auch medizinische Fachsprache beherrschen. Zusätzliche Übersetzungshilfen, die Verständigung erleichtern, sind z. B.:
-852
-
-Arzt
-
-warm
-
-kalt
-
-Bettschüssel
-
-Kissen
-
-auf
-zu
-Fenster
-
-Zeit
-
-Wasser
-
-Fernseher
-
-Toilette
-
-Decke/
-Leintuch
-
-waschen
-
-Taschentuch
-
-Brille
-
-Telefon
-
-Bad/Dusche Hausschuhe
-
-Socken
-
-Pyjama
-
-an
-heiß
-
-kalt
-
-Licht
-
-aus
-
-Eine Bildtafel, die wichtige Elemente der pflegerischen Versorgung zeigt, erleichtert die interkulturelle Kommunikation.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Religionen
-
-42.4 Religionen
-
-Abb. 42.4 Neues Testament.
-
-42.4.1 Religion im Klinikalltag
-Der Glaube kann das kulturelle Leben eines Menschen wesentlich prägen. Er kann bei der Genesung eine große Ressource und für eine ganzheitliche Pflege entscheidend sein.
-Gläubige schöpfen aus ihrem Glauben Kraft. Sie leben nach
-Geboten, die ihnen ihre Religion vorgibt. Nicht alle halten
-diese Vorschriften gleichermaßen streng ein. Zwar beachten
-z. B. die meisten Muslime das Gebot, kein Schweinefleisch
-zu essen (es gibt übrigens auch muslimische Gruppen, die
-das Schweinefleischverbot gar nicht achten). Aber wenn nötig, werden sie alkoholhaltige Medikamente nehmen (obwohl Alkohol auch verboten ist).
-
-Beispiel Versteckte Zusatzstoﬀe
-Die Auszubildende Frieda A. ärgert sich. Immer bleibt der
-Fruchtjoghurt auf dem Tablett der etwa gleichaltrigen Pflegeempfängerin Frau Y. (Muslimin) unberührt stehen. Die Hygieneregeln sehen jedoch vor, dass der noch verschlossene Joghurtbecher entsorgt werden muss. Frieda arbeitet ehrenamtlich bei
-einer Umweltorganisation und vermeidet die Verschwendung
-von Lebensmitteln.
-Bei nächster Gelegenheit spricht sie Frau Y. darauf an. Diese
-erklärt, dass sie den Fruchtjoghurt nicht essen möchte, da er
-Gelatine enthält, die aus Schweinebestandteilen hergestellt
-wird (S. 855). Das hat Frieda nicht gewusst. Sie wird veranlassen, dass Frau Y. einen Nachtisch ohne tierische Zusätze bekommt.
-
-Das Beste ist, Sie sprechen mit dem Pflegeempfänger direkt
-bei Aufnahme im Pflegeanamnesegespräch (S. 80) darüber,
-welche seiner religiösen Regeln er lebt. Fragen Sie ihn auch,
-ob er – z. B. im Falle alkoholhaltiger Medikamente – eine
-Ausnahme von der Regel machen kann. Denn die Therapie
-soll ja seiner Gesundheit zugutekommen. Allein die Tatsache, dass Sie dem Pflegeempfänger signalisieren: „Ich weiß
-ein wenig über Ihre Religion und werde versuchen, Sie, so
-gut ich kann, zu unterstützen“, wird Ihnen den Zugang zu
-diesen Menschen erleichtern.
-
-WISSEN TO GO
-Religion
-Religion ist oft ein wesentlicher kultureller Faktor und eine
-entscheidende Ressource des Pflegeempfängers.
-Im Pflegeanamnesegespräch sollten Pflegende den Pflegeempfänger fragen, welche seiner religiösen Regeln er
-lebt. Nicht jeder hält jede Regel gleich streng ein.
-
-42.4.2 Christentum
-
-Das Neue Testament spielt eine große Rolle in den religiösen
-Lehren der meisten christlichen Gruppierungen (Symbolbild).
-© Halfpoint/stock.adobe.com - Stock photo - posed by a model
-
-z. B. im katholischen christlichen Glauben ist die Trinität:
-Gott wurde in Jesus Mensch und durchdringt als Heiliger
-Geist seine Kirche. Etwa im Alter von 30 Jahren starb Jesus.
-Er wurde gekreuzigt, er stand aber am 3. Tag nach seinem
-Tod wieder auf. Das ist ein grundsätzlicher Glaube im Christentum: dass alle gestorbenen Menschen nach ihrem Tod
-wiederauferstehen. Deshalb empfinden gläubige Christen
-den Tod als eine Erlösung und den Beginn eines neuen „Lebens“.
-Die grundlegende Schrift ist die Bibel (Heilige Schrift), sie
-besteht aus dem Alten und dem Neuen Testament
-(▶ Abb. 42.4). Das Christentum versteht sich selbst als eine
-Religion der Liebe (Jesus Christus wandte sich laut Bibel vornehmlich den Armen und Benachteiligten zu).
-Oberstes Gebot für Christen ist deshalb die Nächstenliebe.
-Der Sonntag gilt als Ruhetag. Viele Christen besuchen an
-diesem Tag den Gottesdienst in der Kirche. Im Christentum
-gibt es Sakramente, Rituale oder Handlungen, die die Gnade
-Gottes vermitteln. Die römisch-katholische Kirche z. B. kennt
-7 Sakramente: die Taufe, die Firmung, die Eucharistie
-(Abendmahl), die Beichte, die Krankensalbung, die Priesterweihe und die Ehe.
-Andere Kirchen bewerten die Sakramente anders. Das
-Oberhaupt der katholischen Kirche ist der Papst in Rom. Für
-evangelische Gläubige hat er keine Bedeutung.
-
-Besonderheiten – Ernährung
-● An Sonn- und Feiertagen essen Christen meist festlich.
-
-Freitag verzichten sie auf Fleisch – und essen z. B.
-Fisch. Hintergrund: An einem Freitag soll Jesus gestorben
-sein (was Christen als Karfreitag begehen).
-● 40 Tage vor Ostern beginnen Christen die Fastenzeit, in
-der sie z. B. auf Genussmittel verzichten. Eine strenge Fastenphase wie die Muslime im Ramadan haben Christen
-nicht.
-● Am
-
-Grundlagen
-
-Besonderheiten – Körperpflege
-
-Das Christentum besteht aus vielen verschiedenen Kirchen
-(die größten sind die katholische und evangelische Kirche)
-sowie vielen weiteren christlichen Gemeinschaften. Gemein
-ist ihnen, dass sie sich auf Jesus von Nazareth (Jesus Christus) beziehen. Er gilt als der Sohn Gottes. Zentrales Element
-
-Außer der – meist ja natürlich vorgegebenen – Scham ist bei
-Christen nichts Außergewöhnliches bei der Körperpflege zu
-beachten. Sicherlich schätzen sie es, wenn sie von einem
-gleichgeschlechtlichen Pflegenden versorgt werden.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-853
-
-l
-42
-
-Pflege von Menschen unterschiedlicher Kulturen
-
-Besonderheiten – Sterben
-
-Abb. 42.5 Gebet.
-
-● Christen fragen oft nach einem Geistlichen für die Kran-
-
-kensalbung. Das gilt nicht nur für den Fall, dass sie schwer
-krank oder sterbend sind, sondern auch bei einer nicht so
-schweren Krankheit. Pflegende müssen das Zimmer nicht
-speziell vorbereiten. Der Geistliche wird mitbringen, was
-er braucht: Weihwasser, Krankenö l, Watte, Kerze und ein
-kleines Kreuz. Manchmal nimmt er dem Kranken auch die
-Beichte ab.
-● Ist ein Neugeborenes kritisch krank, sollte es möglichst
-vor seinem Tod getauft werden.
-
-WISSEN TO GO
-Christentum
-Christen glauben an Gott, seinen Sohn Jesus Christus und
-den Heiligen Geist und die Wiederauferstehung nach dem
-Tod. Ihr oberstes Gebot ist die Nächstenliebe. Ihre grundlegende Schrift ist die Bibel.
-● Christen begehen den Sonntag meist festlich.
-● Freitags verzichten sie auf Fleisch.
-● Ihre Fastenzeit liegt in den 40 Tagen vor Ostern.
-● Christen fragen oft nach der Krankensalbung – auch
-wenn sie nicht unmittelbar vom Sterben betroﬀen sind.
-● Ein schwer krankes Neugeborenes sollte möglichst vor
-dem Tod getauft werden.
-
-42.4.3 Islam
-Grundlagen
-Der Islam ist neben Judentum und Christentum eine der 3
-im Nahen Osten entstandenen monotheistischen (nur an einen Gott glaubend) Weltreligionen. Überhaupt haben die 3
-Religionen viel gemein. Der Gründer des Islam, Mohammed
-ibn Abd Allah, wurde ca. 570 nach Christus in Mekka geboren. Er lehrte, es könne nur einen Gott geben – und nicht
-viele, wie bis dahin üblich. Der Gott des Islam ist Allah und
-Mohammed ist sein Prophet (Verkünder). Die grundlegende
-Schrift ist der Koran (Wort Gottes, das der Engel Gabriel Mohammed vorlas). Die Gotteshäuser der Muslime heißen Moscheen. Die beiden Hauptgruppen innerhalb des Islam sind
-die Schiiten und Sunniten.
-Die Muslime glauben an Gott, den sie wie arabische Christen „Allah“ nennen. Islam heißt: Friede und Hingabe an den
-einen Gott, wodurch die Muslime ihren Frieden finden. Den
-Tod sehen Muslime nicht als das Ende eines Menschen, sondern als einen neuen Anfang. Denn durch den Tod gelangt
-der Mensch zu seinem Schöpfer, er ist von allen weltlichen
-Schwierigkeiten befreit. Der muslimische Glaube hat 5 Säulen:
-1. Das Glaubensbekenntnis (Schahada): Wer es bekennt, gilt
-als Muslim.
-2. Das Gebet: Das rituelle Gebet ist die höchste Pflicht (nach
-der Schahada). Muslime beten 5-mal täglich. Dabei wenden sie sich immer nach Mekka (▶ Abb. 42.5). Der Ort des
-Gebets sollte sauber sein. Sehr wichtig ist das Gebet am
-Freitag in der Moschee.
-3. Das Fasten: Während des Ramadan (9. Monat des islamischen Mondkalenders) fasten Muslime von der Morgendä mmerung bis zum Sonnenuntergang. Das Ende des
-Ramadan markiert das Fastenbrechen (Zuckerfest).
-
-854
-
-Muslime beten 5-mal täglich Richtung Mekka.
-© Saida Shigapova/stock.adobe.com
-
-4. Die Armensteuer: Muslime sind verpflichtet, einmal im
-Jahr Arme und Bedü rftige zu unterstützen. So reinigen sie
-ihr Vermögen und mehren den Segen Gottes.
-5. Die Wallfahrt: Wenn möglich, sollte jeder Muslim einmal
-in seinem Leben die Pilgerstätte in Mekka besuchen.
-Muslime betrachten Mohammed als Menschen, der Prophet
-Gottes war. Sie verehren aber primär Allah. Deshalb möchten sie auch nicht als „Mohammedaner“ bezeichnet werden.
-Auch Jesus ist übrigens ein wichtiger Prophet für die Muslime. Jungen werden nach dem 7. Tag ihrer Geburt oder vor
-Schuleintritt beschnitten.
-
-! Merke Beschneidung
-
-Das Ritual der Beschneidung von Mädchen schreibt keine der Religionen vor. Der Akt ist in einigen Ländern oder bei einigen Stämmen
-traditionell begründet. In vielen Ländern ist das Beschneiden von
-Mädchen mittlerweile verboten.
-Körperkontakt zwischen den Geschlechtern ist in der Öffentlichkeit verboten. Für orthodoxe Muslime gehört auch
-das Händeschütteln dazu.
-Der Krankenbesuch ist eine heilige Pflicht eines Muslims,
-ein religiöser Akt: Dadurch tut er Gutes und darf deshalb
-Gutes von Gott erwarten. Das erklärt, warum Muslime so
-zahlreich am Krankenbett erscheinen: Durch den Besuch erhält der Kranke neue Kraft, die Anwesenden nehmen ihm
-einen Teil des Leidens ab. Zudem: Je mehr Besuch erscheint,
-desto geehrter fühlt sich der Pflegeempfänger. Das ist in unseren Kliniken oft problematisch. Denn auch wenn wir denken, der Erkrankte benötigt Ruhe, werden die Muslime denken: Er braucht viele von uns, um die Krankheit zu überwinden. Pflegende sollten dann nicht verbieten, sondern versuchen zu vermitteln. Meist lassen sich so gute Lösungen für
-beide Seiten finden.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-
+14    Wahrnehmen und Beobachten
+
+
+        möglicherweise auf einmal bei einem Bekannten einen                  rührungssinn statt. Er ist als erster bereits vor der Geburt
+        grauen Star an einer weiß scheinenden Augenlinse, die ihr            ausgeprägt.
+        zuvor nie aufgefallen war. Umgekehrt nehmen Menschen
+        unter Umständen wichtige Dinge nicht wahr, wenn sie                 Psychische Einflussfaktoren • Beispiele dafür sind:
+        ihre Aufmerksamkeit auf andere Dinge gerichtet haben.               ● Interessen, Motivation: Pflegefachkräfte, die sich für Pä-
+
+        Psychologen sprechen bei diesem Phänomen, bei dem be-                 diatrie begeistern, werden Babyschreien kaum als Lärm
+        stimmte Reize zugunsten anderer ausgeblendet werden,                  empfinden.
+        von einer selektiven Wahrnehmung.                                   ● Emotionen und Bedürfnisse: Ein hungriger Mensch nimmt
+      ● Ergänzung und Strukturierung: Liefern die tatsächlichen               Nahrungsmittel viel eher wahr als ein satter. Verliebte se-
+        Wahrnehmungen nur ein lückenhaftes „Bild“, kann das                   hen die Welt durch „eine rosarote Brille“. Wer traurig ist,
+        Gehirn es nach dem Prinzip des Vertrautseins ergänzen.                sieht sie eher „grau“.
+        Auf diese Weise können Menschen z. B. ein Wort auch                 ● Erfahrungen und Werte: Wer selbst schon einmal um ei-
+
+        dann lesen, wenn einzelne Buchstaben fehlen. Um die ver-              nen Menschen getrauert hat, nimmt die Trauer bei ande-
+        schiedenen Wahrnehmungen wie bei einem Puzzle zu                      ren sensibler wahr.
+        einem einheitlichen „Bild“ zusammenzusetzen, werden                 ● Soziale Situation: Pflegefachkräften, denen die eigene Fa-
+
+        die einzelnen Informationen von unserem Gehirn außer-                 milie sehr wichtig ist, fällt eher auf, wenn ein Patient kei-
+        dem organisiert und strukturiert. Die Farbe „Rot“ alleine             nen Besuch erhält.
+        wird z. B. nicht als „Blut“ wahrgenommen. Erst wenn wei-
+        tere Wahrnehmungen wie Konsistenz, Lokalisation und
+        Menge hinzukommen, werden sie zusammen als „Blut“ er-
+                                                                            Beeinträchtigungen der Wahrnehmung
+        kannt.                                                              Zu den körperlichen Beeinträchtigungen der Sinneswahr-
+      ● Interpretation: Damit ein Mensch auf Wahrnehmungen                  nehmung gehören z. B. Kurz- und Weitsichtigkeit, Alters-
+        angemessen reagieren kann, muss er sie hinsichtlich ihrer           schwerhörigkeit und auch Einschränkungen im Kindesalter,
+        Bedeutung auswerten. Wenn die Wahrnehmung einer                     wie auditive Wahrnehmungsstörungen. Zudem können ver-
+        Pflegenden „Blut“ signalisiert, wird sie zunächst die davon         schiedene psychische Aspekte die Wahrnehmung stören.
+        ausgehende Gefahr hinsichtlich der Menge und der Größe              Psychologen unterscheiden zwischen Wahrnehmungstäu-
+        der Schnittwunde analysieren und entsprechende Maß-                 schungen (z. B. optische Täuschungen, ▶ Abb. 14.2) und
+        nahmen ergreifen.                                                   Wahrnehmungsfehlern bzw. Wahrnehmungsverzerrungen,
+                                                                            bei denen Subjektivität die Wirklichkeit verfälscht bzw. ver-
+                                                                            zerrt.
+
+        Beispiel Ergänzung und Strukturierung                               Wahrnehmungsfehler • Schon Selektion, Ergänzung, Struktu-
+                                                                            rierung und Interpretation können das Wahrgenommene
+        „Luat enier sidtue an eienr elgnhcsien uvrsnäiett, ist es eagl in   verzerren oder verfälschen. Jeder Mensch codiert ein indivi-
+        wcheler rhnfgeeloie die bstuchbaen in eniem wrot snid. das
+                                                                            duelles Abbild seiner Umwelt. Mögliche Wahrnehmungsfeh-
+        eniizg whictgie ist, dsas der etrse und der lztete bstuchbae am
+                                                                            ler sind:
+        rtigeichn paltz snid.“                                              ● Rosenthal-Eﬀekt: Ein Beobachter lässt sich durch das Ur-
+           Der Text ist gut verständlich, obwohl die Buchstaben falsch        teil anderer in seiner Beobachtung beeinflussen. Eine Pfle-
+        angeordnet sind. Das liegt daran, dass das Gehirn konstant
+                                                                              gefachkraft, die einen Pflegeempfänger beobachten soll,
+        versucht, bekannte Muster zu erkennen und so Sinn zu stiften.
+                                                                              von dem eine Kollegin erzählt, dass er „extrem schwierig“
+                                                                              zu betreuen sei, läuft z. B. Gefahr, im Aufbau einer Pflege-
+                                                                              beziehung zu diesem Menschen mehr Schwierigkeiten zu
+      Einflussfaktoren der Wahrnehmung                                        empfinden, als sie es ohne diese Einschätzung täte.
+      Weil ein Wahrnehmungsprozess immer an die wahrneh-                    ● Halo- oder Hofeﬀekt: Hier überblendet eine Eigenschaft,
+
+      mende Person gebunden ist, sind Wahrnehmen und Beob-                    die dem Wahrnehmenden besonders wichtig ist, alle an-
+      achten immer subjektiv. Neben den oben genannten Vor-                   deren. Legt eine Pflegefachkraft z. B. großen Wert auf Ord-
+      gängen, die die Wahrnehmung beeinflussen, gibt es noch
+      eine Reihe weiterer individuell geprägter Faktoren. Diese
+      können sowohl körperlich als auch psychisch sein.                     Abb. 14.2 Optische Täuschung: Ebbinghaus-Illusion.
+
+      Körperliche Einflussfaktoren • Beispiele sind:
+      ● Gewöhnungseﬀekt: Den Duft von Parfüm kann ein
+
+        Mensch z. B. nur eine begrenzte Zeit wahrnehmen, weil er
+        sich dann daran gewöhnt hat.
+      ● Verschmelzung: 2 verschiedene Gerüche verschmelzen zu
+
+        einem neuen.
+      ● Wahrnehmungsschwelle: Ab welcher Intensität ein Reiz
+
+        wahrgenommen wird, ist nicht nur individuell, sondern
+        auch z. B. alters- und tageszeitabhängig.
+      ● Entwicklungsbedingte Einflussfaktoren: Kindliche (vor al-
+
+        lem auch frühkindliche) Sinnesorgane sind zum Teil noch             Von den meisten Menschen wird der linke grüne Kreis kleiner
+        nicht komplett entwickelt. Zudem fehlen Kindern noch die            eingeschätzt. Beide Kreise sind jedoch gleich groß. Diese Wahr-
+        Erfahrungen, um ihre Sinneseindrücke zu interpretieren.             nehmungstäuschung entsteht, weil Menschen den grünen Kreis
+        Ein wichtiger Teil der Wahrnehmung findet bei noch Un-              automatisch ins Verhältnis zu den blauen Kreisen setzen. Das
+        geborenen und auch noch bei Neugeborenen über den Be-               Phänomen entdeckte der Psychologe Herrmann Ebbinghaus be-
+                                                                            reits im 19. Jahrhundert.
+
+
+320    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                             Die systematische Patientenbeobachtung
+
+
+  nung, wird sie eine ordentliche Kollegin auch in anderen
+                                                                           ● Psychologische Prozesse: Weil ein Wahrnehmungspro-
+  Bereichen eher gut beurteilen als eine unordentliche.
+                                                                             zess an die wahrnehmende Person gebunden ist, ist
+● Vorabinformation: Vorab erhaltene Informationen beein-
+                                                                             Wahrnehmen immer subjektiv. Zu den psychologischen
+  flussen die eigene Wahrnehmung. Das kann z. B. im Rah-
+                                                                             Prozessen, die in die Wahrnehmung eingreifen, zählen
+  men von Übergaben oder durch Mitteilungen von ärzt-
+                                                                             Selektion, Ergänzung sowie Strukturierung und Interpre-
+  lichen Befunden geschehen. Wenn eine Pflegende die In-
+                                                                             tation. Sie können das Wahrgenommene verzerren oder
+  formation erhält, dass ein Pflegeempfänger dement ist,
+                                                                             verfälschen.
+  wird sie seinen Versuch, aus dem Bett aufzustehen, wahr-
+                                                                           ● Wahrnehmungsfehler: Hierzu gehören: Rosenthal-Ef-
+  scheinlich als Symptom seiner Erkrankung werten. Mögli-
+                                                                             fekt, Halo- oder Hofeﬀekt, Vorabinformation, Kontrast-
+  cherweise muss er aber auf die Toilette. Ohne die Vorabin-
+                                                                             fehler, Stereotype, Milde-Eﬀekt und Eﬀekt der zentralen
+  formation hätte sie den Grund seiner Unruhe wahrschein-
+                                                                             Tendenz.
+  lich schneller herausgefunden.
+● Kontrastfehler: Sie entstehen, wenn etwas im Vergleich zu
+
+  anderem überdeutlich wahrgenommen wird. Ein Pfle-
+  geempfänger erscheint dicker, wenn ein anderer daneben                 14.3 Die systematische
+  stark untergewichtig ist.
+● Stereotype: Mitgliedern bestimmter Gruppen werden                      Patientenbeobachtung
+  ähnliche Eigenschaften zugeordnet, z. B. „Alle Drogen-
+  abhängigen sind ungepflegt“.                                           14.3.1 Grundlagen
+● Milde-Eﬀekt: Sympathie beeinflusst Beobachtung. Eine
+                                                                         Das Beobachten gehört mit dem Wahrnehmen zu den
+  Person, der eine andere Person extrem sympathisch ist,
+                                                                         Hauptaufgaben einer Pflegefachkraft. Wahrnehmen und Be-
+  tut sich schwer, diese Person sachlich/fachlich zu kritisie-
+                                                                         obachten sind die Grundlage für den Pflegeprozess (S. 78),
+  ren.
+                                                                         aber auch der ärztlichen Therapie. Sie sind entscheidend für
+● Eﬀekt der zentralen Tendenz: Eine Person, die etwas beur-
+                                                                         das rechtzeitige Erkennen von Komplikationen.

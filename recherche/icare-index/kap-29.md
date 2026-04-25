@@ -1,1095 +1,607 @@
-# Kapitel 29: Verbandtechniken
+# Teil 29
 
-> Quelle: I Care Pflege (Thieme, 2020), S. 692-703
+> Quelle: Icare Pflege
 > Automatisch extrahiert — Formatierung kann abweichen
 
 ---
 
-Verbandwechsel
-– krankheitsspezifischen Maßnahmen wie Fußpflege und
--inspektion, Gefäßsport, Druckentlastung der Wunde
-● Zusätzlich sollten folgende Angaben Berücksichtigung finden:
-– Alter des Pflegeempfängers
-– Medikamente (siehe Medikamentenblatt), Unverträglichkeiten/Allergie/n: insbesondere auf Wundauflagen
-und deren Fixierungen
-– soziales Umfeld: Wie und mit wem lebt der Pflegeempfänger (Erdgeschoss, Treppenhaus ohne Fahrstuhl, Angehörige usw.)? Ist er selbstständig oder benötigt er Hilfe?
-Wer versorgte ihn bisher (ärztlich, häuslich, pflegerisch)?
-– Immunstatus, Tumor/en
-– Begleit- und Stoﬀwechselerkrankungen, durchgeführte
-Operationen
-– geistiger und seelischer Zustand
-– Lebensgewohnheiten: Rauchen, Alkohol, Drogen, Bewegung, Sport
-– Information über Krankheitsbild und Einstellung dazu
-– Kontinenzsituation
-● Achtung: Vermeiden von doppelter Dokumentation. Sind
-Angaben schon in anderen Bereichen, z. B. Stammdatenblatt, Medikamentenblatt etc., erfasst, ist auf diese zu verweisen. Zusätzlich können im Rahmen der pflegerischen
-Anamnese Instrumente genutzt werden, die zur Selbsteinschätzung der gesundheitsbezogenen Lebensqualität, z. B.
-Lebensqualität bei chronischen Wunden (Wound-QoL)
-und zur Erfassung der gesundheitsbezogenen Selbstmanagementkompetenzen der Betroﬀenen, z. B. Wittener Aktivitätenkatalog der Selbstpflege bei venös bedingten oﬀenen Beinen (WAS-VOB), dienen. Diese Instrumente sind
-über die Homepage des DNQP (www.dnqp.de) als kostenfreier Download verfügbar.
-
-Wundassessment
-Um den Wundstatus aktuell und möglichst sachlich festzuhalten, muss die Wunde genau vermessen und beurteilt
-werden. Die Angaben sind schriftlich zu dokumentieren
-(▶ Abb. 28.24). Eine Wunddokumentation verdeutlicht gleichermaßen den geleisteten Pflegeprozess wie auch den Heilungsverlauf bzw. aktuellen Zustand der Wunde. Beispielhafte Inhalte für eine Wundeinschätzung laut Expertenstandard „Pflege von Menschen mit chronischen Wunden“
-(DNQP, 1. Aktualisierung 2015) sind:
-● medizinische Wunddiagnose: Grunderkrankung, Wundart
-und Schweregradeinteilung der Wunde bzw. der Grunderkrankung
-● Wundklassifikation: z. B. Ulcus cruris venosum/arteriosum/mixtum, diabetisches Fußulkus, Dekubitus
-● Schweregradeinteilung: z. B. Dekubitusklassifikation nach
-EPUAP (S. 394), Klassifikation Diabetisches Fußsyndrom
-nach Wagner/Armstrong, Klassifikation der chronisch venösen Insuﬃzienz (CVI) nach Widmer oder CEAP, Klassifikation der pAVK nach Fontaine (▶ Tab. 45.4)
-● bisherige diagnostische und therapeutische Maßnahmen
-zur Wundversorgung und zur Grunderkrankung
-● Wundlokalisation: schriftlich ausformuliert und auf einem
-Schaubild eingezeichnet; ggf. Fotodokumentation
-● Wunddauer: notwendig, um Belastungen, (Selbst-)Pflegezeiten und die Heilungszeit für den Pflegeempfänger einzuschätzen
-● Rezidivanzahl: Erfassung von Anzahl und rezidivfreier Zeit
-erlaubt Hinweise auf mögliche Problematiken bei der Prävention
-
-● Wundgröße: Erfassung von Tiefe und der größten Länge
-
-und Breite in cm, dabei stehen Länge und Breite im 90°Winkel zueinander; Erfassung von Taschen/Untertunnelungen/Fisteln anhand der Uhrmethode (kopfwärts 12 Uhr,
-fußwärts 6 Uhr)
-● Wundrand/-umgebung: z. B. unterminiert, mazeriert, nekrotisch, ödematös, gerötet
-● häufigste Gewebeart: z. B. Nekrose, Fibrinbelag, Granulationsgewebe, Knochen, Sehnen
-● Wundgeruch: ja/nein
-● Exsudation: Menge, Beschaﬀenheit, Farbe
-● Infektionszeichen: Rötung, Schwellung, Überwärmung,
-Funktionseinschränkung, Schmerzen
-● Wundschmerzen: Intensität anhand von Schmerzskalen
-(S. 537); Situationen, die mit Schmerzen einhergehen und
-die zur Verbesserung führen; Schmerzqualität: pochend,
-brennend, stechend usw.
-Wundgröße • Es gibt verschiedene Methoden, die Wundgröße zu erfassen:
-● größte Länge und Breite (anhand der Körperachsen):
-Durchmesserberechnung mit Lineal: Messen des vertikal
-(= Länge: Fuß – Kopfachse) und horizontal (= Breite) jeweils größten Abstands der Wundränder zueinander; die
-Achsen stehen dabei im rechten Winkel zueinander
-(▶ Abb. 28.25a). Diese Messmethode bildet allerdings nicht
-die Form einer Wunde ab.
-● Wundtiefe: mit steriler Pinzette/Knopfkanüle, sterilem
-Einmalspülkatheter oder sterilen skalierten Messsonden
-(▶ Abb. 28.25b); keine sterilen Watteträger verwenden,
-sie können Rückstände hinterlassen!
-● Taschen, Fisteln, Unterminierungen: Lagebestimmung an
-der Uhrzeit orientiert, z. B. „12 Uhr“ = kopfwärts, „6 Uhr“ =
-fußwärts
-● Tracing/Planimetrie: computergestützt und manuell; die
-Wundmaße werden durch Nachzeichnen auf einer sterilen
-gerasterten Wundfolie und anschließendes Kästchenzählen ermittelt (▶ Abb. 28.25c); ein Kästchen entspricht
-einer Größeneinheit von 1 cm²; bei Verwendung einer
-doppelseitigen sterilen Folie kann die obere, nicht kontaminierte Folie in die Wunddokumentation abgeheftet
-werden; Achtung: Datum und Lage der Wunden kennzeichnen.
-Zudem sollten Angaben zur Therapie wie Produktbenennung und Größe (werden u. a. für Nachbestellungen benötigt), verwendete Spüllösungen, Datum und Handzeichen
-der durchführenden Pflegefachkraft enthalten sein.
-
-Bildliche Dokumentation
-Die Dokumentation der Wunde mit Fotos visualisiert die
-schriftliche Dokumentation des aktuellen Wundzustands
-und verdeutlicht den Heilungsverlauf.
-
-Voraussetzungen der Fotodokumentation
-● Aufklärung
-
-und Information des Pflegeempfängers über
-die Fotoerstellung und deren Verbleib.
-● Einholen der Zustimmung des Pflegeempfängers oder gesetzlichen Betreuers (§ 201a StGB Verletzung des höchstpersönlichen Lebensbereichs durch Bildaufnahmen) und
-schriftliche Dokumentation in der Akte. Die Zustimmung
-kann jederzeit widerrufen werden.
-● In Ausnahmefällen (z. B. Beweiserhebung bei Verlegung)
-werden Fotos vor Einverständniseinholung erstellt. Das
-Einverständnis ist dann rückwirkend einzuholen. Wenn
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-689
-
-l
-28
-
-Wundmanagement
-Abb. 28.25 Wundgröße.
-
-a
-
-dieses verweigert wird, sind die Bildaufnahmen entsprechend zu verwerfen.
-● Das Foto muss dem jeweiligen Pflegeempfänger eindeutig
-zuzuordnen sein: Vorname, Nachname und Geburtsdatum
-oder Patientencode, Erstellungsdatum, Angabe der Körperregion und Seite
-● Wundgröße mit einem Einmalmaßband kenntlich machen
-● Foto immer erst nach der Wundreinigung erstellen
-(▶ Abb. 28.26); Ausnahme: spezielle Auﬀälligkeiten, z. B.
-durchnässtes oder zerrissenes Verbandmaterial sowie
-Rückstände, sind vorab festzuhalten
-● Schattenbildung vermeiden (mögliche Fehlinterpretation
-als Nekrose oder Taschenbildung)
-● neutralen, ruhigen Hintergrund verwenden, z. B. einfarbige Tücher (nicht weiß; Probleme mit dem Weißabgleich
-beim Blitzen) unterlegen
-● auf ausreichende Bildschärfe achten, sowohl von der Wunde wie der Wundumgebung; Nutzung von Makro- oder
-Automatikfokus
-● auf gleiche Lichtverhältnisse, gleichen Abstand und gleichen Winkel (parallel zum Aufnahmepunkt) sowie die
-gleiche Position des Pflegeempfängers achten (diese Angaben nach Ersterstellung in der Akte vermerken)
-● bei jedem Pflegeempfänger je nach Lichtverhältnissen individuell entscheiden, ob mit oder ohne Blitz zu fotografieren ist; diese Entscheidung dann beibehalten
-● die Wunde sollte mindestens 1/3 des Fotos einnehmen
-Technische Voraussetzungen • Digitalkamera mit Blitz- und
-Makrofunktion, Computer mit Archivierungssoftware mit
-Suchfunktion, Kameraanschlussmöglichkeit (z. B. über USB).
-Die Aufbewahrungspflicht für alle Unterlagen des Pflegeempfängers beträgt laut § 199 BGB (Bürgerliches Gesetzbuch) 30 Jahre. Es empfiehlt sich, dass ein einrichtungsinterner Standard zur Fotodokumentation erstellt wird.
-
-b
-
-! Merke Karte löschen
-
-Bitte bedenken Sie, dass in einigen Einrichtungen Digitalkameras
-von mehreren Bereichen/Stationen genutzt werden. Deshalb löschen Sie die von Ihnen erstellten Fotos immer gleich nach dem
-Überspielen von der Speicherkarte (siehe auch Datenschutzhinweise
-des eigenen Unternehmens).
-
-c
-
-a Vermessen der Wundgröße mit Papiereinmallineal.
-b Tiefenmessung mit skalierter Messsonde.
-c Vermessen mit Planimetrie.
-
-690
-
-Jeder Verbandwechsel ist in der Dokumentation festzuhalten und Veränderungen zum Vorzustand werden vermerkt.
-Eine vollständige Wundbeurteilung inklusive Wundvermessung erfolgt bei chronischen Wunden spätestens alle 4 Wochen (hauseigenen Standard beachten) und zusätzlich nach
-wundbezogenen Interventionen bzw. akuten Veränderungen, z. B. chirurgischem Débridement, OP und Infektion. Dieser zeitliche Rahmen gilt auch für Fotoaufnahmen. Im Abstand von spätestens 4 Wochen bei chronischen Wunden
-und 1-mal wöchentlich bei akuten Wunden sollte zudem
-eine Überprüfung der Wirksamkeit der gesamten Maßnahmen stattfinden und notwendige Änderungen im Maßnahmenplan und in der Dokumentation vermerkt werden.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Verbandwechsel
-Abb. 28.26 Fotodokumentation nach Reinigung.
-
-a
-
-b
-
-Auf diesen beiden Fotos sieht man, warum man das Foto erst nach der Reinigung machen sollte.
-a Foto vor der Wundreinigung (keine Beurteilung möglich).
-b Foto nach der Wundreinigung (Beurteilung gut möglich).
-
-WISSEN TO GO
-Wunddokumentation
-Das Dokumentieren der Ausgangssituation, der Wundtherapie, der Verbandwechsel und des Heilungsverlaufes ist
-wesentlicher Teil einer adäquaten Wundversorgung und
-Verlaufskontrolle.
-● Wundanamnese:
-– Wundursachen, wund- und therapiebedingte Einschränkungen, Hilfsmittel
-– Selbstmanagementkompetenzen von Pflegeempfängern/Angehörigen
-– Alter, Medikamente, Unverträglichkeiten/Allergien, soziales und häusliches Umfeld
-– Immunstatus, Tumoren, Begleit- und Stoﬀwechselerkrankungen, Operationen, geistiger und seelischer
-Zustand, Lebensgewohnheiten: Rauchen, Alkohol, Bewegung
-● Wundassessment:
-– medizinische Wunddiagnose
-– bisherige Maßnahmen zur Wundversorgung und
-Grunderkrankung – Wunddauer; Rezidivanzahl
-– Wundgröße und -tiefe
-– Lokalisation, Zustand, Aussehen, Wundexsudat, Wundgeruch und Infektionsanzeichen, Wundränder und
-wundumgebende Haut
-Neben der schriftlichen Dokumentation dienen auch Fotos
-der kontinuierlichen Wunddokumentation. Hierfür muss
-eine Einverständniserklärung vorliegen.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-691
-
-29
-
-Verbandtechniken
-
-29.2 Grundlagen
-Ein Verband bedeckt verletzte oder kranke Körperteile.
-
-29.1 Kompetent pflegen
-Verbände werden angelegt, um eine Wunde oder eine Wundumgebung vor Keimen, mechanischen oder thermischen Einflüssen zu schützen. Sie finden aber auch Verwendung, um
-Wundsekret aufzusaugen (Wundverband) oder um eine Blutung zu stillen (Druckverband). Mit einem Extensionsverband
-lassen sich Fehlstellungen korrigieren und ein Kompressionsverband wird angelegt, wenn Weichteile wie Muskeln oder
-Gefäße, z. B. bei einer Thromboseprophylaxe, komprimiert
-werden müssen. Müssen Gelenke oder Gliedmaßen ruhiggestellt werden, eignen sich Stützverbände oder ein Gipsverband. Als Pflegefachkraft ist es Ihre Aufgabe, die unterschiedlichen Verbandarten, -techniken und -materialien zu kennen
-und diese entsprechend dem jeweiligen Bedarf des Pflegeempfängers fachlich korrekt anzuwenden.
-In diesem Kapitel lernen Sie u. a.,
-● welche Verbandarten und -techniken es gibt und wann
-sich welche Verbandart bzw. -technik besonders eignet.
-● wie Sie einen Verband bei einem Pflegeempfänger korrekt
-vorbereiten, durchführen und nachbereiten.
-● die Vor- und Nachteile unterschiedlicher Verbandtechniken kennen.
-● verschiedene Fixierungstechniken für Wundauflagen kennen.
-● worauf man bei der Anlage eines Gipsverbandes besonders achten muss und wie Sie einen Pflegeempfänger mit
-Gipsverband bestmöglich unterstützen können.
-● wie eine Kompressionstherapie wirkt und welche Grundprinzipien es bei der Anlage eines Kompressionsverbands
-besonders zu berücksichtigen gilt.
-692
-
-29.2.1 Verbandarten und
-Indikationen
-Einteilung • Verbände werden nach folgenden Kriterien unterschieden und bezeichnet:
-● Lokalisation: z. B. Kopf-, Augen-, Handverband
-● verwendetes Material: z. B. Binden-, Gips-, Schlauchmull-,
-Tape- oder Zinkleimverband
-● Wirkungsweise: z. B. Wund-, Druck-, Kompressionsverband
-● Aussehen: z. B. Rucksack-, Dachziegel- oder Dreiecktuchverband
-● Eigennamen: z. B. Desault- oder Gilchrist-Verband
-Indikationen • Verbände werden u. a. angelegt
-● bei Distorsionen (Verstauchungen),
-● Luxationen (Verrenkungen),
-● Frakturen (Brüchen),
-● Wunden,
-● zur Blutstillung,
-● zur Thromboseprophylaxe und -therapie,
-● zur Fixierung von Wundauflagen,
-● zum Auftragen von topischen (lokalen) Arzneimitteln, z. B.
-bei Salben- oder Madentherapie.
-Abhängig vom Verband, schränkt er die Beweglichkeit des
-Pflegeempfängers mehr oder weniger ein (▶ Tab. 29.1).
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Kompetent pflegen ▶ S. 692
-Verbandarten und Indikationen ▶ S. 692
-
-Grundlagen
-
-Vor- und Nachbereitung
-
-▶ S. 693
-
-Allgemeines ▶ S. 694
-Handverband ▶ S. 695
-Bindenverbände
-
-Knieverband ▶ S. 695
-Fußverband
-
-▶ S. 696
-
-Stumpfbandagierung ▶ S. 696
-Allgemeines
-Gipsverbände
-
-▶ S. 697
-
-Gipsverband anlegen
-
-▶ S. 697
-
-Gipsverband spalten und entfernen
-Allgemeines
-
-▶ S. 698
-
-▶ S. 698
-
-Kopfverband ▶ S. 699
-Brustverband
-
-Schlauchmullverbände
-
-▶ S. 699
-
-Gilchrist-Verband
-
-▶ S. 699
-
-Handverband
-
-▶ S. 699
-
-Fingerverband ▶ S. 700
-Das Kapitel vermittelt
-Kompetenzen im
-KB I.1, I.3 und III.2
-
-Allgemeines
-
-Netzschlauchverbände
-Kompressionstherapie
-
-Allgemeines
-
-▶ S. 701
-
-Netzschlauchverbände anlegen
-
-▶ S. 701
-
-▶ S. 702
-
-Unterschiedliche Versorgungsoptionen ▶ S. 702
-Grundprinzipien bei der Anlage einer Kompressionsbandagierung ▶ S. 703
-Medizinische Kompressionsstrümpfe
-
-▶ S. 703
-
-Tab. 29.1 Grad der Immobilisation durch verschiedene Verbände.
-Verbandart
-
-Grad der Immobilisation
-
-Indikationen
-
-Material
-
-leichte Stützverbände
-
-schwach
-
-Salbenverbände, Venenerkrankungen
-
-Kurz-, Mittel- oder Langzugbinden,
-Schlauchmull
-
-zirkuläre Stützverbände
-
-leicht
-
-leichte Distorsionen
-
-elastische Klebebinden
-
-funktionelle Tapeverbände
-
-mittel
-
-Distorsionen, Muskelfaserrisse
-
-unelastische Klebebinden
-
-funktionelle Tapeverbände
-
-partiell
-
-prophylaktische Verbände im Sport
-
-unelastische Klebebinden
-
-Extensions-, Schienen-,
-Rucksackverbände
-
-stark
-
-Luxationen, Bänderrisse
-
-unelastische Klebebinden, Schlauchmull
-
-Gipsverbände
-
-total
-
-Frakturen
-
-Gipsbinden
-
-WISSEN TO GO
-
-● verwendetem Material: z. B. Binden-, Gips-, Schlauch-
-
-mull-, Tape- oder Zinkleimverband
-z. B. Wund-, Druck-, Kompressionsoder Stützverband
-● Aussehen: z. B. Rucksack-, Dachziegel- oder Dreiecktuchverband
-● Eigennamen: z. B. Desault- oder Gilchrist-Verband
-● Wirkungsweise:
-
-Verbandarten und Indikationen
-Verbände werden auf ärztliche Anordnung angelegt. Nach
-ihrer Funktion unterscheidet man:
-● Wundverbände: zum Schutz einer Wunde vor Keimen
-● Druckverbände: zur Blutstillung
-● Kompressionsverbände: zur Kompression von Weichteilen
-● Extensionsverbände: zur Korrektur von Fehlstellungen
-● Stütz- und Gipsverbände: zum Ruhigstellen von Gelenken und Gliedmaßen
-Darüber hinaus werden Verbände unterschieden und bezeichnet nach:
-● Lokalisation: z. B. Kopf-, Augen-, Handverband
-
-29.2.2 Vor- und Nachbereitung
-Vorbereitung • Ist die ärztliche Anordnung zu Art, Ort und
-Funktion des Verbands erfolgt, müssen einige allgemeine
-Vorbereitungen getroﬀen werden, die – unabhängig von der
-Verbandtechnik – vor jeder Anlage eines Verbands durchzuführen sind:
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-693
-
-l
-29
-
-Verbandtechniken
-● hygienische
-
-Händedesinfektion durchführen, benötigte
-Materialien auf einer wischdesinfizierten Arbeitsfläche
-vorbereiten und prüfen, ob alles vollständig ist
-● Pflegeempfänger über die geplante Maßnahme informieren und nach seinem Befinden fragen
-● Besucher aus dem Zimmer bitten und Fenster und Türen
-schließen
-● Intimsphäre des Pflegeempfängers beachten, bei Bedarf
-Sichtschutz aufstellen
-● Bett auf eine rückenschonende Arbeitshöhe bringen und
-evtl. störende Kleidungsstücke entfernen
-● Pflegeempfänger dabei unterstützen, die für den jeweiligen Verbandwechsel bestmögliche Position einzunehmen
-● ggf. störenden Schmuck (z. B. Ringe, Ohrringe, Piercings,
-Uhr) entfernen und sicher (siehe hauseigenen Standard –
-Umgang mit Wertsachen) verwahren
-● besteht eine Wunde, diese unter aseptischen Bedingungen
-reinigen und eine geeignete Wundversorgung durchführen
-
-! Merke Körperstellen
-
-Vor dem Anlegen eines Verbands muss die Haut trocken und sauber
-sein. Hautdefekte müssen gut abgedeckt und druckgefährdete Körperstellen abgepolstert sein. Grundsätzlich sollte ein Verband straﬀ
-angelegt werden – er darf jedoch nicht einschnüren.
-Nachbereitung
-● Pflegeempfänger nach Anlage des Verbands erneut nach
-seinem Befinden fragen (Schmerzen?) und sicherstellen,
-dass der Verband gut sitzt und nicht einschnürt (ist die
-Wundauflage gut fixiert?)
-● Pflegeempfänger über mögliche Komplikationen in Zusammenhang mit dem Verband informieren (z. B. Sensibilitäts- oder Durchblutungsstörungen bei Gipsverbänden)
-und darauf hinweisen, sich bei Veränderungen zu melden
-● Prüfen: Ist der Pflegeempfänger mobil oder benötigt er
-Unterstützung beim Ankleiden, Positionieren, Essen, Trinken oder Gehen (ggf. Hilfsmittel organisieren)?
-● Rufanlage in Reichweite legen
-● Nachttisch so platzieren, dass der Pflegeempfänger diesen
-gut erreichen kann
-● verwendete Materialien sachgerecht entsorgen und Arbeitsfläche wischdesinfizieren
-● Materialien wieder auﬀüllen
-● hygienische Händedesinfektion durchführen
-● Dokumentation der Maßnahme
-
-WISSEN TO GO
-Verbandtechniken – Voraussetzungen, Vorbereitung
-und Nachbereitung
-Voraussetzung für die Anlage eines Verbands ist eine saubere und trockene Haut. Alle Hautdefekte müssen abgedeckt und druckgefährdete Körperstellen abgepolstert
-sein. Der Verband soll straﬀ angelegt werden, darf aber
-nicht einschnüren.
-Zur allgemeinen Vorbereitung gehören:
-● Hände desinfizieren.
-● Material auf einer wischdesinfizierten Oberfläche richten.
-● Pflegeempfänger über Maßnahme informieren.
-● Besucher hinausbitten, Fenster und Türen schließen, ggf.
-Sichtschutz aufstellen.
-● Bett auf rückenschonende Arbeitshöhe bringen.
-● Eventuell störende Kleidungsstücke und Schmuck entfernen.
-
-694
-
-● Pflegeempfänger bei der Einnahme einer geeigneten Po-
-
-sition unterstützen
-● besteht eine Wunde, diese unter aseptischen Bedingun-
-
-gen reinigen und eine geeignete Wundversorgung
-durchführen
-Zur Nachbereitung gehören generell:
-● Pflegeempfänger bei der Einnahme einer angenehmen
-Position unterstützen.
-● Über mögliche Komplikationen aufklären.
-● Kontrollieren, ob der Pflegeempfänger gut versorgt ist.
-● Gebrauchte Materialien entsorgen, Arbeitsfläche wischdesinfizieren.
-● Hände desinfizieren, Maßnahme dokumentieren.
-
-29.3 Bindenverbände
-Definition Bindenverband
-Ein Bindenverband ist ein mit elastischen Textilbinden gewickelter
-Verband.
-
-29.3.1 Allgemeines
-Wenn ein Verband mit elastischen Binden angelegt wird,
-müssen einige Grundregeln beachtet werden:
-● Die Bindenbreite orientiert sich am Durchmesser der zu
-verbindenden Extremität.
-● Ein Verband muss immer herzwärts gewickelt werden!
-Einzige Ausnahme sind absteigende Kornährenverbände
-an Händen und Füßen (Achtertouren).
-● Beim Anlegen des Verbands immer in den Bindenwinkel
-hineinschauen.
-● Ein Verband sollte immer in der physiologischen Grundstellung angelegt werden, die für den verletzten Körperteil
-später nach der Abheilung benötigt wird, d. h. entweder in
-Extension (Streckung) oder in Flexion (Beugung).
-● Der Bindenabschluss sollte nicht an einem sich verjüngenden Körperteil liegen, da sich der Verband sonst lockern
-kann.
-● Der Bindenabschluss sollte auch nicht über einer Wunde
-liegen.
-Grundformen • Am Anfang wickelt man einen Kreisgang, um
-den Anfang der Binde zu befestigen. An konisch zulaufenden
-Gliedmaßen wickelt man im Schraubengang (Spiralgang)
-weiter. Muss der Verband Gelenke überschreiten, wird meist
-ein Kornährenverband angelegt. Hier wird in Achtertouren
-gewickelt.
-Bindenarten • Elastische Binden werden je nach Elastizität
-unterschieden in
-● Kurzzugbinden: Sie sind um ca. 50 % dehnbar, d. h., sie bewirken einen hohen Druck bei Muskelanspannung und einen niedrigen Druck in Ruhe. Kurzzugbinden sind daher
-indiziert bei starken Kompressionsverbänden, z. B. bei tiefer Venenthrombose (S. 938).
-● Mittelzugbinden: Sie sind um ca. 90 % dehnbar. Damit sind
-sie indiziert bei mittelstarken Kompressionsverbänden,
-z. B. bei einer komprimierenden Wundversorgung.
-● Langzugbinden: Sie sind um ca. 180 % dehnbar. Damit bewirken sie einen geringen Druck bei Muskelanspannung
-und einen hohen Druck in Ruhe. Sie werden bei leichten
-Kompressionsverbänden (z. B. zur Stützung und Entlastung an Bändern und Gelenken) eingesetzt. Wegen der hohen Ruhekompression dürfen Verbände mit Langzugbinden nicht über Nacht anliegen.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Bindenverbände
-
-! Merke Richtung
-
-Beim Anlegen eines Verbands an den Extremitäten (z. B. Wickeln der
-Beine) müssen das rechte und das linke Bein unterschiedlich gewickelt werden: An der einen Extremität nach rechts, an der anderen
-nach links wickeln. Auf jeden Fall immer von innen nach außen, der
-physiologischen Wölbung des Fußes entsprechend. Ausnahmen sind
-ärztliche Anordnungen, wenn der äußere Fußrand z. B. bei Distorsionen angehoben werden soll. Hier erfolgt die Wickelung von außen
-nach innen.
-
-29.3.2 Handverband
-Eine Hand kann auf- oder absteigend verbunden werden.
-Ziel ist meist die Fixierung einer Wundauflage oder eine
-Kompression, z. B. bei einer Distorsion des Handgelenks.
-Durch die Auswahl auf- bzw. absteigend wird die Lokalisation des Druckpunktes der Kornähre bestimmt.
-Material • Um eine Hand fachgerecht zu verbinden, wird folgendes Material gerichtet:
-● elastische Binden
-● ggf. Material zur Wundversorgung inkl. steriler Wundauflage
-● Verbandschere, Pflaster
-
-! Merke Sicherheit
-
-Schmuck von Pflegeempfängern sollte möglichst zu zweit entgegengenommen und nach hauseigenem Standard sicher verwahrt werden. Wenn er im Stationszimmer eingeschlossen wird, sollte dies dokumentiert werden (auch was eingeschlossen wurde) und eine Kollegin bzw. ein Kollege sollte mitunterschreiben.
-Absteigender Handverband • Dieser Kornährenverband wird
-am Handgelenk begonnen und mit einer fixierenden (kompletten) Kreistour beendet (▶ Abb. 29.1a). Dann wird in Ach-
-
-tertouren in Richtung der Finger und über den Handrücken
-zum Handgelenk zurückgewickelt. Dabei müssen sich die
-Bindengänge überlappen und absteigen. Schließlich wird
-das Bindenende an den Fingergrundgliedern mit einem
-Pflasterstreifen fixiert.
-Aufsteigender Handverband • Hier wird nicht am Handgelenk, sondern an den Fingergrundgliedern mit der fixierenden Kreistour begonnen (▶ Abb. 29.1b). Anschließend
-wird die Binde über den Handrücken zum Handgelenk, dann
-um das Handgelenk herum und über den Handrücken zurück zu den Fingern geführt. Diese Achtertouren werden so
-oft wiederholt, bis die Hand verbunden ist. Dabei müssen
-sich die Bindengänge überlappen und aufsteigen. So ergibt
-sich das Bild einer Kornähre. Abschließend wird das Bindenende am Handgelenk mit einem Pflasterstreifen fixiert.
-
-29.3.3 Knieverband
-Ein Verband am Knie wird z. B. notwendig, wenn eine Wunde vorliegt und die Wundauflage fixiert werden muss. Auch
-nach einer Kniegelenkpunktion wird zur Kompression ein
-Knieverband mit elastischen Binden angelegt. Damit können
-Nachblutungen vermieden werden.
-Angewendet wird meist der Schildkrötenverband (Testudo), da sich dabei Falten im Bereich der Gelenke vermeiden
-lassen. Er trägt seinen Namen, weil die Bahnen in Achtertouren an die Hornschilde des Panzers einer Schildkröte (lat.
-Testudo) erinnern. Diese Wickeltechnik wird auch häufig
-am Ellenbogen genutzt.
-Material • Für einen Knieverband werden benötigt:
-● 1–2 elastische Binden
-● ggf. Material zur Wundversorgung, inkl. steriler Wundauflage
-● Verbandschere, Pflaster
-Durchführung • Der Schildkrötenverband wird mit einer fixierenden Kreistour unterhalb des Kniegelenks begonnen
-(▶ Abb. 29.2). Dann wird von der Gelenkmitte ausgehend in
-abwechselnd auf- und absteigenden Achtertouren um das
-Gelenk gewickelt (von innen nach außen). Die Bahnen sollen
-
-Abb. 29.1 Kornährenverband.
-
-Abb. 29.2 Schildkrötenverband am Knie.
-9
-
-1 2
-
-10
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-7
-
-8
-
-5
-
-6
-
-3
-9
-
-4
-1
-
-10
-
-7
-5
-3
-
-2
-1
-2
-4
-
-a
-
-b
-
-6
-
-a Absteigender Kornährenverband: Begonnen wird am Handgelenk. Die Achtertouren werden absteigend zu den Fingergrundgelenken geführt.
-b Aufsteigender Kornährenverband: Begonnen wird an den Fingergrundgliedern. Die Achtertouren werden aufsteigend bis
-zum Handgelenk geführt.
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-695
-
-l
-29
-
-Verbandtechniken
-sich dabei überlappen. Schließlich wird das Bindenende direkt oberhalb der Kniescheibe mit einem Pflasterstreifen fixiert.
-Der Verband kann auch von außen nach innen gewickelt
-werden. Dann wird in Achtertouren zur Gelenkmitte hin gewickelt.
-
-29.3.4 Fußverband
-Am Fuß werden Verbände angelegt, um Wundauflagen zu
-fixieren (▶ Abb. 29.3) oder um das Gelenk, z. B. nach einer
-Distorsion, zu komprimieren. Es wird grundsätzlich von innen nach außen gewickelt. Wird der Fußverband allerdings
-genutzt, um bei einem Spitzfuß den äußeren Fußrand anzuheben, wird von außen nach innen gewickelt.
-Material • Für einen Fußverband wird folgendes Material gerichtet:
-● Einmalunterlage
-● elastische Binden
-● ggf. Material zur Wundversorgung inkl. steriler Wundauflage
-● Verbandschere, Pflaster
-● evtl. Abwurfbeutel (klinischer Müll)
-Durchführung
-● Der Kornährenverband wird mit einer Kreistour an den
-Zehengrundgliedern begonnen.
-● Dann wird die erste Tour nach oben geführt und eine
-Kreistour um den Knöchel gewickelt. Dabei sollte darauf
-geachtet werden, dass sich keine Falten bilden.
-● Die nächste Tour führt wieder hinunter und schließt die
-Ferse mit ein.
-● Anschließend wird wieder eine Bindentour nach oben um
-den Knöchel herum und dann wieder nach unten gewickelt und die noch freistehenden Teile der Ferse miteingebunden.
-● Der Verband wird so mit sich überlappenden, auf- und absteigenden Achtertouren fortgeführt. Schließlich wird das
-Bindenende oberhalb des Knöchels mit einem Pflasterstreifen fixiert.
-
-Abb. 29.3 Fußverband.
-
-Fixierung einer Wundauflage. Foto: K. Oborny, Thieme
-696
-
-29.3.5 Stumpfbandagierung
-Nach der Amputation eines Körperteils (untere bzw. obere
-Extremitäten) wird der Stumpf in den ersten postoperativen
-Tagen bandagiert, um Ödeme und Hämatome zu vermeiden.
-Das kann auch Phantomschmerzen reduzieren und Kontrakturen vermeiden. Zudem formt die Bandagierung den
-Stumpf, was für die spätere Anpassung einer Prothese wichtig ist. Im Folgenden wird die Stumpfbandagierung an einem
-Unterschenkel gezeigt. Sie ist indiziert nach einer Unterschenkelamputation, z. B. bei nicht rekonstruktionsfähigen,
-arteriellen Durchblutungsstörungen.
-Material • Für die Bandagierung des Unterschenkelstumpfes
-werden vorbereitet:
-● elastische Binden (die Breite der Binde sollte dem Durchmesser des Stumpfes entsprechen)
-● Handschuhe, Pflaster
-● Schlauchmull
-● Hilfsmittel zur Positionierung (z. B. Kissen, Sandsäckchen)
-Durchführung • Der Amputationsstumpf wird durch den Pflegeempfänger selbst oder durch eine 2. Pflegeperson angehoben. Mit angelegten Handschuhen wird der Wundverband
-kontrolliert (Ist er z. B. durchnässt?). Anschließend wird der
-Wundverband entfernt, die Wunde kontrolliert und ein Verbandwechsel unter aseptischen Bedingungen (S. 685) durchgeführt. Ist die Stumpfnaht bereits abgeheilt, sollte sie sorgfältig auf mögliche Rötungen oder Schwellungen kontrolliert
-und eine angemessene Hautpflege durchgeführt werden. Anschließend werden die Handschuhe ausgezogen und eine hygienische Händedesinfektion durchgeführt.
-● Die Bandagierung wird mit einer ersten Tour um den
-Oberschenkel begonnen.
-● Dann wird in Achtertouren über die Stumpfspitze gewickelt, bis die Stumpfwunde ausreichend bedeckt ist.
-● Bei der Bandagierung sollte der Stumpf konisch gewickelt
-werden, d. h., dass der Bindenzug von der Stumpfspitze
-zum Körper hin abnimmt. Bei den diagonalen Touren sollte mit der Binde Zug ausgeübt werden; so wird der Stumpf
-„in Form“ gewickelt.
-● Die Schlusstour wird oberhalb des Kniegelenks mit einem
-Pflasterstreifen fixiert (▶ Abb. 29.4). Über dem Bindenverband wird abschließend noch ein Verband mit Schlauchmull angelegt. Nach kompletter Abheilung, wenn das Wickeln nicht mehr nötig ist, wird für die Anlage der Stumpfprothese eine Strumpfbandage angefertigt.
-
-Abb. 29.4 Stumpfbandagierung.
-
-Foto: K. Oborny, Thieme
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Gipsverbände
-Abb. 29.5 Bunter Castverband.
-
-WISSEN TO GO
-Verbände mit elastischen Binden
-Je nach Elastizität unterscheidet man:
-● Kurzzugbinden: hoher Druck bei Muskelanspannung,
-niedriger Druck in Ruhe → starke Kompressionsverbände
-● Mittelzugbinden: mittlerer Druck → mittelstarke Kompressionsverbände
-● Langzugbinden: geringer Druck bei Muskelanspannung,
-hoher Druck in Ruhe → leichte Kompressionsverbände
-(nicht über Nacht anlegen)
-Grundsätzlich gelten folgende Regeln
-● Bindenbreite je nach Durchmesser der Extremität auswählen.
-● Grundsätzlich von innen nach außen wickeln (Ausnahme: Korrektur Fußstellung).
-● Immer herzwärts wickeln (Ausnahme: absteigender
-Kornährenverband).
-● Verband immer in physiologischer Stellung anlegen.
-● Bindenabschluss nicht über einer Wunde anlegen.
-Gewickelt wird am Anfang im Kreisgang, an konisch zulaufenden Gliedmaßen im Schraubengang (Spiralgang), an
-Gelenken in Achtertouren (Kornährenverband).
-
-29.4 Gipsverbände
-Definition Gipsverband
-Ein Gipsverband ist ein fester Stützverband. Er dient primär dazu,
-Körperteile und Gelenke nach einer Fraktur, einer Operation oder bei
-Entzündungen ruhigzustellen.
-
-29.4.1 Allgemeines
-Ein Gipsverband wird i. d. R. aus dem Gipsmineral Kalziumsulfat und Wasser hergestellt. Das Material gibt es als Gipsbinde (gerollt) oder als Gipslonguette (gelegt) in unterschiedlichen Größen. In Wasser aufgeweicht ist der Gips
-sehr flexibel und kann jedem Körperteil individuell angepasst werden. Dann härtet er rasch aus. Nach ca. 30 min ist
-der Gips abgebunden und stabil, seine endgültige Härte erreicht er aber erst nach 1–3 Tagen.
-Indikationen • Gipsverbände werden v. a. zur Ruhigstellung
-von Gliedmaßen oder Gelenken angelegt. Sie sind z. B. indiziert bei Frakturen, entzündlichen Knochen- und Gelenkprozessen oder bei notwendigen Korrekturen von Fehlstellungen.
-Gipsarten • Gipsverbände werden grundsätzlich als zirkuläre
-Verbände (geschlossene Gipsverbände), in Form von Longuetten (z. B. Gipsschienen) oder auch in Kombination der
-beiden Techniken angelegt. Je nach Indikation können zirkulär angelegte Gipsverbände gespalten und danach als Gipsschiene bzw. Gipskorsett verwendet werden.
-Anlegen, Spalten und Entfernen eines Gipsverbands sind
-ärztliches Aufgabengebiet. Der Arzt kann diese Aufgabe aber
-an ausgebildete Pflegefachkräfte delegieren.
-Buntes für Kinder • Vor allem für Kinder eignen sich Castverbände. Sie haben die Eigenschaften von Gips, sind aber aus
-Kunststoﬀ gefertigt. Leichter, bunter, aber umweltunverträglicher (▶ Abb. 29.5).
-
-(Symbolbild). © Halfpoint/stock.adobe.com
-
-29.4.2 Gipsverband anlegen
-Exemplarisch wird das Anlegen eines Unterschenkelliegegipses beschrieben.
-Vorbereitung • Für einen Unterschenkelliegegips werden
-vorbereitet:
-● Schlauchmull als Hautschutz
-● Synthetikwatte zur Polsterung gefährdeter Körperstellen
-● Krepppapier (Watteschutz)
-● Gipsbinden
-● Gipslonguette für die Sohlenverstärkung
-● kräftige Schere (z. B. spezielle Gipsschere)
-● Böhler-Bank oder Polsterkissen zur Positionierung des Fußes
-● Wasserbecken mit ca. 18–25 °C kaltem Wasser
-● Einmalhandschuhe, Einmalschürzen
-● Einmalwaschlappen und Einmalhandtücher
-● Bettschutz (Gummi)
-Durchführung • Der Pflegeempfänger wird, wenn möglich,
-flach auf dem Rücken gelegt, die Böhler-Bank im Kniegelenk
-positioniert und ein Bettschutz unter den Unterschenkel gelegt. Je nach Indikation muss eine 2. Person den Fuß in
-einem bestimmten Winkel halten. Die Haut wird sorgfältig
-auf lokale Infektionen und Druckstellen kontrolliert, nach
-Arztanordnung gereinigt und mit einer Hautschutzlotion
-eingecremt.
-Abpolstern • Anschließend wird der Schlauchmull über den
-gesamten Unterschenkel gezogen und der Unterschenkel
-zirkulär mit der Synthetikwatte abgepolstert, insbesondere
-druckexponierte Stellen wie Knie, Tibia- und Fibulaköpfchen, Außen- und Innenknöchel sowie die Achillessehne.
-Danach folgt eine zirkuläre Wickeltour mit Krepppapier.
-Gipsbinden anlegen • Dann kann mit der 1. Gipsbinde begonnen werden. Man taucht die Gipsbinde vollständig in das
-Wasserbecken und wartet, bis keine Luftblasen mehr aufsteigen (etwa 2–3 sec). Um überschüssiges Wasser zu entfernen, wird die Binde gut ausgedrückt. Dann wickelt man von
-distal (körperfern) nach proximal (körpernah) an. Da die
-Verarbeitungszeit nur ca. 5 min beträgt, sollte während des
-Anlegens zügig gearbeitet werden. Die Binde wird ohne Zug
-abgerollt, evtl. auftretende Falten werden glatt gestrichen.
-Nach jeder angewickelten Gipsbinde wird der Gips modelliert, dabei wird der Gips nur mit der flachen Hand berührt.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-697
-
-l
-29
-
-Verbandtechniken
-Außerdem wird überprüft, ob die Fußstellung noch korrekt
-ist. Danach können der proximale und der distale Schlauchmullunterzug umgeschlagen werden.
-Gipslonguette anlegen • Eine Gipslonguette wird ins Wasser
-getaucht, ausgedrückt und zur Verstärkung der Gipssohlenplatte verwendet. Die Longuette wird mit der flachen Hand
-modelliert und mit einer Gipsbinde angewickelt. Dann werden die Zehen freigelegt.
-Gips abrunden und aushärten lassen • Der noch weiche Gipsverband wird mit der flachen, feuchten Hand glatt gestrichen und der proximale und der distale Gipsabschluss werden ebenfalls mit feuchten Händen abgerundet. Gipsreste
-werden entfernt und das Anlegedatum mit einem wischfesten Stift auf dem Gipsverband vermerkt. Der Gips benötigt
-abhängig vom verwendeten Material ca. 5–10 min, bis der
-Gips abgebunden hat und fest wird. In dieser Zeit muss die
-jeweilige Extremität ruhig gehalten werden. Gipsverbände,
-die nach einem frischen Trauma angelegt werden, müssen
-nach dem Aushärten gespalten werden (S. 698), damit ausreichend Platz für das evtl. noch anschwellende Gewebe
-vorhanden ist.
-Nachbereitung • Um Komplikationen zu vermeiden (z. B.
-Druckschäden, Durchblutungsstörungen), werden Durchblutung, Motorik und Sensibilität überprüft (DMS-Kontrolle) und der Pflegeempfänger altersentsprechend über mögliche Komplikationen in Zusammenhang mit dem Gipsverband informiert (bei Veränderungen sofort melden):
-● Durchblutung: Gibt es Anzeichen für Durchblutungsstörungen, z. B. blasse Hautfarbe? Fühlt sich die Haut kalt an?
-● Motorik: Sind die Finger oder Zehen beweglich? Sind
-Schwellungen erkennbar?
-● Sensibilität: Hat der Pflegeempfänger Schmerzen? Treten
-Pochen, Kribbeln oder Taubheitsgefühle auf?
-
-WISSEN TO GO
-Gipsverband anlegen
-Die wichtigsten Arbeitsregeln beim Gipsen sind:
-● Gipsbinde oder -longuette vor dem Anlegen kurz im
-Wasserbad tränken, bis keine Luftblasen mehr aufsteigen, dann ausdrücken.
-● Zügig arbeiten (Verarbeitungszeit ca. 5 min).
-● Gips benötigt abhängig vom verwendeten Material ca.
-5–10 min, bis der Gips abgebunden hat und fest wird.
-● Pflegeempfänger altersentsprechend über mögliche
-Komplikationen informieren (z. B. Druckschäden, Durchblutungsstörungen) und DMS-Kontrolle durchführen.
-● Besteht die Gefahr der Schwellung (z. B. nach Trauma),
-wird der Gips gespalten.
-
-29.4.3 Gipsverband spalten und
-entfernen
-Ein Gipsverband, der nach einer frischen Fraktur angelegt
-wurde, muss nach dem Aushärten gespalten werden. Hierfür wird bei dem noch frischen Gips ein Streifen herausgeschnitten, damit bei einer Weichteilschwellung keine
-Durchblutungsstörungen oder Nervenschädigungen auftreten können. Gipsverbände werden entfernt, wenn die Fraktur abgeheilt ist oder der Verband erneuert werden muss.
-698
-
-Pflegeempfänger, die 4–6 Wochen einen Gips getragen
-haben, freuen sich meist, wenn dieser entfernt wird, haben
-aber auch manchmal Angst davor, weil sie nicht wissen, inwieweit sie die entsprechende Extremität nach der Entfernung bewegen können. Es ist wichtig, auf diese Ängste einzugehen und behutsam bei der Hautreinigung bzw. -pflege
-und beim Bewegen der Extremität vorzugehen.
-Im Folgenden wird das Spalten eines Unterschenkelgipses
-beschrieben.
-Material • Folgendes Material wird benötigt:
-● Verbandschere, Gipsschere
-● Rabenschnabel, Gipsspreizer
-● oszillierende Gipssäge
-● Bettschutz
-Durchführung
-● Der Pflegeempfänger sollte, wenn möglich, auf dem Rücken liegen.
-● Die Gipssäge sollte bereits vor dem Spalten einmal betätigt
-werden, damit der Pflegeempfänger vor dem Geräusch
-nicht erschrickt. Da die Gipssäge über kleine, schnelle
-Schwingungen arbeitet, kann die Haut damit nicht verletzt
-werden. Klären Sie den Pflegeempfänger altersentsprechend darüber auf und zeigen Sie ihm, z. B. an ihrer eigenen Hand, dass die Gipssäge ungefährlich ist.
-● Der Pflegeempfänger sollte auf die mögliche Wärmeentwicklung hingewiesen werden.
-● Der Gips wird mit der Gipsfräse schrittweise auf beiden
-Seiten – oder zur Spaltung über der Tibiakante – aufgeschnitten: Mit dem Gipsspreizer wird der Gips aufgespreizt und die restlichen Schichten (Schlauchmull, Synthetikwatte, Krepppapier usw.) mit der Verbandschere
-aufgeschnitten. Der Gipsverband wird vorsichtig abgenommen und die Gliedmaße nach Arztanordnung positioniert. Die Haut wird gereinigt und evtl. eingecremt.
-● Pflegeempfänger über mögliche Nachkontrolle (Röntgen)
-informieren und Hinweise geben, wie er sich in den kommenden Tagen verhalten soll.
-
-29.5 Schlauchmullverbände
-29.5.1 Allgemeines
-Definition Schlauchmull
-Schlauchmull ist ein nahtloses, nicht fransendes Mullgewebe in
-Schlauchform. Das Material wird in verschiedenen Durchmessern
-angeboten und ist sehr dehnbar. Schlauchmullverbände sind daher
-sehr anschmiegsam und eignen sich besonders für die Fixierung von
-Wundauflagen.
-Schlauchmullverbände werden in unterschiedlichen Größen
-angeboten. Je nachdem, welche Körperpartie verbunden
-werden soll, wird die entsprechende Größe ausgesucht
-(▶ Abb. 29.6).
-Vorteile eines Schlauchmullverbands gegenüber einem
-Mullverband: Verbände lassen sich mit Schlauchmull i. d. R.
-schneller und unkomplizierter als mit Mullbinden anlegen;
-Verbände rutschen nicht und liegen fest an, ohne abzuschnüren, und über konisch geformten Körperpartien und
-Gelenkbeugen bleibt der Verband angenehm glatt. Nachfolgend werden Grundprinzipien der Vor- und Nachbereitung
-bei der Anlage von Schlauchmullverbänden aufgezeigt.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Schlauchmullverbände
-Abb. 29.6 Schlauchmullverband.
-
-● Die obere Lage wird in Stirnmitte eingeschnitten. In die
-
-untere Lage werden auf Höhe der Ohren kleine Löcher geschnitten.
-● Durch diese werden die entstandenen 2 Zipfel der oberen
-Lage durchgezogen. Die Zipfel werden seitlich am Hals
-verknotet. Überstehende Schlauchränder der ersten Lage
-können nach oben umgeschlagen werden.
-
-29.5.3 Brustverband
-Material • Folgendes Material wird benötigt:
-● ggf. Material zur Wundversorgung inkl. steriler Wundauflage
-● Schlauchmull
-● Verbandschere
-Foto: K. Oborny, Thieme
-
-Anlegen eines Schlauchmullverbands • Schlauchmullverbände
-können mit oder ohne Applikator angelegt werden.
-Wird ein Applikator verwendet, wird der Schlauchmull
-zuerst auf den Applikator gerollt und dann über den zu verbindenden Körperteil gestülpt. Grundsätzlich läuft die Anlage in 4 Schritten ab:
-1. Spannen: Zuerst wird der Schlauchmull in der entsprechenden Länge locker zusammengeraﬀt. Dann wird mit
-beiden Händen in den Verband gegriﬀen und dieser mit
-gespreizten Händen über den zu verbindenden Körperteil
-geführt. Mit den Fingerspitzen wird dabei gebremst, dadurch spannt sich das Material.
-2. Drehen: Gleichzeitig mit dem Spannen wird der Verband
-in der Längsachse gedreht. So wird eine bestimmte Festigkeit erreicht. Die Drehung erfolgt dabei immer in die gleiche Richtung. Es sollte auf die richtige Kraftanwendung
-geachtet werden (Stauungsgefahr!).
-3. Verankern: Am Ende des Verbands wird der Schlauchmull
-unter leichter Spannung um 180° gedreht und der Verband an beiden Enden verankert.
-4. Befestigen: Der Verband wird mit Pflaster fixiert. Das
-Endstück des Verbands wird in Maschenrichtung eingeschnitten, beide Zipfel werden herausgezogen und die
-beiden Enden verknotet.
-
-ACHTUNG
-Das Pflaster darf nicht zirkulär angebracht werden, da sonst Stauungsgefahr besteht.
-
-29.5.2 Kopfverband
-Material • Für einen Kopfverband mit Schlauchmull werden
-benötigt:
-● ggf. Material zur Wundversorgung inkl. steriler Wundauflage
-● Schlauchmull
-● Verbandschere
-Durchführung
-● Zunächst wird der Schlauchmull abgemessen (doppelte
-Länge des Kopfumfanges) und zu ⅔ aufgerollt. Der kürzere
-Teil (⅓) des Schlauchmulls wird gedehnt und über den
-Kopf und die Wundauflage gezogen. Der gerollte, längere
-Teil wird ausgezogen, gedehnt, geraﬀt und 2-mal um die
-eigene Achse gedreht. Danach wird er an der Stirn beginnend über die erste Lage geführt.
-
-Der Pflegeempfänger sollte bei der Anlage, wenn möglich,
-sitzen. Eine Wunde wird gereinigt und die sterile Wundauflage unter aseptischen Bedingungen aufgebracht.
-Durchführung
-● Der Schlauchmull wird zunächst abgemessen (3-fache
-Schulterbreite) und der Mull in der Bruchkante (Druckkanten durch Verpackung) zu ⅓ aufgeschnitten.
-● Dann wird der geschlossene Teil des Schlauchmulls über
-den Arm und die Schulter des Pflegeempfängers gestreift,
-die Zipfel werden in der entgegengesetzten Taille verknotet.
-● Der Schlauch wird am Oberarm geraﬀt und dort verankert.
-● Der Wulst wird über der Schulter komplett durchtrennt
-und die 2. Schlauchmulllage über der 1. verknotet.
-
-29.5.4 Gilchrist-Verband
-Material • Der Gilchrist-Verband ist ein spezieller Stützverband zur Ruhigstellung von Schulter und Oberarm. Er ist daher z. B. nach einer Reposition einer Schulterluxation indiziert oder bei einer Oberarmkopﬀraktur.
-Durchführung • Der Gilchrist-Verband ist als Fertigverband
-mit Klettverschlüssen erhältlich (▶ Abb. 29.7).
-
-29.5.5 Handverband
-Material • Für einen Handverband mit Schlauchmull werden
-benötigt:
-● Material zur Wundversorgung inkl. steriler Wundauflage
-● Schlauchmull
-● ggf. Applikator
-● Pflasterstreifen, Verbandschere
-Durchführung
-● Zunächst wird der Schlauchmull abgemessen (3-fache
-Handlänge) und zugeschnitten, bei etwa der halben Handlänge wird ein Loch für den Daumen eingeschnitten.
-● Schlauchmull raﬀen und über die Hand und die Wundauflage stülpen, der Daumen kann durch das Loch gesteckt
-werden.
-● Schlauchanfang und Wundauflage werden festgehalten
-und der verbleibende Schlauch wird am Ende der Fingerspitzen um die eigene Achse gedreht. Anschließend wird
-die 2. Lage des Schlauchmulls wieder zum Handgelenk geführt.
-● Nun wird auch hier ein Loch für den Daumen eingeschnitten und der Daumen durch das Loch geführt.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-699
-
-l
-29
-
-Verbandtechniken
-Abb. 29.7 Gilchrist-Fertigverband mit Klettverschlüssen.
-
-1 Das Schlauchstück wird über den verletzten 2 Der verletzte Arm wird um 90° angewinkelt,
-das Handgelenk wird mit dem Ende der
-Arm gestreift, das Schulterpolster bedeckt
-die verletzte Schulter. Die Bandage wird vom
-Bandage mithilfe des Klettverschlusses vor
-Schulterpolster über den Nacken zur gesundem Oberkörper befestigt.
-den Schulter geführt. Der Pflegeempfänger
-steckt seinen gesunden Arm durch die
-geteilte Bandage.
-
-4 Der 2. Teil der Bandage wird um den Rumpf
-des Pflegeempfängers gelegt und zwischen
-Thorax und verletztem Arm durchgeführt.
-
-3 Mit einem zusätzlichen Klettband kann die
-Bandage am Handgelenk fixiert werden.
-
-5 Unter leichtem Zug wird die Bandage um
-6 Mit dem Gilchrist-Fertigverband können
-den verletzten Arm gelegt und mit einem
-Oberarm und Schultergelenk ruhiggestellt
-Klettverschluss im Bereich des Rückens fixiert.
-werden.
-
-Foto: W. Krüper, Thieme
-
-● Die
-
-äußere Lage bis zum Handgelenk weiterführen und
-am Ende durchschneiden. Die entstehenden Zipfel werden
-ausgezogen, evtl. gekreuzt und um das Handgelenk seitlich verknotet.
-
-WISSEN TO GO
-Schlauchmullverbände
-
-29.5.6 Fingerverband
-Material • Für einen Fingerverband werden benötigt:
-● Materialien zur Wundversorgung inkl. steriler Wundauflage
-● Schlauchmull
-● ggf. Applikator
-● Verbandschere
-Durchführung
-● Die Länge des Schlauchmulls abmessen (mind. 2,5-mal so
-lang wie der Finger) und ein entsprechendes Stück von
-der Rolle abschneiden.
-● Schlauchmull auf den Applikator stülpen oder mit den Fingern dehnen und über den verletzten Finger und die
-Wundauflage schieben (▶ Abb. 29.8a).
-● Schlauchmull und Wundauflage werden festgehalten,
-während der Rest des Schlauchmulls am Fingerende um
-die eigene Achse gedreht wird (▶ Abb. 29.8b).
-● Dann wird die 2. Lage Schlauchmull über den Finger gestülpt und abgerollt. Am Fingergrundgelenk wird der aufgerollte Schlauchmull an der Handinnenfläche aufgeschnitten.
-● Mull über den Handrücken abrollen und am Handgelenk
-einschneiden. Die beiden Enden werden verknüpft, um das
-Handgelenk gezogen und seitlich verknotet (▶ Abb. 29.8c).
-
-700
-
-Schlauchmull ist ein nahtloses, nicht fransendes Verbandmaterial in Schlauchform. Es ist sehr dehnbar, rutscht nicht
-und schnürt nicht ein. Schlauchmullverbände eignen sich
-daher u. a., um Wundauflagen zu fixieren. Schlauchmull
-gibt es in verschiedenen Größen für verschiedene Körperpartien. Ein Schlauchmullverband wird in 4 Schritten angelegt:
-1. Spannen: Schlauchmull locker zusammenraﬀen. Mit
-beiden Händen in den Verband greifen und ihn mit gespreizten Händen über den zu verbindenden Körperteil
-führen. Mit den Fingerspitzen bremsen, wodurch sich
-das Material spannt.
-2. Drehen: Gleichzeitig mit dem Spannen den Verband
-um die Längsachse drehen (immer in die gleiche Richtung).
-3. Verankern: Am Ende des Verbands den Schlauchmull
-unter leichter Spannung um 180° drehen und den Verband an beiden Enden verankern.
-4. Befestigen: Verband mit Pflaster fixieren; nicht zirkulär
-anbringen, sonst besteht Stauungsgefahr! Alternativ
-das Ende des Schlauchmulls einschneiden und beide
-Zipfel miteinander verknoten.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-
+                                                                                  Schuld-
+                                                                                  gefühl
+                                       anale                       Scham
+                                       Phase                        versus
+                                                                   Zweifel
+
+                                        orale      Vertrauen
+                                        Phase        versus
+                                                   Misstrauen
+
+                                                     1. Jahr      2. und       4. und         6. Jahr bis     13. bis      20. bis       45. bis      65. Jahr bis
+                                                                  3. Jahr      5. Jahr        Pubertät        20. Jahr     45. Jahr      65. Jahr
+                                                    Entwicklungsstufen nach Erikson
+
+Freuds und Eriksons Modelle der Entwicklungsphasen lassen sich gegenüberstellen. Erikson hat 3 Phasen ergänzt.
+
+
+                                     I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen       217
+                                     Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+                                      Usage subject to terms and conditions of license.
+l9    Grundlagen der Entwicklung und Psychologie
+
+
+      5. Identität versus Identitätsdiﬀusion (13. bis 20. Lebens-         Monate alten Säugling, dass das von Pawlow am Tier gezeig-
+         jahr): Diese Phase ist geprägt durch die körperliche Rei-        te klassische Konditionieren auch bei Kindern möglich ist.
+         fung und Kontakte zum anderen Geschlecht. Der Jugend-            Pawlow hatte bei einem Hund nachgewiesen, dass er auf das
+         liche sucht seine eigene Identität und behauptet sich in         alleinige Geräusch einer Glocke mit Speichelfluss reagiert,
+         Gruppen. Sammelt er dabei positive Erfahrungen, ent-             wenn ihm das Geräusch zuvor oft genug in Zusammenhang
+         wickelt er ein gutes Vertrauen in sich selbst. Gelingt es        mit Futtergabe angeboten wurde. Watson war aufgrund der
+         ihm hingegen z. B. nicht, die gesellschaftlichen Erwartun-       Tatsache, dass das klassische Konditionieren auch bei Men-
+         gen zu erfüllen, wird er Schwierigkeiten damit haben, sei-       schen funktioniert, davon überzeugt, dass die Entwicklung
+         ne Rolle in der Welt zu finden.                                  in allererster Linie von der Umwelt abhängt und Kinder
+      6. Intimität und Solidarität versus Isolierung (20 bis 45 Jah-      formbar sind.
+         re): Der junge Erwachsene steht vor den Aufgaben, stabile
+         soziale Beziehungen aufzubauen und Verantwortung zu              Operantes Konditionieren nach B. F. Skinner • Der amerikani-
+         übernehmen. Sein „Ich“ verwandelt sich in mancher Hin-           schePsychologe Skinner entwickelte die Theorie des operan-
+         sicht in ein „Wir“. Gelingt dies alles nicht, können Einsam-     ten Konditionierens. Er behauptet, dass erwünschte Verhal-
+         keit und soziale Isolierung die Folge sein.                      tensweisen durch positiv verstärkende Reize (z. B. Beloh-
+      7. Generativität versus Selbstabkapselung (45 bis 65 Jahre):        nung, Lob, anerkennendes Lächeln) oder negativ verstärken-
+         In dieser Phase möchte der Mensch produktiv sein und sei-        de Reize (z. B. Missachtung, Tadel) herbeigeführt werden
+         ne Erfahrungen an Jüngere weitergeben. Der Schüler wird          können.
+         zum Lehrer. Ist er dabei nicht erfolgreich oder mangelt es
+         ihm an Aufgaben, fehlt das Gefühl, etwas Sinnvolles zu tun.      Lernen durch Beobachtung nach Albert Bandura • Lernen
+         Dies kann mit einer Perspektivlosigkeit einhergehen.             durch Beobachtung bzw. am Modell ist eine der wichtigsten
+      8. Integrität versus Verzweiflung (65 Jahre bis Tod): Der äl-       Theorien des sozialen Lernens. Sie wurde entwickelt von
+         tere Mensch denkt über den Tod nach und reflektiert, ob          dem amerikanischen Psychologen Albert Bandura. Er ent-
+         sein Leben lebenswert gewesen ist. Ist er mit seinem Le-         deckte die große Bedeutung von Vorbildern für das Erlernen
+         ben unzufrieden, kann dies zu einem Gefühl der Sinn-             bestimmter Verhaltensweisen. Das Kleinkind, das die Bewe-
+         losigkeit und Angst vor dem Tod führen.                          gungen zur Musik nachmacht, die ihm die Erzieherin vor-
+                                                                          macht, der Jugendliche, der das gleiche Handy besitzt wie
+                                                                          die Mitglieder seiner Peergroup, das Kind, das in der Schule
+          WISSEN TO GO                                                    seine Jacke nicht an die Garderobe hängt, weil das zu Hause
+                                                                          auch niemand tut. All das sind Beispiele für Lernen durch
+        Psychosoziale Entwicklung nach Erikson                            Beobachtung.
+                                                                            Bandura fand auch heraus, dass die Motivation, die hinter
+        Der Psychiater Erik H. Erikson hat das Modell von Freud           dem Nachahmen steht, durch unterschiedliche Faktoren be-
+        überarbeitet und um 3 Phasen erweitert (▶ Abb. 9.5). Der          einflusst werden kann. Eine selbst erlebte positive oder ne-
+        Mensch befindet sich in jeder Phase in einem psychosozia-         gative Verstärkung (Lob für das Nachmachen der Bewe-
+        len Konflikt zwischen 2 gegensätzlichen Gefühlen. Eine ge-        gungsspiele in der Kindertagesstätte), aber auch positive
+        sunde Persönlichkeit entsteht, wenn er die einzelnen da-          oder negative Verstärkung eines anderen (Bewunderung für
+        durch entstehenden Krisen erfolgreich bewältigt.                  das Handy) können zur Nachahmung animieren.
+        1. Vertrauen versus Misstrauen (1. LJ): Durch eine feste
+           und fürsorgliche Bezugsperson entwickelt das Kind ein
+           Urvertrauen.                                                        WISSEN TO GO
+        2. Autonomie versus Scham und Zweifel (2.–3. LJ): Das
+           Kind entdeckt die Welt und wird selbstständiger.
+                                                                            Lerntheoretische Ansätze
+        3. Initiative versus Schuldgefühl (4–5 Jahre): Es stellt
+           viele Fragen und möchte die Welt begreifen.                      Im 20. Jahrhundert entwickelten Psychologen folgende
+        4. Kompetenz versus Minderwertigkeitsgefühl (6–                     Theorien über das Lernen:
+           12 Jahre): Es vergleicht sich mit anderen Kindern.               ● Behaviorismus: Konditionieren (ein Verhalten durch
+
+        5. Identität versus Identitätsdiﬀusion (13–20 Jahre):                 wiederholte Reize auslösen) ist bei Menschen möglich.
+           Der Jugendliche sucht seine eigene Identität.                    ● operantes Konditionieren: Positiv bzw. negativ verstär-
+
+        6. Intimität und Solidarität versus Isolierung (20–                   kende Reize können erwünschte Verhaltensweisen her-
+           45 Jahre): Das „Ich“ wird immer mehr zum „Wir“.                    beiführen.
+        7. Generativität versus Selbstabkapselung (45–65 Jah-               ● Lernen durch Beobachten: Vorbilder haben eine große
+
+           re): Der Schüler wird zum Lehrer.                                  Bedeutung für das Erlernen bestimmter Verhaltenswei-
+        8. Integrität versus Verzweiflung (65 Jahre bis zum                   sen.
+           Tod): Der ältere Mensch reflektiert sein Leben.
+
+                                                                          Kognitive Entwicklungstheorie
+      Verhaltenspsychologische und                                        nach Jean Piaget
+      lerntheoretische Ansätze                                            Mit diesem Modell rückt der Begriﬀ der Kognition in den Fo-
+      Behaviorismus nach John Watson • Parallel zum psychoana-            kus.
+      lytischen Ansatz entwickelte sich Anfang des 20. Jahrhun-
+      derts eine andere Strömung, bekannt unter dem Begriﬀ des            Definition Kognition
+      Behaviorismus (engl. to behave = verhalten). Vorreiter dieses       Sie beinhaltet alle an der Informationsverarbeitung beteiligten men-
+      Ansatzes war der amerikanische Psychologe John Watson               talen Prozesse wie Wahrnehmung, mentale Verarbeitung, Aufmerk-
+      (1878–1958). Er belegte in einem Experiment mit einem 11            samkeit, Denken, Gedächtnis, Bewusstsein u. a.
+
+
+218    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                           Entwicklungspsychologie
+
+
+Das Modell der kognitiven Entwicklungstheorie, das der                    nicht sieht. Versteckt jemand das Lieblingsspielzeug des
+Schweizer Entwicklungspsychologe Jean Piaget (1896–1980)                  Kindes, wird es danach suchen.
+entwickelt hat, sieht im Menschen einen aktiven Gestalter              2. Präoperationale Entwicklung (2–7 Jahre): Der wichtigste
+seiner eigenen Entwicklungserfahrungen und -prozesse.                     Aspekt dieser Phase ist die sog. Zentrierung auf einen be-
+Kinder bilden schon früh kognitive Schemata aus, durch die                stimmten Sachverhalt, eine Dimension. Typisches und oft
+sie in Interaktion mit der Umwelt treten. Mit diesen                      zitiertes Beispiel ist der sog. Umschüttversuch. Das Kind
+Schemata erkunden sie die Welt. Passt das Schema nicht, so                ist in dieser Phase noch nicht in der Lage zu verstehen,
+hat das Kind die Möglichkeit, durch Neuanpassung ein ver-                 dass die gleiche Menge Wasser in einem niedrigen, brei-
+gleichbares oder ein neues Schema zu entwickeln. Seine                    ten Gefäß auch wirklich die gleiche ist wie in einem ho-
+Entwicklung erfolgt dadurch, dass es sein eigenes Denken                  hen, schmalen Gefäß. Es orientiert sich nur am Wasser-
+immer wieder an die Erfahrungen aus der Umwelt anpasst                    spiegel, der in dem schmalen Gefäß höher ist. Das Kind
+(Adaptation). Im Zentrum stehen dabei die 2 funktionalen                  schließt daraus, dass darin mehr Wasser enthalten ist.
+Prozesse Assimilation und Akkommodation. Beide dienen                     Komplexere Zusammenhänge wie Volumen sind noch
+dazu, einen Gleichgewichtszustand herzustellen (Äquilibra-                nicht begreifbar.
+tion).                                                                 3. Konkret-operationale Entwicklung (7–11 Jahre): In dieser
+● Assimilation: Die neue Information wird so verändert, dass              Phase kann das Kind schon mehrere Dimensionen/Sach-
+  sie in das aktuell bestehende Schema passt.                             verhalte auseinanderhalten. Wird der Umschüttversuch
+● Akkommodation: Wenn eine Entdeckung nicht in das ak-                    in dieser Altersstufe durchgeführt, weiß das Kind, dass
+  tuelle Schema passt, wird ein neues Schema erstellt. Der                die Wassermenge in dem schmalen Gefäß die gleiche ist,
+  Mensch passt sich an.                                                   wenn nichts dazugegeben wurde. Es ist in diesem Alter in
+                                                                          der Lage, Form von Menge und Volumen zu unterschei-
+                                                                          den. Es erkennt, dass die Menge nicht von der Form ab-
+                                                                          hängig ist.
+  Beispiel Assimilation und Akkommodation                              4. Formales Denken (ab 12 Jahre): In dieser Phase wird das
+                                                                          Denken unabhängig von gegenständlichen Anreizen. Ju-
+  Hund A ist groß, bellt, ist lieb, heißt „Wauwau“ und kann ge-
+                                                                          gendliche können abstrakt und „theoretisch“ denken und
+  streichelt werden. Hund B sieht zwar anders aus, unterscheidet
+                                                                          benötigen kein Anschauungsmaterial mehr.
+  sich aber sonst nicht und kann daher auch gestreichelt werden.
+  Er wird in das kognitive Schema integriert (Assimilation). Hund
+  C sieht anders aus, ist klein und bissig, darf also nicht gestrei-       WISSEN TO GO
+  chelt werden. Das kognitive Schema wird angepasst (Akkom-
+  modation): Es gibt auch Hunde, die man nicht streicheln darf.
+                                                                         Kognitive Entwicklungstheorie nach Jean Piaget
+                                                                         Der Mensch gestaltet seine Entwicklung aktiv mit. Das
+Zu Entwicklungssprüngen kommt es nach Piaget immer
+                                                                         Kind bildet schon früh ein kognitives Schema aus. Es passt
+dann, wenn das eigene Weltbild mit dem äußeren Weltbild
+                                                                         dabei sein Denken immer wieder an die Erfahrungen aus
+nicht übereinstimmt. Denn dann ist ein Individuum ge-
+                                                                         der Umwelt an (Adaptation). Befindet sich beides im Ein-
+zwungen, seine Vorstellung zu verändern oder zu revidie-
+                                                                         klang, spricht man von Äquilibration. Stimmen die Erfah-
+ren.
+                                                                         rungen aus der Umwelt nicht mit dem eigenen Denken
+                                                                         überein, wird die von außen kommende Information ent-
+                                                                         weder so verändert, dass sie in das aktuelle Denkschema
+  Beispiel Weltbild                                                      passt (Assimilation), oder das Denkschema wird angepasst
+                                                                         (Akkommodation). Piaget hat die kindliche kognitive Ent-
+  Bis zu einem gewissen Alter glaubt ein Kind, dass eine Anzahl          wicklung in 4 Phasen unterteilt:
+  von Gegenständen zunimmt, wenn man sie übereinandersta-                ● sensomotorische Entwicklung (0–2 Jahre): Motorik
+
+  pelt. Wenn das Kind in der Lage ist, diese Gegenstände abzu-             und Wahrnehmung entwickeln sich.
+  zählen, wird diese falsche Weltsicht korrigiert. Die Sichtweise,       ● präoperationale Entwicklung (2–7 Jahre): Zentrierung
+
+  dass die Anordnung der Gegenstände ihre Anzahl bestimmt,                 auf eine Dimension.
+  wird aufgegeben zugunsten einer neuen Ansicht: Die Anzahl ist          ● konkret-operationale       Entwicklung (7–11 Jahre):
+  unabhängig von der räumlichen Anordnung.                                 Mehrere Dimensionen können unterschieden werden.
+                                                                         ● formales Denken (ab 12 Jahre): Abstraktes Denken ist
+
+                                                                           möglich.
+Die Theorie Piagets wird zum sog. Konstruktivismus gezählt.
+„Konstruktivismus“ ist ein Begriﬀ aus dem Bereich der Lern-
+psychologie. Konstruktivisten gehen davon aus, dass jeder              Entwicklungsaufgaben nach Havighurst
+Mensch aus dem, was er wahrnimmt, seine eigene Welt
+konstruiert. Piaget hat für den Bereich der kognitiven Ent-            Robert J. Havighurst definierte das Konzept der Entwick-
+wicklung verschiedene Phasen formuliert (▶ Abb. 9.6):                  lungsaufgaben, nach dem jedes Lebensalter an ein Individu-
+1. Sensomotorische Entwicklung (0–2 Jahre): Das Kind er-               um bestimmte Anforderungen stellt. Es lässt sich in 3 Berei-
+   fährt seine Umwelt mit Augen, Ohren, Händen und Füßen               che aufteilen (▶ Tab. 9.3):
+                                                                       ● Biologie/Körper: Körperliche Veränderungen (z. B. Wachs-
+   und verbessert dabei ständig die Abstimmung zwischen
+   Wahrnehmung (sensorisch) und Handlung (motorisch).                    tum, Pubertät, Klimakterium) fordern Veränderung im
+   Die Motorik wird dadurch immer diﬀerenzierter und er-                 Verhalten.
+                                                                       ● Gesellschaft: Gesellschaftliche Anforderungen (z. B. Bil-
+   möglicht zunehmend, komplexere Handlungen durch-
+   zuführen. Mit ca. 1 Jahr entwickelt das Kind die Fähigkeit            dung, Beruf) stellen das Individuum vor spezifische Ent-
+   der Objektpermanenz. Das heißt, es lernt, dass ein Gegen-             wicklungsaufgaben.
+   stand (Objekt) auch da ist, wenn es ihn einen Moment
+
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen        219
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+l9    Grundlagen der Entwicklung und Psychologie
+
+
+      ● Person: Persönliche Wünsche, Ziele und Werte des Indivi-                 Die Wichtigkeit und Bedeutung der jeweiligen Bereiche sind
+       duums (z. B. Wunsch nach Familie, Berufswunsch) impli-                    für jeden verschieden. So lässt sich der eine stark von gesell-
+       zieren Entwicklung.                                                       schaftlichen Vorgaben leiten, der andere legt größeren Wert
+                                                                                 auf seine individuellen Wünsche.
+
+      Abb. 9.6 Kognitive Entwicklungsphasen nach Piaget.
+
+
+         sensomotorische                   präoperationale                 konkret-operationale             formales Denken
+         Entwicklung                       Entwicklung                     Entwicklung
+
+
+
+
+                                                                        100 ml
+
+
+
+
+         • Verbesserung von                • Zentrierung auf eine              Erkennen von Lage,           • Möglichkeit, abstrakt
+           Abstimmung                        Dimension                         Form, Menge und                und „theoretisch“ zu
+           zwischen Sensorik               • komplexere                        Volumen (Menge                 denken
+           und Motorik                       Zusammenhänge                     und Form sind un-            • kein Anschauungs-
+         • Erkenntnis, dass                  sind noch nicht                   abhängig voneinan-             material mehr nötig
+           Objekte immer                     begreifbar                        der)
+           „permanent“ sind                  (z. B. Volumen)
+           0 – 2 Jahre                       2 – 7 Jahre                       7 – 11 Jahre                   ab 12 Jahren
+
+
+
+
+         Objektzentriertes                                                                                  Abstraktes
+         Denken                                                                                             Denken
+
+
+
+      Tab. 9.3 Entwicklungsaufgaben nach Havighurst.
+
+       Phase (Alter)                                  Anforderungen
+
+       frühe Kindheit (0–2 Jahre)                     Anhänglichkeit, Objektpermanenz (S. 218), sensomotorische Intelligenz (Zusammenspiel von
+                                                      Wahrnehmungseindrücken und motorischer Aktivität) und schlichte Kausalität, motorische
+                                                      Funktionen
+
+       Kindheit (2–4 Jahre)                           Selbstkontrolle, Sprachentwicklung, Fantasie und Spiel, Verfeinerung der motorischen Funktionen
+
+       Schulübergang und frühes Schulalter            Geschlechtsrollenidentifikation, einfache moralische Entscheidungen treffen, konkrete
+       (5–7 Jahre)                                    Operationen, Spiel in Gruppen
+
+       mittleres Schulalter (6–12 Jahre)              soziale Kooperation, Selbstbewusstsein (fleißig, tüchtig), Erwerb von Kulturtechniken
+                                                      (Schreiben, Lesen usw.), Spielen und Arbeiten im Team
+
+       Adoleszenz (12–18 Jahre)                       körperliche Reifung, formale Operationen, Gemeinschaft mit Gleichaltrigen, sexuelle
+                                                      Beziehungen
+
+       frühes Erwachsenenalter (18–30 Jahre)          Autonomie von den Eltern, Identität in der Geschlechterrolle, internalisiertes moralisches
+                                                      Bewusstsein, Berufswahl, Heirat, Geburt von Kindern, Arbeit/Beruf, Lebensstil finden
+
+       mittleres Erwachsenenalter (30–50 Jahre)       Heim/Haushalt führen, Kinder aufziehen, berufliche Karriere
+
+       spätes Erwachsenenalter (51 Jahre und älter)   Energien auf neue Rollen lenken, Akzeptieren des eigenen Lebens, eine Haltung zum Sterben
+                                                      entwickeln
+
+       nach: Oerter R, Montada L, Hrsg. Entwicklungspsychologie. Beltz; 2008
+
+
+220    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                                        Die Lebensphasen
+
+
+                                                                           stark. Bei Geburt wiegt ein Kind dann ungefähr 3–4 kg
+                                                                           und ist im Schnitt 51 cm groß.
+     WISSEN TO GO
+                                                                         Kindheit: motorische Entwicklung • Sie verläuft normalerwei-
+  Entwicklungsaufgaben nach Robert J. Havighurst                         se wie folgt:
+                                                                         ● pränatal: Durch die rasante Entwicklung des Nervensys-
+  Nach Havighurst werden in jedem Lebensalter bestimmte
+                                                                           tems beginnen ungeborene Kinder, bereits ab Ende des 1.
+  Entwicklungsaufgaben an den Einzelnen gestellt, die kör-
+                                                                           Trimenons Bewegungen auszuführen, die für die Mutter
+  perlicher, gesellschaftlicher oder persönlicher Natur sein
+                                                                           aber erst ab ca. der 18.-20. SSW spürbar werden.
+  können (▶ Tab. 9.3).                                                   ● Neugeborenes: Das Kind bewegt sich noch „ungerichtet“.
+
+                                                                           Im Vordergrund stehen sogenannte „Primitivreflexe“ bzw.
+                                                                           Neugeborenenreflexe wie der Schreitreflex: Hält man das
+9.5 Die Lebensphasen                                                       Baby z. B. aufrecht auf eine Unterlage, beginnt es, Schreit-
+                                                                           bewegungen zu machen. Das hat nichts mit ersten „Geh-
+In allen Lebensphasen gibt es bestimmte Veränderungen,                     versuchen“ zu tun, sondern ist eine reine Reflexreaktion.
+die die Entwicklung besonders beeinflussen. Im Pflegealltag                Weitere physiologische Neugeborenenreflexe sind z. B. der
+kann das Wissen über sie dazu beitragen, Entwicklungsstö-                  Greifreflex (Berührung an Händen oder Füßen löst Greifen
+rungen bei jüngeren Pflegeempfängern frühzeitig zu erken-                  aus), der Suchreflex (Berührung an der Wange löst Kopf-
+nen. Bei Erwachsenen kann es helfen, deren Erleben und                     drehung aus) und der Mororeflex (rasches Zurückneigen
+Verhalten besser zu verstehen. Aus Gefahren und Risikofak-                 des Säuglings löst Strecken der Arme und Spreizen der
+toren für Entwicklung und Wohlbefinden in den einzelnen                    Finger aus).
+Lebensphasen lassen sich Maßnahmen zur Förderung von                     ● 2–3 Monate: Kind kann Kopf halten und heben
+Gesundheit und Wohlbefinden ableiten.                                    ● 4 Monate: Kind beginnt, sich zu drehen und zu rollen,
+
+                                                                           stützt sich auf die Unterarme ab, nutzt den Daumen beim
+                                                                           Greifen
+9.5.1 Kindheit                                                           ● 5–6 Monate: Kind gibt Gegenstände von einer Hand in die
+
+                                                                           andere, führt Greifversuche auch nach kleinen Gegenstän-
+Definition Kindheit
+                                                                           den aus, beginnt zu robben
+Sie reicht von der pränatalen Phase bis ca. zum 11. Lebensjahr. Man
+                                                                         ● 7–11 Monate: Kind sitzt sicher mit geradem Rücken, steht
+unterscheidet:
+● pränatal/perinatal: Empfängnis bis Geburt
+                                                                           mit Unterstützung, krabbelt
+                                                                         ● 10–13 Monate: Kind steht selbstständig mit Festhalten an
+● Säuglings- und Krabbelalter: Geburt bis etwa 2 Jahre
+● frühe Kindheit: etwa 2–6 Jahre
+                                                                           Möbeln, Kind geht mit Unterstützung
+                                                                         ● 13–18 Monate: Kind lernt das freie Gehen
+● mittlere Kindheit: etwa 6–11 Jahre
+                                                                         ● Bis zum 3. Lebensjahr entwickeln die Kinder ihre fein-
+
+                                                                           motorischen Fähigkeiten deutlich weiter. Sie lernen, koor-
+Die kindliche Entwicklung wird zunehmend durch die Ge-
+                                                                           diniert zu rennen und Treppen zu steigen und werden im-
+sellschaft geprägt. Diese Prägung wird Sozialisation genannt.
+                                                                           mer selbstständiger.
+Sie nimmt einen wichtigen Part in der Persönlichkeitsent-
+wicklung ein. Jede Phase ist von bestimmten Meilensteinen
+der Entwicklung begleitet.                                               ACHTUNG
+                                                                         Hier gibt es große physiologische Unterschiede. Manche Kinder kön-
+                                                                         nen schon mit 12 Monaten gehen, andere krabbeln mit 14 Monaten
+Definition Sozialisation
+                                                                         noch und sind trotzdem völlig gesund.
+Sie ist ein lebenslanger Lernprozess des Menschen. Sozialisation zielt
+darauf ab, ihn in die Gesellschaft einzugliedern und an deren kul-
+turelle Normen, Werte und soziale Rollen anzupassen. Durch Sozia-
+                                                                         ! Merke Durchschnittswerte
+lisation soll eine bestehende Gesellschaft erhalten bleiben. Der So-     Die Altersangaben sind Durchschnittswerte, die in Untersuchungen
+zialisationsprozess wird eingeteilt in:                                  ermittelt wurden. Sie dienen als Anhaltspunkte, können aber nicht
+● primäre Sozialisation: Erziehung und Interaktion in der Kernfami-
+                                                                         als alleiniger Maßstab für eine Entwicklungsstörung gelten. Wenn in
+   lie                                                                   einem bestimmten Alter die entsprechende motorische Fähigkeit
+● sekundäre Sozialisation: Erziehung durch und Interaktion mit dem
+                                                                         fehlt, ist auch die Gesamtentwicklung zu berücksichtigen. Steht das
+   weiteren Umfeld (Kindergarten, Schule, Vereine, Freunde, Peer-        Kind auch in anderen Bereichen deutlich zurück, ist eine Entwick-
+   groups usw.)                                                          lungsstörung in Betracht zu ziehen.
+● tertiäre Sozialisation: Einflussnahme durch und auf den Beruf
+                                                                         Kindheit: Entwicklung der Sinneswahrnehmung • Die Sinne
+Pränatale Entwicklung • Sie verläuft in drei Phasen:                     entwickeln sich normalerweise wie folgt:
+                                                                         ● Hören:
+● Keimphase: In ihr erfolgt mit der Verschmelzung von Ei-
+
+  und Samenzelle die Befruchtung. Die Zygote entsteht.                     – Das ungeborene Kind nimmt ungefähr ab der Hälfte der
+  Nach ca. 1 Tag beginnt sich die Zygote zu teilen, es ent-                  Schwangerschaft im Mutterleib Geräusche wahr.
+  steht die Morula („Maulbeere“), dann die bläschenförmige                 – Das Kind nimmt bereits im Mutterleib Geräusche wahr.
+  Blastozyste, die sich dann nach ca. 5–6 Tagen in den Ute-                – Das Neugeborene bevorzugt menschliche Stimmen nach
+  rus einnistet.                                                             der Geburt.
+● Embryonale Phase: Sie dauert von der 3. bis zur ca. 8. Ent-
+                                                                           – Wenige Tage nach der Geburt wird die Stimme der Mut-
+  wicklungswoche. In ihr werden alle Organe angelegt. Der                    ter erkannt.
+                                                                         ● Sehen:
+  Embryo reagiert besonders empfindlich auf Schädigungen,
+  z. B. auf Alkoholkonsum oder Röteln-Infektion der Mutter.                – Nahsehen (ca. 25 cm) ist unmittelbar nach der Geburt
+● Fetalperiode: Ab der 9. Woche reifen die Organe weiter
+                                                                             möglich.
+  heran. Besonders ab ca. der 28. Woche wächst der Fetus                   – Gesichter werden besonders fixiert.
+
+
+       I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen               221
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+l9    Grundlagen der Entwicklung und Psychologie
+
+
+        – Bewegungen werden ca. ab dem 3. Monat gesehen und                   ● Zweiwortstadium   (ab ca. 18 Monaten): Sie kombinieren
+          auch verfolgt.                                                        Substantive mit Verben („Buch haben“).
+        – Mit ca. 6 Monaten ist die Sehschärfe vergleichbar der               ● Telegrammstil (ab ca. 24 Monaten): Sie verwenden kurze
+
+          eines Erwachsenen ausgebildet.                                        einfache Sätze.
+      ● Riechen und Schmecken sind bereits im Mutterleib vor-                 ● 3.–6. Lebensjahr: Die Zahl der verwendeten Wörter ver-
+
+        handen.                                                                 mehrt sich deutlich, die Kinder können auch über nicht
+                                                                                real vorhandene Dinge und Gefühle sprechen.
+      Kindheit: emotionale Entwicklung • Emotionen sind beim
+      Neugeborenen bereits in den ersten Monaten ausgebildet.                 Kindheit: moralische Entwicklung • Die Psychologie betrachtet
+      Der Säugling tritt auch recht schnell in Interaktion mit sei-           das neugeborene Kind als amoralisches Wesen. Regeln zur
+      ner Umwelt. Als Zeichen der emotionalen Entwicklung gel-                Unterscheidung zwischen richtigen und falschen Handlun-
+      ten folgende Phänomene:                                                 gen im Sinne eines verantwortungsvollen Miteinanders ent-
+      ● soziales Lächeln: Nach ca. 6 Wochen zeigt der Säugling ein            wickelt das Kind erst im Laufe der Zeit. Ein bekanntes Mo-
+        Lächeln, insbesondere als Reaktion auf Gesichter und                  dell zur moralischen Entwicklung des Menschen wurde von
+        Stimmen.                                                              Lawrence Kohlberg (1958) erarbeitet. Nach ihm gibt es 3
+      ● Lachen: zeigt sich nach ca. 4 Monaten (▶ Abb. 9.7).                   Stufen:
+      ● Fremdeln: Das Kind zeigt mit ca. einem halben Jahr zum                ● Präkonventionelle Moral (Autoritätsmoral): Eine Auto-
+
+        ersten Mal abwehrende Reaktionen gegenüber fremden                      ritätsperson (z. B. Mutter, Vater, Erzieherin, Lehrer) ent-
+        Personen; eine zweite Fremdeln-Phase folgt mit ca. einem                scheidet, was richtig und falsch ist. Daran orientiert sich
+        Jahr.                                                                   das Kind. Es versucht, belohnt zu werden oder einer Be-
+      ● Bildung des Selbstkonzepts: Ab ca. 18 Monaten entwickelt                strafung zu entgehen. Im Mittelpunkt stehen die eigenen
+        das Kind die selbstbezogenen Gefühle Stolz und Scham.                   Interessen, nicht die der anderen.
+        Viele 2- bis 3-jährige Kinder lieben das Wort „Nein“, es              ● Konventionelle Moral (Gruppenmoral): Der Einzelne ist
+
+        häufen sich Trotzanfälle. In einer vorübergehenden Phase                Teil einer Gruppe und orientiert sich an den Regeln dieser
+        denkt das Kind, dass sich alles um es selbst dreht und es               Gruppe, die notwendig sind, damit die Gemeinschaft be-
+        mit seinem Willen alles bewirken kann. Mit dem 3./4. Le-                stehen kann.
+        bensjahr lernt es dann Grenzen kennen und es entwickelt               ● Postkonventionelle Moral (Grundsatz-/Prinzipienmoral):
+
+        soziale Kompetenz.                                                      Das Handeln richtet sich nicht mehr alleine nach den Re-
+                                                                                geln der Gruppe. Es gelten weitreichendere ethische Werte
+      Aktuell geht die Wissenschaft davon aus, dass für eine nor-               und Grundprinzipien, z. B. Gleichberechtigung aller Men-
+      male emotionale Entwicklung des Kindes eine verlässliche                  schen, unantastbare Würde aller Menschen, Umwelt-
+      enge Bindung zu einer Bezugsperson nötig ist. Diese Bezugs-               schutz.
+      person muss in der Lage sein, die Bedürfnisse des Kindes zu
+      stillen.
+                                                                              Risikofaktoren für Entwicklungsstörungen
+      Kindheit: kognitive Entwicklung • Die kognitive Entwick-                in der Kindheit
+      lungstheorie nach Jean Piaget (S. 218) gilt hierzu als eine             ● Risiken  in der pränatalen Phase sind v. a. Erkrankungen
+      gültige Lehrmeinung.                                                      der Mutter, genetische Defekte, Einnahme bestimmter Me-
+                                                                                dikamente, Drogen- und Alkoholkonsum der Mutter, Um-
+      Kindheit: sprachliche Entwicklung • Sie vollzieht sich norma-             weltbelastungen (z. B. Strahlung), Fehlernährung der Mut-
+      lerweise wie folgt:                                                       ter, Unterversorgung des Kindes durch eine Plazentainsuf-
+      ● Lallstadium (ab ca. 4. Monat): Sogar gehörlose Kinder pro-
+                                                                                fizienz. Auch psychische Belastungen der Mutter wie Ab-
+        duzieren (genetisch bedingt) silbenähnliche Laute („Lala-               lehnung des Kindes oder schwierige soziale Verhältnisse
+        la“).                                                                   (Vater steht nicht zur Verfügung und/oder lehnt das Kind
+      ● Einwortstadium (ab ca. 12 Monaten): Die Kinder benutzen
+                                                                                ab, unsichere finanzielle Situation) können Risiken in die-
+        erste einzelne Worte (z. B. Buch, Ball, Mama).                          ser Entwicklungsphase darstellen.
+                                                                              ● Risiken in der perinatalen Phase (während der Geburt)
+      Abb. 9.7 Lachen.
+                                                                                sind v. a. Komplikationen im Geburtsverlauf durch Sauer-
+                                                                                stoﬀunterversorgung, Geburtsverletzungen, Anpassungs-
+                                                                                störungen des Neugeborenen an die Umgebung, Stoﬀ-
+                                                                                wechselprobleme wie Unterzuckerung oder genetische
+                                                                                Störungen.
+                                                                              ● Risiken in der postnatalen Phase sind v. a. psychische Prob-
+
+                                                                                leme der Eltern, eine schlechte Paarbeziehung, fehlende
+                                                                                Unterstützung aus dem sozialen Umfeld und Unsicherheit
+                                                                                im Umgang mit dem Neugeborenen. Die Faktoren stellen
+                                                                                v. a. dann eine Gefahr für eine gesunde Entwicklung des
+                                                                                Kindes dar, wenn mehrere der Faktoren gleichzeitig auf-
+                                                                                treten.
+                                                                              ● Risiken im weiteren Entwicklungsverlauf der Kindheit sind
+
+                                                                                u. a. emotionale Zurückweisung in der Kernfamilie, sexuel-
+                                                                                ler Missbrauch, Gewalt, Scheidung der Eltern (besonders
+                                                                                wenn sie mit dauerhaften Streitigkeiten und unklaren Re-
+                                                                                gelungen bzgl. der Betreuung des Kindes verbunden ist)
+                                                                                und unkritischer und hoher Konsum medialer Angebote
+      (Symbolbild). © rigg/stock.adobe.com - Stock photo - posed by a model     wie Fernsehen und Computerspiele. Kinder, die in Kriegs-
+
+
+222     I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+        Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+         Usage subject to terms and conditions of license.
+                                                                                                                   Die Lebensphasen
+
+
+ gebieten, Ghettos oder unter anderen desolaten Lebens-             gekehrt, sollten Sie Ihre Beobachtungen dem Arzt weiterge-
+ bedingungen aufwachsen, sind durch die ständigen Ängste            ben und mit den Eltern ins Gespräch kommen. Eine Verhal-
+ und Entbehrungen besonders gefährdet, Verhaltenspro-               tensstörung kann ein Zeichen von Vernachlässigung sein.
+ bleme zu entwickeln. Ist der ökonomische Status gering,            Hinter ihr kann sich aber auch eine psychische Störung, z. B.
+ ist die Ernährung oft ungesund und Vorsorgeangebote                ein frühkindlicher Autismus (S. 1429) verbergen. Eine Auf-
+ werden nicht so häufig in Anspruch genommen. Aber auch             merksamkeitsstörung kann z. B. auch durch eine Epilepsie
+ unter besseren Umständen können Kinder unter großen                (S. 1264) bedingt sein, eine Lernstörung durch eine Hypo-
+ Ängsten leiden, die ihre Entwicklung ungünstig beeinflus-          thyreose (S. 1099).
+ sen (etwa Schulängste, Versagensängste).
+                                                                    Sprachentwicklung und Sprechstörung • Bei Kindern, die ihre
+                                                                    Sprache verzögert entwickeln, muss man unterscheiden, ob
+Entwicklungsstörungen – präventive                                  eine Sprach- oder Sprechstörung vorliegt. Bei der Sprachstö-
+Ansätze                                                             rung bestehen Defizite in der gedanklichen Entwicklung
+Um Defekte, die zu kindlichen Entwicklungsstörungen füh-            von Wörtern oder Sätzen. Die Sprechstörung ist eher ein
+ren können, möglichst frühzeitig zu erkennen, stehen hier-          motorisches Problem in der „Produktion“ von Sprache (z. B.
+zulande schon Schwangeren regelmäßige Arztbesuche zu.               „Stottern“). Besteht eine Verzögerung in der Sprachentwick-
+Nach der Geburt bis zum Erwachsenenalter gibt es spezielle          lung sollte immer auch das Hörvermögen des Kindes über-
+Kindervorsorgeuntersuchungen, die ebenfalls von den Kran-           prüft werden. Pflegefachkräfte können z. B. beobachten, ob
+kenkassen bezahlt werden. Dabei versuchen die Pädiater              das Kind altersentsprechend spricht. Mit 2 Jahren mindes-
+auch den psychosozialen Lebenskontext der Kinder ein-               tens Zweiwort-Sätze? Kann es einen Gegenstand identifizie-
+zuschätzen.                                                         ren (Auto, Baum)? Reagiert es auf Ansprache?
+
+Kinderuntersuchungsheft • Wird das neugeborene Kind aus             ACHTUNG
+der Klinik entlassen, bekommt die Mutter ein gelbes Kinder-         Wenn ein Kind bis zum 6. Lebensmonat fröhlich vor sich hingeplap-
+untersuchungsheft (Gelbes Heft) ausgehändigt. In diesem             pert hat und dies plötzlich nicht mehr tut, kann das ein Hinweis auf
+Heft werden alle Untersuchungsergebnisse der Vorsorgeun-            eine Hörstörung sein. Bis zu diesem Zeitpunkt ist das Hören des ei-
+tersuchungen („U-Untersuchungen“) eingetragen (Baby:                genen Lautierens nicht erforderlich für die Lautbildung (da angebo-
+U1–U6; Kleinkind: U7–U9; Schulkind: U10 und U11; Teen-              ren). Hört das Kind jedoch schlecht, oder gar nicht, versiegen
+ager: J1 und J2). Das Vorsorgeheft muss sorgfältig auf-             Sprechimpulse zunehmend, wenn das Kind sich selbst nicht hören
+bewahrt und bei jeder Vorsorgeuntersuchung dem Kinder-              kann.
+und Jugendarzt vorgelegt werden. Werden Risiken bzw. Auf-
+fälligkeiten erkannt, beraten Ärzte die Eltern bzw. verordnen       Motorische Entwicklung • Auch im Bereich der Motorikent-
+z. B. logopädische oder andere therapeutische Maßnahmen.            wicklung gibt es individuell große Unterschiede. Um Abwei-
+Doch im Rahmen von einzelnen Gesprächen und medizini-               chungen frühzeitig zu erkennen, und diese einordnen zu
+schen Untersuchungen können lange nicht alle Fälle erkannt          können, sollten Pflegefachkräfte die typischen Meilensteine
+werden.                                                             der Entwicklung kennen (▶ Infografik S. 224). Wenn diese
+                                                                    deutlich verzögert sind bzw. ein Kind erworbene Fähigkei-
+                                                                    ten wieder verliert, sollte dies Anlass sein, genauer hin-
+Anzeichen und häufige Ursachen für                                  zuschauen. Achten Sie z. B. auf Muskeltonus und Bewegung,
+Entwicklungsstörungen                                               Fein- und Grobmotorik. Bestehen Unterschiede in der Kör-
+                                                                    perhaltung im Seitenvergleich, kann dies ein Hinweis auf
+Die kindliche Entwicklung verläuft individuell sehr ver-
+                                                                    übersehene Frakturen oder eine neurologische Erkrankung
+schieden und ist nur schwer vorhersehbar. Daher sollten fes-
+                                                                    sein. Beobachten Sie auch das Reaktionsvermögen und Akti-
+te Angaben zur Entwicklung eher als Orientierung, und we-
+                                                                    vitätsniveau des Kindes.
+niger als konkrete Norm gesehen werden. Beim Neugebore-
+nen geben die Reflexe eine wichtige Auskunft über den Ent-
+                                                                    Gedeihstörungen • Findet Längen- und Gewichtsentwicklung
+wicklungsstand des Kindes. Sie werden bei den U-Unter-
+                                                                    von Kindern innerhalb der Perzentilenkurve statt, ist zu-
+suchungen vom Kinderarzt überprüft, um mögliche Ent-
+                                                                    meist alles in Ordnung. Stagniert dieses über längere Zeit,
+wicklungsstörungen frühzeitig feststellen zu können. Sind
+                                                                    oder verliert das Kind sogar an Gewicht, sollte dies Anlass
+die Kinder bereits älter, muss die Beobachtung des Entwick-
+                                                                    sein, nachzuforschen. Gründe für eine Gedeihstörung oder
+lungsstandes über andere Wege erfolgen. Besonders gut eig-
+                                                                    für Untergewicht können z. B. intestinale Probleme sein (z. B.
+net sich hierfür die Beobachtung des Kindes während des
+                                                                    durch Maldigestion bei Mukoviszidose oder Laktoseintole-
+sozialen Spiels.
+                                                                    ranz, durch Malabsorption bei Zöliakie oder Morbus Crohn).
+                                                                    Auch Erkrankungen anderer innerer Organe kommen infra-
+Entwicklungsstand beurteilen                                        ge, wie z. B. Herzfehler, Tumore oder Stoﬀwechselstörungen
+Sozialverhalten und Verhaltensstörung • Jedes Kind ist einzig-      wie Hypothyreose oder Diabetes mellitus. Manchmal sind
+artig. Entsprechend unterliegt auch das Verhalten von Kin-          auch psychosoziale Ursachen bzw. Vernachlässigung die Ur-
+dern einer großen Bandbreite – abhängig vom Alter, aber             sache.
+auch vom Charakter und vom Umfeld, in dem sich das Kind
+gerade befindet. Trotzdem gibt es deutliche Signale, bei de-
+nen man hellhörig werden sollte. Nimmt das Kind altersent-
+sprechend z. B. keinen Kontakt zur Umwelt auf, fehlen Blick-
+kontakt oder soziales Lächeln, sollten Pflegefachkräfte auf-
+merksam werden. Achten Sie darauf, wie sich das Kind im
+Umgang mit seinen Bezugspersonen und auch anderen Kin-
+dern verhält! Wirkt es nachhaltig traurig oder sehr in sich
+
+
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen            223
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+11 MEILENSTEINE DER ENTWICKLUNG DES KINDES
+
+
+
+
+             6 WOCHEN
+             • soziales Lächeln
+             • Bewegungen wenig zielgerichtet,
+               sondern eher durch Reflexe ausgelöst
+                                                                                                     2-3 MONATE
+                                                                  bla
+                                                                     bla
+                                                                                                       • hebt Kopf in Bauchlage
+                                                                                                       • gibt Laute von sich
+
+             4 MONATE
+
+            • dreht Kopf zur Schallquelle
+            • hält Gegenstände
+            • beobachtet Hände
+            • beginnt, sich zu rollen                                                                   5-6 MONATE
+                                                               bla
+              und zu drehen                                       bla
+                                                                   bla
+                                                                                                       • greift gezielt Gegenstände
+                                                                                                         und wechselt sie von einer
+                                                                                                         Hand in die andere
+                                                                                                       • beginnt Beikost zu essen
+             7 – 11 MONATE                                                                             • spielt mit den Knien
+                                                                                                       • plaudert
+            • Scherengriff                                                                             • beginnt zu robben
+            • sitzt auf
+            • krabbelt
+
+                                                                                                       10-13 MONATE
+                                                                                                       • wirft Gegenstände
+                                                                                                       • Pinzettengriff
+                                                                                                       • zieht sich hoch
+                                                                                                         und steht
+             13 – 18 MONATE                       mama
+                                                  auto
+            • lernt freies Gehen
+            • spricht 2–3 Worte
+            • isst selbstständig
+            • trinkt aus dem Glas
+
+                                                                                                       2 JAHRE
+                                                                 nein!
+                                                                                                       • kritzelt eckig
+                                                                                                       • beachtet Handlungsresultat
+                                                                                                       • Zweiwortsätze (Wortschatz 150)
+                                                                                                       • betrachtet Bilderbuch
+                                                                                                       • gibt Gegenstände
+                                                                                                       • sagt: „NEIN!”
+             3 JAHRE                                                                                   • bittet um Hilfe
+
+            • tags trocken
+            • mit Hilfe anziehen
+            • nachts meist trocken
+            • öffnet und schließt Flasche
+            • kritzelt geschlossene Formen                                                             4 JAHRE
+            • spricht alle Laute ohne S/Sch/R
+                                                                                                       • Erwachsenengriff
+                                                                                                       • reproduziert Formen
+                                                                                                       • Männchen zeichnen (7 Teile)
+                                                                                                       • Groß-Klein-Unterscheidung
+             6 JAHRE                                                       auto                        • versteht z.B. „Was tust du,
+                                                                                                         wenn du Hunger hast?”
+           • Formen reproduzieren
+                                                                                                       • kann Kapazität abschätzen
+           • Männchen zeichnen (13 Teile)
+           • „schreiben“ und rechnen
+           • spielt Rollenspiele
+           • grammatikalisch korrekte Sätze/Wörter definieren
+     I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen

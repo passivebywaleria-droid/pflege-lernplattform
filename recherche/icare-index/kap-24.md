@@ -1,1749 +1,607 @@
-# Kapitel 24: Injektionen und Blutentnahme
+# Teil 24
 
-> Quelle: I Care Pflege (Thieme, 2020), S. 590-609
+> Quelle: Icare Pflege
 > Automatisch extrahiert — Formatierung kann abweichen
 
 ---
 
-Wichtige Medikamente in Notfallsituationen
-
-23.7 Wichtige Medikamente in
-Notfallsituationen
-In ▶ Tab. 23.1 sind die Medikamente aufgeführt, die in Notfallsituationen am häufigsten zum Einsatz kommen.
-
-Tab. 23.1 Wichtige Notfallmedikamente.
-Substanz und Handelsname
-
-Wie wird das Medikament
-gerichtet?
-
-Indikation
-
-Nebenwirkung
-
-Adrenalin/Epinephrin (z. B. Suprarenin)
-
-UV: 1 mg
-VL: 1 mg/10 ml
-P: 5–25 mg/50 ml
-
-z. B. Herz-Kreislauf-Stillstand,
-Bradykardie
-
-z. B. Herzrhytmusstörungen,
-Hypokaliämie, Hypertonie, Angina pectoris
-
-Noradrenalin/Norepinephrin (z. B.
-Arterenol)
-
-UV: 1 mg
-VL: 1 mg/10 ml
-P: 5–25 mg/50 ml
-
-z. B. Hypotonie, septischer
-Schock
-
-Dobutamin (z. B. Dobutrex)
-
-P: 250 mg/50 ml
-
-Dopamin
-
-P: 250 mg/50 ml
-
-z. B. kardiogener Schock, Herzinsuffizienz
-
-Katecholamine
-
-Antiarrhythmika
-Amiodaron (z. B. Cordarex)
-
-KI: 150–300 mg
-DI: 900 mg/500 ml G 5 %
-
-Verapamil (z. B. Isoptin)
-
-UV: 5 mg
-
-Metoprolol (z. B. Beloc)
-
-UV: 2,5–5 mg
-
-z. B. Tachykardie, Herzrhythmusstörungen
-
-z. B. Bradykardie, AV-Block, Arrhythmie, Hypotonie
-
-z. B. Angina pectoris, Myokardinfarkt, hypertensiver Notfall
-
-z. B. Hypotonie, Kopfschmerz,
-Übelkeit
-
-Antihypertonika
-Glyzerolnitrat (z. B. Nitrolingual)
-
-2–3 Hübe initial (p. i.)
-P: 50 mg/50 ml
-
-Urapidil (z. B. Ebrantil)
-
-P: 100 mg/50 ml
-
-Diverse
-Atropin
-
-UV: 0,5 mg initial
-
-z. B. Bradykardie
-
-z. B. Tachykardie, Arrhythmie
-
-Prednisolon (z. B. Solo-Decortin H)
-
-KI: Trockenstechampulle in
-100 ml NaCl
-
-z. B. Asthmaanfall
-
-z. B. Immunsupression
-
-Terbutalin (z. B. Bricanyl)
-
-UV: 0,5–1 mg (s. c.)
-1–2 Hübe (p. i.)
-
-z. B. Bronchospastik, Asthma
-bronchiale
-
-z. B. Tachykardie, Hypotonie
-
-Natrium-Hydrogencarbonat
-
-KI: 8,4 % initial
-
-z. B. Azidose, Hyperkaliämie
-
-z. B. CO2-Bildung
-
-Midazolam (z. B. Dormicum)
-
-UV: 5 mg
-VL: 1 mg/15 ml
-P: 50 mg/50 ml
-
-z. B. Angst, Unruhe, Krampfanfall
-
-z. B. Amnesie, Atemdepression,
-Muskelrelaxation
-
-Beachten Sie immer die Angaben des Herstellers/der Apotheke, den internen Hausstandard und die ärztliche Anordnung!
-DI = Dauerinfusion, i. v. = intravenös, KI = Kurzinfusion, P = Perfusor, p. i. = per inhalationem, s. c. = subkutan, UV = unverdünnt, VL = Verdünnungslösung
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-587
-
-4
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-IV Pflegetechniken
-24 Injektionen und Blutentnahme . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 590
-25 Gefäßzugänge, Infusionen und Transfusionen . . . . . . . . . . . . . . . . . . . . . . . . . . . 610
-26 Punktionen und Biopsien . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 638
-27 Sonden und Drainagen . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 646
-28 Wundmanagement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 666
-29 Verbandtechniken . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 692
-30 Pflege bei Fieber. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 704
-31 Wickel und Auflagen . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 712
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-24
-
-Injektionen und
-Blutentnahme
-
-24.2 Injektionen
-24.1 Kompetent pflegen
-Die Durchführung einer Injektion und die damit verbundene
-Applikation von Medikamenten sind eine verantwortungsvolle Aufgabe. Nahezu in allen Fachbereichen der Pflege
-werden Injektionen verabreicht oder Blutentnahmen durchgeführt. Pflegefachkräfte injizieren Medikamente nach Anordnung, bereiten Blutentnahmen vor oder führen diese
-selbst durch.
-In diesem Kapitel lernen Sie u. a.,
-● was eine Injektion ist und welche Arten von Injektionen es
-gibt.
-● wie sie eine geeignete Kanüle auswählen und den korrekten Injektionsort ermitteln können.
-● welche rechtlichen Aspekte bei einer Injektion zu beachten sind.
-● was Sie bei der Vorbereitung, Durchführung und Nachbereitung einer Injektion beachten müssen.
-● was eine Blutentnahme ist und wie sie diese vorbereiten
-und auch selbst durchführen können.
-● welche Arten der Blutentnahme es gibt und worauf Sie bei
-der venösen Blutentnahme achten müssen.
-● welche Komplikationen bei der Blutentnahme auftreten
-können und was Sie bei der Blutentnahme aus zentralvenösen Kathetern berücksichtigen müssen.
-
-590
-
-Definition Injektion
-Bei einer Injektion wird eine sterile Flüssigkeit (i. d. R. Medikament)
-mithilfe einer Spritze und einer dünnen Hohlnadel in das Gewebe
-gespritzt. Dabei werden abhängig von Applikationsart und -ort zwischen 0,1 und 20 ml Flüssigkeit injiziert. Die Injektion zählt zu den
-ärztlichen Tätigkeiten, wird aber meist an entsprechend geschultes
-Pflegepersonal delegiert.
-
-24.2.1 Injektionsarten
-Injektionen werden nach ihrem Applikationsort unterschieden (▶ Abb. 24.1).
-Intrakutane Injektion • Diese Injektionsart (i. c.-Injektion)
-kennen viele von Allergietests oder vom Tuberkulintest (Intrakutantest nach Mendel-Mantoux). Bei einer i. c.-Injektion
-werden geringe Flüssigkeitsmengen in die Dermis (Lederhaut) injiziert, z. B. Procain-Coﬀein-Kombinationspräparat
-(Impletol) zur Neuraltherapie. Dadurch entsteht eine Hautquaddel. Die i. c.-Injektion ist eine seltenere Injektionsform
-und spielt im klinischen Alltag eine untergeordnete Rolle.
-Subkutane Injektion • Sie (s. c.-Injektion) ist eine sehr häufige
-Injektionsart. Die Hohlnadel wird in die Subkutis (Unterhautfettgewebe) vorgeschoben und die Flüssigkeit injiziert.
-Die medikamentöse Antikoagulanzientherapie zur Thromboseprophylaxe, z. B. mit Gerinnungshemmern wie Heparin,
-oder die Gabe von Insulin bei der Diabetestherapie wird sehr
-oft in Form von s. c.-Injektionen durchgeführt.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Kompetent pflegen
-
-▶ S. 590
-
-Injektionsarten ▶ S. 590
-Vor- und Nachteile ▶ S. 591
-Rechtliche Bestimmungen ▶ S. 593
-Injektionen
-
-Vorbereitung von Injektionen
-
-▶ S. 593
-
-Vorbereitung vor der Injektion ▶ S. 596
-Subkutane Injektionen ▶ S. 597
-Intramuskuläre Injektionen ▶ S. 598
-Intravenöse Injektionen ▶ S. 602
-
-Venöse Blutentnahme ▶ S. 603
-Das Kapitel vermittelt
-Kompetenzen im
-KB III.2
-
-Blutentnahme
-
-Intramuskuläre Injektion • Im Rahmen der intramuskulären
-Injektion (i. m.-Injektion) werden Flüssigkeiten in einen
-Muskel injiziert. Intramuskulär wird injiziert bei Impfungen
-(z. B. Tetanus-Immunglobulin), zur Schmerztherapie (Analgesie, z. B. Tramadolhydrochlorid, Piritramid), bei Resorptionsstörungen von Vitamin B12, B6 und Folsäure nach Magenteilresektionen (z. B. Pyridoxinhydrochlorid/Hydroxocobalaminhydrochlorid/Folsäure). Des Weiteren wird in der Gynäkologie und Geburtshilfe zur ante- und postpartalen Prophylaxe (Verhinderung vor- und nachgeburtlicher Komplikationen) und bei möglichen Rhesuskonstellationen (AntiD-Immunglobulin) intramuskulär injiziert.
-Intravenöse Injektionen • Sie (i. v.-Injektionen) kommen zum
-Einsatz, wenn ein rascher Wirkungseintritt erwünscht ist,
-z. B. bei Notfällen wie einem anaphylaktischen Schock. Dabei wird eine Vene punktiert und das Medikament direkt in
-die venöse Blutbahn injiziert.
-Weitere Injektionsarten • Seltene Injektionsarten, die ausschließlich der Arzt durchführt, sind die
-● intraarterielle Injektion (i. a.-Injektion): Dabei wird eine
-Arterie punktiert bzw. Medikamente werden in den arteriellen Blutstrom injiziert.
-● intraartikuläre Injektion: Injektion direkt in ein Gelenk,
-z. B. Hyaluronsäure bei Arthrose.
-● intrathekale Injektion: Injektion in den Liquorraum.
-● intraossäre Injektion (i. o.-Injektion): Injektionen direkt
-ins gut durchblutete Knochenmark (z. B. im Rahmen von
-pädiatrischen Notfällen).
-● intrakardial: Injektion direkt ins Herz im Notfall, z. B. bei
-Herzstillstand.
-
-Kapillare Blutentnahme ▶ S. 607
-Zentralvenösen Katheter (ZVK) ▶ S. 607
-Mögliche Fehlerquellen bei der Blutentnahme ▶ S. 608
-
-WISSEN TO GO
-Injektionsarten
-Injektionen werden nach ihrem Applikationsort unterschieden (▶ Abb. 24.1):
-● intrakutane Injektion (i. c.-Injektion): geringe Flüssigkeitsmengen werden in die Epidermis injiziert
-● subkutane Injektion (s. c.-Injektion): Injektion in die
-Subkutis
-● intramuskuläre Injektion (i. m.-Injektion): Injektion in
-einen Muskel
-● Intravenöse Injektionen (i. v.-Injektionen): Injektion in
-die venöse Blutbahn
-
-24.2.2 Vor- und Nachteile
-Vorteile
-Schneller Wirkungseintritt ohne Wirkstoﬀverlust • Im Vergleich zu Tabletten oder Tropfen tritt die Wirkung einer Injektion je nach Injektionsart rascher ein, z. B. bei einer i. v.Injektion nach 2–5 Minuten. Da der Wirkstoﬀ direkt an den
-Zielort gebracht wird, geht kein Wirkstoﬀ verloren, wie es
-z. B. bei der oralen Applikation über den Magen-Darm-Trakt
-der Fall ist. Eine systemische Wirkung im Gesamtorganismus wird damit jedoch nicht verhindert. Darüber hinaus
-sind verschiedene Medikamente nicht oral applizierbar, z. B.
-Insuline. Die Magensäure würde deren Eiweißmoleküle zerstören. Diese Medikamente müssen injiziert werden.
-Keine Magen-Darm-Beschwerden • Bestimmte oral verabreichte Medikamente, z. B. nicht steroidale Antirheumatika (NSAR), können die Magenschleimhaut angreifen und
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-591
-
-l
-24
-
-Injektionen und Blutentnahme
-Abb. 24.1 Injektionsarten und deren Injektionsbereiche, Injektionstiefen und Injektionswinkel.
-
-intrakutan (i.c.)
-
-subkutan (s.c.)
-
-intramuskulär (i.m.)
-
-intravenös (i.v.)
-
-2. Wahl
-
-1. Wahl
-
-90°
-90°
-45°
-
-Oberhaut
-
-Arterie
-Vene
-
-Unterhaut
-
-Muskel
-
-zu Ulzerationen (Geschwüren) führen. Injektionen umgehen
-den Magen-Darm-Trakt und vermeiden diese Beschwerden.
-Lokale Wirkung • Ein Wirkstoﬀ kann direkt dorthin gebracht
-werden, wo er gebraucht wird, z. B. bei der Injektion eines
-Lokalanästhetikums.
-Exakte Dosierbarkeit • Medikamentendosierungen werden
-oft nach Kilogramm/Körpergewicht des Pflegeempfängers
-berechnet. Medikamente, die über den Magen-Darm-Trakt
-verabreicht werden, sind weniger genau dosierbar als flüssige Medikamente aus einer Ampulle.
-Steuerung von Wirkstoﬀeintritt und -dauer • Je nach Applikationsort und Medikament können der Wirkstoﬀeintritt und
-die Wirkstoﬀdauer gesteuert werden. So gibt es Depotmedikamente, die nach einmaliger i. m.-Applikation bis zu 3 Monate oder länger wirken, z. B. das Haloperidol-Decanoat in
-der Therapie einer Schizophrenie.
-
-592
-
-Unabhängig von den Ressourcen des Pflegeempfängers • Nicht
-alle Pflegeempfänger können aufgrund von körperlichen
-oder psychischen Störungen Medikamente oral aufnehmen,
-z. B. bewusstlose Menschen oder Menschen mit einer Passagestörung des oberen Verdauungstrakts. Hier bietet die Injektion eine von den Ressourcen des Pflegeempfängers unabhängige Applikationsform.
-
-Nachteile
-Die Eigenständigkeit der Pflegeempfänger geht verloren –
-jemand muss spritzen oder das Spritzen muss gelernt werden. Nebenwirkungen und Komplikationen treten massiver
-und schneller auf. Es bestehen wesentlich mehr Verletzungsbzw. Komplikationsmöglichkeiten als bei der oralen oder
-dermalen Applikation. Näheres zu den möglichen Komplikationen der verschiedenen Injektionen finden Sie unter der
-jeweiligen Überschrift im weiteren Text.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Injektionen
-● Spritzentablett
-
-WISSEN TO GO
-
-● Spritze
-● Aufzieh- und Injektionskanüle
-● Injektionslösung (meist Medikament)
-
-Injektionen – Vor- und Nachteile
-● Vorteile:
-
-– schneller Wirkungseintritt ohne Wirkstoﬀverlust
-– Magenschleimhaut wird nicht angegriﬀen
-– lokale Wirkung
-– exakte Dosierung
-– Steuerung von Wirkstoﬀeintritt und -dauer, z. B. Depotmedikamente
-– unabhängig von den Ressourcen des Pflegeempfängers
-● Nachteile:
-– jemand muss spritzen oder das Spritzen muss gelernt
-werden
-– mehr Verletzungs- bzw. Komplikationsmöglichkeiten
-
-24.2.3 Rechtliche Bestimmungen
-Die Injektion ist ein invasiver Eingriﬀ in den Körper eines
-Menschen. Sie kann als Körperverletzung gewertet werden,
-wenn sie ohne Zustimmung der betroﬀenen Person, der Erziehungsberechtigten oder des Betreuers (z. B. bei Menschen
-mit Demenz) durchgeführt wird (§ 223 Strafgesetzbuch).
-Die Anordnungsverantwortung trägt bei einer Injektion
-immer der Arzt. Er legt die Applikationsform, das Medikament, die Dosierung sowie den Zeitpunkt fest. Es muss eine
-schriftliche Anordnung vorliegen, nach telefonischer Anordnung hat der Arzt diese zeitnah in der Akte des Pflegeempfängers zu dokumentieren. Die Injektion selbst kann er an
-Pflegende delegieren. Voraussetzung ist, dass diese hinreichend geschult sind und der Arzt sich von den fachlichen Fähigkeiten überzeugt hat.
-Führt eine Pflegefachkraft eine Injektion aus, muss sie über
-Wirkung und Nebenwirkungen des Medikaments Bescheid
-wissen. Darüber hinaus muss sie hygienisch arbeiten und den
-Pflegeempfänger hinreichend über die Maßnahme informieren. Bei unvorhersehbaren Komplikationen (z. B. Unverträglichkeit) muss die Pflegefachkraft Sofortmaßnahmen bis zum
-Eintreﬀen des Arztes einleiten. Sie hat die Durchführungsverantwortung und kann für Fehler haftbar gemacht werden.
-Welche Art der Injektion eine Pflegefachkraft durchführen
-darf, hängt immer von hausinternen Standards ab.
-
-! Merke Persönliche Kompetenz
-
-Wenn Sie sich nicht sicher sind, dass Sie eine delegierte Aufgabe
-fachlich fehlerfrei durchführen können, müssen Sie das Weigerungsrecht in Anspruch nehmen und die Aufgabe ablehnen.
-
-● Hautdesinfektionsmittel
-● Handschuhe, Tupfer
-● Abwurfbehälter
-● ggf. Pflaster
-● Material zur Beschriftung
-
-Spritzen • Eine Spritze besteht aus mehreren Bestandteilen:
-einem Spritzenzylinder mit Graduierung, einem beweglichen Spritzenkolben, der Halteplatte sowie dem Spritzenkonus. Der Spritzenkonus hat entweder einen Luer-Slip-Ansatz zum Aufstecken der Kanüle oder einen Luer-Lock-Ansatz zum Aufdrehen der Kanüle (▶ Abb. 24.2).
-Kanülen • Die Einwegkanülen sind mit einem Farbcodesystem (nach ISO 6009 bzw. DIN 13095) versehen und werden
-mittels der Maßeinheit „Gauge“ klassifiziert. Diese gibt bei
-Kanülen den Außendurchmesser an. Je höher der Wert, desto geringer der Außendurchmesser der Kanüle. Die Pflegefachkraft sucht anhand der Injektionsart, des Injektionsorts
-und der individuellen Konstitution des Pflegeempfängers
-die passende Kanülengröße aus (▶ Abb. 24.3). Bei der Kanülenwahl zum Aufziehen einer Flüssigkeit muss deren Konsistenz beachtet werden.
-
-! Merke Größe
-
-Je höher die Gauge-Zahl, desto geringer ist der Durchmesser der Kanüle.
-Injektionslösung/Medikamente • Medikamente können nur in
-flüssiger Form injiziert werden. Sie werden in Ampullen bereitgestellt. Es gibt Glasampullen zum Brechen oder Ansägen, Stechampullen mit einem Gummistopfen, durch den
-mittels einer Kanüle Flüssigkeiten aufgezogen werden, sowie Brechampullen aus Kunststoﬀ, bei denen eine Plastiklasche abzubrechen ist.
-Sterilität prüfen • Spritzen, Kanülen und Injektionslösungen
-sind steril aufbereitet und verpackt. Vor Injektionen sollten
-die Haltbarkeitsdaten von Material und Injektionslösungen
-geprüft werden. Ist die Sterilzeit des Materials oder das Verfallsdatum des Medikaments abgelaufen oder ist die Verpackung beschädigt, muss es sofort entsorgt werden, da die
-Sterilität dann nicht mehr gewährleistet ist.
-Abb. 24.2 Spritzenkonus.
-
-24.2.4 Vorbereitung von
-Injektionen
-Material
-Bevor Sie mit dem Richten der Materialien/Medikamente
-beginnen, schließen Sie Türen und Fenster (Zugluft vermeiden). Anschließend führen Sie eine Wischdesinfektion der
-Arbeitsfläche durch (Handschuhe tragen!), verwerfen die
-Handschuhe und desinfizieren die Hände. Ist die Arbeitsfläche nach Ablauf der Einwirkzeit vollständig getrocknet, können die Materialien vorbereitet werden. Dabei nicht über
-dem Material sprechen, husten, niesen. Folgende Materialien werden benötigt:
-
-Links eine Einmalspritze mit Luer-Slip-Ansatz, rechts mit LuerLock-Ansatz. Foto: K. Oborny, Thieme
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-593
-
-l
-24
-
-Injektionen und Blutentnahme
-Abb. 24.3 Injektionskanülen und deren Verwendung.
-Gauge
-
-27
-
-26
-
-24
-
-23
-
-23
-
-22
-
-21
-
-20
-
-19
-
-grau
-
-braun
-
-lila
-
-blau
-
-violett
-
-schwarz
-
-grün
-
-gelb
-
-weiß
-
-0,8
-
-0,9
-
-1,1
-
-Farbe
-
-Außendurchmesser (mm)
-
-0,40
-
-0,40 –
-0,42
-
-0,45
-
-0,55
-
-0,66
-
-0,6 – 0,65
-
-0,7
-
-Länge (mm)
-
-20
-
-12 – 16
-
-12
-
-25
-
-25
-
-30 – 32
-
-30 – 32
-
-s.c.
-Insulin,
-Heparin
-
-s.c.
-
-s.c.
-
-i.m.
-
-Verwendung
-
-s.c.
-Insulin
-
-40
-
-50
-
-40
-
-i.m.-/i.v.-Injektionen
-
-30
-
-70
-
-Aufziehkanüle/
-Blutabnahme
-
-Erwachsener
-45°
-
-90°
-
-90°
-
-45°
-
-45°
-
-45°
-
-45°
-
-45°
-
-45°
-
-45°
-
-45°
-
-90°
-
-90°
-
-90°
-
-45°
-
-45°
-
-90°
-
-45°
-
-45°
-
-45°
-
-Erwachsener
-Untergewicht
-
-Erwachsener
-Übergewicht
-
-Kind groß
-
-Säugling
-
-Je nach Injektionsart, Alter und Konstitution des Pflegeempfängers werden verschiedene Kanülen ausgewählt. Welche Kanülen bei
-welchen Pflegeempfängern für die s. c.- oder i. m.-Injektionen verwendet werden können, ist durch einen Haken markiert, der jeweilige Einstichwinkel bzw. Injektionsbereich ist angegeben. Die am häufigsten verwendeten Kanülen sind fett hervorgehoben.
-
-594
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Injektionen
-
-Anordnung überprüfen, Regeln beachten
-Während Pflegende die Anordnung des Arztes noch einmal
-überprüfen und die Injektion vorbereiten, sind Ruhe und
-Konzentration erforderlich!
-● Die 6-R-Regel gilt es sowohl beim Richten der Injektion als
-auch bei der Verabreichung zu beachten:
-– Richtiger Pflegeempfänger
-– Richtiges Medikament
-– Richtige Dosierung
-– Richtige Applikationsform
-– Richtiger Zeitpunkt
-– Richtige Dokumentation
-● Standards und Bestimmungen zum Schutz vor toxischen
-Substanzen müssen beachtet werden, z. B. spezielle Einmalhandschuhe im Umgang mit Chemotherapeutika.
-● Zum Schutz vor Nadelstichverletzungen müssen sicherheitstechnische Instrumente (S. 309) genutzt werden und
-ein Kanülenabwurf am Arbeitsplatz bereitstehen.
-
-● Glasampulle
-
-an der dafür vorgesehenen Sollbruchstelle
-mit einem Tupfer öﬀnen (Gefahr: Schnittverletzung!)
-(▶ Abb. 24.4a); Glasampullen ohne markierte Sollbruchstelle mittels Ampullensäge öﬀnen
-● Aufziehkanüle (möglichst kleines Lumen wählen, damit
-feine Glassplitter nicht mitaufgezogen werden) und Spritze der Verpackung entnehmen. Verpackung dabei nur an
-der dafür vorgesehenen perforierten Stelle öﬀnen, um Sterilität zu wahren. Beim Zusammensetzen von Spritze und
-Kanüle den Spritzenkonus und den Kanülenansatz nicht
-mit den Händen berühren (▶ Abb. 24.4b).
-● Injektionslösung mit Aufziehkanüle aufziehen, dabei oberen
-Rand der Ampulle nicht berühren (unsteril) (▶ Abb. 24.4c)
-Abb. 24.4 Aufziehen eines Medikaments aus einer
-Glasampulle.
-
-Injektionslösungen werden in unterschiedlichen Mengen
-und Dosierungen angeboten. Dennoch kann es vorkommen,
-dass Pflegefachkräfte eine geringere Menge mit einem bestimmten Wirkstoﬀanteil aus der Ampulle entnehmen müssen. Dies berechnen Sie wie folgt:
-
-Beispiel Formel
-ml des Medikaments ÷ mg des Medikaments × angeordnete mg = Menge der aufzuziehenden Injektionslösung
-
-a
-
-Rechenbeispiel:
-Eine Brechampulle enthält 20 mg eines Medikaments auf 10 ml
-Injektionslösung. Ihr Patient soll aber nur 5 mg des Medikaments erhalten.
-10 ml Injektionslösung ÷ 20 mg Dosis × 5 mg benötigte
-Dosis = 2,5 ml Injektionslösung aufziehen
-
-WISSEN TO GO
-Injektion – Vorbereitung
-
-b
-
-● Material: Spritzentablett, Spritze, Aufzieh- und Injekti-
-
-onskanüle, Injektionslösung, Desinfektionsmittel, Handschuhe, Tupfer, Abwurfbehälter, Stift
-● Injektionslösung/Medikamente:
-Glasampullen zum
-Brechen oder Ansägen, Stechampullen mit Gummistopfen sowie Brechampullen aus Kunststoﬀ
-● Sterilität prüfen: Haltbarkeitsdaten und Unversehrtheit
-● 6-R-Regel: Standards und Bestimmungen beachten
-
-Injektionslösung aufziehen
-Aufziehen aus einer Glasampulle
-● unsterile Handschuhe anziehen
-● Arbeitsfläche und Spritzentablett wischdesinfizieren (Ein-
-
-wirkzeit beachten!)
-verwerfen, hygienische Händedesinfektion
-durchführen
-● Material vorbereiten (6-R-Regel!)
-● Injektionslösung aus dem Ampullenkopf klopfen (Glasolive leicht beklopfen)
-● Handschuhe
-
-c
-
-a Der Tupfer wird über die gesamte Glasolive der Ampulle gelegt und abgebrochen.
-b Spritze und Kanüle werden zusammengesetzt, ohne Spritzenkonus und Kanülenansatz zu berühren.
-c Die Aufziehkanüle wird senkrecht in die Ampulle eingeführt,
-und die Flüssigkeit wird durch Zurückziehen des Kolbens aufgezogen.
-Foto: K. Oborny, Thieme
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-595
-
-l
-24
-
-Injektionen und Blutentnahme
-● Spritze vollständig entlüften (leichtes Beklopfen)
-
-Abb. 24.5 Trockensubstanz auflösen mit Überleitungskanüle.
-
-● Aufziehkanüle von Hand verwerfen, um eine Kontaminati-
-
-on des Spritzenkonus zu vermeiden
-● Injektionskanüle aufsetzen
-● Ampulle bis zur Gabe bei der Spritze belassen (6-R-Regel
-
-unmittelbar vor Gabe erneut anwenden)
-● Fertige Injektion auf das vorbereitete Spritzentablett legen
-
-und je nach hausinternem Standard Etikett mit Name des
-Pflegeempfängers und Uhrzeit versehen.
-
-Aufziehen aus einer Stechampulle
-● unsterile Handschuhe anziehen
-● Arbeitsfläche und Spritzentablett wischdesinfizieren (Ein-
-
-wirkzeit beachten!)
-verwerfen, hygienische Händedesinfektion
-durchführen
-● Material vorbereiten (6-R-Regel!)
-● Verschluss der Stechampulle öﬀnen und Gummistopfen
-mit einem mit Desinfektionsmittel getränkten Zellstoﬀtupfer desinfizieren, Einwirkzeit beachten (30 s)
-● Kanüle und Spritze aseptisch zusammensetzen, Spritze
-mit so viel Luft füllen, wie Flüssigkeit entnommen werden
-soll, und in die Ampulle injizieren (sonst kommt es zum
-Unterdruck in der Ampulle und die Entnahme ist schwer
-bis gar nicht möglich)
-● Injektionsflüssigkeit entnehmen
-● Spritze vollständig entlüften (leichtes Beklopfen)
-● Aufziehkanüle von Hand verwerfen, um eine Kontamination des Spritzenkonus zu vermeiden
-● Injektionskanüle aufsetzen und vorbereitete Injektion beschriftet auf dem Spritzentablett ablegen
-● 6-R-Regel unmittelbar vor Gabe erneut anwenden
-● Handschuhe
-
-Wenn es sich bei der Entnahme um ein Mehrdosenentnahmebehältnis mit Mini-Spike handelt, wird das Anbruchdatum mit Uhrzeit und Handzeichen auf der Ampulle vermerkt. Die Herstellerangaben zur Lagerung (z. B. Kühlschrank, lichtgeschützt) und zur Haltbarkeit der angebrochenen Ampulle (meist 24 Stunden) müssen beachtet werden.
-
-Aufziehen und Mischen von Trockensubstanzen
-Bei Ampullen mit Trockensubstanz werden beide Aufziehvarianten vereinigt, da der Trockensubstanz meist eine
-Brechampulle mit Aqua destillata beigefügt ist oder die Flüssigkeit einem Mehrdosenbehältnis entnommen werden
-muss. Die Trockensubstanz kann auch mithilfe einer Überleitungskanüle mit dem Lösungsmittel vermischt werden.
-● unsterile Handschuhe anziehen
-● Arbeitsfläche wischdesinfizieren (Einwirkzeit beachten!)
-● Handschuhe verwerfen, hygienische Händedesinfektion
-durchführen
-● Material vorbereiten (6-R-Regel!)
-● Verschluss der Stechampulle öﬀnen und Gummistopfen
-mit einem mit Desinfektionsmittel getränkten Zellstoﬀtupfer desinfizieren, Einwirkzeit beachten (30 s)
-● Überleitungskanüle auf der einen Seite in den Einstichstopfen stechen
-● auf der anderen Seite der Überleitungskanüle die Stechampulle mit der Trockensubstanz einstechen
-● Lösungsmittel vollständig überleiten und Trockensubstanz
-komplett auflösen (▶ Abb. 24.5)
-
-596
-
-Foto: K. Oborny, Thieme
-
-! Merke Vollständige Auflösung
-
-Achten Sie darauf, dass die Trockensubstanz immer restlos aufgelöst
-ist, bevor Sie die Injektionslösung in die Spritze aufziehen. Manchmal hilft es, die Trockensubstanz vor der Überleitung des Lösungsmittels kurz vorsichtig anzuklopfen, damit sich das Pulver vom Boden etwas löst. Anschließend das Lösungsmittel unter leichtem
-Schwenken einlaufen lassen. Schütteln ist wegen der Empfindlichkeit der ungelösten Substanz und möglicher Schaumbildung nicht
-erlaubt.
-
-WISSEN TO GO
-Injektionslösung aufziehen
-● Wischdesinfektion
-
-(Handschuhe!), hygienische Händedesinfektion durchführen
-● Material vorbereiten (6-R-Regel!)
-● Glasampulle: Restflüssigkeit aus dem Ampullenkopf herausklopfen, Brechampulle mithilfe eines Tupfers öﬀnen
-● Stechampulle: Verschlusskappe entfernen und Gummistopfen desinfizieren
-● Spritze und Aufziehkanüle aseptisch zusammensetzen
-● Schutzkappe der Aufziehkanüle entfernen und Kanüle in
-die Ampulle einführen
-● Injektionsflüssigkeit in die Spritze ziehen, Spritze bis zum
-Konus entlüften
-● Aufziehkanüle verwerfen und Injektionskanüle auf den
-Spritzenkonus setzen
-● Etikett mit Name des Pflegeempfängers und Uhrzeit versehen, die Ampulle verbleibt bis zur Gabe auf dem Spritzentablett
-● 6-R-Regel unmittelbar vor Gabe erneut anwenden
-● Mehrdosenbehältnisse mit Mini-Spike mit Anbruchdatum und Handzeichen versehen
-
-24.2.5 Vorbereitung vor der
-Injektion
-Die Vorbereitung und ersten Handlungsschritte bei Injektionen verlaufen unabhängig von der gewählten Methode immer gleich bzw. sehr ähnlich:
-● bei Betreten des Patientenzimmers hygienische Händedesinfektion durchführen
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Injektionen
-● Pflegeempfänger über Injektion und Durchführung infor-
-
-mieren
-● mündliches Einverständnis einholen
-● 6-R-Regel erneut beachten
-● unsterile Handschuhe anziehen, Wischdesinfektion der
-Arbeitsfläche (Nachttisch) durchführen, Einwirkzeit beachten
-● Handschuhe verwerfen, hygienische Händedesinfektion
-● Spritzentablett mit zuvor vorbereiteten Materialien auf
-Nachttisch bereitstellen
-● mögliche Injektionsgebiete inspizieren und geeignete Injektionsstelle ermitteln
-● bei Kindern vor der Injektion EMLA Pflaster mit lokalanästhesierender Wirkung kleben
-
-24.2.6 Subkutane Injektionen
-Bei der subkutanen Injektion werden isotone wässrige Lösungen in das Unterhautfettgewebe (Subkutis) injiziert. Die
-Resorptionszeit bis zum Wirkungseintritt beträgt ca. 30 Minuten. Diese Injektionsart wird i. d. R. bei der Insulin- oder
-Antikoagulanzientherapie (z. B. Heparin) angewendet.
-
-Mögliche Injektionsorte
-Eine s. c.-Injektion erfolgt an Orten mit ausgeprägtem Fettgewebe (▶ Abb. 24.3):
-● Bereiche 1. Wahl: Unterbauch, Oberschenkel und Gesäß
-● Bereiche 2. Wahl: Oberbauch und Oberarm
-Bei einer Langzeitapplikation, z. B. bei Insulin- oder Heparininjektionen, wird empfohlen, einen Spritzenkalender zu verwenden, um durch einen regelmäßigen Wechsel der Injektionsstellen das Gewebe zu schonen. Siehe auch „Diabetes
-mellitus“ (S. 1110).
-
-Kontraindikationen
-Subkutane Injektionen dürfen nicht erfolgen bei
-● gestörter Hautdurchblutung im Injektionsgebiet, da eine
-Resorption und Verarbeitung verzögert erfolgen oder
-gänzlich fehlen, z. B. in Narbengewebe, Muttermale oder
-gelähmte Extremitäten.
-● Entzündungen sowie Ödemen (Wasseransammlungen)
-und Hauterkrankungen im Injektionsgebiet.
-● geplanter Operation in das OP-Areal oder in die Nähe
-eines Wundgebiets.
-● Schockzuständen, da die Haut- und Muskulaturdurchblutung unzureichend sind und keine Verarbeitung des Medikaments erfolgen kann.
-
-Durchführung
-● Vorbereitung vor der Injektion (S. 596)
-● Pflegeempfänger dabei unterstützen, eine für die Injektion
-
-angenehme und geeignete Position einzunehmen
-● Händedesinfektion und unsterile Handschuhe anziehen
-● Hautdesinfektion des ausgewählten Injektionsortes durch-
-
-führen (Einwirkzeit beachten!)
-● ca. 2–3 cm große Hautfalte mit 3 Fingern bilden, dabei In-
-
-jektionsstelle nicht berühren
-in die Hautfalte einstechen. Abhängig vom bestehenden Fettgewebe und von der ausgewählten Injektionskanüle im 90°- oder 45°-Winkel zur Haut einstechen. Bei
-sehr kachektischen (ausgezehrten) Pflegeempfängern sollte ein 45°-Einstichwinkel gewählt werden, damit wirklich
-ins Subkutangewebe gespritzt wird und nicht in den Muskel. Wenn kurze G26-Kanülen (braun) oder Insulin-PENKanülen verwendet werden, erfolgt der Einstich im 90°Winkel (▶ Abb. 24.6).
-● Medikament langsam injizieren
-● Kanüle zügig entfernen, Hautfalte loslassen und Einstichstelle leicht mit einem Tupfer komprimieren (nicht komprimieren bei Heparin, erhöht die Hämatombildung!)
-● Kanüle sicher abwerfen (bei neueren Kanülensystemen
-und Fertigspritzen wird der Stichschutz aktiviert; kein Recapping!), Material entsorgen, Handschuhe ausziehen,
-Händedesinfektion, Dokumentation, auf Wirkung und Nebenwirkungen achten
-● Zügig
-
-! Merke Insulininjektion
-
-Bei der Insulininjektion sollte die Nadel so viele Sekunden in der Haut
-verbleiben, wie Insulineinheiten (IE) appliziert wurden (maximal
-10 Sekunden). Ziel ist es, dass das Medikament nicht aus dem Stichkanal zurückläuft und sich ein kleines Insulindepot unter der Haut
-bildet.
-Bei Säuglingen und Kleinkindern kann die subkutane Injektion an den gleichen Körperstellen wie bei einem Erwachsenen erfolgen, Einstichtiefe und Einstichwinkel müssen allerdings entsprechend angepasst werden.
-
-Komplikationen
-Während und nach einer Injektion kann es zur Hämatombildung kommen. Eine Hämatombildung kann minimiert werAbb. 24.6 Subkutane Injektion. (Video)
-
-Material
-● Spritzentablett
-● Desinfektionsmittel zur Händedesinfektion
-● unsterile Handschuhe
-● Hautdesinfektionsmittel
-● mindestens 2 Tupfer
-● ggf. Pflaster
-● Medikament
-● geeignete Injektionskanüle
-● Spritze
-● Kanülenabwurf
-● Abwurfschale
-
-In die stehende Hautfalte wird ein Medikament im 90°-Winkel
-injiziert. Sehen Sie sich dazu das Video „Subkutane Injektion“
-an, indem Sie die Abbildung scannen oder den Code 342401
-eingeben. Foto: K. Oborny, Thieme
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-597
-
-l
-24
-
-Injektionen und Blutentnahme
-den, indem die Injektion ins subkutane Gewebe immer nur
-bei stehender Hautfalte durchgeführt und diese nach dem
-Einstich nicht sofort losgelassen wird. Die Injektionsstelle
-sollte nicht gerieben und starkes Komprimieren der Einstichstelle sollte ebenfalls vermieden werden (besonders
-nach Heparininjektion), um Blutungen aus dem Stichkanal
-zu verhindern.
-Wird nicht hygienisch gearbeitet, kann es durch Keimverschleppung zu einem Spritzenabszess kommen, insbesondere bei Diabetikern und immunsupprimierten Pflegeempfängern. Achten Sie immer auf eine einwandfreie aseptische Arbeitsweise. Wechseln Sie bei Langzeitapplikation regelmäßig
-das Injektionsgebiet, um das Gewebe zu schonen.
-
-Abb. 24.7 Injektionsbereich der i. m.-Injektion nach von
-Hochstetter.
-M. gluteus
-medius
-
-N. gluteus
-superior
-
-Crista iliaca
-Spina iliaca
-anterior superior
-ventroglutäales
-Injektionsfeld
-N. ischiadicus
-Trochanter
-major
-
-WISSEN TO GO
-Subkutane Injektion
-Subkutan werden isotone wässrige Lösungen in das Unterhautfettgewebe (Subkutis) injiziert.
-● Wirkungseintritt: nach etwa 30 Minuten
-● Injektionsort: z. B. Bauch oder Oberschenkel
-● Kontraindikationen: Entzündungen, Ödeme, Wunden,
-Hauterkrankungen, OP-Areal
-● Durchführung:
-aseptische Arbeitsweise beachten,
-Handschuhe zum Selbstschutz tragen, 6-R-Regel beachten, Einstich in Hautfalte im 45°- oder 90°-Winkel, langsam injizieren, Spritze zügig entfernen, nur leicht komprimieren, Injektionsgebiet wechseln
-● Komplikationen: Hämatombildung, Spritzenabszess
-
-24.2.7 Intramuskuläre Injektionen
-Bei der intramuskulären Injektion werden isotone wässrige,
-aber auch ölige Lösungen in das Skelettmuskelgewebe injiziert. Die Resorptionszeit ist kürzer als bei einer subkutanen
-Injektion, jedoch nicht so kurz wie bei einer intravenösen.
-Die Wirkung tritt nach etwa 10–20 Minuten ein. Beispiele
-für intramuskuläre Injektionen sind:
-● Impfungen, z. B. Tetanus, Diphtherie, Hepatitis usw.
-● Verabreichung von öligen Suspensionen, z. B. wenn gewisse Wirkstoﬀe nicht oder nicht mehr über den MagenDarm-Trakt resorbiert und verarbeitet werden können,
-z. B. Cyanocobalamin-(Vitamin B12)-Zufuhr nach Magenteilresektionen. Aber auch andere Vitaminkomplexpräparate finden in Form von i. m.-Injektionen Anwendung.
-● Einbringen von Depotpräparaten, z. B. Haloperidol-Depot.
-
-Mögliche Injektionsorte
-Für die i. m.-Injektion stehen vor allem folgende Muskelpartien zur Verfügung: der Musculus gluteus medius (mittlerer
-Gesäßmuskel), der darunterliegende Gluteus minimus (kleiner Gesäßmuskel) der Hüfte und der Musculus vastus lateralis des Oberschenkels (▶ Abb. 24.7).
-Eine Injektion in den Musculus deltoideus (Deltamuskel)
-des Oberarms wird häufig bei Impfungen durchgeführt. Diese
-Impfungen erfolgen durch den Arzt. Pflegende führen i. d. R.
-keine i. m.-Injektionen in den Oberarm durch. Bei dieser Methode kann es zur Lähmung des Nervus radialis kommen, sie
-gehört zur zweithäufigsten Nervenlähmungskomplikation.
-
-598
-
-M. gluteus
-maximus
-
-Bei der Injektionsmethode nach von Hochstetter werden die
-wichtigen Nerven N. ischiadicus (Ischiasnerv) und N. gluteus superior nicht gefährdet. Die 3 Markierungspunkte des „VonHochstetter-Dreiecks“ sind die Spina iliaca anterior superior
-(Darmbeinstachel), die Crista iliaca (Darmbeinkamm) und der
-Trochanter major (großer Rollhügel).
-
-Kontraindikationen
-Pflegende sollten vor der Injektion auf die allgemeinen Kontraindikationen achten, die bereits bei der s. c.-Injektion besprochen wurden (S. 597). Des Weiteren sind folgende Kontraindikationen zu beachten:
-Pflegeempfänger mit gesteigerter Blutungsneigung • Bei jeder
-Injektion werden kleinste Blutgefäße verletzt. Ist die Gerinnung herabgesetzt, besteht nach der i. m.-Injektion die Gefahr der Einblutung in den Muskel (Hämatombildung). Gefährdete Pflegeempfängergruppen sind: Pflegeempfänger
-unter Antikoagulationstherapie (medikamentöse Herabsetzung der Blutgerinnung), Pflegeempfänger vor, unter und
-nach Lysetherapie (medikamentöse Auflösung von Thromben), aber auch Pflegeempfänger mit angeborenen Blutgerinnungskrankheiten wie Hämophilie (Bluterkrankheit).
-Sie dazu auch Kap. 45.5 und Kap. 50.8.
-Pflegeempfänger mit Verdacht auf ein Infarktgeschehen • Bei
-jeder i. m.-Injektion wird durch den Einstich und die injizierte Flüssigkeit Muskelgewebe zerstört. Dabei werden Enzyme freigesetzt, die in der Herzinfarktdiagnostik ermittelt
-werden, um einen Gewebeuntergang zu diagnostizieren,
-z. B. das Gesamt-CK (Creatin-Kinase) und das CK-MB (CKMyokardtyp). i. m.-Injektionen erhöhen die Werte dieser Enzyme und führen zu einem verfälschten Ergebnis.
-
-WISSEN TO GO
-Intramuskuläre Injektion
-Intramuskulär werden isotone wässrige und ölige Lösungen in das Skelettmuskelgewebe injiziert. Die Wirkung tritt
-nach etwa 10–20 Minuten ein. Verabreicht werden z. B:
-● Impfungen, z. B. Tetanus, Diphtherie, Hepatitis
-● ölige Suspensionen, z. B. Vitaminkomplexpräparate
-● Depotpräparate, z. B. Haloperidol-Depot
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Injektionen
-
-Kontraindikationen:
-● allgemein: siehe s. c.-Injektion
-● gesteigerte Blutungsneigung
-● Verdacht auf ein Infarktgeschehen
-Mögliche Injektionsorte:
-● Musculus gluteus medius (mittlerer Gesäßmuskel)
-● Musculus gluteus minimus (kleiner Gesäßmuskel)
-● Musculus vastus lateralis des Oberschenkels
-
-– Die Injektionsstelle befindet sich im unteren Drittel des
-durch Mittelfinger und Zeigefinger gebildeten Dreiecks
-(▶ Abb. 24.8c).
-– Die Stelle wird markiert, z. B. indem man die Schutzkappe der Kanüle leicht auf die Haut drückt (▶ Abb. 24.8c).
-Abb. 24.8 Injektionsort bestimmen nach von Hochstetter.
-
-Material
-● Spritzentablett
-● Desinfektionsmittel zur Händedesinfektion
-● unsterile Handschuhe
-● Hautdesinfektionsmittel
-● sterile Tupfer
-● steriles Pflaster
-● Medikament
-● geeignete Injektionskanüle (G20-Kanüle [gelb] für Erwach-
-
-sene, G21-Kanüle [grün] für kachektische Pflegeempfänger,
-Säuglinge und Kinder) (▶ Abb. 24.3)
-● Spritze
-● Kanülenabwurf
-● Abwurfschale
-
-a
-
-Durchführung
-Zum Auﬃnden der richtigen Injektionsstelle gibt es verschiedene Methoden. Nur wenn diese korrekt angewendet werden,
-ist sichergestellt, dass es während der Injektion nicht zu Komplikationen wie Nervenschädigung und Fehlinjektion in ein
-Gefäß kommt. Im Verlauf werden die Methode der ventroglutealen Injektion nach von Hochstetter, die Crista-Methode
-nach Sachtleben und die Oberschenkelinjektion beschrieben.
-b
-
-Ventrogluteale Injektion nach von Hochstetter
-Die ventrogluteale Injektion nach von Hochstetter gilt bei
-Erwachsenen und Jugendlichen als die sicherste Methode,
-da sie das Risiko von Nervenschädigungen und fehldurchgeführte Injektionen in ein Gefäß reduziert. Das Injektionsgebiet, das durch diese Methode aufgefunden wird, weist
-wenige Nerven und Blutgefäße auf (▶ Abb. 24.7).
-Die nachfolgende Durchführung beschreibt die Bestimmung des Injektionsortes sowie die anschließende Injektion
-mit der rechten Hand.
-Injektionsort bestimmen
-● Vorbereitung vor der Injektion (S. 596)
-● Pflegeempfänger ggf. dabei unterstützen, sich auf die linke
-
-Seite zu legen. Die Beine sollten leicht angewinkelt sein.
-Ist die Seitenlage nicht möglich, kann die Injektion auch in
-Rückenlage erfolgen.
-● Die Pflegefachkraft steht hinter dem Rücken des Pflegeempfängers. Der Pflegeempfänger schaut also von der
-Pflegefachkraft weg.
-● hygienische Händedesinfektion, unsterile Handschuhe anziehen
-● 3 Markierungspunkte aufsuchen mit der rechten Hand:
-– Der Mittelfinger tastet den Darmbeinstachel (▶ Abb. 24.8a).
-– Der Zeigefinger wird maximal gespreizt und tastet entlang des Darmbeinkamms (▶ Abb. 24.8a).
-– Von dort aus wird der Zeigefinger nun ca. 2 cm in Richtung der Oberschenkelvorderseite verdreht, sodass der
-Handteller auf dem großen Rollhügel (Trochanter major)
-zu liegen kommt. Der Mittelfinger bleibt dabei auf dem
-Darmbeinstachel liegen (▶ Abb. 24.8b).
-
-c
-
-Die Bestimmung der Markierungspunkte zur i. m.-Injektion erfolgt in der Bildserie mit der rechten Hand, ebenso die Durchführung der Injektion. Der Pflegeempfänger liegt auf der linken
-Seite. Sie stehen hinter dem Pflegeempfänger.
-Foto: K. Oborny, Thieme
-
-a Mit dem Mittelfinger den Darmbeinstachel tasten. Zeigefinger maximal abspreizen und entlang des Darmbeinkamms
-nach oben tasten.
-b Zeigefinger ca. 2 cm in Richtung der Oberschenkelvorderseite
-verschieben. Dadurch kommt der Handteller auf dem großen
-Rollhügel zu liegen. Der Mittelfinger bleibt dabei auf dem
-Darmbeinstachel liegen.
-c Die Injektionsstelle befindet sich im unteren Drittel zwischen
-Mittel- und Zeigefinger. Injektionsstelle mit Schutzkappe der
-Kanüle markieren.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-599
-
-l
-24
-
-Injektionen und Blutentnahme
-Injektion durchführen
-● Injektionsgebiet mit alkoholischem Hautdesinfektionsmittel desinfizieren: sprühen, wischen, sprühen. Einwirkzeit
-von 30 s beachten.
-● Haut leicht spannen und Kanüle senkrecht zur Hautoberfläche zügig einstechen. Dabei die Kanüle nicht bis zum
-„Anschlag“ einstechen, sondern einen ca. 1 cm großen Sicherheitsabstand zwischen Haut und Nadelanschlussadapter belassen. Danach den Nadelanschlussadapter mit Daumen und Zeigefinger fassen und aspirieren. Kommt kein
-Blut bzw. „nichts“, kann injiziert werden. Kommt bei der
-Aspiration Blut, wurde ein Blutgefäß getroﬀen. Die Injektion sofort stoppen, die Kanüle entfernen, die Einstichstelle komprimieren und die Injektionslösung verwerfen. Die
-Injektion an einer anderen Stelle mit neuem Material wiederholen.
-● Die Injektionslösung langsam injizieren und den Pflegeempfänger dabei genau beobachten. Treten starke
-Schmerzen auf (Brennen), die Injektion sofort abbrechen,
-den Arzt informieren und die Injektion an einer anderen
-Stelle wiederholen. Tritt ein Kribbeln auf, kann das
-schmerzempfindliche Periost (Knochenhaut) betroﬀen
-sein, dann die Spritze etwas zurückzuziehen und langsam
-weiterinjizieren.
-● Nach der Applikation die Kanüle zügig herausziehen, die
-Injektionsstelle mittels eines sterilen Tupfers leicht komprimieren und ein steriles Pflaster aufkleben.
-Nachsorge • Bei neueren Fertigspritzen und Kanülensystemen wird der Stichschutz aktiviert, um eine Eigenverletzung
-an der gebrauchten Kanüle zu verhindern, und die Kanüle
-noch am Bett des Pflegeempfängers in den mitgeführten
-Abwurfbehälter entsorgt. Abschließend unterstützt man
-den Pflegeempfänger ggf. dabei, wieder eine angenehme
-Position einzunehmen, erkundigt sich nach dem Befinden,
-legt die Rufglocke in Reichweite, entsorgt die Materialien
-sachgerecht, wischt den Nachttisch ab und dokumentiert
-die durchgeführte Injektion im Dokumentationssystem.
-
-Injektionsort bestimmen
-● Vorbereitung vor der Injektion (S. 596)
-● Pflegeempfänger ggf. dabei unterstützen, sich auf die
-rechte Seite zu legen. Die Beine sollten leicht angewinkelt
-sein.
-● Die Pflegefachkraft steht vor dem Pflegeempfänger, könnte diesem also ins Gesicht sehen.
-● hygienische Händedesinfektion, unsterile Handschuhe anziehen
-● Im nächsten Schritt legt die Pflegefachkraft ihre linke
-Hand so in die Flanke des Pflegeempfängers, dass der Zeigefinger am Darmbeinkamm (Crista iliaca) liegt
-(▶ Abb. 24.9a).
-● Die rechte Hand schließt an. Je nach Körpergröße des Pflegeempfängers werden nun 1–3 Querfinger der rechten
-Hand unterhalb der Crista iliaca auf der gedachten Frontallinie über dem Trochanter major (großer Rollhügel) angelegt (▶ Tab. 24.1).
-● Der kleine Finger wird abgespreizt. Die Injektionsstelle befindet sich zwischen kleinem Finger und Ringfinger
-(▶ Abb. 24.9b).
-● Die Stelle wird markiert, z. B. indem man die Schutzkappe
-der Kanüle leicht auf die Haut drückt.
-Injektion durchführen und Nachsorge • Das weitere Vorgehen
-erfolgt analog der Beschreibung der ventroglutealen i. m.-Injektion nach von Hochstetter (s. o.).
-
-Tab. 24.1 Anzahl der Querfinger je nach Körpergröße bei
-der Crista-Methode.
-
-Ventrogluteale Injektion nach Sachtleben
-(Crista-Methode)
-
-Körpergröße
-
-Einstichstelle unterhalb des
-Beckenkamms
-
-Säugling bis 75 cm Körpergröße
-
-1 Querfinger (ca. 2,5 cm)
-
-Kleinkinder bis 125 cm Körpergröße
-
-2 Querfinger (ca. 5 cm)
-
-Schulkinder und Erwachsene
-
-3 Querfinger (ca. 7,5 cm)
-
-Die Crista-Methode nach Sachtleben eignet sich besonders
-bei Kindern, da diese Methode die Körpergröße beim Auﬃnden der Injektionsstelle beachtet.
-Abb. 24.9 Ventrogluteale Injektion nach Sachtleben (Crista-Methode).
-
-a
-
-b
-
-a Die linke Hand wird so in die Flanke des Pflegeempfängers gelegt, dass der Zeigefinger am Darmbeinkamm (Crista iliaca) liegt.
-b Bei einem Erwachsenen werden 3 Querfinger der rechten Hand über dem Trochanter major angelegt und der kleine Finger abgespreizt. Die Injektionsstelle befindet sich zwischen kleinem Finger und Ringfinger.
-Foto: A. Fischer, Thieme
-
-600
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Injektionen
-Abb. 24.11 Auﬃnden des Injektionsbereichs am
-Oberschenkel.
-
-WISSEN TO GO
-Intramuskuläre Injektion – ventrogluteale Injektion
-● Ventrogluteale
-
-Injektion nach Hochstetter: Für Erwachsene und Jugendliche geeignet, da sie das Risiko für
-Nervenschädigungen und fehldurchgeführte Injektionen
-in ein Gefäß reduziert.
-● Ventrogluteale Injektion nach Sachtleben (Crista-Methode): Besonders für Kinder geeignet, da die Körpergröße beim Auﬃnden der Injektionsstelle beachtet wird.
-
-Injektionsbereich
-
-Oberschenkelinjektion
-Die Injektion in den Oberschenkel erfolgt in den Musculus
-quadriceps femoris bzw. den Musculus vastus lateralis
-(▶ Abb. 24.10). Die Injektionsmenge ist auf 5 ml begrenzt.
-Nicht injiziert werden sollten ölige oder kortikoidhaltige Lösungen sowie Antibiotika und Antirheumatika, da die Muskelmasse des Oberschenkelmuskels geringer und die Resorptionszeit im Oberschenkelbereich länger ist.
-Injektionsort bestimmen
-● Vorbereitung vor der Injektion (S. 596)
-● Pflegeempfänger ggf. dabei unterstützen, sich in Rückenlage zu positionieren.
-● hygienische Händedesinfektion, unsterile Handschuhe anziehen
-● Die knöchernen Orientierungspunkte, Trochanter major
-(großer Rollhügel) und Patella (Kniescheibe), aufsuchen.
-● Je ein Kleinfingergrundgelenk auf die Kniescheibe und den
-Trochanter major legen.
-● Die rechtwinklig abgespreizten Daumen können nun
-leicht die untere (dorsale) Begrenzung des M. vastus lateralis ertasten.
-
-Die Kleinfingergrundgelenke liegen auf der Kniescheibe und
-dem Trochanter major. Die Daumen ertasten die untere Begrenzung des M. vastus lateralis. Foto: A. Fischer, Thieme
-
-● Das
-
-Injektionsgebiet liegt im Feld oberhalb der beiden
-Daumenspitzen in der Mitte des seitlichen Oberschenkels
-(▶ Abb. 24.11).
-● Die Stelle wird markiert, z. B. indem man die Schutzkappe
-der Kanüle leicht auf die Haut drückt.
-Injektion durchführen und Nachsorge • Das weitere Vorgehen
-erfolgt analog der Beschreibung der ventroglutealen i. m.-Injektion nach von Hochstetter (s. o.).
-
-! Merke Keine Außenrotation!
-
-Bei der Injektion in den Oberschenkel muss unbedingt beachtet werden, dass das Bein nicht in Außenrotation liegen darf, da in dieser
-Lage Gefäße getroﬀen werden könnten.
-
-Abb. 24.10 Injektionsbereich i. m.-Injektion Oberschenkel.
-
-Komplikationen
-
-Trochanter major
-
-Wird ein Medikament versehentlich zu nah an einen Nerv
-appliziert, kann dieser geschädigt werden. Die Folgen sind
-starke Schmerzen und ggf. funktionale Einschränkungen
-durch dauerhafte Schädigung des Nervs.
-Während und nach einer Injektion kann es zur Hämatombildung kommen. Besonders gefährdet sind Pflegeempfänger mit Gerinnungsstörungen und Pflegeempfänger mit Cumarintherapie (z. B. Marcumar). Bei diesen Pflegeempfängern ist eine intramuskuläre Injektion kontraindiziert.
-Wenn aseptische Standards nicht eingehalten werden,
-kann es zu einer Keimverschleppung ins Gewebe kommen,
-ggf. mit Abszessbildung bis hin zur generalisierten Sepsis.
-Besonders gefährdet sind Pflegeempfänger mit herabgesetztem Immunsystem, z. B. alte Menschen, Menschen mit Diabetes mellitus, Menschen mit einer HIV-Infektion oder Menschen nach Organtransplantation.
-
-Vastus lateralis
-
-Injektionsbereich
-
-Patella
-
-Die Injektion erfolgt in den Musculus vastus lateralis. Die knöchernen Orientierungspunkte sind der Trochanter major und die
-Patella (Kniescheibe). Der Injektionsbereich liegt im äußeren
-mittleren Drittel des M. vastus lateralis.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-601
-
-l
-24
-
-Injektionen und Blutentnahme
-
-Material
-WISSEN TO GO
-
-● Spritzentablett
-● Medikament(e) in Spritze(n) aufgezogen
-
-i. m.-Injektion in den Oberschenkel
-Die Injektion in den Oberschenkel erfolgt in den Musculus
-quadriceps femoris bzw. den Musculus vastus lateralis
-(▶ Abb. 24.11). Die Injektionsmenge ist auf 5 ml begrenzt.
-Nicht injiziert werden sollten ölige oder kortikoidhaltige
-Lösungen sowie Antibiotika und Antirheumatika.
-● Komplikationen:
-– Hämatombildung
-– Keimverschleppung, ggf. mit Abszessbildung und generalisierter Sepsis bei Nichteinhaltung von aseptischen Standards
-
-24.2.8 Intravenöse Injektionen
-Bei der intravenösen Injektion wird das Medikament in ein
-venöses Gefäß injiziert. Die Resorptionszeit ist sehr kurz, da
-das applizierte Medikament direkt in den Körperkreislauf
-gelangt. Für eine i. v.-Injektion kann eine Vene einmalig
-punktiert werden, in den meisten Fällen erfolgt sie aber
-über einen bereits angelegten venösen Zugang, z. B. eine Venenverweilkanüle, einen Zentralvenenkatheter (ZVK) oder
-ein implantiertes Kathetersystem (Port). Indiziert ist eine
-i. v.-Injektion immer dann, wenn andere Applikationsformen nicht möglich sind und ein rascher Wirkungseintritt
-erwünscht ist, z. B. in Notfallsituationen oder bei stärksten
-Schmerzzuständen. Die Vorteile der i. v.-Injektion decken
-sich mit den allgemeinen Vorteilen von Injektionen.
-
-● Desinfektionsmittel zur Händedesinfektion
-● unsterile Handschuhe
-● Hautdesinfektionsmittel
-● sterile Tupfer
-● steriler Verschlusskonus (z. B. Combi-Stopper)
-● evtl.
-
-Spritze mit 0,9 %iger NaCl-Lösung zum Spülen/Blocken
-● Abwurfschale
-
-Durchführung
-Direkte Venenpunktion • Die Venenpunktion zur intravenösen Injektion entspricht von der Technik her der Venenpunktion bei der Kap. 24.3.
-Via Venenverweilkanüle • Die Injektion bestimmter Medikamente (z. B. Lasix, ein Diuretikum) in einen peripheren Venenverweilkatheter kann im Einzelfall an Pflegefachkräfte
-ohne Fachweiterbildung delegiert werden. Voraussetzung
-ist, dass kein erhöhtes Gefährdungspotenzial besteht, das
-pflegerisch nicht beherrschbar ist, und dass die durchführende Pflegefachkraft die Aufgabe beherrscht, die potenziellen Gefahren kennt und weiß, was zu tun ist, wenn diese
-auftreten. Siehe auch Delegation ärztlicher Aufgaben
-(S. 173).
-● hygienische Händedesinfektion, unsterile Handschuhe anziehen
-● ggf. laufende Infusion stoppen
-Abb. 24.12 Periphervenöse Zugänge i. v.-Injektion.
-
-ACHTUNG
-Die intravenöse Injektion ist dem Arzt vorbehalten und wird i. d. R.
-nur an Intensiv- und Anästhesiefachkräfte mit Fachweiterbildung
-delegiert.
-
-Mögliche Injektionsorte
-Zur intravenösen Behandlung werden meist die periphervenösen Arm- und Handvenen bevorzugt, z. B. die V. mediana cubiti, V. cephalica und die V. basilica antebrachii
-(▶ Abb. 24.12). Für zentralvenöse Zugänge werden größere
-Venen verwendet, z. B. am Hals die V. jugularis interna, die
-V. subclavia oder in der Leiste die V. femoralis. Siehe Kap. 25
-„Gefäßzugänge, Infusionen und Transfusionen“. Beim Säugling haben sich für die intravenöse Therapie die oberflächlichen Schädelvenen bewährt.
-
-Kontraindikationen
-Allgemeine Kontraindikationen für eine i. v.-Injektion gibt es
-nicht. Zu beachten ist, dass eine Vene nicht punktiert werden darf, wenn sie für eine Shuntanlage geplant ist, d. h. als
-Gefäßverbindung zwischen Vene und Arterie, z. B. zu Dialysezwecken. Auch nach Lymphknotenresektion (Entfernung
-der regionalen Lymphknoten) z. B. nach Mammakarzinom
-(Brustkrebs) darf keine i. v.-Injektion in den Arm der betroffenen Brustseite erfolgen, da dies zu einem Lymphödem
-führen kann. i. v.-Injektionen an oder in einen Extremitätenstumpf sind ebenfalls kontraindiziert.
-
-V. cephalica
-
-V. basilica
-
-V. mediana
-cubiti
-
-Für eine i. v.-Injektion kann eine Vene einmalig punktiert werden, in den meisten Fällen erfolgt sie aber über einen bereits angelegten venösen Zugangsweg, z. B. eine Venenverweilkanüle.
-
-602
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Blutentnahme
-● Verschluss der Zuspritzvorrichtung entfernen und Zugang
-
-mittels Sprühdesinfektion mit Hautdesinfektionsmittel
-desinfizieren
-● Spritzenkonus aufsetzen und das Medikament langsam
-zuspritzen, Pflegeempfänger dabei genau beobachten
-● beim Einspritzen des Medikaments darauf achten, dass ein
-Zurückfließen in das Infusionssystem nicht möglich ist
-(z. B. durch Verschließen des Dreiwegehahns)
-● nach der Injektion die Spritze entfernen und die Zuspritzvorrichtung am Venenkatheter ordnungsgemäß verschließen
-● ggf. eine zuvor gestoppte Dauerinfusion wieder laufen lassen
-● unsterile Handschuhe ausziehen und verwerfen, Händedesinfektion
-● auf Wirkung und mögliche Nebenwirkung achten, Pflegeempfänger nach seinem Befinden fragen
-● Injektion dokumentieren
-Via zentralem Venenkatheter • Die Durchführung erfolgt analog der Venenverweilkanüle, jedoch sollte hier unbedingt
-ein Dreiwegehahn vorgeschaltet sein. Vor der Injektion sollte zwischen Pflegeempfänger und Dreiwegehahn eine sterile Kompresse untergelegt werden, bevor der Anschluss zum
-Zuspritzen geöﬀnet wird. Die intravenöse Injektion in einen
-ZVK ist dem Arzt vorbehalten und wird i. d. R. nur an fachweitergebildete Intensiv- und Anästhesiefachpfleger delegiert.
-Via Port • Die Durchführung erfolgt analog der Venenverweilkanüle, jedoch muss bei einer i. v.-Injektion über das
-Portsystem eine spezielle Kanüle verwendet werden. Das
-Anstechen des Portsystems ist wie bei den Injektionen über
-die Venenverweilkanüle nur durch geübtes Fachpersonal zulässig und sollte nicht von ungeschultem Personal übernommen werden. Vor der Punktion muss eine Desinfektion der
-Haut über dem Port durchgeführt werden.
-Auch muss zuvor geklärt sein, ob der Port durch ein bestimmtes Medikament (z. B. Heparin) geblockt ist, dieses
-muss dann mittels einer Spritze abgezogen und danach das
-Medikament langsam injiziert werden. Nähere Informationen finden Sie im Kap. „Punktion von Portsystemen
-(S. 620)“.
-
-Komplikationen
-Eines der größten Risiken besteht darin, dass Medikamente,
-die nur i. v. appliziert werden dürfen, durch eine Fehlinjektion entweder in ein falsches Gefäß (z. B. arteriell) oder ins
-Gewebe (i. m., s. c.) gelangen und dort zu Schäden führen,
-z. B. aseptische Entzündung bis zur Nekrosenbildung oder
-zu einem arteriellen Verschluss, wenn ein Chemotherapeutikum paravasal (außerhalb des Gefäßes) injiziert wird.
-Aufgrund von vasalen Vorschäden kann die Venenwand
-vor oder während der Injektion verletzt werden.
-Unhygienisches Arbeiten begünstigt das „Einschleppen“
-von Keimen in den Blutkreislauf und kann zu einer Infektion
-bzw. einer Sepsis führen.
-
-ACHTUNG
-Achten Sie bei den Pflegeempfängern auf Hämatome, Rötungen
-bzw. Paravasate. Klagt der Pflegeempfänger über Schmerzen, Empfindungsstörungen oder zeigt er Anzeichen einer allergischen Reaktion, informieren Sie sofort einen Arzt.
-
-WISSEN TO GO
-i. v.-injektion
-Die Injektion erfolgt durch einmalige Venenpunktion, einen venösen Zugang, einen ZVK oder einen Port. Die direkte Injektion erfolgt nur durch einen Arzt.
-● Indikationen:
-– Wunsch nach raschem Wirkungseintritt, z. B. Notfall,
-Schmerzen
-– keine andere Applikationsform möglich
-● Kontraindikationen:
-– Vene ist für Shuntanlage vorgesehen
-– Lymphknotenresektion in Venennähe
-– Injektion in einen Stumpf
-● Injektionsorte (▶ Abb. 24.12):
-– periphervenös: Arm- und Handvenen wie V. mediana
-cubiti, V. cephalica, V. basilica antebrachii
-– zentralvenös: größere Venen am Hals wie V. jugularis
-interna, V. subclavia oder die V. femoralis in der Leiste
-● Komplikationen:
-– Schmerzen, Empfindungsstörungen, allergische Reaktion
-– Hämatome, Rötungen bzw. Paravasate
-– aseptische Entzündung, Nekrosen und Paravasate bei
-Fehlinjektion von Medikamenten
-– Verletzung der Venenwand durch Vorschäden
-– Infektion, Sepsis
-
-24.3 Blutentnahme
-Die Blutuntersuchung ist ein fester Bestandteil des medizinischen Alltags in Krankenhäusern und ambulanten Einrichtungen. Sie dient als Hilfsmittel bei der Diagnostik, als Verlaufskontrolle von Therapien und zur Beurteilung des
-Schweregrads einer Erkrankung (Prognose).
-Von der klinischen Fragestellung über die Gewinnung der
-Blutprobe bis hin zur Blutanalyse und Befundinterpretation
-sind es viele kleine Einzelschritte. Pflegende übernehmen
-im Rahmen der Blutuntersuchung die Aufgabe der Vorbereitung des Pflegeempfängers, der Probengewinnung und
--kennzeichnung ebenso wie die Sicherstellung des ordnungsgemäßen Transports der Probe.
-
-24.3.1 Venöse Blutentnahme
-Die venöse Blutentnahme gehört grundsätzlich zu den ärztlichen Aufgaben. Diese Aufgabe kann jedoch vom Arzt an
-entsprechend qualifizierte Pflegefachkräfte delegiert werden, siehe Delegation Injektion (S. 593).
-
-Rahmenbedingungen
-Die Blutentnahme findet im stationären
-Umfeld bevorzugt im Liegen statt, kann aber auch abhängig von der Situation und dem Kreislaufzustand des Pflegeempfängers im Sitzen erfolgen (häufig im ambulanten
-Bereich). Keinesfalls jedoch im Stehen (Gefahr: Synkope)!
-● Zeitpunkt: Wenn möglich sollte die Blutentnahme immer
-zum etwa gleichen Zeitpunkt (z. B. morgens vor dem Frühstück) stattfinden, damit die Werte vergleichbar bleiben.
-● Nüchternheit: Bei gewissen Blutuntersuchungen ist es notwendig, dass der Pflegeempfänger nüchtern ist bzw. die
-● Positionierung:
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-603
-
-l
-24
-
-Injektionen und Blutentnahme
-Blutentnahme vor der morgendlichen Medikamenteneinnahme stattfindet.
-● Leichter Sog: Die Blutentnahme sollte immer unter leichtem Sog geschehen. Starker Sog kann zu falschen Elektrolytwerten führen. Durch den Sog können Blutzellen platzen (Hämolyse) und vor allem Kalium kann so aus der Zelle heraustreten und zu einem falsch erhöhten Kaliumwert
-führen.
-● Körperliche Belastung: Vor der Blutentnahme sollte keine
-größere körperliche Belastung stattgefunden haben. Dies
-kann die Blutwerte verändern. Auch ein unmittelbarer
-Wechsel der Körperposition vor der Blutentnahme vom
-Liegen zum Stehen kann die Konzentration der ultrafitrierbaren Blutbestandteile (z. B. Zellen oder Proteine)
-leicht verändern.
-
-Abb. 24.13 Punktionsstellen bei Kindern.
-
-Punktionsstellen
-
-Venenbogen
-an Hand- und
-Fußrücken
-
-In den meisten Fällen wird in der Ellenbeuge oder am Unterarm punktiert, hier liegen die Venen oberflächlich und lassen sich bei Stauung gut darstellen (▶ Abb. 24.12). Pflegende
-sollten den Pflegeempfänger fragen, ob er Links- oder
-Rechtshänder ist, und möglichst an dem Arm punktieren,
-den der Pflegeempfänger weniger benutzt. Auch auf dem
-Handrücken liegen die Venen oberflächlich – hier ist die
-Hand aber sehr sensibel und die Punktion kann schmerzhaft
-für den Pflegeempfänger sein. Am Fußrücken sollte beim Jugendlichen oder Erwachsenen nur in Ausnahmefällen punktiert werden, da die Gefahr der Thrombophlebitis (Entzündung einer oberflächlichen Vene) hier sehr hoch ist.
-Bei Kindern werden andere Punktionsstellen gewählt. Bevorzugte Stellen für die venöse Blutentnahme sind Arm-,
-Fuß- und Kopfvenen (▶ Abb. 24.13). Bei schwerkranken Kindern sollte die Entnahme von venösem Blut nicht in großlumigen Venen der Ellenbeuge erfolgen, falls dort später
-eine Venenverweilkanüle gelegt werden muss.
-
-! Merke Kontraindikationen
-
-Die Blutentnahme sollte nicht an einem Arm durchgeführt werden,
-an dem bereits Infusionen über einen venösen Zugang laufen – dadurch können die Werte verfälscht werden. Bei Pflegeempfängern
-mit einem Shunt (S. 1068) oder einem Lymphödem (z. B. bei Mammakarzinom) sollte kein Blut auf der betroﬀenen Seite abgenommen
-werden.
-
-Durchführung
-Material
-● desinfiziertes Tablett für Materialien
-● Butterfly-System oder Sicherheitskanüle mit Klappdeckel
-● Blutentnahmeröhrchen, z. B. Vacutainer-System oder Mo-
-
-novetten (▶ Tab. 24.2); mit Pflegeempfängeretikett versehen
-● Stauschlauch
-● Tupfer und Pflaster
-● Hautdesinfektionsmittel
-● Händedesinfektionsmittel
-● unsterile Handschuhe
-● Abwurfbehälter
-
-Vorbereitung
-Vor der Blutentnahme sollten sich Pflegende noch einmal
-vergewissern, dass es sich um den richtigen Pflegeempfänger handelt, und ihn dann über die Blutentnahme informieren und sein Einverständnis einholen.
-604
-
-V. temporalis
-superficialis
-
-V. supratrochlearis
-
-V. auricularis
-posterior
-
-V. cephalica
-V. cubitalis
-V. cephalica
-V. basilica
-
-V. femoralis
-V. saphena
-magna
-
-Abgebildet sind mögliche Punktionsstellen für die venöse Blutentnahme. Abb. aus: Hoehl M, Kullick P. Gesundheits- und Kinderkrankenpflege.
-Thieme; 2019
-
-Pflegende sollten empathisch auf die Situation des Pflegeempfängers eingehen. Das Ergebnis der Blutuntersuchung
-kann für ihn sehr wichtig sein, evtl. hängt von diesem Ergebnis viel ab. Vielleicht hat er in der Vergangenheit auch
-schlechte Erfahrungen gemacht und ist bei der Blutentnahme kollabiert oder hat sie als besonders schmerzhaft erlebt.
-Pflegende sollten den Pflegeempfänger fragen, ob er bei vorherigen Blutentnahmen Kreislaufprobleme hatte. In diesem
-Fall sollte sich der Pflegeempfänger auf jeden Fall hinlegen.
-
-Ablauf Blutentnahme
-● Die Pflegefachkraft desinfiziert sich die Hände und über-
-
-prüft nochmals die Vollständigkeit der vorbereiteten Materialien.
-● Der Arm wird auf einem Unterarmpolster positioniert
-oder mit einem kleinen Kissen unterlegt.
-● Die Pflegefachkraft nimmt eine bequeme Position ein, am
-besten sitzend. Der Stauschlauch wird ca. 1 Handbreit
-oberhalb der gewählten Punktionsstelle angelegt. Es sollte
-darauf geachtet werden, dabei nicht die Haut des Pflegeempfängers einzuklemmen.
-● Die Vene wird ertastet (▶ Abb. 24.14-1). Sie sollte sich wie
-ein gut gefüllter Fahrradschlauch anfühlen und nicht pulsieren (Arterien pulsieren).
-● Achtung: Der Stauschlauch sollte nicht länger als 1 Minute
-angelegt bleiben, damit keine falschen Blutwerte entstehen. Bei einer zu lang anhaltenden Stauung diﬀundiert
-Wasser aus dem Gefäßinneren in das umgebende Gewebe,
-wodurch sich die Konzentration der festen Bestandteile
-des Blutes erhöht, z. B. Proteine, Lipide. Außerdem kann
-die Stauung zur Hämolyse (Zerstörung der Erythrozyten)
-führen, wodurch die Blutwerte ebenso steigen – vor allem
-Kalium, da die Konzentration in den Erythrozyten 25-mal
-höher ist als im Plasma. Auch das sog. „Pumpen“ zur besseren Darstellung der Venen sollte vermieden werden.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Blutentnahme
-
-Tab. 24.2 Übersicht der am häufigsten verwendeten Blutröhrchen und deren Anwendung.
-Vacutainer
-
-Monovette
-
-Anwendungsgebiete und Zusätze
-
-Was wird untersucht? Beispiele
-
-Schwenken
-der Röhrchen
-
-Serum (Gerinnungsaktivator) Parameter
-der klinischen Chemie
-
-Blutgruppenserologie, Antikörpersuchtest Hormone, Schilddrüsenhormone, Leber- und Nierenwerte,
-Herzenzyme, Pankreasenzyme, Tumormarker, Lipidstoffwechsel,
-Elektrolyte u. a.
-
-5–6-mal
-
-Serum-Gel (Gerinnungsaktivator, mit
-Trenngel) Parameter
-der klinischen Chemie
-
-Hormone, Schilddrüsenhormone,
-Leber- und Nierenwerte, Herzenzyme, Pankreasenzyme, Tumormarker, Lipidstoffwechsel, Elektrolyte
-u. a.
-
-5–6-mal
-
-Hämatologie (Kalium-EDTA)
-
-kleines und großes Blutbild, HbA1c
-
-8–10-mal
-
-Gerinnungsanalytik
-(Natrium-Citrat)
-
-Gerinnungsfaktoren: Quickwert,
-D-Dimere, Fibrinogen, Thrombinzeit, PTT
-
-3–4-mal
-
-Blutsenkung (Natrium-Citrat)
-
-Blutkörperchensenkungsgeschwindigkeit (BSG)
-
-8–10-mal
-
-Plasmaanalyse (Lithium-Heparin) Parameter der klinischen
-Chemie
-
-Hormone, Schilddrüsenhormone,
-Leber- und Nierenwerte, Herzenzyme, Pankreasenzyme, Tumormarker, Lipidstoffwechsel, Elektrolyte
-u. a.
-
-8–10-mal
-
-Glukosebestimmung
-(Fluorid)
-
-Glukose, Laktat
-
-8–10-mal
-
-Ob zur Analyse der Parameter der klinischen Chemie Serum oder Plasma verwendet wird, ist von Klinik zu Klinik unterschiedlich. Erkundigen Sie sich,
-was an Ihrer Klinik verwendet wird.
-Werden mehrere Blutröhrchen abgenommen, sollte die Reihenfolge der Blutröhrchen wie folgt sein:
-1. Blutkultur, 2. Serum-Röhrchen, 3. Citrat-Röhrchen, 4. Heparin-Röhrchen, 5. EDTA-Röhrchen
-Foto: K. Oborny, Thieme
-
-Dies kann zu erhöhten Kalium- und Magnesiumwerten
-führen.
-● Die Stauung des Arms kann bei Neugeborenen, Säuglingen
-und Kleinkindern durch die Hand einer Pflegefachkraft erfolgen – aber nicht zu fest, der Radialispuls muss noch
-tastbar sein.
-● Bei Kindern kann zur Schmerzprävention 1 Stunde vor der
-Blutentnahme ein lokal anästhesierendes Pflaster aufgebracht werden. Bei Früh- und Neugeborenen wirkt die
-orale Gabe von Glukose 30 % unmittelbar vor der Blutentnahme schmerzlindernd.
-● Die Punktionsstelle wird mit Desinfektionsspray eingesprüht, mit einem Tupfer abgewischt, erneut besprüht und
-die Einwirkzeit laut Herstellerangaben abgewartet, i. d. R.
-mindestens 30 Sekunden. Die Punktionsstelle darf danach
-nicht mehr berührt werden (▶ Abb. 24.14-2)!
-● Es werden unsterile Handschuhe angezogen und das Material in greifbarer Nähe platziert.
-● Die Haut wird unterhalb der Punktionsstelle straﬀgezogen
-und die Vene an der ertasteten Stelle im 30°-Winkel zügig
-in Richtung des Venenverlaufs punktiert, die angeschliﬀe-
-
-ne Seite der Punktionskanüle zeigt dabei nach oben
-(▶ Abb. 24.14-3).
-● Wenn die Haut durchstochen ist, wird der Winkel leicht
-abgeflacht. War die Punktion erfolgreich, fließt Blut zurück und der Stauschlauch kann geöﬀnet werden. Durch
-leichtes Zurückziehen des Spritzenstempels füllt sich das
-Röhrchen dann mit Blut (▶ Abb. 24.14-5). Müssen mehrere
-Röhrchen gefüllt werden, sollte die Kanüle während des
-Röhrchenwechsels gut mit einer Hand fixiert werden, damit die Kanüle nicht verrutscht oder die Venenwand
-schmerzhaft reizt.
-● Wenn alle Blutentnahmeröhrchen gefüllt sind, wird ein
-Tupfer locker auf die Einstichstelle gelegt und die Kanüle
-rasch gezogen und im Abwurfbehälter entsorgt
-(▶ Abb. 24.14-6).
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-605
-
-l
-24
-
-Injektionen und Blutentnahme
-Abb. 24.14 Blutentnahme.
-
-1 Vene ertasten.
-
-2 Stauschlauch anlegen und die ausgewählte
-Injektionsstelle desinfizieren.
-
-4 Ist die Punktion erfolgreich, fließt Blut zurück 5 Blutentnahmeröhrchen nacheinander
-und der Stauschlauch kann geöffnet werden.
-befüllen.
-
-3 Die Haut unterhalb der Punktionsstelle
-straffziehen und die Vene an der ertasteten
-Stelle zügig im 30°-Winkel in Richtung des
-Venenverlaufs punktieren.
-
-6 Sind alle Blutentnahmeröhrchen gefüllt, einen
-Tupfer locker auf die Einstichstelle legen, die
-Kanüle rasch ziehen und im Abwurfbehälter
-entsorgen. Die Einstichstelle ca. 1 Minute bei
-gestrecktem Arm komprimieren und mit
-einem Pflaster versorgen. Die Blutröhrchen
-vorsichtig schwenken.
-
-Foto: W. Krüper, Thieme
-
-Nachsorge
-● Die Einstichstelle dann gut mit dem Tupfer komprimieren
-
-(mind. 1 Minute). Der Arm sollte dabei gestreckt bleiben,
-dies wirkt einer Hämatombildung entgegen.
-● Abschließend wird die Einstichstelle mit einem Pflaster
-versorgt und die Blutröhrchen vorsichtig geschwenkt, damit sich die Zusätze im Röhrchen mit dem Blut vermischen.
-
-Komplikationen
-● Die Vene lässt sich nicht punktieren: ruhig bleiben und es
-
-ein zweites Mal probieren, aber nicht an derselben Stelle,
-sondern am anderen Arm oder proximal (oberhalb) der
-bereits punktierten Stelle. Wenn es dann nicht gelingt, holen Sie sich Unterstützung.
-● Arterielle Fehlpunktion: erkennbar an hellerem, pulsierendem Blut. Da die Punktionskanülen sehr dünn sind und
-das Blut somit nicht massiv herausspritzt, ist es i. d. R. problemlos möglich, die Blutentnahme trotzdem durchzuführen. Die Parameter sind bis auf die Blutgase auch bei arterieller Blutentnahme gleich. Sehr wichtig ist es, nach der
-Blutentnahme länger und fester zu komprimieren. Pflegende sollten sich eindeutig vergewissern, dass die Einstichstelle nicht mehr nachblutet.
-● Pflegeempfänger
-klagt über brennende, stechende
-Schmerzen: Wahrscheinlich wurde ein Nerv getroﬀen, die
-Blutentnahme sofort abbrechen.
-
-606
-
-WISSEN TO GO
-Venöse Blutentnahme
-Die venöse Blutentnahme ist eine ärztliche Aufgabe, die an
-entsprechend geschulte Pflegefachkräfte delegiert werden
-kann. Als Punktionsstellen dienen meist die oberflächlichen Venen an Ellenbeuge oder Unterarm.
-● Blutentnahme abhängig von Situation und Kreislaufzustand im Sitzen oder bevorzugt im Liegen
-● Blutentnahme immer zum etwa gleichen Zeitpunkt (z. B.
-immer morgens vor dem Frühstück)
-● ggf. darauf achten, dass Pflegeempfänger nüchtern sein
-muss
-● nur leichter Sog bei der Blutentnahme (Gefahr: Hämolyse)
-● Punktion an dem Arm, der weniger benutzt wird
-● keine Blutentnahme an einem Arm, an dem eine Infusion läuft
-● keine Blutentnahme an einem Arm mit Shunt/Lymphödem
-● vor der Blutentnahme keine größere körperliche Belastung
-Die Durchführung zeigt ▶ Abb. 24.14.
-Komplikationen:
-● keine Punktion möglich: 2. Punktion am anderen Arm
-oder oberhalb der punktierten Stelle
-● arterielle Fehlpunktion: Blutentnahme kann i. d. R. fortgesetzt werden; danach so lange fest komprimieren, bis
-nichts mehr nachblutet.
-● Schmerzen: Punktion sofort abbrechen
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-
+      der Wille des Pflegebedürftigen vorliegt.                              tödliche Wirkung hatte, den Tod aber nicht auslösen sollte
+                                                                             und eine Einwilligung des Pflegebedürftigen vorliegt. Es
+                                                                             kann sehr schwierig sein abzugrenzen, in welchen Fällen
+                                                                             eine nicht strafbare indirekte Sterbehilfe oder eine strafba-
+        Beispiel Mutmaßliche Entbindung                                      re aktive Sterbehilfe vorliegt. Im Zweifel ist unbedingt mit
+                                                                             dem Arzt zu sprechen!
+        Frau M. liegt im Sterben. Sie hat vor einiger Zeit gegenüber ih-
+        rem Pfleger geäußert, dass sie ihre Tochter gerne noch einmal      Die Beihilfe zum Suizid wird in Deutschland nicht gesetzlich
+        sehen würde. Als der Sterbeprozess beginnt, informiert der Pfle-   geahndet. Dem zugrunde liegt juristische Logik: Der Suizid
+        ger die Tochter über den aktuellen Zustand der Pflegebedürfti-     ist in Deutschland straﬀrei, also bleibt es die Beihilfe auch.
+        gen, damit diese erkennt, dass sie ihre Mutter so schnell wie      Sie gilt aber im Allgemeinen als moralisch verwerflich.
+        möglich besuchen sollte.                                              Bei der Sterbehilfe müssen alle Beteiligten immer sehr ge-
+                                                                           nau prüfen, wie die Situation tatsächlich ist. In Deutschland
+                                                                           ist es üblich, zwischen 3 Begriﬀen zu unterscheiden.
+                                                                           ● Aktive Sterbehilfe: Im Falle der aktiven Sterbehilfe würde
+
+          WISSEN TO GO                                                       eine andere Person als der Sterbende selbst dessen Tod
+                                                                             herbeiführen. Dies kann auf Wunsch (Tötung auf Verlan-
+                                                                             gen, § 216 StGB) oder gegen den Wunsch des Sterbenden
+        Schweigepflicht                                                      erfolgen (Totschlag, § 212 StGB). Die aktive Sterbehilfe ist
+        Die Schweigepflicht ist im Strafgesetzbuch in § 203 und              in Deutschland – wie in den meisten Ländern – verboten
+        § 204 geregelt. § 203 des Strafgesetzbuchs sagt, dass kei-           und wird strafrechtlich verfolgt.
+        ne Geheimnisse des Pflegebedürftigen oﬀenbart werden               ● Passive Sterbehilfe: Der Begriﬀ der passiven Sterbehilfe
+
+        dürfen. Die Geheimhaltungspflicht umfasst alles, was Pfle-           umfasst Situationen, in denen einem Todkranken das Ster-
+        gende während ihrer Arbeit vom und über den Pflegebe-                ben „erlaubt“ wird, z. B. über einen Therapieabbruch oder
+        dürftigen erfahren – medizinisch oder privat.                        den Verzicht auf weitere Eingriﬀe. Solches Unterlassen von
+           Bei der Entbindung von der Schweigepflicht wird zwi-              weiteren Maßnahmen ist in Kliniken und in der ambulan-
+        schen ausdrücklicher und mutmaßlicher Einwilligung un-               ten Pflege durchaus gängig, wobei regelmäßig umfassende
+        terschieden.                                                         Beratungsgespräche mit dem Betroﬀenen oder den Ange-
+                                                                             hörigen vorausgehen.
+                                                                           ● Indirekte Sterbehilfe: Hierunter fallen Handlungen, die
+
+                                                                             zwar in der Sterbephase Leiden (z. B. Schmerzen) nehmen,
+      7.5.7 Sterbehilfe                                                      gleichzeitig aber die Lebenszeit verkürzen können.
+      Das, was im Allgemeinen als „Sterbehilfe“ bezeichnet wird,
+      ist ein sehr komplexes Thema. In den Medien wird häufig              Dem Gesetzgeber ist bewusst, dass die Fragen in Zusam-
+      von Sterbehilfe berichtet, wenn einem Pflegebedürftigen ein          menhang mit der Sterbehilfe sehr komplex sind. Es kommt
+      Mittel verabreicht wurde, das seinen Tod herbeiführte. Der-          hier insbesondere verstärkt die Frage auf, wie mit den Tätig-
+      jenige, der das Mittel verabreicht hat, spricht dann meist da-       keiten sog. „Sterbehilfevereinigungen“ umgegangen werden
+      von, der Pflegebedürftige habe um das Mittel gebeten. Oder           soll. Diese Vereinigungen unterstützen Personen, die ihrem
+      aber: Aus bestimmten Gründen war es der Wunsch des Pfle-             Leben ein Ende setzen wollen, ohne dabei selbst die Tötung
+      gebedürftigen, dass man ihm helfe, nicht mehr leben zu               vorzunehmen. Um hier dem Auftrag des Grundgesetzes, al-
+      müssen. Tatsächlich können aber unterschiedliche Fälle vor-          les Leben zu schützen, zu entsprechen, wurde 2015 der
+      liegen, die unterschiedliche Konsequenzen haben.                     § 217 StGB neben den § 216 StGB gestellt. Nach diesem ist
+         Die rechtlichen Grundlagen der Sterbehilfe finden sich            die geschäftsmäßige, also die wiederholte, Förderung von
+      zum einen in Art. 1 und Art. 2 des Grundgesetzes. Dort               Selbsttötungen, strafbar. Eine einzelne Förderungsmaßnah-
+
+
+178    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                    Pflegerelevante Rechtsgebiete
+
+
+me bleibt straﬀrei, es sei denn es besteht die Absicht, die         kann. Günstigstenfalls liegt der Patientenverfügung eine
+Maßnahme zur Förderung in gleichartiger Weise zu wieder-            Vorsorgevollmacht (S. 176) oder eine Betreuungsverfügung
+holen. Förderung kann sowohl die Bereitstellung von Medi-           bei.
+kamenten sein als auch das Überlassen von geeigneten Räu-              Für eine PV gilt: Sie muss schriftlich vorliegen, aber nicht
+men, um dort zu sterben.                                            unbedingt handschriftlich, d. h., der Text der PV kann mit
+   Die Anwendung des § 217 StGB ist problematisch. Denn             einem Computerprogramm geschrieben werden, die PV
+bei genauer Betrachtung könnte sich eine Pflegefachkraft            muss jedoch vom Patienten selbst unterschrieben werden.
+schon dann strafbar machen, wenn sie wiederholt Selbst-             Des Weiteren sollte die Unterschrift regelmäßig neu geleis-
+tötungen fördert. 2019 gab es eine Verfassungsbeschwerde            tet werden.
+beim Bundesverfassungsgericht, im Februar 2020 wurde der               Eine Patientenverfügung kann auch nur für den Fall einer
+§ 217 StG für verfassungswidrig erklärt. Bis eine neue ge-          schweren Krankheit verfasst werden: Hier bestimmt der
+setzliche Regelung vorliegt, sollten Pflegefachkräfte Fragen        Verfasser, welche Behandlung er im Fall einer bestimmten
+der Förderung von Selbsttötungen immer mit dem zuständi-            Erkrankung wünscht bzw. nicht erhalten möchte. Beispiel:
+gen Vorgesetzten besprechen.                                        „Ich möchte im Fall einer bösartigen Tumorerkrankung, die
+   Darüber hinaus hat der Nationale Ethikrat eine weitere           bereits Metastasen gesetzt hat oder auf andere Weise weit
+Definition der Sterbehilfe vorgeschlagen. Sie beschreibt die        fortgeschritten ist, keine Chemo- oder Strahlentherapie
+Stadien etwas diﬀerenzierter und soll den Handelnden mehr           mehr erhalten, sondern höchstens palliativ in einer speziell
+Sicherheit bei der Arbeit geben. Mehr dazu lesen Sie im Kap.        dafür eingerichteten Abteilung behandelt werden.“
+„Ethische Grenzsituationen in der Pflege (S. 290)“.
+
+                                                                    7.5.9 Testament
+    WISSEN TO GO
+                                                                    Ein Testament, auch der „letzte Wille“ oder „letztwillige Ver-
+                                                                    fügung“ genannt, ist eine willentliche Bestimmung des Erb-
+  Sterbehilfe                                                       lassers – also der Person, die verstirbt und ein Vermögen
+                                                                    hinterlässt. Ein Testament kann der Erblasser selbst erstellen
+  Bei der Sterbehilfe wird meist unterschieden zwischen fol-
+                                                                    oder er wendet sich z. B. an einen Notar. Meist wird ein Tes-
+  genden Begriﬀen:
+                                                                    tament nach Beratung z. B. mit einem Rechtsanwalt erstellt.
+  ● aktive Sterbehilfe: Eine andere Person führt den Tod
+                                                                    Der Erblasser hat durch die Beratung die Gelegenheit, sich
+    eines Sterbenden herbei
+                                                                    über die Verteilung seines Vermögens nach seinem Tod klar
+  ● passive Sterbehilfe: Einem Todkranken wird das Sterben
+                                                                    zu werden und zu überlegen, welche Personen er mit wel-
+    „erlaubt“, z. B. durch einen Therapieabbruch
+                                                                    chen Teilen seines Vermögens bedenken möchte.
+  ● indirekte Sterbehilfe: Handlungen, die in der Sterbe-
+                                                                      Es gibt jedoch Situationen, in denen eine solch überlegte
+    phase das Leiden nehmen, aber gleichzeitig das Leben
+                                                                    Entscheidung nicht mehr möglich ist. Zum Beispiel, wenn
+    verkürzen, z. B. Schmerzmittelgabe
+                                                                    ein Pflegebedürftiger nicht mehr in der Lage ist, zu sprechen
+  Die rechtlichen Grundlagen sind im Grundgesetz und im
+                                                                    oder zu schreiben, oder sein Tod unmittelbar bevorsteht. Die
+  Strafgesetzbuch geregelt. Die aktive Sterbehilfe ist ver-
+                                                                    Frage ist, wie in solchen Situationen ein Testament erstellt
+  boten und wird strafrechtlich verfolgt. Die passive und die
+                                                                    werden kann. Denn ein Testament ohne notarielle Beglaubi-
+  indirekte Sterbehilfe sind grundsätzlich erlaubt, wenn die
+                                                                    gung muss grundsätzlich handschriftlich erstellt und darf
+  gebotene Sorgfalt (z. B. Beratungsgespräch) eingehalten
+                                                                    nicht am Computer verfasst werden (anders als eine Patien-
+  wird. Im Zweifel sind immer die Vorgesetzten hinzuzuzie-
+                                                                    tenverfügung). Kann ein Pflegebedürftiger nicht mehr selbst
+  hen. Auch die Beihilfe zum Suizid wird in Deutschland
+                                                                    schreiben, muss er einen Notar beauftragen, sein Testament
+  nicht gesetzlich geahndet. Die Förderung des Suizids ist
+                                                                    aufzunehmen. Kann er auch nicht mehr sprechen, kann er
+  nach aktueller Rechtslage dann strafbar, wenn die Förde-
+                                                                    seinen Willen gegenüber dem Notar z. B. durch Gebärden
+  rung geschäftsmäßig, d. h. u. a. wiederholt, erfolgt.
+                                                                    oder Zeichen ausdrücken.
+
+                                                                    3-Zeugen-Testament • Steht der Tod des Pflegebedürftigen
+7.5.8 Patientenverfügung                                            unmittelbar bevor und möchte er, obwohl nicht mehr fähig
+                                                                    zu schreiben, noch seinen letzten Willen kundtun, so kann
+Eine Patientenverfügung (PV) ist eine Erklärung des Patien-
+                                                                    er dies nach § 2250 BGB in Form des 3-Zeugen-Testaments
+ten darüber, welche Modalitäten er in der letzten Lebens-
+                                                                    machen: Er formuliert vor 3 Zeugen seinen letzten Willen.
+phase wünscht, vor allem im Hinblick auf Behandlungsver-
+                                                                    Es ist dabei unbedingt erforderlich, dass einer der 3 Zeugen
+bote, z. B. dass er keine lebenserhaltenden Maßnahmen wie
+                                                                    das Gesagte aufschreibt, d. h. eine Niederschrift anfertigt
+eine maschinelle Beatmung oder eine künstliche Ernährung
+                                                                    und diese vom Erblasser und den 3 Zeugen unterschrieben
+wünscht. Sie ist geregelt in § 1901a BGB. Informationen zum
+                                                                    wird. Kann der Erblasser nicht mehr selbst unterschreiben,
+Thema Patientenverfügung liefert z. B. das Bundesministeri-
+                                                                    ist dies in der Niederschrift festzuhalten. Es ist aber darauf
+um der Justiz oder auch das Bundesgesundheitsministerium
+                                                                    zu achten, dass keiner der Zeugen ein Erbe des Erblassers ist.
+in entsprechenden Broschüren. Vorgefertigte Formulare gibt
+                                                                    Denn in diesem Fall wäre das 3-Zeugen-Testament unwirk-
+es z. B. beim HVD (Humanistischer Verband Deutschland)
+                                                                    sam.
+unter www.patientenverfuegung.de.
+   Jeder volljährige Mensch darf eine Patientenverfügung
+verfassen. Sie ist bindend für das medizinische Personal.
+Wer sich nicht an eine Patientenverfügung hält, kann straf-
+rechtlich verfolgt werden. Das bestimmt ein Gesetz vom
+1. September 2009 (Drittes Gesetz zur Änderung des Betreu-
+ungsrechts vom 29. Juli 2009). Es soll die Selbstbestimmung
+eines Menschen auch dann sicherstellen, wenn er aufgrund
+von Krankheit oder Unfall keine Entscheidungen treﬀen
+
+
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen       179
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+l7    Rechtliche Grundlagen der Pflege
+
+
+
+
+           WISSEN TO GO
+                                                                               Beispiel Unterbringung bei Selbst- oder
+                                                                               Fremdgefährdung
+        Testament und Patientenverfügung
+        Eine Patientenverfügung darf jeder Volljährige verfassen.              Herr D. ist dement und steht bereits unter Betreuung. Bisher
+        Eine Patientenverfügung ist bindend für das medizinische               lebte er mithilfe eines ambulanten Dienstes in seiner Wohnung.
+        Personal.                                                              Seit einiger Zeit läuft er ständig aus dem Haus, ist desorientier-
+           Ein Testament ist die willentliche Bestimmung eines                 ter als sonst und hat bereits einen Auﬀahrunfall in seiner Stra-
+        Erblassers. Ein Testament muss grundsätzlich vollständig               ße verursacht, bei dem er sich selbst leicht verletzt hat. Zudem
+        handschriftlich oder mithilfe eines Notars verfasst werden.            hat er den Postboten mit seinem Gehstock bedroht. Der Betreu-
+                                                                               er bestimmt unter Mitwirkung des Betreuungsgerichts, dass
+                                                                               Herr D. in einem Heim untergebracht wird.
+      7.5.10 Freiheitsbeschränkende
+      Maßnahmen                                                              Unterbringungsgesetz (UBG) • Im Detail regeln die einzelnen
+                                                                             Bundesländer dieses Gesetz. Es trägt unterschiedliche Na-
+      Definition Freiheitsbeschränkende Maßnahmen                            men. Anwendung findet das UBG meist in der Psychiatrie, in
+      Eine Freiheitsbeschränkung liegt vor, wenn jemand gegen seinen         vielen Ländern ist das UBG als Psychisch-Kranken-Gesetz
+      Willen daran gehindert wird, einen bestimmten für ihn an sich zu-      (PsychKG) geläufig.
+      gänglichen Ort aufzusuchen oder sich dort aufzuhalten.
+         Eine Freiheitsentziehung ist die schwerste Form der Freiheits-
+      beschränkung. Sie liegt vor, wenn die – tatsächlich und rechtlich an
+                                                                               Beispiel Unterbringung nach dem UBG bei
+      sich gegebene – körperliche Bewegungsfreiheit nach jeder Richtung
+      hin aufgehoben wird.                                                     Suizidgefährdung
+
+                                                                               Frau L., 22 Jahre, hat erfolglos versucht, sich zu suizidieren. In
+      Juristisch unbedenklich ist eine freiheitsbeschränkende
+                                                                               der Klinik untersucht sie ein Psychiater. Er stellt eine weiter be-
+      Maßnahme dann, wenn der Pflegebedürftige in die Maß-
+                                                                               stehende Suizidalität fest und schlägt Frau L. die Einweisung in
+      nahme eingewilligt hat. Ist er selbst nicht mehr einwil-
+                                                                               eine geschlossene Psychiatrie vor. Frau L. lehnt den Vorschlag
+      ligungsfähig, muss der Betreuer oder der ausdrücklich Be-
+                                                                               ab und behauptet, sie wolle sich nun nicht mehr umbringen.
+      vollmächtigte zustimmen. Dazu benötigt der Betreuer bzw.
+                                                                               Der Psychiater hält die Aussage für nicht glaubhaft und fordert
+      der Bevollmächtigte eine Genehmigung des Vormund-
+                                                                               die Entscheidung eines Richters vom Betreuungsgericht an, der
+      schaftsgerichts bzw. des Betreuungsgerichts.
+                                                                               die Einweisung per Beschluss anordnet.
+         Die strengste Form der freiheitsbeschränkenden Maßnah-
+      me sind freiheitsentziehende und genehmigungspflichtige
+      Maßnahmen im Sinne des § 1906 Abs. 4 BGB. Sie liegen
+                                                                             Nach Betreuungsrecht untergebracht wird meist der, der be-
+      dann vor, wenn einem Pflegebedürftigen über einen länge-
+                                                                             reits einen Betreuer hat oder bei dem abzusehen ist, dass
+      ren Zeitraum oder regelmäßig die Freiheit entzogen wird.
+                                                                             eine Betreuung gestellt werden sollte. Das UBG wird meist
+      Juristen unterscheiden verschiedene Formen solcher Maß-
+                                                                             in der Psychiatrie angewendet, vor allem dann, wenn keine
+      nahmen.
+                                                                             Betreuung besteht.
+
+      Unterbringung                                                          Strafrechtliche Unterbringung • Sie kommt infrage, wenn je-
+                                                                             mand eine Straftat begangen hat und als psychisch krank
+      Von einer Unterbringung (i. S. v. § 1906 Abs. 1 BGB) spricht
+                                                                             gilt. Vorschriften im Strafgesetzbuch (StGB; hier gilt das Be-
+      man, wenn ein Betreuter gegen seinen Willen an einen an-
+                                                                             treuungsgesetz nicht) regeln, dass ein solcher Mensch in
+      deren Ort gebracht wird. Eine Unterbringung ist nach 2 Ge-
+                                                                             einer psychiatrischen Klinik untergebracht wird. Diese Ein-
+      setzen möglich.
+                                                                             richtungen heißen Forensische Abteilungen oder Forensi-
+                                                                             ken.
+      Betreuungsrecht (BtG) • Das BtG ist Teil des Bürgerlichen Ge-
+      setzbuchs und nennt 2 Voraussetzungen, die eine Unterbrin-
+      gung erlauben:                                                         Fixierung
+      ● Selbst- oder Fremdgefährdung: Ein Mensch droht aktiv,
+                                                                             Mechanische Fixierung • Dazu gehören u. a. Bettseitenteile,
+        sich selbst oder andere zu gefährden oder zu töten, oder es
+                                                                             eingespannte Laken, die den Ausstieg aus dem Bett erschwe-
+        droht aufgrund allgemeiner Anhaltspunkte eine Personen-
+                                                                             ren oder verhindern, und Gurte. Bei längerer Fixierung ist
+        gefährdung.
+                                                                             eine richterliche Anordnung notwendig (s. u.).
+      ● Notwendigkeit einer Heilbehandlung: Eine medizinische
+
+        Therapie ist notwendig, der Betroﬀene verweigert sie
+                                                                             Medikamentöse Fixierung • Schlafmittel und Psychopharma-
+        aber.
+                                                                             ka gelten dann als freiheitsbeschränkende Maßnahmen,
+                                                                             wenn sie allein aus dem Grund verabreicht werden, einen
+                                                                             Menschen ruhigzustellen. Bei Medikamenten hingegen, die
+                                                                             therapeutischen Zwecken dienen (z. B. der Behandlung einer
+                                                                             Demenz), gelten z. B. Schläfrigkeit und eingeschränkte Mobi-
+                                                                             lität als Nebenwirkungen – und sind deshalb keine freiheits-
+                                                                             beschränkenden Maßnahmen.
+
+
+
+
+180    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                           Pflegerelevante Rechtsgebiete
+
+
+                                                                          Abb. 7.4 Negative Auswirkungen der Fixierung.
+     WISSEN TO GO                                                                                                        Freiheit/ Selbst-
+                                                                                                                         bestimmtheit
+   Freiheitsbeschränkende Maßnahmen
+                                                                           potenzielle Selbst- und/
+   Eine Freiheitsbeschränkung liegt vor, wenn jemand gegen                 oder Fremdgefährdung
+   seinen Willen daran gehindert wird, einen bestimmten Ort
+   aufzusuchen oder sich dort aufzuhalten. Freiheitsentzie-
+   hende Maßnahmen liegen laut § 1906 Abs. 4 BGB vor,
+                                                                           mechanische Fixierung
+   wenn einem Patienten über einen längeren Zeitraum oder
+   regelmäßig die Freiheit zur Fortbewegung vollständig ent-
+   zogen wird (z. B. bei Einschlüssen oder mechanischen oder
+   medikamentösen Fixierungen).
+      Freiheitsentziehende Maßnahmen sind nur zulässig,
+   wenn sie dem Wohl des Patienten dienen. Sie dürfen bei
+   langfristigen Maßnahmen nur mit richterlicher Genehmi-
+   gung angewendet werden.
+
+
+
+Nutzen und Risiken von Fixierungen
+Pflegende befinden sich auf einem schmalen Grat. Sie emp-
+finden eine moralische Verpflichtung, den Pflegebedürftigen                psychischer Stress,
+vor Verletzungen umfassend zu schützen. Hinzu kommt die                    Angst, Depression
+Angst, zur Verantwortung gezogen zu werden, wenn sich ein
+Pflegebedürftiger durch einen Sturz oder durch Weglaufen                   Gefahr von Verletzungen
+verletzt. Auch die Angehörigen und Bezugspersonen erwar-                   durch Gurte, Sturz-
+ten, dass Pflegende die Pflegebedürftigen vor Unfällen schüt-              und Strangulationsgefahr
+zen. Gleichzeitig hat der Pflegebedürftige das Recht auf
+Selbstbestimmung, körperliche Unversehrtheit, die Achtung                                                   weitere
+seiner Menschenwürde sowie seine Teilhabe am Leben.                        Unruhe                           Freiheitsbeschränkung
+   Der Nutzen von Fixierungen ist nicht belegt, ein Schaden                                                 durch Medikamente
+hingegen sehr wahrscheinlich (▶ Abb. 7.4). Langfristig zwingt              Fördern von Dekubitus,
+eine Fixierung die Pflegebedürftigen in die Bettlägerigkeit. Die           Kontrakturen, Pneumonie,
+fehlende Mobilität führt zu Muskelabbau und damit zu einer                 Thrombosen                                    Abhängigkeit/
+erhöhten Sturzgefahr, die erhöhte Bettlägerigkeit erhöht das                                                             Resignation
+Risiko von Wundheilungsstörungen und Pneumonien.
+   Fixierungen sollten immer mit dem Vorgesetzten abge-
+sprochen werden. Sofern dies in einer Region möglich ist,
+sollte ein Verfahrenspfleger hinzugezogen werden, der den
+Sinn einer Fixierung überprüft.                                           Fixierungen und freiheitsbeschränkende
+! Merke Sturzgefahr                                                       Maßnahmen vermeiden
+                                                                          Um Fixierungen und allgemein freiheitsbeschränkende
+Fixierungen senken die Sturzgefahr nicht, sie erhöhen sie (Klettern
+über Bettseiten; Versuch, sich aus einer Fixierung zu befreien).          Maßnahmen zu vermeiden, sollte der erste Schritt sein, jeg-
+                                                                          liches „von der Norm abweichende“ Verhalten zu hinterfra-
+                                                                          gen und somatische Ursachen für dieses Verhalten aus-
+Weiterhin fördern Fixierungen u. a.:
+● Kontrakturen, Dekubitus, Thrombosen
+                                                                          zuschließen, z. B. Angstzustände, Infekte, Schilddrüsenfehl-
+● psychischen Stress
+                                                                          funktion. Gelegentlich hat man es mit randalierenden, be-
+● Angst und Depression (Untersuchungen zufolge reagieren
+                                                                          trunkenen und aggressiven Pflegeempfängern zu tun. Hier
+  75 % der Betroﬀenen z. B. mit Rückzug und Resignation)                  kann z. B. ein zuvor besuchtes Deeskalationstraining helfen,
+● Verletzungen und Quetschungen durch Gurte
+                                                                          siehe auch Kap. „Pflege von Menschen mit Erkrankungen
+● Sturzgefahr, z. B., wenn die Betroﬀenen versuchen, über
+                                                                          der Psyche“ (S. 1382).
+  die Bettseiten aus dem Bett zu steigen
+● Zudem besteht Strangulationsgefahr: Wenn sich Betroﬀe-
+
+  ne trotz (in vielen Fällen nicht sachgemäßer) Fixierung                   Beispiel Verhalten hinterfragen
+  versuchen zu befreien, kann dies zur Strangulation führen.
+  Dadurch ist es schon zu Todesfällen gekommen.                             Herr M., 46 Jahre alt, unterzieht sich einer Sigmaresektion we-
+
+! Merke Trugschluss Arbeitserleichterung
+                                                                            gen Divertikulitis. Am 4. postoperativen Tag erscheint er ver-
+                                                                            wirrt, ist aggressiv gegenüber Personal und Angehörigen. Er
+Fixierungen erleichtern die Arbeit NICHT. Denn wenn sie korrekt aus-        wirft mit seinem Buch, schleudert das Getränk vom Tisch. Das
+geführt werden, sind sie mit sehr viel intensiver pflegerischer Betreu-     Personal kann ihn beruhigen und veranlasst eine Blutabnahme.
+ung verbunden – Beobachtung, Dokumentation, Prophylaxen, Be-                Hier zeigt sich ein Systemisches Inflammatorisches Response-
+handlung möglicher Verletzungen usw. Untersuchungen haben ge-               Syndrom (SIRS). Herr M. wird 4 Tage intensivmedizinisch be-
+zeigt, dass Heime mit einer sehr geringen Rate an Fixierungen nicht         handelt und ist dann wieder wohlauf.
+mehr Personal benötigen als andere.
+
+
+       I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen              181
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+l7    Rechtliche Grundlagen der Pflege
+
+
+                                                                            – Regelmäßige Fallbesprechungen durchführen, sie dienen
+          Postoperative mentale Verwirrung kann v. a. bei größeren            der Informationssammlung über den Menschen und
+        Operationen mit Herz-Lungen-Maschine (Bypass, Herzklappen-            führen oft zu einfachen Lösungen.
+        OP, Transplantation) auftreten. Sie kann auch ein frühes Zei-
+        chen einer beginnenden Sepsis sein (auch septische Enzephalo-
+        pathie genannt).                                                      WISSEN TO GO
+
+      Ältere, vor allem demenzerkrankte Menschen zeigen teil-               Fixierungen und freiheitsbeschränkende Maßnahmen
+      weise ein sog. herausforderndes Verhalten (S. 1390). Es gilt          vermeiden
+      als Reaktion auf das (kognitive) Unvermögen, sich und sei-            Fixierungen und freiheitsbeschränkende Maßnahmen soll-
+      nen Bedarf verständlich auszudrücken, und ist als Versuch             ten möglichst immer vermieden werden. Fixierungen er-
+      zu verstehen, auf sich aufmerksam zu machen. Es ist wich-             höhen die Sturzgefahr durch Immobilisierung und Muskel-
+      tig, dieses Verhalten zu ergründen, z. B. mithilfe spezieller         abbau sowie die Gefahr von Wundheilungsstörungen und
+      Assessments der Geriatrie/Gerontopsychiatrie, Biografie-              Pneumonien. Bei Anwendung von Gurten o. Ä. besteht zu-
+      arbeit sowie Gesprächen mit Angehörigen und Bezugsper-                dem Strangulationsgefahr. Fixierungen und freiheits-
+      sonen. Ärzte sollten die Medikation überprüfen – alte Men-            beschränkende Maßnahmen können u. a. vermieden wer-
+      schen erhalten oft einen „Pillencocktail“, der u. a. auﬀälliges       den durch:
+      Verhalten auslösen kann. Experten, z. B. Gerontopsychiater,           ● Verhalten hinterfragen und somatische Ursachen suchen
+      sollten ein geeignetes Therapieschema aufstellen.                     ● Medikation überprüfen
+         Die folgenden Empfehlungen beziehen sich vornehmlich               ● Deeskalationstrainings
+      auf das Leben in Wohneinheiten. Aber es lassen sich daraus            ● Sturzprophylaxe
+      Schlüsse auf das Vorgehen in Kliniken oder zu Hause ziehen:           ● Passende Gestaltung der Umgebung
+      ● Bettseitenteile und Gurte abschaﬀen, stattdessen Sturz-             ● Personelle Betreuung
+        prophylaxe:
+        – Protektoren (z. B. Hüfte, Kopf), um Frakturen zu vermei-
+           den.                                                           Pflegerisch wichtig im Fall einer Fixierung
+        – Festes Schuhwerk sorgt für sicheren Gang, evtl. „Stop-
+           persocken“ einsetzen.                                          Generell gilt: Für eine Fixierung muss immer eine ärztliche
+        – Frühe Mobilisation: Das Gehen mit der Gehhilfe üben,            Anordnung vorliegen, bei wiederholten Fixierungen oder Fi-
+           bevor die Operation erfolgt. Über z. B. kinästhetische Be-     xierungen, die über einen längeren Zeitraum andauern,
+           wegungsmuster üben, wie Betroﬀene am besten aufste-            muss zudem eine richterliche Genehmigung eingeholt wer-
+           hen und sich bewegen können. Postoperativ frühest-             den (S. 184). Im Fall einer 5- oder 7-Punkt-Fixierung ist dies
+           möglich aus dem Bett mobilisieren. Balance- und Gleich-        bereits der Fall, wenn die Fixierung länger als 30 min dauert.
+           gewichtstraining durchführen.                                  Bei einem Notfall können auch Pflegende eine Fixierung
+        – Für ausreichende Flüssigkeitszufuhr sorgen: Exsikkose           (außer Medikation) durchführen, müssen aber unmittelbar
+           verursacht immer leichte Benommenheit und Schwin-              danach einen Arzt verständigen, der die Indikation prüft.
+                                                                          ● Entkleiden und Durchsuchen: Entkleidet wird der Pflege-
+           del.
+        – Ausscheidung beobachten, Kontinenz fördern: Harn-                 bedürftige nur, wenn es der Zustand der Kleidung zwin-
+           oder Stuhldrang verursachen Unruhe, Überlaufblasen               gend erfordert, da dies für den Pflegebedürftigen entwür-
+           führen (gar nicht so selten) zu starker Unruhe, auch weil        digend ist. Der Pflegebedürftige sollte allerdings auf ge-
+           sie Schmerzen verursachen. Pflegende können vorsichtig           fährliche Gegenstände (Messer, Feuerzeug etc.) durchsucht
+           den Unterbauch abtasten.                                         werden.
+                                                                          ● Anwendung: Es muss auf die richtige Anwendung geachtet
+        – Sollten Bettseitenteile nötig sein, sind geteilte einzuset-
+           zen. Durch die Lücken kann der Pflegeempfänger aufste-           werden (z. B. müssen nach dem Anlegen von Fuß- oder
+           hen und muss nicht „darüberklettern“ – geschlossene              Armmanschetten Durchblutung, Sensibilität und Motorik
+           Bettseitenteile erhöhen nur die Sturzhöhe.                       überprüft werden).
+      ● Umgebung gestalten                                                ● Überwachung: Fixierte Patienten müssen kontinuierlich
+
+        – Auch nachts für ausreichende Beleuchtung sorgen.                  überwacht werden. Dies muss zusätzlich dokumentiert
+        – Benötigte Utensilien (Klingel, Trinkgefäß, Buch) so be-           werden.
+           reitlegen, dass sie gut erreichbar sind.
+        – Niederflurbetten einsetzen, sie lassen sich fast bis auf        ACHTUNG
+           Bodenniveau absenken.                                          Eine kontinuierliche und persönliche Eins-zu-eins-Überwachung
+        – Stolperfallen beseitigen.                                       muss für die Dauer der Fixierung (5-Punkt- oder 7-Punkt-Fixierung)
+        – Nicht den Pflegeempfänger/Bewohner den Strukturen               gewährleistet sein.
+           anpassen, sondern die Strukturen den Menschen, z. B.
+           durch Nachtcafés oder TV-Möglichkeiten für die, die            ● Dokumentation:    Jeder Schritt im Entscheidungsprozess
+           nicht gut schlafen können.                                       muss dokumentiert werden. Die verhaltensauslösenden
+        – Sensormatten nutzen. Diese geben Alarm oder informie-             Situationen sollten genau beschrieben werden: Wann tra-
+           ren mittels eines Sensors, wenn Druck auf sie ausgeübt           ten sie auf? Wer war dabei? Die meisten Kliniken haben
+           wird (z. B. durch einen Fuß). Sie können z. B. vor das Bett      dafür Formblätter. Gerichtliche Verfahren stehen und fal-
+           oder an die Tür gelegt werden.                                   len auch in diesen Fällen mit der Dokumentation.
+        – Basale Stimulation, beruhigende Musik usw. einsetzen.           ● Besprechen: Sobald der fixierte Pflegebedürftige wieder
+
+      ● Personelle Betreuung                                                verbal ansprechbar ist, sollte das medizinischen Personal
+        – Präsenzkräfte einsetzen (Ehrenamtliche oder Bezugsper-            das weitere Vorgehen mit ihm besprechen, ob z. B. die Fi-
+           sonen; vertraute Menschen geben Sicherheit).                     xierung schrittweise aufgehoben werden kann.
+
+
+
+182    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                                Pflegerelevante Rechtsgebiete
+
+
+
+! Merke Kommunikation                                                       Vorsorgebevollmächtigte dürfen über eine Fixierung
+                                                                          nicht entscheiden. Das Personal muss eine richterliche Ge-
+Kommunikation hilft beim Vermeiden von Konflikten und bei der
+Deeskalation. Vermitteln Sie dem Pflegebedürftigen, der fixiert wer-      nehmigung einholen.
+den soll oder ist, dass Sie ihn und seine Emotionen und Wahrneh-
+mungen ernst nehmen.
+                                                                       Zulässigkeit von freiheitsbeschränkenden
+Beendigung der Fixierung: Sind die ursprünglichen Gründe               Maßnahmen
+für die Fixierung nicht mehr oder nur noch teilweise vorhan-
+den, müssen Pflegende und Ärzte überprüfen, ob die Fixie-              Freiheitsbeschränkende Maßnahmen wie Unterbringung
+rung gelockert oder beendet werden kann. Mit dem Pflegebe-             oder Fixierung sind nur zum Wohl des Bewohners/Patienten
+dürftigen sollte die Situation nachbesprochen werden, auch             zulässig,
+                                                                       ● um eine krankheits- oder behinderungsbedingte Gefahr
+dies wird dokumentiert. Seit 2018 müssen Krankenhäuser fi-
+xierte Patienten darauf aufmerksam machen, dass sie die                  einer Selbsttötung oder
+                                                                       ● eine erhebliche Gesundheitsschädigung abzuwenden oder
+Maßnahme bei Gericht nachträglich anfechten können.
+                                                                       ● wenn eine Untersuchung, eine Heilbehandlung oder ein
+
+                                                                         ärztlicher Eingriﬀ notwendig ist, deren Sinn und Zweck
+Vorsorgevollmachten und Fixierung                                        der Betroﬀene infolge Krankheit oder Behinderung nicht
+Menschen, die aufgrund einer Vorsorgevollmacht einen                     einzusehen vermag.
+Pflegebedürftigen vertreten, haben keine Möglichkeit des               ● In Ausnahmefällen, bei der öﬀentlich-rechtlichen Unter-
+
+Eingriﬀs bei freiheitsentziehenden Maßnahmen. Selbst                     bringung (Zwangseinweisung), kann auch der Schutz Drit-
+wenn in einer Vollmacht steht, der Bevollmächtigte dürfe                 ter im Vordergrund stehen.
+über derartige Maßnahmen entscheiden (z. B. Fixierung), ist
+das nicht gültig. Das Personal der Klinik muss immer eine              In jedem Fall ist zu prüfen, ob der Patient sich noch selbst zu
+richterliche Genehmigung einholen (BVerfG Nr. 47/2015).                den Maßnahmen äußern kann und ob es Alternativen zu
+                                                                       der geplanten Maßnahme gibt, die seine Fortbewegungsfrei-
+                                                                       heit nicht oder nicht so stark beeinträchtigen (▶ Abb. 7.5).
+Handlungsempfehlung
+Freiheitsbeschränkende Maßnahmen sind grundsätzlich im-
+mer und nach Kräften zu vermeiden. Werden sie dennoch                  Abb. 7.5 Zulässigkeitsvoraussetzung für freiheitsbeschrän-
+nötig, sollte(n)                                                       kende Maßnahmen.
+● sie dem Schutz des Pflegeempfängers und/oder anderer
+
+  Menschen dienen,                                                                     Freiheitsbeschränkende Maßnahmen
+● nie „zur Erleichterung“ der Pflege angewendet werden,
+● sie immer der Situation angepasst und mit der geringstmög-
+                                                                             • Unterbringung, z. B. in einem Heim, in der Psychiatrie
+  lichen Einschränkung für den Betroﬀenen verbunden sein,                    • mechanische oder medikamentöse Fixierung
+● alle Beteiligten – Pflegeempfänger, Klinikpersonal, Ange-
+
+  hörige, Bezugspersonen und evtl. auch Psychologen – in                    Einwilligungsfähiger                    Einwilligungsunfähiger
+  die Entscheidung einbezogen werden,                                               Patient                                  Patient
+● der Nutzen höher als der Schaden für den Betroﬀenen
+
+  sein,                                                                   Einwilligung des                       Einwilligung des Vertreters
+● sie fachlich begründet und
+                                                                          Patienten erforderlich                 erforderlich
+● von begrenzter Dauer sein.
+
+
+
+Es kann vorkommen, dass Pflegeempfänger um freiheitsein-                     Betreuer/Bevoll-                    Betreuer/Bevollmächtigter
+schränkende Maßnahmen wie Bettseitenteilen bitten, um                      mächtigter vorhanden                       nicht vorhanden
+sicher zu sein, dass sie nicht aus dem Bett fallen.                        • Einwilligung des                    • mutmaßliche Einwilligung
+                                                                             Betreuers/                            im Notfall
+                                                                            Bevollmächtigten                     • Einwilligung durch das
+     WISSEN TO GO                                                          • Genehmigung durch                     Betreuungsgericht in
+                                                                             das Betreuungsgericht,                Eilfällen, § 1846 BGB
+  Fixierungen durchführen                                                    wenn Fixierung                      • (vorläufige) Betreuung
+                                                                             – dauerhaft oder                      anregen:
+  Fixierungen sind nur bei sehr hohem Verletzungsrisiko                      – regelmäßig                           – ärztliches Attest über
+  durch einen Sturz, Gesundheitsgefahr oder aggressivem                                                               Krankheit/Behinderung,
+  Verhalten mit Selbst- und/oder Fremdgefährdung durch-                                                               aufgrund deren Ein-
+  zuführen.                                                                                                           willigungsunfähigkeit
+     Pflege: Ärztliche Anordnung muss vorliegen oder im                                                               vorliegt
+  Notfall unmittelbar nach der Fixierung eingeholt werden,                                                          – Begründung der
+  sachgemäße Durchführung der Fixierung (u. a. Durchblu-                                                              Eilbedürftigkeit
+  tung, Sensibilität und Motorik überprüfen), Dokumentati-                                                          – Anhörung durch das
+  on des Entscheidungsprozesses, Beschreibung der aus-                                                                Betreuungsgericht
+  lösenden Situation, Kommunikation mit dem Pflegebe-                                                            dann weiter wie linke Spalte
+  dürftigen, kontinuierliche Überwachung (Gefahr von
+  u. a. Verbrennungen oder Strangulation) und Dokumenta-               Abb. nach: Hell W. Alles Wissenswerte über Staat, Bürger, Recht. Thieme; 2018
+  tion. Bei regelmäßiger und längerer Durchführung ist eine
+  richterliche Genehmigung einzuholen.
+
+
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen                        183
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+l7    Rechtliche Grundlagen der Pflege
+
+
+      Freiheitsentziehende Maßnahmen bei Kindern • Bisher durften
+      Eltern über die Anwendung von freiheitsentziehenden Maß-            ! Merke Richterliche Genehmigung
+      nahmen (feM) wie beispielsweise Einschluss, 3-Punkt- oder           Das Bundesverfassungsgericht hat 2018 geurteilt, dass eine 5- oder
+      5-Punkt-Fixierungen und Time-out-Raum bei ihrem Kind                7-Punkt-Fixierung über eine halbe Stunde durch einen Richter
+      selbst entscheiden.                                                 genehmigt werden muss.
+        Dies hat sich seit dem 01.10.2017 geändert (§ 1631b
+      Abs. 2 BGB). Seitdem bedarf es neben der Zustimmung des             Es gibt Forderungen, dass die Entscheidung abhängig ge-
+      Sorgeberechtigten auch einer familienrichterlichen Geneh-           macht werden soll von der „Schwere der freiheitsbeschrän-
+      migung, wenn sich der Minderjährige in einer „Einrichtung“          kenden Maßnahme“. Dies ist aber immer noch sehr unbe-
+      wie beispielsweise einem Heim, einem Krankenhaus, Kin-              stimmt und bietet wenig Rechtssicherheit für diejenigen, die
+      dergarten oder einer Förderschule befindet. Genehmigungs-           handeln müssen. Ein alternativer Vorschlag ist daher ein
+      pflichtig sind – wie bei den Erwachsenen – Maßnahmen, die           Vorgehen nach einem Paragrafen aus der Strafprozessord-
+      über einen längeren Zeitraum oder regelmäßig angewendet             nung (§ 128). Danach dürfte eine freiheitsbeschränkende
+      werden (s. u.).                                                     Maßnahme ohne richterlichen Beschluss maximal bis zum
+        In der Praxis muss ein Antrag auf feM beim zuständigen            Ablauf des nächsten Tages dauern. Ein juristisch klar defi-
+      Familiengericht gestellt werden. Der Familienrichter bestellt       niertes Vorgehen gibt es zurzeit nicht.
+      einen Verfahrensbeistand. Dieser macht sich ein Bild der Si-
+      tuation und sucht gemeinsam mit allen beteiligten Personen
+      nach alternativen Maßnahmen, die für einen bestimmten
+                                                                              WISSEN TO GO
+      Zeitraum auf Praktikabilität erprobt werden, um so die be-
+      antragte feM zu vermeiden.                                            Richterliche Genehmigung
+                                                                            Bei freiheitsbeschränkenden Maßnahmen, die über einen
+          WISSEN TO GO                                                      längeren Zeitraum oder regelmäßig durchgeführt wer-
+                                                                            den sollen, ist eine richterliche Genehmigung nötig. Regel-
+                                                                            mäßig ist eine Maßnahme, wenn sie immer zur gleichen
+        Freiheitsentziehende Maßnahmen bei Kindern                          Zeit oder zum gleichen Anlass durchgeführt wird. Ein län-
+        Eine Besonderheit ergibt sich bei freiheitsentziehenden             gerer Zeitraum kann bereits einen Tag oder eine Nacht
+        Maßnahmen gegenüber Kindern. Bisher durften Eltern                  umfassen. Bei Minderjährigen muss die Genehmigung
+        über die Anwendung von freiheitsentziehenden Maßnah-                unverzüglich erfolgen (innerhalb desselben Tages, spätes-
+        men bei ihrem Kind selbst entscheiden. Dies hat sich seit           tens am nächsten Tag). Eine 5- oder 7-Punkt-Fixierung,
+        dem 1. Oktober 2017 geändert. Seitdem bedarf es neben               die länger als 30 min dauert, muss durch einen Richter ge-
+        der Zustimmung der/des Sorgeberechtigten auch einer fa-             nehmigt werden.
+        milienrichterlichen Genehmigung, wenn sich der/die Min-
+        derjährige in einer „Einrichtung“ wie beispielsweise einem
+        Heim, einem Krankenhaus, Kindergarten oder einer För-             7.5.11 Unterlassene Hilfeleistung
+        derschule befindet, vgl. § 1631b BGB.
+                                                                          Unterlassene Hilfeleistung ist in Deutschland eine Straftat!
+                                                                          In unserer Gesellschaft soll eine Person, die eine Notlage er-
+                                                                          kennt, nicht wegsehen, sondern die ihr mögliche Hilfe ge-
+      Richterliche Genehmigung bei Fixierungen und
+                                                                          ben. Damit diese Hilfe erbracht wird, hat sich der Gesetz-
+      freiheitsbeschränkenden Maßnahmen
+                                                                          geber dafür entschieden, in § 323 c des Strafgesetzbuchs
+      Eine richterliche Genehmigung der freiheitsbeschränkenden           eine Regelung aufzunehmen: Jemand, der im Fall eines Un-
+      Maßnahme ist dann nötig, wenn sie über einen längeren               glücks keine Hilfe leistet, obwohl die Hilfe erforderlich und
+      Zeitraum oder regelmäßig durchgeführt werden soll (§ 1906           das Hilfeleisten auch zumutbar ist, wird bestraft.
+      Abs. 4 BGB). Leider sagt das Gesetz nicht konkret, was „re-
+      gelmäßig“ oder „länger“ bedeutet. Die Rechtsprechung hat            Unglücksfall • Ein Unglücksfall ist ein plötzlich eintretendes
+      folgende Grundsätze aufgestellt:                                    Ereignis, das erhebliche Gefahren für Menschen oder Sachen
+      ● „Regelmäßig“ heißt: Eine freiheitsbeschränkende Maß-              hervorruft oder hervorzurufen droht. Der Sturz eines Pa-
+        nahme wird immer aus dem gleichen Anlass oder zur glei-           tienten ist z. B. ein solches Ereignis, aber auch die Einnahme
+        chen Zeit vorgenommen. Das kann z. B. heißen, dass im             eines falschen Medikaments oder der plötzliche Stillstand
+        Fall von an Demenz erkrankten Menschen, die am frühen             einer Beatmungsmaschine aufgrund eines Stromausfalls.
+        Abend und bei Sonnenuntergang unruhig, nervös und ggf.            Kein plötzliches Ereignis ist z. B. eine chronische Erkran-
+        flüchtig werden (Sundowning-Phänomen) zur entspre-                kung.
+        chenden Zeit immer die Tür verschlossen wird.
+      ● Ein „längerer Zeitraum“ kann laut Rechtsprechung zwar             Die Hilfe muss erforderlich sein • Das ist nicht der Fall, wenn
+        schon der Zeitraum eines Tages oder einer Nacht sein              schon Hilfe geleistet wird. Allerdings ist Vorsicht geboten:
+        (Art. 104 Abs. 2 GG). Häufig wurde innerhalb eines Zeit-          Jeder sollte sich selbst überzeugen, dass auch tatsächlich Hil-
+        raums von 72 Stunden keine richterliche Genehmigung               fe erbracht wird. Jeder kennt die „Gaﬀer“. So kommt es im-
+        verlangt. Dies hat sich mittlerweile geändert, da seit 2018       mer wieder zu dem Problem: An einem Unglücksort stehen
+        bei 5- oder 7-Punkt-Fixierungen eine sehr viel kürzere            mehrere Menschen; von außen sieht es also so aus, als seien
+        Frist gilt (30 min). Die Anträge werden daher meist früher        Helfer da. Aber vielleicht leistet niemand aus der Menschen-
+        gestellt. Eine genaue zeitliche Definition gibt es aber           masse Hilfe, sondern alle schauen nur betroﬀen. Das kann
+        (noch) nicht. Bei Minderjährigen muss die Genehmigung             im Zweifel Probleme bringen: Leistet niemand Hilfe und je-
+        unverzüglich erfolgen. In der Praxis heißt das meist am           der behauptet später, er habe geglaubt, „die anderen“ wür-
+        selben Tag, spätestens aber am nächsten.                          den helfen, ist dies keine Ausrede für Untätigkeit. Vielmehr
+
+
+
+184    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                     Spezielle Gesetze im Pflegebereich
+
+
+muss sich jeder Einzelne um eﬀektive Hilfe bemühen, z. B.                Eheliche Kinder • In Deutschland steht das Sorgerecht für
+Rettungskräfte oder Polizei anrufen.                                     eheliche Kinder gem. § 1626 BGB beiden verheirateten El-
+                                                                         ternteilen, welche in ehelicher Lebensgemeinschaft leben,
+ACHTUNG                                                                  grundsätzlich gemeinsam zu. Maßgeblich bei der Ausübung
+Wenn Sie an einem Unfall vorbeifahren und es stehen dort schon           ist das Kindeswohl - die Eltern haben das Sorgerecht ge-
+Helfer, vergewissern Sie sich, dass diese auch aktiv sind. Ist bereits   meinsam und eigenverantwortlich zum Besten des Kindes-
+Blaulicht zu sehen bzw. professionelle Hilfe vor Ort, können Sie wei-    wohls auszuüben. Bei Meinungsverschiedenheiten zwischen
+terfahren.                                                               den Eltern über die Art und Weise der Ausübung des Sor-
+                                                                         gerechts besteht die Möglichkeit, dass das Familiengericht
+Die Hilfe muss zumutbar sein • Zumutbar ist auf jeden Fall               das Entscheidungsrecht einem Elternteil allein übertragen.
+das Alarmieren des Notrufs (112) oder das Melden eines                      Auch bei Getrenntleben und im Falle einer Scheidung ver-
+Vorfalls an die Stationsleitung oder einen anwesenden Arzt.              bleibt das Sorgerecht grundsätzlich bei beiden Eltern ge-
+Es sei denn, die Pflegefachkraft ist z. B. am Sprechen oder in           meinsam. Nur in bestimmten Fällen ist eine Übertragung
+den Bewegungen zum Telefonieren gehindert. Zum Beispiel,                 des Sorgerechts auf einen Elternteil möglich. Maßgeblich ist
+wenn sie zusammen mit dem Patienten gestürzt ist und sich                in einem solchen Fall immer das Kindeswohl.

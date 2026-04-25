@@ -1,699 +1,607 @@
-# Kapitel 33: Pflege von Menschen im Krankenhaus Kinder und alte Menschen
+# Teil 33
 
-> Quelle: I Care Pflege (Thieme, 2020), S. 734-741
+> Quelle: Icare Pflege
 > Automatisch extrahiert — Formatierung kann abweichen
 
 ---
 
-Palliative Pflege
+  ko haben, zu erkranken und kürzer zu leben. Im Vergleich           sammen. Anliegen ist, durch geeignete Maßnahmen die Ge-
+  zu Menschen, die in unserer Gesellschaft eine „höhere“             sunderhaltung der Bevölkerung zu fördern (▶ Abb. 9.19).
+  Position einnehmen, gehen sie außerdem häufiger zu ih-               Dabei geht es nicht darum, unmittelbar Krankheitssymp-
+  rem Hausarzt.                                                      tome zu verbessern oder bestimmte Körperfunktionen zu
+● Frauen haben in unserer Gesellschaft eine höhere Lebens-           erhalten. Vielmehr sollen über soziale und politische Inter-
+  erwartung als Männer. Sie nehmen häufiger Gesundheits-             ventionen die gesellschaftlichen Voraussetzungen für ein
+  leistungen in Anspruch und geben in Befragungen häufiger           gesundes Leben geschaﬀen werden. Hierzu zählen z. B. Maß-
+  als Männer an, dass sie sich gesundheitlich schlecht füh-          nahmen, die die Verkehrssicherheit oder die Sanitärhygiene
+  len.                                                               verbessern oder für erkrankte bzw. gefährdete Personen den
+● Alleinerziehende Frauen leiden durchschnittlich häufiger           Zugang zu entsprechenden medizinischen Versorgungsleis-
+  an Bronchitis, Leber- und Nierenerkrankungen sowie psy-            tungen einer Gesellschaft fördern.
+  chischen Erkrankungen als andere. Bei alleinerziehenden              Kurz gesagt: Public-Health-Forscher beschäftigen sich mit
+  Vätern ist dies nicht der Fall.                                    der „Theorie und Praxis von Krankheiten, Verlängerung von
+● Menschen türkischer Abstammung haben in Deutschland                Leben und Gesundheitsförderung durch organisiertes gesell-
+  ein höheres Krankheitsrisiko als gleichaltrige Personen            schaftliches Handeln“ (Schwartz et al. 1999).
+  ohne Migrationshintergrund.                                          Betrachtet man rückblickend die Entwicklungen in den
+                                                                     Industrie- bzw. Dienstleistungsgesellschaften, fällt der gra-
+Die Chance, ein gesundes Leben zu führen, scheint demnach            vierende Anstieg der durchschnittlichen Lebenserwartung
+in unserer Gesellschaft nicht gleich verteilt zu sein. Die Posi-     ihrer Bevölkerungen auf. So lag in Deutschland die durch-
+tion, die wir in unserer Gesellschaft einnehmen, aufgrund            schnittliche Lebenserwartung der männlichen Gesamt-
+unseres Berufs, unseres Einkommens oder unserer Bildung,             bevölkerung im Jahr 1950 bei 64 Lebensjahren, bei den
+ist demnach mit günstigen oder ungünstigen Lebensbedin-              Frauen waren es 68 Jahre. 2016 lag sie für Männer in
+gungen verbunden. So sind Menschen, die in unserer Gesell-           Deutschland schon bei 78 Jahren, für Frauen sogar bei
 
-Beispiel Rehabilitative Pflege
-Eine Pflegefachkraft in einer Abteilung für Frührehabilitation
-kann die Unterstützung eines Pflegeempfängers z. B. bei der
-Körperpflege gezielt rehabilitativ gestalten. Nachdem sie die
-Ressourcen des Pflegeempfängers eingeschätzt hat, beteiligt
-sie diesen an ausgewählten Handlungen der Körperpflege, statt
-die komplette Körperpflege selbst durchzuführen. Ziel ist z. B.
-eine Kräftigung der Armmuskulatur.
-Eine Pflegefachkraft in einer Altenhilfeeinrichtung kann einen
-Bewohner ermuntern, sich die Schuhe selbst anzuziehen. Auch
-wenn dies länger dauert und nicht auf Anhieb funktioniert, es
-fördert neben der Feinmotorik der Hände auch das Selbstbewusstsein des Bewohners.
-Eine Pflegefachkraft in einer psychiatrischen Tagesklinik
-kann ihren Pflegeempfänger ermuntern, selbst ein Konfliktgespräch mit dem Therapeuten zu führen, anstatt die Beschwerde der Person stellvertretend weiterzuleiten.
-Eine Pflegefachkraft in der ambulanten Pflege kann für den
-Pflegeempfänger gezielt ein passendes Hilfsmittel für die Verbesserung der Mobilität innerhalb der Wohnung auswählen.
-Sie kann den Betroﬀenen im Umgang mit dem Hilfsmittel beraten und anleiten. Ein mögliches Ziel ist z. B., dass der Betroﬀene
-wieder selbstständig die Toilette aufsuchen kann.
 
-Rehabilitative Pflege am Beispiel Apoplex
-Rundumblick • Den Pflegefachkräften kommt eine besondere
-Rolle im Rehabilitationsprozess zu, da sie durch den kontinuierlichen Kontakt zu den Betroﬀenen Veränderungen
-frühzeitig bemerken und ins Team einbringen. Sie greifen
-therapeutische Prinzipien in ihrer Arbeit auf und sorgen so
-für ein nachhaltiges Training. Oft sind sie die ersten Ansprechpartner für Pflegeempfänger und ihre Bezugspersonen. Neben den pflegerischen Interventionen haben die
-Pflegefachkräfte informierende, beratende und koordinierende Aufgaben.
-Pflegebedarf erheben • Um den Betroﬀenen in die entsprechende Rehabilitationsphase einzugruppieren, müssen zunächst Einschränkungen und Ressourcen erfasst werden.
-Außerdem sichert die Pflegebedarfserhebung die adäquate
-Versorgung des Pflegeempfängers. Zu den relevanten Assessmentinstrumenten zählen:
-● Barthel-Index (S. 95): Einschätzung der Beeinträchtigung
-hinsichtlich der grundlegenden Alltagsfunktionen
-● Frührehabilitation-Barthel-Index: Einschätzung der Merkmale des Barthel-Index, erweitert um die Komponenten
-Atmung, Verhalten, Kommunikation, Schluckstörungen
-● Functional Independence Measure (Funktionale Selbstständigkeitsmessung): Erfassung von Defiziten bezüglich
-der Merkmale Selbstversorgung (z. B. Körperpflege, Nahrungsaufnahme), Kontinenz, Transfer, Fortbewegung,
-Kommunikation sowie soziale und kognitive Fähigkeiten
-Auf Grundlage der Ergebnisse der Pflegebedarfserhebung
-wird dann die Pflegeplanung für den individuellen Pflegeempfänger konzipiert.
-Pflegeschwerpunkte • Die einzelnen Phasen sind von unterschiedlichen Pflegeschwerpunkten begleitet.
-● Phase A: In dieser frühen Phase der Erkrankung spielen
-Pflegende eine zentrale Rolle, da die Fähigkeiten und Ori-
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen      245
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+l9    Grundlagen der Entwicklung und Psychologie
 
-entierung der Pflegeempfänger in der Akutphase stark
-eingeschränkt sind. Pflegefachkräfte übernehmen die
-Überwachung der Vitalunktionen, sorgen mithilfe von basal stimulierenden Maßnahmen (z. B. aktivierende Waschung) für Orientierung und sind unmittelbare Ansprechpartner für den Pflegeempfänger und seine Bezugspersonen. Darüber hinaus kompensieren sie ausgefallene Körperfunktionen, indem sie z. B. die Körperpflege, die Positionierung oder das Anreichen von Nahrung übernehmen.
-Je nach Gesundheitszustand des Patienten werden bereits
-erste aktivierende Pflegestrategien, z. B. das selbstständige
-Waschen des Gesichts, angewendet.
-● Phase B: Bereits in der Phase der Frührehabilitation beginnen therapeutische Maßnahmen, z. B. eine gezielte Bewegungsförderung oder Mobilisation des Pflegeempfängers.
-Dabei arbeiten Pflegefachkräfte enge mit Physiotherapeuten zusammen. Bei Pflegeempfänger mit Apoplex ist das
-Bobath-Konzept (S. 1230) das wichtigste Therapiekonzept.
-Die Durchführung von Prophylaxemaßnahmen soll mögliche Komplikationen nach einem Schlaganfall verhindern.
-Des Weiteren sind die Patientenbeobachtung und die fortlaufende Einschätzung der Entwicklung des Pflegeempfängers zentral, um gezielt auf Veränderung eingehen zu
-können.
-● ab Phase C: In einem späteren Stadium arbeiten Pflegefachkräfte mit Ergotherapeuten und Logopäden zusammen. Das Trainieren von Alltagskompetenz steht in dieser
-Phase im Vordergrund. So wird z. B. das selbstständige Anziehen geübt. Auch der Umgang mit Hilfsmitteln (z. B. die
-Handhabung der Greifzange oder das Handling der Zubereitung eines Brotes mit dem Einhänderbrett) wird geübt.
-Das Wiedererlernen von Alltagskompetenzen kann für
-den Pflegeempfänger sehr anstrengend und mühsam sein.
-Der Pflegeempfänger sollte motiviert und auch auf kleinste Vorschritte aufmerksam gemacht werden. Ebenso sollte
-in diesem Zusammenhang auf möglicherweise auftretende psychische Beeinträchtigungen, z. B. Anzeichen für eine
-beginnende Depression, geachtet und frühzeitig Hilfe hinzugezogen werden.
 
-32.6 Palliative Pflege
-Definition Palliativ
-Das Wort „palliativ“ kommt aus dem Lateinischen: palliare = verdecken, ummanteln. Palliative Pflege oder auch Palliative Care
-strebt die Linderung von Krankheitssymptomen an.
-Bei der palliativen Pflege soll – sinnbildlich gesprochen – ein
-Mantel des Schutzes und der Fürsorge um den Betroﬀenen
-und seine Angehörigen gelegt werden.
-WHO-Definition • Palliative Pflege ist nach Definition der
-WHO (Weltgesundheitsorganisation) von 2002 ein Ansatz
-zur Verbesserung der Lebensqualität von Betroﬀenen und
-ihren Familien, die mit Problemen durch eine lebensbedrohliche Erkrankung konfrontiert sind. Leiden soll vorgebeugt
-oder sollen gelindert werden. Dies soll geschehen durch
-frühzeitiges Erkennen, sorgfältige Erfassung und Behandlung von Schmerzen und anderen Problemen körperlicher,
-psychosozialer und spiritueller Art. Palliative Pflege
-● ermöglicht Linderung von Schmerzen und anderen belastenden Symptomen,
-● ist lebensbejahend und erkennt Sterben als normalen Prozess an,
+      Abb. 9.19 Public Health.
+                                                                                                           9.9.5 Psychische Bewältigungs-
+                                                                           Beu
+                                                                              rte
+                                                                                 ilu
+                                                                                                           strategien im Umgang mit Krankheit
+                                                                                    ng
+                                                               Gesund-                                     Jeder Mensch entwickelt während seines Lebens individuel-
+                                                                heits-                                     le Strategien, mit belastenden Situationen umzugehen. Sol-
+                                               Evaluieren      kontrolle    Diagnose                       che Bewältigungsstrategien fasst man unter dem Begriﬀ
+                                                                           und Unter-                      „Coping“ zusammen (engl.: „to cope with“ = mit etwas zu-
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
+            rheit und Stan
 
-731
+       Siche
+                                                                           suchungen                       rechtkommen). Auch Krankheiten sind mit besonderen psy-
+                                     kompetentes                                                           chischen Belastungen verbunden, die den Betroﬀenen über-
 
+                          dar
+                                   Personal schaffen
+                                                                               Informieren,                fordern und Ängste auslösen können.
+                                                         Forschung
+                                                                               Schulen und
+
+
+                             ds
+                                                            und
+                                  Behandlung und          Weiter-                 Beraten
+                                     Betreuung          entwicklung
+                                                                                                           Unbewusste Bewältigungsstrategien/
+                                   vermitteln und
+                                                                            soziale und                    Abwehrmechanismen
+                                      anbieten
+                                                                         gesellschaftliche
+                                                                                           Entw            Bestimmte unbewusst ablaufende Reaktionen können Men-
+                                                                          Mitbeteiligung
+                                                                                               ick         schen vor allem zu Beginn einer Krankheit vor einer psy-
+                                            Regeln                         ermöglichen            el
+                                          durchsetzen                                               nv     chischen Überforderung schützen. Psychologen sprechen
+                                                                                                      on
+                                                            Strategien                                     von Abwehrmechanismen. Dies sind u. a. folgende.
+                                                            entwickeln               ien
+                                                                                  teg
+                                                                                ra                         Verdrängung • Sie gilt als wichtigster Abwehrmechanismus,
+                                                                              St
+                                                                                                           mit dessen Hilfe angstauslösende Gedanken, Gefühle und
+                                                                                                           Erinnerungen vorübergehend aus dem Bewusstsein ge-
+      Maßnahmen von Public Health, um die Gesunderhaltung der
+                                                                                                           drängt werden. Dadurch muss sich der Mensch nicht mehr
+      Bevölkerung zu fördern.
+                                                                                                           mit der Realität und seiner Krankheit auseinandersetzen.
+
+                                                                                                           Vigilanz • Sie beschreibt die Tendenz eines Betroﬀenen, be-
+      83 Jahren (Statistisches Bundesamt 2019). Die steigende Le-
+                                                                                                           drohliche Aspekte seiner Krankheit sogar besonders intensiv
+      benserwartung ist zu einem Großteil der Verbesserung der
+                                                                                                           wahrzunehmen und sich übertrieben mit ihnen zu befassen
+      Ernährung, dem Arbeitsschutz, der Wasserhygiene und ähn-
+                                                                                                           (lat. „vigilantia“ = „Wachheit“). Er versucht, die Bedrohung
+      lichen Public-Health-Maßnahmen zu verdanken. Nur ein
+                                                                                                           zu kontrollieren, indem er seine Aufmerksamkeit gezielt auf
+      kleiner Anteil ist auf eine direkte Wirkung von medizini-
+                                                                                                           deren Ursache richtet. So konzentriert sich der Dialysepa-
+      schen Maßnahmen zurückzuführen.
+                                                                                                           tient z. B. auf mögliche Komplikationen wie einen Shuntver-
+         Zur Gesundheitsförderung siehe auch Kap. „Vier Hand-
+                                                                                                           schluss und verlangt bei jeder Dialyse, von einer bestimmten
+      lungsfelder der Pflege“ (S. 720)
+                                                                                                           Person punktiert zu werden, zu der er Vertrauen gefasst hat.
+         Bei vielen Krankheiten, z. B. Infektionskrankheiten (Mala-
+      ria, HIV), Krebserkrankungen und allgemein chronischen Er-
+                                                                                                           Regression • Hierbei greift die Psyche auf frühere Entwick-
+      krankungen, sind die medizinischen Heilungschancen bis-
+                                                                                                           lungsstufen zurück, um das seelische Gleichgewicht auf-
+      lang begrenzt. Ihre erfolgreiche Bekämpfung ist maßgeblich
+                                                                                                           rechtzuerhalten. Das Phänomen der Regression lässt sich
+      vorbeugenden Maßnahmen zu verdanken, z. B. dem Insek-
+                                                                                                           häufig bei Krankenhauspatienten während lange andauern-
+      tenschutz, der Veränderung des Sexualverhaltens und der
+                                                                                                           der stationärer Aufenthalte beobachten. Sie wirken dann
+      Änderung des Lebensstils.
+                                                                                                           stark abhängig und in ihrer Autonomie und Selbstbestimmt-
+                                                                                                           heit eingeschränkt. Essen, Trinken und Verdauung spielen
+                    WISSEN TO GO                                                                           eine zentrale Rolle. Die Pflegeempfänger verhalten sich un-
+                                                                                                           selbstständig, sind oft unvernünftig, treﬀen ungern Ent-
+                                                                                                           scheidungen und zeigen wenig Eigeninitiative.
+            Public Health und Gesundheitsförderung
+            Public Health (Gesundheitswissenschaften) ist ein multi-                                       Bewusste Bewältigungsstrategien
+            disziplinäres wissenschaftliches Fach verschiedener Fach-
+            gebiete mit dem Ziel der Gesundheitsförderung auf gesell-                                      Ein erster Schritt in Richtung bewusster Bewältigung ist,
+            schaftlicher Ebene.                                                                            dass der Betroﬀene seine Krankheitssituation, deren Bedeu-
+               Gesundheitsfördernde Maßnahmen wie Infektionspro-                                           tung und Belastung für den Alltag wahrnimmt und aner-
+            phylaxe, Hygienemaßnahmen, Lebensstiländerung u. a.                                            kennt. In einem nächsten Schritt kann er sich seine Ressour-
+            konnten in der Vergangenheit zahlreiche positive Ergebnis-                                     cen und damit seine eigenen Fähigkeiten, Rückhalte und
+            se mit einer deutlichen Lebensverlängerung verschiedener                                       Kraftquellen bewusst machen. Dazu gehört auch, über Er-
+            Gesellschaften und Gesellschaftsgruppen erzielen.                                              fahrungen nachzudenken und zu überlegen, welche Bewäl-
+                                                                                                           tigungsstrategien aus früheren Situationen in der aktuellen
+                                                                                                           Situation hilfreich und einsetzbar sein können. Mögliche Be-
+                                                                                                           wältigungsstrategien bzw. Reaktionen während eines Be-
+                                                                                                           wältigungsprozesses sind:
+                                                                                                           ● Handlungsorientierte Reaktionen:
+
+                                                                                                             – Altruismus (für andere etwas tun, z. B. Engagement in
+                                                                                                               Selbsthilfegruppen)
+                                                                                                             – Kompensation (ablenkende Wunscherfüllung)
+                                                                                                             – konstruktive Aktivität, Zupacken (Angriﬀ als Verteidi-
+                                                                                                               gung, Patient zeigt sich betont kooperativ in der Thera-
+                                                                                                               pie)
+
+246     I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+        Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+         Usage subject to terms and conditions of license.
+                                                                                Der Mensch zwischen Gesundheit und Krankheit
+
+
+  – konzentrierte Entspannung (gezielte Entspannung, Kraft          Unterstützung des Pflegeempfängers
+    tanken)
+  – Rückzug (Isolation, Abkapselung)                                In einer Krise können unbewusste Abwehrmechanismen
+  – Zuwendung (verstärktes Anlehnungsbedürfnis)                     bzw. Bewältigungsstrategien einen Betroﬀenen kurzfristig
+  – Wut ausleben (Aggressionen ausdrücken)                          vor einer psychischen Überforderung schützen. Langfristig
+● Kognitive Reaktionen:                                             sollten sie allerdings in eine bewusste Auseinandersetzung
+  – Dissimulieren (Herunterspielen der Krankheit)                   übergehen. Pflegende sollten mit den Patienten reden und
+  – Ablenken (Aufmerksamkeit von der Krankheit weglen-              ihnen zuhören. Sie sollten versuchen herauszufinden, wel-
+    ken)                                                            che Bewältigungsstrategien der Pflegeempfänger anwendet
+  – Valorisieren (Selbstaufwertung, Erfolge suchen)                 und ob diese hilfreich für ihn sind. Sie sollten ihn bei der je-
+  – Problemanalyse (Abwägen, Entscheiden, Analysieren der           weiligen Strategie unterstützen und, wenn diese Erfolg ver-
+    Krankheit)                                                      sprechend erscheint, mit ihm gemeinsam nach weiteren
+  – Stoizismus (Hinnehmen von allem, was die Krankheit              hilfreichen Strategien suchen. Wenn Pflegende das Gefühl
+    bringt, Akzeptanz)                                              haben, dass der Pflegeempfänger professionelle Hilfe
+● Emotionale Reaktionen:                                            braucht, sollten sie ihm eine therapeutische bzw. seelsor-
+  – Haltung bewahren (Selbstkontrolle, Selbstbeherrschung)          gerische Unterstützung anbieten.
+  – Fatalismus (Krankheit und Folgen als unabwendbar hin-
+    nehmen, Resignation)
+                                                                         WISSEN TO GO
+  – Auflehnung (Protest, mit dem Schicksal hadern)
+  – Selbstbeschuldigung (Schuldzuweisungen, Fehler bei
+    sich selbst suchen)                                                Bewältigungsstrategien
+  – Religiosität (Halt im Glauben suchen)
+                                                                       Bestimmte unbewusst ablaufende Reaktionen können Pa-
+  – Angst, Wut, Verzweiflung
+                                                                       tienten vor allem zu Beginn einer Krankheit vor einer psy-
+                                                                       chischen Überforderung schützen. Psychologen sprechen
+Die von Elisabeth Kübler-Ross (S. 833) beschriebene Sterbe-
+                                                                       von Abwehrmechanismen. Dazu gehört u. a., Krankheits-
+phasen erklären den Bewältigungsverlauf angesichts des na-
+                                                                       folgen aus den Gedanken zu verdrängen.
+henden Todes. Diese lassen sich auch auf die Bewältigung
+                                                                          Eine bewusste Bewältigung setzt voraus, dass der Pa-
+von Krankheit übertragen.
+                                                                       tient seine Krankheitssituation, deren Bedeutung und Be-
+
+! Merke Nicht immer                                                    lastung für den Alltag wahrnimmt und anerkennt. Erst
+                                                                       dann kann er sich seine Ressourcen und damit seine eige-
+Nicht immer sind Bewältigungsstrategien, die Menschen mehr oder        nen Fähigkeiten, Rückhalte und Kraftquellen bewusst ma-
+weniger bewusst ergreifen, auch hilfreich.                             chen.
+                                                                          Mögliche Bewältigungsstrategien sind: ablenkende
+Insbesondere bei chronischen Patienten kann es zu einem                Wunscherfüllung, verstärktes Anlehnungsbedürfnis, Halt
+sekundären Krankheitsgewinn (S. 773) kommen, bei dem                   im Glauben suchen, Selbstaufwertung, Akzeptanz.
+die Person die Erkrankung für andere Zwecke ausnutzt. Die-                Für Pflegende ist es wichtig herauszufinden, welche Be-
+ses Verhalten ist indirekt mit der Auseinandersetzung mit              wältigungsstrategie ein Pflegeempfänger anwendet und
+der Erkrankung verknüpft.                                              ob diese hilfreich für ihn erscheinen. Sie sollten ihn unter-
+                                                                       stützen und gemeinsam mit ihm nach weiteren hilfreichen
+                                                                       Strategien suchen. Eventuell sollten sie eine therapeuti-
+                                                                       sche bzw. seelsorgerische Unterstützung anbieten.
+
+
+
+
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen        247
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
+10                                           Mit Menschen
+                                             kommunizieren
+
+
+
+
+                                                                          10.2 Kommunikation
+                                                                          Der Begriﬀ „Kommunikation“ stammt vom lateinischen
+                                                                          communicare und bedeutet „teilen, mitteilen, teilnehmen
+      10.1 Kompetent pflegen                                              lassen, gemeinsam machen, vereinigen“.
+      Wann immer Menschen zusammen sind, kommunizieren
+      sie miteinander. Sich mitzuteilen, gehört zu den mensch-            Definition Kommunikation
+      lichen Grundbedürfnissen. Indem wir uns mitteilen, treten           Kommunikation allgemein ist ein Prozess zum Austausch von Infor-
+      wir in Beziehung zu anderen. Selbst wenn wir nichts sagen,          mationen zwischen einem Sender und einem Empfänger.
+      kommunizieren wir. „Man kann nicht nicht kommunizie-
+      ren“, lautet eine Grundaussage des Kommunikationswissen-            In der Kommunikation bilden verbale, paraverbale und non-
+      schaftlers Paul Watzlawick. Wir verhalten uns immer auf ir-         verbale Botschaften zusammen eine Nachricht, die der Emp-
+      gendeine Weise und kommunizieren dadurch. Ob gewollt                fänger entschlüsseln muss.
+      oder ungewollt, ob bewusst oder unbewusst, ob mit guter
+      oder schlechter Wirkung – immer senden und empfangen
+      wir Signale und Botschaften.                                        10.2.1 Verbale Kommunikation
+         In diesem Kapitel lernen Sie u. a.,
+      ● dass Kommunikation verbale, nonverbale und paraverbale
+                                                                          Definition Verbale Kommunikation
+         Komponenten beinhaltet.                                          Die verbale Kommunikation ist ein Austausch von Informationen
+      ● dass F. Schulz von Thun und P. Watzlawick Kommunikati-            über das gesprochene oder das geschriebene Wort. Ihr Werkzeug ist
+         onsmodelle entwickelt haben, die im Umgang mit Kolle-            die Sprache, derer wir uns mithilfe unseres Verstandes bedienen.
+         gen und Pflegeempfängern weiterhelfen können.
+      ● wie Kommunikation im beruflichen Umfeld professionell             Sprache gibt dabei unter anderem Auskunft über unsere
+         gestaltet wird.                                                  Herkunft und Bildung sowie über die Beziehung zu unserem
+      ● wie Sie mit Kommunikationsstörungen umgehen.                      Gesprächspartner (Empfänger): wie wir uns ausdrücken;
+      ● wie Sie mit Teammitgliedern, Ärzten, Pflegeempfängern             welche Worte wir wählen; in welcher Stimmlage, welcher
+         und Bezugspersonen erfolgreich kommunizieren.                    Geschwindigkeit, welcher Lautstärke oder welchem Tonfall
+      ● wie Sie mit Humor den Pflegealltag bestreiten können.             wir sprechen; welche Sprache wir nutzen (z. B. Dialekt, Jar-
+                                                                          gon, Fachsprache), ob wir uns verständlich oder kompliziert
+                                                                          ausdrücken.
+                                                                             Diese paraverbalen Ausdrucksformen unterstützen das
+                                                                          Gesagte und beeinflussen den Informationsaustausch. Sie
+                                                                          geben Hinweise darauf, wie eine Information zu verstehen
+                                                                          ist. Je nachdem, in welcher Situation wir uns befinden, mit
+
+
+248    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                 Kompetent pflegen        ▶ S. 248
+
+
+                                                                                   Verbale Kommunikation ▶ S. 248
+                                                                                   Nonverbale Kommunikation ▶ S. 249
+                                                                                   Kommunikationsmodell nach Schulz von Thun ▶ S. 252
+                                                         Kommunikation
+                                                                                   Kommunikationstheorie von
+                                                                                   Paul Watzlawick                 ▶ S. 253
+
+                                                                                   Kommunikationsstörungen       ▶ S. 253
+
+
+                                                                                              Innere Haltung  ▶ S. 254
+                                                        Professionelle                        Gesprächstechniken ▶ S. 255
+                                                        Kommunikations-
+                                                                                              Empathie und Mitgefühl      ▶ S. 256
+                                                        gestaltung
+                                                                                              Entfaltung der Gesprächskompetenz ▶ S. 258
+
+
+
+
+Das Kapitel vermittelt          Kommunikation
+                                                                            Kommunikation im Team ▶ S. 260
+v.a. Kompetenzen im             in der Anwendung
+KB II und z.T. III                                                          Kommunikation mit Pflegeempfängern aller Altersstufen ▶ S. 260
+                                                                            Kommunikation mit Bezugspersonen        ▶ S. 263
+                                                                            Kommunikation mit Ärzten ▶ S. 263
+                                                                            Humor in der Pflege    ▶ S. 264
+
+
+
+
+welchem Gesprächspartner wir kommunizieren und was
+das Ziel des Informationsaustausches ist, variieren wir unse-
+                                                                     10.2.2 Nonverbale Kommunikation
+ren verbalen und paraverbalen Ausdruck.                              Definition Nonverbale Kommunikation
+                                                                     Die nonverbale Kommunikation ist das, was unabhängig vom ge-
+                                                                     sprochenen Wort durch Körpersprache, Gestik, Mimik und optische
+   Beispiel Fachinformationen weitergeben                            Zeichen kommuniziert wird.
+
+   Eine Pflegefachkraft informiert während der Visite den zustän-    Nonverbale Ausdrucksformen vermitteln dabei einen Groß-
+   digen Arzt über den Zustand einer Patientin nach deren OP. Sie    teil der Informationen in einem Gespräch. Deshalb ist es
+   nutzt die gemeinsame Fachsprache und teilt ihm die wichtigs-      wichtig, bewusst auf die Körpersprache, Mimik und Gestik
+   ten Fakten ihrer Beobachtungen sowie die Vitalparameter der       zu achten. Die folgenden Ausführungen liefern Grundlagen
+   Patientin mit. Tonfall, Stimmlage, Lautstärke und Sprechtempo     der nonverbalen Ausdrucksformen.
+   sind dieser Situation angepasst. Ziel des Informationsaustau-
+   sches: Der Arzt kann mithilfe der pflegerischen Beobachtungen     Körpersprache
+   und ermittelten Messwerte den Zustand seiner Patientin medi-
+   zinisch einschätzen und dadurch den weiteren Verlauf der Be-      Zur nonverbalen Kommunikation gehört Körpersprache. Sie
+   handlung bestimmen.                                               ist die älteste Form der Kommunikation und geschieht meist
+                                                                     unbewusst. Durch unsere Körpersprache unterstreichen wir
+                                                                     z. B. den emotionalen Stellenwert eines Gesprächsinhalts
+                                                                     oder oﬀenbaren unser momentanes Befinden. Nonverbale
+                                                                     Signale werden vom Gesprächspartner automatisch inter-
+     WISSEN TO GO                                                    pretiert. Jedoch ist Körpersprache nicht immer eindeutig:
+                                                                     Ihre Ausgeprägtheit unterliegt z. B. kulturellen Gegebenhei-
+   Verbale Kommunikation                                             ten und der Mensch selbst unterliegt Wahrnehmungs- und
+                                                                     Beurteilungsfehlern (S. 318). Deshalb kann es bei der Inter-
+   Die verbale Kommunikation ist der Informationsaustausch           pretation nonverbaler Signale zu Fehleinschätzungen kom-
+   über Laut- und Schriftsprache. Paraverbale Ausdrucksformen        men.
+   wie Wortwahl, Stimmlage, Lautstärke, Tonfall, Sprechtempo,           Des Weiteren kommt es vor, dass verbale und nonverbale
+   Sprache und der Gebrauch bestimmter Formulierungen geben          Aussagen eines Senders nicht übereinstimmen, d. h., sein
+   zusätzliche Hinweise darüber, wie eine Information zu verste-     Kommunikationsverhalten inkongruent ist. Die Inkongruenz
+   hen ist. Verbaler und paraverbaler Ausdruck variieren nach Art    einer Nachricht sorgt beim Empfänger für Irritation, da er
+   der Beziehung der Gesprächspartner und Gesprächssituation.        nun nicht weiß, welcher Aussage er Glauben schenken soll –
+                                                                     der gehörten oder der gesehenen. Dies kann zu Kommuni-
+                                                                     kationsstörungen führen. Im Gegensatz dazu ist eine Nach-
+                                                                     richt kongruent, wenn verbale und nonverbale Botschaften
+                                                                     dasselbe ausdrücken.
+
+
+
+       I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen       249
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
 l
-32
+10    Mit Menschen kommunizieren
 
-Die 4 Handlungsfelder der Pflege
-● beabsichtigt weder die Beschleunigung noch Verzögerung
 
-des Todes,
-● integriert psychologische und spirituelle Aspekte der Betreuung,
-● bietet Unterstützung, um den Betroﬀenen zu helfen, ihr
-Leben so aktiv wie möglich bis zum Tod zu gestalten,
-● bietet Bezugspersonen Unterstützung während der Erkrankung des Patienten und in der Trauerzeit,
-● beruht auf einem Teamansatz, um den Bedürfnissen der
-Betroﬀenen und ihrer Familien zu begegnen, auch durch
-Beratung in der Trauerzeit, falls notwendig,
-● fördert Lebensqualität und kann möglicherweise auch den
-Verlauf der Erkrankung positiv beeinflussen,
-● arbeitet multi- und interdisziplinär, um den Bedürfnissen
-von Betroﬀenen und Bezugspersonen gerecht zu werden,
-und
-● kommt frühzeitig im Krankheitsverlauf zur Anwendung,
-auch in Verbindung mit anderen Therapien, die eine Lebensverlängerung zum Ziel haben, wie z. B. Chemotherapie oder Bestrahlung, und schließt Untersuchungen ein,
-die notwendig sind, um belastende Komplikationen besser
-zu verstehen und zu behandeln.
+         Gute Pflegefachkräfte sind Meister der Wahrnehmung               Abb. 10.1 Gute Miene zum bösen Spiel machen.
+      und Beobachtung, denn zu den grundlegenden pflegeri-
+      schen Aufgaben gehört die systematische Patientenbeobach-
+      tung (S. 321). Sie ist der Kern pflegerischer Arbeit, auf ihr ba-
+      sieren die Planung und Bewertung der pflegerischen Maß-
+      nahmen. Im Praxisalltag geht es darum, Veränderungen jeg-
+      licher Art wahrzunehmen. Diese zeigen sich zum einen an
+      messbaren Werten wie Blutdruck, EKG, Puls- und Atemfre-
+      quenz. Gefühle und seelisches Wohlergehen sind dagegen
+      objektiv schwer zu erfassen. Emotionen, Bedürfnisse und
+      Sichtweisen der Pflegeempfänger wirken jedoch ebenso auf
+      den Genesungsprozess ein.
 
-32.6.1 Aufgaben
-Zu den Aufgaben palliativer Pflegefachkräfte gehört u. a.:
-● Betreuen und Begleiten von Pflegeempfängern vom Zeitpunkt der Aufnahme in die Einrichtung bis zur Beendigung der Versorgung (Entlassung, Verlegung, Versterben)
-● psychische, soziale und seelsorgerische Bedürfnisse der
-Pflegeempfänger sowie ihrer Bezugspersonen einzubeziehen
-● genaues Beobachten zur präzisen Erfassung von Schmerzen und daraus folgende Schmerzkontrolle
-● dauerhafte Präsenz
-● ggf. Sterbebegleitung
-● Erkennen und Unterscheiden: Wann braucht der Pflegeempfänger was von wem?
-● Abwägen der diagnostischen, therapeutischen und pflegerischen Maßnahmen zwischen Nutzen und Belastung für
-den Pflegeempfänger
-● Erkennen, wann es notwendig ist, andere Berufsgruppen
-in die Behandlung mit einzubeziehen
-Das Motto in der palliativen Pflege lautet: „Weniger ist
-mehr!“ Die Lebensqualität des Pflegeempfängers steht an
-oberster Stelle. Manche Menschen haben aufgrund schlechter Erfahrungen bei früheren Krankenhausaufenthalten
-Hemmungen, Wünsche zu äußern. Das Wort „Patient“ leitet
-sich von dem lateinischen „patiens“ ab, das so viel bedeutet
-wie „etwas ertragen oder erdulden“. Mit Feingefühl und Geschick können Pflegefachkräfte den kranken Menschen ermutigen, seine Wünsche zu äußern. Um die herausfordernde Arbeit im Palliativbereich möglichst lange ausüben zu
-können, sind eine gute Selbstpflege und regelmäßige Teilnahme an Teamsupervisionen hilfreich. Ausführliche Informationen zur palliativen Pflege finden Sie im Kap. „Pflege
-des sterbenden Menschen“ (S. 840).
 
-732
+      Mimik
+      Kennen Sie das Sprichwort? „Eine gute Miene zum bösen
+      Spiel machen“ (▶ Abb. 10.1). Dabei geht es um die Mimik,
+      den Gesichtsausdruck eines Menschen. Teilweise können
+      wir unser Mienenspiel bewusst steuern, wie das Sprichwort
+      zeigt. Doch viele Bewegungen laufen unwillkürlich und un-
+      bewusst ab. Dabei verrät unser Gesichtsausdruck manchmal,
+      was wir gerade denken und fühlen. Es heißt nicht umsonst:
+      „Ein Gesicht spricht Bände.“ Empfinden wir z. B. Freude,
+      Ekel, Trauer oder Angst, ist dies unserem Gesicht anzusehen,
+      wenn wir unsere Gefühle nicht bewusst hinter einer Maske
+      verstecken.
+         Mimik liefert erfahrenen Beobachtern mitunter Hinweise
+      für etwaige Erkrankungen. So haben Menschen, die an einer
+      Depression leiden, oftmals eine sehr reduzierte Mimik. Vom
+      sogenannten „Grimassieren“ spricht man, wenn die Mimik
+      übernormal aktiv ist und sich das Gesicht unkontrolliert
+      verzieht (z. B. bei motorischen Tics oder bei Chorea Hunting-
+      ton).
+         Bestimmte Erkrankungen erschweren die Interpretation             (Symbolbild). © gradt/stock.adobe.com - Stock photo - posed by a model
+      des Gesichtsausdrucks. Es ist z. B. schwer, aus dem Gesicht
+      eines an Morbus Parkinson erkrankten Menschen Gefühls-
+      regungen zu lesen. Dies liegt am sogenannten Maskenge-
+      sicht (▶ Abb. 10.2), einer Folge der Erkrankung, die es dem         Abb. 10.2 Maskenartiger Gesichtsausdruck bei Parkinson.
+      Betreﬀenden erschwert, seine Mimik zu verändern.
 
-32.6.2 Palliativeinrichtungen
-Palliativstationen • Dies sind in aller Regel vom Akutbereich
-getrennte Stationen. Palliativstationen sind überwiegend
-mit Einzelzimmern und einem Wohnzimmer oder Gemeinschaftsraum ausgestattet. Das gesamte Erscheinungsbild
-einer Palliativstation ist idealerweise freundlich und wohnlich. Für das pflegerische und medizinische Personal gibt es
-einen speziellen Stellenschlüssel. Die Behandlung setzt sich
-aus palliativmedizinischen und pflegerischen Komponenten
-zusammen. Die Pflegeempfänger werden vom Hausarzt eingewiesen oder von einer anderen stationären Einrichtung
-übergeleitet. In manchen Krankenhäusern gibt es nur einzelne Palliativbetten, die an eine Station angegliedert sind. Normalerweise kommen die Betroﬀenen mit bestimmten
-Symptomen wie Schmerzen oder Übelkeit. Nach einer guten
-medikamentösen Einstellung werden die Betroﬀenen in ihr
-häusliches Umfeld entlassen. Die durchschnittliche Verweildauer auf einer Palliativstation beträgt 10 bis 14 Tage. Falls
-sich der Zustand eines Pflegeempfängers gravierend verschlechtert, darf dieser auch bis zu seinem Tod auf einer Palliativstation bleiben.
-Hospize/Kinderhospize • Stationäre Hospize sind nicht Teil
-eines Krankenhauses, sondern meist selbstständige Einrichtungen. Ein Hospiz kann auch Teil einer Alten- und Pflegeeinrichtung sein. In den meisten Hospizen werden die
-Pflegeempfänger als Gäste bezeichnet. Dies leitet sich von
-der ursprünglichen Bedeutung des Wortes Hospiz (lat. hospitium = Herberge) ab. Ein Gast darf in aller Regel in einem
-Hospiz bis zu seinem Tod verweilen. Hospize haben den
-Schwerpunkt im pflegerischen Bereich. Die Gäste werden
-von ihren Hausärzten betreut, die zu Hausbesuchen kommen.
-Palliativmedizinische Konsiliardienste • Palliativmedizinische
-Konsiliardienste sind Beratungsangebote von Palliativmedizinern und Pflegefachkräften der palliativen Pflege (oder
-Palliative Care) an Krankenhäusern. Konsiliardienste sind
-traditionell im stationären Bereich tätig, es gibt im ambulanten Sektor aber erste Modellprojekte. Zu den Aufgaben gehört u. a. Beratung von schwerstkranken Menschen, die
-nicht auf einer Palliativstation aufgenommen werden (können). Die Beratung betriﬀt z. B. die Schmerztherapie oder
-psychosoziale Begleitung. Der palliativmedizinische Beratungsdienst kann von Ärzten und Pflegefachkräften gleichermaßen angefordert werden.
-SAPV • Im ambulanten Bereich gibt es sog. SAPV-Teams
-(spezialisierte ambulante Palliativversorgung). Diese Teams
-bestehen aus Palliativmedizinern und Palliative-Care-Pflegefachkräften. Sie beraten und betreuen schwerstkranke
-Menschen und deren Bezugspersonen zu Hause und bieten
-Unterstützung für ambulante Pflegedienste.
-Haus- und Fachärzte • Niedergelassene Haus- und Fachärzte
-versorgen die ambulanten Palliativpatienten medizinisch
-und arbeiten im Idealfall mit den Palliativmedizinern der
-spezialisierten ambulanten Palliativversorgung eng zusammen.
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
+      Blickkontakt
+      Auch durch Blickkontakt entsteht zwischenmenschliche
+      Kommunikation. Die Art und Weise des Blickes verrät etwas
+      über die Qualität der Beziehung der Gesprächspartner.
+      Schaut man einem Menschen in die Augen, so kann man
+      Einblicke in sein seelisches Befinden bekommen. Jemand,
+      der den Blickkontakt zu einem anderen Menschen nicht auf-
+      rechterhalten kann, wirkt z. B. ängstlich und unsicher. Wir
+      können uns aber auch durch Anstarren von jemandem be-
+      droht fühlen. Je vertrauter sich die Gesprächspartner sind,
+      desto intensiver ist der Blickkontakt – denken Sie an ein
+      frisch verliebtes Paar.
+         Über unseren Blick nehmen wir wahr, schauen in die Welt
+      und nehmen Kontakt mit ihr auf. In der Begleitung von
+      Menschen, die an einer Demenz erkrankt sind, lässt sich z. B.
+      im späteren Krankheitsverlauf oftmals beobachten, dass sie
+      immer seltener bis gar nicht mehr Blickkontakt zu ihrem
+      Gesprächspartner herstellen. Sie schauen zu Boden oder ihr
+      Blick verliert sich in der Weite, als lebten sie in einer ande-
+      ren Welt (▶ Abb. 10.3). Was aber nicht heißt, dass man sie
+      darin nicht besuchen könnte. Mehr dazu lesen Sie im Kap.
+      „Demenz“ (S. 1418).
 
-Palliative Pflege
 
-WISSEN TO GO
-Vier Handlungsfelder der Pflege
-● Präventive Pflege beugt Unfällen und Krankheiten z. B.
 
-durch Informationen, Vorsorge, körperliche Bewegung,
-ausgewogene Ernährung, geistige Aktivität und soziale
-Teilhabe vor. Einsatzorte sind u. a. präventive Hausbesuche, Familiengesundheitspflege, Pflegeüberleitung und
-das Krankenhaus.
-● Kurative Pflege umfasst Pflegemaßnahmen, die auf
-Heilung ausgerichtet sind. Einsatzorte sind u. a. das
-Krankenhaus auf allen Stationen und in allen Arbeitsbereichen und der ambulante Bereich.
-● Rehabilitative Pflege umfasst Pflegemaßnahmen, die
-funktionelle oder soziale Beeinträchtigungen verhindern
-oder kompensieren und die einen Patienten in Leben,
-Beruf und Gesellschaft wiedereingliedern, z. B. medizinische, soziale und berufliche Rehabilitation. Einsatzorte
-sind Rehabilitationskliniken, ambulante Pflege, Stationen
-für Frührehabilitation in einem Krankenhaus, psychiatrische Tageskliniken und stationäre Altenhilfe.
-● Palliative Pflege strebt die Linderung von Krankheitssymptomen an. Einsatzorte sind u. a. Palliativstationen,
-Hospize/Kinderhospize, Palliativmedizinische Konsiliardienste, SAPV sowie Haus- und Fachärzte.
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
+250    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                                    Kommunikation
 
-733
 
-33
+Abb. 10.3 Blick in eine andere Welt.                                Räumlicher Abstand zueinander
+                                                                    Es ist anzunehmen, dass Sie bei einer Unterhaltung mit Ih-
+                                                                    rem Vorgesetzten einen größeren Abstand halten werden
+                                                                    als bei einer mit Ihrer Kollegin. Ihre beste Freundin darf nä-
+                                                                    her an Sie herankommen als eine flüchtige Bekannte. Je
+                                                                    nachdem, in welcher Beziehung Menschen zueinander ste-
+                                                                    hen, lassen sie mehr Nähe zu oder bauen eine größere Dis-
+                                                                    tanz auf.
+                                                                       Zum einen hat dies mit Zuneigung zu tun. Zum anderen
+                                                                    gibt es aber auch Distanzzonen, deren Einhaltung wir unbe-
+                                                                    wusst sozial erlernt haben und die unser gesellschaftliches
+                                                                    Zusammenleben regeln:
+                                                                    ● Die Intimdistanz erstreckt sich auf einen Bereich bis zu
 
-Pflege von Menschen im
-Krankenhaus: Kinder und
-alte Menschen
+                                                                      50 cm. Wir geben nur sehr vertrauten Menschen die Er-
+                                                                      laubnis, in unseren Intimraum einzutreten. Fehlt die Er-
+                                                                      laubnis und überschreitet jemand diese Grenze, so fühlen
+Menschen mit Demenz nehmen im Verlauf der Erkrankung im-
+                                                                      wir uns zumindest unangenehm berührt, evtl. gar schutz-
+mer weniger Blickkontakt auf (Situation nachgestellt, Symbol-
+                                                                      los ausgeliefert oder bedroht.
+bild). Foto: K. Oborny, Thieme                                      ● Die persönliche Distanz liegt im Bereich von ca. 0,50–
 
-33.2 Das Kind im Krankenhaus
-33.1 Kompetent pflegen
-Alle Menschen benötigen im Krankenhaus eine Versorgung,
-die ihrem Alter und Entwicklungsstand bzw. ihren Ressourcen entspricht. Kinder sind keine „kleinen Erwachsenen“.
-Die Krankenhauswirklichkeit wird ihren Bedürfnissen nicht
-immer gerecht. Unterschiede in der Anatomie und Physiologie, den Erkrankungsbildern und deren Behandlungsmöglichkeiten sowie die altersbedingten Unterschiede in der
-Kommunikation fordern Pflegende bei der Arbeit mit Kindern besonders heraus. Ältere Menschen bleiben meist länger im Krankenhaus und haben häufig mehrere Krankheiten
-gleichzeitig. Auch dies sind zusätzliche Anforderungen an
-die Pflegenden.
-In diesem Kapitel lernen Sie u. a.,
-● wo die Unterschiede in der Betreuung von Kindern und
-Erwachsenen bzw. von alten Menschen liegen.
-● welche Besonderheiten sich z. B. bei der pflegerischen Beobachtung und Kommunikation mit Kindern und alten
-Menschen ergeben.
-● wie Sie die Zeit im Krankenhaus und die Untersuchungen
-kindgerecht gestalten können.
-● welche Maßnahmen Sie ergreifen können, damit alte Menschen im Krankenhaus nicht überfordert sind.
-● wie Sie die Selbstpflege bei alten Menschen unterstützen
-können.
+                                                                      1,20 m. In diesem Abstand kommunizieren wir häufig in
+                                                                      unserem Privat- und Berufsleben.
+Gestik
+Gestik beschreibt die Bewegungen der Hände, Arme und
+Beine und Füße beim Reden. Besonders die Hände verleihen
+                                                                    ! Merke Intimdistanz
+                                                                    In Pflegesituationen überschreiten Pflegende bei ihren Pflegeemp-
+dem Gesprochenen oft Ausdruck. Gestik intensiviert die Be-          fängern häufig die intime Distanz. Sie kommen fremden Menschen
+deutung und unterstreicht den Inhalt eines Gesprächs. Den-          körperlich (zu) nahe. Pflegende sollten versuchen, die persönlichen
+ken Sie z. B. an einen erhobenen Zeigefinger oder das Auf-          und intimen Grenzen ihrer Pflegeempfänger zu erspüren und diese
+stampfen mit dem Fuß. Die individuelle Ausgeprägtheit der           bei pflegerischen Verrichtungen nur äußerst achtsam zu überschrei-
+Gestik wird von der Persönlichkeit und dem Temperament              ten. Das fängt mit dem Anklopfen an der Zimmertür an, geht in
+beeinflusst und unterliegt auch kulturellen Gepflogenhei-           eine respektvolle Anrede über bis hin zu einem besonnenen Körper-
+ten.                                                                kontakt bei pflegerischen Tätigkeiten.
 
-33.2.1 Grundlagen
-Bis zur Vollendung des 18. Lebensjahres (bei chronisch erkrankten Kindern aber oft darüber hinaus) sollten Kinder
-und Jugendliche in kinderspezifischen Einrichtungen betreut werden. In Deutschland gab es 2010 insgesamt 580
-Fachabteilungen für Kinder, davon 363 im Bereich der Kinderheilkunde, 80 kinderchirurgische Abteilungen und 137
-Abteilungen im Bereich der Kinder- und Jugendpsychiatrie.
-Gerade die Anzahl der Einrichtungen der Kinder- und Jugendpsychiatrie hat in den vergangenen Jahren stetig zugenommen. Dies trägt der zunehmenden Bedeutung psychischer Erkrankungen Rechnung.
-Mögliche Einsatzbereiche für Pflegende in einem Zentrum
-der Kinder- und Jugendmedizin sind Stationen mit den
-Schwerpunkten Neonatologie, Neuropädiatrie, Infektiologie,
-Chirurgie, Onkologie, Psychiatrie oder pädiatrische und neonatologische Intensivstationen. Neben der stationären
-nimmt die ambulante Versorgung von Kindern einen zunehmenden Stellenwert ein (z. B. bei Heimbeatmung). Ebenfalls an Bedeutung gewonnen hat die ambulante oder stationäre Kinderhospizarbeit. Auszubildende der Pflege werden
-auch auf den Allgemeinstationen der Krankenpflege immer
-wieder Kindern begegnen. Beispiele dafür sind Fachdisziplinen wie HNO, Urologie und Allgemeinchirurgie.
+Körperhaltung                                                       Körperkontakt
+Auch aus der Körperhaltung, die wir unserem Gesprächs-              Körperliche Nähe und Berührungen über die Haut gehören
+partner gegenüber einnehmen, ist etwas über unsere innere           zu den menschlichen Grundbedürfnissen. Streicheleinheiten
+Haltung ihm gegenüber zu lesen. Wie stellen oder setzen             und Umarmungen sind Botschafter der Liebe und drücken
+wir uns jemandem gegenüber? Ist unsere Körperhaltung of-            gegenseitiges Vertrauen aus. Sie vermitteln Geborgenheit,
+fen oder geschlossen? Stehen wir unter Anspannung oder              Schutz und Wärme, können erregen, Freude oder Trost aus-
+sind wir entspannt? All das sind Informationen, die in einem        drücken. Sie können aber auch gegenteilig gemeint sein
+Gespräch mitschwingen. Des Weiteren lässt die Körperhal-            und/oder empfunden werden – so sprechen z. B. körperliche
+tung Rückschlüsse auf unser körperliches und/oder see-              oder sexuelle Übergriﬀe die Sprache von Gewalt und Macht.
+lisches Befinden zu. Zum Beispiel kann man sich vor                    Während pflegerischer Tätigkeiten senden auch die Hän-
+Schmerz krümmen oder eine Schonhaltung einnehmen.                   de über Berührung Informationen aus, die der Berührte über
+                                                                    die Sinneszellen der Haut (das größte Sinnesorgan) wahr-
+Äußeres Erscheinungsbild                                            nimmt. Die Reize werden an das Gehirn weitergeleitet und
+                                                                    verarbeitet und lösen beim Empfänger Reaktionen aus. So-
+Selbst über Kleidung, Haarschnitt, Schmuck und Make-up              mit ist auch der Körperkontakt eine Kommunikationsform.
+kommunizieren wir. Im äußeren Erscheinungsbild steckt               Über die Hände können Pflegende z. B. ausdrücken: „Bei mir
+eine Menge Botschaften, z. B. die Zugehörigkeit zu einer be-        sind Sie in guten Händen“, „Ich gehe achtsam mit Ihnen
+stimmten Gruppe oder sozialen Schicht. Es gibt auch sog.            um“, „Ich weiß, was ich tue“, „Ich bin gestresst.“
+Kleidungscodes, z. B. Berufskleidung oder das Tragen von               Körperkontakt als Form eines Gesprächs wird auch gezielt
+schwarzer Kleidung auf einer Beerdigung. Das äußere Er-             therapeutisch genutzt, z. B. bei der Basalen Stimulation
+scheinungsbild kann auch ein politisches Statement sein,            (S. 386) oder der Kinästhetik (S. 342).
+z. B. steht ein Punk-Outfit für Ablehnung gesellschaftlicher
+Normen und Konventionen. Abzeichen und Namensschilder
+mit Funktionszuweisungen vermitteln ebenfalls Informatio-
+nen, sie geben Auskunft zur Person und Rolle innerhalb
+einer Einrichtung.
 
-33.2.2 Pflege von Kindern im
-Krankenhaus
-Charakteristisch für die Arbeit in der Kinderkrankenpflege
-ist die Komplexität der pflegerischen Beziehung. Ein fester
 
-734
 
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
 
-Kompetent pflegen ▶ S. 734
-
-Grundlagen ▶ S. 734
-Das Kind im Krankenhaus
-
-Pflege von Kindern im Krankenhaus ▶ S. 734
-Kommunikation mit Kindern ▶ S. 738
-
-Grundlagen ▶ S. 739
-Alte Menschen im Krankenhaus
-Das Kapitel vermittelt
-Kompetenzen im
-KB I.1 und II.1
-
-Abb. 33.1 Bunte Farben gegen Angst.
-
-Je mehr es für die kleinen Patienten zu entdecken gibt, desto
-wohler fühlen sie sich. Foto: K. Oborny, Thieme
-
-Bestandteil der Patientenbetreuung ist es, Bezugspersonen
-und Familien einzubinden. Bei der Versorgung der kranken
-Kinder ist es wichtig, eine freundliche und kindgerechte Atmosphäre zu schaﬀen, denn Kinder reagieren auf Veränderungen sehr sensibel. Deshalb sind die meisten pädiatrischen Abteilungen in bunten Farben gestaltet und bieten
-verschiedene Möglichkeiten zur Ablenkung vom Krankenhausalltag (▶ Abb. 33.1). Auch ein eher tristes Patientenzimmer lässt sich kindgerechter gestalten, wenn die Kinder beispielsweise Bilder malen und aufhängen dürfen.
-
-Bedeutung des Krankenhausaufenthalts
-Für Kinder, aber auch für ihre Angehörigen, ist ein Aufenthalt in der Klinik eine große Belastung. Kinder reagieren auf
-unangenehme Dinge mit Abwehr. Mögliche Reaktionen der
-
-Pflegeprobleme ▶ S. 740
-Pflegerische Grundprinzipien
-
-▶ S. 740
-
-Kinder in der Klinik sind Protest, Apathie, Depression und
-Resignation. Pflegende in der Pädiatrie befinden sich deshalb oft in einem Konflikt: Auf der einen Seite sehen sie die
-erforderlichen Maßnahmen zur Behandlung des Kindes, die
-unangenehm und schmerzhaft sein können. Auf der anderen
-Seite möchten sie den Kindern eine sichere und schmerzfreie Umgebung ermöglichen.
-Welche Strategien Kinder zur Bewältigung einer Erkrankung nutzen, hängt von verschiedenen Aspekten ab, z. B.
-dem Beginn der Erkrankung, krankheitsspezifischen Faktoren wie den sichtbaren Auswirkungen der Erkrankung,
-dem Ausmaß des psychosozialen Stresses, personalen oder
-sozial-ökologischen Einflüssen.
-Ob ein Krankenhausaufenthalt zu psychischen Folgeschäden führen kann, hängt von verschiedenen Faktoren ab, z. B.
-dem Alter und Entwicklungszustand des Kindes, früheren
-Erfahrungen, dem familiären Umfeld und den Bedingungen
-des Krankenhauses. Bei Kindern in der Klinik lassen sich einige typische Phasen ausmachen: Protest, Resignation, Regression und scheinbare Anpassung. Abhängig vom Entwicklungsstand setzen Kinder unterschiedliche Copingstrategien ein. Kleinkinder ziehen sich gegebenenfalls zurück,
-können aber auch ein gesteigertes Bedürfnis nach Nähe entwickeln. Primär reagieren Kinder emotional auf eine Erkrankung. Ein Hinterfragen der Erkrankung auf kognitiver Ebene
-findet abhängig vom Entwicklungsstand erst zu einem späteren Zeitpunkt statt.
-Kinder haben meist Angst vor dem Alleinsein und vor
-Schmerzen. Dazu kommt eventuell Heimweh – sie vermissen ihre Bezugspersonen, das Haustier, den Geruch ihres
-Bettes, ihre vertrauten Strukturen. Wenn Pflegende den Eindruck haben, ein Kind quält sich mit Heimweh, sollten sie es
-darauf ansprechen. Pflegende können fragen, ob es schon
-einmal Heimweh hatte, z. B. auf einer Klassenfahrt, und was
-es dagegen unternommen hat. Vielleicht hilft schon ein
-Kopfkissen, das nach zu Hause riecht, oder ein Foto des geliebten Hundes dabei, die Situation besser bewältigen zu
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-735
-
+      I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen           251
+      Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+       Usage subject to terms and conditions of license.
 l
-33
-
-Pflege von Menschen im Krankenhaus: Kinder und alte Menschen
-können. Für Jugendliche ist zudem die Unterstützung durch
-ihre Freunde wichtig.
-Wenn möglich, sollten Eltern ihre Kinder auf einen Krankenhausaufenthalt vorbereiten, z. B. mithilfe geeigneter Literatur, bei geplanten Aufenthalten der Besuch der Klinik im
-Vorfeld oder durch den Besuch eines Teddykrankenhauses
-(z. B. teddyklinik-mainz.de, teddyklinik-tuebingen.de). Eine
-gute Vorbereitung und ein oﬀener, ehrlicher Umgang sind
-Voraussetzung für eine gute kindliche Bewältigung der Erkrankung und ihrer Folgen.
-Erwachsene sorgen sich um ihr Kind, aber auch um weitere mit dem Aufenthalt verbundene Aspekte, z. B. Auswirkungen auf die Familie, die finanzielle Situation oder die Bedeutung der Krankheit für die Zukunft.
-
-Beispiel Verbandwechsel
-Bei der 4-jährigen Emma muss ein Verbandwechsel erfolgen.
-Emma kennt den Ablauf des Verbandwechsels. Aber trotz der
-Gabe von Analgetika hat sie große Angst vor Schmerzen und
-wehrt sich. Wie können Pflegende Emma die Intervention erleichtern?
-● Information: Vor der Intervention sollten Pflegende mit Emma und ihren Eltern sprechen, die bevorstehende Maßnahme
-ankündigen (ggf. den Verbandwechsel an einer Puppe zeigen) und über den Ablauf informieren – das baut schon vorher bestehende Ängste ab.
-● Begleitung: Die Begleitung durch die Eltern ist, soweit möglich, eine optimale Maßnahme zur Beruhigung. Hilfreich sind
-das Halten der Hand, die Auﬀorderung, die Hand zu drücken,
-und das positive Zusprechen. Auch die Anwesenheit eines Kuscheltiers kann Kindern helfen.
-● Ablenkung: Pflegende können versuchen, Emma während
-des Verbandwechsels abzulenken, indem sie sie z. B. nach ihrem Kuscheltier oder dem Kindergarten fragen.
-
-Wichtig für Kinder, aber auch für Eltern ist immer das Wissen darum, nicht alleine zu sein! Sollten die Eltern nicht mit
-zu dem Eingriﬀ dürfen, wird es sie beruhigen zu wissen,
-dass ihr Kind von einer vertrauten Person begleitet wird.
-Und gerade für Kinder ist die Gewissheit, dass sie begleitet
-werden, eine wertvolle Unterstützung. Ob die Eltern bei Untersuchungen oder schmerzhaften Eingriﬀen anwesend sein
-sollten, wird kontrovers diskutiert. Auf der einen Seite können die Kinder von der Anwesenheit einer Bezugsperson
-profitieren. Auf der anderen Seite könnten sie den Eltern
-später aber auch vorwerfen, sie nicht vor der Intervention
-geschützt zu haben. Daher sollte das Vorgehen in diesen Fällen mit den Eltern abgesprochen werden.
-
-Bezugspersonen • Kinder brauchen in Krisensituationen ihre
-Bezugspersonen – zum Trost und um die Beschwerden zu
-lindern. Das müssen auch nicht immer die Eltern sein, auch
-Freunde oder Großeltern sind möglich. Deshalb wird meist
-die Bezugsperson mit aufgenommen. 2005 trafen die deutsche Krankenhausgesellschaft und die Bundesverbände der
-Krankenkassen eine bundesweite Vereinbarung zur Regelung der Mitaufnahme von Begleitpersonen. Sie besagt: Die
-Mitaufnahme einer Begleitperson während einer stationären Behandlung wird von der Krankenkasse bezahlt, wenn
-sie aus medizinischen und therapeutischen Gründen notwendig ist (§ 11 Abs. 3 SGB V). Bei Kindern, die älter als
-8 Jahre alt sind, zahlen die Krankenkassen jedoch nur in besonderen Fällen, z. B. bei psychischen Beeinträchtigungen
-oder Kommunikationseinschränkungen. Über die Notwendigkeit entscheidet der betreuende Arzt. Eine weitergehende gesetzliche Regelung, z. B. als Bundesgesetz, gibt es bis
-heute nicht. Die Mitaufnahme einer Bezugsperson ist in nahezu allen pädiatrischen Einrichtungen möglich. Die Bezugsperson ist meist im Zimmer des Kindes oder in speziellen Elternzimmern untergebracht. Viele Kliniken haben
-auch ein sog. Elternhaus, von dem besonders Familien mit
-langen Aufenthalten und Anfahrtswegen profitieren.
-
-Betreuung in der Klinik
-Gerade bei langen Klinikaufenthalten empfinden Kinder die
-Passivität als Bestrafung, denn Kinder möchten beschäftigt
-und gefordert werden. Viele Stationen haben eigene Spielzimmer, wo Erzieher, Ergotherapeuten oder Musiktherapeuten die Kinder betreuen. Zudem engagieren sich verschiedene ehrenamtliche Mitarbeiter in der Betreuung der Kinder
-und ihrer Angehörigen. Dazu zählen z. B. die Mitarbeiter von
-AKIK (Aktionskomitee Kind im Krankenhaus e. V.), die einen
-Besuchsdienst für die kleinen Patienten und die Betreuung
-der Geschwisterkinder übernehmen. In vielen Kliniken arbeiten speziell ausgebildete Clowndoktoren oder Klinikclowns, um die Kinder während der Genesung zu begleiten
-und zu unterstützen (▶ Abb. 33.2). Die spielerische Betreuung durch Clowndoktoren, die stets in enger Abstimmung
-mit dem medizinischen Pflegepersonal der Klinik ihre Visiten planen, nimmt dem Krankenhausaufenthalt etwas von
-seiner Ernsthaftigkeit.
-
-Abb. 33.2 Visite der Clowndoktoren.
-
-Besucherregelung
-Kindern hilft es, wenn sie während eines Klinikaufenthalts
-weiterhin Kontakt zu Familie und Freunden haben. Nahezu
-alle deutschen Kinderkliniken haben keine festen Besuchszeiten mehr, beschränkt sind meist noch Anzahl und das Alter der Besucher. In ungefähr ¾ der Kliniken sind die Besuche von Geschwisterkindern und Freunden unabhängig von
-Altersgrenzen mittlerweile erlaubt. Selbst verschiedene
-neonatologische Stationen ermöglichen die Besuche von Geschwisterkindern. Allerdings müssen die Geschwister zuerst
-untersucht und eine Anamnese erhoben werden. Das soll
-ausschließen, dass sie kindliche Infektionskrankheiten (z. B.
-Windpocken) einschleppen.
-736
-
-Die kurzweilige Betreuung durch die Clowndoktoren soll die Kinder aufmuntern. Die Clownvisite macht die langen Stunden im
-Bett abwechslungsreicher. Foto: K. Oborny, Thieme
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-Das Kind im Krankenhaus
-Vor allem in der Onkologie und bei Kindern mit chronischen oder schweren Erkrankungen sind Psychologen zur
-Betreuung von Kind und Eltern etabliert. Auch die Betreuung durch Sozialarbeiter ist in vielen Kliniken fester Bestandteil der Patientenversorgung. Viele Kliniken bieten für
-chronisch kranke schulpflichtige Kinder Schulunterricht im
-Krankenhaus an.
-
-WISSEN TO GO
-Kinderkrankenpflege
-● Die Einbindung der Bezugspersonen und Familien ist in
-
-der Kinderkrankenpflege ein wesentlicher Faktor. Kinder
-benötigen eine freundliche und kindgerechte Atmosphäre – auch in der Klinik. Eltern sollten ihre Kinder möglichst gut auf den Aufenthalt in der Klinik vorbereiten.
-● Kinder reagieren auf unangenehme Dinge wie einen Klinikaufenthalt oft mit einer Abwehrhaltung. Typische Reaktionen sind Protest, Apathie, Depression und Resignation. Häufig lassen sich Phasen ausmachen wie Protest, Resignation, Regression und scheinbare Anpassung.
-Vor allem haben Kinder Angst vor dem Alleinsein, vor
-Schmerzen und häufig haben sie auch Heimweh.
-● Die meisten Kliniken haben keine festen Besuchszeiten.
-Zusammen mit dem Kind kann eine Bezugsperson aufgenommen werden.
-
-Pflegerische Beobachtung
-Gerade in der Gesundheits- und Kinderkrankenpflege ist die
-pflegerische Beobachtung sehr wichtig, dazu zählen u. a. Beobachten und Beurteilen der Vitalzeichen, der Haut und der
-Schleimhäute sowie die psychische Verfassung und das Verhalten. Säuglinge und Kleinkinder können sich verbal nicht
-klar äußern. Durch eine gute pflegerische Beobachtung können Pflegende krankheitsbedingte Veränderungen oder Gesundheitsrisiken erkennen. Auch die Früherkennung von
-Entwicklungsverzögerungen und psychosozialen Auﬀälligkeiten ist möglich. Pflegende sollten nicht allein krankheitsbedingte Veränderungen, sondern im Idealfall auch das gesamte Gesundheitsverhalten von Kind und Familie beobachten, um eine Grundlage für einen individuellen Pflege- und
-Behandlungsplan zu erhalten.
-Körperpflege • Sie ist oft die einzige Gelegenheit für eine umfassende Beobachtung und Einschätzung des kranken Kindes durch die Pflegeperson. Pflegende sollten die Eltern immer und zeitnah in die Körperpflege und in Therapieanwendungen einbeziehen, soweit es aufgrund der Erkrankung des
-Kindes möglich ist. Vor allem bei Früh- und Neugeborenen,
-aber auch bei Kindern mit chronischen Erkrankungen ist es
-Aufgabe der Pflegenden, die Eltern in die Versorgung ihrer
-Kinder zu integrieren. Dies dient der Anleitung der Eltern,
-fördert aber v. a. das Wohlbefinden und die Kooperation des
-Kindes. Möchten die Eltern die Körperpflege selbstständig
-durchführen, können Pflegende die Situation so einrichten,
-dass sie eine gute Patientenbeobachtung mit einer gezielten
-Elternanleitung kombinieren. Wie Sie ein Säuglingsbad
-durchführen und worauf Sie dabei achten müssen, lesen Sie
-im Kap. „Unterstützung beim Vollbad“ (S. 380).
-Schmerzbeobachtung • Frühgeborene, Säuglinge und Kleinkinder können Schmerzen nicht klar verbal ausdrücken.
-Wie sich Schmerzen bei Kindern äußern und wie Sie diese
-
-erfassen können, lesen Sie im Kap. „Schmerzmanagement“,
-Schmerzerfassung bei Kindern (S. 538).
-
-WISSEN TO GO
-Pflegerische Beobachtung bei Kindern
-● Weil Säuglinge und Kleinkinder sich nicht verbal klar äu-
-
-ßern können, ist die pflegerische Beobachtung besonders wichtig. Dies betriﬀt v. a. auch Schmerzzustände.
-● Pflegende sollte nicht nur krankheitsbedingte Veränderungen beobachten, sondern das gesamte Gesundheitsverhalten von Kind und Familie.
-● Die Körperpflege ist eine gute und oft die einzige Gelegenheit für Pflegende, eine umfassende Beobachtung
-und Einschätzung des Pflegeempfängers vorzunehmen.
-● Pflegende sollten die Eltern in die Grundpflege integrieren.
-
-Vitalzeichen
-Pflegende müssen die physiologischen Vitalwertgrenzen
-der Altersklassen kennen, um Abweichungen von den
-Normwerten zu erkennen (▶ Tab. 33.1).
-Während der kindlichen Entwicklung verändern sich die
-Stellen zur Pulserfassung: Bei Säuglingen können Pflegende
-aufgrund der engen anatomischen Verhältnisse im Halsbereich kaum eine Pulsmessung an der A. carotis communis
-vornehmen. Mögliche Messorte beim Säugling sind die
-A. brachialis oder die A. temporalis. Die sicherste Methode
-der Herzfrequenzkontrolle ist allerdings die Auskultation
-mit dem Stethoskop. Zur peripheren Pulsmessung können
-Pflegende die Pulsoxymetrie nutzen. Mehr zu Pulsmessung
-und Vitalzeichen können Sie im Kap. „Wahrnehmen und Beobachten – Vitalparameter“ (S. 325) lesen, mehr zur Pulsoxymetrie finden Sie im Kap. „Pflege von Menschen mit Erkrankungen des Atmungssystems“ (S. 970).
-Bei der Beobachtung der Vitalfunktionen ist wichtig, sich
-die unterschiedlichen Körperproportionen und deren Auswirkungen auf das kindliche Kreislaufsystem bewusst zu
-machen. Zum Beispiel können Säuglinge wegen der großen
-Kopfoberfläche schnell auskühlen. Eine Mütze z. B. kann dies
-verhindern (Achtung! Während des nächtlichen Schlafs dürfen Säuglinge keine Mütze tragen, Gefahr von Überwärmung
-und des plötzlichen Kindstods).
-Pflegende sollten behutsam vorgehen, wenn sie die Vitalzeichen ermitteln. Durch Aufregung können sich die zu ermittelnden Werte verändern. Pflegende sollten dem Kind
-erklären, was bei der Vitalzeichenkontrolle passiert und
-dass sie nicht mit Schmerzen verbunden ist. Pflegende können die Kinder auch spielerisch in die Überwachung einbinden. Kinder können z. B. versuchen, bei ihren Eltern den
-Herzschlag zu hören. Bei Früh- und Neugeborenen gilt: Pflegende sollten das Stethoskop vorher anwärmen, um ein Erschrecken zu vermeiden.
-
-Physiologische Entwicklung
-Im Laufe der ersten Lebensjahre verändern sich die Körperproportionen stark. Aufgrund der unterschiedlichen Altersund Entwicklungsstufen ist es wichtig, sich bewusst zu machen, welche Fähigkeiten man bei einem Kind in welchem
-Alter erwarten kann. Diese Einschätzung ist v. a. für die Planung von Beratungen und Schulungen notwendig, um den
-Kindern Informationen verständlich zu vermitteln.
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-737
-
-l
-33
-
-Pflege von Menschen im Krankenhaus: Kinder und alte Menschen
-
-Tab. 33.1 Normwerte Kinder.
-Altersstufe
-
-Länge
-in
-cm
-
-Gewicht
-in kg
-
-Atemfrequenz
-pro min
-
-Atemzugvolumen
-(AZV) in
-ml
-
-Herzfrequenz
-in Schlägen
-pro min
-
-Blutdruck
-in mmHg
-sys./dia.
-
-Blutvolumen in
-ml
-
-Frühgeborenes
-(Geburt vor der 37.
-SSW)
-
-≤ 45
-
-≤ 2,5
-
-30–60
-
-15–35
-
-140–160
-
-50/30
-
-≥ 160
-
-Neugeborenes
-(0–4 Wochen)
-
-45–55
-
-2,5–4,5
-
-30–50
-
-20–40
-
-120–140
-
-65/45
-
-160–400
-
-Säugling (< 1)
-
-55–75
-
-4,5–10
-
-20–40
-
-30–70
-
-110–130
-
-80/50
-
-320–1000
-
-Kleinkind (1–6)
-
-75–100
-
-10–18
-
-20–30
-
-55–110
-
-100–120
-
-90/60
-
-770–2400
-
-Schulkind
-
-100–
-160
-
-15–60
-
-18–25
-
-80–420
-
-80–110
-
-100/60
-
-1200–3700
-
-Jugendlicher
-
-≥ 150
-
-> 60
-
-10–22
-
-300–600
-
-60–80
-
-120/80
-
-> 3600
-
-Die angegebenen Werte sind Anhaltswerte, Abweichungen sind möglich.
-
-Entwicklungsverzögerungen äußern sich oft zuerst in der
-motorischen Entwicklung, z. B. ein verspätetes Heben des
-Kopfes, Drehen in die Bauchlage oder Beginn des Laufens.
-Mehr zu diesem Thema finden Sie im Kap. 9.5.1 „Kindheit“
-(S. 221).
-
-Medikamentengabe
-Die physiologischen Entwicklungsunterschiede Größe, Gewicht und Organreife beeinflussen auch die medikamentöse
-Behandlung und Versorgung. Ein Säugling benötigt allein
-aufgrund seines geringeren Gewichtes eine deutlich niedrigere Dosierung der Medikamente als ein Jugendlicher.
-Mehr zur Medikamentengabe bei Kindern, z. B. in welcher
-Form und wie Medikamente am besten verabreicht werden,
-lesen Sie im Kap. „Medikamente verabreichen, Besonderheiten bei Kindern“ (S. 526).
-
-WISSEN TO GO
-Besonderheiten bei Kindern
-● Vitalzeichen: Grenzwerte der Vitalzeichen und Art der
-
-Bestimmung hängen vom Alter des Kindes ab. Die Kinder sollten spielerisch in die Ermittlung der Vitalzeichen
-eingebunden werden. Geräte, z. B. das Stethoskop, sollten vorgewärmt werden.
-● Entwicklung: Störungen zeigen sich oft durch eine verzögerte motorische Entwicklung.
-● Medikamente: Dosierung und Applikationsform richten
-sich nach Alter des Kindes. Einige Medikamente dürfen
-bei Kindern nur unter enger Überwachung gegeben werden.
-
-raussetzung für eine gelungene Kommunikation ist immer
-der Aufbau eines Vertrauensverhältnisses zwischen Kind, Eltern und Pflegefachkraft. Für Pflegende ist es wichtig, sich
-auch die Situation der Eltern bewusst zu machen: Sie sind
-durch die Erkrankung ihres Kindes oft in einer emotionalen
-Ausnahmesituation. Sie können ihr Kind vor den Belastungen des Krankenhausaufenthalts nicht schützen und fühlen
-sich dadurch selbst belastet. Gleichzeitig müssen sie einen
-Teil ihrer Verantwortung für die Betreuung ihres Kindes an
-die Fachkräfte der Klinik abgeben und sie befinden sich außerhalb ihres geschützten privaten Rahmens.
-Viele Kinder brauchen Zeit, um ein Vertrauensverhältnis
-aufzubauen. Ehrlichkeit ist unabdingbar, um das Vertrauen
-eines Kindes zu erlangen! Kinder verzeihen keine Lügen.
-Pflegende sollten keine Aussagen treﬀen, wenn sie nicht der
-Wahrheit entsprechen, z. B. „Das tut nicht weh“ oder „Die
-Medizin schmeckt gut“. Sie sollten die Kinder gemeinsam
-mit den Eltern auf unangenehme Situationen vorbereiten.
-Aufgabe von Pflegenden ist zu erkennen, ob sich Kinder in
-einer Stresssituation befinden, um dann Stress abzubauen.
-Pflegende können z. B. eine angenehmere Atmosphäre gestalten, indem das Kind ein Lieblingskuscheltier mit zu Untersuchungen nehmen kann (▶ Abb. 33.3).
-Auch die Einbindung der Eltern in die Behandlung oder
-pflegerische Maßnahmen können zu einer Stressreduktion
-für Eltern und Kind führen. Manchmal wirkt schon das Halten der Hand, eine Berührung oder das Singen von Kinderliedern beruhigend. Bei manchen Kindern hilft auch eine indirekte Kommunikation, z. B. über Handpuppen.
-Je jünger ein Kind ist, umso mehr findet Kommunikation
-nonverbal statt. Pflegende sollten immer den Entwicklungsstand des Kindes berücksichtigen. Bei kranken Kindern kann
-dieser von der Regel abweichen.
-
-Beratung und Anleitung
-
-33.2.3 Kommunikation mit Kindern
-Bezugspersonen einbeziehen
-Beratung in der Kinderkrankenpflege unterscheidet sich in
-verschiedenen Punkten von Beratung in der Erwachsenenkrankenpflege. Einer der bedeutendsten Punkte ist die Einbeziehung der Bezugspersonen als fester Bestandteil der
-pflegerischen Beratung und medizinischen Versorgung. Vo738
-
-Pflegende können von den Kenntnissen und dem Einfluss
-der Eltern auf ihre Kinder profitieren. Grundsätzlich sollten
-Pflegende Kinder aller Altersklassen in Anleitung und Beratungen integrieren, um Akzeptanz und eine Vertrauensbasis
-zu schaﬀen. Das gilt auch für Neugeborene und Säuglinge.
-Soweit möglich, sollten auch sie immer wissen, was mit ihnen geschieht. Allgemein sollte die Pflegeperson einfach
-und klar, aber nicht „kindisch“ und in der dritten Person mit
-
-I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
-Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
-Usage subject to terms and conditions of license.
-
-
+10    Mit Menschen kommunizieren
+
+
+                                                                          Abb. 10.4 Die 4 Seiten einer Nachricht.
+          WISSEN TO GO
+                                                                                                              Sachinhalt
+
+
+                                                                                                   Selbst-
+        Nonverbale Kommunikation
+        Sie ist die Sprache des Körpers, die meist unbewusst ge-                                              Nachricht    Appell
+        sendet wird. Nonverbale Informationen geben Auskunft                                    offenbarung
+        über das Befinden, über Art und Tiefe der Beziehung zwi-
+        schen Sender und Empfänger oder bekräftigen den emo-                   Sender                         Beziehung              Empfänger
+        tionalen Stellenwert eines Gesprächsthemas.
+           Zur nonverbalen Kommunikation u. a. gehören:
+        ● Gestik
+        ● Mimik                                                           Abb. 10.5 4-Ohren-Modell.
+        ● Blickkontakt
+        ● Körperhaltung
+        ● äußeres Erscheinungsbild
+                                                                                                Was ist mit ihm?                    Selbst-
+        Nonverbale Ausdrucksformen müssen interpretiert wer-                                    Was ist das denn                    offenbarung
+        den. Fehleinschätzungen können durch Wahrnehmung-                                       für einer?
+        und Beurteilungsfehler, kulturelle Unterschiede und Er-
+        krankungen entstehen. Stimmen verbale und nonverbale                                        Wie ist der
+        Botschaften nicht überein, ist eine Nachricht inkongruent.                                  Sachverhalt zu                  Sachinhalt
+        Dadurch kann es zu Kommunikationsstörungen kommen.                                          verstehen?
+
+
+                                                                                            Wie redet der eigentlich
+      10.2.3 Kommunikationsmodell nach                                                      mit mir? Wen glaubt er                    Beziehung
+                                                                                            vor sich zu haben?
+      Schulz von Thun
+      Der deutsche Psychologe und Kommunikationswissen-                                       Was soll ich tun, den-
+                                                                                              ken, fühlen aufgrund                     Appell
+      schaftler Friedemann Schulz von Thun (geb. 1944) hat das
+      Kommunikationsmodell, das sog. „4-Ohren-Modell“, ent-                                   seiner Mitteilung?
+      wickelt. Das Modell dient dazu, Kommunikation darzustel-
+      len und ihre Funktionsweise zu erläutern.
+
+      Vier Seiten einer Nachricht • An einer Kommunikation sind
+      ein Sender und ein Empfänger beteiligt. Die Kernaussage
+      von Schulz von Thun lautet: „Jeder Sender verschickt eine             Beispiel Ohren einer Nachricht
+      Nachricht mit 4 Seiten“ gleichzeitig an den Empfänger
+      (▶ Abb. 10.4). Diese 4 Seiten sind:                                    Die Pflegefachkraft Johanna T. und die Pflegeassistentin Char-
+      1. Sachseite (Sachinformation, worüber ich informiere)                lotte R. sitzen gemeinsam am Pflegestützpunkt. Beide sind mit
+      2. Beziehungsseite (was ich von dir halte und wie ich zu dir          der Dokumentation beschäftigt. Die Rufglocke von Frau L. ist
+         stehe)                                                             zu hören und Johanna sagt: „Es klingelt.“
+      3. Selbstoﬀenbarungsseite (was ich von mir zu erkennen ge-            ● Das     Sachohr hört auf Fakten und Sachverhalte. Wenn
+         be)                                                                  Charlotte lediglich auf der Sachebene reagieren würde, könn-
+      4. Appellseite (was ich bei dir erreichen möchte)                       te sie einfach nicken oder so etwas sagen wie: „Stimmt, habe
+                                                                              ich auch gehört.“
+      Vier Ohren des Empfängers • Dadurch, dass die 4 Botschaften           ● Das     Beziehungsohr hört darauf, was der Sender vom
+      gleichzeitig gesendet werden, ist die Nachricht für den Emp-            Empfänger hält, wie er ihn sieht und die Beziehung zueinan-
+      fänger verschlüsselt. Er muss „heraushören“, welche Bot-                der einschätzt. Charlotte kann hier Signale aufnehmen, die
+      schaft Kernaussage der Nachricht ist. Dafür nutzt der Emp-              ihre Beziehung zu Johanna deutlich machen. Mögliche ge-
+      fänger seine 4 Ohren (▶ Abb. 10.5). Nur 1 Ohr hört die Sach-            dankliche Reaktionen auf dieser Ebene sind: „Typisch, sie
+      information, die andern 3 Ohren versuchen, etwas über die               schickt immer die anderen“ oder auch „Ich arbeite gerne mit
+      Beziehung, die Selbstoﬀenbarung und den Apell zu erfahren.              Johanna. Sie ist so konzentriert, ich werde gleich nach Frau L.
+      An dieser Stelle wird es schwierig, da diese Informationen              sehen.“
+      hauptsächlich über die Körpersprache und paraverbal, z. B.            ● Das Selbstoﬀenbarungsohr hört, was in dem Sender der
+      über den Tonfall, gesendet werden. Das heißt, sie sind nicht            Nachricht vor sich geht oder wie er gestimmt ist. Charlotte
+      immer eindeutig und müssen interpretiert werden. Das Ent-               würde bei der Äußerung „Es klingelt“ möglicherweise heraus-
+      schlüsseln und Interpretieren von Botschaften läuft unbe-               hören, dass Johanna überfordert ist und Hilfe braucht und/
+      wusst und automatisch ab, kann jedoch trainiert werden.                 oder dankbar für Charlottes gute Mitarbeit ist.
+                                                                            ● Das Appellohr       nimmt Wünsche, Anweisungen oder Vor-
+                                                                              schläge auf. Diese können vom Sender direkt (oﬀen) oder
+                                                                              auch indirekt kommuniziert werden. Auf der Appellebene
+                                                                              könnte Charlotte eine Auﬀorderung interpretieren wie: „Ich
+                                                                              soll mich um Frau L. kümmern.“
+
+
+
+
+252    I care Pflege (ISBN 978-3-13-241828-8), © 2020. Thieme. All rights reserved. Dieses Dokument ist nur für den persönlichen
+       Gebrauch bestimmt und darf in keiner Form an Dritte weitergegeben werden!
+        Usage subject to terms and conditions of license.
+                                                                                                                   Kommunikation
+
+
+                                                                       Beispiel: Eine Äußerung wie „Ich habe Frau L. die Medika-
+                                                                       mente schon gebracht“ kann auf der Inhaltsebene ver-
+    WISSEN TO GO
+                                                                       standen werden (Frau L. hat Medikament bereits erhal-
+                                                                       ten) oder aber auch auf der Beziehungsebene (z. B. die
+  Kommunikationsmodell nach Schulz von Thun                            Kollegin findet mich zu langsam), was ggf. zu Konflikten
+                                                                       führen kann.
+  Kommunikation findet zwischen einem Sender und einem
+                                                                    3. Ursache und Wirkung
+  Empfänger statt. Eine Nachricht hat 4 Seiten.
+                                                                       Das Axiom beschreibt Kommunikation als eine Verhal-
+  1. Sachseite
+                                                                       tenskette von Ursache und Wirkung. Wenn es Unstim-
+  2. Beziehungsseite
+                                                                       migkeiten gibt, geht man häufig davon aus, dass das Ge-
+  3. Selbstoﬀenbarungsseite
+                                                                       genüber die Ursache gesetzt hat.
+  4. Appellseite
+                                                                       Für das Medikamentenbeispiel (in 2.) könnte man sagen,
+  Diese 4 Botschaften werden gleichzeitig an den Empfän-
+                                                                       dass der Sender der Aussage „Ich habe Frau L. die Medika-
+  ger übermittelt und müssen von ihm entschlüsselt wer-
+                                                                       mente schon gebracht“ zuerst „stichelt“, weil er tatsäch-
+  den. Er nimmt die Nachricht mit seinen 4 Ohren – dem
+                                                                       lich der Meinung war, dass das Gegenüber zu langsam
+  Sach-, Beziehungs-, Selbstoﬀenbarungs- und Appellohr –
+                                                                       war. Eine negative Reaktion auf diese Anspielung (z. B.
+  auf. Gewichten Sender und Empfänger die gleiche Seite
+                                                                       „Ich hatte gerade anderes zu tun und hätte die Medika-
+  einer Nachricht, gelingt Kommunikation. Gewichten beide
+                                                                       mente schon noch ausgeteilt!“) könnte dann wiederum
+  unterschiedliche Seiten einer Nachricht, entstehen Miss-
+                                                                       so gedeutet werden: „Was hat sie denn, ich wollte ihr
+  verständnisse. Sender und Empfänger vergewissern sich
+                                                                       doch nur einen Gefallen tun. Sie ist immer so empfind-
+  durch Rückfragen, ob ein gegenseitiges Verständnis be-
+                                                                       lich“. Es wirkt, als ginge diese Kommunikation immer hin
+  steht. Liegen Missverständnisse bzw. Kommunikationsstö-
+                                                                       und her. Beide Parteien gehen davon aus, dass der jeweils
+  rungen vor, geben sich Sender und Empfänger gegenseitig
+                                                                       andere die Ursache des Problems ist. Das Axiom Nr. 3 be-
+  Feedback, um die Kommunikation zu entstören.
+                                                                       sagt jedoch, dass dies ein Irrtum ist. Tatsächlich ist eine
+                                                                       Endlosschleife bzw. ein Kreislauf entstanden, in dem jeder
+                                                                       sein „Rolle“ erfüllt.
+10.2.4 Kommunikationstheorie von                                    4. Digital und analog
