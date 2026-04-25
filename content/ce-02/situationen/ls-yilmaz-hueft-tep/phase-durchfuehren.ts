@@ -1,0 +1,547 @@
+// CE-02 Situation Frau Yilmaz — Phase 4: Durchführen
+// Steps: 6 Kern + 2 Optional (inkl. 2 Komplikationen) · Bloom: B4–B5 · Zeit: ~30–50 Min
+// Quelle: content/ce-02/situationen/ls-yilmaz-hueft-tep/phase-durchfuehren.md
+
+import type { SituationsPhase } from "../../../_types";
+
+export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
+  phaseId: "ls-yilmaz-durchfuehren",
+  phase: "durchfuehren",
+  titel: "Durchführen — Mobilisation",
+  titelB1: "Frau Yilmaz steht auf",
+  kontext:
+    "30 Minuten nach der Metamizol-Gabe. Du bist zurück in Zimmer 12. Frau Yilmaz ist noch im Bett, Kopfteil 30° erhöht. Du hast ihr angekündigt: 'Wir versuchen es jetzt.' Mustafa sitzt auf seinem Stuhl. Du hast das Bett auf Arbeitshöhe gestellt, die Unterarmgehstützen stehen bereit. Frau Wendt ist auf dem Flur und weiß, dass du jetzt anfängst.",
+  kontextB1:
+    "30 Minuten nach dem Schmerzmittel. Du bist zurück bei Frau Yilmaz. Sie liegt noch im Bett. Mustafa sitzt daneben. Du hast gesagt: 'Wir versuchen es jetzt.' Das Bett steht auf der richtigen Höhe. Die Gehstützen sind bereit. Frau Wendt ist auf dem Flur.",
+  kernSteps: [
+    // Step 4.1 — Sequencing: Reihenfolge der Mobilisation
+    {
+      stepId: "ce02-yilmaz-dur-01-mobilisation-reihenfolge",
+      phase: 4,
+      stepType: "sequencing",
+      bloomLevel: 4,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP (2020): Expertenstandard Erhaltung und Förderung der Mobilität in der Pflege",
+        "Deutsche Gesellschaft für Unfallchirurgie (2022): S2k-Leitlinie Endoprothetik Hüfte",
+      ],
+      track: "basis",
+      modus: "sortierstation",
+      lernziel: "ce02-yilmaz-dur-mobilisationsreihenfolge",
+      tag: "pflege",
+      contentC1: {
+        title: "Reihenfolge der ersten Mobilisation nach Hüft-TEP",
+        body: "Bevor du anfängst: Die Reihenfolge der ersten Mobilisation nach Hüft-TEP ist nicht beliebig. Sie folgt kinästhetischen Prinzipien und der Lagerungsvorschrift. Bringe die Schritte in die richtige Reihenfolge.",
+        glossarBegriffe: ["Kinästhetik", "Orthostase", "Unterarmgehstützen", "Lagerungsvorschrift"],
+      },
+      contentB1: {
+        title: "In welcher Reihenfolge lässt du Frau Yilmaz aufstehen?",
+        body: "Das Aufstehen nach einer Hüft-OP hat eine genaue Reihenfolge. Bringe die Schritte in die richtige Reihenfolge.",
+        glossarBegriffe: ["Gehstützen", "Schwindel", "Schmerz"],
+      },
+      question: {
+        fragetext:
+          "Bringe die Schritte der ersten Mobilisation nach Hüft-TEP in die richtige Reihenfolge.",
+        sequencing: {
+          instruction:
+            "Sortiere die Schritte in der richtigen Reihenfolge — von der Vorbereitung bis zum Aufstehen.",
+          items: [
+            {
+              id: "s1",
+              label: "Bett auf Bettkanten-Höhe einstellen (damit Füße beim Hinsetzen den Boden berühren)",
+            },
+            {
+              id: "s2",
+              label: "Frau Yilmaz ankündigen was passiert: \"Ich helfe Ihnen jetzt, die Beine über die Seite zu bringen.\"",
+            },
+            {
+              id: "s3",
+              label: "Oberkörper aufrichten (Kopfteil weiter hochstellen ODER manuell unterstützen)",
+            },
+            {
+              id: "s4",
+              label: "Beide Beine gleichzeitig über die Bettkante schwingen — nicht einzeln (Lagerungsvorschrift: Hüftbeugung kontrollieren)",
+            },
+            {
+              id: "s5",
+              label: "3 Minuten an der Bettkante sitzen: Schwindel abfragen, Kreislauf anpassen lassen",
+            },
+            {
+              id: "s6",
+              label: "Aufstehen: Frau Yilmaz stützt sich auf die Unterarmgehstützen, du stehst seitlich-hinter ihr",
+            },
+            {
+              id: "s7",
+              label: "Sofort Schmerz-Reassessment: \"NRS jetzt?\"",
+            },
+            {
+              id: "s8",
+              label: "Wenn NRS ≤ 5: kurz stehen oder erste Schritte; wenn NRS > 7: sofort hinsetzen, Plan anpassen",
+            },
+          ],
+        },
+      },
+    },
+
+    // Step 4.2 — Branching: Orthostatische Hypotonie (Komplikation 1)
+    {
+      stepId: "ce02-yilmaz-dur-02-orthostatisch-branching",
+      phase: 4,
+      stepType: "branching",
+      bloomLevel: 5,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP (2020): Expertenstandard Erhaltung und Förderung der Mobilität in der Pflege",
+      ],
+      track: "basis",
+      modus: "praxis-sim",
+      lernziel: "ce02-yilmaz-dur-orthostatische-hypotonie",
+      tag: "krankheitslehre",
+      contentC1: {
+        title: "Komplikation 1: Orthostatische Hypotonie",
+        body: "Frau Yilmaz sitzt seit 2 Minuten an der Bettkante. Plötzlich sagt sie leise: \"Mir ist schwindelig. Das dreht sich.\"\n\nSie greift nach deinem Arm. Ihr Gesicht wird blass. Was tust du jetzt?\n\nHintergrund: Orthostatische Hypotonie = Blutdruckabfall beim Lagewechsel. Bei Frau Yilmaz mehrere Risikofaktoren: Bettlägerigkeit (Gefäßregulation gedämpft), Antidiabetika (manche senken RR), postoperative Schwäche.",
+        fallbezug:
+          "Das ist keine seltene Komplikation — sie ist bei Hüft-TEP-Patienten sehr häufig. Deine Reaktion in den nächsten 10 Sekunden entscheidet über Sicherheit.",
+        glossarBegriffe: ["Orthostatische Hypotonie", "Blutdruckabfall", "Kreislaufregulation"],
+      },
+      contentB1: {
+        title: "Komplikation: Frau Yilmaz wird schwindelig",
+        body: "Frau Yilmaz sitzt 2 Minuten an der Bettkante. Dann sagt sie: \"Mir ist schwindelig. Das dreht sich.\"\n\nSie greift deinen Arm. Ihr Gesicht wird blass.\n\nDas nennt man: Orthostatischer Schwindel (= Schwindel beim Aufstehen, weil der Blutdruck kurz fällt). Was machst du jetzt?",
+        fallbezug:
+          "Das passiert oft nach einer OP. Du musst schnell und richtig reagieren.",
+        glossarBegriffe: ["Schwindel beim Aufstehen", "Blutdruckabfall"],
+      },
+      question: {
+        fragetext: "Frau Yilmaz wird schwindelig an der Bettkante. Was tust du jetzt?",
+        branchingOptions: [
+          {
+            text: "Frau Yilmaz sofort sicher hinlegen, Beine leicht erhöht lagern, Kreislauf stabilisieren, RR messen",
+            isCorrect: true,
+            feedback:
+              "Genau. Sicherheit zuerst, dann Ursache verstehen. RR liegend: 128/78 mmHg. RR sitzend nach 3 Min: 98/62 mmHg. Differenz > 30 mmHg systolisch = klinisch relevante Orthostase. Maßnahme: hinlegen, warten, nächster Versuch in 20–30 Min. Dann: Frau Wendt informieren.",
+            feedbackB1:
+              "Richtig. Sie liegt jetzt sicher. Blutdruck messen. Beine leicht hochlagern. Dann warten. In 20–30 Minuten erneut versuchen. Frau Wendt informieren.",
+          },
+          {
+            text: "Warten — das geht gleich vorbei, ein bisschen Schwindel ist normal",
+            isCorrect: false,
+            feedback:
+              "Schwindel bei orthostatischer Hypotonie ist KEIN 'normaler' Schwindel. Ein ungesicherter Sturz aus dieser Position — sitzend auf Bettkante nach Hüft-TEP — kann zur Re-Fraktur oder Luxation führen. Das Warten ist kein geduldiges Handeln, sondern ein Risiko. Sofort reagieren: hinlegen, sichern.",
+            feedbackB1:
+              "Nicht warten. Dieser Schwindel ist gefährlich. Wenn sie jetzt fällt, kann das neue Hüftgelenk beschädigt werden. Sofort: sicher hinlegen.",
+          },
+          {
+            text: "Frau Wendt rufen — ich bin überfordert",
+            isCorrect: false,
+            feedback:
+              "Frau Wendt zu rufen ist keine Niederlage — im Zweifelsfall ist das richtig. Aber in der Zeit, bis sie kommt, kannst du bereits die wichtigste Maßnahme eingeleitet haben: Frau Yilmaz sicher hinlegen. Pflege bedeutet nicht Warten auf Anweisung — sondern situationsgerechtes Handeln im Rahmen der Kompetenz. Schritt 1: hinlegen. Schritt 2: Frau Wendt informieren.",
+            feedbackB1:
+              "Frau Wendt zu rufen ist ok — aber zuerst: Frau Yilmaz hinlegen und sichern. Das kannst du. Dann Frau Wendt informieren.",
+          },
+        ],
+      },
+    },
+
+    // Step 4.3 — Dialog: Zweiter Aufstehversuch (4 Phasen)
+    {
+      stepId: "ce02-yilmaz-dur-03-dialog-zweiter-versuch",
+      phase: 4,
+      stepType: "dialog",
+      bloomLevel: 4,
+      kompetenzbereich: "V.1",
+      quellen: ["DNQP (2020): Expertenstandard Erhaltung und Förderung der Mobilität in der Pflege"],
+      track: "basis",
+      modus: "story",
+      lernziel: "ce02-yilmaz-dur-kommunikation-zweiter-versuch",
+      tag: "pflege",
+      contentC1: {
+        title: "25 Minuten später: Der zweite Versuch",
+        body: "Frau Yilmaz liegt wieder. RR jetzt stabil. Du erklärst ihr was passiert ist. Dann: zweiter Aufstehversuch. Wie kommunizierst du — und wie reagierst du wenn es klappt?",
+        glossarBegriffe: ["Orthostatische Hypotonie", "Aufklärung", "NRS"],
+      },
+      contentB1: {
+        title: "25 Minuten später: nochmal",
+        body: "Frau Yilmaz liegt wieder im Bett. Der Blutdruck ist stabil. Du erklärst ihr was passiert ist. Dann: zweiter Versuch. Wie sagst du es ihr?",
+        glossarBegriffe: ["Blutdruck", "Schwindel"],
+      },
+      question: {
+        fragetext: "Wähle deine Antwort.",
+        patientName: "Frau Yilmaz",
+        dialogPhases: [
+          {
+            context:
+              "Du erklärst Frau Yilmaz was passiert ist. Wie formulierst du die Erklärung der orthostatischen Hypotonie?",
+            contextB1:
+              "Du erklärst Frau Yilmaz warum ihr schwindelig wurde. Wie sagst du es?",
+            speaker: "Du",
+            options: [
+              {
+                text: "\"Das ist normal nach einer OP. Der Körper muss sich erst daran gewöhnen, wieder aufzustehen.\"",
+                textB1:
+                  "\"Das ist normal nach einer OP. Ihr Körper lernt gerade wieder aufzustehen.\"",
+                patientResponse:
+                  "Frau Yilmaz nickt. \"Ah — das kenne ich nicht. Mein Körper muss das lernen?\"",
+                patientResponseB1:
+                  "Frau Yilmaz nickt. \"Mein Körper muss das lernen?\"",
+                score: 3,
+                feedback:
+                  "Genau das ist die richtige Balance: verständlich, nicht dramatisiert, erklärend. Frau Yilmaz versteht, dass ihr Körper gerade etwas Neues lernt. Das nimmt die Scham ('Ich bin so schwach') und erklärt warum der zweite Versuch trotzdem sinnvoll ist.",
+                feedbackB1:
+                  "Genau richtig. Sie versteht: Das ist nicht ihre Schuld. Ihr Körper lernt das gerade. Das nimmt die Scham weg und macht Mut für den zweiten Versuch.",
+              },
+              {
+                text: "\"Der Blutdruck ist kurz abgefallen. Das passiert manchmal, keine Sorge.\"",
+                textB1:
+                  "\"Der Blutdruck ist kurz gefallen. Das passiert manchmal.\"",
+                patientResponse:
+                  "Frau Yilmaz schaut unsicher. \"Blutdruck? Ist das gefährlich?\"",
+                patientResponseB1:
+                  "Frau Yilmaz schaut unsicher. \"Ist das schlimm?\"",
+                score: 2,
+                feedback:
+                  "Nicht schlecht — ehrlich und direkt. Aber 'keine Sorge' klingt wie Abwimmeln. Frau Yilmaz spürt, dass etwas passiert ist — du kannst es besser erklären: Was war das? Warum? Und warum ist es ok, nochmal zu versuchen?",
+                feedbackB1:
+                  "Nicht falsch — aber 'keine Sorge' ist zu wenig. Erkläre besser, was passiert ist und warum der zweite Versuch jetzt sicherer ist.",
+              },
+              {
+                text: "\"Das ist wegen Ihrer Diabetesmedikamente. Die müssen angepasst werden.\"",
+                textB1:
+                  "\"Das ist wegen Ihrer Diabetes-Tabletten. Die müssen geändert werden.\"",
+                patientResponse:
+                  "Frau Yilmaz macht sich Sorgen. \"Wieder andere Tabletten? Das verstehe ich nicht.\"",
+                patientResponseB1:
+                  "Frau Yilmaz macht sich Sorgen. \"Wieder neue Tabletten?\"",
+                score: 0,
+                feedback:
+                  "Das stimmt so nicht. Die orthostatische Hypotonie hat mehrere Ursachen — Bettlägerigkeit ist die Hauptursache, nicht primär die Diabetesmedikamente. Fehlinformationen zu Medikamenten können unnötige Sorgen auslösen. Bleib bei der Wahrheit: Körper und Bettlägerigkeit.",
+                feedbackB1:
+                  "Das stimmt nicht so. Die Diabetesmedikamente sind nicht der Hauptgrund. Sag ihr besser: Ihr Körper hat sich ans Liegenbleiben gewöhnt — das Aufstehen muss er wieder lernen.",
+              },
+            ],
+          },
+          {
+            context:
+              "Zweiter Aufstehversuch. Frau Yilmaz steht. Sie sagt überrascht: \"Ach — es geht. Es geht doch. Das hätte ich nicht gedacht.\" NRS jetzt: 4. Wie lange lässt du sie stehen?",
+            contextB1:
+              "Frau Yilmaz steht! Sie sagt: \"Es geht doch!\" NRS jetzt: 4. Wie lange stehst du?",
+            speaker: "Du",
+            options: [
+              {
+                text: "Sofort wieder hinsetzen — es war schon schwierig genug.",
+                textB1:
+                  "Sofort wieder hinsetzen — der erste Versuch war schwer genug.",
+                patientResponse:
+                  "Frau Yilmaz nickt und setzt sich wieder hin. \"Ja, ich bin müde.\"",
+                patientResponseB1:
+                  "Frau Yilmaz setzt sich. \"Ja, ich bin müde.\"",
+                score: 1,
+                feedback:
+                  "Vorsicht ist gut — aber hier übersiehst du die Chance. NRS 4 im Stehen ist ein Erfolg. Jetzt sofort hinzusetzen verpasst die Möglichkeit, diesen Erfolg zu verankern — fachlich und emotional. Frau Yilmaz hat gerade ihre eigene Überraschung erlebt.",
+                feedbackB1:
+                  "Vorsicht ist gut — aber NRS 4 ist gut. Sie kann noch kurz stehen. Das Stehen ist ein Erfolg — den soll sie spüren.",
+              },
+              {
+                text: "Kurz stehen lassen, NRS fragen, dann langsam 1–2 Schritte wenn NRS ≤ 5.",
+                textB1:
+                  "Kurz stehen lassen, NRS fragen, dann 1–2 kleine Schritte wenn der Schmerz ok ist.",
+                patientResponse:
+                  "Frau Yilmaz macht zwei kleine Schritte. Langsam, vorsichtig. Sie schaut auf ihre Füße.",
+                patientResponseB1:
+                  "Frau Yilmaz macht zwei Schritte. Langsam. Sie schaut nach unten.",
+                score: 3,
+                feedback:
+                  "Genau — jeder Schritt ist ein Erfolg. Das Ziel heute ist nicht der Marathon, das Ziel ist: aufgestanden. NRS ≤ 5 im Stehen = Erfolg. Das dokumentierst du, das stärkt Frau Yilmaz' Selbstvertrauen.",
+                feedbackB1:
+                  "Genau richtig. Zwei Schritte ist ein großer Erfolg für heute. NRS 4 — das ist ok. Das schreibst du auf. Das ist ein guter Tag.",
+              },
+              {
+                text: "Jetzt direkt zum Stuhl gehen — das schafft sie.",
+                textB1:
+                  "Jetzt direkt zum Stuhl gehen — sie kann das.",
+                patientResponse:
+                  "Frau Yilmaz zögert. \"Bis zum Stuhl? Das ist … weit.\"",
+                patientResponseB1:
+                  "Frau Yilmaz zögert. \"Bis zum Stuhl? Das ist weit.\"",
+                score: 1,
+                feedback:
+                  "Guter Enthusiasmus — aber zu viel auf einmal. Tag 3 nach Hüft-TEP, gestern NRS 7, heute Orthostase. Zwei Schritte sind heute der richtige Erfolg. Den Stuhl nehmen wir morgen.",
+                feedbackB1:
+                  "Du bist optimistisch — gut! Aber heute: zwei Schritte sind der Erfolg. Den Stuhl schafft sie morgen.",
+              },
+            ],
+          },
+        ],
+      },
+    },
+
+    // Step 4.4 — Branching: Mustafa interveniert (Komplikation 2)
+    {
+      stepId: "ce02-yilmaz-dur-04-mustafa-branching",
+      phase: 4,
+      stepType: "branching",
+      bloomLevel: 5,
+      kompetenzbereich: "V.1",
+      quellen: ["DNQP (2020): Expertenstandard Erhaltung und Förderung der Mobilität in der Pflege"],
+      track: "basis",
+      modus: "praxis-sim",
+      lernziel: "ce02-yilmaz-dur-angehoerige-intervention",
+      tag: "pflege",
+      contentC1: {
+        title: "Komplikation 2: Ehemann Mustafa interveniert",
+        body: "Frau Yilmaz steht zum ersten Mal. Du stehst seitlich hinter ihr. Dann — Mustafa steht auf. Er macht einen Schritt auf Frau Yilmaz zu, will nach ihrem Arm greifen. Er sagt laut auf Türkisch (Übersetzung unten):\n\n\"Sie soll ins Bett. Sie ist krank. Warum macht ihr das mit ihr?\"\n\nMustafas Reaktion ist Liebe, kein Angriff. Er sieht seine kranke Frau stehen und glaubt, ihr zu helfen wenn er sie wieder hinlegt. Was tust du?",
+        fallbezug:
+          "Diese Situation ist häufig bei älteren Patienten mit pflegenden Angehörigen. Die richtige Reaktion entscheidet über Vertrauen — und über die Sicherheit der Mobilisation.",
+        glossarBegriffe: ["Angehörige", "Nonverbale Kommunikation", "Interkulturelle Pflege"],
+      },
+      contentB1: {
+        title: "Komplikation: Mustafa greift ein",
+        body: "Frau Yilmaz steht. Du bist dabei. Dann — Mustafa steht auf. Er will nach ihr greifen. Er sagt auf Türkisch: \"Sie soll ins Bett! Sie ist krank!\"\n\nEr macht das aus Liebe. Er hat Angst um seine Frau. Was machst du?",
+        fallbezug:
+          "Mustafa meint es gut. Aber er versteht nicht, dass Aufstehen wichtig ist. Du musst das regeln — schnell und ruhig.",
+        glossarBegriffe: ["Angehörige", "Gesten", "Türkisch"],
+      },
+      question: {
+        fragetext: "Mustafa greift ein und will Frau Yilmaz ins Bett zurücklegen. Was tust du?",
+        branchingOptions: [
+          {
+            text: "Ruhig, klar, nonverbal: Hebe die Hand (Stopp-Geste), lächle ihn gleichzeitig an. Dann — über Frau Yilmaz: \"Frau Yilmaz, könnten Sie Ihrem Mann kurz sagen, dass alles gut ist und Sie selbst entschieden haben aufzustehen?\"",
+            isCorrect: true,
+            feedback:
+              "Mustafas Reaktion ist Liebe, kein Angriff. Deine Aufgabe: kurze, ruhige Kommunikation OHNE Worte (er versteht kein Deutsch) + Frau Yilmaz als Vermittlerin aktivieren. Das stärkt ihre Autonomie und erklärt Mustafa gleichzeitig die Situation. Frau Yilmaz sagt auf Türkisch etwas zu Mustafa. Er setzt sich langsam wieder hin. Nach einer Minute nickt er.",
+            feedbackB1:
+              "Genau richtig. Stopp-Geste + Lächeln — das versteht er. Dann: Frau Yilmaz bittet ihm zu erklären. Sie ist die Vermittlerin. Das ist respektvoll für alle.",
+          },
+          {
+            text: "Direkt auf Türkisch via Übersetzungs-App: 'Bitte nicht stören.'",
+            isCorrect: false,
+            feedback:
+              "Technologie nutzen ist ein guter Instinkt. Aber: Tone und Formulierung sind entscheidend. 'Bitte nicht stören' klingt hart und abweisend — nicht einladend. Besser: 'Ihre Frau ist mutig. Alles gut.' Und: Frau Yilmaz als Vermittlerin einbeziehen bleibt wichtig.",
+            feedbackB1:
+              "Kein schlechter Instinkt. Aber 'Bitte nicht stören' klingt harsch. Besser: 'Alles gut. Ihre Frau ist mutig.' Und: Frau Yilmaz selbst erklären lassen.",
+          },
+          {
+            text: "Frau Wendt rufen — das ist zu komplex für mich allein.",
+            isCorrect: false,
+            feedback:
+              "Im Zweifelsfall Frau Wendt holen ist ok. Aber in dieser Sekunde kannst du selbst handeln: Stopp-Geste, Lächeln, Frau Yilmaz bitten zu vermitteln. Das dauert 10 Sekunden — nicht 2 Minuten auf Frau Wendt warten. Handeln zuerst, informieren danach.",
+            feedbackB1:
+              "Frau Wendt holen ist ok — aber du kannst selbst handeln. Stopp-Geste und Lächeln dauern 10 Sekunden. Dann Frau Yilmaz bitten, es zu erklären. Danach kannst du Frau Wendt informieren.",
+          },
+        ],
+      },
+    },
+
+    // Step 4.5 — MC: Lagerung nach Mobilisation
+    {
+      stepId: "ce02-yilmaz-dur-05-lagerung-nach-mobilisation",
+      phase: 4,
+      stepType: "mc",
+      bloomLevel: 4,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "NPUAP/EPUAP/PPPIA (2019): International Pressure Injury Guideline",
+        "DNQP (2017, 2. Aktualisierung 2024): Expertenstandard Dekubitusprophylaxe in der Pflege",
+        "Deutsche Gesellschaft für Unfallchirurgie (2022): S2k-Leitlinie Endoprothetik Hüfte",
+      ],
+      track: "basis",
+      modus: "challenge",
+      lernziel: "ce02-yilmaz-dur-lagerung-tep-dekubitus",
+      tag: "pflege",
+      contentC1: {
+        title: "Welche Lagerung nach dem Aufstehversuch?",
+        body: "Frau Yilmaz ist nach dem Aufstehversuch wieder im Bett. Du denkst an die Druckstelle am Steißbein. Gleichzeitig ist die Lagerungsvorschrift der Hüft-TEP aktiv. Beides musst du berücksichtigen. Welche Lagerung wählst du?",
+        fallbezug:
+          "Zwei Anforderungen gleichzeitig: Dekubitus-Prophylaxe am Steißbein UND Luxationsprophylaxe der Hüfte. Die Lösung liegt im Kompromiss.",
+        glossarBegriffe: ["30°-Mikrolagerung", "Luxationsprophylaxe", "Dekubitusprophylaxe", "Trochanter"],
+      },
+      contentB1: {
+        title: "Wie soll Frau Yilmaz jetzt liegen?",
+        body: "Frau Yilmaz ist wieder im Bett. Du denkst an die rote Druckstelle am Steißbein. Und du denkst an die Hüft-OP — das Hüftgelenk darf nicht zu stark gebeugt werden. Welche Lagerung ist richtig?",
+        glossarBegriffe: ["30°-Lagerung", "Druckentlastung", "Hüftgelenk"],
+      },
+      question: {
+        fragetext:
+          "Welche Lagerung wählst du — unter Berücksichtigung der Hüft-TEP-Lagerungsvorschrift UND des Dekubitus Kategorie I am Steißbein?",
+        optionen: [
+          {
+            text: "Rückenlage, Kopf flach — Steißbein liegt druckfrei, Hüftwinkel 0°",
+            isCorrect: false,
+            explanation:
+              "In Rückenlage liegt das Steißbein direkt auf — das ist kein Druckentlastung, das ist das Gegenteil. Steißbein und Fersen liegen auf. Der Hüftwinkel ist zwar gut (0°), aber die Dekubitus-Prophylaxe ist nicht erfüllt.",
+            explanationB1:
+              "In der Rückenlage liegt das Steißbein auf der Matratze — das ist nicht gut für die Druckwunde. Das hilft nicht.",
+          },
+          {
+            text: "30°-Mikrolagerung auf die linke Seite (gesunde Seite) — Steißbein entlastet, Hüftwinkel < 90°",
+            isCorrect: true,
+            explanation:
+              "Genau — die 30°-Mikrolagerung ist der Kompromiss: Steißbein wird entlastet, und der Hüftwinkel bleibt weit unter 90°. Bei 90°-Seitenlage wäre das Hüftgelenk in ungünstigem Winkel. Die 30°-Regel kommt aus dem NPUAP/EPUAP-Standard (2019) — sie ist speziell entwickelt, um Steißbein UND Trochanter gleichzeitig zu schonen.",
+            explanationB1:
+              "Genau richtig. 30° auf die linke Seite: Das Steißbein hat keinen Druck mehr. Und der Hüftwinkel ist unter 90° — das schützt das neue Gelenk. Beides erfüllt.",
+          },
+          {
+            text: "Linke Seite 90°, da Steißbein so am besten entlastet ist",
+            isCorrect: false,
+            explanation:
+              "Bei 90° Seitenlage liegt der Trochanter auf dem Bett — neues Druckrisiko. Außerdem ist der Hüftwinkel bei Seitenlage 90° nicht kontrollierbar. Die 30°-Mikrolagerung ist die richtige Wahl (NPUAP/EPUAP 2019).",
+            explanationB1:
+              "Bei 90° Seitenlage liegt die Hüfte auf der Seite auf — das macht eine neue Druckstelle. Außerdem: der Hüftwinkel ist nicht mehr kontrollierbar. 30° ist besser.",
+          },
+          {
+            text: "Frau Yilmaz soll die Liegeposition selbst wählen",
+            isCorrect: false,
+            explanation:
+              "Frau Yilmaz' Wunsch ist wichtig — aber bei Hüft-TEP und Dekubitus Kategorie I hat die medizinische Sicherheit Vorrang. Du kannst und sollst ihr erklären warum die Lagerung wichtig ist. Entscheiden tust du gemeinsam mit ihr — aber innerhalb der sicheren Optionen.",
+            explanationB1:
+              "Ihr Wunsch ist wichtig — aber nicht jede Position ist sicher. Du erklärst ihr die Regeln und entscheidet gemeinsam — aber innerhalb der sicheren Möglichkeiten.",
+          },
+        ],
+      },
+    },
+
+    // Step 4.6 — Timer: Umlagerungsplan erstellen
+    {
+      stepId: "ce02-yilmaz-dur-06-umlagerungs-timer",
+      phase: 4,
+      stepType: "timer",
+      bloomLevel: 3,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP (2017, 2. Aktualisierung 2024): Expertenstandard Dekubitusprophylaxe in der Pflege",
+        "NPUAP/EPUAP/PPPIA (2019): International Pressure Injury Guideline",
+      ],
+      track: "basis",
+      modus: "challenge",
+      lernziel: "ce02-yilmaz-dur-umlagerungsintervall",
+      tag: "pflege",
+      contentC1: {
+        title: "Umlagerungsintervall festlegen",
+        body: "Frau Yilmaz liegt jetzt in 30°-Mikrolagerung. Du weißt: Dekubitus-Prophylaxe bedeutet konsequente Druckentlastung. Aber wie oft musst du sie umlagern? Wähle den richtigen Zeitintervall.",
+        glossarBegriffe: ["Umlagerungsintervall", "Dekubitusprophylaxe", "DNQP"],
+      },
+      contentB1: {
+        title: "Wie oft muss Frau Yilmaz umgelagert werden?",
+        body: "Frau Yilmaz liegt in der 30°-Lagerung. Um Druckwunden zu vermeiden, muss sie regelmäßig umgelagert werden. Wie oft?",
+        glossarBegriffe: ["Umlagern", "Druckwunden-Prophylaxe"],
+      },
+      question: {
+        fragetext:
+          "Stelle den richtigen Umlagerungsintervall für Frau Yilmaz ein.",
+        timerVariant: "standard",
+        timeLimitSeconds: 30,
+        timerQuestions: [
+          {
+            question:
+              "Wie lange darf Frau Yilmaz in einer Position liegen — bevor umgelagert wird?",
+            options: [
+              "1 Stunde",
+              "2 Stunden",
+              "3 Stunden",
+              "4 Stunden",
+              "6 Stunden",
+            ],
+            correctIndex: 1,
+          },
+        ],
+      },
+    },
+  ],
+  optionaleSteps: [
+    // Step 4.7 (Optional) — WordOrder: Antiemboliestrümpfe anlegen
+    {
+      stepId: "ce02-yilmaz-dur-07-antiembolie-optional",
+      phase: 4,
+      stepType: "wordorder",
+      bloomLevel: 3,
+      kompetenzbereich: "I.1",
+      quellen: ["DNQP (2020): Expertenstandard Erhaltung und Förderung der Mobilität"],
+      track: "vertiefung",
+      modus: "puzzle",
+      lernziel: "ce02-yilmaz-dur-antiemboliestrupmpfe",
+      tag: "pflege",
+      contentC1: {
+        title: "Antiemboliestrümpfe anlegen — richtige Reihenfolge",
+        body: "Das Anlegen von Antiemboliestrümpfen ist eine pflegerische Aufgabe (§ 3 Abs. 2 PflBG). Die Reihenfolge ist wichtig — der häufigste Fehler ist das falsche Umstülpen. Bringe die Schritte in die richtige Reihenfolge.",
+        glossarBegriffe: ["Antiemboliestrümpfe", "Kompressionsstrümpfe", "Thromboseprophylaxe"],
+      },
+      contentB1: {
+        title: "Antiemboliestrümpfe — in welcher Reihenfolge?",
+        body: "Antiemboliestrümpfe schützen vor Thrombosen. Du musst sie richtig anziehen. Bringe die Wörter in die richtige Reihenfolge.",
+        glossarBegriffe: ["Thrombosen-Schutzstrümpfe"],
+      },
+      question: {
+        fragetext:
+          "Bringe die Schritte zum Anlegen von Antiemboliestrümpfen in die richtige Reihenfolge.",
+        wordorder: {
+          instruction:
+            "Sortiere die Schritte in der richtigen Reihenfolge — von der Vorbereitung bis zur Kontrolle.",
+          words: [
+            "Größe messen (vorher)",
+            "Strumpf umstülpen",
+            "Ferse anpassen",
+            "Strumpf über Bein ziehen",
+            "Knitter prüfen",
+          ],
+          correctOrder: [0, 1, 2, 3, 4],
+          hint: "Der häufigste Fehler: Strumpf nicht umstülpen. Das erzeugt Scherkräfte auf der Haut.",
+        },
+      },
+    },
+
+    // Step 4.8 (Optional) — TableFillIn: Schmerzprotokoll führen
+    {
+      stepId: "ce02-yilmaz-dur-08-schmerzdoku-optional",
+      phase: 4,
+      stepType: "tablefillin",
+      bloomLevel: 4,
+      kompetenzbereich: "I.1",
+      quellen: ["§ 630f BGB (Behandlungsdokumentation)"],
+      track: "vertiefung",
+      modus: "schreibtisch",
+      lernziel: "ce02-yilmaz-dur-schmerzprotokoll",
+      tag: "pflege",
+      contentC1: {
+        title: "Schmerzprotokoll: Verlaufsdokumentation",
+        body: "Jede Schmerzmessung und jede Maßnahme muss dokumentiert werden. Trage die NRS-Werte in die Verlaufstabelle ein — basierend auf dem bisherigen Verlauf der Situation.",
+        glossarBegriffe: ["NRS", "Schmerzprotokoll", "Verlaufsdokumentation"],
+      },
+      contentB1: {
+        title: "Schmerzdokumentation ausfüllen",
+        body: "Du musst die Schmerzen aufschreiben. Fülle die Tabelle aus.",
+        glossarBegriffe: ["NRS", "Schmerzdokumentation"],
+      },
+      question: {
+        fragetext: "Trage die NRS-Werte in die Verlaufstabelle ein.",
+        tablefillin: {
+          instruction:
+            "Fülle die Lücken in der Schmerzprotokoll-Tabelle aus. Nutze die Informationen aus dem bisherigen Situationsverlauf.",
+          headers: ["Zeit", "Schmerz NRS", "Ort", "Maßnahme", "Ergebnis"],
+          rows: [
+            [
+              { value: "08:15", isBlank: false },
+              { value: "6", isBlank: true, options: ["4", "6", "8", "10"] },
+              { value: "Steißbein, Bein", isBlank: false },
+              { value: "Metamizol 500 mg oral", isBlank: false },
+              { value: "—", isBlank: false },
+            ],
+            [
+              { value: "09:00", isBlank: false },
+              { value: "7", isBlank: true, options: ["3", "5", "7", "9"] },
+              { value: "Bein beim Aufstehen", isBlank: false },
+              { value: "Aufstehversuch 1 — Orthostase, abgebrochen", isBlank: false },
+              { value: "—", isBlank: false },
+            ],
+            [
+              { value: "09:30", isBlank: false },
+              { value: "4", isBlank: true, options: ["2", "4", "6", "8"] },
+              { value: "Bein im Stehen", isBlank: false },
+              { value: "Aufstehversuch 2 — erfolgreich, 3 Schritte", isBlank: false },
+              { value: "—", isBlank: false },
+            ],
+          ],
+        },
+      },
+    },
+  ],
+  geschaetzteDauer: 40,
+};

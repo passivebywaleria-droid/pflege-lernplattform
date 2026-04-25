@@ -10,9 +10,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
   titel: "Evaluieren",
   titelB1: "Bewerten",
   kontext:
-    "Szenen-Sprung: 24 Stunden später, wieder Frühdienst. Frau Keller ist da, du übernimmst Frau M. mit. Zolpidem wurde abgesetzt, Nachtlicht hat gebrannt, Toilettenstuhl wurde in der Nacht einmal genutzt. Du willst evaluieren, was die nächtlichen Maßnahmen gebracht haben.",
+    "Szenen-Sprung. 24 Stunden später, 06:42 Uhr. Frühdienst. Du stehst wieder auf demselben Flur, aber alles ist anders. Das Stationslicht ist hell, die Neonleuchten brummen leise und gleichmäßig, draußen vor den Fenstern dämmert es bläulich, eine Amsel hat irgendwo zu singen begonnen. Es riecht nach frischem Kaffee aus der Stationsküche, nach Toast und nach dem dezent süßen Duft des Pflegelotion-Spenders, den jemand neu aufgefüllt hat. Aus Zimmer 12 kommt das gedämpfte Klappern von Frühstücksgeschirr, Frau Schmidts Lachen, das Geräusch eines Verbandwagens, der über die Türschwelle rollt. Du hast zu Hause nicht gut geschlafen. Bilder sind dir geblieben — Frau M. am Boden, ihre Hand in deiner, der Satz 'Sind Sie böse?'. Frau Keller steht jetzt neben dir am Stationstresen, hat schon eine Tasse Kaffee in der Hand, ihre Augen sind ruhig. 'Komm', sagt sie, 'wir gucken zusammen.' Auf dem Bildschirm liest du die Übergabe der Spätschicht: Zolpidem wurde gegen 09:00 vom Stationsarzt abgesetzt, neuer Eintrag steht. Nachtlicht hat über Nacht gebrannt. Toilettenstuhl wurde einmal um 02:50 genutzt — Frau M. hat geklingelt. Vitalzeichen stabil. Schmerz NRS 2 morgens. Keine neuen Auffälligkeiten. Du gehst mit Frau Keller in Zimmer 14. Frau M. sitzt aufrecht im Bett, die Brille wieder auf der Nase, eine Tasse Tee in der Hand, sie lächelt vorsichtig, als sie dich sieht. 'Sie sind die von der Nacht', sagt sie. 'Sie haben geklingelt', sagst du. Sie nickt: 'Ja. Es ging.' Drei Worte, und du spürst, wie etwas Großes in dir aufatmet. Aber Routine ist das nicht. Jetzt brauchst du den klaren Blick zurück: Was von dem, was ihr in der Nacht geplant und durchgeführt habt, hat tatsächlich gewirkt? Was war eher Aktivismus, gut gemeint, aber überflüssig? Und was fehlt noch — Physiotherapie, HCT-Review, Hüftprotektor-Gespräch mit der Tochter? Reflexion ist kein Luxus, sie ist Teil deines Berufs. Frau Keller wartet darauf, dass du das jetzt strukturiert benennst. Und du selbst willst es auch — für die nächste Schicht, für die nächste Frau M., für dich.",
   kontextB1:
-    "24 Stunden später. Frühdienst. Frau Keller ist da. Du übernimmst Frau M. Zolpidem ist abgesetzt. Nachtlicht hat gebrannt. Toilettenstuhl wurde einmal benutzt. Du schaust: Was hat funktioniert?",
+    "24 Stunden später. 06:42 Uhr. Frühdienst. Du stehst wieder auf dem Flur. Alles ist anders. Das Licht ist hell. Draußen wird es langsam blau. Eine Amsel singt. Es riecht nach Kaffee und Toast. Du hast zuhause schlecht geschlafen. Du denkst noch an Frau M. — wie sie am Boden lag, wie sie deine Hand hielt. Frau Keller steht neben dir. Sie hat eine Tasse Kaffee. Sie sagt: 'Komm, wir gucken zusammen.' Du liest die Übergabe von der Spätschicht. Zolpidem wurde abgesetzt. Nachtlicht hat gebrannt. Toilettenstuhl wurde benutzt — Frau M. hat geklingelt um 02:50. Vitalzeichen sind stabil. Schmerzen: 2 von 10. Du gehst mit Frau Keller zu Frau M. Sie sitzt im Bett. Sie hat ihre Brille auf. Sie trinkt Tee. Sie lächelt vorsichtig. Sie sagt: 'Sie sind die von der Nacht.' Du sagst: 'Sie haben geklingelt.' Sie nickt: 'Ja. Es ging.' Etwas in dir wird ruhig. Aber jetzt ist die Frage: Was hat wirklich geholfen? Was war zu viel? Was fehlt noch — zum Beispiel Physiotherapie, Hüftprotektor, HCT-Review? Du musst es klar sagen. Frau Keller wartet. Du selbst willst es auch wissen — für die nächste Schicht und für dich.",
   kernSteps: [
     // Step 5.1 — Categorize: Reassessment
     {
@@ -86,21 +86,27 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
       displayFormat: "quote",
       contentC1: {
         title: "Was Frau M. am Morgen sagt",
-        body: "Frau M. sitzt am Frühstückstisch, ihre Tochter Birgit sitzt neben ihr (sie kam extra früh vorbei). Als du eintrittst, sagt Frau M. zu dir:\n\n> _\"Wissen Sie, was mir heute geholfen hat? Dass Sie mir erklärt haben, warum ich gestürzt bin. Ich dachte, ich werde einfach nur alt. Aber es waren die Tabletten. Das kann man ändern. Das ist etwas anderes.\"_\n\nDieser Satz ist didaktisch zentral. Frau M. hat durch die **Ursachenaufklärung** das Post-Fall-Syndrom durchbrechen können. Kontroll-Erleben statt Schicksalserleben. 'Ich werde alt' = unveränderbar, passiv → Sturzangst bleibt. 'Es waren die Tabletten' = veränderbar, aktiv → Hoffnung + Handlungsfähigkeit. Das ist die Wirkung, die durch gute Beratung (Baustein 1 der Angst-Adressierung aus Phase 4) entsteht. Merke: Aufklärung ist nicht nur Information — sie ist eine Intervention gegen das Post-Fall-Syndrom.",
+        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
+        body: "Frau M. sitzt am Frühstückstisch, ihre Tochter Birgit sitzt neben ihr (sie kam extra früh vorbei). Als du eintrittst, sagt Frau M. zu dir:\n\n> \"Wissen Sie, was mir heute geholfen hat? Dass Sie mir erklärt haben, warum ich gestürzt bin. Ich dachte, ich werde einfach nur alt. Aber es waren die Tabletten. Das kann man ändern. Das ist etwas anderes.\"\n\nDieser Satz ist didaktisch zentral. Frau M. hat durch die **Ursachenaufklärung** das Post-Fall-Syndrom durchbrechen können. Kontroll-Erleben statt Schicksalserleben. 'Ich werde alt' = unveränderbar, passiv → Sturzangst bleibt. 'Es waren die Tabletten' = veränderbar, aktiv → Hoffnung + Handlungsfähigkeit. Das ist die Wirkung, die durch gute Beratung (Baustein 1 der Angst-Adressierung aus Phase 4) entsteht. Merke: Aufklärung ist nicht nur Information — sie ist eine Intervention gegen das Post-Fall-Syndrom.",
         glossarBegriffe: ["Post-Fall-Syndrom"],
       },
       contentB1: {
         title: "Frau M. am Morgen",
-        body: "Frau M. sitzt beim Frühstück. Ihre Tochter Birgit ist da. Frau M. sagt zu dir:\n\n> _\"Wissen Sie, was mir heute geholfen hat? Dass Sie mir erklärt haben, warum ich gestürzt bin. Ich dachte: Ich werde einfach alt. Aber es waren die Tabletten. Das kann man ändern. Das ist etwas anderes.\"_\n\nDieser Satz ist wichtig. Durch die Erklärung hat Frau M. den Teufelskreis der Angst durchbrochen. 'Ich werde alt' = ich kann nichts ändern → Angst bleibt. 'Es waren die Tabletten' = ich kann etwas ändern → Hoffnung kommt. Merke: Erklären ist nicht nur Information — es ist Therapie gegen Angst.",
+        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
+        body: "Frau M. sitzt beim Frühstück. Ihre Tochter Birgit ist da. Frau M. sagt zu dir:\n\n> \"Wissen Sie, was mir heute geholfen hat? Dass Sie mir erklärt haben, warum ich gestürzt bin. Ich dachte: Ich werde einfach alt. Aber es waren die Tabletten. Das kann man ändern. Das ist etwas anderes.\"\n\nDieser Satz ist wichtig. Durch die Erklärung hat Frau M. den Teufelskreis der Angst durchbrochen. 'Ich werde alt' = ich kann nichts ändern → Angst bleibt. 'Es waren die Tabletten' = ich kann etwas ändern → Hoffnung kommt. Merke: Erklären ist nicht nur Information — es ist Therapie gegen Angst.",
         glossarBegriffe: ["Post-Fall-Syndrom"],
       },
     },
 
-    // Step 5.3 — Confidence nachher
+    // Step 5.3 — Selbsteinschätzung nachher
+    // FIX (walkthrough B-04): stepType confidence → selfrating, confidenceCards entfernt.
+    // Gleicher Grund wie B-01: Eine subjektive Selbsteinschätzung am Ende der Situation
+    // darf nicht mit "Falsch!"-Header bewertet werden. selfrating nutzt Skala statt
+    // isTrue/isFalse-Logik.
     {
       stepId: "ce02-frau-m-eval-03-konfidenz-nachher",
       phase: 5,
-      stepType: "confidence",
+      stepType: "selfrating",
       bloomLevel: 4,
       kompetenzbereich: "I.1",
       quellen: [],
@@ -109,41 +115,21 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
       lernziel: "ce02-frau-m-eval-confidence-nachher",
       tag: "pflege",
       contentC1: {
-        title: "Wie sicher fühlst du dich jetzt?",
+        // FIX (walkthrough B-13): Titel differenziert vom Phase-1-Step (info-02 "Wie sicher fühlst du dich?"),
+        // damit Schüler spürt: Ende, nicht Anfang.
+        title: "Dein Ende-Check — wie sicher fühlst du dich jetzt?",
         body: "Erinnerst du dich? Ganz am Anfang (vor dem Zimmer von Frau M.) haben wir dich gefragt, wie sicher du dich fühlst. Jetzt — nach Assessment, Transfer, SBAR-Anruf, Bettgitter-Entscheidung, Haupt-Branching — fragen wir dich nochmal. Das ist kein Test — es ist eine Spiegelung deines Lernens.",
         glossarBegriffe: [],
       },
       contentB1: {
-        title: "Wie sicher fühlst du dich jetzt?",
+        // FIX (walkthrough B-13): Titel differenziert vom Phase-1-Step.
+        title: "Dein Ende-Check — wie sicher fühlst du dich jetzt?",
         body: "Am Anfang haben wir dich gefragt, wie sicher du dich fühlst. Jetzt — nach allem, was du gemacht hast — fragen wir dich nochmal. Das ist kein Test. Das ist, damit du siehst, was du gelernt hast.",
         glossarBegriffe: [],
       },
       question: {
         fragetext:
           "Wie sicher fühlst du dich jetzt, als Pflegekraft bei einer ähnlichen Situation?",
-        confidenceCards: [
-          {
-            statement:
-              "Immer noch unsicher — das war sehr komplex, ich brauche mehr Übung",
-            isTrue: false,
-            explanation:
-              "Das ist absolut ok. Du hast eine komplexe Situation durchgearbeitet. Übung folgt in weiteren Situationen (LS Kovac, LS Bauer).",
-          },
-          {
-            statement:
-              "Sicherer als vorher — ich weiß jetzt, welche Schritte wichtig sind",
-            isTrue: false,
-            explanation:
-              "Genau das ist der Lernfortschritt. Mit jeder ähnlichen Situation wird das Muster fester.",
-          },
-          {
-            statement:
-              "Klar sicher — ich könnte das jetzt im Dienst selbstständig",
-            isTrue: true,
-            explanation:
-              "Super. Dein Profil zeigt: Du kannst in ähnlichen Situationen im Nachtdienst eigenständig handeln. Nächstes Level: Prüfungsfall am Ende CE-02.",
-          },
-        ],
       },
     },
 

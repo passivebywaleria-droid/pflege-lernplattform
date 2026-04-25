@@ -10,9 +10,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
   titel: "Informieren & Ankommen",
   titelB1: "Ankommen bei Frau M.",
   kontext:
-    "Du stehst auf dem Flur der internistischen Station. Es ist 02:48 Uhr. Frau Keller hat dich gerade zu Zimmer 14 geschickt. Du weißt: Frau M., 82, Pneumonie, ist gerade gestürzt. Mehr noch nicht. In den nächsten Minuten entscheidet sich, wie die Situation für Frau M. weitergeht — emotional und fachlich.",
+    "02:48 Uhr. Du stehst auf dem Flur der internistischen Station und spürst, wie das Linoleum unter deinen Schuhen leicht klebt — frisch gewischt, irgendwann zwischen Mitternacht und jetzt. Die Notbeleuchtung tönt den Gang in ein gedämpftes Apricot, nur am Schwesternzimmer fällt ein streifenhelles Rechteck Neonlicht auf den Boden. Aus Zimmer 11 hörst du das gleichmäßige Surren eines Sauerstoffkonzentrators, weiter hinten ein leises Husten, dann wieder Stille. Diese Art Stille, die nachts auf einer Station nie ganz Stille ist: Kühlschränke summen, Infusomaten piepen leise im Halbschlaf, irgendwo schließt eine Tür. Du atmest ein. Es riecht nach Desinfektionsmittel, nach kaltem Kaffee aus der Stationsküche, nach den Veilchen-Bonbons, die Frau Keller jeden Dienst dabeihat. Vor 90 Sekunden hat sie dir auf dem Weg zu Zimmer 12 zugenickt: 'Frau M., Vierzehn, ist gestürzt. Schau du.' Mehr Zeit war nicht. Sie ist jetzt in der Tür gegenüber verschwunden, du hörst sie murmeln, das ruhige Auf-und-Ab ihrer Stimme, und merkst, dass sie auf dich vertraut, ohne dass sie es ausgesprochen hat. Dein Puls liegt höher als sonst, du merkst es am Hals, ein leichtes Pochen unter dem Kragen des Kasaks. Frau M., 82 Jahre, Pneumonie Tag drei — mehr weißt du nicht. Kein Pflegebogen vor Augen, keine Diagnoseliste, kein Arzneimittel-Plan. Du bist im 2. Ausbildungsdrittel, das ist deine vierte Nachtschicht überhaupt, und du bist gerade allein für Zimmer 14 zuständig. In deiner linken Brusttasche der schmale Notizblock mit drei eng beschriebenen Seiten von der heutigen Übergabe — über Frau M. steht nur eine halbe Zeile. Drei Schritte trennen dich noch von der angelehnten Tür. Hinter ihr: eine Frau, die du noch nie gesehen hast, am Boden liegend, vielleicht mit Schmerzen, vielleicht mit Angst, vielleicht in einer Pose, die dich an deine eigene Großmutter erinnern wird. Du gehst noch nicht hinein. Erst die Übergabe sauber im Kopf, erst SBAR strukturieren. Was hat Frau Keller wirklich gesagt? Welche Information fehlt dir? Welche Frage musst du im Zimmer als erstes klären — Bewusstsein, Atmung, Schmerz? Du stehst still, eine Hand am Türrahmen, das Holz kühl und glatt unter den Fingern, und merkst, wie diese Sekunden schwerer wiegen als die ganze Stunde davor. Im Hintergrund piept ein Aufzug irgendwo im Haus. In den nächsten Minuten entscheidet sich, wie die Nacht für Frau M. weitergeht — fachlich, körperlich und emotional. Und auch: wie du als Schülerin durch diese Tür gehst.",
   kontextB1:
-    "Du stehst im Flur der internistischen Station. Es ist 02:48 Uhr. Frau Keller schickt dich zu Zimmer 14. Du weißt: Frau M., 82 Jahre, Pneumonie, ist gerade gestürzt. Mehr nicht. Was du jetzt tust, ist wichtig.",
+    "02:48 Uhr. Du stehst auf dem Flur. Das Licht ist gedämpft. Es ist warm und still. Du riechst Desinfektion und Kaffee. In Zimmer 11 surrt ein Gerät. Eine Tür schließt leise. Frau Keller hat dich vor einer Minute zu Zimmer 14 geschickt. Sie sagte nur: 'Frau M., 14, ist gestürzt. Schau du.' Mehr nicht. Du atmest ein. Dein Puls ist schneller als sonst. Frau M. ist 82 Jahre alt. Sie hat eine Lungenentzündung, Tag drei. Mehr weißt du nicht. Du bist Schülerin im 2. Ausbildungsdrittel. Das ist deine vierte Nachtschicht. Du bist allein für Zimmer 14. Drei Schritte sind es noch bis zur Tür. Sie steht offen. Hinter der Tür liegt eine Frau am Boden. Vielleicht hat sie Schmerzen. Vielleicht hat sie Angst. Du gehst noch nicht rein. Erst denkst du nach. Was hat Frau Keller genau gesagt? Was musst du wissen? Du nutzt SBAR — eine Struktur für Übergaben. Du stehst still, eine Hand am Türrahmen. Diese Sekunden sind wichtig. Was du jetzt tust, ist wichtig — für Frau M. und für dich.",
   kernSteps: [
     // Step 1.1 — SBAR-Übergabe
     {
@@ -34,25 +34,34 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
         "Night shift hospital corridor, nurse whispering, soft warm overhead lighting, calm atmosphere, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Übergabe auf dem Flur",
-        body: "Frau Keller flüstert auf dem Flur: _\"Frau M., Zimmer 14, grad gestürzt, links neben dem Bett, ansprechbar, klagt über Hüftschmerz. Ich übernehme die Infusion nebenan — schau du mal.\"_ Du liest kurz die Pflegeübergabe in SBAR-Struktur: **S**ituation — Sturz vor 7 Min. **B**ackground — Pneumonie Tag 3, Parkinson II. **A**ssessment — ansprechbar, orientiert, Hüftschmerz links. **R**ecommendation — Assessment + Arzt informieren falls nötig. SBAR ist die Standard-Struktur für klinische Übergaben — sie macht Übergaben vollständig und klar.",
+        // FIX (walkthrough B-02): Setting-Zeile mit \n\n vom Body getrennt,
+        // sonst triggert displayFormat="scenario" den body-Duplikat-Fallback in step-text.tsx:404.
+        // FIX (walkthrough B-14): Markdown-Underscore-Italics entfernt (Renderer parst kein Markdown).
+        body: "02:48 Uhr, Flur der internistischen Station.\n\nFrau Keller flüstert: \"Frau M., Zimmer 14, grad gestürzt, links neben dem Bett, ansprechbar, klagt über Hüftschmerz. Ich übernehme die Infusion nebenan — schau du mal.\" Du liest kurz die Pflegeübergabe in SBAR-Struktur: **S**ituation — Sturz vor 7 Min. **B**ackground — Pneumonie Tag 3, Parkinson II. **A**ssessment — ansprechbar, orientiert, Hüftschmerz links. **R**ecommendation — Assessment + Arzt informieren falls nötig. SBAR ist die Standard-Struktur für klinische Übergaben — sie macht Übergaben vollständig und klar.",
         fallbezug:
           "Frau M. (82, Pneumonie Tag 3) ist in der Nacht gestürzt. Du bist Nachtdienst im 2. Ausbildungsdrittel, arbeitest mit Frau Keller (examinierte Pflegekraft).",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Die Übergabe",
-        body: "Frau Keller flüstert: _\"Frau M., Zimmer 14. Sie ist gerade gestürzt, links neben dem Bett. Sie ist wach und klagt über Schmerzen in der Hüfte. Ich gehe zu einem anderen Patienten — schau du mal nach ihr.\"_ Du bekommst eine kurze Pflege-Übergabe (SBAR-Struktur): **S** = Sturz vor 7 Minuten. **B** = Pneumonie Tag 3, Parkinson. **A** = wach, orientiert, Schmerzen in der linken Hüfte. **R** = Assessment machen, Arzt rufen wenn nötig. SBAR ist ein Standard — so bleibt die Übergabe klar und vollständig.",
+        // FIX (walkthrough B-02): Setting-Zeile mit \n\n vom Body getrennt.
+        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
+        body: "02:48 Uhr, Flur der Station.\n\nFrau Keller flüstert: \"Frau M., Zimmer 14. Sie ist gerade gestürzt, links neben dem Bett. Sie ist wach und klagt über Schmerzen in der Hüfte. Ich gehe zu einem anderen Patienten — schau du mal nach ihr.\" Du bekommst eine kurze Pflege-Übergabe (SBAR-Struktur): **S** = Sturz vor 7 Minuten. **B** = Pneumonie Tag 3, Parkinson. **A** = wach, orientiert, Schmerzen in der linken Hüfte. **R** = Assessment machen, Arzt rufen wenn nötig. SBAR ist ein Standard — so bleibt die Übergabe klar und vollständig.",
         fallbezug:
           "Frau M. ist 82. Sie ist seit 3 Tagen im Krankenhaus wegen Lungenentzündung. Heute Nacht ist sie gestürzt. Du bist Schülerin im Nachtdienst.",
         glossarBegriffe: [],
       },
     },
 
-    // Step 1.2 — Confidence VOR Betreten
+    // Step 1.2 — Selbsteinschätzung VOR Betreten
+    // FIX (walkthrough B-01): stepType confidence → selfrating, confidenceCards entfernt.
+    // confidence bewertet Aussagen mit isTrue/isFalse — bei subjektiver Selbsteinschätzung
+    // erzeugte das "Falsch!"-Feedback bei ehrlicher Antwort. selfrating nutzt 5-Punkt-Skala
+    // ohne Richtig/Falsch-Logik (StepSelfrating-Renderer).
     {
       stepId: "ce02-frau-m-info-02-vor-betreten",
       phase: 1,
-      stepType: "confidence",
+      stepType: "selfrating",
       bloomLevel: 2,
       kompetenzbereich: "I.1",
       quellen: ["DNQP 2022"],
@@ -73,27 +82,6 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       question: {
         fragetext:
           "Wie sicher fühlst du dich, jetzt in das Zimmer zu gehen und bei Frau M. das Erstgespräch zu führen?",
-        confidenceCards: [
-          {
-            statement:
-              "Sehr unsicher — ich weiß nicht genau, was ich als erstes tun soll",
-            isTrue: false,
-            explanation:
-              "Das ist in Ordnung — genau dafür arbeiten wir die Schritte jetzt gemeinsam durch.",
-          },
-          {
-            statement: "Mittelmäßig — ich habe eine Idee, bin aber nicht sicher",
-            isTrue: false,
-            explanation:
-              "Eine gute Ausgangsposition — du hast Vorwissen, wir vertiefen es gleich.",
-          },
-          {
-            statement: "Sicher — ich weiß, worauf es ankommt",
-            isTrue: true,
-            explanation:
-              "Super — die nächsten Steps helfen dir, dein Vorgehen zu systematisieren.",
-          },
-        ],
       },
     },
 
@@ -232,7 +220,8 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
                 feedback:
                   "Fehlinformation. Du weißt noch nicht, ob etwas passiert ist — die Verletzungsprüfung steht noch aus. Solche Aussagen können rechtlich und ethisch problematisch sein. Frau M. spürt die Leere hinter der Beruhigung.",
                 feedbackB1:
-                  "Das war falsch. Du weißt noch nicht, ob etwas passiert ist. Du hast noch nicht nachgeschaut. Solche Worte sind gefährlich — Frau M. merkt das.",
+                  // FIX (walkthrough B-08): Sandwich-Prinzip — Anerkennung vor Kritik.
+                  "Du hast freundlich reagiert — das ist gut. Aber: Du weißt noch nicht, ob etwas passiert ist. Du hast noch nicht nachgeschaut. Solche Worte beruhigen ohne Wissen — und Frau M. merkt das. Beim nächsten Mal: Erst schauen, dann sprechen.",
               },
             ],
           },

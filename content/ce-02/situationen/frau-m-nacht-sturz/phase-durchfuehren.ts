@@ -10,9 +10,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
   titel: "Maßnahmen durchführen",
   titelB1: "Maßnahmen umsetzen",
   kontext:
-    "Planung ist gemacht. Jetzt setzt du um. Transfer vom Boden, Arzt-Information, Mobilisation mit Orthostase-Check, Gespräch, Hüftprotektor-Entscheidung. Das ist das Herzstück der Situation — mit zwei Branching-Momenten, in denen du wirklich entscheidest.",
+    "03:14 Uhr. Frau Keller hat den Türrahmen kurz mit der Hüfte angeschoben und steht jetzt neben dir. Sie riecht nach Veilchen-Bonbon, ihr Kasak ist an der Schulter leicht gebügelt, die Ärmel hochgekrempelt. Sie wirft einen Blick auf Frau M., einen auf dich, sagt halblaut: 'Ok. Was hast du?' — und du merkst, dass jetzt nicht die Zeit für Selbstzweifel ist. Du gehst durch deinen Plan, Stichpunkt für Stichpunkt. Sie nickt, ergänzt eine Sache, dann: 'Gut. Mach.' Du bist es, die führt. Frau M. liegt noch in derselben Position, aber sie zittert leicht, der Boden ist kalt, ihre Füße in dünnen Wollsocken sind weiß. Du musst sie hochbringen — nicht heben, sondern führen, kinästhetisch, über Seitlage und Kniestand, wie du es im Skills-Lab geübt hast. Aber: Du hast es noch nie nachts mit einer realen 82-Jährigen getan. Dein Herz schlägt höher, du fühlst es bis in die Kehle. Du hockst dich an ihre rechte Seite, sprichst leise: 'Frau M., wir holen Sie jetzt vorsichtig hoch. Erst zur Seite, dann auf die Knie, dann ans Bett. Sie machen mit, ich führe nur. Ja?' Sie nickt. Ihre Augen sind wach. Du spürst die Wärme ihres Oberkörpers durch die dünne Baumwolle, ihre Hand ist leicht. Frau Keller ist links, schützt die Hüfte. Drei, zwei, eins — und es geht. Langsam. Geräuschlos. Sie atmet kurz ein, einmal stöhnt sie leise, du fragst sofort nach den Schmerzen — NRS 5, ok, im Rahmen. Im Bett dann: zudecken, Kopfteil leicht hoch, Rufknopf in die Hand. Aber das ist nur Schritt eins. Vor dir liegt jetzt die zweite Schwelle: SBAR-Anruf an den diensthabenden Arzt. Die Stimme am Telefon hörbar müde. Du hast genau diese Sätze. Drei Minuten später: erste Mobilisation, Orthostase-Check vor dem Aufstehen, Bettrand, Standversuch. Und dann ein Moment, den keine Checkliste vorhersagt: Frau M. greift nach deiner Hand, schaut dich an, fragt: 'Sind Sie böse auf mich, dass ich gestürzt bin?' Du hältst inne. Was sagst du? Später, gegen 04:30, wirst du mit ihr über den Hüftprotektor sprechen — sie weiß noch nicht, dass es so etwas gibt. Du wirst entscheiden, wie du es einbringst. Die nächsten 90 Minuten sind nicht Routine. Sie sind das Herzstück dieser Schicht — fachlich präzise und menschlich aufmerksam. Beides, gleichzeitig.",
   kontextB1:
-    "Plan ist fertig. Jetzt wird es konkret: Frau M. vom Boden ins Bett, Arzt anrufen, Mobilisation üben, mit ihr reden, Hüftprotektor besprechen. Zwei wichtige Entscheidungen.",
+    "03:14 Uhr. Frau Keller ist da. Sie steht neben dir. Sie schaut Frau M. an, dann dich. Sie sagt leise: 'Ok. Was hast du?' Du erklärst deinen Plan. Sie nickt. Sie sagt: 'Gut. Mach.' Du führst jetzt. Frau M. liegt noch auf dem Boden. Sie zittert ein bisschen. Der Boden ist kalt. Ihre Füße sind weiß. Du musst sie hochbringen. Nicht heben. Führen. Über die Seite, auf die Knie, ins Bett. Das nennt man Kinästhetik. Du hast es geübt. Aber heute ist es echt. Dein Herz schlägt schnell. Du hockst dich neben Frau M. Du sagst leise: 'Frau M., wir gehen jetzt vorsichtig hoch. Sie machen mit. Ich führe. Ja?' Sie nickt. Frau Keller ist auf der anderen Seite. Sie schützt die Hüfte. Drei, zwei, eins. Es geht. Langsam. Frau M. stöhnt einmal kurz. Du fragst nach den Schmerzen. 5 von 10. Ok. Im Bett: zudecken, Kopf hoch, Rufknopf in ihre Hand. Aber das ist erst Schritt eins. Jetzt rufst du den Arzt an. Du benutzt SBAR. Die Stimme am Telefon ist müde. Du hast die Sätze im Kopf. Danach: erste Mobilisation. Du prüfst, ob ihr Kreislauf stabil ist (Orthostase). Sie setzt sich an den Bettrand. Sie steht kurz auf. Und dann: Frau M. nimmt deine Hand. Sie schaut dich an. Sie fragt: 'Sind Sie böse auf mich?' Du hältst inne. Was sagst du? Später um 04:30 redest du mit ihr über den Hüftprotektor. Sie kennt das Wort nicht. Wie bringst du es ein? Die nächsten 90 Minuten sind keine Routine. Du musst fachlich richtig sein und gleichzeitig menschlich da sein. Beides — gleichzeitig.",
   kernSteps: [
     // Step 4.1 — Sorting: Transfer vom Boden
     {
@@ -109,12 +109,14 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "HAUPT-BRANCHING: Mobilisation zur Toilette?",
-        body: "Frau M. ist zurück im Bett. Schmerz NRS 4/10. Sie wendet sich zu dir und sagt:\n\n> _\"Ich muss wirklich dringend zur Toilette. Ich halte das nicht mehr.\"_\n\nEs ist 03:30 Uhr. Was tust du? Hier gibt es drei realistische Optionen — deine Wahl prägt die nächsten Schritte.",
+        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
+        body: "Frau M. ist zurück im Bett. Schmerz NRS 4/10. Sie wendet sich zu dir und sagt:\n\n> \"Ich muss wirklich dringend zur Toilette. Ich halte das nicht mehr.\"\n\nEs ist 03:30 Uhr. Was tust du? Hier gibt es drei realistische Optionen — deine Wahl prägt die nächsten Schritte.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "WICHTIGE ENTSCHEIDUNG: Zur Toilette?",
-        body: "Frau M. ist im Bett. Schmerz: 4 von 10. Sie sagt:\n\n> _\"Ich muss wirklich zur Toilette. Ich kann nicht mehr warten.\"_\n\nEs ist 03:30 Uhr. Was tust du? Drei Möglichkeiten. Welche wählst du?",
+        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
+        body: "Frau M. ist im Bett. Schmerz: 4 von 10. Sie sagt:\n\n> \"Ich muss wirklich zur Toilette. Ich kann nicht mehr warten.\"\n\nEs ist 03:30 Uhr. Was tust du? Drei Möglichkeiten. Welche wählst du?",
         glossarBegriffe: [],
       },
       question: {
@@ -162,12 +164,14 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Gespräch am Bettrand",
-        body: "Frau M. sitzt am Bettrand, Füße auf dem Boden. Du hast ihr 3 Minuten Zeit gegeben (Orthostase-Prävention). Frau Keller steht bereit mit dem Toilettenstuhl. Frau M. sagt leise:\n\n> _\"Geben Sie mir einen Moment. Meine Beine fühlen sich an, als gehörten sie mir nicht ganz. Wenn ich kurz warte, wird es besser — das kenne ich so vom Parkinson, das ist normal.\"_",
+        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
+        body: "Frau M. sitzt am Bettrand, Füße auf dem Boden. Du hast ihr 3 Minuten Zeit gegeben (Orthostase-Prävention). Frau Keller steht bereit mit dem Toilettenstuhl. Frau M. sagt leise:\n\n> \"Geben Sie mir einen Moment. Meine Beine fühlen sich an, als gehörten sie mir nicht ganz. Wenn ich kurz warte, wird es besser — das kenne ich so vom Parkinson, das ist normal.\"",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Reden am Bettrand",
-        body: "Frau M. sitzt auf der Bettkante. Füße am Boden. Du hast ihr 3 Minuten gegeben (damit der Blutdruck nicht fällt). Frau Keller steht bereit mit dem Toilettenstuhl. Frau M. sagt leise:\n\n> _\"Geben Sie mir einen Moment. Meine Beine fühlen sich an, als wären sie nicht meine. Wenn ich warte, wird es besser — das kenne ich vom Parkinson, das ist normal.\"_",
+        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
+        body: "Frau M. sitzt auf der Bettkante. Füße am Boden. Du hast ihr 3 Minuten gegeben (damit der Blutdruck nicht fällt). Frau Keller steht bereit mit dem Toilettenstuhl. Frau M. sagt leise:\n\n> \"Geben Sie mir einen Moment. Meine Beine fühlen sich an, als wären sie nicht meine. Wenn ich warte, wird es besser — das kenne ich vom Parkinson, das ist normal.\"",
         glossarBegriffe: [],
       },
       question: {
@@ -258,7 +262,8 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
                 feedback:
                   "Problematisch. 'Ich ziehe Sie hoch' ist a) kinästhetisch falsch (Pflegekraft-Rücken!) und b) entmachtet Frau M. Sie wird zum Objekt. Ein 2-Personen-Transfer mit geführter Bewegung (nicht Zug) ist sicherer und würdevoller.",
                 feedbackB1:
-                  "Schlecht. 'Ich ziehe Sie hoch' — das ist falsch. Erstens: Dein Rücken tut danach weh. Zweitens: Frau M. ist dann nur noch ein Gegenstand, kein Mensch. Besser: 2 Personen, Bewegung führen — nicht ziehen.",
+                  // FIX (walkthrough B-08): Sandwich-Prinzip — Loben vor Korrigieren.
+                  "Du willst Frau M. helfen — das ist richtig. Aber 'Ich ziehe Sie hoch' passt hier nicht. Erstens: Dein Rücken leidet. Zweitens: Frau M. wird zum Objekt, verliert die Kontrolle. Besser: 2 Personen, Bewegung führen — nicht ziehen. Du bist nah dran!",
               },
             ],
           },

@@ -10,9 +10,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
   titel: "Pflege planen",
   titelB1: "Plan machen",
   kontext:
-    "Du hast das Risiko-Profil von Frau M. vor Augen: multiple intrinsische Faktoren (Alter, Parkinson, Osteoporose, Katarakt), Sedierung durch Zolpidem, Nykturie durch HCT, fremde Umgebung. Jetzt: Welche Maßnahmen planst du für die verbleibenden Liegetage — und in welcher Reihenfolge?",
+    "Es ist 03:11 Uhr. Frau M. liegt zugedeckt auf dem Boden, eine Wolldecke unter dem Kopf, die du aus dem Schrank geholt hast. Sie atmet jetzt ruhiger, die Schmerzen liegen stabil bei NRS 4. Du hast ihr gesagt, dass du gleich Hilfe holst, dass nichts gebrochen ist, soweit du es jetzt sehen kannst, dass sie nicht allein ist. Sie hat genickt und kurz deine Hand gedrückt, ihre Finger waren kühl. Jetzt der Moment, der in keiner Lehrbuch-Phase auftaucht und doch der wichtigste ist: Du gehst zwei Schritte zurück bis zur Fensterbank. Draußen tiefe Nacht, eine Straßenlaterne wirft ein gelbes Quadrat ans Fenster, sonst nichts. Du atmest dreimal bewusst aus, so wie es Frau Schnell in der Schule beigebracht hat. Dein Kopf war in den letzten zwölf Minuten im Sammeln — Sehen, Hören, Befragen, Prüfen. Jetzt muss er sortieren. Vor deinem inneren Auge das Risiko-Profil von Frau M. wie ein gespanntes Netz: 82 Jahre, Parkinson Stadium II, Osteoporose, Katarakt rechts. Zolpidem seit 48 Stunden — PRISCUS 2.0 rot. HCT morgens, Nykturie zwei- bis dreimal pro Nacht. Pneumonie Tag drei, leichter Fieberverlauf. Fremdes Bett, fremde Toilette, fremder Boden. Und du kennst jetzt auch die unsichtbaren Faktoren: Frau M. wollte nicht klingeln, weil sie nachts 'niemanden stören' wollte. Sie hat das ihrer Tochter so versprochen, sich nicht 'aufzudrängen'. Die Frage ist nicht mehr nur was — sondern wann. Was muss in den nächsten zehn Minuten passieren, bevor sie wieder einschläft? Was diese Nacht? Was bis zur Entlassung? Was heißt das für die Umgebung, was für die Medikation, was für sie als Person? Du holst aus deiner Brusttasche den Stift, drehst ihn zwischen den Fingern. Du hörst hinter dir Frau M. leise atmen, gleichmäßig, ein vorsichtiges Geräusch. Auf dem Flur klappert ein Wagen, jemand öffnet eine Tür. Frau Keller kommt gleich vorbei, das hat sie versprochen. Du hast vielleicht drei Minuten, in denen alles strukturiert sein muss: kurzfristig, mittelfristig, langfristig. Sofort, diese Nacht, bis Entlassung. Eine gute Planung jetzt verhindert den nächsten Sturz — den heute Nacht und den in zwei Wochen zuhause.",
   kontextB1:
-    "Du kennst jetzt die Risiken von Frau M. Viele Sachen zusammen: Alter, Parkinson, Osteoporose, Augen, Schlafmittel, fremdes Krankenhaus. Jetzt: Was planst du für die nächsten Tage?",
+    "Es ist 03:11 Uhr. Frau M. liegt zugedeckt auf dem Boden. Eine Decke ist unter ihrem Kopf. Sie atmet ruhiger. Die Schmerzen sind stabil bei 4 von 10. Du hast ihr gesagt: 'Ich hole Hilfe. Sie sind nicht allein.' Sie hat genickt und kurz deine Hand gedrückt. Jetzt gehst du zwei Schritte zurück zum Fenster. Draußen ist es dunkel. Eine Lampe leuchtet auf der Straße. Du atmest dreimal tief aus. Dein Kopf war voll mit Sehen und Fragen. Jetzt musst du sortieren. Du denkst an die Risiken von Frau M.: 82 Jahre. Parkinson. Osteoporose. Katarakt. Zolpidem seit 2 Tagen — gefährlich. HCT macht sie nachts pinkeln. Lungenentzündung. Fremdes Krankenhaus. Und: Frau M. wollte nicht klingeln. Sie wollte 'nicht stören'. Sie hat das ihrer Tochter versprochen. Die Frage ist nicht nur: Was machst du? Sondern: Wann machst du was? Was muss SOFORT passieren — bevor sie wieder schläft? Was diese Nacht? Was bis zur Entlassung? Was ist mit der Umgebung? Was mit den Medikamenten? Was mit Frau M. selbst? Du nimmst deinen Stift in die Hand. Du hörst Frau M. ruhig atmen. Im Flur klappert ein Wagen. Frau Keller kommt gleich. Du hast vielleicht drei Minuten Zeit. Eine gute Planung jetzt verhindert den nächsten Sturz — heute Nacht und auch zuhause in zwei Wochen.",
   kernSteps: [
     // Step 3.1 — Matrix (2x3)
     {
@@ -112,12 +112,14 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Die Bettgitter-Entscheidung",
-        body: "Die Nachtschwester, die an der Tür auftaucht, blickt auf Frau M. und sagt leise:\n\n_\"Machen wir doch ein Bettgitter hoch, dann ist sie sicher. Bei der Frau weiß man nie.\"_\n\nDie Bettgitter sind hochfahrbar. Beide Seiten sind verfügbar. Frau M. ist orientiert, aber geschwächt. Du musst jetzt entscheiden. Es ist 03:15 Uhr.",
+        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
+        body: "Die Nachtschwester, die an der Tür auftaucht, blickt auf Frau M. und sagt leise:\n\n\"Machen wir doch ein Bettgitter hoch, dann ist sie sicher. Bei der Frau weiß man nie.\"\n\nDie Bettgitter sind hochfahrbar. Beide Seiten sind verfügbar. Frau M. ist orientiert, aber geschwächt. Du musst jetzt entscheiden. Es ist 03:15 Uhr.",
         glossarBegriffe: ["Fixierung", "§ 1906a BGB"],
       },
       contentB1: {
         title: "Bettgitter hochziehen?",
-        body: "Die Nachtschwester sagt leise:\n\n_\"Wir machen ein Bettgitter hoch, dann ist sie sicher.\"_\n\nBeide Bettgitter sind möglich. Frau M. ist wach und orientiert. Es ist 03:15 Uhr. Wie reagierst du?",
+        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
+        body: "Die Nachtschwester sagt leise:\n\n\"Wir machen ein Bettgitter hoch, dann ist sie sicher.\"\n\nBeide Bettgitter sind möglich. Frau M. ist wach und orientiert. Es ist 03:15 Uhr. Wie reagierst du?",
         glossarBegriffe: ["Fixierung", "§ 1906a BGB"],
       },
       question: {
@@ -167,12 +169,14 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       displayFormat: "scenario",
       contentC1: {
         title: "Post-Fall-Angst adressieren",
-        body: "Frau M. sitzt jetzt im Bett, die Hände wieder gefaltet. Sie blickt dich an und sagt leise:\n\n> _\"Ich habe Angst, ehrlich gesagt. Nicht vor Ihnen, bitte verstehen Sie mich nicht falsch. Ich habe Angst, wieder aufzustehen. Wenn ich nochmal falle — was ist dann mit meiner Wohnung?\"_\n\nDas ist der Beginn eines **Post-Fall-Syndroms**: Sturzangst → Bewegungsvermeidung → Muskelabbau (1-2 %/Tag!) → Gleichgewichts-Verlust → erhöhtes Sturzrisiko. Ein Teufelskreis. Deine Aufgabe jetzt: **Angst validieren**, nicht kleinreden. Gleichzeitig Perspektive geben: Die Ursache ist identifizierbar und veränderbar (Zolpidem). Das ist nicht 'das Alter' — das sind konkrete Faktoren, die du benennen kannst. Merke: Aktivität ist die Therapie. Aber sie braucht Zeit, Erfolge und Sicherheit.",
+        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
+        body: "Frau M. sitzt jetzt im Bett, die Hände wieder gefaltet. Sie blickt dich an und sagt leise:\n\n> \"Ich habe Angst, ehrlich gesagt. Nicht vor Ihnen, bitte verstehen Sie mich nicht falsch. Ich habe Angst, wieder aufzustehen. Wenn ich nochmal falle — was ist dann mit meiner Wohnung?\"\n\nDas ist der Beginn eines **Post-Fall-Syndroms**: Sturzangst → Bewegungsvermeidung → Muskelabbau (1-2 %/Tag!) → Gleichgewichts-Verlust → erhöhtes Sturzrisiko. Ein Teufelskreis. Deine Aufgabe jetzt: **Angst validieren**, nicht kleinreden. Gleichzeitig Perspektive geben: Die Ursache ist identifizierbar und veränderbar (Zolpidem). Das ist nicht 'das Alter' — das sind konkrete Faktoren, die du benennen kannst. Merke: Aktivität ist die Therapie. Aber sie braucht Zeit, Erfolge und Sicherheit.",
         glossarBegriffe: ["Post-Fall-Syndrom"],
       },
       contentB1: {
         title: "Frau M.s Angst ernst nehmen",
-        body: "Frau M. sitzt im Bett. Sie faltet die Hände. Sie sagt leise:\n\n> _\"Ich habe Angst. Nicht vor Ihnen. Ich habe Angst, wieder aufzustehen. Wenn ich noch einmal falle — was ist dann mit meiner Wohnung?\"_\n\nDas ist **Post-Fall-Angst** — der Anfang eines Teufelskreises: Angst → weniger Bewegung → schwächere Muskeln → schlechteres Gleichgewicht → neues Sturzrisiko. Deine Aufgabe: **Angst ernst nehmen**. Nicht sagen: 'Das wird schon.' Und: Perspektive geben. Sage: 'Der Grund ist kein Alter — es war die Tablette. Die kann man ändern.' Merke: Bewegung ist die Therapie. Aber: langsam, mit Erfolgen, sicher.",
+        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
+        body: "Frau M. sitzt im Bett. Sie faltet die Hände. Sie sagt leise:\n\n> \"Ich habe Angst. Nicht vor Ihnen. Ich habe Angst, wieder aufzustehen. Wenn ich noch einmal falle — was ist dann mit meiner Wohnung?\"\n\nDas ist **Post-Fall-Angst** — der Anfang eines Teufelskreises: Angst → weniger Bewegung → schwächere Muskeln → schlechteres Gleichgewicht → neues Sturzrisiko. Deine Aufgabe: **Angst ernst nehmen**. Nicht sagen: 'Das wird schon.' Und: Perspektive geben. Sage: 'Der Grund ist kein Alter — es war die Tablette. Die kann man ändern.' Merke: Bewegung ist die Therapie. Aber: langsam, mit Erfolgen, sicher.",
         glossarBegriffe: ["Post-Fall-Syndrom"],
       },
     },

@@ -10,9 +10,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
   titel: "Beobachten & Risiken erkennen",
   titelB1: "Schauen und Risiken finden",
   kontext:
-    "Du hast dir ein Bild gemacht. Frau M. ist bei Bewusstsein, klar orientiert, klagt über Schmerzen in der linken Hüfte, keine sichtbare Deformität. Jetzt geht es um die Risiko-Analyse: Warum ist Frau M. gestürzt? Was liegt vor? Was kannst du noch nicht sehen, aber beobachten?",
+    "Du bist im Zimmer. Die Tür ist hinter dir leise zugefallen, der schmale Spalt Flurlicht ist verschwunden, jetzt brennt nur die Bett-Leselampe. Sie wirft einen warmen Kreis auf den Linoleumboden — und mitten in diesem Kreis liegt Frau M., auf der linken Seite, das Nachthemd hochgerutscht bis zum Knie, eine Hand an der Hüfte, die andere stützt sich am Bettrahmen. Sie atmet flach. Ihre dünnen weißen Haare sind verstrubbelt, eine Strähne klebt an der Wange, die Brille liegt einen Meter weiter unter dem Stuhl, ein Bügel verbogen. Es riecht nach Eukalyptus-Nasenspray, nach Schweiß und einer kalten Spur Urin auf dem Boden — sie hat es nicht mehr geschafft. Frau M. schaut dich an. Ihr Blick ist klar, aber feucht, der Mund leicht geöffnet. Sie sagt mit leiser, brüchiger Stimme: 'Ich wollte nur kurz...', und es klingt entschuldigend, fast wie bei einem Kind, das etwas Verbotenes getan hat. Du hockst dich neben sie, knietief, das Linoleum kühl unter den Knien, dein Puls noch immer höher als normal. Du hast die ersten Sekunden hinter dir, das erste Assessment im Kopf abgehakt: Bewusstsein klar, Atmung vorhanden, kein Blut, keine offensichtliche Deformität, kein verkürztes Bein, keine Außenrotation. NRS 4 von 10 in der linken Hüfte, sagt sie, wenn sie sich bewegt. Stimme ruhig. Orientiert zu Person, Ort, Zeit, Situation. Aber: Warum liegt sie hier? Du blickst dich um. Das Bett steht hoch. Die Bettgitter sind unten. Das Nachtschränkchen ist weiter weg, als ein 82-jähriger Arm reichen kann, der Klingelknopf hängt am Bettkopf — vier Hebelbewegungen entfernt. Auf der Decke liegt eine angefangene Kreuzworträtsel-Zeitschrift, der Bleistift dazwischen. Auf dem Tisch: ein Glas Wasser, halb leer. Die Toilettentür ist nur angelehnt, das Licht darin aus, der Boden bis dorthin acht oder neun Schritte. Im Hinterkopf läuft jetzt deine zweite Spur: Anamnese, Risikofaktoren, Medikation, Krankheitslehre. Pneumonie, Parkinson, 82, fremdes Krankenhaus, fünf Wirkstoffe auf der Liste. Was hat sie nachts auf den Boden gebracht? Eine Sache wird es nicht sein. Stürze haben fast nie eine Ursache, sondern immer ein Bündel. Du musst das Sichtbare und das Unsichtbare zusammenbringen. Auf dem Bettzettel klebt ein gelber Aufkleber: 'Sturzrisiko'. Jemand hat ihn geschrieben — und trotzdem ist es passiert. Das ist nicht Schuld, das ist Realität: Risiko ist kein Sturz, Risiko ist Wahrscheinlichkeit. Jetzt: ruhiges, methodisches Hinschauen. Die Antwort liegt in den Faktoren, die dir die Augen, die Akte und die Medikamentenliste zeigen.",
   kontextB1:
-    "Du weißt jetzt: Frau M. ist wach und orientiert. Sie hat Schmerzen in der linken Hüfte. Keine sichtbare Verletzung. Jetzt fragen wir: Warum ist sie gestürzt? Was sind ihre Risiken?",
+    "Du bist im Zimmer. Die Tür ist zu. Nur die kleine Lampe am Bett brennt. Frau M. liegt auf dem Boden, auf der linken Seite. Ihre Brille liegt unter dem Stuhl. Sie atmet flach. Es riecht nach Spray, Schweiß und ein wenig Urin. Frau M. schaut dich an. Sie sagt leise: 'Ich wollte nur kurz...' Du hockst dich neben sie. Du machst das erste Assessment. Sie ist wach. Sie atmet. Kein Blut. Kein verdrehtes Bein. Schmerzen: 4 von 10 in der linken Hüfte. Sie weiß, wer sie ist und wo sie ist. Gut. Aber: Warum liegt sie hier? Du schaust dich um. Das Bett steht hoch. Die Gitter sind unten. Der Klingel-Knopf ist weit weg. Auf dem Tisch: ein halbes Glas Wasser. Die Toilette ist offen, das Licht ist aus. Auf dem Bett-Zettel klebt ein gelber Aufkleber: 'Sturzrisiko'. Jemand wusste es. Trotzdem ist es passiert. Jetzt denkst du nach. Frau M. ist 82. Sie hat eine Lungenentzündung. Sie hat Parkinson. Sie ist nicht zuhause. Sie nimmt Medikamente. Was hat sie gestürzt? Du musst alles zusammenbringen — was du siehst, was in der Akte steht und was sie nimmt. Die Antwort liegt in den Risiken.",
   kernSteps: [
     // Step 2.1 — Highlight: Medikamente sichten (BRILLIANT-Frage)
     {
@@ -29,12 +29,14 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Medikamentenliste sichten",
         body: "Du öffnest die Patientenakte und findest die aktuelle Medikamentenliste von Frau M. Fünf Wirkstoffe. **Markiere alle Wirkstoffe, die dir im Zusammenhang mit dem nächtlichen Sturz verdächtig vorkommen.** Das ist eine Brilliant-Frage — bevor wir erklären, was ein PIM (potenziell inadäquate Medikation) ist, schau dir die Liste an und nutze dein Vorwissen.",
-        glossarBegriffe: ["Polypharmazie"],
+        // FIX (walkthrough B-11): Nykturie ergänzt — B1-Schüler kennt Begriff nicht.
+        glossarBegriffe: ["Polypharmazie", "Nykturie"],
       },
       contentB1: {
         title: "Medikamente anschauen",
         body: "Du schaust in die Patientenakte. Frau M. nimmt 5 Medikamente. **Markiere die, die mit dem Sturz zu tun haben könnten.** Das ist eine offene Frage — erst markieren, dann erklären wir es.",
-        glossarBegriffe: ["Polypharmazie"],
+        // FIX (walkthrough B-11): Nykturie ergänzt.
+        glossarBegriffe: ["Polypharmazie", "Nykturie"],
       },
       question: {
         fragetext:
@@ -119,13 +121,30 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       displayFormat: "scenario",
       contentC1: {
         title: "Warum Zolpidem das Hauptproblem ist",
-        body: "Zolpidem gehört zu den Z-Substanzen — Schlafmittel aus der Gruppe der sogenannten **Nicht-Benzodiazepin-Hypnotika**. In der Jugend/im mittleren Alter wird es relativ schnell abgebaut (Halbwertszeit 2-3 h). Bei älteren Menschen ist das anders: Leber- und Nierenfunktion nehmen ab, die **Halbwertszeit verlängert sich auf bis zu 6-8 h**. Das heißt: Um 22 Uhr eingenommen, wirkt Zolpidem bei Frau M. noch nachts um 3 Uhr und morgens um 7 Uhr — sedierend, muskelrelaxierend, kognitiv dämpfend. Die PRISCUS-2.0-Liste (Holt/Schmiedl/Thürmann 2023) listet Zolpidem als **potenziell inadäquate Medikation (PIM)** im Alter. Das Sturzrisiko ist 2- bis 3-fach erhöht. Bei Frau M. kam dazu: Zolpidem (sediert) + HCT (Nykturie treibt nachts zur Toilette) + Parkinson (Bradykinese) = ein klassisches **Sturz-Trio**.",
-        glossarBegriffe: ["Polypharmazie"],
+        // FIX (walkthrough B-02): Setting-Zeile mit \n\n vom Body getrennt, sonst
+        // Duplikat durch scenario-Fallback (step-text.tsx:404).
+        body: "Hintergrund zur Medikation von Frau M.\n\nZolpidem gehört zu den Z-Substanzen — Schlafmittel aus der Gruppe der sogenannten **Nicht-Benzodiazepin-Hypnotika**. In der Jugend/im mittleren Alter wird es relativ schnell abgebaut (Halbwertszeit 2-3 h). Bei älteren Menschen ist das anders: Leber- und Nierenfunktion nehmen ab, die **Halbwertszeit verlängert sich auf bis zu 6-8 h**. Das heißt: Um 22 Uhr eingenommen, wirkt Zolpidem bei Frau M. noch nachts um 3 Uhr und morgens um 7 Uhr — sedierend, muskelrelaxierend, kognitiv dämpfend. Die PRISCUS-2.0-Liste (Holt/Schmiedl/Thürmann 2023) listet Zolpidem als **potenziell inadäquate Medikation (PIM)** im Alter. Das Sturzrisiko ist 2- bis 3-fach erhöht. Bei Frau M. kam dazu: Zolpidem (sediert) + HCT (Nykturie treibt nachts zur Toilette) + Parkinson (Bradykinese) = ein klassisches **Sturz-Trio**.",
+        // FIX (walkthrough B-12): PRISCUS, Z-Substanzen, PIM ergänzt (hochspezifische Fachbegriffe).
+        // FIX (walkthrough B-11): Nykturie ergänzt.
+        glossarBegriffe: [
+          "Polypharmazie",
+          "PRISCUS-Liste",
+          "Z-Substanzen",
+          "PIM (potenziell inadäquate Medikation)",
+          "Nykturie",
+        ],
       },
       contentB1: {
         title: "Warum Zolpidem das Problem ist",
-        body: "Zolpidem ist ein Schlafmittel. Bei jungen Menschen wirkt es nur 2-3 Stunden. Bei alten Menschen wirkt es viel länger — bis zu 6-8 Stunden. Der Körper baut es langsamer ab. Frau M. hat es um 22 Uhr genommen. Um 3 Uhr nachts wirkt es noch: Sie ist **müde, unsicher, hat schwache Muskeln**. Die PRISCUS-Liste sagt: Zolpidem ist im Alter gefährlich. Das Sturzrisiko ist 2-3 Mal höher. Bei Frau M. kamen mehrere Dinge zusammen: Zolpidem (müde) + HCT (nachts zur Toilette) + Parkinson (langsame Bewegung) = typisches **Sturz-Trio**.",
-        glossarBegriffe: ["Polypharmazie"],
+        // FIX (walkthrough B-02): Setting-Zeile mit \n\n vom Body getrennt.
+        body: "Hintergrund zu den Medikamenten von Frau M.\n\nZolpidem ist ein Schlafmittel. Bei jungen Menschen wirkt es nur 2-3 Stunden. Bei alten Menschen wirkt es viel länger — bis zu 6-8 Stunden. Der Körper baut es langsamer ab. Frau M. hat es um 22 Uhr genommen. Um 3 Uhr nachts wirkt es noch: Sie ist **müde, unsicher, hat schwache Muskeln**. Die PRISCUS-Liste sagt: Zolpidem ist im Alter gefährlich. Das Sturzrisiko ist 2-3 Mal höher. Bei Frau M. kamen mehrere Dinge zusammen: Zolpidem (müde) + HCT (nachts zur Toilette) + Parkinson (langsame Bewegung) = typisches **Sturz-Trio**.",
+        // FIX (walkthrough B-12 + B-11): PRISCUS, Z-Substanzen, Nykturie.
+        glossarBegriffe: [
+          "Polypharmazie",
+          "PRISCUS-Liste",
+          "Z-Substanzen",
+          "Nykturie",
+        ],
       },
     },
 
@@ -239,7 +258,8 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
                 feedback:
                   "Ausweichend. Du hast gerade wichtige Information bekommen — und wischst sie weg. Frau M. lernt daraus: Nicht berichten, es ist egal. Das ist genau das Gegenteil dessen, was du erreichen willst.",
                 feedbackB1:
-                  "Schlecht. Frau M. hat dir etwas Wichtiges gesagt. Du wischst es weg. Jetzt denkt sie: 'Es interessiert niemanden.' Das willst du nicht.",
+                  // FIX (walkthrough B-08): Sandwich-Prinzip — Ermutigen statt "Schlecht".
+                  "Du willst Frau M. beruhigen — die Absicht ist gut. Aber: Sie hat dir gerade etwas Wichtiges gesagt, und du wischst es weg. Jetzt denkt sie: 'Es interessiert niemanden.' Beim nächsten Mal: Information aufnehmen, Bedeutung benennen, Plan zeigen.",
               },
             ],
           },
@@ -262,17 +282,21 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Risikofaktoren von Frau M. kategorisieren",
         body: "Du hast viele Informationen über Frau M. Teile die Risikofaktoren in zwei Kategorien: **intrinsisch** (vom Patienten selbst) vs. **extrinsisch** (von der Umgebung).",
+        // FIX (walkthrough B-11): Nykturie ergänzt — wird in categoryItems erwähnt.
         glossarBegriffe: [
           "Intrinsische Risikofaktoren",
           "Extrinsische Risikofaktoren",
+          "Nykturie",
         ],
       },
       contentB1: {
         title: "Risiken von Frau M. sortieren",
         body: "Du kennst viele Risiken von Frau M. Sortiere sie: **intrinsisch** (vom Patienten) oder **extrinsisch** (von der Umgebung)?",
+        // FIX (walkthrough B-11): Nykturie ergänzt.
         glossarBegriffe: [
           "Intrinsische Risikofaktoren",
           "Extrinsische Risikofaktoren",
+          "Nykturie",
         ],
       },
       question: {
@@ -375,12 +399,14 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       displayFormat: "quote",
       contentC1: {
         title: "Frau M. über ihre Situation",
-        body: "Während du die Vitalzeichen misst, sagt Frau M. leise:\n\n> _\"Zu Hause komme ich zurecht. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst wirklich selbstständig, das müssen Sie mir glauben.\"_\n\nWas Frau M. sagt, ist didaktisch zentral. Ein Mensch verliert Orientierung in neuer Umgebung — auch ohne Demenz. Selbstständigkeit bei Aufnahme ≠ Selbstständigkeit in fremder Umgebung unter Pneumonie-Behandlung + neuer Sedierung. Deine Aufgabe als Pflege: Das anerkennen, nicht relativieren ('Jetzt sind Sie halt im Krankenhaus'), sondern zuhören — und dokumentieren, dass die Umgebung ein relevanter Risikofaktor ist.",
+        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
+        body: "Während du die Vitalzeichen misst, sagt Frau M. leise:\n\n> \"Zu Hause komme ich zurecht. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst wirklich selbstständig, das müssen Sie mir glauben.\"\n\nWas Frau M. sagt, ist didaktisch zentral. Ein Mensch verliert Orientierung in neuer Umgebung — auch ohne Demenz. Selbstständigkeit bei Aufnahme ≠ Selbstständigkeit in fremder Umgebung unter Pneumonie-Behandlung + neuer Sedierung. Deine Aufgabe als Pflege: Das anerkennen, nicht relativieren ('Jetzt sind Sie halt im Krankenhaus'), sondern zuhören — und dokumentieren, dass die Umgebung ein relevanter Risikofaktor ist.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Frau M. erzählt",
-        body: "Während du Blutdruck misst, sagt Frau M. leise:\n\n> _\"Zu Hause komme ich klar. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst selbstständig — bitte glauben Sie mir.\"_\n\nDas ist wichtig. Jemand kann zuhause alles gut machen — und trotzdem in der Klinik verloren sein. Auch ohne Demenz! Die neue Umgebung, die Pneumonie, das neue Schlafmittel — das sind zusammen viele Änderungen. Deine Aufgabe: Ihr zuhören. Nicht sagen: 'Sie sind halt jetzt hier.' Sondern: Die Umgebung mit-dokumentieren als Sturz-Risiko.",
+        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
+        body: "Während du Blutdruck misst, sagt Frau M. leise:\n\n> \"Zu Hause komme ich klar. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst selbstständig — bitte glauben Sie mir.\"\n\nDas ist wichtig. Jemand kann zuhause alles gut machen — und trotzdem in der Klinik verloren sein. Auch ohne Demenz! Die neue Umgebung, die Pneumonie, das neue Schlafmittel — das sind zusammen viele Änderungen. Deine Aufgabe: Ihr zuhören. Nicht sagen: 'Sie sind halt jetzt hier.' Sondern: Die Umgebung mit-dokumentieren als Sturz-Risiko.",
         glossarBegriffe: [],
       },
     },

@@ -1,0 +1,460 @@
+// CE-02 Situation Herr Bauer — Demenz und Sturz — Phase 5: Evaluieren
+// Steps: 6 (4 Kern + 2 Optional) · Bloom: B4-B5 (mit B6-Anteil in Reflexion)
+// Quelle: content/ce-02/situationen/ls-bauer-demenz-sturz/phase-evaluieren.md
+// Pipeline v9 — 2026-04-23
+
+import type { SituationsPhase } from "../../../_types";
+
+export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
+  phaseId: "ls-bauer-evaluieren",
+  phase: "evaluieren",
+  titel: "Evaluieren",
+  titelB1: "Prüfen was funktioniert hat",
+  kontext:
+    "Szenensprung: Es ist 15:30 Uhr, Nachmittag. Du bist jetzt im Spätdienst-Beginn. Frau Meier gibt dir kurz Rückmeldung: 'Herr Bauer hat heute Mittag 400 ml getrunken — besser als gestern. Kein erneuter Sturz. Aber er war mittags wieder sehr unruhig und hat versucht, die Einheit zu verlassen.' Dann: Tochter Ingrid Bauer steht an der Rezeption. Sie hat von dem nächtlichen Sturz erfahren — durch einen Anruf der Nachtstation. Sie ist aufgewühlt, macht sich Vorwürfe. Ihr erstes Wort zu dir: 'Hätte das nicht verhindert werden können? Warum war er allein im Flur?' Das ist der schwierigste Moment des Tages. Nicht medizinisch — emotional.",
+  kontextB1:
+    "Es ist 15:30 Uhr. Spätdienst. Frau Meier sagt dir: 'Herr Bauer hat 400 ml getrunken — besser als gestern. Er ist nicht gestürzt. Aber mittags war er wieder sehr unruhig.' Dann kommt Tochter Ingrid. Sie hat von dem Sturz heute Nacht erfahren. Sie ist aufgewühlt. Sie sagt zu dir: 'Hätte das nicht verhindert werden können? Warum war er allein im Flur?' Das ist der schwerste Moment des Tages — nicht medizinisch, sondern emotional.",
+  kernSteps: [
+    // Step 5.1 — Categorize: Pflegeziele erreicht/offen/anzupassen
+    {
+      stepId: "ce02-bauer-eval-01-ziele-pruefung",
+      phase: 5,
+      stepType: "categorize",
+      bloomLevel: 4,
+      kompetenzbereich: "I.1",
+      quellen: ["Fiechter/Meier (1981): Pflegeprozess-Modell"],
+      track: "basis",
+      modus: "sortierstation",
+      lernziel: "ce02-bauer-eval-pflegeziele",
+      tag: "pflege",
+      contentC1: {
+        title: "Pflegeziele — was wurde erreicht?",
+        body: "Welche der heute geplanten Pflegeziele wurden erreicht, welche sind noch offen, welche müssen angepasst werden? Sortiere die Ergebniskarten.",
+        glossarBegriffe: ["Evaluation", "Pflegeziel", "Anpassung"],
+      },
+      contentB1: {
+        title: "Was hat heute funktioniert?",
+        body: "Sortiere die Karten: Was wurde heute erreicht? Was nicht? Was muss morgen geändert werden?",
+        glossarBegriffe: ["Evaluation", "Pflegeziel"],
+      },
+      question: {
+        fragetext:
+          "Ordne jede Karte einer Kategorie zu: 'Erreicht', 'Noch offen', 'Muss angepasst werden'.",
+        categories: [
+          { name: "Heute erreicht" },
+          { name: "Noch offen" },
+          { name: "Muss angepasst werden" },
+        ],
+        categoryItems: [
+          {
+            text: "Körperpflege durchgeführt (komplikationsreduziert, zweiter Anlauf)",
+            correctCategory: 0,
+          },
+          {
+            text: "Kniebewegung 2× passiv durchgeführt",
+            correctCategory: 0,
+          },
+          {
+            text: "Mundschleimhaut befeuchtet (Wattestäbchen)",
+            correctCategory: 0,
+          },
+          {
+            text: "Trinkmenge 400 ml nachmittags + ca. 600 ml Frühstück/Mittag = ~1000 ml",
+            correctCategory: 0,
+          },
+          {
+            text: "Trinkziel 1300 ml täglich noch nicht erreicht",
+            correctCategory: 1,
+          },
+          {
+            text: "Nachtlicht + Niedrigbett — noch nicht umgesetzt, Übergabe an Nachtdienst nötig",
+            correctCategory: 1,
+          },
+          {
+            text: "Mobilisation an Bettrand — zurückgestellt, morgen erneuter Versuch",
+            correctCategory: 2,
+          },
+          {
+            text: "Sensormatte am Boden — muss noch bestellt/eingeholt werden",
+            correctCategory: 1,
+          },
+        ],
+      },
+    },
+
+    // Step 5.2 — Dialog: Angehörigen-Gespräch mit Ingrid
+    {
+      stepId: "ce02-bauer-eval-02-angehoerigen-gespraech",
+      phase: 5,
+      stepType: "dialog",
+      bloomLevel: 5,
+      kompetenzbereich: "V.1",
+      quellen: [
+        "Kitwood T. (1997)",
+        "DNQP Beziehungsgestaltung Demenz 2018",
+      ],
+      track: "basis",
+      modus: "story",
+      lernziel: "ce02-bauer-eval-angehoerigenkommunikation",
+      tag: "pflege",
+      contentC1: {
+        title: "Gespräch mit Tochter Ingrid",
+        body: "Ingrid Bauer (55, Grundschullehrerin) steht vor dir. Aufgewühlt, Schuldgefühle im Gesicht. Ihr erster Satz: 'Hätte das nicht verhindert werden können? Warum war er allein im Flur?' — Du führst das Gespräch.",
+        glossarBegriffe: [
+          "Empathie",
+          "Angehörigenkommunikation",
+          "Schuldgefühle",
+          "Transparenz",
+        ],
+      },
+      contentB1: {
+        title: "Gespräch mit der Tochter",
+        body: "Ingrid Bauer kommt zur Station. Sie ist aufgeregt und macht sich Vorwürfe. Sie fragt: 'Hätte das nicht verhindert werden können? Warum war er allein im Flur?' — Was sagst du?",
+        glossarBegriffe: ["Empathie", "Schuldgefühle", "Ehrlichkeit"],
+      },
+      question: {
+        fragetext: "Führe das Gespräch mit Ingrid in 5 Schritten.",
+        patientName: "Ingrid Bauer (Tochter)",
+        dialogPhases: [
+          {
+            context:
+              "Ingrid Bauer schaut dich an, Augen feucht. Sie sagt: 'Hätte das nicht verhindert werden können? Warum war er allein im Flur?'",
+            contextB1:
+              "Ingrid schaut dich an. Ihre Augen sind feucht. Sie sagt: 'Hätte das nicht verhindert werden können?'",
+            speaker: "Ingrid",
+            options: [
+              {
+                text: "\"Frau Bauer, ich kann verstehen, wie aufgewühlt Sie gerade sind. Ich bin froh, dass Sie hier sind — ich möchte Ihnen erklären, was in der Nacht passiert ist.\"",
+                textB1:
+                  "\"Frau Bauer, ich verstehe, dass Sie aufgewühlt sind. Ich erkläre Ihnen was passiert ist.\"",
+                patientResponse:
+                  "Ingrid atmet aus. \"Ja. Bitte.\" Ihre Hände entspannen sich leicht.",
+                patientResponseB1:
+                  "Ingrid atmet aus. \"Ja, bitte.\"",
+                score: 3,
+                feedback:
+                  "Richtig. Empathie zuerst — keine Rechtfertigung, kein Ablenkungsmanöver. Du nimmst ihr Gefühl ernst und kündigst an, dass du erklärst. Das ist der wichtigste erste Schritt.",
+                feedbackB1:
+                  "Sehr gut. Du nimmst ihre Aufregung ernst. Du rechtfertigst dich nicht. Du sagst: Ich erkläre es dir. Das beruhigt.",
+              },
+              {
+                text: "\"Das ist eine sehr seltene Situation — so etwas passiert normalerweise nicht bei uns.\"",
+                textB1:
+                  "\"Das ist ein seltener Ausnahmefall. Das passiert sonst nicht.\"",
+                patientResponse:
+                  "Ingrid schaut skeptisch. \"Aber es ist passiert.\"",
+                patientResponseB1:
+                  "Ingrid sagt: \"Aber es ist passiert.\"",
+                score: 0,
+                feedback:
+                  "Defensiv und wenig glaubwürdig. Ingrid weiß, dass Stürze bei Demenz häufig vorkommen — das ist kein Ausnahmefall. Defensive Reaktionen verringern Vertrauen. Ehrlichkeit und Empathie sind wirksamer.",
+                feedbackB1:
+                  "Falsch. Du versuchst dich zu schützen. Aber Ingrid merkt: Das stimmt nicht. Stürze kommen bei Demenz oft vor. Ehrlichkeit ist besser.",
+              },
+              {
+                text: "\"Wir tun alles was wir können, aber Stürze können wir leider nicht immer verhindern.\"",
+                textB1:
+                  "\"Wir tun alles — aber Stürze kann man nicht immer verhindern.\"",
+                patientResponse:
+                  "Ingrid hört zu — aber ihr Gesicht bleibt angespannt.",
+                patientResponseB1:
+                  "Ingrid hört zu. Aber sie ist noch angespannt.",
+                score: 1,
+                feedback:
+                  "Nicht falsch — aber noch nicht genug. Das ist eine sachliche Antwort, aber sie geht nicht auf Ingrids emotionalen Zustand ein. Zuerst Empathie, dann Information.",
+                feedbackB1:
+                  "Nicht falsch — aber Ingrid braucht zuerst das Gefühl, dass du sie verstehst. Dann erst die sachliche Erklärung.",
+              },
+            ],
+          },
+          {
+            context:
+              "Du hast Ingrid zugehört und Empathie gezeigt. Jetzt erkläre ihr ruhig was in der Nacht passiert ist.",
+            contextB1:
+              "Jetzt erkläre Ingrid ruhig was in der Nacht passiert ist.",
+            speaker: "Du",
+            options: [
+              {
+                text: "\"Ihr Vater ist in der Nacht aufgestanden — wahrscheinlich wegen des Harndrangs oder Desorientierung. Die Nachtpflegerin hat ihn schnell gefunden, sitzend, ansprechbar, ohne Verletzungen. Sie hat ihn zurück ins Bett gebracht und ein Protokoll begonnen.\"",
+                textB1:
+                  "\"Ihr Vater ist nachts aufgestanden — wahrscheinlich Harndrang oder Verwirrtheit. Die Nachtschwester hat ihn schnell gefunden. Er saß auf dem Boden. Keine Verletzungen. Sie hat ihn zurück ins Bett gebracht.\"",
+                patientResponse:
+                  "Ingrid nickt langsam. \"Das klingt nach Papa. Er steht nachts immer auf.\"",
+                patientResponseB1:
+                  "Ingrid nickt. \"Das klingt nach Papa.\"",
+                score: 3,
+                feedback:
+                  "Vollständig, ehrlich, ohne Schuldzuweisung. Du beschreibst das Ereignis klar, nennst was die Nachtpflege getan hat und bleibst sachlich.",
+                feedbackB1:
+                  "Sehr gut. Klar, ehrlich, kurz. Du sagst was passiert ist — nicht mehr und nicht weniger.",
+              },
+              {
+                text: "\"Ich kann dazu nicht viel sagen — das war die Nachtschicht, ich war da nicht dabei.\"",
+                textB1:
+                  "\"Ich war nicht dabei — das war die Nachtschicht.\"",
+                patientResponse:
+                  "Ingrid schaut enttäuscht. \"Aber jemand muss mir doch etwas sagen können.\"",
+                patientResponseB1:
+                  "Ingrid schaut enttäuscht.",
+                score: 0,
+                feedback:
+                  "Nicht ok. Du kennst den Sachverhalt aus der Übergabe — das ist genug um es zu erklären. 'Ich war nicht dabei' lässt Ingrid im Stich. Die Pflegedokumentation gehört allen im Team.",
+                feedbackB1:
+                  "Falsch. Du weißt es aus der Übergabe. Du musst nicht dabei gewesen sein um es zu erklären. Ingrid braucht eine Antwort von dir.",
+              },
+            ],
+          },
+          {
+            context:
+              "Ingrid fragt: 'Was wird jetzt konkret geändert, damit das nicht wieder passiert?'",
+            contextB1:
+              "Ingrid fragt: 'Was ändert sich jetzt, damit er nicht wieder stürzt?'",
+            speaker: "Ingrid",
+            options: [
+              {
+                text: "\"Wir stellen heute Nacht das Bett auf die niedrigste Position, bringen ein Nachtlicht an und bieten Ihrem Vater vor dem Schlafengehen den Toilettengang an. Außerdem wurde die Medikation dem Arzt gemeldet — Mirtazapin erhöht möglicherweise das Sturzrisiko.\"",
+                textB1:
+                  "\"Wir machen heute Nacht: Bett niedrig stellen, Nachtlicht anmachen, Toilette vor dem Schlafen anbieten. Und der Arzt schaut sich das Schlafmittel an.\"",
+                patientResponse:
+                  "Ingrid atmet hörbar aus. \"Das klingt gut. Danke, dass Sie mir das erklären.\"",
+                patientResponseB1:
+                  "Ingrid atmet aus. \"Danke. Das klingt gut.\"",
+                score: 3,
+                feedback:
+                  "Konkret, vollständig, handlungsorientiert. Du nennst spezifische Maßnahmen und zeigst dass das Team bereits handelt. Ingrid sieht: Es passiert etwas.",
+                feedbackB1:
+                  "Sehr gut. Drei konkrete Dinge. Ingrid sieht: Ihr Vater ist sicherer heute Nacht.",
+              },
+              {
+                text: "\"Wir werden alles tun, um zukünftige Stürze zu verhindern — da können Sie sich auf uns verlassen.\"",
+                textB1:
+                  "\"Wir tun alles, damit es nicht wieder passiert.\"",
+                patientResponse:
+                  "Ingrid nickt — aber wirkt nicht beruhigt.",
+                patientResponseB1:
+                  "Ingrid nickt, aber ist noch unsicher.",
+                score: 1,
+                feedback:
+                  "Zu vage. \"Wir tun alles\" ist eine Floskel ohne Inhalt. Ingrid braucht konkrete Maßnahmen, keine Versprechen. Nenne was genau heute Nacht passiert.",
+                feedbackB1:
+                  "Zu vage. \"Alles tun\" — was genau? Ingrid braucht konkrete Informationen, keine allgemeinen Versprechen.",
+              },
+            ],
+          },
+          {
+            context:
+              "Plötzlich kommt Herr Bauer in einem Rollstuhl in die Flurnähe — eine Pflegerin hat ihn zum Nachmittagsspaziergang gefahren. Er sieht Ingrid und sagt:",
+            contextB1:
+              "Plötzlich kommt Herrn Bauer im Rollstuhl auf den Flur. Er sieht Ingrid und sagt:",
+            speaker: "Herr Bauer",
+            options: [
+              {
+                text: "Du lässt den Moment wirken — schweigst kurz und beobachtest.",
+                textB1:
+                  "Du wartest kurz und schaust was passiert.",
+                patientResponse:
+                  "Herr Bauer streckt die Hand aus und sagt: \"Mein Kind...\" Ingrid tritt auf ihn zu, nimmt seine Hand. Ihre Augen füllen sich mit Tränen.",
+                patientResponseB1:
+                  "Herr Bauer sagt: \"Mein Kind...\" Ingrid geht zu ihm hin. Sie nimmt seine Hand.",
+                score: 3,
+                feedback:
+                  "Richtig. Manchmal ist Schweigen die beste Pflege-Handlung. Du lässt Vater und Tochter diesen Moment haben — das ist Beziehungsgestaltung nach Kitwood.",
+                feedbackB1:
+                  "Richtig. Du machst Platz für diesen Moment. Vater und Tochter brauchen gerade keine Pflege-Worte.",
+              },
+              {
+                text: "Du sagst: \"Herr Bauer, das ist Ihre Tochter Ingrid — erkennen Sie sie?\"",
+                textB1:
+                  "Du sagst: \"Das ist Ihre Tochter Ingrid — kennen Sie sie?\"",
+                patientResponse:
+                  "Herr Bauer schaut dich an, dann Ingrid — der Moment ist gebrochen.",
+                patientResponseB1:
+                  "Herr Bauer schaut dich an. Der Moment ist vorbei.",
+                score: 0,
+                feedback:
+                  "Du unterbrichst einen lichten Moment. Herr Bauer erkennt Ingrid — das ist ein kostbares Ereignis. Solche Momente brauchen keine pflegerische Moderation.",
+                feedbackB1:
+                  "Du unterbrichst. Herrn Bauer erkennt gerade seine Tochter — das ist selten und wertvoll. Solche Momente brauchen Stille.",
+              },
+            ],
+          },
+          {
+            context:
+              "Nach dem Moment zwischen Herr Bauer und Ingrid: Wie schließt du das Gespräch ab?",
+            contextB1:
+              "Wie beendest du das Gespräch mit Ingrid?",
+            speaker: "Du",
+            options: [
+              {
+                text: "\"Frau Bauer, ich freue mich, dass Sie heute da sind. Ihr Vater erkennt Sie — das ist etwas Besonderes. Wenn Sie morgen anrufen möchten um zu hören wie die Nacht war, rufen Sie gerne an. Und wenn Sie Fragen haben — ich bin ansprechbar.\"",
+                textB1:
+                  "\"Frau Bauer, schön dass Sie da waren. Ihr Vater hat Sie erkannt — das ist schön. Wenn Sie morgen anrufen wollen, rufen Sie an. Fragen Sie mich — ich helfe Ihnen.\"",
+                patientResponse:
+                  "Ingrid lächelt das erste Mal. \"Danke. Das hat mir sehr geholfen.\"",
+                patientResponseB1:
+                  "Ingrid lächelt. \"Danke.\"",
+                score: 3,
+                feedback:
+                  "Abschluss mit Kontinuität: Du bestätigst den positiven Moment, bietest konkrete Kontaktmöglichkeit, endest mit Offenheit. Ingrid fühlt sich gehört und begleitet.",
+                feedbackB1:
+                  "Sehr gut. Du endest positiv. Du gibst ihr einen Plan (anrufen). Sie geht beruhigt nach Hause.",
+              },
+              {
+                text: "\"Okay, ich muss jetzt weiter — wir haben noch viel zu tun. Falls Sie Fragen haben, wenden Sie sich an die Stationsleitung.\"",
+                textB1:
+                  "\"Ich muss weiter. Bei Fragen: Stationsleitung.\"",
+                patientResponse:
+                  "Ingrid nickt, wirkt etwas verloren.",
+                patientResponseB1:
+                  "Ingrid nickt. Sie schaut ein bisschen verloren.",
+                score: 0,
+                feedback:
+                  "Abbruch ohne Abschluss. Der Gesprächsmoment verdient einen würdigen Abschluss — nicht eine Weiterleitung. Ingrid verlässt die Station ohne das Gefühl, begleitet worden zu sein.",
+                feedbackB1:
+                  "Du beendest das Gespräch zu abrupt. Ingrid braucht einen richtigen Abschluss — kein 'Ich muss weiter'.",
+              },
+            ],
+          },
+        ],
+      },
+    },
+
+    // Step 5.3 — Text: Schuldgefühle von Angehörigen
+    {
+      stepId: "ce02-bauer-eval-03-schuld-entlastung",
+      phase: 5,
+      stepType: "text",
+      bloomLevel: 4,
+      kompetenzbereich: "V.1",
+      quellen: [
+        "Kitwood T. (1997)",
+        "DNQP Beziehungsgestaltung Demenz 2018",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-eval-angehoerige-verstaendnis",
+      tag: "pflege",
+      displayFormat: "scenario",
+      contentC1: {
+        title: "Angehörige von Demenz-Patienten — was wir wissen",
+        body: "Gesprächssituation mit Ingrid Bauer, Nachmittag.\n\n3 Dinge die du über Angehörige von Menschen mit Demenz im Pflegeheim wissen solltest:\n\n1. Schuldgefühle beim Heimübergang sind normal und sehr häufig — das Gespräch mit Ingrid ist pflegerische Aufgabe, nicht nur Sozialarbeit. Das DNQP (2018) nennt Angehörige ausdrücklich als Teil der Pflegebeziehung.\n\n2. Angehörige sind Experten für den Menschen — Ingrid kennt ihren Vater besser als das gesamte Pflegeteam. Sie weiß welches Lied ihn beruhigt, welche Geste er liebt. Diese Information ist Ressource.\n\n3. Angehörige brauchen Entlastung, keine Bewertung — Ingrid macht sich Vorwürfe ('Hätte ich ihn nicht ins Heim geben sollen?'). Die Pflege beantwortet keine Fragen die sie sich selbst stellen muss. Aber die Pflege kann bestätigen: 'Sie haben eine sehr schwere Entscheidung getroffen — und das aus Liebe.' (Kitwood T. 1997: Demenz reconsidered).",
+        glossarBegriffe: ["Angehörigenberatung", "Schuldgefühle", "Person-Centered Care"],
+      },
+      contentB1: {
+        title: "Angehörige von Demenz-Patienten",
+        body: "Gespräch mit Ingrid Bauer.\n\n3 wichtige Dinge:\n\n1. Schuldgefühle sind normal — fast alle Angehörigen haben Schuldgefühle wenn jemand ins Heim kommt. Das Gespräch mit ihr ist deine Aufgabe als Pflegeperson.\n\n2. Angehörige kennen den Menschen — Ingrid kennt ihren Vater besser als du. Was beruhigt ihn? Was mag er? Sie weiß es.\n\n3. Sie brauchen Entlastung — keine Vorwürfe. Ingrid fragt sich: 'Habe ich richtig entschieden?' Das kannst du nicht beantworten. Aber du kannst sagen: 'Das war eine schwere Entscheidung — aus Liebe.'",
+        glossarBegriffe: ["Angehörige", "Schuldgefühle", "Demenz"],
+      },
+    },
+
+    // Step 5.4 — Reflection: Tag-Reflexion
+    {
+      stepId: "ce02-bauer-eval-04-reflexion-tag",
+      phase: 5,
+      stepType: "reflection",
+      bloomLevel: 5,
+      kompetenzbereich: "II.1",
+      quellen: ["Kitwood T. (1997)"],
+      track: "basis",
+      modus: "schreibtisch",
+      lernziel: "ce02-bauer-eval-reflexion",
+      tag: "pflege",
+      contentC1: {
+        title: "Reflexion: Was hat dich heute überrascht?",
+        body: "Nach einem langen Tag mit Herrn Bauer und Ingrid: Was hat dich am meisten überrascht — beim Umgang mit Herrn Bauer ODER beim Gespräch mit seiner Tochter? Was würdest du beim nächsten Mal anders machen?",
+        glossarBegriffe: ["Reflexion", "Professionalisierung"],
+      },
+      contentB1: {
+        title: "Was hast du heute gelernt?",
+        body: "Was hat dich heute überrascht — bei Herrn Bauer ODER beim Gespräch mit Ingrid? Was machst du beim nächsten Mal anders?",
+        glossarBegriffe: ["Reflexion", "Lernen"],
+      },
+      question: {
+        fragetext:
+          "Was hat dich heute am meisten überrascht? Was würdest du beim nächsten Mal anders machen?",
+        reflection: {
+          prompt:
+            "Schreibe frei. Es gibt kein Richtig oder Falsch. Deine ehrliche Reflexion ist der Lerngewinn.",
+          placeholder:
+            "Was mich heute überrascht hat, war... Beim nächsten Mal würde ich...",
+          systemPrompt:
+            "Der Schüler reflektiert einen Tag in der Demenzpflege (Herr Bauer + Angehörigengespräch mit Ingrid). Gib Sandwich-Feedback: 1) Was der Schüler gut erkannt hat (Demenz = Angst, nicht Böswilligkeit; Angehörige brauchen Entlastung; Dokumentation schützt das Team), 2) Ergänzung falls Aspekte fehlen (Spaced Repetition, Teamkommunikation, Biographiearbeit), 3) Ermutigung für die weitere Ausbildung.",
+        },
+      },
+    },
+  ],
+
+  optionaleSteps: [
+    // Step 5.5 — VIPS-Modell
+    {
+      stepId: "ce02-bauer-eval-05-vips-modell",
+      phase: 5,
+      stepType: "text",
+      bloomLevel: 4,
+      kompetenzbereich: "II.1",
+      quellen: ["Kitwood T. (1997): Dementia Reconsidered"],
+      track: "vertiefung",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-eval-vips",
+      tag: "krankheitslehre",
+      displayFormat: "crossref",
+      contentC1: {
+        title: "VIPS-Modell der personenzentrierten Pflege",
+        body: "Das VIPS-Modell nach Kitwood (1997) beschreibt personenzentrierte Pflege bei Demenz in 4 Dimensionen:\n\nV — Value (Würde): Jeder Mensch hat einen Wert — unabhängig von Kognition oder Kooperation. Herr Bauers Würde gilt auch wenn er schlägt.\n\nI — Individual (Einzigartigkeit): Herr Bauer ist Schreiner, war verheiratet, mag Freddy Quinn. Diese Biographie ist der Schlüssel zur Pflege.\n\nP — Perspective (Innenperspektive): Wie erlebt Herr Bauer die Pflegesituation? Er hat Angst — das ist seine Realität.\n\nS — Social (Soziale Einbettung): Ingrid ist Teil des Pflegesystems — nicht Besucher, sondern Partnerin.\n\nQuelle: Kitwood T. (1997): Dementia Reconsidered. Open University Press.",
+        glossarBegriffe: ["VIPS-Modell", "Personenzentrierte Pflege", "Würde"],
+      },
+      contentB1: {
+        title: "VIPS — Pflege für Menschen mit Demenz",
+        body: "Das VIPS-Modell erklärt, wie man Menschen mit Demenz gut pflegt. 4 Buchstaben:\n\nV = Würde: Herr Bauer hat Würde — auch wenn er schlägt oder laut ist.\nI = Einzigartigkeit: Er war Schreiner. Er mag Freddy Quinn. Das ist wichtig für die Pflege.\nP = Innenperspektive: Wie erlebt ER die Situation? Er hat Angst.\nS = Soziales: Ingrid ist Partner der Pflege — nicht nur Besucherin.\n\nQuelle: Kitwood T. (1997).",
+        glossarBegriffe: ["VIPS", "Würde", "Demenz"],
+      },
+    },
+
+    // Step 5.6 — Calculation: Flüssigkeitsbilanz
+    {
+      stepId: "ce02-bauer-eval-06-exsikkose-bilanz",
+      phase: 5,
+      stepType: "calculation",
+      bloomLevel: 4,
+      kompetenzbereich: "I.1",
+      quellen: ["ICS Leitlinien", "Pflegeprozess-Standard Flüssigkeitsbilanzierung"],
+      track: "vertiefung",
+      modus: "challenge",
+      lernziel: "ce02-bauer-eval-fluessigkeitsbilanz",
+      tag: "krankheitslehre",
+      contentC1: {
+        title: "Flüssigkeitsbilanz Herr Bauer",
+        body: "Berechne die Flüssigkeitsbilanz von Herrn Bauer für heute. Einfuhr: 200 ml Frühstück + 400 ml Mittag + 400 ml Nachmittag = 1000 ml gesamt. Ausfuhr: Urin geschätzt ~750 ml, Perspiratio ~500 ml bei 23°C Raumtemperatur = 1250 ml. Bilanz = Einfuhr minus Ausfuhr. Was bedeutet das für morgen?",
+        glossarBegriffe: [
+          "Flüssigkeitsbilanz",
+          "Perspiratio",
+          "Einfuhr",
+          "Ausfuhr",
+          "Exsikkose",
+        ],
+      },
+      contentB1: {
+        title: "Wie viel Flüssigkeit hat Herr Bauer heute?",
+        body: "Berechne: Herr Bauer hat heute getrunken: 200 ml + 400 ml + 400 ml = 1000 ml. Sein Körper hat verloren: ca. 750 ml Urin + ca. 500 ml durch die Haut (Schwitzen) = 1250 ml. Bilanz = Was rein kommt minus was raus geht. Was bedeutet das?",
+        glossarBegriffe: ["Flüssigkeitsbilanz", "Einfuhr", "Ausfuhr"],
+      },
+      question: {
+        fragetext:
+          "Berechne die Flüssigkeitsbilanz: Einfuhr (1000 ml) minus Ausfuhr (1250 ml). Ergebnis in ml.",
+        calculation: {
+          instruction:
+            "Einfuhr: 1000 ml. Ausfuhr: 1250 ml. Berechne die Bilanz (Vorzeichen beachten).",
+          formula: "Bilanz = Einfuhr − Ausfuhr",
+          correctValue: -250,
+          unit: "ml",
+          tolerance: 0,
+          explanation:
+            "Bilanz = 1000 − 1250 = −250 ml. Negative Bilanz bedeutet: Herr Bauer verliert mehr als er aufnimmt. Morgen muss die Trinkmenge erhöht werden — Ziel 1300 ml.",
+          explanationB1:
+            "1000 ml rein, 1250 ml raus = −250 ml. Minus = er verliert mehr als er bekommt. Morgen: mehr trinken. Ziel: 1300 ml.",
+        },
+      },
+    },
+  ],
+  geschaetzteDauer: 20,
+};
