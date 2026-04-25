@@ -1,0 +1,187 @@
+# Glossar: Essen & Trinken anreichen
+
+## Metadaten
+- themaId: `essen-anreichen`
+- ceId: ce-02
+- begriffeAnzahl: 20
+- erstellt: 2026-04-23
+
+---
+
+## G1: Aspiration
+
+- **Begriff:** Aspiration
+- **Definition (C1):** Eindringen von Nahrung, Flüssigkeit oder Speichel in die Atemwege (Trachea/Bronchien) statt in die Speiseröhre. Akute Gefahr: Erstickung bei großer Menge. Chronische Folge: Aspirationspneumonie durch kleinere, wiederholte Aspirationen.
+- **Definition (B1):** Wenn Essen, Trinken oder Speichel in die Luftröhre kommt statt in den Magen. Gefahr: Ersticken oder Lungenentzündung.
+- **Quelle:** DGG/DGN S1-Leitlinie Neurogene Dysphagie (2020)
+
+---
+
+## G2: Dysphagie
+
+- **Begriff:** Dysphagie
+- **Definition (C1):** Schluckstörung. Eingeschränkte oder gefährdete Fähigkeit, Nahrung/Flüssigkeit vom Mund in den Magen zu befördern. Ursachen: neurologisch (Schlaganfall, Parkinson, Demenz, MS), strukturell (Kopf-Hals-Tumor, OP), psychogen.
+- **Definition (B1):** Schluckstörung. Der Patient kann nicht richtig schlucken. Häufig nach Schlaganfall, bei Parkinson, Demenz oder Tumor im Mund-Hals-Bereich.
+- **Quelle:** DGG/DGN S1-LL (2020)
+
+---
+
+## G3: Aspirationspneumonie
+
+- **Begriff:** Aspirationspneumonie
+- **Definition (C1):** Lungenentzündung ausgelöst durch Einatmen von Mageninhalt, Nahrungspartikeln oder Speichel mit Keimen. Typisch: rechter Unterlappen betroffen (anatomisch). Hauptrisiko bei Dysphagie und Bewusstseinseinschränkung.
+- **Definition (B1):** Lungenentzündung, weil Essen, Getränk oder Speichel in die Lunge gekommen ist. Oft bei Patienten mit Schluckstörung.
+- **Quelle:** AWMF S3-LL Nosokomiale Pneumonie (2017)
+
+---
+
+## G4: Epiglottis
+
+- **Begriff:** Epiglottis (Kehldeckel)
+- **Definition (C1):** Knorpelig-elastischer Deckel am Eingang des Kehlkopfes. Beim Schluckakt reflektorisch nach unten geklappt — verschließt die Trachea, Nahrung läuft Richtung Ösophagus. Schutzmechanismus gegen Aspiration.
+- **Definition (B1):** **Kehldeckel** — ein kleiner Deckel oben am Hals. Er schließt die Luftröhre, wenn wir schlucken. So kommt das Essen in die Speiseröhre, nicht in die Lunge.
+- **Quelle:** I Care Anatomie, Thieme
+
+---
+
+## G5: IDDSI
+
+- **Begriff:** IDDSI — International Dysphagia Diet Standardisation Initiative
+- **Definition (C1):** Internationaler Standard (2019) zur Klassifizierung von Dysphagie-gerechter Kost. Flüssigkeiten: Level 0-4. Nahrung: Level 3-7. Flow-Test mit 10-ml-Spritze als objektive Prüfmethode. Ersetzt ältere Begriffe wie Nektar/Honig/Pudding.
+- **Definition (B1):** Internationaler Standard für Dysphagie-Kost seit 2019. Getränke: Level 0 bis 4. Essen: Level 3 bis 7. Test: mit 10-ml-Spritze (Flow-Test). Ersetzt alte Namen wie 'Nektar' oder 'Honig'.
+- **Quelle:** IDDSI (2019 International Dysphagia Diet Standardisation Initiative)
+
+---
+
+## G6: GUSS-Test
+
+- **Begriff:** GUSS — Gugging Swallowing Screen
+- **Definition (C1):** Validiertes Bedside-Screening für Dysphagie bei Schlaganfall. Vier aufsteigende Stufen: Speichel (trocken) → Pudding (halbfest) → Wasser (flüssig) → Brot (fest). Scoring 0-20: <10 schwer, 10-14 mittel, 15-19 leicht, 20 normal. Entwickelt von Trapl et al., Wien 2007.
+- **Definition (B1):** Ein Test, mit dem du prüfen kannst, ob jemand sicher schlucken kann. Vier Stufen: **1. Speichel, 2. Pudding, 3. Wasser, 4. Brot**. Punkte 0-20 zeigen, wie schlimm die Schluckstörung ist. Entwickelt 2007 in Wien.
+- **Quelle:** Trapl M. et al., GUSS-Test, Stroke 2007;38:2948-2952
+
+---
+
+## G7: Flow-Test
+
+- **Begriff:** IDDSI Flow-Test
+- **Definition (C1):** Standardisierter Test zur Messung der Flüssigkeits-Konsistenz für IDDSI-Einstufung. 10-ml-Spritze (Becton Dickinson, Standard) wird gefüllt. 10 Sekunden frei laufen lassen. Menge im Spritzenkolben bestimmt das Level: 1-4 ml = Level 1, 4-8 ml = Level 2, >8 ml = Level 3.
+- **Definition (B1):** Test mit einer **10-ml-Spritze**. Du füllst sie. Lässt los. 10 Sekunden laufen. Was drin bleibt, zeigt das Level. Mehr drin = dicker.
+- **Quelle:** IDDSI (2019)
+
+---
+
+## G8: Reklination
+
+- **Begriff:** Reklination (Kopfüberstreckung)
+- **Definition (C1):** Kopf nach hinten beugen. **Kontraindiziert** beim Anreichen von Dysphagie-Patienten — öffnet die Trachea, erhöht Aspirationsrisiko. Daher Nasenschlitzbecher, damit der Kopf in leichter Vornüberneigung bleiben kann.
+- **Definition (B1):** Kopf nach hinten beugen. **Gefährlich** beim Essen/Trinken bei Schluckstörung — dann ist der Weg zur Lunge offen. Deshalb gibt es Nasenschlitzbecher.
+- **Quelle:** DGG/DGN (2020)
+
+---
+
+## G9: Nasenschlitzbecher
+
+- **Begriff:** Nasenschlitzbecher
+- **Definition (C1):** Trinkbecher mit halbkreisförmigem Ausschnitt am oberen Rand. Der Ausschnitt schafft Platz für die Nase, sodass der Becher auch am Ende der Füllmenge gekippt werden kann, ohne dass der Kopf nach hinten (in Reklination) muss. Für Patienten mit Dysphagie, Schlaganfall, Parkinson.
+- **Definition (B1):** Trinkbecher mit **Ausschnitt für die Nase**. So kannst du den Becher kippen — der **Kopf bleibt vorne**. Gut für Patienten mit Schluckstörung.
+- **Quelle:** DGG/DGN (2020)
+
+---
+
+## G10: Ausgussbecher (Schnabelbecher)
+
+- **Begriff:** Ausgussbecher / Schnabelbecher
+- **Definition (C1):** Becher mit Deckel und kleinem Ausguss. Gibt kontrolliert kleine Flüssigkeitsmengen pro Schluck ab. Einsatz bei Koordinationsproblemen, leichter Dysphagie, Halbseitenlähmung. **Vorsicht**: Schnabel verdeckt die Temperatur — Verbrühungsgefahr.
+- **Definition (B1):** Becher mit **Deckel und kleinem Schnabel**. Gibt nur **kleine Schlucke** pro Mal. **Vorsicht**: Du siehst die Temperatur nicht gut — Gefahr von Verbrennung im Mund.
+- **Quelle:** Hilfsmittelverzeichnis GKV
+
+---
+
+## G11: Andickungspulver
+
+- **Begriff:** Andickungspulver
+- **Definition (C1):** Pulver aus modifizierter Stärke (Thick&Easy) oder Xanthan (Resource ThickenUp Clear, Nutilis Clear) zur Flüssigkeits-Andickung bei Dysphagie. Dosierung nach Herstellerangabe in g pro 100 ml. Quellzeit 2 Min beachten. Nicht mit Kohlensäure kompatibel.
+- **Definition (B1):** Pulver, mit dem du Getränke **dicker** machst. Für Patienten mit Schluckstörung. Du gibst Pulver ins Getränk, rührst, **wartest 2 Minuten**, rührst nochmal. **Nicht** in Sprudel-Getränke geben.
+- **Quelle:** Hersteller-Fachinfos (Nestlé, Fresenius, Nutricia)
+
+---
+
+## G12: Leaking
+
+- **Begriff:** Leaking (Speichelfluss aus dem Mund)
+- **Definition (C1):** Unkontrollierter Austritt von Speichel oder Speisen aus dem Mund durch unvollständigen Lippenverschluss. Hinweis auf Dysphagie (z.B. Fazialisparese nach Schlaganfall) oder fortgeschrittene neurologische Erkrankung. Führt zu Hautreizung am Kinn, Dehydration, sozialer Isolation.
+- **Definition (B1):** Wenn **Speichel oder Essen** aus dem Mund **läuft**. Der Mund geht nicht richtig zu. Zeichen für Schluckstörung — oft nach Schlaganfall oder bei anderen Erkrankungen im Gehirn.
+- **Quelle:** DGG/DGN (2020)
+
+---
+
+## G13: Stille Aspiration
+
+- **Begriff:** Stille Aspiration
+- **Definition (C1):** Aspiration ohne Hustenreflex — der Schutzreflex ist abgeschwächt oder fehlt. Bis zu 40% der Aspirationen bei Schlaganfall verlaufen still. Hinweise: wiederkehrende Pneumonien, subtile Atemänderungen, gurgelnde Stimme nach Schluck, unerklärtes Fieber. Besonders gefährlich, weil unbemerkt.
+- **Definition (B1):** Aspiration **ohne zu husten**. Der Patient verschluckt sich, aber man sieht es nicht. Sehr **gefährlich**, weil es niemand merkt. Zeichen sind: oft Lungenentzündung, leise Atmung anders, nasse Stimme, Fieber ohne Grund.
+- **Quelle:** DGG/DGN (2020)
+
+---
+
+## G14: Bolus
+
+- **Begriff:** Bolus (Speisebrei)
+- **Definition (C1):** Zusammenhängende Nahrungs- oder Flüssigkeitsportion, die durch Kauen und Speichelbeimengung entsteht und durch den Schluckakt transportiert wird. Die Bolus-Kontrolle ist Kernvoraussetzung für sicheres Schlucken.
+- **Definition (B1):** **Speisebrei** — das, was du schluckst, nachdem du gekaut hast. Vermischt mit Speichel zu einer Portion.
+- **Quelle:** I Care Anatomie, Thieme
+
+---
+
+## G15: Agnosie
+
+- **Begriff:** Agnosie
+- **Definition (C1):** Störung des Erkennens bei intakten Sinnesorganen. Bei Demenz/Schlaganfall: Patient sieht das Essen, erkennt es aber nicht als Essen. Konsequenz: Sitzt vor dem Teller, fängt nicht an. Hilfe: vertraute Speisen, vormachen ('Ich esse auch'), Geruchsaktivierung.
+- **Definition (B1):** **Nicht erkennen**, was man sieht. Die Augen funktionieren, aber das Gehirn versteht nicht, dass es Essen ist. Häufig bei Demenz. Hilfe: **zeigen, vormachen, vertraute Gerichte**.
+- **Quelle:** DGN S3-LL Demenz
+
+---
+
+## G16: Apraxie
+
+- **Begriff:** Apraxie
+- **Definition (C1):** Unfähigkeit, zielgerichtete motorische Handlungen auszuführen trotz intakter Muskelkraft und Koordination. Bei Demenz (GDS 5-6): Besteck kann nicht mehr benutzt werden, obwohl die Motorik funktioniert. Lösung: Fingerfood.
+- **Definition (B1):** **Nicht mehr wissen, wie etwas geht**. Die Muskeln funktionieren, aber der Patient weiß nicht mehr, wie man Besteck benutzt. Bei Demenz. Lösung: **Fingerfood** — Essen mit den Fingern.
+- **Quelle:** DGN S3-LL Demenz
+
+---
+
+## G17: MNA
+
+- **Begriff:** MNA — Mini Nutritional Assessment
+- **Definition (C1):** Standardisiertes Screening-Instrument zur Erfassung des Ernährungszustands bei älteren Patienten (>65 Jahre). Kurzform (MNA-SF): 6 Items, Score 0-14. Vollform: 18 Items, Score 0-30. Detektiert frühzeitig Mangelernährung und Risiko dafür.
+- **Definition (B1):** Test zur Prüfung des Ernährungszustands bei älteren Menschen. **6 Fragen** (Kurzform) oder **18 Fragen** (lang). Zeigt, ob jemand genug isst oder **mangelernährt** ist.
+- **Quelle:** Nestlé Nutrition Institute (Original: Guigoz & Vellas, 1996)
+
+---
+
+## G18: Fingerfood
+
+- **Begriff:** Fingerfood
+- **Definition (C1):** Mundgerecht vorbereitete Speisen, die ohne Besteck mit den Fingern gegessen werden können. Bei Demenz mit Apraxie wichtig. Beispiele: Brötchen-Viertel, Käsewürfel, Gurkensticks, Apfelspalten, hartgekochte Ei-Viertel, Mini-Frikadellen, belegte Mini-Brote.
+- **Definition (B1):** Essen, das man **mit den Fingern** essen kann. Kein Messer, keine Gabel nötig. Beispiele: **Brötchen, Käsewürfel, Gurke, Apfel, Eier in Stücken**. Gut bei Demenz.
+- **Quelle:** DGE (2024) Ernährung im Alter
+
+---
+
+## G19: Expertenstandard Ernährungsmanagement
+
+- **Begriff:** Expertenstandard Ernährungsmanagement (DNQP)
+- **Definition (C1):** Nationaler Standard zur Sicherung und Förderung der oralen Ernährung in der Pflege. Aktuelle Aktualisierung 2017. Enthält Screening (MNA), Assessment, Maßnahmenplanung, Evaluation. Verpflichtend in allen Pflegeeinrichtungen (SGB XI § 113).
+- **Definition (B1):** **Nationaler Standard** für Ernährung in der Pflege. Sagt, wie man Essen und Trinken gut organisiert. Seit 2017 in der zweiten Version. **Pflicht** in allen Pflegeeinrichtungen.
+- **Quelle:** DNQP (Deutsches Netzwerk für Qualitätsentwicklung in der Pflege), 2. Aktualisierung 2017
+
+---
+
+## G20: Exsikkose
+
+- **Begriff:** Exsikkose (Dehydration)
+- **Definition (C1):** Flüssigkeitsmangel im Körper durch zu geringe Zufuhr, vermehrte Verluste (Fieber, Durchfall, Diuretika) oder Verschiebungen. Ältere Menschen besonders gefährdet: vermindertes Durstgefühl, Nierenfunktion nachlässt. Zeichen: stehende Hautfalte, trockene Zunge, eingefallene Augen, Verwirrtheit, Sturzgefahr.
+- **Definition (B1):** **Austrocknung** — zu wenig Wasser im Körper. Ältere Menschen sind oft betroffen: Sie haben weniger Durst. Zeichen: **trockene Haut und Zunge**, Augen sind eingefallen, **verwirrt**, Sturz-Gefahr steigt.
+- **Quelle:** DGE (2024) Ernährung im Alter
