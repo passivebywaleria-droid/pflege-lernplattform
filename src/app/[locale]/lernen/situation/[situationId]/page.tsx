@@ -27,6 +27,10 @@ export default function SituationLernenPage() {
   // FIX (walkthrough B-09): Diagnose-Badges nach Phase 1 kompakt einklappbar, um
   // Wiederholungs-Müdigkeit über 30 Steps zu vermeiden. Toggle-State hier.
   const [diagnosenOpen, setDiagnosenOpen] = useState(true);
+  // WOW Tag 1: Patient-Modal mit Lebensgeschichte
+  const [patientModalOpen, setPatientModalOpen] = useState(false);
+  // WOW Tag 1: Phasen-Intro vor Steps anzeigen (kontext der Phase)
+  const [phaseIntroSeen, setPhaseIntroSeen] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     setLoading(true);
@@ -113,14 +117,25 @@ export default function SituationLernenPage() {
 
           {/* Patient-Info */}
           <div className="flex items-start justify-between mb-3">
-            <div>
+            <div className="flex-1">
               <h1 className="text-lg font-bold text-[var(--lern-text-primary)]">
                 {situation.titel}
               </h1>
               {situation.patient && (
-                <p className="text-xs text-[var(--lern-text-secondary)] mt-0.5">
-                  {t("patient")}: {situation.patient.name}, {situation.patient.alter} · {situation.patient.setting}
-                </p>
+                <>
+                  <p className="text-xs text-[var(--lern-text-secondary)] mt-0.5">
+                    {t("patient")}: {situation.patient.name}, {situation.patient.alter} · {situation.patient.setting}
+                  </p>
+                  {situation.patient.hintergrund && (
+                    <button
+                      type="button"
+                      onClick={() => setPatientModalOpen(true)}
+                      className="inline-flex items-center gap-1 text-xs text-[var(--lern-accent)] hover:underline mt-1"
+                    >
+                      👤 Mehr über {situation.patient.name.split(" ")[0]} erfahren
+                    </button>
+                  )}
+                </>
               )}
             </div>
             <span className="shrink-0 rounded-full bg-[var(--lern-accent-bg)] px-2 py-0.5 text-xs font-semibold text-[var(--lern-accent)]">
@@ -217,6 +232,56 @@ export default function SituationLernenPage() {
               />
             </div>
 
+            {/* WOW Tag 1: Kurzer Phasen-Hook (volle Szene optional) */}
+            {currentStepIndex === 0 && currentPhase?.kontext && !phaseIntroSeen[currentPhaseId] && (() => {
+              // Hook = erste 1-2 Sätze, Rest in Toggle
+              const fullText = currentPhase.kontext;
+              const hookMatch = fullText.match(/^[\s\S]*?[.!?](\s|$)([\s\S]*?[.!?](\s|$))?/);
+              const hook = hookMatch ? hookMatch[0].trim() : fullText.slice(0, 200);
+              const rest = fullText.slice(hook.length).trim();
+              return (
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="rounded-2xl bg-[var(--lern-bg-primary)] border-[1.5px] border-[var(--lern-accent)]/20 p-4 mb-4"
+                >
+                  <p className="text-xs font-semibold text-[var(--lern-accent)] uppercase tracking-wider mb-2">
+                    Szene · {t(`phasen.${currentPhaseId}`)}
+                  </p>
+                  <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">
+                    {hook}
+                  </p>
+                  {rest && (
+                    <details className="mt-2 text-xs">
+                      <summary className="cursor-pointer text-[var(--lern-accent)] font-medium">
+                        📖 Vollszene lesen
+                      </summary>
+                      <div className="mt-2 text-[var(--lern-text-secondary)] whitespace-pre-line leading-relaxed">
+                        {rest}
+                      </div>
+                      {currentPhase.kontextB1 && (
+                        <details className="mt-2">
+                          <summary className="cursor-pointer text-[var(--lern-accent)]">
+                            🌍 Einfache Sprache (B1)
+                          </summary>
+                          <div className="mt-2 whitespace-pre-line">
+                            {currentPhase.kontextB1}
+                          </div>
+                        </details>
+                      )}
+                    </details>
+                  )}
+                  <button
+                    onClick={() => setPhaseIntroSeen({ ...phaseIntroSeen, [currentPhaseId]: true })}
+                    className="mt-3 w-full rounded-xl bg-[var(--lern-accent)] px-4 py-2 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+                  >
+                    Los geht&apos;s →
+                  </button>
+                </motion.div>
+              );
+            })()}
+
+            {(currentStepIndex !== 0 || phaseIntroSeen[currentPhaseId] || !currentPhase?.kontext) && (
             <AnimatePresence mode="wait">
               <motion.div
                 key={`${currentPhaseId}-${currentStepIndex}`}
@@ -244,6 +309,7 @@ export default function SituationLernenPage() {
                 />
               </motion.div>
             </AnimatePresence>
+            )}
           </div>
         ) : (
           /* Keine Steps in dieser Phase */
@@ -260,6 +326,90 @@ export default function SituationLernenPage() {
           </div>
         )}
       </div>
+
+      {/* WOW Tag 1: Patient-Modal mit Lebensgeschichte */}
+      {patientModalOpen && situation.patient && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+          onClick={() => setPatientModalOpen(false)}
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            className="relative max-w-2xl w-full max-h-[85vh] overflow-y-auto bg-[var(--lern-bg-primary)] rounded-2xl border-[1.5px] border-[var(--lern-border)] p-6 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setPatientModalOpen(false)}
+              className="absolute top-4 right-4 text-[var(--lern-text-tertiary)] hover:text-[var(--lern-text-primary)] text-2xl leading-none"
+              aria-label="Schließen"
+            >
+              ×
+            </button>
+            <h2 className="text-xl font-bold text-[var(--lern-text-primary)] mb-1">
+              {situation.patient.name}, {situation.patient.alter}
+            </h2>
+            <p className="text-xs text-[var(--lern-text-tertiary)] mb-4">{situation.patient.setting}</p>
+
+            {situation.patient.hintergrund && (
+              <section className="mb-5">
+                <h3 className="text-sm font-semibold text-[var(--lern-accent)] uppercase tracking-wider mb-2">
+                  Lebensgeschichte
+                </h3>
+                <div className="prose prose-sm max-w-none text-[var(--lern-text-primary)] whitespace-pre-line leading-relaxed">
+                  {situation.patient.hintergrund}
+                </div>
+                {situation.patient.hintergrundB1 && (
+                  <details className="mt-3 text-xs">
+                    <summary className="cursor-pointer text-[var(--lern-accent)] font-semibold">
+                      🌍 Einfache Sprache (B1)
+                    </summary>
+                    <div className="mt-2 text-[var(--lern-text-secondary)] whitespace-pre-line">
+                      {situation.patient.hintergrundB1}
+                    </div>
+                  </details>
+                )}
+              </section>
+            )}
+
+            {situation.patient.persoenlichkeit && (
+              <section className="mb-5">
+                <h3 className="text-sm font-semibold text-[var(--lern-accent)] uppercase tracking-wider mb-2">
+                  Persönlichkeit
+                </h3>
+                <div className="prose prose-sm max-w-none text-[var(--lern-text-primary)] whitespace-pre-line leading-relaxed">
+                  {situation.patient.persoenlichkeit}
+                </div>
+              </section>
+            )}
+
+            {situation.patient.zitate && situation.patient.zitate.length > 0 && (
+              <section className="mb-5">
+                <h3 className="text-sm font-semibold text-[var(--lern-accent)] uppercase tracking-wider mb-2">
+                  Originalton ({situation.patient.zitate.length} Zitate)
+                </h3>
+                <div className="space-y-2">
+                  {situation.patient.zitate.map((z, i) => (
+                    <blockquote
+                      key={i}
+                      className="rounded-xl bg-[var(--lern-accent-bg)] border-l-4 border-[var(--lern-accent)] px-4 py-2 text-sm italic text-[var(--lern-text-primary)]"
+                    >
+                      „{z}"
+                    </blockquote>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            <button
+              onClick={() => setPatientModalOpen(false)}
+              className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-3 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+            >
+              Zurück zur Pflege
+            </button>
+          </motion.div>
+        </div>
+      )}
     </div>
   );
 }
