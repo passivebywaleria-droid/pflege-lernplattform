@@ -495,7 +495,10 @@ export function StepText({
 }: StepTextProps) {
   const [showFunFact, setShowFunFact] = useState(false);
 
-  // displayFormat hat Vorrang — kein Carousel bei speziellem Format
+  // displayFormat hat Vorrang — kein Carousel bei speziellem Format.
+  // FIX (walkthrough B-10): displayFormat und carousel schließen sich bewusst
+  // gegenseitig aus. Wenn ein Step ein displayFormat (scenario/quote/...) setzt,
+  // soll dieses dominieren — selbst wenn carousel=true oder cards.length>=3.
   const cards = splitIntoCards(body);
   const useCarousel = !displayFormat && (carousel || cards.length >= 3);
 

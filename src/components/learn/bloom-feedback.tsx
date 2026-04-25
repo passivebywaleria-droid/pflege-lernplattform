@@ -232,7 +232,9 @@ function getFehlerHinweisKurz(kategorie: FehlerKategorie): string {
     case "sprache":
       return "Tipp: Nutze das Glossar für Fachbegriffe.";
     case "verwechslung":
-      return "Tipp: Achte auf die feinen Unterschiede.";
+      // FIX (walkthrough B-05): Verweis auf konkret sichtbare Option-Erklärungen
+      // statt vager "feine Unterschiede" ohne Strategiewechsel.
+      return "Tipp: Lies die Erklärung unter der richtigen Antwort — dort steht der Unterschied.";
     case "konzept":
       return "Tipp: Lies den Erklärtext nochmal durch.";
     default:

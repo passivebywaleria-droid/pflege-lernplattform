@@ -40,12 +40,12 @@ function getFeedback(isCorrect: boolean, confidence: ConfidenceLevel): { text: s
     return { text: "Gut geraten — lies nochmal nach, damit es beim nächsten Mal sitzt.", color: "var(--lern-warning)" };
   }
   if (!isCorrect && confidence === "sicher") {
-    return { text: "Achtung — Fehlkonzept! Du warst dir sicher, aber es stimmt nicht. Lies die Erklärung genau.", color: "var(--lern-error)" };
+    return { text: "Interessant — du warst sicher, aber hier liegt der Haken. Schau dir die Erklärung in Ruhe an, dann sitzt es.", color: "var(--lern-warning)" };
   }
   if (!isCorrect && confidence === "mittel") {
-    return { text: "Leider falsch. Schau dir die Erklärung an.", color: "var(--lern-error)" };
+    return { text: "Knapp daneben. Die Erklärung macht es klarer.", color: "var(--lern-warning)" };
   }
-  return { text: "Falsch, aber du warst unsicher — das ist okay. Jetzt weißt du es!", color: "var(--lern-warning)" };
+  return { text: "Noch nicht ganz — und du warst dir auch unsicher. Genau richtig hergefragt, jetzt wissen wir wo wir anknüpfen.", color: "var(--lern-warning)" };
 }
 
 export function StepConfidence({

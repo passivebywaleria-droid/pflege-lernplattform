@@ -5,7 +5,7 @@ import { useParams, useSearchParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ChevronDown, ChevronUp } from "lucide-react";
 import { loadSituation as staticLoadSituation } from "../../../../../../content/content-loader";
 import type { Lernsituation, PflegeProzessPhase, ContentStep } from "../../../../../../content/_types";
 import { PhasenProgress, PHASEN_ORDER } from "@/components/learn/phasen-progress";
@@ -24,6 +24,9 @@ export default function SituationLernenPage() {
   const [currentPhaseId, setCurrentPhaseId] = useState<PflegeProzessPhase>("informieren");
   const [completedPhases, setCompletedPhases] = useState<PflegeProzessPhase[]>([]);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
+  // FIX (walkthrough B-09): Diagnose-Badges nach Phase 1 kompakt einklappbar, um
+  // Wiederholungs-Müdigkeit über 30 Steps zu vermeiden. Toggle-State hier.
+  const [diagnosenOpen, setDiagnosenOpen] = useState(true);
 
   useEffect(() => {
     setLoading(true);
@@ -62,6 +65,14 @@ export default function SituationLernenPage() {
       }
     }
   }, [currentStepIndex, phaseSteps.length, completedPhases, currentPhaseId]);
+
+  // FIX (walkthrough B-09): Ab Phase 2 (beobachten) werden Diagnose-Badges
+  // automatisch eingeklappt — Schüler kennt sie dann, kann bei Bedarf öffnen.
+  useEffect(() => {
+    if (currentPhaseId !== "informieren") {
+      setDiagnosenOpen(false);
+    }
+  }, [currentPhaseId]);
 
   if (loading) {
     return (
@@ -117,17 +128,34 @@ export default function SituationLernenPage() {
             </span>
           </div>
 
-          {/* Diagnosen */}
+          {/* Diagnosen — FIX (walkthrough B-09): ab Phase 2 einklappbar */}
           {situation.patient && situation.patient.diagnosen.length > 0 && (
-            <div className="flex flex-wrap gap-1 mb-3">
-              {situation.patient.diagnosen.map((d) => (
-                <span
-                  key={d}
-                  className="rounded-md bg-[var(--lern-bg)] px-2 py-0.5 text-[10px] text-[var(--lern-text-secondary)]"
-                >
-                  {d}
-                </span>
-              ))}
+            <div className="mb-3">
+              <button
+                type="button"
+                onClick={() => setDiagnosenOpen((v) => !v)}
+                aria-expanded={diagnosenOpen}
+                className="inline-flex items-center gap-1 text-xs text-[var(--lern-text-secondary)] hover:text-[var(--lern-text-primary)] mb-1"
+              >
+                <span>Diagnosen ({situation.patient.diagnosen.length})</span>
+                {diagnosenOpen ? (
+                  <ChevronUp className="h-3 w-3" />
+                ) : (
+                  <ChevronDown className="h-3 w-3" />
+                )}
+              </button>
+              {diagnosenOpen && (
+                <div className="flex flex-wrap gap-1">
+                  {situation.patient.diagnosen.map((d) => (
+                    <span
+                      key={d}
+                      className="rounded-md bg-[var(--lern-bg)] px-2 py-0.5 text-[10px] text-[var(--lern-text-secondary)]"
+                    >
+                      {d}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           )}
 
@@ -204,8 +232,12 @@ export default function SituationLernenPage() {
                   onNext={(correct) => {
                     handleNextStep();
                   }}
-                  onSelfRating={() => {}}
-                  onReflection={() => {}}
+                  onSelfRating={() => {
+                    handleNextStep();
+                  }}
+                  onReflection={() => {
+                    handleNextStep();
+                  }}
                   reflexionText={null}
                   score={0}
                   totalQuestions={phaseSteps.length}

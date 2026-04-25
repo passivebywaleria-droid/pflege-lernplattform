@@ -104,25 +104,31 @@ function SituationCard({
   );
 }
 
-function ThemaCard({ themaId }: { themaId: string }) {
+function ThemaCard({ themaId, locale, ceId }: { themaId: string; locale: string; ceId: string }) {
   const t = useTranslations("themaNav");
   const label = themaId.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 
   return (
-    <div className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-3">
-      <h3 className="text-sm font-semibold text-[var(--lern-text-primary)] mb-1">
-        {label}
-      </h3>
-      <div className="flex items-center gap-2 mt-2">
-        <span className="text-xs text-[var(--lern-text-tertiary)]">
-          {t("quickCheck")}
-        </span>
-        <span className="text-xs text-[var(--lern-text-tertiary)]">·</span>
-        <span className="text-xs text-[var(--lern-text-tertiary)]">
-          {t("karteikarten")}
-        </span>
-      </div>
-    </div>
+    <Link href={`/${locale}/lernen/thema/${themaId}?ce=${ceId}`}>
+      <motion.div
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+        className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-3 cursor-pointer hover:shadow-md transition-shadow"
+      >
+        <h3 className="text-sm font-semibold text-[var(--lern-text-primary)] mb-1">
+          {label}
+        </h3>
+        <div className="flex items-center gap-2 mt-2">
+          <span className="text-xs text-[var(--lern-text-tertiary)]">
+            {t("quickCheck")}
+          </span>
+          <span className="text-xs text-[var(--lern-text-tertiary)]">·</span>
+          <span className="text-xs text-[var(--lern-text-tertiary)]">
+            {t("karteikarten")}
+          </span>
+        </div>
+      </motion.div>
+    </Link>
   );
 }
 
@@ -331,7 +337,7 @@ export default function CeDetailPage() {
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {themaIds.map((themaId) => (
-                      <ThemaCard key={themaId} themaId={themaId} />
+                      <ThemaCard key={themaId} themaId={themaId} locale={locale} ceId={ceId} />
                     ))}
                   </div>
                 </section>

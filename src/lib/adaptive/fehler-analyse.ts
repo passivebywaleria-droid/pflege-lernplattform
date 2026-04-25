@@ -29,7 +29,10 @@ const FEHLER_TEXTE: Record<FehlerKategorie, { erklaerung: string; konfidenz: num
     konfidenz: 0.7,
   },
   verwechslung: {
-    erklaerung: "Du verwechselst hier zwei ähnliche Begriffe. Lass uns den Unterschied anschauen.",
+    // FIX (walkthrough B-03): Kein Verweis auf "Erklärung oben" mehr — der MC-Renderer
+    // zeigt Erklärungen unter den Optionen, nicht oben. Neu: Konkret auf die
+    // Option-Erklärungen verweisen, die tatsächlich im UI sichtbar sind.
+    erklaerung: "Zwei ähnliche Begriffe liegen hier eng beieinander. Lies die Erklärung unter deiner Antwort und unter der richtigen Antwort genau durch — dort steht der Unterschied.",
     konfidenz: 0.5,
   },
   konzept: {
