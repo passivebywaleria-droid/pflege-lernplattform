@@ -1190,6 +1190,7 @@ export interface PatientBeschreibung {
   hintergrund: string;          // Biografie, soziales Umfeld
   hintergrundB1?: string;
   persoenlichkeit: string;      // Kommunikationsstil, Ängste
+  persoenlichkeitB1?: string;   // B1-Variante: einfache Sprache, Sätze ≤15 Wörter
   zitate?: string[];            // Typische Aussagen des Patienten
 }
 
