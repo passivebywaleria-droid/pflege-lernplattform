@@ -74,8 +74,9 @@ function parseGestikUndSpeech(raw: string): {
     /["„"]([^"""„]+?)["""]/u
   );
   if (!speechMatch) {
-    // Kein Speech-Pattern gefunden — alles als Speech behandeln (bisheriges Verhalten)
-    return { speech: raw.trim() };
+    // Kein Speech-Pattern (keine Anführungszeichen) — der ganze Text ist
+    // Bühnenanweisung / Body-Language, nichts wird tatsächlich gesagt.
+    return { gestik: raw.trim() };
   }
   const speech = speechMatch[1].trim();
   // Alles was nicht in den Anführungszeichen steht, ist Gestik
@@ -139,7 +140,6 @@ export function StepDialog({
     const ctx = phases[phase];
     if (!ctx) return;
     const contextText = t(ctx.context, ctx.contextB1, sprachLevel);
-    const speakerIsPatient = (ctx.speaker ?? patientName) !== "Du";
     const { gestik, speech } = parseGestikUndSpeech(contextText);
     setShowChoices(false);
     setTyping(true);
@@ -147,23 +147,20 @@ export function StepDialog({
       setTyping(false);
       setMessages((m) => {
         const next = [...m];
-        // Bühnenanweisung / Body-Language als Narration
-        if (gestik) {
-          next.push({ sender: "narration", text: gestik });
-        }
-        // Eingebettetes Patientenzitat als Patient-Bubble
-        if (speech && speakerIsPatient) {
+        if (gestik) next.push({ sender: "narration", text: gestik });
+        // Eingebettetes Speech ist üblicherweise vom Patienten — auch in
+        // Phasen mit speaker="Du" (Pflege-Aktion) zitiert der context oft
+        // den Patienten direkt.
+        if (speech) {
+          const speakerName =
+            ctx.speaker && ctx.speaker !== "Du"
+              ? ctx.speaker
+              : patientName;
           next.push({
             sender: "patient",
             text: speech,
-            speakerName: ctx.speaker ?? patientName,
+            speakerName,
           });
-        }
-        // Wenn nur Narration und keine Patient-Speech: ist Bühnenanweisung,
-        // nichts weiter tun. Optionen erscheinen darunter.
-        // Wenn weder gestik noch speech: Fallback — alten Text als Narration
-        if (!gestik && !speech) {
-          next.push({ sender: "narration", text: contextText });
         }
         return next;
       });
@@ -250,28 +247,28 @@ export function StepDialog({
       const ctx = phases[nextP];
       if (ctx) {
         const contextText = t(ctx.context, ctx.contextB1, sprachLevel);
-        const speakerIsPatient = (ctx.speaker ?? patientName) !== "Du";
         const { gestik, speech } = parseGestikUndSpeech(contextText);
         setTyping(true);
         setTimeout(() => {
           setTyping(false);
-          // Phase-Trenner als Narration
           setMessages((m) => {
             const next = [...m];
+            // Phase-Trenner als Narration
             next.push({
               sender: "narration",
               text: `── Phase ${nextP + 1} ──`,
             });
             if (gestik) next.push({ sender: "narration", text: gestik });
-            if (speech && speakerIsPatient) {
+            if (speech) {
+              const speakerName =
+                ctx.speaker && ctx.speaker !== "Du"
+                  ? ctx.speaker
+                  : patientName;
               next.push({
                 sender: "patient",
                 text: speech,
-                speakerName: ctx.speaker ?? patientName,
+                speakerName,
               });
-            }
-            if (!gestik && !speech) {
-              next.push({ sender: "narration", text: contextText });
             }
             return next;
           });
