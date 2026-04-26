@@ -24,6 +24,12 @@ export function GlobalTabBar() {
     "/demo-steps",
     "/onboarding",
     "/einstufung",
+    // Aktiver Lernfluss — User soll im Walkthrough bleiben, nicht zwischen Tabs wechseln.
+    // Bundle-1:1 (claude-design-bundle FlowContainer hat ebenfalls keine Tab-Bar).
+    // Macht Platz für fixen Step-Action-Bar (Weiter / Prüfen) unten.
+    "/lernen/situation/",
+    "/lernen/le/",
+    "/pruefung/",
   ]
 
   const shouldHide = hidePatterns.some((p) => pathname.includes(p))
