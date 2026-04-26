@@ -1,7 +1,5 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import type { PflegeProzessPhase } from "../../../content/_types";
 
 const PHASEN_ORDER: PflegeProzessPhase[] = [
@@ -13,75 +11,52 @@ const PHASEN_ORDER: PflegeProzessPhase[] = [
   "dokumentieren",
 ];
 
-const PHASEN_ICONS: Record<PflegeProzessPhase, string> = {
-  informieren: "📋",
-  beobachten: "👁",
-  planen: "📝",
-  durchfuehren: "🩺",
-  evaluieren: "📊",
-  dokumentieren: "📄",
-};
-
 interface PhasenProgressProps {
   currentPhase: PflegeProzessPhase;
   completedPhases: PflegeProzessPhase[];
   onPhaseClick?: (phase: PflegeProzessPhase) => void;
 }
 
+/**
+ * Phasen-Progress im Bundle-Stil (claude-design-bundle/v1-situation-flow.jsx).
+ * 6 dünne 4px-Balken, keine Labels, keine Icons.
+ */
 export function PhasenProgress({
   currentPhase,
   completedPhases,
   onPhaseClick,
 }: PhasenProgressProps) {
-  const t = useTranslations("situation");
+  const currentIdx = PHASEN_ORDER.indexOf(currentPhase);
 
   return (
-    <div className="flex items-center gap-1 overflow-x-auto pb-2">
-      {PHASEN_ORDER.map((phase, idx) => {
-        const isCompleted = completedPhases.includes(phase);
-        const isCurrent = phase === currentPhase;
-        const isLocked = !isCompleted && !isCurrent;
+    <div className="flex w-full gap-1">
+      {PHASEN_ORDER.map((phase, i) => {
+        const done = i < currentIdx || completedPhases.includes(phase);
+        const active = phase === currentPhase;
+        const clickable = !!onPhaseClick && (done || active);
+
+        const handleClick = clickable
+          ? () => onPhaseClick(phase)
+          : undefined;
 
         return (
-          <div key={phase} className="flex items-center">
-            {idx > 0 && (
-              <div
-                className={`h-0.5 w-4 sm:w-6 ${
-                  isCompleted
-                    ? "bg-[#3E5A6A]"
-                    : "bg-[var(--lern-border)]"
-                }`}
-              />
-            )}
-            <motion.button
-              whileTap={!isLocked ? { scale: 0.95 } : undefined}
-              onClick={() => !isLocked && onPhaseClick?.(phase)}
-              disabled={isLocked}
-              className={`flex flex-col items-center gap-1 rounded-xl px-2 py-2 text-center transition-all ${
-                isCurrent
-                  ? "bg-[var(--lern-accent-bg)] border-2 border-[var(--lern-accent)] shadow-sm"
-                  : isCompleted
-                    ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
-                    : "bg-[var(--lern-bg)] border border-[var(--lern-border)] opacity-50"
-              }`}
-              aria-current={isCurrent ? "step" : undefined}
-            >
-              <span className="text-base sm:text-lg">
-                {isCompleted ? "✓" : PHASEN_ICONS[phase]}
-              </span>
-              <span
-                className={`text-[10px] sm:text-xs font-medium leading-tight ${
-                  isCurrent
-                    ? "text-[var(--lern-accent)]"
-                    : isCompleted
-                      ? "text-[#3E5A6A]"
-                      : "text-[var(--lern-text-tertiary)]"
-                }`}
-              >
-                {t(`phasen.${phase}`)}
-              </span>
-            </motion.button>
-          </div>
+          <button
+            key={phase}
+            type="button"
+            onClick={handleClick}
+            disabled={!clickable}
+            aria-label={`Phase ${i + 1} von ${PHASEN_ORDER.length}: ${phase}`}
+            aria-current={active ? "step" : undefined}
+            className={`flex-1 h-1 rounded-full transition-all ${
+              clickable ? "cursor-pointer" : "cursor-default"
+            } ${
+              active
+                ? "bg-[var(--lern-accent)] ring-2 ring-[var(--lern-accent-bg)]"
+                : done
+                  ? "bg-[var(--lern-accent)]/45"
+                  : "bg-[var(--lern-border)]"
+            }`}
+          />
         );
       })}
     </div>
