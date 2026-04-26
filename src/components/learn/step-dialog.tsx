@@ -169,22 +169,36 @@ export function StepDialog({
     maxScore > 0 ? Math.round((totalScore / maxScore) * 100) : 0;
 
   return (
-    <div className="space-y-3" style={{ color: "var(--lern-text-primary)" }}>
-      {/* Header */}
-      <div>
-        <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
+    <div
+      className="flex flex-col gap-3"
+      style={{
+        color: "var(--lern-text-primary)",
+        minHeight: "calc(100dvh - 220px)",
+      }}
+    >
+      {/* Header — kompakter, kein langer Body */}
+      <div className="shrink-0">
+        <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--lern-accent)]">
+          Dialog
+        </p>
+        <h2 className="text-[19px] font-semibold leading-tight text-[var(--lern-text-primary)] mt-1">
           {title}
         </h2>
         {body && (
-          <p className="mt-2 text-sm text-[var(--lern-text-secondary)] leading-relaxed">
-            <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
-          </p>
+          <details className="mt-2 text-xs">
+            <summary className="cursor-pointer text-[var(--lern-accent)] font-medium">
+              Mehr Kontext
+            </summary>
+            <p className="mt-2 text-sm text-[var(--lern-text-secondary)] leading-relaxed">
+              <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
+            </p>
+          </details>
         )}
       </div>
 
       {/* Vitals monitor */}
       {current && !finished && current.vitals && (
-        <div className="bg-[#1d1d1f] rounded-xl px-4 py-2.5 flex items-center gap-3">
+        <div className="shrink-0 bg-[#1d1d1f] rounded-xl px-4 py-2 flex items-center gap-3">
           <span className="w-2 h-2 rounded-full bg-[#3E5A6A] animate-pulse" />
           <span className="text-xs text-[#3E5A6A] font-mono">
             {current.vitals}
@@ -192,10 +206,10 @@ export function StepDialog({
         </div>
       )}
 
-      {/* Chat — WhatsApp-Style, kompakter auf Mobile */}
+      {/* Chat — WhatsApp-Style, füllt verfügbaren Platz, scrollt intern */}
       <div
         ref={chatRef}
-        className="space-y-3 max-h-[35vh] overflow-y-auto rounded-2xl bg-[#efeae2] p-3"
+        className="flex-1 min-h-[200px] space-y-3 overflow-y-auto rounded-2xl bg-[#efeae2] p-3"
         style={{
           backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
         }}
@@ -262,16 +276,17 @@ export function StepDialog({
         )}
       </div>
 
-      {/* Konsequenz bei schlechter Wahl */}
+      {/* Konsequenz / Feedback / Choices — alle shrink-0 unter dem Chat */}
+      <div className="shrink-0 space-y-2">
       <AnimatePresence>
         {showConsequence && (
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            className="rounded-2xl bg-[#D4956A]/10 border border-[#D4956A]/20 p-4"
+            className="rounded-xl bg-[#D4956A]/10 border border-[#D4956A]/20 p-3"
           >
-            <p className="text-xs font-semibold text-[#D4956A] mb-1">Konsequenz</p>
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-[#D4956A] mb-1">Konsequenz</p>
             <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">{showConsequence}</p>
           </motion.div>
         )}
@@ -284,25 +299,15 @@ export function StepDialog({
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            className="rounded-2xl bg-[var(--lern-accent)]/10 border border-[var(--lern-accent)]/20 p-4"
+            className="rounded-xl bg-[var(--lern-accent)]/10 border border-[var(--lern-accent)]/20 p-3"
           >
-            <p className="text-xs font-semibold text-[var(--lern-accent)] mb-1">Feedback</p>
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-[var(--lern-accent)] mb-1">Feedback</p>
             <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">
               <FeedbackText sprachLevel={sprachLevel}>{showFeedback}</FeedbackText>
             </p>
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* Weiter-Button nach Feedback */}
-      {waitingForUser && showFeedback && (
-        <button
-          onClick={nextPhase}
-          className="w-full rounded-2xl bg-[var(--lern-bg)] px-6 py-4 text-base font-semibold text-[var(--lern-text-primary)] transition-all active:scale-[0.98]"
-        >
-          Weiter
-        </button>
-      )}
 
       {/* Choices — als Antwort-Vorschläge unter dem Chat */}
       <AnimatePresence>
@@ -311,18 +316,18 @@ export function StepDialog({
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 12 }}
-            className="space-y-2"
+            className="space-y-1.5"
           >
-            <p className="text-xs text-[var(--lern-text-secondary)] font-medium px-1">Wähle deine Antwort:</p>
+            <p className="text-[10px] uppercase tracking-wider text-[var(--lern-text-tertiary)] font-semibold px-1">Wähle deine Antwort</p>
             {current.options.map((opt, i) => (
               <motion.button
                 key={i}
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.05 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => choose(opt)}
-                className="w-full text-left px-4 py-3.5 border-[1.5px] border-[var(--lern-border)] rounded-2xl text-sm text-[var(--lern-text-primary)] hover:border-[var(--lern-accent)] transition-colors bg-[var(--lern-bg-primary)]"
+                className="w-full text-left px-3 py-2.5 border border-[var(--lern-border)] rounded-xl text-sm text-[var(--lern-text-primary)] hover:border-[var(--lern-accent)] transition-colors bg-[var(--lern-bg-primary)]"
               >
                 {t(opt.text, opt.textB1, sprachLevel)}
               </motion.button>
@@ -330,13 +335,14 @@ export function StepDialog({
           </motion.div>
         )}
       </AnimatePresence>
+      </div>
 
       {/* End — Ergebnis */}
       {finished && (
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="text-center space-y-4"
+          className="text-center space-y-4 shrink-0"
         >
           <div className="relative inline-flex items-center justify-center w-20 h-20">
             <svg viewBox="0 0 36 36" className="w-20 h-20 -rotate-90">
