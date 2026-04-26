@@ -91,7 +91,7 @@ export function PfadPicker({
                           }}
                           className={`w-full flex items-center gap-3 p-3 rounded-xl transition-all text-left ${
                             isActive
-                              ? "bg-[#C4877F]/10 border-2 border-[#C4877F]"
+                              ? "bg-[#218C71]/10 border-2 border-[#218C71]"
                               : "bg-gray-50 border-2 border-transparent hover:bg-gray-100 active:scale-[0.98]"
                           }`}
                         >
@@ -99,7 +99,7 @@ export function PfadPicker({
                           <div
                             className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold shrink-0 ${
                               isActive
-                                ? "bg-[#C4877F] text-white"
+                                ? "bg-[#218C71] text-white"
                                 : "bg-gray-200 text-gray-600"
                             }`}
                           >
@@ -110,7 +110,7 @@ export function PfadPicker({
                           <div className="flex-1 min-w-0">
                             <p
                               className={`text-sm font-semibold truncate ${
-                                isActive ? "text-[#C4877F]" : "text-gray-800"
+                                isActive ? "text-[#218C71]" : "text-gray-800"
                               }`}
                             >
                               {label.title}
@@ -135,7 +135,7 @@ export function PfadPicker({
 
                           {/* Status */}
                           {isActive && (
-                            <span className="text-xs font-semibold text-[#C4877F] shrink-0">
+                            <span className="text-xs font-semibold text-[#218C71] shrink-0">
                               Aktiv
                             </span>
                           )}

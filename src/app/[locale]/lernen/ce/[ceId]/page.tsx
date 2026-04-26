@@ -20,7 +20,7 @@ import type { CEManifestEntry, Thema, Lernsituation } from "../../../../../../co
 type CeTab = "situationen" | "themen";
 
 const SPIRALE_COLORS: Record<number, string> = {
-  1: "#6B8F71",
+  1: "#3E5A6A",
   2: "#D4956A",
   3: "#9B7EA6",
   4: "#C96B5C",
@@ -36,7 +36,7 @@ function SituationCard({
   ceId: string;
 }) {
   const t = useTranslations("situation");
-  const spiralColor = SPIRALE_COLORS[situation.spirale] ?? "#6B8F71";
+  const spiralColor = SPIRALE_COLORS[situation.spirale] ?? "#3E5A6A";
 
   return (
     <Link href={`/${locale}/lernen/situation/${situation.situationId}?ce=${ceId}`}>
@@ -274,7 +274,7 @@ export default function CeDetailPage() {
                     <Link key={le.leId} href={`/${locale}/lernen/${le.leId}`}>
                       <motion.div
                         whileHover={{ scale: 1.01 }}
-                        className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[#6B8F71]/30 p-4 cursor-pointer hover:shadow-md"
+                        className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[#3E5A6A]/30 p-4 cursor-pointer hover:shadow-md"
                       >
                         <div className="flex items-center justify-between">
                           <div>
@@ -285,7 +285,7 @@ export default function CeDetailPage() {
                               {le.sessions.length} Sessions · {le.zeitrichtwert} UE
                             </p>
                           </div>
-                          <span className="rounded-full bg-[#6B8F71] px-2 py-0.5 text-xs font-semibold text-white">
+                          <span className="rounded-full bg-[#3E5A6A] px-2 py-0.5 text-xs font-semibold text-white">
                             Verfügbar
                           </span>
                         </div>

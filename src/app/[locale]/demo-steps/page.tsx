@@ -12,7 +12,7 @@ import {
 
 // ─── Color Palette ───
 const BLUSH = "#D4A9A2"
-const ROSE  = "#C4877F"
+const ROSE  = "#218C71"
 const MAUVE = "#A06B63"
 const TAUPE = "#BFA48E"
 const OAK   = "#B09179"

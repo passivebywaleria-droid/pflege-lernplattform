@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Step-Typen · ChatGPT-Palette</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: #E8E0D6; font-family: Inter, sans-serif; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" src="design-canvas.jsx"></script>
+  <script type="text/babel" src="ios-frame.jsx"></script>
+  <script type="text/babel" src="shared.jsx"></script>
+  <script type="text/babel" src="steps-cgpt.jsx"></script>
+
+  <script type="text/babel" data-presets="react">
+    const W = 390, H = 780;
+    const steps = [
+      { id: 'text', label: '01 · Info / Text', C: StepText },
+      { id: 'mc', label: '02 · Multiple Choice', C: StepMC },
+      { id: 'confidence', label: '03 · Selbsteinschätzung', C: StepConfidence },
+      { id: 'flashcard', label: '04 · Karteikarte', C: StepFlashcard },
+      { id: 'feedback', label: '05 · Feedback', C: StepFeedback },
+      { id: 'order', label: '06 · Reihenfolge', C: StepOrder },
+      { id: 'reflect', label: '07 · Reflektion', C: StepReflect },
+      { id: 'video', label: '08 · Video', C: StepVideo },
+      { id: 'match', label: '09 · Zuordnen', C: StepMatch },
+      { id: 'done', label: '10 · Phase geschafft', C: StepDone },
+    ];
+
+    function App() {
+      return (
+        <DesignCanvas>
+          <DCSection
+            id="steps"
+            title="Alle Step-Typen · ChatGPT-Palette"
+            subtitle="Accent Teal #10A37F · BG #F8F5F0 warm off-white · Success #3E5A6A slate-blue. 10 typische Step-Typen einer Situation."
+          >
+            {steps.map((s) => (
+              <DCArtboard key={s.id} id={s.id} label={s.label} width={W} height={H}>
+                <IOSDevice width={W} height={H}>
+                  <s.C />
+                </IOSDevice>
+              </DCArtboard>
+            ))}
+          </DCSection>
+
+          <DCPostIt x={60} y={60} rotation={-2}>
+            <div style={{ fontSize: 13, fontWeight: 600, marginBottom: 6 }}>Step-Typen Gallery</div>
+            <div style={{ fontSize: 11, lineHeight: 1.4, color: '#6B5E52' }}>
+              ChatGPT-inspirierte Palette: Teal-Akzent auf warmem Off-White.
+              Deutlich neutraler als Rose/Sage, aber nicht kalt.
+              <br /><br />
+              Klick auf ein Artboard → Fullscreen (←/→/Esc).
+            </div>
+          </DCPostIt>
+        </DesignCanvas>
+      );
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>

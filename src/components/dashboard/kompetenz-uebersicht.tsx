@@ -26,7 +26,7 @@ export function KompetenzUebersicht({ kompetenzRegisterStats }: KompetenzUebersi
       </h2>
       <div className="flex items-center gap-4 mb-3">
         <div className="text-center">
-          <p className="text-2xl font-bold text-[#6B8F71]">
+          <p className="text-2xl font-bold text-[#3E5A6A]">
             {kompetenzRegisterStats.counts.gemeistert}
           </p>
           <p className="text-xs text-[var(--lern-text-secondary)]">gemeistert</p>
@@ -53,7 +53,7 @@ export function KompetenzUebersicht({ kompetenzRegisterStats }: KompetenzUebersi
       <div className="h-2 rounded-full bg-[var(--lern-bg)] flex overflow-hidden">
         {kompetenzRegisterStats.counts.gemeistert > 0 && (
           <div
-            className="h-full bg-[#6B8F71]"
+            className="h-full bg-[#3E5A6A]"
             style={{ width: `${(kompetenzRegisterStats.counts.gemeistert / kompetenzRegisterStats.gesamt) * 100}%` }}
           />
         )}

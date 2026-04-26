@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>V1 · Situation als Step-Sequenz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: #E8E0D6; font-family: Inter, sans-serif; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" src="design-canvas.jsx"></script>
+  <script type="text/babel" src="ios-frame.jsx"></script>
+  <script type="text/babel" src="shared.jsx"></script>
+  <script type="text/babel" src="steps-cgpt.jsx"></script>
+  <script type="text/babel" src="v1-situation-flow.jsx"></script>
+
+  <script type="text/babel" data-presets="react">
+    const W = 390, H = 780;
+
+    // Snapshots an unterschiedlichen Punkten der 7-stufigen Sequenz,
+    // damit man sieht, wie sich Phase-Progress + CTA durch den Flow bewegt.
+    const snapshots = [
+      { id: 's0', label: '01 · Schritt 1 · Informieren', start: 0 },
+      { id: 's1', label: '02 · Schritt 2 · Karteikarte', start: 1 },
+      { id: 's2', label: '03 · Schritt 3 · Planen / Reihenfolge', start: 2 },
+      { id: 's3', label: '04 · Schritt 4 · Entscheiden / MC', start: 3 },
+      { id: 's4', label: '05 · Schritt 5 · Feedback', start: 4 },
+      { id: 's5', label: '06 · Schritt 6 · Reflektieren', start: 5 },
+      { id: 's6', label: '07 · Schritt 7 · Geschafft', start: 6 },
+    ];
+
+    function App() {
+      return (
+        <DesignCanvas>
+          <DCSection
+            id="flow"
+            title="V1 · Situation als Step-Sequenz"
+            subtitle="Eine Situation = 7 Schritte, verteilt auf die 6 Phasen der Pflege-Spirale. Sticky-Header mit Patient + Phasen-Progress; jeder Step ist ein eigener Step-Typ."
+          >
+            {snapshots.map((s) => (
+              <DCArtboard key={s.id} id={s.id} label={s.label} width={W} height={H}>
+                <IOSDevice width={W} height={H}>
+                  <V1SituationFlow start={s.start} />
+                </IOSDevice>
+              </DCArtboard>
+            ))}
+          </DCSection>
+
+          <DCPostIt x={60} y={60} rotation={-2}>
+            <div style={{ fontSize: 13, fontWeight: 600, marginBottom: 6 }}>Step-Typen im Flow</div>
+            <div style={{ fontSize: 11, lineHeight: 1.4, color: '#6B5E52' }}>
+              Klick „Weiter" / „Zurück" in einem Frame —
+              die Phasen-Bar oben wandert mit, der State pro Schritt bleibt erhalten.
+              <br /><br />
+              Klick auf ein Artboard → Fullscreen.
+            </div>
+          </DCPostIt>
+        </DesignCanvas>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>

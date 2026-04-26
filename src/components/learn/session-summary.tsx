@@ -100,8 +100,8 @@ export function SessionSummary({
     {
       label: "Richtig",
       value: `${score}/${totalQuestions}`,
-      color: "#6B8F71",
-      bgColor: "#6B8F71",
+      color: "#3E5A6A",
+      bgColor: "#3E5A6A",
       icon: "check" as const,
     },
     {
@@ -176,7 +176,7 @@ export function SessionSummary({
                 transition={{ delay: 0.7 + i * 0.05 }}
                 className="flex items-center gap-2 text-sm text-[var(--lern-text-primary)]"
               >
-                <span className="text-[#6B8F71] shrink-0">&#10003;</span>
+                <span className="text-[#3E5A6A] shrink-0">&#10003;</span>
                 <span className="line-clamp-1">{thema}</span>
               </motion.li>
             ))}
@@ -198,7 +198,7 @@ export function SessionSummary({
             </p>
             <p
               className="text-sm font-bold"
-              style={{ color: richtigQuote >= 80 ? "#6B8F71" : richtigQuote >= 60 ? "#D4956A" : "#C96B5C" }}
+              style={{ color: richtigQuote >= 80 ? "#3E5A6A" : richtigQuote >= 60 ? "#D4956A" : "#C96B5C" }}
             >
               {richtigQuote}%
             </p>
@@ -210,7 +210,7 @@ export function SessionSummary({
               transition={{ delay: 0.9, duration: 0.6, ease: "easeOut" }}
               className="h-full rounded-full"
               style={{
-                backgroundColor: richtigQuote >= 80 ? "#6B8F71" : richtigQuote >= 60 ? "#D4956A" : "#C96B5C",
+                backgroundColor: richtigQuote >= 80 ? "#3E5A6A" : richtigQuote >= 60 ? "#D4956A" : "#C96B5C",
               }}
             />
           </div>
@@ -313,7 +313,7 @@ export function SessionSummary({
             <HandDrawnIcon
               name={kalibrierung.typ === "gut-kalibriert" ? "check" : kalibrierung.typ === "unterschaetzt" ? "lightning" : "lightbulb"}
               size={16}
-              color={kalibrierung.typ === "gut-kalibriert" ? "#6B8F71" : kalibrierung.typ === "unterschaetzt" ? "#D4956A" : "#D4956A"}
+              color={kalibrierung.typ === "gut-kalibriert" ? "#3E5A6A" : kalibrierung.typ === "unterschaetzt" ? "#D4956A" : "#D4956A"}
             />
             <div>
               <p className="text-xs font-semibold text-[var(--lern-text-tertiary)] uppercase tracking-wide mb-1">

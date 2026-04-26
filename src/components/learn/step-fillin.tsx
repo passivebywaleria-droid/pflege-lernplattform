@@ -94,11 +94,11 @@ export function StepFillIn({
                 <span
                   className={`inline-block px-3 py-0.5 mx-1 rounded-lg font-semibold transition-colors ${
                     submitted && isCorrect
-                      ? "bg-[#6B8F71]/20 text-[var(--lern-text-primary)]"
+                      ? "bg-[#3E5A6A]/20 text-[var(--lern-text-primary)]"
                       : submitted && !isCorrect
                         ? "bg-[#C96B5C]/20 text-[var(--lern-text-primary)]"
                         : selected !== null
-                          ? "bg-[#C4877F]/10 text-[#C4877F]"
+                          ? "bg-[#218C71]/10 text-[#218C71]"
                           : "bg-[var(--lern-border)] text-[var(--lern-text-tertiary)]"
                   }`}
                 >
@@ -117,14 +117,14 @@ export function StepFillIn({
           let bgColor = "bg-[var(--lern-bg-primary)]";
 
           if (submitted && correctIndex === i) {
-            borderColor = "border-[#6B8F71]";
-            bgColor = "bg-[#6B8F71]/5";
+            borderColor = "border-[#3E5A6A]";
+            bgColor = "bg-[#3E5A6A]/5";
           } else if (submitted && selected === i && correctIndex !== i) {
             borderColor = "border-[#C96B5C]";
             bgColor = "bg-[#C96B5C]/5";
           } else if (selected === i) {
-            borderColor = "border-[#C4877F]";
-            bgColor = "bg-[#C4877F]/5";
+            borderColor = "border-[#218C71]";
+            bgColor = "bg-[#218C71]/5";
           }
 
           return (
@@ -135,7 +135,7 @@ export function StepFillIn({
               role="radio"
               aria-checked={selected === i}
               aria-label={`Option: ${opt}`}
-              className={`w-full rounded-xl border-[1.5px] ${borderColor} ${bgColor} p-3 text-left text-sm font-medium text-[var(--lern-text-primary)] transition-colors focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2`}
+              className={`w-full rounded-xl border-[1.5px] ${borderColor} ${bgColor} p-3 text-left text-sm font-medium text-[var(--lern-text-primary)] transition-colors focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2`}
             >
               {opt}
             </motion.button>
@@ -148,7 +148,7 @@ export function StepFillIn({
           onClick={handleSubmit}
           disabled={selected === null}
           aria-label="Antwort prüfen"
-          className="w-full rounded-2xl bg-[#C4877F] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2"
+          className="w-full rounded-2xl bg-[#218C71] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2"
         >
           Prüfen
         </button>
@@ -165,7 +165,7 @@ export function StepFillIn({
           <button
             onClick={() => onNext(isCorrect)}
             aria-label="Weiter zum nächsten Schritt"
-            className="w-full rounded-2xl bg-[#C4877F] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2"
+            className="w-full rounded-2xl bg-[#218C71] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2"
           >
             Weiter
           </button>

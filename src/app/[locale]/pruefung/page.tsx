@@ -345,7 +345,7 @@ export default function PruefungPage() {
                 <h1 className="text-2xl font-bold">Pr&uuml;fungsmodus</h1>
                 <p className="text-sm text-[var(--lern-text-secondary)]">Simulierte Pr&uuml;fungen im echten Format</p>
               </div>
-              <Link href={`/${locale}/dashboard`} className="text-sm text-[#C4877F] font-medium">
+              <Link href={`/${locale}/dashboard`} className="text-sm text-[#218C71] font-medium">
                 Dashboard
               </Link>
             </div>
@@ -425,7 +425,7 @@ export default function PruefungPage() {
                         className="w-3 h-3 rounded-full"
                         style={{
                           backgroundColor:
-                            reife === "gruen" ? "#6B8F71" : reife === "gelb" ? "#D4956A" : "#C96B5C",
+                            reife === "gruen" ? "#3E5A6A" : reife === "gelb" ? "#D4956A" : "#C96B5C",
                         }}
                       />
                       <span className="text-xs text-[var(--lern-text-secondary)]">
@@ -521,13 +521,13 @@ export default function PruefungPage() {
                   style={{
                     backgroundColor:
                       frage.schwierigkeit === "leicht"
-                        ? "#6B8F7115"
+                        ? "#3E5A6A15"
                         : frage.schwierigkeit === "mittel"
                           ? "#D4956A15"
                           : "#C96B5C15",
                     color:
                       frage.schwierigkeit === "leicht"
-                        ? "#6B8F71"
+                        ? "#3E5A6A"
                         : frage.schwierigkeit === "mittel"
                           ? "#D4956A"
                           : "#C96B5C",
@@ -550,8 +550,8 @@ export default function PruefungPage() {
                     disabled={gewaehlt !== null}
                     className={`w-full text-left rounded-2xl border px-5 py-4 text-sm font-medium transition-all active:scale-[0.98] ${
                       gewaehlt === oi
-                        ? "border-[#C4877F] bg-[var(--lern-accent)]/5"
-                        : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)] hover:border-[#B07A72]/40"
+                        ? "border-[#218C71] bg-[var(--lern-accent)]/5"
+                        : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)] hover:border-[#1A7359]/40"
                     }`}
                   >
                     <span className="text-[var(--lern-text-tertiary)] mr-2 font-semibold">
@@ -573,7 +573,7 @@ export default function PruefungPage() {
     const reife =
       ergebnis.prozent >= 80 ? "gruen" : ergebnis.prozent >= 60 ? "gelb" : "rot";
     const farbe =
-      reife === "gruen" ? "#6B8F71" : reife === "gelb" ? "#D4956A" : "#C96B5C";
+      reife === "gruen" ? "#3E5A6A" : reife === "gelb" ? "#D4956A" : "#C96B5C";
     const label =
       reife === "gruen"
         ? "Pr\u00fcfungsreif"
@@ -621,7 +621,7 @@ export default function PruefungPage() {
                     {ergebnis.prozent}%
                   </span>
                   {ergebnis.prozent > vorherigerVersuch.prozent && (
-                    <span className="text-[#6B8F71] font-semibold">
+                    <span className="text-[#3E5A6A] font-semibold">
                       {" "}(+{ergebnis.prozent - vorherigerVersuch.prozent}%)
                     </span>
                   )}
@@ -639,7 +639,7 @@ export default function PruefungPage() {
           >
             <div className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-4 text-center">
               <p className="text-xs text-[var(--lern-text-secondary)]">Richtig</p>
-              <p className="text-xl font-bold text-[#6B8F71]">{ergebnis.richtig}</p>
+              <p className="text-xl font-bold text-[#3E5A6A]">{ergebnis.richtig}</p>
             </div>
             <div className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-4 text-center">
               <p className="text-xs text-[var(--lern-text-secondary)]">Falsch</p>
@@ -691,8 +691,8 @@ export default function PruefungPage() {
                   key={f.id}
                   className="rounded-xl border p-4 space-y-2"
                   style={{
-                    borderColor: ergebnis.antworten[i] ? "#6B8F7140" : "#C96B5C40",
-                    backgroundColor: ergebnis.antworten[i] ? "#6B8F7108" : "#C96B5C08",
+                    borderColor: ergebnis.antworten[i] ? "#3E5A6A40" : "#C96B5C40",
+                    backgroundColor: ergebnis.antworten[i] ? "#3E5A6A08" : "#C96B5C08",
                   }}
                 >
                   <div className="flex items-start gap-2">

@@ -63,7 +63,7 @@ export default function ReviewPage() {
           <div className="flex items-center justify-between">
             <Link
               href={`/${locale}/dashboard`}
-              className="text-sm font-medium text-[#C4877F] active:opacity-60"
+              className="text-sm font-medium text-[#218C71] active:opacity-60"
             >
               Zurück
             </Link>
@@ -79,11 +79,11 @@ export default function ReviewPage() {
         {/* Statistik-Leiste */}
         <div className="mb-6 grid grid-cols-3 gap-3">
           <div className="rounded-2xl bg-[var(--lern-bg-primary)] p-4 text-center shadow-sm">
-            <p className="text-2xl font-bold text-[#C4877F]">{statistiken.faellig}</p>
+            <p className="text-2xl font-bold text-[#218C71]">{statistiken.faellig}</p>
             <p className="text-xs text-[var(--lern-text-tertiary)]">Fällig</p>
           </div>
           <div className="rounded-2xl bg-[var(--lern-bg-primary)] p-4 text-center shadow-sm">
-            <p className="text-2xl font-bold text-[#6B8F71]">{erledigtHeute}</p>
+            <p className="text-2xl font-bold text-[#3E5A6A]">{erledigtHeute}</p>
             <p className="text-xs text-[var(--lern-text-tertiary)]">Heute erledigt</p>
           </div>
           <div className="rounded-2xl bg-[var(--lern-bg-primary)] p-4 text-center shadow-sm">
@@ -134,7 +134,7 @@ export default function ReviewPage() {
                     animate={{ rotateY: 0, opacity: 1 }}
                     exit={{ rotateY: 90, opacity: 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
-                    className="min-h-[250px] rounded-2xl bg-[#C4877F] p-8 shadow-lg flex flex-col items-center justify-center"
+                    className="min-h-[250px] rounded-2xl bg-[#218C71] p-8 shadow-lg flex flex-col items-center justify-center"
                   >
                     <p className="text-xs uppercase tracking-wide text-white/70 mb-4">
                       Antwort
@@ -154,7 +154,7 @@ export default function ReviewPage() {
                   key={stufe}
                   className={`h-1.5 w-8 rounded-full transition-colors ${
                     stufe <= aktuelleKarte.stufe
-                      ? "bg-[#6B8F71]"
+                      ? "bg-[#3E5A6A]"
                       : "bg-[var(--lern-divider)]"
                   }`}
                 />
@@ -196,10 +196,10 @@ export default function ReviewPage() {
 
                   <button
                     onClick={() => handleBewertung("gut")}
-                    className="rounded-2xl bg-[#6B8F71]/10 px-3 py-4 min-h-[44px] text-center transition-all active:scale-95"
+                    className="rounded-2xl bg-[#3E5A6A]/10 px-3 py-4 min-h-[44px] text-center transition-all active:scale-95"
                   >
                     <span className="text-lg">👍</span>
-                    <p className="mt-1 text-xs font-semibold text-[#6B8F71]">
+                    <p className="mt-1 text-xs font-semibold text-[#3E5A6A]">
                       {t("good")}
                     </p>
                     <p className="text-xs text-[var(--lern-text-tertiary)]">
@@ -209,10 +209,10 @@ export default function ReviewPage() {
 
                   <button
                     onClick={() => handleBewertung("leicht")}
-                    className="rounded-2xl bg-[#C4877F]/10 px-3 py-4 min-h-[44px] text-center transition-all active:scale-95"
+                    className="rounded-2xl bg-[#218C71]/10 px-3 py-4 min-h-[44px] text-center transition-all active:scale-95"
                   >
                     <span className="text-lg">🚀</span>
-                    <p className="mt-1 text-xs font-semibold text-[#C4877F]">
+                    <p className="mt-1 text-xs font-semibold text-[#218C71]">
                       {t("easy")}
                     </p>
                     <p className="text-xs text-[var(--lern-text-tertiary)]">
@@ -236,7 +236,7 @@ export default function ReviewPage() {
             animate={{ opacity: 1, scale: 1 }}
             className="mt-12 text-center"
           >
-            <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-[#6B8F71]/10">
+            <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-[#3E5A6A]/10">
               <span className="text-5xl">🎉</span>
             </div>
             <h2 className="text-2xl font-bold text-[var(--lern-text-primary)]">
@@ -249,7 +249,7 @@ export default function ReviewPage() {
             </p>
             <Link
               href={`/${locale}/lernen/le-01`}
-              className="mt-6 inline-block rounded-2xl bg-[#C4877F] px-8 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+              className="mt-6 inline-block rounded-2xl bg-[#218C71] px-8 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
             >
               Weiterlernen
             </Link>

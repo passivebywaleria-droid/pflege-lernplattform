@@ -159,10 +159,10 @@ export function FallverlaufEngine({ examCase, onExit }: FallverlaufEngineProps) 
       <div className="px-4 py-6 space-y-5" style={{ color: "var(--lern-text-primary)" }}>
         <div className="text-center space-y-3">
           <div className={`w-16 h-16 mx-auto rounded-full flex items-center justify-center ${
-            prozent >= 70 ? "bg-[#6B8F71]/10" : prozent >= 50 ? "bg-[#D4956A]/10" : "bg-[#C96B5C]/10"
+            prozent >= 70 ? "bg-[#3E5A6A]/10" : prozent >= 50 ? "bg-[#D4956A]/10" : "bg-[#C96B5C]/10"
           }`}>
             <span className={`text-2xl font-bold ${
-              prozent >= 70 ? "text-[#6B8F71]" : prozent >= 50 ? "text-[#D4956A]" : "text-[#C96B5C]"
+              prozent >= 70 ? "text-[#3E5A6A]" : prozent >= 50 ? "text-[#D4956A]" : "text-[#C96B5C]"
             }`}>{prozent}%</span>
           </div>
           <h2 className="text-xl font-bold">Fallverlauf abgeschlossen</h2>
@@ -181,7 +181,7 @@ export function FallverlaufEngine({ examCase, onExit }: FallverlaufEngineProps) 
                   <span className="text-xs font-bold text-[#8e8e93]">{i + 1}</span>
                   <span className="text-sm font-medium">{examCase.phasen[i]?.zeitpunkt}</span>
                 </div>
-                <span className={`text-sm font-semibold ${phaseProzent >= 70 ? "text-[#6B8F71]" : "text-[#D4956A]"}`}>
+                <span className={`text-sm font-semibold ${phaseProzent >= 70 ? "text-[#3E5A6A]" : "text-[#D4956A]"}`}>
                   {result.richtig}/{result.total}
                 </span>
               </div>
@@ -213,7 +213,7 @@ export function FallverlaufEngine({ examCase, onExit }: FallverlaufEngineProps) 
           <h2 className="text-lg font-bold">Phase abgeschlossen</h2>
           <p className="text-sm text-[var(--lern-text-secondary)]">{currentPhase.zeitpunkt}</p>
           <div className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-semibold ${
-            phaseProzent >= 70 ? "bg-[#6B8F71]/10 text-[#6B8F71]" : "bg-[#D4956A]/10 text-[#D4956A]"
+            phaseProzent >= 70 ? "bg-[#3E5A6A]/10 text-[#3E5A6A]" : "bg-[#D4956A]/10 text-[#D4956A]"
           }`}>
             {phaseProzent >= 70 ? <CheckCircle2 size={16} /> : <XCircle size={16} />}
             {lastResult?.richtig}/{lastResult?.total} richtig

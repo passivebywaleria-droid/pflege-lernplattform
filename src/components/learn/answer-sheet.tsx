@@ -19,8 +19,8 @@ export function AnswerSheet({
   fehlerKategorie,
   onNext,
 }: AnswerSheetProps) {
-  const color = isCorrect ? "#6B8F71" : "#C96B5C";
-  const hoverColor = isCorrect ? "#5a7a60" : "#b05e50";
+  const color = isCorrect ? "#3E5A6A" : "#C96B5C";
+  const hoverColor = isCorrect ? "#2F4654" : "#b05e50";
 
   return (
     <AnimatePresence>

@@ -99,7 +99,7 @@ export default function AdminStatistikenPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             <StatKarte label="Gesamt" wert={stats.users.totalUsers} farbe="text-[#8e8e93]" />
             <StatKarte label="Schüler" wert={stats.users.students} farbe="text-[var(--lern-accent)]" />
-            <StatKarte label="Lehrer" wert={stats.users.teachers} farbe="text-[#6B8F71]" />
+            <StatKarte label="Lehrer" wert={stats.users.teachers} farbe="text-[#3E5A6A]" />
             <StatKarte label="Aktiv" wert={stats.users.activeUsers} farbe="text-[#4A7350]" />
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function AdminStatistikenPage() {
           <h2 className="text-sm font-semibold text-[#8e8e93] mb-3">Schulen</h2>
           <div className="grid grid-cols-3 gap-3">
             <StatKarte label="Gesamt" wert={stats.schools.totalSchools} farbe="text-[#8e8e93]" />
-            <StatKarte label="Bezahlt" wert={stats.schools.paidSchools} farbe="text-[#6B8F71]" />
+            <StatKarte label="Bezahlt" wert={stats.schools.paidSchools} farbe="text-[#3E5A6A]" />
             <StatKarte label="Pilot" wert={stats.schools.pilotSchools} farbe="text-[#D4956A]" />
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function AdminStatistikenPage() {
           <h2 className="text-sm font-semibold text-[#8e8e93] mb-3">Aktivität (30 Tage)</h2>
           <div className="grid grid-cols-3 gap-3">
             <StatKarte label="Lernstunden" wert={stunden30d} farbe="text-[var(--lern-accent)]" />
-            <StatKarte label="Sessions" wert={stats.activity30d.totalSessions} farbe="text-[#6B8F71]" />
+            <StatKarte label="Sessions" wert={stats.activity30d.totalSessions} farbe="text-[#3E5A6A]" />
             <StatKarte label="Steps" wert={stats.activity30d.totalSteps} farbe="text-[#D4956A]" />
           </div>
         </div>

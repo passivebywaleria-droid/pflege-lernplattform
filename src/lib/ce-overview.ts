@@ -11,12 +11,12 @@ export interface CeInfo {
 }
 
 export const ceUebersicht: CeInfo[] = [
-  { id: "ce-01", titel: "Ausbildungsstart", les: 5, farbe: "#C4877F" },
-  { id: "ce-02", titel: "Zu pflegende Menschen", les: 6, farbe: "#6B8F71" },
+  { id: "ce-01", titel: "Ausbildungsstart", les: 5, farbe: "#218C71" },
+  { id: "ce-02", titel: "Zu pflegende Menschen", les: 6, farbe: "#3E5A6A" },
   { id: "ce-03", titel: "Erste Pflegeerfahrungen", les: 5, farbe: "#D4956A" },
   { id: "ce-04", titel: "Gesundheit fördern", les: 5, farbe: "#9B7EA6" },
   { id: "ce-05", titel: "Pflegeprozess gestalten", les: 5, farbe: "#C96B5C" },
-  { id: "ce-06", titel: "In Akutsituationen handeln", les: 4, farbe: "#B07A72" },
+  { id: "ce-06", titel: "In Akutsituationen handeln", les: 4, farbe: "#1A7359" },
   { id: "ce-07", titel: "Rehabilitativ pflegen", les: 5, farbe: "#5856D6" },
   { id: "ce-08", titel: "Menschen in Krisen begleiten", les: 5, farbe: "#00C7BE" },
   { id: "ce-09", titel: "Langzeitpflegesettings", les: 5, farbe: "#FF6482" },

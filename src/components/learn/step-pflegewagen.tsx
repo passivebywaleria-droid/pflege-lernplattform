@@ -32,17 +32,17 @@ const ZONE_VARIANTS: Record<
   { border: string; bg: string; text: string; itemBg: string; label: string }
 > = {
   primary: {
-    border: "border-[#6B8F71]/40",
-    bg: "bg-[#6B8F71]/8",
-    text: "text-[#5A7A60]",
-    itemBg: "bg-[#6B8F71]/10",
+    border: "border-[#3E5A6A]/40",
+    bg: "bg-[#3E5A6A]/8",
+    text: "text-[#2F4654]",
+    itemBg: "bg-[#3E5A6A]/10",
     label: "Auf den Wagen",
   },
   secondary: {
-    border: "border-[#C4877F]/40",
-    bg: "bg-[#C4877F]/8",
-    text: "text-[#A66860]",
-    itemBg: "bg-[#C4877F]/10",
+    border: "border-[#218C71]/40",
+    bg: "bg-[#218C71]/8",
+    text: "text-[#1A7359]",
+    itemBg: "bg-[#218C71]/10",
     label: "Auf den Wagen",
   },
   discard: {
@@ -139,24 +139,24 @@ export function StepPflegewagen({
 
     const borderColor = opts.submitted
       ? opts.isCorrect
-        ? "border-[#6B8F71]"
+        ? "border-[#3E5A6A]"
         : "border-[#C96B5C]"
       : opts.selected
-        ? "border-[#C4877F]"
+        ? "border-[#218C71]"
         : "border-[var(--lern-border)]";
 
     const bgColor = opts.submitted
       ? opts.isCorrect
-        ? "bg-[#6B8F71]/10"
+        ? "bg-[#3E5A6A]/10"
         : "bg-[#C96B5C]/10"
       : opts.selected
-        ? "bg-[#C4877F]/10"
+        ? "bg-[#218C71]/10"
         : "bg-[var(--lern-bg-primary)]";
 
     const iconColor = opts.submitted
       ? opts.isCorrect
-        ? "text-[#5A7A60]"
-        : "text-[#A04F44]"
+        ? "text-[#2F4654]"
+        : "text-[#3E5A6A]"
       : "text-[var(--lern-text-primary)]";
 
     return (
@@ -320,7 +320,7 @@ export function StepPflegewagen({
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           onClick={handleCheck}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] text-white font-semibold py-3 hover:bg-[#B07A72] transition-colors"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] text-white font-semibold py-3 hover:bg-[#1A7359] transition-colors"
         >
           Prüfen
         </motion.button>
@@ -356,7 +356,7 @@ export function StepPflegewagen({
                   >
                     <Icon
                       className={`h-5 w-5 mt-0.5 shrink-0 ${
-                        isCorrect ? "text-[#5A7A60]" : "text-[#A04F44]"
+                        isCorrect ? "text-[#2F4654]" : "text-[#3E5A6A]"
                       }`}
                       aria-hidden="true"
                     />
@@ -376,7 +376,7 @@ export function StepPflegewagen({
 
           <button
             onClick={() => onNext(allCorrect)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] text-white font-semibold py-3 hover:bg-[#B07A72] transition-colors"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] text-white font-semibold py-3 hover:bg-[#1A7359] transition-colors"
           >
             Weiter
           </button>

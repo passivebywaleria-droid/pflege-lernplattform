@@ -83,13 +83,13 @@ export function StepMemory({
 
   const pairColors = [
     "bg-[var(--lern-accent)]/10 text-[var(--lern-accent)] border-[var(--lern-accent)]/30",
-    "bg-[#6B8F71]/10 text-[#6B8F71] border-[#6B8F71]/30",
+    "bg-[#3E5A6A]/10 text-[#3E5A6A] border-[#3E5A6A]/30",
     "bg-[#D4956A]/10 text-[#D4956A] border-[#D4956A]/30",
     "bg-[#9B7EA6]/10 text-[#9B7EA6] border-[#9B7EA6]/30",
     "bg-[#C96B5C]/10 text-[#C96B5C] border-[#C96B5C]/30",
     "bg-[#8AABB5]/10 text-[#8AABB5] border-[#8AABB5]/30",
     "bg-[#BFA48E]/10 text-[#BFA48E] border-[#BFA48E]/30",
-    "bg-[#B07A72]/10 text-[#B07A72] border-[#B07A72]/30",
+    "bg-[#1A7359]/10 text-[#1A7359] border-[#1A7359]/30",
   ];
 
   // Längsten Text messen um Spaltenanzahl zu berechnen
@@ -169,7 +169,7 @@ export function StepMemory({
             animate={{ opacity: 1, y: 0 }}
             role="alert"
             aria-live="polite"
-            className="rounded-2xl p-4 bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+            className="rounded-2xl p-4 bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
           >
             <p className="font-semibold text-[var(--lern-text-primary)]">
               Alle Paare in {moves} Zügen gefunden!{" "}
@@ -184,7 +184,7 @@ export function StepMemory({
           <button
             onClick={() => onNext(true)}
             aria-label="Weiter zum nächsten Schritt"
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
           >
             Weiter
           </button>

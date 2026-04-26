@@ -11,12 +11,12 @@ const BLOOM_DATA: Record<
 > = {
   1: {
     name: "Erinnern",
-    farbe: "#6B8F71",
+    farbe: "#3E5A6A",
     erklaerung: "Du musstest Fakten oder Begriffe abrufen.",
   },
   2: {
     name: "Verstehen",
-    farbe: "#C4877F",
+    farbe: "#218C71",
     erklaerung: "Du musstest etwas in eigenen Worten erklären können.",
   },
   3: {
@@ -184,7 +184,7 @@ export function SandwichFeedbackDisplay({
       aria-live="polite"
       className={`rounded-2xl p-4 space-y-2 ${
         correct
-          ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+          ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
           : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
       }`}
     >
@@ -192,7 +192,7 @@ export function SandwichFeedbackDisplay({
       <p className="font-semibold text-[var(--lern-text-primary)]">
         {correct ? (
           <span className="inline-flex items-center gap-1.5">
-            <span className="text-[#6B8F71]">✓</span> {feedback.lob}
+            <span className="text-[#3E5A6A]">✓</span> {feedback.lob}
           </span>
         ) : (
           <span className="inline-flex items-center gap-1.5">

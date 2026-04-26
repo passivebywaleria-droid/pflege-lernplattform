@@ -83,7 +83,7 @@ export function StepSwipe({
           animate={{ opacity: 1, y: 0 }}
           className={`rounded-2xl p-5 text-center ${
             allCorrect
-              ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+              ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
               : "bg-[#D4956A]/10 border border-[#D4956A]/30"
           }`}
         >
@@ -100,7 +100,7 @@ export function StepSwipe({
         </motion.div>
         <button
           onClick={() => onNext(allCorrect)}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
         >
           Weiter
         </button>
@@ -133,7 +133,7 @@ export function StepSwipe({
             className={`h-2 flex-1 rounded-full transition-colors ${
               i < results.length
                 ? results[i]
-                  ? "bg-[#6B8F71]"
+                  ? "bg-[#3E5A6A]"
                   : "bg-[#C96B5C]"
                 : i === cardIdx
                   ? "bg-[var(--lern-accent)]"
@@ -164,7 +164,7 @@ export function StepSwipe({
           <div className={`rounded-2xl border-[1.5px] p-6 text-center transition-colors ${
             showResult
               ? lastAnswer?.correct
-                ? "border-[#6B8F71] bg-[#6B8F71]/5"
+                ? "border-[#3E5A6A] bg-[#3E5A6A]/5"
                 : "border-[#C96B5C] bg-[#C96B5C]/5"
               : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)] shadow-sm"
           }`}>
@@ -185,7 +185,7 @@ export function StepSwipe({
               </button>
               <button
                 onClick={() => handleAnswer(true)}
-                className="flex items-center justify-center gap-2 rounded-full border-[1.5px] border-[#6B8F71]/40 bg-[#6B8F71]/5 px-5 py-3.5 text-sm font-bold text-[#6B8F71] transition-all active:scale-[0.96] active:bg-[#6B8F71]/20"
+                className="flex items-center justify-center gap-2 rounded-full border-[1.5px] border-[#3E5A6A]/40 bg-[#3E5A6A]/5 px-5 py-3.5 text-sm font-bold text-[#3E5A6A] transition-all active:scale-[0.96] active:bg-[#3E5A6A]/20"
               >
                 <span className="text-base">✓</span>
                 Wahr
@@ -202,7 +202,7 @@ export function StepSwipe({
             >
               <div className={`rounded-2xl p-4 ${
                 lastAnswer.correct
-                  ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+                  ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
                   : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
               }`}>
                 <p className="font-bold text-sm mb-1">
@@ -221,7 +221,7 @@ export function StepSwipe({
 
               <button
                 onClick={nextCard}
-                className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-3.5 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+                className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-3.5 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
               >
                 {cardIdx + 1 < cards.length ? "Nächste Aussage" : "Weiter"}
               </button>

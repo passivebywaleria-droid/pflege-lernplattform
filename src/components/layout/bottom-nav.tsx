@@ -6,11 +6,10 @@ import { useTranslations, useLocale } from "next-intl"
 import { cn } from "@/lib/utils"
 
 const navItems = [
-  { key: "home" as const, path: "/dashboard", icon: HomeIcon, ariaLabel: "Dashboard" },
-  { key: "learn" as const, path: "/lernen", icon: BookIcon, ariaLabel: "Lernen" },
-  { key: "wochenplan" as const, path: "/wochenplan", icon: CalendarIcon, ariaLabel: "Wochenplan" },
-  { key: "review" as const, path: "/review", icon: RepeatIcon, ariaLabel: "Karteikarten" },
-  { key: "progress" as const, path: "/fortschritt", icon: ChartIcon, ariaLabel: "Fortschritt" },
+  { key: "home" as const, path: "/dashboard", icon: HomeIcon, ariaLabel: "Home" },
+  { key: "learn" as const, path: "/lernen", icon: LearnIcon, ariaLabel: "Lernen" },
+  { key: "cards" as const, path: "/review", icon: CardsIcon, ariaLabel: "Karten" },
+  { key: "me" as const, path: "/dashboard", icon: MeIcon, ariaLabel: "Profil" },
 ]
 
 export function BottomNav() {
@@ -19,26 +18,41 @@ export function BottomNav() {
   const locale = useLocale()
 
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-background md:hidden">
-      <div className="flex h-16 items-center justify-around">
-        {navItems.map((item) => {
+    <nav
+      className="fixed inset-x-0 bottom-0 z-50 border-t border-[var(--lern-border)] bg-[var(--lern-bg-primary)] md:hidden"
+      style={{ paddingBottom: "env(safe-area-inset-bottom, 14px)" }}
+    >
+      <div className="flex items-stretch px-3 pt-2 pb-1">
+        {navItems.map((item, idx) => {
           const href = `/${locale}${item.path}`
-          const isActive =
-            pathname === href || pathname.startsWith(href + "/")
+          // "Ich" + "Home" zeigen beide auf /dashboard — nur ersten als active werten
+          const isHome = item.key === "home"
+          const isMe = item.key === "me"
+          const matchesPath = pathname === href || pathname.startsWith(href + "/")
+          const isActive = isMe
+            ? false  // me-Tab später eigene Route
+            : isHome
+              ? matchesPath && !pathname.startsWith(`/${locale}/lernen`) && !pathname.startsWith(`/${locale}/review`)
+              : matchesPath
+
           return (
             <Link
-              key={item.key}
+              key={`${item.key}-${idx}`}
               href={href}
               aria-label={item.ariaLabel}
-              className={cn(
-                "flex flex-col items-center justify-center gap-1 min-h-[44px] min-w-[44px] px-3 py-2 text-xs font-medium transition-colors",
-                isActive
-                  ? "text-primary"
-                  : "text-muted-foreground hover:text-foreground"
-              )}
+              className="flex flex-1 flex-col items-center justify-center gap-1 py-1 min-h-[44px]"
             >
-              <item.icon className="h-5 w-5" />
-              <span>{t(item.key)}</span>
+              <item.icon active={isActive} />
+              <span
+                className={cn(
+                  "text-[10px] tracking-wide transition-colors",
+                  isActive
+                    ? "font-semibold text-[var(--lern-accent)]"
+                    : "font-medium text-[var(--lern-text-tertiary)]"
+                )}
+              >
+                {t(item.key)}
+              </span>
             </Link>
           )
         })}
@@ -47,50 +61,80 @@ export function BottomNav() {
   )
 }
 
-function HomeIcon({ className }: { className?: string }) {
+// SVG-Icons aus claude-design-bundle/tabbar.jsx — 1:1 übernommen
+function HomeIcon({ active }: { active: boolean }) {
+  const stroke = active ? "var(--lern-accent)" : "var(--lern-text-tertiary)"
+  const fill = active ? "var(--lern-accent-bg)" : "none"
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-      <polyline points="9 22 9 12 15 12 15 22" />
+    <svg width="24" height="24" viewBox="0 0 24 24" fill={fill}>
+      <path
+        d="M4 11 L12 4 L20 11 V20 H14 V14 H10 V20 H4 Z"
+        stroke={stroke}
+        strokeWidth={1.6}
+        strokeLinejoin="round"
+        fill={fill}
+      />
     </svg>
   )
 }
 
-function BookIcon({ className }: { className?: string }) {
+function LearnIcon({ active }: { active: boolean }) {
+  const stroke = active ? "var(--lern-accent)" : "var(--lern-text-tertiary)"
+  const fill = active ? "var(--lern-accent-bg)" : "none"
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path
+        d="M3 6 L12 3 L21 6 L12 9 Z"
+        stroke={stroke}
+        strokeWidth={1.6}
+        strokeLinejoin="round"
+        fill={fill}
+      />
+      <path
+        d="M6 9 V14 Q12 17 18 14 V9"
+        stroke={stroke}
+        strokeWidth={1.6}
+        strokeLinejoin="round"
+        fill="none"
+      />
+      <line
+        x1="21"
+        y1="6"
+        x2="21"
+        y2="12"
+        stroke={stroke}
+        strokeWidth={1.6}
+        strokeLinecap="round"
+      />
     </svg>
   )
 }
 
-function RepeatIcon({ className }: { className?: string }) {
+function CardsIcon({ active }: { active: boolean }) {
+  const stroke = active ? "var(--lern-accent)" : "var(--lern-text-tertiary)"
+  const fill = active ? "var(--lern-accent-bg)" : "none"
+  const innerFill = active ? "var(--lern-bg-primary)" : "none"
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="m17 2 4 4-4 4" />
-      <path d="M3 11v-1a4 4 0 0 1 4-4h14" />
-      <path d="m7 22-4-4 4-4" />
-      <path d="M21 13v1a4 4 0 0 1-4 4H3" />
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <rect x="6" y="4" width="13" height="16" rx="2" stroke={stroke} strokeWidth={1.6} fill={fill} />
+      <rect x="3" y="7" width="13" height="13" rx="2" stroke={stroke} strokeWidth={1.6} fill={innerFill} />
     </svg>
   )
 }
 
-function CalendarIcon({ className }: { className?: string }) {
+function MeIcon({ active }: { active: boolean }) {
+  const stroke = active ? "var(--lern-accent)" : "var(--lern-text-tertiary)"
+  const fill = active ? "var(--lern-accent-bg)" : "none"
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect width="18" height="18" x="3" y="4" rx="2" />
-      <path d="M16 2v4" />
-      <path d="M8 2v4" />
-      <path d="M3 10h18" />
-    </svg>
-  )
-}
-
-function ChartIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M3 3v16a2 2 0 0 0 2 2h16" />
-      <path d="m7 11 4-4 4 4 5-5" />
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <circle cx="12" cy="9" r="3.5" stroke={stroke} strokeWidth={1.6} fill={fill} />
+      <path
+        d="M5 20 Q5 14 12 14 Q19 14 19 20"
+        stroke={stroke}
+        strokeWidth={1.6}
+        strokeLinecap="round"
+        fill="none"
+      />
     </svg>
   )
 }

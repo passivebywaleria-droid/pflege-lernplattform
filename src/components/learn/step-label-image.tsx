@@ -125,7 +125,7 @@ export function StepLabelImage({
               className={`h-8 w-8 rounded-full border-[1.5px] flex items-center justify-center text-xs font-bold transition-all ${
                 checked
                   ? answers[label.id] === label.correct
-                    ? "bg-[#6B8F71]/30 border-[#6B8F71] text-[#6B8F71]"
+                    ? "bg-[#3E5A6A]/30 border-[#3E5A6A] text-[#3E5A6A]"
                     : "bg-[#C96B5C]/30 border-[#C96B5C] text-[#C96B5C]"
                   : answers[label.id]
                   ? "bg-[var(--lern-accent)]/30 border-[var(--lern-accent)] text-[var(--lern-accent)]"
@@ -149,7 +149,7 @@ export function StepLabelImage({
                 className={`absolute top-full mt-1 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs font-bold px-1.5 py-0.5 rounded ${
                   checked
                     ? answers[label.id] === label.correct
-                      ? "bg-[#6B8F71]/20 text-[#6B8F71]"
+                      ? "bg-[#3E5A6A]/20 text-[#3E5A6A]"
                       : "bg-[#C96B5C]/20 text-[#C96B5C]"
                     : "bg-[var(--lern-accent)]/20 text-[var(--lern-accent)]"
                 }`}
@@ -258,7 +258,7 @@ export function StepLabelImage({
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           onClick={handleCheck}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
         >
           Überprüfen
         </motion.button>
@@ -275,13 +275,13 @@ export function StepLabelImage({
             <div
               className={`rounded-2xl p-4 border ${
                 allCorrect
-                  ? "bg-[#6B8F71]/10 border-[#6B8F71]/30"
+                  ? "bg-[#3E5A6A]/10 border-[#3E5A6A]/30"
                   : "bg-[#D4956A]/10 border-[#D4956A]/30"
               }`}
             >
               <p
                 className={`font-semibold ${
-                  allCorrect ? "text-[#6B8F71]" : "text-[#D4956A]"
+                  allCorrect ? "text-[#3E5A6A]" : "text-[#D4956A]"
                 }`}
               >
                 {allCorrect
@@ -297,7 +297,7 @@ export function StepLabelImage({
 
             <button
               onClick={() => onNext(allCorrect)}
-              className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+              className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
             >
               Weiter
             </button>

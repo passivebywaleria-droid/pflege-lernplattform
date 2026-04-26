@@ -12,9 +12,9 @@ interface LernSnackTabProps {
 }
 
 const TAG_COLORS: Record<string, string> = {
-  pflege: "bg-[#6B8F71]/10 text-[#6B8F71]",
+  pflege: "bg-[#3E5A6A]/10 text-[#3E5A6A]",
   anatomie: "bg-[#7A93A8]/10 text-[#7A93A8]",
-  krankheitslehre: "bg-[#C4877F]/10 text-[#C4877F]",
+  krankheitslehre: "bg-[#218C71]/10 text-[#218C71]",
 };
 
 function storageKey(leId: string, itemId: string): string {

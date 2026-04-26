@@ -21,9 +21,9 @@ const TAG_NAMEN: Record<string, string> = {
 };
 
 const TYP_FARBEN: Record<string, { bg: string; text: string; badge: string }> = {
-  neu: { bg: "bg-[#C4877F]/5", text: "text-[#C4877F]", badge: "bg-[#C4877F]/10 text-[#C4877F]" },
+  neu: { bg: "bg-[#218C71]/5", text: "text-[#218C71]", badge: "bg-[#218C71]/10 text-[#218C71]" },
   vertiefung: { bg: "bg-[#D4956A]/5", text: "text-[#D4956A]", badge: "bg-[#D4956A]/10 text-[#D4956A]" },
-  wiederholung: { bg: "bg-[#6B8F71]/5", text: "text-[#6B8F71]", badge: "bg-[#6B8F71]/10 text-[#6B8F71]" },
+  wiederholung: { bg: "bg-[#3E5A6A]/5", text: "text-[#3E5A6A]", badge: "bg-[#3E5A6A]/10 text-[#3E5A6A]" },
 };
 
 const TYP_LABELS: Record<string, string> = {
@@ -52,18 +52,18 @@ function TagKarte({
       transition={{ delay: index * 0.08, duration: 0.3 }}
       className={`rounded-2xl border-2 transition-all ${
         istHeute
-          ? "border-[#C4877F] shadow-lg shadow-[#C4877F]/10"
+          ? "border-[#218C71] shadow-lg shadow-[#218C71]/10"
           : "border-transparent"
       } bg-[var(--lern-bg-primary)] p-5`}
     >
       {/* Tag-Header */}
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
-          <span className={`text-sm font-bold ${istHeute ? "text-[#C4877F]" : "text-[var(--lern-text-primary)]"}`}>
+          <span className={`text-sm font-bold ${istHeute ? "text-[#218C71]" : "text-[var(--lern-text-primary)]"}`}>
             {TAG_NAMEN[tag.tag]}
           </span>
           {istHeute && (
-            <span className="rounded-full bg-[#C4877F] px-2 py-0.5 text-xs font-semibold text-white">
+            <span className="rounded-full bg-[#218C71] px-2 py-0.5 text-xs font-semibold text-white">
               {t("today")}
             </span>
           )}
@@ -89,7 +89,7 @@ function TagKarte({
         </div>
         <div className="h-1.5 rounded-full bg-[var(--lern-bg)]">
           <motion.div
-            className="h-full rounded-full bg-[#C4877F]"
+            className="h-full rounded-full bg-[#218C71]"
             initial={{ width: 0 }}
             animate={{ width: `${tag.fortschrittProzent}%` }}
             transition={{ delay: index * 0.08 + 0.3, duration: 0.5 }}
@@ -101,7 +101,7 @@ function TagKarte({
       {istHeute && (
         <Link
           href={`/${locale}/lernen/${tag.leId}`}
-          className="block w-full rounded-xl bg-[#C4877F] px-4 py-3 text-center text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+          className="block w-full rounded-xl bg-[#218C71] px-4 py-3 text-center text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
         >
           {t("startNow")}
         </Link>
@@ -147,7 +147,7 @@ export default function WochenplanPage() {
           <div className="flex items-center justify-between">
             <Link
               href={`/${locale}/dashboard`}
-              className="text-sm font-medium text-[#C4877F] active:opacity-60"
+              className="text-sm font-medium text-[#218C71] active:opacity-60"
             >
               Zurück
             </Link>
@@ -175,8 +175,8 @@ export default function WochenplanPage() {
                 {t("weekProgress", { percent: gesamtFortschritt })}
               </p>
             </div>
-            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#C4877F]/10">
-              <span className="text-lg font-bold text-[#C4877F]">
+            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#218C71]/10">
+              <span className="text-lg font-bold text-[#218C71]">
                 {gesamtFortschritt}%
               </span>
             </div>
@@ -189,9 +189,9 @@ export default function WochenplanPage() {
                 <div
                   className={`flex h-10 w-10 items-center justify-center rounded-full text-xs font-bold transition-colors ${
                     i === heuteIndex
-                      ? "bg-[#C4877F] text-white"
+                      ? "bg-[#218C71] text-white"
                       : tag.fortschrittProzent >= 100
-                        ? "bg-[#6B8F71] text-white"
+                        ? "bg-[#3E5A6A] text-white"
                         : "bg-[var(--lern-bg)] text-[var(--lern-text-tertiary)]"
                   }`}
                 >
@@ -200,9 +200,9 @@ export default function WochenplanPage() {
                 <div
                   className={`h-1 w-6 rounded-full ${
                     tag.fortschrittProzent >= 100
-                      ? "bg-[#6B8F71]"
+                      ? "bg-[#3E5A6A]"
                       : tag.fortschrittProzent > 0
-                        ? "bg-[#C4877F]"
+                        ? "bg-[#218C71]"
                         : "bg-[var(--lern-divider)]"
                   }`}
                 />

@@ -57,15 +57,15 @@ function SortableItem({
   };
 
   const borderColor = submitted
-    ? isCorrect ? "border-[#6B8F71]" : "border-[#C96B5C]"
-    : isDragging ? "border-[#C4877F]" : "border-[var(--lern-border)]";
+    ? isCorrect ? "border-[#3E5A6A]" : "border-[#C96B5C]"
+    : isDragging ? "border-[#218C71]" : "border-[var(--lern-border)]";
 
   const bgColor = submitted
-    ? isCorrect ? "bg-[#6B8F71]/5" : "bg-[#C96B5C]/5"
-    : isDragging ? "bg-[#C4877F]/5" : "bg-[var(--lern-bg-primary)]";
+    ? isCorrect ? "bg-[#3E5A6A]/5" : "bg-[#C96B5C]/5"
+    : isDragging ? "bg-[#218C71]/5" : "bg-[var(--lern-bg-primary)]";
 
   const numBg = submitted
-    ? isCorrect ? "bg-[#6B8F71] text-white" : "bg-[#C96B5C] text-white"
+    ? isCorrect ? "bg-[#3E5A6A] text-white" : "bg-[#C96B5C] text-white"
     : "bg-[var(--lern-card-bg,#f5f5f7)] text-[var(--lern-text-secondary)]";
 
   return (
@@ -184,7 +184,7 @@ export function StepSorting({
               animate={{ opacity: 1, y: 0 }}
               className={`rounded-2xl p-4 ${
                 isFullyCorrect
-                  ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+                  ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
                   : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
               }`}
             >
@@ -215,9 +215,9 @@ export function StepSorting({
           <button
             onClick={() => setSubmitted(true)}
             className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
-            style={{ backgroundColor: "#C4877F" }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#B07A72")}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#C4877F")}
+            style={{ backgroundColor: "#218C71" }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#1A7359")}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#218C71")}
           >
             Prüfen
           </button>
@@ -225,7 +225,7 @@ export function StepSorting({
           <button
             onClick={() => onNext(isFullyCorrect)}
             className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
-            style={{ backgroundColor: isFullyCorrect ? "#6B8F71" : "#C96B5C" }}
+            style={{ backgroundColor: isFullyCorrect ? "#3E5A6A" : "#C96B5C" }}
           >
             Weiter
           </button>

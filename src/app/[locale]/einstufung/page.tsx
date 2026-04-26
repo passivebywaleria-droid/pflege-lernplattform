@@ -18,7 +18,7 @@ import { useLocale } from "next-intl"
 
 // --- Konstanten ---
 const BLAU = "var(--lern-accent)"
-const GRUEN = "#6B8F71"
+const GRUEN = "#3E5A6A"
 const ROT = "#C96B5C"
 const TEXT = "var(--lern-text-primary)"
 const GRAU = "var(--lern-text-secondary)"
@@ -158,7 +158,7 @@ export default function EinstufungPage() {
   if (!loaded) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-[var(--lern-bg-primary)]" role="status">
-        <div className="h-8 w-8 animate-spin rounded-full border-2 border-[#C4877F] border-t-transparent" />
+        <div className="h-8 w-8 animate-spin rounded-full border-2 border-[#218C71] border-t-transparent" />
         <span className="sr-only">{t("welcome.loading")}</span>
       </div>
     )

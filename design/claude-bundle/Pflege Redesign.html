@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pflege-Lernplattform · V1 + V2 Flow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: #E8E0D6; font-family: Inter, system-ui, sans-serif; }
+    * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  </style>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" src="design-canvas.jsx"></script>
+  <script type="text/babel" src="ios-frame.jsx"></script>
+  <script type="text/babel" src="shared.jsx"></script>
+  <script type="text/babel" src="v1-conservative.jsx"></script>
+  <script type="text/babel" src="v2-editorial.jsx"></script>
+
+  <script type="text/babel" data-presets="react">
+    const W = 390, H = 780;
+    function Frame({ children, dark }) {
+      return <IOSDevice width={W} height={H} dark={dark}>{children}</IOSDevice>;
+    }
+
+    function App() {
+      return (
+        <DesignCanvas>
+          <DCSection
+            id="v1"
+            title="V1 · Konservativ — shadcn-nah"
+            subtitle="Inter · klare Hierarchie · --lern-* Tokens · klick durch CE → Thema → Situation (Situation 03 / Baustein 02)"
+          >
+            <DCArtboard id="v1-ce-light" label="CE-Übersicht · Light" width={W} height={H}>
+              <Frame><V1App start="ce" /></Frame>
+            </DCArtboard>
+            <DCArtboard id="v1-thema-light" label="Thema-Detail · Light" width={W} height={H}>
+              <Frame><V1App start="thema" /></Frame>
+            </DCArtboard>
+            <DCArtboard id="v1-situation-light" label="Situation · MC-Step · Light" width={W} height={H}>
+              <Frame><V1App start="situation" /></Frame>
+            </DCArtboard>
+            <DCArtboard id="v1-ce-dark" label="CE-Übersicht · Dark" width={W} height={H}>
+              <Frame dark><V1App dark start="ce" /></Frame>
+            </DCArtboard>
+            <DCArtboard id="v1-thema-dark" label="Thema-Detail · Dark" width={W} height={H}>
+              <Frame dark><V1App dark start="thema" /></Frame>
+            </DCArtboard>
+            <DCArtboard id="v1-situation-dark" label="Situation · MC-Step · Dark" width={W} height={H}>
+              <Frame dark><V1App dark start="situation" /></Frame>
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection
+            id="v2"
+            title="V2 · Editorial — Serif-Pairing"
+            subtitle="Fraunces Headings + Inter · Magazin-Masthead · Spiral-Phasen · 3-Stufen-Switcher (Denkfrage → Hinweis → Erklärung)"
+          >
+            <DCArtboard id="v2-ce-light" label="CE-Übersicht · Light" width={W} height={H}>
+              <Frame><V2App start="ce" /></Frame>
+            </DCArtboard>
+            <DCArtboard id="v2-thema-light" label="Thema-Detail · Light" width={W} height={H}>
+              <Frame><V2App start="thema" /></Frame>
+            </DCArtboard>
+            <DCArtboard id="v2-situation-light" label="Situation · Text-Step · Light" width={W} height={H}>
+              <Frame><V2App start="situation" /></Frame>
+            </DCArtboard>
+            <DCArtboard id="v2-ce-dark" label="CE-Übersicht · Dark" width={W} height={H}>
+              <Frame dark><V2App dark start="ce" /></Frame>
+            </DCArtboard>
+            <DCArtboard id="v2-thema-dark" label="Thema-Detail · Dark" width={W} height={H}>
+              <Frame dark><V2App dark start="thema" /></Frame>
+            </DCArtboard>
+            <DCArtboard id="v2-situation-dark" label="Situation · Text-Step · Dark" width={W} height={H}>
+              <Frame dark><V2App dark start="situation" /></Frame>
+            </DCArtboard>
+          </DCSection>
+
+          <DCPostIt x={60} y={60} rotation={-2}>
+            <div style={{ fontFamily: "'Fraunces', serif", fontSize: 14, fontWeight: 500, marginBottom: 6 }}>
+              Zwei Richtungen · Light + Dark
+            </div>
+            <div style={{ fontSize: 11, lineHeight: 1.4, color: '#6B5E52' }}>
+              V1 = konservativ, eng an shadcn.
+              V2 = editorial, Serif-Treatment.
+              Beide respektieren deine <b>--lern-*</b> Tokens.
+              Klick Artboard zum Fokus (←/→/Esc).
+            </div>
+          </DCPostIt>
+        </DesignCanvas>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>

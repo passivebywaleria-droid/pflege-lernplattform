@@ -54,13 +54,13 @@ export default function TestMCPage() {
           />
         ) : (
           <div className="h-full flex flex-col items-center justify-center gap-4">
-            <div className="rounded-2xl border border-[#6B8F71]/30 bg-[#6B8F71]/5 p-6 text-center space-y-3 w-full">
+            <div className="rounded-2xl border border-[#3E5A6A]/30 bg-[#3E5A6A]/5 p-6 text-center space-y-3 w-full">
               <p className="text-2xl">🎉</p>
-              <p className="font-semibold text-[#6B8F71]">Weiter funktioniert!</p>
+              <p className="font-semibold text-[#3E5A6A]">Weiter funktioniert!</p>
               <button
                 onClick={() => setStep(0)}
                 className="rounded-xl px-4 py-2 text-sm font-medium text-white"
-                style={{ backgroundColor: "#C4877F" }}
+                style={{ backgroundColor: "#218C71" }}
               >
                 Nochmal
               </button>

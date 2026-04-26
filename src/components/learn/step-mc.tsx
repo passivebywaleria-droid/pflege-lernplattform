@@ -47,8 +47,8 @@ export function StepMC({
   const startTimeRef = useRef<number>(Date.now());
 
   // Accent color: purple for anticipation, blue for normal
-  const accentColor = isAnticipation ? "#9B7EA6" : "#C4877F";
-  const accentHover = isAnticipation ? "#8A6D95" : "#B07A72";
+  const accentColor = isAnticipation ? "#9B7EA6" : "#218C71";
+  const accentHover = isAnticipation ? "#8A6D95" : "#1A7359";
 
   // Reset startTime wenn sich der Step ändert
   useEffect(() => {
@@ -177,14 +177,14 @@ export function StepMC({
               bgColor = `bg-[${accentColor}]/10`;
             }
           } else if (showResult && isSelected && optionCorrect) {
-            borderColor = "border-[#6B8F71]";
-            bgColor = "bg-[#6B8F71]/5";
+            borderColor = "border-[#3E5A6A]";
+            bgColor = "bg-[#3E5A6A]/5";
           } else if (showResult && isSelected && !optionCorrect) {
             borderColor = "border-[#C96B5C]";
             bgColor = "bg-[#C96B5C]/5";
           } else if (showResult && !isSelected && optionCorrect) {
-            borderColor = "border-[#6B8F71]/50";
-            bgColor = "bg-[#6B8F71]/5";
+            borderColor = "border-[#3E5A6A]/50";
+            bgColor = "bg-[#3E5A6A]/5";
           } else if (isSelected) {
             borderColor = `border-[${accentColor}]`;
             bgColor = `bg-[${accentColor}]/5`;
@@ -207,7 +207,7 @@ export function StepMC({
                   className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-bold"
                   style={
                     !isAnticipation && showResult && optionCorrect
-                      ? { backgroundColor: "#6B8F71", color: "white" }
+                      ? { backgroundColor: "#3E5A6A", color: "white" }
                       : !isAnticipation && showResult && isSelected && !optionCorrect
                         ? { backgroundColor: "#C96B5C", color: "white" }
                         : isSelected
@@ -234,7 +234,7 @@ export function StepMC({
                       >
                         {/* Warum richtig/falsch Label */}
                         {!isSelected && optionCorrect && (
-                          <p className="text-xs font-semibold text-[#6B8F71] mb-0.5">Richtige Antwort</p>
+                          <p className="text-xs font-semibold text-[#3E5A6A] mb-0.5">Richtige Antwort</p>
                         )}
                         {isSelected && !optionCorrect && (
                           <p className="text-xs font-semibold text-[#C96B5C] mb-0.5">Deshalb nicht richtig:</p>

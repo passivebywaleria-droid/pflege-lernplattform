@@ -28,7 +28,7 @@ export default function LandingPage() {
             </Link>
             <Link
               href="/register"
-              className="rounded-full bg-[var(--lern-accent)] px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-[#B07A72]"
+              className="rounded-full bg-[var(--lern-accent)] px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-[#1A7359]"
             >
               Kostenlos testen
             </Link>
@@ -52,7 +52,7 @@ export default function LandingPage() {
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Link
               href="/register"
-              className="rounded-full bg-[var(--lern-accent)] px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-[var(--lern-accent)]/25 transition-all hover:bg-[#B07A72] hover:shadow-xl"
+              className="rounded-full bg-[var(--lern-accent)] px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-[var(--lern-accent)]/25 transition-all hover:bg-[#1A7359] hover:shadow-xl"
             >
               Kostenlos starten
             </Link>
@@ -158,7 +158,7 @@ export default function LandingPage() {
           </p>
           <Link
             href="/lernen"
-            className="inline-flex items-center gap-2 rounded-full bg-[var(--lern-accent)] px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-[var(--lern-accent)]/25 transition-all hover:bg-[#B07A72] hover:shadow-xl"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--lern-accent)] px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-[var(--lern-accent)]/25 transition-all hover:bg-[#1A7359] hover:shadow-xl"
           >
             <span>Demo-Lektion starten</span>
             <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -229,7 +229,7 @@ export default function LandingPage() {
               </ul>
               <a
                 href="mailto:info@pflege-lernplattform.de?subject=Schullizenz%20anfragen"
-                className="block w-full rounded-full bg-[var(--lern-accent)] py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-[#B07A72]"
+                className="block w-full rounded-full bg-[var(--lern-accent)] py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-[#1A7359]"
               >
                 Schullizenz anfragen
               </a>
@@ -285,7 +285,7 @@ export default function LandingPage() {
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
             <a
               href="mailto:info@pflege-lernplattform.de?subject=Schullizenz%20anfragen"
-              className="rounded-full bg-[var(--lern-accent)] px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-[#B07A72]"
+              className="rounded-full bg-[var(--lern-accent)] px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-[#1A7359]"
             >
               Kontakt aufnehmen
             </a>
@@ -358,14 +358,14 @@ function FeatureCard({
 function CERow({ nr, title, status }: { nr: string; title: string; status: "verfuegbar" | "geplant" }) {
   const isAvailable = status === "verfuegbar"
   return (
-    <div className={`flex items-center justify-between rounded-xl border px-4 py-3 ${isAvailable ? "border-[#6B8F71] bg-[#6B8F71]/5" : "border-[var(--lern-border)]/60 bg-[var(--lern-bg-primary)]"}`}>
+    <div className={`flex items-center justify-between rounded-xl border px-4 py-3 ${isAvailable ? "border-[#3E5A6A] bg-[#3E5A6A]/5" : "border-[var(--lern-border)]/60 bg-[var(--lern-bg-primary)]"}`}>
       <div className="flex items-center gap-3">
-        <span className={`flex h-8 w-8 items-center justify-center rounded-lg text-xs font-bold text-white ${isAvailable ? "bg-[#6B8F71]" : "bg-[#86868b]"}`}>
+        <span className={`flex h-8 w-8 items-center justify-center rounded-lg text-xs font-bold text-white ${isAvailable ? "bg-[#3E5A6A]" : "bg-[#86868b]"}`}>
           {nr}
         </span>
         <span className={`text-sm font-medium ${isAvailable ? "text-[var(--lern-text-primary)]" : "text-[var(--lern-text-secondary)]"}`}>{title}</span>
       </div>
-      <span className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${isAvailable ? "bg-[#6B8F71]/10 text-[#6B8F71]" : "bg-[var(--lern-bg)] text-[var(--lern-text-tertiary)]"}`}>
+      <span className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${isAvailable ? "bg-[#3E5A6A]/10 text-[#3E5A6A]" : "bg-[var(--lern-bg)] text-[var(--lern-text-tertiary)]"}`}>
         {isAvailable ? "Spielbar" : "In Arbeit"}
       </span>
     </div>
@@ -375,7 +375,7 @@ function CERow({ nr, title, status }: { nr: string; title: string; status: "verf
 function CheckItem({ text }: { text: string }) {
   return (
     <li className="flex items-start gap-2">
-      <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#6B8F71]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#3E5A6A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M20 6 9 17l-5-5" />
       </svg>
       <span>{text}</span>

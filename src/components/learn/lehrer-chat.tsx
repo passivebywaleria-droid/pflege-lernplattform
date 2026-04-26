@@ -174,7 +174,7 @@ export function LehrerChat({ lernKontext }: LehrerChatProps) {
             return next;
           });
         }}
-        className={`fixed bottom-[96px] left-3 z-30 flex h-10 w-10 items-center justify-center rounded-full bg-[#6B8F71] text-white shadow-md transition-all duration-300 active:scale-95 hover:bg-[#5A7D5F] ${
+        className={`fixed bottom-[96px] left-3 z-30 flex h-10 w-10 items-center justify-center rounded-full bg-[#3E5A6A] text-white shadow-md transition-all duration-300 active:scale-95 hover:bg-[#5A7D5F] ${
           hidden ? "translate-y-24 opacity-0 pointer-events-none" : "translate-y-0 opacity-100"
         }`}
         title="Lehrer fragen"
@@ -246,7 +246,7 @@ export function LehrerChat({ lernKontext }: LehrerChatProps) {
 
               {/* Kontext-Banner */}
               {kontextText && (
-                <div className="shrink-0 mx-4 mt-3 rounded-xl bg-[#6B8F71]/5 border border-[#6B8F71]/20 px-3 py-2">
+                <div className="shrink-0 mx-4 mt-3 rounded-xl bg-[#3E5A6A]/5 border border-[#3E5A6A]/20 px-3 py-2">
                   <p className="text-xs text-[#4A7350]">
                     Der Lehrer sieht deinen Lernkontext: <strong>{kontextText}</strong>
                   </p>
@@ -282,7 +282,7 @@ export function LehrerChat({ lernKontext }: LehrerChatProps) {
                       <div
                         className={`rounded-2xl px-4 py-3 ${
                           msg.von === "schueler"
-                            ? "bg-[#6B8F71] text-white"
+                            ? "bg-[#3E5A6A] text-white"
                             : "bg-[var(--lern-bg)] text-[var(--lern-text-primary)]"
                         }`}
                       >
@@ -318,12 +318,12 @@ export function LehrerChat({ lernKontext }: LehrerChatProps) {
                     onKeyDown={(e) => e.key === "Enter" && sendMessage()}
                     placeholder="Deine Frage an den Lehrer..."
                     disabled={sending}
-                    className="flex-1 rounded-xl border border-[var(--lern-border)] bg-[var(--lern-bg)] px-4 py-3 text-sm text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:border-[#6B8F71] focus:outline-none disabled:opacity-50"
+                    className="flex-1 rounded-xl border border-[var(--lern-border)] bg-[var(--lern-bg)] px-4 py-3 text-sm text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] focus:border-[#3E5A6A] focus:outline-none disabled:opacity-50"
                   />
                   <button
                     onClick={sendMessage}
                     disabled={!input.trim() || sending}
-                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#6B8F71] text-white transition-all active:scale-95 disabled:opacity-40"
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#3E5A6A] text-white transition-all active:scale-95 disabled:opacity-40"
                   >
                     <svg
                       width="18"

@@ -184,8 +184,8 @@ export function StepDialog({
       {/* Vitals monitor */}
       {current && !finished && current.vitals && (
         <div className="bg-[#1d1d1f] rounded-xl px-4 py-2.5 flex items-center gap-3">
-          <span className="w-2 h-2 rounded-full bg-[#6B8F71] animate-pulse" />
-          <span className="text-xs text-[#6B8F71] font-mono">
+          <span className="w-2 h-2 rounded-full bg-[#3E5A6A] animate-pulse" />
+          <span className="text-xs text-[#3E5A6A] font-mono">
             {current.vitals}
           </span>
         </div>
@@ -222,7 +222,7 @@ export function StepDialog({
                 </span>
               )}
               {m.sender === "pflege" && (
-                <span className="text-xs font-semibold text-[#6B8F71] block mb-0.5">
+                <span className="text-xs font-semibold text-[#3E5A6A] block mb-0.5">
                   Du (Pflege)
                 </span>
               )}
@@ -353,7 +353,7 @@ export function StepDialog({
                 cy="18"
                 r="16"
                 fill="none"
-                stroke={scorePercent >= 70 ? "#6B8F71" : "#D4956A"}
+                stroke={scorePercent >= 70 ? "#3E5A6A" : "#D4956A"}
                 strokeWidth="3"
                 strokeLinecap="round"
                 strokeDasharray={`${scorePercent} 100`}
@@ -385,7 +385,7 @@ export function StepDialog({
 
           <button
             onClick={() => onNext(scorePercent >= 70)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
           >
             Weiter
           </button>

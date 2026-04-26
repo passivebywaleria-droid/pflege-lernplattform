@@ -34,13 +34,13 @@ type TabId = typeof TABS[number]["id"];
 function DoneScreen({ onReset }: { onReset: () => void }) {
   return (
     <div className="h-full flex flex-col items-center justify-center gap-4">
-      <div className="rounded-2xl border border-[#6B8F71]/30 bg-[#6B8F71]/5 p-8 text-center space-y-4 w-full">
+      <div className="rounded-2xl border border-[#3E5A6A]/30 bg-[#3E5A6A]/5 p-8 text-center space-y-4 w-full">
         <p className="text-3xl">✓</p>
-        <p className="font-semibold text-[#6B8F71] text-base">Step abgeschlossen!</p>
+        <p className="font-semibold text-[#3E5A6A] text-base">Step abgeschlossen!</p>
         <button
           onClick={onReset}
           className="rounded-xl px-5 py-2.5 text-sm font-medium text-white transition-all active:scale-[0.98]"
-          style={{ backgroundColor: "#C4877F" }}
+          style={{ backgroundColor: "#218C71" }}
         >
           Nochmal
         </button>
@@ -302,8 +302,8 @@ export default function TestStepsPage() {
                 onClick={() => switchTab(tab.id)}
                 className="whitespace-nowrap rounded-full px-3 py-1.5 text-xs font-medium transition-colors"
                 style={{
-                  backgroundColor: activeTab === tab.id ? "#C4877F15" : "transparent",
-                  color: activeTab === tab.id ? "#C4877F" : "var(--lern-text-secondary, #6b6b6b)",
+                  backgroundColor: activeTab === tab.id ? "#218C7115" : "transparent",
+                  color: activeTab === tab.id ? "#218C71" : "var(--lern-text-secondary, #6b6b6b)",
                   fontWeight: activeTab === tab.id ? 600 : 400,
                 }}
               >

@@ -217,7 +217,7 @@ export default function FortschrittPage() {
     return (
       <div className="min-h-screen bg-[var(--lern-bg)] flex items-center justify-center">
         <div className="text-center space-y-4">
-          <div className="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-[#C4877F] border-t-transparent" />
+          <div className="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-[#218C71] border-t-transparent" />
           <p className="text-sm text-[var(--lern-text-secondary)]">{t("title")}...</p>
         </div>
       </div>
@@ -259,7 +259,7 @@ export default function FortschrittPage() {
               <circle
                 cx="18" cy="18" r="15"
                 fill="none"
-                stroke="#C4877F"
+                stroke="#218C71"
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeDasharray={`${gesamtProzent * 0.942} 100`}
@@ -322,7 +322,7 @@ export default function FortschrittPage() {
               <p className="text-xs text-[var(--lern-text-secondary)]">Streak</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-[#6B8F71]">{gesamtDone}</p>
+              <p className="text-2xl font-bold text-[#3E5A6A]">{gesamtDone}</p>
               <p className="text-xs text-[var(--lern-text-secondary)]">LEs</p>
             </div>
           </motion.div>

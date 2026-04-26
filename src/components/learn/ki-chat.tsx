@@ -108,7 +108,7 @@ export function KiChat({ leTitle, stepTitle, stepBody, glossar, sprachLevel, rec
       {/* Floating Action Button */}
       <button
         onClick={() => setOpen(true)}
-        className={`fixed bottom-[96px] right-3 z-30 flex h-10 w-10 items-center justify-center rounded-full bg-[var(--lern-accent)] text-white shadow-md transition-all duration-300 active:scale-95 hover:bg-[#B07A72] ${
+        className={`fixed bottom-[96px] right-3 z-30 flex h-10 w-10 items-center justify-center rounded-full bg-[var(--lern-accent)] text-white shadow-md transition-all duration-300 active:scale-95 hover:bg-[#1A7359] ${
           hidden ? "translate-y-24 opacity-0 pointer-events-none" : "translate-y-0 opacity-100"
         }`}
       >

@@ -112,7 +112,7 @@ function erstelleLernzeitNachweis(
     .subtitle { color: #6e6e73; font-size: 14px; }
     .stats { display: flex; gap: 24px; margin: 24px 0; }
     .stat { text-align: center; }
-    .stat-value { font-size: 28px; font-weight: 700; color: #C4877F; }
+    .stat-value { font-size: 28px; font-weight: 700; color: #218C71; }
     .stat-label { font-size: 12px; color: #6e6e73; }
     table { width: 100%; border-collapse: collapse; font-size: 13px; }
     th {
@@ -146,7 +146,7 @@ function erstelleLernzeitNachweis(
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #C4877F;
+      background: #218C71;
       color: white;
       border: none;
       padding: 12px 24px;
@@ -172,7 +172,7 @@ function erstelleLernzeitNachweis(
       <div class="stat-label">Erfahrungspunkte</div>
     </div>
     <div class="stat">
-      <div class="stat-value" style="color: #6B8F71;">${gesamtTage}</div>
+      <div class="stat-value" style="color: #3E5A6A;">${gesamtTage}</div>
       <div class="stat-label">Aktive Lerntage</div>
     </div>
   </div>
@@ -372,7 +372,7 @@ export default function LernzeitPage() {
             className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-4 text-center"
           >
             <p className="text-xs text-[var(--lern-text-secondary)]">Aktive Tage</p>
-            <p className="text-2xl font-bold text-[#6B8F71]">{gesamtTage}</p>
+            <p className="text-2xl font-bold text-[#3E5A6A]">{gesamtTage}</p>
           </motion.div>
         </div>
 
@@ -465,8 +465,8 @@ export default function LernzeitPage() {
                         <span
                           className="inline-block px-2 py-0.5 rounded-full text-xs font-semibold"
                           style={{
-                            backgroundColor: le.prozent >= 80 ? "#6B8F7115" : le.prozent >= 40 ? "#D4956A15" : "#f5f5f7",
-                            color: le.prozent >= 80 ? "#6B8F71" : le.prozent >= 40 ? "#D4956A" : "#6e6e73",
+                            backgroundColor: le.prozent >= 80 ? "#3E5A6A15" : le.prozent >= 40 ? "#D4956A15" : "#f5f5f7",
+                            color: le.prozent >= 80 ? "#3E5A6A" : le.prozent >= 40 ? "#D4956A" : "#6e6e73",
                           }}
                         >
                           {le.prozent}%
@@ -498,7 +498,7 @@ export default function LernzeitPage() {
                       </div>
                       <div className="mt-1.5 h-1.5 rounded-full bg-[var(--lern-bg)]">
                         <div
-                          className="h-full rounded-full bg-[#6B8F71]"
+                          className="h-full rounded-full bg-[#3E5A6A]"
                           style={{ width: `${le.prozent}%` }}
                         />
                       </div>

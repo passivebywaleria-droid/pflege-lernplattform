@@ -71,7 +71,7 @@ export default function OfflinePage() {
             height="48"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#C4877F"
+            stroke="#218C71"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -133,7 +133,7 @@ export default function OfflinePage() {
                     height="16"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#C4877F"
+                    stroke="#218C71"
                     strokeWidth="2"
                     style={{ marginLeft: "auto" }}
                   >
@@ -196,7 +196,7 @@ export default function OfflinePage() {
                   padding: "0.75rem 1rem",
                   backgroundColor: "var(--lern-bg-primary)",
                   borderRadius: "12px",
-                  border: "1px solid #6B8F71",
+                  border: "1px solid #3E5A6A",
                 }}
               >
                 <span style={{ fontSize: "1.2rem" }}>✅</span>
@@ -218,7 +218,7 @@ export default function OfflinePage() {
           <button
             onClick={() => window.location.reload()}
             style={{
-              backgroundColor: "#C4877F",
+              backgroundColor: "#218C71",
               color: "white",
               border: "none",
               borderRadius: "12px",

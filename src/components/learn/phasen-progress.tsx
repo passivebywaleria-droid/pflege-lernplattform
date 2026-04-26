@@ -48,7 +48,7 @@ export function PhasenProgress({
               <div
                 className={`h-0.5 w-4 sm:w-6 ${
                   isCompleted
-                    ? "bg-[#6B8F71]"
+                    ? "bg-[#3E5A6A]"
                     : "bg-[var(--lern-border)]"
                 }`}
               />
@@ -61,7 +61,7 @@ export function PhasenProgress({
                 isCurrent
                   ? "bg-[var(--lern-accent-bg)] border-2 border-[var(--lern-accent)] shadow-sm"
                   : isCompleted
-                    ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+                    ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
                     : "bg-[var(--lern-bg)] border border-[var(--lern-border)] opacity-50"
               }`}
               aria-current={isCurrent ? "step" : undefined}
@@ -74,7 +74,7 @@ export function PhasenProgress({
                   isCurrent
                     ? "text-[var(--lern-accent)]"
                     : isCompleted
-                      ? "text-[#6B8F71]"
+                      ? "text-[#3E5A6A]"
                       : "text-[var(--lern-text-tertiary)]"
                 }`}
               >

@@ -12,7 +12,7 @@ const MODUS_CONFIG: Record<
     icon: "book",
     label: "Story",
     slogan: "Der Leitfall lebt",
-    farbe: "#C4877F",
+    farbe: "#218C71",
   },
   challenge: {
     icon: "lightning",
@@ -30,7 +30,7 @@ const MODUS_CONFIG: Record<
     icon: "search",
     label: "Entdecker",
     slogan: "Neues Wissen aufnehmen",
-    farbe: "#6B8F71",
+    farbe: "#3E5A6A",
   },
   sortierstation: {
     icon: "clipboard",
@@ -48,7 +48,7 @@ const MODUS_CONFIG: Record<
     icon: "hospital",
     label: "Praxis-Simulation",
     slogan: "Handeln lernen",
-    farbe: "#B07A72",
+    farbe: "#1A7359",
   },
   checkpoint: {
     icon: "target",

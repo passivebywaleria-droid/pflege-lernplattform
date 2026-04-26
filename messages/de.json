@@ -14,8 +14,10 @@
     "lightMode": "Hellmodus"
   },
   "nav": {
-    "home": "Start",
+    "home": "Home",
     "learn": "Lernen",
+    "cards": "Karten",
+    "me": "Ich",
     "review": "Wiederholen",
     "wochenplan": "Wochenplan",
     "progress": "Fortschritt",

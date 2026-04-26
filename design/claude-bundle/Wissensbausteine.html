@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<title>Wissensbausteine — Sub-Einheiten innerhalb eines Themas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #f3efe9; font-family: Inter, system-ui, sans-serif; }
+  * { box-sizing: border-box; }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="ios-frame.jsx"></script>
+<script type="text/babel" src="shared.jsx"></script>
+<script type="text/babel" src="steps-cgpt.jsx"></script>
+<script type="text/babel" src="bausteine.jsx"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="react">
+  function ABoard({ id, label, comp: Comp }) {
+    return (
+      <window.DCArtboard id={id} label={label} width={390} height={780}>
+        <Comp />
+      </window.DCArtboard>
+    );
+  }
+
+  function FlowBoard({ id, label }) {
+    return (
+      <window.DCArtboard id={id} label={label} width={430} height={920}>
+        <window.IOSDevice width={390} height={844}>
+          <window.BausteineFlow />
+        </window.IOSDevice>
+      </window.DCArtboard>
+    );
+  }
+
+  function Note() {
+    const C = window.CGPT;
+    return (
+      <div style={{
+        maxWidth: 820, margin: '0 auto 20px', padding: '20px 22px',
+        background: C.bgWhite, border: `1px solid ${C.border}`, borderRadius: 14,
+        fontFamily: 'Inter, sans-serif', fontSize: 13, lineHeight: 1.6, color: C.text2,
+      }}>
+        <div style={{ fontSize: 11, fontWeight: 700, color: C.accent, textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 8 }}>
+          Wissensbausteine · Sub-Einheiten innerhalb eines Themas
+        </div>
+        <div style={{ color: C.text, fontSize: 15, fontWeight: 600, marginBottom: 8, lineHeight: 1.4 }}>
+          Drei Kern-Screens: Übersicht · Intro · Abschluss — plus interaktiver Flow.
+        </div>
+        <div>
+          Ein <strong>Baustein</strong> ist eine Sub-Einheit innerhalb eines Themas. Jeder Baustein
+          besteht aus mehreren Steps (Text, MC, Flashcard, …) und hat eine eigene Mastery-Stufe.
+          In der Themen-Übersicht zeigen reichhaltige <strong>Baustein-Karten</strong> Status, Schritt-Anzahl
+          und Dauer. Vor dem Start zeigt ein <strong>Intro</strong> Lernziele und Schritt-Vorschau.
+          Nach Abschluss hebt der <strong>Abschluss-Screen</strong> die Mastery-Stufe an und stellt den nächsten Baustein vor.
+        </div>
+      </div>
+    );
+  }
+
+  function App() {
+    const W = window;
+    return (
+      <window.DesignCanvas
+        title="Wissensbausteine"
+        subtitle="Karten · Intro · Abschluss · interaktiver Flow"
+      >
+        <div style={{ marginBottom: 20 }}><Note /></div>
+
+        <window.DCSection id="flow" title="Interaktiv · klickbarer Flow im iOS-Frame">
+          {FlowBoard({id: "flow-1", label: "Tippe einen Baustein an → Intro → Abschluss"})}
+        </window.DCSection>
+
+        <window.DCSection id="screens" title="Die drei Kern-Screens">
+          {ABoard({id: "s-uebersicht", label: "1. Thema-Übersicht mit Bausteinen", comp: W.ThemaUebersicht})}
+          {ABoard({id: "s-intro-resume", label: "2. Baustein-Intro · Fortsetzen (in Bearbeitung)", comp: W.BausteinIntroDemo})}
+          {ABoard({id: "s-abschluss", label: "3. Baustein-Abschluss · Mastery +1", comp: W.BausteinAbschlussDemo})}
+        </window.DCSection>
+
+        <window.DCSection id="varianten" title="Varianten · Baustein-Intro & Abschluss">
+          {ABoard({id: "v-intro-neu", label: "Intro · neu/unbekannt (kein Fortschritt)", comp: W.BausteinIntroNeu})}
+          {ABoard({id: "v-abschluss-mastered", label: "Abschluss · vertraut → sicher", comp: W.BausteinAbschlussMastered})}
+        </window.DCSection>
+
+        <window.DCSection id="cards" title="Baustein-Karten · Status-Varianten (vergleichend)">
+          <window.DCArtboard id="c-cards" label="Alle Status nebeneinander" width={390} height={780}>
+            <CardsShowcase />
+          </window.DCArtboard>
+        </window.DCSection>
+      </window.DesignCanvas>
+    );
+  }
+
+  function CardsShowcase() {
+    const C = window.CGPT;
+    return (
+      <div style={{
+        width: '100%', height: '100%', background: C.bg, padding: '20px 16px',
+        fontFamily: 'Inter, sans-serif', overflow: 'auto',
+      }}>
+        <div style={{
+          fontSize: 10, color: C.accent, letterSpacing: 1, textTransform: 'uppercase',
+          fontWeight: 700, marginBottom: 8,
+        }}>Karten-Zustände</div>
+        <div style={{ fontSize: 11, color: C.text3, marginBottom: 14, lineHeight: 1.5 }}>
+          Jeder Baustein durchläuft: locked → versucht → in Bearbeitung → sicher → gemeistert.
+        </div>
+        {window.BAUSTEINE_DATA.map(b => (
+          <window.BausteinCard key={b.id} b={b} />
+        ))}
+      </div>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

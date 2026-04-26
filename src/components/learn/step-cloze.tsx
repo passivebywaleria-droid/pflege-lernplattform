@@ -146,12 +146,12 @@ export function StepCloze({
 
             const borderClass = submitted
               ? result?.isCorrect
-                ? "border-[#6B8F71] bg-[#6B8F71]/10 text-[#6B8F71]"
+                ? "border-[#3E5A6A] bg-[#3E5A6A]/10 text-[#3E5A6A]"
                 : "border-[#C96B5C] bg-[#C96B5C]/10 text-[#C96B5C]"
               : isActive
-                ? "border-[#C4877F] bg-[#C4877F]/15 border-solid ring-2 ring-[#C4877F]/30"
+                ? "border-[#218C71] bg-[#218C71]/15 border-solid ring-2 ring-[#218C71]/30"
                 : filled
-                  ? "border-[#C4877F]/60 bg-[#C4877F]/8 border-solid"
+                  ? "border-[#218C71]/60 bg-[#218C71]/8 border-solid"
                   : "border-dashed border-[var(--lern-text-tertiary)]/50 bg-[var(--lern-bg)]";
 
             return (
@@ -174,7 +174,7 @@ export function StepCloze({
                 ) : (
                   <span
                     className={`text-sm font-medium ${
-                      isActive ? "text-[#C4877F]" : "text-[var(--lern-text-tertiary)]/60"
+                      isActive ? "text-[#218C71]" : "text-[var(--lern-text-tertiary)]/60"
                     }`}
                   >
                     {isActive ? "?" : "___"}
@@ -204,8 +204,8 @@ export function StepCloze({
                     transition={{ type: "spring", damping: 22, stiffness: 300 }}
                     className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors active:scale-95 ${
                       activeBlank !== null
-                        ? "bg-[#C4877F] text-white shadow-md"
-                        : "bg-[#C4877F]/12 text-[#C4877F]"
+                        ? "bg-[#218C71] text-white shadow-md"
+                        : "bg-[#218C71]/12 text-[#218C71]"
                     }`}
                   >
                     {item.text}
@@ -229,7 +229,7 @@ export function StepCloze({
               animate={{ opacity: 1, y: 0 }}
               className={`rounded-2xl p-4 ${
                 allCorrect
-                  ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+                  ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
                   : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
               }`}
             >
@@ -260,9 +260,9 @@ export function StepCloze({
             onClick={() => setSubmitted(true)}
             disabled={!allFilled}
             className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed"
-            style={{ backgroundColor: "#C4877F" }}
-            onMouseEnter={(e) => !e.currentTarget.disabled && (e.currentTarget.style.backgroundColor = "#B07A72")}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#C4877F")}
+            style={{ backgroundColor: "#218C71" }}
+            onMouseEnter={(e) => !e.currentTarget.disabled && (e.currentTarget.style.backgroundColor = "#1A7359")}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#218C71")}
           >
             Prüfen
           </button>
@@ -270,7 +270,7 @@ export function StepCloze({
           <button
             onClick={() => onNext(allCorrect)}
             className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
-            style={{ backgroundColor: allCorrect ? "#6B8F71" : "#C96B5C" }}
+            style={{ backgroundColor: allCorrect ? "#3E5A6A" : "#C96B5C" }}
           >
             Weiter
           </button>

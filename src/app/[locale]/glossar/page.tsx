@@ -58,14 +58,14 @@ function GlossarTtsButton({ text, lang }: { text: string; lang: string }) {
 
 /** Fachgebiet-Badge-Farben */
 const FACHGEBIET_FARBEN: Record<string, string> = {
-  Prophylaxe: "bg-[#6B8F71]/10 text-[#4A7350]",
+  Prophylaxe: "bg-[#3E5A6A]/10 text-[#4A7350]",
   Anatomie: "bg-[var(--lern-accent)]/10 text-[var(--lern-accent)]",
   Vitalzeichen: "bg-[#D4956A]/10 text-[#B07A52]",
   Pflegeprozess: "bg-[#9B7EA6]/10 text-[#8A6D95]",
   Hygiene: "bg-[#8AABB5]/10 text-[#6A8B95]",
   Krankheitslehre: "bg-[#C96B5C]/10 text-[#C96B5C]",
   Medikamente: "bg-[#D4956A]/10 text-[#D4956A]",
-  Ernährung: "bg-[#6B8F71]/10 text-[#4A7350]",
+  Ernährung: "bg-[#3E5A6A]/10 text-[#4A7350]",
   Dokumentation: "bg-[#8E8E93]/10 text-[#636366]",
   Kommunikation: "bg-[#9B7EA6]/10 text-[#8A6D95]",
   Notfall: "bg-[#C96B5C]/10 text-[#A0584C]",

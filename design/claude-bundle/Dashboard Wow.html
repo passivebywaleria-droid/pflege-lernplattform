@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<title>Dashboard — Wow-Varianten</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #f3efe9; font-family: Inter, system-ui, sans-serif; }
+  * { box-sizing: border-box; }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="ios-frame.jsx"></script>
+<script type="text/babel" src="shared.jsx"></script>
+<script type="text/babel" src="steps-cgpt.jsx"></script>
+<script type="text/babel" src="bausteine.jsx"></script>
+<script type="text/babel" src="tabbar.jsx"></script>
+<script type="text/babel" src="magic-ui.jsx"></script>
+<script type="text/babel" src="dashboard-v1-polish.jsx"></script>
+<script type="text/babel" src="dashboard-v2-editorial.jsx"></script>
+<script type="text/babel" src="dashboard-v3-magic.jsx"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="react">
+  function FlowBoard({ id, label, comp: Comp }) {
+    return (
+      <window.DCArtboard id={id} label={label} width={430} height={920}>
+        <window.IOSDevice width={390} height={844}>
+          <Comp />
+        </window.IOSDevice>
+      </window.DCArtboard>
+    );
+  }
+
+  function Note() {
+    const C = window.MUC;
+    return (
+      <div style={{
+        maxWidth: 880, margin: '0 auto 24px', padding: '22px 24px',
+        background: C.bgWhite, border: `1px solid ${C.border}`, borderRadius: 14,
+        fontFamily: 'Inter, sans-serif', fontSize: 13, lineHeight: 1.6, color: C.text2,
+      }}>
+        <div style={{ fontSize: 11, fontWeight: 700, color: C.accent, textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 10 }}>
+          Dashboard · 3 Wow-Richtungen im Vergleich
+        </div>
+        <div style={{ color: C.text, fontSize: 16, fontWeight: 600, marginBottom: 10, lineHeight: 1.4, fontFamily: "'Fraunces', Georgia, serif", fontStyle: 'italic' }}>
+          Polish · Editorial · Magic-UI-Heavy
+        </div>
+        <div style={{ marginBottom: 14 }}>
+          Drei Ansätze — alle bleiben warm, ruhig und ernsthaft. Kein Konfetti, kein Glitter.
+          Animationen laufen langsam (&gt;800 ms), einmalig beim Mount, lenken nicht ab.
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 16, fontSize: 12 }}>
+          <div>
+            <div style={{ fontWeight: 700, color: C.text, marginBottom: 4 }}>V1 · Polish</div>
+            <div>Bestehender Look mit mehr Tiefe — Layered Shadows, Hairline Borders, Glass-Pills.
+            AnimatedNumber-Counter, ProgressRing-Sweep beim Mount. Tageszeit-Greeting.</div>
+          </div>
+          <div>
+            <div style={{ fontWeight: 700, color: C.text, marginBottom: 4 }}>V2 · Editorial</div>
+            <div>Magazin-Anmutung. Fraunces-Serif für Greeting + große Zahlen. Asymmetrische
+            Komposition, Marginalien, Block-Quotes für Bausteine. Streak-Heatmap als Hero.</div>
+          </div>
+          <div>
+            <div style={{ fontWeight: 700, color: C.text, marginBottom: 4 }}>V3 · Magic UI</div>
+            <div>Mastery-Konstellation als Hero — du bist im Zentrum, Bausteine kreisen.
+            Sanft rotierender Border-Beam auf Continue. Ripple-Pulse auf „JETZT". Marquee unten.</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  function App() {
+    return (
+      <window.DesignCanvas
+        title="Dashboard mit Wow"
+        subtitle="3 Richtungen — von subtil bis ambient-magical"
+      >
+        <Note />
+        <window.DCSection id="varianten" title="Drei Varianten · seite an seite">
+          {FlowBoard({id: "v1", label: "V1 · Polish — Tiefe, Counter, Tageszeit",        comp: window.Dashboard_V1_Polish})}
+          {FlowBoard({id: "v2", label: "V2 · Editorial — Fraunces, Heatmap, Asymmetrie", comp: window.Dashboard_V2_Editorial})}
+          {FlowBoard({id: "v3", label: "V3 · Magic UI — Konstellation, Beams, Marquee",  comp: window.Dashboard_V3_MagicUI})}
+        </window.DCSection>
+      </window.DesignCanvas>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

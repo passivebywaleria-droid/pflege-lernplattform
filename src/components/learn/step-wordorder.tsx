@@ -82,7 +82,7 @@ export function StepWordOrder({
             className={`rounded-xl px-3 py-2 text-sm font-medium transition-all active:scale-95 ${
               submitted
                 ? wordIdx === correctOrder[pos]
-                  ? "bg-[#6B8F71]/15 text-[#6B8F71] border border-[#6B8F71]/30"
+                  ? "bg-[#3E5A6A]/15 text-[#3E5A6A] border border-[#3E5A6A]/30"
                   : "bg-[#C96B5C]/15 text-[#C96B5C] border border-[#C96B5C]/30"
                 : "bg-[var(--lern-accent)]/10 text-[var(--lern-accent)] border border-[var(--lern-accent)]/30"
             }`}
@@ -115,7 +115,7 @@ export function StepWordOrder({
         <button
           onClick={() => setSubmitted(true)}
           disabled={selected.length !== words.length}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] disabled:opacity-40"
         >
           Antwort prüfen
         </button>
@@ -126,7 +126,7 @@ export function StepWordOrder({
             animate={{ opacity: 1, y: 0 }}
             className={`rounded-2xl p-4 ${
               isCorrect
-                ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+                ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
                 : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
             }`}
           >
@@ -142,7 +142,7 @@ export function StepWordOrder({
 
           <button
             onClick={() => onNext(isCorrect)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
           >
             Weiter
           </button>

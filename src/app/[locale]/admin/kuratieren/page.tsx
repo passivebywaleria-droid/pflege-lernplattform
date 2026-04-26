@@ -134,7 +134,7 @@ export default function KuratierenPage() {
           </div>
           <div className="h-2 bg-[var(--lern-bg)] rounded-full overflow-hidden">
             <div
-              className="h-full bg-[#6B8F71] rounded-full transition-all"
+              className="h-full bg-[#3E5A6A] rounded-full transition-all"
               style={{ width: `${totalSlots > 0 ? (curatedCount / totalSlots) * 100 : 0}%` }}
             />
           </div>
@@ -187,7 +187,7 @@ export default function KuratierenPage() {
 
               {/* Selected badge */}
               {currentSlot.selected === activeVariant && (
-                <div className="absolute top-3 left-3 bg-[#6B8F71] text-white text-xs px-2 py-1 rounded-full font-medium">
+                <div className="absolute top-3 left-3 bg-[#3E5A6A] text-white text-xs px-2 py-1 rounded-full font-medium">
                   Ausgewählt
                 </div>
               )}
@@ -209,7 +209,7 @@ export default function KuratierenPage() {
                       activeVariant === i + 1
                         ? "bg-[var(--lern-accent)] text-white scale-110"
                         : currentSlot.selected === i + 1
-                          ? "bg-[#6B8F71] text-white"
+                          ? "bg-[#3E5A6A] text-white"
                           : "bg-[var(--lern-bg)] text-[var(--lern-text-primary)] hover:bg-[var(--lern-divider)]"
                     }`}
                   >
@@ -222,7 +222,7 @@ export default function KuratierenPage() {
               <div className="flex gap-3">
                 <button
                   onClick={handleSelect}
-                  className="flex-1 rounded-2xl bg-[var(--lern-accent)] px-4 py-3 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+                  className="flex-1 rounded-2xl bg-[var(--lern-accent)] px-4 py-3 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
                 >
                   Übernehmen (#{activeVariant})
                 </button>
@@ -260,7 +260,7 @@ export default function KuratierenPage() {
                 </div>
                 <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${
                   slot.selected && slot.selected > 0
-                    ? "bg-[#6B8F71]/10 text-[#6B8F71]"
+                    ? "bg-[#3E5A6A]/10 text-[#3E5A6A]"
                     : slot.selected === -1
                       ? "bg-[#C96B5C]/10 text-[#C96B5C]"
                       : "bg-[var(--lern-bg)] text-[var(--lern-text-tertiary)]"

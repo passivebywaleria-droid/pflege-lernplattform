@@ -68,9 +68,9 @@ export function StepMatrix({
   // Quadrant-Label: Q1=oben-links, Q2=oben-rechts, Q3=unten-links, Q4=unten-rechts
   const quadrantColors = [
     "", // index 0 unused
-    "bg-[#6B8F71]/8 border-[#6B8F71]/20",   // Q1
+    "bg-[#3E5A6A]/8 border-[#3E5A6A]/20",   // Q1
     "bg-[#D4956A]/8 border-[#D4956A]/20",   // Q2
-    "bg-[#C4877F]/8 border-[#C4877F]/20",   // Q3
+    "bg-[#218C71]/8 border-[#218C71]/20",   // Q3
     "bg-[#C96B5C]/8 border-[#C96B5C]/20",   // Q4
   ];
 
@@ -131,7 +131,7 @@ export function StepMatrix({
                       className={`text-xs rounded-lg px-2 py-1 font-medium ${
                         submitted
                           ? it.correctQuadrant === q
-                            ? "bg-[#6B8F71]/20 text-[#6B8F71]"
+                            ? "bg-[#3E5A6A]/20 text-[#3E5A6A]"
                             : "bg-[#C96B5C]/20 text-[#C96B5C]"
                           : "bg-[var(--lern-accent)]/15 text-[var(--lern-accent)]"
                       }`}
@@ -172,7 +172,7 @@ export function StepMatrix({
         <button
           onClick={() => setSubmitted(true)}
           disabled={!allPlaced}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] disabled:opacity-40"
         >
           Antwort prüfen
         </button>
@@ -183,7 +183,7 @@ export function StepMatrix({
             animate={{ opacity: 1, y: 0 }}
             className={`rounded-2xl p-4 ${
               allCorrect
-                ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+                ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
                 : correctCount >= items.length / 2
                   ? "bg-[#D4956A]/10 border border-[#D4956A]/30"
                   : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
@@ -198,7 +198,7 @@ export function StepMatrix({
 
           <button
             onClick={() => onNext(allCorrect)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
           >
             Weiter
           </button>

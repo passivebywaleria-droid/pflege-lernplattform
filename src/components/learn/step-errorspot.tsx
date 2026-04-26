@@ -100,7 +100,7 @@ export function StepErrorSpot({
                 className={`${
                   isError
                     ? isFound
-                      ? "bg-[#6B8F71]/20 line-through decoration-[#6B8F71] cursor-default"
+                      ? "bg-[#3E5A6A]/20 line-through decoration-[#3E5A6A] cursor-default"
                       : submitted
                         ? "bg-[#C96B5C]/20 underline decoration-wavy decoration-[#C96B5C] cursor-default"
                         : "cursor-pointer hover:bg-[#D4956A]/10 rounded transition-colors"
@@ -111,7 +111,7 @@ export function StepErrorSpot({
               >
                 {seg.text}
                 {showCorrection && (
-                  <span className="text-[#6B8F71] font-semibold ml-1">[{errors[seg.errorIdx!].correction}]</span>
+                  <span className="text-[#3E5A6A] font-semibold ml-1">[{errors[seg.errorIdx!].correction}]</span>
                 )}
               </span>
             );
@@ -122,7 +122,7 @@ export function StepErrorSpot({
       {!submitted ? (
         <button
           onClick={() => setSubmitted(true)}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
         >
           {allFound ? "Alle gefunden — Auflösung zeigen" : "Auflösung zeigen"}
         </button>
@@ -133,7 +133,7 @@ export function StepErrorSpot({
             animate={{ opacity: 1, y: 0 }}
             className={`rounded-2xl p-4 ${
               score >= 0.8
-                ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+                ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
                 : score >= 0.5
                   ? "bg-[#D4956A]/10 border border-[#D4956A]/30"
                   : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
@@ -159,7 +159,7 @@ export function StepErrorSpot({
               <p className="text-sm">
                 <span className="line-through text-[#C96B5C]">{text.slice(err.start, err.end)}</span>
                 {" → "}
-                <span className="font-semibold text-[#6B8F71]">{err.correction}</span>
+                <span className="font-semibold text-[#3E5A6A]">{err.correction}</span>
               </p>
               <p className="text-xs text-[var(--lern-text-primary)]/60 mt-1">
                 {renderBold((sprachLevel === "b1" && err.explanationB1) || err.explanation)}
@@ -169,7 +169,7 @@ export function StepErrorSpot({
 
           <button
             onClick={() => onNext(score >= 0.8)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
           >
             Weiter
           </button>

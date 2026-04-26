@@ -44,10 +44,10 @@ const CATEGORY_COLORS = [
     itemBg: "bg-[#D4956A]/5",
   },
   {
-    bg: "bg-[#6B8F71]/10",
-    border: "border-[#6B8F71]/30",
-    text: "text-[#6B8F71]",
-    itemBg: "bg-[#6B8F71]/5",
+    bg: "bg-[#3E5A6A]/10",
+    border: "border-[#3E5A6A]/30",
+    text: "text-[#3E5A6A]",
+    itemBg: "bg-[#3E5A6A]/5",
   },
   {
     bg: "bg-[#9B7EA6]/10",
@@ -189,7 +189,7 @@ export function StepCategorize({
                       disabled={checked}
                       className={`text-xs px-3 py-2 rounded-xl text-[var(--lern-text-primary)] transition-all flex items-center gap-1.5 ${
                         ok
-                          ? "bg-[#6B8F71]/20 border border-[#6B8F71]/30"
+                          ? "bg-[#3E5A6A]/20 border border-[#3E5A6A]/30"
                           : wrong
                             ? "bg-[#C96B5C]/20 border border-[#C96B5C]/30 line-through"
                             : "bg-[var(--lern-bg-primary)] border-[1.5px] border-[var(--lern-border)] active:scale-95 shadow-sm"
@@ -199,7 +199,7 @@ export function StepCategorize({
                       {!checked && (
                         <span className="text-[var(--lern-text-tertiary)] text-xs">✕</span>
                       )}
-                      {ok && <span className="text-[#6B8F71]">✓</span>}
+                      {ok && <span className="text-[#3E5A6A]">✓</span>}
                       {wrong && <span className="text-[#C96B5C]">✗</span>}
                     </button>
                   );
@@ -214,7 +214,7 @@ export function StepCategorize({
         <button
           onClick={() => setChecked(true)}
           aria-label="Zuordnung prüfen"
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
         >
           Prüfen
         </button>
@@ -234,7 +234,7 @@ export function StepCategorize({
           <button
             onClick={() => onNext(allCorrect)}
             aria-label="Weiter zum nächsten Schritt"
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
           >
             Weiter
           </button>

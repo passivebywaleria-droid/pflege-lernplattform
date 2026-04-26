@@ -101,7 +101,7 @@ export function StepTrueFalse({
           animate={{ opacity: 1, y: 0 }}
           className={`rounded-2xl p-4 ${
             allCorrect
-              ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+              ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
               : "bg-[#D4956A]/10 border border-[#D4956A]/30"
           }`}
         >
@@ -113,7 +113,7 @@ export function StepTrueFalse({
         </motion.div>
         <button
           onClick={() => onNext(allCorrect)}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
         >
           Weiter
         </button>
@@ -144,7 +144,7 @@ export function StepTrueFalse({
             className={`h-2 flex-1 rounded-full transition-colors ${
               i < results.length
                 ? results[i]
-                  ? "bg-[#6B8F71]"
+                  ? "bg-[#3E5A6A]"
                   : "bg-[#C96B5C]"
                 : i === cardIdx
                   ? "bg-[var(--lern-accent)] animate-pulse"
@@ -201,10 +201,10 @@ export function StepTrueFalse({
             <motion.button
               onClick={() => handleSwipe(true)}
               style={{ backgroundColor: rightBg }}
-              className="flex-shrink-0 w-16 rounded-2xl border-[1.5px] border-[#6B8F71]/30 flex flex-col items-center justify-center gap-1 active:scale-95 transition-transform"
+              className="flex-shrink-0 w-16 rounded-2xl border-[1.5px] border-[#3E5A6A]/30 flex flex-col items-center justify-center gap-1 active:scale-95 transition-transform"
             >
               <span className="text-lg">✓</span>
-              <span className="text-xs font-bold" style={{ color: "#6B8F71" }}>
+              <span className="text-xs font-bold" style={{ color: "#3E5A6A" }}>
                 WAHR
               </span>
             </motion.button>
@@ -220,7 +220,7 @@ export function StepTrueFalse({
             <div
               className={`rounded-2xl border-[1.5px] p-5 ${
                 lastAnswer?.correct
-                  ? "border-[#6B8F71] bg-[#6B8F71]/5"
+                  ? "border-[#3E5A6A] bg-[#3E5A6A]/5"
                   : "border-[#C96B5C] bg-[#C96B5C]/5"
               }`}
             >
@@ -233,7 +233,7 @@ export function StepTrueFalse({
                 </FachbegriffText>
               </p>
               {!lastAnswer?.correct && (
-                <p className="text-xs font-semibold mt-2" style={{ color: "#6B8F71" }}>
+                <p className="text-xs font-semibold mt-2" style={{ color: "#3E5A6A" }}>
                   Richtige Antwort: {lastAnswer?.wasTrue ? "WAHR" : "FALSCH"}
                 </p>
               )}
@@ -241,7 +241,7 @@ export function StepTrueFalse({
 
             <button
               onClick={nextCard}
-              className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+              className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
             >
               {cardIdx + 1 < cards.length ? "Nächste Karte" : "Weiter"}
             </button>

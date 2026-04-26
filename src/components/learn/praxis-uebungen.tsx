@@ -6,8 +6,8 @@ import { MessageSquare, FileText, Users, Mic, ListOrdered, ChevronRight, Chevron
 import type { PraxisUebung, PraxisUebungType } from "../../../content/_types";
 
 const TYPE_CONFIG: Record<PraxisUebungType, { icon: typeof MessageSquare; color: string; label: string }> = {
-  "dialog-sim": { icon: MessageSquare, color: "#C4877F", label: "Dialog-Simulation" },
-  "pflegeplan": { icon: FileText, color: "#6B8F71", label: "Pflegeplanung" },
+  "dialog-sim": { icon: MessageSquare, color: "#218C71", label: "Dialog-Simulation" },
+  "pflegeplan": { icon: FileText, color: "#3E5A6A", label: "Pflegeplanung" },
   "beratung": { icon: Users, color: "#8B7DB6", label: "Beratungsgespräch" },
   "sprechuebung": { icon: Mic, color: "#D4A76A", label: "Sprechübung" },
   "prozedur": { icon: ListOrdered, color: "#5B8FA8", label: "Prozedur" },

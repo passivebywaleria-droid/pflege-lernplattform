@@ -190,7 +190,7 @@ export default function SituationLernenPage() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="rounded-2xl bg-[#6B8F71]/10 border border-[#6B8F71]/30 p-8 text-center"
+            className="rounded-2xl bg-[#3E5A6A]/10 border border-[#3E5A6A]/30 p-8 text-center"
           >
             <span className="text-4xl mb-4 block">🎉</span>
             <h2 className="text-lg font-bold text-[var(--lern-text-primary)] mb-2">
@@ -201,7 +201,7 @@ export default function SituationLernenPage() {
             </p>
             <Link
               href={`/${locale}/lernen/ce/${ceId}`}
-              className="inline-block rounded-xl bg-[var(--lern-accent)] px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[#B07A72]"
+              className="inline-block rounded-xl bg-[var(--lern-accent)] px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[#1A7359]"
             >
               {t("zurueckZurUebersicht")}
             </Link>
@@ -273,7 +273,7 @@ export default function SituationLernenPage() {
                   )}
                   <button
                     onClick={() => setPhaseIntroSeen({ ...phaseIntroSeen, [currentPhaseId]: true })}
-                    className="mt-3 w-full rounded-xl bg-[var(--lern-accent)] px-4 py-2 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+                    className="mt-3 w-full rounded-xl bg-[var(--lern-accent)] px-4 py-2 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
                   >
                     Los geht&apos;s →
                   </button>
@@ -403,7 +403,7 @@ export default function SituationLernenPage() {
 
             <button
               onClick={() => setPatientModalOpen(false)}
-              className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-3 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+              className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-3 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
             >
               Zurück zur Pflege
             </button>

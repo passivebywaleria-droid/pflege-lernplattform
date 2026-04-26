@@ -85,7 +85,7 @@ export function UpgradeBanner({ locale = "de" }: UpgradeBannerProps) {
         <button
           onClick={handleCheckout}
           disabled={loading}
-          className="rounded-full bg-[var(--lern-accent)] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#B07A72] disabled:opacity-50"
+          className="rounded-full bg-[var(--lern-accent)] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#1A7359] disabled:opacity-50"
         >
           {loading ? "..." : t.cta}
         </button>

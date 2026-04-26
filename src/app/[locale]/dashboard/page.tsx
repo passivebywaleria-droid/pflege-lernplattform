@@ -275,7 +275,7 @@ export default function DashboardPage() {
           animate={{ opacity: 1, y: 0 }}
           className={`rounded-2xl p-4 flex items-center justify-between ${
             istPraxisModus
-              ? "bg-[#6B8F71]/5 border-2 border-[#6B8F71]/30"
+              ? "bg-[#3E5A6A]/5 border-2 border-[#3E5A6A]/30"
               : "bg-[var(--lern-bg-primary)] border border-[var(--lern-border)]"
           }`}
         >
@@ -295,7 +295,7 @@ export default function DashboardPage() {
           <button
             onClick={toggleModus}
             className={`relative h-7 w-12 rounded-full transition-colors ${
-              istPraxisModus ? "bg-[#6B8F71]" : "bg-[var(--lern-border)]"
+              istPraxisModus ? "bg-[#3E5A6A]" : "bg-[var(--lern-border)]"
             }`}
           >
             <span
@@ -312,7 +312,7 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.05 }}
-            className="rounded-2xl bg-[#6B8F71]/5 border border-[#6B8F71]/20 p-5"
+            className="rounded-2xl bg-[#3E5A6A]/5 border border-[#3E5A6A]/20 p-5"
           >
             <h2 className="text-sm font-semibold text-[#4A7350] mb-3">
               Empfohlen im Praktikum
@@ -388,10 +388,10 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.04 }}
-            className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[#6B8F71]/30 p-5"
+            className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[#3E5A6A]/30 p-5"
           >
             <div className="flex items-center justify-between mb-2">
-              <p className="text-xs font-semibold text-[#6B8F71] uppercase tracking-wider">
+              <p className="text-xs font-semibold text-[#3E5A6A] uppercase tracking-wider">
                 Heute auf deinem Plan
               </p>
               <Link href={`/${locale}/wochenplan`} className="text-xs text-[var(--lern-accent)] font-medium">
@@ -408,7 +408,7 @@ export default function DashboardPage() {
             </p>
             <Link
               href={`/${locale}/lernen/${heutigerTag.leId}`}
-              className="block w-full rounded-xl bg-[#6B8F71] px-4 py-3 text-center text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#28B84C]"
+              className="block w-full rounded-xl bg-[#3E5A6A] px-4 py-3 text-center text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#28B84C]"
             >
               Jetzt starten
             </Link>
@@ -509,7 +509,7 @@ export default function DashboardPage() {
           </div>
           <div className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-4 text-center">
             <p className="text-xs text-[var(--lern-text-secondary)]">Lernzeit</p>
-            <p className="text-xl font-bold text-[#6B8F71]">
+            <p className="text-xl font-bold text-[#3E5A6A]">
               {wochenDaten.reduce((s, d) => s + d.minuten, 0)} Min
             </p>
           </div>
@@ -663,7 +663,7 @@ export default function DashboardPage() {
                     animate={{ width: `${(profil.achsen.sprache / 5) * 100}%` }}
                     transition={{ delay: 0.3, duration: 0.6 }}
                     className="h-full rounded-full"
-                    style={{ backgroundColor: profil.achsen.sprache >= 4 ? "#6B8F71" : profil.achsen.sprache >= 3 ? "#D4956A" : "#C96B5C" }}
+                    style={{ backgroundColor: profil.achsen.sprache >= 4 ? "#3E5A6A" : profil.achsen.sprache >= 3 ? "#D4956A" : "#C96B5C" }}
                   />
                 </div>
               </div>
@@ -680,7 +680,7 @@ export default function DashboardPage() {
                     animate={{ width: `${(profil.achsen.fachwissen / 5) * 100}%` }}
                     transition={{ delay: 0.35, duration: 0.6 }}
                     className="h-full rounded-full"
-                    style={{ backgroundColor: profil.achsen.fachwissen >= 4 ? "#6B8F71" : profil.achsen.fachwissen >= 3 ? "#D4956A" : "#C96B5C" }}
+                    style={{ backgroundColor: profil.achsen.fachwissen >= 4 ? "#3E5A6A" : profil.achsen.fachwissen >= 3 ? "#D4956A" : "#C96B5C" }}
                   />
                 </div>
               </div>
@@ -727,7 +727,7 @@ export default function DashboardPage() {
 const EMPFEHLUNG_STYLES: Record<string, { bg: string; border: string; icon: string; label: string }> = {
   weiter: { bg: "bg-[var(--lern-accent)]", border: "", icon: "▶️", label: "Weitermachen" },
   "neue-session": { bg: "bg-[var(--lern-bg-primary)]", border: "border border-[var(--lern-accent)]/30", icon: "📖", label: "Nächste Session" },
-  "neue-le": { bg: "bg-[var(--lern-bg-primary)]", border: "border border-[#6B8F71]/30", icon: "🆕", label: "Neue Lektion" },
+  "neue-le": { bg: "bg-[var(--lern-bg-primary)]", border: "border border-[#3E5A6A]/30", icon: "🆕", label: "Neue Lektion" },
   wiederholung: { bg: "bg-[#D4956A]/5", border: "border border-[#D4956A]/20", icon: "🔄", label: "Wiederholung" },
   challenge: { bg: "bg-[#9B7EA6]/5", border: "border border-[#9B7EA6]/20", icon: "⚡", label: "Challenge" },
 };
@@ -782,7 +782,7 @@ function PruefungsreifeBadge() {
   if (verfuegbar.length === 0) return null;
 
   const farbe = pruefung
-    ? pruefung.reife === "gruen" ? "#6B8F71" : pruefung.reife === "gelb" ? "#D4956A" : "#C96B5C"
+    ? pruefung.reife === "gruen" ? "#3E5A6A" : pruefung.reife === "gelb" ? "#D4956A" : "#C96B5C"
     : "#86868b";
   const label = pruefung
     ? pruefung.reife === "gruen" ? "Pr\u00fcfungsreif" : pruefung.reife === "gelb" ? "Fast bereit" : "Noch \u00fcben"

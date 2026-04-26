@@ -18,7 +18,7 @@ const RATINGS: { value: number; icon: IconName; color: string; label: string }[]
   { value: 1, icon: "neutral", color: "var(--lern-text-tertiary)", label: "Noch nie gehört" },
   { value: 2, icon: "thinking", color: "#D4956A", label: "Vage Idee" },
   { value: 3, icon: "smile", color: "#8AABB5", label: "Grundlagen bekannt" },
-  { value: 4, icon: "grin", color: "#6B8F71", label: "Kann es erklären" },
+  { value: 4, icon: "grin", color: "#3E5A6A", label: "Kann es erklären" },
   { value: 5, icon: "starry-eyes", color: "#9B7EA6", label: "Sicher im Thema" },
 ];
 
@@ -72,7 +72,7 @@ export function StepSelfrating({
       <button
         onClick={() => rating !== null && onNext(rating)}
         disabled={rating === null}
-        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40 disabled:cursor-not-allowed"
+        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] disabled:opacity-40 disabled:cursor-not-allowed"
       >
         Weiter
       </button>

@@ -495,7 +495,7 @@ export function StepCrossword({
                   key={`${row}-${col}`}
                   className={`relative border transition-colors ${
                     status === "correct"
-                      ? "border-[#6B8F71] bg-[#6B8F71]/10"
+                      ? "border-[#3E5A6A] bg-[#3E5A6A]/10"
                       : status === "wrong"
                         ? "border-[#C96B5C] bg-[#C96B5C]/10"
                         : isActive
@@ -629,7 +629,7 @@ export function StepCrossword({
         <button
           onClick={() => setChecked(true)}
           aria-label="Kreuzworträtsel prüfen"
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
         >
           Prüfen
         </button>
@@ -647,7 +647,7 @@ export function StepCrossword({
           <button
             onClick={() => onNext(allCorrect)}
             aria-label="Weiter zum nächsten Schritt"
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
           >
             Weiter
           </button>

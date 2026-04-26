@@ -52,7 +52,7 @@ export function LernpfadSektion({ lernpfad, locale }: LernpfadSektionProps) {
                       {le.prozent > 0 && (
                         <div className="mt-1 h-1 rounded-full bg-[var(--lern-bg)]">
                           <div
-                            className="h-full rounded-full bg-[#6B8F71]"
+                            className="h-full rounded-full bg-[#3E5A6A]"
                             style={{ width: `${le.prozent}%` }}
                           />
                         </div>

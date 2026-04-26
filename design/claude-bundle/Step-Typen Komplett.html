@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<title>Step-Typen Komplett — alle 30+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #f3efe9; font-family: Inter, system-ui, sans-serif; }
+  * { box-sizing: border-box; }
+  @keyframes pulse { from { transform: scaleY(0.5); } to { transform: scaleY(1); } }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="ios-frame.jsx"></script>
+<script type="text/babel" src="shared.jsx"></script>
+<script type="text/babel" src="steps-cgpt.jsx"></script>
+<script type="text/babel" src="steps-extra-1.jsx"></script>
+<script type="text/babel" src="steps-extra-2.jsx"></script>
+<script type="text/babel" src="frau-m-data.jsx"></script>
+<script type="text/babel" src="frau-m-steps.jsx"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="react">
+  function ABoard({ id, label, comp: Comp }) {
+    return (
+      <window.DCArtboard id={id} label={label} width={390} height={780}>
+        <Comp />
+      </window.DCArtboard>
+    );
+  }
+
+  function Note() {
+    const C = window.CGPT;
+    return (
+      <div style={{
+        maxWidth: 760, margin: '0 auto 24px', padding: '18px 20px',
+        background: C.bgWhite, border: `1px solid ${C.border}`, borderRadius: 12,
+        fontFamily: 'Inter, sans-serif', fontSize: 13, lineHeight: 1.6, color: C.text2,
+      }}>
+        <div style={{ fontSize: 11, fontWeight: 700, color: C.accent, textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 6 }}>
+          Komplette Step-Typen-Bibliothek · ChatGPT-Palette
+        </div>
+        <div style={{ color: C.text }}>
+          Alle <strong>30+ Step-Typen</strong> aus dem Live-Repo, in der gewählten Teal-Palette und Inter.
+          Mechanik wie im Original (Live-Code von <code>passivebywaleria-droid/pflege-lernplattform</code>),
+          visuell auf das neue Design-System umgestellt.
+        </div>
+      </div>
+    );
+  }
+
+  function App() {
+    const W = window;
+    return (
+      <window.DesignCanvas
+        title="Step-Typen Komplett"
+        subtitle="Alle 30+ Lerninteraktions-Typen in der ChatGPT-Palette"
+      >
+        <div style={{ marginBottom: 20 }}><Note /></div>
+
+        <window.DCSection id="basics" title="Basis (schon gebaut in steps-cgpt.jsx)">
+          {ABoard({id:"b-text", label:"Text · Info", comp:W.StepText})}
+          {ABoard({id:"b-mc", label:"Multiple Choice", comp:W.StepMC})}
+          {ABoard({id:"b-conf", label:"Selbsteinschätzung", comp:W.StepConfidence})}
+          {ABoard({id:"b-flip", label:"Karteikarte", comp:W.StepFlashcard})}
+          {ABoard({id:"b-fb", label:"Feedback", comp:W.StepFeedback})}
+          {ABoard({id:"b-ord", label:"Reihenfolge (alt)", comp:W.StepOrder})}
+          {ABoard({id:"b-refl", label:"Reflektion", comp:W.StepReflect})}
+          {ABoard({id:"b-vid", label:"Video", comp:W.StepVideo})}
+          {ABoard({id:"b-mat", label:"Zuordnen (alt)", comp:W.StepMatch})}
+          {ABoard({id:"b-done", label:"Phase abgeschlossen", comp:W.StepDone})}
+        </window.DCSection>
+
+        <window.DCSection id="quiz" title="Quiz · Wissen prüfen">
+          {ABoard({id:"q-tf", label:"Wahr / Falsch", comp:W.StepTrueFalse})}
+          {ABoard({id:"q-fi", label:"Lücke füllen (Fill-In)", comp:W.StepFillIn})}
+          {ABoard({id:"q-sl", label:"Slider · Wert schätzen", comp:W.StepSlider})}
+          {ABoard({id:"q-hs", label:"Hotspot · Anatomie", comp:W.StepHotspot})}
+          {ABoard({id:"q-sw", label:"Swipe · Erlaubt/Verboten", comp:W.StepSwipe})}
+          {ABoard({id:"q-es", label:"Fehler finden (Error-Spot)", comp:W.StepErrorSpot})}
+        </window.DCSection>
+
+        <window.DCSection id="sort" title="Sortieren · Strukturieren">
+          {ABoard({id:"s-srt", label:"Reihenfolge (Sort)", comp:W.StepSorting})}
+          {ABoard({id:"s-cat", label:"Zuordnen · Kategorien", comp:W.StepCategorize})}
+          {ABoard({id:"s-cmp", label:"Vergleichstabelle", comp:W.StepComparison})}
+          {ABoard({id:"s-mtx", label:"Matrix · 2 Achsen", comp:W.StepMatrix})}
+          {ABoard({id:"s-tbl", label:"Tabelle füllen", comp:W.StepTableFillIn})}
+          {ABoard({id:"s-wo", label:"Satzbau · Word-Order", comp:W.StepWordOrder})}
+        </window.DCSection>
+
+        <window.DCSection id="mark" title="Markieren · Beschriften">
+          {ABoard({id:"m-hl", label:"Highlight im Text", comp:W.StepHighlight})}
+          {ABoard({id:"m-li", label:"Bild beschriften", comp:W.StepLabelImage})}
+        </window.DCSection>
+
+        <window.DCSection id="connect" title="Verbinden · Visualisieren">
+          {ABoard({id:"c-mem", label:"Memory · Paare", comp:W.StepMemory})}
+          {ABoard({id:"c-cm", label:"Concept-Map", comp:W.StepConceptMap})}
+          {ABoard({id:"c-tl", label:"Zeitleiste", comp:W.StepTimeline})}
+          {ABoard({id:"c-dg", label:"Diagramm · Entscheidungsbaum", comp:W.StepDiagram})}
+          {ABoard({id:"c-rv", label:"Reveal · Schritt für Schritt", comp:W.StepReveal})}
+        </window.DCSection>
+
+        <window.DCSection id="talk" title="Sprache · Dialog · Schreiben">
+          {ABoard({id:"t-dlg", label:"Dialog mit Patient:in", comp:W.StepDialog})}
+          {ABoard({id:"t-cs", label:"Chat-Simulation (KI)", comp:W.StepChatSim})}
+          {ABoard({id:"t-sp", label:"Aussprache", comp:W.StepSpeech})}
+          {ABoard({id:"t-cz", label:"Lückentext (Cloze)", comp:W.StepCloze})}
+          {ABoard({id:"t-ft", label:"Freitext + KI-Feedback", comp:W.StepFreetext})}
+          {ABoard({id:"t-br", label:"Verzweigt · Was tust du?", comp:W.StepBranching})}
+        </window.DCSection>
+
+        <window.DCSection id="calc" title="Rechnen · Schätzen · Tempo">
+          {ABoard({id:"ca-c", label:"Pflegerechnen", comp:W.StepCalculation})}
+          {ABoard({id:"ca-e", label:"Schätzen", comp:W.StepEstimation})}
+          {ABoard({id:"ca-t", label:"Zeitdruck-Quiz", comp:W.StepTimer})}
+        </window.DCSection>
+
+        <window.DCSection id="frau-m" title="CE-02 · Frau Marianne M., 82 — Nächtlicher Sturz · echter Situationskontext mit 6-Phasen-Bar">
+          {ABoard({id:"fm-scene",  label:"01 · Phase 1 · Szene öffnen",            comp:W.FrauMScene})}
+          {ABoard({id:"fm-sbar",   label:"02 · Phase 1 · SBAR-Übergabe",            comp:W.FrauMSBAR})}
+          {ABoard({id:"fm-conf",   label:"03 · Phase 1 · Selbsteinschätzung",       comp:W.FrauMConfidence})}
+          {ABoard({id:"fm-mc",     label:"04 · Phase 1 · MC · erste Reaktion",      comp:W.FrauMMC})}
+          {ABoard({id:"fm-dlg",    label:"05 · Phase 1 · Dialog mit Frau M.",       comp:W.FrauMDialog})}
+          {ABoard({id:"fm-sort",   label:"06 · Phase 2 · Risiken priorisieren",     comp:W.FrauMSort})}
+          {ABoard({id:"fm-hl",     label:"07 · Phase 2 · Wirkstoffe markieren",     comp:W.FrauMHighlight})}
+          {ABoard({id:"fm-cat",    label:"08 · Phase 2 · Risiken kategorisieren",   comp:W.FrauMCategorize})}
+          {ABoard({id:"fm-branch", label:"09 · Phase 4 · Branching · Mobilisation", comp:W.FrauMBranching})}
+          {ABoard({id:"fm-prot",   label:"10 · Phase 5 · Sturzprotokoll",           comp:W.FrauMProtocol})}
+          {ABoard({id:"fm-done",   label:"11 · Phase 6 · Situation abgeschlossen",  comp:W.FrauMDone})}
+        </window.DCSection>
+
+        <window.DCSection id="special" title="Spezielle Formate">
+          {ABoard({id:"sp-cw", label:"Kreuzworträtsel", comp:W.StepCrossword})}
+          {ABoard({id:"sp-cp", label:"Schwarmwissen (Crowd-Poll)", comp:W.StepCrowdPoll})}
+          {ABoard({id:"sp-img", label:"Vorher / Nachher (Bild)", comp:W.StepImageInteraction})}
+          {ABoard({id:"sp-cap", label:"Pflegeplan (Multi-Phase)", comp:W.StepCarePlan})}
+        </window.DCSection>
+      </window.DesignCanvas>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

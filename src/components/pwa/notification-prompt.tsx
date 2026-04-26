@@ -76,7 +76,7 @@ export function NotificationPrompt() {
           <div className="mt-3 flex gap-2">
             <button
               onClick={requestPermission}
-              className="rounded-lg bg-[#C4877F] px-3 py-1.5 text-sm font-medium text-white hover:bg-[#B07A72]"
+              className="rounded-lg bg-[#218C71] px-3 py-1.5 text-sm font-medium text-white hover:bg-[#1A7359]"
             >
               Aktivieren
             </button>

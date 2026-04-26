@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<title>V1 Flow mit Wissensbausteinen — CE → Thema → Baustein → Steps</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #f3efe9; font-family: Inter, system-ui, sans-serif; }
+  * { box-sizing: border-box; }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="ios-frame.jsx"></script>
+<script type="text/babel" src="shared.jsx"></script>
+<script type="text/babel" src="steps-cgpt.jsx"></script>
+<script type="text/babel" src="steps-extra-1.jsx"></script>
+<script type="text/babel" src="bausteine.jsx"></script>
+<script type="text/babel" src="v1-flow-bausteine.jsx"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="react">
+  function ABoard({ id, label, comp: Comp }) {
+    return (
+      <window.DCArtboard id={id} label={label} width={390} height={780}>
+        <Comp />
+      </window.DCArtboard>
+    );
+  }
+
+  function FlowBoard({ id, label, start }) {
+    return (
+      <window.DCArtboard id={id} label={label} width={430} height={920}>
+        <window.IOSDevice width={390} height={844}>
+          <window.V1AppWithBausteine start={start} />
+        </window.IOSDevice>
+      </window.DCArtboard>
+    );
+  }
+
+  function Note() {
+    const C = window.CGPT;
+    return (
+      <div style={{
+        maxWidth: 820, margin: '0 auto 20px', padding: '20px 22px',
+        background: C.bgWhite, border: `1px solid ${C.border}`, borderRadius: 14,
+        fontFamily: 'Inter, sans-serif', fontSize: 13, lineHeight: 1.6, color: C.text2,
+      }}>
+        <div style={{ fontSize: 11, fontWeight: 700, color: C.accent, textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 8 }}>
+          V1-Flow · jetzt mit Wissensbausteinen
+        </div>
+        <div style={{ color: C.text, fontSize: 15, fontWeight: 600, marginBottom: 8, lineHeight: 1.4 }}>
+          5-Stufen-Hierarchie: CE → Thema → Baustein → Walkthrough → Abschluss
+        </div>
+        <div>
+          Der vollständige Flow ist klickbar. Tippe auf <strong>Thema 02</strong>, dann auf den
+          hervorgehobenen <strong>Baustein 03</strong> (in Bearbeitung), starte den Baustein und
+          gehe durch die 5 Steps. Am Ende kommt der Mastery-Update-Screen, dann zurück zur
+          Themen-Übersicht.
+        </div>
+      </div>
+    );
+  }
+
+  function App() {
+    const W = window;
+    return (
+      <window.DesignCanvas
+        title="V1-Flow mit Wissensbausteinen"
+        subtitle="CE · Thema · Baustein-Intro · Step-Walkthrough · Abschluss"
+      >
+        <div style={{ marginBottom: 20 }}><Note /></div>
+
+        <window.DCSection id="flow-full" title="Vollständiger Flow · klickbar">
+          {FlowBoard({id: "fb-ce",   label: "Start: CE-Übersicht (tippe Thema 02)", start: "ce"})}
+          {FlowBoard({id: "fb-thema", label: "Start: Thema → Baustein-Liste", start: "thema"})}
+          {FlowBoard({id: "fb-walk",  label: "Start: direkt im Walkthrough", start: "walkthrough"})}
+        </window.DCSection>
+
+        <window.DCSection id="screens" title="Die 5 Screens des Flows">
+          {ABoard({id: "s1-ce",    label: "1. CE-Übersicht (Themen-Liste)",      comp: W.V1CECgpt})}
+          {ABoard({id: "s2-thema", label: "2. Thema mit Baustein-Liste",          comp: W.ThemaUebersicht})}
+          {ABoard({id: "s3-intro", label: "3. Baustein-Intro (Lernziele)",        comp: W.BausteinIntroDemo})}
+          {ABoard({id: "s4-walk",  label: "4. Step-Walkthrough (Sticky-Header)",  comp: W.V1StepWalkthroughDemo})}
+          {ABoard({id: "s5-done",  label: "5. Baustein-Abschluss (Mastery +1)",   comp: W.BausteinAbschlussDemo})}
+        </window.DCSection>
+
+        <window.DCSection id="hierarchy" title="Hierarchie-Diagramm">
+          <window.DCArtboard id="hier" label="Datenmodell" width={760} height={420}>
+            <Hierarchy />
+          </window.DCArtboard>
+        </window.DCSection>
+      </window.DesignCanvas>
+    );
+  }
+
+  function Hierarchy() {
+    const C = window.CGPT;
+    const Box = ({ children, w = 180, accent = false, sub }) => (
+      <div style={{
+        background: accent ? C.accent : C.bgWhite,
+        color: accent ? '#fff' : C.text,
+        border: `1px solid ${accent ? C.accent : C.border}`,
+        borderRadius: 10, padding: '12px 14px', width: w, textAlign: 'center',
+      }}>
+        <div style={{ fontSize: 13, fontWeight: 600 }}>{children}</div>
+        {sub && <div style={{ fontSize: 11, color: accent ? 'rgba(255,255,255,0.85)' : C.text3, marginTop: 3 }}>{sub}</div>}
+      </div>
+    );
+    const Arrow = () => (
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', color: C.text3 }}>
+        <div style={{ width: 1, height: 18, background: C.borderStrong }} />
+        <div style={{ fontSize: 14, lineHeight: 1, marginTop: -2 }}>▼</div>
+      </div>
+    );
+    return (
+      <div style={{
+        width: '100%', height: '100%', background: C.bg, padding: 30,
+        fontFamily: 'Inter, sans-serif', display: 'flex', flexDirection: 'column',
+        alignItems: 'center', justifyContent: 'center', gap: 6,
+      }}>
+        <Box w={220}>CE 04 · Curriculum-Einheit<span style={{display:'block',fontSize:11,color:C.text3,fontWeight:400,marginTop:3}}>32 UE · 4 Themen</span></Box>
+        <Arrow />
+        <Box w={260}>Thema 02 · Schmerzmanagement<span style={{display:'block',fontSize:11,color:C.text3,fontWeight:400,marginTop:3}}>5 Bausteine · ~43 min</span></Box>
+        <Arrow />
+        <Box w={300} accent sub="5 Steps · ~12 min · Mastery vertraut">Baustein 03 · Schmerz und Bewegung</Box>
+        <Arrow />
+        <div style={{ display: 'flex', gap: 10, fontSize: 11 }}>
+          {['Text', 'MC', 'Wahr/Falsch', 'Slider', 'Reflektion'].map(s => (
+            <div key={s} style={{
+              padding: '8px 12px', background: C.bgWhite, border: `1px solid ${C.border}`,
+              borderRadius: 8, color: C.text2, fontWeight: 500,
+            }}>{s}</div>
+          ))}
+        </div>
+        <div style={{ fontSize: 10, color: C.text3, marginTop: 10, letterSpacing: 0.5, textTransform: 'uppercase' }}>
+          Steps = atomare Lerninteraktionen
+        </div>
+      </div>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

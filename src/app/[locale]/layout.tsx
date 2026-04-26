@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description:
     "Adaptive Lernplattform für die generalistische Pflegeausbildung nach PflBG 2020",
   manifest: "/manifest.json",
-  themeColor: "#C4877F",
+  themeColor: "#218C71",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",

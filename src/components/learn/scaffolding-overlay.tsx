@@ -72,9 +72,9 @@ function FeedbackContent({ data, onClose }: { data: ScaffoldingResult; onClose: 
   return (
     <>
       {/* Sandwich: Lob */}
-      <div className="rounded-xl bg-[#6B8F71]/8 border border-[#6B8F71]/20 p-4">
+      <div className="rounded-xl bg-[#3E5A6A]/8 border border-[#3E5A6A]/20 p-4">
         <div className="flex items-start gap-3">
-          <span className="shrink-0 w-7 h-7 rounded-full bg-[#6B8F71]/15 flex items-center justify-center text-[#6B8F71] text-sm font-bold">
+          <span className="shrink-0 w-7 h-7 rounded-full bg-[#3E5A6A]/15 flex items-center justify-center text-[#3E5A6A] text-sm font-bold">
             +
           </span>
           <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">

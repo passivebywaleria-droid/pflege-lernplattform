@@ -57,7 +57,7 @@ function bewerteSimilarity(score: number): Bewertung {
 }
 
 const BEWERTUNG_CONFIG: Record<Bewertung, { label: string; farbe: string; emoji: string }> = {
-  perfekt: { label: "Perfekt ausgesprochen!", farbe: "#6B8F71", emoji: "🎯" },
+  perfekt: { label: "Perfekt ausgesprochen!", farbe: "#3E5A6A", emoji: "🎯" },
   gut: { label: "Fast richtig — probier es nochmal!", farbe: "#D4956A", emoji: "👍" },
   nochmal: { label: "Versuch es nochmal — hör dir den Begriff nochmal an.", farbe: "#C96B5C", emoji: "🔄" },
 };

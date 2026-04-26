@@ -94,7 +94,7 @@ export function StepHighlight({
                 onClick={() => toggle(i)}
                 className={`cursor-pointer px-1 py-0.5 rounded transition-all inline ${
                   isCorrectMark
-                    ? "bg-[#6B8F71]/20 text-[var(--lern-text-primary)] font-medium"
+                    ? "bg-[#3E5A6A]/20 text-[var(--lern-text-primary)] font-medium"
                     : isWrongMark
                       ? "bg-[#C96B5C]/20 text-[#C96B5C] line-through"
                       : isMissed
@@ -115,7 +115,7 @@ export function StepHighlight({
       {checked && (
         <div className="flex flex-wrap gap-3 text-xs text-[var(--lern-text-secondary)]">
           <span className="flex items-center gap-1">
-            <span className="w-3 h-3 rounded bg-[#6B8F71]/20" /> Richtig
+            <span className="w-3 h-3 rounded bg-[#3E5A6A]/20" /> Richtig
             markiert
           </span>
           <span className="flex items-center gap-1">
@@ -152,7 +152,7 @@ export function StepHighlight({
       {!checked ? (
         <button
           onClick={() => setChecked(true)}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
         >
           Prüfen
         </button>
@@ -163,7 +163,7 @@ export function StepHighlight({
             animate={{ opacity: 1, y: 0 }}
             className={`rounded-2xl p-4 ${
               allCorrect
-                ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+                ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
                 : "bg-[#D4956A]/10 border border-[#D4956A]/30"
             }`}
           >
@@ -176,7 +176,7 @@ export function StepHighlight({
 
           <button
             onClick={() => onNext(allCorrect)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
           >
             Weiter
           </button>

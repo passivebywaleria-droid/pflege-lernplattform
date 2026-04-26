@@ -130,10 +130,10 @@ export function StepHotspot({
                   transform: "translate(-50%, -50%)",
                 }}
               >
-                <div className="h-8 w-8 rounded-full bg-[#6B8F71]/30 border-[1.5px] border-[#6B8F71] flex items-center justify-center">
-                  <span className="text-xs font-bold text-[#6B8F71]">✓</span>
+                <div className="h-8 w-8 rounded-full bg-[#3E5A6A]/30 border-[1.5px] border-[#3E5A6A] flex items-center justify-center">
+                  <span className="text-xs font-bold text-[#3E5A6A]">✓</span>
                 </div>
-                <span className="absolute -bottom-5 whitespace-nowrap text-xs font-bold text-[#6B8F71] bg-[var(--lern-bg-primary)]/80 px-1 rounded">
+                <span className="absolute -bottom-5 whitespace-nowrap text-xs font-bold text-[#3E5A6A] bg-[var(--lern-bg-primary)]/80 px-1 rounded">
                   {zone.label}
                 </span>
               </motion.div>
@@ -169,7 +169,7 @@ export function StepHotspot({
             .map((z) => (
               <span
                 key={z.id}
-                className="rounded-full bg-[#6B8F71]/10 px-3 py-1 text-sm font-medium text-[#6B8F71]"
+                className="rounded-full bg-[#3E5A6A]/10 px-3 py-1 text-sm font-medium text-[#3E5A6A]"
               >
                 {z.label}
               </span>
@@ -184,14 +184,14 @@ export function StepHotspot({
           animate={{ opacity: 1, y: 0 }}
           className="space-y-4"
         >
-          <div className="rounded-2xl bg-[#6B8F71]/10 border border-[#6B8F71]/30 p-4">
-            <p className="font-semibold text-[#6B8F71]">
+          <div className="rounded-2xl bg-[#3E5A6A]/10 border border-[#3E5A6A]/30 p-4">
+            <p className="font-semibold text-[#3E5A6A]">
               Alle {zones.length} Punkte gefunden!
             </p>
           </div>
           <button
             onClick={() => onNext(allFound)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
           >
             Weiter
           </button>

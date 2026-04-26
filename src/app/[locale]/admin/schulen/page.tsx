@@ -18,7 +18,7 @@ interface School {
 const LICENSE_COLORS: Record<string, string> = {
   free: "bg-[#8e8e93]/10 text-[#636366]",
   pilot: "bg-[#D4956A]/10 text-[#B07A52]",
-  paid: "bg-[#6B8F71]/10 text-[#4A7350]",
+  paid: "bg-[#3E5A6A]/10 text-[#4A7350]",
 }
 
 export default function AdminSchulenPage() {
@@ -76,7 +76,7 @@ export default function AdminSchulenPage() {
           </div>
           <button
             onClick={() => setShowForm(!showForm)}
-            className="rounded-full bg-[var(--lern-accent)] px-4 py-2 text-sm font-semibold text-white hover:bg-[#B07A72]"
+            className="rounded-full bg-[var(--lern-accent)] px-4 py-2 text-sm font-semibold text-white hover:bg-[#1A7359]"
           >
             + Neue Schule
           </button>
@@ -134,7 +134,7 @@ export default function AdminSchulenPage() {
               </div>
             </div>
             <div className="flex gap-3">
-              <button type="submit" className="rounded-full bg-[var(--lern-accent)] px-5 py-2 text-sm font-semibold text-white hover:bg-[#B07A72]">
+              <button type="submit" className="rounded-full bg-[var(--lern-accent)] px-5 py-2 text-sm font-semibold text-white hover:bg-[#1A7359]">
                 Erstellen
               </button>
               <button type="button" onClick={() => setShowForm(false)} className="rounded-full border border-[var(--lern-border)] px-5 py-2 text-sm">
@@ -176,7 +176,7 @@ export default function AdminSchulenPage() {
                     {school.contactEmail && <span>{school.contactEmail}</span>}
                     <span>{school.studentCount}/{school.maxStudents} Schüler</span>
                     {school.stripeCustomerId && (
-                      <span className="text-[#6B8F71]">Stripe aktiv</span>
+                      <span className="text-[#3E5A6A]">Stripe aktiv</span>
                     )}
                   </div>
                 </div>

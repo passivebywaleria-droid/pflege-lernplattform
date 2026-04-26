@@ -52,7 +52,7 @@ interface StepComparisonProps {
 // Farben für Spalten (unterscheidbar, passt zum Apple-Design)
 const COLUMN_COLORS = [
   { bg: "bg-[var(--lern-accent)]", light: "bg-[var(--lern-accent)]/10", border: "border-[var(--lern-accent)]/20", text: "text-[var(--lern-accent)]", hex: "var(--lern-accent)" },
-  { bg: "bg-[#6B8F71]", light: "bg-[#6B8F71]/10", border: "border-[#6B8F71]/20", text: "text-[#147a2a]", hex: "#147a2a" },
+  { bg: "bg-[#3E5A6A]", light: "bg-[#3E5A6A]/10", border: "border-[#3E5A6A]/20", text: "text-[#147a2a]", hex: "#147a2a" },
   { bg: "bg-[#D4956A]", light: "bg-[#D4956A]/10", border: "border-[#D4956A]/20", text: "text-[#a86200]", hex: "#a86200" },
   { bg: "bg-[#9B7EA6]", light: "bg-[#9B7EA6]/10", border: "border-[#9B7EA6]/20", text: "text-[#7B2FA0]", hex: "#7B2FA0" },
   { bg: "bg-[#C96B5C]", light: "bg-[#C96B5C]/10", border: "border-[#C96B5C]/20", text: "text-[#c4291f]", hex: "#c4291f" },
@@ -192,7 +192,7 @@ export function StepComparison({
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         onClick={() => onNext(true)}
-        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
       >
         Weiter
       </motion.button>

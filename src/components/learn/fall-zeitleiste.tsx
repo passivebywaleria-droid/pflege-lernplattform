@@ -106,7 +106,7 @@ function StationCard({
               ? "border-[var(--lern-divider)] bg-[var(--lern-card-bg)]"
               : istErsteStation
                 ? "border-[var(--lern-accent)] bg-[var(--lern-accent)]"
-                : "border-[#6B8F71] bg-[#6B8F71]"
+                : "border-[#3E5A6A] bg-[#3E5A6A]"
           }`}
         >
           {istGesperrt ? (
@@ -120,7 +120,7 @@ function StationCard({
         {!isLast && (
           <div
             className={`w-0.5 flex-1 min-h-[24px] ${
-              istGesperrt ? "bg-[var(--lern-divider)]" : "bg-[#6B8F71]/30"
+              istGesperrt ? "bg-[var(--lern-divider)]" : "bg-[#3E5A6A]/30"
             }`}
           />
         )}
@@ -202,7 +202,7 @@ function StationCard({
                         e.stopPropagation();
                         onStationStarten(fallId, station.stationId);
                       }}
-                      className="rounded-full bg-[var(--lern-accent)] px-3 py-1.5 text-xs font-semibold text-white active:scale-95 transition-transform hover:bg-[#B07A72]"
+                      className="rounded-full bg-[var(--lern-accent)] px-3 py-1.5 text-xs font-semibold text-white active:scale-95 transition-transform hover:bg-[#1A7359]"
                     >
                       Starten
                     </button>

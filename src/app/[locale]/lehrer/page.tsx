@@ -126,7 +126,7 @@ function transformMessages(msgs: ApiMessage[]): DashboardNachricht[] {
 function StatusBadge({ status, label }: { status: SchuelerStatus; label: string }) {
   const farbe =
     status === "aktiv"
-      ? "bg-[#6B8F71]/10 text-[#4A7350]"
+      ? "bg-[#3E5A6A]/10 text-[#4A7350]"
       : status === "inaktiv"
         ? "bg-[#D4956A]/10 text-[#B07A52]"
         : "bg-[#C96B5C]/10 text-[#A0584C]";
@@ -134,7 +134,7 @@ function StatusBadge({ status, label }: { status: SchuelerStatus; label: string 
   return (
     <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium ${farbe}`}>
       {status === "aktiv" && (
-        <span className="w-1.5 h-1.5 rounded-full bg-[#6B8F71] mr-1.5" />
+        <span className="w-1.5 h-1.5 rounded-full bg-[#3E5A6A] mr-1.5" />
       )}
       {status === "brauchtHilfe" && (
         <span className="w-1.5 h-1.5 rounded-full bg-[#C96B5C] mr-1.5 animate-pulse" />
@@ -147,7 +147,7 @@ function StatusBadge({ status, label }: { status: SchuelerStatus; label: string 
 function FortschrittsBalken({ prozent }: { prozent: number }) {
   const farbe =
     prozent >= 70
-      ? "bg-[#6B8F71]"
+      ? "bg-[#3E5A6A]"
       : prozent >= 40
         ? "bg-[#D4956A]"
         : "bg-[#C96B5C]";
@@ -314,9 +314,9 @@ export default function LehrerDashboardPage() {
           <StatKarte
             label={t("aktiv")}
             wert={stats.aktive.length}
-            farbe="bg-[#6B8F71]/10"
+            farbe="bg-[#3E5A6A]/10"
             icon={
-              <svg className="w-5 h-5 text-[#6B8F71]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg className="w-5 h-5 text-[#3E5A6A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                 <circle cx="9" cy="7" r="4" />
                 <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
@@ -355,16 +355,16 @@ export default function LehrerDashboardPage() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.05 }}
-            className="bg-[var(--lern-bg-primary)] rounded-2xl border-2 border-[#6B8F71]/20 shadow-sm p-4"
+            className="bg-[var(--lern-bg-primary)] rounded-2xl border-2 border-[#3E5A6A]/20 shadow-sm p-4"
           >
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-8 h-8 rounded-full bg-[#6B8F71]/10 flex items-center justify-center">
-                <svg className="w-4 h-4 text-[#6B8F71]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <div className="w-8 h-8 rounded-full bg-[#3E5A6A]/10 flex items-center justify-center">
+                <svg className="w-4 h-4 text-[#3E5A6A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                 </svg>
               </div>
               <h2 className="text-base font-semibold">{t("neueNachrichten")}</h2>
-              <span className="ml-auto px-2 py-0.5 rounded-full bg-[#6B8F71]/10 text-[#4A7350] text-xs font-bold">
+              <span className="ml-auto px-2 py-0.5 rounded-full bg-[#3E5A6A]/10 text-[#4A7350] text-xs font-bold">
                 {nachrichten.length}
               </span>
             </div>

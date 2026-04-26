@@ -34,8 +34,8 @@ interface StepMatchingProps {
 }
 
 const MATCH_COLORS = [
-  "#C4877F",
-  "#6B8F71",
+  "#218C71",
+  "#3E5A6A",
   "#D4956A",
   "#9B7EA6",
   "#C96B5C",
@@ -195,7 +195,7 @@ export function StepMatching({
               const isWrong = submitted && leftIdx !== rightIdx;
               const borderColor = submitted
                 ? isCorrect
-                  ? "#6B8F71"
+                  ? "#3E5A6A"
                   : "#C96B5C"
                 : color;
 
@@ -248,11 +248,11 @@ export function StepMatching({
                     <div
                       className="grid grid-cols-2 gap-1 mt-1 rounded-xl border-[1.5px] p-2"
                       style={{
-                        borderColor: "#6B8F71",
+                        borderColor: "#3E5A6A",
                         backgroundColor: "rgba(48,209,88,0.05)",
                       }}
                     >
-                      <div className="text-xs font-medium" style={{ color: "#6B8F71" }}>
+                      <div className="text-xs font-medium" style={{ color: "#3E5A6A" }}>
                         Richtig wäre:
                       </div>
                       <div className="text-xs font-medium" style={{ color: "var(--lern-text-primary)" }}>
@@ -283,9 +283,9 @@ export function StepMatching({
                   role="option"
                   aria-selected={isSelected}
                   aria-label={`Begriff: ${pairs[idx].left}`}
-                  className={`w-full rounded-xl border-[1.5px] p-3 text-left text-sm font-medium transition-all focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2 ${
+                  className={`w-full rounded-xl border-[1.5px] p-3 text-left text-sm font-medium transition-all focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2 ${
                     isSelected
-                      ? "border-[#C4877F] bg-[#C4877F]/10"
+                      ? "border-[#218C71] bg-[#218C71]/10"
                       : "border-[var(--lern-border)] bg-[var(--lern-card-bg)]"
                   }`}
                   style={{
@@ -310,9 +310,9 @@ export function StepMatching({
                 role="option"
                 aria-selected={false}
                 aria-label={`Zuordnung: ${pairs[origIdx].right}`}
-                className={`w-full rounded-xl border-[1.5px] p-3 text-left text-sm transition-all focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2 ${
+                className={`w-full rounded-xl border-[1.5px] p-3 text-left text-sm transition-all focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2 ${
                   selectedLeft !== null
-                    ? "border-[#C4877F]/40 bg-[#C4877F]/5 hover:bg-[#C4877F]/10"
+                    ? "border-[#218C71]/40 bg-[#218C71]/5 hover:bg-[#218C71]/10"
                     : "border-[var(--lern-border)] bg-[var(--lern-card-bg)]"
                 }`}
                 style={{
@@ -347,7 +347,7 @@ export function StepMatching({
             onClick={handleSubmit}
             disabled={matches.size < pairs.length}
             aria-label="Zuordnung prüfen"
-            className="w-full rounded-2xl bg-[#C4877F] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2"
+            className="w-full rounded-2xl bg-[#218C71] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2"
           >
             Prüfen
           </button>
@@ -355,7 +355,7 @@ export function StepMatching({
           <button
             onClick={() => onNext(allCorrect)}
             aria-label="Weiter zum nächsten Schritt"
-            className="w-full rounded-2xl bg-[#C4877F] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] focus:outline-2 focus:outline-[#C4877F] focus:outline-offset-2"
+            className="w-full rounded-2xl bg-[#218C71] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2"
           >
             Weiter
           </button>

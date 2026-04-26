@@ -151,7 +151,7 @@ export function PruefungsModus({ steps, leTitle, glossar, onExit }: PruefungsMod
   // Ergebnis-Screen
   if (ergebnis) {
     const pruefungsreife = ergebnis.prozent >= 80 ? "gruen" : ergebnis.prozent >= 60 ? "gelb" : "rot";
-    const farbe = pruefungsreife === "gruen" ? "#6B8F71" : pruefungsreife === "gelb" ? "#D4956A" : "#C96B5C";
+    const farbe = pruefungsreife === "gruen" ? "#3E5A6A" : pruefungsreife === "gelb" ? "#D4956A" : "#C96B5C";
     const label = pruefungsreife === "gruen" ? "Pr\u00fcfungsreif" : pruefungsreife === "gelb" ? "Fast bereit" : "Noch \u00fcben";
     const icon = pruefungsreife === "gruen" ? "✅" : pruefungsreife === "gelb" ? "⚠️" : "❌";
 
@@ -180,7 +180,7 @@ export function PruefungsModus({ steps, leTitle, glossar, onExit }: PruefungsMod
           <div className="grid grid-cols-3 gap-3">
             <div className="rounded-2xl bg-[var(--lern-bg)] p-3 text-center">
               <p className="text-xs text-[var(--lern-text-secondary)]">Richtig</p>
-              <p className="text-lg font-bold text-[#6B8F71]">{ergebnis.richtig}</p>
+              <p className="text-lg font-bold text-[#3E5A6A]">{ergebnis.richtig}</p>
             </div>
             <div className="rounded-2xl bg-[var(--lern-bg)] p-3 text-center">
               <p className="text-xs text-[var(--lern-text-secondary)]">Falsch</p>
@@ -200,7 +200,7 @@ export function PruefungsModus({ steps, leTitle, glossar, onExit }: PruefungsMod
                 <div
                   key={d.stepId}
                   className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm"
-                  style={{ backgroundColor: d.correct ? "#6B8F7110" : "#C96B5C10" }}
+                  style={{ backgroundColor: d.correct ? "#3E5A6A10" : "#C96B5C10" }}
                 >
                   <span>{d.correct ? "✅" : "❌"}</span>
                   <span className="text-[var(--lern-text-secondary)] shrink-0">#{i + 1}</span>

@@ -95,7 +95,7 @@ export function StepTableFillIn({
                           className={`w-full rounded-lg border px-2 py-1.5 text-sm bg-[var(--lern-card-bg)] ${
                             submitted
                               ? results[ri][ci]
-                                ? "border-[#6B8F71] bg-[#6B8F71]/8"
+                                ? "border-[#3E5A6A] bg-[#3E5A6A]/8"
                                 : "border-[#C96B5C] bg-[#C96B5C]/8"
                               : "border-[var(--lern-border)] focus:outline-2 focus:outline-[var(--lern-accent)]"
                           } disabled:opacity-80`}
@@ -115,7 +115,7 @@ export function StepTableFillIn({
                           className={`w-full rounded-lg border px-2 py-1.5 text-sm bg-[var(--lern-card-bg)] ${
                             submitted
                               ? results[ri][ci]
-                                ? "border-[#6B8F71] bg-[#6B8F71]/8"
+                                ? "border-[#3E5A6A] bg-[#3E5A6A]/8"
                                 : "border-[#C96B5C] bg-[#C96B5C]/8"
                               : "border-[var(--lern-border)] focus:outline-2 focus:outline-[var(--lern-accent)]"
                           } disabled:opacity-80`}
@@ -139,7 +139,7 @@ export function StepTableFillIn({
           animate={{ opacity: 1, y: 0 }}
           className={`rounded-2xl p-4 ${
             correctBlanks === totalBlanks
-              ? "bg-[#6B8F71]/10 border border-[#6B8F71]/30"
+              ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
               : correctBlanks >= totalBlanks / 2
                 ? "bg-[#D4956A]/10 border border-[#D4956A]/30"
                 : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
@@ -158,7 +158,7 @@ export function StepTableFillIn({
                     <p key={`${ri}-${ci}`} className="text-sm text-[var(--lern-text-primary)]/70">
                       {headers[ci]}: <span className="line-through text-[#C96B5C]">{answers[ri][ci] || "(leer)"}</span>
                       {" → "}
-                      <span className="font-semibold text-[#6B8F71]">{cell.value}</span>
+                      <span className="font-semibold text-[#3E5A6A]">{cell.value}</span>
                     </p>
                   ) : null
                 )
@@ -172,14 +172,14 @@ export function StepTableFillIn({
         <button
           onClick={() => setSubmitted(true)}
           disabled={!allFilled}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72] disabled:opacity-40"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] disabled:opacity-40"
         >
           Antwort prüfen
         </button>
       ) : (
         <button
           onClick={() => onNext(correctBlanks === totalBlanks)}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
         >
           Weiter
         </button>

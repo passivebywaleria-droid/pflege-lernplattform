@@ -11,7 +11,7 @@ import type { LeTagStats } from "../../../../../../content/content-loader";
 
 const TAG_CONFIG: Record<ContentTag, { icon: string; color: string; colorBg: string }> = {
   anatomie: { icon: "🦴", color: "#9B7EA6", colorBg: "rgba(155,126,166,0.1)" },
-  pflege: { icon: "💊", color: "#C4877F", colorBg: "rgba(196,135,127,0.1)" },
+  pflege: { icon: "💊", color: "#218C71", colorBg: "rgba(196,135,127,0.1)" },
   krankheitslehre: { icon: "🔬", color: "#C96B5C", colorBg: "rgba(201,107,92,0.1)" },
 };
 

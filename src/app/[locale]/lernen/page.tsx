@@ -18,13 +18,13 @@ import {
 const CE_COLORS: Record<string, string> = {
   "ce-01": "var(--lern-accent)",
   "ce-02": "#D4956A",
-  "ce-03": "#6B8F71",
+  "ce-03": "#3E5A6A",
   "ce-04": "#9B7EA6",
   "ce-05": "#C96B5C",
   "ce-06": "#8AABB5",
-  "ce-07": "#B07A72",
+  "ce-07": "#1A7359",
   "ce-08": "#D4956A",
-  "ce-09": "#6B8F71",
+  "ce-09": "#3E5A6A",
   "ce-10": "#9B7EA6",
   "ce-11": "#C96B5C",
 };
@@ -44,9 +44,9 @@ const CE_LABELS: Record<string, string> = {
 };
 
 const STATUS_CONFIG: Record<string, { label: string; opacity: string; badge: string }> = {
-  published: { label: "Verfügbar", opacity: "opacity-100", badge: "bg-[#6B8F71] text-white" },
-  geprueft: { label: "Verfügbar", opacity: "opacity-100", badge: "bg-[#6B8F71] text-white" },
-  steps: { label: "Verfügbar", opacity: "opacity-100", badge: "bg-[#6B8F71] text-white" },
+  published: { label: "Verfügbar", opacity: "opacity-100", badge: "bg-[#3E5A6A] text-white" },
+  geprueft: { label: "Verfügbar", opacity: "opacity-100", badge: "bg-[#3E5A6A] text-white" },
+  steps: { label: "Verfügbar", opacity: "opacity-100", badge: "bg-[#3E5A6A] text-white" },
   sessionplan: { label: "Entwurf", opacity: "opacity-70", badge: "bg-[#D4956A] text-white" },
   rohmaterial: { label: "In Planung", opacity: "opacity-50", badge: "bg-[#a09890] text-white" },
 };
@@ -161,7 +161,7 @@ export default function LernenUebersichtPage() {
             <div className="flex-1">
               <div className="h-2 rounded-full bg-[var(--lern-bg)]">
                 <div
-                  className="h-full rounded-full bg-[#6B8F71] transition-all"
+                  className="h-full rounded-full bg-[#3E5A6A] transition-all"
                   style={{ width: `${lektionen.length > 0 ? (fertigCount / lektionen.length) * 100 : 0}%` }}
                 />
               </div>
@@ -195,7 +195,7 @@ export default function LernenUebersichtPage() {
               </div>
               <Link
                 href={`/${locale}/lernen/${empfohleneLE.leId}`}
-                className="shrink-0 rounded-xl bg-[var(--lern-accent)] px-4 py-2.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#B07A72]"
+                className="shrink-0 rounded-xl bg-[var(--lern-accent)] px-4 py-2.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
               >
                 Starten
               </Link>
