@@ -9,12 +9,13 @@ import type {
   PflegewagenZone,
   PflegewagenItem,
 } from "../../../content/_types";
-import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
+import { FachbegriffText } from "./fachbegriff-tooltip";
 import {
   generiereSandwichFeedback,
   SandwichFeedbackDisplay,
 } from "./bloom-feedback";
 import { StepActionBar } from "./step-action-bar";
+import { StepShell } from "./step-shell";
 
 interface StepPflegewagenProps {
   title: string;
@@ -184,39 +185,31 @@ export function StepPflegewagen({
     );
   };
 
+  // Titel weglassen wenn ≈ Frage
+  const titleEqualsFrage =
+    title.trim().toLowerCase() === fragetext.trim().toLowerCase();
+  const question = titleEqualsFrage ? fragetext : title || fragetext;
+
   return (
-    <div
-      className="space-y-5 pb-20"
-      style={{ color: "var(--lern-text-primary)" }}
-    >
-      {/* Titel */}
-      <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
-        {title}
-      </h2>
-
-      {/* Body */}
-      {body && (
-        <p className="text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line text-sm">
-          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
-        </p>
-      )}
-
-      {/* Frage */}
-      <div className="rounded-2xl border-[1.5px] border-[var(--lern-accent)]/40 bg-[var(--lern-accent-bg)] px-4 py-3">
-        <p className="text-sm font-semibold text-[var(--lern-text-primary)]">
-          {renderBold(fragetext)}
-        </p>
-      </div>
-
-      {/* Hinweis */}
-      {!checked && (
-        <p className="text-xs text-[var(--lern-text-tertiary)]">
-          Tippe ein Material an, dann auf den passenden Bereich.
-        </p>
-      )}
-
-      {/* Zonen (Pflegewagen-Bereiche) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <div style={{ color: "var(--lern-text-primary)" }}>
+      <StepShell
+        kindLabel="Pflegewagen"
+        question={question}
+        body={body}
+        glossar={glossar}
+        tip={
+          !checked
+            ? "Tippe ein Material an, dann auf den passenden Bereich."
+            : undefined
+        }
+      >
+        {!titleEqualsFrage && title && (
+          <p className="-mt-2 mb-3 text-sm font-medium text-[var(--lern-text-primary)]">
+            <FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText>
+          </p>
+        )}
+        {/* Zonen (Pflegewagen-Bereiche) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {zonen.map((zone) => {
           const variant = zone.variant ?? "primary";
           const colors = ZONE_VARIANTS[variant];
@@ -363,6 +356,7 @@ export function StepPflegewagen({
           </details>
         </div>
       )}
+      </StepShell>
 
       {/* Action-Bar fix unten (Bundle-Stil) */}
       {!checked && allPlaced && (

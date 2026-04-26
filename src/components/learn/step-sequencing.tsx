@@ -21,6 +21,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import type { SequencingItem, GlossarEntry } from "../../../content/_types";
 import { renderBold } from "./fachbegriff-tooltip";
 import { GripVertical } from "lucide-react";
+import { StepShell } from "./step-shell";
+import { StepActionBar } from "./step-action-bar";
 
 interface StepSequencingProps {
   title: string;
@@ -124,6 +126,7 @@ function SortableItem({
 export function StepSequencing({
   title,
   body,
+  glossar,
   instruction,
   items,
   onNext,
@@ -158,24 +161,22 @@ export function StepSequencing({
   const isFullyCorrect = order.every((id, idx) => id === correctIds[idx]);
   const correctCount = order.filter((id, idx) => id === correctIds[idx]).length;
 
+  const titleEqualsInstr =
+    title.trim().toLowerCase() === instruction.trim().toLowerCase();
+  const question = titleEqualsInstr ? instruction : title || instruction;
+
   return (
-    <div className="flex flex-col h-full" style={{ color: "var(--lern-text-primary)" }}>
-      {/* Scrollbarer Content */}
-      <div className="flex-1 min-h-0 overflow-y-auto space-y-4 pb-2">
-        <h2 className="text-base font-bold">{title}</h2>
-
-        {body && (
-          <p className="text-sm text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
-            {body}
-          </p>
-        )}
-
-        <p className="text-sm font-medium">{instruction}</p>
-
-        {!submitted && (
-          <p className="text-xs text-[var(--lern-text-secondary)] flex items-center gap-1">
-            <GripVertical size={12} className="shrink-0" />
-            Halte und ziehe zum Sortieren
+    <div style={{ color: "var(--lern-text-primary)" }}>
+      <StepShell
+        kindLabel="Sequenz"
+        question={question}
+        body={body}
+        glossar={glossar}
+        tip={!submitted ? "Halte und ziehe zum Sortieren" : undefined}
+      >
+        {!titleEqualsInstr && title && (
+          <p className="-mt-2 mb-3 text-sm font-medium text-[var(--lern-text-primary)]">
+            {instruction}
           </p>
         )}
 
@@ -204,15 +205,15 @@ export function StepSequencing({
             <motion.div
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
-              className={`rounded-2xl p-4 ${
+              className={`mt-3 rounded-xl p-3 ${
                 isFullyCorrect
-                  ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
-                  : "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
+                  ? "bg-[var(--lern-success)]/10 border border-[var(--lern-success)]/30"
+                  : "bg-[var(--lern-error)]/10 border border-[var(--lern-error)]/30"
               }`}
             >
               <p className="font-semibold text-sm">
                 {isFullyCorrect
-                  ? "Perfekte Reihenfolge! ✓"
+                  ? "Perfekte Reihenfolge!"
                   : `${correctCount} von ${items.length} richtig positioniert`}
               </p>
               {!isFullyCorrect && (
@@ -230,30 +231,33 @@ export function StepSequencing({
             </motion.div>
           )}
         </AnimatePresence>
-      </div>
+      </StepShell>
 
-      {/* Fixer Button unten */}
-      <div className="shrink-0 pt-3">
-        {!submitted ? (
+      {!submitted ? (
+        <StepActionBar>
           <button
             onClick={() => setSubmitted(true)}
-            className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+            className="flex-1 rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98]"
             style={{ backgroundColor: "#218C71" }}
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#1A7359")}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#218C71")}
           >
             Prüfen
           </button>
-        ) : (
+        </StepActionBar>
+      ) : (
+        <StepActionBar>
           <button
             onClick={() => onNext(isFullyCorrect)}
-            className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
-            style={{ backgroundColor: isFullyCorrect ? "#3E5A6A" : "#C96B5C" }}
+            className="flex-1 rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98]"
+            style={{ backgroundColor: "#218C71" }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#1A7359")}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#218C71")}
           >
             Weiter
           </button>
-        )}
-      </div>
+        </StepActionBar>
+      )}
     </div>
   );
 }

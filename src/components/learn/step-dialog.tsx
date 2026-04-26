@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FeedbackText } from "./feedback-text";
 import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
+import { StepActionBar } from "./step-action-bar";
 
 interface DialogOption {
   text: string;
@@ -383,13 +384,19 @@ export function StepDialog({
             </div>
           )}
 
+        </motion.div>
+      )}
+
+      {/* Action-Bar fix unten — sichtbar wenn Dialog abgeschlossen */}
+      {finished && (
+        <StepActionBar>
           <button
             onClick={() => onNext(scorePercent >= 70)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
           >
             Weiter
           </button>
-        </motion.div>
+        </StepActionBar>
       )}
     </div>
   );
