@@ -8,6 +8,8 @@ import { analysiereFehler } from "@/lib/adaptive/fehler-analyse";
 import type { FehlerAnalyse } from "@/lib/adaptive/fehler-analyse";
 import { generiereSandwichFeedback } from "./bloom-feedback";
 import { AnswerSheet } from "./answer-sheet";
+import { StepShell } from "./step-shell";
+import { StepActionBar } from "./step-action-bar";
 
 interface MCOption {
   text: string;
@@ -46,33 +48,32 @@ export function StepMC({
   const [fehlerAnalyse, setFehlerAnalyse] = useState<FehlerAnalyse | null>(null);
   const startTimeRef = useRef<number>(Date.now());
 
-  // Accent color: purple for anticipation, blue for normal
   const accentColor = isAnticipation ? "#9B7EA6" : "#218C71";
   const accentHover = isAnticipation ? "#8A6D95" : "#1A7359";
 
-  // Reset startTime wenn sich der Step ändert
   useEffect(() => {
     startTimeRef.current = Date.now();
   }, [title, fragetext]);
 
-  const handleSelect = useCallback((idx: number) => {
-    if (submitted) return;
-    if (multiSelect) {
-      setSelected((prev) =>
-        prev.includes(idx) ? prev.filter((i) => i !== idx) : [...prev, idx],
-      );
-    } else {
-      setSelected([idx]);
-    }
-  }, [submitted, multiSelect]);
+  const handleSelect = useCallback(
+    (idx: number) => {
+      if (submitted) return;
+      if (multiSelect) {
+        setSelected((prev) =>
+          prev.includes(idx) ? prev.filter((i) => i !== idx) : [...prev, idx]
+        );
+      } else {
+        setSelected([idx]);
+      }
+    },
+    [submitted, multiSelect]
+  );
 
   const handleSubmit = useCallback(() => {
     setSubmitted(true);
 
-    // Bei Anticipation keine Fehleranalyse
     if (isAnticipation) return;
 
-    // Fehleranalyse durchführen wenn falsch
     const correct = multiSelect
       ? optionen.every((o, i) => o.isCorrect === selected.includes(i))
       : selected.length === 1 && optionen[selected[0]].isCorrect;
@@ -80,7 +81,10 @@ export function StepMC({
     if (!correct && selected.length > 0) {
       const antwortZeit = Date.now() - startTimeRef.current;
       const gewaehlteTexte = selected.map((i) => optionen[i].text).join(", ");
-      const richtigeTexte = optionen.filter((o) => o.isCorrect).map((o) => o.text).join(", ");
+      const richtigeTexte = optionen
+        .filter((o) => o.isCorrect)
+        .map((o) => o.text)
+        .join(", ");
       const alleTexte = optionen.map((o) => o.text);
 
       const analyse = analysiereFehler(
@@ -89,7 +93,7 @@ export function StepMC({
         richtigeTexte,
         alleTexte,
         "mc",
-        sprachLevel === "b1" ? 2 : 4,
+        sprachLevel === "b1" ? 2 : 4
       );
       setFehlerAnalyse(analyse);
     }
@@ -114,188 +118,245 @@ export function StepMC({
   }, [submitted, selected, optionen.length, handleSelect, handleSubmit]);
 
   const isCorrect = multiSelect
-    ? optionen.every(
-        (o, i) => o.isCorrect === selected.includes(i),
-      )
+    ? optionen.every((o, i) => o.isCorrect === selected.includes(i))
     : selected.length === 1 && optionen[selected[0]].isCorrect;
 
-  const labels = ["A", "B", "C", "D", "E", "F"];
-
-  // Sandwich-Feedback generieren (nicht bei Anticipation)
-  const richtigeAntwort = optionen.filter((o) => o.isCorrect).map((o) => o.text).join(", ");
+  const richtigeAntwort = optionen
+    .filter((o) => o.isCorrect)
+    .map((o) => o.text)
+    .join(", ");
   const richtigeErklaerung = optionen.find((o) => o.isCorrect)?.explanation;
-  const sandwich = submitted && !isAnticipation
-    ? generiereSandwichFeedback(
-        isCorrect,
-        richtigeAntwort,
-        richtigeErklaerung,
-        fehlerAnalyse ?? undefined,
-        bloomLevel,
-      )
-    : null;
+  const sandwich =
+    submitted && !isAnticipation
+      ? generiereSandwichFeedback(
+          isCorrect,
+          richtigeAntwort,
+          richtigeErklaerung,
+          fehlerAnalyse ?? undefined,
+          bloomLevel
+        )
+      : null;
+
+  // Bundle-Disziplin: wenn Titel ≈ Fragetext, nur einmal zeigen
+  const titleEqualsQuestion =
+    title.trim().toLowerCase() === fragetext.trim().toLowerCase();
+  const question = titleEqualsQuestion ? fragetext : title || fragetext;
 
   return (
-    <div
-      className="flex flex-col h-full"
-      style={{ color: "var(--lern-text-primary)" }}
-    >
-      {/* Scrollbarer Content-Bereich */}
-      <div className="flex-1 min-h-0 overflow-y-auto space-y-4 pb-2">
-      <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
-        {title}
-      </h2>
+    <div style={{ color: "var(--lern-text-primary)" }}>
+      <StepShell
+        kindLabel={isAnticipation ? "Vermutung" : "Multiple Choice"}
+        question={question}
+        body={body}
+        glossar={glossar}
+        tip={
+          multiSelect && !submitted ? "Mehrere Antworten möglich" : undefined
+        }
+      >
+        {/* Falls Titel + Fragetext beide existieren und unterschiedlich sind:
+            Frage darunter als Sub-Frage. */}
+        {!titleEqualsQuestion && title && (
+          <p className="-mt-2 mb-3 text-sm font-medium text-[var(--lern-text-primary)]">
+            <FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText>
+          </p>
+        )}
 
-      {body && (
-        <p className="text-sm text-[var(--lern-text-primary)]/70 leading-relaxed whitespace-pre-line">
-          <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
-        </p>
-      )}
+        {/* Optionen — Bundle-Stil: 18px Radio-Indikator + Text */}
+        <div
+          className="flex flex-col gap-2"
+          role={multiSelect ? "group" : "radiogroup"}
+          aria-label={fragetext}
+        >
+          {optionen.map((option, idx) => {
+            const isSelected = selected.includes(idx);
+            const showResult = submitted;
+            const optionCorrect = option.isCorrect;
 
-      <p className="text-sm font-medium text-[var(--lern-text-primary)]">
-        <FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText>
-      </p>
+            let borderColorVar = "var(--lern-border)";
+            let bgColorVar = "var(--lern-bg-primary)";
+            let boxShadow = "none";
 
-      {multiSelect && !submitted && (
-        <p className="text-xs text-[var(--lern-text-secondary)]">
-          Mehrere Antworten möglich
-        </p>
-      )}
-
-      <div className="space-y-3" role={multiSelect ? "group" : "radiogroup"} aria-label={fragetext}>
-        {optionen.map((option, idx) => {
-          const isSelected = selected.includes(idx);
-          const showResult = submitted;
-          const optionCorrect = option.isCorrect;
-
-          let borderColor = "border-[var(--lern-border)]";
-          let bgColor = "bg-[var(--lern-bg-primary)]";
-
-          if (isAnticipation && showResult) {
-            // Anticipation: alle Optionen neutral nach Submit (kein grün/rot)
-            if (isSelected) {
-              borderColor = `border-[${accentColor}]`;
-              bgColor = `bg-[${accentColor}]/10`;
+            if (isAnticipation && showResult) {
+              if (isSelected) {
+                borderColorVar = accentColor;
+                bgColorVar = `color-mix(in srgb, ${accentColor} 10%, var(--lern-bg-primary))`;
+              }
+            } else if (showResult && isSelected && optionCorrect) {
+              borderColorVar = "var(--lern-success)";
+              bgColorVar =
+                "color-mix(in srgb, var(--lern-success) 8%, var(--lern-bg-primary))";
+            } else if (showResult && isSelected && !optionCorrect) {
+              borderColorVar = "var(--lern-error)";
+              bgColorVar =
+                "color-mix(in srgb, var(--lern-error) 8%, var(--lern-bg-primary))";
+            } else if (showResult && !isSelected && optionCorrect) {
+              borderColorVar =
+                "color-mix(in srgb, var(--lern-success) 50%, transparent)";
+              bgColorVar =
+                "color-mix(in srgb, var(--lern-success) 5%, var(--lern-bg-primary))";
+            } else if (isSelected) {
+              borderColorVar = accentColor;
+              bgColorVar = `color-mix(in srgb, ${accentColor} 5%, var(--lern-bg-primary))`;
+              boxShadow = `0 0 0 3px color-mix(in srgb, ${accentColor} 22%, transparent)`;
             }
-          } else if (showResult && isSelected && optionCorrect) {
-            borderColor = "border-[#3E5A6A]";
-            bgColor = "bg-[#3E5A6A]/5";
-          } else if (showResult && isSelected && !optionCorrect) {
-            borderColor = "border-[#C96B5C]";
-            bgColor = "bg-[#C96B5C]/5";
-          } else if (showResult && !isSelected && optionCorrect) {
-            borderColor = "border-[#3E5A6A]/50";
-            bgColor = "bg-[#3E5A6A]/5";
-          } else if (isSelected) {
-            borderColor = `border-[${accentColor}]`;
-            bgColor = `bg-[${accentColor}]/5`;
-          }
 
-          return (
-            <motion.button
-              key={idx}
-              onClick={() => handleSelect(idx)}
-              whileTap={!submitted ? { scale: 0.98 } : undefined}
-              role={multiSelect ? "checkbox" : "radio"}
-              aria-checked={isSelected}
-              aria-label={`Option ${labels[idx]}: ${option.text}`}
-              tabIndex={0}
-              className={`w-full rounded-2xl border-[1.5px] ${borderColor} ${bgColor} p-4 text-left transition-colors focus:outline-2 focus:outline-offset-2`}
-              style={{ outlineColor: accentColor }}
-            >
-              <div className="flex items-start gap-3">
-                <span
-                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-bold"
-                  style={
-                    !isAnticipation && showResult && optionCorrect
-                      ? { backgroundColor: "#3E5A6A", color: "white" }
-                      : !isAnticipation && showResult && isSelected && !optionCorrect
-                        ? { backgroundColor: "#C96B5C", color: "white" }
-                        : isSelected
-                          ? { backgroundColor: accentColor, color: "white" }
-                          : { backgroundColor: "var(--lern-card-bg)", color: "var(--lern-text-secondary)" }
-                  }
-                >
-                  {!isAnticipation && showResult && isSelected
-                    ? optionCorrect
-                      ? "\u2713"
-                      : "\u2717"
-                    : labels[idx]}
-                </span>
-                <div className="flex-1">
-                  <p className="font-medium text-[var(--lern-text-primary)]">
-                    <FachbegriffText glossar={glossar ?? []}>{option.text}</FachbegriffText>
-                  </p>
-                  <AnimatePresence>
-                    {showResult && !isAnticipation && option.explanation && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        className="mt-2"
-                      >
-                        {/* Warum richtig/falsch Label */}
-                        {!isSelected && optionCorrect && (
-                          <p className="text-xs font-semibold text-[#3E5A6A] mb-0.5">Richtige Antwort</p>
-                        )}
-                        {isSelected && !optionCorrect && (
-                          <p className="text-xs font-semibold text-[#C96B5C] mb-0.5">Deshalb nicht richtig:</p>
-                        )}
-                        {!isSelected && !optionCorrect && (
-                          <p className="text-xs font-semibold text-[var(--lern-text-tertiary)] mb-0.5">Warum nicht:</p>
-                        )}
-                        <p className="text-sm text-[var(--lern-text-secondary)]">
-                          <FachbegriffText glossar={glossar ?? []}>{(sprachLevel === "b1" && option.explanationB1) || option.explanation}</FachbegriffText>
-                        </p>
-                      </motion.div>
+            const indicatorBorderColor =
+              !isAnticipation && showResult && optionCorrect
+                ? "var(--lern-success)"
+                : !isAnticipation && showResult && isSelected && !optionCorrect
+                  ? "var(--lern-error)"
+                  : isSelected
+                    ? accentColor
+                    : "var(--lern-text-tertiary)";
+
+            const indicatorBg =
+              !isAnticipation && showResult && optionCorrect
+                ? "var(--lern-success)"
+                : !isAnticipation && showResult && isSelected && !optionCorrect
+                  ? "var(--lern-error)"
+                  : isSelected
+                    ? accentColor
+                    : "transparent";
+
+            return (
+              <motion.button
+                key={idx}
+                onClick={() => handleSelect(idx)}
+                whileTap={!submitted ? { scale: 0.98 } : undefined}
+                role={multiSelect ? "checkbox" : "radio"}
+                aria-checked={isSelected}
+                aria-label={`Option ${idx + 1}: ${option.text}`}
+                tabIndex={0}
+                className="w-full rounded-xl border text-left transition-all focus:outline-2 focus:outline-offset-2"
+                style={{
+                  borderColor: borderColorVar,
+                  backgroundColor: bgColorVar,
+                  boxShadow,
+                  padding: "12px 14px",
+                  outlineColor: accentColor,
+                }}
+              >
+                <div className="flex items-start gap-3">
+                  <span
+                    className="flex shrink-0 items-center justify-center rounded-full transition-colors"
+                    style={{
+                      width: 18,
+                      height: 18,
+                      border: `1.5px solid ${indicatorBorderColor}`,
+                      backgroundColor: indicatorBg,
+                      marginTop: 2,
+                    }}
+                  >
+                    {(isSelected ||
+                      (!isAnticipation && showResult && optionCorrect)) && (
+                      <span
+                        className="rounded-full"
+                        style={{
+                          width: 6,
+                          height: 6,
+                          background: "white",
+                        }}
+                      />
                     )}
-                  </AnimatePresence>
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm leading-snug text-[var(--lern-text-primary)]">
+                      <FachbegriffText glossar={glossar ?? []}>
+                        {option.text}
+                      </FachbegriffText>
+                    </p>
+                    <AnimatePresence>
+                      {showResult && !isAnticipation && option.explanation && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: "auto" }}
+                          className="mt-1.5"
+                        >
+                          {!isSelected && optionCorrect && (
+                            <p className="text-[11px] font-semibold uppercase tracking-wider text-[var(--lern-success)] mb-0.5">
+                              Richtige Antwort
+                            </p>
+                          )}
+                          {isSelected && !optionCorrect && (
+                            <p className="text-[11px] font-semibold uppercase tracking-wider text-[var(--lern-error)] mb-0.5">
+                              Deshalb nicht richtig
+                            </p>
+                          )}
+                          {!isSelected && !optionCorrect && (
+                            <p className="text-[11px] font-semibold uppercase tracking-wider text-[var(--lern-text-tertiary)] mb-0.5">
+                              Warum nicht
+                            </p>
+                          )}
+                          <p className="text-xs leading-relaxed text-[var(--lern-text-secondary)]">
+                            <FachbegriffText glossar={glossar ?? []}>
+                              {(sprachLevel === "b1" && option.explanationB1) ||
+                                option.explanation}
+                            </FachbegriffText>
+                          </p>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
                 </div>
-              </div>
-            </motion.button>
-          );
-        })}
-      </div>
-      </div>{/* Ende scrollbarer Content */}
+              </motion.button>
+            );
+          })}
+        </div>
 
-      {/* Fixer Button-Bereich — immer unten sichtbar */}
-      <div className="shrink-0 pt-3">
-        {!submitted ? (
+        {/* Anticipation-Hinweis nach Submit */}
+        {submitted && isAnticipation && (
+          <div
+            className="mt-3 rounded-xl p-3 text-center"
+            style={{
+              backgroundColor: `color-mix(in srgb, ${accentColor} 8%, var(--lern-bg-primary))`,
+              border: `1px solid color-mix(in srgb, ${accentColor} 20%, transparent)`,
+            }}
+          >
+            <p className="text-sm font-medium" style={{ color: accentColor }}>
+              Spannend! Lies jetzt die Erklärung — danach prüfen wir richtig.
+            </p>
+          </div>
+        )}
+      </StepShell>
+
+      {/* Action-Bar fix unten — Bundle-Stil */}
+      {!submitted && (
+        <StepActionBar>
           <button
             onClick={handleSubmit}
             disabled={selected.length === 0}
             aria-label={isAnticipation ? "Vermutung abgeben" : "Antwort prüfen"}
-            className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-offset-2"
+            className="flex-1 rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-offset-2"
             style={{ backgroundColor: accentColor, outlineColor: accentColor }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = accentHover)}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = accentColor)}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.backgroundColor = accentHover)
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.backgroundColor = accentColor)
+            }
           >
             {isAnticipation ? "Bin gespannt!" : "Prüfen"}
           </button>
-        ) : isAnticipation ? (
-          <div className="space-y-3">
-            <div
-              className="rounded-2xl p-3 text-center"
-              style={{
-                backgroundColor: `color-mix(in srgb, ${accentColor} 8%, var(--lern-bg-primary))`,
-                border: `1px solid color-mix(in srgb, ${accentColor} 20%, transparent)`,
-              }}
-            >
-              <p className="text-sm font-medium" style={{ color: accentColor }}>
-                Spannend! Lies jetzt die Erklärung — danach prüfen wir richtig.
-              </p>
-            </div>
-            <button
-              onClick={() => onNext(undefined as unknown as boolean)}
-              aria-label="Weiter zur Erklärung"
-              className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] focus:outline-2 focus:outline-offset-2"
-              style={{ backgroundColor: accentColor, outlineColor: accentColor }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = accentHover)}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = accentColor)}
-            >
-              Weiter zur Erklärung
-            </button>
-          </div>
-        ) : null}
-      </div>
+        </StepActionBar>
+      )}
+      {submitted && isAnticipation && (
+        <StepActionBar>
+          <button
+            onClick={() => onNext(undefined as unknown as boolean)}
+            aria-label="Weiter zur Erklärung"
+            className="flex-1 rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] focus:outline-2 focus:outline-offset-2"
+            style={{ backgroundColor: accentColor, outlineColor: accentColor }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.backgroundColor = accentHover)
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.backgroundColor = accentColor)
+            }
+          >
+            Weiter zur Erklärung
+          </button>
+        </StepActionBar>
+      )}
 
       {/* Feedback Bottom-Sheet — nur für nicht-Anticipation */}
       {sandwich && !isAnticipation && (
@@ -304,7 +365,12 @@ export function StepMC({
           isCorrect={isCorrect}
           feedback={sandwich}
           fehlerKategorie={fehlerAnalyse?.kategorie}
-          onNext={() => onNext(isCorrect, selected.map((i) => optionen[i].text).join(", "))}
+          onNext={() =>
+            onNext(
+              isCorrect,
+              selected.map((i) => optionen[i].text).join(", ")
+            )
+          }
         />
       )}
     </div>

@@ -53,9 +53,10 @@ describe("Style-Checker: Step-Komponenten", () => {
           comp.content.includes('color: "#1d1d1f"') ||
           comp.content.includes('color: "var(--lern-text-primary)"') ||
           comp.content.includes("color: 'var(--lern-text-primary)'") ||
-          // step-renderer.tsx + step-action-bar.tsx sind Wrapper, kein Content
+          // step-renderer.tsx, step-action-bar.tsx, step-shell.tsx sind Wrapper
           comp.name === "step-renderer.tsx" ||
-          comp.name === "step-action-bar.tsx";
+          comp.name === "step-action-bar.tsx" ||
+          comp.name === "step-shell.tsx";
 
         if (!hasInlineColor) {
           expect.fail(
@@ -89,8 +90,12 @@ describe("Style-Checker: Step-Komponenten", () => {
 
       // 4. Weiter-Button vorhanden (Wrapper-Komponenten ausgenommen)
       it('hat einen "Weiter" Button', () => {
-        // step-action-bar.tsx ist ein Wrapper-Slot, hat selbst keinen Weiter-Text
-        if (comp.name === "step-action-bar.tsx") return;
+        // step-action-bar.tsx + step-shell.tsx sind Wrapper-Slots
+        if (
+          comp.name === "step-action-bar.tsx" ||
+          comp.name === "step-shell.tsx"
+        )
+          return;
 
         const hasWeiter =
           comp.content.includes("Weiter") ||
