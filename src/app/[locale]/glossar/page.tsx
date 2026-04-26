@@ -86,9 +86,9 @@ export default function GlossarPage() {
     const timer = setTimeout(() => setSuchtext(inputValue), 300);
     return () => clearTimeout(timer);
   }, [inputValue]);
-  const [ansicht, setAnsicht] = useState<Ansicht>(
-    locale === "ar" ? "ar" : locale === "tr" ? "tr" : "de"
-  );
+  // Übersetzungen sind für später — aktuell nur die App-Locale-Sprache anzeigen.
+  const ansicht: Ansicht =
+    locale === "ar" ? "ar" : locale === "tr" ? "tr" : "de";
   const [aufgeklappt, setAufgeklappt] = useState<string | null>(null);
 
   const gefilterteEintraege = useMemo(() => {
@@ -145,23 +145,6 @@ export default function GlossarPage() {
             />
           </div>
 
-          {/* Sprach-Toggle + Fachgebiet-Filter in einer Zeile */}
-          <div className="flex gap-1 mb-1.5">
-            {(["de", "ar", "tr"] as const).map((lang) => (
-              <button
-                key={lang}
-                onClick={() => setAnsicht(lang)}
-                className={`px-2.5 py-1 rounded-md text-[11px] font-semibold transition-colors ${
-                  ansicht === lang
-                    ? "bg-[var(--lern-accent)] text-white"
-                    : "bg-[var(--lern-bg-primary)] text-[var(--lern-text-tertiary)] border border-[var(--lern-border)]"
-                }`}
-              >
-                {lang === "de" ? "DE" : lang === "ar" ? "AR" : "TR"}
-              </button>
-            ))}
-          </div>
-
           {/* Fachgebiet-Filter */}
           <div className="flex gap-1 overflow-x-auto pb-0.5 -mx-4 px-4 no-scrollbar">
             <button
@@ -208,39 +191,34 @@ export default function GlossarPage() {
               >
                 <button
                   onClick={() => setAufgeklappt(istOffen ? null : eintrag.id)}
-                  className="w-full text-left px-4 py-3.5 flex items-start justify-between gap-3"
+                  className="w-full text-left px-3 py-3 flex items-center justify-between gap-3"
                 >
-                  <div className="flex-1 min-w-0">
-                    {/* Deutscher Begriff (immer sichtbar) */}
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className="text-base font-semibold text-[var(--lern-text-primary)]">
-                        {eintrag.begriffDe}
-                      </span>
+                  <div className="flex items-center gap-2 min-w-0">
+                    <span
+                      className="text-sm font-semibold text-[var(--lern-text-primary)] truncate"
+                      dir={ansicht === "ar" ? "rtl" : "ltr"}
+                    >
+                      {ansicht === "ar"
+                        ? eintrag.begriffAr
+                        : ansicht === "tr"
+                          ? eintrag.begriffTr
+                          : eintrag.begriffDe}
+                    </span>
+                    {ansicht === "de" && (
                       <GlossarTtsButton text={eintrag.begriffDe} lang="de-DE" />
-                    </div>
-
-                    {/* Übersetzungen */}
-                    <div className="flex flex-wrap gap-x-3 gap-y-0.5">
-                      <span className="text-sm text-[var(--lern-text-primary)]/50" dir="rtl">
-                        {eintrag.begriffAr}
-                      </span>
-                      <span className="text-sm text-[var(--lern-text-primary)]/50">
-                        {eintrag.begriffTr}
-                      </span>
-                    </div>
+                    )}
                   </div>
 
-                  {/* Fachgebiet-Badge + Chevron */}
-                  <div className="flex items-center gap-2 shrink-0 mt-0.5">
+                  <div className="flex items-center gap-2 shrink-0">
                     <span
-                      className={`px-2 py-0.5 rounded-md text-xs font-medium ${
-                        FACHGEBIET_FARBEN[eintrag.fachgebiet] ?? "bg-[var(--lern-bg)] text-[#636366]"
+                      className={`px-2 py-0.5 rounded-md text-[10px] font-medium ${
+                        FACHGEBIET_FARBEN[eintrag.fachgebiet] ?? "bg-[var(--lern-bg)] text-[var(--lern-text-tertiary)]"
                       }`}
                     >
                       {eintrag.fachgebiet}
                     </span>
                     <svg
-                      className={`w-4 h-4 text-[#8e8e93] transition-transform ${istOffen ? "rotate-180" : ""}`}
+                      className={`w-4 h-4 text-[var(--lern-text-tertiary)] transition-transform ${istOffen ? "rotate-180" : ""}`}
                       viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
                     >
                       <path d="m6 9 6 6 6-6" />
@@ -258,43 +236,15 @@ export default function GlossarPage() {
                       transition={{ duration: 0.2 }}
                       className="overflow-hidden"
                     >
-                      <div className="px-4 pb-4 pt-1 border-t border-[var(--lern-divider)]">
-                        {/* Erklärung */}
+                      <div className="px-3 pb-3 pt-1 border-t border-[var(--lern-divider)]">
                         <p
-                          className="text-sm text-[var(--lern-text-primary)]/80 leading-relaxed mb-3"
+                          className="text-sm text-[var(--lern-text-primary)]/85 leading-relaxed"
                           dir={ansicht === "ar" ? "rtl" : "ltr"}
                         >
                           {getErklaerung(eintrag)}
                         </p>
-
-                        {/* Alle 3 Übersetzungen */}
-                        <div className="space-y-2 rounded-xl bg-[var(--lern-bg)] p-3">
-                          <div className="flex items-center gap-2">
-                            <span className="text-xs font-medium text-[#8e8e93] w-6">DE</span>
-                            <span className="text-sm font-medium text-[var(--lern-text-primary)]">
-                              {eintrag.begriffDe}
-                            </span>
-                            <GlossarTtsButton text={eintrag.begriffDe} lang="de-DE" />
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <span className="text-xs font-medium text-[#8e8e93] w-6">AR</span>
-                            <span className="text-sm text-[var(--lern-text-primary)]" dir="rtl">
-                              {eintrag.begriffAr}
-                            </span>
-                            <GlossarTtsButton text={eintrag.begriffAr} lang="ar" />
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <span className="text-xs font-medium text-[#8e8e93] w-6">TR</span>
-                            <span className="text-sm text-[var(--lern-text-primary)]">
-                              {eintrag.begriffTr}
-                            </span>
-                            <GlossarTtsButton text={eintrag.begriffTr} lang="tr" />
-                          </div>
-                        </div>
-
-                        {/* Aussprache */}
-                        {eintrag.aussprache && (
-                          <p className="text-xs text-[#8e8e93] mt-2">
+                        {ansicht === "de" && eintrag.aussprache && (
+                          <p className="text-xs text-[var(--lern-text-tertiary)] mt-2">
                             Aussprache: [{eintrag.aussprache}]
                           </p>
                         )}
