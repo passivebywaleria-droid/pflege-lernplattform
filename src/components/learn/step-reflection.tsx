@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
+import { StepActionBar } from "./step-action-bar";
 
 interface StepReflectionProps {
   title: string;
@@ -161,19 +162,18 @@ export function StepReflection({
             )
           )}
 
-          {!loading && (
-            <motion.button
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-              onClick={onNext}
-              aria-label="Weiter zum nächsten Schritt"
-              className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
-            >
-              Weiter
-            </motion.button>
-          )}
         </div>
+      )}
+      {!loading && submitted && (
+        <StepActionBar>
+          <button
+            onClick={onNext}
+            aria-label="Weiter zum nächsten Schritt"
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
+          >
+            Weiter
+          </button>
+        </StepActionBar>
       )}
     </div>
   );

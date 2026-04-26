@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 import { generiereSandwichFeedback, SandwichFeedbackDisplay } from "./bloom-feedback";
+import { StepActionBar } from "./step-action-bar";
 
 interface Category {
   name: string;
@@ -210,35 +211,39 @@ export function StepCategorize({
         })}
       </div>
 
+      {checked && (
+        <SandwichFeedbackDisplay
+          feedback={generiereSandwichFeedback(
+            allCorrect,
+            allCorrect ? "" : `${correctCount} von ${items.length} richtig zugeordnet`,
+            allCorrect ? "Perfekt! Alle Elemente korrekt zugeordnet." : undefined,
+          )}
+          correct={allCorrect}
+        />
+      )}
+
       {allPlaced && !checked && (
-        <button
-          onClick={() => setChecked(true)}
-          aria-label="Zuordnung prüfen"
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
-        >
-          Prüfen
-        </button>
+        <StepActionBar>
+          <button
+            onClick={() => setChecked(true)}
+            aria-label="Zuordnung prüfen"
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
+          >
+            Prüfen
+          </button>
+        </StepActionBar>
       )}
 
       {checked && (
-        <div className="space-y-4">
-          <SandwichFeedbackDisplay
-            feedback={generiereSandwichFeedback(
-              allCorrect,
-              allCorrect ? "" : `${correctCount} von ${items.length} richtig zugeordnet`,
-              allCorrect ? "Perfekt! Alle Elemente korrekt zugeordnet." : undefined,
-            )}
-            correct={allCorrect}
-          />
-
+        <StepActionBar>
           <button
             onClick={() => onNext(allCorrect)}
             aria-label="Weiter zum nächsten Schritt"
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
           >
             Weiter
           </button>
-        </div>
+        </StepActionBar>
       )}
     </div>
   );

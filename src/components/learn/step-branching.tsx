@@ -35,9 +35,13 @@ export function StepBranching({
 }: StepBranchingProps) {
   const [selected, setSelected] = useState<number | null>(null);
 
+  const safeFragetext = fragetext ?? "";
+  const safeTitle = title ?? "";
   const titleEqualsFrage =
-    title.trim().toLowerCase() === fragetext.trim().toLowerCase();
-  const question = titleEqualsFrage ? fragetext : title || fragetext;
+    safeTitle.trim().toLowerCase() === safeFragetext.trim().toLowerCase();
+  const question = titleEqualsFrage
+    ? safeFragetext
+    : safeTitle || safeFragetext;
 
   return (
     <div style={{ color: "var(--lern-text-primary)" }}>

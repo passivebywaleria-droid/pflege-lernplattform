@@ -38,9 +38,13 @@ export function StepFreetext({
     .filter((w) => w.length > 0).length;
   const minWords = 15;
 
+  const safeTitle = title ?? "";
+  const safeFragetext = fragetext ?? "";
   const titleEqualsFrage =
-    title.trim().toLowerCase() === fragetext.trim().toLowerCase();
-  const question = titleEqualsFrage ? fragetext : title || fragetext;
+    safeTitle.trim().toLowerCase() === safeFragetext.trim().toLowerCase();
+  const question = titleEqualsFrage
+    ? safeFragetext
+    : safeTitle || safeFragetext;
 
   return (
     <div style={{ color: "var(--lern-text-primary)" }}>

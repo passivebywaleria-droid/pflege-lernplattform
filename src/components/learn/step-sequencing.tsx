@@ -161,9 +161,13 @@ export function StepSequencing({
   const isFullyCorrect = order.every((id, idx) => id === correctIds[idx]);
   const correctCount = order.filter((id, idx) => id === correctIds[idx]).length;
 
+  const safeTitle = title ?? "";
+  const safeInstr = instruction ?? "";
   const titleEqualsInstr =
-    title.trim().toLowerCase() === instruction.trim().toLowerCase();
-  const question = titleEqualsInstr ? instruction : title || instruction;
+    safeTitle.trim().toLowerCase() === safeInstr.trim().toLowerCase();
+  const question = titleEqualsInstr
+    ? safeInstr
+    : safeTitle || safeInstr;
 
   return (
     <div style={{ color: "var(--lern-text-primary)" }}>

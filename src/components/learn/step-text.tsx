@@ -6,6 +6,7 @@ import { TtsButton } from "./tts-button";
 import { AudioPlayer } from "./audio-player";
 import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
+import { StepActionBar } from "./step-action-bar";
 
 import type { DisplayFormat } from "../../../content/_types";
 
@@ -124,8 +125,7 @@ function CarouselView({
   };
 
   return (
-    <div className="flex flex-col h-full" style={{ color: "var(--lern-text-primary)" }}>
-      <div className="flex-1 min-h-0 overflow-y-auto space-y-5 pb-2">
+    <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }}>
       <div className="flex items-start justify-between gap-3">
         <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
           {title}
@@ -213,26 +213,23 @@ function CarouselView({
         <AudioPlayer src={audioUrl} label={audioLabel} />
       )}
 
-      </div>
-
-      {/* Navigation — fix am Boden */}
-      <div className="shrink-0 pt-3">
+      <StepActionBar>
         {isLast ? (
           <button
             onClick={onNext}
-            className="w-full rounded-2xl bg-[#218C71] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
+            className="flex-1 rounded-xl bg-[#218C71] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
           >
             Weiter
           </button>
         ) : (
           <button
             onClick={() => goToCard(activeCard + 1)}
-            className="w-full rounded-2xl bg-[var(--lern-card-bg)] px-6 py-4 text-base font-semibold text-[var(--lern-text-primary)] transition-all active:scale-[0.98]"
+            className="flex-1 rounded-xl bg-[var(--lern-card-bg)] px-6 py-3.5 text-sm font-semibold text-[var(--lern-text-primary)] transition-all active:scale-[0.98] border border-[var(--lern-border)]"
           >
             Nächste Karte ({activeCard + 1}/{allCards.length})
           </button>
         )}
-      </div>
+      </StepActionBar>
     </div>
   );
 }
@@ -637,13 +634,15 @@ export function StepText({
         </div>
       )}
 
-      <button
-        onClick={onNext}
-        aria-label="Weiter zum nächsten Schritt"
-        className="w-full rounded-2xl bg-[#218C71] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2"
-      >
-        Weiter
-      </button>
+      <StepActionBar>
+        <button
+          onClick={onNext}
+          aria-label="Weiter zum nächsten Schritt"
+          className="flex-1 rounded-xl bg-[#218C71] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2"
+        >
+          Weiter
+        </button>
+      </StepActionBar>
     </div>
   );
 }

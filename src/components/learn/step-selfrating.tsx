@@ -3,8 +3,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/_types";
-import { FachbegriffText } from "./fachbegriff-tooltip";
 import { HandDrawnIcon, type IconName } from "@/components/ui/hand-drawn-icon";
+import { StepShell } from "./step-shell";
+import { StepActionBar } from "./step-action-bar";
 
 interface StepSelfratingProps {
   title: string;
@@ -31,51 +32,64 @@ export function StepSelfrating({
 }: StepSelfratingProps) {
   const [rating, setRating] = useState<number | null>(null);
 
+  const safeTitle = title ?? "";
+  const safeFragetext = fragetext ?? "";
+  const titleEqualsFrage =
+    safeTitle.trim().toLowerCase() === safeFragetext.trim().toLowerCase();
+  const question = titleEqualsFrage
+    ? safeFragetext
+    : safeTitle || safeFragetext;
+
   return (
-    <div className="space-y-6 pb-20" style={{ color: "var(--lern-text-primary)" }}>
-      <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
-        {title}
-      </h2>
-
-      <div className="space-y-4 text-[var(--lern-text-primary)]/80 leading-relaxed">
-        {body.split("\n\n").map((p, i) => (
-          <p key={i} className="whitespace-pre-line">
-            <FachbegriffText glossar={glossar ?? []}>{p}</FachbegriffText>
-          </p>
-        ))}
-      </div>
-
-      <p className="text-sm font-medium text-[var(--lern-text-primary)]">
-        {fragetext}
-      </p>
-
-      <div className="grid grid-cols-5 gap-2">
-        {RATINGS.map((r) => (
-          <motion.button
-            key={r.value}
-            onClick={() => setRating(r.value)}
-            whileTap={{ scale: 0.9 }}
-            className={`flex flex-col items-center gap-1 rounded-2xl border-[1.5px] p-3 transition-all ${
-              rating === r.value
-                ? "border-[var(--lern-accent)] bg-[var(--lern-accent)]/5"
-                : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)]"
-            }`}
-          >
-            <HandDrawnIcon name={r.icon} size={28} color={rating === r.value ? r.color : "var(--lern-text-tertiary)"} />
-            <span className="text-xs leading-tight text-center text-[var(--lern-text-secondary)] font-medium">
-              {r.label}
-            </span>
-          </motion.button>
-        ))}
-      </div>
-
-      <button
-        onClick={() => rating !== null && onNext(rating)}
-        disabled={rating === null}
-        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] disabled:opacity-40 disabled:cursor-not-allowed"
+    <div style={{ color: "var(--lern-text-primary)" }}>
+      <StepShell
+        kindLabel="Selbsteinschätzung"
+        question={question}
+        body={body}
+        glossar={glossar}
       >
-        Weiter
-      </button>
+        {!titleEqualsFrage && safeTitle && (
+          <p className="-mt-2 mb-3 text-sm font-medium text-[var(--lern-text-primary)]">
+            {safeFragetext}
+          </p>
+        )}
+
+        <div className="grid grid-cols-5 gap-1.5">
+          {RATINGS.map((r) => (
+            <motion.button
+              key={r.value}
+              onClick={() => setRating(r.value)}
+              whileTap={{ scale: 0.9 }}
+              className={`flex flex-col items-center gap-1 rounded-xl border p-2.5 transition-all ${
+                rating === r.value
+                  ? "border-[var(--lern-accent)] bg-[var(--lern-accent)]/8"
+                  : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)]"
+              }`}
+            >
+              <HandDrawnIcon
+                name={r.icon}
+                size={26}
+                color={
+                  rating === r.value ? r.color : "var(--lern-text-tertiary)"
+                }
+              />
+              <span className="text-[10px] leading-tight text-center text-[var(--lern-text-secondary)] font-medium">
+                {r.label}
+              </span>
+            </motion.button>
+          ))}
+        </div>
+      </StepShell>
+
+      <StepActionBar>
+        <button
+          onClick={() => rating !== null && onNext(rating)}
+          disabled={rating === null}
+          className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] disabled:opacity-40 disabled:cursor-not-allowed"
+        >
+          Weiter
+        </button>
+      </StepActionBar>
     </div>
   );
 }

@@ -138,9 +138,13 @@ export function StepMC({
       : null;
 
   // Bundle-Disziplin: wenn Titel ≈ Fragetext, nur einmal zeigen
+  const safeTitle = title ?? "";
+  const safeFragetext = fragetext ?? "";
   const titleEqualsQuestion =
-    title.trim().toLowerCase() === fragetext.trim().toLowerCase();
-  const question = titleEqualsQuestion ? fragetext : title || fragetext;
+    safeTitle.trim().toLowerCase() === safeFragetext.trim().toLowerCase();
+  const question = titleEqualsQuestion
+    ? safeFragetext
+    : safeTitle || safeFragetext;
 
   return (
     <div style={{ color: "var(--lern-text-primary)" }}>

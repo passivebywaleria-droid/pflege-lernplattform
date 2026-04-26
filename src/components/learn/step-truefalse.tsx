@@ -20,6 +20,7 @@ import {
 } from "framer-motion";
 import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
+import { StepActionBar } from "./step-action-bar";
 
 interface TrueFalseCard {
   statement: string;
@@ -111,12 +112,14 @@ export function StepTrueFalse({
               : `${correctCount} von ${cards.length} richtig erkannt.`}
           </p>
         </motion.div>
-        <button
-          onClick={() => onNext(allCorrect)}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
-        >
-          Weiter
-        </button>
+        <StepActionBar>
+          <button
+            onClick={() => onNext(allCorrect)}
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
+          >
+            Weiter
+          </button>
+        </StepActionBar>
       </div>
     );
   }
@@ -239,16 +242,20 @@ export function StepTrueFalse({
               )}
             </div>
 
-            <button
-              onClick={nextCard}
-              className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
-            >
-              {cardIdx + 1 < cards.length ? "Nächste Karte" : "Weiter"}
-            </button>
           </motion.div>
         )}
       </AnimatePresence>
       </div>
+      {showResult && (
+        <StepActionBar>
+          <button
+            onClick={nextCard}
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
+          >
+            {cardIdx + 1 < cards.length ? "Nächste Karte" : "Weiter"}
+          </button>
+        </StepActionBar>
+      )}
     </div>
   );
 }

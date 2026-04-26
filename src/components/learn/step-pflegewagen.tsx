@@ -186,9 +186,13 @@ export function StepPflegewagen({
   };
 
   // Titel weglassen wenn ≈ Frage
+  const safeTitle = title ?? "";
+  const safeFragetext = fragetext ?? "";
   const titleEqualsFrage =
-    title.trim().toLowerCase() === fragetext.trim().toLowerCase();
-  const question = titleEqualsFrage ? fragetext : title || fragetext;
+    safeTitle.trim().toLowerCase() === safeFragetext.trim().toLowerCase();
+  const question = titleEqualsFrage
+    ? safeFragetext
+    : safeTitle || safeFragetext;
 
   return (
     <div style={{ color: "var(--lern-text-primary)" }}>

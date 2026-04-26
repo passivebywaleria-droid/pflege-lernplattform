@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
+import { StepActionBar } from "./step-action-bar";
 
 interface TextSegment {
   text: string;
@@ -149,38 +150,42 @@ export function StepHighlight({
         </div>
       )}
 
-      {!checked ? (
-        <button
-          onClick={() => setChecked(true)}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
+      {checked && (
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          className={`rounded-xl p-3 ${
+            allCorrect
+              ? "bg-[var(--lern-success)]/10 border border-[var(--lern-success)]/30"
+              : "bg-[var(--lern-warning)]/10 border border-[var(--lern-warning)]/30"
+          }`}
         >
-          Prüfen
-        </button>
-      ) : (
-        <div className="space-y-4">
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            className={`rounded-2xl p-4 ${
-              allCorrect
-                ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
-                : "bg-[#D4956A]/10 border border-[#D4956A]/30"
-            }`}
-          >
-            <p className="font-semibold text-[var(--lern-text-primary)]">
-              {allCorrect
-                ? "Perfekt! Alle Fehler erkannt."
-                : `${correctlyMarked}/${errors.length} Fehler gefunden${wronglyMarked > 0 ? `, ${wronglyMarked} falsch markiert` : ""}.`}
-            </p>
-          </motion.div>
+          <p className="font-semibold text-sm text-[var(--lern-text-primary)]">
+            {allCorrect
+              ? "Perfekt! Alle Fehler erkannt."
+              : `${correctlyMarked}/${errors.length} Fehler gefunden${wronglyMarked > 0 ? `, ${wronglyMarked} falsch markiert` : ""}.`}
+          </p>
+        </motion.div>
+      )}
 
+      {!checked ? (
+        <StepActionBar>
+          <button
+            onClick={() => setChecked(true)}
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
+          >
+            Prüfen
+          </button>
+        </StepActionBar>
+      ) : (
+        <StepActionBar>
           <button
             onClick={() => onNext(allCorrect)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
           >
             Weiter
           </button>
-        </div>
+        </StepActionBar>
       )}
     </div>
   );
