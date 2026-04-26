@@ -161,12 +161,12 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Das Zimmer betreten",
-        body: "Du betrittst das Zimmer. Du knipst das indirekte Licht an (nicht die Deckenleuchte — Frau M. ist gerade gestürzt, kein Schockmoment). Du kniest auf Augenhöhe zu Frau M. am Boden. Sie liegt neben dem Bett. Sie ist bei Bewusstsein, ihre Hände sind im Schoß gefaltet. Sie sieht dich an.",
+        body: "Du betrittst das Zimmer und schaltest das Licht ein — hell genug, um Frau M. inspizieren zu können (Verletzungs-Beurteilung nach Sturz braucht gute Sicht), aber so positioniert, dass es ihr nicht direkt ins Gesicht leuchtet. Du kniest auf Augenhöhe zu Frau M. am Boden. Sie liegt neben dem Bett, ist bei Bewusstsein, ihre Hände sind im Schoß gefaltet. Sie sieht dich an.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Ins Zimmer gehen",
-        body: "Du gehst ins Zimmer. Du machst das kleine Licht an (nicht das große — das ist zu hell für Frau M. nach dem Schreck). Du gehst in die Knie, damit du auf ihrer Höhe bist. Frau M. liegt neben dem Bett. Sie ist wach. Ihre Hände sind im Schoß gefaltet. Sie schaut dich an.",
+        body: "Du gehst ins Zimmer und machst das Licht an. Das Licht muss hell sein, damit du Frau M. genau ansehen kannst (du musst sehen, ob sie verletzt ist). Aber das Licht soll ihr nicht direkt in die Augen scheinen. Du gehst in die Knie, damit du auf ihrer Höhe bist. Frau M. liegt neben dem Bett. Sie ist wach. Ihre Hände sind im Schoß gefaltet. Sie schaut dich an.",
         glossarBegriffe: [],
       },
       question: {
