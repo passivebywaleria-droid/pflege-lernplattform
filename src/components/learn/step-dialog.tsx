@@ -393,7 +393,17 @@ export function StepDialog({
         </motion.div>
       )}
 
-      {/* Action-Bar fix unten — sichtbar wenn Dialog abgeschlossen */}
+      {/* Action-Bar fix unten — Weiter zur nächsten Phase ODER zum nächsten Step */}
+      {!finished && waitingForUser && showFeedback && (
+        <StepActionBar>
+          <button
+            onClick={nextPhase}
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
+          >
+            Weiter
+          </button>
+        </StepActionBar>
+      )}
       {finished && (
         <StepActionBar>
           <button
