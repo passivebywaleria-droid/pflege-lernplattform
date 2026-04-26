@@ -12,18 +12,19 @@
 |--------|--------|--------|
 | 1 | Palette projektweit + Tab-Bar | ✅ live |
 | 1.5 | Inter-Schrift + Tab-Bar im Walkthrough verstecken | ✅ live |
-| 2.1 | StepShell-Wrapper-Komponente | 🔄 in Arbeit |
-| 2.2 | step-pflegewagen (Pilot) | 🔄 ActionBar drin, Layout offen |
-| 2.3 | step-mc (Multiple Choice) | offen |
-| 2.4 | step-sorting | offen |
-| 2.5 | step-sequencing | offen |
-| 2.6 | step-dialog | offen |
-| 2.7 | step-freetext | offen |
-| 2.8 | step-branching | offen |
-| 2.9 | step-selfrating + step-confidence | offen |
-| 2.10 | step-text | offen |
-| 2.11 | step-highlight + step-categorize | offen |
-| 2.12 | step-truefalse + step-reflection | offen |
+| 2.1 | StepShell + StepActionBar Wrapper | ✅ live |
+| 2.2 | step-pflegewagen (StepShell + StepActionBar) | ✅ live |
+| 2.3 | step-mc (volles Refactor) | ✅ live |
+| 2.4 | step-sorting | ✅ live |
+| 2.5 | step-sequencing | ✅ live |
+| 2.6 | step-dialog (nur Action-Bar) | ✅ live |
+| 2.7 | step-freetext | ✅ live |
+| 2.8 | step-branching | ✅ live |
+| 2.9 | step-selfrating | ✅ live |
+| 2.10 | step-text (nur Action-Bar) | ✅ live |
+| 2.11 | step-highlight + step-categorize | ✅ live |
+| 2.12 | step-truefalse + step-reflection | ✅ live |
+| 2.13 | step-confidence (nicht in Frau M) | offen — bei Bedarf |
 | 3 | CE-Übersicht + Thema-Detail | offen |
 | 4 | Home / Karteikarten / Glossar | offen |
 | 5 | Onboarding | offen |
