@@ -113,7 +113,7 @@ export function StepDialog({
   const [showChoices, setShowChoices] = useState(false);
   const [finished, setFinished] = useState(false);
   const [initialized, setInitialized] = useState(false);
-  const [showConsequence, setShowConsequence] = useState<string | null>(null);
+  // showConsequence entfernt — Konsequenz steht ohnehin im Chat (Patient-Reaktion + Body-Language) und im spezifischen Feedback. Generic-Texte waren nicht konstruktiv.
   const [firstAttemptCorrect, setFirstAttemptCorrect] = useState<boolean[]>([]);
   const chatRef = useRef<HTMLDivElement>(null);
   const bottomAnchorRef = useRef<HTMLDivElement>(null);
@@ -132,7 +132,7 @@ export function StepDialog({
       });
     }, 250);
     return () => clearTimeout(id);
-  }, [messages, typing, showChoices, showFeedback, showConsequence, finished]);
+  }, [messages, typing, showChoices, showFeedback, finished]);
 
   // Erste Phase einleiten: context als narration, falls Patient-Speech enthalten ist
   // wird der speech als Patient-Bubble extrahiert.
@@ -213,13 +213,6 @@ export function StepDialog({
     setTotalScore((s) => s + opt.score);
     setMaxScore((s) => s + 3);
 
-    // Konsequenz-Nachricht bei schlechter Wahl (score 0 oder 1)
-    const consequenceText = !isGoodChoice
-      ? opt.score === 0
-        ? "Diese Reaktion kann das Vertrauen beeinträchtigen. Versuche, empathischer zu kommunizieren."
-        : "Das war nicht optimal. Achte auf eine wertschätzende und professionelle Kommunikation."
-      : null;
-
     setTimeout(() => {
       setTyping(false);
       // Body-Language von Patient-Speech trennen
@@ -244,8 +237,6 @@ export function StepDialog({
         return next;
       });
 
-      // Konsequenz + Feedback gleichzeitig anzeigen (kombinierte Box)
-      if (consequenceText) setShowConsequence(consequenceText);
       setShowFeedback(optFeedback);
       setWaitingForUser(true);
     }, 1200);
@@ -253,7 +244,6 @@ export function StepDialog({
 
   const nextPhase = () => {
     setShowFeedback(null);
-    setShowConsequence(null);
     setWaitingForUser(false);
     if (phase + 1 < phases.length) {
       const nextP = phase + 1;
@@ -305,7 +295,6 @@ export function StepDialog({
     setWaitingForUser(false);
     setShowChoices(false);
     setFinished(false);
-    setShowConsequence(null);
     setFirstAttemptCorrect([]);
     // showContextMessage durch initialized=false neu triggern
     setInitialized(false);
@@ -445,26 +434,14 @@ export function StepDialog({
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            className="rounded-xl bg-[var(--lern-accent)]/10 border border-[var(--lern-accent)]/20 p-3 space-y-2.5"
+            className="rounded-xl bg-[var(--lern-accent)]/10 border border-[var(--lern-accent)]/20 p-3"
           >
-            {showConsequence && (
-              <div className="pb-2 border-b border-[#D4956A]/30">
-                <p className="text-[11px] font-semibold uppercase tracking-wider text-[#D4956A] mb-1">
-                  Konsequenz
-                </p>
-                <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">
-                  {showConsequence}
-                </p>
-              </div>
-            )}
-            <div>
-              <p className="text-[11px] font-semibold uppercase tracking-wider text-[var(--lern-accent)] mb-1">
-                Feedback
-              </p>
-              <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">
-                <FeedbackText sprachLevel={sprachLevel}>{showFeedback}</FeedbackText>
-              </p>
-            </div>
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-[var(--lern-accent)] mb-1">
+              Feedback
+            </p>
+            <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">
+              <FeedbackText sprachLevel={sprachLevel}>{showFeedback}</FeedbackText>
+            </p>
           </motion.div>
         )}
       </AnimatePresence>
