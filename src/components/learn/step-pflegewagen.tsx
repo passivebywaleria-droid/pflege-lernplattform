@@ -14,6 +14,7 @@ import {
   generiereSandwichFeedback,
   SandwichFeedbackDisplay,
 } from "./bloom-feedback";
+import { StepActionBar } from "./step-action-bar";
 
 interface StepPflegewagenProps {
   title: string;
@@ -314,19 +315,7 @@ export function StepPflegewagen({
         </div>
       )}
 
-      {/* Check-Button */}
-      {!checked && allPlaced && (
-        <motion.button
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          onClick={handleCheck}
-          className="w-full rounded-2xl bg-[var(--lern-accent)] text-white font-semibold py-3 hover:bg-[#1A7359] transition-colors"
-        >
-          Prüfen
-        </motion.button>
-      )}
-
-      {/* Feedback nach Check */}
+      {/* Feedback nach Check (im Content) */}
       {checked && (
         <div className="space-y-3">
           <SandwichFeedbackDisplay
@@ -338,7 +327,6 @@ export function StepPflegewagen({
             )}
           />
 
-          {/* Item-by-Item-Begründungen */}
           <details className="rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-card-bg,#fafafa)] p-3">
             <summary className="cursor-pointer text-sm font-semibold text-[var(--lern-text-secondary)]">
               Warum welches Material?
@@ -373,14 +361,29 @@ export function StepPflegewagen({
               })}
             </ul>
           </details>
+        </div>
+      )}
 
+      {/* Action-Bar fix unten (Bundle-Stil) */}
+      {!checked && allPlaced && (
+        <StepActionBar>
+          <button
+            onClick={handleCheck}
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] text-white font-semibold py-3.5 hover:bg-[#1A7359] transition-colors"
+          >
+            Prüfen
+          </button>
+        </StepActionBar>
+      )}
+      {checked && (
+        <StepActionBar>
           <button
             onClick={() => onNext(allCorrect)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] text-white font-semibold py-3 hover:bg-[#1A7359] transition-colors"
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] text-white font-semibold py-3.5 hover:bg-[#1A7359] transition-colors"
           >
             Weiter
           </button>
-        </div>
+        </StepActionBar>
       )}
     </div>
   );
