@@ -69,22 +69,22 @@ export function StepDialog({
   const [showConsequence, setShowConsequence] = useState<string | null>(null);
   const [firstAttemptCorrect, setFirstAttemptCorrect] = useState<boolean[]>([]);
   const chatRef = useRef<HTMLDivElement>(null);
+  const bottomAnchorRef = useRef<HTMLDivElement>(null);
   const current = phases[phase];
 
   useEffect(() => {
-    // 1) Chat-Container intern auto-bottom
+    // 1) Chat-Container intern auto-bottom (sofort, ohne Animation)
     if (chatRef.current)
       chatRef.current.scrollTop = chatRef.current.scrollHeight;
-    // 2) Page-Scroll nach unten — damit Konsequenz/Feedback/Choices automatisch
-    //    sichtbar werden, ohne dass der User selbst scrollen muss
-    requestAnimationFrame(() => {
-      if (typeof window !== "undefined") {
-        window.scrollTo({
-          top: document.documentElement.scrollHeight,
-          behavior: "smooth",
-        });
-      }
-    });
+    // 2) Page-Scroll zum Bottom-Anchor — Delay genug für AnimatePresence
+    //    damit die Höhe von Konsequenz/Feedback/Choices im DOM steht
+    const id = setTimeout(() => {
+      bottomAnchorRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+      });
+    }, 250);
+    return () => clearTimeout(id);
   }, [messages, typing, showChoices, showFeedback, showConsequence, finished]);
 
   // Erste Patient-Nachricht automatisch als Chat-Bubble anzeigen
@@ -403,6 +403,11 @@ export function StepDialog({
 
         </motion.div>
       )}
+
+      {/* Anchor-Div: Auto-Scroll-Ziel — h-20 reserviert Platz über StepActionBar
+          (fixed, ~70px hoch), damit Content beim ScrollIntoView nicht von der
+          Action-Bar überdeckt wird */}
+      <div ref={bottomAnchorRef} aria-hidden className="h-20" />
 
       {/* Action-Bar fix unten — Weiter zur nächsten Phase ODER zum nächsten Step */}
       {!finished && waitingForUser && showFeedback && (
