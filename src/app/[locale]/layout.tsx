@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import { Poppins } from "next/font/google"
+import { Inter } from "next/font/google"
 import { NextIntlClientProvider } from "next-intl"
 import { getMessages } from "next-intl/server"
 import { ThemeProvider } from "next-themes"
@@ -13,10 +13,11 @@ import { DarkModeInit } from "@/components/layout/dark-mode-init"
 import { GlobalTabBar } from "@/components/layout/global-tab-bar"
 import "../globals.css"
 
-const poppins = Poppins({
+// Inter — Bundle-Font (claude-design-bundle), wirkt schmaler/kompakter als Poppins
+const inter = Inter({
   subsets: ['latin', 'latin-ext'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-poppins',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-poppins',  // Variable-Name behalten für Backward-Compat
   display: 'swap',
 })
 
@@ -64,7 +65,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} dir={dir} suppressHydrationWarning>
-      <body className={`${poppins.variable} min-h-screen bg-background text-foreground antialiased font-[family-name:var(--font-poppins)]`}>
+      <body className={`${inter.variable} min-h-screen bg-background text-foreground antialiased font-[family-name:var(--font-poppins)]`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
