@@ -104,19 +104,19 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
       },
       question: {
         fragetext:
-          "Ordne die Maßnahmen in die Matrix ein: X-Achse = Ziel (Flüssigkeit verbessern / Mutter entlasten / Atemwege), Y-Achse = Verantwortung (Pflege / Arzt / Mutter Laura).",
+          "Ordne die Maßnahmen in die Matrix ein. X-Achse = Pflegeziel (Flüssigkeit/Trinken vs. Atemweg/Mutter-Empowerment), Y-Achse = Wer setzt um (Pflegekraft selbst vs. Mutter/Arzt mit unserer Anleitung).",
         matrix: {
           instruction:
-            "Ordne jede Maßnahme einem Quadranten zu. X-Achse: Flüssigkeit (Q1, Q2, Q3) oder Anderes (Q4). Y-Achse: Pflege (Q1, Q4) oder Arzt/Mutter (Q2, Q3).",
+            "Ordne jede Maßnahme einem Quadranten zu — entlang Pflegeziel (X) und ausführender Person (Y).",
           axisX: {
             label: "Ziel",
             low: "Flüssigkeit + Trinken",
-            high: "Mutter + Atemweg",
+            high: "Atemweg + Mutter-Empowerment",
           },
           axisY: {
-            label: "Verantwortung",
-            low: "Arzt / Mutter Laura",
-            high: "Pflege",
+            label: "Ausführung",
+            low: "Mutter Laura / Arzt (mit unserer Anleitung)",
+            high: "Pflegekraft selbst",
           },
           items: [
             {
@@ -127,17 +127,17 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
             {
               id: "m2",
               text: "Häufigere aber kürzere Stillmahlzeiten anbieten",
-              correctQuadrant: 3,
+              correctQuadrant: 2,
             },
             {
               id: "m3",
-              text: "Nasentropfen NaCl 0,9% anordnen",
-              correctQuadrant: 3,
+              text: "Nasentropfen NaCl 0,9% bereitstellen und vor jeder Mahlzeit anwenden",
+              correctQuadrant: 4,
             },
             {
               id: "m4",
               text: "Nasensekret vor dem Trinken sanft absaugen",
-              correctQuadrant: 2,
+              correctQuadrant: 4,
             },
             {
               id: "m5",
@@ -146,13 +146,13 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
             },
             {
               id: "m6",
-              text: "Arztvisite benachrichtigen bei Verschlechterung",
-              correctQuadrant: 1,
+              text: "Arzt bei Verschlechterung der Trinkmenge / Bilanz informieren",
+              correctQuadrant: 3,
             },
             {
               id: "m7",
-              text: "Emilia nach dem Stillen 15 Minuten aufrecht halten",
-              correctQuadrant: 3,
+              text: "Emilia nach dem Stillen 15 Minuten aufrecht halten (mit Laura)",
+              correctQuadrant: 2,
             },
             {
               id: "m8",

@@ -11,9 +11,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
   titel: "Evaluieren",
   titelB1: "Prüfen was funktioniert hat",
   kontext:
-    "Szenensprung: Es ist 15:30 Uhr, Nachmittag. Du bist jetzt im Spätdienst-Beginn. Frau Meier gibt dir kurz Rückmeldung: 'Herr Bauer hat heute Mittag 400 ml getrunken — besser als gestern. Kein erneuter Sturz. Aber er war mittags wieder sehr unruhig und hat versucht, die Einheit zu verlassen.' Dann: Tochter Ingrid Bauer steht an der Rezeption. Sie hat von dem nächtlichen Sturz erfahren — durch einen Anruf der Nachtstation. Sie ist aufgewühlt, macht sich Vorwürfe. Ihr erstes Wort zu dir: 'Hätte das nicht verhindert werden können? Warum war er allein im Flur?' Das ist der schwierigste Moment des Tages. Nicht medizinisch — emotional.",
+    "Szenensprung: Es ist 15:30 Uhr, Nachmittag. Du bist jetzt im Spätdienst-Beginn. Frau Meier gibt dir kurz Rückmeldung: 'Herr Bauer hat heute bis jetzt zusammen ca. 1000 ml getrunken (200 Frühstück, 400 Mittag, 400 Nachmittag) — besser als gestern. Kein erneuter Sturz. Aber er war mittags wieder sehr unruhig und hat versucht, die Einheit zu verlassen.' Dann: Tochter Ingrid Bauer steht an der Rezeption. Sie hat von dem nächtlichen Sturz erfahren — durch einen Anruf der Nachtstation. Sie ist aufgewühlt, macht sich Vorwürfe. Ihr erstes Wort zu dir: 'Hätte das nicht verhindert werden können? Warum war er allein im Flur?' Das ist der schwierigste Moment des Tages. Nicht medizinisch — emotional.",
   kontextB1:
-    "Es ist 15:30 Uhr. Spätdienst. Frau Meier sagt dir: 'Herr Bauer hat 400 ml getrunken — besser als gestern. Er ist nicht gestürzt. Aber mittags war er wieder sehr unruhig.' Dann kommt Tochter Ingrid. Sie hat von dem Sturz heute Nacht erfahren. Sie ist aufgewühlt. Sie sagt zu dir: 'Hätte das nicht verhindert werden können? Warum war er allein im Flur?' Das ist der schwerste Moment des Tages — nicht medizinisch, sondern emotional.",
+    "Es ist 15:30 Uhr. Spätdienst. Frau Meier sagt dir: 'Herr Bauer hat bis jetzt zusammen ca. 1000 ml getrunken (200 Frühstück, 400 Mittag, 400 Nachmittag) — besser als gestern. Er ist nicht gestürzt. Aber mittags war er wieder sehr unruhig.' Dann kommt Tochter Ingrid. Sie hat von dem Sturz heute Nacht erfahren. Sie ist aufgewühlt. Sie sagt zu dir: 'Hätte das nicht verhindert werden können? Warum war er allein im Flur?' Das ist der schwerste Moment des Tages — nicht medizinisch, sondern emotional.",
   kernSteps: [
     // Step 5.1 — Categorize: Pflegeziele erreicht/offen/anzupassen
     {
@@ -59,11 +59,11 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
             correctCategory: 0,
           },
           {
-            text: "Trinkmenge 400 ml nachmittags + ca. 600 ml Frühstück/Mittag = ~1000 ml",
+            text: "Trinkmenge bis Schichtende ca. 1000 ml (200 ml Frühstück + 400 ml Mittag + 400 ml Nachmittag)",
             correctCategory: 0,
           },
           {
-            text: "Trinkziel 1300 ml täglich noch nicht erreicht",
+            text: "Trinkziel 1500 ml täglich noch nicht erreicht (heute 1000 ml — Etappe 1300 ml ebenfalls offen)",
             correctCategory: 1,
           },
           {
@@ -99,18 +99,20 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Gespräch mit Tochter Ingrid",
-        body: "Ingrid Bauer (55, Grundschullehrerin) steht vor dir. Aufgewühlt, Schuldgefühle im Gesicht. Ihr erster Satz: 'Hätte das nicht verhindert werden können? Warum war er allein im Flur?' — Du führst das Gespräch.",
+        body: "Vorbedingung geklärt: Bevor du Auskunft gibst, prüfst du in der Akte: Ingrid Bauer ist als gesetzliche Betreuerin (Bestellung 2024, Aufgabenkreis Gesundheitssorge) eingetragen — Auskunft ist also rechtlich zulässig (§ 203 StGB Schweigepflicht ↔ Betreuung nach § 1814 BGB; DSGVO Art. 9). Wäre sie nicht Betreuerin, müsstest du an Stationsleitung verweisen.\n\nIngrid Bauer (55, Grundschullehrerin) steht vor dir. Aufgewühlt, Schuldgefühle im Gesicht. Ihr erster Satz: 'Hätte das nicht verhindert werden können? Warum war er allein im Flur?' — Du führst das Gespräch.",
         glossarBegriffe: [
           "Empathie",
           "Angehörigenkommunikation",
           "Schuldgefühle",
           "Transparenz",
+          "Schweigepflicht",
+          "Gesetzliche Betreuung",
         ],
       },
       contentB1: {
         title: "Gespräch mit der Tochter",
-        body: "Ingrid Bauer kommt zur Station. Sie ist aufgeregt und macht sich Vorwürfe. Sie fragt: 'Hätte das nicht verhindert werden können? Warum war er allein im Flur?' — Was sagst du?",
-        glossarBegriffe: ["Empathie", "Schuldgefühle", "Ehrlichkeit"],
+        body: "Wichtig vorher: Du schaust kurz in die Akte: Ist Ingrid die gesetzliche Betreuerin? Bei Herrn Bauer: ja (seit 2024). Das heißt: Du darfst ihr Auskunft geben. Wenn nicht: an die Stationsleitung verweisen.\n\nIngrid Bauer kommt zur Station. Sie ist aufgeregt und macht sich Vorwürfe. Sie fragt: 'Hätte das nicht verhindert werden können? Warum war er allein im Flur?' — Was sagst du?",
+        glossarBegriffe: ["Empathie", "Schuldgefühle", "Ehrlichkeit", "Schweigepflicht", "Betreuung"],
       },
       question: {
         fragetext: "Führe das Gespräch mit Ingrid in 5 Schritten.",
@@ -424,7 +426,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "Flüssigkeitsbilanz Herr Bauer",
-        body: "Berechne die Flüssigkeitsbilanz von Herrn Bauer für heute. Einfuhr: 200 ml Frühstück + 400 ml Mittag + 400 ml Nachmittag = 1000 ml gesamt. Ausfuhr: Urin geschätzt ~750 ml, Perspiratio ~500 ml bei 23°C Raumtemperatur = 1250 ml. Bilanz = Einfuhr minus Ausfuhr. Was bedeutet das für morgen?",
+        body: "Berechne die Flüssigkeitsbilanz von Herrn Bauer für heute. Einfuhr: 200 ml Frühstück + 400 ml Mittag + 400 ml Nachmittag = 1000 ml gesamt. Ausfuhr: Urin geschätzt ~750 ml, Perspiratio insensibilis ~800 ml (bei einem 82-jährigen, immobilen Patienten, Lehrbuch-Schätzung ca. 700–1000 ml/Tag — bei Fieber oder Wärme deutlich höher) = 1550 ml. Bilanz = Einfuhr minus Ausfuhr. Was bedeutet das für morgen?",
         glossarBegriffe: [
           "Flüssigkeitsbilanz",
           "Perspiratio",
@@ -435,23 +437,23 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Wie viel Flüssigkeit hat Herr Bauer heute?",
-        body: "Berechne: Herr Bauer hat heute getrunken: 200 ml + 400 ml + 400 ml = 1000 ml. Sein Körper hat verloren: ca. 750 ml Urin + ca. 500 ml durch die Haut (Schwitzen) = 1250 ml. Bilanz = Was rein kommt minus was raus geht. Was bedeutet das?",
+        body: "Berechne: Herr Bauer hat heute getrunken: 200 ml + 400 ml + 400 ml = 1000 ml. Sein Körper hat verloren: ca. 750 ml Urin + ca. 800 ml durch die Haut und Atmung (Schätzung Lehrbuch) = 1550 ml. Bilanz = Was rein kommt minus was raus geht. Was bedeutet das?",
         glossarBegriffe: ["Flüssigkeitsbilanz", "Einfuhr", "Ausfuhr"],
       },
       question: {
         fragetext:
-          "Berechne die Flüssigkeitsbilanz: Einfuhr (1000 ml) minus Ausfuhr (1250 ml). Ergebnis in ml.",
+          "Berechne die Flüssigkeitsbilanz: Einfuhr (1000 ml) minus Ausfuhr (1550 ml). Ergebnis in ml.",
         calculation: {
           instruction:
-            "Einfuhr: 1000 ml. Ausfuhr: 1250 ml. Berechne die Bilanz (Vorzeichen beachten).",
+            "Einfuhr: 1000 ml. Ausfuhr: 1550 ml. Berechne die Bilanz (Vorzeichen beachten).",
           formula: "Bilanz = Einfuhr − Ausfuhr",
-          correctValue: -250,
+          correctValue: -550,
           unit: "ml",
           tolerance: 0,
           explanation:
-            "Bilanz = 1000 − 1250 = −250 ml. Negative Bilanz bedeutet: Herr Bauer verliert mehr als er aufnimmt. Morgen muss die Trinkmenge erhöht werden — Ziel 1300 ml.",
+            "Bilanz = 1000 − 1550 = −550 ml. Negative Bilanz bedeutet: Herr Bauer verliert deutlich mehr als er aufnimmt. Morgen muss die Trinkmenge erhöht werden — Ziel 1500 ml. Ein Defizit dieser Größe über mehrere Tage = Exsikkoserisiko.",
           explanationB1:
-            "1000 ml rein, 1250 ml raus = −250 ml. Minus = er verliert mehr als er bekommt. Morgen: mehr trinken. Ziel: 1300 ml.",
+            "1000 ml rein, 1550 ml raus = −550 ml. Minus = er verliert deutlich mehr als er bekommt. Morgen: mehr trinken. Ziel: 1500 ml.",
         },
       },
     },

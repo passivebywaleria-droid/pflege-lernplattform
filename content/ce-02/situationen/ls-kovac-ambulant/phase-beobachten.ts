@@ -117,6 +117,8 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
       quellen: [
         "MDS/Medizinischer Dienst 2018 — Kontrakturrisiko ambulant",
         "DNQP Erhaltung und Förderung der Mobilität 2017/2024",
+        "DNQP Expertenstandard Schmerzmanagement in der Pflege 2020",
+        "Wells et al. 2003 — TVT-Score",
       ],
       track: "basis",
       modus: "puzzle",
@@ -124,17 +126,19 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "Gelenk-Assessment: Was siehst du?",
-        body: "Du schaust dir Frau Kovačs Kniegelenke an. Ordne die Befunde in die richtigen Kategorien ein — Normalbefund, Kontraktur-Zeichen oder akutes Warnsignal. Die Unterscheidung ist klinisch entscheidend: Was auf Kontraktur hinweist, bleibt vorerst bei der Physiotherapie. Was auf akute Entzündung hinweist, braucht Arzt-Rücksprache. Quelle: (MDS/Medizinischer Dienst 2018)",
+        body: "Du schaust dir Frau Kovačs Kniegelenke an. Ordne die Befunde in drei Kategorien ein:\n\n- **Normalbefund (kein Hinweis):** keine Auffälligkeit, keine Maßnahme nötig.\n- **Kontraktur-Zeichen (chronisch bekannt, dokumentationspflichtig):** gehört zum bekannten Krankheitsbild — beobachten, dokumentieren, ggf. mit Physiotherapie abstimmen. Auch milder Schmerz (VAS 1-3) bei Bewegung gehört hierher: nach DNQP Schmerzmanagement immer zu dokumentieren, ab VAS ≥4 interventionspflichtig.\n- **Akutes Warnsignal (jetzt Arzt-Rücksprache):** **neue** Befunde, die nicht zum bekannten Krankheitsbild passen — TVT-Verdacht, Entzündungszeichen.\n\nQuelle: (MDS/Medizinischer Dienst 2018; DNQP Schmerzmanagement 2020)",
         glossarBegriffe: [
           "Kontraktur",
           "Extensionsdefizit",
           "Flexionskontraktur",
+          "VAS",
+          "DNQP Schmerz",
         ],
       },
       contentB1: {
         title: "Was ist normal — was ist ein Warnsignal?",
-        body: "Du schaust auf Frau Kovačs Knie. Ordne die Befunde ein: Was ist normal (kein Problem), was ist ein Kontraktur-Zeichen (bekanntes Problem) und was ist ein akutes Warnsignal (jetzt Arzt informieren)?",
-        glossarBegriffe: ["Kontraktur", "Extensionsdefizit"],
+        body: "Du schaust auf Frau Kovačs Knie. Es gibt 3 Kategorien:\n\n- **Normalbefund** = nichts Auffälliges, keine Maßnahme.\n- **Kontraktur-Zeichen** = bekanntes Problem. Beobachten und aufschreiben.\n- **Akutes Warnsignal** = etwas Neues. Jetzt Arzt informieren.\n\nWichtig: Auch leichter Schmerz (z.B. VAS 3 von 10) ist nicht 'normal'. Du musst ihn aufschreiben (DNQP Schmerz). Ab VAS 4 musst du etwas dagegen tun.",
+        glossarBegriffe: ["Kontraktur", "Extensionsdefizit", "VAS"],
       },
       question: {
         fragetext:
@@ -154,8 +158,8 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
             correctCategory: 2,
           },
           {
-            text: "Schmerz bei Bewegung VAS 3/10",
-            correctCategory: 0,
+            text: "Schmerz bei Bewegung VAS 3/10 — chronisch bekannt, dokumentationspflichtig",
+            correctCategory: 1,
           },
           {
             text: "Haut über dem Knie gespannt, glänzend",

@@ -164,12 +164,12 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
               "Falsch und gefährlich. Die blauen Lippen zeigen: zu wenig Sauerstoff. Das ist ein Warnsignal. Sofort stoppen. Nicht weitermachen.",
           },
           {
-            text: "Ich rufe sofort den Notarzt — bei Zyanose ist immer Notarzt nötig.",
-            isCorrect: false,
+            text: "Ich rufe sofort den Notarzt — bei sichtbarer Lippenzyanose und allein in der Wohnung ist mir das zu unsicher.",
+            isCorrect: true,
             feedback:
-              "Zu schnell. Bei einer Patientin mit bekannter COPD III und bekannter Belastungsdyspnoe ist der erste Schritt: Übung stoppen + Beobachten + Lage sichern. Der Notarzt wird gerufen wenn: SpO2 <88 %, Zyanose zunehmend, keine Besserung nach Ruhe und Lageänderung, Bewusstseinstrübung. Sofort-Notaruf bei jedem Zyanose-Zeichen wäre in diesem Setting unangemessen. Geh zurück und wähle Pfad A.",
+              "Auch korrekt — und im Zweifel nie falsch. In der ambulanten Solo-Situation gilt: Wer 112 wählt, hat nicht 'zu früh' gehandelt. Lippenzyanose + AF ~22/Min ist ein klinisches Warnzeichen, du bist allein, du hast kein SpO2-Wert, kein Backup im Nebenraum. Optimal wäre: Erstmaßnahmen (Übung stoppen + aufrechte Position + Frischluft) machst du **parallel** zum Notarzt-Anruf — nicht entweder/oder. Pfad A ist die didaktisch elegantere Reihenfolge (erst entlasten, dann eskalieren bei <5 Min keine Besserung), aber 112 wählen ist im Zweifel immer richtig. Faustregel ambulant: lieber einmal zu viel anrufen als einmal zu spät. Quelle: (GOLD-Report COPD 2023; ABCDE-Schema)",
             feedbackB1:
-              "Zu schnell. Frau Kovač hat bekannte COPD. Das kann bei ihr vorkommen. Erst: stoppen, beobachten, frische Luft. Notarzt nur wenn es schlimmer wird.",
+              "Auch richtig. Du bist allein in der Wohnung. Du siehst blaue Lippen. Im Zweifel ist 112 nie falsch. Noch besser: Erst stoppen, aufrecht setzen, Fenster auf — und gleichzeitig (parallel) Notarzt rufen. Aber: 112 anzurufen ist nie ein Fehler. Lieber einmal zu viel als einmal zu spät.",
           },
         ],
       },

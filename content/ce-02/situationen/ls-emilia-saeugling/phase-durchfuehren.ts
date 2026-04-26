@@ -42,11 +42,12 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
         fragetext:
           "Sortiere die Vorbereitungsschritte in die richtige Reihenfolge.",
         sortItems: [
+          "Eigene Hände waschen / desinfizieren (RKI: vor Patientenkontakt)",
           "Raumtemperatur prüfen: mindestens 24 °C, kein Luftzug",
           "Alle Materialien griffbereit legen: Handtuch, frische Windel, Kleidung",
           "Badewanne füllen — Wassertemperatur 37 °C mit Badethermometer messen",
-          "Eigene Hände waschen",
           "Laura erklären was jetzt passiert und was sie beobachten soll",
+          "Hände unmittelbar vor Hautkontakt nochmals desinfizieren",
           "Emilia ausziehen — erst dann ins Wasser",
         ],
       },
@@ -324,15 +325,15 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
         fragetext: "Wie reagierst du auf Lauras Weinen?",
         branchingOptions: [
           {
-            text: "\"Nehmen Sie sich ruhig einen Moment. Das ist alles gerade sehr viel — das ist ein normaler Moment nach einer schlaflosen Nacht.\"",
+            text: "\"Nimm dir ruhig einen Moment. Das ist alles gerade sehr viel — das ist ein normaler Moment nach einer schlaflosen Nacht.\"",
             isCorrect: true,
             feedback:
-              "Genau richtig. Du validierst Lauras Erschöpfung, ohne sie wegzuerkläiren. 'Normaler Moment' nimmt die Scham ('Tut mir leid'). Du schaffst Raum — ohne einzugreifen oder zu bewerten. Das ist aktive Zuhörung, Schritt 1. Jetzt kannst du weiter aktiv zuhören.",
+              "Genau richtig. Du validierst Lauras Erschöpfung, ohne sie wegzuerklären. 'Normaler Moment' nimmt die Scham ('Tut mir leid'). Du schaffst Raum — ohne einzugreifen oder zu bewerten. Das ist aktive Zuhörung, Schritt 1. Jetzt kannst du weiter aktiv zuhören.",
             feedbackB1:
               "Sehr gut. Du zeigst: Das ist okay. Das ist nicht peinlich. Emilia ist sicher — jetzt darf Laura kurz weinen.",
           },
           {
-            text: "\"Ach, das ist doch alles gut gegangen! Emilia geht es gut — da müssen Sie nicht weinen.\"",
+            text: "\"Ach, das ist doch alles gut gegangen! Emilia geht es gut — da musst du nicht weinen.\"",
             isCorrect: false,
             feedback:
               "Entwertend — das nennt man Bypassing. Du sprichst an Lauras Gefühl vorbei und erklärst es weg. Laura hört: 'Deine Emotion ist unberechtigt.' Das führt dazu, dass Laura sich noch mehr allein fühlt und ihre echten Bedürfnisse verbirgt. Emilias Wohlbefinden ändert nichts an Lauras Erschöpfung.",

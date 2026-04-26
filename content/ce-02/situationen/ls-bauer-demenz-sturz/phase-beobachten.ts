@@ -69,13 +69,13 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Sturz-Folge-Assessment — richtige Reihenfolge",
-        body: "Lege die Reihenfolge des strukturierten Sturz-Folge-Assessments fest. Was kommt wann?",
-        glossarBegriffe: ["BESD-Skala", "Assessment", "Vitalzeichen"],
+        body: "Lege die Reihenfolge des strukturierten Sturz-Folge-Assessments fest. Orientierung: ABCDE-Schema (Bewusstsein und Vitalzeichen zuerst — eine Synkope kann Sturzursache sein und muss vor Bewegung der Extremitäten ausgeschlossen werden) und DNQP Sturzprophylaxe 2022, Kriterium 3b. Hinweis: Vitalzeichen und Verletzungscheck fließen später ins Sturzprotokoll (Phase 6) — saubere Erfassung jetzt = solide Dokumentation am Ende. Was kommt wann?",
+        glossarBegriffe: ["BESD-Skala", "Assessment", "Vitalzeichen", "ABCDE-Schema", "Synkope", "Sturzprotokoll"],
       },
       contentB1: {
         title: "Sturz-Assessment — welche Reihenfolge?",
-        body: "In welcher Reihenfolge prüfst du nach einem Sturz? Sortiere die Schritte.",
-        glossarBegriffe: ["BESD-Skala", "Vitalzeichen"],
+        body: "In welcher Reihenfolge prüfst du nach einem Sturz? Wichtig: Erst Bewusstsein und Vitalzeichen (RR, Puls) prüfen — sonst weißt du nicht, ob ein Kreislaufproblem den Sturz ausgelöst hat. Erst dann den Körper bewegen. Hinweis: Was du jetzt misst, schreibst du später ins Sturzprotokoll.",
+        glossarBegriffe: ["BESD-Skala", "Vitalzeichen", "ABCDE", "Sturzprotokoll"],
       },
       question: {
         fragetext:
@@ -89,8 +89,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
             },
             {
               id: "a2",
-              label:
-                "Schmerzerfassung mit BESD-Skala bei Demenz (Verhalten beobachten, nicht fragen)",
+              label: "Vitalzeichen messen (RR, Puls, SpO₂) — Synkope/Kollaps als Sturzursache ausschließen",
             },
             {
               id: "a3",
@@ -98,15 +97,16 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
             },
             {
               id: "a4",
-              label: "Extremitäten: Arme und Beine soweit möglich bewegen lassen",
+              label:
+                "Schmerzerfassung mit BESD-Skala bei Demenz (Verhalten beobachten, nicht fragen)",
             },
             {
               id: "a5",
-              label: "Hämatome und Hautdefekte sichtbar prüfen",
+              label: "Extremitäten: Arme und Beine soweit möglich bewegen lassen",
             },
             {
               id: "a6",
-              label: "Vitalzeichen messen (RR, Puls, SpO₂)",
+              label: "Hämatome und Hautdefekte sichtbar prüfen",
             },
           ],
         },
@@ -130,24 +130,24 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Gelenkbeweglichkeit prüfen",
-        body: "Du möchtest die Gelenkbeweglichkeit von Herrn Bauers Knien prüfen. Er reagiert auf Sprache kaum. Du nährst dich behutsam seinem linken Knie. Was passiert?",
+        body: "Du möchtest die Gelenkbeweglichkeit von Herrn Bauers Knien prüfen. Er reagiert auf Sprache kaum. Du nährst dich behutsam seinem rechten Knie. Was passiert?",
         glossarBegriffe: ["Kontraktur", "Schmerzsignal", "BESD-Skala"],
       },
       contentB1: {
         title: "Knie prüfen",
-        body: "Du willst Herrn Bauers Knie prüfen. Er hört auf Worte kaum. Du gehst langsam zu seinem linken Knie hin. Was passiert?",
+        body: "Du willst Herrn Bauers Knie prüfen. Er hört auf Worte kaum. Du gehst langsam zu seinem rechten Knie hin. Was passiert?",
         glossarBegriffe: ["Kontraktur", "Schmerzsignal"],
       },
       question: {
         fragetext:
-          "Herr Bauer zeigt beim Bewegen seines linken Knies ein Schmerzsignal. Wie reagierst du?",
+          "Herr Bauer zeigt beim Bewegen seines rechten Knies ein Schmerzsignal. Wie reagierst du?",
         patientName: "Herr Bauer",
         dialogPhases: [
           {
             context:
-              "Du nimmst behutsam Herrn Bauers linkes Knie. Beim langsamen Beugen zieht er scharf die Luft ein und sagt:",
+              "Du nimmst behutsam Herrn Bauers rechtes Knie. Beim langsamen Beugen zieht er scharf die Luft ein und sagt:",
             contextB1:
-              "Du hältst Herrn Bauers linkes Knie. Du beugst es langsam. Er zieht die Luft ein und sagt:",
+              "Du hältst Herrn Bauers rechtes Knie. Du beugst es langsam. Er zieht die Luft ein und sagt:",
             speaker: "Herr Bauer",
             options: [
               {
@@ -272,9 +272,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
             text: "\n\nTag 3 (So): Inkontinenzversorgung 3× gewechselt in der Nacht,",
             isError: true,
             reason:
-              "Häufiger Wechsel bei Inkontinenz = Hautbelastung durch Feuchtigkeit und Scherkräfte — Hautrötung und Mazeration möglich.",
+              "Hinweis auf hohe nächtliche Inkontinenz-Frequenz / nächtliche Polyurie. Der Wechsel selbst ist Schutzmaßnahme — das Risiko liegt in der Feuchtigkeitsbelastung der Haut zwischen den Wechseln (IAD-Risiko, DNQP Förderung Harnkontinenz / Hinweispapier IAD). Zusätzlich = nächtliche Toilettengang-Auslöser → Sturzrisiko-Faktor (passt zum Sturzereignis 02:30 Uhr).",
             reasonB1:
-              "3× Wechsel nachts = Haut viel Feuchtigkeit ausgesetzt. Das reizt die Haut.",
+              "3× Wechsel nachts = er ist nachts oft nass. Der Wechsel selbst schützt die Haut. Aber die Zeit dazwischen reizt die Haut (IAD = Wundsein durch Feuchtigkeit). Außerdem: Wenn er nachts viel Urin hat, steht er auf — und kann stürzen.",
           },
           {
             text: " kein Urinprotokoll geführt.",
@@ -332,7 +332,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
             text: "Demenz-Desorientierung und Nachtaktivität",
             correctCategory: 0,
           },
-          { text: "Mirtazapin (Schlafmittel, sedierend)", correctCategory: 0 },
+          { text: "Mirtazapin (Antidepressivum mit dosisabhängiger Sedierung, PRISCUS-Liste)", correctCategory: 0 },
           {
             text: "Inkontinenz mit Drangsymptomatik nachts",
             correctCategory: 0,

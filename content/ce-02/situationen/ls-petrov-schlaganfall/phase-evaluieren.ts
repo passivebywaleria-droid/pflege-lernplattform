@@ -58,7 +58,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
             correctCategory: 0,
           },
           {
-            text: "Ziel: Auskultationsbefund stabil. → Atemgeräusch beidseits vorhanden, kein neu aufgetretenes Rasseln.",
+            text: "Ziel: Atembeobachtung stabil. → Hörbares Atemgeräusch unauffällig, Atemfrequenz 17/Min, kein hörbares Rasseln am Bett.",
             correctCategory: 0,
           },
           {
@@ -227,12 +227,12 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
               "Einfach warten ist nicht Pflege-Qualität. Jeder Tag mit Katheter erhöht das Risiko. Du beobachtest aktiv und sagst dem Arzt Bescheid.",
           },
           {
-            text: "Ich informiere den Arzt heute über den Status (Tag 5, Urinfarbe normal, keine Zeichen einer CAUTI) und frage ob eine vorzeitige Evaluation möglich ist.",
+            text: "Ich melde Frau Wegner (Praxisanleiterin) den Befund + meinen Vorschlag, dass wir den Arzt heute über die mögliche frühere Entfernung informieren — und gehe das Gespräch ggf. mit ihr gemeinsam.",
             isCorrect: true,
             feedback:
-              "Proaktive Kommunikation — genau richtig. Du lieferst dem Arzt einen klaren Befund (Tag 5, unauffällig, kein klinischer Infektionsverdacht) und fragst ob die Re-Evaluation vorgezogen werden kann. Das ist pflegerische Eigenverantwortung nach § 4 PflBG und entspricht KRINKO 2015: Katheter so früh wie möglich entfernen. Du arbeitest nicht gegen die Anordnung — du ergänzt sie mit aktueller Beobachtung.",
+              "Proaktive Kommunikation im realen Hierarchie-Workflow — genau richtig. Als Pflegeschülerin im 2./3. AD führst du selten allein die Arzt-Kommunikation; du meldest deiner Praxisanleiterin den Befund (Tag 5, unauffällig, kein klinischer Infektionsverdacht) und deinen Vorschlag, sie spricht oder begleitet das Gespräch mit dem Arzt. Das ist pflegerische Eigenverantwortung nach § 4 PflBG und entspricht KRINKO 2015: Katheter so früh wie möglich entfernen. Du arbeitest nicht gegen die Anordnung — du ergänzt sie mit aktueller Beobachtung.",
             feedbackB1:
-              "Richtig. Du informierst den Arzt heute. Du sagst: \"Der Katheter liegt seit 5 Tagen. Der Urin ist unauffällig. Sollen wir früher prüfen?\" Das ist proaktiv. Jeder Tag weniger mit Katheter = weniger Risiko.",
+              "Richtig. Du sagst Frau Wegner Bescheid: \"Der Katheter liegt seit 5 Tagen. Der Urin ist unauffällig. Können wir den Arzt fragen, ob wir früher entfernen?\" Sie spricht mit dem Arzt — oder ihr macht das gemeinsam. Das ist proaktiv. Jeder Tag weniger mit Katheter = weniger Risiko.",
           },
           {
             text: "Ich entferne den Katheter selbst — 5 Tage ist lang genug.",

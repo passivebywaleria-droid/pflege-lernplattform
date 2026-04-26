@@ -38,7 +38,7 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
         "Early morning hospital nursing station, nurse reading digital patient record, soft warm light, chirurgical ward, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Die digitale Pflegeakte — Übergabe SBAR",
-        body: "7:45 Uhr, Stationscomputer der chirurgischen Station.\n\nDu öffnest die digitale Pflegeakte von Herrn Nguyen. Die Nachtschicht hat eine SBAR-Übergabe hinterlassen: **S**ituation — Tran Nguyen, 72 J., 4. Tag post-OP Sigmaresektion, endständiges Kolostoma. **B**ackground — Mangelernährung (BMI 19, Albumin 28 g/l), Braden 14, Heparin-Prophylaxe läuft, Mobilisation gestern erstmals an Bettkante. **A**ssessment — Stoma aktiv (dünnflüssig, gelblich-braun), Beutel halb voll seit gestern Abend, noch nicht gewechselt. Bauchdeckenwunde leicht gerötet. Kaum Nahrungs-Intake seit OP. **R**ecommendation — Beutelwechsel heute Morgen notwendig, Ernährungsstatus evaluieren, erste Mobilisationsübung planen. Tochter Linh anwesend (übersetzt), Ehefrau Mai heute früh angereist. Stomatherapeut Herr Baum kommt um 10 Uhr.",
+        body: "7:45 Uhr, Stationscomputer der chirurgischen Station.\n\nDu öffnest die digitale Pflegeakte von Herrn Nguyen. Die Nachtschicht hat eine SBAR-Übergabe hinterlassen: **S**ituation — Tran Nguyen, 72 J., 4. Tag post-OP Sigmaresektion, endständiges Kolostoma. **B**ackground — Mangelernährung (BMI 19, Albumin 28 g/l), Braden 14, Heparin-Prophylaxe läuft, Mobilisation gestern erstmals an Bettkante. **A**ssessment — Stoma aktiv: rosig, ca. 1,5 cm prominent (NS-Befund, dokumentiert 04:30), Output dünnflüssig-gelblich-braun, Beutel halb voll seit gestern Abend, noch nicht gewechselt. Bauchdeckenwunde leicht gerötet. Kaum Nahrungs-Intake seit OP. **R**ecommendation — Beutelwechsel heute Morgen notwendig, Ernährungsstatus evaluieren, erste Mobilisationsübung planen. Tochter Linh anwesend (übersetzt), Ehefrau Mai heute früh angereist. Stomatherapeut Herr Baum kommt um 10 Uhr.",
         fallbezug:
           "Herr Nguyen (72, Kolonkarzinom, 4. Tag post-OP) — fünf Pflegeprobleme gleichzeitig. Du bist Pflegeschüler/in im 3. Ausbildungsdrittel, Frühdienst auf der chirurgischen Station.",
         glossarBegriffe: ["Sigmaresektion", "Kolostoma", "endständig", "SBAR"],
@@ -174,25 +174,25 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Vorbereitung vor dem Zimmerbetreten",
-        body: "Bevor du das Zimmer betrittst, gibt es mehrere Schritte, die du jetzt am Computer und am Stationsflur erledigen kannst. In welcher Reihenfolge macht das am meisten Sinn?",
+        body: "Bevor du das Zimmer betrittst, gibt es mehrere Schritte, die du jetzt am Computer und am Stationsflur erledigen kannst. Standard nach FG SKM 2023: erst Patientendaten und Tagesplan klären → dann Material vorbereiten → erst dann ins Zimmer gehen. Sortiere in dieser Logik.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Was bereitest du vor?",
-        body: "Bevor du ins Zimmer gehst — was tust du zuerst? Sortiere die Schritte in die richtige Reihenfolge.",
+        body: "Bevor du ins Zimmer gehst — was tust du zuerst? Erst Plan und Daten lesen, dann Material vorbereiten. Sortiere in dieser Reihenfolge.",
         glossarBegriffe: [],
       },
       question: {
         fragetext:
-          "Sortiere die Vorbereitungsschritte in die sinnvolle Reihenfolge, bevor du das Zimmer betrittst.",
+          "Sortiere die Vorbereitungsschritte in die sinnvolle Reihenfolge, bevor du das Zimmer betrittst (FG SKM 2023: Daten → Plan → Material → Patient).",
         sequencing: {
           instruction:
-            "Bringe die Schritte in die richtige Reihenfolge.",
+            "Bringe die Schritte in die richtige Reihenfolge: erst Tagesplan/Termine prüfen, dann Patientendaten lesen, dann Begrüßung überlegen, zuletzt Material vorbereiten.",
           items: [
-            { id: "s1", label: "Ernährungsprotokoll der letzten 24h in der Akte anschauen" },
-            { id: "s2", label: "Beutelwechsel-Utensilien vorbereiten und bereitlegen" },
             { id: "s3", label: "Prüfen, ob Stomatherapeut Herr Baum heute bestätigt ist (Uhrzeit)" },
+            { id: "s1", label: "Ernährungsprotokoll der letzten 24h in der Akte anschauen" },
             { id: "s4", label: "Kurz überlegen, wie du Herrn Nguyen begrüßt (Tochter als Übersetzerin)" },
+            { id: "s2", label: "Beutelwechsel-Utensilien vorbereiten und bereitlegen" },
             { id: "s5", label: "Intimpflege-Set für Ganzkörperpflege bereitstellen" },
           ],
         },
@@ -331,49 +331,52 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
       stepId: "ce02-nguyen-info-opt3-heparin-ort",
       phase: 1,
       stepType: "mc",
-      bloomLevel: 2,
+      bloomLevel: 3,
       kompetenzbereich: "I.1",
-      quellen: ["Thiemes Pflege, 14. Aufl."],
+      quellen: [
+        "Pflege heute, 7. Aufl. (Heparin-Applikation post-OP)",
+        "FG SKM — Handlungsempfehlungen Stomapflege (2023)",
+      ],
       track: "vertiefung",
       modus: "challenge",
       lernziel: "ce02-nguyen-info-heparin",
       tag: "pflege",
       contentC1: {
-        title: "Heparin-Injektion: Wo und wie?",
-        body: "Herr Nguyen bekommt täglich Heparin (niedermolekulares Heparin, NMH) zur Thromboseprophylaxe. Wo werden diese subkutanen Injektionen standardmäßig gegeben?",
+        title: "Heparin-Injektion bei Herrn Nguyen: Wo?",
+        body: "Herr Nguyen bekommt täglich Heparin (niedermolekulares Heparin, NMH) zur Thromboseprophylaxe. Standard-Ort ist eigentlich die Bauchdecke periumbilikal (2–3 cm Abstand zum Nabel). ABER: Herr Nguyen hat eine frische Bauchdeckenwunde im unteren Abdomen und ein Kolostoma im linken Unterbauch. Ein Mindestabstand zur Wunde und zum Stoma ist Pflicht. Wo gibst du die Heparin-Spritze konkret bei Herrn Nguyen?",
         glossarBegriffe: ["niedermolekulares Heparin", "subkutan", "Thromboseprophylaxe"],
       },
       contentB1: {
-        title: "Heparin-Spritze — wo?",
-        body: "Herr Nguyen bekommt jeden Tag eine Heparin-Spritze. Heparin schützt vor Thrombose (= Blutgerinnsel in der Vene). Wo wird die Spritze gegeben?",
+        title: "Heparin-Spritze bei Herrn Nguyen — wo?",
+        body: "Herr Nguyen bekommt jeden Tag eine Heparin-Spritze. Heparin schützt vor Thrombose (= Blutgerinnsel in der Vene). Normal: Bauchdecke, 2–3 cm neben dem Nabel. Aber: Herr Nguyen hat eine frische Wunde am Bauch und ein Stoma. Wo gibst du die Spritze?",
         glossarBegriffe: ["Heparin", "Thrombose", "Spritze"],
       },
       question: {
         fragetext:
-          "Heparin-Injektionen zur Thromboseprophylaxe werden standardmäßig wo gegeben?",
+          "Bei Herrn Nguyen (frische Bauchdeckenwunde unten, Kolostoma links) — wo gibst du die Heparin-Spritze?",
         mcVariant: "standard",
         optionen: [
           {
-            text: "Oberschenkel innen",
+            text: "Bauchnabelnah, 2–3 cm Abstand zum Nabel — wie im Standard",
             isCorrect: false,
             explanation:
-              "Oberschenkel ist ein möglicher Ort — aber nicht der Standard. Der Oberschenkel wird bei einigen Produkten genutzt, Bauchdecke ist häufiger.",
+              "Periumbilikal ist der allgemeine Standard-Ort — aber bei Herrn Nguyen ist der Spielraum zu eng. Wunde unten + Stoma links = Mindestabstand 5 cm zu beiden lässt sich periumbilikal kaum einhalten. In dieser konkreten Situation weicht man auf laterale Oberschenkelaußenseite oder kontralateralen Oberbauch aus.",
             explanationB1:
-              "Nicht der Standard. Die Bauchdecke ist häufiger.",
+              "Nicht ideal bei Herrn Nguyen. Die Bauchdecke ist Standard — aber er hat dort eine Wunde und ein Stoma. Es gibt zu wenig Platz.",
           },
           {
-            text: "Bauchnabelnah, 2–3 cm Abstand zum Nabel",
+            text: "Laterale Oberschenkelaußenseite oder kontralateraler Oberbauch — mit ≥5 cm Abstand zu Wunde und Stoma",
             isCorrect: true,
             explanation:
-              "Richtig. Die Bauchdecke (periumbilikal, 2–3 cm Abstand zum Nabel) ist der Standardort für NMH-Injektionen. Bei Herrn Nguyen besondere Vorsicht: frische Bauchdeckenwunde, Stoma — die Injektionsstelle muss sorgfältig gewählt werden (gegenüberliegende Seite, keine gereizten Hautbereiche).",
+              "Richtig. Wenn die Bauchdecke wegen Wunde + Stoma nicht sicher nutzbar ist, weicht man auf alternative Standardorte aus: laterale Oberschenkelaußenseite (für NMH freigegeben) oder kontralateraler Oberbauch mit deutlich Abstand. Mindestabstand zu Wunde und Stoma ≥5 cm. Außerdem: Injektionsorte rotieren, gereizte oder hämatombelastete Stellen meiden. Quelle: Pflege heute 7. Aufl. (Heparin-Applikation post-OP); FG SKM 2023.",
             explanationB1:
-              "Richtig. Die Bauchdecke, 2–3 cm neben dem Bauchnabel. Bei Herrn Nguyen: Vorsicht wegen Wunde und Stoma — Injektionsstelle sorgfältig wählen.",
+              "Richtig. Wenn die Bauchdecke nicht geht (Wunde + Stoma) — dann seitlich am Oberschenkel oder oben am Bauch, weit weg von Wunde und Stoma. Mindestens 5 cm Abstand.",
           },
           {
             text: "Oberarm",
             isCorrect: false,
             explanation:
-              "Kein Standardort für Heparin-Injektionen. Der Oberarm eignet sich für andere subkutane Injektionen (z.B. Insulin bei einigen Patienten).",
+              "Kein Standardort für NMH-Injektionen. Der Oberarm eignet sich für andere subkutane Injektionen (z.B. Insulin bei einigen Patienten), nicht für niedermolekulares Heparin.",
             explanationB1:
               "Nicht richtig. Der Arm ist kein Standard für Heparin.",
           },

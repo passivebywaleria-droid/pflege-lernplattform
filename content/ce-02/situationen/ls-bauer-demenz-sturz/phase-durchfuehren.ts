@@ -30,12 +30,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
       displayFormat: "stepbystep",
       contentC1: {
         title: "Beruhigende Ganzkörperwaschung — Basale Stimulation",
-        body: "Was versteht man unter einer beruhigenden Ganzkörperwaschung im Sinne der Basalen Stimulation? 5 Prinzipien:\n\n1. Waschen in Haarwuchsrichtung — aktiviert das Körperschema des Patienten.\n2. Körpertemperatur-angepasstes Wasser (nicht zu kalt, nicht zu heiß).\n3. Von peripher nach zentral beginnen — Füße, Beine, Rumpf, dann Gesicht zuletzt.\n4. Jeden Handgriff kurz ankündigen — ruhige Stimme: \"Ich wasche jetzt deinen rechten Fuß.\"\n5. Pausieren wenn Abwehr kommt — nie gegen Widerstand waschen.\n\nQuelle: Bienstein C./Fröhlich A. (2021): Basale Stimulation in der Pflege. Huber.",
+        body: "Was versteht man unter einer beruhigenden Ganzkörperwaschung im Sinne der Basalen Stimulation? 5 Prinzipien:\n\n1. Bewegungen in Haarwuchsrichtung führen — von Schulter zur Hand, von Hüftgelenk zum Fuß. Das aktiviert das Körperschema des Patienten.\n2. Körpertemperatur-angepasstes Wasser (nicht zu kalt, nicht zu heiß).\n3. Reihenfolge nach Hygiene: vom sauberen zum unreinen Bereich (Gesicht/Augen zuerst, Genital- und Analbereich zuletzt) — innerhalb dieses Rahmens jeden Körperabschnitt in Haarwuchsrichtung waschen.\n4. Jeden Handgriff kurz ankündigen — ruhige Stimme: \"Ich wasche jetzt deinen rechten Arm.\"\n5. Pausieren wenn Abwehr kommt — nie gegen Widerstand waschen.\n\nQuelle: Bienstein C./Fröhlich A. (2021): Basale Stimulation in der Pflege. Huber. I Care Pflege, Kapitel Körperpflege.",
         glossarBegriffe: ["Basale Stimulation", "Körperschema", "beruhigende Waschung"],
       },
       contentB1: {
         title: "Wie wäscht man richtig bei Demenz?",
-        body: "Das nennt man beruhigende Waschung — eine Methode aus der Basalen Stimulation. 5 Regeln:\n\n1. Waschen in Richtung der Haare (= von oben nach unten am Arm).\n2. Wasser angenehm warm.\n3. Zuerst Füße, dann Beine, dann Rumpf, dann Gesicht.\n4. Immer ankündigen: \"Jetzt wasche ich deinen rechten Fuß.\"\n5. Wenn er sich wehrt: stoppen, warten.\n\nQuelle: Bienstein C./Fröhlich A. (2021).",
+        body: "Das nennt man beruhigende Waschung — eine Methode aus der Basalen Stimulation. 5 Regeln:\n\n1. Wasche in Richtung der Haare (z. B. von der Schulter zur Hand).\n2. Wasser angenehm warm.\n3. Reihenfolge nach Hygiene: erst Gesicht (sauber), zuletzt Genital- und Analbereich (unrein).\n4. Immer ankündigen: \"Jetzt wasche ich deinen rechten Arm.\"\n5. Wenn er sich wehrt: stoppen, warten.\n\nQuelle: Bienstein C./Fröhlich A. (2021).",
         glossarBegriffe: ["Basale Stimulation", "beruhigende Waschung", "ankündigen"],
       },
     },
@@ -217,7 +217,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
             {
               id: "e2",
               label:
-                "Kniebeugen im Bett (passiv, bis zur schmerzfreien Grenze — BESD beachten)",
+                "Passive Knieflexion im Bett (Beugung im Kniegelenk, bis zur schmerzfreien Grenze — BESD beachten)",
             },
             {
               id: "e3",
@@ -278,9 +278,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
             text: "Feuchte Mundschwämmchen oder Wattestäbchen sanft auf die Mundschleimhaut auftragen",
             isCorrect: true,
             explanation:
-              "Richtig. Befeuchtung der Schleimhaut mit feuchten Wattestäbchen oder Mundschwämmchen ist schonend, kooperativ möglich, günstig und sicher. Kein Aspirationsrisiko, keine ärztliche Anordnung nötig. Ideal bei Trinkverweigerung.",
+              "Richtig. Befeuchtung der Schleimhaut mit feuchten Wattestäbchen oder Mundschwämmchen ist schonend, kooperativ möglich, günstig. Bei sachgerechter Anwendung (Schwämmchen festsitzend, Pflegekraft führt, Patient nicht alleine lassen) ist das Aspirationsrisiko gering — bei Schluckbeißen oder Beißen kann sich der Schwamm ablösen (FDA-Warnung 2017), deshalb sicheren Sitz prüfen und nicht alleine lassen. Keine ärztliche Anordnung nötig. Ideal bei Trinkverweigerung.",
             explanationB1:
-              "Richtig. Feuchte Wattestäbchen oder Schwämmchen befeuchten den Mund sanft. Er muss dabei nicht schlucken. Kein Risiko. Kein Arzt nötig.",
+              "Richtig. Feuchte Wattestäbchen oder Schwämmchen befeuchten den Mund sanft. Er muss dabei nicht schlucken. Wichtig: Du hältst den Schwamm fest und bleibst dabei — sonst kann sich ein Stück lösen (kleines Aspirationsrisiko). Kein Arzt nötig.",
           },
           {
             text: "Zähne zweimal täglich bürsten mit Fluorid-Zahnpasta, auch wenn er sich wehrt",
@@ -346,6 +346,14 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
             feedbackB1:
               "Richtig. Du pausierst kurz. Dann versuchst du es anders: Mit ruhiger Stimme erklären. Mit Musik. Langsamer. Das nennt sich: Strategie wechseln statt aufgeben.",
             isCorrect: true,
+          },
+          {
+            text: "Wir setzen ihn trotz Schreien zügig auf den Bettrand — je schneller, desto kürzer der Stress für ihn.",
+            feedback:
+              "Falsch. Mobilisation gegen massive Abwehr ist Zwang — kinästhetisch und ethisch nicht vertretbar. Sturzrisiko steigt (er kann sich entwinden, fallen), Vertrauensverlust ist sicher, BESD verschlechtert sich. \"Schnell hinter sich bringen\" ist kein anerkanntes Prinzip — Kinästhetik nach Hatch/Maietta verlangt: Patient bewegt sich selbst, Pflege begleitet im Tempo des Patienten.",
+            feedbackB1:
+              "Falsch. Schnell und gegen seinen Willen ist Zwang. Das ist gefährlich — er kann sich wehren, runterfallen. Und: Er verliert Vertrauen in dich. Bei Demenz: nie schneller machen als der Patient mitkommt.",
+            isCorrect: false,
           },
         ],
       },
@@ -428,12 +436,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "3 Minuten: Herrn Bauer zum Trinken bewegen",
-        body: "Du hast 3 Minuten Zeit, Herrn Bauer zum Trinken zu bewegen — ohne Aufforderung, ohne Druck. Du hast: eine Tasse Malzbier (aus Biographie bekannt), Geduld und seine Hand. Was tust du? Schreibe nach dem Timer auf, wie du es gemacht hast.",
+        body: "Du hast 3 Minuten Zeit, Herrn Bauer zum Trinken zu bewegen — ohne Aufforderung, ohne Druck. Du hast: eine Tasse alkoholfreies Malzgetränk (Malzbier ohne Alkohol — Mirtazapin verbietet Alkohol), Geduld und seine Hand. Was tust du? Schreibe nach dem Timer auf, wie du es gemacht hast.",
         glossarBegriffe: ["Trinkmanagement bei Demenz", "Biographiearbeit"],
       },
       contentB1: {
         title: "3 Minuten: Herrn Bauer trinken lassen",
-        body: "Du hast 3 Minuten. Du willst Herrn Bauer zum Trinken bringen — aber ohne zu sagen: 'Trinken Sie!' Das klappt nicht. Du hast: Malzbier in einer Tasse, Geduld, seine Hand. Was machst du?",
+        body: "Du hast 3 Minuten. Du willst Herrn Bauer zum Trinken bringen — aber ohne zu sagen: 'Trinken Sie!' Das klappt nicht. Du hast: alkoholfreies Malzbier in einer Tasse, Geduld, seine Hand. Was machst du?",
         glossarBegriffe: ["Trinken", "Biographie", "Demenz"],
       },
       question: {

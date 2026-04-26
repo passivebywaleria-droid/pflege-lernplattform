@@ -234,7 +234,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
             },
             {
               id: "p4",
-              text: "Mirtazapin-Dosis prüfen lassen (sediert, erhöht Sturzrisiko)",
+              text: "Mirtazapin-Dosis prüfen lassen (Antidepressivum mit dosisabhängiger Sedierung, PRISCUS-Liste — Sturzrisiko)",
               correctQuadrant: 2,
             },
             {
@@ -269,12 +269,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       displayFormat: "checklist",
       contentC1: {
         title: "Trinkmenge erhöhen bei Demenz — 5 Strategien",
-        body: "Herr Bauer trinkt auf Aufforderung nicht. Wie erhöhst du die Trinkmenge trotzdem? 5 Strategien die funktionieren:\n\n✓ Tasse in die Hand geben — nicht bitten: Er trinkt bereitwilliger wenn er eine Tasse in der Hand hält.\n✓ Lieblingsgetränk: Malzbier (aus Biographie bekannt) bereitstellen — erhöht Trinkmotivation.\n✓ Trinken im sozialen Kontext: Frühstück, Mittagessen — kein isoliertes Trinken.\n✓ Flüssigkeitsreiche Lebensmittel: Suppe, Joghurt, Wassermelone — zählen zur Flüssigkeitsbilanz.\n✓ Miktionsprotokoll führen — um die Tendenz zu erkennen und den Plan zu justieren.\n\nQuelle: DNQP Förderung der Harnkontinenz (2014).",
+        body: "Herr Bauer trinkt auf Aufforderung nicht. Wie erhöhst du die Trinkmenge trotzdem? 5 Strategien die funktionieren:\n\n✓ Tasse in die Hand geben — nicht bitten: Er trinkt bereitwilliger wenn er eine Tasse in der Hand hält.\n✓ Lieblingsgetränk: alkoholfreies Malzgetränk (Malzbier, Malztrunk — nicht zu verwechseln mit alkoholhaltigem Bier; Alkohol wäre wegen Mirtazapin kontraindiziert) aus Biographie bereitstellen — erhöht Trinkmotivation.\n✓ Trinken im sozialen Kontext: Frühstück, Mittagessen — kein isoliertes Trinken.\n✓ Flüssigkeitsreiche Lebensmittel: Suppe, Joghurt, Wassermelone — zählen zur Flüssigkeitsbilanz.\n✓ Miktionsprotokoll führen — um die Tendenz zu erkennen und den Plan zu justieren.\n\nQuelle: DNQP Förderung der Harnkontinenz (2014).",
         glossarBegriffe: ["Flüssigkeitsbilanz", "Miktionsprotokoll", "Exsikkose"],
       },
       contentB1: {
         title: "Wie trinkt Herr Bauer mehr?",
-        body: "Herr Bauer trinkt nicht, wenn man ihn bittet. Wie geht das trotzdem? 5 Strategien:\n\n✓ Tasse in die Hand geben — er trinkt dann besser.\n✓ Malzbier anbieten — das mag er (aus seiner Lebensgeschichte bekannt).\n✓ Beim Essen trinken — nicht alleine.\n✓ Suppe und Joghurt geben — das zählt auch als Trinken.\n✓ Aufschreiben wie viel er trinkt — dann weißt du wie es sich verändert.",
+        body: "Herr Bauer trinkt nicht, wenn man ihn bittet. Wie geht das trotzdem? 5 Strategien:\n\n✓ Tasse in die Hand geben — er trinkt dann besser.\n✓ Alkoholfreies Malzgetränk (Malzbier ohne Alkohol) anbieten — das mag er (aus seiner Lebensgeschichte). Wichtig: Kein Alkohol — er nimmt Mirtazapin.\n✓ Beim Essen trinken — nicht alleine.\n✓ Suppe und Joghurt geben — das zählt auch als Trinken.\n✓ Aufschreiben wie viel er trinkt — dann weißt du wie es sich verändert.",
         glossarBegriffe: ["Flüssigkeit", "Exsikkose"],
       },
     },
@@ -313,7 +313,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
               "Ein Bettgitter darf bei Herrn Bauer ohne Genehmigung hochgestellt werden, wenn er in der Nacht weglaufen will.",
             isTrue: false,
             explanation:
-              "Falsch — Bettgitter ist eine freiheitsentziehende Maßnahme. § 1831 BGB verlangt richterliche Genehmigung oder Einwilligung des rechtlichen Betreuers. Nur im Notfall (akute Sturz-Gefahr) kurzzeitig erlaubt.",
+              "Falsch — Bettgitter ist eine freiheitsentziehende Maßnahme. § 1831 BGB verlangt richterliche Genehmigung oder Einwilligung des rechtlichen Betreuers. Nur in unmittelbarer Notlage (akute Selbstverletzungs- oder Lebensgefahr, rechtfertigender Notstand nach § 34 StGB) kurzzeitig erlaubt — danach muss umgehend eine richterliche Genehmigung beantragt werden. \"Akute Sturzgefahr\" als Dauerzustand bei Demenz reicht hierfür nicht aus.",
           },
           {
             statement:

@@ -51,7 +51,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_EVALUIEREN: SituationsPhase = {
             correctCategory: 0,
           },
           {
-            text: "Rückenlage beim Schlafen",
+            text: "Rückenlage beim Schlafen heute durchgehend umgesetzt",
             correctCategory: 0,
           },
           {
@@ -71,7 +71,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_EVALUIEREN: SituationsPhase = {
             correctCategory: 2,
           },
           {
-            text: "Mutter Laura beim Wickeln anleiten",
+            text: "Mutter Laura aktiv beim Wickeln anleiten — bisher nur beim Baden begleitet",
             correctCategory: 2,
           },
         ],

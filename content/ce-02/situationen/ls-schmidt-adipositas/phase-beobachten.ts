@@ -48,7 +48,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
               "Wer adipös ist (BMI ≥ 30), kann nicht gleichzeitig an Proteinmangelernährung leiden. Ein hoher BMI zeigt ausreichende Nährstoffversorgung an.",
             isTrue: false,
             explanation:
-              "Falsch. Das ist das zentrale Paradox dieser Situation. Adipositas bedeutet: zu viel Energie (Kalorien) gespeichert. Aber der Körper braucht nicht nur Energie — er braucht Protein für Wundheilung, Immunabwehr und Ödemprophylaxe. Fertigprodukte enthalten viel Kohlenhydrate und Fett, aber oft wenig Protein. Frau Schmidt hat BMI 38 — und Albumin 31 g/l (Norm: 35–52 g/l). Adipositas ≠ gut ernährt. (Cederholm et al., GLIM-Kriterien, 2019)",
+              "Falsch. Das ist das zentrale Paradox dieser Situation. Adipositas bedeutet: zu viel Energie (Kalorien) gespeichert. Aber der Körper braucht nicht nur Energie — er braucht Protein für Wundheilung, Immunabwehr und Ödemprophylaxe. Fertigprodukte enthalten viel Kohlenhydrate und Fett, aber oft wenig Protein. Frau Schmidt hat BMI 38 — und Albumin 31 g/l (Norm: 35–52 g/l). Wichtig: Albumin ist ein HINWEIS, kein Beweis — bei Akuterkrankung/Inflammation sinkt Albumin auch ohne reine Proteinmangel-Ursache (Akut-Phase-Negativ-Protein). Deshalb gehört zur Diagnose immer das NRS-2002-Screening und im zweiten Schritt die GLIM-Kriterien. (Cederholm et al., GLIM-Kriterien, 2019)",
           },
         ],
       },
@@ -61,7 +61,11 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
       stepType: "sequencing",
       bloomLevel: 3,
       kompetenzbereich: "I.1",
-      quellen: ["DDG Praxisempfehlungen Diabetes 2023"],
+      quellen: [
+        "DDG (2023): Praxisempfehlungen Diabetes Typ 2",
+        "RKI-KRINKO (2016): Händehygiene in Einrichtungen des Gesundheitswesens",
+        "§ 630e BGB — Aufklärungspflicht vor medizinischer Maßnahme",
+      ],
       track: "basis",
       modus: "puzzle",
       lernziel: "ce02-schmidt-beob-bz-messen",
@@ -80,10 +84,11 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
         fragetext:
           "Bringe die Schritte zum Blutzucker-Messen in die richtige Reihenfolge.",
         sequencing: {
-          instruction: "Richtige Reihenfolge für die BZ-Messung bei Frau Schmidt.",
+          instruction:
+            "Richtige Reihenfolge für die BZ-Messung bei Frau Schmidt. Wichtig: Aufklärung kommt zuerst (§ 630e BGB), erst danach Hygiene-Vorbereitung (RKI 2016).",
           items: [
-            { id: "bz1", label: "Hände waschen und Handschuhe anziehen" },
-            { id: "bz2", label: "Frau Schmidt informieren: \"Ich messe jetzt Ihren Blutzucker\"" },
+            { id: "bz1", label: "Frau Schmidt informieren: \"Ich messe jetzt Ihren Blutzucker\" und Einverständnis abwarten" },
+            { id: "bz2", label: "Hände waschen und Handschuhe anziehen" },
             { id: "bz3", label: "Fingerkuppe seitlich stechen — nicht die Mitte (weniger schmerzhaft)" },
             { id: "bz4", label: "Bluttropfen auf den Teststreifen auftragen" },
             { id: "bz5", label: "Ergebnis ablesen und dokumentieren (187 mg/dl nüchtern)" },

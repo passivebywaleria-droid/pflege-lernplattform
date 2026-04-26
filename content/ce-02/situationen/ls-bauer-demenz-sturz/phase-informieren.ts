@@ -109,12 +109,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       displayFormat: "stepbystep",
       contentC1: {
         title: "Validation: Wie öffne ich die Tür?",
-        body: "Du stehst vor Herrn Bauers Zimmer. Bevor du eintrittst: Was ist der richtige Zugang bei einem Menschen mit Demenz nach einem nächtlichen Sturz? Die Validation nach Naomi Feil gibt 5 Prinzipien:\n\n1. Gefühle ernst nehmen — nicht korrigieren. Sag nicht: \"Sie sind nicht in der Werkstatt.\" Das erhöht Angst.\n2. In der emotionalen Realität des Menschen ankommen — wenn er denkt, er muss arbeiten, höre zu.\n3. Ruhige Stimme und Augenhöhe — nicht von oben sprechen.\n4. Namen benutzen: \"Herr Bauer\" — persönlich, nicht abstrakt.\n5. Kurze, einfache Sätze — nicht erklären, nicht argumentieren.\n\nQuelle: Feil N. / de Klerk-Rubin V. (2012): Validation. Reinhardt-Verlag.",
+        body: "Du stehst vor Herrn Bauers Zimmer. Bevor du eintrittst: Was ist der richtige Zugang bei einem Menschen mit Demenz nach einem nächtlichen Sturz? Validation nach Feil arbeitet mit 14 Techniken (Zentrieren, Reformulieren, Spiegeln, Berührung u. a.). Für die Praxis lassen sich daraus folgende Grundprinzipien ableiten (vereinfacht nach Feil 2012):\n\n1. Gefühle ernst nehmen — nicht korrigieren. Sag nicht: \"Sie sind nicht in der Werkstatt.\" Das erhöht Angst.\n2. In der emotionalen Realität des Menschen ankommen — wenn er denkt, er muss arbeiten, höre zu.\n3. Ruhige Stimme und Augenhöhe — nicht von oben sprechen.\n4. Namen benutzen: \"Herr Bauer\" — persönlich, nicht abstrakt.\n5. Kurze, einfache Sätze — nicht erklären, nicht argumentieren.\n\nQuelle: Feil N. / de Klerk-Rubin V. (2012): Validation. Reinhardt-Verlag.",
         glossarBegriffe: ["Validation", "Demenz", "Desorientierung"],
       },
       contentB1: {
         title: "Wie gehe ich zu Herrn Bauer?",
-        body: "Du gehst gleich zu Herrn Bauer. Wie machst du das richtig? Das nennt man Validation (= den Menschen so nehmen, wie er ist). Naomi Feil hat 5 Regeln:\n\n1. Nimm seine Gefühle ernst. Sage nicht: \"Du bist nicht in der Werkstatt.\" Das macht Angst.\n2. Gehe in seine Welt. Er glaubt, er muss arbeiten? Höre zu.\n3. Sprich ruhig. Gehe auf Augenhöhe.\n4. Sage seinen Namen: \"Herr Bauer\".\n5. Sprich kurze, einfache Sätze.\n\nBeispiel richtig: \"Herr Bauer, ich sehe, du hast heute viel zu tun. Ich bin [dein Name]. Ich schaue kurz nach dir.\"",
+        body: "Du gehst gleich zu Herrn Bauer. Wie machst du das richtig? Das nennt man Validation (= den Menschen so nehmen, wie er ist). Vereinfacht nach Naomi Feil — 5 Grundregeln:\n\n1. Nimm seine Gefühle ernst. Sage nicht: \"Du bist nicht in der Werkstatt.\" Das macht Angst.\n2. Gehe in seine Welt. Er glaubt, er muss arbeiten? Höre zu.\n3. Sprich ruhig. Gehe auf Augenhöhe.\n4. Sage seinen Namen: \"Herr Bauer\".\n5. Sprich kurze, einfache Sätze.\n\nBeispiel richtig: \"Herr Bauer, ich sehe, du hast heute viel zu tun. Ich bin [dein Name]. Ich helfe dir heute früh.\"",
         glossarBegriffe: ["Validation", "Demenz"],
       },
     },
@@ -167,18 +167,18 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
                   "Das ist falsch bei Demenz. Wenn du seine Realität korrigierst, macht er mehr Angst. Er versteht die Korrektur nicht — er fühlt nur Bedrohung.",
               },
               {
-                text: "\"Herr Bauer, ich sehe — heute haben Sie viel zu tun. Ich bin [Name]. Ich schaue kurz nach Ihnen.\"",
+                text: "\"Herr Bauer, ich sehe — heute haben Sie viel zu tun. Ich bin [Name]. Ich helfe Ihnen heute früh und bleibe ein bisschen bei Ihnen.\"",
                 textB1:
-                  "\"Herr Bauer, ich sehe, du hast heute viel zu tun. Ich bin [Name]. Ich schaue kurz nach dir.\"",
+                  "\"Herr Bauer, ich sehe, du hast heute viel zu tun. Ich bin [Name]. Ich helfe dir heute früh und bleibe ein bisschen bei dir.\"",
                 patientResponse:
                   "Herr Bauer schaut dich an. Seine Stimme wird etwas leiser. Er sagt: \"Ja... die Bestellung...\" und schaut zur Seite.",
                 patientResponseB1:
                   "Herr Bauer schaut dich an. Er wird etwas ruhiger. Er sagt: \"Ja... die Bestellung...\"",
                 score: 3,
                 feedback:
-                  "Validierend, nicht korrigierend. Du bestätigst seine Realität (\"du hast viel zu tun\"), stellst dich vor und kündigst deinen Besuch an. Kontakt hergestellt. Das ist Validation in der Praxis.",
+                  "Validierend, nicht korrigierend. Du bestätigst seine Realität (\"du hast viel zu tun\"), stellst dich vor und kündigst wahrhaftig an, was passiert (\"helfe dir heute früh, bleibe ein bisschen\"). Bei Demenz ist Verlässlichkeit zentral (DNQP Beziehungsgestaltung Demenz 2018) — Floskeln wie \"ich schaue kurz\" werden später als Vertrauensbruch erlebt, wenn die volle Morgenpflege folgt.",
                 feedbackB1:
-                  "Sehr gut. Du nimmst ihn ernst. Du sagst: 'Du hast viel zu tun' — das ist seine Welt. Du stellst dich vor. Er hört dir zu.",
+                  "Sehr gut. Du nimmst ihn ernst. Du sagst: 'Du hast viel zu tun' — das ist seine Welt. Du sagst ehrlich, was du tust (helfen, bleiben). Bei Demenz ist Wahrhaftigkeit wichtig — sage nie 'ich schaue kurz', wenn du in Wahrheit eine ganze Pflege machst.",
               },
               {
                 text: "\"Guten Morgen, Herr Bauer. Wie geht es Ihnen heute?\"",
@@ -242,7 +242,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
               backB1: "Pflege: Du hilfst beim Waschen und Anziehen. Kurze, ruhige Sätze.",
             },
             {
-              front: "FAST-Stufe 6a (= Herr Bauer): Schwere Demenz — kann sich nicht mehr selbst anziehen. Desorientierung zu Ort, Zeit, Situation. Nachtaktivität, Weglauftendenz.",
+              front: "FAST-Stufe 6a (= Herr Bauer): Schwere Demenz — Schwierigkeiten beim korrekten Anziehen (z. B. falsche Reihenfolge, falsche Seite, anziehen ist möglich, aber inkorrekt). Desorientierung zu Ort, Zeit, Situation. Nachtaktivität, Weglauftendenz.",
               back: "Pflege: Validation, Basale Stimulation, Nachtlichtsensor, Niedrigbett. Aggression = Angst, keine Böswilligkeit.",
               backB1: "Pflege: Validation nutzen. Ruhige Berührungen. Nachtlicht. Er schlägt aus Angst — nicht aus Böswilligkeit.",
             },

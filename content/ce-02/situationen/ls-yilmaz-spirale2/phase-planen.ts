@@ -148,17 +148,19 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
         "Medical illustration of 135 degree oblique side lying position for pressure injury prevention, patient with pillows under thorax, between knees, under lower legs, hospital bed side view, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Warum 135°-Schräge Seitenlage beim Sakrum-Dekubitus?",
-        body: "Die klassische 90°-Seitenlage verlagert den Druck auf den Trochanter major (Oberschenkelknochen seitlich) — ebenfalls ein Prädilektionsort für Dekubitus. Die 135°-Schräge Seitenlage verteilt das Gewicht auf Gesäßmuskulatur und Oberschenkelrückseite — Flächen mit mehr Weichteilpolster über dem Knochen. Kissen: eines unter die Brust (Stabilisierung des Rumpfes), eines zwischen die Beine (Beinentlastung, Hüftgelenk-Schutz TEP!), eines unter den Unterschenkel (Fersenfreistellung), eines an der Rückseite (verhindert Zurückrollen). Konsequenz für Frau Yilmaz: Diese Lagerung kostet 5 Minuten mehr — ist aber entscheidend für die Entlastung des Sakrums. Quelle: (NPUAP/EPUAP/PPPIA 2019)",
+        body: "Die klassische 90°-Seitenlage verlagert den Druck auf den Trochanter major (Oberschenkelknochen seitlich) — ebenfalls ein Prädilektionsort für Dekubitus. Bei Frau Yilmaz mit Hüft-TEP rechts kommt hinzu: Eine 90°-Lage auf der rechten Seite würde direkt auf die OP-Region drücken — also doppelt zu vermeiden. Die 135°-Schräge Seitenlage verteilt das Gewicht auf Gesäßmuskulatur und Oberschenkelrückseite — Flächen mit mehr Weichteilpolster über dem Knochen.\n\n**Wichtig: Seite richtig wählen.** Bei Hüft-TEP rechts → 135°-Schräglage auf die **linke** Seite (kontralateral, also Gegenseite zur OP). Die operierte Hüfte bleibt oben in leichter Abduktion (Kissen zwischen den Knien) — keine Adduktion, keine Innenrotation, keine Hüftbeugung über 90°. Diese Lagerungsregeln gelten typischerweise für die ersten 6-12 Wochen post-OP.\n\nKissen: eines unter die Brust (Stabilisierung des Rumpfes), eines zwischen die Beine (Beinentlastung + TEP-Abduktionsschutz), eines unter den Unterschenkel (Fersenfreistellung), eines an der Rückseite (verhindert Zurückrollen). Konsequenz für Frau Yilmaz: Diese Lagerung kostet 5 Minuten mehr — ist aber entscheidend für die Entlastung des Sakrums UND den Schutz der OP-Hüfte. Quelle: (NPUAP/EPUAP/PPPIA 2019; postoperative TEP-Lagerung)",
         glossarBegriffe: [
           "135°-Schräge Seitenlage",
           "Trochanter major",
           "Prädilektionsstelle",
+          "Kontralateral",
+          "Abduktion",
         ],
       },
       contentB1: {
         title: "Warum 135°-Seitenlage?",
-        body: "Wenn man ganz auf die Seite liegt (90°): Der Druck geht auf den Oberschenkelknochen von der Seite. Das ist auch eine gefährliche Stelle für Dekubitus. Bei 135° liegt man schräger: Das Gewicht verteilt sich auf die Gesäßmuskeln. Viel Fleisch und Muskel schützen den Knochen besser. Kissen: eins unter die Brust (Stabilisierung), eins zwischen die Beine (wichtig für Frau Yilmaz' Hüft-OP!), eins unter den Unterschenkel (Fersen frei), eins am Rücken (damit sie nicht zurückrollt). Das dauert 5 Minuten länger — aber es hilft.",
-        glossarBegriffe: ["135°-Seitenlage"],
+        body: "Bei 90°-Seitenlage drückt das Gewicht auf den Oberschenkelknochen seitlich. Das ist auch eine gefährliche Stelle für Dekubitus. Bei 135° liegt man schräger: Das Gewicht verteilt sich auf die Gesäßmuskeln. Viel Fleisch und Muskel schützen den Knochen besser.\n\n**Wichtig: Auf welcher Seite?** Frau Yilmaz hat Hüft-OP rechts. Das heißt: Sie liegt auf der **linken** Seite (die nicht-operierte Seite). Die operierte Hüfte ist oben. Niemals auf der operierten Seite liegen — das tut der OP-Stelle weh.\n\nKissen: eins unter die Brust (Stabilisierung), eins zwischen die Beine (wichtig: hält die operierte Hüfte in der richtigen Position!), eins unter den Unterschenkel (Fersen frei), eins am Rücken (damit sie nicht zurückrollt). Das dauert 5 Minuten länger — aber es hilft.",
+        glossarBegriffe: ["135°-Seitenlage", "Kontralateral"],
       },
     },
 

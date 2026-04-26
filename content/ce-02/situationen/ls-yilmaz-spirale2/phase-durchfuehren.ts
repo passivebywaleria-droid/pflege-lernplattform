@@ -41,10 +41,11 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
         fragetext:
           "Sortiere die Vorbereitungsschritte für den aseptischen Verbandwechsel in die richtige Reihenfolge.",
         sortItems: [
+          "Patientin informieren was jetzt passiert (Aufklärung vor Manipulation, § 630e BGB)",
           "Händedesinfektion (30 Sekunden, alle Areale)",
           "Material am Bett bereitstellen (sterile Unterlage, Hydrokolloid passender Größe, sterile Handschuhe, NaCl 0,9%)",
-          "Patientin informieren was jetzt passiert",
           "Alten Verband mit sauberem Handschuh entfernen und Befund prüfen",
+          "Sauberen Handschuh ausziehen, erneute Händedesinfektion, sterile Handschuhe anziehen",
           "Wunde inspizieren — ggf. Befund dokumentieren",
           "Wunde spülen mit NaCl 0,9% (Spülen, nicht Wischen)",
           "Neuen Verband auflegen und Dokumentation",
@@ -66,7 +67,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "Wundzustand beschreiben — wie in echter Dokumentation",
-        body: "Nach der Verband-Abnahme beurteilst du die Wunde erneut. Fülle den Lückentext aus — mit den Originalkriterien der Wunddokumentation. Bloom 4.",
+        body: "Erst-Verbandwechsel Tag 14 — direkt nach Entdeckung des Befundes. Nach der Verband-Abnahme beurteilst du die Wunde erneut. Fülle den Lückentext aus — mit den Originalkriterien der Wunddokumentation. Bloom 4.",
         glossarBegriffe: [
           "Wundgrund",
           "Wundrand",
@@ -77,7 +78,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       },
       contentB1: {
         title: "Wundbeschreibung ausfüllen",
-        body: "Fülle die Lücken aus. Die Antworten kennst du aus dem Befund von Frau Yilmaz.",
+        body: "Heute ist Tag 14 — der erste Verbandwechsel direkt nach der Entdeckung. Fülle die Lücken aus. Die Antworten kennst du aus dem Befund von Frau Yilmaz.",
         glossarBegriffe: ["Wundgrund", "Wundrand"],
       },
       question: {
@@ -179,9 +180,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       tag: "anatomie",
       bildkategorie: "prozedur",
       imageAlt:
-        "Frau Yilmaz in 135°-Schräger Seitenlage mit 4 Kissen, beschriftbare Kissen-Positionen",
+        "Frau Yilmaz in 135°-Schräger Seitenlage auf der linken (nicht-operierten) Seite, Hüft-TEP rechts oben, mit 4 Kissen, beschriftbare Kissen-Positionen",
       bildhinweis:
-        "Patient in 135 degree oblique side lying position with 4 numbered pillow positions to label, under thorax, between knees, under lower legs, behind back, clinical illustration, copic marker sketch, absolutely no text no labels no words",
+        "Patient lying on left side (non-operated side, hip-TEP right side up) in 135 degree oblique side lying position with 4 numbered pillow positions to label: under thorax, between knees (abduction wedge for hip-TEP), under lower legs (heel offloading), behind back (anti-roll), clinical illustration, copic marker sketch, absolutely no text no labels no words",
       contentC1: {
         title: "135°-Seitenlage korrekt beschriften",
         body: "Beschrifte die 4 Kissen-Positionen korrekt. Beachte die Besonderheit bei Frau Yilmaz (Hüft-TEP rechts!). Quelle: (NPUAP/EPUAP/PPPIA 2019 + postoperative TEP-Lagerung)",

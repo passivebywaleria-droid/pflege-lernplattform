@@ -145,12 +145,12 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
               "Das ist gefährlich! Die Akte sagt: Dysphagie Grad 2. Dünne Flüssigkeit kann in die Lunge kommen. Erst Akte lesen — dann handeln.",
           },
           {
-            text: "Ich lese erst den GUSS-Befund aus der Akte (Dysphagie Grad 2), nehme dann angedickte Flüssigkeit Level 2 und beobachte: Hustet er? Feuchte Stimme? Verschluckt er sich?",
+            text: "Ich lese den GUSS-Befund aus der Akte (Dysphagie Grad 2), übernehme die ärztlich/logopädisch verordnete Konsistenz (IDDSI Level 2) und beobachte beim regulären Frühstück konkret: Hustet er? Feuchte Stimme? Verschluckt er sich?",
             isCorrect: true,
             feedback:
-              "Richtig vorgegangen. Akte → GUSS-Befund → Entscheidung → Beobachtung. Die Beobachtungskriterien sind klinisch relevant: Husten = aktive Schutzreaktion, feuchte Stimme nach dem Schlucken = stille Aspiration möglich (Flüssigkeit in der Stimmritze), Verschlucken = offensichtliches Aspirationsereignis. Alle drei müssen aktiv geprüft werden. (GUSS Trapl 2007; IDDSI 2019)",
+              "Richtig vorgegangen. Akte → GUSS-Befund → Verordnung übernehmen → Beobachtung bei regulärer Nahrungsgabe. Wichtig: GUSS wird durch geschultes Personal (Schlucktherapie/geschulte Pflege) durchgeführt — er ist hier bereits gemacht (Grad 2 dokumentiert). Pflegerische Aufgabe ist Anreichen nach Verordnung + kontinuierliche Beobachtung der Schluckzeichen, kein erneuter eigenständiger Schluckversuch. Husten = aktive Schutzreaktion, feuchte Stimme nach dem Schlucken = stille Aspiration möglich, Verschlucken = offensichtliches Aspirationsereignis. (GUSS Trapl 2007; IDDSI 2019; DGG/DGN 2020)",
             feedbackB1:
-              "Richtig. Erst Akte lesen. Dann angedickte Flüssigkeit. Dann genau hinschauen: Hustet er? Klingt die Stimme feucht? Das sind wichtige Zeichen.",
+              "Richtig. Erst Akte lesen. Du machst keinen neuen Schluck-Test — der ist schon gemacht. Du gibst die angedickte Flüssigkeit beim Frühstück nach Verordnung und schaust genau hin: Hustet er? Klingt die Stimme feucht? Das sind wichtige Zeichen.",
           },
           {
             text: "Ich frage den Arzt bevor ich irgendetwas tue — Schluckstatus ist Arztaufgabe.",
@@ -181,14 +181,14 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
       tag: "krankheitslehre",
       displayFormat: "stepbystep",
       contentC1: {
-        title: "Lungenbeobachtung — 4 Schritte",
-        body: "Pneumonieprophylaxe beginnt mit Beobachtung. Als Pflegekraft hörst du auf grobe Auffälligkeiten — kein ärztliches Auskultieren, aber aktive Beurteilung.\n\n1) Atemfrequenz zählen: 15 Sek × 4 = Atemzüge/Min. Norm: 12-18/Min. Abweichung dokumentieren.\n2) Atemtiefe beobachten: flache vs. tiefe Atmung. Schlaganfall-Patienten atmen oft flach — Atelektasegefahr.\n3) Stethoskop: Atemgeräusche beidseits vergleichen. Klingt eine Seite leiser? Rasseln oder Giemen?\n4) Husten und Sekret: Ist Husten möglich? Farbe des Sekrets (klar = normal, gelb/grün = Infektion möglich).\n\nBefund Herr Petrov: Atemfrequenz 17/Min, leicht vermindertes Atemgeräusch rechts basal, kein Auswurf. → Pneumonieprophylaxe weiterführen.",
-        glossarBegriffe: ["Atelektase", "Auskultation", "Pneumonie", "Sekret"],
+        title: "Atembeobachtung — 4 Schritte",
+        body: "Pneumonieprophylaxe beginnt mit pflegerischer Atembeobachtung. Auskultation mit dem Stethoskop ist ärztliche Aufgabe — Pflege beobachtet strukturiert und dokumentiert Auffälligkeiten.\n\n1) Atemfrequenz zählen: 15 Sek × 4 = Atemzüge/Min. Norm: 12-18/Min. Abweichung dokumentieren.\n2) Atemtiefe beobachten: flache vs. tiefe Atmung. Schlaganfall-Patienten atmen oft flach — Atelektasegefahr.\n3) Hörbare Atemgeräusche am Bett: Klingt die Atmung normal? Hörst du Rasseln, Giemen oder Brodeln ohne Stethoskop? Gibt es eine sichtbare Seitendifferenz der Atemexkursion?\n4) Husten und Sekret: Ist Husten möglich? Farbe des Sekrets (klar = normal, gelb/grün = Infektion möglich), Hautfarbe (Lippen, Akren).\n\nBefund Herr Petrov: Atemfrequenz 17/Min, hörbares Atemgeräusch unauffällig, leicht reduzierte Atemexkursion rechts, kein Auswurf, keine Zyanose. → Pneumonieprophylaxe weiterführen, bei Auffälligkeiten ärztliche Auskultation veranlassen. (KRINKO 2013; PflBG-Kompetenzen)",
+        glossarBegriffe: ["Atelektase", "Atemexkursion", "Pneumonie", "Sekret"],
       },
       contentB1: {
-        title: "Die Lunge beobachten — 4 Schritte",
-        body: "Du beobachtest die Lunge von Herrn Petrov. 4 Schritte:\nSchritt 1: Zähle die Atemzüge in 15 Sekunden. Dann × 4. Normal sind 12-18 pro Minute.\nSchritt 2: Atmet er tief oder flach?\nSchritt 3: Du hörst mit dem Stethoskop. Klingt es normal? Hörst du ein Rasseln?\nSchritt 4: Hustet er? Kommt Sekret (= Schleim) heraus?\nBefund bei Herrn Petrov: 17 Atemzüge pro Minute. Rechts unten: leise. Kein Husten.\nDeshalb machst du weiter mit der Pneumonie-Prophylaxe (= Lungenentzündung verhindern).",
-        glossarBegriffe: ["Pneumonie", "Stethoskop", "Atemfrequenz"],
+        title: "Die Atmung beobachten — 4 Schritte",
+        body: "Du beobachtest die Atmung von Herrn Petrov. 4 Schritte:\nSchritt 1: Zähle die Atemzüge in 15 Sekunden. Dann × 4. Normal sind 12-18 pro Minute.\nSchritt 2: Atmet er tief oder flach?\nSchritt 3: Hörst du am Bett ein Rasseln oder Brodeln (ohne Stethoskop)? Bewegt sich der Brust-Korb gleichmäßig auf beiden Seiten?\nSchritt 4: Hustet er? Kommt Sekret (= Schleim) heraus? Welche Farbe haben Lippen und Haut?\nWichtig: Mit dem Stethoskop hört der Arzt die Lunge ab (= Auskultation). Das ist nicht deine Aufgabe als Pflege-Schülerin.\nBefund bei Herrn Petrov: 17 Atemzüge pro Minute. Atmung gleichmäßig, kein Rasseln hörbar, kein Husten.\nDeshalb machst du weiter mit der Pneumonie-Prophylaxe (= Lungenentzündung verhindern).",
+        glossarBegriffe: ["Pneumonie", "Atemfrequenz", "Atemexkursion"],
       },
     },
 

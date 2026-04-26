@@ -273,7 +273,7 @@ export default function DashboardPage() {
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          className={`rounded-2xl p-4 flex items-center justify-between ${
+          className={`rounded-xl p-3 flex items-center justify-between ${
             istPraxisModus
               ? "bg-[#3E5A6A]/5 border-2 border-[#3E5A6A]/30"
               : "bg-[var(--lern-bg-primary)] border border-[var(--lern-border)]"
@@ -312,7 +312,7 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.05 }}
-            className="rounded-2xl bg-[#3E5A6A]/5 border border-[#3E5A6A]/20 p-5"
+            className="rounded-xl bg-[#3E5A6A]/5 border border-[#3E5A6A]/20 p-5"
           >
             <h2 className="text-sm font-semibold text-[#4A7350] mb-3">
               Empfohlen im Praktikum
@@ -361,7 +361,7 @@ export default function DashboardPage() {
             animate={{ opacity: 1, y: 0 }}
           >
             <Link href={`/${locale}/lernen/${letztePosition.leId}`}>
-              <div className="rounded-2xl bg-[var(--lern-accent)] p-5 text-white transition-all active:scale-[0.98]">
+              <div className="rounded-xl bg-[var(--lern-accent)] p-3 text-white transition-all active:scale-[0.98]">
                 <p className="text-xs font-medium opacity-80 mb-1">Weitermachen</p>
                 <p className="text-lg font-bold">
                   {lektionen.find((l) => l.leId === letztePosition.leId)?.title ?? letztePosition.leId}
@@ -388,7 +388,7 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.04 }}
-            className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[#3E5A6A]/30 p-5"
+            className="rounded-xl bg-[var(--lern-bg-primary)] border border-[#3E5A6A]/30 p-5"
           >
             <div className="flex items-center justify-between mb-2">
               <p className="text-xs font-semibold text-[#3E5A6A] uppercase tracking-wider">
@@ -408,7 +408,7 @@ export default function DashboardPage() {
             </p>
             <Link
               href={`/${locale}/lernen/${heutigerTag.leId}`}
-              className="block w-full rounded-xl bg-[#3E5A6A] px-4 py-3 text-center text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#28B84C]"
+              className="block w-full rounded-xl bg-[#3E5A6A] px-4 py-2.5 text-center text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#28B84C]"
             >
               Jetzt starten
             </Link>
@@ -421,7 +421,7 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.04 }}
-            className="rounded-2xl bg-[#D4956A]/5 border border-[#D4956A]/20 p-3 text-center"
+            className="rounded-xl bg-[#D4956A]/5 border border-[#D4956A]/20 p-3 text-center"
           >
             <p className="text-sm font-semibold text-[#D4956A]">
               Genieß das Wochenende!
@@ -438,7 +438,7 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.05 }}
-            className="rounded-2xl bg-[#D4956A]/5 border border-[#D4956A]/20 px-5 py-3"
+            className="rounded-xl bg-[#D4956A]/5 border border-[#D4956A]/20 px-5 py-2.5"
           >
             <p className="text-sm text-[#D4956A] font-medium">
               {wiederholungsCount} Lernziel{wiederholungsCount > 1 ? "e" : ""} zur Auffrischung fällig
@@ -455,7 +455,7 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.06 }}
-            className="rounded-2xl bg-[#9B7EA6]/5 border border-[#9B7EA6]/20 p-5"
+            className="rounded-xl bg-[#9B7EA6]/5 border border-[#9B7EA6]/20 p-5"
           >
             <h2 className="text-sm font-semibold text-[#9B7EA6] mb-3">
               Wiederholung fällig ({faelligeWiederholungen.length} LE{faelligeWiederholungen.length > 1 ? "s" : ""})
@@ -495,19 +495,19 @@ export default function DashboardPage() {
           transition={{ delay: 0.08 }}
           className="grid grid-cols-3 gap-3"
         >
-          <div className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-4 text-center">
+          <div className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-3 text-center">
             <p className="text-xs text-[var(--lern-text-secondary)]">XP diese Woche</p>
             <p className="text-xl font-bold text-[var(--lern-accent)]">
               {wochenDaten.reduce((s, d) => s + d.xp, 0)}
             </p>
           </div>
-          <div className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-4 text-center">
+          <div className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-3 text-center">
             <p className="text-xs text-[var(--lern-text-secondary)]">Streak</p>
             <p className="text-xl font-bold text-[#D4956A]">
               {profil?.streakTage ?? 0} Tage
             </p>
           </div>
-          <div className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-4 text-center">
+          <div className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-3 text-center">
             <p className="text-xs text-[var(--lern-text-secondary)]">Lernzeit</p>
             <p className="text-xl font-bold text-[#3E5A6A]">
               {wochenDaten.reduce((s, d) => s + d.minuten, 0)} Min
@@ -694,7 +694,7 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="rounded-2xl bg-[#D4956A]/5 border border-[#D4956A]/20 p-5"
+            className="rounded-xl bg-[#D4956A]/5 border border-[#D4956A]/20 p-5"
           >
             <h2 className="text-sm font-semibold text-[#D4956A] mb-3">
               Wiederholung fällig ({faelligeKarten.length})
@@ -743,7 +743,7 @@ function EmpfehlungsKarte({ empfehlung, delay }: { empfehlung: SessionEmpfehlung
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay }}
-      className={`rounded-2xl p-3 transition-all active:scale-[0.98] ${style.bg} ${style.border}`}
+      className={`rounded-xl p-3 transition-all active:scale-[0.98] ${style.bg} ${style.border}`}
     >
       <div className="flex items-start gap-3">
         <span className="text-lg shrink-0">{style.icon}</span>
@@ -795,7 +795,7 @@ function PruefungsreifeBadge() {
       transition={{ delay: 0.06 }}
     >
       <Link href={`/${locale}/pruefung`}>
-        <div className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-4 transition-all active:scale-[0.98]">
+        <div className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-3 transition-all active:scale-[0.98]">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div

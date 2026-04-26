@@ -410,7 +410,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
               "Die normale Atemfrequenz bei einem 4-monatigen Säugling liegt bei 30-60 Atemzügen pro Minute.",
             isTrue: true,
             explanation:
-              "Richtig. Normwert beim Säugling (1-12 Monate): 30-60/min — deutlich höher als beim Erwachsenen (12-20/min). Erst über 60/min spricht man von Tachypnoe, die sofortige Aufmerksamkeit erfordert.",
+              "Richtig. Normwert beim Säugling (1-12 Monate): 30-60/min — deutlich höher als beim Erwachsenen (12-20/min). Hinweis: Quellen weichen leicht ab (Hoehl/Kullick 2019: 30-50/min, AAP/AWMF: 30-60/min). Gemeinsame Schwelle: > 60/min ist Tachypnoe und erfordert sofortige Aufmerksamkeit (AWMF S2k Bronchiolitis 2022).",
           },
           {
             statement:

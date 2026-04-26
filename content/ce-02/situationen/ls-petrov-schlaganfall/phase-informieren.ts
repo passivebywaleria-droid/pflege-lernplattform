@@ -241,11 +241,11 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
                   "Herr Petrov öffnet den Mund. Schließt ihn wieder. Greift frustriert an sein rechtes Bein.",
                 patientResponseB1:
                   "Herr Petrov öffnet den Mund. Schließt ihn. Er greift an sein Bein — er ist frustriert.",
-                score: 0,
+                score: 1,
                 feedback:
-                  "Zu viel Sprache auf einmal. \"Wie geht es Ihnen?\" ist eine offene Frage — die braucht eine offene Antwort. Herr Petrov hat Broca-Aphasie: Er versteht die Frage, kann aber keine vollständige Antwort formulieren. Du siehst die Frustration. Merke: Ja/Nein-Fragen bevorzugen.",
+                  "Sozial üblich, aber bei Broca-Aphasie ungeeignet. \"Wie geht es Ihnen?\" ist eine offene Frage — die braucht eine offene Antwort. Herr Petrov versteht die Frage, kann aber keine vollständige Antwort formulieren. Du siehst die Frustration. Merke: Ja/Nein-Fragen bevorzugen, z.B. \"Haben Sie Schmerzen? — Nicken oder Kopfschütteln.\"",
                 feedbackB1:
-                  "Zu schwer für Herrn Petrov. \"Wie geht es Ihnen?\" ist eine offene Frage. Er kann kaum sprechen. Frage: \"Haben Sie Schmerzen?\" — das kann er mit Nicken oder Kopfschütteln beantworten.",
+                  "Höflich gemeint, aber zu schwer für Herrn Petrov. \"Wie geht es Ihnen?\" ist eine offene Frage. Er kann kaum sprechen. Frage besser: \"Haben Sie Schmerzen?\" — das kann er mit Nicken oder Kopfschütteln beantworten.",
               },
             ],
           },
@@ -355,11 +355,11 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
       },
     },
 
-    // Step 1.5 — Sorting: Kommunikation mit Aphasie-Patienten
+    // Step 1.5 — Matching: Kommunikation mit Aphasie-Patienten
     {
       stepId: "ce02-petrov-info-05-aphasie-kommunikation",
       phase: 1,
-      stepType: "sorting",
+      stepType: "matching",
       bloomLevel: 3,
       kompetenzbereich: "V.1",
       quellen: [
@@ -368,28 +368,48 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
         "AWMF S3-Leitlinie Schlaganfall (021-023)",
       ],
       track: "basis",
-      modus: "sortierstation",
+      modus: "puzzle",
       lernziel: "ce02-petrov-info-aphasie-kommunikation",
       tag: "pflege",
       contentC1: {
         title: "Kommunikation mit Aphasie-Patienten",
-        body: "Du hast jetzt die ersten Minuten mit Herrn Petrov hinter dir. Sortiere die folgenden Kommunikationsregeln für Aphasie-Patienten in die richtige Reihenfolge — von der wichtigsten/ersten bis zur ergänzenden Regel.",
+        body: "Du hast jetzt die ersten Minuten mit Herrn Petrov hinter dir. Ordne jede Kommunikationsregel ihrer fachlichen Begründung zu. Alle 5 Regeln sind gleichwertig wichtig — es gibt keine Rangfolge, sondern jede Regel adressiert einen anderen Aspekt der Aphasie-Kommunikation.",
         glossarBegriffe: ["Broca-Aphasie", "nonverbale Kommunikation"],
       },
       contentB1: {
         title: "Wie kommunizierst du mit Herrn Petrov?",
-        body: "Herr Petrov hat Aphasie. Bringe die Kommunikations-Regeln in die richtige Reihenfolge. Was ist am wichtigsten?",
+        body: "Herr Petrov hat Aphasie. Ordne jede Regel der richtigen Begründung zu. Alle Regeln sind gleich wichtig.",
         glossarBegriffe: ["Aphasie"],
       },
       question: {
         fragetext:
-          "Sortiere die Kommunikationsregeln für Aphasie-Patienten in der richtigen Reihenfolge.",
-        sortItems: [
-          "Kurze, einfache Sätze verwenden (max. 5-7 Wörter)",
-          "Ja/Nein-Fragen stellen — keine offenen Fragen",
-          "Zeit lassen für die Reaktion (10-15 Sekunden warten)",
-          "Blickkontakt halten — nicht wegschauen während er antwortet",
-          "Nicht laut sprechen — er ist nicht taub, er hat eine Sprach- nicht Hörstörung",
+          "Ordne jede Kommunikationsregel der passenden Begründung zu.",
+        matchingPairs: [
+          {
+            left: "Kurze, einfache Sätze verwenden (max. 5-7 Wörter)",
+            right:
+              "Reduziert die kognitive Sprachverarbeitung — bei Broca-Aphasie ist Verstehen leichter als Produzieren, lange Sätze ermüden trotzdem",
+          },
+          {
+            left: "Ja/Nein-Fragen stellen — keine offenen Fragen",
+            right:
+              "Patient kann mit Nicken/Kopfschütteln antworten, ohne Wörter formulieren zu müssen",
+          },
+          {
+            left: "Zeit lassen für die Reaktion (10-15 Sekunden warten)",
+            right:
+              "Sprachverarbeitung dauert bei Aphasie länger — vorschnelles Antworten oder Helfen blockiert die Eigenleistung",
+          },
+          {
+            left: "Blickkontakt halten — nicht wegschauen während er antwortet",
+            right:
+              "Nonverbale Signale (Mimik, Gestik) ergänzen die wenigen Wörter und zeigen Wertschätzung",
+          },
+          {
+            left: "Nicht laut sprechen — normale Lautstärke wählen",
+            right:
+              "Aphasie ist eine Sprach-, keine Hörstörung — lautes Sprechen wirkt entwürdigend und hilft nicht",
+          },
         ],
       },
     },

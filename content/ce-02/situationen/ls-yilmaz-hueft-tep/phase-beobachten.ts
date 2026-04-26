@@ -268,8 +268,8 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_BEOBACHTEN: SituationsPhase = {
             correctCategory: 2,
           },
           {
-            text: "Diabetes mellitus — Gefäßveränderungen chronisch",
-            correctCategory: 0,
+            text: "Diabetes mellitus — chronische Hyperglykämie aktiviert Thrombozyten und erhöht PAI-1/Fibrinogen",
+            correctCategory: 2,
           },
         ],
       },
@@ -293,12 +293,12 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_BEOBACHTEN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "Klinische Thrombose-Zeichen — richtig einordnen",
-        body: "Du schaust jetzt Frau Yilmaz' Beine genauer an. Du drückst leicht auf die Wade. Sie sagt: 'Das tut ein bisschen weh.' Du schaust auf Schwellung und Rötung. Beurteile folgende Aussagen über klinische Thrombose-Zeichen.",
+        body: "Du inspizierst beide Beine im Seitenvergleich: Schwellung, Umfang, Hauttemperatur, Verfärbung. Du fragst Frau Yilmaz nach Schmerzen in der Wade — sie sagt: 'Das tut ein bisschen weh.' Aktive Provokationszeichen (z.B. Homans) wendest du nicht an — moderne Leitlinien raten davon ab (Embolie-Risiko). Beurteile folgende Aussagen über klinische Thrombose-Zeichen.",
         glossarBegriffe: ["Homans-Zeichen", "Doppler-Sonografie", "Antikoagulation", "Antiemboliestrümpfe"],
       },
       contentB1: {
         title: "Thrombose-Zeichen — wahr oder falsch?",
-        body: "Du drückst auf Frau Yilmaz' Wade. Sie sagt: 'Das tut ein bisschen weh.' Beurteile die folgenden Aussagen.",
+        body: "Du schaust beide Beine im Vergleich an: Schwellung? Umfang? Wärme? Verfärbung? Du fragst Frau Yilmaz nach Schmerz in der Wade — sie sagt: 'Das tut ein bisschen weh.' Drücken auf die Wade machst du NICHT (das kann gefährlich sein, wenn ein Gerinnsel da ist). Beurteile die folgenden Aussagen.",
         glossarBegriffe: ["Thrombose", "Wade", "Schwellung"],
       },
       question: {
@@ -307,10 +307,10 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_BEOBACHTEN: SituationsPhase = {
         trueFalseCards: [
           {
             statement:
-              "Wadenschmerz auf Druck (Homans-Zeichen) ist ein sicheres Zeichen für eine Thrombose.",
+              "Aktives Provozieren des Homans-Zeichens (Dorsalextension des Fußes) ist heute Standard, um eine Thrombose auszuschließen.",
             isTrue: false,
             explanation:
-              "Falsch — das Homans-Zeichen hat eine Spezifität von nur ca. 50 %. Es gibt viele Ursachen für Wadenschmerz. Es dient als Hinweis, nicht als Beweis. Bei Verdacht muss bildgebende Diagnostik folgen. (DDG 2017)",
+              "Falsch — moderne Leitlinien (DGG 2022) raten gegen aktive Provokationszeichen. Das Homans-Zeichen hat eine Spezifität von nur ca. 50 % und kann bei vorhandenem Thrombus Embolien auslösen. Pflegerisch: nur Inspektion im Seitenvergleich (Schwellung, Umfang, Hauttemperatur, Verfärbung) und Schmerz erfragen. Bei Verdacht: Doppler-Sonografie, keine Druckprovokation.",
           },
           {
             statement:

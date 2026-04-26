@@ -243,12 +243,12 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Anamnesefragen — in welcher Reihenfolge?",
-        body: "Du sammelst Informationen beim Aufnahmegespräch. Sortiere die Fragen nach Priorität — wichtigste zuerst.",
+        body: "Du sammelst Informationen beim Aufnahmegespräch. Sortiere die Fragen nach Priorität — wichtigste zuerst. Logik: Wir starten beim Hauptbeschwerden-Leitsymptom (hier Trinkschwäche, weil die Atmung makroskopisch noch unauffällig ist — keine Einziehungen, keine Tachypnoe > 60/min). Bei kritischer Atemnot würde nach ABCDE die Atmung zuerst kommen.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Welche Fragen sind am wichtigsten?",
-        body: "Du sammelst Informationen. Bringe die Fragen in die richtige Reihenfolge — wichtigste zuerst.",
+        body: "Du sammelst Informationen. Bringe die Fragen in die richtige Reihenfolge — wichtigste zuerst. Hier startest du beim Hauptproblem: Trinkschwäche. Die Atmung ist im Moment noch okay (keine Einziehungen, Atemfrequenz im Normbereich). Wenn Emilia stark atemnot wäre, müsste die Atmung zuerst gefragt werden (ABCDE).",
         glossarBegriffe: [],
       },
       question: {

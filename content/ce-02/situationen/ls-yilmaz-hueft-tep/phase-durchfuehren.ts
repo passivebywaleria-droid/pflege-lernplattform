@@ -48,27 +48,27 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
           items: [
             {
               id: "s1",
-              label: "Bett auf Bettkanten-Höhe einstellen (damit Füße beim Hinsetzen den Boden berühren)",
+              label: "Bett auf Bettkanten-Höhe einstellen (damit Füße beim Hinsetzen den Boden berühren). RR liegend messen (Ausgangswert für Schellong).",
             },
             {
               id: "s2",
-              label: "Frau Yilmaz ankündigen was passiert: \"Ich helfe Ihnen jetzt, die Beine über die Seite zu bringen.\"",
+              label: "Frau Yilmaz ankündigen was passiert: \"Ich begleite Sie. Sie machen die Bewegung — Sie sagen das Tempo.\"",
             },
             {
               id: "s3",
-              label: "Oberkörper aufrichten (Kopfteil weiter hochstellen ODER manuell unterstützen)",
+              label: "Oberkörper aktiv aufrichten lassen (Kopfteil hoch ODER Frau Yilmaz richtet sich seitlich auf — Pflege sichert seitlich am Becken/Rumpf, NICHT unter den Achseln)",
             },
             {
               id: "s4",
-              label: "Beide Beine gleichzeitig über die Bettkante schwingen — nicht einzeln (Lagerungsvorschrift: Hüftbeugung kontrollieren)",
+              label: "Operiertes Bein (rechts) zuerst in Streckung über die Bettkante führen — gesundes Bein folgt nach. Adduktion/Innenrotation vermeiden (Luxationsschutz). Patientin dreht aktiv mit, Pflege begleitet.",
             },
             {
               id: "s5",
-              label: "3 Minuten an der Bettkante sitzen: Schwindel abfragen, Kreislauf anpassen lassen",
+              label: "Schellong-Test: ≥ 1 Min an der Bettkante sitzen, Schwindel abfragen, RR sitzend messen. Differenz < 20 mmHg systolisch (und < 10 mmHg diastolisch) → Aufstehen erlaubt; Differenz ≥ 20/10 mmHg → hinlegen, Versuch verschieben.",
             },
             {
               id: "s6",
-              label: "Aufstehen: Frau Yilmaz stützt sich auf die Unterarmgehstützen, du stehst seitlich-hinter ihr",
+              label: "Aufstehen: Pflegekraft auf OP-Seite (rechts), eine Hand am Beckengurt/Hüftgurt, eine Hand am Rumpf. Frau Yilmaz drückt sich aktiv hoch und greift dann zu den Unterarmgehstützen. Teilbelastung rechts max. 20 kg.",
             },
             {
               id: "s7",
@@ -76,7 +76,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
             },
             {
               id: "s8",
-              label: "Wenn NRS ≤ 5: kurz stehen oder erste Schritte; wenn NRS > 7: sofort hinsetzen, Plan anpassen",
+              label: "Wenn NRS ≤ 5: kurz stehen oder erste Schritte; wenn NRS ≥ 7: sofort hinsetzen, Plan anpassen",
             },
           ],
         },
@@ -99,14 +99,14 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "Komplikation 1: Orthostatische Hypotonie",
-        body: "Frau Yilmaz sitzt seit 2 Minuten an der Bettkante. Plötzlich sagt sie leise: \"Mir ist schwindelig. Das dreht sich.\"\n\nSie greift nach deinem Arm. Ihr Gesicht wird blass. Was tust du jetzt?\n\nHintergrund: Orthostatische Hypotonie = Blutdruckabfall beim Lagewechsel. Bei Frau Yilmaz mehrere Risikofaktoren: Bettlägerigkeit (Gefäßregulation gedämpft), Antidiabetika (manche senken RR), postoperative Schwäche.",
+        body: "Frau Yilmaz sitzt seit 2 Minuten an der Bettkante. Plötzlich sagt sie leise: \"Mir ist schwindelig. Das dreht sich.\"\n\nSie greift nach deinem Arm. Ihr Gesicht wird blass. Was tust du jetzt?\n\nHintergrund: Orthostatische Hypotonie = Blutdruckabfall beim Lagewechsel. Bei Frau Yilmaz mehrere Risikofaktoren: Bettlägerigkeit (Gefäßregulation gedämpft), postoperative Volumenverschiebung, schmerzbedingte autonome Aktivierung. (Antidiabetika selbst senken den RR nicht primär — sie können aber durch Hypoglykämie Schwindel auslösen, was differenzialdiagnostisch zu beachten ist.)",
         fallbezug:
           "Das ist keine seltene Komplikation — sie ist bei Hüft-TEP-Patienten sehr häufig. Deine Reaktion in den nächsten 10 Sekunden entscheidet über Sicherheit.",
         glossarBegriffe: ["Orthostatische Hypotonie", "Blutdruckabfall", "Kreislaufregulation"],
       },
       contentB1: {
         title: "Komplikation: Frau Yilmaz wird schwindelig",
-        body: "Frau Yilmaz sitzt 2 Minuten an der Bettkante. Dann sagt sie: \"Mir ist schwindelig. Das dreht sich.\"\n\nSie greift deinen Arm. Ihr Gesicht wird blass.\n\nDas nennt man: Orthostatischer Schwindel (= Schwindel beim Aufstehen, weil der Blutdruck kurz fällt). Was machst du jetzt?",
+        body: "Frau Yilmaz sitzt 2 Minuten an der Bettkante. Dann sagt sie: \"Mir ist schwindelig. Das dreht sich.\"\n\nSie greift deinen Arm. Ihr Gesicht wird blass.\n\nDas nennt man: Orthostatischer Schwindel (= Schwindel beim Aufstehen, weil der Blutdruck kurz fällt). Gründe bei Frau Yilmaz: Sie hat lange gelegen, der Körper hat noch nach der OP. Was machst du jetzt?",
         fallbezug:
           "Das passiert oft nach einer OP. Du musst schnell und richtig reagieren.",
         glossarBegriffe: ["Schwindel beim Aufstehen", "Blutdruckabfall"],

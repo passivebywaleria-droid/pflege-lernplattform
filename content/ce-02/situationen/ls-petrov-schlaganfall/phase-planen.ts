@@ -110,7 +110,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Pflegeprobleme → Pflegeziele",
-        body: "Ordne die Pflegeprobleme den richtigen SMART-Pflegezielen zu. SMART: Spezifisch, Messbar, Angemessen, Relevant, Terminiert.",
+        body: "Ordne die Pflegeprobleme den richtigen SMART-Pflegezielen zu. SMART: Spezifisch, Messbar, Akzeptiert (erreichbar), Relevant, Terminiert.",
         glossarBegriffe: ["SMART", "Pflegeziel"],
       },
       contentB1: {
@@ -130,7 +130,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
           {
             left: "Pneumoniegefahr",
             right:
-              "Herr Petrov führt 3× täglich Atemübungen durch, Auskultationsbefund stabil.",
+              "Herr Petrov führt 3× täglich Atemübungen durch, pflegerische Atembeobachtung stabil (Frequenz, Atemtiefe, hörbare Geräusche).",
           },
           {
             left: "Dekubitusrisiko",
@@ -165,23 +165,23 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Maßnahmen priorisieren",
-        body: "Du hast 3 Stunden. Fünf Maßnahmen warten. Bringe sie in die richtige Prioritätsreihenfolge — mit Begründung im Feedback.",
-        glossarBegriffe: ["Priorität", "Pflegemaßnahmen"],
+        body: "Du hast 3 Stunden. Fünf Maßnahmen warten. Bringe sie in die richtige Prioritätsreihenfolge nach ABCDE-Logik (Atmung vor allem anderen außer Atemwegs-Notfall) und Aspirations-Risiko.",
+        glossarBegriffe: ["Priorität", "Pflegemaßnahmen", "ABCDE"],
       },
       contentB1: {
         title: "Was machst du zuerst?",
-        body: "Was machst du zuerst? Bringe die 5 Maßnahmen in die richtige Reihenfolge.",
+        body: "Was machst du zuerst? Bringe die 5 Maßnahmen in die richtige Reihenfolge. Wichtig: Die Atmung kommt immer zuerst (= ABCDE).",
         glossarBegriffe: ["Pflegemaßnahmen"],
       },
       question: {
         fragetext:
           "Bringe die 5 Pflegemaßnahmen in die richtige Prioritätsreihenfolge für die Frühschicht.",
         sortItems: [
-          "Kathetercheck + Bilanz (schnell, non-invasiv, Sicherheit zuerst)",
-          "Atemübungen + Oberkörperhochlagerung 30° (Pneumonieprophylaxe = höchste Priorität)",
-          "Ganzkörperpflege nach Bobath (längste Maßnahme, einschließlich Hautinspektion)",
-          "Frühstück anreichen mit angedicktener Flüssigkeit (nach Körperpflege, aufrechte Position hergestellt)",
-          "Mobilisation: Bettkante (nach dem Frühstück, wenn Energie da ist)",
+          "Oberkörperhochlagerung 30° + Atembeobachtung/-übungen (B in ABCDE — Aspirations-/Pneumonieprophylaxe sofort sichern)",
+          "Kathetercheck + Bilanz (schnell, non-invasiv, Sicherheit + KRINKO-Standard)",
+          "Ganzkörperpflege nach Bobath (längste Maßnahme, einschließlich Hautinspektion und Lagerung)",
+          "Frühstück anreichen mit angedickter Flüssigkeit (nach Körperpflege, aufrechte Position bereits hergestellt)",
+          "Mobilisation: Bettkante (nach dem Frühstück, wenn Vitalzeichen stabil und Energie da ist)",
         ],
       },
     },

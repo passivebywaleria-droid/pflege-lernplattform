@@ -335,8 +335,8 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
             ],
             [
               { value: "Mobilität", isBlank: false },
-              { value: "Kann sich selbst umdrehen, aber träge durch Adipositas + postoperativer Schwäche", isBlank: false },
-              { value: "3", isBlank: true, options: ["1", "2", "3", "4"] },
+              { value: "Stark eingeschränkt — bewegt sich gelegentlich, dreht sich aber durch Adipositas + postoperativer Schwäche nicht ohne Anstrengung selbstständig um", isBlank: false },
+              { value: "2", isBlank: true, options: ["1", "2", "3", "4"] },
             ],
             [
               { value: "Ernährung", isBlank: false },
@@ -345,8 +345,8 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
             ],
             [
               { value: "Reibung / Scherkräfte", isBlank: false },
-              { value: "Braucht bei Umlagerung Hilfe — Scherkräfte beim Rollator-Gehen (Becken verschiebt sich relativ zur Haut)", isBlank: false },
-              { value: "1", isBlank: true, options: ["1", "2"] },
+              { value: "Braucht bei Umlagerung Hilfe — Scherkräfte beim Hochrutschen im Bett (Becken verschiebt sich relativ zur Haut) → potenzielles Problem", isBlank: false },
+              { value: "2", isBlank: true, options: ["1", "2", "3"] },
             ],
             [
               { value: "Gesamtscore", isBlank: false },

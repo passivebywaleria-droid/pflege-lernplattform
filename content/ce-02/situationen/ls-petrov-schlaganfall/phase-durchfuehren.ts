@@ -222,7 +222,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
           {
             left: "Oberkörperhochlagerung 30°",
             right:
-              "Schleim kann leichter abfließen, Zwerchfell fällt nach unten",
+              "Zwerchfell wird entlastet, Atemvolumen steigt; Sekret kann besser abfließen",
           },
           {
             left: "Tiefatemübungen, Lippenbremse",
@@ -236,7 +236,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
           {
             left: "Frühmobilisation — Bettkante",
             right:
-              "Vertikale Körperhaltung verbessert Atemvolumen um bis zu 30%",
+              "Vertikale Körperhaltung verbessert Atemvolumen messbar",
           },
         ],
       },
@@ -303,15 +303,15 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
             text: "Ich schlage ihm fest auf den Rücken, damit er frei bekommt.",
             isCorrect: false,
             feedback:
-              "Fehler! Rückenschlag ist nur bei vollständiger Atemwegsobstruktion (Patient kann gar nicht mehr atmen/sprechen) indiziert. Bei einem Aspirationsereignis (Verschlucken, Husten) kann ein Rückenschlag den Bolus tiefer in die Atemwege treiben. Die richtige Reaktion ist: Anreichen stoppen, aufrichten, Husten fördern, beobachten.",
+              "Hier falsch. Rückenschläge gehören zum Choking-Algorithmus (ERC 2021) bei mechanischer Atemwegsverlegung durch einen festen Bolus — bei ineffektivem Husten zuerst 5 Rückenschläge, dann 5 Bauchstöße (Heimlich-Manöver). Bei Herrn Petrov liegt aber eine Aspiration vor (Flüssigkeit in die Atemwege) — kein Bolusverschluss. Husten ist hier der wirksamste Selbstreinigungs-Mechanismus, ein Rückenschlag würde nichts bringen und kann ablenken. Die richtige Reaktion ist: Anreichen stoppen, aufrichten, Husten fördern, beobachten.",
             feedbackB1:
-              "Falsch. Nicht auf den Rücken schlagen. Das kann das Essen tiefer drücken. Das machst du nur, wenn er sich gar keine Luft mehr kriegt (= vollständige Obstruktion). Hier hustet er — der Körper schützt sich selbst.",
+              "Hier falsch. Rücken-Schläge macht man bei einem festen Stück Essen, das die Atemwege verschließt (= Bolus). Hier ist es Flüssigkeit in der Lunge (= Aspiration). Husten ist die beste Hilfe — der Körper reinigt sich selbst. Stoppen, aufrichten, Husten anregen, beobachten.",
           },
           {
             text: "Ich stoppe das Anreichen sofort, fordere Herrn Petrov auf zu husten wenn er kann, setze ihn auf 90° auf, beobachte Atemgeräusch und Sättigung.",
             isCorrect: true,
             feedback:
-              "Richtig vorgegangen. 5 Maßnahmen bei Aspirationsereignis: 1) Sofort Stop — kein weiteres Anreichen. 2) Husten fördern — aktiver Schutzmechanismus, der Aspirat entfernt. 3) Aufrichten 90° — Schwerkraft unterstützt Selbstreinigung der Atemwege. 4) Atemgeräusch beurteilen: klar = gut, gurgelnd/feucht = stille Aspiration. 5) Sattelpuls/SpO2 beobachten wenn Pulsox verfügbar. Dann: Befund dokumentieren + Schlucktherapeutin informieren. (DGG/DGN 2020)",
+              "Richtig vorgegangen. 5 Maßnahmen bei Aspirationsereignis: 1) Sofort Stop — kein weiteres Anreichen. 2) Husten fördern — aktiver Schutzmechanismus, der Aspirat entfernt. 3) Aufrichten 90° — Schwerkraft unterstützt Selbstreinigung der Atemwege. 4) Atemgeräusch beurteilen: klar = gut, gurgelnd/feucht = stille Aspiration. 5) SpO2 (per Pulsoximeter) und Puls beobachten wenn verfügbar. Dann: Befund dokumentieren + Schlucktherapeutin/Arzt informieren. (DGG/DGN 2020)",
             feedbackB1:
               "Richtig. Das sind die richtigen Schritte: Stopp. Husten anregen. Aufrichten. Beobachten. Und danach dokumentieren und die Schluck-Therapeutin informieren.",
           },
@@ -343,18 +343,19 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
       lernziel: "ce02-petrov-dur-nachbeobachtung",
       tag: "krankheitslehre",
       contentC1: {
-        title: "3-Minuten-Beobachtungsprotokoll",
-        body: "Nach dem Aspirationsereignis beobachtest du strukturiert — 3 Minuten, 6 Punkte. Tick ab was du beobachtet hast:",
+        title: "3-Minuten-Beobachtungsprotokoll + 24-48 h Verlaufskontrolle",
+        body: "Nach dem Aspirationsereignis beobachtest du strukturiert — 3 Minuten am Bett, 7 Punkte. Tick ab was du beobachtet hast.\n\nWichtig: Bei neurogener Dysphagie ist die stille Aspiration mit verzögerter Pneumonie-Entwicklung (24-48 h) der gefährlichste Verlauf. Die Nachbeobachtung endet nicht nach 3 Minuten — Atemfrequenz, Temperatur, Sputumveränderung und Allgemeinzustand müssen über 24-48 h im Verlauf kontrolliert und im Pflegebericht festgehalten werden. (DGG/DGN 2020)",
         glossarBegriffe: [
           "Atemfrequenz",
           "Sauerstoffsättigung",
           "Pulsoximeter",
+          "stille Aspiration",
         ],
       },
       contentB1: {
-        title: "Jetzt beobachtest du 3 Minuten lang",
-        body: "Nach dem Verschlucken beobachtest du 3 Minuten. 6 Punkte:",
-        glossarBegriffe: ["Atemfrequenz", "Sauerstoffsättigung"],
+        title: "3 Minuten beobachten — und im Verlauf 24-48 Stunden",
+        body: "Nach dem Verschlucken beobachtest du 3 Minuten am Bett. 7 Punkte.\nWichtig: Eine stille Aspiration kann erst nach 24-48 Stunden eine Lungen-Entzündung machen. Du beobachtest weiter: Atemfrequenz, Temperatur, Husten, Schleim. Du dokumentierst alles.",
+        glossarBegriffe: ["Atemfrequenz", "Sauerstoffsättigung", "stille Aspiration"],
       },
       question: {
         fragetext: "Beobachte 3 Minuten strukturiert — tick ab was du prüfst.",
@@ -401,10 +402,20 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
             correctIndex: 0,
           },
           {
-            question: "Entscheidung: Was jetzt?",
+            question:
+              "Entscheidung: Was jetzt? (Reihenfolge beachten — Konsistenzanpassung ist nicht Pflege-Eigenkompetenz)",
             options: [
-              "Weiter mit angepasster Konsistenz (Level 3 prüfen) + Schlucktherapeutin informieren",
-              "Orales Essen für heute stoppen + Arzt informieren",
+              "Schlucktherapeutin und behandelnden Arzt informieren — gemeinsame Entscheidung über Konsistenzanpassung (Level 3 oder Pause)",
+              "Konsistenz selbst auf Level 3 erhöhen — die Therapeutin wird das später bestätigen",
+            ],
+            correctIndex: 0,
+          },
+          {
+            question:
+              "Wenn die SpO2 abweicht — was tust du, sobald SpO2 < 95 % ist oder die Atmung gurgelnd klingt?",
+            options: [
+              "Sofort Arzt informieren, halbsitzende Lagerung halten, O2-Gabe nach ärztlicher Anordnung vorbereiten, weiter engmaschig dokumentieren",
+              "Erst noch 5 Minuten abwarten, ob es sich von selbst bessert",
             ],
             correctIndex: 0,
           },
@@ -479,18 +490,19 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Mobilisation: Bettkante",
-        body: "Du möchtest Herrn Petrov an die Bettkante bringen. Das ist der wichtigste Mobilisationsschritt des Tages — für die Atmung, für die Lage, für das Selbstgefühl.",
+        body: "Du möchtest Herrn Petrov an die Bettkante bringen. Das ist der wichtigste Mobilisationsschritt des Tages — für die Atmung, für die Lage, für das Selbstgefühl.\n\nVor jeder Erstmobilisation gehört eine Kreislauf-Vorkontrolle dazu: Liege-RR und Puls messen, nach dem Aufrichten/Sitzen erneut RR und Puls, aktiv nach Schwindel/Übelkeit fragen. Herr Petrov ist Tag 5 nach Schlaganfall, hat Hypertonie und nimmt Ramipril 5 mg — orthostatische Dysregulation ist ein realistisches Risiko. (DGG 2022 Frühmobilisation; AWMF S3 Schlaganfall)",
         glossarBegriffe: [
           "Frühmobilisation",
           "Bettkante",
           "Orthostase",
           "Bobath-Konzept",
+          "RR-Kontrolle",
         ],
       },
       contentB1: {
         title: "An die Bett-Kante",
-        body: "Du möchtest Herrn Petrov an die Bett-Kante bringen. Das ist wichtig für die Atmung und für den Arm.",
-        glossarBegriffe: ["Frühmobilisation", "Bettkante"],
+        body: "Du möchtest Herrn Petrov an die Bett-Kante bringen. Das ist wichtig für die Atmung und für den Arm.\nVor dem Aufstehen misst du Blutdruck (RR) und Puls. Beim Sitzen misst du wieder. Du fragst aktiv nach Schwindel. Das ist wichtig: Herr Petrov hat Bluthochdruck und nimmt Ramipril. Beim ersten Aufrichten kann ihm schwindelig werden.",
+        glossarBegriffe: ["Frühmobilisation", "Bettkante", "RR-Kontrolle"],
       },
       question: {
         fragetext:
@@ -505,17 +517,17 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
             speaker: "Du",
             options: [
               {
-                text: "\"Herr Petrov, wir versuchen jetzt, an die Bettkante zu kommen. Das ist wichtig für die Atmung und für Ihren Arm. Wenn es zu viel wird — zeigen Sie mir das.\"",
+                text: "\"Herr Petrov, wir gehen gleich an die Bettkante. Vorher messe ich noch einmal Blutdruck und Puls im Liegen — und gleich wieder, wenn Sie sitzen. Wenn Ihnen schwindelig wird oder es zu viel wird, zeigen Sie es mir bitte mit Kopfschütteln.\" (RR liegend gemessen, dokumentiert; Patient hat Schwindel-Signal verstanden)",
                 textB1:
-                  "\"Herr Petrov, wir gehen jetzt an die Bett-Kante. Das ist gut für die Lunge und den Arm. Wenn es zu viel wird — zeigen Sie mir das.\"",
+                  "\"Herr Petrov, wir gehen gleich an die Bett-Kante. Vorher messe ich Blutdruck und Puls. Beim Sitzen messe ich wieder. Wenn Sie Schwindel haben — schütteln Sie den Kopf.\"",
                 patientResponse:
-                  "Herr Petrov nickt. Er schaut auf seine Beine.",
-                patientResponseB1: "Herr Petrov nickt. Er schaut auf die Beine.",
+                  "Herr Petrov nickt. Er schaut auf seine Beine. RR liegend: 138/82, Puls 76, regelmäßig.",
+                patientResponseB1: "Herr Petrov nickt. Blutdruck im Liegen: 138/82. Puls: 76.",
                 score: 3,
                 feedback:
-                  "Richtig: Ankündigen was kommt, Begründung liefern (Atmung + Arm), Kontrollmöglichkeit geben. Drei Elemente in einem Satz.",
+                  "Richtig: Ankündigen was kommt, Kreislauf-Vorkontrolle (RR + Puls liegend), Schwindel-Signal vereinbart, Kontrollmöglichkeit gegeben. Bei Tag-5-Schlaganfall mit Hypertonie + Ramipril ist die orthostatische Dysregulation ein realistisches Risiko — Vitalzeichen vor und nach der Mobilisation gehören zum Standard. (DGG 2022 Frühmobilisation)",
                 feedbackB1:
-                  "Sehr gut. Du erklärst was kommt, warum, und gibst ihm Kontrolle.",
+                  "Sehr gut. Du erklärst was kommt. Du misst Blutdruck und Puls vorher. Du gibst Herrn Petrov ein Stopp-Signal. Das ist sicher.",
               },
               {
                 text: "\"Wir heben Sie jetzt mal kurz an die Kante — kein Problem.\"",
@@ -598,24 +610,24 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
           },
           {
             context:
-              "Herr Petrov sitzt an der Bettkante. Seine Beine hängen herunter. Er hält mit der linken Hand die Kante. Nach 8 Minuten zeigt er den linken Daumen hoch. Du beurteilst: Was jetzt?",
+              "Herr Petrov sitzt an der Bettkante. Seine Beine hängen herunter. Er hält mit der linken Hand die Kante. RR im Sitzen direkt nach dem Aufrichten: 132/80, Puls 84, regelmäßig — keine orthostatische Dysregulation. Nach 8 Minuten zeigt er den linken Daumen hoch. Du beurteilst: Was jetzt?",
             contextB1:
-              "Herr Petrov sitzt 8 Minuten an der Bett-Kante. Er zeigt den Daumen hoch. Was machst du jetzt?",
+              "Herr Petrov sitzt 8 Minuten an der Bett-Kante. Du hast direkt nach dem Aufsitzen RR und Puls gemessen: 132/80, Puls 84 — alles stabil. Er zeigt den Daumen hoch. Was machst du jetzt?",
             speaker: "Du",
             options: [
               {
-                text: "\"Super! Noch 5 Minuten — Sie schaffen das.\" (Blickkontakt, Hand kurz an die Schulter)",
+                text: "\"Super! Noch 5 Minuten — Sie schaffen das.\" (Blickkontakt, Hand kurz an die linke (gesunde) Schulter)",
                 textB1:
-                  "\"Noch 5 Minuten — das schaffen Sie!\" (Augenkontakt, Hand an Schulter)",
+                  "\"Noch 5 Minuten — das schaffen Sie!\" (Augenkontakt, Hand an die linke Schulter — die gesunde Seite)",
                 patientResponse:
                   "Herr Petrov nickt. Er sitzt weiter.",
                 patientResponseB1:
                   "Herr Petrov nickt. Er sitzt weiter.",
                 score: 3,
                 feedback:
-                  "Richtig. Daumen hoch = er ist noch okay. 5 Minuten mehr sind realistisch. Positive Verstärkung + Kontakt an der Schulter = Sicherheit und Ermutigung.",
+                  "Richtig. Daumen hoch = er ist noch okay. 5 Minuten mehr sind realistisch. Positive Verstärkung + Kontakt an der linken (gesunden) Schulter = Sicherheit und Ermutigung. Wichtig: Niemals an die rechte (betroffene) Schulter fassen — sie ist subluxationsgefährdet (kein Tonus, hängender Arm). Nach Bobath/DNQP Mobilität wird die betroffene Schulter nur abgestützt unter Kontrolle berührt, nie zur Begrüßung oder Ermutigung.",
                 feedbackB1:
-                  "Gut. Er signalisiert: Es geht. Dann 5 Minuten mehr ist richtig.",
+                  "Gut. Er signalisiert: Es geht. Dann sind 5 Minuten mehr richtig. Wichtig: Hand an die linke (gesunde) Schulter — nicht an die rechte. Die rechte Schulter kann verletzt werden (= Subluxation).",
               },
               {
                 text: "Sofort zurück ins Bett — 8 Minuten ist genug für Tag 1.",
@@ -625,11 +637,11 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
                   "Herr Petrov schüttelt den Kopf. Er sitzt weiter.",
                 patientResponseB1:
                   "Herr Petrov schüttelt den Kopf.",
-                score: 1,
+                score: 2,
                 feedback:
-                  "Nicht falsch — 8 Minuten ist ein gutes Ergebnis. Aber: Herr Petrov zeigt Daumen hoch — er will noch. Sein Wunsch zählt. Wenn Schwindel oder Schwäche auftreten würde er das signalisieren. Lass ihn entscheiden wenn es sicher ist.",
+                  "Pflegerisch sicher — 8 Minuten ist bei Erstmobilisation Tag 5 ein gutes Ergebnis und bei Vitalzeichen-Auffälligkeiten (RR-Abfall, Schwindel, Übelkeit, Tachykardie) wäre ein konservativer Abbruch absolut richtig. Hier sind die Vitalzeichen aber stabil und Herr Petrov zeigt aktiv Daumen hoch — er will noch. Sein autonomer Wunsch zählt. Score 3 wäre: weiter sitzen lassen mit weiterer Vitalzeichen-Kontrolle. Score 2 hier, weil sicher, aber Patientenautonomie nicht voll genutzt.",
                 feedbackB1:
-                  "Nicht falsch. Aber: Er zeigt Daumen hoch — er will weiter. Lass ihn bestimmen wenn es sicher ist.",
+                  "Sicher gehandelt. Bei Schwindel oder schlechtem Blutdruck wäre das richtig. Hier sind die Werte stabil — er zeigt Daumen hoch. Lass ihn bestimmen wenn es sicher ist. Score 3 wäre: weiter sitzen mit weiterer Kontrolle.",
               },
               {
                 text: "Ich lasse ihn allein — er sitzt ja gut.",

@@ -54,7 +54,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
         fragetext:
           "Schreibe das vollständige Sturzprotokoll für Herrn Friedrich Bauer (ca. 120–200 Wörter). Nutze alle Informationen aus dem heutigen Tag.",
         musterantwort:
-          "Sturzdatum/-uhrzeit: 23.04.2026, ca. 02:30 Uhr. Sturzort: Flur vor Zimmer 8, Station 4b. Erster Sturz in der Einrichtung. Hergang: Herr Bauer verließ das Zimmer eigenständig, wurde sitzend am Boden vorgefunden. Bewusstsein: ansprechbar, grob orientiert zur Person (erkennt Tochter), desorientiert zu Ort und Zeit. Verletzungscheck: keine Blutung, keine sichtbare Deformität, kein Hämatom. Schmerz: Knie links bei Bewegung (BESD 2/10), sonst kein Schmerz geäußert. Vitalzeichen (07:30 Uhr): RR 128/78, HF 74/min, SpO₂ 96%. Maßnahmen Frühschicht: Assessment vollständig, Kniebeweglichkeit geprüft, Körperpflege mit Basaler Stimulation, passive Kniebewegung 2×, Mundpflege, Trinkprotokoll begonnen. Niedrigbett und Nachtlicht für Nachtdienst angeordnet. Informierte Personen: Arzt informiert (Mirtazapin-Dosis zu prüfen), Tochter Ingrid Bauer telefonisch informiert (15:30 Uhr), Gespräch geführt. Ursachenhypothese: Desorientierung (FAST 6a) + nächtlicher Harndrang + sedierende Wirkung von Mirtazapin.",
+          "Sturzdatum/-uhrzeit: 23.04.2026, ca. 02:30 Uhr. Sturzort: Flur vor Zimmer 8, Station 4b. Erster Sturz in der Einrichtung. Hergang: Herr Bauer verließ das Zimmer eigenständig, wurde sitzend am Boden vorgefunden. Bewusstsein: ansprechbar, grob orientiert zur Person (erkennt Tochter), desorientiert zu Ort und Zeit. Verletzungscheck: keine Blutung, keine sichtbare Deformität, kein Hämatom. Schmerz: rechtes Knie bei Bewegung (BESD 2/10, passt zum Streckdefizit 20° rechts), sonst kein Schmerz geäußert. Vitalzeichen (07:30 Uhr): RR 128/78, HF 74/min, SpO₂ 96%. Maßnahmen Frühschicht: Assessment vollständig, Kniebeweglichkeit geprüft, Körperpflege mit Basaler Stimulation, passive Kniebewegung 2×, Mundpflege, Trinkprotokoll begonnen. Niedrigbett und Nachtlicht für Nachtdienst angeordnet. Informierte Personen: Arzt informiert (Mirtazapin-Dosis zu prüfen), Tochter Ingrid Bauer telefonisch informiert (15:30 Uhr), Gespräch geführt. Ursachenhypothese: Desorientierung (FAST 6a) + nächtlicher Harndrang + sedierende Wirkung von Mirtazapin.",
         bewertungskriterien: [
           "Datum und Uhrzeit des Sturzes genannt",
           "Sturzort beschrieben",
@@ -201,7 +201,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
               { value: "200 ml Tee", isBlank: false },
               { value: "?", isBlank: true, options: ["ja", "nein", "unklar"] },
               { value: "?", isBlank: true, options: ["ja", "nein"] },
-              { value: "Tee zunächst abgelehnt, dann mit Malzbier getauscht", isBlank: false },
+              { value: "Tee zunächst abgelehnt, dann mit alkoholfreiem Malzbier getauscht", isBlank: false },
             ],
             [
               { value: "10:30", isBlank: false },
@@ -212,7 +212,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
             ],
             [
               { value: "14:00", isBlank: false },
-              { value: "400 ml Malzbier", isBlank: false },
+              { value: "400 ml Malzbier (alkoholfrei)", isBlank: false },
               { value: "?", isBlank: true, options: ["ja", "nein", "unklar"] },
               { value: "ja", isBlank: false },
               { value: "?", isBlank: true, options: ["Inkontinenzversorgung gewechselt, Haut gerötet (Grad 1)", "unauffällig", "verweigert Versorgungswechsel"] },

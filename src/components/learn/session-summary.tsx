@@ -125,7 +125,7 @@ export function SessionSummary({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
-      className="rounded-2xl bg-gradient-to-b from-[var(--lern-bg)] to-[var(--lern-bg-primary)] border border-[var(--lern-border)]/50 p-5 space-y-4"
+      className="rounded-xl bg-gradient-to-b from-[var(--lern-bg)] to-[var(--lern-bg-primary)] border border-[var(--lern-border)]/50 p-3 space-y-4"
     >
       <div className="flex items-center gap-2">
         <HandDrawnIcon name="celebration" size={20} color="#D4956A" />
@@ -162,7 +162,7 @@ export function SessionSummary({
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="rounded-xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)]/30 p-4 space-y-2"
+          className="rounded-xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)]/30 p-3 space-y-2"
         >
           <p className="text-xs font-semibold text-[var(--lern-text-tertiary)] uppercase tracking-wide">
             Heute gelernt
@@ -190,7 +190,7 @@ export function SessionSummary({
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.75 }}
-          className="rounded-xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)]/30 p-4 space-y-2"
+          className="rounded-xl bg-[var(--lern-card-bg)] border border-[var(--lern-border)]/30 p-3 space-y-2"
         >
           <div className="flex items-center justify-between">
             <p className="text-xs font-semibold text-[var(--lern-text-tertiary)] uppercase tracking-wide">
@@ -227,7 +227,7 @@ export function SessionSummary({
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.85 }}
-            className="rounded-xl border p-4 space-y-2"
+            className="rounded-xl border p-3 space-y-2"
             style={{
               backgroundColor: "rgba(255, 214, 10, 0.06)",
               borderColor: "rgba(255, 214, 10, 0.25)",
