@@ -440,9 +440,39 @@ export type StepType =
   | "conceptmap"      // Konzept-Knoten verbinden
   | "chatSim"         // KI-Patient Chat-Simulation
   | "estimation"      // Zahlen-Schätzung mit Auflösung
-  | "crowdPoll";      // Umfrage mit Seed-Ergebnissen (Mentimeter-Stil)
+  | "crowdPoll"       // Umfrage mit Seed-Ergebnissen (Mentimeter-Stil)
+  | "pflegewagen";    // Items auf Pflegewagen-Etagen ziehen (Material-Vorbereitung)
 
 // === NEUE STEP-TYPEN v3 (Phase 2) ===
+
+// Pflegewagen — Items auf Wagen-Etagen ziehen (Material-Vorbereitung)
+export interface PflegewagenZone {
+  id: string;
+  label: string;
+  labelB1?: string;
+  beschreibung?: string;       // z.B. "Steriler Bereich" oder "Auf den Wagen"
+  beschreibungB1?: string;
+  variant?: "primary" | "secondary" | "discard";  // visuelle Tönung
+}
+
+export interface PflegewagenItem {
+  id: string;
+  label: string;
+  labelB1?: string;
+  icon: string;                // Lucide Icon-Name (z.B. "Footprints", "ShieldCheck")
+  korrekteZoneId: string | null;  // null = Distraktor (gehört nirgendwo hin / "weglegen")
+  erklaerung: string;          // Warum gehört es dorthin (oder warum nicht)
+  erklaerungB1?: string;
+}
+
+export interface PflegewagenData {
+  fragetext: string;
+  fragetextB1?: string;
+  zonen: PflegewagenZone[];
+  items: PflegewagenItem[];
+  begruendung: string;         // Gesamterklärung nach dem Check
+  begruendungB1?: string;
+}
 
 // WordOrder — Satzbausteine in richtige Reihenfolge ziehen
 export interface WordOrderData {

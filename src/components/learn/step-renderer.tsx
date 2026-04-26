@@ -51,6 +51,7 @@ const StepMatrix = dynamic(() => import("@/components/learn/step-matrix").then(m
 const StepConceptMap = dynamic(() => import("@/components/learn/step-conceptmap").then(m => ({ default: m.StepConceptMap })), { loading: () => <StepSkeleton /> });
 const StepChatSim = dynamic(() => import("@/components/learn/step-chatsim").then(m => ({ default: m.StepChatSim })), { loading: () => <StepSkeleton /> });
 const StepCrowdPoll = dynamic(() => import("@/components/learn/step-crowd-poll").then(m => ({ default: m.StepCrowdPoll })), { loading: () => <StepSkeleton /> });
+const StepPflegewagen = dynamic(() => import("@/components/learn/step-pflegewagen").then(m => ({ default: m.StepPflegewagen })), { loading: () => <StepSkeleton /> });
 
 export interface StepRendererProps {
   step: ContentStep;
@@ -857,6 +858,32 @@ export function StepRenderer({
           glossar={glossar}
           sprachLevel={sprachLevel}
           onNext={() => onNext()}
+        />
+      );
+    }
+
+    case "pflegewagen": {
+      const pwData = q?.pflegewagen;
+      if (!pwData?.zonen || !pwData?.items) return null;
+      const fragetext =
+        sprachLevel === "b1" && pwData.fragetextB1
+          ? pwData.fragetextB1
+          : pwData.fragetext;
+      const begruendung =
+        sprachLevel === "b1" && pwData.begruendungB1
+          ? pwData.begruendungB1
+          : pwData.begruendung;
+      return (
+        <StepPflegewagen
+          title={content.title}
+          body={content.body || undefined}
+          fragetext={fragetext}
+          zonen={pwData.zonen}
+          items={pwData.items}
+          begruendung={begruendung}
+          glossar={glossar}
+          sprachLevel={sprachLevel}
+          onNext={(correct) => onNext(correct)}
         />
       );
     }

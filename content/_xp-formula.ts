@@ -57,6 +57,7 @@ const BASE_XP: Record<StepType, number> = {
   chatSim: 25,
   estimation: 15,
   crowdPoll: 10,
+  pflegewagen: 20,
 };
 
 /**

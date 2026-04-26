@@ -95,6 +95,163 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       },
     },
 
+    // Step 4.2b — Pflegewagen: Material für die erste Mobilisation vorbereiten
+    {
+      stepId: "ce02-frau-m-dur-02b-mobi-vorbereitung",
+      phase: 4,
+      stepType: "pflegewagen",
+      bloomLevel: 3,
+      kompetenzbereich: "I.1",
+      quellen: ["DNQP Sturzprophylaxe 2022", "I Care Pflege"],
+      track: "basis",
+      modus: "praxis-sim",
+      lernziel: "ce02-frau-m-mobi-vorbereitung",
+      tag: "pflege",
+      contentC1: {
+        title: "Material vorbereiten — erste Mobilisation",
+        body: "Frau M. liegt jetzt im Bett, der Arzt ist informiert. Bevor du sie zum ersten Aufstehen nach dem Sturz mobilisierst, richtest du dein Material her. Was brauchst du wirklich — und was nicht?",
+        glossarBegriffe: ["Schellong-Test", "Trochanter major", "Orthostase"],
+      },
+      contentB1: {
+        title: "Material vorbereiten",
+        body: "Frau M. liegt jetzt im Bett. Der Arzt weiß Bescheid. Jetzt bereitest du Marianne vor, dass sie das erste Mal aufsteht. Was legst du auf den Wagen? Was brauchst du nicht?",
+        glossarBegriffe: ["Schellong-Test"],
+      },
+      question: {
+        fragetext:
+          "Welches Material brauchst du für Mariannes erste Mobilisation? Tippe ein Material an, dann auf den passenden Bereich.",
+        pflegewagen: {
+          fragetext:
+            "Welches Material brauchst du für Mariannes erste Mobilisation? Tippe ein Material an, dann auf den passenden Bereich.",
+          fragetextB1:
+            "Was brauchst du für die erste Mobilisation? Tippe ein Material an. Dann tippe auf den richtigen Bereich.",
+          zonen: [
+            {
+              id: "wagen",
+              label: "Mobilisations-Wagen",
+              labelB1: "Auf den Wagen",
+              beschreibung: "Was du JETZT für Marianne brauchst",
+              beschreibungB1: "Was du jetzt brauchst",
+              variant: "primary",
+            },
+            {
+              id: "weglegen",
+              label: "Brauche ich jetzt nicht",
+              labelB1: "Brauche ich nicht",
+              beschreibung: "Gehört nicht zur Mobilisation",
+              beschreibungB1: "Nicht für jetzt",
+              variant: "discard",
+            },
+          ],
+          items: [
+            {
+              id: "socken",
+              label: "Antirutsch-Socken",
+              labelB1: "Anti-Rutsch-Socken",
+              icon: "Footprints",
+              korrekteZoneId: "wagen",
+              erklaerung:
+                "Schützen vor Ausrutschen auf glattem Linoleum — Standard bei jedem Mobilisations-Versuch nach Sturz (DNQP).",
+              erklaerungB1:
+                "Sie schützen vor dem Ausrutschen. Das ist wichtig nach einem Sturz.",
+            },
+            {
+              id: "hueftprotektor",
+              label: "Hüftprotektor",
+              labelB1: "Hüft-Schutz",
+              icon: "ShieldCheck",
+              korrekteZoneId: "wagen",
+              erklaerung:
+                "Polstert den Trochanter major und reduziert das Frakturrisiko bei erneutem Sturz deutlich (DNQP-Standard Sturzprophylaxe).",
+              erklaerungB1:
+                "Er schützt die Hüfte. Wenn Marianne wieder fällt, bricht die Hüfte nicht so leicht.",
+            },
+            {
+              id: "rrmanschette",
+              label: "Blutdruckmanschette",
+              labelB1: "Blutdruck-Manschette",
+              icon: "Gauge",
+              korrekteZoneId: "wagen",
+              erklaerung:
+                "Schellong-Test vor dem Aufstehen: messen im Liegen, im Sitzen, im Stehen. Orthostase ist die häufigste Sturzursache bei älteren Menschen unter Z-Substanzen.",
+              erklaerungB1:
+                "Du misst den Blutdruck im Liegen, im Sitzen, im Stehen. So findest du heraus, ob der Kreislauf stabil ist.",
+            },
+            {
+              id: "rufknopf",
+              label: "Notrufkabel in Reichweite",
+              labelB1: "Notruf-Kabel",
+              icon: "BellRing",
+              korrekteZoneId: "wagen",
+              erklaerung:
+                "Marianne muss jederzeit Hilfe rufen können — auch wenn du den Raum kurz verlässt, um etwas zu holen.",
+              erklaerungB1:
+                "Marianne muss immer Hilfe rufen können. Das Kabel ist wichtig.",
+            },
+            {
+              id: "wasser",
+              label: "Trinkglas Wasser",
+              labelB1: "Glas Wasser",
+              icon: "GlassWater",
+              korrekteZoneId: "wagen",
+              erklaerung:
+                "Dehydratation verstärkt Orthostase. Vor und nach dem Aufstehen trinken stabilisiert den Kreislauf.",
+              erklaerungB1:
+                "Wasser hilft dem Kreislauf. Marianne trinkt vor und nach dem Aufstehen.",
+            },
+            {
+              id: "brille",
+              label: "Brille",
+              labelB1: "Brille",
+              icon: "Glasses",
+              korrekteZoneId: "wagen",
+              erklaerung:
+                "Marianne hat Katarakt. Ohne Brille verschlechtert sich die Tiefenwahrnehmung — das Sturzrisiko steigt deutlich.",
+              erklaerungB1:
+                "Marianne sieht ohne Brille schlecht. Sie braucht die Brille zum sicheren Aufstehen.",
+            },
+            {
+              id: "buch",
+              label: "Buch",
+              labelB1: "Buch",
+              icon: "Book",
+              korrekteZoneId: null,
+              erklaerung:
+                "Das Buch ist für die Pause später — bei der Mobilisation lenkt es nur ab.",
+              erklaerungB1:
+                "Das Buch ist für später. Jetzt nicht wichtig.",
+            },
+            {
+              id: "spray",
+              label: "Putzspray",
+              labelB1: "Putz-Spray",
+              icon: "SprayCan",
+              korrekteZoneId: null,
+              erklaerung:
+                "Reinigung gehört nicht zur Mobilisationsvorbereitung. Anderer Arbeitsbereich, andere Zeit.",
+              erklaerungB1:
+                "Putzen machst du jetzt nicht. Das ist eine andere Aufgabe.",
+            },
+            {
+              id: "schere",
+              label: "Verbandschere",
+              labelB1: "Verband-Schere",
+              icon: "Scissors",
+              korrekteZoneId: null,
+              erklaerung:
+                "Frau M. hat keine offene Wunde, die einen Verbandwechsel braucht. Die Schere wäre für andere Patient:innen.",
+              erklaerungB1:
+                "Marianne hat keine Wunde. Die Schere brauchst du nicht.",
+            },
+          ],
+          begruendung:
+            "Sturzprophylaxe nach Sturz folgt einem klaren Standard (DNQP): Sicherheit zuerst (Antirutsch-Socken, Brille, Notruf), Kreislauf-Stabilisierung (Schellong-Test, Wasser), Frakturschutz (Hüftprotektor). Was nicht zur Mobilisation gehört, lenkt ab oder kostet Zeit.",
+          begruendungB1:
+            "Nach einem Sturz brauchst du: Schutz (Socken, Hüft-Schutz, Brille), Sicherheit (Notruf), Kreislauf-Hilfe (Blutdruck, Wasser). Andere Sachen brauchst du jetzt nicht.",
+        },
+      },
+    },
+
     // Step 4.3 — Branching (GROSS, 3 Pfade): Mobilisation-Hauptbranching
     {
       stepId: "ce02-frau-m-dur-03-mobilisation-hauptbranching",
