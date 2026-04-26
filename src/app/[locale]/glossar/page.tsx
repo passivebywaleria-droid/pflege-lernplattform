@@ -107,15 +107,32 @@ export default function GlossarPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[var(--lern-bg)]" dir={locale === "ar" ? "rtl" : "ltr"} style={{ color: "var(--lern-text-primary)" }}>
-      {/* Header */}
-      <div className="sticky top-0 z-40 bg-[var(--lern-topbar-bg)] backdrop-blur-xl border-b border-[var(--lern-border)]">
-        <div className="max-w-2xl mx-auto px-4 py-4">
-          <h1 className="text-2xl font-bold mb-3">{t("title")}</h1>
+    <div
+      className="min-h-screen bg-[var(--lern-bg)] pb-24"
+      dir={locale === "ar" ? "rtl" : "ltr"}
+      style={{ color: "var(--lern-text-primary)" }}
+    >
+      {/* Header — Bundle-Stil */}
+      <header className="sticky top-0 z-40 bg-[var(--lern-bg)]/95 backdrop-blur-md border-b border-[var(--lern-border)]">
+        <div className="max-w-2xl mx-auto px-4 pt-3 pb-3">
+          <div className="flex items-center justify-between mb-2.5">
+            <h1 className="text-base font-semibold text-[var(--lern-text-primary)]">
+              {t("title")}
+            </h1>
+            <span className="text-[10px] tabular-nums uppercase tracking-wider text-[var(--lern-text-tertiary)]">
+              {gefilterteEintraege.length}
+            </span>
+          </div>
 
           {/* Suchfeld */}
-          <div className="relative mb-3">
-            <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#8e8e93]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <div className="relative mb-2.5">
+            <svg
+              className="absolute left-2.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--lern-text-tertiary)]"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
               <circle cx="11" cy="11" r="8" />
               <path d="m21 21-4.35-4.35" />
             </svg>
@@ -124,35 +141,35 @@ export default function GlossarPage() {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               placeholder={t("searchPlaceholder")}
-              className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-[var(--lern-bg)] border border-[var(--lern-border)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--lern-accent)]/30 focus:border-[var(--lern-accent)] transition-colors"
+              className="w-full pl-9 pr-3 py-2 rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] text-sm focus:outline-none focus:border-[var(--lern-accent)] transition-colors"
             />
           </div>
 
-          {/* Sprach-Toggle */}
-          <div className="flex gap-1.5 mb-3">
+          {/* Sprach-Toggle + Fachgebiet-Filter in einer Zeile */}
+          <div className="flex gap-1 mb-1.5">
             {(["de", "ar", "tr"] as const).map((lang) => (
               <button
                 key={lang}
                 onClick={() => setAnsicht(lang)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+                className={`px-2.5 py-1 rounded-md text-[11px] font-semibold transition-colors ${
                   ansicht === lang
                     ? "bg-[var(--lern-accent)] text-white"
-                    : "bg-[var(--lern-bg)] text-[var(--lern-text-primary)]/60 hover:bg-[var(--lern-divider)]"
+                    : "bg-[var(--lern-bg-primary)] text-[var(--lern-text-tertiary)] border border-[var(--lern-border)]"
                 }`}
               >
-                {lang === "de" ? "Deutsch" : lang === "ar" ? "العربية" : "Türkçe"}
+                {lang === "de" ? "DE" : lang === "ar" ? "AR" : "TR"}
               </button>
             ))}
           </div>
 
           {/* Fachgebiet-Filter */}
-          <div className="flex gap-1.5 overflow-x-auto pb-1 -mx-4 px-4 no-scrollbar">
+          <div className="flex gap-1 overflow-x-auto pb-0.5 -mx-4 px-4 no-scrollbar">
             <button
               onClick={() => setAktiverFilter("alle")}
-              className={`shrink-0 px-3 py-1 min-h-[44px] rounded-full text-xs font-medium transition-colors ${
+              className={`shrink-0 px-2.5 py-1 rounded-full text-[11px] font-medium transition-colors ${
                 aktiverFilter === "alle"
-                  ? "bg-[var(--lern-text-primary)] text-white"
-                  : "bg-[var(--lern-bg)] text-[var(--lern-text-primary)]/60 hover:bg-[var(--lern-divider)]"
+                  ? "bg-[var(--lern-text-primary)] text-[var(--lern-bg)]"
+                  : "bg-[var(--lern-bg-primary)] text-[var(--lern-text-tertiary)] border border-[var(--lern-border)]"
               }`}
             >
               {t("all")}
@@ -161,10 +178,10 @@ export default function GlossarPage() {
               <button
                 key={fg}
                 onClick={() => setAktiverFilter(fg)}
-                className={`shrink-0 px-3 py-1 min-h-[44px] rounded-full text-xs font-medium transition-colors ${
+                className={`shrink-0 px-2.5 py-1 rounded-full text-[11px] font-medium transition-colors ${
                   aktiverFilter === fg
-                    ? "bg-[var(--lern-text-primary)] text-white"
-                    : "bg-[var(--lern-bg)] text-[var(--lern-text-primary)]/60 hover:bg-[var(--lern-divider)]"
+                    ? "bg-[var(--lern-text-primary)] text-[var(--lern-bg)]"
+                    : "bg-[var(--lern-bg-primary)] text-[var(--lern-text-tertiary)] border border-[var(--lern-border)]"
                 }`}
               >
                 {fg}
@@ -172,17 +189,10 @@ export default function GlossarPage() {
             ))}
           </div>
         </div>
-      </div>
-
-      {/* Ergebnis-Anzahl */}
-      <div className="max-w-2xl mx-auto px-4 py-3">
-        <p className="text-xs text-[#8e8e93]">
-          {gefilterteEintraege.length} {t("results")}
-        </p>
-      </div>
+      </header>
 
       {/* Glossar-Karten */}
-      <div className="max-w-2xl mx-auto px-4 pb-24 space-y-3">
+      <div className="max-w-2xl mx-auto px-4 pt-3 space-y-2">
         <AnimatePresence mode="popLayout">
           {gefilterteEintraege.map((eintrag) => {
             const istOffen = aufgeklappt === eintrag.id;

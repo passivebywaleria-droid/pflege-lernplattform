@@ -72,9 +72,20 @@ export function StepDialog({
   const current = phases[phase];
 
   useEffect(() => {
+    // 1) Chat-Container intern auto-bottom
     if (chatRef.current)
       chatRef.current.scrollTop = chatRef.current.scrollHeight;
-  }, [messages, typing, showChoices]);
+    // 2) Page-Scroll nach unten — damit Konsequenz/Feedback/Choices automatisch
+    //    sichtbar werden, ohne dass der User selbst scrollen muss
+    requestAnimationFrame(() => {
+      if (typeof window !== "undefined") {
+        window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: "smooth",
+        });
+      }
+    });
+  }, [messages, typing, showChoices, showFeedback, showConsequence, finished]);
 
   // Erste Patient-Nachricht automatisch als Chat-Bubble anzeigen
   const showContextMessage = useCallback(() => {

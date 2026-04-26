@@ -56,39 +56,57 @@ export default function ReviewPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[var(--lern-bg)]" style={{ color: "var(--lern-text-primary)" }}>
-      {/* Header */}
-      <div className="sticky top-0 z-50 bg-[var(--lern-topbar-bg)] backdrop-blur-xl border-b border-[var(--lern-border)]/50">
-        <div className="mx-auto max-w-2xl px-4 py-3">
+    <div
+      className="min-h-screen bg-[var(--lern-bg)] pb-24"
+      style={{ color: "var(--lern-text-primary)" }}
+    >
+      {/* Header — Bundle-Stil schlank */}
+      <header className="bg-[var(--lern-bg)] border-b border-[var(--lern-border)]">
+        <div className="mx-auto max-w-2xl px-4 pt-3 pb-3">
           <div className="flex items-center justify-between">
             <Link
               href={`/${locale}/dashboard`}
-              className="text-sm font-medium text-[#218C71] active:opacity-60"
+              aria-label="Zurück"
+              className="text-[var(--lern-text-secondary)] hover:text-[var(--lern-text-primary)]"
             >
-              Zurück
+              ‹
             </Link>
-            <h1 className="text-lg font-bold text-[var(--lern-text-primary)]">{t("title")}</h1>
-            <div className="text-sm text-[var(--lern-text-tertiary)]">
-              {statistiken.faellig} {t("dueCards")}
-            </div>
+            <h1 className="text-base font-semibold text-[var(--lern-text-primary)]">
+              {t("title")}
+            </h1>
+            <span className="text-[10px] tabular-nums text-[var(--lern-text-tertiary)]">
+              {statistiken.faellig}
+            </span>
           </div>
         </div>
-      </div>
+      </header>
 
-      <div className="mx-auto max-w-2xl px-4 py-6">
-        {/* Statistik-Leiste */}
-        <div className="mb-6 grid grid-cols-3 gap-3">
-          <div className="rounded-2xl bg-[var(--lern-bg-primary)] p-4 text-center shadow-sm">
-            <p className="text-2xl font-bold text-[#218C71]">{statistiken.faellig}</p>
-            <p className="text-xs text-[var(--lern-text-tertiary)]">Fällig</p>
+      <div className="mx-auto max-w-2xl px-4 py-4">
+        {/* Statistik-Leiste — kompakt */}
+        <div className="mb-4 grid grid-cols-3 gap-2">
+          <div className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] px-3 py-2.5 text-center">
+            <p className="text-lg font-bold text-[var(--lern-accent)] tabular-nums">
+              {statistiken.faellig}
+            </p>
+            <p className="text-[10px] uppercase tracking-wider text-[var(--lern-text-tertiary)]">
+              Fällig
+            </p>
           </div>
-          <div className="rounded-2xl bg-[var(--lern-bg-primary)] p-4 text-center shadow-sm">
-            <p className="text-2xl font-bold text-[#3E5A6A]">{erledigtHeute}</p>
-            <p className="text-xs text-[var(--lern-text-tertiary)]">Heute erledigt</p>
+          <div className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] px-3 py-2.5 text-center">
+            <p className="text-lg font-bold text-[var(--lern-success)] tabular-nums">
+              {erledigtHeute}
+            </p>
+            <p className="text-[10px] uppercase tracking-wider text-[var(--lern-text-tertiary)]">
+              Heute
+            </p>
           </div>
-          <div className="rounded-2xl bg-[var(--lern-bg-primary)] p-4 text-center shadow-sm">
-            <p className="text-2xl font-bold text-[#D4956A]">{statistiken.gemeistert}</p>
-            <p className="text-xs text-[var(--lern-text-tertiary)]">Gemeistert</p>
+          <div className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] px-3 py-2.5 text-center">
+            <p className="text-lg font-bold text-[#D4956A] tabular-nums">
+              {statistiken.gemeistert}
+            </p>
+            <p className="text-[10px] uppercase tracking-wider text-[var(--lern-text-tertiary)]">
+              Gemeistert
+            </p>
           </div>
         </div>
 
