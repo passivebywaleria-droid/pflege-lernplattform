@@ -168,13 +168,34 @@ export function StepDialog({
     }, 800);
   }, [phase, phases, patientName, sprachLevel]);
 
-  // Beim Start die erste Context-Nachricht zeigen
+  // Beim Start: body als Setup-Narration + ggf. Initial-Patient-Speech zeigen,
+  // dann erste Phase einleiten.
   useEffect(() => {
     if (!initialized && phases.length > 0) {
       setInitialized(true);
-      showContextMessage();
+      // body in den Chat einspeisen (Bühnenanweisung + ggf. Patientenzitat)
+      if (body && body.trim().length > 0) {
+        const { gestik, speech } = parseGestikUndSpeech(body);
+        if (gestik || speech) {
+          setMessages((m) => {
+            const next = [...m];
+            if (gestik) next.push({ sender: "narration", text: gestik });
+            if (speech)
+              next.push({
+                sender: "patient",
+                text: speech,
+                speakerName: patientName,
+              });
+            return next;
+          });
+        }
+      }
+      // Kleine Pause, dann erste Phase laden
+      setTimeout(() => {
+        showContextMessage();
+      }, 400);
     }
-  }, [initialized, phases.length, showContextMessage]);
+  }, [initialized, phases.length, body, patientName, showContextMessage]);
 
   const choose = (opt: DialogOption) => {
     // Patient-Reply: speaker = patientName (NICHT "Du" — auch wenn Phase-context
@@ -308,7 +329,7 @@ export function StepDialog({
         minHeight: "calc(100dvh - 220px)",
       }}
     >
-      {/* Header — kompakter, kein langer Body */}
+      {/* Header — body fließt jetzt direkt in den Chat (als Setup-Narration) */}
       <div className="shrink-0">
         <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--lern-accent)]">
           Dialog
@@ -316,16 +337,6 @@ export function StepDialog({
         <h2 className="text-[19px] font-semibold leading-tight text-[var(--lern-text-primary)] mt-1">
           {title}
         </h2>
-        {body && (
-          <details className="mt-2 text-xs">
-            <summary className="cursor-pointer text-[var(--lern-accent)] font-medium">
-              Mehr Kontext
-            </summary>
-            <p className="mt-2 text-sm text-[var(--lern-text-secondary)] leading-relaxed">
-              <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
-            </p>
-          </details>
-        )}
       </div>
 
       {/* Vitals monitor */}

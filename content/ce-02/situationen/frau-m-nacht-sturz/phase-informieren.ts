@@ -175,9 +175,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Frau M. blickt dich an. Ihre Stimme ist leise, ihre Hände liegen gefaltet im Schoß. Sie sagt:",
+              "Frau M. blickt dich an. Ihre Stimme ist leise, ihre Hände liegen gefaltet im Schoß. \"Es tut mir furchtbar leid, dass ich Sie jetzt um diese Zeit in Anspruch nehmen muss. Ich wollte nur kurz auf die Toilette. Ich weiß wirklich nicht, wie das passieren konnte.\"",
             contextB1:
-              "Frau M. schaut dich an. Sie spricht leise. Ihre Hände sind gefaltet. Sie sagt:",
+              "Frau M. schaut dich an. Sie spricht leise. Ihre Hände sind gefaltet. \"Es tut mir leid, dass ich Sie nachts störe. Ich wollte nur zur Toilette. Ich weiß nicht, wie das passieren konnte.\"",
             speaker: "Frau M.",
             options: [
               {
