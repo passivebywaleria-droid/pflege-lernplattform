@@ -121,7 +121,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
             {
               id: 4,
               correct: "vollständig",
-              distractors: ["kaum", "leicht eingeschränkt", "nicht"],
+              distractors: ["zeitlich eingeschränkt aber sonst", "kaum", "nicht"],
             },
             {
               id: 5,
@@ -150,12 +150,12 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Maßnahmen für heute Vormittag — richtige Reihenfolge",
-        body: "Du hast alle Informationen gesammelt. Jetzt planst du den Vormittag mit Frau Yilmaz. Bringe die folgenden Pflegemaßnahmen in die richtige Reihenfolge. Die Reihenfolge ist nicht beliebig — sie folgt einer Logik.",
+        body: "Du hast alle Informationen gesammelt. Jetzt planst du den Vormittag mit Frau Yilmaz. Bringe die folgenden Pflegemaßnahmen in die richtige Reihenfolge. Die Reihenfolge ist nicht beliebig — sie folgt einer Logik.\n\n**Hinweis zur Toleranz:** Items 4 und 5 (Frau Yilmaz informieren / Mustafa via Frau Yilmaz informieren) können auch in umgekehrter Reihenfolge stehen — die Logik bleibt: Patientin verstanden → Angehöriger eingeweiht → praktisch vorbereiten.",
         glossarBegriffe: ["Analgesie", "Wirkzeit", "Mobilisation", "Schmerzreassessment"],
       },
       contentB1: {
         title: "Was machst du in welcher Reihenfolge?",
-        body: "Du planst den Vormittag. Bringe die Maßnahmen in die richtige Reihenfolge.",
+        body: "Du planst den Vormittag. Bringe die Maßnahmen in die richtige Reihenfolge.\n\n(Tipp: Frau Yilmaz informieren und Mustafa erklären — diese beiden Schritte können auch andersrum stehen.)",
         glossarBegriffe: [],
       },
       question: {
@@ -164,10 +164,11 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
         sortItems: [
           "Prüfen ob Metamizol als Morgenmedikament gegeben wurde (ggf. nachholen)",
           "30 Minuten warten (Wirkzeit der Analgesie)",
+          "Wadenschmerz links: Arzt informieren — Doppler-Sonografie beauftragen (vor Mobilisation, falls Thrombose nicht ausgeschlossen)",
           "Zimmer vorbereiten: Unterarmgehstützen bereitstellen, Betthöhe anpassen",
           "Frau Yilmaz über den Plan informieren, Angst ernst nehmen",
           "Ehemann Mustafa durch Frau Yilmaz kurz erklären lassen was geplant ist",
-          "Aufstehversuch: Bett hoch → Beine über Bettkante → 3 Min sitzen → dann aufstehen",
+          "Aufstehversuch: RR liegend messen → Beine über Bettkante (operiertes Bein zuerst) → Schellong (≥1 Min sitzen, RR sitzend) → dann aufstehen",
           "Nach Aufstehen: Schmerz-Reassessment, Lagerung danach prüfen",
         ],
       },

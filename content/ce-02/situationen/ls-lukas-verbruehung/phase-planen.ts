@@ -92,13 +92,13 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
       displayFormat: "stepbystep",
       contentC1: {
         title: "Feuchte Wundbehandlung bei Grad 2a — warum und wie",
-        body: "**Warum feuchte Wundbehandlung?** Das feuchte Wundmilieu beschleunigt die Epithelisierung, schützt die Wundfläche vor Austrocknung und reduziert den Schmerz beim nächsten Verbandwechsel — weil die Auflage nicht an der Wunde festklebt.\n\n**Materialien für Lukas:**\n1. Hydroaktive Wundauflage (z. B. Polyurethanschaum oder Hydrokolloid-Verband) — haftet nicht an Wunde\n2. Kein festes Einwickeln — Lukas muss seinen Arm bewegen können\n3. Keine alkoholhaltigen Desinfektionsmittel — Schleimhaut und Kinderhaut reagieren empfindlich\n4. Keine Chlorhexidin-Spülung bei unter 2-Jährigen (Schluckgefahr, Reizung) — bei Lukas (2,5 J.) Vorsicht\n\n**Intervall:** 48–72 Stunden bei intakten Blasen, bei Zeichen von Infektion früher.\n\nQuelle: _(DGV-Leitlinie Thermische Verletzungen, 2023)_",
-        glossarBegriffe: ["Epithelisierung", "Hydroaktive Wundauflage", "Hydrokolloid"],
+        body: "**Warum feuchte Wundbehandlung?** Das feuchte Wundmilieu beschleunigt die Epithelisierung, schützt die Wundfläche vor Austrocknung und reduziert den Schmerz beim nächsten Verbandwechsel — weil die Auflage nicht an der Wunde festklebt.\n\n**Materialien für Lukas:**\n1. Hydroaktive Wundauflage (z. B. Polyurethanschaum oder Hydrokolloid-Verband) — haftet nicht an Wunde\n2. Kein festes Einwickeln — Lukas muss seinen Arm bewegen können\n3. Keine alkoholhaltigen Desinfektionsmittel — Schleimhaut und Kinderhaut reagieren empfindlich\n4. Keine Chlorhexidin-Mundspülungen bei Kindern unter 6 Jahren (Schluckgefahr, Schleimhautreizung — DGKJ 2022); kindgerechte Alternative für die Mundpflege ist Octenidin oder eine schluckbare Kamillen-/Salbei-Lösung\n\n**Intervall:** 48–72 Stunden bei intakten Blasen, bei Zeichen von Infektion früher.\n\nQuelle: _(DGV-Leitlinie Thermische Verletzungen, 2023; DGKJ 2022 Mundpflege Kleinkind)_",
+        glossarBegriffe: ["Epithelisierung", "Hydroaktive Wundauflage", "Hydrokolloid", "Octenidin"],
       },
       contentB1: {
         title: "Feuchte Wundversorgung — Schritt für Schritt",
-        body: "**Warum feucht?** Feucht heilt besser als trocken. Die Auflage klebt nicht an der Wunde — das macht den nächsten Verbandwechsel weniger schmerzhaft.\n\n**Was wir brauchen:**\n1. Wundauflage die nicht klebt (z. B. Polyurethanschaum)\n2. Kein fest Einwickeln — Lukas muss seinen Arm bewegen\n3. Kein Alkohol auf die Wunde — zu reizend für Kinderhaut\n4. Kein Chlorhexidin (Mundspülung für Kinder unter 2 Jahren verboten — bei Lukas Vorsicht)\n\n**Wann Wechsel?** Alle 48–72 Stunden — bei intakten Blasen. Früher bei Zeichen einer Entzündung.",
-        glossarBegriffe: ["Wundauflage", "Polyurethanschaum"],
+        body: "**Warum feucht?** Feucht heilt besser als trocken. Die Auflage klebt nicht an der Wunde — das macht den nächsten Verbandwechsel weniger schmerzhaft.\n\n**Was wir brauchen:**\n1. Wundauflage die nicht klebt (z. B. Polyurethanschaum)\n2. Kein fest Einwickeln — Lukas muss seinen Arm bewegen\n3. Kein Alkohol auf die Wunde — zu reizend für Kinderhaut\n4. Kein Chlorhexidin für die Mundpflege bei Kindern unter 6 Jahren (Schluckgefahr, reizt die Schleimhaut). Stattdessen: Octenidin oder Kamille — die kann Lukas schlucken ohne Gefahr.\n\n**Wann Wechsel?** Alle 48–72 Stunden — bei intakten Blasen. Früher bei Zeichen einer Entzündung.",
+        glossarBegriffe: ["Wundauflage", "Polyurethanschaum", "Octenidin"],
       },
     },
 
@@ -135,9 +135,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
           unit: "ml/Tag",
           tolerance: 10,
           explanation:
-            "Richtig: 100 ml × 10 kg = 1000 ml + 50 ml × 3,2 kg = 160 ml → Grundbedarf 1160 ml/Tag. Zusatzhinweis: Bei Verbrühung kommt ein Verbrühungs-Zusatzbedarf hinzu (ca. 1–2 ml/kg/% KOF in den ersten 24h = 13,2 × 15 = ca. 200–400 ml extra). Das Gesamtziel wird vom Arzt festgelegt und mit i.v.-Flüssigkeit ergänzt wenn Trinkziel nicht erreicht wird.",
+            "Richtig: 100 ml × 10 kg = 1000 ml + 50 ml × 3,2 kg = 160 ml → Grundbedarf 1160 ml/Tag. Zusatzhinweis: Bei Verbrühung kommt ein Verbrühungs-Zusatzbedarf hinzu, den der Arzt nach standardisierten Schema-Formeln berechnet (Parkland-Formel: 4 ml × kg × % KOF in 24h, davon 50 % in den ersten 8h; bei Kindern oft modifizierte Galveston-Formel). Für Lukas wäre Parkland orientierend: 4 × 13,2 × 15 ≈ 790 ml zusätzlich in 24 h. Die genaue Menge legt der Arzt fest und ergänzt mit i.v.-Flüssigkeit, wenn das Trinkziel nicht erreicht wird.",
           explanationB1:
-            "Richtig: 10 kg × 100 ml = 1000 ml. Noch 3,2 kg × 50 ml = 160 ml. Zusammen: 1160 ml pro Tag. Das ist der Grundbedarf. Bei Verbrühung braucht Lukas noch mehr — das entscheidet der Arzt.",
+            "Richtig: 10 kg × 100 ml = 1000 ml. Noch 3,2 kg × 50 ml = 160 ml. Zusammen: 1160 ml pro Tag. Das ist der Grundbedarf. Bei Verbrühung braucht Lukas noch mehr Flüssigkeit. Der Arzt rechnet das nach einer Standard-Formel (Parkland) aus: ungefähr 790 ml extra für die ersten 24 Stunden. Diese genaue Menge entscheidet der Arzt.",
         },
       },
     },

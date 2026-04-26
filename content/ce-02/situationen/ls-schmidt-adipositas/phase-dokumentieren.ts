@@ -32,27 +32,27 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Pflegebericht — Frühdienst heute",
-        body: "Schreibe den Pflegebericht für Frau Schmidt, Frühdienst heute. Dein Text soll enthalten: 1) Zustand der Haut (Hautfalten — Befund nach Inspektion), 2) BZ-Messwert und Kommentar (nüchtern + postprandial), 3) BZ-Tagesprofil-Trend (5 Tage), 4) Ernährungsgespräch (was besprochen, wie Frau Schmidt reagiert), 5) Fußbefund + Podologie-Termin (was gemacht, was initiiert), 6) Inkontinenzversorgung (Typ, Selbstpflege-Fähigkeit), 7) Verhalten/Stimmung von Frau Schmidt.",
+        body: "Schreibe den Pflegebericht für Frau Schmidt, Frühdienst heute. **Wichtig — § 630f BGB / DBfK-Pflegedokumentationsstandard:** Pflegedokumentation muss OBJEKTIV sein. Erlaubt sind: Beobachtungen, Messwerte, Handlungen, wörtliche Patientenzitate. NICHT erlaubt sind: Wertungen wie \"fachgerecht\", \"gut versorgt\", \"freut sich\". Statt Wertung den BEFUND beschreiben.\n\nDein Text soll enthalten: 1) Zustand der Haut (Hautfalten — Befund nach Inspektion), 2) BZ-Messwert (nüchtern + postprandial), 3) BZ-Tagesprofil-Trend (5 Tage), 4) Ernährungsgespräch (was besprochen, mit wörtlichem Patientenzitat statt Bewertung), 5) Fußbefund + Podologie-Termin (was beobachtet, was geleistet, KEINE Bewertung der Fremd-Leistung), 6) Inkontinenzversorgung (Beobachtung der Selbstständigkeit), 7) Verhalten/Stimmung — beschreiben, nicht interpretieren.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Pflege-Bericht — Frühdienst heute",
-        body: "Schreibe einen Pflege-Bericht für Frau Schmidt — Frühdienst heute. Dein Text soll enthalten:\n1. Haut der Falten: Wie sieht die Haut aus?\n2. Blutzucker: Welcher Wert? Kommentar?\n3. Blutzucker-Trend: Besser oder schlechter?\n4. Ernährungs-Gespräch: Was besprochen? Wie hat Frau Schmidt reagiert?\n5. Fuß-Befund: Was gesehen? Wem gemeldet?\n6. Inkontinenz-Versorgung: Wie war die Versorgung heute?\n7. Stimmung: Wie war Frau Schmidt?\n\nSchreibe objektiv (= nur was du gesehen hast, keine Meinungen). Schreibe kurz.",
+        body: "Schreibe einen Pflege-Bericht für Frau Schmidt — Frühdienst heute.\n\n**Wichtig:** Pflege-Dokumentation muss OBJEKTIV sein (§ 630f BGB).\n- Schreibe nur was du gesehen, gemessen, gemacht hast.\n- KEINE Wertungen wie \"gut\", \"fachgerecht\", \"freut sich\". Stattdessen: Befund beschreiben oder Frau Schmidt zitieren.\n\nDein Text soll enthalten:\n1. Haut der Falten: Wie sieht die Haut aus?\n2. Blutzucker: Welcher Wert?\n3. Blutzucker-Trend: Welche Werte über 5 Tage?\n4. Ernährungs-Gespräch: Was besprochen? Was hat Frau Schmidt wörtlich gesagt?\n5. Fuß-Befund: Was gesehen? Wer war heute morgen da?\n6. Inkontinenz-Versorgung: Wie hat sie es heute gemacht?\n7. Stimmung: Was hast du beobachtet?\n\nSchreibe kurz und sachlich.",
         glossarBegriffe: [],
       },
       question: {
         fragetext:
-          "Schreibe den vollständigen Pflegebericht für Frau Schmidt — Frühdienst heute. (~120–180 Wörter)",
+          "Schreibe den vollständigen Pflegebericht für Frau Schmidt — Frühdienst heute. OBJEKTIVE Sprache, keine Wertungen (§ 630f BGB). (~120–180 Wörter)",
         musterantwort:
-          "08:30 Morgenpflege durchgeführt. Frau Schmidt kooperativ und kommunikativ. Hautfalten (submammär, inguinal, abdominal) inspiziert: trocken, intakt, kein Erythem, kein Geruch. Trockentupfen und dünn Hautschutzlotion aufgetragen, Befund dokumentiert. BZ nüchtern 08:00: 148 mg/dl (Trend Tag 1–5: 398→287→187→165→148, deutlich rückläufig, Zielwert < 130 noch nicht erreicht). BZ postprandial 12:00: 189 mg/dl (Ziel < 180, knapp drüber). Ernährungsgespräch geführt: Frau Schmidt offen für eiweißreiche Mahlzeiten, sagt \"das macht Sinn mit dem Zucker\". Ernährungsberaterin-Protokoll eingesehen. Fußinspektion: Wagner-1-Befund unverändert, heute Morgen erste Podologin-Behandlung erfolgt (Nägel fachgerecht versorgt, Risse desinfiziert). Inkontinenzversorgung: Frau Schmidt wechselt selbst, keine Hilfe nötig. Stimmung: entspannt, kommunikativ, Entlassungsplanung angesprochen — Frau Schmidt freut sich nach Hause zu kommen.",
+          "08:30 Morgenpflege durchgeführt. Hautfalten (submammär, inguinal, abdominal) inspiziert: Haut trocken, intakt, kein Erythem, kein Geruch. Trockentupfen, anschließend Hautschutz-Lotion dünn aufgetragen. BZ nüchtern 08:00: 148 mg/dl (Trend Tag 1–5: 398/287/187/165/148, Zielwert < 130 noch nicht erreicht). BZ postprandial 12:00: 189 mg/dl (Ziel < 180). Ernährungsgespräch geführt; Frau Schmidt äußerte: \"Das macht Sinn mit dem Zucker.\" Ernährungsberaterin-Protokoll eingesehen. Fußinspektion: Befund Wagner Grad 1 unverändert, kein Ulkus. Podologin Frau X führte 09:00–09:30 Nagelpflege und Hautrissversorgung durch. Befund nach Behandlung: Nägel gekürzt, Risse trocken, kein Erythem. Inkontinenzversorgung: Frau Schmidt wechselte die Vorlage selbstständig, keine Hilfestellung erforderlich. Verhalten: zugewandt, im Gespräch aktiv beteiligt; Frau Schmidt äußerte zur bevorstehenden Entlassung: \"Ich freu mich daheim.\"",
         bewertungskriterien: [
-          "Hautbefund (Inspektion aller Hautfalten, Befund)",
-          "BZ-Werte (nüchtern + postprandial, Trend-Kommentar)",
-          "Ernährungsgespräch (Inhalt + Reaktion Frau Schmidt)",
-          "Fußbefund + Podologie-Termin erwähnt",
-          "Inkontinenzversorgung (Art + Selbständigkeit)",
-          "Stimmung/Verhalten Frau Schmidt",
-          "Objektive Sprache, Vergangenheitsform, keine Wertungen",
+          "Hautbefund (Inspektion aller Hautfalten, beobachteter Befund — KEINE Wertung)",
+          "BZ-Werte (nüchtern + postprandial mit Zielbereich-Vergleich, ohne Bewertung)",
+          "Ernährungsgespräch — Inhalt + WÖRTLICHES Patientenzitat (statt Interpretation)",
+          "Fußbefund + Podologie-Termin: nur Fakten dokumentiert (Uhrzeit, Behandelnde, beobachteter Befund nach Behandlung) — KEINE Wertung der Podologen-Leistung wie \"fachgerecht\"",
+          "Inkontinenzversorgung: beobachtete Selbstständigkeit, ohne Bewertung",
+          "Verhalten/Stimmung: Beobachtung beschrieben (zugewandt, aktiv) ODER Patientenzitat — nicht interpretiert",
+          "Objektive Sprache, Vergangenheitsform, keine Wertungen (§ 630f BGB / DBfK-Pflegedokumentationsstandard)",
         ],
         satzanfaengeB1: [
           "Haut der Falten: ___ (Befund).",
@@ -95,12 +95,12 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
           "Fülle alle Lücken im Ernährungsprotokoll aus.",
         cloze: {
           textWithBlanks:
-            "Ernährungsprotokoll Frau Schmidt, geb. 1958, Zimmer 8.\n\nNRS-2002-Score bei Aufnahme: [BLANK_1]. Screeningdatum: [BLANK_2].\n\nProtein-Bedarf: ca. [BLANK_3] g/Tag (Berechnung: 0,8 g × Idealgewicht ca. 90 kg).\n\nZiel: täglich mindestens 3 [BLANK_4]-reiche Mahlzeiten.\n\nBesonderheit: Kein Protein-Supplement ohne [BLANK_5]-Anordnung.\n\nZuständige Ernährungsberaterin: [BLANK_6] (Name eintragen).",
+            "Ernährungsprotokoll Frau Schmidt, geb. 1958, Zimmer 8.\n\nNRS-2002-Score bei Aufnahme: [BLANK_1] (= 0 Ernährungsstatus + 1 Erkrankungsschwere + 0 Alter < 70). Screeningdatum: [BLANK_2].\n\nGLIM-Diagnose: Mangelernährung Stadium 1 (trotz BMI 38) — Albumin 31 g/l, reduzierte Proteinzufuhr.\n\nProtein-Bedarf: ca. [BLANK_3] g/Tag (Berechnung: 1,2 g × Idealgewicht ca. 56 kg nach BMI 22 bei 1,60 m Körpergröße; ESPEN 2017 bei Mangelernährung). NICHT mit Istgewicht 98 kg rechnen!\n\nZiel: täglich mindestens 3 [BLANK_4]-reiche Mahlzeiten.\n\nBesonderheit: Kein Protein-Supplement ohne [BLANK_5]-Anordnung.\n\nZuständige Ernährungsberaterin: [BLANK_6].",
           blanks: [
             {
               id: 1,
-              correct: "3",
-              distractors: ["0", "1", "2", "4"],
+              correct: "1",
+              distractors: ["0", "2", "3", "4"],
             },
             {
               id: 2,
@@ -109,8 +109,8 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
             },
             {
               id: 3,
-              correct: "72",
-              distractors: ["40", "55", "100", "120"],
+              correct: "67",
+              distractors: ["45", "78", "100", "120"],
             },
             {
               id: 4,
@@ -124,8 +124,8 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
             },
             {
               id: 6,
-              correct: "(Name eintragen — individuell)",
-              distractors: [],
+              correct: "(Name der Ernährungsberaterin individuell eintragen)",
+              distractors: ["(Name individuell)"],
             },
           ],
         },
@@ -166,7 +166,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
             right: "Arztbrief + Hausarzt + Überweisung zum Podologen",
           },
           {
-            left: "Ernährungsprotokoll + Beratungsergebnis (eiweißreiche Kost, NRS-Score 3)",
+            left: "Ernährungsprotokoll + Beratungsergebnis (eiweißreiche Kost; NRS-2002-Score 1, GLIM-Diagnose Mangelernährung Stadium 1)",
             right: "Externe Ernährungsberaterin ambulant + Hausarzt",
           },
           {

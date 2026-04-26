@@ -34,7 +34,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
         "Pflegekraft leitet ältere Patientin bei Atemübungen mit Lippenbremse an",
       contentC1: {
         title: "Lippenbremse und Kontaktatmung — Schritt für Schritt",
-        body: "**Schritt 1 — Position einstellen**\nFrau Kovač sitzt aufrecht im Sessel mit Rückenlehne, leicht vorgeneigt. Hände locker auf den Oberschenkeln. Schultern bewusst entspannen.\n\n**Schritt 2 — Einatmen**\nEinatmen durch die Nase — ruhig und langsam (ca. 2 Sekunden). Kein Schulterheben. Der Bauch hebt sich leicht.\n\n**Schritt 3 — Ausatmen mit Lippenbremse**\nLippen leicht schließen — wie beim Auspusten einer Kerze oder durch einen Strohhalm. Ausatmen 4 Sekunden. Das ist doppelt so lang wie das Einatmen. Das Pfeifen ist gewollt.\n\n**Schritt 4 — Kontaktatmung**\nDu legst sanft die Hände seitlich auf den unteren Brustkorb. Beim Ausatmen gibst du leichten Druck — das ist ein propriozeptiver Reiz, der Tiefatmung fördert.\n\n**Wichtig:** Nie mehr als 3–5 Wiederholungen am Stück bei COPD III. Danach Pause und Befindlichkeit erfragen. Quelle: (GOLD-Report COPD 2023)",
+        body: "**Schritt 1 — Position einstellen**\nFrau Kovač sitzt aufrecht im Sessel mit Rückenlehne, leicht vorgeneigt. Hände locker auf den Oberschenkeln. Schultern bewusst entspannen.\n\n**Schritt 2 — Einatmen**\nEinatmen durch die Nase — ruhig und langsam (ca. 2 Sekunden). Kein Schulterheben. Der Bauch hebt sich leicht.\n\n**Schritt 3 — Ausatmen mit Lippenbremse**\nLippen leicht schließen — wie beim Auspusten einer Kerze oder durch einen Strohhalm. Ausatmen 4 Sekunden. Das ist doppelt so lang wie das Einatmen. Das Pfeifen ist gewollt.\n\n**Schritt 4 — Kontaktatmung**\nDu legst die Hände sanft seitlich auf den unteren Brustkorb. Die Hände **folgen** der Ausatemphase passiv — sie drücken nicht. Es geht um Wahrnehmung (propriozeptiver Reiz), nicht um mechanische Atemunterstützung.\n\n**Achtung:** Bei akuter Atemnot oder Exazerbation diese Übung **nicht** anwenden — externer Druck auf den Brustkorb ist dann kontraindiziert. Stattdessen nur Lippenbremse + Kutschersitz.\n\n**Wichtig:** Nie mehr als 3–5 Wiederholungen am Stück bei COPD III. Danach Pause und Befindlichkeit erfragen. Quelle: (GOLD-Report COPD 2023; Pflege Heute 7. Aufl. Kapitel Atmung)",
         fallbezug:
           "Frau Kovač hat gestern nur 3 Minuten geschafft bevor sie erschöpft war. Heute startest du ruhiger — 3 Wiederholungen, dann kurze Pause und Beobachtung.",
         glossarBegriffe: [
@@ -46,7 +46,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
       },
       contentB1: {
         title: "Atem-Übungen — so geht das",
-        body: "**Schritt 1 — Hinsetzen**\nFrau Kovač sitzt aufrecht im Sessel. Leicht vorgeneigt. Hände auf den Knien.\n\n**Schritt 2 — Einatmen**\nDurch die Nase einatmen — ruhig und langsam (2 Sekunden). Keine Schultern hochziehen.\n\n**Schritt 3 — Ausatmen mit Lippenbremse**\nLippen leicht schließen — wie durch einen Strohhalm ausatmen (4 Sekunden). Doppelt so lang wie einatmen.\n\n**Schritt 4 — Kontaktatmung**\nDu legst deine Hände sanft auf den unteren Brustkorb. Beim Ausatmen drückst du leicht. Das hilft der Lunge tiefer zu atmen.\n\n**Wichtig:** Nur 3–5 Wiederholungen — dann Pause. Bei COPD ist die Lunge schnell erschöpft.",
+        body: "**Schritt 1 — Hinsetzen**\nFrau Kovač sitzt aufrecht im Sessel. Leicht vorgeneigt. Hände auf den Knien.\n\n**Schritt 2 — Einatmen**\nDurch die Nase einatmen — ruhig und langsam (2 Sekunden). Keine Schultern hochziehen.\n\n**Schritt 3 — Ausatmen mit Lippenbremse**\nLippen leicht schließen — wie durch einen Strohhalm ausatmen (4 Sekunden). Doppelt so lang wie einatmen.\n\n**Schritt 4 — Kontaktatmung**\nDu legst deine Hände sanft auf den unteren Brustkorb. Die Hände **folgen** der Ausatmung — du drückst nicht. Das hilft der Patientin, ihre eigene Atmung zu spüren.\n\n**Achtung:** Wenn sie gerade akut Atemnot hat — diese Übung **nicht** machen. Dann nur Lippenbremse + Kutschersitz.\n\n**Wichtig:** Nur 3–5 Wiederholungen — dann Pause. Bei COPD ist die Lunge schnell erschöpft.",
         fallbezug:
           "Gestern hat Frau Kovač nur 3 Minuten durchgehalten. Heute machst du es langsamer und ruhiger.",
         glossarBegriffe: ["Lippenbremse", "Kontaktatmung"],
@@ -249,12 +249,12 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
           "Frau Kovač gibt dir das Telefon — ihr Sohn Darko möchte Auskunft über ihren Gesundheitszustand. Was sagst du?",
         branchingOptions: [
           {
-            text: "\"Herr Kovač, guten Morgen. Ihre Mutter ist heute Morgen wohlauf — für Details müssen Sie sich bitte direkt an den Pflegedienst wenden. Frau Kovač ist die Ansprechpartnerin, nicht ich per Telefon.\"",
+            text: "\"Herr Kovač, guten Morgen. Ich kann am Telefon **keine Auskunft zum Gesundheitszustand** Ihrer Mutter geben. Bitte wenden Sie sich an den Pflegedienst — dort kann mit schriftlicher Einwilligung Ihrer Mutter ein regelmäßiger Austausch geregelt werden. Ich gebe Ihnen gern die Nummer.\"",
             isCorrect: true,
             feedback:
-              "Richtig. Ohne dokumentierte Schweigepflichtsentbindung von Frau Kovač darf keine Pflegekraft Gesundheitsdaten an Dritte weitergeben — auch nicht an Angehörige. Das gilt auch wenn der Sohn sich sorgt und die Mutter 'eigentlich einverstanden' ist. Nur 'wohlauf' ist eine neutrale Auskunft ohne Gesundheitsdaten. Die richtige Anlaufstelle ist der Pflegedienst — formal, schriftlich, mit Einwilligung von Frau Kovač. Quelle: (DSGVO 2018 Art. 9; § 203 StGB)",
+              "Richtig. Ohne dokumentierte Schweigepflichtsentbindung von Frau Kovač darf keine Pflegekraft Gesundheitsdaten an Dritte weitergeben — auch nicht an Angehörige. Wichtig: DSGVO Art. 4 Nr. 15 schützt Gesundheitsdaten **nicht erst ab Diagnose-Detail**, sondern ab jeder Information über den Gesundheitszustand. Auch ein 'wohlauf' oder 'es geht ihr gut' ist bereits eine Gesundheitsauskunft und juristisch problematisch.\n\nKorrekt: Nur die Tatsache des Besuchs erwähnen, **keine Aussage zum Zustand**, und an den Pflegedienst verweisen — dort kann mit schriftlicher Einwilligung von Frau Kovač ein Austausch geregelt werden (auch dauerhaft, z.B. 1×/Woche Anruf). Das ist die DSGVO-saubere und gleichzeitig angehörigenfreundliche Lösung. Quelle: (DSGVO 2018 Art. 4 Nr. 15, Art. 9; § 203 StGB)",
             feedbackB1:
-              "Richtig. Du gibst keine genauen Informationen am Telefon. Das Gesetz sagt: Gesundheitsdaten darf man nicht weitergeben ohne die schriftliche Erlaubnis der Patientin. Darko muss sich beim Pflegedienst melden.",
+              "Richtig. Du gibst **keine** Information über Frau Kovačs Gesundheit am Telefon — auch nicht 'es geht ihr gut'. Das Gesetz sagt: Auch das ist eine Gesundheits-Information. Du sagst nur: 'Ich kann nichts dazu sagen am Telefon. Bitte beim Pflegedienst melden.' Dort kann Darko mit der schriftlichen Erlaubnis seiner Mutter regelmäßig informiert werden.",
           },
           {
             text: "Ich erzähle Darko kurz den Zustand seiner Mutter — er macht sich bestimmt Sorgen.",
@@ -486,7 +486,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
           cards: [
             {
               front: "SpO2 unter 88 % (trotz Ruhe und Lageänderung)",
-              back: "Kritisch. Bei COPD ist 88–92 % der Zielkorridor. Unter 88 % = Gewebehypoxie droht. Sofortig: Notarzt + Lagerung optimieren.",
+              back: "Kritisch. 88–92 % ist der **therapeutische Zielkorridor unter Sauerstoffgabe** bei akuter Exazerbation — nicht der Normalwert im stabilen Zustand. Unter 88 % auch nach Ruhe und Lageoptimierung = Gewebehypoxie droht. Sofortig: Notarzt rufen, Lagerung optimieren, parallel weiter beobachten.",
               backB1:
                 "Kritisch. Zu wenig Sauerstoff im Blut. Sofort Notarzt rufen.",
             },

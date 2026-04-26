@@ -65,17 +65,17 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
             },
             {
               id: "trinkziel",
-              text: "Trinkprotokoll-Ziel für heute vereinbaren",
-              correctQuadrant: 2,
+              text: "Trinkprotokoll-Ziel für heute vereinbaren (Beratung)",
+              correctQuadrant: 1,
             },
             {
               id: "kompressions-gespraech",
-              text: "Gespräch über Kompressionsstrümpfe führen + dokumentieren",
-              correctQuadrant: 2,
+              text: "Gespräch über Kompressionsstrümpfe führen + dokumentieren (Aufklärung)",
+              correctQuadrant: 1,
             },
             {
               id: "hausarzt",
-              text: "Hausarzt informieren: Trinkmenge + Obstipation seit 4 Tagen",
+              text: "Hausarzt im Wochenverlauf informieren: Trinkmenge gering + Obstipation Tag 4 (nicht-akut bei beschwerdefreier Frau Kovač — bei Bauchschmerz/Erbrechen sofort eskalieren)",
               correctQuadrant: 3,
             },
             {
@@ -146,25 +146,25 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
             text: "Ich erkläre ihr den Unterschied zwischen ASS und Kompressionsstrümpfen, warum beide wichtig sind — und akzeptiere dann ihre Entscheidung.",
             isCorrect: true,
             feedback:
-              "Richtig. Du hast aufgeklärt (vollständig, verständlich) und respektierst dann ihre Entscheidung. Das ist der einzig korrekte Weg: Aufklärung ist Pflicht, Erzwingen ist verboten. Jetzt musst du die Verweigerung im Pflegebericht dokumentieren — vollständig: was du erklärt hast, wie sie reagiert hat, dass es ihre freiwillige Entscheidung ist.",
+              "Richtig. Du hast aufgeklärt (vollständig, verständlich) und respektierst dann ihre Entscheidung. Das ist der einzig korrekte Weg: Aufklärung ist Pflicht, Erzwingen ist verboten.\n\n**Frau Kovačs Reaktion:** Sie hört zu, mit verschränkten Armen. Nach deiner Erklärung sagt sie: \"Hmm. ASS ist also nicht dasselbe. Das hat mir keiner so erklärt. Trotzdem — die Strümpfe will ich nicht. Aber dass Sie mir das so sagen, das ist anders. Schreiben Sie's halt auf.\" — Vertrauen bleibt, Autonomie respektiert, Aufklärung dokumentiert.\n\nJetzt musst du die Verweigerung im Pflegebericht dokumentieren — vollständig: was du erklärt hast, wie sie reagiert hat, dass es ihre freiwillige Entscheidung ist. Quelle: (§ 630f BGB; § 1901a BGB)",
             feedbackB1:
-              "Richtig. Du erklärst ihr warum die Strümpfe wichtig sind. Dann lässt du sie entscheiden. Das ist Aufklärung + Respekt. Danach schreibst du alles auf.",
+              "Richtig. Du erklärst ihr warum die Strümpfe wichtig sind. Dann lässt du sie entscheiden. Das ist Aufklärung + Respekt.\n\n**Frau Kovač sagt:** \"Hmm. ASS und Strümpfe — das ist nicht dasselbe. Das wusste ich nicht. Trotzdem will ich keine Strümpfe. Aber dass Sie mit mir reden statt mich zu zwingen — das ist gut. Schreiben Sie es auf.\"\n\nDanach schreibst du alles auf.",
           },
           {
             text: "Ich lasse das Thema fallen — sie wird ihre Meinung ohnehin nicht ändern.",
             isCorrect: false,
             feedback:
-              "Nicht korrekt. Unterlassene Aufklärung ist ein Dokumentations- und Haftungsproblem. Wenn Frau Kovač später eine Thrombose entwickelt und die Pflegedokumentation zeigt: Strümpfe verweigert, keine Aufklärung dokumentiert — kann das rechtliche Konsequenzen haben. Aufklärung ist Pflicht, auch wenn die Entscheidung festzustehen scheint. Geh zurück und wähle Pfad A.",
+              "Nicht korrekt. Unterlassene Aufklärung ist ein Dokumentations- und Haftungsproblem.\n\n**Frau Kovačs Reaktion:** Sie merkt, dass du das Thema umgehst. \"Sind Sie fertig? Dann können Sie ja gehen.\" — Misstrauen wächst (du hast offensichtlich etwas, was du ihr nicht sagst), und du hast keine Aufklärung dokumentiert. Wenn Frau Kovač später eine Thrombose entwickelt und die Pflegedokumentation zeigt: Strümpfe verweigert, keine Aufklärung dokumentiert — kann das rechtliche Konsequenzen haben (§ 630f BGB Verletzung).\n\nAufklärung ist Pflicht, auch wenn die Entscheidung festzustehen scheint. Geh zurück und wähle Pfad A.",
             feedbackB1:
-              "Nicht richtig. Du musst es ihr erklären — auch wenn sie wahrscheinlich Nein sagt. Das ist deine Pflicht. Wenn du nichts sagst, ist das ein Problem.",
+              "Nicht richtig. Du musst es ihr erklären — auch wenn sie wahrscheinlich Nein sagt.\n\n**Frau Kovač merkt das:** \"Sind Sie fertig? Dann gehen Sie.\" — Sie verliert Vertrauen. Und juristisch hast du nichts dokumentiert. Das ist ein Problem.\n\nGeh zurück zu Pfad A.",
           },
           {
             text: "Ich überzeuge sie mit Nachdruck — das Thromboserisiko ist zu groß, um es zu ignorieren.",
             isCorrect: false,
             feedback:
-              "Nicht erlaubt. Überreden ist erlaubt — aber Druck ausüben verletzt die Patientenautonomie (§ 1901a BGB) und beschädigt das Vertrauensverhältnis. Bei Frau Kovač, die auf Respekt und Erklärungen angewiesen ist, ist Druck besonders kontraproduktiv. Der Unterschied: Aufklärung = 'Ich erkläre, warum es wichtig ist.' Druck = 'Du musst das tun.' Nur ersteres ist erlaubt. Geh zurück und wähle Pfad A.",
+              "Nicht erlaubt. Überreden ist erlaubt — aber Druck ausüben verletzt die Patientenautonomie (§ 1901a BGB) und beschädigt das Vertrauensverhältnis.\n\n**Frau Kovačs Reaktion:** Sie wird sehr still. Dann, scharf: \"Dann gehen Sie. Ich will Sie nicht in meiner Wohnung. Ich rufe beim Pflegedienst an.\" — Du hast den Auftrag verloren, der Pflegedienst hat eine formale Beschwerde, und Frau Kovač wird auch andere Pflegekräfte mit Misstrauen begegnen.\n\nDer Unterschied: Aufklärung = 'Ich erkläre, warum es wichtig ist.' Druck = 'Du musst das tun.' Nur ersteres ist erlaubt. In ihrer Wohnung gilt ihre Regel — du bist Gast mit Auftrag, kein Befehlshaber. Geh zurück und wähle Pfad A.",
             feedbackB1:
-              "Nicht erlaubt. Du darfst ihr erklären. Du darfst sie nicht zwingen. Wenn du Druck machst, verletzt das ihr Recht. Frau Kovač wird dann gar nicht mehr mitmachen.",
+              "Nicht erlaubt. Du darfst ihr erklären. Du darfst sie nicht zwingen.\n\n**Frau Kovač wird wütend:** \"Dann gehen Sie. Ich will Sie nicht in meiner Wohnung. Ich rufe den Pflegedienst an.\" — Du hast das Vertrauen verloren. Und der Pflegedienst hat eine Beschwerde.\n\nIn ihrer Wohnung gilt ihre Regel. Geh zurück zu Pfad A.",
           },
         ],
       },
@@ -243,12 +243,12 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Pflegeziele SMART formulieren",
-        body: "Gute Pflegeziele sind SMART: **S**pezifisch (Was genau?), **M**essbar (Wie erkenne ich es?), **A**kzeptiert (Hat Frau Kovač zugestimmt?), **R**ealistisch (Erreichbar?), **T**erminiert (Bis wann?). Vervollständige die Pflegeziele.",
+        body: "Gute Pflegeziele sind SMART: **S**pezifisch (Was genau?), **M**essbar (Wie erkenne ich es?), **A**kzeptiert (Hat Frau Kovač zugestimmt?), **R**ealistisch (Erreichbar?), **T**erminiert (Bis wann?). Vervollständige die Pflegeziele.\n\nDNQP Mobilität (2017/2024) empfiehlt bei Kontrakturgefahr **mehrfach tägliche** Bewegung — mindestens 2-3× täglich. Ein 1×-tägliches Ziel wäre Sub-Standard.",
         glossarBegriffe: ["SMART-Ziel", "Pflegeplanung"],
       },
       contentB1: {
         title: "Pflegeziele formulieren",
-        body: "Ein Pflegeziel muss genau, messbar und realistisch sein. Es muss auch einen Termin haben. Vervollständige die Sätze.",
+        body: "Ein Pflegeziel muss genau, messbar und realistisch sein. Es muss auch einen Termin haben.\n\nWichtig: Bei Kontraktur muss man **mehrmals am Tag** üben — nicht nur einmal. Sonst bleibt das Knie steif (DNQP Mobilität 2017/2024).",
         glossarBegriffe: ["Pflegeziel"],
       },
       question: {
@@ -259,12 +259,12 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
           options: [
             "in 3 Tagen",
             "1.200 ml",
-            "1× (einmal)",
-            "5 Wiederholungen",
+            "2× (zweimal)",
+            "10 Wiederholungen",
             "sofort",
             "1.800 ml",
-            "3×",
-            "10 Wiederholungen",
+            "1×",
+            "5 Wiederholungen",
           ],
           correctIndex: 0,
         },
@@ -370,6 +370,48 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
           ],
         },
       },
+    },
+
+    // Opt-3.C — Angehörigen-Einbindung als RESSOURCE (NEU — nicht nur als Datenschutz-Abwehr)
+    {
+      stepId: "ce02-kovac-plan-opt-c-angehoerige-ressource",
+      phase: 3,
+      stepType: "text",
+      bloomLevel: 4,
+      kompetenzbereich: "V.1",
+      quellen: [
+        "SGB XI § 45a (Entlastungsbetrag)",
+        "SGB XI § 45 (Pflegekurse für Angehörige)",
+        "DSGVO Art. 9 + § 203 StGB (Schweigepflicht)",
+      ],
+      track: "vertiefung",
+      modus: "entdecker",
+      tag: "pflege",
+      displayFormat: "scenario",
+      contentC1: {
+        title: "Sohn Darko — Risiko ODER Ressource?",
+        body: "In Phase 4 wird Darkos Anruf zum **Datenschutz-Risiko**. Aber das ist nur eine Seite. Bei vielen Patient:innen sind Angehörige die wichtigste Ressource — und Pflege heißt: Angehörige aktiv einbinden, nicht nur abwehren.\n\n**Was Darko (mit Frau Kovačs Einwilligung) leisten könnte:**\n\n1. **Informations-Knoten:** Mit schriftlicher Schweigepflichtsentbindung (im Pflegedienst hinterlegt) kann Darko regelmäßig informiert werden — z.B. wöchentlicher Anruf vom Pflegedienst. Das entlastet Frau Kovač davon, alles selbst weitergeben zu müssen.\n\n2. **Beobachter aus der Ferne:** Darko kennt seine Mutter. Bei seinen 2 Telefonaten/Woche merkt er Veränderungen, die du beim 30-Min-Besuch nicht siehst (\"Sie klang heute anders\"). Wenn er das melden kann (mit Einwilligung) — wertvoller Frühindikator.\n\n3. **Entlastungsbetrag § 45a SGB XI:** 125 €/Monat können auch für eine Nachbarin oder einen Besuchsdienst eingesetzt werden — Darko könnte das aus Split organisieren (z.B. eine kroatische Bekannte aus der Gemeinde). Pflege-Beratung gehört zu deiner Aufgabe.\n\n4. **Pflegekurse § 45 SGB XI:** Wenn Darko für 2 Wochen kommt, hat er Anspruch auf einen kostenlosen Pflegekurs — er lernt Lippenbremse, Lagerung, Sturzprophylaxe. Das stärkt ihn als Angehörigen, statt ihn nur als Anrufer auf Distanz zu sehen.\n\n5. **Verhinderungspflege § 39 SGB XI:** 1.612 €/Jahr — wenn Darko aus Split kommt und 2 Wochen pflegt, kann er das beanspruchen. Auch das ist Beratungsthema.\n\n**Frau Kovačs Lebensgeschichte:**\nIhr Mann Josip ist tot. Darko ist 1.500 km weg. Sie ist eine Frau die Eigensinn als Schutz erlebt — aber sie ist nicht 'einsam aus Wahl', sondern aus Strukturen. Eine kluge Pflegeberatung sieht Darko nicht als 'Datenschutz-Problem', sondern als **wichtigste lebende Bezugsperson**, die du einbinden kannst — sobald die Einwilligung schriftlich dokumentiert ist.\n\n**Konkrete Aufgabe für die nächste Woche:**\nFrau Kovač fragen, ob sie eine Schweigepflichtsentbindung für Darko unterschreiben möchte (Formular aus dem Pflegedienst). Sie entscheidet — du **machst das Angebot**. Quelle: (SGB XI §§ 39, 45, 45a; DSGVO Art. 9)",
+        fallbezug:
+          "Darko wird in Phase 4 durch DSGVO als Hindernis erlebt. Hier denkst du um: Wenn Frau Kovač zustimmt, ist er die wichtigste außenstehende Beobachter:in für sie. Der Anruf 2×/Woche ist Ressource, nicht Lärm.",
+        glossarBegriffe: [
+          "Schweigepflichtsentbindung",
+          "Pflegekurse",
+          "Verhinderungspflege",
+          "Entlastungsbetrag",
+          "Angehörigenarbeit",
+        ],
+      },
+      contentB1: {
+        title: "Sohn Darko: Hindernis oder Hilfe?",
+        body: "Darko ruft an — und am Telefon darfst du nichts sagen (Datenschutz). Aber: **Darko ist nicht das Problem. Darko kann eine große Hilfe sein.**\n\nWas Darko machen könnte (wenn Frau Kovač **schriftlich erlaubt**):\n\n1. **Regelmäßige Informationen:** Der Pflegedienst kann ihn 1× pro Woche anrufen. Mit Erlaubnis von Frau Kovač.\n\n2. **Er kennt seine Mutter:** Wenn er telefoniert, hört er Veränderungen die du beim Besuch nicht siehst.\n\n3. **Geld vom Staat (§ 45a SGB XI):** 125 € pro Monat für Hilfe (z.B. eine Nachbarin). Darko kann das aus Kroatien organisieren.\n\n4. **Pflegekurs (§ 45 SGB XI):** Wenn Darko aus Kroatien kommt — er kann **kostenlos** lernen wie er pflegt (Lippenbremse, Lagerung). Das macht ihn stärker.\n\n5. **Verhinderungspflege (§ 39 SGB XI):** Wenn Darko 2 Wochen kommt und pflegt — der Staat zahlt bis 1.612 € pro Jahr.\n\n**Deine Aufgabe nächste Woche:**\nFrau Kovač fragen: Möchtest du, dass Darko regelmäßig vom Pflegedienst informiert wird? Es gibt ein Formular. Sie entscheidet. Du machst das Angebot.\n\n**Wichtig:** Darko ist 1.500 km weg. Aber er ist Frau Kovačs wichtigster Mensch. Ihn klug einzubinden ist Pflege.",
+        glossarBegriffe: [
+          "Schweigepflichtsentbindung",
+          "Pflegekurs",
+          "Angehörigenarbeit",
+        ],
+      },
+      wusstestDuDas:
+        "Pflegekurse für Angehörige sind nach § 45 SGB XI kostenlos. Verhinderungspflege § 39 zahlt bis 1.612 €/Jahr für Vertretung. Für Migrant:innen-Familien wie Kovač oft entscheidend — der Sohn aus dem Ausland kann dann legal und finanziert pflegen.",
     },
   ],
   geschaetzteDauer: 25,

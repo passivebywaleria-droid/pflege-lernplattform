@@ -30,26 +30,26 @@ export const CE02_SIT_NGUYEN_STOMA_DOKUMENTIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Haupt-Freitext: Stoma-Dokumentation heute Morgen",
-        body: "Schreibe die Stoma-Dokumentation für den heutigen Morgen. Dein Text soll ca. 120–180 Wörter umfassen. Die KI prüft ob 9 Pflicht-Elemente enthalten sind.\n\n**Pflicht-Elemente:**\n1) Datum + Uhrzeit des Beutelwechsels\n2) Stoma-Befund (Farbe, Prominenz, Schleimhaut)\n3) Hautumgebungs-Befund (gereizt? Mazerierung? Rötung?)\n4) Output (Konsistenz, Farbe, Menge geschätzt)\n5) Leckage und Maßnahme\n6) Bauchdeckenwunde (Status)\n7) Wer beim Wechsel dabei war\n8) Angehörigen-Anleitung (was, mit wem, durch wen)\n9) Stomatherapeut-Visite (wann, was, Ergebnis)\n\n**Stil:** sachlich, keine Wertungen, keine Diagnosen — nur Beobachtungen und Maßnahmen.",
-        glossarBegriffe: ["Stomadokumentation", "Pflicht-Elemente", "Behandlungskontinuität"],
+        body: "Schreibe die Stoma-Dokumentation für den heutigen Morgen. Dein Text soll ca. 120–180 Wörter umfassen. Die KI prüft ob 9 Pflicht-Elemente enthalten sind.\n\n**Pflicht-Elemente:**\n1) Datum + Uhrzeit des Beutelwechsels\n2) Stoma-Befund (Farbe, Prominenz, Schleimhaut)\n3) Hautumgebungs-Befund (gereizt? Mazerierung? Rötung?)\n4) Output (Konsistenz, Farbe, Menge geschätzt)\n5) Leckage und Maßnahme\n6a) Querverweis Bauchdeckenwunde (Status — Detail in der Wunddokumentation)\n7) Wer beim Wechsel dabei war\n8) Angehörigen-Anleitung (was, mit wem, durch wen)\n9) Stomatherapeut-Visite (wann, was, Ergebnis)\n\n**Wichtig:** Die postoperative Bauchdeckenwunde wird ausführlich in einer eigenen Wunddokumentation (DNQP Wunde, standardisierter Wund-Assessment-Bogen) erfasst — in der Stomadokumentation reicht ein kurzer Querverweis zum Status.\n\n**Stil:** sachlich, keine Wertungen, keine Diagnosen — nur Beobachtungen und Maßnahmen.",
+        glossarBegriffe: ["Stomadokumentation", "Wunddokumentation", "Pflicht-Elemente", "Behandlungskontinuität"],
       },
       contentB1: {
         title: "Stoma-Dokumentation schreiben",
-        body: "Schreibe die Stoma-Dokumentation für heute Morgen. Ca. 120–180 Wörter. Die KI prüft 9 Elemente.\n\n**Was muss drin sein:**\n1) Datum + Uhrzeit des Beutelwechsels\n2) Wie das Stoma aussieht (Farbe, Größe)\n3) Wie die Haut rund ums Stoma aussieht\n4) Was aus dem Stoma kommt (Farbe, Konsistenz, Menge)\n5) Leckage — was war, was du getan hast\n6) Bauch-Wunde (Status)\n7) Wer dabei war\n8) Was du der Ehefrau gezeigt hast (Anleitung)\n9) Was Herr Baum (Stomatherapeut) gesagt hat\n\nFür B1-Schüler: Textbausteine einblendbar.",
-        glossarBegriffe: ["Stoma-Dokumentation"],
+        body: "Schreibe die Stoma-Dokumentation für heute Morgen. Ca. 120–180 Wörter. Die KI prüft 9 Elemente.\n\n**Was muss drin sein:**\n1) Datum + Uhrzeit des Beutelwechsels\n2) Wie das Stoma aussieht (Farbe, Größe)\n3) Wie die Haut rund ums Stoma aussieht\n4) Was aus dem Stoma kommt (Farbe, Konsistenz, Menge)\n5) Leckage — was war, was du getan hast\n6a) Kurzer Hinweis auf die Bauch-Wunde — die ausführliche Beschreibung steht in der Wunddokumentation\n7) Wer dabei war\n8) Was du der Ehefrau gezeigt hast (Anleitung)\n9) Was Herr Baum (Stomatherapeut) gesagt hat\n\nFür B1-Schüler: Textbausteine einblendbar.",
+        glossarBegriffe: ["Stoma-Dokumentation", "Wunddokumentation"],
       },
       question: {
         fragetext:
           "Schreibe die Stoma-Dokumentation für den heutigen Morgen. Dein Text muss alle 9 Pflicht-Elemente enthalten.",
         musterantwort:
-          "Stoma-Dokumentation, 09:10 Uhr, Zimmer 6. Beutelwechsel heute um 08:15 Uhr (regulärer Wechsel, Beutel ca. 1/2 voll seit gestern Abend). Stoma-Befund: kräftig rosa, feucht, ca. 1,5 cm prominierend, Öffnung zentral — Normalzeichen. Hautumgebung: Rötung ca. 2 cm Radius um Stomaring, keine Mazerierung, keine Einrisse. Haut nach Reinigung gründlich getrocknet. Output: dünnflüssig, gelblich-braun, ca. 150 ml (normale Transitphase, 4. Tag post-OP). Leckage um 09:00 Uhr: Stomainhalt an Plattenrand, Haut sofort gereinigt und getrocknet, neue Stomaplatte (60 mm) angelegt — Ursache: Hautfaltenwurf rechts, Platte nachgepasst. Bauchdeckenwunde: leicht gerötet am unteren Rand, seröse Absonderung — unverändert, keine Zeichen von Infektion. Anwesend beim Wechsel: Pflegekraft (Frühdienst), Tochter Linh (Übersetzerin), Ehefrau Mai. Angehörigen-Anleitung: Ehefrau Mai hat korrekten Sitz des neuen Beutels gezeigt bekommen, Stomatherapeut Herr Baum hat um 10:00 Uhr strukturierte Anleitung für Ehefrau Mai begonnen (gesehen: richtiger Sitz, Kontrolle Platte-Haut-Übergang). Stomatherapeut-Visite: Herr Baum 10:00–12:00 Uhr, Plattengröße auf 62 mm angepasst, nächster Wechsel-Termin: morgen Früh.",
+          "Stoma-Dokumentation, 09:10 Uhr, Zimmer 6. Beutelwechsel heute um 08:15 Uhr (regulärer Wechsel, Beutel ca. 1/2 voll seit gestern Abend). Stoma-Befund: kräftig rosa, feucht, ca. 1,5 cm prominierend, Öffnung zentral — Normalzeichen. Hautumgebung: Rötung ca. 2 cm Radius um Stomaring, keine Mazerierung, keine Einrisse. Haut nach Reinigung gründlich getrocknet. Output: dünnflüssig, gelblich-braun, ca. 150 ml (normale Transitphase, 4. Tag post-OP). Leckage um 09:00 Uhr: Stomainhalt an Plattenrand, Haut sofort gereinigt und getrocknet, neue Stomaplatte (60 mm) angelegt — Ursache: Hautfaltenwurf rechts, Platte nachgepasst. Bauchdeckenwunde: Status unverändert (Details siehe Wunddokumentation Tag 4 post-OP). Anwesend beim Wechsel: Pflegekraft (Frühdienst), Tochter Linh (Übersetzerin), Ehefrau Mai. Angehörigen-Anleitung: Ehefrau Mai hat korrekten Sitz des neuen Beutels gezeigt bekommen, Stomatherapeut Herr Baum hat um 10:00 Uhr strukturierte Anleitung für Ehefrau Mai begonnen (gesehen: richtiger Sitz, Kontrolle Platte-Haut-Übergang). Stomatherapeut-Visite: Herr Baum 10:00–12:00 Uhr, Plattengröße auf 62 mm angepasst, nächster Wechsel-Termin: morgen Früh.",
         bewertungskriterien: [
           "1. Datum + Uhrzeit Beutelwechsel",
           "2. Stoma-Befund (Farbe, Prominenz, Schleimhautzustand)",
           "3. Hautumgebung-Befund (Rötung? Mazerierung? Einrisse?)",
           "4. Output (Konsistenz, Farbe, geschätzte Menge)",
           "5. Leckage dokumentiert + Maßnahme beschrieben",
-          "6. Bauchdeckenwunde (Status)",
+          "6a. Querverweis auf Wunddokumentation (Bauchdeckenwunde NICHT ausführlich hier)",
           "7. Anwesende beim Wechsel",
           "8. Angehörigen-Anleitung (was, mit wem, durch wen)",
           "9. Stomatherapeut-Visite (wann, Ergebnis, nächster Schritt)",
@@ -60,7 +60,7 @@ export const CE02_SIT_NGUYEN_STOMA_DOKUMENTIEREN: SituationsPhase = {
           "Hautumgebung: [gerötet / nicht gerötet], keine Mazerierung.",
           "Output: [Konsistenz], [Farbe], ca. [Menge] ml.",
           "Leckage um [Uhrzeit]: [was passiert]. Maßnahme: [was getan].",
-          "Bauchdeckenwunde: [Status].",
+          "Bauchdeckenwunde: Status [unverändert / verschlechtert] — Details in Wunddokumentation.",
           "Anwesend: [Namen].",
           "Ehefrau Mai hat [was] gezeigt bekommen.",
           "Stomatherapeut Herr Baum um [Uhrzeit]: [was gemacht, was entschieden].",
@@ -154,20 +154,23 @@ export const CE02_SIT_NGUYEN_STOMA_DOKUMENTIEREN: SituationsPhase = {
       stepType: "matching",
       bloomLevel: 5,
       kompetenzbereich: "I.1",
-      quellen: ["FG SKM — Handlungsempfehlungen Stomapflege (2023)"],
+      quellen: [
+        "FG SKM — Handlungsempfehlungen Stomapflege (2023)",
+        "DNQP — Expertenstandard Pflege von Menschen mit chronischen Wunden (2. Aktualisierung 2015)",
+      ],
       track: "basis",
       modus: "sortierstation",
       lernziel: "ce02-nguyen-dok-dokumentationsbereiche",
       tag: "pflege",
       contentC1: {
         title: "Was gehört wohin? — Dokumentationsbereiche",
-        body: "13 Informationen aus dem heutigen Morgen. Welche gehört in welchen Dokumentationsbereich? Besonderer Trennfall: Herr Nguyens Zitat 'Ich bin kein richtiger Mann mehr' — Pflegebericht oder nicht dokumentieren?",
-        glossarBegriffe: ["Pflegebericht", "Stomadokumentation", "Behandlungskontinuität"],
+        body: "Informationen aus dem heutigen Morgen. Welche gehört in welchen Dokumentationsbereich? Wichtige Trennfälle: Herr Nguyens Zitat 'Ich bin kein richtiger Mann mehr' — Pflegebericht oder nicht dokumentieren? Bauchdeckenwunde — Stomadokumentation oder Wunddokumentation?",
+        glossarBegriffe: ["Pflegebericht", "Stomadokumentation", "Wunddokumentation", "Behandlungskontinuität"],
       },
       contentB1: {
         title: "Was kommt wohin in die Dokumentation?",
-        body: "13 Informationen aus dem Morgen. Wohin schreibst du sie?",
-        glossarBegriffe: ["Pflegebericht", "Stoma-Dokumentation"],
+        body: "Informationen aus dem Morgen. Wohin schreibst du sie? Wichtig: Stoma-Befunde und Wund-Befunde werden getrennt dokumentiert.",
+        glossarBegriffe: ["Pflegebericht", "Stoma-Dokumentation", "Wunddokumentation"],
       },
       question: {
         fragetext:
@@ -195,7 +198,7 @@ export const CE02_SIT_NGUYEN_STOMA_DOKUMENTIEREN: SituationsPhase = {
           },
           {
             left: "Bauchdeckenwunde: leicht gerötet, seröse Absonderung, unverändert",
-            right: "Stomadokumentation",
+            right: "Wunddokumentation",
           },
           {
             left: "Stomatherapeut Herr Baum: Platte auf 62 mm angepasst, Ehefrau Mai angeleitet",
@@ -210,7 +213,7 @@ export const CE02_SIT_NGUYEN_STOMA_DOKUMENTIEREN: SituationsPhase = {
             right: "Pflegebericht",
           },
           {
-            left: "Heparin s.c. heute Morgen 08:00 Uhr, Injektionsstelle links lateral Abdomen",
+            left: "Heparin s.c. heute Morgen 08:00 Uhr, Injektionsstelle laterale Oberschenkelaußenseite (Wunde + Stoma vermieden)",
             right: "Medikamentendokumentation (Ärztliche Information bei Besonderheiten)",
           },
         ],

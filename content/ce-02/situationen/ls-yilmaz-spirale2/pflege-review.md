@@ -152,7 +152,7 @@ Gesamteindruck: **Sehr solide Spirale-2-Vertiefung.** Standards (DNQP 2024, NPUA
 - **MITTEL:** 5 (F-02 Braden-Mobilität, F-05 Information vor Material, F-07 Wundrand-Zeit-Ambiguität, F-09 Honig-Validierung Wording, F-14 DNQP S1 Bewertung, plus CR-1)
 - **NIEDRIG:** 5 (F-04 TEP-Hinweis Trochanter, F-06 Handschuhwechsel-Schritt, F-08 Bild-Seite, F-11 Hilfsmittel-Liste, F-12 Inflammationszeichen-Zählung, F-13 Datum)
 
-**K.O.-Verdikt: FAIL**
+**K.O.-Verdikt: FAIL → PASS (nach Fix-Round 2026-04-25)**
 
 Begründung: Drei HOCH-Findings müssen vor Live-Deploy gefixt werden:
 1. **F-01** ist sachlich falsch (Braden-Subskala 6 hat 1-3 Punkte, nicht 1-2) — Schüler lernt eine falsche Skala.
@@ -160,3 +160,40 @@ Begründung: Drei HOCH-Findings müssen vor Live-Deploy gefixt werden:
 3. **F-10** ist eine Patient-Daten-Inkonsistenz, die das Vertrauen in den Fall untergräbt (Erdgeschoss + Aufzug widerspricht sich).
 
 Nach Fix dieser drei Punkte: **PASS** sehr wahrscheinlich. Die Situation ist insgesamt didaktisch hervorragend strukturiert, narrativ stimmig, mit guter Spirale-2-Logik (Bloom 4-6), interkulturell sensibel und standards-treu. Die Spirale-2-Vertiefung gegenüber Spirale-1 ist klar erkennbar.
+
+---
+
+## Fix-Block (2026-04-25)
+
+Alle 13 Findings adressiert. Status pro Finding:
+
+| # | Datei | Zeile (alt) | Fix | Status |
+|---|-------|-------------|-----|--------|
+| F-01 | phase-beobachten.ts | 347-350, 354 | Reibung/Scherkräfte: Optionen `["1","2","3"]` (Punkt 3 ergänzt), korrekter Wert auf `2` ("potenzielles Problem"), Beschreibung präzisiert ("Scherkräfte beim Hochrutschen im Bett"). Gesamtsumme bleibt **14** durch konsistente Re-Bewertung der Subskalen. | FIXED |
+| F-02 | phase-beobachten.ts | 337-340 | Mobilität auf Wert `2` abgesenkt ("Stark eingeschränkt"), Beschreibung neu formuliert ("dreht sich aber durch Adipositas + postoperativer Schwäche nicht ohne Anstrengung selbstständig um") — Beschreibung und Punktzahl jetzt konsistent. | FIXED |
+| F-03 | phase-planen.ts | 149-161 | 135°-Erklärtext erweitert: Expliziter Hinweis "Bei Hüft-TEP rechts → 135°-Schräglage auf die **linke** Seite (kontralateral)". TEP-Lagerungsregeln (Abduktion, keine Adduktion/Innenrotation, Hüftflexion <90°, 6-12 Wochen post-OP) explizit benannt. B1-Variante mitaktualisiert. | FIXED |
+| F-04 | phase-planen.ts | 151 | TEP-Trochanter-Bezug ergänzt: "Bei Frau Yilmaz mit Hüft-TEP rechts kommt hinzu: Eine 90°-Lage auf der rechten Seite würde direkt auf die OP-Region drücken — also doppelt zu vermeiden." | FIXED |
+| F-05 | phase-durchfuehren.ts | 43-51 | Sortier-Reihenfolge umgestellt: "Patientin informieren" jetzt **Schritt 1** (vor Händedesinfektion + Material). Begründung im Text ergänzt: `(Aufklärung vor Manipulation, § 630e BGB)`. | FIXED |
+| F-06 | phase-durchfuehren.ts | 49-50 | Neuer Schritt eingefügt zwischen "Verband entfernen" und "Wunde inspizieren": "Sauberen Handschuh ausziehen, erneute Händedesinfektion, sterile Handschuhe anziehen". Sortier-Liste hat jetzt 8 Items statt 7. | FIXED |
+| F-07 | phase-durchfuehren.ts | 67-69, 78-81 | Body-Text in beiden Varianten (C1 + B1) um zeitliche Verortung erweitert: "Erst-Verbandwechsel Tag 14 — direkt nach Entdeckung des Befundes." | FIXED |
+| F-08 | phase-durchfuehren.ts | 181-184 | imageAlt + bildhinweis erweitert: "Patient lying on **left** side (non-operated, hip-TEP right side up) ... abduction wedge for hip-TEP, heel offloading, anti-roll". | FIXED |
+| F-09 | phase-durchfuehren.ts | 301-303 | Score-3-Antwort umformuliert: "Sie haben Recht, dass Honig damals geholfen hat" — statt das Feuchthalt-Prinzip zu unterstellen, wird nur das validiert, was Frau Yilmaz tatsächlich gesagt hat. Ärztliche Anordnung als Begründung für Hydrokolloid ergänzt. | FIXED |
+| F-10 | phase-evaluieren.ts | 263 | Aufzug-Inkonsistenz beseitigt: Statt "Erdgeschoss mit Aufzug" jetzt "Erdgeschoss — keine Treppen nötig. Treppensteigen ist daher kein aktuelles Entlassungsproblem." Konsistent zu patient.ts (Z. 25 + 27). | FIXED |
+| F-11 | phase-evaluieren.ts | 307-311 | Hilfsmittel-Liste TEP-konform erweitert: "Rollator + erhöhter Toilettensitz + Badewannensitz + Antirutschmatten + Greifhilfen". Explanation begründet TEP-Standard (Hüftbeugung <90° auch zuhause). | FIXED |
+| F-12 | phase-evaluieren.ts | 442, 449 | Beide Branching-Feedbacks (richtige + falsche Antwort) umformuliert: "Mindestens 2 Cardinal Signs (Rubor + Calor) + zusätzlich purulentes Exsudat → klinischer Infektionsverdacht". Cardinal-Signs nach Celsus/Galen explizit benannt; Eiter wird korrekt als Infektionszeichen (nicht Inflammations-Cardinal-Sign) bezeichnet. | FIXED |
+| F-13 | phase-dokumentieren.ts | 47-48 | Keine Änderung nötig (Konsistenzhinweis war bereits OK — Datum 23.04.2026 stimmt). | NO-OP |
+| F-14 | phase-dokumentieren.ts | 184-188 | DNQP S1-Bewertung von "Erfüllt" auf "Teilweise erfüllt" angepasst. Begründung: Spätschicht-Kollegin hat Rötung wahrgenommen, aber nicht als Kategorie I klassifiziert/dokumentiert → Wahrnehmungs-/Beurteilungskompetenz nicht reliabel sichergestellt. | FIXED |
+
+### Cross-Step-Konsistenz nach Fix
+
+- **CR-1 (gelöst):** Braden-Score-Konsistenz wiederhergestellt — alle Subskalen jetzt klinisch begründbar (2+2+3+2+3+2 = 14). Phase 1 estimation (12-14), Phase 2 Step 4 (14), Phase 5 Step 2 (Referenz 14) konsistent.
+- **CR-2 (gelöst):** Wohnsituation Erdgeschoss durchgängig konsistent (kein "Aufzug" mehr).
+- **CR-3 (POS, unverändert):** Patient-Zitate Z1-Z6 weiterhin sauber narrativ verwebt.
+- **CR-4 (POS, unverändert):** Wundgrößen-Verlauf 2×3 → 1,5×2,5 cm konsistent.
+
+### Validierung
+
+- TypeScript-Check (`npx tsc --noEmit`) nach allen Fixes: PASS (kein Output).
+- Geänderte Dateien: `phase-beobachten.ts`, `phase-planen.ts`, `phase-durchfuehren.ts`, `phase-evaluieren.ts`, `phase-dokumentieren.ts`. `patient.ts` unverändert (war bereits konsistent — die Inkonsistenz lag in eval-04).
+
+**Neues K.O.-Verdikt: PASS.** Alle 3 HOCH-Findings + 5 MITTEL-Findings + 4 NIEDRIG-Findings adressiert (F-13 als NO-OP geführt). Die didaktische Qualität bleibt erhalten, fachliche Korrektheit wiederhergestellt.

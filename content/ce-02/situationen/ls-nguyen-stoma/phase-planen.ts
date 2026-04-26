@@ -83,9 +83,9 @@ export const CE02_SIT_NGUYEN_STOMA_PLANEN: SituationsPhase = {
           items: [
             { id: "s1", label: "Material vorbereiten + Handschuhe anziehen" },
             { id: "s2", label: "Patienten informieren und Einverständnis einholen" },
-            { id: "s3", label: "Alten Beutel von oben nach unten abziehen" },
-            { id: "s4", label: "Stomaplatte lösen (warm-feuchter Tupfer erleichtert das Ablösen)" },
-            { id: "s5", label: "Stoma + Hautumgebung reinigen mit lauwarmem Wasser, kein Seife/Desinfektionsmittel" },
+            { id: "s3", label: "Alten Beutel/Platte von oben nach unten abziehen — eine Hand zieht, die andere Hand hält die Haut sanft gegen (Hauteinriss vermeiden)" },
+            { id: "s4", label: "Stomaplatte vollständig lösen (warm-feuchter Tupfer erleichtert das Ablösen)" },
+            { id: "s5", label: "Stoma + Hautumgebung mit lauwarmem Wasser reinigen — bei Bedarf milde, pH-neutrale Waschlotion. KEIN alkalisches Seifenwasser, keine Desinfektionsmittel, kein Lanolin-/Parfüm-haltiges Produkt" },
             { id: "s6", label: "Haut vollständig trocknen lassen (Mazerierung verhindern)" },
             { id: "s7", label: "Schutzpaste auftragen + neue Stomaplatte in passender Größe anpassen und anlegen" },
             { id: "s8", label: "Beutel andrücken, auf Dichtigkeit prüfen, Umgebung kontrollieren" },

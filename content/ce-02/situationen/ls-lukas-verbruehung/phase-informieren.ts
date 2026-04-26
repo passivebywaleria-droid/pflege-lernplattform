@@ -314,9 +314,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
             text: "Impfstatus: Tetanus-Auffrischung zuletzt bei U5 (9 Monate) — Grundimmunisierung vollständig",
             isError: true,
             reason:
-              "Sehr relevant — bei offener Wundfläche muss Tetanus-Schutz geprüft sein. Grundimmunisierung vollständig → kein akuter Handlungsbedarf. Wenn Impfstatus unklar oder unvollständig wäre, müsste der Arzt informiert werden.",
+              "Relevant zu prüfen — der Tetanus-Status sollte bei Aufnahme dokumentiert sein. Bei reiner Verbrühung (Hitze sterilisiert die Wundfläche) ist das Tetanus-Risiko gering — die STIKO sieht eine Auffrischung primär bei tieferen, kontaminierten oder nekrotischen Wunden vor (z. B. tiefe Stich-/Quetsch-/Bisswunden mit Erdkontakt). Bei Lukas: Grundimmunisierung vollständig → kein Handlungsbedarf, nur Dokumentation.",
             reasonB1:
-              "Sehr wichtig — bei offener Wunde: Ist Lukas gegen Tetanus geimpft? Ja, vollständig. Gut.",
+              "Wichtig zu prüfen — Tetanus-Status sollte dokumentiert sein. Bei reiner Verbrühung ist das Risiko gering (Hitze macht die Wunde keimarm). Lukas ist vollständig geimpft. Alles gut.",
           },
           {
             text: "Keine bekannten Allergien laut Eintragung",

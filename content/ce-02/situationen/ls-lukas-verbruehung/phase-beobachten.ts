@@ -29,12 +29,12 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "KUSS-Skala — zuerst schauen, dann erklären",
-        body: "Vor dir liegt die KUSS-Skala (Kindliche Unbehagens- und Schmerzskala) mit 5 Beobachtungskategorien. Lukas' aktuelles Verhalten ist beschrieben. Markiere alle Kategorien, die bei Lukas gerade starken Schmerz anzeigen — ohne dass wir dir vorher erklären wie die Skala funktioniert. Nutz dein Vorwissen und deine Beobachtungsfähigkeit.",
+        body: "Vor dir liegt die KUSS-Skala (Kindliche Unbehagens- und Schmerzskala, Büttner/Finke 2000) mit 5 Beobachtungskategorien à 0–2 Punkten (max. 10). Du beobachtest Lukas im Aufnahmemoment — bevor das i.v.-Schmerzmittel voll wirkt. Markiere alle Kategorien, die bei Lukas gerade starken Schmerz anzeigen — ohne dass wir dir vorher erklären wie die Skala funktioniert. Nutz dein Vorwissen und deine Beobachtungsfähigkeit.",
         glossarBegriffe: ["KUSS-Skala"],
       },
       contentB1: {
         title: "KUSS-Skala — erst markieren, dann erklären",
-        body: "Das ist die KUSS-Skala. Sie misst Schmerz bei kleinen Kindern. Lukas' Verhalten wird beschrieben. Markiere: Welche Kategorien zeigen bei Lukas starken Schmerz? Erst du — dann erklären wir.",
+        body: "Das ist die KUSS-Skala. Sie misst Schmerz bei kleinen Kindern. 5 Kategorien, je 0–2 Punkte (zusammen 0–10). Du beobachtest Lukas direkt bei Aufnahme — bevor das Schmerzmittel wirkt. Markiere: Welche Kategorien zeigen bei Lukas starken Schmerz? Erst du — dann erklären wir.",
         glossarBegriffe: ["KUSS-Skala"],
       },
       question: {
@@ -42,44 +42,44 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
           "Markiere alle KUSS-Kategorien, die bei Lukas gerade starken Schmerz anzeigen.",
         highlightSegments: [
           {
-            text: "Weinen: leises Wimmern, immer wieder aufflackerndes Schluchzen, kein anhaltendes lautes Schreien mehr",
+            text: "Weinen: lautes Schreien in Wellen, kurze Wimmerpausen, dann wieder anhaltendes Schreien — Lukas ist bei Aufnahme nicht beruhigbar",
             isError: true,
             reason:
-              "KUSS-Kategorie 'Weinen' — Punkte: 1 (Stöhnen/Wimmern) bis 2 (Schreien). Lukas wimmert, das gibt 1 Punkt. Aber: Im Kontext (nach Analgesie!) ist auch 1 Punkt bei einem 2,5-Jährigen ein Hinweis auf anhaltenden Schmerz.",
+              "KUSS-Kategorie 'Weinen' — Punkte: 0 = gar nicht, 1 = Stöhnen/Wimmern, 2 = Schreien. Lautes anhaltendes Schreien = 2 Punkte. Bei Aufnahme (vor i.v.-Analgesie) zeigt Lukas dies klar.",
             reasonB1:
-              "Weinen zeigt Schmerz. Lukas wimmert — das gibt 1 Punkt in der KUSS-Skala.",
+              "Lautes Schreien = 2 Punkte. Das ist der Höchstwert für Weinen in der KUSS-Skala.",
           },
           {
-            text: "Gesichtsausdruck: Grimassieren, zusammengezogene Augenbrauen, verkrampfter Mund — Lukas kann Schmerz nicht verbal ausdrücken",
+            text: "Gesichtsausdruck: starkes Grimassieren, fest zusammengekniffene Augen, verzerrter Mund — Lukas kann Schmerz nicht verbal ausdrücken",
             isError: true,
             reason:
-              "KUSS-Kategorie 'Gesichtsausdruck' — ein verzerrtes Gesicht (Grimassieren) ist ein valider Schmerzindikator bei Kleinkindern. Punkte: 0 = entspannt, 1 = Mund leicht geöffnet, 2 = Mund/Augen zusammengekniffen/Grimasse.",
+              "KUSS-Kategorie 'Gesichtsausdruck' — Punkte: 0 = entspannt, 1 = Mund leicht geöffnet, 2 = Mund/Augen zusammengekniffen/Grimasse. Hier: deutliches Grimassieren = 2 Punkte. Wichtiger Indikator, weil Lukas nicht sagen kann wie stark der Schmerz ist.",
             reasonB1:
-              "Grimassieren = Schmerz. Ein wichtiges Zeichen, weil Lukas nicht sagen kann wie viel Schmerz er hat.",
+              "Starkes Grimassieren = 2 Punkte. Sehr wichtig, weil Lukas nicht sagen kann wie viel Schmerz er hat.",
           },
           {
-            text: "Rumpfhaltung: angespannter Körper, Rumpf leicht vorgebeugt wenn der Arm angeschaut wird",
+            text: "Rumpfhaltung: stark verkrampfter, aufbäumender Körper, zieht sich beim Annähern weg",
             isError: true,
             reason:
-              "KUSS-Kategorie 'Rumpfhaltung' — Anspannung ist ein Schmerzsignal. Punkte: 0 = entspannt, 1 = unruhig, 2 = verkrampft/aufbäumend.",
+              "KUSS-Kategorie 'Rumpfhaltung' — Punkte: 0 = entspannt, 1 = unruhig, 2 = verkrampft/aufbäumend. Hier: aufbäumend/verkrampft = 2 Punkte.",
             reasonB1:
-              "Angespannter Körper = Schmerz. Lukas zieht sich innerlich zusammen.",
+              "Verkrampfter, aufbäumender Körper = 2 Punkte. Lukas zieht sich stark zurück.",
           },
           {
-            text: "Beinstellung: Beine angezogen, leichtes Zittern in der rechten Wade (gesunder Seite)",
+            text: "Beinstellung: Beine fest hochgezogen, kräftiges Strampeln mit dem gesunden Bein",
             isError: true,
             reason:
-              "KUSS-Kategorie 'Beinstellung' — Beine anziehen oder Strampeln ist ein Schmerzzeichen. Punkte: 0 = entspannt, 1 = zappelnd, 2 = hochgezogen/strampelnd.",
+              "KUSS-Kategorie 'Beinstellung' — Punkte: 0 = entspannt, 1 = zappelnd, 2 = hochgezogen/strampelnd. Hier: kräftiges Strampeln + Hochziehen = 2 Punkte.",
             reasonB1:
-              "Beine anziehen = Schmerz. Das ist ein typisches Zeichen bei Kleinkindern.",
+              "Beine hochziehen + strampeln = 2 Punkte. Typisches starkes Schmerzzeichen bei Kleinkindern.",
           },
           {
-            text: "Motorische Unruhe: leichte Unruhe, Lukas dreht den Kopf weg wenn du die Wunde anschaust, greift nach Sandras Hand",
+            text: "Motorische Unruhe: ruhelos, kräftiges Wegstoßen mit dem rechten Arm, schlägt nach allem was sich nähert, greift verzweifelt nach Sandra",
             isError: true,
             reason:
-              "KUSS-Kategorie 'Motorische Unruhe' — Wegstoßen, Drehen, Greifen sind Schmerzsignale. Punkte: 0 = nicht vorhanden, 1 = mäßig, 2 = ruhelos/strampelnd. Hier: 1–2.",
+              "KUSS-Kategorie 'Motorische Unruhe' — Punkte: 0 = nicht vorhanden, 1 = mäßig, 2 = ruhelos/strampelnd. Hier: kräftiges Wegstoßen + ruhelos = 2 Punkte. Summe aller 5 Kategorien: 2+2+2+2+2 — bei Aufnahme zeigt Lukas Maximalwerte (KUSS 8/10 bei einsetzender, aber noch unvollständiger Wirkung des Schmerzmittels — Maximalwert wäre 10/10 ohne jede Analgesie).",
             reasonB1:
-              "Kopf wegdrehen, nach Mama greifen = Schmerz und Angst. Das ist motorische Unruhe.",
+              "Wegstoßen + ruhelos = 2 Punkte. Insgesamt 8/10 bei Aufnahme — sehr starker Schmerz. Schmerzmittel wirkt noch nicht voll.",
           },
         ],
       },

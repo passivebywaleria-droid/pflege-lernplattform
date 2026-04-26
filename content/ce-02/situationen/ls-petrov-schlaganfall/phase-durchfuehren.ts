@@ -666,17 +666,17 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
             speaker: "Du",
             options: [
               {
-                text: "\"Sehr gut, Herr Petrov. 13 Minuten — das ist mehr als das Ziel. Ich lege Sie jetzt wieder hin und lagere Sie nach Bobath.\" (Dokumentation im Kopf: Ziel übertroffen, Auskultation danach prüfen)",
+                text: "\"Sehr gut, Herr Petrov. 13 Minuten — das ist mehr als das Ziel. Ich lege Sie jetzt wieder hin und lagere Sie nach Bobath.\" (Dokumentation im Kopf: Ziel übertroffen, RR/Puls und pflegerische Atembeobachtung nach Hinlegen prüfen)",
                 textB1:
-                  "\"13 Minuten — sehr gut! Ich lege Sie jetzt hin und lagere Sie.\" (Notiz: Ziel übertroffen, danach Lunge prüfen)",
+                  "\"13 Minuten — sehr gut! Ich lege Sie jetzt hin und lagere Sie.\" (Notiz: Ziel übertroffen, danach Blutdruck, Puls und Atmung prüfen)",
                 patientResponse:
                   "Herr Petrov nickt. Er lehnt sich leicht zu dir.",
                 patientResponseB1: "Herr Petrov nickt.",
                 score: 3,
                 feedback:
-                  "Perfekt. Lob konkret (13 Minuten, Zielübertreffen), nächsten Schritt ankündigen (Hinlegen + Bobath-Lagerung), Evaluation im Kopf (Auskultation nach Mobilisation prüfen — Atemvolumen hat sich verändert). Das ist professionelle Pflege.",
+                  "Perfekt. Lob konkret (13 Minuten, Zielübertreffen), nächsten Schritt ankündigen (Hinlegen + Bobath-Lagerung), Evaluation im Kopf (RR/Puls nach Hinlegen, pflegerische Atembeobachtung — Atemfrequenz, hörbare Geräusche, Atemtiefe). Auskultation mit Stethoskop ist ärztliche Aufgabe, bei Auffälligkeiten veranlasst du sie. Das ist professionelle Pflege.",
                 feedbackB1:
-                  "Sehr gut. Lob konkret. Nächsten Schritt ankündigen. Danach Lunge prüfen.",
+                  "Sehr gut. Lob konkret. Nächsten Schritt ankündigen. Danach Blutdruck, Puls und Atmung prüfen — keine Auskultation mit Stethoskop, das macht der Arzt.",
               },
               {
                 text: "\"Super! Können wir das morgen nochmal machen?\"",

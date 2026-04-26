@@ -34,14 +34,14 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
         "Hospital ward early morning, nurse reading patient notes at a computer station outside room 8, calm professional atmosphere, soft warm light, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Übergabe im System — Frau Schmidt, Zimmer 8",
-        body: "08:30 Uhr, Flur der Inneren Station.\n\nDu liest die Pflegeübergabe in SBAR-Struktur: **S** — Situation: Frau Schmidt (68 J., weiblich) ist seit 3 Tagen stationär wegen entgleistem Blutzucker (BZ 398 mg/dl bei Einlieferung). **B** — Hintergrund: Diabetes Typ 2 (seit 8 Jahren, bisher diätetisch, heute Metformin 500 mg 2× tgl. neu angesetzt), Adipositas Grad II (BMI 38), diabetisches Fußsyndrom Kategorie 1 nach Wagner-Armstrong, Belastungsinkontinenz seit 2 Jahren, Albumin 31 g/l (Norm: 35–52 g/l), NRS 2002 Score 3. **A** — Aktuelles: ansprechbar, wach, kooperativ, klagt über Schwäche, BZ heute nüchtern 187 mg/dl. **R** — Reaktion: Morgenpflege, BZ messen, Ernährungsgespräch vorbereiten. SBAR ist die Standard-Struktur für klinische Übergaben — vollständig und klar.",
+        body: "08:30 Uhr, Flur der Inneren Station.\n\nDu liest die Pflegeübergabe in SBAR-Struktur: **S** — Situation: Frau Schmidt (68 J., weiblich) ist seit 3 Tagen stationär wegen entgleistem Blutzucker (BZ 398 mg/dl bei Einlieferung). **B** — Hintergrund: Diabetes Typ 2 (seit 8 Jahren, bisher diätetisch, heute Metformin 500 mg 2× tgl. neu angesetzt), Adipositas Grad II (BMI 38), diabetisches Fußsyndrom Wagner Grad 1 (Wagner-Armstrong 1A), Belastungsinkontinenz seit 2 Jahren, Albumin 31 g/l (Norm: 35–52 g/l), NRS-2002-Score 1 + GLIM-Diagnose Mangelernährung Stadium 1. **A** — Aktuelles: ansprechbar, wach, kooperativ, klagt über Schwäche, BZ heute nüchtern 187 mg/dl. **R** — Reaktion: Morgenpflege, BZ messen, Ernährungsgespräch vorbereiten. SBAR ist die Standard-Struktur für klinische Übergaben — vollständig und klar.",
         fallbezug:
           "Frau Schmidt (68 J., Adipositas Grad II, Diabetes Typ 2) ist seit 3 Tagen stationär. Du bist Pflegeschülerin im 2. Ausbildungsdrittel, Frühdienst.",
         glossarBegriffe: ["NRS 2002", "Albumin", "Wagner-Armstrong-Klassifikation"],
       },
       contentB1: {
         title: "Die Übergabe lesen",
-        body: "08:30 Uhr, Flur der Inneren Station.\n\nDu liest die Pflegeübergabe (SBAR-Struktur): **S** = Situation: Frau Schmidt ist seit 3 Tagen hier. Der Blutzucker (= BZ) war bei der Einlieferung sehr hoch: 398 mg/dl. Jetzt nüchtern: 187 mg/dl. **B** = Hintergrund: Sie hat Diabetes Typ 2, starkes Übergewicht (BMI 38). Sie hat ein Fußsyndrom (Kategorie 1 nach Wagner = erste Risse an der Haut, keine Wunde). Sie hat Belastungs-Inkontinenz (= sie verliert manchmal Urin bei Bewegung). Albumin (= Eiweiß im Blut) ist zu niedrig: 31 g/l. **A** = Aktuelles: Sie ist wach und ansprechbar. Sie fühlt sich schwach. **R** = Reaktion: Du machst die Morgenpflege. Dann misst du den Blutzucker. Dann sprichst du mit ihr über Ernährung.",
+        body: "08:30 Uhr, Flur der Inneren Station.\n\nDu liest die Pflegeübergabe (SBAR-Struktur): **S** = Situation: Frau Schmidt ist seit 3 Tagen hier. Der Blutzucker (= BZ) war bei der Einlieferung sehr hoch: 398 mg/dl. Jetzt nüchtern: 187 mg/dl. **B** = Hintergrund: Sie hat Diabetes Typ 2, Adipositas Grad II (BMI 38). Sie hat ein Fußsyndrom (Wagner Grad 1 = erste Risse an der Haut, keine Wunde). Sie hat Belastungs-Inkontinenz (= sie verliert manchmal Urin bei Bewegung). Albumin (= Eiweiß im Blut) ist zu niedrig: 31 g/l. **A** = Aktuelles: Sie ist wach und ansprechbar. Sie fühlt sich schwach. **R** = Reaktion: Du machst die Morgenpflege. Dann misst du den Blutzucker. Dann sprichst du mit ihr über Ernährung.",
         fallbezug:
           "Frau Schmidt ist 68 Jahre alt. Sie ist seit 3 Tagen im Krankenhaus. Du bist Schülerin im Frühdienst.",
         glossarBegriffe: ["NRS 2002", "Albumin", "Wagner-Armstrong-Klassifikation"],
@@ -76,63 +76,67 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
       },
     },
 
-    // Step 1.3 — MC: erste Priorität (Bloom B3)
+    // Step 1.3 — MC: Wie viele Daten kennst du vor dem Betreten? (F-01 Fix)
     {
       stepId: "ce02-schmidt-info-03-erstpriorisierung",
       phase: 1,
       stepType: "mc",
       bloomLevel: 3,
       kompetenzbereich: "I.1",
-      quellen: ["DNQP (2017): Expertenstandard Ernährungsmanagement"],
+      quellen: [
+        "DNQP (2017): Expertenstandard Ernährungsmanagement",
+        "Aktionsbündnis Patientensicherheit: SBAR-Übergabe",
+      ],
       track: "basis",
       modus: "challenge",
-      lernziel: "ce02-schmidt-info-prioritaet",
+      lernziel: "ce02-schmidt-info-vorbereitung",
       tag: "pflege",
       contentC1: {
-        title: "Erste Priorität beim Betreten",
-        body: "Du betrittst Zimmer 8. Was tust du beim Betreten ZUERST?",
+        title: "Vor dem Betreten — was musst du wissen?",
+        body: "Bevor du das Zimmer betrittst: Was musst du aus der SBAR-Übergabe MINIMAL wissen, damit du Frau Schmidt sicher pflegen kannst? Wähle das vollständigste Set.",
         glossarBegriffe: [],
       },
       contentB1: {
-        title: "Was machst du zuerst?",
-        body: "Du betrittst Zimmer 8. Was machst du als erstes?",
+        title: "Was musst du wissen — vor dem Zimmer?",
+        body: "Was musst du aus der Übergabe wissen, BEVOR du ins Zimmer gehst? Wähle was wirklich gebraucht wird.",
         glossarBegriffe: [],
       },
       question: {
-        fragetext: "Du betrittst Zimmer 8. Was tust du ZUERST?",
+        fragetext:
+          "Was musst du aus der SBAR-Übergabe wissen, BEVOR du das Zimmer betrittst — als minimale Sicherheits-Basis?",
         mcVariant: "fallstrick",
         optionen: [
           {
-            text: "Den Blutzucker messen — das hat Frau Bayraktar zuerst genannt.",
+            text: "Nur Name und Zimmernummer — alles andere frage ich Frau Schmidt selbst.",
             isCorrect: false,
             explanation:
-              "Auch der BZ kommt dran — aber zuerst die Person wahrnehmen, nicht als Gerät ankommen. Frau Schmidt ist ein Mensch, keine Messstation. Erst begrüßen, dann Handlungen.",
+              "Zu wenig. Patientensicherheit verlangt Mindestwissen aus der Übergabe BEVOR du Pflege durchführst: aktuelle Diagnosen (Diabetes! Fußsyndrom!), aktuelle Medikamente (Metformin neu!), kritische Werte (BZ 187 nüchtern), Allergien, Sturzrisiko. Wer das nicht kennt, gefährdet die Patientin.",
             explanationB1:
-              "Auch BZ ist wichtig — aber nicht zuerst. Zuerst kommt der Mensch, dann die Aufgabe. Begrüßen ist immer der erste Schritt.",
+              "Zu wenig. Du brauchst mehr Infos: Welche Krankheit? Welche Medikamente? Welche Werte? Sonst kann es gefährlich werden.",
           },
           {
-            text: "Dich vorstellen, Frau Schmidt begrüßen und fragen wie die Nacht war.",
+            text: "Aktuelle Diagnosen, neue Medikamente, kritische Werte (BZ-Trend), bekannte Risiken (Sturz, Inkontinenz, Fußsyndrom) und das Tagesziel der Schicht.",
             isCorrect: true,
             explanation:
-              "Richtig. Jede Pflegebegegnung beginnt mit der Person — Begrüßung, Vorstellung, kurzes Wahrnehmen wie es der Patientin geht. Das schafft Vertrauen und ist die Basis für alles Folgende.",
+              "Richtig. Das ist das Mindestwissen für sichere Pflege. SBAR-Übergabe liefert genau das: Situation (warum stationär), Background (Diagnosen + Medikamente), Assessment (aktuelle Werte + Risiken), Recommendation (Tagesziel). Diese Daten brauchst du IM KOPF wenn du das Zimmer betrittst — nicht erst nachschlagen während der Pflege.",
             explanationB1:
-              "Richtig! Zuerst kommt der Mensch. Begrüßen, vorstellen, fragen wie die Nacht war. Danach kommen die Aufgaben.",
+              "Richtig! Du musst wissen: Welche Krankheit? Welche neuen Medikamente? Welche Werte? Welche Risiken? Welches Ziel heute? Das ist die Basis für sichere Pflege.",
           },
           {
-            text: "Die Beine und Füße von Frau Schmidt inspizieren — diabetisches Fußsyndrom ist dringend.",
+            text: "Alle Befunde der letzten 6 Monate — vollständige Krankengeschichte.",
             isCorrect: false,
             explanation:
-              "Die Fußinspektion ist wichtig — aber sie kommt im Rahmen der Morgenpflege, nicht als allererstes beim Betreten. Frau Schmidt würde sich wie ein Untersuchungsobjekt fühlen, nicht wie eine Patientin, die wahrgenommen wird.",
+              "Zu viel und unrealistisch. Eine SBAR-Übergabe ist KURZ und FOKUSSIERT auf das aktuell Relevante. Vollständige Krankengeschichte liest du nur bei Bedarf nach — vor dem Betreten brauchst du das aktuelle Lagebild, nicht die Lebensgeschichte.",
             explanationB1:
-              "Füße schauen ist wichtig — aber nicht als erstes. Das kommt später bei der Morgenpflege. Zuerst: Frau Schmidt begrüßen.",
+              "Zu viel. Eine SBAR-Übergabe ist kurz. Du musst nur das Wichtige für HEUTE wissen — nicht alles aus 6 Monaten.",
           },
           {
-            text: "Erklären, was heute auf dem Plan steht.",
+            text: "Nur was die Praxisanleiterin mir mündlich gesagt hat, das System lese ich nicht.",
             isCorrect: false,
             explanation:
-              "Auch das kommt — aber erst nach der Begrüßung. Wer zuerst den Tagesplan vorliest, bevor er 'Guten Morgen' sagt, nimmt die Patientin nicht als Person wahr.",
+              "Riskant. Mündliche Übergaben sind unvollständig (vergessene Details, Missverständnisse). Die schriftliche SBAR-Dokumentation im System ist verbindlich und vollständig. Beides zusammen = sichere Übernahme.",
             explanationB1:
-              "Den Plan erklären ist gut — aber erst nach der Begrüßung. Erst: guten Morgen sagen, fragen wie die Nacht war. Dann: was heute passiert.",
+              "Falsch. Mündlich allein reicht nicht — du musst auch im System lesen. Beide Quellen zusammen sind sicher.",
           },
         ],
       },
@@ -249,7 +253,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
           "Bekannt: Diagnosen (Diabetes Typ 2, Fußsyndrom Kategorie 1, Belastungsinkontinenz)",
           "Bekannt: Aktuelle BZ-Werte (nüchtern 187 mg/dl, postprandial 298 mg/dl)",
           "Bekannt: Metformin 500 mg 2× tgl. neu angesetzt heute",
-          "Bekannt: Albumin 31 g/l, NRS 2002 Score 3",
+          "Bekannt: Albumin 31 g/l, NRS-2002-Score 1, GLIM-Diagnose Mangelernährung Stadium 1",
           "Noch offen: Ernährungsgewohnheiten zuhause (was isst sie täglich?)",
           "Noch offen: Bewegungsbiografie und Mobilität im Alltag",
           "Noch offen: Wie geht sie mit der Inkontinenz zuhause um?",

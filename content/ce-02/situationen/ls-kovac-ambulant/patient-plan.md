@@ -80,7 +80,7 @@ Wenn du ihr etwas befiehlst — ohne Erklärung — sagt sie Nein.
 
 ### Chronische Erkrankungen
 
-- **COPD (GOLD-Stadium III)** — schwere Atemwegsobstruktion, FEV1 30–50 % des Sollwertes, belastungsabhängige Dyspnoe, morgendlicher Husten mit gelblichem Sputum, Inhalationstherapie (LABA + LAMA). (GOLD-Report COPD 2023)
+- **COPD (GOLD-Stadium III)** — schwere Atemwegsobstruktion, FEV1 30–49 % des Sollwertes, belastungsabhängige Dyspnoe, morgendlicher Husten mit gelblichem Sputum, Inhalationstherapie (LABA + LAMA). (GOLD-Report COPD 2023)
 - **Herzinsuffizienz (NYHA Stadium II)** — Atemnot bei mittlerer Belastung (Treppe, weite Strecken), Unterschenkelödeme beidseits, kompensiert unter Medikation
 - **Kontrakturen beider Kniegelenke** — Flexionskontrakturen, Bewegungsausmaß max. 90° Beugung, Extensionsdefizit ca. 15°, entstanden durch jahrelange Schonhaltung
 - **Chronische Obstipation** — Stuhlgang alle 3–5 Tage, harter Stuhl, unzureichende Flüssigkeitsaufnahme als Mitursache

@@ -89,7 +89,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DOKUMENTIEREN: SituationsPhase = {
           "Ordne jeden Inhalt der richtigen Kategorie zu.",
         matchingPairs: [
           {
-            left: "Unfallhergang wie von Eltern geschildert (Teetasse, 09:20 Uhr, Kühlung 15–20 Min, Notruf)",
+            left: "Unfallhergang wie von Eltern geschildert (Teetasse, 09:20 Uhr, Erstversorgung: Kleidung entfernt, Kurzkühlung lauwarmes Wasser ~8 Min lokal, Wärmeerhalt, Notruf)",
             right: "Gehört in die Dokumentation ✅",
           },
           {
@@ -109,7 +109,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DOKUMENTIEREN: SituationsPhase = {
             right: "Gehört in die Dokumentation ✅",
           },
           {
-            left: "Vater Kevin hat laut reagiert — ist wahrscheinlich schuldig",
+            left: "Vater Kevin ist sehr emotional und schwer ansprechbar gewesen, möglicherweise überfordert mit der Situation",
             right: "Gehört NICHT in die Dokumentation ❌",
           },
           {

@@ -132,7 +132,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_EVALUIEREN: SituationsPhase = {
         ],
         categoryItems: [
           {
-            text: "Ziel 1 — Proteinzufuhr steigt (täglich 3 eiweißreiche Mahlzeiten): Beratung erfolgt, BZ besser, aber Albumin braucht 2–4 Wochen um zu steigen (Halbwertszeit Albumin: 15–20 Tage)",
+            text: "Ziel 1 — Proteinzufuhr steigt (täglich 3 eiweißreiche Mahlzeiten): Beratung erfolgt, BZ besser, aber Albumin braucht 2–4 Wochen um zu steigen (Halbwertszeit Albumin: 15–20 Tage). Vertiefung: Für kurzfristige Verlaufskontrolle wäre Präalbumin (HWZ 2 Tage) oder Transferrin (HWZ 8 Tage) sensitiver",
             correctCategory: 1,
           },
           {

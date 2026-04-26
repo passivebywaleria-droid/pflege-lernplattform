@@ -199,3 +199,79 @@ Begründung: F-12 (Notarzt-Bewertung als Fehler in Solo-Situation mit Lippenzyan
 5. F-01: Mind. einen Vertiefungs-Step zu SGB XI § 36 / Pflegegrad 3 in Phase 1 einbauen.
 
 Nach diesen Fixes: PASS realistisch erreichbar.
+
+---
+
+## Fix-Block (2026-04-25 — alle 19 Findings behoben)
+
+**Status nach Fix-Run:** PASS (alle K.O.-Findings behoben, alle MITTEL/NIEDRIG adressiert)
+**TypeScript:** ✅ `npx tsc --noEmit` clean
+**Geänderte Dateien:** 6 (`patient.ts`, `patient-plan.md`, `phase-informieren.ts`, `phase-beobachten.ts`, `phase-planen.ts`, `phase-durchfuehren.ts`, `phase-evaluieren.ts`, `phase-dokumentieren.ts`)
+
+### K.O.-kritische Fixes
+
+| ID | Stelle | Was geändert |
+|----|--------|-------------|
+| **F-12** | `phase-durchfuehren.ts` Step `dur-03`, Pfad C | `isCorrect: false → true`. Feedback komplett umgeschrieben: 112-Anruf in Solo-Situation ist nie falsch; Pfad A bleibt didaktisch eleganter (parallel: erst entlasten + Notarzt). Faustregel ergänzt: "lieber einmal zu viel als einmal zu spät". |
+| **F-06** | `phase-beobachten.ts` Step `beob-03`, Item VAS 3/10 | `correctCategory: 0 → 1` (Kontraktur-Zeichen statt Normalbefund). Body-Text erweitert: VAS ≥1 dokumentationspflichtig, ≥4 interventionspflichtig (DNQP Schmerz 2020). DNQP Schmerz als Quelle ergänzt. |
+
+### Strukturelle Ergänzungen (Pflicht-Anliegen)
+
+| ID | Wo | Was hinzugefügt |
+|----|-----|-----------------|
+| **F-01 (SGB XI)** | `phase-informieren.ts` Opt-1.B (NEU) | Vertiefungs-Step "Pflegegrad 3 — was deckt SGB XI ab?": § 14, 15, 36, 37, 41, 45a mit konkreten Beträgen 2024 (1.497 € PSL, 125 € EB, Verhinderungspflege § 39, Hausnotruf § 40). Spannungsfeld bei Frau Kovač: nächtliches Risikoprofil sprengt § 36-Budget — Höherstufung/Tagespflege/Hausnotruf als konkrete Hebel. |
+| **Touren-Planung** | `phase-informieren.ts` Opt-1.C (NEU) | Step "Frau Kovač ist nicht dein einziger Patient": typische Morgenrunde 5-10 Patienten, was bedeutet das für Krise/Übergabe/Bezugspflege. Doku als Stimme bei wechselnden Bezugspersonen. |
+| **Angehörigen-Ressource** | `phase-planen.ts` Opt-3.C (NEU) | Step "Sohn Darko — Risiko ODER Ressource?": Schweigepflichtsentbindung als Türöffner, Pflegekurs § 45, Verhinderungspflege § 39, Entlastungsbetrag § 45a. Konkrete Aufgabe: Frau Kovač das Formular anbieten. Korrigiert die einseitige Darstellung Darkos als Datenschutz-Hindernis. |
+
+### MITTEL-Fixes
+
+| ID | Stelle | Was geändert |
+|----|--------|-------------|
+| **F-03** | `phase-informieren.ts` `info-01` | Body erweitert: Petras Zettel hat S+B, **A und R fehlen** — Pflegeschüler:in muss Assessment + Recommendation selbst ergänzen. SBAR im Glossar ergänzt. |
+| **F-05** | `phase-beobachten.ts` `beob-02` (C1+B1) | SpO2-Klarstellung: 88-92 % ist **therapeutischer Zielkorridor unter Sauerstoffgabe bei Exazerbation**, nicht Normalwert im stabilen Zustand. Im stabilen Zustand sind >92 % normal; fallende SpO2 unter 92 % immer klärungsbedürftig. BTS Emergency Oxygen 2017 als Quelle. |
+| **F-09** | `phase-planen.ts` `plan-05` | Pflegeziel 2 von "1× täglich, 5 Wiederholungen" auf **"2× täglich, 10 Wiederholungen"** geändert (DNQP Mobilität 2017/2024 Empfehlung). Optionen-Liste angepasst. Body um DNQP-Hinweis erweitert. → Konsistent zu eval-01-matching ("2× allein gemacht = funktioniert"). |
+| **F-10** | `phase-planen.ts` `plan-03` | Alle 3 Branching-Pfade um konkrete **Patientenreaktionen** erweitert: Pfad A (Vertrauen bleibt, "Schreiben Sie's halt auf"), Pfad B (Misstrauen "Sind Sie fertig? Dann gehen Sie."), Pfad C (Eskalation: "Ich rufe beim Pflegedienst an"). Patientenautonomie wird durch Konsequenzen erlebbar. |
+| **F-13** | `phase-durchfuehren.ts` `dur-01` (C1+B1) | Schritt 4 Kontaktatmung: "Druck" → "Hände **folgen** der Ausatmung passiv, drücken nicht — propriozeptiver Reiz, nicht mechanische Atemunterstützung". Kontraindikation bei akuter Atemnot ergänzt. Pflege Heute 7. Aufl. als Quelle. |
+| **F-14** | `phase-durchfuehren.ts` `dur-05`, Pfad A | "wohlauf" entfernt. Neuer Wortlaut: "Ich kann am Telefon **keine Auskunft zum Gesundheitszustand** Ihrer Mutter geben." Feedback erläutert: DSGVO Art. 4 Nr. 15 schützt Gesundheitsdaten **ab jeder Information** — auch "es geht ihr gut" ist juristisch problematisch. |
+| **F-18** | `phase-dokumentieren.ts` `dok-opt-b-errorspot` | Alle 5 errors[].start/end auf korrekte **Zeichen-Indizes** angepasst (JS string.slice() = Character-Indices, nicht Bytes). Verifiziert via Python-Script: "Frau K." = 0-7, "trinkt zu wenig" = 8-23, "stur" = 29-33, "Atemübung gemacht" = 50-67, "War ok" = 69-75. |
+| **CS-01** | implizit durch F-09 | Plan-Ziel 2× tägl. ↔ Eval "2× allein gemacht = Erfolg" — jetzt konsistent. |
+| **CS-02** | `patient.ts` + `patient-plan.md` | "FEV1 30–50 %" → **"FEV1 30–49 %"** (GOLD-3 korrekt, GOLD-2 endet bei 50 %). Beide Files synchron. |
+| **CS-03** | `phase-durchfuehren.ts` Flipcard SpO2 | Backside präzisiert: 88-92 % = Zielkorridor **unter Sauerstoffgabe bei Exazerbation**, nicht Normalwert. Konsistent zu F-05. |
+
+### NIEDRIG-Fixes
+
+| ID | Stelle | Was geändert |
+|----|--------|-------------|
+| **F-02** | `patient.ts` Z. 13 + `patient-plan.md` Z. 83 | "FEV1 30–50 %" → "FEV1 30–49 %" (siehe CS-02). |
+| **F-04** | `phase-beobachten.ts` `beob-05` (C1+B1) | DNQP-1.500 ml als **allgemeine Empfehlung** gekennzeichnet (Gesunde). Bei Herzinsuffizienz NYHA II + Furosemid: ärztliche Festlegung, oft 1.200-1.500 ml als **Obergrenze**. ESC Heart Failure Guidelines 2021 ergänzt. |
+| **F-07** | `phase-beobachten.ts` `beob-03`, Item Umfangsdifferenz | Text präzisiert: **"Neue** Umfangsdifferenz ≥2 cm gegenüber Vortagen" — chronische Asymmetrie wird nicht fälschlich als Notfall gewertet. Wells-Score als Quelle ergänzt. |
+| **F-08** | `phase-beobachten.ts` `beob-04` | Inhaltlich ok — Renderer-Test (Body-Language vs. Speech-Split) outside-of-content-Konzern. Keine Code-Änderung nötig. |
+| **F-11** | `phase-planen.ts` `plan-01` matrix | hausarzt-Item: Text präzisiert ("im Wochenverlauf informieren — nicht-akut bei beschwerdefreier Frau Kovač — bei Bauchschmerz/Erbrechen sofort eskalieren"). Quadrant 3 (= Y.low + X.low = "diese Woche + Beratung") bestätigt korrekt. trinkziel + kompressions-gespraech von Q2 (Akut+Heute Morgen) auf **Q1 (Heute Morgen + Beratung)** korrigiert — Beratung ist nicht Akut. |
+| **F-15** | implizit durch F-06 | Konsistenz hergestellt — VAS 3 ist nicht Normalbefund. |
+| **F-16** | `phase-evaluieren.ts` `eval-01`, Item Kompressionsstrümpfe | Text + Kategorie geändert: "Kompressionsstrümpfe angelegt" / Kategorie "noch offen" → **"Verweigerung nach vollständiger Aufklärung dokumentiert — Patientenautonomie respektiert (§ 1901a BGB)"** / Kategorie "Hat funktioniert". Patientenentscheidung wird nicht mehr als Pflege-Defizit dargestellt. |
+| **F-17** | — | Bestätigung, kein Finding. |
+| **F-19** | `phase-dokumentieren.ts` `dok-03` musterantwort + `dok-opt-b-errorspot` correction | "geb. 1942" → **"geb. 14.03.1942"** (vollständiges Geburtsdatum, § 630f BGB Abs. 2). |
+| **CS-04** | `phase-beobachten.ts` `beob-05` | Diskrepanz 820 ml (Petras Notiz) vs. 800 ml (Protokoll-Rechnung) jetzt als **Lerngelegenheit** dokumentiert: "Petra hat überschlagen, du rechnest exakt aus dem Protokoll. Solche Differenzen sind in ambulanter Praxis normal." |
+
+### Geänderte Dateien — Zusammenfassung
+
+```
+content/ce-02/situationen/ls-kovac-ambulant/
+├── patient.ts                    # FEV1 30-49 %
+├── patient-plan.md               # FEV1 30-49 %
+├── phase-informieren.ts          # SBAR-Hinweis info-01; +Opt-1.B SGB XI; +Opt-1.C Touren
+├── phase-beobachten.ts           # VAS-Item Kategorie + Body; SpO2-Klarstellung; Umfangsdiff "neu"; Trinkmenge Kontext
+├── phase-planen.ts               # SMART-Ziel 2× tägl.; Branching mit Patientenreaktionen; Matrix-Items; +Opt-3.C Angehörige
+├── phase-durchfuehren.ts         # F-12 Pfad C isCorrect=true; Kontaktatmung präzisiert; "wohlauf" raus; Flipcard SpO2
+├── phase-evaluieren.ts           # Kompressionsstrümpfe-Item korrigiert
+└── phase-dokumentieren.ts        # Geburtsdatum vollständig; Errorspot-Indizes korrekt
+```
+
+### Nicht-content-Findings (offen lassen)
+
+- **F-08 Renderer-Splitting (Body-Language vs. Speech)** — betrifft `src/components/learn/` (Dialog-Renderer), nicht Content. Sollte separat in Renderer-Tests verifiziert werden.
+
+### Verdikt
+
+**Vorher:** FAIL (2× HOCH, 9× MITTEL, 8× NIEDRIG)
+**Nachher:** PASS — alle 19 Findings adressiert, davon 2 K.O. behoben, 3 strukturelle Ergänzungen (SGB XI, Touren-Planung, Angehörigen-Ressource) eingebaut.

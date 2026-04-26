@@ -273,9 +273,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
             text: "Sandra soll Lukas festhalten, dann geht es schneller.",
             isCorrect: false,
             feedback:
-              "Falsch. Fixieren eines Kindes bei medizinischen Maßnahmen ist nur unter sehr strengen Voraussetzungen erlaubt (unmittelbare Lebensgefahr, andere Methoden ausgeschöpft). Hier liegt keine Notfall-Indikation vor. Fixieren erhöht die Trauma-Reaktion und zerstört das Vertrauen. Außerdem belastet es Sandra massiv — sie soll Lukas festhalten gegen seinen Willen.",
+              "Falsch — wegen des Motivs. Therapeutisches Halten durch Eltern (mit Einverständnis, ruhiger Stimme, als beruhigender Halt — nicht als Zwang) ist bei kindgerechten Maßnahmen eine etablierte Technik (Hoehl/Kullick 2019). Es geht aber um das Kindeswohl — nicht um Geschwindigkeit. 'Damit es schneller geht' macht aus Halt einen Zwang gegen den Willen des Kindes. Hier liegt kein Notfall vor; die richtige Antwort ist: Pause, KUSS-Reassessment, Bedarfsanalgesie. Wenn Lukas nach der Pause kooperiert, kann Sandra ihn beruhigend halten — als Sicherheit, nicht als Fixierung.",
             feedbackB1:
-              "Falsch. Kinder festhalten ist nur in Notfällen erlaubt. Hier ist kein Notfall. Das schadet Lukas und zerstört Sandras Beziehung zu ihm.",
+              "Falsch — wegen des Grundes. Eltern dürfen ihr Kind beruhigend halten — als Sicherheit. Aber nicht 'damit es schneller geht'. Hier ist kein Notfall. Erst Pause, Schmerzmittel und Beruhigung. Wenn Lukas dann kooperiert, kann Sandra ihn ruhig halten.",
           },
         ],
       },
@@ -296,12 +296,12 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
       displayFormat: "stepbystep",
       contentC1: {
         title: "Verbandwechsel Grad 2a — korrekte Durchführung",
-        body: "Nach der Pause. Arzt hat Bedarfsanalgesie freigegeben. Lukas ist ruhiger. Der korrekte Verbandwechsel:\n\n1. **Blasen nicht öffnen** (wenn intakt) — intakte Blasen bieten natürlichen Wundschutz, Öffnung erhöht Infektionsrisiko\n2. **Wundreinigung mit NaCl 0,9 %** — kein Sting, keine Reizung, physiologisch unbedenklich\n3. **Hydroaktive Wundauflage anlegen** (z. B. Mepilex-ähnlich) — haftet nicht an der Wunde, schmerzarmer nächster Wechsel\n4. **Locker wickeln** — kein Abschnüren, Lukas muss Arm bewegen können\n5. **Schmerzkontrolle nach dem Wechsel** — KUSS-Skala erheben, Ergebnis dokumentieren\n\nQuelle: _(DGV 2023; Hoehl/Kullick 2019, kindgerechte Wundversorgung)_",
+        body: "Nach der Pause. Arzt hat Bedarfsanalgesie freigegeben. Lukas ist ruhiger. Der korrekte Verbandwechsel:\n\n1. **Blasen nicht öffnen** (wenn intakt) — intakte Blasen bieten natürlichen Wundschutz, Öffnung erhöht Infektionsrisiko\n2. **NaCl-0,9-%-Spülung NUR bei Bedarf** — bei Verschmutzung, Wundsekretkrusten oder Belägen. Bei sauberer, intakter Wundfläche keine routinemäßige Spülung — sie irritiert das fragile Wundbett unnötig (DGV 2023: minimale Manipulation)\n3. **Hydroaktive Wundauflage anlegen** (z. B. Mepilex-ähnlich) — haftet nicht an der Wunde, schmerzarmer nächster Wechsel\n4. **Locker wickeln** — kein Abschnüren, Lukas muss Arm bewegen können\n5. **Schmerzkontrolle nach dem Wechsel** — KUSS-Skala erheben, Ergebnis dokumentieren\n\nQuelle: _(DGV-Leitlinie Thermische Verletzungen 2023; Hoehl/Kullick 2019, kindgerechte Wundversorgung mit sparsamer Wundreinigung)_",
         glossarBegriffe: ["NaCl 0,9 %", "Hydroaktive Wundauflage", "Mepilex"],
       },
       contentB1: {
         title: "Verbandwechsel — Schritt für Schritt",
-        body: "Nach der Pause. Lukas ist ruhiger. Jetzt der Verbandwechsel:\n\n1. Blasen nicht aufmachen — wenn sie ganz sind, schützen sie die Wunde\n2. Wunde reinigen mit NaCl (= Salzwasser 0,9 %) — kein Brennen\n3. Wundauflage anlegen die nicht klebt\n4. Locker wickeln — Lukas muss den Arm bewegen können\n5. Danach: KUSS-Skala prüfen und aufschreiben",
+        body: "Nach der Pause. Lukas ist ruhiger. Jetzt der Verbandwechsel:\n\n1. Blasen nicht aufmachen — wenn sie ganz sind, schützen sie die Wunde\n2. Wunde NUR spülen wenn sie schmutzig ist — mit NaCl (= Salzwasser 0,9 %). Bei sauberer Wunde nicht spülen (das reizt die Wunde)\n3. Wundauflage anlegen die nicht klebt\n4. Locker wickeln — Lukas muss den Arm bewegen können\n5. Danach: KUSS-Skala prüfen und aufschreiben",
         glossarBegriffe: ["NaCl 0,9 % (= Kochsalzlösung, 0,9 %)", "Hydroaktive Wundauflage"],
       },
     },
@@ -360,9 +360,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
             text: "Mundspülung mit Chlorhexidin-Lösung.",
             isCorrect: false,
             explanation:
-              "Falsch. Chlorhexidin ist bei Kleinkindern nicht zugelassen — Schluckgefahr, Schleimhautreizung, keine Zulassung unter 6 Jahren (DGKJ 2022). Bei Lukas (2,5 J.) ist Chlorhexidin kontraindiziert.",
+              "Falsch. Chlorhexidin-Mundspülungen sind bei Kindern unter 6 Jahren nicht empfohlen — Schluckgefahr, Schleimhautreizung (DGKJ 2022). Bei Lukas (2,5 J.) ist Chlorhexidin kontraindiziert. Kindgerechte Alternativen für die Mundpflege: Octenidin oder eine schluckbare Kamillen-/Salbei-Lösung in kleiner Menge.",
             explanationB1:
-              "Falsch. Chlorhexidin ist bei kleinen Kindern verboten — zu gefährlich. Chlorhexidin ist keine Option für Lukas.",
+              "Falsch. Chlorhexidin ist bei Kindern unter 6 Jahren nicht erlaubt — zu gefährlich. Bessere Alternative für Lukas: Octenidin oder Kamille — die kann er ohne Gefahr schlucken.",
           },
         ],
       },

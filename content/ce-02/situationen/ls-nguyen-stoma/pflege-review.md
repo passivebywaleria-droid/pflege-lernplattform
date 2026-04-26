@@ -123,6 +123,37 @@ Es gibt jedoch einige fachliche Unsauberkeiten — vor allem rund um Stomapflege
 
 **K.O.-Verdikt:** **FAIL** — 3 HOCH-Findings ungelöst (F-03, F-04, F-05). Empfehlung: Diese drei Punkte vor Live-Deploy korrigieren. Die übrigen sind in einem Folge-Sprint adressierbar.
 
+## Fixes durchgeführt — 2026-04-26
+- Alle 12 Findings bearbeitet
+- K.O.-Verdikt: PASS
+
+### Fix-Details
+
+- **F-01** (phase-informieren Step 1.4): Sequencing-Reihenfolge eindeutig festgelegt (s3 → s1 → s4 → s2 → s5), Standard FG SKM 2023 im body und in der instruction zitiert.
+- **F-02** (phase-informieren Step 1.1, C1 + B1): SBAR-Body um Stomafarbe-Befund der Nachtschicht ergänzt ("rosig, ca. 1,5 cm prominent (NS-Befund)").
+- **F-03** (phase-planen Step 3.2 s3 + phase-durchfuehren Kontext + Step 4.2 body C1/B1): Hand-Gegenfixierung beim Abziehen des Beutels in allen Cross-Step-Stellen ergänzt ("eine Hand zieht, die andere hält die Haut sanft gegen — Hauteinriss vermeiden").
+- **F-04** (phase-planen Step 3.2 s5 + phase-durchfuehren Kontext): "Kein Seife" durch korrekten Standard ersetzt — pH-neutrale Waschlotion ist erlaubt; verboten: alkalisches Seifenwasser, Desinfektionsmittel, Lanolin/Parfüm.
+- **F-05** (phase-informieren Step opt3 Heparin-Ort): Frage von allgemeinem Standard auf konkrete Patientensituation umgestellt. Score-3-Antwort jetzt "Laterale Oberschenkelaußenseite oder kontralateraler Oberbauch (≥5 cm Abstand zu Wunde und Stoma)". Quellen ergänzt: Pflege heute 7. Aufl. + FG SKM 2023. Cross-Step-Konsistenz mit phase-evaluieren opt1 hergestellt + matching in phase-dokumentieren 6.3.
+- **F-06** (phase-durchfuehren Step 4.6 GKP): Stomaregion als eigenständige Maßnahme umformuliert (eigenes Set, nicht in GKP integriert), Body und Sortier-Hinweis angepasst.
+- **F-07** (phase-durchfuehren Step 4.7 Schellong): Score-3-Option und Erklärung auf strukturierten Schellong-Test umgestellt: RR liegend → 1–3 Min sitzen → RR sitzend → bei stabilem Kreislauf Aufstehen, Abbruchkriterium ≥20 mmHg syst. Quelle DNQP Sturzprophylaxe + Pflege heute zitiert.
+- **F-08** (phase-evaluieren Step 5.2 calculation): Aufgabentrennung Pflege vs. Arzt klar gemacht — parenterale Ernährung und Trinknahrung-Erhöhung sind ärztliche Anordnung, Pflege dokumentiert + fordert + eskaliert.
+- **F-09** (phase-dokumentieren Step 6.1 Pflicht-Element 6 + Step 6.3 matching): Bauchdeckenwunde aus Stomadokumentation entfernt, eigene Wunddokumentation als Kategorie ergänzt. Pflicht-Element 6a = Querverweis auf Wunddokumentation. Quelle DNQP chronische Wunden ergänzt.
+- **F-10** (phase-durchfuehren Step 4.2 Phase 1 Option 1): Score von 1 auf 2 angehoben, Feedback würdigt Transparenz als grundsätzlich richtig und gibt konkreten Verbesserungsvorschlag (kurze Ankündigungen + Stille).
+- **F-11** (patient.ts diagnosen[2]): Albumin-Wert mit Datierung "Abnahme Tag 2 post-OP" versehen.
+- **F-12** (Phase 2 Step 2.4 patientResponse): Keine Änderung — vom Reviewer als korrekt bewertet.
+
+### Cross-Step-Konsistenz nach Fix
+- Heparin-Injektionsort: jetzt durchgängig "laterale Oberschenkelaußenseite (Wunde + Stoma vermieden, ≥5 cm Abstand)" in Phase 1 opt3, Phase 5 opt1, Phase 6 matching.
+- Beutel-Abziehrichtung: jetzt durchgängig mit Hand-Gegenfixierung in Phase 3 (Plan), Phase 4 (Kontext + Step 4.2 body).
+- Reinigung: jetzt durchgängig "lauwarmes Wasser, bei Bedarf milde pH-neutrale Waschlotion" in Phase 3 (Plan-Schritt s5) und Phase 4 (Kontext-Material).
+- Bauchdeckenwunde: jetzt durchgängig getrennt (eigene Wunddokumentation) in Stomadokumentation (Querverweis) und matching.
+
+### Validierung
+- `npx tsc --noEmit` — PASS (0 Fehler)
+- 12/12 Findings adressiert
+- K.O.-Kriterien (F-03, F-04, F-05) gelöst
+
+
 **Stärken zum Erhalt:**
 - K1-Branching "Ich bin kein richtiger Mann mehr" (Phase 4 Step 4.3) — das ist Lehrbuch-Qualität für würdevolle Pflege.
 - Ehefrau-Mai-Dialog (Phase 4 Step 4.4) — Entlassungsmanagement im Akutkontext, fachlich solide gegliedert.

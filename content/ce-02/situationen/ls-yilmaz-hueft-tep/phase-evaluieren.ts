@@ -32,14 +32,14 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_EVALUIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Evaluation: Was hat heute gewirkt?",
-        body: "Evaluation bedeutet nicht 'alles gelöst oder nicht'. Es bedeutet: Was hat heute gewirkt? Was braucht morgen nochmal Aufmerksamkeit? Bewerte die heutigen Maßnahmen — ordne jede einer Kategorie zu.",
+        body: "Evaluation bedeutet nicht 'alles gelöst oder nicht'. Es bedeutet: Was hat heute gewirkt? Was braucht morgen nochmal Aufmerksamkeit? Bewerte die heutigen Maßnahmen — ordne jede einer Kategorie zu.\n\n**Wichtig zu unterscheiden:** Eine pflegerische Maßnahme kann *abgeschlossen* sein, während die Diagnostik noch *läuft*. Beispiel: Wadenschmerz → Arzt informiert → Doppler beauftragt. Pflegerisch ist alles Richtige eingeleitet — das gehört zu \"Ergebnis ausstehend\", nicht zu \"nicht vollständig gelöst\".",
         fallbezug:
           "Frau Yilmaz ist aufgestanden — das ist der Haupterfolg. Die Dekubitus-Prophylaxe muss fortgesetzt werden. Der Wadenschmerz ist noch offen.",
         glossarBegriffe: ["Evaluation", "Pflegeprozess", "Zielerreichung"],
       },
       contentB1: {
         title: "Was hat heute funktioniert?",
-        body: "Du schaust zurück auf den heutigen Tag. Welche Maßnahmen haben gewirkt? Ordne sie zu.",
+        body: "Du schaust zurück auf den heutigen Tag. Welche Maßnahmen haben gewirkt? Ordne sie zu.\n\nTipp: Wenn du Arzt + Doppler beauftragt hast, hast du pflegerisch alles richtig gemacht. Das Ergebnis fehlt noch — das ist „Ergebnis ausstehend\" (nicht „ungelöst\").",
         glossarBegriffe: ["Evaluation"],
       },
       question: {

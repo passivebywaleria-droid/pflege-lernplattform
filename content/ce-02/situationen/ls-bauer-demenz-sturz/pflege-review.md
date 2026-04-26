@@ -136,3 +136,52 @@
 - **Hygiene-Reihenfolge**: Der schwerste fachliche Fehler ist F-01 (Gesicht zuletzt). Das ist falsch in einem Lehrtext fuer 2./3. Ausbildungsdrittel und wird so in den Examina sanktioniert.
 
 **K.O.-Verdikt**: **FAIL** — F-01 (Gesicht-zuletzt) und F-04 (ABCDE-Reihenfolge mit Vitalzeichen am Ende) sind HOCH-Findings, die direkt fachlich falsch sind und in einer Pruefung als Fehler bewertet wuerden. Beide muessen vor Live-Deploy korrigiert werden. Nach Korrektur: PASS.
+
+## Fixes durchgeführt — 2026-04-26
+- Alle 15 Findings bearbeitet
+- K.O.-Verdikt: PASS
+
+### Detail-Log der Fixes
+
+**F-01 (HOCH) — Hygiene-Reihenfolge in Step 4.1:** "Gesicht zuletzt" entfernt. Neu: "Reihenfolge nach Hygiene — vom sauberen zum unreinen Bereich (Gesicht/Augen zuerst, Genital-/Analbereich zuletzt), innerhalb dessen jeden Körperabschnitt in Haarwuchsrichtung." Quelle erweitert um "I Care Pflege, Kapitel Körperpflege". B1 angepasst.
+
+**F-02 (MITTEL) — Cross-Step 4.1 vs. 4.3:** Durch F-01-Fix automatisch konsistent. Stirn-Wäsche im 2. Anlauf passt jetzt zur "Gesicht zuerst"-Hygieneregel.
+
+**F-03 (MITTEL) — "kurz schauen" Step 1.4:** Score-3-Antwort ersetzt durch "Ich helfe dir heute früh und bleibe ein bisschen bei dir." Feedback um DNQP Beziehungsgestaltung Demenz 2018 (Verlässlichkeit/Wahrhaftigkeit) erweitert. B1 ebenso. Auch Beispiel im Erklär-Step 1.3 angepasst.
+
+**F-04 (HOCH) — ABCDE-Reihenfolge in Step 2.2:** Vitalzeichen von Position 6 auf Position 2 verschoben (gleich nach Ansprechbarkeit). Reihenfolge jetzt: Bewusstsein → Vitalzeichen → Kopf/HWS → BESD → Extremitäten → Hämatome. Body um ABCDE-Begründung (Synkope ausschließen) und DNQP-Verweis ergänzt; Glossar-Begriffe ABCDE-Schema, Synkope, Sturzprotokoll hinzu.
+
+**F-05 (MITTEL) — IAD-Faktor Step 2.4:** Risikoerklärung neu gerahmt: Wechsel = Schutzmaßnahme; Risiko liegt in der Feuchtigkeitsbelastung zwischen Wechseln (IAD-Risiko, DNQP Förderung Harnkontinenz / Hinweispapier IAD). Zusätzlicher Sturzrisiko-Bezug (nächtliche Polyurie). B1 ebenso.
+
+**F-06 (NIEDRIG) — Mirtazapin verkürzt:** In Step 2.5 (categorize) und Step 3.4 (matrix) Beschreibung präzisiert: "Antidepressivum mit dosisabhängiger Sedierung, PRISCUS-Liste — Sturzrisiko".
+
+**F-07 (MITTEL) — § 1831 BGB Notfall-Klausel Step 3.6:** Notfallklausel präzisiert: "Nur in unmittelbarer Notlage (akute Selbstverletzungs- oder Lebensgefahr, rechtfertigender Notstand nach § 34 StGB) kurzzeitig erlaubt — danach umgehend richterliche Genehmigung beantragen. Akute Sturzgefahr als Dauerzustand reicht nicht." Eindeutigere Begründung.
+
+**F-08 (MITTEL) — "Kniebeugen" Step 4.4:** Ersetzt durch "Passive Knieflexion im Bett (Beugung im Kniegelenk, bis zur schmerzfreien Grenze — BESD beachten)". Eindeutige Fachterminologie.
+
+**F-09 (MITTEL) — Malzbier alkoholfrei klargestellt:** patient.ts ergänzt: "alkoholfreies Malzgetränk … Kombination Mirtazapin + Alkohol wäre kontraindiziert". Step 3.5 (5 Strategien), Step 4.9 (Timer), Step 6.3 (Miktionsprotokoll) entsprechend angepasst — überall steht jetzt "alkoholfreies Malzgetränk/Malzbier".
+
+**F-10 (NIEDRIG) — Mundschwämmchen-Aspiration Step 4.5:** Absolutes "Kein Aspirationsrisiko" ersetzt durch "geringes Aspirationsrisiko bei sachgerechter Anwendung — Schwämmchen festsitzend, Pflegekraft führt, Patient nicht alleine lassen" mit FDA-Warnung 2017. B1 ebenso angepasst.
+
+**F-11 (MITTEL) — Datenschutz Angehörige Step 5.2:** patient.ts ergänzt um rechtliche Vertretung ("Tochter Ingrid Bauer ist seit 2024 als gesetzliche Betreuerin … bestellt — auskunftsberechtigt"). Step 5.2 Body um Vorbedingungs-Hinweis erweitert: "Bevor du Auskunft gibst, prüfst du in der Akte: Ingrid Bauer ist als gesetzliche Betreuerin … eingetragen — Auskunft ist also rechtlich zulässig (§ 203 StGB; § 1814 BGB; DSGVO Art. 9). Wäre sie nicht Betreuerin, müsstest du an Stationsleitung verweisen." Glossar erweitert um Schweigepflicht und Gesetzliche Betreuung.
+
+**F-12 (NIEDRIG) — Perspiratio Step 5.6:** Wert von 500 ml auf 800 ml angehoben (Lehrbuchwert für 82-jährigen, immobilen Patienten ca. 700–1000 ml). Bilanz neu berechnet: 1000 − 1550 = −550 ml. Erklärung & B1-Erklärung entsprechend angepasst.
+
+**F-13 (NIEDRIG) — Trinkmengen-Diskrepanz:** Phasenkontext (Frau Meiers Aussage) auf "ca. 1000 ml gesamt (200 Frühstück + 400 Mittag + 400 Nachmittag)" konsistent mit Step 5.1. Step-5.1-Karte ebenfalls neu formuliert.
+
+**F-14 (NIEDRIG) — FAST 6a Definition Step 1.5:** Front der Flipcard FAST 6a präzisiert: "Schwierigkeiten beim korrekten Anziehen (z. B. falsche Reihenfolge, falsche Seite, anziehen ist möglich, aber inkorrekt)" statt "kann sich nicht mehr selbst anziehen".
+
+**F-15 (NIEDRIG) — Validation "5 Prinzipien" Step 1.3:** Eingeleitet mit "Validation nach Feil arbeitet mit 14 Techniken (Zentrieren, Reformulieren, Spiegeln, Berührung u. a.). Für die Praxis lassen sich daraus folgende Grundprinzipien ableiten (vereinfacht nach Feil 2012)". B1-Variante ebenfalls neutralisiert.
+
+### Cross-Step-Fixes
+
+- **Knie-Konsistenz:** Step 2.3 (Schmerzsignal-Dialog) prüft jetzt das RECHTE Knie (passt zum 20°-Streckdefizit, didaktisch sinnvoller). Bildhinweis Step 2.1 (rechtes Bein außenrotiert) konsistent. Sturzprotokoll-Musterantwort Step 6.1 entsprechend angepasst ("rechtes Knie bei Bewegung BESD 2/10").
+- **Step 4.6 Branching:** Dritte Option ergänzt ("zügig aufsetzen trotz Schreien" — Score 0, mit Kinästhetik-Begründung), so dass alle drei Branching-Steps in der Phase 3 Optionen haben.
+- **Sturzprotokoll-Bezug:** Step 2.2 Body ergänzt um Hinweis "Vitalzeichen und Verletzungscheck fließen ins Sturzprotokoll (Phase 6) — saubere Erfassung jetzt = solide Dokumentation am Ende".
+- **Mirtazapin in patient.ts:** Aktuelle Medikation als Auszug aufgenommen (Donepezil, Mirtazapin 15 mg z. N. mit PRISCUS-Hinweis, Tamsulosin, Macrogol). Damit wird das Medikament nicht mehr nur in den späteren Phasen sichtbar.
+- **Trinkziel-Konsistenz:** Eval-Step 5.1-Karte präzisiert auf "Trinkziel 1500 ml … (heute 1000 ml — Etappe 1300 ml ebenfalls offen)". Patient.ts-Ziel (1500 ml) und Plan-Etappe (1300 ml) explizit verknüpft.
+
+### Validierung
+- TypeScript: PASS (`npx tsc --noEmit` ohne Fehler)
+- Alle 15 Findings (2 HOCH, 8 MITTEL, 5 NIEDRIG) und 4 Cross-Step-Probleme adressiert
+- C1- und B1-Varianten parallel angepasst

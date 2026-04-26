@@ -10,7 +10,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PATIENT: PatientBeschreibung = {
   alter: 84,
   geschlecht: "w",
   diagnosen: [
-    "COPD (GOLD-Stadium III) — schwere Atemwegsobstruktion, FEV1 30–50 % des Sollwertes",
+    "COPD (GOLD-Stadium III) — schwere Atemwegsobstruktion, FEV1 30–49 % des Sollwertes",
     "Herzinsuffizienz (NYHA Stadium II) — Atemnot bei mittlerer Belastung, Unterschenkelödeme",
     "Kontrakturen beider Kniegelenke — Flexionskontrakturen, Extensionsdefizit ca. 15°",
     "Chronische Obstipation — Stuhlgang alle 3–5 Tage, harter Stuhl",

@@ -299,9 +299,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
                   "Das ist nicht gut. Honig ist nicht Unsinn. Manuka-Honig wird in der Medizin heute noch genutzt. Und: Frau Yilmaz erzählt dir etwas Persönliches — sie verdient Respekt.",
               },
               {
-                text: "\"Das ist tatsächlich interessant — Honig war historisch ein Antiseptikum. Medizinischer Manuka-Honig wird heute noch eingesetzt. Für Ihre Wunde ist im Moment der Hydrokolloid-Verband besser geeignet, aber Sie haben Recht, dass Feuchthalten wichtig ist.\"",
+                text: "\"Sie haben Recht, dass Honig damals geholfen hat — das war historisch ein Antiseptikum, und medizinischer Manuka-Honig wird heute noch in der Wundversorgung eingesetzt. Für Ihre Wunde hat Dr. Kirchner heute den Hydrokolloid-Verband angeordnet, weil er für diese Wundkategorie besser passt.\"",
                 textB1:
-                  "\"Das stimmt wirklich. Honig hat früher als Wundmittel geholfen. Heute gibt es sogar noch medizinischen Honig. Für Ihre Wunde nehmen wir jetzt einen anderen modernen Verband. Aber das Prinzip ist ähnlich — Wunde feucht halten. Sie haben Recht.\"",
+                  "\"Sie haben Recht — Honig hat damals geholfen. Es gibt heute sogar medizinischen Honig in Krankenhäusern. Für Ihre Wunde hat die Ärztin einen anderen, modernen Verband gewählt. Der passt besser zu dieser Wunde.\"",
                 patientResponse:
                   "Frau Yilmaz lächelt kurz. 'Ich dachte, ihr lacht mich aus. Aber das freut mich.' — sie entspannt sich.",
                 patientResponseB1:

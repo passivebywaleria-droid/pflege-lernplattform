@@ -110,9 +110,9 @@ export const CE02_SIT_NGUYEN_STOMA_EVALUIEREN: SituationsPhase = {
           unit: "kcal",
           tolerance: 50,
           explanation:
-            "Gesamtbetrag: 0 + 20 + 60 + 0 + 60 + 300 = 440 kcal. Richtwert für Herrn Nguyen post-OP: 1500–2000 kcal/d. Das Ernährungsdefizit ist erheblich: ~1100–1600 kcal täglich zu wenig. Konsequenz: Eskalation dringend notwendig — Ernährungsberaterin + ggf. ärztliche Anordnung Trinknahrung erhöhen oder parenterale Ernährung prüfen. Quelle: DGEM 2020.",
+            "Gesamtbetrag: 0 + 20 + 60 + 0 + 60 + 300 = 440 kcal. Richtwert für Herrn Nguyen post-OP: 1500–2000 kcal/d. Das Ernährungsdefizit ist erheblich: ~1100–1600 kcal täglich zu wenig. Aufgabentrennung: Pflege fordert die Ernährungsberaterin an, dokumentiert Intake und Defizit, bietet im Rahmen der Anordnung Trinknahrung an und eskaliert an den Arzt. Erweiterte Maßnahmen (Trinknahrung erhöhen, parenterale Ernährung) sind ausschließlich ärztliche Anordnung — die Pflege bereitet die Information auf, ordnet aber nicht selbst an. Quelle: DGEM 2020.",
           explanationB1:
-            "Gesamt: ca. 440 kcal. Herr Nguyen braucht 1500–2000 kcal täglich. Er hat viel zu wenig gegessen. Das muss jetzt gelöst werden.",
+            "Gesamt: ca. 440 kcal. Herr Nguyen braucht 1500–2000 kcal pro Tag. Er hat viel zu wenig gegessen. Aufgaben: Pflege schreibt es auf, fordert die Ernährungsberaterin an und informiert den Arzt. Mehr Trinknahrung oder Infusion zur Ernährung — das ordnet der Arzt an, nicht die Pflege.",
         },
       },
     },
@@ -218,10 +218,10 @@ export const CE02_SIT_NGUYEN_STOMA_EVALUIEREN: SituationsPhase = {
         trueFalseCards: [
           {
             statement:
-              "Heparin s.c. wurde heute Morgen korrekt verabreicht (Bauchdecke, 2 cm Abstand zu Wunde und Stoma).",
+              "Heparin s.c. wurde heute Morgen korrekt verabreicht — Injektionsstelle laterale Oberschenkelaußenseite (Wunde und Stoma vermieden, ≥5 cm Abstand).",
             isTrue: true,
             explanation:
-              "Prüfen: Im Pflegeprotokoll sollte die Injektionsstelle und Uhrzeit dokumentiert sein. Bei Herrn Nguyen: Bauchdecke gegenüber dem Stoma, mit Abstand zur Wundnaht. Korrekte Durchführung = Thromboseprophylaxe pharmakologisch gewährleistet.",
+              "Prüfen: Im Pflegeprotokoll sollten Injektionsstelle und Uhrzeit dokumentiert sein. Bei Herrn Nguyen ist die periumbilikale Bauchdecke wegen frischer Wunde + Stoma kaum sicher nutzbar — daher Ausweich auf laterale Oberschenkelaußenseite (für NMH freigegeben) oder kontralateralen Oberbauch mit ≥5 cm Abstand zu Wunde und Stoma. Korrekte Durchführung + Rotation der Stelle = pharmakologische Thromboseprophylaxe gewährleistet.",
           },
           {
             statement:

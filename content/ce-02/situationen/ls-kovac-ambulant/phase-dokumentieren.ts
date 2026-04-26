@@ -171,7 +171,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
         fragetext:
           "Schreibe den Besuchsbericht für den Morgenbesuch bei Frau Kovač (07:30–08:15 Uhr). Umfang: 80–120 Wörter.",
         musterantwort:
-          "07:30–08:15 Uhr, Morgenbesuch bei Frau Kovač, Marija, geb. 1942. Übergabe gelesen (Petra): Trinkmenge 820 ml, 4 Tage kein Stuhlgang, Kompressionsstrümpfe verweigert. Wohnungscheck: Teppich vor Sessel als Stolperfalle angesprochen. Trinkprotokoll besprochen, 3 Becher à 200 ml auf Küchentisch bereitgestellt, Tagesziel 1.200 ml vereinbart. Atemübungen mit Lippenbremse durchgeführt — nach 4 Wiederholungen Kurzatmigkeit (AF ca. 22/Min, Lippenzyanose sichtbar). Übung gestoppt, Fenster geöffnet, Frau Kovač in Ruheposition — Besserung nach 3 Min, kein Notarzt nötig. Während Bewegungsübungen: Anruf Sohn Darko Kovač — keine Gesundheitsdaten weitergegeben, Hinweis auf Pflegedienstkontakt für schriftliche Einwilligung. Kompressionsstrümpfe: Aufklärung über Thromboserisiko bei Herzinsuffizienz und Immobilität durchgeführt, Unterschied ASS/Kompressionstherapie erklärt, mündlich, patientengerecht, Rückfragen ermöglicht. Frau Kovač äußerte: 'Ich brauch keine Strümpfe, ich hab doch die Tabletten.' Bewusste, freiwillige Ablehnung nach vollständiger Aufklärung. Schlafgespräch heute Abend angekündigt.",
+          "07:30–08:15 Uhr, Morgenbesuch bei Frau Kovač, Marija, geb. 14.03.1942. Übergabe gelesen (Petra): Trinkmenge 820 ml, 4 Tage kein Stuhlgang, Kompressionsstrümpfe verweigert. Wohnungscheck: Teppich vor Sessel als Stolperfalle angesprochen. Trinkprotokoll besprochen, 3 Becher à 200 ml auf Küchentisch bereitgestellt, Tagesziel 1.200 ml vereinbart. Atemübungen mit Lippenbremse durchgeführt — nach 4 Wiederholungen Kurzatmigkeit (AF ca. 22/Min, Lippenzyanose sichtbar). Übung gestoppt, Fenster geöffnet, Frau Kovač in Ruheposition — Besserung nach 3 Min, kein Notarzt nötig. Während Bewegungsübungen: Anruf Sohn Darko Kovač — keine Gesundheitsdaten weitergegeben, Hinweis auf Pflegedienstkontakt für schriftliche Einwilligung. Kompressionsstrümpfe: Aufklärung über Thromboserisiko bei Herzinsuffizienz und Immobilität durchgeführt, Unterschied ASS/Kompressionstherapie erklärt, mündlich, patientengerecht, Rückfragen ermöglicht. Frau Kovač äußerte: 'Ich brauch keine Strümpfe, ich hab doch die Tabletten.' Bewusste, freiwillige Ablehnung nach vollständiger Aufklärung. Schlafgespräch heute Abend angekündigt.",
         bewertungskriterien: [
           "Datum und Uhrzeit vorhanden",
           "Maßnahmen konkret genannt",
@@ -295,16 +295,16 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
           errors: [
             {
               start: 0,
-              end: 6,
-              correction: "Frau Kovač, Marija — geb. 1942",
+              end: 7,
+              correction: "Frau Kovač, Marija — geb. 14.03.1942",
               explanation:
-                "Kein vollständiger Name. Dokumentation muss den Patienten eindeutig identifizieren.",
+                "Kein vollständiger Name. Dokumentation muss den Patienten eindeutig identifizieren (§ 630f BGB Abs. 2).",
               explanationB1:
-                "Kein vollständiger Name. Du musst immer den vollen Namen schreiben.",
+                "Kein vollständiger Name. Du musst immer den vollen Namen + Geburtsdatum schreiben.",
             },
             {
-              start: 7,
-              end: 26,
+              start: 8,
+              end: 23,
               correction: "Trinkmenge gestern: 800 ml (Trinkprotokoll) — Ziel 1.200 ml vereinbart",
               explanation:
                 "Zu wenig Information. Keine konkrete Trinkmenge, kein Zielwert, keine Maßnahme.",
@@ -312,7 +312,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
                 "Zu wenig. Wie viel hat sie getrunken? Was ist das Ziel? Was hast du gemacht?",
             },
             {
-              start: 28,
+              start: 29,
               end: 33,
               correction: "verweigert — Aufklärung durchgeführt",
               explanation:
@@ -321,8 +321,8 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
                 "'Stur' ist ein wertendes Wort — das ist nicht erlaubt. Außerdem fehlt alles zur Verweigerung: Was hast du erklärt? Was hat sie gesagt?",
             },
             {
-              start: 35,
-              end: 50,
+              start: 50,
+              end: 67,
               correction:
                 "Atemübungen mit Lippenbremse, 4 Wiederholungen. Komplikation: Kurzatmigkeit (AF ca. 22/Min, Lippenzyanose) — Übung abgebrochen, Fenster geöffnet, Besserung nach 3 Min",
               explanation:
@@ -331,8 +331,8 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
                 "Zu wenig. Was ist mit der Atmung passiert? Was hast du gemacht? Das fehlt alles.",
             },
             {
-              start: 52,
-              end: 59,
+              start: 69,
+              end: 75,
               correction: "Zustand nach Übungsunterbrechung gebessert, kein Notaruf nötig",
               explanation:
                 "'War ok' ist keine Pflegedokumentation. Es ist keine Fachsprache und enthält keine klinische Information.",

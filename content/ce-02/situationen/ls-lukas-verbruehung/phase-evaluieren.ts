@@ -51,7 +51,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_EVALUIEREN: SituationsPhase = {
             correctCategory: 0,
           },
           {
-            text: "Schmerzreduktion: KUSS-Skala jetzt 3/10 (gestern Aufnahme: 9/10, nach Analgesie: 6/10)",
+            text: "Schmerzreduktion: KUSS-Skala jetzt 3/10 (gestern Aufnahme: 8/10, nach Analgesie: 6/10)",
             correctCategory: 0,
           },
           {
@@ -105,12 +105,12 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_EVALUIEREN: SituationsPhase = {
           events: [
             {
               id: "t1",
-              time: "09:20 Uhr (Unfall)",
-              title: "KUSS 9/10",
+              time: "09:20 Uhr (Unfall) → Aufnahme",
+              title: "KUSS 8/10",
               description:
-                "Direkt nach dem Unfall. Maximaler Schmerz. Lukas weint laut, greift nach Sandra.",
+                "Direkt nach dem Unfall bzw. bei Aufnahme. Sehr starker Schmerz, Schmerzmittel beginnt erst zu wirken. Lukas weint laut, greift nach Sandra.",
               descriptionB1:
-                "Direkt nach dem Unfall. Schmerz maximal. Lukas weint.",
+                "Direkt nach dem Unfall bzw. bei Aufnahme. Schmerz sehr stark. Lukas weint.",
               highlight: true,
             },
             {

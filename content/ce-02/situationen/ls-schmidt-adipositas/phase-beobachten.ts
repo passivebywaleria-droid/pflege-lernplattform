@@ -1,5 +1,5 @@
 // CE-02 Situation Frau Schmidt — Phase 2: Beobachten & Assessment
-// Steps: 8 · Bloom: B3–B4 · Zeit: ~30–40 Min
+// Steps: 9 · Bloom: B3–B4 · Zeit: ~35–45 Min
 // Quelle: phase-beobachten.md
 
 import type { SituationsPhase } from "../../../_types";
@@ -98,7 +98,10 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
       },
     },
 
-    // Step 2.3 — Categorize: NRS 2002 Assessment
+    // Step 2.3 — Categorize: NRS 2002 Assessment (KORRIGIERT — F-02/F-03)
+    // Albumin gehört NICHT zu NRS 2002 (das ist GLIM), sondern wird in 2.4 (GLIM) thematisiert.
+    // NRS 2002 prüft: 1) Ernährungsstatus (BMI, Gewichtsverlust, Nahrungsaufnahme),
+    // 2) Erkrankungsschwere, 3) Alter ≥ 70.
     {
       stepId: "ce02-schmidt-beob-03-nrs-2002",
       phase: 2,
@@ -106,8 +109,8 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
       bloomLevel: 4,
       kompetenzbereich: "I.1",
       quellen: [
+        "Kondrup J. et al. (2003): NRS 2002 — ESPEN Guidelines",
         "DNQP (2017): Expertenstandard Ernährungsmanagement",
-        "Cederholm T. et al. (2019): GLIM-Kriterien",
       ],
       track: "basis",
       modus: "sortierstation",
@@ -115,40 +118,79 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "NRS 2002 — Ernährungsrisiko-Screening",
-        body: "Ordne Frau Schmidts Daten den NRS-2002-Kategorien zu. Bloom 4: Daten in ein Screening-Werkzeug übersetzen und das Paradox verstehen.",
-        glossarBegriffe: ["NRS 2002", "Albumin"],
+        body: "Das NRS 2002 (Nutritional Risk Screening) ist das Screening-Werkzeug der ESPEN. Es prüft DREI Achsen: 1) Ernährungsstatus (BMI, Gewichtsverlust, Nahrungsaufnahme — KEIN Albumin!), 2) Schweregrad der Erkrankung, 3) Alter ≥ 70 Jahre = +1 Punkt. Albumin und Laborparameter gehören NICHT in das NRS-Screening — sie sind Bestandteil der nachgelagerten GLIM-Diagnostik. Ordne Frau Schmidts Daten den drei NRS-Achsen zu.",
+        glossarBegriffe: ["NRS 2002"],
       },
       contentB1: {
         title: "NRS 2002 — Ernährungs-Risiko prüfen",
-        body: "NRS 2002 (= Ernährungs-Risiko-Screening) — du prüfst das Risiko für Mangel-Ernährung. Ordne Frau Schmidts Daten zu.",
-        glossarBegriffe: ["NRS 2002", "Albumin"],
+        body: "NRS 2002 ist ein Werkzeug. Es schaut auf 3 Punkte:\n1. Ernährungs-Zustand (BMI, Gewichts-Verlust, wie viel isst sie aktuell?)\n2. Wie krank ist sie?\n3. Ist sie 70 Jahre oder älter?\n\nWichtig: Albumin (= Eiweiß im Blut) gehört NICHT zu NRS 2002. Albumin ist Teil eines anderen Tests (GLIM).\n\nOrdne Frau Schmidts Daten zu.",
+        glossarBegriffe: ["NRS 2002"],
       },
       question: {
         fragetext:
-          "Ordne Frau Schmidts Daten den NRS-2002-Kategorien zu und bestimme den Gesamtscore.",
+          "Ordne Frau Schmidts Daten den drei NRS-2002-Achsen zu (Albumin gehört NICHT dazu — das ist GLIM!).",
         categories: [
-          { name: "Ernährungsstatus-Score (0, 1 oder 2 Punkte)" },
-          { name: "Schweregrad der Erkrankung (0, 1 oder 2 Punkte)" },
-          { name: "Altersscore (0 oder 1 Punkt)" },
+          { name: "1. Ernährungsstatus (BMI, Gewichtsverlust, Nahrungsaufnahme)" },
+          { name: "2. Schweregrad der Erkrankung" },
+          { name: "3. Alter ≥ 70 Jahre" },
         ],
         categoryItems: [
           {
-            text: "BMI 38 — auf den ersten Blick Score 0 (kein Gewichtsverlust, kein Untergewicht)",
+            text: "BMI 38 — kein Untergewicht, kein dokumentierter Gewichtsverlust → Ernährungsstatus-Score 0",
             correctCategory: 0,
           },
           {
-            text: "Albumin 31 g/l — Hinweis auf Proteinmangel trotz Übergewicht → NRS-Gesamtbewertung korrigieren!",
+            text: "Nahrungsaufnahme letzte Woche unverändert (laut Frau Schmidt) → Ernährungsstatus-Score bleibt 0",
             correctCategory: 0,
           },
           {
-            text: "Diabetes entgleist, stationäre Aufnahme nötig → Score 1",
+            text: "Diabetes mellitus entgleist (BZ 398 bei Aufnahme), stationäre Behandlung nötig → Schweregrad-Score 1",
             correctCategory: 1,
           },
           {
-            text: "Alter 68 Jahre → kein Altersscore (Altersscore gilt ab 70 J.)",
+            text: "Alter 68 Jahre — Schwelle ist ≥ 70 → Altersscore 0 (kein Alterspunkt)",
             correctCategory: 2,
           },
         ],
+      },
+    },
+
+    // Step 2.3b — Calculation: NRS-2002-Gesamtscore berechnen
+    {
+      stepId: "ce02-schmidt-beob-03b-nrs-summe",
+      phase: 2,
+      stepType: "calculation",
+      bloomLevel: 4,
+      kompetenzbereich: "I.1",
+      quellen: ["Kondrup J. et al. (2003): NRS 2002 — ESPEN Guidelines"],
+      track: "basis",
+      modus: "puzzle",
+      lernziel: "ce02-schmidt-beob-nrs-summe",
+      tag: "pflege",
+      contentC1: {
+        title: "NRS 2002 — Gesamtscore berechnen",
+        body: "Du hast die drei NRS-Achsen zugeordnet. Jetzt: NRS-Gesamtscore = Ernährungsstatus + Schweregrad + Alter. Bei Frau Schmidt: 0 (Ernährungsstatus) + 1 (Erkrankungsschwere) + 0 (Alter < 70) = ? Liegt der Score ≥ 3, ist eine Ernährungsintervention indiziert.",
+        glossarBegriffe: ["NRS 2002"],
+      },
+      contentB1: {
+        title: "NRS 2002 — Punkte zusammenzählen",
+        body: "Jetzt rechnest du: Wie viele Punkte hat Frau Schmidt insgesamt?\n- Ernährungs-Zustand: 0 Punkte\n- Krankheits-Schwere: 1 Punkt\n- Alter (Frau Schmidt ist 68): 0 Punkte\n\nWenn die Summe 3 oder mehr ist → Ernährungs-Hilfe ist nötig.",
+        glossarBegriffe: ["NRS 2002"],
+      },
+      question: {
+        fragetext:
+          "NRS-2002-Gesamtscore: 0 (Ernährungsstatus) + 1 (Erkrankungsschwere) + 0 (Alter) = ? Punkte.",
+        calculation: {
+          instruction: "Berechne den NRS-Gesamtscore.",
+          formula: "Ernährungsstatus + Schweregrad + Alter",
+          correctValue: 1,
+          unit: "Punkte",
+          tolerance: 0,
+          explanation:
+            "0 + 1 + 0 = 1 Punkt. Wichtige Erkenntnis: Der reine NRS-Score allein ergibt bei Frau Schmidt KEINE Ernährungsintervention (Schwelle: ≥ 3 Punkte). Trotzdem zeigt der niedrige Albumin-Wert (31 g/l), dass eine GLIM-Diagnostik im zweiten Schritt nötig ist. NRS 2002 ist das Screening — GLIM die nachgelagerte Diagnostik (Phänotypische Kriterien: Gewichtsverlust, BMI, reduzierte Muskelmasse + Ätiologische Kriterien: reduzierte Nahrungsaufnahme, Inflammation). So entsteht das Bild: NRS niedrig, GLIM positiv für Mangelernährung-Risiko trotz Adipositas. (Kondrup 2003; Cederholm GLIM 2019)",
+          explanationB1:
+            "0 + 1 + 0 = 1 Punkt. NRS 2002 allein zeigt kein hohes Risiko (Schwelle: 3 Punkte). Aber Frau Schmidts Albumin ist niedrig — deshalb braucht sie zusätzlich den GLIM-Test (anderer Test, prüft Eiweiß-Mangel auch bei Übergewicht).",
+        },
       },
     },
 
@@ -170,15 +212,15 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
       displayFormat: "beforeafter",
       contentC1: {
         title: "Das Albumin-Paradox — Vorher und Nachher",
-        body: "**Vorher (vor dem Blutbefund):** \"Frau Schmidt ist adipös — BMI 38. Sie isst genug. Sie ist sicher gut ernährt.\"\n\n**Nachher (mit dem Befund):** Albumin 31 g/l — Proteinmangel trotz Übergewicht. NRS-Score 3 — Ernährungsintervention indiziert.\n\nDas Paradox: Frau Schmidt isst energiereiche, aber proteinarme Kost (Fertigprodukte, Kohlenhydrate, Fette). Der Körper braucht Protein — nicht nur für Muskeln, sondern für Wundheilung, Immunabwehr und Ödemprophylaxe. Albumin ist ein Protein im Blut — ein Indikator für den Eiweißstatus. Normwert: 35–52 g/l. Frau Schmidt: 31 g/l. Adipositas ≠ gut ernährt. (Cederholm et al., GLIM-Kriterien, 2019)\n\nFrau Schmidt sagt: \"Ich esse doch genug — schauen Sie mich an! Wie kann ich da Eiweiß-Mangel haben? Das versteh ich nicht.\"",
+        body: "**Vorher (vor dem Blutbefund):** \"Frau Schmidt ist adipös — BMI 38. Sie isst genug. Sie ist sicher gut ernährt.\"\n\n**Nachher (mit dem Befund):** Albumin 31 g/l (Norm 35–52). NRS-2002-Score = 1 (allein NICHT interventionspflichtig). ABER: GLIM-Diagnostik ist positiv — phänotypisch (reduzierte Muskelmasse) + ätiologisch (reduzierte Proteinzufuhr + Inflammation durch entgleisten Diabetes) → GLIM-Diagnose Mangelernährung Stadium 1, trotz Adipositas. **Ernährungsintervention ist indiziert** — nicht über NRS allein, sondern über die GLIM-Diagnostik.\n\nDas Paradox: Frau Schmidt isst energiereiche, aber proteinarme Kost (Fertigprodukte, Kohlenhydrate, Fette). Der Körper braucht Protein — nicht nur für Muskeln, sondern für Wundheilung, Immunabwehr und Ödemprophylaxe. Albumin ist ein Hinweis auf den Eiweißstatus — aber Albumin sinkt auch bei Akut-Inflammation (Akut-Phase-Negativ-Protein). Deshalb ist die GLIM-Kombi-Diagnostik aussagekräftiger als Albumin allein. (Cederholm et al., GLIM-Kriterien, 2019)\n\nFrau Schmidt sagt: \"Ich esse doch genug — schauen Sie mich an! Wie kann ich da Eiweiß-Mangel haben? Das versteh ich nicht.\"",
         fallbezug:
-          "Frau Schmidt hat NRS-Score 3 — Ernährungsintervention ist indiziert. Die Ernährungsberaterin kommt nachmittags.",
+          "Frau Schmidt hat NRS-Score 1 + positive GLIM-Diagnose → Ernährungsintervention indiziert. Die Ernährungsberaterin kommt nachmittags.",
         glossarBegriffe: ["Albumin", "Proteinmangelernährung", "NRS 2002"],
       },
       contentB1: {
         title: "Das Albumin-Paradox",
-        body: "**Vorher:** \"Frau Schmidt hat Übergewicht — sie ist sicher gut ernährt.\"\n\n**Nachher (nach dem Blutbefund):** Albumin 31 g/l — das ist zu niedrig!\n\nWas bedeutet das? Frau Schmidt isst viel Kohlenhydrate (= Zucker und Stärke) und Fett. Aber sie isst wenig Protein (= Eiweiß). Zum Beispiel: Fertig-Pizza. Der Körper braucht Protein für: Wunden heilen, das Immunsystem stärken, Ödeme (= Wassereinlagerungen) verhindern.\n\nFrau Schmidt sagt: \"Ich esse doch genug — schauen Sie mich an! Wie kann ich da Eiweiß-Mangel haben? Das versteh ich nicht.\"",
-        glossarBegriffe: ["Albumin", "Proteinmangelernährung"],
+        body: "**Vorher:** \"Frau Schmidt hat Adipositas — sie ist sicher gut ernährt.\"\n\n**Nachher (nach dem Blutbefund):** Albumin 31 g/l — das ist zu niedrig.\n\nWas bedeutet das? Frau Schmidt isst viel Kohlenhydrate (= Zucker und Stärke) und Fett. Aber sie isst wenig Protein (= Eiweiß). Zum Beispiel: Fertig-Pizza. Der Körper braucht Protein für: Wunden heilen, das Immunsystem stärken, Ödeme (= Wassereinlagerungen) verhindern.\n\nWichtig: Albumin allein zeigt nicht alles. NRS 2002 (= Test-Werkzeug) ergibt 1 Punkt — kein hohes Risiko. Aber GLIM (= anderes Werkzeug, prüft Eiweiß-Mangel auch bei Übergewicht) ist positiv. Deshalb braucht Frau Schmidt eine Ernährungs-Hilfe.\n\nFrau Schmidt sagt: \"Ich esse doch genug — schauen Sie mich an! Wie kann ich da Eiweiß-Mangel haben? Das versteh ich nicht.\"",
+        glossarBegriffe: ["Albumin", "Proteinmangelernährung", "GLIM"],
       },
     },
 
@@ -225,34 +267,34 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
             {
               id: "submammaer",
               x: 50,
-              y: 28,
-              radius: 8,
+              y: 25,
+              radius: 7,
               label:
                 "Submammäre Falte — feucht, warm, Reibung → Intertrigo-Risiko",
             },
             {
-              id: "leistenbeuge",
-              x: 42,
-              y: 60,
-              radius: 8,
-              label:
-                "Leistenbeuge — Falte zwischen Bauch und Oberschenkel, häufig feucht",
-            },
-            {
               id: "abdomen-haengefalte",
               x: 50,
-              y: 52,
-              radius: 8,
+              y: 48,
+              radius: 7,
               label:
-                "Abdomen-Hängefalte — bei starkem Übergewicht, oft chronisch feucht",
+                "Abdomen-Hängefalte (Pannus) — bei starkem Übergewicht, oft chronisch feucht",
+            },
+            {
+              id: "leistenbeuge",
+              x: 38,
+              y: 65,
+              radius: 7,
+              label:
+                "Leistenbeuge — Falte zwischen Bauch und Oberschenkel, häufig feucht (räumlich klar getrennt von Abdomen-Hängefalte)",
             },
             {
               id: "steissbein",
-              x: 50,
-              y: 75,
-              radius: 8,
+              x: 62,
+              y: 78,
+              radius: 7,
               label:
-                "Steißbein — Druckpunkt beim Sitzen und Liegen → Dekubitusrisiko",
+                "Steißbein (Sakralregion) — Druckpunkt beim Sitzen und Liegen → Dekubitusrisiko",
             },
           ],
         },
@@ -277,7 +319,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Fußinspektion — was tust du als nächstes?",
-        body: "Du inspizierst Frau Schmidts Füße. Du siehst: trockene Haut plantar, erste Rissbildung am großen Zeh, verdickte Nägel, keine offene Wunde (Wagner-Armstrong Kategorie 1). Frau Schmidt sagt: \"Die Füße pflege ich selbst. Schon immer. Die Nägel schneide ich mir zweimal im Jahr, das reicht doch.\" Was ist deine nächste Handlung?",
+        body: "Du inspizierst Frau Schmidts Füße. Du siehst: trockene Haut plantar, erste Rissbildung am großen Zeh, verdickte Nägel, keine offene Wunde — Wagner Grad 1 (Wagner-Armstrong 1A: oberflächliche Läsion ohne Infektion und ohne Ischämie). Frau Schmidt sagt: \"Die Füße pflege ich selbst. Schon immer. Die Nägel schneide ich mir zweimal im Jahr, das reicht doch.\" Was ist deine nächste Handlung?",
         glossarBegriffe: ["Diabetisches Fußsyndrom", "Podologe", "Wagner-Armstrong-Klassifikation"],
       },
       contentB1: {
@@ -318,9 +360,9 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
             text: "Mit der Feile leicht bearbeiten — das ist kein richtiges Schneiden.",
             isCorrect: false,
             explanation:
-              "K.O.-Fehler. Auch Feilen ist eine Intervention am Diabetikerfuß die Verletzungsrisiko birgt. Die Kompetenzgrenze gilt für alle invasiven Nagelpflege-Handlungen — Schneiden, Feilen, Einreißen. Nur Podologe.",
+              "K.O.-Fehler. Auch Feilen ist eine Intervention am Diabetikerfuß die Verletzungsrisiko birgt. Die Kompetenzgrenze gilt für alle invasiven Nagelpflege-Handlungen — Schneiden, Feilen, Einreißen. Im Krankenhaus/im stationären Setting OHNE Zusatzqualifikation gilt: keine Pflege-Intervention an Diabetikernägeln. Auch wenn ambulant in seltenen Fällen Pflegefachkräfte mit zertifizierter Diabetes-Fußschwester-Qualifikation eingebunden werden — bei Wagner-1-Befund auf Station gilt: Podologen-Überweisung. (DDG 2023)",
             explanationB1:
-              "Auch das ist falsch. Feilen ist auch eine Handlung am Fuß. Bei Diabetikern gilt: Keine Nagelpflege durch die Pflege — auch nicht mit der Feile.",
+              "Auch das ist falsch. Feilen ist auch eine Handlung am Fuß. Im Krankenhaus gilt: Keine Nagelpflege durch die Pflege — auch nicht mit der Feile. Nur ein Podologe darf das.",
           },
         ],
       },
@@ -415,18 +457,18 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
             speaker: "Du",
             options: [
               {
-                text: "\"Das ist sehr häufig bei Frauen in Ihrem Alter — das müssen Sie nicht alleine tragen.\"",
+                text: "\"Das ist sehr häufig bei Frauen — und wichtig: Belastungsinkontinenz ist behandelbar (Beckenbodentraining, urotherapeutische Maßnahmen, ggf. fachärztliche Abklärung). Sie müssen das nicht alleine tragen.\"",
                 textB1:
-                  "\"Das haben viele Frauen. Das müssen Sie nicht alleine tragen.\"",
+                  "\"Das haben viele Frauen. Wichtig: Man kann das behandeln (Beckenboden-Training, Therapie, Frauenarzt). Sie müssen das nicht alleine tragen.\"",
                 patientResponse:
                   "Frau Schmidt atmet leicht aus. \"Wissen Sie — ich geh schon seit 2 Jahren nicht mehr in den Sportverein. Wegen dem. Das ist das Schlimmste.\"",
                 patientResponseB1:
                   "Frau Schmidt atmet aus. \"Ich geh schon 2 Jahre nicht mehr in den Sportverein. Wegen dem. Das ist das Schlimmste.\"",
                 score: 3,
                 feedback:
-                  "Normalisierung senkt die Schambarriere. Du machst das Thema nicht kleiner — du machst Frau Schmidt größer: Sie ist nicht allein damit. Das öffnet das Gespräch. (ICS, Klassifikation Belastungsinkontinenz)",
+                  "Normalisierung + Behandlungsperspektive. Du machst das Thema nicht kleiner — du machst Frau Schmidt größer: Sie ist nicht allein damit UND es ist behandelbar. Wichtig: \"Normalisieren\" heißt nicht \"damit muss man leben\". Belastungsinkontinenz lässt sich oft deutlich verbessern: Beckenbodentraining (Goldstandard), Pessar, Biofeedback, ggf. operative Optionen. (AWMF S2k-Leitlinie Harninkontinenz Frauen 2023; ICS-Klassifikation)",
                 feedbackB1:
-                  "Sehr gut. \"Das haben viele Frauen\" — normalisieren (= normal machen) hilft Frau Schmidt. Sie fühlt sich weniger allein. Das öffnet das Gespräch.",
+                  "Sehr gut. \"Das haben viele Frauen\" hilft — UND du sagst: Man kann es behandeln. Das ist wichtig! Inkontinenz ist nicht \"das Alter\" — Beckenboden-Training und Therapien helfen oft.",
               },
               {
                 text: "Schweigen — Stille zulassen, nichts sagen.",
@@ -501,7 +543,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
             correctCategory: 0,
           },
           {
-            text: "Albumin 31 g/l, NRS-Score 3 → Ernährungsintervention starten",
+            text: "Albumin 31 g/l, NRS-2002-Score 1 + positive GLIM-Diagnose Mangelernährung Stadium 1 → Ernährungsintervention starten",
             correctCategory: 0,
           },
           {
@@ -533,5 +575,5 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
     },
   ],
   optionaleSteps: [],
-  geschaetzteDauer: 35,
+  geschaetzteDauer: 40,
 };

@@ -12,7 +12,7 @@ export const CE02_SIT_NGUYEN_STOMA_PATIENT: PatientBeschreibung = {
   diagnosen: [
     "Kolonkarzinom (Sigma) — Adenokarzinom T3 N1 M0, OP-Indikation gestellt",
     "Z.n. Sigmaresektion + endständiges Kolostoma — 4. postoperativer Tag",
-    "Mangelernährung — BMI 19,2 kg/m², Albumin 28 g/l (↓), 6 kg Gewichtsverlust in 3 Monaten",
+    "Mangelernährung — BMI 19,2 kg/m², Albumin 28 g/l (↓, Abnahme Tag 2 post-OP), 6 kg Gewichtsverlust in 3 Monaten",
     "Dekubitusgefahr — Braden-Skala: 14 Punkte (gering-moderate Gefährdung)",
   ],
   nebendiagnosen: [

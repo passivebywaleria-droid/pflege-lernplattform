@@ -191,3 +191,37 @@ Begründung: Sieben HOCH-Findings, zwei davon mit direktem Pflege-Sicherheitsris
 - Aphasie-/Bobath-Didaktik in Phase 1 + 4 (Drehen) sehr stark
 - Sandwich-Feedback in Dialog-Steps vorbildlich
 - chatSim-Step (Natalya) ist eines der besten Beispiele für Angehörigen-Beratung
+
+## Fixes durchgeführt — 2026-04-26
+- Alle 21 Findings bearbeitet (HOCH 7 + MITTEL 8 + NIEDRIG 6)
+- TSC: PASS
+- K.O.-Verdikt: PASS
+
+**Detail je Finding:**
+- F-01: Schluckversuch-Score-3 reformuliert — kein eigenständiger Test, GUSS-Befund übernommen, Beobachtung bei regulärer Nahrungsgabe
+- F-02: Auskultation entfernt — pflegerische Atembeobachtung (Frequenz, Tiefe, hörbare Geräusche ohne Stethoskop, Hautfarbe) etabliert
+- F-03: "Zwerchfell fällt nach unten" → "Zwerchfell wird entlastet, Atemvolumen steigt"
+- F-04: "30 % Atemvolumen" → "messbar" (keine Pseudo-Quelle)
+- F-05: Rückenschlag-Feedback ERC-2021-konform: bei festem Bolus, hier Aspiration → Husten als Selbstreinigung
+- F-06: "Sattelpuls" → "SpO2 (per Pulsoximeter) und Puls"
+- F-07: Timer-Step body um 24-48 h Pneumonie-Verlaufskontrolle erweitert + 7. timerQuestion mit abweichendem Pfad (SpO2 < 95 %)
+- F-08: Frage 6 Reihenfolge gedreht — zuerst Schlucktherapeutin/Arzt informieren, dann gemeinsame Konsistenz-Entscheidung
+- F-09: Mobilisation Phase 1 + 3 mit RR/Puls liegend + sitzend (138/82, 132/80, Puls 76/84) und aktiver Schwindel-Abfrage
+- F-10: "Hand kurz an die Schulter" → "linke (gesunde) Schulter" mit Bobath/Subluxations-Begründung
+- F-11: Score 1 → 2 (sicheres pflegerisches Vorgehen) + geschärfte Begründung re Vitalzeichen-Stabilität und Patientenautonomie
+- F-12: "Wie geht es Ihnen heute?" Score 0 → 1 (sozial üblich, aber bei Aphasie ungeeignet)
+- F-13: Sorting → Matching (5 Aphasie-Regeln mit fachlichen Begründungen, alle gleichwertig)
+- F-14: Priorisierung neu — OKHL 30° + Atembeobachtung an Pos 1 (ABCDE-Logik), Kathetercheck Pos 2
+- F-15: SMART = "Akzeptiert (erreichbar)" statt "Angemessen"
+- F-16: Score-3 Katheter-Entscheidung — über Frau Wegner (Praxisanleitung) als realer Workflow, ggf. gemeinsam Arzt
+- F-17: Pflegebericht-Musterantwort + SBAR-Übergabe + Ziel-Check + Pflegeziel-Matching + Mobilisations-Score-3 → Auskultation entfernt, durch pflegerische Atembeobachtung (17/Min, hörbares Geräusch unauffällig) ersetzt
+- F-18: "Aspirationsereignis" durchgehend einheitlich
+- F-19: Bilanz-Tabelle konsistent — 600 ml Ausscheidung in 8h × 24h ≈ 1.800 ml/24h, Bilanz +200 ml, Header "Tagesmenge Hochrechnung (24 h)"
+- F-20: Lyse-Zeit präzisiert: "innerhalb des 4,5-h-Zeitfensters (konkret: ca. 3 h post-Symptombeginn)"
+- F-21: Pneumoniegefahr aus `nebendiagnosen` entfernt; pflegerelevante Risiken in `setting` als eigene Sektion (Aspiration, Pneumonie, CAUTI, Dekubitus, Sturz, Kontraktur/Subluxation)
+
+**Cross-Step-Konsistenz nach Fix:**
+- Auskultation als Schüler-Aufgabe komplett eliminiert (3 Vorkommen behoben: phase-beobachten, phase-durchfuehren Z. 669/677, phase-dokumentieren Pflegebericht + SBAR + Ziel-Check + Pflegeziel-Matching)
+- IDDSI-Konsistenzanpassung jetzt durchgehend ärztlich/logopädisch verordnet (Timer Frage 6 + phase-evaluieren Step 5.2)
+- Mobilisation jetzt durchgehend mit RR/Puls-Vorkontrolle + Verlaufsmessung (Phase 4 Dialog-Phase 1 + 3, Pflegebericht, SBAR-Übergabe)
+- Bilanz-Werte konsistent (8h-Bilanz + 24h-Hochrechnung sauber getrennt)

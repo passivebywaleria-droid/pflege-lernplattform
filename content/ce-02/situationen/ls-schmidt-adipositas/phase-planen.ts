@@ -44,7 +44,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_PLANEN: SituationsPhase = {
           "Ordne jedes Problem der passenden Pflegediagnose zu.",
         matchingPairs: [
           {
-            left: "Albumin 31 g/l, einseitige Fertigkost-Ernährung, NRS-Score 3",
+            left: "Albumin 31 g/l, einseitige Fertigkost-Ernährung, NRS-Score 1 + positive GLIM-Diagnose (Mangelernährung trotz Adipositas)",
             right: "Mangelernährung bezogen auf Proteinzufuhr",
           },
           {
@@ -88,10 +88,10 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_PLANEN: SituationsPhase = {
         fragetext:
           "Formuliere ein SMART-Ziel für das Ernährungsproblem von Frau Schmidt (1–2 Sätze).",
         musterantwort:
-          "Frau Schmidt nimmt bis zur Entlassung (in 5 Tagen) täglich mindestens 3 eiweißreiche Mahlzeiten zu sich (z. B. Joghurt, Ei, Hähnchen), sodass ihre Proteinzufuhr auf mindestens 60 g/Tag gesteigert wird.",
+          "Frau Schmidt nimmt bis zur Entlassung (in 5 Tagen) täglich mindestens 3 eiweißreiche Mahlzeiten zu sich (z. B. Joghurt, Ei, Hähnchen), sodass ihre Proteinzufuhr auf mindestens 67 g/Tag gesteigert wird (1,2 g × 56 kg Idealgewicht nach BMI 22 — bei 1,60 m Körpergröße; ESPEN 2017 bei Mangelernährung).",
         bewertungskriterien: [
           "Spezifisch: Protein/Eiweiß als Fokus benannt",
-          "Messbar: Mahlzeiten-Anzahl, Grammangabe oder Albumin-Ziel",
+          "Messbar: Mahlzeiten-Anzahl, Grammangabe (Bezug zu Idealgewicht ca. 56 kg) oder Albumin-Ziel",
           "Erreichbar: stationär umsetzbar",
           "Relevant: Bezug zu Wundheilung, Immunabwehr oder BZ-Kontrolle",
           "Terminiert: bis Entlassung / in X Tagen",
@@ -122,29 +122,31 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Wer macht was? — Kompetenzgrenzen kennen",
-        body: "Ordne die Aufgaben den Berufsgruppen zu. Zwei Achsen: Berufsgruppe (Pflege, Ernährungsberatung, Podologie, Arzt) × Aufgaben. Kompetenzgrenzen kennen ist keine Schwäche — es ist Qualitätssicherung.",
+        body: "Ordne die Aufgaben in eine 2×2-Matrix:\n\n**X-Achse:** Sofort (heute Vormittag) — Geplant (im Tagesverlauf / mehrtägig)\n**Y-Achse:** Pflege (eigenständig durch Pflegefachkraft) — Spezialist (Arzt/Podologe/Ernährungsberater)\n\nQuadranten-Konvention:\n- **Q1 (unten-links)** = Sofort + Pflege\n- **Q2 (unten-rechts)** = Geplant + Pflege\n- **Q3 (oben-links)** = Sofort + Spezialist\n- **Q4 (oben-rechts)** = Geplant + Spezialist\n\nKompetenzgrenzen kennen ist keine Schwäche — es ist Qualitätssicherung.",
         glossarBegriffe: ["Interprofessionell", "Podologe"],
       },
       contentB1: {
         title: "Wer macht was?",
-        body: "Ordne zu: Welche Aufgabe gehört zu welcher Berufsgruppe?",
+        body: "Ordne zu: Welche Aufgabe gehört zu welcher Berufsgruppe?\n\nMatrix mit 4 Quadranten:\n- **Q1 (unten-links):** Sofort + Pflege\n- **Q2 (unten-rechts):** Geplant + Pflege\n- **Q3 (oben-links):** Sofort + Spezialist (Arzt/Podologe)\n- **Q4 (oben-rechts):** Geplant + Spezialist",
         glossarBegriffe: ["Interprofessionell", "Podologe"],
       },
       question: {
         fragetext:
-          "Ordne jede Aufgabe der richtigen Berufsgruppe zu. X-Achse: Sofort/Später. Y-Achse: Pflege/Spezialist.",
+          "Ordne jede Aufgabe einem Quadranten zu. Q1=Sofort+Pflege, Q2=Geplant+Pflege, Q3=Sofort+Spezialist, Q4=Geplant+Spezialist.",
         matrix: {
           instruction:
-            "Ordne jede Aufgabe einem Quadranten zu.",
+            "Ordne jede Aufgabe einem Quadranten zu (Q1 unten-links, Q2 unten-rechts, Q3 oben-links, Q4 oben-rechts).",
           axisX: { label: "Zeitachse", low: "Sofort", high: "Geplant" },
           axisY: { label: "Zuständigkeit", low: "Pflege", high: "Spezialist" },
           items: [
-            { id: "a1", text: "Nagelpflege Diabetikerfuß", correctQuadrant: 3 },
-            { id: "a2", text: "Ernährungsplan bei Proteinmangel erstellen", correctQuadrant: 3 },
-            { id: "a3", text: "Metformin-Anpassung je nach BZ-Verlauf", correctQuadrant: 4 },
-            { id: "a4", text: "Hautfalten täglich inspizieren", correctQuadrant: 1 },
-            { id: "a5", text: "Hautpflege Hautfalten durchführen", correctQuadrant: 1 },
-            { id: "a6", text: "Inkontinenz-Versorgung besprechen und einleiten", correctQuadrant: 1 },
+            { id: "a1", text: "Hautfalten heute morgen inspizieren (submammär, inguinal, abdominal)", correctQuadrant: 1 },
+            { id: "a2", text: "Hautpflege Hautfalten heute morgen durchführen (Trockentupfen + Hautschutz)", correctQuadrant: 1 },
+            { id: "a3", text: "Inkontinenz-Versorgung heute mit Frau Schmidt besprechen und Material auswählen", correctQuadrant: 1 },
+            { id: "a4", text: "Ernährungsprotokoll über die Woche führen + Mobilisationsplan tagesweise dokumentieren", correctQuadrant: 2 },
+            { id: "a5", text: "Diabetisches Fußsyndrom: Nagelpflege durch Podologin (Termin heute oder morgen)", correctQuadrant: 3 },
+            { id: "a6", text: "Ernährungsberatung durch Diätassistentin/Ernährungsberaterin am Nachmittag", correctQuadrant: 3 },
+            { id: "a7", text: "Metformin-Dauerdosierung nach BZ-Tagesprofil — ärztliche Anpassung im Verlauf", correctQuadrant: 4 },
+            { id: "a8", text: "Gynäkologie-Überweisung Belastungsinkontinenz nach Entlassung (ambulant)", correctQuadrant: 4 },
           ],
         },
       },
@@ -192,7 +194,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_PLANEN: SituationsPhase = {
             },
             {
               id: "h3",
-              label: "Hautschutz-Lotion oder Zinkpaste dünn auftragen (nur bei trockener, intakter Haut)",
+              label: "Hautschutzpräparat (z. B. Zinkpaste) dünn auftragen, wenn Haut intakt ist (keine offene Wunde, keine Mazerierung mit Pilzbefund — leichte Restfeuchte ist ok, gerade dafür gemacht)",
             },
             {
               id: "h4",
@@ -207,7 +209,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_PLANEN: SituationsPhase = {
       },
     },
 
-    // Step 3.5 — Text/scenario: Mobilisationsplan
+    // Step 3.5 — Text/scenario: Mobilisationsplan + Sturzrisiko + bariatrische Hilfsmittel + Kinästhetik
     {
       stepId: "ce02-schmidt-plan-05-mobilisation-planen",
       phase: 3,
@@ -216,6 +218,8 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_PLANEN: SituationsPhase = {
       kompetenzbereich: "I.1",
       quellen: [
         "DNQP (2020): Expertenstandard Förderung der Mobilität",
+        "DNQP (2022): Expertenstandard Sturzprophylaxe in der Pflege",
+        "Hatch F. / Maietta L. (1991): Kinästhetik — Konzept und Grundlagen",
         "Deutsche Gesellschaft für Geriatrie DGG (2022)",
       ],
       track: "basis",
@@ -225,15 +229,15 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_PLANEN: SituationsPhase = {
       displayFormat: "scenario",
       contentC1: {
         title: "Mobilisationsplan — kleine Schritte, große Wirkung",
-        body: "09:30 Uhr — du überlegst mit Frau Schmidt gemeinsam.\n\nFrau Schmidt sagt: \"Ich hab's versucht, wirklich. Aber dann bin ich so außer Atem. Das ist mir unangenehm, wenn alle zuschauen.\"\n\nDer Schlüssel: Nicht \"Sport\" — sondern erreichbare Alltagsbewegungen. Dreimal täglich kurz aufstehen und zum Waschbecken gehen. Warum ist das wichtig? Mobilisation verbessert die Insulinsensitivität (BZ sinkt), entlastet Druckpunkte (Dekubitusprophylaxe) und aktiviert den Beckenboden (hilft bei Inkontinenz). (DNQP 2020; DGG 2022)\n\nDein Ziel: Frau Schmidt verstehen warum Bewegung ihr direkt nutzt — nicht als \"Abnahme-Programm\" verkaufen, das bei ihr Widerstand weckt.",
+        body: "09:30 Uhr — du überlegst mit Frau Schmidt gemeinsam.\n\nFrau Schmidt sagt: \"Ich hab's versucht, wirklich. Aber dann bin ich so außer Atem. Das ist mir unangenehm, wenn alle zuschauen.\"\n\nDer Schlüssel: Nicht \"Sport\" — sondern erreichbare Alltagsbewegungen. Dreimal täglich kurz aufstehen und zum Waschbecken gehen. Warum ist das wichtig? Mobilisation verbessert die Insulinsensitivität (BZ sinkt), entlastet Druckpunkte (Dekubitusprophylaxe) und aktiviert den Beckenboden (hilft bei Inkontinenz). (DNQP 2020; DGG 2022)\n\n**Sturzrisiko-Assessment (DNQP Sturzprophylaxe 2022):** Frau Schmidt hat mehrere Risikofaktoren — Adipositas Grad II (Schwerpunktverlagerung beim Aufstehen), Belastungsinkontinenz (Eile zur Toilette), entgleister Diabetes (mögliche Hypoglykämie unter Metformin neu), Atemnot bei Anstrengung. Das ist ein erhöhtes Sturzrisiko — dokumentationspflichtig und Teil des Pflegeplans.\n\n**Bariatrische Hilfsmittel bei BMI 38:**\n- **Bett:** ggf. Bariatrie-Bett (XXL-belastbar, breiter), Bettleiter/Bettaufrichter zum eigenständigen Aufrichten\n- **Aufstehen:** Aufstehhilfe am Bettrand, ggf. Rollator (XXL-belastbar) für sichere Gehstrecke zum Waschbecken\n- **Sitzen:** Bariatrie-Stuhl mit Armlehnen + erhöhter Sitzfläche (Aufstehen erleichtert)\n- **Anti-Rutsch-Socken** + festes Schuhwerk (NICHT barfuß auf Diabetikerfuß!)\n\n**Kinästhetik nach Hatch/Maietta:** Bei der Mobilisation gilt: Frau Schmidt bewegt SICH SELBST — du begleitest und sicherst. Niemals \"unter den Achseln greifen\" oder \"hochziehen\" (Schultergelenk-Risiko + Rückenbelastung Pflege). Stattdessen: seitlich am Becken/Rumpf sichern, sie bestimmt das Tempo. Aufstehbewegung über die Seite (Bett-Kante → 90°-Drehung über Hüfte → Aufstehen mit Bettleiter).\n\nDein Ziel: Frau Schmidt verstehen warum Bewegung ihr direkt nutzt — nicht als \"Abnahme-Programm\" verkaufen, das bei ihr Widerstand weckt.",
         fallbezug:
-          "Frau Schmidt hat Angst vor dem Außer-Atem-Sein. Der Ansatz: kleine erreichbare Schritte, sofort spürbare Vorteile.",
-        glossarBegriffe: ["Insulinsensitivität", "Dekubitusprophylaxe"],
+          "Frau Schmidt hat Angst vor dem Außer-Atem-Sein. Der Ansatz: kleine erreichbare Schritte, sofort spürbare Vorteile, sichere Hilfsmittel, kinästhetisch korrekte Begleitung.",
+        glossarBegriffe: ["Insulinsensitivität", "Dekubitusprophylaxe", "Kinästhetik", "Bariatrische Pflege"],
       },
       contentB1: {
-        title: "Mobilisations-Plan bei Übergewicht",
-        body: "Du planst mit Frau Schmidt zusammen kleine Bewegungsschritte.\n\nFrau Schmidt sagt: \"Ich hab's versucht. Aber dann bin ich so außer Atem. Das ist mir unangenehm.\"\n\nWas hilft? Nicht \"Sport machen\" — das ist zu viel. Besser: Kleine Schritte — zum Beispiel dreimal täglich kurz aufstehen und zum Waschbecken gehen.\n\nWarum ist das wichtig?\n- Bewegung senkt den Blutzucker (= der Körper braucht weniger Insulin)\n- Bewegung schützt vor Dekubitus (= Druck-Stelle) — der Druck ändert sich\n- Bewegung stärkt den Beckenboden (= hilft bei Inkontinenz)",
-        glossarBegriffe: ["Dekubitusprophylaxe"],
+        title: "Mobilisations-Plan bei Adipositas",
+        body: "Du planst mit Frau Schmidt zusammen kleine Bewegungs-Schritte.\n\nFrau Schmidt sagt: \"Ich hab's versucht. Aber dann bin ich so außer Atem. Das ist mir unangenehm.\"\n\nWas hilft? Nicht \"Sport machen\" — das ist zu viel. Besser: Kleine Schritte — zum Beispiel dreimal täglich kurz aufstehen und zum Waschbecken gehen.\n\nWarum ist das wichtig?\n- Bewegung senkt den Blutzucker (= der Körper braucht weniger Insulin)\n- Bewegung schützt vor Dekubitus (= Druck-Stelle) — der Druck ändert sich\n- Bewegung stärkt den Beckenboden (= hilft bei Inkontinenz)\n\n**Sturz-Risiko prüfen (DNQP 2022):** Frau Schmidt hat mehrere Risiken: BMI 38, Inkontinenz (sie geht schnell zur Toilette), Diabetes (Unterzucker möglich), Atemnot. Das ist ein erhöhtes Sturz-Risiko — du dokumentierst das.\n\n**Hilfsmittel bei Adipositas (= bariatrische Hilfsmittel):**\n- Bett: stabiles Bett (XXL-belastbar), Bettleiter zum Aufrichten\n- Aufstehen: Rollator (XXL-belastbar), Aufstehhilfe\n- Sitzen: Bariatrie-Stuhl (extra breit, mit Armlehnen)\n- Anti-Rutsch-Socken (NICHT barfuß — Diabetikerfuß!)\n\n**Kinästhetik (= Bewegungs-Lehre nach Hatch/Maietta):** Frau Schmidt bewegt SICH SELBST — du begleitest. Niemals \"unter den Achseln greifen\" oder \"hochziehen\". Stattdessen: seitlich am Becken/Rumpf sichern. Sie bestimmt das Tempo.",
+        glossarBegriffe: ["Dekubitusprophylaxe", "Kinästhetik", "Bariatrische Pflege"],
       },
     },
 

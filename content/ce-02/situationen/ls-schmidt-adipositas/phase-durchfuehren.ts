@@ -1,5 +1,5 @@
 // CE-02 Situation Frau Schmidt — Phase 4: Maßnahmen durchführen
-// Steps: 8 · Bloom: B4–B5 · Zeit: ~35–50 Min
+// Steps: 9 · Bloom: B4–B5 · Zeit: ~40–55 Min
 // Quelle: phase-durchfuehren.md
 
 import type { SituationsPhase } from "../../../_types";
@@ -70,15 +70,42 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
       displayFormat: "analogy",
       contentC1: {
         title: "Makronährstoffe — Vorbereitung auf das Gespräch",
-        body: "Analogie: Kohlenhydrate = Kurzzeit-Kraftstoff (schnell verfügbar, schnell verbraucht). Fette = Langzeit-Reserve (langfristige Energie, Wärmeschutz). Proteine = Baumaterial (Wundheilung, Immunabwehr, Muskeln, Albumin).\n\nWarum ist Protein für Frau Schmidt so wichtig? Albumin-Mangel (31 g/l) bedeutet: Der Körper kann keine Wunden heilen, keine Immunabwehr aufbauen und keine Ödeme verhindern. DGE-Empfehlung für Erwachsene: 0,8 g Protein pro kg Körpergewicht täglich (DGE D-A-CH 2024). Bei stationärer Erkrankung oft höher — nach ärztlicher Absprache.\n\nFertigpizza (Beispiel Frau Schmidt): ca. 6–8 g Protein pro Portion. Hüttenkäse 200 g: ca. 26 g Protein. Der Unterschied liegt nicht im Verzicht, sondern in der Auswahl.",
+        body: "Analogie: Kohlenhydrate = Kurzzeit-Kraftstoff (schnell verfügbar, schnell verbraucht). Fette = Langzeit-Reserve (langfristige Energie, Wärmeschutz). Proteine = Baumaterial (Wundheilung, Immunabwehr, Muskeln, Albumin).\n\nWarum ist Protein für Frau Schmidt so wichtig? Albumin-Mangel (31 g/l) bedeutet: Der Körper kann keine Wunden heilen, keine Immunabwehr aufbauen und keine Ödeme verhindern.\n\n**Protein-Bedarf bei Adipositas mit Mangelernährung — Berechnung:** Wichtig: Bei Adipositas wird das **Idealgewicht** als Berechnungsbasis genommen (nicht das Istgewicht — sonst Überschätzung), nach BMI 22 oder Broca. Bei Frau Schmidt (1,60 m): Idealgewicht ca. 56 kg.\n- Erhaltungsbedarf (gesund): 0,8 g × 56 kg = ca. 45 g/Tag (DGE D-A-CH 2024)\n- Bei nachgewiesener Mangelernährung: 1,2 g × 56 kg = **ca. 67 g/Tag** (ESPEN 2017 Guidelines)\n\nFertigpizza (Beispiel Frau Schmidt): ca. 6–8 g Protein pro Portion. Hüttenkäse 200 g: ca. 26 g Protein. Der Unterschied liegt nicht im Verzicht, sondern in der Auswahl.",
         fallbezug:
-          "Frau Schmidt isst aktuell proteinarme Fertigprodukte. Die Analogie macht verständlich warum das trotz ausreichender Kalorien problematisch ist.",
-        glossarBegriffe: ["Protein", "Albumin", "Makronährstoffe"],
+          "Frau Schmidt isst aktuell proteinarme Fertigprodukte. Die Analogie macht verständlich warum das trotz ausreichender Kalorien problematisch ist. Berechnungsbasis: Idealgewicht 56 kg (BMI 22 bei 1,60 m), nicht Istgewicht 98 kg.",
+        glossarBegriffe: ["Protein", "Albumin", "Makronährstoffe", "Idealgewicht"],
       },
       contentB1: {
         title: "Makro-Nährstoffe einfach erklärt",
-        body: "Analogie: Was sind Makro-Nährstoffe?\n- **Kohlenhydrate** (= Zucker und Stärke) = schnelle Energie. Zum Beispiel: Brot, Nudeln, Reis.\n- **Fette** = lang andauernde Energie. Zum Beispiel: Öl, Käse, Nüsse.\n- **Protein** (= Eiweiß) = Baumaterial für den Körper. Zum Beispiel: Fleisch, Eier, Hülsenfrüchte.\n\nFrau Schmidt braucht mehr Protein. Warum? Protein hilft: Wunden heilen, Immunsystem stärken, Ödeme (= Wasser-Einlagerungen) verhindern. Eine Fertig-Pizza hat viel Kohlenhydrate und Fett — aber wenig Protein. Empfehlung (DGE 2024): Erwachsene brauchen ca. 0,8 g Protein pro kg Körpergewicht pro Tag.",
-        glossarBegriffe: ["Protein", "Albumin"],
+        body: "Analogie: Was sind Makro-Nährstoffe?\n- **Kohlenhydrate** (= Zucker und Stärke) = schnelle Energie. Zum Beispiel: Brot, Nudeln, Reis.\n- **Fette** = lang andauernde Energie. Zum Beispiel: Öl, Käse, Nüsse.\n- **Protein** (= Eiweiß) = Baumaterial für den Körper. Zum Beispiel: Fleisch, Eier, Hülsenfrüchte.\n\nFrau Schmidt braucht mehr Protein. Warum? Protein hilft: Wunden heilen, Immunsystem stärken, Ödeme (= Wasser-Einlagerungen) verhindern. Eine Fertig-Pizza hat viel Kohlenhydrate und Fett — aber wenig Protein.\n\n**Wie viel Protein braucht Frau Schmidt?** Wichtig: Bei Adipositas rechnet man mit dem **Idealgewicht**, nicht mit dem aktuellen Gewicht. Frau Schmidts Idealgewicht ist ca. 56 kg (bei 1,60 m).\n- Gesund: 0,8 g × 56 kg = ca. 45 g/Tag\n- Bei Mangel-Ernährung wie bei Frau Schmidt: 1,2 g × 56 kg = ca. **67 g/Tag**",
+        glossarBegriffe: ["Protein", "Albumin", "Idealgewicht"],
+      },
+    },
+
+    // Step 4.2b — Mini-Übergang zwischen 4.3 und 4.4 (F-12 Fix)
+    {
+      stepId: "ce02-schmidt-dur-02b-bruecke-kochen",
+      phase: 4,
+      stepType: "text",
+      bloomLevel: 3,
+      kompetenzbereich: "I.1",
+      quellen: ["DNQP (2017): Expertenstandard Ernährungsmanagement"],
+      track: "basis",
+      modus: "story",
+      lernziel: "ce02-schmidt-dur-bruecke",
+      tag: "pflege",
+      displayFormat: "scenario",
+      contentC1: {
+        title: "Übergang — von der Biographie zum Konkreten",
+        body: "Du hast gehört: Frau Schmidt fehlt die Freude am Kochen seit der Scheidung. Fertigprodukte wurden zur Gewohnheit. Bevor du jetzt über Lebensmittel sprichst, baust du eine Brücke: \"Frau Schmidt, ich hab eine Idee. Drei alltagsnahe Mahlzeiten — die brauchen kein Kochen. Hüttenkäse aufs Brot. Ein gekochtes Ei. Joghurt mit Nüssen. Das passt zu Ihrem Alltag — und liefert Protein.\"\n\nDieser Übergang ist wichtig: Du knüpfst an ihre Biographie an. Du machst aus dem \"Kochen-keine-Freude-mehr\" keine Kritik — sondern eine Lösung. Erst danach öffnet sich Frau Schmidt für konkrete Lebensmittel-Sortierung.",
+        fallbezug:
+          "Frau Schmidts Biographie (Kochen ohne Freude) wird zum Anker: Drei No-Cook-Mahlzeiten als realistischer Vorschlag.",
+        glossarBegriffe: ["Motivierende Gesprächsführung"],
+      },
+      contentB1: {
+        title: "Übergang — von Biographie zu Lebensmitteln",
+        body: "Du hast gehört: Frau Schmidt mag das Kochen nicht mehr. Fertig-Essen ist Gewohnheit.\n\nDu sagst: \"Frau Schmidt, ich habe eine Idee. Drei einfache Mahlzeiten — ohne Kochen. Hüttenkäse aufs Brot. Ein gekochtes Ei. Joghurt mit Nüssen. Das passt zu Ihrem Alltag — und hat viel Protein.\"\n\nDas ist wichtig: Du nimmst Frau Schmidts Geschichte ernst. Du machst keine Vorwürfe. Du gibst eine Lösung, die zu ihr passt.",
+        glossarBegriffe: [],
       },
     },
 
@@ -305,17 +332,18 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
         chatSim: {
           patientName: "Frau Schmidt",
           situation:
-            "Du hast bei der Fußinspektion von Frau Schmidt (Zimmer 8) trockene Haut plantar, erste Rissbildung am großen Zeh und verdickte Nägel gefunden. Keine offene Wunde. Wagner-Armstrong Kategorie 1. Du weißt: Pflege darf Nägel und Risse beim diabetischen Fußsyndrom nicht behandeln.",
+            "Du hast bei der Fußinspektion von Frau Schmidt (Zimmer 8) trockene Haut plantar, erste Rissbildung am großen Zeh und verdickte Nägel gefunden. Keine offene Wunde. Wagner Grad 1 (Wagner-Klassifikation; ohne Infektion = nach Wagner-Armstrong wäre das Stadium 1A). Du weißt: Pflege darf Nägel und Risse beim diabetischen Fußsyndrom nicht behandeln. Strukturiere deine Meldung nach SBAR (Situation — Background — Assessment — Recommendation).",
           situationB1:
-            "Du hast Frau Schmidts Füße geschaut (Zimmer 8). Trockene, rissige Haut. Verdickte Nägel. Keine offene Wunde. Wagner-Kategorie 1. Die Pflege darf die Nägel NICHT schneiden — das ist nur Sache des Podologen.",
+            "Du hast Frau Schmidts Füße geschaut (Zimmer 8). Trockene, rissige Haut. Verdickte Nägel. Keine offene Wunde. Wagner Grad 1. Die Pflege darf die Nägel NICHT schneiden — das ist nur Sache des Podologen. Schreibe die Meldung in SBAR-Struktur: S = Situation, B = Hintergrund, A = Einschätzung, R = Bitte.",
           systemPrompt:
-            "Du bist der Stationsarzt. Der Schüler meldet einen Fußbefund. Prüfe: Sind Patientenname und Zimmer genannt? Ist der Befund vollständig (Hautbefund, Nagelzustand, kein Ulkus, Wagner-Kategorie)? Ist die Kompetenzgrenze der Pflege genannt (Pflege darf nicht schneiden/feilen)? Ist die Bitte um Podologen-Überweisung konkret? Gib konstruktives Feedback auf fehlende Elemente.",
+            "Du bist der Stationsarzt. Der Schüler meldet einen Fußbefund. Prüfe ob die Meldung der SBAR-Struktur folgt (Aktionsbündnis Patientensicherheit): SITUATION (Patientenname + Zimmer + akuter Anlass), BACKGROUND (Diabetes-Hintergrund, Wagner-Grad), ASSESSMENT (eigene Einschätzung der Pflege + Kompetenzgrenze: Pflege darf nicht schneiden/feilen), RECOMMENDATION (konkrete Bitte um Podologen-Überweisung). Gib konstruktives Feedback auf fehlende SBAR-Elemente und fehlende Inhalte.",
           maxTurns: 4,
           evaluationCriteria: [
-            "Patientenname und Zimmer genannt",
-            "Befund vollständig (Hautbefund + Nagelzustand + Wagner-Kategorie)",
-            "Kompetenzgrenze Pflege/Podologe genannt (DARF NICHT)",
-            "Konkrete Bitte um Podologen-Überweisung",
+            "SBAR-Struktur erkennbar (Situation / Background / Assessment / Recommendation)",
+            "Situation: Patientenname und Zimmer genannt",
+            "Background: Diabetes-Hintergrund + Wagner-Grad genannt",
+            "Assessment: Befund vollständig (Hautbefund + Nagelzustand) + Kompetenzgrenze Pflege/Podologe genannt (DARF NICHT)",
+            "Recommendation: Konkrete Bitte um Podologen-Überweisung",
           ],
         },
       },
@@ -354,7 +382,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
           formula: "Aktueller BZ − Zielwert = Abweichung",
           correctValue: 74,
           unit: "mg/dl",
-          tolerance: 0,
+          tolerance: 1,
           explanation:
             "254 − 180 = 74 mg/dl über dem Ziel. Ja, der Arzt muss informiert werden: Der Wert ist deutlich zu hoch und der BZ-Trend ist wichtig für die Beurteilung der Metformin-Dosierung. (DDG 2023: postprandiales Ziel < 180 mg/dl)",
           explanationB1:
@@ -421,5 +449,5 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
     },
   ],
   optionaleSteps: [],
-  geschaetzteDauer: 45,
+  geschaetzteDauer: 50,
 };

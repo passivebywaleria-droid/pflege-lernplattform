@@ -276,7 +276,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
           },
           {
             left: "Kopflagerung max. 30°",
-            right: "Hüftbeugung kontrollieren — zu starkes Aufsitzen überschreitet 90°",
+            right: "Zwei Gründe: Scherkräfte am Steißbein (Dekubitusprophylaxe) UND Vorbeugung übermäßiger Hüftbeugung beim Aufsitzen (kein universeller Hüft-TEP-Standard, aber sinnvoll bei Frau Yilmaz wegen Dekubitus Kat. I)",
           },
           {
             left: "Kissen zwischen die Beine in Rückenlage",

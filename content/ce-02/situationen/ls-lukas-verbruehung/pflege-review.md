@@ -100,3 +100,33 @@
 - Kinästhetik-Anti-Patterns: keine gefunden. Pseudo-Empathie: keine gefunden.
 
 **K.O.-Verdikt:** **FAIL** — F-01 (Kühldauer) ist ein HOCH-Finding. Sandras Maßnahme als "korrekt" zu loben, obwohl 15-20 Min Kühlung bei einem 2,5-Jährigen mit 15% KOF Hypothermie-Risiko bedeutet, kann zu Schaden in der Praxis führen, wenn Schüler diese Empfehlung weitergeben. **Vor Live-Deploy F-01 anpassen** (Sandras Handlung emotional würdigen, im Lerntext aber den aktuellen Standard für Kleinkinder erklären). F-02 und F-05 sollten parallel mitkorrigiert werden — sie betreffen direkt anwendbare Pflegehandlungen.
+
+---
+
+## Fixes durchgeführt — 2026-04-26
+
+**Alle 9 Findings bearbeitet — PASS**
+
+| Finding | Schweregrad | Status | Maßnahme |
+|---------|-------------|--------|----------|
+| F-01 | HOCH | ✅ Fixed | `patient.ts` (hintergrund + hintergrundB1) und `phase-informieren.ts` Step 1.2 (C1+B1): Sandras Erstversorgung umgeschrieben — durchnässte Kleidung entfernt, ~8 Min lokale Kurzkühlung mit lauwarmem Wasser (~20 °C), Wärmeerhalt am Restkörper. DGV/GNPI-Standard für Kinder unter 8 J. bzw. >10 % KOF (max. 10 Min, lauwarm, Hypothermie-Vermeidung) im Lerntext explizit benannt. Sandra wird weiterhin gewürdigt ("schnell und richtig gemacht"), Schüler lernt aktuellen Standard. |
+| F-02 | MITTEL | ✅ Fixed | `phase-durchfuehren.ts` Step 4.4 (C1+B1): NaCl-0,9-%-Spülung von Pflichtschritt 2 auf bedarfsorientiert reduziert ("nur bei Verschmutzung, Wundsekretkrusten oder Belägen — bei sauberer intakter Wundfläche keine routinemäßige Spülung"). DGV 2023 "minimale Manipulation" + Hoehl/Kullick als Quellen ergänzt. |
+| F-03 | MITTEL | ✅ Fixed | `phase-informieren.ts` Step 1.4 (Tetanus-Highlight, reason + reasonB1): "Sehr relevant" → "Relevant zu prüfen". Klarstellung: Bei reiner Verbrühung sterilisiert die Hitze die Wundfläche, STIKO-Auffrischung nur bei tieferen/kontaminierten Wunden. Dokumentation des Status genügt — kein automatischer Handlungsbedarf bei Verbrühung. |
+| F-04 | MITTEL | ✅ Fixed | `phase-beobachten.ts` Step 2.1 (C1+B1, alle 5 Highlight-Segmente): KUSS-Beschreibungen anschärft, sodass Score 8/10 plausibel wird (lautes Schreien in Wellen = 2 P, starkes Grimassieren = 2 P, aufbäumend/verkrampft = 2 P, kräftiges Strampeln = 2 P, kräftiges Wegstoßen + ruhelos = 2 P → Summe ~10, durch einsetzende Analgesie 8/10). Kontext "vor/während Analgesie-Beginn" explizit gemacht. |
+| F-05 | MITTEL | ✅ Fixed | `phase-planen.ts` Step 3.3 (Calculation explanation + explanationB1): Falsche Zusatzbedarfs-Formel (1–2 ml/kg/% KOF) ersetzt durch Parkland-Formel (4 ml × kg × % KOF in 24h, davon 50 % in den ersten 8h). Modifizierte Galveston-Formel als pädiatrische Alternative erwähnt. Beispielrechnung Lukas: ~790 ml zusätzlich/24h. Genaue Festlegung weiterhin durch Arzt. |
+| F-06 | NIEDRIG | ✅ Fixed | Konsistenz CHX-Altersgrenze hergestellt: `phase-planen.ts` Step 3.2 (vorher "unter 2 J.") → einheitlich "unter 6 Jahren nicht empfohlen" (DGKJ 2022). Octenidin und schluckbare Kamille/Salbei als kindgerechte Alternativen explizit ergänzt — sowohl in `phase-planen.ts` Step 3.2 als auch in `phase-durchfuehren.ts` Step 4.5 MC-Feedback. |
+| F-07 | NIEDRIG | ✅ Fixed | `phase-durchfuehren.ts` Step 4.3 (Branching-Distraktor C1+B1): Feedback nuanciert — therapeutisches Halten durch Eltern (mit Einverständnis, ruhiger Stimme, als beruhigender Halt) ist nach Hoehl/Kullick 2019 etabliert. Falsch ist hier das Motiv ("damit es schneller geht"), nicht das Halten an sich. Pause + Bedarfsanalgesie + KUSS-Reassessment bleiben die korrekte Antwort. |
+| F-08 | MITTEL | ✅ Fixed | `phase-dokumentieren.ts` Step 6.2 Matching: Karikatur-Distraktor "Vater Kevin hat laut reagiert — ist wahrscheinlich schuldig" ersetzt durch realistischen Anfänger-Fehler "Vater Kevin ist sehr emotional und schwer ansprechbar gewesen, möglicherweise überfordert mit der Situation" — klingt empathisch, ist aber Interpretation statt Beobachtung und gehört nicht in die sachliche Dokumentation. |
+| F-09 | NIEDRIG | ✅ Fixed | KUSS-Wert bei Aufnahme einheitlich auf 8/10 gesetzt: `phase-evaluieren.ts` Step 5.1 categoryItem (vorher 9/10 → 8/10) und Step 5.2 timeline-Event t1 (Title "KUSS 9/10" → "KUSS 8/10", Time-Label "Unfall → Aufnahme", Beschreibung präzisiert). Konsistent zu `patient.ts` und `phase-beobachten.ts`. |
+
+**Cross-Step-Konsistenz nachgezogen:**
+- Kühldauer in `phase-dokumentieren.ts` Step 6.2 (Unfallhergang-Item) auf neue Erstversorgungs-Beschreibung angepasst (Kleidung entfernt, ~8 Min Kurzkühlung lauwarm, Wärmeerhalt).
+- KUSS 8/10 durchgehend (patient.ts ↔ phase-beobachten Step 2.1 ↔ phase-evaluieren Step 5.1+5.2).
+- CHX-Altersgrenze "unter 6 J." durchgehend (phase-planen ↔ phase-durchfuehren).
+
+**Validierung:**
+- `npx tsc --noEmit` — PASS (keine Fehler).
+- Alle Korrekturen wurden in C1- UND B1-Varianten parallel durchgeführt.
+- Keine Änderungen in `src/` — ausschließlich `content/ce-02/situationen/ls-lukas-verbruehung/`.
+
+**Status:** PASS — alle K.O.-Findings behoben, Live-Deploy aus pflegefachlicher Sicht freigegeben.

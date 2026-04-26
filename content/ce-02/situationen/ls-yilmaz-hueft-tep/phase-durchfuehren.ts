@@ -118,9 +118,9 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
             text: "Frau Yilmaz sofort sicher hinlegen, Beine leicht erhöht lagern, Kreislauf stabilisieren, RR messen",
             isCorrect: true,
             feedback:
-              "Genau. Sicherheit zuerst, dann Ursache verstehen. RR liegend: 128/78 mmHg. RR sitzend nach 3 Min: 98/62 mmHg. Differenz > 30 mmHg systolisch = klinisch relevante Orthostase. Maßnahme: hinlegen, warten, nächster Versuch in 20–30 Min. Dann: Frau Wendt informieren.",
+              "Genau. Sicherheit zuerst, dann Ursache verstehen. RR liegend (vor Aufstehen gemessen): 128/78 mmHg. RR sitzend jetzt: 98/62 mmHg. Differenz systolisch 30 mmHg, diastolisch 16 mmHg — beide Werte überschreiten den Standard-Schwellenwert für orthostatische Hypotonie (≥ 20 mmHg systolisch oder ≥ 10 mmHg diastolisch innerhalb 3 Min, AAS-Konsensus 2011 / DGN Schellong-Test). Maßnahme: hinlegen, warten, nächster Versuch in 20–30 Min. Dann: Frau Wendt informieren.",
             feedbackB1:
-              "Richtig. Sie liegt jetzt sicher. Blutdruck messen. Beine leicht hochlagern. Dann warten. In 20–30 Minuten erneut versuchen. Frau Wendt informieren.",
+              "Richtig. Sie liegt jetzt sicher. Blutdruck messen. Beine leicht hochlagern. Dann warten. RR liegend war 128/78, jetzt sitzend 98/62 — der Blutdruck ist um 30 mmHg gefallen. Schon ab 20 mmHg ist es Orthostase. In 20–30 Minuten erneut versuchen. Frau Wendt informieren.",
           },
           {
             text: "Warten — das geht gleich vorbei, ein bisschen Schwindel ist normal",
@@ -288,7 +288,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Komplikation 2: Ehemann Mustafa interveniert",
-        body: "Frau Yilmaz steht zum ersten Mal. Du stehst seitlich hinter ihr. Dann — Mustafa steht auf. Er macht einen Schritt auf Frau Yilmaz zu, will nach ihrem Arm greifen. Er sagt laut auf Türkisch (Übersetzung unten):\n\n\"Sie soll ins Bett. Sie ist krank. Warum macht ihr das mit ihr?\"\n\nMustafas Reaktion ist Liebe, kein Angriff. Er sieht seine kranke Frau stehen und glaubt, ihr zu helfen wenn er sie wieder hinlegt. Was tust du?",
+        body: "Frau Yilmaz steht zum ersten Mal. Du stehst auf der OP-Seite (rechts), eine Hand am Beckengurt, eine Hand am Rumpf. Dann — Mustafa steht auf. Er macht einen Schritt auf Frau Yilmaz zu, will nach ihrem Arm greifen. Er sagt laut auf Türkisch (Übersetzung unten):\n\n\"Sie soll ins Bett. Sie ist krank. Warum macht ihr das mit ihr?\"\n\nMustafas Reaktion ist Liebe, kein Angriff. Er sieht seine kranke Frau stehen und glaubt, ihr zu helfen wenn er sie wieder hinlegt. Was tust du?",
         fallbezug:
           "Diese Situation ist häufig bei älteren Patienten mit pflegenden Angehörigen. Die richtige Reaktion entscheidet über Vertrauen — und über die Sicherheit der Mobilisation.",
         glossarBegriffe: ["Angehörige", "Nonverbale Kommunikation", "Interkulturelle Pflege"],
@@ -304,12 +304,12 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
         fragetext: "Mustafa greift ein und will Frau Yilmaz ins Bett zurücklegen. Was tust du?",
         branchingOptions: [
           {
-            text: "Ruhig, klar, nonverbal: Hebe die Hand (Stopp-Geste), lächle ihn gleichzeitig an. Dann — über Frau Yilmaz: \"Frau Yilmaz, könnten Sie Ihrem Mann kurz sagen, dass alles gut ist und Sie selbst entschieden haben aufzustehen?\"",
+            text: "Ruhig, klar, nonverbal: Hebe die Hand (Stopp-Geste), lächle ihn gleichzeitig an. Frau Yilmaz erst sicher zurück ans Bett/auf den Stuhl begleiten — DANN über Frau Yilmaz: \"Frau Yilmaz, könnten Sie Ihrem Mann kurz sagen, dass alles gut ist und Sie selbst entschieden haben aufzustehen?\"",
             isCorrect: true,
             feedback:
-              "Mustafas Reaktion ist Liebe, kein Angriff. Deine Aufgabe: kurze, ruhige Kommunikation OHNE Worte (er versteht kein Deutsch) + Frau Yilmaz als Vermittlerin aktivieren. Das stärkt ihre Autonomie und erklärt Mustafa gleichzeitig die Situation. Frau Yilmaz sagt auf Türkisch etwas zu Mustafa. Er setzt sich langsam wieder hin. Nach einer Minute nickt er.",
+              "Sicherheit zuerst — dann Kommunikation. Frau Yilmaz steht nach Hüft-TEP zum ersten Mal (NRS 4, gerade aktiv stabilisiert). Wenn sie als Vermittlerin im Stehen reden soll, verliert sie den Fokus auf Stand und Schmerz → Sturz- und Luxationsgefahr (DNQP Sturzprophylaxe; ABCDE). Reihenfolge: 1. Stopp-Geste + Lächeln Richtung Mustafa, 2. Frau Yilmaz sicher zurück zum Stuhl/Bett, 3. erst dann Frau Yilmaz als Vermittlerin aktivieren. Mustafas Reaktion ist Liebe, kein Angriff.",
             feedbackB1:
-              "Genau richtig. Stopp-Geste + Lächeln — das versteht er. Dann: Frau Yilmaz bittet ihm zu erklären. Sie ist die Vermittlerin. Das ist respektvoll für alle.",
+              "Genau richtig — aber in der richtigen Reihenfolge. Erst: Stopp-Geste + Lächeln Richtung Mustafa. Dann: Frau Yilmaz sicher hinsetzen — sie steht ja erst zum ersten Mal. Erst wenn sie sicher sitzt, bittest du sie, Mustafa zu erklären. Sicherheit kommt vor Reden.",
           },
           {
             text: "Direkt auf Türkisch via Übersetzungs-App: 'Bitte nicht stören.'",
@@ -526,9 +526,9 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
             ],
             [
               { value: "09:00", isBlank: false },
-              { value: "7", isBlank: true, options: ["3", "5", "7", "9"] },
+              { value: "6", isBlank: true, options: ["4", "6", "7", "9"] },
               { value: "Bein beim Aufstehen", isBlank: false },
-              { value: "Aufstehversuch 1 — Orthostase, abgebrochen", isBlank: false },
+              { value: "Aufstehversuch 1 — Orthostase (RR sitzend 98/62 vs. liegend 128/78), abgebrochen", isBlank: false },
               { value: "—", isBlank: false },
             ],
             [

@@ -129,3 +129,44 @@
 
 **K.O.-Verdikt: FAIL**
 3 HOCH-Findings (F-01, F-05, F-06) sind pflegerisch direkt falsch und müssen vor Live-Deploy korrigiert werden. Insbesondere F-05 (beidseitiges Beinschwingen) und F-06 (3-Min-Warten als Schellong-Ersatz) sind in Praxis-Tests durch eine Pflegelehrperson sofort kritikfähig.
+
+---
+
+## Fix-Block (2026-04-25)
+
+Alle 13 Findings (3 HOCH, 6 MITTEL, 4 NIEDRIG) sowie die 3 Cross-Step-Probleme (CS-1 bis CS-3) wurden in den Content-Files behoben. TypeScript-Validierung läuft sauber durch (`npx tsc --noEmit` ohne Errors). Keine Änderungen in `src/`.
+
+### Fixes im Detail
+
+| ID | Datei | Fix |
+|----|-------|-----|
+| **F-01** (HOCH) | `phase-beobachten.ts` (Step 2.4 categorize) | Diabetes-Item von `correctCategory: 0` (Gefäßwandschaden) auf `correctCategory: 2` (Hyperkoagulabilität) verschoben + Item-Text präzisiert: "chronische Hyperglykämie aktiviert Thrombozyten und erhöht PAI-1/Fibrinogen". |
+| **F-02** (MITTEL) | `phase-beobachten.ts` (Step 2.5 truefalse) | body C1+B1: aktive Druckprovokation entfernt — stattdessen "Inspektion im Seitenvergleich + Schmerz erfragen". TF-Karte 1 umformuliert auf Provokationszeichen-Verbot (DGG 2022) inkl. Embolie-Risiko-Warnung. |
+| **F-03** (MITTEL) | `phase-planen.ts` (Step 3.3 sorting) | body C1+B1: Toleranz-Hinweis ergänzt — Items 4 und 5 (Frau Yilmaz / Mustafa) tauschbar; Logik bleibt: Patientin verstanden → Angehöriger eingeweiht → vorbereiten. |
+| **F-04** (NIEDRIG) | `phase-planen.ts` (Step 3.2 cloze) | Distraktor "leicht eingeschränkt" durch "zeitlich eingeschränkt aber sonst" ersetzt — realistische Falsch-Einschätzung bei älteren post-OP-Patienten. |
+| **F-05** (HOCH) | `phase-durchfuehren.ts` (Step 4.1 sequencing) | Item s4 grundlegend umformuliert: "Operiertes Bein (rechts) zuerst in Streckung über die Bettkante führen — gesundes Bein folgt nach. Adduktion/Innenrotation vermeiden (Luxationsschutz). Patientin dreht aktiv mit, Pflege begleitet." (DGU S2k Endoprothetik Hüfte) |
+| **F-06** (HOCH) | `phase-durchfuehren.ts` (Step 4.1 sequencing s5) | "3 Min warten" durch echten Schellong-Test ersetzt: "≥ 1 Min an der Bettkante sitzen, Schwindel abfragen, RR sitzend messen. Differenz < 20 mmHg syst. (und < 10 mmHg diast.) → Aufstehen erlaubt; ≥ 20/10 mmHg → hinlegen, Versuch verschieben." Zusätzlich s1 ergänzt: "RR liegend messen (Ausgangswert für Schellong)". |
+| **F-07** (MITTEL) | `phase-durchfuehren.ts` (Step 4.1 sequencing s6) | Sicherungsposition korrigiert: "Pflegekraft auf OP-Seite (rechts), eine Hand am Beckengurt/Hüftgurt, eine Hand am Rumpf. Frau Yilmaz drückt sich aktiv hoch und greift dann zu den Unterarmgehstützen. Teilbelastung rechts max. 20 kg." (Kinästhetik Hatch/Maietta — kein "seitlich-hinter", kein "unter den Achseln") |
+| **F-08** (MITTEL) | `phase-durchfuehren.ts` (Step 4.2 body C1+B1) | Antidiabetika-Aussage entfernt; ersetzt durch korrekte Risikofaktoren: "Bettlägerigkeit (Gefäßregulation gedämpft), postoperative Volumenverschiebung, schmerzbedingte autonome Aktivierung". Hypoglykämie-Differential klargestellt. Cross-Step-Konsistenz mit Step 4.3 hergestellt. |
+| **F-09** (NIEDRIG) | `phase-durchfuehren.ts` (Step 4.2 Feedback) + `phase-dokumentieren.ts` (Step 6.2) | Schwelle vereinheitlicht auf "≥ 20 mmHg syst. ODER ≥ 10 mmHg diast." (AAS-Konsensus 2011 / DGN Schellong). Konkrete Werte: Differenz syst. 30, diast. 16 mmHg = beide überschritten. |
+| **F-10** (NIEDRIG) | `phase-durchfuehren.ts` (Step 4.4 branching) | Score-3-Option und Feedback ergänzt: "Frau Yilmaz erst sicher zurück ans Bett/auf den Stuhl begleiten — DANN über sie vermitteln lassen". Sicherheit zuerst (DNQP Sturzprophylaxe / ABCDE), Kommunikation in zweiter Reihe. body angepasst auf neue Sicherungsposition. |
+| **F-11** (MITTEL) | `phase-durchfuehren.ts` (Step 4.8 tablefillin Row 2) | NRS-Wert von 7 auf 6 gesenkt; Maßnahme-Text präzisiert: "Aufstehversuch 1 — Orthostase (RR sitzend 98/62 vs. liegend 128/78), abgebrochen". Damit ist Orthostase alleiniger Abbruchgrund, konsistent mit Sequencing s8 ("NRS ≥ 7"). |
+| **F-12** (NIEDRIG) | `phase-evaluieren.ts` (Step 5.1 categorize body) | Lernpointe ergänzt: "pflegerische Maßnahme abgeschlossen vs. Diagnostik läuft" — Wadenschmerz/Doppler-Beispiel im body C1+B1 erklärt, sodass "Ergebnis ausstehend" (nicht "ungelöst") nachvollziehbar wird. |
+| **F-13** (MITTEL) | `phase-dokumentieren.ts` (Step 6.1 freetext) | Musterantwort um RR-Werte liegend UND sitzend ergänzt (Schellong-Ergebnis dokumentiert: "RR liegend 128/78, RR sitzend nach 2 Min 98/62, Differenz syst. 30 mmHg, diast. 16 mmHg"). Bewertungskriterium "RR-Werte liegend UND sitzend dokumentiert (Schellong nachvollziehbar)?" hinzugefügt. |
+| **CS-1** (MITTEL) | `phase-durchfuehren.ts` (s6) + `phase-dokumentieren.ts` (Step 6.2 + Summary) | Teilbelastung rechts max. 20 kg (Mobilisationsstufe 3) explizit in Sequencing-Schritt s6, im Pflegeplan-Matching und in der Summary verankert. |
+| **CS-2** (NIEDRIG) | `phase-informieren.ts` (Step 1.4 matching) | Begründungstext für "Kopflagerung max. 30°" geschärft: "Zwei Gründe: Scherkräfte am Steißbein (Dekubitusprophylaxe) UND Vorbeugung übermäßiger Hüftbeugung beim Aufsitzen (kein universeller Hüft-TEP-Standard, aber sinnvoll wegen Dekubitus Kat. I)". |
+| **CS-3** (NIEDRIG) | `phase-planen.ts` (Step 3.3 sorting) | Neuer Sortier-Schritt eingefügt: "Wadenschmerz links: Arzt informieren — Doppler-Sonografie beauftragen (vor Mobilisation, falls Thrombose nicht ausgeschlossen)". Eskalations-Logik aus Phase 2 wird damit in Phase 3 sichtbar. |
+
+### Konsistenz-Updates (Folge-Effekte der HOCH-Fixes)
+
+- **Summary Step 6.3** (`phase-dokumentieren.ts`): kernaussagen + body C1+B1 erweitert um Schellong-Test, "operiertes Bein zuerst", Sicherungsposition OP-Seite, Druckprovokations-Verbot, Diabetes-via-Hyperkoagulabilität.
+- **Step 4.4 body** (`phase-durchfuehren.ts`): "seitlich hinter ihr" durch "auf der OP-Seite (rechts), eine Hand am Beckengurt, eine Hand am Rumpf" ersetzt — passt zu F-07-Fix in Sequencing.
+- **Step 6.2 Pflegeplan-Matching**: Orthostase-Maßnahme auf vollständigen Schellong-Ablauf umformuliert (RR liegend → ≥ 1 Min sitzen → RR sitzend → Aufstehen-Entscheidung); Mobilisations-Maßnahme um Teilbelastung 20 kg + operiertes Bein zuerst ergänzt.
+
+### Validierung
+
+- `npx tsc --noEmit` läuft ohne Fehler durch.
+- Keine Änderungen in `src/`.
+- Quellen-Felder (`quellen[]`) der betroffenen Steps unverändert; die genutzten Standards (DGG 2022, DGU 2022, DNQP 2020, DGN Schellong, AAS 2011, NPUAP/EPUAP 2019, Kinästhetik Hatch/Maietta) waren bereits referenziert.
+
+**Neuer K.O.-Status: PASS** — alle 3 HOCH-Findings sowie die 6 MITTEL- und 4 NIEDRIG-Findings inkl. Cross-Step-Probleme sind im Content behoben.

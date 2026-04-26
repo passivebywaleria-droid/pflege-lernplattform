@@ -261,7 +261,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
                   text: "Frau Yilmaz kann keine Treppen steigen",
                   isCorrect: false,
                   explanation:
-                    "Sie wohnt im Erdgeschoss mit Aufzug — Treppensteigen ist kein aktuelles Problem.",
+                    "Sie wohnt im Erdgeschoss — keine Treppen nötig. Treppensteigen ist daher kein aktuelles Entlassungsproblem.",
                 },
               ],
             },
@@ -304,10 +304,10 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
                     "Mustafa muss wissen wie er helfen kann — Schräglagerung vereinfacht erklären, ambulanter Pflegedienst koordinieren.",
                 },
                 {
-                  text: "Hilfsmittel: Rollator + ggf. Badewannensitz + Antirutschmatten",
+                  text: "Hilfsmittel: Rollator + erhöhter Toilettensitz + Badewannensitz + Antirutschmatten + Greifhilfen",
                   isCorrect: true,
                   explanation:
-                    "Sturzprophylaxe zuhause — Rollator hat sie schon, aber Bad-Hilfsmittel fehlen ggf. noch.",
+                    "Sturzprophylaxe + TEP-Schutz zuhause: Rollator hat sie schon. Erhöhter Toilettensitz ist TEP-Standard (Hüftbeugung <90° auch zuhause einhalten). Badewannensitz + Antirutschmatten reduzieren Sturzrisiko im Bad. Greifhilfen erleichtern Anziehen von Schuhen/Strümpfen ohne tiefes Bücken.",
                 },
                 {
                   text: "Stationäre Verlängerung um 2 Wochen beantragen",
@@ -439,23 +439,23 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
           {
             text: "Verbandwechsel wie geplant durchführen, nichts melden — vielleicht ist es morgen besser.",
             feedback:
-              "Falsch. Eitriges Exsudat + geröteter Wundrand + erhöhte Temperatur = 3 von 5 Inflammationszeichen (Rubor, Calor/erhöhte Temperatur, Tumor = geschwollen). Das ist ein Infektionsverdacht, der sofortige ärztliche Einschätzung erfordert. Abwarten verschlimmert die Situation.",
+              "Falsch. Geröteter Wundrand (Rubor) + erhöhte Temperatur (Calor) sind 2 klassische Cardinal Signs der Inflammation nach Celsus/Galen. Hinzu kommt purulentes (eitriges) Exsudat — das ist ein Infektionszeichen. Zusammen ergibt das einen Infektionsverdacht, der sofortige ärztliche Einschätzung erfordert. Abwarten verschlimmert die Situation.",
             feedbackB1:
-              "Falsch. Das sind Zeichen für eine Wundinfektion. Du musst sofort den Arzt informieren — nicht warten.",
+              "Falsch. Rötung und erhöhte Temperatur (das sind Inflammationszeichen) zusammen mit eitrigem Exsudat zeigen eine Wundinfektion. Du musst sofort den Arzt informieren — nicht warten.",
             isCorrect: false,
           },
           {
             text: "Befund dokumentieren + sofort Ärztin Dr. Kirchner per SBAR informieren: Wundrand gerötet, eitriges Exsudat, T 37,8°C — mögliche Wundinfektion.",
             feedback:
-              "Korrekt. Drei Inflammationszeichen vorhanden: Rubor (Rötung), Calor (erhöhte Temperatur 37,8°C), Exsudat (purulent = eitrig). Sofortige SBAR-Meldung + Dokumentation sind die pflegerisch korrekten Maßnahmen. Dr. Kirchner entscheidet über Abstrich, Antibiotikum oder Therapieänderung.",
+              "Korrekt. Mindestens 2 klassische Cardinal Signs nach Celsus/Galen sind erfüllt: Rubor (Rötung Wundrand) + Calor (erhöhte Temperatur 37,8°C). Zusätzlich: purulentes (eitriges) Exsudat → klinischer Infektionsverdacht (Eiter ist kein Inflammations-Cardinal-Sign, sondern ein Infektionszeichen). Sofortige SBAR-Meldung + Dokumentation sind die pflegerisch korrekten Maßnahmen. Dr. Kirchner entscheidet über Abstrich, Antibiotikum oder Therapieänderung.",
             feedbackB1:
-              "Richtig. Du dokumentierst was du siehst. Du rufst sofort die Ärztin an und sagst klar was los ist (SBAR). Das ist richtig.",
+              "Richtig. Du siehst Rötung (Rubor) und höhere Temperatur (Calor) — zusammen mit dem eitrigen Exsudat ist das ein Infektionsverdacht. Du dokumentierst und rufst sofort die Ärztin an (SBAR). Das ist richtig.",
             isCorrect: true,
           },
           {
             text: "Wunde reinigen, neuen Verband drauf — und beim nächsten Schichtwechsel übergeben.",
             feedback:
-              "Nicht ausreichend. Verbandwechsel ist korrekt, aber ohne Arzt-Ruf und ohne Dokumentation fehlt die Eskalation. Infektionsverdacht erfordert sofortige Meldung — nicht nur am Schichtwechsel. Die nächste Schicht beginnt ggf. 8 Stunden später.",
+              "Nicht ausreichend. Verbandwechsel ist korrekt, aber ohne Arzt-Ruf und ohne Dokumentation fehlt die Eskalation. Infektionsverdacht (Rubor + Calor + purulentes Exsudat) erfordert sofortige Meldung — nicht nur am Schichtwechsel. Die nächste Schicht beginnt ggf. 8 Stunden später.",
             feedbackB1:
               "Nicht genug. Verbandwechsel ist gut. Aber: Du musst sofort den Arzt informieren — nicht erst beim Schichtwechsel.",
             isCorrect: false,

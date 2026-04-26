@@ -184,7 +184,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
             left:
               "S1: Pflegende mit Kompetenz zur Risikoeinschätzung",
             right:
-              "Erfüllt — Braden-Skala wurde ausgefüllt, Hautinspektion wurde durchgeführt",
+              "Teilweise erfüllt — Braden-Skala wurde regelmäßig ausgefüllt, aber: Spätschicht-Kollegin hat Rötung wahrgenommen, ohne sie als Kategorie I zu klassifizieren oder zu dokumentieren → Wahrnehmungs-/Beurteilungskompetenz nicht reliabel sichergestellt",
           },
           {
             left:

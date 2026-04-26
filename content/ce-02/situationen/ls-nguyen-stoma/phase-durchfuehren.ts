@@ -12,7 +12,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
   titel: "Durchführen — Beutelwechsel und was dazwischen passiert",
   titelB1: "Durchführen — Der Beutelwechsel",
   kontext:
-    "Du hast das Material vorbereitet: Handschuhe, Zellstoff, lauwarmes Wasser, neue Stomaplatte in der richtigen Größe (60 mm — aus dem Patientenblatt), Schutzpaste, neuer Beutel. Tochter Linh übersetzt deine Ankündigung: 'Ich werde jetzt den Beutel wechseln. Das dauert etwa 10 Minuten. Du kannst die ganze Zeit schauen oder wegschauen — das entscheidest du.' Herr Nguyen nickt. Schlägt die Augen nieder. Ehefrau Mai bleibt am Fenster — du fragst Linh, ob sie dabei bleiben darf. Linh fragt. Herr Nguyen nickt wieder, knapp.",
+    "Du hast das Material vorbereitet: Handschuhe, Zellstoff, lauwarmes Wasser (bei Bedarf milde pH-neutrale Waschlotion), neue Stomaplatte in der richtigen Größe (60 mm — aus dem Patientenblatt), Schutzpaste, neuer Beutel. Tochter Linh übersetzt deine Ankündigung: 'Ich werde jetzt den Beutel wechseln. Das dauert etwa 10 Minuten. Du kannst die ganze Zeit schauen oder wegschauen — das entscheidest du.' Herr Nguyen nickt. Schlägt die Augen nieder. Ehefrau Mai bleibt am Fenster — du fragst Linh, ob sie dabei bleiben darf. Linh fragt. Herr Nguyen nickt wieder, knapp.",
   kontextB1:
     "Du hast alles bereit: Handschuhe, Wasser, neue Stomaplatte, Schutzpaste, neuer Beutel. Linh übersetzt: 'Ich wechsle jetzt den Beutel. Du kannst schauen oder wegschauen — du entscheidest.' Herr Nguyen nickt. Er schlägt die Augen nieder. Ehefrau Mai bleibt am Fenster.",
   kernSteps: [
@@ -65,12 +65,12 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Wie viel erklärst du — und wann bist du still?",
-        body: "Du hast den alten Beutel geöffnet und entfernst ihn von oben nach unten. Herr Nguyen schaut zur Seite. Du erklärst leise was du tust — Linh übersetzt in Kurzform. Aber: Wie viel ist richtig?",
+        body: "Du hast den alten Beutel geöffnet und entfernst ihn von oben nach unten — die andere Hand hält die Haut sanft gegen, damit nichts einreißt. Herr Nguyen schaut zur Seite. Du erklärst leise was du tust — Linh übersetzt in Kurzform. Aber: Wie viel ist richtig?",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Was sagst du beim Beutelwechsel?",
-        body: "Du wechselst den Beutel. Herr Nguyen schaut zur Seite. Du erklärt kurz was du tust — Linh übersetzt. Wie viel erklärst du?",
+        body: "Du wechselst den Beutel. Eine Hand zieht von oben nach unten, die andere hält die Haut. Herr Nguyen schaut zur Seite. Du erklärst kurz was du tust — Linh übersetzt. Wie viel erklärst du?",
         glossarBegriffe: [],
       },
       question: {
@@ -93,11 +93,11 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
                   "Herr Nguyen zieht die Schultern leicht hoch. Er atmet kurz durch den Mund.",
                 patientResponseB1:
                   "Herr Nguyen zieht die Schultern hoch. Er atmet kurz durch den Mund.",
-                score: 1,
+                score: 2,
                 feedback:
-                  "Gut gemeint — aber zu viel. Laufende Erklärungen für jeden Schritt können als aufdringlich erlebt werden, besonders bei einem Patienten der sich schämt. Herrn Nguyen braucht das Gefühl von Würde und Kontrolle — nicht eine Kommentierung seines Körpers in Echtzeit.",
+                  "Transparenz ist grundsätzlich wichtig und richtig — der Patient soll wissen was passiert. Bei Herrn Nguyen aber mit Schamthema zu viel: laufende Echtzeit-Kommentierung jedes Schritts wird als aufdringlich erlebt. Beim nächsten Mal: kurze Ankündigungen am Anfang jeder Handlung, dazwischen Stille zulassen. Das wahrt Würde und gibt trotzdem Orientierung.",
                 feedbackB1:
-                  "Gut gemeint, aber zu viel. Wenn jeder Schritt erklärt wird, fühlt es sich für Herrn Nguyen unangenehm an.",
+                  "Du machst etwas Wichtiges richtig: du erklärst, was passiert. Bei Herrn Nguyen ist es aber zu viel auf einmal. Beim nächsten Mal: kurze Sätze am Anfang, dazwischen Stille. Dann fühlt er sich nicht überfordert.",
               },
               {
                 text: "Kurze sachliche Sätze zu Beginn und bei wichtigen Momenten, dazwischen Stille lassen: 'Ich löse jetzt die alte Platte. Kurz warten...' — dann Stille — 'Fast fertig.'",
@@ -440,24 +440,24 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Ganzkörperpflege: Reihenfolge nach Hygiene-Grundsatz",
-        body: "Du führst jetzt die Ganzkörperpflege durch — parallel zur Stoma-Versorgung. Herr Nguyen ist geschwächt, kann nicht selbst waschen. Welche Körperbereiche werden in welcher Reihenfolge gewaschen? Und: Welche Besonderheit gibt es wegen des Stomas?",
+        body: "Du führst jetzt die Ganzkörperpflege durch. Herr Nguyen ist geschwächt, kann nicht selbst waschen. Welche Körperbereiche werden in welcher Reihenfolge gewaschen? Wichtig: Die Stomaversorgung läuft NICHT als Schritt der GKP, sondern als eigenständige Maßnahme — eigenes Set, eigene Schüssel, vor oder nach der GKP. Sortiere die GKP-Schritte.",
         glossarBegriffe: ["von sauber zu unrein", "Kreuzkontamination"],
       },
       contentB1: {
         title: "Ganzkörperpflege: In welcher Reihenfolge waschen?",
-        body: "Du wäschst Herrn Nguyen. Er kann es nicht alleine. In welcher Reihenfolge wascht man? Und was gilt besonders wegen des Stomas?",
+        body: "Du wäschst Herrn Nguyen. Er kann es nicht alleine. Wichtig: Die Stomapflege ist ein eigener Vorgang — nicht Teil der Ganzkörperpflege. Sortiere die Schritte der GKP.",
         glossarBegriffe: ["Hygiene", "Stoma"],
       },
       question: {
         fragetext:
-          "Sortiere die Körperbereiche in die richtige Pflegereihenfolge nach dem Prinzip 'von sauber zu unrein'.",
+          "Sortiere die Körperbereiche in die richtige Pflegereihenfolge nach 'von sauber zu unrein'. Die Stomaregion ist eine eigenständige Maßnahme (eigenes Set) — sie steht hier am Ende als getrennter Hinweis.",
         sortItems: [
           "Gesicht + Hals (sauberster Bereich — zuerst)",
           "Arme + Rumpf vorne (oberhalb des Stomas zuerst)",
           "Rücken (eigene Schüssel, Positionswechsel)",
           "Beine",
-          "Genitale + Perianalbereich (letzter Bereich — unreinster)",
-          "Stomaregion: eigenes Set (eigene Schüssel, eigenes Tuch) — Infektionsschutz, keine Kreuzkontamination mit Perianalbereich",
+          "Genitale + Perianalbereich (letzter Bereich der GKP — unreinster)",
+          "Stomaregion vor oder nach der GKP als eigenständige Maßnahme — eigenes Set, eigene Schüssel, eigenes Tuch (nicht in die GKP integrieren, kein 'schmutziger' Bereich, sondern getrennter Pflegevorgang)",
         ],
       },
     },
@@ -498,12 +498,12 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
               "Zu schnell. Man muss in Schritten vorgehen: erst Bettkante, dann Aufstehen, dann Stuhl. Direkt auf den Stuhl kann gefährlich sein.",
           },
           {
-            text: "Ich setze ihn an die Bettkante, lasse ihn 5 Minuten sitzen und prüfe Schwindel und Blutdruck — dann beurteile ich ob Aufstehen möglich ist.",
+            text: "Schellong-Modus: RR liegend messen und dokumentieren → an die Bettkante setzen, 1–3 Min warten, RR sitzend messen → erst dann ans Aufstehen denken. Bei RR-Abfall ≥20 mmHg systolisch oder Schwindel: zurücklegen.",
             isCorrect: true,
-            explanation:
-              "Richtig. Das ist die Vorstufen-Mobilisation mit Assessment: 1) Bettkante als erste Stufe (Hin-Bewegen, Gleichgewicht finden), 2) 5 Minuten warten (Orthostase-Assessment — gibt es Schwindel, Blutdruckabfall?), 3) Dann erst entscheiden ob Aufstehen sicher ist. NRS 3/10 ist tolerierbar — aber Schmerz muss vor Mobilisation erneut geprüft werden. Ramipril → Orthostase-Kontrolle ist Pflicht.",
             explanationB1:
-              "Richtig. Erst Bettkante — fünf Minuten sitzen. Dann schauen: Schwindel? Blutdruck okay? Dann erst aufstehen. Das ist sicher und Schritt für Schritt.",
+              "Richtig. Das ist der Schellong-Test: erst Blutdruck im Liegen messen — dann an die Bettkante setzen — 1 bis 3 Minuten warten — Blutdruck im Sitzen messen — dann erst aufstehen. Wenn der Blutdruck stark abfällt oder Herr Nguyen Schwindel hat: zurücklegen.",
+            explanation:
+              "Richtig. Bei Ramipril (Orthostase-Risiko) + Mangelernährung + 4. Tag post-OP ist ein strukturierter Schellong-Test der Standard, nicht eine 5-Minuten-Pause-und-fühlen. Ablauf: 1) RR liegend dokumentieren, 2) an Bettkante setzen (1–3 Min), 3) RR sitzend dokumentieren, 4) bei stabilem Kreislauf → Aufstehen versuchen, 5) bei RR-Abfall ≥20 mmHg systolisch / ≥10 mmHg diastolisch oder Symptomen (Schwindel, Übelkeit, Blässe): zurücklegen, Arzt informieren. NRS 3/10 ist tolerierbar — Schmerz vor Mobilisation prüfen, ggf. Bedarfsanalgesie 30 Min vorher. Quelle: DNQP Sturzprophylaxe; Pflege heute Kap. Mobilisation/Orthostase.",
           },
           {
             text: "Mobilisation erst wenn Schmerz NRS < 2.",

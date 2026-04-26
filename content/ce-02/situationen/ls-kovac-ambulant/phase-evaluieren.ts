@@ -57,8 +57,8 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
             correctCategory: 0,
           },
           {
-            text: "Kompressionsstrümpfe angelegt",
-            correctCategory: 2,
+            text: "Kompressionsstrümpfe: Verweigerung nach vollständiger Aufklärung dokumentiert — Patientenautonomie respektiert (§ 1901a BGB)",
+            correctCategory: 0,
           },
           {
             text: "Schlafgespräch und TV-Nutzung verändern — Abend heute angekündigt",

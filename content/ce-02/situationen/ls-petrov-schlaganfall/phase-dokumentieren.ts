@@ -93,12 +93,12 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DOKUMENTIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Katheter-Bilanz berechnen",
-        body: "Fülle die Katheter-Bilanz für die Frühschicht aus. Einnahme minus Ausscheidung = Bilanz.",
+        body: "Fülle die Katheter-Bilanz für die Frühschicht (8 h) aus. Einnahme minus Ausscheidung = Bilanz. Die hochgerechnete Tagesmenge (24 h) basiert auf der pro-Stunde-Ausscheidung × 24.",
         glossarBegriffe: ["Bilanzierung", "BVK", "Ausscheidung"],
       },
       contentB1: {
         title: "Katheter-Bilanz ausfüllen",
-        body: "Fülle die Tabelle aus. Einnahme minus Ausscheidung = Bilanz.",
+        body: "Fülle die Tabelle aus. Einnahme minus Ausscheidung = Bilanz. Tages-Menge (24 h) = Ausscheidung pro Stunde × 24.",
         glossarBegriffe: ["Bilanzierung", "BVK"],
       },
       question: {
@@ -108,7 +108,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DOKUMENTIEREN: SituationsPhase = {
           headers: [
             "Parameter",
             "Beginn Schicht",
-            "Frühschicht (8h)",
+            "Frühschicht (8 h)",
             "Bewertung",
           ],
           rows: [
@@ -141,24 +141,24 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DOKUMENTIEREN: SituationsPhase = {
               { value: "Ausscheidung", isBlank: false },
               { value: "—", isBlank: false },
               {
-                value: "680 ml",
+                value: "600 ml",
                 isBlank: true,
-                options: ["480 ml", "680 ml", "880 ml"],
+                options: ["400 ml", "600 ml", "900 ml"],
               },
-              { value: "laut Beutel gemessen", isBlank: false },
+              { value: "laut Beutel gemessen (~75 ml/h)", isBlank: false },
             ],
             [
-              { value: "Bilanz", isBlank: false },
+              { value: "Bilanz (8 h)", isBlank: false },
               { value: "—", isBlank: false },
               {
-                value: "+ 120 ml",
+                value: "+ 200 ml",
                 isBlank: true,
-                options: ["+ 120 ml", "- 120 ml", "0 ml"],
+                options: ["+ 200 ml", "- 200 ml", "0 ml"],
               },
               { value: "Einnahme − Ausscheidung", isBlank: false },
             ],
             [
-              { value: "Tagesmenge (24h)", isBlank: false },
+              { value: "Tagesmenge Hochrechnung (24 h)", isBlank: false },
               { value: "—", isBlank: false },
               { value: "ca. 1.800 ml", isBlank: false },
               {

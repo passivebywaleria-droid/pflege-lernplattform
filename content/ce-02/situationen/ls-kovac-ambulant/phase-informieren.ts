@@ -34,14 +34,14 @@ export const CE02_SIT_KOVAC_AMBULANT_INFORMIEREN: SituationsPhase = {
         "Pflegekraft liest Übergabezettel auf einem Klemmbrett im Treppenhaus",
       contentC1: {
         title: "Die Übergabe von gestern Abend",
-        body: "Du öffnest die Dokumentationsmappe. Die Kollegin vom Abendbesuch — Petra — hat einen handschriftlichen Zettel beigelegt:\n\n\"Fr. Kovač unruhig. Hat kaum gegessen — nur Brot. Trinkmenge 820 ml (Protokoll liegt am Küchentisch). Stühle seit 4 Tagen keiner. Kompressionsstrümpfe wieder abgelehnt. Atemübungen kurz gemacht, Frau K. erschöpft nach 3 Min. Kollegin Petra.\"\n\nDas ist die ambulante Übergabe. Sie ist kürzer als eine SBAR-Übergabe im Krankenhaus — aber die gleichen Informationen müssen drin sein: Was war? Wie war es? Was ist offen?",
+        body: "Du öffnest die Dokumentationsmappe. Die Kollegin vom Abendbesuch — Petra — hat einen handschriftlichen Zettel beigelegt:\n\n\"Fr. Kovač unruhig. Hat kaum gegessen — nur Brot. Trinkmenge 820 ml (Protokoll liegt am Küchentisch). Stühle seit 4 Tagen keiner. Kompressionsstrümpfe wieder abgelehnt. Atemübungen kurz gemacht, Frau K. erschöpft nach 3 Min. Kollegin Petra.\"\n\nDas ist die ambulante Übergabe — knapp und alltagstauglich. Sie enthält **S** (Situation: 84-jährige Patientin, unruhig) und **B** (Background: 820 ml, 4 Tage Obstipation, Verweigerung) — aber **A** (Assessment: was hat Petra eingeschätzt?) und **R** (Recommendation: was schlägt sie für heute vor?) fehlen. Das ist keine vollständige SBAR-Übergabe — das ist Realität ambulanter Praxis. Du musst Assessment und Recommendation heute Morgen selbst ergänzen.",
         fallbezug:
           "Frau Kovač (84, COPD III, Herzinsuffizienz NYHA II, Pflegegrad 3) — dein dritter Morgenbesuch. Praxisanleiterin Frau Özdemir hat dir empfohlen: 'Nimm dir Zeit für die Erklärungen — nicht für uns, für sie.'",
-        glossarBegriffe: ["Kompressionsstrümpfe", "Obstipation", "Trinkmenge"],
+        glossarBegriffe: ["Kompressionsstrümpfe", "Obstipation", "Trinkmenge", "SBAR"],
       },
       contentB1: {
         title: "Der Zettel von Kollegin Petra",
-        body: "Du liest den Zettel der Kollegin vom Abend-Besuch. Die Kollegin heißt Petra.\n\nSie hat aufgeschrieben:\n\"Frau Kovač war unruhig. Sie hat fast nichts gegessen — nur Brot. Sie hat 820 ml getrunken (das steht im Protokoll, es liegt auf dem Küchentisch). Seit 4 Tagen kein Stuhlgang. Die Kompressionsstrümpfe (= Strümpfe gegen Blut-Gerinnsel) hat sie wieder abgelehnt. Die Atem-Übungen hat sie kurz gemacht. Nach 3 Minuten war sie erschöpft. Kollegin Petra.\"\n\nDas ist die ambulante Übergabe (= kurze Information von Kollegin zu Kollegin). Sie ist kürzer als im Krankenhaus. Aber sie enthält die gleichen wichtigen Informationen.",
+        body: "Du liest den Zettel der Kollegin vom Abend-Besuch. Die Kollegin heißt Petra.\n\nSie hat aufgeschrieben:\n\"Frau Kovač war unruhig. Sie hat fast nichts gegessen — nur Brot. Sie hat 820 ml getrunken (das steht im Protokoll, es liegt auf dem Küchentisch). Seit 4 Tagen kein Stuhlgang. Die Kompressionsstrümpfe (= Strümpfe gegen Blut-Gerinnsel) hat sie wieder abgelehnt. Die Atem-Übungen hat sie kurz gemacht. Nach 3 Minuten war sie erschöpft. Kollegin Petra.\"\n\nDas ist die ambulante Übergabe (= kurze Information von Kollegin zu Kollegin). Sie ist kürzer als im Krankenhaus. **Wichtig:** Petras Zettel sagt **was war**. Aber er sagt **nicht** was Petra dachte und was sie für heute vorschlägt. Das musst du selbst ergänzen.",
         fallbezug:
           "Frau Kovač, 84 Jahre. Sie hat COPD (= schwere Lungen-Erkrankung). Pflegegrad 3. Du bist Pflegeschülerin im 2. Ausbildungsdrittel.",
         glossarBegriffe: ["Kompressionsstrümpfe", "Obstipation", "Trinkmenge"],
@@ -427,6 +427,83 @@ export const CE02_SIT_KOVAC_AMBULANT_INFORMIEREN: SituationsPhase = {
           "Obstipation",
           "Trinkprotokoll",
         ],
+      },
+    },
+
+    // Opt-1.B — SGB-XI-Kontext: Pflegegrad 3 + Leistungsrahmen (NEU — Fix F-01)
+    {
+      stepId: "ce02-kovac-info-opt-b-sgb-xi-kontext",
+      phase: 1,
+      stepType: "text",
+      bloomLevel: 3,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "SGB XI § 14 (Pflegebedürftigkeit)",
+        "SGB XI § 15 (Pflegegrad-Module)",
+        "SGB XI § 36 (Pflegesachleistung)",
+        "SGB XI § 37 (Pflegegeld)",
+        "SGB XI § 45a (Entlastungsbetrag)",
+      ],
+      track: "vertiefung",
+      modus: "entdecker",
+      tag: "pflege",
+      displayFormat: "scenario",
+      contentC1: {
+        title: "Pflegegrad 3 — was deckt das SGB XI ab?",
+        body: "Frau Kovač hat Pflegegrad 3 (PG 3) — \"schwere Beeinträchtigung der Selbstständigkeit\" nach § 14, § 15 SGB XI. Was bedeutet das konkret für die ambulante Versorgung?\n\n**Leistungsrahmen PG 3 (Stand 2024):**\n- **§ 36 Pflegesachleistung:** 1.497 €/Monat — finanziert die Hausbesuche durch den ambulanten Pflegedienst (etwa 2× tägl. Besuch à 30–45 Min, kein Nachtdienst enthalten).\n- **§ 37 Pflegegeld** (alternativ): 573 €/Monat — wenn Angehörige die Pflege übernehmen.\n- **Kombinationsleistung:** Mischung aus § 36 + § 37 anteilig möglich.\n- **§ 45a Entlastungsbetrag:** 125 €/Monat zusätzlich — z.B. für Haushaltshilfe, Betreuungsangebote.\n- **Verhinderungspflege § 39:** 1.612 €/Jahr für Vertretung wenn Pflegeperson ausfällt.\n- **Tages-/Nachtpflege § 41:** zusätzlicher Anspruch — kann bei Frau Kovačs nächtlichem Risikoprofil (Insomnie + Schwindel + COPD) sinnvoll sein.\n\n**Spannungsfeld bei Frau Kovač:**\nIhr Risikoprofil — alleinlebend, COPD III mit FEV1 30-49 %, NYHA II, Sturzneigung durch Kontraktur + Schwindel, nächtliches Erwachen mit Husten — sprengt eigentlich den Standard-PG-3-Rahmen. Der Pflegedienst kommt 2× tägl., **nachts ist sie allein**. Das ist kein Versagen des Pflegedienstes — das ist die Grenze des § 36-Budgets. Aufgabe der Pflegefachkraft: dieses Spannungsfeld erkennen, dokumentieren und ggf. Höherstufung (§ 18 MD-Begutachtung) anregen oder Tagespflege/Verhinderungspflege thematisieren.\n\nQuelle: (SGB XI §§ 14, 15, 36, 37, 41, 45a — aktuelle Beträge 2024)",
+        fallbezug:
+          "Frau Kovačs Pflegegrad 3 deckt morgens und abends Sachleistung ab. Wenn sie nachts stürzt — niemand ist da. Sohn Darko in Split kann nicht in 5 Min vorbeikommen. Notruf-System (Hausnotruf-Knopf) wäre hier ein konkreter, finanzierbarer Schritt (zuzahlungsfrei über § 40 Pflegehilfsmittel).",
+        glossarBegriffe: [
+          "SGB XI",
+          "Pflegegrad",
+          "Pflegesachleistung",
+          "Pflegegeld",
+          "Entlastungsbetrag",
+          "Verhinderungspflege",
+        ],
+      },
+      contentB1: {
+        title: "Was bedeutet Pflegegrad 3?",
+        body: "Frau Kovač hat **Pflegegrad 3**. Das ist eine Stufe nach dem Gesetz (SGB XI). Sie braucht viel Hilfe.\n\n**Was bezahlt die Pflegekasse (2024)?**\n- **1.497 € pro Monat** für den Pflegedienst (= § 36 Pflegesachleistung). Das reicht für 2× Besuch pro Tag.\n- **125 € extra** pro Monat für Entlastung (z.B. Haushaltshilfe, § 45a).\n- **Tagespflege oder Nachtpflege** sind extra möglich (§ 41).\n- **Hausnotruf** zahlt die Kasse meistens komplett (§ 40).\n- **Verhinderungspflege** (§ 39): bis 1.612 € im Jahr für eine Vertretung.\n\n**Problem bei Frau Kovač:**\n2× Besuch pro Tag — **nachts ist sie allein**. Aber sie hat COPD, Schwindel und kann stürzen. Sohn Darko ist in Kroatien. Das ist eine Lücke. Du als Pflegekraft musst das **erkennen und aufschreiben**. Vielleicht braucht sie:\n- Hausnotruf-Knopf\n- Tagespflege ein paar Stunden\n- Höheren Pflegegrad (Antrag beim MD).\n\nDas ist deine Aufgabe: nicht nur waschen und Übungen — sondern auch sehen was fehlt im System.",
+        glossarBegriffe: [
+          "Pflegegrad",
+          "SGB XI",
+          "Pflegesachleistung",
+          "Hausnotruf",
+        ],
+      },
+      wusstestDuDas:
+        "Pflegegrad 3 = 1.497 € Pflegesachleistung pro Monat (Stand 2024). Das deckt 2× tägl. Hausbesuch — nicht den Nachtdienst. Bei Risikoprofilen wie Frau Kovač ist Hausnotruf (§ 40 SGB XI, zuzahlungsfrei) der erste konkrete Hebel.",
+    },
+
+    // Opt-1.C — Touren-Planung in der ambulanten Pflege (NEU)
+    {
+      stepId: "ce02-kovac-info-opt-c-tourenplanung",
+      phase: 1,
+      stepType: "text",
+      bloomLevel: 3,
+      kompetenzbereich: "I.1",
+      quellen: ["MDS/Medizinischer Dienst 2018", "SGB XI § 36"],
+      track: "vertiefung",
+      modus: "entdecker",
+      tag: "pflege",
+      displayFormat: "scenario",
+      contentC1: {
+        title: "Frau Kovač ist nicht dein einziger Patient",
+        body: "Du hast 45 Minuten bei Frau Kovač. **Davor und danach sind andere Patienten.** Die ambulante Pflege funktioniert in **Touren**: eine Pflegekraft fährt morgens 5–10 Patienten in fester Reihenfolge ab.\n\n**Eine typische Morgenrunde:**\n- 06:30 — Herr Schmidt (Insulin + Frühstück, 25 Min)\n- 07:00 — Fahrt 15 Min\n- 07:15 — Frau Tanaka (Wundversorgung, 30 Min)\n- 07:45 — Fahrt 15 Min\n- **07:30 — Frau Kovač** (Vollpflege + Atemübungen, 45 Min)\n- 08:15 — Fahrt 10 Min\n- 08:25 — Herr Yilmaz (Medikamente + Anziehen, 20 Min)\n- ... bis ca. 12:00 Uhr.\n\n**Was das für dich bei Frau Kovač bedeutet:**\n1. **Du kannst nicht überziehen** — der nächste Patient wartet bereits, oft schon im Aufzug auf dich.\n2. **Wenn Frau Kovač eine Krise hat (Atemnot, Sturz)** — du musst entscheiden: bleiben oder weiter? Bei vitaler Gefährdung bleibst du und rufst Notarzt — der nächste Patient wird vom Pflegedienst informiert.\n3. **Übergaben in der Tour** — du dokumentierst auf dem Tablet zwischen den Besuchen, oft im Auto.\n4. **Belastung** — 5–10 Patienten in 5 Stunden = wenig Zeit für jeden. Diese Tour-Logik prägt jede Pflege-Entscheidung.\n5. **Wechselnde Bezugspersonen** — Frau Kovač sieht morgens dich, abends Petra, an anderen Tagen wieder andere. Kontinuität entsteht nur durch **Dokumentation** — nicht durch Personen.\n\n**Pflege-Realität:** Wenn der Pflegedienst Personalnot hat, wird die Tour länger, die Zeit pro Patient kürzer. Das ist nicht deine Schuld — aber du musst es kennen, um damit professionell umzugehen.",
+        fallbezug:
+          "Wenn Frau Kovač heute Morgen 5 Minuten länger braucht für die Atemübungen (Komplikation Lippenzyanose), dann verschiebt sich deine ganze restliche Tour. Herr Yilmaz wartet 5 Min länger auf seine Medikamente. Das ist kein Drama — aber es zeigt, warum jede Minute zählt.",
+        glossarBegriffe: [
+          "Tour",
+          "Tourenplanung",
+          "Bezugspflege",
+          "Übergabe",
+        ],
+      },
+      contentB1: {
+        title: "Frau Kovač ist nicht deine einzige Patientin",
+        body: "Du hast 45 Minuten bei Frau Kovač. **Davor und danach sind andere Patienten.** In der ambulanten Pflege fährst du eine **Tour** — 5 bis 10 Patienten an einem Vormittag.\n\n**Beispiel deiner Morgenrunde:**\n- 06:30 — Herr Schmidt: Insulin + Frühstück\n- 07:15 — Frau Tanaka: Wundversorgung\n- **07:30 — Frau Kovač: Vollpflege + Atem-Übungen**\n- 08:25 — Herr Yilmaz: Medikamente\n- ... bis ca. 12:00 Uhr.\n\n**Was bedeutet das?**\n1. Du kannst **nicht länger bleiben**. Der nächste Patient wartet schon.\n2. Wenn Frau Kovač eine Krise hat (Atemnot, Sturz), entscheidest du: bleibe ich oder fahre ich weiter? Bei Gefahr bleibst du. Der Pflegedienst sagt dem nächsten Patienten Bescheid.\n3. Du dokumentierst zwischen den Besuchen, oft im Auto.\n4. Frau Kovač sieht morgens dich, abends Petra, andere Tage andere. **Was wichtig ist, schreibst du auf** — sonst weiß die Kollegin morgen nichts.\n\nDas ist die ambulante Realität: wenig Zeit, viele Patienten, **Doku ist deine Stimme** wenn du nicht da bist.",
+        glossarBegriffe: ["Tour", "Übergabe"],
       },
     },
   ],

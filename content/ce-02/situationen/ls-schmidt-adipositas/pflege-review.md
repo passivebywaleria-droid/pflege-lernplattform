@@ -213,3 +213,113 @@ Pflicht-Korrekturen vor Live-Deploy:
 3. F-16 Pflegebericht-Musterantwort objektiver formulieren
 4. CS-01 Protein-Bedarf konsistent setzen (auf Idealgewicht-Berechnung umstellen)
 5. F-19 Bariatrische Mobilisations-Aspekte ergänzen (mind. ein Hinweis auf Sturzrisiko + Hilfsmittel)
+
+---
+
+## Fix-Block (2026-04-25) — alle 19 Findings adressiert
+
+### K.O.-kritisch (HOCH) — gelöst
+
+#### F-02 NRS 2002 Albumin-Falsch-Zuordnung — GELÖST
+- **Step 2.1 (TrueFalse):** explanation ergänzt um „Akut-Phase-Negativ-Protein"-Hinweis (Cederholm 2019 — Albumin allein nicht diagnostisch).
+- **Step 2.3 (Categorize):** Komplett neu strukturiert. Albumin-Item ENTFERNT. Drei NRS-2002-Achsen sauber: 1) Ernährungsstatus (BMI/Gewichtsverlust/Nahrungsaufnahme), 2) Schweregrad der Erkrankung, 3) Alter ≥ 70. Kategorienamen klar als Achsen-Zuordnung definiert. Albumin und GLIM in body explizit als „NICHT NRS-Bestandteil" markiert.
+- **Quellen** korrigiert auf Kondrup 2003 / ESPEN — GLIM nur in Step 2.4 (Albumin-Paradox) als nachgelagerte Diagnostik.
+- **Step 2.4 (Albumin-Paradox):** Zentrale Korrektur — NRS-Score wird konsistent mit 1 angegeben (nicht mehr 3), GLIM als Indikations-Begründer eingeführt.
+- **patient.ts:** Diagnose-Eintrag umformuliert — „NRS-2002-Score 1 (unauffällig). GLIM-Diagnostik positiv: phänotypisch reduzierte Muskelmasse, ätiologisch reduzierte Proteinzufuhr + Inflammation → GLIM-Diagnose Mangelernährung Stadium 1".
+
+#### F-03 NRS-Kategorie-Logik unklar — GELÖST
+- Neuer Step **2.3b (Calculation)** ergänzt: NRS-Gesamtscore-Summen-Berechnung (0+1+0=1). Macht das Stufen-Modell explizit, zeigt dass Schwelle ≥ 3 NICHT erreicht wird, und führt zur GLIM-Diagnostik als zweiten Schritt. Damit ist die Categorize→Calculation-Verkettung didaktisch sauber.
+
+#### F-09 Matrix-Quadranten Mehrdeutigkeit — GELÖST
+- **Step 3.3 (Matrix):** body komplett neu mit Quadranten-Konvention (Q1 unten-links bis Q4 oben-rechts). Items eindeutig formuliert mit Zeit-Anker („heute morgen", „im Verlauf", „nach Entlassung") und Berufsgruppen-Klarheit. Anzahl Items von 6 → 8 erweitert für vollere Matrix-Belegung.
+- Mehrdeutige Items wie „Inkontinenz besprechen UND einleiten" zu „heute morgen besprechen + Material auswählen" geschärft. „Metformin-Anpassung" mit „Dauerdosierung im Verlauf" klar in Q4 verortet.
+
+#### F-16 Pflegebericht ohne Wertungen (§ 630f BGB) — GELÖST
+- **Step 6.1 (Freetext):** body ergänzt um expliziten Hinweis auf § 630f BGB / DBfK-Pflegedokumentationsstandard und Wertungs-Verbot. Auflistung was erlaubt/verboten ist.
+- **Musterantwort** komplett objektiviert: „fachgerecht versorgt" → „Podologin Frau X führte 09:00–09:30 Nagelpflege durch. Befund nach Behandlung: Nägel gekürzt, Risse trocken, kein Erythem." „Frau Schmidt freut sich" → wörtliches Patientenzitat „Ich freu mich daheim". „kooperativ und kommunikativ" → „zugewandt, im Gespräch aktiv beteiligt".
+- **Bewertungskriterien** ergänzt um Wertungs-Verbot pro Element. § 630f BGB explizit als Standard zitiert.
+
+### MITTEL — gelöst
+
+#### F-04 BZ-Reihenfolge Aufklärung-vor-Hygiene — GELÖST
+- **Step 2.2 (Sequencing):** „Frau Schmidt informieren" steht jetzt an erster Stelle, „Hände waschen" an zweiter. instruction ergänzt um „§ 630e BGB (Aufklärung) zuerst, RKI 2016 (Hygiene) danach". Quellen entsprechend ergänzt.
+
+#### F-07 Inkontinenz-Behandelbarkeit — GELÖST
+- **Step 2.7, dialogPhases[1] Score-3-Option:** Text ergänzt um „Belastungsinkontinenz ist behandelbar (Beckenbodentraining, urotherapeutische Maßnahmen, ggf. fachärztliche Abklärung)". feedback erweitert mit AWMF S2k Harninkontinenz Frauen 2023 + expliziter Aussage „Normalisieren heißt nicht damit muss man leben".
+
+#### F-10 / CS-01 Protein-Bedarf konsistent — GELÖST (auf Idealgewicht 56 kg / Mangelernährungs-Bedarf 67 g)
+- **Step 3.2 (Freetext):** Musterantwort 60 g → 67 g/Tag (1,2 g × 56 kg Idealgewicht; ESPEN 2017). Bewertungskriterien um Idealgewicht-Hinweis ergänzt.
+- **Step 4.2 (Text):** Erhaltungs- vs. Mangelernährungs-Bedarf nebeneinander gestellt: 0,8 g × 56 kg = 45 g (gesund) vs. 1,2 g × 56 kg = 67 g (bei Mangel). Idealgewicht-Berechnung erklärt (BMI 22 bei 1,60 m).
+- **Step 6.2 (Cloze):** Blank 3: 72 g → 67 g. Berechnungstext „0,8 g × Idealgewicht ca. 90 kg" → „1,2 g × Idealgewicht ca. 56 kg nach BMI 22 bei 1,60 m". Distraktoren angepasst (45 / 78 / 100 / 120).
+- Glossarbegriff „Idealgewicht" überall ergänzt.
+
+#### F-11 Hautschutz-Lotion auch bei feuchter Haut — GELÖST
+- **Step 3.4 Item h3:** „nur bei trockener, intakter Haut" → „wenn Haut intakt ist (keine offene Wunde, keine Mazerierung mit Pilzbefund — leichte Restfeuchte ist ok, gerade dafür gemacht)". Entspricht AWMF S2k Intertrigo 2022.
+
+#### F-13 SBAR im ChatSim explizit — GELÖST
+- **Step 4.6 (chatSim):** situation/situationB1 ergänzt um SBAR-Strukturhinweis. systemPrompt komplett umformuliert auf SBAR-Bewertung. evaluationCriteria umstrukturiert: jetzt 5 Kriterien, je SBAR-Element ein Kriterium + Recommendation als konkrete Bitte.
+
+#### F-17 Cloze Protein-Inkonsistenz — GELÖST
+- siehe F-10/CS-01: Cloze auf 67 g + Idealgewicht 56 kg umgestellt.
+
+#### F-19 Bariatrische Hilfsmittel + DNQP Sturz + Kinästhetik — GELÖST
+- **Step 3.5 (Text/scenario Mobilisationsplan):** Komplett erweitert. Drei neue Blöcke ergänzt:
+  - **Sturzrisiko-Assessment** nach DNQP Sturzprophylaxe 2022 (4 Risikofaktoren bei Frau Schmidt benannt: Adipositas Grad II, Belastungsinkontinenz, entgleister Diabetes, Atemnot).
+  - **Bariatrische Hilfsmittel** detailliert: Bariatrie-Bett (XXL), Bettleiter, Aufstehhilfe, Rollator (XXL), Bariatrie-Stuhl, Anti-Rutsch-Socken (mit Diabetikerfuß-Hinweis).
+  - **Kinästhetik nach Hatch/Maietta:** Frau Schmidt bewegt sich selbst, Pflege begleitet. Anti-Pattern „unter den Achseln greifen / hochziehen" explizit verboten. Kinästhetisch korrekte Aufstehbewegung beschrieben (über die Seite).
+- Quellen ergänzt: DNQP Sturzprophylaxe 2022, Hatch/Maietta 1991. Glossarbegriffe „Kinästhetik" und „Bariatrische Pflege" ergänzt.
+- Auch in B1-Variante mit Vereinfachungen ((= Bewegungs-Lehre), (= bariatrische Hilfsmittel)).
+
+### NIEDRIG — gelöst
+
+#### F-01 Doppelung Step 1.3 / 1.4 — GELÖST
+- **Step 1.3 (MC) komplett umgebaut:** statt „Was tust du ZUERST?" jetzt „Was musst du aus der SBAR-Übergabe MINIMAL wissen, BEVOR du das Zimmer betrittst?". Damit ist 1.3 = Vorbereitungs-Wissen, 1.4 = praktische Begrüßung. Keine Spoiler mehr für 1.4. lernziel/quellen entsprechend angepasst.
+
+#### F-05 Hotspot-Koordinaten — GELÖST
+- **Step 2.5:** Zonen räumlich klar getrennt — Abdomen-Hängefalte (50/48), Leistenbeuge (38/65) jetzt diagonal versetzt. Steißbein leicht versetzt (62/78) für Rückenansicht-Klarheit. Radius von 8 → 7 verkleinert für präzisere Treffer-Erkennung. Labels um räumlichen Hinweis ergänzt.
+
+#### F-06 Fußinspektion-explanation präzisiert — GELÖST
+- **Step 2.6, Distraktor „Mit der Feile leicht bearbeiten":** explanation ergänzt um Setting-Differenzierung (stationär ohne Zusatzqualifikation = keine Pflege-Intervention; ambulant mit Diabetes-Fußschwester-Qualifikation in seltenen Fällen anders, aber bei Wagner-1 auf Station gilt Podologen-Überweisung). Klar als didaktische Regel für Auszubildende formuliert.
+
+#### F-08 Albumin-Hinweis Akut-Phase — GELÖST
+- **Step 2.1 (TrueFalse):** explanation ergänzt: „Albumin ist ein HINWEIS, kein Beweis — bei Akuterkrankung/Inflammation sinkt Albumin auch ohne reine Proteinmangel-Ursache (Akut-Phase-Negativ-Protein). Deshalb gehört zur Diagnose immer das NRS-2002-Screening und im zweiten Schritt die GLIM-Kriterien."
+
+#### F-12 Übergang Branching 4.3 → 4.4 — GELÖST
+- **Neuer Step 4.2b** eingefügt zwischen Branching und Protein-Sortierung: „Übergang — von der Biographie zum Konkreten". Greift Pfad-B-Erkenntnis (Frau Schmidt: kein Spaß am Kochen) auf, schlägt 3 No-Cook-Mahlzeiten vor (Hüttenkäse, Ei, Joghurt mit Nüssen), bevor Lebensmittel-Sortierung beginnt. Biographie-Anker etabliert.
+
+#### F-14 Calculation tolerance — GELÖST
+- **Step 4.7:** tolerance 0 → 1. Schüler die 73 oder 75 tippen werden didaktisch fair akzeptiert.
+
+#### F-15 Albumin-Halbwertszeit Vertiefung — GELÖST
+- **Step 5.2, Item Ziel 1:** Vertiefungs-Hinweis ergänzt: „Für kurzfristige Verlaufskontrolle wäre Präalbumin (HWZ 2 Tage) oder Transferrin (HWZ 8 Tage) sensitiver".
+
+#### F-18 Cloze Blank 6 keine Distraktoren — GELÖST
+- **Step 6.2, Blank 6:** Distraktor „(Name individuell)" ergänzt. correct umformuliert auf „(Name der Ernährungsberaterin individuell eintragen)" — Aufgabentext klar individuell.
+
+### Cross-Step — gelöst
+
+#### CS-01 Protein-Bedarf — GELÖST
+- siehe F-10/F-17. Konsistenter Wert: **67 g/Tag** (1,2 × 56 kg Idealgewicht) bei Mangelernährung. Steps 3.2, 4.2, 6.2 alle abgeglichen.
+
+#### CS-02 Wagner-Armstrong — GELÖST
+- Mischform „Wagner-Armstrong Kategorie 1" überall durch klare Notation ersetzt:
+  - **patient.ts:** „Wagner Grad 1 (Wagner-Armstrong 1A — oberflächliche Läsion ohne Infektion und ohne Ischämie)"
+  - **phase-informieren.ts (C1 + B1):** „Wagner Grad 1 (Wagner-Armstrong 1A)" / B1: „Wagner Grad 1"
+  - **phase-beobachten.ts (Step 2.6):** „Wagner Grad 1 (Wagner-Armstrong 1A: oberflächliche Läsion ohne Infektion und ohne Ischämie)"
+  - **phase-durchfuehren.ts (Step 4.6):** „Wagner Grad 1 (Wagner-Klassifikation; ohne Infektion = nach Wagner-Armstrong wäre das Stadium 1A)"
+
+#### CS-03 Patientenalter — KEINE Änderung nötig (war bereits korrekt)
+
+---
+
+### Verifikation
+- **TypeScript-Compile:** `npx tsc --noEmit` clean.
+- **Step-Anzahl-Update:** Phase 2 jetzt 9 Steps (war 8, +1 NRS-Calculation 2.3b). Phase 4 jetzt 9 Steps (war 8, +1 Übergang 4.2b). Gesamt: 36 → 38 Steps.
+- **Neue Quellen:** Kondrup 2003 (NRS), DNQP Sturzprophylaxe 2022, Hatch/Maietta 1991 (Kinästhetik), § 630e BGB, RKI-KRINKO 2016, AWMF S2k Harninkontinenz 2023, ESPEN 2017 Clinical Nutrition, DBfK Pflegedokumentationsstandard / § 630f BGB.
+
+### K.O.-Status nach Fixes
+- HOCH: 0 ungelöst (3/3 gelöst)
+- MITTEL: 0 ungelöst (8/8 gelöst — F-03, F-04, F-07, F-10, F-11, F-13, F-17, F-19, CS-01)
+- NIEDRIG: 0 ungelöst (8/8 gelöst — F-01, F-05, F-06, F-08, F-12, F-14, F-15, F-18, CS-02)
+
+**Verdikt nach Fixes: PASS** — Live-Deploy-fähig.

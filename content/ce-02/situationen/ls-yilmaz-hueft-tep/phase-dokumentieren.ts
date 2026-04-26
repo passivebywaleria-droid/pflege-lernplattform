@@ -48,11 +48,12 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DOKUMENTIEREN: SituationsPhase = {
         fragetext:
           "Schreibe den vollständigen Pflegebericht für Frau Yilmaz (Frühdienst, 3. post-OP-Tag nach Hüft-TEP).",
         musterantwort:
-          "23.04.2026, Frühdienst. Frau Yilmaz, 79 J., 3. post-OP-Tag Hüft-TEP rechts. Schmerz-Assessment: NRS 6 in Ruhe (Steißbein + operiertes Bein). Metamizol 500 mg um 08:15 gegeben. Hautinspektion: Steißbein — Rötung ca. 4 cm, nicht wegdrückbar = Dekubitus Kategorie I. Trochanter links: leichte Rötung. Maßnahme: 30°-Mikrolagerung links gestartet, 2-stündlicher Umlagerungsrhythmus angeordnet. Mobilisation: Aufstehversuch 1 um 09:00 — nach 2 Min. orthostatische Hypotonie (RR sitzend 98/62 mmHg). Frau Yilmaz sicher hingelegt. 2. Versuch um 09:30 erfolgreich: Stand 3 Min., 3 Schritte mit Unterarmgehstützen, NRS 4. Frau Yilmaz äußerte: 'Es geht doch.' Ehemann Mustafa anwesend, wurde durch Frau Yilmaz über geplante Mobilisation informiert. Thrombose-Beobachtung: Wadenschmerz links auf Druck — Arzt informiert, Doppler beauftragt, Ergebnis ausstehend. Nächster Dienst: Analgesie vor Mobilisation prüfen (30 Min vorher), Steißbein erneut inspizieren, Doppler-Ergebnis abfragen.",
+          "23.04.2026, Frühdienst. Frau Yilmaz, 79 J., 3. post-OP-Tag Hüft-TEP rechts. Schmerz-Assessment: NRS 6 in Ruhe (Steißbein + operiertes Bein). Metamizol 500 mg um 08:15 gegeben. Hautinspektion: Steißbein — Rötung ca. 4 cm, nicht wegdrückbar = Dekubitus Kategorie I. Trochanter links: leichte Rötung. Maßnahme: 30°-Mikrolagerung links gestartet, 2-stündlicher Umlagerungsrhythmus angeordnet. Mobilisation: Aufstehversuch 1 um 09:00 — Schellong-Test: RR liegend 128/78 mmHg, RR sitzend nach 2 Min 98/62 mmHg, Differenz syst. 30 mmHg, diast. 16 mmHg = orthostatische Hypotonie. Frau Yilmaz sicher hingelegt. 2. Versuch um 09:30 erfolgreich: RR sitzend 118/74 mmHg, Stand 3 Min., 3 Schritte mit Unterarmgehstützen (Teilbelastung rechts max. 20 kg), NRS 4. Frau Yilmaz äußerte: 'Es geht doch.' Ehemann Mustafa anwesend, wurde durch Frau Yilmaz über geplante Mobilisation informiert. Thrombose-Beobachtung: Wadenschmerz links beim Erfragen (keine Druckprovokation), Inspektion ohne Schwellung/Verfärbung — Arzt informiert, Doppler beauftragt, Ergebnis ausstehend. Nächster Dienst: Analgesie vor Mobilisation prüfen (30 Min vorher), RR liegend vor Aufstehen messen (Schellong), Steißbein erneut inspizieren, Doppler-Ergebnis abfragen.",
         bewertungskriterien: [
           "Schmerz mit NRS-Wert dokumentiert?",
           "Hautbefund mit Dekubitus-Kategorisierung?",
           "Mobilisationsverlauf inklusive Orthostase-Episode?",
+          "RR-Werte liegend UND sitzend dokumentiert (Schellong nachvollziehbar)?",
           "Lagerungsintervall dokumentiert?",
           "Wadenschmerz und eingeleitete Maßnahme erwähnt?",
           "Angehöriger Mustafa erwähnt?",
@@ -97,11 +98,11 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DOKUMENTIEREN: SituationsPhase = {
           },
           {
             left: "Täglich mindestens einen Aufstehversuch, NRS ≤ 5",
-            right: "Analgesie 30 Min vor Mobilisation prüfen, 2-Personen-Unterstützung erste Tage, Erfolge dokumentieren",
+            right: "Analgesie 30 Min vor Mobilisation prüfen, 2-Personen-Unterstützung erste Tage, Teilbelastung rechts max. 20 kg (Mobilisationsstufe 3) beachten, operiertes Bein zuerst über Bettkante, Erfolge dokumentieren",
           },
           {
             left: "Orthostatische Hypotonie erkennen und verhindern",
-            right: "RR liegend vor Aufstehen messen, 3 Min Sitzpause obligatorisch, Arzt bei RR-Abfall > 20 mmHg informieren",
+            right: "Schellong-Test: RR liegend → ≥ 1 Min sitzen → RR sitzend; Aufstehen erst wenn Differenz < 20 mmHg syst. und < 10 mmHg diast.; Arzt bei wiederholter Orthostase informieren",
           },
           {
             left: "Mustafa ist in die Pflege einbezogen und versteht was gemacht wird",
@@ -133,14 +134,14 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DOKUMENTIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Das hast du heute gelernt",
-        body: "Du hast heute einen vollständigen Pflegeprozess durchlaufen — nicht als Schema, sondern als lebendigen Prozess mit einem echten Menschen.\n\n**Pflegeprozess:**\n- Informationssammlung nach SBAR-Schema strukturieren\n- Pflegeziele nach PESR formulieren — präzise, messbar, nachvollziehbar\n- Evaluation = Rückblick + Vorausplanung\n\n**Mobilisation nach Hüft-TEP:**\n- Reihenfolge: Analgesie → Warten → Vorbereiten → Sitzen → Aufstehen\n- Orthostatische Hypotonie erkennen: RR liegend vs. sitzend, ≥ 20 mmHg = klinisch relevant\n- Lagerungsvorschrift: Hüftbeugung < 90°, kein Beinkreuzen\n\n**Dekubitus-Prophylaxe:**\n- Kategorie I = nicht wegdrückbare Rötung — Sofortmaßnahme: Druckentlastung\n- 30°-Mikrolagerung alle 2 Stunden (NPUAP/EPUAP 2019; DNQP 2024)\n- Braden-Skala für Risiko-Erfassung\n\n**Thrombose-Prophylaxe:**\n- Virchow-Trias: Gefäßwandschaden + Stase + Hyperkoagulabilität\n- Antikoagulation allein reicht nicht — Mobilisation ist essentiell\n- Klinische Zeichen: Wadenschmerz auf Druck → sofort melden\n\n**Kommunikation / Interkulturell:**\n- Frau Yilmaz' Angst nicht übergehen — validieren, erklären, Schritt für Schritt\n- Angehörige (hier: Mustafa) als Ressource einbeziehen\n- Nonverbale Kommunikation überwindet Sprachbarrieren\n\n**Dokumentation:**\n- Was nicht dokumentiert ist, gilt als nicht durchgeführt (§ 630f BGB)\n- Pflegebericht = sachlich, konkret, nachvollziehbar",
+        body: "Du hast heute einen vollständigen Pflegeprozess durchlaufen — nicht als Schema, sondern als lebendigen Prozess mit einem echten Menschen.\n\n**Pflegeprozess:**\n- Informationssammlung nach SBAR-Schema strukturieren\n- Pflegeziele nach PESR formulieren — präzise, messbar, nachvollziehbar\n- Evaluation = Rückblick + Vorausplanung\n\n**Mobilisation nach Hüft-TEP:**\n- Reihenfolge: Analgesie → Warten → RR liegend → Vorbereiten → operiertes Bein zuerst über Bettkante → Schellong (≥ 1 Min sitzen, RR sitzend) → Aufstehen mit Pflege auf OP-Seite\n- Orthostatische Hypotonie erkennen: RR liegend vs. sitzend, ≥ 20 mmHg syst. oder ≥ 10 mmHg diast. = klinisch relevant\n- Lagerungsvorschrift: Hüftbeugung < 90°, kein Beinkreuzen, keine Adduktion/Innenrotation\n- Teilbelastung rechts max. 20 kg (Mobilisationsstufe 3)\n\n**Dekubitus-Prophylaxe:**\n- Kategorie I = nicht wegdrückbare Rötung — Sofortmaßnahme: Druckentlastung\n- 30°-Mikrolagerung alle 2 Stunden (NPUAP/EPUAP 2019; DNQP 2024)\n- Braden-Skala für Risiko-Erfassung\n\n**Thrombose-Prophylaxe:**\n- Virchow-Trias: Gefäßwandschaden + Stase + Hyperkoagulabilität (Diabetes wirkt v.a. über Hyperkoagulabilität)\n- Antikoagulation allein reicht nicht — Mobilisation ist essentiell\n- Klinische Zeichen: Inspektion im Seitenvergleich (Schwellung, Umfang, Hauttemperatur, Verfärbung), Schmerz erfragen — KEINE aktive Druckprovokation (Embolie-Risiko); Verdacht → Doppler\n\n**Kommunikation / Interkulturell:**\n- Frau Yilmaz' Angst nicht übergehen — validieren, erklären, Schritt für Schritt\n- Angehörige (hier: Mustafa) als Ressource einbeziehen\n- Nonverbale Kommunikation überwindet Sprachbarrieren\n\n**Dokumentation:**\n- Was nicht dokumentiert ist, gilt als nicht durchgeführt (§ 630f BGB)\n- Pflegebericht = sachlich, konkret, nachvollziehbar",
         fallbezug:
           "Frau Yilmaz schläft. Mustafa ist nach Hause gegangen — er hat beim Rausgehen genickt. Du hast heute einen vollständigen Pflegeprozess durchlaufen. Das ist Pflege.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Das hast du heute gelernt",
-        body: "Heute hast du viel gemacht:\n\n**Aufstehen (Mobilisation):**\n- Erst das Schmerzmittel — dann aufstehen (30 Min warten)\n- Schwindel beim Aufstehen = orthostatische Hypotonie — hinlegen, warten\n- 30°-Lagerung für das Steißbein + Hüftgelenk schützen\n\n**Druckwunde (Dekubitus):**\n- Kategorie 1 = rote Stelle, geht nicht weg → sofort Druck wegnehmen\n- Alle 2 Stunden umlagern (DNQP Standard)\n\n**Thrombose:**\n- Virchow-Trias: drei Risikofaktoren → hohes Risiko\n- Schmerz in der Wade → sofort melden, nicht abwarten\n\n**Kommunikation:**\n- Frau Yilmaz sagt nicht 'Nein' direkt — du hörst heraus, was sie braucht\n- Mustafa mit Gesten einbeziehen — kein Deutsch nötig\n\n**Aufschreiben (Dokumentation):**\n- Was nicht steht, gilt als nicht gemacht (§ 630f BGB)\n- Sachlich schreiben — Zahlen und Fakten, keine Meinungen",
+        body: "Heute hast du viel gemacht:\n\n**Aufstehen (Mobilisation):**\n- Erst das Schmerzmittel — dann aufstehen (30 Min warten)\n- Schellong-Test: Blutdruck liegend messen → mindestens 1 Minute sitzen → Blutdruck sitzend messen. Erst dann aufstehen.\n- Operiertes Bein zuerst über die Bettkante (in Streckung)\n- Schwindel beim Aufstehen = orthostatische Hypotonie — hinlegen, warten\n- 30°-Lagerung für das Steißbein + Hüftgelenk schützen\n\n**Druckwunde (Dekubitus):**\n- Kategorie 1 = rote Stelle, geht nicht weg → sofort Druck wegnehmen\n- Alle 2 Stunden umlagern (DNQP Standard)\n\n**Thrombose:**\n- Virchow-Trias: drei Risikofaktoren → hohes Risiko\n- Schmerz in der Wade → sofort melden, nicht abwarten\n\n**Kommunikation:**\n- Frau Yilmaz sagt nicht 'Nein' direkt — du hörst heraus, was sie braucht\n- Mustafa mit Gesten einbeziehen — kein Deutsch nötig\n\n**Aufschreiben (Dokumentation):**\n- Was nicht steht, gilt als nicht gemacht (§ 630f BGB)\n- Sachlich schreiben — Zahlen und Fakten, keine Meinungen",
         fallbezug:
           "Frau Yilmaz schläft. Mustafa ist weg. Du hast heute alles richtig gemacht. Das ist Pflege.",
         glossarBegriffe: [],
@@ -152,11 +153,15 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DOKUMENTIEREN: SituationsPhase = {
             "Frau Yilmaz ist aufgestanden. Zum ersten Mal seit der OP. Drei Schritte. Mustafa hat es gesehen. Die Situation war nicht einfach — orthostatische Hypotonie, ein ängstlicher Angehöriger, eine Patientin die 'Nein' sagen wollte. Du hast sie alle gemeistert.",
           kernaussagen: [
             "Analgesie VOR Mobilisation ist der entscheidende Schritt — ohne Schmerzkontrolle kein erfolgreicher Aufstehversuch",
+            "Schellong-Test ersetzt das pseudo-empirische '3 Min warten': RR liegend → ≥ 1 Min sitzen → RR sitzend → erst dann Aufstehen",
+            "Mobilisation nach Hüft-TEP: operiertes Bein ZUERST in Streckung über die Bettkante — niemals beide Beine gleichzeitig (Adduktions-/Innenrotations- und damit Luxationsrisiko)",
+            "Pflege sichert auf der OP-Seite seitlich am Becken/Rumpf — niemals unter den Achseln greifen",
             "Dekubitus Kategorie I: sofortige Druckentlastung, 30°-Mikrolagerung alle 2 Stunden",
-            "Orthostatische Hypotonie erkennen: RR-Abfall ≥ 20 mmHg sitzend = hinlegen, stabilisieren, zweiter Versuch",
-            "Interkulturelle Pflege: Mustafa als Ressource einbeziehen, Frau Yilmaz als Vermittlerin aktivieren",
+            "Orthostatische Hypotonie erkennen: RR-Abfall ≥ 20 mmHg syst. oder ≥ 10 mmHg diast. = hinlegen, stabilisieren, zweiter Versuch",
+            "Interkulturelle Pflege: Mustafa als Ressource einbeziehen — aber Sicherheit zuerst (Frau Yilmaz erst sicher hinsetzen, dann vermitteln lassen)",
+            "Thrombose-Diagnostik: nur Inspektion + Schmerz erfragen — KEINE aktive Druckprovokation (Embolie-Risiko)",
             "Was nicht dokumentiert ist, gilt als nicht durchgeführt — Pflegebericht ist Teamkommunikation",
-            "Virchow-Trias bei Frau Yilmaz: alle drei Säulen aktiv → Thrombose-Risiko sehr hoch trotz Antikoagulation",
+            "Virchow-Trias bei Frau Yilmaz: alle drei Säulen aktiv (Diabetes wirkt v.a. über Hyperkoagulabilität) → Thrombose-Risiko sehr hoch trotz Antikoagulation",
           ],
         },
       },
