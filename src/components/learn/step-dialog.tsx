@@ -244,23 +244,16 @@ export function StepDialog({
         return next;
       });
 
-      if (consequenceText) {
-        setShowConsequence(consequenceText);
-        // Konsequenz kurz anzeigen, dann Feedback
-        setTimeout(() => {
-          setShowConsequence(null);
-          setShowFeedback(optFeedback);
-          setWaitingForUser(true);
-        }, 2500);
-      } else {
-        setShowFeedback(optFeedback);
-        setWaitingForUser(true);
-      }
+      // Konsequenz + Feedback gleichzeitig anzeigen (kombinierte Box)
+      if (consequenceText) setShowConsequence(consequenceText);
+      setShowFeedback(optFeedback);
+      setWaitingForUser(true);
     }, 1200);
   };
 
   const nextPhase = () => {
     setShowFeedback(null);
+    setShowConsequence(null);
     setWaitingForUser(false);
     if (phase + 1 < phases.length) {
       const nextP = phase + 1;
@@ -445,33 +438,33 @@ export function StepDialog({
 
       {/* Konsequenz / Feedback / Choices — alle shrink-0 unter dem Chat */}
       <div className="shrink-0 space-y-2">
-      <AnimatePresence>
-        {showConsequence && (
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-            className="rounded-xl bg-[#D4956A]/10 border border-[#D4956A]/20 p-3"
-          >
-            <p className="text-[11px] font-semibold uppercase tracking-wider text-[#D4956A] mb-1">Konsequenz</p>
-            <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">{showConsequence}</p>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* Feedback */}
+      {/* Kombinierte Feedback-Box: Konsequenz (oben, falls vorhanden) + Feedback */}
       <AnimatePresence>
         {showFeedback && (
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            className="rounded-xl bg-[var(--lern-accent)]/10 border border-[var(--lern-accent)]/20 p-3"
+            className="rounded-xl bg-[var(--lern-accent)]/10 border border-[var(--lern-accent)]/20 p-3 space-y-2.5"
           >
-            <p className="text-[11px] font-semibold uppercase tracking-wider text-[var(--lern-accent)] mb-1">Feedback</p>
-            <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">
-              <FeedbackText sprachLevel={sprachLevel}>{showFeedback}</FeedbackText>
-            </p>
+            {showConsequence && (
+              <div className="pb-2 border-b border-[#D4956A]/30">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-[#D4956A] mb-1">
+                  Konsequenz
+                </p>
+                <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">
+                  {showConsequence}
+                </p>
+              </div>
+            )}
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-[var(--lern-accent)] mb-1">
+                Feedback
+              </p>
+              <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">
+                <FeedbackText sprachLevel={sprachLevel}>{showFeedback}</FeedbackText>
+              </p>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
