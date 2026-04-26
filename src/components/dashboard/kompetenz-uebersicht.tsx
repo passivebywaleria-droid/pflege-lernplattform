@@ -19,12 +19,12 @@ export function KompetenzUebersicht({ kompetenzRegisterStats }: KompetenzUebersi
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.22 }}
-      className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5"
+      className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5"
     >
       <h2 className="text-sm font-semibold text-[var(--lern-text-primary)] mb-3">
         Deine Kompetenzen
       </h2>
-      <div className="flex items-center gap-4 mb-3">
+      <div className="flex items-center gap-3 mb-3">
         <div className="text-center">
           <p className="text-2xl font-bold text-[#3E5A6A]">
             {kompetenzRegisterStats.counts.gemeistert}

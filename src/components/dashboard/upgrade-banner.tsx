@@ -74,7 +74,7 @@ export function UpgradeBanner({ locale = "de" }: UpgradeBannerProps) {
   const t = texts[locale as keyof typeof texts] ?? texts.de
 
   return (
-    <div className="rounded-2xl border-2 border-[var(--lern-accent)]/30 bg-[var(--lern-accent)]/5 p-5">
+    <div className="rounded-xl border-2 border-[var(--lern-accent)]/30 bg-[var(--lern-accent)]/5 p-5">
       <h3 className="text-base font-semibold text-[var(--lern-text-primary)] mb-1">
         {t.title}
       </h3>

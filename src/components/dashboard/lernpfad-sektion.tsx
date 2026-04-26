@@ -23,7 +23,7 @@ export function LernpfadSektion({ lernpfad, locale }: LernpfadSektionProps) {
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.35 }}
-      className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5"
+      className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5"
     >
       <h2 className="text-sm font-semibold text-[var(--lern-text-primary)] mb-4">
         Lernpfad

@@ -421,7 +421,7 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.04 }}
-            className="rounded-2xl bg-[#D4956A]/5 border border-[#D4956A]/20 p-5 text-center"
+            className="rounded-2xl bg-[#D4956A]/5 border border-[#D4956A]/20 p-3 text-center"
           >
             <p className="text-sm font-semibold text-[#D4956A]">
               Genieß das Wochenende!
@@ -521,7 +521,7 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.09 }}
-            className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5"
+            className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-3"
           >
             <h2 className="text-sm font-semibold text-[var(--lern-text-primary)] mb-4">
               Deine Badges
@@ -564,7 +564,7 @@ export default function DashboardPage() {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5"
+          className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-3"
         >
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-sm font-semibold text-[var(--lern-text-primary)]">
@@ -605,7 +605,7 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5"
+            className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-3"
           >
             <h2 className="text-sm font-semibold text-[var(--lern-text-primary)] mb-4">
               Kompetenz-Übersicht
@@ -644,7 +644,7 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.25 }}
-            className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5"
+            className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-3"
           >
             <h2 className="text-sm font-semibold text-[var(--lern-text-primary)] mb-4">
               Dein Profil
@@ -743,7 +743,7 @@ function EmpfehlungsKarte({ empfehlung, delay }: { empfehlung: SessionEmpfehlung
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay }}
-      className={`rounded-2xl p-5 transition-all active:scale-[0.98] ${style.bg} ${style.border}`}
+      className={`rounded-2xl p-3 transition-all active:scale-[0.98] ${style.bg} ${style.border}`}
     >
       <div className="flex items-start gap-3">
         <span className="text-lg shrink-0">{style.icon}</span>

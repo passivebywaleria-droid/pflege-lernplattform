@@ -21,7 +21,7 @@ export function TagesplanKarte({ tagesplan }: TagesplanKarteProps) {
     <motion.div
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
-      className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5"
+      className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-5"
     >
       <h2 className="text-sm font-semibold text-[var(--lern-text-primary)] mb-3">
         Dein Plan f{"\u00FC"}r heute
