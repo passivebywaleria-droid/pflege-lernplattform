@@ -6,6 +6,8 @@ import { FeedbackText } from "./feedback-text";
 import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 import { StepActionBar } from "./step-action-bar";
+import { PatientAvatar } from "./patient-avatar";
+import { RotateCcw } from "lucide-react";
 
 interface DialogOption {
   text: string;
@@ -37,7 +39,12 @@ interface StepDialogProps {
 }
 
 type ChatMessage = {
-  sender: "patient" | "pflege" | "system";
+  /**
+   * - patient: linke Bubble mit Avatar + Name
+   * - pflege: rechte Bubble (Du)
+   * - narration: graue italic Zeile mittig (Bühnenanweisung / Body-Language)
+   */
+  sender: "patient" | "pflege" | "narration";
   text: string;
   speakerName?: string;
 };
@@ -45,6 +52,45 @@ type ChatMessage = {
 // Helper: Wählt Text basierend auf Sprachlevel
 function t(c1: string, b1: string | undefined, level: "c1" | "b1"): string {
   return level === "b1" && b1 ? b1 : c1;
+}
+
+/**
+ * Trennt Body-Language von eigentlicher Sprache.
+ *
+ * Eingabe: 'Frau M. atmet hörbar aus. Ihre Schultern sinken leicht. "Danke. Das ist so ungewohnt..."'
+ *
+ * Ausgabe: { gestik: 'Frau M. atmet hörbar aus. Ihre Schultern sinken leicht.', speech: 'Danke. Das ist so ungewohnt...' }
+ *
+ * Funktioniert bei:
+ *   - "..."  (typografisch korrekt: „..." oder "..."  oder ""...")
+ *   - Wenn nur eines vorhanden ist, wird das andere undefined.
+ */
+function parseGestikUndSpeech(raw: string): {
+  gestik?: string;
+  speech?: string;
+} {
+  // Match alle drei Anführungszeichen-Varianten: "..." oder „..." oder „..."
+  const speechMatch = raw.match(
+    /["„"]([^"""„]+?)["""]/u
+  );
+  if (!speechMatch) {
+    // Kein Speech-Pattern gefunden — alles als Speech behandeln (bisheriges Verhalten)
+    return { speech: raw.trim() };
+  }
+  const speech = speechMatch[1].trim();
+  // Alles was nicht in den Anführungszeichen steht, ist Gestik
+  const gestikRaw = (raw.slice(0, speechMatch.index) +
+    raw.slice((speechMatch.index ?? 0) + speechMatch[0].length))
+    .replace(/\s+/g, " ")
+    .trim();
+  // Leading dashes/spaces und trailing colons/dashes/spaces entfernen
+  const gestik = gestikRaw
+    .replace(/^[—\-\s,]+|[—\-\s,:]+$/g, "")
+    .trim();
+  return {
+    gestik: gestik.length > 0 ? gestik : undefined,
+    speech,
+  };
 }
 
 export function StepDialog({
@@ -87,17 +133,40 @@ export function StepDialog({
     return () => clearTimeout(id);
   }, [messages, typing, showChoices, showFeedback, showConsequence, finished]);
 
-  // Erste Patient-Nachricht automatisch als Chat-Bubble anzeigen
+  // Erste Phase einleiten: context als narration, falls Patient-Speech enthalten ist
+  // wird der speech als Patient-Bubble extrahiert.
   const showContextMessage = useCallback(() => {
     const ctx = phases[phase];
     if (!ctx) return;
-    const speaker = ctx.speaker ?? patientName;
     const contextText = t(ctx.context, ctx.contextB1, sprachLevel);
+    const speakerIsPatient = (ctx.speaker ?? patientName) !== "Du";
+    const { gestik, speech } = parseGestikUndSpeech(contextText);
     setShowChoices(false);
     setTyping(true);
     setTimeout(() => {
       setTyping(false);
-      setMessages((m) => [...m, { sender: "patient", text: contextText, speakerName: speaker }]);
+      setMessages((m) => {
+        const next = [...m];
+        // Bühnenanweisung / Body-Language als Narration
+        if (gestik) {
+          next.push({ sender: "narration", text: gestik });
+        }
+        // Eingebettetes Patientenzitat als Patient-Bubble
+        if (speech && speakerIsPatient) {
+          next.push({
+            sender: "patient",
+            text: speech,
+            speakerName: ctx.speaker ?? patientName,
+          });
+        }
+        // Wenn nur Narration und keine Patient-Speech: ist Bühnenanweisung,
+        // nichts weiter tun. Optionen erscheinen darunter.
+        // Wenn weder gestik noch speech: Fallback — alten Text als Narration
+        if (!gestik && !speech) {
+          next.push({ sender: "narration", text: contextText });
+        }
+        return next;
+      });
       setTimeout(() => setShowChoices(true), 400);
     }, 800);
   }, [phase, phases, patientName, sprachLevel]);
@@ -111,7 +180,8 @@ export function StepDialog({
   }, [initialized, phases.length, showContextMessage]);
 
   const choose = (opt: DialogOption) => {
-    const speaker = current?.speaker ?? patientName;
+    // Patient-Reply: speaker = patientName (NICHT "Du" — auch wenn Phase-context
+    // mit "Du" beginnt, ist die patientResponse immer vom Patienten)
     const optText = t(opt.text, opt.textB1, sprachLevel);
     const optResponse = t(opt.patientResponse, opt.patientResponseB1, sprachLevel);
     const optFeedback = t(opt.feedback, opt.feedbackB1, sprachLevel);
@@ -134,10 +204,27 @@ export function StepDialog({
 
     setTimeout(() => {
       setTyping(false);
-      setMessages((m) => [
-        ...m,
-        { sender: "patient", text: optResponse, speakerName: speaker },
-      ]);
+      // Body-Language von Patient-Speech trennen
+      const { gestik, speech } = parseGestikUndSpeech(optResponse);
+      setMessages((m) => {
+        const next = [...m];
+        if (gestik) next.push({ sender: "narration", text: gestik });
+        if (speech) {
+          next.push({
+            sender: "patient",
+            text: speech,
+            speakerName: patientName,
+          });
+        } else if (!gestik) {
+          // Fallback: kein Speech-Marker — ganzen Text als Patient-Bubble
+          next.push({
+            sender: "patient",
+            text: optResponse,
+            speakerName: patientName,
+          });
+        }
+        return next;
+      });
 
       if (consequenceText) {
         setShowConsequence(consequenceText);
@@ -162,18 +249,55 @@ export function StepDialog({
       setPhase(nextP);
       const ctx = phases[nextP];
       if (ctx) {
-        const speaker = ctx.speaker ?? patientName;
         const contextText = t(ctx.context, ctx.contextB1, sprachLevel);
+        const speakerIsPatient = (ctx.speaker ?? patientName) !== "Du";
+        const { gestik, speech } = parseGestikUndSpeech(contextText);
         setTyping(true);
         setTimeout(() => {
           setTyping(false);
-          setMessages((m) => [...m, { sender: "patient", text: contextText, speakerName: speaker }]);
+          // Phase-Trenner als Narration
+          setMessages((m) => {
+            const next = [...m];
+            next.push({
+              sender: "narration",
+              text: `── Phase ${nextP + 1} ──`,
+            });
+            if (gestik) next.push({ sender: "narration", text: gestik });
+            if (speech && speakerIsPatient) {
+              next.push({
+                sender: "patient",
+                text: speech,
+                speakerName: ctx.speaker ?? patientName,
+              });
+            }
+            if (!gestik && !speech) {
+              next.push({ sender: "narration", text: contextText });
+            }
+            return next;
+          });
           setTimeout(() => setShowChoices(true), 400);
         }, 800);
       }
     } else {
       setFinished(true);
     }
+  };
+
+  /** Replay: Dialog vom Anfang neu starten */
+  const handleReplay = () => {
+    setPhase(0);
+    setMessages([]);
+    setTotalScore(0);
+    setMaxScore(0);
+    setTyping(false);
+    setShowFeedback(null);
+    setWaitingForUser(false);
+    setShowChoices(false);
+    setFinished(false);
+    setShowConsequence(null);
+    setFirstAttemptCorrect([]);
+    // showContextMessage durch initialized=false neu triggern
+    setInitialized(false);
   };
 
   const scorePercent =
@@ -225,40 +349,64 @@ export function StepDialog({
           backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
         }}
       >
-        {messages.map((m, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 8, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.2 }}
-            className={`flex ${
-              m.sender === "pflege" ? "justify-end" : "justify-start"
-            }`}
-          >
-            <div
-              className={`max-w-[85%] px-3.5 py-2.5 text-sm leading-relaxed shadow-sm ${
-                m.sender === "pflege"
-                  ? "bg-[#d9fdd3] text-[#111b21] rounded-2xl rounded-tr-md"
-                  : "bg-[var(--lern-bg-primary)] text-[#111b21] rounded-2xl rounded-tl-md"
+        {messages.map((m, i) => {
+          // Narration: italic graue Zeile mittig — Body-Language / Bühnenanweisung
+          if (m.sender === "narration") {
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 4 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2 }}
+                className="flex justify-center px-4"
+              >
+                <p className="text-[11px] italic text-[#667781] text-center leading-relaxed">
+                  {m.text}
+                </p>
+              </motion.div>
+            );
+          }
+
+          // Patient-Bubble (links + Avatar) oder Pflege-Bubble (rechts)
+          const isPatient = m.sender === "patient";
+          return (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 8, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.2 }}
+              className={`flex items-end gap-1.5 ${
+                isPatient ? "justify-start" : "justify-end"
               }`}
             >
-              {m.sender === "patient" && (
-                <span className="text-xs font-semibold text-[var(--lern-accent)] block mb-0.5">
-                  {m.speakerName ?? patientName}
-                </span>
+              {isPatient && (
+                <PatientAvatar
+                  name={m.speakerName ?? patientName}
+                  size={28}
+                />
               )}
-              {m.sender === "pflege" && (
-                <span className="text-xs font-semibold text-[#3E5A6A] block mb-0.5">
-                  Du (Pflege)
-                </span>
-              )}
-              {renderBold(m.text)}
-              <span className="block text-right text-xs text-[#667781] mt-1">
-                {new Date().toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })}
-              </span>
-            </div>
-          </motion.div>
-        ))}
+              <div
+                className={`max-w-[80%] px-3 py-2 text-sm leading-relaxed shadow-sm ${
+                  isPatient
+                    ? "bg-[var(--lern-bg-primary)] text-[#111b21] rounded-2xl rounded-bl-md"
+                    : "bg-[#d9fdd3] text-[#111b21] rounded-2xl rounded-br-md"
+                }`}
+              >
+                {isPatient && (
+                  <span className="text-[11px] font-semibold text-[var(--lern-accent)] block mb-0.5">
+                    {m.speakerName ?? patientName}
+                  </span>
+                )}
+                {!isPatient && (
+                  <span className="text-[11px] font-semibold text-[#3E5A6A] block mb-0.5">
+                    Du
+                  </span>
+                )}
+                {renderBold(m.text)}
+              </div>
+            </motion.div>
+          );
+        })}
 
         {/* Typing indicator */}
         {typing && (
@@ -422,6 +570,14 @@ export function StepDialog({
       )}
       {finished && (
         <StepActionBar>
+          <button
+            onClick={handleReplay}
+            aria-label="Diesen Dialog noch mal"
+            className="shrink-0 inline-flex items-center justify-center gap-1.5 rounded-xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-4 py-3.5 text-sm font-semibold text-[var(--lern-text-primary)] transition-all active:scale-[0.98] hover:border-[var(--lern-accent)]"
+          >
+            <RotateCcw className="h-4 w-4" />
+            Noch mal
+          </button>
           <button
             onClick={() => onNext(scorePercent >= 70)}
             className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
