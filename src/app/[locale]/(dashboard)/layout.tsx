@@ -2,7 +2,6 @@ import { getSession } from "@/lib/auth/session"
 import { redirect } from "next/navigation"
 import { Sidebar } from "@/components/layout/sidebar"
 import { TopBar } from "@/components/layout/top-bar"
-import { BottomNav } from "@/components/layout/bottom-nav"
 import { EinstufungsGuard } from "@/components/auth/einstufungs-guard"
 
 export default async function DashboardLayout({
@@ -23,7 +22,7 @@ export default async function DashboardLayout({
             {children}
           </EinstufungsGuard>
         </main>
-        <BottomNav />
+        {/* BottomNav wird global via GlobalTabBar im Root-Layout gerendert */}
       </div>
     </div>
   )

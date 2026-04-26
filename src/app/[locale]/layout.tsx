@@ -10,6 +10,7 @@ import { LearningReminderBanner } from "@/components/pwa/learning-reminder-banne
 import { NotificationPrompt } from "@/components/pwa/notification-prompt"
 import { ErrorBoundaryWrapper } from "@/components/error-boundary-wrapper"
 import { DarkModeInit } from "@/components/layout/dark-mode-init"
+import { GlobalTabBar } from "@/components/layout/global-tab-bar"
 import "../globals.css"
 
 const poppins = Poppins({
@@ -77,6 +78,7 @@ export default async function LocaleLayout({
             </ErrorBoundaryWrapper>
             <LearningReminderBanner />
             <NotificationPrompt />
+            <GlobalTabBar />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
