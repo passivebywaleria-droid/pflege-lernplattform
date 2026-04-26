@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { feedbackGlossar, type FeedbackGlossarEntry } from "./feedback-glossar";
 
@@ -10,30 +10,60 @@ interface FeedbackTextProps {
 }
 
 /**
- * Rendert Feedback-Text und macht Fachbegriffe/Kommunikationsmodelle klickbar.
- * Bei Tap → Bottom-Sheet mit Erklärung (C1 oder B1 je nach Sprachlevel).
+ * Fügt vor Aufzählungs-Markern einen Zeilenumbruch ein, damit der Text
+ * lesbarer wird:
+ *   "ist a) falsch und b) ineffektiv" → "ist\na) falsch und\nb) ineffektiv"
+ *
+ * Erkennt:
+ *   - a) b) c) ... — Klammer-Liste mit Buchstaben
+ *   - 1. 2. 3. — Punkt-Liste mit Zahlen (mind. 2 Stellen oder vorangestelltes Wort)
+ */
+function splitListItems(text: string): string {
+  // Buchstabe + ) — z.B. "a)"
+  let out = text.replace(/(?<=\S)\s+(?=[a-h]\)\s)/g, "\n");
+  // Zahl + . — z.B. " 1. " (vorsichtig: nicht "Phase 1." am Satzende)
+  // Nur matchen wenn mehrere Items vorkommen
+  if ((out.match(/\s\d+\.\s/g) ?? []).length >= 2) {
+    out = out.replace(/(?<=\S)\s+(?=\d+\.\s)/g, "\n");
+  }
+  return out;
+}
+
+/**
+ * Rendert Feedback-Text mit:
+ * - Klickbaren Glossar-Begriffen (öffnen Bottom-Sheet)
+ * - Automatischen Zeilenumbrüchen bei Aufzählungen (a/b/c oder 1./2./3.)
  */
 export function FeedbackText({ children, sprachLevel = "c1" }: FeedbackTextProps) {
   const [activeEntry, setActiveEntry] = useState<FeedbackGlossarEntry | null>(null);
 
-  const parts = highlightTerms(children, feedbackGlossar);
+  const processed = splitListItems(children);
+  const lines = processed.split("\n").filter((l) => l.trim().length > 0);
 
   return (
     <>
       <span>
-        {parts.map((part, i) => {
-          if (part.entry) {
-            return (
-              <button
-                key={i}
-                onClick={() => setActiveEntry(part.entry!)}
-                className="inline text-[var(--lern-accent)] underline decoration-[var(--lern-accent)]/30 underline-offset-2 font-medium"
-              >
-                {part.text}
-              </button>
-            );
-          }
-          return <span key={i}>{part.text}</span>;
+        {lines.map((line, lineIdx) => {
+          const parts = highlightTerms(line, feedbackGlossar);
+          return (
+            <Fragment key={lineIdx}>
+              {lineIdx > 0 && <br />}
+              {parts.map((part, i) => {
+                if (part.entry) {
+                  return (
+                    <button
+                      key={i}
+                      onClick={() => setActiveEntry(part.entry!)}
+                      className="inline text-[var(--lern-accent)] underline decoration-[var(--lern-accent)]/30 underline-offset-2 font-medium"
+                    >
+                      {part.text}
+                    </button>
+                  );
+                }
+                return <span key={i}>{part.text}</span>;
+              })}
+            </Fragment>
+          );
         })}
       </span>
 
