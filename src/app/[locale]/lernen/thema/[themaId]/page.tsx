@@ -18,19 +18,20 @@ function BausteinCard({ baustein }: { baustein: Wissensbaustein }) {
   return (
     <motion.div
       layout
-      className="rounded-2xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-4"
+      className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] px-3 py-2.5"
     >
       <button
         onClick={() => setExpanded(!expanded)}
         className="flex w-full items-center justify-between text-left"
+        aria-expanded={expanded}
       >
-        <h3 className="text-sm font-semibold text-[var(--lern-text-primary)]">
+        <h3 className="text-sm font-medium text-[var(--lern-text-primary)] leading-tight">
           {baustein.titel}
         </h3>
         {expanded ? (
-          <ChevronUp className="h-4 w-4 text-[var(--lern-text-tertiary)]" />
+          <ChevronUp className="h-4 w-4 text-[var(--lern-text-tertiary)] shrink-0 ml-2" />
         ) : (
-          <ChevronDown className="h-4 w-4 text-[var(--lern-text-tertiary)]" />
+          <ChevronDown className="h-4 w-4 text-[var(--lern-text-tertiary)] shrink-0 ml-2" />
         )}
       </button>
 
@@ -177,55 +178,63 @@ export default function ThemaDetailPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[var(--lern-bg)]">
-      {/* Header */}
-      <div className="bg-[var(--lern-bg-primary)] border-b border-[var(--lern-border)]/50">
-        <div className="mx-auto max-w-3xl px-4 py-6">
-          <Link
-            href={`/${locale}/lernen/ce/${ceId}`}
-            className="inline-flex items-center gap-1 text-sm text-[var(--lern-text-secondary)] hover:text-[var(--lern-text-primary)] mb-3"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            {ceId.toUpperCase()}
-          </Link>
-
-          <p className="text-xs font-semibold text-[var(--lern-accent)] uppercase tracking-wider mb-1">
-            Thema · {thema.wissensart}
-          </p>
-          <h1 className="text-xl font-bold text-[var(--lern-text-primary)] mb-1">
+    <div className="min-h-screen bg-[var(--lern-bg)] pb-12">
+      {/* Header — Bundle-Stil */}
+      <header className="bg-[var(--lern-bg)] border-b border-[var(--lern-border)]">
+        <div className="mx-auto max-w-3xl px-4 pt-3 pb-3.5">
+          <div className="flex items-center justify-between mb-2.5">
+            <Link
+              href={`/${locale}/lernen/ce/${ceId}`}
+              aria-label={`Zurück zu ${ceId.toUpperCase()}`}
+              className="text-[var(--lern-text-secondary)] hover:text-[var(--lern-text-primary)]"
+            >
+              <ArrowLeft className="h-5 w-5" />
+            </Link>
+            <span className="text-[11px] uppercase tracking-wider text-[var(--lern-text-tertiary)]">
+              {thema.wissensart}
+            </span>
+            <span className="w-5" aria-hidden />
+          </div>
+          <h1 className="text-base font-semibold leading-tight text-[var(--lern-text-primary)]">
             {thema.titel}
           </h1>
-          <p className="text-sm text-[var(--lern-text-secondary)]">
-            {thema.geschaetzteUE} UE · {thema.bausteine.length} Bausteine · {thema.glossar.length} Glossar · {thema.karteikarten.length} Karteikarten
+          <p className="text-[11px] text-[var(--lern-text-tertiary)] mt-0.5">
+            {thema.geschaetzteUE} UE · {thema.bausteine.length} Bausteine ·{" "}
+            {thema.glossar.length} Glossar
           </p>
         </div>
-      </div>
+      </header>
 
       {/* Tabs */}
-      <div className="mx-auto max-w-3xl px-4 pt-4">
-        <div className="flex gap-2 border-b border-[var(--lern-border)]">
+      <div className="mx-auto max-w-3xl px-4 pt-3">
+        <div className="flex gap-4 border-b border-[var(--lern-border)]">
           {(["bausteine", "glossar", "karteikarten"] as TabKey[]).map((key) => (
             <button
               key={key}
               onClick={() => setTab(key)}
-              className={`px-4 py-2 text-sm font-semibold transition-colors border-b-2 capitalize ${
+              className={`px-1 py-2 text-sm font-semibold transition-colors border-b-2 -mb-px capitalize ${
                 tab === key
                   ? "border-[var(--lern-accent)] text-[var(--lern-accent)]"
-                  : "border-transparent text-[var(--lern-text-tertiary)] hover:text-[var(--lern-text-secondary)]"
+                  : "border-transparent text-[var(--lern-text-tertiary)]"
               }`}
             >
-              {key} ({
-                key === "bausteine" ? thema.bausteine.length :
-                key === "glossar" ? thema.glossar.length :
-                thema.karteikarten.length
-              })
+              {key}{" "}
+              <span className="text-[10px] tabular-nums">
+                ({
+                  key === "bausteine"
+                    ? thema.bausteine.length
+                    : key === "glossar"
+                      ? thema.glossar.length
+                      : thema.karteikarten.length
+                })
+              </span>
             </button>
           ))}
         </div>
       </div>
 
       {/* Content */}
-      <div className="mx-auto max-w-3xl px-4 py-6 space-y-3">
+      <div className="mx-auto max-w-3xl px-4 py-4 space-y-2">
         {tab === "bausteine" && thema.bausteine.map((b) => (
           <BausteinCard key={b.bausteinId} baustein={b} />
         ))}
@@ -233,15 +242,15 @@ export default function ThemaDetailPage() {
         {tab === "glossar" && thema.glossar.map((entry) => (
           <div
             key={entry.begriff}
-            className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-3"
+            className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] px-3 py-2.5"
           >
-            <h3 className="text-sm font-semibold text-[var(--lern-text-primary)] mb-1">
+            <h3 className="text-sm font-semibold text-[var(--lern-text-primary)]">
               {entry.begriff}
             </h3>
-            <p className="text-sm text-[var(--lern-text-secondary)]">{entry.erklaerung}</p>
+            <p className="text-xs text-[var(--lern-text-secondary)] mt-1 leading-relaxed">{entry.erklaerung}</p>
             {entry.erklaerungB1 && (
-              <details className="mt-2 text-xs">
-                <summary className="cursor-pointer text-[var(--lern-accent)] font-semibold">
+              <details className="mt-1.5 text-xs">
+                <summary className="cursor-pointer text-[var(--lern-accent)] font-medium">
                   Einfache Sprache
                 </summary>
                 <p className="mt-1 text-[var(--lern-text-secondary)]">{entry.erklaerungB1}</p>
@@ -253,12 +262,12 @@ export default function ThemaDetailPage() {
         {tab === "karteikarten" && thema.karteikarten.map((karte, idx) => (
           <details
             key={karte.id ?? idx}
-            className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-3 cursor-pointer"
+            className="rounded-xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] px-3 py-2.5 cursor-pointer"
           >
-            <summary className="font-semibold text-sm text-[var(--lern-text-primary)]">
+            <summary className="font-medium text-sm text-[var(--lern-text-primary)]">
               {karte.vorderseite}
             </summary>
-            <p className="mt-2 text-sm text-[var(--lern-text-secondary)]">
+            <p className="mt-2 text-xs text-[var(--lern-text-secondary)] leading-relaxed">
               {karte.rueckseiteC1}
             </p>
           </details>
