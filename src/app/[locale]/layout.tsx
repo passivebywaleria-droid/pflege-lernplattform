@@ -67,8 +67,8 @@ export default async function LocaleLayout({
       <body className={`${poppins.variable} min-h-screen bg-background text-foreground antialiased font-[family-name:var(--font-poppins)]`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="light"
+          enableSystem={false}
           disableTransitionOnChange
         >
           <NextIntlClientProvider messages={messages}>

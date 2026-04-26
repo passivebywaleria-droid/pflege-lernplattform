@@ -39,12 +39,10 @@ export function useDarkModeInit() {
     const stored = localStorage.getItem("pflege-dark-mode");
     if (stored === "dark") {
       setDark(true);
-    } else if (stored === "light") {
-      setDark(false);
     } else {
-      // System-Preference als Fallback
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setDark(prefersDark);
+      // Default: Light. System-Preference wird bewusst ignoriert,
+      // damit die ChatGPT-Light-Palette projektweit konsistent ist.
+      setDark(false);
     }
   }, [setDark]);
 }
