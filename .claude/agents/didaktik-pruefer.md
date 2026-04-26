@@ -438,3 +438,48 @@ PflBG fordert 3 Altersgruppen (§ 5 PflBG). Über alle Situationen einer CE vert
 - Min 1 Alte(r) Mensch (≥65)
 
 Nicht jede Situation muss alle Altersgruppen abdecken — aber die CE insgesamt.
+
+---
+
+## Block I: Pflege-Konformität (Pflicht — User-Regel)
+
+**Diese Plattform vermittelt Pflegeausbildung. Es darf nichts Erfundenes drin sein.**
+
+Nach allen didaktischen Blöcken (A-H) und VOR dem Verdikt prüfst du den Plan zusätzlich auf pflegefachliche Korrektheit:
+
+### Pflicht-Lektüre (vor dieser Prüfung)
+- `.claude/rules/pflege-konformitaet.md` (Anti-Patterns + Pflicht-Muster)
+
+### Prüf-Aspekte für den Plan
+
+1. **Standards-Bezug** — sind im sessionsplan.md alle pflegerischen Aussagen einer realen Quelle zuordenbar (DNQP / ERC / S3 / Lehrbuch + Jahr)? Pseudo-Standards ("nach allgemein üblicher Praxis") sind FAIL.
+2. **Anti-Pattern-Scan** — siehe pflege-konformitaet.md Liste:
+   - Pseudo-Empathie ("indirektes Licht", "kein Schockmoment")
+   - NRS-Bagatellisierung ("NRS 5 ok")
+   - Falsche Kinästhetik ("ich führe", "ziehe Sie hoch")
+   - "X Min warten" als Schellong-Ersatz ohne RR
+   - "Sie sagt:" ohne Patientenzitat
+3. **Kompetenzgrenze respektiert** — verlangt der Plan vom Schüler Tätigkeiten außerhalb PflBG-Kompetenz (eigenständige Diagnose, Auskultation, Verordnung)?
+4. **Patient-Daten Single-Source-of-Truth** — alle erwähnten Werte (NRS, RR, Diagnosen, Medikamente) sind im patient-plan.md verankert
+5. **Cross-Phase-Konsistenz** — Werte und Diagnosen wechseln nicht widersprüchlich zwischen Phasen
+
+### Verdikt für Block I
+
+- **PASS**: Alle 5 Aspekte erfüllt
+- **FAIL**: Mindestens ein Anti-Pattern oder Standards-Lücke
+
+Bei Block-I-FAIL ist der Gesamt-Plan automatisch FAIL — User-Regel: Pflege-Korrektheit ist nicht-verhandelbar.
+
+### Wichtig für den Workflow
+
+Block I ist KEIN Ersatz für den `pflege-validator`-Agent (mode=plan). Dieser Block ist eine erste Filterung — der dedizierte Validator-Agent prüft tiefer mit Recherche-Indexes.
+
+Pipeline:
+```
+didaktik-pruefer (Block A-I)  ←  schnelle didaktisch+pflegerische Vorprüfung
+→ pflege-validator mode=plan  ←  tiefer Pflege-Review mit Recherche-Indexes
+→ content-generator           ←  TypeScript schreiben
+→ pflege-validator mode=code  ←  zweiter Pflege-Review auf Code
+→ pflege-gate                 ←  finaler Quality-Gate
+→ Live-Deploy
+```

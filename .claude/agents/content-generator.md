@@ -24,6 +24,63 @@ KI-Prüfer (Opus)  → Semantische Prüfung
 
 ---
 
+## ⚠️ ABSOLUTE PFLICHT: Pflege-Konformität (User-Regel)
+
+**Diese Plattform vermittelt Pflegeausbildung. Es darf NICHTS Erfundenes drin sein.**
+
+Vor JEDER Code-Generierung — egal ob body, fragetext, options.text, patientResponse, feedback, explanation oder hints — gilt:
+
+### Pflicht-Lektüre
+1. `.claude/rules/pflege-konformitaet.md` — Anti-Patterns + Pflicht-Muster
+2. `recherche/expertenstandards-index/` — DNQP-Standards
+3. `recherche/icare-index/` — I Care Lehrbuch
+4. `recherche/kommunikation-index/` — Kommunikation im GW
+5. `recherche/pflege-heute-index/` — Pflege heute
+
+### Verboten (zur Sicherheit nochmal aufgelistet)
+- ❌ „Indirektes/gedämpftes Licht" beim Sturz/Notfall (volle Sicht für Inspektion)
+- ❌ „NRS ≥ 4 ist ok / im Rahmen" (DNQP Schmerz: ≥ 4 interventionspflichtig)
+- ❌ „Ich führe die Bewegung" (Kinästhetik: Patient bewegt sich selbst)
+- ❌ „Ziehe/hebe Sie hoch" / „unter den Achseln greifen"
+- ❌ „X Min warten" als Schellong-Ersatz ohne RR-Messung
+- ❌ „Sie sagt:" als Phase-context-Ende ohne Patientenzitat
+- ❌ Pseudo-Empathie statt fachlicher Klarheit
+- ❌ Schüler:in macht Aufgaben außerhalb PflBG-Kompetenz (Auskultation, eigenständige Diät-Anpassung, Verordnungen)
+- ❌ Werte (NRS, RR, Diagnosen) in Steps frei erfinden — alles aus patient.ts
+
+### Pflicht
+- ✅ Jede pflegerische Aussage hat Standard-Bezug (DNQP / ERC / S3-Leitlinie / Lehrbuch + Jahr)
+- ✅ `quellen[]` Feld pro Step gefüllt mit echten, in `recherche/` belegbaren Standards
+- ✅ Anti-Patterns aus pflege-konformitaet.md aktiv vermeiden
+- ✅ Distraktoren = realistische Anfänger-Fehler (keine Karikaturen)
+- ✅ Sandwich-Feedback in B1: Lob → Korrektur → Ermutigung
+- ✅ Cross-Step-Konsistenz: Werte und Diagnosen wechseln NICHT zwischen Phasen
+
+### Im Zweifel
+**STOPP und melden.** Lieber „das müsste eine Pflegedozentin verifizieren" als raten oder Pseudo-Pflege schreiben.
+
+### Doppelter Pflege-Check (User-Regel: zwei Sicherheitsnetze)
+
+**1. Plan-Phase-Check (VOR Generierung):**
+- `pflege-validator` mit `mode: "plan"` über `kernfakten.md` + `bausteine-plan.md` + `sessionsplan.md`
+- Output: `pflege-review-plan.md` mit PASS/FAIL
+- Bei FAIL: STOPP — Plan zurück zum Regisseur/Dozentin zur Überarbeitung
+- Du startest erst mit Generierung wenn `pflege-review-plan.md` PASS hat
+
+**2. Code-Phase-Check (NACH Generierung):**
+- `pflege-validator` mit `mode: "code"` über die fertigen `phase-*.ts` + `patient.ts`
+- Output: `pflege-review.md` mit PASS/FAIL
+- Bei FAIL: Fixes anwenden, dann erneut prüfen
+- Erst wenn PASS → `quality-gate.ts` läuft → Live-Deploy möglich
+
+Ohne diese **2 Pflege-Checks** und `quality-gate.ts`-PASS: KEIN Live-Deploy.
+
+Die zwei Checks sind getrennt absichtlich:
+- Plan-Check fängt fachlich falsche Konzepte BEVOR sie als Code festgeschrieben werden
+- Code-Check fängt Erfindungen die der Generator (KI) trotz korrektem Plan eingefügt hat
+
+---
+
 ## Dein Input
 
 ### Pro Thema (aus `content/ce-{NN}/themen/{themaId}/`)

@@ -17,8 +17,10 @@ Bei JEDER Pipeline-Änderung diese 7 Stellen prüfen und ggf. updaten:
 | # | Datei | Was steht dort? | Wann updaten? |
 |---|-------|-----------------|---------------|
 | 1 | `.claude/agents/didaktik-regisseur.md` | Sessionplan-Format, Regeln, Checkliste | Neues Feld → Spalte in Tabelle + Checkliste |
-| 2 | `.claude/agents/content-generator.md` | TypeScript-Regeln, Template, Feld-Regeln | Neues Feld → Neue Regel + Template updaten |
-| 3 | `.claude/agents/didaktik-pruefer.md` | Prüfkriterien, Blöcke A-H | Neue Regel → Neues Kriterium + Tabelle + Zähler |
+| 2 | `.claude/agents/content-generator.md` | TypeScript-Regeln, Template, Feld-Regeln, Pflege-Konformitäts-Block | Neues Feld → Neue Regel + Template updaten |
+| 3 | `.claude/agents/didaktik-pruefer.md` | Prüfkriterien, Blöcke A-I (inkl. Pflege-Block) | Neue Regel → Neues Kriterium + Tabelle + Zähler |
+| 3b | `.claude/agents/pflege-validator.md` | Pflege-Validator (mode=plan + mode=code, doppelter Check) | Neue Pflicht-Aspekte → Prüfkriterium ergänzen |
+| 3c | `.claude/rules/pflege-konformitaet.md` | Anti-Patterns + Pflicht-Muster pro Step-Typ | Neues Anti-Pattern → in Liste eintragen + scripts/pflege-anti-pattern-check.ts ergänzen |
 | 4 | `didaktik-loop/GESAMT-PROMPT-v2.md` | 4-Schritte-Pipeline | Neues Feld → Relevante Schritte updaten |
 | 5 | `specs/ADAPTIVER-THEMENBOGEN.md` | Phasen-Modell, Scaffolding, Spaced Repetition | Neue didaktische Regel → Spec updaten |
 | 6 | `content/_types.ts` | CE-übergreifende TypeScript-Interfaces | Neues Feld → Interface erweitern |

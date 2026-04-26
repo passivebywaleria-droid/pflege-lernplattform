@@ -404,6 +404,9 @@ function checkPreLive(leId: string): GateCheck {
   };
 }
 
+// Pflege-Konformitäts-Checks für Situationen sind ausgelagert nach
+// scripts/pflege-gate.ts (situations-basiert, nicht LE-basiert).
+
 // ═══════════════════════════════════════════════════════════
 // Report Generation
 // ═══════════════════════════════════════════════════════════
