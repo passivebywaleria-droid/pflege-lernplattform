@@ -123,9 +123,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
             text: "Licht voll einschalten, Frau M. begrüßen, Bewusstsein prüfen",
             isCorrect: true,
             explanation:
-              "Genau. Das ist der Kern der Ersteinschätzung: Licht (damit du sehen kannst — aber bewusst gedämpft, kein Schockmoment mitten in der Nacht), begrüßen (Würde, Beruhigung), Bewusstsein prüfen (ist sie wach, orientiert zu Person/Ort/Zeit?). Diese drei Handlungen laufen fast gleichzeitig ab und geben dir in Sekunden einen strukturierten Eindruck.",
+              "Genau. Das ist der Kern der Ersteinschätzung: Licht voll einschalten (Verletzungs-Beurteilung braucht volle Sicht — keine Inspektion ohne ausreichende Beleuchtung), aber so positioniert oder von der Bett-Leselampe, dass es Frau M. nicht direkt blendet. Begrüßen (Würde, Beruhigung), Bewusstsein prüfen (ansprechbar, orientiert zu Person/Ort/Zeit). Diese drei Handlungen laufen fast gleichzeitig ab.",
             explanationB1:
-              "Richtig. Das ist das Wichtigste zuerst: Licht an (damit du sehen kannst), Frau M. ansprechen (freundlich, beruhigend), prüfen ob sie wach ist. Das dauert nur Sekunden und zeigt dir, wie es ihr geht.",
+              "Richtig. Das ist das Wichtigste zuerst: Licht hell an, damit du sie genau ansehen kannst — aber das Licht soll ihr nicht direkt in die Augen scheinen. Frau M. ansprechen (freundlich, ruhig). Prüfen, ob sie wach ist und weiß, wo sie ist. Das dauert nur Sekunden.",
           },
           {
             text: "Nachtschwester rufen",
@@ -161,12 +161,12 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Das Zimmer betreten",
-        body: "Du betrittst das Zimmer und schaltest das Licht ein — hell genug, um Frau M. inspizieren zu können (Verletzungs-Beurteilung nach Sturz braucht gute Sicht), aber so positioniert, dass es ihr nicht direkt ins Gesicht leuchtet. Du kniest auf Augenhöhe zu Frau M. am Boden. Sie liegt neben dem Bett, ist bei Bewusstsein, ihre Hände sind im Schoß gefaltet. Sie sieht dich an.",
+        body: "Du betrittst das Zimmer und schaltest das Licht ein — hell genug für die Verletzungs-Beurteilung, aber so positioniert, dass es Frau M. nicht direkt blendet. Du kniest auf Augenhöhe zu Frau M. am Boden. Sie liegt halb seitlich neben dem Bett, hat eine Hand auf der linken Hüfte, die andere stützt sich am Boden ab. Sie ist bei Bewusstsein, ansprechbar, atmet ruhig. Sie sieht dich an.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Ins Zimmer gehen",
-        body: "Du gehst ins Zimmer und machst das Licht an. Das Licht muss hell sein, damit du Frau M. genau ansehen kannst (du musst sehen, ob sie verletzt ist). Aber das Licht soll ihr nicht direkt in die Augen scheinen. Du gehst in die Knie, damit du auf ihrer Höhe bist. Frau M. liegt neben dem Bett. Sie ist wach. Ihre Hände sind im Schoß gefaltet. Sie schaut dich an.",
+        body: "Du gehst ins Zimmer und machst das Licht an. Hell genug, damit du sie genau ansehen kannst — aber nicht direkt ins Gesicht. Du gehst in die Knie, damit du auf ihrer Höhe bist. Frau M. liegt halb auf der Seite neben dem Bett. Eine Hand liegt auf der linken Hüfte. Mit der anderen stützt sie sich auf dem Boden ab. Sie ist wach. Sie atmet ruhig. Sie schaut dich an.",
         glossarBegriffe: [],
       },
       question: {
@@ -233,18 +233,18 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
             speaker: "Du",
             options: [
               {
-                text: "\"Frau M., wo tut es weh? Und können Sie alles bewegen?\"",
+                text: "\"Frau M., wo tut es weh? Und auf einer Skala von 0 bis 10 — wie stark? Können Sie alles bewegen?\"",
                 textB1:
-                  "\"Frau M., wo tut es weh? Können Sie alles bewegen?\"",
+                  "\"Frau M., wo tut es weh? Wie stark — von 0 bis 10? Können Sie alles bewegen?\"",
                 patientResponse:
-                  "\"Die linke Hüfte, innen. Und ich glaube, meine Zehen kann ich bewegen …\" — sie probiert es.",
+                  "\"Die linke Hüfte, innen. Eine Sechs vielleicht, wenn ich mich nicht bewege. Und ich glaube, meine Zehen kann ich bewegen …\" — sie probiert es.",
                 patientResponseB1:
-                  "\"Die linke Hüfte, innen. Meine Zehen bewegen sich, glaube ich …\" — sie probiert es.",
+                  "\"Die linke Hüfte, innen. Eine Sechs, wenn ich still liege. Meine Zehen bewegen sich, glaube ich …\" — sie probiert es.",
                 score: 3,
                 feedback:
-                  "Klar, konkret, sicher. Mit zwei Fragen bekommst du zwei wichtige Informationen: Schmerzlokalisation (linke Hüfte — möglicher Bereich für eine Hüftfraktur) und grobe Motorik (Zehenbewegung — keine schwere Rückenmarkverletzung).",
+                  "Klar, konkret, sicher. Drei Informationen in einem Atemzug: Schmerzlokalisation (linke Hüfte — möglicher Bereich für eine Hüftfraktur), Schmerzintensität (NRS 6 — moderat bis stark, dokumentationspflichtig nach DNQP-Schmerz, im SBAR-Anruf an Arzt erwähnen), grobe Motorik (Zehenbewegung — keine schwere Rückenmarkverletzung).",
                 feedbackB1:
-                  "Sehr gut. Zwei Fragen, zwei wichtige Antworten: Wo tut es weh (linke Hüfte — Hüftbruch möglich?), kann sie bewegen (Zehen gehen — kein Rückenschaden).",
+                  "Sehr gut. Drei wichtige Antworten in einer Frage: Wo tut es weh (linke Hüfte — Hüftbruch möglich?), wie stark (NRS 6 — das ist nicht wenig, das musst du dokumentieren und dem Arzt sagen), kann sie bewegen (Zehen gehen — kein Rückenschaden).",
               },
               {
                 text: "\"Versuchen Sie bitte, sich hochzusetzen, dann sehe ich mehr.\"",
@@ -270,15 +270,15 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
                   "\"Nein, eigentlich nicht. Nur die Hüfte — und ich schäme mich so.\"",
                 score: 2,
                 feedback:
-                  "Nicht schlecht — Orthostase/Schwindel ist eine plausible Frage (wichtig bei Parkinson + Medikamenten). Aber: Die Hüftschmerzen waren schon in der Übergabe erwähnt — priorisiert fragen wäre 'Wo tut es weh?' zuerst, dann Allgemeinzustand.",
+                  "Gute Frage — Orthostase/Schwindel ist genauso wichtig wie Schmerz-Lokalisation, gerade bei Parkinson + Z-Substanz. Beide Fragen gehören zur Erstuntersuchung. Nur die Reihenfolge: Hüftschmerzen waren schon in der Übergabe erwähnt — also zuerst Schmerz-Lokalisation und NRS, dann Schwindel/Übelkeit als nächste Frage.",
                 feedbackB1:
-                  "Nicht schlecht — aber die Hüftschmerzen waren schon bekannt. Erst fragen: 'Wo tut es weh?' Dann: 'Schwindelig?'",
+                  "Gute Frage — Schwindel zu fragen ist genauso wichtig wie Schmerz, gerade bei Parkinson + Schlaftablette. Beide gehören zur Untersuchung. Aber: Die Hüftschmerzen waren schon bekannt. Erst 'Wo und wie stark tut es weh?', dann 'Schwindelig?'",
               },
             ],
           },
           {
             context:
-              "Du hast jetzt: ansprechbar, orientiert, keine sichtbare Deformität, Schmerz linke Hüfte, kann Zehen bewegen. Du entscheidest:",
+              "Du hast jetzt: ansprechbar, orientiert, keine sichtbare Deformität, Schmerz linke Hüfte (NRS 6), kann Zehen bewegen. Du entscheidest:",
             contextB1:
               "Du weißt jetzt: Frau M. ist wach und orientiert. Keine sichtbare Verletzung. Schmerz in der linken Hüfte. Sie kann die Zehen bewegen. Du entscheidest:",
             speaker: "Du",

@@ -10,9 +10,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
   titel: "Maßnahmen durchführen",
   titelB1: "Maßnahmen umsetzen",
   kontext:
-    "03:14 Uhr. Frau Keller hat den Türrahmen kurz mit der Hüfte angeschoben und steht jetzt neben dir. Sie riecht nach Veilchen-Bonbon, ihr Kasak ist an der Schulter leicht gebügelt, die Ärmel hochgekrempelt. Sie wirft einen Blick auf Frau M., einen auf dich, sagt halblaut: 'Ok. Was hast du?' — und du merkst, dass jetzt nicht die Zeit für Selbstzweifel ist. Du gehst durch deinen Plan, Stichpunkt für Stichpunkt. Sie nickt, ergänzt eine Sache, dann: 'Gut. Mach.' Du bist es, die führt. Frau M. liegt noch in derselben Position, aber sie zittert leicht, der Boden ist kalt, ihre Füße in dünnen Wollsocken sind weiß. Du musst sie hochbringen — nicht heben, sondern führen, kinästhetisch, über Seitlage und Kniestand, wie du es im Skills-Lab geübt hast. Aber: Du hast es noch nie nachts mit einer realen 82-Jährigen getan. Dein Herz schlägt höher, du fühlst es bis in die Kehle. Du hockst dich an ihre rechte Seite, sprichst leise: 'Frau M., wir holen Sie jetzt vorsichtig hoch. Erst zur Seite, dann auf die Knie, dann ans Bett. Sie machen mit, ich führe nur. Ja?' Sie nickt. Ihre Augen sind wach. Du spürst die Wärme ihres Oberkörpers durch die dünne Baumwolle, ihre Hand ist leicht. Frau Keller ist links, schützt die Hüfte. Drei, zwei, eins — und es geht. Langsam. Geräuschlos. Sie atmet kurz ein, einmal stöhnt sie leise, du fragst sofort nach den Schmerzen — NRS 5, ok, im Rahmen. Im Bett dann: zudecken, Kopfteil leicht hoch, Rufknopf in die Hand. Aber das ist nur Schritt eins. Vor dir liegt jetzt die zweite Schwelle: SBAR-Anruf an den diensthabenden Arzt. Die Stimme am Telefon hörbar müde. Du hast genau diese Sätze. Drei Minuten später: erste Mobilisation, Orthostase-Check vor dem Aufstehen, Bettrand, Standversuch. Und dann ein Moment, den keine Checkliste vorhersagt: Frau M. greift nach deiner Hand, schaut dich an, fragt: 'Sind Sie böse auf mich, dass ich gestürzt bin?' Du hältst inne. Was sagst du? Später, gegen 04:30, wirst du mit ihr über den Hüftprotektor sprechen — sie weiß noch nicht, dass es so etwas gibt. Du wirst entscheiden, wie du es einbringst. Im Hintergrund klappert leise der Medikamentenwagen auf dem Flur, Frau Keller hat ihre Hand kurz auf deine Schulter gelegt und genickt, ein wortloses 'mach weiter'. Vor dem Fenster zieht eine Krankenwagensirene langsam vorbei, fern, gedämpft. Die nächsten 90 Minuten sind nicht Routine. Sie sind das Herzstück dieser Schicht — fachlich präzise und menschlich aufmerksam. Beides, gleichzeitig. Du wirst entscheiden müssen, manchmal in Sekunden, manchmal in Minuten, immer mit Frau M. als Mensch im Mittelpunkt.",
+    "03:14 Uhr. Frau Keller hat den Türrahmen kurz mit der Hüfte angeschoben und steht jetzt neben dir. Sie riecht nach Veilchen-Bonbon, ihr Kasak ist an der Schulter leicht gebügelt, die Ärmel hochgekrempelt. Sie wirft einen Blick auf Frau M., einen auf dich, sagt halblaut: 'Ok. Was hast du?' — und du merkst, dass jetzt nicht die Zeit für Selbstzweifel ist. Du gehst durch deinen Plan, Stichpunkt für Stichpunkt. Sie nickt, ergänzt eine Sache, dann: 'Gut. Mach.' Du führst jetzt — gemeinsam mit Frau Keller. Frau M. liegt noch in derselben Position, aber sie zittert leicht, der Boden ist kalt, ihre Füße in dünnen Wollsocken sind weiß. Ihr werdet sie hochbringen — nicht heben, sondern kinästhetisch begleiten: Frau M. macht die Bewegung selbst, ihr sichert über Seitlage und Kniestand, wie du es im Skills-Lab geübt hast. Aber: Du hast es noch nie nachts mit einer realen 82-Jährigen getan. Dein Herz schlägt höher, du fühlst es bis in die Kehle. Du hockst dich an ihre rechte Seite, sprichst leise: 'Frau M., wir gehen jetzt vorsichtig hoch — gemeinsam. Sie machen die Bewegung, ich begleite. Erst zur Seite, dann auf die Knie, dann ans Bett. Sie sagen das Tempo. Ja?' Sie nickt. Ihre Augen sind wach. Du spürst die Wärme ihres Oberkörpers durch die dünne Baumwolle, ihre Hand ist leicht. Frau Keller ist links, stützt das linke Becken und kontrolliert die Hüfte. Drei, zwei, eins — und es geht. Langsam. Geräuschlos. Sie atmet kurz ein, einmal stöhnt sie leise, du fragst sofort nach den Schmerzen — NRS 5. Das ist moderater Schmerz, kein 'im Rahmen' — du wirst das im SBAR-Anruf an den Arzt erwähnen und Bedarfsanalgesie ansprechen. Im Bett dann: zudecken, Kopfteil leicht hoch, Rufknopf in die Hand. Aber das ist nur Schritt eins. Vor dir liegt jetzt die zweite Schwelle: SBAR-Anruf an den diensthabenden Arzt. Die Stimme am Telefon hörbar müde. Du hast genau diese Sätze. Danach: Schellong-Test vor erster Mobilisation — RR im Liegen messen, mindestens eine Minute am Bettrand sitzen lassen, dann erst RR im Stehen, erst dann Standversuch. Und dann ein Moment, den keine Checkliste vorhersagt: Frau M. greift nach deiner Hand, schaut dich an, fragt: 'Sind Sie böse auf mich, dass ich gestürzt bin?' Du hältst inne. Was sagst du? Später, gegen 04:30, wirst du mit ihr über den Hüftprotektor sprechen — sie weiß noch nicht, dass es so etwas gibt. Im Hintergrund klappert leise der Medikamentenwagen auf dem Flur, Frau Keller hat ihre Hand kurz auf deine Schulter gelegt und genickt, ein wortloses 'mach weiter'. Vor dem Fenster zieht eine Krankenwagensirene langsam vorbei, fern, gedämpft. Die nächsten 90 Minuten sind nicht Routine. Sie sind das Herzstück dieser Schicht — fachlich präzise und menschlich aufmerksam. Beides, gleichzeitig. Du wirst entscheiden müssen, manchmal in Sekunden, manchmal in Minuten, immer mit Frau M. als Mensch im Mittelpunkt.",
   kontextB1:
-    "03:14 Uhr. Frau Keller ist da. Sie steht neben dir. Sie schaut Frau M. an, dann dich. Sie sagt leise: 'Ok. Was hast du?' Du erklärst deinen Plan. Sie nickt. Sie sagt: 'Gut. Mach.' Du führst jetzt. Frau M. liegt noch auf dem Boden. Sie zittert ein bisschen. Der Boden ist kalt. Ihre Füße sind weiß. Du musst sie hochbringen. Nicht heben. Führen. Über die Seite, auf die Knie, ins Bett. Das nennt man Kinästhetik. Du hast es geübt. Aber heute ist es echt. Dein Herz schlägt schnell. Du hockst dich neben Frau M. Du sagst leise: 'Frau M., wir gehen jetzt vorsichtig hoch. Sie machen mit. Ich führe. Ja?' Sie nickt. Frau Keller ist auf der anderen Seite. Sie schützt die Hüfte. Drei, zwei, eins. Es geht. Langsam. Frau M. stöhnt einmal kurz. Du fragst nach den Schmerzen. 5 von 10. Ok. Im Bett: zudecken, Kopf hoch, Rufknopf in ihre Hand. Aber das ist erst Schritt eins. Jetzt rufst du den Arzt an. Du benutzt SBAR. Die Stimme am Telefon ist müde. Du hast die Sätze im Kopf. Danach: erste Mobilisation. Du prüfst, ob ihr Kreislauf stabil ist (Orthostase). Sie setzt sich an den Bettrand. Sie steht kurz auf. Und dann: Frau M. nimmt deine Hand. Sie schaut dich an. Sie fragt: 'Sind Sie böse auf mich?' Du hältst inne. Was sagst du? Später um 04:30 redest du mit ihr über den Hüftprotektor. Sie kennt das Wort nicht. Wie bringst du es ein? Die nächsten 90 Minuten sind keine Routine. Du musst fachlich richtig sein und gleichzeitig menschlich da sein. Beides — gleichzeitig.",
+    "03:14 Uhr. Frau Keller ist da. Sie steht neben dir. Sie sagt leise: 'Ok. Was hast du?' Du erklärst deinen Plan. Sie nickt. Sie sagt: 'Gut. Mach.' Du führst jetzt — gemeinsam mit Frau Keller. Frau M. liegt noch auf dem Boden. Sie zittert ein bisschen. Der Boden ist kalt. Ihre Füße sind weiß. Ihr bringt sie hoch. Nicht heben. Frau M. macht die Bewegung selbst — ihr begleitet und sichert. Über die Seite, auf die Knie, ins Bett. Das nennt man Kinästhetik. Du hast es geübt. Aber heute ist es echt. Dein Herz schlägt schnell. Du hockst dich neben Frau M. Du sagst leise: 'Frau M., wir gehen jetzt gemeinsam hoch. Sie machen die Bewegung, ich begleite. Sie sagen das Tempo. Ja?' Sie nickt. Frau Keller ist auf der anderen Seite. Sie stützt die linke Seite und das Becken. Drei, zwei, eins. Es geht. Langsam. Frau M. stöhnt einmal kurz. Du fragst nach den Schmerzen. 5 von 10. Das ist nicht wenig — du wirst das dem Arzt sagen und nach Schmerzmedikation fragen. Im Bett: zudecken, Kopf hoch, Rufknopf in ihre Hand. Aber das ist erst Schritt eins. Jetzt rufst du den Arzt an. Du benutzt SBAR. Du hast die Sätze im Kopf. Danach: Schellong-Test. Du misst Blutdruck im Liegen. Dann setzt sich Frau M. an den Bettrand. Sie wartet mindestens eine Minute. Du misst wieder. Erst dann: Aufstehen. Und dann: Frau M. nimmt deine Hand. Sie schaut dich an. Sie fragt: 'Sind Sie böse auf mich?' Du hältst inne. Was sagst du? Später um 04:30 redest du mit ihr über den Hüftprotektor. Sie kennt das Wort nicht. Wie bringst du es ein? Die nächsten 90 Minuten sind keine Routine. Du musst fachlich richtig sein und gleichzeitig menschlich da sein. Beides — gleichzeitig.",
   kernSteps: [
     // Step 4.1 — Sorting: Transfer vom Boden
     {
@@ -160,11 +160,11 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
               label: "Hüftprotektor",
               labelB1: "Hüft-Schutz",
               icon: "ShieldCheck",
-              korrekteZoneId: "wagen",
+              korrekteZoneId: "weglegen",
               erklaerung:
-                "Polstert den Trochanter major und reduziert das Frakturrisiko bei erneutem Sturz deutlich (DNQP-Standard Sturzprophylaxe).",
+                "Im Akut-Setting nach Sturz nicht primär — die Indikation muss erst geprüft werden (Akzeptanz, Hauttoleranz, Gangbild). Das wird später in Ruhe besprochen, nicht spontan beim ersten Aufstehen. Siehe MC-Step im Anschluss.",
               erklaerungB1:
-                "Er schützt die Hüfte. Wenn Marianne wieder fällt, bricht die Hüfte nicht so leicht.",
+                "Jetzt nicht. Erst muss man prüfen, ob Frau M. das gut findet, ob die Haut den Schutz verträgt und wie sie geht. Das macht ihr später in Ruhe.",
             },
             {
               id: "rrmanschette",
@@ -245,9 +245,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
             },
           ],
           begruendung:
-            "Sturzprophylaxe nach Sturz folgt einem klaren Standard (DNQP): Sicherheit zuerst (Antirutsch-Socken, Brille, Notruf), Kreislauf-Stabilisierung (Schellong-Test, Wasser), Frakturschutz (Hüftprotektor). Was nicht zur Mobilisation gehört, lenkt ab oder kostet Zeit.",
+            "Sturzprophylaxe nach Sturz folgt einem klaren Standard (DNQP): Sicherheit zuerst (Antirutsch-Socken, Brille, Notruf), Kreislauf-Stabilisierung (Schellong-Test, Wasser). Frakturschutz wie der Hüftprotektor wird nicht spontan beim ersten Aufstehen eingeführt — die Indikation klärt ihr später in Ruhe (siehe MC-Step im Anschluss).",
           begruendungB1:
-            "Nach einem Sturz brauchst du: Schutz (Socken, Hüft-Schutz, Brille), Sicherheit (Notruf), Kreislauf-Hilfe (Blutdruck, Wasser). Andere Sachen brauchst du jetzt nicht.",
+            "Nach einem Sturz brauchst du jetzt: Schutz (Socken, Brille), Sicherheit (Notruf), Kreislauf-Hilfe (Blutdruck, Wasser). Den Hüft-Schutz besprichst du später in Ruhe — nicht jetzt beim ersten Aufstehen.",
         },
       },
     },
@@ -322,13 +322,13 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Gespräch am Bettrand",
         // FIX (walkthrough B-14): Markdown-Underscores entfernt.
-        body: "Frau M. sitzt am Bettrand, Füße auf dem Boden. Du hast ihr 3 Minuten Zeit gegeben (Orthostase-Prävention). Frau Keller steht bereit mit dem Toilettenstuhl. Frau M. sagt leise:\n\n> \"Geben Sie mir einen Moment. Meine Beine fühlen sich an, als gehörten sie mir nicht ganz. Wenn ich kurz warte, wird es besser — das kenne ich so vom Parkinson, das ist normal.\"",
+        body: "Frau M. sitzt am Bettrand, Füße auf dem Boden. Du hast den Schellong-Test abgewartet: RR im Liegen 138/82, dann mindestens eine Minute Sitzen mit Beinen unten — RR im Sitzen 132/80, kein Schwindel. Kreislauf stabil, Aufstehen jetzt vertretbar. Frau Keller steht bereit mit dem Toilettenstuhl. Frau M. sagt leise:\n\n> \"Geben Sie mir einen Moment. Meine Beine fühlen sich an, als gehörten sie mir nicht ganz. Wenn ich kurz warte, wird es besser — das kenne ich so vom Parkinson, das ist normal.\"",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Reden am Bettrand",
         // FIX (walkthrough B-14): Markdown-Underscores entfernt.
-        body: "Frau M. sitzt auf der Bettkante. Füße am Boden. Du hast ihr 3 Minuten gegeben (damit der Blutdruck nicht fällt). Frau Keller steht bereit mit dem Toilettenstuhl. Frau M. sagt leise:\n\n> \"Geben Sie mir einen Moment. Meine Beine fühlen sich an, als wären sie nicht meine. Wenn ich warte, wird es besser — das kenne ich vom Parkinson, das ist normal.\"",
+        body: "Frau M. sitzt auf der Bettkante. Füße am Boden. Du hast den Schellong-Test gemacht: Blutdruck im Liegen 138/82, im Sitzen (nach 1 Minute) 132/80. Der Kreislauf ist stabil. Sie kann sicher aufstehen. Frau Keller steht bereit mit dem Toilettenstuhl. Frau M. sagt leise:\n\n> \"Geben Sie mir einen Moment. Meine Beine fühlen sich an, als wären sie nicht meine. Wenn ich warte, wird es besser — das kenne ich vom Parkinson, das ist normal.\"",
         glossarBegriffe: [],
       },
       question: {
@@ -408,19 +408,19 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
                   "Sehr gut. 2 Personen zum Helfen. Klare Rollen. Wichtig: 'Sie bestimmen das Tempo.' Das gibt Frau M. die Kontrolle. Nach dem Sturz hat sie das Gefühl: Alles passiert mit ihr, nicht durch sie. Du gibst ihr die Kontrolle zurück.",
               },
               {
-                text: "\"Sehr gut — ich ziehe Sie hoch, dann gehen wir langsam.\"",
+                text: "\"Gut — ich nehme Sie unter den Achseln und helfe Ihnen hoch, dann gehen wir langsam.\"",
                 textB1:
-                  "\"Gut — ich ziehe Sie hoch, dann gehen wir langsam.\"",
+                  "\"Gut — ich nehme Sie unter den Achseln und helfe Ihnen hoch. Dann gehen wir langsam.\"",
                 patientResponse:
                   "Frau M.: \"Oh — äh, ja…\"",
                 patientResponseB1:
                   "Frau M.: \"Oh — ja…\"",
                 score: 1,
                 feedback:
-                  "Problematisch. 'Ich ziehe Sie hoch' ist a) kinästhetisch falsch (Pflegekraft-Rücken!) und b) entmachtet Frau M. Sie wird zum Objekt. Ein 2-Personen-Transfer mit geführter Bewegung (nicht Zug) ist sicherer und würdevoller.",
+                  "Problematisch. 'Unter den Achseln nehmen' ist a) kinästhetisch falsch (Hebeln statt Bewegung führen — dein Rücken plus Schultergelenk-Risiko bei Frau M.) und b) entmachtet sie (sie wird zum Objekt, verliert die Kontrolle). Korrekt: Frau M. macht die Bewegung selbst, du sicherst seitlich am Becken/Rumpf, Frau Keller auf der anderen Seite. Tempo bestimmt die Patientin.",
                 feedbackB1:
                   // FIX (walkthrough B-08): Sandwich-Prinzip — Loben vor Korrigieren.
-                  "Du willst Frau M. helfen — das ist richtig. Aber 'Ich ziehe Sie hoch' passt hier nicht. Erstens: Dein Rücken leidet. Zweitens: Frau M. wird zum Objekt, verliert die Kontrolle. Besser: 2 Personen, Bewegung führen — nicht ziehen. Du bist nah dran!",
+                  "Du willst Frau M. helfen — das ist richtig. Aber 'Unter den Achseln' passt hier nicht. Erstens: Dein Rücken leidet. Zweitens: Frau M.s Schulter kann verletzt werden (sie ist 82 mit Osteoporose). Drittens: Sie wird zum Objekt, verliert die Kontrolle. Besser: Sie macht die Bewegung selbst, du und Frau Keller sichern seitlich. Du bist nah dran!",
               },
             ],
           },
@@ -451,9 +451,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
                 patientResponseB1: "(Frau M. schaut beschämt.)",
                 score: 2,
                 feedback:
-                  "Das zeigt: Die Scham ist noch da. Du hast eine Chance: Reagiere sofort ('Sie sind nicht umständlich, Frau M. Sie machen das großartig').",
+                  "Wichtiger Moment. Frau M. zeigt offen ihre Scham — und zeigt damit Vertrauen zu dir. Die fachlich richtige Reaktion ist sofortige Validierung: 'Sie sind nicht umständlich, Frau M. Sie sind eine 82-jährige Frau, die nach einem Sturz das erste Mal aufsteht — und Sie machen das sehr gut.' Die Aussage hat zwei Teile: 1. Beschämung explizit zurückweisen ('nicht umständlich'). 2. Realität benennen (Sturz + Alter + erstmaliges Aufstehen). Damit nimmst du der Scham die Grundlage.",
                 feedbackB1:
-                  "Frau M. schämt sich noch. Du hast jetzt die Chance: Sag ihr, sie ist nicht umständlich. Sag: 'Sie machen das sehr gut.'",
+                  "Wichtig. Frau M. schämt sich. Sie zeigt dir das offen — sie vertraut dir. Was du jetzt sagst: 'Sie sind nicht umständlich, Frau M. Sie sind 82, Sie sind gestürzt, und Sie stehen das erste Mal wieder auf. Sie machen das sehr gut.' Zwei Teile: 1. 'Nicht umständlich' (Scham widersprechen). 2. Realität benennen (Alter, Sturz, erstes Aufstehen). So nimmst du der Scham den Boden.",
               },
             ],
           },
