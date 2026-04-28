@@ -46,7 +46,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
           "Handschuhe anziehen, Falte vorsichtig auseinander halten",
           "Inspektion: Rötung? Feuchtigkeit? Geruch? — genau hinschauen",
           "Trocken TUPFEN mit weichem Tuch — nicht reiben (Reibung erhöht Verletzungsgefahr bei sensibilisierter Haut)",
-          "Hautschutzpräparat dünn auftragen, wenn keine offene Wunde vorhanden",
+          "Atmungsaktives textiles Faltenvlies in die Falte einlegen (AWMF S2k Intertrigo 2022) — keine okklusiven Pasten IN die Falte; Hautschutz-Creme nur auf intakter Haut außerhalb der Falte",
           "Befund sofort notieren (was siehst du, was riechst du, was veränderst du)",
         ],
       },
@@ -384,9 +384,9 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
           unit: "mg/dl",
           tolerance: 1,
           explanation:
-            "254 − 180 = 74 mg/dl über dem Ziel. Ja, der Arzt muss informiert werden: Der Wert ist deutlich zu hoch und der BZ-Trend ist wichtig für die Beurteilung der Metformin-Dosierung. (DDG 2023: postprandiales Ziel < 180 mg/dl)",
+            "254 − 180 = 74 mg/dl über dem Ziel. Du dokumentierst den Wert und informierst den Arzt wegen der anhaltenden Hyperglykämie. Wichtig zur Einordnung: Metformin wurde erst Tag 1 angesetzt — die volle Wirkung tritt erst nach 1–2 Wochen ein, eine sofortige Dosis-Erhöhung ist nicht automatisch indiziert. Aufgabe der Pflege: Trend dokumentieren, Arzt informieren. Aufgabe des Arztes: über Metformin-Eindosierung, ggf. Bridging-Insulin oder andere Anpassungen entscheiden. (DDG 2023: postprandiales Ziel < 180 mg/dl; Metformin-Wirkeintritt 1–2 Wochen)",
           explanationB1:
-            "254 mg/dl − 180 mg/dl = 74 mg/dl über dem Ziel. Was machst du? Du informierst den Arzt. Warum? Der Wert ist deutlich zu hoch. Der Arzt muss prüfen ob Metformin ausreicht.",
+            "254 mg/dl − 180 mg/dl = 74 mg/dl über dem Ziel. Du dokumentierst den Wert und informierst den Arzt. Wichtig: Metformin wirkt erst nach 1–2 Wochen voll. Die Pflege misst und meldet — der Arzt entscheidet ob Dosis erhöht wird oder ob kurzzeitig Insulin nötig ist.",
         },
       },
     },
@@ -429,11 +429,11 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
             isCorrect: false,
           },
           {
-            text: "\"Natürlich. Zeigen Sie mir, wie Sie es machen — ich helfe nur wenn Sie wollen.\"",
+            text: "\"Natürlich. Zeigen Sie mir, wie Sie es machen — ich helfe nur wenn Sie wollen. Die Klingel lege ich Ihnen in Reichweite, ich bleibe im Zimmer in der Nähe.\"",
             feedback:
-              "Richtig. Ressourcenorientierte Pflege: stärken was da ist, nicht übernehmen was noch geht. Frau Schmidt macht es selbst, du beobachtest diskret ob sie es schafft und ob Korrekturen nötig sind. Das fördert Selbständigkeit und Würde. (§ 2 PflBG)",
+              "Richtig. Ressourcenorientierte Pflege (§ 2 PflBG) UND Sturzprophylaxe (DNQP Sturz 2022) zusammen. Frau Schmidt hat mehrere Sturz-Risiken: Adipositas Grad II, frisch eingestellter Diabetes (Hypoglykämie-Risiko unter Metformin), Belastungsinkontinenz, Atemnot bei Anstrengung — bei Aufnahme zudem Schwäche/Schwindel. Selbstpflege fördern: ja. Aber: Klingel in Reichweite, Pflegekraft in der Nähe, ggf. kurzer Vital-/Schellong-Check vor dem Aufstehen ans Bett-Ende. Du beobachtest diskret und greifst nur ein wenn nötig. So bleibt Würde gewahrt UND Sicherheit gegeben.",
             feedbackB1:
-              "Richtig! Du sagst: \"Ich helfe nur wenn Sie möchten.\" Du beobachtest diskret. Frau Schmidt macht es selbst. Das ist Pflege die stärkt — nicht übernimmt.",
+              "Richtig! Du sagst: \"Ich helfe nur wenn Sie möchten.\" Wichtig: Klingel in Reichweite legen — du bleibst in der Nähe. Frau Schmidt hat Sturz-Risiken (Adipositas, neuer Diabetes mit möglicher Unterzuckerung, Inkontinenz, Atemnot). Pflege die stärkt UND sichert.",
             isCorrect: true,
           },
           {

@@ -118,7 +118,11 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
       stepType: "highlight",
       bloomLevel: 4,
       kompetenzbereich: "I.1",
-      quellen: ["FG SKM — Handlungsempfehlungen Stomapflege (2023)"],
+      quellen: [
+        "FG SKM — Handlungsempfehlungen Stomapflege (2023)",
+        "DNQP — Expertenstandard Pflege von Menschen mit chronischen Wunden (2. Aktualisierung 2015)",
+        "AWMF S3-Leitlinie Lokaltherapie chronischer Wunden (Reg. 091-001)",
+      ],
       track: "basis",
       modus: "entdecker",
       lernziel: "ce02-nguyen-beob-haut-assessment",
@@ -165,9 +169,9 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
             text: "Wundnaht unteres Abdomen leicht gerötet, seröse Absonderung am unteren Rand",
             isError: true,
             reason:
-              "Dokumentationspflichtig — Wundnaht-Status post-OP ist tägliche Beobachtungspflicht. 'Leicht gerötet + seröse Absonderung' ist noch tolerierbar am 4. Tag, muss aber verlaufsbewertet werden. Zunahme von Rötung oder eitriger Absonderung = sofortige Arzt-Information.",
+              "Dokumentationspflichtig — Wundnaht-Status post-OP ist tägliche Beobachtungspflicht. Die fünf Kardinalsymptome der Wundinfektion (Calor / Wärme, Rubor / Rötung, Dolor / Schmerz, Tumor / Schwellung, Functio laesa / Funktionseinschränkung) immer mitprüfen. 'Leicht gerötet + seröse Absonderung' ist am 4. POD noch grenzwertig-tolerierbar. Eskalations-Kriterien (sofortige Arzt-Information): Rötungs-Ausdehnung > 2 cm um Wunde, eitrige/trübe Absonderung, zunehmender Druckschmerz, lokale Wärme, neue Schwellung, Fieber. Quelle: DNQP Pflege chronischer Wunden; AWMF Wundbehandlung.",
             reasonB1:
-              "Wichtig aufschreiben! Die Bauch-Wunde ist leicht rot. Das ist nach einer Operation normal — aber du schreibst es auf und schaust morgen wieder nach.",
+              "Wichtig aufschreiben! Die Bauch-Wunde ist leicht rot. Am 4. Tag nach der OP ist das grenzwertig — du musst genau hinschauen. Alarm-Zeichen für Wundinfektion: 1) Rötung wird größer (> 2 cm), 2) Eiter (gelb-grünlich) statt klar-seröser Flüssigkeit, 3) starke Schmerzen, 4) Wunde wird warm, 5) Fieber. Wenn eines davon kommt → sofort Arzt informieren.",
           },
           {
             text: "Stoma-Beutel: bräunlich-gelblicher, dünnflüssiger Inhalt, ca. 1/3 gefüllt",
@@ -411,7 +415,8 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
       bloomLevel: 3,
       kompetenzbereich: "I.1",
       quellen: [
-        "Heaton KW, Lewis SJ (1997). Stool Form Scale — Scandinavian Journal of Gastroenterology",
+        "AWMF S3-Leitlinie Prophylaxe der venösen Thromboembolie (Reg. 003-001, aktuelle Fassung)",
+        "Pflege heute, 7. Aufl. — Thromboseprophylaxe",
       ],
       track: "basis",
       modus: "puzzle",
@@ -419,8 +424,8 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "Thrombose-Assessment bei Herrn Nguyen",
-        body: "Du schaust kurz auf beide Beine von Herrn Nguyen. Vier Aussagen zur Thromboseprophylaxe und -assessment — welche stimmen?",
-        glossarBegriffe: ["Thrombose", "Heparin", "Homans-Zeichen", "Tumorerkrankung"],
+        body: "Du schaust kurz auf beide Beine von Herrn Nguyen — Inspektion (Schwellung, Verfärbung, Kollateralvenen) und vorsichtige Palpation. Vier Aussagen zur Thromboseprophylaxe und -assessment — welche stimmen?",
+        glossarBegriffe: ["Thrombose", "Heparin", "Wells-Score", "Tumorerkrankung"],
       },
       contentB1: {
         title: "Thrombose prüfen — was stimmt?",
@@ -433,10 +438,10 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
         trueFalseCards: [
           {
             statement:
-              "Warme, geschwollene Wade = Alarmzeichen → Arzt informieren (aber nicht aktiv auf die Wade drücken).",
+              "Warme, geschwollene, schmerzhafte Wade = Alarmzeichen → Arzt informieren, keine aktiven Provokationsmanöver durchführen.",
             isTrue: true,
             explanation:
-              "Richtig. Warme, geschwollene Wade ist ein klassisches Thrombose-Zeichen. Das sogenannte Homans-Zeichen (Schmerz bei Dorsalflexion des Fußes) gilt inzwischen als nicht zuverlässig — und aktives Drücken auf die Wade darf nicht mehr geübt werden (Emboliegefahr). Bei Verdacht: Arzt informieren, Bein hochlagern, keine Massage.",
+              "Richtig. Klinische Inspektions-Zeichen einer tiefen Beinvenenthrombose sind: Schwellung (oft einseitig), Wärmegefühl, Druckschmerz entlang der Venen (z.B. Wadenkompressions-Schmerz), Spannungsgefühl, Verfärbung, sichtbare Kollateralvenen. Diese Befunde meldest du dem Arzt. Aktive Provokationsmanöver (Homans-Zeichen = Dorsalflexion des Fußes, Payr-Zeichen = Druck auf Fußsohle) gelten heute als obsolet: niedrige Sensitivität und Spezifität, theoretisches Embolisierungs-Risiko durch Manipulation. Bewertung der Vortest-Wahrscheinlichkeit erfolgt klinisch (z.B. Wells-Score) plus Bildgebung. Quelle: AWMF S3-Leitlinie VTE-Prophylaxe (Reg. 003-001).",
           },
           {
             statement:

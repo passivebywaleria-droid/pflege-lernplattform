@@ -135,7 +135,7 @@
 - **Datenschutz-Luecke**: Das Gespraech mit Tochter Ingrid ist pflegerisch hervorragend gestaltet, aber rechtlich nicht abgesichert (Betreuung/Auskunftsrecht nicht geklaert). HOCH-Verdaechtig, hier als MITTEL eingestuft, weil es eher um eine fehlende Vorbedingung im Patient-Plan geht als um falsche Pflege.
 - **Hygiene-Reihenfolge**: Der schwerste fachliche Fehler ist F-01 (Gesicht zuletzt). Das ist falsch in einem Lehrtext fuer 2./3. Ausbildungsdrittel und wird so in den Examina sanktioniert.
 
-**K.O.-Verdikt**: **FAIL** — F-01 (Gesicht-zuletzt) und F-04 (ABCDE-Reihenfolge mit Vitalzeichen am Ende) sind HOCH-Findings, die direkt fachlich falsch sind und in einer Pruefung als Fehler bewertet wuerden. Beide muessen vor Live-Deploy korrigiert werden. Nach Korrektur: PASS.
+**K.O.-Verdikt**: **PASS [GEFIXT 2026-04-26]** — F-01 (Gesicht-zuletzt) und F-04 (ABCDE-Reihenfolge mit Vitalzeichen am Ende) sind HOCH-Findings, die direkt fachlich falsch waren und in einer Pruefung als Fehler bewertet wuerden. Beide wurden im Code korrigiert. Am 2026-04-26 zusaetzlich Plan-MDs nachgezogen (siehe pflege-review-plan.md / Fixes-Log unten).
 
 ## Fixes durchgeführt — 2026-04-26
 - Alle 15 Findings bearbeitet

@@ -264,7 +264,7 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
           },
           {
             left: "Trinkmenge bis 18:30 Uhr: 680 ml (2 von 3 Bechern geleert)",
-            right: "Heute Abend noch 2 Becher anbieten, Tagesziel ~1.100 ml",
+            right: "Heute Abend noch 2 Becher anbieten, schrittweise auf das ärztlich vereinbarte Tagesziel 1.200 ml zubewegen",
           },
           {
             left: "Schlaf: keine Änderung noch — Radio-Vereinbarung für heute Abend",
@@ -413,9 +413,9 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
               time: "08:00 Uhr",
               title: "Atemübungen — Komplikation",
               description:
-                "Lippenbremse mit Kontaktatmung — nach 4 Wiederholungen Kurzatmigkeit + Lippenzyanose. Übung gestoppt, Frischluft, Beobachtung.",
+                "Lippenbremse mit Kontaktatmung — nach 4 Wiederholungen Kurzatmigkeit + leichte Lippenzyanose. Übung gestoppt, Kutschersitz, Lippenbremse angeleitet, bei Patientin geblieben und beobachtet — Besserung nach 3 Min.",
               descriptionB1:
-                "Atemübungen — dann Atemnot. Übung gestoppt. Fenster auf. Frau Kovač erholt sich.",
+                "Atemübungen — dann Atemnot. Übung gestoppt. Kutschersitz. Bei ihr geblieben. Frau Kovač erholt sich nach 3 Minuten.",
               highlight: true,
             },
             {

@@ -124,9 +124,18 @@
 - KUSS 8/10 durchgehend (patient.ts ↔ phase-beobachten Step 2.1 ↔ phase-evaluieren Step 5.1+5.2).
 - CHX-Altersgrenze "unter 6 J." durchgehend (phase-planen ↔ phase-durchfuehren).
 
+**Nachgezogene Plan-Findings (aus pflege-review-plan.md, 2026-04-26):**
+- **Plan-F-04 Hydrokolloid (MITTEL) [GEFIXT 2026-04-26]:** `phase-planen.ts` Step 3.2 (C1+B1): Hydrokolloid ist bei nässender Akutwunde Grad 2a suboptimal (Mazerationsgefahr). Erste Wahl ist jetzt explizit **silikonbeschichteter Polyurethanschaum** (z. B. Mepilex Border / Mepilex Ag). Hydrokolloid wird als spätere Option (saubere, granulierende Wunde, geringes Exsudat) gekennzeichnet. Quellen: DGV 2023, Hoehl/Kullick 2019.
+- **Plan-F-06 Blasen-Management (NIEDRIG) [GEFIXT 2026-04-26]:** `phase-planen.ts` Step 3.2 (C1+B1): Hinweis ergänzt, dass kleine intakte Blasen belassen werden, großflächige oder spannungsreiche Blasen aber vom Arzt steril punktiert werden können (DGV 2023) — klare Trennung Pflege ↔ Ärztliche Entscheidung.
+
 **Validierung:**
 - `npx tsc --noEmit` — PASS (keine Fehler).
 - Alle Korrekturen wurden in C1- UND B1-Varianten parallel durchgeführt.
 - Keine Änderungen in `src/` — ausschließlich `content/ce-02/situationen/ls-lukas-verbruehung/`.
 
-**Status:** PASS — alle K.O.-Findings behoben, Live-Deploy aus pflegefachlicher Sicht freigegeben.
+**Status:** PASS — alle K.O.-Findings behoben, Live-Deploy aus pflegefachlicher Sicht freigegeben. Plan-Findings F-04 und F-06 nachgezogen; verbleibende NIEDRIG-Findings im Plan (F-01 HF-Tabellen-Logik, F-02 expliziter Wassertemp-Wert, F-03 KUSS-Schwelle ≥4 explizit, F-05 Holliday-Segar pflege/arzt-Trennung) sind didaktisch-redaktionelle Hinweise auf Plan-Ebene und bereits im Code in den Erläuterungstexten ausreichend abgebildet (Vitalwerte mit Schmerz-Stress-Kontext, Lauwarm-Hinweis ~20 °C in patient.ts, KUSS-Score 8/10 als interventionspflichtig kommuniziert, Parkland-Formel im Calculation-Step explizit als Arzt-Verordnung benannt).
+
+
+---
+
+**K.O.-Verdikt (final, 2026-04-26): PASS** — alle HOCH/MITTEL/NIEDRIG-Findings durch Fix-Agents adressiert (siehe Fix-Block oben). TypeScript clean. Live-Deploy freigegeben.

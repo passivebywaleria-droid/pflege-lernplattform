@@ -58,6 +58,7 @@ const BASE_XP: Record<StepType, number> = {
   estimation: 15,
   crowdPoll: 10,
   pflegewagen: 20,
+  inlineWissen: 5,    // Lese-Snack, kein Quiz — gleich wie text
 };
 
 /**

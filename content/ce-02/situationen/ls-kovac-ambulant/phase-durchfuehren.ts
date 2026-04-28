@@ -130,7 +130,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Komplikation 1 — Kurzatmigkeit",
-        body: "Nach der 4. Wiederholung lehnt sich Frau Kovač zurück. Ihre Atemfrequenz steigt auf ca. 22/Min, leichte Lippenzyanose ist sichtbar. Sie sagt:\n\n**\"Warten Sie kurz. Wenn ich schnell mach, wird mir schwindelig. Ich kenn das schon.\"**\n\nWas tust du?",
+        body: "Nach der 4. Wiederholung lehnt sich Frau Kovač zurück. Ihre Atemfrequenz steigt auf ca. 22/Min, **leichte Lippenzyanose** ist sichtbar. Sie sagt:\n\n**\"Warten Sie kurz. Wenn ich schnell mach, wird mir schwindelig. Ich kenn das schon.\"**\n\n**Wichtig zur Befund-Hierarchie:** AF 22/Min allein wäre bei COPD III nach Belastung noch im Erwartungsbereich. Aber **Lippenzyanose** ist das relevantere Kriterium — sichtbare Zyanose zeigt peripheren Sauerstoffmangel und ist immer ernst zu nehmen. Befund-Reihenfolge: Zyanose > Bewusstseinslage > Atemfrequenz.\n\nWas tust du?",
         glossarBegriffe: [
           "Lippenzyanose",
           "Tachypnoe",
@@ -148,12 +148,12 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
         fragetext: "Frau Kovač bekommt Kurzatmigkeit nach der Atemübung — was tust du?",
         branchingOptions: [
           {
-            text: "Ich unterbreche sofort die Übung, lasse sie aufrecht sitzen, öffne das Fenster für Frischluft, bleibe bei ihr und beobachte. Wenn die Zyanose zunimmt oder SpO2 unter 88 % fällt — Notarzt.",
+            text: "Ich unterbreche sofort die Übung, lasse sie aufrecht sitzen (Kutschersitz wenn möglich), bleibe bei ihr und beobachte SpO2/Atmung/Zyanose. Wenn keine Besserung in 3-5 Minuten oder die Zyanose zunimmt oder SpO2 unter 88 % fällt — Notarzt.",
             isCorrect: true,
             feedback:
-              "Richtig. Das ist die korrekte Reaktion bei Belastungsdyspnoe bei COPD III:\n1. Übung sofort stoppen (keine weitere Belastung)\n2. Aufrechte Position sichern — Kutschersitz wenn Frau Kovač es kann\n3. Frischluft (Fenster)\n4. Bei ihr bleiben und beobachten\n5. Eskalationskriterien im Kopf: SpO2 <88 %, zunehmende Zyanose, Bewusstseinstrübung → Notarzt\nQuelle: (GOLD-Report COPD 2023)",
+              "Richtig. Das ist die korrekte didaktische Reihenfolge bei Belastungsdyspnoe bei COPD III:\n1. **Übung sofort stoppen** — keine weitere Belastung der erschöpften Atempumpe\n2. **Aufrechte Position sichern** — Kutschersitz wenn Frau Kovač es kann (fixiert die Atemhilfsmuskulatur, reduziert die Atemarbeit)\n3. **Lippenbremse anleiten** — falls Frau Kovač sie noch nicht spontan macht\n4. **Bei ihr bleiben und beobachten** — Atemfrequenz, Lippenfarbe, Bewusstseinslage\n5. **Frischluft** nur wenn raumklimatisch sinnvoll (Sommer/warme Räume) — im Winter Fenster nicht aufreißen, kalte Luft kann bei COPD einen Bronchospasmus auslösen. Stattdessen: ruhige, nicht-schwüle Raumluft sicherstellen\n6. **Eskalationskriterien im Kopf:** keine Besserung in 3-5 Min, SpO2 <88 %, zunehmende Zyanose, Bewusstseinstrübung → Notarzt rufen — und Erstmaßnahmen weiter durchführen\n\nKernpunkt: Erstmaßnahme ist **Stoppen + Ruhe + aufrechte Position**, nicht das Fenster. Quelle: (GOLD-Report COPD 2023)",
             feedbackB1:
-              "Richtig. Übung stoppen. Aufrecht sitzen lassen. Fenster auf. Bei ihr bleiben. Wenn es schlimmer wird — Notarzt.",
+              "Richtig. Erst Übung stoppen. Aufrecht sitzen lassen (Kutschersitz). Lippenbremse anleiten. Bei ihr bleiben. Beobachten: wird es besser oder schlimmer?\n\n**Achtung Fenster:** Im Sommer ist Frischluft hilfreich. Im Winter NICHT — kalte Luft kann bei COPD die Bronchien zusammenziehen. Dann Fenster nur kurz oder gar nicht.\n\nWenn nach 3-5 Min keine Besserung: Notarzt rufen.",
           },
           {
             text: "Ich sage: 'Noch eine Runde, dann hören wir auf.' Sie kennt das ja schon.",
@@ -169,7 +169,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
             feedback:
               "Auch korrekt — und im Zweifel nie falsch. In der ambulanten Solo-Situation gilt: Wer 112 wählt, hat nicht 'zu früh' gehandelt. Lippenzyanose + AF ~22/Min ist ein klinisches Warnzeichen, du bist allein, du hast kein SpO2-Wert, kein Backup im Nebenraum. Optimal wäre: Erstmaßnahmen (Übung stoppen + aufrechte Position + Frischluft) machst du **parallel** zum Notarzt-Anruf — nicht entweder/oder. Pfad A ist die didaktisch elegantere Reihenfolge (erst entlasten, dann eskalieren bei <5 Min keine Besserung), aber 112 wählen ist im Zweifel immer richtig. Faustregel ambulant: lieber einmal zu viel anrufen als einmal zu spät. Quelle: (GOLD-Report COPD 2023; ABCDE-Schema)",
             feedbackB1:
-              "Auch richtig. Du bist allein in der Wohnung. Du siehst blaue Lippen. Im Zweifel ist 112 nie falsch. Noch besser: Erst stoppen, aufrecht setzen, Fenster auf — und gleichzeitig (parallel) Notarzt rufen. Aber: 112 anzurufen ist nie ein Fehler. Lieber einmal zu viel als einmal zu spät.",
+              "Auch richtig. Du bist allein in der Wohnung. Du siehst blaue Lippen. Im Zweifel ist 112 nie falsch. Noch besser: Erst stoppen, aufrecht setzen (Kutschersitz), Lippenbremse anleiten — und gleichzeitig (parallel) Notarzt rufen. Aber: 112 anzurufen ist nie ein Fehler. Lieber einmal zu viel als einmal zu spät.",
           },
         ],
       },
@@ -192,17 +192,18 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Bewegungsübungen im Sitzen — in welcher Reihenfolge?",
-        body: "Frau Kovač hat sich erholt. Jetzt kommen die Bewegungsübungen für Knie und Sprunggelenke — im Sitzen, schonend. Welche Reihenfolge ist klinisch sinnvoll?",
+        body: "Frau Kovač hat sich erholt. Jetzt kommen die Bewegungsübungen für Knie und Sprunggelenke — im Sitzen, schonend.\n\n**Pflicht-Prinzip — Kinästhetik (Hatch/Maietta):**\nFrau Kovač **macht alle Bewegungen selbst aktiv**. Du **begleitest und sicherst verbal**, du **greifst nicht** in die Bewegung ein. Bei einer 84-jährigen mit Kontrakturen ist Eigenbewegung das therapeutische Wirkprinzip — nicht die passive Mobilisation durch dich. Du gibst Tempo-Vorgaben, korrigierst verbal, sicherst durch deine Anwesenheit. Frau Kovač bestimmt das Tempo.\n\nWelche Reihenfolge ist klinisch sinnvoll?",
         glossarBegriffe: [
           "Kontraktur",
           "Sprunggelenkmobilisation",
           "Wadenmuskel-Pumpe",
+          "Kinästhetik",
         ],
       },
       contentB1: {
         title: "Welche Reihenfolge bei den Bewegungs-Übungen?",
-        body: "Frau Kovač hat sich erholt. Jetzt kommen Übungen für Knie und Sprunggelenke. Sitzen ist sicherer als Stehen. Sortiere die Schritte in die richtige Reihenfolge.",
-        glossarBegriffe: ["Kontraktur", "Wadenmuskel-Pumpe"],
+        body: "Frau Kovač hat sich erholt. Jetzt kommen Übungen für Knie und Sprunggelenke. Sitzen ist sicherer als Stehen.\n\n**Wichtig — Kinästhetik:** Frau Kovač **bewegt sich selbst**. Du **machst die Bewegung NICHT für sie**. Du sagst was sie machen soll. Du schaust hin. Du sicherst (z.B. dass sie nicht vom Sessel rutscht). Aber: Sie führt die Bewegung — du nicht. Sie bestimmt das Tempo.\n\nSortiere die Schritte in die richtige Reihenfolge.",
+        glossarBegriffe: ["Kontraktur", "Wadenmuskel-Pumpe", "Kinästhetik"],
       },
       question: {
         fragetext:
@@ -268,9 +269,9 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
             text: "Ich gebe das Telefon zu Frau Kovač zurück: Sie entscheidet, was ich sagen darf.",
             isCorrect: false,
             feedback:
-              "Guter Ansatz — die Grundhaltung stimmt. Aber: Auch eine mündliche Erlaubnis von Frau Kovač am Telefon reicht nicht. Die Schweigepflichtsentbindung muss schriftlich dokumentiert und beim Pflegedienst hinterlegt sein. 'Sie entscheiden' ist die richtige Haltung — aber die korrekte Umsetzung ist: Pflegedienst anrufen, Formular vorlegen, dann kann Darko regelmäßig informiert werden. Für heute bleibt: keine Auskunft per Telefon. Geh zurück und wähle Pfad A.",
+              "Vertretbarer Sofort-Schritt — die Grundhaltung ist genau richtig (Frau Kovač entscheidet, Patientenautonomie wird respektiert). In der häuslichen Praxis ist das oft die deeskalierendste Reaktion und wird tatsächlich häufig so gewählt.\n\n**Aber juristisch unvollständig:** Eine mündliche Erlaubnis von Frau Kovač am Telefon reicht für eine sichere Datenweitergabe nicht aus. § 203 StGB und DSGVO Art. 9 verlangen eine **dokumentierte** Schweigepflichtsentbindung — schriftlich, mit Datum, beim Pflegedienst hinterlegt. Wenn du jetzt am Telefon Auskunft gibst (auch mit Frau Kovačs mündlichem 'Ja, sagen Sie's ihm'), und sie morgen vergisst, dass sie es erlaubt hat, oder ein Konflikt im Familiensystem entsteht — dann fehlt dir der Nachweis.\n\n**Sauberer Weg:** Pfad A heute (keine Auskunft), und in den nächsten Tagen mit Frau Kovač das Formular durchgehen. Sie entscheidet — schriftlich. Dann kann Darko regelmäßig informiert werden. Bonus: Siehe Phase 3, optionalen Step zu Angehörigen-Einbindung.\n\nFazit: Haltung richtig, Umsetzung heute noch nicht haltbar. Geh zurück und wähle Pfad A.",
             feedbackB1:
-              "Die Idee ist gut — Frau Kovač entscheidet. Aber: Das muss schriftlich beim Pflegedienst hinterlegt sein. Mündlich am Telefon reicht nicht. Heute: keine Auskunft geben. Pfad A ist richtig.",
+              "Die Idee ist gut — Frau Kovač entscheidet. Du hast die richtige Haltung. **Aber:** Mündlich am Telefon reicht nicht. Das Gesetz sagt: Schweigepflicht-Erlaubnis muss **schriftlich** sein und beim Pflegedienst liegen. Sonst hast du keinen Beweis falls Frau Kovač später sagt: 'Das hab ich nicht erlaubt.'\n\n**Besser:** Heute Pfad A (keine Auskunft). Nächste Tage: mit Frau Kovač das Formular ausfüllen. Dann darf Darko regelmäßig informiert werden.\n\nGeh zurück zu Pfad A.",
           },
         ],
       },
@@ -503,7 +504,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
             },
             {
               front: "Keine Besserung nach 5–10 Min Ruhe und Lageänderung",
-              back: "Wenn Übung stoppen, Kutschersitz und Frischluft keine Besserung bringen: Notarzt. Eskalation nach Plan.",
+              back: "Wenn Übung stoppen, Kutschersitz und Lippenbremse keine Besserung bringen: Notarzt. Eskalation nach Plan.",
               backB1:
                 "Wenn es nach Ruhe nicht besser wird: Notarzt rufen.",
             },

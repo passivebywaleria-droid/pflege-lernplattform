@@ -275,3 +275,8 @@ content/ce-02/situationen/ls-kovac-ambulant/
 
 **Vorher:** FAIL (2× HOCH, 9× MITTEL, 8× NIEDRIG)
 **Nachher:** PASS — alle 19 Findings adressiert, davon 2 K.O. behoben, 3 strukturelle Ergänzungen (SGB XI, Touren-Planung, Angehörigen-Ressource) eingebaut.
+
+
+---
+
+**K.O.-Verdikt (final, 2026-04-26): PASS** — alle HOCH/MITTEL/NIEDRIG-Findings durch Fix-Agents adressiert (siehe Fix-Block oben). TypeScript clean. Live-Deploy freigegeben.

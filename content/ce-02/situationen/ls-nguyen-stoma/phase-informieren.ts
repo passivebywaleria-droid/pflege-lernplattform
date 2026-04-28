@@ -334,8 +334,8 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
       bloomLevel: 3,
       kompetenzbereich: "I.1",
       quellen: [
-        "Pflege heute, 7. Aufl. (Heparin-Applikation post-OP)",
-        "FG SKM — Handlungsempfehlungen Stomapflege (2023)",
+        "Pflege heute, 7. Aufl. — Subkutane Injektion / Heparin-Applikation",
+        "AWMF S3-Leitlinie Prophylaxe der venösen Thromboembolie (Reg. 003-001)",
       ],
       track: "vertiefung",
       modus: "challenge",
@@ -343,12 +343,12 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Heparin-Injektion bei Herrn Nguyen: Wo?",
-        body: "Herr Nguyen bekommt täglich Heparin (niedermolekulares Heparin, NMH) zur Thromboseprophylaxe. Standard-Ort ist eigentlich die Bauchdecke periumbilikal (2–3 cm Abstand zum Nabel). ABER: Herr Nguyen hat eine frische Bauchdeckenwunde im unteren Abdomen und ein Kolostoma im linken Unterbauch. Ein Mindestabstand zur Wunde und zum Stoma ist Pflicht. Wo gibst du die Heparin-Spritze konkret bei Herrn Nguyen?",
-        glossarBegriffe: ["niedermolekulares Heparin", "subkutan", "Thromboseprophylaxe"],
+        body: "Herr Nguyen bekommt täglich Heparin (niedermolekulares Heparin, NMH) zur Thromboseprophylaxe. Standard-Ort ist die Bauchdecke periumbilikal mit 3–5 cm Abstand zum Nabel und alternierenden Quadranten (Stelle jeden Tag rotieren). ABER: Herr Nguyen hat eine frische Bauchdeckenwunde im unteren Abdomen und ein Kolostoma im linken Unterbauch. Mindestabstand 5 cm zu Wunde und Stoma ist Pflicht. Wo gibst du die Heparin-Spritze konkret?",
+        glossarBegriffe: ["niedermolekulares Heparin", "subkutan", "Thromboseprophylaxe", "alternierende Quadranten"],
       },
       contentB1: {
         title: "Heparin-Spritze bei Herrn Nguyen — wo?",
-        body: "Herr Nguyen bekommt jeden Tag eine Heparin-Spritze. Heparin schützt vor Thrombose (= Blutgerinnsel in der Vene). Normal: Bauchdecke, 2–3 cm neben dem Nabel. Aber: Herr Nguyen hat eine frische Wunde am Bauch und ein Stoma. Wo gibst du die Spritze?",
+        body: "Herr Nguyen bekommt jeden Tag eine Heparin-Spritze. Heparin schützt vor Thrombose (= Blutgerinnsel in der Vene). Normal: Bauchdecke, 3–5 cm neben dem Nabel — und du wechselst die Stelle täglich (alternierende Quadranten). Aber: Herr Nguyen hat eine frische Wunde am Bauch und ein Stoma. Mindestens 5 cm Abstand zu Wunde und Stoma. Wo gibst du die Spritze?",
         glossarBegriffe: ["Heparin", "Thrombose", "Spritze"],
       },
       question: {
@@ -360,17 +360,17 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
             text: "Bauchnabelnah, 2–3 cm Abstand zum Nabel — wie im Standard",
             isCorrect: false,
             explanation:
-              "Periumbilikal ist der allgemeine Standard-Ort — aber bei Herrn Nguyen ist der Spielraum zu eng. Wunde unten + Stoma links = Mindestabstand 5 cm zu beiden lässt sich periumbilikal kaum einhalten. In dieser konkreten Situation weicht man auf laterale Oberschenkelaußenseite oder kontralateralen Oberbauch aus.",
+              "Falsch. Standard-Abstand zum Nabel ist 3–5 cm (nicht 2–3 cm — das ist zu nah am Nabel und der Linea alba). Außerdem ist bei Herrn Nguyen der Spielraum zu eng: frische OP-Naht im unteren Abdomen + Kolostoma links + Mindestabstand 5 cm zu Wunde/Stoma lässt sich periumbilikal kaum einhalten. In dieser konkreten Situation weicht man auf laterale Oberschenkelaußenseite oder kontralateralen Oberbauch aus.",
             explanationB1:
-              "Nicht ideal bei Herrn Nguyen. Die Bauchdecke ist Standard — aber er hat dort eine Wunde und ein Stoma. Es gibt zu wenig Platz.",
+              "Falsch. Der Standard-Abstand zum Nabel ist 3–5 cm — nicht 2–3 cm. Und bei Herrn Nguyen ist die Bauchdecke nicht gut nutzbar: Er hat dort eine Wunde und ein Stoma. Es gibt zu wenig Platz.",
           },
           {
-            text: "Laterale Oberschenkelaußenseite oder kontralateraler Oberbauch — mit ≥5 cm Abstand zu Wunde und Stoma",
+            text: "Laterale Oberschenkelaußenseite oder kontralateraler Oberbauch — mit ≥5 cm Abstand zu Wunde und Stoma, alternierende Quadranten",
             isCorrect: true,
             explanation:
-              "Richtig. Wenn die Bauchdecke wegen Wunde + Stoma nicht sicher nutzbar ist, weicht man auf alternative Standardorte aus: laterale Oberschenkelaußenseite (für NMH freigegeben) oder kontralateraler Oberbauch mit deutlich Abstand. Mindestabstand zu Wunde und Stoma ≥5 cm. Außerdem: Injektionsorte rotieren, gereizte oder hämatombelastete Stellen meiden. Quelle: Pflege heute 7. Aufl. (Heparin-Applikation post-OP); FG SKM 2023.",
+              "Richtig. Wenn die Bauchdecke wegen Wunde + Stoma nicht sicher nutzbar ist, weicht man auf alternative Standardorte aus: laterale Oberschenkelaußenseite (für NMH freigegeben) oder kontralateraler Oberbauch. Mindestabstand: 3–5 cm vom Nabel und ≥5 cm zu OP-Naht und Stoma. Injektionsorte werden in alternierenden Quadranten rotiert (z.B. Tag 1 rechts oben, Tag 2 links oben, Tag 3 rechts unten, Tag 4 links unten — bei Herrn Nguyen: Bauchdecke gemieden, also Oberschenkel-Quadranten rotieren). Gereizte oder hämatombelastete Stellen meiden. Quelle: Pflege heute 7. Aufl.; AWMF S3-Leitlinie VTE-Prophylaxe.",
             explanationB1:
-              "Richtig. Wenn die Bauchdecke nicht geht (Wunde + Stoma) — dann seitlich am Oberschenkel oder oben am Bauch, weit weg von Wunde und Stoma. Mindestens 5 cm Abstand.",
+              "Richtig. Wenn die Bauchdecke nicht geht (Wunde + Stoma) — dann seitlich am Oberschenkel oder oben am Bauch, weit weg von Wunde und Stoma (≥5 cm Abstand). Du wechselst die Stelle jeden Tag — nicht immer rechts, nicht immer links. Das nennt man 'alternierende Quadranten'.",
           },
           {
             text: "Oberarm",

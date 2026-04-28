@@ -10,7 +10,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
   titel: "Informieren & Ankommen",
   titelB1: "Ankommen bei Frau Schmidt",
   kontext:
-    "Es ist 08:30 Uhr, Frühdienst auf der Inneren Station. Du stehst auf dem Flur, noch außerhalb von Zimmer 8. Frau Bayraktar hat dir Frau Schmidt übergeben — kurz, mündlich. Du weißt: 68 Jahre, Adipositas, Diabetes, seit drei Tagen hier. Mehr noch nicht. Bevor du eintrittst, liest du die Pflegeübergabe im System. Und noch etwas beschäftigt dich: Du bist dir nicht sicher, wie du mit jemandem über Ernährung sprichst, dem anzusehen ist, dass das Essen in ihrem Leben eine besondere Rolle spielt. Das ist keine einfache Situation.",
+    "Es ist 08:30 Uhr, Frühdienst auf der Inneren Station. Du stehst auf dem Flur, noch außerhalb von Zimmer 8. Frau Bayraktar hat dir Frau Schmidt übergeben — kurz, mündlich. Du weißt: 68 Jahre, Adipositas, Diabetes, seit drei Tagen hier. Mehr noch nicht. Bevor du eintrittst, liest du die Pflegeübergabe im System. Und noch etwas beschäftigt dich: Du bist dir nicht sicher, wie du mit jemandem über Ernährung sprichst, bei dem das Thema sichtbar Bedeutung hat — ohne dass du die Geschichte dahinter kennst. Das ist keine einfache Situation.",
   kontextB1:
     "Es ist 08:30 Uhr. Du arbeitest im Frühdienst. Du stehst vor Zimmer 8. Frau Schmidt liegt dort. Deine Praxisanleiterin sagt: \"Geh zu Frau Schmidt. Mach die Morgenpflege.\" Du weißt: Frau Schmidt ist 68 Jahre alt. Sie hat Diabetes (= Zucker-Krankheit) und starkes Übergewicht (= Adipositas). Sie ist seit 3 Tagen im Krankenhaus. Du liest zuerst die Pflegeübergabe im Computer. Dann gehst du ins Zimmer.",
   kernSteps: [

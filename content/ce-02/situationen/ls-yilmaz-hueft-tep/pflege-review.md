@@ -170,3 +170,23 @@ Alle 13 Findings (3 HOCH, 6 MITTEL, 4 NIEDRIG) sowie die 3 Cross-Step-Probleme (
 - Quellen-Felder (`quellen[]`) der betroffenen Steps unverändert; die genutzten Standards (DGG 2022, DGU 2022, DNQP 2020, DGN Schellong, AAS 2011, NPUAP/EPUAP 2019, Kinästhetik Hatch/Maietta) waren bereits referenziert.
 
 **Neuer K.O.-Status: PASS** — alle 3 HOCH-Findings sowie die 6 MITTEL- und 4 NIEDRIG-Findings inkl. Cross-Step-Probleme sind im Content behoben.
+
+---
+
+## Plan-Sync-Update (2026-04-26)
+
+Im Plan-Review (pflege-review-plan.md vom 2026-04-26) wurde F-P10 (NIEDRIG) explizit als eigenständige Innenrotations-Lehre gefordert. Im ursprünglichen Code war Innenrotation nur indirekt via "Keine Beinkreuzung" abgedeckt. Heute ergänzt:
+
+- **phase-informieren.ts Step 1.4 matching** — auf 5 Paare erweitert. Alle drei DGU-S2k-Verbote (2022) explizit gelehrt:
+  1. Hüftflexion < 90°
+  2. Adduktionsverbot (kein Beinkreuzen über Mittellinie)
+  3. Innenrotationsverbot (operiertes Bein nicht nach innen drehen, 6–12 Wochen post-OP)
+- Kissen zwischen den Beinen jetzt als eigenständige *mechanische* Adduktionsprophylaxe getrennt (vorher mit Beinkreuzungs-Begründung verwechselt).
+- body C1 + B1 + glossarBegriffe um "Innenrotation" und Geltungsdauer (6–12 Wochen) erweitert.
+
+TypeScript-Check der ls-yilmaz-hueft-tep-Files weiterhin fehlerfrei.
+
+
+---
+
+**K.O.-Verdikt (final, 2026-04-26): PASS** — alle HOCH/MITTEL/NIEDRIG-Findings durch Fix-Agents adressiert (siehe Fix-Block oben). TypeScript clean. Live-Deploy freigegeben.

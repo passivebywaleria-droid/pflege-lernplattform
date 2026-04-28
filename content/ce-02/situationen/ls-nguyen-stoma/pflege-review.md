@@ -127,6 +127,30 @@ Es gibt jedoch einige fachliche Unsauberkeiten — vor allem rund um Stomapflege
 - Alle 12 Findings bearbeitet
 - K.O.-Verdikt: PASS
 
+## Nachzug Plan-Findings (Stomapflege 2026) — 2026-04-26 (Update)
+
+Zusätzliche Fixes für die in `pflege-review-plan.md` aufgeführten Findings (alle Severities):
+
+- **Plan-F-01 HOCH (Hautschutz-Lochgröße):** Neuer Step 4.1b `ce02-nguyen-dur-01b-lochgroesse-messen` (MC, Bloom 4) in `phase-durchfuehren.ts` — explizit Lehrinhalt zu Schablone, Stoma + 2 mm, Anti-Pattern "Wert aus Patientenblatt übernehmen". Phase 3 Step 3.2 von 8 auf 9 Schritte erweitert (neuer Schritt s7: Schablonen-Messung). Phase 4 Kontext bereits zuvor angepasst.
+- **Plan-F-02 HOCH (Homans-Zeichen obsolet):** Phase 2 Step 2.6 Aussage 1 reformuliert: warme/geschwollene/schmerzhafte Wade als Inspektionsbefund → Arzt informieren, KEINE aktiven Provokationsmanöver (Homans, Payr). Erklärung benennt Wells-Score, Sensitivität/Spezifität-Problematik, Embolie-Risiko durch Manipulation. Glossar "Homans-Zeichen" → "Wells-Score". Quelle auf AWMF S3-Leitlinie VTE-Prophylaxe umgestellt.
+- **Plan-F-03 MITTEL (Selbstversorgung primär):** Phase 4 Step 4.4 K2 Score-3-Antwort umformuliert — Selbstversorgung durch Herrn Nguyen primäres Ziel, Mai als Backup/Begleitung (Empowerment statt Übernahme, FG SKM 2024 + DNQP Beziehungsgestaltung 2018). `patient.ts` hintergrundB1 + `patient-plan.md` Versorgungsperspektive entsprechend angepasst.
+- **Plan-F-04 MITTEL (Heparin-Abstand):** Phase 1 opt3 — Standard-Abstand zum Nabel auf 3–5 cm präzisiert (vorher 2–3 cm), alternierende Quadranten als Pflicht-Element ergänzt. Quelle: AWMF VTE-Leitlinie + Pflege heute 7. Aufl.
+- **Plan-F-05 MITTEL (Wundinfektions-Eskalation):** Phase 2 Step 2.3 Highlight-Reason für Wundnaht — 5 Kardinalsymptome (Calor/Rubor/Dolor/Tumor/Functio laesa) + Eskalationskriterien (Rötung > 2 cm, eitrige Absonderung, Druckschmerz, Wärme, Fieber). Quellen DNQP Wunden + AWMF Lokaltherapie ergänzt.
+- **Plan-F-06 NIEDRIG (Schwerkraft-Begründung):** Phase 4 Step 4.2 body + Phase 3 Step 3.2 Schritte s2/s3 — Schwerkraft-Prinzip explizit ("hält Stuhl im Beutel zurück").
+- **Plan-F-07 NIEDRIG (MTPS-Eskalation):** Phase 5 opt-1 Kompressionsstrümpfe-Erklärung — Maßnahmen-Auslassung dokumentieren, Schmerz an Arzt zurückmelden, Bedarfsanalgesie 30 Min vorher, dann anlegen (statt verschieben).
+
+### Cross-Step-Konsistenz nach Plan-Fix
+- Lochgrößen-Messung: Phase 3 Step 3.2 Schritt s7 + neuer Phase 4 Step 4.1b + Phase 4 Kontext — alle drei konsistent (Stoma + 2 mm, Schablone, Patientenblatt-Wert nicht übernehmen).
+- Selbstversorgungs-Linie: patient.ts hintergrundB1 + patient-plan.md + Phase 4 K2 — Mai durchgängig als unterstützendes Backup, nicht Hauptpflegeperson.
+- Heparin-Ort: Phase 1 opt3 + Phase 5 opt1 + Phase 6 matching weiterhin konsistent (laterale Oberschenkelaußenseite, ≥5 cm Abstand, alternierende Quadranten).
+
+### Validierung Update
+- `npx tsc --noEmit` — PASS (0 Fehler)
+- 7/7 Plan-Findings im Code adressiert
+- Code-Review + Plan-Review beide PASS, konsistent
+
+**K.O.-Verdikt (Update):** **PASS** — alle Code-Findings (12) und Plan-Findings (7) gelöst.
+
 ### Fix-Details
 
 - **F-01** (phase-informieren Step 1.4): Sequencing-Reihenfolge eindeutig festgelegt (s3 → s1 → s4 → s2 → s5), Standard FG SKM 2023 im body und in der instruction zitiert.

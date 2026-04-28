@@ -441,7 +441,8 @@ export type StepType =
   | "chatSim"         // KI-Patient Chat-Simulation
   | "estimation"      // Zahlen-Schätzung mit Auflösung
   | "crowdPoll"       // Umfrage mit Seed-Ergebnissen (Mentimeter-Stil)
-  | "pflegewagen";    // Items auf Pflegewagen-Etagen ziehen (Material-Vorbereitung)
+  | "pflegewagen"     // Items auf Pflegewagen-Etagen ziehen (Material-Vorbereitung)
+  | "inlineWissen";   // Inline-Wissens-Snack (Themen-Baustein als Lese-Karte in Situation, ~30-60 Sek)
 
 // === NEUE STEP-TYPEN v3 (Phase 2) ===
 
@@ -480,6 +481,78 @@ export interface WordOrderData {
   words: string[];           // Durcheinander-Wörter
   correctOrder: number[];    // Richtige Reihenfolge (Indizes)
   hint?: string;
+}
+
+// InlineWissen — Themen-Baustein als 30-60-Sek Lese-Karte mitten im Situations-Flow
+// Wird vor einem Anwendungs-Step eingespielt, der den hier erklärten Begriff verlangt.
+export interface SpektrumEintrag {
+  patientName: string;          // z.B. "Herr Bauer"
+  situationsId?: string;        // z.B. "ls-bauer-demenz-sturz" — für Cross-Refs
+  hauptfaktor: string;          // z.B. "Demenz + Sundowning"
+  kurzbeschreibung: string;     // 1-2 Sätze, was bei diesem Patienten anders ist
+}
+
+/**
+ * WiederbegegnungEintrag — Cross-Linking zwischen Situationen.
+ *
+ * Wenn ein Begriff (z.B. Schellong) in mehreren Situationen vorkommt, wird er
+ * NICHT zweimal als voller Inline-Baustein gelehrt — sondern beim zweiten Mal
+ * als kurze Wiederbegegnung mit situationsspezifischer Vertiefung.
+ *
+ * Beispiel: Schellong wird zentral bei Frau M. eingeführt. Bei Bauer-Demenz
+ * gibt es eine `wiederbegegnung`: "Schellong kennst du von Frau M. — bei
+ * Herr Bauer ist eine Besonderheit wichtig: Mirtazapin verursacht verzögerte
+ * Orthostase, du wartest 5 Min statt 1 Min."
+ */
+export interface WiederbegegnungEintrag {
+  /** ID des bereits zentral lehrenden Bausteins, z.B. "sturz-prophylaxe-schellong" */
+  basisBausteinId: string;
+  /** Lehrender Patient, z.B. "Frau M." — für Wiedererkennung */
+  basisPatient: string;
+  /** Vertiefung in dieser Situation: 1-3 Sätze, was hier anders ist */
+  vertiefung: string;
+  vertiefungB1?: string;
+}
+
+export interface InlineWissenData {
+  // Kern-Inhalt — der eigentliche Lese-Snack (Stufe 3 des Themen-Bausteins)
+  storyAufhaenger: string;      // 1-3 Sätze konkrete Patient-Szene als Einstieg
+  storyAufhaengerB1?: string;
+  kerntext: string;             // Hauptinhalt, ~400-700 Zeichen
+  kerntextB1?: string;
+
+  // Aha-Moment / Faustregel — der eine Satz, der hängenbleibt
+  faustregel: string;
+  faustregelB1?: string;
+
+  // Spektrum — andere Patient(innen) als Vergleichs-Anker (3-5 Einträge)
+  spektrum?: SpektrumEintrag[];
+
+  // Sonst-Box — Faktoren, die in keinem Patient unseres Universums vorkommen
+  sonstBox?: string;
+  sonstBoxB1?: string;
+
+  // Karteikarte — wird nach Abschluss der Situation auto-generiert
+  karteikarte: {
+    vorderseite: string;        // patientenbezogen
+    rueckseite: string;         // abstrakt + Spektrum
+    vorderseiteB1?: string;
+    rueckseiteB1?: string;
+  };
+
+  // Quelle des Bausteins (Themen-Baustein-Verweis, optional)
+  bausteinRef?: string;         // z.B. "sturz-prophylaxe-was-ist-ein-sturz"
+
+  // Wiederbegegnung — wenn dieser Baustein einen Begriff vertieft, der in einer
+  // FRÜHEREN Situation bereits zentral gelehrt wurde. Dann wird dieser Inline-
+  // Baustein als kompakte Wiederbegegnungs-Karte gerendert (nicht voller Lese-Snack).
+  wiederbegegnung?: WiederbegegnungEintrag;
+
+  // Themen-Zuordnung — wichtig für Curriculum-Coverage-Validator + Schüler-Coverage-UI.
+  // Ein Inline-Baustein kann mehrere Themen tangieren, das `themaPrimaer` ist das
+  // Hauptthema, in `themenSekundaer` listet man weitere berührte Themen.
+  themaPrimaer?: string;        // z.B. "sturz-prophylaxe"
+  themenSekundaer?: string[];   // z.B. ["schmerz", "kommunikation"]
 }
 
 // Calculation — Dosierungs-/Rechenaufgabe
@@ -701,6 +774,11 @@ export interface ContentStep {
 
   // "Wusstest du?" Collapsible-Element
   wusstestDuDas?: string;
+
+  // Inline-Wissen — Themen-Baustein als Lese-Karte in Situations-Flow.
+  // Wird gefüllt bei stepType === "inlineWissen". Der Renderer zeigt eine
+  // visuell abgesetzte "Pflege-Wissen"-Karte (kein Quiz, kein Score).
+  inlineWissen?: InlineWissenData;
 
   contentC1: {
     title: string;

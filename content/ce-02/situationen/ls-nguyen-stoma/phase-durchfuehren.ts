@@ -12,9 +12,9 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
   titel: "Durchführen — Beutelwechsel und was dazwischen passiert",
   titelB1: "Durchführen — Der Beutelwechsel",
   kontext:
-    "Du hast das Material vorbereitet: Handschuhe, Zellstoff, lauwarmes Wasser (bei Bedarf milde pH-neutrale Waschlotion), neue Stomaplatte in der richtigen Größe (60 mm — aus dem Patientenblatt), Schutzpaste, neuer Beutel. Tochter Linh übersetzt deine Ankündigung: 'Ich werde jetzt den Beutel wechseln. Das dauert etwa 10 Minuten. Du kannst die ganze Zeit schauen oder wegschauen — das entscheidest du.' Herr Nguyen nickt. Schlägt die Augen nieder. Ehefrau Mai bleibt am Fenster — du fragst Linh, ob sie dabei bleiben darf. Linh fragt. Herr Nguyen nickt wieder, knapp.",
+    "Du hast das Material vorbereitet: Handschuhe, Zellstoff, lauwarmes Wasser (bei Bedarf milde pH-neutrale Waschlotion), Schablone und Stift zum Anzeichnen der Lochgröße, neue Stomaplatte zum individuellen Zuschneiden, Schutzpaste, neuer Beutel. Wichtig: Die Lochgröße der Stomaplatte wird bei jedem Wechsel neu mit der Schablone gemessen — das Stoma schwillt in den ersten 6–8 Wochen post-OP ab. Ein Wert aus dem Patientenblatt von vor 3 Tagen ist bereits veraltet. Heute (4. POD) misst du: Stoma 60 mm rund — du zeichnest 62 mm an (Stoma + 2 mm Sicherheitsabstand) und schneidest die Platte zu. Tochter Linh übersetzt deine Ankündigung: 'Ich werde jetzt den Beutel wechseln. Das dauert etwa 10 Minuten. Du kannst die ganze Zeit schauen oder wegschauen — das entscheidest du.' Herr Nguyen nickt. Schlägt die Augen nieder. Ehefrau Mai bleibt am Fenster — du fragst Linh, ob sie dabei bleiben darf. Linh fragt. Herr Nguyen nickt wieder, knapp.",
   kontextB1:
-    "Du hast alles bereit: Handschuhe, Wasser, neue Stomaplatte, Schutzpaste, neuer Beutel. Linh übersetzt: 'Ich wechsle jetzt den Beutel. Du kannst schauen oder wegschauen — du entscheidest.' Herr Nguyen nickt. Er schlägt die Augen nieder. Ehefrau Mai bleibt am Fenster.",
+    "Du hast alles bereit: Handschuhe, Wasser, Schablone (= Schablone zum Messen), neue Stomaplatte (du schneidest sie selbst zu), Schutzpaste, neuer Beutel. **Wichtig:** Die Lochgröße misst du jedes Mal neu. Das Stoma wird in den ersten 6–8 Wochen kleiner. Heute misst du: Stoma 60 mm. Du zeichnest 62 mm an (immer ca. 2 mm größer als das Stoma — sonst klemmt die Platte) und schneidest. Linh übersetzt: 'Ich wechsle jetzt den Beutel. Du kannst schauen oder wegschauen — du entscheidest.' Herr Nguyen nickt. Er schlägt die Augen nieder. Ehefrau Mai bleibt am Fenster.",
   kernSteps: [
     // Step 4.1 — Sorting: Material-Check vor Beutelöffnen
     {
@@ -51,6 +51,69 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       },
     },
 
+    // Step 4.1b — MC: Lochgröße der Hautschutzplatte messen (Anti-Pattern: Wert aus Patientenblatt)
+    {
+      stepId: "ce02-nguyen-dur-01b-lochgroesse-messen",
+      phase: 4,
+      stepType: "mc",
+      bloomLevel: 4,
+      kompetenzbereich: "I.1",
+      quellen: ["FG SKM — Handlungsempfehlungen Stomapflege (2023)"],
+      track: "basis",
+      modus: "challenge",
+      lernziel: "ce02-nguyen-dur-lochgroesse",
+      tag: "pflege",
+      contentC1: {
+        title: "Hautschutzplatte zuschneiden — wie bestimmst du die Lochgröße?",
+        body: "Bevor du die neue Hautschutzplatte aufklebst, musst du das Loch passgenau zuschneiden. Im Patientenblatt vom Tag der OP steht: 'Stoma 60 mm rund'. Heute ist der 4. POD. Wie bestimmst du die Lochgröße der neuen Platte?",
+        glossarBegriffe: ["Hautschutzplatte", "Schablone", "Stoma-Durchmesser"],
+      },
+      contentB1: {
+        title: "Wie groß muss das Loch in der Platte sein?",
+        body: "Du schneidest die neue Hautschutzplatte. Im Patientenblatt steht: 'Stoma 60 mm'. Heute ist der 4. Tag nach der Operation. Wie bestimmst du die Lochgröße?",
+        glossarBegriffe: ["Hautschutzplatte", "Schablone"],
+      },
+      question: {
+        fragetext:
+          "Wie bestimmst du die Lochgröße der neuen Hautschutzplatte für Herrn Nguyen?",
+        mcVariant: "standard",
+        optionen: [
+          {
+            text: "Wert aus dem Patientenblatt übernehmen: 60 mm — wurde bei der OP gemessen.",
+            isCorrect: false,
+            explanation:
+              "Falsch — typischer Anfänger-Fehler. Das Stoma schwillt in den ersten 6–8 Wochen post-OP ab. Ein Wert von Tag 0 ist am 4. POD bereits veraltet. Wenn das Loch zu groß ist, trifft Stomainhalt direkt auf die Haut → Mazerierung + Leckage. Wenn zu klein, klemmt die Platte das Stoma ab → Durchblutungsstörung. Quelle: FG SKM 2023.",
+            explanationB1:
+              "Falsch. Das Stoma wird in den ersten 6–8 Wochen kleiner. Der Wert von der Operation passt heute nicht mehr. Du musst neu messen.",
+          },
+          {
+            text: "Stoma jetzt mit der Messschablone ausmessen, dann Loch + 2 mm Sicherheitsabstand auf die Platte zeichnen und ausschneiden.",
+            isCorrect: true,
+            explanation:
+              "Richtig. Standard nach FG SKM 2023: Bei jedem Wechsel mit Schablone neu messen — das Stoma schwillt in den ersten 6–8 Wochen ab. Lochgröße = Stoma-Durchmesser + 2 mm Sicherheitsabstand. Das verhindert sowohl Hautkontakt mit Stomainhalt (zu groß) als auch Abklemmung des Stomas (zu klein). Heute bei Herrn Nguyen: Stoma misst 60 mm → du zeichnest 62 mm an.",
+            explanationB1:
+              "Richtig. Du misst das Stoma jeden Tag neu mit der Schablone. Lochgröße = Stoma + 2 mm. Heute bei Herrn Nguyen: 60 mm Stoma → 62 mm Loch. Das ist der Standard.",
+          },
+          {
+            text: "Etwas größer schneiden (Stoma + 5 mm), damit kein Druck auf das Stoma kommt.",
+            isCorrect: false,
+            explanation:
+              "Zu groß. Bei +5 mm liegt zwischen Platte und Stoma ein Hautstreifen frei, auf den Stomainhalt direkt trifft → schnelle Mazerierung und Hauteinrisse. Standard ist +2 mm. Diese 2 mm reichen, damit nichts klemmt — und schützen gleichzeitig die Haut.",
+            explanationB1:
+              "Zu groß. 5 mm zu viel — dann ist Haut frei und der Stuhl greift sie an. Standard ist 2 mm größer als das Stoma.",
+          },
+          {
+            text: "Genau in der Stoma-Größe (60 mm) zuschneiden — dann sitzt es perfekt.",
+            isCorrect: false,
+            explanation:
+              "Zu eng. Eine 1:1-Passung klemmt das Stoma ab — das gefährdet die Durchblutung der Stomaschleimhaut (Risiko: livide Verfärbung, Nekrose). Außerdem reibt die Plattenkante an der empfindlichen Schleimhaut. 2 mm Sicherheitsabstand ist Pflicht.",
+            explanationB1:
+              "Zu eng. Wenn das Loch genau gleich groß ist, klemmt die Platte das Stoma ab. Das ist gefährlich. Loch = Stoma + 2 mm.",
+          },
+        ],
+      },
+    },
+
     // Step 4.2 — Dialog (4 Phasen): Beutelwechsel-Kommunikation
     {
       stepId: "ce02-nguyen-dur-02-beutelwechsel-dialog",
@@ -65,12 +128,12 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Wie viel erklärst du — und wann bist du still?",
-        body: "Du hast den alten Beutel geöffnet und entfernst ihn von oben nach unten — die andere Hand hält die Haut sanft gegen, damit nichts einreißt. Herr Nguyen schaut zur Seite. Du erklärst leise was du tust — Linh übersetzt in Kurzform. Aber: Wie viel ist richtig?",
+        body: "Du hast den alten Beutel geöffnet und entfernst ihn von oben nach unten (Schwerkraft hält den Stuhl im Beutel zurück, statt nach oben über das Stoma zu laufen) — die andere Hand hält die Haut sanft gegen, damit nichts einreißt. Herr Nguyen schaut zur Seite. Du erklärst leise was du tust — Linh übersetzt in Kurzform. Aber: Wie viel ist richtig?",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Was sagst du beim Beutelwechsel?",
-        body: "Du wechselst den Beutel. Eine Hand zieht von oben nach unten, die andere hält die Haut. Herr Nguyen schaut zur Seite. Du erklärst kurz was du tust — Linh übersetzt. Wie viel erklärst du?",
+        body: "Du wechselst den Beutel. Eine Hand zieht von oben nach unten — so läuft der Stuhl nach unten in den Beutel und nicht über das Stoma. Die andere Hand hält die Haut. Herr Nguyen schaut zur Seite. Du erklärst kurz — Linh übersetzt. Wie viel erklärst du?",
         glossarBegriffe: [],
       },
       question: {
@@ -239,16 +302,16 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "KOMPLIKATION 2 — 'Mama hat Angst'",
-        body: "Du hast den neuen Beutel angebracht. Alles dicht. Herr Nguyen atmet durch. In diesem Moment spricht Linh: **'Mama hat Angst. Was wenn der Beutel zuhause ausläuft? Was wenn sie es falsch macht?'** Du schaust zur Ehefrau — sie nickt. Was tust du?",
-        fallbezug: "Patientenzitat Z4. Ehefrau Mai wird die Hauptpflegeperson zuhause. Ihre Angst ist kein Nebenthema — es ist Entlassungsmanagement.",
-        glossarBegriffe: ["Entlassungsmanagement", "Angehörigen-Anleitung", "Stomatherapeut"],
+        body: "Du hast den neuen Beutel angebracht. Alles dicht. Herr Nguyen atmet durch. In diesem Moment spricht Linh: **'Mama hat Angst. Was wenn der Beutel zuhause ausläuft? Was wenn sie es falsch macht?'** Du schaust zur Ehefrau — sie nickt. Wichtig: Primäres Ziel der Stoma-Anleitung ist die Selbstversorgung durch Herrn Nguyen — Ehefrau Mai ist unterstützende Begleiterin und Backup, nicht Hauptpflegeperson. Erst wenn Herr Nguyen es körperlich/sprachlich nicht schaffen kann, übernimmt Mai. Was tust du?",
+        fallbezug: "Patientenzitat Z4. Mais Angst ist real und legitim — aber die Botschaft an sie und an Herrn Nguyen ist: Wir leiten zuerst dich, Herr Nguyen, an. Mai darf zuschauen und mitlernen für den Backup-Fall. Empowerment vor Übernahme.",
+        glossarBegriffe: ["Entlassungsmanagement", "Selbstversorgung", "Empowerment", "Stomatherapeut"],
       },
       contentB1: {
         title: "KOMPLIKATION 2 — 'Mama hat Angst'",
-        body: "Du hast den neuen Beutel angebracht. Linh sagt: **'Mama hat Angst. Was wenn der Beutel zuhause ausläuft?'** Ehefrau Mai nickt. Was tust du?",
+        body: "Du hast den neuen Beutel angebracht. Linh sagt: **'Mama hat Angst. Was wenn der Beutel zuhause ausläuft?'** Ehefrau Mai nickt. Wichtig: Herr Nguyen lernt zuerst — er soll den Beutel selbst wechseln. Mai schaut zu und ist Backup. Was tust du?",
         fallbezug:
-          "Ehefrau Mai muss zuhause den Beutel wechseln. Ihre Angst ist real.",
-        glossarBegriffe: ["Angehörigen-Anleitung", "Stomatherapeut"],
+          "Ziel: Herr Nguyen versorgt sein Stoma selbst. Mai hilft nur, wenn Herr Nguyen es nicht kann.",
+        glossarBegriffe: ["Selbstversorgung", "Stomatherapeut"],
       },
       question: {
         fragetext:
@@ -277,18 +340,18 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
                   "Nicht richtig. Die Angst von Ehefrau Mai ist real und sie braucht eine Antwort — nicht 'das ist nicht mein Problem'.",
               },
               {
-                text: "'Frau Mai, heute kommen wir zusammen mit dem Stomatherapeuten — da können Sie alles fragen. Ich zeige Ihnen jetzt schon, wie der Beutel aussieht, wenn er richtig sitzt.' (Linh übersetzt.)",
+                text: "'Frau Mai, ich verstehe Ihre Sorge. Wichtig zu wissen: Wir leiten zuerst Herrn Nguyen an — er soll den Beutel selbst wechseln können. Sie sind dabei und lernen mit, falls er Hilfe braucht. Heute kommt der Stomatherapeut, da können Sie und Herr Nguyen gemeinsam alles fragen.' (Linh übersetzt.)",
                 textB1:
-                  "'Frau Mai, heute kommt der Stomatherapeut. Dort können Sie alles fragen. Ich zeige Ihnen jetzt schon: So sieht der Beutel aus, wenn er richtig sitzt.' (Linh übersetzt.)",
+                  "'Frau Mai, ich verstehe Ihre Sorge. Aber: Zuerst lernt Herr Nguyen den Beutelwechsel — er soll es selbst machen. Sie sind dabei und helfen, wenn er nicht kann. Heute kommt der Stomatherapeut.' (Linh übersetzt.)",
                 patientResponse:
-                  "Linh übersetzt. Ehefrau Mai hebt den Kopf. Sie nickt langsam. Noch unsicher, aber ein kleines Stück weniger allein.",
+                  "Linh übersetzt. Ehefrau Mai hebt den Kopf. Sie nickt langsam. Herr Nguyen schaut kurz zu Mai, dann wieder weg. Linh ergänzt leise: 'Mama findet das gut.'",
                 patientResponseB1:
-                  "Linh übersetzt. Ehefrau Mai hebt den Kopf. Sie nickt. Noch Angst, aber etwas ruhiger.",
+                  "Linh übersetzt. Mai hebt den Kopf. Sie nickt. Herr Nguyen schaut kurz zu Mai. Linh sagt: 'Mama findet das gut.'",
                 score: 3,
                 feedback:
-                  "Richtig. Zwei Elemente gleichzeitig: 1) Entlastung jetzt ('Der Stomatherapeut wird das erklären — Sie müssen das nicht alleine herausfinden'), 2) Erste Orientierung jetzt ('So sieht ein richtig sitzender Beutel aus'). Das ist Entlassungsmanagement bereits im Akutkontext. Angehörigen-Anleitung ist eine eigenständige pflegerische Aufgabe mit geplanter Struktur — kein Nebenprodukt.",
+                  "Richtig. Drei Elemente: 1) Anerkennen der Sorge (validieren statt abtun), 2) Klarstellen des Ziels: Selbstversorgung durch Herrn Nguyen ist primär — Empowerment statt Übernahme; das entspricht dem FG-SKM-Standard zur Stomatherapie und der DNQP-Beziehungsgestaltung. 3) Mai als unterstützende Begleitung positionieren, nicht als Hauptpflegeperson — das nimmt Druck weg und stärkt gleichzeitig Herrn Nguyens Würde und Selbstwirksamkeit.",
                 feedbackB1:
-                  "Richtig. Du gibst ihr zwei Dinge: Entlastung (der Stomatherapeut kommt) und eine erste Orientierung jetzt.",
+                  "Richtig. Du machst drei Dinge: Du sagst 'Ich verstehe Ihre Angst' (das hilft Mai). Du sagst 'Herr Nguyen lernt zuerst' (das stärkt ihn). Und du sagst 'Sie helfen wenn er nicht kann' (Mai weiß: ich bin nicht alleine zuständig).",
               },
               {
                 text: "'Ich erkläre ihr jetzt gleich alles — Schritt für Schritt.'",

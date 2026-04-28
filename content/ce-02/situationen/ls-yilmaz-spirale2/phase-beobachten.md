@@ -10,7 +10,7 @@
 
 ## Kontext
 
-Du hilfst Frau Yilmaz, sich auf die Seite zu legen, damit du das Sakrum inspizieren kannst. Mustafa schaut besorgt zu. Du nimmst dir eine Handlampe und ziehst die Schutzhandschuhe an. Was du siehst, ist nicht mehr das, was die Kollegin als "Rötung" bezeichnet hat.
+Du hilfst Frau Yilmaz, sich auf die Seite zu legen, damit du das Sakrum inspizieren kannst. Mustafa schaut besorgt zu. Du schaltest das Zimmerlicht und die Bettleuchte ein — Tageslicht reicht im Halbdunkel des Frühdienstes nicht für eine Wundinspektion (volle Sicht ist Pflicht für die Verletzungs-Beurteilung). Die Handlampe nutzt du zusätzlich für Detailansicht. Du ziehst die Schutzhandschuhe an. Was du siehst, ist nicht mehr das, was die Kollegin als "Rötung" bezeichnet hat.
 
 **BRILLIANT-PRINZIP (Step 2.1):** Du siehst zuerst die Wunde — bevor dir jemand erklärt, was ein Dekubitus Kategorie II ist. Das ist bewusst.
 

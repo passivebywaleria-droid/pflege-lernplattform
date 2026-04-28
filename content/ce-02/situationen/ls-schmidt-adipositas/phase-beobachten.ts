@@ -319,13 +319,13 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Fußinspektion — was tust du als nächstes?",
-        body: "Du inspizierst Frau Schmidts Füße. Du siehst: trockene Haut plantar, erste Rissbildung am großen Zeh, verdickte Nägel, keine offene Wunde — Wagner Grad 1 (Wagner-Armstrong 1A: oberflächliche Läsion ohne Infektion und ohne Ischämie). Frau Schmidt sagt: \"Die Füße pflege ich selbst. Schon immer. Die Nägel schneide ich mir zweimal im Jahr, das reicht doch.\" Was ist deine nächste Handlung?",
-        glossarBegriffe: ["Diabetisches Fußsyndrom", "Podologe", "Wagner-Armstrong-Klassifikation"],
+        body: "Du inspizierst Frau Schmidts Füße. Du siehst: trockene Haut plantar, erste Rissbildung am großen Zeh, verdickte und gelblich-trübe Nägel (Verdacht auf Onychomykose — Nagelpilz, häufig bei Diabetes; Diagnose nur durch Arzt/Mykologie), keine offene Wunde — Wagner Grad 1 (Wagner-Armstrong 1A: oberflächliche Läsion ohne Infektion und ohne Ischämie). Frau Schmidt sagt: \"Die Füße pflege ich selbst. Schon immer. Die Nägel schneide ich mir zweimal im Jahr, das reicht doch.\" Was ist deine nächste Handlung?",
+        glossarBegriffe: ["Diabetisches Fußsyndrom", "Podologe", "Wagner-Armstrong-Klassifikation", "Onychomykose"],
       },
       contentB1: {
         title: "Fußinspektion — was machst du?",
-        body: "Du schaust dir Frau Schmidts Füße an. Du siehst: Die Haut ist trocken und rissig an der Fußsohle. Die Nägel sind verdickt und lang. Keine offene Wunde. Frau Schmidt sagt: \"Die Füße pflege ich selbst. Die Nägel schneide ich zweimal im Jahr, das reicht doch.\" Was tust du jetzt?",
-        glossarBegriffe: ["Diabetisches Fußsyndrom", "Podologe"],
+        body: "Du schaust dir Frau Schmidts Füße an. Du siehst: Die Haut ist trocken und rissig an der Fußsohle. Die Nägel sind verdickt und gelblich (Verdacht: Nagel-Pilz — bei Diabetes häufig). Keine offene Wunde. Frau Schmidt sagt: \"Die Füße pflege ich selbst. Die Nägel schneide ich zweimal im Jahr, das reicht doch.\" Was tust du jetzt?",
+        glossarBegriffe: ["Diabetisches Fußsyndrom", "Podologe", "Onychomykose"],
       },
       question: {
         fragetext:

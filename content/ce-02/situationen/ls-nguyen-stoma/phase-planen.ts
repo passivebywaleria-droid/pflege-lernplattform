@@ -67,28 +67,29 @@ export const CE02_SIT_NGUYEN_STOMA_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Beutelwechsel — strukturierter Ablauf",
-        body: "Bevor du das Stoma von Herrn Nguyen versorgst, planst du den Ablauf. Bringe die 8 Schritte in die richtige Reihenfolge.",
-        glossarBegriffe: ["Stomaplatte", "Schutzpaste", "Hygieneregeln"],
+        body: "Bevor du das Stoma von Herrn Nguyen versorgst, planst du den Ablauf. Wichtig: Die Lochgröße der Hautschutzplatte wird bei JEDEM Wechsel neu mit der Schablone gemessen — das Stoma schwillt in den ersten 6–8 Wochen post-OP ab. Standard nach FG SKM 2023: Stoma-Durchmesser + 2 mm Sicherheitsabstand. Ein Wert aus dem Patientenblatt von vor Tagen ist bereits veraltet und führt zu Leckage. Bringe die 9 Schritte in die richtige Reihenfolge.",
+        glossarBegriffe: ["Stomaplatte", "Schutzpaste", "Hautschutz-Schablone", "Hygieneregeln"],
       },
       contentB1: {
         title: "Beutelwechsel — in welcher Reihenfolge?",
-        body: "Du wechselst den Stoma-Beutel. Sortiere die Schritte in die richtige Reihenfolge.",
-        glossarBegriffe: ["Stomaplatte", "Schutzpaste"],
+        body: "Du wechselst den Stoma-Beutel. Wichtig: Du misst die Lochgröße jedes Mal neu mit der Schablone. Das Stoma wird in den ersten 6–8 Wochen kleiner. Loch = Stoma + 2 mm. Sortiere die Schritte.",
+        glossarBegriffe: ["Stomaplatte", "Schutzpaste", "Schablone"],
       },
       question: {
         fragetext:
-          "Bringe die 8 Schritte des Beutelwechsels in die richtige Reihenfolge.",
+          "Bringe die 9 Schritte des Beutelwechsels in die richtige Reihenfolge.",
         sequencing: {
           instruction: "Sortiere die Schritte des Beutelwechsels.",
           items: [
             { id: "s1", label: "Material vorbereiten + Handschuhe anziehen" },
-            { id: "s2", label: "Patienten informieren und Einverständnis einholen" },
-            { id: "s3", label: "Alten Beutel/Platte von oben nach unten abziehen — eine Hand zieht, die andere Hand hält die Haut sanft gegen (Hauteinriss vermeiden)" },
+            { id: "s2", label: "Patienten informieren und Einverständnis einholen — Schwerkraft-Prinzip beim Abziehen kurz erklären" },
+            { id: "s3", label: "Alten Beutel/Platte von oben nach unten abziehen — eine Hand zieht, die andere Hand hält die Haut sanft gegen (Schwerkraft hält Stuhl im Beutel zurück, Hauteinriss vermeiden)" },
             { id: "s4", label: "Stomaplatte vollständig lösen (warm-feuchter Tupfer erleichtert das Ablösen)" },
             { id: "s5", label: "Stoma + Hautumgebung mit lauwarmem Wasser reinigen — bei Bedarf milde, pH-neutrale Waschlotion. KEIN alkalisches Seifenwasser, keine Desinfektionsmittel, kein Lanolin-/Parfüm-haltiges Produkt" },
             { id: "s6", label: "Haut vollständig trocknen lassen (Mazerierung verhindern)" },
-            { id: "s7", label: "Schutzpaste auftragen + neue Stomaplatte in passender Größe anpassen und anlegen" },
-            { id: "s8", label: "Beutel andrücken, auf Dichtigkeit prüfen, Umgebung kontrollieren" },
+            { id: "s7", label: "Stoma mit Schablone neu ausmessen (jeden Wechsel — Stoma schwillt in den ersten 6–8 Wochen ab) und Loch in die neue Platte schneiden: Stoma-Durchmesser + 2 mm Sicherheitsabstand, niemals Wert aus Patientenblatt übernehmen" },
+            { id: "s8", label: "Schutzpaste dünn ringförmig auftragen, kurz antrocknen lassen, neue Stomaplatte anlegen + andrücken" },
+            { id: "s9", label: "Beutel auf Platte aufsetzen, auf Dichtigkeit prüfen, Umgebung kontrollieren" },
           ],
         },
       },

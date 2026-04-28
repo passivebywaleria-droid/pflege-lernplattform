@@ -329,29 +329,29 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
       tag: "anatomie",
       contentC1: {
         title: "Trinkprotokoll auswerten",
-        body: "Du nimmst das Trinkprotokoll vom Küchentisch. Frau Kovač hat gestern eingetragen:\n\n07:30 — Kaffee: 150 ml\n09:00 — Wasser: 100 ml\n12:00 — Suppe: 200 ml\n15:30 — Tee: 100 ml\n18:30 — Abend-Kaffee: 100 ml\n21:00 — Wasser: 150 ml\n\nBerechne die Gesamttrinkmenge im Protokoll. **Hinweis zur Diskrepanz:** Petras Übergabezettel nennt 820 ml — das Protokoll ergibt 800 ml. Petra hat überschlagen, du rechnest exakt aus dem Protokoll. Solche kleinen Differenzen sind in ambulanter Praxis normal und kein Fehler.\n\n**Hinweis zum Zielwert:** Die DNQP/DGE-Empfehlung von 1.500 ml ist eine **allgemeine Mindest-Tagesmenge für Gesunde**. Bei Herzinsuffizienz NYHA II + Furosemid wird die individuelle Trinkmenge ärztlich festgelegt — oft 1.200–1.500 ml als **Obergrenze**, nicht Untergrenze. Berechne hier den Sollwert nach allgemeiner DNQP-Empfehlung; die individuelle Anpassung folgt ärztlich. (DNQP Kontinenzförderung 2014; ESC Heart Failure Guidelines 2021)",
+        body: "Du nimmst das Trinkprotokoll vom Küchentisch. Frau Kovač hat gestern eingetragen:\n\n07:30 — Kaffee: 150 ml\n09:00 — Wasser: 100 ml\n12:00 — Suppe: 200 ml\n15:30 — Tee: 100 ml\n18:30 — Abend-Kaffee: 100 ml\n21:00 — Wasser: 150 ml\n\nBerechne die Gesamttrinkmenge im Protokoll. **Hinweis zur Diskrepanz:** Petras Übergabezettel nennt 820 ml — das Protokoll ergibt 800 ml. Petra hat überschlagen, du rechnest exakt aus dem Protokoll. Solche kleinen Differenzen sind in ambulanter Praxis normal und kein Fehler.\n\n**Wichtig — der Zielwert für Frau Kovač:**\nDie allgemeine DNQP/DGE-Empfehlung für Gesunde liegt bei 1.500 ml/Tag. Diese Empfehlung gilt für Frau Kovač **nicht 1:1**. Bei Herzinsuffizienz NYHA II + Furosemid (40 mg) ist die Trinkmenge ärztlich individuell festzulegen — die ESC Heart Failure Guidelines 2023 nennen für stabile Herzinsuffizienz häufig **1.200 ml/Tag als ärztlich vereinbarte Obergrenze**, NICHT als Untergrenze. Im Pflegeplan von Frau Kovač ist mit dem Hausarzt **1.200 ml/Tag** als individuelles Tagesziel vereinbart. Berechne deshalb das Defizit zu **diesem ärztlich festgelegten Wert** — nicht zur Generic-Empfehlung von 1.500 ml. (DNQP Kontinenzförderung 2014; ESC Heart Failure Guidelines 2023)",
         glossarBegriffe: ["Flüssigkeitsbilanz", "Exsikkose"],
       },
       contentB1: {
         title: "Wie viel hat Frau Kovač getrunken?",
-        body: "Das Trinkprotokoll zeigt:\n- 07:30 Kaffee: 150 ml\n- 09:00 Wasser: 100 ml\n- 12:00 Suppe: 200 ml\n- 15:30 Tee: 100 ml\n- 18:30 Kaffee: 100 ml\n- 21:00 Wasser: 150 ml\n\nAddiere alle Mengen zusammen.\n\n**Wichtig:** Petras Zettel sagt 820 ml. Das Protokoll ergibt 800 ml. Das ist normal — Petra hat geschätzt, du rechnest genau.\n\nDie 1.500 ml sind eine **allgemeine Empfehlung** (DNQP). Bei Frau Kovačs Herzinsuffizienz kann der Arzt einen anderen Wert festlegen.",
+        body: "Das Trinkprotokoll zeigt:\n- 07:30 Kaffee: 150 ml\n- 09:00 Wasser: 100 ml\n- 12:00 Suppe: 200 ml\n- 15:30 Tee: 100 ml\n- 18:30 Kaffee: 100 ml\n- 21:00 Wasser: 150 ml\n\nAddiere alle Mengen zusammen.\n\n**Wichtig:** Petras Zettel sagt 820 ml. Das Protokoll ergibt 800 ml. Das ist normal — Petra hat geschätzt, du rechnest genau.\n\n**Wichtig zum Zielwert:** Die 1.500 ml sind eine **allgemeine Empfehlung für Gesunde** (DNQP). Frau Kovač hat **Herz-Schwäche und das Wasser-Tabletten Furosemid**. Deshalb hat der Hausarzt für sie **1.200 ml pro Tag als Obergrenze** festgelegt. Du rechnest gegen diesen Wert — **nicht** gegen 1.500 ml.",
         glossarBegriffe: ["Flüssigkeitsbilanz"],
       },
       question: {
         fragetext:
-          "Berechne die Gesamttrinkmenge nach dem Protokoll. Wie viel fehlt bis zur DNQP-Empfehlung von 1.500 ml?",
+          "Berechne die Gesamttrinkmenge nach dem Protokoll. Wie viel fehlt bis zum ärztlich vereinbarten Tagesziel von 1.200 ml?",
         calculation: {
           instruction:
-            "Addiere die Trinkmengen des gestrigen Tages aus dem Protokoll. Allgemeiner DNQP-Zielwert: 1.500 ml Mindest-Tagesmenge (gilt für Gesunde — bei Herzinsuffizienz ärztlich individuell festzulegen).",
+            "Addiere die Trinkmengen des gestrigen Tages aus dem Protokoll. Ärztlich vereinbartes Tagesziel für Frau Kovač: 1.200 ml/Tag (Hausarzt, individuell wegen NYHA II + Furosemid).",
           formula:
-            "Gesamt = 150 + 100 + 200 + 100 + 100 + 150 = ? ml. Differenz zur DNQP-Empfehlung = 1.500 – Gesamt = ? ml",
+            "Gesamt = 150 + 100 + 200 + 100 + 100 + 150 = ? ml. Defizit zum ärztlich vereinbarten Ziel = 1.200 – Gesamt = ? ml",
           correctValue: 800,
           unit: "ml (Gesamttrinkmenge laut Protokoll)",
           tolerance: 0,
           explanation:
-            "800 ml — das ist deutlich unter der allgemeinen DNQP-Empfehlung. Die Differenz zu 1.500 ml beträgt 700 ml. Wichtig: 1.500 ml ist die **allgemeine** Empfehlung. Bei Frau Kovač mit Herzinsuffizienz NYHA II + Furosemid ist die individuelle Trinkmenge ärztlich festzulegen (oft 1.200–1.500 ml als Obergrenze). Bei COPD fördert ausreichende Flüssigkeit die Sekretverflüssigung — Hauptproblem hier ist das deutliche Defizit, nicht eine Überschreitung. Frau Kovačs realistisches Ziel: schrittweise auf 1.200 ml steigern (mit Arzt abgestimmt).",
+            "800 ml — das ist deutlich unter dem ärztlich vereinbarten Tagesziel von 1.200 ml. Defizit: 400 ml.\n\n**Warum 1.200 ml und nicht 1.500 ml?**\nDie DNQP-Empfehlung von 1.500 ml gilt für Gesunde. Frau Kovač hat Herzinsuffizienz NYHA II und nimmt Furosemid 40 mg morgens (= Schleifendiuretikum). Die ESC Heart Failure Guidelines 2023 empfehlen bei stabiler Herzinsuffizienz häufig eine ärztlich festgelegte Trinkmengen-Obergrenze von 1.000-1.500 ml — bei Frau Kovač im Pflegeplan: 1.200 ml/Tag.\n\n**Heißt das, sie soll noch weniger trinken?** Nein — 800 ml sind zu wenig. Bei COPD fördert ausreichende Flüssigkeit die Sekretverflüssigung. Das Ziel ist **schrittweise auf 1.200 ml** steigern, nicht überschreiten. Bei einer aktuellen Trinkmenge von 750-950 ml (Pflegeplan-Status) ist das Defizit das Hauptproblem — nicht eine Überschreitung. (DNQP Kontinenzförderung 2014; ESC Heart Failure Guidelines 2023)",
           explanationB1:
-            "800 ml — das ist viel zu wenig. Die allgemeine Empfehlung ist 1.500 ml pro Tag. Es fehlen also 700 ml.\n\nAber: 1.500 ml ist **allgemein**. Bei Frau Kovačs Herz-Krankheit kann der Arzt einen anderen Wert sagen — manchmal weniger.\n\nWenn sie zu wenig trinkt, wird der Schleim in der Lunge dick und sie kann ihn schlechter abhusten.",
+            "800 ml — das ist zu wenig. Das Ziel vom Hausarzt ist 1.200 ml pro Tag. Es fehlen also 400 ml.\n\n**Warum nicht 1.500 ml?**\n1.500 ml gilt für gesunde Menschen. Frau Kovač hat eine Herz-Schwäche und nimmt das Wasser-Tabletten Furosemid. Deshalb hat der Hausarzt einen niedrigeren Wert festgelegt: 1.200 ml/Tag — als **Obergrenze**.\n\n**Soll sie weniger trinken?** Nein — 800 ml sind immer noch zu wenig. Bei COPD braucht die Lunge Wasser, damit der Schleim flüssiger wird. Das Ziel ist: langsam auf 1.200 ml hoch.",
         },
       },
     },

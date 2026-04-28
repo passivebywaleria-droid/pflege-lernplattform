@@ -255,32 +255,36 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Lagerungsregeln nach Hüft-TEP — Begründungen zuordnen",
-        body: "Vor der Mobilisation musst du die Lagerungsvorschriften genau kennen — nicht nur auswendig, sondern auch warum. Ordne jede Lagerungsregel dem richtigen Grund zu.",
-        glossarBegriffe: ["Luxation", "Luxationsprophylaxe", "Adduktion"],
+        body: "Vor der Mobilisation musst du die Lagerungsvorschriften genau kennen — nicht nur auswendig, sondern auch warum. Die DGU S2k-Leitlinie Endoprothetik Hüfte (2022) nennt drei zentrale Bewegungsverbote für die ersten 6–12 Wochen post-OP: keine Hüftflexion über 90°, keine Adduktion über die Körpermittellinie, keine Innenrotation des operierten Beins. Ordne jede Lagerungsregel dem richtigen Grund zu.",
+        glossarBegriffe: ["Luxation", "Luxationsprophylaxe", "Adduktion", "Innenrotation"],
       },
       contentB1: {
         title: "Lagerungsregeln — warum sind sie wichtig?",
-        body: "Frau Yilmaz hat genaue Regeln, wie sie liegen darf. Diese Regeln schützen das neue Hüftgelenk. Ordne jede Regel dem richtigen Grund zu.",
-        glossarBegriffe: ["Luxation", "Adduktion"],
+        body: "Frau Yilmaz hat genaue Regeln, wie sie liegen und sich bewegen darf. Diese Regeln schützen das neue Hüftgelenk in den ersten 6–12 Wochen. Drei Verbote: 1. Hüfte nicht über 90° beugen. 2. Beine nicht über die Mitte kreuzen (= Adduktion). 3. Operiertes Bein nicht nach innen drehen (= Innenrotation). Ordne jede Regel dem richtigen Grund zu.",
+        glossarBegriffe: ["Luxation", "Adduktion", "Innenrotation"],
       },
       question: {
         fragetext: "Ordne die Lagerungsregeln nach Hüft-TEP dem richtigen Grund zu.",
         matchingPairs: [
           {
             left: "Hüftbeugung < 90°",
-            right: "Luxationsprävention — Oberschenkel darf Beckenwinkel nicht überschreiten",
+            right: "Luxationsprävention 1 — Oberschenkel darf den Beckenwinkel nicht überschreiten (DGU 2022)",
           },
           {
-            left: "Keine Beinkreuzung",
-            right: "Luxationsprävention — Innenrotation erhöht Luxationsrisiko",
+            left: "Keine Beinkreuzung über die Mittellinie",
+            right: "Luxationsprävention 2 — Adduktionsverbot: Bein darf nicht über die Körpermitte geführt werden",
+          },
+          {
+            left: "Operiertes Bein nicht nach innen drehen (Fußspitze nach außen)",
+            right: "Luxationsprävention 3 — Innenrotationsverbot, gilt 6–12 Wochen post-OP (DGU 2022)",
+          },
+          {
+            left: "Kissen zwischen die Beine in Rücken- und Seitenlage",
+            right: "Mechanische Adduktionsprophylaxe im Schlaf — verhindert ungewolltes Überkreuzen, hält Bein in leichter Abduktion",
           },
           {
             left: "Kopflagerung max. 30°",
-            right: "Zwei Gründe: Scherkräfte am Steißbein (Dekubitusprophylaxe) UND Vorbeugung übermäßiger Hüftbeugung beim Aufsitzen (kein universeller Hüft-TEP-Standard, aber sinnvoll bei Frau Yilmaz wegen Dekubitus Kat. I)",
-          },
-          {
-            left: "Kissen zwischen die Beine in Rückenlage",
-            right: "Adduktionsprophylaxe — Beine auseinanderhalten, kein Überkreuzen im Schlaf",
+            right: "Zwei Gründe: Scherkräfte am Steißbein reduzieren (Dekubitusprophylaxe — NPUAP/EPUAP 2019) UND übermäßige Hüftbeugung beim Aufsitzen vermeiden (kein universeller Hüft-TEP-Standard, aber bei Frau Yilmaz wegen Dekubitus Kat. I sinnvoll)",
           },
         ],
       },

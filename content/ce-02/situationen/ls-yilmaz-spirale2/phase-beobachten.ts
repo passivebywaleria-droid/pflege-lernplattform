@@ -12,9 +12,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
   titel: "Beobachten — Dekubitus Grad II erkennen + Braden-Skala",
   titelB1: "Schauen — Was ist die Wunde? Warum ist sie entstanden?",
   kontext:
-    "Du hilfst Frau Yilmaz, sich auf die Seite zu legen, damit du das Sakrum inspizieren kannst. Mustafa schaut besorgt zu. Du nimmst dir eine Handlampe und ziehst die Schutzhandschuhe an. Was du siehst, ist nicht mehr das, was die Kollegin als 'Rötung' bezeichnet hat. Du siehst zuerst die Wunde — bevor dir jemand erklärt, was ein Dekubitus Kategorie II ist. Das ist bewusst so.",
+    "Du hilfst Frau Yilmaz, sich auf die Seite zu legen, damit du das Sakrum inspizieren kannst. Mustafa schaut besorgt zu. Bevor du startest schaltest du das Zimmerlicht und die Bettleuchte ein — Tageslicht reicht im Halbdunkel des Frühdienstes nicht für eine Wundinspektion. Die Handlampe nutzt du zusätzlich für die Detailansicht. Du ziehst die Schutzhandschuhe an. Was du siehst, ist nicht mehr das, was die Kollegin als 'Rötung' bezeichnet hat. Du siehst zuerst die Wunde — bevor dir jemand erklärt, was ein Dekubitus Kategorie II ist. Das ist bewusst so.",
   kontextB1:
-    "Du hilfst Frau Yilmaz, sich auf die Seite zu legen. Mustafa schaut zu. Du ziehst Handschuhe an. Du nimmst eine Handlampe. Du schaust dir die Haut am Steißbein an. Was du siehst, ist mehr als eine Rötung.",
+    "Du hilfst Frau Yilmaz, sich auf die Seite zu legen. Mustafa schaut zu. Du machst das Zimmerlicht und die Bettleuchte an — du brauchst gutes Licht für die Wunde. Die Handlampe nutzt du extra für Details. Du ziehst Handschuhe an. Du schaust dir die Haut am Steißbein an. Was du siehst, ist mehr als eine Rötung.",
   kernSteps: [
     // Step 2.1 — Hotspot: Wunde sehen (BRILLIANT-Frage)
     {

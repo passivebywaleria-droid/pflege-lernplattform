@@ -1,5 +1,22 @@
 # SPRINT-PLAN v4.0 — Von 90% Code zu Launch
 
+> ⚠️ **STARK VERALTET (Stand 2026-04-26)** — dieser Plan ist vor der Pflege-Härtung
+> und vor der Inline-Wissens-Architektur entstanden. Aktueller Plan steht in
+> `specs/PLAN-INLINE-WISSEN-2026-04-26.md`. Punkte die hier noch gültig sind:
+>
+> - „Was FEHLT"-Liste Punkte 5-12 (DB nach DE, Stripe, VAPID, DSGVO-Doks, Lehrer-Onboarding) sind teilweise noch offen
+> - „Bereits erledigt"-Liste ist im Großen korrekt, aber der Code-Stand ist seitdem signifikant gewachsen
+>
+> Was sich seit 2026-04-21 geändert hat:
+> - LE-basierte Architektur → Situations-basierte Architektur (LEs nicht mehr sichtbar)
+> - 10 CE-02-Situationen live, alle Pflege-validated
+> - Inline-Wissens-Architektur (Schema + Renderer + Pilot in Frau-M.)
+> - Doppelter Pflege-Check (Plan + Code)
+> - Curriculum-Coverage-Audit-Skript
+> - 13 Phase-7+-Erweiterungen identifiziert
+>
+> Vor nächstem Sprint-Plan-Schreiben: PLAN-INLINE-WISSEN-2026-04-26.md durchlesen.
+
 **Erstellt:** 2026-04-18
 **Letztes Update:** 2026-04-21 (UI-Refactor ergänzt)
 **Ersetzt:** Sprint-Plan v3.0 (2026-03-31)

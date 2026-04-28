@@ -78,7 +78,7 @@ Essen war sein Beruf, seine Sprache, sein Ausdruck von Fürsorge. Jetzt, mit dem
 
 **Das zentrale emotionale Thema:** Würde und Männlichkeit. Im kulturellen Kontext seiner Generation bedeutete körperliche Integrität und Selbstständigkeit Stärke. Das Stoma erlebt er als Verstümmelung — nicht als medizinische Notwendigkeit, sondern als Verlust eines Teils von dem, was er war. Er spricht nicht darüber. Aber in einem Moment, wenn er denkt, niemand hört zu, sagt er leise: _"Ich bin kein richtiger Mann mehr."_
 
-**Ehefrau Mai:** Spricht kein Deutsch, ist jeden Nachmittag da, sitzt neben dem Bett und hält seine Hand. Sie ist ruhig, schaut aber jeden Pfleger und jede Pflegerin an, wenn der Beutelwechsel naht — mit einer Mischung aus Dankbarkeit und tiefer Angst. Sie wird das Stoma zuhause mitversorgen müssen. Die Vorstellung überfordert sie.
+**Ehefrau Mai:** Spricht kein Deutsch, ist jeden Nachmittag da, sitzt neben dem Bett und hält seine Hand. Sie ist ruhig, schaut aber jeden Pfleger und jede Pflegerin an, wenn der Beutelwechsel naht — mit einer Mischung aus Dankbarkeit und tiefer Angst. **Wichtig zur Versorgungsperspektive:** Primäres Ziel der Stomatherapie ist die Selbstversorgung durch Herrn Nguyen — Empowerment statt Übernahme (FG SKM 2024, DNQP Beziehungsgestaltung 2018). Mai ist unterstützende Begleitung und Backup, nicht Hauptpflegeperson zuhause. Das nimmt ihr Druck und stärkt gleichzeitig Herrn Nguyens Würde und Selbstwirksamkeit. Mai schaut bei der Anleitung mit für den Fall, dass Herr Nguyen den Wechsel körperlich oder sprachlich nicht alleine schafft.
 
 **Tochter Linh:** Durchsetzungsstark, gut informiert (hat abends Informationen im Internet recherchiert), stellt präzise Fragen. Manchmal übersetzt sie etwas, das der Vater gesagt hat, in eine abgemilderte Version — weil sie ihn schützen will. Das ist didaktisch wichtig: Du arbeitest mit der Tochter als Übersetzerin, aber der Patient ist der Vater. Direkter Augenkontakt und Ansprache bleiben bei Herrn Nguyen.
 
@@ -86,7 +86,7 @@ Essen war sein Beruf, seine Sprache, sein Ausdruck von Fürsorge. Jetzt, mit dem
 >
 > Herr Nguyen hat jetzt ein Stoma (= eine Öffnung am Bauch). Der Darm kommt durch die Bauch-Wand nach außen. Der Stuhl kommt in einen Beutel. Herr Nguyen kann das nicht kontrollieren. Das ist schwer für ihn. Er sagt leise: "Ich bin kein richtiger Mann mehr." Er spricht nicht viel über seine Gefühle.
 >
-> Seine Frau Mai spricht kein Deutsch. Sie sitzt neben dem Bett. Sie hat Angst. Zuhause muss sie den Stoma-Beutel wechseln. Das überfordert sie. Tochter Linh übersetzt für die Eltern. Sie schützt ihren Vater — manchmal übersetzt sie weniger als er gesagt hat. Wichtig: Du schaust immer Herrn Nguyen an. Er ist der Patient.
+> Seine Frau Mai spricht kein Deutsch. Sie sitzt neben dem Bett. Sie hat Angst. Wichtig: Zuerst lernt Herr Nguyen den Beutel selbst zu wechseln — er ist der Patient, er soll selbständig werden. Mai schaut zu und lernt mit. Sie hilft nur, wenn er es nicht kann. Das nimmt Mai Druck. Tochter Linh übersetzt für die Eltern. Sie schützt ihren Vater — manchmal übersetzt sie weniger als er gesagt hat. Wichtig: Du schaust immer Herrn Nguyen an. Er ist der Patient.
 
 ---
 

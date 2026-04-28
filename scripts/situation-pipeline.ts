@@ -69,13 +69,18 @@ function checkSituation(ceId: string, situationId: string): PipelineStatus {
       : "fehlt",
   });
 
-  // 3. Plan-Validator
+  // 3. Plan-Validator — letztes K.O.-Verdikt im File ist maßgeblich
+  // (Reviews enthalten oft historische FAIL-Verdikte, die durch spätere Fix-Blöcke
+  // mit PASS überschrieben werden — wir lesen das letzte Vorkommen.)
   const planReview = path.join(dir, "pflege-review-plan.md");
   let planVerdikt = "fehlt";
   if (fs.existsSync(planReview)) {
     const c = fs.readFileSync(planReview, "utf-8");
-    if (/K\.O\.-Verdikt[^\n]*FAIL/i.test(c)) planVerdikt = "FAIL";
-    else if (/K\.O\.-Verdikt[^\n]*PASS/i.test(c)) planVerdikt = "PASS";
+    const matches = c.match(/K\.O\.-Verdikt[^\n]*(PASS|FAIL)/gi);
+    if (matches && matches.length > 0) {
+      const last = matches[matches.length - 1];
+      planVerdikt = /FAIL/i.test(last) ? "FAIL" : "PASS";
+    }
   }
   status.push({
     name: "3. Plan-Validator (pflege-validator mode=plan)",
@@ -96,13 +101,16 @@ function checkSituation(ceId: string, situationId: string): PipelineStatus {
     detail: `${phaseFiles.length} Phase-Files`,
   });
 
-  // 5. Code-Validator
+  // 5. Code-Validator — letztes K.O.-Verdikt im File ist maßgeblich (siehe Plan-Logik)
   const codeReview = path.join(dir, "pflege-review.md");
   let codeVerdikt = "fehlt";
   if (fs.existsSync(codeReview)) {
     const c = fs.readFileSync(codeReview, "utf-8");
-    if (/K\.O\.-Verdikt[^\n]*FAIL/i.test(c)) codeVerdikt = "FAIL";
-    else if (/K\.O\.-Verdikt[^\n]*PASS/i.test(c)) codeVerdikt = "PASS";
+    const matches = c.match(/K\.O\.-Verdikt[^\n]*(PASS|FAIL)/gi);
+    if (matches && matches.length > 0) {
+      const last = matches[matches.length - 1];
+      codeVerdikt = /FAIL/i.test(last) ? "FAIL" : "PASS";
+    }
   }
   status.push({
     name: "5. Code-Validator (pflege-validator mode=code)",

@@ -135,9 +135,10 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
         "Step-by-step diagram showing 5 steps of turning a hemiplegic patient to their affected side using Bobath technique, annotated arrows, clear numbered panels, medical illustration style, absolutely no text no labels no words",
       contentC1: {
         title: "Drehen auf die betroffene Seite — 5 Schritte",
-        body: "Ablauf: Drehen von Herrn Petrov auf die betroffene Seite (rechts) nach Bobath-Prinzip.\n\nMerkhilfe: \"Schulterblatt und Beckenkamm — nicht Achsel und Taille.\"",
+        body: "Ablauf: Drehen von Herrn Petrov auf die betroffene Seite (rechts) nach Bobath-Prinzip.\n\nGriffpunkte: Schultergürtel (am Schulterblatt entlang Richtung Akromion begleiten — nicht aufs Skapula drücken) und Beckenkamm. Die Bewegung wird begleitet, nicht gehebelt — der Patient bewegt selbst, du sicherst.\n\nMerkhilfe: \"Schultergürtel und Beckenkamm — nicht Achsel und Taille.\"",
         glossarBegriffe: [
           "Bobath-Konzept",
+          "Schultergürtel",
           "Schulterblatt",
           "Beckenkamm",
           "Seitenlage",
@@ -145,8 +146,8 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
       },
       contentB1: {
         title: "Drehen auf die Seite — 5 Schritte",
-        body: "Du drehst Herrn Petrov auf die Seite. 5 Schritte:\n1. Linkes Bein anstellen: Der Fuß ist auf der Matratze, das Knie zeigt nach oben (90°).\n2. Linken Arm über die Brust legen.\n3. Deine rechte Hand liegt an seiner Schulter-Blatt (nicht an der Schulter!). Deine linke Hand liegt an seinem Becken-Kamm.\n4. Drehe ihn langsam und gleichmäßig.\n5. Korrekte Seiten-Lage: Schulter nach vorne ziehen. Arm gestreckt auf Kissen. Bein ein wenig gebeugt.\nMerkhilfe: \"Schulter-Blatt und Becken-Kamm — nicht Achsel und Taille.\"",
-        glossarBegriffe: ["Seitenlage", "Schulterblatt", "Beckenkamm"],
+        body: "Du drehst Herrn Petrov auf die Seite. 5 Schritte:\n1. Linkes Bein anstellen: Der Fuß ist auf der Matratze, das Knie zeigt nach oben (90°).\n2. Linken Arm über die Brust legen.\n3. Deine rechte Hand begleitet seinen Schulter-Gürtel (nicht drücken auf das Schulter-Blatt — sondern führen Richtung Schulter vorne). Deine linke Hand liegt am Becken-Kamm.\n4. Drehe ihn langsam — er macht die Bewegung mit, du sicherst.\n5. Korrekte Seiten-Lage: Schulter nach vorne ziehen. Arm gestreckt auf Kissen. Bein ein wenig gebeugt.\nMerkhilfe: \"Schulter-Gürtel und Becken-Kamm — nicht Achsel und Taille.\"",
+        glossarBegriffe: ["Seitenlage", "Schultergürtel", "Beckenkamm"],
       },
       question: {
         fragetext:
@@ -163,7 +164,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
             { id: "s2", label: "Linken Arm quer über die Brust" },
             {
               id: "s3",
-              label: "Hand an Schulterblatt (!) und Beckenkamm",
+              label: "Schultergürtel begleiten (nicht aufs Schulterblatt drücken) + Hand am Beckenkamm",
             },
             { id: "s4", label: "Drehen in gleichmäßigem Zug" },
             {
@@ -308,12 +309,12 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
               "Hier falsch. Rücken-Schläge macht man bei einem festen Stück Essen, das die Atemwege verschließt (= Bolus). Hier ist es Flüssigkeit in der Lunge (= Aspiration). Husten ist die beste Hilfe — der Körper reinigt sich selbst. Stoppen, aufrichten, Husten anregen, beobachten.",
           },
           {
-            text: "Ich stoppe das Anreichen sofort, fordere Herrn Petrov auf zu husten wenn er kann, setze ihn auf 90° auf, beobachte Atemgeräusch und Sättigung.",
+            text: "Ich stoppe das Anreichen sofort, fordere Herrn Petrov auf zu husten wenn er kann, halte ihn aufrecht (90°) mit Kopf leicht nach vorne, beobachte Atemgeräusch und Sättigung.",
             isCorrect: true,
             feedback:
-              "Richtig vorgegangen. 5 Maßnahmen bei Aspirationsereignis: 1) Sofort Stop — kein weiteres Anreichen. 2) Husten fördern — aktiver Schutzmechanismus, der Aspirat entfernt. 3) Aufrichten 90° — Schwerkraft unterstützt Selbstreinigung der Atemwege. 4) Atemgeräusch beurteilen: klar = gut, gurgelnd/feucht = stille Aspiration. 5) SpO2 (per Pulsoximeter) und Puls beobachten wenn verfügbar. Dann: Befund dokumentieren + Schlucktherapeutin/Arzt informieren. (DGG/DGN 2020)",
+              "Richtig vorgegangen. 5 Maßnahmen bei Aspirationsereignis im Bett-Setting: 1) Sofort Stop — kein weiteres Anreichen. 2) Husten fördern — aktiver Schutzmechanismus, der Aspirat entfernt. 3) Aufrichten 90° + Kopf leicht nach vorne (NICHT vornüber neigen — bei Hemiparese und im Bett ist Kontroll-/Sturzgefahr; Vorbeugen gilt für sitzend/stehend stabile Patienten). Schwerkraft unterstützt Selbstreinigung der Atemwege. 4) Atemgeräusch beurteilen: klar = gut, gurgelnd/feucht = stille Aspiration. 5) SpO2 (per Pulsoximeter) und Puls beobachten wenn verfügbar. Dann: Befund dokumentieren + Schlucktherapeutin/Arzt informieren. (DGG/DGN 2020 Neurogene Dysphagie; AWMF S3 Schlaganfall)",
             feedbackB1:
-              "Richtig. Das sind die richtigen Schritte: Stopp. Husten anregen. Aufrichten. Beobachten. Und danach dokumentieren und die Schluck-Therapeutin informieren.",
+              "Richtig. Das sind die Schritte: 1. Stopp. 2. Husten anregen. 3. Aufrichten auf 90° — Kopf leicht nach vorne (nicht vornüber beugen, das ist bei Halbseiten-Schwäche im Bett gefährlich). 4. Atmung und Sättigung beobachten. 5. Dokumentieren und Schluck-Therapeutin informieren.",
           },
           {
             text: "Ich rufe sofort den Arzt — das ist ein Notfall.",

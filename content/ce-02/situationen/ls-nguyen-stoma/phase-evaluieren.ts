@@ -242,7 +242,7 @@ export const CE02_SIT_NGUYEN_STOMA_EVALUIEREN: SituationsPhase = {
               "Kompressionsstrümpfe wurden angelegt.",
             isTrue: false,
             explanation:
-              "Noch offen — Herr Nguyen hatte heute Morgen Schmerzen beim Anlegen. Das muss für den Nachmittag eingeplant werden. Kompressionsstrümpfe sind die dritte Säule der physikalischen Prophylaxe — ihr Fehlen ist ein offener Punkt der Evaluation.",
+              "Noch offen — Herr Nguyen hatte heute Morgen Schmerzen beim Anlegen. Bei angeordneten MTPS (medizinische Thromboseprophylaxe-Strümpfe) ist 'auf den Nachmittag verschoben' keine angemessene Lösung: Maßnahmen-Auslassung dokumentieren, Ursache (Schmerz) an Arzt zurückmelden, Schmerztherapie anpassen (z.B. Bedarfsanalgesie 30 Min vor Anlage), dann erneut anlegen. Eskalation ist hier wichtiger als Verschiebung — die fehlende Kompressions-Wirkung erhöht das Thromboserisiko bei Tumor + post-OP zusätzlich. Quelle: AWMF S3-Leitlinie VTE-Prophylaxe.",
           },
         ],
       },

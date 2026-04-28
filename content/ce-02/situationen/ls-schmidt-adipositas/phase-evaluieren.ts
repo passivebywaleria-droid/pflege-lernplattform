@@ -107,6 +107,8 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_EVALUIEREN: SituationsPhase = {
       quellen: [
         "DNQP (2017): Expertenstandard Ernährungsmanagement",
         "AWMF S2k-Leitlinie Intertrigo DDG (2022)",
+        "Cederholm T. et al. (2019): GLIM-Kriterien — Halbwertszeit Albumin/Präalbumin/Transferrin",
+        "DGE/ÖGE/SGE (2024): D-A-CH-Referenzwerte",
       ],
       track: "basis",
       modus: "sortierstation",

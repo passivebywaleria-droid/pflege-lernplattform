@@ -11,10 +11,22 @@ import type {
   Lernsituation,
   PflegeProzessPhase,
   ContentStep,
+  GlossarEntry,
 } from "../../../../../../content/_types";
 import { PhasenProgress, PHASEN_ORDER } from "@/components/learn/phasen-progress";
 import { StepRenderer } from "@/components/learn/step-renderer";
 import { PatientAvatar } from "@/components/learn/patient-avatar";
+import { CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR } from "../../../../../../content/ce-02/themen/sturz-prophylaxe/glossar";
+
+/**
+ * Glossar-Mapping pro Situation — welche Themen-Glossare relevant sind.
+ * Pilot 2026-04-28: Frau-M.-Sturz nutzt das Sturz-Prophylaxe-Glossar als Basis.
+ * Ausbau geplant: pro Situation alle berührten Themen-Glossare mergen + zentrales
+ * Pflege-Glossar als Fallback (siehe specs/PLAN-INLINE-WISSEN-2026-04-26.md).
+ */
+const SITUATION_GLOSSAR: Record<string, GlossarEntry[]> = {
+  "frau-m-nacht-sturz": CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR,
+};
 
 export default function SituationLernenPage() {
   const locale = useLocale();
@@ -192,7 +204,7 @@ export default function SituationLernenPage() {
                 <StepRenderer
                   step={currentStep}
                   sprachLevel="c1"
-                  glossar={[]}
+                  glossar={SITUATION_GLOSSAR[situationId] ?? []}
                   onNext={() => handleNextStep()}
                   onSelfRating={() => handleNextStep()}
                   onReflection={() => handleNextStep()}

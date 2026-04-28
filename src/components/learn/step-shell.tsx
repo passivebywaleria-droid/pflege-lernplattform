@@ -69,7 +69,10 @@ export function StepShell({
         {renderBold(question)}
       </h2>
 
-      {/* Body (eingeklappt wenn länger) */}
+      {/* Body — kurz: komplett. Lang: Truncate-with-fade + Mehr-lesen-Toggle.
+          User-Feedback Pilot 2026-04-28: Eingeklappter Body war zu unscheinbar —
+          Schüler erkannten nicht, dass Text dahinter steckt. Jetzt: ersten Teil
+          immer sichtbar (line-clamp-3 mit Fade), Toggle wenn länger. */}
       {body && (
         <>
           {!longBody && (
@@ -79,24 +82,38 @@ export function StepShell({
           )}
           {longBody && (
             <div>
+              <div className="relative">
+                <p
+                  className={`text-sm leading-relaxed text-[var(--lern-text-secondary)] whitespace-pre-line ${
+                    bodyOpen ? "" : "line-clamp-3"
+                  }`}
+                >
+                  <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
+                </p>
+                {!bodyOpen && (
+                  <div
+                    className="pointer-events-none absolute inset-x-0 bottom-0 h-8"
+                    style={{
+                      background:
+                        "linear-gradient(to bottom, transparent, var(--lern-bg-primary, #F8F5F0))",
+                    }}
+                    aria-hidden="true"
+                  />
+                )}
+              </div>
               <button
                 type="button"
                 onClick={() => setBodyOpen((v) => !v)}
                 aria-expanded={bodyOpen}
-                className="inline-flex items-center gap-1 text-xs font-medium text-[var(--lern-accent)] hover:underline"
+                className="mt-1.5 inline-flex items-center gap-1 text-xs font-medium text-[var(--lern-accent)] hover:underline"
               >
-                {bodyOpen ? "Kontext ausblenden" : "Mehr Kontext"}
+                {bodyOpen ? "Weniger anzeigen" : "Mehr lesen"}
                 <ChevronDown
                   className={`h-3 w-3 transition-transform ${
                     bodyOpen ? "rotate-180" : ""
                   }`}
                 />
               </button>
-              {bodyOpen && (
-                <p className="mt-2 text-sm leading-relaxed text-[var(--lern-text-secondary)] whitespace-pre-line">
-                  <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
-                </p>
-              )}
             </div>
           )}
         </>

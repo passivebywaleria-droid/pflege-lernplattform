@@ -45,7 +45,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
           "Eigene Hände waschen / desinfizieren (RKI: vor Patientenkontakt)",
           "Raumtemperatur prüfen: mindestens 24 °C, kein Luftzug",
           "Alle Materialien griffbereit legen: Handtuch, frische Windel, Kleidung",
-          "Badewanne füllen — Wassertemperatur 37 °C mit Badethermometer messen",
+          "Badewanne füllen — Wassertemperatur 36-37 °C mit Badethermometer messen (Hoehl/Kullick 2019)",
           "Laura erklären was jetzt passiert und was sie beobachten soll",
           "Hände unmittelbar vor Hautkontakt nochmals desinfizieren",
           "Emilia ausziehen — erst dann ins Wasser",
@@ -68,12 +68,12 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
       displayFormat: "stepbystep",
       contentC1: {
         title: "Infant Handling beim Säuglingsbad — 5 Prinzipien",
-        body: "Bevor du anfängst: die 5 Prinzipien beim Säuglingsbad.\n\n**1. Kopf immer sicher halten:** Nacken liegt auf dem Unterarm, Daumen und Zeigefinger umfassen die Schulter.\n\n**2. Haltearm schafft feste Führung:** Der haltende Arm bleibt ruhig. Die freie Hand wäscht.\n\n**3. Bewegungen langsam und ankündigen:** Emilia braucht Zeit um sich anzupassen. \"Jetzt wasche ich deinen Rücken.\"\n\n**4. Reihenfolge: Gesicht → Körper → Haare:** Von oben nach unten — damit Schmutz nicht nach oben gelangt. Gesicht mit trockenem Waschlappen, Augen von innen nach außen.\n\n**5. Wassertemperatur prüfen:** Vor dem Eintauchen nochmals am Handgelenk prüfen. *(Hoehl/Kullick, 2019 — Infant Handling)*",
+        body: "Bevor du anfängst: die 5 Prinzipien beim Säuglingsbad.\n\n**1. Kopf immer sicher halten:** Nacken liegt auf dem Unterarm, Daumen und Zeigefinger umfassen die Schulter.\n\n**2. Haltearm schafft feste Führung:** Der haltende Arm bleibt ruhig. Die freie Hand wäscht.\n\n**3. Bewegungen langsam und ankündigen:** Emilia braucht Zeit um sich anzupassen. \"Jetzt wasche ich deinen Rücken.\"\n\n**4. Reihenfolge: Gesicht → Körper → Haare:** Von oben nach unten — damit Schmutz nicht nach oben gelangt. Gesicht mit trockenem Waschlappen, Augen von innen nach außen.\n\n**5. Wassertemperatur prüfen:** 36-37 °C — vor dem Eintauchen nochmals am Handgelenk prüfen. *(Hoehl/Kullick, 2019 — Infant Handling)*",
         glossarBegriffe: ["Infant Handling"],
       },
       contentB1: {
         title: "Säuglingsbad — 5 wichtige Regeln",
-        body: "Bevor du anfängst — lerne diese 5 Regeln:\n\n**1. Kopf immer halten:** Nacken liegt auf deinem Unterarm.\n**2. Eine Hand hält, eine wäscht:** Der Haltearm bewegt sich nicht.\n**3. Langsam und ansagen:** Sage Emilia was du tust: \"Jetzt der Rücken.\"\n**4. Zuerst Gesicht, dann Körper, dann Haare:** Von oben nach unten.\n**5. Wasser prüfen:** 37 °C — nochmal am Handgelenk testen.",
+        body: "Bevor du anfängst — lerne diese 5 Regeln:\n\n**1. Kopf immer halten:** Nacken liegt auf deinem Unterarm.\n**2. Eine Hand hält, eine wäscht:** Der Haltearm bewegt sich nicht.\n**3. Langsam und ansagen:** Sage Emilia was du tust: \"Jetzt der Rücken.\"\n**4. Zuerst Gesicht, dann Körper, dann Haare:** Von oben nach unten.\n**5. Wasser prüfen:** 36-37 °C — nochmal am Handgelenk testen.",
         glossarBegriffe: ["Infant Handling"],
       },
     },

@@ -171,13 +171,13 @@ export const CE02_SIT_KOVAC_AMBULANT_INFORMIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Erstkontakt — aktives Zuhören",
-        body: "Du begrüßt Frau Kovač. Sie wirkt erschöpft, schaltet den Fernseher aus. Du fragst nach der Nacht — Frau Kovač antwortet. Drei Dialogphasen: Begrüßung setzen — Befindlichkeit erheben — Antwort wählen.",
-        glossarBegriffe: [],
+        body: "Du hast geklingelt, Frau Kovač hat die Tür geöffnet. **Wichtig — du bist Gast in ihrer Wohnung:** Hausrecht respektieren heißt, du bittest um Eintritt ('Guten Morgen, Frau Kovač — darf ich reinkommen?'), du gehst nicht selbstverständlich rein. Erst wenn sie dich hereingebeten hat, betrittst du den Wohnraum. Im stationären Setting ist das anders — dort gehört der Raum dem Krankenhaus, hier gehört er ihr.\n\nFrau Kovač hat dich hereingebeten. Sie wirkt erschöpft, schaltet den Fernseher aus. Du fragst nach der Nacht — Frau Kovač antwortet. Drei Dialogphasen: Begrüßung setzen — Befindlichkeit erheben — Antwort wählen.",
+        glossarBegriffe: ["Hausrecht"],
       },
       contentB1: {
         title: "Gespräch mit Frau Kovač",
-        body: "Du begrüßt Frau Kovač. Sie schaltet den Fernseher aus. Sie wirkt müde. Du führst ein kurzes Gespräch in drei Phasen. Wähle die richtige Antwort.\n\n**Richtig: b** — Du hörst zu. Du fragst nach. Das nennt man aktives Zuhören.",
-        glossarBegriffe: [],
+        body: "Du hast geklingelt. Frau Kovač macht die Tür auf. **Wichtig:** Das ist ihre Wohnung. Du fragst: 'Guten Morgen, Frau Kovač — darf ich reinkommen?' Erst wenn sie ja sagt, gehst du rein. Das ist Hausrecht.\n\nFrau Kovač hat dich reingebeten. Sie schaltet den Fernseher aus. Sie wirkt müde. Du führst ein kurzes Gespräch in drei Phasen. Wähle die richtige Antwort.\n\n**Richtig: b** — Du hörst zu. Du fragst nach. Das nennt man aktives Zuhören.",
+        glossarBegriffe: ["Hausrecht"],
       },
       question: {
         fragetext: "Wähle deine Antwort auf Frau Kovač.",

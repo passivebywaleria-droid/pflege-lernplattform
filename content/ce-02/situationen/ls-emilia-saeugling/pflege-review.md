@@ -118,20 +118,36 @@ Begruendung: F-01 (Du/Sie-Inkonsistenz) ist gemaeß CLAUDE.md/AGENTS.md ein K.O.
 4. F-06 bis F-10 — Feinschliff, optional vor naechstem Review-Zyklus
 
 ## Fixes durchgeführt — 2026-04-26
-- Alle 10 Findings bearbeitet
+- Alle 10 Code-Findings (pflege-review.md) bearbeitet
+- 4 zusätzliche Plan-Findings (pflege-review-plan.md F-01, F-02, F-03, F-05) im Code nachgezogen
 - K.O.-Verdikt: PASS
 
-### Im Detail
+### Im Detail (Code-Review F-01 bis F-10)
 - **F-01 (HOCH):** `phase-durchfuehren.ts` Z. 327 — "Nehmen Sie sich" → "Nimm dir"; Distraktor-Option ebenfalls "Sie" → "du" (`musst du nicht weinen`); B1-Feedbacks auf Du-Konsistenz geprüft.
 - **F-02 (MITTEL):** `phase-dokumentieren.ts` Trinkprotokoll-Musterantwort — Windel-Zeitpunkte (08:00, 09:30, 11:00, 13:30, 15:00) ergänzt + "5. Windel um 15:00 Uhr" als Erreichungs-Marker. Stimmt jetzt mit Phase-5-Stand "bisher 4 um 14:00" überein.
 - **F-03 (MITTEL):** `phase-evaluieren.ts` Categorize-Item — Text präzisiert auf "Mutter Laura aktiv beim Wickeln anleiten — bisher nur beim Baden begleitet". Eindeutigkeit der Kategorie 2 hergestellt.
-- **F-04 (MITTEL):** `phase-planen.ts` Matrix — Achsen klar neu definiert (X: Flüssigkeit/Trinken vs. Atemweg/Mutter-Empowerment; Y: Mutter/Arzt-mit-Anleitung vs. Pflegekraft selbst). Quadranten-Mapping konsistent: m1→Q1, m2→Q2, m3→Q4, m4→Q4, m5→Q4, m6→Q3, m7→Q2, m8→Q4. Arztvisite (m6) korrekt im Quadrant "delegiert/Arzt-Achse". Matrix-Instruction + axisX/axisY-Labels angepasst.
-- **F-05 (MITTEL):** `phase-planen.ts` m3 — "Nasentropfen NaCl 0,9% anordnen" → "bereitstellen und vor jeder Mahlzeit anwenden". Pflegerische Maßnahme (frei verkäuflich, Hoehl/Kullick) jetzt korrekt im Pflege-Quadranten Q4.
-- **F-06 (NIEDRIG):** `phase-durchfuehren.ts` Bad-Vorbereitung-Sortierung — RKI-konform 2 Hände-Schritte aufgenommen: erstes Item "Hände waschen/desinfizieren (vor Patientenkontakt)" + Item "Hände unmittelbar vor Hautkontakt nochmals desinfizieren" vor "Emilia ausziehen".
-- **F-07 (NIEDRIG):** `phase-durchfuehren.ts` Z. 330 — `wegzuerklaeiren` → `wegzuerklären` (im selben Edit wie F-01).
-- **F-08 (NIEDRIG):** `phase-beobachten.ts` TrueFalse Card 1 — Explanation um Quellen-Hinweis ergänzt: "Quellen weichen leicht ab (Hoehl/Kullick 30-50, AAP/AWMF 30-60). Gemeinsame Schwelle: > 60/min ist Tachypnoe."
-- **F-09 (NIEDRIG):** `phase-evaluieren.ts` Categorize-Item — Text präzisiert: "Rückenlage beim Schlafen heute durchgehend umgesetzt" (Vergangenheits-Bezug auf geprüften Zeitraum, kein Missverständnis "fertig").
-- **F-10 (NIEDRIG):** `phase-informieren.ts` Anamnese-Sortierung — body-Text um Begründung ergänzt: "Wir starten beim Hauptbeschwerden-Leitsymptom (hier Trinkschwäche, weil Atmung makroskopisch noch unauffällig)." ABCDE-Bezug erklärt für den Fall, dass Atemnot priorisiert werden müsste. C1- und B1-Variante.
+- **F-04 (MITTEL):** `phase-planen.ts` Matrix — Quadranten neu konsistent gemacht. Quadrant-Konvention: Q1=Pflege+Flüssigkeit, Q2=Pflege+Atemweg/Empowerment, Q3=Mutter/Arzt+Flüssigkeit, Q4=Mutter/Arzt+Atemweg. Mapping korrigiert: m1→Q1, m2→Q3 (Mutter stillt mit Anleitung), m3→Q2 (Pflege wendet NaCl an), m4→Q2 (Pflege saugt ab), m5→Q4, m6→Q3, m7→Q4 (Laura hält aufrecht), m8→Q2. Item-Texte um Rollen-Hinweise ergänzt.
+- **F-05 (MITTEL):** `phase-planen.ts` m3 — "Nasentropfen NaCl 0,9% anordnen" → "bereitstellen und vor jeder Mahlzeit anwenden". Pflegerische Standardmaßnahme (frei verkäuflich, Hoehl/Kullick + AWMF Bronchiolitis 2022) jetzt im Pflege-Quadrant Q2.
+- **F-06 (NIEDRIG):** `phase-durchfuehren.ts` Bad-Vorbereitung-Sortierung — RKI-konform 2 Hände-Schritte: "Eigene Hände waschen/desinfizieren (vor Patientenkontakt)" + "Hände unmittelbar vor Hautkontakt nochmals desinfizieren".
+- **F-07 (NIEDRIG):** `phase-durchfuehren.ts` Z. 331 — `wegzuerklaeiren` → `wegzuerklären`.
+- **F-08 (NIEDRIG):** `phase-beobachten.ts` TrueFalse Card 1 — Quellen-Hinweis (Hoehl/Kullick 30-40 Ruhe / AAP/AWMF 30-60) + Tachypnoe-Schwelle > 60/min ergänzt.
+- **F-09 (NIEDRIG):** `phase-evaluieren.ts` Categorize-Item — "Rückenlage beim Schlafen heute durchgehend umgesetzt" (Vergangenheits-Bezug).
+- **F-10 (NIEDRIG):** `phase-informieren.ts` Anamnese-Sortierung — body-Text um Logik-Begründung ergänzt (Hauptbeschwerden-Leitsymptom + ABCDE-Bezug bei kritischer Atemnot).
+
+### Im Detail (Plan-Review F-01 bis F-05)
+- **Plan-F-01 (MITTEL — AF-Norm):** `phase-beobachten.ts` TrueFalse — Aussage 1 präzisiert auf Säuglings-Spannweite differenziert: "Ruhe-AF 30-40/min, bis 50/min wach akzeptabel, > 50/min bei Bronchiolitis beobachtungspflichtig". Aussage 2-Erklärung (50/min kein Sofortalarm) entsprechend angepasst — bei RSV/Bronchiolitis 50/min am oberen Rand → engmaschige Verlaufsbeobachtung q15-30min. Quellen Hoehl/Kullick 2019 + AAP/AWMF 2022.
+- **Plan-F-02 (NIEDRIG — Messdauer rektal):** `phase-beobachten.ts` Sequencing tm4 — "ca. 1 Minute" → "bis Signalton (Dauer geräteabhängig, ca. 10-60 Sek.)". Nicht mehr fix-zeitlich.
+- **Plan-F-03 (NIEDRIG — NaCl-Verordnung):** Kongruent mit Code-F-05 erledigt.
+- **Plan-F-05 (NIEDRIG — Wassertemperatur):** `phase-durchfuehren.ts` Sorting-Item + Step 4.2 Infant-Handling-Text — "37 °C" → "36-37 °C" (Hoehl/Kullick 2019 Säuglings-Bad-Bereich).
 
 ### Verifikation Du-Konsistenz
 Grep nach Sie/Ihnen/Ihre/Ihr in allen 7 Files: Alle restlichen Treffer sind dritte Person (Emilia/Laura: "Sie schaut", "Sie atmet") — keine Anrede mehr an Laura oder die Schülerin.
+
+### Verifikation TypeScript
+`npx tsc --noEmit` für alle 7 Files der Situation: 0 Fehler. Strict-konform.
+
+### Restrisiken
+- Matrix-Quadranten-Logik bleibt didaktisch anspruchsvoll (2D-Matrix mit zwei orthogonalen Achsen) — Item-Texte haben jetzt Rollen-Klammern, sollten Schülern als Hinweis genügen. Falls Renderer-Test im Walkthrough zeigt, dass Schüler die Achsen falsch lesen: Weiter zu 1D-Categorize vereinfachen.
+- AF-Schwelle 50/min vs. 60/min ist Quellenstreit — aktuell beide Quellen nebeneinander zitiert, gemeinsame Tachypnoe-Schwelle > 60/min betont. Empfehlung an Dozentin: Lokale Hausstandard-Schwelle prüfen.
+
+**K.O.-Verdikt: PASS** (alle HOCH/MITTEL gefixt, alle NIEDRIG gefixt, keine erfundenen Pflege-Aspekte, Säuglings-Spezifika altersgerecht, Standards belegt: Hoehl/Kullick 2019, AWMF S2k Bronchiolitis 2022, AAP 2022, WHO 2023, RKI 5-Momente, Fiechter/Meier 1981.)

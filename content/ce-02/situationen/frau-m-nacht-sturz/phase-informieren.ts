@@ -53,15 +53,91 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       },
     },
 
-    // Step 1.2 — Selbsteinschätzung VOR Betreten
-    // FIX (walkthrough B-01): stepType confidence → selfrating, confidenceCards entfernt.
-    // confidence bewertet Aussagen mit isTrue/isFalse — bei subjektiver Selbsteinschätzung
-    // erzeugte das "Falsch!"-Feedback bei ehrlicher Antwort. selfrating nutzt 5-Punkt-Skala
-    // ohne Richtig/Falsch-Logik (StepSelfrating-Renderer).
+    // Step 1.1b — Inline-Wissen "Was ist ein Sturz?"
+    // PILOT (Inline-Wissen v1, 2026-04-26): Themen-Baustein als 60-Sek-Lese-Karte.
+    // Der Schüler hat in Step 1.1 SBAR-Übergabe gehört: "Frau M. ist gestürzt." Bevor er
+    // die Selbsteinschätzung gibt, klärt dieser Baustein die Kern-Definition — und macht
+    // bewusst, dass auch Beinahe-Stürze zählen (relevant für die Anamnese in Step 1.4+).
+    {
+      stepId: "ce02-frau-m-info-01b-was-ist-sturz",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 1,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "WHO 2007 — Global Report on Falls Prevention",
+        "DNQP 2022 — Expertenstandard Sturzprophylaxe",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-info-sturz-definition",
+      tag: "pflege",
+      contentC1: {
+        title: "Was zählt eigentlich als Sturz?",
+        body: "",
+        glossarBegriffe: ["Sturz", "Beinahe-Sturz", "Near-Miss"],
+      },
+      contentB1: {
+        title: "Was ist ein Sturz?",
+        body: "",
+        glossarBegriffe: ["Sturz", "Beinahe-Sturz"],
+      },
+      inlineWissen: {
+        bausteinRef: "sturz-prophylaxe-was-ist-ein-sturz",
+        storyAufhaenger:
+          "Frau Keller hat dir gerade zugerufen: \"Frau M. ist gestürzt.\" Aber bevor du das Zimmer betrittst — bist du sicher, was alles als Sturz zählt? Auch Frau M.s Tochter Birgit erzählt manchmal: \"Mama hat sich am Schrank festgehalten — fast wäre sie gefallen.\" Ist das ein Sturz?",
+        storyAufhaengerB1:
+          "Frau Keller hat gesagt: \"Frau M. ist gestürzt.\" Aber was ist eigentlich ein Sturz genau? Und was ist mit Beinahe-Stürzen — zum Beispiel wenn sich jemand am Schrank festhält und fast fällt?",
+        kerntext:
+          "**Die WHO-Definition:** Ein Sturz ist ein Ereignis, bei dem die betroffene Person **unbeabsichtigt auf dem Boden oder einer tieferen Ebene landet** (WHO 2007).\n\n**Drei Aspekte sind wichtig:**\n\n• **Unbeabsichtigt** — wer sich bewusst hinsetzt, stürzt nicht.\n\n• **Tiefere Ebene** — auch vom Stuhl rutschen ist ein Sturz.\n\n• **Ereignis** — kein Prozess, ein Moment.\n\n**Beinahe-Stürze zählen mit.** Der DNQP 2022 ergänzt die WHO-Definition: Wer sich gerade noch abfangen kann oder von einer Pflegekraft aufgefangen wird — das ist auch ein Sturzereignis und muss dokumentiert werden.\n\n**Warum?** Studien zeigen: Wer einen Beinahe-Sturz hatte, hat in den **nächsten 6 Monaten ein 2-3 fach erhöhtes Risiko** für einen echten Sturz.\n\n**Bei Frau M. heißt das:** Heute Nacht ihr erster echter Sturz. Wenn dir Birgit später erzählt, dass Mama vor zwei Wochen schon mal beinahe gefallen ist — gehört das in die Dokumentation.",
+        kerntextB1:
+          "**Die WHO-Definition:** Ein Sturz ist, wenn jemand **unabsichtlich** auf den Boden fällt. Auch das Rutschen vom Stuhl ist ein Sturz.\n\n**Der DNQP 2022 sagt:** Auch **Beinahe-Stürze** sind Stürze. Beinahe-Sturz heißt: Der Mensch hält sich gerade noch fest — zum Beispiel am Schrank.\n\n**Warum ist das wichtig?**\n\nStudien zeigen: Wer einmal beinahe gefallen ist, fällt in den **nächsten 6 Monaten 2 bis 3 Mal so oft wirklich**.\n\nDu musst es deshalb aufschreiben — auch wenn nichts passiert ist.",
+        faustregel: "Jeder Beinahe-Sturz ist ein angekündigter Sturz.",
+        faustregelB1: "Auch Beinahe-Stürze sind Stürze. Du schreibst sie auf — auch wenn nichts passiert ist.",
+        spektrum: [
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz, nächtliche Desorientierung",
+            kurzbeschreibung:
+              "Steht nachts orientierungslos auf, weiß nicht wo er ist. Sein Sturz ist nicht 'unabsichtlich im Sinne von ungeplant', sondern aus kognitiver Verwirrung — zählt aber genauso.",
+          },
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Akut post-OP, Hüft-TEP",
+            kurzbeschreibung:
+              "Bei ihr ist die Sturzgefahr nicht alters- sondern situationsbedingt: frische OP, Schmerz, Bewegungseinschränkung. Erstmobilisation am 1. POT braucht engmaschige Begleitung.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "Ambulant, COPD + Stolperfallen zuhause",
+            kurzbeschreibung:
+              "Sie wohnt allein, ist mehrfach beinahe gestolpert (Teppich, Telefonkabel). Beinahe-Stürze sind bei ihr Alltagserfahrung — kommen aber nur in die Doku, wenn sie es erzählt.",
+          },
+        ],
+        sonstBox:
+          "Nicht in unseren Patienten-Geschichten vertreten, aber wichtig zu kennen: **Synkope** (kurze Bewusstlosigkeit durch Kreislaufabfall, oft kardial), **Drop-Attacks** (plötzlicher Tonusverlust ohne Bewusstlosigkeit, vertebrobasiläre Insuffizienz), **vestibuläre Schwindelattacken**. Diese werden in der Notfallmedizin (CE-06) und Neurologie behandelt.",
+        sonstBoxB1:
+          "Andere Sturz-Ursachen, die wir hier nicht vertieft behandeln: **Synkope** (kurze Bewusstlosigkeit), **Drop-Attacks** (plötzliches Hinfallen ohne Vorwarnung), **Schwindelattacken vom Innenohr**. Mehr dazu lernst du im CE-06 (Notfälle).",
+        karteikarte: {
+          vorderseite:
+            "Frau M. ist heute Nacht gestürzt — Birgit erzählt dir später, dass Mama sich vor 2 Wochen 'kurz am Schrank festgehalten' hat. Was zählt davon als Sturz?",
+          rueckseite:
+            "Beides. Die WHO definiert Sturz als unbeabsichtigtes Landen auf dem Boden / tieferer Ebene. Der DNQP 2022 ergänzt: Auch **Beinahe-Stürze** zählen — Risiko in den nächsten 6 Monaten 2-3x erhöht. Spektrum: Bauer (Demenz, nächtliche Desorientierung), Yilmaz (post-OP, situationsbedingt), Kovac (ambulant, Stolperfallen). Faustregel: **Jeder Beinahe-Sturz ist ein angekündigter Sturz.**",
+        },
+      },
+    },
+
+    // Step 1.2 — Selbsteinschätzung VOR Betreten (crowdPoll mit Seed-Daten)
+    // FIX (Pilot 2026-04-28): Smiley-selfrating war didaktisch zu wenig — User wollte
+    // konkrete Pill-Buttons mit Crowd-Vergleich ("65 andere Schüler haben gewählt...").
+    // crowdPoll nutzt Seed-Daten bis echte Schüler-Daten in der DB sind.
     {
       stepId: "ce02-frau-m-info-02-vor-betreten",
       phase: 1,
-      stepType: "selfrating",
+      stepType: "crowdPoll",
       bloomLevel: 2,
       kompetenzbereich: "I.1",
       quellen: ["DNQP 2022"],
@@ -70,18 +146,70 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       lernziel: "ce02-frau-m-info-confidence-vorher",
       tag: "pflege",
       contentC1: {
-        title: "Wie sicher fühlst du dich?",
-        body: "Bevor du das Zimmer betrittst: Mach einen Moment Pause. Das ist eine herausfordernde Situation — nachts, allein, mit einer gerade gestürzten Patientin. Wir fragen dich jetzt nach deiner ehrlichen Selbsteinschätzung. Es gibt kein richtig oder falsch.",
+        title: "Wie geht es dir gerade?",
+        body: "Bevor du das Zimmer betrittst: Kurz Pause. Nachts, allein, gerade gestürzte Patientin — das ist herausfordernd. Wähle was am besten passt. Es gibt kein richtig oder falsch — danach siehst du, was andere Schüler*innen gewählt haben.",
         glossarBegriffe: [],
       },
       contentB1: {
-        title: "Wie sicher fühlst du dich?",
-        body: "Bevor du ins Zimmer gehst: Kurz stehenbleiben. Die Situation ist schwer — nachts, alleine, bei einer gestürzten Patientin. Wie sicher fühlst du dich gerade? Es gibt kein richtig oder falsch.",
+        title: "Wie fühlst du dich?",
+        body: "Bevor du reingehst: Kurz Pause. Nachts, allein, gestürzte Patientin — das ist nicht einfach. Wähle was am besten passt. Es gibt kein richtig oder falsch. Danach siehst du, was andere Schüler*innen gewählt haben.",
         glossarBegriffe: [],
       },
       question: {
         fragetext:
-          "Wie sicher fühlst du dich, jetzt in das Zimmer zu gehen und bei Frau M. das Erstgespräch zu führen?",
+          "Wie fühlst du dich, jetzt zu Frau M. zu gehen?",
+        crowdPoll: {
+          question: "Wie fühlst du dich, jetzt zu Frau M. zu gehen?",
+          questionB1: "Wie fühlst du dich, jetzt zu Frau M. zu gehen?",
+          inputType: "choice",
+          allowMultiple: false,
+          options: [
+            {
+              id: "sicher",
+              text: "Sicher — ich weiß, was zu tun ist",
+              textB1: "Sicher — ich weiß, was ich tun muss",
+            },
+            {
+              id: "halbsicher",
+              text: "Halb sicher — Grundgerüst klar, Details unsicher",
+              textB1: "Halb sicher — die wichtigsten Sachen klar, Details unsicher",
+            },
+            {
+              id: "unsicher",
+              text: "Unsicher — möchte erst mehr lernen, bevor ich etwas falsch mache",
+              textB1: "Unsicher — ich möchte erst mehr lernen",
+            },
+            {
+              id: "nervoes",
+              text: "Anfangs nervös, dann routiniert — sobald ich anfange, läuft es",
+              textB1: "Anfangs nervös, danach geht es — wenn ich anfange, läuft es",
+            },
+          ],
+          seedResponses: [
+            {
+              text: "Halb sicher — Grundgerüst klar, Details unsicher",
+              count: 79,
+              highlight: true,
+            },
+            {
+              text: "Anfangs nervös, dann routiniert",
+              count: 69,
+            },
+            {
+              text: "Unsicher — möchte erst mehr lernen",
+              count: 60,
+            },
+            {
+              text: "Sicher — ich weiß, was zu tun ist",
+              count: 39,
+            },
+          ],
+          totalVotes: 247,
+          fazit:
+            "\"Halb sicher\" ist die häufigste Antwort — und sie ist ehrlich. Studien zeigen: Wer sich vor einer komplexen Pflegesituation als \"sehr sicher\" einschätzt, überschätzt sich oft. Eine gesunde Portion Unsicherheit ist ein Profi-Reflex. Du gehst gleich rein — strukturiert, mit Plan, im 2-Personen-Setting (Frau Keller im Nachbarzimmer). Du musst nicht alles wissen, du musst gut beobachten und richtig priorisieren.",
+          fazitB1:
+            "\"Halb sicher\" ist die häufigste Antwort. Das ist ehrlich. Studien sagen: Wer \"sehr sicher\" sagt, überschätzt sich oft. Etwas unsicher zu sein ist normal und gut — du achtest dann mehr auf Details. Du gehst gleich rein. Frau Keller ist im Nachbarzimmer. Du musst nicht alles wissen — du musst gut hinschauen und das Wichtigste zuerst tun.",
+        },
       },
     },
 
@@ -147,6 +275,101 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       },
     },
 
+    // Step 1.3b — Inline-Wissen "Sturz-Risikofaktoren — Anker + Spektrum"
+    // PILOT (Inline-Wissen v2, 2026-04-26): Themen-Baustein zu Risikofaktoren.
+    // Schüler hat in Step 1.3 die Erst-Priorität verstanden (Licht + Bewusstsein + Begrüßen).
+    // Bevor er den Dialog mit Frau M. führt, soll er wissen: Welche Risikofaktoren bringt
+    // Frau M. mit? Und wie unterscheidet sich das von anderen Patient(inn)en mit Sturz-Risiko?
+    {
+      stepId: "ce02-frau-m-info-03b-risikofaktoren-spektrum",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP 2022 — Expertenstandard Sturzprophylaxe",
+        "Beers-Liste 2023",
+        "PRISCUS-Liste 2023",
+        "DGN 2024 — S3-LL Parkinson-Krankheit",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-info-risikofaktoren",
+      tag: "pflege",
+      contentC1: {
+        title: "Sturz-Risikofaktoren bei Frau M. — und bei anderen",
+        body: "",
+        glossarBegriffe: [
+          "Risikofaktor",
+          "intrinsisch",
+          "extrinsisch",
+          "Polypharmazie",
+          "Bradykinese",
+          "Posturale Instabilität",
+        ],
+      },
+      contentB1: {
+        title: "Warum stürzt Frau M.?",
+        body: "",
+        glossarBegriffe: ["Risikofaktor", "Polypharmazie", "Parkinson"],
+      },
+      inlineWissen: {
+        bausteinRef: "sturz-prophylaxe-risikofaktoren-spektrum",
+        storyAufhaenger:
+          "Du gehst gleich rein zu Frau M. Aber halt kurz inne: Warum ist sie überhaupt gestürzt? Mit 82, Parkinson Stadium II, Pneumonie Tag 3 — kommen mehrere Risikofaktoren zusammen. Stürze haben fast nie eine einzige Ursache.",
+        storyAufhaengerB1:
+          "Bevor du zu Frau M. ins Zimmer gehst: Warum ist sie eigentlich gestürzt? Frau M. hat viele Sachen, die zusammen zum Sturz führen. Stürze haben fast nie nur **einen** Grund.",
+        kerntext:
+          "Der DNQP 2022 unterscheidet **zwei Gruppen** von Risikofaktoren. Frau M. zeigt aus beiden mehrere.\n\n**Intrinsisch (im Patienten):**\n\n• **Alter > 75** — Frau M. ist 82.\n\n• **Morbus Parkinson Stadium II** — ihr Hauptfaktor: Bradykinese (verlangsamte Bewegung), Rigor (Steifigkeit), beginnende posturale Instabilität (Gleichgewicht).\n\n• **Akute Erkrankung** — Pneumonie Tag 3, Schwächung durch Infekt + Antibiose.\n\n• **Polypharmazie wahrscheinlich** — L-Dopa-Präparat, evtl. Antibiotikum, evtl. Schlafmittel (PRISCUS-Check fällig).\n\n• **Erstmaliger Sturz jetzt** — ab heute Nacht automatisch hohes Sturzrisiko (DNQP 2022).\n\n**Extrinsisch (in der Umgebung):**\n\n• Nachts — schlechte Beleuchtung beim Aufstehen.\n\n• Klinik-Umgebung — sie kennt den Weg zur Toilette nicht so wie zuhause.\n\n• Bett-Höhe? Rufknopf in Reichweite gewesen?\n\n**Faktoren addieren sich.** Frau M. hat heute Nacht **mindestens 5 zusammenwirkende Risikofaktoren** — kein Einzelfaktor erklärt den Sturz allein.",
+        kerntextB1:
+          "Der DNQP 2022 sagt: Es gibt **zwei Arten** von Risiken.\n\n**Im Patienten (intrinsisch):**\n\n• **Alter über 75** — Frau M. ist 82.\n\n• **Parkinson Stadium II** — der Hauptgrund: Sie bewegt sich langsam, ist steif, das Gleichgewicht wird schlechter.\n\n• **Akute Krankheit** — Lungenentzündung Tag 3, sie ist geschwächt.\n\n• **Polypharmazie** — sie nimmt mehrere Medikamente. Manche machen schwindlig oder müde.\n\n• **Erster Sturz heute Nacht** — ab jetzt automatisch hohes Risiko (DNQP 2022).\n\n**In der Umgebung (extrinsisch):**\n\n• Nachts — wenig Licht.\n\n• Krankenhaus — sie kennt den Weg zur Toilette nicht.\n\n**Die Risiken addieren sich.** Frau M. hat heute mindestens 5 Risiken zusammen.",
+        faustregel:
+          "Stürze haben fast nie eine Ursache — sie haben einen Risiko-Cocktail. 4+ gleichzeitige Faktoren = hohes Risiko.",
+        faustregelB1:
+          "Stürze haben fast nie nur einen Grund. Wer 4 oder mehr Risiken zusammen hat, ist sehr sturzgefährdet.",
+        spektrum: [
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz + Sundowning",
+            kurzbeschreibung:
+              "Bei ihm ist die **Kognition** der Hauptfaktor. Er steht nachts orientierungslos auf — nicht weil er gestolpert ist, sondern weil er nicht weiß, dass er im Krankenhaus ist. Sein Sturzschutz ist Beziehungsgestaltung + Validation, nicht Bettgitter.",
+          },
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Hüft-TEP, akute post-OP-Mobilität",
+            kurzbeschreibung:
+              "Bei ihr ist es nicht Alter oder Medikamente — es ist die **frische Operation**: Schmerz, Bewegungsangst, Lagerungsregeln (keine Adduktion, keine Innenrotation, max. 90° Hüftflexion). Erstmobilisation am 1. POT braucht engmaschige Begleitung.",
+          },
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Polyneuropathie + Bariatrik",
+            kurzbeschreibung:
+              "Diabetes-Folge: Sie spürt ihre Füße kaum (sensorische Polyneuropathie). Plus bariatrisches Equipment-Risiko bei BMI 38 (Schwerlast-Bett, Lifter ab >150 kg, Mobilisation mit 2-3 Helfern).",
+          },
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Halbseiten-Lähmung + Neglect",
+            kurzbeschreibung:
+              "Tag 5 nach Apoplex: Hemiparese rechts, beginnender Neglect der betroffenen Seite. Er übersieht Hindernisse rechts. Sein Sturzrisiko ist räumlich-sensorisch, nicht primär muskulär.",
+          },
+        ],
+        sonstBox:
+          "Risikofaktoren, die wir hier nicht über einen Patienten lehren, aber wichtig sind: **Synkope durch Herzrhythmusstörung** (Vorhofflimmern, AV-Block — siehe CE-06 Notfallmedizin), **Drop-Attacks** (vertebrobasiläre Insuffizienz), **akute Hypoglykämie** bei Diabetes (CE-05 Endokrinologie), **Vestibulärer Schwindel** (Innenohr, BPLS, M. Menière). Diese kommen meist akut, nicht als chronisches Risiko-Profil.",
+        sonstBoxB1:
+          "Andere Sturz-Ursachen, die wir nicht im Detail behandeln: **Herzrhythmusstörungen** (Herz schlägt unregelmäßig, kurze Bewusstlosigkeit — siehe CE-06), **plötzliches Hinfallen ohne Vorwarnung** (Drop-Attacks), **Unterzucker bei Diabetes** (CE-05), **Schwindel vom Innenohr**.",
+        karteikarte: {
+          vorderseite:
+            "Birgit fragt dich am Morgen: \"Warum ist Mama gestürzt? Ist das einfach das Alter?\" — Was sagst du?",
+          rueckseite:
+            "Nein — Stürze sind multifaktoriell. Bei Frau M. mind. 5 Faktoren: Alter > 75, Parkinson II (Hauptfaktor: Bradykinese, posturale Instabilität), akute Pneumonie, Polypharmazie, nächtliche Klinikumgebung.\n\nSpektrum bei anderen:\n• Bauer (Demenz) → Kognition + Sundowning\n• Yilmaz (Hüft-TEP) → akute post-OP-Mobilität\n• Schmidt → Polyneuropathie + Bariatrik\n• Petrov → Halbseiten-Lähmung + Neglect\n\nFaustregel: **4+ Faktoren = hohes Risiko, kein Patient hat alle, jeder hat eigene.** (DNQP 2022, PRISCUS 2023)",
+        },
+      },
+    },
+
     // Step 1.4 — Dialog (3 Phasen)
     {
       stepId: "ce02-frau-m-info-04-zimmer-betreten",
@@ -161,12 +384,16 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Das Zimmer betreten",
-        body: "Du betrittst das Zimmer und schaltest das Licht ein — hell genug für die Verletzungs-Beurteilung, aber so positioniert, dass es Frau M. nicht direkt blendet. Du kniest auf Augenhöhe zu Frau M. am Boden. Sie liegt halb seitlich neben dem Bett, hat eine Hand auf der linken Hüfte, die andere stützt sich am Boden ab. Sie ist bei Bewusstsein, ansprechbar, atmet ruhig. Sie sieht dich an.",
+        // FIX (Pilot 2026-04-28): body geleert um Dialog-Doppel-Narration zu vermeiden.
+        // Setting + Patient-Reaktion komplett in dialogPhases[0].context — sonst wurden
+        // zwei narrative Bubbles direkt nacheinander gezeigt (body via parseGestikUndSpeech
+        // + context als Phase-Setup).
+        body: "",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Ins Zimmer gehen",
-        body: "Du gehst ins Zimmer und machst das Licht an. Hell genug, damit du sie genau ansehen kannst — aber nicht direkt ins Gesicht. Du gehst in die Knie, damit du auf ihrer Höhe bist. Frau M. liegt halb auf der Seite neben dem Bett. Eine Hand liegt auf der linken Hüfte. Mit der anderen stützt sie sich auf dem Boden ab. Sie ist wach. Sie atmet ruhig. Sie schaut dich an.",
+        body: "",
         glossarBegriffe: [],
       },
       question: {
@@ -175,9 +402,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Frau M. blickt dich an. Ihre Stimme ist leise, ihre Hände liegen gefaltet im Schoß. \"Es tut mir furchtbar leid, dass ich Sie jetzt um diese Zeit in Anspruch nehmen muss. Ich wollte nur kurz auf die Toilette. Ich weiß wirklich nicht, wie das passieren konnte.\"",
+              "Du betrittst das Zimmer und schaltest das Licht ein — hell genug für die Verletzungs-Beurteilung, aber so positioniert, dass es Frau M. nicht direkt blendet. Du kniest auf Augenhöhe zu ihr am Boden. Sie liegt halb seitlich neben dem Bett, hat eine Hand auf der linken Hüfte, die andere stützt sich am Boden ab. Sie ist bei Bewusstsein, ansprechbar, atmet ruhig. Ihre Stimme ist leise, ihre Hände liegen gefaltet im Schoß. \"Es tut mir furchtbar leid, dass ich Sie jetzt um diese Zeit in Anspruch nehmen muss. Ich wollte nur kurz auf die Toilette. Ich weiß wirklich nicht, wie das passieren konnte.\"",
             contextB1:
-              "Frau M. schaut dich an. Sie spricht leise. Ihre Hände sind gefaltet. \"Es tut mir leid, dass ich Sie nachts störe. Ich wollte nur zur Toilette. Ich weiß nicht, wie das passieren konnte.\"",
+              "Du gehst ins Zimmer und machst das Licht an. Hell genug, damit du sie genau ansehen kannst — aber nicht direkt ins Gesicht. Du gehst in die Knie, damit du auf ihrer Höhe bist. Frau M. liegt halb auf der Seite neben dem Bett. Eine Hand liegt auf der linken Hüfte. Mit der anderen stützt sie sich am Boden ab. Sie ist wach. Sie atmet ruhig. Sie spricht leise: \"Es tut mir leid, dass ich Sie nachts störe. Ich wollte nur zur Toilette. Ich weiß nicht, wie das passieren konnte.\"",
             speaker: "Frau M.",
             options: [
               {
@@ -365,7 +592,88 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
         ],
       },
     },
+
+    // Step 1.5b — Inline-Wissen "NRS-Schmerzskala"
+    // PILOT (Inline-Wissen v3, 2026-04-26): Letzter Step in Phase 1 — Vorbereitung für
+    // Phase 2 (Beobachten), wo der Schüler Frau M. konkret nach Schmerzen fragen muss.
+    // Frau M. bagatellisiert Schmerz ("ist etwas unangenehm" bei NRS 8). Der Schüler braucht
+    // die NRS-Mechanik bevor er fragt.
+    {
+      stepId: "ce02-frau-m-info-05b-nrs-schmerzskala",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP 2020 — Expertenstandard Schmerzmanagement in der Pflege bei akuten Schmerzen",
+        "Büttner/Finke 2000 — KUSS-Skala",
+        "Warden 2003 — PAINAD",
+        "Basler 2006 — BESD (Beurteilung von Schmerzen bei Demenz)",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-info-nrs",
+      tag: "pflege",
+      contentC1: {
+        title: "NRS — die Schmerzskala, die du gleich brauchst",
+        body: "",
+        glossarBegriffe: ["NRS", "Numeric Rating Scale", "VAS", "KUSS", "BESD", "Schmerzassessment"],
+      },
+      contentB1: {
+        title: "Wie misst man Schmerzen?",
+        body: "",
+        glossarBegriffe: ["NRS", "Schmerz-Skala"],
+      },
+      inlineWissen: {
+        bausteinRef: "schmerz-nrs-grundlagen",
+        storyAufhaenger:
+          "Du gehst gleich rein und wirst Frau M. nach ihren Schmerzen fragen. Sie hat sich die Hand auf die linke Hüfte gelegt — aber sie wird vermutlich sagen: \"Es ist etwas unangenehm.\" Das ist ihr Stil. Wie kriegst du den echten Wert?",
+        storyAufhaengerB1:
+          "Du gehst gleich zu Frau M. Sie hat Schmerzen in der Hüfte. Aber sie wird sagen: \"Es ist etwas unangenehm.\" Wie misst du den echten Schmerz?",
+        kerntext:
+          "Die **NRS (Numeric Rating Scale)** ist der Goldstandard im Schmerzassessment für orientierte Erwachsene (DNQP 2020).\n\n**Du fragst:**\n\n*\"Auf einer Skala von 0 bis 10 — 0 ist gar kein Schmerz, 10 ist der stärkste vorstellbare Schmerz — wie stark ist Ihr Schmerz gerade?\"*\n\n**Schwellenwerte (Pflicht-Wissen):**\n\n• **NRS 0–3** = leicht — Beobachtung, ggf. nicht-medikamentös (Lagerung, Eis, Wärme).\n\n• **NRS 4–6** = mäßig — **interventionspflichtig**: Bedarfsanalgesie ansprechen, dokumentieren.\n\n• **NRS 7–10** = stark — **sofort handeln**, Arzt informieren, SBAR.\n\n**Wichtig — kein Bagatellisieren.**\n\nEine NRS von 5 ist NICHT \"ein bisschen\". Sie ist mäßiger Schmerz, dokumentations- und interventionspflichtig.\n\n**Bei Frau M.:** Du erwartest einen Wert um 7-8 (Hüftschmerz nach Sturz) — sie wird ihn aber als \"etwas unangenehm\" verschleiern. Frag konkret nach der Zahl, nicht nach dem Adjektiv.\n\n**Re-Assessment:** Nach jeder Intervention (Lagerung, Analgetikum) erneut messen — typisch nach **30 Min bei oraler**, nach **15 Min bei i.v.-Gabe**.",
+        kerntextB1:
+          "Die **NRS (Numeric Rating Scale)** ist die wichtigste Schmerz-Skala bei wachen Erwachsenen (DNQP 2020).\n\n**Du fragst:**\n\n*\"Auf einer Skala von 0 bis 10 — 0 ist kein Schmerz, 10 ist der stärkste — wie stark ist Ihr Schmerz?\"*\n\n**Was die Zahlen bedeuten:**\n\n• **0–3** = leicht — beobachten, evtl. Lagerung oder Wärme.\n\n• **4–6** = mäßig — **du musst handeln**: Bedarfsmedikament ansprechen, dokumentieren.\n\n• **7–10** = stark — **sofort handeln**, Arzt rufen.\n\n**Wichtig:**\n\nNRS 5 ist NICHT \"ein bisschen\". Es ist mäßiger Schmerz und muss behandelt werden.\n\n**Bei Frau M.:** Sie wird vielleicht sagen \"etwas unangenehm\" — aber sie hat wahrscheinlich NRS 7 oder 8. Frag immer nach der Zahl, nicht nach Worten.\n\n**Nach Behandlung:** Schmerz nochmal messen — nach **30 Min bei Tablette**, nach **15 Min bei Spritze**.",
+        faustregel:
+          "NRS ≥ 4 ist nicht 'wenig'. Es ist mäßiger Schmerz — IMMER dokumentations- und interventionspflichtig.",
+        faustregelB1:
+          "NRS 4 oder mehr ist NICHT wenig Schmerz. Du musst handeln — Bedarfsmedikament fragen, aufschreiben.",
+        spektrum: [
+          {
+            patientName: "Lukas (2,5 Jahre, Verbrühung)",
+            situationsId: "ls-lukas-verbruehung",
+            hauptfaktor: "KUSS-Skala statt NRS",
+            kurzbeschreibung:
+              "Bei Säuglingen + Kleinkindern (< 4 J.) kann man keine NRS verwenden — sie verstehen Skalen nicht. Stattdessen: **KUSS (Kindliche Unbehagens- und Schmerz-Skala)** mit 5 Beobachtungs-Items à 0-2 Punkten = max. 10. Ab Score ≥ 4 interventionspflichtig.",
+          },
+          {
+            patientName: "Herr Bauer (Demenz, fortgeschritten)",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "BESD/PAINAD bei Demenz",
+            kurzbeschreibung:
+              "Bei Demenz-Patient(inn)en, die NRS nicht mehr zuverlässig zuordnen können, nutzt du **BESD (Beurteilung von Schmerzen bei Demenz)** oder **PAINAD** — Beobachtung von Atmung, Lautäußerung, Mimik, Körpersprache, Trostbarkeit.",
+          },
+          {
+            patientName: "Frau Yilmaz (Hüft-TEP)",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Schmerz im Bewegungs-Kontext",
+            kurzbeschreibung:
+              "Bei post-OP-Schmerz: NRS in Ruhe **und** in Bewegung getrennt erheben. Mobilisation gelingt nur bei NRS-in-Bewegung ≤ 3-4 — sonst Analgesie 30 Min vor Mobilisation einplanen.",
+          },
+        ],
+        sonstBox:
+          "Andere Schmerz-Skalen, die du kennen solltest: **VAS (Visual Analog Scale)** = 10cm-Strich ohne Zahlen, Patient markiert (gleichwertig zu NRS, aber bei Sehminderung schwierig). **Faces Pain Scale** = Smileys von neutral bis weinend (Kinder ab 4 J., bei Sprachbarriere). **CPOT** = bei beatmeten/sedierten Intensivpatienten.",
+        sonstBoxB1:
+          "Andere Schmerz-Skalen: **VAS** = 10-cm-Linie ohne Zahlen, Patient zeigt mit Stift. **Smiley-Skala** = Gesichter von freundlich bis weinend, gut für Kinder. **CPOT** = für Patienten auf Intensiv, die nicht sprechen können.",
+        karteikarte: {
+          vorderseite:
+            "Frau M. (82, Hüftschmerz nach Sturz) sagt: \"Es ist etwas unangenehm.\" Du fragst sie nach NRS. Sie sagt: \"Vielleicht eine 8.\" — Was bedeutet das, was tust du?",
+          rueckseite:
+            "NRS 8 = **starker Schmerz**, sofort handeln. Schritte: Lagerung optimieren (entlastend), Bedarfsanalgesie nach AVO besprechen, Arzt informieren (SBAR), nach Wirkbeginn (15-30 Min) re-assessen.\n\nSchwellenwerte (DNQP 2020):\n• 0-3 leicht — beobachten\n• 4-6 mäßig — interventionspflichtig\n• 7-10 stark — sofort handeln\n\nAlternative Skalen: KUSS (Kleinkind, Lukas), BESD/PAINAD (Demenz, Bauer), VAS, CPOT (Intensiv). Faustregel: **NRS ≥ 4 ist NIE \"wenig\".**",
+        },
+      },
+    },
   ],
   optionaleSteps: [],
-  geschaetzteDauer: 20,
+  geschaetzteDauer: 23,
 };

@@ -156,34 +156,35 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
       lernziel: "ce02-petrov-eval-neuroplastizitaet",
       tag: "anatomie",
       contentC1: {
-        title: "Schätzfrage: Motorische Erholung",
-        body: "Schätze auf einer Skala von 0-100%: Wie viel Prozent der ursprünglichen Funktion in der rechten unteren Extremität ist bei Herrn Petrov nach 5 Tagen Bobath-Therapie realistisch erreichbar (langfristig, 3-6 Monate)?",
+        title: "Schätzfrage: Anteil mit Gehfähigkeit nach Reha",
+        body: "Pflegerische Kraft-Beurteilung erfolgt mit der MRC-Skala (0-5 nach Janda) — keine Prozentwerte. Diese Schätzfrage zielt auf einen anderen Prognose-Marker: Welcher prozentuale Anteil aller Schlaganfall-Patienten mit Hemiparese erreicht nach 3-6 Monaten intensiver Frührehabilitation wieder eine Gehfähigkeit (mit oder ohne Hilfsmittel)?",
         glossarBegriffe: [
           "Neuroplastizität",
           "Rehabilitation",
           "Frühmobilisation",
+          "MRC-Skala",
         ],
       },
       contentB1: {
-        title: "Schätzfrage: Wie viel Kraft kommt zurück?",
-        body: "Schätze: Wie viel Prozent der Kraft im rechten Bein kann nach Monaten Reha zurückkommen?",
-        glossarBegriffe: ["Neuroplastizität", "Reha"],
+        title: "Schätzfrage: Wie viele Patienten gehen wieder?",
+        body: "Pflege bewertet Muskel-Kraft mit der MRC-Skala 0-5 (nicht in Prozent). Diese Frage ist anders: Wie viele Schlaganfall-Patienten mit Halbseiten-Schwäche können nach 3-6 Monaten Reha wieder gehen — in Prozent aller Patienten?",
+        glossarBegriffe: ["Neuroplastizität", "Reha", "MRC-Skala"],
       },
       question: {
         fragetext:
-          "Wie viel Prozent der ursprünglichen Funktion in der rechten unteren Extremität ist realistisch erreichbar nach 3-6 Monaten intensiver Rehabilitation?",
+          "Welcher Anteil der Schlaganfall-Patienten mit Hemiparese erreicht nach 3-6 Monaten intensiver Frührehabilitation eine Gehfähigkeit (mit/ohne Hilfsmittel)?",
         slider: {
           instruction: "Schätze den realistischen Prozentwert.",
           unit: "%",
           min: 0,
           max: 100,
           step: 5,
-          correctValue: 60,
-          tolerance: 20,
+          correctValue: 70,
+          tolerance: 15,
           explanation:
-            "Individuell sehr variabel (0-100%), aber Studien zeigen: 60-80% der Schlaganfall-Patienten mit Hemiparese erreichen nach 3-6 Monaten intensiver Frührehabilitation eine Gehfähigkeit mit/ohne Hilfsmittel. Frühmobilisation (ab Tag 1) verbessert die Prognose erheblich. Neuroplastizität: Das Gehirn bildet neue neuronale Verbindungen — dieser Prozess ist in den ersten 3 Monaten am stärksten. Was du heute tust (Bobath, Bettkante, Atemübungen) beeinflusst direkt wie viel Funktion morgen möglich ist. (AWMF S3 Schlaganfall; DGG 2022)",
+            "Studien zeigen: 60-80 % der Schlaganfall-Patienten mit Hemiparese erreichen nach 3-6 Monaten intensiver Frührehabilitation eine Gehfähigkeit mit oder ohne Hilfsmittel. Hinweis zur pflegerischen Kraft-Beurteilung: Das machst du im Alltag NICHT in Prozent, sondern mit der MRC-Skala 0-5 (0 = keine Bewegung, 1 = sichtbare Kontraktion ohne Bewegung, 2 = Bewegung unter Ausschluss der Schwerkraft, 3 = gegen Schwerkraft, 4 = gegen leichten Widerstand, 5 = volle Kraft). Frühmobilisation ab Tag 1 verbessert die Prognose erheblich; Neuroplastizität ist in den ersten 3 Monaten am stärksten. Was du heute tust (Bobath, Bettkante, Atemübungen) beeinflusst direkt die Funktion morgen. (AWMF S3 Schlaganfall; DGG 2022)",
           explanationB1:
-            "Es ist sehr unterschiedlich — aber viele Schlaganfall-Patienten können nach Monaten Reha wieder gehen (mit oder ohne Hilfe). In den ersten 3 Monaten kann das Gehirn neue Wege bilden (= Neuro-Plastizität). Was du heute tust, ist wichtig für morgen.",
+            "Etwa 60-80 von 100 Schlaganfall-Patienten mit Halbseiten-Schwäche können nach Monaten Reha wieder gehen — mit oder ohne Hilfe. Pflege bewertet Kraft sonst mit der MRC-Skala 0-5: 0 = keine Bewegung, 5 = volle Kraft. In den ersten 3 Monaten kann das Gehirn neue Wege bilden. Was du heute tust ist wichtig für morgen.",
         },
       },
     },

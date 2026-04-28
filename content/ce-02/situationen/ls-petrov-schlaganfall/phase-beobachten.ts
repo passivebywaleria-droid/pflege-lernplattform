@@ -243,10 +243,10 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
           },
           {
             statement:
-              "BVK-Wechsel ist nach 14 Tagen fällig — das erledigt der Arzt ohne meine Beteiligung.",
+              "Der BVK wird routinemäßig nach festem 14-Tage-Intervall gewechselt — unabhängig von der Indikation.",
             isTrue: false,
             explanation:
-              "Falsch. Pflege plant den Wechsel vor, bereitet ihn vor, beobachtet Zeichen einer Infektion und informiert die ärztliche Anordnung. Außerdem: KRINKO empfiehlt BVK so früh wie möglich zu entfernen (nicht erst nach 14 Tagen). Proaktive Pflege fragt täglich: Ist der Katheter noch nötig?",
+              "Falsch. KRINKO 2015 fordert ausdrücklich KEIN starres Wechselintervall. Stattdessen: Indikation täglich prüfen, BVK so früh wie möglich entfernen. Material und Liegezeit-Fenster geben den Arzt-Vorschlag, aber der Indikations-Check ist die tägliche Pflegeaufgabe. Ein Routinewechsel nach 14 Tagen ohne Indikations-Check ist veraltetes Wissen und CAUTI-fördernd. Proaktive Pflege fragt täglich: Ist der Katheter noch nötig? (KRINKO 2015 Prävention katheter-assoziierter Harnwegsinfektionen)",
           },
         ],
       },

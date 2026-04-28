@@ -143,12 +143,12 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
         fragetext: "Wähle deine Reaktion auf Frau Kovačs Ablehnung.",
         branchingOptions: [
           {
-            text: "Ich erkläre ihr den Unterschied zwischen ASS und Kompressionsstrümpfen, warum beide wichtig sind — und akzeptiere dann ihre Entscheidung.",
+            text: "Ich erkläre den Unterschied zwischen ASS und Kompressionsstrümpfen, frage konkret nach dem Grund der Ablehnung (Druck? Anziehen? Hitze?), biete Alternativen an (Klasse 1 statt Klasse 2, Anziehhilfe, Hauttest) — und akzeptiere dann ihre Entscheidung.",
             isCorrect: true,
             feedback:
-              "Richtig. Du hast aufgeklärt (vollständig, verständlich) und respektierst dann ihre Entscheidung. Das ist der einzig korrekte Weg: Aufklärung ist Pflicht, Erzwingen ist verboten.\n\n**Frau Kovačs Reaktion:** Sie hört zu, mit verschränkten Armen. Nach deiner Erklärung sagt sie: \"Hmm. ASS ist also nicht dasselbe. Das hat mir keiner so erklärt. Trotzdem — die Strümpfe will ich nicht. Aber dass Sie mir das so sagen, das ist anders. Schreiben Sie's halt auf.\" — Vertrauen bleibt, Autonomie respektiert, Aufklärung dokumentiert.\n\nJetzt musst du die Verweigerung im Pflegebericht dokumentieren — vollständig: was du erklärt hast, wie sie reagiert hat, dass es ihre freiwillige Entscheidung ist. Quelle: (§ 630f BGB; § 1901a BGB)",
+              "Richtig. Vollständige Aufklärung heißt: erklären (Wirkung), nachfragen (konkretes Hindernis), Alternativen anbieten (oft ist das Problem lösbar), Entscheidung respektieren.\n\n**Konkrete Alternativen die du anbieten kannst:**\n- **Klasse 1** (leichterer Druck) statt Klasse 2 — bei NYHA II + Beinödemen oft ausreichend, Tragekomfort deutlich besser. Erfordert ärztliche Verordnung.\n- **Anziehhilfe** (Gleitstrumpf, Schlaufengriff) — viele Patient:innen lehnen ab, weil sie das Anziehen nicht schaffen.\n- **Hauttest** — wenn 'die drücken' = Hautirritation, kann eine andere Materialqualität helfen.\n- **Tragezeit anpassen** — z.B. nur tagsüber, nicht beim Schlafen.\n\n**Frau Kovačs Reaktion:** Sie hört zu, mit verschränkten Armen. Nach deiner Erklärung sagt sie: \"Hmm. ASS ist also nicht dasselbe. Das hat mir keiner so erklärt. Klasse 1 — das hab ich noch nie probiert. Trotzdem, heute will ich keine. Aber dass Sie mir das so sagen, das ist anders. Schreiben Sie's halt auf.\" — Vertrauen bleibt, Autonomie respektiert, Aufklärung dokumentiert. Ein Spalt für eine spätere Lösung ist offen.\n\nJetzt musst du die Verweigerung im Pflegebericht dokumentieren — vollständig: was du erklärt hast, welche Alternativen du angeboten hast, wie sie reagiert hat, dass es ihre freiwillige Entscheidung ist. Quelle: (§ 630f BGB; § 1901a BGB; AWMF S3-Leitlinie Thromboseprophylaxe 003-001)",
             feedbackB1:
-              "Richtig. Du erklärst ihr warum die Strümpfe wichtig sind. Dann lässt du sie entscheiden. Das ist Aufklärung + Respekt.\n\n**Frau Kovač sagt:** \"Hmm. ASS und Strümpfe — das ist nicht dasselbe. Das wusste ich nicht. Trotzdem will ich keine Strümpfe. Aber dass Sie mit mir reden statt mich zu zwingen — das ist gut. Schreiben Sie es auf.\"\n\nDanach schreibst du alles auf.",
+              "Richtig. Aufklärung ist mehr als nur erklären — du **fragst nach** warum sie ablehnt (Druck? Anziehen? Hitze?) und **bietest Alternativen** an:\n- Klasse 1 (leichter) statt Klasse 2\n- Anziehhilfe (Gleitstrumpf)\n- Andere Materialqualität (wenn die Haut juckt)\n- Nur tagsüber tragen, nicht nachts\n\n**Frau Kovač sagt:** \"Hmm. ASS und Strümpfe sind nicht dasselbe. Klasse 1 — das wusste ich nicht. Heute will ich trotzdem keine. Aber Sie reden mit mir, das ist anders. Schreiben Sie es auf.\"\n\nDann schreibst du alles auf — auch welche Alternativen du angeboten hast.",
           },
           {
             text: "Ich lasse das Thema fallen — sie wird ihre Meinung ohnehin nicht ändern.",
@@ -243,12 +243,12 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Pflegeziele SMART formulieren",
-        body: "Gute Pflegeziele sind SMART: **S**pezifisch (Was genau?), **M**essbar (Wie erkenne ich es?), **A**kzeptiert (Hat Frau Kovač zugestimmt?), **R**ealistisch (Erreichbar?), **T**erminiert (Bis wann?). Vervollständige die Pflegeziele.\n\nDNQP Mobilität (2017/2024) empfiehlt bei Kontrakturgefahr **mehrfach tägliche** Bewegung — mindestens 2-3× täglich. Ein 1×-tägliches Ziel wäre Sub-Standard.",
+        body: "Gute Pflegeziele sind SMART: **S**pezifisch (Was genau?), **M**essbar (Wie erkenne ich es?), **A**kzeptiert (Hat Frau Kovač zugestimmt?), **R**ealistisch (Erreichbar?), **T**erminiert (Bis wann?). Vervollständige die Pflegeziele.\n\n**Trinkmengen-Ziel:** 1.200 ml ist der **ärztlich vereinbarte Tageszielwert** für Frau Kovač (Hausarzt-Festlegung wegen NYHA II + Furosemid laut ESC Heart Failure 2023) — gilt als Obergrenze, an die man sich schrittweise herantastet. NICHT 1.500 ml (das ist die DNQP-Empfehlung für Gesunde).\n\n**Bewegungsziel:** DNQP Mobilität (2017/2024) empfiehlt bei Kontrakturgefahr **mehrfach tägliche** Bewegung — mindestens 2-3× täglich. Ein 1×-tägliches Ziel wäre Sub-Standard.",
         glossarBegriffe: ["SMART-Ziel", "Pflegeplanung"],
       },
       contentB1: {
         title: "Pflegeziele formulieren",
-        body: "Ein Pflegeziel muss genau, messbar und realistisch sein. Es muss auch einen Termin haben.\n\nWichtig: Bei Kontraktur muss man **mehrmals am Tag** üben — nicht nur einmal. Sonst bleibt das Knie steif (DNQP Mobilität 2017/2024).",
+        body: "Ein Pflegeziel muss genau, messbar und realistisch sein. Es muss auch einen Termin haben.\n\nWichtig:\n- **Trinken:** 1.200 ml pro Tag (vom Hausarzt für Frau Kovač festgelegt — wegen Herz-Schwäche und Furosemid).\n- **Bewegung:** Bei Kontraktur **mehrmals am Tag** üben — nicht nur einmal. Sonst bleibt das Knie steif (DNQP Mobilität 2017/2024).",
         glossarBegriffe: ["Pflegeziel"],
       },
       question: {

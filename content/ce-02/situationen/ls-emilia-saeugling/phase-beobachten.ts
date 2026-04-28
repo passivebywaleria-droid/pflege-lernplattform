@@ -353,7 +353,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
             },
             {
               id: "tm4",
-              label: "Rektal messen — ca. 1 Minute, Emilia dabei halten und beruhigen",
+              label: "Rektal messen — bis Signalton (Dauer geräteabhängig, ca. 10-60 Sek.), Emilia dabei halten und beruhigen",
             },
             {
               id: "tm5",
@@ -407,17 +407,17 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
         trueFalseCards: [
           {
             statement:
-              "Die normale Atemfrequenz bei einem 4-monatigen Säugling liegt bei 30-60 Atemzügen pro Minute.",
+              "Beim 4-monatigen Säugling liegt die Ruhe-Atemfrequenz bei 30-40/min, bis 50/min im Wachzustand ist akzeptabel — > 50/min bei Bronchiolitis ist beobachtungspflichtig.",
             isTrue: true,
             explanation:
-              "Richtig. Normwert beim Säugling (1-12 Monate): 30-60/min — deutlich höher als beim Erwachsenen (12-20/min). Hinweis: Quellen weichen leicht ab (Hoehl/Kullick 2019: 30-50/min, AAP/AWMF: 30-60/min). Gemeinsame Schwelle: > 60/min ist Tachypnoe und erfordert sofortige Aufmerksamkeit (AWMF S2k Bronchiolitis 2022).",
+              "Richtig. Hoehl/Kullick (2019) nennt für Säuglinge 1-12 Monate 30-40/min in Ruhe; bis 50/min wach/aktiv akzeptabel. AAP/AWMF nennt die breitere Spannweite 30-60/min für Säuglinge (alle Aktivitätsniveaus). Gemeinsame Tachypnoe-Schwelle bei Bronchiolitis: > 60/min (AWMF S2k Bronchiolitis 2022). Bei Emilia mit RSV-Bronchiolitis und 50/min: oberer Rand des Normbereichs — beobachten und im Verlauf dokumentieren.",
           },
           {
             statement:
               "Emilia atmet mit 50/min — das ist so auffällig, dass sofort der Arzt gerufen werden muss.",
             isTrue: false,
             explanation:
-              "Falsch. 50/min liegt im Normbereich für einen 4-monatigen Säugling. Besorgniserregend sind: > 60/min, interkostale Einziehungen, Nasenflügeln, Zyanose. 50/min wird beobachtet — kein Sofortalarm.",
+              "Falsch. 50/min ist beim 4-monatigen Säugling am oberen Rand des Normbereichs (Hoehl/Kullick: bis 50/min wach akzeptabel). Sofortiger Arztkontakt ist nötig bei: > 60/min (Tachypnoe), interkostalen Einziehungen, Nasenflügeln, Zyanose. 50/min wird engmaschig beobachtet (q15min bis q30min) und im Verlauf dokumentiert — kein Sofortalarm, aber Verlaufsmonitoring.",
           },
           {
             statement:

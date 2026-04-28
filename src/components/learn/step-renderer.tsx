@@ -52,6 +52,7 @@ const StepConceptMap = dynamic(() => import("@/components/learn/step-conceptmap"
 const StepChatSim = dynamic(() => import("@/components/learn/step-chatsim").then(m => ({ default: m.StepChatSim })), { loading: () => <StepSkeleton /> });
 const StepCrowdPoll = dynamic(() => import("@/components/learn/step-crowd-poll").then(m => ({ default: m.StepCrowdPoll })), { loading: () => <StepSkeleton /> });
 const StepPflegewagen = dynamic(() => import("@/components/learn/step-pflegewagen").then(m => ({ default: m.StepPflegewagen })), { loading: () => <StepSkeleton /> });
+const StepInlineWissen = dynamic(() => import("@/components/learn/step-inline-wissen").then(m => ({ default: m.StepInlineWissen })), { loading: () => <StepSkeleton /> });
 
 export interface StepRendererProps {
   step: ContentStep;
@@ -857,6 +858,20 @@ export function StepRenderer({
           pollData={pollData}
           glossar={glossar}
           sprachLevel={sprachLevel}
+          onNext={() => onNext()}
+        />
+      );
+    }
+
+    case "inlineWissen": {
+      const data = step.inlineWissen;
+      if (!data) return null;
+      return (
+        <StepInlineWissen
+          title={content.title}
+          data={data}
+          sprachLevel={sprachLevel}
+          glossar={glossar}
           onNext={() => onNext()}
         />
       );

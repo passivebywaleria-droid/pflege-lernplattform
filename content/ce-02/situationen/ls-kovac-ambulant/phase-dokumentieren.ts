@@ -171,7 +171,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
         fragetext:
           "Schreibe den Besuchsbericht für den Morgenbesuch bei Frau Kovač (07:30–08:15 Uhr). Umfang: 80–120 Wörter.",
         musterantwort:
-          "07:30–08:15 Uhr, Morgenbesuch bei Frau Kovač, Marija, geb. 14.03.1942. Übergabe gelesen (Petra): Trinkmenge 820 ml, 4 Tage kein Stuhlgang, Kompressionsstrümpfe verweigert. Wohnungscheck: Teppich vor Sessel als Stolperfalle angesprochen. Trinkprotokoll besprochen, 3 Becher à 200 ml auf Küchentisch bereitgestellt, Tagesziel 1.200 ml vereinbart. Atemübungen mit Lippenbremse durchgeführt — nach 4 Wiederholungen Kurzatmigkeit (AF ca. 22/Min, Lippenzyanose sichtbar). Übung gestoppt, Fenster geöffnet, Frau Kovač in Ruheposition — Besserung nach 3 Min, kein Notarzt nötig. Während Bewegungsübungen: Anruf Sohn Darko Kovač — keine Gesundheitsdaten weitergegeben, Hinweis auf Pflegedienstkontakt für schriftliche Einwilligung. Kompressionsstrümpfe: Aufklärung über Thromboserisiko bei Herzinsuffizienz und Immobilität durchgeführt, Unterschied ASS/Kompressionstherapie erklärt, mündlich, patientengerecht, Rückfragen ermöglicht. Frau Kovač äußerte: 'Ich brauch keine Strümpfe, ich hab doch die Tabletten.' Bewusste, freiwillige Ablehnung nach vollständiger Aufklärung. Schlafgespräch heute Abend angekündigt.",
+          "07:30–08:15 Uhr, Morgenbesuch bei Frau Kovač, Marija, geb. 14.03.1942. Übergabe gelesen (Petra): Trinkmenge 820 ml, 4 Tage kein Stuhlgang, Kompressionsstrümpfe verweigert. Wohnungscheck: Teppich vor Sessel als Stolperfalle angesprochen. Trinkprotokoll besprochen, 3 Becher à 200 ml auf Küchentisch bereitgestellt, ärztlich vereinbartes Tagesziel 1.200 ml in 3 Tagen erinnert. Atemübungen mit Lippenbremse durchgeführt — nach 4 Wiederholungen Kurzatmigkeit (AF ca. 22/Min, leichte Lippenzyanose sichtbar). Übung gestoppt, Frau Kovač in Kutschersitz, Lippenbremse angeleitet, bei ihr geblieben und beobachtet — Besserung nach 3 Min, kein Notarzt nötig. Bewegungsübungen Knie/Sprunggelenk im Sitzen — Frau Kovač führte alle Bewegungen aktiv selbst aus (Kinästhetik), Pflegekraft begleitete verbal. Während der Bewegungsübungen: Anruf Sohn Darko Kovač — keine Gesundheitsdaten weitergegeben (DSGVO Art. 9), Hinweis auf Pflegedienstkontakt für schriftliche Schweigepflichtsentbindung gegeben. Kompressionsstrümpfe: Aufklärung über Thromboserisiko bei Herzinsuffizienz und Immobilität durchgeführt, Unterschied ASS/Kompressionstherapie erklärt, mündlich, patientengerecht, Rückfragen ermöglicht. Frau Kovač äußerte: 'Ich brauch keine Strümpfe, ich hab doch die Tabletten.' Bewusste, freiwillige Ablehnung nach vollständiger Aufklärung. Schlafgespräch heute Abend angekündigt.",
         bewertungskriterien: [
           "Datum und Uhrzeit vorhanden",
           "Maßnahmen konkret genannt",
@@ -227,7 +227,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
           reflexionRueckbezug:
             "Du hast heute einen vollständigen ambulanten Pflegetag bei Frau Marija Kovač begleitet — von der Übergabe um 07:30 Uhr bis zum Besuchsbericht nach dem Abendbesuch. Frau Kovač hat die Übungen zweimal allein wiederholt. Das Schlafgespräch ist eröffnet. Die Kompressionsstrümpfe liegen noch. Evaluation heißt nicht: alles gelöst. Es heißt: du weißt was noch fehlt.",
           kernaussagen: [
-            "Atembeobachtung bei COPD III: 7 systematische Punkte — Atemfrequenz, Lippenbremse, Atemhilfsmuskulatur, Atemgeräusche, Sputum-Farbe, Körperhaltung, SpO2 (88–92 % Zielkorridor bei COPD)",
+            "Atembeobachtung bei COPD III: 7 systematische Punkte — Atemfrequenz, Lippenbremse, Atemhilfsmuskulatur, Atemgeräusche, Sputum-Farbe, Körperhaltung, SpO2 (88–92 % nur als Zielkorridor unter Sauerstofftherapie bei Exazerbation; im stabilen Zustand sind >92 % normal)",
             "Patientenautonomie und Aufklärungspflicht: Aufklärung ist Pflicht — Erzwingen ist verboten — Dokumentieren ist notwendig (§ 630d BGB, § 1901a BGB, § 630f BGB)",
             "Verweigerungs-Dokumentation: 3 Pflicht-Elemente — Was erklärt? Wie aufgeklärt? Was hat die Patientin gesagt?",
             "Datenschutz in der ambulanten Pflege: Keine Weitergabe von Gesundheitsdaten ohne schriftliche Schweigepflichtsentbindung — auch nicht an Angehörige (DSGVO Art. 9, § 203 StGB)",
@@ -324,7 +324,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
               start: 50,
               end: 67,
               correction:
-                "Atemübungen mit Lippenbremse, 4 Wiederholungen. Komplikation: Kurzatmigkeit (AF ca. 22/Min, Lippenzyanose) — Übung abgebrochen, Fenster geöffnet, Besserung nach 3 Min",
+                "Atemübungen mit Lippenbremse, 4 Wiederholungen. Komplikation: Kurzatmigkeit (AF ca. 22/Min, leichte Lippenzyanose) — Übung abgebrochen, Kutschersitz, Lippenbremse angeleitet, bei Patientin geblieben — Besserung nach 3 Min",
               explanation:
                 "Viel zu wenig. Keine Beschreibung der Komplikation, keine Reaktion, kein Ergebnis. Bei einer COPD-Komplikation gehört alles in den Bericht.",
               explanationB1:

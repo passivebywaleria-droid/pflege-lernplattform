@@ -22,7 +22,7 @@
 | **Alter** | 82 Jahre |
 | **Geschlecht** | männlich |
 | **Familienstand** | verwitwet seit 4 Jahren |
-| **Angehörige** | Tochter Ingrid (55 Jahre, Grundschullehrerin, wohnt 20 km entfernt, besucht 3× pro Woche) |
+| **Angehörige** | Tochter Ingrid (55 Jahre, Grundschullehrerin, wohnt 20 km entfernt, besucht 3× pro Woche). **Seit 2024 als gesetzliche Betreuerin (Aufgabenkreis u. a. Gesundheitssorge) bestellt** — auskunftsberechtigt nach § 203 StGB / § 1814 BGB / DSGVO Art. 9. |
 | **Pflegegrad** | 4 |
 | **Wohnsituation** | Gerontopsychiatrische Station seit 8 Monaten (Heimaufnahme nach Diagnose, Tochter konnte Versorgung zuhause nicht sicherstellen) |
 | **Aufnahmetag** | Frühschicht, 7:15 Uhr — Sturzereignis in der vergangenen Nacht (ca. 02:30 Uhr) |
@@ -69,7 +69,7 @@ Das Ziel ist 1500 ml. Die Mundschleimhaut ist oft trocken.
 | # | Wirkstoff | Dosis | Indikation |
 |---|-----------|-------|-----------|
 | 1 | Donepezil | 10 mg abends | Alzheimer-Demenz |
-| 2 | Mirtazapin | 15 mg zur Nacht | Schlafstörung / Depression bei Demenz |
+| 2 | Mirtazapin | 15 mg zur Nacht | Schlafstörung / Depression bei Demenz — **PRISCUS-Liste, dosisabhängige Sedierung (niedrige Dosis 7,5–15 mg eher sedierend), erhöhtes Sturzrisiko, orthostatisches Risiko**. Kombination mit Alkohol kontraindiziert. |
 | 3 | Macrogol | 1 Beutel morgens | Obstipationsprophylaxe |
 | 4 | Vitamin D₃ | 1000 IE morgens | Sturz- und Frakturprophylaxe |
 
@@ -104,7 +104,7 @@ In **verwirrten Phasen** glaubt er, er müsse in die Werkstatt. Er wird unruhig,
 
 **Schwierigkeiten:** Ablehnung der Körperpflege (besonders Waschen von Gesicht und Genitalbereich), nächtliche Weglaufversuche, unregelmäßiges Trinken. Er trinkt bereitwilliger, wenn er eine Tasse in die Hand bekommt — nicht wenn er gebeten wird zu trinken.
 
-**Ressourcen:** Reagiert auf ruhige Stimmen. Mag Berührungen am Rücken. Beruhigt sich bei Liedern aus den 1960er Jahren (Zarah Leander, Freddy Quinn). Handwerkliche Gegenstände (Holzstück, Schleifpapier) halten seine Aufmerksamkeit für kurze Zeit.
+**Ressourcen:** Reagiert auf ruhige Stimmen. Mag Berührungen am Rücken. Beruhigt sich bei Liedern aus den 1960er Jahren (Zarah Leander, Freddy Quinn). Handwerkliche Gegenstände (Holzstück, Schleifpapier) halten seine Aufmerksamkeit für kurze Zeit. Lieblings-Trinken: **alkoholfreies Malzgetränk** (sog. Malzbier — nicht zu verwechseln mit alkoholhaltigem Malzbier; alkoholhaltige Variante wegen Mirtazapin kontraindiziert).
 
 ---
 
@@ -116,7 +116,7 @@ Diese Zitate erscheinen über die 6 Phasen verteilt:
 > _"Ich muss zur Arbeit! Lasst mich raus! Die Bestellung kommt noch heute!"_
 
 ### Z2 — Lichter Moment (Phase 2)
-> _"Au — da tut's weh."_ (zeigt auf linkes Knie)
+> _"Au — da tut's weh."_ (zeigt auf rechtes Knie)
 
 ### Z3 — Bei der Körperpflege (Phase 4)
 > _"Nein! Nein!"_ (schlägt nach der Pflegekraft, zieht Decke ran)

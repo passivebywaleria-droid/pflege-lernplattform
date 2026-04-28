@@ -126,18 +126,18 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
             },
             {
               id: "m2",
-              text: "Häufigere aber kürzere Stillmahlzeiten anbieten",
-              correctQuadrant: 2,
+              text: "Häufigere aber kürzere Stillmahlzeiten anbieten (Mutter führt aus, mit Anleitung)",
+              correctQuadrant: 3,
             },
             {
               id: "m3",
               text: "Nasentropfen NaCl 0,9% bereitstellen und vor jeder Mahlzeit anwenden",
-              correctQuadrant: 4,
+              correctQuadrant: 2,
             },
             {
               id: "m4",
               text: "Nasensekret vor dem Trinken sanft absaugen",
-              correctQuadrant: 4,
+              correctQuadrant: 2,
             },
             {
               id: "m5",
@@ -151,13 +151,13 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
             },
             {
               id: "m7",
-              text: "Emilia nach dem Stillen 15 Minuten aufrecht halten (mit Laura)",
-              correctQuadrant: 2,
+              text: "Emilia nach dem Stillen 15 Minuten aufrecht halten (Laura, mit Anleitung)",
+              correctQuadrant: 4,
             },
             {
               id: "m8",
               text: "Zimmertemperatur bei 20-22 °C halten",
-              correctQuadrant: 4,
+              correctQuadrant: 2,
             },
           ],
         },
