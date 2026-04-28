@@ -4,6 +4,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import type { CrowdPollData, GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
+import { StepShell } from "./step-shell";
+import { StepActionBar } from "./step-action-bar";
 
 interface StepCrowdPollProps {
   title: string;
@@ -75,24 +77,14 @@ export function StepCrowdPoll({
   // ── Input Phase ──
   if (!submitted) {
     return (
-      <div
-        className="space-y-6 pb-20"
-        style={{ color: "var(--lern-text-primary)" }}
-      >
-        <div className="flex items-center gap-2">
-          <span className="text-2xl">📊</span>
-          <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
-            {title}
-          </h2>
-        </div>
-
-        {body && (
-          <p className="text-[var(--lern-text-primary)]/70 leading-relaxed">
-            <FachbegriffText glossar={glossar ?? []}>{body}</FachbegriffText>
-          </p>
-        )}
-
-        <p className="text-sm font-medium text-[var(--lern-text-primary)]">
+      <>
+        <StepShell
+          kindLabel="Selbsteinschätzung · Umfrage"
+          question={title}
+          body={body}
+          glossar={glossar}
+        >
+        <p className="text-sm font-medium text-[var(--lern-text-primary)] mb-2">
           <FachbegriffText glossar={glossar ?? []}>
             {question}
           </FachbegriffText>
@@ -145,31 +137,30 @@ export function StepCrowdPoll({
           </div>
         )}
 
-        <button
-          onClick={handleSubmit}
-          disabled={!canSubmit}
-          aria-label="Abstimmung abgeben"
-          className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
-        >
-          Abstimmen
-        </button>
-      </div>
+        </StepShell>
+        <StepActionBar>
+          <button
+            onClick={handleSubmit}
+            disabled={!canSubmit}
+            aria-label="Abstimmung abgeben"
+            className="flex-1 rounded-xl py-3 text-sm font-semibold text-white transition-colors hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed"
+            style={{ backgroundColor: "var(--lern-accent)" }}
+          >
+            Abstimmen
+          </button>
+        </StepActionBar>
+      </>
     );
   }
 
   // ── Results Phase ──
   return (
-    <div
-      className="space-y-6 pb-20"
-      style={{ color: "var(--lern-text-primary)" }}
-    >
-      <div className="flex items-center gap-2">
-        <span className="text-2xl">📊</span>
-        <h2 className="text-base font-bold text-[var(--lern-text-primary)]">
-          {title}
-        </h2>
-      </div>
-
+    <>
+      <StepShell
+        kindLabel="Selbsteinschätzung · Ergebnis"
+        question={title}
+        glossar={glossar}
+      >
       {/* Eigene Antwort */}
       <motion.div
         initial={{ opacity: 0, y: 8 }}
@@ -277,13 +268,17 @@ export function StepCrowdPoll({
         </motion.div>
       )}
 
-      <button
-        onClick={() => onNext()}
-        aria-label="Weiter zum nächsten Schritt"
-        className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
-      >
-        Weiter
-      </button>
-    </div>
+      </StepShell>
+      <StepActionBar>
+        <button
+          onClick={() => onNext()}
+          aria-label="Weiter zum nächsten Schritt"
+          className="flex-1 rounded-xl py-3 text-sm font-semibold text-white transition-colors hover:opacity-90"
+          style={{ backgroundColor: "var(--lern-accent)" }}
+        >
+          Weiter
+        </button>
+      </StepActionBar>
+    </>
   );
 }

@@ -115,7 +115,7 @@ export function StepInlineWissen({
 
         {/* Story-Aufhänger */}
         <div
-          className="text-sm italic leading-relaxed pl-3 border-l-[3px]"
+          className="text-sm italic leading-relaxed pl-3 border-l-[3px] whitespace-pre-line"
           style={{
             borderColor: "var(--lern-accent, #218C71)",
             color: "var(--lern-text-secondary)",
@@ -124,8 +124,8 @@ export function StepInlineWissen({
           <FachbegriffText glossar={glossar ?? []}>{aufhaenger}</FachbegriffText>
         </div>
 
-        {/* Kerntext */}
-        <div className="text-sm leading-relaxed">
+        {/* Kerntext — whitespace-pre-line damit \n\n als Absätze + • als Bullets sichtbar bleiben */}
+        <div className="text-sm leading-relaxed whitespace-pre-line">
           <FachbegriffText glossar={glossar ?? []}>{kerntext}</FachbegriffText>
         </div>
 
@@ -229,7 +229,7 @@ export function StepInlineWissen({
             {sonstOpen && (
               <div
                 id="sonst-panel"
-                className="px-3 pb-3 text-sm leading-relaxed"
+                className="px-3 pb-3 text-sm leading-relaxed whitespace-pre-line"
               >
                 <FachbegriffText glossar={glossar ?? []}>{sonst}</FachbegriffText>
               </div>

@@ -292,7 +292,10 @@ export function renderBold(text: string): React.ReactNode {
   });
 }
 
-// Hilfsfunktion: Begriffe im Text finden und in Segmente aufteilen
+// Hilfsfunktion: Begriffe im Text finden und in Segmente aufteilen.
+// Pilot 2026-04-28: Nur das ERSTE Vorkommen pro Begriff wird hervorgehoben —
+// alle weiteren Vorkommen bleiben einfacher Text. So vermeiden wir visuelle
+// Überfrachtung wenn ein Begriff (z.B. "Sturz") oft im Text steht.
 function highlightTerms(
   text: string,
   glossar: GlossarEntry[]
@@ -312,6 +315,9 @@ function highlightTerms(
   let lastIndex = 0;
   let match;
 
+  // Tracker: welche Begriffe schon einmal hervorgehoben wurden (case-insensitive)
+  const alreadyHighlighted = new Set<string>();
+
   while ((match = regex.exec(text)) !== null) {
     // Text vor dem Match
     if (match.index > lastIndex) {
@@ -319,10 +325,19 @@ function highlightTerms(
     }
     // Matched Begriff
     const matchedTerm = match[0];
+    const matchedKey = matchedTerm.toLowerCase();
     const entry = sorted.find(
-      (g) => g.begriff.toLowerCase() === matchedTerm.toLowerCase()
+      (g) => g.begriff.toLowerCase() === matchedKey
     );
-    parts.push({ text: matchedTerm, entry });
+
+    if (entry && !alreadyHighlighted.has(matchedKey)) {
+      // Erstes Vorkommen → mit Glossar-Eintrag (anklickbar/unterstrichen)
+      alreadyHighlighted.add(matchedKey);
+      parts.push({ text: matchedTerm, entry });
+    } else {
+      // Wiederholung → als reiner Text ohne Hervorhebung
+      parts.push({ text: matchedTerm });
+    }
     lastIndex = match.index + match[0].length;
   }
 
