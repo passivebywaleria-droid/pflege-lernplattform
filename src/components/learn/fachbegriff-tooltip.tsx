@@ -106,18 +106,31 @@ export function FachbegriffText({ glossar, children, sprachLevel }: FachbegriffT
           );
 
           if (part.entry) {
+            // FIX (Pilot 2026-04-28): <span role="button"> statt <button>, damit Glossar-
+            // Begriffe innerhalb von Anwendungs-Step-Buttons (MC-Optionen, Branching etc.)
+            // ohne HTML-Hydration-Error gerendert werden. <button> in <button> ist illegal.
+            const handleActivate = (e: React.MouseEvent | React.KeyboardEvent) => {
+              e.stopPropagation();
+              e.preventDefault();
+              setActiveEntry(part.entry!);
+            };
             return (
               <span key={i} className="inline">
-                <button
-                  onClick={() => setActiveEntry(part.entry!)}
-                  className={`inline underline-offset-2 ${isBold ? "font-bold" : "font-medium"} ${
+                <span
+                  role="button"
+                  tabIndex={0}
+                  onClick={handleActivate}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") handleActivate(e);
+                  }}
+                  className={`inline cursor-pointer underline-offset-2 ${isBold ? "font-bold" : "font-medium"} ${
                     isB1
                       ? "bg-[#BFA48E]/20 text-[var(--lern-accent)] underline decoration-[var(--lern-accent)]/30 rounded px-0.5 -mx-0.5"
                       : "text-[var(--lern-accent)] underline decoration-[var(--lern-accent)]/30"
                   }`}
                 >
                   {part.text}
-                </button>
+                </span>
                 {isB1 && <FachbegriffTtsButton text={part.entry!.begriff} />}
               </span>
             );

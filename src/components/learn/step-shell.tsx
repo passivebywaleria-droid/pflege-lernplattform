@@ -101,19 +101,22 @@ export function StepShell({
                   />
                 )}
               </div>
-              <button
-                type="button"
-                onClick={() => setBodyOpen((v) => !v)}
-                aria-expanded={bodyOpen}
-                className="mt-1.5 inline-flex items-center gap-1 text-xs font-medium text-[var(--lern-accent)] hover:underline"
-              >
-                {bodyOpen ? "Weniger anzeigen" : "Mehr lesen"}
-                <ChevronDown
-                  className={`h-3 w-3 transition-transform ${
-                    bodyOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
+              {/* Mehr-lesen rechts platziert — bessere Daumenbedienung auf Mobile */}
+              <div className="mt-1.5 flex justify-end">
+                <button
+                  type="button"
+                  onClick={() => setBodyOpen((v) => !v)}
+                  aria-expanded={bodyOpen}
+                  className="inline-flex items-center gap-1 text-xs font-medium text-[var(--lern-accent)] hover:underline"
+                >
+                  {bodyOpen ? "Weniger anzeigen" : "Mehr lesen"}
+                  <ChevronDown
+                    className={`h-3 w-3 transition-transform ${
+                      bodyOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+              </div>
             </div>
           )}
         </>

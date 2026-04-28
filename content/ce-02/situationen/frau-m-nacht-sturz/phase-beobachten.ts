@@ -396,17 +396,18 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-frau-m-beob-zitat-kontext",
       tag: "pflege",
-      displayFormat: "quote",
+      // FIX (Pilot 2026-04-28): displayFormat "quote" verursachte Stil-Bruch zum Rest
+      // der Steps. Auf "scenario" umgestellt + Markdown-Blockquote (>) entfernt,
+      // Patient-Zitat per typografische Anführungszeichen.
+      displayFormat: "scenario",
       contentC1: {
         title: "Frau M. über ihre Situation",
-        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
-        body: "Während du die Vitalzeichen misst, sagt Frau M. leise:\n\n> \"Zu Hause komme ich zurecht. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst wirklich selbstständig, das müssen Sie mir glauben.\"\n\nWas Frau M. sagt, ist didaktisch zentral. Ein Mensch verliert Orientierung in neuer Umgebung — auch ohne Demenz. Selbstständigkeit bei Aufnahme ≠ Selbstständigkeit in fremder Umgebung unter Pneumonie-Behandlung + neuer Sedierung. Deine Aufgabe als Pflege: Das anerkennen, nicht relativieren ('Jetzt sind Sie halt im Krankenhaus'), sondern zuhören — und dokumentieren, dass die Umgebung ein relevanter Risikofaktor ist.",
+        body: "Während du die Vitalzeichen misst, sagt Frau M. leise:\n\n„Zu Hause komme ich zurecht. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst wirklich selbstständig, das müssen Sie mir glauben.\"\n\n**Was Frau M. sagt, ist didaktisch zentral.**\n\nEin Mensch verliert Orientierung in neuer Umgebung — auch ohne Demenz.\n\nSelbstständigkeit bei Aufnahme ≠ Selbstständigkeit in fremder Umgebung unter Pneumonie-Behandlung + neuer Sedierung.\n\n**Deine Aufgabe als Pflege:**\n\n• Das anerkennen, nicht relativieren („Jetzt sind Sie halt im Krankenhaus\").\n\n• Zuhören.\n\n• Dokumentieren, dass die Umgebung ein relevanter Risikofaktor ist.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Frau M. erzählt",
-        // FIX (walkthrough B-14): Markdown-Underscores entfernt.
-        body: "Während du Blutdruck misst, sagt Frau M. leise:\n\n> \"Zu Hause komme ich klar. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst selbstständig — bitte glauben Sie mir.\"\n\nDas ist wichtig. Jemand kann zuhause alles gut machen — und trotzdem in der Klinik verloren sein. Auch ohne Demenz! Die neue Umgebung, die Pneumonie, das neue Schlafmittel — das sind zusammen viele Änderungen. Deine Aufgabe: Ihr zuhören. Nicht sagen: 'Sie sind halt jetzt hier.' Sondern: Die Umgebung mit-dokumentieren als Sturz-Risiko.",
+        body: "Während du Blutdruck misst, sagt Frau M. leise:\n\n„Zu Hause komme ich klar. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst selbstständig — bitte glauben Sie mir.\"\n\n**Das ist wichtig.**\n\nJemand kann zuhause alles gut machen — und trotzdem in der Klinik verloren sein. Auch ohne Demenz!\n\nDie neue Umgebung, die Pneumonie, das neue Schlafmittel — das sind zusammen viele Änderungen.\n\n**Deine Aufgabe:**\n\n• Ihr zuhören.\n\n• Nicht sagen: „Sie sind halt jetzt hier.\"\n\n• Die Umgebung mit-dokumentieren als Sturz-Risiko.",
         glossarBegriffe: [],
       },
     },
