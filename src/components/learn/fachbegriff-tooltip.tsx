@@ -56,6 +56,16 @@ export function FachbegriffText({ glossar, children, sprachLevel }: FachbegriffT
 
   const closeSheet = useCallback(() => setActiveEntry(null), []);
 
+  // ESC schließt Glossar-Sheet — A11y + Walkthrough-Tests
+  useEffect(() => {
+    if (!activeEntry) return;
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeSheet();
+    };
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, [activeEntry, closeSheet]);
+
   // Body-Scroll-Lock wenn Bottom-Sheet offen — Scroll-Position beibehalten
   useEffect(() => {
     if (activeEntry) {

@@ -780,6 +780,12 @@ export interface ContentStep {
   // visuell abgesetzte "Pflege-Wissen"-Karte (kein Quiz, kein Score).
   inlineWissen?: InlineWissenData;
 
+  // Themen-Zuordnung pro Step — für Curriculum-Coverage-Validator + Schüler-Tracking.
+  // Jeder Step kann ein Hauptthema (themaPrimaer) und weitere tangierte Themen haben.
+  // Wird vom Curriculum-Coverage-Audit-Skript ausgewertet.
+  themaPrimaer?: string;        // z.B. "sturz-prophylaxe"
+  themenSekundaer?: string[];   // z.B. ["schmerz", "kommunikation"]
+
   contentC1: {
     title: string;
     body: string;

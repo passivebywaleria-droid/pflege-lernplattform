@@ -14,6 +14,87 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
   kontextB1:
     "Du bist im Zimmer. Die Tür ist zu. Nur die kleine Lampe am Bett brennt. Frau M. liegt auf dem Boden, auf der linken Seite. Ihre Brille liegt unter dem Stuhl. Sie atmet flach. Es riecht nach Spray, Schweiß und ein wenig Urin. Frau M. schaut dich an. Sie sagt leise: 'Ich wollte nur kurz...' Du hockst dich neben sie. Du machst das erste Assessment. Sie ist wach. Sie atmet. Kein Blut. Kein verdrehtes Bein. Schmerzen: 4 von 10 in der linken Hüfte. Sie weiß, wer sie ist und wo sie ist. Gut. Aber: Warum liegt sie hier? Du schaust dich um. Das Bett steht hoch. Die Gitter sind unten. Der Klingel-Knopf ist weit weg. Auf dem Tisch: ein halbes Glas Wasser. Die Toilette ist offen, das Licht ist aus. Auf dem Bett-Zettel klebt ein gelber Aufkleber: 'Sturzrisiko'. Jemand wusste es. Trotzdem ist es passiert. Jetzt denkst du nach. Frau M. ist 82. Sie hat eine Lungenentzündung. Sie hat Parkinson. Sie ist nicht zuhause. Sie nimmt Medikamente. Was hat sie gestürzt? Du musst alles zusammenbringen — was du siehst, was in der Akte steht und was sie nimmt. Die Antwort liegt in den Risiken.",
   kernSteps: [
+    // Step 2.0b — Inline-Wissen \"Was ist eine PIM?"
+    // PILOT (Inline-Wissen v1, Phase 2): Vor der Medikamenten-Sichtung wird der Begriff
+    // PIM (Potenziell Inadäquate Medikation) geklärt. Schüler weiß bei der Markierung
+    // worauf er achtet — Anti-Brilliant-Trick: Wissen vor Anwendung, statt blind raten.
+    {
+      stepId: "ce02-frau-m-beob-00b-pim-pflegestand",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "PRISCUS-Liste 2.0 (Holt et al. 2023)",
+        "Beers-Liste 2023 (American Geriatrics Society)",
+        "DGG (Deutsche Gesellschaft für Geriatrie) — Polypharmazie-Empfehlungen 2024",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-beob-pim-grundwissen",
+      tag: "krankheitslehre",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["assessments-expertenstandards"],
+      contentC1: {
+        title: "Was ist eine PIM — und warum interessiert dich das?",
+        body: "",
+        glossarBegriffe: ["PIM", "PRISCUS-Liste", "Polypharmazie"],
+      },
+      contentB1: {
+        title: "Was ist eine PIM?",
+        body: "",
+        glossarBegriffe: ["PIM", "PRISCUS-Liste"],
+      },
+      inlineWissen: {
+        bausteinRef: "sturz-prophylaxe-pim-priscus",
+        storyAufhaenger:
+          "Du öffnest gleich Frau M.s Medikamentenliste. 5 Wirkstoffe. Aber nicht alle wirken bei einer 82-Jährigen so wie bei einer 30-Jährigen. Manche werden bei Älteren regelrecht zum Sturz-Risikofaktor — die nennt man **PIM**.",
+        storyAufhaengerB1:
+          "Du schaust gleich Frau M.s Medikamenten-Liste an. 5 Medikamente. Bei alten Menschen wirken manche Medikamente anders — und können zum Sturz führen. Diese nennt man **PIM**.",
+        kerntext:
+          "**PIM = Potenziell Inadäquate Medikation.**\n\nMedikamente, die bei Menschen über 65 ein **erhöhtes Risiko-Nutzen-Verhältnis** haben — Stürze, Verwirrtheit, Niereninsuffizienz, Blutungen.\n\n**Zwei zentrale Listen:**\n\n• **PRISCUS-Liste 2.0 (2023)** — deutsche Standardliste, ca. 130 Wirkstoffe als problematisch markiert.\n\n• **Beers-Liste (2023)** — US-amerikanisches Pendant, international referenziert.\n\n**Häufige Sturz-relevante PIM-Klassen:**\n\n• **Z-Substanzen** (Zolpidem, Zopiclon) — Schlafmittel mit langer Wirkdauer bei Älteren\n\n• **Benzodiazepine** (Diazepam, Lorazepam) — Sedierung + Muskelschwäche\n\n• **Trizyklische Antidepressiva** (Amitriptylin) — anticholinerge Effekte\n\n• **Diuretika in der Nacht** (HCT, Furosemid) — Nykturie + Volumenmangel\n\n• **Antihypertensiva ohne RR-Monitoring** — Orthostase\n\n**Pflege-Aufgabe:**\n\nDu verschreibst nichts — aber du **erkennst** PIM, **dokumentierst** Sturz-Risiko-Konstellationen und **sprichst** sie in der Visite an. Pflege ist die Brücke zwischen Verordnung und Wirkung am Menschen.\n\n**Bei Frau M. heute Nacht:** 5 Wirkstoffe, mindestens einer davon ist ein klassischer PIM. Den findest du im nächsten Step.",
+        kerntextB1:
+          "**PIM heißt: Potenziell Inadäquate Medikation.**\n\nManche Medikamente sind für alte Menschen gefährlich — sie können Stürze, Verwirrung oder andere Probleme machen.\n\n**Zwei wichtige Listen:**\n\n• **PRISCUS-Liste 2.0** (2023) — deutsche Liste mit ca. 130 problematischen Wirkstoffen\n\n• **Beers-Liste** (2023) — die US-amerikanische Liste\n\n**Häufige Sturz-Auslöser bei Älteren:**\n\n• **Z-Schlafmittel** (z.B. Zolpidem, Zopiclon) — wirken bei Alten zu lang\n\n• **Benzodiazepine** (z.B. Diazepam) — machen müde und schwach\n\n• **Wassertabletten** in der Nacht (HCT, Furosemid) — sie müssen oft pinkeln\n\n• **Blutdruck-Senker** ohne Kontrolle — Schwindel beim Aufstehen\n\n**Was du als Pflege machst:**\n\n• Du **verschreibst** nichts — das macht der Arzt.\n\n• Aber du **erkennst** gefährliche Medikamente.\n\n• Du **schreibst auf**, wenn ein Medikament Sturz-Risiko erhöht.\n\n• Du **sagst** es in der Visite.\n\n**Bei Frau M.:** Sie nimmt 5 Medikamente. Mindestens eins ist ein typisches PIM. Im nächsten Schritt findest du heraus welches.",
+        faustregel:
+          "Schlafmittel bei > 75? Wassertabletten in der Nacht? Blutdrucksenker ohne RR-Kontrolle? Drei Anlässe für sofortigen PRISCUS-Check.",
+        faustregelB1:
+          "Schlafmittel bei alten Menschen? Wassertablette in der Nacht? Blutdruck-Mittel? — immer die PRISCUS-Liste prüfen.",
+        spektrum: [
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "Furosemid + COPD",
+            kurzbeschreibung:
+              "Bei ihr ist es ein Diuretikum (Furosemid) das nachts Nykturie auslöst plus Polypharmazie. Pflege im ambulanten Setting muss PIMs aktiv ansprechen, weil der Hausarzt sie nicht täglich sieht.",
+          },
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Mirtazapin (PRISCUS) bei Demenz",
+            kurzbeschreibung:
+              "Mirtazapin steht auf der PRISCUS-Liste — sedierend, kann Orthostase verstärken. Bei Demenz-Patienten oft eingesetzt für Schlaf, aber ein Sturz-Booster.",
+          },
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Metformin + Polyneuropathie",
+            kurzbeschreibung:
+              "Metformin selbst ist kein PIM — aber bei B12-Mangel-bedingter Polyneuropathie (Diabetes-Folge) wird Sensorik der Füße schlechter. Indirekter Sturz-Faktor.",
+          },
+        ],
+        sonstBox:
+          "Weitere PIM-Klassen, die in unseren CE-02-Patienten nicht vorkommen, aber wichtig sind: **Anticholinergika** (Oxybutynin gegen Inkontinenz, Amitriptylin) — Verwirrtheit + Sturz-Risiko. **Antipsychotika** (Haloperidol, Risperidon) — Akathisie, Parkinson-ähnliche Symptome. Mehr dazu in der **PRISCUS-2.0-Liste 2023** im Anhang oder in CE-09 (Psychiatrie).",
+        sonstBoxB1:
+          "Andere PIM-Gruppen die wir hier nicht im Detail behandeln: **Mittel gegen Inkontinenz** (Oxybutynin), **starke Beruhigungsmittel** (Haloperidol). Mehr dazu lernst du in CE-09 (Psychiatrie) oder in der PRISCUS-Liste.",
+        karteikarte: {
+          vorderseite:
+            "Frau M. (82) nimmt 5 Medikamente. Was ist eine PIM und welche Klassen sind sturz-relevant?",
+          rueckseite:
+            "PIM = Potenziell Inadäquate Medikation für > 65-Jährige (PRISCUS 2.0 / Beers 2023).\n\nSturz-relevante PIM-Klassen:\n• Z-Substanzen (Zolpidem, Zopiclon)\n• Benzodiazepine\n• Diuretika in der Nacht (Nykturie)\n• Antihypertensiva ohne RR-Monitoring\n• Anticholinergika (Verwirrtheit)\n\nFaustregel: Schlafmittel + Wassertabletten + Blutdrucksenker bei > 75 → immer PRISCUS-Check. Pflege erkennt + dokumentiert + spricht in Visite an.",
+        },
+      },
+    },
+
     // Step 2.1 — Highlight: Medikamente sichten (BRILLIANT-Frage)
     {
       stepId: "ce02-frau-m-beob-01-medis-sichten",
@@ -258,7 +339,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
                 feedback:
                   "Ausweichend. Du hast gerade wichtige Information bekommen — und wischst sie weg. Frau M. lernt daraus: Nicht berichten, es ist egal. Das ist genau das Gegenteil dessen, was du erreichen willst.",
                 feedbackB1:
-                  // FIX (walkthrough B-08): Sandwich-Prinzip — Ermutigen statt "Schlecht".
+                  // FIX (walkthrough B-08): Sandwich-Prinzip — Ermutigen statt \"Schlecht".
                   "Du willst Frau M. beruhigen — die Absicht ist gut. Aber: Sie hat dir gerade etwas Wichtiges gesagt, und du wischst es weg. Jetzt denkt sie: 'Es interessiert niemanden.' Beim nächsten Mal: Information aufnehmen, Bedeutung benennen, Plan zeigen.",
               },
             ],
@@ -324,6 +405,87 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
           { text: "Weg zum Zimmer-WC 4 Meter", correctCategory: 1 },
           { text: "Nachts wenig Licht im Zimmer", correctCategory: 1 },
         ],
+      },
+    },
+
+    // Step 2.4b — Inline-Wissen \"Schellong-Test"
+    // PILOT (Inline-Wissen v1, Phase 2): Vor dem Orthostase-TrueFalse wird der Schellong-
+    // Test mit korrekten Schwellenwerten erklärt. So kann Schüler die 4 Aussagen
+    // bewerten anstatt zu raten.
+    {
+      stepId: "ce02-frau-m-beob-04b-schellong-test",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "AAS-Konsensus 2011 (American Autonomic Society)",
+        "DGN — S1-Leitlinie Synkope 2020",
+        "DNQP Sturzprophylaxe 2022",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-beob-schellong",
+      tag: "pflege",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["mobilisation"],
+      contentC1: {
+        title: "Schellong-Test — die Methode bevor du sie nutzt",
+        body: "",
+        glossarBegriffe: ["Schellong-Test", "Orthostase", "orthostatische Dysregulation"],
+      },
+      contentB1: {
+        title: "Wie geht der Schellong-Test?",
+        body: "",
+        glossarBegriffe: ["Schellong-Test", "Orthostase"],
+      },
+      inlineWissen: {
+        bausteinRef: "sturz-prophylaxe-schellong",
+        storyAufhaenger:
+          "Frau M. nimmt Ramipril + HCT + Zolpidem. Drei davon können beim Aufstehen den Blutdruck einbrechen lassen. Bevor du gleich beurteilst, was beim Schellong korrekt ist und was nicht — hier die Methode auf einen Blick.",
+        storyAufhaengerB1:
+          "Frau M. nimmt 3 Medikamente, die den Blutdruck beim Aufstehen senken können. Bevor du gleich beurteilst, was beim Schellong-Test korrekt ist — so geht er.",
+        kerntext:
+          "Der **Schellong-Test** misst die **orthostatische Reaktion** — wie reagiert dein Kreislauf, wenn du dich aufrichtest?\n\n**Ablauf nach AAS-Konsensus 2011:**\n\n• **Schritt 1:** Patient liegt **5–10 Min** flach. RR + Puls messen → **Liegewert**.\n\n• **Schritt 2:** Patient setzt sich an die Bettkante. **Mind. 1 Min warten.** RR + Puls messen → **Sitzwert**.\n\n• **Schritt 3:** Patient steht (mit Sicherung) auf. **3 Min warten.** RR + Puls messen → **Stehwert** (optional bei pflegerischer Mobilisation).\n\n**Diagnose-Schwellen (positiv = orthostatische Hypotonie):**\n\n• **RR systolisch ↓ ≥ 20 mmHg** zwischen Liegen und Sitzen/Stehen, **ODER**\n\n• **RR diastolisch ↓ ≥ 10 mmHg**, **ODER**\n\n• Puls steigt mehr als 30/Min an (Hinweis auf Hypovolämie)\n\n**Anti-Pattern (falsch!):**\n\n• ❌ \"3 Min sitzen lassen, dann ist alles ok\" — ohne Messung wertlos.\n\n• ❌ Nur RR im Liegen messen, dann mobilisieren.\n\n• ❌ Direkt aufstehen lassen ohne Sitz-Zwischenstufe.\n\n**Bei Frau M. heute:** Vor erster Mobilisation Pflicht — sie hat 3 RR-relevante Medikamente, ist seit Stunden flach gelegen, hat möglicherweise Volumenmangel durch HCT.",
+        kerntextB1:
+          "Der **Schellong-Test** schaut, ob der Blutdruck beim Aufstehen abfällt.\n\n**So geht er (AAS 2011):**\n\n• **Schritt 1:** Patient liegt **5–10 Minuten** flach. Du misst Blutdruck + Puls.\n\n• **Schritt 2:** Patient setzt sich. Du wartest **mindestens 1 Minute**. Du misst Blutdruck + Puls.\n\n• **Schritt 3:** Patient steht auf (mit Hilfe). Du wartest **3 Minuten**. Du misst.\n\n**Wann ist der Test positiv (= Problem)?**\n\n• Blutdruck **oben** fällt um **20 mmHg oder mehr** (z.B. von 130 auf 110)\n\n• ODER Blutdruck **unten** fällt um **10 mmHg oder mehr**\n\n• ODER Puls schlägt 30 Schläge mehr als vorher\n\n**Falsch! (häufige Fehler):**\n\n• ❌ Nur \"3 Minuten sitzen lassen\" ohne Messung\n\n• ❌ Nur einmal im Liegen messen\n\n• ❌ Direkt aufstehen lassen — ohne erst zu sitzen\n\n**Bei Frau M.:** Sie nimmt 3 Medikamente, die den Blutdruck senken können. Sie liegt seit Stunden. Vor dem ersten Aufstehen → **Schellong ist Pflicht.**",
+        faustregel:
+          "Schellong = liegen → sitzen → stehen, jeweils mit Messung. Anti-Pattern \"3 Min warten\" ohne RR ist wertlos.",
+        faustregelB1:
+          "Schellong: erst liegen, dann sitzen, dann stehen — und JEDES Mal Blutdruck messen. Nur warten reicht nicht!",
+        spektrum: [
+          {
+            patientName: "Frau Yilmaz (Hüft-TEP)",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Schellong vor 1. Mobilisation post-OP",
+            kurzbeschreibung:
+              "Bei post-OP-Mobilisation (Tag 1) ist Schellong Pflicht — Patient hat lange gelegen, evtl. Volumenmangel durch OP, Schmerzmittel sedieren. Plus: Lagerungsregeln beachten (max. 90° Hüftflexion).",
+          },
+          {
+            patientName: "Herr Petrov (Schlaganfall)",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Schellong + Halbseiten-Lähmung",
+            kurzbeschreibung:
+              "Bei ihm ist Schellong komplexer: Hemiparese rechts, betroffene Seite muss begleitet werden. Zusätzlich Aspirations-Risiko bei Aufrichtung.",
+          },
+          {
+            patientName: "Herr Bauer (Demenz)",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Schellong bei Mirtazapin",
+            kurzbeschreibung:
+              "Mirtazapin (PRISCUS) verursacht ausgeprägte Orthostase. Bei Demenz wartet er nicht 3 Min — Schellong braucht hier ggf. ruhige Validation-Begleitung.",
+          },
+        ],
+        sonstBox:
+          "Andere Tests die du kennen solltest: **Active Stand Test** (kontinuierliche RR-Messung beim Aufstehen, klinische Variante), **Tilt-Table-Test** (Kipp-Tisch, kardiologisch). Pflegerelevant ist der Schellong — der Rest macht der Arzt.",
+        sonstBoxB1:
+          "Andere Tests die der Arzt macht: **Kipp-Tisch-Test** und **kontinuierliche RR-Messung**. Du als Pflege machst den Schellong.",
+        karteikarte: {
+          vorderseite:
+            "Frau M. (82, 3 RR-Senker, lange gelegen) — du sollst die erste Mobilisation vorbereiten. Welche Schellong-Werte machst du, was sind die positiv-Kriterien?",
+          rueckseite:
+            "Schellong nach AAS 2011:\n• Liegen 5-10 Min → RR + Puls\n• Sitzen ≥ 1 Min → RR + Puls\n• Stehen 3 Min → RR + Puls\n\nPositiv (= Orthostase):\n• syst. ↓ ≥ 20 mmHg, oder\n• diast. ↓ ≥ 10 mmHg, oder\n• Puls ↑ > 30/Min\n\nFaustregel: Liegen-Sitzen-Stehen mit JE einer Messung. \"3 Min warten\" ohne RR ist wertlos.",
+        },
       },
     },
 
@@ -396,18 +558,18 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-frau-m-beob-zitat-kontext",
       tag: "pflege",
-      // FIX (Pilot 2026-04-28): displayFormat "quote" verursachte Stil-Bruch zum Rest
-      // der Steps. Auf "scenario" umgestellt + Markdown-Blockquote (>) entfernt,
+      // FIX (Pilot 2026-04-28): displayFormat \"quote" verursachte Stil-Bruch zum Rest
+      // der Steps. Auf \"scenario" umgestellt + Markdown-Blockquote (>) entfernt,
       // Patient-Zitat per typografische Anführungszeichen.
       displayFormat: "scenario",
       contentC1: {
         title: "Frau M. über ihre Situation",
-        body: "Während du die Vitalzeichen misst, sagt Frau M. leise:\n\n„Zu Hause komme ich zurecht. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst wirklich selbstständig, das müssen Sie mir glauben.\"\n\n**Was Frau M. sagt, ist didaktisch zentral.**\n\nEin Mensch verliert Orientierung in neuer Umgebung — auch ohne Demenz.\n\nSelbstständigkeit bei Aufnahme ≠ Selbstständigkeit in fremder Umgebung unter Pneumonie-Behandlung + neuer Sedierung.\n\n**Deine Aufgabe als Pflege:**\n\n• Das anerkennen, nicht relativieren („Jetzt sind Sie halt im Krankenhaus\").\n\n• Zuhören.\n\n• Dokumentieren, dass die Umgebung ein relevanter Risikofaktor ist.",
+        body: "Während du die Vitalzeichen misst, sagt Frau M. leise:\n\n\"Zu Hause komme ich zurecht. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst wirklich selbstständig, das müssen Sie mir glauben.\"\n\n**Was Frau M. sagt, ist didaktisch zentral.**\n\nEin Mensch verliert Orientierung in neuer Umgebung — auch ohne Demenz.\n\nSelbstständigkeit bei Aufnahme ≠ Selbstständigkeit in fremder Umgebung unter Pneumonie-Behandlung + neuer Sedierung.\n\n**Deine Aufgabe als Pflege:**\n\n• Das anerkennen, nicht relativieren (\"Jetzt sind Sie halt im Krankenhaus\").\n\n• Zuhören.\n\n• Dokumentieren, dass die Umgebung ein relevanter Risikofaktor ist.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Frau M. erzählt",
-        body: "Während du Blutdruck misst, sagt Frau M. leise:\n\n„Zu Hause komme ich klar. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst selbstständig — bitte glauben Sie mir.\"\n\n**Das ist wichtig.**\n\nJemand kann zuhause alles gut machen — und trotzdem in der Klinik verloren sein. Auch ohne Demenz!\n\nDie neue Umgebung, die Pneumonie, das neue Schlafmittel — das sind zusammen viele Änderungen.\n\n**Deine Aufgabe:**\n\n• Ihr zuhören.\n\n• Nicht sagen: „Sie sind halt jetzt hier.\"\n\n• Die Umgebung mit-dokumentieren als Sturz-Risiko.",
+        body: "Während du Blutdruck misst, sagt Frau M. leise:\n\n\"Zu Hause komme ich klar. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst selbstständig — bitte glauben Sie mir.\"\n\n**Das ist wichtig.**\n\nJemand kann zuhause alles gut machen — und trotzdem in der Klinik verloren sein. Auch ohne Demenz!\n\nDie neue Umgebung, die Pneumonie, das neue Schlafmittel — das sind zusammen viele Änderungen.\n\n**Deine Aufgabe:**\n\n• Ihr zuhören.\n\n• Nicht sagen: \"Sie sind halt jetzt hier.\"\n\n• Die Umgebung mit-dokumentieren als Sturz-Risiko.",
         glossarBegriffe: [],
       },
     },

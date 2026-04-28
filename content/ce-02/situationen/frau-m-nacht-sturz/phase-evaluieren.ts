@@ -14,6 +14,94 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
   kontextB1:
     "24 Stunden später. 06:42 Uhr. Frühdienst. Du stehst wieder auf dem Flur. Alles ist anders. Das Licht ist hell. Draußen wird es langsam blau. Eine Amsel singt. Es riecht nach Kaffee und Toast. Du hast zuhause schlecht geschlafen. Du denkst noch an Frau M. — wie sie am Boden lag, wie sie deine Hand hielt. Frau Keller steht neben dir. Sie hat eine Tasse Kaffee. Sie sagt: 'Komm, wir gucken zusammen.' Du liest die Übergabe von der Spätschicht. Zolpidem wurde abgesetzt. Nachtlicht hat gebrannt. Toilettenstuhl wurde benutzt — Frau M. hat geklingelt um 02:50. Vitalzeichen sind stabil. Schmerzen: 2 von 10. Du gehst mit Frau Keller zu Frau M. Sie sitzt im Bett. Sie hat ihre Brille auf. Sie trinkt Tee. Sie lächelt vorsichtig. Sie sagt: 'Sie sind die von der Nacht.' Du sagst: 'Sie haben geklingelt.' Sie nickt: 'Ja. Es ging.' Etwas in dir wird ruhig. Aber jetzt ist die Frage: Was hat wirklich geholfen? Was war zu viel? Was fehlt noch — zum Beispiel Physiotherapie, Hüftprotektor, HCT-Review? Du musst es klar sagen. Frau Keller wartet. Du selbst willst es auch wissen — für die nächste Schicht und für dich.",
   kernSteps: [
+    // Step 5.0b — Inline-Wissen "Re-Assessment-Zeiten + NRS-Wiederbegegnung"
+    // PILOT (Inline-Wissen v1, Phase 5): WIEDERBEGEGNUNG mit NRS aus Phase 1.
+    // Cross-Linking-Schema: kein voller Lese-Snack, nur Vertiefung mit Frau-M.-spezifischen
+    // Werten + Re-Assessment-Schwellen.
+    {
+      stepId: "ce02-frau-m-eval-00b-reassessment-zeiten",
+      phase: 5,
+      stepType: "inlineWissen",
+      bloomLevel: 3,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP Schmerzmanagement 2020 (akute Schmerzen)",
+        "DGSS — Deutsche Schmerzgesellschaft, Re-Assessment-Empfehlung 2023",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-eval-reassessment",
+      tag: "pflege",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["pflegeprozess", "pflegedokumentation"],
+      contentC1: {
+        title: "Re-Assessment — was hat funktioniert, was nicht?",
+        body: "",
+        glossarBegriffe: ["Re-Assessment", "NRS"],
+      },
+      contentB1: {
+        title: "Nochmal prüfen — hat es geholfen?",
+        body: "",
+        glossarBegriffe: ["Re-Assessment", "NRS"],
+      },
+      inlineWissen: {
+        bausteinRef: "sturz-prophylaxe-reassessment",
+        wiederbegegnung: {
+          basisBausteinId: "sturz-prophylaxe-nrs",
+          basisPatient: "Frau M. (Phase 1)",
+          vertiefung:
+            "Du kennst NRS aus Phase 1 (\\\"NRS \\u22654 ist nicht wenig\\\"). Bei Frau M. heute Morgen: NRS 2 — funktioniert die Schmerzmedikation, oder hat sie nur \\\"runtergespielt\\\"?",
+          vertiefungB1:
+            "NRS kennst du aus Phase 1. Bei Frau M. heute: NRS 2 — wirkt die Tablette wirklich, oder \\\"spielt sie es runter\\\" wie immer?",
+        },
+        storyAufhaenger:
+          "Frau M. sagt: \\\"Schmerzen sind besser, NRS 2.\\\" Aber sie ist auch die, die NRS 8 als \\\"etwas unangenehm\\\" verkauft hat. Wie weißt du, ob das Re-Assessment ehrlich ist?",
+        storyAufhaengerB1:
+          "Frau M. sagt: \\\"Schmerzen sind besser, NRS 2.\\\" Aber sie sagt oft, dass alles ok ist. Wie weißt du, ob es wirklich besser ist?",
+        kerntext:
+          "**Re-Assessment ist nicht nur Score-Wiederholung.** Du prüfst:\n\n• **Hat die Intervention gewirkt?** (NRS-Reduktion ≥30 % oder absolut auf < 4 = Erfolg laut DGSS 2023)\n\n• **War der Wirkbeginn zeitlich richtig erwartet?** (oral 30 Min, i.v. 15 Min, transdermal 30-60 Min)\n\n• **Stimmt der subjektive Score mit objektiven Zeichen?** (Mimik, Atemfrequenz, Bewegungs-Toleranz, Schlafqualität)\n\n• **Was war die Nebenwirkung?** (z.B. Sedierung, Übelkeit, Obstipation bei Opioiden)\n\n**Bei Frau M. heute Morgen:**\n\n• **NRS 2** (von 8 vorher) = absolute Reduktion 6 Punkte = klarer Erfolg.\n\n• Aber: Sie ist auch die, die in Phase 1 \\\"etwas unangenehm\\\" für NRS 8 sagte → **Bias prüfen**.\n\n• Objektive Hinweise: Sie sitzt aufrecht, lächelt vorsichtig, trinkt Tee. Atmung ruhig. Bewegung links nicht eingeschränkt → konsistent mit niedrigem Schmerz.\n\n**Pflegerische Konsequenz:**\n\n• Schmerztherapie weiter so + 24h-Beobachtung + nicht reduzieren bevor Mobilisations-Belastung getestet ist (NRS bei Bewegung kann höher sein als in Ruhe).\n\n• Wenn Mobilisation NRS > 4 verursacht → Bedarfsanalgesie 30 Min vor nächster Mobi.\n\n**Wichtige Erinnerung:** Re-Assessment auch bei nicht-medikamentösen Maßnahmen (Lagerung, Eis, Wärme) — gleiche Logik, andere Zeiten.",
+        kerntextB1:
+          "**Re-Assessment ist mehr als nochmal Schmerz fragen.** Du prüfst 4 Dinge:\n\n• **Hat die Behandlung geholfen?** (NRS muss um 30 % runter oder unter 4 sein = Erfolg laut DGSS 2023)\n\n• **War der Zeitpunkt richtig?** (Tablette wirkt nach 30 Min, Spritze nach 15 Min, Pflaster nach 30-60 Min)\n\n• **Passt der Score zu dem, was du siehst?** (Gesicht, Atmung, Bewegung, Schlaf)\n\n• **Gibt es Nebenwirkungen?** (Müdigkeit, Übelkeit, Verstopfung)\n\n**Bei Frau M. heute Morgen:**\n\n• **NRS 2** (vorher 8) = 6 Punkte besser. Klarer Erfolg.\n\n• Aber: Sie hat in Phase 1 NRS 8 als \\\"etwas unangenehm\\\" gesagt → **Bist du sicher?**\n\n• Was du siehst: Sie sitzt aufrecht, lächelt, trinkt Tee. Atmung normal. → Passt zu wenig Schmerz.\n\n**Was du jetzt tust:**\n\n• Schmerztherapie weiterlaufen lassen + 24h beobachten.\n\n• Nicht zu früh reduzieren — bei Bewegung tut es vielleicht mehr weh als in Ruhe.\n\n• Wenn Mobilisation NRS > 4 macht → 30 Min vorher Bedarfs-Schmerzmittel.\n\n**Wichtig:** Re-Assessment auch bei nicht-Medikamenten (Lagerung, Eis, Wärme).",
+        faustregel:
+          "Erfolg = NRS-Reduktion ≥ 30 % oder absolut unter 4. Bei \\\"runterspielenden\\\" Patient(inn)en: Score + Mimik + Atmung + Bewegung kombinieren.",
+        faustregelB1:
+          "Erfolg = NRS um 30 % runter ODER unter 4. Bei Patienten die runterspielen: Schau auch auf Gesicht, Atmung, Bewegung — nicht nur die Zahl.",
+        spektrum: [
+          {
+            patientName: "Lukas (Verbrühung, KUSS)",
+            situationsId: "ls-lukas-verbruehung",
+            hauptfaktor: "Re-Assessment mit KUSS statt NRS",
+            kurzbeschreibung:
+              "Bei Säuglingen/Kleinkindern (< 4 J.) Re-Assessment mit KUSS-Skala. Erfolg = KUSS-Reduktion auf < 4. Beobachtung wichtig wegen fehlender verbaler Selbstauskunft.",
+          },
+          {
+            patientName: "Herr Bauer (Demenz)",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Re-Assessment mit BESD/PAINAD",
+            kurzbeschreibung:
+              "Bei fortgeschrittener Demenz keine NRS möglich — BESD oder PAINAD bewertet Atmung, Lautäußerung, Mimik, Körpersprache, Trostbarkeit. Re-Assessment alle 30-60 Min nach Intervention.",
+          },
+          {
+            patientName: "Frau Yilmaz (Hüft-TEP)",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Re-Assessment in Ruhe + Bewegung",
+            kurzbeschreibung:
+              "Bei post-OP-Patient(inn)en NRS in Ruhe + Bewegung getrennt erheben. Mobilisation gelingt nur bei NRS-Bewegung ≤ 3-4 — sonst Analgesie 30 Min vor Mobi.",
+          },
+        ],
+        sonstBox:
+          "Andere Re-Assessment-Tools die du kennen solltest: **VAS** (visuelle Analogskala 10 cm), **Faces Pain Scale** (Smileys, Kinder + Sprachbarriere), **CPOT** (intensivpflichtige nicht-kommunikationsfähige Patient(inn)en). Mehr in DNQP Schmerzmanagement 2020 (akut + chronisch).",
+        sonstBoxB1:
+          "Andere Schmerz-Skalen für Re-Assessment: **VAS** (Strich auf einer Linie), **Smiley-Skala** (für Kinder), **CPOT** (für Intensivpatienten die nicht sprechen können).",
+        karteikarte: {
+          vorderseite:
+            "Frau M. (Sturz vor 24h, NRS 8 → 2 nach Schmerzmittel) — wie machst du Re-Assessment, was sind Erfolgs-Kriterien?",
+          rueckseite:
+            "Re-Assessment nach DNQP/DGSS:\n\n4 Punkte:\n1. Wirkung? (NRS-Reduktion ≥ 30 % oder < 4 = Erfolg)\n2. Zeitpunkt richtig? (oral 30 Min, i.v. 15 Min, transdermal 30-60 Min)\n3. Score plausibel mit objektiven Zeichen? (Mimik, Atmung, Bewegung)\n4. Nebenwirkungen?\n\nBei Frau M.: NRS 2 = 6 Punkte Reduktion = Erfolg. Aber Bias-Prüfung wegen \\\"runterspielenden\\\"-Stil → Mimik/Atmung/Bewegung kongruent → ok.\n\nFaustregel: Bei runterspielenden Patient(inn)en immer Score + objektive Zeichen kombinieren.",
+        },
+      },
+    },
+
     // Step 5.1 — Categorize: Reassessment
     {
       stepId: "ce02-frau-m-eval-01-reassessment",

@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { usePathname } from "next/navigation"
 import { X, BookOpen } from "lucide-react"
 
 // Gleicher Key wie notifications.ts + use-lern-fortschritt.ts — ein System
@@ -18,7 +19,22 @@ export function recordLearningActivity() {
   }
 }
 
+/**
+ * Pfade, auf denen das Reminder-Banner NICHT erscheinen darf.
+ * Pilot 2026-04-28: Banner überlagerte sticky Step-Action-Bar (z-40 vs. z-50)
+ * → Schüler konnten "Weiter"-Button nicht erreichen. Auf Lern-Seiten
+ * grundsätzlich kein Banner — der User ist ja gerade aktiv am Lernen.
+ */
+const HIDDEN_ON_PATHS = [
+  "/lernen/situation/",
+  "/lernen/le/",
+  "/lernen/ce/",
+  "/pruefung/",
+  "/karteikarten",
+]
+
 export function LearningReminderBanner() {
+  const pathname = usePathname()
   const [show, setShow] = useState(false)
 
   useEffect(() => {
@@ -35,6 +51,11 @@ export function LearningReminderBanner() {
       setShow(true)
     }
   }, [])
+
+  // Banner auf aktiven Lern-/Prüfungs-/Karteikarten-Routen unterdrücken
+  if (pathname && HIDDEN_ON_PATHS.some((p) => pathname.includes(p))) {
+    return null
+  }
 
   function dismiss() {
     localStorage.setItem(BANNER_DISMISSED_KEY, getToday())

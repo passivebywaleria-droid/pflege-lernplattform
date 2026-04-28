@@ -14,6 +14,84 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
   kontextB1:
     "Es ist 03:11 Uhr. Frau M. liegt zugedeckt auf dem Boden. Eine Decke ist unter ihrem Kopf. Sie atmet ruhiger. Die Schmerzen sind stabil bei 4 von 10. Du hast ihr gesagt: 'Ich hole Hilfe. Sie sind nicht allein.' Sie hat genickt und kurz deine Hand gedrückt. Jetzt gehst du zwei Schritte zurück zum Fenster. Draußen ist es dunkel. Eine Lampe leuchtet auf der Straße. Du atmest dreimal tief aus. Dein Kopf war voll mit Sehen und Fragen. Jetzt musst du sortieren. Du denkst an die Risiken von Frau M.: 82 Jahre. Parkinson. Osteoporose. Katarakt. Zolpidem seit 2 Tagen — gefährlich. HCT macht sie nachts pinkeln. Lungenentzündung. Fremdes Krankenhaus. Und: Frau M. wollte nicht klingeln. Sie wollte 'nicht stören'. Sie hat das ihrer Tochter versprochen. Die Frage ist nicht nur: Was machst du? Sondern: Wann machst du was? Was muss SOFORT passieren — bevor sie wieder schläft? Was diese Nacht? Was bis zur Entlassung? Was ist mit der Umgebung? Was mit den Medikamenten? Was mit Frau M. selbst? Du nimmst deinen Stift in die Hand. Du hörst Frau M. ruhig atmen. Im Flur klappert ein Wagen. Frau Keller kommt gleich. Du hast vielleicht drei Minuten Zeit. Eine gute Planung jetzt verhindert den nächsten Sturz — heute Nacht und auch zuhause in zwei Wochen.",
   kernSteps: [
+    // Step 3.0b — Inline-Wissen \"DNQP-Sturzprophylaxe — 6 Kriterien"
+    // PILOT (Inline-Wissen v1, Phase 3): Strukturiert die Phase. Schüler weiß bevor er
+    // Maßnahmen plant: das ist nicht zufällig, das folgt einem Standard mit 6 Punkten.
+    {
+      stepId: "ce02-frau-m-plan-00b-dnqp-sechs-kriterien",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP 2022 — Expertenstandard Sturzprophylaxe in der Pflege, 2. Aktualisierung",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-plan-dnqp-grundwissen",
+      tag: "pflege",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["assessments-expertenstandards", "pflegeprozess"],
+      contentC1: {
+        title: "Sturzprophylaxe nach DNQP — 6 Kriterien als roter Faden",
+        body: "",
+        glossarBegriffe: ["DNQP", "Expertenstandard", "Sturzprophylaxe"],
+      },
+      contentB1: {
+        title: "Wie plant man Sturzprophylaxe?",
+        body: "",
+        glossarBegriffe: ["DNQP", "Expertenstandard"],
+      },
+      inlineWissen: {
+        bausteinRef: "sturz-prophylaxe-dnqp-sechs-kriterien",
+        storyAufhaenger:
+          "Du hast deinen Stift in der Hand, drei Minuten bis Frau Keller zurückkommt. Bevor du planst — DNQP gibt dir die Struktur vor. **6 Kriterien.** Jeder Sturz-Fall folgt diesem Roten Faden — auch der von Frau M.",
+        storyAufhaengerB1:
+          "Du hast den Stift in der Hand. Bevor du planst: Der DNQP-Standard zeigt dir den Weg. **6 Punkte.** Jeder Fall — auch Frau M. — folgt diesem Plan.",
+        kerntext:
+          "Der **DNQP-Expertenstandard Sturzprophylaxe** (2. Aktualisierung 2022) ist Pflicht-Lektüre für jede Pflegekraft in Deutschland. Er strukturiert dein Vorgehen in **6 Kriterien**:\n\n• **Kriterium 1: Sturzrisiko einschätzen.** Multifaktoriell, klinische Einschätzung — kein Tinetti, kein STRATIFY zwingend. Bei Aufnahme + bei Veränderungen.\n\n• **Kriterium 2: Information & Beratung.** Patient + Angehörige werden über Risiko + Maßnahmen aufgeklärt — partizipativ, nicht belehrend.\n\n• **Kriterium 3: Gemeinsame Maßnahmenplanung.** \"Mit dem Patienten\" — nicht \"für ihn\". Selbstbestimmung respektieren.\n\n• **Kriterium 4: Maßnahmen durchführen.** Kraft+Balance, Umgebung, Medikamenten-Review, Schuhwerk, Sehkorrektur, Hilfsmittel.\n\n• **Kriterium 5: Bei Sturz: Eskalation + Dokumentation.** Sturzprotokoll, Arzt informieren, Re-Assessment.\n\n• **Kriterium 6: Evaluation des Maßnahmenplans.** Nach 6 Wochen / 3 Monate — funktioniert die Prophylaxe?\n\n**Bei Frau M. heute Nacht:**\n\nDu bist bei **Kriterium 5** angekommen — Sturz ist passiert, jetzt: dokumentieren + Maßnahmen für die kommende Nacht + bis Entlassung anpassen. Aber Kriterium 1-4 bleiben aktiv (das Risiko-Profil hat sich gerade verschärft).\n\n**Wichtig — Kriterium 3 lehrt:** \"Bettgitter hoch, fertig\" ist KEINE partizipative Maßnahmenplanung. Du musst mit Frau M. (nicht über sie) entscheiden — das wird in dieser Phase nochmal kritisch.",
+        kerntextB1:
+          "Der **DNQP-Standard Sturzprophylaxe** (2022) ist die Standard-Anleitung für Pflegekräfte. **6 Punkte:**\n\n• **Punkt 1: Sturz-Risiko einschätzen** — bei Aufnahme + bei Veränderungen. Klinische Einschätzung, kein Tool zwingend.\n\n• **Punkt 2: Patient + Angehörige aufklären** — gemeinsam, nicht belehrend.\n\n• **Punkt 3: Maßnahmen gemeinsam planen** — MIT dem Patienten, nicht FÜR ihn.\n\n• **Punkt 4: Maßnahmen umsetzen** — Kraft+Balance, Umgebung, Medikamenten-Check, Schuhe, Sehen, Hilfsmittel.\n\n• **Punkt 5: Wenn ein Sturz passiert: Eskalation + Dokumentation** — Sturzprotokoll, Arzt informieren, neu einschätzen.\n\n• **Punkt 6: Plan nach 6 Wochen / 3 Monate prüfen** — funktioniert die Prophylaxe?\n\n**Bei Frau M.:**\n\nDu bist bei **Punkt 5** — der Sturz ist passiert. Jetzt: aufschreiben + neue Maßnahmen für heute Nacht + bis Entlassung.\n\n**Wichtig — Punkt 3 sagt:** \"Bettgitter hoch, fertig\" ist FALSCH. Du musst MIT Frau M. entscheiden, nicht ÜBER sie. Das ist gleich Thema!",
+        faustregel:
+          "DNQP 6 Kriterien: Einschätzen → Beraten → Gemeinsam Planen → Durchführen → Bei Sturz eskalieren → Evaluieren. Die Reihenfolge ist nicht zufällig.",
+        faustregelB1:
+          "DNQP 6 Punkte: Einschätzen → Beraten → MIT Patient planen → Tun → Bei Sturz eskalieren → Prüfen.",
+        spektrum: [
+          {
+            patientName: "Herr Bauer (Demenz)",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Kriterium 3 schwierig bei Demenz",
+            kurzbeschreibung:
+              "Bei fortgeschrittener Demenz ist \"gemeinsame Maßnahmenplanung\" eingeschränkt — Validation nach Naomi Feil + Einbezug der Tochter Ingrid (gesetzliche Betreuerin) wird zentral.",
+          },
+          {
+            patientName: "Frau Yilmaz (Hüft-TEP)",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Kriterium 4 ist post-OP-spezifisch",
+            kurzbeschreibung:
+              "Bei ihr ist \"Maßnahmen durchführen\" anders gewichtet: Lagerungsregeln (max. 90° Hüftflexion), Kraft-Balance-Training erst nach Wundheilung, Hilfsmittel = Rollator + Toilettensitzerhöhung.",
+          },
+          {
+            patientName: "Frau Kovac (ambulant)",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "Kriterium 6 wichtig im häuslichen Setting",
+            kurzbeschreibung:
+              "Bei ambulanter Pflege ist \"Evaluation nach 6 Wo / 3 Mo\" Pflicht — Wohnungs-Begehung, Sturzprotokoll der letzten Wochen, Hausarzt-Rückmeldung.",
+          },
+        ],
+        sonstBox:
+          "Andere DNQP-Standards die hier eine Rolle spielen werden: **DNQP Schmerzmanagement** (Frau M.s NRS), **DNQP Beziehungsgestaltung Demenz** (für andere Patienten), **DNQP Mobilität**. Auf dnqp.de findest du alle Volltexte.",
+        sonstBoxB1:
+          "Andere DNQP-Standards: **Schmerzmanagement**, **Beziehungsgestaltung bei Demenz**, **Mobilität**. Im Internet auf dnqp.de findest du alle.",
+        karteikarte: {
+          vorderseite:
+            "Frau M. ist gestürzt — du planst gleich Maßnahmen. Welche 6 Kriterien strukturieren deine Sturzprophylaxe nach DNQP 2022?",
+          rueckseite:
+            "DNQP Sturzprophylaxe (2022) — 6 Kriterien:\n1. Sturzrisiko einschätzen (multifaktoriell, klinisch)\n2. Information + Beratung (Patient + Angehörige)\n3. Maßnahmenplanung MIT Patient (Kriterium 3 = partizipativ)\n4. Maßnahmen durchführen (Kraft+Balance, Umgebung, Medi-Review, Schuhwerk, Sehen, Hilfsmittel)\n5. Bei Sturz: Eskalation + Sturzprotokoll\n6. Evaluation nach 6 Wo / 3 Mo\n\nFaustregel: Reihenfolge ist nicht zufällig. Bei Sturz bei Kriterium 5 angekommen — aber 1-4 bleiben aktiv.",
+        },
+      },
+    },
+
     // Step 3.1 — Matrix (2x3)
     {
       stepId: "ce02-frau-m-plan-01-kurzfristig-langfristig",
@@ -98,6 +176,87 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       },
     },
 
+    // Step 3.2b — Inline-Wissen "§ 1831 BGB Bettgitter / Fixierung"
+    // PILOT (Inline-Wissen v1, Phase 3): Vor der Branching-Entscheidung \"Bettgitter ja/nein"
+    // wird die rechtliche Lage geklärt — wann ist es Fixierung, wann nicht.
+    {
+      stepId: "ce02-frau-m-plan-02b-fixierung-recht",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 3,
+      kompetenzbereich: "II.1",
+      quellen: [
+        "§ 1831 BGB (Genehmigungspflicht freiheitsentziehender Maßnahmen, ab 2023)",
+        "§ 34 StGB (Notfall-Klausel)",
+        "BGH Urteil 2019 (Bettgitter als Fixierung)",
+        "Werdenfelser Weg 2022",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-plan-bettgitter-recht",
+      tag: "pflege",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["pflegedokumentation"],
+      contentC1: {
+        title: "Bettgitter — wann ist es Fixierung, wann nicht?",
+        body: "",
+        glossarBegriffe: ["Fixierung", "freiheitsentziehende Maßnahme", "Werdenfelser Weg"],
+      },
+      contentB1: {
+        title: "Bettgitter — Recht und Gesetz",
+        body: "",
+        glossarBegriffe: ["Fixierung"],
+      },
+      inlineWissen: {
+        bausteinRef: "sturz-prophylaxe-bettgitter-recht",
+        storyAufhaenger:
+          "Du wirst gleich entscheiden: Beide Bettgitter hoch — oder eines, oder keine? Das ist KEINE pflegerische Lifestyle-Frage. Das ist **Recht**. § 1831 BGB regelt freiheitsentziehende Maßnahmen — und wer es ignoriert, riskiert Strafe.",
+        storyAufhaengerB1:
+          "Gleich entscheidest du: Beide Bettgitter hoch — oder eines — oder keines? Das ist nicht nur Pflege, das ist auch **Recht**. § 1831 BGB regelt das.",
+        kerntext:
+          "**Wann ist ein Bettgitter eine Fixierung?**\n\nLaut **BGH 2019**: Wenn der Patient durch das Bettgitter daran gehindert wird, das Bett zu verlassen. Dann liegt eine **freiheitsentziehende Maßnahme (FEM)** vor.\n\n**Folgen einer FEM:**\n\n• **Patient kann selbst zustimmen** (informed consent + Dokumentation) — dann legal.\n\n• **Patient kann nicht zustimmen** (Demenz, Bewusstlosigkeit, Verwirrung) — Pflicht: **richterliche Genehmigung** nach § 1831 BGB. Antrag durch Betreuer/Bevollmächtigten.\n\n• **Notfall:** § 34 StGB Notstand — kurzfristige FEM ohne Genehmigung erlaubt, **muss aber sofort angezeigt** und nachträglich genehmigt werden.\n\n**Bettgitter ohne FEM-Charakter (kein Genehmigungsbedarf):**\n\n• **Einseitig** + Patient kann selbst raus auf der anderen Seite — dann nur Sturzschutz, keine FEM.\n\n• **Halbe Bettgitter** (1/3 oder 2/3) — Sturzhinweis, kein Hindernis.\n\n• **Mit Patienten-Wunsch** (er fühlt sich sicherer mit Gitter) + Doku.\n\n**Bei Frau M.:** Sie ist **orientiert**, kann **zustimmen oder ablehnen**. Du musst sie fragen — Selbstbestimmung respektieren (DNQP Kriterium 3).\n\n**Werdenfelser Weg (2022):** Alternativen vor FEM. Niedrigbett, Sensormatte, Klingelband am Handgelenk, Bewegungsmelder. Werden in der Praxis zu wenig genutzt — Pflege kann hier viel bewegen.",
+        kerntextB1:
+          "**Wann ist ein Bettgitter eine Fixierung?**\n\nDas Gericht hat 2019 entschieden: Wenn der Patient durch das Bettgitter NICHT mehr aus dem Bett kommt, ist es eine **Fixierung** (= freiheitsentziehende Maßnahme).\n\n**Wenn es eine Fixierung ist:**\n\n• **Patient sagt selbst Ja** und du schreibst es auf — dann erlaubt.\n\n• **Patient kann nicht entscheiden** (Demenz, bewusstlos) — du brauchst **Erlaubnis vom Richter** (§ 1831 BGB). Den Antrag stellt der Betreuer.\n\n• **Notfall:** Du darfst kurzfristig fixieren ohne Erlaubnis (§ 34 StGB), musst es aber SOFORT melden und nachträglich genehmigen lassen.\n\n**Wann ist es KEINE Fixierung?**\n\n• **Nur ein Gitter** + Patient kann auf der anderen Seite raus — kein Problem.\n\n• **Halbe Bettgitter** (kurze Stücke) — nur als Hinweis, kein Hindernis.\n\n• **Patient will es selbst** + du schreibst es auf — kein Problem.\n\n**Bei Frau M.:** Sie ist **wach und kann selbst entscheiden**. Du musst sie fragen!\n\n**Werdenfelser Weg (2022):** Es gibt **Alternativen**, bevor man fixiert. Z.B.:\n\n• Niedriges Bett\n\n• Sensor-Matte am Boden (klingelt wenn jemand aufsteht)\n\n• Klingelband am Arm",
+        faustregel:
+          "Beide Bettgitter hoch + nicht-zustimmungsfähig + ohne richterliche Genehmigung = strafbare Freiheitsberaubung. Bei orientierten Patienten: fragen, dokumentieren, Selbstbestimmung respektieren.",
+        faustregelB1:
+          "Beide Bettgitter hoch + Patient kann nicht zustimmen + keine Erlaubnis vom Richter = STRAFBAR. Bei wachen Patienten immer fragen!",
+        spektrum: [
+          {
+            patientName: "Herr Bauer (Demenz)",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "FEM-Genehmigung über Tochter Ingrid",
+            kurzbeschreibung:
+              "Bei fortgeschrittener Demenz ist Patient nicht zustimmungsfähig — FEM braucht Genehmigung über gesetzlichen Betreuer (Tochter Ingrid). Werdenfelser Weg: Niedrigbett + Sensormatte vor jedem Gitter.",
+          },
+          {
+            patientName: "Frau Yilmaz (Hüft-TEP)",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Bettgitter post-OP klar nicht-FEM",
+            kurzbeschreibung:
+              "Bei ihr sind Bettgitter post-OP-Tag-1 unkritisch: orientiert, lehnt nicht ab, kann selbst zustimmen. Plus: nach 90°-Lagerungsregel ohnehin reduzierte Mobilität — Gitter dienen primär dem Selbstschutz.",
+          },
+          {
+            patientName: "Lukas (Säugling, Verbrühung)",
+            situationsId: "ls-lukas-verbruehung",
+            hauptfaktor: "Sicherheits-Gitter ist Pflicht, keine FEM",
+            kurzbeschreibung:
+              "Bei Säuglingen/Kleinkindern sind Bett-Gitter Sicherheits-Standard, keine FEM — Eltern oder Sorgeberechtigte stimmen routinemäßig zu (Aufnahmegespräch).",
+          },
+        ],
+        sonstBox:
+          "Was wir hier nicht behandeln: **Pharmakologische Fixierung** (Sedativa zur Ruhigstellung) — auch FEM, gleiche Regeln. **Mechanische Fixierung** (Gurte) — nur Notfall + sofortige Genehmigung. **Bauchgurt im Rollstuhl** — wenn fest, FEM. Mehr in CE-09 (Psychiatrie) + Praxis-Schulungen Werdenfelser Weg.",
+        sonstBoxB1:
+          "Andere Fixierungs-Themen die wir nicht im Detail behandeln: **Beruhigungsmittel zur Ruhigstellung** (auch Fixierung!), **Gurte zum Festbinden**, **Bauchgurt im Rollstuhl**. Mehr in CE-09 (Psychiatrie).",
+        karteikarte: {
+          vorderseite:
+            "Frau M. (orientiert, 82) ist heute Nacht gestürzt. Du überlegst: Beide Bettgitter hoch? Was sagt § 1831 BGB?",
+          rueckseite:
+            "Bettgitter wird zu FEM, wenn Patient daran gehindert wird, das Bett zu verlassen (BGH 2019).\n\nFolgen:\n• Zustimmungsfähig → Patient fragen + dokumentieren = legal\n• Nicht zustimmungsfähig → § 1831 BGB Genehmigung Richter\n• Notfall → § 34 StGB, sofort melden + nachgenehmigen\n\nKeine FEM:\n• Einseitig + Patient kommt raus\n• Halbe Bettgitter\n• Patient will es selbst\n\nBei Frau M.: orientiert → fragen, Selbstbestimmung. Werdenfelser Weg: Niedrigbett + Sensormatte vor Bettgitter.\n\nFaustregel: Beide hoch + nicht zustimmungsfähig + ohne Richter = strafbare Freiheitsberaubung.",
+        },
+      },
+    },
+
     // Step 3.3 — Branching (Mini, 3 Pfade): Fixierung-nein
     {
       stepId: "ce02-frau-m-plan-03-fixierung-nein",
@@ -178,6 +337,86 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
         // FIX (walkthrough B-14): Markdown-Underscores entfernt.
         body: "Frau M. sitzt im Bett. Sie faltet die Hände. Sie sagt leise:\n\n> \"Ich habe Angst. Nicht vor Ihnen. Ich habe Angst, wieder aufzustehen. Wenn ich noch einmal falle — was ist dann mit meiner Wohnung?\"\n\nDas ist **Post-Fall-Angst** — der Anfang eines Teufelskreises: Angst → weniger Bewegung → schwächere Muskeln → schlechteres Gleichgewicht → neues Sturzrisiko. Deine Aufgabe: **Angst ernst nehmen**. Nicht sagen: 'Das wird schon.' Und: Perspektive geben. Sage: 'Der Grund ist kein Alter — es war die Tablette. Die kann man ändern.' Merke: Bewegung ist die Therapie. Aber: langsam, mit Erfolgen, sicher.",
         glossarBegriffe: ["Post-Fall-Syndrom"],
+      },
+    },
+
+    // Step 3.4b — Inline-Wissen \"SBAR — strukturierter Arzt-Anruf"
+    // PILOT (Inline-Wissen v1, Phase 3): Vor dem interprofessionellen Team-Step gibt es
+    // den Anruf an den Nachtarzt — SBAR ist die Standard-Übergabe-Struktur.
+    {
+      stepId: "ce02-frau-m-plan-04b-sbar-arzt-anruf",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 3,
+      kompetenzbereich: "V.1",
+      quellen: [
+        "Aktionsbündnis Patientensicherheit — SBAR-Empfehlung 2014",
+        "WHO 2009 Patient Safety Curriculum",
+        "DIVI 2020 Übergabe-Standard",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-plan-sbar",
+      tag: "pflege",
+      themaPrimaer: "pflegedokumentation",
+      themenSekundaer: ["sturz-prophylaxe"],
+      contentC1: {
+        title: "SBAR — wie du strukturiert beim Nachtarzt anrufst",
+        body: "",
+        glossarBegriffe: ["SBAR", "Übergabe"],
+      },
+      contentB1: {
+        title: "SBAR — Anruf beim Arzt",
+        body: "",
+        glossarBegriffe: ["SBAR"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegedokumentation-sbar",
+        storyAufhaenger:
+          "Du wirst gleich den Nachtarzt anrufen — Bedarfsanalgesie + Sturzmeldung. **Wenn du unstrukturiert anrufst, fragt er 5x zurück und du verlierst Glaubwürdigkeit.** SBAR macht dich in 30 Sekunden präzise.",
+        storyAufhaengerB1:
+          "Du rufst gleich den Arzt an. **Wenn du wirr erzählst, fragt er viel zurück.** Mit SBAR brauchst du nur 30 Sekunden — und der Arzt versteht alles.",
+        kerntext:
+          "**SBAR = Situation, Background, Assessment, Recommendation** — entwickelt von der US-Navy, in der Pflege seit ~2005 Standard, in Deutschland Kern der DIVI-Übergabe-Empfehlung.\n\n**S — Situation (10 Sek):**\n\n• Wer ruft an, von wo, welcher Patient, was ist akut.\n\n• Bei Frau M.: \"Hier Schwester X, Station 3B, Zimmer 14. Frau M., 82, ist um 02:48 Uhr aus dem Bett gestürzt.\"\n\n**B — Background (15 Sek):**\n\n• Aufnahmegrund + relevante Vorgeschichte + Medikation.\n\n• Bei Frau M.: \"Stationäre Aufnahme Dienstag, Pneumonie Tag 3 Antibiose. Vorerkrankungen: Parkinson II, Osteoporose, Katarakt. Seit 2 Tagen neu: Zolpidem 10 mg.\"\n\n**A — Assessment (15 Sek):**\n\n• Vitalwerte + aktueller Befund + deine Einschätzung.\n\n• Bei Frau M.: \"RR 142/88, HF 76, SpO2 95 %, Temp 36,8. Wach, orientiert, NRS 4 in der linken Hüfte. Keine Verkürzung, keine Außenrotation. ABCDE unauffällig. Verdacht: Hüftprellung, Parkinson + Zolpidem als Sturz-Auslöser.\"\n\n**R — Recommendation (10 Sek):**\n\n• Konkreter Vorschlag, was du brauchst.\n\n• Bei Frau M.: \"Ich brauche Bedarfsanalgesie nach AVO und eine ärztliche Sturzbeurteilung morgen früh. Frage: Können wir Zolpidem heute pausieren?\"\n\n**Tipps für sicheren SBAR-Anruf:**\n\n• Notiere die 4 Punkte vorher auf einem Zettel — auch erfahrene Pflegekräfte tun das.\n\n• **Frag nach Repeat-Back:** \"Ich notiere die AVO — können Sie sie nochmal sagen?\" Verhindert Missverständnisse.\n\n• **Dokumentiere AVO sofort** mit Zeitstempel + ärztl. Namen.",
+        kerntextB1:
+          "**SBAR = Situation, Background, Assessment, Recommendation** — eine Struktur für Übergaben.\n\n**S — Situation (10 Sek):**\n\n• Wer du bist, wo du bist, welcher Patient, was passiert ist.\n\n• Bei Frau M.: \"Hier Schwester X, Station 3B, Zimmer 14. Frau M., 82, ist um 02:48 Uhr aus dem Bett gestürzt.\"\n\n**B — Background (15 Sek):**\n\n• Warum ist Patient hier, was ist die Vorgeschichte, was nimmt sie.\n\n• Bei Frau M.: \"Aufnahme Dienstag, Lungenentzündung Tag 3. Hat Parkinson, Osteoporose. Seit 2 Tagen Schlafmittel Zolpidem.\"\n\n**A — Assessment (15 Sek):**\n\n• Vitalwerte + aktuelle Beobachtung + deine Einschätzung.\n\n• Bei Frau M.: \"RR 142/88, Puls 76, SpO2 95 %. Wach, orientiert, Schmerz 4/10 in der linken Hüfte. Kein Bein-Bruch sichtbar. Vermutung: Prellung.\"\n\n**R — Recommendation (10 Sek):**\n\n• Was du brauchst.\n\n• Bei Frau M.: \"Ich brauche ein Schmerzmittel und morgen ärztliche Untersuchung. Frage: Können wir das Schlafmittel heute pausieren?\"\n\n**Tipps:**\n\n• **Notiere die 4 Punkte vorher** auf Zettel.\n\n• **Frag den Arzt nochmal:** \"Können Sie die Anordnung wiederholen?\"\n\n• **Schreibe sofort auf** mit Uhrzeit + Arztnamen.",
+        faustregel:
+          "SBAR in 50 Sekunden: 10s Situation + 15s Background + 15s Assessment + 10s Recommendation. Vorher aufschreiben, nachher Repeat-Back.",
+        faustregelB1:
+          "SBAR = 4 Schritte: WAS jetzt? WARUM hier? WIE geht's? WAS brauche ich? — In 50 Sekunden, vorher aufschreiben.",
+        spektrum: [
+          {
+            patientName: "Herr Petrov (Schlaganfall)",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "SBAR bei Aspiration auf Station",
+            kurzbeschreibung:
+              "Bei Aspirations-Ereignis schaut SBAR ähnlich aus, aber Recommendation ist anders: \"Ich brauche Schluckdiagnostik durch Logopäde + ärztliche Re-Evaluation IDDSI-Stufe.\"",
+          },
+          {
+            patientName: "Frau Kovac (ambulant)",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "SBAR auf Anrufbeantworter Hausarzt",
+            kurzbeschreibung:
+              "Im ambulanten Setting hinterlässt du SBAR oft als Sprachnachricht — Background-Teil wird länger (Patient ist beim Hausarzt nicht permanent präsent).",
+          },
+          {
+            patientName: "Frau Yilmaz (Hüft-TEP)",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "SBAR + Wunddokumentation post-OP",
+            kurzbeschreibung:
+              "Post-OP-Schichtübergabe nutzt SBAR + zusätzliches Wund-Foto-Dokument (mit Einwilligung). Background-Teil enthält OP-Berichts-Kerndaten.",
+          },
+        ],
+        sonstBox:
+          "Andere Übergabe-Strukturen die du kennen solltest: **ISBAR** (mit Identifikation am Anfang), **PACE** (Pflege-Übergabe in der Patientenversorgung), **ABCDE-SBAR** (kombiniert mit Notfall-Schema). SBAR ist das verbreitetste — andere Varianten je nach Klinik.",
+        sonstBoxB1:
+          "Andere Übergabe-Schemata: **ISBAR** (mit Vorstellung), **PACE**, **ABCDE-SBAR**. SBAR ist am häufigsten — manche Kliniken nutzen andere.",
+        karteikarte: {
+          vorderseite:
+            "Es ist 03:15 Uhr. Du musst den Nachtarzt wegen Frau M. (Sturz, Hüftschmerz NRS 4) anrufen. Welche Struktur, welche Inhalte?",
+          rueckseite:
+            "SBAR (Situation/Background/Assessment/Recommendation):\n\nS (10s): \"Schwester X, Station 3B, Zimmer 14. Frau M., 82, ist um 02:48 gestürzt.\"\nB (15s): \"Aufnahme Dienstag, Pneumonie Tag 3, Parkinson II, Osteoporose, seit 2 Tagen Zolpidem.\"\nA (15s): \"RR 142/88, HF 76, SpO2 95%. Wach, orientiert, NRS 4 linke Hüfte. Keine Verkürzung/Außenrotation.\"\nR (10s): \"Bedarfsanalgesie nach AVO + ärztliche Sturzbeurteilung morgen. Frage: Zolpidem heute pausieren?\"\n\nFaustregel: 50 Sek total, vorher aufschreiben, nachher Repeat-Back. Sofortige Doku mit Zeitstempel + Arztname. (Aktionsbündnis Patientensicherheit 2014, DIVI 2020)",
+        },
       },
     },
 

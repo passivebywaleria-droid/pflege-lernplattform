@@ -53,7 +53,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       },
     },
 
-    // Step 1.1b — Inline-Wissen "Was ist ein Sturz?"
+    // Step 1.1b — Inline-Wissen \"Was ist ein Sturz?"
     // PILOT (Inline-Wissen v1, 2026-04-26): Themen-Baustein als 60-Sek-Lese-Karte.
     // Der Schüler hat in Step 1.1 SBAR-Übergabe gehört: "Frau M. ist gestürzt." Bevor er
     // die Selbsteinschätzung gibt, klärt dieser Baustein die Kern-Definition — und macht
@@ -132,7 +132,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
 
     // Step 1.2 — Selbsteinschätzung VOR Betreten (crowdPoll mit Seed-Daten)
     // FIX (Pilot 2026-04-28): Smiley-selfrating war didaktisch zu wenig — User wollte
-    // konkrete Pill-Buttons mit Crowd-Vergleich ("65 andere Schüler haben gewählt...").
+    // konkrete Pill-Buttons mit Crowd-Vergleich (\"65 andere Schüler haben gewählt...").
     // crowdPoll nutzt Seed-Daten bis echte Schüler-Daten in der DB sind.
     {
       stepId: "ce02-frau-m-info-02-vor-betreten",
@@ -275,7 +275,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       },
     },
 
-    // Step 1.3b — Inline-Wissen "Sturz-Risikofaktoren — Anker + Spektrum"
+    // Step 1.3b — Inline-Wissen \"Sturz-Risikofaktoren — Anker + Spektrum"
     // PILOT (Inline-Wissen v2, 2026-04-26): Themen-Baustein zu Risikofaktoren.
     // Schüler hat in Step 1.3 die Erst-Priorität verstanden (Licht + Bewusstsein + Begrüßen).
     // Bevor er den Dialog mit Frau M. führt, soll er wissen: Welche Risikofaktoren bringt
@@ -593,10 +593,10 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       },
     },
 
-    // Step 1.5b — Inline-Wissen "NRS-Schmerzskala"
+    // Step 1.5b — Inline-Wissen \"NRS-Schmerzskala"
     // PILOT (Inline-Wissen v3, 2026-04-26): Letzter Step in Phase 1 — Vorbereitung für
     // Phase 2 (Beobachten), wo der Schüler Frau M. konkret nach Schmerzen fragen muss.
-    // Frau M. bagatellisiert Schmerz ("ist etwas unangenehm" bei NRS 8). Der Schüler braucht
+    // Frau M. bagatellisiert Schmerz (\"ist etwas unangenehm" bei NRS 8). Der Schüler braucht
     // die NRS-Mechanik bevor er fragt.
     {
       stepId: "ce02-frau-m-info-05b-nrs-schmerzskala",
@@ -631,9 +631,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
         storyAufhaengerB1:
           "Du gehst gleich zu Frau M. Sie hat Schmerzen in der Hüfte. Aber sie wird sagen: \"Es ist etwas unangenehm.\" Wie misst du den echten Schmerz?",
         kerntext:
-          "Die **NRS (Numeric Rating Scale)** ist der Goldstandard im Schmerzassessment für orientierte Erwachsene (DNQP 2020).\n\n**Du fragst genau so:**\n\n„Auf einer Skala von 0 bis 10 — 0 ist gar kein Schmerz, 10 ist der stärkste vorstellbare Schmerz — wie stark ist Ihr Schmerz gerade?\"\n\n**Schwellenwerte (Pflicht-Wissen):**\n\n• **NRS 0–3** = leicht — Beobachtung, ggf. nicht-medikamentös (Lagerung, Eis, Wärme).\n\n• **NRS 4–6** = mäßig — **interventionspflichtig**: Bedarfsanalgesie ansprechen, dokumentieren.\n\n• **NRS 7–10** = stark — **sofort handeln**, Arzt informieren, SBAR.\n\n**Wichtig — kein Bagatellisieren.**\n\nEine NRS von 5 ist NICHT „ein bisschen\". Sie ist mäßiger Schmerz, dokumentations- und interventionspflichtig.\n\n**Bei Frau M.:** Du erwartest einen Wert um 7-8 (Hüftschmerz nach Sturz) — sie wird ihn aber als „etwas unangenehm\" verschleiern. Frag konkret nach der Zahl, nicht nach dem Adjektiv.\n\n**Re-Assessment:** Nach jeder Intervention (Lagerung, Analgetikum) erneut messen — typisch nach **30 Min bei oraler**, nach **15 Min bei i.v.-Gabe**.",
+          "Die **NRS (Numeric Rating Scale)** ist der Goldstandard im Schmerzassessment für orientierte Erwachsene (DNQP 2020).\n\n**Du fragst genau so:**\n\n\"Auf einer Skala von 0 bis 10 — 0 ist gar kein Schmerz, 10 ist der stärkste vorstellbare Schmerz — wie stark ist Ihr Schmerz gerade?\"\n\n**Schwellenwerte (Pflicht-Wissen):**\n\n• **NRS 0–3** = leicht — Beobachtung, ggf. nicht-medikamentös (Lagerung, Eis, Wärme).\n\n• **NRS 4–6** = mäßig — **interventionspflichtig**: Bedarfsanalgesie ansprechen, dokumentieren.\n\n• **NRS 7–10** = stark — **sofort handeln**, Arzt informieren, SBAR.\n\n**Wichtig — kein Bagatellisieren.**\n\nEine NRS von 5 ist NICHT \"ein bisschen\". Sie ist mäßiger Schmerz, dokumentations- und interventionspflichtig.\n\n**Bei Frau M.:** Du erwartest einen Wert um 7-8 (Hüftschmerz nach Sturz) — sie wird ihn aber als \"etwas unangenehm\" verschleiern. Frag konkret nach der Zahl, nicht nach dem Adjektiv.\n\n**Re-Assessment:** Nach jeder Intervention (Lagerung, Analgetikum) erneut messen — typisch nach **30 Min bei oraler**, nach **15 Min bei i.v.-Gabe**.",
         kerntextB1:
-          "Die **NRS (Numeric Rating Scale)** ist die wichtigste Schmerz-Skala bei wachen Erwachsenen (DNQP 2020).\n\n**Du fragst genau so:**\n\n„Auf einer Skala von 0 bis 10 — 0 ist kein Schmerz, 10 ist der stärkste — wie stark ist Ihr Schmerz?\"\n\n**Was die Zahlen bedeuten:**\n\n• **0–3** = leicht — beobachten, evtl. Lagerung oder Wärme.\n\n• **4–6** = mäßig — **du musst handeln**: Bedarfsmedikament ansprechen, dokumentieren.\n\n• **7–10** = stark — **sofort handeln**, Arzt rufen.\n\n**Wichtig:**\n\nNRS 5 ist NICHT „ein bisschen\". Es ist mäßiger Schmerz und muss behandelt werden.\n\n**Bei Frau M.:** Sie wird vielleicht sagen „etwas unangenehm\" — aber sie hat wahrscheinlich NRS 7 oder 8. Frag immer nach der Zahl, nicht nach Worten.\n\n**Nach Behandlung:** Schmerz nochmal messen — nach **30 Min bei Tablette**, nach **15 Min bei Spritze**.",
+          "Die **NRS (Numeric Rating Scale)** ist die wichtigste Schmerz-Skala bei wachen Erwachsenen (DNQP 2020).\n\n**Du fragst genau so:**\n\n\"Auf einer Skala von 0 bis 10 — 0 ist kein Schmerz, 10 ist der stärkste — wie stark ist Ihr Schmerz?\"\n\n**Was die Zahlen bedeuten:**\n\n• **0–3** = leicht — beobachten, evtl. Lagerung oder Wärme.\n\n• **4–6** = mäßig — **du musst handeln**: Bedarfsmedikament ansprechen, dokumentieren.\n\n• **7–10** = stark — **sofort handeln**, Arzt rufen.\n\n**Wichtig:**\n\nNRS 5 ist NICHT \"ein bisschen\". Es ist mäßiger Schmerz und muss behandelt werden.\n\n**Bei Frau M.:** Sie wird vielleicht sagen \"etwas unangenehm\" — aber sie hat wahrscheinlich NRS 7 oder 8. Frag immer nach der Zahl, nicht nach Worten.\n\n**Nach Behandlung:** Schmerz nochmal messen — nach **30 Min bei Tablette**, nach **15 Min bei Spritze**.",
         faustregel:
           "NRS ≥ 4 ist nicht 'wenig'. Es ist mäßiger Schmerz — IMMER dokumentations- und interventionspflichtig.",
         faustregelB1:

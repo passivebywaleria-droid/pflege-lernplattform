@@ -14,6 +14,87 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
   kontextB1:
     "03:14 Uhr. Frau Keller ist da. Sie steht neben dir. Sie sagt leise: 'Ok. Was hast du?' Du erklärst deinen Plan. Sie nickt. Sie sagt: 'Gut. Mach.' Du führst jetzt — gemeinsam mit Frau Keller. Frau M. liegt noch auf dem Boden. Sie zittert ein bisschen. Der Boden ist kalt. Ihre Füße sind weiß. Ihr bringt sie hoch. Nicht heben. Frau M. macht die Bewegung selbst — ihr begleitet und sichert. Über die Seite, auf die Knie, ins Bett. Das nennt man Kinästhetik. Du hast es geübt. Aber heute ist es echt. Dein Herz schlägt schnell. Du hockst dich neben Frau M. Du sagst leise: 'Frau M., wir gehen jetzt gemeinsam hoch. Sie machen die Bewegung, ich begleite. Sie sagen das Tempo. Ja?' Sie nickt. Frau Keller ist auf der anderen Seite. Sie stützt die linke Seite und das Becken. Drei, zwei, eins. Es geht. Langsam. Frau M. stöhnt einmal kurz. Du fragst nach den Schmerzen. 5 von 10. Das ist nicht wenig — du wirst das dem Arzt sagen und nach Schmerzmedikation fragen. Im Bett: zudecken, Kopf hoch, Rufknopf in ihre Hand. Aber das ist erst Schritt eins. Jetzt rufst du den Arzt an. Du benutzt SBAR. Du hast die Sätze im Kopf. Danach: Schellong-Test. Du misst Blutdruck im Liegen. Dann setzt sich Frau M. an den Bettrand. Sie wartet mindestens eine Minute. Du misst wieder. Erst dann: Aufstehen. Und dann: Frau M. nimmt deine Hand. Sie schaut dich an. Sie fragt: 'Sind Sie böse auf mich?' Du hältst inne. Was sagst du? Später um 04:30 redest du mit ihr über den Hüftprotektor. Sie kennt das Wort nicht. Wie bringst du es ein? Die nächsten 90 Minuten sind keine Routine. Du musst fachlich richtig sein und gleichzeitig menschlich da sein. Beides — gleichzeitig.",
   kernSteps: [
+    // Step 4.0b — Inline-Wissen \"Kinästhetik nach Hatch/Maietta — Transfer Boden → Bett"
+    // PILOT (Inline-Wissen v1, Phase 4): Vor dem Sorting-Step zum Transfer wird
+    // Kinästhetik-Prinzip geklärt — Anti-Pattern \"ich hebe Sie hoch" muss bewusst werden.
+    {
+      stepId: "ce02-frau-m-dur-00b-kinaesthetik-transfer",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.2",
+      quellen: [
+        "Hatch F./Maietta L. (1996) — Kinästhetik in der Pflege",
+        "DGUV 207-018 (2022) — Patiententransfer",
+        "DNQP Mobilität 2014/2024",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-dur-kinaesthetik",
+      tag: "pflege",
+      themaPrimaer: "kinaesthetik",
+      themenSekundaer: ["mobilisation", "sturz-prophylaxe"],
+      contentC1: {
+        title: "Kinästhetik — bevor du Frau M. hochbringst",
+        body: "",
+        glossarBegriffe: ["Kinästhetik", "Hatch/Maietta", "Patiententransfer"],
+      },
+      contentB1: {
+        title: "Kinästhetik — was ist das?",
+        body: "",
+        glossarBegriffe: ["Kinästhetik"],
+      },
+      inlineWissen: {
+        bausteinRef: "kinaesthetik-transfer-boden",
+        storyAufhaenger:
+          "Frau M. liegt auf dem Boden, will hoch ins Bett. Du gehst gleich an den Transfer. Aber: **Du hebst sie nicht hoch.** Das ist Anti-Pattern. Hatch & Maietta haben Pflege-Kinästhetik aus japanischer Bewegungslehre + Tanztheorie entwickelt — Patient bewegt sich selbst, du begleitest.",
+
+        storyAufhaengerB1:
+          "Frau M. liegt auf dem Boden. Du musst sie ins Bett bringen. Aber: **Du hebst sie NICHT hoch.** Das ist falsch. Bei Kinästhetik bewegt sich Frau M. selbst, du begleitest sie nur.",
+        kerntext:
+          "**Kinästhetik nach Hatch & Maietta (1996)** ist ein Konzept zur Pflege-Bewegung. Kerngedanke: **Du nimmst dem Patienten nicht die Bewegung weg — du gibst sie ihm.**\n\n**Die 6 Konzepte (Stichworte):**\n\n• **Interaktion** — Bewegung als Kommunikation\n\n• **Funktionale Anatomie** — Knochen tragen, Muskeln bewegen\n\n• **Menschliche Bewegung** — Spirale + Parallelbewegung\n\n• **Anstrengung** — Zug + Druck als Werkzeug\n\n• **Menschliche Funktion** — einfache Aktivitäten unterstützen\n\n• **Umgebung** — Raum nutzen statt überwinden\n\n**Praktisch beim Transfer Boden → Bett (Frau M.):**\n\n• **Schritt 1:** Frau M. dreht sich auf die nicht-schmerzhafte Seite (rechts).\n\n• **Schritt 2:** Sie zieht ihre Knie an, setzt sich auf den Boden.\n\n• **Schritt 3:** Mit einer Hand am Bett stützt sie sich, du begleitest am Becken (NICHT unter den Achseln).\n\n• **Schritt 4:** Sie kommt auf die Knie, drückt sich am Bett hoch.\n\n• **Schritt 5:** Sie setzt sich auf die Bettkante, dann ins Bett.\n\n**Anti-Patterns (verboten):**\n\n• ❌ \"Ich hebe Sie hoch\" — Pflege-Rücken + Patient passiv\n\n• ❌ Greifen unter den Achseln — Schultergelenk-Risiko\n\n• ❌ \"Ich ziehe Sie am Arm\" — Subluxation möglich\n\n• ❌ \"Schnell, einmal hoch\" — kein Tempo des Patienten\n\n**Pflege-Aufgabe:**\n\nDu **begleitest** mit Hand am Becken/Rumpf, **sicherst** vor Sturz, **sprichst** das Tempo mit Frau M. ab. **Sie führt** die Bewegung — du machst sie sicher.",
+        kerntextB1:
+          "**Kinästhetik nach Hatch & Maietta (1996)** ist eine Methode für Pflege-Bewegung. Hauptidee: **Du machst die Bewegung NICHT für den Patienten — du machst sie MIT ihm.**\n\n**6 Grundprinzipien (kurz):**\n\n• **Interaktion** — Bewegung ist auch Kommunikation\n\n• **Anatomie** — Knochen tragen das Gewicht, Muskeln bewegen\n\n• **Bewegungs-Muster** — Drehen + paralleles Schieben\n\n• **Kraft** — Ziehen + Drücken statt Heben\n\n• **Aktivität** — einfache Sachen unterstützen\n\n• **Raum** — den Raum nutzen\n\n**Bei Frau M. — Transfer vom Boden ins Bett:**\n\n• **Schritt 1:** Frau M. dreht sich auf die rechte Seite (= keine Schmerzen).\n\n• **Schritt 2:** Sie zieht die Knie an, setzt sich auf den Boden.\n\n• **Schritt 3:** Mit einer Hand am Bett stützt sie sich. Du legst eine Hand am **Becken** (NICHT unter die Achseln!).\n\n• **Schritt 4:** Sie geht auf die Knie. Sie drückt sich am Bett hoch.\n\n• **Schritt 5:** Sie setzt sich auf die Bettkante. Dann ins Bett.\n\n**FALSCH (verboten):**\n\n• ❌ \"Ich hebe Sie hoch\" — schlecht für deinen Rücken + Frau M. macht nichts\n\n• ❌ Du greifst unter die Achseln — Risiko für Schulter\n\n• ❌ Du ziehst am Arm — Schulter kann auskugeln\n\n• ❌ \"Schnell, einmal hoch\" — Frau M. braucht ihr Tempo\n\n**Deine Aufgabe:**\n\nDu **begleitest** mit Hand am Becken, **sicherst**, **fragst** Frau M. nach dem Tempo. **Sie macht die Bewegung — du machst sie sicher.**",
+        faustregel:
+          "Patient bewegt sich selbst. Pflege begleitet + sichert. Hand am Becken, NICHT unter Achseln. Tempo entscheidet der Patient.",
+        faustregelB1:
+          "Patient bewegt sich selbst. Du begleitest. Hand am Becken — NICHT unter den Achseln. Patient gibt das Tempo vor.",
+        spektrum: [
+          {
+            patientName: "Frau Yilmaz (Hüft-TEP)",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Kinästhetik post-OP mit Lagerungsregeln",
+            kurzbeschreibung:
+              "Bei ihr: Kinästhetik unter Beachtung der Hüft-TEP-Verbote (max. 90° Flexion, keine Adduktion über Mittellinie, keine Innenrotation). Das schränkt Bewegungs-Ablauf ein — du brauchst Plan vorher.",
+          },
+          {
+            patientName: "Herr Petrov (Schlaganfall)",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Kinästhetik + Bobath-Prinzipien",
+            kurzbeschreibung:
+              "Bei Hemiparese rechts wird Kinästhetik mit Bobath kombiniert: betroffene Seite einbeziehen (statt vergessen), Schulter sichern, Patient aktiviert die nicht-betroffene Seite — Pflege begleitet symmetrisch.",
+          },
+          {
+            patientName: "Frau Schmidt (Adipositas, BMI 38)",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Kinästhetik mit bariatrischem Equipment",
+            kurzbeschreibung:
+              "Bei BMI > 35 reicht eine Pflegekraft nicht — 2-3 Helfer + Schwerlast-Bett (Standard 135-185 kg) + ggf. Lifter. Kinästhetik-Prinzip bleibt: Patientin macht aktiv mit, aber Helferzahl steigt.",
+          },
+        ],
+        sonstBox:
+          "Andere Bewegungs-Konzepte die du kennen solltest: **Bobath** (Schlaganfall, neurologisch), **Pneumatische Hilfsmittel** (Hover-Matte für Querverlagerung), **Stehlifter** (sit-to-stand-Hilfe). Kinästhetik ist die Grundphilosophie — die anderen sind Technik-Erweiterungen.",
+        sonstBoxB1:
+          "Andere Methoden: **Bobath** (für Schlaganfall), **Hover-Matte** (Luftkissen zum Verschieben), **Stehlifter** (hilft beim Aufstehen). Kinästhetik ist die Grund-Idee — die anderen sind Technik.",
+        karteikarte: {
+          vorderseite:
+            "Frau M. (82) liegt auf dem Boden, will ins Bett. Du wirst sie begleiten — wie nach Kinästhetik?",
+          rueckseite:
+            "Kinästhetik nach Hatch/Maietta (1996): **Patient bewegt sich selbst, Pflege begleitet.**\n\n5 Schritte Boden → Bett:\n1. Drehung auf nicht-schmerzhafte Seite\n2. Knie anziehen, Sitz auf Boden\n3. Mit Hand am Bett abstützen (Pflege begleitet am Becken)\n4. Auf die Knie, am Bett hochdrücken\n5. Auf Bettkante, ins Bett\n\nAnti-Patterns:\n• Heben hoch (Pflege-Rücken, Patient passiv)\n• Unter den Achseln (Schulter-Risiko)\n• Am Arm ziehen (Subluxation)\n• Schnelles Tempo erzwingen\n\nFaustregel: Patient bewegt selbst, Pflege begleitet + sichert + fragt das Tempo. Hand am Becken, nicht unter Achseln.",
+        },
+      },
+    },
+
     // Step 4.1 — Sorting: Transfer vom Boden
     {
       stepId: "ce02-frau-m-dur-01-transfer-vom-boden",

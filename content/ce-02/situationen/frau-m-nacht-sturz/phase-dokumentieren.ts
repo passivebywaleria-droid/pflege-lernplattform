@@ -14,6 +14,87 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DOKUMENTIEREN: SituationsPhase = {
   kontextB1:
     "07:08 Uhr. Du bist im Schwesternzimmer. Die Tür ist zu. Der Lärm vom Flur ist leise. Die Schreibtischlampe brennt. Auf dem Bildschirm ist das Sturzprotokoll. Der Cursor blinkt. Auf dem Tisch: kalter Kaffee. Es riecht nach Drucker und Keksen. Vor dir liegt deine Mappe mit Notizen: Zeiten, Vitalzeichen, Schmerzen, Anruf beim Arzt, Hüftprotektor-Gespräch. Du hast 25 Minuten Zeit. Dann ist Übergabe. Die Tagesschicht liest das. Vielleicht der Arzt. Vielleicht der Sozialdienst. Was du jetzt schreibst, ist wichtig. Es ist ein Beweis — und Lerngrundlage. Du atmest aus. Dein Rücken tut weh. Du sitzt seit der Übergabe um 06:30. Du denkst an die Schule. Frau Schnell hat gesagt: 'Schreib, was war. Nicht, was du gedacht hast.' Nicht 'verwirrt' — sondern 'orientiert zu Person, nicht zu Zeit'. Nicht 'sie wollte stören' — sondern 'Patientin sagte: Ich wollte niemanden stören.' Du gehst die 9 Punkte im Kopf durch: 1. Datum + Uhrzeit. 2. Ort. 3. Hergang. 4. Bewusstsein. 5. Vitalzeichen. 6. Verletzungen. 7. Maßnahmen. 8. Wer wurde informiert. 9. Warum ist sie gestürzt. Du hörst Frau M. noch in deinem Kopf atmen. Aber jetzt zählen Fakten. Du klickst ins Feld. Der erste Satz ist wichtig: Datum, Uhrzeit, Ort, Name. Sachlich. Vollständig. Deine Kollegin liest das in 12 Stunden. Sie war nicht dabei. Sie muss in 30 Sekunden verstehen, was war — und was jetzt zu tun ist.",
   kernSteps: [
+    // Step 6.0b — Inline-Wissen "Sturzprotokoll vs. Pflegebericht"
+    // PILOT (Inline-Wissen v1, Phase 6): Vor dem Sturzprotokoll-Freetext klärt sich
+    // die Differenz zwischen formalem Sturzprotokoll (QM-Doku) und chronologischem
+    // Pflegebericht.
+    {
+      stepId: "ce02-frau-m-dok-00b-protokoll-vs-bericht",
+      phase: 6,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP Sturzprophylaxe 2022 — Kriterium 5 (Dokumentation bei Sturz)",
+        "§ 630f BGB (Pflegedokumentationspflicht)",
+        "MDK Qualitätsprüfungsrichtlinien 2024",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-dok-protokoll-grundwissen",
+      tag: "pflege",
+      themaPrimaer: "pflegedokumentation",
+      themenSekundaer: ["sturz-prophylaxe"],
+      contentC1: {
+        title: "Sturzprotokoll vs. Pflegebericht — was kommt wo rein?",
+        body: "",
+        glossarBegriffe: ["Sturzprotokoll", "Pflegebericht", "QM"],
+      },
+      contentB1: {
+        title: "Wo schreibst du was?",
+        body: "",
+        glossarBegriffe: ["Sturzprotokoll", "Pflegebericht"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegedokumentation-sturzprotokoll",
+        storyAufhaenger:
+          "Du hast 25 Minuten. Auf dem Bildschirm ist das **Sturzprotokoll**. Aber der Pflegebericht steht auch noch aus. Ist das doppelte Arbeit? Nein — beide haben unterschiedliche Aufgaben.",
+        storyAufhaengerB1:
+          "Du hast 25 Minuten. Du musst das **Sturzprotokoll** schreiben. Und den **Pflegebericht**. Ist das doppelt? Nein — beide sind anders.",
+        kerntext:
+          "**Sturzprotokoll** und **Pflegebericht** sind getrennte Dokumente mit getrennten Aufgaben.\n\n**Sturzprotokoll** (formaler Erfassungsbogen):\n\n• **Zweck:** Qualitätssicherung, MDK-Prüfung, Sturz-Statistik der Einrichtung\n\n• **Format:** Strukturiertes Formular, Pflicht-Felder ankreuzbar\n\n• **9 Pflicht-Inhalte** (DNQP 2022 + MDK):\n  - Datum + Uhrzeit\n  - Ort (Zimmer-Nr., genauer Sturz-Ort)\n  - Hergang (kurz, sachlich)\n  - Bewusstsein bei Auffinden (wach, somnolent, bewusstlos)\n  - Vitalzeichen direkt nach Sturz\n  - Verletzungen (sichtbar, nicht-sichtbar = ärztl. abgeklärt)\n  - Sofort-Maßnahmen\n  - Information an wen (Arzt, Angehörige, Schichtleitung)\n  - Vermutete Ursache(n)\n\n**Pflegebericht** (chronologisch):\n\n• **Zweck:** Schichtübergabe, Verlaufsbeschreibung, juristisches Beweismittel (§ 630f BGB)\n\n• **Format:** Fließtext, chronologisch, mit Zeitstempel pro Eintrag\n\n• **Kerninhalt:** Was hast du beobachtet, getan, gesagt, gehört. Plus: Patient-Reaktion + Ergebnis.\n\n• **Stil:** SACHLICH, FAKTISCH — nicht: \\\"verwirrt\\\", sondern: \\\"orientiert zu Person, nicht zu Zeit\\\". Nicht: \\\"wollte stören\\\", sondern: \\\"Patientin sagte: Ich wollte niemanden stören.\\\"\n\n**Bei Frau M. heute Nacht:**\n\n• **Sturzprotokoll** = Pflicht (DNQP K5, MDK relevant)\n\n• **Pflegebericht** = chronologische Schicht-Übersicht (alles was du gemacht hast 02:48 - 06:30)\n\n• **SBAR-Übergabe** an die Frühschicht zusätzlich (mündlich + ggf. schriftlich)\n\n**Wichtige Faustregel:** Was nicht dokumentiert ist, ist juristisch nicht passiert (§ 630f BGB). Sturzprotokoll vergessen = MDK-Defizit + ggf. Haftungsfall.",
+        kerntextB1:
+          "**Sturzprotokoll** und **Pflegebericht** sind zwei verschiedene Dokumente.\n\n**Sturzprotokoll** (festes Formular):\n\n• **Wozu:** Qualitätssicherung, MDK-Prüfung, Statistik\n\n• **Format:** Formular zum Ankreuzen + ausfüllen\n\n• **9 Pflicht-Punkte:**\n  - Datum + Uhrzeit\n  - Ort (Zimmer + genaue Stelle)\n  - Was passiert ist (kurz)\n  - Bewusstsein (wach? schläfrig? bewusstlos?)\n  - Vitalzeichen direkt nach dem Sturz\n  - Verletzungen\n  - Was du sofort gemacht hast\n  - Wen du informiert hast (Arzt, Angehörige)\n  - Vermutete Gründe\n\n**Pflegebericht** (Geschichte der Schicht):\n\n• **Wozu:** Schichtübergabe + Beweis vor Gericht (§ 630f BGB)\n\n• **Format:** Lange Geschichte mit Uhrzeiten\n\n• **Inhalt:** Was du gesehen, getan, gesagt hast. Plus: Wie hat Patient reagiert.\n\n• **Wichtig — Stil:** Schreibe nur **Fakten**, keine Wertungen.\n  - **Falsch:** \\\"verwirrt\\\"\n  - **Richtig:** \\\"orientiert zu Person, nicht zu Zeit\\\"\n  - **Falsch:** \\\"wollte stören\\\"\n  - **Richtig:** \\\"Patientin sagte: Ich wollte niemanden stören\\\"\n\n**Bei Frau M.:**\n\n• **Sturzprotokoll** = Pflicht (Standard sagt das)\n\n• **Pflegebericht** = die ganze Nachtschicht (02:48 - 06:30)\n\n• **SBAR-Übergabe** an die Frühschicht zusätzlich\n\n**Wichtig:** Was nicht aufgeschrieben ist, ist vor Gericht NICHT passiert (§ 630f BGB).",
+        faustregel:
+          "Sturzprotokoll = QM/MDK-Formular mit 9 Pflichtfeldern. Pflegebericht = chronologisch mit Zeitstempel + sachliche Fakten ohne Wertung. Was nicht dokumentiert ist, ist juristisch nicht passiert.",
+        faustregelB1:
+          "Sturzprotokoll = Formular, 9 Pflichtfelder. Pflegebericht = Geschichte mit Uhrzeit, nur Fakten. Was nicht aufgeschrieben ist, ist vor Gericht nicht passiert.",
+        spektrum: [
+          {
+            patientName: "Herr Bauer (Demenz)",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Sturzprotokoll bei nicht-kommunikationsfähigem Patient",
+            kurzbeschreibung:
+              "Bei fortgeschrittener Demenz: Hergang oft nicht durch Patient erzählbar — Befund-orientierte Dokumentation, Aussage der Tochter Ingrid (gesetzliche Betreuerin) als Zusatz.",
+          },
+          {
+            patientName: "Lukas (Verbrühung)",
+            situationsId: "ls-lukas-verbruehung",
+            hauptfaktor: "Sturzprotokoll im Pädiatrie-Setting",
+            kurzbeschreibung:
+              "Im Pädiatrie-Setting: zusätzlich Eltern-Beobachtung dokumentieren, ggf. Verdachts-Meldung bei Auffälligkeiten (§ 4 KKG, § 8a SGB VIII).",
+          },
+          {
+            patientName: "Frau Kovac (ambulant)",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "Sturz im häuslichen Setting",
+            kurzbeschreibung:
+              "Im ambulanten Setting: Sturzprotokoll der Pflegekasse + Hausarzt-Information per Fax/Sprachnachricht. Wohnungs-Begehung dokumentieren.",
+          },
+        ],
+        sonstBox:
+          "Andere relevante Dokumente bei Sturz: **Wundprotokoll** (wenn Verletzung), **Medikamentenanordnung-Ausdruck** (mit AVO-Nachweis), **Foto-Dokumentation** (mit Einwilligung, DSGVO Art. 9). Mehr in DNQP-Standard 2022 + MDK QPR 2024.",
+        sonstBoxB1:
+          "Andere wichtige Dokumente bei Sturz: **Wundprotokoll** (bei Verletzung), **Medikamenten-Ausdruck** (mit Arzt-Anordnung), **Foto** (mit Einverständnis). Mehr im DNQP-Standard 2022.",
+        karteikarte: {
+          vorderseite:
+            "Frau M. (Sturz heute Nacht, kein Bruch, NRS 8 → 2) — du dokumentierst. Wo steht was, und worauf achtest du beim Stil?",
+          rueckseite:
+            "**Sturzprotokoll** (QM-Formular, MDK-pflichtig):\n9 Pflichtfelder: Datum/Uhrzeit, Ort, Hergang, Bewusstsein, Vitalzeichen, Verletzungen, Sofortmaßnahmen, Info an wen, Vermutete Ursache.\n\n**Pflegebericht** (chronologisch):\nFließtext mit Zeitstempel, sachlich. Nur Fakten, keine Wertungen.\n• Falsch: \\\"verwirrt\\\"\n• Richtig: \\\"orientiert zu Person, nicht zu Zeit\\\"\n\nFaustregel: Was nicht dokumentiert ist, ist juristisch nicht passiert (§ 630f BGB). Beides ist Pflicht — nicht doppelt, sondern getrennte Aufgaben.",
+        },
+      },
+    },
+
     // Step 6.1 — Freetext LANG: Sturzprotokoll
     {
       stepId: "ce02-frau-m-dok-01-sturzprotokoll-frei",
