@@ -775,6 +775,13 @@ export interface ContentStep {
   // "Wusstest du?" Collapsible-Element
   wusstestDuDas?: string;
 
+  // Micro-Narration — erzählerischer Übergang zum NÄCHSTEN Step.
+  // Wird als 2-3 Sek Fade-Text zwischen Steps eingeblendet (kein Button,
+  // kein eigener Step). Hält den narrativen Faden zwischen didaktischen
+  // Aufgaben: "Du öffnest die Tür. Licht fällt ins Zimmer."
+  transition?: string;
+  transitionB1?: string;
+
   // Inline-Wissen — Themen-Baustein als Lese-Karte in Situations-Flow.
   // Wird gefüllt bei stepType === "inlineWissen". Der Renderer zeigt eine
   // visuell abgesetzte "Pflege-Wissen"-Karte (kein Quiz, kein Score).

@@ -45,6 +45,8 @@ export default function SituationLernenPage() {
   );
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [patientModalOpen, setPatientModalOpen] = useState(false);
+  // Micro-Narration: erzählerischer Übergang zwischen Steps
+  const [transitionText, setTransitionText] = useState<string | null>(null);
 
   useEffect(() => {
     setLoading(true);
@@ -69,7 +71,7 @@ export default function SituationLernenPage() {
     [completedPhases, currentPhaseId]
   );
 
-  const handleNextStep = useCallback(() => {
+  const advanceStep = useCallback(() => {
     if (currentStepIndex < phaseSteps.length - 1) {
       setCurrentStepIndex((prev) => prev + 1);
     } else {
@@ -83,6 +85,22 @@ export default function SituationLernenPage() {
       }
     }
   }, [currentStepIndex, phaseSteps.length, completedPhases, currentPhaseId]);
+
+  const handleNextStep = useCallback(() => {
+    // Micro-Narration: wenn Step ein transition-Feld hat, kurzen
+    // Erzähl-Übergang zeigen bevor der nächste Step kommt.
+    const step = phaseSteps[currentStepIndex];
+    const trans = step?.transition;
+    if (trans && trans.trim().length > 0) {
+      setTransitionText(trans);
+      setTimeout(() => {
+        setTransitionText(null);
+        advanceStep();
+      }, 2500);
+    } else {
+      advanceStep();
+    }
+  }, [currentStepIndex, phaseSteps, advanceStep]);
 
   if (loading) {
     return (
@@ -192,6 +210,26 @@ export default function SituationLernenPage() {
                 {t("zurueckZurUebersicht")}
               </Link>
             </motion.div>
+          ) : transitionText ? (
+            /* Micro-Narration — erzählerischer Übergang zwischen Steps.
+               Zentrierter italic-Text, Fade-In/Out, 2.5 Sek automatisch. */
+            <AnimatePresence mode="wait">
+              <motion.div
+                key="transition"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.6 }}
+                className="flex items-center justify-center py-20"
+              >
+                <p
+                  className="text-center text-base italic leading-relaxed max-w-xs"
+                  style={{ color: "var(--lern-text-secondary)" }}
+                >
+                  {transitionText}
+                </p>
+              </motion.div>
+            </AnimatePresence>
           ) : currentStep ? (
             <AnimatePresence mode="wait">
               <motion.div

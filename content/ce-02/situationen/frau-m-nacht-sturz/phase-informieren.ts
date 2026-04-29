@@ -27,6 +27,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       lernziel: "ce02-frau-m-info-uebergabe",
       tag: "pflege",
       displayFormat: "scenario",
+      transition: "Sturz. Das Wort hallt nach. Aber was genau ist ein Sturz eigentlich?",
       bildkategorie: "szene",
       imageAlt:
         "Krankenhausflur in der Nachtschicht, Pflegekraft flüstert, warmes gedämpftes Licht",
@@ -72,6 +73,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-info-sturz-definition",
       tag: "pflege",
+      transition: "Du weißt jetzt was ein Sturz ist. Aber wie sicher fühlst du dich damit?",
       contentC1: {
         title: "Was zählt eigentlich als Sturz?",
         body: "",
@@ -145,6 +147,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       modus: "checkpoint",
       lernziel: "ce02-frau-m-info-confidence-vorher",
       tag: "pflege",
+      transition: "Gut. Ehrlich mit dir selbst. Jetzt: was tust du als erstes, wenn du die Tür öffnest?",
       contentC1: {
         title: "Wie geht es dir gerade?",
         body: "Bevor du das Zimmer betrittst: Kurz Pause. Nachts, allein, gerade gestürzte Patientin — das ist herausfordernd. Wähle was am besten passt. Es gibt kein richtig oder falsch — danach siehst du, was andere Schüler*innen gewählt haben.",
@@ -225,6 +228,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       modus: "challenge",
       lernziel: "ce02-frau-m-info-prioritaet",
       tag: "pflege",
+      transition: "Licht an. Bewusstsein prüfen. Begrüßen. Richtig. Aber Frau M. hat mehr als einen Risikofaktor.",
       contentC1: {
         title: "Erste Priorität beim Betreten",
         body: "Du stehst vor der Zimmertür von Frau M. Du weißt: Sie ist gestürzt, sie ist ansprechbar, sie klagt über Hüftschmerz. Jetzt entscheidet sich, was als erstes passiert.",
@@ -296,6 +300,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-info-risikofaktoren",
       tag: "pflege",
+      transition: "Mit diesem Wissen im Kopf öffnest du die Tür. Das Licht fällt ins Zimmer.",
       contentC1: {
         title: "Sturz-Risikofaktoren bei Frau M. — und bei anderen",
         body: "",
@@ -382,6 +387,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-frau-m-info-dialog",
       tag: "pflege",
+      transition: "Frau M. hat dir vertraut. Jetzt: systematisch prüfen, bevor du sie bewegst.",
       contentC1: {
         title: "Das Zimmer betreten",
         // FIX (Pilot 2026-04-28): body geleert um Dialog-Doppel-Narration zu vermeiden.
@@ -570,6 +576,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       modus: "sortierstation",
       lernziel: "ce02-frau-m-info-assessment-reihenfolge",
       tag: "pflege",
+      transition: "Noch ein Werkzeug brauchst du, bevor Phase 2 beginnt: die Schmerzskala.",
       contentC1: {
         title: "Erste Assessment-Reihenfolge",
         body: "Du hast Frau M. begrüßt, Bewusstsein geprüft, erste Fragen gestellt. Jetzt folgt das strukturierte Assessment. Sortiere die folgenden Schritte in die richtige Reihenfolge — nach Priorität (ABCDE-ähnlich) und Sicherheitslogik.",
