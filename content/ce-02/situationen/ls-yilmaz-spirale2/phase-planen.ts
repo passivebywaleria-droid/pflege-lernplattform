@@ -83,6 +83,87 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
       },
     },
 
+    // Step 3.1b — Inline-Wissen: 30-Grad-Lagerung vs. 135-Grad-Lagerung
+    // Bevor der Schueler den Positionierungsplan sortiert, braucht er das Wissen:
+    // Warum 30 Grad? Warum 135 Grad? Was ist der Unterschied?
+    {
+      stepId: "ce02-yilmaz-s2-plan-01b-lagerungsprinzipien",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "NPUAP/EPUAP/PPPIA 2019",
+        "Moore Z., Cowman S., Conroy R.M. (2022)",
+        "DNQP 2024 — Expertenstandard Dekubitusprophylaxe",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-plan-lagerungsprinzipien",
+      tag: "pflege",
+      themaPrimaer: "positionierung",
+      themenSekundaer: ["dekubitus-prophylaxe"],
+      transition: "Du kennst jetzt beide Winkel. Bringe den Positionierungsplan in die richtige Reihenfolge.",
+      contentC1: {
+        title: "30-Grad vs. 135-Grad — welche Lagerung wann?",
+        body: "",
+        glossarBegriffe: ["30-Grad-Seitenlage", "135-Grad-Schraege Seitenlage", "Mikrolagerung"],
+      },
+      contentB1: {
+        title: "30 Grad oder 135 Grad — was ist der Unterschied?",
+        body: "",
+        glossarBegriffe: ["30-Grad-Lagerung", "135-Grad-Lagerung"],
+      },
+      inlineWissen: {
+        bausteinRef: "positionierung-30-vs-135",
+        storyAufhaenger:
+          "Frau Schaefer sagt: \"Der Positionierungsplan muss angepasst werden — 135 Grad statt nur Rueckenlage.\" Aber was bedeuten diese Winkel genau, und warum ist die 90-Grad-Seitenlage bei Frau Yilmaz keine Option?",
+        storyAufhaengerB1:
+          "Frau Schaefer sagt: \"Wir muessen den Lagerungsplan aendern — 135 Grad.\" Was bedeutet das? Und warum nicht einfach auf die Seite legen?",
+        kerntext:
+          "Es gibt **3 Positionierungs-Optionen** bei Dekubitus-Prophylaxe — und bei Frau Yilmaz fallen zwei davon aus:\n\n**30-Grad-Seitenlage (Schraeglage):**\n• Patient liegt leicht schraeg, ein Kissen unter der Gesaesshaelfte.\n• Entlastet das Sakrum teilweise, Druck verteilt sich auf Gesaessmuskulatur.\n• Standard bei vielen Patienten — aber bei Frau Yilmaz NICHT ausreichend: Sie hat bereits einen offenen Dekubitus Kat. II am Sakrum. Teilentlastung reicht nicht — das Sakrum muss KOMPLETT frei sein.\n\n**90-Grad-Seitenlage:**\n• Patient liegt direkt auf der Seite.\n• Problem: Druck auf Trochanter major (Oberschenkelknochen seitlich) — ebenfalls Praedilektionsstelle.\n• Bei Frau Yilmaz doppelt kontraindiziert: Hueft-TEP rechts! Auf der operierten Seite liegen = OP-Region belasten. Nicht-operierte Seite = Trochanter-Risiko.\n\n**135-Grad-Schraege Seitenlage (die Loesung):**\n• Patient liegt fast auf dem Bauch, aber schraeg abgestuetzt.\n• Druck auf grosse Muskelflaechen (Gesaess, Oberschenkelrueckseite) statt auf Knochenvorspruenge.\n• Sakrum komplett frei. Trochanter nicht belastet.\n• Bei Frau Yilmaz: Auf die LINKE Seite (nicht-operierte Seite), Hueft-TEP rechts bleibt oben in Abduktion.\n\n**Mikrolagerung:** Zusaetzlich alle 15-20 Min kleine Positionsaenderungen (Kissen verschieben) — reduziert Reperfusionsschaden.",
+        kerntextB1:
+          "Es gibt **3 Moeglichkeiten** fuer die Lagerung:\n\n**30-Grad-Seitenlage:**\n• Leicht schraeg liegen. Ein Kissen unter dem Po.\n• Entlastet das Steissbein teilweise.\n• Bei Frau Yilmaz NICHT genug: Die Wunde ist offen — das Steissbein muss ganz frei sein.\n\n**90-Grad-Seitenlage:**\n• Direkt auf der Seite liegen.\n• Problem: Druck auf den Hueftknochen seitlich.\n• Bei Frau Yilmaz nicht moeglich: Sie hat eine Hueft-OP rechts!\n\n**135-Grad-Seitenlage (die beste Loesung):**\n• Fast auf dem Bauch, aber schraeg mit Kissen.\n• Steissbein komplett frei. Hueftknochen nicht belastet.\n• Frau Yilmaz liegt auf der LINKEN Seite (nicht-operierte Seite).\n\n**Mikrolagerung:** Alle 15-20 Minuten kleine Kissen-Veraenderungen.",
+        faustregel:
+          "30 Grad = teilweise Entlastung. 135 Grad = komplette Sakrum-Freistellung. Bei offenem Dekubitus am Sakrum: immer 135 Grad.",
+        faustregelB1:
+          "30 Grad = ein bisschen Entlastung. 135 Grad = Steissbein komplett frei. Bei offener Wunde: immer 135 Grad.",
+        spektrum: [
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz — akzeptiert Kissen nicht",
+            kurzbeschreibung:
+              "Bei ihm ist 135-Grad-Lagerung schwierig: Er zieht die Kissen raus, weil er nicht versteht warum sie da liegen. 30-Grad-Schraeglage mit flachen Keilen funktioniert besser — weniger Fremdkoerper-Gefuehl.",
+          },
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Bobath-Lagerung + Dekubitus-Prophylaxe",
+            kurzbeschreibung:
+              "Bei Schlaganfall: Bobath-Lagerung (Spastik-Reduktion) und Dekubitus-Prophylaxe muessen kombiniert werden. 30-Grad auf die nicht-betroffene Seite ist Standard — reduziert Spastik UND Druck.",
+          },
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Bariatrisch — Schwerlast-Equipment",
+            kurzbeschreibung:
+              "Bei BMI > 35: Standardkissen reichen nicht fuer 135-Grad-Lagerung. Schwerlast-Lagerungskissen + breiteres Bett noetig. Immer 2-3 Pflegekraefte fuer die Lagerung.",
+          },
+        ],
+        sonstBox:
+          "**Sitzposition und Dekubitus:** Sitzen im Rollstuhl > 2 Stunden ohne Druckentlastung ist genauso riskant wie Liegen. Sitzbeinhöcker sind Praedilektionsstellen. Druckentlastung durch Gewichtsverlagerung alle 15-20 Min, spezielle Sitzkissen (Gel, Luft). Relevant fuer Frau Kovac (ambulant, viel sitzend) und Frau Yilmaz nach Mobilisation im Sessel.",
+        sonstBoxB1:
+          "**Wichtig bei Sitzen:** Auch im Rollstuhl oder Sessel entsteht Dekubitus — an den Sitzbeinhöckern. Alle 15-20 Minuten Gewicht verlagern. Spezielle Sitzkissen helfen.",
+        karteikarte: {
+          vorderseite:
+            "Frau Yilmaz hat Dekubitus Kat. II am Sakrum + Hueft-TEP rechts. Warum ist 135-Grad-Lagerung die richtige Wahl und warum fallen 30 Grad und 90 Grad aus?",
+          rueckseite:
+            "30 Grad: nur Teilentlastung — bei offener Wunde nicht ausreichend. 90 Grad: Trochanter-Belastung + Hueft-TEP rechts kontraindiziert. 135 Grad: Sakrum komplett frei, kein Trochanter-Druck, Hueft-TEP oben in Abduktion.\n\nSpektrum: Bauer (30 Grad wegen Demenz-Akzeptanz), Petrov (30 Grad + Bobath), Schmidt (135 Grad mit Schwerlast-Equipment).\n\nFaustregel: **Bei offenem Sakrum-Dekubitus: immer 135 Grad. 30 Grad reicht nicht.**",
+        },
+      },
+    },
+
     // Step 3.2 — Sequencing: Positionierungsplan
     {
       stepId: "ce02-yilmaz-s2-plan-02-positionierungsplan",

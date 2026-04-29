@@ -186,6 +186,79 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
       },
     },
 
+    // Step 3.4b — Inline-Wissen: Enterale Ernährung — Wann reicht oral nicht mehr?
+    // Bevor der Schüler die MC über enterale Ernährung beantwortet, braucht er Grundwissen.
+    {
+      stepId: "ce02-petrov-plan-04b-enterale-ernaehrung",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "II.1",
+      quellen: [
+        "DGEM/ESPEN 2020 — Klinische Ernährung in der Neurologie",
+        "DNQP 2024 — Expertenstandard Ernährungsmanagement",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-petrov-plan-enterale-ernaehrung-grundlagen",
+      tag: "krankheitslehre",
+      themaPrimaer: "enterale-ernaehrung",
+      themenSekundaer: ["essen-anreichen"],
+      transition: "Du kennst die Stufen. Jetzt eine konkrete Entscheidung: Braucht Herr Petrov eine Sonde?",
+      contentC1: {
+        title: "Enterale Ernährung — der Weg von oral zur Sonde",
+        body: "",
+        glossarBegriffe: ["enterale Ernährung", "NGS", "PEG", "ESPEN", "Kalorienbedarf"],
+      },
+      contentB1: {
+        title: "Was ist enterale Ernährung?",
+        body: "",
+        glossarBegriffe: ["enterale Ernährung", "Sonde", "Kalorien"],
+      },
+      inlineWissen: {
+        bausteinRef: "enterale-ernaehrung-oral-zu-sonde",
+        storyAufhaenger:
+          "Herr Petrov isst gerade noch oral — breiige Konsistenz, angedickte Flüssigkeit. Aber was, wenn er morgen weniger schafft? Und übermorgen noch weniger? Ab welchem Punkt reicht oral nicht mehr und braucht er eine Sonde?",
+        storyAufhaengerB1:
+          "Herr Petrov isst noch mit dem Mund — breiiges Essen, angedickte Flüssigkeit. Aber was passiert, wenn er immer weniger isst? Wann braucht er eine Sonde?",
+        kerntext:
+          "**Enterale Ernährung** = Ernährung über den Magen-Darm-Trakt, aber nicht oral. Der Zugang ist eine Sonde.\n\n**Stufen-Konzept (ESPEN/DGEM 2020):**\n\n• **Stufe 1:** Orale Ernährung mit angepasster Konsistenz (IDDSI). Das ist Herr Petrovs aktueller Status.\n\n• **Stufe 2:** Orale Ernährung + Trinknahrung (Supplement, z.B. 200 ml Energy-Drink mit 300 kcal). Wenn oral < 75 % des Bedarfs.\n\n• **Stufe 3:** Nasogastrale Sonde (NGS). Wenn oral + Supplement < 60 % des Kalorienbedarfs nach 3-5 Tagen. NGS ist temporär, nicht-operativ, kann am Bett gelegt werden.\n\n• **Stufe 4:** PEG (perkutane endoskopische Gastrostomie). Wenn Sondenernährung > 4 Wochen absehbar ist. Operativer Eingriff.\n\n**Pflege-Aufgabe:** Tägliches Ernährungsmonitoring — Wie viel hat er gegessen? Wie viel getrunken? Gewichtsverlauf. Proaktiv den Arzt informieren wenn die orale Aufnahme unter 60 % fällt.\n\n**Zeitfenster:** 3-5 Tage für orale Optimierung. Danach wird es kritisch — Mangelernährung verschlechtert Wundheilung, Immunabwehr und Rehabilitation.",
+        kerntextB1:
+          "**Enterale Ernährung** = Ernährung mit einer Sonde (= einem Schlauch in den Magen).\n\n**3 Stufen:**\n\n• **Stufe 1:** Essen mit dem Mund — mit angepasster Konsistenz. Das macht Herr Petrov jetzt.\n\n• **Stufe 2:** Essen mit dem Mund + Trinknahrung (= extra Kalorien im Becher). Wenn er zu wenig isst.\n\n• **Stufe 3:** Sonde durch die Nase in den Magen (= NGS). Wenn er weniger als 60 % seines Bedarfs isst — nach 3-5 Tagen.\n\n**Deine Aufgabe:** Jeden Tag aufschreiben: Wie viel hat er gegessen? Wie viel getrunken? Wenn es zu wenig wird: Arzt informieren.",
+        faustregel: "3-5 Tage unter 60 % oral = Sonde vorbereiten. Pflege erkennt es zuerst.",
+        faustregelB1: "Wenn Herr Petrov in 3-5 Tagen zu wenig isst: Arzt informieren, Sonde vorbereiten.",
+        spektrum: [
+          {
+            patientName: "Herr Nguyen",
+            situationsId: "ls-nguyen-stoma",
+            hauptfaktor: "Stoma, vorübergehend keine orale Ernährung",
+            kurzbeschreibung:
+              "Nguyen darf nach Darm-OP vorübergehend gar nicht oral essen. Er bekommt parenteral (= über die Vene) Nährstoffe. Anderer Zugangsweg als eine NGS, aber dasselbe Ziel: ausreichend Kalorien.",
+          },
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Adipositas + versteckter Proteinmangel",
+            kurzbeschreibung:
+              "Schmidt sieht nicht mangelernährt aus (BMI 38). Aber: Proteinmangel bei Adipositas ist häufig. Ernährungsscreening (NRS-2002) auch bei adipösen Patienten Pflicht.",
+          },
+          {
+            patientName: "Emilia",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Säugling, Trinkschwäche bei Bronchiolitis",
+            kurzbeschreibung:
+              "Emilia trinkt zu wenig wegen Atemnot. Bei Säuglingen geht es schneller: NGS schon nach 24 h unzureichender Trinkmenge. Die Zeitfenster sind bei Kindern viel kürzer als bei Erwachsenen.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Herr Petrov isst seit 2 Tagen nur 40 % seines Kalorienbedarfs oral. Tag 5 nach Apoplex. Was empfiehlst du?",
+          rueckseite:
+            "ESPEN/DGEM 2020: 3-5 Tage Zeitfenster für orale Optimierung. Bei < 60 % nach diesem Zeitfenster: NGS (nasogastrale Sonde) als nächste Stufe. Pflege-Aufgabe: proaktiv Arzt informieren, tägliches Ernährungsmonitoring. Spektrum: Nguyen (parenteral post-OP), Schmidt (versteckter Proteinmangel bei Adipositas), Emilia (NGS schon nach 24 h bei Säugling). Faustregel: **3-5 Tage unter 60 % oral = Sonde vorbereiten.**",
+        },
+      },
+    },
+
     // Step 3.5 — MC: Enterale Ernährung Indikation
     {
       stepId: "ce02-petrov-plan-05-enterale-ernaehrung-frage",

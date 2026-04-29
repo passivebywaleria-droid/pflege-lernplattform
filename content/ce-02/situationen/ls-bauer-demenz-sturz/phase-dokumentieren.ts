@@ -1,7 +1,8 @@
 // CE-02 Situation Herr Bauer — Demenz und Sturz — Phase 6: Dokumentieren
-// Steps: 5 (4 Kern + 1 Optional) · Bloom: B5-B6
+// Steps: 6 (4 Kern + 1 Inline-Wissen + 1 Optional) · Bloom: B2-B6
 // Quelle: content/ce-02/situationen/ls-bauer-demenz-sturz/phase-dokumentieren.md
 // Pipeline v9 — 2026-04-23
+// Inline-Wissen: 1 Baustein (ganzkörperpflege Dokumentation bei Demenz)
 
 import type { SituationsPhase } from "../../../_types";
 
@@ -74,6 +75,84 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
           "Informiert wurden: ...",
           "Warum ist er gestürzt (Vermutung): ...",
         ],
+      },
+    },
+
+    // Step 6.1b — Inline-Wissen: Dokumentation bei Demenz — was anders ist
+    // Nach dem Sturzprotokoll: Der Schueler schreibt jetzt den Pflegebericht.
+    // Bei Demenz gibt es Besonderheiten in der Dokumentation die er kennen muss
+    // bevor er Fehler im ErrorSpot-Step finden soll.
+    {
+      stepId: "ce02-bauer-dok-01b-dokumentation-demenz",
+      phase: 6,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP 2018 — Beziehungsgestaltung bei Demenz",
+        "§ 4 PflBG",
+        "DNQP 2022 — Sturzprophylaxe, Kriterium E6 (Dokumentation)",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-dok-dokumentation-demenz",
+      tag: "pflege",
+      themaPrimaer: "ganzkörperpflege",
+      themenSekundaer: ["sturz-prophylaxe", "basale-stimulation"],
+      transition: "Dokumentation bei Demenz im Kopf? Gut. Jetzt: Finde die Fehler im Pflegebericht.",
+      contentC1: {
+        title: "Dokumentation bei Demenz — 4 Besonderheiten",
+        body: "",
+        glossarBegriffe: ["Pflegebericht", "Abwehrverhalten", "BESD-Dokumentation"],
+      },
+      contentB1: {
+        title: "Was ist beim Aufschreiben bei Demenz anders?",
+        body: "",
+        glossarBegriffe: ["Pflegebericht", "Abwehrverhalten"],
+      },
+      inlineWissen: {
+        bausteinRef: "ganzkoerperpflege-dokumentation-demenz",
+        storyAufhaenger:
+          "Du hast gerade das Sturzprotokoll geschrieben. Jetzt kommt der Pflegebericht fuer die Uebergabe. Bei Herrn Bauer hat sich heute viel ereignet: Abwehr bei der Pflege, Deeskalation, Kniebewegung, Trinkmenge. Wie schreibst du das auf — ohne Wertung, aber mit den richtigen Details?",
+        storyAufhaengerB1:
+          "Du hast das Sturzprotokoll geschrieben. Jetzt kommt der Pflegebericht. Herr Bauer hat sich heute gewehrt, du hast ihn beruhigt, seine Knie bewegt, er hat getrunken. Wie schreibst du das alles auf?",
+        kerntext:
+          "Bei Menschen mit Demenz hat die Dokumentation **4 Besonderheiten** (DNQP 2018, § 4 PflBG):\n\n**1. Verhalten beschreiben, nicht bewerten**\n\nFalsch: \"Patient war heute wieder schwierig.\"\nRichtig: \"Patient zeigte Abwehrverhalten bei Gesichtspflege (2x Schlagen nach Pflegekraft), nach 2-minuetiger Pause und Handkontakt Kooperation moeglich.\"\n\nWarum? \"Schwierig\" ist eine Wertung — sie hilft dem Nachtdienst nicht. **Konkretes Verhalten + Strategie + Ergebnis** hilft.\n\n**2. BESD-Werte dokumentieren**\n\nBei jedem Pflegekontakt: BESD in Ruhe + BESD bei Bewegung. Das ist die Schmerzakte bei Demenz.\n\n**3. Ressourcen dokumentieren**\n\nWas hat funktioniert? \"Beruhigung durch Freddy Quinn moeglich\" — das hilft dem Folge-Team.\n\n**4. Maßnahmen-Umsetzung konkret**\n\nNicht: \"Knie beobachten.\" Sondern: \"Passive Kniebewegung 2x durchgefuehrt (rechts bis 20 Grad Streckdefizit, links bis 10 Grad), BESD waehrend Bewegung 3/10.\"",
+        kerntextB1:
+          "Bei Demenz sind beim Aufschreiben **4 Dinge** besonders wichtig:\n\n**1. Nicht bewerten — beschreiben**\n\nFalsch: \"Er war schwierig.\"\nRichtig: \"Er hat 2x nach der Pflegekraft geschlagen. Nach Pause und Handkontakt hat er mitgemacht.\"\n\n**2. Schmerz-Punkte aufschreiben**\n\nBESD in Ruhe und bei Bewegung — immer beides.\n\n**3. Was funktioniert hat aufschreiben**\n\n\"Musik (Freddy Quinn) hat beruhigt\" — das hilft den anderen Pflegekraeften.\n\n**4. Genau sein**\n\nNicht: \"Knie beobachten.\"\nSondern: \"Knie 2x passiv bewegt, rechts bis 20 Grad, BESD 3.\"",
+        faustregel:
+          "Bei Demenz: Verhalten beschreiben statt bewerten. Was gewirkt hat dokumentieren. Der Nachtdienst braucht Strategien, nicht Klagen.",
+        faustregelB1:
+          "Nicht schreiben was er \"ist\" (schwierig). Schreiben was er \"tut\" (schlaegt 2x) und was geholfen hat (Musik, Pause).",
+        spektrum: [
+          {
+            patientName: "Frau M.",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "Orientiert — NRS direkt dokumentierbar",
+            kurzbeschreibung:
+              "Bei Frau M. ist die Dokumentation einfacher: Sie kann selbst berichten (\"Meine Huefte tut weh, eine Acht\"). NRS-Wert, Wortwahl der Patientin, Zeitpunkt — direkt in den Bericht.",
+          },
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Aphasie — Kommunikation eingeschraenkt",
+            kurzbeschreibung:
+              "Bei Aphasie: Dokumentation muss Kommunikationsweg beschreiben (\"Patient zeigt mit Finger auf linke Hand, Mimik schmerzverzerrt, nickt bei Frage nach Schmerz\"). Beobachtung ist hier Pflicht.",
+          },
+          {
+            patientName: "Herr Nguyen",
+            situationsId: "ls-nguyen-stoma",
+            hauptfaktor: "Sprachbarriere + Dolmetscher",
+            kurzbeschreibung:
+              "Bei Sprachbarriere: Dokumentation muss festhalten wer gedolmetscht hat, was verstanden wurde, was unklar blieb. \"Stoma-Versorgung erklaert via Sohn (Dolmetscher), Rueckfrage auf Tuerkisch verstanden\" — Nachvollziehbarkeit.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Herr Bauer (Demenz) hat bei der Morgenpflege 2x nach dir geschlagen. Du hast ihn beruhigt und die Pflege durchgefuehrt. Wie dokumentierst du das?",
+          rueckseite:
+            "**Verhalten beschreiben, nicht bewerten**: \"Abwehrverhalten bei Gesichtspflege (2x Schlagen), nach 2 Min Pause + Handkontakt + Musik (Freddy Quinn) Kooperation moeglich.\" PLUS: BESD-Wert in Ruhe + bei Bewegung. PLUS: Ressource (Musik, Handkontakt). PLUS: Maßnahmen-Ergebnis (passive Kniebewegung 2x, rechts 20 Grad). **NICHT**: \"Patient war schwierig\" — das ist Wertung, nicht Beobachtung. (DNQP 2018, § 4 PflBG) Faustregel: **Verhalten + Strategie + Ergebnis. Keine Wertungen.**",
+        },
       },
     },
 

@@ -189,6 +189,89 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
       },
     },
 
+    // Step 5.3b — Inline-Wissen: Katheter-Indikationsprüfung (Wiederbegegnung)
+    // Vertiefte Wiederbegegnung aus Phase 1 (BVK-Grundlagen) + Phase 2 (CAUTI-Prävention).
+    // Jetzt: Wie entscheidet man ob der Katheter raus kann?
+    {
+      stepId: "ce02-petrov-eval-03b-katheter-indikation",
+      phase: 5,
+      stepType: "inlineWissen",
+      bloomLevel: 3,
+      kompetenzbereich: "III.2",
+      quellen: [
+        "KRINKO 2015 — Prävention katheter-assoziierter Harnwegsinfektionen",
+        "CDC/HICPAC 2019 — CAUTI Prevention",
+        "§ 4 PflBG — Vorbehaltene Tätigkeiten",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-petrov-eval-katheter-indikation",
+      tag: "pflege",
+      themaPrimaer: "harnausscheidung",
+      themenSekundaer: ["blasenkatheter"],
+      transition: "Du weißt jetzt wann ein Katheter gehen kann — und wann nicht. Jetzt die Entscheidung für Herrn Petrov.",
+      contentC1: {
+        title: "Wann darf der Katheter raus? — Indikationsprüfung",
+        body: "",
+        glossarBegriffe: ["Indikationsprüfung", "BVK", "Restharn", "Toilettentraining"],
+      },
+      contentB1: {
+        title: "Wann kann der Katheter raus?",
+        body: "",
+        glossarBegriffe: ["Katheter", "Indikation"],
+      },
+      inlineWissen: {
+        bausteinRef: "harnausscheidung-katheter-indikation",
+        wiederbegegnung: {
+          basisBausteinId: "harnausscheidung-bvk-grundlagen",
+          basisPatient: "Herr Petrov",
+          vertiefung:
+            "Du kennst BVK-Grundlagen aus Phase 1 und die 5 Hygieneregeln aus Phase 2. Jetzt die nächste Frage: Wann kann der Katheter raus? Und wer entscheidet das?",
+          vertiefungB1:
+            "Du kennst den Katheter aus Phase 1 und die Hygiene-Regeln aus Phase 2. Jetzt: Wann kann der Katheter raus? Wer entscheidet?",
+        },
+        storyAufhaenger:
+          "Der Katheter liegt seit 5 Tagen. Herr Petrov hat heute 13 Minuten an der Bettkante gesessen. Er wird mobiler. Die Frage drängt sich auf: Braucht er den Katheter noch? Oder ist jeder weitere Tag nur noch Risiko ohne Nutzen?",
+        storyAufhaengerB1:
+          "Der Katheter liegt seit 5 Tagen. Herr Petrov wird mobiler — 13 Minuten an der Bett-Kante. Braucht er den Katheter noch? Oder schadet er jetzt mehr als er hilft?",
+        kerntext:
+          "**Wer entscheidet?** Die Entfernung eines BVK ist eine ärztliche Anordnung. Aber: Pflege beobachtet täglich und kommuniziert proaktiv. § 4 PflBG: Pflegeprozesssteuerung ist Pflegekompetenz.\n\n**Indikations-Checkliste (KRINKO 2015):**\n\n• Kann der Patient zur Toilette gebracht werden oder ein Urinal nutzen? Bei Herrn Petrov: Er sitzt an der Bettkante → Urinal im Sitzen möglich?\n\n• Ist die Bilanzierung noch zwingend nötig? Bei stabilem Kreislauf und oraler Aufnahme: oft nicht mehr.\n\n• Gibt es eine urologische oder chirurgische Indikation? Bei Apoplex: in der Regel nein.\n\n• Restharn-Problematik? Nach BVK-Entfernung: Restharnkontrolle per Ultraschall (nicht Katheter!) innerhalb 6-8 h.\n\n**Der Prozess:**\n\n1. Pflege beobachtet und dokumentiert (Urin unauffällig, Patient wird mobiler)\n\n2. Pflege meldet dem Arzt: \"Indikation BVK prüfen — Tag 5, Mobilisation begonnen, Urin unauffällig\"\n\n3. Arzt ordnet Entfernung an\n\n4. Pflege entfernt BVK, startet Toilettentraining (alle 2-3 h anbieten)\n\n5. Restharnkontrolle nach 6-8 h",
+        kerntextB1:
+          "**Wer entscheidet?** Der Arzt gibt die Anordnung. Aber: Du als Pflege beobachtest und sagst Bescheid.\n\n**Wann kann der Katheter raus?**\n\n• Kann Herr Petrov ein Urinal benutzen? Er sitzt an der Bett-Kante — vielleicht möglich.\n\n• Braucht er noch eine genaue Urin-Messung? Wenn der Kreislauf stabil ist: oft nicht mehr.\n\n• Ist der Urin unauffällig? Goldgelb, genug Menge, keine Rötung an der Eintrittsstelle.\n\n**So geht es:**\n\n1. Du beobachtest und schreibst auf.\n\n2. Du sagst dem Arzt: \"Tag 5, Mobilisation begonnen, Urin normal — Katheter noch nötig?\"\n\n3. Der Arzt sagt: \"Raus.\" Du entfernst ihn.\n\n4. Danach: Alle 2-3 Stunden Toilette anbieten.\n\n5. Nach 6-8 Stunden: Ultraschall-Kontrolle ob Restharnung zurückbleibt.",
+        faustregel: "Pflege sieht den Patienten am häufigsten. Pflege erkennt zuerst wann der Katheter gehen kann.",
+        faustregelB1: "Du siehst Herrn Petrov am häufigsten. Du erkennst als erstes: Der Katheter muss raus.",
+        spektrum: [
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP, BVK-Entfernung am 1.-2. POT",
+            kurzbeschreibung:
+              "Standard bei Hüft-TEP: BVK am 1.-2. postoperativen Tag entfernen, wenn die Patientin aufstehen kann. Klare Regel, wenig Diskussion nötig.",
+          },
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz, BVK als Fixierung",
+            kurzbeschreibung:
+              "Bei Bauer ist der BVK ein ethisches Problem: Er versteht ihn nicht, zieht daran, ist dadurch unruhig. Hier ist die Entfernung nicht nur medizinisch sondern auch ethisch dringend — Alternativen (Kondomurinal, Inkontinenzversorgung) früh prüfen.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "Ambulant, Selbstkatheterismus",
+            kurzbeschreibung:
+              "Kovac braucht keinen Dauerkatheter — sie führt den intermittierenden Einmalkatheter selbst durch (ISK). Anleitung zur Selbstkatheterisierung ist eine pflegerische Kompetenz.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Herr Petrov hat 13 Minuten an der Bettkante gesessen, Urin ist unauffällig, Tag 5. Wie kommunizierst du die Katheter-Frage?",
+          rueckseite:
+            "Proaktive Kommunikation: An Praxisanleiterin melden, gemeinsam Arzt informieren: \"Tag 5, Mobilisation begonnen, Urin unauffällig — Indikation BVK prüfen.\" Arzt ordnet an, Pflege entfernt + startet Toilettentraining. Restharnkontrolle per Ultraschall nach 6-8 h. Spektrum: Yilmaz (Standard-Entfernung 1.-2. POT), Bauer (ethisches Problem, Kondomurinal prüfen), Kovac (ISK ambulant). Faustregel: **Pflege erkennt zuerst wann der Katheter gehen kann.**",
+        },
+      },
+    },
+
     // Step 5.4 — Branching: Katheter-Entscheidung (Klein-Branching)
     {
       stepId: "ce02-petrov-eval-04-katheter-entscheidung",

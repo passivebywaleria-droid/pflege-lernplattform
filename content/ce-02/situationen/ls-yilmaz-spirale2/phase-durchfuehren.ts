@@ -15,6 +15,84 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
   kontextB1:
     "Dr. Kirchner hat angeordnet: Hydrokolloid-Verband, täglich wechseln, Foto machen. Du holst das Material. Frau Schäfer schaut von der Tür zu. Frau Yilmaz liegt auf der Seite. Sie sagt: 'Kissen da, Kissen da. Ist das nicht umständlich?' Du arbeitest und erklärst gleichzeitig.",
   kernSteps: [
+    // Step 4.0b — Inline-Wissen: Feuchte Wundbehandlung (Wiederbegegnung Wundauflage)
+    // Der Schueler hat in Phase 3 die MC-Frage zur Wundauflage beantwortet (Hydrokolloid).
+    // Jetzt kurze Vertiefung WARUM feuchte Wundbehandlung funktioniert — bevor er den
+    // Verbandwechsel Schritt fuer Schritt durchfuehrt.
+    {
+      stepId: "ce02-yilmaz-s2-durch-00b-feuchte-wundbehandlung",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Winter G.D. (1962) — Formation of the Scab and the Rate of Epithelization",
+        "NPUAP/EPUAP/PPPIA 2019",
+        "DNQP 2024",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-durch-feuchte-wundbehandlung",
+      tag: "krankheitslehre",
+      themaPrimaer: "dekubitus-prophylaxe",
+      themenSekundaer: ["haut"],
+      transition: "Jetzt holst du das Material. Aseptischer Verbandwechsel — Schritt fuer Schritt.",
+      contentC1: {
+        title: "Warum feucht statt trocken?",
+        body: "",
+        glossarBegriffe: ["Feuchte Wundbehandlung", "Granulation", "Epithelialisierung", "Winter 1962"],
+      },
+      contentB1: {
+        title: "Warum feuchter Verband?",
+        body: "",
+        glossarBegriffe: ["Feuchte Wundbehandlung"],
+      },
+      inlineWissen: {
+        bausteinRef: "dekubitus-prophylaxe-feuchte-wundbehandlung",
+        storyAufhaenger:
+          "Dr. Kirchner hat Hydrokolloid-Verband angeordnet. In Phase 3 hast du ihn als richtige Antwort gewaehlt. Aber warum genau ist ein feuchter Verband besser als ein trockener? Das ist seit 1962 belegt — und trotzdem ein haeufiger Anfaengerfehler.",
+        storyAufhaengerB1:
+          "Du holst gleich den Hydrokolloid-Verband. Aber warum ist ein feuchter Verband besser als ein trockener? Das ist wichtig zu wissen.",
+        kerntext:
+          "**Das Prinzip der feuchten Wundbehandlung** geht auf George Winter (1962) zurueck. Er zeigte: Wunden, die **feucht gehalten** werden, heilen **bis zu 50 % schneller** als trockene.\n\n**Warum?**\n\n• **Zellmigration** — Epithelzellen koennen nur ueber feuchte Oberflaechen wandern. Auf trockenem Schorf muessen sie sich erst darunter graben.\n\n• **Granulation** — Feuchtes Milieu foerdert die Bildung von Granulationsgewebe (rosa-rotes Heilgewebe).\n\n• **Keimschutz** — Ein geschlossener Verband schuetzt vor aeusseren Keimen.\n\n• **Schmerzreduktion** — Feuchte Verbandwechsel sind weniger traumatisch als trockene (kein Verkleben mit Wundgrund).\n\n**Hydrokolloid bei Frau Yilmaz:**\nHydrokolloid-Verbaende bilden bei Kontakt mit Wundexsudat ein Gel, das die Wunde feucht haelt. Ideal fuer flache Erosionen (Kat. II) mit wenig Exsudat. Wechsel: taeglich oder bei Durchfeuchten.",
+        kerntextB1:
+          "**Feuchte Wunden heilen schneller** als trockene. Das hat ein Forscher namens Winter 1962 gezeigt.\n\n**Warum feucht besser ist:**\n\n• Hautzellen koennen ueber feuchte Flaechen wandern. Auf trockenem Schorf geht das nicht.\n\n• Feuchtes Milieu hilft bei der Bildung von Heilungsgewebe.\n\n• Ein geschlossener Verband schuetzt vor Keimen.\n\n• Feuchte Verbaende tun beim Wechsel weniger weh.\n\n**Hydrokolloid:** Bei Kontakt mit der Wunde bildet er ein Gel. Das haelt die Wunde feucht. Gut fuer flache Wunden wie bei Frau Yilmaz.",
+        faustregel:
+          "Feucht heilt schneller als trocken. Hydrokolloid = Standardverband fuer flache Erosionen Kategorie II.",
+        faustregelB1:
+          "Feuchte Wunden heilen schneller. Hydrokolloid = Standardverband fuer flache Wunden Kategorie 2.",
+        spektrum: [
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Wunde + Spastik",
+            kurzbeschreibung:
+              "Bei ihm wuerde ein Verband am Trochanter durch Spastik-Bewegungen schnell verrutschen. Schaumverband mit Klebefixierung oder Verbandfixierung durch Netzschlauchverband ist hier besser.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "Ambulant — Verbandwechsel durch Angehoerige",
+            kurzbeschreibung:
+              "Im ambulanten Setting wechseln Angehoerige oder ambulanter Pflegedienst den Verband. Hydrokolloid ist einfach handhabbar — kein steriles Instrumentarium noetig, kann von geschulten Angehoerigen gewechselt werden.",
+          },
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz — zieht Verband ab",
+            kurzbeschreibung:
+              "Demenzpatienten ziehen Verbaende manchmal ab, weil sie sie nicht verstehen. Loesungen: Verband mit Kleidung abdecken, ablenkende Beschaeftigung waehrend des Verbandwechsels. NIE fixieren (= Freiheitsentziehung).",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Warum hat Dr. Kirchner Hydrokolloid-Verband fuer Frau Yilmaz (Dekubitus Kat. II, flache Erosion, wenig Exsudat) angeordnet — und nicht einen trockenen Mullverband?",
+          rueckseite:
+            "Feuchte Wundbehandlung (Winter 1962): 50 % schnellere Heilung. Hydrokolloid bildet Gel bei Kontakt mit Exsudat, haelt Wunde feucht, foerdert Granulation + Epithelialisierung. Trockener Mullverband: verklebt, zerstoert Wundgrund beim Wechsel, keine Feuchtigkeitsregulation.\n\nSpektrum: Petrov (Schaumverband wegen Spastik), Kovac (ambulant, Hydrokolloid einfach fuer Angehoerige), Bauer (Demenz, Verband abdecken).\n\nFaustregel: **Feucht heilt schneller. Hydrokolloid = Standard bei Kat. II.**",
+        },
+      },
+    },
+
     // Step 4.1 — Sorting: Vorbereitung aseptischer Verbandwechsel
     {
       stepId: "ce02-yilmaz-s2-durch-01-vorbereitung-hygiene",

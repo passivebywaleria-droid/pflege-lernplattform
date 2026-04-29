@@ -36,6 +36,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
         body: "Du gehst in das Zimmer. Lukas weint. Sandra ist aufgewühlt. Kevin schaut dich an. Was machst du ZUERST?",
         glossarBegriffe: [],
       },
+      transition: "Gut. Du hast dich vorgestellt. Bevor Sandra erzählt — kurz: Wie kühlt man ein verbrühtes Kind richtig?",
       question: {
         fragetext: "Du betrittst das Zimmer — was tust du ZUERST?",
         mcVariant: "fallstrick",
@@ -76,6 +77,88 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
       },
     },
 
+    // Step 1.1b — Inline-Wissen: Kühlung bei Verbrühung Kleinkind
+    // Schüler hat in Step 1.1 die Erstbegegnung gemeistert. Bevor Sandra den Unfallhergang
+    // erzählt (1.2), braucht der Schüler das Hintergrundwissen: Wie kühlt man ein verbrühtes
+    // Kleinkind korrekt? Sandra hat es richtig gemacht — aber der Schüler soll das VORHER wissen.
+    {
+      stepId: "ce02-lukas-info-01b-kuehlung-verbruehung",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DGV 2023 — Leitlinie Thermische Verletzungen im Kindesalter",
+        "GNPI 2022 — Erstversorgung thermischer Verletzungen bei Kindern",
+        "AWMF S2k-Leitlinie 2023 — Thermische Verletzungen",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-lukas-info-kuehlung",
+      tag: "krankheitslehre",
+      themaPrimaer: "haut",
+      themenSekundaer: ["saeuglingspflege"],
+      transition: "Sandra hat also genau richtig reagiert. Hör jetzt genau hin, was sie erzählt.",
+      contentC1: {
+        title: "Kühlung bei Verbrühung — Kleinkinder sind keine kleinen Erwachsenen",
+        body: "",
+        glossarBegriffe: ["Hypothermie", "KOF (Körperoberfläche)", "Vasokonstriktion"],
+      },
+      contentB1: {
+        title: "Wie kühlt man ein verbrühtes Kind richtig?",
+        body: "",
+        glossarBegriffe: ["Hypothermie (= Unterkühlung)", "KOF (= Körperoberfläche)"],
+      },
+      inlineWissen: {
+        bausteinRef: "haut-kuehlung-verbruehung-kleinkind",
+        storyAufhaenger:
+          "Sandra wird dir gleich erzählen, dass sie Lukas sofort unter lauwarmes Wasser gehalten hat — etwa 8 Minuten, nur lokal. War das richtig? Bei Erwachsenen heißt es oft \"20 Minuten kühlen\". Bei Kleinkindern gelten andere Regeln.",
+        storyAufhaengerB1:
+          "Sandra hat Lukas sofort unter lauwarmes Wasser gehalten — etwa 8 Minuten. War das richtig? Bei Erwachsenen kühlt man oft 20 Minuten. Bei kleinen Kindern ist das anders.",
+        kerntext:
+          "**Kühlung bei Kindern unter 8 Jahren / >10 % KOF (DGV/GNPI 2023):**\n\n• **Maximal 10 Minuten** lokal kühlen — nicht den ganzen Körper.\n\n• **Lauwarmes Wasser (~20 °C)** — kein Eis, kein kaltes Leitungswasser.\n\n• **Restkörper warm halten** — Decke, Kleidung am nicht betroffenen Körper belassen.\n\n• **Warum so kurz?** Kleinkinder haben ein hohes Oberfläche-Masse-Verhältnis. Sie kühlen schnell systemisch aus. Hypothermie verschlechtert die Wundheilung, verstärkt den Schock und erhöht die Mortalität (DGV 2023).\n\n• **Nasse Kleidung sofort entfernen** — nasse Kleidung hält die Hitze an der Haut und verstärkt den Schaden.\n\n**Der häufigste Fehler:** Gut gemeintes Überkühlen. \"Ich hab ihn 30 Minuten unter kaltes Wasser gehalten\" — das macht den Schaden bei Kindern größer, nicht kleiner.\n\nSandras Reaktion — 8 Min lauwarmes Wasser, nur lokal, Restkörper warm — war **leitlinienkonform**.",
+        kerntextB1:
+          "**Kühlung bei kleinen Kindern (DGV/GNPI 2023):**\n\n• **Höchstens 10 Minuten** kühlen — nur an der verletzten Stelle.\n\n• **Lauwarmes Wasser** (~20 °C) — kein Eis, kein kaltes Wasser.\n\n• **Rest des Körpers warm halten** — Decke drüber.\n\n**Warum so kurz?** Kleine Kinder kühlen schnell aus. Das heißt: Der ganze Körper wird kalt (= Hypothermie). Das ist gefährlich — es macht die Wundheilung schlechter und kann den Kreislauf verschlechtern.\n\n**Häufigster Fehler:** Zu lange kühlen. 30 Minuten kaltes Wasser schadet Kindern.\n\nSandra hat es richtig gemacht: 8 Minuten, lauwarmes Wasser, nur lokal, Lukas warm zugedeckt.",
+        faustregel:
+          "Kleinkinder: **Max. 10 Min, lauwarm, lokal** — Überkühlung ist gefährlicher als Unterkühlung.",
+        faustregelB1:
+          "Bei kleinen Kindern: Höchstens 10 Minuten kühlen, lauwarmes Wasser, nur an der verletzten Stelle.",
+        spektrum: [
+          {
+            patientName: "Frau M. (82, Sturz)",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "Erwachsene — andere Kühlregeln",
+            kurzbeschreibung:
+              "Bei Erwachsenen gelten bis zu 20 Min Kühlung als vertretbar — das Oberfläche-Masse-Verhältnis ist günstiger, Hypothermie-Risiko geringer. Aber auch bei Erwachsenen: kein Eis, kein eiskaltes Wasser.",
+          },
+          {
+            patientName: "Emilia (8 Wochen, Bronchiolitis)",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Säugling — noch empfindlicher als Kleinkind",
+            kurzbeschreibung:
+              "Bei Säuglingen (<1 Jahr) ist das Hypothermie-Risiko noch höher als bei Lukas. Kühldauer bei Verbrühung noch kürzer (max. 5 Min), Wärmeerhalt noch wichtiger. Emilia hat keine Verbrühung — aber das Prinzip Thermoregulation gilt auch bei ihr.",
+          },
+          {
+            patientName: "Frau Yilmaz (Hüft-TEP)",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Kälteanwendung post-OP vs. Verbrühungskühlung",
+            kurzbeschreibung:
+              "Bei Frau Yilmaz wird Kälte therapeutisch eingesetzt (Kryotherapie post-OP zur Schwellungsreduktion). Anderes Prinzip als Verbrühungskühlung — aber auch hier gilt: max. 20 Min, keine direkte Eisauflage auf der Haut.",
+          },
+        ],
+        sonstBox:
+          "Sonderfälle, die hier nicht vertieft werden: **Chemische Verätzungen** (Kühlung mit Wasser kontraindiziert bei bestimmten Substanzen wie Flusssäure), **Stromverbrennungen** (tiefe Gewebsschädigung ohne große Hautveränderung — Kühlung wenig wirksam), **Inhalationstrauma** (Kühlung der Atemwege nicht möglich — CE-06 Notfallmedizin).",
+        sonstBoxB1:
+          "Andere Situationen: **Chemische Verätzungen** — kein Wasser bei bestimmten Stoffen. **Stromverbrennungen** — Kühlung hilft kaum. **Verbrühung der Atemwege** — man kann sie nicht kühlen. Mehr dazu in CE-06 (Notfälle).",
+        karteikarte: {
+          vorderseite:
+            "Sandra hat Lukas 8 Minuten mit lauwarmem Wasser lokal gekühlt und ihn dann warm zugedeckt. War das korrekt — und warum gelten bei Kleinkindern andere Regeln als bei Erwachsenen?",
+          rueckseite:
+            "Ja, leitlinienkonform (DGV/GNPI 2023). Kleinkinder: max. 10 Min, lauwarm (~20 °C), nur lokal, Restkörper warm. Grund: hohes Oberfläche-Masse-Verhältnis → schnelle systemische Auskühlung (Hypothermie). Hypothermie verschlechtert Wundheilung + verstärkt Schock.\n\nSpektrum: Erwachsene (Frau M.) bis 20 Min, Säugling (Emilia) max. 5 Min. Faustregel: **Max. 10 Min, lauwarm, lokal — Überkühlung ist gefährlicher als Unterkühlung.**",
+        },
+      },
+    },
+
     // Step 1.2 — Text (scenario): Unfallhergang aufnehmen
     {
       stepId: "ce02-lukas-info-02-unfallhergang-aufnehmen",
@@ -89,6 +172,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
       lernziel: "ce02-lukas-info-unfallhergang",
       tag: "pflege",
       displayFormat: "scenario",
+      transition: "Sandra hat die Fakten erzählt. Jetzt kommt der heikle Teil: Das Kinderschutz-Screening.",
       bildkategorie: "szene",
       imageAlt:
         "Kinderstation, junge Mutter hält weinendes Kleinkind auf dem Schoß, Pflegeperson kniet auf Augenhöhe, ruhige Atmosphäre",
@@ -107,6 +191,88 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
         fallbezug:
           "Lukas K., 2,5 J., Verbrühung Grad 2a. Du bist Schüler/in im 2. Ausbildungsdrittel auf der Kinderstation.",
         glossarBegriffe: ["KUSS-Skala", "KOF (Körperoberfläche)", "Hypothermie"],
+      },
+    },
+
+    // Step 1.2b — Inline-Wissen: § 4 KKG Kinderschutz-Screening
+    // Schüler hat in Step 1.2 den Unfallhergang gehört. Bevor der Dialog mit Kevin startet
+    // (1.3), muss er wissen: Was ist das Kinderschutz-Screening, warum ist es Standard, und
+    // warum ist es KEIN Verdacht? Ohne dieses Wissen kann er Kevin nicht richtig antworten.
+    {
+      stepId: "ce02-lukas-info-02b-kinderschutz-screening",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "II.1",
+      quellen: [
+        "§ 4 KKG 2012 — Beratung und Übermittlung von Informationen durch Geheimnisträger",
+        "§ 8a SGB VIII 2012 — Schutzauftrag bei Kindeswohlgefährdung",
+        "Bundesarbeitsgemeinschaft Kinderschutz 2020",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-lukas-info-kinderschutz-grundlagen",
+      tag: "pflege",
+      themaPrimaer: "pflegeprozess",
+      themenSekundaer: ["saeuglingspflege", "pflegedokumentation"],
+      transition: "Mit diesem Wissen gehst du jetzt ins Gespräch. Kevin wird laut werden — du bist vorbereitet.",
+      contentC1: {
+        title: "Kinderschutz-Screening — Standard, nicht Verdacht",
+        body: "",
+        glossarBegriffe: ["§ 4 KKG", "§ 8a SGB VIII", "Kinderschutz-Screening", "Kindeswohlgefährdung"],
+      },
+      contentB1: {
+        title: "Kinderschutz-Screening — was ist das?",
+        body: "",
+        glossarBegriffe: ["§ 4 KKG", "Kinderschutz-Screening"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegeprozess-kinderschutz-screening",
+        storyAufhaenger:
+          "Du musst gleich Kevin erklären, dass bei Lukas ein Kinderschutz-Screening stattfindet. Kevin wird das als Vorwurf verstehen — \"Ihr beschuldigt uns!\" Bevor du dieses Gespräch führst, musst du selbst verstehen: Was ist das Screening, warum gibt es das, und warum ist es KEIN Verdacht?",
+        storyAufhaengerB1:
+          "Du musst Kevin gleich sagen: Es kommt ein Gespräch zum Kinderschutz. Kevin wird das als Vorwurf verstehen. Bevor du mit ihm sprichst: Was ist das Kinderschutz-Screening genau?",
+        kerntext:
+          "**§ 4 KKG (Gesetz zur Kooperation und Information im Kinderschutz, 2012):**\n\nBei jeder **Verbrühung/Verbrennung eines Kindes unter 6 Jahren mit >10 % KOF** ist ein standardisiertes Kinderschutz-Screening vorgeschrieben — nicht weil die Eltern verdächtig sind, sondern weil die **Statistik es erfordert**.\n\n**Die 4 Schritte:**\n\n• **Hinschauen** — Unfallhergang plausibel? Verletzungsmuster passend? Entwicklungsstand des Kindes altersentsprechend?\n\n• **Einschätzen** — geschulte Fachkraft (Sozialarbeit) führt das Gespräch, nicht die Pflege allein.\n\n• **Handeln** — bei konkretem Verdacht: § 8a SGB VIII (Jugendamt einschalten). Ohne konkreten Verdacht: Dokumentation + Empfehlung.\n\n• **Dokumentieren** — sachlich, nicht wertend. Was wurde beobachtet, nicht was vermutet wird.\n\n**Wichtig für dich:** Du führst das Screening nicht durch — das macht die Sozialarbeiterin (Frau Fink). Aber du musst es **ankündigen, erklären und die Eltern vorbereiten**. Und du beobachtest fachlich — Interaktion, Verletzungsmuster, Entwicklungsstand.\n\n**Bei Lukas:** Unfallhergang plausibel (Teetasse, Küche, 2,5 J. = Greifhöhe). Erstversorgung korrekt. U-Heft vorhanden. Kein Hinweis auf Gefährdung.",
+        kerntextB1:
+          "**§ 4 KKG (Kinderschutz-Gesetz, 2012):**\n\nBei jeder **Verbrühung eines kleinen Kindes (unter 6 Jahre, mehr als 10 % KOF)** gibt es ein Kinderschutz-Screening. Das ist **kein Verdacht** — das ist ein Standard.\n\n**4 Schritte:**\n\n• **Hinschauen** — Passt der Unfallhergang? Ist die Verletzung logisch?\n\n• **Einschätzen** — Die Sozialarbeiterin führt das Gespräch.\n\n• **Handeln** — Bei Verdacht: Jugendamt. Ohne Verdacht: Dokumentation.\n\n• **Dokumentieren** — Sachlich aufschreiben, was du beobachtet hast.\n\n**Deine Aufgabe:** Du führst das Screening NICHT durch. Frau Fink macht das. Aber du sagst den Eltern Bescheid. Und du beobachtest: Wie verhalten sich die Eltern? Wie sieht die Verletzung aus?\n\n**Bei Lukas:** Alles passt zusammen. Unfallhergang logisch. Sandra hat richtig reagiert. Kein Verdacht.",
+        faustregel:
+          "Kinderschutz-Screening = Hinschauen, nicht Beschuldigen. Standard bei jedem Kind <6 J. mit Verbrühung >10 % KOF.",
+        faustregelB1:
+          "Kinderschutz-Screening ist Standard, kein Vorwurf. Es gibt das bei jedem kleinen Kind mit Verbrühung.",
+        spektrum: [
+          {
+            patientName: "Emilia (8 Wochen, Bronchiolitis)",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Säugling — besonders enge Kinderschutz-Aufmerksamkeit",
+            kurzbeschreibung:
+              "Bei Säuglingen unter 12 Monaten ist die Schwelle für ein Kinderschutz-Screening noch niedriger. Jede stationäre Aufnahme eines Säuglings mit Verletzung triggert automatisch die Abklärung. Bei Emilia (Bronchiolitis, keine Verletzung) läuft kein Screening — aber die grundsätzliche Aufmerksamkeit ist Teil des pädiatrischen Standards.",
+          },
+          {
+            patientName: "Herr Bauer (82, Demenz)",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Erwachsenenschutz — ähnliches Prinzip, anderes Gesetz",
+            kurzbeschreibung:
+              "Auch bei älteren Menschen gibt es Schutzverfahren: Gewalt in der Pflege, Vernachlässigung in Heimen (§ 19 WTG / § 5 LWTG). Das Prinzip ist dasselbe — standardisiertes Hinschauen, nicht Verdacht. Bauer lebt allein mit Demenz — Vernachlässigungsrisiko wird bei der Entlassung geprüft.",
+          },
+          {
+            patientName: "Frau Schmidt (BMI 38, Polyneuropathie)",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Kein Kinderschutz — aber Selbstvernachlässigung",
+            kurzbeschreibung:
+              "Bei Frau Schmidt geht es nicht um Kinderschutz, sondern um die Frage der Selbstvernachlässigung bei chronischer Erkrankung. Prinzip der sachlichen Einschätzung ist ähnlich: beobachten, nicht werten.",
+          },
+        ],
+        sonstBox:
+          "Erweiterte Kinderschutz-Systematik: **Anhaltsbogen für ein vertiefendes Gespräch** (Bundesarbeitsgemeinschaft Kinderschutz 2020) — 15 standardisierte Items zu Verletzungsmuster, Eltern-Kind-Interaktion, Anamnese-Konsistenz. **Rechtsmedizinische Konsultation** — bei unklarem Verletzungsmuster kann ein rechtsmedizinisches Gutachten angefordert werden (CE-Übergreifend: CE-06 Notfallmedizin, CE-11 Psychiatrie).",
+        sonstBoxB1:
+          "Mehr zum Kinderschutz: Es gibt einen **Anhaltsbogen** (= Liste mit 15 Fragen, die man systematisch prüft). Bei unklaren Verletzungen kann ein **Rechtsmediziner** um Einschätzung gebeten werden. Das lernst du vertieft in CE-06 und CE-11.",
+        karteikarte: {
+          vorderseite:
+            "Kevin fragt dich aufgebracht: \"Warum kommt eine Sozialarbeiterin? Beschuldigt ihr uns?\" — Was antwortest du, und auf welcher gesetzlichen Grundlage basiert das Screening?",
+          rueckseite:
+            "§ 4 KKG 2012: Bei jeder Verbrühung/Verbrennung eines Kindes <6 J. mit >10 % KOF ist ein standardisiertes Kinderschutz-Screening Pflicht. 4 Schritte: Hinschauen → Einschätzen → Handeln → Dokumentieren. Es ist kein Verdacht, sondern ein systematischer Abklärungsprozess.\n\nSpektrum: Bei Säuglingen (Emilia) noch niedrigere Schwelle, bei Erwachsenen (Bauer) ähnliches Prinzip über WTG.\n\nFaustregel: **Kinderschutz-Screening = Hinschauen, nicht Beschuldigen.**",
+        },
       },
     },
 

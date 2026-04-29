@@ -1,6 +1,6 @@
 // CE-02 Situation Frau Schmidt — Phase 3: Pflege planen
-// Steps: 6 · Bloom: B3–B5 · Zeit: ~25–35 Min
-// Quelle: phase-planen.md
+// Steps: 6 + 1 Inline-Wissen · Bloom: B2–B5 · Zeit: ~30–40 Min
+// Quelle: phase-planen.md + inline-wissen-generator
 
 import type { SituationsPhase } from "../../../_types";
 
@@ -148,6 +148,91 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_PLANEN: SituationsPhase = {
             { id: "a7", text: "Metformin-Dauerdosierung nach BZ-Tagesprofil — ärztliche Anpassung im Verlauf", correctQuadrant: 4 },
             { id: "a8", text: "Gynäkologie-Überweisung Belastungsinkontinenz nach Entlassung (ambulant)", correctQuadrant: 4 },
           ],
+        },
+      },
+    },
+
+    // Step 3.3b — Inline-Wissen: Dekubitus-Prophylaxe bei Adipositas (Wiederbegegnung Yilmaz)
+    // Schüler hat Intertrigo in Phase 2 gelernt. Jetzt: Dekubitus-Prophylaxe als
+    // Wiederbegegnung (zentral bei Yilmaz gelehrt). Hier: Was ist bei Adipositas anders?
+    // Relevant für Step 3.4 (Hautpflege planen) und Step 4.1 (Hautfalten-Pflege durchführen).
+    {
+      stepId: "ce02-schmidt-plan-03b-dekubitus-wiederbegegnung",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP (2017): Expertenstandard Dekubitusprophylaxe in der Pflege",
+        "EPUAP/NPIAP/PPPIA (2019): International Guideline — Prevention and Treatment of Pressure Ulcers/Injuries",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-schmidt-plan-dekubitus",
+      tag: "pflege",
+      themaPrimaer: "dekubitus-prophylaxe",
+      themenSekundaer: ["haut"],
+      transition: "Dekubitus-Risiko erkannt. Jetzt planst du die konkrete Hautpflege für heute Morgen.",
+      contentC1: {
+        title: "Dekubitus bei Adipositas — Wiederbegegnung",
+        body: "",
+        glossarBegriffe: ["Dekubitus", "Braden-Skala", "Scherkraft"],
+      },
+      contentB1: {
+        title: "Dekubitus bei Übergewicht — was ist anders?",
+        body: "",
+        glossarBegriffe: ["Dekubitus", "Braden-Skala"],
+      },
+      inlineWissen: {
+        bausteinRef: "dekubitus-prophylaxe-haut-ernaehrung",
+        wiederbegegnung: {
+          basisBausteinId: "dekubitus-prophylaxe-definition",
+          basisPatient: "Frau Yilmaz",
+          vertiefung:
+            "Dekubitus kennst du von Frau Yilmaz (Hüft-TEP, Sakralregion). Bei Frau Schmidt kommt eine Besonderheit dazu: Adipositas verändert die Druckverteilung. Das Eigengewicht erzeugt höheren Auflagedruck auf Sakrum und Fersen. Gleichzeitig sind Hautfalten ein eigenes Risiko (Feuchtigkeit + Scherkraft). Und: Proteinmangel (Albumin 31 g/l) verzögert die Wundheilung zusätzlich — Dekubitus-Prävention und Ernährung hängen hier direkt zusammen.",
+          vertiefungB1:
+            "Dekubitus kennst du von Frau Yilmaz. Bei Frau Schmidt ist eine Sache anders: Sie ist schwerer. Das Gewicht drückt stärker auf Steißbein und Fersen. Außerdem fehlt ihr Eiweiß (Albumin niedrig) — deshalb heilen Wunden langsamer. Dekubitus-Schutz und Ernährung hängen zusammen.",
+        },
+        storyAufhaenger:
+          "Du planst jetzt die Hautpflege für Frau Schmidt. Intertrigo in den Falten hast du gerade gelernt. Aber was ist mit Dekubitus? Du kennst das Thema von Frau Yilmaz — bei Frau Schmidt gibt es eine wichtige Besonderheit.",
+        storyAufhaengerB1:
+          "Du planst jetzt die Haut-Pflege. Dekubitus kennst du schon von Frau Yilmaz. Aber bei Frau Schmidt ist etwas anders. Was?",
+        kerntext:
+          "**Dekubitus bei Adipositas — 3 Besonderheiten** (DNQP 2017, EPUAP 2019):\n\n**1. Erhöhter Auflagedruck:**\n\nBei BMI 38 liegt deutlich mehr Gewicht auf Sakrum und Fersen. Standard-Matratzen reichen oft nicht — Schwerlast-Wechseldruckmatratze ab ca. 120 kg prüfen.\n\n**2. Scherkraft in Hautfalten:**\n\nWenn Frau Schmidt sich im Bett dreht, gleiten Hautschichten in der Abdomen-Hängefalte gegeneinander. Scherkraft + Feuchtigkeit = doppeltes Risiko (Intertrigo + Druckschaden gleichzeitig).\n\n**3. Ernährung als Risikofaktor:**\n\nAlbumin 31 g/l = reduzierte Wundheilung. Proteinmangel bei Adipositas ist ein unterschätzter Dekubitus-Risikofaktor. EPUAP 2019 empfiehlt bei Dekubitus-Risiko: Proteinzufuhr auf 1,25-1,5 g/kg Idealgewicht/Tag.\n\n**Braden-Skala bei Adipositas:**\n\nKategorie \"Ernährung\" oft falsch hoch bewertet (\"isst ja genug\"). Bei Proteinmangel trotz Adipositas: Ernährungs-Score nach unten korrigieren.",
+        kerntextB1:
+          "**Dekubitus bei Übergewicht — 3 Besonderheiten:**\n\n**1. Mehr Gewicht = mehr Druck:**\n\nFrau Schmidt ist schwer. Das Steißbein und die Fersen werden stärker gedrückt. Eine spezielle Matratze kann helfen.\n\n**2. Haut-Falten verschieben sich:**\n\nWenn sie sich dreht, gleiten die Hautschichten in der Bauch-Falte übereinander. Das schädigt die Haut zusätzlich.\n\n**3. Ernährung und Wundheilung:**\n\nAlbumin niedrig = Wunden heilen langsamer. Mehr Eiweiß essen hilft auch gegen Dekubitus.\n\n**Braden-Skala:** Bei Frau Schmidt nicht vergessen: Sie isst zwar viel — aber zu wenig Eiweiß. Der Ernährungs-Punkt in der Braden-Skala muss niedrig bewertet werden.",
+        faustregel:
+          "Adipositas + Proteinmangel = doppeltes Dekubitus-Risiko. Ernährung ist Dekubitus-Prophylaxe.",
+        faustregelB1:
+          "Übergewicht + Eiweiß-Mangel = doppeltes Dekubitus-Risiko. Gute Ernährung schützt vor Dekubitus.",
+        spektrum: [
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-spirale2",
+            hauptfaktor: "Dekubitus Kat. II Sakrum",
+            kurzbeschreibung:
+              "Basis-Patientin für Dekubitus: Post-OP, Immobilität. Bei ihr ist Druck durch Lagerung der Hauptfaktor — nicht Ernährung.",
+          },
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Hemiparese + Spastik",
+            kurzbeschreibung:
+              "Einseitige Immobilität + Spastik erzeugt asymmetrischen Druck. Dekubitus-Risiko auf der gelähmten Seite deutlich höher. Bei ihm: Bobath-Lagerung + Mikrolagerung.",
+          },
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz + Immobilität",
+            kurzbeschreibung:
+              "Liegt zunehmend, weil er den Sinn des Aufstehens nicht versteht. Dekubitus-Gefahr durch kognitive Barriere: Er spürt den Druck, versteht aber nicht, dass er sich umdrehen muss.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Warum hat Frau Schmidt (BMI 38, Albumin 31 g/l) ein erhöhtes Dekubitus-Risiko — obwohl sie mobil ist?",
+          rueckseite:
+            "3 Faktoren: 1) Erhöhter Auflagedruck durch Eigengewicht (Sakrum, Fersen). 2) Scherkraft in Hautfalten (Intertrigo + Druck gleichzeitig). 3) Proteinmangel trotz Adipositas (Albumin 31 g/l) = verzögerte Wundheilung.\n\nBraden: Ernährungs-Score nicht falsch hoch bewerten. EPUAP 2019: 1,25-1,5 g Protein/kg Idealgewicht/Tag.\n\nFaustregel: **Ernährung ist Dekubitus-Prophylaxe.**",
         },
       },
     },

@@ -1,7 +1,8 @@
 // CE-02 Situation Herr Bauer — Demenz und Sturz — Phase 5: Evaluieren
-// Steps: 6 (4 Kern + 2 Optional) · Bloom: B4-B5 (mit B6-Anteil in Reflexion)
+// Steps: 7 (4 Kern + 1 Inline-Wissen + 2 Optional) · Bloom: B2-B5 (mit B6-Anteil in Reflexion)
 // Quelle: content/ce-02/situationen/ls-bauer-demenz-sturz/phase-evaluieren.md
 // Pipeline v9 — 2026-04-23
+// Inline-Wissen: 1 Baustein (sturz-prophylaxe Wiederbegegnung — Evaluation)
 
 import type { SituationsPhase } from "../../../_types";
 
@@ -79,6 +80,91 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
             correctCategory: 1,
           },
         ],
+      },
+    },
+
+    // Step 5.1b — Inline-Wissen: Sturz-Prophylaxe Evaluation (Wiederbegegnung)
+    // Sturz-Prophylaxe-Maßnahmen wurden in Phase 3 geplant. Hier: Wie evaluiert
+    // man ob Sturzschutz-Maßnahmen wirken? Was ist der Unterschied zwischen
+    // "kein Sturz heute" und "wirksamer Sturzschutz"?
+    {
+      stepId: "ce02-bauer-eval-01b-sturzschutz-evaluation",
+      phase: 5,
+      stepType: "inlineWissen",
+      bloomLevel: 3,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP 2022 — Expertenstandard Sturzprophylaxe, Kriterium E5",
+        "Fiechter/Meier (1981): Pflegeprozess-Modell",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-eval-sturzschutz-evaluation",
+      tag: "pflege",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["kontraktur-prophylaxe"],
+      transition: "Sturzschutz evaluiert. Jetzt wartet Ingrid — das schwierigste Gespraech des Tages.",
+      contentC1: {
+        title: "Sturzschutz evaluieren — wann ist eine Maßnahme wirksam?",
+        body: "",
+        glossarBegriffe: ["Evaluation", "Sturzprophylaxe", "DNQP Kriterium E5"],
+      },
+      contentB1: {
+        title: "Hat der Sturzschutz funktioniert?",
+        body: "",
+        glossarBegriffe: ["Evaluation", "Sturzschutz"],
+      },
+      inlineWissen: {
+        bausteinRef: "sturz-prophylaxe-evaluation",
+        wiederbegegnung: {
+          basisBausteinId: "sturz-prophylaxe-risikofaktoren-spektrum",
+          basisPatient: "Frau M.",
+          vertiefung:
+            "Sturzrisikofaktoren und Maßnahmen kennst du — jetzt die Evaluations-Frage: Herr Bauer ist heute nicht gestuerzt. Heißt das, die Maßnahmen wirken? Nicht unbedingt. Der DNQP 2022 (Kriterium E5) unterscheidet: **Ergebnis-Evaluation** (kein Sturz) und **Prozess-Evaluation** (wurden alle Maßnahmen umgesetzt?). Beides zusammen ergibt das Bild.",
+          vertiefungB1:
+            "Du kennst die Sturzrisiken von Phase 1 und die Maßnahmen von Phase 3. Herr Bauer ist heute nicht gestuerzt. Heißt das, alles hat funktioniert? Nicht unbedingt. Du musst pruefst: Wurden alle Maßnahmen gemacht? Und: Hat er nicht gestuerzt WEIL sie gemacht wurden?",
+        },
+        storyAufhaenger:
+          "Es ist 15:30 Uhr. Herr Bauer ist heute nicht gestuerzt. Trinkmenge bei 1000 ml (Ziel 1500). Nachtlicht und Niedrigbett stehen noch nicht. War der Tag ein Erfolg?",
+        storyAufhaengerB1:
+          "Es ist 15:30 Uhr. Herr Bauer ist nicht gestuerzt. Aber er hat nur 1000 ml getrunken und Nachtlicht fehlt noch. War das ein guter Tag?",
+        kerntext:
+          "Der DNQP 2022 (Kriterium E5) fordert bei Sturzprophylaxe eine **systematische Evaluation** — nicht nur \"ist er gestuerzt oder nicht\".\n\n**Zwei Evaluations-Ebenen:**\n\n• **Ergebnis-Evaluation:** Hat sich das Sturzrisiko veraendert? Bei Herr Bauer: kein erneuter Sturz heute — aber das Risikoprofil ist unveraendert (Demenz + Mirtazapin + Inkontinenz + Desorientierung). Einzelergebnis ≠ Risikoreduktion.\n\n• **Prozess-Evaluation:** Wurden alle geplanten Maßnahmen umgesetzt?\n  - Niedrigbett eingerichtet? → **Nein** (noch nicht umgesetzt)\n  - Nachtlicht installiert? → **Nein** (Uebergabe an Nachtdienst)\n  - Toilettengang vor Schlafengehen? → **Noch nicht geprueft**\n  - Mirtazapin-Dosis beim Arzt gemeldet? → **Ja**\n  - Sensormatte bestellt? → **Nein** (offen)\n\n**Evaluation-Intervalle bei hohem Sturzrisiko:**\n\n• Taeglich in den ersten 72h nach Sturzereignis\n• Dann woechentlich\n• Bei jedem Sturzfolge-Ereignis sofort neu\n\n**Sturz trotz Maßnahmen?** Kein Versagen — aber Anlass fuer Re-Assessment und Plan-Anpassung.",
+        kerntextB1:
+          "Evaluation heißt: **Pruefe ob dein Plan funktioniert hat.**\n\n**Zwei Fragen:**\n\n• **Ist er gestuerzt?** Heute nicht — gut. Aber sein Risiko ist noch genau so hoch wie gestern.\n\n• **Wurden alle Maßnahmen gemacht?**\n  - Niedrigbett? → Nein\n  - Nachtlicht? → Nein\n  - Toilette vor dem Schlafen? → Noch nicht geprueft\n  - Arzt wegen Mirtazapin? → Ja\n\n**Wann evaluieren?**\n\n• Erste 3 Tage nach Sturz: taeglich\n• Dann: jede Woche\n• Bei neuem Sturz: sofort",
+        faustregel:
+          "Kein Sturz heute heißt nicht: Sturzschutz wirkt. Erst wenn alle Maßnahmen umgesetzt UND kein Sturz = Erfolg.",
+        faustregelB1:
+          "Kein Sturz heute = gut. Aber erst wenn ALLE Maßnahmen auch gemacht sind, kannst du sagen: Es funktioniert.",
+        spektrum: [
+          {
+            patientName: "Frau M.",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "Erster Sturz, Parkinson",
+            kurzbeschreibung:
+              "Bei Frau M. zeigt die Evaluation nach 72h: Schellong-Protokoll, NRS-Verlauf, Betthoehe angepasst, Rufknopf in Reichweite. Ihr Sturz war situativ (Pneumonie + Nacht) — Risiko sinkt mit Genesung.",
+          },
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP, Erstmobilisation",
+            kurzbeschreibung:
+              "Nach Hueft-TEP: Evaluation fokussiert auf Mobilisationsfortschritt (Tag 1: Bettrand, Tag 2: Stehen, Tag 3: erste Schritte). Sturzschutz = engmaschige Physiotherapie + Gehwagen.",
+          },
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Polyneuropathie, chronisch",
+            kurzbeschreibung:
+              "Bei chronischem Sturzrisiko (Polyneuropathie): Evaluation nicht taeglich sondern monatlich. Ziel: Stabilitaet erhalten, nicht Risiko eliminieren. Schuhwerk-Check, Fußinspektion, Gleichgewichtsuebungen.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Herr Bauer ist heute nicht gestuerzt. Nachtlicht und Niedrigbett stehen noch nicht. Ist die Sturzprophylaxe erfolgreich?",
+          rueckseite:
+            "**Nein** — Ergebnis (kein Sturz) ≠ Prozess (Maßnahmen umgesetzt). DNQP 2022, E5 fordert **beide** Evaluationsebenen. Bei Herrn Bauer: Nachtlicht, Niedrigbett, Sensormatte NICHT umgesetzt → Prozess-Evaluation NICHT bestanden. Evaluations-Intervalle: taeglich in 72h nach Sturz, dann woechentlich. Spektrum: Frau M. (situativ, sinkt mit Genesung), Yilmaz (Mobilisationsfortschritt), Schmidt (chronisch, monatlich). Faustregel: **Kein Sturz + alle Maßnahmen umgesetzt = Erfolg. Kein Sturz allein = Zufall.**",
+        },
       },
     },
 

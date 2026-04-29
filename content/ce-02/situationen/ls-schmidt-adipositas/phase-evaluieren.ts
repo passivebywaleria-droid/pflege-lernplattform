@@ -1,6 +1,6 @@
 // CE-02 Situation Frau Schmidt — Phase 5: Evaluieren
-// Steps: 5 · Bloom: B4–B6 · Zeit: ~20–30 Min
-// Quelle: phase-evaluieren.md
+// Steps: 5 + 1 Inline-Wissen · Bloom: B2–B6 · Zeit: ~25–35 Min
+// Quelle: phase-evaluieren.md + inline-wissen-generator
 
 import type { SituationsPhase } from "../../../_types";
 

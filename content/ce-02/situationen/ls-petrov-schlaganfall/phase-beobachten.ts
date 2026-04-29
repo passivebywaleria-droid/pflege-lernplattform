@@ -14,11 +14,60 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
   kontextB1:
     "Du stehst am Bett von Herrn Petrov. Es ist 07:25 Uhr. Du hast dich vorgestellt. Er hat genickt. Jetzt schaust du genau hin. Bevor du etwas tust, beobachtest du. Du stellst dir die Frage: Wie geht es ihm heute Morgen?",
   kernSteps: [
-    // Step 2.0b — Inline-Wissen: Bobath-Konzept
-    // Bevor der Schüler die Motorik beobachtet, soll er das Bobath-Konzept als Grundhaltung
-    // kennen. Es durchzieht die gesamte Situation.
+    // Step 2.1 — Freetext: Motorik-Brilliantfrage
     {
-      stepId: "ce02-petrov-beob-00b-bobath-konzept",
+      stepId: "ce02-petrov-beob-01-motorik-brilliantfrage",
+      phase: 2,
+      stepType: "freetext",
+      bloomLevel: 3,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Bobath B. 1990 Adult Hemiplegia",
+        "DNQP Mobilität 2020",
+      ],
+      track: "basis",
+      modus: "schreibtisch",
+      lernziel: "ce02-petrov-beob-motorik",
+      tag: "pflege",
+      transition: "Du siehst was nicht da ist — fehlende Bewegung, fehlender Tonus. Aber wie gehst du damit um? Dafür gibt es ein Konzept.",
+      bildkategorie: "szene",
+      imageAlt:
+        "Pflegeschüler beobachtet Patienten mit schlaff hängendem rechten Arm am Bett, Frühschicht",
+      bildhinweis:
+        "Nurse student observing stroke patient in hospital bed, right arm lying limp on mattress, morning light, attentive professional posture, copic marker sketch style, absolutely no text no labels no words",
+      contentC1: {
+        title: "BRILLIANT-FRAGE: Was siehst du?",
+        body: "Vor dir die Beschreibung: Herrn Petrovs rechter Arm liegt gestreckt auf der Matratze. Er schaut auf ihn — der Arm bewegt sich nicht. Sein rechtes Bein kann er minimal heben, aber der Fuß hängt nach unten.\n\nBevor wir erklären, was das bedeutet: Beschreibe in 1-2 Sätzen was du siehst und was das für die Pflege bedeuten könnte.",
+        glossarBegriffe: ["Muskeltonus", "Lagerung", "Hemiparese"],
+      },
+      contentB1: {
+        title: "Was siehst du?",
+        body: "Schau dir Herrn Petrovs rechten Arm an. Der Arm liegt auf der Matratze. Er bewegt sich nicht. Herr Petrov schaut auf seinen Arm. Sein rechter Fuß hängt nach unten. Was siehst du? Schreibe 1-2 Sätze. Zum Beispiel: \"Ich sehe, dass der rechte Arm keine Spannung hat. Die Lagerung ist falsch.\"",
+        glossarBegriffe: ["Lagerung", "Hemiparese"],
+      },
+      question: {
+        fragetext:
+          "Was nimmst du wahr, bevor du irgendetwas anfasst? Beschreibe in 1-2 Sätzen was du siehst und was das für die Pflege bedeuten könnte.",
+        musterantwort:
+          "Der rechte Arm liegt schlaff und gestreckt auf der Matratze — kein Tonus, keine Eigenaktivität. Der hängende Fuß deutet auf fehlende Dorsalflexion hin. Die Lagerung muss Bobath-gerecht korrigiert werden: Schulter nach vorne, Arm gestützt auf Kissen, Fuß neutral.",
+        bewertungskriterien: [
+          "Erwähnung von Tonus oder fehlender Spannung im Arm",
+          "Erwähnung der Lagerung oder Notwendigkeit zur Korrektur",
+          "Beobachtung als Vorstufe zur Handlung formuliert",
+        ],
+        satzanfaengeB1: [
+          "Ich sehe, dass der rechte Arm ...",
+          "Der Fuß hängt ...",
+          "Das bedeutet für die Pflege: ...",
+        ],
+      },
+    },
+
+    // Step 2.1b — Inline-Wissen: Bobath-Konzept
+    // Schüler hat in Step 2.1 beobachtet was er sieht. Bevor er die Motorik einordnet,
+    // braucht er das Bobath-Konzept als Grundhaltung für die gesamte Situation.
+    {
+      stepId: "ce02-petrov-beob-01b-bobath-konzept",
       phase: 2,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -33,7 +82,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
       tag: "pflege",
       themaPrimaer: "mobilisation",
       themenSekundaer: ["kontraktur-prophylaxe", "kinaesthetik"],
-      transition: "Bobath im Kopf. Jetzt schauen wir Herrn Petrov an — genau beobachten, bevor du handelst.",
+      transition: "Bobath im Kopf. Jetzt ordnest du ein was du beobachtet hast.",
       contentC1: {
         title: "Bobath-Konzept — die betroffene Seite ist nicht weg",
         body: "",
@@ -47,9 +96,9 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
       inlineWissen: {
         bausteinRef: "mobilisation-bobath-konzept",
         storyAufhaenger:
-          "Du betrittst das Zimmer und siehst: Herrn Petrovs rechter Arm liegt schlaff auf der Matratze. Dein erster Impuls könnte sein, alles mit seiner linken Hand zu machen — sie funktioniert ja. Aber genau das wäre falsch. Das Bobath-Konzept sagt: Die betroffene Seite gehört dazu.",
+          "Du hast gerade beobachtet: Herrn Petrovs rechter Arm liegt schlaff auf der Matratze. Dein erster Impuls könnte sein, alles mit seiner linken Hand zu machen — sie funktioniert ja. Aber genau das wäre falsch. Das Bobath-Konzept sagt: Die betroffene Seite gehört dazu.",
         storyAufhaengerB1:
-          "Du siehst Herrn Petrovs rechten Arm. Er bewegt sich nicht. Dein erster Gedanke: Alles mit der linken Hand machen. Aber das ist falsch. Die rechte Seite gehört dazu — das sagt das Bobath-Konzept.",
+          "Du hast gesehen: Herrn Petrovs rechter Arm bewegt sich nicht. Dein erster Gedanke: Alles mit der linken Hand machen. Aber das ist falsch. Die rechte Seite gehört dazu — das sagt das Bobath-Konzept.",
         kerntext:
           "**Berta und Karel Bobath** (1948/1990) entwickelten das Konzept für die Pflege und Therapie hemiparetischer Patienten.\n\n**3 Kernprinzipien:**\n\n• **Betroffene Seite einbeziehen** — nicht kompensieren, nicht übergehen. Die rechte Seite von Herrn Petrov bekommt Reize, Berührung, Positionierung.\n\n• **Bewegungsangebote machen, nicht übernehmen** — der Patient bewegt sich selbst, du begleitest und sicherst. Kein Heben unter den Achseln, kein Ziehen am Arm.\n\n• **Neuroplastizität nutzen** — das Gehirn kann neue Verbindungen bilden, besonders in den ersten 3 Monaten. Jede Bewegung der betroffenen Seite ist ein Training für das Gehirn.\n\n**Merkhilfe Kleidung:**\nAusziehen: Gesunde Seite zuerst (damit die betroffene Seite geschützt bleibt).\nAnziehen: Betroffene Seite zuerst (weil sie weniger flexibel ist).\n\n**Verboten:** Zug am betroffenen Arm (Subluxationsgefahr der Schulter), Griff unter die Achseln, einseitige Kompensation über die gesunde Seite.",
         kerntextB1:
@@ -85,54 +134,6 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
           rueckseite:
             "Bobath-Konzept (1948/1990): Betroffene Seite einbeziehen, nicht kompensieren. Reize fördern Neuroplastizität — das Gehirn bildet in den ersten 3 Monaten am stärksten neue Verbindungen. Verboten: Zug am betroffenen Arm (Subluxationsgefahr). Spektrum: Frau M. (Kinästhetik, nicht Bobath), Yilmaz (Post-OP, selbst mobilisieren), Bauer (Basale Stimulation bei Demenz). Faustregel: **Die betroffene Seite ist nicht weg — sie braucht gezielte Angebote.**",
         },
-      },
-    },
-
-    // Step 2.1 — Freetext: Motorik-Brilliantfrage
-    {
-      stepId: "ce02-petrov-beob-01-motorik-brilliantfrage",
-      phase: 2,
-      stepType: "freetext",
-      bloomLevel: 3,
-      kompetenzbereich: "I.1",
-      quellen: [
-        "Bobath B. 1990 Adult Hemiplegia",
-        "DNQP Mobilität 2020",
-      ],
-      track: "basis",
-      modus: "schreibtisch",
-      lernziel: "ce02-petrov-beob-motorik",
-      tag: "pflege",
-      bildkategorie: "szene",
-      imageAlt:
-        "Pflegeschüler beobachtet Patienten mit schlaff hängendem rechten Arm am Bett, Frühschicht",
-      bildhinweis:
-        "Nurse student observing stroke patient in hospital bed, right arm lying limp on mattress, morning light, attentive professional posture, copic marker sketch style, absolutely no text no labels no words",
-      contentC1: {
-        title: "BRILLIANT-FRAGE: Was siehst du?",
-        body: "Vor dir die Beschreibung: Herrn Petrovs rechter Arm liegt gestreckt auf der Matratze. Er schaut auf ihn — der Arm bewegt sich nicht. Sein rechtes Bein kann er minimal heben, aber der Fuß hängt nach unten.\n\nBevor wir erklären, was das bedeutet: Beschreibe in 1-2 Sätzen was du siehst und was das für die Pflege bedeuten könnte.",
-        glossarBegriffe: ["Muskeltonus", "Lagerung", "Hemiparese"],
-      },
-      contentB1: {
-        title: "Was siehst du?",
-        body: "Schau dir Herrn Petrovs rechten Arm an. Der Arm liegt auf der Matratze. Er bewegt sich nicht. Herr Petrov schaut auf seinen Arm. Sein rechter Fuß hängt nach unten. Was siehst du? Schreibe 1-2 Sätze. Zum Beispiel: \"Ich sehe, dass der rechte Arm keine Spannung hat. Die Lagerung ist falsch.\"",
-        glossarBegriffe: ["Lagerung", "Hemiparese"],
-      },
-      question: {
-        fragetext:
-          "Was nimmst du wahr, bevor du irgendetwas anfasst? Beschreibe in 1-2 Sätzen was du siehst und was das für die Pflege bedeuten könnte.",
-        musterantwort:
-          "Der rechte Arm liegt schlaff und gestreckt auf der Matratze — kein Tonus, keine Eigenaktivität. Der hängende Fuß deutet auf fehlende Dorsalflexion hin. Die Lagerung muss Bobath-gerecht korrigiert werden: Schulter nach vorne, Arm gestützt auf Kissen, Fuß neutral.",
-        bewertungskriterien: [
-          "Erwähnung von Tonus oder fehlender Spannung im Arm",
-          "Erwähnung der Lagerung oder Notwendigkeit zur Korrektur",
-          "Beobachtung als Vorstufe zur Handlung formuliert",
-        ],
-        satzanfaengeB1: [
-          "Ich sehe, dass der rechte Arm ...",
-          "Der Fuß hängt ...",
-          "Das bedeutet für die Pflege: ...",
-        ],
       },
     },
 
@@ -253,6 +254,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-petrov-beob-lunge",
       tag: "krankheitslehre",
+      transition: "Atmung beobachtet. Jetzt zum Katheter — aber vorher: Was musst du über Katheter-Hygiene wissen?",
       displayFormat: "stepbystep",
       contentC1: {
         title: "Atembeobachtung — 4 Schritte",
@@ -499,6 +501,80 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
               label: "Rechter Ellenbogen",
             },
           ],
+        },
+      },
+    },
+
+    // Step 2.6b — Inline-Wissen: Kontraktur-Prophylaxe bei Hemiparese
+    // In der Risikosynthese (Step 2.7) erscheint "Kontraktur". Hier die Erklärung vorher.
+    {
+      stepId: "ce02-petrov-beob-06b-kontraktur-prophylaxe",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Bobath B. 1990 — Adult Hemiplegia",
+        "DNQP 2020 — Expertenstandard Mobilität",
+        "Ada L./Dorsch S./Canning C.G. 2006 Stroke 37:2868-2875",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-petrov-beob-kontraktur",
+      tag: "krankheitslehre",
+      themaPrimaer: "kontraktur-prophylaxe",
+      themenSekundaer: ["mobilisation"],
+      transition: "Kontraktur — ein stiller Feind. Jetzt ordnest du alle Risiken von Herrn Petrov in einer Matrix.",
+      contentC1: {
+        title: "Kontraktur-Prophylaxe — wenn Gelenke steif werden",
+        body: "",
+        glossarBegriffe: ["Kontraktur", "Spastik", "passive Bewegung", "Gelenk"],
+      },
+      contentB1: {
+        title: "Was ist eine Kontraktur?",
+        body: "",
+        glossarBegriffe: ["Kontraktur", "Gelenk", "Bewegung"],
+      },
+      inlineWissen: {
+        bausteinRef: "kontraktur-prophylaxe-grundlagen",
+        storyAufhaenger:
+          "Du schaust auf Herrn Petrovs rechten Arm. Er liegt schlaff auf der Matratze. Kein Muskeltonus, kein Griff, keine Eigenaktivität. Was passiert mit einem Gelenk, das tagelang nicht bewegt wird? Es versteift. Langsam, unmerklich, aber irreversibel wenn man es nicht verhindert.",
+        storyAufhaengerB1:
+          "Herrn Petrovs rechter Arm bewegt sich nicht. Was passiert mit einem Gelenk, das tagelang still liegt? Es wird steif. Das heißt Kontraktur.",
+        kerntext:
+          "**Kontraktur** = dauerhafte Verkürzung von Muskeln, Sehnen oder Bändern. Das Gelenk lässt sich nicht mehr vollständig bewegen.\n\n**Warum bei Herrn Petrov?**\n\n• Rechter Arm ist schlaff (keine Eigenaktivität) — Schulter, Ellenbogen, Handgelenk, Finger sind kontrakturgefährdet.\n\n• Rechter Fuß hängt nach unten (Fallfuß/Spitzfuß-Risiko) — ohne Korrektur versteift die Achillessehne in Plantarflexion.\n\n**Zeitrahmen:** Schon nach **48-72 Stunden** ohne Bewegung beginnen Umbauprozesse im Bindegewebe. Nach 2-3 Wochen sind sie schwer reversibel (Ada et al. 2006).\n\n**Pflege-Maßnahmen nach Bobath:**\n\n• Passive Durchbewegung der betroffenen Gelenke, mindestens 2x täglich, langsam, schmerzfrei\n\n• Lagerungshilfen: Schulter nach vorne, Arm auf Kissen gestützt (nicht hängen lassen)\n\n• Fuß neutral positionieren: Anti-Spitzfuß-Schiene oder Kissen gegen die Fußsohle\n\n• Spastik-Warnung: Ab Woche 2-3 kann sich der schlaffe Tonus in Spastik verwandeln — dann ändern sich die Maßnahmen (Dehnlagerung statt Durchbewegung).",
+        kerntextB1:
+          "**Kontraktur** = ein Gelenk wird dauerhaft steif. Die Muskeln und Sehnen verkürzen sich.\n\n**Warum bei Herrn Petrov?** Sein rechter Arm und sein rechter Fuß bewegen sich nicht. Nach **2-3 Tagen** ohne Bewegung werden die Gelenke steifer.\n\n**Was tust du?**\n\n• Jeden Tag die Gelenke des rechten Arms langsam durchbewegen — schmerzfrei.\n\n• Den Arm auf ein Kissen legen — nicht hängen lassen.\n\n• Den rechten Fuß gerade stellen — mit einem Kissen gegen die Fußsohle.\n\n**Wichtig:** In 2-3 Wochen kann die Schwäche in Steifheit (= Spastik) übergehen. Dann ändern sich die Übungen.",
+        faustregel: "48 Stunden ohne Bewegung — die Uhr für Kontrakturen tickt. Prophylaxe beginnt am Tag der Aufnahme.",
+        faustregelB1: "Schon nach 2 Tagen ohne Bewegung werden Gelenke steif. Deshalb: Jeden Tag bewegen.",
+        spektrum: [
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP, Bewegungsangst",
+            kurzbeschreibung:
+              "Yilmaz bewegt die operierte Hüfte aus Angst nicht genug. Kontrakturrisiko trotz grundsätzlicher Mobilität — hier ist die Angst der Risikofaktor, nicht die Lähmung.",
+          },
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz, Bettlägerigkeit",
+            kurzbeschreibung:
+              "Bauer liegt viel im Bett (Demenz, Unruhe nachts → Erschöpfung tagsüber). Kontrakturrisiko in Hüfte und Knie — passive Durchbewegung schwierig, weil er die Übungen nicht versteht.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "COPD, Schonatmung → Thorax-Kontraktur",
+            kurzbeschreibung:
+              "Kovac hat ein anderes Kontraktur-Risiko: Thorax-Steifigkeit durch jahrelange Schonatmung bei COPD. Die Atemmuskulatur wird unbeweglich — Atemübungen sind hier Kontraktur-Prophylaxe.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Herrn Petrovs rechter Fuß hängt seit 5 Tagen nach unten (Plantarflexion). Was droht ohne Intervention — und wie verhinderst du es?",
+          rueckseite:
+            "Spitzfuß-Kontraktur: Die Achillessehne verkürzt sich dauerhaft bei Plantarflexion > 48-72 h. Prophylaxe: Fuß neutral positionieren (Anti-Spitzfuß-Schiene oder Kissen), passive Dorsalflexion 2x täglich, Lagerung nach Bobath. Spektrum: Yilmaz (Bewegungsangst post-OP), Bauer (Bettlägerigkeit bei Demenz), Kovac (Thorax-Kontraktur bei COPD). Faustregel: **48 Stunden ohne Bewegung — die Uhr für Kontrakturen tickt.**",
         },
       },
     },

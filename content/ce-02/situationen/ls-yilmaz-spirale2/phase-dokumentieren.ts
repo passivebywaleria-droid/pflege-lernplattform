@@ -15,6 +15,83 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
   kontextB1:
     "Du sitzt am Computer auf der Station. Der Verband ist fertig. Das Foto ist gemacht. Jetzt schreibst du den Wundbericht. Eine gute Dokumentation ist wichtig — für die nächste Schicht, für den Arzt, für die Qualitätssicherung.",
   kernSteps: [
+    // Step 6.0b — Inline-Wissen: Wunddokumentation nach Standard (W-D-E-X-R-Schema)
+    // Bevor der Schueler den Wundbericht frei schreibt, braucht er das Schema:
+    // Welche Informationen MUESSEN in eine Wunddokumentation?
+    {
+      stepId: "ce02-yilmaz-s2-doku-00b-wunddoku-schema",
+      phase: 6,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "§ 630f BGB",
+        "NPUAP/EPUAP/PPPIA 2019",
+        "DNQP 2024",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-doku-wunddoku-schema",
+      tag: "pflege",
+      themaPrimaer: "pflegedokumentation",
+      themenSekundaer: ["dekubitus-prophylaxe", "haut"],
+      transition: "Schema im Kopf? Dann schreib jetzt den Wundbericht fuer Frau Yilmaz.",
+      contentC1: {
+        title: "Wunddokumentation — was muss rein?",
+        body: "",
+        glossarBegriffe: ["Wunddokumentation", "Wundgrund", "Exsudat", "Wundrand"],
+      },
+      contentB1: {
+        title: "Wundbericht — was muss drin stehen?",
+        body: "",
+        glossarBegriffe: ["Wunddokumentation"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegedokumentation-wunddoku-schema",
+        storyAufhaenger:
+          "Du sitzt am Pflegepult. Gleich schreibst du den Wundbericht fuer Frau Yilmaz. Aber Fliesstext ohne Struktur ist ein haeufiger Fehler. Welche Informationen MUESSEN in eine standardkonforme Wunddokumentation?",
+        storyAufhaengerB1:
+          "Du sitzt am Computer. Gleich schreibst du den Wundbericht. Welche Informationen muessen drinstehen?",
+        kerntext:
+          "Eine **vollstaendige Wunddokumentation** folgt einem festen Schema. Merkhilfe: **L-G-F-E-R-A** (Lage, Groesse, Farbe, Exsudat, Rand, Aktion).\n\n• **L — Lokalisation:** Wo ist die Wunde? (Sakrum, zentral)\n\n• **G — Groesse:** Laenge x Breite in cm. Immer mit Masstab messen, nicht schaetzen. Fotodokumentation als Ergaenzung.\n\n• **F — Farbe / Wundgrund:** Rosa-granulativ (Heilung), Rötlich-feucht (Entzuendung), Gelblich (Fibrin/Belag), Schwarz (Nekrose). Prozentualer Anteil bei Mischwunden.\n\n• **E — Exsudat:** Menge (kein/minimal/maessig/viel) + Art (seroes/sanguinolent/purulent).\n\n• **R — Wundrand:** Intakt? Mazeriert? Epithelialisierend? Unterminiert?\n\n• **A — Aktion:** Was wurde gemacht? Welcher Verband? Naechster Wechsel wann?\n\n**Plus Pflichtfelder:** Datum, Uhrzeit, Handzeichen. Reaktion der Patientin. Schmerzangabe (NRS). Foto mit Einwilligung.\n\n**Bei Frau Yilmaz heute (Tag 17):** L = Sakrum, G = 1,5x2,5 cm (ruecklaeufig), F = rosa-granulativ, E = minimal/seroes, R = nicht mazeriert, A = Hydrokolloid-Verband erneuert.",
+        kerntextB1:
+          "Ein **Wundbericht** braucht feste Punkte. Merke: **L-G-F-E-R-A**.\n\n• **L** — Wo ist die Wunde? (Steissbein, Mitte)\n\n• **G** — Wie gross? In cm x cm messen.\n\n• **F** — Welche Farbe hat der Wundgrund? (Rosa = Heilung, Rot = Entzuendung, Gelb = Belag, Schwarz = totes Gewebe)\n\n• **E** — Wie viel Fluessigkeit? (keine / wenig / mittel / viel)\n\n• **R** — Wie sieht der Rand aus? (aufgeweicht? sauber?)\n\n• **A** — Was hast du gemacht? Welcher Verband? Wann naechster Wechsel?\n\n**Und dazu:** Datum, Uhrzeit, dein Name. Reaktion der Patientin. Schmerz-Zahl (NRS). Foto (nur mit Erlaubnis).",
+        faustregel:
+          "L-G-F-E-R-A: Lage, Groesse, Farbe, Exsudat, Rand, Aktion. Plus Datum, Schmerz, Foto.",
+        faustregelB1:
+          "L-G-F-E-R-A: Wo, wie gross, welche Farbe, wie viel Fluessigkeit, wie sieht der Rand aus, was hast du gemacht.",
+        spektrum: [
+          {
+            patientName: "Frau M.",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "Sturzprotokoll vs. Wunddoku",
+            kurzbeschreibung:
+              "Bei Frau M. hast du ein Sturzprotokoll geschrieben. Ein Wundbericht hat ein anderes Schema — weniger Ereignis-Chronologie, mehr Befund-Systematik (L-G-F-E-R-A).",
+          },
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Wunddoku bei Neglect",
+            kurzbeschreibung:
+              "Bei ihm: Wunde an der betroffenen Seite wird vom Patienten nicht wahrgenommen. Die Dokumentation muss explizit vermerken: 'Patient zeigt keine Schmerzreaktion — Neglect-bedingt, nicht schmerzfrei.'",
+          },
+          {
+            patientName: "Emilia",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Wunddoku bei Saeuglingen",
+            kurzbeschreibung:
+              "Haut von Saeuglingen ist duenner und heilt anders. Wundgroesse und -farbe veraendern sich schneller. Dokumentationsintervalle kuerzer (alle 4-6 Stunden statt taeglich).",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Nenne die 6 Pflicht-Elemente einer standardkonformen Wunddokumentation (Merkhilfe!) und erklaere, was bei Frau Yilmaz heute (Tag 17) jeweils einzutragen waere.",
+          rueckseite:
+            "L-G-F-E-R-A:\nL = Sakrum, zentral\nG = 1,5 x 2,5 cm (ruecklaeufig ggue. 2x3 cm Tag 14)\nF = Rosa-granulativ (Heilungszeichen)\nE = Minimal, seroes\nR = Nicht mazeriert (verbessert)\nA = Hydrokolloid-Verband erneuert, Foto mit Einwilligung\n\nPlus: Datum + Uhrzeit, Handzeichen, NRS (0 — Neuropathie), Patientin kooperiert.\n\nFaustregel: **L-G-F-E-R-A + Datum + Schmerz + Foto.**",
+        },
+      },
+    },
+
     // Step 6.1 — Freetext: Wundbericht im Klartext
     {
       stepId: "ce02-yilmaz-s2-doku-01-wundbericht-freitext",

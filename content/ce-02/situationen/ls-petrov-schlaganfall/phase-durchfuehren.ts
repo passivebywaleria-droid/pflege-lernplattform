@@ -243,6 +243,81 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
       },
     },
 
+    // Step 4.4b — Inline-Wissen: Mundpflege bei Aspirationsrisiko
+    // Bevor der Schüler das Frühstück anreicht, muss er wissen: Mundpflege VOR dem Essen senkt
+    // die Aspirationspneumonie-Rate. Bei Herrn Petrov besonders relevant.
+    {
+      stepId: "ce02-petrov-dur-04b-mundpflege-aspiration",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Sjögren P. et al. 2008 — Systematic review oral hygiene and pneumonia, JAGS 56:2124-2130",
+        "KRINKO/RKI 2013 — Nosokomiale Pneumonie",
+        "AWMF S3-Leitlinie Schlaganfall (021-023)",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-petrov-dur-mundpflege",
+      tag: "pflege",
+      themaPrimaer: "mundpflege",
+      themenSekundaer: ["essen-anreichen"],
+      transition: "Mundpflege erledigt. Jetzt: das Frühstück vorbereiten und sicher anreichen.",
+      contentC1: {
+        title: "Mundpflege vor dem Essen — Pneumonieschutz beginnt im Mund",
+        body: "",
+        glossarBegriffe: ["Mundpflege", "Aspirationspneumonie", "Oral Health"],
+      },
+      contentB1: {
+        title: "Mundpflege vor dem Essen — warum?",
+        body: "",
+        glossarBegriffe: ["Mundpflege", "Pneumonie"],
+      },
+      inlineWissen: {
+        bausteinRef: "mundpflege-bei-aspirationsrisiko",
+        storyAufhaenger:
+          "Bevor du Herrn Petrov das Frühstück reichst, machst du eines: Mundpflege. Klingt nach Routine. Ist aber bei einem Dysphagie-Patienten ein Schutzschild gegen Aspirationspneumonie. Denn was beim Verschlucken in die Lunge gelangt, ist nicht nur Nahrung — es sind auch die Keime aus dem Mundraum.",
+        storyAufhaengerB1:
+          "Vor dem Frühstück machst du Mundpflege bei Herrn Petrov. Warum? Weil die Keime im Mund bei Verschlucken in die Lunge kommen können. Mundpflege schützt vor Lungenentzündung.",
+        kerntext:
+          "**Warum Mundpflege vor dem Essen?** Bei Aspiration gelangen nicht nur Nahrungspartikel in die unteren Atemwege, sondern auch Mundflora-Keime. Sjögren et al. (2008) zeigten in einer Metaanalyse: **Regelmäßige Mundpflege senkt die Aspirationspneumonie-Rate um bis zu 40 %.**\n\n**Bei Herrn Petrov besonders wichtig:**\n\n• Dysphagie Grad 2 = erhöhtes Aspirationsrisiko\n\n• Aphasie = er kann nicht sagen wenn etwas im Mund stört\n\n• Hemiparese rechts = er kann die rechte Wangentasche nicht selbst kontrollieren — Speisereste sammeln sich dort unbemerkt\n\n**Vorgehen:**\n\n• Weiche Zahnbürste, sanft, systematisch (links beginnen — gesunde Seite, er kann mithelfen)\n\n• Rechte Wangentasche gezielt ausstreichen — dort sammeln sich bei Hemiparese Reste\n\n• Kein Mundwasser (Aspirationsgefahr durch dünne Flüssigkeit)\n\n• Oberkörper mindestens 30° aufgerichtet während der Mundpflege\n\n• Absaugen bereithalten bei schwerer Dysphagie (hier: nicht nötig, Grad 2)",
+        kerntextB1:
+          "**Warum Mundpflege vor dem Essen?** Beim Verschlucken kommen die **Keime aus dem Mund** in die Lunge. Sauberer Mund = weniger Keime = weniger Lungenentzündung.\n\nStudien zeigen: Regelmäßige Mundpflege senkt das Risiko um **40 %**.\n\n**Bei Herrn Petrov:**\n\n• Er kann nicht sagen, wenn etwas im Mund stört (Aphasie).\n\n• In der rechten Wange sammeln sich Essens-Reste (Hemiparese).\n\n**So machst du es:**\n\n• Weiche Zahnbürste, sanft putzen.\n\n• Rechte Wangen-Tasche mit dem Finger ausstreichen.\n\n• Kein Mundwasser (zu dünn — Aspirations-Gefahr).\n\n• Oberkörper auf mindestens 30° aufgerichtet.",
+        faustregel: "Mundpflege vor dem Essen = Pneumonieschutz. Rechte Wangentasche bei Hemiparese immer kontrollieren.",
+        faustregelB1: "Sauberer Mund = weniger Keime in der Lunge. Rechte Wangentasche kontrollieren.",
+        spektrum: [
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz, wehrt sich bei Mundpflege",
+            kurzbeschreibung:
+              "Bauer versteht die Mundpflege nicht und wehrt sich. Strategie: Basale Stimulation — bekannte Zahnpasta, eigene Zahnbürste, rhythmisches Vorgehen, Ablenkung statt Zwang.",
+          },
+          {
+            patientName: "Emilia",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Säugling, orale Stimulation",
+            kurzbeschreibung:
+              "Bei Emilia ist \"Mundpflege\" etwas ganz anderes: orale Stimulation mit feuchtem Tupfer an Zahnleiste und Gaumen — Saugreflex fördern nach NGS-Phase.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "COPD, Cortison-Inhalatoren → Soor-Risiko",
+            kurzbeschreibung:
+              "Kovac inhaliert Cortison (COPD). Ohne Mundpflege nach Inhalation: Soor-Pilz im Mundraum. Bei ihr ist Mundpflege nach der Inhalation Pflicht — andere Indikation, gleiche Konsequenz.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Du machst Mundpflege bei Herrn Petrov vor dem Frühstück. Warum streichst du gezielt die rechte Wangentasche aus?",
+          rueckseite:
+            "Hemiparese rechts = fehlende Sensibilität und Motorik der rechten Wange. Speisereste sammeln sich dort unbemerkt (kein Feedback). Keime aus dem Mund gelangen bei Aspiration in die Lunge. Sjögren 2008: regelmäßige Mundpflege senkt Aspirationspneumonie-Rate um 40 %. Spektrum: Bauer (wehrt sich, Basale Stimulation), Emilia (orale Stimulation beim Säugling), Kovac (Soor-Risiko durch Cortison). Faustregel: **Rechte Wangentasche bei Hemiparese immer kontrollieren.**",
+        },
+      },
+    },
+
     // Step 4.5 — Text: Essen anreichen (checklist)
     {
       stepId: "ce02-petrov-dur-05-essen-anreichen",
@@ -469,6 +544,88 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
             "Alternative angeboten (angedickte Flüssigkeit zeigen/erklären)",
             "Natalya aktiv einbezogen (sie darf anreichen mit Anleitung)",
           ],
+        },
+      },
+    },
+
+    // Step 4.8b — Inline-Wissen: Mobilisation — Bettkante bei Hemiparese
+    // Wiederbegegnung Bobath (Phase 2) + Vertiefung Kreislauf-Vorkontrolle.
+    {
+      stepId: "ce02-petrov-dur-08b-mobilisation-bettkante",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 3,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DGG 2022 — S1-Leitlinie Frühmobilisation",
+        "Bobath B. 1990 — Adult Hemiplegia",
+        "DNQP 2020 — Expertenstandard Mobilität",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-petrov-dur-mobilisation-grundlagen",
+      tag: "pflege",
+      themaPrimaer: "mobilisation",
+      themenSekundaer: ["kontraktur-prophylaxe"],
+      transition: "Die Theorie steht. Jetzt gehst du mit Herrn Petrov an die Bettkante — Schritt für Schritt.",
+      contentC1: {
+        title: "Mobilisation zur Bettkante — warum sie alles verändert",
+        body: "",
+        glossarBegriffe: ["Frühmobilisation", "Bettkante", "Orthostase", "Neuroplastizität"],
+      },
+      contentB1: {
+        title: "An die Bett-Kante — warum ist das so wichtig?",
+        body: "",
+        glossarBegriffe: ["Frühmobilisation", "Bettkante", "Orthostase"],
+      },
+      inlineWissen: {
+        bausteinRef: "mobilisation-bettkante-hemiparese",
+        wiederbegegnung: {
+          basisBausteinId: "mobilisation-bobath-konzept",
+          basisPatient: "Herr Petrov",
+          vertiefung:
+            "Du kennst Bobath aus Phase 2 — Bewegungsangebot statt Übernahme. Jetzt die praktische Anwendung: Bettkante. Die DGG 2022 sagt: Frühmobilisation ab Tag 1 nach Schlaganfall verbessert das Outcome messbar.",
+          vertiefungB1:
+            "Du kennst Bobath aus Phase 2. Jetzt die Praxis: An die Bett-Kante. Ab Tag 1 nach Schlaganfall: Mobilisation verbessert die Erholung.",
+        },
+        storyAufhaenger:
+          "Herr Petrov liegt seit 5 Tagen. Sein rechter Arm ist schlaff, sein rechtes Bein partiell. Er hat seit dem Schlaganfall nicht gesessen. Jetzt willst du ihn an die Bettkante bringen. Zehn Minuten sitzen — das klingt nach wenig. Aber für Herrn Petrov ist es ein Meilenstein.",
+        storyAufhaengerB1:
+          "Herr Petrov hat seit 5 Tagen nicht gesessen. Heute soll er zum ersten Mal an die Bett-Kante. 10 Minuten sitzen — das klingt wenig. Aber für ihn ist es sehr viel.",
+        kerntext:
+          "**Warum Bettkante?** Drei Effekte gleichzeitig:\n\n• **Atmung:** Vertikale Position verbessert das Atemvolumen. Die Lunge dehnt sich basale besser aus (weniger Atelektasen).\n\n• **Kreislauf:** Orthostase-Training. Nach 5 Tagen Bettruhe ist der Kreislauf dekonditioniert. Schrittweise Adaptation: Liegen → Sitzen → Stehen.\n\n• **Neuroplastizität:** Aufrechte Haltung aktiviert Gleichgewichtsrezeptoren und vestibuläre Bahnen. Das Gehirn lernt neue Kompensationswege.\n\n**Kreislauf-Vorkontrolle (Pflicht):**\n\n• RR + Puls im Liegen messen\n\n• RR + Puls im Sitzen messen (sofort nach Aufsetzen)\n\n• Aktiv fragen: Schwindel? Übelkeit? Schwarzwerden vor Augen?\n\n• Bei systolischem RR-Abfall > 20 mmHg oder Puls > 20/Min: vorsichtig zurücklegen\n\n**Bei Herrn Petrov:** Hypertonie (Ramipril 5 mg) = orthostatische Dysregulation realistisch. Deshalb: Nicht einfach aufsetzen, sondern messen-setzen-messen.\n\n**Ziel Tag 5:** 10-15 Minuten an der Bettkante, begleitet, kein allein Lassen.",
+        kerntextB1:
+          "**Warum an die Bett-Kante?** Drei Gründe:\n\n• **Atmung:** Sitzen ist besser als Liegen. Die Lunge kann sich mehr ausdehnen.\n\n• **Kreislauf:** Nach 5 Tagen im Bett ist der Kreislauf schwach. Er muss langsam wieder an \"aufrecht\" gewöhnt werden.\n\n• **Gehirn:** Sitzen aktiviert das Gleichgewicht. Das Gehirn lernt neue Wege.\n\n**Vorher prüfen:**\n\n• Blutdruck und Puls im Liegen messen.\n\n• Beim Sitzen: wieder messen.\n\n• Fragen: Schwindel? Übelkeit?\n\n• Wenn der Blutdruck stark fällt: zurücklegen.\n\n**Bei Herrn Petrov:** Er nimmt Blutdruck-Tabletten (Ramipril). Deshalb kann ihm beim Aufsetzen schwindelig werden.\n\n**Ziel:** 10-15 Minuten sitzen. Nie allein lassen.",
+        faustregel: "Bettkante = Atmung + Kreislauf + Gehirn gleichzeitig trainieren. Immer mit Kreislauf-Vorkontrolle.",
+        faustregelB1: "Sitzen an der Bett-Kante = gut für Lunge, Kreislauf und Gehirn. Immer vorher Blutdruck messen.",
+        spektrum: [
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP Hüft-TEP, Erstmobilisation am 1. POT",
+            kurzbeschreibung:
+              "Yilmaz sitzt schon am 1. Tag nach der OP an der Bettkante — Physiotherapie ab Tag 1. Bei ihr: Belastungsgrenze des operierten Beins beachten (keine Adduktion, keine Innenrotation).",
+          },
+          {
+            patientName: "Frau M.",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "Parkinson + Pneumonie, Aufstehen vom Boden",
+            kurzbeschreibung:
+              "Bei Frau M. ging es nicht um Bettkante sondern um den Transfer vom Boden ins Bett (Kinästhetik). Anderes Setting, aber dasselbe Prinzip: Kreislauf prüfen, Schritt für Schritt, nie allein.",
+          },
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Adipositas BMI 38, Bariatrisches Equipment",
+            kurzbeschreibung:
+              "Mobilisation bei Schmidt: Schwerlast-Bett (Belastungsgrenze prüfen), Mobilisation mit 2-3 Helfern ab BMI > 35, Anti-Rutsch-Strümpfe. Die Bettkante hält, aber die Standard-Möbel haben Gewichtsgrenzen.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Du willst Herrn Petrov (Tag 5 nach Apoplex, Ramipril 5 mg) an die Bettkante bringen. Was misst du wann?",
+          rueckseite:
+            "Kreislauf-Vorkontrolle: RR + Puls im Liegen, RR + Puls im Sitzen (sofort nach Aufsetzen), aktiv nach Schwindel/Übelkeit fragen. Bei systolischem Abfall > 20 mmHg: zurücklegen. Ramipril = erhöhtes Orthostase-Risiko. Ziel: 10-15 Min begleitet. Spektrum: Yilmaz (1. POT, Belastungsgrenze), Frau M. (Kinästhetik-Transfer), Schmidt (Bariatrisches Equipment). Faustregel: **Bettkante = Atmung + Kreislauf + Gehirn gleichzeitig. Immer mit Kreislauf-Vorkontrolle.**",
         },
       },
     },

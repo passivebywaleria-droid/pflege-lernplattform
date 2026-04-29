@@ -1,7 +1,8 @@
 // CE-02 Situation Herr Bauer — Demenz und Sturz — Phase 3: Pflege planen
-// Steps: 6 (4 Kern + 2 Optional) · Bloom: B3-B4
+// Steps: 7 (4 Kern + 1 Inline-Wissen + 2 Optional) · Bloom: B2-B4
 // Quelle: content/ce-02/situationen/ls-bauer-demenz-sturz/phase-planen.md
 // Pipeline v9 — 2026-04-23
+// Inline-Wissen: 1 Baustein (ganzkörperpflege bei Demenz — Vorbereitung Morgenpflege)
 
 import type { SituationsPhase } from "../../../_types";
 
@@ -102,6 +103,95 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
             right: "Bodenkontakt beim unerwarteten Aufstehen",
           },
         ],
+      },
+    },
+
+    // Step 3.2b — Inline-Wissen: Ganzkörperpflege bei Demenz
+    // Bevor der Schueler den Bewegungsablauf der Morgenpflege plant (3.3), muss er
+    // verstehen: Ganzkörperpflege bei Demenz ist NICHT nur Hygiene — sie ist
+    // Beziehungsgestaltung, Schmerzbeobachtung und Kontraktur-Prophylaxe in einem.
+    {
+      stepId: "ce02-bauer-plan-02b-ganzkoerperpflege-demenz",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Bienstein C./Froehlich A. (2021): Basale Stimulation in der Pflege",
+        "DNQP 2018 — Beziehungsgestaltung bei Demenz",
+        "Kitwood T. (1997): Dementia Reconsidered",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-plan-ganzkoerperpflege",
+      tag: "pflege",
+      themaPrimaer: "ganzkörperpflege",
+      themenSekundaer: ["basale-stimulation", "kontraktur-prophylaxe"],
+      transition: "Ganzkörperpflege ist bei Herrn Bauer mehr als Hygiene. Jetzt: der konkrete Bewegungsablauf.",
+      contentC1: {
+        title: "Ganzkörperpflege bei Demenz — drei Ziele in einer Handlung",
+        body: "",
+        glossarBegriffe: ["Ganzkörperpflege", "Initialberuehrung", "Beziehungsgestaltung"],
+      },
+      contentB1: {
+        title: "Wie pflege ich Herrn Bauer?",
+        body: "",
+        glossarBegriffe: ["Ganzkörperpflege", "Beziehungsgestaltung"],
+      },
+      inlineWissen: {
+        bausteinRef: "ganzkoerperpflege-bei-demenz",
+        storyAufhaenger:
+          "Morgen frueh wirst du Herrn Bauer waschen. Er hat heute bei der Gesichtswaesche zugeschlagen. Er trinkt wenig. Seine Knie werden steifer. Die Ganzkörperpflege ist deine einzige Gelegenheit, drei Probleme gleichzeitig anzugehen — aber nur wenn du sie richtig planst.",
+        storyAufhaengerB1:
+          "Morgen frueh waeschst du Herrn Bauer. Heute hat er zugeschlagen als du sein Gesicht waschen wolltest. Seine Knie werden steifer. Er trinkt zu wenig. Die Morgen-Pflege ist deine Chance, drei Probleme auf einmal zu loesen.",
+        kerntext:
+          "Ganzkörperpflege bei Menschen mit Demenz verfolgt **drei Ziele gleichzeitig** (Bienstein/Froehlich 2021, Kitwood 1997):\n\n**1. Beziehungsgestaltung (DNQP 2018)**\n\n• Initialberuehrung an immer gleicher Stelle (z. B. Schulter) — Wiedererkennungs-Signal\n• Jeden Handgriff ankuendigen: \"Ich wasche jetzt deinen rechten Arm\"\n• Nie gegen Widerstand waschen — Pause ist legitim\n• Biografische Ressourcen nutzen: Lieblingsmusik, vertraute Gerueche\n\n**2. Schmerzbeobachtung (BESD waehrend Pflege)**\n\n• Jede Beruehrung ist eine diagnostische Gelegenheit: Reagiert er mit Grimasse? Abwehr? Steifheit?\n• BESD in Ruhe VOR der Pflege, dann WAEHREND der Pflege (Bewegung) erheben\n\n**3. Kontraktur-Prophylaxe (integriert)**\n\n• Arme und Beine waehrend der Waschung aktiv-assistiv bewegen\n• Fußsohlenstimulation beim Abtrocknen (Spitzfuß-Prophylaxe)\n• Maximaler Bewegungsumfang nutzen — nicht ueber Schmerzgrenze\n\n**Reihenfolge nach Hygiene:**\n\nGesicht → Haende/Arme → Brust → Bauch → Ruecken → Beine/Fueße → Genital → Anal\n(sauber → unrein, DNQP Hygienestandard)",
+        kerntextB1:
+          "Ganzkörperpflege bei Demenz hat **drei Ziele auf einmal**:\n\n**1. Beziehung aufbauen**\n\n• Immer an der gleichen Stelle anfassen (z. B. Schulter) — so erkennt er dich wieder\n• Immer sagen was du tust: \"Ich wasche jetzt deinen Arm\"\n• Stoppen wenn er sich wehrt\n• Musik anmachen die er mag\n\n**2. Schmerz beobachten**\n\n• Jede Beruehrung zeigt dir: Hat er Schmerzen? Grimasse? Steifheit? Abwehr?\n• BESD vor der Pflege und waehrend der Pflege messen\n\n**3. Gelenke bewegen**\n\n• Arme und Beine beim Waschen bewegen\n• Fußsohlen beim Abtrocknen stimulieren\n• Nicht ueber die Schmerzgrenze gehen\n\n**Reihenfolge:** Gesicht zuerst → Arme → Brust → Bauch → Ruecken → Beine → Genitalbereich zuletzt (sauber nach unrein)",
+        faustregel:
+          "Ganzkörperpflege bei Demenz ist nicht Hygiene — sie ist Beziehung, Schmerzbeobachtung und Kontraktur-Prophylaxe in einem Handlungsablauf.",
+        faustregelB1:
+          "Die Morgen-Pflege ist bei Demenz drei Dinge gleichzeitig: Beziehung, Schmerzbeobachtung, Gelenkbewegung.",
+        spektrum: [
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP Einschraenkung",
+            kurzbeschreibung:
+              "Nach Hueft-TEP: Ganzkörperpflege im Bett mit Bewegungseinschraenkung (keine Adduktion, max. 90 Grad). Patientin ist orientiert und kooperativ — Hauptherausforderung ist die Lagerungsregel, nicht die Beziehung.",
+          },
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Hemiparese — betroffene Seite integrieren",
+            kurzbeschreibung:
+              "Nach Schlaganfall: Die betroffene Seite wird bei der Pflege gezielt einbezogen (Bobath-Konzept). Waschen der gelaehmten Hand MIT der gelaehmten Hand fuehren — Koerperschema aktivieren.",
+          },
+          {
+            patientName: "Emilia (Saeugling)",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Saeugling, Bronchiolitis",
+            kurzbeschreibung:
+              "Bei Saeugling: Baden/Waschen ist somatische Stimulation pur. Wassertemperatur 37 Grad, kurze Dauer, Haut-zu-Haut-Kontakt danach. Saubere-nach-unrein-Reihenfolge gilt auch hier (Nabelrest → Genitalbereich zuletzt).",
+          },
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Bariatrik + Hautfalten",
+            kurzbeschreibung:
+              "Bei BMI 38: besondere Aufmerksamkeit auf Hautfalten (Intertrigo-Risiko). Koerperpflege-Herausforderung: Zugang zu allen Hautpartien, Equipment-Bedarf (Schwerlast-Bett, Lifter). Pflege-Beziehung: Scham ansprechen, nicht ignorieren.",
+          },
+        ],
+        sonstBox:
+          "Unterschied beruhigende vs. belebende Waschung (Bienstein/Froehlich 2021): **Beruhigend** = in Haarwuchsrichtung (von peripher nach zentral: Schulter → Hand), Wassertemperatur koerperwarm. **Belebend** = gegen Haarwuchsrichtung (Hand → Schulter), Wasser etwas kuehler. Bei Herrn Bauer morgens: beruhigend (er ist agitiert). Abends oder bei Apathie: belebend koennte sinnvoll sein.",
+        sonstBoxB1:
+          "Zwei Arten der Waschung: **Beruhigend** = in Haarrichtung waschen (von Schulter zur Hand), warmes Wasser. **Belebend** = gegen Haarrichtung (von Hand zur Schulter), kuehler. Bei Herrn Bauer morgens: beruhigend (weil er aufgeregt ist).",
+        karteikarte: {
+          vorderseite:
+            "Du planst die Ganzkörperpflege bei Herrn Bauer (Demenz FAST 6a, Kontrakturgefahr, Sturzfolge). Welche drei Ziele verfolgst du gleichzeitig?",
+          rueckseite:
+            "1. **Beziehungsgestaltung**: Initialberuehrung, Ankuendigung, Biografiearbeit (Musik), keine Zwangspflege (DNQP 2018, Kitwood 1997)\n2. **Schmerzbeobachtung**: BESD in Ruhe + bei Bewegung waehrend der Pflege\n3. **Kontraktur-Prophylaxe**: Arme/Beine aktiv-assistiv bewegen, Fußsohlenstimulation\n\nReihenfolge: sauber → unrein (Gesicht zuerst, Genital/Anal zuletzt). Beruhigende Waschung: in Haarwuchsrichtung, koerperwarmes Wasser (Bienstein/Froehlich 2021). Faustregel: **Ganzkörperpflege bei Demenz = Beziehung + Schmerzbeobachtung + Kontraktur-Prophylaxe in einem.**",
+        },
       },
     },
 

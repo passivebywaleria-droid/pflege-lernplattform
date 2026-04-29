@@ -157,6 +157,91 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
       },
     },
 
+    // Step 5.2b — Inline-Wissen: Pflegedokumentation als Qualitaetssicherung (Wiederbegegnung)
+    // Pflegedokumentation wurde bei Frau M. zentral gelehrt. Hier Wiederbegegnung:
+    // Bei Frau Yilmaz zeigt sich, was passiert wenn Dokumentation lueckenhaft ist.
+    {
+      stepId: "ce02-yilmaz-s2-eval-02b-doku-wiederbegegnung",
+      phase: 5,
+      stepType: "inlineWissen",
+      bloomLevel: 3,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "§ 630f BGB — Dokumentationspflicht",
+        "DNQP 2024 — Expertenstandard Dekubitusprophylaxe",
+        "Donabedian A. (1966)",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-eval-doku-qualitaet",
+      tag: "pflege",
+      themaPrimaer: "pflegedokumentation",
+      themenSekundaer: ["dekubitus-prophylaxe"],
+      transition: "Mit diesem Bild im Kopf: Was ist dein Fazit zu Spirale 2?",
+      contentC1: {
+        title: "Dokumentation als Qualitaetssicherung — was bei Frau Yilmaz schiefging",
+        body: "",
+        glossarBegriffe: ["§ 630f BGB", "Beweislastumkehr", "Prozessqualitaet"],
+      },
+      contentB1: {
+        title: "Warum ist Aufschreiben so wichtig?",
+        body: "",
+        glossarBegriffe: ["§ 630f BGB"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegedokumentation-qualitaetssicherung",
+        wiederbegegnung: {
+          basisBausteinId: "pflegedokumentation-grundlagen",
+          basisPatient: "Frau M.",
+          vertiefung:
+            "Bei Frau M. hast du das Sturzprotokoll geschrieben — Dokumentation als rechtliche Absicherung (§ 630f BGB). Bei Frau Yilmaz siehst du jetzt die andere Seite: Was passiert, wenn NICHT dokumentiert wird. Die Kollegin hat die Roetung gesehen — aber nicht aufgeschrieben. Folge: Kein Befund in der Akte, kein Handlungsauftrag fuer die naechste Schicht, 12-24 Stunden Verzoegerung bis zur Entdeckung des offenen Dekubitus. Dokumentation ist nicht nur Recht — sie ist Prozessqualitaet (Donabedian).",
+          vertiefungB1:
+            "Bei Frau M. hast du das Sturzprotokoll geschrieben — weil alles aufgeschrieben werden muss (§ 630f BGB). Bei Frau Yilmaz siehst du jetzt: Was passiert, wenn man NICHT aufschreibt. Die Kollegin hat die Roetung gesehen — aber nicht geschrieben. Folge: 12-24 Stunden spaeter erst die offene Wunde entdeckt. Aufschreiben ist nicht nur Pflicht — es schuetzt den Patienten.",
+        },
+        storyAufhaenger:
+          "Du hast gerade gesehen: Am Tag 15 wurde nur 5x statt 8x umgelagert. Und die Roetung wurde gestern gesehen aber nicht dokumentiert. Beides zeigt: Dokumentation ist nicht Papierkram — sie ist der Mechanismus, der Qualitaet sicherstellt.",
+        storyAufhaengerB1:
+          "Am Tag 15 wurde nur 5 Mal umgelagert statt 8 Mal. Und die Roetung gestern — gesehen aber nicht aufgeschrieben. Was folgt daraus?",
+        kerntext:
+          "**Dokumentation hat 3 Funktionen gleichzeitig:**\n\n• **Rechtlich:** Was nicht dokumentiert ist, gilt als nicht durchgefuehrt (§ 630f BGB). Beweislastumkehr: Die Einrichtung muss beweisen, dass die Massnahme stattfand.\n\n• **Kommunikativ:** Die naechste Schicht weiss nur, was in der Akte steht. Muendliche Uebergabe allein reicht nicht — bei Schichtwechsel gehen bis zu 40 % der Informationen verloren.\n\n• **Qualitaetssichernd:** Dokumentation macht Prozessqualitaet messbar (Donabedian 1966). Wurde der Umlagerungsrhythmus eingehalten? Wurde die Hautinspektion durchgefuehrt? Ohne Dokumentation: nicht nachweisbar.\n\n**Bei Frau Yilmaz konkret:**\n1. Roetung gesehen → nicht dokumentiert → naechste Schicht wusste nichts → 12-24h Verzoegerung.\n2. Tag 15: nur 5x umgelagert → Luecke in Doku sichtbar → Qualitaetsereignis.\n3. Wundbefund Tag 14: korrekt dokumentiert → Verlaufsbeurteilung Tag 17 moeglich.",
+        kerntextB1:
+          "**Dokumentation hat 3 Aufgaben:**\n\n• **Recht:** Was nicht geschrieben ist, gilt als nicht gemacht (§ 630f BGB).\n\n• **Kommunikation:** Die naechste Schicht weiss nur, was in der Akte steht.\n\n• **Qualitaet:** Man kann pruefen: Wurde alles gemacht? Ohne Dokumentation: nicht pruefbar.\n\n**Bei Frau Yilmaz:**\n1. Roetung nicht aufgeschrieben → naechste Schicht wusste nichts → Verzoegerung.\n2. Tag 15: nur 5x umgelagert statt 8x → Luecke sichtbar.\n3. Wundbefund Tag 14: aufgeschrieben → Tag 17 kann man vergleichen.",
+        faustregel:
+          "Dokumentation ist dreifach wirksam: rechtlich, kommunikativ, qualitaetssichernd. Was nicht drinsteht, existiert nicht.",
+        faustregelB1:
+          "Was nicht aufgeschrieben ist, existiert nicht. Dokumentation schuetzt Patienten und Pflegekraefte.",
+        spektrum: [
+          {
+            patientName: "Frau M.",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "Sturzprotokoll",
+            kurzbeschreibung:
+              "Bei ihr hast du das Sturzprotokoll geschrieben. Dokumentation als Erstversorgung: Uhrzeit, Sturzmechanismus, Verletzungen, VZ, Massnahmen. Ohne Protokoll: kein Nachweis der korrekten Erstversorgung.",
+          },
+          {
+            patientName: "Herr Nguyen",
+            situationsId: "ls-nguyen-stoma",
+            hauptfaktor: "Stoma-Dokumentation",
+            kurzbeschreibung:
+              "Stoma-Versorgung braucht exakte Dokumentation: Stomagroesse, Hautkonditierung, Beutelwechsel-Frequenz. Ohne Verlaufsdoku: kein Nachweis dass Komplikationen rechtzeitig erkannt wurden.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "Ambulant — Schnittstelle Pflegedienst",
+            kurzbeschreibung:
+              "Im ambulanten Setting kommen verschiedene Pflegekraefte. Dokumentation ist die einzige Kommunikation zwischen ihnen. Fehlende Doku = Informationsverlust = Risiko.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Bei Frau Yilmaz wurde die Roetung gesehen aber nicht dokumentiert. Was sind die 3 Konsequenzen — und welche Funktionen hat Pflegedokumentation?",
+          rueckseite:
+            "Konsequenzen: 1) Naechste Schicht nicht informiert (12-24h Verzoegerung). 2) Kein rechtlicher Nachweis (§ 630f BGB). 3) Qualitaetsereignis nicht nachvollziehbar (Donabedian).\n\n3 Funktionen: Rechtlich (Beweislastumkehr), Kommunikativ (Schichtuebergabe), Qualitaetssichernd (Prozessqualitaet messbar).\n\nSpektrum: Frau M. (Sturzprotokoll), Nguyen (Stoma-Doku), Kovac (ambulant, Schnittstellenkommunikation).\n\nFaustregel: **Was nicht dokumentiert ist, existiert nicht.**",
+        },
+      },
+    },
+
     // Step 5.3 — Reflection (B6): Kern-Reflexion Spirale 2
     {
       stepId: "ce02-yilmaz-s2-eval-03-reflexion-warum",

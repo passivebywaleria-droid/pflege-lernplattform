@@ -15,6 +15,90 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
   kontextB1:
     "Kathrin ist jetzt dabei. Ihr schaut euch Lukas gemeinsam an. Sandra hält Lukas auf dem Schoß. Den linken Arm lässt sie frei. Lukas ist ruhiger. Er schaut euch mit großen Augen an.\n\nDein Ziel: Du beobachtest Lukas systematisch (= nach einem Plan). Du prüfst: Wie ist die Wunde? Hat er Schmerzen? Hat er genug getrunken? Du prüfst die Vitalzeichen.\n\nDu schaust auch: Gibt es andere auffällige Stellen auf der Haut? Das ist kein Misstrauen. Das ist fachliches Sehen. Jede Bewegung musst du ankündigen. Lukas hat Schmerzen und Angst.",
   kernSteps: [
+    // Step 2.0b — Inline-Wissen: KUSS-Skala Grundlagen
+    // Schüler kommt aus Phase 1 (Informieren) in Phase 2 (Beobachten). Bevor er die
+    // KUSS-Skala anwendet (Step 2.1 — Brilliant-Highlight), braucht er das Grundwissen:
+    // Was ist die KUSS-Skala, warum nicht NRS bei Kleinkindern?
+    {
+      stepId: "ce02-lukas-beob-00b-kuss-grundlagen",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Büttner/Finke 2000 — KUSS-Skala (validiert 0-4 Jahre)",
+        "DNQP 2020 — Expertenstandard Schmerzmanagement",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-lukas-beob-kuss-grundlagen",
+      tag: "pflege",
+      themaPrimaer: "schmerz",
+      themenSekundaer: ["saeuglingspflege"],
+      transition: "Du weißt jetzt was die KUSS-Skala ist. Schau dir Lukas an — und markiere, was du siehst.",
+      contentC1: {
+        title: "KUSS-Skala — Schmerzmessung bei Kindern, die nicht sprechen können",
+        body: "",
+        glossarBegriffe: ["KUSS-Skala", "NRS", "Fremdbeobachtung", "Schmerzassessment"],
+      },
+      contentB1: {
+        title: "Wie misst man Schmerz bei kleinen Kindern?",
+        body: "",
+        glossarBegriffe: ["KUSS-Skala", "NRS (= Numeric Rating Scale)"],
+      },
+      inlineWissen: {
+        bausteinRef: "schmerz-kuss-skala-grundlagen",
+        storyAufhaenger:
+          "Lukas ist 2,5 Jahre alt. Er kann nicht sagen: \"Mein Schmerz ist eine 8.\" Er sagt: \"Au-au-au! Mama!\" und dreht den Kopf weg. Wie misst du seinen Schmerz, wenn er ihn nicht in Zahlen ausdrücken kann?",
+        storyAufhaengerB1:
+          "Lukas ist 2,5 Jahre. Er kann nicht sagen wie stark sein Schmerz ist. Er weint und ruft nach Mama. Wie misst du trotzdem seinen Schmerz?",
+        kerntext:
+          "Bei Frau M. hast du die **NRS (Numeric Rating Scale)** kennengelernt — 0 bis 10, der Patient sagt eine Zahl. Das funktioniert bei Kindern unter 4 Jahren **nicht**. Sie verstehen Zahlen-Skalen noch nicht.\n\n**Stattdessen: KUSS (Kindliche Unbehagens- und Schmerz-Skala)**\n\n• **Validiert** für Kinder von 0 bis 4 Jahren (Büttner/Finke 2000).\n\n• **5 Beobachtungs-Kategorien** — du bewertest was du SIEHST, nicht was das Kind sagt:\n  1. Weinen\n  2. Gesichtsausdruck\n  3. Rumpfhaltung\n  4. Beinstellung\n  5. Motorische Unruhe\n\n• **Jede Kategorie: 0, 1 oder 2 Punkte** → Maximum 10 Punkte.\n\n• **Ab KUSS ≥ 4: interventionspflichtig** — genau wie bei NRS ≥ 4 bei Erwachsenen.\n\n**Der Unterschied zu NRS:** Du fragst nicht — du beobachtest. Das ist Fremdbeobachtung statt Selbstauskunft. Deshalb musst du wissen wie die Kategorien aussehen — gleich wirst du sie bei Lukas anwenden.",
+        kerntextB1:
+          "Bei Erwachsenen fragst du: \"Wie stark ist der Schmerz von 0 bis 10?\" (= NRS-Skala). Bei Kindern unter 4 Jahren geht das nicht — sie verstehen Zahlen noch nicht.\n\n**Stattdessen: KUSS-Skala**\n\n• Für Kinder von 0 bis 4 Jahren.\n\n• **5 Dinge beobachtest du:**\n  1. Weint das Kind?\n  2. Wie sieht das Gesicht aus?\n  3. Wie liegt der Körper?\n  4. Wie sind die Beine?\n  5. Bewegt sich das Kind unruhig?\n\n• Jede Kategorie: 0, 1 oder 2 Punkte. Zusammen: 0 bis 10.\n\n• **Ab 4 Punkte: Du musst handeln** — Schmerzmittel ansprechen.\n\n**Wichtig:** Du fragst das Kind NICHT nach dem Schmerz. Du schaust hin und bewertest was du siehst.",
+        faustregel:
+          "NRS bei Erwachsenen = fragen. KUSS bei Kleinkindern = beobachten. Ab ≥ 4 Punkte: immer handeln.",
+        faustregelB1:
+          "Bei Erwachsenen fragst du nach dem Schmerz. Bei kleinen Kindern beobachtest du. Ab 4 Punkte: handeln.",
+        spektrum: [
+          {
+            patientName: "Frau M. (82, Sturz)",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "NRS — Selbstauskunft bei orientierten Erwachsenen",
+            kurzbeschreibung:
+              "Bei Frau M. nutzt du die NRS: \"Von 0 bis 10, wie stark?\" Sie kann antworten — auch wenn sie bagatellisiert (NRS 6 sagt sie, NRS 8 meint sie). Aber sie versteht die Frage. Lukas nicht.",
+          },
+          {
+            patientName: "Herr Bauer (82, Demenz)",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "BESD/PAINAD — Fremdbeobachtung bei Demenz",
+            kurzbeschreibung:
+              "Herr Bauer kann NRS nicht mehr zuverlässig zuordnen. Bei ihm nutzt du BESD (Beurteilung von Schmerzen bei Demenz) oder PAINAD — auch Fremdbeobachtung wie bei KUSS, aber mit anderen Kategorien (Atmung, Lautäußerung, Mimik, Körpersprache, Trostbarkeit).",
+          },
+          {
+            patientName: "Frau Yilmaz (Hüft-TEP)",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "NRS in Ruhe UND Bewegung",
+            kurzbeschreibung:
+              "Bei Frau Yilmaz nach Hüft-TEP: NRS getrennt in Ruhe und Bewegung erheben. Mobilisation gelingt nur bei Bewegungs-NRS ≤ 3-4. Bei Lukas gibt es diese Unterscheidung nicht — KUSS misst den Gesamtausdruck.",
+          },
+          {
+            patientName: "Emilia (8 Wochen, Bronchiolitis)",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "KUSS auch für Säuglinge validiert",
+            kurzbeschreibung:
+              "Emilia ist 8 Wochen alt — KUSS funktioniert auch bei ihr. Aber die Beobachtung ist anders: Ein Säugling zeigt Schmerz subtiler (Stirnrunzeln, Nasenflügeln, veränderte Schlafmuster).",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Lukas (2,5 J.) schreit, grimassiert, zieht die Beine hoch und stößt dich weg. Du sollst seinen Schmerz messen. Warum nutzt du NRS nicht — und welche Skala nutzt du stattdessen?",
+          rueckseite:
+            "Kinder unter 4 Jahren verstehen Zahlen-Skalen nicht → keine NRS möglich. Stattdessen: **KUSS-Skala** (Büttner/Finke 2000) — 5 Beobachtungskategorien (Weinen, Gesichtsausdruck, Rumpfhaltung, Beinstellung, Motorische Unruhe), je 0-2 Punkte, max. 10.\n\nSpektrum: Frau M. (NRS), Bauer (BESD/PAINAD), Yilmaz (NRS Ruhe+Bewegung), Emilia (KUSS auch bei Säuglingen).\n\nFaustregel: **NRS = fragen, KUSS = beobachten. Ab ≥ 4: immer handeln.**",
+        },
+      },
+    },
+
     // Step 2.1 — Highlight: KUSS-Skala (BRILLIANT-Frage)
     {
       stepId: "ce02-lukas-beob-01-kuss-skala-brilliant",

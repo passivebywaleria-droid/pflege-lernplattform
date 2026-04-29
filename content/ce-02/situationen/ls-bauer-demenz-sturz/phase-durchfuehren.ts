@@ -1,7 +1,8 @@
 // CE-02 Situation Herr Bauer — Demenz und Sturz — Phase 4: Maßnahmen durchführen
-// Steps: 9 (6 Kern + 3 Optional) · Bloom: B4-B5 · Komplikationen: 2
+// Steps: 11 (6 Kern + 2 Inline-Wissen + 3 Optional) · Bloom: B2-B5 · Komplikationen: 2
 // Quelle: content/ce-02/situationen/ls-bauer-demenz-sturz/phase-durchfuehren.md
 // Pipeline v9 — 2026-04-23
+// Inline-Wissen: 2 Bausteine (ganzkörperpflege beruhigende Waschung Vertiefung, kontraktur-prophylaxe Wiederbegegnung)
 
 import type { SituationsPhase } from "../../../_types";
 
@@ -37,6 +38,82 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
         title: "Wie wäscht man richtig bei Demenz?",
         body: "Das nennt man beruhigende Waschung — eine Methode aus der Basalen Stimulation. 5 Regeln:\n\n1. Wasche in Richtung der Haare (z. B. von der Schulter zur Hand).\n2. Wasser angenehm warm.\n3. Reihenfolge nach Hygiene: erst Gesicht (sauber), zuletzt Genital- und Analbereich (unrein).\n4. Immer ankündigen: \"Jetzt wasche ich deinen rechten Arm.\"\n5. Wenn er sich wehrt: stoppen, warten.\n\nQuelle: Bienstein C./Fröhlich A. (2021).",
         glossarBegriffe: ["Basale Stimulation", "beruhigende Waschung", "ankündigen"],
+      },
+    },
+
+    // Step 4.1b — Inline-Wissen: Ganzkörperpflege — Haarwuchsrichtung und Koerperschema
+    // Vertiefung des Konzepts beruhigende Waschung: WARUM in Haarwuchsrichtung?
+    // Was macht das mit dem Koerperschema? Warum beruhigt das bei Demenz?
+    {
+      stepId: "ce02-bauer-dur-01b-waschung-koerperschema",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Bienstein C./Froehlich A. (2021): Basale Stimulation in der Pflege",
+        "Froehlich A. (2023): Basale Stimulation — Das Konzept. 10. Aufl.",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-dur-koerperschema",
+      tag: "pflege",
+      themaPrimaer: "ganzkörperpflege",
+      themenSekundaer: ["basale-stimulation"],
+      transition: "Haarwuchsrichtung, Koerperschema, ruhiger Druck — alles im Kopf? Jetzt kommt die Praxis: Herr Bauer wehrt sich.",
+      contentC1: {
+        title: "Warum Haarwuchsrichtung? — Was Beruehrung im Gehirn macht",
+        body: "",
+        glossarBegriffe: ["Koerperschema", "Propriozeption", "Haarwuchsrichtung"],
+      },
+      contentB1: {
+        title: "Warum in Haarrichtung waschen?",
+        body: "",
+        glossarBegriffe: ["Koerperschema", "Haarwuchsrichtung"],
+      },
+      inlineWissen: {
+        bausteinRef: "ganzkoerperpflege-haarwuchsrichtung-koerperschema",
+        storyAufhaenger:
+          "Du hast gerade gelesen: beruhigende Waschung geht in Haarwuchsrichtung. Aber warum genau? Was passiert im Koerper wenn du von der Schulter zur Hand waeschst — und was passiert wenn du es umgekehrt machst?",
+        storyAufhaengerB1:
+          "Du weißt jetzt: In Haarrichtung waschen beruhigt. Aber warum? Was passiert im Koerper?",
+        kerntext:
+          "**In Haarwuchsrichtung waschen** (z. B. Schulter → Hand) aktiviert das **Koerperschema** — die innere Landkarte des Koerpers im Gehirn (Bienstein/Froehlich 2021).\n\n**Was passiert neurophysiologisch?**\n\n• Gleichmaessiger, ruhiger Druck in Haarwuchsrichtung stimuliert **langsam leitende C-Taktil-Fasern** — diese senden Signale an den Inselcortex (Bereich fuer Koerperwahrnehmung und Emotionsregulation).\n\n• Die Wirkung: Herzfrequenz sinkt, Atemfrequenz wird regelmaessiger, Muskeltonus nimmt ab.\n\n• **Gegen** Haarwuchsrichtung (Hand → Schulter) aktiviert **schnell leitende A-beta-Fasern** — die Wirkung ist belebend, aufweckend.\n\n**Fuer Herrn Bauer heißt das:**\n\n• Morgens beruhigende Waschung: Schulter → Hand, Huefte → Fuß. Er ist agitiert — du willst ihn beruhigen.\n\n• Druck: gleichmaessig, nicht zu leicht (Kitzeln loest Abwehr aus), nicht zu fest.\n\n• Tempo: langsam, vorhersehbar, rhythmisch.\n\n• Pause: Wenn er die Augen schließt und der Muskeltonus nachlässt — das ist der Moment der Wirkung.",
+        kerntextB1:
+          "**In Haarrichtung waschen** (Schulter → Hand) beruhigt den Koerper.\n\n**Warum?**\n\n• Ruhiger Druck in Haarrichtung sendet Signale an das Gehirn: \"Alles ist sicher.\"\n\n• Herzschlag wird langsamer. Atmung wird ruhiger. Muskeln werden weicher.\n\n• **Gegen** Haarrichtung (Hand → Schulter) weckt auf — das ist belebend.\n\n**Fuer Herrn Bauer:**\n\n• Morgens: Schulter → Hand, Huefte → Fuß (beruhigend — er ist aufgeregt)\n• Druck: gleichmaessig, nicht zu leicht, nicht zu fest\n• Tempo: langsam\n• Wenn er die Augen schließt und weicher wird — es wirkt",
+        faustregel:
+          "In Haarwuchsrichtung = beruhigend. Gegen Haarwuchsrichtung = belebend. Bei Agitation: immer beruhigend.",
+        faustregelB1:
+          "Mit dem Haarwuchs = beruhigt. Gegen den Haarwuchs = weckt auf. Herr Bauer ist aufgeregt = mit dem Haarwuchs waschen.",
+        spektrum: [
+          {
+            patientName: "Frau M.",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "Parkinson — Rigor",
+            kurzbeschreibung:
+              "Bei Frau M. hilft beruhigende Waschung gegen den erhoehten Muskeltonus (Rigor bei Parkinson). Haarwuchsrichtung: Muskeltonus sinkt, Bewegung wird leichter — guenstiger Moment fuer Transfer.",
+          },
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Hemiparese — Neglect-Seite",
+            kurzbeschreibung:
+              "Bei Neglect nach Schlaganfall: Die vergessene Koerperseite gezielt in Haarwuchsrichtung waschen — somatische Stimulation hilft dem Gehirn, die betroffene Seite wieder wahrzunehmen.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "COPD + Angst",
+            kurzbeschreibung:
+              "Bei Atemnot-Angst (COPD): Beruhigende Rueckenwaesche in Haarwuchsrichtung kann die Atemfrequenz senken — Atemlenkung ueber den Koerper statt ueber Worte.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Warum beruhigt es Herrn Bauer wenn du in Haarwuchsrichtung waeschst (Schulter → Hand)? Nenne den neurophysiologischen Mechanismus.",
+          rueckseite:
+            "Gleichmaessiger Druck in Haarwuchsrichtung stimuliert **C-Taktil-Fasern** (langsam leitend) → Signal an Inselcortex → **Herzfrequenz sinkt, Atemfrequenz reguliert sich, Muskeltonus nimmt ab**. Gegen Haarwuchsrichtung: A-beta-Fasern (schnell) → belebend. Regel: Agitation → beruhigend (in Haarwuchsrichtung). Apathie → belebend (gegen Haarwuchsrichtung). (Bienstein/Froehlich 2021) Faustregel: **In Haarwuchsrichtung = beruhigend. Gegen = belebend.**",
+        },
       },
     },
 
@@ -178,6 +255,90 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
             ],
           },
         ],
+      },
+    },
+
+    // Step 4.3b — Inline-Wissen: Kontraktur-Prophylaxe — passive Bewegung bei Demenz (Wiederbegegnung)
+    // Kontraktur-Grundlagen wurden in Phase 2 (2.2b) gelehrt. Hier: konkrete
+    // Ausfuehrung der passiven Kniebewegung bei einem Patienten der sich wehrt.
+    {
+      stepId: "ce02-bauer-dur-03b-kontraktur-passive-bewegung",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 3,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP 2018 — Kontrakturenprophylaxe (Hinweispapier)",
+        "Bienstein C./Froehlich A. (2021)",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-dur-kontraktur-passive-bewegung",
+      tag: "pflege",
+      themaPrimaer: "kontraktur-prophylaxe",
+      themenSekundaer: ["basale-stimulation", "ganzkörperpflege"],
+      transition: "Passive Bewegung vorbereitet. Jetzt: Die richtige Reihenfolge der Uebungen.",
+      contentC1: {
+        title: "Passive Kniebewegung bei Demenz — wie ohne Abwehr?",
+        body: "",
+        glossarBegriffe: ["passive Bewegung", "aktiv-assistiv", "Schmerzgrenze", "Kontraktur-Prophylaxe"],
+      },
+      contentB1: {
+        title: "Knie bewegen ohne Abwehr?",
+        body: "",
+        glossarBegriffe: ["passive Bewegung", "Schmerzgrenze"],
+      },
+      inlineWissen: {
+        bausteinRef: "kontraktur-prophylaxe-passive-bewegung-demenz",
+        wiederbegegnung: {
+          basisBausteinId: "kontraktur-prophylaxe-grundlagen",
+          basisPatient: "Herr Bauer (Phase 2)",
+          vertiefung:
+            "Kontraktur-Grundlagen kennst du aus Phase 2 — Streckdefizit 20 Grad rechts, 10 Grad links, Immobilitaet als Hauptursache. Jetzt die Praxisfrage: Wie fuehrst du passive Kniebewegung bei einem Patienten durch, der sich wehrt? Die Antwort: **Integration in die Koerperpflege** — Bewegung ist kein separater Programmpunkt, sondern Teil der Waschung (Bienstein/Froehlich 2021).",
+          vertiefungB1:
+            "Kontraktur kennst du aus Phase 2 — Herrn Bauers Knie werden steifer. Jetzt: Wie bewegst du seine Knie, wenn er sich wehrt? Antwort: Baue die Bewegung in die Pflege ein — beim Waschen, beim Abtrocknen, nicht als extra Uebung.",
+        },
+        storyAufhaenger:
+          "Herr Bauer liegt jetzt entspannter nach der Gesichtswaesche. Sein Muskeltonus ist gesunken. Gleich kommen die Beine dran — und damit die Chance, seine Knie zu bewegen. Aber wie machst du das, wenn er bei jeder ueberraschenden Bewegung zuschlaegt?",
+        storyAufhaengerB1:
+          "Herr Bauer ist jetzt ruhiger. Gleich kommen die Beine dran. Jetzt kannst du seine Knie bewegen. Aber wie — ohne dass er sich wehrt?",
+        kerntext:
+          "**Passive Bewegung bei Demenz** gelingt am besten **waehrend der Koerperpflege** — nicht als separater Uebungsblock (Bienstein/Froehlich 2021).\n\n**5 Regeln fuer Herrn Bauer:**\n\n• **Zeitpunkt:** Waehrend du seine Beine waeschst. Die Beruehrung der Waschung ist die Einleitung — die Bewegung folgt fließend.\n\n• **Tempo:** Sein Tempo, nicht deines. Langsam beugen, 3-5 Sekunden halten, langsam zurueck.\n\n• **Schmerzgrenze:** BESD beobachten waehrend der Bewegung. Grimasse, Steifwerden, Laute = stoppen. **Nie ueber die Schmerzgrenze.**\n\n• **Umfang:** Maximal bis zum aktuellen Bewegungsende — nicht darueber hinaus druecken. Bei Herrn Bauer rechts: Streckung bis ca. 20 Grad vor Null (das ist seine Grenze).\n\n• **Wiederholung:** 3-5 Wiederholungen pro Gelenk, 2x taeglich (morgens + abends bei Koerperpflege).\n\n**Dokumentation:** Bewegungsumfang in Grad, BESD-Wert waehrend Bewegung, Kooperationsgrad. Vergleich mit Vortag — Verbesserung oder Verschlechterung?",
+        kerntextB1:
+          "**Knie bewegen bei Demenz** funktioniert am besten **waehrend dem Waschen** — nicht extra.\n\n**5 Regeln:**\n\n• **Wann:** Waehrend du seine Beine waeschst. Die Waschung leitet ein — die Bewegung folgt.\n\n• **Wie schnell:** Langsam. 3-5 Sekunden halten.\n\n• **Schmerzgrenze:** Beobachte sein Gesicht (BESD). Grimasse = stoppen.\n\n• **Wie weit:** Nur bis dahin wo es jetzt geht — nicht weiter druecken.\n\n• **Wie oft:** 3-5 Mal pro Knie, morgens und abends.\n\n**Aufschreiben:** Wie weit ging es (in Grad)? Hat er Schmerzen gezeigt? Hat er mitgemacht?",
+        faustregel:
+          "Passive Bewegung bei Demenz: in die Pflege integrieren, nicht als extra Uebung. Die Waschung oeffnet die Tuer — die Bewegung nutzt den Moment.",
+        faustregelB1:
+          "Knie bewegen bei Demenz: Beim Waschen mitmachen, nicht extra. Der Moment der Waschung ist der richtige Moment.",
+        spektrum: [
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Hemiparese — Bobath-Konzept",
+            kurzbeschreibung:
+              "Bei Hemiparese: passive/aktiv-assistive Bewegung nach Bobath-Konzept — die gelaehmte Seite wird in alltagsnahe Bewegungen integriert (z. B. Arm fuehren beim Waschen). Ziel: kortikale Reorganisation, nicht nur Kontraktur-Praevention.",
+          },
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP Physiotherapie",
+            kurzbeschreibung:
+              "Nach Hueft-TEP: Physiotherapie fuehrt aktiv-assistive Uebungen ab Tag 1 (CPM-Schiene, isometrische Uebungen). Pflege unterstuetzt mit Lagerung und Motivation — aber die Bewegungsfuehrung liegt beim Physio.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "COPD + Angst vor Bewegung",
+            kurzbeschreibung:
+              "Ambulant: Frau Kovac vermeidet Bewegung aus Angst vor Atemnot (Dyspnoe-Spirale). Kontrakturrisiko Sprunggelenk. Loesung: Atemtechniken + Bewegung kombinieren — 'beim Ausatmen bewegen'.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Wie fuehrst du passive Kniebewegung bei Herrn Bauer (Demenz FAST 6a, Abwehr) durch, ohne Eskalation zu provozieren?",
+          rueckseite:
+            "**Integration in Koerperpflege** (Bienstein/Froehlich 2021): Bewegung waehrend der Beinwaesche, nicht als separater Block. 5 Regeln: 1) Zeitpunkt = waehrend Waschung, 2) Tempo = Patient bestimmt, 3) Schmerzgrenze = BESD beobachten, nie uebergehen, 4) Umfang = nur bis aktuelle Grenze (rechts 20 Grad vor Null), 5) Wiederholung = 3-5x pro Gelenk, 2x/Tag. Spektrum: Petrov (Bobath), Yilmaz (Physio fuehrt), Kovac (Dyspnoe-Spirale). Faustregel: **Die Waschung oeffnet die Tuer — die Bewegung nutzt den Moment.**",
+        },
       },
     },
 

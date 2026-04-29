@@ -1,6 +1,6 @@
 // CE-02 Situation Frau Schmidt — Phase 4: Maßnahmen durchführen
-// Steps: 9 · Bloom: B4–B5 · Zeit: ~40–55 Min
-// Quelle: phase-durchfuehren.md
+// Steps: 9 + 2 Inline-Wissen · Bloom: B2–B5 · Zeit: ~50–65 Min
+// Quelle: phase-durchfuehren.md + inline-wissen-generator
 
 import type { SituationsPhase } from "../../../_types";
 
@@ -49,6 +49,84 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
           "Atmungsaktives textiles Faltenvlies in die Falte einlegen (AWMF S2k Intertrigo 2022) — keine okklusiven Pasten IN die Falte; Hautschutz-Creme nur auf intakter Haut außerhalb der Falte",
           "Befund sofort notieren (was siehst du, was riechst du, was veränderst du)",
         ],
+      },
+    },
+
+    // Step 4.1b — Inline-Wissen: Proteine — das Baumaterial des Körpers
+    // Schüler hat gerade die Hautfalten-Pflege durchgeführt (Step 4.1). Bevor er die
+    // Makronährstoffe-Analogie (Step 4.2) und das Ernährungsgespräch (Step 4.3) angeht,
+    // braucht er ein solides Verständnis von Protein — warum es gerade bei Frau Schmidt fehlt.
+    {
+      stepId: "ce02-schmidt-dur-01b-protein-grundlagen",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DGE/OGE/SGE (2024): D-A-CH-Referenzwerte für die Nährstoffzufuhr",
+        "ESPEN (2017): Guidelines on Definitions and Terminology of Clinical Nutrition",
+        "Cederholm T. et al. (2019): GLIM-Kriterien",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-schmidt-dur-protein",
+      tag: "krankheitslehre",
+      themaPrimaer: "ernaehrungsgrundlagen",
+      themenSekundaer: ["ernaehrungsassessment"],
+      transition: "Protein fehlt. Jetzt die Frage: Wie erklärst du Frau Schmidt, was Kohlenhydrate, Fette und Proteine eigentlich sind?",
+      contentC1: {
+        title: "Protein — warum es bei Frau Schmidt fehlt",
+        body: "",
+        glossarBegriffe: ["Protein", "Albumin", "Sarkopenie", "Idealgewicht"],
+      },
+      contentB1: {
+        title: "Eiweiß — warum Frau Schmidt zu wenig hat",
+        body: "",
+        glossarBegriffe: ["Protein", "Albumin"],
+      },
+      inlineWissen: {
+        bausteinRef: "ernaehrungsgrundlagen-proteine",
+        storyAufhaenger:
+          "Frau Schmidts Albumin liegt bei 31 g/l — zu niedrig. Dabei isst sie doch genug, sagt sie selbst. Das Problem: Sie isst Kalorien, aber zu wenig Protein. Bevor du gleich mit ihr über Ernährung sprichst, musst du verstehen: Was macht Protein im Körper — und wie viel braucht Frau Schmidt?",
+        storyAufhaengerB1:
+          "Frau Schmidts Eiweiß im Blut (Albumin) ist zu niedrig. Aber sie isst doch genug? Das Problem: Sie isst viel — aber zu wenig Eiweiß. Was macht Eiweiß im Körper?",
+        kerntext:
+          "**Protein (Eiweiß)** ist der Baustoff des Körpers (DGE D-A-CH 2024). Es wird gebraucht für:\n\n• **Wundheilung** — jede Reparatur braucht Aminosäuren.\n\n• **Immunabwehr** — Antikörper bestehen aus Protein.\n\n• **Albumin-Synthese** — hält Flüssigkeit in den Gefäßen (Ödemprophylaxe).\n\n• **Muskelmasse** — Sarkopenie (Muskelschwund) entsteht bei chronischem Proteinmangel.\n\n**Proteinbedarf bei Adipositas + Mangelernährung:**\n\nWichtig: Berechnung auf Basis des **Idealgewichts**, nicht des Istgewichts (sonst Überschätzung bei BMI >30).\n\nFrau Schmidt (1,60 m): Idealgewicht nach BMI 22 = ca. 56 kg.\n\n• Gesund: 0,8 g x 56 kg = **45 g/Tag** (DGE D-A-CH 2024)\n\n• Bei Mangelernährung: 1,2 g x 56 kg = **67 g/Tag** (ESPEN 2017)\n\n**Frau Schmidts Problem:** Fertigpizza liefert ca. 6-8 g Protein pro Portion. Um auf 67 g zu kommen, bräuchte sie 8-10 Portionen Pizza. Oder: 200 g Hüttenkäse (26 g) + 2 Eier (12 g) + 150 g Hähnchen (31 g) = 69 g. Der Unterschied liegt in der Auswahl, nicht im Verzicht.",
+        kerntextB1:
+          "**Protein (= Eiweiß)** ist Baumaterial für den Körper.\n\n**Protein wird gebraucht für:**\n\n• Wunden heilen\n\n• Abwehr gegen Krankheiten\n\n• Albumin herstellen (hält Wasser in den Gefäßen)\n\n• Muskeln erhalten\n\n**Wie viel braucht Frau Schmidt?**\n\nWichtig: Man rechnet mit dem Ideal-Gewicht, nicht mit dem echten Gewicht.\n\nFrau Schmidt ist 1,60 m groß. Ideal-Gewicht = ca. 56 kg.\n\n• Gesund: 0,8 g x 56 = ca. **45 g pro Tag**\n\n• Bei Mangel-Ernährung: 1,2 g x 56 = ca. **67 g pro Tag**\n\n**Das Problem:** Eine Fertig-Pizza hat nur 6-8 g Eiweiß. Frau Schmidt bräuchte 8-10 Pizzen! Stattdessen reicht: 200 g Hüttenkäse + 2 Eier + 150 g Hähnchen = 69 g. Kein Verzicht — bessere Auswahl.",
+        faustregel:
+          "Protein bei Adipositas: Idealgewicht nehmen, nicht Istgewicht. 1,2 g/kg bei Mangelernährung — das ist machbar ohne Diät.",
+        faustregelB1:
+          "Eiweiß-Bedarf: Ideal-Gewicht rechnen, nicht echtes Gewicht. 1,2 g pro kg bei Mangel-Ernährung.",
+        spektrum: [
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Dysphagie — Protein über Konsistenz-Anpassung",
+            kurzbeschreibung:
+              "Bei ihm geht Protein nur in pürierter oder angdickter Form: Quark, Joghurt, Proteinshakes mit Dickungsmittel (IDDSI-Stufe 3-4). Proteinbedarf post-Apoplex: 1,0-1,2 g/kg/Tag.",
+          },
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP Katabolismus",
+            kurzbeschreibung:
+              "Nach Hüft-TEP steigt der Proteinbedarf auf 1,5 g/kg/Tag (ESPEN 2017). Muskelabbau beginnt innerhalb von 48 Stunden post-OP. Protein-Supplementierung ab Tag 1.",
+          },
+          {
+            patientName: "Emilia (Säugling)",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Wachstum = höchster Proteinbedarf",
+            kurzbeschreibung:
+              "Säuglinge brauchen proportional am meisten Protein (1,5-2,0 g/kg/Tag). Muttermilch liefert genau die richtige Zusammensetzung. Bei Bronchiolitis: Infektions-bedingter Mehrbedarf.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Frau Schmidt (BMI 38, 1,60 m) hat Proteinmangel. Wie berechnest du ihren Bedarf — und warum nicht mit 98 kg?",
+          rueckseite:
+            "Bei Adipositas: **Idealgewicht** als Basis (BMI 22 bei 1,60 m = 56 kg). Istgewicht 98 kg führt zu Überschätzung.\n\n- Gesund: 0,8 g x 56 = 45 g/Tag (DGE 2024)\n- Mangelernährung: 1,2 g x 56 = **67 g/Tag** (ESPEN 2017)\n\nSpektrum: Petrov (Dysphagie, IDDSI-Konsistenz), Yilmaz (post-OP, 1,5 g/kg), Emilia (Säugling, 1,5-2,0 g/kg).\n\nFaustregel: **Idealgewicht nehmen, nicht Istgewicht.**",
+        },
       },
     },
 
@@ -233,6 +311,84 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
             correctCategory: 2,
           },
         ],
+      },
+    },
+
+    // Step 4.4b — Inline-Wissen: Glykämischer Index — Kohlenhydrate sind nicht gleich Kohlenhydrate
+    // Schüler hat Protein-Sortierung abgeschlossen (Step 4.4). Bevor er die Diabetes-
+    // Ernährungs-MC (Step 4.5) beantwortet, braucht er das Konzept des glykämischen Index:
+    // Warum Vollkornbrot besser ist als Weißbrot — für Frau Schmidts Blutzucker.
+    {
+      stepId: "ce02-schmidt-dur-04b-glykaemischer-index",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DDG (2023): Praxisempfehlungen Diabetes Typ 2",
+        "DGE/OGE/SGE (2024): D-A-CH-Referenzwerte für die Nährstoffzufuhr",
+        "Jenkins D.J. et al. (1981): Glycemic index of foods — a physiological basis for carbohydrate exchange",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-schmidt-dur-glykaemischer-index",
+      tag: "krankheitslehre",
+      themaPrimaer: "ernaehrungsgrundlagen",
+      themenSekundaer: ["ernaehrungsassessment"],
+      transition: "Nicht alle Kohlenhydrate sind gleich. Das wirst du gleich in der nächsten Frage brauchen.",
+      contentC1: {
+        title: "Glykämischer Index — warum Vollkorn besser ist",
+        body: "",
+        glossarBegriffe: ["Glykämischer Index", "Insulinsensitivität", "Komplexe Kohlenhydrate"],
+      },
+      contentB1: {
+        title: "Warum Vollkorn besser ist als Weißbrot",
+        body: "",
+        glossarBegriffe: ["Glykämischer Index"],
+      },
+      inlineWissen: {
+        bausteinRef: "ernaehrungsgrundlagen-kohlenhydrate",
+        storyAufhaenger:
+          "Frau Schmidt hat erzählt: Zum Frühstück Toastbrot mit Marmelade, mittags oft Nudeln, abends Brot mit Wurst. Alles Kohlenhydrate. Aber macht es einen Unterschied, WELCHE Kohlenhydrate? Für ihren Blutzucker: ja, einen enormen.",
+        storyAufhaengerB1:
+          "Frau Schmidt isst morgens Toastbrot, mittags Nudeln, abends Brot. Alles Kohlenhydrate. Aber: Manche Kohlenhydrate sind besser als andere. Warum?",
+        kerntext:
+          "Der **Glykämische Index (GI)** beschreibt, wie schnell ein Lebensmittel den Blutzucker ansteigen lässt (Jenkins 1981).\n\n**Skala:** 0-100 (Referenz: Traubenzucker = 100).\n\n• **Hoher GI (>70):** Weißbrot (75), Cornflakes (81), Wassermelone (76) → schneller BZ-Anstieg → schneller Insulin-Peak → schneller Abfall → Heißhunger.\n\n• **Mittlerer GI (56-69):** Vollkornbrot (65), Basmatireis (58).\n\n• **Niedriger GI (<55):** Haferflocken (42), Linsen (32), Apfel (36) → langsamer BZ-Anstieg → gleichmäßige Insulin-Antwort → längere Sättigung.\n\n**Warum das bei Diabetes Typ 2 wichtig ist:**\n\nBei Frau Schmidt reagieren die Zellen schlecht auf Insulin (Insulinresistenz). Wenn der BZ nach dem Essen steil ansteigt (hoher GI), überfordert das die ohnehin geschwächte Insulinreaktion → BZ bleibt hoch.\n\n**DDG-Empfehlung 2023:** Kohlenhydrate über den Tag **verteilen**, **komplexe KH** bevorzugen (Vollkorn, Hülsenfrüchte, Gemüse). Keine strikte KH-Restriktion nötig — die Qualität zählt.\n\n**Praktisch für Frau Schmidt:** Toast durch Vollkornbrot ersetzen. Nudeln durch Vollkornnudeln oder Linsennudeln. Kein Verzicht — Tausch.",
+        kerntextB1:
+          "Der **Glykämische Index (GI)** zeigt: Wie schnell lässt ein Lebensmittel den Blutzucker steigen?\n\n**Hoher GI (= schnell):** Weißbrot, Cornflakes, Zucker → Blutzucker steigt schnell hoch → fällt schnell → Heißhunger.\n\n**Niedriger GI (= langsam):** Haferflocken, Linsen, Äpfel → Blutzucker steigt langsam → bleibt gleichmäßig → länger satt.\n\n**Warum ist das bei Diabetes wichtig?**\n\nFrau Schmidts Körper reagiert schlecht auf Insulin. Wenn der Blutzucker schnell steigt, schafft es das Insulin nicht. Der Zucker bleibt hoch.\n\n**Was Frau Schmidt tun kann:**\n\n• Toast → Vollkornbrot\n\n• Nudeln → Vollkorn-Nudeln oder Linsen-Nudeln\n\n• Kein Verzicht — nur Tausch!",
+        faustregel:
+          "Nicht weniger Kohlenhydrate — bessere. Vollkorn statt Weißmehl, verteilt über den Tag.",
+        faustregelB1:
+          "Nicht weniger Kohlenhydrate — bessere. Vollkorn statt Weißbrot. Über den Tag verteilen.",
+        spektrum: [
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Kein Diabetes — aber BZ-Spitzen vermeiden",
+            kurzbeschreibung:
+              "Kein Diabetes, aber: Stress-Hyperglykämie post-Apoplex. Auch bei ihm wird auf gleichmäßige KH-Zufuhr geachtet — BZ-Spitzen verschlechtern das neurologische Outcome.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "COPD + hoher Energiebedarf",
+            kurzbeschreibung:
+              "Bei COPD ist der Energiebedarf erhöht (Atemarbeit!). Aber: zu viele KH → mehr CO2-Produktion → Atemnot verschärft. Fett als Energiequelle bevorzugt (weniger CO2 pro kcal).",
+          },
+          {
+            patientName: "Emilia (Säugling)",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Laktose als Haupt-KH",
+            kurzbeschreibung:
+              "Beim Säugling ist Laktose (Milchzucker) die Haupt-KH-Quelle — physiologisch perfekt. GI-Konzept ist erst ab Beikost-Alter relevant.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Frau Schmidt frühstückt Toastbrot mit Marmelade. Was schlägst du stattdessen vor — und warum?",
+          rueckseite:
+            "Vollkornbrot statt Toast. GI Weißbrot ~75, Vollkorn ~65. Niedrigerer GI = langsamerer BZ-Anstieg = bessere Kontrolle bei Insulinresistenz. DDG 2023: KH verteilen + komplex bevorzugen. Kein Verzicht — Tausch.\n\nSpektrum: Petrov (Stress-Hyperglykämie), Kovac (COPD: zu viel KH = mehr CO2), Emilia (Laktose = physiologisch).\n\nFaustregel: **Nicht weniger KH — bessere.**",
+        },
       },
     },
 
