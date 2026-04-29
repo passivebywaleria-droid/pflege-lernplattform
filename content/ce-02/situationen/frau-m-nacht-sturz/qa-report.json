@@ -1,7 +1,7 @@
 {
   "ceId": "ce-02",
   "situationId": "frau-m-nacht-sturz",
-  "timestamp": "2026-04-29T08:55:17.994Z",
+  "timestamp": "2026-04-29T19:08:28.177Z",
   "steps": [
     {
       "stepIndex": 1,
@@ -14,7 +14,7 @@
       "estimatedReadTimeSec": 49,
       "hasActionBar": true,
       "hasTruncate": false,
-      "glossarTermsFound": 1,
+      "glossarTermsFound": 2,
       "hasQuellen": true,
       "hasInlineWissen": false,
       "hasFaustregel": false
@@ -30,7 +30,7 @@
       "estimatedReadTimeSec": 85,
       "hasActionBar": true,
       "hasTruncate": false,
-      "glossarTermsFound": 2,
+      "glossarTermsFound": 3,
       "hasQuellen": true,
       "hasInlineWissen": true,
       "hasFaustregel": true
@@ -78,7 +78,7 @@
       "estimatedReadTimeSec": 90,
       "hasActionBar": true,
       "hasTruncate": false,
-      "glossarTermsFound": 2,
+      "glossarTermsFound": 3,
       "hasQuellen": true,
       "hasInlineWissen": true,
       "hasFaustregel": true
@@ -88,150 +88,38 @@
       "title": "Das Zimmer betreten",
       "stepKind": "dialog",
       "rendered": true,
-      "clickable": true,
-      "consoleErrors": 0,
-      "hydrationError": false,
-      "estimatedReadTimeSec": 94,
-      "hasActionBar": false,
-      "hasTruncate": false,
-      "glossarTermsFound": 0,
-      "hasQuellen": true,
-      "hasInlineWissen": false,
-      "hasFaustregel": false
-    },
-    {
-      "stepIndex": 7,
-      "title": "Das Zimmer betreten",
-      "stepKind": "dialog",
-      "rendered": true,
-      "clickable": true,
-      "consoleErrors": 0,
-      "hydrationError": false,
-      "estimatedReadTimeSec": 110,
-      "hasActionBar": false,
-      "hasTruncate": false,
-      "glossarTermsFound": 0,
-      "hasQuellen": true,
-      "hasInlineWissen": false,
-      "hasFaustregel": false
-    },
-    {
-      "stepIndex": 8,
-      "title": "Das Zimmer betreten",
-      "stepKind": "dialog",
-      "rendered": true,
-      "clickable": true,
-      "consoleErrors": 0,
-      "hydrationError": false,
-      "estimatedReadTimeSec": 136,
-      "hasActionBar": false,
-      "hasTruncate": false,
-      "glossarTermsFound": 0,
-      "hasQuellen": true,
-      "hasInlineWissen": false,
-      "hasFaustregel": false
-    },
-    {
-      "stepIndex": 9,
-      "title": "Das Zimmer betreten",
-      "stepKind": "dialog",
-      "rendered": true,
-      "clickable": true,
-      "consoleErrors": 0,
-      "hydrationError": false,
-      "estimatedReadTimeSec": 137,
-      "hasActionBar": true,
-      "hasTruncate": false,
-      "glossarTermsFound": 0,
-      "hasQuellen": true,
-      "hasInlineWissen": false,
-      "hasFaustregel": false
-    },
-    {
-      "stepIndex": 10,
-      "title": "Erste Assessment-Reihenfolge",
-      "stepKind": "sorting",
-      "rendered": true,
-      "clickable": true,
-      "consoleErrors": 0,
-      "hydrationError": false,
-      "estimatedReadTimeSec": 58,
-      "hasActionBar": true,
-      "hasTruncate": true,
-      "glossarTermsFound": 1,
-      "hasQuellen": true,
-      "hasInlineWissen": false,
-      "hasFaustregel": false
-    },
-    {
-      "stepIndex": 11,
-      "title": "NRS — die Schmerzskala, die du gleich brauchst",
-      "stepKind": "inlineWissen",
-      "rendered": true,
-      "clickable": true,
-      "consoleErrors": 0,
-      "hydrationError": false,
-      "estimatedReadTimeSec": 94,
-      "hasActionBar": true,
-      "hasTruncate": false,
-      "glossarTermsFound": 1,
-      "hasQuellen": true,
-      "hasInlineWissen": true,
-      "hasFaustregel": true
-    },
-    {
-      "stepIndex": 12,
-      "title": "Was ist eine PIM — und warum interessiert dich das?",
-      "stepKind": "inlineWissen",
-      "rendered": true,
-      "clickable": true,
-      "consoleErrors": 0,
-      "hydrationError": false,
-      "estimatedReadTimeSec": 101,
-      "hasActionBar": true,
-      "hasTruncate": false,
-      "glossarTermsFound": 2,
-      "hasQuellen": true,
-      "hasInlineWissen": true,
-      "hasFaustregel": true
-    },
-    {
-      "stepIndex": 13,
-      "title": "Medikamentenliste sichten",
-      "stepKind": "highlight",
-      "rendered": true,
       "clickable": false,
       "consoleErrors": 0,
       "hydrationError": false,
-      "estimatedReadTimeSec": 49,
-      "hasActionBar": true,
+      "estimatedReadTimeSec": 6,
+      "hasActionBar": false,
       "hasTruncate": false,
-      "glossarTermsFound": 1,
+      "glossarTermsFound": 0,
       "hasQuellen": true,
       "hasInlineWissen": false,
       "hasFaustregel": false
     }
   ],
   "totalSteps": 42,
-  "stepsReached": 13,
+  "stepsReached": 6,
   "stuckAt": {
-    "index": 13,
-    "reason": "handleStep failed (highlight)"
+    "index": 6,
+    "reason": "handleStep failed (dialog)"
   },
   "consoleErrors": [],
   "pageErrors": [],
   "subScores": [
     {
       "name": "Funktional",
-      "score": 96,
+      "score": 92,
       "weight": 0.25,
-      "details": "13/13 gerendert, 12/13 klickbar, 0 Errors"
+      "details": "6/6 gerendert, 5/6 klickbar, 0 Errors"
     },
     {
       "name": "UX",
-      "score": 79,
+      "score": 81,
       "weight": 0.15,
-      "details": "77% Action-Bar, ∅ Lesezeit 82s"
+      "details": "83% Action-Bar, ∅ Lesezeit 49s"
     },
     {
       "name": "Pflege-Standards",
@@ -253,15 +141,14 @@
     },
     {
       "name": "Engagement",
-      "score": 31,
+      "score": 24,
       "weight": 0.1,
-      "details": "31% Steps erreichbar, 31% mit Faustregel"
+      "details": "14% Steps erreichbar, 33% mit Faustregel"
     }
   ],
-  "totalScore": 89,
+  "totalScore": 88,
   "grade": "B",
   "topIssues": [
-    "Walkthrough stuck: handleStep failed (highlight)",
-    "3 Steps ohne Action-Bar"
+    "Walkthrough stuck: handleStep failed (dialog)"
   ]
 }

@@ -268,7 +268,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       stepType: "branching",
       bloomLevel: 5,
       kompetenzbereich: "V.1",
-      quellen: ["§ 1906a BGB", "DNQP 2022"],
+      quellen: ["§ 1831 BGB", "DNQP 2022"],
       track: "basis",
       modus: "praxis-sim",
       lernziel: "ce02-frau-m-plan-fixierung",
@@ -278,13 +278,13 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
         title: "Die Bettgitter-Entscheidung",
         // FIX (walkthrough B-14): Markdown-Underscores entfernt.
         body: "Die Nachtschwester, die an der Tür auftaucht, blickt auf Frau M. und sagt leise:\n\n\"Machen wir doch ein Bettgitter hoch, dann ist sie sicher. Bei der Frau weiß man nie.\"\n\nDie Bettgitter sind hochfahrbar. Beide Seiten sind verfügbar. Frau M. ist orientiert, aber geschwächt. Du musst jetzt entscheiden. Es ist 03:15 Uhr.",
-        glossarBegriffe: ["Fixierung", "§ 1906a BGB"],
+        glossarBegriffe: ["Fixierung", "§ 1831 BGB"],
       },
       contentB1: {
         title: "Bettgitter hochziehen?",
         // FIX (walkthrough B-14): Markdown-Underscores entfernt.
         body: "Die Nachtschwester sagt leise:\n\n\"Wir machen ein Bettgitter hoch, dann ist sie sicher.\"\n\nBeide Bettgitter sind möglich. Frau M. ist wach und orientiert. Es ist 03:15 Uhr. Wie reagierst du?",
-        glossarBegriffe: ["Fixierung", "§ 1906a BGB"],
+        glossarBegriffe: ["Fixierung", "§ 1831 BGB"],
       },
       question: {
         fragetext:
@@ -293,17 +293,17 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
           {
             text: "\"Ja, sofort hoch — Sicherheit geht vor.\"",
             feedback:
-              "Diese Entscheidung ist rechtlich und fachlich problematisch. Beidseitige Bettgitter ohne Zustimmung der orientierten Patientin sind eine **freiheitsentziehende Maßnahme** (§ 1906a BGB). Sie braucht richterliche Genehmigung oder informierte Einwilligung. Zusätzlich: Bettgitter verhindern keine Stürze — sie erhöhen die Fall-Höhe und können Verletzungen verschlimmern (Patienten klettern darüber). Frau M. könnte diese Entscheidung später als Eingriff in ihre Würde empfinden. Besser: Zustimmung einholen ODER Alternativen (Niederflur-Bett, Sturzmatte, Bewegungsmelder).",
+              "Diese Entscheidung ist rechtlich und fachlich problematisch. Beidseitige Bettgitter ohne Zustimmung der orientierten Patientin sind eine **freiheitsentziehende Maßnahme** (§ 1831 BGB). Sie braucht richterliche Genehmigung oder informierte Einwilligung. Zusätzlich: Bettgitter verhindern keine Stürze — sie erhöhen die Fall-Höhe und können Verletzungen verschlimmern (Patienten klettern darüber). Frau M. könnte diese Entscheidung später als Eingriff in ihre Würde empfinden. Besser: Zustimmung einholen ODER Alternativen (Niederflur-Bett, Sturzmatte, Bewegungsmelder).",
             feedbackB1:
-              "Diese Entscheidung ist falsch und rechtlich gefährlich. Beide Bettgitter ohne Frau M.s Erlaubnis sind **Fixierung** (§ 1906a BGB). Man braucht Erlaubnis vom Gericht oder von ihr selbst. Außerdem: Bettgitter verhindern keine Stürze — Patienten klettern darüber und fallen tiefer. Besser: Frau M. fragen ODER niedriges Bett, Sturzmatte, Bewegungsmelder.",
+              "Diese Entscheidung ist falsch und rechtlich gefährlich. Beide Bettgitter ohne Frau M.s Erlaubnis sind **Fixierung** (§ 1831 BGB). Man braucht Erlaubnis vom Gericht oder von ihr selbst. Außerdem: Bettgitter verhindern keine Stürze — Patienten klettern darüber und fallen tiefer. Besser: Frau M. fragen ODER niedriges Bett, Sturzmatte, Bewegungsmelder.",
             isCorrect: false,
           },
           {
             text: "\"Nein, das ist rechtlich ohne ihre Zustimmung nicht erlaubt — und es schützt sie nicht. Wir nehmen stattdessen Bett niedrig, Nachtlicht, Klingel in Reichweite und ich bleibe die erste Stunde in der Nähe.\"",
             feedback:
-              "Hervorragend. Du hast die rechtliche Kernregel verstanden: Beidseitige Bettgitter ohne Zustimmung = freiheitsentziehende Maßnahme (§ 1906a BGB). Du lieferst gleich Alternativen (DNQP 2022-konform): Niedriges Bett (reduziert Fallhöhe), Nachtlicht (verhindert Orientierungs-Sturz), Klingel (ermöglicht Hilfe), Präsenz (beruhigt Frau M.). Das ist fachlich + rechtlich + ethisch richtig. Als Pflegefachperson hast du Aufklärungs- und Widerspruchs-Pflicht gegenüber Kolleg:innen.",
+              "Hervorragend. Du hast die rechtliche Kernregel verstanden: Beidseitige Bettgitter ohne Zustimmung = freiheitsentziehende Maßnahme (§ 1831 BGB). Du lieferst gleich Alternativen (DNQP 2022-konform): Niedriges Bett (reduziert Fallhöhe), Nachtlicht (verhindert Orientierungs-Sturz), Klingel (ermöglicht Hilfe), Präsenz (beruhigt Frau M.). Das ist fachlich + rechtlich + ethisch richtig. Als Pflegefachperson hast du Aufklärungs- und Widerspruchs-Pflicht gegenüber Kolleg:innen.",
             feedbackB1:
-              "Sehr gut. Du hast die Regel verstanden: Bettgitter ohne Erlaubnis sind verboten (§ 1906a BGB). Du hast gute Alternativen: Bett niedrig, Nachtlicht, Klingel, du bleibst in der Nähe. Das ist richtig — rechtlich und fachlich. Als Pflegefachkraft musst du solchen Vorschlägen widersprechen.",
+              "Sehr gut. Du hast die Regel verstanden: Bettgitter ohne Erlaubnis sind verboten (§ 1831 BGB). Du hast gute Alternativen: Bett niedrig, Nachtlicht, Klingel, du bleibst in der Nähe. Das ist richtig — rechtlich und fachlich. Als Pflegefachkraft musst du solchen Vorschlägen widersprechen.",
             isCorrect: true,
           },
           {

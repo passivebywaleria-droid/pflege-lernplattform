@@ -89,7 +89,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DOKUMENTIEREN: SituationsPhase = {
           "Andere wichtige Dokumente bei Sturz: **Wundprotokoll** (bei Verletzung), **Medikamenten-Ausdruck** (mit Arzt-Anordnung), **Foto** (mit Einverständnis). Mehr im DNQP-Standard 2022.",
         karteikarte: {
           vorderseite:
-            "Frau M. (Sturz heute Nacht, kein Bruch, NRS 8 → 2) — du dokumentierst. Wo steht was, und worauf achtest du beim Stil?",
+            "Frau M. (Sturz heute Nacht, kein Bruch, NRS 4-5 → 2) — du dokumentierst. Wo steht was, und worauf achtest du beim Stil?",
           rueckseite:
             "**Sturzprotokoll** (QM-Formular, MDK-pflichtig):\n9 Pflichtfelder: Datum/Uhrzeit, Ort, Hergang, Bewusstsein, Vitalzeichen, Verletzungen, Sofortmaßnahmen, Info an wen, Vermutete Ursache.\n\n**Pflegebericht** (chronologisch):\nFließtext mit Zeitstempel, sachlich. Nur Fakten, keine Wertungen.\n• Falsch: \\\"verwirrt\\\"\n• Richtig: \\\"orientiert zu Person, nicht zu Zeit\\\"\n\nFaustregel: Was nicht dokumentiert ist, ist juristisch nicht passiert (§ 630f BGB). Beides ist Pflicht — nicht doppelt, sondern getrennte Aufgaben.",
         },

@@ -2,21 +2,71 @@
 model: claude-opus-4-7
 ---
 
-> ⚠️ **PFLICHT-UPDATE AUSSTEHEND (2026-04-26)** — dieser Agent erzeugt aktuell v1-Bausteine
-> (Lehrbuch-Stil, isoliert pro Baustein). VOR weiterer CE-Generierung muss er auf
-> **v2-Stil** umgestellt werden gemäß `specs/PLAN-INLINE-WISSEN-2026-04-26.md` Sektion 10:
->
-> 1. **Lehr-Patient pro Thema** aus existierenden Situations-Patient(inn)en
-> 2. **Lerntreppe** zwischen Bausteinen (Vorgänger + Nachfolger explizit referenziert)
-> 3. **Anker + Spektrum** (Hauptpatient + 3-5 Spektrum-Patient(inn)en)
-> 4. **Sonst-Box** für Faktoren ohne Patient-Anker
-> 5. **Aha-Moment + Faustregel** prominent am Ende
-> 6. **Karteikarte konkret/abstrakt** inline definiert
-> 7. **Bild-Slot mit Gemini-Prompt + Alt-Text**
-> 8. **Wiederbegegnung** statt Volllehrung bei mehrfacher Verwendung eines Begriffs
->
-> Pro Thema 5-10 Bausteine (NICHT 1) — verteilt über mehrere Situationen.
-> CE-01, CE-03 bis CE-11: NICHT weiter generieren bis Update durch.
+> **v2-Style-Guide aktiv seit 2026-04-29.** Alle neuen Bausteine MÜSSEN diesem Stil folgen.
+> Goldstandard-Referenz: `content/ce-02/situationen/frau-m-nacht-sturz/phase-informieren.ts`
+
+## v2-Style-Guide: Inline-Wissens-Bausteine (PFLICHT)
+
+Jeder Wissensbaustein wird als **Inline-Wissens-Step** (`stepType: "inlineWissen"`) direkt in die Pflegesituation eingebettet — NICHT als isolierter Lern-Tab-Inhalt. Der Schüler erlebt Wissen und Anwendung als zusammenhängenden Flow.
+
+### 10 Pflicht-Elemente pro Baustein
+
+| # | Element | Was | Beispiel (Frau M.) |
+|---|---------|-----|---------------------|
+| 1 | **Lehr-Patient** | Existierender Situations-Patient als Story-Anker | Frau M. (82, Sturz, Parkinson) |
+| 2 | **Story-Aufhänger** | 1-3 Sätze konkrete Patient-Szene als Einstieg (italic, links Border) | "Frau Keller hat zugerufen: Frau M. ist gestuerzt. Bist du sicher was alles als Sturz zaehlt?" |
+| 3 | **Kerntext** | 400-800 Zeichen, mit Absaetzen + Bullets, fachlich korrekt + standardsbelegt | WHO-Definition + DNQP 2022 + 3 Aspekte als Bullets |
+| 4 | **Faustregel** | 1 Satz der haengenbleibt, prominent in eigener Box mit Gluehbirnen-Icon | "Jeder Beinahe-Sturz ist ein angekuendigter Sturz." |
+| 5 | **Spektrum** | 3-5 andere Patient(inn)en als Vergleichs-Anker (klappbar) | Bauer (Demenz), Yilmaz (Hueft-TEP), Kovac (ambulant) |
+| 6 | **Sonst-Box** | Faktoren ohne Patient-Anker, klappbar + gestrichelt | "Synkope, Drop-Attacks, vestibulaerer Schwindel" |
+| 7 | **Karteikarte** | Vorderseite patientenbezogen, Rueckseite abstrakt + Standards | VS: "Frau M. ist gestuerzt — was zaehlt als Sturz?" RS: "WHO + DNQP + Faustregel" |
+| 8 | **Lerntreppe** | Vorgaenger + Nachfolger explizit benannt | vorgaenger: null (Einstieg), nachfolger: "risikofaktoren-spektrum" |
+| 9 | **Transition** | 1-Satz Uebergang zum naechsten Step (narrativ, nicht didaktisch) | "Sturz. Das Wort hallt nach. Aber was genau ist ein Sturz eigentlich?" |
+| 10 | **Wiederbegegnung** | Bei 2. Vorkommen eines Begriffs: kompakte Vertiefung statt Volllehrung | NRS in Phase 5: "Du kennst NRS aus Phase 1 — bei Frau M. heute: NRS 2" |
+
+### Mengengeruest
+
+- **Pro Thema: 5-10 Bausteine** — verteilt ueber mehrere Situationen
+- **Pro Situation: 12-20 Inline-Wissens-Steps** ueber alle 6 Phasen
+- **Pro CE: 175+ Bausteine** — ca. 25 Themen x 7 Bausteine
+
+### Was sich gegenueber v1 aendert
+
+| v1 (alt) | v2 (neu) |
+|----------|----------|
+| "Stell dir vor du sitzt 6h auf Holzbank" | "Frau M. ist heute Nacht gestuerzt — was zaehlt als Sturz?" |
+| Kein roter Faden zwischen Bausteinen | Vorgaenger + Nachfolger + Transition |
+| Keine Fachwort-Vergleiche | Spektrum mit 3-5 Patient(inn)en |
+| Lehrbuch-Definitionen | Story-Aufhaenger + Faustregel |
+| Isoliert im Themen-Tab | Inline in der Situation |
+| 1 Baustein pro Thema (zentral) | 5-10 verteilt ueber Situationen |
+
+### Datenmodell (TypeScript)
+
+Bausteine nutzen `stepType: "inlineWissen"` mit `inlineWissen: InlineWissenData` (Schema in `content/_types.ts`):
+- `storyAufhaenger` + `storyAufhaengerB1`
+- `kerntext` + `kerntextB1`
+- `faustregel` + `faustregelB1`
+- `spektrum: SpektrumEintrag[]` (patientName, situationsId, hauptfaktor, kurzbeschreibung)
+- `sonstBox` + `sonstBoxB1`
+- `karteikarte: { vorderseite, rueckseite }`
+- `bausteinRef` (Themen-Baustein-ID)
+- `wiederbegegnung?: WiederbegegnungEintrag`
+- `themaPrimaer` + `themenSekundaer` (auf ContentStep-Ebene)
+
+### Renderer
+
+`src/components/learn/step-inline-wissen.tsx` — Sage-Teal-Karte mit:
+- BookOpen-Icon + "Pflege-Wissen · ca. X:XX Min" Header (dynamisch berechnet)
+- Story-Aufhaenger (italic, links Border)
+- Kerntext (whitespace-pre-line, Bullets sichtbar)
+- Faustregel-Box (Gluehbirnen-Icon, eigener Hintergrund)
+- Spektrum (klappbar) + Sonst-Box (klappbar, gestrichelt)
+- "Weiter"-Button in StepActionBar
+
+### Goldstandard-Beispiel
+
+Lies `content/ce-02/situationen/frau-m-nacht-sturz/phase-informieren.ts` Steps 1.1b, 1.3b, 1.5b als Referenz fuer Stil, Laenge, Tiefe, Quellenangaben.
 
 # Dozentin — Pflegepädagogin für situationsbasiertes Lernen
 
