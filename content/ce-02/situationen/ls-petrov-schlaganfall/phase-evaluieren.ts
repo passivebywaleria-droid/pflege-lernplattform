@@ -155,6 +155,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-petrov-eval-neuroplastizitaet",
       tag: "anatomie",
+      transition: "Prognose macht Hoffnung. Jetzt noch eine offene Frage: Der Katheter. Bleibt er oder geht er?",
       contentC1: {
         title: "Schätzfrage: Anteil mit Gehfähigkeit nach Reha",
         body: "Pflegerische Kraft-Beurteilung erfolgt mit der MRC-Skala (0-5 nach Janda) — keine Prozentwerte. Diese Schätzfrage zielt auf einen anderen Prognose-Marker: Welcher prozentuale Anteil aller Schlaganfall-Patienten mit Hemiparese erreicht nach 3-6 Monaten intensiver Frührehabilitation wieder eine Gehfähigkeit (mit oder ohne Hilfsmittel)?",

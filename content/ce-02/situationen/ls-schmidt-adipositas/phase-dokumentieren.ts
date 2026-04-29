@@ -1,6 +1,6 @@
 // CE-02 Situation Frau Schmidt — Phase 6: Dokumentieren
-// Steps: 4 · Bloom: B5–B6 · Zeit: ~20–30 Min
-// Quelle: phase-dokumentieren.md
+// Steps: 4 + 1 Inline-Wissen · Bloom: B2–B6 · Zeit: ~25–35 Min
+// Quelle: phase-dokumentieren.md + inline-wissen-generator
 
 import type { SituationsPhase } from "../../../_types";
 
@@ -62,6 +62,83 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
           "Inkontinenz-Versorgung: Frau Schmidt hat ___",
           "Stimmung: Frau Schmidt wirkte ___",
         ],
+      },
+    },
+
+    // Step 6.1b — Inline-Wissen: Ernährungsdokumentation — was muss ins Protokoll?
+    // Schüler hat gerade den freien Pflegebericht geschrieben (Step 6.1). Bevor er
+    // das strukturierte Ernährungsprotokoll ausfüllt (Step 6.2), braucht er Wissen:
+    // Was gehört in ein Ernährungsprotokoll, warum ist es Pflicht, welche Fehler sind typisch?
+    {
+      stepId: "ce02-schmidt-dok-01b-ernaehrungsdoku",
+      phase: 6,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP (2017): Expertenstandard Ernährungsmanagement zur Sicherstellung und Förderung der oralen Ernährung",
+        "Kondrup J. et al. (2003): NRS 2002 — ESPEN Guidelines",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-schmidt-dok-ernaehrungsprotokoll",
+      tag: "pflege",
+      themaPrimaer: "ernaehrungsassessment",
+      themenSekundaer: ["ernaehrungsgrundlagen"],
+      transition: "Du weißt jetzt was ins Protokoll gehört. Gleich füllst du es aus — für Frau Schmidt.",
+      contentC1: {
+        title: "Ernährungsprotokoll — was muss rein?",
+        body: "",
+        glossarBegriffe: ["Ernährungsprotokoll", "Trinkprotokoll", "Bilanzierung"],
+      },
+      contentB1: {
+        title: "Was muss ins Ernährungs-Protokoll?",
+        body: "",
+        glossarBegriffe: ["Ernährungsprotokoll"],
+      },
+      inlineWissen: {
+        bausteinRef: "ernaehrungsassessment-dokumentation",
+        storyAufhaenger:
+          "Du hast den Pflegebericht geschrieben. Aber Frau Schmidt bekommt zusätzlich ein Ernährungsprotokoll — 3 Tage lang, mit genauer Dokumentation jeder Mahlzeit. Warum reicht der Pflegebericht allein nicht?",
+        storyAufhaengerB1:
+          "Du hast den Pflege-Bericht geschrieben. Aber Frau Schmidt bekommt auch ein Ernährungs-Protokoll. Warum beides?",
+        kerntext:
+          "Das **Ernährungsprotokoll** ist ein standardisiertes Erfassungsinstrument (DNQP 2017). Es unterscheidet sich vom Pflegebericht:\n\n**Pflegebericht:** Freitext, narrativ, subjektiv. Beschreibt WAS passiert ist und WIE der Patient sich verhält.\n\n**Ernährungsprotokoll:** Strukturiert, quantitativ, objektiv. Dokumentiert WAS, WIEVIEL und WANN gegessen/getrunken wurde.\n\n**Pflicht-Inhalte (DNQP 2017):**\n\n• **Zeitpunkt** jeder Mahlzeit (Frühstück, Mittag, Abend, Zwischenmahlzeiten)\n\n• **Art und Menge** der Nahrung (\"1 Scheibe Vollkornbrot, 30 g Hüttenkäse\")\n\n• **Trinkmenge** (Trinkprotokoll) — Gesamtmenge pro Tag\n\n• **Besonderheiten**: Appetit, Übelkeit, Nahrungsverweigerung, Hilfe beim Essen\n\n• **Bilanzierung**: geschätzte Kalorien + Proteinmenge wenn möglich\n\n**Häufige Fehler:**\n\n• \"Gut gegessen\" statt konkreter Mengenangabe\n\n• Zwischenmahlzeiten und Getränke vergessen\n\n• Keine Unterscheidung was angeboten vs. was tatsächlich gegessen wurde\n\n**Bei Frau Schmidt:** 3-Tage-Protokoll als Grundlage für die Ernährungsberaterin. Ohne Protokoll fehlen Daten — die Beratung wird zum Raten.",
+        kerntextB1:
+          "Das **Ernährungs-Protokoll** ist ein Formular. Es zeigt genau: Was hat der Patient gegessen und getrunken?\n\n**Was muss rein:**\n\n• **Wann:** Frühstück, Mittag, Abend, Snacks\n\n• **Was und wie viel:** \"1 Scheibe Vollkorn-Brot mit Hüttenkäse\"\n\n• **Trinkmenge:** Wie viel getrunken? Wasser, Tee, Saft?\n\n• **Besonderheiten:** Appetit? Übelkeit? Hilfe beim Essen gebraucht?\n\n**Häufige Fehler:**\n\n• \"Hat gut gegessen\" — zu ungenau! Wie viel genau?\n\n• Snacks und Getränke vergessen\n\n**Warum bei Frau Schmidt?** Die Ernährungs-Beraterin braucht genaue Daten. Ohne Protokoll kann sie nicht helfen.",
+        faustregel:
+          "\"Gut gegessen\" ist keine Dokumentation. Menge, Art, Zeitpunkt — sonst kann die Ernährungsberaterin nicht arbeiten.",
+        faustregelB1:
+          "\"Gut gegessen\" reicht nicht. Schreib auf: Was genau, wie viel, wann.",
+        spektrum: [
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "IDDSI-Stufe dokumentieren",
+            kurzbeschreibung:
+              "Bei ihm muss zusätzlich die Konsistenz dokumentiert werden (IDDSI-Stufe 3 = liquidisiert, Stufe 4 = püriert). Was er geschluckt hat vs. was aspiriert wurde.",
+          },
+          {
+            patientName: "Herr Nguyen",
+            situationsId: "ls-nguyen-stoma",
+            hauptfaktor: "Ein- und Ausfuhr-Bilanz",
+            kurzbeschreibung:
+              "Bei Stoma: Ernährungsprotokoll + Stoma-Ausscheidungs-Bilanz (Menge, Konsistenz, Farbe). Ohne beides kann der Flüssigkeits- und Elektrolytbedarf nicht berechnet werden.",
+          },
+          {
+            patientName: "Emilia (Säugling)",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Trinkprotokoll bei Bronchiolitis",
+            kurzbeschreibung:
+              "Bei Säuglingen: ml pro Mahlzeit + Trinkbereitschaft + Erbrechen. Trinkmenge <50 % des Tagesbedarfs = Arzt informieren. Jede Mahlzeit dokumentieren.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Im Pflegebericht steht: \"Frau Schmidt hat gut gegessen.\" Reicht das als Ernährungsdokumentation?",
+          rueckseite:
+            "Nein. \"Gut gegessen\" ist nicht quantifizierbar. Ein Ernährungsprotokoll dokumentiert: **Was** (Art), **wie viel** (Menge), **wann** (Zeitpunkt), **Besonderheiten** (Appetit, Hilfe). DNQP 2017: Pflicht bei Ernährungsintervention.\n\nSpektrum: Petrov (IDDSI-Stufe), Nguyen (Stoma-Bilanz), Emilia (Trinkmenge in ml).\n\nFaustregel: **Menge, Art, Zeitpunkt — sonst kann die Beraterin nicht arbeiten.**",
+        },
       },
     },
 

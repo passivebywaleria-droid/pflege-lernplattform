@@ -201,6 +201,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
       modus: "puzzle",
       lernziel: "ce02-petrov-dur-pneumonieprophylaxe",
       tag: "krankheitslehre",
+      transition: "Atemübungen geschafft. Bevor das Frühstück kommt: Erst Mundpflege.",
       contentC1: {
         title: "Pneumonieprophylaxe — Maßnahmen und Wirkung",
         body: "Ordne die Maßnahmen der Pneumonieprophylaxe ihrer jeweiligen Wirkung zu.",
@@ -515,6 +516,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-petrov-dur-angehoerige-beratung",
       tag: "pflege",
+      transition: "Natalya ist informiert und einbezogen. Jetzt der nächste Meilenstein: Herr Petrov soll sitzen.",
       contentC1: {
         title: "KOMPLIKATION 2 — Ehefrau Natalya möchte normalen Tee geben",
         body: "09:00 Uhr. Natalya betritt das Zimmer mit einer Thermoskanne. Sie lächelt. Sie sagt:\n\n\"Ich habe Tee mitgebracht, normalen — er trinkt immer ohne Zucker. Darf ich ihm geben?\"\n\nSimuliertes Beratungsgespräch: Wähle bei jedem Schritt die beste Antwort.",

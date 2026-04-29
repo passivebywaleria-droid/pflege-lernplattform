@@ -146,6 +146,81 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
       },
     },
 
+    // Step 3.3b — Inline-Wissen: Essen anreichen bei Dysphagie — Grundprinzipien
+    // Bevor der Schüler die Maßnahmen priorisiert (inkl. "Frühstück anreichen"), soll er die
+    // Grundprinzipien kennen.
+    {
+      stepId: "ce02-petrov-plan-03b-essen-anreichen",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "II.1",
+      quellen: [
+        "IDDSI 2019 — International Dysphagia Diet Standardisation Initiative",
+        "DGG/DGN 2020 — Neurogene Dysphagie",
+        "DNQP 2024 — Expertenstandard Ernährungsmanagement",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-petrov-plan-essen-anreichen",
+      tag: "pflege",
+      themaPrimaer: "essen-anreichen",
+      themenSekundaer: ["enterale-ernaehrung", "mundpflege"],
+      transition: "Du weißt jetzt wie Anreichen bei Dysphagie funktioniert. Jetzt: Alles in die richtige Reihenfolge bringen.",
+      contentC1: {
+        title: "Essen anreichen bei Dysphagie — 5 Prinzipien",
+        body: "",
+        glossarBegriffe: ["Anreichen", "Dysphagie", "IDDSI", "Schluckreiz"],
+      },
+      contentB1: {
+        title: "Essen geben bei Schluck-Störung — 5 Regeln",
+        body: "",
+        glossarBegriffe: ["Anreichen", "Dysphagie", "IDDSI"],
+      },
+      inlineWissen: {
+        bausteinRef: "essen-anreichen-bei-dysphagie",
+        storyAufhaenger:
+          "Du planst die Frühschicht. Auf der Liste steht: \"Frühstück anreichen\". Klingt einfach — Teller hinstellen, Löffel in die Hand. Aber bei Herrn Petrov ist Essen Anreichen eine pflegerische Hochrisikomaßnahme. Jeder Löffel birgt Aspirationsgefahr.",
+        storyAufhaengerB1:
+          "Auf deiner Liste steht: Frühstück anreichen. Das klingt einfach. Aber bei Herrn Petrov ist es nicht einfach. Jeder Löffel ist ein Risiko.",
+        kerntext:
+          "**5 Prinzipien beim Anreichen bei Dysphagie:**\n\n• **Aufrechte Position** — Oberkörper auf 90° (Aspirationsschutz). Nie im Liegen essen lassen. Mindestens 20 Min nach dem Essen aufrecht bleiben (Reflux-Prävention).\n\n• **Richtige Konsistenz** — Nur das anbieten was verordnet ist. Bei Herrn Petrov: IDDSI Level 2 (mäßig verdickt) + Kostform B (weich). Normales Wasser ist verboten.\n\n• **Von der gesunden Seite** — Löffel von links anbieten (gesunde Seite). Der Schluckreiz wird über die gesunde Seite stimuliert. Bei Hemiparese rechts ist die rechte Wange weniger sensibel.\n\n• **Kleine Portionen** — Max. 5 ml (1 kleiner Teelöffel) pro Schluck. Zwischen den Schlucken warten bis der Mund leer ist. Nicht hetzen.\n\n• **Ruhe und Beobachtung** — Kein Radio, kein Gespräch während des Schluckens. Beobachten: Husten? Feuchte Stimme? Verzögertes Schlucken? Jedes Zeichen = sofort stoppen.\n\n**30 Min nach dem Essen:** Nochmals rechte Wangentasche kontrollieren (Speisereste bei Hemiparese). Dann: Mundpflege.",
+        kerntextB1:
+          "**5 Regeln beim Essen geben:**\n\n• **Aufrecht sitzen** — 90 Grad. Nie liegend essen. Mindestens 20 Minuten nach dem Essen aufrecht bleiben.\n\n• **Richtige Konsistenz** — Nur das geben, was der Arzt gesagt hat. Kein normales Wasser.\n\n• **Von links anbieten** — Links ist die gesunde Seite. Der Löffel kommt von links.\n\n• **Kleine Portionen** — Nur 1 kleiner Teelöffel (5 ml). Warten bis er geschluckt hat.\n\n• **Ruhe** — Kein Radio. Nicht reden beim Schlucken. Beobachten: Hustet er? Klingt die Stimme feucht?\n\n**30 Minuten nach dem Essen:** Rechte Wangen-Tasche prüfen. Dann: Mund-Pflege.",
+        faustregel: "5 ml, 90 Grad, gesunde Seite, richtige Konsistenz, Ruhe. Jeder Löffel ist eine Pflegeentscheidung.",
+        faustregelB1: "5 ml, 90 Grad, von links, angedickt, Ruhe. Bei jedem Löffel aufpassen.",
+        spektrum: [
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz, vergisst zu kauen",
+            kurzbeschreibung:
+              "Bauer hat keine Dysphagie im klassischen Sinn — aber er vergisst das Kauen und Schlucken (Apraxie bei Demenz). Anreichen bei ihm: visuelles Vormachen, Hand zum Mund führen, nicht drängeln.",
+          },
+          {
+            patientName: "Emilia",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Säugling, Trinkschwäche",
+            kurzbeschreibung:
+              "Bei Emilia geht es um Füttern eines Säuglings mit Bronchiolitis: Aufrechte Position, kleine Portionen, häufige Pausen zum Atmen. Anderes Alter, ähnliches Prinzip.",
+          },
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Adipositas, Ernährungsberatung",
+            kurzbeschreibung:
+              "Schmidt hat keine Dysphagie — aber Ernährungsberatung ist bei ihr genauso pflegerisch anspruchsvoll: Kalorienreduktion bei gleichzeitigem Proteinmangel, Stigma-sensitive Kommunikation.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Du reichst Herrn Petrov das Frühstück an. Warum bietest du den Löffel von links an — nicht von rechts?",
+          rueckseite:
+            "Links ist die gesunde Seite. Der Schluckreiz wird über die gesunde Seite stimuliert. Die rechte Wange hat bei Hemiparese weniger Sensibilität — Speisereste sammeln sich dort unbemerkt. 5 Prinzipien: 90° aufrecht, IDDSI Level 2, von links, max. 5 ml/Löffel, Ruhe. Spektrum: Bauer (Apraxie bei Demenz, vergisst zu kauen), Emilia (Trinkschwäche Säugling), Schmidt (Ernährungsberatung bei Adipositas). Faustregel: **Jeder Löffel ist eine Pflegeentscheidung.**",
+        },
+      },
+    },
+
     // Step 3.4 — Sorting: Maßnahmen priorisieren
     {
       stepId: "ce02-petrov-plan-04-priorisierung",
@@ -163,6 +238,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
       modus: "sortierstation",
       lernziel: "ce02-petrov-plan-priorisierung",
       tag: "pflege",
+      transition: "Plan steht, Reihenfolge klar. Aber was wenn die orale Ernährung nicht reicht?",
       contentC1: {
         title: "Maßnahmen priorisieren",
         body: "Du hast 3 Stunden. Fünf Maßnahmen warten. Bringe sie in die richtige Prioritätsreihenfolge nach ABCDE-Logik (Atmung vor allem anderen außer Atemwegs-Notfall) und Aspirations-Risiko.",

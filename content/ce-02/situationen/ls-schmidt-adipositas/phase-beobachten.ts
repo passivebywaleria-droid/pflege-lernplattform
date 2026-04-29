@@ -1,5 +1,5 @@
 // CE-02 Situation Frau Schmidt — Phase 2: Beobachten & Assessment
-// Steps: 9 + 3 Inline-Wissen · Bloom: B1–B4 · Zeit: ~45–60 Min
+// Steps: 9 + 2 Inline-Wissen · Bloom: B1–B4 · Zeit: ~40–55 Min
 // Quelle: phase-beobachten.md + inline-wissen-generator
 
 import type { SituationsPhase } from "../../../_types";
@@ -461,82 +461,6 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
             "Bei Frau Schmidt (BMI 38) findest du in der submammären Falte Rötung und feuchte Haut. Ist das Intertrigo oder Dekubitus?",
           rueckseite:
             "**Intertrigo.** Entsteht durch Feuchtigkeit + Reibung in Hautfalten. Submammär = typische Intertrigo-Stelle bei Adipositas. Dekubitus entsteht durch Druck auf Knochen-Prominenzen (Sakrum, Trochanter, Fersen).\n\n5 Entzündungszeichen: Rubor, Dolor, Calor, Tumor, Functio laesa.\n\nSpektrum: Yilmaz (unter Verband), Bauer (IAD bei Inkontinenz), Emilia (Windeldermatitis).\n\nFaustregel: **Intertrigo = Feuchtigkeit + Reibung in Falten.**",
-        },
-      },
-    },
-
-    // Step 2.5c — Inline-Wissen: Diabetisches Fußsyndrom — bevor du die Füße inspizierst
-    // Schüler geht gleich in die Fußinspektion (Step 2.6) und muss Wagner-Armstrong kennen.
-    {
-      stepId: "ce02-schmidt-beob-05c-diabetisches-fusssyndrom",
-      phase: 2,
-      stepType: "inlineWissen",
-      bloomLevel: 2,
-      kompetenzbereich: "I.1",
-      quellen: [
-        "DDG (2023): Praxisempfehlungen Diabetisches Fußsyndrom",
-        "Wagner F.W. (1979) / Armstrong D.G. (1996): Wagner-Armstrong-Klassifikation",
-        "AWMF S3-Leitlinie NVL Typ-2-Diabetes (2023): Fußversorgung",
-      ],
-      track: "basis",
-      modus: "entdecker",
-      lernziel: "ce02-schmidt-beob-dfs",
-      tag: "krankheitslehre",
-      themaPrimaer: "haut",
-      themenSekundaer: ["ernaehrungsgrundlagen"],
-      transition: "Wagner 1, keine offene Wunde — aber trotzdem ein Alarmsignal. Du schaust jetzt genauer hin.",
-      contentC1: {
-        title: "Diabetisches Fußsyndrom — warum jede Rissbildung zählt",
-        body: "",
-        glossarBegriffe: ["Diabetisches Fußsyndrom", "Wagner-Armstrong-Klassifikation", "Polyneuropathie", "Podologe"],
-      },
-      contentB1: {
-        title: "Diabetischer Fuß — warum jeder Riss gefährlich ist",
-        body: "",
-        glossarBegriffe: ["Diabetisches Fußsyndrom", "Podologe"],
-      },
-      inlineWissen: {
-        bausteinRef: "haut-entzuendungszeichen-5",
-        storyAufhaenger:
-          "In der Übergabe stand: \"Diabetisches Fußsyndrom Wagner Grad 1 (1A).\" Frau Schmidt sagt: \"Die Nägel schneide ich mir selbst, schon immer.\" Was genau ist das diabetische Fußsyndrom — und warum ist Selbst-Nagelpflege so gefährlich?",
-        storyAufhaengerB1:
-          "In der Übergabe steht: \"Diabetisches Fußsyndrom Wagner 1\". Frau Schmidt schneidet sich die Nägel selbst. Warum ist das ein Problem?",
-        kerntext:
-          "Das **Diabetische Fußsyndrom (DFS)** entsteht durch zwei Mechanismen, die bei Diabetes zusammenwirken (DDG 2023):\n\n**1. Polyneuropathie** (Nervenschaden):\n\n• Sensorisch — der Patient spürt Schmerz, Druck und Temperatur an den Füßen nicht mehr. Frau Schmidt merkt den Riss nicht.\n\n• Motorisch — Fußmuskulatur atrophiert, Fehlstellung (Krallenzehen).\n\n• Autonom — Haut wird trocken (Schweißdrüsen fallen aus), Risse entstehen.\n\n**2. Angiopathie** (Gefäßschaden):\n\n• Makro- und Mikroangiopathie → Wundheilung massiv verlangsamt (3-5x langsamer als bei Nicht-Diabetikern).\n\n**Wagner-Klassifikation (Tiefe der Läsion):**\n\n• Grad 0 — Risikofoß, intakte Haut\n\n• **Grad 1 — oberflächliche Läsion** (Frau Schmidt: Rissbildung)\n\n• Grad 2 — tiefe Läsion bis Sehne/Kapsel\n\n• Grad 3 — tiefe Läsion bis Knochen, Abszess\n\n• Grad 4 — begrenzte Nekrose/Gangrän\n\n• Grad 5 — Gangrän des gesamten Fußes\n\n**K.O.-Regel:** Nagelpflege beim DFS ist **ausschließlich Aufgabe von Podolog(inn)en** — nicht der Pflege, nicht des Patienten.",
-        kerntextB1:
-          "Das **Diabetische Fußsyndrom** entsteht, weil Diabetes die Nerven und die Blutgefäße an den Füßen schädigt.\n\n**Nerven-Schaden (Polyneuropathie):**\n\n• Die Füße spüren keinen Schmerz mehr — Frau Schmidt merkt den Riss nicht.\n\n• Die Haut wird trocken, es entstehen Risse.\n\n**Gefäß-Schaden:**\n\n• Wunden heilen bis zu 5-mal langsamer.\n\n**Wagner-Stufen (wie tief ist die Wunde):**\n\n• Grad 0 — Risiko-Fuß, aber Haut ist ok\n\n• **Grad 1 — Riss oder flache Wunde** (= Frau Schmidt)\n\n• Grad 2 bis 5 — immer tiefer bis Amputation droht\n\n**Wichtige Regel:** Nägel schneiden darf NUR der Podologe (= Fuß-Spezialist). Nicht die Pflege. Nicht der Patient selbst.",
-        faustregel:
-          "Beim diabetischen Fuß gilt: Schon ein Riss ist eine Wunde. Und Nägel schneidet nur der Podologe.",
-        faustregelB1:
-          "Beim Diabetes-Fuß: Jeder Riss ist eine Wunde. Nägel schneiden darf nur der Podologe.",
-        spektrum: [
-          {
-            patientName: "Herr Petrov",
-            situationsId: "ls-petrov-schlaganfall",
-            hauptfaktor: "Hemiparese-bedingte Fußfehlstellung",
-            kurzbeschreibung:
-              "Kein DFS, aber: Hemiparese verändert den Gang → einseitige Druckbelastung → Risiko für Druckstellen am Fuß. Ähnliche Inspektion, andere Ursache.",
-          },
-          {
-            patientName: "Frau Kovac",
-            situationsId: "ls-kovac-ambulant",
-            hauptfaktor: "Ambulante Fußpflege bei COPD",
-            kurzbeschreibung:
-              "Kein Diabetes, aber: COPD + Rauchen → periphere Durchblutungsstörung. Fußinspektion bei jedem Hausbesuch Pflicht — auch ohne DFS.",
-          },
-          {
-            patientName: "Herr Bauer",
-            situationsId: "ls-bauer-demenz-sturz",
-            hauptfaktor: "Vergisst Fußpflege",
-            kurzbeschreibung:
-              "Demenz-Patient: vergisst Fußpflege komplett. Nägel sind eingewachsen. Kein DFS, aber: Verletzungsrisiko durch Selbstvernachlässigung. Podologe trotzdem sinnvoll.",
-          },
-        ],
-        karteikarte: {
-          vorderseite:
-            "Frau Schmidt hat Wagner 1 und schneidet ihre Nägel selbst. Was sagst du — und warum?",
-          rueckseite:
-            "K.O.-Regel: Nagelpflege beim DFS ist NUR Aufgabe von Podolog(inn)en. Wunden am Diabetikerfuß heilen 3-5x langsamer. Ein Nagelbett-Schnitt kann sich zu einer nicht-heilenden Wunde entwickeln (DDG 2023). Du erklärst Frau Schmidt warum, und leitest Podologen-Überweisung ein.\n\nWagner: 0 (Risikofuß) → 1 (Riss, Frau Schmidt) → 2 (tief) → 3 (Knochen) → 4 (Nekrose) → 5 (Gangrän).\n\nFaustregel: **Schon ein Riss ist eine Wunde.**",
         },
       },
     },

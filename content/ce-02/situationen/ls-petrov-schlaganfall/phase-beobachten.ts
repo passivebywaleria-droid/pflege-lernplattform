@@ -424,6 +424,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
       modus: "praxis-sim",
       lernziel: "ce02-petrov-beob-haut",
       tag: "anatomie",
+      transition: "Haut geprüft. Aber Immobilität bedroht nicht nur die Haut — auch die Gelenke.",
       contentC1: {
         title: "Hautinspektion — wo prüfst du?",
         body: "Herr Petrov ist seit 5 Tagen überwiegend immobil. Markiere alle Körperstellen, die du bei einem immobilen Schlaganfall-Patienten auf Druckschäden prüfen würdest.",

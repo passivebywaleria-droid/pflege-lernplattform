@@ -97,6 +97,92 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_EVALUIEREN: SituationsPhase = {
       },
     },
 
+    // Step 5.1b — Inline-Wissen: Albumin als Verlaufsparameter (Wiederbegegnung)
+    // Schüler hat gerade den BZ-Verlauf über 5 Tage interpretiert (Step 5.1).
+    // Jetzt: Albumin-Wiederbegegnung — in Phase 2 als Paradox gelernt, jetzt als
+    // Verlaufsparameter. Relevant für Step 5.2 (Pflegeziele auswerten).
+    {
+      stepId: "ce02-schmidt-eval-01b-albumin-verlauf",
+      phase: 5,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Cederholm T. et al. (2019): GLIM-Kriterien",
+        "DGE/OGE/SGE (2024): D-A-CH-Referenzwerte für die Nährstoffzufuhr",
+        "Gabay C./Kushner I. (1999): Acute-phase proteins and other systemic responses to inflammation",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-schmidt-eval-albumin-verlauf",
+      tag: "krankheitslehre",
+      themaPrimaer: "ernaehrungsassessment",
+      themenSekundaer: ["ernaehrungsgrundlagen"],
+      transition: "BZ-Trend positiv. Albumin braucht Wochen. Jetzt: Welche Pflegeziele sind erreicht — welche nicht?",
+      contentC1: {
+        title: "Albumin als Verlaufsparameter — Wiederbegegnung",
+        body: "",
+        glossarBegriffe: ["Albumin", "Halbwertszeit", "Akut-Phase-Protein"],
+      },
+      contentB1: {
+        title: "Albumin — warum es nicht sofort besser wird",
+        body: "",
+        glossarBegriffe: ["Albumin"],
+      },
+      inlineWissen: {
+        bausteinRef: "ernaehrungsassessment-laborwerte",
+        wiederbegegnung: {
+          basisBausteinId: "ernaehrungsassessment-laborwerte",
+          basisPatient: "Frau Schmidt",
+          vertiefung:
+            "In Phase 2 hast du das Albumin-Paradox kennengelernt: Frau Schmidt hat BMI 38 — aber Albumin 31 g/l. Jetzt, 5 Tage später: Albumin ist wahrscheinlich noch nicht gestiegen. Das ist KEIN Zeichen von Therapieversagen. Albumin hat eine Halbwertszeit von 17-20 Tagen (Gabay/Kushner 1999). Eine Veränderung wird frühestens nach 2-3 Wochen sichtbar. Gleichzeitig sinkt Albumin bei akuter Inflammation weiter ab (Akut-Phase-Negativ-Protein). Der BZ-Trend ist das bessere kurzfristige Maß — und der ist positiv.",
+          vertiefungB1:
+            "In Phase 2 hast du gelernt: Albumin ist trotz Übergewicht zu niedrig. Jetzt, 5 Tage später: Albumin ist wahrscheinlich noch gleich niedrig. Das ist normal! Albumin braucht 2-3 Wochen bis es steigt. Der Blutzucker ist das bessere Maß für jetzt — und der wird besser.",
+        },
+        storyAufhaenger:
+          "Du schaust die Laborwerte vom heutigen Morgen an: BZ nüchtern 148 mg/dl — fast im Ziel. Aber Albumin? Immer noch 30 g/l — sogar minimal schlechter als vor 5 Tagen. Hat die Ernährungsumstellung nichts gebracht?",
+        storyAufhaengerB1:
+          "Du schaust die heutigen Labor-Werte: Blutzucker wird besser. Aber Albumin ist immer noch niedrig — sogar etwas schlechter. Heißt das, die Ernährung hat nicht geholfen?",
+        kerntext:
+          "**Albumin als Verlaufsparameter — Vorsicht bei der Interpretation** (Gabay/Kushner 1999, GLIM 2019):\n\n**Halbwertszeit:** Albumin hat eine Halbwertszeit von **17-20 Tagen**. Das heißt: Selbst wenn Frau Schmidt ab heute perfekt essen würde, steigt das Albumin frühestens nach 2-3 Wochen messbar.\n\n**Akut-Phase-Negativ-Protein:** Bei akuter Entzündung (wie Frau Schmidts entgleistem Diabetes) produziert die Leber weniger Albumin und mehr CRP/Fibrinogen. Albumin kann also in der akuten Phase sogar SINKEN, obwohl die Ernährung besser wird.\n\n**Bessere kurzfristige Marker:**\n\n• **Präalbumin (Transthyretin)** — HWZ 2-3 Tage, reagiert schneller\n\n• **BZ-Tagesprofil** — tägliche Verbesserung sichtbar\n\n• **Klinischer Eindruck** — Kraft, Appetit, Hautzustand\n\n**Für die Evaluation:**\n\nAlbumin nach 5 Tagen bewerten = zu früh. Erst nach Entlassung (ambulanter Verlauf) sinnvoll kontrollieren (z.B. nach 4 Wochen beim Hausarzt).",
+        kerntextB1:
+          "**Albumin braucht Zeit.**\n\n**Warum steigt Albumin nicht sofort?**\n\n• Albumin bleibt 17-20 Tage im Blut. Neues Albumin braucht also 2-3 Wochen, bis man es sieht.\n\n• Bei Entzündung (Frau Schmidts Diabetes) macht die Leber weniger Albumin. Es kann sogar noch sinken.\n\n**Bessere Zeichen für jetzt:**\n\n• Blutzucker — wird jeden Tag besser\n\n• Wie fühlt sich Frau Schmidt? Mehr Kraft? Mehr Appetit?\n\n**Für dich heißt das:** Albumin nach 5 Tagen ist noch KEIN gutes Maß. Erst nach 3-4 Wochen beim Hausarzt kontrollieren.",
+        faustregel:
+          "Albumin-HWZ = 20 Tage. Nach 5 Tagen bewerten ist zu früh. BZ-Trend und klinischer Eindruck sind die besseren kurzfristigen Marker.",
+        faustregelB1:
+          "Albumin braucht 2-3 Wochen bis es steigt. Blutzucker und Kräftezustand zeigen schneller ob es besser wird.",
+        spektrum: [
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Albumin + Dysphagie-Verlauf",
+            kurzbeschreibung:
+              "Bei ihm wird Albumin engmaschig gemessen, weil bei Dysphagie die Proteinzufuhr kritisch ist. Wöchentliche Kontrolle + Präalbumin als Schnell-Marker.",
+          },
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP Albumin-Abfall",
+            kurzbeschreibung:
+              "Nach OP fällt Albumin durch Inflammation + Blutverlust zusätzlich ab. Erst ab Woche 2-3 post-OP steigt es wieder. Protein-Supplementierung trotzdem ab Tag 1.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "Ambulante Verlaufskontrolle",
+            kurzbeschreibung:
+              "Bei ihr wird Albumin alle 3 Monate beim Hausarzt gemessen — im ambulanten Setting ist der Langzeitverlauf aussagekräftig. Einzelwerte sind wenig hilfreich.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Frau Schmidts Albumin ist nach 5 Tagen Ernährungsumstellung nicht gestiegen. Ist das ein Zeichen von Therapieversagen?",
+          rueckseite:
+            "Nein. Albumin hat eine **HWZ von 17-20 Tagen** — Anstieg frühestens nach 2-3 Wochen sichtbar. Bei akuter Inflammation (entgleister Diabetes) sinkt Albumin sogar zusätzlich (Akut-Phase-Negativ-Protein). Bessere kurzfristige Marker: BZ-Tagesprofil, Präalbumin (HWZ 2-3 Tage), klinischer Eindruck.\n\nSpektrum: Petrov (wöchentlich), Yilmaz (post-OP Abfall), Kovac (ambulant alle 3 Monate).\n\nFaustregel: **Nach 5 Tagen Albumin bewerten = zu früh.**",
+        },
+      },
+    },
+
     // Step 5.2 — Categorize: Pflegeziele auswerten
     {
       stepId: "ce02-schmidt-eval-02-pflegeziele-erreicht",

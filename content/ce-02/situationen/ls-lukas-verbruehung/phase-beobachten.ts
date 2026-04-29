@@ -111,6 +111,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-lukas-beob-kuss",
       tag: "pflege",
+      transition: "Lukas' Schmerzprofil ist dokumentiert. Jetzt: Was steckt unter dem Verband?",
       contentC1: {
         title: "KUSS-Skala — zuerst schauen, dann erklären",
         body: "Vor dir liegt die KUSS-Skala (Kindliche Unbehagens- und Schmerzskala, Büttner/Finke 2000) mit 5 Beobachtungskategorien à 0–2 Punkten (max. 10). Du beobachtest Lukas im Aufnahmemoment — bevor das i.v.-Schmerzmittel voll wirkt. Markiere alle Kategorien, die bei Lukas gerade starken Schmerz anzeigen — ohne dass wir dir vorher erklären wie die Skala funktioniert. Nutz dein Vorwissen und deine Beobachtungsfähigkeit.",
@@ -166,6 +167,88 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
               "Wegstoßen + ruhelos = 2 Punkte. Insgesamt 8/10 bei Aufnahme — sehr starker Schmerz. Schmerzmittel wirkt noch nicht voll.",
           },
         ],
+      },
+    },
+
+    // Step 2.1b — Inline-Wissen: Verbrühungsgrade (1, 2a, 2b, 3)
+    // Schüler hat gerade die KUSS-Skala angewendet und Lukas' Schmerz beobachtet.
+    // Bevor Kathrin den Verband löst (Step 2.2), braucht er das Grundwissen:
+    // Welche Verbrühungsgrade gibt es, wie sehen sie aus, welche Prognose?
+    {
+      stepId: "ce02-lukas-beob-01b-verbruehungsgrade",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DGV 2023 — Leitlinie Thermische Verletzungen",
+        "Wallace 1951 — Neunerregel",
+        "Lund/Browder 1944 — Altersangepasste KOF-Berechnung",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-lukas-beob-verbruehungsgrade",
+      tag: "krankheitslehre",
+      themaPrimaer: "haut",
+      themenSekundaer: ["saeuglingspflege"],
+      transition: "Jetzt weißt du die Grade. Kathrin löst den Verband — schau genau hin.",
+      contentC1: {
+        title: "Verbrühungsgrade — 4 Stufen, 4 Prognosen",
+        body: "",
+        glossarBegriffe: ["Grad 1", "Grad 2a", "Grad 2b", "Grad 3", "Nekrose", "Epithelisierung"],
+      },
+      contentB1: {
+        title: "Verbrühungsgrade — von leicht bis schwer",
+        body: "",
+        glossarBegriffe: ["Grad 2a", "Nekrose (= abgestorbenes Gewebe)"],
+      },
+      inlineWissen: {
+        bausteinRef: "haut-verbruehungsgrade-uebersicht",
+        storyAufhaenger:
+          "Kathrin wird gleich den Verband lösen. Was wirst du sehen? Bei Lukas steht \"Grad 2a\" auf der Notaufnahmekarte. Aber was bedeutet das genau — und wie unterscheidest du 2a von 2b oder 3?",
+        storyAufhaengerB1:
+          "Kathrin löst gleich den Verband. Auf der Karte steht \"Grad 2a\". Was bedeutet das? Wie sieht Grad 2a aus — und wie sehen die anderen Grade aus?",
+        kerntext:
+          "**Die 4 Verbrühungsgrade (DGV 2023):**\n\n• **Grad 1** — nur Epidermis (Oberhaut). Rötung, Brennen, KEINE Blasen. Wie Sonnenbrand. Heilt in 3-5 Tagen von allein.\n\n• **Grad 2a** — oberflächliche Dermis. **Feuchte Blasen**, rosige Wundfläche, **schmerzhaft** (Nervenenden intakt). Heilt in **10-14 Tagen** ohne Narben bei richtiger Wundversorgung.\n\n• **Grad 2b** — tiefe Dermis. **Trockene, mattweißliche Blasen**, Schmerzempfinden **reduziert** (Nervenenden teilzerstört). Heilt langsam (3-4 Wochen), **Narbenbildung wahrscheinlich**, evtl. OP-pflichtig.\n\n• **Grad 3** — alle Hautschichten zerstört. **Keine Schmerzen** (alle Nerven zerstört), weißlich-braune oder schwarze Nekrose, lederartig. Heilt NICHT von allein — immer OP (Hauttransplantation).\n\n**Merkhilfe:** Je höher der Grad, desto **weniger Schmerz** — weil mehr Nerven zerstört sind. Ein schmerzloses Verbrühungsareal ist ein Alarmsignal, kein gutes Zeichen.\n\n**Bei Lukas:** Feuchte Blasen + starker Schmerz (KUSS 8/10) + rosige Wundfläche = **Grad 2a**. Prognose: Heilt in 10-14 Tagen bei feuchter Wundbehandlung.",
+        kerntextB1:
+          "**4 Verbrühungsgrade (DGV 2023):**\n\n• **Grad 1** — Rötung, Brennen, keine Blasen. Wie Sonnenbrand. Heilt in 3-5 Tagen.\n\n• **Grad 2a** — **feuchte Blasen**, Schmerzen, rosige Haut. Heilt in **10-14 Tagen** ohne Narben.\n\n• **Grad 2b** — **trockene, weißliche Blasen**, weniger Schmerzen. Heilt langsam, Narben möglich.\n\n• **Grad 3** — **kein Schmerz** (alle Nerven zerstört), schwarze oder braune Haut. Heilt nur mit OP.\n\n**Merkhilfe:** Weniger Schmerz = schlimmerer Grad. Ein schmerzloses Verbrühungsgebiet ist gefährlich.\n\n**Bei Lukas:** Feuchte Blasen + starke Schmerzen + rosige Haut = **Grad 2a**. Heilt in 10-14 Tagen.",
+        faustregel:
+          "Je weniger Schmerz bei Verbrühung, desto schlimmer der Grad. Schmerzfreiheit = Alarmsignal.",
+        faustregelB1:
+          "Weniger Schmerz bei Verbrühung = schlimmerer Grad. Kein Schmerz = gefährlich.",
+        spektrum: [
+          {
+            patientName: "Frau Yilmaz (Hüft-TEP)",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Operationswunde — andere Wundklassifikation",
+            kurzbeschreibung:
+              "Bei Frau Yilmaz ist die Wunde chirurgisch (sauberer Schnitt, genähte Wundränder). Andere Klassifikation als thermische Verletzung: primäre vs. sekundäre Wundheilung. Aber das Prinzip der Wundbeobachtung ist identisch: Rötung, Schwellung, Exsudat, Geruch.",
+          },
+          {
+            patientName: "Frau Yilmaz (Dekubitus)",
+            situationsId: "ls-yilmaz-spirale2",
+            hauptfaktor: "Dekubitus — Kategorien statt Grade",
+            kurzbeschreibung:
+              "Dekubitus wird in 4 Kategorien (EPUAP/NPUAP) klassifiziert — nicht Grade. Kategorie 1 = nicht wegdrückbare Rötung, Kategorie 4 = freiliegender Knochen. Ähnliches Prinzip wie Verbrühungsgrade: steigende Gewebstiefe.",
+          },
+          {
+            patientName: "Herr Petrov (Schlaganfall)",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Haut-Integrität bei Immobilität",
+            kurzbeschreibung:
+              "Herr Petrov hat keine Verbrühung — aber seine Immobilität nach dem Schlaganfall macht die Haut verletzlich. Dekubitus-Risiko durch fehlende Druckentlastung. Die Hautbeobachtung (Rötung, Blasen, Nekrose) folgt derselben Logik.",
+          },
+        ],
+        sonstBox:
+          "Für Kinder gibt es statt der Wallace-Neunerregel die **Lund-Browder-Tabelle** — sie berücksichtigt, dass der Kopf bei Kleinkindern relativ größer ist als bei Erwachsenen (~18 % statt 9 % KOF). Die Handinnenfläche des Patienten = ca. 1 % KOF (\"Handflächenregel\") — für schnelle Ersteinschätzung im Rettungsdienst.",
+        sonstBoxB1:
+          "Für Kinder gibt es eine eigene KOF-Tabelle (**Lund-Browder**) — der Kopf eines Kleinkindes ist im Verhältnis zum Körper größer als bei Erwachsenen. Schnelle Schätzung: Die Handinnenfläche des Patienten = ca. 1 % KOF.",
+        karteikarte: {
+          vorderseite:
+            "Lukas hat feuchte Blasen, starke Schmerzen (KUSS 8/10) und eine rosige Wundfläche. Welcher Verbrühungsgrad — und warum wäre es ein schlechtes Zeichen wenn er KEINE Schmerzen hätte?",
+          rueckseite:
+            "Grad 2a (oberflächliche Dermis): feuchte Blasen, Schmerz erhalten, rosige Wundfläche. Prognose: Heilung in 10-14 Tagen.\n\nSchmerzfreiheit bei Verbrühung = Nerven zerstört = Grad 2b oder 3 = tiefere Schädigung, schlechtere Prognose. Grad 3: keine Nerven, keine Heilung ohne OP.\n\nSpektrum: Yilmaz/Hüft-TEP (OP-Wunde), Yilmaz/Spirale2 (Dekubitus-Kategorien), Petrov (Immobilitäts-Haut).\n\nFaustregel: **Je weniger Schmerz, desto schlimmer der Grad.**",
+        },
       },
     },
 

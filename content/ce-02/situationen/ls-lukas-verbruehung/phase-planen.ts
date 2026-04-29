@@ -27,6 +27,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
       modus: "sortierstation",
       lernziel: "ce02-lukas-plan-massnahmen",
       tag: "pflege",
+      transition: "Maßnahmen sortiert. Aber warum eigentlich feuchte Wundbehandlung?",
       contentC1: {
         title: "Maßnahmen einordnen — Zeitachse und Bereich",
         body: "Sortiere die Maßnahmen in die richtige Zelle: nach Zeitachse (sofort / heute / bis Entlassung) und Bereich (Wunde / Flüssigkeit / Kommunikation).",
@@ -74,6 +75,87 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
             correctQuadrant: 4,
           },
         ],
+      },
+    },
+
+    // Step 3.1b — Inline-Wissen: Feuchte Wundbehandlung — Prinzip
+    // Schüler hat die Maßnahmen-Matrix sortiert (Step 3.1). Bevor der Text-Step zur
+    // feuchten Wundbehandlung kommt, braucht er das Grundprinzip: WARUM feucht?
+    {
+      stepId: "ce02-lukas-plan-01b-feuchte-wundbehandlung",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Winter 1962 — Moist Wound Healing",
+        "DGV 2023 — Leitlinie Thermische Verletzungen",
+        "DNQP 2024 — Expertenstandard Pflege von Menschen mit chronischen Wunden",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-lukas-plan-feuchte-prinzip",
+      tag: "krankheitslehre",
+      themaPrimaer: "haut",
+      themenSekundaer: ["saeuglingspflege"],
+      transition: "Das Prinzip steht. Jetzt die konkreten Materialien für Lukas.",
+      contentC1: {
+        title: "Warum feucht heilen? — Das Winter-Prinzip",
+        body: "",
+        glossarBegriffe: ["Feuchte Wundbehandlung", "Epithelisierung", "Mazeration", "Okklusion"],
+      },
+      contentB1: {
+        title: "Warum heilt feucht besser als trocken?",
+        body: "",
+        glossarBegriffe: ["Feuchte Wundbehandlung", "Epithelisierung (= neue Haut wächst)"],
+      },
+      inlineWissen: {
+        bausteinRef: "haut-feuchte-wundbehandlung-prinzip",
+        storyAufhaenger:
+          "Kathrin sagt: \"Feuchte Wundbehandlung.\" Das klingt logisch — aber warum? Jahrzehntelang hat man Wunden trocken gehalten (\"An der Luft heilt es am besten\"). Was hat sich geändert?",
+        storyAufhaengerB1:
+          "Kathrin sagt: \"Wir machen feuchte Wundbehandlung.\" Aber warum feucht? Früher hat man Wunden trocken gelassen. Was ist besser?",
+        kerntext:
+          "**Das Winter-Prinzip (1962):**\n\nGeorge Winter bewies in den 1960ern: Wunden heilen unter feuchten Bedingungen **bis zu 50 % schneller** als unter trockenen.\n\n**Warum?**\n\n• **Epithelzellen wandern schneller** über eine feuchte Oberfläche — wie auf einer Wasserrutsche statt auf Sandpapier.\n\n• **Weniger Schorf-Bildung** — unter Schorf stockt die Zellwanderung.\n\n• **Wachstumsfaktoren bleiben in der Wunde** — sie werden nicht ausgetrocknet.\n\n• **Weniger Schmerz** — feuchte Auflagen reizen die Nervenenden weniger.\n\n**Aber Achtung — feucht ≠ nass:**\n\n• Zu viel Feuchtigkeit → **Mazeration** (Haut weicht auf, wird weiß, anfällig für Infektion).\n\n• Die Kunst ist das **feuchte Gleichgewicht**: Wundauflage nimmt überschüssiges Exsudat auf, hält aber die Wundfläche feucht.\n\n**Bei Lukas:** Grad-2a-Verbrühung nässt (Exsudat). Ein silikonbeschichteter Polyurethanschaum (z.B. Mepilex) saugt das Exsudat auf, hält die Wunde feucht, klebt nicht an der Wundfläche — schmerzarmer Verbandwechsel.",
+        kerntextB1:
+          "**Das Winter-Prinzip (1962):**\n\nWunden heilen unter feuchten Bedingungen **bis zu 50 % schneller** als unter trockenen.\n\n**Warum?**\n\n• Neue Hautzellen wandern schneller über eine feuchte Fläche.\n\n• Weniger Schorf — Schorf bremst die Heilung.\n\n• Weniger Schmerzen — feuchte Auflagen reizen weniger.\n\n**Aber:** Zu viel Feuchtigkeit ist auch schlecht. Die Haut weicht auf (= Mazeration). Die richtige Auflage nimmt überschüssiges Wundwasser auf, hält aber die Wunde feucht.\n\n**Bei Lukas:** Grad 2a nässt. Die Wundauflage (Mepilex) saugt das Wasser auf. Die Wunde bleibt feucht, aber nicht nass. Beim nächsten Wechsel klebt sie nicht fest.",
+        faustregel:
+          "Feucht = schnellere Heilung + weniger Schmerz. Aber feucht ≠ nass — Mazeration vermeiden.",
+        faustregelB1:
+          "Feucht heilt schneller und tut weniger weh. Aber zu nass ist auch schlecht — Mazeration.",
+        spektrum: [
+          {
+            patientName: "Frau Yilmaz (Dekubitus Kat. II)",
+            situationsId: "ls-yilmaz-spirale2",
+            hauptfaktor: "Dekubitus — feuchte Wundbehandlung als Standard",
+            kurzbeschreibung:
+              "Auch bei Frau Yilmaz' Dekubitus Kat. II gilt das Winter-Prinzip. Hydrokolloide oder Schaumverbände halten die Wundfläche feucht. Der Unterschied zu Lukas: Dekubitusheilung dauert länger (Wochen bis Monate) und braucht Druckentlastung als Hauptmaßnahme.",
+          },
+          {
+            patientName: "Herr Petrov (Schlaganfall)",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Immobilität — präventive Hautpflege",
+            kurzbeschreibung:
+              "Bei Herr Petrov geht es um Dekubitus-Prophylaxe: Hautpflege mit W/O-Lotionen, Mikrolagerung, Druckentlastung. Keine offene Wunde — aber das Wissen um Feuchtigkeitsbalance der Haut ist dasselbe Prinzip.",
+          },
+          {
+            patientName: "Herr Nguyen (Stoma)",
+            situationsId: "ls-nguyen-stoma",
+            hauptfaktor: "Peristomale Haut — Feuchtigkeit als Feind",
+            kurzbeschreibung:
+              "Bei Herr Nguyens Stoma ist Feuchtigkeit das Problem, nicht die Lösung: Stuhlkontakt mazeriert die peristomale Haut. Hier schützt man mit Hautschutzplatten VOR Feuchtigkeit — Gegenbeispiel zum Winter-Prinzip.",
+          },
+        ],
+        sonstBox:
+          "Weitere Wundauflagen-Typen: **Hydrogel** (spendet Feuchtigkeit bei trockenen Wunden), **Alginat** (bei stark nässenden Wunden, aus Braunalgen), **Silber-beschichtete Auflagen** (bei Infektionsgefahr, bakterizid), **Vakuumtherapie (NPWT)** — bei tiefen, schlecht heilenden Wunden (ab Grad 2b/3). All das lernst du in CE-02 Thema Haut vertieft.",
+        sonstBoxB1:
+          "Andere Wundauflagen: **Hydrogel** (gibt Feuchtigkeit ab), **Alginat** (bei viel Wundwasser), **Silber-Auflagen** (gegen Infektion), **Vakuum-Therapie** (bei tiefen Wunden). Das kommt in CE-02 Thema Haut genauer.",
+        karteikarte: {
+          vorderseite:
+            "Kathrin sagt: \"Feuchte Wundbehandlung.\" Warum heilt eine Wunde feucht schneller als trocken — und wann wird Feuchtigkeit zum Problem?",
+          rueckseite:
+            "Winter-Prinzip (1962): Feuchtes Milieu beschleunigt Epithelzell-Wanderung um bis zu 50 %, reduziert Schorf-Bildung und Schmerz. Problem: Zu viel Feuchtigkeit → Mazeration (Hautaufweichung, Infektionsrisiko).\n\nSpektrum: Yilmaz/Dekubitus (feucht = Standard), Petrov (Hautpflege = Prävention), Nguyen/Stoma (Feuchtigkeit = Feind).\n\nFaustregel: **Feucht = schneller + weniger Schmerz. Aber feucht ≠ nass.**",
+        },
       },
     },
 

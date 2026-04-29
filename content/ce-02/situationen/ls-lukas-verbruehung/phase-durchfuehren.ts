@@ -14,6 +14,83 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
   kontextB1:
     "Lukas ist wach. Er liegt auf dem Bett. Sandra sitzt neben ihm. Kevin steht am Fenster. Frau Fink kommt um 15 Uhr.\n\nJetzt: Verbandwechsel, Mundpflege, Trinkangebot. Lukas sieht deine Schere — er fängt sofort an zu weinen. Dann klopft es: Frau Fink ist 10 Minuten zu früh. Kevin wird laut. Zwei Probleme hintereinander.",
   kernSteps: [
+    // Step 4.0b — Inline-Wissen: Kindgerechte Maßnahmen-Vorbereitung
+    // Phase 4 beginnt. Bevor der Schüler die Reihenfolge der Vorbereitung sortiert (Step 4.1),
+    // braucht er das Grundwissen: Wie bereitet man ein Kleinkind auf eine schmerzhafte Maßnahme vor?
+    {
+      stepId: "ce02-lukas-dur-00b-kindgerechte-vorbereitung",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Hoehl/Kullick 2019 — Kinderkrankenpflege",
+        "DGV 2023 — Leitlinie Thermische Verletzungen",
+        "AWMF S3-LL 2021 — Analgesie, Sedierung und Delirmanagement",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-lukas-dur-kindgerechte-vorbereitung",
+      tag: "pflege",
+      themaPrimaer: "saeuglingspflege",
+      themenSekundaer: ["schmerz"],
+      transition: "Du weißt jetzt wie man Lukas vorbereitet. Bringe die Schritte in die richtige Reihenfolge.",
+      contentC1: {
+        title: "Kindgerechte Vorbereitung — Ankündigen, nicht überrumpeln",
+        body: "",
+        glossarBegriffe: ["Ablenkung als Pflegetechnik", "Prozedurale Angst", "Bedarfsanalgesie"],
+      },
+      contentB1: {
+        title: "Wie bereitest du Lukas auf den Verbandwechsel vor?",
+        body: "",
+        glossarBegriffe: ["Ablenkung (= Distraction)", "Bedarfsanalgesie (= Schmerzmittel bei Bedarf)"],
+      },
+      inlineWissen: {
+        bausteinRef: "saeuglingspflege-kindgerechte-vorbereitung",
+        storyAufhaenger:
+          "Lukas sieht die Schere auf deinem Verbandwagen — und fängt an zu weinen. Noch bevor du irgendetwas getan hast. Kleinkinder reagieren auf visuelle Reize, nicht auf Erklärungen. Wie gehst du damit um?",
+        storyAufhaengerB1:
+          "Lukas sieht die Schere — und weint sofort. Du hast noch gar nichts gemacht. Wie bereitest du ein Kind auf eine schmerzhafte Maßnahme vor?",
+        kerntext:
+          "**3 Säulen der kindgerechten Vorbereitung (Hoehl/Kullick 2019):**\n\n**1. Ankündigung statt Überraschung**\n• Kurz, konkret, altersgerecht: \"Ich schaue deinen Arm an. Das kitzelt kurz. Mama ist dabei.\"\n• NICHT: \"Das tut gar nicht weh\" — das ist eine Lüge, das Kind merkt es.\n• Zeitfenster: Bei 2-3-Jährigen max. 1-2 Minuten vor der Maßnahme ankündigen. Zu früh = Angst baut sich auf.\n\n**2. Ablenkung als aktive Pflegetechnik**\n• Seifenblasen, Musik, Knisterfolie, Handpuppe — sensorische Reize die das Schmerzerleben reduzieren.\n• Ablenkung **begleitet** die Maßnahme, **ersetzt** aber nicht die Ankündigung. Ablenkung ohne Ankündigung = Hinterlist.\n• Bezugsperson (Sandra) als Ablenkungsunterstützung einbeziehen.\n\n**3. Material aus dem Sichtfeld**\n• Schere, Pinzette, Spritze: außerhalb von Lukas' Blickfeld vorbereiten.\n• Verbandmaterial erst zeigen wenn Ablenkung aktiv ist.\n• Bedarfsanalgesie: Wirkzeit prüfen BEVOR die Maßnahme beginnt — nicht erst wenn das Kind schreit.\n\n**Prozedurale Angst:** Kinder entwickeln nach negativen Erfahrungen Angst vor medizinischen Maßnahmen (konditioniert). Jeder Verbandwechsel bei Lukas prägt seine Einstellung zu Pflege für Jahre.",
+        kerntextB1:
+          "**3 Regeln für kindgerechte Vorbereitung:**\n\n**1. Ankündigen**\n• Kurz sagen was du machst: \"Ich schaue deinen Arm an. Mama ist dabei.\"\n• NICHT sagen: \"Das tut nicht weh\" — das merkt das Kind.\n• Bei 2-3-Jährigen: 1-2 Minuten vorher ankündigen.\n\n**2. Ablenken**\n• Seifenblasen, Musik, Knisterfolie — das lenkt vom Schmerz ab.\n• Sandra macht die Ablenkung.\n• Ablenkung ERSETZT die Ankündigung NICHT.\n\n**3. Material verstecken**\n• Schere und Verband nicht zeigen bevor du bereit bist.\n• Schmerzmittel-Wirkung prüfen BEVOR du anfängst.\n\n**Wichtig:** Jeder Verbandwechsel prägt Lukas. Gute Erfahrung = weniger Angst beim nächsten Mal. Schlechte Erfahrung = mehr Angst.",
+        faustregel:
+          "Ankündigen, ablenken, Material verstecken — in dieser Reihenfolge. Nie überrumpeln.",
+        faustregelB1:
+          "Erst sagen was du machst. Dann ablenken. Material verstecken. Nie überrumpeln.",
+        spektrum: [
+          {
+            patientName: "Emilia (8 Wochen, Bronchiolitis)",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Säugling — Ablenkung funktioniert anders",
+            kurzbeschreibung:
+              "Bei Emilia (8 Wochen) funktioniert verbale Ankündigung nicht. Stattdessen: Pucken (Einwickeln gibt Sicherheit), Non-nutritives Saugen (Schnuller), Hautkontakt (Känguru-Methode). Ablenkung über taktile Reize statt visuelle.",
+          },
+          {
+            patientName: "Herr Bauer (82, Demenz)",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz — ähnliche Prinzipien wie bei Kleinkindern",
+            kurzbeschreibung:
+              "Herr Bauer versteht Ankündigungen nicht immer. Aber das Prinzip ist gleich: kurze, klare Sätze, ruhige Stimme, Berührung ankündigen bevor man anfasst. Basale Stimulation (beruhigende Waschung) nutzt denselben Ansatz: vorhersehbar, rhythmisch, sicher.",
+          },
+          {
+            patientName: "Frau M. (82, Sturz)",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "Erwachsene — ausführlichere Ankündigung möglich",
+            kurzbeschreibung:
+              "Bei Frau M. (orientiert, sprachfähig) kannst du ausführlicher ankündigen: Was passiert, warum, wie lange. Bei Lukas hast du 1-2 Sätze. Das Prinzip bleibt: Vorhersehbarkeit reduziert Angst.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Lukas sieht die Schere und weint sofort — obwohl du noch nichts getan hast. Was sind die 3 Säulen der kindgerechten Maßnahmen-Vorbereitung?",
+          rueckseite:
+            "1. **Ankündigung** — kurz, konkret, max. 1-2 Min vorher bei 2-3-Jährigen. Nie lügen (\"tut nicht weh\").\n2. **Ablenkung** — Seifenblasen, Musik, Bezugsperson. Begleitet die Maßnahme, ersetzt nicht die Ankündigung.\n3. **Material aus Sichtfeld** — Schere/Pinzette verstecken. Analgesie-Wirkzeit vorher prüfen.\n\nSpektrum: Emilia (Pucken, Schnuller), Bauer (kurze Sätze, Basale Stimulation), Frau M. (ausführliche Erklärung möglich).\n\nFaustregel: **Ankündigen, ablenken, Material verstecken — nie überrumpeln.**",
+        },
+      },
+    },
+
     // Step 4.1 — Sequencing: Vorbereitung Verbandwechsel
     {
       stepId: "ce02-lukas-dur-01-vorbereitung-kinder",
@@ -294,6 +371,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
       lernziel: "ce02-lukas-dur-verbandwechsel",
       tag: "krankheitslehre",
       displayFormat: "stepbystep",
+      transition: "Verbandwechsel geschafft. Jetzt: Was darf Lukas im Mund haben — und was nicht?",
       contentC1: {
         title: "Verbandwechsel Grad 2a — korrekte Durchführung",
         body: "Nach der Pause. Arzt hat Bedarfsanalgesie freigegeben. Lukas ist ruhiger. Der korrekte Verbandwechsel:\n\n1. **Blasen nicht öffnen** (wenn intakt) — intakte Blasen bieten natürlichen Wundschutz, Öffnung erhöht Infektionsrisiko\n2. **NaCl-0,9-%-Spülung NUR bei Bedarf** — bei Verschmutzung, Wundsekretkrusten oder Belägen. Bei sauberer, intakter Wundfläche keine routinemäßige Spülung — sie irritiert das fragile Wundbett unnötig (DGV 2023: minimale Manipulation)\n3. **Hydroaktive Wundauflage anlegen** (z. B. Mepilex-ähnlich) — haftet nicht an der Wunde, schmerzarmer nächster Wechsel\n4. **Locker wickeln** — kein Abschnüren, Lukas muss Arm bewegen können\n5. **Schmerzkontrolle nach dem Wechsel** — KUSS-Skala erheben, Ergebnis dokumentieren\n\nQuelle: _(DGV-Leitlinie Thermische Verletzungen 2023; Hoehl/Kullick 2019, kindgerechte Wundversorgung mit sparsamer Wundreinigung)_",
@@ -303,6 +381,86 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
         title: "Verbandwechsel — Schritt für Schritt",
         body: "Nach der Pause. Lukas ist ruhiger. Jetzt der Verbandwechsel:\n\n1. Blasen nicht aufmachen — wenn sie ganz sind, schützen sie die Wunde\n2. Wunde NUR spülen wenn sie schmutzig ist — mit NaCl (= Salzwasser 0,9 %). Bei sauberer Wunde nicht spülen (das reizt die Wunde)\n3. Wundauflage anlegen die nicht klebt\n4. Locker wickeln — Lukas muss den Arm bewegen können\n5. Danach: KUSS-Skala prüfen und aufschreiben",
         glossarBegriffe: ["NaCl 0,9 % (= Kochsalzlösung, 0,9 %)", "Hydroaktive Wundauflage"],
+      },
+    },
+
+    // Step 4.4b — Inline-Wissen: Mundpflege bei Kleinkindern
+    // Schüler hat den Verbandwechsel abgeschlossen. Bevor die MC zur Mundpflege kommt (4.5),
+    // muss er wissen: Was darf man bei Kleinkindern unter 6 Jahren NICHT verwenden?
+    {
+      stepId: "ce02-lukas-dur-04b-mundpflege-kleinkind",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DGKJ 2022 — Mundpflege im Kindesalter",
+        "Hoehl/Kullick 2019 — Kinderkrankenpflege",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-lukas-dur-mundpflege-grundlagen",
+      tag: "pflege",
+      themaPrimaer: "mundpflege",
+      themenSekundaer: ["saeuglingspflege"],
+      transition: "Gut. Jetzt weißt du was geht und was nicht. Was bietest du Lukas an?",
+      contentC1: {
+        title: "Mundpflege bei Kleinkindern — was ist erlaubt, was nicht?",
+        body: "",
+        glossarBegriffe: ["Chlorhexidin", "Octenidin", "Mundpflege", "Soor"],
+      },
+      contentB1: {
+        title: "Mundpflege bei Lukas — was ist erlaubt?",
+        body: "",
+        glossarBegriffe: ["Chlorhexidin", "Octenidin", "Soor (= Pilz im Mund)"],
+      },
+      inlineWissen: {
+        bausteinRef: "mundpflege-kleinkind-grundlagen",
+        storyAufhaenger:
+          "Lukas' Mundschleimhaut ist leicht trocken. Er hat seit dem Unfall kaum getrunken. Du überlegst: Mundspülung? Zahnpflege? Was ist bei einem 2,5-Jährigen erlaubt — und was nicht?",
+        storyAufhaengerB1:
+          "Lukas' Mund ist trocken. Er hat kaum getrunken. Was kannst du für seinen Mund tun — und was darfst du nicht?",
+        kerntext:
+          "**Mundpflege bei Kindern unter 6 Jahren (DGKJ 2022):**\n\n**NICHT erlaubt:**\n\n• **Chlorhexidin-Mundspülungen** — Schluckgefahr (Kinder unter 6 können nicht zuverlässig ausspucken), Schleimhautreizung, bei Verschlucken Übelkeit und Erbrechen. DGKJ 2022 kontraindiziert bei <6 J.\n\n**Erlaubt und empfohlen:**\n\n• **Octenidin-Lösung** (z.B. Octenisept) — antiseptisch, schmeckt mild, bei Verschlucken ungefährlich.\n\n• **Schluckbare Lösungen** — Kamille oder Salbei in kleiner Menge, befeuchtet die Schleimhaut.\n\n• **Wattestäbchen mit Wasser** — sanftes Auswischen bei trockener Mundschleimhaut.\n\n• **Trinkangebote** — das Beste gegen trockene Schleimhäute: Flüssigkeit von innen.\n\n**Warum ist das bei Lukas relevant?**\n\nTrockene Mundschleimhaut + Schmerzstress + reduzierte Trinkmenge = **Soor-Risiko** (Candidose). Pilze siedeln sich auf trockenen, geschädigten Schleimhäuten leichter an. Deshalb: aktive Mundpflege, nicht abwarten.",
+        kerntextB1:
+          "**Mundpflege bei Kindern unter 6 Jahren:**\n\n**NICHT erlaubt:**\n\n• **Chlorhexidin-Mundspülung** — Kinder unter 6 können nicht richtig ausspucken. Gefahr beim Schlucken.\n\n**Erlaubt:**\n\n• **Octenidin** — antiseptisch, schmeckt mild, darf geschluckt werden.\n\n• **Kamille oder Salbei** — in kleiner Menge, befeuchtet den Mund.\n\n• **Wattestäbchen mit Wasser** — sanft den Mund auswischen.\n\n• **Trinken anbieten** — das Beste gegen trockenen Mund.\n\n**Warum bei Lukas wichtig?** Trockener Mund + wenig Trinken + Stress = Risiko für **Soor** (= Pilzinfektion im Mund). Deshalb: aktive Mundpflege.",
+        faustregel:
+          "Kein Chlorhexidin unter 6 Jahren. Octenidin oder Kamille — die darf das Kind schlucken.",
+        faustregelB1:
+          "Kein Chlorhexidin unter 6 Jahren. Octenidin oder Kamille sind sicher.",
+        spektrum: [
+          {
+            patientName: "Herr Petrov (Schlaganfall)",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Aspirationsrisiko bei Mundpflege",
+            kurzbeschreibung:
+              "Herr Petrov hat eine Schluckstörung (Dysphagie). Mundpflege bei ihm muss mit Absaugbereitschaft erfolgen — Aspirationsrisiko. Bei Lukas besteht kein Aspirationsrisiko, aber die Grundregel ist dieselbe: Patient kann schlucken → schluckbare Mittel verwenden.",
+          },
+          {
+            patientName: "Emilia (8 Wochen, Bronchiolitis)",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Säugling — Mundpflege noch eingeschränkter",
+            kurzbeschreibung:
+              "Bei Emilia (8 Wochen) ist Mundpflege auf Befeuchtung mit Muttermilch-getränktem Tupfer oder sterilem Wasser beschränkt. Keine Antiseptika, keine Lösungen — rein mechanisch-befeuchtend.",
+          },
+          {
+            patientName: "Herr Bauer (82, Demenz)",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Mundpflege bei Kooperationsproblem",
+            kurzbeschreibung:
+              "Herr Bauer kooperiert bei der Mundpflege nicht immer. Prinzip wie bei Lukas: kurz, ruhig, mit Ankündigung. Bei Demenz-Patienten: Chlorhexidin nur bei SICHERER Ausspuckfähigkeit — sonst Octenidin.",
+          },
+        ],
+        sonstBox:
+          "Erweiterte Mundpflege-Optionen bei Risikopatienten: **Nystatin** (bei Soor-Nachweis, Arztverordnung), **Dexpanthenol-Lösung** (bei Stomatitis/Mukositis, z.B. nach Chemotherapie — CE-05/CE-07), **Caphosol** (künstlicher Speichel bei Strahlentherapie-bedingter Xerostomie). Bei Lukas aktuell nicht relevant — aber bei Kindern auf der Onkologie (CE-10) zentrales Thema.",
+        sonstBoxB1:
+          "Mehr Mundpflege-Mittel: **Nystatin** bei Soor (Arzt muss es verordnen). **Dexpanthenol** bei Entzündung im Mund. **Künstlicher Speichel** bei Strahlentherapie. Für Lukas jetzt nicht nötig — aber bei Kindern mit Krebs (CE-10) sehr wichtig.",
+        karteikarte: {
+          vorderseite:
+            "Lukas (2,5 J.) hat eine leicht trockene Mundschleimhaut. Eine Kollegin greift zur Chlorhexidin-Mundspülung. Was sagst du?",
+          rueckseite:
+            "Chlorhexidin ist bei Kindern unter 6 Jahren kontraindiziert (DGKJ 2022): Schluckgefahr, Schleimhautreizung, Übelkeit bei Verschlucken. Alternative: Octenidin (antiseptisch, schlucksicher) oder Kamille/Salbei in kleiner Menge.\n\nSpektrum: Petrov (Aspiration), Emilia (nur Wasser/Muttermilch-Tupfer), Bauer (Chlorhexidin nur bei sicherem Ausspucken).\n\nFaustregel: **Kein Chlorhexidin unter 6 Jahren. Octenidin oder Kamille — schlucksicher.**",
+        },
       },
     },
 
