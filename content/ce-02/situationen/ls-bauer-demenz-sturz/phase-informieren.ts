@@ -1,7 +1,8 @@
 // CE-02 Situation Herr Bauer — Demenz und Sturz — Phase 1: Informieren & Ankommen
-// Steps: 5 (4 Kern + 1 Optional) · Bloom: B2-B3 · Zeit: ~20-30 Min
+// Steps: 7 (4 Kern + 2 Inline-Wissen + 1 Optional) · Bloom: B1-B3 · Zeit: ~25-35 Min
 // Quelle: content/ce-02/situationen/ls-bauer-demenz-sturz/phase-informieren.md
 // Pipeline v9 — 2026-04-23
+// Inline-Wissen: 2 Bausteine (sturz-prophylaxe Wiederbegegnung, basale-stimulation Vorbereitung)
 
 import type { SituationsPhase } from "../../../_types";
 

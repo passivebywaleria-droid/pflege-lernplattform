@@ -8,7 +8,9 @@
       "Glob",
       "Grep",
       "WebSearch",
-      "WebFetch(*)"
+      "WebFetch(*)",
+      "Bash(cp specs/agents/transition-generator.md .claude/agents/transition-generator.md)",
+      "Bash(cp specs/agents/inline-wissen-generator.md .claude/agents/inline-wissen-generator.md)"
     ]
   }
 }

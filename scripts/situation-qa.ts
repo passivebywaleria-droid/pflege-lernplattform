@@ -11,11 +11,16 @@
  * Usage:
  *   npx tsx scripts/situation-qa.ts ce-02 frau-m-nacht-sturz
  *   npx tsx scripts/situation-qa.ts ce-02 --all
+ *   npx tsx scripts/situation-qa.ts ce-02 frau-m-nacht-sturz --pipeline
  *
  * Output:
  *   content/{ceId}/situationen/{sitId}/qa-report.json
  *   content/{ceId}/situationen/{sitId}/qa-report.md
  *   Bei --all: content/{ceId}/qa-summary.md (Vergleichs-Heatmap)
+ *
+ * --pipeline Modus:
+ *   Kein Screenshot, kein Markdown — nur JSON-Report.
+ *   Exit-Code 0 bei Score >= 70, Exit-Code 1 bei Score < 70.
  */
 
 import { chromium, type Page, type ConsoleMessage } from "playwright";
@@ -685,7 +690,8 @@ function calculateScore(
 async function runQA(
   ceId: string,
   situationId: string,
-  baseUrl: string
+  baseUrl: string,
+  pipelineMode = false
 ): Promise<QAReport> {
   const url = `${baseUrl}/de/lernen/situation/${situationId}?ce=${ceId}`;
   const screenshotDir = path.join(
@@ -696,7 +702,7 @@ async function runQA(
     situationId,
     "_qa-screenshots"
   );
-  if (!fs.existsSync(screenshotDir))
+  if (!pipelineMode && !fs.existsSync(screenshotDir))
     fs.mkdirSync(screenshotDir, { recursive: true });
 
   // Content-Audit (statisch, kein Browser nötig)
@@ -715,9 +721,11 @@ async function runQA(
   });
   page.on("pageerror", (e) => pageErrors.push(e.message.slice(0, 300)));
 
-  console.log(`\n→ QA: ${ceId}/${situationId}`);
-  console.log(`  URL: ${url}`);
-  console.log(`  Content: ${contentData.totalSteps} Steps, ${contentData.inlineWissenCount} Inline-Wissen\n`);
+  if (!pipelineMode) {
+    console.log(`\n→ QA: ${ceId}/${situationId}`);
+    console.log(`  URL: ${url}`);
+    console.log(`  Content: ${contentData.totalSteps} Steps, ${contentData.inlineWissenCount} Inline-Wissen\n`);
+  }
 
   await page.goto(url, { waitUntil: "domcontentloaded", timeout: 30_000 });
 
@@ -754,23 +762,25 @@ async function runQA(
     const kind = await detectKind(page);
     const ux = await uxAuditStep(page);
 
-    // Screenshot
-    const slug = title
-      .toLowerCase()
-      .replace(/[^a-z0-9äöüß]+/gi, "-")
-      .slice(0, 35);
-    await page
-      .screenshot({
-        path: path.join(
-          screenshotDir,
-          `${String(i).padStart(2, "0")}-${kind}-${slug}.png`
-        ),
-        fullPage: true,
-        timeout: 5000,
-      })
-      .catch(() => {});
+    // Screenshot (übersprungen im Pipeline-Modus)
+    if (!pipelineMode) {
+      const slug = title
+        .toLowerCase()
+        .replace(/[^a-z0-9äöüß]+/gi, "-")
+        .slice(0, 35);
+      await page
+        .screenshot({
+          path: path.join(
+            screenshotDir,
+            `${String(i).padStart(2, "0")}-${kind}-${slug}.png`
+          ),
+          fullPage: true,
+          timeout: 5000,
+        })
+        .catch(() => {});
+    }
 
-    console.log(
+    if (!pipelineMode) console.log(
       `  ${String(i).padStart(2)} [${kind.padEnd(14)}] ${title}`
     );
 
@@ -855,7 +865,7 @@ async function runQA(
     topIssues,
   };
 
-  // Write JSON + MD
+  // Write reports (Pipeline: nur JSON, kein MD)
   const reportDir = path.join(
     process.cwd(),
     "content",
@@ -867,7 +877,9 @@ async function runQA(
     path.join(reportDir, "qa-report.json"),
     JSON.stringify(report, null, 2)
   );
-  fs.writeFileSync(path.join(reportDir, "qa-report.md"), renderMD(report));
+  if (!pipelineMode) {
+    fs.writeFileSync(path.join(reportDir, "qa-report.md"), renderMD(report));
+  }
 
   return report;
 }
@@ -908,9 +920,11 @@ function renderMD(r: QAReport): string {
 // ═══════════════════════════════════════════════════════════════════════
 
 async function main() {
-  const ceId = process.argv[2] ?? "ce-02";
-  const sitArg = process.argv[3] ?? "frau-m-nacht-sturz";
-  const baseUrl = process.argv[4] ?? "http://localhost:3000";
+  const pipelineMode = process.argv.includes("--pipeline");
+  const args = process.argv.filter((a) => a !== "--pipeline");
+  const ceId = args[2] ?? "ce-02";
+  const sitArg = args[3] ?? "frau-m-nacht-sturz";
+  const baseUrl = args[4] ?? "http://localhost:3000";
   const isAll = sitArg === "--all";
 
   const situationen = isAll
@@ -937,29 +951,42 @@ async function main() {
 
   for (const sit of situationen) {
     try {
-      const report = await runQA(ceId, sit, baseUrl);
+      const report = await runQA(ceId, sit, baseUrl, pipelineMode);
       reports.push(report);
 
-      console.log(`\n${"═".repeat(60)}`);
-      console.log(
-        `  ${sit}: ${report.totalScore}/100 (${report.grade}) · ${report.stepsReached}/${report.totalSteps} Steps · ${report.consoleErrors.length} Errors`
-      );
-      console.log("═".repeat(60));
-      for (const s of report.subScores) {
-        const bar = "█".repeat(Math.round(s.score / 10)) + "░".repeat(10 - Math.round(s.score / 10));
-        console.log(`  ${s.name.padEnd(18)} ${bar} ${s.score}  ${s.details}`);
-      }
-      if (report.topIssues.length > 0) {
-        console.log("\n  Top-Issues:");
-        report.topIssues.forEach((i) => console.log(`    ⚠️ ${i}`));
+      if (pipelineMode) {
+        // Pipeline: nur Score + Top-Issues
+        console.log(JSON.stringify({
+          situationId: sit,
+          score: report.totalScore,
+          grade: report.grade,
+          stepsReached: report.stepsReached,
+          totalSteps: report.totalSteps,
+          errors: report.consoleErrors.length,
+          topIssues: report.topIssues,
+        }));
+      } else {
+        console.log(`\n${"═".repeat(60)}`);
+        console.log(
+          `  ${sit}: ${report.totalScore}/100 (${report.grade}) · ${report.stepsReached}/${report.totalSteps} Steps · ${report.consoleErrors.length} Errors`
+        );
+        console.log("═".repeat(60));
+        for (const s of report.subScores) {
+          const bar = "█".repeat(Math.round(s.score / 10)) + "░".repeat(10 - Math.round(s.score / 10));
+          console.log(`  ${s.name.padEnd(18)} ${bar} ${s.score}  ${s.details}`);
+        }
+        if (report.topIssues.length > 0) {
+          console.log("\n  Top-Issues:");
+          report.topIssues.forEach((i) => console.log(`    ⚠️ ${i}`));
+        }
       }
     } catch (e) {
-      console.error(`\n❌ ${sit} fehlgeschlagen: ${e}`);
+      console.error(`\n${sit} fehlgeschlagen: ${e}`);
     }
   }
 
-  // Summary für --all
-  if (isAll && reports.length > 1) {
+  // Summary für --all (nicht im Pipeline-Modus)
+  if (!pipelineMode && isAll && reports.length > 1) {
     let summary = `# QA-Summary ${ceId}\n\n`;
     summary += `| Situation | Score | Grade | Steps | Errors | Top-Issue |\n|-----------|------:|:-----:|------:|-------:|-----------|\n`;
     for (const r of reports.sort((a, b) => b.totalScore - a.totalScore)) {
@@ -974,7 +1001,17 @@ async function main() {
     );
   }
 
-  console.log(`\n✅ QA fertig.\n`);
+  if (!pipelineMode) {
+    console.log(`\n✅ QA fertig.\n`);
+  }
+
+  // Pipeline: Exit-Code basierend auf Score
+  if (pipelineMode) {
+    const worstScore = reports.length > 0
+      ? Math.min(...reports.map((r) => r.totalScore))
+      : 0;
+    process.exit(worstScore >= 70 ? 0 : 1);
+  }
 }
 
 main().catch((e) => {

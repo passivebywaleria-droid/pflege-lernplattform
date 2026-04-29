@@ -353,6 +353,7 @@ function renderMarkdown(ceId: string, coverage: ThemaCoverage[]): string {
 
 function main() {
   const ceId = process.argv[2] ?? "ce-02";
+  const isPipelineMode = process.argv.includes("--pipeline");
   const coverage = audit(ceId);
   const md = renderMarkdown(ceId, coverage);
   const outPath = path.join(
@@ -362,8 +363,35 @@ function main() {
     `curriculum-coverage-${new Date().toISOString().split("T")[0]}.md`
   );
   fs.writeFileSync(outPath, md);
-  console.log(md);
+
+  if (!isPipelineMode) {
+    console.log(md);
+  }
   console.log(`\n✅ Report geschrieben nach: ${outPath}`);
+
+  // Pipeline-Modus: exit 1 wenn Lücken vorhanden (K.O.-Kriterium)
+  if (isPipelineMode) {
+    const luecken = coverage.filter(
+      (c) => c.insgesamt.zentralCount === 0
+    );
+    if (luecken.length > 0) {
+      console.error(
+        `\n❌ CURRICULUM-GATE FAIL: ${luecken.length}/${coverage.length} Themen ohne zentrale Abdeckung`
+      );
+      for (const l of luecken) {
+        const top = Object.entries(l.situationen)
+          .filter(([, v]) => v.classification === "angewandt")
+          .sort((a, b) => b[1].keywordHits - a[1].keywordHits)[0];
+        console.error(
+          `   ${l.thema} → Empfehlung: Inline-Baustein in ${top?.[0] ?? "neue Situation"}`
+        );
+      }
+      process.exit(1);
+    }
+    console.log(
+      `\n✅ CURRICULUM-GATE PASS: ${coverage.length}/${coverage.length} Themen zentral abgedeckt`
+    );
+  }
 }
 
 main();
