@@ -1,0 +1,109 @@
+{
+  "steps": [
+    {
+      "index": 1,
+      "title": "Übergabe auf dem Flur",
+      "phaseHeader": "Informieren · 1/8",
+      "stepKind": "situation",
+      "clicked": true,
+      "screenshot": "01-situation-übergabe-auf-dem-flur.png"
+    },
+    {
+      "index": 2,
+      "title": "Was zählt eigentlich als Sturz?",
+      "phaseHeader": "Informieren · 2/8",
+      "stepKind": "inlineWissen",
+      "clicked": true,
+      "screenshot": "02-inlineWissen-was-zählt-eigentlich-als-sturz-.png"
+    },
+    {
+      "index": 3,
+      "title": "Wie geht es dir gerade?",
+      "phaseHeader": "Informieren · 3/8",
+      "stepKind": "crowdPoll",
+      "clicked": true,
+      "screenshot": "03-crowdPoll-wie-geht-es-dir-gerade-.png"
+    },
+    {
+      "index": 4,
+      "title": "Erste Priorität beim Betreten",
+      "phaseHeader": "Informieren · 4/8",
+      "stepKind": "mc",
+      "clicked": true,
+      "screenshot": "04-mc-erste-priorität-beim-betreten.png"
+    },
+    {
+      "index": 5,
+      "title": "Sturz-Risikofaktoren bei Frau M. — und bei anderen",
+      "phaseHeader": "Informieren · 5/8",
+      "stepKind": "inlineWissen",
+      "clicked": true,
+      "screenshot": "05-inlineWissen-sturz-risikofaktoren-bei-frau-m-und-bei-.png"
+    },
+    {
+      "index": 6,
+      "title": "Das Zimmer betreten",
+      "phaseHeader": "Informieren · 6/8",
+      "stepKind": "dialog",
+      "clicked": true,
+      "screenshot": "06-dialog-das-zimmer-betreten.png"
+    },
+    {
+      "index": 7,
+      "title": "Das Zimmer betreten",
+      "phaseHeader": "Informieren · 6/8",
+      "stepKind": "dialog",
+      "clicked": true,
+      "screenshot": "07-dialog-das-zimmer-betreten.png"
+    },
+    {
+      "index": 8,
+      "title": "Das Zimmer betreten",
+      "phaseHeader": "Informieren · 6/8",
+      "stepKind": "dialog",
+      "clicked": true,
+      "screenshot": "08-dialog-das-zimmer-betreten.png"
+    },
+    {
+      "index": 9,
+      "title": "Das Zimmer betreten",
+      "phaseHeader": "Informieren · 6/8",
+      "stepKind": "dialog",
+      "clicked": true,
+      "screenshot": "09-dialog-das-zimmer-betreten.png"
+    },
+    {
+      "index": 10,
+      "title": "Erste Assessment-Reihenfolge",
+      "phaseHeader": "Informieren · 7/8",
+      "stepKind": "sorting",
+      "clicked": true,
+      "screenshot": "10-sorting-erste-assessment-reihenfolge.png"
+    },
+    {
+      "index": 11,
+      "title": "NRS — die Schmerzskala, die du gleich brauchst",
+      "phaseHeader": "Informieren · 8/8",
+      "stepKind": "inlineWissen",
+      "clicked": true,
+      "screenshot": "11-inlineWissen-nrs-die-schmerzskala-die-du-gleich-brauc.png"
+    },
+    {
+      "index": 12,
+      "title": "Was ist eine PIM — und warum interessiert dich das?",
+      "phaseHeader": "Beobachten · 1/8",
+      "stepKind": "inlineWissen",
+      "clicked": true,
+      "screenshot": "12-inlineWissen-was-ist-eine-pim-und-warum-interessiert-.png"
+    }
+  ],
+  "consoleErrors": [],
+  "consoleWarnings": [
+    "%c%s%c ⚠ Unsupported metadata themeColor is configured in metadata export in /[locale]/lernen/situation/[situationId]. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server  "
+  ],
+  "pageErrors": [],
+  "stuckAt": {
+    "index": 13,
+    "reason": "handleStep fehlgeschlagen (kind=highlight)"
+  }
+}
