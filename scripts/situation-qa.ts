@@ -193,10 +193,49 @@ async function handleStepQA(
     return await clickWeiterQA(page);
   }
 
-  // Categorize / Matching
-  if (["categorize", "matching"].includes(kind)) {
+  // Categorize: Item-für-Item in erste Kategorie zuordnen, dann Prüfen
+  if (kind === "categorize") {
+    for (let attempt = 0; attempt < 20; attempt++) {
+      const catBtn = page
+        .locator("[aria-label*='Zuordnen zu']")
+        .first();
+      if ((await catBtn.count()) === 0) break;
+      if (!(await catBtn.isVisible({ timeout: 500 }).catch(() => false))) break;
+      await catBtn.click().catch(() => {});
+      await page.waitForTimeout(600);
+    }
+    await page.waitForTimeout(500);
     await clickActionBar(page, /^(Prüfen|Auswerten|Fertig)$/);
     await page.waitForTimeout(2000);
+    return await clickWeiterQA(page);
+  }
+
+  // Matching: Links-Rechts-Paare verbinden, dann Prüfen
+  if (kind === "matching") {
+    for (let attempt = 0; attempt < 15; attempt++) {
+      // Klick auf ein links-Element
+      const leftBtn = page.locator("[aria-label^='Begriff:']").first();
+      if ((await leftBtn.count()) === 0) break;
+      if (!(await leftBtn.isVisible({ timeout: 500 }).catch(() => false))) break;
+      await leftBtn.click().catch(() => {});
+      await page.waitForTimeout(400);
+      // Klick auf ein rechts-Element
+      const rightBtn = page.locator("[aria-label^='Zuordnung:']").first();
+      if ((await rightBtn.count()) > 0) {
+        await rightBtn.click().catch(() => {});
+        await page.waitForTimeout(600);
+      }
+    }
+    await page.waitForTimeout(500);
+    // Prüfen-Button via aria-label
+    const prBtn = page.locator("button[aria-label='Zuordnung prüfen']");
+    if ((await prBtn.count()) > 0 && !(await prBtn.isDisabled().catch(() => true))) {
+      await prBtn.click().catch(() => {});
+      await page.waitForTimeout(2000);
+    } else {
+      await clickActionBar(page, /^(Prüfen|Auswerten|Fertig)$/);
+      await page.waitForTimeout(2000);
+    }
     return await clickWeiterQA(page);
   }
 
@@ -216,11 +255,13 @@ async function handleStepQA(
   if (["freetext", "reflection"].includes(kind)) {
     const ta = page.locator("textarea").first();
     if ((await ta.count()) > 0) {
-      await ta.fill("QA-Test-Antwort mit ausreichend Zeichen für Validation.").catch(() => {});
-      await page.waitForTimeout(300);
+      await ta.scrollIntoViewIfNeeded().catch(() => {});
+      await ta.fill("QA-Test-Antwort. Pflegefachliche Reflexion mit mindestens 30 Zeichen Inhalt fuer Bewertung.").catch(() => {});
+      await page.waitForTimeout(500);
     }
-    await clickActionBar(page, /^(Antworten|Senden|Bewerten|Speichern)$/);
-    await page.waitForTimeout(2500);
+    if (await clickActionBar(page, /^(Antworten|Senden|Bewerten|Speichern|Absenden)$/)) {
+      await page.waitForTimeout(3000);
+    }
     return await clickWeiterQA(page);
   }
 
@@ -254,11 +295,93 @@ async function handleStepQA(
     return await clickWeiterQA(page);
   }
 
-  // FALLBACK
+  // FALLBACK — brute-force alle Strategien für "unknown" Step-Typen
+  // 1) Direkt Weiter
   if (await clickWeiterQA(page)) return true;
-  await clickActionBar(page, /./);
-  await page.waitForTimeout(1500);
-  return await clickWeiterQA(page);
+
+  // 2) Radio → Action-Bar → Sheet-Weiter (MC-Pattern)
+  const radio = page.locator("button[role='radio']").first();
+  if ((await radio.count()) > 0) {
+    await radio.click({ force: true }).catch(() => {});
+    await page.waitForTimeout(500);
+  }
+
+  // 3) Action-Bar klicken (Prüfen/Antworten/etc.)
+  if (await clickActionBar(page, /./)) {
+    await page.waitForTimeout(2500);
+    if (await clickWeiterQA(page)) return true;
+  }
+
+  // 4) Textarea ausfüllen
+  const ta = page.locator("textarea").first();
+  if ((await ta.count()) > 0) {
+    await ta.fill("QA-Test-Antwort mit ausreichend Zeichen.").catch(() => {});
+    await page.waitForTimeout(300);
+    if (await clickActionBar(page, /./)) {
+      await page.waitForTimeout(2000);
+      if (await clickWeiterQA(page)) return true;
+    }
+  }
+
+  // 5) TrueFalse-Buttons
+  const wahrBtns = await page.locator("button:has-text('Wahr')").all();
+  if (wahrBtns.length > 0) {
+    for (const b of wahrBtns.slice(0, 6)) {
+      await b.click().catch(() => {});
+      await page.waitForTimeout(100);
+    }
+    if (await clickActionBar(page, /./)) {
+      await page.waitForTimeout(2000);
+      if (await clickWeiterQA(page)) return true;
+    }
+  }
+
+  // 6) Highlight-Segmente klicken
+  const segs = await page.locator("[class*='cursor-pointer']").all();
+  if (segs.length > 0) {
+    for (const s of segs.slice(0, 3)) {
+      await s.click({ timeout: 800 }).catch(() => {});
+      await page.waitForTimeout(200);
+    }
+    if (await clickActionBar(page, /./)) {
+      await page.waitForTimeout(2000);
+      if (await clickWeiterQA(page)) return true;
+    }
+  }
+
+  // 7) Flipcard/Reveal: klickbaren Bereich
+  const clickableDiv = page.locator("[role='button']:not(.fixed *)").first();
+  if ((await clickableDiv.count()) > 0) {
+    await clickableDiv.click().catch(() => {});
+    await page.waitForTimeout(1000);
+    if (await clickWeiterQA(page)) return true;
+  }
+
+  // 8) Matching-Paare klicken
+  const matchItems = await page.locator("button.w-full.rounded-xl:visible").all();
+  if (matchItems.length >= 2) {
+    for (const m of matchItems.slice(0, 2)) {
+      await m.click().catch(() => {});
+      await page.waitForTimeout(300);
+    }
+    if (await clickActionBar(page, /./)) {
+      await page.waitForTimeout(2000);
+      if (await clickWeiterQA(page)) return true;
+    }
+  }
+
+  // 9) Absoluter Fallback: letzter sichtbarer Button
+  const lastBtn = page
+    .locator("button:visible:not([disabled])")
+    .filter({ hasNotText: /Mehr|Spektrum|Sonst|Glossar|×|Schließen|Weniger/i })
+    .last();
+  if ((await lastBtn.count()) > 0) {
+    await lastBtn.click().catch(() => {});
+    await page.waitForTimeout(2000);
+    return await clickWeiterQA(page);
+  }
+
+  return false;
 }
 
 async function detectKind(page: Page): Promise<string> {
@@ -300,6 +423,22 @@ async function detectKind(page: Page): Promise<string> {
     return "highlight";
   if ((await page.locator("button:has-text('Abstimmen')").count()) > 0)
     return "crowdPoll";
+  // Categorize: hat "Ordne jedes Element" + "Zuordnen zu" Buttons
+  if (
+    allText.includes("Ordne jedes Element") ||
+    allText.includes("Wohin gehört") ||
+    (await page.locator("[aria-label*='Zuordnen zu']").count()) > 0
+  )
+    return "categorize";
+  // Matching: hat "Verbinde" oder paired items
+  if (allText.includes("Verbinde") || allText.includes("Paare"))
+    return "matching";
+  // TrueFalse: hat "Wahr"/"Falsch" Buttons
+  if ((await page.locator("button:has-text('Wahr')").count()) > 0)
+    return "truefalse";
+  // Flipcard/Reveal: klickbare Karten
+  if (allText.includes("Tippe zum") || allText.includes("zum Aufdecken"))
+    return "flipcard";
 
   return "unknown";
 }
