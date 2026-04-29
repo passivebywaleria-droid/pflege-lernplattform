@@ -10,3 +10,4 @@ export { CE02_SIT_KOVAC_AMBULANT_PLANEN } from "./phase-planen";
 export { CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN } from "./phase-durchfuehren";
 export { CE02_SIT_KOVAC_AMBULANT_EVALUIEREN } from "./phase-evaluieren";
 export { CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN } from "./phase-dokumentieren";
+export { CE02_KOVAC_AMBULANT_INLINE_WISSEN } from "./inline-wissen";

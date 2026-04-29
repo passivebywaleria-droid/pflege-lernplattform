@@ -9,3 +9,4 @@ export { CE02_SIT_EMILIA_SAEUGLING_PLANEN } from "./phase-planen";
 export { CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN } from "./phase-durchfuehren";
 export { CE02_SIT_EMILIA_SAEUGLING_EVALUIEREN } from "./phase-evaluieren";
 export { CE02_SIT_EMILIA_SAEUGLING_DOKUMENTIEREN } from "./phase-dokumentieren";
+export { CE02_EMILIA_INLINE_WISSEN } from "./inline-wissen";
