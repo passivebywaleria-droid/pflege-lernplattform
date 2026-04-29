@@ -14,6 +14,83 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DOKUMENTIEREN: SituationsPhase = {
   kontextB1:
     "Die Versorgung ist fertig. Lukas wird morgen wahrscheinlich entlassen. Jetzt schreibst du auf:\n1. Wie ist die Wunde?\n2. Kinderschutz-Gespräch — was wurde dokumentiert?\n3. Wie viel hat Lukas getrunken? Wie war der Schmerz?\n\nDokumentation schützt: das Kind, die Eltern, und dich.",
   kernSteps: [
+    // Step 6.0b — Inline-Wissen: Wunddokumentation — 8 Pflicht-Kriterien
+    // Phase 6 beginnt. Bevor der Schüler die Wunddokumentation selbst schreibt (Step 6.1),
+    // braucht er das Gerüst: Was MUSS in einer Wunddokumentation stehen?
+    {
+      stepId: "ce02-lukas-dok-00b-wunddoku-kriterien",
+      phase: 6,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "II.1",
+      quellen: [
+        "BGW 2022 — Wunddokumentation Standard",
+        "DGV 2023 — Leitlinie Thermische Verletzungen",
+        "§ 630f BGB — Dokumentationspflicht",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-lukas-dok-wunddoku-grundlagen",
+      tag: "pflege",
+      themaPrimaer: "pflegedokumentation",
+      themenSekundaer: ["haut"],
+      transition: "Du kennst die 8 Kriterien. Jetzt: Schreibe den Eintrag für Lukas.",
+      contentC1: {
+        title: "Wunddokumentation — 8 Kriterien die rein müssen",
+        body: "",
+        glossarBegriffe: ["Wunddokumentation", "Fotodokumentation", "§ 630f BGB"],
+      },
+      contentB1: {
+        title: "Wunddokumentation — was muss rein?",
+        body: "",
+        glossarBegriffe: ["Wunddokumentation", "Fotodokumentation"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegedokumentation-wunddoku-kriterien",
+        storyAufhaenger:
+          "Du sollst gleich die Wunddokumentation für Lukas schreiben. Das ist nicht nur Papierkram — es ist eine rechtliche Pflicht (§ 630f BGB). Was nicht dokumentiert ist, gilt als nicht gemacht. Was muss alles rein?",
+        storyAufhaengerB1:
+          "Du schreibst gleich die Wunddokumentation für Lukas. Was nicht aufgeschrieben ist, gilt als nicht gemacht. Was muss alles in den Eintrag?",
+        kerntext:
+          "**8 Pflicht-Kriterien der Wunddokumentation (BGW 2022):**\n\n• **1. Datum + Uhrzeit** — wann wurde die Wunde beurteilt / versorgt?\n\n• **2. Wundlokalisation** — genau beschreiben (\"linker Unterarm, linke Schulter, linker Thorax lateral\"). Nicht nur \"Arm\".\n\n• **3. Wundgröße + Grad** — Grad 2a, Fläche in % KOF oder cm.\n\n• **4. Wundzustand** — Blasen intakt/geplatzt, Exsudat (Farbe, Menge), Wundumgebung (Rötung, Wärme), Infektionszeichen (ja/nein).\n\n• **5. Durchgeführte Maßnahmen** — Material (Wundauflage-Typ), Vorgehen (Spülung ja/nein, Wicklung locker/fest), Analgesie.\n\n• **6. Schmerz vor + nach** — Skala mit Werten (KUSS X/10 vor Wechsel, KUSS Y/10 nach Wechsel).\n\n• **7. Besonderheiten** — Ablenkung, Pause, Bedarfsanalgesie, Elternbeteiligung, Komplikationen.\n\n• **8. Nächster geplanter Wechsel** — Intervall (48-72h), Datum.\n\n**Fotodokumentation:** Bei Verbrühungen empfohlen (DGV 2023). Hinweis an Arzt erstellen — Foto mit Einverständnis der Eltern (DSGVO). Foto zeigt Wundstatus zum Zeitpunkt der Aufnahme.\n\n**Grundprinzip:** Sachlich, nicht wertend. \"Blasen intakt, kein Rötungswall\" — nicht \"sieht gut aus\".",
+        kerntextB1:
+          "**8 Dinge die in die Wunddokumentation müssen:**\n\n• **1. Datum + Uhrzeit**\n\n• **2. Wo ist die Wunde?** — Genau beschreiben: linker Arm, Schulter, Thorax.\n\n• **3. Wie groß? Welcher Grad?** — Grad 2a, Fläche in %.\n\n• **4. Wie sieht die Wunde aus?** — Blasen ganz/kaputt, Wundwasser (Farbe), Rötung, Infektion ja/nein.\n\n• **5. Was hast du gemacht?** — Welche Auflage, gespült ja/nein, wie gewickelt.\n\n• **6. Schmerz vorher und nachher** — KUSS vor dem Wechsel und danach.\n\n• **7. Besonderheiten** — Pause, Schmerzmittel, Seifenblasen, Sandra hat geholfen.\n\n• **8. Nächster Wechsel wann?** — Datum, Intervall.\n\n**Foto:** Bei Verbrühungen empfohlen. Mit Einverständnis der Eltern.\n\n**Wichtig:** Sachlich schreiben. \"Blasen intakt\" — nicht \"sieht gut aus\".",
+        faustregel:
+          "8 Kriterien: Wann, wo, wie groß, wie sieht es aus, was gemacht, Schmerz vorher/nachher, Besonderheiten, nächster Termin.",
+        faustregelB1:
+          "8 Kriterien: Wann, wo, wie groß, wie sieht die Wunde aus, was gemacht, Schmerz, Besonderheiten, nächster Termin.",
+        spektrum: [
+          {
+            patientName: "Frau M. (82, Sturz)",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "Sturzprotokoll — andere Dokumentationsstruktur",
+            kurzbeschreibung:
+              "Bei Frau M. schreibst du ein Sturzprotokoll (Sturzzeitpunkt, Umstände, Verletzungen, Maßnahmen, Sturzrisiko-Score). Andere Struktur als Wunddokumentation — aber dasselbe Prinzip: sachlich, vollständig, zeitnah.",
+          },
+          {
+            patientName: "Frau Yilmaz (Dekubitus Kat. II)",
+            situationsId: "ls-yilmaz-spirale2",
+            hauptfaktor: "Chronische Wunde — Verlaufsdokumentation über Wochen",
+            kurzbeschreibung:
+              "Bei Frau Yilmaz' Dekubitus wird die Wunde nicht einmal dokumentiert, sondern bei jedem Verbandwechsel über Wochen. Der DNQP fordert hier: Wundgröße mit Lineal messen, Fotovergleich, Verlaufskurve. Bei Lukas: kurze Dokumentation über Tage.",
+          },
+          {
+            patientName: "Herr Nguyen (Stoma)",
+            situationsId: "ls-nguyen-stoma",
+            hauptfaktor: "Stoma-Dokumentation — peristomale Haut",
+            kurzbeschreibung:
+              "Herr Nguyens Stoma-Dokumentation enthält ähnliche Elemente: Hautzustand, Ausgabe-Farbe, Menge, Hautschutzplatten-Wechsel. Dasselbe Grundprinzip der systematischen Beobachtungsdokumentation.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Du hast Lukas' Verband gewechselt. Welche 8 Kriterien müssen in die Wunddokumentation?",
+          rueckseite:
+            "1. Datum + Uhrzeit. 2. Wundlokalisation (genau). 3. Grad + Größe. 4. Wundzustand (Blasen, Exsudat, Rötung, Infektion). 5. Maßnahmen (Material, Vorgehen). 6. Schmerz vor + nach (KUSS). 7. Besonderheiten (Pause, Analgesie, Eltern). 8. Nächster Wechsel.\n\nSpektrum: Frau M. (Sturzprotokoll), Yilmaz/Dekubitus (Verlauf über Wochen), Nguyen (Stoma-Doku).\n\nFaustregel: **8 Kriterien: Wann, wo, wie groß, Zustand, Maßnahmen, Schmerz, Besonderheiten, nächster Termin.**",
+        },
+      },
+    },
+
     // Step 6.1 — Freetext (LANG): Wunddokumentation schreiben
     {
       stepId: "ce02-lukas-dok-01-wunddoku-freetext",
