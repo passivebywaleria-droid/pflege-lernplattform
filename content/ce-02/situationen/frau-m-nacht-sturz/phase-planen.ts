@@ -30,6 +30,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-plan-dnqp-grundwissen",
       tag: "pflege",
+      transition: "Sechs Kriterien. Dein roter Faden. Jetzt die Massnahmen sortieren.",
       themaPrimaer: "sturz-prophylaxe",
       themenSekundaer: ["assessments-expertenstandards", "pflegeprozess"],
       contentC1: {
@@ -104,6 +105,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       modus: "sortierstation",
       lernziel: "ce02-frau-m-plan-matrix",
       tag: "pflege",
+      transition: "Matrix steht. Jetzt das Zimmer sicher machen.",
       contentC1: {
         title: "Maßnahmen-Matrix: Zeit × Ebene",
         body: "Ordne die Maßnahmen in eine Matrix ein. Zwei Dimensionen: **Wann** (sofort / diese Nacht / bis Entlassung) und **wo** (Person / Umgebung / Medikation). In dieser einfachen 2×2-Darstellung: X-Achse = Zeit, Y-Achse = Ebene.",
@@ -149,6 +151,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       modus: "puzzle",
       lernziel: "ce02-frau-m-plan-umgebung",
       tag: "pflege",
+      transition: "Umgebung angepasst. Aber da ist noch eine Frage: Bettgitter ja oder nein?",
       contentC1: {
         title: "Umgebungsanpassung bis zum nächsten Schlaf",
         body: "Bevor Frau M. wieder einschläft, muss die Umgebung sicher sein. Bringe die Schritte in die sinnvolle Reihenfolge.",
@@ -195,6 +198,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-plan-bettgitter-recht",
       tag: "pflege",
+      transition: "Du kennst das Recht. Jetzt entscheiden.",
       themaPrimaer: "sturz-prophylaxe",
       themenSekundaer: ["pflegedokumentation"],
       contentC1: {
@@ -269,6 +273,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       modus: "praxis-sim",
       lernziel: "ce02-frau-m-plan-fixierung",
       tag: "pflege",
+      transition: "Frau M. hat Angst. Das ist nicht nur ein Risikofaktor. Das ist ein Mensch.",
       contentC1: {
         title: "Die Bettgitter-Entscheidung",
         // FIX (walkthrough B-14): Markdown-Underscores entfernt.
@@ -325,6 +330,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-frau-m-plan-angst",
       tag: "pflege",
+      transition: "Gleich rufst du den Arzt an. SBAR macht dich in 30 Sekunden praezise.",
       displayFormat: "scenario",
       contentC1: {
         title: "Post-Fall-Angst adressieren",
@@ -358,6 +364,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-plan-sbar",
       tag: "pflege",
+      transition: "Letzte Frage vor Phase 4: Wer macht was im Team?",
       themaPrimaer: "pflegedokumentation",
       themenSekundaer: ["sturz-prophylaxe"],
       contentC1: {

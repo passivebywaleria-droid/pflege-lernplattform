@@ -33,6 +33,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DOKUMENTIEREN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-dok-protokoll-grundwissen",
       tag: "pflege",
+      transition: "Du weisst wo was hingehoert. Jetzt schreiben.",
       themaPrimaer: "pflegedokumentation",
       themenSekundaer: ["sturz-prophylaxe"],
       contentC1: {
@@ -107,6 +108,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DOKUMENTIEREN: SituationsPhase = {
       modus: "schreibtisch",
       lernziel: "ce02-frau-m-dok-protokoll",
       tag: "pflege",
+      transition: "Protokoll geschrieben. Jetzt den Pflegeplan anpassen.",
       contentC1: {
         title: "Sturzprotokoll für Frau M.",
         body: "Schreibe das Sturzprotokoll für Frau M. Es soll ca. 120-200 Wörter umfassen. Die KI prüft 9 Pflicht-Elemente (Datum/Uhrzeit, Ort, Hergang, Bewusstseinslage, Vitalzeichen, Verletzungen, Maßnahmen, informierte Personen, Ursachenhypothese). **Stil**: sachlich, nüchtern, keine Wertungen ('verwirrt' statt 'dement').",
@@ -158,6 +160,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DOKUMENTIEREN: SituationsPhase = {
       modus: "sortierstation",
       lernziel: "ce02-frau-m-dok-pflegeplan",
       tag: "pflege",
+      transition: "Fast fertig. Eine letzte Zusammenfassung.",
       contentC1: {
         title: "Pflegeplan anpassen",
         body: "Nach dem Sturzereignis muss der Pflegeplan aktualisiert werden. Zu jedem **Pflegeziel** gehört eine **Pflegemaßnahme**. Ordne die 4 Pflegeziel-Maßnahmen-Paare richtig zu.",

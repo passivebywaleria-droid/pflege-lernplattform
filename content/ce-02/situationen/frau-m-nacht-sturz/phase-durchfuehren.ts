@@ -32,6 +32,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-dur-kinaesthetik",
       tag: "pflege",
+      transition: "Du weisst wie. Jetzt die Reihenfolge.",
       themaPrimaer: "kinaesthetik",
       themenSekundaer: ["mobilisation", "sturz-prophylaxe"],
       contentC1: {
@@ -107,6 +108,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       modus: "praxis-sim",
       lernziel: "ce02-frau-m-dur-transfer",
       tag: "pflege",
+      transition: "Frau M. ist im Bett. Zugedeckt. Rufknopf in der Hand. Jetzt: den Arzt anrufen.",
       bildkategorie: "szene",
       imageAlt:
         "Ältere Frau auf dem Krankenhausboden neben dem Bett, Pflegekraft kniet unterstützend, ruhige kontrollierte Atmosphäre",
@@ -146,6 +148,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       modus: "schreibtisch",
       lernziel: "ce02-frau-m-dur-sbar",
       tag: "pflege",
+      transition: "Arzt informiert. Bevor du Frau M. mobilisierst: Material vorbereiten.",
       contentC1: {
         title: "SBAR-Anruf beim diensthabenden Arzt",
         body: "Frau M. ist im Bett, Vitalzeichen stabil, Schmerz NRS 4 in linker Hüfte. Du rufst jetzt den diensthabenden Arzt an. Formuliere in 2-3 Sätzen die Situation in SBAR-Struktur. Die KI prüft, ob alle 4 Elemente (S, B, A, R) enthalten sind.",
@@ -188,6 +191,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       modus: "praxis-sim",
       lernziel: "ce02-frau-m-mobi-vorbereitung",
       tag: "pflege",
+      transition: "Material liegt bereit. Die grosse Frage: Toilette oder nicht?",
       contentC1: {
         title: "Material vorbereiten — erste Mobilisation",
         body: "Frau M. liegt jetzt im Bett, der Arzt ist informiert. Bevor du sie zum ersten Aufstehen nach dem Sturz mobilisierst, richtest du dein Material her. Was brauchst du wirklich — und was nicht?",
@@ -345,6 +349,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       modus: "praxis-sim",
       lernziel: "ce02-frau-m-dur-mobilisation-haupt",
       tag: "pflege",
+      transition: "Entschieden. Jetzt am Bettrand: reden.",
       contentC1: {
         title: "HAUPT-BRANCHING: Mobilisation zur Toilette?",
         // FIX (walkthrough B-14): Markdown-Underscores entfernt.
@@ -400,6 +405,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-frau-m-dur-dialog-mobilisation",
       tag: "pflege",
+      transition: "Frau M. wird schwindelig. Was tust du?",
       contentC1: {
         title: "Gespräch am Bettrand",
         // FIX (walkthrough B-14): Markdown-Underscores entfernt.
@@ -587,6 +593,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       modus: "praxis-sim",
       lernziel: "ce02-frau-m-dur-balance",
       tag: "pflege",
+      transition: "Der Schwindel ist vorbei. Aber die Angst nicht.",
       contentC1: {
         title: "Schwindel beim Aufstehen — was tust du?",
         body: "Anders als im Hauptbranching: Hier lagst du mit Pfad A richtig und Frau M. ist bereits unterwegs zum Toilettenstuhl. Beim zweiten Schritt vom Bett weg wird sie plötzlich kurz schwindelig und greift nach deinem Arm. Ihre Knie zittern.",
@@ -632,6 +639,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-frau-m-dur-beratung",
       tag: "pflege",
+      transition: "Noch etwas: Hueftprotektor. Sie kennt das Wort nicht.",
       displayFormat: "scenario",
       contentC1: {
         title: "Beratung gegen Sturzangst — 3 Bausteine",

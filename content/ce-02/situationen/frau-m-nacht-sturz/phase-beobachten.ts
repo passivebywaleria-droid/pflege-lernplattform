@@ -38,6 +38,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-beob-pim-grundwissen",
       tag: "krankheitslehre",
+      transition: "Du hast markiert. Jetzt erklaeren wir, warum genau diese Wirkstoffe gefaehrlich sind.",
       themaPrimaer: "sturz-prophylaxe",
       themenSekundaer: ["assessments-expertenstandards"],
       contentC1: {
@@ -114,6 +115,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-beob-medis",
       tag: "krankheitslehre",
+      transition: "Zolpidem. Da ist es. Schauen wir genauer hin.",
       contentC1: {
         title: "Medikamentenliste sichten",
         body: "Du öffnest die Patientenakte und findest die aktuelle Medikamentenliste von Frau M. Fünf Wirkstoffe. **Markiere alle Wirkstoffe, die dir im Zusammenhang mit dem nächtlichen Sturz verdächtig vorkommen.** Das ist eine Brilliant-Frage — bevor wir erklären, was ein PIM (potenziell inadäquate Medikation) ist, schau dir die Liste an und nutze dein Vorwissen.",
@@ -206,6 +208,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       modus: "schreibtisch",
       lernziel: "ce02-frau-m-beob-zolpidem",
       tag: "krankheitslehre",
+      transition: "Du weisst jetzt, was Frau M. nachts auf den Boden gebracht hat. Aber sie selbst weiss es nicht. Frag sie.",
       displayFormat: "scenario",
       contentC1: {
         title: "Warum Zolpidem das Hauptproblem ist",
@@ -248,6 +251,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-frau-m-beob-fragen",
       tag: "krankheitslehre",
+      transition: "Du hoerst ihr zu. Jetzt: die Risiken systematisch sortieren.",
       contentC1: {
         title: "Patientin aktiv fragen",
         body: "Du hast Zolpidem als verdächtig identifiziert. Aber du weißt noch nicht, wie Frau M. es erlebt hat. Viele Patientinnen berichten Nebenwirkungen nicht — weil sie denken, es gehöre dazu. Deshalb: **Aktiv fragen.**",
@@ -367,6 +371,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       modus: "sortierstation",
       lernziel: "ce02-frau-m-beob-risiken",
       tag: "pflege",
+      transition: "Bevor du Frau M. bewegst, brauchst du noch etwas: den Schellong-Test.",
       contentC1: {
         title: "Risikofaktoren von Frau M. kategorisieren",
         body: "Du hast viele Informationen über Frau M. Teile die Risikofaktoren in zwei Kategorien: **intrinsisch** (vom Patienten selbst) vs. **extrinsisch** (von der Umgebung).",
@@ -434,6 +439,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-beob-schellong",
       tag: "pflege",
+      transition: "Theorie sitzt. Jetzt: was stimmt und was nicht?",
       themaPrimaer: "sturz-prophylaxe",
       themenSekundaer: ["mobilisation"],
       contentC1: {
@@ -508,6 +514,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       modus: "puzzle",
       lernziel: "ce02-frau-m-beob-orthostase",
       tag: "anatomie",
+      transition: "Frau M. will dir noch etwas sagen. Hoer hin.",
       contentC1: {
         title: "Orthostase-Test — pflegerisch korrekt",
         body: "Orthostase (Blutdruckabfall beim Aufstehen) ist bei Parkinson + Madopar + Blutdrucksenkern häufig. Als Pflege kannst du einen einfachen Schellong-ähnlichen Test mitgestalten. Welche Aussagen stimmen?",

@@ -32,6 +32,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-eval-reassessment",
       tag: "pflege",
+      transition: "24 Stunden spaeter. Was hat funktioniert?",
       themaPrimaer: "sturz-prophylaxe",
       themenSekundaer: ["pflegeprozess", "pflegedokumentation"],
       contentC1: {
@@ -114,6 +115,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
       modus: "sortierstation",
       lernziel: "ce02-frau-m-eval-reassessment",
       tag: "pflege",
+      transition: "Frau M. sitzt im Bett. Sie trinkt Tee. Sie laechelt.",
       contentC1: {
         title: "Maßnahmen-Reassessment",
         body: "Du schaust dir die umgesetzten Maßnahmen an und ordnest sie drei Kategorien zu: (1) **Hat gewirkt** — ist eingetreten und hat Frau M. geholfen. (2) **War überflüssig** — hätte man weglassen können. (3) **Fehlt noch** — muss als Nächstes gemacht werden.",
@@ -171,6 +173,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-frau-m-eval-patientensicht",
       tag: "pflege",
+      transition: "Wie sicher fuehlst du dich jetzt — nach dieser Nacht?",
       displayFormat: "quote",
       contentC1: {
         title: "Was Frau M. am Morgen sagt",
@@ -202,6 +205,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
       modus: "checkpoint",
       lernziel: "ce02-frau-m-eval-confidence-nachher",
       tag: "pflege",
+      transition: "Eine letzte Frage. Ehrlich.",
       contentC1: {
         // FIX (walkthrough B-13): Titel differenziert vom Phase-1-Step (info-02 "Wie sicher fühlst du dich?"),
         // damit Schüler spürt: Ende, nicht Anfang.
