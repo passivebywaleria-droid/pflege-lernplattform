@@ -116,12 +116,12 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
         "Elderly woman on hospital floor next to bed, nurse kneeling beside her in supportive posture, calm controlled atmosphere, respectful professional setting, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Transfer von Frau M. vom Boden ins Bett",
-        body: "Frau M. liegt noch immer neben dem Bett. Keine sichtbare Hüftfraktur-Zeichen (keine Verkürzung, keine Außenrotation), Schmerzen NRS 4/10. Du hast Frau Keller dazugeholt. Jetzt: Transfer über Seitlage und Kniestand (kinästhetisches Prinzip — nicht heben, sondern bewegen lassen). Bringe die Schritte in die richtige Reihenfolge.",
+        body: "Frau M. liegt noch immer neben dem Bett. Keine sichtbare Hüftfraktur-Zeichen (keine Verkürzung, keine Außenrotation), Schmerzen NRS 4/10.\n\nDu hast Frau Keller dazugeholt. Jetzt: Transfer über Seitlage und Kniestand (kinästhetisches Prinzip — nicht heben, sondern bewegen lassen).\n\nBringe die Schritte in die richtige Reihenfolge.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Frau M. vom Boden ins Bett",
-        body: "Frau M. liegt noch neben dem Bett. Keine sichtbaren Zeichen für einen Hüftbruch. Schmerzen: 4 von 10. Frau Keller ist da. Jetzt bringst du sie ins Bett — nicht heben, sondern führen (Kinästhetik). Bringe die Schritte in die richtige Reihenfolge.",
+        body: "Frau M. liegt noch neben dem Bett. Keine sichtbaren Zeichen für einen Hüftbruch.\n\nSchmerzen: 4 von 10. Frau Keller ist da.\n\nJetzt bringst du sie ins Bett — nicht heben, sondern führen (Kinästhetik). Bringe die Schritte in die richtige Reihenfolge.",
         glossarBegriffe: [],
       },
       question: {
@@ -151,12 +151,12 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       transition: "Arzt informiert. Bevor du Frau M. mobilisierst: Material vorbereiten.",
       contentC1: {
         title: "SBAR-Anruf beim diensthabenden Arzt",
-        body: "Frau M. ist im Bett, Vitalzeichen stabil, Schmerz NRS 4 in linker Hüfte. Du rufst jetzt den diensthabenden Arzt an. Formuliere in 2-3 Sätzen die Situation in SBAR-Struktur. Die KI prüft, ob alle 4 Elemente (S, B, A, R) enthalten sind.",
+        body: "Frau M. ist im Bett, Vitalzeichen stabil, Schmerz NRS 4 in linker Hüfte. Du rufst jetzt den diensthabenden Arzt an.\n\nFormuliere in 2-3 Sätzen die Situation in SBAR-Struktur. Die KI prüft, ob alle 4 Elemente (S, B, A, R) enthalten sind.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Arzt anrufen — SBAR",
-        body: "Frau M. liegt im Bett. Vitalzeichen sind stabil. Schmerz: 4 von 10 in der Hüfte. Du rufst den Arzt an. Schreibe in 2-3 Sätzen, was du sagst. Benutze SBAR: Situation, Background (Hintergrund), Assessment (Einschätzung), Recommendation (Empfehlung).",
+        body: "Frau M. liegt im Bett. Vitalzeichen sind stabil.\n\nSchmerz: 4 von 10 in der Hüfte. Du rufst den Arzt an.\n\nSchreibe in 2-3 Sätzen, was du sagst. Benutze SBAR: Situation, Background (Hintergrund), Assessment (Einschätzung), Recommendation (Empfehlung).",
         glossarBegriffe: [],
       },
       question: {
@@ -596,7 +596,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       transition: "Der Schwindel ist vorbei. Aber die Angst nicht.",
       contentC1: {
         title: "Schwindel beim Aufstehen — was tust du?",
-        body: "Anders als im Hauptbranching: Hier lagst du mit Pfad A richtig und Frau M. ist bereits unterwegs zum Toilettenstuhl. Beim zweiten Schritt vom Bett weg wird sie plötzlich kurz schwindelig und greift nach deinem Arm. Ihre Knie zittern.",
+        body: "Anders als im Hauptbranching: Hier lagst du mit Pfad A richtig und Frau M. ist bereits unterwegs zum Toilettenstuhl. Beim zweiten Schritt vom Bett weg wird sie plötzlich kurz schwindelig und greift nach deinem Arm.\n\nIhre Knie zittern.",
         glossarBegriffe: ["Orthostatische Dysregulation"],
       },
       contentB1: {
@@ -667,7 +667,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Hüftprotektor für Frau M.?",
-        body: "Frau M. hat Osteoporose (T-Wert -3,1) und gerade einen Sturz hinter sich. Würdest du ihr für den Rest des Aufenthalts einen Hüftprotektor empfehlen? Das ist eine nuancierte Frage — nicht alle 'Ja'-Antworten sind gleich richtig.",
+        body: "Frau M. hat Osteoporose (T-Wert -3,1) und gerade einen Sturz hinter sich. Würdest du ihr für den Rest des Aufenthalts einen Hüftprotektor empfehlen?\n\nDas ist eine nuancierte Frage — nicht alle 'Ja'-Antworten sind gleich richtig.",
         glossarBegriffe: ["Hüftprotektor"],
       },
       contentB1: {

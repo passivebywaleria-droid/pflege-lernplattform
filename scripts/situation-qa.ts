@@ -178,18 +178,32 @@ async function handleStepQA(
     return await clickWeiterQA(page);
   }
 
-  // Highlight
+  // Highlight: markierbare Segmente sind motion.span oder span mit cursor-pointer
   if (kind === "highlight") {
-    // Klicke auf markierbare Segmente (motion.span mit cursor-pointer)
-    const segs = await page.locator("[class*='cursor-pointer']").all();
-    for (const s of segs.slice(0, 3)) {
-      try {
-        await s.click({ timeout: 800 });
-        await page.waitForTimeout(200);
-      } catch {}
+    // Highlight-Segmente sind <span> innerhalb eines <p> im border-Container
+    const container = page.locator(".rounded-2xl.border-\\[1\\.5px\\] p").first();
+    if ((await container.count()) > 0) {
+      const spans = await container.locator("span").all();
+      let clicked = 0;
+      for (const s of spans) {
+        try {
+          const cursor = await s.evaluate((el) =>
+            window.getComputedStyle(el).cursor
+          );
+          if (cursor === "pointer") {
+            await s.click({ timeout: 800, force: true });
+            clicked++;
+            await page.waitForTimeout(300);
+            if (clicked >= 3) break;
+          }
+        } catch {}
+      }
     }
-    await clickActionBar(page, /^(Prüfen|Fertig)$/);
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(500);
+    // Prüfen in der Action-Bar
+    if (await clickActionBar(page, /^(Prüfen|Fertig)$/)) {
+      await page.waitForTimeout(2500);
+    }
     return await clickWeiterQA(page);
   }
 

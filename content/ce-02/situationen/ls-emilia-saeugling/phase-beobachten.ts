@@ -46,7 +46,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
         fragetext:
           "Was unterscheidet Bild A von Bild B — und was bedeutet das für Emilias Flüssigkeitsstatus?",
         hotspot: {
-          imageUrl: "/images/ce-02/hautturgor-saeugling-ab.jpg",
+          imageUrl: "",
           imageAlt:
             "Zwei Fotos nebeneinander: normaler Hautturgor (A) vs. reduzierter Hautturgor (B)",
           instruction:

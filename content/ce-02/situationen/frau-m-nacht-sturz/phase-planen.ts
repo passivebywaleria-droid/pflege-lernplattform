@@ -108,7 +108,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       transition: "Matrix steht. Jetzt das Zimmer sicher machen.",
       contentC1: {
         title: "Maßnahmen-Matrix: Zeit × Ebene",
-        body: "Ordne die Maßnahmen in eine Matrix ein. Zwei Dimensionen: **Wann** (sofort / diese Nacht / bis Entlassung) und **wo** (Person / Umgebung / Medikation). In dieser einfachen 2×2-Darstellung: X-Achse = Zeit, Y-Achse = Ebene.",
+        body: "Ordne die Maßnahmen in eine Matrix ein. Zwei Dimensionen: **Wann** (sofort / diese Nacht / bis Entlassung) und **wo** (Person / Umgebung / Medikation).\n\nIn dieser einfachen 2×2-Darstellung: X-Achse = Zeit, Y-Achse = Ebene.",
         glossarBegriffe: [],
       },
       contentB1: {

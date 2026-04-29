@@ -111,12 +111,12 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DOKUMENTIEREN: SituationsPhase = {
       transition: "Protokoll geschrieben. Jetzt den Pflegeplan anpassen.",
       contentC1: {
         title: "Sturzprotokoll für Frau M.",
-        body: "Schreibe das Sturzprotokoll für Frau M. Es soll ca. 120-200 Wörter umfassen. Die KI prüft 9 Pflicht-Elemente (Datum/Uhrzeit, Ort, Hergang, Bewusstseinslage, Vitalzeichen, Verletzungen, Maßnahmen, informierte Personen, Ursachenhypothese). **Stil**: sachlich, nüchtern, keine Wertungen ('verwirrt' statt 'dement').",
+        body: "Schreibe das Sturzprotokoll für Frau M. Es soll ca. 120-200 Wörter umfassen.\n\nDie KI prüft 9 Pflicht-Elemente (Datum/Uhrzeit, Ort, Hergang, Bewusstseinslage, Vitalzeichen, Verletzungen, Maßnahmen, informierte Personen, Ursachenhypothese). **Stil**: sachlich, nüchtern, keine Wertungen ('verwirrt' statt 'dement').",
         glossarBegriffe: ["Sturzprotokoll"],
       },
       contentB1: {
         title: "Sturzprotokoll schreiben",
-        body: "Schreibe das Sturzprotokoll für Frau M. Ungefähr 120-200 Wörter. Die KI prüft 9 Punkte: Datum+Uhrzeit, Ort, Hergang, Bewusstsein, Vitalzeichen, Verletzungen, Maßnahmen, informierte Personen, Ursache (Medikament!). **Stil**: sachlich, keine Wertung. Für B1-Schüler: Textbausteine sind einblendbar.",
+        body: "Schreibe das Sturzprotokoll für Frau M. Ungefähr 120-200 Wörter.\n\nDie KI prüft 9 Punkte: Datum+Uhrzeit, Ort, Hergang, Bewusstsein, Vitalzeichen, Verletzungen, Maßnahmen, informierte Personen, Ursache (Medikament!). **Stil**: sachlich, keine Wertung. Für B1-Schüler: Textbausteine sind einblendbar.",
         glossarBegriffe: ["Sturzprotokoll"],
       },
       question: {

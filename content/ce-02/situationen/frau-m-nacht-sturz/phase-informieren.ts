@@ -150,12 +150,12 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       transition: "Gut. Ehrlich mit dir selbst. Jetzt: was tust du als erstes, wenn du die Tür öffnest?",
       contentC1: {
         title: "Wie geht es dir gerade?",
-        body: "Bevor du das Zimmer betrittst: Kurz Pause. Nachts, allein, gerade gestürzte Patientin — das ist herausfordernd. Wähle was am besten passt. Es gibt kein richtig oder falsch — danach siehst du, was andere Schüler*innen gewählt haben.",
+        body: "Bevor du das Zimmer betrittst: Kurz Pause. Nachts, allein, gerade gestürzte Patientin — das ist herausfordernd.\n\nWähle was am besten passt. Es gibt kein richtig oder falsch — danach siehst du, was andere Schüler*innen gewählt haben.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Wie fühlst du dich?",
-        body: "Bevor du reingehst: Kurz Pause. Nachts, allein, gestürzte Patientin — das ist nicht einfach. Wähle was am besten passt. Es gibt kein richtig oder falsch. Danach siehst du, was andere Schüler*innen gewählt haben.",
+        body: "Bevor du reingehst: Kurz Pause. Nachts, allein, gestürzte Patientin — das ist nicht einfach.\n\nWähle was am besten passt. Es gibt kein richtig oder falsch.\n\nDanach siehst du, was andere Schüler*innen gewählt haben.",
         glossarBegriffe: [],
       },
       question: {
@@ -579,7 +579,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       transition: "Noch ein Werkzeug brauchst du, bevor Phase 2 beginnt: die Schmerzskala.",
       contentC1: {
         title: "Erste Assessment-Reihenfolge",
-        body: "Du hast Frau M. begrüßt, Bewusstsein geprüft, erste Fragen gestellt. Jetzt folgt das strukturierte Assessment. Sortiere die folgenden Schritte in die richtige Reihenfolge — nach Priorität (ABCDE-ähnlich) und Sicherheitslogik.",
+        body: "Du hast Frau M. begrüßt, Bewusstsein geprüft, erste Fragen gestellt. Jetzt folgt das strukturierte Assessment.\n\nSortiere die folgenden Schritte in die richtige Reihenfolge — nach Priorität (ABCDE-ähnlich) und Sicherheitslogik.",
         glossarBegriffe: [],
       },
       contentB1: {

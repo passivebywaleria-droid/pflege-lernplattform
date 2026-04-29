@@ -1,9 +1,20 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import * as LucideIcons from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import {
+  DndContext,
+  DragOverlay,
+  useDraggable,
+  useDroppable,
+  type DragEndEvent,
+  PointerSensor,
+  TouchSensor,
+  useSensor,
+  useSensors,
+} from "@dnd-kit/core";
 import type {
   GlossarEntry,
   PflegewagenZone,
@@ -56,6 +67,30 @@ const ZONE_VARIANTS: Record<
   },
 };
 
+function DroppableZone({ id, children }: { id: string; children: React.ReactNode }) {
+  const { setNodeRef, isOver } = useDroppable({ id });
+  return (
+    <div ref={setNodeRef} className={`transition-all ${isOver ? "ring-2 ring-[var(--lern-accent)] rounded-2xl" : ""}`}>
+      {children}
+    </div>
+  );
+}
+
+function DraggablePoolItem({ id, disabled, children }: { id: string; disabled: boolean; children: React.ReactNode }) {
+  const { attributes, listeners, setNodeRef, isDragging } = useDraggable({ id, disabled });
+  return (
+    <div
+      ref={setNodeRef}
+      {...listeners}
+      {...attributes}
+      className={`touch-none ${isDragging ? "opacity-40" : ""}`}
+      style={{ cursor: disabled ? "default" : "grab" }}
+    >
+      {children}
+    </div>
+  );
+}
+
 function getIcon(name: string): LucideIcon {
   const iconKey = name as keyof typeof LucideIcons;
   const Icon = (LucideIcons[iconKey] ?? LucideIcons.Package) as LucideIcon;
@@ -81,6 +116,14 @@ export function StepPflegewagen({
 
   const isB1 = sprachLevel === "b1";
 
+  // DnD Sensoren
+  const sensors = useSensors(
+    useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
+    useSensor(TouchSensor, { activationConstraint: { delay: 150, tolerance: 5 } })
+  );
+
+  const [activeId, setActiveId] = useState<string | null>(null);
+
   // Item in Zone setzen (oder Discard-Zone via id "__discard")
   const handlePlace = (zoneId: string) => {
     if (checked || !selectedItemId) return;
@@ -90,6 +133,23 @@ export function StepPflegewagen({
     setPlacement((pl) => ({ ...pl, [selectedItemId]: zoneId }));
     setSelectedItemId(null);
   };
+
+  // DnD: Item in Zone droppen
+  const handleDragEnd = useCallback(
+    (event: DragEndEvent) => {
+      const { active, over } = event;
+      setActiveId(null);
+      if (!over) return;
+      const itemId = active.id as string;
+      const zoneId = over.id as string;
+      const item = pool.find((i) => i.id === itemId);
+      if (!item) return;
+      setPool((p) => p.filter((i) => i.id !== itemId));
+      setPlacement((pl) => ({ ...pl, [itemId]: zoneId }));
+      setSelectedItemId(null);
+    },
+    [pool]
+  );
 
   // Item aus Zone zurück in Pool
   const handleUnplace = (itemId: string) => {
@@ -212,7 +272,12 @@ export function StepPflegewagen({
             <FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText>
           </p>
         )}
-        {/* Zonen (Pflegewagen-Bereiche) */}
+        {/* Zonen (Pflegewagen-Bereiche) — Drag-and-Drop + Tap-Fallback */}
+        <DndContext
+          sensors={sensors}
+          onDragStart={(e) => setActiveId(e.active.id as string)}
+          onDragEnd={handleDragEnd}
+        >
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {zonen.map((zone) => {
           const variant = zone.variant ?? "primary";
@@ -225,12 +290,12 @@ export function StepPflegewagen({
             (isB1 && zone.beschreibungB1) || zone.beschreibung;
 
           return (
+            <DroppableZone key={zone.id} id={zone.id}>
             <button
-              key={zone.id}
               type="button"
               onClick={() => selectedItemId && handlePlace(zone.id)}
               disabled={checked || !selectedItemId}
-              className={`text-left rounded-2xl border-[1.5px] ${colors.border} ${colors.bg} p-4 min-h-[140px] flex flex-col gap-2 transition-all ${
+              className={`w-full text-left rounded-2xl border-[1.5px] ${colors.border} ${colors.bg} p-4 min-h-[140px] flex flex-col gap-2 transition-all ${
                 selectedItemId && !checked
                   ? "ring-2 ring-[var(--lern-accent)] ring-offset-2 cursor-pointer"
                   : "cursor-default"
@@ -288,29 +353,48 @@ export function StepPflegewagen({
                 </AnimatePresence>
               </div>
             </button>
+            </DroppableZone>
           );
         })}
       </div>
 
-      {/* Pool — verfügbare Materialien */}
+      {/* Pool — verfügbare Materialien (draggable + tap) */}
       {!checked && pool.length > 0 && (
         <div className="rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-card-bg,#fafafa)] p-3">
           <span className="text-xs font-bold text-[var(--lern-text-secondary)] block mb-2">
             Material-Pool ({pool.length})
           </span>
           <div className="flex flex-wrap gap-2">
-            {pool.map((item) =>
-              renderItem(item, {
-                selected: selectedItemId === item.id,
-                onClick: () =>
-                  setSelectedItemId(
-                    selectedItemId === item.id ? null : item.id
-                  ),
-              })
-            )}
+            {pool.map((item) => (
+              <DraggablePoolItem key={item.id} id={item.id} disabled={checked}>
+                {renderItem(item, {
+                  selected: selectedItemId === item.id,
+                  onClick: () =>
+                    setSelectedItemId(
+                      selectedItemId === item.id ? null : item.id
+                    ),
+                })}
+              </DraggablePoolItem>
+            ))}
           </div>
         </div>
       )}
+
+      {/* Drag-Overlay */}
+      <DragOverlay>
+        {activeId && (() => {
+          const item = items.find((i) => i.id === activeId);
+          if (!item) return null;
+          const Icon = getIcon(item.icon);
+          return (
+            <div className="rounded-xl px-3 py-2 bg-[var(--lern-accent)] text-white shadow-lg flex items-center gap-2 text-sm font-medium">
+              <Icon className="h-5 w-5" aria-hidden="true" />
+              {item.label}
+            </div>
+          );
+        })()}
+      </DragOverlay>
+      </DndContext>
 
       {/* Feedback nach Check (im Content) */}
       {checked && (

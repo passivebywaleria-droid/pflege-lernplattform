@@ -140,4 +140,85 @@ export const CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR: GlossarEntry[] = [
     uebersetzungTr: "Meslekler arası",
     uebersetzungAr: "بين المهن",
   },
+  // Ergänzung 2026-04-29: Begriffe aus Inline-Wissens-Bausteinen
+  {
+    begriff: "NRS",
+    erklaerung:
+      "Numeric Rating Scale — Schmerzskala 0-10. Patient gibt subjektiven Schmerzwert an. Ab NRS 4: interventionspflichtig (DNQP 2020).",
+    erklaerungB1:
+      "Schmerz-Skala von 0 bis 10. 0 = kein Schmerz, 10 = stärkster Schmerz. Ab 4 musst du handeln.",
+    uebersetzungTr: "Sayısal Ağrı Skalası",
+    uebersetzungAr: "مقياس الألم الرقمي",
+  },
+  {
+    begriff: "PIM",
+    erklaerung:
+      "Potenziell Inadäquate Medikation — Medikamente mit erhöhtem Risiko bei > 65-Jährigen. Listen: PRISCUS 2.0 (DE), Beers (USA).",
+    erklaerungB1:
+      "Medikamente die bei alten Menschen gefährlich sein können. Steht auf der PRISCUS-Liste.",
+    uebersetzungTr: "Potansiyel uygunsuz ilaç",
+    uebersetzungAr: "دواء غير ملائم محتمل",
+  },
+  {
+    begriff: "PRISCUS-Liste",
+    erklaerung:
+      "Deutsche Liste potenziell inadäquater Medikation für ältere Menschen. Version 2.0 (Holt et al. 2023), ca. 130 Wirkstoffe.",
+    erklaerungB1:
+      "Deutsche Liste von Medikamenten die für alte Menschen problematisch sind. Ca. 130 Wirkstoffe.",
+  },
+  {
+    begriff: "Schellong-Test",
+    erklaerung:
+      "Orthostatische Kreislaufprüfung: RR liegen → mind. 1 Min sitzen → RR sitzen → stehen. Positiv bei systol. Abfall ≥ 20 mmHg oder diastol. ≥ 10 mmHg (AAS 2011).",
+    erklaerungB1:
+      "Test ob der Blutdruck beim Aufstehen abfällt. Erst liegen, dann sitzen (1 Min warten), dann stehen. Jedes Mal Blutdruck messen.",
+    uebersetzungTr: "Schellong testi",
+    uebersetzungAr: "اختبار شيلونج",
+  },
+  {
+    begriff: "SBAR",
+    erklaerung:
+      "Situation, Background, Assessment, Recommendation — Standard-Übergabestruktur für klinische Kommunikation (Aktionsbündnis Patientensicherheit 2014).",
+    erklaerungB1:
+      "Struktur für Übergaben: Was ist passiert? Was ist der Hintergrund? Wie schätzt du es ein? Was schlägst du vor?",
+    uebersetzungTr: "SBAR yapısı",
+    uebersetzungAr: "هيكل SBAR",
+  },
+  {
+    begriff: "Kinästhetik",
+    erklaerung:
+      "Konzept nach Hatch/Maietta (1996): Patient bewegt sich selbst, Pflege begleitet und sichert. Kein Heben, kein Greifen unter Achseln.",
+    erklaerungB1:
+      "Patient macht die Bewegung selbst. Du begleitest und sicherst. Nicht heben, nicht unter den Achseln greifen.",
+    uebersetzungTr: "Kinestetik",
+    uebersetzungAr: "الحركية",
+  },
+  {
+    begriff: "DNQP",
+    erklaerung:
+      "Deutsches Netzwerk für Qualitätsentwicklung in der Pflege — gibt Expertenstandards heraus (Sturzprophylaxe, Schmerz, Dekubitus u.a.).",
+    erklaerungB1:
+      "Deutsche Organisation die Pflege-Standards schreibt. Z.B. Standard für Sturzprophylaxe.",
+  },
+  {
+    begriff: "Re-Assessment",
+    erklaerung:
+      "Erneute Einschätzung nach Intervention. Bei Schmerz: NRS-Reduktion ≥ 30 % oder absolut < 4 = Erfolg (DGSS 2023).",
+    erklaerungB1:
+      "Nochmal prüfen ob die Behandlung gewirkt hat. Schmerz nochmal messen. Erfolg = Schmerz um 30 % weniger oder unter 4.",
+  },
+  {
+    begriff: "KUSS",
+    erklaerung:
+      "Kindliche Unbehagens- und Schmerz-Skala — Fremdbeobachtungsskala für Säuglinge/Kleinkinder 0-4 J. 5 Items à 0-2 Punkte, max. 10 (Büttner/Finke 2000).",
+    erklaerungB1:
+      "Schmerz-Skala für Babys und kleine Kinder. Der Pfleger beobachtet 5 Dinge (Weinen, Gesicht, Körper, Beine, Unruhe) und gibt Punkte.",
+  },
+  {
+    begriff: "BESD",
+    erklaerung:
+      "Beurteilung von Schmerzen bei Demenz — Beobachtungsskala für nicht-kommunikationsfähige Patienten. Prüft Atmung, Lautäußerung, Mimik, Körpersprache, Trostbarkeit.",
+    erklaerungB1:
+      "Schmerz-Skala für Menschen mit Demenz die nicht mehr sprechen können. Man beobachtet Atmung, Gesicht, Körper, Laute.",
+  },
 ];

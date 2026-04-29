@@ -210,7 +210,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
         // FIX (walkthrough B-13): Titel differenziert vom Phase-1-Step (info-02 "Wie sicher fühlst du dich?"),
         // damit Schüler spürt: Ende, nicht Anfang.
         title: "Dein Ende-Check — wie sicher fühlst du dich jetzt?",
-        body: "Erinnerst du dich? Ganz am Anfang (vor dem Zimmer von Frau M.) haben wir dich gefragt, wie sicher du dich fühlst. Jetzt — nach Assessment, Transfer, SBAR-Anruf, Bettgitter-Entscheidung, Haupt-Branching — fragen wir dich nochmal. Das ist kein Test — es ist eine Spiegelung deines Lernens.",
+        body: "Erinnerst du dich? Ganz am Anfang (vor dem Zimmer von Frau M.) haben wir dich gefragt, wie sicher du dich fühlst.\n\nJetzt — nach Assessment, Transfer, SBAR-Anruf, Bettgitter-Entscheidung, Haupt-Branching — fragen wir dich nochmal. Das ist kein Test — es ist eine Spiegelung deines Lernens.",
         glossarBegriffe: [],
       },
       contentB1: {
