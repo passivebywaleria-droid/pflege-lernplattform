@@ -95,7 +95,7 @@ export default function SituationLernenPage() {
     if (trans && trans.trim().length > 0) {
       // Zwischenscreen — Lesezeit nach Textlänge: min 4s, B1-Tempo (12 chars/s) + 2.5s Pause
       setTransitionText(trans);
-      const readMs = Math.max(4500, Math.round((trans.length / 10) * 1000) + 2500);
+      const readMs = Math.max(3000, Math.round((trans.length / 14) * 1000) + 1500);
       setTimeout(() => {
         setTransitionText(null);
         advanceStep();
