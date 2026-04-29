@@ -1,0 +1,240 @@
+{
+  "ceId": "ce-02",
+  "situationId": "ls-emilia-saeugling",
+  "timestamp": "2026-04-29T08:57:03.388Z",
+  "steps": [
+    {
+      "stepIndex": 1,
+      "title": "Aufnahmedokumentation — Emilia K.",
+      "stepKind": "situation",
+      "rendered": true,
+      "clickable": true,
+      "consoleErrors": 0,
+      "hydrationError": false,
+      "estimatedReadTimeSec": 54,
+      "hasActionBar": true,
+      "hasTruncate": false,
+      "glossarTermsFound": 0,
+      "hasQuellen": true,
+      "hasInlineWissen": false,
+      "hasFaustregel": false
+    },
+    {
+      "stepIndex": 2,
+      "title": "Erste Priorität beim Betreten",
+      "stepKind": "mc",
+      "rendered": true,
+      "clickable": true,
+      "consoleErrors": 0,
+      "hydrationError": false,
+      "estimatedReadTimeSec": 31,
+      "hasActionBar": true,
+      "hasTruncate": true,
+      "glossarTermsFound": 0,
+      "hasQuellen": true,
+      "hasInlineWissen": false,
+      "hasFaustregel": false
+    },
+    {
+      "stepIndex": 3,
+      "title": "Aufnahmegespräch mit Mutter Laura",
+      "stepKind": "dialog",
+      "rendered": true,
+      "clickable": true,
+      "consoleErrors": 0,
+      "hydrationError": false,
+      "estimatedReadTimeSec": 42,
+      "hasActionBar": false,
+      "hasTruncate": false,
+      "glossarTermsFound": 0,
+      "hasQuellen": true,
+      "hasInlineWissen": false,
+      "hasFaustregel": false
+    },
+    {
+      "stepIndex": 4,
+      "title": "Aufnahmegespräch mit Mutter Laura",
+      "stepKind": "dialog",
+      "rendered": true,
+      "clickable": true,
+      "consoleErrors": 0,
+      "hydrationError": false,
+      "estimatedReadTimeSec": 55,
+      "hasActionBar": false,
+      "hasTruncate": false,
+      "glossarTermsFound": 0,
+      "hasQuellen": true,
+      "hasInlineWissen": false,
+      "hasFaustregel": false
+    },
+    {
+      "stepIndex": 5,
+      "title": "Aufnahmegespräch mit Mutter Laura",
+      "stepKind": "dialog",
+      "rendered": true,
+      "clickable": true,
+      "consoleErrors": 0,
+      "hydrationError": false,
+      "estimatedReadTimeSec": 62,
+      "hasActionBar": true,
+      "hasTruncate": false,
+      "glossarTermsFound": 0,
+      "hasQuellen": true,
+      "hasInlineWissen": false,
+      "hasFaustregel": false
+    },
+    {
+      "stepIndex": 6,
+      "title": "Anamnesefragen — in welcher Reihenfolge?",
+      "stepKind": "sorting",
+      "rendered": true,
+      "clickable": true,
+      "consoleErrors": 0,
+      "hydrationError": false,
+      "estimatedReadTimeSec": 65,
+      "hasActionBar": true,
+      "hasTruncate": true,
+      "glossarTermsFound": 0,
+      "hasQuellen": true,
+      "hasInlineWissen": false,
+      "hasFaustregel": false
+    },
+    {
+      "stepIndex": 7,
+      "title": "Lauras Frage zum Stillen",
+      "stepKind": "matching",
+      "rendered": true,
+      "clickable": true,
+      "consoleErrors": 0,
+      "hydrationError": false,
+      "estimatedReadTimeSec": 47,
+      "hasActionBar": true,
+      "hasTruncate": false,
+      "glossarTermsFound": 0,
+      "hasQuellen": true,
+      "hasInlineWissen": false,
+      "hasFaustregel": false
+    },
+    {
+      "stepIndex": 8,
+      "title": "Was ist Bronchiolitis?",
+      "stepKind": "matching",
+      "rendered": true,
+      "clickable": true,
+      "consoleErrors": 0,
+      "hydrationError": false,
+      "estimatedReadTimeSec": 13,
+      "hasActionBar": false,
+      "hasTruncate": false,
+      "glossarTermsFound": 0,
+      "hasQuellen": true,
+      "hasInlineWissen": false,
+      "hasFaustregel": false
+    },
+    {
+      "stepIndex": 9,
+      "title": "SBAR — das Übergabe-Schema",
+      "stepKind": "matching",
+      "rendered": true,
+      "clickable": true,
+      "consoleErrors": 0,
+      "hydrationError": false,
+      "estimatedReadTimeSec": 36,
+      "hasActionBar": true,
+      "hasTruncate": false,
+      "glossarTermsFound": 0,
+      "hasQuellen": true,
+      "hasInlineWissen": false,
+      "hasFaustregel": false
+    },
+    {
+      "stepIndex": 10,
+      "title": "Warum trinkt Emilia so wenig? — Die Analogie",
+      "stepKind": "matching",
+      "rendered": true,
+      "clickable": true,
+      "consoleErrors": 0,
+      "hydrationError": false,
+      "estimatedReadTimeSec": 37,
+      "hasActionBar": true,
+      "hasTruncate": false,
+      "glossarTermsFound": 0,
+      "hasQuellen": true,
+      "hasInlineWissen": false,
+      "hasFaustregel": false
+    },
+    {
+      "stepIndex": 11,
+      "title": "Was siehst du — und was bedeutet es?",
+      "stepKind": "matching",
+      "rendered": true,
+      "clickable": false,
+      "consoleErrors": 2,
+      "hydrationError": false,
+      "estimatedReadTimeSec": 29,
+      "hasActionBar": false,
+      "hasTruncate": false,
+      "glossarTermsFound": 0,
+      "hasQuellen": true,
+      "hasInlineWissen": false,
+      "hasFaustregel": false
+    }
+  ],
+  "totalSteps": 43,
+  "stepsReached": 11,
+  "stuckAt": {
+    "index": 11,
+    "reason": "handleStep failed (matching)"
+  },
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "pageErrors": [],
+  "subScores": [
+    {
+      "name": "Funktional",
+      "score": 75,
+      "weight": 0.25,
+      "details": "11/11 gerendert, 10/11 klickbar, 2 Errors"
+    },
+    {
+      "name": "UX",
+      "score": 73,
+      "weight": 0.15,
+      "details": "64% Action-Bar, ∅ Lesezeit 43s"
+    },
+    {
+      "name": "Pflege-Standards",
+      "score": 100,
+      "weight": 0.25,
+      "details": "100% Steps mit Quellen"
+    },
+    {
+      "name": "Didaktik",
+      "score": 100,
+      "weight": 0.15,
+      "details": "5 Bloom-Level, 16 Step-Typen"
+    },
+    {
+      "name": "Curriculum",
+      "score": 0,
+      "weight": 0.1,
+      "details": "0 Inline-Wissens-Bausteine"
+    },
+    {
+      "name": "Engagement",
+      "score": 13,
+      "weight": 0.1,
+      "details": "26% Steps erreichbar, 0% mit Faustregel"
+    }
+  ],
+  "totalScore": 71,
+  "grade": "C",
+  "topIssues": [
+    "2 Console-Errors (Hydration/Render-Bug)",
+    "Walkthrough stuck: handleStep failed (matching)",
+    "Nur 0 Inline-Wissens-Bausteine (min. 6 empfohlen)",
+    "4 Steps ohne Action-Bar"
+  ]
+}

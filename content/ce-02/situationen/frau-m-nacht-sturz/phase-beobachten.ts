@@ -14,12 +14,17 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
   kontextB1:
     "Du bist im Zimmer. Die Tür ist zu. Nur die kleine Lampe am Bett brennt. Frau M. liegt auf dem Boden, auf der linken Seite. Ihre Brille liegt unter dem Stuhl. Sie atmet flach. Es riecht nach Spray, Schweiß und ein wenig Urin. Frau M. schaut dich an. Sie sagt leise: 'Ich wollte nur kurz...' Du hockst dich neben sie. Du machst das erste Assessment. Sie ist wach. Sie atmet. Kein Blut. Kein verdrehtes Bein. Schmerzen: 4 von 10 in der linken Hüfte. Sie weiß, wer sie ist und wo sie ist. Gut. Aber: Warum liegt sie hier? Du schaust dich um. Das Bett steht hoch. Die Gitter sind unten. Der Klingel-Knopf ist weit weg. Auf dem Tisch: ein halbes Glas Wasser. Die Toilette ist offen, das Licht ist aus. Auf dem Bett-Zettel klebt ein gelber Aufkleber: 'Sturzrisiko'. Jemand wusste es. Trotzdem ist es passiert. Jetzt denkst du nach. Frau M. ist 82. Sie hat eine Lungenentzündung. Sie hat Parkinson. Sie ist nicht zuhause. Sie nimmt Medikamente. Was hat sie gestürzt? Du musst alles zusammenbringen — was du siehst, was in der Akte steht und was sie nimmt. Die Antwort liegt in den Risiken.",
   kernSteps: [
-    // Step 2.0b — Inline-Wissen \"Was ist eine PIM?"
-    // PILOT (Inline-Wissen v1, Phase 2): Vor der Medikamenten-Sichtung wird der Begriff
-    // PIM (Potenziell Inadäquate Medikation) geklärt. Schüler weiß bei der Markierung
-    // worauf er achtet — Anti-Brilliant-Trick: Wissen vor Anwendung, statt blind raten.
+    // Step 2.1 zuerst — Brilliant-Frage: Schüler markiert ERST, dann kommt PIM-Erklärung.
+    // FIX (2026-04-29): PIM-Baustein nach Highlight verschoben — zwei Inline-Wissen
+    // hintereinander (NRS Ende Phase 1 + PIM Anfang Phase 2) war didaktisch schlecht.
+    // Jetzt: erst raten (Brilliant), dann erklären (Inline-Wissen).
+
+    // PIM-Inline-Wissen wurde nach Step 2.1 (Highlight) verschoben — siehe unten.
+
+    // ───── Step 2.1 — Highlight: Medikamente sichten (BRILLIANT-Frage) ─────
+    // (war vorher Step 2 nach PIM, jetzt Step 1 der Phase — erst raten!)
     {
-      stepId: "ce02-frau-m-beob-00b-pim-pflegestand",
+      stepId: "ce02-frau-m-beob-01-medis-sichten",
       phase: 2,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -95,9 +100,11 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       },
     },
 
-    // Step 2.1 — Highlight: Medikamente sichten (BRILLIANT-Frage)
+    // ───── Step 2.1b — Inline-Wissen PIM (NACH Brilliant-Frage) ─────
+    // FIX (2026-04-29): verschoben von Position 1 auf Position 2 in Phase 2.
+    // Didaktisch besser: erst raten (Brilliant), dann erklären (Inline-Wissen).
     {
-      stepId: "ce02-frau-m-beob-01-medis-sichten",
+      stepId: "ce02-frau-m-beob-00b-pim-pflegestand",
       phase: 2,
       stepType: "highlight",
       bloomLevel: 4,
