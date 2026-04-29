@@ -1,6 +1,6 @@
 // CE-02 Situation Frau Schmidt — Phase 2: Beobachten & Assessment
-// Steps: 9 · Bloom: B3–B4 · Zeit: ~35–45 Min
-// Quelle: phase-beobachten.md
+// Steps: 9 + 3 Inline-Wissen · Bloom: B1–B4 · Zeit: ~45–60 Min
+// Quelle: phase-beobachten.md + inline-wissen-generator
 
 import type { SituationsPhase } from "../../../_types";
 
@@ -221,6 +221,89 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
         title: "Das Albumin-Paradox",
         body: "**Vorher:** \"Frau Schmidt hat Adipositas — sie ist sicher gut ernährt.\"\n\n**Nachher (nach dem Blutbefund):** Albumin 31 g/l — das ist zu niedrig.\n\nWas bedeutet das? Frau Schmidt isst viel Kohlenhydrate (= Zucker und Stärke) und Fett. Aber sie isst wenig Protein (= Eiweiß). Zum Beispiel: Fertig-Pizza. Der Körper braucht Protein für: Wunden heilen, das Immunsystem stärken, Ödeme (= Wassereinlagerungen) verhindern.\n\nWichtig: Albumin allein zeigt nicht alles. NRS 2002 (= Test-Werkzeug) ergibt 1 Punkt — kein hohes Risiko. Aber GLIM (= anderes Werkzeug, prüft Eiweiß-Mangel auch bei Übergewicht) ist positiv. Deshalb braucht Frau Schmidt eine Ernährungs-Hilfe.\n\nFrau Schmidt sagt: \"Ich esse doch genug — schauen Sie mich an! Wie kann ich da Eiweiß-Mangel haben? Das versteh ich nicht.\"",
         glossarBegriffe: ["Albumin", "Proteinmangelernährung", "GLIM"],
+      },
+    },
+
+    // Step 2.4b — Inline-Wissen: GLIM-Kriterien — Mangelernährung diagnostizieren
+    // Schüler hat in Step 2.4 das Albumin-Paradox gelesen. Bevor er zur Haut-Inspektion
+    // geht (Step 2.5), braucht er ein Verständnis der GLIM-Kriterien, die in der Übergabe
+    // als positive Diagnose erwähnt wurden. Dieses Wissen wird in Phase 3 (Pflegeplanung)
+    // und Phase 4 (Ernährungsgespräch) direkt gebraucht.
+    {
+      stepId: "ce02-schmidt-beob-04b-glim-kriterien",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Cederholm T. et al. (2019): GLIM criteria for the diagnosis of malnutrition — A consensus report",
+        "DNQP (2017): Expertenstandard Ernährungsmanagement",
+        "Jensen G.L. et al. (2019): GLIM criteria — Clinical application",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-schmidt-beob-glim",
+      tag: "pflege",
+      themaPrimaer: "ernaehrungsassessment",
+      themenSekundaer: ["ernaehrungsgrundlagen"],
+      transition: "GLIM hat die versteckte Mangelernährung aufgedeckt. Jetzt zur nächsten Baustelle: die Haut.",
+      contentC1: {
+        title: "GLIM-Kriterien — warum NRS allein nicht reicht",
+        body: "",
+        glossarBegriffe: ["GLIM", "Phänotyp", "Ätiologie", "Mangelernährung"],
+      },
+      contentB1: {
+        title: "GLIM — der Test der mehr findet",
+        body: "",
+        glossarBegriffe: ["GLIM", "Mangelernährung"],
+      },
+      inlineWissen: {
+        bausteinRef: "ernaehrungsassessment-formen-mangel",
+        storyAufhaenger:
+          "Frau Schmidts NRS-Score war nur 1 — keine Ernährungsintervention nach Screening allein. Aber die Übergabe sagt trotzdem: \"GLIM-Diagnose Mangelernährung Stadium 1.\" Wie passt das zusammen? Und was genau sind diese GLIM-Kriterien?",
+        storyAufhaengerB1:
+          "Frau Schmidts NRS-Score war nur 1. Aber die Übergabe sagt: Mangelernährung! Wie geht das zusammen? Die Antwort heißt GLIM.",
+        kerntext:
+          "**GLIM (Global Leadership Initiative on Malnutrition, Cederholm 2019)** ist der internationale Diagnose-Standard für Mangelernährung — er kommt NACH dem Screening (NRS 2002).\n\n**Zwei-Schritt-Modell:**\n\n1. **Screening** (NRS 2002, MNA) — filtert Risiko-Patienten.\n2. **Diagnostik** (GLIM) — bestätigt oder widerlegt die Diagnose.\n\n**GLIM prüft 5 Kriterien in 2 Gruppen:**\n\n**Phänotypisch (was du siehst/misst):**\n\n• Ungewollter Gewichtsverlust (>5 % in 6 Mon. oder >10 % darüber)\n\n• Niedriger BMI (<20 bei <70 J., <22 bei ≥70 J.)\n\n• Reduzierte Muskelmasse (Handkraft, Wadenumfang, BIA)\n\n**Ätiologisch (warum es passiert):**\n\n• Reduzierte Nahrungsaufnahme oder -resorption\n\n• Entzündung/Erkrankung (akut oder chronisch)\n\n**Diagnose: min 1 phänotypisch + min 1 ätiologisch = Mangelernährung.**\n\n**Bei Frau Schmidt:** Phänotypisch: reduzierte Muskelmasse (Albumin 31 g/l als Hinweis, plus klinisch erkennbare Sarkopenie bei Adipositas). Ätiologisch: einseitige Proteinzufuhr + Inflammation durch entgleisten Diabetes. → GLIM positiv, obwohl NRS nur 1.",
+        kerntextB1:
+          "**GLIM** ist ein Diagnose-Werkzeug. Es kommt NACH dem Screening (NRS 2002).\n\n**Zwei Schritte:**\n\n1. **Screening** (NRS 2002) — sucht nach Risiko.\n2. **Diagnostik** (GLIM) — stellt die Diagnose.\n\n**GLIM prüft 5 Punkte:**\n\n**Was du siehst:**\n\n• Hat die Person abgenommen? (mehr als 5 % in 6 Monaten)\n\n• Ist der BMI niedrig?\n\n• Sind die Muskeln schwächer?\n\n**Warum es passiert:**\n\n• Isst die Person zu wenig oder zu einseitig?\n\n• Hat sie eine Entzündung oder schwere Krankheit?\n\n**Für die Diagnose brauchst du:** 1 Punkt aus \"was du siehst\" + 1 Punkt aus \"warum\".\n\n**Frau Schmidt:** Muskeln schwächer (Albumin niedrig) + einseitiges Essen + Entzündung durch Diabetes → GLIM sagt: Mangelernährung. Obwohl sie übergewichtig ist.",
+        faustregel:
+          "GLIM findet was NRS übersieht: Mangelernährung trotz Übergewicht. 1 phänotypisches + 1 ätiologisches Kriterium = Diagnose.",
+        faustregelB1:
+          "GLIM findet Mangelernährung auch bei Übergewicht. NRS allein reicht nicht.",
+        spektrum: [
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Dysphagie-bedingte Mangelernährung",
+            kurzbeschreibung:
+              "Bei ihm sind beide GLIM-Gruppen eindeutig: Phänotypisch = Gewichtsverlust + niedriger BMI. Ätiologisch = Schluckstörung. NRS und GLIM stimmen überein.",
+          },
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Vergisst zu essen",
+            kurzbeschreibung:
+              "Fortgeschrittene Demenz: Er vergisst Mahlzeiten, erkennt Besteck nicht. Ätiologisch: kognitive Barriere. Phänotypisch: Gewichtsverlust. GLIM positiv.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "COPD-Katabolie",
+            kurzbeschreibung:
+              "COPD erhöht den Energiebedarf (Atemarbeit!), gleichzeitig Appetitlosigkeit durch Luftnot. Ätiologisch: chronische Erkrankung. Phänotypisch: Muskelmasse sinkt. GLIM positiv trotz normalem BMI.",
+          },
+        ],
+        sonstBox:
+          "GLIM wurde 2019 als globaler Konsens veröffentlicht und ersetzt nationale Klassifikationen. Die **Stadien**: Stadium 1 = moderate Mangelernährung (1 phänotypisch mild + 1 ätiologisch), Stadium 2 = schwere Mangelernährung (phänotypisch ausgeprägt). Bei Frau Schmidt: **Stadium 1** — Proteindefizit nachweisbar, aber noch nicht schwer.",
+        sonstBoxB1:
+          "GLIM hat 2 Stufen: **Stadium 1** = leichte Mangelernährung. **Stadium 2** = schwere Mangelernährung. Frau Schmidt hat Stadium 1 — das Eiweiß fehlt, aber es ist noch nicht schlimm.",
+        karteikarte: {
+          vorderseite:
+            "Frau Schmidt hat NRS-Score 1, aber GLIM-Diagnose Mangelernährung Stadium 1. Wie ist das möglich?",
+          rueckseite:
+            "NRS 2002 erkennt Mangelernährung bei Adipositas schlecht (kein Untergewicht, kein Gewichtsverlust). GLIM prüft tiefer: min 1 phänotypisches Kriterium (reduzierte Muskelmasse) + min 1 ätiologisches (einseitige Kost + Inflammation) = Diagnose.\n\nSpektrum: Petrov (Dysphagie, GLIM eindeutig), Bauer (Demenz, vergisst essen), Kovac (COPD, Katabolie).\n\nFaustregel: **GLIM findet was NRS übersieht.**",
+        },
       },
     },
 

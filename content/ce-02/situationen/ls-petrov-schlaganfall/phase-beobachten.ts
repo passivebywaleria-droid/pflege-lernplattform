@@ -14,6 +14,80 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
   kontextB1:
     "Du stehst am Bett von Herrn Petrov. Es ist 07:25 Uhr. Du hast dich vorgestellt. Er hat genickt. Jetzt schaust du genau hin. Bevor du etwas tust, beobachtest du. Du stellst dir die Frage: Wie geht es ihm heute Morgen?",
   kernSteps: [
+    // Step 2.0b — Inline-Wissen: Bobath-Konzept
+    // Bevor der Schüler die Motorik beobachtet, soll er das Bobath-Konzept als Grundhaltung
+    // kennen. Es durchzieht die gesamte Situation.
+    {
+      stepId: "ce02-petrov-beob-00b-bobath-konzept",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Bobath B. 1990 — Adult Hemiplegia: Evaluation and Treatment",
+        "DNQP 2020 — Expertenstandard Mobilität",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-petrov-beob-bobath-grundlagen",
+      tag: "pflege",
+      themaPrimaer: "mobilisation",
+      themenSekundaer: ["kontraktur-prophylaxe", "kinaesthetik"],
+      transition: "Bobath im Kopf. Jetzt schauen wir Herrn Petrov an — genau beobachten, bevor du handelst.",
+      contentC1: {
+        title: "Bobath-Konzept — die betroffene Seite ist nicht weg",
+        body: "",
+        glossarBegriffe: ["Bobath-Konzept", "betroffene Seite", "Tonus", "Neuroplastizität"],
+      },
+      contentB1: {
+        title: "Was ist das Bobath-Konzept?",
+        body: "",
+        glossarBegriffe: ["Bobath-Konzept", "betroffene Seite"],
+      },
+      inlineWissen: {
+        bausteinRef: "mobilisation-bobath-konzept",
+        storyAufhaenger:
+          "Du betrittst das Zimmer und siehst: Herrn Petrovs rechter Arm liegt schlaff auf der Matratze. Dein erster Impuls könnte sein, alles mit seiner linken Hand zu machen — sie funktioniert ja. Aber genau das wäre falsch. Das Bobath-Konzept sagt: Die betroffene Seite gehört dazu.",
+        storyAufhaengerB1:
+          "Du siehst Herrn Petrovs rechten Arm. Er bewegt sich nicht. Dein erster Gedanke: Alles mit der linken Hand machen. Aber das ist falsch. Die rechte Seite gehört dazu — das sagt das Bobath-Konzept.",
+        kerntext:
+          "**Berta und Karel Bobath** (1948/1990) entwickelten das Konzept für die Pflege und Therapie hemiparetischer Patienten.\n\n**3 Kernprinzipien:**\n\n• **Betroffene Seite einbeziehen** — nicht kompensieren, nicht übergehen. Die rechte Seite von Herrn Petrov bekommt Reize, Berührung, Positionierung.\n\n• **Bewegungsangebote machen, nicht übernehmen** — der Patient bewegt sich selbst, du begleitest und sicherst. Kein Heben unter den Achseln, kein Ziehen am Arm.\n\n• **Neuroplastizität nutzen** — das Gehirn kann neue Verbindungen bilden, besonders in den ersten 3 Monaten. Jede Bewegung der betroffenen Seite ist ein Training für das Gehirn.\n\n**Merkhilfe Kleidung:**\nAusziehen: Gesunde Seite zuerst (damit die betroffene Seite geschützt bleibt).\nAnziehen: Betroffene Seite zuerst (weil sie weniger flexibel ist).\n\n**Verboten:** Zug am betroffenen Arm (Subluxationsgefahr der Schulter), Griff unter die Achseln, einseitige Kompensation über die gesunde Seite.",
+        kerntextB1:
+          "**Bobath** ist ein Konzept für Menschen mit halbseitiger Schwäche.\n\n**3 Regeln:**\n\n• **Die betroffene Seite einbeziehen** — nicht nur die gesunde Seite nutzen. Die rechte Seite bekommt Berührung und Bewegung.\n\n• **Bewegung anbieten, nicht übernehmen** — Herr Petrov bewegt sich selbst. Du begleitest. Nicht heben, nicht ziehen.\n\n• **Das Gehirn lernt neu** — besonders in den ersten 3 Monaten nach Schlaganfall. Jede Bewegung der betroffenen Seite hilft dem Gehirn.\n\n**Merkhilfe Kleidung:** Ausziehen: Gesunde Seite zuerst. Anziehen: Betroffene Seite zuerst.\n\n**Verboten:** Am betroffenen Arm ziehen, unter den Achseln heben.",
+        faustregel: "Bobath heißt: Die betroffene Seite ist nicht weg — sie braucht gezielte Angebote.",
+        faustregelB1: "Bobath heißt: Die schwache Seite gehört dazu. Einbeziehen, nicht übergehen.",
+        spektrum: [
+          {
+            patientName: "Frau M.",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "Parkinson + Kinästhetik-Transfer am Boden",
+            kurzbeschreibung:
+              "Bei Frau M. geht es nicht um Bobath sondern um Kinästhetik (Hatch/Maietta) — Transfer vom Boden ins Bett. Prinzip ähnlich: Patient bewegt selbst, Pflege begleitet und sichert.",
+          },
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP Hüft-TEP, Erstmobilisation",
+            kurzbeschreibung:
+              "Bei Yilmaz: Bobath spielt keine Rolle (kein Schlaganfall). Aber das Prinzip \"Bewegungsangebot statt Übernahme\" gilt auch bei Post-OP-Erstmobilisation: Sie soll selbst aufstehen, nicht gezogen werden.",
+          },
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz, Basale Stimulation statt Bobath",
+            kurzbeschreibung:
+              "Bauer hat keine Hemiparese sondern Demenz. Sein Konzept ist Basale Stimulation (Fröhlich): beruhigende Waschung, rhythmisch, bekannte Reize. Anderer Ansatz, ähnliche Grundhaltung: Den Patienten einbeziehen.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Du wäschst Herrn Petrov. Sein rechter Arm ist komplett schlaff. Warum wäschst du trotzdem die rechte Seite aktiv mit?",
+          rueckseite:
+            "Bobath-Konzept (1948/1990): Betroffene Seite einbeziehen, nicht kompensieren. Reize fördern Neuroplastizität — das Gehirn bildet in den ersten 3 Monaten am stärksten neue Verbindungen. Verboten: Zug am betroffenen Arm (Subluxationsgefahr). Spektrum: Frau M. (Kinästhetik, nicht Bobath), Yilmaz (Post-OP, selbst mobilisieren), Bauer (Basale Stimulation bei Demenz). Faustregel: **Die betroffene Seite ist nicht weg — sie braucht gezielte Angebote.**",
+        },
+      },
+    },
+
     // Step 2.1 — Freetext: Motorik-Brilliantfrage
     {
       stepId: "ce02-petrov-beob-01-motorik-brilliantfrage",
@@ -189,6 +263,87 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
         title: "Die Atmung beobachten — 4 Schritte",
         body: "Du beobachtest die Atmung von Herrn Petrov. 4 Schritte:\nSchritt 1: Zähle die Atemzüge in 15 Sekunden. Dann × 4. Normal sind 12-18 pro Minute.\nSchritt 2: Atmet er tief oder flach?\nSchritt 3: Hörst du am Bett ein Rasseln oder Brodeln (ohne Stethoskop)? Bewegt sich der Brust-Korb gleichmäßig auf beiden Seiten?\nSchritt 4: Hustet er? Kommt Sekret (= Schleim) heraus? Welche Farbe haben Lippen und Haut?\nWichtig: Mit dem Stethoskop hört der Arzt die Lunge ab (= Auskultation). Das ist nicht deine Aufgabe als Pflege-Schülerin.\nBefund bei Herrn Petrov: 17 Atemzüge pro Minute. Atmung gleichmäßig, kein Rasseln hörbar, kein Husten.\nDeshalb machst du weiter mit der Pneumonie-Prophylaxe (= Lungenentzündung verhindern).",
         glossarBegriffe: ["Pneumonie", "Atemfrequenz", "Atemexkursion"],
+      },
+    },
+
+    // Step 2.4b — Inline-Wissen: CAUTI-Prävention (Wiederbegegnung BVK)
+    // In Phase 1 wurden BVK-Grundlagen gelehrt. Hier Vertiefung: konkrete Hygiene-Regeln.
+    {
+      stepId: "ce02-petrov-beob-04b-cauti-praevention",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "III.2",
+      quellen: [
+        "KRINKO 2015 — Prävention katheter-assoziierter Harnwegsinfektionen",
+        "CDC/HICPAC 2019 — CAUTI Prevention",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-petrov-beob-cauti-praevention",
+      tag: "pflege",
+      themaPrimaer: "harnausscheidung",
+      themenSekundaer: ["blasenkatheter"],
+      transition: "Du weißt jetzt worauf es bei der Katheter-Hygiene ankommt. Prüfe es jetzt am Bett.",
+      contentC1: {
+        title: "CAUTI-Prävention — 5 Hygiene-Regeln am Bett",
+        body: "",
+        glossarBegriffe: ["CAUTI", "KRINKO", "geschlossenes System", "Keimaszension"],
+      },
+      contentB1: {
+        title: "Katheter-Hygiene — 5 Regeln",
+        body: "",
+        glossarBegriffe: ["CAUTI", "Katheter", "Hygiene"],
+      },
+      inlineWissen: {
+        bausteinRef: "harnausscheidung-cauti-praevention",
+        wiederbegegnung: {
+          basisBausteinId: "harnausscheidung-bvk-grundlagen",
+          basisPatient: "Herr Petrov",
+          vertiefung:
+            "Du kennst BVK-Grundlagen aus Phase 1. Hier die konkreten Hygiene-Regeln: CAUTI ist die häufigste nosokomiale Infektion in Deutschland — und die am besten vermeidbare. 5 Regeln, die du am Bett prüfst.",
+          vertiefungB1:
+            "Du kennst den Katheter aus Phase 1. Jetzt lernst du die 5 Hygiene-Regeln. CAUTI ist die häufigste Krankenhaus-Infektion — aber du kannst sie verhindern.",
+        },
+        storyAufhaenger:
+          "Du schaust zum Bettrand. Der Katheterbeutel hängt am Bettgestell. Oder liegt er auf der Matratze? Genau hinschauen — denn jeder Fehler in der Katheter-Hygiene kann zu einer Harnwegsinfektion führen. Bei Herrn Petrov ist der BVK Tag 5 — das Zeitfenster wird enger.",
+        storyAufhaengerB1:
+          "Du schaust zum Bett. Wo hängt der Katheter-Beutel? Liegt er auf der Matratze? Das wäre ein Fehler. Jeder Fehler bei der Katheter-Hygiene kann eine Infektion machen.",
+        kerntext:
+          "Die **KRINKO 2015** nennt 5 Kernregeln zur CAUTI-Prävention:\n\n• **Geschlossenes System** — Nie das Ableitungssystem unnötig öffnen oder diskonnektieren. Jede Diskonnektion = Eintrittspforte für Keime.\n\n• **Beutel unterhalb Blasenniveau** — Nie auf der Matratze oder dem Boden. Rückfluss = Keimaszension. Immer hängen lassen, nie knicken.\n\n• **Eintrittsstelle täglich inspizieren** — Rötung, Sekret, Schwellung? Alles dokumentieren. Reinigung mit Wasser und Seife reicht — kein Desinfektionsmittel an der Eintrittsstelle (KRINKO 2015).\n\n• **Händedesinfektion vor und nach jedem Kontakt** — auch beim Ablesen des Beutels.\n\n• **Tägliche Indikationsprüfung** — Braucht er den Katheter noch? Diese Frage ist wichtiger als alle Hygieneregeln zusammen.\n\nCAUTI-Rate in Deutschland: ca. 3,3 Fälle pro 1.000 Katheter-Tage (KISS 2023). Je kürzer der Katheter liegt, desto niedriger das Risiko.",
+        kerntextB1:
+          "**5 Regeln für den Katheter** (KRINKO 2015):\n\n• **System geschlossen lassen** — den Schlauch nicht öffnen. Jede Öffnung bringt Keime.\n\n• **Beutel immer hängen lassen** — nie auf der Matratze, nie auf dem Boden. Sonst fließt Urin zurück.\n\n• **Eintrittsstelle jeden Tag anschauen** — Rötung? Schleim? Schwellung? Alles aufschreiben.\n\n• **Hände desinfizieren** — vor und nach jedem Kontakt mit dem Katheter.\n\n• **Jeden Tag fragen: Braucht er den Katheter noch?** — Das ist die wichtigste Regel.",
+        faustregel: "CAUTI verhindern = 5 Regeln + 1 Frage: Braucht er den Katheter heute noch?",
+        faustregelB1: "Katheter-Hygiene = 5 Regeln. Die wichtigste: Braucht er ihn noch?",
+        spektrum: [
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP, BVK nur 24-48 h",
+            kurzbeschreibung:
+              "Yilmaz bekommt den Katheter nach 24-48 h entfernt — Infektionsrisiko bleibt minimal, wenn die Hygieneregeln in dieser kurzen Zeit eingehalten werden.",
+          },
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz, manipuliert am Katheter",
+            kurzbeschreibung:
+              "Bauer versteht nicht warum der Schlauch da ist und zieht daran. Das bricht die Keimbarriere und verletzt die Harnröhre — Fixierung mit Klebeband am Oberschenkel + Ablenkung statt Freiheitsentzug.",
+          },
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Adipositas, Eintrittsstelle schwer einsehbar",
+            kurzbeschreibung:
+              "Bei Schmidt: Die Eintrittsstelle ist wegen Hautfalten und BMI 38 schwer zu inspizieren. Erhöhtes Infektionsrisiko durch Feuchtigkeit in den Hautfalten — tägliche Inspektion besonders wichtig.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Du beurteilst den BVK bei Herrn Petrov (Tag 5). Der Beutel liegt auf der Matratze. Nenne das Risiko und die Korrektur.",
+          rueckseite:
+            "Risiko: Rückfluss (Urin fließt zurück in die Blase = Keimaszension). Korrektur: Beutel sofort unter Blasenniveau hängen (nie Matratze, nie Boden). KRINKO 2015: geschlossenes System, Beutel unterhalb, Eintrittsstelle täglich, Händedesinfektion, tägliche Indikationsprüfung. Faustregel: **CAUTI verhindern = 5 Regeln + 1 Frage: Braucht er den Katheter heute noch?**",
+        },
       },
     },
 

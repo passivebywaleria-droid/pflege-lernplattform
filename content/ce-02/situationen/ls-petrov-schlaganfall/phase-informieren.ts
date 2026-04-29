@@ -48,6 +48,87 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
       },
     },
 
+    // Step 1.1b — Inline-Wissen: Blasenverweilkatheter (BVK)
+    // Schüler hat in Step 1.1 gelesen: "BVK seit Tag 1". Bevor er den Pflegeprozess einordnet,
+    // soll er wissen: Was ist ein BVK, warum liegt er, und warum zählt jeder Tag?
+    {
+      stepId: "ce02-petrov-info-01b-bvk-grundlagen",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 1,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "KRINKO 2015 — Prävention katheter-assoziierter Harnwegsinfektionen",
+        "AWMF S3-Leitlinie Schlaganfall (021-023)",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-petrov-info-bvk-grundlagen",
+      tag: "pflege",
+      themaPrimaer: "harnausscheidung",
+      themenSekundaer: ["blasenkatheter"],
+      transition: "Du weißt jetzt was ein BVK ist und warum jeder Tag zählt. Zurück zum Pflegeprozess.",
+      contentC1: {
+        title: "Blasenverweilkatheter (BVK) — warum jeder Tag zählt",
+        body: "",
+        glossarBegriffe: ["BVK", "CAUTI", "Katheter", "KRINKO"],
+      },
+      contentB1: {
+        title: "Was ist ein Blasen-Katheter?",
+        body: "",
+        glossarBegriffe: ["BVK", "Katheter"],
+      },
+      inlineWissen: {
+        bausteinRef: "harnausscheidung-bvk-grundlagen",
+        storyAufhaenger:
+          "In der Akte steht: \"BVK seit Tag 1.\" Fünf Tage liegt der Katheter jetzt. Herr Petrov kann nicht aufstehen, um zur Toilette zu gehen — deshalb leitet ein Schlauch den Urin direkt aus der Blase in einen Beutel. Klingt praktisch. Aber jeder Tag mit Katheter ist ein Tag mit Risiko.",
+        storyAufhaengerB1:
+          "In der Akte steht: \"BVK seit Tag 1.\" BVK = Blasen-Verweil-Katheter. Das ist ein dünner Schlauch. Er geht durch die Harnröhre in die Blase. Der Urin fließt in einen Beutel. Herr Petrov hat den Katheter seit 5 Tagen. Warum ist das wichtig?",
+        kerntext:
+          "**Was ist ein BVK?** Ein dünner Silikonschlauch (hier: Ch 16) wird über die Harnröhre in die Blase eingeführt. Ein kleiner Ballon hält ihn in der Blase fest. Der Urin fließt in ein geschlossenes System mit Auffangbeutel.\n\n**Warum liegt er bei Herrn Petrov?** Tag 1-5 nach Schlaganfall: Hemiparese macht den Toilettengang unmöglich, Immobilität erfordert kontinuierliche Bilanzierung.\n\n**Das Risiko:** Jeder Tag mit BVK erhöht die Wahrscheinlichkeit einer **CAUTI** (katheter-assoziierter Harnwegsinfekt). Die KRINKO 2015 fordert: **Tägliche Indikationsprüfung** und Entfernung so früh wie möglich.\n\n• Tag 1-3: Infektionsrate ca. 3-5 %\n• Tag 5-7: Infektionsrate steigt auf 10-15 %\n• Ab Tag 14: Bakteriurie bei fast allen Patienten\n\n**Pflege-Aufgabe:** Beobachten (Urinfarbe, Menge, Eintrittsstelle), Beutel korrekt hängen lassen, Hygiene bei Manipulation, und vor allem: **aktiv fragen — braucht er den Katheter noch?**",
+        kerntextB1:
+          "**Was ist ein BVK?** Ein dünner Schlauch geht durch die Harnröhre in die Blase. Ein kleiner Ballon hält ihn fest. Der Urin fließt in einen Beutel.\n\n**Warum hat Herr Petrov einen?** Er kann nicht aufstehen. Er kann nicht zur Toilette gehen. Der Katheter leitet den Urin ab.\n\n**Das Problem:** Jeder Tag mit Katheter erhöht das Risiko für eine **Harnwegs-Infektion**. Das heißt CAUTI.\n\n• Nach 5 Tagen: 10-15 von 100 Patienten bekommen eine Infektion.\n\n**Deine Aufgabe als Pflege:** Urin-Farbe prüfen. Beutel richtig hängen lassen. Und: Jeden Tag fragen — braucht er den Katheter noch?",
+        faustregel: "Jeder Tag mit Katheter ist ein Tag zu viel — tägliche Indikationsprüfung ist Pflege-Pflicht.",
+        faustregelB1: "Jeder Tag mit Katheter erhöht das Infektions-Risiko. Deshalb: Jeden Tag prüfen ob er noch nötig ist.",
+        spektrum: [
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP Hüft-TEP, kurzfristige Immobilität",
+            kurzbeschreibung:
+              "BVK nur 24-48 h post-OP bis Erstmobilisation. Dann sofort Entfernung — sie kann zur Toilette sobald sie steht.",
+          },
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz, zieht am Katheter",
+            kurzbeschreibung:
+              "Bauer versteht nicht warum der Schlauch da ist. Er zieht daran — Verletzungsgefahr. Hier ist der BVK ein eigenes Risiko, nicht nur eine Hilfe.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "Ambulant, intermittierender Einmalkatheter",
+            kurzbeschreibung:
+              "Bei Kovac kein Dauerkatheter — sie verwendet zu Hause einen intermittierenden Einmalkatheter (ISK). Weniger Infektionsrisiko, aber Anleitung zur Selbstkatheterisierung nötig.",
+          },
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Adipositas BMI 38, erschwerte Katheter-Pflege",
+            kurzbeschreibung:
+              "Katheter-Pflege bei Adipositas: eingeschränkte Sicht auf die Eintrittsstelle, Hautfalten als Feuchtigkeitsfalle, erhöhtes Infektionsrisiko durch Schwitzen.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Herr Petrovs BVK liegt seit 5 Tagen. Der Arzt hat Re-Evaluation für Tag 14 angeordnet. Ist das ausreichend?",
+          rueckseite:
+            "Nein. KRINKO 2015 fordert tägliche Indikationsprüfung, nicht festes 14-Tage-Intervall. Infektionsrate steigt mit jedem Tag: Tag 5-7 ca. 10-15 %. Pflege-Pflicht: aktiv beim Arzt nachfragen ob der BVK noch nötig ist. Spektrum: Yilmaz (24-48 h post-OP), Bauer (Demenz, zieht am Katheter), Kovac (ISK ambulant), Schmidt (Adipositas-Hygiene). Faustregel: **Jeder Tag mit Katheter ist ein Tag zu viel.**",
+        },
+      },
+    },
+
     // Step 1.2 — MC Pflegeprozess-Einordnung
     {
       stepId: "ce02-petrov-info-02-pflegeprozess-check",
@@ -70,6 +151,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
         body: "Du hast die Akte gelesen. Frau Wegner hat gesprochen. In welchem Schritt bist du gerade?",
         glossarBegriffe: ["Pflegeprozess"],
       },
+      transition: "Du hast die Akte gelesen. Frau Wegner hat SBAR-Struktur geliefert. Aber ein Begriff sticht heraus: BVK. Was steckt dahinter?",
       question: {
         fragetext:
           "Bevor du das Zimmer betrittst: In welchem Schritt des Pflegeprozesses befindest du dich gerade?",
@@ -168,6 +250,85 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
               category: "krankheitslehre",
             },
           ],
+        },
+      },
+    },
+
+    // Step 1.3b — Inline-Wissen: Dysphagie & IDDSI-Stufen
+    // Schüler hat in Flipcard 1.3 die Grunddefinition gehört. Bevor er den Dialog führt
+    // (Essen/Trinken wird thematisiert), vertieft dieser Baustein die IDDSI-Systematik.
+    {
+      stepId: "ce02-petrov-info-03b-dysphagie-iddsi",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "II.1",
+      quellen: [
+        "IDDSI 2019 — International Dysphagia Diet Standardisation Initiative",
+        "DGG/DGN 2020 — Neurogene Dysphagie",
+        "GUSS (Trapl M. et al. 2007, Stroke 38:2948-2952)",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-petrov-info-dysphagie-iddsi",
+      tag: "krankheitslehre",
+      themaPrimaer: "enterale-ernaehrung",
+      themenSekundaer: ["essen-anreichen", "mundpflege"],
+      transition: "Angedickt, breiig, püriert — du weißt jetzt was Herr Petrov schlucken darf. Und was nicht.",
+      contentC1: {
+        title: "Dysphagie & IDDSI — was darf Herr Petrov schlucken?",
+        body: "",
+        glossarBegriffe: ["IDDSI", "Dysphagie", "Aspiration", "Konsistenz"],
+      },
+      contentB1: {
+        title: "IDDSI — Welche Flüssigkeit ist sicher?",
+        body: "",
+        glossarBegriffe: ["IDDSI", "Dysphagie", "Aspiration"],
+      },
+      inlineWissen: {
+        bausteinRef: "enterale-ernaehrung-iddsi-stufen",
+        storyAufhaenger:
+          "Auf dem Nachttisch von Herrn Petrov steht eine Flasche mit angedickt aussehender Flüssigkeit. Daneben eine normale Wasserflasche. Welche darf er trinken? Das IDDSI-Framework gibt weltweit die Antwort — und du musst es kennen, bevor du ihm das Frühstück reichst.",
+        storyAufhaengerB1:
+          "Auf dem Nachttisch stehen zwei Flaschen: Eine mit dicker Flüssigkeit, eine mit normalem Wasser. Welche ist sicher für Herrn Petrov? Dafür gibt es das IDDSI-System.",
+        kerntext:
+          "**IDDSI** (International Dysphagia Diet Standardisation Initiative, 2019) ist der internationale Standard für Konsistenzstufen bei Schluckstörungen.\n\n**Flüssigkeiten — 5 Stufen:**\n\n• **Level 0** — Dünn (Wasser, Tee, Saft). Bei Herrn Petrov: **verboten**.\n\n• **Level 1** — Leicht verdickt (fließt schneller als Level 2).\n\n• **Level 2** — Mäßig verdickt. **Herrn Petrovs Verordnung.** Fließt langsam vom Löffel.\n\n• **Level 3** — Stark verdickt. Fällt in Klumpen vom Löffel.\n\n• **Level 4** — Extrem verdickt / püriert.\n\n**Kostformen:** Dazu gibt es IDDSI-Stufen 3-7 für Nahrung (püriert bis normal). Herr Petrov: Kostform B = weich, zerteilbar.\n\n**Warum ist das so wichtig?** Level 0 (dünne Flüssigkeit) rauscht schnell am Kehldeckel vorbei. Bei Dysphagie Grad 2 schließt der Kehldeckel zu langsam — die Flüssigkeit gelangt in die Luftröhre. Das heißt **Aspiration**. Eingedickte Flüssigkeit fließt langsamer, gibt dem Kehldeckel Zeit.\n\n**GUSS-Assessment** (Trapl 2007) bestimmt den Grad. Es wird durch geschultes Personal durchgeführt — nicht eigenständig wiederholt.",
+        kerntextB1:
+          "**IDDSI** ist ein internationales System. Es sagt: Welche Flüssigkeit ist sicher bei Schluck-Störungen?\n\n**5 Stufen für Flüssigkeiten:**\n\n• **Level 0** = dünn (Wasser, Tee). **Verboten** für Herrn Petrov.\n\n• **Level 2** = mäßig verdickt. **Das darf Herr Petrov trinken.** Es fließt langsam vom Löffel.\n\n• **Level 3** = stark verdickt. Es fällt in Klumpen.\n\n**Warum kein normales Wasser?** Dünne Flüssigkeit fließt sehr schnell. Der Kehldeckel schließt bei Dysphagie zu langsam. Die Flüssigkeit kommt in die Lunge. Das heißt **Aspiration**.\n\nEingedickte Flüssigkeit fließt langsamer. Der Kehldeckel hat Zeit zu schließen.",
+        faustregel: "Dysphagie Grad 2 = IDDSI Level 2. Dünnflüssig ist der Feind — angedickt ist der Schutz.",
+        faustregelB1: "Dysphagie Grad 2 = dünne Flüssigkeit verboten. Angedickte Flüssigkeit ist sicher.",
+        spektrum: [
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Adipositas + Mangelernährung",
+            kurzbeschreibung:
+              "Schmidt hat keine Dysphagie — aber ein anderes Ernährungsproblem: trotz BMI 38 ist sie mangelernährt (Proteinmangel). Andere Ursache, gleiche Überwachungspflicht.",
+          },
+          {
+            patientName: "Herr Nguyen",
+            situationsId: "ls-nguyen-stoma",
+            hauptfaktor: "Stoma, enterale Ernährung post-OP",
+            kurzbeschreibung:
+              "Bei Nguyen geht das Essen nicht über den Mund — er wird nach der Stoma-OP vorübergehend parenteral ernährt. Ganz andere Zugangswege, aber dieselbe Frage: Bekommt er genug Kalorien?",
+          },
+          {
+            patientName: "Emilia",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Säugling mit Bronchiolitis, Trinkschwäche",
+            kurzbeschreibung:
+              "Emilia trinkt zu wenig wegen Atemnot (Bronchiolitis). Keine Dysphagie im klassischen Sinn — aber ein ähnliches Problem: orale Aufnahme reicht nicht, nasogastrale Sonde als Brücke.",
+          },
+        ],
+        sonstBox:
+          "IDDSI ersetzt seit 2019 alle nationalen Systeme (vorher: in DE die \"Bremer Skala\", in UK die NDD). Vorteile: einheitliche Farb-Codierung, international verständlich, gabeltaugliche Prüfmethoden (\"Fork Drip Test\", \"Spoon Tilt Test\"). Bei PEG-Patienten: IDDSI gilt auch für die Bolusgabe über die Sonde.",
+        sonstBoxB1:
+          "IDDSI gibt es seit 2019. Vorher hatte jedes Land eigene Regeln. Jetzt gibt es ein einheitliches System mit Farben. Die Konsistenz kann man mit einem Löffel oder einer Gabel testen (\"Löffel-Test\", \"Gabel-Test\").",
+        karteikarte: {
+          vorderseite:
+            "Herr Petrov hat Dysphagie Grad 2 nach GUSS. Natalya bringt normalen Tee mit (Level 0). Was ist das Problem?",
+          rueckseite:
+            "Level 0 (dünnflüssig) ist bei Dysphagie Grad 2 aspirationsgefährdet. Herr Petrov darf nur IDDSI Level 2 (mäßig verdickt) trinken. Dünne Flüssigkeit rauscht zu schnell am verzögert schließenden Kehldeckel vorbei. Natalya muss über IDDSI informiert und einbezogen werden. Spektrum: Schmidt (Mangelernährung trotz Adipositas), Nguyen (parenterale Ernährung post-OP-Stoma), Emilia (Trinkschwäche Bronchiolitis). Faustregel: **Dysphagie Grad 2 = IDDSI Level 2. Dünnflüssig ist der Feind.**",
         },
       },
     },

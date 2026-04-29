@@ -1,7 +1,8 @@
 // CE-02 Situation Herr Bauer — Demenz und Sturz — Phase 2: Beobachten & Risiken erkennen
-// Steps: 7 (5 Kern + 2 Optional) · Bloom: B3-B4 · Brilliant-Prinzip: Step 2.1
+// Steps: 9 (5 Kern + 2 Inline-Wissen + 2 Optional) · Bloom: B2-B4
 // Quelle: content/ce-02/situationen/ls-bauer-demenz-sturz/phase-beobachten.md
 // Pipeline v9 — 2026-04-23
+// Inline-Wissen: 2 Bausteine (kontraktur-prophylaxe Grundlagen, sturz-prophylaxe Wiederbegegnung Schmerz)
 
 import type { SituationsPhase } from "../../../_types";
 
@@ -109,6 +110,86 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
               label: "Hämatome und Hautdefekte sichtbar prüfen",
             },
           ],
+        },
+      },
+    },
+
+    // Step 2.2b — Inline-Wissen: Kontraktur-Prophylaxe Grundlagen
+    // Bevor der Schueler Herrn Bauers Knie prueft (Dialog 2.3), muss er wissen:
+    // Was ist eine Kontraktur? Warum ist Herr Bauer gefaehrdet? Was beobachte ich?
+    {
+      stepId: "ce02-bauer-beob-02b-kontraktur-grundlagen",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP 2014 — Expertenstandard Erhaltung und Foerderung der Mobilitaet",
+        "DNQP 2018 — Kontrakturenprophylaxe (Hinweispapier)",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-beob-kontraktur-grundlagen",
+      tag: "pflege",
+      themaPrimaer: "kontraktur-prophylaxe",
+      themenSekundaer: ["basale-stimulation"],
+      transition: "Kontraktur im Kopf? Gut. Jetzt geht es an Herrn Bauers rechtes Knie.",
+      contentC1: {
+        title: "Kontraktur — was passiert wenn Gelenke nicht bewegt werden",
+        body: "",
+        glossarBegriffe: ["Kontraktur", "Streckdefizit", "Funktionsstellung", "Immobilitaet"],
+      },
+      contentB1: {
+        title: "Was ist eine Kontraktur?",
+        body: "",
+        glossarBegriffe: ["Kontraktur", "Streckdefizit"],
+      },
+      inlineWissen: {
+        bausteinRef: "kontraktur-prophylaxe-grundlagen",
+        storyAufhaenger:
+          "Herrn Bauers rechtes Knie hat ein Streckdefizit von 20 Grad — das heißt, es laesst sich nicht mehr komplett strecken. 20 Grad klingt nach wenig. Aber wenn daraus 40 werden, kann er nicht mehr stehen. Das nennt man Kontraktur.",
+        storyAufhaengerB1:
+          "Herrn Bauers rechtes Knie geht nicht mehr ganz gerade. Es fehlen 20 Grad. Wenn es schlimmer wird, kann er nicht mehr stehen. Das heißt Kontraktur.",
+        kerntext:
+          "Eine **Kontraktur** ist eine dauerhafte Versteifung eines Gelenks durch Verkuerzung von Muskeln, Sehnen oder Gelenkkapsel (DNQP 2018).\n\n**Warum ist Herr Bauer gefaehrdet?**\n\n• **Immobilitaet** — er liegt oder sitzt den groessten Teil des Tages. Bewegung findet nur waehrend der Pflege statt.\n\n• **Demenz** — er versteht Aufforderungen zur Bewegung nicht. Aktive Uebungen sind kaum moeglich.\n\n• **Abwehr bei Pflege** — passive Bewegung wird erschwert wenn er sich gegen Beruehrung wehrt.\n\n• **Schmerz** — Schonhaltung nach Sturz (rechtes Knie) verstaerkt die Immobilitaet.\n\n**Zeitfaktor:**\n\nKontrakturen entwickeln sich ab **1-2 Wochen Immobilitaet** (bei aelteren Menschen schneller). Das Streckdefizit von 20 Grad bei Herrn Bauer zeigt: der Prozess hat bereits begonnen.\n\n**Beobachtungszeichen:**\n\n• Widerstand beim passiven Bewegen (nicht Schmerz, nicht Abwehr — mechanisch)\n\n• Dauerhaft gebeugte Haltung\n\n• Abnehmender Bewegungsumfang (Vergleich rechts/links)",
+        kerntextB1:
+          "Eine **Kontraktur** ist wenn ein Gelenk dauerhaft steif wird (DNQP 2018).\n\n**Warum ist Herr Bauer gefaehrdet?**\n\n• Er bewegt sich fast nicht — er liegt oder sitzt den ganzen Tag.\n\n• Er versteht nicht wenn du sagst: \"Beuge dein Knie.\"\n\n• Er wehrt sich wenn du ihn anfasst.\n\n• Er hat Schmerzen im rechten Knie nach dem Sturz — er bewegt es noch weniger.\n\n**Wie schnell passiert das?**\n\nNach 1-2 Wochen ohne Bewegung kann ein Gelenk schon steifer werden. Herrn Bauers Knie hat schon 20 Grad verloren.\n\n**Was beobachtest du?**\n\n• Widerstand beim Bewegen (nicht weil es wehtut, sondern weil das Gelenk blockiert)\n\n• Das Bein bleibt immer gebeugt\n\n• Weniger Bewegung als gestern",
+        faustregel:
+          "1-2 Wochen Immobilitaet genuegen fuer erste Kontrakturen. Was heute nicht bewegt wird, laesst sich morgen schwerer bewegen.",
+        faustregelB1:
+          "Schon nach 1-2 Wochen ohne Bewegung kann ein Gelenk steif werden. Heute nicht bewegt = morgen noch steifer.",
+        spektrum: [
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Hemiparese + Spastik",
+            kurzbeschreibung:
+              "Nach Schlaganfall: Die gelaehmte Seite entwickelt Spastik — Muskeln verkuerzen sich aktiv. Kontrakturrisiko ist hier besonders hoch weil die gesunde Seite kompensiert und die betroffene Seite vernachlaessigt wird.",
+          },
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP Ruhigstellung",
+            kurzbeschreibung:
+              "Nach Hueft-TEP: Bewegungseinschraenkung (keine Adduktion, keine Innenrotation, max. 90 Grad Hueftflexion fuer 6-12 Wochen). Kontrakturgefahr im Hueftgelenk wenn Physiotherapie nicht frueh beginnt.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "COPD + Inaktivitaet",
+            kurzbeschreibung:
+              "Ambulant: Frau Kovac bewegt sich wegen Atemnot kaum. Sprunggelenk-Kontraktur (Spitzfuss) droht wenn sie dauerhaft nur sitzt. Fruehe Mobilisation und Physiotherapie sind entscheidend.",
+          },
+        ],
+        sonstBox:
+          "Kontrakturarten nach Ursache: **arthrogen** (Gelenkkapsel verklebt), **myogen** (Muskel verkuerzt), **tendinogen** (Sehne verkuerzt), **neurogen** (Spastik bei ZNS-Schaedigung). Bei Herrn Bauer wahrscheinlich myogen + arthrogen. Messmethode: **Neutralnull-Methode** — Vergleich mit Gegenseite, Dokumentation in Grad.",
+        sonstBoxB1:
+          "Kontrakturen koennen verschiedene Ursachen haben: Gelenk verklebt, Muskel verkuerzt, Sehne verkuerzt, oder Spastik nach Hirnschaedigung. Bei Herrn Bauer sind wahrscheinlich Muskel und Gelenk betroffen. Gemessen wird in Grad — Vergleich mit dem anderen Knie.",
+        karteikarte: {
+          vorderseite:
+            "Herrn Bauers rechtes Knie hat ein Streckdefizit von 20 Grad. Warum ist das gefaehrlich und wie schnell verschlechtert es sich?",
+          rueckseite:
+            "20 Grad Streckdefizit = beginnende Kontraktur (Gelenk kann nicht mehr voll gestreckt werden). **Ab 1-2 Wochen Immobilitaet** koennen erste Kontrakturen entstehen (DNQP 2018). Risikofaktoren Bauer: Immobilitaet, Demenz (versteht Uebungen nicht), Abwehr bei Pflege, Schonhaltung nach Sturz. Spektrum: Petrov (Spastik), Yilmaz (post-OP), Kovac (Inaktivitaet). Faustregel: **Heute nicht bewegt = morgen schwerer zu bewegen.**",
         },
       },
     },
@@ -289,6 +370,95 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
             isError: false,
           },
         ],
+      },
+    },
+
+    // Step 2.4b — Inline-Wissen: Schmerz bei Demenz — BESD statt NRS (Wiederbegegnung)
+    // NRS wurde bei Frau M. eingefuehrt. Herr Bauer kann NRS nicht zuverlaessig nutzen.
+    // Hier: Wiederbegegnung mit Demenz-spezifischer Vertiefung (BESD/PAINAD).
+    {
+      stepId: "ce02-bauer-beob-04b-schmerz-besd-wiederbegegnung",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP 2020 — Expertenstandard Schmerzmanagement akut",
+        "Basler B. et al. (2006): BESD-Skala",
+        "Warden V. et al. (2003): PAINAD",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-beob-besd-wiederbegegnung",
+      tag: "pflege",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["basale-stimulation", "ganzkörperpflege"],
+      transition: "Schmerzerfassung laeuft bei Herrn Bauer ueber Beobachtung, nicht ueber Fragen. Jetzt: Risiken sortieren.",
+      contentC1: {
+        title: "Schmerz bei Demenz — warum NRS hier nicht reicht",
+        body: "",
+        glossarBegriffe: ["BESD", "PAINAD", "NRS", "Schmerzerfassung bei Demenz"],
+      },
+      contentB1: {
+        title: "Wie misst man Schmerz bei Demenz?",
+        body: "",
+        glossarBegriffe: ["BESD", "NRS", "Schmerz"],
+      },
+      inlineWissen: {
+        bausteinRef: "sturz-prophylaxe-schmerz-bei-demenz",
+        wiederbegegnung: {
+          basisBausteinId: "schmerz-nrs-grundlagen",
+          basisPatient: "Frau M.",
+          vertiefung:
+            "NRS kennst du von Frau M. — bei Herrn Bauer funktioniert das nicht zuverlaessig. Er kann Zahlen nicht mehr sicher zuordnen (FAST 6a). Statt zu fragen \"Auf einer Skala von 0 bis 10...\" beobachtest du sein **Verhalten**: Mimik, Koerperhaltung, Laute, Abwehr. Dafuer gibt es die **BESD-Skala** (Basler 2006) — 5 Kategorien, je 0-2 Punkte, Gesamtwert ab 3 = Schmerz wahrscheinlich.",
+          vertiefungB1:
+            "NRS kennst du von Frau M. Bei Herrn Bauer funktioniert die Zahlen-Skala nicht — er versteht sie nicht mehr. Stattdessen beobachtest du sein Verhalten: Gesicht, Koerper, Geraeusche. Das heißt BESD-Skala. Ab 3 Punkten = Schmerz wahrscheinlich.",
+        },
+        storyAufhaenger:
+          "Du hast gerade Herrn Bauers Knie geprueft — er hat scharf die Luft eingezogen. Aber auf die Frage \"Wo tut es weh?\" sagt er nur: \"Die Bestellung!\" NRS funktioniert hier nicht. Wie misst du seinen Schmerz?",
+        storyAufhaengerB1:
+          "Herr Bauer hat gerade bei der Kniepruefung die Luft eingezogen. Aber er kann dir nicht sagen wo es wehtut. Wie misst du seinen Schmerz?",
+        kerntext:
+          "Die **BESD-Skala** (Beurteilung von Schmerzen bei Demenz, Basler 2006) erfasst Schmerz ueber **Verhaltensbeobachtung**.\n\n**5 Kategorien, je 0-2 Punkte:**\n\n• **Atmung** — normal (0), gelegentlich erschwert (1), stoßweise/Cheyne-Stokes (2)\n\n• **Negative Lautaeußerung** — keine (0), gelegentlich stoehnen (1), wiederholt rufen/schreien (2)\n\n• **Gesichtsausdruck** — laechelnd/neutral (0), traurig/aengstlich (1), Grimassieren (2)\n\n• **Koerpersprache** — entspannt (0), angespannt (1), Steifheit/Abwehr/Schlagen (2)\n\n• **Trost** — nicht noetig (0), Beruhigung durch Stimme/Beruehrung moeglich (1), nicht beruhigbar (2)\n\n**Bewertung:** Gesamtwert ≥ 3 → Schmerz wahrscheinlich → Maßnahmen einleiten.\n\n**Bei Herrn Bauer heute:** Grimassieren beim Kniebewegen (2), Schlagen nach Pflegekraft (2), beruhigbar durch Handhalten (1) = **BESD 5** → deutlicher Hinweis auf Schmerz.\n\n**Wann erheben?** In Ruhe UND bei Bewegung (Pflege, Transfer, Mobilisation). Immer beides dokumentieren.",
+        kerntextB1:
+          "Die **BESD-Skala** misst Schmerz bei Demenz durch **Beobachtung**.\n\n**5 Bereiche, je 0-2 Punkte:**\n\n• **Atmung** — normal? oder stoßweise?\n\n• **Geraeusche** — stoehnt er? schreit er?\n\n• **Gesicht** — neutral? traurig? Grimasse?\n\n• **Koerper** — entspannt? steif? schlaegt er?\n\n• **Trost** — wird er ruhig wenn du ihn beruehrst?\n\n**Ergebnis:** Ab 3 Punkten = Schmerz wahrscheinlich.\n\n**Bei Herrn Bauer heute:** Grimasse beim Kniebewegen (2), Schlagen (2), beruhigbar durch Handhalten (1) = BESD 5 → Er hat Schmerzen.\n\n**Wann messen?** In Ruhe UND bei Bewegung (Pflege, Transfer). Beides aufschreiben.",
+        faustregel:
+          "Bei Demenz: Nicht fragen sondern beobachten. BESD ab 3 Punkten = Schmerz — auch wenn der Patient \"nichts sagt\".",
+        faustregelB1:
+          "Bei Demenz misst du Schmerz durch Beobachtung, nicht durch Fragen. BESD ab 3 = Schmerz.",
+        spektrum: [
+          {
+            patientName: "Frau M.",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "NRS — orientiert, kann Zahlen zuordnen",
+            kurzbeschreibung:
+              "Frau M. ist orientiert und kann NRS nutzen. Aber sie bagatellisiert: sagt \"etwas unangenehm\" bei NRS 8. Bei ihr: immer nach der Zahl fragen, nicht nach dem Adjektiv.",
+          },
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Aphasie — Sprache eingeschraenkt",
+            kurzbeschreibung:
+              "Nach Schlaganfall: er versteht NRS, kann aber Zahlen nicht aussprechen (Aphasie). Loesung: Zeigeskala (Finger auf Zahl zeigen) oder Faces Pain Scale.",
+          },
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Polyneuropathie",
+            kurzbeschreibung:
+              "Diabetische Polyneuropathie: Sie spuert Schmerz an den Fuessen NICHT obwohl Gewebe geschaedigt ist. Schmerzerfassung hier paradox: normaler NRS, aber trotzdem Wunden.",
+          },
+        ],
+        sonstBox:
+          "Weitere Fremd-Assessment-Instrumente: **PAINAD** (Pain Assessment in Advanced Dementia, Warden 2003) — dem BESD sehr aehnlich, international haeufiger verwendet. **ECPA** (Echelle Comportementale de la Douleur pour Personnes Agees) — franzoesischer Ursprung, 11 Items, differenzierter aber aufwendiger. **ZOPA** (Zurich Observation Pain Assessment) — fuer beatmete/sedierte Patienten auf Intensivstation.",
+        sonstBoxB1:
+          "Andere Schmerz-Beobachtungs-Skalen: **PAINAD** — aehnlich wie BESD, international haeufiger. **ECPA** — aus Frankreich, mehr Details, mehr Aufwand. **ZOPA** — fuer Patienten auf der Intensivstation.",
+        karteikarte: {
+          vorderseite:
+            "Herr Bauer (Demenz FAST 6a) grimassiert beim Kniebewegen und schlaegt nach dir. NRS ist nicht moeglich. Welche Skala nutzt du und was ist das Ergebnis?",
+          rueckseite:
+            "**BESD-Skala** (Basler 2006): 5 Kategorien je 0-2 Punkte (Atmung, Lautaeußerung, Gesicht, Koerper, Trost). Herrn Bauer: Grimasse (2) + Schlagen (2) + beruhigbar (1) = **BESD 5 → Schmerz wahrscheinlich**. Maßnahme: Schmerzintervention einleiten, Arzt informieren. NRS funktioniert bei FAST 6a nicht zuverlaessig (Zahlen-Zuordnung gestoert). Spektrum: Frau M. (NRS, bagatellisiert), Petrov (Aphasie → Zeigeskala), Schmidt (Polyneuropathie → schmerzfrei trotz Schaden). Faustregel: **Bei Demenz: Beobachten statt Fragen. BESD ≥ 3 = Schmerz.**",
+        },
       },
     },
 

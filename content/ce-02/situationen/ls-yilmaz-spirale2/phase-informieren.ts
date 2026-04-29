@@ -28,6 +28,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
       lernziel: "ce02-yilmaz-s2-info-uebergabe",
       tag: "pflege",
       displayFormat: "scenario",
+      transition: "In der Akte steht eine Notiz: Roetung Sakrum. Aber was genau ist ein Dekubitus eigentlich?",
       bildkategorie: "szene",
       imageAlt:
         "Pflegekraft liest digitale Pflegeakte an einem Stationscomputer im Frühdienst, warmes Licht",
@@ -49,6 +50,93 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
       },
     },
 
+    // Step 1.1b — Inline-Wissen: Was ist ein Dekubitus? (Definition + Kategorien-Ueberblick)
+    // Frau Yilmaz hat Dekubitus Kat. II — der Schueler braucht die Grunddefinition BEVOR er
+    // die Risikofaktoren (Flipcard 1.2) und die Wundinspektion (Phase 2) angeht.
+    {
+      stepId: "ce02-yilmaz-s2-info-01b-was-ist-dekubitus",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 1,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "NPUAP/EPUAP/PPPIA 2019 — International Guideline",
+        "DNQP 2024 — Expertenstandard Dekubitusprophylaxe (2. Aktualisierung)",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-info-dekubitus-definition",
+      tag: "pflege",
+      themaPrimaer: "dekubitus-prophylaxe",
+      themenSekundaer: ["haut"],
+      transition: "Jetzt weisst du was ein Dekubitus ist. Frau Yilmaz bringt ein ganzes Buendel an Risiken mit.",
+      contentC1: {
+        title: "Was ist ein Dekubitus?",
+        body: "",
+        glossarBegriffe: ["Dekubitus", "Druckgeschwuer", "NPUAP/EPUAP", "Kategorie I-IV"],
+      },
+      contentB1: {
+        title: "Was ist ein Dekubitus?",
+        body: "",
+        glossarBegriffe: ["Dekubitus", "Druckgeschwuer"],
+      },
+      inlineWissen: {
+        bausteinRef: "dekubitus-prophylaxe-was-ist-dekubitus",
+        storyAufhaenger:
+          "In der Akte steht: \"Roetung Sakrum.\" Die Kollegin hat es nicht weiter dokumentiert. Aber als du gleich das Zimmer betrittst, wirst du mehr sehen als eine Roetung. Was genau ist ein Dekubitus — und ab wann wird aus Prophylaxe Therapie?",
+        storyAufhaengerB1:
+          "In der Akte steht: \"Roetung am Steissbein.\" Aber du wirst gleich sehen: Es ist mehr als eine Roetung. Was ist ein Dekubitus genau?",
+        kerntext:
+          "Ein **Dekubitus** (umgangssprachlich: Druckgeschwuer) ist eine **lokal begrenzte Schaedigung der Haut und/oder des darunterliegenden Gewebes**, verursacht durch **anhaltenden Druck** oder Druck in Kombination mit Scherkraeften (NPUAP/EPUAP/PPPIA 2019).\n\n**Die 4 Kategorien:**\n\n• **Kategorie I** — Intakte Haut, nicht-wegdrueckbare Roetung. Fingertest positiv: Drueckst du drauf, bleibt es rot.\n\n• **Kategorie II** — Teilverlust der Haut: flache offene Wunde (Erosion) oder Blase. Hier steht Frau Yilmaz.\n\n• **Kategorie III** — Vollstaendiger Hautverlust bis in die Subkutis. Tiefe Wunde, evtl. Taschenbildung.\n\n• **Kategorie IV** — Vollstaendiger Gewebeverlust mit freiliegendem Knochen, Sehne oder Muskel.\n\n**Der Schwellenueergang Kategorie I zu II ist entscheidend:** Bei Kategorie I ist die Haut noch intakt — hier greift **Prophylaxe**. Ab Kategorie II ist die Haut offen — jetzt brauchst du **Wundversorgung + Therapie**. Genau das ist bei Frau Yilmaz passiert.",
+        kerntextB1:
+          "Ein **Dekubitus** (Druckgeschwuer) ist eine **Wunde durch zu viel Druck** auf die Haut (NPUAP/EPUAP 2019).\n\n**4 Stufen:**\n\n• **Kategorie 1** — Haut ist noch ganz. Rote Stelle, die beim Druecken nicht weg geht.\n\n• **Kategorie 2** — Haut ist offen. Flache Wunde oder Blase. Das hat Frau Yilmaz.\n\n• **Kategorie 3** — Tiefe Wunde bis ins Fettgewebe.\n\n• **Kategorie 4** — Sehr tiefe Wunde, Knochen oder Muskeln sichtbar.\n\n**Wichtig:** Bei Kategorie 1 hilft noch **Vorbeugung** (Prophylaxe). Ab Kategorie 2 brauchst du eine **Wundbehandlung**.",
+        faustregel:
+          "Kategorie I = Prophylaxe genuegt. Ab Kategorie II = die Haut ist offen, jetzt ist es Therapie.",
+        faustregelB1:
+          "Kategorie 1: Haut noch ganz = Vorbeugung. Ab Kategorie 2: Haut ist offen = Behandlung noetig.",
+        spektrum: [
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz + Immobilitaet",
+            kurzbeschreibung:
+              "Bei ihm entsteht Dekubitus-Risiko durch naechtliche Immobilitaet und fehlende Eigenbewegung. Er merkt den Druck nicht, weil er kognitiv nicht versteht, dass er sich drehen muss.",
+          },
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Hemiparese + Neglect",
+            kurzbeschreibung:
+              "Nach Schlaganfall: Die gesamte rechte Koerperhaelfte ist betroffen. Er liegt oft auf der betroffenen Seite, ohne es zu merken (Neglect). Fersen und Trochanter sind seine Praedilektionsstellen.",
+          },
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Adipositas BMI 38 + Polyneuropathie",
+            kurzbeschreibung:
+              "Hoeherer Auflagedruck auf Knochenvorspruenge bei hohem Koerpergewicht. Wie bei Frau Yilmaz: Neuropathie verhindert das Schmerzsignal.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "Ambulant, sitzende Position",
+            kurzbeschreibung:
+              "Sie sitzt viel im Rollstuhl zuhause. Dekubitus-Risiko nicht am Sakrum (liegt selten), sondern an Sitzbeinhockern und Fersen. Ambulant wird Dekubitus oft spaet entdeckt.",
+          },
+        ],
+        sonstBox:
+          "Sonderkategorien der NPUAP/EPUAP: **Nicht klassifizierbar** (Wundgrund von Nekrose bedeckt, Tiefe nicht beurteilbar) und **Vermutete tiefe Gewebeschaedigung** (Deep Tissue Injury — intakte Haut, aber darunter bereits geschaedigtes Gewebe, erkennbar an violetter Verfaerbung). Beides kommt bei Frau Yilmaz nicht vor, gehoert aber zum Pruefungswissen.",
+        sonstBoxB1:
+          "Es gibt noch zwei Sonderkategorien: **Nicht klassifizierbar** (Wunde ist von totem Gewebe bedeckt, man sieht nicht wie tief sie ist) und **Tiefe Gewebeschaedigung** (Haut sieht noch ganz aus, ist aber innen schon kaputt — erkennt man an lila Farbe).",
+        karteikarte: {
+          vorderseite:
+            "Frau Yilmaz hat eine flache offene Wunde am Sakrum, 2x3 cm, kein Nekroseanteil. Welche Dekubitus-Kategorie ist das — und warum ist der Uebergang von Kategorie I zu II so wichtig?",
+          rueckseite:
+            "Kategorie II (NPUAP/EPUAP 2019): Teilverlust der Haut — flache Erosion oder Blase. Der Uebergang I zu II markiert den Wechsel von Prophylaxe zu Therapie: Haut ist offen, Wundversorgung noetig.\n\nSpektrum: Bauer (Demenz, Immobilitaet), Petrov (Hemiparese, Neglect), Schmidt (Adipositas, Neuropathie), Kovac (ambulant, Sitzbeinhocker).\n\nFaustregel: **Ab Kategorie II ist die Haut offen — aus Prophylaxe wird Therapie.**",
+        },
+      },
+    },
+
     // Step 1.2 — Flipcard (3 Karten): Risikoprofil aktivieren
     {
       stepId: "ce02-yilmaz-s2-info-02-akte-risikoprofil",
@@ -64,6 +152,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-yilmaz-s2-info-risikoprofil",
       tag: "krankheitslehre",
+      transition: "Du kennst die Risiken. Jetzt die Frage: Wie gehst du mental vorbereitet ins Zimmer?",
       contentC1: {
         title: "Vorwissen aktivieren — Risikoprofil Frau Yilmaz",
         body: "Drei Karten zu den Vorerkrankungen. Drehe jede Karte um — teste dein Vorwissen bevor du zum Befund gehst.",
@@ -119,6 +208,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
       modus: "challenge",
       lernziel: "ce02-yilmaz-s2-info-prioritaet",
       tag: "pflege",
+      transition: "Neutral reingehen, selbst urteilen. Aber worauf genau achtest du bei der Haut?",
       contentC1: {
         title: "Mentale Vorbereitung vor dem Zimmer",
         body: "Du hast die Akte gelesen. Bevor du das Zimmer betrittst: Was ist deine wichtigste mentale Vorbereitung?",
@@ -170,6 +260,86 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
       },
     },
 
+    // Step 1.3b — Inline-Wissen: Hautinspektion — worauf du achtest
+    // Bevor der Schueler ins Zimmer geht und die Wunde sieht, braucht er Grundwissen
+    // zur Hautinspektion: Was genau schaut man an? Welche Zeichen sind relevant?
+    {
+      stepId: "ce02-yilmaz-s2-info-03b-hautinspektion",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP 2024 — Expertenstandard Dekubitusprophylaxe",
+        "NPUAP/EPUAP/PPPIA 2019",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-info-hautinspektion",
+      tag: "pflege",
+      themaPrimaer: "haut",
+      themenSekundaer: ["dekubitus-prophylaxe"],
+      transition: "Du weisst jetzt, worauf du achten musst. Zeit, ins Zimmer zu gehen.",
+      contentC1: {
+        title: "Hautinspektion — worauf du gleich achtest",
+        body: "",
+        glossarBegriffe: ["Hautinspektion", "Praedilektionsstelle", "Fingertest", "Mazeration"],
+      },
+      contentB1: {
+        title: "Haut anschauen — worauf achtest du?",
+        body: "",
+        glossarBegriffe: ["Hautinspektion", "Fingertest"],
+      },
+      inlineWissen: {
+        bausteinRef: "haut-inspektion-grundlagen",
+        storyAufhaenger:
+          "Gleich wirst du Frau Yilmaz bitten, sich auf die Seite zu drehen. Du wirst ihre Haut am Sakrum sehen — und du musst in Sekunden erkennen, was du siehst. Dafuer brauchst du einen klaren Blick: Was genau schaust du an?",
+        storyAufhaengerB1:
+          "Gleich schaust du dir die Haut von Frau Yilmaz am Steissbein an. Du musst schnell erkennen was du siehst. Was genau schaust du an?",
+        kerntext:
+          "Die **Hautinspektion** ist das wichtigste Frueherkennungs-Werkzeug bei Dekubitusrisiko (DNQP 2024). Du brauchst **gutes Licht** (Tageslicht oder helle Lampe — nie im Halbdunkel beurteilen).\n\n**5 Punkte der systematischen Hautinspektion:**\n\n• **Farbe** — Roetung? Bei dunkler Haut: Verfaerbung (lila, blau) statt Roetung sichtbar.\n\n• **Temperatur** — Ist die Stelle waermer als die Umgebung? (Fingerruecken-Test)\n\n• **Konsistenz** — Ist die Haut verhaertet? Aufgeweicht (mazeriert)? Oedematoes?\n\n• **Integritaet** — Ist die Haut intakt oder offen? Blase? Erosion?\n\n• **Feuchtigkeit** — Trocken? Feucht? Mazeriert durch Inkontinenz-Pad?\n\n**Der Fingertest (nur bei intakter Haut):** 3 Sekunden auf die Roetung druecken. Wird sie weiss = normale Durchblutung. Bleibt sie rot = nicht-wegdrueckbare Roetung = Kategorie I.\n\n**Praedilektionsstellen** (haeufigste Dekubitus-Orte): Sakrum, Fersen, Trochanter, Sitzbeinhöcker, Hinterkopf. Bei Frau Yilmaz: Sakrum (Rueckenlage) + Fersen (Matratze).",
+        kerntextB1:
+          "Die **Hautinspektion** ist das wichtigste Mittel, um Dekubitus frueh zu erkennen (DNQP 2024). Du brauchst **gutes Licht**.\n\n**5 Dinge schaust du an:**\n\n• **Farbe** — Ist die Stelle rot? Bei dunkler Haut: eher lila oder blau.\n\n• **Temperatur** — Ist die Stelle waermer? (Mit Fingerruecken fuehlen)\n\n• **Wie fuehlt sich die Haut an?** — Hart? Weich? Aufgeweicht?\n\n• **Ist die Haut offen?** — Blase? Wunde?\n\n• **Feuchtigkeit** — Trocken? Feucht? Nass durch Inkontinenz-Pad?\n\n**Fingertest (nur bei ganzer Haut):** 3 Sekunden druecken. Wird die Roetung weiss = ok. Bleibt rot = Kategorie 1.\n\n**Haeufigste Stellen:** Steissbein, Fersen, Hueftknochen seitlich.",
+        faustregel:
+          "Gutes Licht, 5 Kriterien (Farbe, Temperatur, Konsistenz, Integritaet, Feuchtigkeit), Fingertest nur bei intakter Haut.",
+        faustregelB1:
+          "Immer gutes Licht. 5 Dinge anschauen. Fingertest nur wenn die Haut noch ganz ist.",
+        spektrum: [
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz — wehrt Inspektion ab",
+            kurzbeschreibung:
+              "Hautinspektion bei Demenz ist schwieriger: Herr Bauer versteht nicht warum du ihn anschauen willst. Validation und ruhige Ansprache helfen — nie erzwingen.",
+          },
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Hemiparese — betroffene Seite inspizieren",
+            kurzbeschreibung:
+              "Die betroffene Koerperhaelfte hat veraenderte Durchblutung. Roetungen koennen anders aussehen. Neglect bedeutet: Er zeigt dir die Stelle nicht von allein.",
+          },
+          {
+            patientName: "Emilia",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Saeugling — Hinterkopf + Windel",
+            kurzbeschreibung:
+              "Bei Saeuglingen sind Hinterkopf und Sakralbereich (unter der Windel) die Praedilektionsstellen. Haut ist duenner, Roetungen entstehen schneller.",
+          },
+        ],
+        sonstBox:
+          "Bei **dunkler Hautfarbe** ist Roetung schwer sichtbar — hier auf Farbveraenderung (lila, aschgrau), Temperaturunterschied und Oedem achten. Die NPUAP/EPUAP 2019 betont explizit: Fingertest ist bei dunkler Haut weniger zuverlaessig. Alternativ: Beleuchtung mit Taschenlampe im flachen Winkel (Schattenwurf zeigt Schwellung).",
+        sonstBoxB1:
+          "Bei **dunkler Haut** sieht man Roetung schlecht. Dann auf andere Zeichen achten: lila oder graue Farbe, waermere Stelle, Schwellung. Taschenlampe im flachen Winkel hilft.",
+        karteikarte: {
+          vorderseite:
+            "Du inspizierst die Haut von Frau Yilmaz am Sakrum. Nenne die 5 Kriterien der systematischen Hautinspektion und erklaere, wann der Fingertest anwendbar ist.",
+          rueckseite:
+            "5 Kriterien: Farbe, Temperatur, Konsistenz, Integritaet, Feuchtigkeit. Fingertest: nur bei intakter Haut — 3 Sek druecken, bleibt rot = Kategorie I (DNQP 2024). Bei offener Haut (ab Kat. II) nicht mehr anwendbar.\n\nSpektrum: Bauer (Demenz, wehrt Inspektion ab), Petrov (Hemiparese, Neglect), Emilia (Saeugling, Hinterkopf).\n\nFaustregel: **Gutes Licht, 5 Kriterien, Fingertest nur bei intakter Haut.**",
+        },
+      },
+    },
+
     // Step 1.4 — Dialog (2 Phasen): Zimmer betreten
     {
       stepId: "ce02-yilmaz-s2-info-04-zimmer-betreten-dialog",
@@ -182,6 +352,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-yilmaz-s2-info-dialog",
       tag: "pflege",
+      transition: "Frau Yilmaz hat zugestimmt. Mustafa ist informiert. Jetzt: Haut anschauen.",
       contentC1: {
         title: "Zimmer betreten — Frau Yilmaz ansprechen",
         body: "Du betrittst Zimmer 7. Frau Yilmaz sitzt in einem Sessel neben dem Bett — Rollator daneben. Mustafa sitzt ihr gegenüber und hält ihre Hand. Du begrüßt beide.",

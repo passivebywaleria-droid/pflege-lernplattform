@@ -16,6 +16,86 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
   kontextB1:
     "Du hilfst Frau Yilmaz, sich auf die Seite zu legen. Mustafa schaut zu. Du machst das Zimmerlicht und die Bettleuchte an — du brauchst gutes Licht für die Wunde. Die Handlampe nutzt du extra für Details. Du ziehst Handschuhe an. Du schaust dir die Haut am Steißbein an. Was du siehst, ist mehr als eine Rötung.",
   kernSteps: [
+    // Step 2.0b — Inline-Wissen: Dekubitus-Entstehung (Druck + Scherkraefte + Zeit)
+    // Der Schueler soll verstehen WARUM ein Dekubitus entsteht, bevor er die Wunde sieht.
+    // Pathophysiologie: Druck → Ischaemie → Zellschaden. Scherkraefte als Verstaerker.
+    {
+      stepId: "ce02-yilmaz-s2-beob-00b-dekubitus-entstehung",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "NPUAP/EPUAP/PPPIA 2019",
+        "DNQP 2024 — Expertenstandard Dekubitusprophylaxe",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-beob-pathophysiologie",
+      tag: "krankheitslehre",
+      themaPrimaer: "dekubitus-prophylaxe",
+      themenSekundaer: ["haut", "positionierung"],
+      transition: "Jetzt weisst du wie ein Dekubitus entsteht. Schau dir an, was bei Frau Yilmaz passiert ist.",
+      contentC1: {
+        title: "Wie entsteht ein Dekubitus?",
+        body: "",
+        glossarBegriffe: ["Ischaemie", "Scherkraefte", "Reperfusionsschaden", "Gewebehypoxie"],
+      },
+      contentB1: {
+        title: "Warum entsteht ein Dekubitus?",
+        body: "",
+        glossarBegriffe: ["Ischaemie", "Scherkraefte"],
+      },
+      inlineWissen: {
+        bausteinRef: "dekubitus-prophylaxe-entstehung",
+        storyAufhaenger:
+          "Frau Yilmaz liegt seit 14 Tagen ueberwiegend auf dem Ruecken. Ihr Koerpergewicht (BMI 34) drueckt auf das Sakrum — den Knochenvorsprung am unteren Ruecken. Die Haut und das Gewebe dazwischen werden zusammengedrueckt wie ein Schwamm. Was passiert dabei genau?",
+        storyAufhaengerB1:
+          "Frau Yilmaz liegt seit 14 Tagen meist auf dem Ruecken. Ihr Koerpergewicht drueckt auf das Steissbein. Was passiert mit der Haut dabei?",
+        kerntext:
+          "**Das Grundprinzip:** Wenn Gewebe zwischen Knochen und Unterlage laenger als toleriert zusammengedrueckt wird, entsteht **Ischaemie** — die Blutversorgung wird unterbrochen.\n\n**3 Mechanismen wirken zusammen:**\n\n• **Druck** — Das Koerpergewicht presst Haut und Gewebe auf den Knochen. Je hoeher das Gewicht (Adipositas) und je kleiner die Auflageflaeche (Knochenvorsprung), desto hoeher der lokale Druck.\n\n• **Scherkraefte** — Beim Hochrutschen im Bett verschieben sich Hautschichten gegeneinander. Das Gewebe wird nicht nur gedrueckt, sondern auch gezogen. Bei Frau Yilmaz: Scherkraefte beim Transfer und beim Rollator-Gehen.\n\n• **Zeit** — Einzelner Druck schadet wenig. Dauerhafter Druck ueber Stunden toetet Gewebe. Deshalb ist der **Umlagerungsrhythmus** so entscheidend: alle 2 Stunden Druck-Entlastung.\n\n**Bei Frau Yilmaz kamen 4 Verstaerker hinzu:**\nNeuropathie (kein Schmerzsignal), Diabetes (schlechte Durchblutung), Inkontinenz (Mazeration), und die gelegentlich abgelehnte Umlagerung.",
+        kerntextB1:
+          "**Das Grundprinzip:** Wenn die Haut zu lange gedrueckt wird, bekommt sie kein Blut mehr. Das nennt man **Ischaemie**.\n\n**3 Dinge wirken zusammen:**\n\n• **Druck** — Das Koerpergewicht drueckt auf den Knochen. Je schwerer der Mensch, desto mehr Druck.\n\n• **Scherkraefte** — Beim Hochrutschen im Bett wird die Haut gezogen und gedrueckt gleichzeitig.\n\n• **Zeit** — Kurzer Druck ist nicht schlimm. Langer Druck (Stunden) toetet Gewebe. Deshalb: alle 2 Stunden umlagern.\n\n**Bei Frau Yilmaz kam dazu:** Nerven spueren nichts (Neuropathie), Diabetes (schlechte Durchblutung), Feuchtigkeit (Inkontinenz-Pad), und sie wollte manchmal nicht umgelagert werden.",
+        faustregel:
+          "Dekubitus = Druck x Zeit. Scherkraefte und Feuchtigkeit verstaerken den Schaden. Umlagerung bricht die Gleichung.",
+        faustregelB1:
+          "Dekubitus entsteht durch Druck ueber lange Zeit. Umlagern alle 2 Stunden unterbricht den Druck.",
+        spektrum: [
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Immobilitaet durch Demenz",
+            kurzbeschreibung:
+              "Er bewegt sich nachts nicht, weil er nicht versteht, dass er sich drehen muss. Kein Schmerzsignal durch kognitive Einschraenkung — anderer Mechanismus als Neuropathie, gleiches Ergebnis.",
+          },
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Hoher lokaler Druck durch BMI 38",
+            kurzbeschreibung:
+              "Mehr Koerpergewicht = mehr Druck auf Knochenvorspruenge. Standard-Matratzen reichen bei BMI > 35 oft nicht — Schwerlast-Matratze noetig.",
+          },
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Scherkraefte durch Spastik",
+            kurzbeschreibung:
+              "Spastik in der betroffenen Seite erzeugt unkontrollierte Scherkraefte. Er rutscht im Bett, ohne es zu merken. Bobath-Lagerung reduziert Spastik und damit Scherkraefte.",
+          },
+        ],
+        sonstBox:
+          "Der **Reperfusionsschaden**: Wenn nach langer Ischaemie das Blut zurueckkehrt, entsteht paradoxerweise zusaetzlicher Schaden durch freie Sauerstoffradikale. Deshalb ist kurze regelmaessige Entlastung (Mikrobewegungen alle 15-20 Min) besser als seltene grosse Umlagerungen.",
+        sonstBoxB1:
+          "Wenn nach langem Druck das Blut zurueckkommt, kann das Gewebe nochmal geschaedigt werden (Reperfusionsschaden). Deshalb sind kleine Bewegungen zwischendurch auch wichtig — nicht nur die grosse Umlagerung alle 2 Stunden.",
+        karteikarte: {
+          vorderseite:
+            "Erklaere die 3 Mechanismen der Dekubitus-Entstehung am Beispiel von Frau Yilmaz (BMI 34, Sakrum, 14 Tage post-OP).",
+          rueckseite:
+            "1) Druck: Koerpergewicht (BMI 34) auf Sakrum (Knochenvorsprung). 2) Scherkraefte: Verschiebung der Hautschichten beim Transfer/Hochrutschen. 3) Zeit: 14 Tage ueberwiegend Rueckenlage, gelegentlich Umlagerung abgelehnt.\n\nVerstaerker: Neuropathie (kein Schmerzsignal), Diabetes (Mikrozirkulation), Inkontinenz (Mazeration).\n\nSpektrum: Bauer (Demenz-Immobilitaet), Schmidt (BMI 38), Petrov (Spastik-Scherkraefte).\n\nFaustregel: **Dekubitus = Druck x Zeit. Umlagerung bricht die Gleichung.**",
+        },
+      },
+    },
+
     // Step 2.1 — Hotspot: Wunde sehen (BRILLIANT-Frage)
     {
       stepId: "ce02-yilmaz-s2-beob-01-wunde-sehen",
@@ -281,6 +361,67 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
             ],
           },
         ],
+      },
+    },
+
+    // Step 2.3b — Inline-Wissen: Braden-Skala (Wiederbegegnung aus Spirale 1)
+    // In Spirale 1 wurde die Braden-Skala eingefuehrt. Hier kompakte Wiederbegegnung
+    // mit situationsspezifischer Vertiefung: Was hat sich seit Aufnahme veraendert?
+    {
+      stepId: "ce02-yilmaz-s2-beob-03b-braden-wiederbegegnung",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Braden B.J., Bergstrom N. (1987)",
+        "DNQP 2024 — Expertenstandard Dekubitusprophylaxe",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-beob-braden-wiederbegegnung",
+      tag: "krankheitslehre",
+      themaPrimaer: "dekubitus-prophylaxe",
+      themenSekundaer: ["haut"],
+      transition: "Frisch im Kopf? Dann fuell die Braden-Skala fuer Frau Yilmaz heute aus.",
+      contentC1: {
+        title: "Braden-Skala — Erinnerung aus Spirale 1",
+        body: "",
+        glossarBegriffe: ["Braden-Skala", "Subskala"],
+      },
+      contentB1: {
+        title: "Braden-Skala — kennst du noch?",
+        body: "",
+        glossarBegriffe: ["Braden-Skala"],
+      },
+      inlineWissen: {
+        bausteinRef: "dekubitus-prophylaxe-braden-skala",
+        wiederbegegnung: {
+          basisBausteinId: "dekubitus-prophylaxe-braden-skala",
+          basisPatient: "Frau Yilmaz (Spirale 1)",
+          vertiefung:
+            "In Spirale 1 hast du die Braden-Skala bei Aufnahme ausgefuellt: Score 13 (maessiges Risiko). Heute, 14 Tage spaeter, hat sich der Score kaum veraendert — aber ein Dekubitus Kategorie II ist trotzdem entstanden. Das zeigt: Die Braden-Skala misst Risiko, nicht Ergebnis. Ein Score von 13-14 heisst nicht \"sicher\", sondern \"Prophylaxe ist Pflicht\". Wenn die Prophylaxe lueckenhaft durchgefuehrt wird, entsteht trotz moderatem Score ein Dekubitus.",
+          vertiefungB1:
+            "In Spirale 1 hast du die Braden-Skala ausgefuellt: Score 13 (mittleres Risiko). Heute nach 14 Tagen: Der Score ist aehnlich — aber trotzdem ist eine Wunde entstanden. Das zeigt: Ein mittlerer Score bedeutet nicht \"alles gut\". Es bedeutet: Prophylaxe muss gemacht werden. Wenn sie nicht gemacht wird, passiert genau das.",
+        },
+        storyAufhaenger:
+          "Du sollst gleich die Braden-Skala fuer Frau Yilmaz heute ausfuellen. Erinnerst du dich an die 6 Subskalen? Kurze Auffrischung, bevor du die Tabelle ausfuellst.",
+        storyAufhaengerB1:
+          "Gleich fuellst du die Braden-Skala fuer heute aus. Kurze Erinnerung: Was war die Braden-Skala nochmal?",
+        kerntext:
+          "Die **Braden-Skala** (Braden & Bergstrom 1987) ist das am haeufigsten verwendete Instrument zur Einschaetzung des Dekubitusrisikos im deutschsprachigen Raum.\n\n**6 Subskalen, je 1-4 Punkte:**\n\n• **Sensorisches Empfinden** — Kann der Patient Druck spueren?\n\n• **Feuchtigkeit** — Wie oft ist die Haut feucht?\n\n• **Aktivitaet** — Wie viel bewegt sich der Patient (Bett, Stuhl, Gehen)?\n\n• **Mobilitaet** — Kann er seine Position selbst aendern?\n\n• **Ernaehrung** — Isst er ausreichend?\n\n• **Reibung/Scherkraefte** — Rutscht er beim Bewegen?\n\n**Gesamtscore 6-23:** Je niedriger, desto hoeher das Risiko.\n• ≤ 12 = hohes Risiko\n• 13-14 = maessiges Risiko\n• 15-18 = geringes Risiko\n• > 18 = kein erhoehtes Risiko",
+        kerntextB1:
+          "Die **Braden-Skala** misst das Dekubitus-Risiko.\n\n**6 Punkte werden bewertet:**\n\n• Kann der Patient Druck spueren?\n• Wie oft ist die Haut feucht?\n• Wie viel bewegt er sich?\n• Kann er sich selbst drehen?\n• Isst er genug?\n• Rutscht er beim Bewegen?\n\n**Jeder Punkt: 1-4.** Alle zusammen = Gesamtscore (6-23).\n\n• 12 oder weniger = hohes Risiko\n• 13-14 = mittleres Risiko\n• 15-18 = geringes Risiko\n• Ueber 18 = kein erhoehtes Risiko",
+        faustregel:
+          "Braden ≤ 14 = Prophylaxe ist Pflicht. Aber: Ein moderater Score schuetzt nicht — nur konsequente Massnahmen tun es.",
+        faustregelB1:
+          "Braden 14 oder weniger = Prophylaxe ist Pflicht. Aber auch mit mittlerem Risiko kann ein Dekubitus entstehen.",
+        karteikarte: {
+          vorderseite:
+            "Frau Yilmaz hat Braden-Score 14 (maessiges Risiko). Trotzdem ist ein Dekubitus Kat. II entstanden. Was sagt das ueber die Braden-Skala?",
+          rueckseite:
+            "Die Braden-Skala misst Risiko, nicht Ergebnis. Score 13-14 = maessiges Risiko = Prophylaxe ist Pflicht. Wenn Prophylaxe lueckenhaft (Schichtausfall, Ablehnung, fehlende Dokumentation), entsteht Dekubitus trotz moderatem Score.\n\n6 Subskalen: Sensorik, Feuchtigkeit, Aktivitaet, Mobilitaet, Ernaehrung, Reibung/Scherkraefte. Score 6-23 (niedriger = hoeher Risiko).\n\nFaustregel: **Braden ≤ 14 = Prophylaxe Pflicht. Nur konsequente Massnahmen schuetzen.**",
+        },
       },
     },
 

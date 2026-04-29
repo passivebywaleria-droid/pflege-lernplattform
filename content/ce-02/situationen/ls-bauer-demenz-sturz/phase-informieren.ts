@@ -50,6 +50,103 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       },
     },
 
+    // Step 1.1b — Inline-Wissen: Sturz bei Demenz (Wiederbegegnung)
+    // Sturz-Definition wurde zentral bei Frau M. gelehrt. Hier: Wiederbegegnung mit
+    // Demenz-spezifischer Vertiefung — Herr Bauer stuerzt NICHT aus denselben Gruenden
+    // wie Frau M. (Parkinson), sondern aus kognitiver Verwirrung + Sundowning.
+    {
+      stepId: "ce02-bauer-info-01b-sturz-bei-demenz",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP 2022 — Expertenstandard Sturzprophylaxe",
+        "DNQP 2018 — Beziehungsgestaltung bei Demenz",
+        "DGN 2024 — S3-LL Demenzen",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-info-sturz-demenz",
+      tag: "pflege",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["basale-stimulation"],
+      transition: "Du weißt jetzt: Sturz bei Demenz ist anders. Was steht in der Uebergabe — und was fehlt?",
+      contentC1: {
+        title: "Sturz bei Demenz — was ist hier anders?",
+        body: "",
+        glossarBegriffe: ["Sundowning", "Desorientierung", "Weglauftendenz"],
+      },
+      contentB1: {
+        title: "Warum stuerzt Herr Bauer?",
+        body: "",
+        glossarBegriffe: ["Sundowning", "Desorientierung"],
+      },
+      inlineWissen: {
+        bausteinRef: "sturz-prophylaxe-sturz-bei-demenz",
+        wiederbegegnung: {
+          basisBausteinId: "sturz-prophylaxe-was-ist-ein-sturz",
+          basisPatient: "Frau M.",
+          vertiefung:
+            "Sturz-Definition kennst du von Frau M. — bei Herrn Bauer kommt ein entscheidender Faktor hinzu: **kognitive Desorientierung**. Er stuerzt nicht weil er stolpert, sondern weil er nicht weiß wo er ist. Nachts steht er auf, glaubt er muss zur Arbeit, findet die Tuer nicht und stuerzt auf dem Flur. Das nennt man **Sundowning** — naechtliche Verwirrtheit und Unruhe, die bei Alzheimer-Demenz ab FAST 5-6 haeufig ist (DGN 2024).",
+          vertiefungB1:
+            "Sturz kennst du schon von Frau M. Bei Herrn Bauer ist es anders: Er stuerzt nicht weil er stolpert. Er weiß nachts nicht wo er ist. Er steht auf und will zur Arbeit. Das nennt man **Sundowning** — naechtliche Verwirrtheit bei Demenz.",
+        },
+        storyAufhaenger:
+          "Herr Bauer ist letzte Nacht im Flur gestuerzt. Aber sein Sturz ist anders als der von Frau M. — Frau M. ist gestolpert, Herr Bauer wusste gar nicht wo er war. Was macht Stuerze bei Demenz so besonders?",
+        storyAufhaengerB1:
+          "Herr Bauer ist nachts gestuerzt. Aber nicht wie Frau M. — er ist nicht gestolpert. Er wusste nicht wo er war. Was macht Stuerze bei Demenz anders?",
+        kerntext:
+          "Bei Demenz-Patienten sind **kognitive Faktoren** oft wichtiger als koerperliche:\n\n**Demenz-spezifische Sturzrisiken (DNQP 2022 + DGN 2024):**\n\n• **Sundowning** — naechtliche Unruhe, Desorientierung, Weglauftendenz. Herr Bauer steht nachts auf weil er glaubt in die Werkstatt zu muessen.\n\n• **Fehlende Gefahrenwahrnehmung** — er erkennt Hindernisse nicht als Risiko.\n\n• **Apraxie** — Bewegungsplanung gestoert: er will aufstehen, aber die Reihenfolge der Bewegungen gelingt nicht.\n\n• **Medikamente** — Mirtazapin (dosisabhaengige Sedierung, PRISCUS-Liste) verstaerkt naechtliche Gangunsicherheit.\n\n**Sturzschutz bei Demenz ist deshalb anders:**\n\nNicht Bettgitter (= Fixierung, rechtlich problematisch), sondern: Niedrigbett, Sensormatte, Nachtlicht, Toilettenangebot vor dem Schlafengehen, Validation statt Korrektur.",
+        kerntextB1:
+          "Bei Demenz sind **Kopf-Gruende** oft wichtiger als Koerper-Gruende:\n\n• **Sundowning** — nachts verwirrt, steht auf, will raus.\n\n• **Keine Gefahr erkennen** — er sieht Hindernisse nicht als Risiko.\n\n• **Bewegungsplanung gestoert** — er will aufstehen, aber die Bewegung klappt nicht richtig.\n\n• **Medikamente** — sein Schlafmittel (Mirtazapin) macht ihn unsicher auf den Beinen.\n\n**Sturzschutz bei Demenz:** Nicht Bettgitter (verboten ohne Genehmigung), sondern: Bett niedrig stellen, Licht nachts an, Toilette vor dem Schlafen anbieten.",
+        faustregel:
+          "Demenz-Stuerze sind keine Stolper-Stuerze — sie sind Orientierungs-Stuerze. Der Schutz liegt in Beziehung, nicht in Barrieren.",
+        faustregelB1:
+          "Herr Bauer stuerzt nicht weil er stolpert. Er stuerzt weil er nicht weiß wo er ist. Schutz: Licht, Beziehung, keine Gitter.",
+        spektrum: [
+          {
+            patientName: "Frau M.",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "Parkinson + Pneumonie",
+            kurzbeschreibung:
+              "Bei Frau M. waren koerperliche Faktoren der Hauptgrund: Bradykinese, Rigor, akute Schwaeche durch Pneumonie. Ihr Sturz ist ein klassischer \"Stolper-Sturz\" — sie wollte zur Toilette und hat es nicht geschafft.",
+          },
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP, Hueft-TEP",
+            kurzbeschreibung:
+              "Bei ihr ist der Sturz situationsbedingt: frische Operation, Bewegungseinschraenkung, Angst vor Belastung. Sie weiß wo sie ist — aber der Koerper macht nicht mit.",
+          },
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Hemiparese + Neglect",
+            kurzbeschreibung:
+              "Tag 5 nach Apoplex: Er uebersieht Hindernisse auf der betroffenen Seite (Neglect). Sein Sturz ist raeumlich-sensorisch — er nimmt die rechte Seite nicht wahr.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "Ambulant, Stolperfallen zuhause",
+            kurzbeschreibung:
+              "Sie wohnt allein. Ihr Sturzrisiko kommt von der Umgebung: Teppiche, Kabel, schlecht beleuchteter Flur. Kognition intakt — Umfeld unsicher.",
+          },
+        ],
+        sonstBox:
+          "Demenz-spezifische Sturz-Assessments: **Tinetti-Test** und **TUG (Timed Up and Go)** koennen bei FAST 5-6 nur eingeschraenkt angewendet werden — Instruktionen werden nicht verstanden. Stattdessen: **Verhaltensbeobachtung** ueber 24h-Protokoll (naechtliches Aufstehen, Weglauftendenz, Apathie-Phasen). Details in CE-02 Thema sturz-prophylaxe.",
+        sonstBoxB1:
+          "Sturz-Tests wie der Tinetti-Test funktionieren bei schwerer Demenz oft nicht — weil die Anweisungen nicht verstanden werden. Stattdessen: 24 Stunden beobachten und aufschreiben wann er aufsteht, wann er unruhig ist, wann er versucht wegzulaufen.",
+        karteikarte: {
+          vorderseite:
+            "Herr Bauer (82, Demenz FAST 6a) ist nachts im Flur gestuerzt. Warum ist sein Sturzrisiko anders als bei Frau M. (Parkinson)?",
+          rueckseite:
+            "Frau M. stuerzt koerperlich (Bradykinese, Rigor, Pneumonie). Herr Bauer stuerzt **kognitiv**: Sundowning (naechtliche Verwirrtheit), Desorientierung, Weglauftendenz, fehlende Gefahrenwahrnehmung + Mirtazapin-Sedierung (PRISCUS). Schutz bei Demenz: Niedrigbett, Sensormatte, Nachtlicht, Toilettenangebot, Validation. **NICHT Bettgitter** (= Fixierung ohne richterliche Genehmigung). Faustregel: **Demenz-Stuerze sind Orientierungs-Stuerze, keine Stolper-Stuerze.**",
+        },
+      },
+    },
+
     // Step 1.2 — Kategorisieren: Was weiß ich, was fehlt?
     {
       stepId: "ce02-bauer-info-02-was-fehlt",
@@ -92,6 +189,94 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
           { text: "Geburtsdatum von Herrn Bauer", correctCategory: 2 },
           { text: "Diagnose der Alzheimer-Demenz", correctCategory: 0 },
         ],
+      },
+    },
+
+    // Step 1.2b — Inline-Wissen: Basale Stimulation — Erstkontakt bei Demenz
+    // Herr Bauer lehnt Pflege ab wenn er sie nicht versteht. Basale Stimulation
+    // bietet nonverbale Kontaktaufnahme. Dieser Baustein erklaert die Grundidee
+    // BEVOR der Schueler in den Dialog (1.4) geht.
+    {
+      stepId: "ce02-bauer-info-02b-basale-stimulation-einfuehrung",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 1,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Bienstein C./Froehlich A. (2021): Basale Stimulation in der Pflege",
+        "Froehlich A. (2023): Basale Stimulation — Das Konzept. 10. Aufl.",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-info-basale-stimulation-konzept",
+      tag: "pflege",
+      themaPrimaer: "basale-stimulation",
+      themenSekundaer: ["ganzkörperpflege"],
+      transition: "Basale Stimulation ist der Schluessel. Jetzt: Wie oeffnest du die Tuer?",
+      contentC1: {
+        title: "Basale Stimulation — Kontakt wenn Worte nicht reichen",
+        body: "",
+        glossarBegriffe: ["Basale Stimulation", "somatisch", "vestibulär", "vibratorisch"],
+      },
+      contentB1: {
+        title: "Was ist Basale Stimulation?",
+        body: "",
+        glossarBegriffe: ["Basale Stimulation"],
+      },
+      inlineWissen: {
+        bausteinRef: "basale-stimulation-grundkonzept",
+        storyAufhaenger:
+          "Gleich oeffnest du die Tuer zu Herrn Bauer. Er ist aufgewuehlt, verwirrt, vielleicht aggressiv. Du kannst ihm nicht erklaeren was du vorhast — er versteht deine Worte nur bruchstueckhaft. Aber sein Koerper versteht Beruehrungen. Das ist die Grundidee der Basalen Stimulation.",
+        storyAufhaengerB1:
+          "Du gehst gleich zu Herrn Bauer. Er ist aufgeregt und verwirrt. Worte versteht er nur wenig. Aber Beruehrungen versteht sein Koerper. Das nennt man Basale Stimulation.",
+        kerntext:
+          "**Basale Stimulation** (Froehlich 1978, Bienstein/Froehlich 2021) arbeitet ueber drei Sinneskanäle die auch bei schwerer Demenz intakt bleiben:\n\n**Die drei Grundbereiche:**\n\n• **Somatisch** — Beruehrung der Hautoberflaeche. Bei Herrn Bauer: fester, ruhiger Haendedruck, Streichung des Unterarms in Haarwuchsrichtung. Wichtig: **Initialberuehrung** immer an der gleichen Stelle (z. B. Schulter) — das schafft Wiedererkennung.\n\n• **Vestibulär** — Gleichgewichtssinn ansprechen. Langsames, rhythmisches Wiegen im Sitzen, Kopfhaltung aendern. Bei Demenz vorsichtig dosieren.\n\n• **Vibratorisch** — Erschuetterungen spueren. Summen (Vibrationen im Brustkorb), Klopfen auf Matratze, Stimmgabel an der Hand.\n\n**Warum funktioniert das?**\n\nDiese drei Kanäle sind die **aeltesten Sinneswahrnehmungen** des Menschen — sie entwickeln sich schon im Mutterleib (praenatal). Auch wenn Sprache und Gedaechtnis versagen, reagiert der Koerper auf basale Reize. Herr Bauer erinnert sich nicht an deinen Namen — aber er erinnert sich an den ruhigen Haendedruck von heute Morgen.",
+        kerntextB1:
+          "**Basale Stimulation** arbeitet ueber drei Sinne die auch bei schwerer Demenz funktionieren:\n\n• **Beruehrung** — fester, ruhiger Haendedruck. Immer an der gleichen Stelle anfangen (z. B. Schulter). So erkennt er dich wieder.\n\n• **Gleichgewicht** — langsames Wiegen im Sitzen.\n\n• **Vibrationen** — leises Summen, das er in der Brust spuert.\n\n**Warum funktioniert das?**\n\nDiese drei Sinne sind die aeltesten im Koerper. Sie entstehen schon vor der Geburt. Auch wenn Herr Bauer deinen Namen vergisst — seinen Koerper erreicht dein ruhiger Haendedruck.",
+        faustregel:
+          "Sprache vergisst der Mensch. Beruehrung vergisst der Koerper nie.",
+        faustregelB1:
+          "Worte vergisst der Mensch mit Demenz. Beruehrung vergisst der Koerper nicht.",
+        spektrum: [
+          {
+            patientName: "Frau M.",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "Parkinson — Koerperschema gestoert",
+            kurzbeschreibung:
+              "Bei Frau M. hilft somatische Stimulation beim Transfer (Boden nach Bett): fester Griff am Becken gibt ihr das Gefuehl, wo ihr Koerper im Raum ist — wichtig bei Parkinson-bedingter Koerperschema-Stoerung.",
+          },
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Hemiparese + Neglect",
+            kurzbeschreibung:
+              "Bei Hemiparese-Patienten nach Schlaganfall wird die betroffene Seite gezielt basalstimuliert — damit das Gehirn die 'vergessene' Koerperhaelfte wieder wahrnimmt (somatische Stimulation der Neglect-Seite).",
+          },
+          {
+            patientName: "Emilia (Saeugling)",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Saeugling, Bronchiolitis",
+            kurzbeschreibung:
+              "Basale Stimulation wurde urspruenglich fuer Kinder mit schwerer Behinderung entwickelt (Froehlich 1978). Bei Emilia: Haendchen halten, gleichmaessiges Wiegen, beruhigende Stimmvibration — die drei Grundbereiche sind von Geburt an wirksam.",
+          },
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP Angst + Schmerz",
+            kurzbeschreibung:
+              "Nach Hueft-TEP: vibratorische Stimulation (Stimmgabel, Klopfen) hilft bei der Wahrnehmung des operierten Beins. Somatische Stimulation reduziert post-OP-Angst bei Erstmobilisation.",
+          },
+        ],
+        sonstBox:
+          "Andreas Froehlich entwickelte Basale Stimulation 1978 fuer Kinder mit schwerer Mehrfachbehinderung. Christel Bienstein uebertrug das Konzept ab 1991 auf die Pflege alter Menschen. Heute ist es Standard in Demenzpflege, Intensivmedizin, Palliativcare und Neonatologie. Fortbildung: zertifizierte Basale-Stimulation-Kurse nach dem Internationalen Foerderverein Basale Stimulation e.V.",
+        sonstBoxB1:
+          "Basale Stimulation wurde 1978 von Andreas Froehlich fuer Kinder mit schwerer Behinderung erfunden. Christel Bienstein hat es ab 1991 fuer alte Menschen angepasst. Heute nutzt man es in der Demenz-Pflege, auf Intensivstationen und in der Sterbebegleitung.",
+        karteikarte: {
+          vorderseite:
+            "Herr Bauer (82, Demenz FAST 6a) ist aufgewuehlt und versteht deine Worte kaum. Wie erreichst du ihn trotzdem?",
+          rueckseite:
+            "Basale Stimulation nach Bienstein/Froehlich (2021) — drei Grundbereiche: **Somatisch** (fester Haendedruck, Initialberuehrung an gleicher Stelle), **Vestibulaer** (langsames Wiegen), **Vibratorisch** (Summen, Klopfen). Funktioniert bei schwerer Demenz weil diese drei Kanäle praenatal angelegt sind und auch bei Verlust von Sprache + Gedaechtnis intakt bleiben. Spektrum: Frau M. (Koerperschema), Petrov (Neglect-Seite), Emilia (Saeugling), Yilmaz (post-OP-Angst). Faustregel: **Sprache vergisst der Mensch. Beruehrung vergisst der Koerper nie.**",
+        },
       },
     },
 

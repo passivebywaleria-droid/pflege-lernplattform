@@ -1,6 +1,6 @@
 // CE-02 Situation Frau Schmidt — Phase 1: Informieren & Ankommen
-// Steps: 5 · Bloom: B2–B3 · Zeit: ~15–25 Min
-// Quelle: phase-informieren.md
+// Steps: 5 + 2 Inline-Wissen · Bloom: B1–B3 · Zeit: ~20–30 Min
+// Quelle: phase-informieren.md + inline-wissen-generator
 
 import type { SituationsPhase } from "../../../_types";
 
@@ -45,6 +45,94 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
         fallbezug:
           "Frau Schmidt ist 68 Jahre alt. Sie ist seit 3 Tagen im Krankenhaus. Du bist Schülerin im Frühdienst.",
         glossarBegriffe: ["NRS 2002", "Albumin", "Wagner-Armstrong-Klassifikation"],
+      },
+    },
+
+    // Step 1.1b — Inline-Wissen: NRS-2002 Ernährungsscreening
+    // Schüler hat gerade die SBAR-Übergabe gelesen (Step 1.1) und NRS-2002-Score 1 gesehen.
+    // Bevor er die Selbsteinschätzung gibt, klärt dieser Baustein: Was ist NRS-2002 überhaupt?
+    // Das Verständnis wird in Phase 2 (Step 2.3 Categorize) direkt angewendet.
+    {
+      stepId: "ce02-schmidt-info-01b-nrs2002-screening",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 1,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Kondrup J. et al. (2003): NRS 2002 — ESPEN Guidelines for Nutritional Screening",
+        "DNQP (2017): Expertenstandard Ernährungsmanagement zur Sicherstellung und Förderung der oralen Ernährung",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-schmidt-info-nrs2002",
+      tag: "pflege",
+      themaPrimaer: "ernaehrungsassessment",
+      themenSekundaer: ["ernaehrungsgrundlagen"],
+      transition: "NRS-2002 liefert eine Zahl. Aber wie sicher bist du selbst im Umgang mit Adipositas und Ernährung?",
+      contentC1: {
+        title: "NRS 2002 — das Screening-Werkzeug aus der Übergabe",
+        body: "",
+        glossarBegriffe: ["NRS 2002", "Ernährungsscreening", "ESPEN"],
+      },
+      contentB1: {
+        title: "Was ist NRS 2002?",
+        body: "",
+        glossarBegriffe: ["NRS 2002", "Ernährungsscreening"],
+      },
+      inlineWissen: {
+        bausteinRef: "ernaehrungsassessment-nrs-2002",
+        storyAufhaenger:
+          "In der Übergabe stand: \"NRS-2002-Score 1\". Das klingt nach wenig. Aber was genau bedeutet NRS 2002 — und warum reicht ein niedriger Score bei Frau Schmidt trotzdem nicht aus, um Entwarnung zu geben?",
+        storyAufhaengerB1:
+          "In der Übergabe stand: \"NRS-2002-Score 1\". Was ist NRS 2002? Und warum bedeutet Score 1 bei Frau Schmidt trotzdem nicht \"alles okay\"?",
+        kerntext:
+          "Das **NRS 2002 (Nutritional Risk Screening)** ist das Standard-Screening-Werkzeug der ESPEN (Kondrup 2003). Es wird bei **jeder stationären Aufnahme** innerhalb von 24 Stunden durchgeführt.\n\n**3 Achsen werden geprüft:**\n\n• **Ernährungsstatus** (0-3 Punkte) — BMI, Gewichtsverlust in den letzten 3 Monaten, Nahrungsaufnahme letzte Woche.\n\n• **Erkrankungsschwere** (0-3 Punkte) — je schwerer die Erkrankung, desto höher der Nährstoffbedarf.\n\n• **Alter ≥ 70 Jahre** — automatisch +1 Punkt (erhöhte Vulnerabilität).\n\n**Schwellenwert: ≥ 3 Punkte** = Ernährungsintervention indiziert.\n\n**Achtung bei Frau Schmidt:** NRS-Score 1, weil BMI 38 (kein Untergewicht!), kein Gewichtsverlust, Nahrungsaufnahme unverändert. Aber NRS erkennt eine versteckte Mangelernährung bei Adipositas NICHT zuverlässig — dafür braucht es die nachgelagerte GLIM-Diagnostik.",
+        kerntextB1:
+          "**NRS 2002** ist ein Test-Werkzeug. Es prüft: Ist ein Patient in Gefahr, schlecht ernährt zu sein?\n\n**3 Punkte werden geprüft:**\n\n• **Ernährungs-Zustand** — Wie ist das Gewicht? Hat der Patient abgenommen? Isst er genug?\n\n• **Krankheits-Schwere** — Je kränker, desto mehr Nährstoffe braucht der Körper.\n\n• **Alter über 70** — Ältere Menschen bekommen automatisch 1 Punkt mehr.\n\n**Ab 3 Punkte:** Ernährungs-Hilfe ist nötig.\n\n**Bei Frau Schmidt:** Score 1. Klingt gut — ist es aber nicht. NRS erkennt versteckten Eiweiß-Mangel bei Übergewicht NICHT. Dafür gibt es einen anderen Test: GLIM.",
+        faustregel:
+          "NRS 2002 ist das Screening, nicht die Diagnose. Ein niedriger Score schließt Mangelernährung bei Adipositas NICHT aus.",
+        faustregelB1:
+          "NRS 2002 ist nur der erste Test. Ein niedriger Score heißt bei Übergewicht NICHT: alles okay.",
+        spektrum: [
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Dysphagie + reduzierte Nahrungsaufnahme",
+            kurzbeschreibung:
+              "Nach Schlaganfall kann er kaum schlucken. Nahrungsaufnahme um 75 % reduziert. NRS-Score 4 — Ernährungsintervention sofort indiziert. Bei ihm ist NRS aussagekräftig, weil Untergewicht + reduzierte Zufuhr klar messbar sind.",
+          },
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP Katabolismus",
+            kurzbeschreibung:
+              "Nach Hüft-TEP: Erkrankungsschwere 2-3, Appetitlosigkeit, Alter 74 = +1 Punkt. NRS-Score oft ≥ 3. Proteinbedarf steigt post-OP auf 1,5 g/kg/Tag.",
+          },
+          {
+            patientName: "Herr Nguyen",
+            situationsId: "ls-nguyen-stoma",
+            hauptfaktor: "Stoma + gestörte Resorption",
+            kurzbeschreibung:
+              "Nach Kolon-OP mit Stoma: hoher Flüssigkeits- und Elektrolytverlust. NRS fängt die Resorptionsstörung als Erkrankungsschwere ein — Score ≥ 3.",
+          },
+          {
+            patientName: "Emilia (Säugling)",
+            situationsId: "ls-emilia-saeugling",
+            hauptfaktor: "Pädiatrisches Screening",
+            kurzbeschreibung:
+              "Bei Kindern wird NICHT NRS 2002 verwendet, sondern **STRONGkids** oder **STAMP**. NRS 2002 ist nur für Erwachsene validiert.",
+          },
+        ],
+        sonstBox:
+          "Weitere Screening-Werkzeuge neben NRS 2002: **MNA (Mini Nutritional Assessment)** — speziell für geriatrische Patienten ≥ 65, umfasst auch Mobilität und Kognition. **MUST (Malnutrition Universal Screening Tool)** — für ambulante Settings. **SGA (Subjective Global Assessment)** — Experten-Assessment, kein Score-basiertes Screening.",
+        sonstBoxB1:
+          "Andere Test-Werkzeuge: **MNA** — für ältere Patienten (ab 65). **MUST** — für Patienten zuhause. **SGA** — für Experten. NRS 2002 wird im Krankenhaus bei Erwachsenen verwendet.",
+        karteikarte: {
+          vorderseite:
+            "Bei Frau Schmidt (BMI 38, Albumin 31 g/l) ergibt NRS 2002 nur 1 Punkt. Reicht das als Entwarnung?",
+          rueckseite:
+            "Nein. NRS 2002 erkennt versteckte Mangelernährung bei Adipositas nicht zuverlässig — Schwelle ≥ 3 greift nicht, weil BMI hoch + kein Gewichtsverlust. Nachgelagerte GLIM-Diagnostik nötig.\n\nSpektrum: Petrov (Dysphagie, NRS 4), Yilmaz (post-OP, NRS ≥ 3), Nguyen (Stoma, NRS ≥ 3), Emilia (Kinder: STRONGkids, nicht NRS).\n\nFaustregel: **NRS 2002 ist das Screening, nicht die Diagnose.**",
+        },
       },
     },
 
@@ -139,6 +227,87 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
               "Falsch. Mündlich allein reicht nicht — du musst auch im System lesen. Beide Quellen zusammen sind sicher.",
           },
         ],
+      },
+    },
+
+    // Step 1.3b — Inline-Wissen: BMI-Berechnung und Adipositas-Grade
+    // Schüler hat in Step 1.1 BMI 38 gelesen und in Step 1.3 die SBAR-Prioritäten sortiert.
+    // Bevor er Frau Schmidt im Dialog (Step 1.4) begegnet, soll er wissen: Was bedeutet BMI 38
+    // konkret? Und warum ist Adipositas Grad II pflegerisch relevant?
+    {
+      stepId: "ce02-schmidt-info-03b-bmi-adipositas",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "WHO (2000): Obesity — Preventing and Managing the Global Epidemic",
+        "DAG (2014): S3-Leitlinie Adipositas — Prävention und Therapie",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-schmidt-info-bmi-grade",
+      tag: "krankheitslehre",
+      themaPrimaer: "ernaehrungsassessment",
+      themenSekundaer: ["ernaehrungsgrundlagen"],
+      transition: "BMI 38, Grad II. Du weißt jetzt was das bedeutet. Jetzt klopfst du an.",
+      contentC1: {
+        title: "BMI 38 — was bedeutet das für Frau Schmidt?",
+        body: "",
+        glossarBegriffe: ["BMI", "Adipositas", "Body-Mass-Index"],
+      },
+      contentB1: {
+        title: "Was bedeutet BMI 38?",
+        body: "",
+        glossarBegriffe: ["BMI", "Adipositas"],
+      },
+      inlineWissen: {
+        bausteinRef: "ernaehrungsassessment-bmi-kategorien",
+        storyAufhaenger:
+          "In der Übergabe stand: \"BMI 38, Adipositas Grad II.\" Du weißt, dass BMI etwas mit Gewicht und Größe zu tun hat. Aber was genau bedeutet Grad II — und warum ist das für deine Pflege heute relevant?",
+        storyAufhaengerB1:
+          "In der Übergabe stand: \"BMI 38\". Was heißt das genau? Und warum ist das für die Pflege wichtig?",
+        kerntext:
+          "Der **BMI (Body-Mass-Index)** berechnet sich aus **Gewicht (kg) geteilt durch Größe (m) zum Quadrat** (WHO 2000).\n\nFrau Schmidt: 98 kg bei 1,60 m = 98 / (1,60 x 1,60) = 98 / 2,56 = **38,3**.\n\n**WHO-Klassifikation:**\n\n• BMI 18,5–24,9 = Normalgewicht\n\n• BMI 25,0–29,9 = Übergewicht\n\n• BMI 30,0–34,9 = **Adipositas Grad I**\n\n• BMI 35,0–39,9 = **Adipositas Grad II** (Frau Schmidt)\n\n• BMI ≥ 40,0 = **Adipositas Grad III** (Adipositas per magna)\n\n**Pflegerische Konsequenzen bei Grad II:**\n\n• Belastungsgrenze beachten — Bett, Rollstuhl, Toilettenstuhl (Maximalgewicht prüfen!)\n\n• Hautfalten-Pflege — Intertrigo-Risiko in allen Falten\n\n• Mobilisation — Sturzrisiko erhöht (Polyneuropathie + Körperschwerpunkt)\n\n• Würde — das Gespräch über Gewicht ist für Patient(inn)en belastend. Stigmatisierung vermeiden.",
+        kerntextB1:
+          "Der **BMI** zeigt, ob jemand Normal-Gewicht, Übergewicht oder Adipositas hat.\n\n**So rechnet man:** Gewicht (kg) geteilt durch Größe (m) mal Größe (m).\n\nFrau Schmidt: 98 kg, 1,60 m groß. 98 geteilt durch 2,56 = **38**.\n\n**Was die Zahlen bedeuten:**\n\n• BMI 18,5–24,9 = Normal-Gewicht\n\n• BMI 25–29,9 = Übergewicht\n\n• BMI 30–34,9 = Adipositas Grad I\n\n• BMI 35–39,9 = **Adipositas Grad II** (= Frau Schmidt)\n\n• BMI ab 40 = Adipositas Grad III\n\n**Für die Pflege heißt das:**\n\n• Bett und Stuhl prüfen — halten sie das Gewicht?\n\n• Haut-Falten pflegen — Gefahr von Intertrigo\n\n• Vorsichtig über das Thema sprechen — Frau Schmidt fühlt sich schnell verurteilt",
+        faustregel:
+          "BMI ist eine Zahl, kein Urteil. Pflegerisch zählt: Belastungsgrenzen, Hautfalten, Würde.",
+        faustregelB1:
+          "BMI zeigt den Grad des Übergewichts. Für die Pflege wichtig: Bett-Grenze, Haut-Falten, kein Verurteilen.",
+        spektrum: [
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Kachexie-Risiko nach Apoplex",
+            kurzbeschreibung:
+              "BMI 21 — noch Normalgewicht, aber Dysphagie führt schnell zu Gewichtsverlust. Bei ihm ist BMI-Monitoring ein Frühwarnsignal Richtung Untergewicht, nicht Übergewicht.",
+          },
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "BMI und OP-Risiko",
+            kurzbeschreibung:
+              "BMI 28 — Übergewicht, kein Adipositas-Grad. Aber: OP-Risiko erhöht ab BMI > 30 (Wundheilungsstörung, Thrombose). Ihr BMI liegt knapp darunter.",
+          },
+          {
+            patientName: "Frau Kovac",
+            situationsId: "ls-kovac-ambulant",
+            hauptfaktor: "Ungewollter Gewichtsverlust",
+            kurzbeschreibung:
+              "BMI 19 — am unteren Normalrand. COPD-bedingte Katabolie. Bei ihr ist der BMI-Trend abwärts das Problem, nicht der Absolutwert.",
+          },
+        ],
+        sonstBox:
+          "BMI hat Grenzen: Bei Amputierten muss korrigiert werden (Stumpflänge). Bei Ödemen/Aszites ist BMI verfälscht (Wassergewicht). Bei Bodybuildern zeigt BMI \"Übergewicht\" obwohl Muskelmasse gemeint ist. Deshalb wird BMI im klinischen Setting IMMER zusammen mit klinischem Blick, Umfangsmessung (Waist-to-Hip-Ratio) und Labor interpretiert.",
+        sonstBoxB1:
+          "BMI stimmt nicht immer: Bei fehlendem Arm oder Bein muss anders gerechnet werden. Bei Wassereinlagerungen (Ödeme) wiegt man mehr als man \"wirklich\" wiegt. BMI allein reicht nie — immer mit Blutbild und Blick auf den Patienten zusammen beurteilen.",
+        karteikarte: {
+          vorderseite:
+            "Frau Schmidt hat BMI 38. Welcher Adipositas-Grad ist das — und was bedeutet es pflegerisch?",
+          rueckseite:
+            "BMI 38 = **Adipositas Grad II** (WHO-Schwelle: 35,0–39,9). Pflegerisch: Belastungsgrenzen von Bett/Stuhl prüfen, Hautfalten-Inspektion (Intertrigo-Risiko), Mobilisation mit Sturzrisiko-Bewusstsein, Gespräch über Gewicht ohne Stigmatisierung.\n\nSpektrum: Petrov (BMI 21, Kachexie-Risiko), Yilmaz (BMI 28, OP-Risiko), Kovac (BMI 19, Gewichtsverlust-Trend).\n\nFaustregel: **BMI ist eine Zahl, kein Urteil.**",
+        },
       },
     },
 
