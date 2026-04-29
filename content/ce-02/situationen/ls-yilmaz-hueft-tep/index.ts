@@ -9,3 +9,4 @@ export { CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN } from "./phase-planen";
 export { CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN } from "./phase-durchfuehren";
 export { CE02_SIT_YILMAZ_HUEFT_TEP_EVALUIEREN } from "./phase-evaluieren";
 export { CE02_SIT_YILMAZ_HUEFT_TEP_DOKUMENTIEREN } from "./phase-dokumentieren";
+export { CE02_YILMAZ_HUEFT_TEP_INLINE_WISSEN } from "./inline-wissen";
