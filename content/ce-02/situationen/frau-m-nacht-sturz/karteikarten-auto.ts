@@ -64,7 +64,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "sturz-prophylaxe-risikofaktoren-spektrum",
     themaPrimaer: "unbekannt",
     vorderseite: "Birgit fragt dich am Morgen: \"Warum ist Mama gestürzt? Ist das einfach das Alter?\" — Was sagst du?",
-    rueckseite: "Nein — Stürze sind multifaktoriell. Bei Frau M. mind. 5 Faktoren: Alter > 75, Parkinson II (Hauptfaktor: Bradykinese, posturale Instabilität), akute Pneumonie, Polypharmazie, nächtliche Klinikumgebung.\n\nSpektrum bei anderen:\n• Baür (Demenz) → Kognition + Sundowning\n• Yilmaz (Hüft-TEP) → akute post-OP-Mobilität\n• Schmidt → Polyneuropathie + Bariatrik\n• Petrov → Halbseiten-Lähmung + Neglect\n\nFaustregel: **4+ Faktoren = hohes Risiko, kein Patient hat alle, jeder hat eigene.** (DNQP 2022, PRISCUS 2023)",
+    rueckseite: "Nein — Stürze sind multifaktoriell. Bei Frau M. mind. 5 Faktoren: Alter > 75, Parkinson II (Hauptfaktor: Bradykinese, posturale Instabilität), akute Pneumonie, Polypharmazie, nächtliche Klinikumgebung.\n\nSpektrum bei anderen:\n• Baür (Demenz) → Kognition + Sundowning\n• Yilmaz (Hüft-TEP) → akute post-OP-Mobilität\n• Schmidt → Polyneuropathie + Bariatrik\n• Petrov → Halbseiten-Lähmung + Neglect\n\nFaustregel: **4+ Faktoren = hohes Risiko, kein Patient hat alle, jeder hat eigene.** (DNQP 2022, PRISCUS 2.0, Holt et al. 2022)",
     situationsId: "frau-m-nacht-sturz",
   },
   {
@@ -72,7 +72,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "schmerz-nrs-grundlagen",
     themaPrimaer: "unbekannt",
     vorderseite: "Frau M. (82, Hüftschmerz nach Sturz) sagt: \"Es ist etwas unangenehm.\" Du fragst sie nach NRS. Sie sagt: \"Vielleicht eine 8.\" — Was bedeutet das, was tust du?",
-    rueckseite: "NRS 8 = **starker Schmerz**, sofort handeln. Schritte: Lagerung optimieren (entlastend), Bedarfsanalgesie nach AVO besprechen, Arzt informieren (SBAR), nach Wirkbeginn (15-30 Min) re-assessen.\n\nSchwellenwerte (DNQP 2020):\n• 0-3 leicht — beobachten\n• 4-6 mäßig — interventionspflichtig\n• 7-10 stark — sofort handeln\n\nAlternative Skalen: KUSS (Kleinkind, Lukas), BESD/PAINAD (Demenz, Baür), VAS, CPOT (Intensiv). Faustregel: **NRS ≥ 4 ist NIE \"wenig\".**",
+    rueckseite: "NRS 8 = **starker Schmerz**, sofort handeln. Schritte: Lagerung optimieren (entlastend), Bedarfsanalgesie nach AVO besprechen, Arzt informieren (SBAR), nach Wirkbeginn (15-30 Min) re-assessen.\n\nSchwellenwerte (DNQP 2020):\n• 0-3 leicht — beobachten\n• 4-6 mäßig — interventionspflichtig\n• 7-10 stark — sofort handeln\n\nAlternative Skalen: KUSS (Kleinkinder < 4 Jahre), BESD/PAINAD (Demenz, Baür), VAS, CPOT (Intensiv). Faustregel: **NRS ≥ 4 ist NIE \"wenig\".**",
     situationsId: "frau-m-nacht-sturz",
   },
   {
@@ -96,7 +96,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "pflegedokumentation-sbar",
     themaPrimaer: "pflegedokumentation",
     vorderseite: "Es ist 03:15 Uhr. Du musst den Nachtarzt wegen Frau M. (Sturz, Hüftschmerz NRS 4) anrufen. Welche Struktur, welche Inhalte?",
-    rueckseite: "SBAR (Situation/Background/Assessment/Recommendation):\n\nS (10s): \"Schwester X, Station 3B, Zimmer 14. Frau M., 82, ist um 02:48 gestürzt.\"\nB (15s): \"Aufnahme Dienstag, Pneumonie Tag 3, Parkinson II, Osteoporose, seit 2 Tagen Zolpidem.\"\nA (15s): \"RR 142/88, HF 76, SpO2 95%. Wach, orientiert, NRS 4 linke Hüfte. Keine Verkürzung/Außenrotation.\"\nR (10s): \"Bedarfsanalgesie nach AVO + ärztliche Sturzbeurteilung morgen. Frage: Zolpidem heute pausieren?\"\n\nFaustregel: 50 Sek total, vorher aufschreiben, nachher Repeat-Back. Sofortige Doku mit Zeitstempel + Arztname. (Aktionsbündnis Patientensicherheit 2014, DIVI 2020)",
+    rueckseite: "SBAR (Situation/Background/Assessment/Recommendation):\n\nS (10s): \"Schwester X, Station 3B, Zimmer 14. Frau M., 82, ist um ca. 02:40 gestürzt.\"\nB (15s): \"Aufnahme Dienstag, Pneumonie Tag 3, Parkinson II, Osteoporose, seit 2 Tagen Zolpidem.\"\nA (15s): \"RR 142/88, HF 76, SpO2 95%. Wach, orientiert, NRS 4 linke Hüfte. Keine Verkürzung/Außenrotation.\"\nR (10s): \"Bedarfsanalgesie nach AVO + ärztliche Sturzbeurteilung morgen. Frage: Zolpidem heute pausieren?\"\n\nFaustregel: 50 Sek total, vorher aufschreiben, nachher Repeat-Back. Sofortige Doku mit Zeitstempel + Arztname. (Aktionsbündnis Patientensicherheit 2014, DIVI 2020)",
     situationsId: "frau-m-nacht-sturz",
   },
 ];
