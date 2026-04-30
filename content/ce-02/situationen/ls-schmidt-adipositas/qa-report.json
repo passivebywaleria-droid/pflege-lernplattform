@@ -1,7 +1,7 @@
 {
   "ceId": "ce-02",
   "situationId": "ls-schmidt-adipositas",
-  "timestamp": "2026-04-29T09:01:05.537Z",
+  "timestamp": "2026-04-30T09:00:11.845Z",
   "steps": [
     {
       "stepIndex": 1,
@@ -21,6 +21,22 @@
     },
     {
       "stepIndex": 2,
+      "title": "NRS 2002 — das Screening-Werkzeug aus der Übergabe",
+      "stepKind": "inlineWissen",
+      "rendered": true,
+      "clickable": true,
+      "consoleErrors": 0,
+      "hydrationError": false,
+      "estimatedReadTimeSec": 83,
+      "hasActionBar": true,
+      "hasTruncate": false,
+      "glossarTermsFound": 0,
+      "hasQuellen": true,
+      "hasInlineWissen": true,
+      "hasFaustregel": true
+    },
+    {
+      "stepIndex": 3,
       "title": "Wie sicher fühlst du dich?",
       "stepKind": "crowdPoll",
       "rendered": true,
@@ -36,7 +52,7 @@
       "hasFaustregel": false
     },
     {
-      "stepIndex": 3,
+      "stepIndex": 4,
       "title": "Vor dem Betreten — was musst du wissen?",
       "stepKind": "mc",
       "rendered": true,
@@ -52,62 +68,30 @@
       "hasFaustregel": false
     },
     {
-      "stepIndex": 4,
-      "title": "Das Zimmer betreten",
-      "stepKind": "dialog",
-      "rendered": true,
-      "clickable": true,
-      "consoleErrors": 0,
-      "hydrationError": false,
-      "estimatedReadTimeSec": 46,
-      "hasActionBar": false,
-      "hasTruncate": false,
-      "glossarTermsFound": 0,
-      "hasQuellen": true,
-      "hasInlineWissen": false,
-      "hasFaustregel": false
-    },
-    {
       "stepIndex": 5,
-      "title": "Das Zimmer betreten",
-      "stepKind": "dialog",
+      "title": "BMI 38 — was bedeutet das für Frau Schmidt?",
+      "stepKind": "inlineWissen",
       "rendered": true,
       "clickable": true,
       "consoleErrors": 0,
       "hydrationError": false,
-      "estimatedReadTimeSec": 52,
+      "estimatedReadTimeSec": 78,
       "hasActionBar": true,
       "hasTruncate": false,
       "glossarTermsFound": 0,
       "hasQuellen": true,
-      "hasInlineWissen": false,
-      "hasFaustregel": false
+      "hasInlineWissen": true,
+      "hasFaustregel": true
     },
     {
       "stepIndex": 6,
-      "title": "Was weißt du — was weißt du noch nicht?",
-      "stepKind": "sorting",
-      "rendered": true,
-      "clickable": true,
-      "consoleErrors": 0,
-      "hydrationError": false,
-      "estimatedReadTimeSec": 77,
-      "hasActionBar": true,
-      "hasTruncate": true,
-      "glossarTermsFound": 0,
-      "hasQuellen": true,
-      "hasInlineWissen": false,
-      "hasFaustregel": false
-    },
-    {
-      "stepIndex": 7,
-      "title": "Wahr oder falsch — bevor das Assessment beginnt",
-      "stepKind": "matching",
+      "title": "Das Zimmer betreten",
+      "stepKind": "dialog",
       "rendered": true,
       "clickable": false,
       "consoleErrors": 0,
       "hydrationError": false,
-      "estimatedReadTimeSec": 27,
+      "estimatedReadTimeSec": 23,
       "hasActionBar": false,
       "hasTruncate": false,
       "glossarTermsFound": 0,
@@ -116,26 +100,26 @@
       "hasFaustregel": false
     }
   ],
-  "totalSteps": 38,
-  "stepsReached": 7,
+  "totalSteps": 47,
+  "stepsReached": 6,
   "stuckAt": {
-    "index": 7,
-    "reason": "handleStep failed (matching)"
+    "index": 6,
+    "reason": "handleStep failed (dialog)"
   },
   "consoleErrors": [],
   "pageErrors": [],
   "subScores": [
     {
       "name": "Funktional",
-      "score": 93,
+      "score": 92,
       "weight": 0.25,
-      "details": "7/7 gerendert, 6/7 klickbar, 0 Errors"
+      "details": "6/6 gerendert, 5/6 klickbar, 0 Errors"
     },
     {
       "name": "UX",
-      "score": 77,
+      "score": 81,
       "weight": 0.15,
-      "details": "71% Action-Bar, ∅ Lesezeit 50s"
+      "details": "83% Action-Bar, ∅ Lesezeit 56s"
     },
     {
       "name": "Pflege-Standards",
@@ -147,25 +131,24 @@
       "name": "Didaktik",
       "score": 100,
       "weight": 0.15,
-      "details": "5 Bloom-Level, 18 Step-Typen"
+      "details": "6 Bloom-Level, 19 Step-Typen"
     },
     {
       "name": "Curriculum",
-      "score": 0,
+      "score": 100,
       "weight": 0.1,
-      "details": "0 Inline-Wissens-Bausteine"
+      "details": "9 Inline-Wissens-Bausteine"
     },
     {
       "name": "Engagement",
-      "score": 9,
+      "score": 23,
       "weight": 0.1,
-      "details": "18% Steps erreichbar, 0% mit Faustregel"
+      "details": "13% Steps erreichbar, 33% mit Faustregel"
     }
   ],
-  "totalScore": 76,
+  "totalScore": 87,
   "grade": "B",
   "topIssues": [
-    "Walkthrough stuck: handleStep failed (matching)",
-    "Nur 0 Inline-Wissens-Bausteine (min. 6 empfohlen)"
+    "Walkthrough stuck: handleStep failed (dialog)"
   ]
 }

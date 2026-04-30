@@ -1,7 +1,7 @@
 {
   "ceId": "ce-02",
   "situationId": "ls-emilia-saeugling",
-  "timestamp": "2026-04-29T08:57:03.388Z",
+  "timestamp": "2026-04-30T08:56:00.319Z",
   "steps": [
     {
       "stepIndex": 1,
@@ -169,7 +169,7 @@
       "stepKind": "matching",
       "rendered": true,
       "clickable": false,
-      "consoleErrors": 2,
+      "consoleErrors": 1,
       "hydrationError": false,
       "estimatedReadTimeSec": 29,
       "hasActionBar": false,
@@ -187,16 +187,15 @@
     "reason": "handleStep failed (matching)"
   },
   "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 404 (Not Found)",
-    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    "An empty string (\"\") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src"
   ],
   "pageErrors": [],
   "subScores": [
     {
       "name": "Funktional",
-      "score": 75,
+      "score": 85,
       "weight": 0.25,
-      "details": "11/11 gerendert, 10/11 klickbar, 2 Errors"
+      "details": "11/11 gerendert, 10/11 klickbar, 1 Errors"
     },
     {
       "name": "UX",
@@ -229,10 +228,10 @@
       "details": "26% Steps erreichbar, 0% mit Faustregel"
     }
   ],
-  "totalScore": 71,
+  "totalScore": 74,
   "grade": "C",
   "topIssues": [
-    "2 Console-Errors (Hydration/Render-Bug)",
+    "1 Console-Errors (Hydration/Render-Bug)",
     "Walkthrough stuck: handleStep failed (matching)",
     "Nur 0 Inline-Wissens-Bausteine (min. 6 empfohlen)",
     "4 Steps ohne Action-Bar"

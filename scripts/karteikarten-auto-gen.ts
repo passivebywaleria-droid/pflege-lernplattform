@@ -145,7 +145,7 @@ async function processSituation(
 
   const phaseFiles = fs
     .readdirSync(sitDir)
-    .filter((f) => f.startsWith("phase-") && f.endsWith(".ts"))
+    .filter((f) => (f.startsWith("phase-") || f === "inline-wissen.ts") && f.endsWith(".ts"))
     .sort();
 
   if (phaseFiles.length === 0) {

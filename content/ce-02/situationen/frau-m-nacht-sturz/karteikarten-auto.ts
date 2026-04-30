@@ -24,7 +24,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "sturz-prophylaxe-schellong",
     themaPrimaer: "sturz-prophylaxe",
     vorderseite: "Frau M. (82, 3 RR-Senker, lange gelegen) — du sollst die erste Mobilisation vorbereiten. Welche Schellong-Werte machst du, was sind die positiv-Kriterien?",
-    rueckseite: "Schellong nach AAS 2011:\n• Liegen 5-10 Min → RR + Puls\n• Sitzen ≥ 1 Min → RR + Puls\n• Stehen 3 Min → RR + Puls\n\nPositiv (= Orthostase):\n• syst. ↓ ≥ 20 mmHg, oder\n• diast. ↓ ≥ 10 mmHg, oder\n• Puls ↑ > 30/Min\n\nFaustregel: Liegen-Sitzen-Stehen mit JE einer Messung. \"3 Min warten\" ohne RR ist wertlos.",
+    rueckseite: "Schellong nach AAS 2011:\n• Liegen mind. 5 Min → RR + Puls\n• Sitzen ≥ 1 Min → RR + Puls\n• Stehen 3 Min → RR + Puls\n\nPositiv (= Orthostase):\n• syst. ↓ ≥ 20 mmHg, oder\n• diast. ↓ ≥ 10 mmHg, oder\n• Puls ↑ > 30/Min\n\nFaustregel: Liegen-Sitzen-Stehen mit JE einer Messung. \"3 Min warten\" ohne RR ist wertlos.",
     situationsId: "frau-m-nacht-sturz",
   },
   {

@@ -1,7 +1,7 @@
 {
   "ceId": "ce-02",
   "situationId": "ls-nguyen-stoma",
-  "timestamp": "2026-04-29T08:59:03.516Z",
+  "timestamp": "2026-04-30T08:58:47.281Z",
   "steps": [
     {
       "stepIndex": 1,
@@ -43,7 +43,7 @@
       "clickable": true,
       "consoleErrors": 0,
       "hydrationError": false,
-      "estimatedReadTimeSec": 34,
+      "estimatedReadTimeSec": 33,
       "hasActionBar": false,
       "hasTruncate": false,
       "glossarTermsFound": 0,
@@ -103,7 +103,7 @@
       "name": "UX",
       "score": 72,
       "weight": 0.15,
-      "details": "60% Action-Bar, ∅ Lesezeit 47s"
+      "details": "60% Action-Bar, ∅ Lesezeit 46s"
     },
     {
       "name": "Pflege-Standards",
