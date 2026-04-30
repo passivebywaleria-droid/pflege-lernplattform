@@ -64,7 +64,7 @@
   {
     "situationId": "ls-bauer-demenz-sturz",
     "totalBegriffe": 80,
-    "erklaerteBegriffe": 69,
+    "erklaerteBegriffe": 77,
     "luecken": [
       {
         "stepId": "ce02-bauer-beob-01-brilliant-erstblick",
@@ -73,24 +73,6 @@
         "begriff": "Außenrotation"
       },
       {
-        "stepId": "ce02-bauer-beob-02-sturz-assessment",
-        "stepType": "sequencing",
-        "phase": "beobachten",
-        "begriff": "BESD-Skala"
-      },
-      {
-        "stepId": "ce02-bauer-beob-02-sturz-assessment",
-        "stepType": "sequencing",
-        "phase": "beobachten",
-        "begriff": "BESD-Skala"
-      },
-      {
-        "stepId": "ce02-bauer-beob-03-knie-kontraktur",
-        "stepType": "dialog",
-        "phase": "beobachten",
-        "begriff": "BESD-Skala"
-      },
-      {
         "stepId": "ce02-bauer-plan-03-bewegungsplan",
         "stepType": "sequencing",
         "phase": "planen",
@@ -103,24 +85,6 @@
         "begriff": "Spitzfuß"
       },
       {
-        "stepId": "ce02-bauer-dur-02-abwehr-komplikation",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Würde"
-      },
-      {
-        "stepId": "ce02-bauer-dur-02-abwehr-komplikation",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Würde"
-      },
-      {
-        "stepId": "ce02-bauer-dur-03-deeskalation-ressource",
-        "stepType": "dialog",
-        "phase": "durchfuehren",
-        "begriff": "Handführung"
-      },
-      {
         "stepId": "ce02-bauer-dur-04-bewegungsuebungen",
         "stepType": "sequencing",
         "phase": "durchfuehren",
@@ -130,76 +94,16 @@
         "stepId": "ce02-bauer-dur-04-bewegungsuebungen",
         "stepType": "sequencing",
         "phase": "durchfuehren",
-        "begriff": "passiv"
-      },
-      {
-        "stepId": "ce02-bauer-dur-04-bewegungsuebungen",
-        "stepType": "sequencing",
-        "phase": "durchfuehren",
         "begriff": "Spitzfuß"
-      },
-      {
-        "stepId": "ce02-bauer-dur-04-bewegungsuebungen",
-        "stepType": "sequencing",
-        "phase": "durchfuehren",
-        "begriff": "Knie"
-      },
-      {
-        "stepId": "ce02-bauer-dur-08-inkontinenz-wuerde",
-        "stepType": "reflection",
-        "phase": "durchfuehren",
-        "begriff": "Würde"
-      },
-      {
-        "stepId": "ce02-bauer-dur-08-inkontinenz-wuerde",
-        "stepType": "reflection",
-        "phase": "durchfuehren",
-        "begriff": "Verhältnismäßigkeit"
-      },
-      {
-        "stepId": "ce02-bauer-dur-08-inkontinenz-wuerde",
-        "stepType": "reflection",
-        "phase": "durchfuehren",
-        "begriff": "Würde"
-      },
-      {
-        "stepId": "ce02-bauer-eval-02-angehoerigen-gespraech",
-        "stepType": "dialog",
-        "phase": "evaluieren",
-        "begriff": "Schuldgefühle"
-      },
-      {
-        "stepId": "ce02-bauer-dok-02-pflegebericht-formulierung",
-        "stepType": "errorspot",
-        "phase": "dokumentieren",
-        "begriff": "Objektivität"
       }
     ],
-    "coveragePercent": 86
+    "coveragePercent": 96
   },
   {
     "situationId": "ls-emilia-saeugling",
     "totalBegriffe": 18,
-    "erklaerteBegriffe": 13,
+    "erklaerteBegriffe": 15,
     "luecken": [
-      {
-        "stepId": "ce02-emilia-beob-03-windeln-zaehlen",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Mekonium"
-      },
-      {
-        "stepId": "ce02-emilia-beob-03-windeln-zaehlen",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Muttermilchstuhl"
-      },
-      {
-        "stepId": "ce02-emilia-beob-03-windeln-zaehlen",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Muttermilchstuhl"
-      },
       {
         "stepId": "ce02-emilia-plan-01-pflegeziele-formulieren",
         "stepType": "freetext",
@@ -237,12 +141,12 @@
         "begriff": "Trinkprotokoll"
       }
     ],
-    "coveragePercent": 72
+    "coveragePercent": 83
   },
   {
     "situationId": "ls-kovac-ambulant",
     "totalBegriffe": 44,
-    "erklaerteBegriffe": 27,
+    "erklaerteBegriffe": 28,
     "luecken": [
       {
         "stepId": "ce02-kovac-beob-04-schlafanamnese",
@@ -315,12 +219,6 @@
         "stepType": "mc",
         "phase": "durchfuehren",
         "begriff": "Tachypnoe"
-      },
-      {
-        "stepId": "ce02-kovac-dur-03-komplikation-kurzatmigkeit",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Lippenzyanose"
       },
       {
         "stepId": "ce02-kovac-dur-03-komplikation-kurzatmigkeit",
@@ -407,7 +305,7 @@
         "begriff": "Haftung"
       }
     ],
-    "coveragePercent": 61
+    "coveragePercent": 64
   },
   {
     "situationId": "ls-lukas-verbruehung",
@@ -504,38 +402,8 @@
   {
     "situationId": "ls-nguyen-stoma",
     "totalBegriffe": 91,
-    "erklaerteBegriffe": 24,
+    "erklaerteBegriffe": 68,
     "luecken": [
-      {
-        "stepId": "ce02-nguyen-info-03-5-probleme-sehen",
-        "stepType": "categorize",
-        "phase": "informieren",
-        "begriff": "Pflegeproblem"
-      },
-      {
-        "stepId": "ce02-nguyen-info-03-5-probleme-sehen",
-        "stepType": "categorize",
-        "phase": "informieren",
-        "begriff": "Priorisierung"
-      },
-      {
-        "stepId": "ce02-nguyen-info-03-5-probleme-sehen",
-        "stepType": "categorize",
-        "phase": "informieren",
-        "begriff": "Ernährung"
-      },
-      {
-        "stepId": "ce02-nguyen-info-03-5-probleme-sehen",
-        "stepType": "categorize",
-        "phase": "informieren",
-        "begriff": "Dekubitus"
-      },
-      {
-        "stepId": "ce02-nguyen-info-03-5-probleme-sehen",
-        "stepType": "categorize",
-        "phase": "informieren",
-        "begriff": "Thrombose"
-      },
       {
         "stepId": "ce02-nguyen-info-05-dolmetscher-frage",
         "stepType": "truefalse",
@@ -555,64 +423,10 @@
         "begriff": "übersetzen"
       },
       {
-        "stepId": "ce02-nguyen-info-05-dolmetscher-frage",
-        "stepType": "truefalse",
-        "phase": "informieren",
-        "begriff": "Patient"
-      },
-      {
-        "stepId": "ce02-nguyen-info-05-dolmetscher-frage",
-        "stepType": "truefalse",
-        "phase": "informieren",
-        "begriff": "Tochter"
-      },
-      {
         "stepId": "ce02-nguyen-info-opt2-braden-einlesen",
         "stepType": "flipcard",
         "phase": "informieren",
         "begriff": "Dekubitusrisiko"
-      },
-      {
-        "stepId": "ce02-nguyen-info-opt2-braden-einlesen",
-        "stepType": "flipcard",
-        "phase": "informieren",
-        "begriff": "Dekubitus"
-      },
-      {
-        "stepId": "ce02-nguyen-info-opt3-heparin-ort",
-        "stepType": "mc",
-        "phase": "informieren",
-        "begriff": "niedermolekulares Heparin"
-      },
-      {
-        "stepId": "ce02-nguyen-info-opt3-heparin-ort",
-        "stepType": "mc",
-        "phase": "informieren",
-        "begriff": "subkutan"
-      },
-      {
-        "stepId": "ce02-nguyen-info-opt3-heparin-ort",
-        "stepType": "mc",
-        "phase": "informieren",
-        "begriff": "Thromboseprophylaxe"
-      },
-      {
-        "stepId": "ce02-nguyen-info-opt3-heparin-ort",
-        "stepType": "mc",
-        "phase": "informieren",
-        "begriff": "alternierende Quadranten"
-      },
-      {
-        "stepId": "ce02-nguyen-info-opt3-heparin-ort",
-        "stepType": "mc",
-        "phase": "informieren",
-        "begriff": "Heparin"
-      },
-      {
-        "stepId": "ce02-nguyen-info-opt3-heparin-ort",
-        "stepType": "mc",
-        "phase": "informieren",
-        "begriff": "Thrombose"
       },
       {
         "stepId": "ce02-nguyen-info-opt3-heparin-ort",
@@ -621,100 +435,10 @@
         "begriff": "Spritze"
       },
       {
-        "stepId": "ce02-nguyen-beob-01-stomafarbe-frage",
-        "stepType": "hotspot",
-        "phase": "beobachten",
-        "begriff": "livide"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-01-stomafarbe-frage",
-        "stepType": "hotspot",
-        "phase": "beobachten",
-        "begriff": "livide"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-03-haut-assessment",
-        "stepType": "highlight",
-        "phase": "beobachten",
-        "begriff": "serös"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-03-haut-assessment",
-        "stepType": "highlight",
-        "phase": "beobachten",
-        "begriff": "serös"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-04-ernaehrung-sehen",
-        "stepType": "dialog",
-        "phase": "beobachten",
-        "begriff": "Mangelernährung"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-04-ernaehrung-sehen",
-        "stepType": "dialog",
-        "phase": "beobachten",
-        "begriff": "NRS-2002"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-04-ernaehrung-sehen",
-        "stepType": "dialog",
-        "phase": "beobachten",
-        "begriff": "Mangelernährung"
-      },
-      {
         "stepId": "ce02-nguyen-beob-05-dekubitus-risiko",
         "stepType": "matrix",
         "phase": "beobachten",
         "begriff": "sensorisches Empfinden"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-05-dekubitus-risiko",
-        "stepType": "matrix",
-        "phase": "beobachten",
-        "begriff": "Dekubitus-Risiko"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-06-thrombose-zeichen",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Thrombose"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-06-thrombose-zeichen",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Heparin"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-06-thrombose-zeichen",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Wells-Score"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-06-thrombose-zeichen",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Tumorerkrankung"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-06-thrombose-zeichen",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Thrombose"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-06-thrombose-zeichen",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Heparin"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-06-thrombose-zeichen",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Venenthrombose"
       },
       {
         "stepId": "ce02-nguyen-beob-opt1-stoma-output-bristol",
@@ -727,66 +451,6 @@
         "stepType": "comparison",
         "phase": "beobachten",
         "begriff": "Konsistenz"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-opt2-albumin-ernaehrung",
-        "stepType": "flipcard",
-        "phase": "beobachten",
-        "begriff": "Hypoalbuminämie"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-opt2-albumin-ernaehrung",
-        "stepType": "flipcard",
-        "phase": "beobachten",
-        "begriff": "Mangelernährung"
-      },
-      {
-        "stepId": "ce02-nguyen-beob-opt2-albumin-ernaehrung",
-        "stepType": "flipcard",
-        "phase": "beobachten",
-        "begriff": "Mangelernährung"
-      },
-      {
-        "stepId": "ce02-nguyen-plan-01-priorisierung",
-        "stepType": "sorting",
-        "phase": "planen",
-        "begriff": "Priorisierung"
-      },
-      {
-        "stepId": "ce02-nguyen-plan-01-priorisierung",
-        "stepType": "sorting",
-        "phase": "planen",
-        "begriff": "Pflegeproblem"
-      },
-      {
-        "stepId": "ce02-nguyen-plan-01-priorisierung",
-        "stepType": "sorting",
-        "phase": "planen",
-        "begriff": "Dekubitus"
-      },
-      {
-        "stepId": "ce02-nguyen-plan-01-priorisierung",
-        "stepType": "sorting",
-        "phase": "planen",
-        "begriff": "Thrombose"
-      },
-      {
-        "stepId": "ce02-nguyen-plan-01-priorisierung",
-        "stepType": "sorting",
-        "phase": "planen",
-        "begriff": "Ernährung"
-      },
-      {
-        "stepId": "ce02-nguyen-plan-01-priorisierung",
-        "stepType": "sorting",
-        "phase": "planen",
-        "begriff": "Dekubitus"
-      },
-      {
-        "stepId": "ce02-nguyen-plan-01-priorisierung",
-        "stepType": "sorting",
-        "phase": "planen",
-        "begriff": "Thrombose"
       },
       {
         "stepId": "ce02-nguyen-plan-02-stoma-versorgungsplan",
@@ -816,19 +480,7 @@
         "stepId": "ce02-nguyen-plan-04-ernaehrungsplan-post-op",
         "stepType": "branching",
         "phase": "planen",
-        "begriff": "NRS-2002"
-      },
-      {
-        "stepId": "ce02-nguyen-plan-04-ernaehrungsplan-post-op",
-        "stepType": "branching",
-        "phase": "planen",
         "begriff": "Ernährungsassessment"
-      },
-      {
-        "stepId": "ce02-nguyen-plan-04-ernaehrungsplan-post-op",
-        "stepType": "branching",
-        "phase": "planen",
-        "begriff": "NRS-2002"
       },
       {
         "stepId": "ce02-nguyen-plan-04-ernaehrungsplan-post-op",
@@ -840,49 +492,7 @@
         "stepId": "ce02-nguyen-plan-opt2-lagerungsplan",
         "stepType": "comparison",
         "phase": "planen",
-        "begriff": "30°-Schräglage"
-      },
-      {
-        "stepId": "ce02-nguyen-plan-opt2-lagerungsplan",
-        "stepType": "comparison",
-        "phase": "planen",
-        "begriff": "Weichlagerung"
-      },
-      {
-        "stepId": "ce02-nguyen-plan-opt2-lagerungsplan",
-        "stepType": "comparison",
-        "phase": "planen",
-        "begriff": "Druckentlastung"
-      },
-      {
-        "stepId": "ce02-nguyen-plan-opt2-lagerungsplan",
-        "stepType": "comparison",
-        "phase": "planen",
         "begriff": "Lagerung"
-      },
-      {
-        "stepId": "ce02-nguyen-plan-opt2-lagerungsplan",
-        "stepType": "comparison",
-        "phase": "planen",
-        "begriff": "Dekubitus"
-      },
-      {
-        "stepId": "ce02-nguyen-plan-opt2-lagerungsplan",
-        "stepType": "comparison",
-        "phase": "planen",
-        "begriff": "Druckentlastung"
-      },
-      {
-        "stepId": "ce02-nguyen-dur-01-beutel-vorbereitung",
-        "stepType": "sorting",
-        "phase": "durchfuehren",
-        "begriff": "Intimsphäre"
-      },
-      {
-        "stepId": "ce02-nguyen-dur-01-beutel-vorbereitung",
-        "stepType": "sorting",
-        "phase": "durchfuehren",
-        "begriff": "Würdeschutz"
       },
       {
         "stepId": "ce02-nguyen-dur-01-beutel-vorbereitung",
@@ -903,42 +513,6 @@
         "begriff": "Spiegeln"
       },
       {
-        "stepId": "ce02-nguyen-dur-04-k2-angehoerige",
-        "stepType": "dialog",
-        "phase": "durchfuehren",
-        "begriff": "Entlassungsmanagement"
-      },
-      {
-        "stepId": "ce02-nguyen-dur-04-k2-angehoerige",
-        "stepType": "dialog",
-        "phase": "durchfuehren",
-        "begriff": "Selbstversorgung"
-      },
-      {
-        "stepId": "ce02-nguyen-dur-04-k2-angehoerige",
-        "stepType": "dialog",
-        "phase": "durchfuehren",
-        "begriff": "Empowerment"
-      },
-      {
-        "stepId": "ce02-nguyen-dur-04-k2-angehoerige",
-        "stepType": "dialog",
-        "phase": "durchfuehren",
-        "begriff": "Selbstversorgung"
-      },
-      {
-        "stepId": "ce02-nguyen-dur-06-ganzkörperpflege",
-        "stepType": "sorting",
-        "phase": "durchfuehren",
-        "begriff": "von sauber zu unrein"
-      },
-      {
-        "stepId": "ce02-nguyen-dur-06-ganzkörperpflege",
-        "stepType": "sorting",
-        "phase": "durchfuehren",
-        "begriff": "Kreuzkontamination"
-      },
-      {
         "stepId": "ce02-nguyen-dur-06-ganzkörperpflege",
         "stepType": "sorting",
         "phase": "durchfuehren",
@@ -948,37 +522,7 @@
         "stepId": "ce02-nguyen-dur-07-mobilisation-planung",
         "stepType": "mc",
         "phase": "durchfuehren",
-        "begriff": "Mobilisation"
-      },
-      {
-        "stepId": "ce02-nguyen-dur-07-mobilisation-planung",
-        "stepType": "mc",
-        "phase": "durchfuehren",
         "begriff": "NRS"
-      },
-      {
-        "stepId": "ce02-nguyen-dur-07-mobilisation-planung",
-        "stepType": "mc",
-        "phase": "durchfuehren",
-        "begriff": "Orthostase"
-      },
-      {
-        "stepId": "ce02-nguyen-dur-07-mobilisation-planung",
-        "stepType": "mc",
-        "phase": "durchfuehren",
-        "begriff": "Bettkante"
-      },
-      {
-        "stepId": "ce02-nguyen-dur-07-mobilisation-planung",
-        "stepType": "mc",
-        "phase": "durchfuehren",
-        "begriff": "Mobilisation"
-      },
-      {
-        "stepId": "ce02-nguyen-dur-07-mobilisation-planung",
-        "stepType": "mc",
-        "phase": "durchfuehren",
-        "begriff": "Bettkante"
       },
       {
         "stepId": "ce02-nguyen-dur-07-mobilisation-planung",
@@ -993,54 +537,6 @@
         "begriff": "Faltenwurf"
       },
       {
-        "stepId": "ce02-nguyen-eval-01-stoma-assessment",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "Evaluation"
-      },
-      {
-        "stepId": "ce02-nguyen-eval-01-stoma-assessment",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "Verlauf"
-      },
-      {
-        "stepId": "ce02-nguyen-eval-02-ernaehrung-bilanz",
-        "stepType": "calculation",
-        "phase": "evaluieren",
-        "begriff": "Energiebedarf"
-      },
-      {
-        "stepId": "ce02-nguyen-eval-02-ernaehrung-bilanz",
-        "stepType": "calculation",
-        "phase": "evaluieren",
-        "begriff": "Stressstoffwechsel"
-      },
-      {
-        "stepId": "ce02-nguyen-eval-02-ernaehrung-bilanz",
-        "stepType": "calculation",
-        "phase": "evaluieren",
-        "begriff": "Trinknahrung"
-      },
-      {
-        "stepId": "ce02-nguyen-eval-02-ernaehrung-bilanz",
-        "stepType": "calculation",
-        "phase": "evaluieren",
-        "begriff": "Kalorien"
-      },
-      {
-        "stepId": "ce02-nguyen-eval-02-ernaehrung-bilanz",
-        "stepType": "calculation",
-        "phase": "evaluieren",
-        "begriff": "Trinknahrung"
-      },
-      {
-        "stepId": "ce02-nguyen-eval-opt1-thrombose-check",
-        "stepType": "truefalse",
-        "phase": "evaluieren",
-        "begriff": "Thromboseprophylaxe"
-      },
-      {
         "stepId": "ce02-nguyen-eval-opt1-thrombose-check",
         "stepType": "truefalse",
         "phase": "evaluieren",
@@ -1050,19 +546,7 @@
         "stepId": "ce02-nguyen-eval-opt1-thrombose-check",
         "stepType": "truefalse",
         "phase": "evaluieren",
-        "begriff": "Heparin"
-      },
-      {
-        "stepId": "ce02-nguyen-eval-opt1-thrombose-check",
-        "stepType": "truefalse",
-        "phase": "evaluieren",
         "begriff": "Thrombose-Schutz"
-      },
-      {
-        "stepId": "ce02-nguyen-eval-opt1-thrombose-check",
-        "stepType": "truefalse",
-        "phase": "evaluieren",
-        "begriff": "Heparin"
       },
       {
         "stepId": "ce02-nguyen-eval-opt1-thrombose-check",
@@ -1077,52 +561,10 @@
         "begriff": "Dekubitusrisiko"
       },
       {
-        "stepId": "ce02-nguyen-eval-opt2-haut-verlauf",
-        "stepType": "slider",
-        "phase": "evaluieren",
-        "begriff": "Dekubitus-Risiko"
-      },
-      {
-        "stepId": "ce02-nguyen-dok-01-stoma-doku-frei",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Pflicht-Elemente"
-      },
-      {
         "stepId": "ce02-nguyen-dok-01-stoma-doku-frei",
         "stepType": "freetext",
         "phase": "dokumentieren",
         "begriff": "Behandlungskontinuität"
-      },
-      {
-        "stepId": "ce02-nguyen-dok-02-ernaehrungsprotokoll",
-        "stepType": "tablefillin",
-        "phase": "dokumentieren",
-        "begriff": "Ernährungsprotokoll"
-      },
-      {
-        "stepId": "ce02-nguyen-dok-02-ernaehrungsprotokoll",
-        "stepType": "tablefillin",
-        "phase": "dokumentieren",
-        "begriff": "Trinknahrung"
-      },
-      {
-        "stepId": "ce02-nguyen-dok-02-ernaehrungsprotokoll",
-        "stepType": "tablefillin",
-        "phase": "dokumentieren",
-        "begriff": "NRS-2002"
-      },
-      {
-        "stepId": "ce02-nguyen-dok-02-ernaehrungsprotokoll",
-        "stepType": "tablefillin",
-        "phase": "dokumentieren",
-        "begriff": "Ernährungsprotokoll"
-      },
-      {
-        "stepId": "ce02-nguyen-dok-02-ernaehrungsprotokoll",
-        "stepType": "tablefillin",
-        "phase": "dokumentieren",
-        "begriff": "Kalorien"
       },
       {
         "stepId": "ce02-nguyen-dok-03-pflegebericht-matching",
@@ -1134,169 +576,36 @@
         "stepId": "ce02-nguyen-dok-04-uebergabe-formulieren",
         "stepType": "freetext",
         "phase": "dokumentieren",
-        "begriff": "Übergabe"
-      },
-      {
-        "stepId": "ce02-nguyen-dok-04-uebergabe-formulieren",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
         "begriff": "Behandlungskontinuität"
-      },
-      {
-        "stepId": "ce02-nguyen-dok-04-uebergabe-formulieren",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Übergabe"
-      },
-      {
-        "stepId": "ce02-nguyen-dok-opt1-was-nicht-dokumentieren",
-        "stepType": "mc",
-        "phase": "dokumentieren",
-        "begriff": "Objektivität"
       }
     ],
-    "coveragePercent": 26
+    "coveragePercent": 75
   },
   {
     "situationId": "ls-petrov-schlaganfall",
     "totalBegriffe": 66,
-    "erklaerteBegriffe": 56,
+    "erklaerteBegriffe": 65,
     "luecken": [
       {
         "stepId": "ce02-petrov-beob-06-hautinspektion",
         "stepType": "hotspot",
         "phase": "beobachten",
         "begriff": "Prädilektionsstellen"
-      },
-      {
-        "stepId": "ce02-petrov-plan-04-priorisierung",
-        "stepType": "sorting",
-        "phase": "planen",
-        "begriff": "Priorität"
-      },
-      {
-        "stepId": "ce02-petrov-plan-04-priorisierung",
-        "stepType": "sorting",
-        "phase": "planen",
-        "begriff": "Pflegemaßnahmen"
-      },
-      {
-        "stepId": "ce02-petrov-plan-04-priorisierung",
-        "stepType": "sorting",
-        "phase": "planen",
-        "begriff": "Pflegemaßnahmen"
-      },
-      {
-        "stepId": "ce02-petrov-dur-02-ganzkoerperpflege-sequencing",
-        "stepType": "sequencing",
-        "phase": "durchfuehren",
-        "begriff": "Körperpflege"
-      },
-      {
-        "stepId": "ce02-petrov-dur-03-drehen-seitenlage",
-        "stepType": "diagram",
-        "phase": "durchfuehren",
-        "begriff": "Schultergürtel"
-      },
-      {
-        "stepId": "ce02-petrov-dur-07-komp1-nachbeobachtung",
-        "stepType": "timer",
-        "phase": "durchfuehren",
-        "begriff": "Sauerstoffsättigung"
-      },
-      {
-        "stepId": "ce02-petrov-dur-08-komp2-natalya",
-        "stepType": "chatSim",
-        "phase": "durchfuehren",
-        "begriff": "Angehörigenberatung"
-      },
-      {
-        "stepId": "ce02-petrov-dur-08-komp2-natalya",
-        "stepType": "chatSim",
-        "phase": "durchfuehren",
-        "begriff": "Angehörigenberatung"
-      },
-      {
-        "stepId": "ce02-petrov-eval-03-mobilisations-fortschritt",
-        "stepType": "slider",
-        "phase": "evaluieren",
-        "begriff": "Reha"
-      },
-      {
-        "stepId": "ce02-petrov-eval-05-reflexion-natalya",
-        "stepType": "reflection",
-        "phase": "evaluieren",
-        "begriff": "Aufklärungspflicht"
-      },
-      {
-        "stepId": "ce02-petrov-dok-03-sbar-uebergabe",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Übergabe"
-      },
-      {
-        "stepId": "ce02-petrov-dok-03-sbar-uebergabe",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Übergabe"
       }
     ],
-    "coveragePercent": 85
+    "coveragePercent": 98
   },
   {
     "situationId": "ls-schmidt-adipositas",
     "totalBegriffe": 28,
-    "erklaerteBegriffe": 24,
-    "luecken": [
-      {
-        "stepId": "ce02-schmidt-beob-01-brilliantfrage",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Proteinmangelernährung"
-      },
-      {
-        "stepId": "ce02-schmidt-beob-01-brilliantfrage",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Proteinmangelernährung"
-      },
-      {
-        "stepId": "ce02-schmidt-beob-05-haut-inspektion",
-        "stepType": "hotspot",
-        "phase": "beobachten",
-        "begriff": "Intertrigo"
-      },
-      {
-        "stepId": "ce02-schmidt-beob-05-haut-inspektion",
-        "stepType": "hotspot",
-        "phase": "beobachten",
-        "begriff": "Dekubitus"
-      },
-      {
-        "stepId": "ce02-schmidt-beob-05-haut-inspektion",
-        "stepType": "hotspot",
-        "phase": "beobachten",
-        "begriff": "Mazerierung"
-      },
-      {
-        "stepId": "ce02-schmidt-beob-05-haut-inspektion",
-        "stepType": "hotspot",
-        "phase": "beobachten",
-        "begriff": "Intertrigo"
-      },
-      {
-        "stepId": "ce02-schmidt-beob-05-haut-inspektion",
-        "stepType": "hotspot",
-        "phase": "beobachten",
-        "begriff": "Dekubitus"
-      }
-    ],
-    "coveragePercent": 86
+    "erklaerteBegriffe": 28,
+    "luecken": [],
+    "coveragePercent": 100
   },
   {
     "situationId": "ls-yilmaz-hueft-tep",
     "totalBegriffe": 96,
-    "erklaerteBegriffe": 30,
+    "erklaerteBegriffe": 32,
     "luecken": [
       {
         "stepId": "ce02-yilmaz-beob-01-haut-brilliant",
@@ -1539,12 +848,6 @@
         "begriff": "Schwindel"
       },
       {
-        "stepId": "ce02-yilmaz-dur-01-mobilisation-reihenfolge",
-        "stepType": "sequencing",
-        "phase": "durchfuehren",
-        "begriff": "Schmerz"
-      },
-      {
         "stepId": "ce02-yilmaz-dur-02-orthostatisch-branching",
         "stepType": "branching",
         "phase": "durchfuehren",
@@ -1710,12 +1013,6 @@
         "stepId": "ce02-yilmaz-eval-02-folgeplan-morgen",
         "stepType": "reflection",
         "phase": "evaluieren",
-        "begriff": "Übergabe"
-      },
-      {
-        "stepId": "ce02-yilmaz-eval-02-folgeplan-morgen",
-        "stepType": "reflection",
-        "phase": "evaluieren",
         "begriff": "Pflegeplanung"
       },
       {
@@ -1723,12 +1020,6 @@
         "stepType": "reflection",
         "phase": "evaluieren",
         "begriff": "Kontinuität"
-      },
-      {
-        "stepId": "ce02-yilmaz-eval-02-folgeplan-morgen",
-        "stepType": "reflection",
-        "phase": "evaluieren",
-        "begriff": "Übergabe"
       },
       {
         "stepId": "ce02-yilmaz-eval-02-folgeplan-morgen",
@@ -1795,20 +1086,14 @@
         "stepType": "freetext",
         "phase": "dokumentieren",
         "begriff": "Mündliche Übergabe"
-      },
-      {
-        "stepId": "ce02-yilmaz-dok-04-uebergabe-optional",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Übergabe"
       }
     ],
-    "coveragePercent": 31
+    "coveragePercent": 33
   },
   {
     "situationId": "ls-yilmaz-spirale2",
     "totalBegriffe": 47,
-    "erklaerteBegriffe": 33,
+    "erklaerteBegriffe": 39,
     "luecken": [
       {
         "stepId": "ce02-yilmaz-s2-info-02-akte-risikoprofil",
@@ -1826,25 +1111,7 @@
         "stepId": "ce02-yilmaz-s2-info-02-akte-risikoprofil",
         "stepType": "flipcard",
         "phase": "informieren",
-        "begriff": "Prädilektionsstelle"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-info-02-akte-risikoprofil",
-        "stepType": "flipcard",
-        "phase": "informieren",
         "begriff": "Hyperglykämie"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-beob-01-wunde-sehen",
-        "stepType": "hotspot",
-        "phase": "beobachten",
-        "begriff": "Wundrand"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-beob-01-wunde-sehen",
-        "stepType": "hotspot",
-        "phase": "beobachten",
-        "begriff": "Wundgrund"
       },
       {
         "stepId": "ce02-yilmaz-s2-beob-05-warum-trotz-prophylaxe",
@@ -1863,12 +1130,6 @@
         "stepType": "sequencing",
         "phase": "planen",
         "begriff": "135°-Schräge Seitenlage"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-02-positionierungsplan",
-        "stepType": "sequencing",
-        "phase": "planen",
-        "begriff": "135°-Seitenlage"
       },
       {
         "stepId": "ce02-yilmaz-s2-plan-04-donabedian-qualitaet",
@@ -1898,33 +1159,15 @@
         "stepId": "ce02-yilmaz-s2-durch-01-vorbereitung-hygiene",
         "stepType": "sorting",
         "phase": "durchfuehren",
-        "begriff": "Aseptisch"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-01-vorbereitung-hygiene",
-        "stepType": "sorting",
-        "phase": "durchfuehren",
         "begriff": "Händedesinfektion"
       },
       {
         "stepId": "ce02-yilmaz-s2-durch-01-vorbereitung-hygiene",
         "stepType": "sorting",
         "phase": "durchfuehren",
-        "begriff": "Sterile Unterlage"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-01-vorbereitung-hygiene",
-        "stepType": "sorting",
-        "phase": "durchfuehren",
         "begriff": "Händedesinfektion"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-01-vorbereitung-hygiene",
-        "stepType": "sorting",
-        "phase": "durchfuehren",
-        "begriff": "Aseptisch"
       }
     ],
-    "coveragePercent": 70
+    "coveragePercent": 83
   }
 ]

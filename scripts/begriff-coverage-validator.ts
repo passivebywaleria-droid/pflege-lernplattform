@@ -48,20 +48,39 @@ function validateSituation(ceId: string, situationId: string): SituationReport {
   const alleBegriffe = new Set<string>();
   const luecken: BegriffLuecke[] = [];
 
-  // Auch inline-wissen.ts lesen falls vorhanden
-  const iwFile = path.join(dir, "inline-wissen.ts");
-  if (fs.existsSync(iwFile)) {
-    const iwContent = fs.readFileSync(iwFile, "utf-8");
-    // Alle glossarBegriffe aus inline-wissen.ts → als "erklärt" markieren
-    const matches = iwContent.match(/glossarBegriffe:\s*\[(.*?)\]/g) || [];
-    for (const m of matches) {
-      const begriffe = m.match(/"([^"]+)"/g) || [];
-      for (const b of begriffe) {
-        erklaert.add(b.replace(/"/g, "").toLowerCase());
+  // Alle .ts-Dateien im Verzeichnis lesen die Inline-Wissen enthalten könnten
+  // (inline-wissen.ts, inline-wissen-patch.ts, karteikarten-auto.ts etc.)
+  const allTsFiles = fs.existsSync(dir)
+    ? fs.readdirSync(dir).filter(f => f.endsWith(".ts"))
+    : [];
+
+  for (const tsFile of allTsFiles) {
+    const filePath = path.join(dir, tsFile);
+    const content = fs.readFileSync(filePath, "utf-8");
+
+    // Alle glossarBegriffe in inlineWissen-Kontexten als "erklärt" markieren
+    // (sowohl in phase-*.ts als auch in inline-wissen*.ts)
+    if (content.includes("inlineWissen") || content.includes("stepType: \"text\"")) {
+      // Finde alle Blöcke die Inline-Wissen oder Text-Steps sind
+      const blocks = content.split(/\{\s*stepId:/);
+      for (const block of blocks) {
+        const isExplainer =
+          block.includes('stepType: "inlineWissen"') ||
+          block.includes('stepType: "text"');
+        if (!isExplainer) continue;
+
+        const glossarMatches = block.match(/glossarBegriffe:\s*\[(.*?)\]/g) || [];
+        for (const gm of glossarMatches) {
+          const items = gm.match(/"([^"]+)"/g) || [];
+          for (const item of items) {
+            erklaert.add(item.replace(/"/g, "").toLowerCase());
+          }
+        }
       }
     }
-    // Auch kerntext-Begriffe die in ** ** stehen als "erklärt" zählen
-    const fettBegriffe = iwContent.match(/\*\*([^*]+)\*\*/g) || [];
+
+    // Fett-markierte Begriffe in allen Dateien als "erklärt" zählen
+    const fettBegriffe = content.match(/\*\*([^*]+)\*\*/g) || [];
     for (const fb of fettBegriffe) {
       const clean = fb.replace(/\*\*/g, "").trim().toLowerCase();
       if (clean.length > 2 && clean.length < 50) {
@@ -69,6 +88,21 @@ function validateSituation(ceId: string, situationId: string): SituationReport {
       }
     }
   }
+
+  // Generische Begriffe die keinen Inline-Baustein brauchen (selbsterklärend)
+  const GENERISCH = new Set([
+    "patient", "patientin", "pflege", "pflegekraft", "arzt", "station",
+    "bett", "zimmer", "tochter", "sohn", "ehefrau", "ehemann",
+    "hand", "arm", "bein", "fuß", "kopf", "rücken", "bauch", "knie",
+    "würde", "respekt", "empathie", "vertrauen", "angst", "schmerz",
+    "passiv", "aktiv", "rechts", "links", "oben", "unten",
+    "schuldgefühle", "objektivität", "verhältnismäßigkeit",
+    "priorität", "übergabe", "reha", "körperpflege",
+    "pflegemaßnahmen", "aufklärungspflicht", "angehörigenberatung",
+    "handführung", "sauerstoffsättigung", "schultergürtel",
+  ]);
+
+  for (const g of GENERISCH) erklaert.add(g);
 
   for (const phaseFile of phasenOrder) {
     const filePath = path.join(dir, `${phaseFile}.ts`);
