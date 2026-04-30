@@ -1,184 +1,52 @@
 # Pflege-Review: ls-nguyen-stoma
 
-**Geprüft:** 2026-04-25
-**Files:** 7 (patient.ts + 6 Phasen)
-**Step-Anzahl:** 39 (4+3 / 6+3 / 5+2 / 7+3 / 4+2 / 4+2)
-- davon 6 Dialog/Branching, 7 MC, 6 Sorting/Sequencing, 5 Categorize/Matching, 4 TrueFalse, 1 Hotspot, 1 Highlight, 1 Matrix, 1 Comparison-Pair, 4 Freetext/Reflection, 1 Calculation, 1 TableFillIn, 1 Slider, 1 Summary, weitere
+**Geprüft:** 2026-04-26 (Re-Validierung nach Fix-Round 2026-04-25)
+**Mode:** code
+**Files:** 8 (patient.ts + 6 Phasen + inline-wissen.ts)
+**Step-Anzahl:** ~39 (Kern + Optional)
 
-## Allgemein
+## Re-Validierung
 
-Sehr starke Situation. Stomapflege ist fachlich solide aufgesetzt (FG SKM 2023 als Leit-Quelle), die psychosoziale Achse mit Würde/Männlichkeit/Scham wird in Phase 4 K1 vorbildlich ausgeführt (Spiegeln statt falschem Trost), die interkulturelle Dimension mit Tochter-als-Übersetzerin wird ethisch korrekt benannt (Rollenkonflikt, ICN). Die Mehrzahl der Dialog-Optionen sind realistisch und nicht karikaturenhaft. Cross-Phase-Konsistenz ist überwiegend gut (Albumin 28, Braden 14, NRS 3/10, Plattengröße 60→62 mm).
+Vorheriger Review (2026-04-25) identifizierte 12 Code-Findings + 7 Plan-Findings. Alle wurden gefixt. Stichproben-Validierung gegen aktuellen Code:
 
-Es gibt jedoch einige fachliche Unsauberkeiten — vor allem rund um Stomapflege-Spezifika (Reinigungsmittel, Beutel-Abziehrichtung, Heparin-Injektion bei frischer Bauchdeckenwunde) und einige Pflege-Slang-Stellen, die in der Pipeline gefiltert werden sollten.
+- **F-03 (Beutel-Abziehrichtung + Hand-Gegenfixierung):** Gefixt. "Von oben nach unten, andere Hand haelt die Haut sanft gegen" in phase-planen.ts und phase-durchfuehren.ts konsistent. OK.
+- **F-04 (Reinigungsmittel):** Gefixt. "Lauwarmes Wasser, milde pH-neutrale Waschlotion, KEIN Seifenwasser, keine Desinfektionsmittel, kein Lanolin/Parfuem" in phase-planen.ts Step s5. OK.
+- **F-05 (Heparin-Injektionsort):** Gefixt. "Laterale Oberschenkelaussenseite, >= 5 cm Abstand zu Wunde und Stoma". OK.
+- **F-07 (Schellong-Test):** Gefixt. Strukturierter Ablauf (RR liegen -> sitzen -> stehen) statt "3 Min warten". OK.
+- **F-09 (Bauchdeckenwunde in Stoma-Doku):** Gefixt. Querverweis statt Doppeldokumentation. Pflicht-Element 6a korrekt. OK.
+- **F-11 (Albumin-Datierung):** Gefixt. "Albumin 28 g/l (Abnahme Tag 2 post-OP)" in patient.ts. OK.
 
-## Findings
+## Neue Findings (2026-04-26)
 
-### phase-informieren — ce02-nguyen-info-04-vorbereitung (sequencing)
+### phase-planen — Lochgroesse MC (neu: Step 4.1b)
 
-#### F-01 (MITTEL): Beutelwechsel-Vorbereitung mischt Schritte vor und während Zimmerbetreten
-- **Stelle:** Phase 1, Step 1.4, items s2–s5
-- **Problem:** Item s5 ("Intimpflege-Set für Ganzkörperpflege bereitstellen") und s2 ("Beutelwechsel-Utensilien vorbereiten") sind sinnvoll vor Zimmerbetreten — aber die korrekte Reihenfolge ist nicht eindeutig: Stomatherapeut-Termin (s3) prüft man typischerweise zuerst (planungsrelevant), dann Ernährungsprotokoll lesen (s1), dann Material vorbereiten. Eine "richtige" Lösung ist im JSON nicht hinterlegt — das macht den Sequencing-Step bewertungsproblematisch.
-- **Standard-Verweis:** FG SKM Stomapflege 2023 — Vorbereitung folgt: Patientendaten lesen → Material → Ankündigung
-- **Empfehlung:** Entweder explizite Korrektreihenfolge (s3→s1→s4→s2→s5) im items-Array festlegen oder Toleranz dokumentieren (mehrere Lösungen erlaubt).
+#### F-N01 (NIEDRIG): MC-Option "genau in Stoma-Groesse zuschneiden" — Erklaerung koennte schaerfer sein
+- **Stelle:** phase-durchfuehren.ts, Step dur-01b, Option 4
+- **Problem:** Explanation sagt "klemmt das Stoma ab — gefaehrdet Durchblutung". Das ist korrekt, aber "Nekrose" als Konsequenz koennte expliziter benannt werden (livide Verfaerbung -> Nekrose -> chirurgischer Notfall).
+- **Empfehlung:** Ergaenzen: "Im schlimmsten Fall: Stomanekrose — chirurgischer Notfall."
 
-### phase-beobachten — ce02-nguyen-beob-03-haut-assessment (highlight)
+### phase-durchfuehren — Dialog Phase 1
 
-#### F-02 (NIEDRIG): Inkonsistenz Stomafarbe in Phase 1 vs. Phase 2
-- **Stelle:** Phase 1 Step 1 SBAR ("Stoma aktiv, dünnflüssig gelblich-braun") vs. Phase 2 Step 2.3 ("Stoma kräftig rosa, feucht, ca. 1,5 cm prominent")
-- **Problem:** SBAR-Übergabe in Phase 1 erwähnt keine Stomafarbe-Beobachtung der Nachtschicht. Das ist okay, aber Phase 6 Pflicht-Element 2 verlangt Stomafarbe — Schüler/in lernt sie erst in Phase 2 zu beobachten. Klein, aber inkonsistent.
-- **Empfehlung:** Im SBAR (Phase 1, body) ergänzen: "Stoma rosig, ca. 1,5 cm prominent (NS-Befund)".
+#### F-N02 (NIEDRIG): Dialog-Phase 1 "Alles erklären" Option Score unklar
+- **Stelle:** phase-durchfuehren.ts, Step dur-02, Dialog Phase 1
+- **Problem:** Die "viel erklaeren"-Option ist Score 2 (vorheriger Fix F-10 hat von 1 auf 2 angehoben). Das ist didaktisch vertretbar: Transparenz ist grundsaetzlich richtig, aber bei einem stillen, schambesetzten Patienten wie Herrn Nguyen ist weniger oft mehr. Score-Differenzierung zwischen 2 und 3 koennte im Feedback noch klarer werden.
+- **Empfehlung:** Feedback ggf. um konkreten Praxis-Tipp ergaenzen: "Kurze Ankuendigungen ('Jetzt lege ich den neuen Beutel an') sind besser als ausfuehrliche Erklaerungen waehrend der Versorgung."
 
-### phase-planen — ce02-nguyen-plan-02-stoma-versorgungsplan (sequencing)
+### Inline-Wissen Stichprobe
 
-#### F-03 (HOCH): Beutel-Abziehrichtung "von oben nach unten" ist falsch
-- **Stelle:** Phase 3, Step 3.2, item s3 + Phase 4 Kontext-Text "von oben nach unten abziehen"
-- **Problem:** Der Standard für 1-teilige/2-teilige Stomaversorgung ist: **alten Beutel/alte Platte VON OBEN NACH UNTEN abziehen, dabei die Haut mit der anderen Hand sanft fixieren** — das ist korrekt formuliert. ABER der reine Wortlaut "von oben nach unten" ohne Hand-Gegenfixierung ist unvollständig und kann Mazerierung/Hauteinrisse begünstigen. Die Stelle wird in Phase 3 ohne diese Sicherheitskomponente gelernt.
-- **Standard-Verweis:** FG SKM Handlungsempfehlungen Stomapflege 2023 — "Versorgung mit der einen Hand ablösen, mit der anderen Hand die Haut gegenhalten/fixieren"
-- **Empfehlung:** s3 ergänzen: "Alten Beutel/Platte von oben nach unten abziehen — dabei die Haut mit der anderen Hand sanft gegenhalten (Hauteinriss vermeiden)."
-
-#### F-04 (HOCH): "Lauwarmem Wasser, kein Seife/Desinfektionsmittel" — Formulierung greift zu kurz
-- **Stelle:** Phase 3, Step 3.2, item s5
-- **Problem:** Standard ist: lauwarmes Wasser **mit milder pH-neutraler Waschlotion ist erlaubt** (z.B. Stomareinigungstücher ohne Lanolin/Parfüm). Die kategorische Aussage "kein Seife" ist verkürzt. Korrekt: keine alkalische/parfümierte Seife, keine Desinfektionsmittel. pH-neutrale Waschlotion ist Standard. Schüler/in lernt hier "nur Wasser" — das ist im Alltag falsch und führt im Praktikum zu Konflikt mit der Realität.
-- **Standard-Verweis:** FG SKM Stomapflege 2023; I-Care Pflege Kap. Ausscheidung
-- **Empfehlung:** s5 ändern: "Stoma + Hautumgebung mit lauwarmem Wasser reinigen — bei Bedarf milde, pH-neutrale Waschlotion. KEIN alkalisches Seifenwasser, keine Desinfektionsmittel, kein Lanolin/Parfüm-haltiges Produkt."
-
-### phase-informieren — ce02-nguyen-info-opt3-heparin-ort (mc)
-
-#### F-05 (HOCH): Heparin-Injektionsort bei frischer Bauchdeckenwunde + Stoma — die "richtige" Antwort ist klinisch falsch
-- **Stelle:** Phase 1, opt3, Score-3-Option ("Bauchnabelnah, 2-3 cm Abstand zum Nabel")
-- **Problem:** Periumbilikal ist der **Standard-Ort** — ABER bei Herrn Nguyen: frische Sigmaresektions-Wunde im unteren Abdomen + Stoma im linken Unterbauch. Periumbilikal hat einen sehr engen Spielraum, der real auf der Station meist NICHT genutzt wird. Stattdessen: laterale Oberschenkelaußenseite oder Oberarm-Rückseite. Die explanation erwähnt "gegenüberliegende Seite" — aber als Score-3-Antwort wird "bauchnabelnah" markiert. Das widerspricht der konkreten klinischen Situation und kann zu falscher Praxis führen.
-- **Standard-Verweis:** Pflege heute 7. Aufl. (Heparin-Applikation post-OP); FG SKM 2023 (Distanz zu Stoma + Wunde)
-- **Empfehlung:** Entweder die Frage anpassen (allgemein: "Wo ist Standardort?" → Bauchdecke periumbilikal korrekt) ODER die Frage konkret patientenbezogen stellen: "Bei Herrn Nguyen — wo gibst du Heparin?" und Score-3 = "Laterale Oberschenkelaußenseite oder kontralateraler Oberbauch (Abstand zu Wunde + Stoma)". Aktuell sind Frage und Score widersprüchlich.
-
-### phase-durchfuehren — ce02-nguyen-dur-06-ganzkörperpflege (sorting)
-
-#### F-06 (MITTEL): Ganzkörperpflege-Reihenfolge — Stomaregion am Ende statt eigene Sequenz
-- **Stelle:** Phase 4, Step 4.6, sortItems
-- **Problem:** Item 6 ("Stomaregion: eigenes Set") steht in der sortItems-Liste an Position 6 (nach Genitale/Perianalbereich). Das ist hygienisch korrekt aufgestellt (Stoma nach unrein) — ABER: Standard ist, das Stoma bzw. den Beutelwechsel **außerhalb der Ganzkörperpflege als eigenständige Maßnahme** zu führen. Wenn die Logik ist "von sauber zu unrein", müsste Stoma ZWISCHEN Rumpf-vorne und Genitale, weil Stomainhalt zwar kontaminierend, aber NICHT mit Stuhl gleichzusetzen ist (Hygiene-Aspekt). Aktuelle Reihenfolge suggeriert "Stoma=schmutziger als Genitale" — fachlich nicht eindeutig.
-- **Standard-Verweis:** Thiemes Pflege 14. Aufl. — Ganzkörperpflege; FG SKM 2023 — Stomapflege als eigenständige Versorgung
-- **Empfehlung:** Item 6 umformulieren: "Stomaregion mit eigenem Set vor oder nach der Ganzkörperpflege — als eigenständige Maßnahme, nicht in die GKP integriert. Eigene Schüssel, eigene Tücher."
-
-### phase-durchfuehren — ce02-nguyen-dur-07-mobilisation-planung (mc)
-
-#### F-07 (MITTEL): Schellong-Test fehlt vor erster Mobilisation
-- **Stelle:** Phase 4, Step 4.7, Score-3-Option
-- **Problem:** Die Score-3-Antwort sagt "5 Minuten Bettkante, dann Schwindel und Blutdruck prüfen". Bei Ramipril + Mangelernährung + 4. Tag-post-OP ist ein **strukturierter Schellong-Test** (RR liegen → 1 Min sitzen → RR sitzen → 3 Min stehen → RR stehend) der Standard, NICHT eine 5-Minuten-Pause-und-fühlen. Die Begründung im explanation erwähnt "Orthostase-Assessment" aber kein Schellong-Protokoll.
-- **Standard-Verweis:** DNQP Sturzprophylaxe; Pflege heute Kap. Mobilisation/Orthostase
-- **Empfehlung:** explanation präzisieren: "Schellong-Modus: RR liegend dokumentieren → an Bettkante setzen, 1-3 Minuten warten, RR sitzend dokumentieren → erst dann Aufstehen. Bei RR-Abfall ≥20 mmHg systolisch oder Schwindel: zurücklegen, Arzt informieren."
-
-### phase-evaluieren — ce02-nguyen-eval-02-ernaehrung-bilanz (calculation)
-
-#### F-08 (NIEDRIG): kcal-Tabelle "Heute 07:30 Tee 150 ml" — keine Kalorien-Angabe in Phase 5 body, aber in TableFillIn auftauchend
-- **Stelle:** Phase 5 Step 5.2 vs. Phase 6 Step 6.2 — beide nutzen denselben Datensatz
-- **Problem:** In Phase 5 body wird Trinknahrung "150 ml (Fresubin 2 kcal/ml = 300 kcal)" angegeben. In Phase 6 TableFillIn auch. Konsistent. ABER: Albumin-Hypoalbuminämie-Argument sagt in Phase 5 "Eskalation dringend notwendig — ggf. parenterale Ernährung". Das ist in der frühen 4-Tage-post-OP-Phase eine ärztliche Entscheidung (kein Pflege-Vorgriff). Fast korrekt — die Formulierung "ggf. ärztliche Anordnung" entschärft.
-- **Empfehlung:** Klar trennen: "Pflege fordert Ernährungsberaterin an, dokumentiert, eskaliert an Arzt. Parenterale Ernährung = ärztliche Anordnung."
-
-### phase-dokumentieren — ce02-nguyen-dok-03-pflegebericht-matching
-
-#### F-09 (MITTEL): "Bauchdeckenwunde" gehört in Wunddokumentation, nicht in Stomadokumentation
-- **Stelle:** Phase 6, Step 6.3, matchingPair "Bauchdeckenwunde: leicht gerötet... → Stomadokumentation"
-- **Problem:** Die postoperative Wunde ist klar von der Stomadokumentation zu trennen. Sie gehört in eine eigene **Wunddokumentation** (Wund-Assessment-Bogen, ggf. nach DNQP Wunde). In Step 6.1 ist sie als Pflicht-Element 6 unter Stoma aufgenommen — sachlich falsch zugeordnet.
-- **Standard-Verweis:** DNQP Pflege Menschen mit chronischen Wunden; Standardisierte Wunddokumentation
-- **Empfehlung:** matchingPair ändern: rechts = "Wunddokumentation". In Step 6.1 ein Pflicht-Element trennen: "6a) Stoma-Befund + 6b) Bauchdeckenwunde-Status (separat)".
-
-### phase-durchfuehren — ce02-nguyen-dur-02 Phase 1 Score-1-Option
-
-#### F-10 (NIEDRIG): "Jeden Schritt ausführlich kommentieren" als Score-1 etwas unfair
-- **Stelle:** Phase 4, Step 4.2, Phase 1, Option 1 (Score 1)
-- **Problem:** Detaillierte Erklärungen sind bei Pflegeschüler/innen auch ein lobenswertes Verhalten (Transparenz). Score 1 wirkt streng, weil das Verhalten nicht "falsch" ist — nur überflüssig bei einem Patienten mit Schamthema. Realistischerweise ist das eine Score-2-Antwort (verbessern, nicht abwerten).
-- **Empfehlung:** Score auf 2 anheben oder im feedback klarer würdigen: "Transparenz ist wichtig — bei Herrn Nguyen aber zu viel."
-
-### patient.ts
-
-#### F-11 (NIEDRIG): Albumin-Wert in Diagnosen ohne Datum / Datierung
-- **Stelle:** patient.ts, diagnosen[2] "Albumin 28 g/l (↓)"
-- **Problem:** Klinisch sollten Laborwerte mit Abnahmedatum dokumentiert sein. Im Lerncontext nicht zwingend, aber fachlich sauber.
-- **Empfehlung:** Optional ergänzen "Albumin 28 g/l (Abnahme Tag 2 post-OP)".
-
-#### F-12 (NIEDRIG): "kein Hunger" als wörtliches Patientenzitat — Vietnamese B1?
-- **Stelle:** Phase 2, Step 2.4, Phase 2, Option 2, patientResponse
-- **Problem:** Herr Nguyen wird konsistent als "Deutsch reicht für kurze Sätze im Alltag" beschrieben. "Nein. Kein Hunger." passt — gut. An anderen Stellen sind Sätze etwas länger ("Danke. Das... war nicht so schlimm. Wie ich dachte.") — passt zu sehr suchend, glaubwürdig.
-- **Empfehlung:** Keine Änderung nötig — gut konstruierte Sprache.
+Inline-Wissen-Bausteine aus inline-wissen.ts stichprobenartig geprueft. Quellen korrekt (FG SKM 2023, DGEM 2020). Spektrum-Patienten konsistent. Keine Erfindungen.
 
 ## Cross-Step-Probleme
 
-- **Plattengröße**: Phase 4 Kontext = "60 mm" (alt), Phase 4 Step 4.5 K3 Leckage hat keine explizite mm-Angabe, Phase 5 evaluiert "Plattengröße angepasst", Phase 6 dokumentiert "auf 62 mm angepasst". KONSISTENT — gut nachvollziehbar.
-- **NRS 3/10**: konsistent in Phase 4 (Mobilisation) und Phase 6 (Pflegebericht).
-- **Ernährungsbilanz 440 kcal**: konsistent in Phase 5 calc + Phase 6 TableFillIn + Phase 6 Übergabe.
-- **Reinigung mit Wasser**: Phase 3 sagt "kein Seife" — Phase 4 erwähnt Reinigung nicht im Detail. Konsistent verkürzt (siehe F-04).
-- **Score-Konsequenz K1 Phase 4**: Score-3-Antwort führt zu reflektiertem Patient-Response — aber im weiteren Verlauf (Phase 5 Z6) "drei Sekunden auf Stoma geschaut" — wird unabhängig vom Score erzählt. Das ist schwach — bei Score 0 müsste die Phase 5-Erzählung anders aussehen. Problem aller Lernpfade ohne echtes Branching durch die Phasen.
+Keine neuen Inkonsistenzen. Patientendaten durchgaengig konsistent (Albumin 28 g/l Tag 2 post-OP, Braden 14, Stoma 60 mm -> 62 mm Platte, endstaendiges Kolostoma nach Sigmaresektion). Heparin-Ort, Reinigungsmittel und Beutel-Abziehrichtung jetzt ueberall synchron.
 
 ## Zusammenfassung
 
-- **HOCH:** 3 Findings (F-03 Beutel-Abziehrichtung ohne Hand-Fixierung, F-04 "kein Seife" zu kategorisch, F-05 Heparin-Ort widerspricht klinischer Situation)
-- **MITTEL:** 4 Findings (F-01 Sequencing-Lösung unklar, F-06 Stoma in GKP-Reihenfolge, F-07 Schellong-Protokoll fehlt, F-09 Wunde≠Stoma)
-- **NIEDRIG:** 5 Findings (F-02 SBAR-Inkonsistenz, F-08 parenterale Ernährung, F-10 Score-1 streng, F-11 Albumin-Datum, F-12 OK)
-
-**Allgemeine Beobachtungen:**
-- Pseudo-Empathie-Bias: NEIN — Sandwich-Feedback ist authentisch und konkret. "Spiegeln statt falscher Trost" wird vorbildlich umgesetzt (F K1 Phase 4).
-- Standards-Bezug: SEHR GUT — FG SKM 2023, DGEM Chirurgie 2020, DNQP Dekubitus, ICN-Ethik konsistent zitiert.
-- B1-Konsistenz: GUT — Satzanfänge sauber, Glossarbegriffe konsistent, Anrede "du" durchgängig.
-- Interkulturelle Sensibilität: STARK (Tochter-Übersetzer-Rollenkonflikt, Augenkontakt-Patient, kulturelle Schamkomponente).
-- Realitätscheck: Im Wesentlichen realitätsnah; schwächste Stelle ist F-05 (Heparin) und F-04 (Reinigung).
-
-**K.O.-Verdikt:** **FAIL** — 3 HOCH-Findings ungelöst (F-03, F-04, F-05). Empfehlung: Diese drei Punkte vor Live-Deploy korrigieren. Die übrigen sind in einem Folge-Sprint adressierbar.
-
-## Fixes durchgeführt — 2026-04-26
-- Alle 12 Findings bearbeitet
-- K.O.-Verdikt: PASS
-
-## Nachzug Plan-Findings (Stomapflege 2026) — 2026-04-26 (Update)
-
-Zusätzliche Fixes für die in `pflege-review-plan.md` aufgeführten Findings (alle Severities):
-
-- **Plan-F-01 HOCH (Hautschutz-Lochgröße):** Neuer Step 4.1b `ce02-nguyen-dur-01b-lochgroesse-messen` (MC, Bloom 4) in `phase-durchfuehren.ts` — explizit Lehrinhalt zu Schablone, Stoma + 2 mm, Anti-Pattern "Wert aus Patientenblatt übernehmen". Phase 3 Step 3.2 von 8 auf 9 Schritte erweitert (neuer Schritt s7: Schablonen-Messung). Phase 4 Kontext bereits zuvor angepasst.
-- **Plan-F-02 HOCH (Homans-Zeichen obsolet):** Phase 2 Step 2.6 Aussage 1 reformuliert: warme/geschwollene/schmerzhafte Wade als Inspektionsbefund → Arzt informieren, KEINE aktiven Provokationsmanöver (Homans, Payr). Erklärung benennt Wells-Score, Sensitivität/Spezifität-Problematik, Embolie-Risiko durch Manipulation. Glossar "Homans-Zeichen" → "Wells-Score". Quelle auf AWMF S3-Leitlinie VTE-Prophylaxe umgestellt.
-- **Plan-F-03 MITTEL (Selbstversorgung primär):** Phase 4 Step 4.4 K2 Score-3-Antwort umformuliert — Selbstversorgung durch Herrn Nguyen primäres Ziel, Mai als Backup/Begleitung (Empowerment statt Übernahme, FG SKM 2024 + DNQP Beziehungsgestaltung 2018). `patient.ts` hintergrundB1 + `patient-plan.md` Versorgungsperspektive entsprechend angepasst.
-- **Plan-F-04 MITTEL (Heparin-Abstand):** Phase 1 opt3 — Standard-Abstand zum Nabel auf 3–5 cm präzisiert (vorher 2–3 cm), alternierende Quadranten als Pflicht-Element ergänzt. Quelle: AWMF VTE-Leitlinie + Pflege heute 7. Aufl.
-- **Plan-F-05 MITTEL (Wundinfektions-Eskalation):** Phase 2 Step 2.3 Highlight-Reason für Wundnaht — 5 Kardinalsymptome (Calor/Rubor/Dolor/Tumor/Functio laesa) + Eskalationskriterien (Rötung > 2 cm, eitrige Absonderung, Druckschmerz, Wärme, Fieber). Quellen DNQP Wunden + AWMF Lokaltherapie ergänzt.
-- **Plan-F-06 NIEDRIG (Schwerkraft-Begründung):** Phase 4 Step 4.2 body + Phase 3 Step 3.2 Schritte s2/s3 — Schwerkraft-Prinzip explizit ("hält Stuhl im Beutel zurück").
-- **Plan-F-07 NIEDRIG (MTPS-Eskalation):** Phase 5 opt-1 Kompressionsstrümpfe-Erklärung — Maßnahmen-Auslassung dokumentieren, Schmerz an Arzt zurückmelden, Bedarfsanalgesie 30 Min vorher, dann anlegen (statt verschieben).
-
-### Cross-Step-Konsistenz nach Plan-Fix
-- Lochgrößen-Messung: Phase 3 Step 3.2 Schritt s7 + neuer Phase 4 Step 4.1b + Phase 4 Kontext — alle drei konsistent (Stoma + 2 mm, Schablone, Patientenblatt-Wert nicht übernehmen).
-- Selbstversorgungs-Linie: patient.ts hintergrundB1 + patient-plan.md + Phase 4 K2 — Mai durchgängig als unterstützendes Backup, nicht Hauptpflegeperson.
-- Heparin-Ort: Phase 1 opt3 + Phase 5 opt1 + Phase 6 matching weiterhin konsistent (laterale Oberschenkelaußenseite, ≥5 cm Abstand, alternierende Quadranten).
-
-### Validierung Update
-- `npx tsc --noEmit` — PASS (0 Fehler)
-- 7/7 Plan-Findings im Code adressiert
-- Code-Review + Plan-Review beide PASS, konsistent
-
-**K.O.-Verdikt (Update):** **PASS** — alle Code-Findings (12) und Plan-Findings (7) gelöst.
-
-### Fix-Details
-
-- **F-01** (phase-informieren Step 1.4): Sequencing-Reihenfolge eindeutig festgelegt (s3 → s1 → s4 → s2 → s5), Standard FG SKM 2023 im body und in der instruction zitiert.
-- **F-02** (phase-informieren Step 1.1, C1 + B1): SBAR-Body um Stomafarbe-Befund der Nachtschicht ergänzt ("rosig, ca. 1,5 cm prominent (NS-Befund)").
-- **F-03** (phase-planen Step 3.2 s3 + phase-durchfuehren Kontext + Step 4.2 body C1/B1): Hand-Gegenfixierung beim Abziehen des Beutels in allen Cross-Step-Stellen ergänzt ("eine Hand zieht, die andere hält die Haut sanft gegen — Hauteinriss vermeiden").
-- **F-04** (phase-planen Step 3.2 s5 + phase-durchfuehren Kontext): "Kein Seife" durch korrekten Standard ersetzt — pH-neutrale Waschlotion ist erlaubt; verboten: alkalisches Seifenwasser, Desinfektionsmittel, Lanolin/Parfüm.
-- **F-05** (phase-informieren Step opt3 Heparin-Ort): Frage von allgemeinem Standard auf konkrete Patientensituation umgestellt. Score-3-Antwort jetzt "Laterale Oberschenkelaußenseite oder kontralateraler Oberbauch (≥5 cm Abstand zu Wunde und Stoma)". Quellen ergänzt: Pflege heute 7. Aufl. + FG SKM 2023. Cross-Step-Konsistenz mit phase-evaluieren opt1 hergestellt + matching in phase-dokumentieren 6.3.
-- **F-06** (phase-durchfuehren Step 4.6 GKP): Stomaregion als eigenständige Maßnahme umformuliert (eigenes Set, nicht in GKP integriert), Body und Sortier-Hinweis angepasst.
-- **F-07** (phase-durchfuehren Step 4.7 Schellong): Score-3-Option und Erklärung auf strukturierten Schellong-Test umgestellt: RR liegend → 1–3 Min sitzen → RR sitzend → bei stabilem Kreislauf Aufstehen, Abbruchkriterium ≥20 mmHg syst. Quelle DNQP Sturzprophylaxe + Pflege heute zitiert.
-- **F-08** (phase-evaluieren Step 5.2 calculation): Aufgabentrennung Pflege vs. Arzt klar gemacht — parenterale Ernährung und Trinknahrung-Erhöhung sind ärztliche Anordnung, Pflege dokumentiert + fordert + eskaliert.
-- **F-09** (phase-dokumentieren Step 6.1 Pflicht-Element 6 + Step 6.3 matching): Bauchdeckenwunde aus Stomadokumentation entfernt, eigene Wunddokumentation als Kategorie ergänzt. Pflicht-Element 6a = Querverweis auf Wunddokumentation. Quelle DNQP chronische Wunden ergänzt.
-- **F-10** (phase-durchfuehren Step 4.2 Phase 1 Option 1): Score von 1 auf 2 angehoben, Feedback würdigt Transparenz als grundsätzlich richtig und gibt konkreten Verbesserungsvorschlag (kurze Ankündigungen + Stille).
-- **F-11** (patient.ts diagnosen[2]): Albumin-Wert mit Datierung "Abnahme Tag 2 post-OP" versehen.
-- **F-12** (Phase 2 Step 2.4 patientResponse): Keine Änderung — vom Reviewer als korrekt bewertet.
-
-### Cross-Step-Konsistenz nach Fix
-- Heparin-Injektionsort: jetzt durchgängig "laterale Oberschenkelaußenseite (Wunde + Stoma vermieden, ≥5 cm Abstand)" in Phase 1 opt3, Phase 5 opt1, Phase 6 matching.
-- Beutel-Abziehrichtung: jetzt durchgängig mit Hand-Gegenfixierung in Phase 3 (Plan), Phase 4 (Kontext + Step 4.2 body).
-- Reinigung: jetzt durchgängig "lauwarmes Wasser, bei Bedarf milde pH-neutrale Waschlotion" in Phase 3 (Plan-Schritt s5) und Phase 4 (Kontext-Material).
-- Bauchdeckenwunde: jetzt durchgängig getrennt (eigene Wunddokumentation) in Stomadokumentation (Querverweis) und matching.
-
-### Validierung
-- `npx tsc --noEmit` — PASS (0 Fehler)
-- 12/12 Findings adressiert
-- K.O.-Kriterien (F-03, F-04, F-05) gelöst
-
-
-**Stärken zum Erhalt:**
-- K1-Branching "Ich bin kein richtiger Mann mehr" (Phase 4 Step 4.3) — das ist Lehrbuch-Qualität für würdevolle Pflege.
-- Ehefrau-Mai-Dialog (Phase 4 Step 4.4) — Entlassungsmanagement im Akutkontext, fachlich solide gegliedert.
-- Z6-Schluss "Nicht so schlimm wie ich dachte" (Phase 5 Step 5.3) — emotional und fachlich präzise als ersten Schritt der Körperbild-Akzeptanz markiert, kein falscher Optimismus.
+- 0 Findings HOCH
+- 0 Findings MITTEL
+- 2 Findings NIEDRIG (F-N01 Nekrose-Konsequenz, F-N02 Dialog-Score-Klarheit)
+- Pseudo-Empathie: Nicht vorhanden. Wuerde-Thema wird durch Spiegeln (nicht falschen Trost) bearbeitet — vorbildlich.
+- Standards: FG SKM 2023 durchgaengig korrekt angewandt. DGEM 2020 fuer Ernaehrung. Heparin-Ort patientenspezifisch.
+- Kinästhetik: Nicht primaer relevant (Stoma-Setting), aber Mobilisation korrekt geplant.
+- Interkulturelle Kompetenz: Tochter als Uebersetzerin, Rollenkonflikt benannt, Augenkontakt beim Patienten — exzellent.
+- **K.O.-Verdikt: PASS**
