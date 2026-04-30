@@ -14,7 +14,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
   kontext:
     "Du betrittst Zimmer 6. Herr Nguyen liegt im Bett, das Kopfteil leicht erhöht. Er schaut zur Wand, als du hereinkommst. Tochter Linh sitzt auf dem Stuhl rechts, Handy in der Hand. Sie steht auf: 'Guten Morgen. Papa hat gut geschlafen.' Ehefrau Mai sitzt am Fenster. Sie lächelt kurz, dann schaut sie auf ihre Hände. Du begrüßt Herrn Nguyen auf Augenhöhe, erklärst auf Deutsch was du gleich tun wirst — Linh übersetzt. Herr Nguyen nickt knapp. Linh übersetzt leise: 'Er sagt, es ist ihm peinlich. Er möchte nicht, dass jemand das sieht.' Jetzt: systemische Beobachtung, bevor der Beutel geöffnet wird.",
   kontextB1:
-    "Du gehst ins Zimmer 6. Herr Nguyen liegt im Bett. Er schaut zur Wand. Tochter Linh steht auf: 'Guten Morgen. Papa hat gut geschlafen.' Ehefrau Mai sitzt am Fenster. Du begrüßt Herrn Nguyen. Linh übersetzt. Linh sagt leise: 'Er sagt, es ist ihm peinlich. Er möchte nicht, dass jemand das sieht.' Jetzt: Erst schaün, dann handeln.",
+    "Du gehst ins Zimmer 6. Herr Nguyen liegt im Bett. Er schaut zur Wand. Tochter Linh steht auf: 'Guten Morgen. Papa hat gut geschlafen.' Ehefrau Mai sitzt am Fenster. Du begrüßt Herrn Nguyen. Linh übersetzt. Linh sagt leise: 'Er sagt, es ist ihm peinlich. Er möchte nicht, dass jemand das sieht.' Jetzt: Erst schauen, dann handeln.",
   kernSteps: [
     // Step 2.1 — Hotspot: Stomafarbe (BRILLIANT-FRAGE)
     {
@@ -171,7 +171,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
             reason:
               "Dokumentationspflichtig — Wundnaht-Status post-OP ist tägliche Beobachtungspflicht. Die fünf Kardinalsymptome der Wundinfektion (Calor / Wärme, Rubor / Rötung, Dolor / Schmerz, Tumor / Schwellung, Functio läsa / Funktionseinschränkung) immer mitprüfen. 'Leicht gerötet + seröse Absonderung' ist am 4. POD noch grenzwertig-tolerierbar. Eskalations-Kriterien (sofortige Arzt-Information): Rötungs-Ausdehnung > 2 cm um Wunde, eitrige/trübe Absonderung, zunehmender Druckschmerz, lokale Wärme, neue Schwellung, Fieber. Quelle: DNQP Pflege chronischer Wunden; AWMF Wundbehandlung.",
             reasonB1:
-              "Wichtig aufschreiben! Die Bauch-Wunde ist leicht rot. Am 4. Tag nach der OP ist das grenzwertig — du musst genau hinschaün. Alarm-Zeichen für Wundinfektion: 1) Rötung wird größer (> 2 cm), 2) Eiter (gelb-grünlich) statt klar-seröser Flüssigkeit, 3) starke Schmerzen, 4) Wunde wird warm, 5) Fieber. Wenn eines davon kommt → sofort Arzt informieren.",
+              "Wichtig aufschreiben! Die Bauch-Wunde ist leicht rot. Am 4. Tag nach der OP ist das grenzwertig — du musst genau hinschauen. Alarm-Zeichen für Wundinfektion: 1) Rötung wird größer (> 2 cm), 2) Eiter (gelb-grünlich) statt klar-seröser Flüssigkeit, 3) starke Schmerzen, 4) Wunde wird warm, 5) Fieber. Wenn eines davon kommt → sofort Arzt informieren.",
           },
           {
             text: "Stoma-Beutel: bräunlich-gelblicher, dünnflüssiger Inhalt, ca. 1/3 gefüllt",
@@ -185,7 +185,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
             text: "Herr Nguyen atmet regelmäßig, keine Dyspnoe sichtbar",
             isError: false,
             reason:
-              "Kein Pflicht-Element der Stomadokumentation — Atemfreqünz ist ein allgemeines Beobachtungsmerkmal. Relevant wenn abweichend, aber hier kein spezifischer Stomabefund.",
+              "Kein Pflicht-Element der Stomadokumentation — Atemfrequenz ist ein allgemeines Beobachtungsmerkmal. Relevant wenn abweichend, aber hier kein spezifischer Stomabefund.",
             reasonB1:
               "Nicht nötig aufzuschreiben — die Atmung ist normal, und das gehört nicht in die Stoma-Dokumentation.",
           },
@@ -201,7 +201,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
             text: "Tochter Linh ist anwesend und übersetzt",
             isError: false,
             reason:
-              "Gehört nicht in die Stomadokumentation — aber in den Pflegebericht als kontextüller Faktor. In Phase 6 (Dokumentieren) wird das aufgegriffen.",
+              "Gehört nicht in die Stomadokumentation — aber in den Pflegebericht als kontextueller Faktor. In Phase 6 (Dokumentieren) wird das aufgegriffen.",
             reasonB1:
               "Nicht in die Stoma-Dokumentation — aber in den Pflegebericht. Das kommt in Phase 6.",
           },
@@ -559,7 +559,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
         storyAufhaenger:
           "Im Stoma-Beutel von Herrn Nguyen ist dünnflüssig-gelblicher Inhalt. Wie beschreibst du das fachlich? 'Dünnflüssig' ist ein guter Anfang — aber die Bristol Stool Scale gibt dir ein einheitliches Klassifikationssystem, das jede Pflegekraft weltweit versteht.",
         kerntext:
-          "**Was ist die Bristol Stool Scale?** Eine 7-stufige Skala zur standardisierten Beurteilung der Stuhlkonsistenz. Entwickelt 1997 von Heaton & Lewis an der University of Bristol.\n\n**Die 7 Typen:**\n\n• **Typ 1:** Einzelne, harte Klumpen (wie Nüsse) — Obstipation\n• **Typ 2:** Wurstförmig, klumpig — leichte Obstipation\n• **Typ 3:** Wurstförmig mit Rissen — Normalbereich\n• **Typ 4:** Wurstförmig, glatt — **ideal** (Normalbereich)\n• **Typ 5:** Weiche Klümpchen mit scharfen Rändern — leichte Diarrhoe\n• **Typ 6:** Breiig, aufgeweichte Stückchen — Diarrhoe\n• **Typ 7:** Vollständig flüssig — starke Diarrhoe\n\n**Anwendung bei Herrn Nguyen:**\n\nAm 4. POD: Stoma-Output dünnflüssig-gelblich = **Bristol Typ 6–7** (Transitphase, normal für diesen Zeitpunkt). Mit Kostaufbau wird der Output in den nächsten Tagen Richtung Typ 4–5 wandern.\n\n**Warum Bristol bei Stoma?** Einheitliche Sprache in der Dokumentation. Statt 'ziemlich flüssig' schreibst du: 'Output Bristol Typ 6'. Das ist eindeutig, messbar und verlaufsbeurteilbar.\n\n**Wichtig:** Bei Kolostoma pendelt sich der Output bei Bristol 4–5 ein. Bei Ileostoma bleibt er daürhaft bei 6–7 (Dickdarm fehlt als Wasser-Resorbierer).",
+          "**Was ist die Bristol Stool Scale?** Eine 7-stufige Skala zur standardisierten Beurteilung der Stuhlkonsistenz. Entwickelt 1997 von Heaton & Lewis an der University of Bristol.\n\n**Die 7 Typen:**\n\n• **Typ 1:** Einzelne, harte Klumpen (wie Nüsse) — Obstipation\n• **Typ 2:** Wurstförmig, klumpig — leichte Obstipation\n• **Typ 3:** Wurstförmig mit Rissen — Normalbereich\n• **Typ 4:** Wurstförmig, glatt — **ideal** (Normalbereich)\n• **Typ 5:** Weiche Klümpchen mit scharfen Rändern — leichte Diarrhoe\n• **Typ 6:** Breiig, aufgeweichte Stückchen — Diarrhoe\n• **Typ 7:** Vollständig flüssig — starke Diarrhoe\n\n**Anwendung bei Herrn Nguyen:**\n\nAm 4. POD: Stoma-Output dünnflüssig-gelblich = **Bristol Typ 6–7** (Transitphase, normal für diesen Zeitpunkt). Mit Kostaufbau wird der Output in den nächsten Tagen Richtung Typ 4–5 wandern.\n\n**Warum Bristol bei Stoma?** Einheitliche Sprache in der Dokumentation. Statt 'ziemlich flüssig' schreibst du: 'Output Bristol Typ 6'. Das ist eindeutig, messbar und verlaufsbeurteilbar.\n\n**Wichtig:** Bei Kolostoma pendelt sich der Output bei Bristol 4–5 ein. Bei Ileostoma bleibt er dauerhaft bei 6–7 (Dickdarm fehlt als Wasser-Resorbierer).",
         kerntextB1:
           "**Was ist die Bristol Stool Scale?** Eine Skala mit 7 Stufen für die Stuhlform.\n\n• **Typ 1–2:** Sehr fest (Verstopfung)\n• **Typ 3–4:** Normal (ideal)\n• **Typ 5–6:** Weich bis breiig (leichter Durchfall)\n• **Typ 7:** Ganz flüssig (Durchfall)\n\n**Bei Herrn Nguyen:** Am 4. Tag nach der OP ist der Output **Typ 6–7** (flüssig). Das ist normal in den ersten Tagen. Später wird es fester (Typ 4–5).\n\n**Warum nutzen wir diese Skala?** Statt 'ziemlich flüssig' schreibst du: 'Bristol Typ 6'. Das versteht jeder.",
         faustregel:
@@ -686,7 +686,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
       displayFormat: "analogy",
       contentC1: {
         title: "Mazerierung: Wenn Stomainhalt auf die Haut trifft",
-        body: "Mazerierung ist die häufigste Haut-Komplikation bei Stoma-Patienten — und sie entsteht durch eine klare Ursache.\n\nAnalogievon: Stell dir vor, du trägst stundenlang nasse Socken. Die Fußhaut wird aufgeweicht, weißlich und verletzlich — winzige Belastungen, die du sonst nicht spürst, reißen jetzt die Haut ein. Genauso passiert es, wenn Stomainhalt (bei Kolostoma: leicht alkalisch, bei Ileostoma: enzymatisch aggressiv) daürhaft auf die Haut rund ums Stoma gelangt. Die Haut verliert ihre Schutzbarriere. Es entstehen Mazeration, Rötung, Einrisse — ein Teufelskreis, weil die Stomaplatte dann nicht mehr dicht sitzt.\n\n**Was schützt?** 1) Passende Plattengröße (Stoma exakt ausgemessen), 2) Schutzpaste (füllt Unebenheiten), 3) Regelmäßiger Beutelwechsel (spätestens wenn 1/3–2/3 voll).",
+        body: "Mazerierung ist die häufigste Haut-Komplikation bei Stoma-Patienten — und sie entsteht durch eine klare Ursache.\n\nAnalogievon: Stell dir vor, du trägst stundenlang nasse Socken. Die Fußhaut wird aufgeweicht, weißlich und verletzlich — winzige Belastungen, die du sonst nicht spürst, reißen jetzt die Haut ein. Genauso passiert es, wenn Stomainhalt (bei Kolostoma: leicht alkalisch, bei Ileostoma: enzymatisch aggressiv) dauerhaft auf die Haut rund ums Stoma gelangt. Die Haut verliert ihre Schutzbarriere. Es entstehen Mazeration, Rötung, Einrisse — ein Teufelskreis, weil die Stomaplatte dann nicht mehr dicht sitzt.\n\n**Was schützt?** 1) Passende Plattengröße (Stoma exakt ausgemessen), 2) Schutzpaste (füllt Unebenheiten), 3) Regelmäßiger Beutelwechsel (spätestens wenn 1/3–2/3 voll).",
         glossarBegriffe: ["Mazerierung", "Stomaplatte", "Schutzpaste"],
       },
       contentB1: {

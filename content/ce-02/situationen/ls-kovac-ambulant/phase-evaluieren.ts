@@ -22,7 +22,7 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
       bloomLevel: 4,
       kompetenzbereich: "I.1",
       quellen: [
-        "DNQP Kontinenzförderung in der Pflege 2014",
+        "Fiechter/Meier 1981",
         "DNQP Erhaltung und Förderung der Mobilität 2017/2024",
       ],
       track: "basis",
@@ -81,7 +81,7 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
       stepType: "dialog",
       bloomLevel: 5,
       kompetenzbereich: "V.1",
-      quellen: ["DNQP Kontinenzförderung 2014"],
+      quellen: ["DGSM S3-Leitlinie Insomnie 2017"],
       track: "basis",
       modus: "story",
       lernziel: "ce02-kovac-ambulant-eval-schlafberatung",
@@ -196,7 +196,7 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
                   "Frau Kovač sieht dich an. \"Sie wissen nicht warum ich das Fernsehen brauche.\"",
                 score: 0,
                 feedback:
-                  "Herausforderung ohne Empathie — und du bekommst die Antwort die dich trifft. Frau Kovačs TV-Ritual beginnt mit Josips Tod um halb zwölf. Es ist kein schlechtes Habit, es ist Traür. Ohne dieses Verständnis scheitert das Gespräch hier. Geh zurück und wähle Pfad A.",
+                  "Herausforderung ohne Empathie — und du bekommst die Antwort die dich trifft. Frau Kovačs TV-Ritual beginnt mit Josips Tod um halb zwölf. Es ist kein schlechtes Habit, es ist Trauer. Ohne dieses Verständnis scheitert das Gespräch hier. Geh zurück und wähle Pfad A.",
                 feedbackB1:
                   "Nicht gut. Du weißt nicht warum Frau Kovač das Fernsehen braucht. Das Gespräch geht schlecht aus. Geh zurück zu Pfad A.",
               },
@@ -246,7 +246,7 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Pflegeplan anpassen — Befund trifft Maßnahme",
-        body: "Jetzt aktualisierst du den Pflegeplan. Paare den aktüllen Befund mit der passenden Maßnahmen-Anpassung.",
+        body: "Jetzt aktualisierst du den Pflegeplan. Paare den aktuellen Befund mit der passenden Maßnahmen-Anpassung.",
         glossarBegriffe: ["Pflegeplanung", "SMART-Ziel"],
       },
       contentB1: {
@@ -322,12 +322,12 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
   optionaleSteps: [
     // Opt-5.A — Querverweise Evaluation
     {
-      stepId: "ce02-kovac-eval-opt-a-qürverweise",
+      stepId: "ce02-kovac-eval-opt-a-querverweise",
       phase: 5,
       stepType: "text",
       bloomLevel: 2,
       kompetenzbereich: "I.1",
-      quellen: ["DNQP Kontinenzförderung 2014"],
+      quellen: ["Fiechter/Meier 1981"],
       track: "vertiefung",
       modus: "entdecker",
       tag: "pflege",
@@ -339,7 +339,7 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Was ist Evaluation?",
-        body: "Evaluation = Nachschaün ob das Pflegeziel erreicht ist.\n\nBeispiel: Das Ziel war: Frau Kovač trinkt mehr. Hat sie mehr getrunken? Wie viel? Was muss morgen anders sein?\n\nEvaluation ist keine Kontrolle. Es ist: Informationen sammeln um den Plan zu verbessern.",
+        body: "Evaluation = Nachschauen ob das Pflegeziel erreicht ist.\n\nBeispiel: Das Ziel war: Frau Kovač trinkt mehr. Hat sie mehr getrunken? Wie viel? Was muss morgen anders sein?\n\nEvaluation ist keine Kontrolle. Es ist: Informationen sammeln um den Plan zu verbessern.",
         glossarBegriffe: ["Evaluation", "Pflegeziel"],
       },
     },
@@ -350,7 +350,7 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
       stepType: "timeline",
       bloomLevel: 3,
       kompetenzbereich: "I.1",
-      quellen: ["DNQP Kontinenzförderung 2014"],
+      quellen: ["Fiechter/Meier 1981"],
       track: "vertiefung",
       modus: "entdecker",
       tag: "pflege",

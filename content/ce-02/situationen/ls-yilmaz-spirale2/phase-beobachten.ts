@@ -10,9 +10,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
   phaseId: "ls-yilmaz-spirale2-beobachten",
   phase: "beobachten",
   titel: "Beobachten — Dekubitus Grad II erkennen + Braden-Skala",
-  titelB1: "Schaün — Was ist die Wunde? Warum ist sie entstanden?",
+  titelB1: "Schauen — Was ist die Wunde? Warum ist sie entstanden?",
   kontext:
-    "Du hilfst Frau Yilmaz, sich auf die Seite zu legen, damit du das Sakrum inspizieren kannst. Mustafa schaut besorgt zu. Bevor du startest schaltest du das Zimmerlicht und die Bettleuchte ein — Tageslicht reicht im Halbdunkel des Frühdienstes nicht für eine Wundinspektion. Die Handlampe nutzt du zusätzlich für die Detailansicht. Du ziehst die Schutzhandschuhe an. Was du siehst, ist nicht mehr das, was die Kollegin als 'Rötung' bezeichnet hat. Du siehst zürst die Wunde — bevor dir jemand erklärt, was ein Dekubitus Kategorie II ist. Das ist bewusst so.",
+    "Du hilfst Frau Yilmaz, sich auf die Seite zu legen, damit du das Sakrum inspizieren kannst. Mustafa schaut besorgt zu. Bevor du startest schaltest du das Zimmerlicht und die Bettleuchte ein — Tageslicht reicht im Halbdunkel des Frühdienstes nicht für eine Wundinspektion. Die Handlampe nutzt du zusätzlich für die Detailansicht. Du ziehst die Schutzhandschuhe an. Was du siehst, ist nicht mehr das, was die Kollegin als 'Rötung' bezeichnet hat. Du siehst zuerst die Wunde — bevor dir jemand erklärt, was ein Dekubitus Kategorie II ist. Das ist bewusst so.",
   kontextB1:
     "Du hilfst Frau Yilmaz, sich auf die Seite zu legen. Mustafa schaut zu. Du machst das Zimmerlicht und die Bettleuchte an — du brauchst gutes Licht für die Wunde. Die Handlampe nutzt du extra für Details. Du ziehst Handschuhe an. Du schaust dir die Haut am Steißbein an. Was du siehst, ist mehr als eine Rötung.",
   kernSteps: [
@@ -53,7 +53,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
         storyAufhaengerB1:
           "Frau Yilmaz liegt seit 14 Tagen meist auf dem Rücken. Ihr Körpergewicht drückt auf das Steissbein. Was passiert mit der Haut dabei?",
         kerntext:
-          "**Das Grundprinzip:** Wenn Gewebe zwischen Knochen und Unterlage länger als toleriert zusammengedrückt wird, entsteht **Ischämie** — die Blutversorgung wird unterbrochen.\n\n**3 Mechanismen wirken zusammen:**\n\n• **Druck** — Das Körpergewicht presst Haut und Gewebe auf den Knochen. Je höher das Gewicht (Adipositas) und je kleiner die Auflagefläche (Knochenvorsprung), desto höher der lokale Druck.\n\n• **Scherkräfte** — Beim Hochrutschen im Bett verschieben sich Hautschichten gegeneinander. Das Gewebe wird nicht nur gedrückt, sondern auch gezogen. Bei Frau Yilmaz: Scherkräfte beim Transfer und beim Rollator-Gehen.\n\n• **Zeit** — Einzelner Druck schadet wenig. Daürhafter Druck ueber Stunden tötet Gewebe. Deshalb ist der **Umlagerungsrhythmus** so entscheidend: alle 2 Stunden Druck-Entlastung.\n\n**Bei Frau Yilmaz kamen 4 Verstärker hinzu:**\nNeuropathie (kein Schmerzsignal), Diabetes (schlechte Durchblutung), Inkontinenz (Mazeration), und die gelegentlich abgelehnte Umlagerung.",
+          "**Das Grundprinzip:** Wenn Gewebe zwischen Knochen und Unterlage länger als toleriert zusammengedrückt wird, entsteht **Ischämie** — die Blutversorgung wird unterbrochen.\n\n**3 Mechanismen wirken zusammen:**\n\n• **Druck** — Das Körpergewicht presst Haut und Gewebe auf den Knochen. Je höher das Gewicht (Adipositas) und je kleiner die Auflagefläche (Knochenvorsprung), desto höher der lokale Druck.\n\n• **Scherkräfte** — Beim Hochrutschen im Bett verschieben sich Hautschichten gegeneinander. Das Gewebe wird nicht nur gedrückt, sondern auch gezogen. Bei Frau Yilmaz: Scherkräfte beim Transfer und beim Rollator-Gehen.\n\n• **Zeit** — Einzelner Druck schadet wenig. Dauerhafter Druck ueber Stunden tötet Gewebe. Deshalb ist der **Umlagerungsrhythmus** so entscheidend: alle 2 Stunden Druck-Entlastung.\n\n**Bei Frau Yilmaz kamen 4 Verstärker hinzu:**\nNeuropathie (kein Schmerzsignal), Diabetes (schlechte Durchblutung), Inkontinenz (Mazeration), und die gelegentlich abgelehnte Umlagerung.",
         kerntextB1:
           "**Das Grundprinzip:** Wenn die Haut zu lange gedrückt wird, bekommt sie kein Blut mehr. Das nennt man **Ischämie**.\n\n**3 Dinge wirken zusammen:**\n\n• **Druck** — Das Körpergewicht drückt auf den Knochen. Je schwerer der Mensch, desto mehr Druck.\n\n• **Scherkräfte** — Beim Hochrutschen im Bett wird die Haut gezogen und gedrückt gleichzeitig.\n\n• **Zeit** — Kurzer Druck ist nicht schlimm. Langer Druck (Stunden) tötet Gewebe. Deshalb: alle 2 Stunden umlagern.\n\n**Bei Frau Yilmaz kam dazu:** Nerven spüren nichts (Neuropathie), Diabetes (schlechte Durchblutung), Feuchtigkeit (Inkontinenz-Pad), und sie wollte manchmal nicht umgelagert werden.",
         faustregel:
@@ -62,8 +62,8 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
           "Dekubitus entsteht durch Druck ueber lange Zeit. Umlagern alle 2 Stunden unterbricht den Druck.",
         spektrum: [
           {
-            patientName: "Herr Baür",
-            situationsId: "ls-baür-demenz-sturz",
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
             hauptfaktor: "Immobilität durch Demenz",
             kurzbeschreibung:
               "Er bewegt sich nachts nicht, weil er nicht versteht, dass er sich drehen muss. Kein Schmerzsignal durch kognitive Einschränkung — anderer Mechanismus als Neuropathie, gleiches Ergebnis.",
@@ -84,14 +84,14 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
           },
         ],
         sonstBox:
-          "Der **Reperfusionsschaden**: Wenn nach langer Ischämie das Blut zurückkehrt, entsteht paradoxerweise zusätzlicher Schaden durch freie Saürstoffradikale. Deshalb ist kurze regelmässige Entlastung (Mikrobewegungen alle 15-20 Min) besser als seltene grosse Umlagerungen.",
+          "Der **Reperfusionsschaden**: Wenn nach langer Ischämie das Blut zurückkehrt, entsteht paradoxerweise zusätzlicher Schaden durch freie Sauerstoffradikale. Deshalb ist kurze regelmässige Entlastung (Mikrobewegungen alle 15-20 Min) besser als seltene grosse Umlagerungen.",
         sonstBoxB1:
           "Wenn nach langem Druck das Blut zurückkommt, kann das Gewebe nochmal geschädigt werden (Reperfusionsschaden). Deshalb sind kleine Bewegungen zwischendurch auch wichtig — nicht nur die grosse Umlagerung alle 2 Stunden.",
         karteikarte: {
           vorderseite:
             "Erkläre die 3 Mechanismen der Dekubitus-Entstehung am Beispiel von Frau Yilmaz (BMI 34, Sakrum, 14 Tage post-OP).",
           rueckseite:
-            "1) Druck: Körpergewicht (BMI 34) auf Sakrum (Knochenvorsprung). 2) Scherkräfte: Verschiebung der Hautschichten beim Transfer/Hochrutschen. 3) Zeit: 14 Tage ueberwiegend Rückenlage, gelegentlich Umlagerung abgelehnt.\n\nVerstärker: Neuropathie (kein Schmerzsignal), Diabetes (Mikrozirkulation), Inkontinenz (Mazeration).\n\nSpektrum: Baür (Demenz-Immobilität), Schmidt (BMI 38), Petrov (Spastik-Scherkräfte).\n\nFaustregel: **Dekubitus = Druck x Zeit. Umlagerung bricht die Gleichung.**",
+            "1) Druck: Körpergewicht (BMI 34) auf Sakrum (Knochenvorsprung). 2) Scherkräfte: Verschiebung der Hautschichten beim Transfer/Hochrutschen. 3) Zeit: 14 Tage ueberwiegend Rückenlage, gelegentlich Umlagerung abgelehnt.\n\nVerstärker: Neuropathie (kein Schmerzsignal), Diabetes (Mikrozirkulation), Inkontinenz (Mazeration).\n\nSpektrum: Bauer (Demenz-Immobilität), Schmidt (BMI 38), Petrov (Spastik-Scherkräfte).\n\nFaustregel: **Dekubitus = Druck x Zeit. Umlagerung bricht die Gleichung.**",
         },
       },
     },
@@ -155,7 +155,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
               y: 70,
               radius: 12,
               label:
-                "Mazerierte Umgebungshaut — aufgeweichte Hornschicht durch Daürfeuchte (Inkontinenz-Pad)",
+                "Mazerierte Umgebungshaut — aufgeweichte Hornschicht durch Dauerfeuchte (Inkontinenz-Pad)",
             },
           ],
         },
@@ -454,14 +454,14 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
         kerntextB1:
           "Die **Braden-Skala** misst das Dekubitus-Risiko.\n\n**6 Punkte werden bewertet:**\n\n• Kann der Patient Druck spüren?\n• Wie oft ist die Haut feucht?\n• Wie viel bewegt er sich?\n• Kann er sich selbst drehen?\n• Isst er genug?\n• Rutscht er beim Bewegen?\n\n**Jeder Punkt: 1-4.** Alle zusammen = Gesamtscore (6-23).\n\n• 12 oder weniger = hohes Risiko\n• 13-14 = mittleres Risiko\n• 15-18 = geringes Risiko\n• Über 18 = kein erhöhtes Risiko",
         faustregel:
-          "Braden ≤ 14 = Prophylaxe ist Pflicht. Aber: Ein moderater Score schützt nicht — nur konseqünte Maßnahmen tun es.",
+          "Braden ≤ 14 = Prophylaxe ist Pflicht. Aber: Ein moderater Score schützt nicht — nur konsequnte Maßnahmen tun es.",
         faustregelB1:
           "Braden 14 oder weniger = Prophylaxe ist Pflicht. Aber auch mit mittlerem Risiko kann ein Dekubitus entstehen.",
         karteikarte: {
           vorderseite:
             "Frau Yilmaz hat Braden-Score 14 (mässiges Risiko). Trotzdem ist ein Dekubitus Kat. II entstanden. Was sagt das ueber die Braden-Skala?",
           rueckseite:
-            "Die Braden-Skala misst Risiko, nicht Ergebnis. Score 13-14 = mässiges Risiko = Prophylaxe ist Pflicht. Wenn Prophylaxe lückenhaft (Schichtausfall, Ablehnung, fehlende Dokumentation), entsteht Dekubitus trotz moderatem Score.\n\n6 Subskalen: Sensorik, Feuchtigkeit, Aktivität, Mobilität, Ernährung, Reibung/Scherkräfte. Score 6-23 (niedriger = höher Risiko).\n\nFaustregel: **Braden ≤ 14 = Prophylaxe Pflicht. Nur konseqünte Maßnahmen schützen.**",
+            "Die Braden-Skala misst Risiko, nicht Ergebnis. Score 13-14 = mässiges Risiko = Prophylaxe ist Pflicht. Wenn Prophylaxe lückenhaft (Schichtausfall, Ablehnung, fehlende Dokumentation), entsteht Dekubitus trotz moderatem Score.\n\n6 Subskalen: Sensorik, Feuchtigkeit, Aktivität, Mobilität, Ernährung, Reibung/Scherkräfte. Score 6-23 (niedriger = höher Risiko).\n\nFaustregel: **Braden ≤ 14 = Prophylaxe Pflicht. Nur konsequnte Maßnahmen schützen.**",
         },
       },
     },
@@ -611,7 +611,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
         fragetext:
           "Nenne mindestens 3 mögliche Gründe, warum der Dekubitus trotz korrekter Prophylaxeplanung entstanden ist.",
         musterantwort:
-          "1) Prophylaxeplan korrekt, aber nicht immer umgesetzt: Schichtlücken, Personalknappheit → Strukturqualitätsproblem (Donabedian 1966). 2) Frau Yilmaz hat Umlagerung manchmal abgelehnt ('das war unbeqüm') → Patientenautonomie vs. Prophylaxepflicht. 3) Neuropathie durch Diabetes → kein Schmerzsignal → kein Melden an Pflegende. 4) Inkontinenz = Daürfeuchte durch Pad → Mazeration → Hautbarriere geschwächt → erhöhte Anfälligkeit. 5) Adipositas → lokaler Auflagedruck am Sakrum trotz Weichlagerungsmatratze erhöht (Körpermasse verteilt Druck ungleichmäßig).",
+          "1) Prophylaxeplan korrekt, aber nicht immer umgesetzt: Schichtlücken, Personalknappheit → Strukturqualitätsproblem (Donabedian 1966). 2) Frau Yilmaz hat Umlagerung manchmal abgelehnt ('das war unbeqüm') → Patientenautonomie vs. Prophylaxepflicht. 3) Neuropathie durch Diabetes → kein Schmerzsignal → kein Melden an Pflegende. 4) Inkontinenz = Dauerfeuchte durch Pad → Mazeration → Hautbarriere geschwächt → erhöhte Anfälligkeit. 5) Adipositas → lokaler Auflagedruck am Sakrum trotz Weichlagerungsmatratze erhöht (Körpermasse verteilt Druck ungleichmäßig).",
         bewertungskriterien: [
           "Mindestens 3 Ebenen benannt (Patient, System, Umgebung)",
           "Nicht nur Patientenfaktoren — auch Systemfaktoren erkannt",
@@ -738,7 +738,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
             },
             {
               front: "Welche Verbindung hat Mazeration zum Inkontinenz-Pad bei Frau Yilmaz?",
-              back: "Das Inkontinenz-Pad wirkt wie eine Feuchtigkeitskammer. Selbst bei kleiner Feuchtigkeit bleibt die Haut unter dem Pad daürhaft feucht. Dies beschleunigt Mazeration am Sakrum — besonders gefährlich in Kombination mit Druck.",
+              back: "Das Inkontinenz-Pad wirkt wie eine Feuchtigkeitskammer. Selbst bei kleiner Feuchtigkeit bleibt die Haut unter dem Pad dauerhaft feucht. Dies beschleunigt Mazeration am Sakrum — besonders gefährlich in Kombination mit Druck.",
               backB1:
                 "Das Pad hält Feuchtigkeit fest. Die Haut am Steißbein ist dann immer feucht. Das macht die Haut schwächer. Zusammen mit dem Druck entsteht schneller eine Wunde.",
               category: "Mazeration + Inkontinenz-Pad",

@@ -34,7 +34,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
         glossarBegriffe: [],
       },
       contentB1: {
-        title: "Bad vorbereiten — was zürst?",
+        title: "Bad vorbereiten — was zuerst?",
         body: "Bringe die Schritte in die richtige Reihenfolge, bevor du mit dem Bad beginnst.",
         glossarBegriffe: [],
       },
@@ -106,7 +106,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Du hast Emilias Gesicht gewaschen und beginnst mit dem Körper. Emilia ist zunächst still, dann beginnt sie leise zu qüngeln. Laura schaut besorgt.",
+              "Du hast Emilias Gesicht gewaschen und beginnst mit dem Körper. Emilia ist zunächst still, dann beginnt sie leise zu quengeln. Laura schaut besorgt.",
             contextB1:
               "Du wäschst Emilias Körper. Emilia qüngelt leise. Laura ist besorgt.",
             speaker: "Du",
@@ -158,7 +158,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
                   "Laura freut sich. \"Ja! Das will ich richtig lernen.\"",
                 score: 3,
                 feedback:
-                  "Anleitung statt Übernahme. Du gibst Laura Handlungskompetenz — sie soll nicht zuschaün, sondern lernen. Das ist Pflegeberatung: Befähigen statt Versorgen. *(Vgl. WHO Empowerment-Konzept)*",
+                  "Anleitung statt Übernahme. Du gibst Laura Handlungskompetenz — sie soll nicht zuschauen, sondern lernen. Das ist Pflegeberatung: Befähigen statt Versorgen. *(Vgl. WHO Empowerment-Konzept)*",
                 feedbackB1:
                   "Sehr gut. Du zeigst — und beim nächsten Mal macht Laura selbst. Das macht Laura sicherer.",
               },
@@ -188,7 +188,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
                 feedback:
                   "Gute Absicht, aber kein schrittweiser Aufbau. Haare waschen beim Säugling ist eine spezifische Fertigkeit (Kopf halten, Wasser schützen). Ohne Erklärung davor zu übergeben ist zu viel auf einmal.",
                 feedbackB1:
-                  "Gute Idee — aber erkläre zürst wie man es macht. Dann kann Laura es versuchen.",
+                  "Gute Idee — aber erkläre zuerst wie man es macht. Dann kann Laura es versuchen.",
               },
             ],
           },

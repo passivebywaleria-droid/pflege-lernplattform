@@ -12,7 +12,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PATIENT: PatientBeschreibung = {
   diagnosen: [
     "Hüft-TEP rechts nach Schenkelhalsfraktur (OP vor 14 Tagen)",
     "Dekubitus Kategorie II am Sakrum (neu entdeckt, 2×3 cm)",
-    "Diabetes mellitus Typ 2 — orale Antidiabetika, HbA1c 8,1 %",
+    "Diabetes mellitus Typ 2 — orale Antidiabetika, HbA1c 7,4 % (ambulanter Vorbefund vor 3 Monaten: 8,1 %, Trend fallend unter Metformin)",
     "Adipositas — BMI 34",
     "Periphere Neuropathie (diabetisch) — reduziertes Schmerzempfinden Fersen + Sakrum",
   ],
@@ -22,7 +22,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PATIENT: PatientBeschreibung = {
   setting:
     "Orthopädische Station, Zweibettzimmer — Tag 14 post-OP Hüft-TEP rechts",
   hintergrund:
-    "Ayşe Yilmaz wuchs in einem Dorf bei Ankara auf und zog mit 28 Jahren nach Deutschland. Über 30 Jahre arbeitete sie als Reinigungskraft in einem Bürogebäude, bis die Knie und später die Hüfte nicht mehr mitmachten. Deutsch spricht sie funktional — für das tägliche Leben reicht es, für abstrakte medizinische Gespräche braucht sie Hilfe. Ihr Mann Mustafa (83) kommt täglich auf die Station und spricht kaum Deutsch. Die Tochter Sevim kommt abends. Sie wohnen gemeinsam im Erdgeschoss. Gepflegt zu werden empfindet Frau Yilmaz als Scham — sie schüttelt oft den Kopf: 'Ich mach das selbst, danke.' Auch wenn sie es gerade nicht kann. Sie will nach Hause — zu Mustafa. Und sie will nicht, dass Sevim Urlaub nehmen muss.",
+    "Ayşe Yilmaz wurde 1946 in Gaziantep geboren und zog mit 24 Jahren nach Deutschland. Über 30 Jahre arbeitete sie als Reinigungskraft in einem Bürogebäude, bis die Knie und später die Hüfte nicht mehr mitmachten. Deutsch spricht sie funktional — für das tägliche Leben reicht es, für abstrakte medizinische Gespräche braucht sie Hilfe. Ihr Mann Mustafa (83) kommt täglich auf die Station und spricht kaum Deutsch. Die Tochter Sevim kommt abends. Sie wohnen gemeinsam im Erdgeschoss. Gepflegt zu werden empfindet Frau Yilmaz als Scham — sie schüttelt oft den Kopf: 'Ich mach das selbst, danke.' Auch wenn sie es gerade nicht kann. Sie will nach Hause — zu Mustafa. Und sie will nicht, dass Sevim Urlaub nehmen muss.",
   hintergrundB1:
     "Frau Ayşe Yilmaz ist 79 Jahre alt. Sie ist verheiratet. Ihr Mann heißt Mustafa. Er ist 83 Jahre alt. Sie wohnen zusammen im Erdgeschoss. Ihre Tochter heißt Sevim. Sie kommt abends auf die Station. Frau Yilmaz hat noch keinen Pflegegrad. Der Antrag läuft. Sie spricht Deutsch für das tägliche Leben. Schwierige Fachbegriffe versteht sie nicht gut.",
   persoenlichkeit:

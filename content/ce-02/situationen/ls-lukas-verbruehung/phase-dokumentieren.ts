@@ -228,7 +228,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DOKUMENTIEREN: SituationsPhase = {
             "KUSS-Skala: 5 Kategorien (Weinen, Gesichtsausdruck, Rumpfhaltung, Beinstellung, Motorische Unruhe) — validiert für Kinder 0–4 Jahre. Schmerzassessment bei Kleinkindern ist fachliche Beobachtung, keine Selbstauskunft.",
             "Verbrühungsgrade: Grad 2a = feuchte Blasen, schmerzhaft, oberflächliche Dermis. Intakte Blasen belassen — sie bieten natürlichen Wundschutz.",
             "Kinderschutz-Screening (§ 4 KKG): Standard bei jeder Verbrühung eines Kleinkindes über 10 % KOF — keine Beschuldigung, sondern Abklärung. Ergebnis hier: keine konkreten Anhaltspunkte für Kindeswohlgefährdung.",
-            "Deeskalation bei aufgewühlten Angehörigen: Empathie zürst, Raumwechsel, Kindorientierung als Argument. 'Beruhigen Sie sich' eskaliert — nicht verwenden.",
+            "Deeskalation bei aufgewühlten Angehörigen: Empathie zuerst, Raumwechsel, Kindorientierung als Argument. 'Beruhigen Sie sich' eskaliert — nicht verwenden.",
             "Feuchte Wundbehandlung: Hydroaktive Wundauflage, kein Alkohol, kein Chlorhexidin bei Kleinkindern, Blasen belassen wenn intakt.",
             "Elternanleitung: Aktive Einbeziehung der Eltern ist therapeutisch für das Kind und stärkend für die Eltern. Sandra als Co-Pflegerin bei Ablenkung und Trinkangebot.",
             "Kinderschutz-Dokumentation: Sachlich, keine Interpretationen, keine Wertungen über Eltern. Was beobachtet wurde — nicht was du vermutest.",

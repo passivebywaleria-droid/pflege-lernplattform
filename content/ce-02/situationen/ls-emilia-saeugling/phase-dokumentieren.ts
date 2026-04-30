@@ -187,7 +187,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DOKUMENTIEREN: SituationsPhase = {
             "Infant Handling: Kopf immer halten, Haltearm ruhig, Bewegungen ankündigen, von oben nach unten reinigen.",
             "SIDS-Prävention: Rückenlage immer — auch bei Bronchiolitis, auch bei Schnupfen, keine Ausnahme ohne Arzt.",
             "Beratung erschöpfter Mütter: Zuhören kommt vor Informieren. Handlungskompetenz zurückgeben (empowern) statt Übernahme.",
-            "Emotionale Komplikation: Bei Tränen — zürst Raum halten und validieren. Nicht entwerten. Dann konkrete Angebote.",
+            "Emotionale Komplikation: Bei Tränen — zuerst Raum halten und validieren. Nicht entwerten. Dann konkrete Angebote.",
             "Dokumentation: Fakten und Zahlen, Uhrzeiten, keine Werturteile, Bilanz-Zahl, Reaktion der Mutter.",
           ],
         },
@@ -225,7 +225,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DOKUMENTIEREN: SituationsPhase = {
         bewertungskriterien: [
           "S: Patient, Diagnose, Tag",
           "B: Kontext (Trinkschwäche, Stillen, Mutter)",
-          "A: Aktüller Status (Trinkmenge, Windeln, Fieber, Turgor)",
+          "A: Aktueller Status (Trinkmenge, Windeln, Fieber, Turgor)",
           "R: Nächste Schritte (Bilanz, Nasenpflege, Eskalation)",
         ],
         satzanfaengeB1: [

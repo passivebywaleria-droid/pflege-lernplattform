@@ -82,18 +82,18 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
         storyAufhaengerB1:
           "Frau Kovač macht gleich Atemübungen. Du beobachtest ihre Atmung. Wann ist sie zu schnell? Dafür gibt es einen Fachbegriff.",
         kerntext:
-          "**Tachypnoe** bedeutet eine **erhöhte Atemfreqünz** — definiert als **>20 Atemzüge pro Minute** beim Erwachsenen. Normal sind 12–20/Min in Ruhe.\n\nTachypnoe ist ein **Vitalzeichen-Warnsignal**, kein eigenes Krankheitsbild. Sie zeigt an, dass der Körper mehr Saürstoff braucht oder mehr CO2 abatmen muss. Mögliche Ursachen bei Frau Kovač:\n- **COPD-Exazerbation** (Atemwege verengt → kompensatorisch schnellere Atmung)\n- **Herzinsuffizienz-Dekompensation** (Lungenödem → erschwerter Gasaustausch)\n- **Belastung** (z.B. nach Atemübungen bei geschwächter Atempumpe)\n- **Infektion/Fieber** (erhöhter Saürstoffbedarf)\n\nWichtig: Tachypnoe allein ist kein Notfall — aber in Kombination mit **Zyanose, Bewusstseinstrübung oder SpO2 <88 %** wird es zum Eskalationskriterium.\n\nQuelle: (GOLD-Report COPD 2023; I Care Pflege 2020)",
+          "**Tachypnoe** bedeutet eine **erhöhte Atemfrequenz** — definiert als **>20 Atemzüge pro Minute** beim Erwachsenen. Normal sind 12–20/Min in Ruhe.\n\nTachypnoe ist ein **Vitalzeichen-Warnsignal**, kein eigenes Krankheitsbild. Sie zeigt an, dass der Körper mehr Sauerstoff braucht oder mehr CO2 abatmen muss. Mögliche Ursachen bei Frau Kovač:\n- **COPD-Exazerbation** (Atemwege verengt → kompensatorisch schnellere Atmung)\n- **Herzinsuffizienz-Dekompensation** (Lungenödem → erschwerter Gasaustausch)\n- **Belastung** (z.B. nach Atemübungen bei geschwächter Atempumpe)\n- **Infektion/Fieber** (erhöhter Sauerstoffbedarf)\n\nWichtig: Tachypnoe allein ist kein Notfall — aber in Kombination mit **Zyanose, Bewusstseinstrübung oder SpO2 <88 %** wird es zum Eskalationskriterium.\n\nQuelle: (GOLD-Report COPD 2023; I Care Pflege 2020)",
         kerntextB1:
-          "**Tachypnoe** = **zu schnelle Atmung**. Normal: 12–20 Atemzüge pro Minute. Mehr als 20 pro Minute = Tachypnoe.\n\nDas ist ein Warnsignal. Es zeigt: Der Körper braucht mehr Saürstoff. Bei Frau Kovač kann das kommen von:\n- COPD wird schlimmer\n- Herz arbeitet schlecht\n- Sie hat sich angestrengt\n- Sie hat eine Infektion\n\nTachypnoe allein ist noch kein Notfall. Aber wenn dazu **blaue Lippen** oder **Verwirrtheit** kommen — dann sofort handeln.",
+          "**Tachypnoe** = **zu schnelle Atmung**. Normal: 12–20 Atemzüge pro Minute. Mehr als 20 pro Minute = Tachypnoe.\n\nDas ist ein Warnsignal. Es zeigt: Der Körper braucht mehr Sauerstoff. Bei Frau Kovač kann das kommen von:\n- COPD wird schlimmer\n- Herz arbeitet schlecht\n- Sie hat sich angestrengt\n- Sie hat eine Infektion\n\nTachypnoe allein ist noch kein Notfall. Aber wenn dazu **blaue Lippen** oder **Verwirrtheit** kommen — dann sofort handeln.",
         faustregel:
-          "Atemfreqünz >20/Min = Tachypnoe. Allein ein Warnsignal. Mit Zyanose oder Bewusstseinstrübung = Notfall.",
+          "Atemfrequenz >20/Min = Tachypnoe. Allein ein Warnsignal. Mit Zyanose oder Bewusstseinstrübung = Notfall.",
         faustregelB1:
-          "Mehr als 20 Atemzüge pro Minute = zu schnell (Tachypnoe). Bei blaün Lippen oder Verwirrtheit dazu: Notfall.",
+          "Mehr als 20 Atemzüge pro Minute = zu schnell (Tachypnoe). Bei blauen Lippen oder Verwirrtheit dazu: Notfall.",
         karteikarte: {
           vorderseite: "Frau Kovač atmet nach den Atemübungen 22-mal pro Minute. Wie heißt das — und wann wird es zum Notfall?",
-          rueckseite: "Tachypnoe = Atemfreqünz >20/Min (normal: 12–20/Min). Kompensatorisches Zeichen bei erhöhtem O2-Bedarf. Bei COPD III nach Belastung häufig. Notfall-Eskalation: wenn zusätzlich Zyanose, Bewusstseinstrübung oder SpO2 <88 %. Allein = beobachten. In Kombination = sofort handeln.",
+          rueckseite: "Tachypnoe = Atemfrequenz >20/Min (normal: 12–20/Min). Kompensatorisches Zeichen bei erhöhtem O2-Bedarf. Bei COPD III nach Belastung häufig. Notfall-Eskalation: wenn zusätzlich Zyanose, Bewusstseinstrübung oder SpO2 <88 %. Allein = beobachten. In Kombination = sofort handeln.",
           vorderseiteB1: "Was ist Tachypnoe? Wann musst du den Notarzt rufen?",
-          rueckseiteB1: "Tachypnoe = Atmung schneller als 20/Min. Allein: beobachten. Mit blaün Lippen oder Verwirrtheit: sofort Notarzt.",
+          rueckseiteB1: "Tachypnoe = Atmung schneller als 20/Min. Allein: beobachten. Mit blauen Lippen oder Verwirrtheit: sofort Notarzt.",
         },
       },
     },
@@ -139,7 +139,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
             explanation:
               "Richtig. Das ist das Wirkprinzip der Lippenbremse: Die verlängerte Ausatmung (Verhältnis 1:2 — 2 Sek ein, 4 Sek aus) erzeugt einen erhöhten intrabronchialen Druck (PEEP-Effekt) und verhindert das Kollabieren der kleinen Atemwege. Das leise Pfeifen bestätigt: Die Lippen sind richtig positioniert.",
             explanationB1:
-              "Richtig. Die Ausatmung daürt länger als die Einatmung. Und man hört ein leises Pfeifen durch die Lippen. Das zeigt: Es funktioniert.",
+              "Richtig. Die Ausatmung dauert länger als die Einatmung. Und man hört ein leises Pfeifen durch die Lippen. Das zeigt: Es funktioniert.",
           },
           {
             text: "Die Patientin hustet nach der Übung.",
@@ -190,18 +190,18 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
         storyAufhaengerB1:
           "Gleich passiert etwas: Frau Kovačs Lippen werden blau. Das ist ein wichtiges Zeichen. Bevor es soweit ist — lerne, was das bedeutet.",
         kerntext:
-          "**Zyanose** ist eine **bläulich-violette Verfärbung** von Haut und Schleimhäuten durch Saürstoffmangel im Blut (erhöhtes desoxygeniertes Hämoglobin >5 g/dl).\n\nMan unterscheidet:\n- **Zentrale Zyanose** (Lippen, Zunge, Mundschleimhaut) = Saürstoffmangel im arteriellen Blut → **immer ernst**, deutet auf respiratorische Insuffizienz, Lungenödem oder Herzfehler\n- **Periphere Zyanose** (Finger, Zehen, Nasenspitze) = verlangsamte Durchblutung → kann auch bei Kälte oder schlechter Durchblutung auftreten\n\nBei Frau Kovač (COPD III + Herzinsuffizienz) ist **Lippenzyanose** ein Zeichen der **zentralen Zyanose** — die Lunge schafft es nicht mehr, das Blut ausreichend mit Saürstoff zu sättigen. Das ist immer ein Eskalationskriterium: Beobachten, SpO2 messen wenn möglich, bei Zunahme Notarzt.\n\nQuelle: (I Care Pflege 2020; GOLD-Report COPD 2023)",
+          "**Zyanose** ist eine **bläulich-violette Verfärbung** von Haut und Schleimhäuten durch Sauerstoffmangel im Blut (erhöhtes desoxygeniertes Hämoglobin >5 g/dl).\n\nMan unterscheidet:\n- **Zentrale Zyanose** (Lippen, Zunge, Mundschleimhaut) = Sauerstoffmangel im arteriellen Blut → **immer ernst**, deutet auf respiratorische Insuffizienz, Lungenödem oder Herzfehler\n- **Periphere Zyanose** (Finger, Zehen, Nasenspitze) = verlangsamte Durchblutung → kann auch bei Kälte oder schlechter Durchblutung auftreten\n\nBei Frau Kovač (COPD III + Herzinsuffizienz) ist **Lippenzyanose** ein Zeichen der **zentralen Zyanose** — die Lunge schafft es nicht mehr, das Blut ausreichend mit Sauerstoff zu sättigen. Das ist immer ein Eskalationskriterium: Beobachten, SpO2 messen wenn möglich, bei Zunahme Notarzt.\n\nQuelle: (I Care Pflege 2020; GOLD-Report COPD 2023)",
         kerntextB1:
-          "**Zyanose** = **blaue Haut** durch zu wenig Saürstoff im Blut.\n\nEs gibt 2 Arten:\n- **Zentrale Zyanose** (blaue Lippen, Zunge) = zu wenig Saürstoff im Blut aus der Lunge → **immer ernst nehmen**\n- **Periphere Zyanose** (blaue Finger, Zehen) = schlechte Durchblutung → kann auch bei Kälte passieren\n\nBei Frau Kovač sind blaue Lippen ein Zeichen, dass die Lunge nicht genug Saürstoff ins Blut bringt. Das ist gefährlich.",
+          "**Zyanose** = **blaue Haut** durch zu wenig Sauerstoff im Blut.\n\nEs gibt 2 Arten:\n- **Zentrale Zyanose** (blaue Lippen, Zunge) = zu wenig Sauerstoff im Blut aus der Lunge → **immer ernst nehmen**\n- **Periphere Zyanose** (blaue Finger, Zehen) = schlechte Durchblutung → kann auch bei Kälte passieren\n\nBei Frau Kovač sind blaue Lippen ein Zeichen, dass die Lunge nicht genug Sauerstoff ins Blut bringt. Das ist gefährlich.",
         faustregel:
-          "Blaue Lippen = zentrale Zyanose = Saürstoffmangel im arteriellen Blut. Immer ernst nehmen, nie ignorieren.",
+          "Blaue Lippen = zentrale Zyanose = Sauerstoffmangel im arteriellen Blut. Immer ernst nehmen, nie ignorieren.",
         faustregelB1:
-          "Blaue Lippen = zu wenig Saürstoff im Blut. Immer ernst nehmen!",
+          "Blaue Lippen = zu wenig Sauerstoff im Blut. Immer ernst nehmen!",
         karteikarte: {
           vorderseite: "Frau Kovačs Lippen sind bläulich verfärbt. Wie heißt das — und was zeigt es an?",
-          rueckseite: "Zyanose = bläulich-violette Verfärbung durch Saürstoffmangel. Lippenzyanose = zentrale Zyanose (arteriell) → respiratorische Insuffizienz. Bei COPD III: Lunge kann Blut nicht ausreichend oxygenieren. Eskalation: SpO2 messen, bei Zunahme oder <88 % → Notarzt. Periphere Zyanose (Finger/Zehen) kann auch kältebedingt sein.",
+          rueckseite: "Zyanose = bläulich-violette Verfärbung durch Sauerstoffmangel. Lippenzyanose = zentrale Zyanose (arteriell) → respiratorische Insuffizienz. Bei COPD III: Lunge kann Blut nicht ausreichend oxygenieren. Eskalation: SpO2 messen, bei Zunahme oder <88 % → Notarzt. Periphere Zyanose (Finger/Zehen) kann auch kältebedingt sein.",
           vorderseiteB1: "Was bedeuten blaue Lippen bei Frau Kovač?",
-          rueckseiteB1: "Blaue Lippen = Zyanose = zu wenig Saürstoff. Die Lunge schafft es nicht. Sofort beobachten. Bei Verschlechterung: Notarzt.",
+          rueckseiteB1: "Blaue Lippen = Zyanose = zu wenig Sauerstoff. Die Lunge schafft es nicht. Sofort beobachten. Bei Verschlechterung: Notarzt.",
         },
       },
     },
@@ -265,7 +265,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Komplikation 1 — Kurzatmigkeit",
-        body: "Nach der 4. Wiederholung lehnt sich Frau Kovač zurück. Ihre Atemfreqünz steigt auf ca. 22/Min, **leichte Lippenzyanose** ist sichtbar. Sie sagt:\n\n**\"Warten Sie kurz. Wenn ich schnell mach, wird mir schwindelig. Ich kenn das schon.\"**\n\n**Wichtig zur Befund-Hierarchie:** AF 22/Min allein wäre bei COPD III nach Belastung noch im Erwartungsbereich. Aber **Lippenzyanose** ist das relevantere Kriterium — sichtbare Zyanose zeigt peripheren Saürstoffmangel und ist immer ernst zu nehmen. Befund-Reihenfolge: Zyanose > Bewusstseinslage > Atemfreqünz.\n\nWas tust du?",
+        body: "Nach der 4. Wiederholung lehnt sich Frau Kovač zurück. Ihre Atemfrequenz steigt auf ca. 22/Min, **leichte Lippenzyanose** ist sichtbar. Sie sagt:\n\n**\"Warten Sie kurz. Wenn ich schnell mach, wird mir schwindelig. Ich kenn das schon.\"**\n\n**Wichtig zur Befund-Hierarchie:** AF 22/Min allein wäre bei COPD III nach Belastung noch im Erwartungsbereich. Aber **Lippenzyanose** ist das relevantere Kriterium — sichtbare Zyanose zeigt peripheren Sauerstoffmangel und ist immer ernst zu nehmen. Befund-Reihenfolge: Zyanose > Bewusstseinslage > Atemfrequenz.\n\nWas tust du?",
         glossarBegriffe: [
           "Lippenzyanose",
           "Tachypnoe",
@@ -286,7 +286,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
             text: "Ich unterbreche sofort die Übung, lasse sie aufrecht sitzen (Kutschersitz wenn möglich), bleibe bei ihr und beobachte SpO2/Atmung/Zyanose. Wenn keine Besserung in 3-5 Minuten oder die Zyanose zunimmt oder SpO2 unter 88 % fällt — Notarzt.",
             isCorrect: true,
             feedback:
-              "Richtig. Das ist die korrekte didaktische Reihenfolge bei Belastungsdyspnoe bei COPD III:\n1. **Übung sofort stoppen** — keine weitere Belastung der erschöpften Atempumpe\n2. **Aufrechte Position sichern** — Kutschersitz wenn Frau Kovač es kann (fixiert die Atemhilfsmuskulatur, reduziert die Atemarbeit)\n3. **Lippenbremse anleiten** — falls Frau Kovač sie noch nicht spontan macht\n4. **Bei ihr bleiben und beobachten** — Atemfreqünz, Lippenfarbe, Bewusstseinslage\n5. **Frischluft** nur wenn raumklimatisch sinnvoll (Sommer/warme Räume) — im Winter Fenster nicht aufreißen, kalte Luft kann bei COPD einen Bronchospasmus auslösen. Stattdessen: ruhige, nicht-schwüle Raumluft sicherstellen\n6. **Eskalationskriterien im Kopf:** keine Besserung in 3-5 Min, SpO2 <88 %, zunehmende Zyanose, Bewusstseinstrübung → Notarzt rufen — und Erstmaßnahmen weiter durchführen\n\nKernpunkt: Erstmaßnahme ist **Stoppen + Ruhe + aufrechte Position**, nicht das Fenster. Quelle: (GOLD-Report COPD 2023)",
+              "Richtig. Das ist die korrekte didaktische Reihenfolge bei Belastungsdyspnoe bei COPD III:\n1. **Übung sofort stoppen** — keine weitere Belastung der erschöpften Atempumpe\n2. **Aufrechte Position sichern** — Kutschersitz wenn Frau Kovač es kann (fixiert die Atemhilfsmuskulatur, reduziert die Atemarbeit)\n3. **Lippenbremse anleiten** — falls Frau Kovač sie noch nicht spontan macht\n4. **Bei ihr bleiben und beobachten** — Atemfrequenz, Lippenfarbe, Bewusstseinslage\n5. **Frischluft** nur wenn raumklimatisch sinnvoll (Sommer/warme Räume) — im Winter Fenster nicht aufreißen, kalte Luft kann bei COPD einen Bronchospasmus auslösen. Stattdessen: ruhige, nicht-schwüle Raumluft sicherstellen\n6. **Eskalationskriterien im Kopf:** keine Besserung in 3-5 Min, SpO2 <88 %, zunehmende Zyanose, Bewusstseinstrübung → Notarzt rufen — und Erstmaßnahmen weiter durchführen\n\nKernpunkt: Erstmaßnahme ist **Stoppen + Ruhe + aufrechte Position**, nicht das Fenster. Quelle: (GOLD-Report COPD 2023)",
             feedbackB1:
               "Richtig. Erst Übung stoppen. Aufrecht sitzen lassen (Kutschersitz). Lippenbremse anleiten. Bei ihr bleiben. Beobachten: wird es besser oder schlimmer?\n\n**Achtung Fenster:** Im Sommer ist Frischluft hilfreich. Im Winter NICHT — kalte Luft kann bei COPD die Bronchien zusammenziehen. Dann Fenster nur kurz oder gar nicht.\n\nWenn nach 3-5 Min keine Besserung: Notarzt rufen.",
           },
@@ -294,9 +294,9 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
             text: "Ich sage: 'Noch eine Runde, dann hören wir auf.' Sie kennt das ja schon.",
             isCorrect: false,
             feedback:
-              "Nicht korrekt und gefährlich. Bei sichtbarer Lippenzyanose (Zeichen von Saürstoffmangel) und erhöhter Atemfreqünz ist Weitermachen kontraindiziert. 'Sie kennt das ja schon' ist kein Freifahrtschein — auch bekannte Symptome können eskalieren. Merke: Zyanose = sofort stoppen. Geh zurück und wähle Pfad A.",
+              "Nicht korrekt und gefährlich. Bei sichtbarer Lippenzyanose (Zeichen von Sauerstoffmangel) und erhöhter Atemfrequenz ist Weitermachen kontraindiziert. 'Sie kennt das ja schon' ist kein Freifahrtschein — auch bekannte Symptome können eskalieren. Merke: Zyanose = sofort stoppen. Geh zurück und wähle Pfad A.",
             feedbackB1:
-              "Falsch und gefährlich. Die blaün Lippen zeigen: zu wenig Saürstoff. Das ist ein Warnsignal. Sofort stoppen. Nicht weitermachen.",
+              "Falsch und gefährlich. Die blauen Lippen zeigen: zu wenig Sauerstoff. Das ist ein Warnsignal. Sofort stoppen. Nicht weitermachen.",
           },
           {
             text: "Ich rufe sofort den Notarzt — bei sichtbarer Lippenzyanose und allein in der Wohnung ist mir das zu unsicher.",
@@ -481,7 +481,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
             text: "\"Herr Kovač, guten Morgen. Ich kann am Telefon **keine Auskunft zum Gesundheitszustand** Ihrer Mutter geben. Bitte wenden Sie sich an den Pflegedienst — dort kann mit schriftlicher Einwilligung Ihrer Mutter ein regelmäßiger Austausch geregelt werden. Ich gebe Ihnen gern die Nummer.\"",
             isCorrect: true,
             feedback:
-              "Richtig. Ohne dokumentierte Schweigepflichtsentbindung von Frau Kovač darf keine Pflegekraft Gesundheitsdaten an Dritte weitergeben — auch nicht an Angehörige. Wichtig: DSGVO Art. 4 Nr. 15 schützt Gesundheitsdaten **nicht erst ab Diagnose-Detail**, sondern ab jeder Information über den Gesundheitszustand. Auch ein 'wohlauf' oder 'es geht ihr gut' ist bereits eine Gesundheitsauskunft und juristisch problematisch.\n\nKorrekt: Nur die Tatsache des Besuchs erwähnen, **keine Aussage zum Zustand**, und an den Pflegedienst verweisen — dort kann mit schriftlicher Einwilligung von Frau Kovač ein Austausch geregelt werden (auch daürhaft, z.B. 1×/Woche Anruf). Das ist die DSGVO-saubere und gleichzeitig angehörigenfreundliche Lösung. Quelle: (DSGVO 2018 Art. 4 Nr. 15, Art. 9; § 203 StGB)",
+              "Richtig. Ohne dokumentierte Schweigepflichtsentbindung von Frau Kovač darf keine Pflegekraft Gesundheitsdaten an Dritte weitergeben — auch nicht an Angehörige. Wichtig: DSGVO Art. 4 Nr. 15 schützt Gesundheitsdaten **nicht erst ab Diagnose-Detail**, sondern ab jeder Information über den Gesundheitszustand. Auch ein 'wohlauf' oder 'es geht ihr gut' ist bereits eine Gesundheitsauskunft und juristisch problematisch.\n\nKorrekt: Nur die Tatsache des Besuchs erwähnen, **keine Aussage zum Zustand**, und an den Pflegedienst verweisen — dort kann mit schriftlicher Einwilligung von Frau Kovač ein Austausch geregelt werden (auch dauerhaft, z.B. 1×/Woche Anruf). Das ist die DSGVO-saubere und gleichzeitig angehörigenfreundliche Lösung. Quelle: (DSGVO 2018 Art. 4 Nr. 15, Art. 9; § 203 StGB)",
             feedbackB1:
               "Richtig. Du gibst **keine** Information über Frau Kovačs Gesundheit am Telefon — auch nicht 'es geht ihr gut'. Das Gesetz sagt: Auch das ist eine Gesundheits-Information. Du sagst nur: 'Ich kann nichts dazu sagen am Telefon. Bitte beim Pflegedienst melden.' Dort kann Darko mit der schriftlichen Erlaubnis seiner Mutter regelmäßig informiert werden.",
           },
@@ -550,7 +550,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
                 textB1:
                   "\"Frau Kovač, gestern haben Sie 800 ml getrunken. Das ist zu wenig. Wenn Sie mehr trinken, wird der Schleim in der Lunge flüssiger. Dann können Sie ihn leichter abhusten.\"",
                 patientResponse:
-                  "\"Ich trink nicht gern viel, weil ich dann daürnd muss. Das ist mir unangenehm.\"",
+                  "\"Ich trink nicht gern viel, weil ich dann dauernd muss. Das ist mir unangenehm.\"",
                 patientResponseB1:
                   "\"Ich trink nicht gern viel. Dann muss ich ständig auf die Toilette. Das ist mir unangenehm.\"",
                 score: 3,
@@ -563,9 +563,9 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
           },
           {
             context:
-              "Frau Kovač sagt: \"Ich trink nicht gern viel, weil ich dann daürnd muss. Das ist mir unangenehm.\" Du wählst deine Antwort.",
+              "Frau Kovač sagt: \"Ich trink nicht gern viel, weil ich dann dauernd muss. Das ist mir unangenehm.\" Du wählst deine Antwort.",
             contextB1:
-              "Frau Kovač sagt: \"Ich will nicht so viel trinken. Dann muss ich daürnd zur Toilette. Das ist mir peinlich.\" Du antwortest.",
+              "Frau Kovač sagt: \"Ich will nicht so viel trinken. Dann muss ich dauernd zur Toilette. Das ist mir peinlich.\" Du antwortest.",
             speaker: "Frau Kovač",
             options: [
               {
@@ -623,7 +623,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
       stepType: "text",
       bloomLevel: 3,
       kompetenzbereich: "V.1",
-      quellen: ["DNQP Kontinenzförderung 2014"],
+      quellen: ["DGSM S3-Leitlinie Insomnie 2017", "GOLD-Report COPD 2023"],
       track: "basis",
       modus: "entdecker",
       lernziel: "ce02-kovac-ambulant-dur-schlaf-vorbereitung",
@@ -633,7 +633,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
         title: "Vorgespräch Schlafhygiene — heute Abend",
         body: "Du packst deine Sachen zusammen. Bevor du gehst, sagst du zu Frau Kovač:\n\n\"Frau Kovač, heute Abend möchte ich mit Ihnen besprechen, warum das Fernsehen nach Mitternacht Ihren Schlaf beeinflusst. Nicht weil ich Ihnen sage, was Sie tun sollen — sondern damit Sie verstehen, was im Körper passiert.\"\n\nFrau Kovač nickt: \"Na gut.\"\n\n**Hintergrundwissen für heute Abend:**\nFernsehen (Blaulicht) hemmt die Melatonin-Ausschüttung der Zirbeldrüse. Melatonin ist der körpereigene Schlaf-Schalter — seine Produktion ist bei älteren Menschen ohnehin reduziert. Unregelmäßige Schlafzeiten stören den zirkadianen Rhythmus (innere Uhr). Bei Frau Kovač potenziert COPD das Problem: Hypoxie in der Nacht und morgendlicher Husten stören den Tiefschlaf zusätzlich.",
         fallbezug:
-          "Frau Kovačs TV-Ritual begann nach Josips Tod — es ist ihr Weg, nicht allein einzuschlafen. Das darfst du im Gespräch nicht übergehen. Aufklärung heißt: Erklären, warum es den Schlaf beeinflusst — und dann gemeinsam schaün, was möglich ist.",
+          "Frau Kovačs TV-Ritual begann nach Josips Tod — es ist ihr Weg, nicht allein einzuschlafen. Das darfst du im Gespräch nicht übergehen. Aufklärung heißt: Erklären, warum es den Schlaf beeinflusst — und dann gemeinsam schauen, was möglich ist.",
         glossarBegriffe: [
           "Melatonin",
           "Zirkadianer Rhythmus",
@@ -715,15 +715,15 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
           cards: [
             {
               front: "SpO2 unter 88 % (trotz Ruhe und Lageänderung)",
-              back: "Kritisch. 88–92 % ist der **therapeutische Zielkorridor unter Saürstoffgabe** bei akuter Exazerbation — nicht der Normalwert im stabilen Zustand. Unter 88 % auch nach Ruhe und Lageoptimierung = Gewebehypoxie droht. Sofortig: Notarzt rufen, Lagerung optimieren, parallel weiter beobachten.",
+              back: "Kritisch. 88–92 % ist der **therapeutische Zielkorridor unter Sauerstoffgabe** bei akuter Exazerbation — nicht der Normalwert im stabilen Zustand. Unter 88 % auch nach Ruhe und Lageoptimierung = Gewebehypoxie droht. Sofortig: Notarzt rufen, Lagerung optimieren, parallel weiter beobachten.",
               backB1:
-                "Kritisch. Zu wenig Saürstoff im Blut. Sofort Notarzt rufen.",
+                "Kritisch. Zu wenig Sauerstoff im Blut. Sofort Notarzt rufen.",
             },
             {
               front: "Zunehmende Lippenzyanose (Lippen blau, trotz Ruhe)",
-              back: "Zeichen von Saürstoffmangel in der Peripherie. Wenn die Ruhe nicht hilft: Notarzt.",
+              back: "Zeichen von Sauerstoffmangel in der Peripherie. Wenn die Ruhe nicht hilft: Notarzt.",
               backB1:
-                "Blaue Lippen trotz Ruhe = Notarzt. Saürstoffmangel ist gefährlich.",
+                "Blaue Lippen trotz Ruhe = Notarzt. Sauerstoffmangel ist gefährlich.",
             },
             {
               front: "Bewusstseinstrübung (unruhig, verwirrt, nicht ansprechbar)",

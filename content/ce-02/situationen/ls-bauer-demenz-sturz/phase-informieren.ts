@@ -7,18 +7,18 @@
 import type { SituationsPhase } from "../../../_types";
 
 export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
-  phaseId: "ls-baür-informieren",
+  phaseId: "ls-bauer-informieren",
   phase: "informieren",
   titel: "Informieren & Ankommen",
-  titelB1: "Ankommen bei Herrn Baür",
+  titelB1: "Ankommen bei Herrn Bauer",
   kontext:
-    "Du stehst vor Zimmer 8 der gerontopsychiatrischen Station. Es ist 7:20 Uhr, Frühschicht. Durch die angelehnte Tür hörst du Herrn Baür bereits: Er redet laut, seine Stimme klingt aufgewühlt. Du weißt aus der Übergabe: gestürzt in der Nacht, keine sichtbaren Verletzungen, aber unruhig seit dem Ereignis. Eine Tür zu einem Menschen mit Demenz zu öffnen ist kein neutraler Moment. Herr Baür lebt in einer anderen Zeitebene als du — für ihn ist es vielleicht 1978 und er muss in die Werkstatt. Oder er weiß gar nicht, wo er ist. Er weiß nicht, dass er letzte Nacht gestürzt ist. Er weiß nur, dass er Angst hat. Was du jetzt tust, entscheidet über die nächsten Stunden.",
+    "Du stehst vor Zimmer 8 der gerontopsychiatrischen Station. Es ist 7:20 Uhr, Frühschicht. Durch die angelehnte Tür hörst du Herrn Bauer bereits: Er redet laut, seine Stimme klingt aufgewühlt. Du weißt aus der Übergabe: gestürzt in der Nacht, keine sichtbaren Verletzungen, aber unruhig seit dem Ereignis. Eine Tür zu einem Menschen mit Demenz zu öffnen ist kein neutraler Moment. Herr Bauer lebt in einer anderen Zeitebene als du — für ihn ist es vielleicht 1978 und er muss in die Werkstatt. Oder er weiß gar nicht, wo er ist. Er weiß nicht, dass er letzte Nacht gestürzt ist. Er weiß nur, dass er Angst hat. Was du jetzt tust, entscheidet über die nächsten Stunden.",
   kontextB1:
-    "Du stehst vor Zimmer 8. Es ist 7:20 Uhr morgens. Du hörst Herrn Baür. Er redet laut. Seine Stimme klingt aufgeregt. Du weißt: Er ist heute Nacht gestürzt. Er hat keine sichtbaren Verletzungen. Aber er ist unruhig. Herr Baür hat Demenz (= Gedächtnis-Erkrankung). Er weiß nicht, wo er ist. Er weiß nicht, welcher Tag es ist. Er weiß nicht, dass er gestürzt ist. Er hat Angst. Was du jetzt tust, ist sehr wichtig.",
+    "Du stehst vor Zimmer 8. Es ist 7:20 Uhr morgens. Du hörst Herrn Bauer. Er redet laut. Seine Stimme klingt aufgeregt. Du weißt: Er ist heute Nacht gestürzt. Er hat keine sichtbaren Verletzungen. Aber er ist unruhig. Herr Bauer hat Demenz (= Gedächtnis-Erkrankung). Er weiß nicht, wo er ist. Er weiß nicht, welcher Tag es ist. Er weiß nicht, dass er gestürzt ist. Er hat Angst. Was du jetzt tust, ist sehr wichtig.",
   kernSteps: [
     // Step 1.1 — Übergabe lesen
     {
-      stepId: "ce02-baür-info-01-uebergabe-lesen",
+      stepId: "ce02-bauer-info-01-uebergabe-lesen",
       phase: 1,
       stepType: "text",
       bloomLevel: 2,
@@ -26,7 +26,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       quellen: ["DNQP Sturzprophylaxe 2022"],
       track: "basis",
       modus: "story",
-      lernziel: "ce02-baür-info-uebergabe",
+      lernziel: "ce02-bauer-info-uebergabe",
       tag: "pflege",
       displayFormat: "scenario",
       bildkategorie: "szene",
@@ -36,16 +36,16 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
         "Early morning nursing handover at geriatric psychiatry ward, nurse holding handwritten note, warm morning light, calm atmosphere, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Übergabe von der Nacht",
-        body: "Stationszimmer, 7:15 Uhr.\n\nNachtpflegerin Aylin gibt dir beim Verlassen kurz ein Blatt: \"Hier — das hab ich von Herrn Baür notiert. Sturzprotokoll angefangen, aber ich hatte keine Zeit mehr.\" Du liest die handschriftlichen Stichworte: Sturz ca. 02:30 Uhr, Flur vor Zimmer 8. Sitzend vorgefunden, ansprechbar. Keine Blutung, keine Deformität. Sehr unruhig, wollte 'zur Arbeit'. Zurück ins Bett gebracht. Schläft jetzt. Einschätzung noch offen. Was weißt du — und was weißt du NICHT?",
+        body: "Stationszimmer, 7:15 Uhr.\n\nNachtpflegerin Aylin gibt dir beim Verlassen kurz ein Blatt: \"Hier — das hab ich von Herrn Bauer notiert. Sturzprotokoll angefangen, aber ich hatte keine Zeit mehr.\" Du liest die handschriftlichen Stichworte: Sturz ca. 02:30 Uhr, Flur vor Zimmer 8. Sitzend vorgefunden, ansprechbar. Keine Blutung, keine Deformität. Sehr unruhig, wollte 'zur Arbeit'. Zurück ins Bett gebracht. Schläft jetzt. Einschätzung noch offen. Was weißt du — und was weißt du NICHT?",
         fallbezug:
-          "Herr Baür (82, Alzheimer FAST 6a, Pflegegrad 4) ist heute Nacht gestürzt. Du übernimmst ihn in der Frühschicht. Das Assessment der Nacht ist unvollständig.",
+          "Herr Bauer (82, Alzheimer FAST 6a, Pflegegrad 4) ist heute Nacht gestürzt. Du übernimmst ihn in der Frühschicht. Das Assessment der Nacht ist unvollständig.",
         glossarBegriffe: ["Sturzprotokoll", "Assessment"],
       },
       contentB1: {
         title: "Übergabe von der Nacht",
-        body: "Stationszimmer, 7:15 Uhr.\n\nDie Nachtschwester gibt dir ein Blatt mit Stichpunkten. Darauf steht: Herr Baür ist um 02:30 Uhr gestürzt. Er saß auf dem Boden im Flur. Er war ansprechbar (= er hat reagiert). Er hatte keine Wunden. Er war sehr unruhig. Er sagte: \"Ich muss zur Arbeit.\" Die Nachtschwester hat ihn ins Bett gebracht. Das Sturzprotokoll ist nicht vollständig. Was weißt du jetzt? Was fehlt noch?",
+        body: "Stationszimmer, 7:15 Uhr.\n\nDie Nachtschwester gibt dir ein Blatt mit Stichpunkten. Darauf steht: Herr Bauer ist um 02:30 Uhr gestürzt. Er saß auf dem Boden im Flur. Er war ansprechbar (= er hat reagiert). Er hatte keine Wunden. Er war sehr unruhig. Er sagte: \"Ich muss zur Arbeit.\" Die Nachtschwester hat ihn ins Bett gebracht. Das Sturzprotokoll ist nicht vollständig. Was weißt du jetzt? Was fehlt noch?",
         fallbezug:
-          "Herr Baür (82, Gedächtnis-Erkrankung, viel Hilfe nötig) ist heute Nacht hingefallen. Du arbeitest am Morgen. Das Formular ist noch nicht fertig.",
+          "Herr Bauer (82, Gedächtnis-Erkrankung, viel Hilfe nötig) ist heute Nacht hingefallen. Du arbeitest am Morgen. Das Formular ist noch nicht fertig.",
         glossarBegriffe: ["Sturzprotokoll", "ansprechbar"],
       },
     },
@@ -55,7 +55,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
     // Demenz-spezifischer Vertiefung — Herr Bauer stuerzt NICHT aus denselben Gruenden
     // wie Frau M. (Parkinson), sondern aus kognitiver Verwirrung + Sundowning.
     {
-      stepId: "ce02-baür-info-01b-sturz-bei-demenz",
+      stepId: "ce02-bauer-info-01b-sturz-bei-demenz",
       phase: 1,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -67,7 +67,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-baür-info-sturz-demenz",
+      lernziel: "ce02-bauer-info-sturz-demenz",
       tag: "pflege",
       themaPrimaer: "sturz-prophylaxe",
       themenSekundaer: ["basale-stimulation"],
@@ -78,7 +78,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
         glossarBegriffe: ["Sundowning", "Desorientierung", "Weglauftendenz"],
       },
       contentB1: {
-        title: "Warum stürzt Herr Baür?",
+        title: "Warum stürzt Herr Bauer?",
         body: "",
         glossarBegriffe: ["Sundowning", "Desorientierung"],
       },
@@ -88,22 +88,22 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
           basisBausteinId: "sturz-prophylaxe-was-ist-ein-sturz",
           basisPatient: "Frau M.",
           vertiefung:
-            "Sturz-Definition kennst du von Frau M. — bei Herrn Baür kommt ein entscheidender Faktor hinzu: **kognitive Desorientierung**. Er stürzt nicht weil er stolpert, sondern weil er nicht weiß wo er ist. Nachts steht er auf, glaubt er muss zur Arbeit, findet die Tuer nicht und stürzt auf dem Flur. Das nennt man **Sundowning** — nächtliche Verwirrtheit und Unruhe, die bei Alzheimer-Demenz ab FAST 5-6 häufig ist (DGN 2024).",
+            "Sturz-Definition kennst du von Frau M. — bei Herrn Bauer kommt ein entscheidender Faktor hinzu: **kognitive Desorientierung**. Er stürzt nicht weil er stolpert, sondern weil er nicht weiß wo er ist. Nachts steht er auf, glaubt er muss zur Arbeit, findet die Tuer nicht und stürzt auf dem Flur. Das nennt man **Sundowning** — nächtliche Verwirrtheit und Unruhe, die bei Alzheimer-Demenz ab FAST 5-6 häufig ist (DGN 2024).",
           vertiefungB1:
-            "Sturz kennst du schon von Frau M. Bei Herrn Baür ist es anders: Er stürzt nicht weil er stolpert. Er weiß nachts nicht wo er ist. Er steht auf und will zur Arbeit. Das nennt man **Sundowning** — nächtliche Verwirrtheit bei Demenz.",
+            "Sturz kennst du schon von Frau M. Bei Herrn Bauer ist es anders: Er stürzt nicht weil er stolpert. Er weiß nachts nicht wo er ist. Er steht auf und will zur Arbeit. Das nennt man **Sundowning** — nächtliche Verwirrtheit bei Demenz.",
         },
         storyAufhaenger:
-          "Herr Baür ist letzte Nacht im Flur gestürzt. Aber sein Sturz ist anders als der von Frau M. — Frau M. ist gestolpert, Herr Baür wusste gar nicht wo er war. Was macht Stürze bei Demenz so besonders?",
+          "Herr Bauer ist letzte Nacht im Flur gestürzt. Aber sein Sturz ist anders als der von Frau M. — Frau M. ist gestolpert, Herr Bauer wusste gar nicht wo er war. Was macht Stürze bei Demenz so besonders?",
         storyAufhaengerB1:
-          "Herr Baür ist nachts gestürzt. Aber nicht wie Frau M. — er ist nicht gestolpert. Er wusste nicht wo er war. Was macht Stürze bei Demenz anders?",
+          "Herr Bauer ist nachts gestürzt. Aber nicht wie Frau M. — er ist nicht gestolpert. Er wusste nicht wo er war. Was macht Stürze bei Demenz anders?",
         kerntext:
-          "Bei Demenz-Patienten sind **kognitive Faktoren** oft wichtiger als körperliche:\n\n**Demenz-spezifische Sturzrisiken (DNQP 2022 + DGN 2024):**\n\n• **Sundowning** — nächtliche Unruhe, Desorientierung, Weglauftendenz. Herr Baür steht nachts auf weil er glaubt in die Werkstatt zu müssen.\n\n• **Fehlende Gefahrenwahrnehmung** — er erkennt Hindernisse nicht als Risiko.\n\n• **Apraxie** — Bewegungsplanung gestört: er will aufstehen, aber die Reihenfolge der Bewegungen gelingt nicht.\n\n• **Medikamente** — Mirtazapin (dosisabhängige Sedierung, PRISCUS-Liste) verstärkt nächtliche Gangunsicherheit.\n\n**Sturzschutz bei Demenz ist deshalb anders:**\n\nNicht Bettgitter (= Fixierung, rechtlich problematisch), sondern: Niedrigbett, Sensormatte, Nachtlicht, Toilettenangebot vor dem Schlafengehen, Validation statt Korrektur.",
+          "Bei Demenz-Patienten sind **kognitive Faktoren** oft wichtiger als körperliche:\n\n**Demenz-spezifische Sturzrisiken (DNQP 2022 + DGN 2024):**\n\n• **Sundowning** — nächtliche Unruhe, Desorientierung, Weglauftendenz. Herr Bauer steht nachts auf weil er glaubt in die Werkstatt zu müssen.\n\n• **Fehlende Gefahrenwahrnehmung** — er erkennt Hindernisse nicht als Risiko.\n\n• **Apraxie** — Bewegungsplanung gestört: er will aufstehen, aber die Reihenfolge der Bewegungen gelingt nicht.\n\n• **Medikamente** — Mirtazapin (dosisabhängige Sedierung, PRISCUS-Liste) verstärkt nächtliche Gangunsicherheit.\n\n**Sturzschutz bei Demenz ist deshalb anders:**\n\nNicht Bettgitter (= Fixierung, rechtlich problematisch), sondern: Niedrigbett, Sensormatte, Nachtlicht, Toilettenangebot vor dem Schlafengehen, Validation statt Korrektur.",
         kerntextB1:
           "Bei Demenz sind **Kopf-Gründe** oft wichtiger als Körper-Gründe:\n\n• **Sundowning** — nachts verwirrt, steht auf, will raus.\n\n• **Keine Gefahr erkennen** — er sieht Hindernisse nicht als Risiko.\n\n• **Bewegungsplanung gestört** — er will aufstehen, aber die Bewegung klappt nicht richtig.\n\n• **Medikamente** — sein Schlafmittel (Mirtazapin) macht ihn unsicher auf den Beinen.\n\n**Sturzschutz bei Demenz:** Nicht Bettgitter (verboten ohne Genehmigung), sondern: Bett niedrig stellen, Licht nachts an, Toilette vor dem Schlafen anbieten.",
         faustregel:
           "Demenz-Stürze sind keine Stolper-Stürze — sie sind Orientierungs-Stürze. Der Schutz liegt in Beziehung, nicht in Barrieren.",
         faustregelB1:
-          "Herr Baür stürzt nicht weil er stolpert. Er stürzt weil er nicht weiß wo er ist. Schutz: Licht, Beziehung, keine Gitter.",
+          "Herr Bauer stürzt nicht weil er stolpert. Er stürzt weil er nicht weiß wo er ist. Schutz: Licht, Beziehung, keine Gitter.",
         spektrum: [
           {
             patientName: "Frau M.",
@@ -140,16 +140,16 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
           "Sturz-Tests wie der Tinetti-Test funktionieren bei schwerer Demenz oft nicht — weil die Anweisungen nicht verstanden werden. Stattdessen: 24 Stunden beobachten und aufschreiben wann er aufsteht, wann er unruhig ist, wann er versucht wegzulaufen.",
         karteikarte: {
           vorderseite:
-            "Herr Baür (82, Demenz FAST 6a) ist nachts im Flur gestürzt. Warum ist sein Sturzrisiko anders als bei Frau M. (Parkinson)?",
+            "Herr Bauer (82, Demenz FAST 6a) ist nachts im Flur gestürzt. Warum ist sein Sturzrisiko anders als bei Frau M. (Parkinson)?",
           rueckseite:
-            "Frau M. stürzt körperlich (Bradykinese, Rigor, Pneumonie). Herr Baür stürzt **kognitiv**: Sundowning (nächtliche Verwirrtheit), Desorientierung, Weglauftendenz, fehlende Gefahrenwahrnehmung + Mirtazapin-Sedierung (PRISCUS). Schutz bei Demenz: Niedrigbett, Sensormatte, Nachtlicht, Toilettenangebot, Validation. **NICHT Bettgitter** (= Fixierung ohne richterliche Genehmigung). Faustregel: **Demenz-Stürze sind Orientierungs-Stürze, keine Stolper-Stürze.**",
+            "Frau M. stürzt körperlich (Bradykinese, Rigor, Pneumonie). Herr Bauer stürzt **kognitiv**: Sundowning (nächtliche Verwirrtheit), Desorientierung, Weglauftendenz, fehlende Gefahrenwahrnehmung + Mirtazapin-Sedierung (PRISCUS). Schutz bei Demenz: Niedrigbett, Sensormatte, Nachtlicht, Toilettenangebot, Validation. **NICHT Bettgitter** (= Fixierung ohne richterliche Genehmigung). Faustregel: **Demenz-Stürze sind Orientierungs-Stürze, keine Stolper-Stürze.**",
         },
       },
     },
 
     // Step 1.2 — Kategorisieren: Was weiß ich, was fehlt?
     {
-      stepId: "ce02-baür-info-02-was-fehlt",
+      stepId: "ce02-bauer-info-02-was-fehlt",
       phase: 1,
       stepType: "categorize",
       bloomLevel: 2,
@@ -157,7 +157,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       quellen: ["DNQP Sturzprophylaxe 2022"],
       track: "basis",
       modus: "sortierstation",
-      lernziel: "ce02-baür-info-informationsstand",
+      lernziel: "ce02-bauer-info-informationsstand",
       tag: "pflege",
       contentC1: {
         title: "Informationsstand prüfen",
@@ -181,12 +181,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
           { text: "Sturzzeit: ca. 02:30 Uhr", correctCategory: 0 },
           { text: "Sturzort: Flur vor Zimmer 8", correctCategory: 0 },
           { text: "Keine sichtbaren Blutungen / Deformitäten", correctCategory: 0 },
-          { text: "Medikamentenliste von Herrn Baür", correctCategory: 0 },
+          { text: "Medikamentenliste von Herrn Bauer", correctCategory: 0 },
           { text: "Schmerzerhebung — fehlt noch", correctCategory: 1 },
           { text: "Gelenkbeweglichkeit — fehlt noch", correctCategory: 1 },
           { text: "Trinkmenge gestern — fehlt noch", correctCategory: 1 },
-          { text: "Aktülle Stimmung / Zustand jetzt — unbekannt", correctCategory: 1 },
-          { text: "Geburtsdatum von Herrn Baür", correctCategory: 2 },
+          { text: "Aktuelle Stimmung / Zustand jetzt — unbekannt", correctCategory: 1 },
+          { text: "Geburtsdatum von Herrn Bauer", correctCategory: 2 },
           { text: "Diagnose der Alzheimer-Demenz", correctCategory: 0 },
         ],
       },
@@ -197,7 +197,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
     // bietet nonverbale Kontaktaufnahme. Dieser Baustein erklaert die Grundidee
     // BEVOR der Schueler in den Dialog (1.4) geht.
     {
-      stepId: "ce02-baür-info-02b-basale-stimulation-einführung",
+      stepId: "ce02-bauer-info-02b-basale-stimulation-einführung",
       phase: 1,
       stepType: "inlineWissen",
       bloomLevel: 1,
@@ -208,7 +208,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-baür-info-basale-stimulation-konzept",
+      lernziel: "ce02-bauer-info-basale-stimulation-konzept",
       tag: "pflege",
       themaPrimaer: "basale-stimulation",
       themenSekundaer: ["ganzkörperpflege"],
@@ -226,13 +226,13 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       inlineWissen: {
         bausteinRef: "basale-stimulation-grundkonzept",
         storyAufhaenger:
-          "Gleich oeffnest du die Tuer zu Herrn Baür. Er ist aufgewühlt, verwirrt, vielleicht aggressiv. Du kannst ihm nicht erklären was du vorhast — er versteht deine Worte nur bruchstückhaft. Aber sein Körper versteht Berührungen. Das ist die Grundidee der Basalen Stimulation.",
+          "Gleich oeffnest du die Tuer zu Herrn Bauer. Er ist aufgewühlt, verwirrt, vielleicht aggressiv. Du kannst ihm nicht erklären was du vorhast — er versteht deine Worte nur bruchstückhaft. Aber sein Körper versteht Berührungen. Das ist die Grundidee der Basalen Stimulation.",
         storyAufhaengerB1:
-          "Du gehst gleich zu Herrn Baür. Er ist aufgeregt und verwirrt. Worte versteht er nur wenig. Aber Berührungen versteht sein Körper. Das nennt man Basale Stimulation.",
+          "Du gehst gleich zu Herrn Bauer. Er ist aufgeregt und verwirrt. Worte versteht er nur wenig. Aber Berührungen versteht sein Körper. Das nennt man Basale Stimulation.",
         kerntext:
-          "**Basale Stimulation** (Fröhlich 1978, Bienstein/Fröhlich 2021) arbeitet ueber drei Sinneskanäle die auch bei schwerer Demenz intakt bleiben:\n\n**Die drei Grundbereiche:**\n\n• **Somatisch** — Berührung der Hautoberfläche. Bei Herrn Baür: fester, ruhiger Händedruck, Streichung des Unterarms in Haarwuchsrichtung. Wichtig: **Initialberührung** immer an der gleichen Stelle (z. B. Schulter) — das schafft Wiedererkennung.\n\n• **Vestibulär** — Gleichgewichtssinn ansprechen. Langsames, rhythmisches Wiegen im Sitzen, Kopfhaltung ändern. Bei Demenz vorsichtig dosieren.\n\n• **Vibratorisch** — Erschütterungen spüren. Summen (Vibrationen im Brustkorb), Klopfen auf Matratze, Stimmgabel an der Hand.\n\n**Warum funktioniert das?**\n\nDiese drei Kanäle sind die **ältesteen Sinneswahrnehmungen** des Menschen — sie entwickeln sich schon im Mutterleib (pränatal). Auch wenn Sprache und Gedächtnis versagen, reagiert der Körper auf basale Reize. Herr Baür erinnert sich nicht an deinen Namen — aber er erinnert sich an den ruhigen Händedruck von heute Morgen.",
+          "**Basale Stimulation** (Fröhlich 1978, Bienstein/Fröhlich 2021) arbeitet ueber drei Sinneskanäle die auch bei schwerer Demenz intakt bleiben:\n\n**Die drei Grundbereiche:**\n\n• **Somatisch** — Berührung der Hautoberfläche. Bei Herrn Bauer: fester, ruhiger Händedruck, Streichung des Unterarms in Haarwuchsrichtung. Wichtig: **Initialberührung** immer an der gleichen Stelle (z. B. Schulter) — das schafft Wiedererkennung.\n\n• **Vestibulär** — Gleichgewichtssinn ansprechen. Langsames, rhythmisches Wiegen im Sitzen, Kopfhaltung ändern. Bei Demenz vorsichtig dosieren.\n\n• **Vibratorisch** — Erschütterungen spüren. Summen (Vibrationen im Brustkorb), Klopfen auf Matratze, Stimmgabel an der Hand.\n\n**Warum funktioniert das?**\n\nDiese drei Kanäle sind die **ältesten Sinneswahrnehmungen** des Menschen — sie entwickeln sich schon im Mutterleib (pränatal). Auch wenn Sprache und Gedächtnis versagen, reagiert der Körper auf basale Reize. Herr Bauer erinnert sich nicht an deinen Namen — aber er erinnert sich an den ruhigen Händedruck von heute Morgen.",
         kerntextB1:
-          "**Basale Stimulation** arbeitet ueber drei Sinne die auch bei schwerer Demenz funktionieren:\n\n• **Berührung** — fester, ruhiger Händedruck. Immer an der gleichen Stelle anfangen (z. B. Schulter). So erkennt er dich wieder.\n\n• **Gleichgewicht** — langsames Wiegen im Sitzen.\n\n• **Vibrationen** — leises Summen, das er in der Brust spürt.\n\n**Warum funktioniert das?**\n\nDiese drei Sinne sind die ältesteen im Körper. Sie entstehen schon vor der Geburt. Auch wenn Herr Baür deinen Namen vergisst — seinen Körper erreicht dein ruhiger Händedruck.",
+          "**Basale Stimulation** arbeitet ueber drei Sinne die auch bei schwerer Demenz funktionieren:\n\n• **Berührung** — fester, ruhiger Händedruck. Immer an der gleichen Stelle anfangen (z. B. Schulter). So erkennt er dich wieder.\n\n• **Gleichgewicht** — langsames Wiegen im Sitzen.\n\n• **Vibrationen** — leises Summen, das er in der Brust spürt.\n\n**Warum funktioniert das?**\n\nDiese drei Sinne sind die ältesten im Körper. Sie entstehen schon vor der Geburt. Auch wenn Herr Bauer deinen Namen vergisst — seinen Körper erreicht dein ruhiger Händedruck.",
         faustregel:
           "Sprache vergisst der Mensch. Berührung vergisst der Körper nie.",
         faustregelB1:
@@ -273,7 +273,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
           "Basale Stimulation wurde 1978 von Andreas Fröhlich für Kinder mit schwerer Behinderung erfunden. Christel Bienstein hat es ab 1991 für alte Menschen angepasst. Heute nutzt man es in der Demenz-Pflege, auf Intensivstationen und in der Sterbebegleitung.",
         karteikarte: {
           vorderseite:
-            "Herr Baür (82, Demenz FAST 6a) ist aufgewühlt und versteht deine Worte kaum. Wie erreichst du ihn trotzdem?",
+            "Herr Bauer (82, Demenz FAST 6a) ist aufgewühlt und versteht deine Worte kaum. Wie erreichst du ihn trotzdem?",
           rueckseite:
             "Basale Stimulation nach Bienstein/Fröhlich (2021) — drei Grundbereiche: **Somatisch** (fester Händedruck, Initialberührung an gleicher Stelle), **Vestibulär** (langsames Wiegen), **Vibratorisch** (Summen, Klopfen). Funktioniert bei schwerer Demenz weil diese drei Kanäle pränatal angelegt sind und auch bei Verlust von Sprache + Gedächtnis intakt bleiben. Spektrum: Frau M. (Körperschema), Petrov (Neglect-Seite), Emilia (Säugling), Yilmaz (post-OP-Angst). Faustregel: **Sprache vergisst der Mensch. Berührung vergisst der Körper nie.**",
         },
@@ -282,7 +282,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
 
     // Step 1.3 — Erklär-Step: Validation nach Naomi Feil
     {
-      stepId: "ce02-baür-info-03-validation-grundlage",
+      stepId: "ce02-bauer-info-03-validation-grundlage",
       phase: 1,
       stepType: "text",
       bloomLevel: 2,
@@ -290,24 +290,24 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       quellen: ["Feil N. / de Klerk-Rubin V. (2012)"],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-baür-info-validation",
+      lernziel: "ce02-bauer-info-validation",
       tag: "pflege",
       displayFormat: "stepbystep",
       contentC1: {
         title: "Validation: Wie öffne ich die Tür?",
-        body: "Du stehst vor Herrn Baürs Zimmer. Bevor du eintrittst: Was ist der richtige Zugang bei einem Menschen mit Demenz nach einem nächtlichen Sturz? Validation nach Feil arbeitet mit 14 Techniken (Zentrieren, Reformulieren, Spiegeln, Berührung u. a.). Für die Praxis lassen sich daraus folgende Grundprinzipien ableiten (vereinfacht nach Feil 2012):\n\n1. Gefühle ernst nehmen — nicht korrigieren. Sag nicht: \"Sie sind nicht in der Werkstatt.\" Das erhöht Angst.\n2. In der emotionalen Realität des Menschen ankommen — wenn er denkt, er muss arbeiten, höre zu.\n3. Ruhige Stimme und Augenhöhe — nicht von oben sprechen.\n4. Namen benutzen: \"Herr Baür\" — persönlich, nicht abstrakt.\n5. Kurze, einfache Sätze — nicht erklären, nicht argumentieren.\n\nQuelle: Feil N. / de Klerk-Rubin V. (2012): Validation. Reinhardt-Verlag.",
+        body: "Du stehst vor Herrn Bauers Zimmer. Bevor du eintrittst: Was ist der richtige Zugang bei einem Menschen mit Demenz nach einem nächtlichen Sturz? Validation nach Feil arbeitet mit 14 Techniken (Zentrieren, Reformulieren, Spiegeln, Berührung u. a.). Für die Praxis lassen sich daraus folgende Grundprinzipien ableiten (vereinfacht nach Feil 2012):\n\n1. Gefühle ernst nehmen — nicht korrigieren. Sag nicht: \"Sie sind nicht in der Werkstatt.\" Das erhöht Angst.\n2. In der emotionalen Realität des Menschen ankommen — wenn er denkt, er muss arbeiten, höre zu.\n3. Ruhige Stimme und Augenhöhe — nicht von oben sprechen.\n4. Namen benutzen: \"Herr Bauer\" — persönlich, nicht abstrakt.\n5. Kurze, einfache Sätze — nicht erklären, nicht argumentieren.\n\nQuelle: Feil N. / de Klerk-Rubin V. (2012): Validation. Reinhardt-Verlag.",
         glossarBegriffe: ["Validation", "Demenz", "Desorientierung"],
       },
       contentB1: {
-        title: "Wie gehe ich zu Herrn Baür?",
-        body: "Du gehst gleich zu Herrn Baür. Wie machst du das richtig? Das nennt man Validation (= den Menschen so nehmen, wie er ist). Vereinfacht nach Naomi Feil — 5 Grundregeln:\n\n1. Nimm seine Gefühle ernst. Sage nicht: \"Du bist nicht in der Werkstatt.\" Das macht Angst.\n2. Gehe in seine Welt. Er glaubt, er muss arbeiten? Höre zu.\n3. Sprich ruhig. Gehe auf Augenhöhe.\n4. Sage seinen Namen: \"Herr Baür\".\n5. Sprich kurze, einfache Sätze.\n\nBeispiel richtig: \"Herr Baür, ich sehe, du hast heute viel zu tun. Ich bin [dein Name]. Ich helfe dir heute früh.\"",
+        title: "Wie gehe ich zu Herrn Bauer?",
+        body: "Du gehst gleich zu Herrn Bauer. Wie machst du das richtig? Das nennt man Validation (= den Menschen so nehmen, wie er ist). Vereinfacht nach Naomi Feil — 5 Grundregeln:\n\n1. Nimm seine Gefühle ernst. Sage nicht: \"Du bist nicht in der Werkstatt.\" Das macht Angst.\n2. Gehe in seine Welt. Er glaubt, er muss arbeiten? Höre zu.\n3. Sprich ruhig. Gehe auf Augenhöhe.\n4. Sage seinen Namen: \"Herr Bauer\".\n5. Sprich kurze, einfache Sätze.\n\nBeispiel richtig: \"Herr Bauer, ich sehe, du hast heute viel zu tun. Ich bin [dein Name]. Ich helfe dir heute früh.\"",
         glossarBegriffe: ["Validation", "Demenz"],
       },
     },
 
     // Inline-Wissen: Deeskalation bei Demenz \u2014 wenn Worte nicht helfen
     {
-      stepId: "ce02-baür-info-03b-deeskalation",
+      stepId: "ce02-bauer-info-03b-deeskalation",
       phase: 1,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -315,7 +315,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       quellen: ["DNQP 2018 \u2014 Beziehungsgestaltung bei Demenz", "Savaskan E. et al. (2014): SGAP-Empfehlungen Agitation"],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-baür-info-03b-deeskalation",
+      lernziel: "ce02-bauer-info-03b-deeskalation",
       tag: "pflege",
       themaPrimaer: "basale-stimulation",
       themenSekundaer: ["sturz-prophylaxe"],
@@ -332,10 +332,10 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       },
       inlineWissen: {
         bausteinRef: "basale-stimulation-deeskalation",
-        storyAufhaenger: "Herr Baür ist aufgewühlt. Du hörst ihn durch die Tuer. Gleich oeffnest du sie. Aber: Wie beruhigst du jemanden, der nicht versteht wo er ist und wer du bist? Deeskalation bei Demenz funktioniert anders als bei orientierten Patienten.",
-        storyAufhaengerB1: "Herr Baür ist aufgeregt. Du hörst ihn. Wie beruhigst du ihn, wenn er nicht versteht wer du bist?",
-        kerntext: "**Deeskalation bei Demenz** bedeutet: Den Erregungskreislauf durchbrechen \u2014 nicht durch Argumente, sondern durch Reizreduktion und Beziehungsangebote (DNQP 2018).\n\n**4 Stufen der Deeskalation:**\n\n\u2022 **Reize reduzieren** \u2014 Licht dimmen (nicht grell), Stimmen senken, Hektik vermeiden. Zu viele Reize überfordern das geschädigte Gehirn.\n\n\u2022 **Körpersprache anpassen** \u2014 Langsame Bewegungen, Augenhöhe, offene Haltung. Nie von hinten ansprechen.\n\n\u2022 **Berührung anbieten** \u2014 Handdruck, Schulterberührung (Initialberührung). Nur wenn der Patient es zulässt.\n\n\u2022 **Ablenken statt Korrigieren** \u2014 Statt \"Sie sind im Krankenhaus\" lieber \"Ich sehe, du hast heute viel zu tun.\" Emotionale Realität aufgreifen.\n\n**Agitation ist keine Aggressivität.** Herr Baür schlägt nicht aus Bosheit \u2014 er schlägt aus Angst. Die Deeskalation richtet sich an die Angst, nicht an das Verhalten.",
-        kerntextB1: "**Deeskalation bei Demenz** heißt: Die Aufregung stoppen.\n\n**4 Schritte:**\n\n\u2022 **Reize weniger machen** \u2014 Leise sprechen, wenig Licht, keine Hektik.\n\n\u2022 **Langsam bewegen** \u2014 Auf Augenhöhe. Nie von hinten kommen.\n\n\u2022 **Berührung anbieten** \u2014 Hand halten, Schulter berühren. Nur wenn er es zulässt.\n\n\u2022 **Nicht korrigieren** \u2014 Sage nicht: \"Du bist im Krankenhaus.\" Sage: \"Ich sehe, du hast viel zu tun.\"\n\nHerr Baür ist nicht böse \u2014 er hat Angst.",
+        storyAufhaenger: "Herr Bauer ist aufgewühlt. Du hörst ihn durch die Tuer. Gleich oeffnest du sie. Aber: Wie beruhigst du jemanden, der nicht versteht wo er ist und wer du bist? Deeskalation bei Demenz funktioniert anders als bei orientierten Patienten.",
+        storyAufhaengerB1: "Herr Bauer ist aufgeregt. Du hörst ihn. Wie beruhigst du ihn, wenn er nicht versteht wer du bist?",
+        kerntext: "**Deeskalation bei Demenz** bedeutet: Den Erregungskreislauf durchbrechen \u2014 nicht durch Argumente, sondern durch Reizreduktion und Beziehungsangebote (DNQP 2018).\n\n**4 Stufen der Deeskalation:**\n\n\u2022 **Reize reduzieren** \u2014 Licht dimmen (nicht grell), Stimmen senken, Hektik vermeiden. Zu viele Reize überfordern das geschädigte Gehirn.\n\n\u2022 **Körpersprache anpassen** \u2014 Langsame Bewegungen, Augenhöhe, offene Haltung. Nie von hinten ansprechen.\n\n\u2022 **Berührung anbieten** \u2014 Handdruck, Schulterberührung (Initialberührung). Nur wenn der Patient es zulässt.\n\n\u2022 **Ablenken statt Korrigieren** \u2014 Statt \"Sie sind im Krankenhaus\" lieber \"Ich sehe, du hast heute viel zu tun.\" Emotionale Realität aufgreifen.\n\n**Agitation ist keine Aggressivität.** Herr Bauer schlägt nicht aus Bosheit \u2014 er schlägt aus Angst. Die Deeskalation richtet sich an die Angst, nicht an das Verhalten.",
+        kerntextB1: "**Deeskalation bei Demenz** heißt: Die Aufregung stoppen.\n\n**4 Schritte:**\n\n\u2022 **Reize weniger machen** \u2014 Leise sprechen, wenig Licht, keine Hektik.\n\n\u2022 **Langsam bewegen** \u2014 Auf Augenhöhe. Nie von hinten kommen.\n\n\u2022 **Berührung anbieten** \u2014 Hand halten, Schulter berühren. Nur wenn er es zulässt.\n\n\u2022 **Nicht korrigieren** \u2014 Sage nicht: \"Du bist im Krankenhaus.\" Sage: \"Ich sehe, du hast viel zu tun.\"\n\nHerr Bauer ist nicht böse \u2014 er hat Angst.",
         faustregel: "Deeskalation bei Demenz: Nicht argumentieren, sondern Reize reduzieren, Berührung anbieten, emotionale Realität aufgreifen.",
         faustregelB1: "Deeskalation bei Demenz: Leise, langsam, berühren, nicht korrigieren. Er hat Angst \u2014 keine Bosheit.",
         spektrum: [
@@ -353,7 +353,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
           },
         ],
         karteikarte: {
-          vorderseite: "Herr Baür (82, Demenz FAST 6a) ist aufgewühlt und schreit. Wie deeskalierst du \u2014 bevor du sein Zimmer betrittst?",
+          vorderseite: "Herr Bauer (82, Demenz FAST 6a) ist aufgewühlt und schreit. Wie deeskalierst du \u2014 bevor du sein Zimmer betrittst?",
           rueckseite: "4 Stufen: 1) Reize reduzieren (Licht, Stimme, Hektik). 2) Körpersprache (langsam, Augenhöhe). 3) Berührung (Initialberührung an gleicher Stelle). 4) Ablenken statt korrigieren (emotionale Realität aufgreifen). **Agitation = Angst, nicht Aggression.** (DNQP 2018)",
         },
       },
@@ -361,7 +361,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
 
     // Step 1.4 — Dialog: Zimmer betreten
     {
-      stepId: "ce02-baür-info-04-zimmer-betreten",
+      stepId: "ce02-bauer-info-04-zimmer-betreten",
       phase: 1,
       stepType: "dialog",
       bloomLevel: 3,
@@ -369,37 +369,37 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       quellen: ["Feil N. / de Klerk-Rubin V. (2012)", "DNQP Beziehungsgestaltung Demenz 2018"],
       track: "basis",
       modus: "story",
-      lernziel: "ce02-baür-info-dialog-einstieg",
+      lernziel: "ce02-bauer-info-dialog-einstieg",
       tag: "pflege",
       contentC1: {
         title: "Das Zimmer betreten",
-        body: "Du öffnest die Tür. Herr Baür sitzt aufrecht im Bett, Decke zur Seite geworfen, schaut dich misstrauisch an. Er ist aufgewühlt. Jetzt kommt sein erster Satz.",
+        body: "Du öffnest die Tür. Herr Bauer sitzt aufrecht im Bett, Decke zur Seite geworfen, schaut dich misstrauisch an. Er ist aufgewühlt. Jetzt kommt sein erster Satz.",
         glossarBegriffe: ["Validation", "Deeskalation"],
       },
       contentB1: {
         title: "Ins Zimmer gehen",
-        body: "Du öffnest die Tür. Herr Baür sitzt im Bett. Er hat die Decke weggeworfen. Er schaut dich misstrauisch an. Er ist aufgeregt. Jetzt spricht er.",
+        body: "Du öffnest die Tür. Herr Bauer sitzt im Bett. Er hat die Decke weggeworfen. Er schaut dich misstrauisch an. Er ist aufgeregt. Jetzt spricht er.",
         glossarBegriffe: ["Validation"],
       },
       question: {
-        fragetext: "Wähle deine Antwort auf Herrn Baür.",
-        patientName: "Herr Baür",
+        fragetext: "Wähle deine Antwort auf Herrn Bauer.",
+        patientName: "Herr Bauer",
         dialogPhases: [
           {
             context:
-              "Herr Baür schaut dich an, seine Stimme ist laut und aufgewühlt. Er sagt:",
+              "Herr Bauer schaut dich an, seine Stimme ist laut und aufgewühlt. Er sagt:",
             contextB1:
-              "Herr Baür schaut dich an. Er spricht laut. Er sagt:",
-            speaker: "Herr Baür",
+              "Herr Bauer schaut dich an. Er spricht laut. Er sagt:",
+            speaker: "Herr Bauer",
             options: [
               {
-                text: "\"Herr Baür, beruhigen Sie sich bitte — Sie sind im Krankenhaus, nicht in der Werkstatt.\"",
+                text: "\"Herr Bauer, beruhigen Sie sich bitte — Sie sind im Krankenhaus, nicht in der Werkstatt.\"",
                 textB1:
-                  "\"Herr Baür, beruhig dich — du bist im Krankenhaus, nicht in der Werkstatt.\"",
+                  "\"Herr Bauer, beruhig dich — du bist im Krankenhaus, nicht in der Werkstatt.\"",
                 patientResponse:
-                  "Herr Baür wird lauter: \"Nein! Lassen Sie mich! Ich muss zur Arbeit!\" Er versucht aufzustehen.",
+                  "Herr Bauer wird lauter: \"Nein! Lassen Sie mich! Ich muss zur Arbeit!\" Er versucht aufzustehen.",
                 patientResponseB1:
-                  "Herr Baür schreit lauter: \"Nein! Ich muss raus!\" Er will aufstehen.",
+                  "Herr Bauer schreit lauter: \"Nein! Ich muss raus!\" Er will aufstehen.",
                 score: 0,
                 feedback:
                   "Realitätsorientierung bei schwerer Demenz verstärkt Angst und Agitation. Du korrigierst seine Realität — das fühlt sich für ihn wie ein Angriff an. Validation-Prinzip: Gefühle ernst nehmen statt korrigieren.",
@@ -407,30 +407,30 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
                   "Das ist falsch bei Demenz. Wenn du seine Realität korrigierst, macht er mehr Angst. Er versteht die Korrektur nicht — er fühlt nur Bedrohung.",
               },
               {
-                text: "\"Herr Baür, ich sehe — heute haben Sie viel zu tun. Ich bin [Name]. Ich helfe Ihnen heute früh und bleibe ein bisschen bei Ihnen.\"",
+                text: "\"Herr Bauer, ich sehe — heute haben Sie viel zu tun. Ich bin [Name]. Ich helfe Ihnen heute früh und bleibe ein bisschen bei Ihnen.\"",
                 textB1:
-                  "\"Herr Baür, ich sehe, du hast heute viel zu tun. Ich bin [Name]. Ich helfe dir heute früh und bleibe ein bisschen bei dir.\"",
+                  "\"Herr Bauer, ich sehe, du hast heute viel zu tun. Ich bin [Name]. Ich helfe dir heute früh und bleibe ein bisschen bei dir.\"",
                 patientResponse:
-                  "Herr Baür schaut dich an. Seine Stimme wird etwas leiser. Er sagt: \"Ja... die Bestellung...\" und schaut zur Seite.",
+                  "Herr Bauer schaut dich an. Seine Stimme wird etwas leiser. Er sagt: \"Ja... die Bestellung...\" und schaut zur Seite.",
                 patientResponseB1:
-                  "Herr Baür schaut dich an. Er wird etwas ruhiger. Er sagt: \"Ja... die Bestellung...\"",
+                  "Herr Bauer schaut dich an. Er wird etwas ruhiger. Er sagt: \"Ja... die Bestellung...\"",
                 score: 3,
                 feedback:
-                  "Validierend, nicht korrigierend. Du bestätigst seine Realität (\"du hast viel zu tun\"), stellst dich vor und kündigst wahrhaftig an, was passiert (\"helfe dir heute früh, bleibe ein bisschen\"). Bei Demenz ist Verlässlichkeit zentral (DNQP Beziehungsgestaltung Demenz 2018) — Floskeln wie \"ich schaue kurz\" werden später als Vertraünsbruch erlebt, wenn die volle Morgenpflege folgt.",
+                  "Validierend, nicht korrigierend. Du bestätigst seine Realität (\"du hast viel zu tun\"), stellst dich vor und kündigst wahrhaftig an, was passiert (\"helfe dir heute früh, bleibe ein bisschen\"). Bei Demenz ist Verlässlichkeit zentral (DNQP Beziehungsgestaltung Demenz 2018) — Floskeln wie \"ich schaue kurz\" werden später als Vertrauensbruch erlebt, wenn die volle Morgenpflege folgt.",
                 feedbackB1:
                   "Sehr gut. Du nimmst ihn ernst. Du sagst: 'Du hast viel zu tun' — das ist seine Welt. Du sagst ehrlich, was du tust (helfen, bleiben). Bei Demenz ist Wahrhaftigkeit wichtig — sage nie 'ich schaue kurz', wenn du in Wahrheit eine ganze Pflege machst.",
               },
               {
-                text: "\"Guten Morgen, Herr Baür. Wie geht es Ihnen heute?\"",
+                text: "\"Guten Morgen, Herr Bauer. Wie geht es Ihnen heute?\"",
                 textB1:
-                  "\"Guten Morgen, Herr Baür. Wie geht es dir heute?\"",
+                  "\"Guten Morgen, Herr Bauer. Wie geht es dir heute?\"",
                 patientResponse:
-                  "Herr Baür antwortet nicht auf die Frage. Er sagt weiter: \"Die Bestellung! Die kommt noch heute!\"",
+                  "Herr Bauer antwortet nicht auf die Frage. Er sagt weiter: \"Die Bestellung! Die kommt noch heute!\"",
                 patientResponseB1:
-                  "Herr Baür hört nicht zu. Er sagt: \"Die Bestellung! Heute noch!\"",
+                  "Herr Bauer hört nicht zu. Er sagt: \"Die Bestellung! Heute noch!\"",
                 score: 1,
                 feedback:
-                  "Freundlich, aber nicht angepasst. \"Wie geht es Ihnen?\" ist eine offene Frage die er gerade nicht beantworten kann — seine Gedanken sind woanders. Validation: zürst seinen emotionalen Zustand aufgreifen, dann Kontakt herstellen.",
+                  "Freundlich, aber nicht angepasst. \"Wie geht es Ihnen?\" ist eine offene Frage die er gerade nicht beantworten kann — seine Gedanken sind woanders. Validation: zuerst seinen emotionalen Zustand aufgreifen, dann Kontakt herstellen.",
                 feedbackB1:
                   "Freundlich — gut. Aber die Frage passt gerade nicht. Er ist in Gedanken woanders. Besser: Zuerst seine Aufregung aufgreifen.",
               },
@@ -444,7 +444,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
   optionaleSteps: [
     // Inline-Wissen: Alzheimer-Demenz und die FAST-Skala
     {
-      stepId: "ce02-baür-info-04b-alzheimer-fast",
+      stepId: "ce02-bauer-info-04b-alzheimer-fast",
       phase: 1,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -452,32 +452,32 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       quellen: ["Reisberg B. et al. (1982): FAST-Skala", "DGN 2024 \u2014 S3-Leitlinie Demenzen"],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-baür-info-04b-alzheimer-fast",
+      lernziel: "ce02-bauer-info-04b-alzheimer-fast",
       tag: "krankheitslehre",
       themaPrimaer: "basale-stimulation",
       themenSekundaer: ["ganzkörperpflege"],
-      transition: "Du kennst jetzt die Stufen. Herr Baür ist FAST 6a \u2014 was das für die Pflege bedeutet, zeigen die Flipcards.",
+      transition: "Du kennst jetzt die Stufen. Herr Bauer ist FAST 6a \u2014 was das für die Pflege bedeutet, zeigen die Flipcards.",
       contentC1: {
         title: "Alzheimer-Demenz und die FAST-Skala",
         body: "",
         glossarBegriffe: ["Alzheimer-Demenz", "FAST-Skala", "Demenzstadien"],
       },
       contentB1: {
-        title: "Was ist Alzheimer? Wie schwer ist Herr Baürs Demenz?",
+        title: "Was ist Alzheimer? Wie schwer ist Herr Bauers Demenz?",
         body: "",
         glossarBegriffe: ["Alzheimer-Demenz", "FAST-Skala"],
       },
       inlineWissen: {
         bausteinRef: "basale-stimulation-alzheimer-fast",
-        storyAufhaenger: "Herr Baür hat Alzheimer-Demenz, Stufe FAST 6a. Aber was bedeutet das genau? Die FAST-Skala (Functional Assessment Staging) teilt Demenz in 7 Stufen ein \u2014 nach dem, was der Mensch noch kann.",
-        storyAufhaengerB1: "Herr Baür hat Alzheimer-Demenz. Wie schwer ist sie? Die FAST-Skala sagt: Stufe 6a. Was bedeutet das?",
-        kerntext: "**Alzheimer-Demenz** ist die häufigste Demenzform (60-70 % aller Demenzen, DGN 2024). Kennzeichen: fortschreitender Verlust von Gedächtnis, Orientierung und Alltagsfähigkeiten.\n\n**FAST-Skala** (Reisberg 1982) \u2014 7 Stufen der funktionellen Einschränkung:\n\n\u2022 **Stufe 1-3:** Keine bis leichte Einschränkungen. Vergesslichkeit, aber selbstständig.\n\n\u2022 **Stufe 4:** Braucht Hilfe bei komplexen Aufgaben (Finanzen, Einkaufen).\n\n\u2022 **Stufe 5:** Braucht Hilfe beim Ankleiden. Erinnert sich nicht an aktülle Adresse.\n\n\u2022 **Stufe 6a (= Herr Baür):** Schwierigkeiten beim korrekten Ankleiden, Desorientierung, nächtliche Unruhe, Weglauftendenz. Körperpflege mit Hilfe möglich.\n\n\u2022 **Stufe 6b-7:** Zunehmender Sprachverlust, Inkontinenz, Verlust der Gehfähigkeit.\n\nFür die Pflege entscheidend: Ab FAST 6 sind **Validation** und **Basale Stimulation** die zentralen Kommunikationswege \u2014 verbale Instruktionen funktionieren nicht mehr zuverlässig.",
-        kerntextB1: "**Alzheimer-Demenz** ist die häufigste Demenzform. Gedächtnis und Alltags-Fähigkeiten gehen langsam verloren.\n\n**FAST-Skala** \u2014 7 Stufen:\n\n\u2022 Stufe 1-3: Leichte Vergesslichkeit.\n\u2022 Stufe 4: Braucht Hilfe bei schwierigen Aufgaben.\n\u2022 Stufe 5: Braucht Hilfe beim Anziehen.\n\u2022 **Stufe 6a (Herr Baür):** Zieht sich falsch an, weiss nicht wo er ist, ist nachts unruhig, will weglaufen. Pflege mit Hilfe möglich.\n\u2022 Stufe 7: Spricht kaum noch, kann nicht mehr gehen.\n\nAb Stufe 6: Worte reichen nicht mehr. Berührung und ruhige Ansprache sind wichtiger.",
+        storyAufhaenger: "Herr Bauer hat Alzheimer-Demenz, Stufe FAST 6a. Aber was bedeutet das genau? Die FAST-Skala (Functional Assessment Staging) teilt Demenz in 7 Stufen ein \u2014 nach dem, was der Mensch noch kann.",
+        storyAufhaengerB1: "Herr Bauer hat Alzheimer-Demenz. Wie schwer ist sie? Die FAST-Skala sagt: Stufe 6a. Was bedeutet das?",
+        kerntext: "**Alzheimer-Demenz** ist die häufigste Demenzform (60-70 % aller Demenzen, DGN 2024). Kennzeichen: fortschreitender Verlust von Gedächtnis, Orientierung und Alltagsfähigkeiten.\n\n**FAST-Skala** (Reisberg 1982) \u2014 7 Stufen der funktionellen Einschränkung:\n\n\u2022 **Stufe 1-3:** Keine bis leichte Einschränkungen. Vergesslichkeit, aber selbstständig.\n\n\u2022 **Stufe 4:** Braucht Hilfe bei komplexen Aufgaben (Finanzen, Einkaufen).\n\n\u2022 **Stufe 5:** Braucht Hilfe beim Ankleiden. Erinnert sich nicht an aktuelle Adresse.\n\n\u2022 **Stufe 6a (= Herr Bauer):** Schwierigkeiten beim korrekten Ankleiden, Desorientierung, nächtliche Unruhe, Weglauftendenz. Körperpflege mit Hilfe möglich.\n\n\u2022 **Stufe 6b-7:** Zunehmender Sprachverlust, Inkontinenz, Verlust der Gehfähigkeit.\n\nFür die Pflege entscheidend: Ab FAST 6 sind **Validation** und **Basale Stimulation** die zentralen Kommunikationswege \u2014 verbale Instruktionen funktionieren nicht mehr zuverlässig.",
+        kerntextB1: "**Alzheimer-Demenz** ist die häufigste Demenzform. Gedächtnis und Alltags-Fähigkeiten gehen langsam verloren.\n\n**FAST-Skala** \u2014 7 Stufen:\n\n\u2022 Stufe 1-3: Leichte Vergesslichkeit.\n\u2022 Stufe 4: Braucht Hilfe bei schwierigen Aufgaben.\n\u2022 Stufe 5: Braucht Hilfe beim Anziehen.\n\u2022 **Stufe 6a (Herr Bauer):** Zieht sich falsch an, weiss nicht wo er ist, ist nachts unruhig, will weglaufen. Pflege mit Hilfe möglich.\n\u2022 Stufe 7: Spricht kaum noch, kann nicht mehr gehen.\n\nAb Stufe 6: Worte reichen nicht mehr. Berührung und ruhige Ansprache sind wichtiger.",
         faustregel: "FAST 6a = Desorientierung, Nachtunruhe, Weglauftendenz. Verbale Instruktionen unzuverlässig \u2014 Validation + Basale Stimulation als Kommunikationsweg.",
         faustregelB1: "FAST 6a = weiss nicht wo er ist, nachts unruhig, will weglaufen. Worte allein reichen nicht mehr \u2014 Berührung hilft.",
         spektrum: [],
         karteikarte: {
-          vorderseite: "Was bedeutet FAST 6a bei Herrn Baür (82, Alzheimer) für die pflegerische Kommunikation?",
+          vorderseite: "Was bedeutet FAST 6a bei Herrn Bauer (82, Alzheimer) für die pflegerische Kommunikation?",
           rueckseite: "FAST 6a (Reisberg 1982): Desorientierung (Ort, Zeit, Situation), nächtliche Unruhe, Weglauftendenz, Schwierigkeiten beim Ankleiden. Verbale Instruktionen nicht zuverlässig \u2014 Kommunikation ueber Validation (Feil) + Basale Stimulation (Bienstein/Fröhlich). Alzheimer = 60-70 % aller Demenzen (DGN 2024).",
         },
       },
@@ -485,7 +485,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
 
     // Step 1.5 — Flipcard: FAST-Skala Stufen
     {
-      stepId: "ce02-baür-info-05-demenzstadien",
+      stepId: "ce02-bauer-info-05-demenzstadien",
       phase: 1,
       stepType: "flipcard",
       bloomLevel: 2,
@@ -493,24 +493,24 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       quellen: ["Reisberg B. et al. (1982): FAST-Skala"],
       track: "vertiefung",
       modus: "entdecker",
-      lernziel: "ce02-baür-info-demenzstadien",
+      lernziel: "ce02-bauer-info-demenzstadien",
       tag: "krankheitslehre",
       contentC1: {
         title: "Demenzstadien — FAST-Skala",
-        body: "Herr Baür ist in FAST-Stufe 6a. Verstehe, was das bedeutet — und warum er sich so verhält.",
+        body: "Herr Bauer ist in FAST-Stufe 6a. Verstehe, was das bedeutet — und warum er sich so verhält.",
         glossarBegriffe: ["FAST-Skala", "Alzheimer-Demenz"],
       },
       contentB1: {
-        title: "Wie schwer ist Herrn Baürs Demenz?",
-        body: "Herr Baür ist in Stufe 6a der FAST-Skala. Was bedeutet das? Schau dir die Karten an.",
+        title: "Wie schwer ist Herrn Bauers Demenz?",
+        body: "Herr Bauer ist in Stufe 6a der FAST-Skala. Was bedeutet das? Schau dir die Karten an.",
         glossarBegriffe: ["FAST-Skala", "Demenz"],
       },
       question: {
         fragetext:
-          "Drehe jede Karte um: Vorderseite = Stufe + kurze Beschreibung, Rückseite = Pflegerische Konseqünz.",
+          "Drehe jede Karte um: Vorderseite = Stufe + kurze Beschreibung, Rückseite = Pflegerische Konsequnz.",
         flipcard: {
           instruction:
-            "Drehe jede Karte um und lies die pflegerische Konseqünz.",
+            "Drehe jede Karte um und lies die pflegerische Konsequnz.",
           cards: [
             {
               front: "FAST-Stufe 4: Mittelschwere Demenz — braucht Hilfe bei ADL (Kleidung, Bad, Finanzen). Wohnt oft noch zuhause.",
@@ -518,12 +518,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
               backB1: "Pflege: Feste Abläufe, gleiche Uhrzeiten. Angehörige helfen.",
             },
             {
-              front: "FAST-Stufe 5: Schwere Demenz — braucht Hilfe beim Ankleiden. Erinnert sich nicht mehr an wichtige Details (z. B. aktülle Adresse).",
+              front: "FAST-Stufe 5: Schwere Demenz — braucht Hilfe beim Ankleiden. Erinnert sich nicht mehr an wichtige Details (z. B. aktuelle Adresse).",
               back: "Pflege: Übernahme der Körperpflege, einfache Kommunikation, Würde wahren.",
               backB1: "Pflege: Du hilfst beim Waschen und Anziehen. Kurze, ruhige Sätze.",
             },
             {
-              front: "FAST-Stufe 6a (= Herr Baür): Schwere Demenz — Schwierigkeiten beim korrekten Anziehen (z. B. falsche Reihenfolge, falsche Seite, anziehen ist möglich, aber inkorrekt). Desorientierung zu Ort, Zeit, Situation. Nachtaktivität, Weglauftendenz.",
+              front: "FAST-Stufe 6a (= Herr Bauer): Schwere Demenz — Schwierigkeiten beim korrekten Anziehen (z. B. falsche Reihenfolge, falsche Seite, anziehen ist möglich, aber inkorrekt). Desorientierung zu Ort, Zeit, Situation. Nachtaktivität, Weglauftendenz.",
               back: "Pflege: Validation, Basale Stimulation, Nachtlichtsensor, Niedrigbett. Aggression = Angst, keine Böswilligkeit.",
               backB1: "Pflege: Validation nutzen. Ruhige Berührungen. Nachtlicht. Er schlägt aus Angst — nicht aus Böswilligkeit.",
             },

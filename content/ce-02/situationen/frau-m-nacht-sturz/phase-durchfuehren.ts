@@ -384,7 +384,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
             },
           ],
           begruendung:
-            "Sturzprophylaxe nach Sturz folgt einem klaren Standard (DNQP): Sicherheit zürst (Antirutsch-Socken, Brille, Notruf), Kreislauf-Stabilisierung (Schellong-Test, Wasser). Frakturschutz wie der Hüftprotektor wird nicht spontan beim ersten Aufstehen eingeführt — die Indikation klärt ihr später in Ruhe (siehe MC-Step im Anschluss).",
+            "Sturzprophylaxe nach Sturz folgt einem klaren Standard (DNQP): Sicherheit zuerst (Antirutsch-Socken, Brille, Notruf), Kreislauf-Stabilisierung (Schellong-Test, Wasser). Frakturschutz wie der Hüftprotektor wird nicht spontan beim ersten Aufstehen eingeführt — die Indikation klärt ihr später in Ruhe (siehe MC-Step im Anschluss).",
           begruendungB1:
             "Nach einem Sturz brauchst du jetzt: Schutz (Socken, Brille), Sicherheit (Notruf), Kreislauf-Hilfe (Blutdruck, Wasser). Den Hüft-Schutz besprichst du später in Ruhe — nicht jetzt beim ersten Aufstehen.",
         },
@@ -493,7 +493,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
                   "Frau M. atmet tief. \"Danke. Mein Mann sagte immer: Zeit lassen hilft.\"",
                 score: 3,
                 feedback:
-                  "Ideal. Validierend, präsent, ohne Zeitdruck. Frau M. fühlt sich sicher. Der Satz 'Richard, mein Mann' zeigt dir: Sie öffnet sich. Solche Momente schaffen Vertraün, das du in den nächsten Stunden brauchst.",
+                  "Ideal. Validierend, präsent, ohne Zeitdruck. Frau M. fühlt sich sicher. Der Satz 'Richard, mein Mann' zeigt dir: Sie öffnet sich. Solche Momente schaffen Vertrauen, das du in den nächsten Stunden brauchst.",
                 feedbackB1:
                   "Perfekt. Du gibst ihr Zeit. Du bist da. Frau M. fühlt sich sicher. Sie spricht sogar über ihren Mann — das heißt: Sie vertraut dir jetzt mehr.",
               },
@@ -592,7 +592,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
                 patientResponseB1: "(Frau M. schaut beschämt.)",
                 score: 2,
                 feedback:
-                  "Wichtiger Moment. Frau M. zeigt offen ihre Scham — und zeigt damit Vertraün zu dir. Die fachlich richtige Reaktion ist sofortige Validierung: 'Sie sind nicht umständlich, Frau M. Sie sind eine 82-jährige Frau, die nach einem Sturz das erste Mal aufsteht — und Sie machen das sehr gut.' Die Aussage hat zwei Teile: 1. Beschämung explizit zurückweisen ('nicht umständlich'). 2. Realität benennen (Sturz + Alter + erstmaliges Aufstehen). Damit nimmst du der Scham die Grundlage.",
+                  "Wichtiger Moment. Frau M. zeigt offen ihre Scham — und zeigt damit Vertrauen zu dir. Die fachlich richtige Reaktion ist sofortige Validierung: 'Sie sind nicht umständlich, Frau M. Sie sind eine 82-jährige Frau, die nach einem Sturz das erste Mal aufsteht — und Sie machen das sehr gut.' Die Aussage hat zwei Teile: 1. Beschämung explizit zurückweisen ('nicht umständlich'). 2. Realität benennen (Sturz + Alter + erstmaliges Aufstehen). Damit nimmst du der Scham die Grundlage.",
                 feedbackB1:
                   "Wichtig. Frau M. schämt sich. Sie zeigt dir das offen — sie vertraut dir. Was du jetzt sagst: 'Sie sind nicht umständlich, Frau M. Sie sind 82, Sie sind gestürzt, und Sie stehen das erste Mal wieder auf. Sie machen das sehr gut.' Zwei Teile: 1. 'Nicht umständlich' (Scham widersprechen). 2. Realität benennen (Alter, Sturz, erstes Aufstehen). So nimmst du der Scham den Boden.",
               },
@@ -674,7 +674,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
             feedback:
               "Gefährlich. Bei Schwindel NACH frischem Sturz, Parkinson und Restwirkung Zolpidem ist 'weitergehen' keine Option — das Sturzrisiko ist akut. Ein zweiter Sturz in derselben Nacht wäre traumatisch (Post-Fall-Syndrom verstärken) und fachlich vermeidbar. Tief atmen hilft bei leichter Nervosität, nicht bei echter Orthostase. Richtiger Weg: Sofort sicheren Untergrund, Reassessment, 2. Person.",
             feedbackB1:
-              "Gefährlich. Nach dem Sturz + Parkinson + Zolpidem ist 'weitergehen' falsch. Ein zweiter Sturz in derselben Nacht wäre sehr schlimm. Tief atmen hilft bei Nervosität, nicht bei echter Orthostase. Richtig: Sofort hinsetzen, schaün, 2. Person holen.",
+              "Gefährlich. Nach dem Sturz + Parkinson + Zolpidem ist 'weitergehen' falsch. Ein zweiter Sturz in derselben Nacht wäre sehr schlimm. Tief atmen hilft bei Nervosität, nicht bei echter Orthostase. Richtig: Sofort hinsetzen, schauen, 2. Person holen.",
             isCorrect: false,
           },
         ],
@@ -808,7 +808,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
             text: "Bei diesem akuten Aufenthalt eher nicht — Compliance schlecht, Fokus auf Medikamentenreview + Umgebung; für Entlassung nach Hause ggf. mit Tochter besprechen.",
             isCorrect: true,
             explanation:
-              "Genau — nuancierte, evidenzbasierte Antwort. Im Akut-Setting ist der Nutzen fraglich: Compliance ist bei neür Versorgung schwer herzustellen, die Hauptrisiken (Zolpidem, Umgebung) werden bereits adressiert. Für **zu Hause** — wo sie allein lebt und weiter stürzen könnte — ist ein Hüftprotektor eine Option, die mit der Tochter (und ggf. Ergotherapie für Gesamt-Hilfsmittel-Beratung) besprochen werden sollte. Das respektiert auch Frau M.s Autonomie.",
+              "Genau — nuancierte, evidenzbasierte Antwort. Im Akut-Setting ist der Nutzen fraglich: Compliance ist bei neuer Versorgung schwer herzustellen, die Hauptrisiken (Zolpidem, Umgebung) werden bereits adressiert. Für **zu Hause** — wo sie allein lebt und weiter stürzen könnte — ist ein Hüftprotektor eine Option, die mit der Tochter (und ggf. Ergotherapie für Gesamt-Hilfsmittel-Beratung) besprochen werden sollte. Das respektiert auch Frau M.s Autonomie.",
             explanationB1:
               "Sehr gut — kluge Antwort. Jetzt im Krankenhaus bringt er wenig: Sie muss erst lernen, ihn zu tragen. Die wichtigeren Sachen (Zolpidem, sichere Umgebung) machen wir schon. Aber: Für **zu Hause** ist es sinnvoll — sie wohnt alleine. Also: Mit ihr und der Tochter besprechen.",
           },

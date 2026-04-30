@@ -11,9 +11,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
   titel: "Informieren — Wiederaufnahme Frau Yilmaz",
   titelB1: "Akte lesen — Frau Yilmaz",
   kontext:
-    "Du stehst im Dienstzimmer. Frühdienst, 06:55 Uhr. Die Nachtschwester übergibt kurz mündlich, dann liest du die digitale Pflegedokumentation zu Frau Yilmaz. Sie ist 14 Tage post-OP, läuft mit Rollator, soll in 3-4 Tagen entlassen werden. Im freien Textfeld der Spätschicht steht eine handschriftliche Notiz: 'Rötung Sakrum — morgen schaün.' Mehr steht nicht da. Frau Schäfer sagt: 'Ich weiß auch nicht mehr als du. Die Kollegin war allein auf dem Flur. Geh schaün.'",
+    "Du stehst im Dienstzimmer. Frühdienst, 06:55 Uhr. Die Nachtschwester übergibt kurz mündlich, dann liest du die digitale Pflegedokumentation zu Frau Yilmaz. Sie ist 14 Tage post-OP, läuft mit Rollator, soll in 3-4 Tagen entlassen werden. Im freien Textfeld der Spätschicht steht eine handschriftliche Notiz: 'Rötung Sakrum — morgen schauen.' Mehr steht nicht da. Frau Schäfer sagt: 'Ich weiß auch nicht mehr als du. Die Kollegin war allein auf dem Flur. Geh schauen.'",
   kontextB1:
-    "Du bist im Dienstzimmer. Es ist 06:55 Uhr — Frühdienst. Du liest die Pflegeakte am Computer. Du weißt: Frau Yilmaz ist seit 14 Tagen nach der Operation hier. Sie läuft mit Rollator. In 3-4 Tagen soll sie nach Hause. In der Akte steht eine kurze Notiz: 'Rötung am Steißbein — morgen schaün.' Das ist alles. Kein Befund. Kein Name. Frau Schäfer sagt: 'Ich weiß auch nicht mehr. Geh und schau selbst.'",
+    "Du bist im Dienstzimmer. Es ist 06:55 Uhr — Frühdienst. Du liest die Pflegeakte am Computer. Du weißt: Frau Yilmaz ist seit 14 Tagen nach der Operation hier. Sie läuft mit Rollator. In 3-4 Tagen soll sie nach Hause. In der Akte steht eine kurze Notiz: 'Rötung am Steißbein — morgen schauen.' Das ist alles. Kein Befund. Kein Name. Frau Schäfer sagt: 'Ich weiß auch nicht mehr. Geh und schau selbst.'",
   kernSteps: [
     // Step 1.1 — Text (scenario): SBAR-Akte lesen
     {
@@ -36,14 +36,14 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
         "Hospital nurses station, morning shift, nurse reading digital patient file on screen, warm early morning light, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Die Akte — was steht drin?",
-        body: "Dienstzimmer, 06:55 Uhr — Frühdienst.\n\nDu öffnest die digitale Pflegekurve für Frau Yilmaz, Zimmer 7. Die Übergabe in SBAR-Struktur: **S** = 'Rötung Sakrum gesehen, kein Schmerz, keine Maßnahmen.' **B** = 'Hüft-TEP Tag 13, Diabetes Typ 2, Adipositas BMI 34, Rollator-Mobilisation.' **A** = 'Wunde TEP-seitig reizlos, Rötung Sakrum nicht dokumentiert.' **R** = 'Morgen Früh genau schaün.' Das Entscheidende: Die Kollegin hat etwas gesehen — aber es nicht dokumentiert. Was nicht in der Akte steht, gilt als nicht geschehen. (§ 630f BGB)",
+        body: "Dienstzimmer, 06:55 Uhr — Frühdienst.\n\nDu öffnest die digitale Pflegekurve für Frau Yilmaz, Zimmer 7. Die Übergabe in SBAR-Struktur: **S** = 'Rötung Sakrum gesehen, kein Schmerz, keine Maßnahmen.' **B** = 'Hüft-TEP Tag 13, Diabetes Typ 2, Adipositas BMI 34, Rollator-Mobilisation.' **A** = 'Wunde TEP-seitig reizlos, Rötung Sakrum nicht dokumentiert.' **R** = 'Morgen Früh genau schauen.' Das Entscheidende: Die Kollegin hat etwas gesehen — aber es nicht dokumentiert. Was nicht in der Akte steht, gilt als nicht geschehen. (§ 630f BGB)",
         fallbezug:
           "Frau Yilmaz (79, Hüft-TEP Tag 14) wird heute entlassen? Nicht sicher. Erst wenn du gesehen hast, was am Steißbein ist.",
         glossarBegriffe: ["SBAR", "§ 630f BGB"],
       },
       contentB1: {
         title: "Was steht in der Akte?",
-        body: "Dienstzimmer, 06:55 Uhr — Frühdienst.\n\nDu liest die Pflegeakte am Computer. Du siehst eine kurze Notiz von der Spätschicht: **S** = 'Rötung Steißbein gesehen, kein Schmerz, keine Maßnahmen.' **B** = 'Hüft-OP vor 13 Tagen, Zuckerkrankheit, Übergewicht, läuft mit Rollator.' **A** = 'Hüftwunde gut, Rötung Steißbein nicht aufgeschrieben.' **R** = 'Morgen früh genau schaün.' Wichtig: Was nicht aufgeschrieben ist, gilt als nicht passiert. Das steht im Gesetz (§ 630f BGB).",
+        body: "Dienstzimmer, 06:55 Uhr — Frühdienst.\n\nDu liest die Pflegeakte am Computer. Du siehst eine kurze Notiz von der Spätschicht: **S** = 'Rötung Steißbein gesehen, kein Schmerz, keine Maßnahmen.' **B** = 'Hüft-OP vor 13 Tagen, Zuckerkrankheit, Übergewicht, läuft mit Rollator.' **A** = 'Hüftwunde gut, Rötung Steißbein nicht aufgeschrieben.' **R** = 'Morgen früh genau schauen.' Wichtig: Was nicht aufgeschrieben ist, gilt als nicht passiert. Das steht im Gesetz (§ 630f BGB).",
         fallbezug:
           "Frau Yilmaz ist 79 Jahre alt. Sie hat eine Hüft-OP vor 14 Tagen. Heute bist du für sie zuständig.",
         glossarBegriffe: ["§ 630f BGB"],
@@ -96,8 +96,8 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
           "Kategorie 1: Haut noch ganz = Vorbeugung. Ab Kategorie 2: Haut ist offen = Behandlung nötig.",
         spektrum: [
           {
-            patientName: "Herr Baür",
-            situationsId: "ls-baür-demenz-sturz",
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
             hauptfaktor: "Demenz + Immobilität",
             kurzbeschreibung:
               "Bei ihm entsteht Dekubitus-Risiko durch nächtliche Immobilität und fehlende Eigenbewegung. Er merkt den Druck nicht, weil er kognitiv nicht versteht, dass er sich drehen muss.",
@@ -132,7 +132,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
           vorderseite:
             "Frau Yilmaz hat eine flache offene Wunde am Sakrum, 2x3 cm, kein Nekroseanteil. Welche Dekubitus-Kategorie ist das — und warum ist der Übergang von Kategorie I zu II so wichtig?",
           rueckseite:
-            "Kategorie II (NPUAP/EPUAP 2019): Teilverlust der Haut — flache Erosion oder Blase. Der Übergang I zu II markiert den Wechsel von Prophylaxe zu Therapie: Haut ist offen, Wundversorgung nötig.\n\nSpektrum: Baür (Demenz, Immobilität), Petrov (Hemiparese, Neglect), Schmidt (Adipositas, Neuropathie), Kovac (ambulant, Sitzbeinhocker).\n\nFaustregel: **Ab Kategorie II ist die Haut offen — aus Prophylaxe wird Therapie.**",
+            "Kategorie II (NPUAP/EPUAP 2019): Teilverlust der Haut — flache Erosion oder Blase. Der Übergang I zu II markiert den Wechsel von Prophylaxe zu Therapie: Haut ist offen, Wundversorgung nötig.\n\nSpektrum: Bauer (Demenz, Immobilität), Petrov (Hemiparese, Neglect), Schmidt (Adipositas, Neuropathie), Kovac (ambulant, Sitzbeinhocker).\n\nFaustregel: **Ab Kategorie II ist die Haut offen — aus Prophylaxe wird Therapie.**",
         },
       },
     },
@@ -186,7 +186,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
               front: "Welche Prophylaxemaßnahmen waren in Spirale 1 geplant?",
               back: "2-stündliche Umlagerung, Weichlagerungsmatratze, tägliche Hautinspektion, Inkontinenzversorgung, Braden-Score regelmäßig erheben (≥ 12 = mäßiges Risiko).",
               backB1:
-                "Frau Yilmaz sollte alle 2 Stunden umgelagert werden. Sie hatte eine Weich-Matratze. Jeden Tag sollte jemand ihre Haut anschaün. Und den Braden-Score ausfüllen.",
+                "Frau Yilmaz sollte alle 2 Stunden umgelagert werden. Sie hatte eine Weich-Matratze. Jeden Tag sollte jemand ihre Haut anschauen. Und den Braden-Score ausfüllen.",
               category: "Spirale 1 — Prophylaxeplan",
             },
           ],
@@ -229,21 +229,21 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
             explanation:
               "Einschätzungen aus zweiter Hand sind ein Startpunkt, kein Urteil. Eine nicht-dokumentierte Beobachtung ist noch kein Befund. Geh neutral rein und bilde dir ein eigenes Bild.",
             explanationB1:
-              "Die Kollegin hat etwas gesehen — aber nicht aufgeschrieben. Das ist kein Befund. Du musst selbst hinschaün und selbst entscheiden.",
+              "Die Kollegin hat etwas gesehen — aber nicht aufgeschrieben. Das ist kein Befund. Du musst selbst hinschauen und selbst entscheiden.",
           },
           {
-            text: "Ich gehe neutral rein — ich schaue zürst selbst, bevor ich bewerte.",
+            text: "Ich gehe neutral rein — ich schaue zuerst selbst, bevor ich bewerte.",
             isCorrect: true,
             explanation:
               "Genau. Klinisches Urteilsvermögen beginnt mit einem unvoreingenommenen Blick. Fremde Beobachtungen sind Hinweise, keine Diagnosen. Erst sehen, dann einordnen.",
             explanationB1:
-              "Richtig. Zuerst selbst schaün. Dann entscheiden. Nicht vorher urteilen.",
+              "Richtig. Zuerst selbst schauen. Dann entscheiden. Nicht vorher urteilen.",
           },
           {
             text: "Ich frage Frau Yilmaz sofort, warum sie sich nicht gemeldet hat.",
             isCorrect: false,
             explanation:
-              "Das wäre keine gute erste Frage. Frau Yilmaz hat keinen Schmerz gespürt — sie hat keine Schuld. Zudem: Neuropathie erklärt das fehlende Schmerzsignal. Vorwürfe helfen nicht, Vertraün aufbaün schon.",
+              "Das wäre keine gute erste Frage. Frau Yilmaz hat keinen Schmerz gespürt — sie hat keine Schuld. Zudem: Neuropathie erklärt das fehlende Schmerzsignal. Vorwürfe helfen nicht, Vertrauen aufbaün schon.",
             explanationB1:
               "Das ist keine gute Frage. Frau Yilmaz hat keinen Schmerz gespürt — das liegt an der Nerven-Schädigung durch Diabetes. Sie hat nichts falsch gemacht.",
           },
@@ -251,9 +251,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
             text: "Ich brauche keine Vorbereitung — eine Rötung ist harmlos.",
             isCorrect: false,
             explanation:
-              "Eine Rötung am Sakrum bei diesem Risikoprofil (Diabetes, Adipositas, Neuropathie, 14 Tage post-OP) ist ein ernstes Warnsignal. Ohne Hinschaün kannst du nicht einschätzen — und das wäre ein Pflegefehler.",
+              "Eine Rötung am Sakrum bei diesem Risikoprofil (Diabetes, Adipositas, Neuropathie, 14 Tage post-OP) ist ein ernstes Warnsignal. Ohne Hinschauen kannst du nicht einschätzen — und das wäre ein Pflegefehler.",
             explanationB1:
-              "Das stimmt nicht. Eine rote Stelle am Steißbein bei einer Person mit Diabetes und Übergewicht ist immer ernst. Du musst hinschaün.",
+              "Das stimmt nicht. Eine rote Stelle am Steißbein bei einer Person mit Diabetes und Übergewicht ist immer ernst. Du musst hinschauen.",
           },
         ],
       },
@@ -285,7 +285,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
         glossarBegriffe: ["Hautinspektion", "Prädilektionsstelle", "Fingertest", "Mazeration"],
       },
       contentB1: {
-        title: "Haut anschaün — worauf achtest du?",
+        title: "Haut anschauen — worauf achtest du?",
         body: "",
         glossarBegriffe: ["Hautinspektion", "Fingertest"],
       },
@@ -302,14 +302,14 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
         faustregel:
           "Gutes Licht, 5 Kriterien (Farbe, Temperatur, Konsistenz, Integrität, Feuchtigkeit), Fingertest nur bei intakter Haut.",
         faustregelB1:
-          "Immer gutes Licht. 5 Dinge anschaün. Fingertest nur wenn die Haut noch ganz ist.",
+          "Immer gutes Licht. 5 Dinge anschauen. Fingertest nur wenn die Haut noch ganz ist.",
         spektrum: [
           {
-            patientName: "Herr Baür",
-            situationsId: "ls-baür-demenz-sturz",
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
             hauptfaktor: "Demenz — wehrt Inspektion ab",
             kurzbeschreibung:
-              "Hautinspektion bei Demenz ist schwieriger: Herr Baür versteht nicht warum du ihn anschaün willst. Validation und ruhige Ansprache helfen — nie erzwingen.",
+              "Hautinspektion bei Demenz ist schwieriger: Herr Bauer versteht nicht warum du ihn anschauen willst. Validation und ruhige Ansprache helfen — nie erzwingen.",
           },
           {
             patientName: "Herr Petrov",
@@ -334,7 +334,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
           vorderseite:
             "Du inspizierst die Haut von Frau Yilmaz am Sakrum. Nenne die 5 Kriterien der systematischen Hautinspektion und erkläre, wann der Fingertest anwendbar ist.",
           rueckseite:
-            "5 Kriterien: Farbe, Temperatur, Konsistenz, Integrität, Feuchtigkeit. Fingertest: nur bei intakter Haut — 3 Sek drücken, bleibt rot = Kategorie I (DNQP 2024). Bei offener Haut (ab Kat. II) nicht mehr anwendbar.\n\nSpektrum: Baür (Demenz, wehrt Inspektion ab), Petrov (Hemiparese, Neglect), Emilia (Säugling, Hinterkopf).\n\nFaustregel: **Gutes Licht, 5 Kriterien, Fingertest nur bei intakter Haut.**",
+            "5 Kriterien: Farbe, Temperatur, Konsistenz, Integrität, Feuchtigkeit. Fingertest: nur bei intakter Haut — 3 Sek drücken, bleibt rot = Kategorie I (DNQP 2024). Bei offener Haut (ab Kat. II) nicht mehr anwendbar.\n\nSpektrum: Bauer (Demenz, wehrt Inspektion ab), Petrov (Hemiparese, Neglect), Emilia (Säugling, Hinterkopf).\n\nFaustregel: **Gutes Licht, 5 Kriterien, Fingertest nur bei intakter Haut.**",
         },
       },
     },
@@ -351,7 +351,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-yilmaz-s2-info-dialog",
       tag: "pflege",
-      transition: "Frau Yilmaz hat zugestimmt. Mustafa ist informiert. Jetzt: Haut anschaün.",
+      transition: "Frau Yilmaz hat zugestimmt. Mustafa ist informiert. Jetzt: Haut anschauen.",
       contentC1: {
         title: "Zimmer betreten — Frau Yilmaz ansprechen",
         body: "Du betrittst Zimmer 7. Frau Yilmaz sitzt in einem Sessel neben dem Bett — Rollator daneben. Mustafa sitzt ihr gegenüber und hält ihre Hand. Du begrüßt beide.",
@@ -368,23 +368,23 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Du begrüßt beide und sagst Frau Yilmaz: 'Guten Morgen, Frau Yilmaz. Ich würde heute morgen gern kurz Ihren Rücken anschaün, wenn das für Sie okay ist.' Frau Yilmaz antwortet: 'Ja, was denn — ist was?'",
+              "Du begrüßt beide und sagst Frau Yilmaz: 'Guten Morgen, Frau Yilmaz. Ich würde heute morgen gern kurz Ihren Rücken anschauen, wenn das für Sie okay ist.' Frau Yilmaz antwortet: 'Ja, was denn — ist was?'",
             contextB1:
-              "Du begrüßt beide. Du sagst: 'Guten Morgen, Frau Yilmaz. Darf ich heute kurz Ihren Rücken anschaün?' Frau Yilmaz fragt: 'Ja — ist was?'",
+              "Du begrüßt beide. Du sagst: 'Guten Morgen, Frau Yilmaz. Darf ich heute kurz Ihren Rücken anschauen?' Frau Yilmaz fragt: 'Ja — ist was?'",
             speaker: "Du",
             options: [
               {
-                text: "\"Wir schaün einfach mal — ist Routine.\"",
-                textB1: "\"Wir schaün nur kurz — das machen wir immer so.\"",
+                text: "\"Wir schauen einfach mal — ist Routine.\"",
+                textB1: "\"Wir schauen nur kurz — das machen wir immer so.\"",
                 patientResponse:
                   "Frau Yilmaz nickt. Dann, leise: 'Ist schon wieder was? Ihr sagt mir manchmal nicht alles …'",
                 patientResponseB1:
                   "Frau Yilmaz nickt. Dann leise: 'Gibt es ein Problem? Ihr sagt mir nicht immer alles.'",
                 score: 1,
                 feedback:
-                  "Beruhigend gemeint — aber unehrlich. Frau Yilmaz hat ein Recht auf ehrliche Information. Das Vertraün leidet, wenn sie später merkt, dass es kein Routine-Check war. Aufrichtigkeit ist respektvoller.",
+                  "Beruhigend gemeint — aber unehrlich. Frau Yilmaz hat ein Recht auf ehrliche Information. Das Vertrauen leidet, wenn sie später merkt, dass es kein Routine-Check war. Aufrichtigkeit ist respektvoller.",
                 feedbackB1:
-                  "Du willst sie nicht beunruhigen — das ist nett. Aber Frau Yilmaz merkt, dass etwas nicht stimmt. Ehrlichkeit baut mehr Vertraün.",
+                  "Du willst sie nicht beunruhigen — das ist nett. Aber Frau Yilmaz merkt, dass etwas nicht stimmt. Ehrlichkeit baut mehr Vertrauen.",
               },
               {
                 text: "\"Die Kollegin hat gestern eine Rötung gesehen — ich möchte das heute genau beurteilen.\"",
@@ -409,21 +409,21 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
                   "Frau Yilmaz erschrickt. 'Eine Wunde?! Das spüre ich nicht!' Mustafa macht große Augen.",
                 score: 1,
                 feedback:
-                  "Zu früh — du bewertest, bevor du geschaut hast. Eine Bewertung vor dem Befund ist keine ehrliche Information, sondern eine Vermutung als Tatsache. Erst schaün, dann einordnen.",
+                  "Zu früh — du bewertest, bevor du geschaut hast. Eine Bewertung vor dem Befund ist keine ehrliche Information, sondern eine Vermutung als Tatsache. Erst schauen, dann einordnen.",
                 feedbackB1:
-                  "Das ist zu früh. Du hast noch nicht geschaut. Du weißt es noch nicht sicher. Erst hinschaün, dann sagen was es ist.",
+                  "Das ist zu früh. Du hast noch nicht geschaut. Du weißt es noch nicht sicher. Erst hinschauen, dann sagen was es ist.",
               },
             ],
           },
           {
             context:
-              "Frau Yilmaz hat verstanden, dass du schaün wirst. Mustafa schaut fragend. Du erklärst kurz auch ihm — über Sevim, die per Telefon übersetzt. Wie erklärst du, was du gleich tun wirst?",
+              "Frau Yilmaz hat verstanden, dass du schauen wirst. Mustafa schaut fragend. Du erklärst kurz auch ihm — über Sevim, die per Telefon übersetzt. Wie erklärst du, was du gleich tun wirst?",
             contextB1:
               "Mustafa versteht nicht gut Deutsch. Sevim übersetzt per Telefon. Wie erklärst du, was du gleich machst?",
             speaker: "Du",
             options: [
               {
-                text: "\"Ich werde kurz den Rücken von Frau Yilmaz anschaün, damit ich weiß, wie die Haut aussieht. Das daürt nur ein paar Minuten.\"",
+                text: "\"Ich werde kurz den Rücken von Frau Yilmaz anschauen, damit ich weiß, wie die Haut aussieht. Das dauert nur ein paar Minuten.\"",
                 textB1:
                   "\"Ich schaue kurz den Rücken von Frau Yilmaz an. Ich schaue, wie die Haut aussieht. Das geht schnell.\"",
                 patientResponse:
@@ -445,7 +445,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
                   "Mustafa versteht nicht. Er schaut besorgt. Frau Yilmaz beruhigt ihn.",
                 score: 0,
                 feedback:
-                  "Ausgrenzend und respektlos. Angehörige haben das Recht auf angemessene Information. Mustafas Sorge ist berechtigt — er sitzt täglich am Bett seiner Frau. Ausschluss schadet dem Vertraün.",
+                  "Ausgrenzend und respektlos. Angehörige haben das Recht auf angemessene Information. Mustafas Sorge ist berechtigt — er sitzt täglich am Bett seiner Frau. Ausschluss schadet dem Vertrauen.",
                 feedbackB1:
                   "Das ist nicht gut. Mustafa ist der Ehemann. Er hat das Recht zu wissen, was passiert. Ausschluss macht ihn ängstlich.",
               },

@@ -7,18 +7,18 @@
 import type { SituationsPhase } from "../../../_types";
 
 export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
-  phaseId: "ls-baür-planen",
+  phaseId: "ls-bauer-planen",
   phase: "planen",
   titel: "Pflege planen",
   titelB1: "Plan machen",
   kontext:
-    "Du hast Herrn Baür beobachtet. Du hast Informationen gesammelt. Jetzt musst du entscheiden, was zu tun ist — nicht nach Bauchgefühl, sondern nach System. Der Pflegeprozess verlangt, dass du Ziele formulierst, bevor du handelst. Was soll nach einer Woche anders sein als heute? Drei Problemfelder warten auf deinen Plan: 1) Sturzgefahr — Herr Baür ist letzte Nacht gestürzt. 2) Körperpflege und Kontraktur — er lehnt Pflege ab. 3) Trinken und Mundschleimhaut — 900 ml sind zu wenig.",
+    "Du hast Herrn Bauer beobachtet. Du hast Informationen gesammelt. Jetzt musst du entscheiden, was zu tun ist — nicht nach Bauchgefühl, sondern nach System. Der Pflegeprozess verlangt, dass du Ziele formulierst, bevor du handelst. Was soll nach einer Woche anders sein als heute? Drei Problemfelder warten auf deinen Plan: 1) Sturzgefahr — Herr Bauer ist letzte Nacht gestürzt. 2) Körperpflege und Kontraktur — er lehnt Pflege ab. 3) Trinken und Mundschleimhaut — 900 ml sind zu wenig.",
   kontextB1:
-    "Du weißt jetzt: Herr Baür hat drei große Probleme. Erstens: Er kann wieder stürzen. Zweitens: Seine Knie werden steifer, weil er Körperpflege ablehnt. Drittens: Er trinkt zu wenig. Für jedes Problem brauchst du: ein Ziel und eine Maßnahme.",
+    "Du weißt jetzt: Herr Bauer hat drei große Probleme. Erstens: Er kann wieder stürzen. Zweitens: Seine Knie werden steifer, weil er Körperpflege ablehnt. Drittens: Er trinkt zu wenig. Für jedes Problem brauchst du: ein Ziel und eine Maßnahme.",
   kernSteps: [
     // Inline-Wissen: Pflegeprozess und Pflegeziele \u2014 messbar formulieren
     {
-      stepId: "ce02-baür-plan-00b-pflegeprozess-ziele",
+      stepId: "ce02-bauer-plan-00b-pflegeprozess-ziele",
       phase: 3,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -26,11 +26,11 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       quellen: ["Fiechter/Meier (1981): Pflegeprozess-Modell", "DNQP 2022"],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-baür-plan-00b-pflegeprozess-ziele",
+      lernziel: "ce02-bauer-plan-00b-pflegeprozess-ziele",
       tag: "pflege",
       themaPrimaer: "pflegeprozess",
       themenSekundaer: ["pflegeplanung"],
-      transition: "Du kennst den Pflegeprozess. Jetzt: Formuliere Ziele für Herrn Baür.",
+      transition: "Du kennst den Pflegeprozess. Jetzt: Formuliere Ziele für Herrn Bauer.",
       contentC1: {
         title: "Pflegeprozess und Pflegeziele \u2014 messbar formulieren",
         body: "",
@@ -43,23 +43,23 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       },
       inlineWissen: {
         bausteinRef: "pflegeprozess-ziele-grundlagen",
-        storyAufhaenger: "Du planst jetzt die Pflege für Herrn Baür. Der **Pflegeprozess** nach Fiechter/Meier (1981) hat 6 Schritte: Informieren \u2192 Erkennen \u2192 Planen \u2192 Durchführen \u2192 Evaluieren \u2192 Dokumentieren. Du bist gerade bei Schritt 3: Planen.",
+        storyAufhaenger: "Du planst jetzt die Pflege für Herrn Bauer. Der **Pflegeprozess** nach Fiechter/Meier (1981) hat 6 Schritte: Informieren \u2192 Erkennen \u2192 Planen \u2192 Durchführen \u2192 Evaluieren \u2192 Dokumentieren. Du bist gerade bei Schritt 3: Planen.",
         storyAufhaengerB1: "Du planst jetzt die Pflege. Der Pflegeprozess hat 6 Schritte. Du bist bei Schritt 3: Planen.",
-        kerntext: "Der **Pflegeprozess** (Fiechter/Meier 1981) ist ein 6-Schritte-Kreislauf: Informieren \u2192 Erkennen \u2192 Planen \u2192 Durchführen \u2192 Evaluieren \u2192 Dokumentieren. Jeder Schritt baut auf dem vorherigen auf.\n\nEin **Pflegeziel** beschreibt, was der Patient in einem bestimmten Zeitraum zeigen oder können soll. Damit ein Ziel ueberprüfbar ist, muss es **messbar** sein:\n\n\u2022 **Wer?** \u2014 Herr Baür (nicht: \"die Pflege\")\n\u2022 **Was?** \u2014 konkretes Verhalten oder Zustand\n\u2022 **Wann?** \u2014 Zeitrahmen (z. B. in 7 Tagen)\n\u2022 **Wie viel?** \u2014 Zahl oder beobachtbares Kriterium\n\nBeispiel: \"Herr Baür stürzt in den nächsten 7 Tagen nicht erneut\" ist messbar. \"Herr Baür soll sicherer sein\" ist NICHT messbar.",
-        kerntextB1: "Der **Pflegeprozess** hat 6 Schritte: Informieren \u2192 Erkennen \u2192 Planen \u2192 Durchführen \u2192 Überprüfen \u2192 Aufschreiben.\n\nEin **Pflegeziel** sagt: Was soll der Patient in X Tagen zeigen?\n\nDas Ziel muss **messbar** sein:\n\u2022 Wer? \u2014 Herr Baür\n\u2022 Was? \u2014 was genau soll anders sein\n\u2022 Wann? \u2014 in wie vielen Tagen\n\u2022 Wie viel? \u2014 eine Zahl oder ein Zeichen\n\nGut: \"Herr Baür stürzt in 7 Tagen nicht.\" Schlecht: \"Herr Baür soll sicherer sein.\"",
+        kerntext: "Der **Pflegeprozess** (Fiechter/Meier 1981) ist ein 6-Schritte-Kreislauf: Informieren \u2192 Erkennen \u2192 Planen \u2192 Durchführen \u2192 Evaluieren \u2192 Dokumentieren. Jeder Schritt baut auf dem vorherigen auf.\n\nEin **Pflegeziel** beschreibt, was der Patient in einem bestimmten Zeitraum zeigen oder können soll. Damit ein Ziel ueberprüfbar ist, muss es **messbar** sein:\n\n\u2022 **Wer?** \u2014 Herr Bauer (nicht: \"die Pflege\")\n\u2022 **Was?** \u2014 konkretes Verhalten oder Zustand\n\u2022 **Wann?** \u2014 Zeitrahmen (z. B. in 7 Tagen)\n\u2022 **Wie viel?** \u2014 Zahl oder beobachtbares Kriterium\n\nBeispiel: \"Herr Bauer stürzt in den nächsten 7 Tagen nicht erneut\" ist messbar. \"Herr Bauer soll sicherer sein\" ist NICHT messbar.",
+        kerntextB1: "Der **Pflegeprozess** hat 6 Schritte: Informieren \u2192 Erkennen \u2192 Planen \u2192 Durchführen \u2192 Überprüfen \u2192 Aufschreiben.\n\nEin **Pflegeziel** sagt: Was soll der Patient in X Tagen zeigen?\n\nDas Ziel muss **messbar** sein:\n\u2022 Wer? \u2014 Herr Bauer\n\u2022 Was? \u2014 was genau soll anders sein\n\u2022 Wann? \u2014 in wie vielen Tagen\n\u2022 Wie viel? \u2014 eine Zahl oder ein Zeichen\n\nGut: \"Herr Bauer stürzt in 7 Tagen nicht.\" Schlecht: \"Herr Bauer soll sicherer sein.\"",
         faustregel: "Ein Pflegeziel muss messbar sein: Wer + Was + Wann + Wie viel. \"Soll sicherer sein\" ist kein Ziel \u2014 \"stürzt in 7 Tagen nicht\" ist eines.",
         faustregelB1: "Ein Pflegeziel muss messbar sein: Wer, Was, Wann, Wie viel.",
         spektrum: [],
         karteikarte: {
-          vorderseite: "Formuliere ein messbares Pflegeziel für Herrn Baür (Sturzgefahr). Was macht ein Ziel messbar?",
-          rueckseite: "Messbar = Wer + Was + Wann + Wie viel. Beispiel: \"Herr Baür stürzt in 7 Tagen nicht (Maßnahmen: Nachtlicht, Niedrigbett, Toilettenangebot).\" Pflegeprozess nach Fiechter/Meier (1981): 6-Schritte-Kreislauf.",
+          vorderseite: "Formuliere ein messbares Pflegeziel für Herrn Bauer (Sturzgefahr). Was macht ein Ziel messbar?",
+          rueckseite: "Messbar = Wer + Was + Wann + Wie viel. Beispiel: \"Herr Bauer stürzt in 7 Tagen nicht (Maßnahmen: Nachtlicht, Niedrigbett, Toilettenangebot).\" Pflegeprozess nach Fiechter/Meier (1981): 6-Schritte-Kreislauf.",
         },
       },
     },
 
     // Step 3.1 — Freetext: Pflegeziele formulieren
     {
-      stepId: "ce02-baür-plan-01-ziele-formulieren",
+      stepId: "ce02-bauer-plan-01-ziele-formulieren",
       phase: 3,
       stepType: "freetext",
       bloomLevel: 4,
@@ -67,7 +67,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       quellen: ["Fiechter/Meier (1981): Pflegeprozess-Modell"],
       track: "basis",
       modus: "schreibtisch",
-      lernziel: "ce02-baür-plan-pflegeziele",
+      lernziel: "ce02-bauer-plan-pflegeziele",
       tag: "pflege",
       contentC1: {
         title: "Pflegeziele formulieren",
@@ -76,30 +76,30 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       },
       contentB1: {
         title: "Pflegeziele schreiben",
-        body: "Schreibe für ZWEI Probleme je ein Pflegeziel. Ein Pflegeziel sagt: Was soll Herr Baür in X Tagen zeigen oder schaffen? Es muss messbar sein (= man kann prüfen ob es erreicht wurde).",
+        body: "Schreibe für ZWEI Probleme je ein Pflegeziel. Ein Pflegeziel sagt: Was soll Herr Bauer in X Tagen zeigen oder schaffen? Es muss messbar sein (= man kann prüfen ob es erreicht wurde).",
         glossarBegriffe: ["Pflegeziel", "messbar"],
       },
       question: {
         fragetext:
           "Formuliere für zwei der drei Problemfelder (Sturzgefahr / Kontraktur / Trinken) je ein messbares Pflegeziel.",
         musterantwort:
-          "Sturzgefahr: Herr Baür stürzt in den nächsten 7 Tagen nicht erneut, nachdem Nachtlicht, Niedrigbett und Toilettenangebot vor dem Schlafengehen eingeführt wurden. — Trinken: Herr Baür nimmt täglich mindestens 1300 ml Flüssigkeit zu sich, ermöglicht durch Malzbier-Angebot und Trinkprotokoll.",
+          "Sturzgefahr: Herr Bauer stürzt in den nächsten 7 Tagen nicht erneut, nachdem Nachtlicht, Niedrigbett und Toilettenangebot vor dem Schlafengehen eingeführt wurden. — Trinken: Herr Bauer nimmt täglich mindestens 1300 ml Flüssigkeit zu sich, ermöglicht durch Malzbier-Angebot und Trinkprotokoll.",
         bewertungskriterien: [
           "Pflegeziel ist messbar (konkrete Zahl oder beobachtbares Verhalten)",
           "Zeitrahmen genannt (z. B. in 7 Tagen)",
           "Patientenorientiert formuliert (nicht: 'die Pflege soll...')",
         ],
         satzanfaengeB1: [
-          "Herr Baür stürzt in den nächsten ... Tagen nicht, weil ...",
-          "Herr Baür trinkt täglich mindestens ... ml, indem ...",
-          "Herrn Baürs Knie können sich ... bewegen nach ...",
+          "Herr Bauer stürzt in den nächsten ... Tagen nicht, weil ...",
+          "Herr Bauer trinkt täglich mindestens ... ml, indem ...",
+          "Herrn Bauers Knie können sich ... bewegen nach ...",
         ],
       },
     },
 
     // Inline-Wissen: Sturzschutz bei Demenz \u2014 Massnahmen die wirken
     {
-      stepId: "ce02-baür-plan-01b-sturzschutz-maßnahmen",
+      stepId: "ce02-bauer-plan-01b-sturzschutz-maßnahmen",
       phase: 3,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -107,7 +107,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       quellen: ["DNQP 2022 \u2014 Sturzprophylaxe"],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-baür-plan-01b-sturzschutz-maßnahmen",
+      lernziel: "ce02-bauer-plan-01b-sturzschutz-maßnahmen",
       tag: "pflege",
       themaPrimaer: "sturz-prophylaxe",
       themenSekundaer: ["basale-stimulation"],
@@ -118,21 +118,21 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
         glossarBegriffe: ["Sturzprophylaxe", "Niedrigbett", "Sensormatte", "Nachtlicht"],
       },
       contentB1: {
-        title: "Wie schützt man Herrn Baür vor Stürzen?",
+        title: "Wie schützt man Herrn Bauer vor Stürzen?",
         body: "",
         glossarBegriffe: ["Sturzprophylaxe", "Niedrigbett", "Sensormatte", "Nachtlicht"],
       },
       inlineWissen: {
         bausteinRef: "sturz-prophylaxe-maßnahmen-demenz",
-        storyAufhaenger: "Herr Baür braucht Sturzschutz \u2014 aber nicht mit Bettgittern. Welche Maßnahmen wirken bei Demenz?",
-        storyAufhaengerB1: "Wie schützt man Herrn Baür nachts vor Stürzen?",
+        storyAufhaenger: "Herr Bauer braucht Sturzschutz \u2014 aber nicht mit Bettgittern. Welche Maßnahmen wirken bei Demenz?",
+        storyAufhaengerB1: "Wie schützt man Herrn Bauer nachts vor Stürzen?",
         kerntext: "**Sturzprophylaxe bei Demenz** (DNQP 2022) setzt auf Umgebungsanpassung statt Fixierung:\n\n\u2022 **Niedrigbett** \u2014 Bett auf niedrigste Position (ca. 20 cm ueber Boden). Sturzhöhe reduziert = Verletzungsrisiko sinkt. Keine Genehmigung nötig.\n\n\u2022 **Sensormatte** \u2014 Alarmiert wenn der Patient das Bett verlässt. Kein Fixierungsmittel \u2014 schränkt Bewegungsfreiheit nicht ein.\n\n\u2022 **Nachtlicht** \u2014 LED-Orientierungslicht mit Bewegungssensor. Reduziert Desorientierung bei nächtlichem Aufstehen.\n\n\u2022 Toilettengang vor dem Schlafengehen anbieten \u2014 reduziert nächtlichen Harndrang als Aufsteh-Ausloser.\n\n\u2022 Rutschfeste Socken \u2014 wenn er barfuss aufsteht.\n\n**Verboten ohne richterliche Genehmigung:** Bettgitter beidseitig hoch = Freiheitsentziehung. Niedrigbett + Sensormatte + Nachtlicht erreichen dasselbe Schutzniveau \u2014 ohne Fixierung.",
         kerntextB1: "**Sturzschutz bei Demenz:** Nicht mit Gittern, sondern mit Umgebung:\n\n\u2022 **Niedrigbett** \u2014 Bett ganz runter (20 cm ueber Boden). Weniger hoch = weniger Verletzung.\n\u2022 **Sensormatte** \u2014 Alarm wenn er aufsteht. Schränkt Bewegung nicht ein.\n\u2022 **Nachtlicht** \u2014 Licht mit Bewegungssensor. Er sieht wo er ist.\n\u2022 Toilette vor dem Schlafen anbieten.\n\u2022 Rutschfeste Socken.\n\nBettgitter beidseitig = verboten ohne Genehmigung.",
         faustregel: "Sturzschutz bei Demenz: Niedrigbett + Sensormatte + Nachtlicht. Nicht Bettgitter \u2014 das ist Fixierung.",
         faustregelB1: "Sturzschutz: Bett runter, Matte, Licht. Nicht Gitter \u2014 das ist verboten.",
         spektrum: [],
         karteikarte: {
-          vorderseite: "Welche 4 Sturzschutz-Maßnahmen sind bei Herrn Baür (Demenz) sinnvoll und rechtlich unbedenklich?",
+          vorderseite: "Welche 4 Sturzschutz-Maßnahmen sind bei Herrn Bauer (Demenz) sinnvoll und rechtlich unbedenklich?",
           rueckseite: "1) Niedrigbett (keine Genehmigung nötig). 2) Sensormatte (keine Fixierung). 3) Nachtlicht mit Sensor. 4) Toilettengang vor dem Schlafen. NICHT: Bettgitter beidseitig (= FEM, braucht richterliche Genehmigung nach Paragraph 1831 BGB).",
         },
       },
@@ -140,7 +140,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
 
     // Step 3.2 — Matching: Sturzprophylaxe-Maßnahmen
     {
-      stepId: "ce02-baür-plan-02-sturzprophylaxe-maßnahmen",
+      stepId: "ce02-bauer-plan-02-sturzprophylaxe-maßnahmen",
       phase: 3,
       stepType: "matching",
       bloomLevel: 3,
@@ -148,7 +148,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       quellen: ["DNQP Sturzprophylaxe 2022"],
       track: "basis",
       modus: "puzzle",
-      lernziel: "ce02-baür-plan-sturzschutz",
+      lernziel: "ce02-bauer-plan-sturzschutz",
       tag: "pflege",
       contentC1: {
         title: "Sturzschutz-Maßnahmen zuordnen",
@@ -193,7 +193,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
     // verstehen: Ganzkörperpflege bei Demenz ist NICHT nur Hygiene — sie ist
     // Beziehungsgestaltung, Schmerzbeobachtung und Kontraktur-Prophylaxe in einem.
     {
-      stepId: "ce02-baür-plan-02b-ganzkörperpflege-demenz",
+      stepId: "ce02-bauer-plan-02b-ganzkörperpflege-demenz",
       phase: 3,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -205,31 +205,31 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       ],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-baür-plan-ganzkörperpflege",
+      lernziel: "ce02-bauer-plan-ganzkörperpflege",
       tag: "pflege",
       themaPrimaer: "ganzkörperpflege",
       themenSekundaer: ["basale-stimulation", "kontraktur-prophylaxe"],
-      transition: "Ganzkörperpflege ist bei Herrn Baür mehr als Hygiene. Jetzt: der konkrete Bewegungsablauf.",
+      transition: "Ganzkörperpflege ist bei Herrn Bauer mehr als Hygiene. Jetzt: der konkrete Bewegungsablauf.",
       contentC1: {
         title: "Ganzkörperpflege bei Demenz — drei Ziele in einer Handlung",
         body: "",
         glossarBegriffe: ["Ganzkörperpflege", "Initialberührung", "Beziehungsgestaltung", "Bewegung", "Kontrakturprophylaxe", "Spitzfuss", "Spitzfussprophylaxe", ],
       },
       contentB1: {
-        title: "Wie pflege ich Herrn Baür?",
+        title: "Wie pflege ich Herrn Bauer?",
         body: "",
         glossarBegriffe: ["Ganzkörperpflege", "Beziehungsgestaltung"],
       },
       inlineWissen: {
         bausteinRef: "ganzkörperpflege-bei-demenz",
         storyAufhaenger:
-          "Morgen früh wirst du Herrn Baür waschen. Er hat heute bei der Gesichtswäsche zugeschlagen. Er trinkt wenig. Seine Knie werden steifer. Die Ganzkörperpflege ist deine einzige Gelegenheit, drei Probleme gleichzeitig anzugehen — aber nur wenn du sie richtig planst.",
+          "Morgen früh wirst du Herrn Bauer waschen. Er hat heute bei der Gesichtswäsche zugeschlagen. Er trinkt wenig. Seine Knie werden steifer. Die Ganzkörperpflege ist deine einzige Gelegenheit, drei Probleme gleichzeitig anzugehen — aber nur wenn du sie richtig planst.",
         storyAufhaengerB1:
-          "Morgen früh wäschst du Herrn Baür. Heute hat er zugeschlagen als du sein Gesicht waschen wolltest. Seine Knie werden steifer. Er trinkt zu wenig. Die Morgen-Pflege ist deine Chance, drei Probleme auf einmal zu lösen.",
+          "Morgen früh wäschst du Herrn Bauer. Heute hat er zugeschlagen als du sein Gesicht waschen wolltest. Seine Knie werden steifer. Er trinkt zu wenig. Die Morgen-Pflege ist deine Chance, drei Probleme auf einmal zu lösen.",
         kerntext:
           "Ganzkörperpflege bei Menschen mit Demenz verfolgt **drei Ziele gleichzeitig** (Bienstein/Fröhlich 2021, Kitwood 1997):\n\n**1. Beziehungsgestaltung (DNQP 2018)**\n\n• Initialberührung an immer gleicher Stelle (z. B. Schulter) — Wiedererkennungs-Signal\n• Jeden Handgriff ankündigen: \"Ich wasche jetzt deinen rechten Arm\"\n• Nie gegen Widerstand waschen — Pause ist legitim\n• Biografische Ressourcen nutzen: Lieblingsmusik, vertraute Gerüche\n\n**2. Schmerzbeobachtung (BESD während Pflege)**\n\n• Jede Berührung ist eine diagnostische Gelegenheit: Reagiert er mit Grimasse? Abwehr? Steifheit?\n• BESD in Ruhe VOR der Pflege, dann WAEHREND der Pflege (Bewegung) erheben\n\n**3. Kontraktur-Prophylaxe (integriert)**\n\n• Arme und Beine während der Waschung aktiv-assistiv bewegen\n• Fußsohlenstimulation beim Abtrocknen (Spitzfuß-Prophylaxe)\n• Maximaler Bewegungsumfang nutzen — nicht ueber Schmerzgrenze\n\n**Reihenfolge nach Hygiene:**\n\nGesicht → Hände/Arme → Brust → Bauch → Rücken → Beine/Fueße → Genital → Anal\n(sauber → unrein, DNQP Hygienestandard)",
         kerntextB1:
-          "Ganzkörperpflege bei Demenz hat **drei Ziele auf einmal**:\n\n**1. Beziehung aufbaün**\n\n• Immer an der gleichen Stelle anfassen (z. B. Schulter) — so erkennt er dich wieder\n• Immer sagen was du tust: \"Ich wasche jetzt deinen Arm\"\n• Stoppen wenn er sich wehrt\n• Musik anmachen die er mag\n\n**2. Schmerz beobachten**\n\n• Jede Berührung zeigt dir: Hat er Schmerzen? Grimasse? Steifheit? Abwehr?\n• BESD vor der Pflege und während der Pflege messen\n\n**3. Gelenke bewegen**\n\n• Arme und Beine beim Waschen bewegen\n• Fußsohlen beim Abtrocknen stimulieren\n• Nicht ueber die Schmerzgrenze gehen\n\n**Reihenfolge:** Gesicht zürst → Arme → Brust → Bauch → Rücken → Beine → Genitalbereich zuletzt (sauber nach unrein)",
+          "Ganzkörperpflege bei Demenz hat **drei Ziele auf einmal**:\n\n**1. Beziehung aufbaün**\n\n• Immer an der gleichen Stelle anfassen (z. B. Schulter) — so erkennt er dich wieder\n• Immer sagen was du tust: \"Ich wasche jetzt deinen Arm\"\n• Stoppen wenn er sich wehrt\n• Musik anmachen die er mag\n\n**2. Schmerz beobachten**\n\n• Jede Berührung zeigt dir: Hat er Schmerzen? Grimasse? Steifheit? Abwehr?\n• BESD vor der Pflege und während der Pflege messen\n\n**3. Gelenke bewegen**\n\n• Arme und Beine beim Waschen bewegen\n• Fußsohlen beim Abtrocknen stimulieren\n• Nicht ueber die Schmerzgrenze gehen\n\n**Reihenfolge:** Gesicht zuerst → Arme → Brust → Bauch → Rücken → Beine → Genitalbereich zuletzt (sauber nach unrein)",
         faustregel:
           "Ganzkörperpflege bei Demenz ist nicht Hygiene — sie ist Beziehung, Schmerzbeobachtung und Kontraktur-Prophylaxe in einem Handlungsablauf.",
         faustregelB1:
@@ -254,7 +254,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
             situationsId: "ls-emilia-säugling",
             hauptfaktor: "Säugling, Bronchiolitis",
             kurzbeschreibung:
-              "Bei Säugling: Baden/Waschen ist somatische Stimulation pur. Wassertemperatur 37 Grad, kurze Daür, Haut-zu-Haut-Kontakt danach. Saubere-nach-unrein-Reihenfolge gilt auch hier (Nabelrest → Genitalbereich zuletzt).",
+              "Bei Säugling: Baden/Waschen ist somatische Stimulation pur. Wassertemperatur 37 Grad, kurze Dauer, Haut-zu-Haut-Kontakt danach. Saubere-nach-unrein-Reihenfolge gilt auch hier (Nabelrest → Genitalbereich zuletzt).",
           },
           {
             patientName: "Frau Schmidt",
@@ -265,20 +265,20 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
           },
         ],
         sonstBox:
-          "Unterschied beruhigende vs. belebende Waschung (Bienstein/Fröhlich 2021): **Beruhigend** = in Haarwuchsrichtung (von peripher nach zentral: Schulter → Hand), Wassertemperatur körperwarm. **Belebend** = gegen Haarwuchsrichtung (Hand → Schulter), Wasser etwas kühler. Bei Herrn Baür morgens: beruhigend (er ist agitiert). Abends oder bei Apathie: belebend könnte sinnvoll sein.",
+          "Unterschied beruhigende vs. belebende Waschung (Bienstein/Fröhlich 2021): **Beruhigend** = in Haarwuchsrichtung (von peripher nach zentral: Schulter → Hand), Wassertemperatur körperwarm. **Belebend** = gegen Haarwuchsrichtung (Hand → Schulter), Wasser etwas kühler. Bei Herrn Bauer morgens: beruhigend (er ist agitiert). Abends oder bei Apathie: belebend könnte sinnvoll sein.",
         sonstBoxB1:
-          "Zwei Arten der Waschung: **Beruhigend** = in Haarrichtung waschen (von Schulter zur Hand), warmes Wasser. **Belebend** = gegen Haarrichtung (von Hand zur Schulter), kühler. Bei Herrn Baür morgens: beruhigend (weil er aufgeregt ist).",
+          "Zwei Arten der Waschung: **Beruhigend** = in Haarrichtung waschen (von Schulter zur Hand), warmes Wasser. **Belebend** = gegen Haarrichtung (von Hand zur Schulter), kühler. Bei Herrn Bauer morgens: beruhigend (weil er aufgeregt ist).",
         karteikarte: {
           vorderseite:
-            "Du planst die Ganzkörperpflege bei Herrn Baür (Demenz FAST 6a, Kontrakturgefahr, Sturzfolge). Welche drei Ziele verfolgst du gleichzeitig?",
+            "Du planst die Ganzkörperpflege bei Herrn Bauer (Demenz FAST 6a, Kontrakturgefahr, Sturzfolge). Welche drei Ziele verfolgst du gleichzeitig?",
           rueckseite:
-            "1. **Beziehungsgestaltung**: Initialberührung, Ankündigung, Biografiearbeit (Musik), keine Zwangspflege (DNQP 2018, Kitwood 1997)\n2. **Schmerzbeobachtung**: BESD in Ruhe + bei Bewegung während der Pflege\n3. **Kontraktur-Prophylaxe**: Arme/Beine aktiv-assistiv bewegen, Fußsohlenstimulation\n\nReihenfolge: sauber → unrein (Gesicht zürst, Genital/Anal zuletzt). Beruhigende Waschung: in Haarwuchsrichtung, körperwarmes Wasser (Bienstein/Fröhlich 2021). Faustregel: **Ganzkörperpflege bei Demenz = Beziehung + Schmerzbeobachtung + Kontraktur-Prophylaxe in einem.**",
+            "1. **Beziehungsgestaltung**: Initialberührung, Ankündigung, Biografiearbeit (Musik), keine Zwangspflege (DNQP 2018, Kitwood 1997)\n2. **Schmerzbeobachtung**: BESD in Ruhe + bei Bewegung während der Pflege\n3. **Kontraktur-Prophylaxe**: Arme/Beine aktiv-assistiv bewegen, Fußsohlenstimulation\n\nReihenfolge: sauber → unrein (Gesicht zuerst, Genital/Anal zuletzt). Beruhigende Waschung: in Haarwuchsrichtung, körperwarmes Wasser (Bienstein/Fröhlich 2021). Faustregel: **Ganzkörperpflege bei Demenz = Beziehung + Schmerzbeobachtung + Kontraktur-Prophylaxe in einem.**",
         },
       },
     },
 // Step 3.3 — Sequencing: Bewegungsablauf Morgenpflege planen
     {
-      stepId: "ce02-baür-plan-03-bewegungsplan",
+      stepId: "ce02-bauer-plan-03-bewegungsplan",
       phase: 3,
       stepType: "sequencing",
       bloomLevel: 3,
@@ -289,11 +289,11 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       ],
       track: "basis",
       modus: "sortierstation",
-      lernziel: "ce02-baür-plan-bewegungsablauf",
+      lernziel: "ce02-bauer-plan-bewegungsablauf",
       tag: "pflege",
       contentC1: {
         title: "Bewegungsablauf Morgenpflege planen",
-        body: "Plane den Bewegungsablauf für die Morgenpflege bei Herrn Baür. Bringe die Schritte in die richtige Reihenfolge.",
+        body: "Plane den Bewegungsablauf für die Morgenpflege bei Herrn Bauer. Bringe die Schritte in die richtige Reihenfolge.",
         glossarBegriffe: ["Basale Stimulation", "Spitzfußprophylaxe", "Kontrakturprophylaxe"],
       },
       contentB1: {
@@ -303,7 +303,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       },
       question: {
         fragetext:
-          "Sortiere die Schritte des Bewegungsablaufs bei der Morgenpflege in die richtige Reihenfolge (1 = zürst).",
+          "Sortiere die Schritte des Bewegungsablaufs bei der Morgenpflege in die richtige Reihenfolge (1 = zuerst).",
         sequencing: {
           instruction: "Ziehe die Karten in die richtige Reihenfolge.",
           items: [
@@ -335,7 +335,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
             {
               id: "b6",
               label:
-                "Lagerungskontrolle — Knie nicht daürhaft flektiert lassen, auspolstern",
+                "Lagerungskontrolle — Knie nicht dauerhaft flektiert lassen, auspolstern",
             },
           ],
         },
@@ -344,7 +344,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
 
     // Inline-Wissen: Interprofessionelle Zusammenarbeit \u2014 wer macht was?
     {
-      stepId: "ce02-baür-plan-03b-interprofessionell",
+      stepId: "ce02-bauer-plan-03b-interprofessionell",
       phase: 3,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -352,7 +352,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       quellen: ["DNQP 2022 \u2014 Sturzprophylaxe", "Paragraph 63 SGB V"],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-baür-plan-03b-interprofessionell",
+      lernziel: "ce02-bauer-plan-03b-interprofessionell",
       tag: "pflege",
       themaPrimaer: "pflegeprozess",
       themenSekundaer: ["sturz-prophylaxe", "kontraktur-prophylaxe"],
@@ -363,21 +363,21 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
         glossarBegriffe: ["Interdisziplinär", "Physiotherapie", "Mirtazapin", "Arzt", "Pflege"],
       },
       contentB1: {
-        title: "Wer hilft bei Herrn Baür? Pflege, Arzt, Physiotherapie",
+        title: "Wer hilft bei Herrn Bauer? Pflege, Arzt, Physiotherapie",
         body: "",
         glossarBegriffe: ["Physiotherapie", "Mirtazapin", "Arzt", "Pflege"],
       },
       inlineWissen: {
         bausteinRef: "pflegeprozess-interprofessionell",
-        storyAufhaenger: "Herrn Baürs Pflege ist kein Ein-Personen-Job. Mindestens drei Berufsgruppen müssen zusammenarbeiten: Pflege, Arzt, Physiotherapie. Wer ist wofür zuständig?",
-        storyAufhaengerB1: "Drei Berufsgruppen arbeiten bei Herrn Baür zusammen: Pflege, Arzt, Physiotherapie. Wer macht was?",
-        kerntext: "**Interdisziplinär** (auch: interprofessionell) = mehrere Berufsgruppen arbeiten gemeinsam am Pflegeplan.\n\n**Pflege** \u2014 Koordiniert den Pflegeprozess, führt Körperpflege, Sturzprophylaxe, Dokumentation durch. Erkennt Veränderungen zürst.\n\n**Arzt** \u2014 Medikamentenänderungen, Diagnostik. Bei Herrn Baür: **Mirtazapin**-Dosis prüfen. Mirtazapin ist ein Antidepressivum mit dosisabhängiger Sedierung (PRISCUS-Liste 2023 = potenziell inadäquat bei Älteren). Es verursacht nächtliche Gangunsicherheit und orthostatische Hypotonie \u2014 beides Sturzrisikofaktoren.\n\n**Physiotherapie** \u2014 Fuehrt passives Durchbewegen der Kniegelenke durch, gibt Empfehlungen für Lagerung, plant Mobilisation.\n\nDie Pflege koordiniert \u2014 aber entscheidet nicht ueber Medikamente (Arzt-Vorbehalt).",
-        kerntextB1: "**Interdisziplinär** = verschiedene Berufsgruppen arbeiten zusammen.\n\n**Pflege** \u2014 macht die tägliche Pflege, Sturzschutz, Dokumentation.\n\n**Arzt** \u2014 aendert Medikamente, macht Diagnostik. Bei Herrn Baür: **Mirtazapin** (Schlafmittel) prüfen \u2014 es macht ihn nachts unsicher auf den Beinen.\n\n**Physiotherapie** \u2014 bewegt seine Knie, plant die Mobilisation.\n\nDie Pflege koordiniert \u2014 aber Medikamente ändern darf nur der Arzt.",
+        storyAufhaenger: "Herrn Bauers Pflege ist kein Ein-Personen-Job. Mindestens drei Berufsgruppen müssen zusammenarbeiten: Pflege, Arzt, Physiotherapie. Wer ist wofür zuständig?",
+        storyAufhaengerB1: "Drei Berufsgruppen arbeiten bei Herrn Bauer zusammen: Pflege, Arzt, Physiotherapie. Wer macht was?",
+        kerntext: "**Interdisziplinär** (auch: interprofessionell) = mehrere Berufsgruppen arbeiten gemeinsam am Pflegeplan.\n\n**Pflege** \u2014 Koordiniert den Pflegeprozess, führt Körperpflege, Sturzprophylaxe, Dokumentation durch. Erkennt Veränderungen zuerst.\n\n**Arzt** \u2014 Medikamentenänderungen, Diagnostik. Bei Herrn Bauer: **Mirtazapin**-Dosis prüfen. Mirtazapin ist ein Antidepressivum mit dosisabhängiger Sedierung (PRISCUS-Liste 2023 = potenziell inadäquat bei Älteren). Es verursacht nächtliche Gangunsicherheit und orthostatische Hypotonie \u2014 beides Sturzrisikofaktoren.\n\n**Physiotherapie** \u2014 Fuehrt passives Durchbewegen der Kniegelenke durch, gibt Empfehlungen für Lagerung, plant Mobilisation.\n\nDie Pflege koordiniert \u2014 aber entscheidet nicht ueber Medikamente (Arzt-Vorbehalt).",
+        kerntextB1: "**Interdisziplinär** = verschiedene Berufsgruppen arbeiten zusammen.\n\n**Pflege** \u2014 macht die tägliche Pflege, Sturzschutz, Dokumentation.\n\n**Arzt** \u2014 aendert Medikamente, macht Diagnostik. Bei Herrn Bauer: **Mirtazapin** (Schlafmittel) prüfen \u2014 es macht ihn nachts unsicher auf den Beinen.\n\n**Physiotherapie** \u2014 bewegt seine Knie, plant die Mobilisation.\n\nDie Pflege koordiniert \u2014 aber Medikamente ändern darf nur der Arzt.",
         faustregel: "Interdisziplinär = Pflege + Arzt + Physiotherapie gemeinsam. Mirtazapin prüfen lassen \u2014 PRISCUS-Liste, Sturzrisiko.",
         faustregelB1: "Zusammenarbeit: Pflege + Arzt + Physiotherapie. Mirtazapin prüfen \u2014 macht ihn unsicher auf den Beinen.",
         spektrum: [],
         karteikarte: {
-          vorderseite: "Welche drei Berufsgruppen sind für Herrn Baür zuständig und was ist die Rolle der Pflege?",
+          vorderseite: "Welche drei Berufsgruppen sind für Herrn Bauer zuständig und was ist die Rolle der Pflege?",
           rueckseite: "Pflege: Koordination, Körperpflege, Sturzprophylaxe, Dokumentation. Arzt: Mirtazapin-Dosis prüfen (PRISCUS 2023, dosisabhängige Sedierung). Physiotherapie: passives Durchbewegen Knie, Mobilisationsplanung. Pflege koordiniert, entscheidet nicht ueber Medikamente.",
         },
       },
@@ -385,7 +385,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
 
     // Step 3.4 — Matrix: Interprofessionelle Zuständigkeiten
     {
-      stepId: "ce02-baür-plan-04-interprofessionell",
+      stepId: "ce02-bauer-plan-04-interprofessionell",
       phase: 3,
       stepType: "matrix",
       bloomLevel: 4,
@@ -396,7 +396,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       ],
       track: "basis",
       modus: "sortierstation",
-      lernziel: "ce02-baür-plan-interprofessionalität",
+      lernziel: "ce02-bauer-plan-interprofessionalität",
       tag: "pflege",
       contentC1: {
         title: "Interprofessionelle Matrix: Wer macht was wann?",
@@ -468,7 +468,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
   optionaleSteps: [
     // Step 3.5 — Checklist: Trinken bei Demenz
     {
-      stepId: "ce02-baür-plan-05-trinken-strategie",
+      stepId: "ce02-bauer-plan-05-trinken-strategie",
       phase: 3,
       stepType: "text",
       bloomLevel: 3,
@@ -476,24 +476,24 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       quellen: ["DNQP Förderung Harnkontinenz 2014"],
       track: "vertiefung",
       modus: "entdecker",
-      lernziel: "ce02-baür-plan-trinken",
+      lernziel: "ce02-bauer-plan-trinken",
       tag: "krankheitslehre",
       displayFormat: "checklist",
       contentC1: {
         title: "Trinkmenge erhöhen bei Demenz — 5 Strategien",
-        body: "Herr Baür trinkt auf Aufforderung nicht. Wie erhöhst du die Trinkmenge trotzdem? 5 Strategien die funktionieren:\n\n✓ Tasse in die Hand geben — nicht bitten: Er trinkt bereitwilliger wenn er eine Tasse in der Hand hält.\n✓ Lieblingsgetränk: alkoholfreies Malzgetränk (Malzbier, Malztrunk — nicht zu verwechseln mit alkoholhaltigem Bier; Alkohol wäre wegen Mirtazapin kontraindiziert) aus Biographie bereitstellen — erhöht Trinkmotivation.\n✓ Trinken im sozialen Kontext: Frühstück, Mittagessen — kein isoliertes Trinken.\n✓ Flüssigkeitsreiche Lebensmittel: Suppe, Joghurt, Wassermelone — zählen zur Flüssigkeitsbilanz.\n✓ Miktionsprotokoll führen — um die Tendenz zu erkennen und den Plan zu justieren.\n\nQuelle: DNQP Förderung der Harnkontinenz (2014).",
+        body: "Herr Bauer trinkt auf Aufforderung nicht. Wie erhöhst du die Trinkmenge trotzdem? 5 Strategien die funktionieren:\n\n✓ Tasse in die Hand geben — nicht bitten: Er trinkt bereitwilliger wenn er eine Tasse in der Hand hält.\n✓ Lieblingsgetränk: alkoholfreies Malzgetränk (Malzbier, Malztrunk — nicht zu verwechseln mit alkoholhaltigem Bier; Alkohol wäre wegen Mirtazapin kontraindiziert) aus Biographie bereitstellen — erhöht Trinkmotivation.\n✓ Trinken im sozialen Kontext: Frühstück, Mittagessen — kein isoliertes Trinken.\n✓ Flüssigkeitsreiche Lebensmittel: Suppe, Joghurt, Wassermelone — zählen zur Flüssigkeitsbilanz.\n✓ Miktionsprotokoll führen — um die Tendenz zu erkennen und den Plan zu justieren.\n\nQuelle: DNQP Förderung der Harnkontinenz (2014).",
         glossarBegriffe: ["Flüssigkeitsbilanz", "Miktionsprotokoll", "Exsikkose"],
       },
       contentB1: {
-        title: "Wie trinkt Herr Baür mehr?",
-        body: "Herr Baür trinkt nicht, wenn man ihn bittet. Wie geht das trotzdem? 5 Strategien:\n\n✓ Tasse in die Hand geben — er trinkt dann besser.\n✓ Alkoholfreies Malzgetränk (Malzbier ohne Alkohol) anbieten — das mag er (aus seiner Lebensgeschichte). Wichtig: Kein Alkohol — er nimmt Mirtazapin.\n✓ Beim Essen trinken — nicht alleine.\n✓ Suppe und Joghurt geben — das zählt auch als Trinken.\n✓ Aufschreiben wie viel er trinkt — dann weißt du wie es sich verändert.",
+        title: "Wie trinkt Herr Bauer mehr?",
+        body: "Herr Bauer trinkt nicht, wenn man ihn bittet. Wie geht das trotzdem? 5 Strategien:\n\n✓ Tasse in die Hand geben — er trinkt dann besser.\n✓ Alkoholfreies Malzgetränk (Malzbier ohne Alkohol) anbieten — das mag er (aus seiner Lebensgeschichte). Wichtig: Kein Alkohol — er nimmt Mirtazapin.\n✓ Beim Essen trinken — nicht alleine.\n✓ Suppe und Joghurt geben — das zählt auch als Trinken.\n✓ Aufschreiben wie viel er trinkt — dann weißt du wie es sich verändert.",
         glossarBegriffe: ["Flüssigkeit", "Exsikkose"],
       },
     },
 
     // Inline-Wissen: Freiheitsentziehende Massnahmen \u2014 Recht und Pflege
     {
-      stepId: "ce02-baür-plan-05b-freiheitsentziehung",
+      stepId: "ce02-bauer-plan-05b-freiheitsentziehung",
       phase: 3,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -501,7 +501,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       quellen: ["Paragraph 1831 BGB", "DNQP 2022 \u2014 Sturzprophylaxe"],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-baür-plan-05b-freiheitsentziehung",
+      lernziel: "ce02-bauer-plan-05b-freiheitsentziehung",
       tag: "pflege",
       themaPrimaer: "sturz-prophylaxe",
       themenSekundaer: ["pflegeprozess"],
@@ -518,23 +518,23 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       },
       inlineWissen: {
         bausteinRef: "sturz-prophylaxe-freiheitsentziehung",
-        storyAufhaenger: "Frau Meier fragt dich: \"Sollen wir bei Herrn Baür das Bettgitter hochstellen? Er ist ja schon einmal gestürzt.\" Das klingt vernünftig \u2014 ist aber rechtlich hochsensibel.",
+        storyAufhaenger: "Frau Meier fragt dich: \"Sollen wir bei Herrn Bauer das Bettgitter hochstellen? Er ist ja schon einmal gestürzt.\" Das klingt vernünftig \u2014 ist aber rechtlich hochsensibel.",
         storyAufhaengerB1: "Frau Meier fragt: \"Sollen wir das Bettgitter hochstellen?\" Das klingt logisch \u2014 ist aber kompliziert.",
-        kerntext: "**Freiheitsentziehende Maßnahme (FEM)** = jede Maßnahme die die Bewegungsfreiheit eines Menschen gegen seinen Willen einschränkt (Paragraph 1831 BGB).\n\nBeispiele: **Bettgitter beidseitig** hoch, Fixiergurt, abgeschlossene Tuer, sedierende Medikamente zur Ruhigstellung.\n\n**Paragraph 1831 BGB:** FEM erfordert:\n\u2022 **Richterliche Genehmigung** (Betreuungsgericht) ODER\n\u2022 Einwilligung des **gesetzlichen Betreürs** ODER\n\u2022 Nur bei akuter Notlage (rechtfertigender Notstand, Paragraph 34 StGB) \u2014 kurzzeitig, danach sofort Genehmigung beantragen.\n\n**Bettgitter bei Herrn Baür:**\n\u2022 Beidseitig hoch = FEM = braucht Genehmigung.\n\u2022 Einseitig hoch (Patient kann auf der anderen Seite raus) = je nach Auslegung keine FEM.\n\u2022 Bessere Alternative: Niedrigbett + Sensormatte \u2014 kein FEM, gleicher Schutz.\n\n**Frau Meier soll also NICHT einfach das Gitter hochstellen.** Erst: Prüfe ob Betreürin Ingrid einwilligt oder ob richterliche Genehmigung vorliegt. Wenn nicht: Alternativen nutzen.",
-        kerntextB1: "**Freiheitsentziehung** = Maßnahmen die Bewegung einschränken, obwohl der Patient das nicht will.\n\nBeispiele: **Bettgitter** beidseitig hoch, Fixiergurt, abgeschlossene Tuer.\n\n**Was sagt das Gesetz (Paragraph 1831 BGB)?** FEM braucht:\n\u2022 Eine **Genehmigung vom Gericht** ODER\n\u2022 Zustimmung der **gesetzlichen Betreürin** (bei Herrn Baür: Tochter Ingrid)\n\u2022 Nur in akuter Gefahr: kurz erlaubt, dann sofort Genehmigung beantragen.\n\n**Bettgitter bei Herrn Baür:**\n\u2022 Beide Seiten hoch = Freiheitsentziehung = Genehmigung nötig.\n\u2022 Bessere Lösung: Niedrigbett + Sensormatte = kein Gitter nötig.",
+        kerntext: "**Freiheitsentziehende Maßnahme (FEM)** = jede Maßnahme die die Bewegungsfreiheit eines Menschen gegen seinen Willen einschränkt (Paragraph 1831 BGB).\n\nBeispiele: **Bettgitter beidseitig** hoch, Fixiergurt, abgeschlossene Tuer, sedierende Medikamente zur Ruhigstellung.\n\n**Paragraph 1831 Abs. 4 BGB:** FEM erfordert **IMMER** eine Genehmigung des Betreuungsgerichts. Auch der gesetzliche Betreuer kann FEM nicht allein einwilligen \u2014 er **beantragt** sie beim Gericht:\n\u2022 Betreuer beantragt beim **Betreuungsgericht** die Genehmigung\n\u2022 Gericht pr\u00fcft Erforderlichkeit und genehmigt (oder lehnt ab)\n\u2022 Ohne richterliche Genehmigung keine FEM zul\u00e4ssig\n\u2022 **Einzige Ausnahme:** Akute Notlage (rechtfertigender Notstand, Paragraph 34 StGB) \u2014 kurzzeitig erlaubt, danach sofort Genehmigung beantragen.\n\n**Bettgitter bei Herrn Bauer:**\n\u2022 Beidseitig hoch = FEM = braucht richterliche Genehmigung (auch wenn Betreuerin Ingrid zustimmt \u2014 sie allein reicht nicht).\n\u2022 Einseitig hoch (Patient kann auf der anderen Seite raus) = je nach Auslegung keine FEM.\n\u2022 Bessere Alternative: Niedrigbett + Sensormatte \u2014 kein FEM, gleicher Schutz.\n\n**Frau Meier soll also NICHT einfach das Gitter hochstellen.** Ohne richterliche Genehmigung keine FEM — auch nicht mit Ingrids Zustimmung allein (Paragraph 1831 Abs. 4 BGB). Alternativen nutzen.",
+        kerntextB1: "**Freiheitsentziehung** = Maßnahmen die Bewegung einschränken, obwohl der Patient das nicht will.\n\nBeispiele: **Bettgitter** beidseitig hoch, Fixiergurt, abgeschlossene Tuer.\n\n**Was sagt das Gesetz (Paragraph 1831 Abs. 4 BGB)?** FEM braucht **IMMER** eine Genehmigung vom Gericht (Betreuungsgericht). Auch die Betreuerin (Ingrid) kann das nicht allein erlauben \u2014 sie muss es beim Gericht beantragen.\n\u2022 Nur in akuter Gefahr (Notstand): kurz erlaubt, dann sofort Genehmigung beantragen.\n\n**Bettgitter bei Herrn Bauer:**\n\u2022 Beide Seiten hoch = Freiheitsentziehung = Genehmigung nötig.\n\u2022 Bessere Lösung: Niedrigbett + Sensormatte = kein Gitter nötig.",
         faustregel: "Bettgitter beidseitig = FEM = richterliche Genehmigung nötig (Paragraph 1831 BGB). Alternative: Niedrigbett + Sensormatte \u2014 kein FEM, gleicher Schutz.",
         faustregelB1: "Bettgitter beidseitig hoch = verboten ohne Genehmigung. Besser: Bett runter + Matte.",
         spektrum: [],
         karteikarte: {
-          vorderseite: "Darf das Bettgitter bei Herrn Baür (Demenz, Sturzrisiko) ohne Genehmigung hochgestellt werden?",
-          rueckseite: "Nein. Bettgitter beidseitig = FEM nach Paragraph 1831 BGB. Braucht richterliche Genehmigung oder Zustimmung des gesetzlichen Betreürs (Ingrid). Alternative: Niedrigbett + Sensormatte (keine FEM). Nur bei akuter Notlage (Paragraph 34 StGB) kurzzeitig erlaubt.",
+          vorderseite: "Darf das Bettgitter bei Herrn Bauer (Demenz, Sturzrisiko) ohne Genehmigung hochgestellt werden?",
+          rueckseite: "Nein. Bettgitter beidseitig = FEM nach Paragraph 1831 Abs. 4 BGB. Braucht IMMER richterliche Genehmigung des Betreuungsgerichts — auch Betreuerin Ingrid kann allein nicht einwilligen, sie beantragt beim Gericht. Alternative: Niedrigbett + Sensormatte (keine FEM). Nur bei akuter Notlage (Paragraph 34 StGB) kurzzeitig erlaubt.",
         },
       },
     },
 
     // Step 3.6 — TrueFalse: Freiheitsentziehung rechtlich
     {
-      stepId: "ce02-baür-plan-06-freiheitsentziehung",
+      stepId: "ce02-bauer-plan-06-freiheitsentziehung",
       phase: 3,
       stepType: "truefalse",
       bloomLevel: 4,
@@ -542,7 +542,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       quellen: ["§ 1831 BGB", "DNQP Sturzprophylaxe 2022"],
       track: "vertiefung",
       modus: "challenge",
-      lernziel: "ce02-baür-plan-rechtliches",
+      lernziel: "ce02-bauer-plan-rechtliches",
       tag: "pflege",
       contentC1: {
         title: "Freiheitsentziehende Maßnahmen — richtig/falsch?",
@@ -555,7 +555,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       },
       contentB1: {
         title: "Darf ich das? — Rechtliche Fragen",
-        body: "Was darf die Pflege bei Herrn Baür tun? Welche Aussagen stimmen?",
+        body: "Was darf die Pflege bei Herrn Bauer tun? Welche Aussagen stimmen?",
         glossarBegriffe: ["Freiheitsentziehung", "Genehmigung", "Bettgitter"],
       },
       question: {
@@ -563,24 +563,24 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
         trueFalseCards: [
           {
             statement:
-              "Ein Bettgitter darf bei Herrn Baür ohne Genehmigung hochgestellt werden, wenn er in der Nacht weglaufen will.",
+              "Ein Bettgitter darf bei Herrn Bauer ohne Genehmigung hochgestellt werden, wenn er in der Nacht weglaufen will.",
             isTrue: false,
             explanation:
-              "Falsch — Bettgitter ist eine freiheitsentziehende Maßnahme. § 1831 BGB verlangt richterliche Genehmigung oder Einwilligung des rechtlichen Betreürs. Nur in unmittelbarer Notlage (akute Selbstverletzungs- oder Lebensgefahr, rechtfertigender Notstand nach § 34 StGB) kurzzeitig erlaubt — danach muss umgehend eine richterliche Genehmigung beantragt werden. \"Akute Sturzgefahr\" als Daürzustand bei Demenz reicht hierfür nicht aus.",
+              "Falsch — Bettgitter ist eine freiheitsentziehende Maßnahme. § 1831 Abs. 4 BGB verlangt IMMER eine richterliche Genehmigung des Betreuungsgerichts — auch der gesetzliche Betreuer kann nicht allein einwilligen, sondern beantragt die Genehmigung beim Gericht. Nur in unmittelbarer Notlage (akute Selbstverletzungs- oder Lebensgefahr, rechtfertigender Notstand nach § 34 StGB) kurzzeitig erlaubt — danach muss umgehend eine richterliche Genehmigung beantragt werden. \"Akute Sturzgefahr\" als Dauerzustand bei Demenz reicht hierfür nicht aus.",
           },
           {
             statement:
               "Ein Niedrigbett (Pflegebett in unterster Position) ist keine freiheitsentziehende Maßnahme.",
             isTrue: true,
             explanation:
-              "Richtig — ein Niedrigbett schränkt die Bewegungsfreiheit nicht ein. Es ist eine Sicherheitsmaßnahme ohne Fixierung. Keine Genehmigung erforderlich, aber Einwilligung des Betreürs ist empfehlenswert.",
+              "Richtig — ein Niedrigbett schränkt die Bewegungsfreiheit nicht ein. Es ist eine Sicherheitsmaßnahme ohne Fixierung. Keine Genehmigung erforderlich, aber Einwilligung des Betreuers ist empfehlenswert.",
           },
           {
             statement:
               "Sensormatten am Boden neben dem Bett (Alarm bei Bodenberührung) gelten als freiheitsentziehende Maßnahme.",
             isTrue: false,
             explanation:
-              "Falsch — Sensormatten schränken die Bewegungsfreiheit nicht ein. Sie lösen nur Alarm aus. Sie gelten nach herrschender Rechtsauffassung nicht als Fixierung. Einwilligung des Betreürs wird dennoch empfohlen. Rechtliche Grauzone: In Kombination mit verschlossener Stationstür haben einzelne Gerichte Sensormatten als Teil einer FEM eingestuft.",
+              "Falsch — Sensormatten schränken die Bewegungsfreiheit nicht ein. Sie lösen nur Alarm aus. Sie gelten nach herrschender Rechtsauffassung nicht als Fixierung. Einwilligung des Betreuers wird dennoch empfohlen. Rechtliche Grauzone: In Kombination mit verschlossener Stationstür haben einzelne Gerichte Sensormatten als Teil einer FEM eingestuft.",
           },
         ],
       },

@@ -30,7 +30,7 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
         title: "Was siehst du — bevor du nachliest?",
         body: "Du schaust Frau Kovač an. Sie sitzt aufrecht im Sessel, atmet ruhig, aber du bemerkst etwas. Bevor du nachliest, was bei COPD III 'normal' ist:\n\nBeschreibe in 2–3 Sätzen, was du bei der Atmung von Frau Kovač beobachten würdest. Was fällt auf? Was würdest du prüfen?\n\nEs gibt keine richtige oder falsche Antwort — du bereitest dich vor.",
         glossarBegriffe: [
-          "Atemfreqünz",
+          "Atemfrequenz",
           "Lippenbremse",
           "Atemhilfsmuskulatur",
           "Sputum",
@@ -39,17 +39,17 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
       contentB1: {
         title: "Was siehst du bei der Atmung?",
         body: "Du schaust Frau Kovač an. Sie sitzt im Sessel und atmet.\n\nBeschreibe in 1–2 Sätzen: Was siehst du bei ihrer Atmung? Was hörst du? Was fällt dir auf?\n\nEs gibt kein richtig oder falsch — du beschreibst, was du siehst.",
-        glossarBegriffe: ["Atemfreqünz", "Lippenbremse"],
+        glossarBegriffe: ["Atemfrequenz", "Lippenbremse"],
       },
       question: {
         fragetext:
           "Beschreibe in 2–3 Sätzen, was du bei Frau Kovačs Atmung beobachtest — bevor du die Erklärung liest.",
         musterantwort:
-          "Erwartete Beobachtungspunkte: Atemfreqünz (12–20/Min normal), Einsatz der Atemhilfsmuskulatur (Schulterheben?), Lippenbremse spontan aktiv?, Atemgeräusche (Giemen, Brummen, Pfeifen?), Sputum-Farbe wenn Husten, Körperhaltung (Kutschersitz?). Frau Kovač sagt: \"Heute Nacht hab ich gehusten. Viel. Der Schleim will nicht raus.\" — gelber Schleim wäre Infektionszeichen.",
+          "Erwartete Beobachtungspunkte: Atemfrequenz (12–20/Min normal), Einsatz der Atemhilfsmuskulatur (Schulterheben?), Lippenbremse spontan aktiv?, Atemgeräusche (Giemen, Brummen, Pfeifen?), Sputum-Farbe wenn Husten, Körperhaltung (Kutschersitz?). Frau Kovač sagt: \"Heute Nacht hab ich gehusten. Viel. Der Schleim will nicht raus.\" — gelber Schleim wäre Infektionszeichen.",
         bewertungskriterien: [
           "Mindestens 2 Beobachtungspunkte genannt",
           "Kein reines Wiederholen von Diagnosen",
-          "Bezug auf aktülle Situation (Nacht, Husten)",
+          "Bezug auf aktuelle Situation (Nacht, Husten)",
         ],
         satzanfaengeB1: [
           "Ich sehe, dass ...",
@@ -80,7 +80,7 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
         "Pflegekraft beobachtet die Atmung einer älteren Patientin im Sessel",
       contentC1: {
         title: "Was du bei COPD beobachten musst",
-        body: "Bei Frau Kovač (COPD III) ist die Atembeobachtung keine Routine — sie gibt dir täglich Hinweise auf Verschlechterung oder Komplikation. Diese 7 Punkte musst du systematisch prüfen:\n\n✓ **Atemfreqünz** — Normal: 12–20 Atemzüge/Min. Tachypnoe (>20/Min) ist ein Warnsignal bei COPD.\n\n✓ **Atemhilfsmuskulatur** — Schulterheben beim Einatmen zeigt erhöhte Atemarbeit. Bei Frau Kovač mit Herzinsuffizienz zusätzlich beachten.\n\n✓ **Lippenbremse** — Ist sie spontan aktiv? (Pfeifen beim Ausatmen) Die Lippenbremse erhöht den intrabronchialen Druck und verhindert Atemwegskollaps (PEEP-Effekt).\n\n✓ **Atemgeräusche** — Giemen (hoch), Brummen (tief), Pfeifen (exspiratorisch) = Obstruktion. Knistern (inspiratorisch) = mögliches Lungenödem bei Herzinsuffizienz.\n\n✓ **Sputum-Farbe** — Weiß-klar = normal. Gelb-grün = Infektion (Arzt informieren!). Rostig-schaumig = Lungenödem.\n\n✓ **Körperhaltung** — Kutschersitz (vorgeneigt, Unterarme abgestützt) reduziert die Atemarbeit durch Fixierung der Atemhilfsmuskulatur — spontane Einnahme zeigt erhöhte Dyspnoe.\n\n✓ **SpO2** — Falls Pulsoximeter vorhanden: Im **stabilen Zustand** sind bei COPD III oft Werte >92 % normal. Der Zielkorridor 88–92 % gilt **bei akuter Exazerbation und unter Saürstofftherapie** (BTS Emergency Oxygen 2017, GOLD 2023). Eine **fallende** SpO2 unter 92 % bei Frau Kovač im stabilen Zustand ist immer klärungsbedürftig — nicht 'normal'. Quelle: (GOLD-Report COPD 2023; BTS Emergency Oxygen 2017)",
+        body: "Bei Frau Kovač (COPD III) ist die Atembeobachtung keine Routine — sie gibt dir täglich Hinweise auf Verschlechterung oder Komplikation. Diese 7 Punkte musst du systematisch prüfen:\n\n✓ **Atemfrequenz** — Normal: 12–20 Atemzüge/Min. Tachypnoe (>20/Min) ist ein Warnsignal bei COPD.\n\n✓ **Atemhilfsmuskulatur** — Schulterheben beim Einatmen zeigt erhöhte Atemarbeit. Bei Frau Kovač mit Herzinsuffizienz zusätzlich beachten.\n\n✓ **Lippenbremse** — Ist sie spontan aktiv? (Pfeifen beim Ausatmen) Die Lippenbremse erhöht den intrabronchialen Druck und verhindert Atemwegskollaps (PEEP-Effekt).\n\n✓ **Atemgeräusche** — Giemen (hoch), Brummen (tief), Pfeifen (exspiratorisch) = Obstruktion. Knistern (inspiratorisch) = mögliches Lungenödem bei Herzinsuffizienz.\n\n✓ **Sputum-Farbe** — Weiß-klar = normal. Gelb-grün = Infektion (Arzt informieren!). Rostig-schaumig = Lungenödem.\n\n✓ **Körperhaltung** — Kutschersitz (vorgeneigt, Unterarme abgestützt) reduziert die Atemarbeit durch Fixierung der Atemhilfsmuskulatur — spontane Einnahme zeigt erhöhte Dyspnoe.\n\n✓ **SpO2** — Falls Pulsoximeter vorhanden: Im **stabilen Zustand** sind bei COPD III oft Werte >92 % normal. Der Zielkorridor 88–92 % gilt **bei akuter Exazerbation und unter Sauerstofftherapie** (BTS Emergency Oxygen 2017, GOLD 2023). Eine **fallende** SpO2 unter 92 % bei Frau Kovač im stabilen Zustand ist immer klärungsbedürftig — nicht 'normal'. Quelle: (GOLD-Report COPD 2023; BTS Emergency Oxygen 2017)",
         fallbezug:
           "Frau Kovač hat heute Nacht viel gehustet — sie sagt: \"Der Schleim will nicht raus.\" Das kann auf verdickte Sekrete durch Dehydration hinweisen (Trinkmenge 820 ml) oder auf eine beginnende Infektion (gelber Schleim?).",
         glossarBegriffe: [
@@ -95,11 +95,11 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
       },
       contentB1: {
         title: "7 Dinge bei der Atmung beobachten",
-        body: "Bei COPD musst du die Atmung genau beobachten. Hier sind die 7 wichtigsten Punkte:\n\n✓ **Atemfreqünz** — Wie oft atmet sie pro Minute? Normal: 12–20 Mal. Schneller = Warnsignal.\n\n✓ **Schulterheben** — Hebt sie die Schultern beim Einatmen hoch? Das zeigt: Die Atmung ist anstrengend.\n\n✓ **Lippenbremse** — Atmet sie durch leicht geschlossene Lippen aus? (Wie durch einen Strohhalm.) Das hilft der Lunge.\n\n✓ **Atemgeräusche** — Hörst du Pfeifen oder Brummen? Das zeigt: Die Luftwege sind eng.\n\n✓ **Schleim-Farbe** — Welche Farbe hat der Schleim wenn sie hustet? Weiß = ok. Gelb-grün = möglicherweise Infektion → Arzt informieren.\n\n✓ **Körperhaltung** — Sitzt sie vorgebeugt mit Armen auf den Knien? Das ist der Kutschersitz — er erleichtert die Atmung.\n\n✓ **SpO2 (Saürstoff im Blut)** — Falls ein Gerät vorhanden ist: Im stabilen Zustand sind bei Frau Kovač Werte über 92 % normal. Der Bereich 88–92 % ist nur das Ziel **wenn sie akut Atemnot hat und Saürstoff bekommt**. Wenn der Wert plötzlich unter 92 % fällt — **nicht** sagen 'das ist bei COPD so', sondern beobachten und melden. Quelle: (GOLD-Report COPD 2023)",
+        body: "Bei COPD musst du die Atmung genau beobachten. Hier sind die 7 wichtigsten Punkte:\n\n✓ **Atemfrequenz** — Wie oft atmet sie pro Minute? Normal: 12–20 Mal. Schneller = Warnsignal.\n\n✓ **Schulterheben** — Hebt sie die Schultern beim Einatmen hoch? Das zeigt: Die Atmung ist anstrengend.\n\n✓ **Lippenbremse** — Atmet sie durch leicht geschlossene Lippen aus? (Wie durch einen Strohhalm.) Das hilft der Lunge.\n\n✓ **Atemgeräusche** — Hörst du Pfeifen oder Brummen? Das zeigt: Die Luftwege sind eng.\n\n✓ **Schleim-Farbe** — Welche Farbe hat der Schleim wenn sie hustet? Weiß = ok. Gelb-grün = möglicherweise Infektion → Arzt informieren.\n\n✓ **Körperhaltung** — Sitzt sie vorgebeugt mit Armen auf den Knien? Das ist der Kutschersitz — er erleichtert die Atmung.\n\n✓ **SpO2 (Sauerstoff im Blut)** — Falls ein Gerät vorhanden ist: Im stabilen Zustand sind bei Frau Kovač Werte über 92 % normal. Der Bereich 88–92 % ist nur das Ziel **wenn sie akut Atemnot hat und Sauerstoff bekommt**. Wenn der Wert plötzlich unter 92 % fällt — **nicht** sagen 'das ist bei COPD so', sondern beobachten und melden. Quelle: (GOLD-Report COPD 2023)",
         fallbezug:
           "Frau Kovač hat heute Nacht viel gehustet. Sie sagt: \"Der Schleim will nicht raus.\" Das könnte an zu wenig Trinken liegen — oder an einer Infektion.",
         glossarBegriffe: [
-          "Atemfreqünz",
+          "Atemfrequenz",
           "Lippenbremse",
           "Kutschersitz",
           "SpO2",
@@ -204,7 +204,7 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
         storyAufhaenger:
           "Frau Kovač sagt: \"Ich lieg dann und denk. Irgendwann schlaf ich ein.\" Aber wie lang ist \"irgendwann\"? In der Schlafmedizin gibt es dafür einen Fachbegriff — und eine Grenze, ab der es klinisch relevant wird.",
         storyAufhaengerB1:
-          "Frau Kovač sagt: \"Ich liege lange wach und denke.\" Wie lange daürt es, bis sie einschläft? Dafür gibt es einen Fachbegriff.",
+          "Frau Kovač sagt: \"Ich liege lange wach und denke.\" Wie lange dauert es, bis sie einschläft? Dafür gibt es einen Fachbegriff.",
         kerntext:
           "**Einschlaflatenz** ist die Zeit vom Hinlegen mit Schlafabsicht bis zum tatsächlichen Einschlafen. Normal sind **10–20 Minuten**. Ab **>30 Minuten** an mindestens 3 Nächten pro Woche über ≥3 Monate spricht man von einer **Insomnie** nach ICSD-3-Kriterien.\n\nDie Einschlaflatenz ist ein zentrales Kriterium der Schlafanamnese — sie unterscheidet \"ab und zu schlecht geschlafen\" von einer behandlungsbedürftigen Schlafstörung. Bei Frau Kovač (COPD III + Herzinsuffizienz) kommen erschwerend hinzu: nächtlicher Husten, Dyspnoe im Liegen und Nykturie — Faktoren die die Einschlaflatenz unabhängig verlängern.\n\nQuelle: (ICSD-3 2014; DGSM S3-Leitlinie Insomnie 2017)",
         kerntextB1:
@@ -229,7 +229,7 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
       stepType: "dialog",
       bloomLevel: 3,
       kompetenzbereich: "V.1",
-      quellen: ["DNQP Kontinenzförderung 2014"],
+      quellen: ["DGSM S3-Leitlinie Insomnie 2017"],
       track: "basis",
       modus: "story",
       lernziel: "ce02-kovac-ambulant-beob-schlaf",
@@ -269,7 +269,7 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
               },
               {
                 text: "\"Warum sehen Sie so spät noch fern?\"",
-                textB1: "\"Warum schaün Sie abends so lange fern?\"",
+                textB1: "\"Warum schauen Sie abends so lange fern?\"",
                 patientResponse:
                   "Frau Kovač sieht dich kurz an. \"Weil ich es will.\"",
                 patientResponseB1:
@@ -365,8 +365,8 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
       bloomLevel: 2,
       kompetenzbereich: "I.1",
       quellen: [
-        "DNQP Kontinenzförderung in der Pflege 2014",
         "ESC Heart Failure Guidelines 2023",
+        "DGE (2024): Referenzwerte Wasserzufuhr",
       ],
       track: "basis",
       modus: "entdecker",
@@ -387,18 +387,18 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
         storyAufhaenger:
           "Auf Frau Kovačs Küchentisch liegt das Trinkprotokoll von gestern. 6 Einträge, handschriftlich. Gleich wirst du die Summe berechnen — aber vorher musst du verstehen, was eine Flüssigkeitsbilanz eigentlich misst und warum der Zielwert bei Frau Kovač nicht der Standard-Wert ist.",
         storyAufhaengerB1:
-          "Auf dem Küchentisch liegt das Trinkprotokoll. Du wirst gleich zusammenrechnen, wie viel Frau Kovač getrunken hat. Aber zürst: Was ist eine Flüssigkeitsbilanz — und warum ist bei ihr der Zielwert anders?",
+          "Auf dem Küchentisch liegt das Trinkprotokoll. Du wirst gleich zusammenrechnen, wie viel Frau Kovač getrunken hat. Aber zuerst: Was ist eine Flüssigkeitsbilanz — und warum ist bei ihr der Zielwert anders?",
         kerntext:
-          "Die **Flüssigkeitsbilanz** erfasst die Gegenüberstellung von **Einfuhr** (Trinkmenge + Infusionen + Sondenkost) und **Ausfuhr** (Urin + Erbrechen + Drainage + Schweiß). Im ambulanten Setting wird meist nur die Trinkmenge dokumentiert (vereinfachte Bilanz).\n\nDie allgemeine Empfehlung für Gesunde liegt bei **≥1.500 ml/Tag** (DGE/DNQP). Bei Frau Kovač gilt dieser Wert **nicht**: Herzinsuffizienz NYHA II + Furosemid 40 mg bedeuten, dass der Hausarzt einen **individüllen Zielwert** festlegt — hier **1.200 ml/Tag als Obergrenze**, nicht als Untergrenze. Zu viel Flüssigkeit belastet das insuffiziente Herz; zu wenig verdickt das Bronchialsekret bei COPD.\n\nQuelle: (DNQP Kontinenzförderung 2014; ESC Heart Failure Guidelines 2023)",
+          "Die **Flüssigkeitsbilanz** erfasst die Gegenüberstellung von **Einfuhr** (Trinkmenge + Infusionen + Sondenkost) und **Ausfuhr** (Urin + Erbrechen + Drainage + Schweiß). Im ambulanten Setting wird meist nur die Trinkmenge dokumentiert (vereinfachte Bilanz).\n\nDie allgemeine Empfehlung für Gesunde liegt bei **≥1.500 ml/Tag** (DGE/DNQP). Bei Frau Kovač gilt dieser Wert **nicht**: Herzinsuffizienz NYHA II + Furosemid 40 mg bedeuten, dass der Hausarzt einen **individuellen Zielwert** festlegt — hier **1.200 ml/Tag als Obergrenze**, nicht als Untergrenze. Zu viel Flüssigkeit belastet das insuffiziente Herz; zu wenig verdickt das Bronchialsekret bei COPD.\n\nQuelle: (ESC Heart Failure Guidelines 2023; DGE Referenzwerte Wasserzufuhr 2024)",
         kerntextB1:
           "**Flüssigkeitsbilanz** = Wie viel kommt rein (Trinken) und wie viel kommt raus (Urin, Schweiß). Ambulant schreibt man meist nur das Trinken auf.\n\nNormaler Zielwert für Gesunde: **1.500 ml pro Tag**. Frau Kovač hat eine **Herzschwäche und nimmt eine Wassertablette** (Furosemid). Deshalb hat der Hausarzt einen anderen Wert festgelegt: **1.200 ml pro Tag**. Mehr wäre schlecht fürs Herz. Weniger ist schlecht für die Lunge (der Schleim wird zäh).",
         faustregel:
-          "Flüssigkeitsbilanz = Einfuhr minus Ausfuhr. Bei Herzinsuffizienz + Diuretikum: Zielwert immer ärztlich individüll — nie den Standardwert 1.500 ml blind übernehmen.",
+          "Flüssigkeitsbilanz = Einfuhr minus Ausfuhr. Bei Herzinsuffizienz + Diuretikum: Zielwert immer ärztlich individuell — nie den Standardwert 1.500 ml blind übernehmen.",
         faustregelB1:
           "Flüssigkeitsbilanz = Trinken minus Ausscheidung. Bei Herzschwäche: Der Arzt legt den Zielwert fest — nicht der Standardwert von 1.500 ml.",
         karteikarte: {
           vorderseite: "Frau Kovačs Trinkprotokoll zeigt 800 ml. Wie heißt die Gegenüberstellung von Einfuhr und Ausfuhr — und warum gilt bei ihr nicht der Standard-Zielwert?",
-          rueckseite: "Flüssigkeitsbilanz = Einfuhr (Trinkmenge, Infusion) vs. Ausfuhr (Urin, Schweiß). Standard: ≥1.500 ml/Tag (DGE/DNQP). Bei Herzinsuffizienz + Furosemid ärztlich individüll: hier 1.200 ml/Tag (ESC 2023). Zu viel = Herzbelastung. Zu wenig = zähes Sekret bei COPD.",
+          rueckseite: "Flüssigkeitsbilanz = Einfuhr (Trinkmenge, Infusion) vs. Ausfuhr (Urin, Schweiß). Standard: ≥1.500 ml/Tag (DGE/DNQP). Bei Herzinsuffizienz + Furosemid ärztlich individuell: hier 1.200 ml/Tag (ESC 2023). Zu viel = Herzbelastung. Zu wenig = zähes Sekret bei COPD.",
           vorderseiteB1: "Was ist eine Flüssigkeitsbilanz? Warum darf Frau Kovač nicht einfach 1.500 ml trinken?",
           rueckseiteB1: "Flüssigkeitsbilanz = Trinken gegen Ausscheidung rechnen. Standard: 1.500 ml/Tag. Frau Kovač: 1.200 ml/Tag (Arzt-Vorgabe wegen Herzschwäche). Mehr wäre schlecht fürs Herz.",
         },
@@ -413,7 +413,7 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
       bloomLevel: 4,
       kompetenzbereich: "I.1",
       quellen: [
-        "DNQP Kontinenzförderung in der Pflege 2014",
+        "ESC Heart Failure Guidelines 2023",
         "GOLD-Report COPD 2023",
       ],
       track: "basis",
@@ -422,7 +422,7 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
       tag: "anatomie",
       contentC1: {
         title: "Trinkprotokoll auswerten",
-        body: "Du nimmst das Trinkprotokoll vom Küchentisch. Frau Kovač hat gestern eingetragen:\n\n07:30 — Kaffee: 150 ml\n09:00 — Wasser: 100 ml\n12:00 — Suppe: 200 ml\n15:30 — Tee: 100 ml\n18:30 — Abend-Kaffee: 100 ml\n21:00 — Wasser: 150 ml\n\nBerechne die Gesamttrinkmenge im Protokoll. **Hinweis zur Diskrepanz:** Petras Übergabezettel nennt 820 ml — das Protokoll ergibt 800 ml. Petra hat überschlagen, du rechnest exakt aus dem Protokoll. Solche kleinen Differenzen sind in ambulanter Praxis normal und kein Fehler.\n\n**Wichtig — der Zielwert für Frau Kovač:**\nDie allgemeine DNQP/DGE-Empfehlung für Gesunde liegt bei 1.500 ml/Tag. Diese Empfehlung gilt für Frau Kovač **nicht 1:1**. Bei Herzinsuffizienz NYHA II + Furosemid (40 mg) ist die Trinkmenge ärztlich individüll festzulegen — die ESC Heart Failure Guidelines 2023 nennen für stabile Herzinsuffizienz häufig **1.200 ml/Tag als ärztlich vereinbarte Obergrenze**, NICHT als Untergrenze. Im Pflegeplan von Frau Kovač ist mit dem Hausarzt **1.200 ml/Tag** als individülles Tagesziel vereinbart. Berechne deshalb das Defizit zu **diesem ärztlich festgelegten Wert** — nicht zur Generic-Empfehlung von 1.500 ml. (DNQP Kontinenzförderung 2014; ESC Heart Failure Guidelines 2023)",
+        body: "Du nimmst das Trinkprotokoll vom Küchentisch. Frau Kovač hat gestern eingetragen:\n\n07:30 — Kaffee: 150 ml\n09:00 — Wasser: 100 ml\n12:00 — Suppe: 200 ml\n15:30 — Tee: 100 ml\n18:30 — Abend-Kaffee: 100 ml\n21:00 — Wasser: 150 ml\n\nBerechne die Gesamttrinkmenge im Protokoll. **Hinweis zur Diskrepanz:** Petras Übergabezettel nennt 820 ml — das Protokoll ergibt 800 ml. Petra hat überschlagen, du rechnest exakt aus dem Protokoll. Solche kleinen Differenzen sind in ambulanter Praxis normal und kein Fehler.\n\n**Wichtig — der Zielwert für Frau Kovač:**\nDie allgemeine DNQP/DGE-Empfehlung für Gesunde liegt bei 1.500 ml/Tag. Diese Empfehlung gilt für Frau Kovač **nicht 1:1**. Bei Herzinsuffizienz NYHA II + Furosemid (40 mg) ist die Trinkmenge ärztlich individuell festzulegen — die ESC Heart Failure Guidelines 2023 nennen für stabile Herzinsuffizienz häufig **1.200 ml/Tag als ärztlich vereinbarte Obergrenze**, NICHT als Untergrenze. Im Pflegeplan von Frau Kovač ist mit dem Hausarzt **1.200 ml/Tag** als individuelles Tagesziel vereinbart. Berechne deshalb das Defizit zu **diesem ärztlich festgelegten Wert** — nicht zur Generic-Empfehlung von 1.500 ml. (ESC Heart Failure Guidelines 2023; DGE Referenzwerte Wasserzufuhr 2024)",
         glossarBegriffe: ["Flüssigkeitsbilanz", "Exsikkose"],
       },
       contentB1: {
@@ -435,14 +435,14 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
           "Berechne die Gesamttrinkmenge nach dem Protokoll. Wie viel fehlt bis zum ärztlich vereinbarten Tagesziel von 1.200 ml?",
         calculation: {
           instruction:
-            "Addiere die Trinkmengen des gestrigen Tages aus dem Protokoll. Ärztlich vereinbartes Tagesziel für Frau Kovač: 1.200 ml/Tag (Hausarzt, individüll wegen NYHA II + Furosemid).",
+            "Addiere die Trinkmengen des gestrigen Tages aus dem Protokoll. Ärztlich vereinbartes Tagesziel für Frau Kovač: 1.200 ml/Tag (Hausarzt, individuell wegen NYHA II + Furosemid).",
           formula:
             "Gesamt = 150 + 100 + 200 + 100 + 100 + 150 = ? ml. Defizit zum ärztlich vereinbarten Ziel = 1.200 – Gesamt = ? ml",
           correctValue: 800,
           unit: "ml (Gesamttrinkmenge laut Protokoll)",
           tolerance: 0,
           explanation:
-            "800 ml — das ist deutlich unter dem ärztlich vereinbarten Tagesziel von 1.200 ml. Defizit: 400 ml.\n\n**Warum 1.200 ml und nicht 1.500 ml?**\nDie DNQP-Empfehlung von 1.500 ml gilt für Gesunde. Frau Kovač hat Herzinsuffizienz NYHA II und nimmt Furosemid 40 mg morgens (= Schleifendiuretikum). Die ESC Heart Failure Guidelines 2023 empfehlen bei stabiler Herzinsuffizienz häufig eine ärztlich festgelegte Trinkmengen-Obergrenze von 1.000-1.500 ml — bei Frau Kovač im Pflegeplan: 1.200 ml/Tag.\n\n**Heißt das, sie soll noch weniger trinken?** Nein — 800 ml sind zu wenig. Bei COPD fördert ausreichende Flüssigkeit die Sekretverflüssigung. Das Ziel ist **schrittweise auf 1.200 ml** steigern, nicht überschreiten. Bei einer aktüllen Trinkmenge von 750-950 ml (Pflegeplan-Status) ist das Defizit das Hauptproblem — nicht eine Überschreitung. (DNQP Kontinenzförderung 2014; ESC Heart Failure Guidelines 2023)",
+            "800 ml — das ist deutlich unter dem ärztlich vereinbarten Tagesziel von 1.200 ml. Defizit: 400 ml.\n\n**Warum 1.200 ml und nicht 1.500 ml?**\nDie DNQP-Empfehlung von 1.500 ml gilt für Gesunde. Frau Kovač hat Herzinsuffizienz NYHA II und nimmt Furosemid 40 mg morgens (= Schleifendiuretikum). Die ESC Heart Failure Guidelines 2023 empfehlen bei stabiler Herzinsuffizienz häufig eine ärztlich festgelegte Trinkmengen-Obergrenze von 1.000-1.500 ml — bei Frau Kovač im Pflegeplan: 1.200 ml/Tag.\n\n**Heißt das, sie soll noch weniger trinken?** Nein — 800 ml sind zu wenig. Bei COPD fördert ausreichende Flüssigkeit die Sekretverflüssigung. Das Ziel ist **schrittweise auf 1.200 ml** steigern, nicht überschreiten. Bei einer aktuellen Trinkmenge von 750-950 ml (Pflegeplan-Status) ist das Defizit das Hauptproblem — nicht eine Überschreitung. (ESC Heart Failure Guidelines 2023; DGE Referenzwerte Wasserzufuhr 2024)",
           explanationB1:
             "800 ml — das ist zu wenig. Das Ziel vom Hausarzt ist 1.200 ml pro Tag. Es fehlen also 400 ml.\n\n**Warum nicht 1.500 ml?**\n1.500 ml gilt für gesunde Menschen. Frau Kovač hat eine Herz-Schwäche und nimmt das Wasser-Tabletten Furosemid. Deshalb hat der Hausarzt einen niedrigeren Wert festgelegt: 1.200 ml/Tag — als **Obergrenze**.\n\n**Soll sie weniger trinken?** Nein — 800 ml sind immer noch zu wenig. Bei COPD braucht die Lunge Wasser, damit der Schleim flüssiger wird. Das Ziel ist: langsam auf 1.200 ml hoch.",
         },
@@ -457,7 +457,7 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
       bloomLevel: 4,
       kompetenzbereich: "I.1",
       quellen: [
-        "DNQP Kontinenzförderung in der Pflege 2014",
+        "AWMF S3-Leitlinie VTE-Prophylaxe 2015",
         "GOLD-Report COPD 2023",
       ],
       track: "basis",
@@ -652,9 +652,9 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
             },
             {
               front: "COPD Stadium IV (sehr schwer)",
-              back: "FEV1 < 30 %. Ruhedyspnoe möglich. Chronische Hypoxämie. Oft Heimsaürstoff nötig.",
+              back: "FEV1 < 30 %. Ruhedyspnoe möglich. Chronische Hypoxämie. Oft Heimsauerstoff nötig.",
               backB1:
-                "Stufe 4 — sehr schwere COPD. Schon in Ruhe kommt Atemnot. Manchmal braucht man Saürstoff zu Hause.",
+                "Stufe 4 — sehr schwere COPD. Schon in Ruhe kommt Atemnot. Manchmal braucht man Sauerstoff zu Hause.",
             },
           ],
         },

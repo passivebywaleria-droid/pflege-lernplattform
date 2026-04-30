@@ -16,7 +16,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "ernährungsassessment-formen-mangel",
     themaPrimaer: "ernährungsassessment",
     vorderseite: "Frau Schmidt hat NRS-Score 1, aber GLIM-Diagnose Mangelernährung Stadium 1. Wie ist das möglich?",
-    rueckseite: "NRS 2002 erkennt Mangelernährung bei Adipositas schlecht (kein Untergewicht, kein Gewichtsverlust). GLIM prüft tiefer: min 1 phänotypisches Kriterium (reduzierte Muskelmasse) + min 1 ätiologisches (einseitige Kost + Inflammation) = Diagnose.\n\nSpektrum: Petrov (Dysphagie, GLIM eindeutig), Baür (Demenz, vergisst essen), Kovac (COPD, Katabolie).\n\nFaustregel: **GLIM findet was NRS übersieht.**",
+    rueckseite: "NRS 2002 erkennt Mangelernährung bei Adipositas schlecht (kein Untergewicht, kein Gewichtsverlust). GLIM prüft tiefer: min 1 phänotypisches Kriterium (reduzierte Muskelmasse) + min 1 ätiologisches (einseitige Kost + Inflammation) = Diagnose.\n\nSpektrum: Petrov (Dysphagie, GLIM eindeutig), Bauer (Demenz, vergisst essen), Kovac (COPD, Katabolie).\n\nFaustregel: **GLIM findet was NRS übersieht.**",
     situationsId: "ls-schmidt-adipositas",
   },
   {
@@ -24,7 +24,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "haut-entzündungszeichen-5",
     themaPrimaer: "haut",
     vorderseite: "Bei Frau Schmidt (BMI 38) findest du in der submammären Falte Rötung und feuchte Haut. Ist das Intertrigo oder Dekubitus?",
-    rueckseite: "**Intertrigo.** Entsteht durch Feuchtigkeit + Reibung in Hautfalten. Submammär = typische Intertrigo-Stelle bei Adipositas. Dekubitus entsteht durch Druck auf Knochen-Prominenzen (Sakrum, Trochanter, Fersen).\n\n5 Entzündungszeichen: Rubor, Dolor, Calor, Tumor, Functio läsa.\n\nSpektrum: Yilmaz (unter Verband), Baür (IAD bei Inkontinenz), Emilia (Windeldermatitis).\n\nFaustregel: **Intertrigo = Feuchtigkeit + Reibung in Falten.**",
+    rueckseite: "**Intertrigo.** Entsteht durch Feuchtigkeit + Reibung in Hautfalten. Submammär = typische Intertrigo-Stelle bei Adipositas. Dekubitus entsteht durch Druck auf Knochen-Prominenzen (Sakrum, Trochanter, Fersen).\n\n5 Entzündungszeichen: Rubor, Dolor, Calor, Tumor, Functio läsa.\n\nSpektrum: Yilmaz (unter Verband), Bauer (IAD bei Inkontinenz), Emilia (Windeldermatitis).\n\nFaustregel: **Intertrigo = Feuchtigkeit + Reibung in Falten.**",
     situationsId: "ls-schmidt-adipositas",
   },
   {

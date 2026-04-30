@@ -12,7 +12,7 @@ import type { ContentStep } from "../../../_types";
 /**
  * 1A — Pneumonie-Prophylaxe: COPD + Pneumonierisiko
  * Position: VOR Step 1.2 (Prioritaeten vor der Tuer) — Schueler muss wissen,
- * warum Erschoepfung nach 3 Min Atemuebungen ein Pneumonie-Risikosignal ist.
+ * warum Erschoepfung nach 3 Min Atemübungen ein Pneumonie-Risikosignal ist.
  */
 export const CE02_KOVAC_INLINE_01A_PNEUMONIE_COPD: ContentStep = {
   stepId: "ce02-kovac-info-01b-pneumonie-copd-risiko",
@@ -52,7 +52,7 @@ export const CE02_KOVAC_INLINE_01A_PNEUMONIE_COPD: ContentStep = {
     kerntext:
       "**Pneumonie bei COPD — warum Frau Kovac besonders gefährdet ist:**\n\n• Bei COPD III ist die **mukoziliäre Clearance** (Selbstreinigung der Atemwege durch Flimmerhärchen) stark reduziert. Sekret bleibt in den Bronchien liegen.\n\n• Frau Kovac hustet nachts viel, aber der Schleim \"will nicht raus\" — ein Zeichen für **Sekretverhaltung**. Zaehes Sekret + flache Atmung = idealer Naehrboden für Keime.\n\n• Ihre **geringe Trinkmenge** (800 ml) verschärft das Problem: Weniger Flüssigkeit = zäheres Sekret = schwieriger abzuhusten.\n\n• Im ambulanten Setting fehlt die 24h-Beobachtung — eine beginnende Pneumonie (Fieber, veränderter Auswurf, Tachypnoe) kann zwischen den Besuchen unbemerkt bleiben.\n\nQuelle: (AWMF S3 2017; GOLD-Report COPD 2023)",
     kerntextB1:
-      "**Warum ist Frau Kovacs Lunge in Gefahr?**\n\n• Bei schwerer COPD arbeiten die **Flimmerhärchen** in der Lunge nicht mehr richtig. Der Schleim bleibt liegen.\n\n• Frau Kovac hustet nachts — aber der Schleim kommt nicht raus. Das ist gefährlich: Bakterien wachsen im Schleim.\n\n• Sie trinkt zu wenig (800 ml). Dadurch wird der Schleim noch zäherer.\n\n• Ambulant heißt: Zwischen den Besuchen sieht niemand ob sich etwas verschlechtert. Du musst bei jedem Besuch genau hinschaün.\n\nQuelle: (AWMF S3 2017; GOLD 2023)",
+      "**Warum ist Frau Kovacs Lunge in Gefahr?**\n\n• Bei schwerer COPD arbeiten die **Flimmerhärchen** in der Lunge nicht mehr richtig. Der Schleim bleibt liegen.\n\n• Frau Kovac hustet nachts — aber der Schleim kommt nicht raus. Das ist gefährlich: Bakterien wachsen im Schleim.\n\n• Sie trinkt zu wenig (800 ml). Dadurch wird der Schleim noch zäherer.\n\n• Ambulant heißt: Zwischen den Besuchen sieht niemand ob sich etwas verschlechtert. Du musst bei jedem Besuch genau hinschauen.\n\nQuelle: (AWMF S3 2017; GOLD 2023)",
     faustregel:
       "**COPD + wenig Trinken + zähes Sekret = Pneumonie-Alarm.** Jeder Morgenbesuch beginnt mit Sekret-Check.",
     faustregelB1:
@@ -106,7 +106,7 @@ export const CE02_KOVAC_INLINE_01B_PFLEGEPROZESS_SBAR: ContentStep = {
   kompetenzbereich: "I.1",
   quellen: [
     "Fiechter/Meier 1981",
-    "DNQP Kontinenzförderung 2014",
+    "Aktionsbündnis Patientensicherheit: SBAR-Übergabe",
   ],
   track: "basis",
   modus: "entdecker",
@@ -187,7 +187,7 @@ export const CE02_KOVAC_INLINE_02A_PNEUMONIE_ATEMBEOB: ContentStep = {
   contentC1: {
     title: "Pneumonie-Prophylaxe bei der Atembeobachtung",
     body: "",
-    glossarBegriffe: ["Pneumonie-Prophylaxe", "Sputum", "Atemfreqünz", "Lippenbremse"],
+    glossarBegriffe: ["Pneumonie-Prophylaxe", "Sputum", "Atemfrequenz", "Lippenbremse"],
   },
   contentB1: {
     title: "Worauf achtest du bei der Atmung?",
@@ -201,7 +201,7 @@ export const CE02_KOVAC_INLINE_02A_PNEUMONIE_ATEMBEOB: ContentStep = {
     storyAufhaengerB1:
       "Frau Kovac sitzt im Sessel. Sie hat nachts viel gehustet. Der Schleim kam nicht raus. Bevor du ihre Atmung beobachtest: Was genau suchst du? Welche Zeichen könnten auf eine Lungenentzündung hinweisen?",
     kerntext:
-      "**Pneumonie-Frühzeichen bei der Atembeobachtung:**\n\n• **Sputum-Farbe** ist der wichtigste ambulante Früh-Indikator. Weiss-klar = normal bei COPD. **Gelb-grün = Infektverdacht** → Arzt informieren. Rostig-schaumig = Lungenbeteiligung/Ödem.\n\n• **Atemfreqünz** >20/Min (Tachypnoe) — nicht nur bei Belastung, auch in Ruhe prüfen. Bei Frau Kovac mit COPD III ist die Baseline schon erhöhter als bei Gesunden.\n\n• **Rasselgeräusche** bei der Ausatmung — du hörst sie ohne Stethoskop wenn die Sekretansammlung stark genug ist.\n\n• **Fieber fehlt oft bei aelteren Menschen** — stattdessen: Verwirrtheit, Appetitlosigkeit, erhöhte Sturzneigung. Bei Frau Kovac: War die \"Unruhe\" von gestern Abend ein Frühzeichen?\n\n• **Ambulanter Zusatz:** Zwischen den Besuchen kann sich eine Pneumonie entwickeln, ohne dass es jemand sieht. Deshalb: Angehörige (Darko bei Telefonaten) und Patientin selbst instruieren — auf Fieber, veränderten Schleim, Atemnot achten.\n\nQuelle: (AWMF S3 2017; GOLD 2023; KRINKO 2013)",
+      "**Pneumonie-Frühzeichen bei der Atembeobachtung:**\n\n• **Sputum-Farbe** ist der wichtigste ambulante Früh-Indikator. Weiss-klar = normal bei COPD. **Gelb-grün = Infektverdacht** → Arzt informieren. Rostig-schaumig = Lungenbeteiligung/Ödem.\n\n• **Atemfrequenz** >20/Min (Tachypnoe) — nicht nur bei Belastung, auch in Ruhe prüfen. Bei Frau Kovac mit COPD III ist die Baseline schon erhöhter als bei Gesunden.\n\n• **Rasselgeräusche** bei der Ausatmung — du hörst sie ohne Stethoskop wenn die Sekretansammlung stark genug ist.\n\n• **Fieber fehlt oft bei aelteren Menschen** — stattdessen: Verwirrtheit, Appetitlosigkeit, erhöhte Sturzneigung. Bei Frau Kovac: War die \"Unruhe\" von gestern Abend ein Frühzeichen?\n\n• **Ambulanter Zusatz:** Zwischen den Besuchen kann sich eine Pneumonie entwickeln, ohne dass es jemand sieht. Deshalb: Angehörige (Darko bei Telefonaten) und Patientin selbst instruieren — auf Fieber, veränderten Schleim, Atemnot achten.\n\nQuelle: (AWMF S3 2017; GOLD 2023; KRINKO 2013)",
     kerntextB1:
       "**Worauf achtest du bei der Atmung — um eine Lungenentzündung früh zu erkennen?**\n\n• **Schleim-Farbe** = wichtigstes Zeichen. Weiss = normal. **Gelb-grün = mögliche Infektion** → Arzt informieren.\n\n• **Wie schnell atmet sie?** Mehr als 20 Mal pro Minute in Ruhe = Warnsignal.\n\n• **Hoerst du Rasseln?** Wenn der Schleim in der Lunge liegt, hörst du manchmal ein Rasseln — auch ohne Stethoskop.\n\n• **Kein Fieber heißt nicht gesund.** Ältere Menschen haben oft kein Fieber bei Pneumonie. Stattdessen: Verwirrtheit, kein Appetit, Stürze.\n\n• **Ambulant:** Zwischen den Besuchen kann sich viel ändern. Sag Frau Kovac: Wenn der Schleim gelb wird oder du Fieber hast — Pflegedienst anrufen.",
     faustregel:
@@ -217,8 +217,8 @@ export const CE02_KOVAC_INLINE_02A_PNEUMONIE_ATEMBEOB: ContentStep = {
           "Bei Frau M. ist die Pneumonie schon diagnostiziert — Fieber, erhöhter CRP, rasselnde Atemgeräusche. Bei Kovac suchst du die Frühzeichen, bevor es so weit kommt.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz, Pneumonie-Frühzeichen oft nur Verwirrtheit",
         kurzbeschreibung:
           "Bei Demenz zeigt sich Pneumonie häufig nur als akute Verwirrtheit — kein Fieber, kein Husten. Ältere wie Frau Kovac können ähnlich atypisch reagieren.",
@@ -235,7 +235,7 @@ export const CE02_KOVAC_INLINE_02A_PNEUMONIE_ATEMBEOB: ContentStep = {
       vorderseite:
         "Frau Kovac (COPD III) hustet nachts zähes Sekret. Welche Sputum-Farbe ist ein Alarmsignal — und was tust du dann?",
       rueckseite:
-        "Gelb-grünes Sputum = bakterieller Infektverdacht → Arzt informieren, nicht abwarten. Weiss-klar = normal bei COPD. Rostig-schaumig = Lungenödem-Verdacht. Zusätzlich prüfen: Atemfreqünz (>20/Min Ruhe), Rasselgeräusche, Verwirrtheit (Fieber fehlt bei Älteren oft). Spektrum: Frau M. (Pneumonie manifest), Baür (Demenz: nur Verwirrtheit), Petrov (Aspiration). Faustregel: Schleim-Farbe jeden Morgen prüfen.",
+        "Gelb-grünes Sputum = bakterieller Infektverdacht → Arzt informieren, nicht abwarten. Weiss-klar = normal bei COPD. Rostig-schaumig = Lungenödem-Verdacht. Zusätzlich prüfen: Atemfrequenz (>20/Min Ruhe), Rasselgeräusche, Verwirrtheit (Fieber fehlt bei Älteren oft). Spektrum: Frau M. (Pneumonie manifest), Bauer (Demenz: nur Verwirrtheit), Petrov (Aspiration). Faustregel: Schleim-Farbe jeden Morgen prüfen.",
     },
   },
 };
@@ -283,18 +283,18 @@ export const CE02_KOVAC_INLINE_02B_SCHLAF_PHYSIOLOGIE: ContentStep = {
     kerntext:
       "**Schlaf in 90-Minuten-Zyklen:**\n\nDer Mensch durchläuft pro Nacht **4-6 Schlafzyklen** a 90 Minuten. Jeder Zyklus wechselt zwischen **NREM** (Körper erholt sich) und **REM** (Gehirn verarbeitet).\n\n• **Erste Nachthälfte:** Tiefschlaf (N3) dominiert — körperliche Regeneration.\n• **Zweite Nachthälfte:** REM-Phasen werden länger — Gedächtnis, Traum.\n\n**Bei Frau Kovac (84, COPD III):**\n• Sie schläft gegen 23 Uhr ein → erster Tiefschlaf-Block bis ca. 0:30 Uhr.\n• Erwachen um 2 Uhr = **Ende des 2. Zyklus** — typischer Aufwachzeitpunkt.\n• COPD verstärkt das Problem: nächtliche Hypoxie und Hustenreiz wecken sie genau dann, wenn der Schlaf ohnehin leichter wird.\n• **Melatonin** (Schlafhormon) wird bei Dunkelheit ausgeschüttet, durch **Blaulicht vom Fernseher gehemmt** — Frau Kovacs TV-Ritual verzögert das Einschlafen.\n\nQuelle: (AASM 2020; Borbely 1982; DGSM 2017/2020)",
     kerntextB1:
-      "**Schlaf läuft in Zyklen:**\n\nPro Nacht hat der Mensch **4-6 Schlafzyklen**. Jeder daürt etwa **90 Minuten**.\n\n• **Erste Nachthälfte:** Tiefer Schlaf — der Körper erholt sich.\n• **Zweite Nachthälfte:** Mehr Traumschlaf (REM) — das Gehirn verarbeitet.\n\n**Bei Frau Kovac:**\n• Sie schläft um 23 Uhr ein.\n• Um 2 Uhr wird sie wach — das ist nach dem 2. Zyklus. Das ist ein typischer Aufwachmoment.\n• Ihre Lungenerkrankung (COPD) macht es schlimmer: Nachts wird die Atmung schlechter, der Husten weckt sie.\n• **Melatonin** (Schlaf-Hormon) braucht Dunkelheit. Der **Fernseher** stört — blaüs Licht hemmt Melatonin.",
+      "**Schlaf läuft in Zyklen:**\n\nPro Nacht hat der Mensch **4-6 Schlafzyklen**. Jeder dauert etwa **90 Minuten**.\n\n• **Erste Nachthälfte:** Tiefer Schlaf — der Körper erholt sich.\n• **Zweite Nachthälfte:** Mehr Traumschlaf (REM) — das Gehirn verarbeitet.\n\n**Bei Frau Kovac:**\n• Sie schläft um 23 Uhr ein.\n• Um 2 Uhr wird sie wach — das ist nach dem 2. Zyklus. Das ist ein typischer Aufwachmoment.\n• Ihre Lungenerkrankung (COPD) macht es schlimmer: Nachts wird die Atmung schlechter, der Husten weckt sie.\n• **Melatonin** (Schlaf-Hormon) braucht Dunkelheit. Der **Fernseher** stört — blaüs Licht hemmt Melatonin.",
     faustregel:
       "**Erwachen nach 2-3 Zyklen (3-4,5 Stunden) ist physiologisch.** Bei COPD + Blaulicht wird die Rueckkehr in den Schlaf zum Problem.",
     faustregelB1:
       "Nach 3 bis 4 Stunden aufzuwachen ist normal. Bei COPD und Fernseher wird das Wiedereinschlafen schwer.",
     spektrum: [
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz + Sundowning",
         kurzbeschreibung:
-          "Bei Demenz ist der zirkadiane Rhythmus massiv gestört — Herr Baür ist nachts desorientiert und unruhig. Anderer Mechanismus als bei Kovac, aber ähnliches Ergebnis: kein durchgehender Schlaf.",
+          "Bei Demenz ist der zirkadiane Rhythmus massiv gestört — Herr Bauer ist nachts desorientiert und unruhig. Anderer Mechanismus als bei Kovac, aber ähnliches Ergebnis: kein durchgehender Schlaf.",
       },
       {
         patientName: "Frau Schmidt",
@@ -315,7 +315,7 @@ export const CE02_KOVAC_INLINE_02B_SCHLAF_PHYSIOLOGIE: ContentStep = {
       vorderseite:
         "Frau Kovac schläft um 23 Uhr ein und wacht um 2 Uhr auf. Warum — und welche Rolle spielt der Fernseher?",
       rueckseite:
-        "Erwachen um 2 Uhr = Ende des 2. Schlafzyklus (a 90 Min). Physiologisch normal. Bei COPD: nächtliche Hypoxie + Hustenreiz wecken zusätzlich. Fernseher: Blaulicht hemmt Melatonin-Ausschüttung (Schlafhormon) → verzögertes Einschlafen + gestörter zirkadianer Rhythmus. Spektrum: Baür (Demenz/Sundowning), Schmidt (Schlafapnoe-Risiko), Petrov (neurologisch). Faustregel: Erwachen nach 2-3 Zyklen ist physiologisch — aber COPD + Blaulicht verhindern Wiedereinschlafen.",
+        "Erwachen um 2 Uhr = Ende des 2. Schlafzyklus (a 90 Min). Physiologisch normal. Bei COPD: nächtliche Hypoxie + Hustenreiz wecken zusätzlich. Fernseher: Blaulicht hemmt Melatonin-Ausschüttung (Schlafhormon) → verzögertes Einschlafen + gestörter zirkadianer Rhythmus. Spektrum: Bauer (Demenz/Sundowning), Schmidt (Schlafapnoe-Risiko), Petrov (neurologisch). Faustregel: Erwachen nach 2-3 Zyklen ist physiologisch — aber COPD + Blaulicht verhindern Wiedereinschlafen.",
     },
   },
 };
@@ -364,9 +364,9 @@ export const CE02_KOVAC_INLINE_02C_HARNAUSSCHEIDUNG: ContentStep = {
         "Urin-Normalwerte kennst du von Herr Petrov. Bei Frau Kovac ist es anders: Sie trinkt extra wenig, weil sie nicht ständig zur Toilette will. Das Problem: Wenig trinken macht den Schleim in der Lunge zäh. So hängt alles zusammen.",
     },
     storyAufhaenger:
-      "Du nimmst das Trinkprotokoll vom Kuechentisch. 800 ml gestern — deutlich unter dem aerztlichen Zielwert von 1.200 ml. Frau Kovac wird später sagen: \"Ich trink nicht gern viel, weil ich dann daürnd muss.\" Hinter dieser Aussage steckt ein Kreislauf, den du als Pflegekraft durchbrechen kannst.",
+      "Du nimmst das Trinkprotokoll vom Kuechentisch. 800 ml gestern — deutlich unter dem aerztlichen Zielwert von 1.200 ml. Frau Kovac wird später sagen: \"Ich trink nicht gern viel, weil ich dann dauernd muss.\" Hinter dieser Aussage steckt ein Kreislauf, den du als Pflegekraft durchbrechen kannst.",
     storyAufhaengerB1:
-      "800 ml hat Frau Kovac gestern getrunken. Zu wenig. Sie wird später sagen: \"Wenn ich viel trinke, muss ich daürnd auf die Toilette.\" Das ist der Grund warum sie so wenig trinkt.",
+      "800 ml hat Frau Kovac gestern getrunken. Zu wenig. Sie wird später sagen: \"Wenn ich viel trinke, muss ich dauernd auf die Toilette.\" Das ist der Grund warum sie so wenig trinkt.",
     kerntext:
       "**Der Trinkvermeidungs-Kreislauf:**\n\n• Frau Kovac hat **Angst vor Harndrang** — besonders nachts (Nykturie-Angst). Aufstehen im Dunkeln mit Kontrakturen und COPD = Sturzrisiko.\n\n• Deshalb trinkt sie weniger → **konzentrierterer Urin** (dunkelgelb, spez. Gewicht erhöhrt) → reizt die Blasenschleimhaut → paradoxerweise **mehr Harndrang**, nicht weniger.\n\n• Gleichzeitig: weniger Flüssigkeit → **zäheres Sekret** in der Lunge → schwieriger abzuhusten → Pneumonierisiko steigt.\n\n• Normalwert Harnausscheidung: **1.500-2.000 ml/24h**. Bei 800 ml Trinkmenge wird Frau Kovac deutlich darunter liegen — ein Exsikkose-Indikator.\n\n**Pflegerischer Ansatz:** Nicht \"mehr trinken\" befehlen, sondern das Hindernis (Inkontinenzangst) adressieren und die Trinkmenge ueber den Tag verteilen.\n\nQuelle: (DNQP Kontinenzförderung 2014; AWMF S2k 2023)",
     kerntextB1:
@@ -435,11 +435,11 @@ export const CE02_KOVAC_INLINE_03A_SCHLAFHYGIENE: ContentStep = {
     faustregel:
       "**Ein Tipp pro Woche, nicht sechs auf einmal.** Start bei Frau Kovac: Blaulicht reduzieren (TV → Radio).",
     faustregelB1:
-      "Ein Tipp pro Woche reicht. Für Frau Kovac zürst: Radio statt Fernseher.",
+      "Ein Tipp pro Woche reicht. Für Frau Kovac zuerst: Radio statt Fernseher.",
     spektrum: [
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz + Tag-Nacht-Umkehr",
         kurzbeschreibung:
           "Bei Demenz ist die innere Uhr stark gestört. Schlafhygiene hilft wenig — Lichttherapie am Morgen und strukturierter Tagesablauf sind wichtiger.",
@@ -460,7 +460,7 @@ export const CE02_KOVAC_INLINE_03A_SCHLAFHYGIENE: ContentStep = {
       vorderseite:
         "Frau Kovac schaut bis Mitternacht fern, trinkt Abendkaffee um 18:30 und schläft nach dem Mittagessen kurz. Welche 3 Schlafhygiene-Regeln sind für sie am relevantesten?",
       rueckseite:
-        "1. Blaulicht meiden 1-2h vor Schlaf (TV → Radio). 2. Kein Koffein ab 14 Uhr (Abendkaffee streichen oder entkoffeiniert). 3. Tagesschlaf begrenzen auf 20-30 Min. Nicht alles auf einmal — ein Tipp pro Woche. Keine Schlafmittel bei >65 (Beers-Liste AGS 2023: Sturzrisiko + Abhängigkeit). Spektrum: Baür (Demenz, Tag-Nacht-Umkehr), Yilmaz (Schmerz stört Schlaf). Faustregel: Ein Tipp pro Woche, nicht sechs auf einmal.",
+        "1. Blaulicht meiden 1-2h vor Schlaf (TV → Radio). 2. Kein Koffein ab 14 Uhr (Abendkaffee streichen oder entkoffeiniert). 3. Tagesschlaf begrenzen auf 20-30 Min. Nicht alles auf einmal — ein Tipp pro Woche. Keine Schlafmittel bei >65 (Beers-Liste AGS 2023: Sturzrisiko + Abhängigkeit). Spektrum: Bauer (Demenz, Tag-Nacht-Umkehr), Yilmaz (Schmerz stört Schlaf). Faustregel: Ein Tipp pro Woche, nicht sechs auf einmal.",
     },
   },
 };
@@ -505,7 +505,7 @@ export const CE02_KOVAC_INLINE_03B_SMART_AMBULANT: ContentStep = {
       basisBausteinId: "pflegeprozess-schritt-3-ziele-smart",
       basisPatient: "Frau M.",
       vertiefung:
-        "SMART-Ziele kennst du von Frau M. (stationär). In der ambulanten Pflege ist das A (Akzeptiert) besonders kritisch: Du bist Gast in Frau Kovacs Wohnung. Wenn sie dem Ziel nicht zustimmt, kann sie dich bitten zu gehen. Stationär hast du das Team und den Rahmen — ambulant hast du nur dein Wort und ihr Vertraün.",
+        "SMART-Ziele kennst du von Frau M. (stationär). In der ambulanten Pflege ist das A (Akzeptiert) besonders kritisch: Du bist Gast in Frau Kovacs Wohnung. Wenn sie dem Ziel nicht zustimmt, kann sie dich bitten zu gehen. Stationär hast du das Team und den Rahmen — ambulant hast du nur dein Wort und ihr Vertrauen.",
       vertiefungB1:
         "SMART-Ziele kennst du von Frau M. im Krankenhaus. Ambulant ist das A (Akzeptiert) noch wichtiger: Frau Kovac muss dem Ziel zustimmen. Wenn sie Nein sagt, kannst du sie nicht zwingen — du bist in ihrer Wohnung.",
     },
@@ -525,7 +525,7 @@ export const CE02_KOVAC_INLINE_03B_SMART_AMBULANT: ContentStep = {
       vorderseite:
         "Warum ist das A (Akzeptiert) in SMART-Zielen ambulant noch wichtiger als stationär?",
       rueckseite:
-        "Ambulant ist die Patientin 23h/Tag allein. Ziele müssen ohne Pflegekraft funktionieren. Stationär gibt es das Team, ambulant nur das Vertraün. Frau Kovac lehnt Strümpfe ab — ein Ziel gegen ihren Willen ist wirkungslos. Faustregel: Ambulante SMART-Ziele müssen ohne dich funktionieren. Bei Frau M. (stationär) war das A weniger kritisch — dort war das Team permanent anwesend.",
+        "Ambulant ist die Patientin 23h/Tag allein. Ziele müssen ohne Pflegekraft funktionieren. Stationär gibt es das Team, ambulant nur das Vertrauen. Frau Kovac lehnt Strümpfe ab — ein Ziel gegen ihren Willen ist wirkungslos. Faustregel: Ambulante SMART-Ziele müssen ohne dich funktionieren. Bei Frau M. (stationär) war das A weniger kritisch — dort war das Team permanent anwesend.",
     },
   },
 };
@@ -721,7 +721,7 @@ export const CE02_KOVAC_INLINE_05A_EVALUATION_REGELKREIS: ContentStep = {
     storyAufhaengerB1:
       "Du bist zum Abendbesuch da. Heute Morgen hast du Ziele vereinbart. Was ist in den 10 Stunden passiert, als du nicht da warst?",
     kerntext:
-      "**Evaluation ambulant — 3 Besonderheiten:**\n\n• **Lueckenhafte Daten:** Du warst 45 Min morgens da. Was dazwischen passiert ist, weisst du nur aus dem Trinkprotokoll und Frau Kovacs Erzählung. Das ist weniger als stationär — aber es ist, was du hast.\n\n• **Soll-Ist mit Vorsicht:** \"2 von 3 Bechern geleert\" = 680 ml bis 18:30 Uhr. Ziel: 1.200 ml/Tag. Auf den ersten Blick: nicht erreicht. Aber: 680 ml bis 18:30 ist mehr als gestern (800 ml den ganzen Tag). Die Richtung stimmt — und das zählt.\n\n• **Regelkreis-Konseqünz:** Teilweise erreicht → Maßnahme nicht abbrechen, sondern anpassen. Morgen: 4. Becher hinstellen statt 3. Tee anbieten statt Wasser (Frau Kovac mag Tee). Ziel bleibt 1.200 ml — der Weg aendert sich.\n\n**Evaluation ist keine Erfolgskontrolle** — sie ist Datenerhebung für den nächsten Plan.\n\nQuelle: (Fiechter/Meier 1981; DNQP 2017/2024)",
+      "**Evaluation ambulant — 3 Besonderheiten:**\n\n• **Lueckenhafte Daten:** Du warst 45 Min morgens da. Was dazwischen passiert ist, weisst du nur aus dem Trinkprotokoll und Frau Kovacs Erzählung. Das ist weniger als stationär — aber es ist, was du hast.\n\n• **Soll-Ist mit Vorsicht:** \"2 von 3 Bechern geleert\" = 680 ml bis 18:30 Uhr. Ziel: 1.200 ml/Tag. Auf den ersten Blick: nicht erreicht. Aber: 680 ml bis 18:30 ist mehr als gestern (800 ml den ganzen Tag). Die Richtung stimmt — und das zählt.\n\n• **Regelkreis-Konsequnz:** Teilweise erreicht → Maßnahme nicht abbrechen, sondern anpassen. Morgen: 4. Becher hinstellen statt 3. Tee anbieten statt Wasser (Frau Kovac mag Tee). Ziel bleibt 1.200 ml — der Weg aendert sich.\n\n**Evaluation ist keine Erfolgskontrolle** — sie ist Datenerhebung für den nächsten Plan.\n\nQuelle: (Fiechter/Meier 1981; DNQP 2017/2024)",
     kerntextB1:
       "**Evaluation ambulant — 3 Punkte:**\n\n• **Du warst nicht den ganzen Tag da.** Du weisst nur was im Protokoll steht und was Frau Kovac erzählt.\n\n• **Vergleich Ziel und Realität:** 680 ml bis 18:30 — Ziel ist 1.200 ml. Nicht erreicht? Stimmt. Aber gestern war es 800 ml den ganzen Tag. Es geht in die richtige Richtung.\n\n• **Was jetzt?** Morgen: Einen Becher mehr hinstellen. Tee anbieten statt nur Wasser. Das Ziel bleibt — der Weg aendert sich.\n\nEvaluation heißt nicht: geschafft oder nicht geschafft. Es heißt: Was muss ich morgen anders machen?",
     faustregel:
@@ -781,7 +781,7 @@ export const CE02_KOVAC_INLINE_01C_RISIKEN_UEBERBLICK: ContentStep = {
     storyAufhaengerB1:
       "Frau Kovac hat drei grosse Risiken: Ihre Gelenke können steif werden. Sie kann ein Blutgerinnsel bekommen. Und sie trinkt zu wenig. Alles hängt zusammen.",
     kerntext:
-      "**Drei Risiken bei Frau Kovac:**\n\n• **Kontraktur** = Versteifung eines Gelenks durch daürhafte Fehlstellung. Frau Kovac sitzt den ganzen Tag mit angewinkelten Knien. Das Kniegelenk wird kürzer, das Strecken wird unmöglich. Ohne Bewegung → irreversible Kontraktur in Wochen.\n\n• **Thrombose** = Blutgerinnsel in einer tiefen Vene, meist Bein. Frau Kovac: Sitzt viel (Stase), trinkt wenig (Haemokonzentration), bewegt die Beine kaum (fehlende Wadenmuskelpumpe). Kompressionsstrümpfe verweigert → Risiko erhöhrt.\n\n• **Trinkprotokoll** = systematische Erfassung der Trinkmenge ueber 24h. Zeigt: Wie viel trinkt sie wirklich? (Nicht: \"Ich trinke genug\" — sondern messbar.) Bei Frau Kovac: Gestern 800 ml (Bedarf: mind. 1.200 ml).\n\n• **Hausrecht:** In der ambulanten Pflege bist du Gast. Frau Kovac entscheidet, was in ihrer Wohnung passiert. Du darfst beraten, empfehlen, dokumentieren — aber nicht gegen ihren Willen handeln.\n\nQuelle: (AWMF S3 Thrombose 2022; DNQP Kontraktur 2024)",
+      "**Drei Risiken bei Frau Kovac:**\n\n• **Kontraktur** = Versteifung eines Gelenks durch dauerhafte Fehlstellung. Frau Kovac sitzt den ganzen Tag mit angewinkelten Knien. Das Kniegelenk wird kürzer, das Strecken wird unmöglich. Ohne Bewegung → irreversible Kontraktur in Wochen.\n\n• **Thrombose** = Blutgerinnsel in einer tiefen Vene, meist Bein. Frau Kovac: Sitzt viel (Stase), trinkt wenig (Haemokonzentration), bewegt die Beine kaum (fehlende Wadenmuskelpumpe). Kompressionsstrümpfe verweigert → Risiko erhöhrt.\n\n• **Trinkprotokoll** = systematische Erfassung der Trinkmenge ueber 24h. Zeigt: Wie viel trinkt sie wirklich? (Nicht: \"Ich trinke genug\" — sondern messbar.) Bei Frau Kovac: Gestern 800 ml (Bedarf: mind. 1.200 ml).\n\n• **Hausrecht:** In der ambulanten Pflege bist du Gast. Frau Kovac entscheidet, was in ihrer Wohnung passiert. Du darfst beraten, empfehlen, dokumentieren — aber nicht gegen ihren Willen handeln.\n\nQuelle: (AWMF S3 Thrombose 2022; DNQP Kontraktur 2024)",
     kerntextB1:
       "**Drei grosse Risiken:**\n\n• **Kontraktur** = Gelenk wird steif. Frau Kovac sitzt immer mit angewinkelten Knien. Ohne Bewegung wird das Knie irgendwann steif — dann kann sie gar nicht mehr gehen.\n\n• **Thrombose** = Blutgerinnsel im Bein. Sie sitzt viel + trinkt wenig + bewegt die Beine nicht = gefährlich. Strümpfe helfen — aber sie will keine.\n\n• **Trinkprotokoll** = Aufschreiben wie viel sie trinkt. Gestern: 800 ml. Das ist zu wenig (Minimum: 1.200 ml).\n\n• **Hausrecht**: Du bist Gast bei Frau Kovac. Du darfst beraten — aber sie entscheidet.",
     faustregel:
@@ -790,11 +790,11 @@ export const CE02_KOVAC_INLINE_01C_RISIKEN_UEBERBLICK: ContentStep = {
       "Wenig Bewegung + wenig Trinken + keine Strümpfe = drei Gefahren gleichzeitig. Du berätst — Frau Kovac entscheidet.",
     spektrum: [
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Kontraktur bei Bettlägerigkeit",
         kurzbeschreibung:
-          "Bei Herr Baür droht Kontraktur durch Bettlägerigkeit. Bei Frau Kovac durch daürhaftes Sitzen — anderer Mechanismus, gleiches Ergebnis.",
+          "Bei Herr Bauer droht Kontraktur durch Bettlägerigkeit. Bei Frau Kovac durch dauerhaftes Sitzen — anderer Mechanismus, gleiches Ergebnis.",
       },
       {
         patientName: "Frau Yilmaz",
@@ -929,7 +929,7 @@ export const CE02_KOVAC_INLINE_02E_KONTRAKTUR_GELENKE: ContentStep = {
     storyAufhaengerB1:
       "Frau Kovacs rechtes Knie geht nicht ganz gerade. \"Das war schon immer so\", sagt sie. Stimmt das — oder wird es schlimmer?",
     kerntext:
-      "**Kontraktur — wenn Gelenke steif werden:**\n\n• **Kontraktur** = daürhafte Bewegungseinschränkung eines Gelenks durch Verkürzung von Muskeln, Sehnen oder Gelenkkapsel. Entsteht durch anhaltende Immobilität in einer Position.\n\n• **Flexionskontraktur** am Knie: Das Knie bleibt in Beugestellung, vollständige Streckung ist nicht mehr möglich. Frau Kovacs Sessel-Position (Knie immer angewinkelt) fördert genau das.\n\n• **Extensionsdefizit** = die fehlenden Grade bei der Streckung. Messung: Vollständige Streckung = 0°. Frau Kovacs Defizit: z.B. -15° → sie kann das Knie nur bis 15° vor der vollen Streckung bringen.\n\n• **VAS** (Visülle Analogskala): Schmerzmessung 0-10. Bei Frau Kovac (kognitiv intakt, sprachfähig) geeigneter als NRS. DNQP Schmerzmanagement (2020): Systematisches Schmerzassessment = Pflicht bei jeder Mobilisation.\n\n• **Atemhilfsmuskulatur**: Bei COPD nutzt Frau Kovac Hals- und Schultermuskeln zum Atmen (sichtbare Einziehungen, hochgezogene Schultern). Beachte: Verspannte Schultermuskulatur durch Atemhilfsmuskulatur-Einsatz kann Kontrakturrisiko im Schultergelenk erhöhen.\n\nQuelle: (DNQP Schmerzmanagement 2020; AWMF S2k 2024)",
+      "**Kontraktur — wenn Gelenke steif werden:**\n\n• **Kontraktur** = dauerhafte Bewegungseinschränkung eines Gelenks durch Verkürzung von Muskeln, Sehnen oder Gelenkkapsel. Entsteht durch anhaltende Immobilität in einer Position.\n\n• **Flexionskontraktur** am Knie: Das Knie bleibt in Beugestellung, vollständige Streckung ist nicht mehr möglich. Frau Kovacs Sessel-Position (Knie immer angewinkelt) fördert genau das.\n\n• **Extensionsdefizit** = die fehlenden Grade bei der Streckung. Messung: Vollständige Streckung = 0°. Frau Kovacs Defizit: z.B. -15° → sie kann das Knie nur bis 15° vor der vollen Streckung bringen.\n\n• **VAS** (Visuelle Analogskala): Schmerzmessung 0-10. Bei Frau Kovac (kognitiv intakt, sprachfähig) geeigneter als NRS. DNQP Schmerzmanagement (2020): Systematisches Schmerzassessment = Pflicht bei jeder Mobilisation.\n\n• **Atemhilfsmuskulatur**: Bei COPD nutzt Frau Kovac Hals- und Schultermuskeln zum Atmen (sichtbare Einziehungen, hochgezogene Schultern). Beachte: Verspannte Schultermuskulatur durch Atemhilfsmuskulatur-Einsatz kann Kontrakturrisiko im Schultergelenk erhöhen.\n\nQuelle: (DNQP Schmerzmanagement 2020; AWMF S2k 2024)",
     kerntextB1:
       "**Was ist eine Kontraktur?**\n\n• Ein Gelenk wird steif, weil es zu lange in einer Position war. Frau Kovacs Knie ist immer angewinkelt (im Sessel). Deshalb wird es steif.\n\n• **Extensionsdefizit** = sie kann das Knie nicht mehr ganz strecken. Es fehlen ein paar Grad.\n\n• **VAS** = Schmerzskala von 0 bis 10. Frage: \"Wie stark ist der Schmerz? 0 = kein Schmerz, 10 = stärkster vorstellbarer Schmerz.\"\n\n• **Atemhilfsmuskulatur** = Bei COPD benutzt Frau Kovac Halsmuskeln zum Atmen. Das siehst du an hochgezogenen Schultern. Das kann auch die Schulter steif machen.",
     faustregel:
@@ -938,11 +938,11 @@ export const CE02_KOVAC_INLINE_02E_KONTRAKTUR_GELENKE: ContentStep = {
       "Gelenke werden steif wenn sie sich nicht bewegen. Immer nach Schmerzen fragen (VAS). Bei COPD: Schultern beobachten.",
     spektrum: [
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Knie-Kontraktur bei Demenz + Bettlägerigkeit",
         kurzbeschreibung:
-          "Herr Baürs Kontraktur ist weiter fortgeschritten — er liegt viel, bewegt die Beine kaum und kann nicht mehr kooperieren. Bei Frau Kovac gibt es noch ein Zeitfenster.",
+          "Herr Bauers Kontraktur ist weiter fortgeschritten — er liegt viel, bewegt die Beine kaum und kann nicht mehr kooperieren. Bei Frau Kovac gibt es noch ein Zeitfenster.",
       },
       {
         patientName: "Herr Petrov",
@@ -956,7 +956,7 @@ export const CE02_KOVAC_INLINE_02E_KONTRAKTUR_GELENKE: ContentStep = {
       vorderseite:
         "Frau Kovacs rechtes Knie lässt sich nicht ganz strecken (-15°). Wie heißt das — und warum ist es bei COPD-Patienten besonders relevant?",
       rueckseite:
-        "Extensionsdefizit = fehlende Grade bei Streckung. Ursache: Flexionskontraktur durch daürhaftes Sitzen mit angewinkelten Knien. Bei COPD: Atemhilfsmuskulatur-Einsatz kann zusätzlich Schulter-Kontraktur begünstigen. VAS bei jeder Mobilisation (DNQP 2020). Messung: 0° = volle Streckung, -15° = 15 Grad fehlen. Ohne Intervention: Defizit nimmt zu → Gehen wird unmöglich. Faustregel: Kontraktur = Immobilität + Zeit + eine Position.",
+        "Extensionsdefizit = fehlende Grade bei Streckung. Ursache: Flexionskontraktur durch dauerhaftes Sitzen mit angewinkelten Knien. Bei COPD: Atemhilfsmuskulatur-Einsatz kann zusätzlich Schulter-Kontraktur begünstigen. VAS bei jeder Mobilisation (DNQP 2020). Messung: 0° = volle Streckung, -15° = 15 Grad fehlen. Ohne Intervention: Defizit nimmt zu → Gehen wird unmöglich. Faustregel: Kontraktur = Immobilität + Zeit + eine Position.",
     },
   },
 };
@@ -1091,11 +1091,11 @@ export const CE02_KOVAC_INLINE_04C_SCHWEIGEPFLICHT: ContentStep = {
       "Erst die Patientin fragen ob du dem Sohn etwas erzählen darfst. Ohne Erlaubnis: nichts sagen.",
     spektrum: [
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Gesetzliche Betreuung = Auskunftsrecht",
         kurzbeschreibung:
-          "Bei Herr Baür ist der Sohn gesetzlicher Betreür → er hat Auskunftsrecht. Bei Frau Kovac hat Darko KEIN Betreuungsrecht — sie ist einwilligungsfähig.",
+          "Bei Herr Bauer ist der Sohn gesetzlicher Betreuer → er hat Auskunftsrecht. Bei Frau Kovac hat Darko KEIN Betreuungsrecht — sie ist einwilligungsfähig.",
       },
       {
         patientName: "Lukas",
@@ -1109,7 +1109,7 @@ export const CE02_KOVAC_INLINE_04C_SCHWEIGEPFLICHT: ContentStep = {
       vorderseite:
         "Frau Kovacs Sohn Darko ruft an und will wissen, ob sie die Strümpfe angezogen hat. Darfst du antworten?",
       rueckseite:
-        "Nein — nicht ohne Einwilligung von Frau Kovac. Schweigepflicht (§ 203 StGB) + DSGVO Art. 9 (Gesundheitsdaten = höchste Schutzstufe). Lösung: Frau Kovac fragen: \"Darf ich Darko erzählen wie es Ihnen geht?\" Bei Ja: erzählen. Bei Nein: \"Herr Kovac, fragen Sie bitte Ihre Mutter selbst.\" Einwilligung dokumentieren. Spektrum: Baür (Betreür = Auskunftsrecht), Lukas (Eltern = Sorgerecht). Faustregel: Erst Patientin fragen, dann reden.",
+        "Nein — nicht ohne Einwilligung von Frau Kovac. Schweigepflicht (§ 203 StGB) + DSGVO Art. 9 (Gesundheitsdaten = höchste Schutzstufe). Lösung: Frau Kovac fragen: \"Darf ich Darko erzählen wie es Ihnen geht?\" Bei Ja: erzählen. Bei Nein: \"Herr Kovac, fragen Sie bitte Ihre Mutter selbst.\" Einwilligung dokumentieren. Spektrum: Bauer (Betreuer = Auskunftsrecht), Lukas (Eltern = Sorgerecht). Faustregel: Erst Patientin fragen, dann reden.",
     },
   },
 };

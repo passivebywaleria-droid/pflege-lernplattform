@@ -32,7 +32,7 @@ export const CE02_LUKAS_INLINE_01A_U_UNTERSUCHUNG: ContentStep = {
   themaPrimaer: "säuglingspflege",
   themenSekundaer: ["pflegeprozess"],
   transition:
-    "Du weisst jetzt, was U-Untersuchungen und STIKO-Impfungen sind. Gleich prüfst du Lukas U-Heft — und erkennst, ob alles aktüll ist.",
+    "Du weisst jetzt, was U-Untersuchungen und STIKO-Impfungen sind. Gleich prüfst du Lukas U-Heft — und erkennst, ob alles aktuell ist.",
   contentC1: {
     title: "U-Untersuchungen und Impfstatus — was du im U-Heft suchst",
     body: "",
@@ -56,7 +56,7 @@ export const CE02_LUKAS_INLINE_01A_U_UNTERSUCHUNG: ContentStep = {
     faustregel:
       "**U-Heft immer prüfen bei Kinderaufnahme.** Fehlende Vorsorgen + fehlende Impfungen = Dokumentationspflicht im Kinderschutz-Screening.",
     faustregelB1:
-      "Bei jedem Kind: U-Heft anschaün. Fehlende Untersuchungen oder Impfungen aufschreiben.",
+      "Bei jedem Kind: U-Heft anschauen. Fehlende Untersuchungen oder Impfungen aufschreiben.",
     spektrum: [
       {
         patientName: "Emilia",
@@ -124,18 +124,18 @@ export const CE02_LUKAS_INLINE_01B_DEESKALATION: ContentStep = {
     kerntext:
       "**Deeskalation — 5 Prinzipien für angespannte Situationen:**\n\n• **1. Eigene Haltung prüfen:** Bist du ruhig? Wenn du selbst angespannt bist, überträgt sich das. Tief durchatmen, offene Körperhaltung, keine verschränkten Arme.\n\n• **2. Zuhören vor Erklären:** Kevin will gehört werden. \"Ich sehe, dass Sie sich Sorgen machen. Was bewegt Sie gerade am meisten?\" — Bevor du dein Thema bringst.\n\n• **3. Validieren, nicht beschwichtigen:** \"Ihre Sorge ist verständlich\" statt \"Beruhigen Sie sich\". Gefühle anerkennen, nicht kleinreden.\n\n• **4. Transparenz:** \"Ich erkläre Ihnen genau, warum wir diese Fragen stellen. Das ist Standard, kein Vorwurf.\" Unklarheit erzeugt Angst, Angst erzeugt Aggression.\n\n• **5. Raumwechsel als Technik:** Wenn es laut wird — ruhig vorschlagen: \"Moechten wir kurz in den Elternraum gehen? Dort können wir in Ruhe sprechen.\" Ortswechsel unterbricht das Erregungsmuster.\n\nQuelle: (ProDeMa 2020; Schulz von Thun 2014)",
     kerntextB1:
-      "**Was tun, wenn jemand laut wird?**\n\n• **Bleib ruhig.** Atme tief durch. Offene Haltung — keine verschränkten Arme.\n• **Zuhören:** Frage zürst: \"Was macht Ihnen Sorgen?\" Lass ihn reden.\n• **Gefühle anerkennen:** \"Ich verstehe, dass Sie sich Sorgen machen.\" Nicht sagen: \"Beruhigen Sie sich!\"\n• **Erklären:** Sag genau warum du die Fragen stellst. \"Das ist Standard. Kein Vorwurf.\"\n• **Raumwechsel:** Wenn es zu laut wird: \"Moechten wir in den Elternraum gehen?\" Ortswechsel hilft.",
+      "**Was tun, wenn jemand laut wird?**\n\n• **Bleib ruhig.** Atme tief durch. Offene Haltung — keine verschränkten Arme.\n• **Zuhören:** Frage zuerst: \"Was macht Ihnen Sorgen?\" Lass ihn reden.\n• **Gefühle anerkennen:** \"Ich verstehe, dass Sie sich Sorgen machen.\" Nicht sagen: \"Beruhigen Sie sich!\"\n• **Erklären:** Sag genau warum du die Fragen stellst. \"Das ist Standard. Kein Vorwurf.\"\n• **Raumwechsel:** Wenn es zu laut wird: \"Moechten wir in den Elternraum gehen?\" Ortswechsel hilft.",
     faustregel:
       "**Zuhören → Validieren → Transparenz.** Nie: \"Beruhigen Sie sich.\" Immer: \"Ich verstehe Ihre Sorge.\"",
     faustregelB1:
       "Erst zuhören. Dann Gefühle anerkennen. Dann erklären. Nie sagen: Beruhigen Sie sich!",
     spektrum: [
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Abwehr bei Demenz",
         kurzbeschreibung:
-          "Bei Herr Baür ist Abwehr Ausdruck von Überforderung und Angst (Demenz). Deeskalation dort: Validation, langsam, Vertrautes nutzen.",
+          "Bei Herr Bauer ist Abwehr Ausdruck von Überforderung und Angst (Demenz). Deeskalation dort: Validation, langsam, Vertrautes nutzen.",
       },
       {
         patientName: "Herr Nguyen",
@@ -189,7 +189,7 @@ export const CE02_LUKAS_INLINE_02A_VERBRUEHUNGSGRAD: ContentStep = {
   transition:
     "Du kannst jetzt die Verbrühungsgrade unterscheiden. Gleich ordnest du Lukas Verbrühung dem richtigen Grad zu.",
   contentC1: {
-    title: "Verbrühungsgrade bei Kindern — Grade, Tiefe, Konseqünzen",
+    title: "Verbrühungsgrade bei Kindern — Grade, Tiefe, Konsequnzen",
     body: "",
     glossarBegriffe: ["Verbrühungsgrad"],
   },
@@ -264,12 +264,12 @@ export const CE02_LUKAS_INLINE_02B_EXSIKKOSE_VITALWERTE: ContentStep = {
   contentC1: {
     title: "Exsikkose, Holliday-Segar und Vitalwerte im Kleinkindalter",
     body: "",
-    glossarBegriffe: ["Exsikkose", "Holliday-Segar-Regel", "Herzfreqünz", "Atemfreqünz", "SpO₂", "Normwerte Kleinkind"],
+    glossarBegriffe: ["Exsikkose", "Holliday-Segar-Regel", "Herzfrequenz", "Atemfrequenz", "SpO₂", "Normwerte Kleinkind"],
   },
   contentB1: {
     title: "Trinkt Lukas genug? Und was ist normal bei einem Kleinkind?",
     body: "",
-    glossarBegriffe: ["Exsikkose", "Herzfreqünz", "Atemfreqünz"],
+    glossarBegriffe: ["Exsikkose", "Herzfrequenz", "Atemfrequenz"],
   },
   inlineWissen: {
     bausteinRef: "säuglingspflege-exsikkose-vitalwerte",
@@ -278,9 +278,9 @@ export const CE02_LUKAS_INLINE_02B_EXSIKKOSE_VITALWERTE: ContentStep = {
     storyAufhaengerB1:
       "Lukas trinkt wenig seit dem Unfall. Sein Mund ist etwas trocken. Am Monitor: HF 142, AF 28, SpO₂ 98 %. Sind diese Werte normal für ein Kind?",
     kerntext:
-      "**Exsikkose bei Kleinkindern:**\n\n• **Exsikkose** (Austrocknung) = Flüssigkeitsverlust > 5 % des Körpergewichts. Bei Kindern gefährlicher als bei Erwachsenen: höherer Wasseranteil (60-75 % KG), schnellerer Umsatz.\n\n• **Zeichen:** Trockene Mundschleimhaut, stehende Hautfalte (am Bauch testen), eingesunkene Fontanelle (bei Säuglingen), wenig Urin, Weinen ohne Tränen.\n\n• **Holliday-Segar-Formel** (Grundflüssigkeitsbedarf/24h):\n  Erste 10 kg: 100 ml/kg → Lukas (13,2 kg): 10 × 100 = 1.000 ml\n  11-20 kg: 50 ml/kg → 3,2 × 50 = 160 ml\n  **Gesamt: 1.160 ml/24h Grundbedarf.** Bei Verbrühung + Fieber: Mehrbedarf 10-20 %.\n\n**Vitalwerte Kleinkind (2-3 Jahre) vs. Erwachsener:**\n\n| Parameter | Kleinkind | Erwachsener |\n|-----------|-----------|-------------|\n| Herzfreqünz | 90-140/min | 60-80/min |\n| Atemfreqünz | 20-30/min | 12-18/min |\n| SpO₂ | ≥95 % | ≥96 % |\n\nLukas: HF 142 = leicht erhöhrt (Schmerz/Stress), AF 28 = normal, SpO₂ 98 % = gut.\n\nQuelle: (Holliday/Segar 1957; Hoehl/Kullick 2019; GNPI 2019)",
+      "**Exsikkose bei Kleinkindern:**\n\n• **Exsikkose** (Austrocknung) = Flüssigkeitsverlust > 5 % des Körpergewichts. Bei Kindern gefährlicher als bei Erwachsenen: höherer Wasseranteil (60-75 % KG), schnellerer Umsatz.\n\n• **Zeichen:** Trockene Mundschleimhaut, stehende Hautfalte (am Bauch testen), eingesunkene Fontanelle (bei Säuglingen), wenig Urin, Weinen ohne Tränen.\n\n• **Holliday-Segar-Formel** (Grundflüssigkeitsbedarf/24h):\n  Erste 10 kg: 100 ml/kg → Lukas (13,2 kg): 10 × 100 = 1.000 ml\n  11-20 kg: 50 ml/kg → 3,2 × 50 = 160 ml\n  **Gesamt: 1.160 ml/24h Grundbedarf.** Bei Verbrühung + Fieber: Mehrbedarf 10-20 %.\n\n**Vitalwerte Kleinkind (2-3 Jahre) vs. Erwachsener:**\n\n| Parameter | Kleinkind | Erwachsener |\n|-----------|-----------|-------------|\n| Herzfrequenz | 90-140/min | 60-80/min |\n| Atemfrequenz | 20-30/min | 12-18/min |\n| SpO₂ | ≥95 % | ≥96 % |\n\nLukas: HF 142 = leicht erhöhrt (Schmerz/Stress), AF 28 = normal, SpO₂ 98 % = gut.\n\nQuelle: (Holliday/Segar 1957; Hoehl/Kullick 2019; GNPI 2019)",
     kerntextB1:
-      "**Trinkt Lukas genug?**\n\n• **Exsikkose** heißt: der Körper hat zu wenig Wasser. Bei Kindern geht das schneller als bei Erwachsenen.\n• **Zeichen:** Trockener Mund, wenig Pipi, klebrige Lippen.\n• **Wie viel braucht Lukas?** Ca. 1.160 ml pro Tag (Holliday-Segar-Formel). Wegen der Verbrühung sogar etwas mehr.\n\n**Was ist normal bei einem Kleinkind?**\n• Herz: 90-140 Schläge/Min (bei Erwachsenen: 60-80). Lukas: 142 = leicht erhöhrt (Schmerz).\n• Atmung: 20-30/Min (bei Erwachsenen: 12-18). Lukas: 28 = normal.\n• Saürstoff: ≥95 %. Lukas: 98 % = gut.",
+      "**Trinkt Lukas genug?**\n\n• **Exsikkose** heißt: der Körper hat zu wenig Wasser. Bei Kindern geht das schneller als bei Erwachsenen.\n• **Zeichen:** Trockener Mund, wenig Pipi, klebrige Lippen.\n• **Wie viel braucht Lukas?** Ca. 1.160 ml pro Tag (Holliday-Segar-Formel). Wegen der Verbrühung sogar etwas mehr.\n\n**Was ist normal bei einem Kleinkind?**\n• Herz: 90-140 Schläge/Min (bei Erwachsenen: 60-80). Lukas: 142 = leicht erhöhrt (Schmerz).\n• Atmung: 20-30/Min (bei Erwachsenen: 12-18). Lukas: 28 = normal.\n• Sauerstoff: ≥95 %. Lukas: 98 % = gut.",
     faustregel:
       "**Kinder-Vitalwerte ≠ Erwachsenen-Werte.** HF 140 bei Kleinkind = normal bis leicht erhöhrt. HF 140 bei Erwachsenem = Alarm.",
     faustregelB1:
@@ -294,11 +294,11 @@ export const CE02_LUKAS_INLINE_02B_EXSIKKOSE_VITALWERTE: ContentStep = {
           "Bei Emilia (6 Wochen) ist die Exsikkose-Gefahr noch grösser — Säuglingen fehlen Reserven schneller. Holliday-Segar: 100 ml/kg für die ersten 10 kg.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Exsikkose bei alten Menschen",
         kurzbeschreibung:
-          "Herr Baür trinkt zu wenig wegen Demenz. Bei Kindern und alten Menschen ist Exsikkose gleich gefährlich — aber aus unterschiedlichen Gründen.",
+          "Herr Bauer trinkt zu wenig wegen Demenz. Bei Kindern und alten Menschen ist Exsikkose gleich gefährlich — aber aus unterschiedlichen Gründen.",
       },
       {
         patientName: "Frau Kovac",
@@ -353,9 +353,9 @@ export const CE02_LUKAS_INLINE_02C_HAEMATOM: ContentStep = {
   inlineWissen: {
     bausteinRef: "säuglingspflege-hämatom-screening",
     storyAufhaenger:
-      "Beim Ausziehen für die Wundversorgung siehst du: Lukas hat einen blaün Fleck am rechten Schienbein und einen kleinen am Stirnrand. Beides typische Stellen für ein aktives 2,5-jähriges Kind. Aber du prüfst trotzdem systematisch — weil das deine Pflicht ist.",
+      "Beim Ausziehen für die Wundversorgung siehst du: Lukas hat einen blauen Fleck am rechten Schienbein und einen kleinen am Stirnrand. Beides typische Stellen für ein aktives 2,5-jähriges Kind. Aber du prüfst trotzdem systematisch — weil das deine Pflicht ist.",
     storyAufhaengerB1:
-      "Lukas hat blaue Flecken am Schienbein und an der Stirn. Ist das normal? Die meisten kleinen Kinder haben blaue Flecken. Trotzdem musst du genau hinschaün.",
+      "Lukas hat blaue Flecken am Schienbein und an der Stirn. Ist das normal? Die meisten kleinen Kinder haben blaue Flecken. Trotzdem musst du genau hinschauen.",
     kerntext:
       "**Haematome bei Kindern — Normal vs. verdächtig:**\n\n• **Typische Lokalisationen** (Spielen, Fallen): Stirn, Schienbein, Knie, Ellenbogen. Kinder ab Laufalter haben fast immer blaue Flecken an vorspringenden Körperstellen.\n\n• **Atypische Lokalisationen** (AWMF S3 2019): Wangen, Ohren, Hals, Oberarme (Innenseite), Rücken, Gesäss, Oberschenkel-Innenseite. Hier entstehen Haematome selten durch Spielen.\n\n• **Formmerkmale:** Fingerabdruck-förmig, streifenförmig (Gurt/Gegenstand), beidseitig symmetrisch → immer dokumentieren und melden.\n\n• **Bei Lukas:** Schienbein + Stirn = typisch für aktives Kleinkind. Kein Handlungsbedarf — aber dokumentieren, weil es Teil des Kinderschutz-Screenings ist.\n\n• **Wichtig:** Du beurteilst nicht, ob Misshandlung vorliegt. Du dokumentierst sachlich und meldest Auffälligkeiten dem Arzt/Kinderschutzbeauftragten.\n\nQuelle: (AWMF S3 Kindesmisshandlung 2019; Hoehl/Kullick 2019)",
     kerntextB1:
@@ -427,7 +427,7 @@ export const CE02_LUKAS_INLINE_03A_FLUESSIGKEIT: ContentStep = {
     storyAufhaengerB1:
       "Lukas trinkt wenig und verliert Flüssigkeit ueber die Wunde. Wie viel braucht er? Und was kommt auf die Wunde?",
     kerntext:
-      "**Flüssigkeitsbedarf bei Verbrühung:**\n\n• **Grundbedarf** (Holliday-Segar): 1.160 ml/24h für 13,2 kg.\n• **Mehrbedarf** durch Verbrühung: + ~10-20 % (erhöhte Perspiratio ueber geschädigte Haut, Schmerz-Stress-Metabolismus, ggf. Fieber). → Ziel: ~1.300-1.400 ml/24h.\n• **Flüssigkeitsbilanz**: Oral + IV vs. Urin (Windel wiegen: 1 g = 1 ml) + Perspiratio.\n\n**Wundauflagen bei Verbrühung Grad 2a:**\n\n• **Feuchte Wundbehandlung** ist Standard (DGV/GNPI 2021): Feuchtes Milieu fördert Epithelialisierung, reduziert Schmerz, schützt vor Austrocknung.\n• **Geeignet:** Fettgaze (Jelonet, Adaptic), Silber-haltige Auflagen (Mepilex Ag), Hydrokolloid bei kleinen Flächern.\n• **NICHT geeignet:** Trockene Kompressen (kleben an der Wunde, Schmerz beim Wechsel), Puder, Hausmittel (Mehl, Zahnpasta).\n• **Verbandwechsel-Freqünz:** Alle 1-2 Tage, bei Kindern: Analgesie VOR dem Wechsel planen.\n\nQuelle: (Holliday/Segar 1957; DGV/GNPI 2021; AWMF 2019)",
+      "**Flüssigkeitsbedarf bei Verbrühung:**\n\n• **Grundbedarf** (Holliday-Segar): 1.160 ml/24h für 13,2 kg.\n• **Mehrbedarf** durch Verbrühung: + ~10-20 % (erhöhte Perspiratio ueber geschädigte Haut, Schmerz-Stress-Metabolismus, ggf. Fieber). → Ziel: ~1.300-1.400 ml/24h.\n• **Flüssigkeitsbilanz**: Oral + IV vs. Urin (Windel wiegen: 1 g = 1 ml) + Perspiratio.\n\n**Wundauflagen bei Verbrühung Grad 2a:**\n\n• **Feuchte Wundbehandlung** ist Standard (DGV/GNPI 2021): Feuchtes Milieu fördert Epithelialisierung, reduziert Schmerz, schützt vor Austrocknung.\n• **Geeignet:** Fettgaze (Jelonet, Adaptic), Silber-haltige Auflagen (Mepilex Ag), Hydrokolloid bei kleinen Flächern.\n• **NICHT geeignet:** Trockene Kompressen (kleben an der Wunde, Schmerz beim Wechsel), Puder, Hausmittel (Mehl, Zahnpasta).\n• **Verbandwechsel-Frequenz:** Alle 1-2 Tage, bei Kindern: Analgesie VOR dem Wechsel planen.\n\nQuelle: (Holliday/Segar 1957; DGV/GNPI 2021; AWMF 2019)",
     kerntextB1:
       "**Wie viel muss Lukas trinken?**\n\n• Grundbedarf: ca. 1.160 ml pro Tag (Holliday-Segar-Formel).\n• Wegen der Verbrühung + Schmerz: etwas mehr, ca. 1.300-1.400 ml.\n• Urin kontrollieren: Windel wiegen (1 Gramm = 1 ml Urin).\n\n**Was kommt auf die Wunde?**\n\n• Feuchte Auflage — das ist der Standard. Fettgaze oder Silber-Auflagen.\n• NICHT: Trockene Kompressen (kleben!), kein Puder, keine Hausmittel.\n• Vor dem Verbandwechsel: Schmerzmittel geben. Kinder haben Angst — Ablenkung nutzen.",
     faustregel:
@@ -598,7 +598,7 @@ export const CE02_LUKAS_INLINE_04B_RAUMWECHSEL: ContentStep = {
       basisBausteinId: "pflegeprozess-deeskalation",
       basisPatient: "Lukas (Phase 1)",
       vertiefung:
-        "In Phase 1 hast du die 5 Deeskalations-Prinzipien gelernt (Zuhören, Validieren, Transparenz). Jetzt kommt Prinzip 5 in der Praxis: Kevin wird laut, Lukas erschrickt. Der **Raumwechsel** unterbricht das Erregungsmuster physisch — neür Raum, neue Atmosphäre, neue Chance für ruhiges Gespräch.",
+        "In Phase 1 hast du die 5 Deeskalations-Prinzipien gelernt (Zuhören, Validieren, Transparenz). Jetzt kommt Prinzip 5 in der Praxis: Kevin wird laut, Lukas erschrickt. Der **Raumwechsel** unterbricht das Erregungsmuster physisch — neuer Raum, neue Atmosphäre, neue Chance für ruhiges Gespräch.",
       vertiefungB1:
         "In Phase 1 hast du gelernt: Zuhören, Gefühle anerkennen, Transparenz. Jetzt wird Kevin laut. Lukas erschrickt. Was tust du? Raumwechsel = den Raum wechseln. Das unterbricht die Situation.",
     },
@@ -607,7 +607,7 @@ export const CE02_LUKAS_INLINE_04B_RAUMWECHSEL: ContentStep = {
     storyAufhaengerB1:
       "Kevin wird laut. Lukas weint. Sandra ist still. Du musst jetzt handeln — schnell und ruhig.",
     kerntext:
-      "**Raumwechsel als Deeskalations-Technik (ProDeMa Stufe 4):**\n\n• **Warum funktioniert es?** Ein Ortswechsel unterbricht das physiologische Erregungsmuster: Puls senkt sich, Tunnelblick löst sich, neue Umgebung ermöglicht Neuorientierung.\n\n• **Formulierung:** Ruhig, bestimmt, nicht als Strafe: \"Herr K., ich sehe, dass Sie sich Sorgen machen. Moechten wir kurz in den Elternraum gehen? Dort können wir in Ruhe sprechen — und Lukas bekommt hier seine Versorgung.\"\n\n• **Kind schützen:** Lukas ist 2,5 — er versteht den Inhalt nicht, aber spürt Lautstärke und Angst. Trennung des Konflikts vom Kind ist primär für das Kindeswohl.\n\n• **Wenn Kevin ablehnt:** Nicht zwingen. Stattdessen: \"Gut, dann sprechen wir hier weiter. Ich erkläre Ihnen alles Schritt für Schritt.\" Deeskalation heißt auch: Akzeptieren wenn der andere Weg nicht geht.\n\n• **Danach:** Gespräch im neün Raum nutzen für: Kinderschutz-Erklärung, Fragen beantworten, Angst ansprechen.\n\nQuelle: (ProDeMa 2020 Stufe 4; Schulz von Thun 2014)",
+      "**Raumwechsel als Deeskalations-Technik (ProDeMa Stufe 4):**\n\n• **Warum funktioniert es?** Ein Ortswechsel unterbricht das physiologische Erregungsmuster: Puls senkt sich, Tunnelblick löst sich, neue Umgebung ermöglicht Neuorientierung.\n\n• **Formulierung:** Ruhig, bestimmt, nicht als Strafe: \"Herr K., ich sehe, dass Sie sich Sorgen machen. Moechten wir kurz in den Elternraum gehen? Dort können wir in Ruhe sprechen — und Lukas bekommt hier seine Versorgung.\"\n\n• **Kind schützen:** Lukas ist 2,5 — er versteht den Inhalt nicht, aber spürt Lautstärke und Angst. Trennung des Konflikts vom Kind ist primär für das Kindeswohl.\n\n• **Wenn Kevin ablehnt:** Nicht zwingen. Stattdessen: \"Gut, dann sprechen wir hier weiter. Ich erkläre Ihnen alles Schritt für Schritt.\" Deeskalation heißt auch: Akzeptieren wenn der andere Weg nicht geht.\n\n• **Danach:** Gespräch im neuen Raum nutzen für: Kinderschutz-Erklärung, Fragen beantworten, Angst ansprechen.\n\nQuelle: (ProDeMa 2020 Stufe 4; Schulz von Thun 2014)",
     kerntextB1:
       "**Raumwechsel — wie geht das?**\n\n• **Warum?** Neür Raum = neue Atmosphäre. Der Stress sinkt.\n• **So sagst du es:** \"Herr K., möchten wir kurz in den Elternraum gehen? Dort können wir in Ruhe reden.\"\n• **Lukas schützen:** Er spürt die Lautstärke. Nimm den Konflikt weg vom Kind.\n• **Wenn Kevin nein sagt:** Zwinge ihn nicht. Sage: \"Gut, dann erkläre ich alles hier.\" Bleib ruhig.",
     faustregel:

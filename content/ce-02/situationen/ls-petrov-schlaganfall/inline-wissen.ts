@@ -59,18 +59,18 @@ export const CE02_PETROV_INLINE_01A_APHASIE: ContentStep = {
       "Herr Petrov versteht alles. Stelle Ja/Nein-Fragen und warte. Achte auf seine Gesten.",
     spektrum: [
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz: Sprache UND Verstehen gestört",
         kurzbeschreibung:
-          "Bei Herr Baür ist nicht nur die Sprachproduktion, sondern auch das Verstehen eingeschränkt. Andere Ursache, andere Kommunikationsstrategie (Validation statt geschlossene Fragen).",
+          "Bei Herr Bauer ist nicht nur die Sprachproduktion, sondern auch das Verstehen eingeschränkt. Andere Ursache, andere Kommunikationsstrategie (Validation statt geschlossene Fragen).",
       },
       {
         patientName: "Frau M.",
         situationsId: "frau-m-nacht-sturz",
         hauptfaktor: "Bagatellisierung: versteht + spricht, verharmlost",
         kurzbeschreibung:
-          "Frau M. hat kein Sprachdefizit — aber kommuniziert trotzdem nicht offen. Andere Kommunikationsbarriere: Angst vor Konseqünzen.",
+          "Frau M. hat kein Sprachdefizit — aber kommuniziert trotzdem nicht offen. Andere Kommunikationsbarriere: Angst vor Konsequnzen.",
       },
       {
         patientName: "Herr Nguyen",
@@ -84,7 +84,7 @@ export const CE02_PETROV_INLINE_01A_APHASIE: ContentStep = {
       vorderseite:
         "Herr Petrov (Broca-Aphasie) sagt: \"Morgen... besser?\" Welche Aphasie-Form liegt vor — und wie kommunizierst du mit ihm?",
       rueckseite:
-        "Broca-Aphasie = motorische Aphasie. Sprachproduktion gestört (Broca-Areal links frontal), Verständnis erhalten. Kommunikation: Geschlossene Ja/Nein-Fragen, Zeit lassen, nonverbale Signale lesen (Nicken, Zeigen, Mimik), Bildkarten/Kommunikationstafel. Nie: Saetze vervollständigen, infantil sprechen, Augenkontakt meiden. Spektrum: Baür (Demenz: Verstehen+Sprechen), Nguyen (Fremdsprache). Faustregel: Broca = versteht alles, spricht wenig.",
+        "Broca-Aphasie = motorische Aphasie. Sprachproduktion gestört (Broca-Areal links frontal), Verständnis erhalten. Kommunikation: Geschlossene Ja/Nein-Fragen, Zeit lassen, nonverbale Signale lesen (Nicken, Zeigen, Mimik), Bildkarten/Kommunikationstafel. Nie: Saetze vervollständigen, infantil sprechen, Augenkontakt meiden. Spektrum: Bauer (Demenz: Verstehen+Sprechen), Nguyen (Fremdsprache). Faustregel: Broca = versteht alles, spricht wenig.",
     },
   },
 };
@@ -145,11 +145,11 @@ export const CE02_PETROV_INLINE_01B_MCA_GUSS: ContentStep = {
           "Frau Yilmaz hat volle Schluckfunktion — ihr Problem ist die Mobilität. Bei Petrov ist es umgekehrt: Schlucken ist das Hauptrisiko.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz, Schluckreflex erhalten, aber Vergessen",
         kurzbeschreibung:
-          "Herr Baür vergisst das Kaün oder schiebt Essen im Mund herum — andere Ursache als bei Petrov (neurologisch vs. kognitiv).",
+          "Herr Bauer vergisst das Kaün oder schiebt Essen im Mund herum — andere Ursache als bei Petrov (neurologisch vs. kognitiv).",
       },
       {
         patientName: "Emilia",
@@ -163,7 +163,7 @@ export const CE02_PETROV_INLINE_01B_MCA_GUSS: ContentStep = {
       vorderseite:
         "Herr Petrov hat einen MCA-Infarkt links und GUSS Grad 2. Was bedeutet das für die Pflege?",
       rueckseite:
-        "MCA links → kontralaterale Symptome: Hemiparese rechts + Broca-Aphasie. Tag 5: Frühreha-Phase, Neuroplastizität am höchsten. GUSS Grad 2 (Trapl 2007): Breiige Kost möglich, dünne Flüssigkeiten aspirationsgefährlich → andicken. Konseqünzen für alle Pflegemaßnahmen: Mundpflege (Aspirationsschutz), Essen (nur Brei), Medikamentengabe (Tabletten zerkleinern, mit Brei). Faustregel: MCA links = rechts + Sprache. GUSS 2 = Brei ja, dünn nein.",
+        "MCA links → kontralaterale Symptome: Hemiparese rechts + Broca-Aphasie. Tag 5: Frühreha-Phase, Neuroplastizität am höchsten. GUSS Grad 2 (Trapl 2007): Breiige Kost möglich, dünne Flüssigkeiten aspirationsgefährlich → andicken. Konsequnzen für alle Pflegemaßnahmen: Mundpflege (Aspirationsschutz), Essen (nur Brei), Medikamentengabe (Tabletten zerkleinern, mit Brei). Faustregel: MCA links = rechts + Sprache. GUSS 2 = Brei ja, dünn nein.",
     },
   },
 };
@@ -276,7 +276,7 @@ export const CE02_PETROV_INLINE_02A_MOTORIK: ContentStep = {
     storyAufhaengerB1:
       "Herr Petrovs rechter Arm bewegt sich gar nicht. Das rechte Bein bewegt sich etwas — aber langsam und unsicher. Was passiert in seinen Muskeln?",
     kerntext:
-      "**Motorik nach Schlaganfall — 3 Schlüsselbegriffe:**\n\n• **Muskeltonus** = Grundspannung eines Muskels in Ruhe. Bei Hemiparese anfangs oft **hypoton** (schlaff, wie bei Herr Petrovs Arm). Später kann sich **Spastik** entwickeln (erhöhter Tonus, Widerstand bei passiver Bewegung).\n\n• **Dorsalflexion** = Fusspitze Richtung Schienbein anheben. Testet die Funktion des N. peroneus und ist ein Schlüsselindikator für das Gangbild. Herr Petrovs rechter Fuss: Dorsalflexion eingeschränkt → Sturzrisiko bei Mobilisation, Spitzfussgefahr bei fehlender Prophylaxe.\n\n• **MRC-Skala** (0-5): Standardisierte Kraftmessung. 0 = keine Kontraktion, 3 = Bewegung gegen Schwerkraft, 5 = normale Kraft. Bei Petrov: Arm ~1 (Muskelzucken), Bein ~3 (hebt gegen Schwerkraft).\n\n• **Pflege-Konseqünz:** Hypotoner Arm = Subluxationsgefahr im Schultergelenk. Nie am hemiparetischen Arm ziehen. Arm immer unterstützt lagern.\n\nQuelle: (DGN S2e 2021; MRC 1943/2010)",
+      "**Motorik nach Schlaganfall — 3 Schlüsselbegriffe:**\n\n• **Muskeltonus** = Grundspannung eines Muskels in Ruhe. Bei Hemiparese anfangs oft **hypoton** (schlaff, wie bei Herr Petrovs Arm). Später kann sich **Spastik** entwickeln (erhöhter Tonus, Widerstand bei passiver Bewegung).\n\n• **Dorsalflexion** = Fusspitze Richtung Schienbein anheben. Testet die Funktion des N. peroneus und ist ein Schlüsselindikator für das Gangbild. Herr Petrovs rechter Fuss: Dorsalflexion eingeschränkt → Sturzrisiko bei Mobilisation, Spitzfussgefahr bei fehlender Prophylaxe.\n\n• **MRC-Skala** (0-5): Standardisierte Kraftmessung. 0 = keine Kontraktion, 3 = Bewegung gegen Schwerkraft, 5 = normale Kraft. Bei Petrov: Arm ~1 (Muskelzucken), Bein ~3 (hebt gegen Schwerkraft).\n\n• **Pflege-Konsequnz:** Hypotoner Arm = Subluxationsgefahr im Schultergelenk. Nie am hemiparetischen Arm ziehen. Arm immer unterstützt lagern.\n\nQuelle: (DGN S2e 2021; MRC 1943/2010)",
     kerntextB1:
       "**Was passiert nach einem Schlaganfall mit den Muskeln?**\n\n• **Muskeltonus** = wie fest oder schlaff ein Muskel ist. Herr Petrovs rechter Arm ist schlaff (= hypoton). Das Bein hat etwas mehr Spannung.\n\n• **Dorsalflexion** = die Fusspitze nach oben ziehen. Wenn das nicht geht, kann er beim Gehen stolpern. Und der Fuss kann steif werden (Spitzfuss).\n\n• **Kraft messen** mit der MRC-Skala (0-5): 0 = nichts, 5 = normal. Herr Petrovs Arm: 1 (nur Zucken). Bein: 3 (hebt gegen Schwerkraft).\n\n• **Wichtig:** Den schlaffen Arm nie ziehen. Immer unterstützen. Sonst kann die Schulter beschädigt werden.",
     faustregel:
@@ -292,11 +292,11 @@ export const CE02_PETROV_INLINE_02A_MOTORIK: ContentStep = {
           "Bei Frau Yilmaz ist der Muskeltonus normal — die Bewegungseinschränkung kommt von der OP, nicht vom Gehirn.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Kontraktur durch Immobilität bei Demenz",
         kurzbeschreibung:
-          "Herr Baürs Knie-Kontraktur ist Folge von Bewegungsmangel. Bei Petrov droht dasselbe — aber die Ursache ist eine andere (Hemiparese).",
+          "Herr Bauers Knie-Kontraktur ist Folge von Bewegungsmangel. Bei Petrov droht dasselbe — aber die Ursache ist eine andere (Hemiparese).",
       },
     ],
     karteikarte: {
@@ -364,11 +364,11 @@ export const CE02_PETROV_INLINE_02B_DEKUBITUS: ContentStep = {
           "Bei Frau Yilmaz ist der Dekubitus schon da (Kat. II). Bei Herr Petrov willst du verhindern, dass es so weit kommt.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Immobilität bei Demenz",
         kurzbeschreibung:
-          "Herr Baür bewegt sich wenig und vergisst Positionswechsel. Anderes Risikoprofil, gleiches Ergebnis: Dekubitusgefahr.",
+          "Herr Bauer bewegt sich wenig und vergisst Positionswechsel. Anderes Risikoprofil, gleiches Ergebnis: Dekubitusgefahr.",
       },
       {
         patientName: "Herr Nguyen",
@@ -436,11 +436,11 @@ export const CE02_PETROV_INLINE_02C_BILANZIERUNG: ContentStep = {
       "Bilanzierung heißt: Was rein kommt minus was raus kommt. Katheter zeigt die Ausfuhr genau. Aber Herr Petrov trinkt wegen Dysphagie wenig.",
     spektrum: [
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Trinkverweigerung bei Demenz",
         kurzbeschreibung:
-          "Herr Baür vergisst das Trinken oder lehnt es ab. Die Bilanzierung ist schwieriger — kein Katheter, Urin muss geschätzt werden.",
+          "Herr Bauer vergisst das Trinken oder lehnt es ab. Die Bilanzierung ist schwieriger — kein Katheter, Urin muss geschätzt werden.",
       },
       {
         patientName: "Lukas",
@@ -505,7 +505,7 @@ export const CE02_PETROV_INLINE_03A_SMART: ContentStep = {
     kerntext:
       "**SMART-Pflegeziele:**\n\n• **S**pezifisch: Was genau soll erreicht werden? \"Herr Petrov verschluckt sich nicht\" statt \"Patient ist sicher.\"\n• **M**essbar: Woran erkennst du den Erfolg? \"Keine Aspiration bei 3 Mahlzeiten\" statt \"Schlucken verbessert.\"\n• **A**ttraktiv/Akzeptiert: Der Patient trägt es mit. Bei Aphasie: nonverbale Zustimmung einholen (Nicken).\n• **R**ealistisch: Was ist in 24-48h möglich? \"Herr Petrov sitzt 10 Min an der Bettkante\" — nicht \"geht auf den Flur.\"\n• **T**erminiert: Bis wann? \"Innerhalb der nächsten 3 Tage\" — nicht \"irgendwann.\"\n\n**Priorisierung nach ABCDE-Logik:**\n• A (Atemweg) → Aspirationsgefahr = höchste Priorität\n• B (Breathing) → Pneumonieprophylaxe\n• C (Circulation) → Thromboseprophylaxe\n• Dann: Dekubitus, Kontraktur, Mobilisation\n\nQuelle: (Fiechter/Meier 1981; DNQP 2022)",
     kerntextB1:
-      "**Was sind SMART-Ziele?**\n\n• **S** = Genau sagen was du willst. Nicht \"Patient ist sicher\" sondern \"Herr Petrov verschluckt sich nicht.\"\n• **M** = Messbar. Woran erkennst du den Erfolg?\n• **A** = Der Patient stimmt zu (Nicken reicht).\n• **R** = Was ist wirklich möglich? 10 Minuten Bettkante — ja. Auf den Flur gehen — nein.\n• **T** = Bis wann? Innerhalb von 3 Tagen.\n\n**Was zürst?** Verschlucken und Atemnot = am gefährlichsten = zürst. Dann Druckstellen, dann Gelenke.",
+      "**Was sind SMART-Ziele?**\n\n• **S** = Genau sagen was du willst. Nicht \"Patient ist sicher\" sondern \"Herr Petrov verschluckt sich nicht.\"\n• **M** = Messbar. Woran erkennst du den Erfolg?\n• **A** = Der Patient stimmt zu (Nicken reicht).\n• **R** = Was ist wirklich möglich? 10 Minuten Bettkante — ja. Auf den Flur gehen — nein.\n• **T** = Bis wann? Innerhalb von 3 Tagen.\n\n**Was zuerst?** Verschlucken und Atemnot = am gefährlichsten = zuerst. Dann Druckstellen, dann Gelenke.",
     faustregel:
       "**SMART = messbar + realistisch + terminiert.** Priorisierung: Aspirationsgefahr vor Dekubitus vor Kontraktur.",
     faustregelB1:
@@ -558,7 +558,7 @@ export const CE02_PETROV_INLINE_03B_KOERPERPFLEGE: ContentStep = {
       basisBausteinId: "dekubitus-prophylaxe-prädilektionsstellen",
       basisPatient: "Frau Yilmaz",
       vertiefung:
-        "Dekubitus kennst du bereits von Phase 2 (Hautinspektion). Bei der Körperpflege kommt ein neür Aspekt dazu: Jede Lagerungsänderung während des Waschens ist gleichzeitig Druckentlastung und Hautinspektion — du verbindest 3 Maßnahmen in einem Arbeitsschritt.",
+        "Dekubitus kennst du bereits von Phase 2 (Hautinspektion). Bei der Körperpflege kommt ein neuer Aspekt dazu: Jede Lagerungsänderung während des Waschens ist gleichzeitig Druckentlastung und Hautinspektion — du verbindest 3 Maßnahmen in einem Arbeitsschritt.",
       vertiefungB1:
         "Dekubitus hast du in Phase 2 gelernt. Beim Waschen checkst du gleichzeitig die Haut und entlastest den Druck — 3 Sachen auf einmal.",
     },
@@ -567,9 +567,9 @@ export const CE02_PETROV_INLINE_03B_KOERPERPFLEGE: ContentStep = {
     storyAufhaengerB1:
       "Herr Petrov kann sich nicht selbst waschen. Aber das Waschen ist nicht nur Hygiene — es ist auch Therapie.",
     kerntext:
-      "**Körperpflege nach Bobath-Prinzip:**\n\n• **Gesunde Seite fördert die betroffene:** Du waeSchst von der gesunden (linken) Seite her — und baust die betroffene (rechte) Seite aktiv ein. Herr Petrov kann mit links den rechten Arm halten.\n\n• **Hautinspektion integriert:** Bei jedem Drehen prüfst du: Roetung? Druckstelle? Feuchtstellen? Prädilektionsstellen systematisch abarbeiten.\n\n• **Reihenfolge berücksichtigen:** Von kranial nach kaudal, Intimbereich zuletzt (Hygienerichtung).\n\n• **Schulter schützen:** Beim Drehen auf die betroffene Seite: Arm zürst auf ein Kissen lagern, dann drehen. Nie am hemiparetischen Arm ziehen.\n\n• **Förderung der Wahrnehmung:** Waschbewegungen auf der betroffenen Seite bewusst langsam — der Patient soll die Körperseite wieder \"spüren\" (sensorische Stimulation).\n\nQuelle: (IBITA/Bobath 2017; DGN S2e 2021)",
+      "**Körperpflege nach Bobath-Prinzip:**\n\n• **Gesunde Seite fördert die betroffene:** Du waeSchst von der gesunden (linken) Seite her — und baust die betroffene (rechte) Seite aktiv ein. Herr Petrov kann mit links den rechten Arm halten.\n\n• **Hautinspektion integriert:** Bei jedem Drehen prüfst du: Roetung? Druckstelle? Feuchtstellen? Prädilektionsstellen systematisch abarbeiten.\n\n• **Reihenfolge berücksichtigen:** Von kranial nach kaudal, Intimbereich zuletzt (Hygienerichtung).\n\n• **Schulter schützen:** Beim Drehen auf die betroffene Seite: Arm zuerst auf ein Kissen lagern, dann drehen. Nie am hemiparetischen Arm ziehen.\n\n• **Förderung der Wahrnehmung:** Waschbewegungen auf der betroffenen Seite bewusst langsam — der Patient soll die Körperseite wieder \"spüren\" (sensorische Stimulation).\n\nQuelle: (IBITA/Bobath 2017; DGN S2e 2021)",
     kerntextB1:
-      "**Waschen bei Hemiparese — worauf achtest du?**\n\n• **Gesunde Seite zürst**, dann betroffene Seite. Herr Petrov kann mit der linken Hand helfen.\n• **Haut prüfen** beim Drehen: Rote Stellen? Druckstellen?\n• **Schulter schützen:** Nie am rechten Arm ziehen! Erst Arm auf Kissen legen, dann drehen.\n• **Langsam waschen** auf der rechten Seite — damit er die Körperseite wieder spürt.",
+      "**Waschen bei Hemiparese — worauf achtest du?**\n\n• **Gesunde Seite zuerst**, dann betroffene Seite. Herr Petrov kann mit der linken Hand helfen.\n• **Haut prüfen** beim Drehen: Rote Stellen? Druckstellen?\n• **Schulter schützen:** Nie am rechten Arm ziehen! Erst Arm auf Kissen legen, dann drehen.\n• **Langsam waschen** auf der rechten Seite — damit er die Körperseite wieder spürt.",
     faustregel:
       "**Körperpflege bei Hemiparese = Therapie, Inspektion und Hygiene in einem.** Schulter schützen, betroffene Seite einbeziehen.",
     faustregelB1:
@@ -627,9 +627,9 @@ export const CE02_PETROV_INLINE_04A_FRUEHMOBILISATION: ContentStep = {
     storyAufhaengerB1:
       "Herr Petrov ist seit 5 Tagen im Krankenhaus. Die Ärzte sagen: Er soll sich jetzt bewegen. Aber wie viel darf er?",
     kerntext:
-      "**Frühmobilisation nach Schlaganfall:**\n\n• **Definition:** Erste aktive Lagewechsel und Sitzversuche innerhalb der ersten Tage nach dem Schlaganfall — früher galt 24h, nach AVERT-Studie (2015): **nicht zu früh und nicht zu intensiv**. Standard: ab 24-48h, schrittweise.\n\n• **Stufenschema:** 1) Kopfteil erhöhen → 2) Bettkante sitzen → 3) Stehen am Bett → 4) Transfer in Stuhl → 5) Gehen mit Unterstützung. Herr Petrov: aktüll Stufe 2 (Bettkante).\n\n• **RR-Kontrolle:** Vor dem Aufsetzen RR messen (liegend). Nach 1-3 Min Sitzen: erneut. Abbruch bei: systolisch >180 oder <100 mmHg, Schwindel, Übelkeit, Bewusstseinstrübung.\n\n• **Hemiparese beachten:** Patient sitzt auf der betroffenen Seite gewöhnt sich an das Gewicht. Fuss der betroffenen Seite steht fest auf dem Boden. Oberer Arm auf Kissen oder Tisch gestützt (Subluxationsschutz).\n\n• **Zeitlimit:** Bei Erstmobilisation: 5-10 Min Bettkante. Bei Herr Petrov (Tag 5): 8-12 Min realistisch.\n\nQuelle: (DGN S2e 2021; AVERT/Bernhardt 2015)",
+      "**Frühmobilisation nach Schlaganfall:**\n\n• **Definition:** Erste aktive Lagewechsel und Sitzversuche innerhalb der ersten Tage nach dem Schlaganfall — früher galt 24h, nach AVERT-Studie (2015): **nicht zu früh und nicht zu intensiv**. Standard: ab 24-48h, schrittweise.\n\n• **Stufenschema:** 1) Kopfteil erhöhen → 2) Bettkante sitzen → 3) Stehen am Bett → 4) Transfer in Stuhl → 5) Gehen mit Unterstützung. Herr Petrov: aktuell Stufe 2 (Bettkante).\n\n• **RR-Kontrolle:** Vor dem Aufsetzen RR messen (liegend). Nach 1-3 Min Sitzen: erneut. Abbruch bei: systolisch >180 oder <100 mmHg, Schwindel, Übelkeit, Bewusstseinstrübung.\n\n• **Hemiparese beachten:** Patient sitzt auf der betroffenen Seite gewöhnt sich an das Gewicht. Fuss der betroffenen Seite steht fest auf dem Boden. Oberer Arm auf Kissen oder Tisch gestützt (Subluxationsschutz).\n\n• **Zeitlimit:** Bei Erstmobilisation: 5-10 Min Bettkante. Bei Herr Petrov (Tag 5): 8-12 Min realistisch.\n\nQuelle: (DGN S2e 2021; AVERT/Bernhardt 2015)",
     kerntextB1:
-      "**Wann und wie mobilisieren?**\n\n• **Ab Tag 1-2** nach Schlaganfall — aber langsam und vorsichtig.\n• **Schritt für Schritt:** Erst Kopf hoch → dann Bettkante sitzen → dann Stuhl → dann Gehen. Herr Petrov: Bettkante ist das Ziel für heute.\n• **Blutdruck prüfen:** Vor dem Aufsetzen und danach. Wenn Schwindel oder Übelkeit → Abbruch.\n• **Rechten Arm schützen:** Auf Kissen stützen. Nicht hängen lassen.\n• **Daür:** 5-10 Minuten. Wenn er es schafft: toll. Wenn nicht: trotzdem ein Erfolg.",
+      "**Wann und wie mobilisieren?**\n\n• **Ab Tag 1-2** nach Schlaganfall — aber langsam und vorsichtig.\n• **Schritt für Schritt:** Erst Kopf hoch → dann Bettkante sitzen → dann Stuhl → dann Gehen. Herr Petrov: Bettkante ist das Ziel für heute.\n• **Blutdruck prüfen:** Vor dem Aufsetzen und danach. Wenn Schwindel oder Übelkeit → Abbruch.\n• **Rechten Arm schützen:** Auf Kissen stützen. Nicht hängen lassen.\n• **Dauer:** 5-10 Minuten. Wenn er es schafft: toll. Wenn nicht: trotzdem ein Erfolg.",
     faustregel:
       "**Frühmobilisation = ab 24-48h, stufenweise, RR-kontrolliert.** Bettkante vor Stehen, Stehen vor Gehen.",
     faustregelB1:
@@ -654,7 +654,7 @@ export const CE02_PETROV_INLINE_04A_FRUEHMOBILISATION: ContentStep = {
       vorderseite:
         "Herr Petrov (Tag 5 post-Apoplex) soll an die Bettkante. Wie mobilisierst du — und wann brichst du ab?",
       rueckseite:
-        "Frühmobilisation ab 24-48h, stufenweise (AVERT 2015). Stufenschema: Kopfteil→Bettkante→Stehen→Stuhl→Gehen. RR vorher + nachher. Abbruch bei: RR >180/<100, Schwindel, Übelkeit. Hemiparetischer Arm stützen (Subluxationsschutz). Daür: 8-12 Min Tag 5. Faustregel: Bettkante vor Stehen, Stehen vor Gehen.",
+        "Frühmobilisation ab 24-48h, stufenweise (AVERT 2015). Stufenschema: Kopfteil→Bettkante→Stehen→Stuhl→Gehen. RR vorher + nachher. Abbruch bei: RR >180/<100, Schwindel, Übelkeit. Hemiparetischer Arm stützen (Subluxationsschutz). Dauer: 8-12 Min Tag 5. Faustregel: Bettkante vor Stehen, Stehen vor Gehen.",
     },
   },
 };
@@ -700,20 +700,20 @@ export const CE02_PETROV_INLINE_04B_ASPIRATION: ContentStep = {
     storyAufhaengerB1:
       "Herr Petrov hustet manchmal beim Trinken. Das ist ein Warnsignal. Aber es gibt eine noch grössere Gefahr: Manchmal kommt Flüssigkeit in die Lunge OHNE dass er hustet. Das nennt man stille Aspiration.",
     kerntext:
-      "**Stille Aspiration — die unsichtbare Gefahr:**\n\n• **Stille Aspiration** = Material gelangt unter die Stimmritze, ohne Hustenreflex auszulösen. Bei Schlaganfall-Patienten in ~40 % der Dysphagie-Faelle (Daniels 2019).\n\n• **Warum kein Husten?** Der Hustenreflex wird teilweise vom selben Hirnbereich gesteürt wie das Schlucken. Wenn das Schluckzentrum geschädigt ist, kann auch der Schutzreflex ausfallen.\n\n• **Erkennungszeichen:** Feuchte, gurgelnde Stimme nach dem Schlucken (\"wet voice\"). Leichtes Fieber ohne klare Ursache. Sputumveränderung. Saürstoffsättigung sinkt nach Mahlzeiten.\n\n• **Oberkörperhochlagerung** (mind. 30°, besser 45-90°): Schwerkraft hält Material aus den Atemwegen. Gilt für Essen, Trinken, Mundpflege und 30 Min NACH der Mahlzeit.\n\n• **Husten fördern:** Wenn Herr Petrov hustet = Schutzreflex funktioniert = gut. Nicht unterdrücken, sondern abwarten und unterstützen.\n\nQuelle: (AWMF S1 2020; Daniels 2019; Trapl 2007)",
+      "**Stille Aspiration — die unsichtbare Gefahr:**\n\n• **Stille Aspiration** = Material gelangt unter die Stimmritze, ohne Hustenreflex auszulösen. Bei Schlaganfall-Patienten in ~40 % der Dysphagie-Faelle (Daniels 2019).\n\n• **Warum kein Husten?** Der Hustenreflex wird teilweise vom selben Hirnbereich gesteürt wie das Schlucken. Wenn das Schluckzentrum geschädigt ist, kann auch der Schutzreflex ausfallen.\n\n• **Erkennungszeichen:** Feuchte, gurgelnde Stimme nach dem Schlucken (\"wet voice\"). Leichtes Fieber ohne klare Ursache. Sputumveränderung. Sauerstoffsättigung sinkt nach Mahlzeiten.\n\n• **Oberkörperhochlagerung** (mind. 30°, besser 45-90°): Schwerkraft hält Material aus den Atemwegen. Gilt für Essen, Trinken, Mundpflege und 30 Min NACH der Mahlzeit.\n\n• **Husten fördern:** Wenn Herr Petrov hustet = Schutzreflex funktioniert = gut. Nicht unterdrücken, sondern abwarten und unterstützen.\n\nQuelle: (AWMF S1 2020; Daniels 2019; Trapl 2007)",
     kerntextB1:
-      "**Was ist stille Aspiration?**\n\n• Flüssigkeit oder Essen kommt in die Lunge — aber der Patient hustet nicht. Das passiert bei etwa 40 % der Schlaganfall-Patienten mit Schluckstörung.\n\n• **Wie erkennst du es?** Gurgelnde Stimme nach dem Schlucken. Leichtes Fieber. Saürstoff sinkt.\n\n• **Was hilft?** Oberkörper hoch (mindestens 30 Grad, besser 45-90 Grad). Beim Essen, Trinken, Mundpflege — und 30 Minuten danach.\n\n• **Wenn er hustet:** Das ist gut! Der Körper schützt sich. Nicht unterdrücken.",
+      "**Was ist stille Aspiration?**\n\n• Flüssigkeit oder Essen kommt in die Lunge — aber der Patient hustet nicht. Das passiert bei etwa 40 % der Schlaganfall-Patienten mit Schluckstörung.\n\n• **Wie erkennst du es?** Gurgelnde Stimme nach dem Schlucken. Leichtes Fieber. Sauerstoff sinkt.\n\n• **Was hilft?** Oberkörper hoch (mindestens 30 Grad, besser 45-90 Grad). Beim Essen, Trinken, Mundpflege — und 30 Minuten danach.\n\n• **Wenn er hustet:** Das ist gut! Der Körper schützt sich. Nicht unterdrücken.",
     faustregel:
       "**Stille Aspiration = kein Husten heißt nicht kein Verschlucken.** Oberkörper hoch halten — auch 30 Min NACH dem Essen.",
     faustregelB1:
       "Kein Husten heißt nicht: kein Verschlucken. Oberkörper immer hochlagern — auch 30 Minuten nach dem Essen.",
     spektrum: [
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz: Vergisst zu kaün, schiebt Essen im Mund herum",
         kurzbeschreibung:
-          "Bei Herr Baür ist die Ursache kognitiv (vergisst zu schlucken), bei Petrov neurologisch (Schluckreflex gestört). Beide haben Aspirationsrisiko.",
+          "Bei Herr Bauer ist die Ursache kognitiv (vergisst zu schlucken), bei Petrov neurologisch (Schluckreflex gestört). Beide haben Aspirationsrisiko.",
       },
       {
         patientName: "Emilia",
@@ -744,7 +744,7 @@ export const CE02_PETROV_INLINE_04C_SPO2: ContentStep = {
   bloomLevel: 2,
   kompetenzbereich: "I.1",
   quellen: [
-    "AWMF S3-Leitlinie Saürstofftherapie 2020",
+    "AWMF S3-Leitlinie Sauerstofftherapie 2020",
     "GOLD-Report COPD 2023",
   ],
   track: "basis",
@@ -754,16 +754,16 @@ export const CE02_PETROV_INLINE_04C_SPO2: ContentStep = {
   themaPrimaer: "pneumonie-prophylaxe",
   themenSekundaer: ["mobilisation"],
   transition:
-    "Du weisst jetzt, was die Saürstoffsättigung bedeutet und wann du eingreifst. Gleich machst du Atemübungen mit Herr Petrov.",
+    "Du weisst jetzt, was die Sauerstoffsättigung bedeutet und wann du eingreifst. Gleich machst du Atemübungen mit Herr Petrov.",
   contentC1: {
-    title: "Saürstoffsättigung, Pulsoximetrie und Atemwegsobstruktion",
+    title: "Sauerstoffsättigung, Pulsoximetrie und Atemwegsobstruktion",
     body: "",
-    glossarBegriffe: ["Saürstoffsättigung", "Pulsoximeter", "Obstruktion", "Lippenbremse"],
+    glossarBegriffe: ["Sauerstoffsättigung", "Pulsoximeter", "Obstruktion", "Lippenbremse"],
   },
   contentB1: {
     title: "Was zeigt das Pulsoximeter?",
     body: "",
-    glossarBegriffe: ["Saürstoffsättigung", "Pulsoximeter"],
+    glossarBegriffe: ["Sauerstoffsättigung", "Pulsoximeter"],
   },
   inlineWissen: {
     bausteinRef: "pneumonie-prophylaxe-spo2",
@@ -772,9 +772,9 @@ export const CE02_PETROV_INLINE_04C_SPO2: ContentStep = {
     storyAufhaengerB1:
       "Am Finger von Herr Petrov steckt ein kleines Gerät. Es zeigt: 94 %. Gestern war es 97 %. Ist das schlimm?",
     kerntext:
-      "**SpO₂ — Saürstoffsättigung verstehen:**\n\n• **Pulsoximeter** misst den Anteil saürstoffbeladener Haemoglobin-Moleküle im Blut. Messung am Finger (oder Ohrläppchen bei schlechter Peripherie).\n\n• **Normwerte**: 96-99 %. Bei COPD-Patienten kann 88-92 % akzeptabel sein (Vorsicht: Zu viel O₂ kann Atemdrive hemmen). Bei Herr Petrov (kein COPD): <94 % = Aufmerksamkeit, <90 % = sofortiges Handeln.\n\n• **Obstruktion** = Atemwegsverlegung. Kann bei Schlaganfall durch Sekretansammlung (reduzierter Hustenstoss) oder Aspiration entstehen. Zeichen: fallende SpO₂, Stridor, Einziehungen, Unruhe.\n\n• **Lippenbremse bei Petrov**: Obwohl er kein COPD hat, kann die Lippenbremse die Ausatmung verlängern und Sekretmobilisation unterstützen. Technik: Durch die Nase einatmen, gegen leicht geschlossene Lippen ausatmen.\n\n• **Pflege-Konseqünz**: SpO₂ nach jeder Mobilisation und nach Mahlzeiten kontrollieren (stille Aspiration!).\n\nQuelle: (AWMF S3 2020; GOLD 2023)",
+      "**SpO₂ — Sauerstoffsättigung verstehen:**\n\n• **Pulsoximeter** misst den Anteil sauerstoffbeladener Haemoglobin-Moleküle im Blut. Messung am Finger (oder Ohrläppchen bei schlechter Peripherie).\n\n• **Normwerte**: 96-99 %. Bei COPD-Patienten kann 88-92 % akzeptabel sein (Vorsicht: Zu viel O₂ kann Atemdrive hemmen). Bei Herr Petrov (kein COPD): <94 % = Aufmerksamkeit, <90 % = sofortiges Handeln.\n\n• **Obstruktion** = Atemwegsverlegung. Kann bei Schlaganfall durch Sekretansammlung (reduzierter Hustenstoss) oder Aspiration entstehen. Zeichen: fallende SpO₂, Stridor, Einziehungen, Unruhe.\n\n• **Lippenbremse bei Petrov**: Obwohl er kein COPD hat, kann die Lippenbremse die Ausatmung verlängern und Sekretmobilisation unterstützen. Technik: Durch die Nase einatmen, gegen leicht geschlossene Lippen ausatmen.\n\n• **Pflege-Konsequnz**: SpO₂ nach jeder Mobilisation und nach Mahlzeiten kontrollieren (stille Aspiration!).\n\nQuelle: (AWMF S3 2020; GOLD 2023)",
     kerntextB1:
-      "**Was zeigt das Pulsoximeter?**\n\n• Es misst, wie viel Saürstoff im Blut ist. Normalwert: 96-99 %.\n• Bei Herr Petrov: Unter 94 % aufpassen. Unter 90 % sofort handeln (Arzt rufen).\n• **Warum kann es sinken?** Schleim in den Atemwegen, Verschlucken, flache Atmung.\n• **Lippenbremse** hilft: Durch die Nase einatmen, gegen geschlossene Lippen ausatmen. Das hält die Atemwege offen.\n• **Immer kontrollieren** nach dem Essen und nach dem Aufsetzen.",
+      "**Was zeigt das Pulsoximeter?**\n\n• Es misst, wie viel Sauerstoff im Blut ist. Normalwert: 96-99 %.\n• Bei Herr Petrov: Unter 94 % aufpassen. Unter 90 % sofort handeln (Arzt rufen).\n• **Warum kann es sinken?** Schleim in den Atemwegen, Verschlucken, flache Atmung.\n• **Lippenbremse** hilft: Durch die Nase einatmen, gegen geschlossene Lippen ausatmen. Das hält die Atemwege offen.\n• **Immer kontrollieren** nach dem Essen und nach dem Aufsetzen.",
     faustregel:
       "**SpO₂ <94 % = aufmerksam werden. <90 % = sofort handeln.** Nach Mahlzeiten und Mobilisation kontrollieren.",
     faustregelB1:
@@ -912,18 +912,18 @@ export const CE02_PETROV_INLINE_05A_EVALUATION: ContentStep = {
     storyAufhaengerB1:
       "Gestern sass Herr Petrov 5 Minuten an der Bettkante. Heute 8 Minuten. Ist das ein Fortschritt? Wie misst du das?",
     kerntext:
-      "**Evaluation bei Schlaganfall:**\n\n• **Evaluation** = Soll-Ist-Vergleich im Pflegeprozess (Fiechter/Meier 1981). Das Ziel (SMART formuliert) wird mit dem tatsächlichen Ergebnis verglichen.\n\n• **MRC-Skala** (0-5) für Kraftmessung:\n  0 = keine Kontraktion\n  1 = Muskelzucken, keine Bewegung\n  2 = Bewegung ohne Schwerkraft (auf der Unterlage gleiten)\n  3 = Bewegung gegen Schwerkraft (Bein heben)\n  4 = Bewegung gegen Widerstand\n  5 = normale Kraft\n\n• **Proaktiv evaluieren** = nicht warten bis jemand fragt. Du dokumentierst jeden messbaren Fortschritt: Bettkanten-Zeit, Dorsalflexion (ja/nein/teilweise), Armfunktion, Schluckversuch-Ergebnis.\n\n• **Konseqünz:** Ziel erreicht → beibehalten oder steigern. Teilweise erreicht → Maßnahme anpassen. Nicht erreicht → Ursache analysieren, neüs Vorgehen.\n\nQuelle: (Fiechter/Meier 1981; MRC 1943/2010)",
+      "**Evaluation bei Schlaganfall:**\n\n• **Evaluation** = Soll-Ist-Vergleich im Pflegeprozess (Fiechter/Meier 1981). Das Ziel (SMART formuliert) wird mit dem tatsächlichen Ergebnis verglichen.\n\n• **MRC-Skala** (0-5) für Kraftmessung:\n  0 = keine Kontraktion\n  1 = Muskelzucken, keine Bewegung\n  2 = Bewegung ohne Schwerkraft (auf der Unterlage gleiten)\n  3 = Bewegung gegen Schwerkraft (Bein heben)\n  4 = Bewegung gegen Widerstand\n  5 = normale Kraft\n\n• **Proaktiv evaluieren** = nicht warten bis jemand fragt. Du dokumentierst jeden messbaren Fortschritt: Bettkanten-Zeit, Dorsalflexion (ja/nein/teilweise), Armfunktion, Schluckversuch-Ergebnis.\n\n• **Konsequnz:** Ziel erreicht → beibehalten oder steigern. Teilweise erreicht → Maßnahme anpassen. Nicht erreicht → Ursache analysieren, neues Vorgehen.\n\nQuelle: (Fiechter/Meier 1981; MRC 1943/2010)",
     kerntextB1:
       "**Wie misst du Fortschritte?**\n\n• **Evaluation** = Ziel mit Ergebnis vergleichen. War das Ziel 10 Minuten Bettkante? Hat er es geschafft?\n• **MRC-Skala**: Kraft messen von 0 (nichts) bis 5 (normal). Gestern Bein MRC 2, heute MRC 3 = Fortschritt!\n• **Proaktiv** = von dir selbst beobachten und aufschreiben, nicht warten bis jemand fragt.\n• **Was dann?** Ziel geschafft → nächsten Schritt planen. Nicht geschafft → anders machen.",
     faustregel:
-      "**Evaluation mit Skalen = objektiv statt \"gefühlt besser\".** MRC-Skala für Kraft, Minuten für Ausdaür, GUSS für Schlucken.",
+      "**Evaluation mit Skalen = objektiv statt \"gefühlt besser\".** MRC-Skala für Kraft, Minuten für Ausdauer, GUSS für Schlucken.",
     faustregelB1:
       "Fortschritt mit Zahlen messen: MRC-Skala für Kraft, Minuten für Bettkante, GUSS für Schlucken.",
     karteikarte: {
       vorderseite:
         "Herr Petrov sass gestern 5 Min, heute 8 Min an der Bettkante. MRC Bein gestern 2, heute 3. Wie evaluierst du?",
       rueckseite:
-        "Evaluation = Soll-Ist-Vergleich (Fiechter/Meier 1981). Bettkante: 8 > 5 Min = Fortschritt. MRC 3 > 2 = Bewegung gegen Schwerkraft neu möglich = messbarer Fortschritt. Konseqünz: Ziel anpassen (morgen 10 Min), Stufe erhöhen (Stehen am Bett vorbereiten). Proaktiv: Dokumentiere Werte bei jeder Evaluation, nicht nur bei Visite. Faustregel: Evaluation mit Skalen statt Bauchgefühl.",
+        "Evaluation = Soll-Ist-Vergleich (Fiechter/Meier 1981). Bettkante: 8 > 5 Min = Fortschritt. MRC 3 > 2 = Bewegung gegen Schwerkraft neu möglich = messbarer Fortschritt. Konsequnz: Ziel anpassen (morgen 10 Min), Stufe erhöhen (Stehen am Bett vorbereiten). Proaktiv: Dokumentiere Werte bei jeder Evaluation, nicht nur bei Visite. Faustregel: Evaluation mit Skalen statt Bauchgefühl.",
     },
   },
 };
@@ -971,7 +971,7 @@ export const CE02_PETROV_INLINE_05B_AUTONOMIE_REHA: ContentStep = {
     kerntext:
       "**Autonomie bei Aphasie:**\n\n• **Aphasie ≠ fehlende Einwilligungsfähigkeit.** Herr Petrov versteht alles (Broca-Aphasie). Er kann Entscheidungen treffen — die Aufklärung muss nur an seine Kommunikationsfähigkeiten angepasst werden (§ 630d BGB).\n\n• **Aufklärungspflicht** gilt auch bei Aphasie: Einfache Saetze, geschlossene Fragen, Bildmaterial, genügend Bedenkzeit. Zugestimmt wird durch Nicken, Zeigen oder Aufschreiben mit links.\n\n• **Schlucktherapeutin** = Logopädin mit Spezialisierung auf Dysphagie. Fuehrt FEES/GUSS durch, erstellt Kostaufbau-Plan, trainiert Schlucktechniken. Pflege setzt den Plan um.\n\n• **Rehabilitation** beginnt ab Tag 1 (Frühmobilisation, Logopädie, Ergo, Physio). **Prognose:** 80 % der Schlaganfall-Überlebenden erreichen nach 6 Monaten Reha funktionelle Verbesserung. Keine Garantie — aber die ersten 3 Monate sind das \"goldene Zeitfenster\" für Neuroplastizität.\n\n• **Ehrliche Kommunikation:** Prognose offen und realistisch kommunizieren — weder zu optimistisch noch hoffnungslos.\n\nQuelle: (BGB § 630d; DGN S2e 2021; Patientenrechtegesetz 2013)",
     kerntextB1:
-      "**Herr Petrov darf mitentscheiden:**\n\n• Aphasie heißt nicht: Er kann nicht entscheiden. Er versteht alles. Du musst nur **einfach erklären**: kurze Saetze, Bilder, Ja/Nein-Fragen.\n• **Schlucktherapeutin** (Logopädin) trainiert das Schlucken und sagt, was er essen darf.\n• **Rehabilitation** beginnt sofort: Bewegen, Üben, Schlucktraining. Die ersten 3 Monate sind am wichtigsten.\n• **Ehrlich sein:** Vieles kann besser werden. Aber es daürt. Niemand kann versprechen, dass alles wieder wie vorher wird.",
+      "**Herr Petrov darf mitentscheiden:**\n\n• Aphasie heißt nicht: Er kann nicht entscheiden. Er versteht alles. Du musst nur **einfach erklären**: kurze Saetze, Bilder, Ja/Nein-Fragen.\n• **Schlucktherapeutin** (Logopädin) trainiert das Schlucken und sagt, was er essen darf.\n• **Rehabilitation** beginnt sofort: Bewegen, Üben, Schlucktraining. Die ersten 3 Monate sind am wichtigsten.\n• **Ehrlich sein:** Vieles kann besser werden. Aber es dauert. Niemand kann versprechen, dass alles wieder wie vorher wird.",
     faustregel:
       "**Aphasie ≠ keine Einwilligungsfähigkeit.** Aufklärung anpassen, nicht weglassen.",
     faustregelB1:
@@ -1038,7 +1038,7 @@ export const CE02_PETROV_INLINE_06A_DOKUMENTATION: ContentStep = {
     storyAufhaengerB1:
       "Du hast heute viel mit Herr Petrov gemacht. Jetzt musst du alles aufschreiben — für die nächste Schicht und für die Sicherheit.",
     kerntext:
-      "**Pflegedokumentation — Grundlagen:**\n\n• **§ 630f BGB**: Jede behandlungsrelevante Maßnahme muss zeitnah, vollständig und nachvollziehbar dokumentiert werden. Was nicht dokumentiert ist, gilt rechtlich als nicht durchgeführt.\n\n• **Pflegebericht** = Freitext-Verlauf des Tages. Keine Bewertungen, nur Beobachtungen und Maßnahmen. Objektiv formulieren: \"Patient zeigte Hustenreflex beim Trinken\" statt \"Patient verschluckte sich mal wieder.\"\n\n• **Bilanzierung**: Einfuhr (Infusion + angedickte Getränke + Sondenkost) und Ausfuhr (Katheter-Urin, Stuhl) tabellarisch dokumentieren.\n\n• **Übergabe**: SBAR-Struktur für die mündliche Übergabe an den Spätdienst. Schriftlich: Pflegebericht + Bilanzierung + Besonderheiten.\n\n• **Ausscheidung**: Bei Katheter: Urinmenge, -farbe, -geruch. Stuhlgang: Bristol-Skala, Freqünz.\n\nQuelle: (§ 630f BGB; Fiechter/Meier 1981; DNQP 2022)",
+      "**Pflegedokumentation — Grundlagen:**\n\n• **§ 630f BGB**: Jede behandlungsrelevante Maßnahme muss zeitnah, vollständig und nachvollziehbar dokumentiert werden. Was nicht dokumentiert ist, gilt rechtlich als nicht durchgeführt.\n\n• **Pflegebericht** = Freitext-Verlauf des Tages. Keine Bewertungen, nur Beobachtungen und Maßnahmen. Objektiv formulieren: \"Patient zeigte Hustenreflex beim Trinken\" statt \"Patient verschluckte sich mal wieder.\"\n\n• **Bilanzierung**: Einfuhr (Infusion + angedickte Getränke + Sondenkost) und Ausfuhr (Katheter-Urin, Stuhl) tabellarisch dokumentieren.\n\n• **Übergabe**: SBAR-Struktur für die mündliche Übergabe an den Spätdienst. Schriftlich: Pflegebericht + Bilanzierung + Besonderheiten.\n\n• **Ausscheidung**: Bei Katheter: Urinmenge, -farbe, -geruch. Stuhlgang: Bristol-Skala, Frequenz.\n\nQuelle: (§ 630f BGB; Fiechter/Meier 1981; DNQP 2022)",
     kerntextB1:
       "**Warum dokumentieren?**\n\n• **Gesetz** (§ 630f BGB): Was du nicht aufschreibst, gilt als nicht gemacht.\n• **Pflegebericht**: Schreibe sachlich was du gesehen und getan hast. Keine Meinungen.\n• **Bilanzierung**: Wie viel Flüssigkeit rein (Trinken, Infusion) und raus (Urin, Stuhl).\n• **Übergabe**: Was muss die nächste Schicht wissen? SBAR-Struktur nutzen.\n• **Urin am Katheter**: Menge, Farbe und Geruch aufschreiben.",
     faustregel:

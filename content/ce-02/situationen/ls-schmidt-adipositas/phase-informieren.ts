@@ -12,7 +12,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
   kontext:
     "Es ist 08:30 Uhr, Frühdienst auf der Inneren Station. Du stehst auf dem Flur, noch außerhalb von Zimmer 8. Frau Bayraktar hat dir Frau Schmidt übergeben — kurz, mündlich. Du weißt: 68 Jahre, Adipositas, Diabetes, seit drei Tagen hier. Mehr noch nicht. Bevor du eintrittst, liest du die Pflegeübergabe im System. Und noch etwas beschäftigt dich: Du bist dir nicht sicher, wie du mit jemandem über Ernährung sprichst, bei dem das Thema sichtbar Bedeutung hat — ohne dass du die Geschichte dahinter kennst. Das ist keine einfache Situation.",
   kontextB1:
-    "Es ist 08:30 Uhr. Du arbeitest im Frühdienst. Du stehst vor Zimmer 8. Frau Schmidt liegt dort. Deine Praxisanleiterin sagt: \"Geh zu Frau Schmidt. Mach die Morgenpflege.\" Du weißt: Frau Schmidt ist 68 Jahre alt. Sie hat Diabetes (= Zucker-Krankheit) und starkes Übergewicht (= Adipositas). Sie ist seit 3 Tagen im Krankenhaus. Du liest zürst die Pflegeübergabe im Computer. Dann gehst du ins Zimmer.",
+    "Es ist 08:30 Uhr. Du arbeitest im Frühdienst. Du stehst vor Zimmer 8. Frau Schmidt liegt dort. Deine Praxisanleiterin sagt: \"Geh zu Frau Schmidt. Mach die Morgenpflege.\" Du weißt: Frau Schmidt ist 68 Jahre alt. Sie hat Diabetes (= Zucker-Krankheit) und starkes Übergewicht (= Adipositas). Sie ist seit 3 Tagen im Krankenhaus. Du liest zuerst die Pflegeübergabe im Computer. Dann gehst du ins Zimmer.",
   kernSteps: [
     // Step 1.1 — Übergabedaten lesen (text/scenario)
     {
@@ -34,14 +34,14 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
         "Hospital ward early morning, nurse reading patient notes at a computer station outside room 8, calm professional atmosphere, soft warm light, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Übergabe im System — Frau Schmidt, Zimmer 8",
-        body: "08:30 Uhr, Flur der Inneren Station.\n\nDu liest die Pflegeübergabe in SBAR-Struktur: **S** — Situation: Frau Schmidt (68 J., weiblich) ist seit 3 Tagen stationär wegen entgleistem Blutzucker (BZ 398 mg/dl bei Einlieferung). **B** — Hintergrund: Diabetes Typ 2 (seit 8 Jahren, bisher diätetisch, heute Metformin 500 mg 2× tgl. neu angesetzt), Adipositas Grad II (BMI 38), diabetisches Fußsyndrom Wagner Grad 1 (Wagner-Armstrong 1A), Belastungsinkontinenz seit 2 Jahren, Albumin 31 g/l (Norm: 35–52 g/l), NRS-2002-Score 1 + GLIM-Diagnose Mangelernährung Stadium 1. **A** — Aktülles: ansprechbar, wach, kooperativ, klagt über Schwäche, BZ heute nüchtern 187 mg/dl. **R** — Reaktion: Morgenpflege, BZ messen, Ernährungsgespräch vorbereiten. SBAR ist die Standard-Struktur für klinische Übergaben — vollständig und klar.",
+        body: "08:30 Uhr, Flur der Inneren Station.\n\nDu liest die Pflegeübergabe in SBAR-Struktur: **S** — Situation: Frau Schmidt (68 J., weiblich) ist seit 3 Tagen stationär wegen entgleistem Blutzucker (BZ 398 mg/dl bei Einlieferung). **B** — Hintergrund: Diabetes Typ 2 (seit 8 Jahren, bisher diätetisch, heute Metformin 500 mg 2× tgl. neu angesetzt), Adipositas Grad II (BMI 38), diabetisches Fußsyndrom Wagner Grad 1 (Wagner-Armstrong 1A), Belastungsinkontinenz seit 2 Jahren, Albumin 31 g/l (Norm: 35–52 g/l), NRS-2002-Score 1 + GLIM-Diagnose Mangelernährung Stadium 1. **A** — Aktuelles: ansprechbar, wach, kooperativ, klagt über Schwäche, BZ heute nüchtern 187 mg/dl. **R** — Reaktion: Morgenpflege, BZ messen, Ernährungsgespräch vorbereiten. SBAR ist die Standard-Struktur für klinische Übergaben — vollständig und klar.",
         fallbezug:
           "Frau Schmidt (68 J., Adipositas Grad II, Diabetes Typ 2) ist seit 3 Tagen stationär. Du bist Pflegeschülerin im 2. Ausbildungsdrittel, Frühdienst.",
         glossarBegriffe: ["NRS 2002", "Albumin", "Wagner-Armstrong-Klassifikation"],
       },
       contentB1: {
         title: "Die Übergabe lesen",
-        body: "08:30 Uhr, Flur der Inneren Station.\n\nDu liest die Pflegeübergabe (SBAR-Struktur): **S** = Situation: Frau Schmidt ist seit 3 Tagen hier. Der Blutzucker (= BZ) war bei der Einlieferung sehr hoch: 398 mg/dl. Jetzt nüchtern: 187 mg/dl. **B** = Hintergrund: Sie hat Diabetes Typ 2, Adipositas Grad II (BMI 38). Sie hat ein Fußsyndrom (Wagner Grad 1 = erste Risse an der Haut, keine Wunde). Sie hat Belastungs-Inkontinenz (= sie verliert manchmal Urin bei Bewegung). Albumin (= Eiweiß im Blut) ist zu niedrig: 31 g/l. **A** = Aktülles: Sie ist wach und ansprechbar. Sie fühlt sich schwach. **R** = Reaktion: Du machst die Morgenpflege. Dann misst du den Blutzucker. Dann sprichst du mit ihr über Ernährung.",
+        body: "08:30 Uhr, Flur der Inneren Station.\n\nDu liest die Pflegeübergabe (SBAR-Struktur): **S** = Situation: Frau Schmidt ist seit 3 Tagen hier. Der Blutzucker (= BZ) war bei der Einlieferung sehr hoch: 398 mg/dl. Jetzt nüchtern: 187 mg/dl. **B** = Hintergrund: Sie hat Diabetes Typ 2, Adipositas Grad II (BMI 38). Sie hat ein Fußsyndrom (Wagner Grad 1 = erste Risse an der Haut, keine Wunde). Sie hat Belastungs-Inkontinenz (= sie verliert manchmal Urin bei Bewegung). Albumin (= Eiweiß im Blut) ist zu niedrig: 31 g/l. **A** = Aktuelles: Sie ist wach und ansprechbar. Sie fühlt sich schwach. **R** = Reaktion: Du machst die Morgenpflege. Dann misst du den Blutzucker. Dann sprichst du mit ihr über Ernährung.",
         fallbezug:
           "Frau Schmidt ist 68 Jahre alt. Sie ist seit 3 Tagen im Krankenhaus. Du bist Schülerin im Frühdienst.",
         glossarBegriffe: ["NRS 2002", "Albumin", "Wagner-Armstrong-Klassifikation"],
@@ -106,7 +106,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
             situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "Post-OP Katabolismus",
             kurzbeschreibung:
-              "Nach Hüft-TEP: Erkrankungsschwere 2-3, Appetitlosigkeit, Alter 74 = +1 Punkt. NRS-Score oft ≥ 3. Proteinbedarf steigt post-OP auf 1,5 g/kg/Tag.",
+              "Nach Hüft-TEP: Erkrankungsschwere 2-3, Appetitlosigkeit, Alter 79 = +1 Punkt. NRS-Score oft ≥ 3. Proteinbedarf steigt post-OP auf 1,5 g/kg/Tag.",
           },
           {
             patientName: "Herr Nguyen",
@@ -198,23 +198,23 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
             text: "Nur Name und Zimmernummer — alles andere frage ich Frau Schmidt selbst.",
             isCorrect: false,
             explanation:
-              "Zu wenig. Patientensicherheit verlangt Mindestwissen aus der Übergabe BEVOR du Pflege durchführst: aktülle Diagnosen (Diabetes! Fußsyndrom!), aktülle Medikamente (Metformin neu!), kritische Werte (BZ 187 nüchtern), Allergien, Sturzrisiko. Wer das nicht kennt, gefährdet die Patientin.",
+              "Zu wenig. Patientensicherheit verlangt Mindestwissen aus der Übergabe BEVOR du Pflege durchführst: aktuelle Diagnosen (Diabetes! Fußsyndrom!), aktuelle Medikamente (Metformin neu!), kritische Werte (BZ 187 nüchtern), Allergien, Sturzrisiko. Wer das nicht kennt, gefährdet die Patientin.",
             explanationB1:
               "Zu wenig. Du brauchst mehr Infos: Welche Krankheit? Welche Medikamente? Welche Werte? Sonst kann es gefährlich werden.",
           },
           {
-            text: "Aktülle Diagnosen, neue Medikamente, kritische Werte (BZ-Trend), bekannte Risiken (Sturz, Inkontinenz, Fußsyndrom) und das Tagesziel der Schicht.",
+            text: "Aktuelle Diagnosen, neue Medikamente, kritische Werte (BZ-Trend), bekannte Risiken (Sturz, Inkontinenz, Fußsyndrom) und das Tagesziel der Schicht.",
             isCorrect: true,
             explanation:
-              "Richtig. Das ist das Mindestwissen für sichere Pflege. SBAR-Übergabe liefert genau das: Situation (warum stationär), Background (Diagnosen + Medikamente), Assessment (aktülle Werte + Risiken), Recommendation (Tagesziel). Diese Daten brauchst du IM KOPF wenn du das Zimmer betrittst — nicht erst nachschlagen während der Pflege.",
+              "Richtig. Das ist das Mindestwissen für sichere Pflege. SBAR-Übergabe liefert genau das: Situation (warum stationär), Background (Diagnosen + Medikamente), Assessment (aktuelle Werte + Risiken), Recommendation (Tagesziel). Diese Daten brauchst du IM KOPF wenn du das Zimmer betrittst — nicht erst nachschlagen während der Pflege.",
             explanationB1:
-              "Richtig! Du musst wissen: Welche Krankheit? Welche neün Medikamente? Welche Werte? Welche Risiken? Welches Ziel heute? Das ist die Basis für sichere Pflege.",
+              "Richtig! Du musst wissen: Welche Krankheit? Welche neuen Medikamente? Welche Werte? Welche Risiken? Welches Ziel heute? Das ist die Basis für sichere Pflege.",
           },
           {
             text: "Alle Befunde der letzten 6 Monate — vollständige Krankengeschichte.",
             isCorrect: false,
             explanation:
-              "Zu viel und unrealistisch. Eine SBAR-Übergabe ist KURZ und FOKUSSIERT auf das aktüll Relevante. Vollständige Krankengeschichte liest du nur bei Bedarf nach — vor dem Betreten brauchst du das aktülle Lagebild, nicht die Lebensgeschichte.",
+              "Zu viel und unrealistisch. Eine SBAR-Übergabe ist KURZ und FOKUSSIERT auf das aktuell Relevante. Vollständige Krankengeschichte liest du nur bei Bedarf nach — vor dem Betreten brauchst du das aktuelle Lagebild, nicht die Lebensgeschichte.",
             explanationB1:
               "Zu viel. Eine SBAR-Übergabe ist kurz. Du musst nur das Wichtige für HEUTE wissen — nicht alles aus 6 Monaten.",
           },
@@ -268,7 +268,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
         storyAufhaengerB1:
           "In der Übergabe stand: \"BMI 38\". Was heißt das genau? Und warum ist das für die Pflege wichtig?",
         kerntext:
-          "Der **BMI (Body-Mass-Index)** berechnet sich aus **Gewicht (kg) geteilt durch Größe (m) zum Quadrat** (WHO 2000).\n\nFrau Schmidt: 98 kg bei 1,60 m = 98 / (1,60 x 1,60) = 98 / 2,56 = **38,3**.\n\n**WHO-Klassifikation:**\n\n• BMI 18,5–24,9 = Normalgewicht\n\n• BMI 25,0–29,9 = Übergewicht\n\n• BMI 30,0–34,9 = **Adipositas Grad I**\n\n• BMI 35,0–39,9 = **Adipositas Grad II** (Frau Schmidt)\n\n• BMI ≥ 40,0 = **Adipositas Grad III** (Adipositas per magna)\n\n**Pflegerische Konseqünzen bei Grad II:**\n\n• Belastungsgrenze beachten — Bett, Rollstuhl, Toilettenstuhl (Maximalgewicht prüfen!)\n\n• Hautfalten-Pflege — Intertrigo-Risiko in allen Falten\n\n• Mobilisation — Sturzrisiko erhöht (Polyneuropathie + Körperschwerpunkt)\n\n• Würde — das Gespräch über Gewicht ist für Patient(inn)en belastend. Stigmatisierung vermeiden.",
+          "Der **BMI (Body-Mass-Index)** berechnet sich aus **Gewicht (kg) geteilt durch Größe (m) zum Quadrat** (WHO 2000).\n\nFrau Schmidt: 98 kg bei 1,60 m = 98 / (1,60 x 1,60) = 98 / 2,56 = **38,3**.\n\n**WHO-Klassifikation:**\n\n• BMI 18,5–24,9 = Normalgewicht\n\n• BMI 25,0–29,9 = Übergewicht\n\n• BMI 30,0–34,9 = **Adipositas Grad I**\n\n• BMI 35,0–39,9 = **Adipositas Grad II** (Frau Schmidt)\n\n• BMI ≥ 40,0 = **Adipositas Grad III** (Adipositas per magna)\n\n**Pflegerische Konsequnzen bei Grad II:**\n\n• Belastungsgrenze beachten — Bett, Rollstuhl, Toilettenstuhl (Maximalgewicht prüfen!)\n\n• Hautfalten-Pflege — Intertrigo-Risiko in allen Falten\n\n• Mobilisation — Sturzrisiko erhöht (Polyneuropathie + Körperschwerpunkt)\n\n• Würde — das Gespräch über Gewicht ist für Patient(inn)en belastend. Stigmatisierung vermeiden.",
         kerntextB1:
           "Der **BMI** zeigt, ob jemand Normal-Gewicht, Übergewicht oder Adipositas hat.\n\n**So rechnet man:** Gewicht (kg) geteilt durch Größe (m) mal Größe (m).\n\nFrau Schmidt: 98 kg, 1,60 m groß. 98 geteilt durch 2,56 = **38**.\n\n**Was die Zahlen bedeuten:**\n\n• BMI 18,5–24,9 = Normal-Gewicht\n\n• BMI 25–29,9 = Übergewicht\n\n• BMI 30–34,9 = Adipositas Grad I\n\n• BMI 35–39,9 = **Adipositas Grad II** (= Frau Schmidt)\n\n• BMI ab 40 = Adipositas Grad III\n\n**Für die Pflege heißt das:**\n\n• Bett und Stuhl prüfen — halten sie das Gewicht?\n\n• Haut-Falten pflegen — Gefahr von Intertrigo\n\n• Vorsichtig über das Thema sprechen — Frau Schmidt fühlt sich schnell verurteilt",
         faustregel:
@@ -288,7 +288,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
             situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "BMI und OP-Risiko",
             kurzbeschreibung:
-              "BMI 28 — Übergewicht, kein Adipositas-Grad. Aber: OP-Risiko erhöht ab BMI > 30 (Wundheilungsstörung, Thrombose). Ihr BMI liegt knapp darunter.",
+              "BMI 34 — Adipositas Grad I (WHO: 30,0–34,9). OP-Risiko erhöht: Wundheilungsstörung, Thrombose. Zusätzlich: Diabetes mellitus Typ 2 verstärkt das perioperative Risiko.",
           },
           {
             patientName: "Frau Kovac",
@@ -306,7 +306,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
           vorderseite:
             "Frau Schmidt hat BMI 38. Welcher Adipositas-Grad ist das — und was bedeutet es pflegerisch?",
           rueckseite:
-            "BMI 38 = **Adipositas Grad II** (WHO-Schwelle: 35,0–39,9). Pflegerisch: Belastungsgrenzen von Bett/Stuhl prüfen, Hautfalten-Inspektion (Intertrigo-Risiko), Mobilisation mit Sturzrisiko-Bewusstsein, Gespräch über Gewicht ohne Stigmatisierung.\n\nSpektrum: Petrov (BMI 21, Kachexie-Risiko), Yilmaz (BMI 28, OP-Risiko), Kovac (BMI 19, Gewichtsverlust-Trend).\n\nFaustregel: **BMI ist eine Zahl, kein Urteil.**",
+            "BMI 38 = **Adipositas Grad II** (WHO-Schwelle: 35,0–39,9). Pflegerisch: Belastungsgrenzen von Bett/Stuhl prüfen, Hautfalten-Inspektion (Intertrigo-Risiko), Mobilisation mit Sturzrisiko-Bewusstsein, Gespräch über Gewicht ohne Stigmatisierung.\n\nSpektrum: Petrov (BMI 21, Kachexie-Risiko), Yilmaz (BMI 34, OP-Risiko), Kovac (BMI 19, Gewichtsverlust-Trend).\n\nFaustregel: **BMI ist eine Zahl, kein Urteil.**",
         },
       },
     },
@@ -420,7 +420,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
         sortItems: [
           "Bekannt: BMI 38, Adipositas Grad II",
           "Bekannt: Diagnosen (Diabetes Typ 2, Fußsyndrom Kategorie 1, Belastungsinkontinenz)",
-          "Bekannt: Aktülle BZ-Werte (nüchtern 187 mg/dl, postprandial 298 mg/dl)",
+          "Bekannt: Aktuelle BZ-Werte (nüchtern 187 mg/dl, postprandial 298 mg/dl)",
           "Bekannt: Metformin 500 mg 2× tgl. neu angesetzt heute",
           "Bekannt: Albumin 31 g/l, NRS-2002-Score 1, GLIM-Diagnose Mangelernährung Stadium 1",
           "Noch offen: Ernährungsgewohnheiten zuhause (was isst sie täglich?)",

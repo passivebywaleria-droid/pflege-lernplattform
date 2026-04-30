@@ -53,18 +53,18 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
         storyAufhaengerB1:
           "Gleich steht Frau Yilmaz zum ersten Mal auf. Aber es kann passieren, dass ihr dabei schwindelig wird. Der Blutdruck fällt plötzlich ab. Das heißt: orthostatische Hypotonie. Warum passiert das?",
         kerntext:
-          "**Orthostase** bedeutet 'aufrechte Körperhaltung'. Beim Aufstehen versacken ca. 500–800 ml Blut in die Beinvenen (Schwerkraft). Normalerweise reagiert der Körper sofort: Herzfreqünz steigt, Gefäße verengen sich, Blutdruck bleibt stabil.\n\n**Orthostatische Hypotonie** entsteht, wenn diese Gegenregulation versagt:\n• Blutdruckabfall ≥ 20 mmHg systolisch ODER ≥ 10 mmHg diastolisch innerhalb von 3 Minuten nach dem Aufstehen (Freeman et al. 2011, AAS-Konsensus)\n• Symptome: Schwindel, Schwarzwerden, Übelkeit, Blässe, Synkope (Ohnmacht)\n\n**Risikofaktoren bei Frau Yilmaz:**\n• **Bettlägerigkeit (3 Tage)** — Gefäßregulation ist 'eingerostet', Baroreflexe gedämpft\n• **Postoperative Volumenverschiebung** — Blutverlust bei OP, Flüssigkeitsumverteilung\n• **Schmerz** — autonome Aktivierung (Sympathikus) kann paradox den Kreislauf destabilisieren\n• **Alter (68 J.)** — Baroreflex-Empfindlichkeit nimmt mit dem Alter ab\n\n**Schellong-Test** (Schellong 1947): Blutdruck liegend messen → ≥ 1 Min sitzen → Blutdruck sitzend messen. Differenz ≥ 20/10 mmHg = orthostatische Hypotonie → Patient hinlegen, Versuch verschieben.\n\n**Pflegerische Konseqünz:** Niemals nach OP-Bettlägerigkeit direkt aufstehen lassen. Immer stufenweise: Liegen → Sitzen → Stehen. Und IMMER vorher den Schellong-Test machen.",
+          "**Orthostase** bedeutet 'aufrechte Körperhaltung'. Beim Aufstehen versacken ca. 500–800 ml Blut in die Beinvenen (Schwerkraft). Normalerweise reagiert der Körper sofort: Herzfrequenz steigt, Gefäße verengen sich, Blutdruck bleibt stabil.\n\n**Orthostatische Hypotonie** entsteht, wenn diese Gegenregulation versagt:\n• Blutdruckabfall ≥ 20 mmHg systolisch ODER ≥ 10 mmHg diastolisch innerhalb von 3 Minuten nach dem Aufstehen (Freeman et al. 2011, AAS-Konsensus)\n• Symptome: Schwindel, Schwarzwerden, Übelkeit, Blässe, Synkope (Ohnmacht)\n\n**Risikofaktoren bei Frau Yilmaz:**\n• **Bettlägerigkeit (3 Tage)** — Gefäßregulation ist 'eingerostet', Baroreflexe gedämpft\n• **Postoperative Volumenverschiebung** — Blutverlust bei OP, Flüssigkeitsumverteilung\n• **Schmerz** — autonome Aktivierung (Sympathikus) kann paradox den Kreislauf destabilisieren\n• **Alter (79 J.)** — Baroreflex-Empfindlichkeit nimmt mit dem Alter ab\n\n**Schellong-Test** (Schellong 1947): Blutdruck liegend messen → ≥ 1 Min sitzen → Blutdruck sitzend messen. Differenz ≥ 20/10 mmHg = orthostatische Hypotonie → Patient hinlegen, Versuch verschieben.\n\n**Pflegerische Konsequnz:** Niemals nach OP-Bettlägerigkeit direkt aufstehen lassen. Immer stufenweise: Liegen → Sitzen → Stehen. Und IMMER vorher den Schellong-Test machen.",
         kerntextB1:
-          "**Orthostase** bedeutet: aufrecht stehen.\n\nWenn du aufstehst, fließt Blut in die Beine (Schwerkraft). Normalerweise reagiert der Körper: Das Herz schlägt schneller, die Gefäße werden enger, der Blutdruck bleibt stabil.\n\n**Orthostatische Hypotonie** = Der Körper schafft das nicht. Der Blutdruck fällt plötzlich ab.\n• Schwindelgefühl, schwarz vor Augen, Übelkeit, Blässe\n• Wenn der Blutdruck um 20 mmHg oder mehr fällt = orthostatische Hypotonie\n\n**Warum passiert das bei Frau Yilmaz?**\n• Sie liegt seit 3 Tagen → der Körper hat sich ans Liegen gewöhnt\n• Die OP → Blutverlust, Körper ist geschwächt\n• Schmerzen → der Kreislauf ist durcheinander\n• Sie ist 68 → ältere Menschen haben das öfter\n\n**Schellong-Test:** Blutdruck im Liegen messen. Dann mindestens 1 Minute sitzen. Dann Blutdruck sitzend messen. Wenn der Unterschied zu groß ist: wieder hinlegen, später nochmal versuchen.\n\n**Regel:** Nie direkt aufstehen nach langem Liegen. Immer stufenweise: Liegen → Sitzen → Stehen.",
+          "**Orthostase** bedeutet: aufrecht stehen.\n\nWenn du aufstehst, fließt Blut in die Beine (Schwerkraft). Normalerweise reagiert der Körper: Das Herz schlägt schneller, die Gefäße werden enger, der Blutdruck bleibt stabil.\n\n**Orthostatische Hypotonie** = Der Körper schafft das nicht. Der Blutdruck fällt plötzlich ab.\n• Schwindelgefühl, schwarz vor Augen, Übelkeit, Blässe\n• Wenn der Blutdruck um 20 mmHg oder mehr fällt = orthostatische Hypotonie\n\n**Warum passiert das bei Frau Yilmaz?**\n• Sie liegt seit 3 Tagen → der Körper hat sich ans Liegen gewöhnt\n• Die OP → Blutverlust, Körper ist geschwächt\n• Schmerzen → der Kreislauf ist durcheinander\n• Sie ist 79 → ältere Menschen haben das öfter\n\n**Schellong-Test:** Blutdruck im Liegen messen. Dann mindestens 1 Minute sitzen. Dann Blutdruck sitzend messen. Wenn der Unterschied zu groß ist: wieder hinlegen, später nochmal versuchen.\n\n**Regel:** Nie direkt aufstehen nach langem Liegen. Immer stufenweise: Liegen → Sitzen → Stehen.",
         faustregel:
           "**Liegen → Sitzen → Schellong → Stehen.** Nie eine Stufe überspringen — der Kreislauf braucht Zeit zum Aufwachen.",
         faustregelB1:
           "Erst liegen, dann sitzen, dann Blutdruck messen, dann stehen. Nie eine Stufe überspringen.",
         karteikarte: {
           vorderseite: "Was ist orthostatische Hypotonie, welche Grenzwerte gelten, und warum ist Frau Yilmaz besonders gefährdet?",
-          rueckseite: "Orthostatische Hypotonie = Blutdruckabfall ≥ 20 mmHg systolisch oder ≥ 10 mmHg diastolisch innerhalb 3 Min nach Lagewechsel (Freeman et al. 2011). Symptome: Schwindel, Synkope. Frau Yilmaz: 3 Tage Bettlägerigkeit (Baroreflex gedämpft), postoperativer Volumenverlust, Schmerz, Alter 68. Schellong-Test: RR liegend → ≥ 1 Min sitzen → RR sitzend. Pflege: stufenweise Mobilisation, nie direkt aufstehen.",
+          rueckseite: "Orthostatische Hypotonie = Blutdruckabfall ≥ 20 mmHg systolisch oder ≥ 10 mmHg diastolisch innerhalb 3 Min nach Lagewechsel (Freeman et al. 2011). Symptome: Schwindel, Synkope. Frau Yilmaz: 3 Tage Bettlägerigkeit (Baroreflex gedämpft), postoperativer Volumenverlust, Schmerz, Alter 79. Schellong-Test: RR liegend → ≥ 1 Min sitzen → RR sitzend. Pflege: stufenweise Mobilisation, nie direkt aufstehen.",
           vorderseiteB1: "Was bedeutet orthostatische Hypotonie? Warum passiert es Frau Yilmaz?",
-          rueckseiteB1: "Blutdruck fällt beim Aufstehen um mehr als 20 mmHg. Schwindel, schwarz vor Augen. Frau Yilmaz: 3 Tage gelegen, OP, Schmerzen, 68 Jahre alt. Schellong-Test vorher machen. Immer stufenweise: Liegen → Sitzen → Stehen.",
+          rueckseiteB1: "Blutdruck fällt beim Aufstehen um mehr als 20 mmHg. Schwindel, schwarz vor Augen. Frau Yilmaz: 3 Tage gelegen, OP, Schmerzen, 79 Jahre alt. Schellong-Test vorher machen. Immer stufenweise: Liegen → Sitzen → Stehen.",
         },
       },
     },
@@ -115,7 +115,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
             },
             {
               id: "s4",
-              label: "Operiertes Bein (rechts) zürst in Streckung über die Bettkante führen — gesundes Bein folgt nach. Adduktion/Innenrotation vermeiden (Luxationsschutz). Patientin dreht aktiv mit, Pflege begleitet.",
+              label: "Operiertes Bein (rechts) zuerst in Streckung über die Bettkante führen — gesundes Bein folgt nach. Adduktion/Innenrotation vermeiden (Luxationsschutz). Patientin dreht aktiv mit, Pflege begleitet.",
             },
             {
               id: "s5",
@@ -173,7 +173,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
             text: "Frau Yilmaz sofort sicher hinlegen, Beine leicht erhöht lagern, Kreislauf stabilisieren, RR messen",
             isCorrect: true,
             feedback:
-              "Genau. Sicherheit zürst, dann Ursache verstehen. RR liegend (vor Aufstehen gemessen): 128/78 mmHg. RR sitzend jetzt: 98/62 mmHg. Differenz systolisch 30 mmHg, diastolisch 16 mmHg — beide Werte überschreiten den Standard-Schwellenwert für orthostatische Hypotonie (≥ 20 mmHg systolisch oder ≥ 10 mmHg diastolisch innerhalb 3 Min, AAS-Konsensus 2011 / DGN Schellong-Test). Maßnahme: hinlegen, warten, nächster Versuch in 20–30 Min. Dann: Frau Wendt informieren.",
+              "Genau. Sicherheit zuerst, dann Ursache verstehen. RR liegend (vor Aufstehen gemessen): 128/78 mmHg. RR sitzend jetzt: 98/62 mmHg. Differenz systolisch 30 mmHg, diastolisch 16 mmHg — beide Werte überschreiten den Standard-Schwellenwert für orthostatische Hypotonie (≥ 20 mmHg systolisch oder ≥ 10 mmHg diastolisch innerhalb 3 Min, AAS-Konsensus 2011 / DGN Schellong-Test). Maßnahme: hinlegen, warten, nächster Versuch in 20–30 Min. Dann: Frau Wendt informieren.",
             feedbackB1:
               "Richtig. Sie liegt jetzt sicher. Blutdruck messen. Beine leicht hochlagern. Dann warten. RR liegend war 128/78, jetzt sitzend 98/62 — der Blutdruck ist um 30 mmHg gefallen. Schon ab 20 mmHg ist es Orthostase. In 20–30 Minuten erneut versuchen. Frau Wendt informieren.",
           },
@@ -191,7 +191,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
             feedback:
               "Frau Wendt zu rufen ist keine Niederlage — im Zweifelsfall ist das richtig. Aber in der Zeit, bis sie kommt, kannst du bereits die wichtigste Maßnahme eingeleitet haben: Frau Yilmaz sicher hinlegen. Pflege bedeutet nicht Warten auf Anweisung — sondern situationsgerechtes Handeln im Rahmen der Kompetenz. Schritt 1: hinlegen. Schritt 2: Frau Wendt informieren.",
             feedbackB1:
-              "Frau Wendt zu rufen ist ok — aber zürst: Frau Yilmaz hinlegen und sichern. Das kannst du. Dann Frau Wendt informieren.",
+              "Frau Wendt zu rufen ist ok — aber zuerst: Frau Yilmaz hinlegen und sichern. Das kannst du. Dann Frau Wendt informieren.",
           },
         ],
       },
@@ -305,7 +305,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
                   "Frau Yilmaz macht zwei Schritte. Langsam. Sie schaut nach unten.",
                 score: 3,
                 feedback:
-                  "Genau — jeder Schritt ist ein Erfolg. Das Ziel heute ist nicht der Marathon, das Ziel ist: aufgestanden. NRS ≤ 5 im Stehen = Erfolg. Das dokumentierst du, das stärkt Frau Yilmaz' Selbstvertraün.",
+                  "Genau — jeder Schritt ist ein Erfolg. Das Ziel heute ist nicht der Marathon, das Ziel ist: aufgestanden. NRS ≤ 5 im Stehen = Erfolg. Das dokumentierst du, das stärkt Frau Yilmaz' Selbstvertrauen.",
                 feedbackB1:
                   "Genau richtig. Zwei Schritte ist ein großer Erfolg für heute. NRS 4 — das ist ok. Das schreibst du auf. Das ist ein guter Tag.",
               },
@@ -345,7 +345,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
         title: "Komplikation 2: Ehemann Mustafa interveniert",
         body: "Frau Yilmaz steht zum ersten Mal. Du stehst auf der OP-Seite (rechts), eine Hand am Beckengurt, eine Hand am Rumpf. Dann — Mustafa steht auf. Er macht einen Schritt auf Frau Yilmaz zu, will nach ihrem Arm greifen. Er sagt laut auf Türkisch (Übersetzung unten):\n\n\"Sie soll ins Bett. Sie ist krank. Warum macht ihr das mit ihr?\"\n\nMustafas Reaktion ist Liebe, kein Angriff. Er sieht seine kranke Frau stehen und glaubt, ihr zu helfen wenn er sie wieder hinlegt. Was tust du?",
         fallbezug:
-          "Diese Situation ist häufig bei älteren Patienten mit pflegenden Angehörigen. Die richtige Reaktion entscheidet über Vertraün — und über die Sicherheit der Mobilisation.",
+          "Diese Situation ist häufig bei älteren Patienten mit pflegenden Angehörigen. Die richtige Reaktion entscheidet über Vertrauen — und über die Sicherheit der Mobilisation.",
         glossarBegriffe: ["Angehörige", "Nonverbale Kommunikation", "Interkulturelle Pflege"],
       },
       contentB1: {
@@ -362,7 +362,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
             text: "Ruhig, klar, nonverbal: Hebe die Hand (Stopp-Geste), lächle ihn gleichzeitig an. Frau Yilmaz erst sicher zurück ans Bett/auf den Stuhl begleiten — DANN über Frau Yilmaz: \"Frau Yilmaz, könnten Sie Ihrem Mann kurz sagen, dass alles gut ist und Sie selbst entschieden haben aufzustehen?\"",
             isCorrect: true,
             feedback:
-              "Sicherheit zürst — dann Kommunikation. Frau Yilmaz steht nach Hüft-TEP zum ersten Mal (NRS 4, gerade aktiv stabilisiert). Wenn sie als Vermittlerin im Stehen reden soll, verliert sie den Fokus auf Stand und Schmerz → Sturz- und Luxationsgefahr (DNQP Sturzprophylaxe; ABCDE). Reihenfolge: 1. Stopp-Geste + Lächeln Richtung Mustafa, 2. Frau Yilmaz sicher zurück zum Stuhl/Bett, 3. erst dann Frau Yilmaz als Vermittlerin aktivieren. Mustafas Reaktion ist Liebe, kein Angriff. Wichtig: Angehörige greifen instinktiv unter die Achseln — erkläre Mustafa (ueber Frau Yilmaz als Dolmetscherin) warum das bei Hüft-TEP gefährlich ist: Schultergelenk-Risiko und unkontrollierte Belastung der operierten Hüfte. Sichern am Becken/Rumpf ist der korrekte Griff (Kinästhetik nach Hatch/Maietta).",
+              "Sicherheit zuerst — dann Kommunikation. Frau Yilmaz steht nach Hüft-TEP zum ersten Mal (NRS 4, gerade aktiv stabilisiert). Wenn sie als Vermittlerin im Stehen reden soll, verliert sie den Fokus auf Stand und Schmerz → Sturz- und Luxationsgefahr (DNQP Sturzprophylaxe; ABCDE). Reihenfolge: 1. Stopp-Geste + Lächeln Richtung Mustafa, 2. Frau Yilmaz sicher zurück zum Stuhl/Bett, 3. erst dann Frau Yilmaz als Vermittlerin aktivieren. Mustafas Reaktion ist Liebe, kein Angriff. Wichtig: Angehörige greifen instinktiv unter die Achseln — erkläre Mustafa (ueber Frau Yilmaz als Dolmetscherin) warum das bei Hüft-TEP gefährlich ist: Schultergelenk-Risiko und unkontrollierte Belastung der operierten Hüfte. Sichern am Becken/Rumpf ist der korrekte Griff (Kinästhetik nach Hatch/Maietta).",
             feedbackB1:
               "Genau richtig — aber in der richtigen Reihenfolge. Erst: Stopp-Geste + Lächeln Richtung Mustafa. Dann: Frau Yilmaz sicher hinsetzen — sie steht ja erst zum ersten Mal. Erst wenn sie sicher sitzt, bittest du sie, Mustafa zu erklären. Sicherheit kommt vor Reden. Und: Erkläre Mustafa ueber Frau Yilmaz, dass er nicht unter den Achseln greifen soll — das ist gefährlich für die Hüfte. Sichern geht seitlich am Becken.",
           },
@@ -378,9 +378,9 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
             text: "Frau Wendt rufen — das ist zu komplex für mich allein.",
             isCorrect: false,
             feedback:
-              "Im Zweifelsfall Frau Wendt holen ist ok. Aber in dieser Sekunde kannst du selbst handeln: Stopp-Geste, Lächeln, Frau Yilmaz bitten zu vermitteln. Das daürt 10 Sekunden — nicht 2 Minuten auf Frau Wendt warten. Handeln zürst, informieren danach.",
+              "Im Zweifelsfall Frau Wendt holen ist ok. Aber in dieser Sekunde kannst du selbst handeln: Stopp-Geste, Lächeln, Frau Yilmaz bitten zu vermitteln. Das dauert 10 Sekunden — nicht 2 Minuten auf Frau Wendt warten. Handeln zuerst, informieren danach.",
             feedbackB1:
-              "Frau Wendt holen ist ok — aber du kannst selbst handeln. Stopp-Geste und Lächeln daürn 10 Sekunden. Dann Frau Yilmaz bitten, es zu erklären. Danach kannst du Frau Wendt informieren.",
+              "Frau Wendt holen ist ok — aber du kannst selbst handeln. Stopp-Geste und Lächeln dauern 10 Sekunden. Dann Frau Yilmaz bitten, es zu erklären. Danach kannst du Frau Wendt informieren.",
           },
         ],
       },
@@ -438,7 +438,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
             text: "Linke Seite 90°, da Steißbein so am besten entlastet ist",
             isCorrect: false,
             explanation:
-              "Bei 90° Seitenlage liegt der Trochanter auf dem Bett — neüs Druckrisiko. Außerdem ist der Hüftwinkel bei Seitenlage 90° nicht kontrollierbar. Die 30°-Mikrolagerung ist die richtige Wahl (NPUAP/EPUAP 2019).",
+              "Bei 90° Seitenlage liegt der Trochanter auf dem Bett — neues Druckrisiko. Außerdem ist der Hüftwinkel bei Seitenlage 90° nicht kontrollierbar. Die 30°-Mikrolagerung ist die richtige Wahl (NPUAP/EPUAP 2019).",
             explanationB1:
               "Bei 90° Seitenlage liegt die Hüfte auf der Seite auf — das macht eine neue Druckstelle. Außerdem: der Hüftwinkel ist nicht mehr kontrollierbar. 30° ist besser.",
           },
@@ -471,7 +471,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Umlagerungsintervall festlegen",
-        body: "Frau Yilmaz liegt jetzt in 30°-Mikrolagerung. Du weißt: Dekubitus-Prophylaxe bedeutet konseqünte Druckentlastung. Aber wie oft musst du sie umlagern? Wähle den richtigen Zeitintervall.",
+        body: "Frau Yilmaz liegt jetzt in 30°-Mikrolagerung. Du weißt: Dekubitus-Prophylaxe bedeutet konsequnte Druckentlastung. Aber wie oft musst du sie umlagern? Wähle den richtigen Zeitintervall.",
         glossarBegriffe: ["Umlagerungsintervall", "Dekubitusprophylaxe", "DNQP"],
       },
       contentB1: {

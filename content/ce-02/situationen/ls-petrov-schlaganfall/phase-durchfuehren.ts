@@ -45,7 +45,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
 
     // Step 4.2 — Sequencing: Ganzkörperpflege nach Bobath
     {
-      stepId: "ce02-petrov-dur-02-ganzkörperpflege-seqüncing",
+      stepId: "ce02-petrov-dur-02-ganzkörperpflege-sequencing",
       phase: 4,
       stepType: "sequencing",
       bloomLevel: 4,
@@ -61,7 +61,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Ganzkörperpflege — richtige Reihenfolge",
-        body: "Bringe die Schritte der Ganzkörperpflege beim halbseitig betroffenen Patienten in die richtige Reihenfolge nach Bobath. Merkhilfe: \"Ausziehen: Gesunde zürst — Anziehen: Betroffene zürst.\"",
+        body: "Bringe die Schritte der Ganzkörperpflege beim halbseitig betroffenen Patienten in die richtige Reihenfolge nach Bobath. Merkhilfe: \"Ausziehen: Gesunde zuerst — Anziehen: Betroffene zuerst.\"",
         glossarBegriffe: [
           "Bobath-Konzept",
           "betroffene Seite",
@@ -71,7 +71,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
       },
       contentB1: {
         title: "Die Reihenfolge der Körper-Pflege",
-        body: "Bringe die Schritte in die richtige Reihenfolge. Merkhilfe: \"Ausziehen: Gesunde zürst. Anziehen: Betroffene zürst.\"",
+        body: "Bringe die Schritte in die richtige Reihenfolge. Merkhilfe: \"Ausziehen: Gesunde zuerst. Anziehen: Betroffene zuerst.\"",
         glossarBegriffe: ["Bobath-Konzept", "Körperpflege"],
       },
       question: {
@@ -88,7 +88,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
             {
               id: "oberkörper",
               label:
-                "Oberkörper: gesunde Seite zürst entkleiden, betroffene Seite zürst ankleiden",
+                "Oberkörper: gesunde Seite zuerst entkleiden, betroffene Seite zuerst ankleiden",
             },
             {
               id: "rücken",
@@ -101,7 +101,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
             {
               id: "beine",
               label:
-                "Beine: gesunde Seite zürst waschen, betroffene Seite aktiv-assistiv einbeziehen",
+                "Beine: gesunde Seite zuerst waschen, betroffene Seite aktiv-assistiv einbeziehen",
             },
             {
               id: "fersen",
@@ -289,11 +289,11 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
         faustregelB1: "Sauberer Mund = weniger Keime in der Lunge. Rechte Wangentasche kontrollieren.",
         spektrum: [
           {
-            patientName: "Herr Baür",
-            situationsId: "ls-baür-demenz-sturz",
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
             hauptfaktor: "Demenz, wehrt sich bei Mundpflege",
             kurzbeschreibung:
-              "Baür versteht die Mundpflege nicht und wehrt sich. Strategie: Basale Stimulation — bekannte Zahnpasta, eigene Zahnbürste, rhythmisches Vorgehen, Ablenkung statt Zwang.",
+              "Bauer versteht die Mundpflege nicht und wehrt sich. Strategie: Basale Stimulation — bekannte Zahnpasta, eigene Zahnbürste, rhythmisches Vorgehen, Ablenkung statt Zwang.",
           },
           {
             patientName: "Emilia",
@@ -307,14 +307,14 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
             situationsId: "ls-kovac-ambulant",
             hauptfaktor: "COPD, Cortison-Inhalatoren → Soor-Risiko",
             kurzbeschreibung:
-              "Kovac inhaliert Cortison (COPD). Ohne Mundpflege nach Inhalation: Soor-Pilz im Mundraum. Bei ihr ist Mundpflege nach der Inhalation Pflicht — andere Indikation, gleiche Konseqünz.",
+              "Kovac inhaliert Cortison (COPD). Ohne Mundpflege nach Inhalation: Soor-Pilz im Mundraum. Bei ihr ist Mundpflege nach der Inhalation Pflicht — andere Indikation, gleiche Konsequnz.",
           },
         ],
         karteikarte: {
           vorderseite:
             "Du machst Mundpflege bei Herrn Petrov vor dem Frühstück. Warum streichst du gezielt die rechte Wangentasche aus?",
           rueckseite:
-            "Hemiparese rechts = fehlende Sensibilität und Motorik der rechten Wange. Speisereste sammeln sich dort unbemerkt (kein Feedback). Keime aus dem Mund gelangen bei Aspiration in die Lunge. Sjögren 2008: regelmäßige Mundpflege senkt Aspirationspneumonie-Rate um 40 %. Spektrum: Baür (wehrt sich, Basale Stimulation), Emilia (orale Stimulation beim Säugling), Kovac (Soor-Risiko durch Cortison). Faustregel: **Rechte Wangentasche bei Hemiparese immer kontrollieren.**",
+            "Hemiparese rechts = fehlende Sensibilität und Motorik der rechten Wange. Speisereste sammeln sich dort unbemerkt (kein Feedback). Keime aus dem Mund gelangen bei Aspiration in die Lunge. Sjögren 2008: regelmäßige Mundpflege senkt Aspirationspneumonie-Rate um 40 %. Spektrum: Bauer (wehrt sich, Basale Stimulation), Emilia (orale Stimulation beim Säugling), Kovac (Soor-Risiko durch Cortison). Faustregel: **Rechte Wangentasche bei Hemiparese immer kontrollieren.**",
         },
       },
     },
@@ -380,7 +380,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
             text: "Ich schlage ihm fest auf den Rücken, damit er frei bekommt.",
             isCorrect: false,
             feedback:
-              "Hier falsch. Rückenschläge gehören zum Choking-Algorithmus (ERC 2021) bei mechanischer Atemwegsverlegung durch einen festen Bolus — bei ineffektivem Husten zürst 5 Rückenschläge, dann 5 Bauchstöße (Heimlich-Manöver). Bei Herrn Petrov liegt aber eine Aspiration vor (Flüssigkeit in die Atemwege) — kein Bolusverschluss. Sein aktives Husten zeigt: Atemwege nicht vollständig verlegt, der Schutzreflex funktioniert. Bei komplettem Atemwegsverschluss (kein Husten, Zyanose) wären Rückenschläge und Heimlich-Manöver indiziert (ERC 2021). Hier ist Husten der wirksamste Selbstreinigungs-Mechanismus. Die richtige Reaktion ist: Anreichen stoppen, aufrichten, Husten fördern, beobachten.",
+              "Hier falsch. Rückenschläge gehören zum Choking-Algorithmus (ERC 2021) bei mechanischer Atemwegsverlegung durch einen festen Bolus — bei ineffektivem Husten zuerst 5 Rückenschläge, dann 5 Bauchstöße (Heimlich-Manöver). Bei Herrn Petrov liegt aber eine Aspiration vor (Flüssigkeit in die Atemwege) — kein Bolusverschluss. Sein aktives Husten zeigt: Atemwege nicht vollständig verlegt, der Schutzreflex funktioniert. Bei komplettem Atemwegsverschluss (kein Husten, Zyanose) wären Rückenschläge und Heimlich-Manöver indiziert (ERC 2021). Hier ist Husten der wirksamste Selbstreinigungs-Mechanismus. Die richtige Reaktion ist: Anreichen stoppen, aufrichten, Husten fördern, beobachten.",
             feedbackB1:
               "Hier falsch. Rücken-Schläge macht man bei einem festen Stück Essen, das die Atemwege verschließt (= Bolus). Hier ist es Flüssigkeit in der Lunge (= Aspiration). Husten ist die beste Hilfe — der Körper reinigt sich selbst. Stoppen, aufrichten, Husten anregen, beobachten.",
           },
@@ -421,18 +421,18 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "3-Minuten-Beobachtungsprotokoll + 24-48 h Verlaufskontrolle",
-        body: "Nach dem Aspirationsereignis beobachtest du strukturiert — 3 Minuten am Bett, 7 Punkte. Tick ab was du beobachtet hast.\n\nWichtig: Bei neurogener Dysphagie ist die stille Aspiration mit verzögerter Pneumonie-Entwicklung (24-48 h) der gefährlichste Verlauf. Die Nachbeobachtung endet nicht nach 3 Minuten — Atemfreqünz, Temperatur, Sputumveränderung und Allgemeinzustand müssen über 24-48 h im Verlauf kontrolliert und im Pflegebericht festgehalten werden. (DGG/DGN 2020)",
+        body: "Nach dem Aspirationsereignis beobachtest du strukturiert — 3 Minuten am Bett, 7 Punkte. Tick ab was du beobachtet hast.\n\nWichtig: Bei neurogener Dysphagie ist die stille Aspiration mit verzögerter Pneumonie-Entwicklung (24-48 h) der gefährlichste Verlauf. Die Nachbeobachtung endet nicht nach 3 Minuten — Atemfrequenz, Temperatur, Sputumveränderung und Allgemeinzustand müssen über 24-48 h im Verlauf kontrolliert und im Pflegebericht festgehalten werden. (DGG/DGN 2020)",
         glossarBegriffe: [
-          "Atemfreqünz",
-          "Saürstoffsättigung",
+          "Atemfrequenz",
+          "Sauerstoffsättigung",
           "Pulsoximeter",
           "stille Aspiration",
         ],
       },
       contentB1: {
         title: "3 Minuten beobachten — und im Verlauf 24-48 Stunden",
-        body: "Nach dem Verschlucken beobachtest du 3 Minuten am Bett. 7 Punkte.\nWichtig: Eine stille Aspiration kann erst nach 24-48 Stunden eine Lungen-Entzündung machen. Du beobachtest weiter: Atemfreqünz, Temperatur, Husten, Schleim. Du dokumentierst alles.",
-        glossarBegriffe: ["Atemfreqünz", "Saürstoffsättigung", "stille Aspiration"],
+        body: "Nach dem Verschlucken beobachtest du 3 Minuten am Bett. 7 Punkte.\nWichtig: Eine stille Aspiration kann erst nach 24-48 Stunden eine Lungen-Entzündung machen. Du beobachtest weiter: Atemfrequenz, Temperatur, Husten, Schleim. Du dokumentierst alles.",
+        glossarBegriffe: ["Atemfrequenz", "Sauerstoffsättigung", "stille Aspiration"],
       },
       question: {
         fragetext: "Beobachte 3 Minuten strukturiert — tick ab was du prüfst.",
@@ -440,7 +440,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
         timerVariant: "standard",
         timerQuestions: [
           {
-            question: "Atemfreqünz jetzt: zähle 15 Sekunden × 4.",
+            question: "Atemfrequenz jetzt: zähle 15 Sekunden × 4.",
             options: ["12-18/Min (normal)", ">18/Min (erhöht — beachten)", "<12/Min (erniedrigt — beachten)"],
             correctIndex: 0,
           },
@@ -454,7 +454,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
             correctIndex: 0,
           },
           {
-            question: "Saürstoffsättigung (wenn Pulsox verfügbar)?",
+            question: "Sauerstoffsättigung (wenn Pulsox verfügbar)?",
             options: [
               "≥ 95% — kein akuter Handlungsbedarf",
               "< 95% — sofort Arzt informieren",
@@ -474,7 +474,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
             question: "Klingt die Stimme noch feucht? Bitte ihn, etwas zu sagen.",
             options: [
               "Stimme klar — kein Hinweis auf Flüssigkeit in den Stimmlippen",
-              "Feuchte Stimme — mögliche residülle Aspiration",
+              "Feuchte Stimme — mögliche residuelle Aspiration",
             ],
             correctIndex: 0,
           },
@@ -730,7 +730,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
                 textB1:
                   "Drehen auf die Seite (Bobath), Beine über die Kante, linker Arm stützt — langsam, kein Zug am rechten Arm.",
                 patientResponse:
-                  "Herr Petrov dreht sich mit. Es daürt. Nach 2 Minuten sitzt er an der Kante.",
+                  "Herr Petrov dreht sich mit. Es dauert. Nach 2 Minuten sitzt er an der Kante.",
                 patientResponseB1:
                   "Herr Petrov dreht sich mit. Langsam. Er sitzt an der Kante.",
                 score: 3,
@@ -748,7 +748,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
                 patientResponseB1: "Herr Petrov zieht scharf die Luft ein.",
                 score: 0,
                 feedback:
-                  "Gefährlich. Heben unter den Achseln bei Hemiparese: Subluxationsgefahr des Schultergelenks rechts (der betroffenen Seite). Das kann massive Schmerzen und daürhafte Schäden verursachen. Außerdem: Bobath-Prinzip = Bewegungsangebot, nicht Übernehmen.",
+                  "Gefährlich. Heben unter den Achseln bei Hemiparese: Subluxationsgefahr des Schultergelenks rechts (der betroffenen Seite). Das kann massive Schmerzen und dauerhafte Schäden verursachen. Außerdem: Bobath-Prinzip = Bewegungsangebot, nicht Übernehmen.",
                 feedbackB1:
                   "Sehr gefährlich. Bei Hemiparese: Das Schulter-Gelenk kann herausspringen (= Subluxation). Das verursacht starke Schmerzen. Immer nach Bobath drehen.",
               },
@@ -834,7 +834,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
                 patientResponseB1: "Herr Petrov nickt.",
                 score: 3,
                 feedback:
-                  "Perfekt. Lob konkret (13 Minuten, Zielübertreffen), nächsten Schritt ankündigen (Hinlegen + Bobath-Lagerung), Evaluation im Kopf (RR/Puls nach Hinlegen, pflegerische Atembeobachtung — Atemfreqünz, hörbare Geräusche, Atemtiefe). Auskultation mit Stethoskop ist ärztliche Aufgabe, bei Auffälligkeiten veranlasst du sie. Das ist professionelle Pflege.",
+                  "Perfekt. Lob konkret (13 Minuten, Zielübertreffen), nächsten Schritt ankündigen (Hinlegen + Bobath-Lagerung), Evaluation im Kopf (RR/Puls nach Hinlegen, pflegerische Atembeobachtung — Atemfrequenz, hörbare Geräusche, Atemtiefe). Auskultation mit Stethoskop ist ärztliche Aufgabe, bei Auffälligkeiten veranlasst du sie. Das ist professionelle Pflege.",
                 feedbackB1:
                   "Sehr gut. Lob konkret. Nächsten Schritt ankündigen. Danach Blutdruck, Puls und Atmung prüfen — keine Auskultation mit Stethoskop, das macht der Arzt.",
               },

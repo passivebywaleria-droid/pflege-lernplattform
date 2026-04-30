@@ -283,7 +283,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
 
     // Step 3.5 — Sequencing: Maßnahmen priorisieren
     {
-      stepId: "ce02-emilia-plan-05-prioritäten-seqüncing",
+      stepId: "ce02-emilia-plan-05-prioritäten-sequencing",
       phase: 3,
       stepType: "sequencing",
       bloomLevel: 3,
@@ -299,7 +299,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
         glossarBegriffe: [],
       },
       contentB1: {
-        title: "Was kommt zürst?",
+        title: "Was kommt zuerst?",
         body: "Bringe die Maßnahmen für die nächste Stunde in die richtige Reihenfolge.",
         glossarBegriffe: [],
       },

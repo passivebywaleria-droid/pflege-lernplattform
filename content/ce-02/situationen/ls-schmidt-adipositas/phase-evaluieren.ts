@@ -283,19 +283,19 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_EVALUIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Reflexion — Ernährungsgespräch",
-        body: "Offene Reflexionsfrage: Was war der Unterschied zwischen Pfad A (Verbotsliste) und Pfad B (Biographie zürst) in deinem Gespräch mit Frau Schmidt — und was nimmst du daraus für zukünftige Ernährungsgespräche mit?",
+        body: "Offene Reflexionsfrage: Was war der Unterschied zwischen Pfad A (Verbotsliste) und Pfad B (Biographie zuerst) in deinem Gespräch mit Frau Schmidt — und was nimmst du daraus für zukünftige Ernährungsgespräche mit?",
         glossarBegriffe: ["Motivierende Gesprächsführung", "Autonomie"],
       },
       contentB1: {
         title: "Reflexion — was nimmst du mit?",
-        body: "Was war der Unterschied zwischen den zwei Wegen im Ernährungs-Gespräch?\n**Weg A:** Du hast eine Verbots-Liste gemacht. Frau Schmidt hat abgeschaltet.\n**Weg B:** Du hast zürst gefragt — zugehört — dann erklärt.\nWas nimmst du mit?\nTipp: Frau Schmidt hat eine lange Geschichte mit Essen. Verbote erinnern sie an alte Misserfolge. Fragen öffnen — Verbote schließen.",
+        body: "Was war der Unterschied zwischen den zwei Wegen im Ernährungs-Gespräch?\n**Weg A:** Du hast eine Verbots-Liste gemacht. Frau Schmidt hat abgeschaltet.\n**Weg B:** Du hast zuerst gefragt — zugehört — dann erklärt.\nWas nimmst du mit?\nTipp: Frau Schmidt hat eine lange Geschichte mit Essen. Verbote erinnern sie an alte Misserfolge. Fragen öffnen — Verbote schließen.",
         glossarBegriffe: [],
       },
       question: {
         fragetext:
-          "Was war der Unterschied zwischen Pfad A (Verbotsliste) und Pfad B (Biographie zürst) — und was nimmst du mit? (2–3 Sätze)",
+          "Was war der Unterschied zwischen Pfad A (Verbotsliste) und Pfad B (Biographie zuerst) — und was nimmst du mit? (2–3 Sätze)",
         musterantwort:
-          "Pfad A hat Frau Schmidts Widerstand aktiviert, weil Verbotslisten an vergangene Diät-Misserfolge erinnern und keine Beziehung zum Menschen herstellen. Pfad B hat zürst Verstehen ermöglicht — durch Zuhören entstand Vertraün und Frau Schmidt öffnete sich. Für zukünftige Ernährungsgespräche nehme ich mit: Biographie zürst, Fragen vor Aussagen, keine Verbote sondern konkrete erreichbare Schritte.",
+          "Pfad A hat Frau Schmidts Widerstand aktiviert, weil Verbotslisten an vergangene Diät-Misserfolge erinnern und keine Beziehung zum Menschen herstellen. Pfad B hat zuerst Verstehen ermöglicht — durch Zuhören entstand Vertrauen und Frau Schmidt öffnete sich. Für zukünftige Ernährungsgespräche nehme ich mit: Biographie zuerst, Fragen vor Aussagen, keine Verbote sondern konkrete erreichbare Schritte.",
         bewertungskriterien: [
           "Autonomieprinzip: Patient entscheidet selbst",
           "Motivierende Gesprächsführung: Fragen vor Aussagen",

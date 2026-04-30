@@ -10,9 +10,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
   titel: "Informieren & Ankommen",
   titelB1: "Ankommen bei Lukas und den Eltern",
   kontext:
-    "Du betrittst Zimmer 3 der Kinderstation. Lukas sitzt auf Sandras Schoß. Sein linker Arm ist mit einem provisorischen feuchten Verband aus der Notaufnahme abgedeckt. Er weint nicht mehr laut — nur noch schluchzend. Sandra hält ihn fest, ihr Gesicht ist verweint. Kevin steht neben dem Bett, Arme verschränkt, schaut dich abwartend an.\n\nAuf dem Nachttisch liegt die Notaufnahmekarte mit wenigen Angaben: Lukas K., 2,5 J., Verbrühung 2a, ~15 % KOF, Erstversorgung durchgeführt, Schmerzmittel i.v. verabreicht. Du hast fünf Minuten bevor Kathrin kommt.\n\nDein erstes Ziel: Vertraün aufbaün — bei Lukas, bei Sandra, und auch bei Kevin. Das gelingt nicht mit einer Checkliste in der Hand, sondern durch ruhige Präsenz, klare Worte und den ersten echten Blick auf Kind und Eltern. Gleichzeitig sammelst du Informationen: Unfallhergang, Erstversorgung, Vorerkrankungen, Entwicklungsstand, Allergien — und du führst das standardmäßige Kinderschutz-Screening durch, das bei jeder Verbrühung eines Kleinkindes stattfindet.",
+    "Du betrittst Zimmer 3 der Kinderstation. Lukas sitzt auf Sandras Schoß. Sein linker Arm ist mit einem provisorischen feuchten Verband aus der Notaufnahme abgedeckt. Er weint nicht mehr laut — nur noch schluchzend. Sandra hält ihn fest, ihr Gesicht ist verweint. Kevin steht neben dem Bett, Arme verschränkt, schaut dich abwartend an.\n\nAuf dem Nachttisch liegt die Notaufnahmekarte mit wenigen Angaben: Lukas K., 2,5 J., Verbrühung 2a, ~15 % KOF, Erstversorgung durchgeführt, Schmerzmittel i.v. verabreicht. Du hast fünf Minuten bevor Kathrin kommt.\n\nDein erstes Ziel: Vertrauen aufbaün — bei Lukas, bei Sandra, und auch bei Kevin. Das gelingt nicht mit einer Checkliste in der Hand, sondern durch ruhige Präsenz, klare Worte und den ersten echten Blick auf Kind und Eltern. Gleichzeitig sammelst du Informationen: Unfallhergang, Erstversorgung, Vorerkrankungen, Entwicklungsstand, Allergien — und du führst das standardmäßige Kinderschutz-Screening durch, das bei jeder Verbrühung eines Kleinkindes stattfindet.",
   kontextB1:
-    "Du gehst in Zimmer 3. Lukas sitzt auf dem Schoß von Sandra. Sein linker Arm hat einen Verband. Lukas schluchzt leise. Sandra hat geweint. Ihr Gesicht ist blass. Kevin steht neben dem Bett. Er schaut dich abwartend an.\n\nDu hast 5 Minuten bevor Kathrin kommt. Dein erstes Ziel: Vertraün aufbaün. Das gelingt durch ruhige Präsenz und klare Worte.\n\nDu sammelst auch Informationen: Wie ist der Unfall passiert? Was haben die Eltern zürst getan? Hat Lukas Vorerkrankungen? Hat er Allergien? Du führst auch das Kinderschutz-Screening durch — das ist Standard bei jeder Verbrühung eines kleinen Kindes.",
+    "Du gehst in Zimmer 3. Lukas sitzt auf dem Schoß von Sandra. Sein linker Arm hat einen Verband. Lukas schluchzt leise. Sandra hat geweint. Ihr Gesicht ist blass. Kevin steht neben dem Bett. Er schaut dich abwartend an.\n\nDu hast 5 Minuten bevor Kathrin kommt. Dein erstes Ziel: Vertrauen aufbaün. Das gelingt durch ruhige Präsenz und klare Worte.\n\nDu sammelst auch Informationen: Wie ist der Unfall passiert? Was haben die Eltern zuerst getan? Hat Lukas Vorerkrankungen? Hat er Allergien? Du führst auch das Kinderschutz-Screening durch — das ist Standard bei jeder Verbrühung eines kleinen Kindes.",
   kernSteps: [
     // Step 1.1 — MC: Erstbegegnung — was tust du zuerst?
     {
@@ -32,7 +32,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
         glossarBegriffe: [],
       },
       contentB1: {
-        title: "Was machst du zürst?",
+        title: "Was machst du zuerst?",
         body: "Du gehst in das Zimmer. Lukas weint. Sandra ist aufgewühlt. Kevin schaut dich an. Was machst du ZUERST?",
         glossarBegriffe: [],
       },
@@ -42,28 +42,28 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
         mcVariant: "fallstrick",
         optionen: [
           {
-            text: "Verband abschaün und die Wunde einschätzen",
+            text: "Verband abschauen und die Wunde einschätzen",
             isCorrect: false,
             explanation:
-              "Nicht so. Wundinspektion ohne Vorbereitung und Beziehungsaufbau verstärkt das Abwehrverhalten von Lukas. Er hat Angst vor Berührung — wenn du sofort anfasst, schlägt er um sich. Vertraün kommt vor Information.",
+              "Nicht so. Wundinspektion ohne Vorbereitung und Beziehungsaufbau verstärkt das Abwehrverhalten von Lukas. Er hat Angst vor Berührung — wenn du sofort anfasst, schlägt er um sich. Vertrauen kommt vor Information.",
             explanationB1:
-              "Nicht so. Wenn du zürst den Verband anschaust: Lukas hat Angst. Er wehrt sich. Erst vorstellen, dann schaün.",
+              "Nicht so. Wenn du zuerst den Verband anschaust: Lukas hat Angst. Er wehrt sich. Erst vorstellen, dann schauen.",
           },
           {
             text: "Dich vorstellen, kurz erklären was du jetzt machst, Lukas auf Augenhöhe ansprechen",
             isCorrect: true,
             explanation:
-              "Richtig. Vertraün kommt vor Informationssammlung. Dich vorstellen gibt Sicherheit. Kurz erklären was du tust gibt Kontrolle zurück. Auf Augenhöhe zu Lukas gehen — nicht über ihn hinweg sprechen — zeigt Respekt auch dem kleinen Patienten gegenüber. Erst dann folgt die strukturierte Aufnahme.",
+              "Richtig. Vertrauen kommt vor Informationssammlung. Dich vorstellen gibt Sicherheit. Kurz erklären was du tust gibt Kontrolle zurück. Auf Augenhöhe zu Lukas gehen — nicht über ihn hinweg sprechen — zeigt Respekt auch dem kleinen Patienten gegenüber. Erst dann folgt die strukturierte Aufnahme.",
             explanationB1:
-              "Richtig. Vertraün kommt zürst — dann Information. Dich vorstellen, erklären was du tust, auf Augenhöhe zu Lukas. Das braucht nur 30 Sekunden — aber es ändert alles.",
+              "Richtig. Vertrauen kommt zuerst — dann Information. Dich vorstellen, erklären was du tust, auf Augenhöhe zu Lukas. Das braucht nur 30 Sekunden — aber es ändert alles.",
           },
           {
             text: "Sofort die Aufnahmedaten abfragen",
             isCorrect: false,
             explanation:
-              "Nicht als erstes. Formale Aufnahme erst nach erstem Kontakt. Wenn du sofort Daten abfragst, fühlt sich das kalt an — Sandra und Kevin werden dir nicht vertraün. Und Lukas sieht: Du interessierst dich nicht für ihn.",
+              "Nicht als erstes. Formale Aufnahme erst nach erstem Kontakt. Wenn du sofort Daten abfragst, fühlt sich das kalt an — Sandra und Kevin werden dir nicht vertrauen. Und Lukas sieht: Du interessierst dich nicht für ihn.",
             explanationB1:
-              "Nicht zürst. Das fühlt sich kalt an. Die Eltern vertraün dir dann nicht.",
+              "Nicht zuerst. Das fühlt sich kalt an. Die Eltern vertrauen dir dann nicht.",
           },
           {
             text: "Kevin fragen was passiert ist",
@@ -136,7 +136,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
             situationsId: "ls-emilia-säugling",
             hauptfaktor: "Säugling — noch empfindlicher als Kleinkind",
             kurzbeschreibung:
-              "Bei Säuglingen (<1 Jahr) ist das Hypothermie-Risiko noch höher als bei Lukas. Kühldaür bei Verbrühung noch kürzer (max. 5 Min), Wärmeerhalt noch wichtiger. Emilia hat keine Verbrühung — aber das Prinzip Thermoregulation gilt auch bei ihr.",
+              "Bei Säuglingen (<1 Jahr) ist das Hypothermie-Risiko noch höher als bei Lukas. Kühldauer bei Verbrühung noch kürzer (max. 5 Min), Wärmeerhalt noch wichtiger. Emilia hat keine Verbrühung — aber das Prinzip Thermoregulation gilt auch bei ihr.",
           },
           {
             patientName: "Frau Yilmaz (Hüft-TEP)",
@@ -180,7 +180,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
         "Pediatric hospital room, young mother holding toddler on her lap with bandaged arm, nurse kneeling at child eye level, warm soft light, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Unfallhergang aufnehmen",
-        body: "Du hast dich vorgestellt. Sandra atmet hörbar aus. Du bittest sie zu erzählen.\n\nSandra berichtet: **S** = Verbrühung linker Arm + Thorax, heute 09:20 Uhr. **B** = Lukas 2,5 J., bisher gesund, keine Vorerkrankungen, keine Allergien, U-Heft liegt vor. **A** = KUSS 8/10 bei Aufnahme, Schmerzmittel i.v. bereits verabreicht, provisorische Abdeckung angelegt. **R** = Aufnahme + Wundversorgung + Flüssigkeitsbilanz + Kinderschutz-Screening.\n\nWas Sandra als erstes erzählt: \"Ich hab nur kurz nicht hingeschaut. Eine Sekunde. Das war alles meine Schuld.\"\n\nWichtig — und das sagst du Sandra jetzt: **\"Sie haben das schnell und richtig gemacht.\"** Sandra hat die nasse Kleidung sofort entfernt, kurz lokal mit lauwarmem Wasser gekühlt (~8 Min) und Lukas dann warm zugedeckt — genau das ist nach aktüller DGV/GNPI-Empfehlung der Standard für Kleinkinder. Bei Kindern unter 8 Jahren bzw. >10 % KOF gilt: nur kurz lokal kühlen (max. 10 Min), lauwarmes Wasser (~20 °C), Wärmeerhalt am Restkörper — sonst droht Hypothermie und der Schock verstärkt sich. Das ist keine Beruhigung aus der Luft — das ist eine fachliche Rückmeldung. Sandra muss das wissen, und Kevin auch. Dieser Satz ist Kommunikation — nicht nur Befund.",
+        body: "Du hast dich vorgestellt. Sandra atmet hörbar aus. Du bittest sie zu erzählen.\n\nSandra berichtet: **S** = Verbrühung linker Arm + Thorax, heute 09:20 Uhr. **B** = Lukas 2,5 J., bisher gesund, keine Vorerkrankungen, keine Allergien, U-Heft liegt vor. **A** = KUSS 8/10 bei Aufnahme, Schmerzmittel i.v. bereits verabreicht, provisorische Abdeckung angelegt. **R** = Aufnahme + Wundversorgung + Flüssigkeitsbilanz + Kinderschutz-Screening.\n\nWas Sandra als erstes erzählt: \"Ich hab nur kurz nicht hingeschaut. Eine Sekunde. Das war alles meine Schuld.\"\n\nWichtig — und das sagst du Sandra jetzt: **\"Sie haben das schnell und richtig gemacht.\"** Sandra hat die nasse Kleidung sofort entfernt, kurz lokal mit lauwarmem Wasser gekühlt (~8 Min) und Lukas dann warm zugedeckt — genau das ist nach aktueller DGV/GNPI-Empfehlung der Standard für Kleinkinder. Bei Kindern unter 8 Jahren bzw. >10 % KOF gilt: nur kurz lokal kühlen (max. 10 Min), lauwarmes Wasser (~20 °C), Wärmeerhalt am Restkörper — sonst droht Hypothermie und der Schock verstärkt sich. Das ist keine Beruhigung aus der Luft — das ist eine fachliche Rückmeldung. Sandra muss das wissen, und Kevin auch. Dieser Satz ist Kommunikation — nicht nur Befund.",
         fallbezug:
           "Lukas K., 2,5 J., Verbrühung Grad 2a ~15 % KOF linker Arm + Thorax. Du bist Pflegeschüler/in im 2. Ausbildungsdrittel auf der Kinderstation. Praxisanleiterin Kathrin kommt in 5 Minuten.",
         glossarBegriffe: ["SBAR", "KOF (Körperoberfläche)", "KUSS-Skala"],
@@ -233,11 +233,11 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
         storyAufhaengerB1:
           "Du musst Kevin gleich sagen: Es kommt ein Gespräch zum Kinderschutz. Kevin wird das als Vorwurf verstehen. Bevor du mit ihm sprichst: Was ist das Kinderschutz-Screening genau?",
         kerntext:
-          "**§ 4 KKG (Gesetz zur Kooperation und Information im Kinderschutz, 2012):**\n\nBei jeder **Verbrühung/Verbrennung eines Kindes unter 6 Jahren mit >10 % KOF** ist ein standardisiertes Kinderschutz-Screening vorgeschrieben — nicht weil die Eltern verdächtig sind, sondern weil die **Statistik es erfordert**.\n\n**Die 4 Schritte:**\n\n• **Hinschaün** — Unfallhergang plausibel? Verletzungsmuster passend? Entwicklungsstand des Kindes altersentsprechend?\n\n• **Einschätzen** — geschulte Fachkraft (Sozialarbeit) führt das Gespräch, nicht die Pflege allein.\n\n• **Handeln** — bei konkretem Verdacht: § 8a SGB VIII (Jugendamt einschalten). Ohne konkreten Verdacht: Dokumentation + Empfehlung.\n\n• **Dokumentieren** — sachlich, nicht wertend. Was wurde beobachtet, nicht was vermutet wird.\n\n**Wichtig für dich:** Du führst das Screening nicht durch — das macht die Sozialarbeiterin (Frau Fink). Aber du musst es **ankündigen, erklären und die Eltern vorbereiten**. Und du beobachtest fachlich — Interaktion, Verletzungsmuster, Entwicklungsstand.\n\n**Bei Lukas:** Unfallhergang plausibel (Teetasse, Küche, 2,5 J. = Greifhöhe). Erstversorgung korrekt. U-Heft vorhanden. Kein Hinweis auf Gefährdung.",
+          "**§ 4 KKG (Gesetz zur Kooperation und Information im Kinderschutz, 2012):**\n\nBei jeder **Verbrühung/Verbrennung eines Kindes unter 6 Jahren mit >10 % KOF** ist ein standardisiertes Kinderschutz-Screening vorgeschrieben — nicht weil die Eltern verdächtig sind, sondern weil die **Statistik es erfordert**.\n\n**Die 4 Schritte:**\n\n• **Hinschauen** — Unfallhergang plausibel? Verletzungsmuster passend? Entwicklungsstand des Kindes altersentsprechend?\n\n• **Einschätzen** — geschulte Fachkraft (Sozialarbeit) führt das Gespräch, nicht die Pflege allein.\n\n• **Handeln** — bei konkretem Verdacht: § 8a SGB VIII (Jugendamt einschalten). Ohne konkreten Verdacht: Dokumentation + Empfehlung.\n\n• **Dokumentieren** — sachlich, nicht wertend. Was wurde beobachtet, nicht was vermutet wird.\n\n**Wichtig für dich:** Du führst das Screening nicht durch — das macht die Sozialarbeiterin (Frau Fink). Aber du musst es **ankündigen, erklären und die Eltern vorbereiten**. Und du beobachtest fachlich — Interaktion, Verletzungsmuster, Entwicklungsstand.\n\n**Bei Lukas:** Unfallhergang plausibel (Teetasse, Küche, 2,5 J. = Greifhöhe). Erstversorgung korrekt. U-Heft vorhanden. Kein Hinweis auf Gefährdung.",
         kerntextB1:
-          "**§ 4 KKG (Kinderschutz-Gesetz, 2012):**\n\nBei jeder **Verbrühung eines kleinen Kindes (unter 6 Jahre, mehr als 10 % KOF)** gibt es ein Kinderschutz-Screening. Das ist **kein Verdacht** — das ist ein Standard.\n\n**4 Schritte:**\n\n• **Hinschaün** — Passt der Unfallhergang? Ist die Verletzung logisch?\n\n• **Einschätzen** — Die Sozialarbeiterin führt das Gespräch.\n\n• **Handeln** — Bei Verdacht: Jugendamt. Ohne Verdacht: Dokumentation.\n\n• **Dokumentieren** — Sachlich aufschreiben, was du beobachtet hast.\n\n**Deine Aufgabe:** Du führst das Screening NICHT durch. Frau Fink macht das. Aber du sagst den Eltern Bescheid. Und du beobachtest: Wie verhalten sich die Eltern? Wie sieht die Verletzung aus?\n\n**Bei Lukas:** Alles passt zusammen. Unfallhergang logisch. Sandra hat richtig reagiert. Kein Verdacht.",
+          "**§ 4 KKG (Kinderschutz-Gesetz, 2012):**\n\nBei jeder **Verbrühung eines kleinen Kindes (unter 6 Jahre, mehr als 10 % KOF)** gibt es ein Kinderschutz-Screening. Das ist **kein Verdacht** — das ist ein Standard.\n\n**4 Schritte:**\n\n• **Hinschauen** — Passt der Unfallhergang? Ist die Verletzung logisch?\n\n• **Einschätzen** — Die Sozialarbeiterin führt das Gespräch.\n\n• **Handeln** — Bei Verdacht: Jugendamt. Ohne Verdacht: Dokumentation.\n\n• **Dokumentieren** — Sachlich aufschreiben, was du beobachtet hast.\n\n**Deine Aufgabe:** Du führst das Screening NICHT durch. Frau Fink macht das. Aber du sagst den Eltern Bescheid. Und du beobachtest: Wie verhalten sich die Eltern? Wie sieht die Verletzung aus?\n\n**Bei Lukas:** Alles passt zusammen. Unfallhergang logisch. Sandra hat richtig reagiert. Kein Verdacht.",
         faustregel:
-          "Kinderschutz-Screening = Hinschaün, nicht Beschuldigen. Standard bei jedem Kind <6 J. mit Verbrühung >10 % KOF.",
+          "Kinderschutz-Screening = Hinschauen, nicht Beschuldigen. Standard bei jedem Kind <6 J. mit Verbrühung >10 % KOF.",
         faustregelB1:
           "Kinderschutz-Screening ist Standard, kein Vorwurf. Es gibt das bei jedem kleinen Kind mit Verbrühung.",
         spektrum: [
@@ -249,11 +249,11 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
               "Bei Säuglingen unter 12 Monaten ist die Schwelle für ein Kinderschutz-Screening noch niedriger. Jede stationäre Aufnahme eines Säuglings mit Verletzung triggert automatisch die Abklärung. Bei Emilia (Bronchiolitis, keine Verletzung) läuft kein Screening — aber die grundsätzliche Aufmerksamkeit ist Teil des pädiatrischen Standards.",
           },
           {
-            patientName: "Herr Baür (82, Demenz)",
-            situationsId: "ls-baür-demenz-sturz",
+            patientName: "Herr Bauer (82, Demenz)",
+            situationsId: "ls-bauer-demenz-sturz",
             hauptfaktor: "Erwachsenenschutz — ähnliches Prinzip, anderes Gesetz",
             kurzbeschreibung:
-              "Auch bei älteren Menschen gibt es Schutzverfahren: Gewalt in der Pflege, Vernachlässigung in Heimen (§ 19 WTG / § 5 LWTG). Das Prinzip ist dasselbe — standardisiertes Hinschaün, nicht Verdacht. Baür lebt allein mit Demenz — Vernachlässigungsrisiko wird bei der Entlassung geprüft.",
+              "Auch bei älteren Menschen gibt es Schutzverfahren: Gewalt in der Pflege, Vernachlässigung in Heimen (§ 19 WTG / § 5 LWTG). Das Prinzip ist dasselbe — standardisiertes Hinschauen, nicht Verdacht. Bauer lebt allein mit Demenz — Vernachlässigungsrisiko wird bei der Entlassung geprüft.",
           },
           {
             patientName: "Frau Schmidt (BMI 38, Polyneuropathie)",
@@ -271,7 +271,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
           vorderseite:
             "Kevin fragt dich aufgebracht: \"Warum kommt eine Sozialarbeiterin? Beschuldigt ihr uns?\" — Was antwortest du, und auf welcher gesetzlichen Grundlage basiert das Screening?",
           rueckseite:
-            "§ 4 KKG 2012: Bei jeder Verbrühung/Verbrennung eines Kindes <6 J. mit >10 % KOF ist ein standardisiertes Kinderschutz-Screening Pflicht. 4 Schritte: Hinschaün → Einschätzen → Handeln → Dokumentieren. Es ist kein Verdacht, sondern ein systematischer Abklärungsprozess.\n\nSpektrum: Bei Säuglingen (Emilia) noch niedrigere Schwelle, bei Erwachsenen (Baür) ähnliches Prinzip über WTG.\n\nFaustregel: **Kinderschutz-Screening = Hinschaün, nicht Beschuldigen.**",
+            "§ 4 KKG 2012: Bei jeder Verbrühung/Verbrennung eines Kindes <6 J. mit >10 % KOF ist ein standardisiertes Kinderschutz-Screening Pflicht. 4 Schritte: Hinschauen → Einschätzen → Handeln → Dokumentieren. Es ist kein Verdacht, sondern ein systematischer Abklärungsprozess.\n\nSpektrum: Bei Säuglingen (Emilia) noch niedrigere Schwelle, bei Erwachsenen (Bauer) ähnliches Prinzip über WTG.\n\nFaustregel: **Kinderschutz-Screening = Hinschauen, nicht Beschuldigen.**",
         },
       },
     },
@@ -418,7 +418,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
                   "Sandra zieht sich zurück. \"Okay.\" Sie schaut weg.",
                 score: 0,
                 feedback:
-                  "Du weißt mehr als du sagst. Sandra hat etwas Falsches getan? Nein — sie hat alles richtig gemacht. Das weißt du aus dem Unfallhergang. Eine Abschiebung an Frau Fink lässt Sandra mit ihrer Angst allein. Das schadet dem Vertraün.",
+                  "Du weißt mehr als du sagst. Sandra hat etwas Falsches getan? Nein — sie hat alles richtig gemacht. Das weißt du aus dem Unfallhergang. Eine Abschiebung an Frau Fink lässt Sandra mit ihrer Angst allein. Das schadet dem Vertrauen.",
                 feedbackB1:
                   "Du weißt mehr. Sandra hat alles richtig gemacht — das weißt du schon. Sage es ihr. Sonst bleibt sie mit ihrer Angst allein.",
               },
@@ -442,23 +442,23 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "U-Heft sichten — was ist relevant?",
-        body: "Sandra hat das U-Heft mitgebracht. Vor dir liegt eine vereinfachte Darstellung der Seiten. Markiere alle Informationen, die für Lukas' aktülle Situation medizinisch relevant sind.",
+        body: "Sandra hat das U-Heft mitgebracht. Vor dir liegt eine vereinfachte Darstellung der Seiten. Markiere alle Informationen, die für Lukas' aktuelle Situation medizinisch relevant sind.",
         glossarBegriffe: ["U-Untersuchungen", "Tetanus-Impfung", "STIKO"],
       },
       contentB1: {
-        title: "U-Heft anschaün — was ist wichtig?",
+        title: "U-Heft anschauen — was ist wichtig?",
         body: "Sandra hat das U-Heft dabei. Markiere alles, das für Lukas jetzt wichtig ist.",
         glossarBegriffe: ["U-Untersuchungen", "Tetanus-Impfung"],
       },
       question: {
         fragetext:
-          "Markiere alle Informationen im U-Heft, die für Lukas' aktülle Situation medizinisch relevant sind.",
+          "Markiere alle Informationen im U-Heft, die für Lukas' aktuelle Situation medizinisch relevant sind.",
         highlightSegments: [
           {
             text: "Gewicht 13,2 kg, Körperlänge 92 cm (U6-Eintragung, 18 Monate)",
             isError: true,
             reason:
-              "Relevant — aktülles Gewicht wird für Flüssigkeits- und Medikamentenberechnung gebraucht (Holliday-Segar-Regel, Schmerzmedikation nach kg/KG).",
+              "Relevant — aktuelles Gewicht wird für Flüssigkeits- und Medikamentenberechnung gebraucht (Holliday-Segar-Regel, Schmerzmedikation nach kg/KG).",
             reasonB1:
               "Wichtig — das Gewicht brauchen wir für Medikamente und Flüssigkeitsberechnung.",
           },
@@ -496,7 +496,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
             text: "Beratungsinhalt U6: Sicherheit im Haushalt, Sturzsicherung, Giftzentrale",
             isError: false,
             reason:
-              "Standard-Beratungsinhalt — nicht akut relevant. Die Beratung hat stattgefunden (wie überall bei U6). Kein Befund für den aktüllen Fall.",
+              "Standard-Beratungsinhalt — nicht akut relevant. Die Beratung hat stattgefunden (wie überall bei U6). Kein Befund für den aktuellen Fall.",
           },
         ],
       },
@@ -530,7 +530,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
         sortItems: [
           "Unfallhergang + Zeitpunkt (wann, wie, womit?)",
           "Erstversorgung zuhause (Kühlung korrekt?)",
-          "Vorerkrankungen, Allergien, aktülle Medikamente",
+          "Vorerkrankungen, Allergien, aktuelle Medikamente",
           "Entwicklungsstand (Sprache, Motorik altersgerecht?)",
           "Familienanamnese: Weitere Unfälle? Frühere Krankenhausbesuche?",
           "Kinderschutz-Screening einleiten und Ablauf erklären",

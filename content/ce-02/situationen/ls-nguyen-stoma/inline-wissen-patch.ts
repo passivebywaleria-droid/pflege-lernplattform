@@ -52,9 +52,9 @@ export const CE02_NGUYEN_IWP_01_PFLEGEPROBLEME: ContentStep = {
     storyAufhaengerB1:
       "Du weißt jetzt: Herr Nguyen hat ein Kolostoma. Aber er hat noch mehr Probleme: Schmerzen, kann sich kaum bewegen, spricht wenig Deutsch. Wo fängst du an?",
     kerntext:
-      "**Was ist ein Pflegeproblem?** Ein Zustand, der pflegerisches Handeln erfordert — entweder akut (besteht jetzt) oder als Risiko (kann entstehen). Aus der Pflegeanamnese und dem Assessment abgeleitet (Fiechter/Meier 1981).\n\n**Typische Pflegeprobleme bei Herrn Nguyen:**\n\n• **Stoma-Versorgung**: Beutelwechsel, Hautschutz, Selbstversorgung anleiten\n• **Ernährung**: Post-OP Kostaufbau, Risiko Mangelernährung (NRS-2002)\n• **Dekubitus-Risiko**: Immobilität post-OP + reduzierte Ernährung\n• **Thrombose-Risiko**: Post-OP + Immobilität + Tumorerkrankung\n• **Sprachbarriere**: Kommunikation erschwert, Anleitung schwieriger\n\n**Priorisierung — Reihenfolge nach Gefährdung:**\n\n1. **Vitale Bedrohung zürst**: Thrombose, Blutung, Atemwege\n2. **Akute Probleme**: Stoma-Versorgung, Schmerz\n3. **Risiken**: Dekubitus, Mangelernährung\n4. **Psychosoziale Aspekte**: Scham, Körperbild, Sprachbarriere\n\nPriorisierung heißt NICHT, dass psychosoziale Probleme unwichtig sind — nur, dass vitale Bedrohungen zürst kommen.",
+      "**Was ist ein Pflegeproblem?** Ein Zustand, der pflegerisches Handeln erfordert — entweder akut (besteht jetzt) oder als Risiko (kann entstehen). Aus der Pflegeanamnese und dem Assessment abgeleitet (Fiechter/Meier 1981).\n\n**Typische Pflegeprobleme bei Herrn Nguyen:**\n\n• **Stoma-Versorgung**: Beutelwechsel, Hautschutz, Selbstversorgung anleiten\n• **Ernährung**: Post-OP Kostaufbau, Risiko Mangelernährung (NRS-2002)\n• **Dekubitus-Risiko**: Immobilität post-OP + reduzierte Ernährung\n• **Thrombose-Risiko**: Post-OP + Immobilität + Tumorerkrankung\n• **Sprachbarriere**: Kommunikation erschwert, Anleitung schwieriger\n\n**Priorisierung — Reihenfolge nach Gefährdung:**\n\n1. **Vitale Bedrohung zuerst**: Thrombose, Blutung, Atemwege\n2. **Akute Probleme**: Stoma-Versorgung, Schmerz\n3. **Risiken**: Dekubitus, Mangelernährung\n4. **Psychosoziale Aspekte**: Scham, Körperbild, Sprachbarriere\n\nPriorisierung heißt NICHT, dass psychosoziale Probleme unwichtig sind — nur, dass vitale Bedrohungen zuerst kommen.",
     kerntextB1:
-      "**Was ist ein Pflege-Problem?** Etwas, das pflegerisches Handeln braucht.\n\n**Herrn Nguyens Probleme:**\n• Stoma-Versorgung (Beutelwechsel lernen)\n• Ernährung (nach OP wenig gegessen)\n• Dekubitus-Risiko (liegt viel, isst wenig)\n• Thrombose-Risiko (nach OP, liegt viel, Krebs)\n• Sprach-Barriere (versteht wenig Deutsch)\n\n**Reihenfolge:**\n1. Lebens-Gefahr zürst (Thrombose, Blutung)\n2. Akute Probleme (Stoma, Schmerz)\n3. Risiken (Dekubitus, Ernährung)\n4. Psycho-soziales (Scham, Sprache)",
+      "**Was ist ein Pflege-Problem?** Etwas, das pflegerisches Handeln braucht.\n\n**Herrn Nguyens Probleme:**\n• Stoma-Versorgung (Beutelwechsel lernen)\n• Ernährung (nach OP wenig gegessen)\n• Dekubitus-Risiko (liegt viel, isst wenig)\n• Thrombose-Risiko (nach OP, liegt viel, Krebs)\n• Sprach-Barriere (versteht wenig Deutsch)\n\n**Reihenfolge:**\n1. Lebens-Gefahr zuerst (Thrombose, Blutung)\n2. Akute Probleme (Stoma, Schmerz)\n3. Risiken (Dekubitus, Ernährung)\n4. Psycho-soziales (Scham, Sprache)",
     faustregel:
       "**Vitale Bedrohung → Akut �� Risiko → Psychosozial.** Immer in dieser Reihenfolge priorisieren.",
     faustregelB1:
@@ -79,7 +79,7 @@ export const CE02_NGUYEN_IWP_01_PFLEGEPROBLEME: ContentStep = {
         situationsId: "ls-schmidt-adipositas",
         hauptfaktor: "BZ-Entgleisung + Proteinmangel",
         kurzbeschreibung:
-          "Bei Frau Schmidt: BZ 398 mg/dl = akut. Proteinmangel = Risiko. Intertrigo = Risiko. Priorisierung: BZ stabilisieren zürst.",
+          "Bei Frau Schmidt: BZ 398 mg/dl = akut. Proteinmangel = Risiko. Intertrigo = Risiko. Priorisierung: BZ stabilisieren zuerst.",
       },
     ],
     karteikarte: {
@@ -220,7 +220,7 @@ export const CE02_NGUYEN_IWP_03_HAUTZEICHEN: ContentStep = {
     kerntext:
       "**Livide** = bläulich-violett verfärbt. Zeichen für eine Durchblutungsstörung oder venöse Stauung. Beim Stoma: Ein livides Stoma kann auf Minderdurchblutung hindeuten — Arzt sofort informieren.\n\n**Serös** = klar, wässrig, gelblich. Seröses Exsudat = klare Flüssigkeit, die aus einer Wunde oder Reizstelle austritt. Im Unterschied zu:\n\n• **Purulent** = eitrig (gelblich-grün, dickflüssig) — Zeichen einer Infektion\n�� **Blutig** = hämorrhagisch — Zeichen einer Blutung\n• **Fibrinös** = gelblich-belagbildend — Zeichen einer entzündlichen Reaktion\n\n**Reihenfolge der Befunderhebung bei der Hautinspektion:**\n\n1. Farbe: rosig (normal), gerötet (Entzündung), livide (Durchblutungsstörung), blass (Anämie/Schock)\n2. Feuchtigkeit: trocken, feucht, nässend, Exsudat-Art (serös, purulent, blutig)\n3. Integrität: intakt, mazeriert, Erosion, Ulkus\n4. Temperatur: warm (normal), überwärmt (Entzündung), kalt (Minderdurchblutung)",
     kerntextB1:
-      "**Livide** = bläulich-violett. Die Haut hat zu wenig Durchblutung. Beim Stoma: Wenn das Stoma livide aussieht → sofort Arzt informieren.\n\n**Serös** = klar und wässrig (leicht gelblich). Flüssigkeit, die aus einer gereizten Stelle kommt.\n\nAndere Wund-Flüssigkeiten:\n• **Eitrig** = gelblich-grün, dick → Infektion\n• **Blutig** = rot → Blutung\n\n**Haut anschaün — Reihenfolge:**\n1. Farbe (rosig, rot, bläulich, blass)\n2. Feuchtigkeit (trocken, nass, welche Flüssigkeit)\n3. Ist die Haut heil oder verletzt?\n4. Warm oder kalt?",
+      "**Livide** = bläulich-violett. Die Haut hat zu wenig Durchblutung. Beim Stoma: Wenn das Stoma livide aussieht → sofort Arzt informieren.\n\n**Serös** = klar und wässrig (leicht gelblich). Flüssigkeit, die aus einer gereizten Stelle kommt.\n\nAndere Wund-Flüssigkeiten:\n• **Eitrig** = gelblich-grün, dick → Infektion\n• **Blutig** = rot → Blutung\n\n**Haut anschauen — Reihenfolge:**\n1. Farbe (rosig, rot, bläulich, blass)\n2. Feuchtigkeit (trocken, nass, welche Flüssigkeit)\n3. Ist die Haut heil oder verletzt?\n4. Warm oder kalt?",
     faustregel:
       "**Livide = bläulich = Durchblutungsstörung. Serös = klar = Reizung ohne Infektion.**",
     faustregelB1:
@@ -238,7 +238,7 @@ export const CE02_NGUYEN_IWP_03_HAUTZEICHEN: ContentStep = {
         situationsId: "ls-kovac-ambulant",
         hauptfaktor: "Livide Unterschenkel bei Ödem",
         kurzbeschreibung:
-          "Bei Frau Kovac: livide Verfärbung an den Unterschenkeln = chronisch-venöse Insuffizienz. Hier ist livide kein Notfall, sondern ein Daürbefund.",
+          "Bei Frau Kovac: livide Verfärbung an den Unterschenkeln = chronisch-venöse Insuffizienz. Hier ist livide kein Notfall, sondern ein Dauerbefund.",
       },
       {
         patientName: "Lukas",
@@ -377,17 +377,17 @@ export const CE02_NGUYEN_IWP_05_THROMBOSE_ZEICHEN: ContentStep = {
     bausteinRef: "thrombose-prophylaxe-klinische-zeichen",
     themaPrimaer: "thrombose-prophylaxe",
     storyAufhaenger:
-      "Herr Nguyen bekommt Heparin — trotzdem: eine Thrombose kann auch unter Prophylaxe entstehen. Du schaust jetzt seine Beine an. Was sind die Warnzeichen — und warum ist der Wells-Score bei ihm schon vor dem Hinschaün hoch?",
+      "Herr Nguyen bekommt Heparin — trotzdem: eine Thrombose kann auch unter Prophylaxe entstehen. Du schaust jetzt seine Beine an. Was sind die Warnzeichen — und warum ist der Wells-Score bei ihm schon vor dem Hinschauen hoch?",
     storyAufhaengerB1:
       "Herr Nguyen bekommt Heparin-Spritzen. Trotzdem kann eine Thrombose entstehen. Du schaust seine Beine an. Worauf achtest du?",
     kerntext:
       "**Klinische Zeichen einer tiefen Venenthrombose (TVT):**\n\n• Einseitige Beinschwellung (Umfangsdifferenz > 3 cm)\n• Überwärmung des betroffenen Beins\n• Rötung oder livide Verfärbung\n• Druckschmerz in der Wade (Payr-Zeichen: Fußsohle, Meyer-Zeichen: Wadendruckpunkt)\n• Spannungsgefühl\n\n**Wells-Score — Klinische Vorhersageregel:**\n\nPunktsystem zur Einschätzung der TVT-Wahrscheinlichkeit:\n\n• Aktive Tumorerkrankung (Behandlung ≤ 6 Mo): **+1 Punkt** — trifft auf Herrn Nguyen zu\n• OP/Bettlägerigkeit > 3 Tage: **+1 Punkt** — trifft zu (4. POD)\n• Einseitige Beinschwellung: +1 Punkt\n• Wadenumfang > 3 cm Differenz: +1 Punkt\n• Eindrückbares Ödem: +1 Punkt\n\n**Herr Nguyen startet mit 2 Punkten** (Tumor + OP) — noch BEVOR du die Beine anschaust. Bei ≥ 2 Punkten: TVT wahrscheinlich → Arzt + Ultraschall-Diagnostik.\n\n**Pflege-Aufgabe:** Beine täglich inspizieren (Schwellung, Rötung, Temperatur), Umfangsmessung dokumentieren, bei Verdacht sofort Arzt informieren — auch unter laufender Heparin-Gabe.",
     kerntextB1:
-      "**Woran erkennst du eine Thrombose?**\n\n• Ein Bein ist dicker als das andere\n• Das Bein ist warm und rot (oder bläulich)\n• Druck auf die Wade tut weh\n• Spannung im Bein\n\n**Wells-Score (Punkte-System):**\n\nHerr Nguyen hat schon 2 Punkte, BEVOR du schaust:\n• Krebs (+1 Punkt)\n• OP vor 4 Tagen (+1 Punkt)\n\nAb 2 Punkten: Thrombose wahrscheinlich → Arzt informieren.\n\n**Deine Aufgabe:** Beine jeden Tag anschaün. Schwellung? Rötung? Wärme? Bei Verdacht: sofort Arzt rufen.",
+      "**Woran erkennst du eine Thrombose?**\n\n• Ein Bein ist dicker als das andere\n• Das Bein ist warm und rot (oder bläulich)\n• Druck auf die Wade tut weh\n• Spannung im Bein\n\n**Wells-Score (Punkte-System):**\n\nHerr Nguyen hat schon 2 Punkte, BEVOR du schaust:\n• Krebs (+1 Punkt)\n• OP vor 4 Tagen (+1 Punkt)\n\nAb 2 Punkten: Thrombose wahrscheinlich → Arzt informieren.\n\n**Deine Aufgabe:** Beine jeden Tag anschauen. Schwellung? Rötung? Wärme? Bei Verdacht: sofort Arzt rufen.",
     faustregel:
       "**Tumor + OP = 2 Wells-Punkte.** Schon ohne Symptome ist eine TVT wahrscheinlich — täglich Beine prüfen.",
     faustregelB1:
-      "Krebs + OP = schon 2 Punkte. Jeden Tag die Beine anschaün. Bei Verdacht sofort Arzt rufen.",
+      "Krebs + OP = schon 2 Punkte. Jeden Tag die Beine anschauen. Bei Verdacht sofort Arzt rufen.",
     spektrum: [
       {
         patientName: "Frau Yilmaz",
@@ -404,11 +404,11 @@ export const CE02_NGUYEN_IWP_05_THROMBOSE_ZEICHEN: ContentStep = {
           "Bei Frau Kovac: Chronische Beinödeme erschweren die Beurteilung. Umfangsmessung regelmäßig = Baseline-Vergleich wichtig.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Immobilität + vergisst Beinübungen",
         kurzbeschreibung:
-          "Herr Baür liegt zunehmend — TVT-Risiko steigt. Er vergisst Beinübungen. Pflege muss sie aktiv anleiten (nicht nur verordnen).",
+          "Herr Bauer liegt zunehmend — TVT-Risiko steigt. Er vergisst Beinübungen. Pflege muss sie aktiv anleiten (nicht nur verordnen).",
       },
     ],
     karteikarte: {
@@ -466,9 +466,9 @@ export const CE02_NGUYEN_IWP_06_DEKUBITUS_LAGERUNG: ContentStep = {
     storyAufhaengerB1:
       "Herr Nguyen liegt viel im Bett. Er hat Dekubitus-Risiko. Im Pflege-Plan steht: \"Lagerung alle 2 Stunden.\" Aber wie genau?",
     kerntext:
-      "**Druckentlastung** = das Grundprinzip der Dekubitusprophylaxe. Druck auf Knochen-Prominenzen (Sakrum, Fersen, Trochanter) verursacht Gewebeschaden. Zwei Hauptstrategien:\n\n**1. 30°-Schräglage** (Goldstandard nach DNQP 2017):\n\n• Patient wird in 30° Seitenlage gebracht — NICHT 90°\n• Warum 30° und nicht 90°? Bei 90° liegt der Trochanter major (Hüftknochen) direkt auf → neür Druckpunkt. Bei 30° verteilt sich der Druck großflächig über die Gesäßmuskulatur.\n• Wechsel: alle 2h (30° links → Rücken → 30° rechts → Rücken)\n• Kissen/Lagerungskeil zwischen Knien und unter Rücken\n\n**2. Weichlagerung:**\n\n• Spezialmatratzen: viskölastisch, Wechseldruck, Mikrostimulation\n• Verteilen den Druck über eine größere Fläche\n• Ersetzen NICHT die Lagerungswechsel — ergänzen sie\n• Indikation: erhöhtes Dekubitus-Risiko (Braden-Score ≤ 18)\n\n**Bei Herrn Nguyen:** Stoma auf der linken Bauchseite → 30°-Rechtslage bevorzugen (kein Druck aufs Stoma). Auf keinen Fall flache Bauchlage.",
+      "**Druckentlastung** = das Grundprinzip der Dekubitusprophylaxe. Druck auf Knochen-Prominenzen (Sakrum, Fersen, Trochanter) verursacht Gewebeschaden. Zwei Hauptstrategien:\n\n**1. 30°-Schräglage** (Goldstandard nach DNQP 2017):\n\n• Patient wird in 30° Seitenlage gebracht — NICHT 90°\n• Warum 30° und nicht 90°? Bei 90° liegt der Trochanter major (Hüftknochen) direkt auf → neuer Druckpunkt. Bei 30° verteilt sich der Druck großflächig über die Gesäßmuskulatur.\n• Wechsel: alle 2h (30° links → Rücken → 30° rechts → Rücken)\n• Kissen/Lagerungskeil zwischen Knien und unter Rücken\n\n**2. Weichlagerung:**\n\n• Spezialmatratzen: viskölastisch, Wechseldruck, Mikrostimulation\n• Verteilen den Druck über eine größere Fläche\n• Ersetzen NICHT die Lagerungswechsel — ergänzen sie\n• Indikation: erhöhtes Dekubitus-Risiko (Braden-Score ≤ 18)\n\n**Bei Herrn Nguyen:** Stoma auf der linken Bauchseite → 30°-Rechtslage bevorzugen (kein Druck aufs Stoma). Auf keinen Fall flache Bauchlage.",
     kerntextB1:
-      "**Druckentlastung** = das Wichtigste gegen Dekubitus. Druck auf Knochen macht die Haut kaputt.\n\n**1. 30°-Schräglage:**\n• Patient leicht auf die Seite drehen (30°, nicht 90°)\n• Warum nicht 90°? Dann drückt der Hüft-Knochen direkt auf → neür Druck-Punkt\n• Wechsel alle 2 Stunden: links → Rücken → rechts → Rücken\n\n**2. Weichlagerung:**\n• Spezial-Matratzen verteilen den Druck besser\n• Ersetzen NICHT das Umlagern — nur Ergänzung\n\n**Bei Herrn Nguyen:** Stoma ist links → lieber auf die rechte Seite lagern (kein Druck aufs Stoma).",
+      "**Druckentlastung** = das Wichtigste gegen Dekubitus. Druck auf Knochen macht die Haut kaputt.\n\n**1. 30°-Schräglage:**\n• Patient leicht auf die Seite drehen (30°, nicht 90°)\n• Warum nicht 90°? Dann drückt der Hüft-Knochen direkt auf → neuer Druck-Punkt\n• Wechsel alle 2 Stunden: links → Rücken → rechts → Rücken\n\n**2. Weichlagerung:**\n• Spezial-Matratzen verteilen den Druck besser\n• Ersetzen NICHT das Umlagern — nur Ergänzung\n\n**Bei Herrn Nguyen:** Stoma ist links → lieber auf die rechte Seite lagern (kein Druck aufs Stoma).",
     faustregel:
       "**30° statt 90° — alle 2 Stunden.** Stoma-Seite freihalten. Weichlagerung ergänzt, ersetzt nicht.",
     faustregelB1:
@@ -489,18 +489,18 @@ export const CE02_NGUYEN_IWP_06_DEKUBITUS_LAGERUNG: ContentStep = {
           "Herr Petrov: Die gelähmte Seite hat reduzierte Sensibilität. Mikrolagerung (5–10°) reicht nicht — 30°-Schräglage + Bobath-Lagerung nötig.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz — toleriert Lagerungswechsel nicht",
         kurzbeschreibung:
-          "Herr Baür wehrt sich gegen Umlagern. Basale Stimulation (beruhigende Berührung, langsame Bewegung) vor dem Lagern hilft — sonst Abwehr und Verletzungsgefahr.",
+          "Herr Bauer wehrt sich gegen Umlagern. Basale Stimulation (beruhigende Berührung, langsame Bewegung) vor dem Lagern hilft — sonst Abwehr und Verletzungsgefahr.",
       },
     ],
     karteikarte: {
       vorderseite:
         "Warum wird Herr Nguyen in 30°-Schräglage gelagert — und nicht in 90° Seitenlage?",
       rueckseite:
-        "90° = Trochanter major liegt direkt auf → neür Druckpunkt. 30° = Druck verteilt sich über Gesäßmuskulatur. Wechsel alle 2h (DNQP 2017). Weichlagerung (Spezialmatratze) ergänzt, ersetzt nicht. Bei Nguyen: Stoma links → Rechtslage bevorzugen.\n\nFaustregel: **30° statt 90° — alle 2 Stunden. Stoma-Seite freihalten.**",
+        "90° = Trochanter major liegt direkt auf → neuer Druckpunkt. 30° = Druck verteilt sich über Gesäßmuskulatur. Wechsel alle 2h (DNQP 2017). Weichlagerung (Spezialmatratze) ergänzt, ersetzt nicht. Bei Nguyen: Stoma links → Rechtslage bevorzugen.\n\nFaustregel: **30° statt 90° — alle 2 Stunden. Stoma-Seite freihalten.**",
     },
   },
 };
@@ -568,11 +568,11 @@ export const CE02_NGUYEN_IWP_07_WUERDE_EMPOWERMENT: ContentStep = {
           "Auch Frau Schmidt: Inkontinenzversorgung ist schambesetzt. Würdeschutz = diskret ansprechen, Selbstpflege fördern, nicht überrumpeln.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz + Inkontinenz",
         kurzbeschreibung:
-          "Bei Herrn Baür ist Empowerment eingeschränkt (kognitive Barriere). Würde wahren heißt hier: trotzdem erklären, nicht wortlos handeln. Tempo anpassen, beruhigende Stimme.",
+          "Bei Herrn Bauer ist Empowerment eingeschränkt (kognitive Barriere). Würde wahren heißt hier: trotzdem erklären, nicht wortlos handeln. Tempo anpassen, beruhigende Stimme.",
       },
       {
         patientName: "Herr Petrov",
@@ -586,7 +586,7 @@ export const CE02_NGUYEN_IWP_07_WUERDE_EMPOWERMENT: ContentStep = {
       vorderseite:
         "Wie schützt du Herrn Nguyens Würde beim Beutelwechsel — und was ist das Entlassungsziel?",
       rueckseite:
-        "Intimsphäre: Tür zu, Vorhang, Sichtschutz. Würde: Handeln ankündigen, nur nötigen Bereich freilegen, Tempo des Patienten. Empowerment-Stufen: Zuschaün → Mitmachen → Selbst machen → Allein. Entlassungsmanagement: Material bestellt, Stomatherapeut ambulant, Angehörige eingewiesen.\n\nFaustregel: **Tür zu, Tempo sein, Ziel = Selbstversorgung.**",
+        "Intimsphäre: Tür zu, Vorhang, Sichtschutz. Würde: Handeln ankündigen, nur nötigen Bereich freilegen, Tempo des Patienten. Empowerment-Stufen: Zuschauen → Mitmachen → Selbst machen → Allein. Entlassungsmanagement: Material bestellt, Stomatherapeut ambulant, Angehörige eingewiesen.\n\nFaustregel: **Tür zu, Tempo sein, Ziel = Selbstversorgung.**",
     },
   },
 };
@@ -638,9 +638,9 @@ export const CE02_NGUYEN_IWP_08_MOBI_HYGIENE: ContentStep = {
     kerntextB1:
       "**Erstes Aufstehen nach der OP:**\n\nNach Tagen im Bett ist der Kreislauf schwach. Wenn man zu schnell aufsteht: Schwindel, Übelkeit, Ohnmacht.\n\n**Schritt für Schritt:**\n1. Kopfteil langsam hochstellen\n2. Beine aus dem Bett → **Bettkante** (= am Bettrand sitzen)\n3. 1–3 Minuten warten. Schwindel? Blass? Übel?\n4. Erst wenn alles gut: langsam aufstehen\n\n**Hygiene beim Waschen:**\n\n**Von sauber zu unrein** waschen:\n1. Gesicht (sauber)\n2. Oberkörper\n3. Bauch (Stoma-Bereich: extra Handschuhe)\n4. Rücken\n5. Beine, Füße\n6. Intim-Bereich (zuletzt)\n\nWarum? Keime nicht von einer Stelle zur anderen tragen (= **Kreuzkontamination**).",
     faustregel:
-      "**Mobilisation: Bettkante → warten → aufstehen.** Hygiene: Gesicht zürst, Intim zuletzt, Handschuhe wechseln.",
+      "**Mobilisation: Bettkante → warten → aufstehen.** Hygiene: Gesicht zuerst, Intim zuletzt, Handschuhe wechseln.",
     faustregelB1:
-      "Erst sitzen, dann warten, dann aufstehen. Waschen: Gesicht zürst, Intim zuletzt.",
+      "Erst sitzen, dann warten, dann aufstehen. Waschen: Gesicht zuerst, Intim zuletzt.",
     spektrum: [
       {
         patientName: "Frau Yilmaz",
@@ -650,11 +650,11 @@ export const CE02_NGUYEN_IWP_08_MOBI_HYGIENE: ContentStep = {
           "Bei Frau Yilmaz: Erstmobilisation am 1. POD (Fast-Track). Orthostase-Gefahr plus Hüft-Bewegungslimit (keine Flexion > 90°). Kinästhetik: über die nicht-operierte Seite aufstehen.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Mobilisation bei Demenz",
         kurzbeschreibung:
-          "Herr Baür versteht die Anweisungen nicht. Mobilisation über Handführung, beruhigende Stimme, vertraute Abläufe. Sturzrisiko hier besonders hoch.",
+          "Herr Bauer versteht die Anweisungen nicht. Mobilisation über Handführung, beruhigende Stimme, vertraute Abläufe. Sturzrisiko hier besonders hoch.",
       },
       {
         patientName: "Emilia",
@@ -668,7 +668,7 @@ export const CE02_NGUYEN_IWP_08_MOBI_HYGIENE: ContentStep = {
       vorderseite:
         "Herr Nguyen soll zum ersten Mal an die Bettkante. Nenne die Stufen — und warum wäscht du \"von sauber zu unrein\"?",
       rueckseite:
-        "Mobilisation: Kopfteil hoch → Bettkante → 1–3 Min warten (Orthostase prüfen) → erst dann aufstehen. Von sauber zu unrein: Gesicht → Oberkörper → Bauch/Stoma → Rücken → Beine → Intim. Kreuzkontamination vermeiden: Keime nicht verschleppen, Handschuhe wechseln.\n\nFaustregel: **Bettkante → warten → aufstehen. Gesicht zürst, Intim zuletzt.**",
+        "Mobilisation: Kopfteil hoch → Bettkante → 1–3 Min warten (Orthostase prüfen) → erst dann aufstehen. Von sauber zu unrein: Gesicht → Oberkörper → Bauch/Stoma → Rücken → Beine → Intim. Kreuzkontamination vermeiden: Keime nicht verschleppen, Handschuhe wechseln.\n\nFaustregel: **Bettkante → warten → aufstehen. Gesicht zuerst, Intim zuletzt.**",
     },
   },
 };
@@ -719,7 +719,7 @@ export const CE02_NGUYEN_IWP_09_EVALUATION_ENERGIE: ContentStep = {
     storyAufhaengerB1:
       "Es ist Abend, Tag 4. Hat sich etwas verbessert? Und warum braucht Herr Nguyens Körper nach der OP so viel mehr Energie?",
     kerntext:
-      "**Evaluation = Soll-Ist-Vergleich** (Fiechter/Meier 1981):\n\n• Vergleiche die Pflegeziele aus Phase 3 mit dem aktüllen Zustand\n• 3 Ergebnisse: Ziel erreicht / teilweise erreicht / nicht erreicht\n• Bei \"nicht erreicht\": Ursache suchen → Maßnahme anpassen\n• **Verlauf** dokumentieren: Was hat sich verändert, wann, warum?\n\n**Energiebedarf nach großer OP:**\n\n**Stressstoffwechsel:** Nach einer OP schaltet der Körper in einen Katabolismus-Modus — er baut mehr ab als auf. Der Energiebedarf steigt um 20–40% (DGEM 2020).\n\n• Grundumsatz bei Herrn Nguyen (ca. 65 kg, 65 Jahre): ~1500 kcal/Tag\n• Stressfaktor post-OP (1,2–1,4): ca. 1800–2100 kcal/Tag nötig\n• Proteinbedarf erhöht: 1,2–1,5 g/kg/Tag (statt 0,8 g/kg)\n\n**Trinknahrung** = orale Nahrungsergänzung (z. B. Fresubin, Fortimel):\n• 200 ml = ca. 200–300 kcal + 10–20 g Protein\n• Indikation: Wenn orale Aufnahme aus normaler Kost den Bedarf nicht deckt\n��� Bei Herrn Nguyen: Kostaufbau läuft langsam, Trinknahrung als Brücke bis zur Vollkost\n\n**Kalorien zählen ist Pflege-Aufgabe:** Ernährungsprotokoll führen, Bilanz berechnen, Ernährungsberaterin informieren wenn Defizit > 500 kcal/Tag.",
+      "**Evaluation = Soll-Ist-Vergleich** (Fiechter/Meier 1981):\n\n• Vergleiche die Pflegeziele aus Phase 3 mit dem aktuellen Zustand\n• 3 Ergebnisse: Ziel erreicht / teilweise erreicht / nicht erreicht\n• Bei \"nicht erreicht\": Ursache suchen → Maßnahme anpassen\n• **Verlauf** dokumentieren: Was hat sich verändert, wann, warum?\n\n**Energiebedarf nach großer OP:**\n\n**Stressstoffwechsel:** Nach einer OP schaltet der Körper in einen Katabolismus-Modus — er baut mehr ab als auf. Der Energiebedarf steigt um 20–40% (DGEM 2020).\n\n• Grundumsatz bei Herrn Nguyen (ca. 65 kg, 65 Jahre): ~1500 kcal/Tag\n• Stressfaktor post-OP (1,2–1,4): ca. 1800–2100 kcal/Tag nötig\n• Proteinbedarf erhöht: 1,2–1,5 g/kg/Tag (statt 0,8 g/kg)\n\n**Trinknahrung** = orale Nahrungsergänzung (z. B. Fresubin, Fortimel):\n• 200 ml = ca. 200–300 kcal + 10–20 g Protein\n• Indikation: Wenn orale Aufnahme aus normaler Kost den Bedarf nicht deckt\n��� Bei Herrn Nguyen: Kostaufbau läuft langsam, Trinknahrung als Brücke bis zur Vollkost\n\n**Kalorien zählen ist Pflege-Aufgabe:** Ernährungsprotokoll führen, Bilanz berechnen, Ernährungsberaterin informieren wenn Defizit > 500 kcal/Tag.",
     kerntextB1:
       "**Was ist Evaluation?** Du vergleichst: Was war das Ziel? Was ist jetzt?\n• Ziel erreicht → gut, weiter beobachten\n• Teilweise erreicht → weiter so\n• Nicht erreicht → warum nicht? Ändern.\n\n**Warum braucht Herr Nguyen mehr Energie?**\n\nNach einer OP baut der Körper mehr ab als auf (= **Stressstoffwechsel**). Er braucht 20–40% mehr Kalorien.\n\n• Normal: ca. 1500 Kalorien pro Tag\n• Nach OP: ca. 1800–2100 Kalorien pro Tag\n\n**Trinknahrung** (z. B. Fresubin):\n• Kleine Flasche (200 ml) = 200–300 Kalorien + Eiweiß\n• Hilft, wenn er noch nicht genug essen kann",
     faustregel:

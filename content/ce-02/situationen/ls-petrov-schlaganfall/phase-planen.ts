@@ -12,7 +12,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
   kontext:
     "07:40 Uhr. Du stehst kurz vor dem Zimmer mit deinen Notizen. Du weißt jetzt was Herrn Petrov bedroht. Jetzt musst du strukturiert planen: Welche Pflegeziele? Welche Maßnahmen? In welcher Reihenfolge? Du hast 3 Stunden bis zum Schichtwechsel.",
   kontextB1:
-    "Es ist 07:40 Uhr. Du stehst vor dem Zimmer. Du weißt jetzt was Herrn Petrov bedroht. Jetzt planst du: Was machst du zürst? Was ist das Ziel? Du hast 3 Stunden bis zum Ende der Schicht.",
+    "Es ist 07:40 Uhr. Du stehst vor dem Zimmer. Du weißt jetzt was Herrn Petrov bedroht. Jetzt planst du: Was machst du zuerst? Was ist das Ziel? Du hast 3 Stunden bis zum Ende der Schicht.",
   kernSteps: [
     // Step 3.1 — Text: PESR-Schema erklären (scenario)
     {
@@ -130,7 +130,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
           {
             left: "Pneumoniegefahr",
             right:
-              "Herr Petrov führt 3× täglich Atemübungen durch, pflegerische Atembeobachtung stabil (Freqünz, Atemtiefe, hörbare Geräusche).",
+              "Herr Petrov führt 3× täglich Atemübungen durch, pflegerische Atembeobachtung stabil (Frequenz, Atemtiefe, hörbare Geräusche).",
           },
           {
             left: "Dekubitusrisiko",
@@ -191,11 +191,11 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
         faustregelB1: "5 ml, 90 Grad, von links, angedickt, Ruhe. Bei jedem Löffel aufpassen.",
         spektrum: [
           {
-            patientName: "Herr Baür",
-            situationsId: "ls-baür-demenz-sturz",
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
             hauptfaktor: "Demenz, vergisst zu kaün",
             kurzbeschreibung:
-              "Baür hat keine Dysphagie im klassischen Sinn — aber er vergisst das Kaün und Schlucken (Apraxie bei Demenz). Anreichen bei ihm: visülles Vormachen, Hand zum Mund führen, nicht drängeln.",
+              "Bauer hat keine Dysphagie im klassischen Sinn — aber er vergisst das Kaün und Schlucken (Apraxie bei Demenz). Anreichen bei ihm: visuelles Vormachen, Hand zum Mund führen, nicht drängeln.",
           },
           {
             patientName: "Emilia",
@@ -216,7 +216,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
           vorderseite:
             "Du reichst Herrn Petrov das Frühstück an. Warum bietest du den Löffel von links an — nicht von rechts?",
           rueckseite:
-            "Links ist die gesunde Seite. Der Schluckreiz wird über die gesunde Seite stimuliert. Die rechte Wange hat bei Hemiparese weniger Sensibilität — Speisereste sammeln sich dort unbemerkt. 5 Prinzipien: 90° aufrecht, IDDSI Level 2, von links, max. 5 ml/Löffel, Ruhe. Spektrum: Baür (Apraxie bei Demenz, vergisst zu kaün), Emilia (Trinkschwäche Säugling), Schmidt (Ernährungsberatung bei Adipositas). Faustregel: **Jeder Löffel ist eine Pflegeentscheidung.**",
+            "Links ist die gesunde Seite. Der Schluckreiz wird über die gesunde Seite stimuliert. Die rechte Wange hat bei Hemiparese weniger Sensibilität — Speisereste sammeln sich dort unbemerkt. 5 Prinzipien: 90° aufrecht, IDDSI Level 2, von links, max. 5 ml/Löffel, Ruhe. Spektrum: Bauer (Apraxie bei Demenz, vergisst zu kaün), Emilia (Trinkschwäche Säugling), Schmidt (Ernährungsberatung bei Adipositas). Faustregel: **Jeder Löffel ist eine Pflegeentscheidung.**",
         },
       },
     },
@@ -245,8 +245,8 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
         glossarBegriffe: ["Priorität", "Pflegemaßnahmen", "ABCDE"],
       },
       contentB1: {
-        title: "Was machst du zürst?",
-        body: "Was machst du zürst? Bringe die 5 Maßnahmen in die richtige Reihenfolge. Wichtig: Die Atmung kommt immer zürst (= ABCDE).",
+        title: "Was machst du zuerst?",
+        body: "Was machst du zuerst? Bringe die 5 Maßnahmen in die richtige Reihenfolge. Wichtig: Die Atmung kommt immer zuerst (= ABCDE).",
         glossarBegriffe: ["Pflegemaßnahmen"],
       },
       question: {
@@ -298,10 +298,10 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
         storyAufhaengerB1:
           "Herr Petrov isst noch mit dem Mund — breiiges Essen, angedickte Flüssigkeit. Aber was passiert, wenn er immer weniger isst? Wann braucht er eine Sonde?",
         kerntext:
-          "**Enterale Ernährung** = Ernährung über den Magen-Darm-Trakt, aber nicht oral. Der Zugang ist eine Sonde.\n\n**Stufen-Konzept (ESPEN/DGEM 2020):**\n\n• **Stufe 1:** Orale Ernährung mit angepasster Konsistenz (IDDSI). Das ist Herr Petrovs aktüller Status.\n\n• **Stufe 2:** Orale Ernährung + Trinknahrung (Supplement, z.B. 200 ml Energy-Drink mit 300 kcal). Wenn oral < 75 % des Bedarfs.\n\n• **Stufe 3:** Nasogastrale Sonde (NGS). Wenn oral + Supplement < 60 % des Kalorienbedarfs nach 3-5 Tagen. NGS ist temporär, nicht-operativ, kann am Bett gelegt werden.\n\n• **Stufe 4:** PEG (perkutane endoskopische Gastrostomie). Wenn Sondenernährung > 4 Wochen absehbar ist. Operativer Eingriff.\n\n**Pflege-Aufgabe:** Tägliches Ernährungsmonitoring — Wie viel hat er gegessen? Wie viel getrunken? Gewichtsverlauf. Proaktiv den Arzt informieren wenn die orale Aufnahme unter 60 % fällt.\n\n**Zeitfenster:** 3-5 Tage für orale Optimierung. Danach wird es kritisch — Mangelernährung verschlechtert Wundheilung, Immunabwehr und Rehabilitation.",
+          "**Enterale Ernährung** = Ernährung über den Magen-Darm-Trakt, aber nicht oral. Der Zugang ist eine Sonde.\n\n**Stufen-Konzept (ESPEN/DGEM 2020):**\n\n• **Stufe 1:** Orale Ernährung mit angepasster Konsistenz (IDDSI). Das ist Herr Petrovs aktueller Status.\n\n• **Stufe 2:** Orale Ernährung + Trinknahrung (Supplement, z.B. 200 ml Energy-Drink mit 300 kcal). Wenn oral < 75 % des Bedarfs.\n\n• **Stufe 3:** Nasogastrale Sonde (NGS). Wenn oral + Supplement < 60 % des Kalorienbedarfs nach 3-5 Tagen. NGS ist temporär, nicht-operativ, kann am Bett gelegt werden.\n\n• **Stufe 4:** PEG (perkutane endoskopische Gastrostomie). Wenn Sondenernährung > 4 Wochen absehbar ist. Operativer Eingriff.\n\n**Pflege-Aufgabe:** Tägliches Ernährungsmonitoring — Wie viel hat er gegessen? Wie viel getrunken? Gewichtsverlauf. Proaktiv den Arzt informieren wenn die orale Aufnahme unter 60 % fällt.\n\n**Zeitfenster:** 3-5 Tage für orale Optimierung. Danach wird es kritisch — Mangelernährung verschlechtert Wundheilung, Immunabwehr und Rehabilitation.",
         kerntextB1:
           "**Enterale Ernährung** = Ernährung mit einer Sonde (= einem Schlauch in den Magen).\n\n**3 Stufen:**\n\n• **Stufe 1:** Essen mit dem Mund — mit angepasster Konsistenz. Das macht Herr Petrov jetzt.\n\n• **Stufe 2:** Essen mit dem Mund + Trinknahrung (= extra Kalorien im Becher). Wenn er zu wenig isst.\n\n• **Stufe 3:** Sonde durch die Nase in den Magen (= NGS). Wenn er weniger als 60 % seines Bedarfs isst — nach 3-5 Tagen.\n\n**Deine Aufgabe:** Jeden Tag aufschreiben: Wie viel hat er gegessen? Wie viel getrunken? Wenn es zu wenig wird: Arzt informieren.",
-        faustregel: "3-5 Tage unter 60 % oral = Sonde vorbereiten. Pflege erkennt es zürst.",
+        faustregel: "3-5 Tage unter 60 % oral = Sonde vorbereiten. Pflege erkennt es zuerst.",
         faustregelB1: "Wenn Herr Petrov in 3-5 Tagen zu wenig isst: Arzt informieren, Sonde vorbereiten.",
         spektrum: [
           {
@@ -353,7 +353,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "Enterale Ernährung — wann?",
-        body: "Herr Petrov wird aktüll oral ernährt (IDDSI Level 2 + Kostform B). Wann würde eine enterale Sondenernährung notwendig werden?",
+        body: "Herr Petrov wird aktuell oral ernährt (IDDSI Level 2 + Kostform B). Wann würde eine enterale Sondenernährung notwendig werden?",
         glossarBegriffe: [
           "enterale Ernährung",
           "PEG",

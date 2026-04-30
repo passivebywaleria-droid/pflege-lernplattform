@@ -16,7 +16,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "schmerz-kuss-skala-grundlagen",
     themaPrimaer: "schmerz",
     vorderseite: "Lukas (2,5 J.) schreit, grimassiert, zieht die Beine hoch und stößt dich weg. Du sollst seinen Schmerz messen. Warum nutzt du NRS nicht — und welche Skala nutzt du stattdessen?",
-    rueckseite: "Kinder unter 4 Jahren verstehen Zahlen-Skalen nicht → keine NRS möglich. Stattdessen: **KUSS-Skala** (Büttner/Finke 2000) — 5 Beobachtungskategorien (Weinen, Gesichtsausdruck, Rumpfhaltung, Beinstellung, Motorische Unruhe), je 0-2 Punkte, max. 10.\n\nSpektrum: Frau M. (NRS), Baür (BESD/PAINAD), Yilmaz (NRS Ruhe+Bewegung), Emilia (KUSS auch bei Säuglingen).\n\nFaustregel: **NRS = fragen, KUSS = beobachten. Ab ≥ 4: immer handeln.**",
+    rueckseite: "Kinder unter 4 Jahren verstehen Zahlen-Skalen nicht → keine NRS möglich. Stattdessen: **KUSS-Skala** (Büttner/Finke 2000) — 5 Beobachtungskategorien (Weinen, Gesichtsausdruck, Rumpfhaltung, Beinstellung, Motorische Unruhe), je 0-2 Punkte, max. 10.\n\nSpektrum: Frau M. (NRS), Bauer (BESD/PAINAD), Yilmaz (NRS Ruhe+Bewegung), Emilia (KUSS auch bei Säuglingen).\n\nFaustregel: **NRS = fragen, KUSS = beobachten. Ab ≥ 4: immer handeln.**",
     situationsId: "ls-lukas-verbrühung",
   },
   {
@@ -40,7 +40,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "säuglingspflege-kindgerechte-vorbereitung",
     themaPrimaer: "säuglingspflege",
     vorderseite: "Lukas sieht die Schere und weint sofort — obwohl du noch nichts getan hast. Was sind die 3 Säulen der kindgerechten Maßnahmen-Vorbereitung?",
-    rueckseite: "1. **Ankündigung** — kurz, konkret, max. 1-2 Min vorher bei 2-3-Jährigen. Nie lügen (\"tut nicht weh\").\n2. **Ablenkung** — Seifenblasen, Musik, Bezugsperson. Begleitet die Maßnahme, ersetzt nicht die Ankündigung.\n3. **Material aus Sichtfeld** — Schere/Pinzette verstecken. Analgesie-Wirkzeit vorher prüfen.\n\nSpektrum: Emilia (Pucken, Schnuller), Baür (kurze Sätze, Basale Stimulation), Frau M. (ausführliche Erklärung möglich).\n\nFaustregel: **Ankündigen, ablenken, Material verstecken — nie überrumpeln.**",
+    rueckseite: "1. **Ankündigung** — kurz, konkret, max. 1-2 Min vorher bei 2-3-Jährigen. Nie lügen (\"tut nicht weh\").\n2. **Ablenkung** — Seifenblasen, Musik, Bezugsperson. Begleitet die Maßnahme, ersetzt nicht die Ankündigung.\n3. **Material aus Sichtfeld** — Schere/Pinzette verstecken. Analgesie-Wirkzeit vorher prüfen.\n\nSpektrum: Emilia (Pucken, Schnuller), Bauer (kurze Sätze, Basale Stimulation), Frau M. (ausführliche Erklärung möglich).\n\nFaustregel: **Ankündigen, ablenken, Material verstecken — nie überrumpeln.**",
     situationsId: "ls-lukas-verbrühung",
   },
   {
@@ -48,7 +48,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "mundpflege-kleinkind-grundlagen",
     themaPrimaer: "mundpflege",
     vorderseite: "Lukas (2,5 J.) hat eine leicht trockene Mundschleimhaut. Eine Kollegin greift zur Chlorhexidin-Mundspülung. Was sagst du?",
-    rueckseite: "Chlorhexidin ist bei Kindern unter 6 Jahren kontraindiziert (DGKJ 2022): Schluckgefahr, Schleimhautreizung, Übelkeit bei Verschlucken. Alternative: Octenidin (antiseptisch, schlucksicher) oder Kamille/Salbei in kleiner Menge.\n\nSpektrum: Petrov (Aspiration), Emilia (nur Wasser/Muttermilch-Tupfer), Baür (Chlorhexidin nur bei sicherem Ausspucken).\n\nFaustregel: **Kein Chlorhexidin unter 6 Jahren. Octenidin oder Kamille — schlucksicher.**",
+    rueckseite: "Chlorhexidin ist bei Kindern unter 6 Jahren kontraindiziert (DGKJ 2022): Schluckgefahr, Schleimhautreizung, Übelkeit bei Verschlucken. Alternative: Octenidin (antiseptisch, schlucksicher) oder Kamille/Salbei in kleiner Menge.\n\nSpektrum: Petrov (Aspiration), Emilia (nur Wasser/Muttermilch-Tupfer), Bauer (Chlorhexidin nur bei sicherem Ausspucken).\n\nFaustregel: **Kein Chlorhexidin unter 6 Jahren. Octenidin oder Kamille — schlucksicher.**",
     situationsId: "ls-lukas-verbrühung",
   },
   {
@@ -72,7 +72,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "pflegeprozess-kinderschutz-screening",
     themaPrimaer: "pflegeprozess",
     vorderseite: "Kevin fragt dich aufgebracht: \"Warum kommt eine Sozialarbeiterin? Beschuldigt ihr uns?\" — Was antwortest du, und auf welcher gesetzlichen Grundlage basiert das Screening?",
-    rueckseite: "§ 4 KKG 2012: Bei jeder Verbrühung/Verbrennung eines Kindes <6 J. mit >10 % KOF ist ein standardisiertes Kinderschutz-Screening Pflicht. 4 Schritte: Hinschaün → Einschätzen → Handeln → Dokumentieren. Es ist kein Verdacht, sondern ein systematischer Abklärungsprozess.\n\nSpektrum: Bei Säuglingen (Emilia) noch niedrigere Schwelle, bei Erwachsenen (Baür) ähnliches Prinzip über WTG.\n\nFaustregel: **Kinderschutz-Screening = Hinschaün, nicht Beschuldigen.**",
+    rueckseite: "§ 4 KKG 2012: Bei jeder Verbrühung/Verbrennung eines Kindes <6 J. mit >10 % KOF ist ein standardisiertes Kinderschutz-Screening Pflicht. 4 Schritte: Hinschauen → Einschätzen → Handeln → Dokumentieren. Es ist kein Verdacht, sondern ein systematischer Abklärungsprozess.\n\nSpektrum: Bei Säuglingen (Emilia) noch niedrigere Schwelle, bei Erwachsenen (Bauer) ähnliches Prinzip über WTG.\n\nFaustregel: **Kinderschutz-Screening = Hinschauen, nicht Beschuldigen.**",
     situationsId: "ls-lukas-verbrühung",
   },
   {

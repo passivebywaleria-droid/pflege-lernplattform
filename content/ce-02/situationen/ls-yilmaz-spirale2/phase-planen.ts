@@ -171,8 +171,8 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
           "30 Grad = ein bisschen Entlastung. 135 Grad = Steissbein komplett frei. Bei offener Wunde: immer 135 Grad.",
         spektrum: [
           {
-            patientName: "Herr Baür",
-            situationsId: "ls-baür-demenz-sturz",
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
             hauptfaktor: "Demenz — akzeptiert Kissen nicht",
             kurzbeschreibung:
               "Bei ihm ist 135-Grad-Lagerung schwierig: Er zieht die Kissen raus, weil er nicht versteht warum sie da liegen. 30-Grad-Schräglage mit flachen Keilen funktioniert besser — weniger Fremdkörper-Gefühl.",
@@ -200,7 +200,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
           vorderseite:
             "Frau Yilmaz hat Dekubitus Kat. II am Sakrum + Hüft-TEP rechts. Warum ist 135-Grad-Lagerung die richtige Wahl und warum fallen 30 Grad und 90 Grad aus?",
           rueckseite:
-            "30 Grad: nur Teilentlastung — bei offener Wunde nicht ausreichend. 90 Grad: Trochanter-Belastung + Hüft-TEP rechts kontraindiziert. 135 Grad: Sakrum komplett frei, kein Trochanter-Druck, Hüft-TEP oben in Abduktion.\n\nSpektrum: Baür (30 Grad wegen Demenz-Akzeptanz), Petrov (30 Grad + Bobath), Schmidt (135 Grad mit Schwerlast-Equipment).\n\nFaustregel: **Bei offenem Sakrum-Dekubitus: immer 135 Grad. 30 Grad reicht nicht.**",
+            "30 Grad: nur Teilentlastung — bei offener Wunde nicht ausreichend. 90 Grad: Trochanter-Belastung + Hüft-TEP rechts kontraindiziert. 135 Grad: Sakrum komplett frei, kein Trochanter-Druck, Hüft-TEP oben in Abduktion.\n\nSpektrum: Bauer (30 Grad wegen Demenz-Akzeptanz), Petrov (30 Grad + Bobath), Schmidt (135 Grad mit Schwerlast-Equipment).\n\nFaustregel: **Bei offenem Sakrum-Dekubitus: immer 135 Grad. 30 Grad reicht nicht.**",
         },
       },
     },
@@ -226,7 +226,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
         glossarBegriffe: ["135°-Schräge Seitenlage", "Umlagerungsrhythmus"],
       },
       contentB1: {
-        title: "Was machst du zürst? Sortiere die Schritte.",
+        title: "Was machst du zuerst? Sortiere die Schritte.",
         body: "Bringe die Schritte für den Positionierungsplan in die richtige Reihenfolge.",
         glossarBegriffe: ["135°-Seitenlage"],
       },
@@ -240,7 +240,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
             { id: "p2", label: "135°-Schräge Seitenlage einführen: Sakrum komplett entlasten" },
             { id: "p3", label: "2-stündlichen Umlagerungsrhythmus schriftlich festhalten" },
             { id: "p4", label: "Fersen durch Kissen freistellen" },
-            { id: "p5", label: "Inkontinenzversorgung optimieren: Pad-Wechsel bei Nässe, kein Daür-Pad" },
+            { id: "p5", label: "Inkontinenzversorgung optimieren: Pad-Wechsel bei Nässe, kein Dauer-Pad" },
             { id: "p6", label: "Frau Yilmaz über Sinn der Maßnahmen informieren, Kooperation gewinnen" },
           ],
         },
@@ -270,7 +270,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
         "Medical illustration of 135 degree oblique side lying position for pressure injury prevention, patient with pillows under thorax, between knees, under lower legs, hospital bed side view, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Warum 135°-Schräge Seitenlage beim Sakrum-Dekubitus?",
-        body: "Die klassische 90°-Seitenlage verlagert den Druck auf den Trochanter major (Oberschenkelknochen seitlich) — ebenfalls ein Prädilektionsort für Dekubitus. Bei Frau Yilmaz mit Hüft-TEP rechts kommt hinzu: Eine 90°-Lage auf der rechten Seite würde direkt auf die OP-Region drücken — also doppelt zu vermeiden. Die 135°-Schräge Seitenlage verteilt das Gewicht auf Gesäßmuskulatur und Oberschenkelrückseite — Flächen mit mehr Weichteilpolster über dem Knochen.\n\n**Wichtig: Seite richtig wählen.** Bei Hüft-TEP rechts → 135°-Schräglage auf die **linke** Seite (kontralateral, also Gegenseite zur OP). Die operierte Hüfte bleibt oben in leichter Abduktion (Kissen zwischen den Knien) — keine Adduktion, keine Innenrotation, keine Hüftbeugung über 90°. Diese Lagerungsregeln gelten typischerweise für die ersten 6-12 Wochen post-OP.\n\nKissen: eines unter die Brust (Stabilisierung des Rumpfes), eines zwischen die Beine (Beinentlastung + TEP-Abduktionsschutz), eines unter den Unterschenkel (Fersenfreistellung), eines an der Rückseite (verhindert Zurückrollen). Konseqünz für Frau Yilmaz: Diese Lagerung kostet 5 Minuten mehr — ist aber entscheidend für die Entlastung des Sakrums UND den Schutz der OP-Hüfte. Quelle: (NPUAP/EPUAP/PPPIA 2019; postoperative TEP-Lagerung)",
+        body: "Die klassische 90°-Seitenlage verlagert den Druck auf den Trochanter major (Oberschenkelknochen seitlich) — ebenfalls ein Prädilektionsort für Dekubitus. Bei Frau Yilmaz mit Hüft-TEP rechts kommt hinzu: Eine 90°-Lage auf der rechten Seite würde direkt auf die OP-Region drücken — also doppelt zu vermeiden. Die 135°-Schräge Seitenlage verteilt das Gewicht auf Gesäßmuskulatur und Oberschenkelrückseite — Flächen mit mehr Weichteilpolster über dem Knochen.\n\n**Wichtig: Seite richtig wählen.** Bei Hüft-TEP rechts → 135°-Schräglage auf die **linke** Seite (kontralateral, also Gegenseite zur OP). Die operierte Hüfte bleibt oben in leichter Abduktion (Kissen zwischen den Knien) — keine Adduktion, keine Innenrotation, keine Hüftbeugung über 90°. Diese Lagerungsregeln gelten typischerweise für die ersten 6-12 Wochen post-OP.\n\nKissen: eines unter die Brust (Stabilisierung des Rumpfes), eines zwischen die Beine (Beinentlastung + TEP-Abduktionsschutz), eines unter den Unterschenkel (Fersenfreistellung), eines an der Rückseite (verhindert Zurückrollen). Konsequnz für Frau Yilmaz: Diese Lagerung kostet 5 Minuten mehr — ist aber entscheidend für die Entlastung des Sakrums UND den Schutz der OP-Hüfte. Quelle: (NPUAP/EPUAP/PPPIA 2019; postoperative TEP-Lagerung)",
         glossarBegriffe: [
           "135°-Schräge Seitenlage",
           "Trochanter major",
@@ -281,7 +281,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
       },
       contentB1: {
         title: "Warum 135°-Seitenlage?",
-        body: "Bei 90°-Seitenlage drückt das Gewicht auf den Oberschenkelknochen seitlich. Das ist auch eine gefährliche Stelle für Dekubitus. Bei 135° liegt man schräger: Das Gewicht verteilt sich auf die Gesäßmuskeln. Viel Fleisch und Muskel schützen den Knochen besser.\n\n**Wichtig: Auf welcher Seite?** Frau Yilmaz hat Hüft-OP rechts. Das heißt: Sie liegt auf der **linken** Seite (die nicht-operierte Seite). Die operierte Hüfte ist oben. Niemals auf der operierten Seite liegen — das tut der OP-Stelle weh.\n\nKissen: eins unter die Brust (Stabilisierung), eins zwischen die Beine (wichtig: hält die operierte Hüfte in der richtigen Position!), eins unter den Unterschenkel (Fersen frei), eins am Rücken (damit sie nicht zurückrollt). Das daürt 5 Minuten länger — aber es hilft.",
+        body: "Bei 90°-Seitenlage drückt das Gewicht auf den Oberschenkelknochen seitlich. Das ist auch eine gefährliche Stelle für Dekubitus. Bei 135° liegt man schräger: Das Gewicht verteilt sich auf die Gesäßmuskeln. Viel Fleisch und Muskel schützen den Knochen besser.\n\n**Wichtig: Auf welcher Seite?** Frau Yilmaz hat Hüft-OP rechts. Das heißt: Sie liegt auf der **linken** Seite (die nicht-operierte Seite). Die operierte Hüfte ist oben. Niemals auf der operierten Seite liegen — das tut der OP-Stelle weh.\n\nKissen: eins unter die Brust (Stabilisierung), eins zwischen die Beine (wichtig: hält die operierte Hüfte in der richtigen Position!), eins unter den Unterschenkel (Fersen frei), eins am Rücken (damit sie nicht zurückrollt). Das dauert 5 Minuten länger — aber es hilft.",
         glossarBegriffe: ["135°-Seitenlage", "Kontralateral"],
       },
     },
@@ -315,7 +315,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
         bausteinRef: "pflegeprozess-ergebnis-pflbg",
         storyAufhaenger: "Gleich ordnest du Faktoren in das Donabedian-Modell ein. Eine Dimension fehlt noch: **Ergebnisqualität**. Und ein Gesetz musst du kennen: **Paragraph 3 PflBG**.",
         storyAufhaengerB1: "Noch zwei Begriffe bevor du das Modell anwendest.",
-        kerntext: "**Ergebnisqualität** (Donabedian 1966) = das tatsächliche Resultat der Pflege. Bei Frau Yilmaz: Dekubitus Kat. II ist entstanden (negativ), aber Kat. III/IV wurde verhindert (Schadensbegrenzung, positiv). Wunde heilt nach 3 Tagen (positiv).\n\n**Paragraph 3 PflBG** (Pflegeberufegesetz): Definiert die vorbehaltenen Taetigkeiten der Pflegefachkraft. Dazu gehört: Erhebung und Feststellung des Pflegebedarfs, Planung, Organisation und Steürung des Pflegeprozesses. Das SBAR-Gespräch mit der Ärztin ist pflegerische Berichterstattung nach Paragraph 3 \u2014 du DARFST und SOLLST der Ärztin deinen Befund mitteilen.",
+        kerntext: "**Ergebnisqualität** (Donabedian 1966) = das tatsächliche Resultat der Pflege. Bei Frau Yilmaz: Dekubitus Kat. II ist entstanden (negativ), aber Kat. III/IV wurde verhindert (Schadensbegrenzung, positiv). Wunde heilt nach 3 Tagen (positiv).\n\n**Paragraph 3 PflBG** (Pflegeberufegesetz): Definiert die vorbehaltenen Taetigkeiten der Pflegefachkraft. Dazu gehört: Erhebung und Feststellung des Pflegebedarfs, Planung, Organisation und Steuerung des Pflegeprozesses. Das SBAR-Gespräch mit der Ärztin ist pflegerische Berichterstattung nach Paragraph 3 \u2014 du DARFST und SOLLST der Ärztin deinen Befund mitteilen.",
         kerntextB1: "**Ergebnisqualität** = Was ist am Ende rausgekommen? Bei Frau Yilmaz: Wunde entstanden (schlecht), aber heilt (gut). Kat. III/IV verhindert (gut).\n\n**Paragraph 3 PflBG** = Das Gesetz sagt: Pflegefachkräfte dürfen und sollen den Pflegebedarf feststellen und der Ärztin berichten. Das SBAR-Gespräch ist deine Aufgabe.",
         faustregel: "Ergebnisqualität = tatsächliches Resultat. Paragraph 3 PflBG = Pflegebericht an Ärztin ist deine Aufgabe und dein Recht.",
         faustregelB1: "Ergebnisqualität = Was kam raus? Paragraph 3 PflBG = Du darfst und sollst der Ärztin berichten.",
@@ -433,16 +433,16 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
                   "Sehr gut. Du hast S, B, A, R alle drin. Dr. Kirchner weiß genau was sie tun muss. Das ist gute Pflege.",
               },
               {
-                text: "\"Frau Yilmaz hat irgendwie eine Wunde am Rücken — da sollten Sie mal schaün.\"",
+                text: "\"Frau Yilmaz hat irgendwie eine Wunde am Rücken — da sollten Sie mal schauen.\"",
                 textB1:
-                  "\"Frau Yilmaz hat eine Wunde am Rücken — kommen Sie mal schaün.\"",
+                  "\"Frau Yilmaz hat eine Wunde am Rücken — kommen Sie mal schauen.\"",
                 patientResponse:
                   "Dr. Kirchner schaut dich kurz an. 'Was für eine Wunde? Wie groß? Seit wann?' — sie wartet auf mehr Informationen.",
                 patientResponseB1:
                   "Dr. Kirchner fragt: 'Was für eine Wunde? Wie groß? Seit wann?'",
                 score: 0,
                 feedback:
-                  "Keine Information, kein SBAR, kein Befund. 'Irgendwie' und 'mal schaün' sind keine professionellen Übergabeformulierungen. Der Arzt braucht einen strukturierten Befund — sonst kann er keine Anordnung schreiben.",
+                  "Keine Information, kein SBAR, kein Befund. 'Irgendwie' und 'mal schauen' sind keine professionellen Übergabeformulierungen. Der Arzt braucht einen strukturierten Befund — sonst kann er keine Anordnung schreiben.",
                 feedbackB1:
                   "Das ist zu wenig Information. Die Ärztin braucht: Was ist die Wunde? Wie groß? Seit wann? Welche Vorerkrankungen?",
               },
@@ -597,7 +597,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
                 textB1:
                   "\"Das hat der Arzt angeordnet. Sie müssen mitmachen.\"",
                 patientResponse:
-                  "Frau Yilmaz schließt die Augen. 'Na gut.' — sie kooperiert äußerlich, aber ohne Vertraün.",
+                  "Frau Yilmaz schließt die Augen. 'Na gut.' — sie kooperiert äußerlich, aber ohne Vertrauen.",
                 patientResponseB1:
                   "Frau Yilmaz nickt kurz. 'Na gut.' — aber ihr Gesicht sagt was anderes.",
                 score: 0,

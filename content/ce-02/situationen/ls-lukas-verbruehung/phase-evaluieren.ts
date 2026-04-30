@@ -67,14 +67,14 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_EVALUIEREN: SituationsPhase = {
             situationsId: "ls-yilmaz-spirale2",
             hauptfaktor: "Chronische Wunde — verlangsamte Heilung",
             kurzbeschreibung:
-              "Bei Frau Yilmaz' Dekubitus daürt die Heilung Wochen bis Monate — die Phasen sind dieselben, aber verzögert. Häufig stagniert die Granulation. Die Hauptmaßnahme dort ist Druckentlastung — ohne die heilt nichts.",
+              "Bei Frau Yilmaz' Dekubitus dauert die Heilung Wochen bis Monate — die Phasen sind dieselben, aber verzögert. Häufig stagniert die Granulation. Die Hauptmaßnahme dort ist Druckentlastung — ohne die heilt nichts.",
           },
           {
             patientName: "Frau Yilmaz (Hüft-TEP)",
             situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "OP-Wunde — primäre Wundheilung",
             kurzbeschreibung:
-              "Frau Yilmaz' OP-Naht heilt primär (Wundränder liegen aneinander). Bei Lukas heilt die Verbrühung sekundär (offene Wundfläche, keine Naht). Sekundäre Heilung daürt länger und braucht feuchte Wundbehandlung.",
+              "Frau Yilmaz' OP-Naht heilt primär (Wundränder liegen aneinander). Bei Lukas heilt die Verbrühung sekundär (offene Wundfläche, keine Naht). Sekundäre Heilung dauert länger und braucht feuchte Wundbehandlung.",
           },
           {
             patientName: "Frau Schmidt (Polyneuropathie)",

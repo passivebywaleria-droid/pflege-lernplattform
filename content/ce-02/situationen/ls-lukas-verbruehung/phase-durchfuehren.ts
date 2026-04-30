@@ -48,7 +48,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
       inlineWissen: {
         bausteinRef: "säuglingspflege-kindgerechte-vorbereitung",
         storyAufhaenger:
-          "Lukas sieht die Schere auf deinem Verbandwagen — und fängt an zu weinen. Noch bevor du irgendetwas getan hast. Kleinkinder reagieren auf visülle Reize, nicht auf Erklärungen. Wie gehst du damit um?",
+          "Lukas sieht die Schere auf deinem Verbandwagen — und fängt an zu weinen. Noch bevor du irgendetwas getan hast. Kleinkinder reagieren auf visuelle Reize, nicht auf Erklärungen. Wie gehst du damit um?",
         storyAufhaengerB1:
           "Lukas sieht die Schere — und weint sofort. Du hast noch gar nichts gemacht. Wie bereitest du ein Kind auf eine schmerzhafte Maßnahme vor?",
         kerntext:
@@ -65,14 +65,14 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
             situationsId: "ls-emilia-säugling",
             hauptfaktor: "Säugling — Ablenkung funktioniert anders",
             kurzbeschreibung:
-              "Bei Emilia (4 Monate) funktioniert verbale Ankündigung nicht. Stattdessen: Pucken (Einwickeln gibt Sicherheit), Non-nutritives Saugen (Schnuller), Hautkontakt (Känguru-Methode). Ablenkung über taktile Reize statt visülle.",
+              "Bei Emilia (4 Monate) funktioniert verbale Ankündigung nicht. Stattdessen: Pucken (Einwickeln gibt Sicherheit), Non-nutritives Saugen (Schnuller), Hautkontakt (Känguru-Methode). Ablenkung über taktile Reize statt visuelle.",
           },
           {
-            patientName: "Herr Baür (82, Demenz)",
-            situationsId: "ls-baür-demenz-sturz",
+            patientName: "Herr Bauer (82, Demenz)",
+            situationsId: "ls-bauer-demenz-sturz",
             hauptfaktor: "Demenz — ähnliche Prinzipien wie bei Kleinkindern",
             kurzbeschreibung:
-              "Herr Baür versteht Ankündigungen nicht immer. Aber das Prinzip ist gleich: kurze, klare Sätze, ruhige Stimme, Berührung ankündigen bevor man anfasst. Basale Stimulation (beruhigende Waschung) nutzt denselben Ansatz: vorhersehbar, rhythmisch, sicher.",
+              "Herr Bauer versteht Ankündigungen nicht immer. Aber das Prinzip ist gleich: kurze, klare Sätze, ruhige Stimme, Berührung ankündigen bevor man anfasst. Basale Stimulation (beruhigende Waschung) nutzt denselben Ansatz: vorhersehbar, rhythmisch, sicher.",
           },
           {
             patientName: "Frau M. (82, Sturz)",
@@ -86,7 +86,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
           vorderseite:
             "Lukas sieht die Schere und weint sofort — obwohl du noch nichts getan hast. Was sind die 3 Säulen der kindgerechten Maßnahmen-Vorbereitung?",
           rueckseite:
-            "1. **Ankündigung** — kurz, konkret, max. 1-2 Min vorher bei 2-3-Jährigen. Nie lügen (\"tut nicht weh\").\n2. **Ablenkung** — Seifenblasen, Musik, Bezugsperson. Begleitet die Maßnahme, ersetzt nicht die Ankündigung.\n3. **Material aus Sichtfeld** — Schere/Pinzette verstecken. Analgesie-Wirkzeit vorher prüfen.\n\nSpektrum: Emilia (Pucken, Schnuller), Baür (kurze Sätze, Basale Stimulation), Frau M. (ausführliche Erklärung möglich).\n\nFaustregel: **Ankündigen, ablenken, Material verstecken — nie überrumpeln.**",
+            "1. **Ankündigung** — kurz, konkret, max. 1-2 Min vorher bei 2-3-Jährigen. Nie lügen (\"tut nicht weh\").\n2. **Ablenkung** — Seifenblasen, Musik, Bezugsperson. Begleitet die Maßnahme, ersetzt nicht die Ankündigung.\n3. **Material aus Sichtfeld** — Schere/Pinzette verstecken. Analgesie-Wirkzeit vorher prüfen.\n\nSpektrum: Emilia (Pucken, Schnuller), Bauer (kurze Sätze, Basale Stimulation), Frau M. (ausführliche Erklärung möglich).\n\nFaustregel: **Ankündigen, ablenken, Material verstecken — nie überrumpeln.**",
         },
       },
     },
@@ -110,7 +110,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
       },
       contentB1: {
         title: "Vorbereitung in der richtigen Reihenfolge",
-        body: "Was machst du zürst, bevor du den Verband wechselst? Sortiere die Schritte.",
+        body: "Was machst du zuerst, bevor du den Verband wechselst? Sortiere die Schritte.",
         glossarBegriffe: ["Analgesie (= Schmerzmittel)"],
       },
       question: {
@@ -118,7 +118,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
           "Sortiere die Vorbereitungsschritte für den Verbandwechsel bei Lukas in die richtige Reihenfolge.",
         sequencing: {
           instruction:
-            "Bringe die Schritte in die richtige Reihenfolge — von zürst bis zuletzt.",
+            "Bringe die Schritte in die richtige Reihenfolge — von zuerst bis zuletzt.",
           items: [
             {
               id: "v1",
@@ -196,7 +196,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
                   "Lukas spürt die Berührung. Er schreit: \"Nein! Mama!\" und schlägt nach dir.",
                 score: 0,
                 feedback:
-                  "Kein Einverständnis, keine Ankündigung — das ist ein Vertraünsbruch. 'Ablenkung ausnutzen' fühlt sich für das Kind wie Hinterlist an. Lukas reagiert mit Abwehr — schlagen, schreien. Das macht den Verbandwechsel schwerer, nicht leichter. Ablenkung ist eine Technik, kein Trick. Sie begleitet die Handlung, ersetzt aber nie die Ankündigung.",
+                  "Kein Einverständnis, keine Ankündigung — das ist ein Vertrauensbruch. 'Ablenkung ausnutzen' fühlt sich für das Kind wie Hinterlist an. Lukas reagiert mit Abwehr — schlagen, schreien. Das macht den Verbandwechsel schwerer, nicht leichter. Ablenkung ist eine Technik, kein Trick. Sie begleitet die Handlung, ersetzt aber nie die Ankündigung.",
                 feedbackB1:
                   "Das ist ein Fehler. Du hast nicht angekündigt. Lukas fühlt sich getäuscht. Er schreit und schlägt. Das macht alles schwerer.",
               },
@@ -219,7 +219,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
                 textB1:
                   "Sandra fragen: Soll Lukas selbst anfassen dürfen?",
                 patientResponse:
-                  "Sandra schaut unsicher. Lukas sieht dich anschaün — und fängt wieder an zu weinen.",
+                  "Sandra schaut unsicher. Lukas sieht dich anschauen — und fängt wieder an zu weinen.",
                 patientResponseB1:
                   "Sandra schaut unsicher. Lukas sieht dich — er weint wieder.",
                 score: 1,
@@ -232,9 +232,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
           },
           {
             context:
-              "Kathrin löst langsam den alten Verband. Du hältst die Seifenblasen und hältst Blickkontakt zu Lukas. Er wimmert — aber er schlägt nicht. Kathrin fragt dich leise: \"Was prüfen wir beim Lösen zürst?\"",
+              "Kathrin löst langsam den alten Verband. Du hältst die Seifenblasen und hältst Blickkontakt zu Lukas. Er wimmert — aber er schlägt nicht. Kathrin fragt dich leise: \"Was prüfen wir beim Lösen zuerst?\"",
             contextB1:
-              "Kathrin löst den Verband. Du machst Seifenblasen. Lukas wimmert. Kathrin fragt dich: \"Was prüfen wir zürst?\"",
+              "Kathrin löst den Verband. Du machst Seifenblasen. Lukas wimmert. Kathrin fragt dich: \"Was prüfen wir zuerst?\"",
             speaker: "Du",
             options: [
               {
@@ -246,7 +246,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
                   "Kathrin nickt: \"Genau. Intakte Blasen bleiben. Was noch?\"",
                 score: 3,
                 feedback:
-                  "Richtig. Intakte Blasen bieten natürlichen Wundschutz — nicht öffnen. Wenn eine Blase geplatzt ist, ändert sich das Management (offene Wundfläche → sorgfältige Abdeckung). Das ist das erste was du beim Lösen des Verbands visüll prüfst.",
+                  "Richtig. Intakte Blasen bieten natürlichen Wundschutz — nicht öffnen. Wenn eine Blase geplatzt ist, ändert sich das Management (offene Wundfläche → sorgfältige Abdeckung). Das ist das erste was du beim Lösen des Verbands visuell prüfst.",
                 feedbackB1:
                   "Richtig. Ganze Blasen schützen die Wunde — nicht öffnen. Wenn eine geplatzt ist: anders behandeln.",
               },
@@ -254,14 +254,14 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
                 text: "\"Den Schmerzscore — KUSS jetzt neu erheben.\"",
                 textB1: "\"Den Schmerzscore neu messen — KUSS.\"",
                 patientResponse:
-                  "Kathrin: \"Das kommt nach dem Wechsel. Zuerst: Was schaün wir beim Lösen an?\"",
+                  "Kathrin: \"Das kommt nach dem Wechsel. Zuerst: Was schauen wir beim Lösen an?\"",
                 patientResponseB1:
-                  "Kathrin: \"Das kommt danach. Zuerst: Was schaün wir an der Wunde?\"",
+                  "Kathrin: \"Das kommt danach. Zuerst: Was schauen wir an der Wunde?\"",
                 score: 1,
                 feedback:
-                  "KUSS nach dem Verbandwechsel — das stimmt. Aber beim Lösen des Verbands schaust du zürst auf die Wunde selbst: Blasen intakt? Zeichen von Infektion? Wundexsudat Menge und Farbe?",
+                  "KUSS nach dem Verbandwechsel — das stimmt. Aber beim Lösen des Verbands schaust du zuerst auf die Wunde selbst: Blasen intakt? Zeichen von Infektion? Wundexsudat Menge und Farbe?",
                 feedbackB1:
-                  "KUSS kommt nach dem Wechsel. Beim Lösen schaust du zürst auf die Wunde.",
+                  "KUSS kommt nach dem Wechsel. Beim Lösen schaust du zuerst auf die Wunde.",
               },
             ],
           },
@@ -339,12 +339,12 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
               "Das ist falsch. Kinder gewöhnen sich nicht daran. Das macht alles schlimmer. Sandras Reaktion muss ernst genommen werden.",
           },
           {
-            text: "Pause machen. Lukas beruhigen. KUSS-Skala prüfen. Arzt fragen ob Bedarfs-Analgesie gegeben werden kann. Dann neür Versuch mit Sandra als aktive Unterstützung.",
+            text: "Pause machen. Lukas beruhigen. KUSS-Skala prüfen. Arzt fragen ob Bedarfs-Analgesie gegeben werden kann. Dann neuer Versuch mit Sandra als aktive Unterstützung.",
             isCorrect: true,
             feedback:
-              "Richtig. Vier Schritte: (1) Pause — Schutz des Kindes hat Vorrang. (2) Beruhigen — Lukas und Sandra. (3) KUSS reassessment — zeigt dir den Schmerzscore jetzt, gibt Grundlage für Arzt-Gespräch. (4) Bedarfsanalgesie anfragen — wenn die Wirkzeit des Schmerzmittels abgelaufen ist oder nicht ausreicht, muss Arzt informiert werden. Dann neür Anlauf mit Sandra aktiv eingebunden (Ablenkung + Halt geben).",
+              "Richtig. Vier Schritte: (1) Pause — Schutz des Kindes hat Vorrang. (2) Beruhigen — Lukas und Sandra. (3) KUSS reassessment — zeigt dir den Schmerzscore jetzt, gibt Grundlage für Arzt-Gespräch. (4) Bedarfsanalgesie anfragen — wenn die Wirkzeit des Schmerzmittels abgelaufen ist oder nicht ausreicht, muss Arzt informiert werden. Dann neuer Anlauf mit Sandra aktiv eingebunden (Ablenkung + Halt geben).",
             feedbackB1:
-              "Richtig. Pause. Beruhigen. KUSS prüfen. Arzt fragen. Dann neür Versuch mit Sandra.",
+              "Richtig. Pause. Beruhigen. KUSS prüfen. Arzt fragen. Dann neuer Versuch mit Sandra.",
           },
           {
             text: "Sandra soll Lukas festhalten, dann geht es schneller.",
@@ -444,22 +444,22 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
               "Bei Emilia (4 Monate) ist Mundpflege auf Befeuchtung mit Muttermilch-getränktem Tupfer oder sterilem Wasser beschränkt. Keine Antiseptika, keine Lösungen — rein mechanisch-befeuchtend.",
           },
           {
-            patientName: "Herr Baür (82, Demenz)",
-            situationsId: "ls-baür-demenz-sturz",
+            patientName: "Herr Bauer (82, Demenz)",
+            situationsId: "ls-bauer-demenz-sturz",
             hauptfaktor: "Mundpflege bei Kooperationsproblem",
             kurzbeschreibung:
-              "Herr Baür kooperiert bei der Mundpflege nicht immer. Prinzip wie bei Lukas: kurz, ruhig, mit Ankündigung. Bei Demenz-Patienten: Chlorhexidin nur bei SICHERER Ausspuckfähigkeit — sonst Octenidin.",
+              "Herr Bauer kooperiert bei der Mundpflege nicht immer. Prinzip wie bei Lukas: kurz, ruhig, mit Ankündigung. Bei Demenz-Patienten: Chlorhexidin nur bei SICHERER Ausspuckfähigkeit — sonst Octenidin.",
           },
         ],
         sonstBox:
-          "Erweiterte Mundpflege-Optionen bei Risikopatienten: **Nystatin** (bei Soor-Nachweis, Arztverordnung), **Dexpanthenol-Lösung** (bei Stomatitis/Mukositis, z.B. nach Chemotherapie — CE-05/CE-07), **Caphosol** (künstlicher Speichel bei Strahlentherapie-bedingter Xerostomie). Bei Lukas aktüll nicht relevant — aber bei Kindern auf der Onkologie (CE-10) zentrales Thema.",
+          "Erweiterte Mundpflege-Optionen bei Risikopatienten: **Nystatin** (bei Soor-Nachweis, Arztverordnung), **Dexpanthenol-Lösung** (bei Stomatitis/Mukositis, z.B. nach Chemotherapie — CE-05/CE-07), **Caphosol** (künstlicher Speichel bei Strahlentherapie-bedingter Xerostomie). Bei Lukas aktuell nicht relevant — aber bei Kindern auf der Onkologie (CE-10) zentrales Thema.",
         sonstBoxB1:
           "Mehr Mundpflege-Mittel: **Nystatin** bei Soor (Arzt muss es verordnen). **Dexpanthenol** bei Entzündung im Mund. **Künstlicher Speichel** bei Strahlentherapie. Für Lukas jetzt nicht nötig — aber bei Kindern mit Krebs (CE-10) sehr wichtig.",
         karteikarte: {
           vorderseite:
             "Lukas (2,5 J.) hat eine leicht trockene Mundschleimhaut. Eine Kollegin greift zur Chlorhexidin-Mundspülung. Was sagst du?",
           rueckseite:
-            "Chlorhexidin ist bei Kindern unter 6 Jahren kontraindiziert (DGKJ 2022): Schluckgefahr, Schleimhautreizung, Übelkeit bei Verschlucken. Alternative: Octenidin (antiseptisch, schlucksicher) oder Kamille/Salbei in kleiner Menge.\n\nSpektrum: Petrov (Aspiration), Emilia (nur Wasser/Muttermilch-Tupfer), Baür (Chlorhexidin nur bei sicherem Ausspucken).\n\nFaustregel: **Kein Chlorhexidin unter 6 Jahren. Octenidin oder Kamille — schlucksicher.**",
+            "Chlorhexidin ist bei Kindern unter 6 Jahren kontraindiziert (DGKJ 2022): Schluckgefahr, Schleimhautreizung, Übelkeit bei Verschlucken. Alternative: Octenidin (antiseptisch, schlucksicher) oder Kamille/Salbei in kleiner Menge.\n\nSpektrum: Petrov (Aspiration), Emilia (nur Wasser/Muttermilch-Tupfer), Bauer (Chlorhexidin nur bei sicherem Ausspucken).\n\nFaustregel: **Kein Chlorhexidin unter 6 Jahren. Octenidin oder Kamille — schlucksicher.**",
         },
       },
     },
@@ -564,7 +564,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
             text: "\"Herr K., ich sehe dass Sie das sehr trifft. Gehen wir kurz auf den Flur — für Lukas.\"",
             isCorrect: true,
             feedback:
-              "Deeskalation durch drei Techniken: (1) Empathie zürst ('ich sehe dass Sie das sehr trifft') — keine Kritik, Wahrnehmung seiner Emotion. (2) Raumwechsel ('auf den Flur') — weg aus der Situation, die Lukas belastet. (3) Kindorientierung als Argument ('für Lukas') — Kevin liebt Lukas. Das ist das stärkste Argument. Auf dem Flur kann Frau Fink ruhig den Ablauf erklären, Kevin wird ruhiger wenn er merkt dass niemand ihn verurteilt.",
+              "Deeskalation durch drei Techniken: (1) Empathie zuerst ('ich sehe dass Sie das sehr trifft') — keine Kritik, Wahrnehmung seiner Emotion. (2) Raumwechsel ('auf den Flur') — weg aus der Situation, die Lukas belastet. (3) Kindorientierung als Argument ('für Lukas') — Kevin liebt Lukas. Das ist das stärkste Argument. Auf dem Flur kann Frau Fink ruhig den Ablauf erklären, Kevin wird ruhiger wenn er merkt dass niemand ihn verurteilt.",
             feedbackB1:
               "Richtig. Du sagst: Ich sehe deinen Gefühl. Lass uns rausgehen — für Lukas. Kevin liebt Lukas. Das ist das stärkste Argument.",
           },
@@ -595,7 +595,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
       displayFormat: "scenario",
       contentC1: {
         title: "Elternanleitung — Sandra als Co-Pflegerin",
-        body: "Nach dem Gespräch mit Frau Fink. Kevin ist ruhiger — er hat verstanden dass das Screening kein Vorwurf ist. Sandra möchte beim nächsten Verbandwechsel aktiv dabei helfen.\n\nElternanleitung ist eine Pflege-Aufgabe, keine Vereinfachung. Sie ist therapeutisch für das Kind (vertraute Person = weniger Angst) und stärkend für die Eltern (Handlungsfähigkeit zurückgewinnen statt ohnmächtig zuschaün).\n\n**Was Sandra beim nächsten Verbandwechsel tun kann:**\n- Ablenkung übernehmen (Seifenblasen, Musik, ruhige Stimme — das kann nur Sandra so wie Sandra)\n- Lukas halten wenn er es erlaubt — nicht fixieren, aber halten\n- Signale lesen: 'Bah-bah!' heißt Seifenblasen. 'Nein!' heißt: Pause. 'Mama!' heißt: näher kommen\n- Trinken anbieten nach dem Wechsel\n\n**Was Sandra nicht tun soll:** Lukas gegen seinen Willen festhalten. Eigene Schuldgefühle in die Situation einbringen ('Mama ist so traurig, das tut mir leid...'). Anleitung ist eine Kooperation, keine Delegation von Verantwortung.",
+        body: "Nach dem Gespräch mit Frau Fink. Kevin ist ruhiger — er hat verstanden dass das Screening kein Vorwurf ist. Sandra möchte beim nächsten Verbandwechsel aktiv dabei helfen.\n\nElternanleitung ist eine Pflege-Aufgabe, keine Vereinfachung. Sie ist therapeutisch für das Kind (vertraute Person = weniger Angst) und stärkend für die Eltern (Handlungsfähigkeit zurückgewinnen statt ohnmächtig zuschauen).\n\n**Was Sandra beim nächsten Verbandwechsel tun kann:**\n- Ablenkung übernehmen (Seifenblasen, Musik, ruhige Stimme — das kann nur Sandra so wie Sandra)\n- Lukas halten wenn er es erlaubt — nicht fixieren, aber halten\n- Signale lesen: 'Bah-bah!' heißt Seifenblasen. 'Nein!' heißt: Pause. 'Mama!' heißt: näher kommen\n- Trinken anbieten nach dem Wechsel\n\n**Was Sandra nicht tun soll:** Lukas gegen seinen Willen festhalten. Eigene Schuldgefühle in die Situation einbringen ('Mama ist so traurig, das tut mir leid...'). Anleitung ist eine Kooperation, keine Delegation von Verantwortung.",
         fallbezug:
           "Lukas K., 2,5 J., Verbrühung Grad 2a. Sandra (28) wird in die Pflege einbezogen — mit klarer Rolle und ohne Überforderung.",
         glossarBegriffe: ["Elternanleitung", "Familienzentrierte Pflege"],

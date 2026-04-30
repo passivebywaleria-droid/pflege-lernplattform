@@ -51,11 +51,11 @@ export const CE02_NGUYEN_IW_01_STOMA_ARTEN: ContentStep = {
     storyAufhaengerB1:
       "In der Übergabe steht: Herr Nguyen hat ein \"endständiges Kolostoma\". Was bedeutet das? Und wie unterscheidet es sich von anderen Stoma-Formen?",
     kerntext:
-      "**Was ist ein Stoma?** Eine operativ angelegte Öffnung, durch die der Darm über die Bauchdecke nach außen geleitet wird. Der Stuhl wird in einem Beutel aufgefangen.\n\n**Zwei Haupt-Typen nach Darmabschnitt:**\n\n• **Kolostoma** — aus dem Dickdarm (Kolon). Output: breiig bis geformt, wenig aggressiv für die Haut.\n\n• **Ileostoma** — aus dem Dünndarm (Ileum). Output: dünnflüssig, enzymatisch aggressiv — höhere Hautgefährdung.\n\n**Zwei Haupt-Typen nach Daür:**\n\n• **Endständig** = daürhaft. Das Darmende wird durch die Bauchdecke geführt und vernäht. Keine Rückverlagerung geplant. Herr Nguyen hat diesen Typ.\n\n• **Doppelläufig** = vorübergehend. Beide Darmschenkel (zuführend + abführend) werden ausgeleitet. Rückverlagerung nach Heilung möglich.\n\n**Warum ist das wichtig für die Pflege?** Endständiges Kolostoma = daürhafte Körperbildveränderung. Die Anleitung zur Selbstversorgung hat höchste Priorität — Herr Nguyen wird dieses Stoma sein Leben lang haben.",
+      "**Was ist ein Stoma?** Eine operativ angelegte Öffnung, durch die der Darm über die Bauchdecke nach außen geleitet wird. Der Stuhl wird in einem Beutel aufgefangen.\n\n**Zwei Haupt-Typen nach Darmabschnitt:**\n\n• **Kolostoma** — aus dem Dickdarm (Kolon). Output: breiig bis geformt, wenig aggressiv für die Haut.\n\n• **Ileostoma** — aus dem Dünndarm (Ileum). Output: dünnflüssig, enzymatisch aggressiv — höhere Hautgefährdung.\n\n**Zwei Haupt-Typen nach Dauer:**\n\n• **Endständig** = dauerhaft. Das Darmende wird durch die Bauchdecke geführt und vernäht. Keine Rückverlagerung geplant. Herr Nguyen hat diesen Typ.\n\n• **Doppelläufig** = vorübergehend. Beide Darmschenkel (zuführend + abführend) werden ausgeleitet. Rückverlagerung nach Heilung möglich.\n\n**Warum ist das wichtig für die Pflege?** Endständiges Kolostoma = dauerhafte Körperbildveränderung. Die Anleitung zur Selbstversorgung hat höchste Priorität — Herr Nguyen wird dieses Stoma sein Leben lang haben.",
     kerntextB1:
-      "**Was ist ein Stoma?** Eine Öffnung am Bauch. Der Darm kommt durch die Bauchwand nach draußen. Der Stuhl geht in einen Beutel.\n\n**Zwei Stoma-Typen:**\n\n• **Kolostoma** = aus dem Dickdarm. Stuhl ist breiig bis fest.\n\n• **Ileostoma** = aus dem Dünndarm. Stuhl ist dünnflüssig und aggressiver für die Haut.\n\n**Daürhaft oder vorübergehend:**\n\n• **Endständig** = bleibt für immer. Herr Nguyen hat diesen Typ.\n\n• **Doppelläufig** = kann zurückverlegt werden.\n\nHerr Nguyen muss lernen, sein Stoma selbst zu versorgen. Es bleibt daürhaft.",
+      "**Was ist ein Stoma?** Eine Öffnung am Bauch. Der Darm kommt durch die Bauchwand nach draußen. Der Stuhl geht in einen Beutel.\n\n**Zwei Stoma-Typen:**\n\n• **Kolostoma** = aus dem Dickdarm. Stuhl ist breiig bis fest.\n\n• **Ileostoma** = aus dem Dünndarm. Stuhl ist dünnflüssig und aggressiver für die Haut.\n\n**Dauerhaft oder vorübergehend:**\n\n• **Endständig** = bleibt für immer. Herr Nguyen hat diesen Typ.\n\n• **Doppelläufig** = kann zurückverlegt werden.\n\nHerr Nguyen muss lernen, sein Stoma selbst zu versorgen. Es bleibt dauerhaft.",
     faustregel:
-      "**Endständig = daürhaft.** Herr Nguyen lernt Selbstversorgung — nicht als Option, sondern als Ziel.",
+      "**Endständig = dauerhaft.** Herr Nguyen lernt Selbstversorgung — nicht als Option, sondern als Ziel.",
     faustregelB1:
       "Endständig heißt: Das Stoma bleibt für immer. Herr Nguyen muss lernen, es selbst zu versorgen.",
     spektrum: [
@@ -85,7 +85,7 @@ export const CE02_NGUYEN_IW_01_STOMA_ARTEN: ContentStep = {
       vorderseite:
         "Herr Nguyen hat ein endständiges Kolostoma nach Sigmaresektion. Was bedeutet 'endständig' — und warum ist das für die Pflegeplanung entscheidend?",
       rueckseite:
-        "Endständig = Darmende durch Bauchdecke nach außen, daürhaft, keine Rückverlagerung. Kolostoma = Dickdarm, breiig-geformter Output. Unterschied: Ileostoma = Dünndarm, dünnflüssig, hautgefährdend. Pflegerisch: Selbstversorgung ist Primärziel — Anleitung hat höchste Priorität. Spektrum: Petrov (Stuhlinkontinenz bei Hemiparese), Emilia (Mekonium-Beobachtung). Faustregel: **Endständig = daürhaft. Selbstversorgung ist das Ziel.**",
+        "Endständig = Darmende durch Bauchdecke nach außen, dauerhaft, keine Rückverlagerung. Kolostoma = Dickdarm, breiig-geformter Output. Unterschied: Ileostoma = Dünndarm, dünnflüssig, hautgefährdend. Pflegerisch: Selbstversorgung ist Primärziel — Anleitung hat höchste Priorität. Spektrum: Petrov (Stuhlinkontinenz bei Hemiparese), Emilia (Mekonium-Beobachtung). Faustregel: **Endständig = dauerhaft. Selbstversorgung ist das Ziel.**",
     },
   },
 };
@@ -229,7 +229,7 @@ export const CE02_NGUYEN_IW_03_STOMA_OUTPUT: ContentStep = {
     storyAufhaengerB1:
       "Im Beutel von Herrn Nguyen ist dünnflüssiger, gelblich-brauner Stuhl. Der Beutel ist 1/3 voll. Ist das normal am 4. Tag nach der OP?",
     kerntext:
-      "**Die Transitphase (Tag 3–7 post-OP):**\n\nNach einer Darm-OP startet die Peristaltik (Darmbewegung) langsam wieder. Der Output verändert sich schrittweise:\n\n• **Tag 1–3:** Kein oder sehr wenig Output, evtl. Schleim. Der Darm erholt sich.\n\n• **Tag 3–7 (Transitphase):** Dünnflüssig bis wässrig, gelblich-braun. Das ist **normal** — der Darm arbeitet wieder, aber der Kostaufbau hat gerade erst begonnen. Herrn Nguyens Befund passt genau hierher.\n\n• **Ab Woche 2:** Zunehmend breiig bis geformt, je nach Kostaufbau und Darmabschnitt.\n\n**Kolostoma vs. Ileostoma — Output-Unterschied:**\n• Kolostoma (Herr Nguyen): geformter Output nach Eingewöhnungsphase\n• Ileostoma: daürhaft dünnflüssig (Dickdarm fehlt als \"Wasserentzieher\")\n\n**Alarmsignal:** Kein Output über 48h trotz Kostaufbau → Ileus-Verdacht → Arzt sofort informieren.",
+      "**Die Transitphase (Tag 3–7 post-OP):**\n\nNach einer Darm-OP startet die Peristaltik (Darmbewegung) langsam wieder. Der Output verändert sich schrittweise:\n\n• **Tag 1–3:** Kein oder sehr wenig Output, evtl. Schleim. Der Darm erholt sich.\n\n• **Tag 3–7 (Transitphase):** Dünnflüssig bis wässrig, gelblich-braun. Das ist **normal** — der Darm arbeitet wieder, aber der Kostaufbau hat gerade erst begonnen. Herrn Nguyens Befund passt genau hierher.\n\n• **Ab Woche 2:** Zunehmend breiig bis geformt, je nach Kostaufbau und Darmabschnitt.\n\n**Kolostoma vs. Ileostoma — Output-Unterschied:**\n• Kolostoma (Herr Nguyen): geformter Output nach Eingewöhnungsphase\n• Ileostoma: dauerhaft dünnflüssig (Dickdarm fehlt als \"Wasserentzieher\")\n\n**Alarmsignal:** Kein Output über 48h trotz Kostaufbau → Ileus-Verdacht → Arzt sofort informieren.",
     kerntextB1:
       "**Was ist die Transitphase?** In den ersten Tagen nach der OP erholt sich der Darm.\n\n• **Tag 1–3:** Fast kein Stuhl, manchmal Schleim.\n• **Tag 3–7:** Dünnflüssig, gelblich — das ist **normal**. Herrn Nguyens Beutel-Inhalt ist genau so.\n• **Ab Woche 2:** Stuhl wird fester.\n\n**Alarmsignal:** Gar kein Stuhl seit 48 Stunden, obwohl Herr Nguyen isst → sofort Arzt informieren.",
     faustregel:
@@ -336,11 +336,11 @@ export const CE02_NGUYEN_IW_04_BEUTELWECHSEL: ContentStep = {
           "Bei Frau Yilmaz ist es Wundversorgung statt Stomaversorgung — aber das Prinzip \"aseptisch, von innen nach außen, nicht kontaminieren\" ist das gleiche Grundmuster.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz + Manipulation an Verbund",
         kurzbeschreibung:
-          "Bei Herrn Baür reißt er sich manchmal Verbundmaterial ab. Bei Herrn Nguyen ist Manipulation des Stoma-Beutels ein potenzielles Risiko, wenn er verwirrt oder unruhig ist — in der Nacht z.B.",
+          "Bei Herrn Bauer reißt er sich manchmal Verbundmaterial ab. Bei Herrn Nguyen ist Manipulation des Stoma-Beutels ein potenzielles Risiko, wenn er verwirrt oder unruhig ist — in der Nacht z.B.",
       },
       {
         patientName: "Frau Schmidt",
@@ -492,7 +492,7 @@ export const CE02_NGUYEN_IW_06_LOCHGROESSE: ContentStep = {
     bausteinRef: "stuhlausscheidung-stoma-abschwellung",
     themaPrimaer: "stuhlausscheidung",
     storyAufhaenger:
-      "Du stehst mit der neün Hautschutzplatte bereit. Im Patientenblatt steht: \"Stoma 60 mm, gemessen am OP-Tag.\" Das war vor 4 Tagen. Übernimmst du den Wert? Eine erfahrene Pflegekraft würde sagen: niemals.",
+      "Du stehst mit der neuen Hautschutzplatte bereit. Im Patientenblatt steht: \"Stoma 60 mm, gemessen am OP-Tag.\" Das war vor 4 Tagen. Übernimmst du den Wert? Eine erfahrene Pflegekraft würde sagen: niemals.",
     storyAufhaengerB1:
       "Du hast die neue Platte bereit. Im Patientenblatt steht: \"Stoma 60 mm\" — gemessen vor 4 Tagen. Nimmst du diesen Wert? Nein.",
     kerntext:
@@ -551,7 +551,7 @@ export const CE02_NGUYEN_IW_07_LECKAGE: ContentStep = {
   transition:
     "Haut vor Beutel. Das ist die Regel. Gleich passiert genau das — Herrn Nguyens Beutel ist undicht.",
   contentC1: {
-    title: "Leckage-Management: Haut zürst",
+    title: "Leckage-Management: Haut zuerst",
     body: "",
     glossarBegriffe: ["Leckage", "Mazerierung", "Stomaplatte"],
   },
@@ -565,13 +565,13 @@ export const CE02_NGUYEN_IW_07_LECKAGE: ContentStep = {
     themaPrimaer: "stuhlausscheidung",
     themenSekundaer: ["haut"],
     storyAufhaenger:
-      "Stell dir vor: 20 Minuten nach deinem Beutelwechsel ruft Herr Nguyen. Der Beutel ist undicht. Stomainhalt auf der Bauchhaut. Was tust du ZUERST — neün Beutel anlegen oder Haut reinigen?",
+      "Stell dir vor: 20 Minuten nach deinem Beutelwechsel ruft Herr Nguyen. Der Beutel ist undicht. Stomainhalt auf der Bauchhaut. Was tust du ZUERST — neuen Beutel anlegen oder Haut reinigen?",
     storyAufhaengerB1:
-      "Stell dir vor: Der Beutel ist undicht. Stuhl auf der Haut. Was tust du zürst — neün Beutel oder Haut reinigen?",
+      "Stell dir vor: Der Beutel ist undicht. Stuhl auf der Haut. Was tust du zuerst — neuen Beutel oder Haut reinigen?",
     kerntext:
       "**Leckage ist die häufigste Stoma-Komplikation.** Rund 70 % der Stomaträger erleben sie mindestens einmal.\n\n**Die goldene Regel: Haut vor Beutel.**\n\n• **Schritt 1:** Stomainhalt sofort von der Haut entfernen. Lauwarmes Wasser, keine Desinfektionsmittel. Haut gründlich trocknen.\n\n• **Schritt 2:** Ursache beurteilen. Wo war die Leckage? Platte-Haut-Übergang (Schutzpaste unzureichend, Faltenwurf)? Beutel-Platten-Verbindung (Ring beschädigt)? Plattengröße falsch (Stoma abgeschwollen)?\n\n• **Schritt 3:** Platte neu anpassen. Stoma nochmals ausmessen, Lochgröße korrigieren.\n\n**Warum Haut vor Beutel?** Kolostoma-Output ist leicht alkalisch — jede Minute auf der Haut beschleunigt die Mazerierung. Der neue Beutel nützt nichts, wenn die Haut darunter bereits geschädigt ist.\n\n**Wann Arzt informieren?** Nur bei sichtbarer Hautschädigung, Stomaprolaps oder wiederholter Leckage trotz korrekter Versorgung.",
     kerntextB1:
-      "**Leckage** heißt: der Beutel ist undicht. Das passiert oft.\n\n**Regel: Erst die Haut reinigen, DANN neün Beutel anlegen.**\n\n1. Stuhl sofort von der Haut waschen (lauwarmes Wasser). Haut trocknen.\n2. Schaün: Warum war der Beutel undicht? Platte zu groß? Paste fehlt? Hautfalte?\n3. Platte neu anpassen. Stoma nochmals messen.\n\n**Warum Haut zürst?** Der Stuhl schädigt die Haut. Jede Minute zählt.\n\nArzt informieren: nur wenn die Haut sichtbar geschädigt ist oder das Stoma sich verändert hat.",
+      "**Leckage** heißt: der Beutel ist undicht. Das passiert oft.\n\n**Regel: Erst die Haut reinigen, DANN neuen Beutel anlegen.**\n\n1. Stuhl sofort von der Haut waschen (lauwarmes Wasser). Haut trocknen.\n2. Schauen: Warum war der Beutel undicht? Platte zu groß? Paste fehlt? Hautfalte?\n3. Platte neu anpassen. Stoma nochmals messen.\n\n**Warum Haut zuerst?** Der Stuhl schädigt die Haut. Jede Minute zählt.\n\nArzt informieren: nur wenn die Haut sichtbar geschädigt ist oder das Stoma sich verändert hat.",
     faustregel:
       "**Haut vor Beutel.** Erst reinigen und trocknen, dann Ursache klären, dann neu anlegen.",
     faustregelB1:
@@ -589,7 +589,7 @@ export const CE02_NGUYEN_IW_07_LECKAGE: ContentStep = {
         situationsId: "ls-schmidt-adipositas",
         hauptfaktor: "Hautfalten erhöhen Leckage-Risiko",
         kurzbeschreibung:
-          "Hautfalten bei Adipositas verhindern dichtes Sitzen der Stomaplatte. Bei Frau Schmidt wäre Leckage ein Daürproblem — spezielle konvexe Platten oder Gürtelsysteme nötig.",
+          "Hautfalten bei Adipositas verhindern dichtes Sitzen der Stomaplatte. Bei Frau Schmidt wäre Leckage ein Dauerproblem — spezielle konvexe Platten oder Gürtelsysteme nötig.",
       },
       {
         patientName: "Emilia",
@@ -677,7 +677,7 @@ export const CE02_NGUYEN_IW_08_STOMA_DOKU: ContentStep = {
         situationsId: "ls-petrov-schlaganfall",
         hauptfaktor: "Katheter-Dokumentation",
         kurzbeschreibung:
-          "Bei Herrn Petrov ist die Katheter-Dokumentation das Pendant: Katheter-Befund, Urin-Output, Hautumgebung, Liegedaür — gleiche Dokumentationslogik.",
+          "Bei Herrn Petrov ist die Katheter-Dokumentation das Pendant: Katheter-Befund, Urin-Output, Hautumgebung, Liegedauer — gleiche Dokumentationslogik.",
       },
     ],
     karteikarte: {
@@ -763,11 +763,11 @@ export const CE02_NGUYEN_IW_09_BEOBACHTUNG_VS_WERTUNG: ContentStep = {
           "Bei Frau M. war die Unterscheidung einfacher: Sturz = Fakt. Aber auch hier gab es Grauzonen — z.B. 'Frau M. war aufgeregt' (Beobachtung) vs. 'Frau M. hat Angst' (Interpretation).",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz — 'aggressiv' vs. Beobachtung",
         kurzbeschreibung:
-          "Bei Herrn Baür: 'Patient ist aggressiv' ist eine Wertung. Korrekt: 'Patient hat die Hand der Pflegekraft weggeschoben und laut gerufen.' Gleiche Logik wie bei Herrn Nguyen.",
+          "Bei Herrn Bauer: 'Patient ist aggressiv' ist eine Wertung. Korrekt: 'Patient hat die Hand der Pflegekraft weggeschoben und laut gerufen.' Gleiche Logik wie bei Herrn Nguyen.",
       },
       {
         patientName: "Herr Petrov",
@@ -781,7 +781,7 @@ export const CE02_NGUYEN_IW_09_BEOBACHTUNG_VS_WERTUNG: ContentStep = {
       vorderseite:
         "Herr Nguyen hat gesagt: 'Ich bin kein richtiger Mann mehr.' Gehört das in den Pflegebericht? Und gehört 'Herr Nguyen ist unmotiviert' hinein?",
       rueckseite:
-        "Zitat JA — in Anführungszeichen, als dokumentierte Patientenäußerung. 'Unmotiviert' NEIN — persönliche Wertung, keine Beobachtung. Grundregel: Siehst/hörst/misst du es = rein. Denkst du es = nicht rein. Rechtsgrundlage: SGB V § 630f (sachlich, zeitnah, nachvollziehbar). Spektrum: Baür ('aggressiv' = Wertung), Petrov (Aphasie-Zitate). **Beobachtung rein, Meinung raus.**",
+        "Zitat JA — in Anführungszeichen, als dokumentierte Patientenäußerung. 'Unmotiviert' NEIN — persönliche Wertung, keine Beobachtung. Grundregel: Siehst/hörst/misst du es = rein. Denkst du es = nicht rein. Rechtsgrundlage: SGB V § 630f (sachlich, zeitnah, nachvollziehbar). Spektrum: Bauer ('aggressiv' = Wertung), Petrov (Aphasie-Zitate). **Beobachtung rein, Meinung raus.**",
     },
   },
 };

@@ -53,7 +53,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
         storyAufhaengerB1:
           "Du sitzt am Computer. Gleich schreibst du den Wundbericht. Welche Informationen müssen drinstehen?",
         kerntext:
-          "Eine **vollständige Wunddokumentation** folgt einem festen Schema. Merkhilfe: **L-G-F-E-R-A** (Lage, Grösse, Farbe, Exsudat, Rand, Aktion).\n\n• **L — Lokalisation:** Wo ist die Wunde? (Sakrum, zentral)\n\n• **G — Grösse:** Länge x Breite in cm. Immer mit Masstab messen, nicht schätzen. Fotodokumentation als Ergänzung.\n\n• **F — Farbe / Wundgrund:** Rosa-granulativ (Heilung), Rötlich-feucht (Entzündung), Gelblich (Fibrin/Belag), Schwarz (Nekrose). Prozentualer Anteil bei Mischwunden.\n\n• **E — Exsudat:** Menge (kein/minimal/mässig/viel) + Art (serös/sanguinolent/purulent).\n\n• **R — Wundrand:** Intakt? Mazeriert? Epithelialisierend? Unterminiert?\n\n• **A — Aktion:** Was wurde gemacht? Welcher Verband? Nächster Wechsel wann?\n\n**Plus Pflichtfelder:** Datum, Uhrzeit, Handzeichen. Reaktion der Patientin. Schmerzangabe (NRS). Foto mit Einwilligung.\n\n**Bei Frau Yilmaz heute (Tag 17):** L = Sakrum, G = 1,5x2,5 cm (rückläufig), F = rosa-granulativ, E = minimal/serös, R = nicht mazeriert, A = Hydrokolloid-Verband erneürt.",
+          "Eine **vollständige Wunddokumentation** folgt einem festen Schema. Merkhilfe: **L-G-F-E-R-A** (Lage, Grösse, Farbe, Exsudat, Rand, Aktion).\n\n• **L — Lokalisation:** Wo ist die Wunde? (Sakrum, zentral)\n\n• **G — Grösse:** Länge x Breite in cm. Immer mit Masstab messen, nicht schätzen. Fotodokumentation als Ergänzung.\n\n• **F — Farbe / Wundgrund:** Rosa-granulativ (Heilung), Rötlich-feucht (Entzündung), Gelblich (Fibrin/Belag), Schwarz (Nekrose). Prozentualer Anteil bei Mischwunden.\n\n• **E — Exsudat:** Menge (kein/minimal/mässig/viel) + Art (serös/sanguinolent/purulent).\n\n• **R — Wundrand:** Intakt? Mazeriert? Epithelialisierend? Unterminiert?\n\n• **A — Aktion:** Was wurde gemacht? Welcher Verband? Nächster Wechsel wann?\n\n**Plus Pflichtfelder:** Datum, Uhrzeit, Handzeichen. Reaktion der Patientin. Schmerzangabe (NRS). Foto mit Einwilligung.\n\n**Bei Frau Yilmaz heute (Tag 17):** L = Sakrum, G = 1,5x2,5 cm (rückläufig), F = rosa-granulativ, E = minimal/serös, R = nicht mazeriert, A = Hydrokolloid-Verband erneuert.",
         kerntextB1:
           "Ein **Wundbericht** braucht feste Punkte. Merke: **L-G-F-E-R-A**.\n\n• **L** — Wo ist die Wunde? (Steissbein, Mitte)\n\n• **G** — Wie gross? In cm x cm messen.\n\n• **F** — Welche Farbe hat der Wundgrund? (Rosa = Heilung, Rot = Entzündung, Gelb = Belag, Schwarz = totes Gewebe)\n\n• **E** — Wie viel Flüssigkeit? (keine / wenig / mittel / viel)\n\n• **R** — Wie sieht der Rand aus? (aufgeweicht? sauber?)\n\n• **A** — Was hast du gemacht? Welcher Verband? Wann nächster Wechsel?\n\n**Und dazu:** Datum, Uhrzeit, dein Name. Reaktion der Patientin. Schmerz-Zahl (NRS). Foto (nur mit Erlaubnis).",
         faustregel:
@@ -87,7 +87,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
           vorderseite:
             "Nenne die 6 Pflicht-Elemente einer standardkonformen Wunddokumentation (Merkhilfe!) und erkläre, was bei Frau Yilmaz heute (Tag 17) jeweils einzutragen wäre.",
           rueckseite:
-            "L-G-F-E-R-A:\nL = Sakrum, zentral\nG = 1,5 x 2,5 cm (rückläufig ggue. 2x3 cm Tag 14)\nF = Rosa-granulativ (Heilungszeichen)\nE = Minimal, serös\nR = Nicht mazeriert (verbessert)\nA = Hydrokolloid-Verband erneürt, Foto mit Einwilligung\n\nPlus: Datum + Uhrzeit, Handzeichen, NRS (0 — Neuropathie), Patientin kooperiert.\n\nFaustregel: **L-G-F-E-R-A + Datum + Schmerz + Foto.**",
+            "L-G-F-E-R-A:\nL = Sakrum, zentral\nG = 1,5 x 2,5 cm (rückläufig ggue. 2x3 cm Tag 14)\nF = Rosa-granulativ (Heilungszeichen)\nE = Minimal, serös\nR = Nicht mazeriert (verbessert)\nA = Hydrokolloid-Verband erneuert, Foto mit Einwilligung\n\nPlus: Datum + Uhrzeit, Handzeichen, NRS (0 — Neuropathie), Patientin kooperiert.\n\nFaustregel: **L-G-F-E-R-A + Datum + Schmerz + Foto.**",
         },
       },
     },
@@ -411,7 +411,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
               prompt: "Wundgröße (cm × cm):",
               promptB1: "Wie groß ist die Wunde?",
               options: [
-                { text: "1,5 cm × 2,5 cm", isCorrect: true, explanation: "Aktüller Befund Tag 17." },
+                { text: "1,5 cm × 2,5 cm", isCorrect: true, explanation: "Aktueller Befund Tag 17." },
                 { text: "2 cm × 3 cm", isCorrect: false, explanation: "Das war der Befund bei Entdeckung (Tag 14). Heute ist die Wunde kleiner." },
                 { text: "3 cm × 4 cm", isCorrect: false, explanation: "Falsch — die Wunde ist kleiner geworden, nicht größer." },
               ],

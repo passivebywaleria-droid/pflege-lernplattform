@@ -56,7 +56,7 @@ export const CE02_SCHMIDT_IW_01_DFS_PODOLOGE: ContentStep = {
     kerntext:
       "**Was ist das Diabetische Fußsyndrom (DFS)?** Eine Komplikation bei Diabetes: Nervenschädigung (Polyneuropathie) + Durchblutungsstörung = der Patient spürt Verletzungen nicht und sie heilen schlecht.\n\n**Warum ist das so gefährlich?**\n\n• **Polyneuropathie**: Frau Schmidt spürt Druckstellen, Risse und Blasen an den Füßen nicht oder kaum.\n\n• **Angiopathie**: Die Blutgefäße sind verengt — Wunden heilen 3–5× langsamer (DDG 2023).\n\n• **Onychomykose** (Nagelpilz): Bei Diabetes häufig — verdickte, verfärbte Nägel. Diagnose nur durch Arzt/Mykologie. Aber: Jeder Nagel-Eingriff birgt Verletzungsgefahr.\n\n**Kompetenzgrenze Pflege ↔ Podologe:**\n\n• Pflege darf: inspizieren, dokumentieren, Arzt informieren, Überweisung einleiten.\n\n• Pflege darf NICHT: Nägel schneiden, feilen, Hornhaut entfernen — auch nicht \"nur ein bisschen\".\n\n• **Podologe** (= medizinischer Fußpfleger mit Zusatzqualifikation): Einzige Berufsgruppe für invasive Fußpflege bei DFS.\n\n**Wagner-Armstrong-Klassifikation:**\n• Grad 0: Risikofuß (noch keine Läsion)\n• Grad 1: Oberflächliche Läsion (z. B. Rissbildung) — Frau Schmidt ist hier\n• Grad 2–5: Tiefere Läsionen bis Gangrän",
     kerntextB1:
-      "**Was ist das Diabetische Fußsyndrom?** Bei Diabetes werden Nerven und Blutgefäße in den Füßen geschädigt.\n\n• Die Nerven funktionieren schlechter = Frau Schmidt spürt Verletzungen am Fuß nicht.\n\n• Die Blutgefäße sind verengt = Wunden heilen viel langsamer.\n\n• **Onychomykose** (= Nagelpilz): Bei Diabetes häufig. Die Nägel werden dick und gelblich.\n\n**Wer darf die Nägel schneiden?**\n\n• Pflege: Schaün, aufschreiben, Arzt informieren — aber NICHT schneiden oder feilen!\n\n• **Podologe** (= Fuß-Spezialist): Nur er darf die Nägel bearbeiten.\n\n**Wagner-Einteilung:**\n• Grad 0 = Risiko, aber noch keine Wunde\n• Grad 1 = erste Risse (Frau Schmidt)\n• Grad 2–5 = tiefere Wunden",
+      "**Was ist das Diabetische Fußsyndrom?** Bei Diabetes werden Nerven und Blutgefäße in den Füßen geschädigt.\n\n• Die Nerven funktionieren schlechter = Frau Schmidt spürt Verletzungen am Fuß nicht.\n\n• Die Blutgefäße sind verengt = Wunden heilen viel langsamer.\n\n• **Onychomykose** (= Nagelpilz): Bei Diabetes häufig. Die Nägel werden dick und gelblich.\n\n**Wer darf die Nägel schneiden?**\n\n• Pflege: Schauen, aufschreiben, Arzt informieren — aber NICHT schneiden oder feilen!\n\n• **Podologe** (= Fuß-Spezialist): Nur er darf die Nägel bearbeiten.\n\n**Wagner-Einteilung:**\n• Grad 0 = Risiko, aber noch keine Wunde\n• Grad 1 = erste Risse (Frau Schmidt)\n• Grad 2–5 = tiefere Wunden",
     faustregel:
       "**Diabetikerfuß = Podologe.** Pflege schaut, dokumentiert, überweist — fasst die Nägel nicht an.",
     faustregelB1:
@@ -70,11 +70,11 @@ export const CE02_SCHMIDT_IW_01_DFS_PODOLOGE: ContentStep = {
           "Bei ihr ist die Fußinspektion aus einem anderen Grund wichtig: Immobilität führt zu Ödemen und Thromboserisiko — nicht zu DFS, aber die Füße müssen trotzdem kontrolliert werden.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz + Sturzrisiko",
         kurzbeschreibung:
-          "Herr Baür vergisst Schuhe anzuziehen. Bei ihm ist barfuß laufen auf Station ein konkretes Sturzrisiko — kein DFS, aber dieselbe Pflege-Aufgabe: Fußinspektion und Dokumentation.",
+          "Herr Bauer vergisst Schuhe anzuziehen. Bei ihm ist barfuß laufen auf Station ein konkretes Sturzrisiko — kein DFS, aber dieselbe Pflege-Aufgabe: Fußinspektion und Dokumentation.",
       },
       {
         patientName: "Herr Petrov",
@@ -88,7 +88,7 @@ export const CE02_SCHMIDT_IW_01_DFS_PODOLOGE: ContentStep = {
       vorderseite:
         "Bei Frau Schmidt (Diabetes Typ 2) findest du verdickte, gelbliche Nägel und trockene Haut an den Füßen. Was tust du — und was nicht?",
       rueckseite:
-        "Inspizieren, Befund dokumentieren (Wagner Grad 1), Arzt informieren, Podologen-Überweisung einleiten. Pflege darf Nägel NICHT schneiden oder feilen (DDG 2023). Podologe = einzige zugelassene Berufsgruppe für invasive Fußpflege bei DFS. Onychomykose (Nagelpilz) = häufig bei Diabetes, Diagnose durch Arzt.\n\nSpektrum: Kovac (Ödem-Füße), Baür (barfuß), Petrov (Sensibilitätsstörung).\n\nFaustregel: **Diabetikerfuß = Podologe. Pflege schaut, dokumentiert, überweist.**",
+        "Inspizieren, Befund dokumentieren (Wagner Grad 1), Arzt informieren, Podologen-Überweisung einleiten. Pflege darf Nägel NICHT schneiden oder feilen (DDG 2023). Podologe = einzige zugelassene Berufsgruppe für invasive Fußpflege bei DFS. Onychomykose (Nagelpilz) = häufig bei Diabetes, Diagnose durch Arzt.\n\nSpektrum: Kovac (Ödem-Füße), Bauer (barfuß), Petrov (Sensibilitätsstörung).\n\nFaustregel: **Diabetikerfuß = Podologe. Pflege schaut, dokumentiert, überweist.**",
     },
   },
 };
@@ -107,7 +107,7 @@ export const CE02_SCHMIDT_IW_02_BELASTUNGSINKONTINENZ: ContentStep = {
   kompetenzbereich: "I.1",
   quellen: [
     "ICS — International Continence Society: Klassifikation Harninkontinenz",
-    "AWMF S2k-Leitlinie (2023): Diagnostik und Therapie Harninkontinenz bei Fraün",
+    "AWMF S2k-Leitlinie (2023): Diagnostik und Therapie Harninkontinenz bei Frauen",
     "DNQP (2014): Expertenstandard Förderung der Harnkontinenz in der Pflege",
   ],
   track: "basis",
@@ -132,31 +132,31 @@ export const CE02_SCHMIDT_IW_02_BELASTUNGSINKONTINENZ: ContentStep = {
     bausteinRef: "harnausscheidung-belastungsinkontinenz",
     themaPrimaer: "harnausscheidung",
     storyAufhaenger:
-      "In der Übergabe steht: \"Belastungsinkontinenz seit 2 Jahren.\" Frau Schmidt redet nicht gerne darüber. Bevor du das Thema ansprichst: Was genau ist Belastungsinkontinenz — und warum trifft es Fraün mit Adipositas besonders?",
+      "In der Übergabe steht: \"Belastungsinkontinenz seit 2 Jahren.\" Frau Schmidt redet nicht gerne darüber. Bevor du das Thema ansprichst: Was genau ist Belastungsinkontinenz — und warum trifft es Frauen mit Adipositas besonders?",
     storyAufhaengerB1:
-      "In der Übergabe steht: Frau Schmidt verliert Urin seit 2 Jahren. Was genau ist Belastungsinkontinenz? Warum haben Fraün mit Übergewicht das öfter?",
+      "In der Übergabe steht: Frau Schmidt verliert Urin seit 2 Jahren. Was genau ist Belastungsinkontinenz? Warum haben Frauen mit Übergewicht das öfter?",
     kerntext:
-      "**Was ist Belastungsinkontinenz?** Unwillkürlicher Urinverlust bei körperlicher Belastung — Husten, Niesen, Lachen, Heben, Treppensteigen. Der Blasenschließmuskel (Sphinkter) kann dem Druckanstieg im Bauchraum nicht standhalten.\n\n**Warum bei Adipositas häufiger?**\n\n• Erhöhter intraabdominaler Druck durch Fettgewebe belastet den Beckenboden daürhaft.\n\n• Adipositas Grad II (BMI 35–40) verdoppelt das Inkontinenz-Risiko (AWMF S2k-LL 2023).\n\n**3 Schweregrade (ICS):**\n\n• Grad I: Urinverlust bei Husten, Niesen, schwerem Heben\n• Grad II: Urinverlust bei Gehen, Treppensteigen, leichter Anstrengung\n• Grad III: Urinverlust schon im Stehen oder Liegen\n\n**Behandlung (Goldstandard):**\n\n• **Beckenbodentraining** — 3 Monate konseqünt (AWMF S2k-LL 2023)\n• Gewichtsreduktion von 5–10% verbessert Inkontinenz signifikant\n• Pessartherapie als Sofortmaßnahme\n• Operative Optionen (TVT/TOT) erst nach konservativer Therapie\n\n**Pflege-Aufgabe:** Schamfrei ansprechen, Selbstversorgung fördern, Hautschutz sichern, Gynäkologie-Überweisung anregen.",
+      "**Was ist Belastungsinkontinenz?** Unwillkürlicher Urinverlust bei körperlicher Belastung — Husten, Niesen, Lachen, Heben, Treppensteigen. Der Blasenschließmuskel (Sphinkter) kann dem Druckanstieg im Bauchraum nicht standhalten.\n\n**Warum bei Adipositas häufiger?**\n\n• Erhöhter intraabdominaler Druck durch Fettgewebe belastet den Beckenboden dauerhaft.\n\n• Adipositas Grad II (BMI 35–40) verdoppelt das Inkontinenz-Risiko (AWMF S2k-LL 2023).\n\n**3 Schweregrade (ICS):**\n\n• Grad I: Urinverlust bei Husten, Niesen, schwerem Heben\n• Grad II: Urinverlust bei Gehen, Treppensteigen, leichter Anstrengung\n• Grad III: Urinverlust schon im Stehen oder Liegen\n\n**Behandlung (Goldstandard):**\n\n• **Beckenbodentraining** — 3 Monate konsequnt (AWMF S2k-LL 2023)\n• Gewichtsreduktion von 5–10% verbessert Inkontinenz signifikant\n• Pessartherapie als Sofortmaßnahme\n• Operative Optionen (TVT/TOT) erst nach konservativer Therapie\n\n**Pflege-Aufgabe:** Schamfrei ansprechen, Selbstversorgung fördern, Hautschutz sichern, Gynäkologie-Überweisung anregen.",
     kerntextB1:
-      "**Was ist Belastungsinkontinenz?** Man verliert Urin beim Husten, Niesen, Lachen oder Heben. Der Muskel am Blasenausgang (= Schließmuskel) ist zu schwach.\n\n**Warum bei Übergewicht?**\n\nDas Fett im Bauch drückt auf den Beckenboden. Der Beckenboden wird schwächer.\n\n**3 Stufen:**\n• Stufe 1: Urin beim Husten oder schweren Heben\n• Stufe 2: Urin beim Gehen oder Treppen steigen\n• Stufe 3: Urin schon im Stehen\n\n**Was hilft?**\n• **Beckenboden-Training** — 3 Monate lang\n• Abnehmen (5–10% Gewicht) hilft gegen Inkontinenz\n• Fraünarzt-Überweisung\n\n**Pflege:** Respektvoll ansprechen, Frau Schmidt beim Selbstversorgen unterstützen.",
+      "**Was ist Belastungsinkontinenz?** Man verliert Urin beim Husten, Niesen, Lachen oder Heben. Der Muskel am Blasenausgang (= Schließmuskel) ist zu schwach.\n\n**Warum bei Übergewicht?**\n\nDas Fett im Bauch drückt auf den Beckenboden. Der Beckenboden wird schwächer.\n\n**3 Stufen:**\n• Stufe 1: Urin beim Husten oder schweren Heben\n• Stufe 2: Urin beim Gehen oder Treppen steigen\n• Stufe 3: Urin schon im Stehen\n\n**Was hilft?**\n• **Beckenboden-Training** — 3 Monate lang\n• Abnehmen (5–10% Gewicht) hilft gegen Inkontinenz\n• Frauenarzt-Überweisung\n\n**Pflege:** Respektvoll ansprechen, Frau Schmidt beim Selbstversorgen unterstützen.",
     faustregel:
       "**Belastungsinkontinenz = Druck übersteigt Schließkraft.** Adipositas erhöht den Druck — Beckenbodentraining stärkt die Gegenkraft.",
     faustregelB1:
       "Belastungsinkontinenz heißt: Druck zu hoch, Muskel zu schwach. Beckenboden-Training hilft.",
     spektrum: [
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Inkontinenz bei Demenz",
         kurzbeschreibung:
-          "Bei Herr Baür ist es keine Belastungsinkontinenz, sondern eine funktionelle Inkontinenz: Er findet die Toilette nicht rechtzeitig. Andere Ursache, ähnliche Pflege-Herausforderung.",
+          "Bei Herr Bauer ist es keine Belastungsinkontinenz, sondern eine funktionelle Inkontinenz: Er findet die Toilette nicht rechtzeitig. Andere Ursache, ähnliche Pflege-Herausforderung.",
       },
       {
         patientName: "Herr Petrov",
         situationsId: "ls-petrov-schlaganfall",
         hauptfaktor: "Neurogene Blasenstörung nach Schlaganfall",
         kurzbeschreibung:
-          "Neurogene Blase: Die Nervensteürung der Blase ist nach dem Schlaganfall gestört. Daher Katheter — ein anderer Mechanismus als bei Frau Schmidt.",
+          "Neurogene Blase: Die Nervensteuerung der Blase ist nach dem Schlaganfall gestört. Daher Katheter — ein anderer Mechanismus als bei Frau Schmidt.",
       },
       {
         patientName: "Emilia",
@@ -170,7 +170,7 @@ export const CE02_SCHMIDT_IW_02_BELASTUNGSINKONTINENZ: ContentStep = {
       vorderseite:
         "Frau Schmidt (BMI 38) verliert seit 2 Jahren Urin beim Husten. Welcher Inkontinenz-Typ — und was ist der Goldstandard der Therapie?",
       rueckseite:
-        "Belastungsinkontinenz Grad I (ICS). Intraabdominaler Druck übersteigt Sphinkter-Schließkraft. Adipositas = doppeltes Risiko (AWMF S2k-LL 2023). Goldstandard: Beckenbodentraining (3 Monate), Gewichtsreduktion 5–10%, ggf. Pessartherapie. Pflege: schamfrei ansprechen, Selbstversorgung fördern, Gynäkologie-Überweisung.\n\nSpektrum: Baür (funktionelle Inkontinenz), Petrov (neurogene Blase), Emilia (physiologisch).\n\nFaustregel: **Druck > Schließkraft = Belastungsinkontinenz.**",
+        "Belastungsinkontinenz Grad I (ICS). Intraabdominaler Druck übersteigt Sphinkter-Schließkraft. Adipositas = doppeltes Risiko (AWMF S2k-LL 2023). Goldstandard: Beckenbodentraining (3 Monate), Gewichtsreduktion 5–10%, ggf. Pessartherapie. Pflege: schamfrei ansprechen, Selbstversorgung fördern, Gynäkologie-Überweisung.\n\nSpektrum: Bauer (funktionelle Inkontinenz), Petrov (neurogene Blase), Emilia (physiologisch).\n\nFaustregel: **Druck > Schließkraft = Belastungsinkontinenz.**",
     },
   },
 };
@@ -241,7 +241,7 @@ export const CE02_SCHMIDT_IW_03_PESR_SMART: ContentStep = {
         situationsId: "ls-nguyen-stoma",
         hauptfaktor: "Stoma-Selbstversorgung als Pflegeziel",
         kurzbeschreibung:
-          "Bei Herrn Nguyen: PESR = beeinträchtigte Selbstversorgung (P) durch neüs Stoma (E). SMART-Ziel: \"Herr Nguyen wechselt den Beutel bis Entlassung selbstständig.\"",
+          "Bei Herrn Nguyen: PESR = beeinträchtigte Selbstversorgung (P) durch neues Stoma (E). SMART-Ziel: \"Herr Nguyen wechselt den Beutel bis Entlassung selbstständig.\"",
       },
       {
         patientName: "Herr Petrov",
@@ -303,7 +303,7 @@ export const CE02_SCHMIDT_IW_04_INTERPROFESSIONELL: ContentStep = {
     storyAufhaengerB1:
       "Du hast 3 Pflege-Diagnosen geschrieben. Aber du kannst nicht alles allein machen. Du brauchst ein Team: Ernährungs-Beraterin, Podologe, Arzt. Wie teilt ihr die Aufgaben auf?",
     kerntext:
-      "**Interprofessionelle Zusammenarbeit** (WHO 2010):\n\nMehrere Berufsgruppen arbeiten zusammen — jede bringt ihre Kompetenz ein:\n\n• **Pflege**: Assessment, tägliche Beobachtung, Hautpflege, Ernährungsprotokoll, Mobilisation, Kommunikation mit Patient\n• **Arzt**: Diagnosestellung, Medikation (Metformin), Überweisungen\n• **Podologe**: Fußpflege bei DFS (Nägel, Hornhaut, Wundversorgung Fuß)\n• **Ernährungsberaterin**: Individülle Ernährungsplanung, Schulung\n\n**Kompetenzgrenzen sind Qualität, nicht Schwäche.** Wenn Pflege die Nägel nicht schneidet, ist das kein Versagen — es ist Patientensicherheit (DDG 2023).\n\n**Ressourcenorientierung** (§ 2 PflBG):\n\nPflege stärkt was da ist, statt zu übernehmen was noch geht.\n\n• Frau Schmidt KANN selbst essen → Pflege berät, ersetzt nicht\n• Frau Schmidt KANN die Inkontinenzvorlage selbst wechseln → Pflege bietet an, übernimmt nicht\n• Frau Schmidt KANN Entscheidungen treffen → Pflege informiert, entscheidet nicht\n\nDas Ziel: Frau Schmidt verlässt das Krankenhaus **kompetenter** als sie gekommen ist.",
+      "**Interprofessionelle Zusammenarbeit** (WHO 2010):\n\nMehrere Berufsgruppen arbeiten zusammen — jede bringt ihre Kompetenz ein:\n\n• **Pflege**: Assessment, tägliche Beobachtung, Hautpflege, Ernährungsprotokoll, Mobilisation, Kommunikation mit Patient\n• **Arzt**: Diagnosestellung, Medikation (Metformin), Überweisungen\n• **Podologe**: Fußpflege bei DFS (Nägel, Hornhaut, Wundversorgung Fuß)\n• **Ernährungsberaterin**: Individuelle Ernährungsplanung, Schulung\n\n**Kompetenzgrenzen sind Qualität, nicht Schwäche.** Wenn Pflege die Nägel nicht schneidet, ist das kein Versagen — es ist Patientensicherheit (DDG 2023).\n\n**Ressourcenorientierung** (§ 2 PflBG):\n\nPflege stärkt was da ist, statt zu übernehmen was noch geht.\n\n• Frau Schmidt KANN selbst essen → Pflege berät, ersetzt nicht\n• Frau Schmidt KANN die Inkontinenzvorlage selbst wechseln → Pflege bietet an, übernimmt nicht\n• Frau Schmidt KANN Entscheidungen treffen → Pflege informiert, entscheidet nicht\n\nDas Ziel: Frau Schmidt verlässt das Krankenhaus **kompetenter** als sie gekommen ist.",
     kerntextB1:
       "**Im Team arbeiten (= interprofessionell):**\n\nMehrere Berufsgruppen arbeiten zusammen:\n\n• **Pflege**: Beobachten, Haut pflegen, Ernährung dokumentieren, mit Frau Schmidt reden\n• **Arzt**: Diagnose, Medikamente, Überweisungen\n• **Podologe**: Fuß-Pflege (Nägel)\n• **Ernährungs-Beraterin**: Ernährungs-Plan machen\n\nJede Berufsgruppe hat ihre Aufgabe. Das ist keine Schwäche — das ist Sicherheit.\n\n**Ressourcen-Orientierung** (§ 2 PflBG):\n\nPflege stärkt was die Patientin kann:\n• Frau Schmidt kann selbst essen → beraten, nicht ersetzen\n• Frau Schmidt kann die Vorlage selbst wechseln → anbieten, nicht übernehmen\n\nZiel: Frau Schmidt geht nach Hause und kann mehr als vorher.",
     faustregel:
@@ -474,7 +474,7 @@ export const CE02_SCHMIDT_IW_06_EVALUATION_BZ: ContentStep = {
     storyAufhaengerB1:
       "48 Stunden sind vergangen. Du bist wieder bei Frau Schmidt. Hat sich etwas verbessert? Um das beurteilen zu können, lernst du zwei Dinge: Was ist Evaluation? Und was bedeuten die Blutzucker-Begriffe?",
     kerntext:
-      "**Evaluation im Pflegeprozess** (Fiechter/Meier 1981):\n\nEvaluation = Soll-Ist-Vergleich. Du vergleichst:\n\n• **Soll** = dein Pflegeziel aus Phase 3 (z. B. \"67 g Protein/Tag bis Entlassung\")\n• **Ist** = der aktülle Zustand (z. B. Ernährungsprotokoll zeigt 55 g/Tag)\n\n3 mögliche Ergebnisse:\n• **Ziel erreicht** → Maßnahme war wirksam, weiter beobachten\n• **Teilweise erreicht** → Trend positiv, Maßnahme beibehalten oder anpassen\n• **Nicht erreicht** → Ursache suchen, Maßnahme ändern, Ziel anpassen\n\n**BZ-Tagesprofil** (DDG 2023):\n\nMehrere BZ-Messungen pro Tag zeigen den Verlauf:\n\n• **Nüchtern-BZ**: Morgens vor dem Essen. Zielwert Typ 2: < 130 mg/dl\n• **Postprandial** (= nach dem Essen): 2 Stunden nach Mahlzeitbeginn. Zielwert: < 180 mg/dl\n• **Tagesprofil**: Nüchtern + postprandial × 3 Mahlzeiten + ggf. Nachtmessung\n\n**Warum ist das wichtig?** Ein einzelner BZ-Wert sagt wenig. Der Trend über Tage zeigt: Wirkt die Therapie (Metformin + Ernährung)?",
+      "**Evaluation im Pflegeprozess** (Fiechter/Meier 1981):\n\nEvaluation = Soll-Ist-Vergleich. Du vergleichst:\n\n• **Soll** = dein Pflegeziel aus Phase 3 (z. B. \"67 g Protein/Tag bis Entlassung\")\n• **Ist** = der aktuelle Zustand (z. B. Ernährungsprotokoll zeigt 55 g/Tag)\n\n3 mögliche Ergebnisse:\n• **Ziel erreicht** → Maßnahme war wirksam, weiter beobachten\n• **Teilweise erreicht** → Trend positiv, Maßnahme beibehalten oder anpassen\n• **Nicht erreicht** → Ursache suchen, Maßnahme ändern, Ziel anpassen\n\n**BZ-Tagesprofil** (DDG 2023):\n\nMehrere BZ-Messungen pro Tag zeigen den Verlauf:\n\n• **Nüchtern-BZ**: Morgens vor dem Essen. Zielwert Typ 2: < 130 mg/dl\n• **Postprandial** (= nach dem Essen): 2 Stunden nach Mahlzeitbeginn. Zielwert: < 180 mg/dl\n• **Tagesprofil**: Nüchtern + postprandial × 3 Mahlzeiten + ggf. Nachtmessung\n\n**Warum ist das wichtig?** Ein einzelner BZ-Wert sagt wenig. Der Trend über Tage zeigt: Wirkt die Therapie (Metformin + Ernährung)?",
     kerntextB1:
       "**Was ist Evaluation?** Du vergleichst: Was war das Ziel? Was ist jetzt?\n\n3 Ergebnisse:\n• Ziel erreicht → gut, weiter beobachten\n• Teilweise erreicht → weiter so, vielleicht anpassen\n• Nicht erreicht → warum nicht? Maßnahme ändern\n\n**Blutzucker-Begriffe:**\n\n• **Nüchtern-BZ**: Morgens vor dem Essen. Ziel: unter 130 mg/dl\n• **Postprandial** = nach dem Essen (2 Stunden). Ziel: unter 180 mg/dl\n• **BZ-Tagesprofil**: Alle Messungen eines Tages zusammen",
     faustregel:
@@ -483,8 +483,8 @@ export const CE02_SCHMIDT_IW_06_EVALUATION_BZ: ContentStep = {
       "Evaluation = Ziel mit jetzt vergleichen. BZ-Ziel: Nüchtern unter 130, nach Essen unter 180.",
     spektrum: [
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Evaluation bei Demenz: Pflegeziele anders messen",
         kurzbeschreibung:
           "Bei Demenz: Pflegeziele sind schwerer messbar (\"Sturzhäufigkeit reduziert\" statt \"versteht Sturzrisiko\"). Evaluation bezieht sich auf beobachtbare Ergebnisse, nicht auf Verständnis.",
@@ -508,7 +508,7 @@ export const CE02_SCHMIDT_IW_06_EVALUATION_BZ: ContentStep = {
       vorderseite:
         "Was ist Evaluation im Pflegeprozess — und was bedeutet \"postprandial\" beim BZ?",
       rueckseite:
-        "Evaluation = Soll-Ist-Vergleich. 3 Ergebnisse: erreicht / teilweise / nicht erreicht. Postprandial = 2h nach Essen, Ziel < 180 mg/dl. Nüchtern-BZ Ziel < 130 mg/dl (DDG 2023). BZ-Tagesprofil = alle Messungen eines Tages.\n\nSpektrum: Baür (Demenz-Ziele), Nguyen (Stoma-Teilziele), Kovac (ambulante Wochenziele).\n\nFaustregel: **Evaluation = Soll vs. Ist. Nüchtern < 130, postprandial < 180.**",
+        "Evaluation = Soll-Ist-Vergleich. 3 Ergebnisse: erreicht / teilweise / nicht erreicht. Postprandial = 2h nach Essen, Ziel < 180 mg/dl. Nüchtern-BZ Ziel < 130 mg/dl (DDG 2023). BZ-Tagesprofil = alle Messungen eines Tages.\n\nSpektrum: Bauer (Demenz-Ziele), Nguyen (Stoma-Teilziele), Kovac (ambulante Wochenziele).\n\nFaustregel: **Evaluation = Soll vs. Ist. Nüchtern < 130, postprandial < 180.**",
     },
   },
 };
@@ -560,7 +560,7 @@ export const CE02_SCHMIDT_IW_07_ENTLASSUNGSMANAGEMENT: ContentStep = {
     kerntext:
       "**Was ist Entlassungsmanagement?** Die systematische Planung der Weiterversorgung nach der Entlassung — damit keine Versorgungslücke entsteht (DNQP 2019).\n\n**3 Kern-Elemente:**\n\n• **Frühzeitige Einschätzung** des poststationären Versorgungsbedarfs (idealerweise innerhalb von 24h nach Aufnahme)\n\n• **Interprofessionelle Koordination**: Wer braucht welche Information? Arztbrief, Pflegebrief, Verordnungen, Termine\n\n• **Patientenedukation**: Frau Schmidt muss verstehen — was muss sie zu Hause tun? Welche Termine stehen an?\n\n**Bei Frau Schmidt konkret:**\n• Podologen-Termin ambulant (Fuß → Hausarzt-Überweisung)\n• Ernährungsberatung ambulant (Protein-Zufuhr weiter steigern)\n• BZ-Kontrolle beim Hausarzt (Metformin-Einstellung)\n• Gynäkologie-Überweisung (Belastungsinkontinenz)\n\n**Pflege-Aufgabe:** Nicht nur Pflegebericht schreiben, sondern **Pflegeüberleitung** — was muss die ambulante Versorgung wissen? Was kann Frau Schmidt selbst?",
     kerntextB1:
-      "**Was ist Entlassungs-Management?** Die Planung: Was braucht Frau Schmidt nach dem Krankenhaus?\n\n**3 Kern-Punkte:**\n\n• **Früh planen**: Schon bald nach der Aufnahme überlegen: Was braucht sie zu Hause?\n\n• **Alle informieren**: Hausarzt, Podologe, Ernährungs-Beraterin — alle brauchen Infos\n\n• **Frau Schmidt erklären**: Was muss sie zu Hause tun? Welche Termine hat sie?\n\n**Bei Frau Schmidt:**\n• Podologe (Fuß)\n• Ernährungs-Beratung (Eiweiß)\n• Hausarzt (Blutzucker)\n• Fraünärztin (Inkontinenz)",
+      "**Was ist Entlassungs-Management?** Die Planung: Was braucht Frau Schmidt nach dem Krankenhaus?\n\n**3 Kern-Punkte:**\n\n• **Früh planen**: Schon bald nach der Aufnahme überlegen: Was braucht sie zu Hause?\n\n• **Alle informieren**: Hausarzt, Podologe, Ernährungs-Beraterin — alle brauchen Infos\n\n• **Frau Schmidt erklären**: Was muss sie zu Hause tun? Welche Termine hat sie?\n\n**Bei Frau Schmidt:**\n• Podologe (Fuß)\n• Ernährungs-Beratung (Eiweiß)\n• Hausarzt (Blutzucker)\n• Frauenärztin (Inkontinenz)",
     faustregel:
       "**Entlassungsmanagement = keine Lücke nach der Entlassung.** Pflege plant, koordiniert und informiert — ab Tag 1.",
     faustregelB1:

@@ -44,8 +44,8 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
         bausteinRef: "dekubitus-prophylaxe-wundheilung",
         storyAufhaenger: "Die Wunde sieht besser aus. Aber was heißt besser? Sechs Begriffe helfen.",
         storyAufhaengerB1: "Die Wunde sieht besser aus. Sechs Begriffe helfen.",
-        kerntext: "**Granulationsgewebe** = neüs Heilungsgewebe. Rosa-rot, körnig. Zeichen der Heilung.\n\n**Exsudat** = Wundflüssigkeit. Serös (klar) = normal. Purulent (eitrig) = Infektion.\n\n**4 Wundheilungsphasen:**\n\u2022 **Exsudationsphase** (Tag 1-3) \u2014 Entzündung, Reinigung.\n\u2022 **Resorptionsphase** (Tag 3-7) \u2014 Abbau toten Gewebes.\n\u2022 **Proliferationsphase** (Tag 7-21) \u2014 Granulation, Wunde wird kleiner. **Frau Yilmaz ist hier (Tag 17).**\n\u2022 **Regenerationsphase** (Wochen-Monate) \u2014 Narbe reift.",
-        kerntextB1: "**Granulationsgewebe** = neüs Heilungsgewebe. Rosa-rot. Wunde heilt.\n**Exsudat** = Flüssigkeit aus Wunde. Klar = ok. Eitrig = schlecht.\n\n**4 Phasen:** Phase 1: Entzündung. Phase 2: Aufraäumen. Phase 3: Heilgewebe wächst (= Frau Yilmaz). Phase 4: Narbe.",
+        kerntext: "**Granulationsgewebe** = neues Heilungsgewebe. Rosa-rot, körnig. Zeichen der Heilung.\n\n**Exsudat** = Wundflüssigkeit. Serös (klar) = normal. Purulent (eitrig) = Infektion.\n\n**4 Wundheilungsphasen:**\n\u2022 **Exsudationsphase** (Tag 1-3) \u2014 Entzündung, Reinigung.\n\u2022 **Resorptionsphase** (Tag 3-7) \u2014 Abbau toten Gewebes.\n\u2022 **Proliferationsphase** (Tag 7-21) \u2014 Granulation, Wunde wird kleiner. **Frau Yilmaz ist hier (Tag 17).**\n\u2022 **Regenerationsphase** (Wochen-Monate) \u2014 Narbe reift.",
+        kerntextB1: "**Granulationsgewebe** = neues Heilungsgewebe. Rosa-rot. Wunde heilt.\n**Exsudat** = Flüssigkeit aus Wunde. Klar = ok. Eitrig = schlecht.\n\n**4 Phasen:** Phase 1: Entzündung. Phase 2: Aufraäumen. Phase 3: Heilgewebe wächst (= Frau Yilmaz). Phase 4: Narbe.",
         faustregel: "Granulation = rosa = heilt. 4 Phasen: Exsudation \u2192 Resorption \u2192 Proliferation \u2192 Regeneration.",
         faustregelB1: "Rosa Gewebe = heilt. Frau Yilmaz ist in Phase 3.",
         spektrum: [],
@@ -305,7 +305,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
             situationsId: "ls-nguyen-stoma",
             hauptfaktor: "Stoma-Dokumentation",
             kurzbeschreibung:
-              "Stoma-Versorgung braucht exakte Dokumentation: Stomagrösse, Hautkonditierung, Beutelwechsel-Freqünz. Ohne Verlaufsdoku: kein Nachweis dass Komplikationen rechtzeitig erkannt wurden.",
+              "Stoma-Versorgung braucht exakte Dokumentation: Stomagrösse, Hautkonditierung, Beutelwechsel-Frequenz. Ohne Verlaufsdoku: kein Nachweis dass Komplikationen rechtzeitig erkannt wurden.",
           },
           {
             patientName: "Frau Kovac",
@@ -317,9 +317,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
         ],
         karteikarte: {
           vorderseite:
-            "Bei Frau Yilmaz wurde die Roetung gesehen aber nicht dokumentiert. Was sind die 3 Konseqünzen — und welche Funktionen hat Pflegedokumentation?",
+            "Bei Frau Yilmaz wurde die Roetung gesehen aber nicht dokumentiert. Was sind die 3 Konsequnzen — und welche Funktionen hat Pflegedokumentation?",
           rueckseite:
-            "Konseqünzen: 1) Nächste Schicht nicht informiert (12-24h Verzögerung). 2) Kein rechtlicher Nachweis (§ 630f BGB). 3) Qualitätsereignis nicht nachvollziehbar (Donabedian).\n\n3 Funktionen: Rechtlich (Beweislastumkehr), Kommunikativ (Schichtübergabe), Qualitätssichernd (Prozessqualität messbar).\n\nSpektrum: Frau M. (Sturzprotokoll), Nguyen (Stoma-Doku), Kovac (ambulant, Schnittstellenkommunikation).\n\nFaustregel: **Was nicht dokumentiert ist, existiert nicht.**",
+            "Konsequnzen: 1) Nächste Schicht nicht informiert (12-24h Verzögerung). 2) Kein rechtlicher Nachweis (§ 630f BGB). 3) Qualitätsereignis nicht nachvollziehbar (Donabedian).\n\n3 Funktionen: Rechtlich (Beweislastumkehr), Kommunikativ (Schichtübergabe), Qualitätssichernd (Prozessqualität messbar).\n\nSpektrum: Frau M. (Sturzprotokoll), Nguyen (Stoma-Doku), Kovac (ambulant, Schnittstellenkommunikation).\n\nFaustregel: **Was nicht dokumentiert ist, existiert nicht.**",
         },
       },
     },
@@ -469,7 +469,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
                   text: "Frau Yilmaz kann keine Treppen steigen",
                   isCorrect: false,
                   explanation:
-                    "Sie wohnt im Erdgeschoss — keine Treppen nötig. Treppensteigen ist daher kein aktülles Entlassungsproblem.",
+                    "Sie wohnt im Erdgeschoss — keine Treppen nötig. Treppensteigen ist daher kein aktuelles Entlassungsproblem.",
                 },
               ],
             },
@@ -591,7 +591,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
               time: "Tag 7-21",
               title: "Proliferationsphase ← Frau Yilmaz ist hier",
               description:
-                "Granulationsgewebe wird aufgebaut (rosa-rot, körnig). Neue Blutgefäße wachsen ein (Angiogenese). Wunde wird kleiner. Dies ist der aktülle Status bei Frau Yilmaz (Tag 17).",
+                "Granulationsgewebe wird aufgebaut (rosa-rot, körnig). Neue Blutgefäße wachsen ein (Angiogenese). Wunde wird kleiner. Dies ist der aktuelle Status bei Frau Yilmaz (Tag 17).",
               descriptionB1:
                 "Heilungsgewebe wächst. Die Wunde wird kleiner und rosa. Das ist die Phase, in der Frau Yilmaz jetzt ist.",
               highlight: true,
@@ -702,7 +702,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
             isCorrect: true,
           },
           {
-            text: "Wunde reinigen, neün Verband drauf — und beim nächsten Schichtwechsel übergeben.",
+            text: "Wunde reinigen, neuen Verband drauf — und beim nächsten Schichtwechsel übergeben.",
             feedback:
               "Nicht ausreichend. Verbandwechsel ist korrekt, aber ohne Arzt-Ruf und ohne Dokumentation fehlt die Eskalation. Infektionsverdacht (Rubor + Calor + purulentes Exsudat) erfordert sofortige Meldung — nicht nur am Schichtwechsel. Die nächste Schicht beginnt ggf. 8 Stunden später.",
             feedbackB1:

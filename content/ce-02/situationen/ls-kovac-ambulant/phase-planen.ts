@@ -194,7 +194,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
             text: "Ich erkläre den Unterschied zwischen ASS und Kompressionsstrümpfen, frage konkret nach dem Grund der Ablehnung (Druck? Anziehen? Hitze?), biete Alternativen an (Klasse 1 statt Klasse 2, Anziehhilfe, Hauttest) — und akzeptiere dann ihre Entscheidung.",
             isCorrect: true,
             feedback:
-              "Richtig. Vollständige Aufklärung heißt: erklären (Wirkung), nachfragen (konkretes Hindernis), Alternativen anbieten (oft ist das Problem lösbar), Entscheidung respektieren.\n\n**Konkrete Alternativen die du anbieten kannst:**\n- **Klasse 1** (leichterer Druck) statt Klasse 2 — bei NYHA II + Beinödemen oft ausreichend, Tragekomfort deutlich besser. Erfordert ärztliche Verordnung.\n- **Anziehhilfe** (Gleitstrumpf, Schlaufengriff) — viele Patient:innen lehnen ab, weil sie das Anziehen nicht schaffen.\n- **Hauttest** — wenn 'die drücken' = Hautirritation, kann eine andere Materialqualität helfen.\n- **Tragezeit anpassen** — z.B. nur tagsüber, nicht beim Schlafen.\n\n**Frau Kovačs Reaktion:** Sie hört zu, mit verschränkten Armen. Nach deiner Erklärung sagt sie: \"Hmm. ASS ist also nicht dasselbe. Das hat mir keiner so erklärt. Klasse 1 — das hab ich noch nie probiert. Trotzdem, heute will ich keine. Aber dass Sie mir das so sagen, das ist anders. Schreiben Sie's halt auf.\" — Vertraün bleibt, Autonomie respektiert, Aufklärung dokumentiert. Ein Spalt für eine spätere Lösung ist offen.\n\nJetzt musst du die Verweigerung im Pflegebericht dokumentieren — vollständig: was du erklärt hast, welche Alternativen du angeboten hast, wie sie reagiert hat, dass es ihre freiwillige Entscheidung ist. Quelle: (§ 630f BGB; § 1901a BGB; AWMF S3-Leitlinie Thromboseprophylaxe 003-001)",
+              "Richtig. Vollständige Aufklärung heißt: erklären (Wirkung), nachfragen (konkretes Hindernis), Alternativen anbieten (oft ist das Problem lösbar), Entscheidung respektieren.\n\n**Konkrete Alternativen die du anbieten kannst:**\n- **Klasse 1** (leichterer Druck) statt Klasse 2 — bei NYHA II + Beinödemen oft ausreichend, Tragekomfort deutlich besser. Erfordert ärztliche Verordnung.\n- **Anziehhilfe** (Gleitstrumpf, Schlaufengriff) — viele Patient:innen lehnen ab, weil sie das Anziehen nicht schaffen.\n- **Hauttest** — wenn 'die drücken' = Hautirritation, kann eine andere Materialqualität helfen.\n- **Tragezeit anpassen** — z.B. nur tagsüber, nicht beim Schlafen.\n\n**Frau Kovačs Reaktion:** Sie hört zu, mit verschränkten Armen. Nach deiner Erklärung sagt sie: \"Hmm. ASS ist also nicht dasselbe. Das hat mir keiner so erklärt. Klasse 1 — das hab ich noch nie probiert. Trotzdem, heute will ich keine. Aber dass Sie mir das so sagen, das ist anders. Schreiben Sie's halt auf.\" — Vertrauen bleibt, Autonomie respektiert, Aufklärung dokumentiert. Ein Spalt für eine spätere Lösung ist offen.\n\nJetzt musst du die Verweigerung im Pflegebericht dokumentieren — vollständig: was du erklärt hast, welche Alternativen du angeboten hast, wie sie reagiert hat, dass es ihre freiwillige Entscheidung ist. Quelle: (§ 630f BGB; § 1901a BGB; AWMF S3-Leitlinie Thromboseprophylaxe 003-001)",
             feedbackB1:
               "Richtig. Aufklärung ist mehr als nur erklären — du **fragst nach** warum sie ablehnt (Druck? Anziehen? Hitze?) und **bietest Alternativen** an:\n- Klasse 1 (leichter) statt Klasse 2\n- Anziehhilfe (Gleitstrumpf)\n- Andere Materialqualität (wenn die Haut juckt)\n- Nur tagsüber tragen, nicht nachts\n\n**Frau Kovač sagt:** \"Hmm. ASS und Strümpfe sind nicht dasselbe. Klasse 1 — das wusste ich nicht. Heute will ich trotzdem keine. Aber Sie reden mit mir, das ist anders. Schreiben Sie es auf.\"\n\nDann schreibst du alles auf — auch welche Alternativen du angeboten hast.",
           },
@@ -202,17 +202,17 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
             text: "Ich lasse das Thema fallen — sie wird ihre Meinung ohnehin nicht ändern.",
             isCorrect: false,
             feedback:
-              "Nicht korrekt. Unterlassene Aufklärung ist ein Dokumentations- und Haftungsproblem.\n\n**Frau Kovačs Reaktion:** Sie merkt, dass du das Thema umgehst. \"Sind Sie fertig? Dann können Sie ja gehen.\" — Misstraün wächst (du hast offensichtlich etwas, was du ihr nicht sagst), und du hast keine Aufklärung dokumentiert. Wenn Frau Kovač später eine Thrombose entwickelt und die Pflegedokumentation zeigt: Strümpfe verweigert, keine Aufklärung dokumentiert — kann das rechtliche Konseqünzen haben (§ 630f BGB Verletzung).\n\nAufklärung ist Pflicht, auch wenn die Entscheidung festzustehen scheint. Geh zurück und wähle Pfad A.",
+              "Nicht korrekt. Unterlassene Aufklärung ist ein Dokumentations- und Haftungsproblem.\n\n**Frau Kovačs Reaktion:** Sie merkt, dass du das Thema umgehst. \"Sind Sie fertig? Dann können Sie ja gehen.\" — Misstraün wächst (du hast offensichtlich etwas, was du ihr nicht sagst), und du hast keine Aufklärung dokumentiert. Wenn Frau Kovač später eine Thrombose entwickelt und die Pflegedokumentation zeigt: Strümpfe verweigert, keine Aufklärung dokumentiert — kann das rechtliche Konsequnzen haben (§ 630f BGB Verletzung).\n\nAufklärung ist Pflicht, auch wenn die Entscheidung festzustehen scheint. Geh zurück und wähle Pfad A.",
             feedbackB1:
-              "Nicht richtig. Du musst es ihr erklären — auch wenn sie wahrscheinlich Nein sagt.\n\n**Frau Kovač merkt das:** \"Sind Sie fertig? Dann gehen Sie.\" — Sie verliert Vertraün. Und juristisch hast du nichts dokumentiert. Das ist ein Problem.\n\nGeh zurück zu Pfad A.",
+              "Nicht richtig. Du musst es ihr erklären — auch wenn sie wahrscheinlich Nein sagt.\n\n**Frau Kovač merkt das:** \"Sind Sie fertig? Dann gehen Sie.\" — Sie verliert Vertrauen. Und juristisch hast du nichts dokumentiert. Das ist ein Problem.\n\nGeh zurück zu Pfad A.",
           },
           {
             text: "Ich überzeuge sie mit Nachdruck — das Thromboserisiko ist zu groß, um es zu ignorieren.",
             isCorrect: false,
             feedback:
-              "Nicht erlaubt. Überreden ist erlaubt — aber Druck ausüben verletzt die Patientenautonomie (§ 1901a BGB) und beschädigt das Vertraünsverhältnis.\n\n**Frau Kovačs Reaktion:** Sie wird sehr still. Dann, scharf: \"Dann gehen Sie. Ich will Sie nicht in meiner Wohnung. Ich rufe beim Pflegedienst an.\" — Du hast den Auftrag verloren, der Pflegedienst hat eine formale Beschwerde, und Frau Kovač wird auch andere Pflegekräfte mit Misstraün begegnen.\n\nDer Unterschied: Aufklärung = 'Ich erkläre, warum es wichtig ist.' Druck = 'Du musst das tun.' Nur ersteres ist erlaubt. In ihrer Wohnung gilt ihre Regel — du bist Gast mit Auftrag, kein Befehlshaber. Geh zurück und wähle Pfad A.",
+              "Nicht erlaubt. Überreden ist erlaubt — aber Druck ausüben verletzt die Patientenautonomie (§ 1901a BGB) und beschädigt das Vertrauensverhältnis.\n\n**Frau Kovačs Reaktion:** Sie wird sehr still. Dann, scharf: \"Dann gehen Sie. Ich will Sie nicht in meiner Wohnung. Ich rufe beim Pflegedienst an.\" — Du hast den Auftrag verloren, der Pflegedienst hat eine formale Beschwerde, und Frau Kovač wird auch andere Pflegekräfte mit Misstraün begegnen.\n\nDer Unterschied: Aufklärung = 'Ich erkläre, warum es wichtig ist.' Druck = 'Du musst das tun.' Nur ersteres ist erlaubt. In ihrer Wohnung gilt ihre Regel — du bist Gast mit Auftrag, kein Befehlshaber. Geh zurück und wähle Pfad A.",
             feedbackB1:
-              "Nicht erlaubt. Du darfst ihr erklären. Du darfst sie nicht zwingen.\n\n**Frau Kovač wird wütend:** \"Dann gehen Sie. Ich will Sie nicht in meiner Wohnung. Ich rufe den Pflegedienst an.\" — Du hast das Vertraün verloren. Und der Pflegedienst hat eine Beschwerde.\n\nIn ihrer Wohnung gilt ihre Regel. Geh zurück zu Pfad A.",
+              "Nicht erlaubt. Du darfst ihr erklären. Du darfst sie nicht zwingen.\n\n**Frau Kovač wird wütend:** \"Dann gehen Sie. Ich will Sie nicht in meiner Wohnung. Ich rufe den Pflegedienst an.\" — Du hast das Vertrauen verloren. Und der Pflegedienst hat eine Beschwerde.\n\nIn ihrer Wohnung gilt ihre Regel. Geh zurück zu Pfad A.",
           },
         ],
       },
@@ -225,7 +225,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       stepType: "sequencing",
       bloomLevel: 3,
       kompetenzbereich: "V.1",
-      quellen: ["DNQP Kontinenzförderung 2014"],
+      quellen: ["DGSM S3-Leitlinie Insomnie 2017"],
       track: "basis",
       modus: "sortierstation",
       lernziel: "ce02-kovac-ambulant-plan-schlaf",
@@ -250,7 +250,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
             {
               id: "seq-1",
               label:
-                "Aktülle Schlafgewohnheiten zusammenfassen — ohne Wertung ('Sie haben mir erzählt, dass ...')",
+                "Aktuelle Schlafgewohnheiten zusammenfassen — ohne Wertung ('Sie haben mir erzählt, dass ...')",
             },
             {
               id: "seq-2",
@@ -284,7 +284,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       stepType: "fillin",
       bloomLevel: 4,
       kompetenzbereich: "I.1",
-      quellen: ["§ 630f BGB", "DNQP Kontinenzförderung 2014"],
+      quellen: ["§ 630f BGB", "Fiechter/Meier 1981"],
       track: "basis",
       modus: "schreibtisch",
       lernziel: "ce02-kovac-ambulant-plan-pflegeziele",
@@ -352,7 +352,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       stepType: "comparison",
       bloomLevel: 3,
       kompetenzbereich: "I.1",
-      quellen: ["GOLD-Report COPD 2023", "DNQP Kontinenzförderung 2014"],
+      quellen: ["GOLD-Report COPD 2023", "AWMF S3-Leitlinie VTE-Prophylaxe 2015"],
       track: "vertiefung",
       modus: "entdecker",
       tag: "krankheitslehre",

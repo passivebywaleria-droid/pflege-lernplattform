@@ -9,9 +9,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
   phaseId: "ls-lukas-beobachten",
   phase: "beobachten",
   titel: "Beobachten — Wundstatus, Schmerz, Kinderschutz-Befund",
-  titelB1: "Schaün und Risiken finden",
+  titelB1: "Schauen und Risiken finden",
   kontext:
-    "Kathrin ist jetzt dabei. Gemeinsam schaut ihr euch Lukas an. Sandra hält ihn auf dem Schoß, hält seine rechte Hand — den linken Arm lässt sie frei zugänglich. Lukas ist ruhiger geworden, aber er beobachtet euch genau mit großen Augen. Wenn du dich bewegst, schaut er dir nach.\n\nDein Ziel: Eine systematische Beobachtung — Wundinspektion, Schmerzeinschätzung mit der KUSS-Skala, Suche nach weiteren Auffälligkeiten auf der Haut, Einschätzung des Trinkverhaltens und der Vitalzeichen. Das ist keine Routine-Untersuchung. Du beobachtest ein Kind, das Schmerzen hat und Angst vor Berührung — jede Bewegung muss angekündigt sein.\n\nDabei fällt dir noch etwas auf: Du schaust automatisch hin, ob es weitere auffällige Stellen an Lukas' Körper gibt. Das ist kein Misstraün — das ist fachliches Sehen. Kinderschutz-Abklärung heißt: genau hinschaün und dann systematisch einschätzen.",
+    "Kathrin ist jetzt dabei. Gemeinsam schaut ihr euch Lukas an. Sandra hält ihn auf dem Schoß, hält seine rechte Hand — den linken Arm lässt sie frei zugänglich. Lukas ist ruhiger geworden, aber er beobachtet euch genau mit großen Augen. Wenn du dich bewegst, schaut er dir nach.\n\nDein Ziel: Eine systematische Beobachtung — Wundinspektion, Schmerzeinschätzung mit der KUSS-Skala, Suche nach weiteren Auffälligkeiten auf der Haut, Einschätzung des Trinkverhaltens und der Vitalzeichen. Das ist keine Routine-Untersuchung. Du beobachtest ein Kind, das Schmerzen hat und Angst vor Berührung — jede Bewegung muss angekündigt sein.\n\nDabei fällt dir noch etwas auf: Du schaust automatisch hin, ob es weitere auffällige Stellen an Lukas' Körper gibt. Das ist kein Misstraün — das ist fachliches Sehen. Kinderschutz-Abklärung heißt: genau hinschauen und dann systematisch einschätzen.",
   kontextB1:
     "Kathrin ist jetzt dabei. Ihr schaut euch Lukas gemeinsam an. Sandra hält Lukas auf dem Schoß. Den linken Arm lässt sie frei. Lukas ist ruhiger. Er schaut euch mit großen Augen an.\n\nDein Ziel: Du beobachtest Lukas systematisch (= nach einem Plan). Du prüfst: Wie ist die Wunde? Hat er Schmerzen? Hat er genug getrunken? Du prüfst die Vitalzeichen.\n\nDu schaust auch: Gibt es andere auffällige Stellen auf der Haut? Das ist kein Misstraün. Das ist fachliches Sehen. Jede Bewegung musst du ankündigen. Lukas hat Schmerzen und Angst.",
   kernSteps: [
@@ -69,11 +69,11 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
               "Bei Frau M. nutzt du die NRS: \"Von 0 bis 10, wie stark?\" Sie kann antworten — auch wenn sie bagatellisiert (NRS 6 sagt sie, NRS 8 meint sie). Aber sie versteht die Frage. Lukas nicht.",
           },
           {
-            patientName: "Herr Baür (82, Demenz)",
-            situationsId: "ls-baür-demenz-sturz",
+            patientName: "Herr Bauer (82, Demenz)",
+            situationsId: "ls-bauer-demenz-sturz",
             hauptfaktor: "BESD/PAINAD — Fremdbeobachtung bei Demenz",
             kurzbeschreibung:
-              "Herr Baür kann NRS nicht mehr zuverlässig zuordnen. Bei ihm nutzt du BESD (Beurteilung von Schmerzen bei Demenz) oder PAINAD — auch Fremdbeobachtung wie bei KUSS, aber mit anderen Kategorien (Atmung, Lautäußerung, Mimik, Körpersprache, Trostbarkeit).",
+              "Herr Bauer kann NRS nicht mehr zuverlässig zuordnen. Bei ihm nutzt du BESD (Beurteilung von Schmerzen bei Demenz) oder PAINAD — auch Fremdbeobachtung wie bei KUSS, aber mit anderen Kategorien (Atmung, Lautäußerung, Mimik, Körpersprache, Trostbarkeit).",
           },
           {
             patientName: "Frau Yilmaz (Hüft-TEP)",
@@ -94,7 +94,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
           vorderseite:
             "Lukas (2,5 J.) schreit, grimassiert, zieht die Beine hoch und stößt dich weg. Du sollst seinen Schmerz messen. Warum nutzt du NRS nicht — und welche Skala nutzt du stattdessen?",
           rueckseite:
-            "Kinder unter 4 Jahren verstehen Zahlen-Skalen nicht → keine NRS möglich. Stattdessen: **KUSS-Skala** (Büttner/Finke 2000) — 5 Beobachtungskategorien (Weinen, Gesichtsausdruck, Rumpfhaltung, Beinstellung, Motorische Unruhe), je 0-2 Punkte, max. 10.\n\nSpektrum: Frau M. (NRS), Baür (BESD/PAINAD), Yilmaz (NRS Ruhe+Bewegung), Emilia (KUSS auch bei Säuglingen).\n\nFaustregel: **NRS = fragen, KUSS = beobachten. Ab ≥ 4: immer handeln.**",
+            "Kinder unter 4 Jahren verstehen Zahlen-Skalen nicht → keine NRS möglich. Stattdessen: **KUSS-Skala** (Büttner/Finke 2000) — 5 Beobachtungskategorien (Weinen, Gesichtsausdruck, Rumpfhaltung, Beinstellung, Motorische Unruhe), je 0-2 Punkte, max. 10.\n\nSpektrum: Frau M. (NRS), Bauer (BESD/PAINAD), Yilmaz (NRS Ruhe+Bewegung), Emilia (KUSS auch bei Säuglingen).\n\nFaustregel: **NRS = fragen, KUSS = beobachten. Ab ≥ 4: immer handeln.**",
         },
       },
     },
@@ -113,7 +113,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
       tag: "pflege",
       transition: "Lukas' Schmerzprofil ist dokumentiert. Jetzt: Was steckt unter dem Verband?",
       contentC1: {
-        title: "KUSS-Skala — zürst schaün, dann erklären",
+        title: "KUSS-Skala — zuerst schauen, dann erklären",
         body: "Vor dir liegt die KUSS-Skala (Kindliche Unbehagens- und Schmerzskala, Büttner/Finke 2000) mit 5 Beobachtungskategorien à 0–2 Punkten (max. 10). Du beobachtest Lukas im Aufnahmemoment — bevor das i.v.-Schmerzmittel voll wirkt. Markiere alle Kategorien, die bei Lukas gerade starken Schmerz anzeigen — ohne dass wir dir vorher erklären wie die Skala funktioniert. Nutz dein Vorwissen und deine Beobachtungsfähigkeit.",
         glossarBegriffe: ["KUSS-Skala"],
       },
@@ -272,7 +272,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
         "Nurse carefully inspecting wound dressing on toddler arm, mother holding child calmly, kind face-to-face interaction, pediatric ward, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Wundinspektion — was ihr seht",
-        body: "Lukas, Zimmer 3, Kinderstation.\n\nKathrin löst vorsichtig den provisorischen Verband. Lukas weint kurz auf, greift nach Sandras Hand. Kathrin kündigt jede Bewegung an: \"Ich schaue jetzt kurz hin — das daürt nur einen Moment.\"\n\nWas ihr seht:\n- Linker Unterarm: 2–3 feuchte Blasen, Durchmesser 2–3 cm, noch intakt (nicht geplatzt)\n- Linke Schulter + Thorax lateral: Rötung mit weißlicher Oberfläche, Wundfläche nässend (Exsudat klar-gelblich)\n- Keine schwarz-weißliche Trockennekrose\n- Wundumgebung: leicht gerötet, warm\n- Schmerzreaktion: Lukas reagiert auf Berührung der Wundfläche — zieht sich zurück, KUSS-Score momentweise auf 8/10\n\n**Einordnung: Grad 2a.** Warum? Feuchte Blasen (intakt) + erhaltenes Schmerzempfinden + rosig-rötliche Wundfläche ohne Nekrose. Grad 2b hätte trockene, mattweißliche Blasen und vermindertes Schmerzempfinden. Grad 3 wäre schmerzlos (nerves destroyed) mit Nekrose. Quelle: _(DGV-Leitlinie Thermische Verletzungen, 2023)_.",
+        body: "Lukas, Zimmer 3, Kinderstation.\n\nKathrin löst vorsichtig den provisorischen Verband. Lukas weint kurz auf, greift nach Sandras Hand. Kathrin kündigt jede Bewegung an: \"Ich schaue jetzt kurz hin — das dauert nur einen Moment.\"\n\nWas ihr seht:\n- Linker Unterarm: 2–3 feuchte Blasen, Durchmesser 2–3 cm, noch intakt (nicht geplatzt)\n- Linke Schulter + Thorax lateral: Rötung mit weißlicher Oberfläche, Wundfläche nässend (Exsudat klar-gelblich)\n- Keine schwarz-weißliche Trockennekrose\n- Wundumgebung: leicht gerötet, warm\n- Schmerzreaktion: Lukas reagiert auf Berührung der Wundfläche — zieht sich zurück, KUSS-Score momentweise auf 8/10\n\n**Einordnung: Grad 2a.** Warum? Feuchte Blasen (intakt) + erhaltenes Schmerzempfinden + rosig-rötliche Wundfläche ohne Nekrose. Grad 2b hätte trockene, mattweißliche Blasen und vermindertes Schmerzempfinden. Grad 3 wäre schmerzlos (nerves destroyed) mit Nekrose. Quelle: _(DGV-Leitlinie Thermische Verletzungen, 2023)_.",
         fallbezug:
           "Lukas K., 2,5 J., Verbrühung Grad 2a ~15 % KOF. Wundinspektion Tag 1 nach Erstversorgung in der Notaufnahme.",
         glossarBegriffe: ["Grad 2a", "Exsudat", "Nekrose", "KOF"],
@@ -475,12 +475,12 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Vitalwerte — altersgerecht einschätzen",
         body: "Lukas' Vitalwerte bei Aufnahme: HF 142/min, AF 28/min, SpO₂ 98 %, RR 90/58 mmHg, Temp 37,4 °C. Vergleiche sie mit den Normwerten für Kleinkinder (2–3 Jahre). Bewerte jede Zeile: normal, leicht abweichend oder kritisch.",
-        glossarBegriffe: ["Herzfreqünz", "Atemfreqünz", "SpO₂", "Normwerte Kleinkind"],
+        glossarBegriffe: ["Herzfrequenz", "Atemfrequenz", "SpO₂", "Normwerte Kleinkind"],
       },
       contentB1: {
         title: "Lukas' Vitalwerte — sind sie normal?",
         body: "Lukas hat diese Vitalwerte: HF 142/min, AF 28/min, SpO₂ 98 %, RR 90/58 mmHg, Temp 37,4 °C. Vergleiche mit den Normalwerten für Kleinkinder. Was ist normal, was ist auffällig?",
-        glossarBegriffe: ["Herzfreqünz (= Herzschlag pro Minute)", "Atemfreqünz (= Atemzüge pro Minute)", "SpO₂ (= Saürstoff im Blut)"],
+        glossarBegriffe: ["Herzfrequenz (= Herzschlag pro Minute)", "Atemfrequenz (= Atemzüge pro Minute)", "SpO₂ (= Sauerstoff im Blut)"],
       },
       question: {
         fragetext:
@@ -493,7 +493,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
         ],
         rows: [
           {
-            criterion: "Herzfreqünz",
+            criterion: "Herzfrequenz",
             values: [
               "HF 142/min",
               "100–140/min",
@@ -507,7 +507,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
             highlight: 2,
           },
           {
-            criterion: "Atemfreqünz",
+            criterion: "Atemfrequenz",
             values: [
               "AF 28/min",
               "20–30/min",

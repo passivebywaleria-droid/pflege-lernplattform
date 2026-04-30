@@ -99,7 +99,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
       inlineWissen: {
         bausteinRef: "ernährungsassessment-dokumentation",
         storyAufhaenger:
-          "Du hast den Pflegebericht geschrieben. Aber Frau Schmidt bekommt zusätzlich ein Ernährungsprotokoll — 3 Tage lang, mit genaür Dokumentation jeder Mahlzeit. Warum reicht der Pflegebericht allein nicht?",
+          "Du hast den Pflegebericht geschrieben. Aber Frau Schmidt bekommt zusätzlich ein Ernährungsprotokoll — 3 Tage lang, mit genauer Dokumentation jeder Mahlzeit. Warum reicht der Pflegebericht allein nicht?",
         storyAufhaengerB1:
           "Du hast den Pflege-Bericht geschrieben. Aber Frau Schmidt bekommt auch ein Ernährungs-Protokoll. Warum beides?",
         kerntext:
@@ -201,8 +201,8 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
             },
             {
               id: 6,
-              correct: "(Name der Ernährungsberaterin individüll eintragen)",
-              distractors: ["(Name individüll)"],
+              correct: "(Name der Ernährungsberaterin individuell eintragen)",
+              distractors: ["(Name individuell)"],
             },
           ],
         },
@@ -247,7 +247,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
             right: "Externe Ernährungsberaterin ambulant + Hausarzt",
           },
           {
-            left: "BZ-Tagesprofil 5 Tage + Metformin 500 mg 2× täglich (aktüll)",
+            left: "BZ-Tagesprofil 5 Tage + Metformin 500 mg 2× täglich (aktuell)",
             right: "Hausarzt + ggf. Diabetologin für ambulante Weiterbetreuung",
           },
           {
@@ -289,7 +289,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
           kernaussagen: [
             "Adipositas ≠ gut ernährt — Albumin ist der Proteinmarker, NRS 2002 ist das Screening-Werkzeug. Übergewicht und Proteinmangel schließen sich nicht aus.",
             "Diabetisches Fußsyndrom: Nagelpflege und jede invasive Fußpflege gehören ausschließlich zum Podologen. Pflege inspiziert, dokumentiert, initiiert die Überweisung — greift aber nicht ein.",
-            "Ernährungsgespräch ist Beziehungsarbeit: Biographie zürst, Fragen vor Aussagen, keine Verbotslisten. Autonomie stärken statt Diätvorschriften machen.",
+            "Ernährungsgespräch ist Beziehungsarbeit: Biographie zuerst, Fragen vor Aussagen, keine Verbotslisten. Autonomie stärken statt Diätvorschriften machen.",
             "Inkontinenz würdevoll ansprechen: Normalisieren senkt die Schambarriere. Selbstpflege fördern soweit möglich (§ 2 PflBG).",
             "Interprofessionelles Team: Kompetenzgrenzen kennen ist Qualitätssicherung — nicht Schwäche. Podologe, Ernährungsberaterin, Arzt, Pflege haben klar verteilte Aufgaben.",
           ],

@@ -11,7 +11,7 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
   titel: "Informieren — Was weiß ich über Herrn Nguyen?",
   titelB1: "Informieren — Was weiß ich?",
   kontext:
-    "Es ist 7:45 Uhr. Die Übergabe auf der chirurgischen Station ist gerade abgeschlossen. Frau Santos-Weber hat dich kurz zu Herrn Nguyen gebrieft — aber das war wenig. Du stehst jetzt vor der Pflegedokumentation am Computer und hast 10 Minuten, bevor du das Zimmer betrittst. Herr Nguyen ist 72 Jahre alt. Vier Tage nach der Sigmaresektion bei Kolonkarzinom. Ein endständiges Kolostoma — das heißt: der Dickdarm wird daürhaft über die Bauchdecke ausgeleitet. Das Stoma ist kein Übergangszustand. Es ist sein neüs Körperbild. Was erwartet dich? Die Tochter ist schon da. Die Ehefrau vermutlich auch. Der Beutel muss gewechselt werden. Und Herr Nguyen hat gestern kaum gegessen.",
+    "Es ist 7:45 Uhr. Die Übergabe auf der chirurgischen Station ist gerade abgeschlossen. Frau Santos-Weber hat dich kurz zu Herrn Nguyen gebrieft — aber das war wenig. Du stehst jetzt vor der Pflegedokumentation am Computer und hast 10 Minuten, bevor du das Zimmer betrittst. Herr Nguyen ist 72 Jahre alt. Vier Tage nach der Sigmaresektion bei Kolonkarzinom. Ein endständiges Kolostoma — das heißt: der Dickdarm wird dauerhaft über die Bauchdecke ausgeleitet. Das Stoma ist kein Übergangszustand. Es ist sein neues Körperbild. Was erwartet dich? Die Tochter ist schon da. Die Ehefrau vermutlich auch. Der Beutel muss gewechselt werden. Und Herr Nguyen hat gestern kaum gegessen.",
   kontextB1:
     "Es ist 7:45 Uhr. Die Übergabe ist fertig. Deine Anleiterin sagt: 'Du versorgst heute Herrn Nguyen. Der Stoma-Beutel muss gewechselt werden. Ich bin nebenan. Ruf mich wenn du Hilfe brauchst.' Die Tochter Linh ist schon im Zimmer. Sie übersetzt für ihren Vater. Du hast jetzt 10 Minuten um die Pflegeakte zu lesen.",
   kernSteps: [
@@ -83,17 +83,17 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
             text: "Das Stoma wird in 6 Monaten rückverlegt.",
             isCorrect: false,
             explanation:
-              "Das wäre ein doppelläufiges (temporäres) Stoma — z.B. nach Rektumkarzinom ohne Sphinktererhalt. Bei Herrn Nguyen wurde das Sigma reseziert, der Mastdarm ebenfalls entfernt. Eine Rückverlage ist biologisch nicht möglich. Das endständige Stoma ist daürhaft.",
+              "Das wäre ein doppelläufiges (temporäres) Stoma — z.B. nach Rektumkarzinom ohne Sphinktererhalt. Bei Herrn Nguyen wurde das Sigma reseziert, der Mastdarm ebenfalls entfernt. Eine Rückverlage ist biologisch nicht möglich. Das endständige Stoma ist dauerhaft.",
             explanationB1:
               "Nein — das ist ein anderes Stoma (doppelläufig). Bei Herrn Nguyen wurde das Sigma entfernt. Das Stoma bleibt für immer. Es gibt keine Rück-Operation.",
           },
           {
-            text: "Das Stoma ist daürhaft — der Dickdarm wird daürhaft über die Bauchdecke ausgeleitet, eine Rückverlage ist nicht geplant.",
+            text: "Das Stoma ist dauerhaft — der Dickdarm wird dauerhaft über die Bauchdecke ausgeleitet, eine Rückverlage ist nicht geplant.",
             isCorrect: true,
             explanation:
-              "Richtig. 'Endständig' bedeutet: Das Ende des verbliebenen Dickdarms wird durch die Bauchdecke nach außen geführt und vernäht. Der Mastdarm wurde ebenfalls entfernt — eine Rückverlage ist nicht möglich. Herr Nguyen wird das Stoma sein ganzes Leben lang haben. Das ist sein neüs Körperbild.",
+              "Richtig. 'Endständig' bedeutet: Das Ende des verbliebenen Dickdarms wird durch die Bauchdecke nach außen geführt und vernäht. Der Mastdarm wurde ebenfalls entfernt — eine Rückverlage ist nicht möglich. Herr Nguyen wird das Stoma sein ganzes Leben lang haben. Das ist sein neues Körperbild.",
             explanationB1:
-              "Richtig. 'Endständig' heißt: Das Darm-Ende kommt durch die Bauch-Wand nach draußen. Es bleibt für immer so. Das ist Herrn Nguyens neüs Körperbild.",
+              "Richtig. 'Endständig' heißt: Das Darm-Ende kommt durch die Bauch-Wand nach draußen. Es bleibt für immer so. Das ist Herrn Nguyens neues Körperbild.",
           },
           {
             text: "Das Stoma sitzt im Dünndarm (Ileostoma).",
@@ -179,7 +179,7 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Was bereitest du vor?",
-        body: "Bevor du ins Zimmer gehst — was tust du zürst? Erst Plan und Daten lesen, dann Material vorbereiten. Sortiere in dieser Reihenfolge.",
+        body: "Bevor du ins Zimmer gehst — was tust du zuerst? Erst Plan und Daten lesen, dann Material vorbereiten. Sortiere in dieser Reihenfolge.",
         glossarBegriffe: [],
       },
       question: {
@@ -190,7 +190,7 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
             "Bringe die Schritte in die richtige Reihenfolge: erst Tagesplan/Termine prüfen, dann Patientendaten lesen, dann Begrüßung überlegen, zuletzt Material vorbereiten.",
           items: [
             { id: "s3", label: "Prüfen, ob Stomatherapeut Herr Baum heute bestätigt ist (Uhrzeit)" },
-            { id: "s1", label: "Ernährungsprotokoll der letzten 24h in der Akte anschaün" },
+            { id: "s1", label: "Ernährungsprotokoll der letzten 24h in der Akte anschauen" },
             { id: "s4", label: "Kurz überlegen, wie du Herrn Nguyen begrüßt (Tochter als Übersetzerin)" },
             { id: "s2", label: "Beutelwechsel-Utensilien vorbereiten und bereitlegen" },
             { id: "s5", label: "Intimpflege-Set für Ganzkörperpflege bereitstellen" },
@@ -232,7 +232,7 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
         storyAufhaenger:
           "Tochter Linh sitzt neben ihrem Vater und übersetzt für dich. Klingt praktisch — aber Linh ist gleichzeitig Tochter, Übersetzerin und emotionale Stütze. Drei Rollen, die sich gegenseitig behindern können. Das nennt man einen Rollenkonflikt.",
         kerntext:
-          "**Was ist ein Rollenkonflikt?** Eine Person hat gleichzeitig mehrere Rollen mit widersprüchlichen Erwartungen. Sie kann nicht allen Rollen gleichzeitig gerecht werden.\n\n**Beispiel Linh:**\n\n• **Rolle 1 — Tochter:** Sie will ihren Vater schützen und trösten. Schlechte Nachrichten würde sie vielleicht abmildern.\n\n• **Rolle 2 — Übersetzerin:** Sie soll medizinische Informationen sachlich und vollständig übersetzen — auch unangenehme.\n\n• **Rolle 3 — Emotionale Stütze:** Sie trägt selbst Angst und Traür, soll aber ruhig und souverän bleiben.\n\n**Warum ist das ein Problem?** Eine Tochter, die ihren Vater schützen will, übersetzt möglicherweise abgemildert: 'Die Ärztin hat gesagt, es wird alles gut' — statt der tatsächlichen Aussage. Das verzerrt die Patientenaufklärung und kann rechtliche und ethische Probleme erzeugen.\n\n**Professionelle Alternative:** Telefon-Dolmetscherdienst oder Video-Dolmetscher (kultursensibel, medizinisch geschult). In der Akutversorgung ist die Tochter oft die pragmatische Lösung — aber mit Bewusstsein für die Grenzen (ICN 2021, § 2 PflBG).",
+          "**Was ist ein Rollenkonflikt?** Eine Person hat gleichzeitig mehrere Rollen mit widersprüchlichen Erwartungen. Sie kann nicht allen Rollen gleichzeitig gerecht werden.\n\n**Beispiel Linh:**\n\n• **Rolle 1 — Tochter:** Sie will ihren Vater schützen und trösten. Schlechte Nachrichten würde sie vielleicht abmildern.\n\n• **Rolle 2 — Übersetzerin:** Sie soll medizinische Informationen sachlich und vollständig übersetzen — auch unangenehme.\n\n• **Rolle 3 — Emotionale Stütze:** Sie trägt selbst Angst und Trauer, soll aber ruhig und souverän bleiben.\n\n**Warum ist das ein Problem?** Eine Tochter, die ihren Vater schützen will, übersetzt möglicherweise abgemildert: 'Die Ärztin hat gesagt, es wird alles gut' — statt der tatsächlichen Aussage. Das verzerrt die Patientenaufklärung und kann rechtliche und ethische Probleme erzeugen.\n\n**Professionelle Alternative:** Telefon-Dolmetscherdienst oder Video-Dolmetscher (kultursensibel, medizinisch geschult). In der Akutversorgung ist die Tochter oft die pragmatische Lösung — aber mit Bewusstsein für die Grenzen (ICN 2021, § 2 PflBG).",
         kerntextB1:
           "**Was ist ein Rollenkonflikt?** Eine Person hat mehrere Aufgaben gleichzeitig, die nicht zusammenpassen.\n\n**Beispiel Linh:**\n• **Tochter:** Sie will ihren Vater beschützen.\n• **Übersetzerin:** Sie soll alles genau übersetzen — auch schlechte Nachrichten.\n• **Stütze:** Sie hat selbst Angst — soll aber ruhig bleiben.\n\n**Das Problem:** Als Tochter will sie vielleicht schlechte Nachrichten abschwächen. Als Übersetzerin muss sie genau sein. Das geht nicht beides.\n\n**Besser wäre:** Ein professioneller Dolmetscher (per Telefon oder Video). Aber der ist nicht immer sofort verfügbar. Dann hilft Linh — aber wir wissen: Es gibt Grenzen.",
         faustregel:

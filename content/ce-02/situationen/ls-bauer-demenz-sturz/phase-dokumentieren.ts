@@ -7,7 +7,7 @@
 import type { SituationsPhase } from "../../../_types";
 
 export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
-  phaseId: "ls-baür-dokumentieren",
+  phaseId: "ls-bauer-dokumentieren",
   phase: "dokumentieren",
   titel: "Dokumentieren",
   titelB1: "Aufschreiben",
@@ -18,7 +18,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
   kernSteps: [
     // Inline-Wissen: Sturzprotokoll \u2014 was muss drinstehen?
     {
-      stepId: "ce02-baür-dok-00b-sturzprotokoll-begriffe",
+      stepId: "ce02-bauer-dok-00b-sturzprotokoll-begriffe",
       phase: 6,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -26,7 +26,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       quellen: ["DNQP 2022 \u2014 Sturzprophylaxe", "Paragraph 4 PflBG"],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-baür-dok-00b-sturzprotokoll-begriffe",
+      lernziel: "ce02-bauer-dok-00b-sturzprotokoll-begriffe",
       tag: "pflege",
       themaPrimaer: "pflegedokumentation",
       themenSekundaer: ["sturz-prophylaxe"],
@@ -46,9 +46,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
         storyAufhaenger: "Vier Begriffe für ein vollständiges Sturzprotokoll.",
         storyAufhaengerB1: "Vier wichtige Begriffe für das Sturzprotokoll.",
         kerntext: "**Verletzungscheck** = Systematische Inspektion: Blutungen, Deformitäten, Haematome, Schwellungen. Kopf bis Fuss, Seitenvergleich. Bei Demenz: BESD beobachten.\n\n**Ursachenhypothese** = Begründete Vermutung ueber Sturzursache: \"Desorientierung + Harndrang + Mirtazapin.\" Keine Diagnose, aber lenkt Prophylaxe.\n\n**Ursache** = Auslösender Faktor: intrinsisch (Demenz, Medikamente) vs. extrinsisch (Umgebung).\n\n**Dokumentationspflicht** (Paragraph 4 PflBG): Pflegefachkraft MUSS den Pflegeprozess dokumentieren.",
-        kerntextB1: "**Verletzungscheck** = Körper anschaün: Blutungen? Beulen? Kopf bis Fuss.\n\n**Ursachenhypothese** = Warum ist er gestürzt? Deine begründete Vermutung.\n\n**Ursache** = Was hat den Sturz ausgelöst?\n\n**Dokumentationspflicht** = Du MUSST alles aufschreiben (Gesetz).",
+        kerntextB1: "**Verletzungscheck** = Körper anschauen: Blutungen? Beulen? Kopf bis Fuss.\n\n**Ursachenhypothese** = Warum ist er gestürzt? Deine begründete Vermutung.\n\n**Ursache** = Was hat den Sturz ausgelöst?\n\n**Dokumentationspflicht** = Du MUSST alles aufschreiben (Gesetz).",
         faustregel: "Sturzprotokoll: Verletzungscheck, Ursachenhypothese (WARUM gestürzt), Dokumentationspflicht.",
-        faustregelB1: "Sturzprotokoll: Körper anschaün, Vermutung aufschreiben warum, alles dokumentieren.",
+        faustregelB1: "Sturzprotokoll: Körper anschauen, Vermutung aufschreiben warum, alles dokumentieren.",
         spektrum: [],
         karteikarte: {
           vorderseite: "Was ist eine Ursachenhypothese im Sturzprotokoll?",
@@ -59,7 +59,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
 
     // Step 6.1 — Freetext: Sturzprotokoll ausfüllen (HAUPT-FREITEXT)
     {
-      stepId: "ce02-baür-dok-01-sturzprotokoll-frei",
+      stepId: "ce02-bauer-dok-01-sturzprotokoll-frei",
       phase: 6,
       stepType: "freetext",
       bloomLevel: 6,
@@ -71,11 +71,11 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "schreibtisch",
-      lernziel: "ce02-baür-dok-sturzprotokoll",
+      lernziel: "ce02-bauer-dok-sturzprotokoll",
       tag: "pflege",
       contentC1: {
         title: "Sturzprotokoll vervollständigen",
-        body: "Das Sturzprotokoll für Herrn Friedrich Baür ist unvollständig. Du ergänzt es jetzt. Dein Text soll enthalten: Datum und Uhrzeit des Sturzes, Sturzort, Hergang soweit bekannt, Bewusstseinslage beim Auffinden, Verletzungscheck (Ergebnis), Vitalzeichen, eingeleitete Maßnahmen heute Morgen, informierte Personen (Arzt? Tochter Ingrid?), Ursachenhypothese. Außerdem: Was hat das Frühschicht-Team heute ergänzt?",
+        body: "Das Sturzprotokoll für Herrn Friedrich Bauer ist unvollständig. Du ergänzt es jetzt. Dein Text soll enthalten: Datum und Uhrzeit des Sturzes, Sturzort, Hergang soweit bekannt, Bewusstseinslage beim Auffinden, Verletzungscheck (Ergebnis), Vitalzeichen, eingeleitete Maßnahmen heute Morgen, informierte Personen (Arzt? Tochter Ingrid?), Ursachenhypothese. Außerdem: Was hat das Frühschicht-Team heute ergänzt?",
         glossarBegriffe: [
           "Sturzprotokoll",
           "Ursachenhypothese",
@@ -85,7 +85,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Sturzprotokoll schreiben",
-        body: "Schreibe das Sturzprotokoll für Herrn Baür. Dein Text soll enthalten: Wann ist er gestürzt? Wo? Was ist passiert? War er wach? Hat er Verletzungen? Was haben wir heute gemacht? Wen haben wir informiert? Warum ist er gestürzt (Vermutung)?",
+        body: "Schreibe das Sturzprotokoll für Herrn Bauer. Dein Text soll enthalten: Wann ist er gestürzt? Wo? Was ist passiert? War er wach? Hat er Verletzungen? Was haben wir heute gemacht? Wen haben wir informiert? Warum ist er gestürzt (Vermutung)?",
         glossarBegriffe: [
           "Sturzprotokoll",
           "Verletzungscheck",
@@ -94,9 +94,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       },
       question: {
         fragetext:
-          "Schreibe das vollständige Sturzprotokoll für Herrn Friedrich Baür (ca. 120–200 Wörter). Nutze alle Informationen aus dem heutigen Tag.",
+          "Schreibe das vollständige Sturzprotokoll für Herrn Friedrich Bauer (ca. 120–200 Wörter). Nutze alle Informationen aus dem heutigen Tag.",
         musterantwort:
-          "Sturzdatum/-uhrzeit: 23.04.2026, ca. 02:30 Uhr. Sturzort: Flur vor Zimmer 8, Station 4b. Erster Sturz in der Einrichtung. Hergang: Herr Baür verließ das Zimmer eigenständig, wurde sitzend am Boden vorgefunden. Bewusstsein: ansprechbar, grob orientiert zur Person (erkennt Tochter), desorientiert zu Ort und Zeit. Verletzungscheck: keine Blutung, keine sichtbare Deformität, kein Hämatom. Schmerz: rechtes Knie bei Bewegung (BESD 2/10, passt zum Streckdefizit 20° rechts), sonst kein Schmerz geäußert. Vitalzeichen (07:30 Uhr): RR 128/78, HF 74/min, SpO₂ 96%. Maßnahmen Frühschicht: Assessment vollständig, Kniebeweglichkeit geprüft, Körperpflege mit Basaler Stimulation, passive Kniebewegung 2×, Mundpflege, Trinkprotokoll begonnen. Niedrigbett und Nachtlicht für Nachtdienst angeordnet. Informierte Personen: Arzt informiert (Mirtazapin-Dosis zu prüfen), Tochter Ingrid Baür telefonisch informiert (15:30 Uhr), Gespräch geführt. Ursachenhypothese: Desorientierung (FAST 6a) + nächtlicher Harndrang + sedierende Wirkung von Mirtazapin.",
+          "Sturzdatum/-uhrzeit: 23.04.2026, ca. 02:30 Uhr. Sturzort: Flur vor Zimmer 8, Station 4b. Erster Sturz in der Einrichtung. Hergang: Herr Bauer verließ das Zimmer eigenständig, wurde sitzend am Boden vorgefunden. Bewusstsein: ansprechbar, grob orientiert zur Person (erkennt Tochter), desorientiert zu Ort und Zeit. Verletzungscheck: keine Blutung, keine sichtbare Deformität, kein Hämatom. Schmerz: rechtes Knie bei Bewegung (BESD 2/10, passt zum Streckdefizit 20° rechts), sonst kein Schmerz geäußert. Vitalzeichen (07:30 Uhr): RR 128/78, HF 74/min, SpO₂ 96%. Maßnahmen Frühschicht: Assessment vollständig, Kniebeweglichkeit geprüft, Körperpflege mit Basaler Stimulation, passive Kniebewegung 2×, Mundpflege, Trinkprotokoll begonnen. Niedrigbett und Nachtlicht für Nachtdienst angeordnet. Informierte Personen: Arzt informiert (Mirtazapin-Dosis zu prüfen), Tochter Ingrid Bauer telefonisch informiert (15:30 Uhr), Gespräch geführt. Ursachenhypothese: Desorientierung (FAST 6a) + nächtlicher Harndrang + sedierende Wirkung von Mirtazapin.",
         bewertungskriterien: [
           "Datum und Uhrzeit des Sturzes genannt",
           "Sturzort beschrieben",
@@ -124,7 +124,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
     // Bei Demenz gibt es Besonderheiten in der Dokumentation die er kennen muss
     // bevor er Fehler im ErrorSpot-Step finden soll.
     {
-      stepId: "ce02-baür-dok-01b-dokumentation-demenz",
+      stepId: "ce02-bauer-dok-01b-dokumentation-demenz",
       phase: 6,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -136,7 +136,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-baür-dok-dokumentation-demenz",
+      lernziel: "ce02-bauer-dok-dokumentation-demenz",
       tag: "pflege",
       themaPrimaer: "ganzkörperpflege",
       themenSekundaer: ["sturz-prophylaxe", "basale-stimulation"],
@@ -154,9 +154,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       inlineWissen: {
         bausteinRef: "ganzkörperpflege-dokumentation-demenz",
         storyAufhaenger:
-          "Du hast gerade das Sturzprotokoll geschrieben. Jetzt kommt der Pflegebericht für die Übergabe. Bei Herrn Baür hat sich heute viel ereignet: Abwehr bei der Pflege, Deeskalation, Kniebewegung, Trinkmenge. Wie schreibst du das auf — ohne Wertung, aber mit den richtigen Details?",
+          "Du hast gerade das Sturzprotokoll geschrieben. Jetzt kommt der Pflegebericht für die Übergabe. Bei Herrn Bauer hat sich heute viel ereignet: Abwehr bei der Pflege, Deeskalation, Kniebewegung, Trinkmenge. Wie schreibst du das auf — ohne Wertung, aber mit den richtigen Details?",
         storyAufhaengerB1:
-          "Du hast das Sturzprotokoll geschrieben. Jetzt kommt der Pflegebericht. Herr Baür hat sich heute gewehrt, du hast ihn beruhigt, seine Knie bewegt, er hat getrunken. Wie schreibst du das alles auf?",
+          "Du hast das Sturzprotokoll geschrieben. Jetzt kommt der Pflegebericht. Herr Bauer hat sich heute gewehrt, du hast ihn beruhigt, seine Knie bewegt, er hat getrunken. Wie schreibst du das alles auf?",
         kerntext:
           "Bei Menschen mit Demenz hat die Dokumentation **4 Besonderheiten** (DNQP 2018, § 4 PflBG):\n\n**1. Verhalten beschreiben, nicht bewerten**\n\nFalsch: \"Patient war heute wieder schwierig.\"\nRichtig: \"Patient zeigte Abwehrverhalten bei Gesichtspflege (2x Schlagen nach Pflegekraft), nach 2-minütiger Pause und Handkontakt Kooperation möglich.\"\n\nWarum? \"Schwierig\" ist eine Wertung — sie hilft dem Nachtdienst nicht. **Konkretes Verhalten + Strategie + Ergebnis** hilft.\n\n**2. BESD-Werte dokumentieren**\n\nBei jedem Pflegekontakt: BESD in Ruhe + BESD bei Bewegung. Das ist die Schmerzakte bei Demenz.\n\n**3. Ressourcen dokumentieren**\n\nWas hat funktioniert? \"Beruhigung durch Freddy Quinn möglich\" — das hilft dem Folge-Team.\n\n**4. Maßnahmen-Umsetzung konkret**\n\nNicht: \"Knie beobachten.\" Sondern: \"Passive Kniebewegung 2x durchgeführt (rechts bis 20 Grad Streckdefizit, links bis 10 Grad), BESD während Bewegung 3/10.\"",
         kerntextB1:
@@ -190,7 +190,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
         ],
         karteikarte: {
           vorderseite:
-            "Herr Baür (Demenz) hat bei der Morgenpflege 2x nach dir geschlagen. Du hast ihn beruhigt und die Pflege durchgeführt. Wie dokumentierst du das?",
+            "Herr Bauer (Demenz) hat bei der Morgenpflege 2x nach dir geschlagen. Du hast ihn beruhigt und die Pflege durchgeführt. Wie dokumentierst du das?",
           rueckseite:
             "**Verhalten beschreiben, nicht bewerten**: \"Abwehrverhalten bei Gesichtspflege (2x Schlagen), nach 2 Min Pause + Handkontakt + Musik (Freddy Quinn) Kooperation möglich.\" PLUS: BESD-Wert in Ruhe + bei Bewegung. PLUS: Ressource (Musik, Handkontakt). PLUS: Maßnahmen-Ergebnis (passive Kniebewegung 2x, rechts 20 Grad). **NICHT**: \"Patient war schwierig\" — das ist Wertung, nicht Beobachtung. (DNQP 2018, § 4 PflBG) Faustregel: **Verhalten + Strategie + Ergebnis. Keine Wertungen.**",
         },
@@ -198,7 +198,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
     },
 // Step 6.2 — ErrorSpot: Fehler im Pflegebericht finden
     {
-      stepId: "ce02-baür-dok-02-pflegebericht-formulierung",
+      stepId: "ce02-bauer-dok-02-pflegebericht-formulierung",
       phase: 6,
       stepType: "errorspot",
       bloomLevel: 5,
@@ -206,11 +206,11 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       quellen: ["DNQP Sturzprophylaxe 2022", "§ 4 PflBG"],
       track: "basis",
       modus: "challenge",
-      lernziel: "ce02-baür-dok-pflegebericht-qualität",
+      lernziel: "ce02-bauer-dok-pflegebericht-qualität",
       tag: "pflege",
       contentC1: {
         title: "Fehler im Pflegebericht finden",
-        body: "Ein vorgefertigter Pflegebericht enthält 4 typische Fehler: Wertung statt Beobachtung, fehlende Zeitangabe, fehlende Konseqünz, unklare passive Formulierung. Finde und markiere alle 4 Fehler.",
+        body: "Ein vorgefertigter Pflegebericht enthält 4 typische Fehler: Wertung statt Beobachtung, fehlende Zeitangabe, fehlende Konsequnz, unklare passive Formulierung. Finde und markiere alle 4 Fehler.",
         glossarBegriffe: ["Objektivität", "Dokumentation", "Pflegebericht"],
       },
       contentB1: {
@@ -225,13 +225,13 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
           instruction:
             "Klicke auf alle Textstellen die fehlerhaft sind. Es gibt genau 4 Fehler.",
           text:
-            "Frühschicht 23.04.2026 — Herr Baür war heute wieder schwierig bei der Körperpflege. Morgenroutine durchgeführt. Trinkmenge heute gut. Knie beobachten. Inkontinenzversorgung wurde gewechselt.",
+            "Frühschicht 23.04.2026 — Herr Bauer war heute wieder schwierig bei der Körperpflege. Morgenroutine durchgeführt. Trinkmenge heute gut. Knie beobachten. Inkontinenzversorgung wurde gewechselt.",
           errors: [
             {
               start: 37,
               end: 68,
               correction:
-                "Herr Baür zeigte Abwehrverhalten bei der Körperpflege (2× Schlagen nach Pflegekraft), nach Deeskalation Kooperation möglich.",
+                "Herr Bauer zeigte Abwehrverhalten bei der Körperpflege (2× Schlagen nach Pflegekraft), nach Deeskalation Kooperation möglich.",
               explanation:
                 "Wertung statt Beobachtung. 'Wieder schwierig' ist subjektiv und abwertend. Sachlich beschreiben: Was genau war das Verhalten? Wie hat das Team reagiert?",
               explanationB1:
@@ -253,7 +253,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
               correction:
                 "Schmerz-Assessment Knie mit BESD vor jeder Bewegungsübung, passive Kniebewegung 2× durchgeführt.",
               explanation:
-                "Fehlende Konseqünz. 'Knie beobachten' ist keine Maßnahme — es fehlt die konkrete Handlungsanweisung für das Folge-Team.",
+                "Fehlende Konsequnz. 'Knie beobachten' ist keine Maßnahme — es fehlt die konkrete Handlungsanweisung für das Folge-Team.",
               explanationB1:
                 "'Knie beobachten' ist zu wenig. Schreibe was genau gemacht wurde und was das Folge-Team tun soll.",
             },
@@ -263,7 +263,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
               correction:
                 "Inkontinenzversorgung 09:15 Uhr gewechselt. Haut im Intimbereich gerötet (Grad 1), Hautschutzpaste aufgetragen.",
               explanation:
-                "Unklare passive Formulierung ohne Zeit, Beobachtung und Konseqünz. 'Wurde gewechselt' — von wem, wann? Und wie ist die Haut?",
+                "Unklare passive Formulierung ohne Zeit, Beobachtung und Konsequnz. 'Wurde gewechselt' — von wem, wann? Und wie ist die Haut?",
               explanationB1:
                 "'Wurde gewechselt' — wann? Von wem? Wie sah die Haut aus? Was wurde dagegen getan? Das alles gehört in die Dokumentation.",
             },
@@ -274,7 +274,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
 
     // Inline-Wissen: Miktion und Inkontinenz \u2014 Grundbegriffe
     {
-      stepId: "ce02-baür-dok-02b-miktionsprotokoll-begriffe",
+      stepId: "ce02-bauer-dok-02b-miktionsprotokoll-begriffe",
       phase: 6,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -282,7 +282,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       quellen: ["DNQP 2014 \u2014 Förderung Harnkontinenz"],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-baür-dok-02b-miktionsprotokoll-begriffe",
+      lernziel: "ce02-bauer-dok-02b-miktionsprotokoll-begriffe",
       tag: "krankheitslehre",
       themaPrimaer: "harnausscheidung",
       themenSekundaer: ["ganzkörperpflege"],
@@ -301,13 +301,13 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
         bausteinRef: "harnausscheidung-miktion",
         storyAufhaenger: "Zwei Grundbegriffe für das Miktionsprotokoll.",
         storyAufhaengerB1: "Zwei Woerter für das Protokoll.",
-        kerntext: "**Miktion** = Wasserlassen. Dokumentiert im Miktionsprotokoll: Zeitpunkt, Menge, Art.\n\n**Inkontinenz** = unwillkürlicher Urinverlust. Bei Herrn Baür: funktionelle Inkontinenz \u2014 Blase ok, aber er findet die Toilette nicht (Demenz). Maßnahme: Toilettenangebot regelmässig (DNQP 2014).",
-        kerntextB1: "**Miktion** = Wasserlassen.\n**Inkontinenz** = Urin verlieren ohne zu wollen. Bei Herrn Baür: Er findet die Toilette nicht (Demenz). Toilette regelmässig anbieten.",
+        kerntext: "**Miktion** = Wasserlassen. Dokumentiert im Miktionsprotokoll: Zeitpunkt, Menge, Art.\n\n**Inkontinenz** = unwillkürlicher Urinverlust. Bei Herrn Bauer: funktionelle Inkontinenz \u2014 Blase ok, aber er findet die Toilette nicht (Demenz). Maßnahme: Toilettenangebot regelmässig (DNQP 2014).",
+        kerntextB1: "**Miktion** = Wasserlassen.\n**Inkontinenz** = Urin verlieren ohne zu wollen. Bei Herrn Bauer: Er findet die Toilette nicht (Demenz). Toilette regelmässig anbieten.",
         faustregel: "Miktion = Wasserlassen. Inkontinenz bei Demenz: oft funktionell (Toilette nicht gefunden).",
         faustregelB1: "Miktion = Wasserlassen. Inkontinenz bei Demenz: Er findet die Toilette nicht.",
         spektrum: [],
         karteikarte: {
-          vorderseite: "Was ist funktionelle Inkontinenz bei Herrn Baür?",
+          vorderseite: "Was ist funktionelle Inkontinenz bei Herrn Bauer?",
           rueckseite: "Blase funktioniert, aber Patient findet Toilette nicht (Demenz). Maßnahme: Toilettenangebot regelmässig.",
         },
       },
@@ -315,7 +315,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
 
     // Step 6.3 — TableFillIn: Miktionsprotokoll
     {
-      stepId: "ce02-baür-dok-03-miktionsprotokoll",
+      stepId: "ce02-bauer-dok-03-miktionsprotokoll",
       phase: 6,
       stepType: "tablefillin",
       bloomLevel: 5,
@@ -323,11 +323,11 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       quellen: ["DNQP Förderung Harnkontinenz 2014"],
       track: "basis",
       modus: "schreibtisch",
-      lernziel: "ce02-baür-dok-miktionsprotokoll",
+      lernziel: "ce02-bauer-dok-miktionsprotokoll",
       tag: "krankheitslehre",
       contentC1: {
         title: "Miktionsprotokoll ergänzen",
-        body: "Fülle das Miktionsprotokoll für Herrn Baür aus. Die Frühschicht hat einige Einträge bereits gemacht — ergänze die fehlenden Felder basierend auf dem heutigen Fallwissen.",
+        body: "Fülle das Miktionsprotokoll für Herrn Bauer aus. Die Frühschicht hat einige Einträge bereits gemacht — ergänze die fehlenden Felder basierend auf dem heutigen Fallwissen.",
         glossarBegriffe: ["Miktionsprotokoll", "Miktion", "Inkontinenz", "Flüssigkeitsbilanz"],
       },
       contentB1: {
@@ -384,7 +384,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
 
     // Step 6.4 — Summary: Session-Zusammenfassung
     {
-      stepId: "ce02-baür-dok-04-session-summary",
+      stepId: "ce02-bauer-dok-04-session-summary",
       phase: 6,
       stepType: "summary",
       bloomLevel: 5,
@@ -397,23 +397,23 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "checkpoint",
-      lernziel: "ce02-baür-dok-zusammenfassung",
+      lernziel: "ce02-bauer-dok-zusammenfassung",
       tag: "pflege",
       contentC1: {
-        title: "Das hast du heute mit Herrn Baür gelernt",
-        body: "Zusammenfassung der Lernsituation: Herr Friedrich Baür, 82, Alzheimer-Demenz, gerontopsychiatrische Station, Sturzereignis 02:30 Uhr.",
+        title: "Das hast du heute mit Herrn Bauer gelernt",
+        body: "Zusammenfassung der Lernsituation: Herr Friedrich Bauer, 82, Alzheimer-Demenz, gerontopsychiatrische Station, Sturzereignis 02:30 Uhr.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Was du heute gelernt hast",
-        body: "Zusammenfassung: Herr Baür, Demenz, Sturz in der Nacht — was du heute gemacht und gelernt hast.",
+        body: "Zusammenfassung: Herr Bauer, Demenz, Sturz in der Nacht — was du heute gemacht und gelernt hast.",
         glossarBegriffe: [],
       },
       question: {
         fragetext: "Dein Lerngewinn aus dem heutigen Tag.",
         summary: {
           reflexionRueckbezug:
-            "Du bist heute Morgen allein zu Herrn Baür gegangen — mit einem unvollständigen Sturzprotokoll und einem aufgewühlten Patienten. Am Ende des Tages hast du das Assessment vervollständigt, Körperpflege mit Würde durchgeführt, ein Angehörigengespräch geführt und die Dokumentation gesichert. Das ist Pflege.",
+            "Du bist heute Morgen allein zu Herrn Bauer gegangen — mit einem unvollständigen Sturzprotokoll und einem aufgewühlten Patienten. Am Ende des Tages hast du das Assessment vervollständigt, Körperpflege mit Würde durchgeführt, ein Angehörigengespräch geführt und die Dokumentation gesichert. Das ist Pflege.",
           kernaussagen: [
             "Sturzprotokoll: 9 Pflichtfelder — Uhrzeit, Ort, Hergang, Bewusstsein, Verletzungscheck, Vitalzeichen, Maßnahmen, informierte Personen, Ursachenhypothese. Near-Miss dokumentieren gilt auch dann wenn kein Schaden entstand.",
             "Demenz und Validation: Korrigieren verstärkt Angst. Validieren — 'Du hast heute viel zu tun' — herstellt Kontakt. Das ist der Unterschied zwischen Eskalation und Kooperation.",
@@ -429,7 +429,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
   optionaleSteps: [
     // Step 6.5 — Text: Rechtliche Dokumentationspflicht
     {
-      stepId: "ce02-baür-dok-05-rechtliche-dokumentationspflicht",
+      stepId: "ce02-bauer-dok-05-rechtliche-dokumentationspflicht",
       phase: 6,
       stepType: "text",
       bloomLevel: 4,
@@ -437,12 +437,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       quellen: ["§ 4 PflBG", "SGB XI § 115"],
       track: "vertiefung",
       modus: "entdecker",
-      lernziel: "ce02-baür-dok-recht",
+      lernziel: "ce02-bauer-dok-recht",
       tag: "pflege",
       displayFormat: "quote",
       contentC1: {
         title: "Warum muss das Sturzprotokoll vollständig sein?",
-        body: "Rechtlicher Rahmen der Dokumentationspflicht:\n\n§ 4 PflBG: Durchführung des Pflegeprozesses und seine Dokumentation gehören zu den vorbehaltenen Tätigkeiten der Pflegefachkraft — das bedeutet: Diese Aufgabe darf nicht delegiert werden, und sie muss vollständig erfüllt werden.\n\nSGB XI § 115: Qualitätssicherung in stationären Einrichtungen verlangt nachvollziehbare Pflegedokumentation als Grundlage für Prüfungen.\n\nHaftungsfragen: Ein unvollständiges Sturzprotokoll kann im Schadensfall (z. B. Folgesturz mit Verletzung) als Organisations- oder Überwachungsverschulden gewertet werden.\n\nFazit: Das Sturzprotokoll ist nicht Bürokratie. Es ist Schutz — für Herrn Baür, für das Team, für die Einrichtung.",
+        body: "Rechtlicher Rahmen der Dokumentationspflicht:\n\n§ 4 PflBG: Durchführung des Pflegeprozesses und seine Dokumentation gehören zu den vorbehaltenen Tätigkeiten der Pflegefachkraft — das bedeutet: Diese Aufgabe darf nicht delegiert werden, und sie muss vollständig erfüllt werden.\n\nSGB XI § 115: Qualitätssicherung in stationären Einrichtungen verlangt nachvollziehbare Pflegedokumentation als Grundlage für Prüfungen.\n\nHaftungsfragen: Ein unvollständiges Sturzprotokoll kann im Schadensfall (z. B. Folgesturz mit Verletzung) als Organisations- oder Überwachungsverschulden gewertet werden.\n\nFazit: Das Sturzprotokoll ist nicht Bürokratie. Es ist Schutz — für Herrn Bauer, für das Team, für die Einrichtung.",
         glossarBegriffe: [
           "§ 4 PflBG",
           "SGB XI § 115",
@@ -452,7 +452,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Warum muss man alles aufschreiben?",
-        body: "Das Gesetz sagt:\n\n§ 4 PflBG: Die Dokumentation gehört zur Arbeit der Pflegefachkraft. Das darf nicht jemand anderes machen. Und es muss vollständig sein.\n\nWenn etwas nicht dokumentiert ist — dann gilt es vor Gericht als nicht passiert.\n\nBeispiel: Herr Baür stürzt wieder. Der Anwalt fragt: 'Was haben Sie nach dem ersten Sturz getan?' Wenn das Protokoll leer ist, gibt es keine Antwort.\n\nDokumentation schützt Herrn Baür, das Team und die Einrichtung.",
+        body: "Das Gesetz sagt:\n\n§ 4 PflBG: Die Dokumentation gehört zur Arbeit der Pflegefachkraft. Das darf nicht jemand anderes machen. Und es muss vollständig sein.\n\nWenn etwas nicht dokumentiert ist — dann gilt es vor Gericht als nicht passiert.\n\nBeispiel: Herr Bauer stürzt wieder. Der Anwalt fragt: 'Was haben Sie nach dem ersten Sturz getan?' Wenn das Protokoll leer ist, gibt es keine Antwort.\n\nDokumentation schützt Herrn Bauer, das Team und die Einrichtung.",
         glossarBegriffe: ["§ 4 PflBG", "Haftung", "Dokumentation"],
       },
     },

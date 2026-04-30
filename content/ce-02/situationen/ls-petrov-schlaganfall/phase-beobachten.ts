@@ -8,7 +8,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
   phaseId: "ls-petrov-beobachten",
   phase: "beobachten",
   titel: "Beobachten & Risiken erkennen",
-  titelB1: "Schaün und Risiken finden",
+  titelB1: "Schauen und Risiken finden",
   kontext:
     "Du stehst am Bett von Herrn Petrov. Frühschicht, 07:25 Uhr. Du hast dich vorgestellt, er hat genickt. Jetzt beginnt das strukturierte Beobachten — bevor du irgendetwas tust. Du willst wissen: Wie ist sein Zustand heute Morgen?",
   kontextB1:
@@ -100,9 +100,9 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
         storyAufhaengerB1:
           "Du hast gesehen: Herrn Petrovs rechter Arm bewegt sich nicht. Dein erster Gedanke: Alles mit der linken Hand machen. Aber das ist falsch. Die rechte Seite gehört dazu — das sagt das Bobath-Konzept.",
         kerntext:
-          "**Berta und Karel Bobath** (1948/1990) entwickelten das Konzept für die Pflege und Therapie hemiparetischer Patienten.\n\n**3 Kernprinzipien:**\n\n• **Betroffene Seite einbeziehen** — nicht kompensieren, nicht übergehen. Die rechte Seite von Herrn Petrov bekommt Reize, Berührung, Positionierung.\n\n• **Bewegungsangebote machen, nicht übernehmen** — der Patient bewegt sich selbst, du begleitest und sicherst. Kein Heben unter den Achseln, kein Ziehen am Arm.\n\n• **Neuroplastizität nutzen** — das Gehirn kann neue Verbindungen bilden, besonders in den ersten 3 Monaten. Jede Bewegung der betroffenen Seite ist ein Training für das Gehirn.\n\n**Merkhilfe Kleidung:**\nAusziehen: Gesunde Seite zürst (damit die betroffene Seite geschützt bleibt).\nAnziehen: Betroffene Seite zürst (weil sie weniger flexibel ist).\n\n**Verboten:** Zug am betroffenen Arm (Subluxationsgefahr der Schulter), Griff unter die Achseln, einseitige Kompensation über die gesunde Seite.",
+          "**Berta und Karel Bobath** (1948/1990) entwickelten das Konzept für die Pflege und Therapie hemiparetischer Patienten.\n\n**3 Kernprinzipien:**\n\n• **Betroffene Seite einbeziehen** — nicht kompensieren, nicht übergehen. Die rechte Seite von Herrn Petrov bekommt Reize, Berührung, Positionierung.\n\n• **Bewegungsangebote machen, nicht übernehmen** — der Patient bewegt sich selbst, du begleitest und sicherst. Kein Heben unter den Achseln, kein Ziehen am Arm.\n\n• **Neuroplastizität nutzen** — das Gehirn kann neue Verbindungen bilden, besonders in den ersten 3 Monaten. Jede Bewegung der betroffenen Seite ist ein Training für das Gehirn.\n\n**Merkhilfe Kleidung:**\nAusziehen: Gesunde Seite zuerst (damit die betroffene Seite geschützt bleibt).\nAnziehen: Betroffene Seite zuerst (weil sie weniger flexibel ist).\n\n**Verboten:** Zug am betroffenen Arm (Subluxationsgefahr der Schulter), Griff unter die Achseln, einseitige Kompensation über die gesunde Seite.",
         kerntextB1:
-          "**Bobath** ist ein Konzept für Menschen mit halbseitiger Schwäche.\n\n**3 Regeln:**\n\n• **Die betroffene Seite einbeziehen** — nicht nur die gesunde Seite nutzen. Die rechte Seite bekommt Berührung und Bewegung.\n\n• **Bewegung anbieten, nicht übernehmen** — Herr Petrov bewegt sich selbst. Du begleitest. Nicht heben, nicht ziehen.\n\n• **Das Gehirn lernt neu** — besonders in den ersten 3 Monaten nach Schlaganfall. Jede Bewegung der betroffenen Seite hilft dem Gehirn.\n\n**Merkhilfe Kleidung:** Ausziehen: Gesunde Seite zürst. Anziehen: Betroffene Seite zürst.\n\n**Verboten:** Am betroffenen Arm ziehen, unter den Achseln heben.",
+          "**Bobath** ist ein Konzept für Menschen mit halbseitiger Schwäche.\n\n**3 Regeln:**\n\n• **Die betroffene Seite einbeziehen** — nicht nur die gesunde Seite nutzen. Die rechte Seite bekommt Berührung und Bewegung.\n\n• **Bewegung anbieten, nicht übernehmen** — Herr Petrov bewegt sich selbst. Du begleitest. Nicht heben, nicht ziehen.\n\n• **Das Gehirn lernt neu** — besonders in den ersten 3 Monaten nach Schlaganfall. Jede Bewegung der betroffenen Seite hilft dem Gehirn.\n\n**Merkhilfe Kleidung:** Ausziehen: Gesunde Seite zuerst. Anziehen: Betroffene Seite zuerst.\n\n**Verboten:** Am betroffenen Arm ziehen, unter den Achseln heben.",
         faustregel: "Bobath heißt: Die betroffene Seite ist nicht weg — sie braucht gezielte Angebote.",
         faustregelB1: "Bobath heißt: Die schwache Seite gehört dazu. Einbeziehen, nicht übergehen.",
         spektrum: [
@@ -121,18 +121,18 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
               "Bei Yilmaz: Bobath spielt keine Rolle (kein Schlaganfall). Aber das Prinzip \"Bewegungsangebot statt Übernahme\" gilt auch bei Post-OP-Erstmobilisation: Sie soll selbst aufstehen, nicht gezogen werden.",
           },
           {
-            patientName: "Herr Baür",
-            situationsId: "ls-baür-demenz-sturz",
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
             hauptfaktor: "Demenz, Basale Stimulation statt Bobath",
             kurzbeschreibung:
-              "Baür hat keine Hemiparese sondern Demenz. Sein Konzept ist Basale Stimulation (Fröhlich): beruhigende Waschung, rhythmisch, bekannte Reize. Anderer Ansatz, ähnliche Grundhaltung: Den Patienten einbeziehen.",
+              "Bauer hat keine Hemiparese sondern Demenz. Sein Konzept ist Basale Stimulation (Fröhlich): beruhigende Waschung, rhythmisch, bekannte Reize. Anderer Ansatz, ähnliche Grundhaltung: Den Patienten einbeziehen.",
           },
         ],
         karteikarte: {
           vorderseite:
             "Du wäschst Herrn Petrov. Sein rechter Arm ist komplett schlaff. Warum wäschst du trotzdem die rechte Seite aktiv mit?",
           rueckseite:
-            "Bobath-Konzept (1948/1990): Betroffene Seite einbeziehen, nicht kompensieren. Reize fördern Neuroplastizität — das Gehirn bildet in den ersten 3 Monaten am stärksten neue Verbindungen. Verboten: Zug am betroffenen Arm (Subluxationsgefahr). Spektrum: Frau M. (Kinästhetik, nicht Bobath), Yilmaz (Post-OP, selbst mobilisieren), Baür (Basale Stimulation bei Demenz). Faustregel: **Die betroffene Seite ist nicht weg — sie braucht gezielte Angebote.**",
+            "Bobath-Konzept (1948/1990): Betroffene Seite einbeziehen, nicht kompensieren. Reize fördern Neuroplastizität — das Gehirn bildet in den ersten 3 Monaten am stärksten neue Verbindungen. Verboten: Zug am betroffenen Arm (Subluxationsgefahr). Spektrum: Frau M. (Kinästhetik, nicht Bobath), Yilmaz (Post-OP, selbst mobilisieren), Bauer (Basale Stimulation bei Demenz). Faustregel: **Die betroffene Seite ist nicht weg — sie braucht gezielte Angebote.**",
         },
       },
     },
@@ -225,7 +225,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
             feedback:
               "Richtig vorgegangen. Akte → GUSS-Befund → Verordnung übernehmen → Beobachtung bei regulärer Nahrungsgabe. Wichtig: GUSS wird durch geschultes Personal (Schlucktherapie/geschulte Pflege) durchgeführt — er ist hier bereits gemacht (Grad 2 dokumentiert). Pflegerische Aufgabe ist Anreichen nach Verordnung + kontinuierliche Beobachtung der Schluckzeichen, kein erneuter eigenständiger Schluckversuch. Husten = aktive Schutzreaktion, feuchte Stimme nach dem Schlucken = stille Aspiration möglich, Verschlucken = offensichtliches Aspirationsereignis. (GUSS Trapl 2007; IDDSI 2019; DGG/DGN 2020)",
             feedbackB1:
-              "Richtig. Erst Akte lesen. Du machst keinen neün Schluck-Test — der ist schon gemacht. Du gibst die angedickte Flüssigkeit beim Frühstück nach Verordnung und schaust genau hin: Hustet er? Klingt die Stimme feucht? Das sind wichtige Zeichen.",
+              "Richtig. Erst Akte lesen. Du machst keinen neuen Schluck-Test — der ist schon gemacht. Du gibst die angedickte Flüssigkeit beim Frühstück nach Verordnung und schaust genau hin: Hustet er? Klingt die Stimme feucht? Das sind wichtige Zeichen.",
           },
           {
             text: "Ich frage den Arzt bevor ich irgendetwas tue — Schluckstatus ist Arztaufgabe.",
@@ -258,13 +258,13 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
       displayFormat: "stepbystep",
       contentC1: {
         title: "Atembeobachtung — 4 Schritte",
-        body: "Pneumonieprophylaxe beginnt mit pflegerischer Atembeobachtung. Auskultation mit dem Stethoskop ist ärztliche Aufgabe — Pflege beobachtet strukturiert und dokumentiert Auffälligkeiten.\n\n1) Atemfreqünz zählen: 15 Sek × 4 = Atemzüge/Min. Norm: 12-18/Min. Abweichung dokumentieren.\n2) Atemtiefe beobachten: flache vs. tiefe Atmung. Schlaganfall-Patienten atmen oft flach — Atelektasegefahr.\n3) Hörbare Atemgeräusche am Bett: Klingt die Atmung normal? Hörst du Rasseln, Giemen oder Brodeln ohne Stethoskop? Gibt es eine sichtbare Seitendifferenz der Atemexkursion?\n4) Husten und Sekret: Ist Husten möglich? Farbe des Sekrets (klar = normal, gelb/grün = Infektion möglich), Hautfarbe (Lippen, Akren).\n\nBefund Herr Petrov: Atemfreqünz 17/Min, hörbares Atemgeräusch unauffällig, leicht reduzierte Atemexkursion rechts, kein Auswurf, keine Zyanose. → Pneumonieprophylaxe weiterführen, bei Auffälligkeiten ärztliche Auskultation veranlassen. (KRINKO 2013; PflBG-Kompetenzen)",
+        body: "Pneumonieprophylaxe beginnt mit pflegerischer Atembeobachtung. Auskultation mit dem Stethoskop ist ärztliche Aufgabe — Pflege beobachtet strukturiert und dokumentiert Auffälligkeiten.\n\n1) Atemfrequenz zählen: 15 Sek × 4 = Atemzüge/Min. Norm: 12-18/Min. Abweichung dokumentieren.\n2) Atemtiefe beobachten: flache vs. tiefe Atmung. Schlaganfall-Patienten atmen oft flach — Atelektasegefahr.\n3) Hörbare Atemgeräusche am Bett: Klingt die Atmung normal? Hörst du Rasseln, Giemen oder Brodeln ohne Stethoskop? Gibt es eine sichtbare Seitendifferenz der Atemexkursion?\n4) Husten und Sekret: Ist Husten möglich? Farbe des Sekrets (klar = normal, gelb/grün = Infektion möglich), Hautfarbe (Lippen, Akren).\n\nBefund Herr Petrov: Atemfrequenz 17/Min, hörbares Atemgeräusch unauffällig, leicht reduzierte Atemexkursion rechts, kein Auswurf, keine Zyanose. → Pneumonieprophylaxe weiterführen, bei Auffälligkeiten ärztliche Auskultation veranlassen. (KRINKO 2013; PflBG-Kompetenzen)",
         glossarBegriffe: ["Atelektase", "Atemexkursion", "Pneumonie", "Sekret"],
       },
       contentB1: {
         title: "Die Atmung beobachten — 4 Schritte",
         body: "Du beobachtest die Atmung von Herrn Petrov. 4 Schritte:\nSchritt 1: Zähle die Atemzüge in 15 Sekunden. Dann × 4. Normal sind 12-18 pro Minute.\nSchritt 2: Atmet er tief oder flach?\nSchritt 3: Hörst du am Bett ein Rasseln oder Brodeln (ohne Stethoskop)? Bewegt sich der Brust-Korb gleichmäßig auf beiden Seiten?\nSchritt 4: Hustet er? Kommt Sekret (= Schleim) heraus? Welche Farbe haben Lippen und Haut?\nWichtig: Mit dem Stethoskop hört der Arzt die Lunge ab (= Auskultation). Das ist nicht deine Aufgabe als Pflege-Schülerin.\nBefund bei Herrn Petrov: 17 Atemzüge pro Minute. Atmung gleichmäßig, kein Rasseln hörbar, kein Husten.\nDeshalb machst du weiter mit der Pneumonie-Prophylaxe (= Lungenentzündung verhindern).",
-        glossarBegriffe: ["Pneumonie", "Atemfreqünz", "Atemexkursion"],
+        glossarBegriffe: ["Pneumonie", "Atemfrequenz", "Atemexkursion"],
       },
     },
 
@@ -308,13 +308,13 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
             "Du kennst den Katheter aus Phase 1. Jetzt lernst du die 5 Hygiene-Regeln. CAUTI ist die häufigste Krankenhaus-Infektion — aber du kannst sie verhindern.",
         },
         storyAufhaenger:
-          "Du schaust zum Bettrand. Der Katheterbeutel hängt am Bettgestell. Oder liegt er auf der Matratze? Genau hinschaün — denn jeder Fehler in der Katheter-Hygiene kann zu einer Harnwegsinfektion führen. Bei Herrn Petrov ist der BVK Tag 5 — das Zeitfenster wird enger.",
+          "Du schaust zum Bettrand. Der Katheterbeutel hängt am Bettgestell. Oder liegt er auf der Matratze? Genau hinschauen — denn jeder Fehler in der Katheter-Hygiene kann zu einer Harnwegsinfektion führen. Bei Herrn Petrov ist der BVK Tag 5 — das Zeitfenster wird enger.",
         storyAufhaengerB1:
           "Du schaust zum Bett. Wo hängt der Katheter-Beutel? Liegt er auf der Matratze? Das wäre ein Fehler. Jeder Fehler bei der Katheter-Hygiene kann eine Infektion machen.",
         kerntext:
           "Die **KRINKO 2015** nennt 5 Kernregeln zur CAUTI-Prävention:\n\n• **Geschlossenes System** — Nie das Ableitungssystem unnötig öffnen oder diskonnektieren. Jede Diskonnektion = Eintrittspforte für Keime.\n\n• **Beutel unterhalb Blasenniveau** — Nie auf der Matratze oder dem Boden. Rückfluss = Keimaszension. Immer hängen lassen, nie knicken.\n\n• **Eintrittsstelle täglich inspizieren** — Rötung, Sekret, Schwellung? Alles dokumentieren. Reinigung mit Wasser und Seife reicht — kein Desinfektionsmittel an der Eintrittsstelle (KRINKO 2015).\n\n• **Händedesinfektion vor und nach jedem Kontakt** — auch beim Ablesen des Beutels.\n\n• **Tägliche Indikationsprüfung** — Braucht er den Katheter noch? Diese Frage ist wichtiger als alle Hygieneregeln zusammen.\n\nCAUTI-Rate in Deutschland: ca. 3,3 Fälle pro 1.000 Katheter-Tage (KISS 2023). Je kürzer der Katheter liegt, desto niedriger das Risiko.",
         kerntextB1:
-          "**5 Regeln für den Katheter** (KRINKO 2015):\n\n• **System geschlossen lassen** — den Schlauch nicht öffnen. Jede Öffnung bringt Keime.\n\n• **Beutel immer hängen lassen** — nie auf der Matratze, nie auf dem Boden. Sonst fließt Urin zurück.\n\n• **Eintrittsstelle jeden Tag anschaün** — Rötung? Schleim? Schwellung? Alles aufschreiben.\n\n• **Hände desinfizieren** — vor und nach jedem Kontakt mit dem Katheter.\n\n• **Jeden Tag fragen: Braucht er den Katheter noch?** — Das ist die wichtigste Regel.",
+          "**5 Regeln für den Katheter** (KRINKO 2015):\n\n• **System geschlossen lassen** — den Schlauch nicht öffnen. Jede Öffnung bringt Keime.\n\n• **Beutel immer hängen lassen** — nie auf der Matratze, nie auf dem Boden. Sonst fließt Urin zurück.\n\n• **Eintrittsstelle jeden Tag anschauen** — Rötung? Schleim? Schwellung? Alles aufschreiben.\n\n• **Hände desinfizieren** — vor und nach jedem Kontakt mit dem Katheter.\n\n• **Jeden Tag fragen: Braucht er den Katheter noch?** — Das ist die wichtigste Regel.",
         faustregel: "CAUTI verhindern = 5 Regeln + 1 Frage: Braucht er den Katheter heute noch?",
         faustregelB1: "Katheter-Hygiene = 5 Regeln. Die wichtigste: Braucht er ihn noch?",
         spektrum: [
@@ -326,11 +326,11 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
               "Yilmaz bekommt den Katheter nach 24-48 h entfernt — Infektionsrisiko bleibt minimal, wenn die Hygieneregeln in dieser kurzen Zeit eingehalten werden.",
           },
           {
-            patientName: "Herr Baür",
-            situationsId: "ls-baür-demenz-sturz",
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
             hauptfaktor: "Demenz, manipuliert am Katheter",
             kurzbeschreibung:
-              "Baür versteht nicht warum der Schlauch da ist und zieht daran. Das bricht die Keimbarriere und verletzt die Harnröhre — Fixierung mit Klebeband am Oberschenkel + Ablenkung statt Freiheitsentzug.",
+              "Bauer versteht nicht warum der Schlauch da ist und zieht daran. Das bricht die Keimbarriere und verletzt die Harnröhre — Fixierung mit Klebeband am Oberschenkel + Ablenkung statt Freiheitsentzug.",
           },
           {
             patientName: "Frau Schmidt",
@@ -543,9 +543,9 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
         storyAufhaengerB1:
           "Herrn Petrovs rechter Arm bewegt sich nicht. Was passiert mit einem Gelenk, das tagelang still liegt? Es wird steif. Das heißt Kontraktur.",
         kerntext:
-          "**Kontraktur** = daürhafte Verkürzung von Muskeln, Sehnen oder Bändern. Das Gelenk lässt sich nicht mehr vollständig bewegen.\n\n**Warum bei Herrn Petrov?**\n\n• Rechter Arm ist schlaff (keine Eigenaktivität) — Schulter, Ellenbogen, Handgelenk, Finger sind kontrakturgefährdet.\n\n• Rechter Fuß hängt nach unten (Fallfuß/Spitzfuß-Risiko) — ohne Korrektur versteift die Achillessehne in Plantarflexion.\n\n**Zeitrahmen:** Schon nach **48-72 Stunden** ohne Bewegung beginnen Umbauprozesse im Bindegewebe. Nach 2-3 Wochen sind sie schwer reversibel (Ada et al. 2006).\n\n**Pflege-Maßnahmen nach Bobath:**\n\n• Passive Durchbewegung der betroffenen Gelenke, mindestens 2x täglich, langsam, schmerzfrei\n\n• Lagerungshilfen: Schulter nach vorne, Arm auf Kissen gestützt (nicht hängen lassen)\n\n• Fuß neutral positionieren: Anti-Spitzfuß-Schiene oder Kissen gegen die Fußsohle\n\n• Spastik-Warnung: Ab Woche 2-3 kann sich der schlaffe Tonus in Spastik verwandeln — dann ändern sich die Maßnahmen (Dehnlagerung statt Durchbewegung).",
+          "**Kontraktur** = dauerhafte Verkürzung von Muskeln, Sehnen oder Bändern. Das Gelenk lässt sich nicht mehr vollständig bewegen.\n\n**Warum bei Herrn Petrov?**\n\n• Rechter Arm ist schlaff (keine Eigenaktivität) — Schulter, Ellenbogen, Handgelenk, Finger sind kontrakturgefährdet.\n\n• Rechter Fuß hängt nach unten (Fallfuß/Spitzfuß-Risiko) — ohne Korrektur versteift die Achillessehne in Plantarflexion.\n\n**Zeitrahmen:** Schon nach **48-72 Stunden** ohne Bewegung beginnen Umbauprozesse im Bindegewebe. Nach 2-3 Wochen sind sie schwer reversibel (Ada et al. 2006).\n\n**Pflege-Maßnahmen nach Bobath:**\n\n• Passive Durchbewegung der betroffenen Gelenke, mindestens 2x täglich, langsam, schmerzfrei\n\n• Lagerungshilfen: Schulter nach vorne, Arm auf Kissen gestützt (nicht hängen lassen)\n\n• Fuß neutral positionieren: Anti-Spitzfuß-Schiene oder Kissen gegen die Fußsohle\n\n• Spastik-Warnung: Ab Woche 2-3 kann sich der schlaffe Tonus in Spastik verwandeln — dann ändern sich die Maßnahmen (Dehnlagerung statt Durchbewegung).",
         kerntextB1:
-          "**Kontraktur** = ein Gelenk wird daürhaft steif. Die Muskeln und Sehnen verkürzen sich.\n\n**Warum bei Herrn Petrov?** Sein rechter Arm und sein rechter Fuß bewegen sich nicht. Nach **2-3 Tagen** ohne Bewegung werden die Gelenke steifer.\n\n**Was tust du?**\n\n• Jeden Tag die Gelenke des rechten Arms langsam durchbewegen — schmerzfrei.\n\n• Den Arm auf ein Kissen legen — nicht hängen lassen.\n\n• Den rechten Fuß gerade stellen — mit einem Kissen gegen die Fußsohle.\n\n**Wichtig:** In 2-3 Wochen kann die Schwäche in Steifheit (= Spastik) übergehen. Dann ändern sich die Übungen.",
+          "**Kontraktur** = ein Gelenk wird dauerhaft steif. Die Muskeln und Sehnen verkürzen sich.\n\n**Warum bei Herrn Petrov?** Sein rechter Arm und sein rechter Fuß bewegen sich nicht. Nach **2-3 Tagen** ohne Bewegung werden die Gelenke steifer.\n\n**Was tust du?**\n\n• Jeden Tag die Gelenke des rechten Arms langsam durchbewegen — schmerzfrei.\n\n• Den Arm auf ein Kissen legen — nicht hängen lassen.\n\n• Den rechten Fuß gerade stellen — mit einem Kissen gegen die Fußsohle.\n\n**Wichtig:** In 2-3 Wochen kann die Schwäche in Steifheit (= Spastik) übergehen. Dann ändern sich die Übungen.",
         faustregel: "48 Stunden ohne Bewegung — die Uhr für Kontrakturen tickt. Prophylaxe beginnt am Tag der Aufnahme.",
         faustregelB1: "Schon nach 2 Tagen ohne Bewegung werden Gelenke steif. Deshalb: Jeden Tag bewegen.",
         spektrum: [
@@ -557,11 +557,11 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
               "Yilmaz bewegt die operierte Hüfte aus Angst nicht genug. Kontrakturrisiko trotz grundsätzlicher Mobilität — hier ist die Angst der Risikofaktor, nicht die Lähmung.",
           },
           {
-            patientName: "Herr Baür",
-            situationsId: "ls-baür-demenz-sturz",
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
             hauptfaktor: "Demenz, Bettlägerigkeit",
             kurzbeschreibung:
-              "Baür liegt viel im Bett (Demenz, Unruhe nachts → Erschöpfung tagsüber). Kontrakturrisiko in Hüfte und Knie — passive Durchbewegung schwierig, weil er die Übungen nicht versteht.",
+              "Bauer liegt viel im Bett (Demenz, Unruhe nachts → Erschöpfung tagsüber). Kontrakturrisiko in Hüfte und Knie — passive Durchbewegung schwierig, weil er die Übungen nicht versteht.",
           },
           {
             patientName: "Frau Kovac",
@@ -575,7 +575,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
           vorderseite:
             "Herrn Petrovs rechter Fuß hängt seit 5 Tagen nach unten (Plantarflexion). Was droht ohne Intervention — und wie verhinderst du es?",
           rueckseite:
-            "Spitzfuß-Kontraktur: Die Achillessehne verkürzt sich daürhaft bei Plantarflexion > 48-72 h. Prophylaxe: Fuß neutral positionieren (Anti-Spitzfuß-Schiene oder Kissen), passive Dorsalflexion 2x täglich, Lagerung nach Bobath. Spektrum: Yilmaz (Bewegungsangst post-OP), Baür (Bettlägerigkeit bei Demenz), Kovac (Thorax-Kontraktur bei COPD). Faustregel: **48 Stunden ohne Bewegung — die Uhr für Kontrakturen tickt.**",
+            "Spitzfuß-Kontraktur: Die Achillessehne verkürzt sich dauerhaft bei Plantarflexion > 48-72 h. Prophylaxe: Fuß neutral positionieren (Anti-Spitzfuß-Schiene oder Kissen), passive Dorsalflexion 2x täglich, Lagerung nach Bobath. Spektrum: Yilmaz (Bewegungsangst post-OP), Bauer (Bettlägerigkeit bei Demenz), Kovac (Thorax-Kontraktur bei COPD). Faustregel: **48 Stunden ohne Bewegung — die Uhr für Kontrakturen tickt.**",
         },
       },
     },

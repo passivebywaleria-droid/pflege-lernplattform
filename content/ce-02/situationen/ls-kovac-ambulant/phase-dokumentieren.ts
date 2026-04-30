@@ -195,8 +195,8 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
         "§ 630f BGB",
         "§ 1901a BGB",
         "DSGVO 2018 Art. 4 + Art. 9",
-        "DNQP Kontinenzförderung 2014",
         "GOLD-Report COPD 2023",
+        "ESC Heart Failure Guidelines 2023",
       ],
       track: "basis",
       modus: "schreibtisch",
@@ -247,7 +247,6 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
       kompetenzbereich: "I.1",
       quellen: [
         "GOLD-Report COPD 2023",
-        "DNQP Kontinenzförderung 2014",
         "§ 630f BGB",
         "§ 1901a BGB",
         "DSGVO 2018",
@@ -272,7 +271,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
           reflexionRueckbezug:
             "Du hast heute einen vollständigen ambulanten Pflegetag bei Frau Marija Kovač begleitet — von der Übergabe um 07:30 Uhr bis zum Besuchsbericht nach dem Abendbesuch. Frau Kovač hat die Übungen zweimal allein wiederholt. Das Schlafgespräch ist eröffnet. Die Kompressionsstrümpfe liegen noch. Evaluation heißt nicht: alles gelöst. Es heißt: du weißt was noch fehlt.",
           kernaussagen: [
-            "Atembeobachtung bei COPD III: 7 systematische Punkte — Atemfreqünz, Lippenbremse, Atemhilfsmuskulatur, Atemgeräusche, Sputum-Farbe, Körperhaltung, SpO2 (88–92 % nur als Zielkorridor unter Saürstofftherapie bei Exazerbation; im stabilen Zustand sind >92 % normal)",
+            "Atembeobachtung bei COPD III: 7 systematische Punkte — Atemfrequenz, Lippenbremse, Atemhilfsmuskulatur, Atemgeräusche, Sputum-Farbe, Körperhaltung, SpO2 (88–92 % nur als Zielkorridor unter Sauerstofftherapie bei Exazerbation; im stabilen Zustand sind >92 % normal)",
             "Patientenautonomie und Aufklärungspflicht: Aufklärung ist Pflicht — Erzwingen ist verboten — Dokumentieren ist notwendig (§ 630d BGB, § 1901a BGB, § 630f BGB)",
             "Verweigerungs-Dokumentation: 3 Pflicht-Elemente — Was erklärt? Wie aufgeklärt? Was hat die Patientin gesagt?",
             "Datenschutz in der ambulanten Pflege: Keine Weitergabe von Gesundheitsdaten ohne schriftliche Schweigepflichtsentbindung — auch nicht an Angehörige (DSGVO Art. 9, § 203 StGB)",
@@ -411,7 +410,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
       },
       question: {
         fragetext:
-          "Was wäre die professionelle Konseqünz, wenn du die Verweigerung der Kompressionsstrümpfe nicht dokumentierst — und drei Tage später entwickelt Frau Kovač eine tiefe Beinvenenthrombose?",
+          "Was wäre die professionelle Konsequnz, wenn du die Verweigerung der Kompressionsstrümpfe nicht dokumentierst — und drei Tage später entwickelt Frau Kovač eine tiefe Beinvenenthrombose?",
         musterantwort:
           "Ohne Dokumentation fehlt der Nachweis, dass Aufklärung stattgefunden hat. Der Pflegedienst kann haftbar werden wegen Dokumentationspflichtverletzung (§ 630f BGB) und ggf. wegen unterlassener Aufklärung (§ 630d BGB). Frau Kovačs Entscheidungsrecht bleibt zwar bestehen — aber die Pflegekraft kann nicht beweisen, dass sie ihrer Aufklärungspflicht nachgekommen ist. Bei Gericht gilt: Was nicht dokumentiert ist, hat nicht stattgefunden.",
         bewertungskriterien: [

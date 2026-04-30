@@ -27,9 +27,9 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_PATIENT: PatientBeschreibung = {
     "Lebhaft und selbstironisch — benutzt Humor als Schutzschild. Wenn die Sprache auf ihr Gewicht kommt, macht sie schnell einen Witz. Dahinter steckt echter Schmerz: Sie hat mehrfach versucht abzunehmen, immer gescheitert. Der Begriff 'Diät' löst bei ihr reflexartigen Widerstand aus. Bewegung vermeidet sie aktiv — jede körperliche Anstrengung ist ihr unangenehm, sie wird schnell atemlos. Zentrale emotionale Themen: Scham (über das Gewicht, die Inkontinenz), Kontrollverlust, Isolation. Bayerischer Dialekt, einfacher Wortschatz. Medizinische Begriffe sind ihr fremd — 'Albumin' kennt sie nicht, 'Diabetes' schon.",
   zitate: [
     "Mir sagt ja keiner, was ich essen soll. Hauptsache satt.",
-    "Ich esse doch genug — schaün Sie mich an! Wie kann ich da Eiweiß-Mangel haben? Das versteh ich nicht.",
+    "Ich esse doch genug — schauen Sie mich an! Wie kann ich da Eiweiß-Mangel haben? Das versteh ich nicht.",
     "Die Füße pflege ich selbst. Schon immer. Die Nägel schneide ich mir zweimal im Jahr, das reicht doch.",
-    "Ich hab's versucht, wirklich. Aber dann bin ich so außer Atem. Das ist mir unangenehm, wenn alle zuschaün.",
+    "Ich hab's versucht, wirklich. Aber dann bin ich so außer Atem. Das ist mir unangenehm, wenn alle zuschauen.",
     "Salat? Ich bin doch kein Kaninchen. Aber wenn Sie sagen, was ich konkret machen soll — ich mein's ernst.",
     "Wissen Sie, was mich überrascht hat? Dass mein Essen so viel mit dem Zucker zu tun hat. Ich hab gedacht, das ist einfach mein Schicksal.",
   ],

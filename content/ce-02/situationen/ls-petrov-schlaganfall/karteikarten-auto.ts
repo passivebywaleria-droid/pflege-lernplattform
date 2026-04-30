@@ -16,7 +16,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "mobilisation-bobath-konzept",
     themaPrimaer: "mobilisation",
     vorderseite: "Du wäschst Herrn Petrov. Sein rechter Arm ist komplett schlaff. Warum wäschst du trotzdem die rechte Seite aktiv mit?",
-    rueckseite: "Bobath-Konzept (1948/1990): Betroffene Seite einbeziehen, nicht kompensieren. Reize fördern Neuroplastizität — das Gehirn bildet in den ersten 3 Monaten am stärksten neue Verbindungen. Verboten: Zug am betroffenen Arm (Subluxationsgefahr). Spektrum: Frau M. (Kinästhetik, nicht Bobath), Yilmaz (Post-OP, selbst mobilisieren), Baür (Basale Stimulation bei Demenz). Faustregel: **Die betroffene Seite ist nicht weg — sie braucht gezielte Angebote.**",
+    rueckseite: "Bobath-Konzept (1948/1990): Betroffene Seite einbeziehen, nicht kompensieren. Reize fördern Neuroplastizität — das Gehirn bildet in den ersten 3 Monaten am stärksten neue Verbindungen. Verboten: Zug am betroffenen Arm (Subluxationsgefahr). Spektrum: Frau M. (Kinästhetik, nicht Bobath), Yilmaz (Post-OP, selbst mobilisieren), Bauer (Basale Stimulation bei Demenz). Faustregel: **Die betroffene Seite ist nicht weg — sie braucht gezielte Angebote.**",
     situationsId: "ls-petrov-schlaganfall",
   },
   {
@@ -32,7 +32,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "kontraktur-prophylaxe-grundlagen",
     themaPrimaer: "kontraktur-prophylaxe",
     vorderseite: "Herrn Petrovs rechter Fuß hängt seit 5 Tagen nach unten (Plantarflexion). Was droht ohne Intervention — und wie verhinderst du es?",
-    rueckseite: "Spitzfuß-Kontraktur: Die Achillessehne verkürzt sich daürhaft bei Plantarflexion > 48-72 h. Prophylaxe: Fuß neutral positionieren (Anti-Spitzfuß-Schiene oder Kissen), passive Dorsalflexion 2x täglich, Lagerung nach Bobath. Spektrum: Yilmaz (Bewegungsangst post-OP), Baür (Bettlägerigkeit bei Demenz), Kovac (Thorax-Kontraktur bei COPD). Faustregel: **48 Stunden ohne Bewegung — die Uhr für Kontrakturen tickt.**",
+    rueckseite: "Spitzfuß-Kontraktur: Die Achillessehne verkürzt sich dauerhaft bei Plantarflexion > 48-72 h. Prophylaxe: Fuß neutral positionieren (Anti-Spitzfuß-Schiene oder Kissen), passive Dorsalflexion 2x täglich, Lagerung nach Bobath. Spektrum: Yilmaz (Bewegungsangst post-OP), Bauer (Bettlägerigkeit bei Demenz), Kovac (Thorax-Kontraktur bei COPD). Faustregel: **48 Stunden ohne Bewegung — die Uhr für Kontrakturen tickt.**",
     situationsId: "ls-petrov-schlaganfall",
   },
   {
@@ -40,7 +40,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "mundpflege-bei-aspirationsrisiko",
     themaPrimaer: "mundpflege",
     vorderseite: "Du machst Mundpflege bei Herrn Petrov vor dem Frühstück. Warum streichst du gezielt die rechte Wangentasche aus?",
-    rueckseite: "Hemiparese rechts = fehlende Sensibilität und Motorik der rechten Wange. Speisereste sammeln sich dort unbemerkt (kein Feedback). Keime aus dem Mund gelangen bei Aspiration in die Lunge. Sjögren 2008: regelmäßige Mundpflege senkt Aspirationspneumonie-Rate um 40 %. Spektrum: Baür (wehrt sich, Basale Stimulation), Emilia (orale Stimulation beim Säugling), Kovac (Soor-Risiko durch Cortison). Faustregel: **Rechte Wangentasche bei Hemiparese immer kontrollieren.**",
+    rueckseite: "Hemiparese rechts = fehlende Sensibilität und Motorik der rechten Wange. Speisereste sammeln sich dort unbemerkt (kein Feedback). Keime aus dem Mund gelangen bei Aspiration in die Lunge. Sjögren 2008: regelmäßige Mundpflege senkt Aspirationspneumonie-Rate um 40 %. Spektrum: Bauer (wehrt sich, Basale Stimulation), Emilia (orale Stimulation beim Säugling), Kovac (Soor-Risiko durch Cortison). Faustregel: **Rechte Wangentasche bei Hemiparese immer kontrollieren.**",
     situationsId: "ls-petrov-schlaganfall",
   },
   {
@@ -56,7 +56,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "harnausscheidung-katheter-indikation",
     themaPrimaer: "harnausscheidung",
     vorderseite: "Herr Petrov hat 13 Minuten an der Bettkante gesessen, Urin ist unauffällig, Tag 5. Wie kommunizierst du die Katheter-Frage?",
-    rueckseite: "Proaktive Kommunikation: An Praxisanleiterin melden, gemeinsam Arzt informieren: \"Tag 5, Mobilisation begonnen, Urin unauffällig — Indikation BVK prüfen.\" Arzt ordnet an, Pflege entfernt + startet Toilettentraining. Restharnkontrolle per Ultraschall nach 6-8 h. Spektrum: Yilmaz (Standard-Entfernung 1.-2. POT), Baür (ethisches Problem, Kondomurinal prüfen), Kovac (ISK ambulant). Faustregel: **Pflege erkennt zürst wann der Katheter gehen kann.**",
+    rueckseite: "Proaktive Kommunikation: An Praxisanleiterin melden, gemeinsam Arzt informieren: \"Tag 5, Mobilisation begonnen, Urin unauffällig — Indikation BVK prüfen.\" Arzt ordnet an, Pflege entfernt + startet Toilettentraining. Restharnkontrolle per Ultraschall nach 6-8 h. Spektrum: Yilmaz (Standard-Entfernung 1.-2. POT), Bauer (ethisches Problem, Kondomurinal prüfen), Kovac (ISK ambulant). Faustregel: **Pflege erkennt zuerst wann der Katheter gehen kann.**",
     situationsId: "ls-petrov-schlaganfall",
   },
   {
@@ -64,7 +64,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "harnausscheidung-bvk-grundlagen",
     themaPrimaer: "harnausscheidung",
     vorderseite: "Herr Petrovs BVK liegt seit 5 Tagen. Der Arzt hat Re-Evaluation für Tag 14 angeordnet. Ist das ausreichend?",
-    rueckseite: "Nein. KRINKO 2015 fordert tägliche Indikationsprüfung, nicht festes 14-Tage-Intervall. Infektionsrate steigt mit jedem Tag: Tag 5-7 ca. 10-15 %. Pflege-Pflicht: aktiv beim Arzt nachfragen ob der BVK noch nötig ist. Spektrum: Yilmaz (24-48 h post-OP), Baür (Demenz, zieht am Katheter), Kovac (ISK ambulant), Schmidt (Adipositas-Hygiene). Faustregel: **Jeder Tag mit Katheter ist ein Tag zu viel.**",
+    rueckseite: "Nein. KRINKO 2015 fordert tägliche Indikationsprüfung, nicht festes 14-Tage-Intervall. Infektionsrate steigt mit jedem Tag: Tag 5-7 ca. 10-15 %. Pflege-Pflicht: aktiv beim Arzt nachfragen ob der BVK noch nötig ist. Spektrum: Yilmaz (24-48 h post-OP), Bauer (Demenz, zieht am Katheter), Kovac (ISK ambulant), Schmidt (Adipositas-Hygiene). Faustregel: **Jeder Tag mit Katheter ist ein Tag zu viel.**",
     situationsId: "ls-petrov-schlaganfall",
   },
   {
@@ -80,7 +80,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "essen-anreichen-bei-dysphagie",
     themaPrimaer: "essen-anreichen",
     vorderseite: "Du reichst Herrn Petrov das Frühstück an. Warum bietest du den Löffel von links an — nicht von rechts?",
-    rueckseite: "Links ist die gesunde Seite. Der Schluckreiz wird über die gesunde Seite stimuliert. Die rechte Wange hat bei Hemiparese weniger Sensibilität — Speisereste sammeln sich dort unbemerkt. 5 Prinzipien: 90° aufrecht, IDDSI Level 2, von links, max. 5 ml/Löffel, Ruhe. Spektrum: Baür (Apraxie bei Demenz, vergisst zu kaün), Emilia (Trinkschwäche Säugling), Schmidt (Ernährungsberatung bei Adipositas). Faustregel: **Jeder Löffel ist eine Pflegeentscheidung.**",
+    rueckseite: "Links ist die gesunde Seite. Der Schluckreiz wird über die gesunde Seite stimuliert. Die rechte Wange hat bei Hemiparese weniger Sensibilität — Speisereste sammeln sich dort unbemerkt. 5 Prinzipien: 90° aufrecht, IDDSI Level 2, von links, max. 5 ml/Löffel, Ruhe. Spektrum: Bauer (Apraxie bei Demenz, vergisst zu kaün), Emilia (Trinkschwäche Säugling), Schmidt (Ernährungsberatung bei Adipositas). Faustregel: **Jeder Löffel ist eine Pflegeentscheidung.**",
     situationsId: "ls-petrov-schlaganfall",
   },
   {

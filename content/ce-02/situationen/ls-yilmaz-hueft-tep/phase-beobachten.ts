@@ -10,9 +10,9 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_BEOBACHTEN: SituationsPhase = {
   titel: "Beobachten & Einschätzen",
   titelB1: "Was siehst du bei Frau Yilmaz?",
   kontext:
-    "Du sitzt jetzt neben Frau Yilmaz. Sie liegt im Bett, das Kopfteil auf 30° erhöht. Ehemann Mustafa beobachtet dich. Frau Yilmaz hat gerade gesagt: 'Können wir das nicht morgen machen?' — du hast ihr erklärt, dass ihr zürst gemeinsam schaut, wie es ihr geht, und dann entscheidet was heute möglich ist. Das hat sie ein bisschen beruhigt. Jetzt beginnt das pflegerische Assessment. Du hast mehrere Dinge gleichzeitig im Blick: Wie stark sind die Schmerzen wirklich? Wie sieht die Haut aus — besonders an den Druckstellen? Gibt es Zeichen, die auf eine Thrombose hindeuten könnten? Wie ist die Wundsituation (Redon-Drainage)? Welche Risikofaktoren sind bei ihr besonders relevant?",
+    "Du sitzt jetzt neben Frau Yilmaz. Sie liegt im Bett, das Kopfteil auf 30° erhöht. Ehemann Mustafa beobachtet dich. Frau Yilmaz hat gerade gesagt: 'Können wir das nicht morgen machen?' — du hast ihr erklärt, dass ihr zuerst gemeinsam schaut, wie es ihr geht, und dann entscheidet was heute möglich ist. Das hat sie ein bisschen beruhigt. Jetzt beginnt das pflegerische Assessment. Du hast mehrere Dinge gleichzeitig im Blick: Wie stark sind die Schmerzen wirklich? Wie sieht die Haut aus — besonders an den Druckstellen? Gibt es Zeichen, die auf eine Thrombose hindeuten könnten? Wie ist die Wundsituation (Redon-Drainage)? Welche Risikofaktoren sind bei ihr besonders relevant?",
   kontextB1:
-    "Du sitzt neben Frau Yilmaz. Sie liegt im Bett. Das Kopfteil ist auf 30° hochgestellt. Mustafa schaut zu. Frau Yilmaz ist ein bisschen ruhiger. Jetzt schaust du genaür hin. Du willst wissen: Wie stark sind die Schmerzen? Wie ist die Haut? Gibt es Anzeichen für eine Thrombose? Wie sieht die Wunde aus?",
+    "Du sitzt neben Frau Yilmaz. Sie liegt im Bett. Das Kopfteil ist auf 30° hochgestellt. Mustafa schaut zu. Frau Yilmaz ist ein bisschen ruhiger. Jetzt schaust du genauer hin. Du willst wissen: Wie stark sind die Schmerzen? Wie ist die Haut? Gibt es Anzeichen für eine Thrombose? Wie sieht die Wunde aus?",
   kernSteps: [
     // Step 2.1 — Brilliant-Frage: Hotspot Hautbefund
     {
@@ -171,7 +171,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_BEOBACHTEN: SituationsPhase = {
             text: "Druckentlastung durch sofortige Umlagerung und Lagerungshilfsmittel",
             isCorrect: true,
             explanation:
-              "Genau. Dekubitus Kategorie I bedeutet: kein offenes Gewebe, aber das Gewebe leidet. Die einzige wirksame Maßnahme ist sofortige und daürhafte Druckentlastung. Alles andere — Salben, Auflagen — ist bei Kategorie I nicht indiziert und kann sogar schaden (NPUAP/EPUAP 2019). Dokumentieren und Pflegeplan anpassen — das kommt als nächstes.",
+              "Genau. Dekubitus Kategorie I bedeutet: kein offenes Gewebe, aber das Gewebe leidet. Die einzige wirksame Maßnahme ist sofortige und dauerhafte Druckentlastung. Alles andere — Salben, Auflagen — ist bei Kategorie I nicht indiziert und kann sogar schaden (NPUAP/EPUAP 2019). Dokumentieren und Pflegeplan anpassen — das kommt als nächstes.",
             explanationB1:
               "Genau richtig. Druckentlastung ist das Wichtigste. Umlagern. Lagerungshilfen nutzen. Der Druck muss weg — sofort. Das ist die einzige wirksame Maßnahme bei Kategorie 1.",
           },
@@ -420,7 +420,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_BEOBACHTEN: SituationsPhase = {
         kerntext:
           "**Doppler-Sonografie** (auch Kompressionssonografie, Duplex-Sonografie) ist die Standarduntersuchung bei Verdacht auf tiefe Beinvenenthrombose (TVT).\n\n• **Prinzip:** Ultraschall zeigt die Venen in Echtzeit. Der Arzt drückt die Ultraschallsonde auf die Vene — eine gesunde Vene lässt sich zusammendrücken, eine thrombosierte nicht (Inkompressibilität = Hauptkriterium).\n\n• **Doppler-Effekt:** Zusätzlich misst das Gerät den Blutfluss. Farblich kodiert: Rot = Fluss zum Herzen, Blau = weg. Kein Fluss oder verlangsamter Fluss = Verdacht auf Gerinnsel.\n\n• **Warum nicht nur klinisch untersuchen?** Klinische Zeichen (Schwellung, Wärme, Rötung) sind unspezifisch — ca. 50 % der TVTs zeigen KEINE äußeren Zeichen (DGG 2022). Die Sonografie hat eine Sensitivität von > 95 % für proximale TVTs.\n\n• **Deine Rolle als Pflegekraft:** Du stellst keine Diagnose und führst keine Sonografie durch. Aber du beobachtest, meldest den Verdacht und dokumentierst deine Befunde (Seitenvergleich, Umfang, Temperatur, Schmerz) — das gibt dem Arzt die Grundlage für die Anordnung.",
         kerntextB1:
-          "**Doppler-Sonografie** ist ein Ultraschall für die Blutgefäße.\n\n• Der Arzt drückt eine Sonde auf das Bein. Er kann sehen, ob ein Blutgerinnsel in der Vene steckt.\n• **Haupttest:** Drückt der Arzt auf die Vene und sie lässt sich nicht zusammendrücken → wahrscheinlich ein Gerinnsel.\n• Der Ultraschall zeigt auch, ob das Blut fließt oder nicht. Kein Fluss = Warnsignal.\n\n**Warum reicht Anschaün nicht?** Die Hälfte aller Blutgerinnsel zeigt von außen KEINE Zeichen. Deshalb braucht man den Ultraschall.\n\n**Deine Aufgabe:** Du schaust, meldest und schreibst auf. Der Arzt macht den Ultraschall.",
+          "**Doppler-Sonografie** ist ein Ultraschall für die Blutgefäße.\n\n• Der Arzt drückt eine Sonde auf das Bein. Er kann sehen, ob ein Blutgerinnsel in der Vene steckt.\n• **Haupttest:** Drückt der Arzt auf die Vene und sie lässt sich nicht zusammendrücken → wahrscheinlich ein Gerinnsel.\n• Der Ultraschall zeigt auch, ob das Blut fließt oder nicht. Kein Fluss = Warnsignal.\n\n**Warum reicht Anschauen nicht?** Die Hälfte aller Blutgerinnsel zeigt von außen KEINE Zeichen. Deshalb braucht man den Ultraschall.\n\n**Deine Aufgabe:** Du schaust, meldest und schreibst auf. Der Arzt macht den Ultraschall.",
         faustregel:
           "**Verdacht melden, nicht diagnostizieren.** Doppler-Sonografie ist die Antwort — deine Aufgabe ist die Frage zu stellen.",
         faustregelB1:
@@ -614,7 +614,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_BEOBACHTEN: SituationsPhase = {
       tag: "krankheitslehre",
       themaPrimaer: "wundbeobachtung",
       themenSekundaer: ["dokumentation"],
-      transition: "Du kannst Wundsekret jetzt benennen. Schau dir die Redon-Drainage genaür an.",
+      transition: "Du kannst Wundsekret jetzt benennen. Schau dir die Redon-Drainage genauer an.",
       contentC1: {
         title: "Wundsekret: serös, blutig, serös-blutig — was bedeutet das?",
         body: "",

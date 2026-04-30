@@ -77,8 +77,8 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
               "Im ambulanten Setting wechseln Angehörige oder ambulanter Pflegedienst den Verband. Hydrokolloid ist einfach handhabbar — kein steriles Instrumentarium nötig, kann von geschulten Angehörigen gewechselt werden.",
           },
           {
-            patientName: "Herr Baür",
-            situationsId: "ls-baür-demenz-sturz",
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
             hauptfaktor: "Demenz — zieht Verband ab",
             kurzbeschreibung:
               "Demenzpatienten ziehen Verbände manchmal ab, weil sie sie nicht verstehen. Lösungen: Verband mit Kleidung abdecken, ablenkende Beschäftigung während des Verbandwechsels. NIE fixieren (= Freiheitsentziehung).",
@@ -88,7 +88,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
           vorderseite:
             "Warum hat Dr. Kirchner Hydrokolloid-Verband für Frau Yilmaz (Dekubitus Kat. II, flache Erosion, wenig Exsudat) angeordnet — und nicht einen trockenen Mullverband?",
           rueckseite:
-            "Feuchte Wundbehandlung (Winter 1962): 50 % schnellere Heilung. Hydrokolloid bildet Gel bei Kontakt mit Exsudat, hält Wunde feucht, fördert Granulation + Epithelialisierung. Trockener Mullverband: verklebt, zerstört Wundgrund beim Wechsel, keine Feuchtigkeitsregulation.\n\nSpektrum: Petrov (Schaumverband wegen Spastik), Kovac (ambulant, Hydrokolloid einfach für Angehörige), Baür (Demenz, Verband abdecken).\n\nFaustregel: **Feucht heilt schneller. Hydrokolloid = Standard bei Kat. II.**",
+            "Feuchte Wundbehandlung (Winter 1962): 50 % schnellere Heilung. Hydrokolloid bildet Gel bei Kontakt mit Exsudat, hält Wunde feucht, fördert Granulation + Epithelialisierung. Trockener Mullverband: verklebt, zerstört Wundgrund beim Wechsel, keine Feuchtigkeitsregulation.\n\nSpektrum: Petrov (Schaumverband wegen Spastik), Kovac (ambulant, Hydrokolloid einfach für Angehörige), Bauer (Demenz, Verband abdecken).\n\nFaustregel: **Feucht heilt schneller. Hydrokolloid = Standard bei Kat. II.**",
         },
       },
     },
@@ -126,7 +126,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
           "Sauberen Handschuh ausziehen, erneute Händedesinfektion, sterile Handschuhe anziehen",
           "Wunde inspizieren — ggf. Befund dokumentieren",
           "Wunde spülen mit NaCl 0,9% (Spülen, nicht Wischen)",
-          "Neün Verband auflegen und Dokumentation",
+          "Neuen Verband auflegen und Dokumentation",
         ],
       },
     },
@@ -317,7 +317,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
               "Das Foto ersetzt die schriftliche Wundbeschreibung — ich brauche keinen Text mehr.",
             isTrue: false,
             explanation:
-              "FALSCH — Das Foto ergänzt die schriftliche Dokumentation, ersetzt sie nicht. Ein Foto zeigt den visüllen Zustand, aber nicht: subjektive Aussagen der Patientin, Geruch, Konsistenz, Schmerz — all das braucht Text.",
+              "FALSCH — Das Foto ergänzt die schriftliche Dokumentation, ersetzt sie nicht. Ein Foto zeigt den visuellen Zustand, aber nicht: subjektive Aussagen der Patientin, Geruch, Konsistenz, Schmerz — all das braucht Text.",
           },
         ],
       },
@@ -536,7 +536,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
                   "Frau Yilmaz schweigt. Sie schaut zur Seite.",
                 score: 0,
                 feedback:
-                  "Abwertend und kulturell respektlos. Honig war historisch ein Antiseptikum — und Manuka-Honig (medizinisch standardisiert) wird heute noch in der Wundversorgung eingesetzt (evidenzbasiert). Die Reaktion zerstört Vertraün ohne jede Notwendigkeit.",
+                  "Abwertend und kulturell respektlos. Honig war historisch ein Antiseptikum — und Manuka-Honig (medizinisch standardisiert) wird heute noch in der Wundversorgung eingesetzt (evidenzbasiert). Die Reaktion zerstört Vertrauen ohne jede Notwendigkeit.",
                 feedbackB1:
                   "Das ist nicht gut. Honig ist nicht Unsinn. Manuka-Honig wird in der Medizin heute noch genutzt. Und: Frau Yilmaz erzählt dir etwas Persönliches — sie verdient Respekt.",
               },
@@ -550,7 +550,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
                   "Frau Yilmaz lächelt kurz. 'Ich dachte, ihr lacht mich aus.' — sie entspannt sich.",
                 score: 3,
                 feedback:
-                  "Respektvoll, fachlich korrekt, verbindend. Du validierst ihr Wissen, korrigierst ohne zu entwerten, und erklärst warum du einen anderen Weg wählst. Das stärkt das Vertraün und die Kooperation.",
+                  "Respektvoll, fachlich korrekt, verbindend. Du validierst ihr Wissen, korrigierst ohne zu entwerten, und erklärst warum du einen anderen Weg wählst. Das stärkt das Vertrauen und die Kooperation.",
                 feedbackB1:
                   "Sehr gut. Du respektierst ihr Wissen. Du erklärst warum du einen modernen Verband nimmst. Frau Yilmaz fühlt sich ernst genommen.",
               },
@@ -563,7 +563,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
                   "Frau Yilmaz: 'Ja bitte!' — Frau Schäfer schaut fragend.",
                 score: 0,
                 feedback:
-                  "Nicht korrekt — Honig ist kein aktüll angeordnetes Wundtherapeutikum für diesen Fall. Dr. Kirchner hat Hydrokolloid angeordnet. Eigenmächtige Änderungen der Wundtherapie sind nicht zulässig. Patientenrecht auf Therapieentscheidung bedeutet nicht, dass du unreflektiert wünsche erfüllst.",
+                  "Nicht korrekt — Honig ist kein aktuell angeordnetes Wundtherapeutikum für diesen Fall. Dr. Kirchner hat Hydrokolloid angeordnet. Eigenmächtige Änderungen der Wundtherapie sind nicht zulässig. Patientenrecht auf Therapieentscheidung bedeutet nicht, dass du unreflektiert wünsche erfüllst.",
                 feedbackB1:
                   "Nein. Der Arzt hat einen anderen Verband angeordnet. Du kannst nicht einfach etwas anderes nehmen — auch wenn Frau Yilmaz es möchte.",
               },
@@ -586,7 +586,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
                   "Frau Yilmaz nickt. 'Ah — die Akte gehört mir auch? Das wusste ich nicht.'",
                 score: 3,
                 feedback:
-                  "Korrekt, transparent, empowernd. Du erklärst den Sinn der Dokumentation und informierst Frau Yilmaz über ihr Einsichtsrecht in die Akte (§ 630g BGB). Das stärkt Vertraün und Autonomie.",
+                  "Korrekt, transparent, empowernd. Du erklärst den Sinn der Dokumentation und informierst Frau Yilmaz über ihr Einsichtsrecht in die Akte (§ 630g BGB). Das stärkt Vertrauen und Autonomie.",
                 feedbackB1:
                   "Sehr gut. Du erklärst warum du schreibst. Und du sagst ihr: Die Akte gehört ihr auch. Das ist ihr Recht (§ 630g BGB).",
               },

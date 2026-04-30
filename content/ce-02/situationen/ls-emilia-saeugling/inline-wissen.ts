@@ -50,7 +50,7 @@ export const CE02_EMILIA_IW_01_OBLIGATE_NASENATMUNG: ContentStep = {
     storyAufhaengerB1:
       "Emilia versucht zu trinken. Sie macht 3-4 Schlucke und lässt dann los. Sie atmet schnell. Laura fragt dich: Warum trinkt sie so wenig?",
     kerntext:
-      "Säuglinge bis zum Alter von etwa 3-6 Monaten sind **obligate Nasenatmer**. Das bedeutet: Sie können ausschließlich durch die Nase atmen — der Reflex, bei verstopfter Nase durch den Mund zu atmen, ist noch nicht entwickelt.\n\n**Die Konseqünz bei Bronchiolitis:**\n\n• RSV-Viren entzünden die kleinen Atemwege und verursachen Schleimbildung in der Nase.\n\n• Die verstopfte Nase blockiert die einzige Atemöffnung.\n\n• Beim Saugen muss der Säugling den Mund schließen — aber er kann nicht gleichzeitig durch die Nase atmen.\n\n• Ergebnis: **Saugen-Atmen-Konflikt** — Emilia muss nach wenigen Schlucken loslassen, um zu atmen.\n\nDie Trinkschwäche ist also keine Schwäche des Kindes und kein Problem der Milch — sondern ein mechanisches Problem der verstopften Nase. *(Hoehl/Kullick, 2019; AWMF S2k 2022)*",
+      "Säuglinge bis zum Alter von etwa 3-6 Monaten sind **obligate Nasenatmer**. Das bedeutet: Sie können ausschließlich durch die Nase atmen — der Reflex, bei verstopfter Nase durch den Mund zu atmen, ist noch nicht entwickelt.\n\n**Die Konsequnz bei Bronchiolitis:**\n\n• RSV-Viren entzünden die kleinen Atemwege und verursachen Schleimbildung in der Nase.\n\n• Die verstopfte Nase blockiert die einzige Atemöffnung.\n\n• Beim Saugen muss der Säugling den Mund schließen — aber er kann nicht gleichzeitig durch die Nase atmen.\n\n• Ergebnis: **Saugen-Atmen-Konflikt** — Emilia muss nach wenigen Schlucken loslassen, um zu atmen.\n\nDie Trinkschwäche ist also keine Schwäche des Kindes und kein Problem der Milch — sondern ein mechanisches Problem der verstopften Nase. *(Hoehl/Kullick, 2019; AWMF S2k 2022)*",
     kerntextB1:
       "Babys bis etwa 3-6 Monate können **nur durch die Nase atmen**. Sie sind obligate Nasenatmer. Durch den Mund atmen können sie noch nicht.\n\n**Was passiert bei Emilia?**\n\n• Das RS-Virus macht Schleim in der Nase.\n\n• Die Nase ist verstopft.\n\n• Beim Saugen muss Emilia den Mund schließen.\n\n• Aber sie kann nicht durch die Nase atmen.\n\n• Deshalb lässt sie nach 3-4 Schlucken los — sie muss atmen.\n\nEmilia trinkt nicht wenig, weil die Milch falsch ist. Sie trinkt wenig, weil ihre Nase zu ist.",
     faustregel:
@@ -206,9 +206,9 @@ export const CE02_EMILIA_IW_03_SBAR: ContentStep = {
     storyAufhaengerB1:
       "Schwester Andrea erklärt dir alles zu Emilia. Sie nutzt dafür ein Schema mit 4 Teilen. Das Schema heißt SBAR. Es hilft, nichts Wichtiges zu vergessen.",
     kerntext:
-      "**SBAR** ist ein standardisiertes Übergabe-Schema aus der Luftfahrt, das in der Pflege weltweit eingesetzt wird.\n\n**S — Situation:** Was ist gerade los? (Emilia: Trinkschwäche, Fieber 38,2 °C)\n\n**B — Background:** Was ist der Hintergrund? (bisher gesundes Kind, Erstgebärende, allein erziehend)\n\n**A — Assessment:** Wie schätze ich die Situation ein? (leicht erhöhte Atemfreqünz 50/min, kein Saürstoffbedarf, Turgor noch erhalten)\n\n**R — Recommendation:** Was empfehle ich als nächsten Schritt? (Flüssigkeitsstatus engmaschig überwachen, Mutter begleiten)\n\n**Warum funktioniert es?** Schätzungen zeigen: Unstrukturierte Übergaben verlieren durchschnittlich bis zu 30% der relevanten Informationen. SBAR reduziert Informationsverluste erheblich — auf unter 5% in strukturierten Settings. *(NHS Institute 2010; Hoehl/Kullick 2019)*",
+      "**SBAR** ist ein standardisiertes Übergabe-Schema aus der Luftfahrt, das in der Pflege weltweit eingesetzt wird.\n\n**S — Situation:** Was ist gerade los? (Emilia: Trinkschwäche, Fieber 38,2 °C)\n\n**B — Background:** Was ist der Hintergrund? (bisher gesundes Kind, Erstgebärende, allein erziehend)\n\n**A — Assessment:** Wie schätze ich die Situation ein? (leicht erhöhte Atemfrequenz 50/min, kein Sauerstoffbedarf, Turgor noch erhalten)\n\n**R — Recommendation:** Was empfehle ich als nächsten Schritt? (Flüssigkeitsstatus engmaschig überwachen, Mutter begleiten)\n\n**Warum funktioniert es?** Schätzungen zeigen: Unstrukturierte Übergaben verlieren durchschnittlich bis zu 30% der relevanten Informationen. SBAR reduziert Informationsverluste erheblich — auf unter 5% in strukturierten Settings. *(NHS Institute 2010; Hoehl/Kullick 2019)*",
     kerntextB1:
-      "**SBAR** ist ein Schema für Übergaben. Es hat 4 Teile:\n\n**S** = Situation: Was ist das Problem? (Emilia trinkt wenig, hat Fieber)\n\n**B** = Background (= Hintergrund): Was ist wichtig? (bisher gesundes Kind, junge Mutter)\n\n**A** = Assessment (= Einschätzung): Wie ist der Zustand? (atmet schnell, kein Saürstoff nötig)\n\n**R** = Recommendation (= Empfehlung): Was soll gemacht werden? (Flüssigkeit beobachten)\n\nOhne Schema verliert man bei einer Übergabe bis zu 30% der Informationen. Mit SBAR deutlich weniger.",
+      "**SBAR** ist ein Schema für Übergaben. Es hat 4 Teile:\n\n**S** = Situation: Was ist das Problem? (Emilia trinkt wenig, hat Fieber)\n\n**B** = Background (= Hintergrund): Was ist wichtig? (bisher gesundes Kind, junge Mutter)\n\n**A** = Assessment (= Einschätzung): Wie ist der Zustand? (atmet schnell, kein Sauerstoff nötig)\n\n**R** = Recommendation (= Empfehlung): Was soll gemacht werden? (Flüssigkeit beobachten)\n\nOhne Schema verliert man bei einer Übergabe bis zu 30% der Informationen. Mit SBAR deutlich weniger.",
     faustregel:
       "**SBAR = 4 Sätze, null vergessen** — Situation, Background, Assessment, Recommendation.",
     faustregelB1:
@@ -297,11 +297,11 @@ export const CE02_EMILIA_IW_04_EXSIKKOSE: ContentStep = {
       "Weniger als 4 nasse Windeln in 24 Stunden = Alarm. Die Windel zeigt dir, ob das Baby genug trinkt.",
     spektrum: [
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz, vergisst zu trinken",
         kurzbeschreibung:
-          "Bei Herrn Baür entsteht Exsikkose, weil er durch die Demenz das Trinken vergisst. Die Zeichen sind ähnlich: trockene Schleimhaut, stehende Hautfalte — aber am Handrücken geprüft, nicht am Bauch.",
+          "Bei Herrn Bauer entsteht Exsikkose, weil er durch die Demenz das Trinken vergisst. Die Zeichen sind ähnlich: trockene Schleimhaut, stehende Hautfalte — aber am Handrücken geprüft, nicht am Bauch.",
       },
       {
         patientName: "Frau Yilmaz",
@@ -322,7 +322,7 @@ export const CE02_EMILIA_IW_04_EXSIKKOSE: ContentStep = {
       vorderseite:
         "Emilia hat 3 nasse Windeln in 12 Stunden. Normalerweise 5-6 pro Tag. Welche Gefahr droht — und welche 5 Zeichen beobachtest du?",
       rueckseite:
-        "Exsikkose (Austrocknung). 5 Zeichen: Hautturgor reduziert, Fontanelle eingefallen, Mundschleimhaut trocken, <4 nasse Windeln/24h, kein Tränenfluss. Säuglinge: 75% Wasseranteil, schneller Umsatz. Spektrum: Baür (vergisst Trinken), Yilmaz (post-OP nüchtern), Schmidt (Diuretika). Faustregel: **<4 Windeln/24h = Alarm.**",
+        "Exsikkose (Austrocknung). 5 Zeichen: Hautturgor reduziert, Fontanelle eingefallen, Mundschleimhaut trocken, <4 nasse Windeln/24h, kein Tränenfluss. Säuglinge: 75% Wasseranteil, schneller Umsatz. Spektrum: Bauer (vergisst Trinken), Yilmaz (post-OP nüchtern), Schmidt (Diuretika). Faustregel: **<4 Windeln/24h = Alarm.**",
     },
   },
 };
@@ -384,11 +384,11 @@ export const CE02_EMILIA_IW_05_KUSS_WIEDERBEGEGNUNG: ContentStep = {
           "Bei Frau M. nutzt du die NRS (0-10). Sie kann dir sagen: \"Die Hüfte tut weh — ich sage 7.\" Das ist die einfachste Form der Schmerzmessung.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz, BESD-Skala",
         kurzbeschreibung:
-          "Bei Herrn Baür (Demenz) funktioniert die NRS nicht mehr zuverlässig. Hier nutzt du die BESD — eine verhaltensbasierte Skala, ähnlich wie KUSS, aber für demente Erwachsene.",
+          "Bei Herrn Bauer (Demenz) funktioniert die NRS nicht mehr zuverlässig. Hier nutzt du die BESD — eine verhaltensbasierte Skala, ähnlich wie KUSS, aber für demente Erwachsene.",
       },
       {
         patientName: "Frau Yilmaz",
@@ -410,7 +410,7 @@ export const CE02_EMILIA_IW_05_KUSS_WIEDERBEGEGNUNG: ContentStep = {
       vorderseite:
         "Emilia weint beim Fiebermessen, zieht die Beine an, verzieht das Gesicht. Welche Schmerzskala nutzt du — und ab wann handelst du?",
       rueckseite:
-        "KUSS (Kindliche Unbehagens- und Schmerz-Skala), 0-4 Jahre: 5 Kategorien (Weinen, Mimik, Rumpf, Beine, Unruhe), je 0-2 Punkte. Schwellenwert: ≥4 = Intervention. NRS erst ab ~8 J. (Verbalisierung nötig). Spektrum: Frau M. (NRS), Baür (BESD bei Demenz), Yilmaz (NRS Ruhe/Bewegung). Faustregel: **KUSS ≥4 = handeln.**",
+        "KUSS (Kindliche Unbehagens- und Schmerz-Skala), 0-4 Jahre: 5 Kategorien (Weinen, Mimik, Rumpf, Beine, Unruhe), je 0-2 Punkte. Schwellenwert: ≥4 = Intervention. NRS erst ab ~8 J. (Verbalisierung nötig). Spektrum: Frau M. (NRS), Bauer (BESD bei Demenz), Yilmaz (NRS Ruhe/Bewegung). Faustregel: **KUSS ≥4 = handeln.**",
     },
   },
 };
@@ -456,7 +456,7 @@ export const CE02_EMILIA_IW_06_FLUESSIGKEITSBEDARF: ContentStep = {
     storyAufhaenger:
       "Du planst die Flüssigkeitsbilanz für Emilia. Aber um zu wissen ob sie genug trinkt, musst du erst wissen: Wie viel Flüssigkeit braucht ein 4 Monate alter, 5,6 kg schwerer Säugling pro Tag?",
     storyAufhaengerB1:
-      "Du planst die Flüssigkeitsbilanz. Aber zürst: Wie viel muss Emilia pro Tag trinken? Sie wiegt 5,6 kg und ist 4 Monate alt.",
+      "Du planst die Flüssigkeitsbilanz. Aber zuerst: Wie viel muss Emilia pro Tag trinken? Sie wiegt 5,6 kg und ist 4 Monate alt.",
     kerntext:
       "**Flüssigkeitsbedarf im Säuglingsalter:**\n\n• **Faustformel:** ca. **150 ml pro kg Körpergewicht pro Tag** im 1. Lebenshalbjahr\n\n• **Emilia (5,6 kg):** 5,6 × 150 = ca. **840 ml pro Tag**\n\n• Gestillte Säuglinge erhalten ihre gesamte Flüssigkeit über die Muttermilch — zusätzliches Wasser ist vor dem 6. Monat nicht empfohlen (WHO 2023)\n\n**Warum ist der Bedarf so hoch?**\n\n• Säuglinge haben einen **höheren Wasseranteil** (ca. 75% des Körpergewichts vs. 60% bei Erwachsenen)\n\n• Der **Flüssigkeitsumsatz** pro kg ist 2-3x schneller als beim Erwachsenen\n\n• Die Nieren können Urin noch nicht stark konzentrieren — mehr Flüssigkeit wird ausgeschieden\n\n**Bei Emilia:** 840 ml Ziel — sie hat gestern geschätzt nur 280 ml erreicht. Das ist ein Drittel des Bedarfs. *(Hoehl/Kullick 2019; EFSA 2010)*",
     kerntextB1:
@@ -467,11 +467,11 @@ export const CE02_EMILIA_IW_06_FLUESSIGKEITSBEDARF: ContentStep = {
       "150 ml pro Kilo pro Tag. Emilia braucht etwa 840 ml am Tag.",
     spektrum: [
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz, Trinkprotokoll",
         kurzbeschreibung:
-          "Bei Herrn Baür liegt der Bedarf bei ca. 30 ml/kg/Tag (Erwachsene). Auch hier: Trinkprotokoll, weil er vergisst zu trinken.",
+          "Bei Herrn Bauer liegt der Bedarf bei ca. 30 ml/kg/Tag (Erwachsene). Auch hier: Trinkprotokoll, weil er vergisst zu trinken.",
       },
       {
         patientName: "Herr Petrov",
@@ -492,7 +492,7 @@ export const CE02_EMILIA_IW_06_FLUESSIGKEITSBEDARF: ContentStep = {
       vorderseite:
         "Emilia wiegt 5,6 kg. Wie viel Flüssigkeit braucht sie pro Tag — und wie berechnest du das?",
       rueckseite:
-        "Faustformel: 150 ml/kg/Tag im 1. Lebenshalbjahr. Emilia: 5,6 kg × 150 = ca. 840 ml/Tag. Ausschließlich über Muttermilch (kein Zusatzwasser vor 6. Monat, WHO 2023). Säuglinge: 75% Wasseranteil, schneller Umsatz, unreife Nieren. Spektrum: Baür (30 ml/kg, vergisst Trinken), Petrov (i.v.), Schmidt (Diuretika). Faustregel: **150 ml/kg/Tag.**",
+        "Faustformel: 150 ml/kg/Tag im 1. Lebenshalbjahr. Emilia: 5,6 kg × 150 = ca. 840 ml/Tag. Ausschließlich über Muttermilch (kein Zusatzwasser vor 6. Monat, WHO 2023). Säuglinge: 75% Wasseranteil, schneller Umsatz, unreife Nieren. Spektrum: Bauer (30 ml/kg, vergisst Trinken), Petrov (i.v.), Schmidt (Diuretika). Faustregel: **150 ml/kg/Tag.**",
     },
   },
 };
@@ -552,11 +552,11 @@ export const CE02_EMILIA_IW_07_SIDS: ContentStep = {
           "Bei Frau M. (82 J.) ist das Thema Schlafumgebung auch relevant — aber anders: Bettgitter, Betthöhe, Nachtlicht. Bei Säuglingen geht es um SIDS, bei Älteren um Sturz.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Demenz, nächtliches Aufstehen",
         kurzbeschreibung:
-          "Bei Herrn Baür ist die sichere Schlafumgebung auch ein Thema: Niedrigbett, Sensormatten, kein beidseitiges Bettgitter (Fixierung). Prinzip gleich: Umgebung anpassen statt fixieren.",
+          "Bei Herrn Bauer ist die sichere Schlafumgebung auch ein Thema: Niedrigbett, Sensormatten, kein beidseitiges Bettgitter (Fixierung). Prinzip gleich: Umgebung anpassen statt fixieren.",
       },
     ],
     sonstBox:
@@ -567,7 +567,7 @@ export const CE02_EMILIA_IW_07_SIDS: ContentStep = {
       vorderseite:
         "Emilia hat Bronchiolitis mit verstopfter Nase. Laura fragt: Darf sie auf der Seite schlafen? Was antwortest du — und warum?",
       rueckseite:
-        "Nein. Rückenlage gilt immer — auch bei Bronchiolitis. AAP 2022: 5 Regeln — Rücken, feste Matratze, nichts Loses im Bett, 18-20 °C, rauchfrei. Seitenlage = Risiko (Umdrehen auf Bauch). Keine Ausnahme ohne Arztanordnung. Spektrum: Frau M. (Sturzprävention), Baür (Demenz, Niedrigbett). Faustregel: **Rücken, fest, leer, kühl, rauchfrei.**",
+        "Nein. Rückenlage gilt immer — auch bei Bronchiolitis. AAP 2022: 5 Regeln — Rücken, feste Matratze, nichts Loses im Bett, 18-20 °C, rauchfrei. Seitenlage = Risiko (Umdrehen auf Bauch). Keine Ausnahme ohne Arztanordnung. Spektrum: Frau M. (Sturzprävention), Bauer (Demenz, Niedrigbett). Faustregel: **Rücken, fest, leer, kühl, rauchfrei.**",
     },
   },
 };
@@ -614,7 +614,7 @@ export const CE02_EMILIA_IW_08_SAEULINGSHAUT: ContentStep = {
     storyAufhaengerB1:
       "Du bereitest das Bad vor. Laura fragt: \"Kann ich normales Duschgel nehmen?\" Warum nicht? Warum ist Babyhaut anders?",
     kerntext:
-      "Säuglingshaut unterscheidet sich grundlegend von Erwachsenenhaut:\n\n• **60% dünner** als Erwachsenenhaut — Wirkstoffe und Reizstoffe dringen schneller ein\n\n• **Säureschutzmantel unreif:** Bei Geburt ist der pH der Haut noch neutral (~6,5-7). Der schützende saure Film (pH 5,5) bildet sich erst über **ca. 4 Wochen**. Bis dahin: höheres Infektionsrisiko\n\n• **Große Körperoberfläche im Verhältnis zum Gewicht:** Säuglinge verlieren schneller Wärme und Feuchtigkeit als Erwachsene. Beim Baden oder Wickeln kann Auskühlung in Minuten eintreten\n\n**Konseqünz für die Pflege:**\n\n• Kein parfümiertes Duschgel, keine alkoholhaltigen Produkte\n• Wassertemperatur exakt 36-37 °C\n• Badedaür maximal 5-10 Minuten\n• Tupfen statt Rubbeln beim Abtrocknen\n\n*(Hoehl/Kullick, 2019)*",
+      "Säuglingshaut unterscheidet sich grundlegend von Erwachsenenhaut:\n\n• **60% dünner** als Erwachsenenhaut — Wirkstoffe und Reizstoffe dringen schneller ein\n\n• **Säureschutzmantel unreif:** Bei Geburt ist der pH der Haut noch neutral (~6,5-7). Der schützende saure Film (pH 5,5) bildet sich erst über **ca. 4 Wochen**. Bis dahin: höheres Infektionsrisiko\n\n• **Große Körperoberfläche im Verhältnis zum Gewicht:** Säuglinge verlieren schneller Wärme und Feuchtigkeit als Erwachsene. Beim Baden oder Wickeln kann Auskühlung in Minuten eintreten\n\n**Konsequnz für die Pflege:**\n\n• Kein parfümiertes Duschgel, keine alkoholhaltigen Produkte\n• Wassertemperatur exakt 36-37 °C\n• Badedauer maximal 5-10 Minuten\n• Tupfen statt Rubbeln beim Abtrocknen\n\n*(Hoehl/Kullick, 2019)*",
     kerntextB1:
       "Babyhaut ist anders als deine Haut:\n\n• Sie ist **60% dünner**\n• Der **Säureschutzmantel** ist noch nicht fertig (erst nach 4 Wochen)\n• Babys haben viel Haut im Verhältnis zum Gewicht — sie frieren schnell\n\n**Was bedeutet das beim Baden?**\n\n• Kein Duschgel mit Parfüm\n• Wasser genau 36-37 Grad\n• Nur 5-10 Minuten baden\n• Danach: sanft tupfen, nicht reiben",
     faustregel:
@@ -630,11 +630,11 @@ export const CE02_EMILIA_IW_08_SAEULINGSHAUT: ContentStep = {
           "Bei Frau Yilmaz ist die Haut durch den Dekubitus geschädigt. Auch hier: milde Pflege, keine aggressiven Substanzen. Aber die Ursache ist Druck, nicht Unreife.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Altershaut, Pergamenthaut",
         kurzbeschreibung:
-          "Bei Herrn Baür (82 J.) ist die Haut dünn und verletzlich — aber aus Altersgründen, nicht wie bei Emilia aus Unreife. Gleiche Konseqünz: vorsichtig waschen, tupfen statt reiben.",
+          "Bei Herrn Bauer (82 J.) ist die Haut dünn und verletzlich — aber aus Altersgründen, nicht wie bei Emilia aus Unreife. Gleiche Konsequnz: vorsichtig waschen, tupfen statt reiben.",
       },
       {
         patientName: "Herr Nguyen",
@@ -648,7 +648,7 @@ export const CE02_EMILIA_IW_08_SAEULINGSHAUT: ContentStep = {
       vorderseite:
         "Laura will normales Duschgel beim Säuglingsbad verwenden. Warum ist das problematisch — nenne 3 Besonderheiten der Säuglingshaut.",
       rueckseite:
-        "Säuglingshaut: (1) 60% dünner — Reizstoffe dringen schnell ein. (2) Säureschutzmantel unreif (pH neutral bis ~4 Wochen). (3) Große Oberfläche/Gewicht — schnelle Auskühlung. Konseqünz: klares Wasser, 36-37 °C, max. 5-10 Min, tupfen. Spektrum: Yilmaz (Dekubitus), Baür (Altershaut), Nguyen (peristomale Haut). Faustregel: **Dünner, schutzloser, kälteempfindlicher.**",
+        "Säuglingshaut: (1) 60% dünner — Reizstoffe dringen schnell ein. (2) Säureschutzmantel unreif (pH neutral bis ~4 Wochen). (3) Große Oberfläche/Gewicht — schnelle Auskühlung. Konsequnz: klares Wasser, 36-37 °C, max. 5-10 Min, tupfen. Spektrum: Yilmaz (Dekubitus), Bauer (Altershaut), Nguyen (peristomale Haut). Faustregel: **Dünner, schutzloser, kälteempfindlicher.**",
     },
   },
 };
@@ -708,18 +708,18 @@ export const CE02_EMILIA_IW_09_WINDELDERMATITIS: ContentStep = {
           "Bei Frau Yilmaz kann Inkontinenz ähnliche Hautschäden verursachen. IAD (Inkontinenz-assoziierte Dermatitis) beim Erwachsenen folgt dem gleichen Mechanismus: Feuchtigkeit + pH-Verschiebung + Enzyme.",
       },
       {
-        patientName: "Herr Baür",
-        situationsId: "ls-baür-demenz-sturz",
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
         hauptfaktor: "Inkontinenzmaterial, Hautpflege bei Demenz",
         kurzbeschreibung:
-          "Bei Herrn Baür ist das Inkontinenzmaterial die Quelle der Feuchtigkeit. Gleiche Prävention: regelmäßig wechseln, trocknen, Hautschutz.",
+          "Bei Herrn Bauer ist das Inkontinenzmaterial die Quelle der Feuchtigkeit. Gleiche Prävention: regelmäßig wechseln, trocknen, Hautschutz.",
       },
     ],
     karteikarte: {
       vorderseite:
         "Emilias Haut im Windelbereich ist leicht gerötet. Was ist Windeldermatitis — und wie verhinderst du sie?",
       rueckseite:
-        "Windeldermatitis = Hautentzündung durch Urin/Stuhl-Kontakt in feuchter Umgebung. Mechanismus: Ammoniak + Enzyme + Candida. Prävention: (1) Häufig wechseln (2-3h), (2) tupfen statt reiben, (3) Zinkoxid bei Rötung, (4) Windelfrei-Zeit. Spektrum: Yilmaz (IAD), Baür (Inkontinenzmaterial). Faustregel: **Trocken, sauber, geschützt.**",
+        "Windeldermatitis = Hautentzündung durch Urin/Stuhl-Kontakt in feuchter Umgebung. Mechanismus: Ammoniak + Enzyme + Candida. Prävention: (1) Häufig wechseln (2-3h), (2) tupfen statt reiben, (3) Zinkoxid bei Rötung, (4) Windelfrei-Zeit. Spektrum: Yilmaz (IAD), Bauer (Inkontinenzmaterial). Faustregel: **Trocken, sauber, geschützt.**",
     },
   },
 };
