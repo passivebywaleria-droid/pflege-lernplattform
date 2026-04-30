@@ -1,141 +1,93 @@
 # Pflege-Review: ls-lukas-verbruehung
 
-**Geprüft:** 2026-04-25
-**Files:** 7 (6 Phasen + patient.ts)
-**Step-Anzahl:** 30 (5 Informieren, 6 Beobachten, 5 Planen, 7 Durchführen, 4 Evaluieren, 3 Dokumentieren) — davon 4 Dialog/Branching ohne reine Wahl, 6 MC, 3 Highlight, 5 Text, 2 Sequencing/Sorting, 3 Categorize, 2 Matching, 1 Comparison, 1 Calculation, 1 Matrix, 1 Timeline, 1 Summary, 2 Freetext, 1 TrueFalse
+**Geprüft:** 2026-04-26 (Re-Review nach Fix-Runde)
+**Modus:** code
+**Files:** 8 (6 Phasen + patient.ts + index.ts)
+**Step-Anzahl:** 37 (6 Phasen, davon 6 inlineWissen, 2 Dialog, 2 Branching, 3 MC, 1 TrueFalse, 3 Highlight, 2 Categorize, 2 Matching, 2 Sorting/Sequencing, 4 Text, 1 Calculation, 1 Comparison, 1 Matrix, 1 Timeline, 2 Freetext, 1 Summary)
 
-## Findings
+## Vorgeschichte
 
-### patient.ts — Erstversorgung Kühldauer
+Erster Review am 2026-04-25 ergab 1 HOCH, 5 MITTEL, 3 NIEDRIG. Alle 9 Findings wurden am 2026-04-26 durch Fix-Agents behoben. Dieser Re-Review prueft den aktuellen Stand NACH den Fixes.
 
-#### F-01 (HOCH): Kühldauer 15-20 Min bei 15% KOF Kleinkind ist potenziell gefährlich
-- **Stelle:** patient.ts Zeile 26 + 28; phase-informieren Step 1.2 Zeile 99, 106
-- **Problem:** Sandras Kühlmaßnahme "15-20 Minuten unter fließendem Wasser" wird als korrekte Erstversorgung dargestellt und ihr explizit als "richtig" rückgemeldet. Bei einem 2,5-jährigen Kleinkind (13,2 kg) mit 15% KOF Verbrühung ist das nach aktueller DGV-S2k-Leitlinie und GNPI-Empfehlung **zu lang und mit Hypothermie-Gefahr verbunden**. Aktuelle Empfehlung: bei Kindern unter 8 Jahren bzw. bei >10% KOF nur kurz (max. 10 Min) und nur lokal kühlen, möglichst lauwarmes Wasser (ca. 20°C), Restkörper warmhalten. Bei 15% KOF wird oft sogar gegen ausgedehnte Kühlung gewarnt — zugunsten von Wärmeerhalt (verbrannte Haut verliert Temperaturregulation, Kleinkinder kühlen schnell aus → Schockverstärkung).
-- **Standard-Verweis:** DGV-Leitlinie "Behandlung thermischer Verletzungen im Kindesalter" 2015/aktualisiert; GNPI-Empfehlung Erstversorgung Kinderverbrennung; Hoehl/Kullick 2019 (Kinderkrankenpflege)
-- **Empfehlung:** Entweder (a) Kühldauer auf "kurz lokal gekühlt, dann zugedeckt" reduzieren, oder (b) didaktisch nutzen: Sandra hat "in der Akutsituation richtig reagiert (Kühlen und Notruf)", aber im Lerntext wird die Nuance erwähnt — bei Kindern unter 8 Jahren oder >10% KOF ist Kurzkühlung mit Wärmeerhalt der Standard, nicht 15-20 Min ausgedehnt. So bleibt Sandra "richtig genug" entlastet, der Schüler lernt aber den aktuellen Standard.
+## Fix-Verifizierung
 
-### phase-durchfuehren — Step 4.4 Verbandwechsel
+| Original-Finding | Fix verifiziert? |
+|------------------|-----------------|
+| F-01 (HOCH) Kuehlung 15-20 Min | Ja — patient.ts + phase-informieren: ~8 Min lokal, lauwarm, DGV/GNPI-Standard |
+| F-02 NaCl-Routine | Ja — phase-durchfuehren Step 4.4: "NUR bei Bedarf" |
+| F-03 Tetanus | Ja — phase-informieren Step 1.4: "Relevant zu pruefen", Hitze-Sterilisation erwaehnt |
+| F-04 KUSS-Beschreibung | Ja — phase-beobachten Step 2.1: 5 Kategorien angeschaerft, Score 8/10 plausibel |
+| F-05 Parkland-Formel | Ja — phase-planen Step 3.3: 4 ml x kg x %KOF, Galveston als Alternative |
+| F-06 CHX-Altersgrenze | Ja — einheitlich "unter 6 Jahren" mit Octenidin als Alternative |
+| F-07 Halten/Fixieren | Ja — Feedback nuanciert: therapeutisches Halten vs. Motiv "schneller" |
+| F-08 Karikatur-Distraktor | Ja — realistischer Anfaenger-Fehler ("emotional, moeglicherweise ueberfordert") |
+| F-09 KUSS-Inkonsistenz | Ja — einheitlich 8/10 in allen Phasen |
 
-#### F-02 (MITTEL): NaCl-Reinigung als Pflichtschritt bei intakten Blasen
-- **Stelle:** phase-durchfuehren.ts Zeile 299 + 304
-- **Problem:** "Wundreinigung mit NaCl 0,9%" wird als zweiter Schritt im Verbandwechsel-Algorithmus dargestellt. Bei intakten Blasen Grad 2a ist eine routinemäßige Wundreinigung/Spülung mit NaCl **nicht zwingend** und kann das fragile Wundbett unnötig irritieren. NaCl-Spülung hat ihre Indikation bei Wundsekretentfernung, Krusten oder Verschmutzung — nicht als Routine bei sauberer, gespanner Blase mit Hydrokolloid-Vorgeschichte.
-- **Standard-Verweis:** DGV-Leitlinie 2023 — Wundbettmanagement bei Grad-2a-Verbrennungen; Hoehl/Kullick (sparsame Wundreinigung bei Kindern)
-- **Empfehlung:** Schritt 2 abschwächen: "Wundreinigung mit NaCl 0,9% **nur bei Verschmutzung oder Wundsekretkrusten** — bei sauberer intakter Wundfläche keine routinemäßige Spülung". Ggf. Distraktor bauen: "Gilt es zu spülen, auch wenn die Blasen intakt und die Wunde sauber ist?"
+## Neue Findings (Re-Review)
 
-### phase-informieren — Step 1.4 U-Heft
+### phase-informieren.ts — Step 1.1b (inlineWissen: Kuehlung)
 
-#### F-03 (MITTEL): Tetanus-Relevanz bei reiner Verbrühung überbewertet
-- **Stelle:** phase-informieren.ts Zeile 314-318
-- **Problem:** "Sehr relevant — bei offener Wundfläche muss Tetanus-Schutz geprüft sein" suggeriert, dass Verbrühungen tetanusrelevante Wunden sind. Tatsächlich ist das **bei reiner Verbrühung (heißer Tee, geschlossene/oberflächliche Blasen) nicht der Standard**: Hitze ist ein eigener Sterilisator, klassische Tetanus-Risikowunden sind tiefe Stich-/Quetsch-/Bisswunden mit Erdkontakt. STIKO empfiehlt Tetanus-Auffrischung bei Verbrennung erst bei tieferen, kontaminierten oder nekrotischen Wunden — nicht reflexhaft bei jeder Verbrühung 2a.
-- **Standard-Verweis:** STIKO-Empfehlungen Tetanus-Postexpositionsprophylaxe; RKI Verbrennungswunden
-- **Empfehlung:** Reason umformulieren: "Relevant zu prüfen — Tetanus-Schutz wird bei tieferen oder kontaminierten Wunden geprüft. Bei reiner Verbrühung (Hitze sterilisiert) ist das Risiko gering, der Status sollte aber bei Aufnahme dokumentiert sein."
+#### F-N01 (NIEDRIG): Emilia-Alter im Spektrum "8 Wochen" statt "4 Monate"
+- **Stelle:** phase-informieren.ts, Zeile 138 — Spektrum-Eintrag Emilia
+- **Problem:** Emilia wird als "8 Wochen" beschrieben. In patient.ts der Emilia-Situation steht Alter = 4 Monate.
+- **Empfehlung:** Korrigieren auf "4 Monate".
 
-### phase-beobachten — Step 2.1 KUSS-Skala
+### phase-beobachten.ts — Step 2.1 (Highlight: KUSS Brilliant)
 
-#### F-04 (MITTEL): KUSS-Score-Aussage "8/10" widerspricht KUSS-Mechanik
-- **Stelle:** patient.ts Zeile 14, 28; phase-beobachten Zeile 41 ff.; durchgängig in allen Phasen
-- **Problem:** Die KUSS-Skala (Büttner/Finke 2000) hat **Maximalwert 10** (5 Kategorien × max. 2 Punkte), interventionspflichtig ab Score ≥4. Die Schreibweise "KUSS 8/10" und "KUSS 9/10" ist formal korrekt, aber die Beschreibungen passen schlecht zusammen: Im Highlight-Step werden alle 5 Kategorien mit 1-2 Punkten beschrieben → das ergibt **5-10 Punkte**, mit den dortigen Formulierungen eher 5-7 Punkte (leises Wimmern = 1, Grimassieren = 2, Anspannung = 1, Beine anziehen = 1, Drehen/Greifen = 1-2). KUSS 8 wäre gerechtfertigt bei "lautem Schreien" (2) — Lukas wimmert aber nur (1). Der angegebene Wert ist plausibler als 5-7.
-- **Standard-Verweis:** Büttner/Finke 2000, KUSS-Original-Validierung 0-4 Jahre
-- **Empfehlung:** Entweder Beschreibung in Step 2.1 anschärfen ("noch lautes Schreien-Phasen, kräftiges Wegstoßen") um Score 8 zu rechtfertigen — ODER Patientenwert auf KUSS 6/10 reduzieren (immer noch deutlich interventionspflichtig). Konsistenz Patient-Hintergrund ↔ Beobachtungs-Step herstellen.
+#### F-N02 (NIEDRIG): KUSS-Summenlogik — 5x2=10, erklaert als 8
+- **Stelle:** phase-beobachten.ts, Zeile 164-166 — Segment "Motorische Unruhe"
+- **Problem:** Alle 5 Highlight-Segmente beschreiben Score 2 pro Kategorie. Summe = 10/10. Im reason-Text steht aber "KUSS 8/10 bei einsetzender, aber noch unvollstaendiger Wirkung des Schmerzmittels — Maximalwert waere 10/10 ohne jede Analgesie." Die Erklaerung ist plausibel (Analgesie wirkt teilweise), aber der Schueler sieht alle 5 Kategorien bei maximal und rechnet 10, nicht 8. Leichte Irritation moeglich.
+- **Empfehlung:** Entweder eine Kategorie auf Score 1 herunterstufen (z.B. motorische Unruhe auf "maessig" statt "ruhelos" = 1 statt 2) oder im body klarer formulieren: "Bei Aufnahme war der Score 10/10 — das i.v.-Schmerzmittel beginnt zu wirken, deshalb dokumentieren wir KUSS 8/10."
 
-### phase-planen — Step 3.3 Flüssigkeitsbedarf
+### phase-dokumentieren.ts — Step 6.2 (Matching: Kinderschutz-Doku)
 
-#### F-05 (MITTEL): Verbrühungs-Zusatzbedarf-Formel unklar / unkonventionell
-- **Stelle:** phase-planen.ts Zeile 138
-- **Problem:** "ca. 1-2 ml/kg/% KOF in den ersten 24h = 13,2 × 15 = ca. 200-400 ml extra" — die Parkland-Formel (Standard für Verbrennungsschock-Resuscitation) ist **4 ml × kg × % KOF in 24h**, nicht 1-2. Die Formel hier passt zu keinem etablierten Pädiatrie-Schema. Bei Kindern wird oft die **modifizierte Galveston-Formel** (5000 ml/m² verbrannte KOF + 2000 ml/m² Erhaltung) verwendet, oder Parkland mit Anpassung. Bei 15% KOF Grad 2a beim Kleinkind wäre 4 × 13,2 × 15 = 792 ml in 24h zusätzlich (Parkland) — also fast doppelt so viel wie der Lerntext angibt.
-- **Standard-Verweis:** S2k-Leitlinie Behandlung thermischer Verletzungen Erwachsene/Kinder; GNPI Pädiatrische Schock-Therapie
-- **Empfehlung:** Entweder Hinweis pauschalisieren ohne Zahlenwert ("Bei Verbrühung kommt ein Verbrühungs-Zusatzbedarf hinzu, dessen genaue Menge der Arzt nach Parkland- oder Galveston-Formel berechnet"), ODER auf Parkland korrigieren: 4 ml × 13,2 × 15 = ~790 ml für die ersten 24h, davon 50% in den ersten 8h.
+#### F-N03 (NIEDRIG): Matching-Pairs ohne individuelle Erklaerungen
+- **Stelle:** phase-dokumentieren.ts, Zeile 167-197
+- **Problem:** Die matchingPairs haben kein explanation-Feld pro Pair. Der Schueler erfaehrt nicht im Detail WARUM "Kevin ist emotional/ueberfordert" nicht in die Dokumentation gehoert. Besonders das letzte Item ("Empfehlung Jugendamt ohne konkreten Anhaltspunkt") braucht eine Erklaerung warum das falsch und rechtlich problematisch ist.
+- **Standard-Verweis:** pflege-konformitaet.md — Erklaerung pro Segment
+- **Empfehlung:** Zumindest im body einen Absatz ergaenzen: "Nie wertende Formulierungen ueber Eltern. Nie Empfehlungen aussprechen die ueber deine Kompetenz hinausgehen."
 
-### phase-durchfuehren — Step 4.5 Mundpflege
+### phase-durchfuehren.ts — Step 4.3 (Branching: Lukas schreit)
 
-#### F-06 (NIEDRIG): Chlorhexidin-Verbot u. Begründung
-- **Stelle:** phase-durchfuehren.ts Zeile 363; phase-planen.ts Zeile 100
-- **Problem:** "Chlorhexidin ist bei Kleinkindern nicht zugelassen — Schluckgefahr, Schleimhautreizung, keine Zulassung unter 6 Jahren". Das stimmt für Mundspülungen zur Mundpflege bei Kleinkindern (CHX 0,2% Mundspülungen sind für Kinder unter 6 J. nicht empfohlen). Bei Lukas wäre Octenidin oder Kamille/Salbei in Schluckmenge die Alternative. Begründung "Schluckgefahr" ist gut — "Schleimhautreizung" auch. **OK, aber:** Im Plan-Step (Zeile 100) wird "Chlorhexidin-Spülung bei unter 2-Jährigen" erwähnt — Lukas ist 2,5 J., also gerade darüber. Logikkette etwas schwammig.
-- **Standard-Verweis:** DGKJ 2022 Mundpflege Kleinkind
-- **Empfehlung:** Konsistenz: einheitlich "unter 6 Jahren nicht empfohlen" statt einmal 2 J., einmal 6 J. Octenidin als kindgerechte Alternative im Lerntext erwähnen.
-
-### phase-durchfuehren — Step 4.3 Komplikation Schreien
-
-#### F-07 (NIEDRIG): "Sandra soll Lukas festhalten" — Begriff Fixierung könnte präziser
-- **Stelle:** phase-durchfuehren.ts Zeile 273-279
-- **Problem:** "Sandra soll Lukas festhalten, dann geht es schneller." Distraktor wird mit "Fixieren ist nur in Notfällen erlaubt" abgelehnt — pflegerechtlich korrekt, ABER: "Festhalten" durch Eltern bei medizinischen Maßnahmen ist nicht automatisch eine Fixierung im rechtlichen Sinn. **Therapeutisches Halten** (mit Einverständnis und Empathie) ist bei kleinen Kindern eine etablierte Technik (Hoehl/Kullick). Die Formulierung des Distraktors ("dann geht es schneller") macht es klar zur falschen Antwort wegen Motiv (Geschwindigkeit statt Kindeswohl) — gut. Aber das Feedback verallgemeinert: "Kinder festhalten ist nur in Notfällen erlaubt" — das ist zu pauschal.
-- **Standard-Verweis:** Hoehl/Kullick 2019, Kap. Maßnahmen mit Widerstand
-- **Empfehlung:** Feedback nuancieren: "Therapeutisches Halten mit Einverständnis und Sandras Stimme als Beruhigung kann sinnvoll sein — aber nicht als Strategie 'damit es schneller geht'. Hier liegt kein Notfall vor, die Pause + Bedarfsanalgesie sind die richtige Antwort."
-
-### phase-dokumentieren — Step 6.2 Kinderschutz-Doku
-
-#### F-08 (MITTEL): Wertung "wahrscheinlich schuldig" als Lehrbeispiel zu plump
-- **Stelle:** phase-dokumentieren.ts Zeile 112
-- **Problem:** Distraktor "Vater Kevin hat laut reagiert — ist wahrscheinlich schuldig" ist eine Karikatur — keine Pflegeperson würde das so dokumentieren. Plumper Distraktor verfehlt Lerneffekt.
-- **Standard-Verweis:** § 4 KKG, BGW-Empfehlung sachliche Dokumentation
-- **Empfehlung:** Subtilerer realistischer Anfänger-Fehler: "Vater Kevin ist sehr emotional und schwer ansprechbar gewesen, möglicherweise überfordert mit der Situation" — klingt empathisch, ist aber **Interpretation statt Beobachtung** und gehört nicht in die sachliche Dokumentation. Solche Wertungs-Schichten sind das, was Anfänger wirklich schreiben.
-
-### phase-evaluieren — Step 5.1 Wundstatus
-
-#### F-09 (NIEDRIG): "9/10" KUSS bei Aufnahme widerspricht patient.ts (8/10)
-- **Stelle:** phase-evaluieren.ts Zeile 54 (KUSS 9/10) vs. patient.ts Zeile 14 (KUSS 8/10) vs. phase-evaluieren Step 5.2 Zeile 109 (KUSS 9/10 um 09:20)
-- **Problem:** Inkonsistenz: patient.ts und phase-informieren sagen **KUSS 8/10 bei Aufnahme**, phase-evaluieren spricht von **KUSS 9/10 bei Aufnahme**. Das verwirrt, da der Schüler beide Werte sieht.
-- **Standard-Verweis:** Cross-Step-Konsistenz (siehe pflege-konformitaet.md)
-- **Empfehlung:** Auf einen Wert vereinheitlichen — vorzugsweise KUSS 8 bei Erstaufnahme (vor i.v.-Analgesie). Im Timeline-Step (5.2) auch konsistent halten.
+#### F-N04 (NIEDRIG): Festhalten-Feedback — Rechtliche Dimension fehlt
+- **Stelle:** phase-durchfuehren.ts, Zeile 350-355
+- **Problem:** Das Feedback zur Option "Sandra soll Lukas festhalten" ist jetzt gut nuanciert (therapeutisches Halten vs. Motiv "Geschwindigkeit"). Es fehlt aber ein kurzer Hinweis, dass Festhalten gegen den erklaerten Willen des Kindes (Lukas schreit und wehrt sich) OHNE Notfallsituation rechtlich als freiheitsentziehende Massnahme gewertet werden kann.
+- **Empfehlung:** Einen Satz ergaenzen: "Hier liegt kein Notfall vor; die richtige Antwort ist: Pause, KUSS-Reassessment, Bedarfsanalgesie."
 
 ## Cross-Step-Probleme
 
-- **KUSS-Werte 8/9** (siehe F-09) — patient.ts vs. phase-evaluieren inkonsistent
-- **Chlorhexidin-Altersgrenze** (F-06) — phase-planen nennt "unter 2 J.", phase-durchfuehren "unter 6 J." — vereinheitlichen
-- **Verbrühungs-Zusatzbedarf-Formel** (F-05) widerspricht der etablierten Parkland-/Galveston-Formel — Schüler bekommt einen falschen Eindruck der Größenordnung
-- **Wundreinigungs-Pflichtschritt** (F-02) im Verbandwechsel-Algorithmus widerspricht dem in Step 4.4 selbst geforderten Prinzip "Blasen nicht öffnen / minimale Manipulation"
+### CS-N01 (NIEDRIG): Emilia "8 Wochen" in Spektrum
+- Siehe F-N01. Betrifft nur den Spektrum-Eintrag, nicht den Kern-Content.
 
 ## Zusammenfassung
 
-- **HOCH:** 1 (F-01 Kühldauer 15-20 Min bei Kleinkind/15% KOF)
-- **MITTEL:** 5 (F-02 NaCl-Reinigung, F-03 Tetanus, F-04 KUSS-Score-Beschreibung, F-05 Flüssigkeitsformel, F-08 Karikatur-Distraktor)
-- **NIEDRIG:** 3 (F-06 CHX-Logik, F-07 Halten/Fixieren, F-09 KUSS-Inkonsistenz)
+- **0 Findings HOCH**
+- **0 Findings MITTEL**
+- **4 Findings NIEDRIG** (F-N01 Emilia-Alter, F-N02 KUSS-Summenlogik, F-N03 Matching-Erklaerungen, F-N04 Rechtliche Dimension)
+- **1 Cross-Step-Problem** (CS-N01, NIEDRIG)
 
-**Allgemeine Beobachtungen:**
-- Didaktisch sehr stark: Kommunikations-Stränge (Sandra-Schuldgefühle, Kevin-Deeskalation, Frau Fink-Ankündigung) sind herausragend gut umgesetzt — Sandwich-Prinzip, Empathie-zuerst-Strategie, klare Sprache. Validation und Anti-Anti-Pattern werden konsequent eingehalten.
-- Kinderschutz (§ 4 KKG) wird transparent und nicht-anklagend kommuniziert — vorbildlich.
-- KUSS-Skala-Highlight als Brilliant-First-Aufgabe ist starkes didaktisches Mittel.
-- B1-Konsistenz: durchgängig vorhanden, sprachlich gut.
-- Schwächen liegen primär in **medizinisch-pharmakologischen Detailwerten** (Kühldauer, Parkland-Formel, NaCl-Routine) — diese sollten gegen aktuelle DGV-/GNPI-Standards überprüft werden.
-- Kinästhetik-Anti-Patterns: keine gefunden. Pseudo-Empathie: keine gefunden.
+### Allgemeine Beobachtungen
 
-**K.O.-Verdikt:** **FAIL** — F-01 (Kühldauer) ist ein HOCH-Finding. Sandras Maßnahme als "korrekt" zu loben, obwohl 15-20 Min Kühlung bei einem 2,5-Jährigen mit 15% KOF Hypothermie-Risiko bedeutet, kann zu Schaden in der Praxis führen, wenn Schüler diese Empfehlung weitergeben. **Vor Live-Deploy F-01 anpassen** (Sandras Handlung emotional würdigen, im Lerntext aber den aktuellen Standard für Kleinkinder erklären). F-02 und F-05 sollten parallel mitkorrigiert werden — sie betreffen direkt anwendbare Pflegehandlungen.
+**Alle vorherigen HOCH/MITTEL-Findings sind vollstaendig behoben:**
+- Kuehlung: DGV/GNPI 2023 konform (max 10 Min, lauwarm, lokal, Waermeerhalt)
+- NaCl: bedarfsorientiert, nicht als Routine
+- Tetanus: differenziert, nicht ueberbewertet
+- KUSS: konsistent 8/10 in allen Dateien
+- Parkland: korrekte Formel, Arzt-Verantwortung benannt
+- CHX: einheitlich <6 Jahre, Octenidin als Alternative
+- Karikatur-Distraktor: realistisch ersetzt
+- Festhalten: nuanciert
 
----
+**Pflege-inhaltlich herausragend:**
+- KUSS statt NRS bei Kleinkind: korrekt und didaktisch stark
+- Kinderschutz-Kommunikation: "Standard, nicht Verdacht" durchgehend
+- Verbruehungsgrade (DGV 2023): "weniger Schmerz = schlimmerer Grad" als Merkhilfe
+- Holliday-Segar + Parkland: korrekt berechnet
+- Sandra/Kevin-Dynamik: realistisch, nicht karikiert
+- 6 Inline-Wissen-Bausteine: gut platziert, mit Spektrum, Karteikarten und Faustregeln
+- Feuchte Wundbehandlung (Winter 1962): korrekt erklaert
+- Mundpflege Kleinkinder (DGKJ 2022): korrekt abgegrenzt
 
-## Fixes durchgeführt — 2026-04-26
+**Kein Pseudo-Empathie-Bias.** Kein erfundener Content. Kein Anti-Pattern aus pflege-konformitaet.md.
 
-**Alle 9 Findings bearbeitet — PASS**
-
-| Finding | Schweregrad | Status | Maßnahme |
-|---------|-------------|--------|----------|
-| F-01 | HOCH | ✅ Fixed | `patient.ts` (hintergrund + hintergrundB1) und `phase-informieren.ts` Step 1.2 (C1+B1): Sandras Erstversorgung umgeschrieben — durchnässte Kleidung entfernt, ~8 Min lokale Kurzkühlung mit lauwarmem Wasser (~20 °C), Wärmeerhalt am Restkörper. DGV/GNPI-Standard für Kinder unter 8 J. bzw. >10 % KOF (max. 10 Min, lauwarm, Hypothermie-Vermeidung) im Lerntext explizit benannt. Sandra wird weiterhin gewürdigt ("schnell und richtig gemacht"), Schüler lernt aktuellen Standard. |
-| F-02 | MITTEL | ✅ Fixed | `phase-durchfuehren.ts` Step 4.4 (C1+B1): NaCl-0,9-%-Spülung von Pflichtschritt 2 auf bedarfsorientiert reduziert ("nur bei Verschmutzung, Wundsekretkrusten oder Belägen — bei sauberer intakter Wundfläche keine routinemäßige Spülung"). DGV 2023 "minimale Manipulation" + Hoehl/Kullick als Quellen ergänzt. |
-| F-03 | MITTEL | ✅ Fixed | `phase-informieren.ts` Step 1.4 (Tetanus-Highlight, reason + reasonB1): "Sehr relevant" → "Relevant zu prüfen". Klarstellung: Bei reiner Verbrühung sterilisiert die Hitze die Wundfläche, STIKO-Auffrischung nur bei tieferen/kontaminierten Wunden. Dokumentation des Status genügt — kein automatischer Handlungsbedarf bei Verbrühung. |
-| F-04 | MITTEL | ✅ Fixed | `phase-beobachten.ts` Step 2.1 (C1+B1, alle 5 Highlight-Segmente): KUSS-Beschreibungen anschärft, sodass Score 8/10 plausibel wird (lautes Schreien in Wellen = 2 P, starkes Grimassieren = 2 P, aufbäumend/verkrampft = 2 P, kräftiges Strampeln = 2 P, kräftiges Wegstoßen + ruhelos = 2 P → Summe ~10, durch einsetzende Analgesie 8/10). Kontext "vor/während Analgesie-Beginn" explizit gemacht. |
-| F-05 | MITTEL | ✅ Fixed | `phase-planen.ts` Step 3.3 (Calculation explanation + explanationB1): Falsche Zusatzbedarfs-Formel (1–2 ml/kg/% KOF) ersetzt durch Parkland-Formel (4 ml × kg × % KOF in 24h, davon 50 % in den ersten 8h). Modifizierte Galveston-Formel als pädiatrische Alternative erwähnt. Beispielrechnung Lukas: ~790 ml zusätzlich/24h. Genaue Festlegung weiterhin durch Arzt. |
-| F-06 | NIEDRIG | ✅ Fixed | Konsistenz CHX-Altersgrenze hergestellt: `phase-planen.ts` Step 3.2 (vorher "unter 2 J.") → einheitlich "unter 6 Jahren nicht empfohlen" (DGKJ 2022). Octenidin und schluckbare Kamille/Salbei als kindgerechte Alternativen explizit ergänzt — sowohl in `phase-planen.ts` Step 3.2 als auch in `phase-durchfuehren.ts` Step 4.5 MC-Feedback. |
-| F-07 | NIEDRIG | ✅ Fixed | `phase-durchfuehren.ts` Step 4.3 (Branching-Distraktor C1+B1): Feedback nuanciert — therapeutisches Halten durch Eltern (mit Einverständnis, ruhiger Stimme, als beruhigender Halt) ist nach Hoehl/Kullick 2019 etabliert. Falsch ist hier das Motiv ("damit es schneller geht"), nicht das Halten an sich. Pause + Bedarfsanalgesie + KUSS-Reassessment bleiben die korrekte Antwort. |
-| F-08 | MITTEL | ✅ Fixed | `phase-dokumentieren.ts` Step 6.2 Matching: Karikatur-Distraktor "Vater Kevin hat laut reagiert — ist wahrscheinlich schuldig" ersetzt durch realistischen Anfänger-Fehler "Vater Kevin ist sehr emotional und schwer ansprechbar gewesen, möglicherweise überfordert mit der Situation" — klingt empathisch, ist aber Interpretation statt Beobachtung und gehört nicht in die sachliche Dokumentation. |
-| F-09 | NIEDRIG | ✅ Fixed | KUSS-Wert bei Aufnahme einheitlich auf 8/10 gesetzt: `phase-evaluieren.ts` Step 5.1 categoryItem (vorher 9/10 → 8/10) und Step 5.2 timeline-Event t1 (Title "KUSS 9/10" → "KUSS 8/10", Time-Label "Unfall → Aufnahme", Beschreibung präzisiert). Konsistent zu `patient.ts` und `phase-beobachten.ts`. |
-
-**Cross-Step-Konsistenz nachgezogen:**
-- Kühldauer in `phase-dokumentieren.ts` Step 6.2 (Unfallhergang-Item) auf neue Erstversorgungs-Beschreibung angepasst (Kleidung entfernt, ~8 Min Kurzkühlung lauwarm, Wärmeerhalt).
-- KUSS 8/10 durchgehend (patient.ts ↔ phase-beobachten Step 2.1 ↔ phase-evaluieren Step 5.1+5.2).
-- CHX-Altersgrenze "unter 6 J." durchgehend (phase-planen ↔ phase-durchfuehren).
-
-**Nachgezogene Plan-Findings (aus pflege-review-plan.md, 2026-04-26):**
-- **Plan-F-04 Hydrokolloid (MITTEL) [GEFIXT 2026-04-26]:** `phase-planen.ts` Step 3.2 (C1+B1): Hydrokolloid ist bei nässender Akutwunde Grad 2a suboptimal (Mazerationsgefahr). Erste Wahl ist jetzt explizit **silikonbeschichteter Polyurethanschaum** (z. B. Mepilex Border / Mepilex Ag). Hydrokolloid wird als spätere Option (saubere, granulierende Wunde, geringes Exsudat) gekennzeichnet. Quellen: DGV 2023, Hoehl/Kullick 2019.
-- **Plan-F-06 Blasen-Management (NIEDRIG) [GEFIXT 2026-04-26]:** `phase-planen.ts` Step 3.2 (C1+B1): Hinweis ergänzt, dass kleine intakte Blasen belassen werden, großflächige oder spannungsreiche Blasen aber vom Arzt steril punktiert werden können (DGV 2023) — klare Trennung Pflege ↔ Ärztliche Entscheidung.
-
-**Validierung:**
-- `npx tsc --noEmit` — PASS (keine Fehler).
-- Alle Korrekturen wurden in C1- UND B1-Varianten parallel durchgeführt.
-- Keine Änderungen in `src/` — ausschließlich `content/ce-02/situationen/ls-lukas-verbruehung/`.
-
-**Status:** PASS — alle K.O.-Findings behoben, Live-Deploy aus pflegefachlicher Sicht freigegeben. Plan-Findings F-04 und F-06 nachgezogen; verbleibende NIEDRIG-Findings im Plan (F-01 HF-Tabellen-Logik, F-02 expliziter Wassertemp-Wert, F-03 KUSS-Schwelle ≥4 explizit, F-05 Holliday-Segar pflege/arzt-Trennung) sind didaktisch-redaktionelle Hinweise auf Plan-Ebene und bereits im Code in den Erläuterungstexten ausreichend abgebildet (Vitalwerte mit Schmerz-Stress-Kontext, Lauwarm-Hinweis ~20 °C in patient.ts, KUSS-Score 8/10 als interventionspflichtig kommuniziert, Parkland-Formel im Calculation-Step explizit als Arzt-Verordnung benannt).
-
-
----
-
-**K.O.-Verdikt (final, 2026-04-26): PASS** — alle HOCH/MITTEL/NIEDRIG-Findings durch Fix-Agents adressiert (siehe Fix-Block oben). TypeScript clean. Live-Deploy freigegeben.
+- **K.O.-Verdikt: PASS**

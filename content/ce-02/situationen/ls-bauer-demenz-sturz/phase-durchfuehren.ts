@@ -388,7 +388,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
             {
               id: "e4",
               label:
-                "Kniegelenk in Neutralstellung auspolstern (Lagerungsrolle unter die Kniekehle)",
+                "Ferse unterpolstern (Lagerungsrolle unter den Unterschenkel, Ferse frei — Eigengewicht foerdert Streckung)",
             },
           ],
         },
