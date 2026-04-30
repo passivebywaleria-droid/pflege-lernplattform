@@ -27,28 +27,27 @@ Dieser Report ist ein vollstaendiges Re-Review des Codes nach den Fixes vom 2026
 
 ### phase-beobachten — ce02-bauer-beob-04-haut-trinkprotokoll (highlight)
 
-#### F-02 (MITTEL): Inkontinenz-Segment suggeriert "Wechseln = Fehler"
+#### F-02 (MITTEL) [GEFIXT 2026-04-30]: Inkontinenz-Segment suggeriert "Wechseln = Fehler"
 
 - **Stelle:** Zeile 353-358, phase-beobachten.ts, highlightSegments[5]
-- **Problem:** Segment-Text "Inkontinenzversorgung 3× gewechselt in der Nacht" ist mit isError=true markiert. Die reason-Texte differenzieren zwar korrekt (IAD-Risiko, Sturzrisiko durch naechtliche Polyurie), aber der Segment-Text selbst suggeriert: "Haeufiges Wechseln = Risiko". Tatsaechlich ist haeufiges Wechseln eine Schutzhandlung. Das Risiko liegt in der Haeufigkeit des Nasswerdens zwischen den Wechseln.
-- **Standard-Verweis:** DNQP Foerderung Harnkontinenz 2014; DNQP Hinweispapier IAD
-- **Empfehlung:** Segment-Text aendern zu: "Inkontinenzversorgung 3× in der Nacht nass gewechselt," — damit das Nasswerden als Risikofaktor erkennbar ist, nicht das Wechseln.
+- **Problem:** Segment-Text "Inkontinenzversorgung 3× gewechselt in der Nacht" suggeriert "Haeufiges Wechseln = Risiko". Tatsaechlich liegt das Risiko im haeufigen Nasswerden.
+- **Fix:** Segment-Text geaendert zu: "Inkontinenzversorgung 3× nass gewechselt in der Nacht," — Nasswerden als Risikofaktor erkennbar.
 
 ### phase-evaluieren — ce02-bauer-eval-01b (inlineWissen)
 
-#### F-03 (NIEDRIG): Grammatikfehler im B1-Vertiefungstext
+#### F-03 (NIEDRIG) [GEFIXT 2026-04-30]: Grammatikfehler im B1-Vertiefungstext
 
 - **Stelle:** Zeile 125, phase-evaluieren.ts, vertiefungB1
-- **Problem:** "Du musst pruefst" — Verb doppelt konjugiert. Soll heissen: "Du musst pruefen" oder "Du pruefst".
-- **Empfehlung:** Korrigieren zu "Du musst pruefen".
+- **Problem:** "Du musst pruefst" — Verb doppelt konjugiert.
+- **Fix:** Korrigiert zu "Du musst pruefen".
 
 ### phase-planen — ce02-bauer-plan-06-freiheitsentziehung (truefalse)
 
-#### F-04 (NIEDRIG): Sensormatten — Rechtshinweis optional
+#### F-04 (NIEDRIG) [GEFIXT 2026-04-30]: Sensormatten — Rechtshinweis optional
 
 - **Stelle:** Zeile 416-421, phase-planen.ts
-- **Problem:** Aussage "Sensormatten gelten rechtlich nicht als Fixierung" ist die herrschende Rechtsauffassung und fuer die Ausbildung korrekt. Einzelne Gerichte haben Sensormatten in Kombination mit verschlossener Stationstuer als FEM eingestuft. Ein kurzer Hinweis auf diese Debatte waere didaktisch wertvoll, ist aber kein Pflichtfehler.
-- **Empfehlung:** Erklaerung optional ergaenzen: "Einwilligung des Betreuers wird dennoch empfohlen. Rechtliche Grauzone wenn Sensormatte + verschlossene Stationstuer kombiniert werden."
+- **Problem:** Aussage "Sensormatten gelten rechtlich nicht als Fixierung" ohne Hinweis auf Debatte bei Kombination mit verschlossener Stationstuer.
+- **Fix:** Erklaerung ergaenzt: "Rechtliche Grauzone: In Kombination mit verschlossener Stationstür haben einzelne Gerichte Sensormatten als Teil einer FEM eingestuft."
 
 ---
 
@@ -96,8 +95,8 @@ Dieser Report ist ein vollstaendiges Re-Review des Codes nach den Fixes vom 2026
 ## Zusammenfassung
 
 - **1 Finding HOCH** (F-01: Lagerungsrolle unter Kniekehle bei Streckdefizit)
-- **1 Finding MITTEL** (F-02: Inkontinenz-Segment-Text suggeriert "Wechseln = Fehler")
-- **2 Findings NIEDRIG** (F-03: Grammatik B1, F-04: Sensormatten-Rechtshinweis optional)
+- **1 Finding MITTEL** (F-02: Inkontinenz-Segment-Text [GEFIXT])
+- **2 Findings NIEDRIG** (F-03: Grammatik B1 [GEFIXT], F-04: Sensormatten-Rechtshinweis [GEFIXT])
 
 **Allgemeine Beobachtungen:**
 - **Pseudo-Empathie-Bias:** Nicht vorhanden. Sprache ist konkret, fachbezogen, nicht romantisierend.

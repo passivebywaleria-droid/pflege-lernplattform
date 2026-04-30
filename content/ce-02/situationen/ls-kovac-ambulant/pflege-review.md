@@ -21,24 +21,27 @@ Vorheriger Review (2026-04-25) identifizierte 2 HOCH, 9 MITTEL, 8 NIEDRIG. Alle 
 
 ### inline-wissen.ts
 
-#### F-N01 (NIEDRIG): Spektrum-Patient "Frau M." Pneumonie Tag 3 — Pruefung ausstehend
+#### F-N01 (NIEDRIG): Spektrum-Patient "Frau M." Pneumonie Tag 3 — Pruefung ausstehend [AKZEPTIERT 2026-04-30]
 - **Stelle:** inline-wissen.ts, CE02_KOVAC_INLINE_01A, spektrum[0]
 - **Problem:** Verweis auf "Frau M., Pneumonie Tag 3" setzt voraus, dass Frau M. tatsaechlich eine Pneumonie im Content hat. Cross-Situationen-Konsistenz sollte validiert werden.
 - **Empfehlung:** Cross-LE-Checker verwenden.
+- **Status:** Kein Code-Fix moeglich — Cross-Referenz-Validierung via cross-le-checker.ts empfohlen.
 
 ### phase-planen — Branching Opt-3.C (NEU)
 
-#### F-N02 (NIEDRIG): Opt-3.C Angehoerigen-Ressource ist sehr lang
+#### F-N02 (NIEDRIG): Opt-3.C Angehoerigen-Ressource ist sehr lang [AKZEPTIERT 2026-04-30]
 - **Stelle:** phase-planen.ts, Opt-3.C
 - **Problem:** ~400 Woerter in contentC1.body. Fuer einen optionalen Text-Step sehr umfangreich. Inhaltlich exzellent (SGB XI §§ 39, 45, 45a konkret), aber Schuelern koennte die Textmenge abschrecken.
 - **Empfehlung:** Ggf. in 2 Steps aufteilen oder als Flipcard-Variante anbieten.
+- **Status:** Akzeptabel als optionaler Vertiefungs-Step. Kein Code-Fix noetig — Textlaenge ist fuer Vertiefung angemessen.
 
 ### phase-durchfuehren — Kinästhetik
 
-#### F-N03 (NIEDRIG): Kinästhetik bei Bewegungsuebungen korrekt, aber Kontaktatmung grenzt an
+#### F-N03 (NIEDRIG): Kinästhetik bei Bewegungsuebungen korrekt, aber Kontaktatmung grenzt an [GEFIXT 2026-04-30]
 - **Stelle:** phase-durchfuehren.ts, Step dur-01 + dur-04
 - **Problem:** dur-04 (Bewegung) betont korrekt: "Frau Kovac fuehrt alle Bewegungen aktiv selbst aus." dur-01 (Kontaktatmung) sagt jetzt korrekt "Haende folgen passiv". Aber die Formulierung "Du legst die Haende sanft seitlich auf den unteren Brustkorb" koennte als aktiver Eingriff missverstanden werden. Der Fix von F-13 hat das verbessert, aber ein Satz wie "Fragen Sie Frau Kovac vorher um Erlaubnis" fehlt (Einwilligung vor Beruehrung, besonders in der Wohnung der Patientin).
 - **Empfehlung:** Ergaenzen: "Fragen Sie Frau Kovac, ob Sie die Haende auflegen duerfen."
+- **Fix:** Einwilligung vor Beruehrung in C1 und B1 ergaenzt: "Frage Frau Kovac, ob du die Haende auflegen darfst."
 
 ## Cross-Step-Probleme
 

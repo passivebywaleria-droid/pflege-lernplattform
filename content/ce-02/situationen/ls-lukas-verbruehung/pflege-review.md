@@ -27,44 +27,43 @@ Erster Review am 2026-04-25 ergab 1 HOCH, 5 MITTEL, 3 NIEDRIG. Alle 9 Findings w
 
 ### phase-informieren.ts — Step 1.1b (inlineWissen: Kuehlung)
 
-#### F-N01 (NIEDRIG): Emilia-Alter im Spektrum "8 Wochen" statt "4 Monate"
-- **Stelle:** phase-informieren.ts, Zeile 138 — Spektrum-Eintrag Emilia
+#### F-N01 (NIEDRIG) [GEFIXT 2026-04-30]: Emilia-Alter im Spektrum "8 Wochen" statt "4 Monate"
+- **Stelle:** phase-informieren.ts, phase-beobachten.ts, phase-durchfuehren.ts — Spektrum-Eintraege Emilia
 - **Problem:** Emilia wird als "8 Wochen" beschrieben. In patient.ts der Emilia-Situation steht Alter = 4 Monate.
-- **Empfehlung:** Korrigieren auf "4 Monate".
+- **Fix:** Alle Vorkommen (6 Stellen in 3 Dateien) auf "4 Monate" korrigiert.
 
 ### phase-beobachten.ts — Step 2.1 (Highlight: KUSS Brilliant)
 
-#### F-N02 (NIEDRIG): KUSS-Summenlogik — 5x2=10, erklaert als 8
-- **Stelle:** phase-beobachten.ts, Zeile 164-166 — Segment "Motorische Unruhe"
-- **Problem:** Alle 5 Highlight-Segmente beschreiben Score 2 pro Kategorie. Summe = 10/10. Im reason-Text steht aber "KUSS 8/10 bei einsetzender, aber noch unvollstaendiger Wirkung des Schmerzmittels — Maximalwert waere 10/10 ohne jede Analgesie." Die Erklaerung ist plausibel (Analgesie wirkt teilweise), aber der Schueler sieht alle 5 Kategorien bei maximal und rechnet 10, nicht 8. Leichte Irritation moeglich.
-- **Empfehlung:** Entweder eine Kategorie auf Score 1 herunterstufen (z.B. motorische Unruhe auf "maessig" statt "ruhelos" = 1 statt 2) oder im body klarer formulieren: "Bei Aufnahme war der Score 10/10 — das i.v.-Schmerzmittel beginnt zu wirken, deshalb dokumentieren wir KUSS 8/10."
+#### F-N02 (NIEDRIG) [GEFIXT 2026-04-30]: KUSS-Summenlogik — 5x2=10, erklaert als 8
+- **Stelle:** phase-beobachten.ts, Segmente "Rumpfhaltung" + "Motorische Unruhe"
+- **Problem:** Alle 5 Highlight-Segmente beschrieben Score 2 pro Kategorie (Summe 10), aber dokumentiert war KUSS 8/10.
+- **Fix:** Rumpfhaltung auf Score 1 ("unruhig/angespannt" statt "aufbäumend") + Motorische Unruhe auf Score 1 ("mäßig unruhig" statt "ruhelos") heruntergestuft. Summe jetzt 2+2+1+2+1 = 8/10 — konsistent mit dokumentiertem KUSS-Wert. Erklaerungstexte angepasst: i.v.-Analgesie beginnt bei motorischer Komponente zu wirken.
 
 ### phase-dokumentieren.ts — Step 6.2 (Matching: Kinderschutz-Doku)
 
-#### F-N03 (NIEDRIG): Matching-Pairs ohne individuelle Erklaerungen
+#### F-N03 (NIEDRIG) [GEFIXT 2026-04-30]: Matching-Pairs ohne individuelle Erklaerungen
 - **Stelle:** phase-dokumentieren.ts, Zeile 167-197
-- **Problem:** Die matchingPairs haben kein explanation-Feld pro Pair. Der Schueler erfaehrt nicht im Detail WARUM "Kevin ist emotional/ueberfordert" nicht in die Dokumentation gehoert. Besonders das letzte Item ("Empfehlung Jugendamt ohne konkreten Anhaltspunkt") braucht eine Erklaerung warum das falsch und rechtlich problematisch ist.
-- **Standard-Verweis:** pflege-konformitaet.md — Erklaerung pro Segment
-- **Empfehlung:** Zumindest im body einen Absatz ergaenzen: "Nie wertende Formulierungen ueber Eltern. Nie Empfehlungen aussprechen die ueber deine Kompetenz hinausgehen."
+- **Problem:** matchingPairs ohne Erklaerung warum wertende Formulierungen und kompetenzueberschreitende Empfehlungen nicht in die Dokumentation gehoeren.
+- **Fix:** body-Text (C1 + B1) um erklaerenden Absatz ergaenzt: Nie wertende Formulierungen ueber Eltern, nie Empfehlungen die ueber pflegerische Kompetenz hinausgehen.
 
 ### phase-durchfuehren.ts — Step 4.3 (Branching: Lukas schreit)
 
-#### F-N04 (NIEDRIG): Festhalten-Feedback — Rechtliche Dimension fehlt
+#### F-N04 (NIEDRIG) [GEFIXT 2026-04-30]: Festhalten-Feedback — Rechtliche Dimension fehlt
 - **Stelle:** phase-durchfuehren.ts, Zeile 350-355
-- **Problem:** Das Feedback zur Option "Sandra soll Lukas festhalten" ist jetzt gut nuanciert (therapeutisches Halten vs. Motiv "Geschwindigkeit"). Es fehlt aber ein kurzer Hinweis, dass Festhalten gegen den erklaerten Willen des Kindes (Lukas schreit und wehrt sich) OHNE Notfallsituation rechtlich als freiheitsentziehende Massnahme gewertet werden kann.
-- **Empfehlung:** Einen Satz ergaenzen: "Hier liegt kein Notfall vor; die richtige Antwort ist: Pause, KUSS-Reassessment, Bedarfsanalgesie."
+- **Problem:** Feedback-Text erwaehnte nicht, dass Festhalten gegen erklaerten Willen des Kindes ohne Notfall als FEM gewertet werden kann.
+- **Fix:** Satz ergaenzt (C1 + B1): "Festhalten gegen den erkennbaren Willen eines Kindes ohne Notfallsituation kann als freiheitsentziehende Maßnahme gewertet werden."
 
 ## Cross-Step-Probleme
 
-### CS-N01 (NIEDRIG): Emilia "8 Wochen" in Spektrum
-- Siehe F-N01. Betrifft nur den Spektrum-Eintrag, nicht den Kern-Content.
+### CS-N01 (NIEDRIG) [GEFIXT 2026-04-30]: Emilia "8 Wochen" in Spektrum
+- Siehe F-N01. Alle Spektrum-Eintraege auf "4 Monate" korrigiert.
 
 ## Zusammenfassung
 
 - **0 Findings HOCH**
 - **0 Findings MITTEL**
-- **4 Findings NIEDRIG** (F-N01 Emilia-Alter, F-N02 KUSS-Summenlogik, F-N03 Matching-Erklaerungen, F-N04 Rechtliche Dimension)
-- **1 Cross-Step-Problem** (CS-N01, NIEDRIG)
+- **4 Findings NIEDRIG** (F-N01 Emilia-Alter [GEFIXT], F-N02 KUSS-Summenlogik [GEFIXT], F-N03 Matching-Erklaerungen [GEFIXT], F-N04 Rechtliche Dimension [GEFIXT])
+- **1 Cross-Step-Problem** (CS-N01, NIEDRIG [GEFIXT mit F-N01])
 
 ### Allgemeine Beobachtungen
 

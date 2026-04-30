@@ -234,7 +234,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DOKUMENTIEREN: SituationsPhase = {
             "Würdevolle Kommunikation bei Sturz-Angst — Angst validieren, Ursache benennen ('Tabletten, nicht Alter'), konkreten Plan geben.",
             "Rechtliche Grenzen der Fixierung (§ 1906a BGB) — beidseitige Bettgitter ohne Zustimmung sind verboten und keine Prophylaxe.",
             "Sofortmaßnahmen nach Sturz: Prüfen vor Bewegen. Bei Hüftfraktur-Zeichen (Bein-Verkürzung + Außenrotation): nicht bewegen, Arzt.",
-            "Interprofessionelle Kommunikation — SBAR-Anruf strukturiert Übergabe an Arzt. Und: Sturzprophylaxe ist Team-Aufgabe (Cochrane 2023: -24 % Sturzrate).",
+            "Interprofessionelle Kommunikation — SBAR-Anruf strukturiert Übergabe an Arzt. Und: Sturzprophylaxe ist Team-Aufgabe (Cochrane Gillespie et al. 2012, aktualisiert 2023: multifaktorielle Interventionen senken Sturzrate um ca. 21-31 %).",
             "Sturzprotokoll — 9 Pflicht-Elemente, sachlich, zeitnah. Auch verletzungsfreie Stürze + Near-Miss dokumentieren.",
             "Offene Anschluss-Frage für die nächste Session: Wie würdest du Frau M. auf die Entlassung vorbereiten? Was braucht Tochter Birgit?",
           ],

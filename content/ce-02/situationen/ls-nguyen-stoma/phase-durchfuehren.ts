@@ -106,7 +106,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
             text: "Genau in der Stoma-Größe (60 mm) zuschneiden — dann sitzt es perfekt.",
             isCorrect: false,
             explanation:
-              "Zu eng. Eine 1:1-Passung klemmt das Stoma ab — das gefährdet die Durchblutung der Stomaschleimhaut (Risiko: livide Verfärbung, Nekrose). Außerdem reibt die Plattenkante an der empfindlichen Schleimhaut. 2 mm Sicherheitsabstand ist Pflicht.",
+              "Zu eng. Eine 1:1-Passung klemmt das Stoma ab — das gefährdet die Durchblutung der Stomaschleimhaut. Folge: livide Verfärbung, im schlimmsten Fall Stomanekrose — ein chirurgischer Notfall. Außerdem reibt die Plattenkante an der empfindlichen Schleimhaut. 2 mm Sicherheitsabstand ist Pflicht.",
             explanationB1:
               "Zu eng. Wenn das Loch genau gleich groß ist, klemmt die Platte das Stoma ab. Das ist gefährlich. Loch = Stoma + 2 mm.",
           },
@@ -158,9 +158,9 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
                   "Herr Nguyen zieht die Schultern hoch. Er atmet kurz durch den Mund.",
                 score: 2,
                 feedback:
-                  "Transparenz ist grundsätzlich wichtig und richtig — der Patient soll wissen was passiert. Bei Herrn Nguyen aber mit Schamthema zu viel: laufende Echtzeit-Kommentierung jedes Schritts wird als aufdringlich erlebt. Beim nächsten Mal: kurze Ankündigungen am Anfang jeder Handlung, dazwischen Stille zulassen. Das wahrt Würde und gibt trotzdem Orientierung.",
+                  "Transparenz ist grundsätzlich wichtig und richtig — der Patient soll wissen was passiert. Bei Herrn Nguyen aber mit Schamthema zu viel: laufende Echtzeit-Kommentierung jedes Schritts wird als aufdringlich erlebt. Praxis-Tipp: Kurze Ankündigungen am Anfang jeder Handlung ('Jetzt lege ich den neuen Beutel an'), dazwischen Stille zulassen. Das wahrt Würde und gibt trotzdem Orientierung.",
                 feedbackB1:
-                  "Du machst etwas Wichtiges richtig: du erklärst, was passiert. Bei Herrn Nguyen ist es aber zu viel auf einmal. Beim nächsten Mal: kurze Sätze am Anfang, dazwischen Stille. Dann fühlt er sich nicht überfordert.",
+                  "Du machst etwas Wichtiges richtig: du erklärst, was passiert. Bei Herrn Nguyen ist es aber zu viel auf einmal. Praxis-Tipp: Kurze Sätze am Anfang ('Jetzt lege ich den neuen Beutel an'), dazwischen Stille. Dann fühlt er sich nicht überfordert.",
               },
               {
                 text: "Kurze sachliche Sätze zu Beginn und bei wichtigen Momenten, dazwischen Stille lassen: 'Ich löse jetzt die alte Platte. Kurz warten...' — dann Stille — 'Fast fertig.'",

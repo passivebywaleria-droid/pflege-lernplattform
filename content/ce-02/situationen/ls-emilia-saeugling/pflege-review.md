@@ -37,25 +37,24 @@ Erster Review am 2026-04-25 ergab 1 HOCH (Du/Sie-Inkonsistenz), 4 MITTEL, 5 NIED
 
 ### inline-wissen.ts — IW-05 KUSS Wiederbegegnung
 
-#### F-N01 (NIEDRIG): KUSS-Quelle Buettner 1998 vs. 2000
+#### F-N01 (NIEDRIG) [GEFIXT 2026-04-30]: KUSS-Quelle Buettner 1998 vs. 2000
 - **Stelle:** inline-wissen.ts Zeile 345 — `Büttner W. et al. (1998)`
-- **Problem:** In der Lukas-Situation wird Buettner/Finke 2000 als Quelle genannt, hier 1998. Beides akzeptabel (Originalpublikation vs. Handbuch-Edition), aber CE-uebergreifend inkonsistent.
-- **Empfehlung:** Eine Jahreszahl waehlen und CE-uebergreifend vereinheitlichen.
+- **Problem:** In der Lukas-Situation wird Buettner/Finke 2000 als Quelle genannt, hier 1998. CE-uebergreifend inkonsistent.
+- **Fix:** Alle Vorkommen auf "Büttner W./Finke W. (2000)" vereinheitlicht (Lukas-Konvention).
 
 ### inline-wissen.ts — IW-05 KUSS Wiederbegegnung
 
-#### F-N02 (NIEDRIG): wiederbegegnung.basisPatient "Lukas (CE-10)" — CE falsch
+#### F-N02 (NIEDRIG) [GEFIXT 2026-04-30]: wiederbegegnung.basisPatient "Lukas (CE-10)" — CE falsch
 - **Stelle:** inline-wissen.ts Zeile 403 — `basisPatient: "Lukas (CE-10)"`
-- **Problem:** Lukas ist eine CE-02-Situation (ls-lukas-verbruehung), nicht CE-10. Die KUSS-Skala wird auch in CE-10 (Kinderkrankenpflege) als Thema angelegt, aber Lukas als Patient gehoert zu CE-02.
-- **Standard-Verweis:** Cross-Step-Konsistenz
-- **Empfehlung:** Korrigieren: `"Lukas (CE-02)"` oder genauer `"Lukas K. (CE-02, Verbruehung)"`.
+- **Problem:** Lukas ist CE-02, nicht CE-10.
+- **Fix:** Korrigiert zu `"Lukas K. (CE-02, Verbrühung)"`.
 
 ### inline-wissen.ts — IW-03 SBAR
 
-#### F-N03 (NIEDRIG): "30% Informationsverlust" — Quellenbeleg
-- **Stelle:** inline-wissen.ts Zeile 209 — "Unstrukturierte Uebergaben vergessen durchschnittlich 30% der relevanten Informationen"
-- **Problem:** Die NHS-Institute-Studie (2010) gibt die 30%-Zahl als Orientierung an, aber sie ist methodisch umstritten (Beobachtungsstudie, nicht randomisiert). Der "<5%" SBAR-Wert ist noch weniger belastbar. Fuer eine Lernplattform vertretbar als Merkhilfe, aber "Studien zeigen" suggeriert harte Evidenz.
-- **Empfehlung:** Formulierung abschwaechen: "Schätzungen zeigen" statt "Studien zeigen", oder den Satz streichen und durch die praxisnaehe Begruendung ersetzen ("SBAR stellt sicher, dass keine Information vergessen wird — auch nachts um 3:15 Uhr").
+#### F-N03 (NIEDRIG) [GEFIXT 2026-04-30]: "30% Informationsverlust" — Quellenbeleg
+- **Stelle:** inline-wissen.ts Zeile 209
+- **Problem:** "Studien zeigen" suggeriert harte Evidenz fuer methodisch umstrittene Zahlen.
+- **Fix:** C1 "Studien zeigen" → "Schätzungen zeigen" + "bis zu 30%", B1 "vergisst man etwa 30%" → "verliert man bis zu 30%", Karteikarte "verlieren ~30%" → "verlieren bis zu 30%".
 
 ### phase-planen.ts — Step 3.3 (Matrix)
 
@@ -95,7 +94,7 @@ Keine neuen Cross-Step-Probleme gefunden. Alle vorherigen wurden gefixt.
 
 - **0 Findings HOCH**
 - **0 Findings MITTEL**
-- **4 Findings NIEDRIG** (F-N01 KUSS-Quelle, F-N02 Lukas CE-Nummer, F-N03 SBAR-Evidenz, F-N04 Matrix-Semantik)
+- **4 Findings NIEDRIG** (F-N01 KUSS-Quelle [GEFIXT], F-N02 Lukas CE-Nummer [GEFIXT], F-N03 SBAR-Evidenz [GEFIXT], F-N04 Matrix-Semantik — kein Handlungsbedarf)
 - **0 Cross-Step-Probleme**
 
 ### Allgemeine Beobachtungen

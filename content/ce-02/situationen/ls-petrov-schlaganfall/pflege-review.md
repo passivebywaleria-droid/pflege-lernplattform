@@ -18,55 +18,60 @@ Dieser Review prüft den Code-Stand nach Behebung aller 21 Findings des Erst-Rev
 
 ### phase-evaluieren.ts — ce02-petrov-eval-02 (mc)
 
-#### F-01 (MITTEL): IDDSI-Stufenbezeichnung inkonsistent zu Phase 1
+#### F-01 (MITTEL): IDDSI-Stufenbezeichnung inkonsistent zu Phase 1 [GEFIXT 2026-04-30]
 
 - **Stelle:** phase-evaluieren.ts, Step 5.2, explanation der korrekten Antwort
 - **Problem:** Dort steht: "Level 2 (leicht verdickt) -> Level 3 (mäßig verdickt)". In Phase 1 (phase-informieren.ts, Inline-Wissen IDDSI, kerntext + kerntextB1) wird Level 2 konsistent als **mäßig verdickt** (mildly thick) und Level 3 als **stark verdickt** (moderately thick) beschrieben. Offizielles IDDSI-Framework 2019: Level 1 = slightly thick (leicht verdickt), Level 2 = mildly thick (mäßig verdickt), Level 3 = moderately thick. "Leicht verdickt" in Phase 5 wäre Level 1.
 - **Standard-Verweis:** IDDSI 2019 Framework (iddsi.org/framework)
 - **Empfehlung:** In phase-evaluieren.ts Step 5.2 korrigieren: "Level 2 (mäßig verdickt) -> Level 3 (stark verdickt)" -- konsistent zu Phase 1 und IDDSI-Framework.
+- **Fix:** Korrigiert auf "Level 2 (mäßig verdickt) -> Level 3 (stark verdickt)" — konsistent zu Phase 1 und IDDSI 2019.
 
 ---
 
 ### phase-informieren.ts — ce02-petrov-info-01 (text)
 
-#### F-02 (NIEDRIG): Tippfehler "angedicktener"
+#### F-02 (NIEDRIG): Tippfehler "angedicktener" [GEFIXT 2026-04-30]
 
 - **Stelle:** phase-informieren.ts, Step 1.1, contentC1.body, SBAR-A-Abschnitt
 - **Problem:** "Orale Ernährung mit angedicktener Flüssigkeit" -- korrekt wäre "angedickter Flüssigkeit" (Dativ feminin).
 - **Empfehlung:** "angedicktener" -> "angedickter"
+- **Fix:** Korrigiert auf "angedickter Flüssigkeit".
 
 ---
 
 ### phase-beobachten.ts — ce02-petrov-beob-04 (text)
 
-#### F-03 (NIEDRIG): StepId "lunge-auskultieren" suggeriert pflegerische Auskultation
+#### F-03 (NIEDRIG): StepId "lunge-auskultieren" suggeriert pflegerische Auskultation [GEFIXT 2026-04-30]
 
 - **Stelle:** phase-beobachten.ts, Step 2.4, stepId "ce02-petrov-beob-04-lunge-auskultieren"
 - **Problem:** Im Inhalt wird korrekt klargestellt, dass Auskultation ärztliche Aufgabe ist und Pflege strukturiert beobachtet. Die stepId ist aber irreführend.
 - **Standard-Verweis:** PflBG-Kompetenzen
 - **Empfehlung:** StepId umbenennen in "ce02-petrov-beob-04-atembeobachtung". Inhalte korrekt.
+- **Fix:** StepId umbenannt auf "ce02-petrov-beob-04-atembeobachtung".
 
 ---
 
 ### phase-durchfuehren.ts — ce02-petrov-dur-06 (branching)
 
-#### F-04 (NIEDRIG): ERC-Choking-Algorithmus -- Ergänzung für Vollständigkeit
+#### F-04 (NIEDRIG): ERC-Choking-Algorithmus -- Ergänzung für Vollständigkeit [GEFIXT 2026-04-30]
 
 - **Stelle:** phase-durchfuehren.ts, Step 4.6, Option 1 Feedback (Rückenschläge)
 - **Problem:** Das Feedback differenziert korrekt zwischen Bolus-Choking (Rückenschläge/Heimlich) und flüssiger Aspiration (Husten fördern). Verbesserungsvorschlag: Ergänzen, dass bei **komplettem** Atemwegsverschluss (kein Husten, kein Atemgeräusch, Zyanose) Rückenschläge + Heimlich nach ERC 2021 indiziert wären -- nicht nur bei Bolus. Herrn Petrovs aktives Husten zeigt: kein vollständiger Verschluss.
 - **Standard-Verweis:** ERC 2021 Guidelines (Adult Choking Algorithm)
 - **Empfehlung:** Im Feedback ergänzen: "Husten = aktiver Schutzreflex = Atemwege nicht vollständig verlegt. Bei komplettem Atemwegsverschluss (kein Husten, Zyanose) wären Rückenschläge/Heimlich indiziert (ERC 2021)."
+- **Fix:** Feedback ergaenzt: Husten = nicht vollstaendig verlegt. Bei komplettem Verschluss (kein Husten, Zyanose): Rueckenschlaege + Heimlich indiziert (ERC 2021).
 
 ---
 
 ### phase-evaluieren.ts — ce02-petrov-eval-03 (slider)
 
-#### F-05 (NIEDRIG): Prognose-Statistik ohne direkte Quellenangabe im Text
+#### F-05 (NIEDRIG): Prognose-Statistik ohne direkte Quellenangabe im Text [GEFIXT 2026-04-30]
 
 - **Stelle:** phase-evaluieren.ts, Step 5.3, explanation
 - **Problem:** "60-80 % der Schlaganfall-Patienten mit Hemiparese erreichen Gehfähigkeit" -- eingeleitet mit "Studien zeigen", ohne spezifische Studie im Erklärungstext. Die quellen-Felder referenzieren AWMF S3 + DGG 2022, die diese Daten enthalten.
 - **Standard-Verweis:** Copenhagen Stroke Study (Jorgensen et al. 1995, Stroke 26:1178-1182); AWMF S3 Schlaganfall
 - **Empfehlung:** Im explanation ergänzen: "(AWMF S3 Schlaganfall; vgl. Copenhagen Stroke Study, Jorgensen et al. 1995)".
+- **Fix:** Quellenangabe "(AWMF S3 Schlaganfall; vgl. Copenhagen Stroke Study, Jorgensen et al. 1995)" direkt im Erklärungstext ergänzt.
 
 ---
 

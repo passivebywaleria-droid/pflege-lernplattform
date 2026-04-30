@@ -31,12 +31,12 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Hautpflege der Hautfalten — korrekte Durchführung",
-        body: "Frau Schmidt ist kooperativ. Führe die Hautpflege der Hautfalten korrekt durch. Bringe die Karten in die richtige Reihenfolge. Bloom 4: Handlungsplanung + Risikobewusstsein (Reihenfolge hat Konsequenzen).",
+        body: "Du hast die Schritte in Phase 3 geplant. Jetzt führst du sie aus — die Reihenfolge kennst du. Frau Schmidt ist kooperativ. Bringe die Karten in die richtige Reihenfolge.",
         glossarBegriffe: ["Intertrigo", "Mazerierung"],
       },
       contentB1: {
         title: "Haut-Pflege der Haut-Falten — richtige Reihenfolge",
-        body: "Haut-Pflege der Haut-Falten korrekt durchführen. Bringe in die richtige Reihenfolge.",
+        body: "Du hast die Schritte in Phase 3 geplant. Jetzt führst du sie aus. Bringe die Karten in die richtige Reihenfolge.",
         glossarBegriffe: ["Intertrigo"],
       },
       question: {
@@ -91,9 +91,9 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
         storyAufhaengerB1:
           "Frau Schmidts Eiweiß im Blut (Albumin) ist zu niedrig. Aber sie isst doch genug? Das Problem: Sie isst viel — aber zu wenig Eiweiß. Was macht Eiweiß im Körper?",
         kerntext:
-          "**Protein (Eiweiß)** ist der Baustoff des Körpers (DGE D-A-CH 2024). Es wird gebraucht für:\n\n• **Wundheilung** — jede Reparatur braucht Aminosäuren.\n\n• **Immunabwehr** — Antikörper bestehen aus Protein.\n\n• **Albumin-Synthese** — hält Flüssigkeit in den Gefäßen (Ödemprophylaxe).\n\n• **Muskelmasse** — Sarkopenie (Muskelschwund) entsteht bei chronischem Proteinmangel.\n\n**Proteinbedarf bei Adipositas + Mangelernährung:**\n\nWichtig: Berechnung auf Basis des **Idealgewichts**, nicht des Istgewichts (sonst Überschätzung bei BMI >30).\n\nFrau Schmidt (1,60 m): Idealgewicht nach BMI 22 = ca. 56 kg.\n\n• Gesund: 0,8 g x 56 kg = **45 g/Tag** (DGE D-A-CH 2024)\n\n• Bei Mangelernährung: 1,2 g x 56 kg = **67 g/Tag** (ESPEN 2017)\n\n**Frau Schmidts Problem:** Fertigpizza liefert ca. 6-8 g Protein pro Portion. Um auf 67 g zu kommen, bräuchte sie 8-10 Portionen Pizza. Oder: 200 g Hüttenkäse (26 g) + 2 Eier (12 g) + 150 g Hähnchen (31 g) = 69 g. Der Unterschied liegt in der Auswahl, nicht im Verzicht.",
+          "**Protein (Eiweiß)** ist der Baustoff des Körpers (DGE D-A-CH 2024). Es wird gebraucht für:\n\n• **Wundheilung** — jede Reparatur braucht Aminosäuren.\n\n• **Immunabwehr** — Antikörper bestehen aus Protein.\n\n• **Albumin-Synthese** — hält Flüssigkeit in den Gefäßen (Ödemprophylaxe).\n\n• **Muskelmasse** — Sarkopenie (Muskelschwund) entsteht bei chronischem Proteinmangel.\n\n**Proteinbedarf bei Adipositas + Mangelernährung:**\n\nWichtig: Berechnung auf Basis des **Idealgewichts**, nicht des Istgewichts (sonst Überschätzung bei BMI >30).\n\nFrau Schmidt (1,60 m): Idealgewicht nach BMI 22 = ca. 56 kg.\n\n• Gesund: 0,8 g x 56 kg = **45 g/Tag** (DGE D-A-CH 2024)\n\n• Bei Mangelernährung: 1,2 g x 56 kg = **67 g/Tag** (ESPEN 2017)\n\n**Frau Schmidts Problem:** Fertigpizza liefert ca. 6-8 g Protein pro 100 g (eine ganze Pizza a 300 g: ca. 18-24 g — aber bei ca. 700-900 kcal). Um auf 67 g allein mit Pizza zu kommen, bräuchte sie fast 3 ganze Pizzen (ca. 2.400 kcal). Oder: 200 g Hüttenkäse (26 g) + 2 Eier (12 g) + 150 g Hähnchen (31 g) = 69 g. Der Unterschied liegt in der Auswahl, nicht im Verzicht.",
         kerntextB1:
-          "**Protein (= Eiweiß)** ist Baumaterial für den Körper.\n\n**Protein wird gebraucht für:**\n\n• Wunden heilen\n\n• Abwehr gegen Krankheiten\n\n• Albumin herstellen (hält Wasser in den Gefäßen)\n\n• Muskeln erhalten\n\n**Wie viel braucht Frau Schmidt?**\n\nWichtig: Man rechnet mit dem Ideal-Gewicht, nicht mit dem echten Gewicht.\n\nFrau Schmidt ist 1,60 m groß. Ideal-Gewicht = ca. 56 kg.\n\n• Gesund: 0,8 g x 56 = ca. **45 g pro Tag**\n\n• Bei Mangel-Ernährung: 1,2 g x 56 = ca. **67 g pro Tag**\n\n**Das Problem:** Eine Fertig-Pizza hat nur 6-8 g Eiweiß. Frau Schmidt bräuchte 8-10 Pizzen! Stattdessen reicht: 200 g Hüttenkäse + 2 Eier + 150 g Hähnchen = 69 g. Kein Verzicht — bessere Auswahl.",
+          "**Protein (= Eiweiß)** ist Baumaterial für den Körper.\n\n**Protein wird gebraucht für:**\n\n• Wunden heilen\n\n• Abwehr gegen Krankheiten\n\n• Albumin herstellen (hält Wasser in den Gefäßen)\n\n• Muskeln erhalten\n\n**Wie viel braucht Frau Schmidt?**\n\nWichtig: Man rechnet mit dem Ideal-Gewicht, nicht mit dem echten Gewicht.\n\nFrau Schmidt ist 1,60 m groß. Ideal-Gewicht = ca. 56 kg.\n\n• Gesund: 0,8 g x 56 = ca. **45 g pro Tag**\n\n• Bei Mangel-Ernährung: 1,2 g x 56 = ca. **67 g pro Tag**\n\n**Das Problem:** Eine Fertig-Pizza (300 g) hat zwar 18-24 g Eiweiß — aber auch ca. 700-900 Kalorien. Um auf 67 g Eiweiß nur mit Pizza zu kommen, bräuchte sie fast 3 Pizzen (ca. 2.400 Kalorien)! Stattdessen reicht: 200 g Hüttenkäse + 2 Eier + 150 g Hähnchen = 69 g. Kein Verzicht — bessere Auswahl.",
         faustregel:
           "Protein bei Adipositas: Idealgewicht nehmen, nicht Istgewicht. 1,2 g/kg bei Mangelernährung — das ist machbar ohne Diät.",
         faustregelB1:
@@ -148,7 +148,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
       displayFormat: "analogy",
       contentC1: {
         title: "Makronährstoffe — Vorbereitung auf das Gespräch",
-        body: "Analogie: Kohlenhydrate = Kurzzeit-Kraftstoff (schnell verfügbar, schnell verbraucht). Fette = Langzeit-Reserve (langfristige Energie, Wärmeschutz). Proteine = Baumaterial (Wundheilung, Immunabwehr, Muskeln, Albumin).\n\nWarum ist Protein für Frau Schmidt so wichtig? Albumin-Mangel (31 g/l) bedeutet: Der Körper kann keine Wunden heilen, keine Immunabwehr aufbauen und keine Ödeme verhindern.\n\n**Protein-Bedarf bei Adipositas mit Mangelernährung — Berechnung:** Wichtig: Bei Adipositas wird das **Idealgewicht** als Berechnungsbasis genommen (nicht das Istgewicht — sonst Überschätzung), nach BMI 22 oder Broca. Bei Frau Schmidt (1,60 m): Idealgewicht ca. 56 kg.\n- Erhaltungsbedarf (gesund): 0,8 g × 56 kg = ca. 45 g/Tag (DGE D-A-CH 2024)\n- Bei nachgewiesener Mangelernährung: 1,2 g × 56 kg = **ca. 67 g/Tag** (ESPEN 2017 Guidelines)\n\nFertigpizza (Beispiel Frau Schmidt): ca. 6–8 g Protein pro Portion. Hüttenkäse 200 g: ca. 26 g Protein. Der Unterschied liegt nicht im Verzicht, sondern in der Auswahl.",
+        body: "Analogie: Kohlenhydrate = Kurzzeit-Kraftstoff (schnell verfügbar, schnell verbraucht). Fette = Langzeit-Reserve (langfristige Energie, Wärmeschutz). Proteine = Baumaterial (Wundheilung, Immunabwehr, Muskeln, Albumin).\n\nWarum ist Protein für Frau Schmidt so wichtig? Albumin-Mangel (31 g/l) bedeutet: Der Körper kann keine Wunden heilen, keine Immunabwehr aufbauen und keine Ödeme verhindern.\n\n**Protein-Bedarf bei Adipositas mit Mangelernährung — Berechnung:** Wichtig: Bei Adipositas wird das **Idealgewicht** als Berechnungsbasis genommen (nicht das Istgewicht — sonst Überschätzung), nach BMI 22 oder Broca. Bei Frau Schmidt (1,60 m): Idealgewicht ca. 56 kg.\n- Erhaltungsbedarf (gesund): 0,8 g × 56 kg = ca. 45 g/Tag (DGE D-A-CH 2024)\n- Bei nachgewiesener Mangelernährung: 1,2 g × 56 kg = **ca. 67 g/Tag** (ESPEN 2017 Guidelines)\n\nFertigpizza (Beispiel Frau Schmidt): ca. 6-8 g Protein pro 100 g (eine ganze Pizza a 300 g: ca. 18-24 g, aber bei ~700-900 kcal). Hüttenkäse 200 g: ca. 26 g Protein bei nur ~200 kcal. Der Unterschied liegt nicht im Verzicht, sondern in der Auswahl.",
         fallbezug:
           "Frau Schmidt isst aktuell proteinarme Fertigprodukte. Die Analogie macht verständlich warum das trotz ausreichender Kalorien problematisch ist. Berechnungsbasis: Idealgewicht 56 kg (BMI 22 bei 1,60 m), nicht Istgewicht 98 kg.",
         glossarBegriffe: ["Protein", "Albumin", "Makronährstoffe", "Idealgewicht"],
@@ -303,8 +303,8 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
             correctCategory: 2,
           },
           {
-            text: "Fertig-Pizza (ca. 6–8 g Protein pro Portion, bei hohem Kalorien-Anteil)",
-            correctCategory: 2,
+            text: "Fertig-Pizza 1 Portion (ca. 8–12 g Protein, aber ~700 kcal — ungünstiges Protein-Kalorien-Verhältnis)",
+            correctCategory: 1,
           },
           {
             text: "Weißbrot 2 Scheiben (ca. 4 g Protein)",

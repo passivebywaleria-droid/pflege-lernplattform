@@ -350,7 +350,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
               "Kein Trinkprotokoll geführt = niemand weiß wie viel er getrunken hat. Gefährlich.",
           },
           {
-            text: "\n\nTag 3 (So): Inkontinenzversorgung 3× gewechselt in der Nacht,",
+            text: "\n\nTag 3 (So): Inkontinenzversorgung 3× nass gewechselt in der Nacht,",
             isError: true,
             reason:
               "Hinweis auf hohe nächtliche Inkontinenz-Frequenz / nächtliche Polyurie. Der Wechsel selbst ist Schutzmaßnahme — das Risiko liegt in der Feuchtigkeitsbelastung der Haut zwischen den Wechseln (IAD-Risiko, DNQP Förderung Harnkontinenz / Hinweispapier IAD). Zusätzlich = nächtliche Toilettengang-Auslöser → Sturzrisiko-Faktor (passt zum Sturzereignis 02:30 Uhr).",

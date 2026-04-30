@@ -181,7 +181,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Positionierungsplan — Reihenfolge festlegen",
-        body: "Bringe die 6 Schritte in die logische Reihenfolge (erst Assessment, dann Dokumentation, dann Handeln, dann Informieren). Bloom 3 — Anwenden.",
+        body: "Bringe die 6 Schritte in die logische Planungsreihenfolge: Assessment → Dokumentation → Massnahmenplanung → Patientengespraech. Bloom 3 — Anwenden.",
         glossarBegriffe: ["135°-Schräge Seitenlage", "Umlagerungsrhythmus"],
       },
       contentB1: {
@@ -193,7 +193,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
         fragetext:
           "Sortiere die Schritte des angepassten Positionierungsplans in die richtige Reihenfolge.",
         sequencing: {
-          instruction: "Richtige Reihenfolge: erst Assessment, dann dokumentieren, dann handeln, dann informieren.",
+          instruction: "Sortiere die Planungsschritte: Assessment → Dokumentation → Massnahmenplanung → Patientengespraech.",
           items: [
             { id: "p1", label: "Braden-Score dokumentieren und mit Spirale-1-Wert vergleichen" },
             { id: "p2", label: "135°-Schräge Seitenlage einführen: Sakrum komplett entlasten" },

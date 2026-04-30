@@ -417,7 +417,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
               "Sensormatten am Boden neben dem Bett (Alarm bei Bodenberührung) gelten als freiheitsentziehende Maßnahme.",
             isTrue: false,
             explanation:
-              "Falsch — Sensormatten schränken die Bewegungsfreiheit nicht ein. Sie lösen nur Alarm aus. Sie gelten rechtlich nicht als Fixierung. Einwilligung des Betreuers wird dennoch empfohlen.",
+              "Falsch — Sensormatten schränken die Bewegungsfreiheit nicht ein. Sie lösen nur Alarm aus. Sie gelten nach herrschender Rechtsauffassung nicht als Fixierung. Einwilligung des Betreuers wird dennoch empfohlen. Rechtliche Grauzone: In Kombination mit verschlossener Stationstür haben einzelne Gerichte Sensormatten als Teil einer FEM eingestuft.",
           },
         ],
       },

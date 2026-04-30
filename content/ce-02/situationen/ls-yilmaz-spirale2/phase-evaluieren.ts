@@ -149,9 +149,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
             text: "Frau Yilmaz hätte die Lücke selber schließen können durch Eigenbewegung.",
             isCorrect: false,
             explanation:
-              "NUR TEILWEISE RICHTIG — Eigenressource ist real (Frau Yilmaz kann sich bewegen), aber sie ist nicht die primäre Verantwortung des Patienten. Prophylaxe ist Pflegeaufgabe. Eigenressourcen ergänzen — ersetzen nicht die Pflegepflicht.",
+              "FALSCH in der Grundannahme — Eigenressource ist zwar real (Frau Yilmaz kann sich begrenzt bewegen), aber die primaere Verantwortung fuer Dekubitusprophylaxe liegt bei der Pflege, nicht bei der Patientin. Eigenressourcen ergaenzen die Prophylaxe — sie ersetzen nicht die Pflegepflicht. Die Luecke auf Eigenbewegung abzuwaelzen ist ein haeufiger Denkfehler.",
             explanationB1:
-              "Nur teilweise. Frau Yilmaz kann sich ein bisschen selbst drehen — aber das ist nicht ihre Aufgabe. Prophylaxe ist Aufgabe der Pflege.",
+              "Falsch gedacht. Frau Yilmaz kann sich ein bisschen selbst drehen — aber das ist nicht ihre Aufgabe. Prophylaxe ist Aufgabe der Pflege. Man kann die Luecke nicht auf die Patientin abwaelzen.",
           },
         ],
       },

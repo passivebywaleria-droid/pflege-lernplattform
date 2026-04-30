@@ -570,9 +570,9 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
             speaker: "Du",
             options: [
               {
-                text: "\"Frau Schmidt, ich möchte Sie noch etwas fragen, das manchmal unangenehm ist — haben Sie manchmal Probleme, den Harndrang rechtzeitig zu kontrollieren?\"",
+                text: "\"Frau Schmidt, ich möchte Sie noch etwas fragen, das manchmal unangenehm ist — passiert es Ihnen manchmal, dass Sie ungewollt Urin verlieren — zum Beispiel beim Husten, Niesen oder bei körperlicher Anstrengung?\"",
                 textB1:
-                  "\"Frau Schmidt, darf ich etwas fragen, das manchmal schwierig ist — haben Sie manchmal Probleme, den Urin zu halten?\"",
+                  "\"Frau Schmidt, darf ich etwas fragen, das manchmal schwierig ist — verlieren Sie manchmal Urin, zum Beispiel beim Husten oder Heben?\"",
                 patientResponse:
                   "Frau Schmidt schweigt kurz. Sie schaut weg. Dann leise: \"Ja. Schon seit zwei Jahren. Aber ich rede nicht gerne drüber.\"",
                 patientResponseB1:

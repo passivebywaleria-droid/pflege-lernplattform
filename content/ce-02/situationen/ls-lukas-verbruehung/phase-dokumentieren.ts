@@ -153,12 +153,12 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DOKUMENTIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Kinderschutz-Dokumentation — was gehört rein und was nicht?",
-        body: "Ordne jeden Inhalt der richtigen Kategorie zu: 'Gehört in die Dokumentation' oder 'Gehört NICHT in die Dokumentation'.",
+        body: "Ordne jeden Inhalt der richtigen Kategorie zu: 'Gehört in die Dokumentation' oder 'Gehört NICHT in die Dokumentation'.\n\nWichtiger Grundsatz: Nie wertende Formulierungen über Eltern in die Pflegedokumentation schreiben. Nie Empfehlungen aussprechen die über deine pflegerische Kompetenz hinausgehen (z.B. Jugendamt-Meldung ohne konkreten Anhaltspunkt). Dokumentation ist sachlich, beobachtungsbasiert und rechtlich prüfbar.",
         glossarBegriffe: ["Sachliche Dokumentation", "§ 4 KKG"],
       },
       contentB1: {
         title: "Was schreibst du auf — und was nicht?",
-        body: "Ordne jeden Inhalt zu: Dokumentieren oder nicht dokumentieren?",
+        body: "Ordne jeden Inhalt zu: Dokumentieren oder nicht dokumentieren?\n\nWichtig: Nie wertende Aussagen über Eltern aufschreiben (z.B. 'überfordert'). Nie eigene Empfehlungen wie 'Jugendamt einschalten' ohne konkreten Grund. Nur aufschreiben was du beobachtet hast — sachlich und neutral.",
         glossarBegriffe: ["Sachliche Dokumentation"],
       },
       question: {

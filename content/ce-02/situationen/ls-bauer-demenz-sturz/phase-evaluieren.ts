@@ -122,7 +122,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
           vertiefung:
             "Sturzrisikofaktoren und Maßnahmen kennst du — jetzt die Evaluations-Frage: Herr Bauer ist heute nicht gestuerzt. Heißt das, die Maßnahmen wirken? Nicht unbedingt. Der DNQP 2022 (Kriterium E5) unterscheidet: **Ergebnis-Evaluation** (kein Sturz) und **Prozess-Evaluation** (wurden alle Maßnahmen umgesetzt?). Beides zusammen ergibt das Bild.",
           vertiefungB1:
-            "Du kennst die Sturzrisiken von Phase 1 und die Maßnahmen von Phase 3. Herr Bauer ist heute nicht gestuerzt. Heißt das, alles hat funktioniert? Nicht unbedingt. Du musst pruefst: Wurden alle Maßnahmen gemacht? Und: Hat er nicht gestuerzt WEIL sie gemacht wurden?",
+            "Du kennst die Sturzrisiken von Phase 1 und die Maßnahmen von Phase 3. Herr Bauer ist heute nicht gestuerzt. Heißt das, alles hat funktioniert? Nicht unbedingt. Du musst pruefen: Wurden alle Maßnahmen gemacht? Und: Hat er nicht gestuerzt WEIL sie gemacht wurden?",
         },
         storyAufhaenger:
           "Es ist 15:30 Uhr. Herr Bauer ist heute nicht gestuerzt. Trinkmenge bei 1000 ml (Ziel 1500). Nachtlicht und Niedrigbett stehen noch nicht. War der Tag ein Erfolg?",

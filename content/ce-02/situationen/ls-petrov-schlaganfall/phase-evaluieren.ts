@@ -116,7 +116,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
             text: "Konsistenz auf IDDSI Level 3 anpassen und Schlucktherapeutin informieren",
             isCorrect: true,
             explanation:
-              "Richtig. Stufenkonzept nach IDDSI 2019: Level 2 (leicht verdickt) → Level 3 (mäßig verdickt) als nächste Anpassung. Die Schlucktherapeutin ist die Primäransprechpartnerin bei Dysphagie-Verschlechterung — interdisziplinäre Entscheidung. Pflege passt die Konsistenz an und dokumentiert. (IDDSI 2019; DGG/DGN 2020)",
+              "Richtig. Stufenkonzept nach IDDSI 2019: Level 2 (mäßig verdickt) → Level 3 (stark verdickt) als nächste Anpassung. Die Schlucktherapeutin ist die Primäransprechpartnerin bei Dysphagie-Verschlechterung — interdisziplinäre Entscheidung. Pflege passt die Konsistenz an und dokumentiert. (IDDSI 2019; DGG/DGN 2020)",
             explanationB1:
               "Richtig. Mache die Flüssigkeit noch dicker (= Level 3). Informiere die Schluck-Therapeutin. Sie ist die Expertin für Dysphagie. Der Arzt entscheidet gemeinsam mit dem Team.",
           },
@@ -183,7 +183,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
           correctValue: 70,
           tolerance: 15,
           explanation:
-            "Studien zeigen: 60-80 % der Schlaganfall-Patienten mit Hemiparese erreichen nach 3-6 Monaten intensiver Frührehabilitation eine Gehfähigkeit mit oder ohne Hilfsmittel. Hinweis zur pflegerischen Kraft-Beurteilung: Das machst du im Alltag NICHT in Prozent, sondern mit der MRC-Skala 0-5 (0 = keine Bewegung, 1 = sichtbare Kontraktion ohne Bewegung, 2 = Bewegung unter Ausschluss der Schwerkraft, 3 = gegen Schwerkraft, 4 = gegen leichten Widerstand, 5 = volle Kraft). Frühmobilisation ab Tag 1 verbessert die Prognose erheblich; Neuroplastizität ist in den ersten 3 Monaten am stärksten. Was du heute tust (Bobath, Bettkante, Atemübungen) beeinflusst direkt die Funktion morgen. (AWMF S3 Schlaganfall; DGG 2022)",
+            "60-80 % der Schlaganfall-Patienten mit Hemiparese erreichen nach 3-6 Monaten intensiver Frührehabilitation eine Gehfähigkeit mit oder ohne Hilfsmittel (AWMF S3 Schlaganfall; vgl. Copenhagen Stroke Study, Jorgensen et al. 1995). Hinweis zur pflegerischen Kraft-Beurteilung: Das machst du im Alltag NICHT in Prozent, sondern mit der MRC-Skala 0-5 (0 = keine Bewegung, 1 = sichtbare Kontraktion ohne Bewegung, 2 = Bewegung unter Ausschluss der Schwerkraft, 3 = gegen Schwerkraft, 4 = gegen leichten Widerstand, 5 = volle Kraft). Frühmobilisation ab Tag 1 verbessert die Prognose erheblich; Neuroplastizität ist in den ersten 3 Monaten am stärksten. Was du heute tust (Bobath, Bettkante, Atemübungen) beeinflusst direkt die Funktion morgen. (AWMF S3 Schlaganfall; DGG 2022)",
           explanationB1:
             "Etwa 60-80 von 100 Schlaganfall-Patienten mit Halbseiten-Schwäche können nach Monaten Reha wieder gehen — mit oder ohne Hilfe. Pflege bewertet Kraft sonst mit der MRC-Skala 0-5: 0 = keine Bewegung, 5 = volle Kraft. In den ersten 3 Monaten kann das Gehirn neue Wege bilden. Was du heute tust ist wichtig für morgen.",
         },

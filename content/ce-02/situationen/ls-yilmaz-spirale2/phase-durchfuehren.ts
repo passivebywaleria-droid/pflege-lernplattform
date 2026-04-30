@@ -107,7 +107,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Vorbereitung des aseptischen Verbandwechsels — Reihenfolge",
-        body: "Sortiere die 7 Schritte in die bindende Reihenfolge. Bloom 3 — Anwenden: Hygiene-Reihenfolge ist nicht beliebig.",
+        body: "Sortiere die 8 Schritte in die bindende Reihenfolge. Bloom 3 — Anwenden: Hygiene-Reihenfolge ist nicht beliebig.",
         glossarBegriffe: ["Aseptisch", "Händedesinfektion", "Sterile Unterlage"],
       },
       contentB1: {

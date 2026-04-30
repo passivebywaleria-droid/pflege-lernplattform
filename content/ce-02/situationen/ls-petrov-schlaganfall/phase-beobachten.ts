@@ -241,7 +241,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
 
     // Step 2.4 — Text: Lungenbeobachtung (stepbystep)
     {
-      stepId: "ce02-petrov-beob-04-lunge-auskultieren",
+      stepId: "ce02-petrov-beob-04-atembeobachtung",
       phase: 2,
       stepType: "text",
       bloomLevel: 3,

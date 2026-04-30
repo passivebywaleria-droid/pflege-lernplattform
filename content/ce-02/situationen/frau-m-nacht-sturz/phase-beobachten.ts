@@ -172,9 +172,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
             text: "Zolpidem (Stilnox)",
             isError: true,
             reason:
-              "HAUPT-AUSLÖSER. Steht auf PRISCUS-2.0-Liste — potenziell inadäquate Medikation (PIM) bei Älteren. Verlängerte Halbwertszeit bei > 75, Sedierung bis in die Nacht, Sturzrisiko 2- bis 3-fach erhöht. Erst seit 2 Tagen neu verordnet.",
+              "HAUPT-AUSLÖSER. Steht auf PRISCUS-2.0-Liste — potenziell inadäquate Medikation (PIM) bei Älteren. Verlängerte Halbwertszeit bei > 75, Sedierung bis in die Nacht, Sturzrisiko 2- bis 3-fach erhöht. Erst seit 2 Tagen neu verordnet. Zudem: 10 mg ist bereits die doppelte empfohlene Maximaldosis für ≥ 65-Jährige nach PRISCUS 2.0 (max. 5 mg, wenn überhaupt).",
             reasonB1:
-              "HAUPT-PROBLEM. Schlafmittel. Bei alten Menschen bleibt es länger im Körper. Macht müde und unsicher. Erhöht Sturzrisiko stark. Frau M. bekommt es erst seit 2 Tagen.",
+              "HAUPT-PROBLEM. Schlafmittel. Bei alten Menschen bleibt es länger im Körper. Macht müde und unsicher. Erhöht Sturzrisiko stark. Frau M. bekommt es erst seit 2 Tagen. Und: 10 mg ist doppelt so viel wie erlaubt — bei alten Menschen höchstens 5 mg (PRISCUS-Liste).",
           },
           {
             text: " — 10 mg zur Nacht, seit 2 Tagen, Schlafstörung",
@@ -459,9 +459,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
         storyAufhaengerB1:
           "Frau M. nimmt 3 Medikamente, die den Blutdruck beim Aufstehen senken können. Bevor du gleich beurteilst, was beim Schellong-Test korrekt ist — so geht er.",
         kerntext:
-          "Der **Schellong-Test** misst die **orthostatische Reaktion** — wie reagiert dein Kreislauf, wenn du dich aufrichtest?\n\n**Ablauf nach AAS-Konsensus 2011:**\n\n• **Schritt 1:** Patient liegt **5–10 Min** flach. RR + Puls messen → **Liegewert**.\n\n• **Schritt 2:** Patient setzt sich an die Bettkante. **Mind. 1 Min warten.** RR + Puls messen → **Sitzwert**.\n\n• **Schritt 3:** Patient steht (mit Sicherung) auf. **3 Min warten.** RR + Puls messen → **Stehwert** (optional bei pflegerischer Mobilisation).\n\n**Diagnose-Schwellen (positiv = orthostatische Hypotonie):**\n\n• **RR systolisch ↓ ≥ 20 mmHg** zwischen Liegen und Sitzen/Stehen, **ODER**\n\n• **RR diastolisch ↓ ≥ 10 mmHg**, **ODER**\n\n• Puls steigt mehr als 30/Min an (Hinweis auf Hypovolämie)\n\n**Anti-Pattern (falsch!):**\n\n• ❌ \"3 Min sitzen lassen, dann ist alles ok\" — ohne Messung wertlos.\n\n• ❌ Nur RR im Liegen messen, dann mobilisieren.\n\n• ❌ Direkt aufstehen lassen ohne Sitz-Zwischenstufe.\n\n**Bei Frau M. heute:** Vor erster Mobilisation Pflicht — sie hat 3 RR-relevante Medikamente, ist seit Stunden flach gelegen, hat möglicherweise Volumenmangel durch HCT.",
+          "Der **Schellong-Test** misst die **orthostatische Reaktion** — wie reagiert dein Kreislauf, wenn du dich aufrichtest?\n\n**Ablauf nach AAS-Konsensus 2011:**\n\n• **Schritt 1:** Patient liegt **mindestens 5 Min** flach. RR + Puls messen → **Liegewert**.\n\n• **Schritt 2:** Patient setzt sich an die Bettkante. **Mind. 1 Min warten.** RR + Puls messen → **Sitzwert**.\n\n• **Schritt 3:** Patient steht (mit Sicherung) auf. **3 Min warten.** RR + Puls messen → **Stehwert** (optional bei pflegerischer Mobilisation).\n\n**Diagnose-Schwellen (positiv = orthostatische Hypotonie):**\n\n• **RR systolisch ↓ ≥ 20 mmHg** zwischen Liegen und Sitzen/Stehen, **ODER**\n\n• **RR diastolisch ↓ ≥ 10 mmHg**, **ODER**\n\n• Puls steigt mehr als 30/Min an (Hinweis auf Hypovolämie)\n\n**Anti-Pattern (falsch!):**\n\n• ❌ \"3 Min sitzen lassen, dann ist alles ok\" — ohne Messung wertlos.\n\n• ❌ Nur RR im Liegen messen, dann mobilisieren.\n\n• ❌ Direkt aufstehen lassen ohne Sitz-Zwischenstufe.\n\n**Bei Frau M. heute:** Vor erster Mobilisation Pflicht — sie hat 3 RR-relevante Medikamente, ist seit Stunden flach gelegen, hat möglicherweise Volumenmangel durch HCT.",
         kerntextB1:
-          "Der **Schellong-Test** schaut, ob der Blutdruck beim Aufstehen abfällt.\n\n**So geht er (AAS 2011):**\n\n• **Schritt 1:** Patient liegt **5–10 Minuten** flach. Du misst Blutdruck + Puls.\n\n• **Schritt 2:** Patient setzt sich. Du wartest **mindestens 1 Minute**. Du misst Blutdruck + Puls.\n\n• **Schritt 3:** Patient steht auf (mit Hilfe). Du wartest **3 Minuten**. Du misst.\n\n**Wann ist der Test positiv (= Problem)?**\n\n• Blutdruck **oben** fällt um **20 mmHg oder mehr** (z.B. von 130 auf 110)\n\n• ODER Blutdruck **unten** fällt um **10 mmHg oder mehr**\n\n• ODER Puls schlägt 30 Schläge mehr als vorher\n\n**Falsch! (häufige Fehler):**\n\n• ❌ Nur \"3 Minuten sitzen lassen\" ohne Messung\n\n• ❌ Nur einmal im Liegen messen\n\n• ❌ Direkt aufstehen lassen — ohne erst zu sitzen\n\n**Bei Frau M.:** Sie nimmt 3 Medikamente, die den Blutdruck senken können. Sie liegt seit Stunden. Vor dem ersten Aufstehen → **Schellong ist Pflicht.**",
+          "Der **Schellong-Test** schaut, ob der Blutdruck beim Aufstehen abfällt.\n\n**So geht er (AAS 2011):**\n\n• **Schritt 1:** Patient liegt **mindestens 5 Minuten** flach. Du misst Blutdruck + Puls.\n\n• **Schritt 2:** Patient setzt sich. Du wartest **mindestens 1 Minute**. Du misst Blutdruck + Puls.\n\n• **Schritt 3:** Patient steht auf (mit Hilfe). Du wartest **3 Minuten**. Du misst.\n\n**Wann ist der Test positiv (= Problem)?**\n\n• Blutdruck **oben** fällt um **20 mmHg oder mehr** (z.B. von 130 auf 110)\n\n• ODER Blutdruck **unten** fällt um **10 mmHg oder mehr**\n\n• ODER Puls schlägt 30 Schläge mehr als vorher\n\n**Falsch! (häufige Fehler):**\n\n• ❌ Nur \"3 Minuten sitzen lassen\" ohne Messung\n\n• ❌ Nur einmal im Liegen messen\n\n• ❌ Direkt aufstehen lassen — ohne erst zu sitzen\n\n**Bei Frau M.:** Sie nimmt 3 Medikamente, die den Blutdruck senken können. Sie liegt seit Stunden. Vor dem ersten Aufstehen → **Schellong ist Pflicht.**",
         faustregel:
           "Schellong = liegen → sitzen → stehen, jeweils mit Messung. Anti-Pattern \"3 Min warten\" ohne RR ist wertlos.",
         faustregelB1:
@@ -497,7 +497,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
           vorderseite:
             "Frau M. (82, 3 RR-Senker, lange gelegen) — du sollst die erste Mobilisation vorbereiten. Welche Schellong-Werte machst du, was sind die positiv-Kriterien?",
           rueckseite:
-            "Schellong nach AAS 2011:\n• Liegen 5-10 Min → RR + Puls\n• Sitzen ≥ 1 Min → RR + Puls\n• Stehen 3 Min → RR + Puls\n\nPositiv (= Orthostase):\n• syst. ↓ ≥ 20 mmHg, oder\n• diast. ↓ ≥ 10 mmHg, oder\n• Puls ↑ > 30/Min\n\nFaustregel: Liegen-Sitzen-Stehen mit JE einer Messung. \"3 Min warten\" ohne RR ist wertlos.",
+            "Schellong nach AAS 2011:\n• Liegen mind. 5 Min → RR + Puls\n• Sitzen ≥ 1 Min → RR + Puls\n• Stehen 3 Min → RR + Puls\n\nPositiv (= Orthostase):\n• syst. ↓ ≥ 20 mmHg, oder\n• diast. ↓ ≥ 10 mmHg, oder\n• Puls ↑ > 30/Min\n\nFaustregel: Liegen-Sitzen-Stehen mit JE einer Messung. \"3 Min warten\" ohne RR ist wertlos.",
         },
       },
     },
@@ -537,10 +537,10 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
           },
           {
             statement:
-              "Ein Blutdruckabfall von 10/5 mmHg beim Aufstehen ist normal und kein Hinweis auf Orthostase.",
+              "Ein systolischer Blutdruckabfall von 15 mmHg beim Aufstehen schließt eine orthostatische Dysregulation sicher aus.",
             isTrue: false,
             explanation:
-              "Falsch — die Definition ist klar: ≥ 20 mmHg systolischer oder ≥ 10 mmHg diastolischer Abfall gilt als orthostatisch relevant. 10/5 liegt unter der Schwelle, aber in Kombination mit Symptomen kann es auch bei kleinem Abfall relevant sein.",
+              "Falsch — die AAS-Diagnoseschwelle liegt bei systolisch ≥ 20 mmHg oder diastolisch ≥ 10 mmHg. 15 mmHg systolisch liegt knapp unter der Schwelle, schließt Orthostase aber NICHT sicher aus: Bei gleichzeitigen Symptomen (Schwindel, Sehstorungen, Benommenheit) ist auch ein geringerer Abfall klinisch relevant. Immer klinisches Bild mitbewerten.",
           },
           {
             statement:

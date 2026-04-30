@@ -11,7 +11,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PATIENT: PatientBeschreibung = {
   geschlecht: "w",
   diagnosen: [
     "Hüft-TEP rechts — implantiert vor 3 Tagen, Zementimplantat, unkomplizierter OP-Verlauf",
-    "Diabetes mellitus Typ 2 — seit 15 Jahren, orale Antidiabetika, HbA1c 7,4 %",
+    "Diabetes mellitus Typ 2 — seit 15 Jahren, orale Antidiabetika, HbA1c 7,4 % (Trend steigend — Kontrolle in 3 Monaten empfohlen)",
     "Adipositas — BMI 34 kg/m², Körpergewicht 89 kg",
   ],
   nebendiagnosen: [

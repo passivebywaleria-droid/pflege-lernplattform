@@ -135,7 +135,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
           zones: [
             {
               id: "wundrand",
-              x: 50,
+              x: 35,
               y: 30,
               radius: 12,
               label:
@@ -151,7 +151,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
             },
             {
               id: "mazeration",
-              x: 50,
+              x: 65,
               y: 70,
               radius: 12,
               label:

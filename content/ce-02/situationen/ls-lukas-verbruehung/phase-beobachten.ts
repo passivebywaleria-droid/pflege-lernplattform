@@ -83,11 +83,11 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
               "Bei Frau Yilmaz nach Hüft-TEP: NRS getrennt in Ruhe und Bewegung erheben. Mobilisation gelingt nur bei Bewegungs-NRS ≤ 3-4. Bei Lukas gibt es diese Unterscheidung nicht — KUSS misst den Gesamtausdruck.",
           },
           {
-            patientName: "Emilia (8 Wochen, Bronchiolitis)",
+            patientName: "Emilia (4 Monate, Bronchiolitis)",
             situationsId: "ls-emilia-saeugling",
             hauptfaktor: "KUSS auch für Säuglinge validiert",
             kurzbeschreibung:
-              "Emilia ist 8 Wochen alt — KUSS funktioniert auch bei ihr. Aber die Beobachtung ist anders: Ein Säugling zeigt Schmerz subtiler (Stirnrunzeln, Nasenflügeln, veränderte Schlafmuster).",
+              "Emilia ist 4 Monate alt — KUSS funktioniert auch bei ihr. Aber die Beobachtung ist anders: Ein Säugling zeigt Schmerz subtiler (Stirnrunzeln, Nasenflügeln, veränderte Schlafmuster).",
           },
         ],
         karteikarte: {
@@ -143,12 +143,12 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
               "Starkes Grimassieren = 2 Punkte. Sehr wichtig, weil Lukas nicht sagen kann wie viel Schmerz er hat.",
           },
           {
-            text: "Rumpfhaltung: stark verkrampfter, aufbäumender Körper, zieht sich beim Annähern weg",
+            text: "Rumpfhaltung: unruhig, angespannter Oberkörper, zieht sich beim Annähern leicht zurück",
             isError: true,
             reason:
-              "KUSS-Kategorie 'Rumpfhaltung' — Punkte: 0 = entspannt, 1 = unruhig, 2 = verkrampft/aufbäumend. Hier: aufbäumend/verkrampft = 2 Punkte.",
+              "KUSS-Kategorie 'Rumpfhaltung' — Punkte: 0 = entspannt, 1 = unruhig, 2 = verkrampft/aufbäumend. Hier: angespannt/unruhig, aber nicht aufbäumend = 1 Punkt (i.v.-Analgesie beginnt zu wirken).",
             reasonB1:
-              "Verkrampfter, aufbäumender Körper = 2 Punkte. Lukas zieht sich stark zurück.",
+              "Unruhiger, angespannter Körper = 1 Punkt. Nicht ganz verkrampft — Schmerzmittel wirkt langsam.",
           },
           {
             text: "Beinstellung: Beine fest hochgezogen, kräftiges Strampeln mit dem gesunden Bein",
@@ -159,12 +159,12 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
               "Beine hochziehen + strampeln = 2 Punkte. Typisches starkes Schmerzzeichen bei Kleinkindern.",
           },
           {
-            text: "Motorische Unruhe: ruhelos, kräftiges Wegstoßen mit dem rechten Arm, schlägt nach allem was sich nähert, greift verzweifelt nach Sandra",
+            text: "Motorische Unruhe: mäßig unruhig, greift wiederholt nach Sandra, stößt gelegentlich weg wenn du dich näherst",
             isError: true,
             reason:
-              "KUSS-Kategorie 'Motorische Unruhe' — Punkte: 0 = nicht vorhanden, 1 = mäßig, 2 = ruhelos/strampelnd. Hier: kräftiges Wegstoßen + ruhelos = 2 Punkte. Summe aller 5 Kategorien: 2+2+2+2+2 — bei Aufnahme zeigt Lukas Maximalwerte (KUSS 8/10 bei einsetzender, aber noch unvollständiger Wirkung des Schmerzmittels — Maximalwert wäre 10/10 ohne jede Analgesie).",
+              "KUSS-Kategorie 'Motorische Unruhe' — Punkte: 0 = nicht vorhanden, 1 = mäßig, 2 = ruhelos/strampelnd. Hier: mäßige Unruhe mit gelegentlichem Wegstoßen = 1 Punkt (i.v.-Schmerzmittel beginnt zu wirken). Summe aller 5 Kategorien: 2+2+1+2+1 = KUSS 8/10. Das i.v.-Schmerzmittel wirkt bereits teilweise — ohne Analgesie wäre der Score 10/10.",
             reasonB1:
-              "Wegstoßen + ruhelos = 2 Punkte. Insgesamt 8/10 bei Aufnahme — sehr starker Schmerz. Schmerzmittel wirkt noch nicht voll.",
+              "Mäßige Unruhe = 1 Punkt (Schmerzmittel beginnt zu wirken). Zusammen: 2+2+1+2+1 = 8 Punkte. Sehr starker Schmerz, Schmerzmittel wirkt gerade erst.",
           },
         ],
       },

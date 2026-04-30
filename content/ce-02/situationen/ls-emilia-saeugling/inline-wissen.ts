@@ -206,9 +206,9 @@ export const CE02_EMILIA_IW_03_SBAR: ContentStep = {
     storyAufhaengerB1:
       "Schwester Andrea erklärt dir alles zu Emilia. Sie nutzt dafür ein Schema mit 4 Teilen. Das Schema heißt SBAR. Es hilft, nichts Wichtiges zu vergessen.",
     kerntext:
-      "**SBAR** ist ein standardisiertes Übergabe-Schema aus der Luftfahrt, das in der Pflege weltweit eingesetzt wird.\n\n**S — Situation:** Was ist gerade los? (Emilia: Trinkschwäche, Fieber 38,2 °C)\n\n**B — Background:** Was ist der Hintergrund? (bisher gesundes Kind, Erstgebärende, allein erziehend)\n\n**A — Assessment:** Wie schätze ich die Situation ein? (leicht erhöhte Atemfrequenz 50/min, kein Sauerstoffbedarf, Turgor noch erhalten)\n\n**R — Recommendation:** Was empfehle ich als nächsten Schritt? (Flüssigkeitsstatus engmaschig überwachen, Mutter begleiten)\n\n**Warum funktioniert es?** Studien zeigen: Unstrukturierte Übergaben vergessen durchschnittlich 30% der relevanten Informationen. SBAR reduziert Informationsverluste auf unter 5%. *(NHS Institute 2010; Hoehl/Kullick 2019)*",
+      "**SBAR** ist ein standardisiertes Übergabe-Schema aus der Luftfahrt, das in der Pflege weltweit eingesetzt wird.\n\n**S — Situation:** Was ist gerade los? (Emilia: Trinkschwäche, Fieber 38,2 °C)\n\n**B — Background:** Was ist der Hintergrund? (bisher gesundes Kind, Erstgebärende, allein erziehend)\n\n**A — Assessment:** Wie schätze ich die Situation ein? (leicht erhöhte Atemfrequenz 50/min, kein Sauerstoffbedarf, Turgor noch erhalten)\n\n**R — Recommendation:** Was empfehle ich als nächsten Schritt? (Flüssigkeitsstatus engmaschig überwachen, Mutter begleiten)\n\n**Warum funktioniert es?** Schätzungen zeigen: Unstrukturierte Übergaben verlieren durchschnittlich bis zu 30% der relevanten Informationen. SBAR reduziert Informationsverluste erheblich — auf unter 5% in strukturierten Settings. *(NHS Institute 2010; Hoehl/Kullick 2019)*",
     kerntextB1:
-      "**SBAR** ist ein Schema für Übergaben. Es hat 4 Teile:\n\n**S** = Situation: Was ist das Problem? (Emilia trinkt wenig, hat Fieber)\n\n**B** = Background (= Hintergrund): Was ist wichtig? (bisher gesundes Kind, junge Mutter)\n\n**A** = Assessment (= Einschätzung): Wie ist der Zustand? (atmet schnell, kein Sauerstoff nötig)\n\n**R** = Recommendation (= Empfehlung): Was soll gemacht werden? (Flüssigkeit beobachten)\n\nOhne Schema vergisst man bei einer Übergabe etwa 30% der Informationen. Mit SBAR nur 5%.",
+      "**SBAR** ist ein Schema für Übergaben. Es hat 4 Teile:\n\n**S** = Situation: Was ist das Problem? (Emilia trinkt wenig, hat Fieber)\n\n**B** = Background (= Hintergrund): Was ist wichtig? (bisher gesundes Kind, junge Mutter)\n\n**A** = Assessment (= Einschätzung): Wie ist der Zustand? (atmet schnell, kein Sauerstoff nötig)\n\n**R** = Recommendation (= Empfehlung): Was soll gemacht werden? (Flüssigkeit beobachten)\n\nOhne Schema verliert man bei einer Übergabe bis zu 30% der Informationen. Mit SBAR deutlich weniger.",
     faustregel:
       "**SBAR = 4 Sätze, null vergessen** — Situation, Background, Assessment, Recommendation.",
     faustregelB1:
@@ -240,7 +240,7 @@ export const CE02_EMILIA_IW_03_SBAR: ContentStep = {
       vorderseite:
         "Was bedeutet SBAR — und warum ist es bei der Übergabe wichtig?",
       rueckseite:
-        "S = Situation (Was ist los?), B = Background (Hintergrund), A = Assessment (Einschätzung), R = Recommendation (Empfehlung). Unstrukturierte Übergaben verlieren ~30% der Info — SBAR reduziert auf <5%. Spektrum: Frau M. (Notfall), Petrov (komplex), Kovac (ambulant). Faustregel: **4 Sätze, null vergessen.**",
+        "S = Situation (Was ist los?), B = Background (Hintergrund), A = Assessment (Einschätzung), R = Recommendation (Empfehlung). Unstrukturierte Übergaben verlieren bis zu 30% der Info — SBAR reduziert Verluste erheblich. Spektrum: Frau M. (Notfall), Petrov (komplex), Kovac (ambulant). Faustregel: **4 Sätze, null vergessen.**",
     },
   },
 };
@@ -342,7 +342,7 @@ export const CE02_EMILIA_IW_05_KUSS_WIEDERBEGEGNUNG: ContentStep = {
   quellen: [
     "DNQP 2020 — Expertenstandard Schmerzmanagement in der Pflege",
     "Hoehl/Kullick 2019",
-    "Büttner W. et al. (1998) — KUSS-Validierungsstudie",
+    "Büttner W./Finke W. (2000) — KUSS-Validierungsstudie",
   ],
   track: "basis",
   modus: "entdecker",
@@ -368,7 +368,7 @@ export const CE02_EMILIA_IW_05_KUSS_WIEDERBEGEGNUNG: ContentStep = {
     storyAufhaengerB1:
       "Beim Fiebermessen zieht Emilia die Beine an und weint. Laura fragt: \"Tut ihr das weh?\" Emilia kann nicht sprechen. Wie erkennst du Schmerz bei einem Baby?",
     kerntext:
-      "Die **KUSS-Skala** (Kindliche Unbehagens- und Schmerz-Skala) ist das Standardinstrument für Schmerzmessung bei Säuglingen und Kleinkindern von 0-4 Jahren.\n\n**5 Beobachtungskategorien** (je 0-2 Punkte):\n\n• **Weinen:** kein / Stöhnen / Schreien\n\n• **Gesichtsausdruck:** entspannt / verzerrt / grimassierend\n\n• **Rumpfhaltung:** neutral / angespannt / aufbäumend\n\n• **Beinhaltung:** locker / strampelnd / angezogen\n\n• **Motorische Unruhe:** keine / mäßig / ruhelos\n\n**Schwellenwert:** KUSS **≥4 Punkte = Schmerz** — Intervention notwendig!\n\n**Warum nicht NRS?** NRS (0-10) braucht Verbalisierung — ein Säugling kann keine Zahl nennen. Die KUSS beobachtet stattdessen Verhalten. Ab ca. 4 Jahren wird die FPS-R (Gesichterskala) eingesetzt, ab ca. 8 Jahren die NRS. *(Büttner et al. 1998; DNQP 2020)*",
+      "Die **KUSS-Skala** (Kindliche Unbehagens- und Schmerz-Skala) ist das Standardinstrument für Schmerzmessung bei Säuglingen und Kleinkindern von 0-4 Jahren.\n\n**5 Beobachtungskategorien** (je 0-2 Punkte):\n\n• **Weinen:** kein / Stöhnen / Schreien\n\n• **Gesichtsausdruck:** entspannt / verzerrt / grimassierend\n\n• **Rumpfhaltung:** neutral / angespannt / aufbäumend\n\n• **Beinhaltung:** locker / strampelnd / angezogen\n\n• **Motorische Unruhe:** keine / mäßig / ruhelos\n\n**Schwellenwert:** KUSS **≥4 Punkte = Schmerz** — Intervention notwendig!\n\n**Warum nicht NRS?** NRS (0-10) braucht Verbalisierung — ein Säugling kann keine Zahl nennen. Die KUSS beobachtet stattdessen Verhalten. Ab ca. 4 Jahren wird die FPS-R (Gesichterskala) eingesetzt, ab ca. 8 Jahren die NRS. *(Büttner/Finke 2000; DNQP 2020)*",
     kerntextB1:
       "Die **KUSS-Skala** misst Schmerz bei Babys und kleinen Kindern (0-4 Jahre).\n\nDu beobachtest **5 Dinge** (je 0, 1 oder 2 Punkte):\n\n• Weint das Kind?\n• Wie sieht das Gesicht aus?\n• Wie liegt der Körper?\n• Was machen die Beine?\n• Ist das Kind unruhig?\n\n**KUSS 4 oder mehr = Schmerz!** Du musst etwas tun.\n\nBabys können nicht sagen: \"Ich habe Schmerzen.\" Deshalb beobachtest du stattdessen. Die NRS-Skala (0-10 Punkte) funktioniert erst ab ca. 8 Jahren.",
     faustregel:
@@ -400,7 +400,7 @@ export const CE02_EMILIA_IW_05_KUSS_WIEDERBEGEGNUNG: ContentStep = {
     ],
     wiederbegegnung: {
       basisBausteinId: "schmerz-kind-kuss-skala",
-      basisPatient: "Lukas (CE-10)",
+      basisPatient: "Lukas K. (CE-02, Verbrühung)",
       vertiefung:
         "Die KUSS kennst du bereits vom Schmerzmanagement bei Kindern. Bei Emilia ist die Besonderheit: Du nutzt KUSS nicht wegen eines Eingriffs, sondern zur Beurteilung ob alltägliche Pflegemaßnahmen (Fiebermessen, Nasenpflege) Schmerz verursachen. KUSS ≥4 auch bei Routinemaßnahmen = Schmerzlinderung vor Wiederholung.",
       vertiefungB1:

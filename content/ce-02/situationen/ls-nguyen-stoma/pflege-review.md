@@ -20,17 +20,19 @@ Vorheriger Review (2026-04-25) identifizierte 12 Code-Findings + 7 Plan-Findings
 
 ### phase-planen — Lochgroesse MC (neu: Step 4.1b)
 
-#### F-N01 (NIEDRIG): MC-Option "genau in Stoma-Groesse zuschneiden" — Erklaerung koennte schaerfer sein
+#### F-N01 (NIEDRIG): MC-Option "genau in Stoma-Groesse zuschneiden" — Erklaerung koennte schaerfer sein [GEFIXT 2026-04-30]
 - **Stelle:** phase-durchfuehren.ts, Step dur-01b, Option 4
 - **Problem:** Explanation sagt "klemmt das Stoma ab — gefaehrdet Durchblutung". Das ist korrekt, aber "Nekrose" als Konsequenz koennte expliziter benannt werden (livide Verfaerbung -> Nekrose -> chirurgischer Notfall).
 - **Empfehlung:** Ergaenzen: "Im schlimmsten Fall: Stomanekrose — chirurgischer Notfall."
+- **Fix:** Explanation ergaenzt: "Folge: livide Verfaerbung, im schlimmsten Fall Stomanekrose — ein chirurgischer Notfall."
 
 ### phase-durchfuehren — Dialog Phase 1
 
-#### F-N02 (NIEDRIG): Dialog-Phase 1 "Alles erklären" Option Score unklar
+#### F-N02 (NIEDRIG): Dialog-Phase 1 "Alles erklären" Option Score unklar [GEFIXT 2026-04-30]
 - **Stelle:** phase-durchfuehren.ts, Step dur-02, Dialog Phase 1
 - **Problem:** Die "viel erklaeren"-Option ist Score 2 (vorheriger Fix F-10 hat von 1 auf 2 angehoben). Das ist didaktisch vertretbar: Transparenz ist grundsaetzlich richtig, aber bei einem stillen, schambesetzten Patienten wie Herrn Nguyen ist weniger oft mehr. Score-Differenzierung zwischen 2 und 3 koennte im Feedback noch klarer werden.
 - **Empfehlung:** Feedback ggf. um konkreten Praxis-Tipp ergaenzen: "Kurze Ankuendigungen ('Jetzt lege ich den neuen Beutel an') sind besser als ausfuehrliche Erklaerungen waehrend der Versorgung."
+- **Fix:** Praxis-Tipp in C1- und B1-Feedback ergaenzt mit konkretem Beispielsatz.
 
 ### Inline-Wissen Stichprobe
 

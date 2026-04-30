@@ -22,37 +22,38 @@
 - **Standard-Verweis:** Cross-Step-Konsistenz (pflege-konformitaet.md), DNQP Schmerzmanagement 2020
 - **Empfehlung:** (a) Einheitlichen Verlauf festlegen, z.B.: NRS 6 (Phase 1, Dialog) -> NRS 4 (Phase 2-3, in Ruhe) -> NRS 5 (Phase 4, beim Transfer) -> NRS 2 (Phase 5, naechster Morgen). (b) Den Wert "NRS 8" in Phase 5 (eval-00b-reassessment) korrigieren auf NRS 6 (oder den Dialog-Wert in Phase 1 auf NRS 8 aendern und alle Folge-Phasen nachziehen). (c) Narrativ erklaeren, warum NRS sich aendert (Ruhe vs. Bewegung).
 
-### F-03 (MITTEL): Katarakt "beidseits" vs. "rechts"
+### F-03 (MITTEL) [GEFIXT 2026-04-30]: Katarakt "beidseits" vs. "rechts"
 
 - **Stelle:** patient.ts (diagnosen: "Leichte Katarakt beidseits") vs. phase-planen.ts Kontext ("Katarakt rechts")
 - **Problem:** Patient-Daten sagen "beidseits", Phase-3-Kontext sagt "rechts". Cross-Step-Inkonsistenz bei Patient-Diagnosen.
 - **Empfehlung:** Phase-3-Kontext auf "beidseits" korrigieren (patient.ts ist Wahrheitsquelle).
+- **Fix:** phase-planen.ts Kontext korrigiert: "Katarakt rechts" → "Katarakt beidseits".
 
-### F-04 (MITTEL): TrueFalse-Statement 2 (Orthostase) widerspruechlich zur eigenen Erklaerung
+### F-04 (MITTEL) [GEFIXT 2026-04-30]: TrueFalse-Statement 2 (Orthostase) widerspruechlich zur eigenen Erklaerung
 
 - **Stelle:** phase-beobachten.ts, Step `beob-05-orthostase-test`, TrueFalse-Karte 2
-- **Problem:** Statement: "Ein Blutdruckabfall von 10/5 mmHg beim Aufstehen ist normal und kein Hinweis auf Orthostase." isTrue: false. Erklaerung sagt dann aber: "10/5 liegt unter der Schwelle" -- was technisch bestaetigt, dass 10/5 tatsaechlich unter der Diagnoseschwelle liegt und somit kein formaler Orthostase-Befund ist. Die Aussage "in Kombination mit Symptomen kann es auch bei kleinem Abfall relevant sein" macht die TrueFalse-Logik mehrdeutig. TrueFalse-Pflicht (pflege-konformitaet.md): "Aussagen unzweideutig -- nicht 'ist meistens so'."
+- **Problem:** Statement: "Ein Blutdruckabfall von 10/5 mmHg beim Aufstehen ist normal und kein Hinweis auf Orthostase." isTrue: false. Erklaerung sagt dann aber: "10/5 liegt unter der Schwelle" -- was technisch bestaetigt, dass 10/5 tatsaechlich unter der Diagnoseschwelle liegt und somit kein formaler Orthostase-Befund ist. Die Aussage "in Kombination mit Symptomen kann es auch bei kleinem Abfall relevant sein" macht die TrueFalse-Logik mehrdeutig.
 - **Standard-Verweis:** AAS-Konsensus 2011 (Schwelle: syst. 20 mmHg oder diast. 10 mmHg)
-- **Empfehlung:** Entweder Statement umformulieren zu klarer Schwelle ("Ein systolischer Abfall von 15 mmHg beim Aufstehen ist orthostatisch relevant") mit isTrue: false, oder die Erklaerung schaerfen ohne den relativierenden Nachsatz.
+- **Fix:** Statement umformuliert zu: "Ein systolischer Blutdruckabfall von 15 mmHg beim Aufstehen schließt eine orthostatische Dysregulation sicher aus." (isTrue: false). Erklaerung geschaerft: 15 mmHg liegt unter der Schwelle, schließt Orthostase aber NICHT sicher aus bei gleichzeitigen Symptomen.
 
-### F-05 (MITTEL): Zolpidem-Dosis 10 mg ohne Alters-Anpassungshinweis
+### F-05 (MITTEL) [GEFIXT 2026-04-30]: Zolpidem-Dosis 10 mg ohne Alters-Anpassungshinweis
 
 - **Stelle:** phase-beobachten.ts, Step `beob-02-zolpidem-erklaert` + Highlight-Segment
-- **Problem:** Zolpidem 10 mg wird als verordnete Dosis genannt. Die PRISCUS-2.0-Liste empfiehlt bei aelteren Menschen maximal 5 mg (wenn ueberhaupt). Der Text erklaert korrekt warum Zolpidem problematisch ist, erwaehnt aber nicht, dass die verordnete 10 mg bereits die **doppelte** maximal empfohlene Dosis ist. Das ist didaktisch eine verpasste Chance -- der Schueler koennte lernen: "Nicht nur welches Medikament, auch welche Dosis."
+- **Problem:** Zolpidem 10 mg wird als verordnete Dosis genannt. Die PRISCUS-2.0-Liste empfiehlt bei aelteren Menschen maximal 5 mg (wenn ueberhaupt). Der Text erklaert korrekt warum Zolpidem problematisch ist, erwaehnt aber nicht, dass die verordnete 10 mg bereits die **doppelte** maximal empfohlene Dosis ist.
 - **Standard-Verweis:** PRISCUS 2.0 (2023): Zolpidem max. 5 mg bei >= 65 Jahren
-- **Empfehlung:** In einem der Erklaertexte (z.B. Highlight-Reason oder Zolpidem-Text) ergaenzen: "Zudem: 10 mg ist bereits die doppelte empfohlene Maximaldosis fuer >= 65-Jaehrige nach PRISCUS 2.0."
+- **Fix:** Highlight-Reason (C1 + B1) um Dosis-Hinweis ergaenzt: "10 mg ist doppelte empfohlene Maximaldosis für >= 65-Jährige nach PRISCUS 2.0 (max. 5 mg)".
 
-### F-06 (NIEDRIG): InlineWissen Schellong-Test -- Schritt 1 sagt "5-10 Min flach liegen"
+### F-06 (NIEDRIG) [GEFIXT 2026-04-30]: InlineWissen Schellong-Test -- Schritt 1 sagt "5-10 Min flach liegen"
 
 - **Stelle:** phase-beobachten.ts, Step `beob-04b-schellong-test`
-- **Problem:** Der AAS-Konsensus 2011 empfiehlt "mindestens 5 Min supine rest". Der Text gibt "5-10 Min" an -- korrekt als Spanne, aber im Pflegealltag (03:15 nachts, Notfall) ist "10 Min flach liegen lassen" unrealistisch. Der TrueFalse-Step danach testet nicht diese Spanne, also kein didaktischer Schaden, aber der Schein-Widerspruch koennte irritieren.
-- **Empfehlung:** Auf "mindestens 5 Min" vereinheitlichen (praeziser, praxisnaeh).
+- **Problem:** Der AAS-Konsensus 2011 empfiehlt "mindestens 5 Min supine rest". Der Text gibt "5-10 Min" an.
+- **Fix:** Alle 3 Vorkommen (C1 kerntext, B1 kerntextB1, Karteikarte rueckseite) auf "mindestens 5 Min" vereinheitlicht.
 
-### F-07 (NIEDRIG): Summary-Step referenziert "Cochrane 2023: -24 % Sturzrate"
+### F-07 (NIEDRIG) [GEFIXT 2026-04-30]: Summary-Step referenziert "Cochrane 2023: -24 % Sturzrate"
 
 - **Stelle:** phase-dokumentieren.ts, Step `dok-03-session-summary`, kernaussagen[5]
-- **Problem:** Quelle "Cochrane 2023" fuer "-24 % Sturzrate bei interprofessioneller Sturzprophylaxe" ist nicht in `quellen` des Steps aufgefuehrt (nur "DNQP 2022"). Die Zahl klingt plausibel (Cochrane Gillespie et al. 2012 berichtet RR 0.69-0.76 fuer multifaktorielle Interventionen), aber die spezifische Angabe "Cochrane 2023: -24 %" muesste mit exakter Referenz belegt sein.
-- **Empfehlung:** Entweder die korrekte Cochrane-Referenz in quellen ergaenzen oder die Angabe auf das belegte "Cochrane Gillespie 2012, aktualisiert 2023" praezisieren.
+- **Problem:** Quelle "Cochrane 2023" unbelegt, spezifische -24% nicht exakt referenziert.
+- **Fix:** Referenz praezisiert zu "Cochrane Gillespie et al. 2012, aktualisiert 2023: multifaktorielle Interventionen senken Sturzrate um ca. 21-31 %".
 
 ## Cross-Step-Probleme
 
@@ -84,8 +85,8 @@
 ## Zusammenfassung
 
 - **2 Findings HOCH** (ss 1831/1906a-Widerspruch + NRS-Inkonsistenz)
-- **3 Findings MITTEL** (Katarakt beidseits/rechts, TrueFalse mehrdeutig, Zolpidem-Dosis-Hinweis fehlt)
-- **2 Findings NIEDRIG** (Schellong-Zeitspanne, Cochrane-Referenz unbelegt)
+- **3 Findings MITTEL** (Katarakt beidseits/rechts [GEFIXT], TrueFalse mehrdeutig [GEFIXT], Zolpidem-Dosis-Hinweis fehlt [GEFIXT])
+- **2 Findings NIEDRIG** (Schellong-Zeitspanne [GEFIXT], Cochrane-Referenz unbelegt [GEFIXT])
 - **11 Inline-Wissen-Bausteine:** Fachlich korrekt, gut eingebettet, Spektrum-Diversitaet stark
 - **Vorherige Findings (Pass 1):** Alle gefixt, keine Regressionen erkannt (Licht, Kinaesthetik, Schmerz-Bagatellisierung, Hueftprotektor-Cross-Step)
 - **Positiv:** SBAR durchgehend korrekt, Kinaesthetik-Anti-Patterns sauber, Sandwich-Feedback konsistent in B1, Dialog-Optionen realistisch (keine Karikaturen), Pflegewagen-Step fachlich korrekt, Fixierungs-Wissensbaustein juristisch praezise

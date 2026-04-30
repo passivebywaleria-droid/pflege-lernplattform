@@ -61,11 +61,11 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
           "Erst sagen was du machst. Dann ablenken. Material verstecken. Nie überrumpeln.",
         spektrum: [
           {
-            patientName: "Emilia (8 Wochen, Bronchiolitis)",
+            patientName: "Emilia (4 Monate, Bronchiolitis)",
             situationsId: "ls-emilia-saeugling",
             hauptfaktor: "Säugling — Ablenkung funktioniert anders",
             kurzbeschreibung:
-              "Bei Emilia (8 Wochen) funktioniert verbale Ankündigung nicht. Stattdessen: Pucken (Einwickeln gibt Sicherheit), Non-nutritives Saugen (Schnuller), Hautkontakt (Känguru-Methode). Ablenkung über taktile Reize statt visuelle.",
+              "Bei Emilia (4 Monate) funktioniert verbale Ankündigung nicht. Stattdessen: Pucken (Einwickeln gibt Sicherheit), Non-nutritives Saugen (Schnuller), Hautkontakt (Känguru-Methode). Ablenkung über taktile Reize statt visuelle.",
           },
           {
             patientName: "Herr Bauer (82, Demenz)",
@@ -350,9 +350,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
             text: "Sandra soll Lukas festhalten, dann geht es schneller.",
             isCorrect: false,
             feedback:
-              "Falsch — wegen des Motivs. Therapeutisches Halten durch Eltern (mit Einverständnis, ruhiger Stimme, als beruhigender Halt — nicht als Zwang) ist bei kindgerechten Maßnahmen eine etablierte Technik (Hoehl/Kullick 2019). Es geht aber um das Kindeswohl — nicht um Geschwindigkeit. 'Damit es schneller geht' macht aus Halt einen Zwang gegen den Willen des Kindes. Hier liegt kein Notfall vor; die richtige Antwort ist: Pause, KUSS-Reassessment, Bedarfsanalgesie. Wenn Lukas nach der Pause kooperiert, kann Sandra ihn beruhigend halten — als Sicherheit, nicht als Fixierung.",
+              "Falsch — wegen des Motivs. Therapeutisches Halten durch Eltern (mit Einverständnis, ruhiger Stimme, als beruhigender Halt — nicht als Zwang) ist bei kindgerechten Maßnahmen eine etablierte Technik (Hoehl/Kullick 2019). Es geht aber um das Kindeswohl — nicht um Geschwindigkeit. 'Damit es schneller geht' macht aus Halt einen Zwang gegen den Willen des Kindes. Rechtlich wichtig: Festhalten gegen den erkennbaren Willen eines Kindes ohne Notfallsituation kann als freiheitsentziehende Maßnahme gewertet werden. Hier liegt kein Notfall vor; die richtige Antwort ist: Pause, KUSS-Reassessment, Bedarfsanalgesie. Wenn Lukas nach der Pause kooperiert, kann Sandra ihn beruhigend halten — als Sicherheit, nicht als Fixierung.",
             feedbackB1:
-              "Falsch — wegen des Grundes. Eltern dürfen ihr Kind beruhigend halten — als Sicherheit. Aber nicht 'damit es schneller geht'. Hier ist kein Notfall. Erst Pause, Schmerzmittel und Beruhigung. Wenn Lukas dann kooperiert, kann Sandra ihn ruhig halten.",
+              "Falsch — wegen des Grundes. Eltern dürfen ihr Kind beruhigend halten — als Sicherheit. Aber nicht 'damit es schneller geht'. Wichtig: Festhalten gegen den Willen des Kindes ohne Notfall kann rechtlich als Fixierung gelten. Hier ist kein Notfall. Erst Pause, Schmerzmittel und Beruhigung. Wenn Lukas dann kooperiert, kann Sandra ihn ruhig halten.",
           },
         ],
       },
@@ -437,11 +437,11 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
               "Herr Petrov hat eine Schluckstörung (Dysphagie). Mundpflege bei ihm muss mit Absaugbereitschaft erfolgen — Aspirationsrisiko. Bei Lukas besteht kein Aspirationsrisiko, aber die Grundregel ist dieselbe: Patient kann schlucken → schluckbare Mittel verwenden.",
           },
           {
-            patientName: "Emilia (8 Wochen, Bronchiolitis)",
+            patientName: "Emilia (4 Monate, Bronchiolitis)",
             situationsId: "ls-emilia-saeugling",
             hauptfaktor: "Säugling — Mundpflege noch eingeschränkter",
             kurzbeschreibung:
-              "Bei Emilia (8 Wochen) ist Mundpflege auf Befeuchtung mit Muttermilch-getränktem Tupfer oder sterilem Wasser beschränkt. Keine Antiseptika, keine Lösungen — rein mechanisch-befeuchtend.",
+              "Bei Emilia (4 Monate) ist Mundpflege auf Befeuchtung mit Muttermilch-getränktem Tupfer oder sterilem Wasser beschränkt. Keine Antiseptika, keine Lösungen — rein mechanisch-befeuchtend.",
           },
           {
             patientName: "Herr Bauer (82, Demenz)",

@@ -132,7 +132,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
               "Bei Erwachsenen gelten bis zu 20 Min Kühlung als vertretbar — das Oberfläche-Masse-Verhältnis ist günstiger, Hypothermie-Risiko geringer. Aber auch bei Erwachsenen: kein Eis, kein eiskaltes Wasser.",
           },
           {
-            patientName: "Emilia (8 Wochen, Bronchiolitis)",
+            patientName: "Emilia (4 Monate, Bronchiolitis)",
             situationsId: "ls-emilia-saeugling",
             hauptfaktor: "Säugling — noch empfindlicher als Kleinkind",
             kurzbeschreibung:
@@ -242,7 +242,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
           "Kinderschutz-Screening ist Standard, kein Vorwurf. Es gibt das bei jedem kleinen Kind mit Verbrühung.",
         spektrum: [
           {
-            patientName: "Emilia (8 Wochen, Bronchiolitis)",
+            patientName: "Emilia (4 Monate, Bronchiolitis)",
             situationsId: "ls-emilia-saeugling",
             hauptfaktor: "Säugling — besonders enge Kinderschutz-Aufmerksamkeit",
             kurzbeschreibung:
