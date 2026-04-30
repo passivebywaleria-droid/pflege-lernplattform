@@ -15,6 +15,47 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
   kontextB1:
     "Frau Schäfer hat die Wunde gesehen. Sie sagt: 'Das ist Kategorie 2. Wir müssen sofort handeln. Ich rufe die Ärztin. Du planst weiter — was schlägst du vor?' Du musst jetzt einen guten Plan machen: Wundversorgung, Lagerung, was als nächstes geprüft wird.",
   kernSteps: [
+    // Inline-Wissen: Wundauflagen \u2014 welcher Verband fuer welche Wunde?
+    {
+      stepId: "ce02-yilmaz-s2-plan-00b-wundauflagen",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["NPUAP/EPUAP/PPPIA 2019"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-plan-00b-wundauflagen",
+      tag: "krankheitslehre",
+      themaPrimaer: "dekubitus-prophylaxe",
+      themenSekundaer: ["haut"],
+      transition: "Du kennst die Verbaende. Waehle den richtigen fuer Frau Yilmaz.",
+      contentC1: {
+        title: "Wundauflagen \u2014 welcher Verband fuer welche Wunde?",
+        body: "",
+        glossarBegriffe: ["Hydrokolloid-Verband", "Alginate", "VAC-Therapie", "Feuchtes Wundmilieu", "Hydrokolloid", "Silber-Wundauflage", "Fettgaze", "Schaumverband"],
+      },
+      contentB1: {
+        title: "Welcher Verband passt? Ein Ueberblick",
+        body: "",
+        glossarBegriffe: ["Hydrokolloid-Verband", "Feuchtes Wundmilieu"],
+      },
+      inlineWissen: {
+        bausteinRef: "dekubitus-prophylaxe-wundauflagen",
+        storyAufhaenger: "Dr. Kirchner wird gleich fragen welchen Verband du empfiehlst. Dafuer brauchst du einen Ueberblick ueber die gaengigsten Wundauflagen und das Prinzip der feuchten Wundbehandlung.",
+        storyAufhaengerB1: "Gleich waehlt die Aerztin den Verband. Du musst die verschiedenen Typen kennen.",
+        kerntext: "**Feuchtes Wundmilieu** = Grundprinzip moderner Wundversorgung (Winter 1962). Feucht gehaltene Wunden heilen bis zu 50 % schneller als trockene.\n\n**5 Wundauflagen-Typen:**\n\n\u2022 **Hydrokolloid-Verband** \u2014 Bildet bei Kontakt mit Exsudat ein Gel. Haelt Wunde feucht. Ideal fuer flache, wenig naessende Wunden (Kat. II). = Frau Yilmaz.\n\n\u2022 **Alginate** \u2014 Aus Braunalgen. Absorbiert viel Sekret. Fuer stark naessende Wunden.\n\n\u2022 **Schaumverband** \u2014 Polstert und absorbiert. Fuer maessig naessende Wunden.\n\n\u2022 **Silber-Wundauflage** \u2014 Antiseptisch. Fuer infizierte Wunden.\n\n\u2022 **Fettgaze** \u2014 Verhindert Verkleben mit Wundgrund. Fuer Granulationsphase.\n\n\u2022 **VAC-Therapie** (Vakuumversiegelung) \u2014 Fuer tiefe, unterminierte Wunden (Kat. III/IV). Bei Kat. II uebertherapiert.",
+        kerntextB1: "**Feuchte Wundbehandlung** = feucht gehaltene Wunden heilen schneller.\n\n**5 Verbands-Typen:**\n\u2022 **Hydrokolloid** \u2014 Haelt Wunde feucht. Fuer flache Wunden (Kat. 2) = Frau Yilmaz.\n\u2022 **Alginate** \u2014 Fuer stark naessende Wunden.\n\u2022 **Schaumverband** \u2014 Polstert, fuer mittel-naessende Wunden.\n\u2022 **Silber-Wundauflage** \u2014 Gegen Infektion.\n\u2022 **Fettgaze** \u2014 Verhindert Verkleben.\n\u2022 **VAC-Therapie** \u2014 Nur fuer tiefe Wunden.",
+        faustregel: "Feuchtes Wundmilieu = Grundprinzip. Hydrokolloid = Standard bei Kat. II. Alginate bei viel Exsudat. VAC nur bei tiefen Wunden.",
+        faustregelB1: "Feucht heilt schneller. Hydrokolloid fuer flache Wunden. Alginate fuer naessende. VAC nur fuer tiefe.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Welche Wundauflage fuer Frau Yilmaz (Dekubitus Kat. II, flache Erosion, wenig Exsudat) und warum?",
+          rueckseite: "Hydrokolloid-Verband: Bildet Gel bei Exsudat-Kontakt, haelt Wunde feucht (Winter 1962), foerdert Granulation. Nicht: Alginate (zu wenig Exsudat), nicht VAC (uebertherapiert bei Kat. II). Feuchtes Wundmilieu = bis zu 50 % schnellere Heilung.",
+        },
+      },
+    },
+
     // Step 3.1 — MC (Single-Choice): Wundauflage auswählen
     {
       stepId: "ce02-yilmaz-s2-plan-01-wundauflage-auswahl",
@@ -242,6 +283,47 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
         title: "Warum 135°-Seitenlage?",
         body: "Bei 90°-Seitenlage drückt das Gewicht auf den Oberschenkelknochen seitlich. Das ist auch eine gefährliche Stelle für Dekubitus. Bei 135° liegt man schräger: Das Gewicht verteilt sich auf die Gesäßmuskeln. Viel Fleisch und Muskel schützen den Knochen besser.\n\n**Wichtig: Auf welcher Seite?** Frau Yilmaz hat Hüft-OP rechts. Das heißt: Sie liegt auf der **linken** Seite (die nicht-operierte Seite). Die operierte Hüfte ist oben. Niemals auf der operierten Seite liegen — das tut der OP-Stelle weh.\n\nKissen: eins unter die Brust (Stabilisierung), eins zwischen die Beine (wichtig: hält die operierte Hüfte in der richtigen Position!), eins unter den Unterschenkel (Fersen frei), eins am Rücken (damit sie nicht zurückrollt). Das dauert 5 Minuten länger — aber es hilft.",
         glossarBegriffe: ["135°-Seitenlage", "Kontralateral"],
+      },
+    },
+
+    // Inline-Wissen: Ergebnisqualitaet und pflegerische Verantwortung
+    {
+      stepId: "ce02-yilmaz-s2-plan-03b-ergebnis-pflbg",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["Donabedian A. (1966)", "Paragraph 3 PflBG"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-plan-03b-ergebnis-pflbg",
+      tag: "pflege",
+      themaPrimaer: "pflegeprozess",
+      themenSekundaer: ["dekubitus-prophylaxe"],
+      transition: "Ergebnisqualitaet im Kopf. Jetzt: S-P-E auf Frau Yilmaz anwenden.",
+      contentC1: {
+        title: "Ergebnisqualitaet und pflegerische Verantwortung",
+        body: "",
+        glossarBegriffe: ["Ergebnisqualitaet", "Paragraph 3 PflBG"],
+      },
+      contentB1: {
+        title: "Was ist Ergebnisqualitaet? Was sagt das Pflegeberufegesetz?",
+        body: "",
+        glossarBegriffe: ["Ergebnisqualitaet"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegeprozess-ergebnis-pflbg",
+        storyAufhaenger: "Gleich ordnest du Faktoren in das Donabedian-Modell ein. Eine Dimension fehlt noch: **Ergebnisqualitaet**. Und ein Gesetz musst du kennen: **Paragraph 3 PflBG**.",
+        storyAufhaengerB1: "Noch zwei Begriffe bevor du das Modell anwendest.",
+        kerntext: "**Ergebnisqualitaet** (Donabedian 1966) = das tatsaechliche Resultat der Pflege. Bei Frau Yilmaz: Dekubitus Kat. II ist entstanden (negativ), aber Kat. III/IV wurde verhindert (Schadensbegrenzung, positiv). Wunde heilt nach 3 Tagen (positiv).\n\n**Paragraph 3 PflBG** (Pflegeberufegesetz): Definiert die vorbehaltenen Taetigkeiten der Pflegefachkraft. Dazu gehoert: Erhebung und Feststellung des Pflegebedarfs, Planung, Organisation und Steuerung des Pflegeprozesses. Das SBAR-Gespraech mit der Aerztin ist pflegerische Berichterstattung nach Paragraph 3 \u2014 du DARFST und SOLLST der Aerztin deinen Befund mitteilen.",
+        kerntextB1: "**Ergebnisqualitaet** = Was ist am Ende rausgekommen? Bei Frau Yilmaz: Wunde entstanden (schlecht), aber heilt (gut). Kat. III/IV verhindert (gut).\n\n**Paragraph 3 PflBG** = Das Gesetz sagt: Pflegefachkraefte duerfen und sollen den Pflegebedarf feststellen und der Aerztin berichten. Das SBAR-Gespraech ist deine Aufgabe.",
+        faustregel: "Ergebnisqualitaet = tatsaechliches Resultat. Paragraph 3 PflBG = Pflegebericht an Aerztin ist deine Aufgabe und dein Recht.",
+        faustregelB1: "Ergebnisqualitaet = Was kam raus? Paragraph 3 PflBG = Du darfst und sollst der Aerztin berichten.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Was ist Ergebnisqualitaet im Fall Frau Yilmaz?",
+          rueckseite: "Ergebnisqualitaet (Donabedian): Dekubitus Kat. II entstanden (negativ), aber Kat. III/IV verhindert + Heilung sichtbar (positiv). Paragraph 3 PflBG: SBAR-Bericht an Aerztin = vorbehaltene Taetigkeit der Pflegefachkraft.",
+        },
       },
     },
 

@@ -131,6 +131,47 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       },
     },
 
+    // Inline-Wissen: Aseptisches Arbeiten \u2014 Grundprinzipien der Wundversorgung
+    {
+      stepId: "ce02-yilmaz-s2-durch-01b-aseptik-exsudat",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["RKI-Empfehlungen Haendehygiene", "NPUAP/EPUAP/PPPIA 2019"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-durch-01b-aseptik-exsudat",
+      tag: "pflege",
+      themaPrimaer: "dekubitus-prophylaxe",
+      themenSekundaer: ["haut"],
+      transition: "Aseptik-Grundlagen klar. Beschreibe jetzt den Wundzustand.",
+      contentC1: {
+        title: "Aseptisches Arbeiten \u2014 Grundprinzipien der Wundversorgung",
+        body: "",
+        glossarBegriffe: ["Aseptisch", "Haendedesinfektion", "Sterile Unterlage", "Kontamination", "Exsudat"],
+      },
+      contentB1: {
+        title: "Keimfrei arbeiten \u2014 warum und wie?",
+        body: "",
+        glossarBegriffe: ["Aseptisch", "Haendedesinfektion", "Kontamination", "Exsudat"],
+      },
+      inlineWissen: {
+        bausteinRef: "dekubitus-prophylaxe-aseptik",
+        storyAufhaenger: "Du hast gerade die Reihenfolge des Verbandwechsels sortiert. Aber warum genau ist diese Reihenfolge so streng? Fuenf Begriffe erklaeren das Prinzip.",
+        storyAufhaengerB1: "Warum ist die Reihenfolge beim Verbandwechsel so streng? Fuenf wichtige Woerter.",
+        kerntext: "**Aseptisch** = keimfrei arbeiten. Ziel: keine Keime in die Wunde einbringen. Grundprinzip: Von steril nach unsteril arbeiten, nie umgekehrt.\n\n**Haendedesinfektion** = 30 Sekunden Einreibezeit mit alkoholischem Haendedesinfektionsmittel. WANN: Vor und nach Patientenkontakt, vor aseptischen Taetigkeiten, nach Kontakt mit potenziell infektiösem Material (WHO: 5 Momente der Haendehygiene).\n\n**Sterile Unterlage** = keimfreie Arbeitsfläche fuer Wundversorgungsmaterial. Material wird darauf bereitgestellt bevor sterile Handschuhe angezogen werden.\n\n**Kontamination** = unbeabsichtigte Verunreinigung mit Keimen. Beispiel: Mit sterilen Handschuhen die Aussenverpackung anfassen = kontaminiert.\n\n**Exsudat** = Wundfluessigkeit. Menge und Art werden dokumentiert: seroes (klar), sanguinolent (blutig), purulent (eitrig). Bei Frau Yilmaz: minimal, seroes = Heilungszeichen.",
+        kerntextB1: "**Aseptisch** = keimfrei arbeiten. Keine Keime in die Wunde bringen.\n\n**Haendedesinfektion** = 30 Sekunden Haende desinfizieren. Vor und nach jedem Kontakt.\n\n**Sterile Unterlage** = saubere Arbeitsfläche fuer Material.\n\n**Kontamination** = Verunreinigung mit Keimen. Beispiel: Mit sterilen Handschuhen Verpackung anfassen = kontaminiert.\n\n**Exsudat** = Fluessigkeit aus der Wunde. Klar = gut. Eitrig = schlecht.",
+        faustregel: "Aseptisch = von steril nach unsteril. Kontamination vermeiden. Haendedesinfektion vor und nach. Exsudat dokumentieren.",
+        faustregelB1: "Keimfrei arbeiten. Haende vorher desinfizieren. Sterile Handschuhe nicht an Verpackungen anfassen.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Was bedeutet aseptisches Arbeiten beim Verbandwechsel?",
+          rueckseite: "Aseptisch = keimfrei, von steril nach unsteril. Haendedesinfektion 30 Sek (WHO 5 Momente). Sterile Unterlage vorbereiten. Kontamination = unbeabsichtigte Keimverschleppung (z. B. Verpackung mit sterilen Handschuhen anfassen). Exsudat = Wundfluessigkeit (seroes/sanguinolent/purulent).",
+        },
+      },
+    },
+
     // Step 4.2 — Cloze: Wundzustand beschreiben
     {
       stepId: "ce02-yilmaz-s2-durch-02-wundzustand-beschreiben",
@@ -172,6 +213,47 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
             { id: 4, correct: "mazeriert", distractors: ["scharf begrenzt", "gerötet", "trocken"] },
             { id: 5, correct: "II", distractors: ["I", "III", "IV"] },
           ],
+        },
+      },
+    },
+
+    // Inline-Wissen: Datenschutz bei Fotodokumentation \u2014 DSGVO Art. 9
+    {
+      stepId: "ce02-yilmaz-s2-durch-02b-datenschutz-foto",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["DSGVO Art. 9", "Paragraph 630f BGB"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-durch-02b-datenschutz-foto",
+      tag: "pflege",
+      themaPrimaer: "pflegedokumentation",
+      themenSekundaer: ["dekubitus-prophylaxe"],
+      transition: "Datenschutz klar. Pruefe dein Wissen mit den Richtig/Falsch-Aussagen.",
+      contentC1: {
+        title: "Datenschutz bei Fotodokumentation \u2014 DSGVO Art. 9",
+        body: "",
+        glossarBegriffe: ["DSGVO Art. 9", "Einwilligung", "Fotodokumentation", "DSGVO"],
+      },
+      contentB1: {
+        title: "Darf ich ein Foto von der Wunde machen?",
+        body: "",
+        glossarBegriffe: ["DSGVO", "Einwilligung", "Fotodokumentation"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegedokumentation-datenschutz-foto",
+        storyAufhaenger: "Dr. Kirchner hat Fotodokumentation angeordnet. Aber: Darf man einfach so ein Foto von der Wunde machen? Datenschutz ist bei Gesundheitsdaten besonders streng.",
+        storyAufhaengerB1: "Die Aerztin will ein Foto. Aber darf man einfach so fotografieren?",
+        kerntext: "**DSGVO** (Datenschutz-Grundverordnung) = EU-weites Gesetz zum Schutz personenbezogener Daten. **Art. 9** = Besonderer Schutz fuer Gesundheitsdaten. Wundfotos sind Gesundheitsdaten \u2014 besondere Kategorie.\n\n**Fotodokumentation** bei Wunden:\n\u2022 NUR mit Klinik-Geraet (nicht Privathandy!)\n\u2022 NUR mit **Einwilligung** der Patientin (informiert, dokumentiert)\n\u2022 Masstab/Lineal auf dem Foto (Groessenmessung)\n\u2022 In der Patientenakte speichern (nicht WhatsApp, nicht privater Ordner)\n\u2022 Foto ERGAENZT schriftliche Dokumentation, ersetzt sie NICHT\n\n**Einwilligung** = Die Patientin muss wissen: Was wird fotografiert? Warum? Wo wird es gespeichert? Sie muss zustimmen. Ohne Einwilligung: keine Fotodokumentation.",
+        kerntextB1: "**DSGVO** = Datenschutz-Gesetz. **Art. 9** = Gesundheitsdaten sind besonders geschuetzt. Wundfotos sind Gesundheitsdaten.\n\n**Fotodokumentation:**\n\u2022 Nur mit Klinik-Geraet (nicht Privathandy!)\n\u2022 Nur mit **Einwilligung** der Patientin\n\u2022 Massstab auf dem Foto\n\u2022 In der Akte speichern\n\u2022 Foto ersetzt NICHT den schriftlichen Bericht",
+        faustregel: "Wundfotos nur mit Klinik-Geraet, mit Einwilligung, mit Massstab, in der Akte. Nie Privathandy.",
+        faustregelB1: "Foto: Nur Klinik-Geraet. Nur mit Erlaubnis der Patientin. In die Akte.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Welche DSGVO-Anforderungen gelten fuer Wundfotos?",
+          rueckseite: "DSGVO Art. 9: Gesundheitsdaten = besondere Kategorie. Wundfotos nur mit: 1) Klinik-Geraet, 2) Einwilligung, 3) Massstab, 4) Akte-Speicherung. Nie Privathandy. Foto ergaenzt schriftliche Doku, ersetzt sie nicht.",
         },
       },
     },
@@ -238,6 +320,47 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
               "FALSCH — Das Foto ergänzt die schriftliche Dokumentation, ersetzt sie nicht. Ein Foto zeigt den visuellen Zustand, aber nicht: subjektive Aussagen der Patientin, Geruch, Konsistenz, Schmerz — all das braucht Text.",
           },
         ],
+      },
+    },
+
+    // Inline-Wissen: Fersenfreistellung und Hueft-TEP-Schutzlagerung
+    {
+      stepId: "ce02-yilmaz-s2-durch-03b-lagerung-schutz",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["NPUAP/EPUAP/PPPIA 2019"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-durch-03b-lagerung-schutz",
+      tag: "anatomie",
+      themaPrimaer: "positionierung",
+      themenSekundaer: ["dekubitus-prophylaxe"],
+      transition: "Lagerungsschutz klar. Beschrifte jetzt die Kissen.",
+      contentC1: {
+        title: "Fersenfreistellung und Hueft-TEP-Schutzlagerung",
+        body: "",
+        glossarBegriffe: ["Fersenfreistellung", "Hueft-TEP Schutzlagerung"],
+      },
+      contentB1: {
+        title: "Fersen freistellen und Hueft-OP schuetzen",
+        body: "",
+        glossarBegriffe: ["Fersenfreistellung"],
+      },
+      inlineWissen: {
+        bausteinRef: "positionierung-fersen-tep",
+        storyAufhaenger: "Gleich beschriftest du die Kissen-Positionen in der 135-Grad-Lagerung. Zwei Spezialbegriffe musst du kennen.",
+        storyAufhaengerB1: "Zwei wichtige Woerter fuer die Lagerung.",
+        kerntext: "**Fersenfreistellung** = Die Fersen komplett vom Auflagerungsdruck befreien durch ein Kissen unter dem Unterschenkel. Die Ferse schwebt frei in der Luft. Warum? Fersen sind Praedilektionsstellen (wenig Weichteilpolster, hoher lokaler Druck). Weichlagerungsmatratzen reichen an den Fersen oft nicht aus.\n\n**Hueft-TEP Schutzlagerung** = Positionierungsregeln nach Hueftgelenks-Totalendoprothese: Keine Adduktion (Beine nicht ueberkreuzen), keine Innenrotation, Hueftbeugung max. 90 Grad. Kissen zwischen den Knien haelt die Abduktion. Bei Frau Yilmaz: 135-Grad-Lagerung auf die LINKE Seite (nicht-operiert), TEP-Seite oben.",
+        kerntextB1: "**Fersenfreistellung** = Kissen unter den Unterschenkel \u2014 Ferse schwebt frei. Warum? Fersen sind haeufige Dekubitus-Stellen.\n\n**Hueft-TEP Schutzlagerung** = Regeln nach Hueft-OP: Beine nicht ueberkreuzen, nicht nach innen drehen, Hueftbeugung max. 90 Grad. Kissen zwischen den Knien. Frau Yilmaz: auf der LINKEN Seite liegen.",
+        faustregel: "Fersenfreistellung = Ferse muss frei schweben (Kissen unter Unterschenkel). TEP-Schutz = Abduktionskissen, nie auf operierter Seite liegen.",
+        faustregelB1: "Fersen muessen frei sein (Kissen drunter). Nach Hueft-OP: nicht auf der operierten Seite liegen.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Warum braucht Frau Yilmaz Fersenfreistellung UND Hueft-TEP-Schutzlagerung?",
+          rueckseite: "Fersenfreistellung: Fersen = Praedilektionsstelle, Kissen unter Unterschenkel, Ferse frei. TEP-Schutzlagerung: keine Adduktion, keine Innenrotation, max. 90 Grad Hueftbeugung. Kissen zwischen Knien. 135-Grad-Lagerung auf LINKE (nicht-operierte) Seite.",
+        },
       },
     },
 

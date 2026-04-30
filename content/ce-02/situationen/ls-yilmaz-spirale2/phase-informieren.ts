@@ -137,6 +137,47 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
       },
     },
 
+    // Inline-Wissen: Diabetes, Mikrozirkulation und Dekubitus-Risikostellen
+    {
+      stepId: "ce02-yilmaz-s2-info-01c-diabetes-haut-braden",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["NPUAP/EPUAP/PPPIA 2019", "Braden B.J., Bergstrom N. (1987)", "DNQP 2024"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-info-01c-diabetes-haut-braden",
+      tag: "krankheitslehre",
+      themaPrimaer: "dekubitus-prophylaxe",
+      themenSekundaer: ["haut"],
+      transition: "Du kennst die Zusammenhaenge. Drehe die Flipcards.",
+      contentC1: {
+        title: "Diabetes, Mikrozirkulation und Dekubitus-Risikostellen",
+        body: "",
+        glossarBegriffe: ["Hyperglykaemie", "Mikrozirkulationsstoerung", "Praedilektionsstelle", "Braden-Skala"],
+      },
+      contentB1: {
+        title: "Wie haengen Diabetes und Hautwunden zusammen?",
+        body: "",
+        glossarBegriffe: ["Hyperglykaemie", "Praedilektionsstelle", "Braden-Skala"],
+      },
+      inlineWissen: {
+        bausteinRef: "dekubitus-prophylaxe-diabetes-braden",
+        storyAufhaenger: "Frau Yilmaz hat Diabetes Typ 2 mit HbA1c 8,1 %. In der Akte steht eine Roetung am Sakrum. Bevor du die Flipcards drehst: Warum ist Diabetes ein Dekubitus-Risikofaktor? Und was hat die **Braden-Skala** damit zu tun?",
+        storyAufhaengerB1: "Frau Yilmaz hat Diabetes. Warum ist das ein Risiko fuer Hautwunden? Und was ist die Braden-Skala?",
+        kerntext: "**Hyperglykaemie** (erhoehter Blutzucker) bei Diabetes schaedigt ueber Jahre die kleinen Blutgefaesse \u2014 das nennt man **Mikrozirkulationsstoerung**. Folgen: Gewebe wird schlechter durchblutet, Immunzellen kommen langsamer an, Wundheilung ist verzoegert.\n\n**Praedilektionsstellen** = Koerperstellen mit erhoehtem Dekubitus-Risiko. Dort wo Knochen direkt unter der Haut liegen (wenig Fettgewebe als Polster):\n\u2022 Sakrum (Steissbein) \u2014 bei Rueckenlage (= Frau Yilmaz)\n\u2022 Fersen \u2014 bei Rueckenlage\n\u2022 Trochanter major \u2014 bei Seitenlage\n\u2022 Sitzbeinhöcker \u2014 bei langem Sitzen\n\n**Braden-Skala** (Braden/Bergstrom 1987) = Instrument zur Einschaetzung des Dekubitusrisikos. 6 Subskalen (Wahrnehmung, Feuchtigkeit, Aktivitaet, Mobilitaet, Ernaehrung, Reibung), je 1-4 Punkte. Score 6-23, niedriger = hoeheres Risiko. Bei Frau Yilmaz in Spirale 1: Score ca. 13 (maessiges Risiko).",
+        kerntextB1: "**Hyperglykaemie** = zu viel Zucker im Blut. Das schaedigt kleine Blutgefaesse (**Mikrozirkulationsstoerung**). Folge: Haut heilt langsamer.\n\n**Praedilektionsstellen** = Stellen wo Dekubitus am haeufigsten entsteht:\n\u2022 Steissbein (bei Rueckenlage)\n\u2022 Fersen\n\u2022 Hueftknochen seitlich\n\n**Braden-Skala** = misst das Dekubitus-Risiko. 6 Punkte, je 1-4. Score 6-23. Niedrig = hohes Risiko.",
+        faustregel: "Hyperglykaemie schaedigt Mikrozirkulation \u2192 Haut heilt langsamer. Praedilektionsstellen: Sakrum, Fersen, Trochanter. Braden \u2264 14 = Prophylaxe Pflicht.",
+        faustregelB1: "Diabetes schaedigt kleine Blutgefaesse \u2192 Haut heilt langsamer. Haeufigste Stellen: Steissbein, Fersen.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Warum ist Frau Yilmaz (Diabetes, HbA1c 8,1 %) besonders dekubitusgefaehrdet?",
+          rueckseite: "Hyperglykaemie \u2192 Mikrozirkulationsstoerung \u2192 verzoegerte Wundheilung + Neuropathie (kein Schmerzsignal). Praedilektionsstellen: Sakrum, Fersen. Braden-Score 13 = maessiges Risiko, Prophylaxe Pflicht.",
+        },
+      },
+    },
+
     // Step 1.2 — Flipcard (3 Karten): Risikoprofil aktivieren
     {
       stepId: "ce02-yilmaz-s2-info-02-akte-risikoprofil",

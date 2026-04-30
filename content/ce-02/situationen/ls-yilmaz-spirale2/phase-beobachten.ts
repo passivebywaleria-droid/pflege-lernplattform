@@ -162,6 +162,47 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
       },
     },
 
+    // Inline-Wissen: Wundbeurteilung \u2014 Wundrand, Wundgrund und Kategorien
+    {
+      stepId: "ce02-yilmaz-s2-beob-01b-kategorien-wund",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["NPUAP/EPUAP/PPPIA 2019", "DNQP 2024"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-beob-01b-kategorien-wund",
+      tag: "krankheitslehre",
+      themaPrimaer: "dekubitus-prophylaxe",
+      themenSekundaer: ["haut"],
+      transition: "Du kennst die Begriffe. Vergleiche jetzt Kategorie I und II.",
+      contentC1: {
+        title: "Wundbeurteilung \u2014 Wundrand, Wundgrund und Kategorien",
+        body: "",
+        glossarBegriffe: ["Wundrand", "Wundgrund", "Erosion", "Dekubitus Kategorie I", "Dekubitus Kategorie II", "Hornschicht", "Hautbarriere"],
+      },
+      contentB1: {
+        title: "Wundbeurteilung \u2014 was siehst du an einer Wunde?",
+        body: "",
+        glossarBegriffe: ["Wundrand", "Wundgrund", "Dekubitus Kategorie I", "Dekubitus Kategorie II"],
+      },
+      inlineWissen: {
+        bausteinRef: "dekubitus-prophylaxe-wundbeurteilung",
+        storyAufhaenger: "Du hast gerade die Wunde auf dem Bild markiert. Jetzt die Fachbegriffe dazu: Was genau sind Wundrand, Wundgrund, und was unterscheidet Kategorie I von II?",
+        storyAufhaengerB1: "Du hast die Wunde gesehen. Jetzt die Fachwoerter: Was ist Wundrand? Was ist Wundgrund?",
+        kerntext: "**Wundgrund** = die Oberflaeche innerhalb der Wunde. Farbe zeigt den Zustand:\n\u2022 Rosa-rot (Granulation) = Heilung\n\u2022 Gelblich (Fibrin) = Reinigungsphase\n\u2022 Schwarz (Nekrose) = totes Gewebe\n\n**Wundrand** = die Grenze zwischen Wunde und gesunder Haut. Mazeriert = aufgeweicht durch Feuchtigkeit. Epithelialisierend = neue Haut waechst nach.\n\n**Erosion** = flacher, oberflaechlicher Hautverlust (Epidermis). Typisch fuer Kategorie II.\n\n**Kategorie I** = Intakte Haut, nicht-wegdrueckbare Roetung. Fingertest positiv. **Hautbarriere** (= **Hornschicht** als oberste Schutzschicht) noch intakt.\n\n**Kategorie II** = Teilverlust der Haut. Flache Erosion oder Blase. Hornschicht durchbrochen. Ab hier: Wundversorgung statt Prophylaxe.",
+        kerntextB1: "**Wundgrund** = die Flaeche in der Wunde. Farbe zeigt den Zustand: Rosa = heilt. Gelb = reinigt sich. Schwarz = totes Gewebe.\n\n**Wundrand** = Grenze zwischen Wunde und gesunder Haut. Aufgeweicht = mazeriert.\n\n**Erosion** = flache offene Stelle. Typisch fuer Kategorie 2.\n\n**Kategorie 1** = Haut noch ganz. Rote Stelle. **Hautbarriere** (= **Hornschicht**) intakt.\n**Kategorie 2** = Haut offen. Hornschicht kaputt. Jetzt braucht es Wundversorgung.",
+        faustregel: "Wundgrund = Farbe zeigt Zustand. Wundrand = mazeriert oder heilend. Kategorie I = Haut intakt. Kategorie II = Haut offen = Therapie.",
+        faustregelB1: "Wundgrund: Rosa = heilt. Wundrand: aufgeweicht = schlecht. Kat. 1 = Haut ganz. Kat. 2 = Haut offen.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Was unterscheidet Dekubitus Kategorie I von Kategorie II am Beispiel von Frau Yilmaz?",
+          rueckseite: "Kat. I: Intakte Haut, nicht-wegdrueckbare Roetung, Fingertest positiv, Hornschicht intakt. Kat. II: Teilverlust der Haut (Erosion/Blase), Hornschicht durchbrochen. Bei Frau Yilmaz: 2x3 cm Erosion am Sakrum = Kat. II. Wundgrund: roetlich-feucht. Wundrand: mazeriert.",
+        },
+      },
+    },
+
     // Step 2.2 — Comparison: Kategorie I vs. II
     {
       stepId: "ce02-yilmaz-s2-beob-02-kategorien-abgrenzen",
@@ -495,6 +536,47 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
               { value: "14", isBlank: true, options: ["10", "12", "14", "16", "18"] },
             ],
           ],
+        },
+      },
+    },
+
+    // Inline-Wissen: Donabedian und Risikofaktoren \u2014 Systemanalyse statt Schuld
+    {
+      stepId: "ce02-yilmaz-s2-beob-04b-donabedian",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["Donabedian A. (1966)", "DNQP 2024"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-beob-04b-donabedian",
+      tag: "pflege",
+      themaPrimaer: "dekubitus-prophylaxe",
+      themenSekundaer: ["pflegeprozess"],
+      transition: "Du kennst das Modell. Schreib jetzt deine Analyse.",
+      contentC1: {
+        title: "Donabedian und Risikofaktoren \u2014 Systemanalyse statt Schuld",
+        body: "",
+        glossarBegriffe: ["Donabedian", "Strukturqualitaet", "Prozessqualitaet", "Endogene Faktoren", "Exogene Faktoren", "Organisationsfaktoren"],
+      },
+      contentB1: {
+        title: "Warum ist die Wunde entstanden? System statt Schuld",
+        body: "",
+        glossarBegriffe: ["Donabedian", "Endogene Faktoren", "Exogene Faktoren", "Organisationsfaktoren"],
+      },
+      inlineWissen: {
+        bausteinRef: "dekubitus-prophylaxe-donabedian",
+        storyAufhaenger: "Warum ist Frau Yilmaz Dekubitus trotz Prophylaxeplan entstanden? Die Antwort liegt nicht bei einer Person \u2014 sondern im System. Das **Donabedian-Modell** hilft, die Ursachen systematisch zu sortieren.",
+        storyAufhaengerB1: "Warum ist die Wunde entstanden \u2014 obwohl Prophylaxe geplant war? Ein Modell hilft: Donabedian.",
+        kerntext: "**Donabedian-Modell** (1966) teilt Qualitaet in 3 Dimensionen:\n\n\u2022 **Strukturqualitaet** = Was IST vorhanden? Personal, Material, Ausstattung. Bei Frau Yilmaz: Weichlagerungsmatratze war da, aber Personalschluessel war knapp.\n\n\u2022 **Prozessqualitaet** = Was WIRD getan? Umlagerung, Hautinspektion, Dokumentation. Bei Frau Yilmaz: Umlagerung geplant, aber nicht immer durchgefuehrt. Roetung gesehen, nicht dokumentiert.\n\n\u2022 Ergebnisqualitaet = Was IST das Resultat? Dekubitus entstanden (negativ), aber Kat. II statt III/IV (Schadensbegrenzung).\n\n**Risikofaktoren** nach Ebene:\n\u2022 **Endogene Faktoren** (= vom Patienten): Diabetes, Neuropathie, Adipositas, Alter.\n\u2022 **Exogene Faktoren** (= von aussen): Inkontinenz-Pad, Matratze, Scherkraefte.\n\u2022 **Organisationsfaktoren** (= System): Personalknappheit, Dokumentationsluecke, Ablehnung der Umlagerung.\n\nWichtig: Kein Schuld-Framing. Dekubitus ist ein Systemereignis \u2014 nicht das Versagen einer Person.",
+        kerntextB1: "**Donabedian-Modell** (1966) hat 3 Teile:\n\n\u2022 **Struktur** = Was ist da? Personal, Material.\n\u2022 **Prozess** = Was wurde gemacht? Umlagerung, Hautinspektion.\n\u2022 **Ergebnis** = Was ist passiert? Wunde entstanden.\n\n**Risikofaktoren:**\n\u2022 **Endogen** (= Person): Diabetes, Uebergewicht, Nerven-Schaedigung.\n\u2022 **Exogen** (= von aussen): Inkontinenz-Pad, Matratze.\n\u2022 **Organisation** (= System): Zu wenig Personal, nicht aufgeschrieben.\n\nWichtig: Niemand ist schuld. Es ist ein System-Problem.",
+        faustregel: "Donabedian: Struktur \u2192 Prozess \u2192 Ergebnis. Dekubitus = Systemereignis, kein Einzelversagen. Endogen + Exogen + Organisation.",
+        faustregelB1: "3 Teile: Struktur + Prozess + Ergebnis. Risiken: Person + Umgebung + System. Niemand ist schuld.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Erklaere das Donabedian-Modell am Fall Frau Yilmaz.",
+          rueckseite: "Donabedian (1966): S = Struktur (Matratze da, Personal knapp). P = Prozess (Umlagerung lueckenhaft, Roetung nicht dokumentiert). E = Ergebnis (Dekubitus Kat. II). Risikofaktoren: Endogen (Diabetes, Neuropathie), Exogen (Inkontinenz-Pad), Organisation (Personalschluessel, Dokumentationsluecke). Systemanalyse, kein Schuld-Framing.",
         },
       },
     },

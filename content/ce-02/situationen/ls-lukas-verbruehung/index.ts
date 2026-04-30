@@ -10,3 +10,4 @@ export { CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN } from "./phase-planen";
 export { CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN } from "./phase-durchfuehren";
 export { CE02_SIT_LUKAS_VERBRUEHUNG_EVALUIEREN } from "./phase-evaluieren";
 export { CE02_SIT_LUKAS_VERBRUEHUNG_DOKUMENTIEREN } from "./phase-dokumentieren";
+export { CE02_LUKAS_VERBRUEHUNG_INLINE_WISSEN } from "./inline-wissen";

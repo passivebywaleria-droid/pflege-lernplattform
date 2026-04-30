@@ -738,23 +738,405 @@ export const CE02_KOVAC_INLINE_05A_EVALUATION_REGELKREIS: ContentStep = {
 };
 
 // ============================================================
-// EXPORT — alle 10 Inline-Wissens-Bausteine
+// PHASE 1 — INFORMIEREN (Ergaenzung: 1 Baustein)
+// ============================================================
+
+/**
+ * 1C — Kontraktur + Thrombose + Trinkprotokoll (Wohnungscheck-Begriffe)
+ * Position: VOR ce02-kovac-info-03-wohnungscheck
+ * Begriffe: Kontraktur, Thrombose, Trinkprotokoll, Hausrecht
+ */
+export const CE02_KOVAC_INLINE_01C_RISIKEN_UEBERBLICK: ContentStep = {
+  stepId: "ce02-kovac-info-02b-risiken-ueberblick",
+  phase: 1,
+  stepType: "inlineWissen",
+  bloomLevel: 1,
+  kompetenzbereich: "I.1",
+  quellen: [
+    "DNQP Kontrakturprophylaxe 2024 (in Entwicklung)",
+    "AWMF S3-Leitlinie Thromboseprophylaxe 2022",
+  ],
+  track: "basis",
+  modus: "entdecker",
+  lernziel: "ce02-kovac-ambulant-info-risiken",
+  tag: "pflege",
+  themaPrimaer: "kontraktur-prophylaxe",
+  themenSekundaer: ["thrombose-prophylaxe"],
+  transition:
+    "Du kennst jetzt die drei Hauptrisiken bei Frau Kovac. Gleich inspizierst du ihre Wohnung — und erkennst, welche Risiken sich dort zeigen.",
+  contentC1: {
+    title: "Kontraktur, Thrombose, Fluessigkeit — drei Risiken, eine Patientin",
+    body: "",
+    glossarBegriffe: ["Kontraktur", "Thrombose", "Trinkprotokoll", "Hausrecht"],
+  },
+  contentB1: {
+    title: "Was sind die drei grossen Risiken bei Frau Kovac?",
+    body: "",
+    glossarBegriffe: ["Kontraktur", "Thrombose"],
+  },
+  inlineWissen: {
+    bausteinRef: "kontraktur-prophylaxe-definition",
+    storyAufhaenger:
+      "Petras Zettel sagt vieles zwischen den Zeilen: \"Struempfe verweigert\" = Thrombose-Prophylaxe stockt. \"Kaum gegessen\" = Ernaehrungsproblem. \"Knie tut weh\" = Bewegungseinschraenkung. Und alles in einer 84-jaehrigen Frau mit COPD, die den ganzen Tag im Sessel sitzt. Drei Risiken, die sich gegenseitig verstaerken.",
+    storyAufhaengerB1:
+      "Frau Kovac hat drei grosse Risiken: Ihre Gelenke koennen steif werden. Sie kann ein Blutgerinnsel bekommen. Und sie trinkt zu wenig. Alles haengt zusammen.",
+    kerntext:
+      "**Drei Risiken bei Frau Kovac:**\n\n• **Kontraktur** = Versteifung eines Gelenks durch dauerhafte Fehlstellung. Frau Kovac sitzt den ganzen Tag mit angewinkelten Knien. Das Kniegelenk wird kuerzer, das Strecken wird unmoeglich. Ohne Bewegung → irreversible Kontraktur in Wochen.\n\n• **Thrombose** = Blutgerinnsel in einer tiefen Vene, meist Bein. Frau Kovac: Sitzt viel (Stase), trinkt wenig (Haemokonzentration), bewegt die Beine kaum (fehlende Wadenmuskelpumpe). Kompressionsstruempfe verweigert → Risiko erhoehrt.\n\n• **Trinkprotokoll** = systematische Erfassung der Trinkmenge ueber 24h. Zeigt: Wie viel trinkt sie wirklich? (Nicht: \"Ich trinke genug\" — sondern messbar.) Bei Frau Kovac: Gestern 800 ml (Bedarf: mind. 1.200 ml).\n\n• **Hausrecht:** In der ambulanten Pflege bist du Gast. Frau Kovac entscheidet, was in ihrer Wohnung passiert. Du darfst beraten, empfehlen, dokumentieren — aber nicht gegen ihren Willen handeln.\n\nQuelle: (AWMF S3 Thrombose 2022; DNQP Kontraktur 2024)",
+    kerntextB1:
+      "**Drei grosse Risiken:**\n\n• **Kontraktur** = Gelenk wird steif. Frau Kovac sitzt immer mit angewinkelten Knien. Ohne Bewegung wird das Knie irgendwann steif — dann kann sie gar nicht mehr gehen.\n\n• **Thrombose** = Blutgerinnsel im Bein. Sie sitzt viel + trinkt wenig + bewegt die Beine nicht = gefaehrlich. Struempfe helfen — aber sie will keine.\n\n• **Trinkprotokoll** = Aufschreiben wie viel sie trinkt. Gestern: 800 ml. Das ist zu wenig (Minimum: 1.200 ml).\n\n• **Hausrecht**: Du bist Gast bei Frau Kovac. Du darfst beraten — aber sie entscheidet.",
+    faustregel:
+      "**Immobilitaet + wenig Trinken + keine Struempfe = dreifaches Risiko.** Ambulant: Beratung statt Anordnung.",
+    faustregelB1:
+      "Wenig Bewegung + wenig Trinken + keine Struempfe = drei Gefahren gleichzeitig. Du berätst — Frau Kovac entscheidet.",
+    spektrum: [
+      {
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
+        hauptfaktor: "Kontraktur bei Bettlaegerigkeit",
+        kurzbeschreibung:
+          "Bei Herr Bauer droht Kontraktur durch Bettlaegerigkeit. Bei Frau Kovac durch dauerhaftes Sitzen — anderer Mechanismus, gleiches Ergebnis.",
+      },
+      {
+        patientName: "Frau Yilmaz",
+        situationsId: "ls-yilmaz-hueft-tep",
+        hauptfaktor: "Post-OP: Thrombose + Kontraktur + Dekubitus",
+        kurzbeschreibung:
+          "Bei Frau Yilmaz sind es dieselben Risiken — aber stationaer, mit staendiger Beobachtung. Ambulant fehlt diese Kontrolle.",
+      },
+    ],
+    karteikarte: {
+      vorderseite:
+        "Frau Kovac sitzt den ganzen Tag, trinkt 800 ml und verweigert Struempfe. Welche drei Risiken bestehen — und was ist das Besondere ambulant?",
+      rueckseite:
+        "1) Kontraktur: Kniegelenk in Flexion → ohne Bewegung irreversibel. 2) Thrombose: Stase + Haemokonzentration + fehlende Wadenmuskelpumpe. 3) Dehydration: 800 ml/Tag (Bedarf 1.200). Ambulant: Frau Kovac hat Hausrecht — du beraetst, sie entscheidet. Faustregel: Immobilitaet + wenig Trinken + keine Struempfe = dreifaches Risiko.",
+    },
+  },
+};
+
+// ============================================================
+// PHASE 2 — BEOBACHTEN (Ergaenzung: 2 Bausteine)
+// ============================================================
+
+/**
+ * 2D — Virchow-Trias + Thrombose + Kompressionstherapie
+ * Position: VOR ce02-kovac-beob-06-oedeme-thrombose-blick
+ * Begriffe: Virchow-Trias, Thrombose, Stase, Kompressionstherapie
+ */
+export const CE02_KOVAC_INLINE_02D_VIRCHOW_TRIAS: ContentStep = {
+  stepId: "ce02-kovac-beob-05b-virchow-trias",
+  phase: 2,
+  stepType: "inlineWissen",
+  bloomLevel: 2,
+  kompetenzbereich: "I.1",
+  quellen: [
+    "AWMF S3-Leitlinie VTE-Prophylaxe 2022",
+    "Virchow 1856 — Thrombose-Pathogenese",
+  ],
+  track: "basis",
+  modus: "entdecker",
+  lernziel: "ce02-kovac-ambulant-beob-virchow",
+  tag: "krankheitslehre",
+  themaPrimaer: "thrombose-prophylaxe",
+  themenSekundaer: ["kontraktur-prophylaxe"],
+  transition:
+    "Du verstehst jetzt die drei Ursachen fuer Thrombose. Gleich untersuchst du Frau Kovacs Beine — und ordnest ein, was du siehst.",
+  contentC1: {
+    title: "Virchow-Trias — warum Frau Kovac thrombosegefaehrdet ist",
+    body: "",
+    glossarBegriffe: ["Virchow-Trias", "Thrombose", "Stase", "Kompressionstherapie"],
+  },
+  contentB1: {
+    title: "Warum kann ein Blutgerinnsel entstehen?",
+    body: "",
+    glossarBegriffe: ["Thrombose", "Kompressionstherapie"],
+  },
+  inlineWissen: {
+    bausteinRef: "thrombose-prophylaxe-virchow",
+    storyAufhaenger:
+      "Frau Kovac hat geschwollene Knoechel. Sie sitzt den ganzen Tag im Sessel. Sie trinkt 800 ml. Sie verweigert die Struempfe. Und in der Medikamentenliste steht kein Heparin — nur ASS. Rudolf Virchow wuerde sagen: Das sind drei rote Flaggen gleichzeitig.",
+    storyAufhaengerB1:
+      "Frau Kovacs Knoechel sind geschwollen. Sie sitzt viel, trinkt wenig und will keine Struempfe. Warum kann daraus ein Blutgerinnsel werden?",
+    kerntext:
+      "**Virchow-Trias — die drei Ursachen der Thrombose (1856):**\n\n• **1. Stase** (verlangsamter Blutfluss): Frau Kovac sitzt den ganzen Tag. Die Wadenmuskelpumpe arbeitet nicht. Blut staut sich in den tiefen Beinvenen.\n\n• **2. Endothelschaedigung** (Gefaesswandschaeden): Chronische Veneninsuffizienz, fruehere Thrombosen, Krampfadern — geschaedigte Venenwand beguenstigt Gerinnselbildung.\n\n• **3. Hyperkoagulabilitaet** (erhoehte Gerinnungsneigung): Bei Frau Kovac: Dehydration (800 ml → dickes Blut), Immobilitaet, Alter >80 Jahre.\n\n**Kompressionstherapie:**\n• Kompressionsstruempfe Klasse II beschleunigen den venoesen Rueckfluss und reduzieren Stase. Frau Kovac verweigert sie → Alternativ: Kompressionsverbände versuchen oder Bewegungsuebungen (Sprunggelenk-Mobilisation, Wadenmuskelpumpe) als Teilkompensation.\n\n• **ASS ≠ Thromboseprophylaxe** bei venoesen Thrombosen. ASS hemmt Thrombozyten (arteriell), nicht die plasmatische Gerinnung (venoes). Heparin waere noetig — aerztliche Ruecksprache empfehlen.\n\nQuelle: (AWMF S3 VTE 2022; Virchow 1856)",
+    kerntextB1:
+      "**Warum entsteht ein Blutgerinnsel?**\n\n• **1. Blut fliesst zu langsam** (Stase): Frau Kovac sitzt viel. Das Blut staut sich in den Beinen.\n• **2. Gefaesswand beschaedigt**: Alte Venen, Krampfadern — die Wand ist nicht mehr glatt.\n• **3. Blut ist zu dick**: Wenig trinken (800 ml) → Blut wird dicker → Gerinnsel leichter.\n\n**Struempfe helfen:** Sie druecken die Beine sanft zusammen → Blut fliesst besser. Frau Kovac will keine → dann: Fuss-Uebungen als Ersatz.\n\n**ASS hilft NICHT** gegen Bein-Gerinnsel. ASS ist fuer Arterien, nicht fuer Venen. Der Arzt muesste Heparin ueberlegen.",
+    faustregel:
+      "**Virchow-Trias: Stase + Gefaesswandschaden + dickes Blut = Thrombose.** ASS schuetzt nicht vor venoesen Thrombosen.",
+    faustregelB1:
+      "Wenig Bewegung + kranke Venen + wenig trinken = Blutgerinnsel-Gefahr. ASS hilft hier nicht — nur Struempfe oder Heparin.",
+    spektrum: [
+      {
+        patientName: "Frau Yilmaz",
+        situationsId: "ls-yilmaz-hueft-tep",
+        hauptfaktor: "Post-OP: Heparin + Struempfe + Mobilisation",
+        kurzbeschreibung:
+          "Bei Frau Yilmaz ist die Prophylaxe stationaer klar geregelt: Heparin s.c. + Struempfe + Fruehmobilisation. Ambulant bei Kovac: Struempfe verweigert, kein Heparin, nur ASS.",
+      },
+      {
+        patientName: "Herr Nguyen",
+        situationsId: "ls-nguyen-stoma",
+        hauptfaktor: "Post-OP + Tumorerkrankung = erhoehte Koagulabilitaet",
+        kurzbeschreibung:
+          "Herr Nguyen hat eine Tumorerkrankung — ein zusaetzlicher Risikofaktor fuer Thrombose (Hyperkoagulabilitaet). Sein Heparin ist deshalb besonders wichtig.",
+      },
+    ],
+    karteikarte: {
+      vorderseite:
+        "Frau Kovac hat geschwollene Knoechel, trinkt 800 ml, nimmt ASS und verweigert Struempfe. Erklaere mit der Virchow-Trias, warum sie thrombosegefaehrdet ist.",
+      rueckseite:
+        "Virchow-Trias: 1) Stase: Ganztaegig im Sessel, keine Wadenmuskelpumpe. 2) Endothelschaden: Alter, ggf. Varikose. 3) Hyperkoagulabilitaet: Dehydration (800 ml) + Alter >80. ASS hemmt Thrombozyten (arteriell) — schuetzt NICHT vor venoeser Thrombose. Kompression wuerde Stase reduzieren — verweigert. Empfehlung: Aerztliche Ruecksprache wegen Heparin. Ersatz: Sprunggelenk-Uebungen (Wadenmuskelpumpe). Faustregel: Stase + Schaden + dickes Blut = Thrombose.",
+    },
+  },
+};
+
+/**
+ * 2E — Kontraktur + VAS + Extensionsdefizit + Atemhilfsmuskulatur
+ * Position: VOR ce02-kovac-beob-03-gelenke-assessment
+ * Begriffe: Kontraktur, VAS, Extensionsdefizit, Flexionskontraktur, Atemhilfsmuskulatur, DNQP Schmerz
+ */
+export const CE02_KOVAC_INLINE_02E_KONTRAKTUR_GELENKE: ContentStep = {
+  stepId: "ce02-kovac-beob-02b-kontraktur-gelenke",
+  phase: 2,
+  stepType: "inlineWissen",
+  bloomLevel: 2,
+  kompetenzbereich: "I.1",
+  quellen: [
+    "DNQP Expertenstandard Schmerzmanagement 2020",
+    "AWMF S2k-Leitlinie Kontrakturprophylaxe 2024 (Entwurf)",
+  ],
+  track: "basis",
+  modus: "entdecker",
+  lernziel: "ce02-kovac-ambulant-beob-kontraktur",
+  tag: "pflege",
+  themaPrimaer: "kontraktur-prophylaxe",
+  themenSekundaer: ["thrombose-prophylaxe"],
+  transition:
+    "Du verstehst jetzt Kontraktur, Extensionsdefizit und Schmerzassessment. Gleich beurteilst du Frau Kovacs Gelenke — und schreibst auf, was du findest.",
+  contentC1: {
+    title: "Kontraktur, Extensionsdefizit und Schmerz-Assessment bei COPD",
+    body: "",
+    glossarBegriffe: ["Kontraktur", "VAS", "Extensionsdefizit", "Flexionskontraktur", "Atemhilfsmuskulatur", "DNQP Schmerz"],
+  },
+  contentB1: {
+    title: "Was passiert mit Gelenken, die sich nicht mehr bewegen?",
+    body: "",
+    glossarBegriffe: ["Kontraktur", "VAS"],
+  },
+  inlineWissen: {
+    bausteinRef: "kontraktur-prophylaxe-assessment",
+    storyAufhaenger:
+      "Frau Kovac will aufstehen — aber das rechte Knie laesst sich nicht ganz strecken. \"Das geht schon seit Wochen so\", sagt sie. Das ist kein normaler Verschleiss. Das ist ein Extensionsdefizit — und ohne Intervention wird es schlimmer.",
+    storyAufhaengerB1:
+      "Frau Kovacs rechtes Knie geht nicht ganz gerade. \"Das war schon immer so\", sagt sie. Stimmt das — oder wird es schlimmer?",
+    kerntext:
+      "**Kontraktur — wenn Gelenke steif werden:**\n\n• **Kontraktur** = dauerhafte Bewegungseinschraenkung eines Gelenks durch Verkuerzung von Muskeln, Sehnen oder Gelenkkapsel. Entsteht durch anhaltende Immobilitaet in einer Position.\n\n• **Flexionskontraktur** am Knie: Das Knie bleibt in Beugestellung, vollstaendige Streckung ist nicht mehr moeglich. Frau Kovacs Sessel-Position (Knie immer angewinkelt) foerdert genau das.\n\n• **Extensionsdefizit** = die fehlenden Grade bei der Streckung. Messung: Vollstaendige Streckung = 0°. Frau Kovacs Defizit: z.B. -15° → sie kann das Knie nur bis 15° vor der vollen Streckung bringen.\n\n• **VAS** (Visuelle Analogskala): Schmerzmessung 0-10. Bei Frau Kovac (kognitiv intakt, sprachfaehig) geeigneter als NRS. DNQP Schmerzmanagement (2020): Systematisches Schmerzassessment = Pflicht bei jeder Mobilisation.\n\n• **Atemhilfsmuskulatur**: Bei COPD nutzt Frau Kovac Hals- und Schultermuskeln zum Atmen (sichtbare Einziehungen, hochgezogene Schultern). Beachte: Verspannte Schultermuskulatur durch Atemhilfsmuskulatur-Einsatz kann Kontrakturrisiko im Schultergelenk erhoehen.\n\nQuelle: (DNQP Schmerzmanagement 2020; AWMF S2k 2024)",
+    kerntextB1:
+      "**Was ist eine Kontraktur?**\n\n• Ein Gelenk wird steif, weil es zu lange in einer Position war. Frau Kovacs Knie ist immer angewinkelt (im Sessel). Deshalb wird es steif.\n\n• **Extensionsdefizit** = sie kann das Knie nicht mehr ganz strecken. Es fehlen ein paar Grad.\n\n• **VAS** = Schmerzskala von 0 bis 10. Frage: \"Wie stark ist der Schmerz? 0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\"\n\n• **Atemhilfsmuskulatur** = Bei COPD benutzt Frau Kovac Halsmuskeln zum Atmen. Das siehst du an hochgezogenen Schultern. Das kann auch die Schulter steif machen.",
+    faustregel:
+      "**Kontraktur = Immobilitaet + Zeit + eine Position.** VAS bei jeder Mobilisation. Atemhilfsmuskulatur beobachten = Schulter-Kontrakturrisiko erkennen.",
+    faustregelB1:
+      "Gelenke werden steif wenn sie sich nicht bewegen. Immer nach Schmerzen fragen (VAS). Bei COPD: Schultern beobachten.",
+    spektrum: [
+      {
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
+        hauptfaktor: "Knie-Kontraktur bei Demenz + Bettlaegerigkeit",
+        kurzbeschreibung:
+          "Herr Bauers Kontraktur ist weiter fortgeschritten — er liegt viel, bewegt die Beine kaum und kann nicht mehr kooperieren. Bei Frau Kovac gibt es noch ein Zeitfenster.",
+      },
+      {
+        patientName: "Herr Petrov",
+        situationsId: "ls-petrov-schlaganfall",
+        hauptfaktor: "Spastik-Kontraktur durch Hemiparese",
+        kurzbeschreibung:
+          "Bei Petrov droht Kontraktur durch Spastik (Muskeltonus zu hoch). Bei Kovac durch Immobilitaet (Muskeltonus normal, Gelenk wird einfach nicht bewegt).",
+      },
+    ],
+    karteikarte: {
+      vorderseite:
+        "Frau Kovacs rechtes Knie laesst sich nicht ganz strecken (-15°). Wie heisst das — und warum ist es bei COPD-Patienten besonders relevant?",
+      rueckseite:
+        "Extensionsdefizit = fehlende Grade bei Streckung. Ursache: Flexionskontraktur durch dauerhaftes Sitzen mit angewinkelten Knien. Bei COPD: Atemhilfsmuskulatur-Einsatz kann zusaetzlich Schulter-Kontraktur beguenstigen. VAS bei jeder Mobilisation (DNQP 2020). Messung: 0° = volle Streckung, -15° = 15 Grad fehlen. Ohne Intervention: Defizit nimmt zu → Gehen wird unmoeglich. Faustregel: Kontraktur = Immobilitaet + Zeit + eine Position.",
+    },
+  },
+};
+
+// ============================================================
+// PHASE 3 — PLANEN (Ergaenzung: 1 Baustein)
+// ============================================================
+
+/**
+ * 3C — Motivierende Gespraechsfuehrung + Zirkadiane Rhythmik
+ * Position: VOR ce02-kovac-plan-04-schlafberatung-planen
+ * Begriffe: Motivierende Gespraechsfuehrung, Zirkadiane Rhythmik
+ */
+export const CE02_KOVAC_INLINE_03C_MOTIVIEREND: ContentStep = {
+  stepId: "ce02-kovac-plan-03b-motivierend",
+  phase: 3,
+  stepType: "inlineWissen",
+  bloomLevel: 2,
+  kompetenzbereich: "II.1",
+  quellen: [
+    "Miller/Rollnick 2013 — Motivational Interviewing 3. Aufl.",
+    "DGSM S3-Leitlinie Insomnie 2017/2020",
+  ],
+  track: "basis",
+  modus: "entdecker",
+  lernziel: "ce02-kovac-ambulant-plan-motivierend",
+  tag: "pflege",
+  themaPrimaer: "schlaf",
+  themenSekundaer: ["pflegeprozess"],
+  transition:
+    "Du kennst jetzt die Grundprinzipien der Motivierenden Gespraechsfuehrung. Gleich planst du das Schlafberatungsgespraech — und entscheidest, wie du Frau Kovac vom Fernseher-Verzicht ueberzeugst.",
+  contentC1: {
+    title: "Motivierende Gespraechsfuehrung — Veraenderung foerdern, nicht fordern",
+    body: "",
+    glossarBegriffe: ["Motivierende Gespraechsfuehrung", "Zirkadiane Rhythmik"],
+  },
+  contentB1: {
+    title: "Wie ueberzeugst du Frau Kovac?",
+    body: "",
+    glossarBegriffe: ["Motivierende Gespraechsfuehrung"],
+  },
+  inlineWissen: {
+    bausteinRef: "schlaf-motivierende-gespraechsfuehrung",
+    storyAufhaenger:
+      "Frau Kovac schaut bis Mitternacht Fernsehen. Du weisst: Blaulicht hemmt Melatonin. Aber wenn du sagst \"Schalten Sie den Fernseher ab\", wird sie sagen: \"Das ist das Einzige was ich noch hab.\" Motivierende Gespraechsfuehrung geht anders — sie laesst Frau Kovac selbst zur Erkenntnis kommen.",
+    storyAufhaengerB1:
+      "Frau Kovac schaut nachts Fernsehen. Du weisst: Das ist schlecht fuer den Schlaf. Aber wenn du sagst \"Machen Sie den Fernseher aus\", sagt sie nein. Wie gehst du vor?",
+    kerntext:
+      "**Motivierende Gespraechsfuehrung (MI, Miller/Rollnick 2013):**\n\n• **Prinzip 1 — Empathie ausdruecken:** \"Ich verstehe, dass der Fernseher abends Gesellschaft ist.\" Kein Urteil, kein Vorwurf.\n\n• **Prinzip 2 — Diskrepanz entwickeln:** \"Sie schlafen schlecht ein und wachen um 2 Uhr auf. Was glauben Sie: Koennte der Fernseher damit zu tun haben?\" Der Patient entdeckt den Widerspruch selbst.\n\n• **Prinzip 3 — Widerstand aufnehmen:** Wenn Frau Kovac sagt \"Der Fernseher bleibt an\" → nicht dagegen argumentieren, sondern: \"Was waere, wenn Sie ihn um 22 Uhr ausmachen statt um 24 Uhr? Nur als Versuch fuer 3 Tage?\"\n\n• **Prinzip 4 — Selbstwirksamkeit staerken:** \"Sie haben gestern die Atemuebungen geschafft, obwohl es schwer war. Wenn Sie das koennen, koennen Sie auch das hier ausprobieren.\"\n\n**Zirkadiane Rhythmik:** Der 24h-Rhythmus von Schlaf-Wach, Temperatur und Hormonen. Blaulicht (Fernseher, Handy) hemmt Melatonin-Ausschuettung → Einschlafen verzoegert sich. Empfehlung: 1h vor Schlaf kein Bildschirm.\n\nQuelle: (Miller/Rollnick 2013; DGSM 2017/2020)",
+    kerntextB1:
+      "**Wie ueberzeugst du jemanden, der nicht will?**\n\n• **Verstehen:** \"Ich weiss, der Fernseher ist Ihnen wichtig.\" Nicht schimpfen.\n• **Fragen statt sagen:** \"Was glauben SIE — hat der Fernseher mit dem schlechten Schlaf zu tun?\" Die Patientin soll es selbst merken.\n• **Klein anfangen:** Nicht \"Fernseher aus\", sondern \"Vielleicht um 22 Uhr statt Mitternacht? Nur 3 Tage probieren?\"\n• **Loben:** \"Sie haben die Atemuebungen geschafft — das war auch nicht leicht.\"\n\n**Zirkadiane Rhythmik:** Der Koerper hat eine innere Uhr. Bildschirm-Licht stoert diese Uhr → man kann nicht einschlafen. 1 Stunde vor dem Schlafen: kein Bildschirm.",
+    faustregel:
+      "**Motivierende Gespraechsfuehrung = Fragen statt Sagen.** Der Patient entdeckt den Widerspruch selbst. Klein anfangen, nicht alles auf einmal.",
+    faustregelB1:
+      "Fragen statt sagen. Klein anfangen. Und loben was schon klappt.",
+    spektrum: [
+      {
+        patientName: "Herr Nguyen",
+        situationsId: "ls-nguyen-stoma",
+        hauptfaktor: "Ernaehrungsberatung bei Scham",
+        kurzbeschreibung:
+          "Bei Herrn Nguyen geht es um Ernaehrungsumstellung nach Stoma-OP. Gleiche Methode: nicht vorschreiben, sondern mit dem Patienten Loesungen entwickeln.",
+      },
+      {
+        patientName: "Frau Schmidt",
+        situationsId: "ls-schmidt-adipositas",
+        hauptfaktor: "Gewichtsreduktion + Lebensstilaenderung",
+        kurzbeschreibung:
+          "Bei Frau Schmidt ist MI zentral: Gewichtsreduktion funktioniert nur mit eigener Motivation — nicht mit aerztlichen Anweisungen.",
+      },
+    ],
+    karteikarte: {
+      vorderseite:
+        "Frau Kovac schaut bis Mitternacht Fernsehen und schlaeft schlecht. Wie setzt du Motivierende Gespraechsfuehrung ein?",
+      rueckseite:
+        "MI (Miller/Rollnick 2013): 1) Empathie: \"Ich verstehe, Fernseher = Gesellschaft.\" 2) Diskrepanz: \"Koennte der Fernseher mit dem schlechten Schlaf zusammenhaengen?\" 3) Widerstand aufnehmen: \"22 Uhr statt 24 Uhr? Nur 3 Tage?\" 4) Selbstwirksamkeit: \"Die Atemuebungen konnten Sie auch — das hier schaffen Sie auch.\" Zirkadiane Rhythmik: Blaulicht hemmt Melatonin → 1h vor Schlaf kein Bildschirm. Faustregel: Fragen statt Sagen.",
+    },
+  },
+};
+
+// ============================================================
+// PHASE 4 — DURCHFUEHREN (Ergaenzung: 1 Baustein)
+// ============================================================
+
+/**
+ * 4C — Schweigepflicht + DSGVO + Datenschutz + Gesundheitsdaten
+ * Position: VOR ce02-kovac-dur-05-komplikation-sohn-datenschutz
+ * Begriffe: Schweigepflicht, DSGVO, Datenschutz, Gesundheitsdaten
+ */
+export const CE02_KOVAC_INLINE_04C_SCHWEIGEPFLICHT: ContentStep = {
+  stepId: "ce02-kovac-dur-04b-schweigepflicht",
+  phase: 4,
+  stepType: "inlineWissen",
+  bloomLevel: 2,
+  kompetenzbereich: "IV.2",
+  quellen: [
+    "§ 203 StGB (Verletzung von Privatgeheimnissen)",
+    "DSGVO Art. 9 (Gesundheitsdaten)",
+    "PflBG § 5 (Berufspflichten)",
+  ],
+  track: "basis",
+  modus: "entdecker",
+  lernziel: "ce02-kovac-ambulant-dur-schweigepflicht",
+  tag: "pflege",
+  themaPrimaer: "pflegeprozess",
+  themenSekundaer: [],
+  transition:
+    "Du verstehst jetzt, warum Gesundheitsdaten besonders geschuetzt sind. Gleich klingelt das Telefon — Frau Kovacs Sohn will wissen, wie es seiner Mutter geht. Was darfst du sagen?",
+  contentC1: {
+    title: "Schweigepflicht, DSGVO und Gesundheitsdaten in der ambulanten Pflege",
+    body: "",
+    glossarBegriffe: ["Schweigepflicht", "DSGVO", "Datenschutz", "Gesundheitsdaten"],
+  },
+  contentB1: {
+    title: "Was darfst du ueber Frau Kovac erzaehlen — und was nicht?",
+    body: "",
+    glossarBegriffe: ["Schweigepflicht", "Datenschutz"],
+  },
+  inlineWissen: {
+    bausteinRef: "pflegeprozess-schweigepflicht",
+    storyAufhaenger:
+      "Du stehst bei Frau Kovac in der Kueche. Ihr Handy klingelt. Darko (der Sohn in Muenchen) fragt: \"Wie geht es meiner Mutter? Hat sie die Struempfe angezogen? Was hat der Arzt gesagt?\" Er klingt besorgt, er meint es gut. Aber: Darfst du antworten?",
+    storyAufhaengerB1:
+      "Frau Kovacs Sohn ruft an. Er will wissen wie es seiner Mutter geht. Er meint es gut — aber darfst du einfach so erzaehlen?",
+    kerntext:
+      "**Schweigepflicht und Datenschutz in der Pflege:**\n\n• **§ 203 StGB**: Pflegekraefte unterliegen der Schweigepflicht. Gesundheitsdaten duerfen nicht an Dritte weitergegeben werden — auch nicht an Angehoerige, es sei denn, die Patientin stimmt zu.\n\n• **DSGVO Art. 9**: Gesundheitsdaten sind \"besondere Kategorien personenbezogener Daten\" — hoechste Schutzstufe. Weitergabe nur mit ausdruecklicher Einwilligung.\n\n• **Ambulant besonders heikel:** Du stehst in Frau Kovacs Wohnung, telefonierst auf IHREM Handy mit IHREM Sohn. Die Grenzen verschwimmen — aber die Pflicht bleibt.\n\n• **Loesung:** Frage Frau Kovac VOR dem Anruf: \"Darf ich Darko sagen, wie der Besuch heute war? Was darf ich erzaehlen, was nicht?\" Dokumentiere die Einwilligung.\n\n• **Ohne Einwilligung:** \"Herr Kovac, ich verstehe Ihre Sorge. Aber ich darf ohne Einwilligung Ihrer Mutter keine Informationen weitergeben. Fragen Sie sie bitte selbst — oder ich frage sie jetzt, ob ich Ihnen etwas erzaehlen darf.\"\n\nQuelle: (§ 203 StGB; DSGVO Art. 9; PflBG § 5)",
+    kerntextB1:
+      "**Was darfst du erzaehlen?**\n\n• **Schweigepflicht** heisst: Du darfst ueber Patienten nichts erzaehlen — nicht mal der Familie.\n• **Datenschutz** (DSGVO) schuetzt Gesundheitsdaten besonders streng.\n• **Was tust du?** Frage Frau Kovac: \"Darf ich Ihrem Sohn sagen wie es Ihnen geht?\" Wenn sie Ja sagt: ok. Wenn nein: nicht.\n• **Ohne Erlaubnis zum Sohn:** \"Ich darf leider nichts sagen ohne Erlaubnis Ihrer Mutter. Fragen Sie sie bitte selbst.\"",
+    faustregel:
+      "**Ohne Einwilligung der Patientin: keine Auskunft — auch nicht an Angehoerige.** Erst fragen, dann reden.",
+    faustregelB1:
+      "Erst die Patientin fragen ob du dem Sohn etwas erzaehlen darfst. Ohne Erlaubnis: nichts sagen.",
+    spektrum: [
+      {
+        patientName: "Herr Bauer",
+        situationsId: "ls-bauer-demenz-sturz",
+        hauptfaktor: "Gesetzliche Betreuung = Auskunftsrecht",
+        kurzbeschreibung:
+          "Bei Herr Bauer ist der Sohn gesetzlicher Betreuer → er hat Auskunftsrecht. Bei Frau Kovac hat Darko KEIN Betreuungsrecht — sie ist einwilligungsfaehig.",
+      },
+      {
+        patientName: "Lukas",
+        situationsId: "ls-lukas-verbruehung",
+        hauptfaktor: "Minderjaehriger: Eltern haben Auskunftsrecht",
+        kurzbeschreibung:
+          "Bei Lukas (2,5 J.) haben Sandra und Kevin als Sorgeberechtigte automatisch Auskunftsrecht. Andere Rechtsgrundlage als bei Frau Kovac.",
+      },
+    ],
+    karteikarte: {
+      vorderseite:
+        "Frau Kovacs Sohn Darko ruft an und will wissen, ob sie die Struempfe angezogen hat. Darfst du antworten?",
+      rueckseite:
+        "Nein — nicht ohne Einwilligung von Frau Kovac. Schweigepflicht (§ 203 StGB) + DSGVO Art. 9 (Gesundheitsdaten = hoechste Schutzstufe). Loesung: Frau Kovac fragen: \"Darf ich Darko erzaehlen wie es Ihnen geht?\" Bei Ja: erzaehlen. Bei Nein: \"Herr Kovac, fragen Sie bitte Ihre Mutter selbst.\" Einwilligung dokumentieren. Spektrum: Bauer (Betreuer = Auskunftsrecht), Lukas (Eltern = Sorgerecht). Faustregel: Erst Patientin fragen, dann reden.",
+    },
+  },
+};
+
+// ============================================================
+// EXPORT — alle 15 Inline-Wissens-Bausteine
 // ============================================================
 
 export const CE02_KOVAC_AMBULANT_INLINE_WISSEN: ContentStep[] = [
   // Phase 1
   CE02_KOVAC_INLINE_01A_PNEUMONIE_COPD,
   CE02_KOVAC_INLINE_01B_PFLEGEPROZESS_SBAR,
+  CE02_KOVAC_INLINE_01C_RISIKEN_UEBERBLICK,
   // Phase 2
   CE02_KOVAC_INLINE_02A_PNEUMONIE_ATEMBEOB,
   CE02_KOVAC_INLINE_02B_SCHLAF_PHYSIOLOGIE,
   CE02_KOVAC_INLINE_02C_HARNAUSSCHEIDUNG,
+  CE02_KOVAC_INLINE_02D_VIRCHOW_TRIAS,
+  CE02_KOVAC_INLINE_02E_KONTRAKTUR_GELENKE,
   // Phase 3
   CE02_KOVAC_INLINE_03A_SCHLAFHYGIENE,
   CE02_KOVAC_INLINE_03B_SMART_AMBULANT,
+  CE02_KOVAC_INLINE_03C_MOTIVIEREND,
   // Phase 4
   CE02_KOVAC_INLINE_04A_LIPPENBREMSE,
   CE02_KOVAC_INLINE_04B_OBSTIPATION_TRINK,
+  CE02_KOVAC_INLINE_04C_SCHWEIGEPFLICHT,
   // Phase 5
   CE02_KOVAC_INLINE_05A_EVALUATION_REGELKREIS,
 ];

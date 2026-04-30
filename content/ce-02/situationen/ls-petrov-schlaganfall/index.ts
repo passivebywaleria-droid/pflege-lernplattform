@@ -9,3 +9,4 @@ export { CE02_SIT_PETROV_SCHLAGANFALL_PLANEN } from "./phase-planen";
 export { CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN } from "./phase-durchfuehren";
 export { CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN } from "./phase-evaluieren";
 export { CE02_SIT_PETROV_SCHLAGANFALL_DOKUMENTIEREN } from "./phase-dokumentieren";
+export { CE02_PETROV_SCHLAGANFALL_INLINE_WISSEN } from "./inline-wissen";
