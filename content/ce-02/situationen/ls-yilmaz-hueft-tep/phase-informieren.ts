@@ -10,9 +10,9 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
   titel: "Informieren & Vorbereiten",
   titelB1: "Vorbereiten bei Frau Yilmaz",
   kontext:
-    "Du stehst im Stationszimmer der orthopädischen Station. Es ist 7:40 Uhr. Frau Wendt, deine Praxisanleiterin, hat dir gerade die Übergabe für Frau Yilmaz gegeben. Du weißt: Frau Ayşe Yilmaz, 79 Jahre, 3. Tag nach Hüft-TEP rechts. Gestern war der erste Aufstehversuch — er wurde abgebrochen (NRS 7, Schmerz zu stark nach 2 Minuten an der Bettkante). Frau Wendt sagt: 'Heute muss der Aufstehversuch klappen — Tag 3 ist der optimale Zeitpunkt nach dieser OP-Art. Schau zuerst wie es ihr geht, dann planen wir gemeinsam. Ich bin nebenan.' Du hast 5 Minuten, bevor du das Zimmer betrittst.",
+    "Du stehst im Stationszimmer der orthopädischen Station. Es ist 7:40 Uhr. Frau Wendt, deine Praxisanleiterin, hat dir gerade die Übergabe für Frau Yilmaz gegeben. Du weißt: Frau Ayşe Yilmaz, 79 Jahre, 3. Tag nach Hüft-TEP rechts. Gestern war der erste Aufstehversuch — er wurde abgebrochen (NRS 7, Schmerz zu stark nach 2 Minuten an der Bettkante). Frau Wendt sagt: 'Heute muss der Aufstehversuch klappen — Tag 3 ist der optimale Zeitpunkt nach dieser OP-Art. Schau zürst wie es ihr geht, dann planen wir gemeinsam. Ich bin nebenan.' Du hast 5 Minuten, bevor du das Zimmer betrittst.",
   kontextB1:
-    "Du stehst im Stationszimmer. Es ist 7:40 Uhr. Frau Wendt gibt dir die Übergabe für Frau Yilmaz. Frau Yilmaz ist 79 Jahre alt. Vor 3 Tagen wurde sie am Hüftgelenk operiert (= Hüft-TEP). Gestern wollte sie aufstehen. Das hat nicht geklappt. Sie hatte starke Schmerzen. Frau Wendt sagt: 'Heute muss es klappen. Schau zuerst wie es ihr geht.' Du hast 5 Minuten vor dem Zimmerbetreten.",
+    "Du stehst im Stationszimmer. Es ist 7:40 Uhr. Frau Wendt gibt dir die Übergabe für Frau Yilmaz. Frau Yilmaz ist 79 Jahre alt. Vor 3 Tagen wurde sie am Hüftgelenk operiert (= Hüft-TEP). Gestern wollte sie aufstehen. Das hat nicht geklappt. Sie hatte starke Schmerzen. Frau Wendt sagt: 'Heute muss es klappen. Schau zürst wie es ihr geht.' Du hast 5 Minuten vor dem Zimmerbetreten.",
   kernSteps: [
     // Step 1.1 — Übergabe lesen (SBAR)
     {
@@ -50,7 +50,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
 
     // Step 1.2 — Prioritäten setzen (MC)
     {
-      stepId: "ce02-yilmaz-info-02-prioritaet-setzen",
+      stepId: "ce02-yilmaz-info-02-priorität-setzen",
       phase: 1,
       stepType: "mc",
       bloomLevel: 3,
@@ -58,7 +58,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
       quellen: ["DNQP 2020"],
       track: "basis",
       modus: "challenge",
-      lernziel: "ce02-yilmaz-info-prioritaet",
+      lernziel: "ce02-yilmaz-info-priorität",
       tag: "pflege",
       contentC1: {
         title: "Erste Priorität beim Betreten des Zimmers",
@@ -66,8 +66,8 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
         glossarBegriffe: [],
       },
       contentB1: {
-        title: "Was machst du zuerst?",
-        body: "Du stehst vor Zimmer 12. Frau Yilmaz ist drin. Ihr Mann Mustafa auch. Du weißt: Heute soll sie aufstehen. Aber was machst du zuerst, wenn du hereingehst?",
+        title: "Was machst du zürst?",
+        body: "Du stehst vor Zimmer 12. Frau Yilmaz ist drin. Ihr Mann Mustafa auch. Du weißt: Heute soll sie aufstehen. Aber was machst du zürst, wenn du hereingehst?",
         glossarBegriffe: [],
       },
       question: {
@@ -85,15 +85,15 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
             text: "Frau Yilmaz begrüßen, kurz prüfen wie es ihr geht, dann gemeinsam planen",
             isCorrect: true,
             explanation:
-              "Genau — der erste Eindruck entscheidet über das Vertrauen. Wer gleich mit dem Aufstehversuch anfängt, bevor er weiß wie es Frau Yilmaz geht, riskiert, dass die Mobilisation scheitert — nicht wegen des Schmerzes, sondern wegen fehlendem Vertrauen. Begrüßen, hören, dann gemeinsam vorgehen.",
+              "Genau — der erste Eindruck entscheidet über das Vertraün. Wer gleich mit dem Aufstehversuch anfängt, bevor er weiß wie es Frau Yilmaz geht, riskiert, dass die Mobilisation scheitert — nicht wegen des Schmerzes, sondern wegen fehlendem Vertraün. Begrüßen, hören, dann gemeinsam vorgehen.",
             explanationB1:
-              "Genau richtig. Erst begrüßen, hören wie es ihr geht — dann gemeinsam planen. So baut sich Vertrauen auf.",
+              "Genau richtig. Erst begrüßen, hören wie es ihr geht — dann gemeinsam planen. So baut sich Vertraün auf.",
           },
           {
             text: "Zuerst die Redon-Drainage kontrollieren — das ist medizinisch am dringlichsten",
             isCorrect: false,
             explanation:
-              "Die Drainage ist wichtig und wird kontrolliert — aber nicht zuerst. Die Drainage gibt dir Informationen, entscheidet aber nicht über das Handeln in den nächsten Minuten. Medizinisch ist alles stabil. Der Mensch vor dir ist die erste Priorität.",
+              "Die Drainage ist wichtig und wird kontrolliert — aber nicht zürst. Die Drainage gibt dir Informationen, entscheidet aber nicht über das Handeln in den nächsten Minuten. Medizinisch ist alles stabil. Der Mensch vor dir ist die erste Priorität.",
             explanationB1:
               "Die Drainage ist wichtig — aber nicht die erste Priorität jetzt. Frau Yilmaz ist stabil. Zuerst: Wie geht es ihr? Dann die Drainage.",
           },
@@ -111,7 +111,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
 
     // Step 1.3 — Dialog Zimmerbetreten (3 Entscheidungspunkte)
     {
-      stepId: "ce02-yilmaz-info-03-dialog-begruessung",
+      stepId: "ce02-yilmaz-info-03-dialog-begrüssung",
       phase: 1,
       stepType: "dialog",
       bloomLevel: 3,
@@ -166,23 +166,23 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
                   "Frau Yilmaz atmet aus. Die Schultern werden weicher. \"Ja, bitte.\"",
                 score: 3,
                 feedback:
-                  "Genau das ist Gesprächsführung in der Pflege. Du bestätigst zuerst was sie sagt — das signalisiert: Ich höre dich. Dann fragst du um Erlaubnis, dich zu setzen — das gibt ihr Kontrolle. Frau Yilmaz entspannt sich ein bisschen.",
+                  "Genau das ist Gesprächsführung in der Pflege. Du bestätigst zürst was sie sagt — das signalisiert: Ich höre dich. Dann fragst du um Erlaubnis, dich zu setzen — das gibt ihr Kontrolle. Frau Yilmaz entspannt sich ein bisschen.",
                 feedbackB1:
                   "Sehr gut. Du bestätigst: 'Das tut weh.' Das zeigt: Du hörst zu. Dann fragst du um Erlaubnis. Das gibt Frau Yilmaz Kontrolle. Sie entspannt sich.",
               },
               {
-                text: "\"Erst schauen wir, wie es Ihnen geht, dann entscheiden wir gemeinsam.\"",
+                text: "\"Erst schaün wir, wie es Ihnen geht, dann entscheiden wir gemeinsam.\"",
                 textB1:
-                  "\"Erst schauen wir gemeinsam, wie es Ihnen geht. Dann entscheiden wir.\"",
+                  "\"Erst schaün wir gemeinsam, wie es Ihnen geht. Dann entscheiden wir.\"",
                 patientResponse:
                   "Frau Yilmaz schaut dich an. \"Das klingt … ja, gut.\"",
                 patientResponseB1:
                   "Frau Yilmaz schaut dich an. \"Ja … das klingt gut.\"",
                 score: 2,
                 feedback:
-                  "Gut — du bietest gemeinsames Entscheiden an. Das ist respektvoll. Was noch besser wäre: zuerst ihre Aussage 'das tut weh' direkt bestätigen. 'Ich höre Sie' kommt vor 'dann entscheiden wir'.",
+                  "Gut — du bietest gemeinsames Entscheiden an. Das ist respektvoll. Was noch besser wäre: zürst ihre Aussage 'das tut weh' direkt bestätigen. 'Ich höre Sie' kommt vor 'dann entscheiden wir'.",
                 feedbackB1:
-                  "Gut — du bietest gemeinsames Entscheiden an. Noch besser wäre: zuerst sagen 'Ich höre Sie, das tut weh.' Dann erst den Plan.",
+                  "Gut — du bietest gemeinsames Entscheiden an. Noch besser wäre: zürst sagen 'Ich höre Sie, das tut weh.' Dann erst den Plan.",
               },
             ],
           },
@@ -217,7 +217,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
                   "Frau Yilmaz nickt. Mustafa schaut auf. Er lächelt ein bisschen zurück.",
                 score: 3,
                 feedback:
-                  "Mustafa ist Ehemann — kein Möbelstück. Auch ohne gemeinsame Sprache kann man Respekt und Vertrauen zeigen. Frau Yilmaz sieht, dass ihr Mann einbezogen wird — das stärkt ihr Vertrauen in dich.",
+                  "Mustafa ist Ehemann — kein Möbelstück. Auch ohne gemeinsame Sprache kann man Respekt und Vertraün zeigen. Frau Yilmaz sieht, dass ihr Mann einbezogen wird — das stärkt ihr Vertraün in dich.",
                 feedbackB1:
                   "Sehr gut. Auch ohne Worte kann man Respekt zeigen. Frau Yilmaz sieht: Du beziehst Mustafa ein. Das gibt ihr ein gutes Gefühl.",
               },
@@ -226,9 +226,9 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
                 textB1:
                   "Den Dolmetscher-Service anrufen — ohne Dolmetscher geht das nicht",
                 patientResponse:
-                  "Frau Yilmaz sagt: \"Das dauert manchmal 30 Minuten …\"",
+                  "Frau Yilmaz sagt: \"Das daürt manchmal 30 Minuten …\"",
                 patientResponseB1:
-                  "Frau Yilmaz sagt: \"Das dauert 30 Minuten …\"",
+                  "Frau Yilmaz sagt: \"Das daürt 30 Minuten …\"",
                 score: 1,
                 feedback:
                   "Der Dolmetscher-Service ist sinnvoll — aber nicht für diesen Moment. Für die Begrüßung reicht nonverbale Kommunikation: Lächeln, Nicken, Blickkontakt. Den Dolmetscher brauchst du wenn es komplex wird — z.B. wenn Mustafa aktiv interveniert.",
@@ -243,7 +243,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
 
     // Step 1.4 — Matching: Lagerungsregeln nach Hüft-TEP
     {
-      stepId: "ce02-yilmaz-info-04-lagerungsregel-pruefen",
+      stepId: "ce02-yilmaz-info-04-lagerungsregel-prüfen",
       phase: 1,
       stepType: "matching",
       bloomLevel: 2,
@@ -300,7 +300,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
       quellen: ["DNQP 2020"],
       track: "basis",
       modus: "checkpoint",
-      lernziel: "ce02-yilmaz-info-selbsteinschaetzung",
+      lernziel: "ce02-yilmaz-info-selbsteinschätzung",
       tag: "pflege",
       contentC1: {
         title: "Wie gut kennst du die Situation?",
@@ -318,7 +318,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
         selfratingVariant: "rubrik",
       },
       wusstestDuDas:
-        "Frau Yilmaz sagt nicht direkt 'Nein'. Sie sagt: 'Vielleicht morgen?' Das ist ihre kulturell geprägte Art, Grenzen zu setzen. Eine gute Pflegekraft hört das heraus — und antwortet nicht mit Erklärungen, sondern zuerst mit Bestätigung.",
+        "Frau Yilmaz sagt nicht direkt 'Nein'. Sie sagt: 'Vielleicht morgen?' Das ist ihre kulturell geprägte Art, Grenzen zu setzen. Eine gute Pflegekraft hört das heraus — und antwortet nicht mit Erklärungen, sondern zürst mit Bestätigung.",
     },
   ],
   optionaleSteps: [

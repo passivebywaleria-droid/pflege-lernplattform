@@ -16,7 +16,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
   kernSteps: [
     // Step 6.1 — Vergleich ambulant vs. stationär Doku
     {
-      stepId: "ce02-kovac-dok-01-ambulant-vs-stationaer-doku",
+      stepId: "ce02-kovac-dok-01-ambulant-vs-stationär-doku",
       phase: 6,
       stepType: "comparison",
       bloomLevel: 5,
@@ -103,9 +103,54 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
         "§ 630f BGB schreibt vor: Jede Behandlungsmaßnahme ist zeitnah zu dokumentieren. 'Zeitnah' bedeutet: am selben Tag, nicht eine Woche später. Im ambulanten Setting ist das Auto oft das Büro.",
     },
 
+    // Inline-Wissen: Verweigerungsdokumentation — VOR Step 6.2 (Text erklärt den Begriff vertieft)
+    {
+      stepId: "ce02-kovac-dok-iw-verweigerungsdokumentation",
+      phase: 6,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "V.1",
+      quellen: ["§ 630f BGB", "§ 630d BGB", "§ 1901a BGB"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-kovac-dok-verweigerungsdokumentation",
+      tag: "pflege",
+      contentC1: {
+        title: "Was ist eine Verweigerungsdokumentation?",
+        body: "",
+        glossarBegriffe: ["Verweigerungsdokumentation"],
+      },
+      contentB1: {
+        title: "Was bedeutet Verweigerungsdokumentation?",
+        body: "",
+        glossarBegriffe: ["Verweigerungsdokumentation"],
+      },
+      inlineWissen: {
+        bausteinRef: "verweigerungsdokumentation",
+        storyAufhaenger:
+          "Frau Kovač hat heute die Kompressionsstrümpfe abgelehnt — zum dritten Mal. Das ist ihr gutes Recht. Aber du musst jetzt etwas Bestimmtes tun: eine Verweigerungsdokumentation schreiben. Das ist mehr als nur \"Strümpfe abgelehnt\" notieren.",
+        storyAufhaengerB1:
+          "Frau Kovač hat Nein zu den Kompressionsstrümpfen gesagt. Das darf sie. Aber du musst jetzt genau aufschreiben, dass du erklärt hast und sie Nein gesagt hat. Das nennt man Verweigerungsdokumentation.",
+        kerntext:
+          "Die **Verweigerungsdokumentation** ist ein pflegerisch-juristischer Fachbegriff für die schriftliche Erfassung einer Behandlungsablehnung durch die Patientin. Sie ist **Pflicht** nach § 630f BGB und schützt sowohl die Patientin (Selbstbestimmungsrecht, § 1901a BGB) als auch die Pflegekraft (Nachweis der Aufklärung).\n\nOhne Verweigerungsdokumentation gilt juristisch: **Was nicht dokumentiert ist, hat nicht stattgefunden.** Wenn Frau Kovač eine Thrombose entwickelt und in der Dokumentation steht nur \"Strümpfe abgelehnt\" ohne Aufklärungsnachweis — kann der Pflegedienst haftbar gemacht werden wegen unterlassener Aufklärung.\n\nEine vollständige Verweigerungsdokumentation enthält immer drei Elemente — die du im nächsten Step im Detail lernst.\n\nQuelle: (§ 630f BGB; § 630d BGB; § 1901a BGB)",
+        kerntextB1:
+          "**Verweigerungsdokumentation** = Du schreibst auf, dass die Patientin etwas abgelehnt hat. Aber nicht nur \"sie hat Nein gesagt\". Du schreibst auch auf: Was hast du erklärt? Wie hat sie reagiert?\n\nWarum ist das so wichtig? Wenn etwas passiert (z.B. eine Thrombose) und du hast nur \"Strümpfe abgelehnt\" geschrieben — dann kann der Pflegedienst ein Problem bekommen. Das Gericht sagt: Was nicht aufgeschrieben ist, ist nicht passiert.\n\nGesetze: § 630f BGB (Dokumentationspflicht), § 1901a BGB (Selbstbestimmungsrecht).",
+        faustregel:
+          "Verweigerungsdokumentation = Aufklärungsnachweis + Patientenentscheidung + wörtliches Zitat. Ohne das gilt: \"Nicht dokumentiert = nicht stattgefunden.\"",
+        faustregelB1:
+          "Verweigerungsdokumentation: Aufschreiben was du erklärt hast + was die Patientin gesagt hat. Sonst gilt: Es hat nicht stattgefunden.",
+        karteikarte: {
+          vorderseite: "Frau Kovač lehnt die Kompressionsstrümpfe ab. Warum reicht es nicht, nur \"Strümpfe abgelehnt\" zu schreiben?",
+          rueckseite: "Verweigerungsdokumentation = pflegerisch-juristische Pflichtdokumentation bei Behandlungsablehnung. Muss enthalten: (1) Was wurde angeboten und erklärt, (2) Wie wurde aufgeklärt, (3) Was hat die Patientin gesagt/entschieden. Ohne vollständige Doku: Nachweis der Aufklärung fehlt → Pflegedienst haftbar bei Komplikation (§ 630f BGB). Grundsatz: Nicht dokumentiert = nicht stattgefunden.",
+          vorderseiteB1: "Warum reicht es nicht, \"Strümpfe abgelehnt\" zu schreiben?",
+          rueckseiteB1: "Man muss genau aufschreiben: Was hast du erklärt? Was hat die Patientin gesagt? Ohne das gilt: Die Aufklärung hat nicht stattgefunden. Das ist ein Problem wenn etwas Schlimmes passiert.",
+        },
+      },
+    },
+
     // Step 6.2 — Verweigerungs-Doku erklärt (text)
     {
-      stepId: "ce02-kovac-dok-02-verweigerung-doku-erklaert",
+      stepId: "ce02-kovac-dok-02-verweigerung-doku-erklärt",
       phase: 6,
       stepType: "text",
       bloomLevel: 5,
@@ -227,7 +272,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
           reflexionRueckbezug:
             "Du hast heute einen vollständigen ambulanten Pflegetag bei Frau Marija Kovač begleitet — von der Übergabe um 07:30 Uhr bis zum Besuchsbericht nach dem Abendbesuch. Frau Kovač hat die Übungen zweimal allein wiederholt. Das Schlafgespräch ist eröffnet. Die Kompressionsstrümpfe liegen noch. Evaluation heißt nicht: alles gelöst. Es heißt: du weißt was noch fehlt.",
           kernaussagen: [
-            "Atembeobachtung bei COPD III: 7 systematische Punkte — Atemfrequenz, Lippenbremse, Atemhilfsmuskulatur, Atemgeräusche, Sputum-Farbe, Körperhaltung, SpO2 (88–92 % nur als Zielkorridor unter Sauerstofftherapie bei Exazerbation; im stabilen Zustand sind >92 % normal)",
+            "Atembeobachtung bei COPD III: 7 systematische Punkte — Atemfreqünz, Lippenbremse, Atemhilfsmuskulatur, Atemgeräusche, Sputum-Farbe, Körperhaltung, SpO2 (88–92 % nur als Zielkorridor unter Saürstofftherapie bei Exazerbation; im stabilen Zustand sind >92 % normal)",
             "Patientenautonomie und Aufklärungspflicht: Aufklärung ist Pflicht — Erzwingen ist verboten — Dokumentieren ist notwendig (§ 630d BGB, § 1901a BGB, § 630f BGB)",
             "Verweigerungs-Dokumentation: 3 Pflicht-Elemente — Was erklärt? Wie aufgeklärt? Was hat die Patientin gesagt?",
             "Datenschutz in der ambulanten Pflege: Keine Weitergabe von Gesundheitsdaten ohne schriftliche Schweigepflichtsentbindung — auch nicht an Angehörige (DSGVO Art. 9, § 203 StGB)",
@@ -366,7 +411,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
       },
       question: {
         fragetext:
-          "Was wäre die professionelle Konsequenz, wenn du die Verweigerung der Kompressionsstrümpfe nicht dokumentierst — und drei Tage später entwickelt Frau Kovač eine tiefe Beinvenenthrombose?",
+          "Was wäre die professionelle Konseqünz, wenn du die Verweigerung der Kompressionsstrümpfe nicht dokumentierst — und drei Tage später entwickelt Frau Kovač eine tiefe Beinvenenthrombose?",
         musterantwort:
           "Ohne Dokumentation fehlt der Nachweis, dass Aufklärung stattgefunden hat. Der Pflegedienst kann haftbar werden wegen Dokumentationspflichtverletzung (§ 630f BGB) und ggf. wegen unterlassener Aufklärung (§ 630d BGB). Frau Kovačs Entscheidungsrecht bleibt zwar bestehen — aber die Pflegekraft kann nicht beweisen, dass sie ihrer Aufklärungspflicht nachgekommen ist. Bei Gericht gilt: Was nicht dokumentiert ist, hat nicht stattgefunden.",
         bewertungskriterien: [

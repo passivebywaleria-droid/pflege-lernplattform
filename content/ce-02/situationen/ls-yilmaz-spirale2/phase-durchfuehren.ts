@@ -6,8 +6,8 @@
 import type { SituationsPhase } from "../../../_types";
 
 export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
-  phaseId: "ls-yilmaz-spirale2-durchfuehren",
-  phase: "durchfuehren",
+  phaseId: "ls-yilmaz-spirale2-durchführen",
+  phase: "durchführen",
   titel: "Durchführen — Wundauflage + Fotodokumentation + 135°-Positionierung",
   titelB1: "Durchführen — Wunde versorgen und Frau Yilmaz lagern",
   kontext:
@@ -36,7 +36,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       tag: "krankheitslehre",
       themaPrimaer: "dekubitus-prophylaxe",
       themenSekundaer: ["haut"],
-      transition: "Jetzt holst du das Material. Aseptischer Verbandwechsel — Schritt fuer Schritt.",
+      transition: "Jetzt holst du das Material. Aseptischer Verbandwechsel — Schritt für Schritt.",
       contentC1: {
         title: "Warum feucht statt trocken?",
         body: "",
@@ -50,45 +50,45 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       inlineWissen: {
         bausteinRef: "dekubitus-prophylaxe-feuchte-wundbehandlung",
         storyAufhaenger:
-          "Dr. Kirchner hat Hydrokolloid-Verband angeordnet. In Phase 3 hast du ihn als richtige Antwort gewaehlt. Aber warum genau ist ein feuchter Verband besser als ein trockener? Das ist seit 1962 belegt — und trotzdem ein haeufiger Anfaengerfehler.",
+          "Dr. Kirchner hat Hydrokolloid-Verband angeordnet. In Phase 3 hast du ihn als richtige Antwort gewählt. Aber warum genau ist ein feuchter Verband besser als ein trockener? Das ist seit 1962 belegt — und trotzdem ein häufiger Anfängerfehler.",
         storyAufhaengerB1:
           "Du holst gleich den Hydrokolloid-Verband. Aber warum ist ein feuchter Verband besser als ein trockener? Das ist wichtig zu wissen.",
         kerntext:
-          "**Das Prinzip der feuchten Wundbehandlung** geht auf George Winter (1962) zurueck. Er zeigte: Wunden, die **feucht gehalten** werden, heilen **bis zu 50 % schneller** als trockene.\n\n**Warum?**\n\n• **Zellmigration** — Epithelzellen koennen nur ueber feuchte Oberflaechen wandern. Auf trockenem Schorf muessen sie sich erst darunter graben.\n\n• **Granulation** — Feuchtes Milieu foerdert die Bildung von Granulationsgewebe (rosa-rotes Heilgewebe).\n\n• **Keimschutz** — Ein geschlossener Verband schuetzt vor aeusseren Keimen.\n\n• **Schmerzreduktion** — Feuchte Verbandwechsel sind weniger traumatisch als trockene (kein Verkleben mit Wundgrund).\n\n**Hydrokolloid bei Frau Yilmaz:**\nHydrokolloid-Verbaende bilden bei Kontakt mit Wundexsudat ein Gel, das die Wunde feucht haelt. Ideal fuer flache Erosionen (Kat. II) mit wenig Exsudat. Wechsel: taeglich oder bei Durchfeuchten.",
+          "**Das Prinzip der feuchten Wundbehandlung** geht auf George Winter (1962) zurück. Er zeigte: Wunden, die **feucht gehalten** werden, heilen **bis zu 50 % schneller** als trockene.\n\n**Warum?**\n\n• **Zellmigration** — Epithelzellen können nur ueber feuchte Oberflächen wandern. Auf trockenem Schorf müssen sie sich erst darunter graben.\n\n• **Granulation** — Feuchtes Milieu fördert die Bildung von Granulationsgewebe (rosa-rotes Heilgewebe).\n\n• **Keimschutz** — Ein geschlossener Verband schützt vor äußeren Keimen.\n\n• **Schmerzreduktion** — Feuchte Verbandwechsel sind weniger traumatisch als trockene (kein Verkleben mit Wundgrund).\n\n**Hydrokolloid bei Frau Yilmaz:**\nHydrokolloid-Verbände bilden bei Kontakt mit Wundexsudat ein Gel, das die Wunde feucht hält. Ideal für flache Erosionen (Kat. II) mit wenig Exsudat. Wechsel: täglich oder bei Durchfeuchten.",
         kerntextB1:
-          "**Feuchte Wunden heilen schneller** als trockene. Das hat ein Forscher namens Winter 1962 gezeigt.\n\n**Warum feucht besser ist:**\n\n• Hautzellen koennen ueber feuchte Flaechen wandern. Auf trockenem Schorf geht das nicht.\n\n• Feuchtes Milieu hilft bei der Bildung von Heilungsgewebe.\n\n• Ein geschlossener Verband schuetzt vor Keimen.\n\n• Feuchte Verbaende tun beim Wechsel weniger weh.\n\n**Hydrokolloid:** Bei Kontakt mit der Wunde bildet er ein Gel. Das haelt die Wunde feucht. Gut fuer flache Wunden wie bei Frau Yilmaz.",
+          "**Feuchte Wunden heilen schneller** als trockene. Das hat ein Forscher namens Winter 1962 gezeigt.\n\n**Warum feucht besser ist:**\n\n• Hautzellen können ueber feuchte Flächen wandern. Auf trockenem Schorf geht das nicht.\n\n• Feuchtes Milieu hilft bei der Bildung von Heilungsgewebe.\n\n• Ein geschlossener Verband schützt vor Keimen.\n\n• Feuchte Verbände tun beim Wechsel weniger weh.\n\n**Hydrokolloid:** Bei Kontakt mit der Wunde bildet er ein Gel. Das hält die Wunde feucht. Gut für flache Wunden wie bei Frau Yilmaz.",
         faustregel:
-          "Feucht heilt schneller als trocken. Hydrokolloid = Standardverband fuer flache Erosionen Kategorie II.",
+          "Feucht heilt schneller als trocken. Hydrokolloid = Standardverband für flache Erosionen Kategorie II.",
         faustregelB1:
-          "Feuchte Wunden heilen schneller. Hydrokolloid = Standardverband fuer flache Wunden Kategorie 2.",
+          "Feuchte Wunden heilen schneller. Hydrokolloid = Standardverband für flache Wunden Kategorie 2.",
         spektrum: [
           {
             patientName: "Herr Petrov",
             situationsId: "ls-petrov-schlaganfall",
             hauptfaktor: "Wunde + Spastik",
             kurzbeschreibung:
-              "Bei ihm wuerde ein Verband am Trochanter durch Spastik-Bewegungen schnell verrutschen. Schaumverband mit Klebefixierung oder Verbandfixierung durch Netzschlauchverband ist hier besser.",
+              "Bei ihm würde ein Verband am Trochanter durch Spastik-Bewegungen schnell verrutschen. Schaumverband mit Klebefixierung oder Verbandfixierung durch Netzschlauchverband ist hier besser.",
           },
           {
             patientName: "Frau Kovac",
             situationsId: "ls-kovac-ambulant",
-            hauptfaktor: "Ambulant — Verbandwechsel durch Angehoerige",
+            hauptfaktor: "Ambulant — Verbandwechsel durch Angehörige",
             kurzbeschreibung:
-              "Im ambulanten Setting wechseln Angehoerige oder ambulanter Pflegedienst den Verband. Hydrokolloid ist einfach handhabbar — kein steriles Instrumentarium noetig, kann von geschulten Angehoerigen gewechselt werden.",
+              "Im ambulanten Setting wechseln Angehörige oder ambulanter Pflegedienst den Verband. Hydrokolloid ist einfach handhabbar — kein steriles Instrumentarium nötig, kann von geschulten Angehörigen gewechselt werden.",
           },
           {
-            patientName: "Herr Bauer",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "Demenz — zieht Verband ab",
             kurzbeschreibung:
-              "Demenzpatienten ziehen Verbaende manchmal ab, weil sie sie nicht verstehen. Loesungen: Verband mit Kleidung abdecken, ablenkende Beschaeftigung waehrend des Verbandwechsels. NIE fixieren (= Freiheitsentziehung).",
+              "Demenzpatienten ziehen Verbände manchmal ab, weil sie sie nicht verstehen. Lösungen: Verband mit Kleidung abdecken, ablenkende Beschäftigung während des Verbandwechsels. NIE fixieren (= Freiheitsentziehung).",
           },
         ],
         karteikarte: {
           vorderseite:
-            "Warum hat Dr. Kirchner Hydrokolloid-Verband fuer Frau Yilmaz (Dekubitus Kat. II, flache Erosion, wenig Exsudat) angeordnet — und nicht einen trockenen Mullverband?",
+            "Warum hat Dr. Kirchner Hydrokolloid-Verband für Frau Yilmaz (Dekubitus Kat. II, flache Erosion, wenig Exsudat) angeordnet — und nicht einen trockenen Mullverband?",
           rueckseite:
-            "Feuchte Wundbehandlung (Winter 1962): 50 % schnellere Heilung. Hydrokolloid bildet Gel bei Kontakt mit Exsudat, haelt Wunde feucht, foerdert Granulation + Epithelialisierung. Trockener Mullverband: verklebt, zerstoert Wundgrund beim Wechsel, keine Feuchtigkeitsregulation.\n\nSpektrum: Petrov (Schaumverband wegen Spastik), Kovac (ambulant, Hydrokolloid einfach fuer Angehoerige), Bauer (Demenz, Verband abdecken).\n\nFaustregel: **Feucht heilt schneller. Hydrokolloid = Standard bei Kat. II.**",
+            "Feuchte Wundbehandlung (Winter 1962): 50 % schnellere Heilung. Hydrokolloid bildet Gel bei Kontakt mit Exsudat, hält Wunde feucht, fördert Granulation + Epithelialisierung. Trockener Mullverband: verklebt, zerstört Wundgrund beim Wechsel, keine Feuchtigkeitsregulation.\n\nSpektrum: Petrov (Schaumverband wegen Spastik), Kovac (ambulant, Hydrokolloid einfach für Angehörige), Baür (Demenz, Verband abdecken).\n\nFaustregel: **Feucht heilt schneller. Hydrokolloid = Standard bei Kat. II.**",
         },
       },
     },
@@ -126,7 +126,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
           "Sauberen Handschuh ausziehen, erneute Händedesinfektion, sterile Handschuhe anziehen",
           "Wunde inspizieren — ggf. Befund dokumentieren",
           "Wunde spülen mit NaCl 0,9% (Spülen, nicht Wischen)",
-          "Neuen Verband auflegen und Dokumentation",
+          "Neün Verband auflegen und Dokumentation",
         ],
       },
     },
@@ -138,7 +138,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       stepType: "inlineWissen",
       bloomLevel: 2,
       kompetenzbereich: "I.1",
-      quellen: ["RKI-Empfehlungen Haendehygiene", "NPUAP/EPUAP/PPPIA 2019"],
+      quellen: ["RKI-Empfehlungen Händehygiene", "NPUAP/EPUAP/PPPIA 2019"],
       track: "basis",
       modus: "entdecker",
       lernziel: "ce02-yilmaz-s2-durch-01b-aseptik-exsudat",
@@ -149,25 +149,25 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Aseptisches Arbeiten \u2014 Grundprinzipien der Wundversorgung",
         body: "",
-        glossarBegriffe: ["Aseptisch", "Haendedesinfektion", "Sterile Unterlage", "Kontamination", "Exsudat"],
+        glossarBegriffe: ["Aseptisch", "Händedesinfektion", "Sterile Unterlage", "Kontamination", "Exsudat"],
       },
       contentB1: {
         title: "Keimfrei arbeiten \u2014 warum und wie?",
         body: "",
-        glossarBegriffe: ["Aseptisch", "Haendedesinfektion", "Kontamination", "Exsudat"],
+        glossarBegriffe: ["Aseptisch", "Händedesinfektion", "Kontamination", "Exsudat"],
       },
       inlineWissen: {
         bausteinRef: "dekubitus-prophylaxe-aseptik",
-        storyAufhaenger: "Du hast gerade die Reihenfolge des Verbandwechsels sortiert. Aber warum genau ist diese Reihenfolge so streng? Fuenf Begriffe erklaeren das Prinzip.",
+        storyAufhaenger: "Du hast gerade die Reihenfolge des Verbandwechsels sortiert. Aber warum genau ist diese Reihenfolge so streng? Fuenf Begriffe erklären das Prinzip.",
         storyAufhaengerB1: "Warum ist die Reihenfolge beim Verbandwechsel so streng? Fuenf wichtige Woerter.",
-        kerntext: "**Aseptisch** = keimfrei arbeiten. Ziel: keine Keime in die Wunde einbringen. Grundprinzip: Von steril nach unsteril arbeiten, nie umgekehrt.\n\n**Haendedesinfektion** = 30 Sekunden Einreibezeit mit alkoholischem Haendedesinfektionsmittel. WANN: Vor und nach Patientenkontakt, vor aseptischen Taetigkeiten, nach Kontakt mit potenziell infektiösem Material (WHO: 5 Momente der Haendehygiene).\n\n**Sterile Unterlage** = keimfreie Arbeitsfläche fuer Wundversorgungsmaterial. Material wird darauf bereitgestellt bevor sterile Handschuhe angezogen werden.\n\n**Kontamination** = unbeabsichtigte Verunreinigung mit Keimen. Beispiel: Mit sterilen Handschuhen die Aussenverpackung anfassen = kontaminiert.\n\n**Exsudat** = Wundfluessigkeit. Menge und Art werden dokumentiert: seroes (klar), sanguinolent (blutig), purulent (eitrig). Bei Frau Yilmaz: minimal, seroes = Heilungszeichen.",
-        kerntextB1: "**Aseptisch** = keimfrei arbeiten. Keine Keime in die Wunde bringen.\n\n**Haendedesinfektion** = 30 Sekunden Haende desinfizieren. Vor und nach jedem Kontakt.\n\n**Sterile Unterlage** = saubere Arbeitsfläche fuer Material.\n\n**Kontamination** = Verunreinigung mit Keimen. Beispiel: Mit sterilen Handschuhen Verpackung anfassen = kontaminiert.\n\n**Exsudat** = Fluessigkeit aus der Wunde. Klar = gut. Eitrig = schlecht.",
-        faustregel: "Aseptisch = von steril nach unsteril. Kontamination vermeiden. Haendedesinfektion vor und nach. Exsudat dokumentieren.",
-        faustregelB1: "Keimfrei arbeiten. Haende vorher desinfizieren. Sterile Handschuhe nicht an Verpackungen anfassen.",
+        kerntext: "**Aseptisch** = keimfrei arbeiten. Ziel: keine Keime in die Wunde einbringen. Grundprinzip: Von steril nach unsteril arbeiten, nie umgekehrt.\n\n**Händedesinfektion** = 30 Sekunden Einreibezeit mit alkoholischem Händedesinfektionsmittel. WANN: Vor und nach Patientenkontakt, vor aseptischen Taetigkeiten, nach Kontakt mit potenziell infektiösem Material (WHO: 5 Momente der Händehygiene).\n\n**Sterile Unterlage** = keimfreie Arbeitsfläche für Wundversorgungsmaterial. Material wird darauf bereitgestellt bevor sterile Handschuhe angezogen werden.\n\n**Kontamination** = unbeabsichtigte Verunreinigung mit Keimen. Beispiel: Mit sterilen Handschuhen die Aussenverpackung anfassen = kontaminiert.\n\n**Exsudat** = Wundflüssigkeit. Menge und Art werden dokumentiert: serös (klar), sanguinolent (blutig), purulent (eitrig). Bei Frau Yilmaz: minimal, serös = Heilungszeichen.",
+        kerntextB1: "**Aseptisch** = keimfrei arbeiten. Keine Keime in die Wunde bringen.\n\n**Händedesinfektion** = 30 Sekunden Hände desinfizieren. Vor und nach jedem Kontakt.\n\n**Sterile Unterlage** = saubere Arbeitsfläche für Material.\n\n**Kontamination** = Verunreinigung mit Keimen. Beispiel: Mit sterilen Handschuhen Verpackung anfassen = kontaminiert.\n\n**Exsudat** = Flüssigkeit aus der Wunde. Klar = gut. Eitrig = schlecht.",
+        faustregel: "Aseptisch = von steril nach unsteril. Kontamination vermeiden. Händedesinfektion vor und nach. Exsudat dokumentieren.",
+        faustregelB1: "Keimfrei arbeiten. Hände vorher desinfizieren. Sterile Handschuhe nicht an Verpackungen anfassen.",
         spektrum: [],
         karteikarte: {
           vorderseite: "Was bedeutet aseptisches Arbeiten beim Verbandwechsel?",
-          rueckseite: "Aseptisch = keimfrei, von steril nach unsteril. Haendedesinfektion 30 Sek (WHO 5 Momente). Sterile Unterlage vorbereiten. Kontamination = unbeabsichtigte Keimverschleppung (z. B. Verpackung mit sterilen Handschuhen anfassen). Exsudat = Wundfluessigkeit (seroes/sanguinolent/purulent).",
+          rueckseite: "Aseptisch = keimfrei, von steril nach unsteril. Händedesinfektion 30 Sek (WHO 5 Momente). Sterile Unterlage vorbereiten. Kontamination = unbeabsichtigte Keimverschleppung (z. B. Verpackung mit sterilen Handschuhen anfassen). Exsudat = Wundflüssigkeit (serös/sanguinolent/purulent).",
         },
       },
     },
@@ -231,7 +231,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       themaPrimaer: "pflegedokumentation",
       themenSekundaer: ["dekubitus-prophylaxe"],
-      transition: "Datenschutz klar. Pruefe dein Wissen mit den Richtig/Falsch-Aussagen.",
+      transition: "Datenschutz klar. Prüfe dein Wissen mit den Richtig/Falsch-Aussagen.",
       contentC1: {
         title: "Datenschutz bei Fotodokumentation \u2014 DSGVO Art. 9",
         body: "",
@@ -245,15 +245,15 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       inlineWissen: {
         bausteinRef: "pflegedokumentation-datenschutz-foto",
         storyAufhaenger: "Dr. Kirchner hat Fotodokumentation angeordnet. Aber: Darf man einfach so ein Foto von der Wunde machen? Datenschutz ist bei Gesundheitsdaten besonders streng.",
-        storyAufhaengerB1: "Die Aerztin will ein Foto. Aber darf man einfach so fotografieren?",
-        kerntext: "**DSGVO** (Datenschutz-Grundverordnung) = EU-weites Gesetz zum Schutz personenbezogener Daten. **Art. 9** = Besonderer Schutz fuer Gesundheitsdaten. Wundfotos sind Gesundheitsdaten \u2014 besondere Kategorie.\n\n**Fotodokumentation** bei Wunden:\n\u2022 NUR mit Klinik-Geraet (nicht Privathandy!)\n\u2022 NUR mit **Einwilligung** der Patientin (informiert, dokumentiert)\n\u2022 Masstab/Lineal auf dem Foto (Groessenmessung)\n\u2022 In der Patientenakte speichern (nicht WhatsApp, nicht privater Ordner)\n\u2022 Foto ERGAENZT schriftliche Dokumentation, ersetzt sie NICHT\n\n**Einwilligung** = Die Patientin muss wissen: Was wird fotografiert? Warum? Wo wird es gespeichert? Sie muss zustimmen. Ohne Einwilligung: keine Fotodokumentation.",
-        kerntextB1: "**DSGVO** = Datenschutz-Gesetz. **Art. 9** = Gesundheitsdaten sind besonders geschuetzt. Wundfotos sind Gesundheitsdaten.\n\n**Fotodokumentation:**\n\u2022 Nur mit Klinik-Geraet (nicht Privathandy!)\n\u2022 Nur mit **Einwilligung** der Patientin\n\u2022 Massstab auf dem Foto\n\u2022 In der Akte speichern\n\u2022 Foto ersetzt NICHT den schriftlichen Bericht",
-        faustregel: "Wundfotos nur mit Klinik-Geraet, mit Einwilligung, mit Massstab, in der Akte. Nie Privathandy.",
-        faustregelB1: "Foto: Nur Klinik-Geraet. Nur mit Erlaubnis der Patientin. In die Akte.",
+        storyAufhaengerB1: "Die Ärztin will ein Foto. Aber darf man einfach so fotografieren?",
+        kerntext: "**DSGVO** (Datenschutz-Grundverordnung) = EU-weites Gesetz zum Schutz personenbezogener Daten. **Art. 9** = Besonderer Schutz für Gesundheitsdaten. Wundfotos sind Gesundheitsdaten \u2014 besondere Kategorie.\n\n**Fotodokumentation** bei Wunden:\n\u2022 NUR mit Klinik-Gerät (nicht Privathandy!)\n\u2022 NUR mit **Einwilligung** der Patientin (informiert, dokumentiert)\n\u2022 Masstab/Lineal auf dem Foto (Grössenmessung)\n\u2022 In der Patientenakte speichern (nicht WhatsApp, nicht privater Ordner)\n\u2022 Foto ERGAENZT schriftliche Dokumentation, ersetzt sie NICHT\n\n**Einwilligung** = Die Patientin muss wissen: Was wird fotografiert? Warum? Wo wird es gespeichert? Sie muss zustimmen. Ohne Einwilligung: keine Fotodokumentation.",
+        kerntextB1: "**DSGVO** = Datenschutz-Gesetz. **Art. 9** = Gesundheitsdaten sind besonders geschützt. Wundfotos sind Gesundheitsdaten.\n\n**Fotodokumentation:**\n\u2022 Nur mit Klinik-Gerät (nicht Privathandy!)\n\u2022 Nur mit **Einwilligung** der Patientin\n\u2022 Massstab auf dem Foto\n\u2022 In der Akte speichern\n\u2022 Foto ersetzt NICHT den schriftlichen Bericht",
+        faustregel: "Wundfotos nur mit Klinik-Gerät, mit Einwilligung, mit Massstab, in der Akte. Nie Privathandy.",
+        faustregelB1: "Foto: Nur Klinik-Gerät. Nur mit Erlaubnis der Patientin. In die Akte.",
         spektrum: [],
         karteikarte: {
-          vorderseite: "Welche DSGVO-Anforderungen gelten fuer Wundfotos?",
-          rueckseite: "DSGVO Art. 9: Gesundheitsdaten = besondere Kategorie. Wundfotos nur mit: 1) Klinik-Geraet, 2) Einwilligung, 3) Massstab, 4) Akte-Speicherung. Nie Privathandy. Foto ergaenzt schriftliche Doku, ersetzt sie nicht.",
+          vorderseite: "Welche DSGVO-Anforderungen gelten für Wundfotos?",
+          rueckseite: "DSGVO Art. 9: Gesundheitsdaten = besondere Kategorie. Wundfotos nur mit: 1) Klinik-Gerät, 2) Einwilligung, 3) Massstab, 4) Akte-Speicherung. Nie Privathandy. Foto ergänzt schriftliche Doku, ersetzt sie nicht.",
         },
       },
     },
@@ -286,7 +286,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
         trueFalseCards: [
           {
             statement:
-              "Ich fotografiere mit meinem Privathandy — das ist schneller und bequemer.",
+              "Ich fotografiere mit meinem Privathandy — das ist schneller und beqümer.",
             isTrue: false,
             explanation:
               "FALSCH — Datenschutz! Fotos von Wunden sind Gesundheitsdaten nach DSGVO Art. 9 (besondere Kategorie). Privatgeräte sind nicht DSGVO-konform (keine Kontrolle über Speicherort, kein Löschrecht der Einrichtung). Nur zugelassene Klinikgeräte verwenden.",
@@ -317,7 +317,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
               "Das Foto ersetzt die schriftliche Wundbeschreibung — ich brauche keinen Text mehr.",
             isTrue: false,
             explanation:
-              "FALSCH — Das Foto ergänzt die schriftliche Dokumentation, ersetzt sie nicht. Ein Foto zeigt den visuellen Zustand, aber nicht: subjektive Aussagen der Patientin, Geruch, Konsistenz, Schmerz — all das braucht Text.",
+              "FALSCH — Das Foto ergänzt die schriftliche Dokumentation, ersetzt sie nicht. Ein Foto zeigt den visüllen Zustand, aber nicht: subjektive Aussagen der Patientin, Geruch, Konsistenz, Schmerz — all das braucht Text.",
           },
         ],
       },
@@ -339,27 +339,27 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       themenSekundaer: ["dekubitus-prophylaxe"],
       transition: "Lagerungsschutz klar. Beschrifte jetzt die Kissen.",
       contentC1: {
-        title: "Fersenfreistellung und Hueft-TEP-Schutzlagerung",
+        title: "Fersenfreistellung und Hüft-TEP-Schutzlagerung",
         body: "",
-        glossarBegriffe: ["Fersenfreistellung", "Hueft-TEP Schutzlagerung"],
+        glossarBegriffe: ["Fersenfreistellung", "Hüft-TEP Schutzlagerung"],
       },
       contentB1: {
-        title: "Fersen freistellen und Hueft-OP schuetzen",
+        title: "Fersen freistellen und Hüft-OP schützen",
         body: "",
         glossarBegriffe: ["Fersenfreistellung"],
       },
       inlineWissen: {
         bausteinRef: "positionierung-fersen-tep",
         storyAufhaenger: "Gleich beschriftest du die Kissen-Positionen in der 135-Grad-Lagerung. Zwei Spezialbegriffe musst du kennen.",
-        storyAufhaengerB1: "Zwei wichtige Woerter fuer die Lagerung.",
-        kerntext: "**Fersenfreistellung** = Die Fersen komplett vom Auflagerungsdruck befreien durch ein Kissen unter dem Unterschenkel. Die Ferse schwebt frei in der Luft. Warum? Fersen sind Praedilektionsstellen (wenig Weichteilpolster, hoher lokaler Druck). Weichlagerungsmatratzen reichen an den Fersen oft nicht aus.\n\n**Hueft-TEP Schutzlagerung** = Positionierungsregeln nach Hueftgelenks-Totalendoprothese: Keine Adduktion (Beine nicht ueberkreuzen), keine Innenrotation, Hueftbeugung max. 90 Grad. Kissen zwischen den Knien haelt die Abduktion. Bei Frau Yilmaz: 135-Grad-Lagerung auf die LINKE Seite (nicht-operiert), TEP-Seite oben.",
-        kerntextB1: "**Fersenfreistellung** = Kissen unter den Unterschenkel \u2014 Ferse schwebt frei. Warum? Fersen sind haeufige Dekubitus-Stellen.\n\n**Hueft-TEP Schutzlagerung** = Regeln nach Hueft-OP: Beine nicht ueberkreuzen, nicht nach innen drehen, Hueftbeugung max. 90 Grad. Kissen zwischen den Knien. Frau Yilmaz: auf der LINKEN Seite liegen.",
+        storyAufhaengerB1: "Zwei wichtige Woerter für die Lagerung.",
+        kerntext: "**Fersenfreistellung** = Die Fersen komplett vom Auflagerungsdruck befreien durch ein Kissen unter dem Unterschenkel. Die Ferse schwebt frei in der Luft. Warum? Fersen sind Prädilektionsstellen (wenig Weichteilpolster, hoher lokaler Druck). Weichlagerungsmatratzen reichen an den Fersen oft nicht aus.\n\n**Hüft-TEP Schutzlagerung** = Positionierungsregeln nach Hüftgelenks-Totalendoprothese: Keine Adduktion (Beine nicht ueberkreuzen), keine Innenrotation, Hüftbeugung max. 90 Grad. Kissen zwischen den Knien hält die Abduktion. Bei Frau Yilmaz: 135-Grad-Lagerung auf die LINKE Seite (nicht-operiert), TEP-Seite oben.",
+        kerntextB1: "**Fersenfreistellung** = Kissen unter den Unterschenkel \u2014 Ferse schwebt frei. Warum? Fersen sind häufige Dekubitus-Stellen.\n\n**Hüft-TEP Schutzlagerung** = Regeln nach Hüft-OP: Beine nicht ueberkreuzen, nicht nach innen drehen, Hüftbeugung max. 90 Grad. Kissen zwischen den Knien. Frau Yilmaz: auf der LINKEN Seite liegen.",
         faustregel: "Fersenfreistellung = Ferse muss frei schweben (Kissen unter Unterschenkel). TEP-Schutz = Abduktionskissen, nie auf operierter Seite liegen.",
-        faustregelB1: "Fersen muessen frei sein (Kissen drunter). Nach Hueft-OP: nicht auf der operierten Seite liegen.",
+        faustregelB1: "Fersen müssen frei sein (Kissen drunter). Nach Hüft-OP: nicht auf der operierten Seite liegen.",
         spektrum: [],
         karteikarte: {
-          vorderseite: "Warum braucht Frau Yilmaz Fersenfreistellung UND Hueft-TEP-Schutzlagerung?",
-          rueckseite: "Fersenfreistellung: Fersen = Praedilektionsstelle, Kissen unter Unterschenkel, Ferse frei. TEP-Schutzlagerung: keine Adduktion, keine Innenrotation, max. 90 Grad Hueftbeugung. Kissen zwischen Knien. 135-Grad-Lagerung auf LINKE (nicht-operierte) Seite.",
+          vorderseite: "Warum braucht Frau Yilmaz Fersenfreistellung UND Hüft-TEP-Schutzlagerung?",
+          rueckseite: "Fersenfreistellung: Fersen = Prädilektionsstelle, Kissen unter Unterschenkel, Ferse frei. TEP-Schutzlagerung: keine Adduktion, keine Innenrotation, max. 90 Grad Hüftbeugung. Kissen zwischen Knien. 135-Grad-Lagerung auf LINKE (nicht-operierte) Seite.",
         },
       },
     },
@@ -467,7 +467,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       themaPrimaer: "pflegeprozess",
       themenSekundaer: ["dekubitus-prophylaxe"],
-      transition: "Interkulturelle Kompetenz im Kopf. Jetzt: Das Gespraech.",
+      transition: "Interkulturelle Kompetenz im Kopf. Jetzt: Das Gespräch.",
       contentC1: {
         title: "Interkulturelle Kompetenz und evidenzbasierte Pflege",
         body: "",
@@ -480,23 +480,23 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       },
       inlineWissen: {
         bausteinRef: "pflegeprozess-interkulturell",
-        storyAufhaenger: "Gleich erzaehlt Frau Yilmaz etwas ueber Honig als Hausmittel. Interkulturelle Kompetenz heisst: respektieren UND fachlich korrekt bleiben.",
-        storyAufhaengerB1: "Frau Yilmaz erzaehlt gleich ueber Hausmittel. Wie reagierst du?",
-        kerntext: "**Interkulturelle Kompetenz** (Domenig 2007) = respektvoll mit Menschen aus anderen Kulturen umgehen. Kulturelle Praktiken nicht abwerten \u2014 und gleichzeitig evidenzbasiert handeln.\n\n**Manuka-Honig** = medizinisch standardisierter Honig aus Neuseeland mit nachgewiesener antibakterieller Wirkung (Methylglyoxal, Molan 2006). Wird in zertifizierten Wundprodukten verwendet. NICHT: normaler Haushaltshonig auf offene Wunden.\n\nBei Frau Yilmaz: Anerkennen (\"Honig wurde historisch als Antiseptikum verwendet\") + Erklaeren warum Hydrokolloid hier besser passt.",
-        kerntextB1: "**Interkulturelle Kompetenz** = mit Menschen aus anderen Kulturen respektvoll umgehen. Ihre Erfahrungen ernst nehmen \u2014 und fachlich erklaeren warum der Arzt einen anderen Weg waehlt.\n\n**Manuka-Honig** = medizinischer Honig. Wird im Krankenhaus genutzt. Nicht: normaler Honig.",
-        faustregel: "Interkulturelle Kompetenz: Nicht abwerten, nicht unkritisch uebernehmen. Anerkennen + evidenzbasiert erklaeren.",
-        faustregelB1: "Respektieren + fachlich erklaeren. Nicht Unsinn sagen, nicht einfach mitmachen.",
+        storyAufhaenger: "Gleich erzählt Frau Yilmaz etwas ueber Honig als Hausmittel. Interkulturelle Kompetenz heißt: respektieren UND fachlich korrekt bleiben.",
+        storyAufhaengerB1: "Frau Yilmaz erzählt gleich ueber Hausmittel. Wie reagierst du?",
+        kerntext: "**Interkulturelle Kompetenz** (Domenig 2007) = respektvoll mit Menschen aus anderen Kulturen umgehen. Kulturelle Praktiken nicht abwerten \u2014 und gleichzeitig evidenzbasiert handeln.\n\n**Manuka-Honig** = medizinisch standardisierter Honig aus Neuseeland mit nachgewiesener antibakterieller Wirkung (Methylglyoxal, Molan 2006). Wird in zertifizierten Wundprodukten verwendet. NICHT: normaler Haushaltshonig auf offene Wunden.\n\nBei Frau Yilmaz: Anerkennen (\"Honig wurde historisch als Antiseptikum verwendet\") + Erklären warum Hydrokolloid hier besser passt.",
+        kerntextB1: "**Interkulturelle Kompetenz** = mit Menschen aus anderen Kulturen respektvoll umgehen. Ihre Erfahrungen ernst nehmen \u2014 und fachlich erklären warum der Arzt einen anderen Weg wählt.\n\n**Manuka-Honig** = medizinischer Honig. Wird im Krankenhaus genutzt. Nicht: normaler Honig.",
+        faustregel: "Interkulturelle Kompetenz: Nicht abwerten, nicht unkritisch uebernehmen. Anerkennen + evidenzbasiert erklären.",
+        faustregelB1: "Respektieren + fachlich erklären. Nicht Unsinn sagen, nicht einfach mitmachen.",
         spektrum: [],
         karteikarte: {
-          vorderseite: "Frau Yilmaz erwaehnt Honig als Hausmittel. Wie zeigst du interkulturelle Kompetenz?",
-          rueckseite: "Anerkennen (historisch wirksam, Manuka-Honig medizinisch genutzt) + Erklaeren warum Hydrokolloid besser passt. Interkulturelle Kompetenz = Respektieren + Abwaegen + Erklaeren (Domenig 2007).",
+          vorderseite: "Frau Yilmaz erwähnt Honig als Hausmittel. Wie zeigst du interkulturelle Kompetenz?",
+          rueckseite: "Anerkennen (historisch wirksam, Manuka-Honig medizinisch genutzt) + Erklären warum Hydrokolloid besser passt. Interkulturelle Kompetenz = Respektieren + Abwägen + Erklären (Domenig 2007).",
         },
       },
     },
 
     // Step 4.5 — Dialog (2 Phasen): Kommunikation während Pflege (Zitat Z6)
     {
-      stepId: "ce02-yilmaz-s2-durch-05-kommunikation-waehrend",
+      stepId: "ce02-yilmaz-s2-durch-05-kommunikation-während",
       phase: 4,
       stepType: "dialog",
       bloomLevel: 4,
@@ -536,7 +536,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
                   "Frau Yilmaz schweigt. Sie schaut zur Seite.",
                 score: 0,
                 feedback:
-                  "Abwertend und kulturell respektlos. Honig war historisch ein Antiseptikum — und Manuka-Honig (medizinisch standardisiert) wird heute noch in der Wundversorgung eingesetzt (evidenzbasiert). Die Reaktion zerstört Vertrauen ohne jede Notwendigkeit.",
+                  "Abwertend und kulturell respektlos. Honig war historisch ein Antiseptikum — und Manuka-Honig (medizinisch standardisiert) wird heute noch in der Wundversorgung eingesetzt (evidenzbasiert). Die Reaktion zerstört Vertraün ohne jede Notwendigkeit.",
                 feedbackB1:
                   "Das ist nicht gut. Honig ist nicht Unsinn. Manuka-Honig wird in der Medizin heute noch genutzt. Und: Frau Yilmaz erzählt dir etwas Persönliches — sie verdient Respekt.",
               },
@@ -550,7 +550,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
                   "Frau Yilmaz lächelt kurz. 'Ich dachte, ihr lacht mich aus.' — sie entspannt sich.",
                 score: 3,
                 feedback:
-                  "Respektvoll, fachlich korrekt, verbindend. Du validierst ihr Wissen, korrigierst ohne zu entwerten, und erklärst warum du einen anderen Weg wählst. Das stärkt das Vertrauen und die Kooperation.",
+                  "Respektvoll, fachlich korrekt, verbindend. Du validierst ihr Wissen, korrigierst ohne zu entwerten, und erklärst warum du einen anderen Weg wählst. Das stärkt das Vertraün und die Kooperation.",
                 feedbackB1:
                   "Sehr gut. Du respektierst ihr Wissen. Du erklärst warum du einen modernen Verband nimmst. Frau Yilmaz fühlt sich ernst genommen.",
               },
@@ -563,7 +563,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
                   "Frau Yilmaz: 'Ja bitte!' — Frau Schäfer schaut fragend.",
                 score: 0,
                 feedback:
-                  "Nicht korrekt — Honig ist kein aktuell angeordnetes Wundtherapeutikum für diesen Fall. Dr. Kirchner hat Hydrokolloid angeordnet. Eigenmächtige Änderungen der Wundtherapie sind nicht zulässig. Patientenrecht auf Therapieentscheidung bedeutet nicht, dass du unreflektiert wünsche erfüllst.",
+                  "Nicht korrekt — Honig ist kein aktüll angeordnetes Wundtherapeutikum für diesen Fall. Dr. Kirchner hat Hydrokolloid angeordnet. Eigenmächtige Änderungen der Wundtherapie sind nicht zulässig. Patientenrecht auf Therapieentscheidung bedeutet nicht, dass du unreflektiert wünsche erfüllst.",
                 feedbackB1:
                   "Nein. Der Arzt hat einen anderen Verband angeordnet. Du kannst nicht einfach etwas anderes nehmen — auch wenn Frau Yilmaz es möchte.",
               },
@@ -586,7 +586,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
                   "Frau Yilmaz nickt. 'Ah — die Akte gehört mir auch? Das wusste ich nicht.'",
                 score: 3,
                 feedback:
-                  "Korrekt, transparent, empowernd. Du erklärst den Sinn der Dokumentation und informierst Frau Yilmaz über ihr Einsichtsrecht in die Akte (§ 630g BGB). Das stärkt Vertrauen und Autonomie.",
+                  "Korrekt, transparent, empowernd. Du erklärst den Sinn der Dokumentation und informierst Frau Yilmaz über ihr Einsichtsrecht in die Akte (§ 630g BGB). Das stärkt Vertraün und Autonomie.",
                 feedbackB1:
                   "Sehr gut. Du erklärst warum du schreibst. Und du sagst ihr: Die Akte gehört ihr auch. Das ist ihr Recht (§ 630g BGB).",
               },

@@ -11,9 +11,9 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
   titel: "Informieren & Aufnahmegespräch",
   titelB1: "Informieren: Ankommen im Zimmer",
   kontext:
-    "Du stehst vor Zimmer 8 der Kinderstation. Es ist 07:45 Uhr, Frühdienst. Schwester Andrea hat dir gerade erklärt: Baby Emilia (4 Monate) wurde heute Nacht wegen Bronchiolitis aufgenommen. Die Mutter ist dabei. Du wirst jetzt das Aufnahmegespräch führen — Andrea beobachtet, greift nur ein wenn nötig. Das Ziel der nächsten 20 Minuten: Vertrauen aufbauen, Informationen sammeln, den Ist-Zustand verstehen.",
+    "Du stehst vor Zimmer 8 der Kinderstation. Es ist 07:45 Uhr, Frühdienst. Schwester Andrea hat dir gerade erklärt: Baby Emilia (4 Monate) wurde heute Nacht wegen Bronchiolitis aufgenommen. Die Mutter ist dabei. Du wirst jetzt das Aufnahmegespräch führen — Andrea beobachtet, greift nur ein wenn nötig. Das Ziel der nächsten 20 Minuten: Vertraün aufbaün, Informationen sammeln, den Ist-Zustand verstehen.",
   kontextB1:
-    "Du stehst vor Zimmer 8. Es ist 07:45 Uhr. Schwester Andrea hat dir erklärt: Emilia (4 Monate) ist krank. Die Diagnose ist Bronchiolitis (= Entzündung der kleinen Atemwege). Die Mutter ist dabei. Du führst jetzt das Aufnahmegespräch. Andrea schaut zu. Sie hilft nur wenn nötig. Dein Ziel in den nächsten 20 Minuten: Vertrauen aufbauen. Informationen sammeln. Verstehen was gerade los ist.",
+    "Du stehst vor Zimmer 8. Es ist 07:45 Uhr. Schwester Andrea hat dir erklärt: Emilia (4 Monate) ist krank. Die Diagnose ist Bronchiolitis (= Entzündung der kleinen Atemwege). Die Mutter ist dabei. Du führst jetzt das Aufnahmegespräch. Andrea schaut zu. Sie hilft nur wenn nötig. Dein Ziel in den nächsten 20 Minuten: Vertraün aufbaün. Informationen sammeln. Verstehen was gerade los ist.",
   kernSteps: [
     // Step 1.1 — SBAR-Übergabe (scenario)
     {
@@ -35,14 +35,14 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
         "Nurse reading admission paperwork in children's ward corridor, early morning shift, warm soft lighting, calm professional setting, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Aufnahmedokumentation — Emilia K.",
-        body: "Du nimmst kurz die Aufnahmedokumentation zur Hand.\n\nEmilia K., 4 Monate, 5,6 kg. Diagnose: Bronchiolitis RSV. Mutter stillt vollständig. Fieber 38,2 °C bei Aufnahme um 03:15 Uhr. Die Pflegeübergabe folgt der SBAR-Struktur: **S** = Säugling mit Trinkschwäche und Fieber, bisher 3 nasse Windeln in 12 Stunden. **B** = bisher gesundes Kind, Erstgebärende 24 Jahre, allein erziehend. **A** = leicht erhöhte Atemfrequenz, noch kein Sauerstoffbedarf, Turgor noch erhalten. **R** = Flüssigkeitsstatus engmaschig überwachen, Mutter begleiten. Du liest die Übergabe — und betrittst dann das Zimmer.",
+        body: "Du nimmst kurz die Aufnahmedokumentation zur Hand.\n\nEmilia K., 4 Monate, 5,6 kg. Diagnose: Bronchiolitis RSV. Mutter stillt vollständig. Fieber 38,2 °C bei Aufnahme um 03:15 Uhr. Die Pflegeübergabe folgt der SBAR-Struktur: **S** = Säugling mit Trinkschwäche und Fieber, bisher 3 nasse Windeln in 12 Stunden. **B** = bisher gesundes Kind, Erstgebärende 24 Jahre, allein erziehend. **A** = leicht erhöhte Atemfreqünz, noch kein Saürstoffbedarf, Turgor noch erhalten. **R** = Flüssigkeitsstatus engmaschig überwachen, Mutter begleiten. Du liest die Übergabe — und betrittst dann das Zimmer.",
         fallbezug:
           "Emilia (4 Mo, Bronchiolitis RSV) ist heute Nacht aufgenommen worden. Du bist Pflegeschüler im 1. Ausbildungsdrittel, dritter Tag auf der Kinderstation. Schwester Andrea begleitet dich.",
         glossarBegriffe: ["Bronchiolitis", "RSV", "SBAR", "Tachypnoe"],
       },
       contentB1: {
         title: "Aufnahmedokumentation lesen",
-        body: "Du liest die Übergabe. Das ist die SBAR-Struktur (= ein Übergabe-Schema).\n\n**S** = Situation: Emilia trinkt wenig. Sie hat Fieber. Nur 3 nasse Windeln in 12 Stunden. **B** = Background (= Hintergrund): Emilia war bisher gesund. **A** = Assessment (= Einschätzung): Emilia atmet etwas schnell. Sie braucht noch keinen Sauerstoff. Turgor (= Hautspannung) ist noch normal. **R** = Recommendation (= Empfehlung): Beobachte die Flüssigkeit sehr regelmäßig (= engmaschig). Danach gehst du ins Zimmer.",
+        body: "Du liest die Übergabe. Das ist die SBAR-Struktur (= ein Übergabe-Schema).\n\n**S** = Situation: Emilia trinkt wenig. Sie hat Fieber. Nur 3 nasse Windeln in 12 Stunden. **B** = Background (= Hintergrund): Emilia war bisher gesund. **A** = Assessment (= Einschätzung): Emilia atmet etwas schnell. Sie braucht noch keinen Saürstoff. Turgor (= Hautspannung) ist noch normal. **R** = Recommendation (= Empfehlung): Beobachte die Flüssigkeit sehr regelmäßig (= engmaschig). Danach gehst du ins Zimmer.",
         fallbezug:
           "Emilia (4 Monate, Bronchiolitis) ist heute Nacht aufgenommen worden. Du bist Pflegeschüler. Es ist dein dritter Tag auf der Kinderstation.",
         glossarBegriffe: ["Bronchiolitis", "RSV", "SBAR"],
@@ -63,12 +63,12 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Erste Priorität beim Betreten",
-        body: "Du betrittst das Zimmer. Emilia liegt auf dem Arm der Mutter. Beide schauen dich sofort an. Was ist dein erster Schritt?",
+        body: "Du betrittst das Zimmer. Emilia liegt auf dem Arm der Mutter. Beide schaün dich sofort an. Was ist dein erster Schritt?",
         glossarBegriffe: [],
       },
       contentB1: {
-        title: "Was machst du zuerst?",
-        body: "Du betrittst das Zimmer. Emilia liegt auf dem Arm der Mutter. Beide schauen dich an. Was tust du zuerst?",
+        title: "Was machst du zürst?",
+        body: "Du betrittst das Zimmer. Emilia liegt auf dem Arm der Mutter. Beide schaün dich an. Was tust du zürst?",
         glossarBegriffe: [],
       },
       question: {
@@ -87,9 +87,9 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
             text: "Dich vorstellen, Mutter begrüßen, kurz erklären was als nächstes passiert",
             isCorrect: true,
             explanation:
-              "Genau. Beziehungsaufbau kommt vor dem Assessment — besonders bei einer erschöpften, alleinstehenden Erstmutter. Du schaffst Vertrauen, und das verbessert die Qualität aller folgenden Informationen.",
+              "Genau. Beziehungsaufbau kommt vor dem Assessment — besonders bei einer erschöpften, alleinstehenden Erstmutter. Du schaffst Vertraün, und das verbessert die Qualität aller folgenden Informationen.",
             explanationB1:
-              "Richtig. Zuerst vorstellen und begrüßen. Das schafft Vertrauen. Mit Vertrauen bekommst du bessere Informationen.",
+              "Richtig. Zuerst vorstellen und begrüßen. Das schafft Vertraün. Mit Vertraün bekommst du bessere Informationen.",
           },
           {
             text: "Direkt fragen: \"Hat das Baby heute getrunken?\"",
@@ -105,7 +105,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
             explanation:
               "Vitalzeichen sind wichtig — aber nicht ohne vorherige Vorstellung. Das Messen ohne Anrede und Erklärung wirkt mechanisch und überfordernd für die Mutter.",
             explanationB1:
-              "Nicht zuerst messen. Erst vorstellen, dann Maßnahmen. Sonst weiß Laura nicht einmal, wer du bist.",
+              "Nicht zürst messen. Erst vorstellen, dann Maßnahmen. Sonst weiß Laura nicht einmal, wer du bist.",
           },
         ],
       },
@@ -113,7 +113,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
 
     // Step 1.3 — Dialog (4 Phasen): Aufnahmegespräch
     {
-      stepId: "ce02-emilia-info-03-aufnahmegespraech-dialog",
+      stepId: "ce02-emilia-info-03-aufnahmegespräch-dialog",
       phase: 1,
       stepType: "dialog",
       bloomLevel: 3,
@@ -145,9 +145,9 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
             speaker: "Laura K.",
             options: [
               {
-                text: "\"Ich verstehe die Sorge — das wollen wir jetzt gemeinsam genau anschauen. Darf ich ein paar Fragen stellen?\"",
+                text: "\"Ich verstehe die Sorge — das wollen wir jetzt gemeinsam genau anschaün. Darf ich ein paar Fragen stellen?\"",
                 textB1:
-                  "\"Ich verstehe das. Das schauen wir jetzt zusammen an. Darf ich ein paar Fragen stellen?\"",
+                  "\"Ich verstehe das. Das schaün wir jetzt zusammen an. Darf ich ein paar Fragen stellen?\"",
                 patientResponse:
                   "Laura atmet aus. \"Ja, bitte. Ich bin froh, dass jemand kommt.\"",
                 patientResponseB1:
@@ -156,14 +156,14 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
                 feedback:
                   "Validierend und strukturiert. Du nimmst Lauras Sorge ernst, ohne sie zu entwerten — und gibst gleichzeitig eine klare Richtung vor. Das ist die richtige Mischung für den Erstkontakt mit einer erschöpften Mutter.",
                 feedbackB1:
-                  "Sehr gut. Du nimmst die Sorge ernst. Du zeigst: Jetzt schauen wir gemeinsam. Laura vertraut dir.",
+                  "Sehr gut. Du nimmst die Sorge ernst. Du zeigst: Jetzt schaün wir gemeinsam. Laura vertraut dir.",
               },
               {
                 text: "\"Das ist normal bei Bronchiolitis, keine Sorge.\"",
                 textB1:
                   "\"Das ist normal. Keine Sorge.\"",
                 patientResponse:
-                  "Laura zieht die Augenbrauen zusammen. \"Normal? Aber sie trinkt gar nichts mehr…\"",
+                  "Laura zieht die Augenbraün zusammen. \"Normal? Aber sie trinkt gar nichts mehr…\"",
                 patientResponseB1:
                   "Laura ist nicht überzeugt. \"Normal? Sie trinkt wirklich kaum noch etwas.\"",
                 score: 0,
@@ -243,17 +243,17 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Anamnesefragen — in welcher Reihenfolge?",
-        body: "Du sammelst Informationen beim Aufnahmegespräch. Sortiere die Fragen nach Priorität — wichtigste zuerst. Logik: Wir starten beim Hauptbeschwerden-Leitsymptom (hier Trinkschwäche, weil die Atmung makroskopisch noch unauffällig ist — keine Einziehungen, keine Tachypnoe > 60/min). Bei kritischer Atemnot würde nach ABCDE die Atmung zuerst kommen.",
+        body: "Du sammelst Informationen beim Aufnahmegespräch. Sortiere die Fragen nach Priorität — wichtigste zürst. Logik: Wir starten beim Hauptbeschwerden-Leitsymptom (hier Trinkschwäche, weil die Atmung makroskopisch noch unauffällig ist — keine Einziehungen, keine Tachypnoe > 60/min). Bei kritischer Atemnot würde nach ABCDE die Atmung zürst kommen.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Welche Fragen sind am wichtigsten?",
-        body: "Du sammelst Informationen. Bringe die Fragen in die richtige Reihenfolge — wichtigste zuerst. Hier startest du beim Hauptproblem: Trinkschwäche. Die Atmung ist im Moment noch okay (keine Einziehungen, Atemfrequenz im Normbereich). Wenn Emilia stark atemnot wäre, müsste die Atmung zuerst gefragt werden (ABCDE).",
+        body: "Du sammelst Informationen. Bringe die Fragen in die richtige Reihenfolge — wichtigste zürst. Hier startest du beim Hauptproblem: Trinkschwäche. Die Atmung ist im Moment noch okay (keine Einziehungen, Atemfreqünz im Normbereich). Wenn Emilia stark atemnot wäre, müsste die Atmung zürst gefragt werden (ABCDE).",
         glossarBegriffe: [],
       },
       question: {
         fragetext:
-          "Sortiere die Anamnesefragen nach Priorität (wichtigste zuerst).",
+          "Sortiere die Anamnesefragen nach Priorität (wichtigste zürst).",
         sortItems: [
           "Seit wann hat Emilia Trinkschwäche — und wie viel trinkt sie noch?",
           "Wie oft und wie viel hat sie bisher täglich getrunken (normal)?",
@@ -331,7 +331,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
 
     // Step 1.7 — Text (stepbystep): SBAR erklärt
     {
-      stepId: "ce02-emilia-info-opt-sbar-erklaert",
+      stepId: "ce02-emilia-info-opt-sbar-erklärt",
       phase: 1,
       stepType: "text",
       bloomLevel: 2,
@@ -344,12 +344,12 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
       displayFormat: "stepbystep",
       contentC1: {
         title: "SBAR — das Übergabe-Schema",
-        body: "SBAR steht für vier Schritte einer klinischen Übergabe:\n\n**S — Situation:** Was ist gerade das Problem? (Emilia: Trinkschwäche und Fieber)\n**B — Background:** Was ist der Hintergrund? (bisher gesundes Kind, Erstgebärende)\n**A — Assessment:** Wie schätze ich die Situation ein? (leicht erhöhte Atemfrequenz, kein Sauerstoffbedarf)\n**R — Recommendation:** Was empfehle ich? (Flüssigkeitsstatus engmaschig überwachen)\n\nSBAR macht Übergaben vollständig, klar und sicher — auch wenn man in der Nacht schläfrig ist.",
+        body: "SBAR steht für vier Schritte einer klinischen Übergabe:\n\n**S — Situation:** Was ist gerade das Problem? (Emilia: Trinkschwäche und Fieber)\n**B — Background:** Was ist der Hintergrund? (bisher gesundes Kind, Erstgebärende)\n**A — Assessment:** Wie schätze ich die Situation ein? (leicht erhöhte Atemfreqünz, kein Saürstoffbedarf)\n**R — Recommendation:** Was empfehle ich? (Flüssigkeitsstatus engmaschig überwachen)\n\nSBAR macht Übergaben vollständig, klar und sicher — auch wenn man in der Nacht schläfrig ist.",
         glossarBegriffe: ["SBAR"],
       },
       contentB1: {
         title: "SBAR — das Übergabe-Schema",
-        body: "SBAR ist ein Schema für Übergaben. Es hat 4 Schritte:\n\n**S** = Situation: Was ist das Problem? (Emilia trinkt wenig, hat Fieber)\n**B** = Background (= Hintergrund): Was ist der Hintergrund? (bisher gesundes Kind, junge Mutter)\n**A** = Assessment (= Einschätzung): Wie ist der Zustand? (atmet schnell, kein Sauerstoff nötig)\n**R** = Recommendation (= Empfehlung): Was soll gemacht werden? (Flüssigkeit beobachten)\n\nSBAR: So vergisst man nichts bei der Übergabe.",
+        body: "SBAR ist ein Schema für Übergaben. Es hat 4 Schritte:\n\n**S** = Situation: Was ist das Problem? (Emilia trinkt wenig, hat Fieber)\n**B** = Background (= Hintergrund): Was ist der Hintergrund? (bisher gesundes Kind, junge Mutter)\n**A** = Assessment (= Einschätzung): Wie ist der Zustand? (atmet schnell, kein Saürstoff nötig)\n**R** = Recommendation (= Empfehlung): Was soll gemacht werden? (Flüssigkeit beobachten)\n\nSBAR: So vergisst man nichts bei der Übergabe.",
         glossarBegriffe: ["SBAR"],
       },
     },
@@ -374,7 +374,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Warum trinkt Emilia so wenig?",
-        body: "Stell dir vor: Du musst essen. Und gleichzeitig atmen. Aber deine Nase ist zu. Jedes Mal wenn du kauen willst, musst du den Mund öffnen — aber dann kannst du nicht atmen. Das ist Emilias Problem. Säuglinge atmen nur durch die Nase (= obligate Nasenatmer). Emilias Nase ist voll Schleim. Saugen und Atmen gleichzeitig ist für sie gerade sehr anstrengend. Sie trinkt nicht weil sie nicht will — sondern weil es schwer ist.",
+        body: "Stell dir vor: Du musst essen. Und gleichzeitig atmen. Aber deine Nase ist zu. Jedes Mal wenn du kaün willst, musst du den Mund öffnen — aber dann kannst du nicht atmen. Das ist Emilias Problem. Säuglinge atmen nur durch die Nase (= obligate Nasenatmer). Emilias Nase ist voll Schleim. Saugen und Atmen gleichzeitig ist für sie gerade sehr anstrengend. Sie trinkt nicht weil sie nicht will — sondern weil es schwer ist.",
         glossarBegriffe: ["Obligate Nasenatmer"],
       },
     },

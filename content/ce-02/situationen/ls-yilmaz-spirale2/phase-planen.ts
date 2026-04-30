@@ -29,29 +29,29 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
       tag: "krankheitslehre",
       themaPrimaer: "dekubitus-prophylaxe",
       themenSekundaer: ["haut"],
-      transition: "Du kennst die Verbaende. Waehle den richtigen fuer Frau Yilmaz.",
+      transition: "Du kennst die Verbände. Waehle den richtigen für Frau Yilmaz.",
       contentC1: {
-        title: "Wundauflagen \u2014 welcher Verband fuer welche Wunde?",
+        title: "Wundauflagen \u2014 welcher Verband für welche Wunde?",
         body: "",
         glossarBegriffe: ["Hydrokolloid-Verband", "Alginate", "VAC-Therapie", "Feuchtes Wundmilieu", "Hydrokolloid", "Silber-Wundauflage", "Fettgaze", "Schaumverband"],
       },
       contentB1: {
-        title: "Welcher Verband passt? Ein Ueberblick",
+        title: "Welcher Verband passt? Ein Überblick",
         body: "",
         glossarBegriffe: ["Hydrokolloid-Verband", "Feuchtes Wundmilieu"],
       },
       inlineWissen: {
         bausteinRef: "dekubitus-prophylaxe-wundauflagen",
-        storyAufhaenger: "Dr. Kirchner wird gleich fragen welchen Verband du empfiehlst. Dafuer brauchst du einen Ueberblick ueber die gaengigsten Wundauflagen und das Prinzip der feuchten Wundbehandlung.",
-        storyAufhaengerB1: "Gleich waehlt die Aerztin den Verband. Du musst die verschiedenen Typen kennen.",
-        kerntext: "**Feuchtes Wundmilieu** = Grundprinzip moderner Wundversorgung (Winter 1962). Feucht gehaltene Wunden heilen bis zu 50 % schneller als trockene.\n\n**5 Wundauflagen-Typen:**\n\n\u2022 **Hydrokolloid-Verband** \u2014 Bildet bei Kontakt mit Exsudat ein Gel. Haelt Wunde feucht. Ideal fuer flache, wenig naessende Wunden (Kat. II). = Frau Yilmaz.\n\n\u2022 **Alginate** \u2014 Aus Braunalgen. Absorbiert viel Sekret. Fuer stark naessende Wunden.\n\n\u2022 **Schaumverband** \u2014 Polstert und absorbiert. Fuer maessig naessende Wunden.\n\n\u2022 **Silber-Wundauflage** \u2014 Antiseptisch. Fuer infizierte Wunden.\n\n\u2022 **Fettgaze** \u2014 Verhindert Verkleben mit Wundgrund. Fuer Granulationsphase.\n\n\u2022 **VAC-Therapie** (Vakuumversiegelung) \u2014 Fuer tiefe, unterminierte Wunden (Kat. III/IV). Bei Kat. II uebertherapiert.",
-        kerntextB1: "**Feuchte Wundbehandlung** = feucht gehaltene Wunden heilen schneller.\n\n**5 Verbands-Typen:**\n\u2022 **Hydrokolloid** \u2014 Haelt Wunde feucht. Fuer flache Wunden (Kat. 2) = Frau Yilmaz.\n\u2022 **Alginate** \u2014 Fuer stark naessende Wunden.\n\u2022 **Schaumverband** \u2014 Polstert, fuer mittel-naessende Wunden.\n\u2022 **Silber-Wundauflage** \u2014 Gegen Infektion.\n\u2022 **Fettgaze** \u2014 Verhindert Verkleben.\n\u2022 **VAC-Therapie** \u2014 Nur fuer tiefe Wunden.",
+        storyAufhaenger: "Dr. Kirchner wird gleich fragen welchen Verband du empfiehlst. Dafür brauchst du einen Überblick ueber die gängigsten Wundauflagen und das Prinzip der feuchten Wundbehandlung.",
+        storyAufhaengerB1: "Gleich wählt die Ärztin den Verband. Du musst die verschiedenen Typen kennen.",
+        kerntext: "**Feuchtes Wundmilieu** = Grundprinzip moderner Wundversorgung (Winter 1962). Feucht gehaltene Wunden heilen bis zu 50 % schneller als trockene.\n\n**5 Wundauflagen-Typen:**\n\n\u2022 **Hydrokolloid-Verband** \u2014 Bildet bei Kontakt mit Exsudat ein Gel. Haelt Wunde feucht. Ideal für flache, wenig nässende Wunden (Kat. II). = Frau Yilmaz.\n\n\u2022 **Alginate** \u2014 Aus Braunalgen. Absorbiert viel Sekret. Für stark nässende Wunden.\n\n\u2022 **Schaumverband** \u2014 Polstert und absorbiert. Für mässig nässende Wunden.\n\n\u2022 **Silber-Wundauflage** \u2014 Antiseptisch. Für infizierte Wunden.\n\n\u2022 **Fettgaze** \u2014 Verhindert Verkleben mit Wundgrund. Für Granulationsphase.\n\n\u2022 **VAC-Therapie** (Vakuumversiegelung) \u2014 Für tiefe, unterminierte Wunden (Kat. III/IV). Bei Kat. II uebertherapiert.",
+        kerntextB1: "**Feuchte Wundbehandlung** = feucht gehaltene Wunden heilen schneller.\n\n**5 Verbands-Typen:**\n\u2022 **Hydrokolloid** \u2014 Haelt Wunde feucht. Für flache Wunden (Kat. 2) = Frau Yilmaz.\n\u2022 **Alginate** \u2014 Für stark nässende Wunden.\n\u2022 **Schaumverband** \u2014 Polstert, für mittel-nässende Wunden.\n\u2022 **Silber-Wundauflage** \u2014 Gegen Infektion.\n\u2022 **Fettgaze** \u2014 Verhindert Verkleben.\n\u2022 **VAC-Therapie** \u2014 Nur für tiefe Wunden.",
         faustregel: "Feuchtes Wundmilieu = Grundprinzip. Hydrokolloid = Standard bei Kat. II. Alginate bei viel Exsudat. VAC nur bei tiefen Wunden.",
-        faustregelB1: "Feucht heilt schneller. Hydrokolloid fuer flache Wunden. Alginate fuer naessende. VAC nur fuer tiefe.",
+        faustregelB1: "Feucht heilt schneller. Hydrokolloid für flache Wunden. Alginate für nässende. VAC nur für tiefe.",
         spektrum: [],
         karteikarte: {
-          vorderseite: "Welche Wundauflage fuer Frau Yilmaz (Dekubitus Kat. II, flache Erosion, wenig Exsudat) und warum?",
-          rueckseite: "Hydrokolloid-Verband: Bildet Gel bei Exsudat-Kontakt, haelt Wunde feucht (Winter 1962), foerdert Granulation. Nicht: Alginate (zu wenig Exsudat), nicht VAC (uebertherapiert bei Kat. II). Feuchtes Wundmilieu = bis zu 50 % schnellere Heilung.",
+          vorderseite: "Welche Wundauflage für Frau Yilmaz (Dekubitus Kat. II, flache Erosion, wenig Exsudat) und warum?",
+          rueckseite: "Hydrokolloid-Verband: Bildet Gel bei Exsudat-Kontakt, hält Wunde feucht (Winter 1962), fördert Granulation. Nicht: Alginate (zu wenig Exsudat), nicht VAC (uebertherapiert bei Kat. II). Feuchtes Wundmilieu = bis zu 50 % schnellere Heilung.",
         },
       },
     },
@@ -148,7 +148,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
       contentC1: {
         title: "30-Grad vs. 135-Grad — welche Lagerung wann?",
         body: "",
-        glossarBegriffe: ["30-Grad-Seitenlage", "135-Grad-Schraege Seitenlage", "Mikrolagerung"],
+        glossarBegriffe: ["30-Grad-Seitenlage", "135-Grad-Schräge Seitenlage", "Mikrolagerung"],
       },
       contentB1: {
         title: "30 Grad oder 135 Grad — was ist der Unterschied?",
@@ -158,49 +158,49 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
       inlineWissen: {
         bausteinRef: "positionierung-30-vs-135",
         storyAufhaenger:
-          "Frau Schaefer sagt: \"Der Positionierungsplan muss angepasst werden — 135 Grad statt nur Rueckenlage.\" Aber was bedeuten diese Winkel genau, und warum ist die 90-Grad-Seitenlage bei Frau Yilmaz keine Option?",
+          "Frau Schäfer sagt: \"Der Positionierungsplan muss angepasst werden — 135 Grad statt nur Rückenlage.\" Aber was bedeuten diese Winkel genau, und warum ist die 90-Grad-Seitenlage bei Frau Yilmaz keine Option?",
         storyAufhaengerB1:
-          "Frau Schaefer sagt: \"Wir muessen den Lagerungsplan aendern — 135 Grad.\" Was bedeutet das? Und warum nicht einfach auf die Seite legen?",
+          "Frau Schäfer sagt: \"Wir müssen den Lagerungsplan ändern — 135 Grad.\" Was bedeutet das? Und warum nicht einfach auf die Seite legen?",
         kerntext:
-          "Es gibt **3 Positionierungs-Optionen** bei Dekubitus-Prophylaxe — und bei Frau Yilmaz fallen zwei davon aus:\n\n**30-Grad-Seitenlage (Schraeglage):**\n• Patient liegt leicht schraeg, ein Kissen unter der Gesaesshaelfte.\n• Entlastet das Sakrum teilweise, Druck verteilt sich auf Gesaessmuskulatur.\n• Standard bei vielen Patienten — aber bei Frau Yilmaz NICHT ausreichend: Sie hat bereits einen offenen Dekubitus Kat. II am Sakrum. Teilentlastung reicht nicht — das Sakrum muss KOMPLETT frei sein.\n\n**90-Grad-Seitenlage:**\n• Patient liegt direkt auf der Seite.\n• Problem: Druck auf Trochanter major (Oberschenkelknochen seitlich) — ebenfalls Praedilektionsstelle.\n• Bei Frau Yilmaz doppelt kontraindiziert: Hueft-TEP rechts! Auf der operierten Seite liegen = OP-Region belasten. Nicht-operierte Seite = Trochanter-Risiko.\n\n**135-Grad-Schraege Seitenlage (die Loesung):**\n• Patient liegt fast auf dem Bauch, aber schraeg abgestuetzt.\n• Druck auf grosse Muskelflaechen (Gesaess, Oberschenkelrueckseite) statt auf Knochenvorspruenge.\n• Sakrum komplett frei. Trochanter nicht belastet.\n• Bei Frau Yilmaz: Auf die LINKE Seite (nicht-operierte Seite), Hueft-TEP rechts bleibt oben in Abduktion.\n\n**Mikrolagerung:** Zusaetzlich alle 15-20 Min kleine Positionsaenderungen (Kissen verschieben) — reduziert Reperfusionsschaden.",
+          "Es gibt **3 Positionierungs-Optionen** bei Dekubitus-Prophylaxe — und bei Frau Yilmaz fallen zwei davon aus:\n\n**30-Grad-Seitenlage (Schräglage):**\n• Patient liegt leicht schräg, ein Kissen unter der Gesässhälfte.\n• Entlastet das Sakrum teilweise, Druck verteilt sich auf Gesässmuskulatur.\n• Standard bei vielen Patienten — aber bei Frau Yilmaz NICHT ausreichend: Sie hat bereits einen offenen Dekubitus Kat. II am Sakrum. Teilentlastung reicht nicht — das Sakrum muss KOMPLETT frei sein.\n\n**90-Grad-Seitenlage:**\n• Patient liegt direkt auf der Seite.\n• Problem: Druck auf Trochanter major (Oberschenkelknochen seitlich) — ebenfalls Prädilektionsstelle.\n• Bei Frau Yilmaz doppelt kontraindiziert: Hüft-TEP rechts! Auf der operierten Seite liegen = OP-Region belasten. Nicht-operierte Seite = Trochanter-Risiko.\n\n**135-Grad-Schräge Seitenlage (die Lösung):**\n• Patient liegt fast auf dem Bauch, aber schräg abgestützt.\n• Druck auf grosse Muskelflächen (Gesäss, Oberschenkelrückseite) statt auf Knochenvorsprünge.\n• Sakrum komplett frei. Trochanter nicht belastet.\n• Bei Frau Yilmaz: Auf die LINKE Seite (nicht-operierte Seite), Hüft-TEP rechts bleibt oben in Abduktion.\n\n**Mikrolagerung:** Zusätzlich alle 15-20 Min kleine Positionsänderungen (Kissen verschieben) — reduziert Reperfusionsschaden.",
         kerntextB1:
-          "Es gibt **3 Moeglichkeiten** fuer die Lagerung:\n\n**30-Grad-Seitenlage:**\n• Leicht schraeg liegen. Ein Kissen unter dem Po.\n• Entlastet das Steissbein teilweise.\n• Bei Frau Yilmaz NICHT genug: Die Wunde ist offen — das Steissbein muss ganz frei sein.\n\n**90-Grad-Seitenlage:**\n• Direkt auf der Seite liegen.\n• Problem: Druck auf den Hueftknochen seitlich.\n• Bei Frau Yilmaz nicht moeglich: Sie hat eine Hueft-OP rechts!\n\n**135-Grad-Seitenlage (die beste Loesung):**\n• Fast auf dem Bauch, aber schraeg mit Kissen.\n• Steissbein komplett frei. Hueftknochen nicht belastet.\n• Frau Yilmaz liegt auf der LINKEN Seite (nicht-operierte Seite).\n\n**Mikrolagerung:** Alle 15-20 Minuten kleine Kissen-Veraenderungen.",
+          "Es gibt **3 Möglichkeiten** für die Lagerung:\n\n**30-Grad-Seitenlage:**\n• Leicht schräg liegen. Ein Kissen unter dem Po.\n• Entlastet das Steissbein teilweise.\n• Bei Frau Yilmaz NICHT genug: Die Wunde ist offen — das Steissbein muss ganz frei sein.\n\n**90-Grad-Seitenlage:**\n• Direkt auf der Seite liegen.\n• Problem: Druck auf den Hüftknochen seitlich.\n• Bei Frau Yilmaz nicht möglich: Sie hat eine Hüft-OP rechts!\n\n**135-Grad-Seitenlage (die beste Lösung):**\n• Fast auf dem Bauch, aber schräg mit Kissen.\n• Steissbein komplett frei. Hüftknochen nicht belastet.\n• Frau Yilmaz liegt auf der LINKEN Seite (nicht-operierte Seite).\n\n**Mikrolagerung:** Alle 15-20 Minuten kleine Kissen-Veränderungen.",
         faustregel:
           "30 Grad = teilweise Entlastung. 135 Grad = komplette Sakrum-Freistellung. Bei offenem Dekubitus am Sakrum: immer 135 Grad.",
         faustregelB1:
           "30 Grad = ein bisschen Entlastung. 135 Grad = Steissbein komplett frei. Bei offener Wunde: immer 135 Grad.",
         spektrum: [
           {
-            patientName: "Herr Bauer",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "Demenz — akzeptiert Kissen nicht",
             kurzbeschreibung:
-              "Bei ihm ist 135-Grad-Lagerung schwierig: Er zieht die Kissen raus, weil er nicht versteht warum sie da liegen. 30-Grad-Schraeglage mit flachen Keilen funktioniert besser — weniger Fremdkoerper-Gefuehl.",
+              "Bei ihm ist 135-Grad-Lagerung schwierig: Er zieht die Kissen raus, weil er nicht versteht warum sie da liegen. 30-Grad-Schräglage mit flachen Keilen funktioniert besser — weniger Fremdkörper-Gefühl.",
           },
           {
             patientName: "Herr Petrov",
             situationsId: "ls-petrov-schlaganfall",
             hauptfaktor: "Bobath-Lagerung + Dekubitus-Prophylaxe",
             kurzbeschreibung:
-              "Bei Schlaganfall: Bobath-Lagerung (Spastik-Reduktion) und Dekubitus-Prophylaxe muessen kombiniert werden. 30-Grad auf die nicht-betroffene Seite ist Standard — reduziert Spastik UND Druck.",
+              "Bei Schlaganfall: Bobath-Lagerung (Spastik-Reduktion) und Dekubitus-Prophylaxe müssen kombiniert werden. 30-Grad auf die nicht-betroffene Seite ist Standard — reduziert Spastik UND Druck.",
           },
           {
             patientName: "Frau Schmidt",
             situationsId: "ls-schmidt-adipositas",
             hauptfaktor: "Bariatrisch — Schwerlast-Equipment",
             kurzbeschreibung:
-              "Bei BMI > 35: Standardkissen reichen nicht fuer 135-Grad-Lagerung. Schwerlast-Lagerungskissen + breiteres Bett noetig. Immer 2-3 Pflegekraefte fuer die Lagerung.",
+              "Bei BMI > 35: Standardkissen reichen nicht für 135-Grad-Lagerung. Schwerlast-Lagerungskissen + breiteres Bett nötig. Immer 2-3 Pflegekräfte für die Lagerung.",
           },
         ],
         sonstBox:
-          "**Sitzposition und Dekubitus:** Sitzen im Rollstuhl > 2 Stunden ohne Druckentlastung ist genauso riskant wie Liegen. Sitzbeinhöcker sind Praedilektionsstellen. Druckentlastung durch Gewichtsverlagerung alle 15-20 Min, spezielle Sitzkissen (Gel, Luft). Relevant fuer Frau Kovac (ambulant, viel sitzend) und Frau Yilmaz nach Mobilisation im Sessel.",
+          "**Sitzposition und Dekubitus:** Sitzen im Rollstuhl > 2 Stunden ohne Druckentlastung ist genauso riskant wie Liegen. Sitzbeinhöcker sind Prädilektionsstellen. Druckentlastung durch Gewichtsverlagerung alle 15-20 Min, spezielle Sitzkissen (Gel, Luft). Relevant für Frau Kovac (ambulant, viel sitzend) und Frau Yilmaz nach Mobilisation im Sessel.",
         sonstBoxB1:
           "**Wichtig bei Sitzen:** Auch im Rollstuhl oder Sessel entsteht Dekubitus — an den Sitzbeinhöckern. Alle 15-20 Minuten Gewicht verlagern. Spezielle Sitzkissen helfen.",
         karteikarte: {
           vorderseite:
-            "Frau Yilmaz hat Dekubitus Kat. II am Sakrum + Hueft-TEP rechts. Warum ist 135-Grad-Lagerung die richtige Wahl und warum fallen 30 Grad und 90 Grad aus?",
+            "Frau Yilmaz hat Dekubitus Kat. II am Sakrum + Hüft-TEP rechts. Warum ist 135-Grad-Lagerung die richtige Wahl und warum fallen 30 Grad und 90 Grad aus?",
           rueckseite:
-            "30 Grad: nur Teilentlastung — bei offener Wunde nicht ausreichend. 90 Grad: Trochanter-Belastung + Hueft-TEP rechts kontraindiziert. 135 Grad: Sakrum komplett frei, kein Trochanter-Druck, Hueft-TEP oben in Abduktion.\n\nSpektrum: Bauer (30 Grad wegen Demenz-Akzeptanz), Petrov (30 Grad + Bobath), Schmidt (135 Grad mit Schwerlast-Equipment).\n\nFaustregel: **Bei offenem Sakrum-Dekubitus: immer 135 Grad. 30 Grad reicht nicht.**",
+            "30 Grad: nur Teilentlastung — bei offener Wunde nicht ausreichend. 90 Grad: Trochanter-Belastung + Hüft-TEP rechts kontraindiziert. 135 Grad: Sakrum komplett frei, kein Trochanter-Druck, Hüft-TEP oben in Abduktion.\n\nSpektrum: Baür (30 Grad wegen Demenz-Akzeptanz), Petrov (30 Grad + Bobath), Schmidt (135 Grad mit Schwerlast-Equipment).\n\nFaustregel: **Bei offenem Sakrum-Dekubitus: immer 135 Grad. 30 Grad reicht nicht.**",
         },
       },
     },
@@ -222,11 +222,11 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Positionierungsplan — Reihenfolge festlegen",
-        body: "Bringe die 6 Schritte in die logische Planungsreihenfolge: Assessment → Dokumentation → Massnahmenplanung → Patientengespraech. Bloom 3 — Anwenden.",
+        body: "Bringe die 6 Schritte in die logische Planungsreihenfolge: Assessment → Dokumentation → Maßnahmenplanung → Patientengespräch. Bloom 3 — Anwenden.",
         glossarBegriffe: ["135°-Schräge Seitenlage", "Umlagerungsrhythmus"],
       },
       contentB1: {
-        title: "Was machst du zuerst? Sortiere die Schritte.",
+        title: "Was machst du zürst? Sortiere die Schritte.",
         body: "Bringe die Schritte für den Positionierungsplan in die richtige Reihenfolge.",
         glossarBegriffe: ["135°-Seitenlage"],
       },
@@ -234,13 +234,13 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
         fragetext:
           "Sortiere die Schritte des angepassten Positionierungsplans in die richtige Reihenfolge.",
         sequencing: {
-          instruction: "Sortiere die Planungsschritte: Assessment → Dokumentation → Massnahmenplanung → Patientengespraech.",
+          instruction: "Sortiere die Planungsschritte: Assessment → Dokumentation → Maßnahmenplanung → Patientengespräch.",
           items: [
             { id: "p1", label: "Braden-Score dokumentieren und mit Spirale-1-Wert vergleichen" },
             { id: "p2", label: "135°-Schräge Seitenlage einführen: Sakrum komplett entlasten" },
             { id: "p3", label: "2-stündlichen Umlagerungsrhythmus schriftlich festhalten" },
             { id: "p4", label: "Fersen durch Kissen freistellen" },
-            { id: "p5", label: "Inkontinenzversorgung optimieren: Pad-Wechsel bei Nässe, kein Dauer-Pad" },
+            { id: "p5", label: "Inkontinenzversorgung optimieren: Pad-Wechsel bei Nässe, kein Daür-Pad" },
             { id: "p6", label: "Frau Yilmaz über Sinn der Maßnahmen informieren, Kooperation gewinnen" },
           ],
         },
@@ -249,7 +249,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
 
     // Step 3.3 — Text (stepbystep): 135°-Schräge Seitenlage erklärt
     {
-      stepId: "ce02-yilmaz-s2-plan-03-135-grad-erklaert",
+      stepId: "ce02-yilmaz-s2-plan-03-135-grad-erklärt",
       phase: 3,
       stepType: "text",
       bloomLevel: 3,
@@ -270,7 +270,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
         "Medical illustration of 135 degree oblique side lying position for pressure injury prevention, patient with pillows under thorax, between knees, under lower legs, hospital bed side view, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Warum 135°-Schräge Seitenlage beim Sakrum-Dekubitus?",
-        body: "Die klassische 90°-Seitenlage verlagert den Druck auf den Trochanter major (Oberschenkelknochen seitlich) — ebenfalls ein Prädilektionsort für Dekubitus. Bei Frau Yilmaz mit Hüft-TEP rechts kommt hinzu: Eine 90°-Lage auf der rechten Seite würde direkt auf die OP-Region drücken — also doppelt zu vermeiden. Die 135°-Schräge Seitenlage verteilt das Gewicht auf Gesäßmuskulatur und Oberschenkelrückseite — Flächen mit mehr Weichteilpolster über dem Knochen.\n\n**Wichtig: Seite richtig wählen.** Bei Hüft-TEP rechts → 135°-Schräglage auf die **linke** Seite (kontralateral, also Gegenseite zur OP). Die operierte Hüfte bleibt oben in leichter Abduktion (Kissen zwischen den Knien) — keine Adduktion, keine Innenrotation, keine Hüftbeugung über 90°. Diese Lagerungsregeln gelten typischerweise für die ersten 6-12 Wochen post-OP.\n\nKissen: eines unter die Brust (Stabilisierung des Rumpfes), eines zwischen die Beine (Beinentlastung + TEP-Abduktionsschutz), eines unter den Unterschenkel (Fersenfreistellung), eines an der Rückseite (verhindert Zurückrollen). Konsequenz für Frau Yilmaz: Diese Lagerung kostet 5 Minuten mehr — ist aber entscheidend für die Entlastung des Sakrums UND den Schutz der OP-Hüfte. Quelle: (NPUAP/EPUAP/PPPIA 2019; postoperative TEP-Lagerung)",
+        body: "Die klassische 90°-Seitenlage verlagert den Druck auf den Trochanter major (Oberschenkelknochen seitlich) — ebenfalls ein Prädilektionsort für Dekubitus. Bei Frau Yilmaz mit Hüft-TEP rechts kommt hinzu: Eine 90°-Lage auf der rechten Seite würde direkt auf die OP-Region drücken — also doppelt zu vermeiden. Die 135°-Schräge Seitenlage verteilt das Gewicht auf Gesäßmuskulatur und Oberschenkelrückseite — Flächen mit mehr Weichteilpolster über dem Knochen.\n\n**Wichtig: Seite richtig wählen.** Bei Hüft-TEP rechts → 135°-Schräglage auf die **linke** Seite (kontralateral, also Gegenseite zur OP). Die operierte Hüfte bleibt oben in leichter Abduktion (Kissen zwischen den Knien) — keine Adduktion, keine Innenrotation, keine Hüftbeugung über 90°. Diese Lagerungsregeln gelten typischerweise für die ersten 6-12 Wochen post-OP.\n\nKissen: eines unter die Brust (Stabilisierung des Rumpfes), eines zwischen die Beine (Beinentlastung + TEP-Abduktionsschutz), eines unter den Unterschenkel (Fersenfreistellung), eines an der Rückseite (verhindert Zurückrollen). Konseqünz für Frau Yilmaz: Diese Lagerung kostet 5 Minuten mehr — ist aber entscheidend für die Entlastung des Sakrums UND den Schutz der OP-Hüfte. Quelle: (NPUAP/EPUAP/PPPIA 2019; postoperative TEP-Lagerung)",
         glossarBegriffe: [
           "135°-Schräge Seitenlage",
           "Trochanter major",
@@ -281,7 +281,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
       },
       contentB1: {
         title: "Warum 135°-Seitenlage?",
-        body: "Bei 90°-Seitenlage drückt das Gewicht auf den Oberschenkelknochen seitlich. Das ist auch eine gefährliche Stelle für Dekubitus. Bei 135° liegt man schräger: Das Gewicht verteilt sich auf die Gesäßmuskeln. Viel Fleisch und Muskel schützen den Knochen besser.\n\n**Wichtig: Auf welcher Seite?** Frau Yilmaz hat Hüft-OP rechts. Das heißt: Sie liegt auf der **linken** Seite (die nicht-operierte Seite). Die operierte Hüfte ist oben. Niemals auf der operierten Seite liegen — das tut der OP-Stelle weh.\n\nKissen: eins unter die Brust (Stabilisierung), eins zwischen die Beine (wichtig: hält die operierte Hüfte in der richtigen Position!), eins unter den Unterschenkel (Fersen frei), eins am Rücken (damit sie nicht zurückrollt). Das dauert 5 Minuten länger — aber es hilft.",
+        body: "Bei 90°-Seitenlage drückt das Gewicht auf den Oberschenkelknochen seitlich. Das ist auch eine gefährliche Stelle für Dekubitus. Bei 135° liegt man schräger: Das Gewicht verteilt sich auf die Gesäßmuskeln. Viel Fleisch und Muskel schützen den Knochen besser.\n\n**Wichtig: Auf welcher Seite?** Frau Yilmaz hat Hüft-OP rechts. Das heißt: Sie liegt auf der **linken** Seite (die nicht-operierte Seite). Die operierte Hüfte ist oben. Niemals auf der operierten Seite liegen — das tut der OP-Stelle weh.\n\nKissen: eins unter die Brust (Stabilisierung), eins zwischen die Beine (wichtig: hält die operierte Hüfte in der richtigen Position!), eins unter den Unterschenkel (Fersen frei), eins am Rücken (damit sie nicht zurückrollt). Das daürt 5 Minuten länger — aber es hilft.",
         glossarBegriffe: ["135°-Seitenlage", "Kontralateral"],
       },
     },
@@ -300,36 +300,36 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
       tag: "pflege",
       themaPrimaer: "pflegeprozess",
       themenSekundaer: ["dekubitus-prophylaxe"],
-      transition: "Ergebnisqualitaet im Kopf. Jetzt: S-P-E auf Frau Yilmaz anwenden.",
+      transition: "Ergebnisqualität im Kopf. Jetzt: S-P-E auf Frau Yilmaz anwenden.",
       contentC1: {
-        title: "Ergebnisqualitaet und pflegerische Verantwortung",
+        title: "Ergebnisqualität und pflegerische Verantwortung",
         body: "",
-        glossarBegriffe: ["Ergebnisqualitaet", "Paragraph 3 PflBG"],
+        glossarBegriffe: ["Ergebnisqualität", "Paragraph 3 PflBG"],
       },
       contentB1: {
-        title: "Was ist Ergebnisqualitaet? Was sagt das Pflegeberufegesetz?",
+        title: "Was ist Ergebnisqualität? Was sagt das Pflegeberufegesetz?",
         body: "",
-        glossarBegriffe: ["Ergebnisqualitaet"],
+        glossarBegriffe: ["Ergebnisqualität"],
       },
       inlineWissen: {
         bausteinRef: "pflegeprozess-ergebnis-pflbg",
-        storyAufhaenger: "Gleich ordnest du Faktoren in das Donabedian-Modell ein. Eine Dimension fehlt noch: **Ergebnisqualitaet**. Und ein Gesetz musst du kennen: **Paragraph 3 PflBG**.",
+        storyAufhaenger: "Gleich ordnest du Faktoren in das Donabedian-Modell ein. Eine Dimension fehlt noch: **Ergebnisqualität**. Und ein Gesetz musst du kennen: **Paragraph 3 PflBG**.",
         storyAufhaengerB1: "Noch zwei Begriffe bevor du das Modell anwendest.",
-        kerntext: "**Ergebnisqualitaet** (Donabedian 1966) = das tatsaechliche Resultat der Pflege. Bei Frau Yilmaz: Dekubitus Kat. II ist entstanden (negativ), aber Kat. III/IV wurde verhindert (Schadensbegrenzung, positiv). Wunde heilt nach 3 Tagen (positiv).\n\n**Paragraph 3 PflBG** (Pflegeberufegesetz): Definiert die vorbehaltenen Taetigkeiten der Pflegefachkraft. Dazu gehoert: Erhebung und Feststellung des Pflegebedarfs, Planung, Organisation und Steuerung des Pflegeprozesses. Das SBAR-Gespraech mit der Aerztin ist pflegerische Berichterstattung nach Paragraph 3 \u2014 du DARFST und SOLLST der Aerztin deinen Befund mitteilen.",
-        kerntextB1: "**Ergebnisqualitaet** = Was ist am Ende rausgekommen? Bei Frau Yilmaz: Wunde entstanden (schlecht), aber heilt (gut). Kat. III/IV verhindert (gut).\n\n**Paragraph 3 PflBG** = Das Gesetz sagt: Pflegefachkraefte duerfen und sollen den Pflegebedarf feststellen und der Aerztin berichten. Das SBAR-Gespraech ist deine Aufgabe.",
-        faustregel: "Ergebnisqualitaet = tatsaechliches Resultat. Paragraph 3 PflBG = Pflegebericht an Aerztin ist deine Aufgabe und dein Recht.",
-        faustregelB1: "Ergebnisqualitaet = Was kam raus? Paragraph 3 PflBG = Du darfst und sollst der Aerztin berichten.",
+        kerntext: "**Ergebnisqualität** (Donabedian 1966) = das tatsächliche Resultat der Pflege. Bei Frau Yilmaz: Dekubitus Kat. II ist entstanden (negativ), aber Kat. III/IV wurde verhindert (Schadensbegrenzung, positiv). Wunde heilt nach 3 Tagen (positiv).\n\n**Paragraph 3 PflBG** (Pflegeberufegesetz): Definiert die vorbehaltenen Taetigkeiten der Pflegefachkraft. Dazu gehört: Erhebung und Feststellung des Pflegebedarfs, Planung, Organisation und Steürung des Pflegeprozesses. Das SBAR-Gespräch mit der Ärztin ist pflegerische Berichterstattung nach Paragraph 3 \u2014 du DARFST und SOLLST der Ärztin deinen Befund mitteilen.",
+        kerntextB1: "**Ergebnisqualität** = Was ist am Ende rausgekommen? Bei Frau Yilmaz: Wunde entstanden (schlecht), aber heilt (gut). Kat. III/IV verhindert (gut).\n\n**Paragraph 3 PflBG** = Das Gesetz sagt: Pflegefachkräfte dürfen und sollen den Pflegebedarf feststellen und der Ärztin berichten. Das SBAR-Gespräch ist deine Aufgabe.",
+        faustregel: "Ergebnisqualität = tatsächliches Resultat. Paragraph 3 PflBG = Pflegebericht an Ärztin ist deine Aufgabe und dein Recht.",
+        faustregelB1: "Ergebnisqualität = Was kam raus? Paragraph 3 PflBG = Du darfst und sollst der Ärztin berichten.",
         spektrum: [],
         karteikarte: {
-          vorderseite: "Was ist Ergebnisqualitaet im Fall Frau Yilmaz?",
-          rueckseite: "Ergebnisqualitaet (Donabedian): Dekubitus Kat. II entstanden (negativ), aber Kat. III/IV verhindert + Heilung sichtbar (positiv). Paragraph 3 PflBG: SBAR-Bericht an Aerztin = vorbehaltene Taetigkeit der Pflegefachkraft.",
+          vorderseite: "Was ist Ergebnisqualität im Fall Frau Yilmaz?",
+          rueckseite: "Ergebnisqualität (Donabedian): Dekubitus Kat. II entstanden (negativ), aber Kat. III/IV verhindert + Heilung sichtbar (positiv). Paragraph 3 PflBG: SBAR-Bericht an Ärztin = vorbehaltene Taetigkeit der Pflegefachkraft.",
         },
       },
     },
 
     // Step 3.4 — ConceptMap: Donabedian S-P-E-Modell
     {
-      stepId: "ce02-yilmaz-s2-plan-04-donabedian-qualitaet",
+      stepId: "ce02-yilmaz-s2-plan-04-donabedian-qualität",
       phase: 3,
       stepType: "conceptmap",
       bloomLevel: 5,
@@ -433,16 +433,16 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
                   "Sehr gut. Du hast S, B, A, R alle drin. Dr. Kirchner weiß genau was sie tun muss. Das ist gute Pflege.",
               },
               {
-                text: "\"Frau Yilmaz hat irgendwie eine Wunde am Rücken — da sollten Sie mal schauen.\"",
+                text: "\"Frau Yilmaz hat irgendwie eine Wunde am Rücken — da sollten Sie mal schaün.\"",
                 textB1:
-                  "\"Frau Yilmaz hat eine Wunde am Rücken — kommen Sie mal schauen.\"",
+                  "\"Frau Yilmaz hat eine Wunde am Rücken — kommen Sie mal schaün.\"",
                 patientResponse:
                   "Dr. Kirchner schaut dich kurz an. 'Was für eine Wunde? Wie groß? Seit wann?' — sie wartet auf mehr Informationen.",
                 patientResponseB1:
                   "Dr. Kirchner fragt: 'Was für eine Wunde? Wie groß? Seit wann?'",
                 score: 0,
                 feedback:
-                  "Keine Information, kein SBAR, kein Befund. 'Irgendwie' und 'mal schauen' sind keine professionellen Übergabeformulierungen. Der Arzt braucht einen strukturierten Befund — sonst kann er keine Anordnung schreiben.",
+                  "Keine Information, kein SBAR, kein Befund. 'Irgendwie' und 'mal schaün' sind keine professionellen Übergabeformulierungen. Der Arzt braucht einen strukturierten Befund — sonst kann er keine Anordnung schreiben.",
                 feedbackB1:
                   "Das ist zu wenig Information. Die Ärztin braucht: Was ist die Wunde? Wie groß? Seit wann? Welche Vorerkrankungen?",
               },
@@ -558,7 +558,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Frau Yilmaz erklären — warum Positionierung so wichtig ist",
-        body: "In Spirale 1 hat Frau Yilmaz die Umlagerung manchmal abgelehnt ('das war unbequem'). Jetzt ist ein Dekubitus entstanden. Du musst ihr erklären — respektvoll und verständlich — warum ihre aktive Mitarbeit entscheidend ist.",
+        body: "In Spirale 1 hat Frau Yilmaz die Umlagerung manchmal abgelehnt ('das war unbeqüm'). Jetzt ist ein Dekubitus entstanden. Du musst ihr erklären — respektvoll und verständlich — warum ihre aktive Mitarbeit entscheidend ist.",
         glossarBegriffe: [],
       },
       contentB1: {
@@ -573,13 +573,13 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Frau Yilmaz sagt: 'Die Schwestern haben mich immer auf die Seite gelegt. Ich hab das manchmal nicht gewollt — das war unbequem. Aber sie haben es trotzdem gemacht.' Sie schaut dich an — zwischen Verständnis und Widerstand.",
+              "Frau Yilmaz sagt: 'Die Schwestern haben mich immer auf die Seite gelegt. Ich hab das manchmal nicht gewollt — das war unbeqüm. Aber sie haben es trotzdem gemacht.' Sie schaut dich an — zwischen Verständnis und Widerstand.",
             contextB1:
-              "Frau Yilmaz sagt: 'Das Drehen auf die Seite war immer unbequem. Ich wollte es manchmal nicht.' Sie schaut dich an.",
+              "Frau Yilmaz sagt: 'Das Drehen auf die Seite war immer unbeqüm. Ich wollte es manchmal nicht.' Sie schaut dich an.",
             speaker: "Du",
             options: [
               {
-                text: "\"Frau Yilmaz, die Wunde die wir heute gefunden haben, ist entstanden weil das Gewebe am Steißbein zu lange Druck hatte. Das Umlagern verhindert genau das — es gibt dem Gewebe kurze Pausen. Bei Ihrer Erkrankung spüren Sie den Druck nicht selbst — deshalb ist das Umlagern der einzige Weg. Ich verstehe dass es unbequem ist. Darf ich Ihnen zeigen, wie wir es angenehmer machen können?\"",
+                text: "\"Frau Yilmaz, die Wunde die wir heute gefunden haben, ist entstanden weil das Gewebe am Steißbein zu lange Druck hatte. Das Umlagern verhindert genau das — es gibt dem Gewebe kurze Pausen. Bei Ihrer Erkrankung spüren Sie den Druck nicht selbst — deshalb ist das Umlagern der einzige Weg. Ich verstehe dass es unbeqüm ist. Darf ich Ihnen zeigen, wie wir es angenehmer machen können?\"",
                 textB1:
                   "\"Frau Yilmaz, die Wunde ist entstanden, weil zu lange Druck auf der Haut war. Das Drehen gibt der Haut eine Pause. Bei Ihrer Erkrankung spüren Sie den Druck nicht selbst — deshalb müssen wir drehen. Ich weiß, es ist nicht schön. Darf ich zeigen, wie wir es besser machen?\"",
                 patientResponse:
@@ -588,7 +588,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
                   "Frau Yilmaz denkt kurz. 'Wenn das die Wunde verhindert — ja. Aber das Kissen drückt manchmal.' Sie ist bereit.",
                 score: 3,
                 feedback:
-                  "Erklärung (warum) + Verständnis (unbequem) + Angebot (besser machen). Dreischritt der patientenzentrierten Kommunikation. Du respektierst ihre Autonomie und lädst zur Kooperation ein.",
+                  "Erklärung (warum) + Verständnis (unbeqüm) + Angebot (besser machen). Dreischritt der patientenzentrierten Kommunikation. Du respektierst ihre Autonomie und lädst zur Kooperation ein.",
                 feedbackB1:
                   "Sehr gut. Du erklärst warum. Du zeigst Verständnis. Du fragst ob sie mitmacht. Das ist die richtige Reihenfolge.",
               },
@@ -597,7 +597,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
                 textB1:
                   "\"Das hat der Arzt angeordnet. Sie müssen mitmachen.\"",
                 patientResponse:
-                  "Frau Yilmaz schließt die Augen. 'Na gut.' — sie kooperiert äußerlich, aber ohne Vertrauen.",
+                  "Frau Yilmaz schließt die Augen. 'Na gut.' — sie kooperiert äußerlich, aber ohne Vertraün.",
                 patientResponseB1:
                   "Frau Yilmaz nickt kurz. 'Na gut.' — aber ihr Gesicht sagt was anderes.",
                 score: 0,

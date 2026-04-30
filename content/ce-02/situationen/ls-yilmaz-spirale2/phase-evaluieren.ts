@@ -42,10 +42,10 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
       },
       inlineWissen: {
         bausteinRef: "dekubitus-prophylaxe-wundheilung",
-        storyAufhaenger: "Die Wunde sieht besser aus. Aber was heisst besser? Sechs Begriffe helfen.",
+        storyAufhaenger: "Die Wunde sieht besser aus. Aber was heißt besser? Sechs Begriffe helfen.",
         storyAufhaengerB1: "Die Wunde sieht besser aus. Sechs Begriffe helfen.",
-        kerntext: "**Granulationsgewebe** = neues Heilungsgewebe. Rosa-rot, koernig. Zeichen der Heilung.\n\n**Exsudat** = Wundfluessigkeit. Seroes (klar) = normal. Purulent (eitrig) = Infektion.\n\n**4 Wundheilungsphasen:**\n\u2022 **Exsudationsphase** (Tag 1-3) \u2014 Entzuendung, Reinigung.\n\u2022 **Resorptionsphase** (Tag 3-7) \u2014 Abbau toten Gewebes.\n\u2022 **Proliferationsphase** (Tag 7-21) \u2014 Granulation, Wunde wird kleiner. **Frau Yilmaz ist hier (Tag 17).**\n\u2022 **Regenerationsphase** (Wochen-Monate) \u2014 Narbe reift.",
-        kerntextB1: "**Granulationsgewebe** = neues Heilungsgewebe. Rosa-rot. Wunde heilt.\n**Exsudat** = Fluessigkeit aus Wunde. Klar = ok. Eitrig = schlecht.\n\n**4 Phasen:** Phase 1: Entzuendung. Phase 2: Aufraaeumen. Phase 3: Heilgewebe waechst (= Frau Yilmaz). Phase 4: Narbe.",
+        kerntext: "**Granulationsgewebe** = neüs Heilungsgewebe. Rosa-rot, körnig. Zeichen der Heilung.\n\n**Exsudat** = Wundflüssigkeit. Serös (klar) = normal. Purulent (eitrig) = Infektion.\n\n**4 Wundheilungsphasen:**\n\u2022 **Exsudationsphase** (Tag 1-3) \u2014 Entzündung, Reinigung.\n\u2022 **Resorptionsphase** (Tag 3-7) \u2014 Abbau toten Gewebes.\n\u2022 **Proliferationsphase** (Tag 7-21) \u2014 Granulation, Wunde wird kleiner. **Frau Yilmaz ist hier (Tag 17).**\n\u2022 **Regenerationsphase** (Wochen-Monate) \u2014 Narbe reift.",
+        kerntextB1: "**Granulationsgewebe** = neüs Heilungsgewebe. Rosa-rot. Wunde heilt.\n**Exsudat** = Flüssigkeit aus Wunde. Klar = ok. Eitrig = schlecht.\n\n**4 Phasen:** Phase 1: Entzündung. Phase 2: Aufraäumen. Phase 3: Heilgewebe wächst (= Frau Yilmaz). Phase 4: Narbe.",
         faustregel: "Granulation = rosa = heilt. 4 Phasen: Exsudation \u2192 Resorption \u2192 Proliferation \u2192 Regeneration.",
         faustregelB1: "Rosa Gewebe = heilt. Frau Yilmaz ist in Phase 3.",
         spektrum: [],
@@ -164,9 +164,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
         bausteinRef: "pflegeprozess-donabedian-ebenen",
         storyAufhaenger: "Am Tag 15: nur 5x statt 8x umgelagert. Struktur- oder Prozessproblem?",
         storyAufhaengerB1: "Nur 5x umgelagert statt 8x. Warum?",
-        kerntext: "**Strukturebene** = Rahmenbedingungen: Personal, Material, Organisation. Wenn zu wenig Personal = Strukturproblem.\n\n**Prozessebene** = Tatsaechliches Handeln: Umlagerung, Dokumentation. Wenn Personal da aber nicht gemacht = Prozessproblem.\n\nMeistens beide zusammen. Loesung liegt im System, nicht bei Einzelpersonen.",
-        kerntextB1: "**Strukturebene** = Was ist da? (Personal, Material).\n**Prozessebene** = Was wird gemacht? (Umlagerung, Doku).\nMeistens beides zusammen. Loesung = System aendern.",
-        faustregel: "Strukturebene = Rahmenbedingungen. Prozessebene = tatsaechliches Handeln. Meistens beides zusammen.",
+        kerntext: "**Strukturebene** = Rahmenbedingungen: Personal, Material, Organisation. Wenn zu wenig Personal = Strukturproblem.\n\n**Prozessebene** = Tatsächliches Handeln: Umlagerung, Dokumentation. Wenn Personal da aber nicht gemacht = Prozessproblem.\n\nMeistens beide zusammen. Lösung liegt im System, nicht bei Einzelpersonen.",
+        kerntextB1: "**Strukturebene** = Was ist da? (Personal, Material).\n**Prozessebene** = Was wird gemacht? (Umlagerung, Doku).\nMeistens beides zusammen. Lösung = System ändern.",
+        faustregel: "Strukturebene = Rahmenbedingungen. Prozessebene = tatsächliches Handeln. Meistens beides zusammen.",
         faustregelB1: "Struktur = Was ist da? Prozess = Was wird gemacht?",
         spektrum: [],
         karteikarte: {
@@ -231,9 +231,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
             text: "Frau Yilmaz hätte die Lücke selber schließen können durch Eigenbewegung.",
             isCorrect: false,
             explanation:
-              "FALSCH in der Grundannahme — Eigenressource ist zwar real (Frau Yilmaz kann sich begrenzt bewegen), aber die primaere Verantwortung fuer Dekubitusprophylaxe liegt bei der Pflege, nicht bei der Patientin. Eigenressourcen ergaenzen die Prophylaxe — sie ersetzen nicht die Pflegepflicht. Die Luecke auf Eigenbewegung abzuwaelzen ist ein haeufiger Denkfehler.",
+              "FALSCH in der Grundannahme — Eigenressource ist zwar real (Frau Yilmaz kann sich begrenzt bewegen), aber die primäre Verantwortung für Dekubitusprophylaxe liegt bei der Pflege, nicht bei der Patientin. Eigenressourcen ergänzen die Prophylaxe — sie ersetzen nicht die Pflegepflicht. Die Luecke auf Eigenbewegung abzuwälzen ist ein häufiger Denkfehler.",
             explanationB1:
-              "Falsch gedacht. Frau Yilmaz kann sich ein bisschen selbst drehen — aber das ist nicht ihre Aufgabe. Prophylaxe ist Aufgabe der Pflege. Man kann die Luecke nicht auf die Patientin abwaelzen.",
+              "Falsch gedacht. Frau Yilmaz kann sich ein bisschen selbst drehen — aber das ist nicht ihre Aufgabe. Prophylaxe ist Aufgabe der Pflege. Man kann die Luecke nicht auf die Patientin abwälzen.",
           },
         ],
       },
@@ -255,15 +255,15 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-yilmaz-s2-eval-doku-qualitaet",
+      lernziel: "ce02-yilmaz-s2-eval-doku-qualität",
       tag: "pflege",
       themaPrimaer: "pflegedokumentation",
       themenSekundaer: ["dekubitus-prophylaxe"],
       transition: "Mit diesem Bild im Kopf: Was ist dein Fazit zu Spirale 2?",
       contentC1: {
-        title: "Dokumentation als Qualitaetssicherung — was bei Frau Yilmaz schiefging",
+        title: "Dokumentation als Qualitätssicherung — was bei Frau Yilmaz schiefging",
         body: "",
-        glossarBegriffe: ["§ 630f BGB", "Beweislastumkehr", "Prozessqualitaet"],
+        glossarBegriffe: ["§ 630f BGB", "Beweislastumkehr", "Prozessqualität"],
       },
       contentB1: {
         title: "Warum ist Aufschreiben so wichtig?",
@@ -271,55 +271,55 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
         glossarBegriffe: ["§ 630f BGB"],
       },
       inlineWissen: {
-        bausteinRef: "pflegedokumentation-qualitaetssicherung",
+        bausteinRef: "pflegedokumentation-qualitätssicherung",
         wiederbegegnung: {
           basisBausteinId: "pflegedokumentation-grundlagen",
           basisPatient: "Frau M.",
           vertiefung:
-            "Bei Frau M. hast du das Sturzprotokoll geschrieben — Dokumentation als rechtliche Absicherung (§ 630f BGB). Bei Frau Yilmaz siehst du jetzt die andere Seite: Was passiert, wenn NICHT dokumentiert wird. Die Kollegin hat die Roetung gesehen — aber nicht aufgeschrieben. Folge: Kein Befund in der Akte, kein Handlungsauftrag fuer die naechste Schicht, 12-24 Stunden Verzoegerung bis zur Entdeckung des offenen Dekubitus. Dokumentation ist nicht nur Recht — sie ist Prozessqualitaet (Donabedian).",
+            "Bei Frau M. hast du das Sturzprotokoll geschrieben — Dokumentation als rechtliche Absicherung (§ 630f BGB). Bei Frau Yilmaz siehst du jetzt die andere Seite: Was passiert, wenn NICHT dokumentiert wird. Die Kollegin hat die Roetung gesehen — aber nicht aufgeschrieben. Folge: Kein Befund in der Akte, kein Handlungsauftrag für die nächste Schicht, 12-24 Stunden Verzögerung bis zur Entdeckung des offenen Dekubitus. Dokumentation ist nicht nur Recht — sie ist Prozessqualität (Donabedian).",
           vertiefungB1:
-            "Bei Frau M. hast du das Sturzprotokoll geschrieben — weil alles aufgeschrieben werden muss (§ 630f BGB). Bei Frau Yilmaz siehst du jetzt: Was passiert, wenn man NICHT aufschreibt. Die Kollegin hat die Roetung gesehen — aber nicht geschrieben. Folge: 12-24 Stunden spaeter erst die offene Wunde entdeckt. Aufschreiben ist nicht nur Pflicht — es schuetzt den Patienten.",
+            "Bei Frau M. hast du das Sturzprotokoll geschrieben — weil alles aufgeschrieben werden muss (§ 630f BGB). Bei Frau Yilmaz siehst du jetzt: Was passiert, wenn man NICHT aufschreibt. Die Kollegin hat die Roetung gesehen — aber nicht geschrieben. Folge: 12-24 Stunden später erst die offene Wunde entdeckt. Aufschreiben ist nicht nur Pflicht — es schützt den Patienten.",
         },
         storyAufhaenger:
-          "Du hast gerade gesehen: Am Tag 15 wurde nur 5x statt 8x umgelagert. Und die Roetung wurde gestern gesehen aber nicht dokumentiert. Beides zeigt: Dokumentation ist nicht Papierkram — sie ist der Mechanismus, der Qualitaet sicherstellt.",
+          "Du hast gerade gesehen: Am Tag 15 wurde nur 5x statt 8x umgelagert. Und die Roetung wurde gestern gesehen aber nicht dokumentiert. Beides zeigt: Dokumentation ist nicht Papierkram — sie ist der Mechanismus, der Qualität sicherstellt.",
         storyAufhaengerB1:
           "Am Tag 15 wurde nur 5 Mal umgelagert statt 8 Mal. Und die Roetung gestern — gesehen aber nicht aufgeschrieben. Was folgt daraus?",
         kerntext:
-          "**Dokumentation hat 3 Funktionen gleichzeitig:**\n\n• **Rechtlich:** Was nicht dokumentiert ist, gilt als nicht durchgefuehrt (§ 630f BGB). Beweislastumkehr: Die Einrichtung muss beweisen, dass die Massnahme stattfand.\n\n• **Kommunikativ:** Die naechste Schicht weiss nur, was in der Akte steht. Muendliche Uebergabe allein reicht nicht — bei Schichtwechsel gehen bis zu 40 % der Informationen verloren.\n\n• **Qualitaetssichernd:** Dokumentation macht Prozessqualitaet messbar (Donabedian 1966). Wurde der Umlagerungsrhythmus eingehalten? Wurde die Hautinspektion durchgefuehrt? Ohne Dokumentation: nicht nachweisbar.\n\n**Bei Frau Yilmaz konkret:**\n1. Roetung gesehen → nicht dokumentiert → naechste Schicht wusste nichts → 12-24h Verzoegerung.\n2. Tag 15: nur 5x umgelagert → Luecke in Doku sichtbar → Qualitaetsereignis.\n3. Wundbefund Tag 14: korrekt dokumentiert → Verlaufsbeurteilung Tag 17 moeglich.",
+          "**Dokumentation hat 3 Funktionen gleichzeitig:**\n\n• **Rechtlich:** Was nicht dokumentiert ist, gilt als nicht durchgeführt (§ 630f BGB). Beweislastumkehr: Die Einrichtung muss beweisen, dass die Maßnahme stattfand.\n\n• **Kommunikativ:** Die nächste Schicht weiss nur, was in der Akte steht. Mündliche Übergabe allein reicht nicht — bei Schichtwechsel gehen bis zu 40 % der Informationen verloren.\n\n• **Qualitätssichernd:** Dokumentation macht Prozessqualität messbar (Donabedian 1966). Wurde der Umlagerungsrhythmus eingehalten? Wurde die Hautinspektion durchgeführt? Ohne Dokumentation: nicht nachweisbar.\n\n**Bei Frau Yilmaz konkret:**\n1. Roetung gesehen → nicht dokumentiert → nächste Schicht wusste nichts → 12-24h Verzögerung.\n2. Tag 15: nur 5x umgelagert → Luecke in Doku sichtbar → Qualitätsereignis.\n3. Wundbefund Tag 14: korrekt dokumentiert → Verlaufsbeurteilung Tag 17 möglich.",
         kerntextB1:
-          "**Dokumentation hat 3 Aufgaben:**\n\n• **Recht:** Was nicht geschrieben ist, gilt als nicht gemacht (§ 630f BGB).\n\n• **Kommunikation:** Die naechste Schicht weiss nur, was in der Akte steht.\n\n• **Qualitaet:** Man kann pruefen: Wurde alles gemacht? Ohne Dokumentation: nicht pruefbar.\n\n**Bei Frau Yilmaz:**\n1. Roetung nicht aufgeschrieben → naechste Schicht wusste nichts → Verzoegerung.\n2. Tag 15: nur 5x umgelagert statt 8x → Luecke sichtbar.\n3. Wundbefund Tag 14: aufgeschrieben → Tag 17 kann man vergleichen.",
+          "**Dokumentation hat 3 Aufgaben:**\n\n• **Recht:** Was nicht geschrieben ist, gilt als nicht gemacht (§ 630f BGB).\n\n• **Kommunikation:** Die nächste Schicht weiss nur, was in der Akte steht.\n\n• **Qualität:** Man kann prüfen: Wurde alles gemacht? Ohne Dokumentation: nicht prüfbar.\n\n**Bei Frau Yilmaz:**\n1. Roetung nicht aufgeschrieben → nächste Schicht wusste nichts → Verzögerung.\n2. Tag 15: nur 5x umgelagert statt 8x → Luecke sichtbar.\n3. Wundbefund Tag 14: aufgeschrieben → Tag 17 kann man vergleichen.",
         faustregel:
-          "Dokumentation ist dreifach wirksam: rechtlich, kommunikativ, qualitaetssichernd. Was nicht drinsteht, existiert nicht.",
+          "Dokumentation ist dreifach wirksam: rechtlich, kommunikativ, qualitätssichernd. Was nicht drinsteht, existiert nicht.",
         faustregelB1:
-          "Was nicht aufgeschrieben ist, existiert nicht. Dokumentation schuetzt Patienten und Pflegekraefte.",
+          "Was nicht aufgeschrieben ist, existiert nicht. Dokumentation schützt Patienten und Pflegekräfte.",
         spektrum: [
           {
             patientName: "Frau M.",
             situationsId: "frau-m-nacht-sturz",
             hauptfaktor: "Sturzprotokoll",
             kurzbeschreibung:
-              "Bei ihr hast du das Sturzprotokoll geschrieben. Dokumentation als Erstversorgung: Uhrzeit, Sturzmechanismus, Verletzungen, VZ, Massnahmen. Ohne Protokoll: kein Nachweis der korrekten Erstversorgung.",
+              "Bei ihr hast du das Sturzprotokoll geschrieben. Dokumentation als Erstversorgung: Uhrzeit, Sturzmechanismus, Verletzungen, VZ, Maßnahmen. Ohne Protokoll: kein Nachweis der korrekten Erstversorgung.",
           },
           {
             patientName: "Herr Nguyen",
             situationsId: "ls-nguyen-stoma",
             hauptfaktor: "Stoma-Dokumentation",
             kurzbeschreibung:
-              "Stoma-Versorgung braucht exakte Dokumentation: Stomagroesse, Hautkonditierung, Beutelwechsel-Frequenz. Ohne Verlaufsdoku: kein Nachweis dass Komplikationen rechtzeitig erkannt wurden.",
+              "Stoma-Versorgung braucht exakte Dokumentation: Stomagrösse, Hautkonditierung, Beutelwechsel-Freqünz. Ohne Verlaufsdoku: kein Nachweis dass Komplikationen rechtzeitig erkannt wurden.",
           },
           {
             patientName: "Frau Kovac",
             situationsId: "ls-kovac-ambulant",
             hauptfaktor: "Ambulant — Schnittstelle Pflegedienst",
             kurzbeschreibung:
-              "Im ambulanten Setting kommen verschiedene Pflegekraefte. Dokumentation ist die einzige Kommunikation zwischen ihnen. Fehlende Doku = Informationsverlust = Risiko.",
+              "Im ambulanten Setting kommen verschiedene Pflegekräfte. Dokumentation ist die einzige Kommunikation zwischen ihnen. Fehlende Doku = Informationsverlust = Risiko.",
           },
         ],
         karteikarte: {
           vorderseite:
-            "Bei Frau Yilmaz wurde die Roetung gesehen aber nicht dokumentiert. Was sind die 3 Konsequenzen — und welche Funktionen hat Pflegedokumentation?",
+            "Bei Frau Yilmaz wurde die Roetung gesehen aber nicht dokumentiert. Was sind die 3 Konseqünzen — und welche Funktionen hat Pflegedokumentation?",
           rueckseite:
-            "Konsequenzen: 1) Naechste Schicht nicht informiert (12-24h Verzoegerung). 2) Kein rechtlicher Nachweis (§ 630f BGB). 3) Qualitaetsereignis nicht nachvollziehbar (Donabedian).\n\n3 Funktionen: Rechtlich (Beweislastumkehr), Kommunikativ (Schichtuebergabe), Qualitaetssichernd (Prozessqualitaet messbar).\n\nSpektrum: Frau M. (Sturzprotokoll), Nguyen (Stoma-Doku), Kovac (ambulant, Schnittstellenkommunikation).\n\nFaustregel: **Was nicht dokumentiert ist, existiert nicht.**",
+            "Konseqünzen: 1) Nächste Schicht nicht informiert (12-24h Verzögerung). 2) Kein rechtlicher Nachweis (§ 630f BGB). 3) Qualitätsereignis nicht nachvollziehbar (Donabedian).\n\n3 Funktionen: Rechtlich (Beweislastumkehr), Kommunikativ (Schichtübergabe), Qualitätssichernd (Prozessqualität messbar).\n\nSpektrum: Frau M. (Sturzprotokoll), Nguyen (Stoma-Doku), Kovac (ambulant, Schnittstellenkommunikation).\n\nFaustregel: **Was nicht dokumentiert ist, existiert nicht.**",
         },
       },
     },
@@ -376,9 +376,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
       themenSekundaer: ["dekubitus-prophylaxe"],
       transition: "Entlassung geplant. Erstelle den Plan.",
       contentC1: {
-        title: "Entlassungsmanagement und Pflegeueberleitung",
+        title: "Entlassungsmanagement und Pflegeüberleitung",
         body: "",
-        glossarBegriffe: ["Entlassungsmanagement", "Pflegeueberleitung", "Hilfsmittelversorgung"],
+        glossarBegriffe: ["Entlassungsmanagement", "Pflegeüberleitung", "Hilfsmittelversorgung"],
       },
       contentB1: {
         title: "Was muss vor der Entlassung geregelt sein?",
@@ -388,15 +388,15 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
       inlineWissen: {
         bausteinRef: "pflegeprozess-entlassung",
         storyAufhaenger: "Frau Yilmaz geht in 4 Tagen nach Hause. Wer macht den Verbandwechsel? Wer lagert um?",
-        storyAufhaengerB1: "Frau Yilmaz geht bald nach Hause. Wer kuemmert sich dann?",
-        kerntext: "**Entlassungsmanagement** (DNQP 2019) = Systematische Planung der Entlassung ab Tag 1.\n\n**Pflegeueberleitung** = Informationsweitergabe an ambulante Pflege: Pflegebedarf, Wundstatus, Medikamente, Hilfsmittel.\n\n**Hilfsmittelversorgung** = Organisation von Hilfsmitteln: Rollator, erhoehter Toilettensitz, Badewannensitz, Antirutschmatten.",
-        kerntextB1: "**Entlassungsmanagement** = Alles planen bevor der Patient nach Hause geht.\n**Pflegeueberleitung** = Informationen an ambulante Pflege geben.\n**Hilfsmittelversorgung** = Hilfsmittel organisieren.",
-        faustregel: "Entlassungsmanagement = ab Tag 1 planen. Pflegeueberleitung = Info an ambulante Pflege. Hilfsmittel rechtzeitig.",
-        faustregelB1: "Entlassung frueh planen. Info weitergeben. Hilfsmittel bestellen.",
+        storyAufhaengerB1: "Frau Yilmaz geht bald nach Hause. Wer kümmert sich dann?",
+        kerntext: "**Entlassungsmanagement** (DNQP 2019) = Systematische Planung der Entlassung ab Tag 1.\n\n**Pflegeüberleitung** = Informationsweitergabe an ambulante Pflege: Pflegebedarf, Wundstatus, Medikamente, Hilfsmittel.\n\n**Hilfsmittelversorgung** = Organisation von Hilfsmitteln: Rollator, erhöhter Toilettensitz, Badewannensitz, Antirutschmatten.",
+        kerntextB1: "**Entlassungsmanagement** = Alles planen bevor der Patient nach Hause geht.\n**Pflegeüberleitung** = Informationen an ambulante Pflege geben.\n**Hilfsmittelversorgung** = Hilfsmittel organisieren.",
+        faustregel: "Entlassungsmanagement = ab Tag 1 planen. Pflegeüberleitung = Info an ambulante Pflege. Hilfsmittel rechtzeitig.",
+        faustregelB1: "Entlassung früh planen. Info weitergeben. Hilfsmittel bestellen.",
         spektrum: [],
         karteikarte: {
           vorderseite: "Was muss vor Frau Yilmaz Entlassung geregelt sein?",
-          rueckseite: "Entlassungsmanagement: 1) Pflegeueberleitung, 2) Hilfsmittel, 3) Wundmaterial, 4) Sevim einweisen, 5) Hausarzt-Termin.",
+          rueckseite: "Entlassungsmanagement: 1) Pflegeüberleitung, 2) Hilfsmittel, 3) Wundmaterial, 4) Sevim einweisen, 5) Hausarzt-Termin.",
         },
       },
     },
@@ -469,7 +469,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
                   text: "Frau Yilmaz kann keine Treppen steigen",
                   isCorrect: false,
                   explanation:
-                    "Sie wohnt im Erdgeschoss — keine Treppen nötig. Treppensteigen ist daher kein aktuelles Entlassungsproblem.",
+                    "Sie wohnt im Erdgeschoss — keine Treppen nötig. Treppensteigen ist daher kein aktülles Entlassungsproblem.",
                 },
               ],
             },
@@ -591,7 +591,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
               time: "Tag 7-21",
               title: "Proliferationsphase ← Frau Yilmaz ist hier",
               description:
-                "Granulationsgewebe wird aufgebaut (rosa-rot, körnig). Neue Blutgefäße wachsen ein (Angiogenese). Wunde wird kleiner. Dies ist der aktuelle Status bei Frau Yilmaz (Tag 17).",
+                "Granulationsgewebe wird aufgebaut (rosa-rot, körnig). Neue Blutgefäße wachsen ein (Angiogenese). Wunde wird kleiner. Dies ist der aktülle Status bei Frau Yilmaz (Tag 17).",
               descriptionB1:
                 "Heilungsgewebe wächst. Die Wunde wird kleiner und rosa. Das ist die Phase, in der Frau Yilmaz jetzt ist.",
               highlight: true,
@@ -613,7 +613,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
 
     // Inline-Wissen: Entzuendungszeichen \u2014 Rubor, Calor, Dolor, Tumor, Functio laesa
     {
-      stepId: "ce02-yilmaz-s2-eval-04b-entzuendungszeichen",
+      stepId: "ce02-yilmaz-s2-eval-04b-entzündungszeichen",
       phase: 5,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -621,33 +621,33 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
       quellen: ["Celsus/Galen", "NPUAP/EPUAP/PPPIA 2019"],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-yilmaz-s2-eval-04b-entzuendungszeichen",
+      lernziel: "ce02-yilmaz-s2-eval-04b-entzündungszeichen",
       tag: "krankheitslehre",
       themaPrimaer: "dekubitus-prophylaxe",
       themenSekundaer: ["haut"],
-      transition: "Entzuendungszeichen im Kopf. Was wenn die Wunde schlechter aussieht?",
+      transition: "Entzündungszeichen im Kopf. Was wenn die Wunde schlechter aussieht?",
       contentC1: {
-        title: "Entzuendungszeichen \u2014 Rubor, Calor, Dolor, Tumor, Functio laesa",
+        title: "Entzündungszeichen \u2014 Rubor, Calor, Dolor, Tumor, Functio läsa",
         body: "",
-        glossarBegriffe: ["Rubor", "Calor", "Dolor", "Tumor", "Functio laesa", "Wundinfektion"],
+        glossarBegriffe: ["Rubor", "Calor", "Dolor", "Tumor", "Functio läsa", "Wundinfektion"],
       },
       contentB1: {
-        title: "5 Zeichen einer Entzuendung",
+        title: "5 Zeichen einer Entzündung",
         body: "",
         glossarBegriffe: ["Wundinfektion"],
       },
       inlineWissen: {
-        bausteinRef: "dekubitus-prophylaxe-entzuendung",
-        storyAufhaenger: "Im Alternativszenario sieht die Wunde schlechter aus. Die 5 Kardinalzeichen der Entzuendung helfen beim Erkennen.",
-        storyAufhaengerB1: "Woran erkennst du eine entzuendete Wunde?",
-        kerntext: "**5 Kardinalzeichen** (Celsus/Galen):\n\u2022 **Rubor** = Roetung\n\u2022 **Calor** = Ueberwaermung\n\u2022 **Dolor** = Schmerz (Cave Neuropathie!)\n\u2022 **Tumor** = Schwellung\n\u2022 **Functio laesa** = Funktionseinschraenkung\n\n**Wundinfektion** = Keime in der Wunde. Zeichen: \u2265 2 Kardinalzeichen + eitriges Exsudat. Sofort Arzt informieren.",
+        bausteinRef: "dekubitus-prophylaxe-entzündung",
+        storyAufhaenger: "Im Alternativszenario sieht die Wunde schlechter aus. Die 5 Kardinalzeichen der Entzündung helfen beim Erkennen.",
+        storyAufhaengerB1: "Woran erkennst du eine entzündete Wunde?",
+        kerntext: "**5 Kardinalzeichen** (Celsus/Galen):\n\u2022 **Rubor** = Roetung\n\u2022 **Calor** = Überwärmung\n\u2022 **Dolor** = Schmerz (Cave Neuropathie!)\n\u2022 **Tumor** = Schwellung\n\u2022 **Functio läsa** = Funktionseinschränkung\n\n**Wundinfektion** = Keime in der Wunde. Zeichen: \u2265 2 Kardinalzeichen + eitriges Exsudat. Sofort Arzt informieren.",
         kerntextB1: "**5 Zeichen:** Rot, warm, Schmerz (Vorsicht: Nerven!), geschwollen, funktioniert nicht richtig.\n\n**Wundinfektion** = \u2265 2 Zeichen + Eiter. Sofort Arzt rufen.",
-        faustregel: "5 Kardinalzeichen: Rubor, Calor, Dolor, Tumor, Functio laesa. \u2265 2 + Eiter = Infektion \u2192 Arzt.",
+        faustregel: "5 Kardinalzeichen: Rubor, Calor, Dolor, Tumor, Functio läsa. \u2265 2 + Eiter = Infektion \u2192 Arzt.",
         faustregelB1: "5 Zeichen: rot, warm, Schmerz, geschwollen, funktioniert nicht. + Eiter = Arzt rufen.",
         spektrum: [],
         karteikarte: {
-          vorderseite: "Nenne die 5 Kardinalzeichen und erklaere Wundinfektion.",
-          rueckseite: "Rubor, Calor, Dolor, Tumor, Functio laesa. Wundinfektion: \u2265 2 Zeichen + Eiter. Cave Neuropathie: Dolor kann fehlen.",
+          vorderseite: "Nenne die 5 Kardinalzeichen und erkläre Wundinfektion.",
+          rueckseite: "Rubor, Calor, Dolor, Tumor, Functio läsa. Wundinfektion: \u2265 2 Zeichen + Eiter. Cave Neuropathie: Dolor kann fehlen.",
         },
       },
     },
@@ -672,7 +672,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
           "Calor",
           "Dolor",
           "Tumor",
-          "Functio laesa",
+          "Functio läsa",
           "Wundinfektion",
         ],
       },
@@ -702,7 +702,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
             isCorrect: true,
           },
           {
-            text: "Wunde reinigen, neuen Verband drauf — und beim nächsten Schichtwechsel übergeben.",
+            text: "Wunde reinigen, neün Verband drauf — und beim nächsten Schichtwechsel übergeben.",
             feedback:
               "Nicht ausreichend. Verbandwechsel ist korrekt, aber ohne Arzt-Ruf und ohne Dokumentation fehlt die Eskalation. Infektionsverdacht (Rubor + Calor + purulentes Exsudat) erfordert sofortige Meldung — nicht nur am Schichtwechsel. Die nächste Schicht beginnt ggf. 8 Stunden später.",
             feedbackB1:

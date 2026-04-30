@@ -5,8 +5,8 @@
 import type { SituationsPhase } from "../../../_types";
 
 export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
-  phaseId: "ls-schmidt-adipositas-durchfuehren",
-  phase: "durchfuehren",
+  phaseId: "ls-schmidt-adipositas-durchführen",
+  phase: "durchführen",
   titel: "Maßnahmen durchführen",
   titelB1: "Pflege durchführen",
   kontext:
@@ -44,7 +44,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
           "Bringe die Schritte der Hautfalten-Pflege in die richtige Reihenfolge.",
         sortItems: [
           "Handschuhe anziehen, Falte vorsichtig auseinander halten",
-          "Inspektion: Rötung? Feuchtigkeit? Geruch? — genau hinschauen",
+          "Inspektion: Rötung? Feuchtigkeit? Geruch? — genau hinschaün",
           "Trocken TUPFEN mit weichem Tuch — nicht reiben (Reibung erhöht Verletzungsgefahr bei sensibilisierter Haut)",
           "Atmungsaktives textiles Faltenvlies in die Falte einlegen (AWMF S2k Intertrigo 2022) — keine okklusiven Pasten IN die Falte; Hautschutz-Creme nur auf intakter Haut außerhalb der Falte",
           "Befund sofort notieren (was siehst du, was riechst du, was veränderst du)",
@@ -71,8 +71,8 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-schmidt-dur-protein",
       tag: "krankheitslehre",
-      themaPrimaer: "ernaehrungsgrundlagen",
-      themenSekundaer: ["ernaehrungsassessment"],
+      themaPrimaer: "ernährungsgrundlagen",
+      themenSekundaer: ["ernährungsassessment"],
       transition: "Protein fehlt. Jetzt die Frage: Wie erklärst du Frau Schmidt, was Kohlenhydrate, Fette und Proteine eigentlich sind?",
       contentC1: {
         title: "Protein — warum es bei Frau Schmidt fehlt",
@@ -85,7 +85,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
         glossarBegriffe: ["Protein", "Albumin"],
       },
       inlineWissen: {
-        bausteinRef: "ernaehrungsgrundlagen-proteine",
+        bausteinRef: "ernährungsgrundlagen-proteine",
         storyAufhaenger:
           "Frau Schmidts Albumin liegt bei 31 g/l — zu niedrig. Dabei isst sie doch genug, sagt sie selbst. Das Problem: Sie isst Kalorien, aber zu wenig Protein. Bevor du gleich mit ihr über Ernährung sprichst, musst du verstehen: Was macht Protein im Körper — und wie viel braucht Frau Schmidt?",
         storyAufhaengerB1:
@@ -108,14 +108,14 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
           },
           {
             patientName: "Frau Yilmaz",
-            situationsId: "ls-yilmaz-hueft-tep",
+            situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "Post-OP Katabolismus",
             kurzbeschreibung:
               "Nach Hüft-TEP steigt der Proteinbedarf auf 1,5 g/kg/Tag (ESPEN 2017). Muskelabbau beginnt innerhalb von 48 Stunden post-OP. Protein-Supplementierung ab Tag 1.",
           },
           {
             patientName: "Emilia (Säugling)",
-            situationsId: "ls-emilia-saeugling",
+            situationsId: "ls-emilia-säugling",
             hauptfaktor: "Wachstum = höchster Proteinbedarf",
             kurzbeschreibung:
               "Säuglinge brauchen proportional am meisten Protein (1,5-2,0 g/kg/Tag). Muttermilch liefert genau die richtige Zusammensetzung. Bei Bronchiolitis: Infektions-bedingter Mehrbedarf.",
@@ -132,7 +132,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
 
     // Step 4.2 — Text/analogy: Makronährstoffe erklärt
     {
-      stepId: "ce02-schmidt-dur-02-makronährstoffe-erklaert",
+      stepId: "ce02-schmidt-dur-02-makronährstoffe-erklärt",
       phase: 4,
       stepType: "text",
       bloomLevel: 3,
@@ -148,21 +148,21 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
       displayFormat: "analogy",
       contentC1: {
         title: "Makronährstoffe — Vorbereitung auf das Gespräch",
-        body: "Analogie: Kohlenhydrate = Kurzzeit-Kraftstoff (schnell verfügbar, schnell verbraucht). Fette = Langzeit-Reserve (langfristige Energie, Wärmeschutz). Proteine = Baumaterial (Wundheilung, Immunabwehr, Muskeln, Albumin).\n\nWarum ist Protein für Frau Schmidt so wichtig? Albumin-Mangel (31 g/l) bedeutet: Der Körper kann keine Wunden heilen, keine Immunabwehr aufbauen und keine Ödeme verhindern.\n\n**Protein-Bedarf bei Adipositas mit Mangelernährung — Berechnung:** Wichtig: Bei Adipositas wird das **Idealgewicht** als Berechnungsbasis genommen (nicht das Istgewicht — sonst Überschätzung), nach BMI 22 oder Broca. Bei Frau Schmidt (1,60 m): Idealgewicht ca. 56 kg.\n- Erhaltungsbedarf (gesund): 0,8 g × 56 kg = ca. 45 g/Tag (DGE D-A-CH 2024)\n- Bei nachgewiesener Mangelernährung: 1,2 g × 56 kg = **ca. 67 g/Tag** (ESPEN 2017 Guidelines)\n\nFertigpizza (Beispiel Frau Schmidt): ca. 6-8 g Protein pro 100 g (eine ganze Pizza a 300 g: ca. 18-24 g, aber bei ~700-900 kcal). Hüttenkäse 200 g: ca. 26 g Protein bei nur ~200 kcal. Der Unterschied liegt nicht im Verzicht, sondern in der Auswahl.",
+        body: "Analogie: Kohlenhydrate = Kurzzeit-Kraftstoff (schnell verfügbar, schnell verbraucht). Fette = Langzeit-Reserve (langfristige Energie, Wärmeschutz). Proteine = Baumaterial (Wundheilung, Immunabwehr, Muskeln, Albumin).\n\nWarum ist Protein für Frau Schmidt so wichtig? Albumin-Mangel (31 g/l) bedeutet: Der Körper kann keine Wunden heilen, keine Immunabwehr aufbaün und keine Ödeme verhindern.\n\n**Protein-Bedarf bei Adipositas mit Mangelernährung — Berechnung:** Wichtig: Bei Adipositas wird das **Idealgewicht** als Berechnungsbasis genommen (nicht das Istgewicht — sonst Überschätzung), nach BMI 22 oder Broca. Bei Frau Schmidt (1,60 m): Idealgewicht ca. 56 kg.\n- Erhaltungsbedarf (gesund): 0,8 g × 56 kg = ca. 45 g/Tag (DGE D-A-CH 2024)\n- Bei nachgewiesener Mangelernährung: 1,2 g × 56 kg = **ca. 67 g/Tag** (ESPEN 2017 Guidelines)\n\nFertigpizza (Beispiel Frau Schmidt): ca. 6-8 g Protein pro 100 g (eine ganze Pizza a 300 g: ca. 18-24 g, aber bei ~700-900 kcal). Hüttenkäse 200 g: ca. 26 g Protein bei nur ~200 kcal. Der Unterschied liegt nicht im Verzicht, sondern in der Auswahl.",
         fallbezug:
-          "Frau Schmidt isst aktuell proteinarme Fertigprodukte. Die Analogie macht verständlich warum das trotz ausreichender Kalorien problematisch ist. Berechnungsbasis: Idealgewicht 56 kg (BMI 22 bei 1,60 m), nicht Istgewicht 98 kg.",
+          "Frau Schmidt isst aktüll proteinarme Fertigprodukte. Die Analogie macht verständlich warum das trotz ausreichender Kalorien problematisch ist. Berechnungsbasis: Idealgewicht 56 kg (BMI 22 bei 1,60 m), nicht Istgewicht 98 kg.",
         glossarBegriffe: ["Protein", "Albumin", "Makronährstoffe", "Idealgewicht"],
       },
       contentB1: {
         title: "Makro-Nährstoffe einfach erklärt",
-        body: "Analogie: Was sind Makro-Nährstoffe?\n- **Kohlenhydrate** (= Zucker und Stärke) = schnelle Energie. Zum Beispiel: Brot, Nudeln, Reis.\n- **Fette** = lang andauernde Energie. Zum Beispiel: Öl, Käse, Nüsse.\n- **Protein** (= Eiweiß) = Baumaterial für den Körper. Zum Beispiel: Fleisch, Eier, Hülsenfrüchte.\n\nFrau Schmidt braucht mehr Protein. Warum? Protein hilft: Wunden heilen, Immunsystem stärken, Ödeme (= Wasser-Einlagerungen) verhindern. Eine Fertig-Pizza hat viel Kohlenhydrate und Fett — aber wenig Protein.\n\n**Wie viel Protein braucht Frau Schmidt?** Wichtig: Bei Adipositas rechnet man mit dem **Idealgewicht**, nicht mit dem aktuellen Gewicht. Frau Schmidts Idealgewicht ist ca. 56 kg (bei 1,60 m).\n- Gesund: 0,8 g × 56 kg = ca. 45 g/Tag\n- Bei Mangel-Ernährung wie bei Frau Schmidt: 1,2 g × 56 kg = ca. **67 g/Tag**",
+        body: "Analogie: Was sind Makro-Nährstoffe?\n- **Kohlenhydrate** (= Zucker und Stärke) = schnelle Energie. Zum Beispiel: Brot, Nudeln, Reis.\n- **Fette** = lang andaürnde Energie. Zum Beispiel: Öl, Käse, Nüsse.\n- **Protein** (= Eiweiß) = Baumaterial für den Körper. Zum Beispiel: Fleisch, Eier, Hülsenfrüchte.\n\nFrau Schmidt braucht mehr Protein. Warum? Protein hilft: Wunden heilen, Immunsystem stärken, Ödeme (= Wasser-Einlagerungen) verhindern. Eine Fertig-Pizza hat viel Kohlenhydrate und Fett — aber wenig Protein.\n\n**Wie viel Protein braucht Frau Schmidt?** Wichtig: Bei Adipositas rechnet man mit dem **Idealgewicht**, nicht mit dem aktüllen Gewicht. Frau Schmidts Idealgewicht ist ca. 56 kg (bei 1,60 m).\n- Gesund: 0,8 g × 56 kg = ca. 45 g/Tag\n- Bei Mangel-Ernährung wie bei Frau Schmidt: 1,2 g × 56 kg = ca. **67 g/Tag**",
         glossarBegriffe: ["Protein", "Albumin", "Idealgewicht"],
       },
     },
 
     // Step 4.2b — Mini-Übergang zwischen 4.3 und 4.4 (F-12 Fix)
     {
-      stepId: "ce02-schmidt-dur-02b-bruecke-kochen",
+      stepId: "ce02-schmidt-dur-02b-brücke-kochen",
       phase: 4,
       stepType: "text",
       bloomLevel: 3,
@@ -170,7 +170,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
       quellen: ["DNQP (2017): Expertenstandard Ernährungsmanagement"],
       track: "basis",
       modus: "story",
-      lernziel: "ce02-schmidt-dur-bruecke",
+      lernziel: "ce02-schmidt-dur-brücke",
       tag: "pflege",
       displayFormat: "scenario",
       contentC1: {
@@ -189,7 +189,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
 
     // Step 4.3 — Branching (GROSS): Ernährungsgespräch
     {
-      stepId: "ce02-schmidt-dur-03-ernaehrungsgespraech-hauptbranching",
+      stepId: "ce02-schmidt-dur-03-ernährungsgespräch-hauptbranching",
       phase: 4,
       stepType: "branching",
       bloomLevel: 5,
@@ -200,7 +200,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "praxis-sim",
-      lernziel: "ce02-schmidt-dur-ernaehrungsgespraech",
+      lernziel: "ce02-schmidt-dur-ernährungsgespräch",
       tag: "pflege",
       contentC1: {
         title: "Ernährungsgespräch — Hauptbranching",
@@ -221,21 +221,21 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
             feedback:
               "Verbotslisten aktivieren Abwehr. Frau Schmidt hat jahrelange Erfahrung mit gescheiterten Diäten — das Wort \"Verbote\" löst reflexartigen Rückzug aus. Sie schaltet innerlich ab. Ernährungsumstellung braucht Biographie-Verständnis, nicht Regeln. Motivierende Gesprächsführung: Fragen vor Antworten. (Miller & Rollnick, 2012)",
             feedbackB1:
-              "Verbots-Listen helfen nicht. Frau Schmidt hat schon viele Diäten versucht — und immer versagt. Sie hört innerlich auf zu zuhören. Versuche es nochmal: Frage zuerst — erkläre danach.",
+              "Verbots-Listen helfen nicht. Frau Schmidt hat schon viele Diäten versucht — und immer versagt. Sie hört innerlich auf zu zuhören. Versuche es nochmal: Frage zürst — erkläre danach.",
             isCorrect: false,
           },
           {
             text: "\"Was essen Sie zuhause so — erzählen Sie mir mal von einem normalen Tag.\"",
             feedback:
-              "Richtig. Biographie zuerst — dann Ernährungsinformation. Du öffnest das Gespräch, statt es zu füllen. Frau Schmidt erzählt: Fertigessen, Alleine-Essen, Kochen hat keine Freude mehr nach der Scheidung. Das ist die Basis für jede sinnvolle Empfehlung. (Motivierende Gesprächsführung: Miller & Rollnick, 2012)",
+              "Richtig. Biographie zürst — dann Ernährungsinformation. Du öffnest das Gespräch, statt es zu füllen. Frau Schmidt erzählt: Fertigessen, Alleine-Essen, Kochen hat keine Freude mehr nach der Scheidung. Das ist die Basis für jede sinnvolle Empfehlung. (Motivierende Gesprächsführung: Miller & Rollnick, 2012)",
             feedbackB1:
-              "Richtig! Du fragst zuerst. Frau Schmidt erzählt von Fertig-Essen und davon, dass Kochen keine Freude mehr macht. Das ist wichtig! Jetzt verstehst du warum — und kannst helfen.",
+              "Richtig! Du fragst zürst. Frau Schmidt erzählt von Fertig-Essen und davon, dass Kochen keine Freude mehr macht. Das ist wichtig! Jetzt verstehst du warum — und kannst helfen.",
             isCorrect: true,
           },
           {
             text: "\"Das überlasse ich lieber der Ernährungsberaterin am Nachmittag. Ich sage ihr dann was Sie gesagt haben.\"",
             feedback:
-              "Pflege ist Teil des Teams, nicht Durchlaufstation. Die erste Beziehung zum Thema entsteht jetzt — nicht nachmittags. Wenn du dich entziehst, signalisierst du: Das Thema ist nicht meine Aufgabe. Das beschädigt Vertrauen und die Beraterin startet nachmittags ohne Grundlage.",
+              "Pflege ist Teil des Teams, nicht Durchlaufstation. Die erste Beziehung zum Thema entsteht jetzt — nicht nachmittags. Wenn du dich entziehst, signalisierst du: Das Thema ist nicht meine Aufgabe. Das beschädigt Vertraün und die Beraterin startet nachmittags ohne Grundlage.",
             feedbackB1:
               "Nein! Die erste Beziehung zum Thema entsteht JETZT. Nicht am Nachmittag. Pflege ist nicht nur Weiterleiterin — du bist Teil des Teams.",
             isCorrect: false,
@@ -319,7 +319,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
     // Ernährungs-MC (Step 4.5) beantwortet, braucht er das Konzept des glykämischen Index:
     // Warum Vollkornbrot besser ist als Weißbrot — für Frau Schmidts Blutzucker.
     {
-      stepId: "ce02-schmidt-dur-04b-glykaemischer-index",
+      stepId: "ce02-schmidt-dur-04b-glykämischer-index",
       phase: 4,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -331,10 +331,10 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-schmidt-dur-glykaemischer-index",
+      lernziel: "ce02-schmidt-dur-glykämischer-index",
       tag: "krankheitslehre",
-      themaPrimaer: "ernaehrungsgrundlagen",
-      themenSekundaer: ["ernaehrungsassessment"],
+      themaPrimaer: "ernährungsgrundlagen",
+      themenSekundaer: ["ernährungsassessment"],
       transition: "Nicht alle Kohlenhydrate sind gleich. Das wirst du gleich in der nächsten Frage brauchen.",
       contentC1: {
         title: "Glykämischer Index — warum Vollkorn besser ist",
@@ -347,7 +347,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
         glossarBegriffe: ["Glykämischer Index"],
       },
       inlineWissen: {
-        bausteinRef: "ernaehrungsgrundlagen-kohlenhydrate",
+        bausteinRef: "ernährungsgrundlagen-kohlenhydrate",
         storyAufhaenger:
           "Frau Schmidt hat erzählt: Zum Frühstück Toastbrot mit Marmelade, mittags oft Nudeln, abends Brot mit Wurst. Alles Kohlenhydrate. Aber macht es einen Unterschied, WELCHE Kohlenhydrate? Für ihren Blutzucker: ja, einen enormen.",
         storyAufhaengerB1:
@@ -373,11 +373,11 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
             situationsId: "ls-kovac-ambulant",
             hauptfaktor: "COPD + hoher Energiebedarf",
             kurzbeschreibung:
-              "Bei COPD ist der Energiebedarf erhöht (Atemarbeit!). Aber: zu viele KH → mehr CO2-Produktion → Atemnot verschärft. Fett als Energiequelle bevorzugt (weniger CO2 pro kcal).",
+              "Bei COPD ist der Energiebedarf erhöht (Atemarbeit!). Aber: zu viele KH → mehr CO2-Produktion → Atemnot verschärft. Fett als Energieqülle bevorzugt (weniger CO2 pro kcal).",
           },
           {
             patientName: "Emilia (Säugling)",
-            situationsId: "ls-emilia-saeugling",
+            situationsId: "ls-emilia-säugling",
             hauptfaktor: "Laktose als Haupt-KH",
             kurzbeschreibung:
               "Beim Säugling ist Laktose (Milchzucker) die Haupt-KH-Quelle — physiologisch perfekt. GI-Konzept ist erst ab Beikost-Alter relevant.",
@@ -394,7 +394,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
 
     // Step 4.5 — MC: Diabetes-Ernährung
     {
-      stepId: "ce02-schmidt-dur-05-diabetes-ernaehrung",
+      stepId: "ce02-schmidt-dur-05-diabetes-ernährung",
       phase: 4,
       stepType: "mc",
       bloomLevel: 4,
@@ -405,7 +405,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "challenge",
-      lernziel: "ce02-schmidt-dur-diabetes-ernaehrung",
+      lernziel: "ce02-schmidt-dur-diabetes-ernährung",
       tag: "krankheitslehre",
       contentC1: {
         title: "Ernährungsempfehlung bei Diabetes Typ 2",
@@ -531,11 +531,11 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
       },
       question: {
         fragetext:
-          "BZ postprandial: 254 mg/dl. Zielwert: < 180 mg/dl. Wie viel mg/dl liegt der aktuelle Wert über dem Zielbereich?",
+          "BZ postprandial: 254 mg/dl. Zielwert: < 180 mg/dl. Wie viel mg/dl liegt der aktülle Wert über dem Zielbereich?",
         calculation: {
           instruction:
             "Berechne: 254 mg/dl − 180 mg/dl = ? mg/dl Abweichung. Informierst du den Arzt?",
-          formula: "Aktueller BZ − Zielwert = Abweichung",
+          formula: "Aktüller BZ − Zielwert = Abweichung",
           correctValue: 74,
           unit: "mg/dl",
           tolerance: 1,
@@ -589,7 +589,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
             feedback:
               "Richtig. Ressourcenorientierte Pflege (§ 2 PflBG) UND Sturzprophylaxe (DNQP Sturz 2022) zusammen. Frau Schmidt hat mehrere Sturz-Risiken: Adipositas Grad II, frisch eingestellter Diabetes (Hypoglykämie-Risiko unter Metformin), Belastungsinkontinenz, Atemnot bei Anstrengung — bei Aufnahme zudem Schwäche/Schwindel. Selbstpflege fördern: ja. Aber: Klingel in Reichweite, Pflegekraft in der Nähe, ggf. kurzer Vital-/Schellong-Check vor dem Aufstehen ans Bett-Ende. Du beobachtest diskret und greifst nur ein wenn nötig. So bleibt Würde gewahrt UND Sicherheit gegeben.",
             feedbackB1:
-              "Richtig! Du sagst: \"Ich helfe nur wenn Sie möchten.\" Wichtig: Klingel in Reichweite legen — du bleibst in der Nähe. Frau Schmidt hat Sturz-Risiken (Adipositas, neuer Diabetes mit möglicher Unterzuckerung, Inkontinenz, Atemnot). Pflege die stärkt UND sichert.",
+              "Richtig! Du sagst: \"Ich helfe nur wenn Sie möchten.\" Wichtig: Klingel in Reichweite legen — du bleibst in der Nähe. Frau Schmidt hat Sturz-Risiken (Adipositas, neür Diabetes mit möglicher Unterzuckerung, Inkontinenz, Atemnot). Pflege die stärkt UND sichert.",
             isCorrect: true,
           },
           {

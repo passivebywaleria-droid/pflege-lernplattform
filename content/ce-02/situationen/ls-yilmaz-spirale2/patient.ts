@@ -29,7 +29,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PATIENT: PatientBeschreibung = {
     "Fürsorgliche Frau, selbstständig sozialisiert, empfindet Gepflegtwerden als Scham. Lehnt Hilfe verbal ab, obwohl sie sie braucht. Deutsch mit türkischem Akzent, einfache bis mittlere Satzstrukturen. Fachbegriffe wie 'Dekubitus' oder 'Erosion' muss man erklären. Schmerz schildert sie eher durch Gestik als durch Worte — neuropathisch bedingt. Reagiert auf Respekt und Geduld, öffnet sich langsam.",
   zitate: [
     "Was ist das? Da tut es nicht weh — ich hab nichts gemerkt. Ist das schlimm?",
-    "Die Schwestern haben mich immer auf die Seite gelegt. Ich hab das manchmal nicht gewollt — das war unbequem. Aber sie haben es trotzdem gemacht.",
+    "Die Schwestern haben mich immer auf die Seite gelegt. Ich hab das manchmal nicht gewollt — das war unbeqüm. Aber sie haben es trotzdem gemacht.",
     "So liegt man also. Kissen da, Kissen da. Ist das nicht umständlich?",
     "Sie schreiben alles auf. Ist das für mich oder für die Akte?",
     "Ich will nach Hause. Mustafa kann nicht gut kochen. Er braucht mich.",

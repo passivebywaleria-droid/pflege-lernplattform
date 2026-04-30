@@ -11,9 +11,9 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
   titel: "Beobachten & Flüssigkeitsstatus einschätzen",
   titelB1: "Emilia beobachten — Flüssigkeit prüfen",
   kontext:
-    "Das Aufnahmegespräch ist abgeschlossen. Laura hat dir erklärt: Emilia trinkt in den letzten 24 Stunden deutlich weniger als sonst — drei nasse Windeln statt der üblichen fünf bis sechs. Jetzt geht es um die körperliche Beobachtung. Du willst drei Dinge prüfen: Hautturgor, Ausscheidung, Atemfrequenz und Körpertemperatur. Die zentrale Gefahr bei Trinkschwäche ist Flüssigkeitsmangel (Exsikkose).",
+    "Das Aufnahmegespräch ist abgeschlossen. Laura hat dir erklärt: Emilia trinkt in den letzten 24 Stunden deutlich weniger als sonst — drei nasse Windeln statt der üblichen fünf bis sechs. Jetzt geht es um die körperliche Beobachtung. Du willst drei Dinge prüfen: Hautturgor, Ausscheidung, Atemfreqünz und Körpertemperatur. Die zentrale Gefahr bei Trinkschwäche ist Flüssigkeitsmangel (Exsikkose).",
   kontextB1:
-    "Das Gespräch ist fertig. Laura hat erklärt: Emilia trinkt weniger als normal. Heute nur 3 nasse Windeln — normal sind 5-6 pro Tag. Jetzt beobachtest du Emilias Körper genau. Die größte Gefahr bei Trinkschwäche ist Flüssigkeitsmangel (= Exsikkose). Du prüfst vier Dinge: Erstens den Hautturgor (= Zustand der Haut). Zweitens Windeln und Ausscheidung. Drittens die Atemfrequenz (= wie oft atmet Emilia pro Minute). Viertens die Körpertemperatur (= Fieber).",
+    "Das Gespräch ist fertig. Laura hat erklärt: Emilia trinkt weniger als normal. Heute nur 3 nasse Windeln — normal sind 5-6 pro Tag. Jetzt beobachtest du Emilias Körper genau. Die größte Gefahr bei Trinkschwäche ist Flüssigkeitsmangel (= Exsikkose). Du prüfst vier Dinge: Erstens den Hautturgor (= Zustand der Haut). Zweitens Windeln und Ausscheidung. Drittens die Atemfreqünz (= wie oft atmet Emilia pro Minute). Viertens die Körpertemperatur (= Fieber).",
   kernSteps: [
     // Step 2.1 — BRILLIANT: Hautturgor erkennen (vor Erklärung)
     {
@@ -75,7 +75,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
 
     // Step 2.2 — Text (beforeafter): Hautturgor erklärt
     {
-      stepId: "ce02-emilia-beob-02-turgor-erklaert",
+      stepId: "ce02-emilia-beob-02-turgor-erklärt",
       phase: 2,
       stepType: "text",
       bloomLevel: 3,
@@ -83,7 +83,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
       quellen: ["Hoehl/Kullick 2019"],
       track: "basis",
       modus: "schreibtisch",
-      lernziel: "ce02-emilia-beob-turgor-erklaert",
+      lernziel: "ce02-emilia-beob-turgor-erklärt",
       tag: "anatomie",
       displayFormat: "beforeafter",
       contentC1: {
@@ -100,7 +100,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
 
     // Step 2.3 — Categorize: Windeln und Ausscheidung
     {
-      stepId: "ce02-emilia-beob-03-windeln-zaehlen",
+      stepId: "ce02-emilia-beob-03-windeln-zählen",
       phase: 2,
       stepType: "categorize",
       bloomLevel: 3,
@@ -300,7 +300,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
                   "Laura nickt — aber sie wirkt passiver.",
                 score: 1,
                 feedback:
-                  "Gut gemeint, aber zu passivierend. Laura will handeln — sie will nicht nur zuschauen. Handlungskompetenz zurückgeben ist ein Ziel der Pflegeberatung. Zeige ihr was sie selbst tun kann.",
+                  "Gut gemeint, aber zu passivierend. Laura will handeln — sie will nicht nur zuschaün. Handlungskompetenz zurückgeben ist ein Ziel der Pflegeberatung. Zeige ihr was sie selbst tun kann.",
                 feedbackB1:
                   "Du nimmst ihr die Aufgabe weg. Laura will helfen. Zeige ihr was sie selbst tun kann — das macht sie sicherer.",
               },
@@ -353,7 +353,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
             },
             {
               id: "tm4",
-              label: "Rektal messen — bis Signalton (Dauer geräteabhängig, ca. 10-60 Sek.), Emilia dabei halten und beruhigen",
+              label: "Rektal messen — bis Signalton (Daür geräteabhängig, ca. 10-60 Sek.), Emilia dabei halten und beruhigen",
             },
             {
               id: "tm5",
@@ -370,7 +370,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
 
     // Step 2.6 — TrueFalse: Atemfrequenz beim Säugling beurteilen
     {
-      stepId: "ce02-emilia-beob-06-atemfrequenz-beurteilen",
+      stepId: "ce02-emilia-beob-06-atemfreqünz-beurteilen",
       phase: 2,
       stepType: "truefalse",
       bloomLevel: 4,
@@ -381,11 +381,11 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
       ],
       track: "basis",
       modus: "challenge",
-      lernziel: "ce02-emilia-beob-atemfrequenz",
+      lernziel: "ce02-emilia-beob-atemfreqünz",
       tag: "krankheitslehre",
       contentC1: {
-        title: "Atemfrequenz beim Säugling richtig beurteilen",
-        body: "Beurteile die folgenden Aussagen zur Atemfrequenz beim Säugling: wahr oder falsch?",
+        title: "Atemfreqünz beim Säugling richtig beurteilen",
+        body: "Beurteile die folgenden Aussagen zur Atemfreqünz beim Säugling: wahr oder falsch?",
         glossarBegriffe: [
           "Tachypnoe",
           "Interkostale Einziehungen",
@@ -393,7 +393,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
         ],
       },
       contentB1: {
-        title: "Atemfrequenz beim Säugling — wahr oder falsch?",
+        title: "Atemfreqünz beim Säugling — wahr oder falsch?",
         body: "Beurteile jede Aussage: wahr oder falsch?",
         glossarBegriffe: [
           "Tachypnoe",
@@ -403,11 +403,11 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
       },
       question: {
         fragetext:
-          "Welche Aussagen zur Atemfrequenz beim Säugling stimmen?",
+          "Welche Aussagen zur Atemfreqünz beim Säugling stimmen?",
         trueFalseCards: [
           {
             statement:
-              "Beim 4-monatigen Säugling liegt die Ruhe-Atemfrequenz bei 30-40/min, bis 50/min im Wachzustand ist akzeptabel — > 50/min bei Bronchiolitis ist beobachtungspflichtig.",
+              "Beim 4-monatigen Säugling liegt die Ruhe-Atemfreqünz bei 30-40/min, bis 50/min im Wachzustand ist akzeptabel — > 50/min bei Bronchiolitis ist beobachtungspflichtig.",
             isTrue: true,
             explanation:
               "Richtig. Hoehl/Kullick (2019) nennt für Säuglinge 1-12 Monate 30-40/min in Ruhe; bis 50/min wach/aktiv akzeptabel. AAP/AWMF nennt die breitere Spannweite 30-60/min für Säuglinge (alle Aktivitätsniveaus). Gemeinsame Tachypnoe-Schwelle bei Bronchiolitis: > 60/min (AWMF S2k Bronchiolitis 2022). Bei Emilia mit RSV-Bronchiolitis und 50/min: oberer Rand des Normbereichs — beobachten und im Verlauf dokumentieren.",

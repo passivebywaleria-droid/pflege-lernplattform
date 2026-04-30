@@ -77,7 +77,7 @@ export const CE02_SIT_NGUYEN_STOMA_EVALUIEREN: SituationsPhase = {
 
     // Step 5.2 — Calculation: Ernährungsbilanz
     {
-      stepId: "ce02-nguyen-eval-02-ernaehrung-bilanz",
+      stepId: "ce02-nguyen-eval-02-ernährung-bilanz",
       phase: 5,
       stepType: "calculation",
       bloomLevel: 4,
@@ -87,7 +87,7 @@ export const CE02_SIT_NGUYEN_STOMA_EVALUIEREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "schreibtisch",
-      lernziel: "ce02-nguyen-eval-ernaehrung-bilanz",
+      lernziel: "ce02-nguyen-eval-ernährung-bilanz",
       tag: "krankheitslehre",
       contentC1: {
         title: "Ernährungsbilanz: Wie viel Kcal hat Herr Nguyen bekommen?",
@@ -127,12 +127,12 @@ export const CE02_SIT_NGUYEN_STOMA_EVALUIEREN: SituationsPhase = {
       quellen: ["Ethik-Kodex ICN (2021)"],
       track: "basis",
       modus: "story",
-      lernziel: "ce02-nguyen-eval-koerperbild",
+      lernziel: "ce02-nguyen-eval-körperbild",
       tag: "pflege",
       displayFormat: "quote",
       contentC1: {
         title: "Ein Satz, der zählt",
-        body: "Nach dem Nachmittag — Herr Nguyen, langsam, sucht nach Worten:\n\n> **'Danke. Das... war nicht so schlimm. Wie ich dachte.'**\n\nHerr Nguyen hat nicht gesagt: 'Es ist mir jetzt egal.' Er hat gesagt: 'Nicht so schlimm wie ich dachte.' Das ist der erste Schritt. Körperbild-Akzeptanz nach Stoma-Anlage ist ein Prozess, der Wochen bis Monate dauert. Pflege setzt die Grundlage durch Würde, Transparenz und Geduld — nicht durch falschen Optimismus. Dieser Satz ist kein Endpunkt — er ist ein Anfang.",
+        body: "Nach dem Nachmittag — Herr Nguyen, langsam, sucht nach Worten:\n\n> **'Danke. Das... war nicht so schlimm. Wie ich dachte.'**\n\nHerr Nguyen hat nicht gesagt: 'Es ist mir jetzt egal.' Er hat gesagt: 'Nicht so schlimm wie ich dachte.' Das ist der erste Schritt. Körperbild-Akzeptanz nach Stoma-Anlage ist ein Prozess, der Wochen bis Monate daürt. Pflege setzt die Grundlage durch Würde, Transparenz und Geduld — nicht durch falschen Optimismus. Dieser Satz ist kein Endpunkt — er ist ein Anfang.",
         fallbezug:
           "Patientenzitat Z6. Dieser Satz ist die fachliche und menschliche Evaluation des Morgens.",
         glossarBegriffe: ["Körperbild-Akzeptanz", "Würde"],

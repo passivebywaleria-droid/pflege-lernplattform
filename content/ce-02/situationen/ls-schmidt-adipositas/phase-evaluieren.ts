@@ -116,8 +116,8 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_EVALUIEREN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-schmidt-eval-albumin-verlauf",
       tag: "krankheitslehre",
-      themaPrimaer: "ernaehrungsassessment",
-      themenSekundaer: ["ernaehrungsgrundlagen"],
+      themaPrimaer: "ernährungsassessment",
+      themenSekundaer: ["ernährungsgrundlagen"],
       transition: "BZ-Trend positiv. Albumin braucht Wochen. Jetzt: Welche Pflegeziele sind erreicht — welche nicht?",
       contentC1: {
         title: "Albumin als Verlaufsparameter — Wiederbegegnung",
@@ -130,9 +130,9 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_EVALUIEREN: SituationsPhase = {
         glossarBegriffe: ["Albumin"],
       },
       inlineWissen: {
-        bausteinRef: "ernaehrungsassessment-laborwerte",
+        bausteinRef: "ernährungsassessment-laborwerte",
         wiederbegegnung: {
-          basisBausteinId: "ernaehrungsassessment-laborwerte",
+          basisBausteinId: "ernährungsassessment-laborwerte",
           basisPatient: "Frau Schmidt",
           vertiefung:
             "In Phase 2 hast du das Albumin-Paradox kennengelernt: Frau Schmidt hat BMI 38 — aber Albumin 31 g/l. Jetzt, 5 Tage später: Albumin ist wahrscheinlich noch nicht gestiegen. Das ist KEIN Zeichen von Therapieversagen. Albumin hat eine Halbwertszeit von 17-20 Tagen (Gabay/Kushner 1999). Eine Veränderung wird frühestens nach 2-3 Wochen sichtbar. Gleichzeitig sinkt Albumin bei akuter Inflammation weiter ab (Akut-Phase-Negativ-Protein). Der BZ-Trend ist das bessere kurzfristige Maß — und der ist positiv.",
@@ -146,7 +146,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_EVALUIEREN: SituationsPhase = {
         kerntext:
           "**Albumin als Verlaufsparameter — Vorsicht bei der Interpretation** (Gabay/Kushner 1999, GLIM 2019):\n\n**Halbwertszeit:** Albumin hat eine Halbwertszeit von **17-20 Tagen**. Das heißt: Selbst wenn Frau Schmidt ab heute perfekt essen würde, steigt das Albumin frühestens nach 2-3 Wochen messbar.\n\n**Akut-Phase-Negativ-Protein:** Bei akuter Entzündung (wie Frau Schmidts entgleistem Diabetes) produziert die Leber weniger Albumin und mehr CRP/Fibrinogen. Albumin kann also in der akuten Phase sogar SINKEN, obwohl die Ernährung besser wird.\n\n**Bessere kurzfristige Marker:**\n\n• **Präalbumin (Transthyretin)** — HWZ 2-3 Tage, reagiert schneller\n\n• **BZ-Tagesprofil** — tägliche Verbesserung sichtbar\n\n• **Klinischer Eindruck** — Kraft, Appetit, Hautzustand\n\n**Für die Evaluation:**\n\nAlbumin nach 5 Tagen bewerten = zu früh. Erst nach Entlassung (ambulanter Verlauf) sinnvoll kontrollieren (z.B. nach 4 Wochen beim Hausarzt).",
         kerntextB1:
-          "**Albumin braucht Zeit.**\n\n**Warum steigt Albumin nicht sofort?**\n\n• Albumin bleibt 17-20 Tage im Blut. Neues Albumin braucht also 2-3 Wochen, bis man es sieht.\n\n• Bei Entzündung (Frau Schmidts Diabetes) macht die Leber weniger Albumin. Es kann sogar noch sinken.\n\n**Bessere Zeichen für jetzt:**\n\n• Blutzucker — wird jeden Tag besser\n\n• Wie fühlt sich Frau Schmidt? Mehr Kraft? Mehr Appetit?\n\n**Für dich heißt das:** Albumin nach 5 Tagen ist noch KEIN gutes Maß. Erst nach 3-4 Wochen beim Hausarzt kontrollieren.",
+          "**Albumin braucht Zeit.**\n\n**Warum steigt Albumin nicht sofort?**\n\n• Albumin bleibt 17-20 Tage im Blut. Neüs Albumin braucht also 2-3 Wochen, bis man es sieht.\n\n• Bei Entzündung (Frau Schmidts Diabetes) macht die Leber weniger Albumin. Es kann sogar noch sinken.\n\n**Bessere Zeichen für jetzt:**\n\n• Blutzucker — wird jeden Tag besser\n\n• Wie fühlt sich Frau Schmidt? Mehr Kraft? Mehr Appetit?\n\n**Für dich heißt das:** Albumin nach 5 Tagen ist noch KEIN gutes Maß. Erst nach 3-4 Wochen beim Hausarzt kontrollieren.",
         faustregel:
           "Albumin-HWZ = 20 Tage. Nach 5 Tagen bewerten ist zu früh. BZ-Trend und klinischer Eindruck sind die besseren kurzfristigen Marker.",
         faustregelB1:
@@ -161,7 +161,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_EVALUIEREN: SituationsPhase = {
           },
           {
             patientName: "Frau Yilmaz",
-            situationsId: "ls-yilmaz-hueft-tep",
+            situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "Post-OP Albumin-Abfall",
             kurzbeschreibung:
               "Nach OP fällt Albumin durch Inflammation + Blutverlust zusätzlich ab. Erst ab Woche 2-3 post-OP steigt es wieder. Protein-Supplementierung trotzdem ab Tag 1.",
@@ -283,19 +283,19 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_EVALUIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Reflexion — Ernährungsgespräch",
-        body: "Offene Reflexionsfrage: Was war der Unterschied zwischen Pfad A (Verbotsliste) und Pfad B (Biographie zuerst) in deinem Gespräch mit Frau Schmidt — und was nimmst du daraus für zukünftige Ernährungsgespräche mit?",
+        body: "Offene Reflexionsfrage: Was war der Unterschied zwischen Pfad A (Verbotsliste) und Pfad B (Biographie zürst) in deinem Gespräch mit Frau Schmidt — und was nimmst du daraus für zukünftige Ernährungsgespräche mit?",
         glossarBegriffe: ["Motivierende Gesprächsführung", "Autonomie"],
       },
       contentB1: {
         title: "Reflexion — was nimmst du mit?",
-        body: "Was war der Unterschied zwischen den zwei Wegen im Ernährungs-Gespräch?\n**Weg A:** Du hast eine Verbots-Liste gemacht. Frau Schmidt hat abgeschaltet.\n**Weg B:** Du hast zuerst gefragt — zugehört — dann erklärt.\nWas nimmst du mit?\nTipp: Frau Schmidt hat eine lange Geschichte mit Essen. Verbote erinnern sie an alte Misserfolge. Fragen öffnen — Verbote schließen.",
+        body: "Was war der Unterschied zwischen den zwei Wegen im Ernährungs-Gespräch?\n**Weg A:** Du hast eine Verbots-Liste gemacht. Frau Schmidt hat abgeschaltet.\n**Weg B:** Du hast zürst gefragt — zugehört — dann erklärt.\nWas nimmst du mit?\nTipp: Frau Schmidt hat eine lange Geschichte mit Essen. Verbote erinnern sie an alte Misserfolge. Fragen öffnen — Verbote schließen.",
         glossarBegriffe: [],
       },
       question: {
         fragetext:
-          "Was war der Unterschied zwischen Pfad A (Verbotsliste) und Pfad B (Biographie zuerst) — und was nimmst du mit? (2–3 Sätze)",
+          "Was war der Unterschied zwischen Pfad A (Verbotsliste) und Pfad B (Biographie zürst) — und was nimmst du mit? (2–3 Sätze)",
         musterantwort:
-          "Pfad A hat Frau Schmidts Widerstand aktiviert, weil Verbotslisten an vergangene Diät-Misserfolge erinnern und keine Beziehung zum Menschen herstellen. Pfad B hat zuerst Verstehen ermöglicht — durch Zuhören entstand Vertrauen und Frau Schmidt öffnete sich. Für zukünftige Ernährungsgespräche nehme ich mit: Biographie zuerst, Fragen vor Aussagen, keine Verbote sondern konkrete erreichbare Schritte.",
+          "Pfad A hat Frau Schmidts Widerstand aktiviert, weil Verbotslisten an vergangene Diät-Misserfolge erinnern und keine Beziehung zum Menschen herstellen. Pfad B hat zürst Verstehen ermöglicht — durch Zuhören entstand Vertraün und Frau Schmidt öffnete sich. Für zukünftige Ernährungsgespräche nehme ich mit: Biographie zürst, Fragen vor Aussagen, keine Verbote sondern konkrete erreichbare Schritte.",
         bewertungskriterien: [
           "Autonomieprinzip: Patient entscheidet selbst",
           "Motivierende Gesprächsführung: Fragen vor Aussagen",

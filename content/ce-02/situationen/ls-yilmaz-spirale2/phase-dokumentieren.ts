@@ -35,7 +35,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
       tag: "pflege",
       themaPrimaer: "pflegedokumentation",
       themenSekundaer: ["dekubitus-prophylaxe", "haut"],
-      transition: "Schema im Kopf? Dann schreib jetzt den Wundbericht fuer Frau Yilmaz.",
+      transition: "Schema im Kopf? Dann schreib jetzt den Wundbericht für Frau Yilmaz.",
       contentC1: {
         title: "Wunddokumentation — was muss rein?",
         body: "",
@@ -49,17 +49,17 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
       inlineWissen: {
         bausteinRef: "pflegedokumentation-wunddoku-schema",
         storyAufhaenger:
-          "Du sitzt am Pflegepult. Gleich schreibst du den Wundbericht fuer Frau Yilmaz. Aber Fliesstext ohne Struktur ist ein haeufiger Fehler. Welche Informationen MUESSEN in eine standardkonforme Wunddokumentation?",
+          "Du sitzt am Pflegepult. Gleich schreibst du den Wundbericht für Frau Yilmaz. Aber Fliesstext ohne Struktur ist ein häufiger Fehler. Welche Informationen MUESSEN in eine standardkonforme Wunddokumentation?",
         storyAufhaengerB1:
-          "Du sitzt am Computer. Gleich schreibst du den Wundbericht. Welche Informationen muessen drinstehen?",
+          "Du sitzt am Computer. Gleich schreibst du den Wundbericht. Welche Informationen müssen drinstehen?",
         kerntext:
-          "Eine **vollstaendige Wunddokumentation** folgt einem festen Schema. Merkhilfe: **L-G-F-E-R-A** (Lage, Groesse, Farbe, Exsudat, Rand, Aktion).\n\n• **L — Lokalisation:** Wo ist die Wunde? (Sakrum, zentral)\n\n• **G — Groesse:** Laenge x Breite in cm. Immer mit Masstab messen, nicht schaetzen. Fotodokumentation als Ergaenzung.\n\n• **F — Farbe / Wundgrund:** Rosa-granulativ (Heilung), Rötlich-feucht (Entzuendung), Gelblich (Fibrin/Belag), Schwarz (Nekrose). Prozentualer Anteil bei Mischwunden.\n\n• **E — Exsudat:** Menge (kein/minimal/maessig/viel) + Art (seroes/sanguinolent/purulent).\n\n• **R — Wundrand:** Intakt? Mazeriert? Epithelialisierend? Unterminiert?\n\n• **A — Aktion:** Was wurde gemacht? Welcher Verband? Naechster Wechsel wann?\n\n**Plus Pflichtfelder:** Datum, Uhrzeit, Handzeichen. Reaktion der Patientin. Schmerzangabe (NRS). Foto mit Einwilligung.\n\n**Bei Frau Yilmaz heute (Tag 17):** L = Sakrum, G = 1,5x2,5 cm (ruecklaeufig), F = rosa-granulativ, E = minimal/seroes, R = nicht mazeriert, A = Hydrokolloid-Verband erneuert.",
+          "Eine **vollständige Wunddokumentation** folgt einem festen Schema. Merkhilfe: **L-G-F-E-R-A** (Lage, Grösse, Farbe, Exsudat, Rand, Aktion).\n\n• **L — Lokalisation:** Wo ist die Wunde? (Sakrum, zentral)\n\n• **G — Grösse:** Länge x Breite in cm. Immer mit Masstab messen, nicht schätzen. Fotodokumentation als Ergänzung.\n\n• **F — Farbe / Wundgrund:** Rosa-granulativ (Heilung), Rötlich-feucht (Entzündung), Gelblich (Fibrin/Belag), Schwarz (Nekrose). Prozentualer Anteil bei Mischwunden.\n\n• **E — Exsudat:** Menge (kein/minimal/mässig/viel) + Art (serös/sanguinolent/purulent).\n\n• **R — Wundrand:** Intakt? Mazeriert? Epithelialisierend? Unterminiert?\n\n• **A — Aktion:** Was wurde gemacht? Welcher Verband? Nächster Wechsel wann?\n\n**Plus Pflichtfelder:** Datum, Uhrzeit, Handzeichen. Reaktion der Patientin. Schmerzangabe (NRS). Foto mit Einwilligung.\n\n**Bei Frau Yilmaz heute (Tag 17):** L = Sakrum, G = 1,5x2,5 cm (rückläufig), F = rosa-granulativ, E = minimal/serös, R = nicht mazeriert, A = Hydrokolloid-Verband erneürt.",
         kerntextB1:
-          "Ein **Wundbericht** braucht feste Punkte. Merke: **L-G-F-E-R-A**.\n\n• **L** — Wo ist die Wunde? (Steissbein, Mitte)\n\n• **G** — Wie gross? In cm x cm messen.\n\n• **F** — Welche Farbe hat der Wundgrund? (Rosa = Heilung, Rot = Entzuendung, Gelb = Belag, Schwarz = totes Gewebe)\n\n• **E** — Wie viel Fluessigkeit? (keine / wenig / mittel / viel)\n\n• **R** — Wie sieht der Rand aus? (aufgeweicht? sauber?)\n\n• **A** — Was hast du gemacht? Welcher Verband? Wann naechster Wechsel?\n\n**Und dazu:** Datum, Uhrzeit, dein Name. Reaktion der Patientin. Schmerz-Zahl (NRS). Foto (nur mit Erlaubnis).",
+          "Ein **Wundbericht** braucht feste Punkte. Merke: **L-G-F-E-R-A**.\n\n• **L** — Wo ist die Wunde? (Steissbein, Mitte)\n\n• **G** — Wie gross? In cm x cm messen.\n\n• **F** — Welche Farbe hat der Wundgrund? (Rosa = Heilung, Rot = Entzündung, Gelb = Belag, Schwarz = totes Gewebe)\n\n• **E** — Wie viel Flüssigkeit? (keine / wenig / mittel / viel)\n\n• **R** — Wie sieht der Rand aus? (aufgeweicht? sauber?)\n\n• **A** — Was hast du gemacht? Welcher Verband? Wann nächster Wechsel?\n\n**Und dazu:** Datum, Uhrzeit, dein Name. Reaktion der Patientin. Schmerz-Zahl (NRS). Foto (nur mit Erlaubnis).",
         faustregel:
-          "L-G-F-E-R-A: Lage, Groesse, Farbe, Exsudat, Rand, Aktion. Plus Datum, Schmerz, Foto.",
+          "L-G-F-E-R-A: Lage, Grösse, Farbe, Exsudat, Rand, Aktion. Plus Datum, Schmerz, Foto.",
         faustregelB1:
-          "L-G-F-E-R-A: Wo, wie gross, welche Farbe, wie viel Fluessigkeit, wie sieht der Rand aus, was hast du gemacht.",
+          "L-G-F-E-R-A: Wo, wie gross, welche Farbe, wie viel Flüssigkeit, wie sieht der Rand aus, was hast du gemacht.",
         spektrum: [
           {
             patientName: "Frau M.",
@@ -77,17 +77,17 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
           },
           {
             patientName: "Emilia",
-            situationsId: "ls-emilia-saeugling",
-            hauptfaktor: "Wunddoku bei Saeuglingen",
+            situationsId: "ls-emilia-säugling",
+            hauptfaktor: "Wunddoku bei Säuglingen",
             kurzbeschreibung:
-              "Haut von Saeuglingen ist duenner und heilt anders. Wundgroesse und -farbe veraendern sich schneller. Dokumentationsintervalle kuerzer (alle 4-6 Stunden statt taeglich).",
+              "Haut von Säuglingen ist dünner und heilt anders. Wundgrösse und -farbe verändern sich schneller. Dokumentationsintervalle kürzer (alle 4-6 Stunden statt täglich).",
           },
         ],
         karteikarte: {
           vorderseite:
-            "Nenne die 6 Pflicht-Elemente einer standardkonformen Wunddokumentation (Merkhilfe!) und erklaere, was bei Frau Yilmaz heute (Tag 17) jeweils einzutragen waere.",
+            "Nenne die 6 Pflicht-Elemente einer standardkonformen Wunddokumentation (Merkhilfe!) und erkläre, was bei Frau Yilmaz heute (Tag 17) jeweils einzutragen wäre.",
           rueckseite:
-            "L-G-F-E-R-A:\nL = Sakrum, zentral\nG = 1,5 x 2,5 cm (ruecklaeufig ggue. 2x3 cm Tag 14)\nF = Rosa-granulativ (Heilungszeichen)\nE = Minimal, seroes\nR = Nicht mazeriert (verbessert)\nA = Hydrokolloid-Verband erneuert, Foto mit Einwilligung\n\nPlus: Datum + Uhrzeit, Handzeichen, NRS (0 — Neuropathie), Patientin kooperiert.\n\nFaustregel: **L-G-F-E-R-A + Datum + Schmerz + Foto.**",
+            "L-G-F-E-R-A:\nL = Sakrum, zentral\nG = 1,5 x 2,5 cm (rückläufig ggue. 2x3 cm Tag 14)\nF = Rosa-granulativ (Heilungszeichen)\nE = Minimal, serös\nR = Nicht mazeriert (verbessert)\nA = Hydrokolloid-Verband erneürt, Foto mit Einwilligung\n\nPlus: Datum + Uhrzeit, Handzeichen, NRS (0 — Neuropathie), Patientin kooperiert.\n\nFaustregel: **L-G-F-E-R-A + Datum + Schmerz + Foto.**",
         },
       },
     },
@@ -139,7 +139,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
 
     // Inline-Wissen: Qualitaetsdimensionen und DNQP-Expertenstandard
     {
-      stepId: "ce02-yilmaz-s2-doku-01b-qualitaet-dnqp",
+      stepId: "ce02-yilmaz-s2-doku-01b-qualität-dnqp",
       phase: 6,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -147,18 +147,18 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
       quellen: ["Donabedian A. (1966)", "DNQP 2024"],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-yilmaz-s2-doku-01b-qualitaet-dnqp",
+      lernziel: "ce02-yilmaz-s2-doku-01b-qualität-dnqp",
       tag: "pflege",
       themaPrimaer: "pflegedokumentation",
       themenSekundaer: ["dekubitus-prophylaxe"],
-      transition: "Qualitaetsbegriffe klar. Ordne sie in die Matrix.",
+      transition: "Qualitätsbegriffe klar. Ordne sie in die Matrix.",
       contentC1: {
-        title: "Qualitaetsdimensionen und DNQP-Expertenstandard",
+        title: "Qualitätsdimensionen und DNQP-Expertenstandard",
         body: "",
-        glossarBegriffe: ["Strukturqualitaet", "Prozessqualitaet", "Ergebnisqualitaet", "Donabedian", "DNQP", "Expertenstandard", "Struktur-Kriterium"],
+        glossarBegriffe: ["Strukturqualität", "Prozessqualität", "Ergebnisqualität", "Donabedian", "DNQP", "Expertenstandard", "Struktur-Kriterium"],
       },
       contentB1: {
-        title: "Qualitaet pruefen mit dem DNQP",
+        title: "Qualität prüfen mit dem DNQP",
         body: "",
         glossarBegriffe: ["DNQP", "Expertenstandard"],
       },
@@ -166,10 +166,10 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
         bausteinRef: "pflegedokumentation-dnqp",
         storyAufhaenger: "Du hast den Wundbericht geschrieben. Hat die Pflege dem Standard entsprochen? Sieben Begriffe.",
         storyAufhaengerB1: "Hat die Pflege dem Standard entsprochen?",
-        kerntext: "**DNQP** = Deutsches Netzwerk fuer Qualitaetsentwicklung in der Pflege. Gibt **Expertenstandards** heraus. Dekubitusprophylaxe 2024 hat **Struktur-Kriterien** (S), Prozess-Kriterien (P), Ergebnis-Kriterien (E).\n\n**Struktur-Kriterium** = Was muss vorhanden sein?\n\n**Strukturqualitaet** = Voraussetzungen erfuellt? **Prozessqualitaet** = Massnahmen durchgefuehrt? **Ergebnisqualitaet** = Resultat? (Donabedian 1966)\n\nBei Frau Yilmaz: S teilweise, P teilweise, E Kat. II aber heilend.",
-        kerntextB1: "**DNQP** = Organisation fuer Pflege-Standards. **Expertenstandard** = was mindestens gemacht werden muss.\n**Struktur-Kriterium** = Was muss da sein?\n**Strukturqualitaet** = Genug da? **Prozessqualitaet** = Gemacht? **Ergebnisqualitaet** = Ergebnis?",
+        kerntext: "**DNQP** = Deutsches Netzwerk für Qualitätsentwicklung in der Pflege. Gibt **Expertenstandards** heraus. Dekubitusprophylaxe 2024 hat **Struktur-Kriterien** (S), Prozess-Kriterien (P), Ergebnis-Kriterien (E).\n\n**Struktur-Kriterium** = Was muss vorhanden sein?\n\n**Strukturqualität** = Voraussetzungen erfüllt? **Prozessqualität** = Maßnahmen durchgeführt? **Ergebnisqualität** = Resultat? (Donabedian 1966)\n\nBei Frau Yilmaz: S teilweise, P teilweise, E Kat. II aber heilend.",
+        kerntextB1: "**DNQP** = Organisation für Pflege-Standards. **Expertenstandard** = was mindestens gemacht werden muss.\n**Struktur-Kriterium** = Was muss da sein?\n**Strukturqualität** = Genug da? **Prozessqualität** = Gemacht? **Ergebnisqualität** = Ergebnis?",
         faustregel: "DNQP-Expertenstandard: S + P + E. Systemanalyse, kein Schuld-Framing.",
-        faustregelB1: "DNQP = Standard. Struktur + Prozess + Ergebnis pruefen.",
+        faustregelB1: "DNQP = Standard. Struktur + Prozess + Ergebnis prüfen.",
         spektrum: [],
         karteikarte: {
           vorderseite: "Was sind die 3 DNQP-Dimensionen bei Frau Yilmaz?",
@@ -180,7 +180,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
 
     // Step 6.2 — Matrix (3×3): Donabedian Qualitätsprüfung
     {
-      stepId: "ce02-yilmaz-s2-doku-02-spe-qualitaetscheck",
+      stepId: "ce02-yilmaz-s2-doku-02-spe-qualitätscheck",
       phase: 6,
       stepType: "matrix",
       bloomLevel: 5,
@@ -300,13 +300,13 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
         matchingPairs: [
           {
             left:
-              "S1: Pflegende mit Kompetenz zur Risikoeinschätzung",
+              "S1: Pflegende mit Kompetenz zur Risiköinschätzung",
             right:
               "Teilweise erfüllt — Braden-Skala wurde regelmäßig ausgefüllt, aber: Spätschicht-Kollegin hat Rötung wahrgenommen, ohne sie als Kategorie I zu klassifizieren oder zu dokumentieren → Wahrnehmungs-/Beurteilungskompetenz nicht reliabel sichergestellt",
           },
           {
             left:
-              "S2: Kontinuierliche Risikoeinschätzung mit validiertem Instrument",
+              "S2: Kontinuierliche Risiköinschätzung mit validiertem Instrument",
             right:
               "Teilweise erfüllt — Braden-Score wurde erhoben, aber ein Tag ohne Eintragung in der Akte",
           },
@@ -411,7 +411,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
               prompt: "Wundgröße (cm × cm):",
               promptB1: "Wie groß ist die Wunde?",
               options: [
-                { text: "1,5 cm × 2,5 cm", isCorrect: true, explanation: "Aktueller Befund Tag 17." },
+                { text: "1,5 cm × 2,5 cm", isCorrect: true, explanation: "Aktüller Befund Tag 17." },
                 { text: "2 cm × 3 cm", isCorrect: false, explanation: "Das war der Befund bei Entdeckung (Tag 14). Heute ist die Wunde kleiner." },
                 { text: "3 cm × 4 cm", isCorrect: false, explanation: "Falsch — die Wunde ist kleiner geworden, nicht größer." },
               ],

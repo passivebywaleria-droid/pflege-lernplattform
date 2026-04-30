@@ -93,24 +93,24 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
         spektrum: [
           {
             patientName: "Frau Yilmaz",
-            situationsId: "ls-yilmaz-hueft-tep",
+            situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "Post-OP Hüft-TEP, kurzfristige Immobilität",
             kurzbeschreibung:
               "BVK nur 24-48 h post-OP bis Erstmobilisation. Dann sofort Entfernung — sie kann zur Toilette sobald sie steht.",
           },
           {
-            patientName: "Herr Bauer",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "Demenz, zieht am Katheter",
             kurzbeschreibung:
-              "Bauer versteht nicht warum der Schlauch da ist. Er zieht daran — Verletzungsgefahr. Hier ist der BVK ein eigenes Risiko, nicht nur eine Hilfe.",
+              "Baür versteht nicht warum der Schlauch da ist. Er zieht daran — Verletzungsgefahr. Hier ist der BVK ein eigenes Risiko, nicht nur eine Hilfe.",
           },
           {
             patientName: "Frau Kovac",
             situationsId: "ls-kovac-ambulant",
             hauptfaktor: "Ambulant, intermittierender Einmalkatheter",
             kurzbeschreibung:
-              "Bei Kovac kein Dauerkatheter — sie verwendet zu Hause einen intermittierenden Einmalkatheter (ISK). Weniger Infektionsrisiko, aber Anleitung zur Selbstkatheterisierung nötig.",
+              "Bei Kovac kein Daürkatheter — sie verwendet zu Hause einen intermittierenden Einmalkatheter (ISK). Weniger Infektionsrisiko, aber Anleitung zur Selbstkatheterisierung nötig.",
           },
           {
             patientName: "Frau Schmidt",
@@ -124,7 +124,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
           vorderseite:
             "Herr Petrovs BVK liegt seit 5 Tagen. Der Arzt hat Re-Evaluation für Tag 14 angeordnet. Ist das ausreichend?",
           rueckseite:
-            "Nein. KRINKO 2015 fordert tägliche Indikationsprüfung, nicht festes 14-Tage-Intervall. Infektionsrate steigt mit jedem Tag: Tag 5-7 ca. 10-15 %. Pflege-Pflicht: aktiv beim Arzt nachfragen ob der BVK noch nötig ist. Spektrum: Yilmaz (24-48 h post-OP), Bauer (Demenz, zieht am Katheter), Kovac (ISK ambulant), Schmidt (Adipositas-Hygiene). Faustregel: **Jeder Tag mit Katheter ist ein Tag zu viel.**",
+            "Nein. KRINKO 2015 fordert tägliche Indikationsprüfung, nicht festes 14-Tage-Intervall. Infektionsrate steigt mit jedem Tag: Tag 5-7 ca. 10-15 %. Pflege-Pflicht: aktiv beim Arzt nachfragen ob der BVK noch nötig ist. Spektrum: Yilmaz (24-48 h post-OP), Baür (Demenz, zieht am Katheter), Kovac (ISK ambulant), Schmidt (Adipositas-Hygiene). Faustregel: **Jeder Tag mit Katheter ist ein Tag zu viel.**",
         },
       },
     },
@@ -170,7 +170,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
             explanation:
               "Genau. Du liest die Akte, hörst die Übergabe, machst dir ein erstes Bild — das ist Schritt 1 des Pflegeprozesses nach Fiechter/Meier (1981): Informationssammlung. Handeln kommt erst danach.",
             explanationB1:
-              "Richtig. Du sammelst zuerst alle Informationen. Dann planst du. Handeln ohne Informationen ist gefährlich.",
+              "Richtig. Du sammelst zürst alle Informationen. Dann planst du. Handeln ohne Informationen ist gefährlich.",
           },
           {
             text: "Durchführen — weil die Schicht beginnt und du anfangen musst",
@@ -232,7 +232,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
               front: "Was ist ein ischämischer Apoplex?",
               back: "Unterbrechung der Blutversorgung eines Hirnbereichs durch Gefäßverschluss. Beim linken MCA-Infarkt: rechte Körperhälfte betroffen + Sprachzentrum (Broca-Areal). Akuttherapie: i.v.-Lyse bis 4,5 Stunden nach Symptombeginn. (AWMF S3 Schlaganfall)",
               backB1:
-                "Ein Blutgefäß im Gehirn ist verstopft. Das Blut kommt nicht mehr durch. Ein Teil des Gehirns bekommt keinen Sauerstoff. Er stirbt ab. Bei Herrn Petrov: Die linke Seite des Gehirns ist betroffen. Deshalb funktioniert die rechte Körperseite nicht gut. Das Sprachzentrum liegt auch links. Deshalb kann er kaum sprechen.",
+                "Ein Blutgefäß im Gehirn ist verstopft. Das Blut kommt nicht mehr durch. Ein Teil des Gehirns bekommt keinen Saürstoff. Er stirbt ab. Bei Herrn Petrov: Die linke Seite des Gehirns ist betroffen. Deshalb funktioniert die rechte Körperseite nicht gut. Das Sprachzentrum liegt auch links. Deshalb kann er kaum sprechen.",
               category: "krankheitslehre",
             },
             {
@@ -272,7 +272,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-petrov-info-dysphagie-iddsi",
       tag: "krankheitslehre",
-      themaPrimaer: "enterale-ernaehrung",
+      themaPrimaer: "enterale-ernährung",
       themenSekundaer: ["essen-anreichen", "mundpflege"],
       transition: "Angedickt, breiig, püriert — du weißt jetzt was Herr Petrov schlucken darf. Und was nicht.",
       contentC1: {
@@ -286,7 +286,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
         glossarBegriffe: ["IDDSI", "Dysphagie", "Aspiration"],
       },
       inlineWissen: {
-        bausteinRef: "enterale-ernaehrung-iddsi-stufen",
+        bausteinRef: "enterale-ernährung-iddsi-stufen",
         storyAufhaenger:
           "Auf dem Nachttisch von Herrn Petrov steht eine Flasche mit angedickt aussehender Flüssigkeit. Daneben eine normale Wasserflasche. Welche darf er trinken? Das IDDSI-Framework gibt weltweit die Antwort — und du musst es kennen, bevor du ihm das Frühstück reichst.",
         storyAufhaengerB1:
@@ -314,7 +314,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
           },
           {
             patientName: "Emilia",
-            situationsId: "ls-emilia-saeugling",
+            situationsId: "ls-emilia-säugling",
             hauptfaktor: "Säugling mit Bronchiolitis, Trinkschwäche",
             kurzbeschreibung:
               "Emilia trinkt zu wenig wegen Atemnot (Bronchiolitis). Keine Dysphagie im klassischen Sinn — aber ein ähnliches Problem: orale Aufnahme reicht nicht, nasogastrale Sonde als Brücke.",
@@ -483,7 +483,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
                   "Sehr gut. Du gibst Herrn Petrov Kontrolle zurück. Er kann Kopf schütteln — das ist ein klares Signal. Das ist wichtig: Er versteht alles. Er soll auch mitentscheiden können.",
               },
               {
-                text: "\"Dann fangen wir an — Waschen zuerst, dann Frühstück. Dauert ungefähr eine Stunde.\"",
+                text: "\"Dann fangen wir an — Waschen zürst, dann Frühstück. Daürt ungefähr eine Stunde.\"",
                 textB1:
                   "\"Fangen wir an. Waschen, dann Frühstück. Circa eine Stunde.\"",
                 patientResponse:
@@ -559,10 +559,10 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
           {
             left: "Zeit lassen für die Reaktion (10-15 Sekunden warten)",
             right:
-              "Sprachverarbeitung dauert bei Aphasie länger — vorschnelles Antworten oder Helfen blockiert die Eigenleistung",
+              "Sprachverarbeitung daürt bei Aphasie länger — vorschnelles Antworten oder Helfen blockiert die Eigenleistung",
           },
           {
-            left: "Blickkontakt halten — nicht wegschauen während er antwortet",
+            left: "Blickkontakt halten — nicht wegschaün während er antwortet",
             right:
               "Nonverbale Signale (Mimik, Gestik) ergänzen die wenigen Wörter und zeigen Wertschätzung",
           },

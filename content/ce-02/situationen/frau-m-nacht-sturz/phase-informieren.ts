@@ -10,7 +10,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
   titel: "Informieren & Ankommen",
   titelB1: "Ankommen bei Frau M.",
   kontext:
-    "02:48 Uhr. Du stehst auf dem Flur der internistischen Station und spürst, wie das Linoleum unter deinen Schuhen leicht klebt — frisch gewischt, irgendwann zwischen Mitternacht und jetzt. Die Notbeleuchtung tönt den Gang in ein gedämpftes Apricot, nur am Schwesternzimmer fällt ein streifenhelles Rechteck Neonlicht auf den Boden. Aus Zimmer 11 hörst du das gleichmäßige Surren eines Sauerstoffkonzentrators, weiter hinten ein leises Husten, dann wieder Stille. Diese Art Stille, die nachts auf einer Station nie ganz Stille ist: Kühlschränke summen, Infusomaten piepen leise im Halbschlaf, irgendwo schließt eine Tür. Du atmest ein. Es riecht nach Desinfektionsmittel, nach kaltem Kaffee aus der Stationsküche, nach den Veilchen-Bonbons, die Frau Keller jeden Dienst dabeihat. Vor 90 Sekunden hat sie dir auf dem Weg zu Zimmer 12 zugenickt: 'Frau M., Vierzehn, ist gestürzt. Schau du.' Mehr Zeit war nicht. Sie ist jetzt in der Tür gegenüber verschwunden, du hörst sie murmeln, das ruhige Auf-und-Ab ihrer Stimme, und merkst, dass sie auf dich vertraut, ohne dass sie es ausgesprochen hat. Dein Puls liegt höher als sonst, du merkst es am Hals, ein leichtes Pochen unter dem Kragen des Kasaks. Frau M., 82 Jahre, Pneumonie Tag drei — mehr weißt du nicht. Kein Pflegebogen vor Augen, keine Diagnoseliste, kein Arzneimittel-Plan. Du bist im 2. Ausbildungsdrittel, das ist deine vierte Nachtschicht überhaupt, und du bist gerade allein für Zimmer 14 zuständig. In deiner linken Brusttasche der schmale Notizblock mit drei eng beschriebenen Seiten von der heutigen Übergabe — über Frau M. steht nur eine halbe Zeile. Drei Schritte trennen dich noch von der angelehnten Tür. Hinter ihr: eine Frau, die du noch nie gesehen hast, am Boden liegend, vielleicht mit Schmerzen, vielleicht mit Angst, vielleicht in einer Pose, die dich an deine eigene Großmutter erinnern wird. Du gehst noch nicht hinein. Erst die Übergabe sauber im Kopf, erst SBAR strukturieren. Was hat Frau Keller wirklich gesagt? Welche Information fehlt dir? Welche Frage musst du im Zimmer als erstes klären — Bewusstsein, Atmung, Schmerz? Du stehst still, eine Hand am Türrahmen, das Holz kühl und glatt unter den Fingern, und merkst, wie diese Sekunden schwerer wiegen als die ganze Stunde davor. Im Hintergrund piept ein Aufzug irgendwo im Haus. In den nächsten Minuten entscheidet sich, wie die Nacht für Frau M. weitergeht — fachlich, körperlich und emotional. Und auch: wie du als Schülerin durch diese Tür gehst.",
+    "02:48 Uhr. Du stehst auf dem Flur der internistischen Station und spürst, wie das Linoleum unter deinen Schuhen leicht klebt — frisch gewischt, irgendwann zwischen Mitternacht und jetzt. Die Notbeleuchtung tönt den Gang in ein gedämpftes Apricot, nur am Schwesternzimmer fällt ein streifenhelles Rechteck Neonlicht auf den Boden. Aus Zimmer 11 hörst du das gleichmäßige Surren eines Saürstoffkonzentrators, weiter hinten ein leises Husten, dann wieder Stille. Diese Art Stille, die nachts auf einer Station nie ganz Stille ist: Kühlschränke summen, Infusomaten piepen leise im Halbschlaf, irgendwo schließt eine Tür. Du atmest ein. Es riecht nach Desinfektionsmittel, nach kaltem Kaffee aus der Stationsküche, nach den Veilchen-Bonbons, die Frau Keller jeden Dienst dabeihat. Vor 90 Sekunden hat sie dir auf dem Weg zu Zimmer 12 zugenickt: 'Frau M., Vierzehn, ist gestürzt. Schau du.' Mehr Zeit war nicht. Sie ist jetzt in der Tür gegenüber verschwunden, du hörst sie murmeln, das ruhige Auf-und-Ab ihrer Stimme, und merkst, dass sie auf dich vertraut, ohne dass sie es ausgesprochen hat. Dein Puls liegt höher als sonst, du merkst es am Hals, ein leichtes Pochen unter dem Kragen des Kasaks. Frau M., 82 Jahre, Pneumonie Tag drei — mehr weißt du nicht. Kein Pflegebogen vor Augen, keine Diagnoseliste, kein Arzneimittel-Plan. Du bist im 2. Ausbildungsdrittel, das ist deine vierte Nachtschicht überhaupt, und du bist gerade allein für Zimmer 14 zuständig. In deiner linken Brusttasche der schmale Notizblock mit drei eng beschriebenen Seiten von der heutigen Übergabe — über Frau M. steht nur eine halbe Zeile. Drei Schritte trennen dich noch von der angelehnten Tür. Hinter ihr: eine Frau, die du noch nie gesehen hast, am Boden liegend, vielleicht mit Schmerzen, vielleicht mit Angst, vielleicht in einer Pose, die dich an deine eigene Großmutter erinnern wird. Du gehst noch nicht hinein. Erst die Übergabe sauber im Kopf, erst SBAR strukturieren. Was hat Frau Keller wirklich gesagt? Welche Information fehlt dir? Welche Frage musst du im Zimmer als erstes klären — Bewusstsein, Atmung, Schmerz? Du stehst still, eine Hand am Türrahmen, das Holz kühl und glatt unter den Fingern, und merkst, wie diese Sekunden schwerer wiegen als die ganze Stunde davor. Im Hintergrund piept ein Aufzug irgendwo im Haus. In den nächsten Minuten entscheidet sich, wie die Nacht für Frau M. weitergeht — fachlich, körperlich und emotional. Und auch: wie du als Schülerin durch diese Tür gehst.",
   kontextB1:
     "02:48 Uhr. Du stehst auf dem Flur. Das Licht ist gedämpft. Es ist warm und still. Du riechst Desinfektion und Kaffee. In Zimmer 11 surrt ein Gerät. Eine Tür schließt leise. Frau Keller hat dich vor einer Minute zu Zimmer 14 geschickt. Sie sagte nur: 'Frau M., 14, ist gestürzt. Schau du.' Mehr nicht. Du atmest ein. Dein Puls ist schneller als sonst. Frau M. ist 82 Jahre alt. Sie hat eine Lungenentzündung, Tag drei. Mehr weißt du nicht. Du bist Schülerin im 2. Ausbildungsdrittel. Das ist deine vierte Nachtschicht. Du bist allein für Zimmer 14. Drei Schritte sind es noch bis zur Tür. Sie steht offen. Hinter der Tür liegt eine Frau am Boden. Vielleicht hat sie Schmerzen. Vielleicht hat sie Angst. Du gehst noch nicht rein. Erst denkst du nach. Was hat Frau Keller genau gesagt? Was musst du wissen? Du nutzt SBAR — eine Struktur für Übergaben. Du stehst still, eine Hand am Türrahmen. Diese Sekunden sind wichtig. Was du jetzt tust, ist wichtig — für Frau M. und für dich.",
   kernSteps: [
@@ -98,15 +98,15 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
         faustregelB1: "Auch Beinahe-Stürze sind Stürze. Du schreibst sie auf — auch wenn nichts passiert ist.",
         spektrum: [
           {
-            patientName: "Herr Bauer",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "Demenz, nächtliche Desorientierung",
             kurzbeschreibung:
               "Steht nachts orientierungslos auf, weiß nicht wo er ist. Sein Sturz ist nicht 'unabsichtlich im Sinne von ungeplant', sondern aus kognitiver Verwirrung — zählt aber genauso.",
           },
           {
             patientName: "Frau Yilmaz",
-            situationsId: "ls-yilmaz-hueft-tep",
+            situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "Akut post-OP, Hüft-TEP",
             kurzbeschreibung:
               "Bei ihr ist die Sturzgefahr nicht alters- sondern situationsbedingt: frische OP, Schmerz, Bewegungseinschränkung. Erstmobilisation am 1. POT braucht engmaschige Begleitung.",
@@ -127,7 +127,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
           vorderseite:
             "Frau M. ist heute Nacht gestürzt — Birgit erzählt dir später, dass Mama sich vor 2 Wochen 'kurz am Schrank festgehalten' hat. Was zählt davon als Sturz?",
           rueckseite:
-            "Beides. Die WHO definiert Sturz als unbeabsichtigtes Landen auf dem Boden / tieferer Ebene. Der DNQP 2022 ergänzt: Auch **Beinahe-Stürze** zählen — Risiko in den nächsten 6 Monaten 2-3x erhöht. Spektrum: Bauer (Demenz, nächtliche Desorientierung), Yilmaz (post-OP, situationsbedingt), Kovac (ambulant, Stolperfallen). Faustregel: **Jeder Beinahe-Sturz ist ein angekündigter Sturz.**",
+            "Beides. Die WHO definiert Sturz als unbeabsichtigtes Landen auf dem Boden / tieferer Ebene. Der DNQP 2022 ergänzt: Auch **Beinahe-Stürze** zählen — Risiko in den nächsten 6 Monaten 2-3x erhöht. Spektrum: Baür (Demenz, nächtliche Desorientierung), Yilmaz (post-OP, situationsbedingt), Kovac (ambulant, Stolperfallen). Faustregel: **Jeder Beinahe-Sturz ist ein angekündigter Sturz.**",
         },
       },
     },
@@ -183,7 +183,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
               textB1: "Unsicher — ich möchte erst mehr lernen",
             },
             {
-              id: "nervoes",
+              id: "nervös",
               text: "Anfangs nervös, dann routiniert — sobald ich anfange, läuft es",
               textB1: "Anfangs nervös, danach geht es — wenn ich anfange, läuft es",
             },
@@ -211,14 +211,14 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
           fazit:
             "\"Halb sicher\" ist die häufigste Antwort — und sie ist ehrlich. Studien zeigen: Wer sich vor einer komplexen Pflegesituation als \"sehr sicher\" einschätzt, überschätzt sich oft. Eine gesunde Portion Unsicherheit ist ein Profi-Reflex. Du gehst gleich rein — strukturiert, mit Plan, im 2-Personen-Setting (Frau Keller im Nachbarzimmer). Du musst nicht alles wissen, du musst gut beobachten und richtig priorisieren.",
           fazitB1:
-            "\"Halb sicher\" ist die häufigste Antwort. Das ist ehrlich. Studien sagen: Wer \"sehr sicher\" sagt, überschätzt sich oft. Etwas unsicher zu sein ist normal und gut — du achtest dann mehr auf Details. Du gehst gleich rein. Frau Keller ist im Nachbarzimmer. Du musst nicht alles wissen — du musst gut hinschauen und das Wichtigste zuerst tun.",
+            "\"Halb sicher\" ist die häufigste Antwort. Das ist ehrlich. Studien sagen: Wer \"sehr sicher\" sagt, überschätzt sich oft. Etwas unsicher zu sein ist normal und gut — du achtest dann mehr auf Details. Du gehst gleich rein. Frau Keller ist im Nachbarzimmer. Du musst nicht alles wissen — du musst gut hinschaün und das Wichtigste zürst tun.",
         },
       },
     },
 
     // Step 1.3 — MC erste Priorität (fallstrick)
     {
-      stepId: "ce02-frau-m-info-03-erste-prioritaet",
+      stepId: "ce02-frau-m-info-03-erste-priorität",
       phase: 1,
       stepType: "mc",
       bloomLevel: 3,
@@ -226,7 +226,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       quellen: ["DNQP 2022"],
       track: "basis",
       modus: "challenge",
-      lernziel: "ce02-frau-m-info-prioritaet",
+      lernziel: "ce02-frau-m-info-priorität",
       tag: "pflege",
       transition: "Licht an. Bewusstsein prüfen. Begrüßen. Richtig. Aber Frau M. hat mehr als einen Risikofaktor.",
       contentC1: {
@@ -235,7 +235,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
         glossarBegriffe: [],
       },
       contentB1: {
-        title: "Was machst du zuerst?",
+        title: "Was machst du zürst?",
         body: "Du stehst vor dem Zimmer von Frau M. Sie ist gestürzt. Sie ist wach. Sie hat Schmerzen in der Hüfte. Was tust du als erstes?",
         glossarBegriffe: [],
       },
@@ -247,9 +247,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
             text: "Blutdruck messen",
             isCorrect: false,
             explanation:
-              "Nicht ganz — Vitalzeichen sind wichtig, aber zuerst brauchst du den Überblick: Ist Frau M. wach? Orientiert? Gibt es sichtbare Verletzungen? Das Messen kommt als Teil des strukturierten Assessments, nach der ersten Einschätzung.",
+              "Nicht ganz — Vitalzeichen sind wichtig, aber zürst brauchst du den Überblick: Ist Frau M. wach? Orientiert? Gibt es sichtbare Verletzungen? Das Messen kommt als Teil des strukturierten Assessments, nach der ersten Einschätzung.",
             explanationB1:
-              "Nicht ganz. Blutdruck ist wichtig, aber nicht zuerst. Zuerst schaust du: Ist Frau M. wach? Wo hat sie Schmerzen? Danach misst du Blutdruck.",
+              "Nicht ganz. Blutdruck ist wichtig, aber nicht zürst. Zuerst schaust du: Ist Frau M. wach? Wo hat sie Schmerzen? Danach misst du Blutdruck.",
           },
           {
             text: "Licht voll einschalten, Frau M. begrüßen, Bewusstsein prüfen",
@@ -257,7 +257,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
             explanation:
               "Genau. Das ist der Kern der Ersteinschätzung: Licht voll einschalten (Verletzungs-Beurteilung braucht volle Sicht — keine Inspektion ohne ausreichende Beleuchtung), aber so positioniert oder von der Bett-Leselampe, dass es Frau M. nicht direkt blendet. Begrüßen (Würde, Beruhigung), Bewusstsein prüfen (ansprechbar, orientiert zu Person/Ort/Zeit). Diese drei Handlungen laufen fast gleichzeitig ab.",
             explanationB1:
-              "Richtig. Das ist das Wichtigste zuerst: Licht hell an, damit du sie genau ansehen kannst — aber das Licht soll ihr nicht direkt in die Augen scheinen. Frau M. ansprechen (freundlich, ruhig). Prüfen, ob sie wach ist und weiß, wo sie ist. Das dauert nur Sekunden.",
+              "Richtig. Das ist das Wichtigste zürst: Licht hell an, damit du sie genau ansehen kannst — aber das Licht soll ihr nicht direkt in die Augen scheinen. Frau M. ansprechen (freundlich, ruhig). Prüfen, ob sie wach ist und weiß, wo sie ist. Das daürt nur Sekunden.",
           },
           {
             text: "Nachtschwester rufen",
@@ -273,7 +273,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
             explanation:
               "Nein — das ist gefährlich. Nach einem Sturz musst du FIRST Verletzungen ausschließen (Hüftfraktur zeigt sich durch Bein-Verkürzung + Außenrotation — dann nicht bewegen!). Unsanftes Aufheben kann einen nicht erkannten Bruch massiv verschlimmern. Merke: Prüfen vor Bewegen. Der Patient ist auf dem Boden erstmal sicher.",
             explanationB1:
-              "Nein — das ist gefährlich! Nach einem Sturz musst du zuerst schauen, ob etwas gebrochen ist. Bei Hüftbruch (Bein ist kürzer und dreht nach außen) darfst du NICHT bewegen. Immer: Prüfen kommt vor Bewegen.",
+              "Nein — das ist gefährlich! Nach einem Sturz musst du zürst schaün, ob etwas gebrochen ist. Bei Hüftbruch (Bein ist kürzer und dreht nach außen) darfst du NICHT bewegen. Immer: Prüfen kommt vor Bewegen.",
           },
         ],
       },
@@ -334,15 +334,15 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
           "Stürze haben fast nie nur einen Grund. Wer 4 oder mehr Risiken zusammen hat, ist sehr sturzgefährdet.",
         spektrum: [
           {
-            patientName: "Herr Bauer",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "Demenz + Sundowning",
             kurzbeschreibung:
               "Bei ihm ist die **Kognition** der Hauptfaktor. Er steht nachts orientierungslos auf — nicht weil er gestolpert ist, sondern weil er nicht weiß, dass er im Krankenhaus ist. Sein Sturzschutz ist Beziehungsgestaltung + Validation, nicht Bettgitter.",
           },
           {
             patientName: "Frau Yilmaz",
-            situationsId: "ls-yilmaz-hueft-tep",
+            situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "Hüft-TEP, akute post-OP-Mobilität",
             kurzbeschreibung:
               "Bei ihr ist es nicht Alter oder Medikamente — es ist die **frische Operation**: Schmerz, Bewegungsangst, Lagerungsregeln (keine Adduktion, keine Innenrotation, max. 90° Hüftflexion). Erstmobilisation am 1. POT braucht engmaschige Begleitung.",
@@ -370,7 +370,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
           vorderseite:
             "Birgit fragt dich am Morgen: \"Warum ist Mama gestürzt? Ist das einfach das Alter?\" — Was sagst du?",
           rueckseite:
-            "Nein — Stürze sind multifaktoriell. Bei Frau M. mind. 5 Faktoren: Alter > 75, Parkinson II (Hauptfaktor: Bradykinese, posturale Instabilität), akute Pneumonie, Polypharmazie, nächtliche Klinikumgebung.\n\nSpektrum bei anderen:\n• Bauer (Demenz) → Kognition + Sundowning\n• Yilmaz (Hüft-TEP) → akute post-OP-Mobilität\n• Schmidt → Polyneuropathie + Bariatrik\n• Petrov → Halbseiten-Lähmung + Neglect\n\nFaustregel: **4+ Faktoren = hohes Risiko, kein Patient hat alle, jeder hat eigene.** (DNQP 2022, PRISCUS 2023)",
+            "Nein — Stürze sind multifaktoriell. Bei Frau M. mind. 5 Faktoren: Alter > 75, Parkinson II (Hauptfaktor: Bradykinese, posturale Instabilität), akute Pneumonie, Polypharmazie, nächtliche Klinikumgebung.\n\nSpektrum bei anderen:\n• Baür (Demenz) → Kognition + Sundowning\n• Yilmaz (Hüft-TEP) → akute post-OP-Mobilität\n• Schmidt → Polyneuropathie + Bariatrik\n• Petrov → Halbseiten-Lähmung + Neglect\n\nFaustregel: **4+ Faktoren = hohes Risiko, kein Patient hat alle, jeder hat eigene.** (DNQP 2022, PRISCUS 2023)",
         },
       },
     },
@@ -414,9 +414,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
             speaker: "Frau M.",
             options: [
               {
-                text: "\"Sie machen gar keine Umstände, Frau M. Lassen Sie uns in Ruhe schauen, wie es Ihnen geht.\"",
+                text: "\"Sie machen gar keine Umstände, Frau M. Lassen Sie uns in Ruhe schaün, wie es Ihnen geht.\"",
                 textB1:
-                  "\"Sie machen keine Umstände. Wir schauen jetzt in Ruhe, wie es Ihnen geht.\"",
+                  "\"Sie machen keine Umstände. Wir schaün jetzt in Ruhe, wie es Ihnen geht.\"",
                 patientResponse:
                   "Frau M. atmet hörbar aus. Ihre Schultern sinken leicht. \"Danke. Das ist so ungewohnt für mich, hier auf dem Boden…\"",
                 patientResponseB1:
@@ -425,7 +425,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
                 feedback:
                   "Validierend und würdevoll. Du nimmst ihr das Gefühl der Last. Gleichzeitig bleibst du professionell und kündigst das strukturierte Vorgehen an. Genau die richtige Tonlage für Phase 1.",
                 feedbackB1:
-                  "Richtig gut. Du zeigst: Sie ist keine Last. Du sagst auch: Jetzt schauen wir strukturiert nach. Die Mischung ist perfekt.",
+                  "Richtig gut. Du zeigst: Sie ist keine Last. Du sagst auch: Jetzt schaün wir strukturiert nach. Die Mischung ist perfekt.",
               },
               {
                 text: "\"Kein Problem, solche Stürze passieren hier jede Woche. Legen wir los, damit Sie wieder ins Bett kommen.\"",
@@ -454,7 +454,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
                   "Fehlinformation. Du weißt noch nicht, ob etwas passiert ist — die Verletzungsprüfung steht noch aus. Solche Aussagen können rechtlich und ethisch problematisch sein. Frau M. spürt die Leere hinter der Beruhigung.",
                 feedbackB1:
                   // FIX (walkthrough B-08): Sandwich-Prinzip — Anerkennung vor Kritik.
-                  "Du hast freundlich reagiert — das ist gut. Aber: Du weißt noch nicht, ob etwas passiert ist. Du hast noch nicht nachgeschaut. Solche Worte beruhigen ohne Wissen — und Frau M. merkt das. Beim nächsten Mal: Erst schauen, dann sprechen.",
+                  "Du hast freundlich reagiert — das ist gut. Aber: Du weißt noch nicht, ob etwas passiert ist. Du hast noch nicht nachgeschaut. Solche Worte beruhigen ohne Wissen — und Frau M. merkt das. Beim nächsten Mal: Erst schaün, dann sprechen.",
               },
             ],
           },
@@ -503,7 +503,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
                   "\"Nein, eigentlich nicht. Nur die Hüfte — und ich schäme mich so.\"",
                 score: 2,
                 feedback:
-                  "Gute Frage — Orthostase/Schwindel ist genauso wichtig wie Schmerz-Lokalisation, gerade bei Parkinson + Z-Substanz. Beide Fragen gehören zur Erstuntersuchung. Nur die Reihenfolge: Hüftschmerzen waren schon in der Übergabe erwähnt — also zuerst Schmerz-Lokalisation und NRS, dann Schwindel/Übelkeit als nächste Frage.",
+                  "Gute Frage — Orthostase/Schwindel ist genauso wichtig wie Schmerz-Lokalisation, gerade bei Parkinson + Z-Substanz. Beide Fragen gehören zur Erstuntersuchung. Nur die Reihenfolge: Hüftschmerzen waren schon in der Übergabe erwähnt — also zürst Schmerz-Lokalisation und NRS, dann Schwindel/Übelkeit als nächste Frage.",
                 feedbackB1:
                   "Gute Frage — Schwindel zu fragen ist genauso wichtig wie Schmerz, gerade bei Parkinson + Schlaftablette. Beide gehören zur Untersuchung. Aber: Die Hüftschmerzen waren schon bekannt. Erst 'Wo und wie stark tut es weh?', dann 'Schwindelig?'",
               },
@@ -528,7 +528,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
                 feedback:
                   "Perfekt. Struktur vor Hektik. Patientin bleibt in sicherer Position, Wärme (Decke), Kommunikation an Team (Frau Keller), dann systematisches Assessment. Genau das Vorgehen, das DNQP 2022 und das ABCDE-Prinzip vorsehen.",
                 feedbackB1:
-                  "Genau richtig. Struktur ist wichtiger als Eile. Frau M. liegt sicher. Decke für Wärme. Frau Keller informiert. Dann Schritt für Schritt schauen.",
+                  "Genau richtig. Struktur ist wichtiger als Eile. Frau M. liegt sicher. Decke für Wärme. Frau Keller informiert. Dann Schritt für Schritt schaün.",
               },
               {
                 text: "Wir heben sie vorsichtig sofort ins Bett — sie wird sich am Boden nicht wohlfühlen.",
@@ -566,7 +566,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
 
     // Step 1.5 — Sorting: erste Assessment-Reihenfolge
     {
-      stepId: "ce02-frau-m-info-05-was-pruefe-ich",
+      stepId: "ce02-frau-m-info-05-was-prüfe-ich",
       phase: 1,
       stepType: "sorting",
       bloomLevel: 3,
@@ -648,21 +648,21 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
         spektrum: [
           {
             patientName: "Lukas (2,5 Jahre, Verbrühung)",
-            situationsId: "ls-lukas-verbruehung",
+            situationsId: "ls-lukas-verbrühung",
             hauptfaktor: "KUSS-Skala statt NRS",
             kurzbeschreibung:
               "Bei Säuglingen + Kleinkindern (< 4 J.) kann man keine NRS verwenden — sie verstehen Skalen nicht. Stattdessen: **KUSS (Kindliche Unbehagens- und Schmerz-Skala)** mit 5 Beobachtungs-Items à 0-2 Punkten = max. 10. Ab Score ≥ 4 interventionspflichtig.",
           },
           {
-            patientName: "Herr Bauer (Demenz, fortgeschritten)",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür (Demenz, fortgeschritten)",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "BESD/PAINAD bei Demenz",
             kurzbeschreibung:
               "Bei Demenz-Patient(inn)en, die NRS nicht mehr zuverlässig zuordnen können, nutzt du **BESD (Beurteilung von Schmerzen bei Demenz)** oder **PAINAD** — Beobachtung von Atmung, Lautäußerung, Mimik, Körpersprache, Trostbarkeit.",
           },
           {
             patientName: "Frau Yilmaz (Hüft-TEP)",
-            situationsId: "ls-yilmaz-hueft-tep",
+            situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "Schmerz im Bewegungs-Kontext",
             kurzbeschreibung:
               "Bei post-OP-Schmerz: NRS in Ruhe **und** in Bewegung getrennt erheben. Mobilisation gelingt nur bei NRS-in-Bewegung ≤ 3-4 — sonst Analgesie 30 Min vor Mobilisation einplanen.",
@@ -676,7 +676,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
           vorderseite:
             "Frau M. (82, Hüftschmerz nach Sturz) sagt: \"Es ist etwas unangenehm.\" Du fragst sie nach NRS. Sie sagt: \"Vielleicht eine 8.\" — Was bedeutet das, was tust du?",
           rueckseite:
-            "NRS 8 = **starker Schmerz**, sofort handeln. Schritte: Lagerung optimieren (entlastend), Bedarfsanalgesie nach AVO besprechen, Arzt informieren (SBAR), nach Wirkbeginn (15-30 Min) re-assessen.\n\nSchwellenwerte (DNQP 2020):\n• 0-3 leicht — beobachten\n• 4-6 mäßig — interventionspflichtig\n• 7-10 stark — sofort handeln\n\nAlternative Skalen: KUSS (Kleinkind, Lukas), BESD/PAINAD (Demenz, Bauer), VAS, CPOT (Intensiv). Faustregel: **NRS ≥ 4 ist NIE \"wenig\".**",
+            "NRS 8 = **starker Schmerz**, sofort handeln. Schritte: Lagerung optimieren (entlastend), Bedarfsanalgesie nach AVO besprechen, Arzt informieren (SBAR), nach Wirkbeginn (15-30 Min) re-assessen.\n\nSchwellenwerte (DNQP 2020):\n• 0-3 leicht — beobachten\n• 4-6 mäßig — interventionspflichtig\n• 7-10 stark — sofort handeln\n\nAlternative Skalen: KUSS (Kleinkind, Lukas), BESD/PAINAD (Demenz, Baür), VAS, CPOT (Intensiv). Faustregel: **NRS ≥ 4 ist NIE \"wenig\".**",
         },
       },
     },

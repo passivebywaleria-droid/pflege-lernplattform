@@ -158,7 +158,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_EVALUIEREN: SituationsPhase = {
             text: "Emilia i.v.-Infusion planen, da Trinkmenge noch unter Tagesziel",
             isCorrect: false,
             explanation:
-              "Voreilig. Emilias Trinkmenge verbessert sich. Bis zur i.v.-Infusion wird erst beim Versagen der oralen Maßnahmen eskaliert — das entscheidet der Arzt. Die aktuelle Situation rechtfertigt keine sofortige Infusion.",
+              "Voreilig. Emilias Trinkmenge verbessert sich. Bis zur i.v.-Infusion wird erst beim Versagen der oralen Maßnahmen eskaliert — das entscheidet der Arzt. Die aktülle Situation rechtfertigt keine sofortige Infusion.",
             explanationB1:
               "Nein — zu früh. Emilia trinkt besser. Der Arzt entscheidet ob ein Tropf nötig ist — noch nicht jetzt.",
           },
@@ -205,7 +205,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_EVALUIEREN: SituationsPhase = {
           placeholder:
             "Denke z.B. an: die emotionale Komponente (Mutter weint), den Zusammenhang Nase und Trinken, die Wichtigkeit des Erklärens, deine eigene Unsicherheit beim Säuglingsbad...",
           systemPrompt:
-            "Bewerte die Reflexion nach dem Sandwich-Prinzip: Anerkennen was gut beobachtet wurde, dann ergänzen was fehlt, dann ermutigen. Themen die in der Reflexion auftauchen können: emotionale Begleitung der Mutter, physiologischer Mechanismus Nasenatmer, Bedeutung der Erklärung für das Eltern-Empowerment, eigene Unsicherheit beim Säuglingsbad. Keine Musterantwort erwarten — individuelle Antworten sind das Ziel.",
+            "Bewerte die Reflexion nach dem Sandwich-Prinzip: Anerkennen was gut beobachtet wurde, dann ergänzen was fehlt, dann ermutigen. Themen die in der Reflexion auftauchen können: emotionale Begleitung der Mutter, physiologischer Mechanismus Nasenatmer, Bedeutung der Erklärung für das Eltern-Empowerment, eigene Unsicherheit beim Säuglingsbad. Keine Musterantwort erwarten — individülle Antworten sind das Ziel.",
         },
       },
     },

@@ -51,17 +51,17 @@ export const CE02_NGUYEN_IW_01_STOMA_ARTEN: ContentStep = {
     storyAufhaengerB1:
       "In der Übergabe steht: Herr Nguyen hat ein \"endständiges Kolostoma\". Was bedeutet das? Und wie unterscheidet es sich von anderen Stoma-Formen?",
     kerntext:
-      "**Was ist ein Stoma?** Eine operativ angelegte Öffnung, durch die der Darm über die Bauchdecke nach außen geleitet wird. Der Stuhl wird in einem Beutel aufgefangen.\n\n**Zwei Haupt-Typen nach Darmabschnitt:**\n\n• **Kolostoma** — aus dem Dickdarm (Kolon). Output: breiig bis geformt, wenig aggressiv für die Haut.\n\n• **Ileostoma** — aus dem Dünndarm (Ileum). Output: dünnflüssig, enzymatisch aggressiv — höhere Hautgefährdung.\n\n**Zwei Haupt-Typen nach Dauer:**\n\n• **Endständig** = dauerhaft. Das Darmende wird durch die Bauchdecke geführt und vernäht. Keine Rückverlagerung geplant. Herr Nguyen hat diesen Typ.\n\n• **Doppelläufig** = vorübergehend. Beide Darmschenkel (zuführend + abführend) werden ausgeleitet. Rückverlagerung nach Heilung möglich.\n\n**Warum ist das wichtig für die Pflege?** Endständiges Kolostoma = dauerhafte Körperbildveränderung. Die Anleitung zur Selbstversorgung hat höchste Priorität — Herr Nguyen wird dieses Stoma sein Leben lang haben.",
+      "**Was ist ein Stoma?** Eine operativ angelegte Öffnung, durch die der Darm über die Bauchdecke nach außen geleitet wird. Der Stuhl wird in einem Beutel aufgefangen.\n\n**Zwei Haupt-Typen nach Darmabschnitt:**\n\n• **Kolostoma** — aus dem Dickdarm (Kolon). Output: breiig bis geformt, wenig aggressiv für die Haut.\n\n• **Ileostoma** — aus dem Dünndarm (Ileum). Output: dünnflüssig, enzymatisch aggressiv — höhere Hautgefährdung.\n\n**Zwei Haupt-Typen nach Daür:**\n\n• **Endständig** = daürhaft. Das Darmende wird durch die Bauchdecke geführt und vernäht. Keine Rückverlagerung geplant. Herr Nguyen hat diesen Typ.\n\n• **Doppelläufig** = vorübergehend. Beide Darmschenkel (zuführend + abführend) werden ausgeleitet. Rückverlagerung nach Heilung möglich.\n\n**Warum ist das wichtig für die Pflege?** Endständiges Kolostoma = daürhafte Körperbildveränderung. Die Anleitung zur Selbstversorgung hat höchste Priorität — Herr Nguyen wird dieses Stoma sein Leben lang haben.",
     kerntextB1:
-      "**Was ist ein Stoma?** Eine Öffnung am Bauch. Der Darm kommt durch die Bauchwand nach draußen. Der Stuhl geht in einen Beutel.\n\n**Zwei Stoma-Typen:**\n\n• **Kolostoma** = aus dem Dickdarm. Stuhl ist breiig bis fest.\n\n• **Ileostoma** = aus dem Dünndarm. Stuhl ist dünnflüssig und aggressiver für die Haut.\n\n**Dauerhaft oder vorübergehend:**\n\n• **Endständig** = bleibt für immer. Herr Nguyen hat diesen Typ.\n\n• **Doppelläufig** = kann zurückverlegt werden.\n\nHerr Nguyen muss lernen, sein Stoma selbst zu versorgen. Es bleibt dauerhaft.",
+      "**Was ist ein Stoma?** Eine Öffnung am Bauch. Der Darm kommt durch die Bauchwand nach draußen. Der Stuhl geht in einen Beutel.\n\n**Zwei Stoma-Typen:**\n\n• **Kolostoma** = aus dem Dickdarm. Stuhl ist breiig bis fest.\n\n• **Ileostoma** = aus dem Dünndarm. Stuhl ist dünnflüssig und aggressiver für die Haut.\n\n**Daürhaft oder vorübergehend:**\n\n• **Endständig** = bleibt für immer. Herr Nguyen hat diesen Typ.\n\n• **Doppelläufig** = kann zurückverlegt werden.\n\nHerr Nguyen muss lernen, sein Stoma selbst zu versorgen. Es bleibt daürhaft.",
     faustregel:
-      "**Endständig = dauerhaft.** Herr Nguyen lernt Selbstversorgung — nicht als Option, sondern als Ziel.",
+      "**Endständig = daürhaft.** Herr Nguyen lernt Selbstversorgung — nicht als Option, sondern als Ziel.",
     faustregelB1:
       "Endständig heißt: Das Stoma bleibt für immer. Herr Nguyen muss lernen, es selbst zu versorgen.",
     spektrum: [
       {
         patientName: "Frau Yilmaz",
-        situationsId: "ls-yilmaz-hueft-tep",
+        situationsId: "ls-yilmaz-hüft-tep",
         hauptfaktor: "Kein Stoma, aber post-OP Darm-Atonie möglich",
         kurzbeschreibung:
           "Bei ihr geht es um post-OP-Motilitätsstörungen nach Hüft-TEP — kein Stoma, aber der Darm reagiert auf Narkose und Immobilisation.",
@@ -75,7 +75,7 @@ export const CE02_NGUYEN_IW_01_STOMA_ARTEN: ContentStep = {
       },
       {
         patientName: "Emilia",
-        situationsId: "ls-emilia-saeugling",
+        situationsId: "ls-emilia-säugling",
         hauptfaktor: "Neugeborenenausscheidung (Mekonium)",
         kurzbeschreibung:
           "Bei Säugling Emilia geht es um normalen Mekonium-Abgang und Stuhlbeobachtung — ein ganz anderer Kontext, aber dasselbe Grundprinzip: Output beobachten + dokumentieren.",
@@ -85,7 +85,7 @@ export const CE02_NGUYEN_IW_01_STOMA_ARTEN: ContentStep = {
       vorderseite:
         "Herr Nguyen hat ein endständiges Kolostoma nach Sigmaresektion. Was bedeutet 'endständig' — und warum ist das für die Pflegeplanung entscheidend?",
       rueckseite:
-        "Endständig = Darmende durch Bauchdecke nach außen, dauerhaft, keine Rückverlagerung. Kolostoma = Dickdarm, breiig-geformter Output. Unterschied: Ileostoma = Dünndarm, dünnflüssig, hautgefährdend. Pflegerisch: Selbstversorgung ist Primärziel — Anleitung hat höchste Priorität. Spektrum: Petrov (Stuhlinkontinenz bei Hemiparese), Emilia (Mekonium-Beobachtung). Faustregel: **Endständig = dauerhaft. Selbstversorgung ist das Ziel.**",
+        "Endständig = Darmende durch Bauchdecke nach außen, daürhaft, keine Rückverlagerung. Kolostoma = Dickdarm, breiig-geformter Output. Unterschied: Ileostoma = Dünndarm, dünnflüssig, hautgefährdend. Pflegerisch: Selbstversorgung ist Primärziel — Anleitung hat höchste Priorität. Spektrum: Petrov (Stuhlinkontinenz bei Hemiparese), Emilia (Mekonium-Beobachtung). Faustregel: **Endständig = daürhaft. Selbstversorgung ist das Ziel.**",
     },
   },
 };
@@ -143,9 +143,9 @@ export const CE02_NGUYEN_IW_02_HAUT_MAZERIERUNG: ContentStep = {
     storyAufhaenger:
       "Du schaust gleich auf die Haut rund um Herrn Nguyens Stoma. Bei Frau Yilmaz war die Hautinspektion auf Dekubitus fokussiert — Druck war das Problem. Hier ist die Gefahr eine andere: enzymatische Hautzerstörung durch Stomainhalt.",
     storyAufhaengerB1:
-      "Du schaust gleich auf die Haut rund um das Stoma. Von Frau Yilmaz kennst du die Hautbeobachtung schon. Bei Herrn Nguyen kommt etwas Neues dazu: Stuhl auf der Haut ist schädlich.",
+      "Du schaust gleich auf die Haut rund um das Stoma. Von Frau Yilmaz kennst du die Hautbeobachtung schon. Bei Herrn Nguyen kommt etwas Neüs dazu: Stuhl auf der Haut ist schädlich.",
     kerntext:
-      "**Was ist Mazerierung?** Aufweichung und Zerstörung der Haut durch laengeren Kontakt mit Feuchtigkeit — hier: Stomainhalt.\n\n**Warum passiert das beim Stoma?**\n\n• Kolostoma-Output ist leicht alkalisch — er zerstört den **Säureschutzmantel** (pH 5,5) der Haut.\n\n• Ileostoma-Output ist noch aggressiver — er enthält Verdauungsenzyme (Proteasen, Lipasen).\n\n• Bei Leckage (Stomaplatte sitzt nicht dicht) trifft Stomainhalt direkt auf die peristomale Haut.\n\n**Wie erkennst du Mazerierung?** Haut aufgeweicht, weißlich, verletzlich — schon minimale Reibung reißt sie ein. Frühzeichen: Rötung im Ring um die Stomaplatte.\n\n**Was schützt?**\n• Passende Plattengröße (Stoma + 2 mm Sicherheitsabstand)\n• Schutzpaste (füllt Unebenheiten, schliesst Lücken)\n• Regelmäßiger Beutelwechsel (nicht überfuellen lassen)",
+      "**Was ist Mazerierung?** Aufweichung und Zerstörung der Haut durch längeren Kontakt mit Feuchtigkeit — hier: Stomainhalt.\n\n**Warum passiert das beim Stoma?**\n\n• Kolostoma-Output ist leicht alkalisch — er zerstört den **Säureschutzmantel** (pH 5,5) der Haut.\n\n• Ileostoma-Output ist noch aggressiver — er enthält Verdauungsenzyme (Proteasen, Lipasen).\n\n• Bei Leckage (Stomaplatte sitzt nicht dicht) trifft Stomainhalt direkt auf die peristomale Haut.\n\n**Wie erkennst du Mazerierung?** Haut aufgeweicht, weißlich, verletzlich — schon minimale Reibung reißt sie ein. Frühzeichen: Rötung im Ring um die Stomaplatte.\n\n**Was schützt?**\n• Passende Plattengröße (Stoma + 2 mm Sicherheitsabstand)\n• Schutzpaste (füllt Unebenheiten, schließt Lücken)\n• Regelmäßiger Beutelwechsel (nicht überfüllen lassen)",
     kerntextB1:
       "**Was ist Mazerierung?** Die Haut wird durch Feuchtigkeit beschädigt.\n\nBei Herrn Nguyen: Stuhl aus dem Stoma trifft auf die Haut. Der Stuhl greift die Haut an.\n\n**Wie erkennst du das?** Die Haut wird weiß, weich und reißt leicht ein. Zuerst: Rötung rund um die Stomaplatte.\n\n**Was schützt die Haut?**\n• Die Stomaplatte muss genau passen (Stoma + 2 mm)\n• Schutzpaste schützt die Haut\n• Beutel regelmäßig wechseln",
     faustregel:
@@ -169,7 +169,7 @@ export const CE02_NGUYEN_IW_02_HAUT_MAZERIERUNG: ContentStep = {
       },
       {
         patientName: "Emilia",
-        situationsId: "ls-emilia-saeugling",
+        situationsId: "ls-emilia-säugling",
         hauptfaktor: "Windel-Dermatitis",
         kurzbeschreibung:
           "Auch bei Säugling Emilia: Stuhl auf der Haut verursacht Mazeration. Windel-Dermatitis = Säuglingsversion desselben Problems.",
@@ -204,7 +204,7 @@ export const CE02_NGUYEN_IW_03_STOMA_OUTPUT: ContentStep = {
   lernziel: "ce02-nguyen-beob-stoma-output-wissen",
   tag: "pflege",
   themaPrimaer: "stuhlausscheidung",
-  themenSekundaer: ["ernaehrungsassessment"],
+  themenSekundaer: ["ernährungsassessment"],
   transition:
     "Du weißt jetzt, was normaler Stoma-Output am 4. Tag ist. Jetzt: Was isst Herr Nguyen eigentlich?",
   contentC1: {
@@ -229,7 +229,7 @@ export const CE02_NGUYEN_IW_03_STOMA_OUTPUT: ContentStep = {
     storyAufhaengerB1:
       "Im Beutel von Herrn Nguyen ist dünnflüssiger, gelblich-brauner Stuhl. Der Beutel ist 1/3 voll. Ist das normal am 4. Tag nach der OP?",
     kerntext:
-      "**Die Transitphase (Tag 3–7 post-OP):**\n\nNach einer Darm-OP startet die Peristaltik (Darmbewegung) langsam wieder. Der Output verändert sich schrittweise:\n\n• **Tag 1–3:** Kein oder sehr wenig Output, evtl. Schleim. Der Darm erholt sich.\n\n• **Tag 3–7 (Transitphase):** Dünnflüssig bis wässrig, gelblich-braun. Das ist **normal** — der Darm arbeitet wieder, aber der Kostaufbau hat gerade erst begonnen. Herrn Nguyens Befund passt genau hierher.\n\n• **Ab Woche 2:** Zunehmend breiig bis geformt, je nach Kostaufbau und Darmabschnitt.\n\n**Kolostoma vs. Ileostoma — Output-Unterschied:**\n• Kolostoma (Herr Nguyen): geformter Output nach Eingewöhnungsphase\n• Ileostoma: dauerhaft dünnflüssig (Dickdarm fehlt als \"Wasserentzieher\")\n\n**Alarmsignal:** Kein Output über 48h trotz Kostaufbau → Ileus-Verdacht → Arzt sofort informieren.",
+      "**Die Transitphase (Tag 3–7 post-OP):**\n\nNach einer Darm-OP startet die Peristaltik (Darmbewegung) langsam wieder. Der Output verändert sich schrittweise:\n\n• **Tag 1–3:** Kein oder sehr wenig Output, evtl. Schleim. Der Darm erholt sich.\n\n• **Tag 3–7 (Transitphase):** Dünnflüssig bis wässrig, gelblich-braun. Das ist **normal** — der Darm arbeitet wieder, aber der Kostaufbau hat gerade erst begonnen. Herrn Nguyens Befund passt genau hierher.\n\n• **Ab Woche 2:** Zunehmend breiig bis geformt, je nach Kostaufbau und Darmabschnitt.\n\n**Kolostoma vs. Ileostoma — Output-Unterschied:**\n• Kolostoma (Herr Nguyen): geformter Output nach Eingewöhnungsphase\n• Ileostoma: daürhaft dünnflüssig (Dickdarm fehlt als \"Wasserentzieher\")\n\n**Alarmsignal:** Kein Output über 48h trotz Kostaufbau → Ileus-Verdacht → Arzt sofort informieren.",
     kerntextB1:
       "**Was ist die Transitphase?** In den ersten Tagen nach der OP erholt sich der Darm.\n\n• **Tag 1–3:** Fast kein Stuhl, manchmal Schleim.\n• **Tag 3–7:** Dünnflüssig, gelblich — das ist **normal**. Herrn Nguyens Beutel-Inhalt ist genau so.\n• **Ab Woche 2:** Stuhl wird fester.\n\n**Alarmsignal:** Gar kein Stuhl seit 48 Stunden, obwohl Herr Nguyen isst → sofort Arzt informieren.",
     faustregel:
@@ -249,11 +249,11 @@ export const CE02_NGUYEN_IW_03_STOMA_OUTPUT: ContentStep = {
         situationsId: "ls-petrov-schlaganfall",
         hauptfaktor: "Dysphagie + reduzierte Darmmotilität",
         kurzbeschreibung:
-          "Reduzierter Intake wegen Schluckstörung fuehrt auch bei ihm zu verändertem Stuhl — aber aus neurologischer Ursache, nicht post-OP.",
+          "Reduzierter Intake wegen Schluckstörung führt auch bei ihm zu verändertem Stuhl — aber aus neurologischer Ursache, nicht post-OP.",
       },
       {
         patientName: "Emilia",
-        situationsId: "ls-emilia-saeugling",
+        situationsId: "ls-emilia-säugling",
         hauptfaktor: "Muttermilchstuhl vs. Formulastuhl",
         kurzbeschreibung:
           "Auch bei Säugling Emilia ist Stuhlkonsistenz ein wichtiges Beobachtungskriterium — Muttermilchstuhl ist senf-gelb und weich, Formulastuhl fester.",
@@ -265,7 +265,7 @@ export const CE02_NGUYEN_IW_03_STOMA_OUTPUT: ContentStep = {
       "Andere Stuhl-Probleme, die bei Herrn Nguyen nicht vorkommen: **Paradoxe Diarrhoe** (dünner Stuhl obwohl eigentlich Verstopfung vorliegt). Mehr dazu in einem anderen Thema.",
     karteikarte: {
       vorderseite:
-        "Herrn Nguyens Stoma-Beutel zeigt am 4. POD dünnflüssig-gelblichen Output. Normal oder auffaellig?",
+        "Herrn Nguyens Stoma-Beutel zeigt am 4. POD dünnflüssig-gelblichen Output. Normal oder auffällig?",
       rueckseite:
         "Normal — Tag 3–7 ist die Transitphase: Darm arbeitet wieder, Kostaufbau beginnt, Output noch dünnflüssig. Ab Woche 2 zunehmend geformt bei Kolostoma. Alarmsignal: Kein Output > 48h trotz Kostaufbau = Ileus-Verdacht. Spektrum: Kovac (chron. Obstipation), Petrov (Dysphagie), Emilia (Säugling-Stuhlbeobachtung). **Dünnflüssig am Tag 4 = Transitphase = normal.**",
     },
@@ -320,7 +320,7 @@ export const CE02_NGUYEN_IW_04_BEUTELWECHSEL: ContentStep = {
     storyAufhaengerB1:
       "Gleich wechselst du den Beutel. Aber erst: Im Patientenblatt steht \"Stoma 60 mm\". Übernimmst du den Wert? Oder misst du selbst? Die richtige Antwort schützt die Haut von Herrn Nguyen.",
     kerntext:
-      "**Drei Grundprinzipien beim Beutelwechsel:**\n\n**1. Schablone — bei JEDEM Wechsel neu messen.**\nDas Stoma schwillt in den ersten **6–8 Wochen post-OP ab**. Ein OP-Tag-Wert ist nach wenigen Tagen veraltet. Falsche Größe = Hautschädigung.\n\n**2. Lochgröße = Stoma-Durchmesser + 2 mm.**\n• Zu groß (+5 mm): Haut zwischen Platte und Stoma liegt frei → Stomainhalt greift die Haut an → Mazerierung.\n• Zu klein (exakt auf Stoma): Platte klemmt die Stomaschleimhaut ab → Durchblutungsstörung → Nekrose-Risiko.\n• Richtig (+2 mm): Haut geschützt, Stoma nicht eingeklemmt.\n\n**3. Schwerkraft-Prinzip beim Abziehen.**\nAlten Beutel von **oben nach unten** abziehen. Die Schwerkraft hält den Stuhl im Beutel, statt ihn über das Stoma zu druecken. Eine Hand zieht, die andere Hand hält die Haut sanft gegen (Hauteinriss vermeiden).",
+      "**Drei Grundprinzipien beim Beutelwechsel:**\n\n**1. Schablone — bei JEDEM Wechsel neu messen.**\nDas Stoma schwillt in den ersten **6–8 Wochen post-OP ab**. Ein OP-Tag-Wert ist nach wenigen Tagen veraltet. Falsche Größe = Hautschädigung.\n\n**2. Lochgröße = Stoma-Durchmesser + 2 mm.**\n• Zu groß (+5 mm): Haut zwischen Platte und Stoma liegt frei → Stomainhalt greift die Haut an → Mazerierung.\n• Zu klein (exakt auf Stoma): Platte klemmt die Stomaschleimhaut ab → Durchblutungsstörung → Nekrose-Risiko.\n• Richtig (+2 mm): Haut geschützt, Stoma nicht eingeklemmt.\n\n**3. Schwerkraft-Prinzip beim Abziehen.**\nAlten Beutel von **oben nach unten** abziehen. Die Schwerkraft hält den Stuhl im Beutel, statt ihn über das Stoma zu drücken. Eine Hand zieht, die andere Hand hält die Haut sanft gegen (Hauteinriss vermeiden).",
     kerntextB1:
       "**Drei wichtige Regeln:**\n\n**1. Jedes Mal neu messen.**\nDas Stoma wird in den ersten 6–8 Wochen kleiner. Du misst jedes Mal mit der Schablone.\n\n**2. Lochgröße = Stoma + 2 mm.**\nZu groß: Stuhl kommt auf die Haut. Zu klein: Platte klemmt das Stoma ab. 2 mm = genau richtig.\n\n**3. Von oben nach unten abziehen.**\nDen alten Beutel von oben nach unten abziehen. So fließt der Stuhl nach unten — nicht über das Stoma.",
     faustregel:
@@ -336,18 +336,18 @@ export const CE02_NGUYEN_IW_04_BEUTELWECHSEL: ContentStep = {
           "Bei Frau Yilmaz ist es Wundversorgung statt Stomaversorgung — aber das Prinzip \"aseptisch, von innen nach außen, nicht kontaminieren\" ist das gleiche Grundmuster.",
       },
       {
-        patientName: "Herr Bauer",
-        situationsId: "ls-bauer-demenz-sturz",
+        patientName: "Herr Baür",
+        situationsId: "ls-baür-demenz-sturz",
         hauptfaktor: "Demenz + Manipulation an Verbund",
         kurzbeschreibung:
-          "Bei Herrn Bauer reißt er sich manchmal Verbundmaterial ab. Bei Herrn Nguyen ist Manipulation des Stoma-Beutels ein potenzielles Risiko, wenn er verwirrt oder unruhig ist — in der Nacht z.B.",
+          "Bei Herrn Baür reißt er sich manchmal Verbundmaterial ab. Bei Herrn Nguyen ist Manipulation des Stoma-Beutels ein potenzielles Risiko, wenn er verwirrt oder unruhig ist — in der Nacht z.B.",
       },
       {
         patientName: "Frau Schmidt",
         situationsId: "ls-schmidt-adipositas",
         hauptfaktor: "Hautfalten erschweren Versorgung",
         kurzbeschreibung:
-          "Hautfalten bei Adipositas würden ein Stoma besonders problematisch machen: die Platte sitzt nicht dicht, Faltenwurf fuehrt zu Leckage. Gleicher Mechanismus wie bei Herrn Nguyens Leckage-Komplikation.",
+          "Hautfalten bei Adipositas würden ein Stoma besonders problematisch machen: die Platte sitzt nicht dicht, Faltenwurf führt zu Leckage. Gleicher Mechanismus wie bei Herrn Nguyens Leckage-Komplikation.",
       },
     ],
     karteikarte: {
@@ -459,7 +459,7 @@ export const CE02_NGUYEN_IW_05_SBAR_STOMA: ContentStep = {
  * Grund: Der häufigste Anfänger-Fehler ist, den Wert aus dem Patientenblatt zu übernehmen
  */
 export const CE02_NGUYEN_IW_06_LOCHGROESSE: ContentStep = {
-  stepId: "ce02-nguyen-dur-01a-lochgroesse-wissen",
+  stepId: "ce02-nguyen-dur-01a-lochgrösse-wissen",
   phase: 4,
   stepType: "inlineWissen",
   bloomLevel: 2,
@@ -469,7 +469,7 @@ export const CE02_NGUYEN_IW_06_LOCHGROESSE: ContentStep = {
   ],
   track: "basis",
   modus: "entdecker",
-  lernziel: "ce02-nguyen-dur-lochgroesse-wissen",
+  lernziel: "ce02-nguyen-dur-lochgrösse-wissen",
   tag: "pflege",
   themaPrimaer: "stuhlausscheidung",
   transition:
@@ -492,7 +492,7 @@ export const CE02_NGUYEN_IW_06_LOCHGROESSE: ContentStep = {
     bausteinRef: "stuhlausscheidung-stoma-abschwellung",
     themaPrimaer: "stuhlausscheidung",
     storyAufhaenger:
-      "Du stehst mit der neuen Hautschutzplatte bereit. Im Patientenblatt steht: \"Stoma 60 mm, gemessen am OP-Tag.\" Das war vor 4 Tagen. Übernimmst du den Wert? Eine erfahrene Pflegekraft würde sagen: niemals.",
+      "Du stehst mit der neün Hautschutzplatte bereit. Im Patientenblatt steht: \"Stoma 60 mm, gemessen am OP-Tag.\" Das war vor 4 Tagen. Übernimmst du den Wert? Eine erfahrene Pflegekraft würde sagen: niemals.",
     storyAufhaengerB1:
       "Du hast die neue Platte bereit. Im Patientenblatt steht: \"Stoma 60 mm\" — gemessen vor 4 Tagen. Nimmst du diesen Wert? Nein.",
     kerntext:
@@ -509,7 +509,7 @@ export const CE02_NGUYEN_IW_06_LOCHGROESSE: ContentStep = {
         situationsId: "ls-yilmaz-spirale2",
         hauptfaktor: "Wundgröße verändert sich — regelmäßig nachmessen",
         kurzbeschreibung:
-          "Auch bei Frau Yilmaz' Dekubitus-Wunde verändert sich die Größe — regelmaeßiges Nachmessen ist dort genauso Pflicht (Wunddokumentation cm x cm).",
+          "Auch bei Frau Yilmaz' Dekubitus-Wunde verändert sich die Größe — regelmäßiges Nachmessen ist dort genauso Pflicht (Wunddokumentation cm x cm).",
       },
       {
         patientName: "Herr Petrov",
@@ -551,7 +551,7 @@ export const CE02_NGUYEN_IW_07_LECKAGE: ContentStep = {
   transition:
     "Haut vor Beutel. Das ist die Regel. Gleich passiert genau das — Herrn Nguyens Beutel ist undicht.",
   contentC1: {
-    title: "Leckage-Management: Haut zuerst",
+    title: "Leckage-Management: Haut zürst",
     body: "",
     glossarBegriffe: ["Leckage", "Mazerierung", "Stomaplatte"],
   },
@@ -565,13 +565,13 @@ export const CE02_NGUYEN_IW_07_LECKAGE: ContentStep = {
     themaPrimaer: "stuhlausscheidung",
     themenSekundaer: ["haut"],
     storyAufhaenger:
-      "Stell dir vor: 20 Minuten nach deinem Beutelwechsel ruft Herr Nguyen. Der Beutel ist undicht. Stomainhalt auf der Bauchhaut. Was tust du ZUERST — neuen Beutel anlegen oder Haut reinigen?",
+      "Stell dir vor: 20 Minuten nach deinem Beutelwechsel ruft Herr Nguyen. Der Beutel ist undicht. Stomainhalt auf der Bauchhaut. Was tust du ZUERST — neün Beutel anlegen oder Haut reinigen?",
     storyAufhaengerB1:
-      "Stell dir vor: Der Beutel ist undicht. Stuhl auf der Haut. Was tust du zuerst — neuen Beutel oder Haut reinigen?",
+      "Stell dir vor: Der Beutel ist undicht. Stuhl auf der Haut. Was tust du zürst — neün Beutel oder Haut reinigen?",
     kerntext:
       "**Leckage ist die häufigste Stoma-Komplikation.** Rund 70 % der Stomaträger erleben sie mindestens einmal.\n\n**Die goldene Regel: Haut vor Beutel.**\n\n• **Schritt 1:** Stomainhalt sofort von der Haut entfernen. Lauwarmes Wasser, keine Desinfektionsmittel. Haut gründlich trocknen.\n\n• **Schritt 2:** Ursache beurteilen. Wo war die Leckage? Platte-Haut-Übergang (Schutzpaste unzureichend, Faltenwurf)? Beutel-Platten-Verbindung (Ring beschädigt)? Plattengröße falsch (Stoma abgeschwollen)?\n\n• **Schritt 3:** Platte neu anpassen. Stoma nochmals ausmessen, Lochgröße korrigieren.\n\n**Warum Haut vor Beutel?** Kolostoma-Output ist leicht alkalisch — jede Minute auf der Haut beschleunigt die Mazerierung. Der neue Beutel nützt nichts, wenn die Haut darunter bereits geschädigt ist.\n\n**Wann Arzt informieren?** Nur bei sichtbarer Hautschädigung, Stomaprolaps oder wiederholter Leckage trotz korrekter Versorgung.",
     kerntextB1:
-      "**Leckage** heißt: der Beutel ist undicht. Das passiert oft.\n\n**Regel: Erst die Haut reinigen, DANN neuen Beutel anlegen.**\n\n1. Stuhl sofort von der Haut waschen (lauwarmes Wasser). Haut trocknen.\n2. Schauen: Warum war der Beutel undicht? Platte zu groß? Paste fehlt? Hautfalte?\n3. Platte neu anpassen. Stoma nochmals messen.\n\n**Warum Haut zuerst?** Der Stuhl schädigt die Haut. Jede Minute zaehlt.\n\nArzt informieren: nur wenn die Haut sichtbar geschädigt ist oder das Stoma sich verändert hat.",
+      "**Leckage** heißt: der Beutel ist undicht. Das passiert oft.\n\n**Regel: Erst die Haut reinigen, DANN neün Beutel anlegen.**\n\n1. Stuhl sofort von der Haut waschen (lauwarmes Wasser). Haut trocknen.\n2. Schaün: Warum war der Beutel undicht? Platte zu groß? Paste fehlt? Hautfalte?\n3. Platte neu anpassen. Stoma nochmals messen.\n\n**Warum Haut zürst?** Der Stuhl schädigt die Haut. Jede Minute zählt.\n\nArzt informieren: nur wenn die Haut sichtbar geschädigt ist oder das Stoma sich verändert hat.",
     faustregel:
       "**Haut vor Beutel.** Erst reinigen und trocknen, dann Ursache klären, dann neu anlegen.",
     faustregelB1:
@@ -589,11 +589,11 @@ export const CE02_NGUYEN_IW_07_LECKAGE: ContentStep = {
         situationsId: "ls-schmidt-adipositas",
         hauptfaktor: "Hautfalten erhöhen Leckage-Risiko",
         kurzbeschreibung:
-          "Hautfalten bei Adipositas verhindern dichtes Sitzen der Stomaplatte. Bei Frau Schmidt wäre Leckage ein Dauerproblem — spezielle konvexe Platten oder Gürtelsysteme nötig.",
+          "Hautfalten bei Adipositas verhindern dichtes Sitzen der Stomaplatte. Bei Frau Schmidt wäre Leckage ein Daürproblem — spezielle konvexe Platten oder Gürtelsysteme nötig.",
       },
       {
         patientName: "Emilia",
-        situationsId: "ls-emilia-saeugling",
+        situationsId: "ls-emilia-säugling",
         hauptfaktor: "Windel-Leckage",
         kurzbeschreibung:
           "Auch bei Säugling Emilia: Windel-Leckage = Stuhl auf der Haut = sofortige Reinigung. Gleiches Prinzip, anderer Kontext.",
@@ -603,7 +603,7 @@ export const CE02_NGUYEN_IW_07_LECKAGE: ContentStep = {
       vorderseite:
         "Herrn Nguyens Stoma-Beutel ist 20 Minuten nach dem Wechsel undicht. Stomainhalt auf der Bauchhaut. Was ist die erste Maßnahme?",
       rueckseite:
-        "Haut sofort reinigen und gründlich trocknen (Kolostoma-Output ist alkalisch → Mazerierung). DANN Ursache beurteilen (Platte-Haut-Übergang? Plattengröße? Verbindung?). DANN Platte neu anpassen + Stoma nachmessen. Arzt nur bei sichtbarer Hautschädigung oder Stomaveraenderung. Spektrum: Yilmaz (Wundschutz), Schmidt (Hautfalten-Leckage), Emilia (Windel-Leckage). **Haut vor Beutel.**",
+        "Haut sofort reinigen und gründlich trocknen (Kolostoma-Output ist alkalisch → Mazerierung). DANN Ursache beurteilen (Platte-Haut-Übergang? Plattengröße? Verbindung?). DANN Platte neu anpassen + Stoma nachmessen. Arzt nur bei sichtbarer Hautschädigung oder Stomaveränderung. Spektrum: Yilmaz (Wundschutz), Schmidt (Hautfalten-Leckage), Emilia (Windel-Leckage). **Haut vor Beutel.**",
     },
   },
 };
@@ -657,9 +657,9 @@ export const CE02_NGUYEN_IW_08_STOMA_DOKU: ContentStep = {
     storyAufhaengerB1:
       "Du bewertest gleich den Morgen bei Herrn Nguyen. Aber was muss alles in der Stoma-Dokumentation stehen? Es gibt 9 wichtige Punkte.",
     kerntext:
-      "**Die 9 Pflicht-Elemente der Stomadokumentation:**\n\n1. **Datum + Uhrzeit** des Beutelwechsels\n2. **Stoma-Befund:** Farbe, Prominenz, Schleimhautzustand\n3. **Hautumgebung:** Rötung, Mazerierung, Einrisse?\n4. **Output:** Konsistenz, Farbe, geschaetzte Menge\n5. **Leckage:** Ja/nein, Ursache, Maßnahme\n6. **Bauchdeckenwunde:** Kurzer Querverweis (Detail in Wunddokumentation)\n7. **Anwesende:** Wer war beim Wechsel dabei?\n8. **Angehörigen-Anleitung:** Was wurde gezeigt, von wem?\n9. **Stomatherapeut-Visite:** Wann, was, Ergebnis\n\n**Warum 9 Elemente?** Behandlungskontinuität. Die nächste Schicht muss wissen: Was wurde gemacht? Was ist offen? Wie sieht das Stoma aus? Ohne diese 9 Punkte fehlen Informationen und die Versorgung hat Lücken.",
+      "**Die 9 Pflicht-Elemente der Stomadokumentation:**\n\n1. **Datum + Uhrzeit** des Beutelwechsels\n2. **Stoma-Befund:** Farbe, Prominenz, Schleimhautzustand\n3. **Hautumgebung:** Rötung, Mazerierung, Einrisse?\n4. **Output:** Konsistenz, Farbe, geschätzte Menge\n5. **Leckage:** Ja/nein, Ursache, Maßnahme\n6. **Bauchdeckenwunde:** Kurzer Querverweis (Detail in Wunddokumentation)\n7. **Anwesende:** Wer war beim Wechsel dabei?\n8. **Angehörigen-Anleitung:** Was wurde gezeigt, von wem?\n9. **Stomatherapeut-Visite:** Wann, was, Ergebnis\n\n**Warum 9 Elemente?** Behandlungskontinuität. Die nächste Schicht muss wissen: Was wurde gemacht? Was ist offen? Wie sieht das Stoma aus? Ohne diese 9 Punkte fehlen Informationen und die Versorgung hat Lücken.",
     kerntextB1:
-      "**9 Punkte für die Stoma-Dokumentation:**\n\n1. Datum und Uhrzeit des Beutelwechsels\n2. Wie sieht das Stoma aus? (Farbe, Größe)\n3. Wie sieht die Haut rund um das Stoma aus?\n4. Was kommt aus dem Stoma? (Farbe, Menge, duenn/fest)\n5. Gab es eine Leckage? Was hast du getan?\n6. Kurzer Hinweis auf die Bauch-Wunde\n7. Wer war dabei?\n8. Was hast du der Ehefrau gezeigt?\n9. Was hat der Stomatherapeut gesagt?\n\n**Warum?** Die nächste Schicht muss wissen, was passiert ist.",
+      "**9 Punkte für die Stoma-Dokumentation:**\n\n1. Datum und Uhrzeit des Beutelwechsels\n2. Wie sieht das Stoma aus? (Farbe, Größe)\n3. Wie sieht die Haut rund um das Stoma aus?\n4. Was kommt aus dem Stoma? (Farbe, Menge, dünn/fest)\n5. Gab es eine Leckage? Was hast du getan?\n6. Kurzer Hinweis auf die Bauch-Wunde\n7. Wer war dabei?\n8. Was hast du der Ehefrau gezeigt?\n9. Was hat der Stomatherapeut gesagt?\n\n**Warum?** Die nächste Schicht muss wissen, was passiert ist.",
     faustregel:
       "**9 Elemente = lückenlose Übergabe.** Fehlt eines, fehlt der nächsten Schicht Information.",
     faustregelB1:
@@ -677,7 +677,7 @@ export const CE02_NGUYEN_IW_08_STOMA_DOKU: ContentStep = {
         situationsId: "ls-petrov-schlaganfall",
         hauptfaktor: "Katheter-Dokumentation",
         kurzbeschreibung:
-          "Bei Herrn Petrov ist die Katheter-Dokumentation das Pendant: Katheter-Befund, Urin-Output, Hautumgebung, Liegedauer — gleiche Dokumentationslogik.",
+          "Bei Herrn Petrov ist die Katheter-Dokumentation das Pendant: Katheter-Befund, Urin-Output, Hautumgebung, Liegedaür — gleiche Dokumentationslogik.",
       },
     ],
     karteikarte: {
@@ -763,11 +763,11 @@ export const CE02_NGUYEN_IW_09_BEOBACHTUNG_VS_WERTUNG: ContentStep = {
           "Bei Frau M. war die Unterscheidung einfacher: Sturz = Fakt. Aber auch hier gab es Grauzonen — z.B. 'Frau M. war aufgeregt' (Beobachtung) vs. 'Frau M. hat Angst' (Interpretation).",
       },
       {
-        patientName: "Herr Bauer",
-        situationsId: "ls-bauer-demenz-sturz",
+        patientName: "Herr Baür",
+        situationsId: "ls-baür-demenz-sturz",
         hauptfaktor: "Demenz — 'aggressiv' vs. Beobachtung",
         kurzbeschreibung:
-          "Bei Herrn Bauer: 'Patient ist aggressiv' ist eine Wertung. Korrekt: 'Patient hat die Hand der Pflegekraft weggeschoben und laut gerufen.' Gleiche Logik wie bei Herrn Nguyen.",
+          "Bei Herrn Baür: 'Patient ist aggressiv' ist eine Wertung. Korrekt: 'Patient hat die Hand der Pflegekraft weggeschoben und laut gerufen.' Gleiche Logik wie bei Herrn Nguyen.",
       },
       {
         patientName: "Herr Petrov",
@@ -781,7 +781,7 @@ export const CE02_NGUYEN_IW_09_BEOBACHTUNG_VS_WERTUNG: ContentStep = {
       vorderseite:
         "Herr Nguyen hat gesagt: 'Ich bin kein richtiger Mann mehr.' Gehört das in den Pflegebericht? Und gehört 'Herr Nguyen ist unmotiviert' hinein?",
       rueckseite:
-        "Zitat JA — in Anführungszeichen, als dokumentierte Patientenäußerung. 'Unmotiviert' NEIN — persönliche Wertung, keine Beobachtung. Grundregel: Siehst/hörst/misst du es = rein. Denkst du es = nicht rein. Rechtsgrundlage: SGB V § 630f (sachlich, zeitnah, nachvollziehbar). Spektrum: Bauer ('aggressiv' = Wertung), Petrov (Aphasie-Zitate). **Beobachtung rein, Meinung raus.**",
+        "Zitat JA — in Anführungszeichen, als dokumentierte Patientenäußerung. 'Unmotiviert' NEIN — persönliche Wertung, keine Beobachtung. Grundregel: Siehst/hörst/misst du es = rein. Denkst du es = nicht rein. Rechtsgrundlage: SGB V § 630f (sachlich, zeitnah, nachvollziehbar). Spektrum: Baür ('aggressiv' = Wertung), Petrov (Aphasie-Zitate). **Beobachtung rein, Meinung raus.**",
     },
   },
 };
@@ -833,7 +833,7 @@ export const CE02_NGUYEN_IW_10_WUNDDOKU_TRENNUNG: ContentStep = {
       basisBausteinId: "haut-inspektion-grundlagen",
       basisPatient: "Frau Yilmaz",
       vertiefung:
-        "Bei Frau Yilmaz hast du gelernt, wie Wunddokumentation nach DNQP funktioniert (Wundgröße, Wundrand, Exsudat). Bei Herrn Nguyen kommt eine Besonderheit: Er hat ZWEI Dokumentationsbereiche für die Haut — die peristomale Haut (gehört in die Stomadokumentation) und die Bauchdeckenwunde (gehört in die eigene Wunddokumentation). Verwechslung fuehrt zu Informationsluecken.",
+        "Bei Frau Yilmaz hast du gelernt, wie Wunddokumentation nach DNQP funktioniert (Wundgröße, Wundrand, Exsudat). Bei Herrn Nguyen kommt eine Besonderheit: Er hat ZWEI Dokumentationsbereiche für die Haut — die peristomale Haut (gehört in die Stomadokumentation) und die Bauchdeckenwunde (gehört in die eigene Wunddokumentation). Verwechslung führt zu Informationslücken.",
       vertiefungB1:
         "Von Frau Yilmaz kennst du die Wunddokumentation. Bei Herrn Nguyen gibt es zwei getrennte Dokumentationen: Stoma-Haut in der Stomadoku, Bauch-Wunde in der Wunddoku. Die beiden darf man nicht mischen.",
     },
@@ -842,9 +842,9 @@ export const CE02_NGUYEN_IW_10_WUNDDOKU_TRENNUNG: ContentStep = {
     storyAufhaengerB1:
       "Herr Nguyen hat zwei Hautprobleme: 1) Haut rund um das Stoma leicht rot, 2) Bauch-Wunde leicht rot. Das sind zwei verschiedene Dokumentationen.",
     kerntext:
-      "**Zwei Haut-Befunde, zwei Dokumentationen:**\n\n**1. Peristomale Haut (rund um das Stoma):**\n→ Gehört in die **Stomadokumentation** (als Teil der 9 Pflicht-Elemente)\n→ Befund: Rötung ja/nein, Mazerierung ja/nein, Einrisse ja/nein\n→ Ursache meist: Stomainhalt-Kontakt, Plattendruck, allergische Reaktion auf Klebstoff\n\n**2. Bauchdeckenwunde (OP-Naht):**\n→ Gehört in die **eigene Wunddokumentation** (DNQP-Standard, Wund-Assessment-Bogen)\n→ Befund: 5 Entzündungszeichen prüfen (Rubor, Calor, Dolor, Tumor, Functio laesa)\n→ In der Stomadoku nur ein kurzer Querverweis: \"Bauchdeckenwunde: Status unverändert, Details siehe Wunddoku.\"\n\n**Warum trennen?** Stomadoku wird täglich aktualisiert (bei jedem Beutelwechsel). Wunddoku folgt einem eigenen Rhythmus (z.B. Verbandwechsel alle 2 Tage). Beide haben unterschiedliche Verantwortliche und unterschiedliche Eskalationspfade.",
+      "**Zwei Haut-Befunde, zwei Dokumentationen:**\n\n**1. Peristomale Haut (rund um das Stoma):**\n→ Gehört in die **Stomadokumentation** (als Teil der 9 Pflicht-Elemente)\n→ Befund: Rötung ja/nein, Mazerierung ja/nein, Einrisse ja/nein\n→ Ursache meist: Stomainhalt-Kontakt, Plattendruck, allergische Reaktion auf Klebstoff\n\n**2. Bauchdeckenwunde (OP-Naht):**\n→ Gehört in die **eigene Wunddokumentation** (DNQP-Standard, Wund-Assessment-Bogen)\n→ Befund: 5 Entzündungszeichen prüfen (Rubor, Calor, Dolor, Tumor, Functio läsa)\n→ In der Stomadoku nur ein kurzer Querverweis: \"Bauchdeckenwunde: Status unverändert, Details siehe Wunddoku.\"\n\n**Warum trennen?** Stomadoku wird täglich aktualisiert (bei jedem Beutelwechsel). Wunddoku folgt einem eigenen Rhythmus (z.B. Verbandwechsel alle 2 Tage). Beide haben unterschiedliche Verantwortliche und unterschiedliche Eskalationspfade.",
     kerntextB1:
-      "**Zwei Stellen in der Dokumentation:**\n\n**1. Haut rund um das Stoma:**\n→ In die Stoma-Dokumentation\n→ Ist die Haut rot? Beschädigt? Offen?\n\n**2. Bauch-Wunde (OP-Naht):**\n→ In die eigene Wund-Dokumentation\n→ 5 Entzündungszeichen prüfen (Rötung, Waerme, Schmerz, Schwellung, Funktion)\n→ In der Stoma-Doku nur kurz erwähnen: \"Wunde: siehe Wunddoku.\"\n\n**Warum?** Die zwei Dokumentationen haben unterschiedliche Zeitpunkte und Verantwortliche.",
+      "**Zwei Stellen in der Dokumentation:**\n\n**1. Haut rund um das Stoma:**\n→ In die Stoma-Dokumentation\n→ Ist die Haut rot? Beschädigt? Offen?\n\n**2. Bauch-Wunde (OP-Naht):**\n→ In die eigene Wund-Dokumentation\n→ 5 Entzündungszeichen prüfen (Rötung, Wärme, Schmerz, Schwellung, Funktion)\n→ In der Stoma-Doku nur kurz erwähnen: \"Wunde: siehe Wunddoku.\"\n\n**Warum?** Die zwei Dokumentationen haben unterschiedliche Zeitpunkte und Verantwortliche.",
     faustregel:
       "**Peristomale Haut = Stomadoku. Bauchdeckenwunde = Wunddoku.** Nicht mischen.",
     faustregelB1:

@@ -36,9 +36,9 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     situationsId: "frau-m-nacht-sturz",
   },
   {
-    id: "kk-auto-kinaesthetik-transfer-boden",
-    bausteinRef: "kinaesthetik-transfer-boden",
-    themaPrimaer: "kinaesthetik",
+    id: "kk-auto-kinästhetik-transfer-boden",
+    bausteinRef: "kinästhetik-transfer-boden",
+    themaPrimaer: "kinästhetik",
     vorderseite: "Frau M. (82) liegt auf dem Boden, will ins Bett. Du wirst sie begleiten — wie nach Kinästhetik?",
     rueckseite: "Kinästhetik nach Hatch/Maietta (1996): **Patient bewegt sich selbst, Pflege begleitet.**\n\n5 Schritte Boden → Bett:\n1. Drehung auf nicht-schmerzhafte Seite\n2. Knie anziehen, Sitz auf Boden\n3. Mit Hand am Bett abstützen (Pflege begleitet am Becken)\n4. Auf die Knie, am Bett hochdrücken\n5. Auf Bettkante, ins Bett\n\nAnti-Patterns:\n• Heben hoch (Pflege-Rücken, Patient passiv)\n• Unter den Achseln (Schulter-Risiko)\n• Am Arm ziehen (Subluxation)\n• Schnelles Tempo erzwingen\n\nFaustregel: Patient bewegt selbst, Pflege begleitet + sichert + fragt das Tempo. Hand am Becken, nicht unter Achseln.",
     situationsId: "frau-m-nacht-sturz",
@@ -48,7 +48,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "sturz-prophylaxe-reassessment",
     themaPrimaer: "sturz-prophylaxe",
     vorderseite: "Frau M. (Sturz vor 24h, NRS 4-5 → 2 nach Schmerzmittel) — wie machst du Re-Assessment, was sind Erfolgs-Kriterien?",
-    rueckseite: "Re-Assessment nach DNQP/DGSS:\n\n4 Punkte:\n1. Wirkung? (NRS-Reduktion ≥ 30 % oder < 4 = Erfolg)\n2. Zeitpunkt richtig? (oral 30 Min, i.v. 15 Min, transdermal 30-60 Min)\n3. Score plausibel mit objektiven Zeichen? (Mimik, Atmung, Bewegung)\n4. Nebenwirkungen?\n\nBei Frau M.: NRS 2 = 6 Punkte Reduktion = Erfolg. Aber Bias-Prüfung wegen \\\"runterspielenden\\\"-Stil → Mimik/Atmung/Bewegung kongruent → ok.\n\nFaustregel: Bei runterspielenden Patient(inn)en immer Score + objektive Zeichen kombinieren.",
+    rueckseite: "Re-Assessment nach DNQP/DGSS:\n\n4 Punkte:\n1. Wirkung? (NRS-Reduktion ≥ 30 % oder < 4 = Erfolg)\n2. Zeitpunkt richtig? (oral 30 Min, i.v. 15 Min, transdermal 30-60 Min)\n3. Score plausibel mit objektiven Zeichen? (Mimik, Atmung, Bewegung)\n4. Nebenwirkungen?\n\nBei Frau M.: NRS 2 = 6 Punkte Reduktion = Erfolg. Aber Bias-Prüfung wegen \\\"runterspielenden\\\"-Stil → Mimik/Atmung/Bewegung kongrünt → ok.\n\nFaustregel: Bei runterspielenden Patient(inn)en immer Score + objektive Zeichen kombinieren.",
     situationsId: "frau-m-nacht-sturz",
   },
   {
@@ -56,7 +56,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "sturz-prophylaxe-was-ist-ein-sturz",
     themaPrimaer: "unbekannt",
     vorderseite: "Frau M. ist heute Nacht gestürzt — Birgit erzählt dir später, dass Mama sich vor 2 Wochen 'kurz am Schrank festgehalten' hat. Was zählt davon als Sturz?",
-    rueckseite: "Beides. Die WHO definiert Sturz als unbeabsichtigtes Landen auf dem Boden / tieferer Ebene. Der DNQP 2022 ergänzt: Auch **Beinahe-Stürze** zählen — Risiko in den nächsten 6 Monaten 2-3x erhöht. Spektrum: Bauer (Demenz, nächtliche Desorientierung), Yilmaz (post-OP, situationsbedingt), Kovac (ambulant, Stolperfallen). Faustregel: **Jeder Beinahe-Sturz ist ein angekündigter Sturz.**",
+    rueckseite: "Beides. Die WHO definiert Sturz als unbeabsichtigtes Landen auf dem Boden / tieferer Ebene. Der DNQP 2022 ergänzt: Auch **Beinahe-Stürze** zählen — Risiko in den nächsten 6 Monaten 2-3x erhöht. Spektrum: Baür (Demenz, nächtliche Desorientierung), Yilmaz (post-OP, situationsbedingt), Kovac (ambulant, Stolperfallen). Faustregel: **Jeder Beinahe-Sturz ist ein angekündigter Sturz.**",
     situationsId: "frau-m-nacht-sturz",
   },
   {
@@ -64,7 +64,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "sturz-prophylaxe-risikofaktoren-spektrum",
     themaPrimaer: "unbekannt",
     vorderseite: "Birgit fragt dich am Morgen: \"Warum ist Mama gestürzt? Ist das einfach das Alter?\" — Was sagst du?",
-    rueckseite: "Nein — Stürze sind multifaktoriell. Bei Frau M. mind. 5 Faktoren: Alter > 75, Parkinson II (Hauptfaktor: Bradykinese, posturale Instabilität), akute Pneumonie, Polypharmazie, nächtliche Klinikumgebung.\n\nSpektrum bei anderen:\n• Bauer (Demenz) → Kognition + Sundowning\n• Yilmaz (Hüft-TEP) → akute post-OP-Mobilität\n• Schmidt → Polyneuropathie + Bariatrik\n• Petrov → Halbseiten-Lähmung + Neglect\n\nFaustregel: **4+ Faktoren = hohes Risiko, kein Patient hat alle, jeder hat eigene.** (DNQP 2022, PRISCUS 2023)",
+    rueckseite: "Nein — Stürze sind multifaktoriell. Bei Frau M. mind. 5 Faktoren: Alter > 75, Parkinson II (Hauptfaktor: Bradykinese, posturale Instabilität), akute Pneumonie, Polypharmazie, nächtliche Klinikumgebung.\n\nSpektrum bei anderen:\n• Baür (Demenz) → Kognition + Sundowning\n• Yilmaz (Hüft-TEP) → akute post-OP-Mobilität\n• Schmidt → Polyneuropathie + Bariatrik\n• Petrov → Halbseiten-Lähmung + Neglect\n\nFaustregel: **4+ Faktoren = hohes Risiko, kein Patient hat alle, jeder hat eigene.** (DNQP 2022, PRISCUS 2023)",
     situationsId: "frau-m-nacht-sturz",
   },
   {
@@ -72,7 +72,7 @@ export const KARTEIKARTEN_AUTO: AutoKarteikarte[] = [
     bausteinRef: "schmerz-nrs-grundlagen",
     themaPrimaer: "unbekannt",
     vorderseite: "Frau M. (82, Hüftschmerz nach Sturz) sagt: \"Es ist etwas unangenehm.\" Du fragst sie nach NRS. Sie sagt: \"Vielleicht eine 8.\" — Was bedeutet das, was tust du?",
-    rueckseite: "NRS 8 = **starker Schmerz**, sofort handeln. Schritte: Lagerung optimieren (entlastend), Bedarfsanalgesie nach AVO besprechen, Arzt informieren (SBAR), nach Wirkbeginn (15-30 Min) re-assessen.\n\nSchwellenwerte (DNQP 2020):\n• 0-3 leicht — beobachten\n• 4-6 mäßig — interventionspflichtig\n• 7-10 stark — sofort handeln\n\nAlternative Skalen: KUSS (Kleinkind, Lukas), BESD/PAINAD (Demenz, Bauer), VAS, CPOT (Intensiv). Faustregel: **NRS ≥ 4 ist NIE \"wenig\".**",
+    rueckseite: "NRS 8 = **starker Schmerz**, sofort handeln. Schritte: Lagerung optimieren (entlastend), Bedarfsanalgesie nach AVO besprechen, Arzt informieren (SBAR), nach Wirkbeginn (15-30 Min) re-assessen.\n\nSchwellenwerte (DNQP 2020):\n• 0-3 leicht — beobachten\n• 4-6 mäßig — interventionspflichtig\n• 7-10 stark — sofort handeln\n\nAlternative Skalen: KUSS (Kleinkind, Lukas), BESD/PAINAD (Demenz, Baür), VAS, CPOT (Intensiv). Faustregel: **NRS ≥ 4 ist NIE \"wenig\".**",
     situationsId: "frau-m-nacht-sturz",
   },
   {

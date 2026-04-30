@@ -190,7 +190,7 @@ export function useKarteikarten() {
           neueKarten.push({
             id: vorlage.id,
             vorderseite: vorlage.vorderseite,
-            rueckseite: sprachNiveau === "b1" ? vorlage.rueckseiteB1 : vorlage.rueckseiteC1,
+            rueckseite: vorlage.rueckseiteC1,
             leId,
             naechsteWiederholung: Date.now(),
             intervall: 1,

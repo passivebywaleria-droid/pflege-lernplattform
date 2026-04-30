@@ -8,11 +8,11 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
   phaseId: "ls-schmidt-adipositas-beobachten",
   phase: "beobachten",
   titel: "Beobachten & Assessment",
-  titelB1: "Schauen und Einschätzen",
+  titelB1: "Schaün und Einschätzen",
   kontext:
-    "Frau Schmidt hat nach der Begrüßung kurz erzählt, sie sei müde, habe aber gut geschlafen. Du beginnst jetzt das strukturierte Assessment — Blutzucker, NRS 2002, Haut, Fuß, Inkontinenz. Frau Schmidt schaut dich skeptisch an, als du sagst, du würdest heute \"ganz viele Fragen stellen und auch schauen wollen, wie die Haut aussieht\". Sie nickt aber.",
+    "Frau Schmidt hat nach der Begrüßung kurz erzählt, sie sei müde, habe aber gut geschlafen. Du beginnst jetzt das strukturierte Assessment — Blutzucker, NRS 2002, Haut, Fuß, Inkontinenz. Frau Schmidt schaut dich skeptisch an, als du sagst, du würdest heute \"ganz viele Fragen stellen und auch schaün wollen, wie die Haut aussieht\". Sie nickt aber.",
   kontextB1:
-    "Frau Schmidt sagt: Sie ist müde, aber hat gut geschlafen. Jetzt machst du das Assessment (= Einschätzung des Zustands). Du prüfst: Blutzucker, Ernährungs-Risiko, Haut, Füße, Harnverlust. Du sagst: \"Ich möchte heute viel schauen und fragen.\" Frau Schmidt nickt. Sie schaut dich skeptisch an.",
+    "Frau Schmidt sagt: Sie ist müde, aber hat gut geschlafen. Jetzt machst du das Assessment (= Einschätzung des Zustands). Du prüfst: Blutzucker, Ernährungs-Risiko, Haut, Füße, Harnverlust. Du sagst: \"Ich möchte heute viel schaün und fragen.\" Frau Schmidt nickt. Sie schaut dich skeptisch an.",
   kernSteps: [
     // Step 2.1 — TrueFalse: Brilliant-Prinzip — Adipositas ≠ gut ernährt
     {
@@ -85,7 +85,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
           "Bringe die Schritte zum Blutzucker-Messen in die richtige Reihenfolge.",
         sequencing: {
           instruction:
-            "Richtige Reihenfolge für die BZ-Messung bei Frau Schmidt. Wichtig: Aufklärung kommt zuerst (§ 630e BGB), erst danach Hygiene-Vorbereitung (RKI 2016).",
+            "Richtige Reihenfolge für die BZ-Messung bei Frau Schmidt. Wichtig: Aufklärung kommt zürst (§ 630e BGB), erst danach Hygiene-Vorbereitung (RKI 2016).",
           items: [
             { id: "bz1", label: "Frau Schmidt informieren: \"Ich messe jetzt Ihren Blutzucker\" und Einverständnis abwarten" },
             { id: "bz2", label: "Hände waschen und Handschuhe anziehen" },
@@ -123,7 +123,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
       },
       contentB1: {
         title: "NRS 2002 — Ernährungs-Risiko prüfen",
-        body: "NRS 2002 ist ein Werkzeug. Es schaut auf 3 Punkte:\n1. Ernährungs-Zustand (BMI, Gewichts-Verlust, wie viel isst sie aktuell?)\n2. Wie krank ist sie?\n3. Ist sie 70 Jahre oder älter?\n\nWichtig: Albumin (= Eiweiß im Blut) gehört NICHT zu NRS 2002. Albumin ist Teil eines anderen Tests (GLIM).\n\nOrdne Frau Schmidts Daten zu.",
+        body: "NRS 2002 ist ein Werkzeug. Es schaut auf 3 Punkte:\n1. Ernährungs-Zustand (BMI, Gewichts-Verlust, wie viel isst sie aktüll?)\n2. Wie krank ist sie?\n3. Ist sie 70 Jahre oder älter?\n\nWichtig: Albumin (= Eiweiß im Blut) gehört NICHT zu NRS 2002. Albumin ist Teil eines anderen Tests (GLIM).\n\nOrdne Frau Schmidts Daten zu.",
         glossarBegriffe: ["NRS 2002"],
       },
       question: {
@@ -212,14 +212,14 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
       displayFormat: "beforeafter",
       contentC1: {
         title: "Das Albumin-Paradox — Vorher und Nachher",
-        body: "**Vorher (vor dem Blutbefund):** \"Frau Schmidt ist adipös — BMI 38. Sie isst genug. Sie ist sicher gut ernährt.\"\n\n**Nachher (mit dem Befund):** Albumin 31 g/l (Norm 35–52). NRS-2002-Score = 1 (allein NICHT interventionspflichtig). ABER: GLIM-Diagnostik ist positiv — phänotypisch (reduzierte Muskelmasse) + ätiologisch (reduzierte Proteinzufuhr + Inflammation durch entgleisten Diabetes) → GLIM-Diagnose Mangelernährung Stadium 1, trotz Adipositas. **Ernährungsintervention ist indiziert** — nicht über NRS allein, sondern über die GLIM-Diagnostik.\n\nDas Paradox: Frau Schmidt isst energiereiche, aber proteinarme Kost (Fertigprodukte, Kohlenhydrate, Fette). Der Körper braucht Protein — nicht nur für Muskeln, sondern für Wundheilung, Immunabwehr und Ödemprophylaxe. Albumin ist ein Hinweis auf den Eiweißstatus — aber Albumin sinkt auch bei Akut-Inflammation (Akut-Phase-Negativ-Protein). Deshalb ist die GLIM-Kombi-Diagnostik aussagekräftiger als Albumin allein. (Cederholm et al., GLIM-Kriterien, 2019)\n\nFrau Schmidt sagt: \"Ich esse doch genug — schauen Sie mich an! Wie kann ich da Eiweiß-Mangel haben? Das versteh ich nicht.\"",
+        body: "**Vorher (vor dem Blutbefund):** \"Frau Schmidt ist adipös — BMI 38. Sie isst genug. Sie ist sicher gut ernährt.\"\n\n**Nachher (mit dem Befund):** Albumin 31 g/l (Norm 35–52). NRS-2002-Score = 1 (allein NICHT interventionspflichtig). ABER: GLIM-Diagnostik ist positiv — phänotypisch (reduzierte Muskelmasse) + ätiologisch (reduzierte Proteinzufuhr + Inflammation durch entgleisten Diabetes) → GLIM-Diagnose Mangelernährung Stadium 1, trotz Adipositas. **Ernährungsintervention ist indiziert** — nicht über NRS allein, sondern über die GLIM-Diagnostik.\n\nDas Paradox: Frau Schmidt isst energiereiche, aber proteinarme Kost (Fertigprodukte, Kohlenhydrate, Fette). Der Körper braucht Protein — nicht nur für Muskeln, sondern für Wundheilung, Immunabwehr und Ödemprophylaxe. Albumin ist ein Hinweis auf den Eiweißstatus — aber Albumin sinkt auch bei Akut-Inflammation (Akut-Phase-Negativ-Protein). Deshalb ist die GLIM-Kombi-Diagnostik aussagekräftiger als Albumin allein. (Cederholm et al., GLIM-Kriterien, 2019)\n\nFrau Schmidt sagt: \"Ich esse doch genug — schaün Sie mich an! Wie kann ich da Eiweiß-Mangel haben? Das versteh ich nicht.\"",
         fallbezug:
           "Frau Schmidt hat NRS-Score 1 + positive GLIM-Diagnose → Ernährungsintervention indiziert. Die Ernährungsberaterin kommt nachmittags.",
         glossarBegriffe: ["Albumin", "Proteinmangelernährung", "NRS 2002"],
       },
       contentB1: {
         title: "Das Albumin-Paradox",
-        body: "**Vorher:** \"Frau Schmidt hat Adipositas — sie ist sicher gut ernährt.\"\n\n**Nachher (nach dem Blutbefund):** Albumin 31 g/l — das ist zu niedrig.\n\nWas bedeutet das? Frau Schmidt isst viel Kohlenhydrate (= Zucker und Stärke) und Fett. Aber sie isst wenig Protein (= Eiweiß). Zum Beispiel: Fertig-Pizza. Der Körper braucht Protein für: Wunden heilen, das Immunsystem stärken, Ödeme (= Wassereinlagerungen) verhindern.\n\nWichtig: Albumin allein zeigt nicht alles. NRS 2002 (= Test-Werkzeug) ergibt 1 Punkt — kein hohes Risiko. Aber GLIM (= anderes Werkzeug, prüft Eiweiß-Mangel auch bei Übergewicht) ist positiv. Deshalb braucht Frau Schmidt eine Ernährungs-Hilfe.\n\nFrau Schmidt sagt: \"Ich esse doch genug — schauen Sie mich an! Wie kann ich da Eiweiß-Mangel haben? Das versteh ich nicht.\"",
+        body: "**Vorher:** \"Frau Schmidt hat Adipositas — sie ist sicher gut ernährt.\"\n\n**Nachher (nach dem Blutbefund):** Albumin 31 g/l — das ist zu niedrig.\n\nWas bedeutet das? Frau Schmidt isst viel Kohlenhydrate (= Zucker und Stärke) und Fett. Aber sie isst wenig Protein (= Eiweiß). Zum Beispiel: Fertig-Pizza. Der Körper braucht Protein für: Wunden heilen, das Immunsystem stärken, Ödeme (= Wassereinlagerungen) verhindern.\n\nWichtig: Albumin allein zeigt nicht alles. NRS 2002 (= Test-Werkzeug) ergibt 1 Punkt — kein hohes Risiko. Aber GLIM (= anderes Werkzeug, prüft Eiweiß-Mangel auch bei Übergewicht) ist positiv. Deshalb braucht Frau Schmidt eine Ernährungs-Hilfe.\n\nFrau Schmidt sagt: \"Ich esse doch genug — schaün Sie mich an! Wie kann ich da Eiweiß-Mangel haben? Das versteh ich nicht.\"",
         glossarBegriffe: ["Albumin", "Proteinmangelernährung", "GLIM"],
       },
     },
@@ -244,8 +244,8 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-schmidt-beob-glim",
       tag: "pflege",
-      themaPrimaer: "ernaehrungsassessment",
-      themenSekundaer: ["ernaehrungsgrundlagen"],
+      themaPrimaer: "ernährungsassessment",
+      themenSekundaer: ["ernährungsgrundlagen"],
       transition: "GLIM hat die versteckte Mangelernährung aufgedeckt. Jetzt zur nächsten Baustelle: die Haut.",
       contentC1: {
         title: "GLIM-Kriterien — warum NRS allein nicht reicht",
@@ -258,7 +258,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
         glossarBegriffe: ["GLIM", "Mangelernährung"],
       },
       inlineWissen: {
-        bausteinRef: "ernaehrungsassessment-formen-mangel",
+        bausteinRef: "ernährungsassessment-formen-mangel",
         storyAufhaenger:
           "Frau Schmidts NRS-Score war nur 1 — keine Ernährungsintervention nach Screening allein. Aber die Übergabe sagt trotzdem: \"GLIM-Diagnose Mangelernährung Stadium 1.\" Wie passt das zusammen? Und was genau sind diese GLIM-Kriterien?",
         storyAufhaengerB1:
@@ -280,8 +280,8 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
               "Bei ihm sind beide GLIM-Gruppen eindeutig: Phänotypisch = Gewichtsverlust + niedriger BMI. Ätiologisch = Schluckstörung. NRS und GLIM stimmen überein.",
           },
           {
-            patientName: "Herr Bauer",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "Vergisst zu essen",
             kurzbeschreibung:
               "Fortgeschrittene Demenz: Er vergisst Mahlzeiten, erkennt Besteck nicht. Ätiologisch: kognitive Barriere. Phänotypisch: Gewichtsverlust. GLIM positiv.",
@@ -302,7 +302,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
           vorderseite:
             "Frau Schmidt hat NRS-Score 1, aber GLIM-Diagnose Mangelernährung Stadium 1. Wie ist das möglich?",
           rueckseite:
-            "NRS 2002 erkennt Mangelernährung bei Adipositas schlecht (kein Untergewicht, kein Gewichtsverlust). GLIM prüft tiefer: min 1 phänotypisches Kriterium (reduzierte Muskelmasse) + min 1 ätiologisches (einseitige Kost + Inflammation) = Diagnose.\n\nSpektrum: Petrov (Dysphagie, GLIM eindeutig), Bauer (Demenz, vergisst essen), Kovac (COPD, Katabolie).\n\nFaustregel: **GLIM findet was NRS übersieht.**",
+            "NRS 2002 erkennt Mangelernährung bei Adipositas schlecht (kein Untergewicht, kein Gewichtsverlust). GLIM prüft tiefer: min 1 phänotypisches Kriterium (reduzierte Muskelmasse) + min 1 ätiologisches (einseitige Kost + Inflammation) = Diagnose.\n\nSpektrum: Petrov (Dysphagie, GLIM eindeutig), Baür (Demenz, vergisst essen), Kovac (COPD, Katabolie).\n\nFaustregel: **GLIM findet was NRS übersieht.**",
         },
       },
     },
@@ -333,7 +333,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
         glossarBegriffe: ["Intertrigo", "Dekubitus", "Mazerierung"],
       },
       contentB1: {
-        title: "Haut anschauen — wo ist sie gefährdet?",
+        title: "Haut anschaün — wo ist sie gefährdet?",
         body: "Bild: Rücken und Seite einer Patientin mit Übergewicht. Wo ist die Haut gefährdet? Markiere die Stellen.",
         glossarBegriffe: ["Intertrigo", "Dekubitus"],
       },
@@ -348,7 +348,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
             "Tippe auf alle Stellen, die bei Adipositas besonders gefährdet sind.",
           zones: [
             {
-              id: "submammaer",
+              id: "submammär",
               x: 50,
               y: 25,
               radius: 7,
@@ -356,7 +356,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
                 "Submammäre Falte — feucht, warm, Reibung → Intertrigo-Risiko",
             },
             {
-              id: "abdomen-haengefalte",
+              id: "abdomen-hängefalte",
               x: 50,
               y: 48,
               radius: 7,
@@ -416,13 +416,13 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
         glossarBegriffe: ["Intertrigo", "Mazerierung"],
       },
       inlineWissen: {
-        bausteinRef: "haut-entzuendungszeichen-5",
+        bausteinRef: "haut-entzündungszeichen-5",
         storyAufhaenger:
           "Du hast gerade die gefährdeten Stellen bei Frau Schmidt markiert — submammäre Falte, Abdomen-Hängefalte, Leistenbeuge, Sakralregion. Aber was genau passiert in diesen Falten, wenn sie nicht gepflegt werden?",
         storyAufhaengerB1:
           "Du hast die Risiko-Stellen bei Frau Schmidt auf dem Bild markiert. Aber was passiert in den Haut-Falten, wenn man sie nicht pflegt?",
         kerntext:
-          "**Intertrigo** (intertriginöse Dermatitis) ist eine Entzündung der Haut in Körperfalten (AWMF S2k-LL 2022).\n\n**Entstehungs-Mechanismus:**\n\n• Hautfalte = Haut-auf-Haut-Kontakt → **Reibung** bei Bewegung.\n\n• Warme, feuchte Kammer → **Schweiß verdampft nicht**, Feuchtigkeit staut.\n\n• Feuchtigkeit + Wärme = ideales Milieu für **Pilze** (v.a. Candida albicans) und **Bakterien**.\n\n• Hornschicht quillt auf (**Mazerierung**) → Haut verliert Barriere → Rötung, Jucken, Brennen.\n\n**5 Entzündungszeichen bei Intertrigo:**\n\nRubor (Rötung) · Dolor (Schmerz) · Calor (Wärme) · Tumor (Schwellung) · Functio laesa (gestörte Funktion)\n\n**Risiko-Stellen bei Adipositas:**\n\n• Submammär (unter der Brust)\n\n• Abdomen-Hängefalte (Pannus)\n\n• Leistenbeuge (Inguinal)\n\n• Intergluteal (zwischen Gesäßhälften)\n\n**Abgrenzung zu Dekubitus:** Intertrigo = Feuchtigkeit + Reibung in Falten. Dekubitus = Druck + Scherkraft auf Knochen-Prominenz. Beide können bei Frau Schmidt gleichzeitig auftreten!",
+          "**Intertrigo** (intertriginöse Dermatitis) ist eine Entzündung der Haut in Körperfalten (AWMF S2k-LL 2022).\n\n**Entstehungs-Mechanismus:**\n\n• Hautfalte = Haut-auf-Haut-Kontakt → **Reibung** bei Bewegung.\n\n• Warme, feuchte Kammer → **Schweiß verdampft nicht**, Feuchtigkeit staut.\n\n• Feuchtigkeit + Wärme = ideales Milieu für **Pilze** (v.a. Candida albicans) und **Bakterien**.\n\n• Hornschicht quillt auf (**Mazerierung**) → Haut verliert Barriere → Rötung, Jucken, Brennen.\n\n**5 Entzündungszeichen bei Intertrigo:**\n\nRubor (Rötung) · Dolor (Schmerz) · Calor (Wärme) · Tumor (Schwellung) · Functio läsa (gestörte Funktion)\n\n**Risiko-Stellen bei Adipositas:**\n\n• Submammär (unter der Brust)\n\n• Abdomen-Hängefalte (Pannus)\n\n• Leistenbeuge (Inguinal)\n\n• Intergluteal (zwischen Gesäßhälften)\n\n**Abgrenzung zu Dekubitus:** Intertrigo = Feuchtigkeit + Reibung in Falten. Dekubitus = Druck + Scherkraft auf Knochen-Prominenz. Beide können bei Frau Schmidt gleichzeitig auftreten!",
         kerntextB1:
           "**Intertrigo** ist eine Entzündung der Haut in Körper-Falten.\n\n**Was passiert:**\n\n• In der Falte liegt Haut auf Haut → Reibung bei Bewegung.\n\n• In der Falte ist es warm und feucht → Schweiß kann nicht verdampfen.\n\n• Feuchtigkeit + Wärme = Pilze und Bakterien wachsen.\n\n• Die Haut quillt auf (= Mazerierung) → Rötung, Jucken, Brennen.\n\n**Gefährdete Stellen bei Übergewicht:**\n\n• Unter der Brust\n\n• In der Bauch-Falte\n\n• In der Leiste\n\n**Wichtig:** Intertrigo (= Feuchtigkeit + Reibung in Falten) ist etwas anderes als Dekubitus (= Druck auf Knochen). Beides kann bei Frau Schmidt gleichzeitig da sein!",
         faustregel:
@@ -438,15 +438,15 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
               "Post-OP mit Drainagen und Verbänden: feuchte Kammer unter Pflaster. Intertrigo-Risiko nicht nur in Falten, sondern auch unter Wundverbänden.",
           },
           {
-            patientName: "Herr Bauer",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "Inkontinenz-assoziierte Dermatitis",
             kurzbeschreibung:
               "Bei ihm ist es nicht die Falte, sondern die Inkontinenz: Feuchtigkeit + Reizstoffe (Urin/Stuhl) im Perianalbereich. Verwandte Pathologie, aber andere Ursache — IAD, keine klassische Intertrigo.",
           },
           {
             patientName: "Emilia (Säugling)",
-            situationsId: "ls-emilia-saeugling",
+            situationsId: "ls-emilia-säugling",
             hauptfaktor: "Windeldermatitis",
             kurzbeschreibung:
               "Bei Säuglingen: feuchte Windel → Hautmazeration → Candida-Superinfektion. Prinzip identisch zu Intertrigo, andere Lokalisierung (Windelbereich).",
@@ -460,7 +460,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
           vorderseite:
             "Bei Frau Schmidt (BMI 38) findest du in der submammären Falte Rötung und feuchte Haut. Ist das Intertrigo oder Dekubitus?",
           rueckseite:
-            "**Intertrigo.** Entsteht durch Feuchtigkeit + Reibung in Hautfalten. Submammär = typische Intertrigo-Stelle bei Adipositas. Dekubitus entsteht durch Druck auf Knochen-Prominenzen (Sakrum, Trochanter, Fersen).\n\n5 Entzündungszeichen: Rubor, Dolor, Calor, Tumor, Functio laesa.\n\nSpektrum: Yilmaz (unter Verband), Bauer (IAD bei Inkontinenz), Emilia (Windeldermatitis).\n\nFaustregel: **Intertrigo = Feuchtigkeit + Reibung in Falten.**",
+            "**Intertrigo.** Entsteht durch Feuchtigkeit + Reibung in Hautfalten. Submammär = typische Intertrigo-Stelle bei Adipositas. Dekubitus entsteht durch Druck auf Knochen-Prominenzen (Sakrum, Trochanter, Fersen).\n\n5 Entzündungszeichen: Rubor, Dolor, Calor, Tumor, Functio läsa.\n\nSpektrum: Yilmaz (unter Verband), Baür (IAD bei Inkontinenz), Emilia (Windeldermatitis).\n\nFaustregel: **Intertrigo = Feuchtigkeit + Reibung in Falten.**",
         },
       },
     },
@@ -513,7 +513,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
               "Richtig! Bei Diabetes darf die Pflege die Nägel NICHT schneiden. Das macht nur ein Podologe (= Fußpflege-Spezialist). Du erklärst Frau Schmidt warum und beantragst eine Überweisung.",
           },
           {
-            text: "Die Nägel erst nächste Woche anschauen — heute zu viel anderes.",
+            text: "Die Nägel erst nächste Woche anschaün — heute zu viel anderes.",
             isCorrect: false,
             explanation:
               "Zu passiv. Wagner-1-Befund (erste Rissbildung) ist dokumentationspflichtig und erfordert sofortige Einleitung einer Podologen-Überweisung. Aufschieben erhöht das Infektionsrisiko.",
@@ -541,7 +541,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
       kompetenzbereich: "V.1",
       quellen: [
         "ICS — International Continence Society: Klassifikation Belastungsinkontinenz",
-        "AWMF S2k-Leitlinie (2023): Diagnostik und Therapie Harninkontinenz bei Frauen",
+        "AWMF S2k-Leitlinie (2023): Diagnostik und Therapie Harninkontinenz bei Fraün",
       ],
       track: "basis",
       modus: "story",
@@ -621,18 +621,18 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
             speaker: "Du",
             options: [
               {
-                text: "\"Das ist sehr häufig bei Frauen — und wichtig: Belastungsinkontinenz ist behandelbar (Beckenbodentraining, urotherapeutische Maßnahmen, ggf. fachärztliche Abklärung). Sie müssen das nicht alleine tragen.\"",
+                text: "\"Das ist sehr häufig bei Fraün — und wichtig: Belastungsinkontinenz ist behandelbar (Beckenbodentraining, urotherapeutische Maßnahmen, ggf. fachärztliche Abklärung). Sie müssen das nicht alleine tragen.\"",
                 textB1:
-                  "\"Das haben viele Frauen. Wichtig: Man kann das behandeln (Beckenboden-Training, Therapie, Frauenarzt). Sie müssen das nicht alleine tragen.\"",
+                  "\"Das haben viele Fraün. Wichtig: Man kann das behandeln (Beckenboden-Training, Therapie, Fraünarzt). Sie müssen das nicht alleine tragen.\"",
                 patientResponse:
                   "Frau Schmidt atmet leicht aus. \"Wissen Sie — ich geh schon seit 2 Jahren nicht mehr in den Sportverein. Wegen dem. Das ist das Schlimmste.\"",
                 patientResponseB1:
                   "Frau Schmidt atmet aus. \"Ich geh schon 2 Jahre nicht mehr in den Sportverein. Wegen dem. Das ist das Schlimmste.\"",
                 score: 3,
                 feedback:
-                  "Normalisierung + Behandlungsperspektive. Du machst das Thema nicht kleiner — du machst Frau Schmidt größer: Sie ist nicht allein damit UND es ist behandelbar. Wichtig: \"Normalisieren\" heißt nicht \"damit muss man leben\". Belastungsinkontinenz lässt sich oft deutlich verbessern: Beckenbodentraining (Goldstandard), Pessar, Biofeedback, ggf. operative Optionen. (AWMF S2k-Leitlinie Harninkontinenz Frauen 2023; ICS-Klassifikation)",
+                  "Normalisierung + Behandlungsperspektive. Du machst das Thema nicht kleiner — du machst Frau Schmidt größer: Sie ist nicht allein damit UND es ist behandelbar. Wichtig: \"Normalisieren\" heißt nicht \"damit muss man leben\". Belastungsinkontinenz lässt sich oft deutlich verbessern: Beckenbodentraining (Goldstandard), Pessar, Biofeedback, ggf. operative Optionen. (AWMF S2k-Leitlinie Harninkontinenz Fraün 2023; ICS-Klassifikation)",
                 feedbackB1:
-                  "Sehr gut. \"Das haben viele Frauen\" hilft — UND du sagst: Man kann es behandeln. Das ist wichtig! Inkontinenz ist nicht \"das Alter\" — Beckenboden-Training und Therapien helfen oft.",
+                  "Sehr gut. \"Das haben viele Fraün\" hilft — UND du sagst: Man kann es behandeln. Das ist wichtig! Inkontinenz ist nicht \"das Alter\" — Beckenboden-Training und Therapien helfen oft.",
               },
               {
                 text: "Schweigen — Stille zulassen, nichts sagen.",

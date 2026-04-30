@@ -16,7 +16,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_EVALUIEREN: SituationsPhase = {
   kernSteps: [
     // Step 5.1 — Categorize: Maßnahmen-Evaluation
     {
-      stepId: "ce02-yilmaz-eval-01-massnahmen-check",
+      stepId: "ce02-yilmaz-eval-01-maßnahmen-check",
       phase: 5,
       stepType: "categorize",
       bloomLevel: 4,
@@ -28,7 +28,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_EVALUIEREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "sortierstation",
-      lernziel: "ce02-yilmaz-eval-massnahmen-bewerten",
+      lernziel: "ce02-yilmaz-eval-maßnahmen-bewerten",
       tag: "pflege",
       contentC1: {
         title: "Evaluation: Was hat heute gewirkt?",

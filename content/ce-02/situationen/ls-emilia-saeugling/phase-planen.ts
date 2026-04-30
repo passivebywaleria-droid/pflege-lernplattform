@@ -15,6 +15,60 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
   kontextB1:
     "Du hast Emilia beobachtet. Du weißt jetzt: Trinkschwäche wegen verstopfter Nase. Etwas zu wenig Flüssigkeit. Laura ist unsicher. Der Arzt hat gesagt: Beobachten, Flüssigkeit genau messen, erstmal kein Tropf. Jetzt planst du: Was sind die Ziele für die nächsten 24 Stunden? Was muss getan werden?",
   kernSteps: [
+    // ───── Inline-Wissen: SMART-Ziel ─────
+    // Der Begriff wird im nachfolgenden Freetext-Step verwendet, in dem der Schüler
+    // messbare Pflegeziele formulieren soll. Vorher muss er SMART kennen.
+    {
+      stepId: "ce02-emilia-plan-iw-smart-ziel",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Fiechter/Meier 1981 — Der Pflegeprozess",
+        "Doran G. T. 1981 — There's a S.M.A.R.T. way to write management's goals and objectives",
+        "Hoehl/Kullick 2019",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-emilia-plan-smart-ziel",
+      tag: "pflege",
+      themaPrimaer: "säuglingspflege",
+      themenSekundaer: ["pflegeprozess"],
+      transition: "Jetzt formulierst du selbst ein SMART-Ziel für Emilia. Du weißt was drin sein muss.",
+      contentC1: {
+        title: "SMART-Ziele — warum \"besser trinken\" kein Pflegeziel ist",
+        body: "",
+        glossarBegriffe: ["SMART-Ziel", "Pflegeziel"],
+      },
+      contentB1: {
+        title: "SMART-Ziel — was muss ein gutes Ziel haben?",
+        body: "",
+        glossarBegriffe: ["SMART-Ziel", "Pflegeziel"],
+      },
+      inlineWissen: {
+        bausteinRef: "smart-ziel",
+        storyAufhaenger:
+          "Du planst die Pflege für Emilia. Andrea sagt: \"Schreib mir ein Ziel auf.\" Du schreibst: \"Emilia soll besser trinken.\" Andrea streicht es durch und sagt: \"Das ist kein Ziel. Das ist ein Wunsch. Ein Ziel muss **SMART** sein.\"",
+        storyAufhaengerB1:
+          "Du planst die Pflege für Emilia. Du schreibst: \"Emilia soll besser trinken.\" Andrea sagt: \"Das ist kein Ziel. Das ist ein Wunsch. Ein Ziel muss **SMART** sein.\"",
+        kerntext:
+          "**SMART** ist ein Akronym für 5 Kriterien, die ein gutes Pflegeziel erfüllen muss (Doran 1981, adaptiert für Pflege nach Fiechter/Meier):\n\n• **S = Spezifisch:** Was genau soll erreicht werden? Nicht \"besser trinken\" sondern \"Emilia trinkt mindestens 5× pro Tag\"\n\n• **M = Messbar:** Wie erkenne ich ob das Ziel erreicht ist? Zahlen, beobachtbare Handlungen. \"5 nasse Windeln\" ist messbar, \"genug trinken\" nicht\n\n• **A = Akzeptabel (Attainable):** Ist das Ziel für die Patientin/Mutter realistisch erreichbar? Nicht: \"Emilia trinkt morgen 900 ml\" wenn sie heute nur 280 ml schafft\n\n• **R = Relevant:** Hat das Ziel mit dem Pflegeproblem zu tun? Emilias Problem = Trinkschwäche durch verstopfte Nase. Das Ziel muss die Trinkmenge adressieren\n\n• **T = Terminiert:** Bis wann? \"In den nächsten 24 Stunden\" — nicht \"irgendwann\"\n\n**Beispiel Emilia — SMART:**\n\n❌ \"Emilia soll besser trinken\" → Wunsch (nicht spezifisch, nicht messbar, nicht terminiert)\n\n✅ \"Emilia trinkt in den nächsten 24 h mindestens 5× und produziert mindestens 5 nasse Windeln\" → SMART (spezifisch, messbar, erreichbar, relevant, 24 h terminiert)\n\n**Warum ist das wichtig?** Nur ein SMART-Ziel lässt sich **evaluieren** — am Ende der Schicht kannst du sagen: erreicht, teilweise erreicht, nicht erreicht. Ohne messbares Ziel ist Evaluation unmöglich.",
+        kerntextB1:
+          "**SMART** bedeutet: Ein gutes Ziel muss 5 Dinge haben:\n\n• **S = Spezifisch:** Was genau? Nicht \"besser trinken\" — sondern \"mindestens 5× trinken\"\n\n• **M = Messbar:** Wie erkenne ich es? Zahlen! \"5 nasse Windeln\" kann ich zählen\n\n• **A = Akzeptabel:** Ist es schaffbar? Nicht von 280 ml auf 900 ml an einem Tag\n\n• **R = Relevant:** Hat es mit dem Problem zu tun? Emilia trinkt zu wenig → Ziel über Trinkmenge\n\n• **T = Terminiert:** Bis wann? \"In 24 Stunden\"\n\n**Beispiel:**\n\n❌ \"Emilia soll besser trinken\" → das ist ein Wunsch\n\n✅ \"Emilia trinkt in 24 Stunden mindestens 5× und hat 5 nasse Windeln\" → das ist ein SMART-Ziel\n\n**Warum wichtig?** Nur mit einem SMART-Ziel kannst du am Ende prüfen: Hat es geklappt — ja oder nein?",
+        faustregel:
+          "Kein Ziel ohne Zahl und Zeitrahmen. \"Besser\" ist kein Pflegeziel — \"5× in 24 h\" schon.",
+        faustregelB1:
+          "Kein Ziel ohne Zahl und Zeit. \"Besser\" ist ein Wunsch. \"5× in 24 Stunden\" ist ein Ziel.",
+        karteikarte: {
+          vorderseite:
+            "Andrea streicht \"Emilia soll besser trinken\" durch und sagt: \"Das ist kein Ziel.\" Was muss ein Pflegeziel nach SMART enthalten?",
+          rueckseite:
+            "SMART (Doran 1981): S = Spezifisch (was genau?), M = Messbar (Zahlen!), A = Akzeptabel (schaffbar?), R = Relevant (zum Problem passend?), T = Terminiert (bis wann?). Beispiel: \"Emilia trinkt in 24 h mindestens 5× und hat 5 nasse Windeln.\" Nur SMART-Ziele lassen sich evaluieren. Faustregel: Kein Ziel ohne Zahl und Zeitrahmen.",
+        },
+      },
+    },
+
     // Step 3.1 — Freetext (kurz): Pflegeziele formulieren
     {
       stepId: "ce02-emilia-plan-01-pflegeziele-formulieren",
@@ -57,7 +111,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
 
     // Step 3.2 — Text (stepbystep): Flüssigkeitsbilanz Konzept
     {
-      stepId: "ce02-emilia-plan-02-fluessigkeitsbilanz-konzept",
+      stepId: "ce02-emilia-plan-02-flüssigkeitsbilanz-konzept",
       phase: 3,
       stepType: "text",
       bloomLevel: 3,
@@ -82,7 +136,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
 
     // Step 3.3 — Matrix: Maßnahmen nach Ziel und Verantwortung
     {
-      stepId: "ce02-emilia-plan-03-massnahmen-matrix",
+      stepId: "ce02-emilia-plan-03-maßnahmen-matrix",
       phase: 3,
       stepType: "matrix",
       bloomLevel: 4,
@@ -90,7 +144,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
       quellen: ["Hoehl/Kullick 2019", "AAP 2022"],
       track: "basis",
       modus: "sortierstation",
-      lernziel: "ce02-emilia-plan-massnahmen",
+      lernziel: "ce02-emilia-plan-maßnahmen",
       tag: "pflege",
       contentC1: {
         title: "Maßnahmen-Matrix: Ziel × Verantwortung",
@@ -229,7 +283,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
 
     // Step 3.5 — Sequencing: Maßnahmen priorisieren
     {
-      stepId: "ce02-emilia-plan-05-prioritaeten-sequencing",
+      stepId: "ce02-emilia-plan-05-prioritäten-seqüncing",
       phase: 3,
       stepType: "sequencing",
       bloomLevel: 3,
@@ -237,7 +291,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
       quellen: ["Hoehl/Kullick 2019"],
       track: "basis",
       modus: "sortierstation",
-      lernziel: "ce02-emilia-plan-prioritaeten",
+      lernziel: "ce02-emilia-plan-prioritäten",
       tag: "pflege",
       contentC1: {
         title: "Maßnahmen in der richtigen Reihenfolge — nächste Stunde",
@@ -245,7 +299,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
         glossarBegriffe: [],
       },
       contentB1: {
-        title: "Was kommt zuerst?",
+        title: "Was kommt zürst?",
         body: "Bringe die Maßnahmen für die nächste Stunde in die richtige Reihenfolge.",
         glossarBegriffe: [],
       },

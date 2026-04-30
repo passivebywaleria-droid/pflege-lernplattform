@@ -8,9 +8,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
   phaseId: "ls-frau-m-beobachten",
   phase: "beobachten",
   titel: "Beobachten & Risiken erkennen",
-  titelB1: "Schauen und Risiken finden",
+  titelB1: "Schaün und Risiken finden",
   kontext:
-    "Du bist im Zimmer. Die Tür ist hinter dir leise zugefallen, der schmale Spalt Flurlicht ist verschwunden, jetzt brennt nur die Bett-Leselampe. Sie wirft einen warmen Kreis auf den Linoleumboden — und mitten in diesem Kreis liegt Frau M., auf der linken Seite, das Nachthemd hochgerutscht bis zum Knie, eine Hand an der Hüfte, die andere stützt sich am Bettrahmen. Sie atmet flach. Ihre dünnen weißen Haare sind verstrubbelt, eine Strähne klebt an der Wange, die Brille liegt einen Meter weiter unter dem Stuhl, ein Bügel verbogen. Es riecht nach Eukalyptus-Nasenspray, nach Schweiß und einer kalten Spur Urin auf dem Boden — sie hat es nicht mehr geschafft. Frau M. schaut dich an. Ihr Blick ist klar, aber feucht, der Mund leicht geöffnet. Sie sagt mit leiser, brüchiger Stimme: 'Ich wollte nur kurz...', und es klingt entschuldigend, fast wie bei einem Kind, das etwas Verbotenes getan hat. Du hockst dich neben sie, knietief, das Linoleum kühl unter den Knien, dein Puls noch immer höher als normal. Du hast die ersten Sekunden hinter dir, das erste Assessment im Kopf abgehakt: Bewusstsein klar, Atmung vorhanden, kein Blut, keine offensichtliche Deformität, kein verkürztes Bein, keine Außenrotation. NRS 4 von 10 in der linken Hüfte, sagt sie, wenn sie sich bewegt. Stimme ruhig. Orientiert zu Person, Ort, Zeit, Situation. Aber: Warum liegt sie hier? Du blickst dich um. Das Bett steht hoch. Die Bettgitter sind unten. Das Nachtschränkchen ist weiter weg, als ein 82-jähriger Arm reichen kann, der Klingelknopf hängt am Bettkopf — vier Hebelbewegungen entfernt. Auf der Decke liegt eine angefangene Kreuzworträtsel-Zeitschrift, der Bleistift dazwischen. Auf dem Tisch: ein Glas Wasser, halb leer. Die Toilettentür ist nur angelehnt, das Licht darin aus, der Boden bis dorthin acht oder neun Schritte. Im Hinterkopf läuft jetzt deine zweite Spur: Anamnese, Risikofaktoren, Medikation, Krankheitslehre. Pneumonie, Parkinson, 82, fremdes Krankenhaus, fünf Wirkstoffe auf der Liste. Was hat sie nachts auf den Boden gebracht? Eine Sache wird es nicht sein. Stürze haben fast nie eine Ursache, sondern immer ein Bündel. Du musst das Sichtbare und das Unsichtbare zusammenbringen. Auf dem Bettzettel klebt ein gelber Aufkleber: 'Sturzrisiko'. Jemand hat ihn geschrieben — und trotzdem ist es passiert. Das ist nicht Schuld, das ist Realität: Risiko ist kein Sturz, Risiko ist Wahrscheinlichkeit. Jetzt: ruhiges, methodisches Hinschauen. Die Antwort liegt in den Faktoren, die dir die Augen, die Akte und die Medikamentenliste zeigen.",
+    "Du bist im Zimmer. Die Tür ist hinter dir leise zugefallen, der schmale Spalt Flurlicht ist verschwunden, jetzt brennt nur die Bett-Leselampe. Sie wirft einen warmen Kreis auf den Linoleumboden — und mitten in diesem Kreis liegt Frau M., auf der linken Seite, das Nachthemd hochgerutscht bis zum Knie, eine Hand an der Hüfte, die andere stützt sich am Bettrahmen. Sie atmet flach. Ihre dünnen weißen Haare sind verstrubbelt, eine Strähne klebt an der Wange, die Brille liegt einen Meter weiter unter dem Stuhl, ein Bügel verbogen. Es riecht nach Eukalyptus-Nasenspray, nach Schweiß und einer kalten Spur Urin auf dem Boden — sie hat es nicht mehr geschafft. Frau M. schaut dich an. Ihr Blick ist klar, aber feucht, der Mund leicht geöffnet. Sie sagt mit leiser, brüchiger Stimme: 'Ich wollte nur kurz...', und es klingt entschuldigend, fast wie bei einem Kind, das etwas Verbotenes getan hat. Du hockst dich neben sie, knietief, das Linoleum kühl unter den Knien, dein Puls noch immer höher als normal. Du hast die ersten Sekunden hinter dir, das erste Assessment im Kopf abgehakt: Bewusstsein klar, Atmung vorhanden, kein Blut, keine offensichtliche Deformität, kein verkürztes Bein, keine Außenrotation. NRS 4 von 10 in der linken Hüfte, sagt sie, wenn sie sich bewegt. Stimme ruhig. Orientiert zu Person, Ort, Zeit, Situation. Aber: Warum liegt sie hier? Du blickst dich um. Das Bett steht hoch. Die Bettgitter sind unten. Das Nachtschränkchen ist weiter weg, als ein 82-jähriger Arm reichen kann, der Klingelknopf hängt am Bettkopf — vier Hebelbewegungen entfernt. Auf der Decke liegt eine angefangene Kreuzworträtsel-Zeitschrift, der Bleistift dazwischen. Auf dem Tisch: ein Glas Wasser, halb leer. Die Toilettentür ist nur angelehnt, das Licht darin aus, der Boden bis dorthin acht oder neun Schritte. Im Hinterkopf läuft jetzt deine zweite Spur: Anamnese, Risikofaktoren, Medikation, Krankheitslehre. Pneumonie, Parkinson, 82, fremdes Krankenhaus, fünf Wirkstoffe auf der Liste. Was hat sie nachts auf den Boden gebracht? Eine Sache wird es nicht sein. Stürze haben fast nie eine Ursache, sondern immer ein Bündel. Du musst das Sichtbare und das Unsichtbare zusammenbringen. Auf dem Bettzettel klebt ein gelber Aufkleber: 'Sturzrisiko'. Jemand hat ihn geschrieben — und trotzdem ist es passiert. Das ist nicht Schuld, das ist Realität: Risiko ist kein Sturz, Risiko ist Wahrscheinlichkeit. Jetzt: ruhiges, methodisches Hinschaün. Die Antwort liegt in den Faktoren, die dir die Augen, die Akte und die Medikamentenliste zeigen.",
   kontextB1:
     "Du bist im Zimmer. Die Tür ist zu. Nur die kleine Lampe am Bett brennt. Frau M. liegt auf dem Boden, auf der linken Seite. Ihre Brille liegt unter dem Stuhl. Sie atmet flach. Es riecht nach Spray, Schweiß und ein wenig Urin. Frau M. schaut dich an. Sie sagt leise: 'Ich wollte nur kurz...' Du hockst dich neben sie. Du machst das erste Assessment. Sie ist wach. Sie atmet. Kein Blut. Kein verdrehtes Bein. Schmerzen: 4 von 10 in der linken Hüfte. Sie weiß, wer sie ist und wo sie ist. Gut. Aber: Warum liegt sie hier? Du schaust dich um. Das Bett steht hoch. Die Gitter sind unten. Der Klingel-Knopf ist weit weg. Auf dem Tisch: ein halbes Glas Wasser. Die Toilette ist offen, das Licht ist aus. Auf dem Bett-Zettel klebt ein gelber Aufkleber: 'Sturzrisiko'. Jemand wusste es. Trotzdem ist es passiert. Jetzt denkst du nach. Frau M. ist 82. Sie hat eine Lungenentzündung. Sie hat Parkinson. Sie ist nicht zuhause. Sie nimmt Medikamente. Was hat sie gestürzt? Du musst alles zusammenbringen — was du siehst, was in der Akte steht und was sie nimmt. Die Antwort liegt in den Risiken.",
   kernSteps: [
@@ -38,7 +38,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-beob-pim-grundwissen",
       tag: "krankheitslehre",
-      transition: "Du hast markiert. Jetzt erklaeren wir, warum genau diese Wirkstoffe gefaehrlich sind.",
+      transition: "Du hast markiert. Jetzt erklären wir, warum genau diese Wirkstoffe gefährlich sind.",
       themaPrimaer: "sturz-prophylaxe",
       themenSekundaer: ["assessments-expertenstandards"],
       contentC1: {
@@ -58,7 +58,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
         storyAufhaengerB1:
           "Du schaust gleich Frau M.s Medikamenten-Liste an. 5 Medikamente. Bei alten Menschen wirken manche Medikamente anders — und können zum Sturz führen. Diese nennt man **PIM**.",
         kerntext:
-          "**PIM = Potenziell Inadäquate Medikation.**\n\nMedikamente, die bei Menschen über 65 ein **erhöhtes Risiko-Nutzen-Verhältnis** haben — Stürze, Verwirrtheit, Niereninsuffizienz, Blutungen.\n\n**Zwei zentrale Listen:**\n\n• **PRISCUS-Liste 2.0 (2023)** — deutsche Standardliste, ca. 130 Wirkstoffe als problematisch markiert.\n\n• **Beers-Liste (2023)** — US-amerikanisches Pendant, international referenziert.\n\n**Häufige Sturz-relevante PIM-Klassen:**\n\n• **Z-Substanzen** (Zolpidem, Zopiclon) — Schlafmittel mit langer Wirkdauer bei Älteren\n\n• **Benzodiazepine** (Diazepam, Lorazepam) — Sedierung + Muskelschwäche\n\n• **Trizyklische Antidepressiva** (Amitriptylin) — anticholinerge Effekte\n\n• **Diuretika in der Nacht** (HCT, Furosemid) — Nykturie + Volumenmangel\n\n• **Antihypertensiva ohne RR-Monitoring** — Orthostase\n\n**Pflege-Aufgabe:**\n\nDu verschreibst nichts — aber du **erkennst** PIM, **dokumentierst** Sturz-Risiko-Konstellationen und **sprichst** sie in der Visite an. Pflege ist die Brücke zwischen Verordnung und Wirkung am Menschen.\n\n**Bei Frau M. heute Nacht:** 5 Wirkstoffe, mindestens einer davon ist ein klassischer PIM. Den findest du im nächsten Step.",
+          "**PIM = Potenziell Inadäquate Medikation.**\n\nMedikamente, die bei Menschen über 65 ein **erhöhtes Risiko-Nutzen-Verhältnis** haben — Stürze, Verwirrtheit, Niereninsuffizienz, Blutungen.\n\n**Zwei zentrale Listen:**\n\n• **PRISCUS-Liste 2.0 (2023)** — deutsche Standardliste, ca. 130 Wirkstoffe als problematisch markiert.\n\n• **Beers-Liste (2023)** — US-amerikanisches Pendant, international referenziert.\n\n**Häufige Sturz-relevante PIM-Klassen:**\n\n• **Z-Substanzen** (Zolpidem, Zopiclon) — Schlafmittel mit langer Wirkdaür bei Älteren\n\n• **Benzodiazepine** (Diazepam, Lorazepam) — Sedierung + Muskelschwäche\n\n• **Trizyklische Antidepressiva** (Amitriptylin) — anticholinerge Effekte\n\n• **Diuretika in der Nacht** (HCT, Furosemid) — Nykturie + Volumenmangel\n\n• **Antihypertensiva ohne RR-Monitoring** — Orthostase\n\n**Pflege-Aufgabe:**\n\nDu verschreibst nichts — aber du **erkennst** PIM, **dokumentierst** Sturz-Risiko-Konstellationen und **sprichst** sie in der Visite an. Pflege ist die Brücke zwischen Verordnung und Wirkung am Menschen.\n\n**Bei Frau M. heute Nacht:** 5 Wirkstoffe, mindestens einer davon ist ein klassischer PIM. Den findest du im nächsten Step.",
         kerntextB1:
           "**PIM heißt: Potenziell Inadäquate Medikation.**\n\nManche Medikamente sind für alte Menschen gefährlich — sie können Stürze, Verwirrung oder andere Probleme machen.\n\n**Zwei wichtige Listen:**\n\n• **PRISCUS-Liste 2.0** (2023) — deutsche Liste mit ca. 130 problematischen Wirkstoffen\n\n• **Beers-Liste** (2023) — die US-amerikanische Liste\n\n**Häufige Sturz-Auslöser bei Älteren:**\n\n• **Z-Schlafmittel** (z.B. Zolpidem, Zopiclon) — wirken bei Alten zu lang\n\n• **Benzodiazepine** (z.B. Diazepam) — machen müde und schwach\n\n• **Wassertabletten** in der Nacht (HCT, Furosemid) — sie müssen oft pinkeln\n\n• **Blutdruck-Senker** ohne Kontrolle — Schwindel beim Aufstehen\n\n**Was du als Pflege machst:**\n\n• Du **verschreibst** nichts — das macht der Arzt.\n\n• Aber du **erkennst** gefährliche Medikamente.\n\n• Du **schreibst auf**, wenn ein Medikament Sturz-Risiko erhöht.\n\n• Du **sagst** es in der Visite.\n\n**Bei Frau M.:** Sie nimmt 5 Medikamente. Mindestens eins ist ein typisches PIM. Im nächsten Schritt findest du heraus welches.",
         faustregel:
@@ -74,8 +74,8 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
               "Bei ihr ist es ein Diuretikum (Furosemid) das nachts Nykturie auslöst plus Polypharmazie. Pflege im ambulanten Setting muss PIMs aktiv ansprechen, weil der Hausarzt sie nicht täglich sieht.",
           },
           {
-            patientName: "Herr Bauer",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "Mirtazapin (PRISCUS) bei Demenz",
             kurzbeschreibung:
               "Mirtazapin steht auf der PRISCUS-Liste — sedierend, kann Orthostase verstärken. Bei Demenz-Patienten oft eingesetzt für Schlaf, aber ein Sturz-Booster.",
@@ -101,6 +101,59 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       },
     },
 
+    // ───── Inline-Wissen: Nykturie ─────
+    // Nykturie wird im nachfolgenden Highlight-Step als Fachbegriff verwendet.
+    // Schüler muss den Begriff kennen, bevor er ihn in der Medikamentenliste sieht.
+    {
+      stepId: "ce02-frau-m-beob-iw-nykturie",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "I Care Pflege, 2. Aufl. 2020, Thieme",
+        "DNQP 2022 — Expertenstandard Kontinenzförderung in der Pflege",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-beob-nykturie",
+      tag: "krankheitslehre",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["assessments-expertenstandards"],
+      transition: "Jetzt weißt du was Nykturie ist. Gleich siehst du Frau M.s Medikamentenliste — und findest den Auslöser.",
+      contentC1: {
+        title: "Was ist Nykturie — und warum ist sie sturzrelevant?",
+        body: "",
+        glossarBegriffe: ["Nykturie"],
+      },
+      contentB1: {
+        title: "Nykturie — nachts oft zur Toilette",
+        body: "",
+        glossarBegriffe: ["Nykturie"],
+      },
+      inlineWissen: {
+        bausteinRef: "nykturie",
+        storyAufhaenger:
+          "Auf dem Boden vor der Toilette: eine feuchte Spur. Frau M. hat es nicht mehr geschafft. Um 2:48 Uhr nachts aufzustehen und in einem fremden Krankenhauszimmer die Toilette zu finden — das ist die direkte Konsequenz von **Nykturie**.",
+        storyAufhaengerB1:
+          "Es riecht nach Urin auf dem Boden. Frau M. musste nachts zur Toilette — und hat es nicht geschafft. Das nennt man **Nykturie**: nachts aufstehen müssen zum Pinkeln.",
+        kerntext:
+          "**Nykturie** bezeichnet das Erwachen aus dem Schlaf wegen Harndrang — mindestens **zweimal pro Nacht** gilt als klinisch relevant (ICS-Definition 2002).\n\n**Warum ist Nykturie sturzrelevant?**\n\n• **Aufstehen im Dunkeln** — Orientierung eingeschränkt, besonders in fremder Umgebung\n\n• **Zeitdruck** — Harndrang erzeugt Eile, Patienten überspringen Sicherheitsschritte (Licht, Klingel, Schuhe)\n\n• **Orthostatische Dysregulation** — nach Stunden im Liegen fällt der Blutdruck beim Aufstehen ab\n\n• **Medikamentöse Ursache bei Frau M.:** Hydrochlorothiazid (HCT) — ein Diuretikum, das die Urinproduktion erhöht. Morgens eingenommen, wirkt es noch in der Nacht\n\n**Weitere häufige Ursachen:**\n\n• Herzinsuffizienz (liegebedingte Umverteilung → Nieren scheiden nachts mehr aus)\n\n• Prostata-Hyperplasie (Männer)\n\n• Diabetes mellitus (Polyurie)\n\n• Übermäßige Flüssigkeitsaufnahme abends\n\n**Pflegerische Maßnahme:** Einnahmezeit des Diuretikums prüfen — morgens statt abends verordnet? Trotzdem Nykturie? Dann: Toilettenstuhl neben das Bett, Nachtlicht, Klingel in Reichweite.",
+        kerntextB1:
+          "**Nykturie** heißt: nachts aufwachen, weil man zur Toilette muss. **Zweimal pro Nacht oder mehr** ist ein Problem.\n\n**Warum ist das gefährlich?**\n\n• Man steht im Dunkeln auf — in einem fremden Zimmer\n\n• Man hat es eilig — und vergisst Licht und Schuhe\n\n• Der Blutdruck fällt beim Aufstehen (Orthostase)\n\n**Warum hat Frau M. Nykturie?**\n\n• Sie nimmt **HCT** — eine Wassertablette. Die macht, dass sie mehr pinkeln muss. Auch nachts.\n\n**Andere häufige Gründe:**\n\n• Herzschwäche\n\n• Prostata-Probleme (bei Männern)\n\n• Diabetes\n\n**Was du als Pflege machst:**\n\n• Toilettenstuhl neben das Bett\n\n• Nachtlicht an\n\n• Klingel in Reichweite legen",
+        faustregel:
+          "Nykturie = nachts aufstehen müssen. Diuretikum + Dunkelheit + fremdes Zimmer = Sturzfalle.",
+        faustregelB1:
+          "Nykturie = nachts zur Toilette müssen. Wassertablette + Dunkelheit + fremdes Zimmer = Sturzgefahr.",
+        karteikarte: {
+          vorderseite:
+            "Frau M. ist nachts aufgestanden und gestürzt. Sie nimmt HCT. Was ist Nykturie — und warum ist sie ein Sturzrisiko?",
+          rueckseite:
+            "Nykturie = ≥2× nächtliches Erwachen wegen Harndrang (ICS 2002). Sturzrelevant weil: Aufstehen im Dunkeln, Zeitdruck, Orthostase. Bei Frau M. durch HCT (Diuretikum). Maßnahmen: Toilettenstuhl ans Bett, Nachtlicht, Klingel. Faustregel: Diuretikum + Dunkelheit + fremdes Zimmer = Sturzfalle.",
+        },
+      },
+    },
+
     // ───── Step 2.1b — Inline-Wissen PIM (NACH Brilliant-Frage) ─────
     // FIX (2026-04-29): verschoben von Position 1 auf Position 2 in Phase 2.
     // Didaktisch besser: erst raten (Brilliant), dann erklären (Inline-Wissen).
@@ -115,15 +168,15 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-beob-medis",
       tag: "krankheitslehre",
-      transition: "Zolpidem. Da ist es. Schauen wir genauer hin.",
+      transition: "Zolpidem. Da ist es. Schaün wir genaür hin.",
       contentC1: {
         title: "Medikamentenliste sichten",
-        body: "Du öffnest die Patientenakte und findest die aktuelle Medikamentenliste von Frau M. Fünf Wirkstoffe. **Markiere alle Wirkstoffe, die dir im Zusammenhang mit dem nächtlichen Sturz verdächtig vorkommen.** Das ist eine Brilliant-Frage — bevor wir erklären, was ein PIM (potenziell inadäquate Medikation) ist, schau dir die Liste an und nutze dein Vorwissen.",
+        body: "Du öffnest die Patientenakte und findest die aktülle Medikamentenliste von Frau M. Fünf Wirkstoffe. **Markiere alle Wirkstoffe, die dir im Zusammenhang mit dem nächtlichen Sturz verdächtig vorkommen.** Das ist eine Brilliant-Frage — bevor wir erklären, was ein PIM (potenziell inadäquate Medikation) ist, schau dir die Liste an und nutze dein Vorwissen.",
         // FIX (walkthrough B-11): Nykturie ergänzt — B1-Schüler kennt Begriff nicht.
         glossarBegriffe: ["Polypharmazie", "Nykturie"],
       },
       contentB1: {
-        title: "Medikamente anschauen",
+        title: "Medikamente anschaün",
         body: "Du schaust in die Patientenakte. Frau M. nimmt 5 Medikamente. **Markiere die, die mit dem Sturz zu tun haben könnten.** Das ist eine offene Frage — erst markieren, dann erklären wir es.",
         // FIX (walkthrough B-11): Nykturie ergänzt.
         glossarBegriffe: ["Polypharmazie", "Nykturie"],
@@ -198,7 +251,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
 
     // Step 2.2 — Zolpidem erklärt
     {
-      stepId: "ce02-frau-m-beob-02-zolpidem-erklaert",
+      stepId: "ce02-frau-m-beob-02-zolpidem-erklärt",
       phase: 2,
       stepType: "text",
       bloomLevel: 3,
@@ -251,7 +304,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-frau-m-beob-fragen",
       tag: "krankheitslehre",
-      transition: "Du hoerst ihr zu. Jetzt: die Risiken systematisch sortieren.",
+      transition: "Du hörst ihr zu. Jetzt: die Risiken systematisch sortieren.",
       contentC1: {
         title: "Patientin aktiv fragen",
         body: "Du hast Zolpidem als verdächtig identifiziert. Aber du weißt noch nicht, wie Frau M. es erlebt hat.\n\nViele Patientinnen berichten Nebenwirkungen nicht — weil sie denken, es gehöre dazu. Deshalb: **Aktiv fragen.**",
@@ -469,7 +522,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
         spektrum: [
           {
             patientName: "Frau Yilmaz (Hüft-TEP)",
-            situationsId: "ls-yilmaz-hueft-tep",
+            situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "Schellong vor 1. Mobilisation post-OP",
             kurzbeschreibung:
               "Bei post-OP-Mobilisation (Tag 1) ist Schellong Pflicht — Patient hat lange gelegen, evtl. Volumenmangel durch OP, Schmerzmittel sedieren. Plus: Lagerungsregeln beachten (max. 90° Hüftflexion).",
@@ -482,8 +535,8 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
               "Bei ihm ist Schellong komplexer: Hemiparese rechts, betroffene Seite muss begleitet werden. Zusätzlich Aspirations-Risiko bei Aufrichtung.",
           },
           {
-            patientName: "Herr Bauer (Demenz)",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür (Demenz)",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "Schellong bei Mirtazapin",
             kurzbeschreibung:
               "Mirtazapin (PRISCUS) verursacht ausgeprägte Orthostase. Bei Demenz wartet er nicht 3 Min — Schellong braucht hier ggf. ruhige Validation-Begleitung.",
@@ -578,7 +631,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       displayFormat: "scenario",
       contentC1: {
         title: "Frau M. über ihre Situation",
-        body: "Während du die Vitalzeichen misst, sagt Frau M. leise:\n\n\"Zu Hause komme ich zurecht. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst wirklich selbstständig, das müssen Sie mir glauben.\"\n\n**Was Frau M. sagt, ist didaktisch zentral.**\n\nEin Mensch verliert Orientierung in neuer Umgebung — auch ohne Demenz.\n\nSelbstständigkeit bei Aufnahme ≠ Selbstständigkeit in fremder Umgebung unter Pneumonie-Behandlung + neuer Sedierung.\n\n**Deine Aufgabe als Pflege:**\n\n• Das anerkennen, nicht relativieren (\"Jetzt sind Sie halt im Krankenhaus\").\n\n• Zuhören.\n\n• Dokumentieren, dass die Umgebung ein relevanter Risikofaktor ist.",
+        body: "Während du die Vitalzeichen misst, sagt Frau M. leise:\n\n\"Zu Hause komme ich zurecht. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst wirklich selbstständig, das müssen Sie mir glauben.\"\n\n**Was Frau M. sagt, ist didaktisch zentral.**\n\nEin Mensch verliert Orientierung in neür Umgebung — auch ohne Demenz.\n\nSelbstständigkeit bei Aufnahme ≠ Selbstständigkeit in fremder Umgebung unter Pneumonie-Behandlung + neür Sedierung.\n\n**Deine Aufgabe als Pflege:**\n\n• Das anerkennen, nicht relativieren (\"Jetzt sind Sie halt im Krankenhaus\").\n\n• Zuhören.\n\n• Dokumentieren, dass die Umgebung ein relevanter Risikofaktor ist.",
         glossarBegriffe: [],
       },
       contentB1: {

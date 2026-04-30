@@ -70,7 +70,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
     // das strukturierte Ernährungsprotokoll ausfüllt (Step 6.2), braucht er Wissen:
     // Was gehört in ein Ernährungsprotokoll, warum ist es Pflicht, welche Fehler sind typisch?
     {
-      stepId: "ce02-schmidt-dok-01b-ernaehrungsdoku",
+      stepId: "ce02-schmidt-dok-01b-ernährungsdoku",
       phase: 6,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -81,10 +81,10 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-schmidt-dok-ernaehrungsprotokoll",
+      lernziel: "ce02-schmidt-dok-ernährungsprotokoll",
       tag: "pflege",
-      themaPrimaer: "ernaehrungsassessment",
-      themenSekundaer: ["ernaehrungsgrundlagen"],
+      themaPrimaer: "ernährungsassessment",
+      themenSekundaer: ["ernährungsgrundlagen"],
       transition: "Du weißt jetzt was ins Protokoll gehört. Gleich füllst du es aus — für Frau Schmidt.",
       contentC1: {
         title: "Ernährungsprotokoll — was muss rein?",
@@ -97,9 +97,9 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
         glossarBegriffe: ["Ernährungsprotokoll"],
       },
       inlineWissen: {
-        bausteinRef: "ernaehrungsassessment-dokumentation",
+        bausteinRef: "ernährungsassessment-dokumentation",
         storyAufhaenger:
-          "Du hast den Pflegebericht geschrieben. Aber Frau Schmidt bekommt zusätzlich ein Ernährungsprotokoll — 3 Tage lang, mit genauer Dokumentation jeder Mahlzeit. Warum reicht der Pflegebericht allein nicht?",
+          "Du hast den Pflegebericht geschrieben. Aber Frau Schmidt bekommt zusätzlich ein Ernährungsprotokoll — 3 Tage lang, mit genaür Dokumentation jeder Mahlzeit. Warum reicht der Pflegebericht allein nicht?",
         storyAufhaengerB1:
           "Du hast den Pflege-Bericht geschrieben. Aber Frau Schmidt bekommt auch ein Ernährungs-Protokoll. Warum beides?",
         kerntext:
@@ -127,7 +127,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
           },
           {
             patientName: "Emilia (Säugling)",
-            situationsId: "ls-emilia-saeugling",
+            situationsId: "ls-emilia-säugling",
             hauptfaktor: "Trinkprotokoll bei Bronchiolitis",
             kurzbeschreibung:
               "Bei Säuglingen: ml pro Mahlzeit + Trinkbereitschaft + Erbrechen. Trinkmenge <50 % des Tagesbedarfs = Arzt informieren. Jede Mahlzeit dokumentieren.",
@@ -144,7 +144,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
 
     // Step 6.2 — Cloze: Ernährungsprotokoll-Lückentext
     {
-      stepId: "ce02-schmidt-dok-02-ernaehrungsprotokoll-lueckentext",
+      stepId: "ce02-schmidt-dok-02-ernährungsprotokoll-lückentext",
       phase: 6,
       stepType: "cloze",
       bloomLevel: 5,
@@ -155,7 +155,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "puzzle",
-      lernziel: "ce02-schmidt-dok-ernaehrungsprotokoll",
+      lernziel: "ce02-schmidt-dok-ernährungsprotokoll",
       tag: "pflege",
       contentC1: {
         title: "Ernährungsprotokoll — Lückentext",
@@ -201,8 +201,8 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
             },
             {
               id: 6,
-              correct: "(Name der Ernährungsberaterin individuell eintragen)",
-              distractors: ["(Name individuell)"],
+              correct: "(Name der Ernährungsberaterin individüll eintragen)",
+              distractors: ["(Name individüll)"],
             },
           ],
         },
@@ -247,7 +247,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
             right: "Externe Ernährungsberaterin ambulant + Hausarzt",
           },
           {
-            left: "BZ-Tagesprofil 5 Tage + Metformin 500 mg 2× täglich (aktuell)",
+            left: "BZ-Tagesprofil 5 Tage + Metformin 500 mg 2× täglich (aktüll)",
             right: "Hausarzt + ggf. Diabetologin für ambulante Weiterbetreuung",
           },
           {
@@ -289,7 +289,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
           kernaussagen: [
             "Adipositas ≠ gut ernährt — Albumin ist der Proteinmarker, NRS 2002 ist das Screening-Werkzeug. Übergewicht und Proteinmangel schließen sich nicht aus.",
             "Diabetisches Fußsyndrom: Nagelpflege und jede invasive Fußpflege gehören ausschließlich zum Podologen. Pflege inspiziert, dokumentiert, initiiert die Überweisung — greift aber nicht ein.",
-            "Ernährungsgespräch ist Beziehungsarbeit: Biographie zuerst, Fragen vor Aussagen, keine Verbotslisten. Autonomie stärken statt Diätvorschriften machen.",
+            "Ernährungsgespräch ist Beziehungsarbeit: Biographie zürst, Fragen vor Aussagen, keine Verbotslisten. Autonomie stärken statt Diätvorschriften machen.",
             "Inkontinenz würdevoll ansprechen: Normalisieren senkt die Schambarriere. Selbstpflege fördern soweit möglich (§ 2 PflBG).",
             "Interprofessionelles Team: Kompetenzgrenzen kennen ist Qualitätssicherung — nicht Schwäche. Podologe, Ernährungsberaterin, Arzt, Pflege haben klar verteilte Aufgaben.",
           ],

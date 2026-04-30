@@ -16,18 +16,18 @@ import type { ContentStep } from "../../../_types";
  * am 3. post-OP-Tag so dringend ist, bevor er Prioritäten setzt.
  */
 export const IW_YILMAZ_01_FRUEHMOBILISATION: ContentStep = {
-  stepId: "ce02-yilmaz-info-01b-fruehmobilisation",
+  stepId: "ce02-yilmaz-info-01b-frühmobilisation",
   phase: 1,
   stepType: "inlineWissen",
   bloomLevel: 2,
   kompetenzbereich: "I.1",
   quellen: [
-    "DNQP (2020): Expertenstandard Erhaltung und Foerderung der Mobilitaet in der Pflege",
-    "DGG (2022): S1-Leitlinie Fruehmobilisation",
+    "DNQP (2020): Expertenstandard Erhaltung und Förderung der Mobilität in der Pflege",
+    "DGG (2022): S1-Leitlinie Frühmobilisation",
   ],
   track: "basis",
   modus: "entdecker",
-  lernziel: "ce02-yilmaz-info-fruehmobilisation",
+  lernziel: "ce02-yilmaz-info-frühmobilisation",
   tag: "pflege",
   themaPrimaer: "mobilisation",
   themenSekundaer: ["thrombose-prophylaxe"],
@@ -35,53 +35,53 @@ export const IW_YILMAZ_01_FRUEHMOBILISATION: ContentStep = {
   contentC1: {
     title: "Warum muss Frau Yilmaz heute aufstehen?",
     body: "",
-    glossarBegriffe: ["Fruehmobilisation", "Wadenmuskelpumpe", "Immobilitaetsfolgen"],
+    glossarBegriffe: ["Frühmobilisation", "Wadenmuskelpumpe", "Immobilitätsfolgen"],
   },
   contentB1: {
     title: "Warum ist Aufstehen so wichtig?",
     body: "",
-    glossarBegriffe: ["Fruehmobilisation", "Immobilitaet"],
+    glossarBegriffe: ["Frühmobilisation", "Immobilität"],
   },
   inlineWissen: {
     bausteinRef: "mobilisation-begriff-folgen",
     storyAufhaenger:
-      "Frau Wendt hat gerade gesagt: \"Heute muss der Aufstehversuch klappen — Tag 3 ist der optimale Zeitpunkt.\" Aber warum genau Tag 3? Und was passiert, wenn Frau Yilmaz noch laenger liegt?",
+      "Frau Wendt hat gerade gesagt: \"Heute muss der Aufstehversuch klappen — Tag 3 ist der optimale Zeitpunkt.\" Aber warum genau Tag 3? Und was passiert, wenn Frau Yilmaz noch länger liegt?",
     storyAufhaengerB1:
-      "Frau Wendt sagt: \"Heute muss sie aufstehen.\" Aber warum ist das so wichtig? Was passiert, wenn Frau Yilmaz noch laenger im Bett bleibt?",
+      "Frau Wendt sagt: \"Heute muss sie aufstehen.\" Aber warum ist das so wichtig? Was passiert, wenn Frau Yilmaz noch länger im Bett bleibt?",
     kerntext:
-      "**Fruehmobilisation** ist die wirksamste Einzelmassnahme gegen die fuenf grossen Gefahren der Bettlaegerigkeit (DNQP 2020):\n\n• **Thrombose** — die Wadenmuskelpumpe steht still, Blut staut sich (Virchow-Trias: Stase)\n\n• **Dekubitus** — Druck auf Steissbein und Fersen steigt jede Stunde\n\n• **Pneumonie** — flache Atmung im Liegen, Sekretstau\n\n• **Kontraktur** — Muskeln und Sehnen verkuerzen sich ab 48-72 Stunden\n\n• **Muskelabbau** — aeltere Menschen verlieren bis zu 10 % Muskelmasse pro Woche Bettruhe\n\nBei Frau Yilmaz kommen alle fuenf Risiken zusammen: 79 Jahre, Adipositas, Diabetes, 3 Tage Bettruhe. Deshalb ist Tag 3 nach Hueft-TEP der **spaeteste Zeitpunkt** fuer den ersten Aufstehversuch (DGG 2022).",
+      "**Frühmobilisation** ist die wirksamste Einzelmaßnahme gegen die fünf grossen Gefahren der Bettlägerigkeit (DNQP 2020):\n\n• **Thrombose** — die Wadenmuskelpumpe steht still, Blut staut sich (Virchow-Trias: Stase)\n\n• **Dekubitus** — Druck auf Steissbein und Fersen steigt jede Stunde\n\n• **Pneumonie** — flache Atmung im Liegen, Sekretstau\n\n• **Kontraktur** — Muskeln und Sehnen verkürzen sich ab 48-72 Stunden\n\n• **Muskelabbau** — aeltere Menschen verlieren bis zu 10 % Muskelmasse pro Woche Bettruhe\n\nBei Frau Yilmaz kommen alle fünf Risiken zusammen: 79 Jahre, Adipositas, Diabetes, 3 Tage Bettruhe. Deshalb ist Tag 3 nach Hüft-TEP der **späteste Zeitpunkt** für den ersten Aufstehversuch (DGG 2022).",
     kerntextB1:
-      "**Fruehmobilisation** bedeutet: so frueh wie moeglich aufstehen nach einer OP.\n\nWenn ein Mensch lange liegt, passieren schlimme Dinge:\n\n• **Blutgerinnsel** in den Beinvenen (Thrombose)\n• **Druckwunden** an Steissbein und Fersen\n• **Lungenentzuendung** durch flaches Atmen\n• **Steife Gelenke** (Kontraktur)\n• **Muskelabbau** — bis zu 10 % pro Woche\n\nFrau Yilmaz liegt schon 3 Tage. Sie ist 79, hat Uebergewicht und Diabetes. All das macht die Gefahren noch groesser. Deshalb: Heute muss sie aufstehen.",
+      "**Frühmobilisation** bedeutet: so früh wie möglich aufstehen nach einer OP.\n\nWenn ein Mensch lange liegt, passieren schlimme Dinge:\n\n• **Blutgerinnsel** in den Beinvenen (Thrombose)\n• **Druckwunden** an Steissbein und Fersen\n• **Lungenentzündung** durch flaches Atmen\n• **Steife Gelenke** (Kontraktur)\n• **Muskelabbau** — bis zu 10 % pro Woche\n\nFrau Yilmaz liegt schon 3 Tage. Sie ist 79, hat Übergewicht und Diabetes. All das macht die Gefahren noch grösser. Deshalb: Heute muss sie aufstehen.",
     faustregel:
-      "**Jeder Tag im Bett kostet Muskeln, Haut und Kreislauf** — Fruehmobilisation ist keine Option, sondern Pflicht.",
+      "**Jeder Tag im Bett kostet Muskeln, Haut und Kreislauf** — Frühmobilisation ist keine Option, sondern Pflicht.",
     faustregelB1:
-      "Jeder Tag im Bett macht den Koerper schwaecher. Aufstehen ist keine Wahl — es ist noetig.",
+      "Jeder Tag im Bett macht den Körper schwächer. Aufstehen ist keine Wahl — es ist nötig.",
     spektrum: [
       {
         patientName: "Herr Petrov",
         situationsId: "ls-petrov-schlaganfall",
         hauptfaktor: "Hemiparese nach Schlaganfall",
         kurzbeschreibung:
-          "Bei ihm ist Fruehmobilisation nach Bobath-Konzept notwendig — die betroffene Seite wird gezielt einbezogen, nicht geschont.",
+          "Bei ihm ist Frühmobilisation nach Bobath-Konzept notwendig — die betroffene Seite wird gezielt einbezogen, nicht geschont.",
       },
       {
         patientName: "Frau Schmidt",
         situationsId: "ls-schmidt-adipositas",
         hauptfaktor: "Adipositas Grad III (BMI 42)",
         kurzbeschreibung:
-          "Bariatrische Mobilisation braucht spezielle Hilfsmittel (Aufstehhilfe, breiter Rollator) und zwei Pflegekraefte.",
+          "Bariatrische Mobilisation braucht spezielle Hilfsmittel (Aufstehhilfe, breiter Rollator) und zwei Pflegekräfte.",
       },
       {
         patientName: "Frau Kovac",
         situationsId: "ls-kovac-ambulant",
         hauptfaktor: "COPD + ambulant",
         kurzbeschreibung:
-          "Bei ihr ist Mobilisation auch Atemtherapie — jeder Schritt verbessert die Lungenbelueftung und reduziert das Pneumonie-Risiko.",
+          "Bei ihr ist Mobilisation auch Atemtherapie — jeder Schritt verbessert die Lungenbelüftung und reduziert das Pneumonie-Risiko.",
       },
     ],
     karteikarte: {
       vorderseite:
-        "Frau Yilmaz liegt seit 3 Tagen nach Hueft-TEP. Nenne 3 Gefahren der Immobilitaet, die bei ihr besonders relevant sind.",
+        "Frau Yilmaz liegt seit 3 Tagen nach Hüft-TEP. Nenne 3 Gefahren der Immobilität, die bei ihr besonders relevant sind.",
       rueckseite:
         "Thrombose (Stase + Adipositas + Diabetes = alle 3 Saeulen der Virchow-Trias aktiv), Dekubitus (Steissbein-Roetung bereits Kategorie I, BMI 34), Muskelabbau (79 Jahre, bis zu 10 % pro Woche). Weitere: Pneumonie, Kontraktur. Faustregel: **Jeder Tag im Bett kostet Muskeln, Haut und Kreislauf.** Spektrum: Petrov (Bobath), Schmidt (bariatrisch), Kovac (COPD-Atemtherapie).",
     },
@@ -100,7 +100,7 @@ export const IW_YILMAZ_02_LUXATIONSPROPHYLAXE: ContentStep = {
   bloomLevel: 2,
   kompetenzbereich: "I.1",
   quellen: [
-    "Deutsche Gesellschaft fuer Unfallchirurgie (2022): S2k-Leitlinie Endoprothetik Huefte",
+    "Deutsche Gesellschaft für Unfallchirurgie (2022): S2k-Leitlinie Endoprothetik Hüfte",
     "DNQP (2017, 2. Aktualisierung 2024): Expertenstandard Dekubitusprophylaxe",
   ],
   track: "basis",
@@ -109,9 +109,9 @@ export const IW_YILMAZ_02_LUXATIONSPROPHYLAXE: ContentStep = {
   tag: "pflege",
   themaPrimaer: "positionierung",
   themenSekundaer: ["mobilisation"],
-  transition: "Du kennst jetzt die drei Verbote. Gleich ordnest du sie den Gruenden zu.",
+  transition: "Du kennst jetzt die drei Verbote. Gleich ordnest du sie den Gründen zu.",
   contentC1: {
-    title: "Luxationsprophylaxe: Drei Verbote nach Hueft-TEP",
+    title: "Luxationsprophylaxe: Drei Verbote nach Hüft-TEP",
     body: "",
     glossarBegriffe: ["Luxation", "Luxationsprophylaxe", "Adduktion", "Innenrotation", "Flexion"],
   },
@@ -121,17 +121,17 @@ export const IW_YILMAZ_02_LUXATIONSPROPHYLAXE: ContentStep = {
     glossarBegriffe: ["Luxation", "Adduktion", "Innenrotation", "Flexion"],
   },
   inlineWissen: {
-    bausteinRef: "positionierung-huefte-luxationsprophylaxe",
+    bausteinRef: "positionierung-hüfte-luxationsprophylaxe",
     storyAufhaenger:
-      "Frau Yilmaz hat ein neues Hueftgelenk — aber es sitzt noch nicht fest. In den ersten 6–12 Wochen kann die Prothese aus der Pfanne springen (= Luxation). Das passiert, wenn das operierte Bein in bestimmte Positionen geraet. Du musst die drei Verbote kennen, bevor du ihr Zimmer betrittst.",
+      "Frau Yilmaz hat ein neüs Hüftgelenk — aber es sitzt noch nicht fest. In den ersten 6–12 Wochen kann die Prothese aus der Pfanne springen (= Luxation). Das passiert, wenn das operierte Bein in bestimmte Positionen gerät. Du musst die drei Verbote kennen, bevor du ihr Zimmer betrittst.",
     storyAufhaengerB1:
-      "Frau Yilmaz hat ein neues Hueftgelenk. Aber es sitzt noch nicht ganz fest. Es kann aus der Pfanne springen. Das heisst Luxation. Es gibt drei Bewegungen, die das ausloesen koennen. Die musst du kennen.",
+      "Frau Yilmaz hat ein neüs Hüftgelenk. Aber es sitzt noch nicht ganz fest. Es kann aus der Pfanne springen. Das heißt Luxation. Es gibt drei Bewegungen, die das auslösen können. Die musst du kennen.",
     kerntext:
-      "**Drei Bewegungsverbote nach Hueft-TEP** (DGU S2k-Leitlinie 2022):\n\n• **Hueftbeugung < 90°** — der Oberschenkel darf nicht ueber den rechten Winkel zum Becken gebeugt werden. Beim Sitzen: Stuhl hoeher als Knie. Beim Schuhe anziehen: langer Schuhloefel.\n\n• **Keine Adduktion ueber die Koerpermittellinie** — das operierte Bein darf nicht ueber die Koerpermitte gefuehrt werden. Kein Beine-Uebereinanderschlagen, kein seitliches Rutschen.\n\n• **Keine Innenrotation** — die Fussspitze des operierten Beins zeigt nach aussen oder geradeaus, niemals nach innen. Im Schlaf: Kissen zwischen die Beine verhindert ungewolltes Drehen.\n\n**Geltungsdauer:** 6–12 Wochen post-OP, je nach Operationstechnik und Chirurgen-Anweisung.\n\n**Konsequenz bei Verstoss:** Luxation = Notfall-OP, extremer Schmerz, verlaengerte Rehabilitationszeit.",
+      "**Drei Bewegungsverbote nach Hüft-TEP** (DGU S2k-Leitlinie 2022):\n\n• **Hüftbeugung < 90°** — der Oberschenkel darf nicht ueber den rechten Winkel zum Becken gebeugt werden. Beim Sitzen: Stuhl höher als Knie. Beim Schuhe anziehen: langer Schuhlöfel.\n\n• **Keine Adduktion ueber die Körpermittellinie** — das operierte Bein darf nicht ueber die Körpermitte geführt werden. Kein Beine-Übereinanderschlagen, kein seitliches Rutschen.\n\n• **Keine Innenrotation** — die Fussspitze des operierten Beins zeigt nach aussen oder geradeaus, niemals nach innen. Im Schlaf: Kissen zwischen die Beine verhindert ungewolltes Drehen.\n\n**Geltungsdaür:** 6–12 Wochen post-OP, je nach Operationstechnik und Chirurgen-Anweisung.\n\n**Konseqünz bei Verstoss:** Luxation = Notfall-OP, extremer Schmerz, verlängerte Rehabilitationszeit.",
     kerntextB1:
-      "**Drei verbotene Bewegungen** nach Hueft-OP:\n\n• **Huefte nicht ueber 90° beugen** — beim Sitzen: Stuhl hoeher als Knie\n\n• **Bein nicht ueber die Mitte kreuzen** (kein Beine uebereinanderschlagen)\n\n• **Fuss nicht nach innen drehen** — Fussspitze zeigt nach aussen oder geradeaus\n\nDiese Regeln gelten 6–12 Wochen lang.\n\nWenn jemand die Regeln bricht, kann das Gelenk aus der Pfanne springen. Das heisst Luxation. Das ist ein Notfall.",
+      "**Drei verbotene Bewegungen** nach Hüft-OP:\n\n• **Hüfte nicht ueber 90° beugen** — beim Sitzen: Stuhl höher als Knie\n\n• **Bein nicht ueber die Mitte kreuzen** (kein Beine uebereinanderschlagen)\n\n• **Fuss nicht nach innen drehen** — Fussspitze zeigt nach aussen oder geradeaus\n\nDiese Regeln gelten 6–12 Wochen lang.\n\nWenn jemand die Regeln bricht, kann das Gelenk aus der Pfanne springen. Das heißt Luxation. Das ist ein Notfall.",
     faustregel:
-      "**90°, Mitte, Innenrotation** — drei Grenzen, die du in den naechsten 6–12 Wochen bei jedem Handgriff beachtest.",
+      "**90°, Mitte, Innenrotation** — drei Grenzen, die du in den nächsten 6–12 Wochen bei jedem Handgriff beachtest.",
     faustregelB1:
       "Drei Verbote: Nicht ueber 90° beugen, nicht ueberkreuzen, nicht nach innen drehen. 6–12 Wochen lang.",
     spektrum: [
@@ -140,28 +140,28 @@ export const IW_YILMAZ_02_LUXATIONSPROPHYLAXE: ContentStep = {
         situationsId: "ls-petrov-schlaganfall",
         hauptfaktor: "Hemiparese — kann die Lagerungsvorschrift nicht aktiv einhalten",
         kurzbeschreibung:
-          "Bei ihm muss die Pflege die Positionierung komplett uebernehmen — er kann das operierte Bein nicht selbst kontrollieren. Kissen-Positionierung wird zur Dauermassnahme.",
+          "Bei ihm muss die Pflege die Positionierung komplett uebernehmen — er kann das operierte Bein nicht selbst kontrollieren. Kissen-Positionierung wird zur Daürmaßnahme.",
       },
       {
-        patientName: "Herr Bauer",
-        situationsId: "ls-bauer-demenz-sturz",
+        patientName: "Herr Baür",
+        situationsId: "ls-baür-demenz-sturz",
         hauptfaktor: "Demenz — vergisst die Lagerungsregeln",
         kurzbeschreibung:
-          "Er versteht die Regeln im Moment, vergisst sie aber sofort. Bettgitter und Kissen-Positionierung sind mechanische Sicherheitsnetze — Erklaerungen allein reichen nicht.",
+          "Er versteht die Regeln im Moment, vergisst sie aber sofort. Bettgitter und Kissen-Positionierung sind mechanische Sicherheitsnetze — Erklärungen allein reichen nicht.",
       },
       {
         patientName: "Frau Schmidt",
         situationsId: "ls-schmidt-adipositas",
         hauptfaktor: "Adipositas — erschwert Kissen-Positionierung",
         kurzbeschreibung:
-          "Koerperumfang und Gewicht erschweren die Kissen-Platzierung zwischen den Beinen. Groessere Keilkissen oder spezielle Abduktionslagerungshilfen noetig.",
+          "Körperumfang und Gewicht erschweren die Kissen-Platzierung zwischen den Beinen. Grössere Keilkissen oder spezielle Abduktionslagerungshilfen nötig.",
       },
     ],
     karteikarte: {
       vorderseite:
-        "Nenne die drei Bewegungsverbote nach Hueft-TEP und erklaere, warum Mustafa (Frau Yilmaz' Ehemann) ein Risiko darstellt.",
+        "Nenne die drei Bewegungsverbote nach Hüft-TEP und erkläre, warum Mustafa (Frau Yilmaz' Ehemann) ein Risiko darstellt.",
       rueckseite:
-        "(1) Hueftbeugung < 90°, (2) keine Adduktion ueber Koerpermitte, (3) keine Innenrotation. Mustafa versucht manchmal, Frau Yilmaz selbst aufzuhelfen — ohne zu wissen, dass er dabei Luxationsgefahr riskiert. Alle drei Verbote gelten 6–12 Wochen. Spektrum: Petrov (kann Regeln nicht aktiv einhalten), Bauer (vergisst sie), Schmidt (Kissen-Positionierung erschwert). Faustregel: **90°, Mitte, Innenrotation.**",
+        "(1) Hüftbeugung < 90°, (2) keine Adduktion ueber Körpermitte, (3) keine Innenrotation. Mustafa versucht manchmal, Frau Yilmaz selbst aufzuhelfen — ohne zu wissen, dass er dabei Luxationsgefahr riskiert. Alle drei Verbote gelten 6–12 Wochen. Spektrum: Petrov (kann Regeln nicht aktiv einhalten), Baür (vergisst sie), Schmidt (Kissen-Positionierung erschwert). Faustregel: **90°, Mitte, Innenrotation.**",
     },
   },
 };
@@ -178,7 +178,7 @@ export const IW_YILMAZ_03_FONDAPARINUX: ContentStep = {
   bloomLevel: 2,
   kompetenzbereich: "I.1",
   quellen: [
-    "AWMF (2024): S3-Leitlinie Prophylaxe der venoesen Thromboembolie",
+    "AWMF (2024): S3-Leitlinie Prophylaxe der venösen Thromboembolie",
     "DGG (2022): S2k-Leitlinie tiefe Beinvenenthrombose",
   ],
   track: "basis",
@@ -194,52 +194,52 @@ export const IW_YILMAZ_03_FONDAPARINUX: ContentStep = {
     glossarBegriffe: ["Fondaparinux", "Antikoagulation", "NMH", "Thromboseprophylaxe"],
   },
   contentB1: {
-    title: "Warum bekommt Frau Yilmaz eine Blut-Verduennungs-Spritze?",
+    title: "Warum bekommt Frau Yilmaz eine Blut-Verdünnungs-Spritze?",
     body: "",
     glossarBegriffe: ["Fondaparinux", "Blutverdunnung"],
   },
   inlineWissen: {
     bausteinRef: "thrombose-prophylaxe-nmh-doaks",
     storyAufhaenger:
-      "In der SBAR-Uebergabe stand: \"Fondaparinux 2,5 mg s.c. taeglich seit OP-Tag.\" Eine Bauchspritze taeglich — aber warum genau dieses Medikament? Und reicht es allein aus?",
+      "In der SBAR-Übergabe stand: \"Fondaparinux 2,5 mg s.c. täglich seit OP-Tag.\" Eine Bauchspritze täglich — aber warum genau dieses Medikament? Und reicht es allein aus?",
     storyAufhaengerB1:
-      "In der Uebergabe steht: Frau Yilmaz bekommt taeglich eine Spritze in den Bauch (Fondaparinux). Warum? Und reicht das allein aus?",
+      "In der Übergabe steht: Frau Yilmaz bekommt täglich eine Spritze in den Bauch (Fondaparinux). Warum? Und reicht das allein aus?",
     kerntext:
-      "**Fondaparinux** ist ein synthetisches Antikoagulans (Gerinnungshemmer). Bei Frau Yilmaz wird es statt des ueblichen niedermolekularen Heparins (NMH) eingesetzt.\n\n**Warum nicht NMH?** NMH ist der Standard — aber Fondaparinux hat bei Hueft-TEP einen Vorteil: kein HIT-Risiko (Heparin-induzierte Thrombozytopenie). Bei Frau Yilmaz mit Diabetes und Adipositas ist das Thromboserisiko ohnehin extrem hoch — eine HIT waere lebensbedrohlich.\n\n**Dauer:** 35 Tage, auch nach Entlassung. AWMF-Empfehlung: mindestens 28–35 Tage nach Hueft-TEP.\n\n**Reicht die Spritze allein?** Nein. Medikamentoese Prophylaxe ist nur ein Baustein. Fruehmobilisation (Wadenmuskelpumpe aktivieren) ist die wirksamste Massnahme — die Spritze schuetzt, aber ersetzt das Aufstehen nicht.",
+      "**Fondaparinux** ist ein synthetisches Antikoagulans (Gerinnungshemmer). Bei Frau Yilmaz wird es statt des ueblichen niedermolekularen Heparins (NMH) eingesetzt.\n\n**Warum nicht NMH?** NMH ist der Standard — aber Fondaparinux hat bei Hüft-TEP einen Vorteil: kein HIT-Risiko (Heparin-induzierte Thrombozytopenie). Bei Frau Yilmaz mit Diabetes und Adipositas ist das Thromboserisiko ohnehin extrem hoch — eine HIT wäre lebensbedrohlich.\n\n**Daür:** 35 Tage, auch nach Entlassung. AWMF-Empfehlung: mindestens 28–35 Tage nach Hüft-TEP.\n\n**Reicht die Spritze allein?** Nein. Medikamentöse Prophylaxe ist nur ein Baustein. Frühmobilisation (Wadenmuskelpumpe aktivieren) ist die wirksamste Maßnahme — die Spritze schützt, aber ersetzt das Aufstehen nicht.",
     kerntextB1:
-      "**Fondaparinux** ist ein Medikament gegen Blutgerinnsel. Es kommt als Spritze in den Bauch.\n\nNormalerweise bekommt man Heparin. Fondaparinux ist besser bei Hueft-OP, weil es eine bestimmte Komplikation (= HIT) nicht ausloeoen kann.\n\n**Wie lange?** 35 Tage — auch nachdem Frau Yilmaz nach Hause geht.\n\n**Reicht die Spritze allein?** Nein. Aufstehen und Gehen ist genauso wichtig. Die Spritze schuetzt — aber sie ersetzt das Aufstehen nicht.",
+      "**Fondaparinux** ist ein Medikament gegen Blutgerinnsel. Es kommt als Spritze in den Bauch.\n\nNormalerweise bekommt man Heparin. Fondaparinux ist besser bei Hüft-OP, weil es eine bestimmte Komplikation (= HIT) nicht auslöön kann.\n\n**Wie lange?** 35 Tage — auch nachdem Frau Yilmaz nach Hause geht.\n\n**Reicht die Spritze allein?** Nein. Aufstehen und Gehen ist genauso wichtig. Die Spritze schützt — aber sie ersetzt das Aufstehen nicht.",
     faustregel:
-      "**Spritze schuetzt, Aufstehen rettet** — medikamentoese Prophylaxe allein reicht bei Hueft-TEP nicht.",
+      "**Spritze schützt, Aufstehen rettet** — medikamentöse Prophylaxe allein reicht bei Hüft-TEP nicht.",
     faustregelB1:
-      "Die Spritze schuetzt das Blut. Aber Aufstehen ist genauso wichtig. Beides zusammen hilft am besten.",
+      "Die Spritze schützt das Blut. Aber Aufstehen ist genauso wichtig. Beides zusammen hilft am besten.",
     spektrum: [
       {
         patientName: "Herr Petrov",
         situationsId: "ls-petrov-schlaganfall",
         hauptfaktor: "Schlaganfall + Hemiparese",
         kurzbeschreibung:
-          "Bei ihm laeuft NMH (Enoxaparin) statt Fondaparinux, da kein chirurgisches Setting. Dazu IPK-Manschetten (intermittierende pneumatische Kompression), weil er kaum mobilisiert werden kann.",
+          "Bei ihm läuft NMH (Enoxaparin) statt Fondaparinux, da kein chirurgisches Setting. Dazu IPK-Manschetten (intermittierende pneumatische Kompression), weil er kaum mobilisiert werden kann.",
       },
       {
         patientName: "Frau Kovac",
         situationsId: "ls-kovac-ambulant",
         hauptfaktor: "Ambulant, COPD",
         kurzbeschreibung:
-          "Ambulante Patientin — keine medikamentoese Thromboseprophylaxe noetig (mobil). Aber: Bein-Uebungen und Gehtraining als Basisschutz.",
+          "Ambulante Patientin — keine medikamentöse Thromboseprophylaxe nötig (mobil). Aber: Bein-Übungen und Gehtraining als Basisschutz.",
       },
       {
         patientName: "Frau Schmidt",
         situationsId: "ls-schmidt-adipositas",
         hauptfaktor: "Adipositas Grad III",
         kurzbeschreibung:
-          "Bei BMI > 40 kann eine gewichtsadaptierte NMH-Dosierung noetig sein — Standarddosis reicht bei schwerem Uebergewicht oft nicht aus.",
+          "Bei BMI > 40 kann eine gewichtsadaptierte NMH-Dosierung nötig sein — Standarddosis reicht bei schwerem Übergewicht oft nicht aus.",
       },
     ],
     karteikarte: {
       vorderseite:
-        "Frau Yilmaz bekommt Fondaparinux 2,5 mg s.c. taeglich. Warum wurde Fondaparinux statt NMH gewaehlt, und warum reicht es allein nicht?",
+        "Frau Yilmaz bekommt Fondaparinux 2,5 mg s.c. täglich. Warum wurde Fondaparinux statt NMH gewählt, und warum reicht es allein nicht?",
       rueckseite:
-        "Fondaparinux hat kein HIT-Risiko (wichtig bei hohem Thromboserisiko). Allein reicht es nicht, weil Fruehmobilisation die wirksamste Einzelmassnahme ist (Wadenmuskelpumpe). AWMF empfiehlt 28–35 Tage nach Hueft-TEP. Spektrum: Petrov (NMH + IPK), Kovac (ambulant, keine Med.-Prophylaxe), Schmidt (gewichtsadaptierte Dosis). Faustregel: **Spritze schuetzt, Aufstehen rettet.**",
+        "Fondaparinux hat kein HIT-Risiko (wichtig bei hohem Thromboserisiko). Allein reicht es nicht, weil Frühmobilisation die wirksamste Einzelmaßnahme ist (Wadenmuskelpumpe). AWMF empfiehlt 28–35 Tage nach Hüft-TEP. Spektrum: Petrov (NMH + IPK), Kovac (ambulant, keine Med.-Prophylaxe), Schmidt (gewichtsadaptierte Dosis). Faustregel: **Spritze schützt, Aufstehen rettet.**",
     },
   },
 };
@@ -286,27 +286,27 @@ export const IW_YILMAZ_04_SCHMERZ_NRS: ContentStep = {
       basisBausteinId: "schmerz-nrs-grundlagen",
       basisPatient: "Frau M.",
       vertiefung:
-        "Die NRS kennst du von Frau M. — dort ging es um Sturz-Schmerz (NRS als Momentaufnahme). Bei Frau Yilmaz ist eine Besonderheit wichtig: **Ruhe-Schmerz vs. Bewegungs-Schmerz.** Gestern NRS 7 beim Aufstehen (Bewegungsschmerz) — das hat den Versuch abgebrochen. Heute fragst du beides getrennt: Schmerz in Ruhe UND Schmerz bei Bewegung. Das ist Standard in der orthopaedischen Pflege (DNQP 2020).",
+        "Die NRS kennst du von Frau M. — dort ging es um Sturz-Schmerz (NRS als Momentaufnahme). Bei Frau Yilmaz ist eine Besonderheit wichtig: **Ruhe-Schmerz vs. Bewegungs-Schmerz.** Gestern NRS 7 beim Aufstehen (Bewegungsschmerz) — das hat den Versuch abgebrochen. Heute fragst du beides getrennt: Schmerz in Ruhe UND Schmerz bei Bewegung. Das ist Standard in der orthopädischen Pflege (DNQP 2020).",
       vertiefungB1:
         "Die NRS-Skala kennst du von Frau M. — 0 = kein Schmerz, 10 = schlimmster Schmerz. Bei Frau Yilmaz ist etwas anders: Du fragst ZWEIMAL. Einmal: Wie stark ist der Schmerz im Liegen? (= Ruheschmerz) Dann: Wie stark bei Bewegung? (= Bewegungsschmerz) Gestern war Bewegungsschmerz NRS 7 — deshalb hat der Versuch nicht geklappt.",
     },
     storyAufhaenger:
-      "Frau Yilmaz sagt: \"Das Bein zieht so.\" Du willst den Schmerz messen. Aber Schmerz nach Hueft-TEP hat zwei Gesichter: Ruheschmerz und Bewegungsschmerz. Gestern war der Bewegungsschmerz der Grund fuer den Abbruch.",
+      "Frau Yilmaz sagt: \"Das Bein zieht so.\" Du willst den Schmerz messen. Aber Schmerz nach Hüft-TEP hat zwei Gesichter: Ruheschmerz und Bewegungsschmerz. Gestern war der Bewegungsschmerz der Grund für den Abbruch.",
     storyAufhaengerB1:
-      "Frau Yilmaz sagt: \"Das Bein zieht.\" Du willst den Schmerz messen. Aber Achtung: Schmerz im Liegen und Schmerz beim Bewegen koennen sehr unterschiedlich sein.",
+      "Frau Yilmaz sagt: \"Das Bein zieht.\" Du willst den Schmerz messen. Aber Achtung: Schmerz im Liegen und Schmerz beim Bewegen können sehr unterschiedlich sein.",
     kerntext:
-      "**NRS-Auffrischung bei Hueft-TEP:**\n\n• **Immer ZWEI Werte erheben:** NRS in Ruhe + NRS bei Bewegung\n\n• **Schwellenwert NRS ≥ 4:** moderater Schmerz, interventionspflichtig (DNQP 2020). NRS 7 gestern = Abbruchkriterium\n\n• **Zeitpunkt entscheidend:** Analgesie (Metamizol) braucht 30 Minuten Wirkzeit. Schmerzmessung VOR Mobilisation UND 30 Min nach Schmerzmittelgabe\n\n• **Frau Yilmaz' Besonderheit:** Sie minimiert. \"Es zieht ein bisschen\" kann NRS 5–6 bedeuten. Nachfragen, konkret messen, nicht nur Aussage akzeptieren.",
+      "**NRS-Auffrischung bei Hüft-TEP:**\n\n• **Immer ZWEI Werte erheben:** NRS in Ruhe + NRS bei Bewegung\n\n• **Schwellenwert NRS ≥ 4:** moderater Schmerz, interventionspflichtig (DNQP 2020). NRS 7 gestern = Abbruchkriterium\n\n• **Zeitpunkt entscheidend:** Analgesie (Metamizol) braucht 30 Minuten Wirkzeit. Schmerzmessung VOR Mobilisation UND 30 Min nach Schmerzmittelgabe\n\n• **Frau Yilmaz' Besonderheit:** Sie minimiert. \"Es zieht ein bisschen\" kann NRS 5–6 bedeuten. Nachfragen, konkret messen, nicht nur Aussage akzeptieren.",
     kerntextB1:
-      "**NRS bei Frau Yilmaz:**\n\n• **Zwei Mal fragen:** Schmerz im Liegen? Schmerz bei Bewegung?\n\n• **Ab NRS 4** ist der Schmerz stark genug, um etwas dagegen zu tun\n\n• **Schmerzmittel braucht 30 Minuten** bis es wirkt. Erst messen, dann Schmerzmittel, dann 30 Minuten warten, dann aufstehen\n\n• **Frau Yilmaz sagt weniger als sie fuehlt.** \"Es zieht ein bisschen\" kann NRS 5–6 sein. Deshalb: immer mit Zahl messen, nicht nur hoeren.",
+      "**NRS bei Frau Yilmaz:**\n\n• **Zwei Mal fragen:** Schmerz im Liegen? Schmerz bei Bewegung?\n\n• **Ab NRS 4** ist der Schmerz stark genug, um etwas dagegen zu tun\n\n• **Schmerzmittel braucht 30 Minuten** bis es wirkt. Erst messen, dann Schmerzmittel, dann 30 Minuten warten, dann aufstehen\n\n• **Frau Yilmaz sagt weniger als sie fühlt.** \"Es zieht ein bisschen\" kann NRS 5–6 sein. Deshalb: immer mit Zahl messen, nicht nur hören.",
     faustregel:
-      "**Ruhe und Bewegung getrennt messen** — bei Hueft-TEP entscheidet der Bewegungsschmerz ueber Erfolg oder Abbruch.",
+      "**Ruhe und Bewegung getrennt messen** — bei Hüft-TEP entscheidet der Bewegungsschmerz ueber Erfolg oder Abbruch.",
     faustregelB1:
       "Immer zweimal fragen: Schmerz im Liegen? Schmerz bei Bewegung? Nur so weisst du, ob das Aufstehen klappt.",
     karteikarte: {
       vorderseite:
         "Frau Yilmaz sagt: \"Es zieht ein bisschen.\" Warum reicht diese Aussage nicht — und was machst du stattdessen?",
       rueckseite:
-        "Frau Yilmaz minimiert ihre Schmerzen (Persoenlichkeit). \"Es zieht\" kann NRS 5–6 bedeuten. Deshalb: NRS-Skala nutzen, ZWEI Werte erheben (Ruhe + Bewegung), NRS ≥ 4 = interventionspflichtig. Faustregel: **Ruhe und Bewegung getrennt messen.**",
+        "Frau Yilmaz minimiert ihre Schmerzen (Persönlichkeit). \"Es zieht\" kann NRS 5–6 bedeuten. Deshalb: NRS-Skala nutzen, ZWEI Werte erheben (Ruhe + Bewegung), NRS ≥ 4 = interventionspflichtig. Faustregel: **Ruhe und Bewegung getrennt messen.**",
     },
   },
 };
@@ -324,7 +324,7 @@ export const IW_YILMAZ_05_VIRCHOW_TRIAS: ContentStep = {
   kompetenzbereich: "I.1",
   quellen: [
     "Virchow R. (1856): Gesammelte Abhandlungen zur wissenschaftlichen Medicin",
-    "AWMF (2024): S3-Leitlinie Prophylaxe der venoesen Thromboembolie",
+    "AWMF (2024): S3-Leitlinie Prophylaxe der venösen Thromboembolie",
   ],
   track: "basis",
   modus: "entdecker",
@@ -336,55 +336,55 @@ export const IW_YILMAZ_05_VIRCHOW_TRIAS: ContentStep = {
   contentC1: {
     title: "Virchow-Trias: Warum bildet sich ein Blutgerinnsel?",
     body: "",
-    glossarBegriffe: ["Virchow-Trias", "Thrombose", "Stase", "Hyperkoagulabilitaet", "Endothel"],
+    glossarBegriffe: ["Virchow-Trias", "Thrombose", "Stase", "Hyperkoagulabilität", "Endothel"],
   },
   contentB1: {
-    title: "Drei Ursachen fuer ein Blutgerinnsel",
+    title: "Drei Ursachen für ein Blutgerinnsel",
     body: "",
     glossarBegriffe: ["Virchow-Trias", "Thrombose", "Blutgerinnsel"],
   },
   inlineWissen: {
     bausteinRef: "thrombose-prophylaxe-virchow-trias",
     storyAufhaenger:
-      "Frau Yilmaz bekommt taeglich eine Spritze gegen Thrombose. Aber warum ist gerade SIE so gefaehrdet? Die Antwort liegt in einem 170 Jahre alten Modell, das heute noch gilt — der Virchow-Trias.",
+      "Frau Yilmaz bekommt täglich eine Spritze gegen Thrombose. Aber warum ist gerade SIE so gefährdet? Die Antwort liegt in einem 170 Jahre alten Modell, das heute noch gilt — der Virchow-Trias.",
     storyAufhaengerB1:
       "Frau Yilmaz bekommt eine Spritze gegen Blutgerinnsel. Aber warum ist das Risiko bei ihr so hoch? Die Antwort hat ein Arzt vor 170 Jahren gefunden.",
     kerntext:
-      "**Die Virchow-Trias** (1856) beschreibt drei Faktoren, die gemeinsam eine Thrombose ausloesen:\n\n• **Gefaesswandschaden** — die innere Gefaesswand (Endothel) ist normalerweise glatt. Bei OP-Verletzung, Entzuendung oder Katheter wird sie rau — Blutplaettchen bleiben kleben.\n\n• **Stase** (verlangsamter Blutfluss) — wenn du lange liegst, pumpt die Wadenmuskelpumpe nicht. Blut staut sich in den Beinvenen.\n\n• **Hyperkoagulabilitaet** (erhoehte Gerinnungsbereitschaft) — Entzuendungsreaktion nach OP, aber auch Diabetes, Rauchen, Pille erhoehen die Gerinnung.\n\n**Bei Frau Yilmaz sind alle drei aktiv gleichzeitig:** Hueft-OP (Wandschaden) + 3 Tage Bettruhe (Stase) + Diabetes + OP-Entzuendung (Hyperkoagulabilitaet). Das macht Hueft-TEP-Patienten zu einer der hoechsten Risikogruppen ueberhaupt.",
+      "**Die Virchow-Trias** (1856) beschreibt drei Faktoren, die gemeinsam eine Thrombose auslösen:\n\n• **Gefässwandschaden** — die innere Gefässwand (Endothel) ist normalerweise glatt. Bei OP-Verletzung, Entzündung oder Katheter wird sie rau — Blutplättchen bleiben kleben.\n\n• **Stase** (verlangsamter Blutfluss) — wenn du lange liegst, pumpt die Wadenmuskelpumpe nicht. Blut staut sich in den Beinvenen.\n\n• **Hyperkoagulabilität** (erhöhte Gerinnungsbereitschaft) — Entzündungsreaktion nach OP, aber auch Diabetes, Rauchen, Pille erhöhen die Gerinnung.\n\n**Bei Frau Yilmaz sind alle drei aktiv gleichzeitig:** Hüft-OP (Wandschaden) + 3 Tage Bettruhe (Stase) + Diabetes + OP-Entzündung (Hyperkoagulabilität). Das macht Hüft-TEP-Patienten zu einer der höchsten Risikogruppen ueberhaupt.",
     kerntextB1:
-      "**Drei Ursachen fuer ein Blutgerinnsel** (Virchow-Trias):\n\n• **Gefaess-Schaden** — bei der OP wurde das Gefaess verletzt\n\n• **Langsames Blut** (Stase) — wer lange liegt, pumpt kein Blut durch die Beine\n\n• **Blut gerinnt leichter** — nach einer OP und bei Diabetes\n\nBei Frau Yilmaz sind alle drei Ursachen gleichzeitig da. Deshalb ist das Risiko sehr hoch.",
+      "**Drei Ursachen für ein Blutgerinnsel** (Virchow-Trias):\n\n• **Gefäss-Schaden** — bei der OP wurde das Gefäss verletzt\n\n• **Langsames Blut** (Stase) — wer lange liegt, pumpt kein Blut durch die Beine\n\n• **Blut gerinnt leichter** — nach einer OP und bei Diabetes\n\nBei Frau Yilmaz sind alle drei Ursachen gleichzeitig da. Deshalb ist das Risiko sehr hoch.",
     faustregel:
-      "**Wand, Fluss, Gerinnung** — wenn alle drei Saeulen aktiv sind, ist die Thrombose-Gefahr am hoechsten.",
+      "**Wand, Fluss, Gerinnung** — wenn alle drei Saeulen aktiv sind, ist die Thrombose-Gefahr am höchsten.",
     faustregelB1:
-      "Drei Ursachen fuer Blutgerinnsel: Gefaess-Schaden, langsames Blut, Blut gerinnt leichter. Bei Frau Yilmaz sind alle drei da.",
+      "Drei Ursachen für Blutgerinnsel: Gefäss-Schaden, langsames Blut, Blut gerinnt leichter. Bei Frau Yilmaz sind alle drei da.",
     spektrum: [
       {
         patientName: "Herr Petrov",
         situationsId: "ls-petrov-schlaganfall",
         hauptfaktor: "Schlaganfall + Hemiparese",
         kurzbeschreibung:
-          "Bei ihm dominiert Stase (gelahmtes Bein, kaum Bewegung). Hyperkoagulabilitaet durch Vorhofflimmern kommt dazu. Andere Gewichtung, gleiche Trias.",
+          "Bei ihm dominiert Stase (gelahmtes Bein, kaum Bewegung). Hyperkoagulabilität durch Vorhofflimmern kommt dazu. Andere Gewichtung, gleiche Trias.",
       },
       {
         patientName: "Frau Kovac",
         situationsId: "ls-kovac-ambulant",
         hauptfaktor: "COPD, ambulant, mobil",
         kurzbeschreibung:
-          "Bei ihr: kaum Stase (sie bewegt sich), kein OP-Wandschaden. Aber chronische Entzuendung durch COPD erhoehnt leicht die Hyperkoagulabilitaet. Niedriges Risiko — keine medikamentoese Prophylaxe noetig.",
+          "Bei ihr: kaum Stase (sie bewegt sich), kein OP-Wandschaden. Aber chronische Entzündung durch COPD erhöhnt leicht die Hyperkoagulabilität. Niedriges Risiko — keine medikamentöse Prophylaxe nötig.",
       },
       {
         patientName: "Frau Schmidt",
         situationsId: "ls-schmidt-adipositas",
         hauptfaktor: "Adipositas Grad III",
         kurzbeschreibung:
-          "Stase verstaerkt durch Gewicht (venoese Kompression), Hyperkoagulabilitaet durch metabolisches Syndrom. Bei ihr: alle drei Saeulen auch ohne OP aktiv.",
+          "Stase verstärkt durch Gewicht (venöse Kompression), Hyperkoagulabilität durch metabolisches Syndrom. Bei ihr: alle drei Saeulen auch ohne OP aktiv.",
       },
     ],
     karteikarte: {
       vorderseite:
         "Nenne die drei Saeulen der Virchow-Trias und ordne sie Frau Yilmaz zu.",
       rueckseite:
-        "(1) Gefaesswandschaden — Hueft-OP. (2) Stase — 3 Tage Bettruhe + Adipositas. (3) Hyperkoagulabilitaet — OP-Entzuendung + Diabetes. Alle drei gleichzeitig aktiv = hoechste Risikogruppe. Spektrum: Petrov (Stase + Vorhofflimmern), Kovac (niedrig, nur leicht Hyperkoagulabilitaet), Schmidt (alle drei auch ohne OP). Faustregel: **Wand, Fluss, Gerinnung.**",
+        "(1) Gefässwandschaden — Hüft-OP. (2) Stase — 3 Tage Bettruhe + Adipositas. (3) Hyperkoagulabilität — OP-Entzündung + Diabetes. Alle drei gleichzeitig aktiv = höchste Risikogruppe. Spektrum: Petrov (Stase + Vorhofflimmern), Kovac (niedrig, nur leicht Hyperkoagulabilität), Schmidt (alle drei auch ohne OP). Faustregel: **Wand, Fluss, Gerinnung.**",
     },
   },
 };
@@ -402,7 +402,7 @@ export const IW_YILMAZ_06_TVT_ZEICHEN: ContentStep = {
   kompetenzbereich: "I.1",
   quellen: [
     "DGG (2022): S2k-Leitlinie tiefe Beinvenenthrombose",
-    "AWMF (2024): S3-Leitlinie Prophylaxe der venoesen Thromboembolie",
+    "AWMF (2024): S3-Leitlinie Prophylaxe der venösen Thromboembolie",
   ],
   track: "basis",
   modus: "entdecker",
@@ -412,7 +412,7 @@ export const IW_YILMAZ_06_TVT_ZEICHEN: ContentStep = {
   themenSekundaer: [],
   transition: "Du weisst jetzt, was du siehst und was du NICHT provozieren darfst. Beurteile nun die Aussagen.",
   contentC1: {
-    title: "Thrombose-Zeichen: Was du beobachtest — und was du laesst",
+    title: "Thrombose-Zeichen: Was du beobachtest — und was du lässt",
     body: "",
     glossarBegriffe: ["TVT", "Homans-Zeichen", "Kompressionssonographie", "Wells-Score"],
   },
@@ -424,45 +424,45 @@ export const IW_YILMAZ_06_TVT_ZEICHEN: ContentStep = {
   inlineWissen: {
     bausteinRef: "thrombose-prophylaxe-tvt-symptome",
     storyAufhaenger:
-      "Du inspizierst Frau Yilmaz' Beine im Seitenvergleich. Vielleicht erinnerst du dich aus dem Unterricht an das Homans-Zeichen — Fuss hochziehen und schauen ob die Wade schmerzt. Aber Vorsicht: Das darfst du NICHT mehr machen.",
+      "Du inspizierst Frau Yilmaz' Beine im Seitenvergleich. Vielleicht erinnerst du dich aus dem Unterricht an das Homans-Zeichen — Fuss hochziehen und schaün ob die Wade schmerzt. Aber Vorsicht: Das darfst du NICHT mehr machen.",
     storyAufhaengerB1:
-      "Du schaust dir Frau Yilmaz' Beine an. Sind sie gleich dick? Ist eines waermer? Frueher hat man am Fuss gezogen (Homans-Zeichen). Heute ist das verboten.",
+      "Du schaust dir Frau Yilmaz' Beine an. Sind sie gleich dick? Ist eines wärmer? Früher hat man am Fuss gezogen (Homans-Zeichen). Heute ist das verboten.",
     kerntext:
-      "**Was du bei Verdacht auf TVT tust:**\n\n• **Inspektion im Seitenvergleich:** Schwellung? Umfang? Hauttemperatur (Handruecken)? Verfaerbung (livide-blaurot)? Verstaerkte Venenzeichnung?\n\n• **Schmerz erfragen:** \"Tut die Wade weh?\" — aktiv fragen, nicht nur warten\n\n• **Umfang messen:** Bei Verdacht beide Waden an gleicher Stelle messen (10 cm unter Knie)\n\n**Was du NICHT tust:**\n\n• **Kein Homans-Zeichen** (Dorsalextension des Fusses) — veraltet, unzuverlaessig (Spezifitaet nur ~50 %), kann Thrombusteile loesen und Lungenembolie ausloesen\n\n• **Kein Payr-Zeichen, kein Meyer-Zeichen** — ebenfalls veraltet\n\n**Bei Verdacht:** Sofort Arzt informieren. Diagnostik: Wells-Score + D-Dimer + Kompressionssonographie (Goldstandard). Deine Rolle: **Beobachten und melden — nicht provozieren.**",
+      "**Was du bei Verdacht auf TVT tust:**\n\n• **Inspektion im Seitenvergleich:** Schwellung? Umfang? Hauttemperatur (Handrücken)? Verfärbung (livide-blaurot)? Verstärkte Venenzeichnung?\n\n• **Schmerz erfragen:** \"Tut die Wade weh?\" — aktiv fragen, nicht nur warten\n\n• **Umfang messen:** Bei Verdacht beide Waden an gleicher Stelle messen (10 cm unter Knie)\n\n**Was du NICHT tust:**\n\n• **Kein Homans-Zeichen** (Dorsalextension des Fusses) — veraltet, unzuverlässig (Spezifität nur ~50 %), kann Thrombusteile lösen und Lungenembolie auslösen\n\n• **Kein Payr-Zeichen, kein Meyer-Zeichen** — ebenfalls veraltet\n\n**Bei Verdacht:** Sofort Arzt informieren. Diagnostik: Wells-Score + D-Dimer + Kompressionssonographie (Goldstandard). Deine Rolle: **Beobachten und melden — nicht provozieren.**",
     kerntextB1:
-      "**Was du machst:**\n\n• Beide Beine vergleichen: Ist eines dicker? Waermer? Blau-rot?\n• Fragen: \"Tut die Wade weh?\"\n• Bei Verdacht: Wade messen (beide Seiten, 10 cm unter Knie)\n\n**Was du NICHT machst:**\n\n• Nicht am Fuss ziehen (Homans-Zeichen) — das ist verboten! Es kann ein Gerinnsel loesen.\n• Nicht druecken, nicht provozieren.\n\n**Bei Verdacht:** Sofort dem Arzt sagen. Der macht einen Ultraschall.",
+      "**Was du machst:**\n\n• Beide Beine vergleichen: Ist eines dicker? Wärmer? Blau-rot?\n• Fragen: \"Tut die Wade weh?\"\n• Bei Verdacht: Wade messen (beide Seiten, 10 cm unter Knie)\n\n**Was du NICHT machst:**\n\n• Nicht am Fuss ziehen (Homans-Zeichen) — das ist verboten! Es kann ein Gerinnsel lösen.\n• Nicht drücken, nicht provozieren.\n\n**Bei Verdacht:** Sofort dem Arzt sagen. Der macht einen Ultraschall.",
     faustregel:
-      "**Schauen, fragen, messen — aber niemals provozieren.** Das Homans-Zeichen gehoert ins Geschichtsbuch.",
+      "**Schaün, fragen, messen — aber niemals provozieren.** Das Homans-Zeichen gehört ins Geschichtsbuch.",
     faustregelB1:
-      "Schauen, fragen, messen — aber nie am Bein druecken oder ziehen. Das kann gefaehrlich sein.",
+      "Schaün, fragen, messen — aber nie am Bein drücken oder ziehen. Das kann gefährlich sein.",
     spektrum: [
       {
-        patientName: "Herr Bauer",
-        situationsId: "ls-bauer-demenz-sturz",
-        hauptfaktor: "Demenz — kann Schmerzen nicht zuverlaessig angeben",
+        patientName: "Herr Baür",
+        situationsId: "ls-baür-demenz-sturz",
+        hauptfaktor: "Demenz — kann Schmerzen nicht zuverlässig angeben",
         kurzbeschreibung:
-          "Bei ihm sind Verhaltensaenderungen (Unruhe, Nahrungsverweigerung, Abwehr bei Beruehrung am Bein) die einzigen Thrombose-Hinweise. BESD-Skala statt NRS.",
+          "Bei ihm sind Verhaltensänderungen (Unruhe, Nahrungsverweigerung, Abwehr bei Berührung am Bein) die einzigen Thrombose-Hinweise. BESD-Skala statt NRS.",
       },
       {
         patientName: "Herr Petrov",
         situationsId: "ls-petrov-schlaganfall",
         hauptfaktor: "Hemiparese — gelahmtes Bein kann Schwellung maskieren",
         kurzbeschreibung:
-          "Das paretische Bein ist ohnehin oedematoes — eine TVT-Schwellung faellt kaum auf. Taegliche Umfangsmessung beider Beine ist hier Standard.",
+          "Das paretische Bein ist ohnehin oedematös — eine TVT-Schwellung fällt kaum auf. Taegliche Umfangsmessung beider Beine ist hier Standard.",
       },
       {
         patientName: "Frau Schmidt",
         situationsId: "ls-schmidt-adipositas",
         hauptfaktor: "Adipositas — Seitenvergleich erschwert",
         kurzbeschreibung:
-          "Umfangsmessung bei BMI > 40 ist unzuverlaessig (Gewebsmasse). Sonographie frueher einsetzen. Hautverfaerbung beachten — livid-blaurot ist auch bei Adipositas ein Warnzeichen.",
+          "Umfangsmessung bei BMI > 40 ist unzuverlässig (Gewebsmasse). Sonographie früher einsetzen. Hautverfärbung beachten — livid-blaurot ist auch bei Adipositas ein Warnzeichen.",
       },
     ],
     karteikarte: {
       vorderseite:
-        "Du vermutest bei Frau Yilmaz eine TVT. Was genau inspizierst du — und welchen klassischen Test fuehrst du NICHT durch?",
+        "Du vermutest bei Frau Yilmaz eine TVT. Was genau inspizierst du — und welchen klassischen Test führst du NICHT durch?",
       rueckseite:
-        "Inspektion: Schwellung (Seitenvergleich), Umfang messen, Hauttemperatur (Handruecken), Verfaerbung, Venenzeichnung. Schmerz erfragen. NICHT: Homans-Zeichen (veraltet, Embolie-Risiko). Bei Verdacht: Arzt informieren, Wells-Score + D-Dimer + Sonographie. Faustregel: **Schauen, fragen, messen — niemals provozieren.**",
+        "Inspektion: Schwellung (Seitenvergleich), Umfang messen, Hauttemperatur (Handrücken), Verfärbung, Venenzeichnung. Schmerz erfragen. NICHT: Homans-Zeichen (veraltet, Embolie-Risiko). Bei Verdacht: Arzt informieren, Wells-Score + D-Dimer + Sonographie. Faustregel: **Schaün, fragen, messen — niemals provozieren.**",
     },
   },
 };
@@ -483,7 +483,7 @@ export const IW_YILMAZ_07_ANALGESIE_VOR_MOBILISATION: ContentStep = {
   bloomLevel: 3,
   kompetenzbereich: "I.1",
   quellen: [
-    "DNQP (2020): Expertenstandard Erhaltung und Foerderung der Mobilitaet in der Pflege",
+    "DNQP (2020): Expertenstandard Erhaltung und Förderung der Mobilität in der Pflege",
     "DNQP (2020): Expertenstandard Schmerzmanagement in der Pflege",
   ],
   track: "basis",
@@ -506,22 +506,22 @@ export const IW_YILMAZ_07_ANALGESIE_VOR_MOBILISATION: ContentStep = {
   inlineWissen: {
     bausteinRef: "mobilisation-analgesie-timing",
     storyAufhaenger:
-      "Gestern ist Frau Yilmaz' Aufstehversuch bei NRS 7 gescheitert. Heute willst du es besser machen. Aber was war gestern der Fehler? Nicht der Aufstehversuch selbst — sondern das Timing. Schmerz und Mobilisation haengen untrennbar zusammen.",
+      "Gestern ist Frau Yilmaz' Aufstehversuch bei NRS 7 gescheitert. Heute willst du es besser machen. Aber was war gestern der Fehler? Nicht der Aufstehversuch selbst — sondern das Timing. Schmerz und Mobilisation hängen untrennbar zusammen.",
     storyAufhaengerB1:
-      "Gestern hat Frau Yilmaz versucht aufzustehen. Es hat nicht geklappt — die Schmerzen waren zu stark. Was lief falsch? Das Schmerzmittel kam zu spaet.",
+      "Gestern hat Frau Yilmaz versucht aufzustehen. Es hat nicht geklappt — die Schmerzen waren zu stark. Was lief falsch? Das Schmerzmittel kam zu spät.",
     kerntext:
-      "**Timing-Regel:** Analgesie muss **BEVOR** die Mobilisation beginnt wirken — nicht gleichzeitig, nicht danach.\n\n**Bei Frau Yilmaz:**\n• Metamizol 500 mg oral — Wirkungseintritt ca. 30 Minuten\n• Ibuprofen 400 mg bei Bedarf — Wirkungseintritt ca. 30-60 Minuten\n\n**Die Planung:** Schmerzmittel-Status um 7:30 Uhr pruefen (wurde die Morgenmedikation gegeben?). Falls nicht: sofort nachholen. Dann 30 Minuten warten. Dann NRS messen. Erst bei NRS ≤ 5: Mobilisation starten.\n\n**Warum das so wichtig ist:**\n• Schmerz hemmt Eigenbewegung — ohne Analgesie verkrampft Frau Yilmaz\n• Verkrampfung erhoeht Sturzrisiko und Luxationsgefahr\n• Gescheiterter Versuch zerstoert Vertrauen — der naechste wird noch schwieriger\n\nDer DNQP 2020 nennt das explizit: **Schmerzmanagement ist Voraussetzung fuer erfolgreiche Mobilisation.**",
+      "**Timing-Regel:** Analgesie muss **BEVOR** die Mobilisation beginnt wirken — nicht gleichzeitig, nicht danach.\n\n**Bei Frau Yilmaz:**\n• Metamizol 500 mg oral — Wirkungseintritt ca. 30 Minuten\n• Ibuprofen 400 mg bei Bedarf — Wirkungseintritt ca. 30-60 Minuten\n\n**Die Planung:** Schmerzmittel-Status um 7:30 Uhr prüfen (wurde die Morgenmedikation gegeben?). Falls nicht: sofort nachholen. Dann 30 Minuten warten. Dann NRS messen. Erst bei NRS ≤ 5: Mobilisation starten.\n\n**Warum das so wichtig ist:**\n• Schmerz hemmt Eigenbewegung — ohne Analgesie verkrampft Frau Yilmaz\n• Verkrampfung erhöht Sturzrisiko und Luxationsgefahr\n• Gescheiterter Versuch zerstört Vertraün — der nächste wird noch schwieriger\n\nDer DNQP 2020 nennt das explizit: **Schmerzmanagement ist Voraussetzung für erfolgreiche Mobilisation.**",
     kerntextB1:
-      "**Regel:** Schmerzmittel BEVOR du aufstehst. Nicht gleichzeitig.\n\n**Bei Frau Yilmaz:**\n• Metamizol — braucht 30 Minuten bis es wirkt\n• Ibuprofen — braucht 30-60 Minuten\n\n**Was du tust:** Morgens pruefen: Hat sie das Schmerzmittel bekommen? Wenn nicht: jetzt geben. Dann 30 Minuten warten. Dann Schmerz messen. Erst wenn NRS 5 oder weniger: aufstehen.\n\n**Warum?** Wenn sie starke Schmerzen hat, verkrampft sie sich. Dann faellt sie leichter. Und das Gelenk kann sich loesen. Und: Ein gescheiterter Versuch macht es beim naechsten Mal noch schwerer.",
+      "**Regel:** Schmerzmittel BEVOR du aufstehst. Nicht gleichzeitig.\n\n**Bei Frau Yilmaz:**\n• Metamizol — braucht 30 Minuten bis es wirkt\n• Ibuprofen — braucht 30-60 Minuten\n\n**Was du tust:** Morgens prüfen: Hat sie das Schmerzmittel bekommen? Wenn nicht: jetzt geben. Dann 30 Minuten warten. Dann Schmerz messen. Erst wenn NRS 5 oder weniger: aufstehen.\n\n**Warum?** Wenn sie starke Schmerzen hat, verkrampft sie sich. Dann fällt sie leichter. Und das Gelenk kann sich lösen. Und: Ein gescheiterter Versuch macht es beim nächsten Mal noch schwerer.",
     faustregel:
-      "**Erst wirken lassen, dann mobilisieren** — 30 Minuten Geduld sparen Stunden Vertrauensverlust.",
+      "**Erst wirken lassen, dann mobilisieren** — 30 Minuten Geduld sparen Stunden Vertraünsverlust.",
     faustregelB1:
       "Erst Schmerzmittel. Dann 30 Minuten warten. Dann aufstehen. Nicht andersrum.",
     karteikarte: {
       vorderseite:
         "Warum ist der gestrige Aufstehversuch bei Frau Yilmaz gescheitert — und was machst du heute anders?",
       rueckseite:
-        "Gestern: NRS 7 beim Aufstehen — Analgesie nicht rechtzeitig wirksam. Heute: Metamizol-Status pruefen, ggf. nachholen, 30 Min warten, NRS messen, erst bei ≤ 5 mobilisieren. DNQP 2020: Schmerzmanagement ist Voraussetzung fuer erfolgreiche Mobilisation. Faustregel: **Erst wirken lassen, dann mobilisieren.**",
+        "Gestern: NRS 7 beim Aufstehen — Analgesie nicht rechtzeitig wirksam. Heute: Metamizol-Status prüfen, ggf. nachholen, 30 Min warten, NRS messen, erst bei ≤ 5 mobilisieren. DNQP 2020: Schmerzmanagement ist Voraussetzung für erfolgreiche Mobilisation. Faustregel: **Erst wirken lassen, dann mobilisieren.**",
     },
   },
 };
@@ -537,60 +537,60 @@ export const IW_YILMAZ_07_ANALGESIE_VOR_MOBILISATION: ContentStep = {
  * Wiederbegegnung: Kinästhetik wird bei Frau M. (frau-m-nacht-sturz) zentral gelehrt.
  */
 export const IW_YILMAZ_08_KINAESTHETIK: ContentStep = {
-  stepId: "ce02-yilmaz-dur-00b-kinaesthetik",
+  stepId: "ce02-yilmaz-dur-00b-kinästhetik",
   phase: 4,
   stepType: "inlineWissen",
   bloomLevel: 3,
   kompetenzbereich: "I.1",
   quellen: [
-    "Hatch F./Maietta L. (1982 ff.): Kinaesthetik-Konzept",
-    "DNQP (2020): Expertenstandard Erhaltung und Foerderung der Mobilitaet in der Pflege",
-    "Deutsche Gesellschaft fuer Unfallchirurgie (2022): S2k-Leitlinie Endoprothetik Huefte",
+    "Hatch F./Maietta L. (1982 ff.): Kinästhetik-Konzept",
+    "DNQP (2020): Expertenstandard Erhaltung und Förderung der Mobilität in der Pflege",
+    "Deutsche Gesellschaft für Unfallchirurgie (2022): S2k-Leitlinie Endoprothetik Hüfte",
   ],
   track: "basis",
   modus: "entdecker",
-  lernziel: "ce02-yilmaz-dur-kinaesthetik-wiederbegegnung",
+  lernziel: "ce02-yilmaz-dur-kinästhetik-wiederbegegnung",
   tag: "pflege",
-  themaPrimaer: "kinaesthetik",
+  themaPrimaer: "kinästhetik",
   themenSekundaer: ["mobilisation", "positionierung"],
   transition: "Eigenbewegung aktivieren, nicht heben. Jetzt: die genaue Reihenfolge der Mobilisation.",
   contentC1: {
-    title: "Kinaesthetik bei Hueft-TEP: Begleiten statt Heben",
+    title: "Kinästhetik bei Hüft-TEP: Begleiten statt Heben",
     body: "",
-    glossarBegriffe: ["Kinaesthetik", "Eigenbewegung", "Griffpunkte"],
+    glossarBegriffe: ["Kinästhetik", "Eigenbewegung", "Griffpunkte"],
   },
   contentB1: {
-    title: "Kinaesthetik: Frau Yilmaz bewegt sich selbst",
+    title: "Kinästhetik: Frau Yilmaz bewegt sich selbst",
     body: "",
-    glossarBegriffe: ["Kinaesthetik", "Eigenbewegung"],
+    glossarBegriffe: ["Kinästhetik", "Eigenbewegung"],
   },
   inlineWissen: {
-    bausteinRef: "kinaesthetik-was-ist-kinaesthetik",
+    bausteinRef: "kinästhetik-was-ist-kinästhetik",
     wiederbegegnung: {
-      basisBausteinId: "kinaesthetik-was-ist-kinaesthetik",
+      basisBausteinId: "kinästhetik-was-ist-kinästhetik",
       basisPatient: "Frau M.",
       vertiefung:
-        "Kinaesthetik kennst du von Frau M. — dort ging es um den Transfer vom Boden ins Bett. Bei Frau Yilmaz kommt eine **Hueft-TEP-Besonderheit** dazu: Du begleitest die Eigenbewegung, aber du musst gleichzeitig die **drei Bewegungsverbote** einhalten (< 90°, keine Adduktion, keine Innenrotation). Das bedeutet: Du sicherst seitlich am Becken und Rumpf — **niemals unter den Achseln** greifen (Schultergelenk-Risiko + Kineasthethik-Verstoss). Und: Das operierte Bein geht ZUERST in Streckung ueber die Bettkante.",
+        "Kinästhetik kennst du von Frau M. — dort ging es um den Transfer vom Boden ins Bett. Bei Frau Yilmaz kommt eine **Hüft-TEP-Besonderheit** dazu: Du begleitest die Eigenbewegung, aber du musst gleichzeitig die **drei Bewegungsverbote** einhalten (< 90°, keine Adduktion, keine Innenrotation). Das bedeutet: Du sicherst seitlich am Becken und Rumpf — **niemals unter den Achseln** greifen (Schultergelenk-Risiko + Kineasthethik-Verstoss). Und: Das operierte Bein geht ZUERST in Streckung ueber die Bettkante.",
       vertiefungB1:
-        "Kinaesthetik kennst du von Frau M. — du hebst nicht, du begleitest die Bewegung. Bei Frau Yilmaz ist etwas anders: Du musst gleichzeitig aufpassen, dass die Huefte nicht zu weit beugt (< 90°), das Bein nicht ueber die Mitte geht und der Fuss nicht nach innen dreht. Sicherung am Becken und Rumpf — nie unter den Achseln greifen.",
+        "Kinästhetik kennst du von Frau M. — du hebst nicht, du begleitest die Bewegung. Bei Frau Yilmaz ist etwas anders: Du musst gleichzeitig aufpassen, dass die Hüfte nicht zu weit beugt (< 90°), das Bein nicht ueber die Mitte geht und der Fuss nicht nach innen dreht. Sicherung am Becken und Rumpf — nie unter den Achseln greifen.",
     },
     storyAufhaenger:
-      "Du stehst am Bett. 30 Minuten nach Metamizol. Frau Yilmaz schaut dich an: \"Was soll ich machen?\" Du sagst: \"Sie machen die Bewegung — ich begleite und sichere. Sie sagen das Tempo.\" Aber wie genau sicherst du bei Hueft-TEP?",
+      "Du stehst am Bett. 30 Minuten nach Metamizol. Frau Yilmaz schaut dich an: \"Was soll ich machen?\" Du sagst: \"Sie machen die Bewegung — ich begleite und sichere. Sie sagen das Tempo.\" Aber wie genau sicherst du bei Hüft-TEP?",
     storyAufhaengerB1:
       "Frau Yilmaz liegt im Bett und fragt: \"Was soll ich machen?\" Du sagst: \"Sie bewegen sich — ich helfe und passe auf.\" Aber wo fasst du an? Und worauf musst du aufpassen?",
     kerntext:
-      "**Kinaesthetik bei Hueft-TEP — Besonderheiten:**\n\n• **Eigenbewegung aktivieren:** Frau Yilmaz richtet sich aktiv auf. Du gibst ihr eine Hand am Becken, eine am Rumpf — zur Sicherung, nicht zum Heben.\n\n• **Griffpunkte-Ampel:** GRUEN = Becken, Schulterblatt, Rumpf seitlich. ROT = unter den Achseln (Schultergelenk-Risiko, Kinaesthetik-Verstoss), an den Handgelenken (fehlende Kontrolle).\n\n• **Operiertes Bein zuerst:** Beim Drehen ueber die Bettkante geht das operierte Bein (rechts) in Streckung ZUERST — das gesunde Bein folgt. NIEMALS beide Beine gleichzeitig, weil das Adduktion/Innenrotation riskiert.\n\n• **Pflegekraft auf OP-Seite:** Du stehst rechts von Frau Yilmaz (auf der operierten Seite), damit du das Bein beobachten und im Notfall sichern kannst.\n\n• **Tempo bestimmt die Patientin:** \"Sie sagen das Tempo.\" Das ist Kinaesthetik-Kernprinzip.",
+      "**Kinästhetik bei Hüft-TEP — Besonderheiten:**\n\n• **Eigenbewegung aktivieren:** Frau Yilmaz richtet sich aktiv auf. Du gibst ihr eine Hand am Becken, eine am Rumpf — zur Sicherung, nicht zum Heben.\n\n• **Griffpunkte-Ampel:** GRUEN = Becken, Schulterblatt, Rumpf seitlich. ROT = unter den Achseln (Schultergelenk-Risiko, Kinästhetik-Verstoss), an den Handgelenken (fehlende Kontrolle).\n\n• **Operiertes Bein zürst:** Beim Drehen ueber die Bettkante geht das operierte Bein (rechts) in Streckung ZUERST — das gesunde Bein folgt. NIEMALS beide Beine gleichzeitig, weil das Adduktion/Innenrotation riskiert.\n\n• **Pflegekraft auf OP-Seite:** Du stehst rechts von Frau Yilmaz (auf der operierten Seite), damit du das Bein beobachten und im Notfall sichern kannst.\n\n• **Tempo bestimmt die Patientin:** \"Sie sagen das Tempo.\" Das ist Kinästhetik-Kernprinzip.",
     kerntextB1:
-      "**Kinaesthetik bei Hueft-TEP:**\n\n• Frau Yilmaz bewegt sich selbst. Du sicherst am Becken und Rumpf.\n\n• **Nie unter den Achseln greifen** — das ist falsch und gefaehrlich.\n\n• **Operiertes Bein zuerst** ueber die Bettkante (in Streckung). Das gesunde Bein kommt danach.\n\n• Du stehst auf der operierten Seite (rechts).\n\n• Frau Yilmaz sagt das Tempo. Du wartest auf sie.",
+      "**Kinästhetik bei Hüft-TEP:**\n\n• Frau Yilmaz bewegt sich selbst. Du sicherst am Becken und Rumpf.\n\n• **Nie unter den Achseln greifen** — das ist falsch und gefährlich.\n\n• **Operiertes Bein zürst** ueber die Bettkante (in Streckung). Das gesunde Bein kommt danach.\n\n• Du stehst auf der operierten Seite (rechts).\n\n• Frau Yilmaz sagt das Tempo. Du wartest auf sie.",
     faustregel:
-      "**Begleiten, nicht heben. OP-Seite sichern. Operiertes Bein zuerst.** Drei Regeln fuer jede Hueft-TEP-Mobilisation.",
+      "**Begleiten, nicht heben. OP-Seite sichern. Operiertes Bein zürst.** Drei Regeln für jede Hüft-TEP-Mobilisation.",
     faustregelB1:
-      "Nicht heben. Am Becken sichern. Das operierte Bein geht zuerst. Frau Yilmaz sagt das Tempo.",
+      "Nicht heben. Am Becken sichern. Das operierte Bein geht zürst. Frau Yilmaz sagt das Tempo.",
     karteikarte: {
       vorderseite:
-        "Wo greifst du bei der Erstmobilisation nach Hueft-TEP an — und wo auf keinen Fall?",
+        "Wo greifst du bei der Erstmobilisation nach Hüft-TEP an — und wo auf keinen Fall?",
       rueckseite:
-        "GRUEN: Becken, Schulterblatt, Rumpf seitlich. ROT: Unter den Achseln (Schultergelenk + Kinaesthetik-Verstoss), Handgelenke. Pflegekraft steht auf OP-Seite. Operiertes Bein zuerst in Streckung ueber Bettkante. Faustregel: **Begleiten, nicht heben. OP-Seite sichern. Operiertes Bein zuerst.**",
+        "GRUEN: Becken, Schulterblatt, Rumpf seitlich. ROT: Unter den Achseln (Schultergelenk + Kinästhetik-Verstoss), Handgelenke. Pflegekraft steht auf OP-Seite. Operiertes Bein zürst in Streckung ueber Bettkante. Faustregel: **Begleiten, nicht heben. OP-Seite sichern. Operiertes Bein zürst.**",
     },
   },
 };
@@ -609,7 +609,7 @@ export const IW_YILMAZ_09_30GRAD_LAGERUNG: ContentStep = {
   quellen: [
     "NPUAP/EPUAP/PPPIA (2019): International Pressure Injury Guideline",
     "DNQP (2017, 2. Aktualisierung 2024): Expertenstandard Dekubitusprophylaxe in der Pflege",
-    "Deutsche Gesellschaft fuer Unfallchirurgie (2022): S2k-Leitlinie Endoprothetik Huefte",
+    "Deutsche Gesellschaft für Unfallchirurgie (2022): S2k-Leitlinie Endoprothetik Hüfte",
   ],
   track: "basis",
   modus: "entdecker",
@@ -617,59 +617,59 @@ export const IW_YILMAZ_09_30GRAD_LAGERUNG: ContentStep = {
   tag: "pflege",
   themaPrimaer: "positionierung",
   themenSekundaer: ["mobilisation"],
-  transition: "Du kennst die 30°-Regel. Welche Lagerung waehlst du jetzt fuer Frau Yilmaz?",
+  transition: "Du kennst die 30°-Regel. Welche Lagerung wählst du jetzt für Frau Yilmaz?",
   contentC1: {
-    title: "30°-Mikrolagerung: Dekubitusschutz UND Hueft-TEP-Sicherheit",
+    title: "30°-Mikrolagerung: Dekubitusschutz UND Hüft-TEP-Sicherheit",
     body: "",
     glossarBegriffe: ["30-Grad-Mikrolagerung", "Dekubitusprophylaxe", "Trochanter"],
   },
   contentB1: {
-    title: "30°-Lagerung: Steissbein entlasten + Huefte schuetzen",
+    title: "30°-Lagerung: Steissbein entlasten + Hüfte schützen",
     body: "",
     glossarBegriffe: ["30-Grad-Lagerung", "Druckentlastung"],
   },
   inlineWissen: {
     bausteinRef: "positionierung-30-grad-mikrolagerung",
     storyAufhaenger:
-      "Frau Yilmaz ist nach dem Aufstehversuch wieder im Bett. Zwei Probleme gleichzeitig: Dekubitus Kategorie I am Steissbein (Druck muss weg) und Hueft-TEP-Lagerungsvorschrift (Hueftwinkel < 90°). Gibt es eine Lagerung, die beides gleichzeitig loest?",
+      "Frau Yilmaz ist nach dem Aufstehversuch wieder im Bett. Zwei Probleme gleichzeitig: Dekubitus Kategorie I am Steissbein (Druck muss weg) und Hüft-TEP-Lagerungsvorschrift (Hüftwinkel < 90°). Gibt es eine Lagerung, die beides gleichzeitig löst?",
     storyAufhaengerB1:
-      "Frau Yilmaz liegt wieder im Bett. Zwei Probleme: Die Druckwunde am Steissbein (Druck muss weg). Und: Die Huefte darf nicht zu stark gebeugt werden. Gibt es eine Lagerung, die beides schafft?",
+      "Frau Yilmaz liegt wieder im Bett. Zwei Probleme: Die Druckwunde am Steissbein (Druck muss weg). Und: Die Hüfte darf nicht zu stark gebeugt werden. Gibt es eine Lagerung, die beides schafft?",
     kerntext:
-      "**Die 30°-Mikrolagerung** ist die Loesung fuer genau dieses Problem (NPUAP/EPUAP 2019):\n\n• **Prinzip:** Der Patient wird leicht zur Seite gekippt — nur 30°, nicht 90°. Das Steissbein liegt frei, der Trochanter wird nicht belastet.\n\n• **Warum nicht 90° Seitenlage?** Bei 90° liegt der Trochanter direkt auf — neue Druckstelle. Ausserdem: Hueftwinkel bei 90°-Seitenlage ist schwer kontrollierbar (Luxationsgefahr).\n\n• **Warum nicht Rueckenlage?** In Rueckenlage liegt das Steissbein direkt auf der Matratze — genau dort, wo Frau Yilmaz bereits Kategorie I hat.\n\n• **Umlagerungsrhythmus:** Alle 2 Stunden (DNQP 2024). Bei Frau Yilmaz: 30° links → 2h → 30° rechts → 2h → kurz Rueckenlage (mit Fersenfrei-Lagerung) → wieder 30°.\n\n• **Kissen zwischen die Beine:** Auch in 30°-Lagerung Keil oder Kissen zwischen die Beine — Adduktionsprophylaxe.",
+      "**Die 30°-Mikrolagerung** ist die Lösung für genau dieses Problem (NPUAP/EPUAP 2019):\n\n• **Prinzip:** Der Patient wird leicht zur Seite gekippt — nur 30°, nicht 90°. Das Steissbein liegt frei, der Trochanter wird nicht belastet.\n\n• **Warum nicht 90° Seitenlage?** Bei 90° liegt der Trochanter direkt auf — neue Druckstelle. Ausserdem: Hüftwinkel bei 90°-Seitenlage ist schwer kontrollierbar (Luxationsgefahr).\n\n• **Warum nicht Rückenlage?** In Rückenlage liegt das Steissbein direkt auf der Matratze — genau dort, wo Frau Yilmaz bereits Kategorie I hat.\n\n• **Umlagerungsrhythmus:** Alle 2 Stunden (DNQP 2024). Bei Frau Yilmaz: 30° links → 2h → 30° rechts → 2h → kurz Rückenlage (mit Fersenfrei-Lagerung) → wieder 30°.\n\n• **Kissen zwischen die Beine:** Auch in 30°-Lagerung Keil oder Kissen zwischen die Beine — Adduktionsprophylaxe.",
     kerntextB1:
-      "**30°-Lagerung** — die Loesung fuer beides:\n\n• Patient wird leicht zur Seite gekippt (nur 30°)\n• Das Steissbein liegt frei = kein Druck\n• Die Huefte bleibt unter 90° = Gelenk ist sicher\n\n**Warum nicht ganz auf die Seite (90°)?** Dann liegt die Hueftseite auf = neue Druckstelle.\n\n**Warum nicht auf dem Ruecken?** Das Steissbein liegt auf = die Wunde wird schlimmer.\n\n**Wie oft?** Alle 2 Stunden wechseln: 30° links, dann 30° rechts.\n\nKissen zwischen die Beine — damit die Beine nicht ueberkreuzen.",
+      "**30°-Lagerung** — die Lösung für beides:\n\n• Patient wird leicht zur Seite gekippt (nur 30°)\n• Das Steissbein liegt frei = kein Druck\n• Die Hüfte bleibt unter 90° = Gelenk ist sicher\n\n**Warum nicht ganz auf die Seite (90°)?** Dann liegt die Hüftseite auf = neue Druckstelle.\n\n**Warum nicht auf dem Rücken?** Das Steissbein liegt auf = die Wunde wird schlimmer.\n\n**Wie oft?** Alle 2 Stunden wechseln: 30° links, dann 30° rechts.\n\nKissen zwischen die Beine — damit die Beine nicht ueberkreuzen.",
     faustregel:
-      "**30° ist der goldene Winkel** — Steissbein frei, Trochanter geschont, Hueft-TEP sicher.",
+      "**30° ist der goldene Winkel** — Steissbein frei, Trochanter geschont, Hüft-TEP sicher.",
     faustregelB1:
-      "30 Grad ist die beste Lagerung: Steissbein hat keinen Druck, Huefte ist sicher, alle 2 Stunden wechseln.",
+      "30 Grad ist die beste Lagerung: Steissbein hat keinen Druck, Hüfte ist sicher, alle 2 Stunden wechseln.",
     spektrum: [
       {
-        patientName: "Herr Bauer",
-        situationsId: "ls-bauer-demenz-sturz",
-        hauptfaktor: "Demenz — dreht sich im Schlaf zurueck",
+        patientName: "Herr Baür",
+        situationsId: "ls-baür-demenz-sturz",
+        hauptfaktor: "Demenz — dreht sich im Schlaf zurück",
         kurzbeschreibung:
-          "Bei ihm nuetzt das Kissen nur bedingt — er schiebt es weg. Sensormatte + engmaschige Kontrolle noetig. Positionierungswechsel alle 2h fest im Tagesplan.",
+          "Bei ihm nützt das Kissen nur bedingt — er schiebt es weg. Sensormatte + engmaschige Kontrolle nötig. Positionierungswechsel alle 2h fest im Tagesplan.",
       },
       {
         patientName: "Herr Petrov",
         situationsId: "ls-petrov-schlaganfall",
         hauptfaktor: "Hemiparese — kann sich nicht selbst repositionieren",
         kurzbeschreibung:
-          "Er braucht bei jeder Umlagerung Unterstuetzung durch Pflege. 30°-Positionierung mit Kissen im Ruecken und zwischen den Beinen — er kann sie nicht selbst halten.",
+          "Er braucht bei jeder Umlagerung Unterstützung durch Pflege. 30°-Positionierung mit Kissen im Rücken und zwischen den Beinen — er kann sie nicht selbst halten.",
       },
       {
         patientName: "Frau Schmidt",
         situationsId: "ls-schmidt-adipositas",
         hauptfaktor: "Adipositas — 30° erreichen erfordert mehr Material",
         kurzbeschreibung:
-          "Bei hohem BMI braucht man groessere Keilkissen oder mehrere Kissen. Mikrolagerung reicht manchmal nicht — dann Wechseldruckmatratze noetig.",
+          "Bei hohem BMI braucht man grössere Keilkissen oder mehrere Kissen. Mikrolagerung reicht manchmal nicht — dann Wechseldruckmatratze nötig.",
       },
     ],
     karteikarte: {
       vorderseite:
-        "Warum ist die 30°-Mikrolagerung bei Frau Yilmaz die beste Wahl — und warum nicht 90° Seitenlage oder Rueckenlage?",
+        "Warum ist die 30°-Mikrolagerung bei Frau Yilmaz die beste Wahl — und warum nicht 90° Seitenlage oder Rückenlage?",
       rueckseite:
-        "30°: Steissbein entlastet + Trochanter geschont + Hueftwinkel < 90°. 90° Seitenlage: Trochanter belastet (neue Druckstelle) + Hueftwinkel unkontrollierbar. Rueckenlage: Steissbein belastet (Kategorie I verschlechtert sich). Umlagerung alle 2 Stunden. Kissen zwischen die Beine (Adduktionsprophylaxe). Faustregel: **30° ist der goldene Winkel.**",
+        "30°: Steissbein entlastet + Trochanter geschont + Hüftwinkel < 90°. 90° Seitenlage: Trochanter belastet (neue Druckstelle) + Hüftwinkel unkontrollierbar. Rückenlage: Steissbein belastet (Kategorie I verschlechtert sich). Umlagerung alle 2 Stunden. Kissen zwischen die Beine (Adduktionsprophylaxe). Faustregel: **30° ist der goldene Winkel.**",
     },
   },
 };
@@ -690,7 +690,7 @@ export const IW_YILMAZ_10_PFLEGE_THROMBOSE_ROLLE: ContentStep = {
   bloomLevel: 3,
   kompetenzbereich: "I.1",
   quellen: [
-    "AWMF (2024): S3-Leitlinie Prophylaxe der venoesen Thromboembolie",
+    "AWMF (2024): S3-Leitlinie Prophylaxe der venösen Thromboembolie",
     "PflBG (2020): § 4 Vorbehaltene Taetigkeiten",
   ],
   track: "basis",
@@ -699,7 +699,7 @@ export const IW_YILMAZ_10_PFLEGE_THROMBOSE_ROLLE: ContentStep = {
   tag: "pflege",
   themaPrimaer: "thrombose-prophylaxe",
   themenSekundaer: ["mobilisation"],
-  transition: "Du weisst jetzt, was deine Aufgabe ist. Schau zurueck: Was hat heute gewirkt?",
+  transition: "Du weisst jetzt, was deine Aufgabe ist. Schau zurück: Was hat heute gewirkt?",
   contentC1: {
     title: "Deine Rolle: Beobachten, melden, dokumentieren",
     body: "",
@@ -717,41 +717,41 @@ export const IW_YILMAZ_10_PFLEGE_THROMBOSE_ROLLE: ContentStep = {
     storyAufhaengerB1:
       "Du hast heute Wadenschmerz bei Frau Yilmaz bemerkt. Du hast es dem Arzt gesagt. Die Untersuchung kommt noch. Aber: Hast du alles gemacht, was du als Pflegekraft tun musst?",
     kerntext:
-      "**Fuenf pflegerische Kernaufgaben bei der Thromboseprophylaxe:**\n\n• **Beobachten** — taeglich beide Beine vergleichen (Umfang, Temperatur, Farbe, Schwellung). Vitalzeichen: Puls und Atemfrequenz bei Verdacht.\n\n• **Assessment** — Risiko-Einschaetzung bei Aufnahme und bei jeder Zustandsaenderung (neue OP, Infekt, mehr Bettruhe).\n\n• **Durchfuehren** — Medikamente geben (NMH/Fondaparinux nach aerztlicher Anordnung), Mobilisation aktiv unterstuetzen, ggf. MTPS anlegen.\n\n• **Melden** — bei Verdacht auf TVT oder Lungenembolie **SOFORT** Arzt informieren. Nicht auf Visite warten.\n\n• **Dokumentieren** — alle Beobachtungen, Massnahmen, Auffaelligkeiten. Was nicht dokumentiert ist, gilt als nicht durchgefuehrt (§ 630f BGB).\n\nDu stellst keine Diagnosen. Du ordnest keine Medikamente an. Aber du bist die **Frontlinie** — du siehst die Zeichen zuerst.",
+      "**Fuenf pflegerische Kernaufgaben bei der Thromboseprophylaxe:**\n\n• **Beobachten** — täglich beide Beine vergleichen (Umfang, Temperatur, Farbe, Schwellung). Vitalzeichen: Puls und Atemfreqünz bei Verdacht.\n\n• **Assessment** — Risiko-Einschätzung bei Aufnahme und bei jeder Zustandsänderung (neue OP, Infekt, mehr Bettruhe).\n\n• **Durchführen** — Medikamente geben (NMH/Fondaparinux nach aerztlicher Anordnung), Mobilisation aktiv unterstützen, ggf. MTPS anlegen.\n\n• **Melden** — bei Verdacht auf TVT oder Lungenembolie **SOFORT** Arzt informieren. Nicht auf Visite warten.\n\n• **Dokumentieren** — alle Beobachtungen, Maßnahmen, Auffälligkeiten. Was nicht dokumentiert ist, gilt als nicht durchgeführt (§ 630f BGB).\n\nDu stellst keine Diagnosen. Du ordnest keine Medikamente an. Aber du bist die **Frontlinie** — du siehst die Zeichen zürst.",
     kerntextB1:
-      "**Was du bei der Thrombose-Vorsorge tust:**\n\n• **Schauen** — jeden Tag beide Beine vergleichen\n• **Einschaetzen** — wie hoch ist das Risiko?\n• **Machen** — Spritze geben, beim Aufstehen helfen, Struempfe anlegen\n• **Melden** — bei Verdacht SOFORT dem Arzt sagen\n• **Aufschreiben** — alles dokumentieren\n\nDu stellst keine Diagnose. Aber du bist die Erste, die etwas bemerkt.",
+      "**Was du bei der Thrombose-Vorsorge tust:**\n\n• **Schaün** — jeden Tag beide Beine vergleichen\n• **Einschätzen** — wie hoch ist das Risiko?\n• **Machen** — Spritze geben, beim Aufstehen helfen, Strümpfe anlegen\n• **Melden** — bei Verdacht SOFORT dem Arzt sagen\n• **Aufschreiben** — alles dokumentieren\n\nDu stellst keine Diagnose. Aber du bist die Erste, die etwas bemerkt.",
     faustregel:
-      "**Beobachten, Assessment, Durchfuehren, Melden, Dokumentieren** — fuenf Aufgaben, eine Verantwortung: Du bist das Sicherheitsnetz.",
+      "**Beobachten, Assessment, Durchführen, Melden, Dokumentieren** — fünf Aufgaben, eine Verantwortung: Du bist das Sicherheitsnetz.",
     faustregelB1:
-      "Fuenf Aufgaben: Schauen, Einschaetzen, Machen, Melden, Aufschreiben. Du bist die Erste, die etwas bemerkt.",
+      "Fuenf Aufgaben: Schaün, Einschätzen, Machen, Melden, Aufschreiben. Du bist die Erste, die etwas bemerkt.",
     spektrum: [
       {
         patientName: "Herr Petrov",
         situationsId: "ls-petrov-schlaganfall",
         hauptfaktor: "Aphasie — kann Symptome nicht verbalisieren",
         kurzbeschreibung:
-          "Bei ihm ist aktive pflegerische Beobachtung besonders wichtig, weil er Wadenschmerz nicht benennen kann. Verhaltensaenderung (Unruhe, Grimassieren bei Beinberuehrung) als Proxy nutzen.",
+          "Bei ihm ist aktive pflegerische Beobachtung besonders wichtig, weil er Wadenschmerz nicht benennen kann. Verhaltensänderung (Unruhe, Grimassieren bei Beinberührung) als Proxy nutzen.",
       },
       {
-        patientName: "Herr Bauer",
-        situationsId: "ls-bauer-demenz-sturz",
-        hauptfaktor: "Demenz — Symptom-Meldung unzuverlaessig",
+        patientName: "Herr Baür",
+        situationsId: "ls-baür-demenz-sturz",
+        hauptfaktor: "Demenz — Symptom-Meldung unzuverlässig",
         kurzbeschreibung:
           "Er vergisst Symptome oder deutet sie falsch. Die Pflege muss systematisch beobachten, nicht auf Meldungen warten. BESD-Skala bei Schmerzbeobachtung.",
       },
       {
         patientName: "Frau Kovac",
         situationsId: "ls-kovac-ambulant",
-        hauptfaktor: "Ambulant — keine taegliche Beobachtung moeglich",
+        hauptfaktor: "Ambulant — keine tägliche Beobachtung möglich",
         kurzbeschreibung:
-          "Im ambulanten Setting liegt die Beobachtung teilweise beim Patienten selbst oder den Angehoerigen. Aufklaerung ueber Warnzeichen ist hier die Kernaufgabe der Pflege.",
+          "Im ambulanten Setting liegt die Beobachtung teilweise beim Patienten selbst oder den Angehörigen. Aufklärung ueber Warnzeichen ist hier die Kernaufgabe der Pflege.",
       },
     ],
     karteikarte: {
       vorderseite:
-        "Nenne die fuenf pflegerischen Kernaufgaben bei der Thromboseprophylaxe.",
+        "Nenne die fünf pflegerischen Kernaufgaben bei der Thromboseprophylaxe.",
       rueckseite:
-        "(1) Beobachten (Beine vergleichen, Vitalzeichen), (2) Assessment (Risiko-Einschaetzung + Dokumentation), (3) Durchfuehren (Medikamente, Mobilisation, MTPS), (4) Melden bei Verdacht (SOFORT, nicht auf Visite warten), (5) Dokumentieren (§ 630f BGB). Faustregel: **Beobachten, Assessment, Durchfuehren, Melden, Dokumentieren — du bist das Sicherheitsnetz.**",
+        "(1) Beobachten (Beine vergleichen, Vitalzeichen), (2) Assessment (Risiko-Einschätzung + Dokumentation), (3) Durchführen (Medikamente, Mobilisation, MTPS), (4) Melden bei Verdacht (SOFORT, nicht auf Visite warten), (5) Dokumentieren (§ 630f BGB). Faustregel: **Beobachten, Assessment, Durchführen, Melden, Dokumentieren — du bist das Sicherheitsnetz.**",
     },
   },
 };

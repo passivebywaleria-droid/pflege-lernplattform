@@ -138,7 +138,7 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
               {
                 text: "\"Das Fernsehen bis Mitternacht — das Licht des Bildschirms gibt Ihrem Körper das Signal: Tag. Deshalb schüttet Ihr Körper kein Melatonin aus — das ist das Hormon, das Sie müde macht und einschlafen lässt.\"",
                 textB1:
-                  "\"Der Fernseher sendet blaues Licht. Das sagt Ihrem Körper: Es ist Tag. Deshalb macht Ihr Körper kein Melatonin (= das Schlaf-Hormon). Ohne Melatonin kommen Sie nicht ins Schlafen.\"",
+                  "\"Der Fernseher sendet blaüs Licht. Das sagt Ihrem Körper: Es ist Tag. Deshalb macht Ihr Körper kein Melatonin (= das Schlaf-Hormon). Ohne Melatonin kommen Sie nicht ins Schlafen.\"",
                 patientResponse:
                   "\"Melatonin — das kenn ich. Aus der Apotheke.\" — Sie überlegt kurz.",
                 patientResponseB1:
@@ -196,7 +196,7 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
                   "Frau Kovač sieht dich an. \"Sie wissen nicht warum ich das Fernsehen brauche.\"",
                 score: 0,
                 feedback:
-                  "Herausforderung ohne Empathie — und du bekommst die Antwort die dich trifft. Frau Kovačs TV-Ritual beginnt mit Josips Tod um halb zwölf. Es ist kein schlechtes Habit, es ist Trauer. Ohne dieses Verständnis scheitert das Gespräch hier. Geh zurück und wähle Pfad A.",
+                  "Herausforderung ohne Empathie — und du bekommst die Antwort die dich trifft. Frau Kovačs TV-Ritual beginnt mit Josips Tod um halb zwölf. Es ist kein schlechtes Habit, es ist Traür. Ohne dieses Verständnis scheitert das Gespräch hier. Geh zurück und wähle Pfad A.",
                 feedbackB1:
                   "Nicht gut. Du weißt nicht warum Frau Kovač das Fernsehen braucht. Das Gespräch geht schlecht aus. Geh zurück zu Pfad A.",
               },
@@ -246,7 +246,7 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Pflegeplan anpassen — Befund trifft Maßnahme",
-        body: "Jetzt aktualisierst du den Pflegeplan. Paare den aktuellen Befund mit der passenden Maßnahmen-Anpassung.",
+        body: "Jetzt aktualisierst du den Pflegeplan. Paare den aktüllen Befund mit der passenden Maßnahmen-Anpassung.",
         glossarBegriffe: ["Pflegeplanung", "SMART-Ziel"],
       },
       contentB1: {
@@ -322,7 +322,7 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
   optionaleSteps: [
     // Opt-5.A — Querverweise Evaluation
     {
-      stepId: "ce02-kovac-eval-opt-a-querverweise",
+      stepId: "ce02-kovac-eval-opt-a-qürverweise",
       phase: 5,
       stepType: "text",
       bloomLevel: 2,
@@ -339,7 +339,7 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Was ist Evaluation?",
-        body: "Evaluation = Nachschauen ob das Pflegeziel erreicht ist.\n\nBeispiel: Das Ziel war: Frau Kovač trinkt mehr. Hat sie mehr getrunken? Wie viel? Was muss morgen anders sein?\n\nEvaluation ist keine Kontrolle. Es ist: Informationen sammeln um den Plan zu verbessern.",
+        body: "Evaluation = Nachschaün ob das Pflegeziel erreicht ist.\n\nBeispiel: Das Ziel war: Frau Kovač trinkt mehr. Hat sie mehr getrunken? Wie viel? Was muss morgen anders sein?\n\nEvaluation ist keine Kontrolle. Es ist: Informationen sammeln um den Plan zu verbessern.",
         glossarBegriffe: ["Evaluation", "Pflegeziel"],
       },
     },

@@ -32,7 +32,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Pflegeziele: erreicht — teilweise — nicht erreicht?",
-        body: "Vier Pflegeziele aus Phase 3 — ordne jeden Ist-Zustand der richtigen Kategorie zu. Evaluation ist Ist-Soll-Vergleich mit Konsequenz — nicht \"gut\" oder \"schlecht\".",
+        body: "Vier Pflegeziele aus Phase 3 — ordne jeden Ist-Zustand der richtigen Kategorie zu. Evaluation ist Ist-Soll-Vergleich mit Konseqünz — nicht \"gut\" oder \"schlecht\".",
         glossarBegriffe: ["Evaluation", "Pflegeziel", "SMART"],
       },
       contentB1: {
@@ -46,7 +46,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
         categories: [
           { name: "Erreicht" },
           { name: "Teilweise erreicht" },
-          { name: "Nicht erreicht — Konsequenz nötig" },
+          { name: "Nicht erreicht — Konseqünz nötig" },
         ],
         categoryItems: [
           {
@@ -58,7 +58,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
             correctCategory: 0,
           },
           {
-            text: "Ziel: Atembeobachtung stabil. → Hörbares Atemgeräusch unauffällig, Atemfrequenz 17/Min, kein hörbares Rasseln am Bett.",
+            text: "Ziel: Atembeobachtung stabil. → Hörbares Atemgeräusch unauffällig, Atemfreqünz 17/Min, kein hörbares Rasseln am Bett.",
             correctCategory: 0,
           },
           {
@@ -83,11 +83,11 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "challenge",
-      lernziel: "ce02-petrov-eval-schluckstatus-konsequenz",
+      lernziel: "ce02-petrov-eval-schluckstatus-konseqünz",
       tag: "krankheitslehre",
       contentC1: {
-        title: "Konsequenz nach dem Aspirationsereignis",
-        body: "Beim Frühstück kam es zu einem Aspirationsereignis. Was ist die richtige Konsequenz für die Mittagsmahlzeit?",
+        title: "Konseqünz nach dem Aspirationsereignis",
+        body: "Beim Frühstück kam es zu einem Aspirationsereignis. Was ist die richtige Konseqünz für die Mittagsmahlzeit?",
         glossarBegriffe: [
           "IDDSI",
           "Schlucktherapeutin",
@@ -102,7 +102,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
       },
       question: {
         fragetext:
-          "Beim Frühstück kam es zu einem Aspirationsereignis. Was ist jetzt die richtige Konsequenz für die Mittagsmahlzeit?",
+          "Beim Frühstück kam es zu einem Aspirationsereignis. Was ist jetzt die richtige Konseqünz für die Mittagsmahlzeit?",
         optionen: [
           {
             text: "Essen ganz stoppen bis zur ärztlichen Anordnung",
@@ -153,7 +153,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-petrov-eval-neuroplastizitaet",
+      lernziel: "ce02-petrov-eval-neuroplastizität",
       tag: "anatomie",
       transition: "Prognose macht Hoffnung. Jetzt noch eine offene Frage: Der Katheter. Bleibt er oder geht er?",
       contentC1: {
@@ -236,39 +236,39 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
         storyAufhaengerB1:
           "Der Katheter liegt seit 5 Tagen. Herr Petrov wird mobiler — 13 Minuten an der Bett-Kante. Braucht er den Katheter noch? Oder schadet er jetzt mehr als er hilft?",
         kerntext:
-          "**Wer entscheidet?** Die Entfernung eines BVK ist eine ärztliche Anordnung. Aber: Pflege beobachtet täglich und kommuniziert proaktiv. § 4 PflBG: Pflegeprozesssteuerung ist Pflegekompetenz.\n\n**Indikations-Checkliste (KRINKO 2015):**\n\n• Kann der Patient zur Toilette gebracht werden oder ein Urinal nutzen? Bei Herrn Petrov: Er sitzt an der Bettkante → Urinal im Sitzen möglich?\n\n• Ist die Bilanzierung noch zwingend nötig? Bei stabilem Kreislauf und oraler Aufnahme: oft nicht mehr.\n\n• Gibt es eine urologische oder chirurgische Indikation? Bei Apoplex: in der Regel nein.\n\n• Restharn-Problematik? Nach BVK-Entfernung: Restharnkontrolle per Ultraschall (nicht Katheter!) innerhalb 6-8 h.\n\n**Der Prozess:**\n\n1. Pflege beobachtet und dokumentiert (Urin unauffällig, Patient wird mobiler)\n\n2. Pflege meldet dem Arzt: \"Indikation BVK prüfen — Tag 5, Mobilisation begonnen, Urin unauffällig\"\n\n3. Arzt ordnet Entfernung an\n\n4. Pflege entfernt BVK, startet Toilettentraining (alle 2-3 h anbieten)\n\n5. Restharnkontrolle nach 6-8 h",
+          "**Wer entscheidet?** Die Entfernung eines BVK ist eine ärztliche Anordnung. Aber: Pflege beobachtet täglich und kommuniziert proaktiv. § 4 PflBG: Pflegeprozesssteürung ist Pflegekompetenz.\n\n**Indikations-Checkliste (KRINKO 2015):**\n\n• Kann der Patient zur Toilette gebracht werden oder ein Urinal nutzen? Bei Herrn Petrov: Er sitzt an der Bettkante → Urinal im Sitzen möglich?\n\n• Ist die Bilanzierung noch zwingend nötig? Bei stabilem Kreislauf und oraler Aufnahme: oft nicht mehr.\n\n• Gibt es eine urologische oder chirurgische Indikation? Bei Apoplex: in der Regel nein.\n\n• Restharn-Problematik? Nach BVK-Entfernung: Restharnkontrolle per Ultraschall (nicht Katheter!) innerhalb 6-8 h.\n\n**Der Prozess:**\n\n1. Pflege beobachtet und dokumentiert (Urin unauffällig, Patient wird mobiler)\n\n2. Pflege meldet dem Arzt: \"Indikation BVK prüfen — Tag 5, Mobilisation begonnen, Urin unauffällig\"\n\n3. Arzt ordnet Entfernung an\n\n4. Pflege entfernt BVK, startet Toilettentraining (alle 2-3 h anbieten)\n\n5. Restharnkontrolle nach 6-8 h",
         kerntextB1:
           "**Wer entscheidet?** Der Arzt gibt die Anordnung. Aber: Du als Pflege beobachtest und sagst Bescheid.\n\n**Wann kann der Katheter raus?**\n\n• Kann Herr Petrov ein Urinal benutzen? Er sitzt an der Bett-Kante — vielleicht möglich.\n\n• Braucht er noch eine genaue Urin-Messung? Wenn der Kreislauf stabil ist: oft nicht mehr.\n\n• Ist der Urin unauffällig? Goldgelb, genug Menge, keine Rötung an der Eintrittsstelle.\n\n**So geht es:**\n\n1. Du beobachtest und schreibst auf.\n\n2. Du sagst dem Arzt: \"Tag 5, Mobilisation begonnen, Urin normal — Katheter noch nötig?\"\n\n3. Der Arzt sagt: \"Raus.\" Du entfernst ihn.\n\n4. Danach: Alle 2-3 Stunden Toilette anbieten.\n\n5. Nach 6-8 Stunden: Ultraschall-Kontrolle ob Restharnung zurückbleibt.",
-        faustregel: "Pflege sieht den Patienten am häufigsten. Pflege erkennt zuerst wann der Katheter gehen kann.",
+        faustregel: "Pflege sieht den Patienten am häufigsten. Pflege erkennt zürst wann der Katheter gehen kann.",
         faustregelB1: "Du siehst Herrn Petrov am häufigsten. Du erkennst als erstes: Der Katheter muss raus.",
         spektrum: [
           {
             patientName: "Frau Yilmaz",
-            situationsId: "ls-yilmaz-hueft-tep",
+            situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "Post-OP, BVK-Entfernung am 1.-2. POT",
             kurzbeschreibung:
               "Standard bei Hüft-TEP: BVK am 1.-2. postoperativen Tag entfernen, wenn die Patientin aufstehen kann. Klare Regel, wenig Diskussion nötig.",
           },
           {
-            patientName: "Herr Bauer",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "Demenz, BVK als Fixierung",
             kurzbeschreibung:
-              "Bei Bauer ist der BVK ein ethisches Problem: Er versteht ihn nicht, zieht daran, ist dadurch unruhig. Hier ist die Entfernung nicht nur medizinisch sondern auch ethisch dringend — Alternativen (Kondomurinal, Inkontinenzversorgung) früh prüfen.",
+              "Bei Baür ist der BVK ein ethisches Problem: Er versteht ihn nicht, zieht daran, ist dadurch unruhig. Hier ist die Entfernung nicht nur medizinisch sondern auch ethisch dringend — Alternativen (Kondomurinal, Inkontinenzversorgung) früh prüfen.",
           },
           {
             patientName: "Frau Kovac",
             situationsId: "ls-kovac-ambulant",
             hauptfaktor: "Ambulant, Selbstkatheterismus",
             kurzbeschreibung:
-              "Kovac braucht keinen Dauerkatheter — sie führt den intermittierenden Einmalkatheter selbst durch (ISK). Anleitung zur Selbstkatheterisierung ist eine pflegerische Kompetenz.",
+              "Kovac braucht keinen Daürkatheter — sie führt den intermittierenden Einmalkatheter selbst durch (ISK). Anleitung zur Selbstkatheterisierung ist eine pflegerische Kompetenz.",
           },
         ],
         karteikarte: {
           vorderseite:
             "Herr Petrov hat 13 Minuten an der Bettkante gesessen, Urin ist unauffällig, Tag 5. Wie kommunizierst du die Katheter-Frage?",
           rueckseite:
-            "Proaktive Kommunikation: An Praxisanleiterin melden, gemeinsam Arzt informieren: \"Tag 5, Mobilisation begonnen, Urin unauffällig — Indikation BVK prüfen.\" Arzt ordnet an, Pflege entfernt + startet Toilettentraining. Restharnkontrolle per Ultraschall nach 6-8 h. Spektrum: Yilmaz (Standard-Entfernung 1.-2. POT), Bauer (ethisches Problem, Kondomurinal prüfen), Kovac (ISK ambulant). Faustregel: **Pflege erkennt zuerst wann der Katheter gehen kann.**",
+            "Proaktive Kommunikation: An Praxisanleiterin melden, gemeinsam Arzt informieren: \"Tag 5, Mobilisation begonnen, Urin unauffällig — Indikation BVK prüfen.\" Arzt ordnet an, Pflege entfernt + startet Toilettentraining. Restharnkontrolle per Ultraschall nach 6-8 h. Spektrum: Yilmaz (Standard-Entfernung 1.-2. POT), Baür (ethisches Problem, Kondomurinal prüfen), Kovac (ISK ambulant). Faustregel: **Pflege erkennt zürst wann der Katheter gehen kann.**",
         },
       },
     },
@@ -315,7 +315,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
             text: "Ich melde Frau Wegner (Praxisanleiterin) den Befund + meinen Vorschlag, dass wir den Arzt heute über die mögliche frühere Entfernung informieren — und gehe das Gespräch ggf. mit ihr gemeinsam.",
             isCorrect: true,
             feedback:
-              "Proaktive Kommunikation im realen Hierarchie-Workflow — genau richtig. Als Pflegeschülerin im 2./3. AD führst du selten allein die Arzt-Kommunikation; du meldest deiner Praxisanleiterin den Befund (Tag 5, unauffällig, kein klinischer Infektionsverdacht) und deinen Vorschlag, sie spricht oder begleitet das Gespräch mit dem Arzt. Das ist pflegerische Eigenverantwortung nach § 4 PflBG und entspricht KRINKO 2015: Katheter so früh wie möglich entfernen. Du arbeitest nicht gegen die Anordnung — du ergänzt sie mit aktueller Beobachtung.",
+              "Proaktive Kommunikation im realen Hierarchie-Workflow — genau richtig. Als Pflegeschülerin im 2./3. AD führst du selten allein die Arzt-Kommunikation; du meldest deiner Praxisanleiterin den Befund (Tag 5, unauffällig, kein klinischer Infektionsverdacht) und deinen Vorschlag, sie spricht oder begleitet das Gespräch mit dem Arzt. Das ist pflegerische Eigenverantwortung nach § 4 PflBG und entspricht KRINKO 2015: Katheter so früh wie möglich entfernen. Du arbeitest nicht gegen die Anordnung — du ergänzt sie mit aktüller Beobachtung.",
             feedbackB1:
               "Richtig. Du sagst Frau Wegner Bescheid: \"Der Katheter liegt seit 5 Tagen. Der Urin ist unauffällig. Können wir den Arzt fragen, ob wir früher entfernen?\" Sie spricht mit dem Arzt — oder ihr macht das gemeinsam. Das ist proaktiv. Jeder Tag weniger mit Katheter = weniger Risiko.",
           },
@@ -345,7 +345,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "schreibtisch",
-      lernziel: "ce02-petrov-eval-reflexion-angehoerige",
+      lernziel: "ce02-petrov-eval-reflexion-angehörige",
       tag: "pflege",
       contentC1: {
         title: "Reflexion: \"Wird er wieder normal?\"",

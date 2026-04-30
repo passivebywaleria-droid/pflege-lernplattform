@@ -33,7 +33,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DOKUMENTIEREN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-dok-protokoll-grundwissen",
       tag: "pflege",
-      transition: "Du weisst wo was hingehoert. Jetzt schreiben.",
+      transition: "Du weisst wo was hingehört. Jetzt schreiben.",
       themaPrimaer: "pflegedokumentation",
       themenSekundaer: ["sturz-prophylaxe"],
       contentC1: {
@@ -53,7 +53,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DOKUMENTIEREN: SituationsPhase = {
         storyAufhaengerB1:
           "Du hast 25 Minuten. Du musst das **Sturzprotokoll** schreiben. Und den **Pflegebericht**. Ist das doppelt? Nein — beide sind anders.",
         kerntext:
-          "**Sturzprotokoll** und **Pflegebericht** sind getrennte Dokumente mit getrennten Aufgaben.\n\n**Sturzprotokoll** (formaler Erfassungsbogen):\n\n• **Zweck:** Qualitätssicherung, MDK-Prüfung, Sturz-Statistik der Einrichtung\n\n• **Format:** Strukturiertes Formular, Pflicht-Felder ankreuzbar\n\n• **9 Pflicht-Inhalte** (DNQP 2022 + MDK):\n  - Datum + Uhrzeit\n  - Ort (Zimmer-Nr., genauer Sturz-Ort)\n  - Hergang (kurz, sachlich)\n  - Bewusstsein bei Auffinden (wach, somnolent, bewusstlos)\n  - Vitalzeichen direkt nach Sturz\n  - Verletzungen (sichtbar, nicht-sichtbar = ärztl. abgeklärt)\n  - Sofort-Maßnahmen\n  - Information an wen (Arzt, Angehörige, Schichtleitung)\n  - Vermutete Ursache(n)\n\n**Pflegebericht** (chronologisch):\n\n• **Zweck:** Schichtübergabe, Verlaufsbeschreibung, juristisches Beweismittel (§ 630f BGB)\n\n• **Format:** Fließtext, chronologisch, mit Zeitstempel pro Eintrag\n\n• **Kerninhalt:** Was hast du beobachtet, getan, gesagt, gehört. Plus: Patient-Reaktion + Ergebnis.\n\n• **Stil:** SACHLICH, FAKTISCH — nicht: \\\"verwirrt\\\", sondern: \\\"orientiert zu Person, nicht zu Zeit\\\". Nicht: \\\"wollte stören\\\", sondern: \\\"Patientin sagte: Ich wollte niemanden stören.\\\"\n\n**Bei Frau M. heute Nacht:**\n\n• **Sturzprotokoll** = Pflicht (DNQP K5, MDK relevant)\n\n• **Pflegebericht** = chronologische Schicht-Übersicht (alles was du gemacht hast 02:48 - 06:30)\n\n• **SBAR-Übergabe** an die Frühschicht zusätzlich (mündlich + ggf. schriftlich)\n\n**Wichtige Faustregel:** Was nicht dokumentiert ist, ist juristisch nicht passiert (§ 630f BGB). Sturzprotokoll vergessen = MDK-Defizit + ggf. Haftungsfall.",
+          "**Sturzprotokoll** und **Pflegebericht** sind getrennte Dokumente mit getrennten Aufgaben.\n\n**Sturzprotokoll** (formaler Erfassungsbogen):\n\n• **Zweck:** Qualitätssicherung, MDK-Prüfung, Sturz-Statistik der Einrichtung\n\n• **Format:** Strukturiertes Formular, Pflicht-Felder ankreuzbar\n\n• **9 Pflicht-Inhalte** (DNQP 2022 + MDK):\n  - Datum + Uhrzeit\n  - Ort (Zimmer-Nr., genaür Sturz-Ort)\n  - Hergang (kurz, sachlich)\n  - Bewusstsein bei Auffinden (wach, somnolent, bewusstlos)\n  - Vitalzeichen direkt nach Sturz\n  - Verletzungen (sichtbar, nicht-sichtbar = ärztl. abgeklärt)\n  - Sofort-Maßnahmen\n  - Information an wen (Arzt, Angehörige, Schichtleitung)\n  - Vermutete Ursache(n)\n\n**Pflegebericht** (chronologisch):\n\n• **Zweck:** Schichtübergabe, Verlaufsbeschreibung, juristisches Beweismittel (§ 630f BGB)\n\n• **Format:** Fließtext, chronologisch, mit Zeitstempel pro Eintrag\n\n• **Kerninhalt:** Was hast du beobachtet, getan, gesagt, gehört. Plus: Patient-Reaktion + Ergebnis.\n\n• **Stil:** SACHLICH, FAKTISCH — nicht: \\\"verwirrt\\\", sondern: \\\"orientiert zu Person, nicht zu Zeit\\\". Nicht: \\\"wollte stören\\\", sondern: \\\"Patientin sagte: Ich wollte niemanden stören.\\\"\n\n**Bei Frau M. heute Nacht:**\n\n• **Sturzprotokoll** = Pflicht (DNQP K5, MDK relevant)\n\n• **Pflegebericht** = chronologische Schicht-Übersicht (alles was du gemacht hast 02:48 - 06:30)\n\n• **SBAR-Übergabe** an die Frühschicht zusätzlich (mündlich + ggf. schriftlich)\n\n**Wichtige Faustregel:** Was nicht dokumentiert ist, ist juristisch nicht passiert (§ 630f BGB). Sturzprotokoll vergessen = MDK-Defizit + ggf. Haftungsfall.",
         kerntextB1:
           "**Sturzprotokoll** und **Pflegebericht** sind zwei verschiedene Dokumente.\n\n**Sturzprotokoll** (festes Formular):\n\n• **Wozu:** Qualitätssicherung, MDK-Prüfung, Statistik\n\n• **Format:** Formular zum Ankreuzen + ausfüllen\n\n• **9 Pflicht-Punkte:**\n  - Datum + Uhrzeit\n  - Ort (Zimmer + genaue Stelle)\n  - Was passiert ist (kurz)\n  - Bewusstsein (wach? schläfrig? bewusstlos?)\n  - Vitalzeichen direkt nach dem Sturz\n  - Verletzungen\n  - Was du sofort gemacht hast\n  - Wen du informiert hast (Arzt, Angehörige)\n  - Vermutete Gründe\n\n**Pflegebericht** (Geschichte der Schicht):\n\n• **Wozu:** Schichtübergabe + Beweis vor Gericht (§ 630f BGB)\n\n• **Format:** Lange Geschichte mit Uhrzeiten\n\n• **Inhalt:** Was du gesehen, getan, gesagt hast. Plus: Wie hat Patient reagiert.\n\n• **Wichtig — Stil:** Schreibe nur **Fakten**, keine Wertungen.\n  - **Falsch:** \\\"verwirrt\\\"\n  - **Richtig:** \\\"orientiert zu Person, nicht zu Zeit\\\"\n  - **Falsch:** \\\"wollte stören\\\"\n  - **Richtig:** \\\"Patientin sagte: Ich wollte niemanden stören\\\"\n\n**Bei Frau M.:**\n\n• **Sturzprotokoll** = Pflicht (Standard sagt das)\n\n• **Pflegebericht** = die ganze Nachtschicht (02:48 - 06:30)\n\n• **SBAR-Übergabe** an die Frühschicht zusätzlich\n\n**Wichtig:** Was nicht aufgeschrieben ist, ist vor Gericht NICHT passiert (§ 630f BGB).",
         faustregel:
@@ -62,15 +62,15 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DOKUMENTIEREN: SituationsPhase = {
           "Sturzprotokoll = Formular, 9 Pflichtfelder. Pflegebericht = Geschichte mit Uhrzeit, nur Fakten. Was nicht aufgeschrieben ist, ist vor Gericht nicht passiert.",
         spektrum: [
           {
-            patientName: "Herr Bauer (Demenz)",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür (Demenz)",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "Sturzprotokoll bei nicht-kommunikationsfähigem Patient",
             kurzbeschreibung:
-              "Bei fortgeschrittener Demenz: Hergang oft nicht durch Patient erzählbar — Befund-orientierte Dokumentation, Aussage der Tochter Ingrid (gesetzliche Betreuerin) als Zusatz.",
+              "Bei fortgeschrittener Demenz: Hergang oft nicht durch Patient erzählbar — Befund-orientierte Dokumentation, Aussage der Tochter Ingrid (gesetzliche Betreürin) als Zusatz.",
           },
           {
             patientName: "Lukas (Verbrühung)",
-            situationsId: "ls-lukas-verbruehung",
+            situationsId: "ls-lukas-verbrühung",
             hauptfaktor: "Sturzprotokoll im Pädiatrie-Setting",
             kurzbeschreibung:
               "Im Pädiatrie-Setting: zusätzlich Eltern-Beobachtung dokumentieren, ggf. Verdachts-Meldung bei Auffälligkeiten (§ 4 KKG, § 8a SGB VIII).",
@@ -179,7 +179,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DOKUMENTIEREN: SituationsPhase = {
             left:
               "Ziel: Frau M. stürzt in den verbleibenden Liegetagen nicht erneut",
             right:
-              "Maßnahme: Nachtlicht dauerhaft an, Toilettenstuhl nachts am Bett, 2-Personen-Mobilisation ersten 48 h",
+              "Maßnahme: Nachtlicht daürhaft an, Toilettenstuhl nachts am Bett, 2-Personen-Mobilisation ersten 48 h",
           },
           {
             left: "Ziel: Sedierende Medikation wird abgesetzt/überprüft",

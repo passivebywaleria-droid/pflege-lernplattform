@@ -7,14 +7,14 @@
 import type { SituationsPhase } from "../../../_types";
 
 export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
-  phaseId: "ls-nguyen-stoma-durchfuehren",
-  phase: "durchfuehren",
+  phaseId: "ls-nguyen-stoma-durchführen",
+  phase: "durchführen",
   titel: "Durchführen — Beutelwechsel und was dazwischen passiert",
   titelB1: "Durchführen — Der Beutelwechsel",
   kontext:
-    "Du hast das Material vorbereitet: Handschuhe, Zellstoff, lauwarmes Wasser (bei Bedarf milde pH-neutrale Waschlotion), Schablone und Stift zum Anzeichnen der Lochgröße, neue Stomaplatte zum individuellen Zuschneiden, Schutzpaste, neuer Beutel. Wichtig: Die Lochgröße der Stomaplatte wird bei jedem Wechsel neu mit der Schablone gemessen — das Stoma schwillt in den ersten 6–8 Wochen post-OP ab. Ein Wert aus dem Patientenblatt von vor 3 Tagen ist bereits veraltet. Heute (4. POD) misst du: Stoma 60 mm rund — du zeichnest 62 mm an (Stoma + 2 mm Sicherheitsabstand) und schneidest die Platte zu. Tochter Linh übersetzt deine Ankündigung: 'Ich werde jetzt den Beutel wechseln. Das dauert etwa 10 Minuten. Du kannst die ganze Zeit schauen oder wegschauen — das entscheidest du.' Herr Nguyen nickt. Schlägt die Augen nieder. Ehefrau Mai bleibt am Fenster — du fragst Linh, ob sie dabei bleiben darf. Linh fragt. Herr Nguyen nickt wieder, knapp.",
+    "Du hast das Material vorbereitet: Handschuhe, Zellstoff, lauwarmes Wasser (bei Bedarf milde pH-neutrale Waschlotion), Schablone und Stift zum Anzeichnen der Lochgröße, neue Stomaplatte zum individüllen Zuschneiden, Schutzpaste, neür Beutel. Wichtig: Die Lochgröße der Stomaplatte wird bei jedem Wechsel neu mit der Schablone gemessen — das Stoma schwillt in den ersten 6–8 Wochen post-OP ab. Ein Wert aus dem Patientenblatt von vor 3 Tagen ist bereits veraltet. Heute (4. POD) misst du: Stoma 60 mm rund — du zeichnest 62 mm an (Stoma + 2 mm Sicherheitsabstand) und schneidest die Platte zu. Tochter Linh übersetzt deine Ankündigung: 'Ich werde jetzt den Beutel wechseln. Das daürt etwa 10 Minuten. Du kannst die ganze Zeit schaün oder wegschaün — das entscheidest du.' Herr Nguyen nickt. Schlägt die Augen nieder. Ehefrau Mai bleibt am Fenster — du fragst Linh, ob sie dabei bleiben darf. Linh fragt. Herr Nguyen nickt wieder, knapp.",
   kontextB1:
-    "Du hast alles bereit: Handschuhe, Wasser, Schablone (= Schablone zum Messen), neue Stomaplatte (du schneidest sie selbst zu), Schutzpaste, neuer Beutel. **Wichtig:** Die Lochgröße misst du jedes Mal neu. Das Stoma wird in den ersten 6–8 Wochen kleiner. Heute misst du: Stoma 60 mm. Du zeichnest 62 mm an (immer ca. 2 mm größer als das Stoma — sonst klemmt die Platte) und schneidest. Linh übersetzt: 'Ich wechsle jetzt den Beutel. Du kannst schauen oder wegschauen — du entscheidest.' Herr Nguyen nickt. Er schlägt die Augen nieder. Ehefrau Mai bleibt am Fenster.",
+    "Du hast alles bereit: Handschuhe, Wasser, Schablone (= Schablone zum Messen), neue Stomaplatte (du schneidest sie selbst zu), Schutzpaste, neür Beutel. **Wichtig:** Die Lochgröße misst du jedes Mal neu. Das Stoma wird in den ersten 6–8 Wochen kleiner. Heute misst du: Stoma 60 mm. Du zeichnest 62 mm an (immer ca. 2 mm größer als das Stoma — sonst klemmt die Platte) und schneidest. Linh übersetzt: 'Ich wechsle jetzt den Beutel. Du kannst schaün oder wegschaün — du entscheidest.' Herr Nguyen nickt. Er schlägt die Augen nieder. Ehefrau Mai bleibt am Fenster.",
   kernSteps: [
     // Step 4.1 — Sorting: Material-Check vor Beutelöffnen
     {
@@ -44,16 +44,70 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
         sortItems: [
           "Handschuhe anziehen",
           "Zimmer abschirmen: Vorhang zum Zimmernachbarn ziehen, Tür schließen",
-          "Herrn Nguyen und Angehörige informieren, was jetzt passiert — und dass er wegschauen kann",
+          "Herrn Nguyen und Angehörige informieren, was jetzt passiert — und dass er wegschaün kann",
           "Material griffbereit auf sauberer Unterlage neben dem Bett bereitlegen",
           "Bett auf arbeitstaugliche Höhe bringen (Rückenschutz Pflegekraft, aber Herrn Nguyen informieren)",
         ],
       },
     },
 
+    // Step 4.1a — InlineWissen: Stoma-Durchmesser
+    // Position: VOR Step 4.1b (MC: Lochgröße messen)
+    // Grund: "Stoma-Durchmesser" wird in Step 4.1b als zentraler Messwert verwendet
+    {
+      stepId: "ce02-nguyen-dur-iw-stoma-durchmesser",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "FG SKM — Handlungsempfehlungen Stomapflege (2023)",
+        "WCET — International Ostomy Guideline Recommendations (2020)",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-nguyen-dur-stoma-durchmesser",
+      tag: "pflege",
+      themaPrimaer: "stuhlausscheidung",
+      themenSekundaer: ["pflegeprozess"],
+      transition:
+        "Stoma-Durchmesser und seine Bedeutung verstanden. Jetzt: Wie bestimmst du die Lochgröße konkret?",
+      contentC1: {
+        title: "Stoma-Durchmesser — warum Millimeter zählen",
+        body: "",
+        glossarBegriffe: ["Stoma-Durchmesser", "Messschablone", "Abschwellung"],
+      },
+      contentB1: {
+        title: "Stoma-Durchmesser — warum jeder Millimeter wichtig ist",
+        body: "",
+        glossarBegriffe: ["Stoma-Durchmesser", "Schablone"],
+      },
+      inlineWissen: {
+        bausteinRef: "stoma-durchmesser",
+        storyAufhaenger:
+          "Du stehst mit der Messschablone bereit. Das Stoma von Herrn Nguyen sieht rund aus — aber ist es wirklich kreisrund? Oder eher oval? Und warum entscheiden 2 Millimeter über gesunde Haut oder Mazerierung?",
+        kerntext:
+          "**Was ist der Stoma-Durchmesser?** Der gemessene Querschnitt des Stomas an seiner breitesten Stelle — angegeben in Millimetern. Er bestimmt die Lochgröße der Hautschutzplatte.\n\n**Wie misst du?**\n\n1. Messschablone flach auf das Stoma legen\n2. Den kleinsten Kreis finden, der das Stoma **vollständig** umschließt — ohne die Stomaschleimhaut einzuklemmen\n3. Durchmesser ablesen (z. B. 60 mm)\n4. **Nicht vergessen:** Manche Stomata sind nicht kreisrund, sondern oval → dann längsten UND kürzesten Durchmesser messen und die Platte oval zuschneiden\n\n**Warum Millimeter zählen (FG SKM 2023):**\n\n• **Lochgröße = Stoma-Durchmesser + 2 mm** (Sicherheitsabstand)\n• +2 mm: Stoma nicht eingeklemmt, Haut geschützt\n• +5 mm: 3 mm nackter Hautring freiliegend → Stomainhalt auf Haut → Mazerierung\n• 0 mm (exakt): Platte klemmt Stomaschleimhaut ab → Durchblutungsstörung → livide Verfärbung → im Extremfall Nekrose\n\n**Veränderung über Zeit:**\n\n• Unmittelbar post-OP: Stoma ödematös, am größten\n• Woche 1–4: Abschwellung, Durchmesser kann um 5–10 mm abnehmen\n• Woche 6–8: Endgröße erreicht → ab dann Standardplatte möglich\n\nBei Herrn Nguyen heute (4. POD): Stoma misst 60 mm → Plattenloch 62 mm.",
+        kerntextB1:
+          "**Was ist der Stoma-Durchmesser?** Wie groß das Stoma ist — in Millimetern gemessen.\n\n**Wie misst du?**\n1. Schablone auf das Stoma legen\n2. Den passenden Kreis finden\n3. Durchmesser ablesen (z. B. 60 mm)\n4. Manche Stomata sind oval → dann längsten und kürzesten Durchmesser messen\n\n**Warum jeder Millimeter wichtig ist:**\n• Loch = Stoma + 2 mm → richtig\n• Loch = Stoma + 5 mm → Haut liegt frei → Stuhl auf der Haut\n• Loch = genau Stoma-Größe → Platte klemmt das Stoma ab → gefährlich\n\n**Das Stoma wird kleiner:**\n• Kurz nach der OP: am größten (geschwollen)\n• Nach 6–8 Wochen: Endgröße erreicht",
+        faustregel:
+          "**+2 mm = Goldzone.** Jeder Millimeter mehr ist offene Haut. Jeder weniger ist Stoma-Abklemmung. Messen, nicht schätzen.",
+        faustregelB1:
+          "+2 mm ist genau richtig. Mehr = Haut frei. Weniger = Stoma eingeklemmt.",
+        karteikarte: {
+          vorderseite: "Herrn Nguyens Stoma misst 60 mm am 4. POD. Wie groß schneidest du das Loch — und warum genau diese Größe?",
+          rueckseite:
+            "Loch = 62 mm (Stoma-Durchmesser 60 mm + 2 mm Sicherheitsabstand). +2 mm: Stoma nicht eingeklemmt, Haut geschützt. Zu groß (+5 mm): 3 mm nackte Haut → Mazerierung. Zu eng (0 mm): Abklemmung → Nekrose-Risiko. Stoma schwillt 6–8 Wochen ab → bei jedem Wechsel neu messen. **+2 mm = Goldzone.**",
+          vorderseiteB1: "Wie groß ist das Loch in der Platte wenn das Stoma 60 mm misst?",
+          rueckseiteB1:
+            "62 mm (Stoma + 2 mm). Zu groß = Stuhl auf Haut. Zu klein = Stoma eingeklemmt.",
+        },
+      },
+    },
+
     // Step 4.1b — MC: Lochgröße der Hautschutzplatte messen (Anti-Pattern: Wert aus Patientenblatt)
     {
-      stepId: "ce02-nguyen-dur-01b-lochgroesse-messen",
+      stepId: "ce02-nguyen-dur-01b-lochgrösse-messen",
       phase: 4,
       stepType: "mc",
       bloomLevel: 4,
@@ -61,11 +115,11 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       quellen: ["FG SKM — Handlungsempfehlungen Stomapflege (2023)"],
       track: "basis",
       modus: "challenge",
-      lernziel: "ce02-nguyen-dur-lochgroesse",
+      lernziel: "ce02-nguyen-dur-lochgrösse",
       tag: "pflege",
       contentC1: {
         title: "Hautschutzplatte zuschneiden — wie bestimmst du die Lochgröße?",
-        body: "Bevor du die neue Hautschutzplatte aufklebst, musst du das Loch passgenau zuschneiden. Im Patientenblatt vom Tag der OP steht: 'Stoma 60 mm rund'. Heute ist der 4. POD. Wie bestimmst du die Lochgröße der neuen Platte?",
+        body: "Bevor du die neue Hautschutzplatte aufklebst, musst du das Loch passgenau zuschneiden. Im Patientenblatt vom Tag der OP steht: 'Stoma 60 mm rund'. Heute ist der 4. POD. Wie bestimmst du die Lochgröße der neün Platte?",
         glossarBegriffe: ["Hautschutzplatte", "Schablone", "Stoma-Durchmesser"],
       },
       contentB1: {
@@ -75,7 +129,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       },
       question: {
         fragetext:
-          "Wie bestimmst du die Lochgröße der neuen Hautschutzplatte für Herrn Nguyen?",
+          "Wie bestimmst du die Lochgröße der neün Hautschutzplatte für Herrn Nguyen?",
         mcVariant: "standard",
         optionen: [
           {
@@ -158,9 +212,9 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
                   "Herr Nguyen zieht die Schultern hoch. Er atmet kurz durch den Mund.",
                 score: 2,
                 feedback:
-                  "Transparenz ist grundsätzlich wichtig und richtig — der Patient soll wissen was passiert. Bei Herrn Nguyen aber mit Schamthema zu viel: laufende Echtzeit-Kommentierung jedes Schritts wird als aufdringlich erlebt. Praxis-Tipp: Kurze Ankündigungen am Anfang jeder Handlung ('Jetzt lege ich den neuen Beutel an'), dazwischen Stille zulassen. Das wahrt Würde und gibt trotzdem Orientierung.",
+                  "Transparenz ist grundsätzlich wichtig und richtig — der Patient soll wissen was passiert. Bei Herrn Nguyen aber mit Schamthema zu viel: laufende Echtzeit-Kommentierung jedes Schritts wird als aufdringlich erlebt. Praxis-Tipp: Kurze Ankündigungen am Anfang jeder Handlung ('Jetzt lege ich den neün Beutel an'), dazwischen Stille zulassen. Das wahrt Würde und gibt trotzdem Orientierung.",
                 feedbackB1:
-                  "Du machst etwas Wichtiges richtig: du erklärst, was passiert. Bei Herrn Nguyen ist es aber zu viel auf einmal. Praxis-Tipp: Kurze Sätze am Anfang ('Jetzt lege ich den neuen Beutel an'), dazwischen Stille. Dann fühlt er sich nicht überfordert.",
+                  "Du machst etwas Wichtiges richtig: du erklärst, was passiert. Bei Herrn Nguyen ist es aber zu viel auf einmal. Praxis-Tipp: Kurze Sätze am Anfang ('Jetzt lege ich den neün Beutel an'), dazwischen Stille. Dann fühlt er sich nicht überfordert.",
               },
               {
                 text: "Kurze sachliche Sätze zu Beginn und bei wichtigen Momenten, dazwischen Stille lassen: 'Ich löse jetzt die alte Platte. Kurz warten...' — dann Stille — 'Fast fertig.'",
@@ -223,7 +277,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
                   "Herr Nguyen wartet. Er weiß nicht was passiert.",
                 score: 1,
                 feedback:
-                  "Nicht falsch — aber eine Chance verpasst. Ein ruhiger Kommentar zum Stoma-Befund ('sieht gut aus') gibt Herrn Nguyen eine sachliche Information und baut minimalst Vertrauen auf. Vollständiges Schweigen ist zwar nicht falsch, aber nicht optimal bei einem Patienten der sich schämt und Orientierung braucht.",
+                  "Nicht falsch — aber eine Chance verpasst. Ein ruhiger Kommentar zum Stoma-Befund ('sieht gut aus') gibt Herrn Nguyen eine sachliche Information und baut minimalst Vertraün auf. Vollständiges Schweigen ist zwar nicht falsch, aber nicht optimal bei einem Patienten der sich schämt und Orientierung braucht.",
                 feedbackB1:
                   "Nicht falsch — aber ein kurzes Wort wäre besser. Herr Nguyen braucht Orientierung.",
               },
@@ -243,7 +297,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       quellen: ["Ethik-Kodex ICN (2021)"],
       track: "basis",
       modus: "praxis-sim",
-      lernziel: "ce02-nguyen-dur-koerperbild-wuerde",
+      lernziel: "ce02-nguyen-dur-körperbild-würde",
       tag: "pflege",
       contentC1: {
         title: "KOMPLIKATION 1 — 'Ich bin kein richtiger Mann mehr'",
@@ -269,7 +323,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
             isCorrect: false,
           },
           {
-            text: "Kurz Pause machen. Handgriff stoppen. Ihn anschauen: 'Das muss sich sehr schwer anfühlen. Darf ich kurz mit Ihnen darüber reden, wenn wir fertig sind?'",
+            text: "Kurz Pause machen. Handgriff stoppen. Ihn anschaün: 'Das muss sich sehr schwer anfühlen. Darf ich kurz mit Ihnen darüber reden, wenn wir fertig sind?'",
             feedback:
               "Richtig. Vier Elemente dieser Reaktion sind entscheidend: 1) Pause — Körper und Wort trennen (er spricht, du hörst), 2) Blickkontakt — Würde und Präsenz, 3) Spiegeln statt falscher Trost ('Das muss sich schwer anfühlen' = du nimmst es ernst ohne es zu bewerten), 4) Raum lassen ('Darf ich?') — nicht aufdrängen, Einverständnis einholen. Das ist pflegetherapeutisches Handeln nach dem ICN-Ethik-Kodex.",
             feedbackB1:
@@ -279,7 +333,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
           {
             text: "'Viele Patienten fühlen so am Anfang. Es wird besser.'",
             feedback:
-              "Allgemeinplatz — keine echte Begegnung. Diese Antwort ist gut gemeint, aber sie verallgemeinert und verspricht. Herr Nguyen wird gerade nicht als Individuum mit seiner Geschichte wahrgenommen — sondern als 'einer von vielen'. Außerdem: 'Es wird besser' ist eine Versprechung die du nicht halten kannst. Körperbild-Akzeptanz nach Stoma kann Wochen bis Monate dauern und ist nicht garantiert.",
+              "Allgemeinplatz — keine echte Begegnung. Diese Antwort ist gut gemeint, aber sie verallgemeinert und verspricht. Herr Nguyen wird gerade nicht als Individuum mit seiner Geschichte wahrgenommen — sondern als 'einer von vielen'. Außerdem: 'Es wird besser' ist eine Versprechung die du nicht halten kannst. Körperbild-Akzeptanz nach Stoma kann Wochen bis Monate daürn und ist nicht garantiert.",
             feedbackB1:
               "Nicht gut. 'Viele fühlen so' — Herr Nguyen ist nicht 'viele'. 'Es wird besser' — das weißt du nicht. Echte Begegnung sieht anders aus.",
             isCorrect: false,
@@ -290,7 +344,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
 
     // Step 4.4 — Dialog (3 Phasen, K2): Ehefrau-Angst
     {
-      stepId: "ce02-nguyen-dur-04-k2-angehoerige",
+      stepId: "ce02-nguyen-dur-04-k2-angehörige",
       phase: 4,
       stepType: "dialog",
       bloomLevel: 5,
@@ -298,17 +352,17 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       quellen: ["FG SKM — Handlungsempfehlungen Stomapflege (2023)"],
       track: "basis",
       modus: "story",
-      lernziel: "ce02-nguyen-dur-angehoerige",
+      lernziel: "ce02-nguyen-dur-angehörige",
       tag: "pflege",
       contentC1: {
         title: "KOMPLIKATION 2 — 'Mama hat Angst'",
-        body: "Du hast den neuen Beutel angebracht. Alles dicht. Herr Nguyen atmet durch. In diesem Moment spricht Linh: **'Mama hat Angst. Was wenn der Beutel zuhause ausläuft? Was wenn sie es falsch macht?'** Du schaust zur Ehefrau — sie nickt. Wichtig: Primäres Ziel der Stoma-Anleitung ist die Selbstversorgung durch Herrn Nguyen — Ehefrau Mai ist unterstützende Begleiterin und Backup, nicht Hauptpflegeperson. Erst wenn Herr Nguyen es körperlich/sprachlich nicht schaffen kann, übernimmt Mai. Was tust du?",
-        fallbezug: "Patientenzitat Z4. Mais Angst ist real und legitim — aber die Botschaft an sie und an Herrn Nguyen ist: Wir leiten zuerst dich, Herr Nguyen, an. Mai darf zuschauen und mitlernen für den Backup-Fall. Empowerment vor Übernahme.",
+        body: "Du hast den neün Beutel angebracht. Alles dicht. Herr Nguyen atmet durch. In diesem Moment spricht Linh: **'Mama hat Angst. Was wenn der Beutel zuhause ausläuft? Was wenn sie es falsch macht?'** Du schaust zur Ehefrau — sie nickt. Wichtig: Primäres Ziel der Stoma-Anleitung ist die Selbstversorgung durch Herrn Nguyen — Ehefrau Mai ist unterstützende Begleiterin und Backup, nicht Hauptpflegeperson. Erst wenn Herr Nguyen es körperlich/sprachlich nicht schaffen kann, übernimmt Mai. Was tust du?",
+        fallbezug: "Patientenzitat Z4. Mais Angst ist real und legitim — aber die Botschaft an sie und an Herrn Nguyen ist: Wir leiten zürst dich, Herr Nguyen, an. Mai darf zuschaün und mitlernen für den Backup-Fall. Empowerment vor Übernahme.",
         glossarBegriffe: ["Entlassungsmanagement", "Selbstversorgung", "Empowerment", "Stomatherapeut"],
       },
       contentB1: {
         title: "KOMPLIKATION 2 — 'Mama hat Angst'",
-        body: "Du hast den neuen Beutel angebracht. Linh sagt: **'Mama hat Angst. Was wenn der Beutel zuhause ausläuft?'** Ehefrau Mai nickt. Wichtig: Herr Nguyen lernt zuerst — er soll den Beutel selbst wechseln. Mai schaut zu und ist Backup. Was tust du?",
+        body: "Du hast den neün Beutel angebracht. Linh sagt: **'Mama hat Angst. Was wenn der Beutel zuhause ausläuft?'** Ehefrau Mai nickt. Wichtig: Herr Nguyen lernt zürst — er soll den Beutel selbst wechseln. Mai schaut zu und ist Backup. Was tust du?",
         fallbezug:
           "Ziel: Herr Nguyen versorgt sein Stoma selbst. Mai hilft nur, wenn Herr Nguyen es nicht kann.",
         glossarBegriffe: ["Selbstversorgung", "Stomatherapeut"],
@@ -320,7 +374,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Du hast den neuen Beutel angebracht. Linh übersetzt die Angst ihrer Mutter. Ehefrau Mai schaut dich an. Was sagst du?",
+              "Du hast den neün Beutel angebracht. Linh übersetzt die Angst ihrer Mutter. Ehefrau Mai schaut dich an. Was sagst du?",
             contextB1:
               "Der neue Beutel sitzt. Linh sagt: Mama hat Angst vor dem Beutelwechsel zuhause. Was sagst du?",
             speaker: "Du",
@@ -340,7 +394,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
                   "Nicht richtig. Die Angst von Ehefrau Mai ist real und sie braucht eine Antwort — nicht 'das ist nicht mein Problem'.",
               },
               {
-                text: "'Frau Mai, ich verstehe Ihre Sorge. Wichtig zu wissen: Wir leiten zuerst Herrn Nguyen an — er soll den Beutel selbst wechseln können. Sie sind dabei und lernen mit, falls er Hilfe braucht. Heute kommt der Stomatherapeut, da können Sie und Herr Nguyen gemeinsam alles fragen.' (Linh übersetzt.)",
+                text: "'Frau Mai, ich verstehe Ihre Sorge. Wichtig zu wissen: Wir leiten zürst Herrn Nguyen an — er soll den Beutel selbst wechseln können. Sie sind dabei und lernen mit, falls er Hilfe braucht. Heute kommt der Stomatherapeut, da können Sie und Herr Nguyen gemeinsam alles fragen.' (Linh übersetzt.)",
                 textB1:
                   "'Frau Mai, ich verstehe Ihre Sorge. Aber: Zuerst lernt Herr Nguyen den Beutelwechsel — er soll es selbst machen. Sie sind dabei und helfen, wenn er nicht kann. Heute kommt der Stomatherapeut.' (Linh übersetzt.)",
                 patientResponse:
@@ -351,7 +405,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
                 feedback:
                   "Richtig. Drei Elemente: 1) Anerkennen der Sorge (validieren statt abtun), 2) Klarstellen des Ziels: Selbstversorgung durch Herrn Nguyen ist primär — Empowerment statt Übernahme; das entspricht dem FG-SKM-Standard zur Stomatherapie und der DNQP-Beziehungsgestaltung. 3) Mai als unterstützende Begleitung positionieren, nicht als Hauptpflegeperson — das nimmt Druck weg und stärkt gleichzeitig Herrn Nguyens Würde und Selbstwirksamkeit.",
                 feedbackB1:
-                  "Richtig. Du machst drei Dinge: Du sagst 'Ich verstehe Ihre Angst' (das hilft Mai). Du sagst 'Herr Nguyen lernt zuerst' (das stärkt ihn). Und du sagst 'Sie helfen wenn er nicht kann' (Mai weiß: ich bin nicht alleine zuständig).",
+                  "Richtig. Du machst drei Dinge: Du sagst 'Ich verstehe Ihre Angst' (das hilft Mai). Du sagst 'Herr Nguyen lernt zürst' (das stärkt ihn). Und du sagst 'Sie helfen wenn er nicht kann' (Mai weiß: ich bin nicht alleine zuständig).",
               },
               {
                 text: "'Ich erkläre ihr jetzt gleich alles — Schritt für Schritt.'",
@@ -386,7 +440,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
                   "Ehefrau Mai schaut konzentriert. Sie fragt (Linh übersetzt): 'Sieht das immer so aus?'",
                 score: 3,
                 feedback:
-                  "Richtig. Eine kurze visuelle Orientierung ('so sieht richtig aus') gibt Ehefrau Mai ein Referenzbild für zuhause. Das ist nicht die vollständige Anleitung — das ist der erste Orientierungsschritt. Ehefrau Mais Frage zeigt: Sie lernt aktiv.",
+                  "Richtig. Eine kurze visülle Orientierung ('so sieht richtig aus') gibt Ehefrau Mai ein Referenzbild für zuhause. Das ist nicht die vollständige Anleitung — das ist der erste Orientierungsschritt. Ehefrau Mais Frage zeigt: Sie lernt aktiv.",
                 feedbackB1:
                   "Gut. Du zeigst ihr etwas Konkretes. Sie kann es sehen und merken: 'So muss es aussehen.'",
               },
@@ -447,14 +501,14 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "KOMPLIKATION 3 — Beutel undicht",
-        body: "20 Minuten nach dem Wechsel ruft Herr Nguyen. Der Beutel ist an der Unterseite undicht — Stomainhalt auf der Bauch-Haut, Bettlaken kontaminiert. Du betrittst das Zimmer. Was tust du zuerst?",
+        body: "20 Minuten nach dem Wechsel ruft Herr Nguyen. Der Beutel ist an der Unterseite undicht — Stomainhalt auf der Bauch-Haut, Bettlaken kontaminiert. Du betrittst das Zimmer. Was tust du zürst?",
         fallbezug:
           "Leckage ist die häufigste Stoma-Komplikation. Häufige Ursache: falsch angepasste Plattengröße oder Faltenwurf der Haut. Quelle: FG SKM 2023.",
         glossarBegriffe: ["Leckage", "Stomaplatte", "Mazerierung"],
       },
       contentB1: {
         title: "KOMPLIKATION 3 — Der Beutel läuft aus",
-        body: "20 Minuten nach dem Wechsel ruft Herr Nguyen. Der Beutel ist undicht — Stuhl auf der Bauchhaut, Bettlaken nass. Du gehst ins Zimmer. Was tust du zuerst?",
+        body: "20 Minuten nach dem Wechsel ruft Herr Nguyen. Der Beutel ist undicht — Stuhl auf der Bauchhaut, Bettlaken nass. Du gehst ins Zimmer. Was tust du zürst?",
         glossarBegriffe: ["Leckage", "Stomaplatte"],
       },
       question: {
@@ -464,17 +518,17 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
           {
             text: "Sofort den Beutel abermals wechseln.",
             feedback:
-              "Falsche Priorität. Stomainhalt auf der Haut ist aggressiv — bei Kolostoma leicht alkalisch, bei Ileostoma enzymatisch und stark hautaggressiv. Jede Minute, die der Inhalt auf der Haut bleibt, erhöht das Mazerierungsrisiko. Die Haut muss zuerst gereinigt und getrocknet werden — dann wird beurteilt ob und wie die Platte neu angelegt werden muss.",
+              "Falsche Priorität. Stomainhalt auf der Haut ist aggressiv — bei Kolostoma leicht alkalisch, bei Ileostoma enzymatisch und stark hautaggressiv. Jede Minute, die der Inhalt auf der Haut bleibt, erhöht das Mazerierungsrisiko. Die Haut muss zürst gereinigt und getrocknet werden — dann wird beurteilt ob und wie die Platte neu angelegt werden muss.",
             feedbackB1:
-              "Nicht zuerst. Erst die Haut reinigen — der Stuhl beschädigt die Haut. Dann den Beutel neu anlegen.",
+              "Nicht zürst. Erst die Haut reinigen — der Stuhl beschädigt die Haut. Dann den Beutel neu anlegen.",
             isCorrect: false,
           },
           {
             text: "Haut sofort reinigen und gründlich trocknen — dann Beutel und Platte beurteilen, ob neu angelegt werden muss.",
             feedback:
-              "Richtig. Haut vor Beutel — das ist die Prioritätsreihenfolge bei Leckage. Stomainhalt auf Haut = Mazerationsgefahr = sofort handeln. Nach der Hautreinigung: Beurteilen wo die Leckage war (Platte-Haut-Übergang? Beutel-Platten-Verbindung? Falsch angepasste Plattengröße?). Dann Konsequenz: Platte neu anpassen, Stoma nochmals ausmessen. Quelle: FG SKM 2023.",
+              "Richtig. Haut vor Beutel — das ist die Prioritätsreihenfolge bei Leckage. Stomainhalt auf Haut = Mazerationsgefahr = sofort handeln. Nach der Hautreinigung: Beurteilen wo die Leckage war (Platte-Haut-Übergang? Beutel-Platten-Verbindung? Falsch angepasste Plattengröße?). Dann Konseqünz: Platte neu anpassen, Stoma nochmals ausmessen. Quelle: FG SKM 2023.",
             feedbackB1:
-              "Richtig. Erst die Haut reinigen und trocknen. Dann schauen: Warum war der Beutel undicht? Dann neu anlegen.",
+              "Richtig. Erst die Haut reinigen und trocknen. Dann schaün: Warum war der Beutel undicht? Dann neu anlegen.",
             isCorrect: true,
           },
           {
@@ -499,7 +553,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       quellen: ["Thiemes Pflege, 14. Aufl."],
       track: "basis",
       modus: "sortierstation",
-      lernziel: "ce02-nguyen-dur-koerperpflege",
+      lernziel: "ce02-nguyen-dur-körperpflege",
       tag: "pflege",
       contentC1: {
         title: "Ganzkörperpflege: Reihenfolge nach Hygiene-Grundsatz",
@@ -515,8 +569,8 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
         fragetext:
           "Sortiere die Körperbereiche in die richtige Pflegereihenfolge nach 'von sauber zu unrein'. Die Stomaregion ist eine eigenständige Maßnahme (eigenes Set) — sie steht hier am Ende als getrennter Hinweis.",
         sortItems: [
-          "Gesicht + Hals (sauberster Bereich — zuerst)",
-          "Arme + Rumpf vorne (oberhalb des Stomas zuerst)",
+          "Gesicht + Hals (sauberster Bereich — zürst)",
+          "Arme + Rumpf vorne (oberhalb des Stomas zürst)",
           "Rücken (eigene Schüssel, Positionswechsel)",
           "Beine",
           "Genitale + Perianalbereich (letzter Bereich der GKP — unreinster)",
@@ -591,7 +645,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
   optionaleSteps: [
     // 4.opt-1 — Text (stepbystep): Schutzpaste erklärt
     {
-      stepId: "ce02-nguyen-dur-opt1-schutzpaste-erklaeren",
+      stepId: "ce02-nguyen-dur-opt1-schutzpaste-erklären",
       phase: 4,
       stepType: "text",
       bloomLevel: 2,
@@ -616,7 +670,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
 
     // 4.opt-2 — Reflection: Kulturelle Sensibilität
     {
-      stepId: "ce02-nguyen-dur-opt2-kulturelle-sensibilitaet",
+      stepId: "ce02-nguyen-dur-opt2-kulturelle-sensibilität",
       phase: 4,
       stepType: "reflection",
       bloomLevel: 3,
@@ -624,7 +678,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       quellen: ["Ethik-Kodex ICN (2021)"],
       track: "vertiefung",
       modus: "schreibtisch",
-      lernziel: "ce02-nguyen-dur-reflexion-koerperbild",
+      lernziel: "ce02-nguyen-dur-reflexion-körperbild",
       tag: "pflege",
       contentC1: {
         title: "Reflexion: Körperbild-Veränderung und eigene Haltung",
@@ -650,6 +704,60 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       },
     },
 
+    // 4.opt-2b — InlineWissen: Faltenwurf
+    // Position: VOR Step opt-3 (Categorize: Leckage-Ursachen)
+    // Grund: "Faltenwurf" wird in opt-3 als Leckage-Ursache in der Kategorisierung verwendet
+    {
+      stepId: "ce02-nguyen-dur-iw-faltenwurf",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "FG SKM — Handlungsempfehlungen Stomapflege (2023)",
+        "WCET — International Ostomy Guideline Recommendations (2020)",
+      ],
+      track: "vertiefung",
+      modus: "entdecker",
+      lernziel: "ce02-nguyen-dur-faltenwurf",
+      tag: "pflege",
+      themaPrimaer: "stuhlausscheidung",
+      themenSekundaer: ["haut"],
+      transition:
+        "Faltenwurf als Leckage-Ursache verstanden. Jetzt: Kategorisiere alle Leckage-Ursachen.",
+      contentC1: {
+        title: "Faltenwurf — warum die Bauchdecke nicht immer glatt ist",
+        body: "",
+        glossarBegriffe: ["Faltenwurf", "Stomaplatte", "Leckage"],
+      },
+      contentB1: {
+        title: "Faltenwurf — Hautfalten um das Stoma",
+        body: "",
+        glossarBegriffe: ["Faltenwurf", "Leckage"],
+      },
+      inlineWissen: {
+        bausteinRef: "faltenwurf",
+        storyAufhaenger:
+          "Herrn Nguyens Beutel war heute Morgen undicht — an der Unterseite. Du hast ihn neu angelegt. Aber warum war er undicht? Eine häufige Ursache, die Anfänger übersehen: Faltenwurf. Die Bauchhaut rund um das Stoma ist nicht immer glatt — und genau da kann die Platte nicht dicht sitzen.",
+        kerntext:
+          "**Was ist ein Faltenwurf?** Hautfalten oder Narben in der Umgebung des Stomas, die verhindern, dass die Hautschutzplatte plan aufliegt. Die Platte 'schwebt' über der Falte → es entsteht ein Spalt → Stomainhalt kriecht unter die Platte → Leckage und Mazerierung.\n\n**Ursachen für Faltenwurf bei Stoma-Patienten:**\n\n• **OP-Narben:** Die Bauchdeckenwunde erzeugt Narbenzug → die Haut zieht sich zusammen\n• **Gewichtsveränderung:** Bei Gewichtsverlust (wie bei Herrn Nguyen: 6 kg in 3 Monaten) verliert die Bauchhaut Spannung → Falten entstehen\n• **Bauchdeckenschwäche:** Bei älteren Patienten reduzierter Muskeltonus\n• **Stoma-Position:** Wenn das Stoma nicht in der optimalen Position liegt (Markierung durch Stomatherapeut vor OP idealerweise im Sitzen, Stehen und Liegen)\n\n**Lösungen:**\n\n• **Schutzpaste:** Füllt kleine Unebenheiten und Falten aus → Platte sitzt dichter\n• **Konvexe Platte:** Hat eine Wölbung nach innen → drückt das Stoma leicht heraus → besser bei eingezogenem Stoma oder Faltenwurf\n• **Gürtel-System:** Hält die Platte mit leichtem Druck an → kompensiert Faltenwurf teilweise\n• **Stomatherapeut einbeziehen:** Individülle Lösung mit Spezialversorgung bei persistierendem Faltenwurf\n\n**Bei Herrn Nguyen:** Der Gewichtsverlust (6 kg) + post-OP-Narbe können Faltenwurf rechts vom Stoma verursachen. Deshalb war die Leckage an der Unterseite — die Platte saß dort nicht plan.",
+        kerntextB1:
+          "**Was ist ein Faltenwurf?** Hautfalten rund um das Stoma. Die Platte kann dort nicht glatt aufliegen → es entsteht eine Lücke → Stuhl kriecht unter die Platte → Leckage.\n\n**Warum gibt es Faltenwurf?**\n• OP-Narben ziehen die Haut zusammen\n• Gewichtsverlust → Bauchhaut wird schlaff\n• Bei älteren Patienten: Bauchmuskeln sind schwächer\n\n**Was hilft?**\n• **Schutzpaste:** Füllt die Falten aus\n• **Konvexe Platte:** Hat eine Wölbung → drückt das Stoma leicht raus\n• **Gürtel:** Hält die Platte fester\n• **Stomatherapeut fragen:** Er findet die beste Lösung\n\n**Bei Herrn Nguyen:** Er hat abgenommen. Die Bauchhaut hat Falten. Deshalb war der Beutel undicht.",
+        faustregel:
+          "**Falte unter der Platte = Spalt = Leckage.** Schutzpaste füllt, konvexe Platte drückt — Stomatherapeut entscheidet.",
+        faustregelB1:
+          "Hautfalte unter der Platte = Lücke = Beutel undicht. Schutzpaste oder konvexe Platte helfen.",
+        karteikarte: {
+          vorderseite: "Herrn Nguyens Beutel war an der Unterseite undicht. Was ist 'Faltenwurf' — und warum kann er die Ursache sein?",
+          rueckseite:
+            "Faltenwurf = Hautfalten/Narben rund ums Stoma → Platte liegt nicht plan → Spalt → Stomainhalt unter der Platte → Leckage + Mazerierung. Ursachen: OP-Narben, Gewichtsverlust, Bauchdeckenschwäche. Lösungen: Schutzpaste (Falten füllen), konvexe Platte (Stoma herausdrücken), Gürtelsystem, Stomatherapeut. **Falte = Spalt = Leckage.**",
+          vorderseiteB1: "Was ist Faltenwurf beim Stoma?",
+          rueckseiteB1:
+            "Hautfalten rund ums Stoma. Die Platte liegt nicht glatt auf → Lücke → Beutel wird undicht. Schutzpaste oder konvexe Platte helfen.",
+        },
+      },
+    },
+
     // 4.opt-3 — Categorize: Leckage-Ursachen
     {
       stepId: "ce02-nguyen-dur-opt3-leckage-ursachen",
@@ -664,7 +772,7 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Leckage-Ursachen kategorisieren",
-        body: "Wo läuft ein Stoma-Beutel aus? Und was ist die Konsequenz für jede Ursache?",
+        body: "Wo läuft ein Stoma-Beutel aus? Und was ist die Konseqünz für jede Ursache?",
         glossarBegriffe: ["Leckage", "Stomaplatte", "Faltenwurf"],
       },
       contentB1: {

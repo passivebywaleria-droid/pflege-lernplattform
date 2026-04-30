@@ -7,8 +7,8 @@
 import type { SituationsPhase } from "../../../_types";
 
 export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
-  phaseId: "ls-emilia-durchfuehren",
-  phase: "durchfuehren",
+  phaseId: "ls-emilia-durchführen",
+  phase: "durchführen",
   titel: "Säuglingsbad, Wickeln & Mutter begleiten",
   titelB1: "Durchführen — Baden, Wickeln, Laura helfen",
   kontext:
@@ -34,7 +34,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
         glossarBegriffe: [],
       },
       contentB1: {
-        title: "Bad vorbereiten — was zuerst?",
+        title: "Bad vorbereiten — was zürst?",
         body: "Bringe die Schritte in die richtige Reihenfolge, bevor du mit dem Bad beginnst.",
         glossarBegriffe: [],
       },
@@ -55,7 +55,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
 
     // Step 4.2 — Text (stepbystep): Infant Handling erklärt
     {
-      stepId: "ce02-emilia-dur-02-infant-handling-erklaert",
+      stepId: "ce02-emilia-dur-02-infant-handling-erklärt",
       phase: 4,
       stepType: "text",
       bloomLevel: 3,
@@ -80,7 +80,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
 
     // Step 4.3 — Dialog (5 Phasen): Bad durchführen + Laura-Zitat Z4
     {
-      stepId: "ce02-emilia-dur-03-bad-durchfuehren",
+      stepId: "ce02-emilia-dur-03-bad-durchführen",
       phase: 4,
       stepType: "dialog",
       bloomLevel: 4,
@@ -106,9 +106,9 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Du hast Emilias Gesicht gewaschen und beginnst mit dem Körper. Emilia ist zunächst still, dann beginnt sie leise zu quengeln. Laura schaut besorgt.",
+              "Du hast Emilias Gesicht gewaschen und beginnst mit dem Körper. Emilia ist zunächst still, dann beginnt sie leise zu qüngeln. Laura schaut besorgt.",
             contextB1:
-              "Du wäschst Emilias Körper. Emilia quengelt leise. Laura ist besorgt.",
+              "Du wäschst Emilias Körper. Emilia qüngelt leise. Laura ist besorgt.",
             speaker: "Du",
             options: [
               {
@@ -158,7 +158,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
                   "Laura freut sich. \"Ja! Das will ich richtig lernen.\"",
                 score: 3,
                 feedback:
-                  "Anleitung statt Übernahme. Du gibst Laura Handlungskompetenz — sie soll nicht zuschauen, sondern lernen. Das ist Pflegeberatung: Befähigen statt Versorgen. *(Vgl. WHO Empowerment-Konzept)*",
+                  "Anleitung statt Übernahme. Du gibst Laura Handlungskompetenz — sie soll nicht zuschaün, sondern lernen. Das ist Pflegeberatung: Befähigen statt Versorgen. *(Vgl. WHO Empowerment-Konzept)*",
                 feedbackB1:
                   "Sehr gut. Du zeigst — und beim nächsten Mal macht Laura selbst. Das macht Laura sicherer.",
               },
@@ -188,7 +188,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
                 feedback:
                   "Gute Absicht, aber kein schrittweiser Aufbau. Haare waschen beim Säugling ist eine spezifische Fertigkeit (Kopf halten, Wasser schützen). Ohne Erklärung davor zu übergeben ist zu viel auf einmal.",
                 feedbackB1:
-                  "Gute Idee — aber erkläre zuerst wie man es macht. Dann kann Laura es versuchen.",
+                  "Gute Idee — aber erkläre zürst wie man es macht. Dann kann Laura es versuchen.",
               },
             ],
           },
@@ -233,9 +233,62 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
       },
     },
 
+    // ───── Inline-Wissen: Kinästhetik ─────
+    // Der Begriff wird im nachfolgenden Sequencing-Step verwendet, in dem der Schüler
+    // das Wickeln kinästhetisch korrekt sortieren soll. Vorher muss er das Konzept kennen.
+    {
+      stepId: "ce02-emilia-dur-iw-kinästhetik",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.2",
+      quellen: [
+        "Hatch F./Maietta L. 1996 — Kinästhetik in der Pflege",
+        "Hoehl/Kullick 2019",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-emilia-dur-kinästhetik-grundlagen",
+      tag: "pflege",
+      themaPrimaer: "säuglingspflege",
+      themenSekundaer: ["kinästhetik"],
+      transition: "Jetzt wickelst du Emilia — und setzt Kinästhetik direkt um.",
+      contentC1: {
+        title: "Kinästhetik beim Säugling — warum du Emilia nicht einfach \"drehst\"",
+        body: "",
+        glossarBegriffe: ["Kinästhetik", "Hatch/Maietta", "Infant Handling"],
+      },
+      contentB1: {
+        title: "Kinästhetik — die richtige Bewegung beim Baby",
+        body: "",
+        glossarBegriffe: ["Kinästhetik"],
+      },
+      inlineWissen: {
+        bausteinRef: "kinästhetik-säugling",
+        storyAufhaenger:
+          "Du willst Emilia wickeln. Laura nimmt instinktiv Emilias Knöchel und hebt das Becken hoch. Du sagst: \"Stopp — es gibt eine bessere Art. Das nennt sich Kinästhetik.\" Warum ist der Knöchel-Griff falsch — und was machst du stattdessen?",
+        storyAufhaengerB1:
+          "Du willst Emilia wickeln. Laura hebt Emilia an den Knöcheln hoch. Du sagst: \"Stopp. Es gibt eine bessere Art.\" Warum ist das falsch? Was machst du statt dessen?",
+        kerntext:
+          "**Kinästhetik** (Hatch/Maietta 1996) ist ein Bewegungskonzept für die Pflege. Beim Säugling angepasst als **Infant Handling** — die gleichen Prinzipien wie bei Erwachsenen, aber auf den unreifen Körper bezogen.\n\n**Grundprinzip:** Nicht AM Patienten bewegen, sondern MIT ihm. Beim Säugling heißt das: Die natürliche Bewegung unterstützen statt übernehmen.\n\n**Beim Wickeln — warum NICHT an den Knöcheln anheben:**\n\n• **Hüftgelenk:** Beim Hochziehen an den Knöcheln wird die Hüftgelenkspfanne belastet — bei Säuglingen ist sie noch knorpelig und weich\n\n• **Bandscheiben:** Die Wirbelsäule wird auf Zug belastet (hängendes Gewicht am unteren Ende)\n\n• **Passivität:** Das Kind wird zum Objekt — es lernt keine eigene Bewegung\n\n**Kinästhetisch korrekt:**\n\n• **Becken-Griff:** Mit der flachen Hand unter das Becken greifen und sanft anheben — die Wirbelsäule bleibt in natürlicher Linie\n\n• **Seitliches Drehen:** Emilia auf die Seite drehen (Schultergürtel und Becken gleichzeitig) — dann Windel wechseln. So bleibt die Wirbelsäule neutral\n\n• **Ankündigen:** \"Emilia, ich drehe dich jetzt\" — auch Säuglinge reagieren auf Stimme und Berührung als Vorbereitung\n\n**Grundsatz nach Hatch/Maietta:** Jede Pflege-Handlung ist ein Bewegungs-Dialog — auch beim Wickeln eines 4 Monate alten Babys.",
+        kerntextB1:
+          "**Kinästhetik** ist eine Methode für richtige Pflege-Bewegung. Beim Baby heißt es **Infant Handling**.\n\n**Grundregel:** Bewege NICHT am Baby vorbei — bewege MIT dem Baby.\n\n**Beim Wickeln — warum NICHT an den Knöcheln hochziehen?**\n\n• Das Hüftgelenk wird belastet — es ist noch weich\n\n• Die Wirbelsäule wird gezogen — das ist schlecht\n\n• Das Baby lernt keine eigene Bewegung\n\n**Was machst du stattdessen?**\n\n• **Becken-Griff:** Mit der flachen Hand unter das Becken greifen\n\n• **Auf die Seite drehen:** Schulter und Becken gleichzeitig drehen\n\n• **Vorher ankündigen:** \"Emilia, ich drehe dich jetzt\" — das Baby hört dich\n\n**Wichtig:** Auch Wickeln ist ein Gespräch — mit Berührung und Stimme.",
+        faustregel:
+          "Nie an den Knöcheln — immer am Becken. Drehen statt Hochziehen. Ankündigen statt Überraschen.",
+        faustregelB1:
+          "Nie an den Knöcheln! Am Becken greifen. Auf die Seite drehen. Vorher sagen was du tust.",
+        karteikarte: {
+          vorderseite:
+            "Laura hebt Emilia beim Wickeln an den Knöcheln hoch. Was ist daran falsch — und wie wickelst du kinästhetisch korrekt?",
+          rueckseite:
+            "Knöchel-Griff = Hüftgelenk-Belastung (noch knorpelig), WS-Zug, Kind passiv. Kinästhetisch korrekt: Becken-Griff (flache Hand), seitliches Drehen (Schulter + Becken gleichzeitig), vorher ankündigen. Prinzip (Hatch/Maietta 1996): MIT dem Baby bewegen, nicht AM Baby. Faustregel: Nie Knöchel — immer Becken. Drehen statt Hochziehen.",
+        },
+      },
+    },
+
     // Step 4.4 — Sequencing: Wickeln kinästhetisch
     {
-      stepId: "ce02-emilia-dur-04-wickeln-kinaesthetik",
+      stepId: "ce02-emilia-dur-04-wickeln-kinästhetik",
       phase: 4,
       stepType: "sequencing",
       bloomLevel: 4,
@@ -328,7 +381,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
             text: "\"Nimm dir ruhig einen Moment. Das ist alles gerade sehr viel — das ist ein normaler Moment nach einer schlaflosen Nacht.\"",
             isCorrect: true,
             feedback:
-              "Genau richtig. Du validierst Lauras Erschöpfung, ohne sie wegzuerklären. 'Normaler Moment' nimmt die Scham ('Tut mir leid'). Du schaffst Raum — ohne einzugreifen oder zu bewerten. Das ist aktive Zuhörung, Schritt 1. Jetzt kannst du weiter aktiv zuhören.",
+              "Genau richtig. Du validierst Lauras Erschöpfung, ohne sie wegzürklären. 'Normaler Moment' nimmt die Scham ('Tut mir leid'). Du schaffst Raum — ohne einzugreifen oder zu bewerten. Das ist aktive Zuhörung, Schritt 1. Jetzt kannst du weiter aktiv zuhören.",
             feedbackB1:
               "Sehr gut. Du zeigst: Das ist okay. Das ist nicht peinlich. Emilia ist sicher — jetzt darf Laura kurz weinen.",
           },

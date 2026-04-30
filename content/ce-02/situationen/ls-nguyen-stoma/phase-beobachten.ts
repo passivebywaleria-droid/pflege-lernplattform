@@ -14,7 +14,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
   kontext:
     "Du betrittst Zimmer 6. Herr Nguyen liegt im Bett, das Kopfteil leicht erhöht. Er schaut zur Wand, als du hereinkommst. Tochter Linh sitzt auf dem Stuhl rechts, Handy in der Hand. Sie steht auf: 'Guten Morgen. Papa hat gut geschlafen.' Ehefrau Mai sitzt am Fenster. Sie lächelt kurz, dann schaut sie auf ihre Hände. Du begrüßt Herrn Nguyen auf Augenhöhe, erklärst auf Deutsch was du gleich tun wirst — Linh übersetzt. Herr Nguyen nickt knapp. Linh übersetzt leise: 'Er sagt, es ist ihm peinlich. Er möchte nicht, dass jemand das sieht.' Jetzt: systemische Beobachtung, bevor der Beutel geöffnet wird.",
   kontextB1:
-    "Du gehst ins Zimmer 6. Herr Nguyen liegt im Bett. Er schaut zur Wand. Tochter Linh steht auf: 'Guten Morgen. Papa hat gut geschlafen.' Ehefrau Mai sitzt am Fenster. Du begrüßt Herrn Nguyen. Linh übersetzt. Linh sagt leise: 'Er sagt, es ist ihm peinlich. Er möchte nicht, dass jemand das sieht.' Jetzt: Erst schauen, dann handeln.",
+    "Du gehst ins Zimmer 6. Herr Nguyen liegt im Bett. Er schaut zur Wand. Tochter Linh steht auf: 'Guten Morgen. Papa hat gut geschlafen.' Ehefrau Mai sitzt am Fenster. Du begrüßt Herrn Nguyen. Linh übersetzt. Linh sagt leise: 'Er sagt, es ist ihm peinlich. Er möchte nicht, dass jemand das sieht.' Jetzt: Erst schaün, dann handeln.",
   kernSteps: [
     // Step 2.1 — Hotspot: Stomafarbe (BRILLIANT-FRAGE)
     {
@@ -169,9 +169,9 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
             text: "Wundnaht unteres Abdomen leicht gerötet, seröse Absonderung am unteren Rand",
             isError: true,
             reason:
-              "Dokumentationspflichtig — Wundnaht-Status post-OP ist tägliche Beobachtungspflicht. Die fünf Kardinalsymptome der Wundinfektion (Calor / Wärme, Rubor / Rötung, Dolor / Schmerz, Tumor / Schwellung, Functio laesa / Funktionseinschränkung) immer mitprüfen. 'Leicht gerötet + seröse Absonderung' ist am 4. POD noch grenzwertig-tolerierbar. Eskalations-Kriterien (sofortige Arzt-Information): Rötungs-Ausdehnung > 2 cm um Wunde, eitrige/trübe Absonderung, zunehmender Druckschmerz, lokale Wärme, neue Schwellung, Fieber. Quelle: DNQP Pflege chronischer Wunden; AWMF Wundbehandlung.",
+              "Dokumentationspflichtig — Wundnaht-Status post-OP ist tägliche Beobachtungspflicht. Die fünf Kardinalsymptome der Wundinfektion (Calor / Wärme, Rubor / Rötung, Dolor / Schmerz, Tumor / Schwellung, Functio läsa / Funktionseinschränkung) immer mitprüfen. 'Leicht gerötet + seröse Absonderung' ist am 4. POD noch grenzwertig-tolerierbar. Eskalations-Kriterien (sofortige Arzt-Information): Rötungs-Ausdehnung > 2 cm um Wunde, eitrige/trübe Absonderung, zunehmender Druckschmerz, lokale Wärme, neue Schwellung, Fieber. Quelle: DNQP Pflege chronischer Wunden; AWMF Wundbehandlung.",
             reasonB1:
-              "Wichtig aufschreiben! Die Bauch-Wunde ist leicht rot. Am 4. Tag nach der OP ist das grenzwertig — du musst genau hinschauen. Alarm-Zeichen für Wundinfektion: 1) Rötung wird größer (> 2 cm), 2) Eiter (gelb-grünlich) statt klar-seröser Flüssigkeit, 3) starke Schmerzen, 4) Wunde wird warm, 5) Fieber. Wenn eines davon kommt → sofort Arzt informieren.",
+              "Wichtig aufschreiben! Die Bauch-Wunde ist leicht rot. Am 4. Tag nach der OP ist das grenzwertig — du musst genau hinschaün. Alarm-Zeichen für Wundinfektion: 1) Rötung wird größer (> 2 cm), 2) Eiter (gelb-grünlich) statt klar-seröser Flüssigkeit, 3) starke Schmerzen, 4) Wunde wird warm, 5) Fieber. Wenn eines davon kommt → sofort Arzt informieren.",
           },
           {
             text: "Stoma-Beutel: bräunlich-gelblicher, dünnflüssiger Inhalt, ca. 1/3 gefüllt",
@@ -185,7 +185,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
             text: "Herr Nguyen atmet regelmäßig, keine Dyspnoe sichtbar",
             isError: false,
             reason:
-              "Kein Pflicht-Element der Stomadokumentation — Atemfrequenz ist ein allgemeines Beobachtungsmerkmal. Relevant wenn abweichend, aber hier kein spezifischer Stomabefund.",
+              "Kein Pflicht-Element der Stomadokumentation — Atemfreqünz ist ein allgemeines Beobachtungsmerkmal. Relevant wenn abweichend, aber hier kein spezifischer Stomabefund.",
             reasonB1:
               "Nicht nötig aufzuschreiben — die Atmung ist normal, und das gehört nicht in die Stoma-Dokumentation.",
           },
@@ -201,7 +201,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
             text: "Tochter Linh ist anwesend und übersetzt",
             isError: false,
             reason:
-              "Gehört nicht in die Stomadokumentation — aber in den Pflegebericht als kontextueller Faktor. In Phase 6 (Dokumentieren) wird das aufgegriffen.",
+              "Gehört nicht in die Stomadokumentation — aber in den Pflegebericht als kontextüller Faktor. In Phase 6 (Dokumentieren) wird das aufgegriffen.",
             reasonB1:
               "Nicht in die Stoma-Dokumentation — aber in den Pflegebericht. Das kommt in Phase 6.",
           },
@@ -211,7 +211,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
 
     // Step 2.4 — Dialog (3 Phasen): Ernährung beobachten
     {
-      stepId: "ce02-nguyen-beob-04-ernaehrung-sehen",
+      stepId: "ce02-nguyen-beob-04-ernährung-sehen",
       phase: 2,
       stepType: "dialog",
       bloomLevel: 3,
@@ -221,7 +221,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
       ],
       track: "basis",
       modus: "story",
-      lernziel: "ce02-nguyen-beob-ernaehrung",
+      lernziel: "ce02-nguyen-beob-ernährung",
       tag: "pflege",
       contentC1: {
         title: "Das Tablett — fast unberührt",
@@ -346,6 +346,60 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
       },
     },
 
+    // Step 2.4b — InlineWissen: Sensorisches Empfinden
+    // Position: VOR Step 2.5 (Matrix: Braden-Subskalen)
+    // Grund: "sensorisches Empfinden" ist eine Braden-Subskala und wird in Step 2.5 verwendet
+    {
+      stepId: "ce02-nguyen-beob-iw-sensorisches-empfinden",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Braden B.J., Bergstrom N. (1987): A Conceptual Schema for the Study of the Etiology of Pressure Sores",
+        "DNQP — Expertenstandard Dekubitusprophylaxe in der Pflege, 3. Aktualisierung (2017)",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-nguyen-beob-sensorisches-empfinden",
+      tag: "pflege",
+      themaPrimaer: "dekubitus-prophylaxe",
+      themenSekundaer: ["stuhlausscheidung"],
+      transition:
+        "Sensorisches Empfinden verstanden. Jetzt: Ordne die Braden-Subskalen für Herrn Nguyen ein.",
+      contentC1: {
+        title: "Braden-Subskala: Sensorisches Empfinden",
+        body: "",
+        glossarBegriffe: ["sensorisches Empfinden", "Braden-Skala", "Nozizeption"],
+      },
+      contentB1: {
+        title: "Braden-Skala: Was ist sensorisches Empfinden?",
+        body: "",
+        glossarBegriffe: ["sensorisches Empfinden", "Braden-Skala"],
+      },
+      inlineWissen: {
+        bausteinRef: "sensorisches-empfinden",
+        storyAufhaenger:
+          "Gleich ordnest du Herrn Nguyens Braden-Subskalen ein. Eine davon ist das 'sensorische Empfinden'. Herr Nguyen hat post-OP-Schmerzen — das klingt nach intaktem Empfinden. Aber: Schmerz kann auch dazu führen, dass er Bewegung vermeidet. Was bedeutet das für sein Dekubitusrisiko?",
+        kerntext:
+          "**Was ist sensorisches Empfinden?** Die Fähigkeit, auf druckbedingte Beschwerden (Schmerz, Unbehagen) zu reagieren und eine Lageveränderung einzuleiten. Es ist die erste der 6 Braden-Subskalen.\n\n**4 Stufen (Braden-Score):**\n\n• **4 Punkte — Nicht eingeschränkt:** Patient spürt Druck, reagiert sofort, verändert die Lage selbstständig.\n• **3 Punkte — Leicht eingeschränkt:** Patient spürt Druck, reagiert aber verzögert oder braucht Aufforderung.\n• **2 Punkte — Stark eingeschränkt:** Patient reagiert nur auf starke Schmerzreize, kann Unbehagen nicht sinnvoll verbalisieren.\n• **1 Punkt — Vollständig ausgefallen:** Patient reagiert nicht auf Schmerzreize (Bewusstlosigkeit, tiefe Sedierung, Plegie).\n\n**Herr Nguyen:** Er hat post-OP-Schmerzen (NRS 3/10). Das bedeutet: Sein sensorisches Empfinden ist grundsätzlich intakt — er SPÜRT Druck. Aber: Der Schmerz begrenzt seine Bewegungsbereitschaft. Jede Lageveränderung tut weh → er bleibt liegen → Druck wirkt länger → Dekubitusrisiko steigt. Score: **3 Punkte (leicht eingeschränkt).**\n\n**Klinische Relevanz:** Bei Patienten mit Schmerz-bedingter Immobilität ist das sensorische Empfinden formal intakt, aber funktionell eingeschränkt. Schmerzmanagement ist deshalb Teil der Dekubitusprophylaxe.",
+        kerntextB1:
+          "**Was ist sensorisches Empfinden?** Die Fähigkeit, Druck zu spüren und sich deshalb umzulagern.\n\n**Braden-Skala Punkte:**\n• 4 = spürt alles, bewegt sich sofort\n• 3 = spürt Druck, reagiert aber langsam\n• 2 = reagiert nur auf starke Schmerzen\n• 1 = reagiert gar nicht\n\n**Herr Nguyen:** Er spürt Druck (Schmerz NRS 3/10). Aber: Weil Bewegung weh tut, bleibt er liegen. Druck wirkt länger → Dekubitus-Risiko steigt.\n\nScore: **3 Punkte** (leicht eingeschränkt).",
+        faustregel:
+          "**Sensorisches Empfinden = Spürt der Patient Druck und bewegt sich?** Bei Herrn Nguyen: Er spürt — aber Schmerz hält ihn fest.",
+        faustregelB1:
+          "Sensorisches Empfinden = Spürt er Druck? Ja — aber er bewegt sich trotzdem nicht, weil es weh tut.",
+        karteikarte: {
+          vorderseite: "Was misst die Braden-Subskala 'sensorisches Empfinden' — und warum hat Herr Nguyen 3 von 4 Punkten?",
+          rueckseite:
+            "Sensorisches Empfinden = Fähigkeit, druckbedingte Beschwerden zu spüren und die Lage zu verändern. 4 Stufen (4 = intakt, 1 = ausgefallen). Herr Nguyen: Empfinden intakt (NRS 3/10 = er spürt Druck), aber Schmerz hemmt Lageveränderung → funktionell eingeschränkt → 3 Punkte. Schmerzmanagement = Teil der Dekubitusprophylaxe. **Spürt er Druck? Ja. Bewegt er sich? Nein — weil es weh tut.**",
+          vorderseiteB1: "Was bedeutet 'sensorisches Empfinden' bei der Braden-Skala?",
+          rueckseiteB1:
+            "Kann der Patient Druck spüren und sich bewegen? Herr Nguyen spürt Druck — aber Bewegung tut weh, also bleibt er liegen. Score: 3 von 4.",
+        },
+      },
+    },
+
     // Step 2.5 — Matrix: Braden-Subskalen einordnen
     {
       stepId: "ce02-nguyen-beob-05-dekubitus-risiko",
@@ -398,7 +452,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
               correctQuadrant: 2,
             },
             {
-              id: "aktivitaet",
+              id: "aktivität",
               text: "Aktivität: 4. Tag post-OP, Bettruhe mit Auflockerung an Bettkante",
               correctQuadrant: 3,
             },
@@ -469,6 +523,60 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
     },
   ],
   optionaleSteps: [
+    // 2.opt-0b — InlineWissen: Bristol Stool Scale
+    // Position: VOR Step opt-1 (Comparison: Stoma-Output und Bristol)
+    // Grund: "Bristol Stool Scale" wird in opt-1 als zentraler Vergleichsrahmen verwendet
+    {
+      stepId: "ce02-nguyen-beob-iw-bristol-stool-scale",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Heaton K.W., Lewis S.J. (1997): Stool Form Scale as a Useful Guide — Scandinavian Journal of Gastroenterology 32(9):920–924",
+        "I Care Pflege, 2. Aufl. (2020): Kap. Stuhlausscheidung",
+      ],
+      track: "vertiefung",
+      modus: "entdecker",
+      lernziel: "ce02-nguyen-beob-bristol-stool-scale",
+      tag: "pflege",
+      themaPrimaer: "stuhlausscheidung",
+      themenSekundaer: ["pflegedokumentation"],
+      transition:
+        "Bristol Stool Scale verstanden. Jetzt: Vergleiche den Stoma-Output in den verschiedenen post-OP-Phasen.",
+      contentC1: {
+        title: "Bristol Stool Scale — Stuhlkonsistenz standardisiert beurteilen",
+        body: "",
+        glossarBegriffe: ["Bristol Stool Scale", "Stuhlkonsistenz", "Stoma-Output"],
+      },
+      contentB1: {
+        title: "Bristol Stool Scale — Stuhl-Form beurteilen",
+        body: "",
+        glossarBegriffe: ["Bristol Stool Scale", "Stuhlkonsistenz"],
+      },
+      inlineWissen: {
+        bausteinRef: "bristol-stool-scale",
+        storyAufhaenger:
+          "Im Stoma-Beutel von Herrn Nguyen ist dünnflüssig-gelblicher Inhalt. Wie beschreibst du das fachlich? 'Dünnflüssig' ist ein guter Anfang — aber die Bristol Stool Scale gibt dir ein einheitliches Klassifikationssystem, das jede Pflegekraft weltweit versteht.",
+        kerntext:
+          "**Was ist die Bristol Stool Scale?** Eine 7-stufige Skala zur standardisierten Beurteilung der Stuhlkonsistenz. Entwickelt 1997 von Heaton & Lewis an der University of Bristol.\n\n**Die 7 Typen:**\n\n• **Typ 1:** Einzelne, harte Klumpen (wie Nüsse) — Obstipation\n• **Typ 2:** Wurstförmig, klumpig — leichte Obstipation\n• **Typ 3:** Wurstförmig mit Rissen — Normalbereich\n• **Typ 4:** Wurstförmig, glatt — **ideal** (Normalbereich)\n• **Typ 5:** Weiche Klümpchen mit scharfen Rändern — leichte Diarrhoe\n• **Typ 6:** Breiig, aufgeweichte Stückchen — Diarrhoe\n• **Typ 7:** Vollständig flüssig — starke Diarrhoe\n\n**Anwendung bei Herrn Nguyen:**\n\nAm 4. POD: Stoma-Output dünnflüssig-gelblich = **Bristol Typ 6–7** (Transitphase, normal für diesen Zeitpunkt). Mit Kostaufbau wird der Output in den nächsten Tagen Richtung Typ 4–5 wandern.\n\n**Warum Bristol bei Stoma?** Einheitliche Sprache in der Dokumentation. Statt 'ziemlich flüssig' schreibst du: 'Output Bristol Typ 6'. Das ist eindeutig, messbar und verlaufsbeurteilbar.\n\n**Wichtig:** Bei Kolostoma pendelt sich der Output bei Bristol 4–5 ein. Bei Ileostoma bleibt er daürhaft bei 6–7 (Dickdarm fehlt als Wasser-Resorbierer).",
+        kerntextB1:
+          "**Was ist die Bristol Stool Scale?** Eine Skala mit 7 Stufen für die Stuhlform.\n\n• **Typ 1–2:** Sehr fest (Verstopfung)\n• **Typ 3–4:** Normal (ideal)\n• **Typ 5–6:** Weich bis breiig (leichter Durchfall)\n• **Typ 7:** Ganz flüssig (Durchfall)\n\n**Bei Herrn Nguyen:** Am 4. Tag nach der OP ist der Output **Typ 6–7** (flüssig). Das ist normal in den ersten Tagen. Später wird es fester (Typ 4–5).\n\n**Warum nutzen wir diese Skala?** Statt 'ziemlich flüssig' schreibst du: 'Bristol Typ 6'. Das versteht jeder.",
+        faustregel:
+          "**Bristol 3–4 = normal. Bei Kolostoma post-OP: Typ 6–7 am Anfang, dann Richtung 4–5.** Eindeutig dokumentieren statt 'ziemlich flüssig'.",
+        faustregelB1:
+          "Bristol 3–4 ist normal. Am Anfang nach der OP ist Typ 6–7 normal. Es wird mit der Zeit fester.",
+        karteikarte: {
+          vorderseite: "Was ist die Bristol Stool Scale — und welcher Typ passt zu Herrn Nguyens Stoma-Output am 4. POD?",
+          rueckseite:
+            "Bristol Stool Scale: 7-stufige Klassifikation der Stuhlkonsistenz (Heaton/Lewis 1997). Typ 1–2 = Obstipation, 3–4 = normal, 5–7 = Diarrhoe. Herr Nguyen am 4. POD: Typ 6–7 (dünnflüssig, Transitphase = normal). Kolostoma: pendelt sich bei Typ 4–5 ein. Ileostoma: bleibt bei 6–7 (kein Dickdarm). **Bristol statt Prosa — dokumentiere eine Zahl statt 'ziemlich flüssig'.**",
+          vorderseiteB1: "Was bedeutet Bristol Stool Scale?",
+          rueckseiteB1:
+            "Eine Skala mit 7 Stufen für die Stuhlform. 1–2 = fest, 3–4 = normal, 5–7 = flüssig. Am 4. Tag ist Typ 6–7 bei Stoma normal.",
+        },
+      },
+    },
+
     // 2.opt-1 — Comparison: Stoma-Output und Bristol
     {
       stepId: "ce02-nguyen-beob-opt1-stoma-output-bristol",
@@ -520,7 +628,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
 
     // 2.opt-2 — Flipcard: Albumin erklärt
     {
-      stepId: "ce02-nguyen-beob-opt2-albumin-ernaehrung",
+      stepId: "ce02-nguyen-beob-opt2-albumin-ernährung",
       phase: 2,
       stepType: "flipcard",
       bloomLevel: 2,
@@ -565,7 +673,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
 
     // 2.opt-3 — Text (analogy): Mazerierung erklärt
     {
-      stepId: "ce02-nguyen-beob-opt3-mazerierung-erklaeren",
+      stepId: "ce02-nguyen-beob-opt3-mazerierung-erklären",
       phase: 2,
       stepType: "text",
       bloomLevel: 2,
@@ -578,7 +686,7 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
       displayFormat: "analogy",
       contentC1: {
         title: "Mazerierung: Wenn Stomainhalt auf die Haut trifft",
-        body: "Mazerierung ist die häufigste Haut-Komplikation bei Stoma-Patienten — und sie entsteht durch eine klare Ursache.\n\nAnalogievon: Stell dir vor, du trägst stundenlang nasse Socken. Die Fußhaut wird aufgeweicht, weißlich und verletzlich — winzige Belastungen, die du sonst nicht spürst, reißen jetzt die Haut ein. Genauso passiert es, wenn Stomainhalt (bei Kolostoma: leicht alkalisch, bei Ileostoma: enzymatisch aggressiv) dauerhaft auf die Haut rund ums Stoma gelangt. Die Haut verliert ihre Schutzbarriere. Es entstehen Mazeration, Rötung, Einrisse — ein Teufelskreis, weil die Stomaplatte dann nicht mehr dicht sitzt.\n\n**Was schützt?** 1) Passende Plattengröße (Stoma exakt ausgemessen), 2) Schutzpaste (füllt Unebenheiten), 3) Regelmäßiger Beutelwechsel (spätestens wenn 1/3–2/3 voll).",
+        body: "Mazerierung ist die häufigste Haut-Komplikation bei Stoma-Patienten — und sie entsteht durch eine klare Ursache.\n\nAnalogievon: Stell dir vor, du trägst stundenlang nasse Socken. Die Fußhaut wird aufgeweicht, weißlich und verletzlich — winzige Belastungen, die du sonst nicht spürst, reißen jetzt die Haut ein. Genauso passiert es, wenn Stomainhalt (bei Kolostoma: leicht alkalisch, bei Ileostoma: enzymatisch aggressiv) daürhaft auf die Haut rund ums Stoma gelangt. Die Haut verliert ihre Schutzbarriere. Es entstehen Mazeration, Rötung, Einrisse — ein Teufelskreis, weil die Stomaplatte dann nicht mehr dicht sitzt.\n\n**Was schützt?** 1) Passende Plattengröße (Stoma exakt ausgemessen), 2) Schutzpaste (füllt Unebenheiten), 3) Regelmäßiger Beutelwechsel (spätestens wenn 1/3–2/3 voll).",
         glossarBegriffe: ["Mazerierung", "Stomaplatte", "Schutzpaste"],
       },
       contentB1: {

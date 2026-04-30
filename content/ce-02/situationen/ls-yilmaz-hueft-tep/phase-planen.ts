@@ -8,15 +8,15 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
   phaseId: "ls-yilmaz-planen",
   phase: "planen",
   titel: "Planen & Priorisieren",
-  titelB1: "Was kommt zuerst?",
+  titelB1: "Was kommt zürst?",
   kontext:
-    "Du bist zurück im Stationszimmer. Du hast deine Beobachtungen notiert: Dekubitus Kategorie I am Steißbein, Thrombose-Risiko hoch (Wadenschmerz links auf Druck), Schmerz NRS 5–6 in Ruhe, erster Aufstehversuch heute notwendig (3. post-OP-Tag), Ehemann Mustafa anwesend ohne Deutschkenntnisse. Du besprichst kurz mit Frau Wendt: 'Gut gemacht. Jetzt musst du die Pflege für heute planen. Was ist die Reihenfolge? Was kommt zuerst?'",
+    "Du bist zurück im Stationszimmer. Du hast deine Beobachtungen notiert: Dekubitus Kategorie I am Steißbein, Thrombose-Risiko hoch (Wadenschmerz links auf Druck), Schmerz NRS 5–6 in Ruhe, erster Aufstehversuch heute notwendig (3. post-OP-Tag), Ehemann Mustafa anwesend ohne Deutschkenntnisse. Du besprichst kurz mit Frau Wendt: 'Gut gemacht. Jetzt musst du die Pflege für heute planen. Was ist die Reihenfolge? Was kommt zürst?'",
   kontextB1:
-    "Du bist kurz im Stationszimmer. Du weißt jetzt: Druckwunde Kategorie 1 am Steißbein. Thrombose-Risiko hoch. Schmerzen NRS 5–6. Heute soll sie aufstehen. Frau Wendt fragt dich: 'Was machst du zuerst?'",
+    "Du bist kurz im Stationszimmer. Du weißt jetzt: Druckwunde Kategorie 1 am Steißbein. Thrombose-Risiko hoch. Schmerzen NRS 5–6. Heute soll sie aufstehen. Frau Wendt fragt dich: 'Was machst du zürst?'",
   kernSteps: [
     // Step 3.1 — MC: Schmerzmittel VOR Mobilisation
     {
-      stepId: "ce02-yilmaz-plan-01-schmerz-zuerst",
+      stepId: "ce02-yilmaz-plan-01-schmerz-zürst",
       phase: 3,
       stepType: "mc",
       bloomLevel: 4,
@@ -32,8 +32,8 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
         glossarBegriffe: ["Analgesie", "Metamizol", "NRS", "Mobilisation", "Physiotherapie"],
       },
       contentB1: {
-        title: "Was machst du zuerst — bevor sie aufsteht?",
-        body: "Gestern hat der Aufstehversuch nicht geklappt — die Schmerzen waren zu stark (NRS 7). Heute willst du es besser machen. Was tust du zuerst?",
+        title: "Was machst du zürst — bevor sie aufsteht?",
+        body: "Gestern hat der Aufstehversuch nicht geklappt — die Schmerzen waren zu stark (NRS 7). Heute willst du es besser machen. Was tust du zürst?",
         glossarBegriffe: ["Schmerzmittel", "Mobilisation", "Physiotherapie"],
       },
       question: {
@@ -43,7 +43,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
             text: "Aufstehversuch direkt starten — Bewegung ist die beste Schmerztherapie",
             isCorrect: false,
             explanation:
-              "Bewegung kann Schmerz langfristig lindern — das stimmt. Aber ein NRS 7 beim ersten Aufstehversuch gestern zeigt: der Schmerz ist jetzt ein Hindernis. Ohne Analgesie wird Frau Yilmaz das Aufstehen erneut abbrechen — und das kostet sie Vertrauen und dich Zeit.",
+              "Bewegung kann Schmerz langfristig lindern — das stimmt. Aber ein NRS 7 beim ersten Aufstehversuch gestern zeigt: der Schmerz ist jetzt ein Hindernis. Ohne Analgesie wird Frau Yilmaz das Aufstehen erneut abbrechen — und das kostet sie Vertraün und dich Zeit.",
             explanationB1:
               "Bewegung hilft langfristig — stimmt. Aber gestern war der Schmerz zu stark. Ohne Schmerzmittel wird sie wieder abbrechen. Erst das Schmerzmittel — dann das Aufstehen.",
           },
@@ -53,7 +53,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
             explanation:
               "Das ist die Schlüsseleinsicht: Schmerzmittel vor Mobilisation. Ein Schmerzmittel mit 30-Minuten-Wirkzeit muss rechtzeitig gegeben werden. Ohne ausreichende Analgesie scheitert die Mobilisation erneut — wie gestern. Das ist kein weicher Hinweis, das ist Standard in der orthopädischen Pflege. Schmerzkontrolle ist die Voraussetzung für erfolgreiche Mobilisation, nicht umgekehrt.",
             explanationB1:
-              "Genau richtig. Das Schmerzmittel (Metamizol) braucht 30 Minuten bis es wirkt. Du prüfst zuerst: Wurde es heute Morgen gegeben? Wenn nicht: jetzt geben. Dann 30 Minuten warten. Dann aufstehen.",
+              "Genau richtig. Das Schmerzmittel (Metamizol) braucht 30 Minuten bis es wirkt. Du prüfst zürst: Wurde es heute Morgen gegeben? Wenn nicht: jetzt geben. Dann 30 Minuten warten. Dann aufstehen.",
           },
           {
             text: "Erst die Drainage entfernen, damit der Schlauch nicht zieht",
@@ -135,7 +135,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
 
     // Step 3.3 — Sorting: Maßnahmen priorisieren
     {
-      stepId: "ce02-yilmaz-plan-03-massnahmen-sortieren",
+      stepId: "ce02-yilmaz-plan-03-maßnahmen-sortieren",
       phase: 3,
       stepType: "sorting",
       bloomLevel: 4,
@@ -146,7 +146,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
       ],
       track: "basis",
       modus: "sortierstation",
-      lernziel: "ce02-yilmaz-plan-massnahmenreihenfolge",
+      lernziel: "ce02-yilmaz-plan-maßnahmenreihenfolge",
       tag: "pflege",
       contentC1: {
         title: "Maßnahmen für heute Vormittag — richtige Reihenfolge",
@@ -168,7 +168,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
           "Zimmer vorbereiten: Unterarmgehstützen bereitstellen, Betthöhe anpassen",
           "Frau Yilmaz über den Plan informieren, Angst ernst nehmen",
           "Ehemann Mustafa durch Frau Yilmaz kurz erklären lassen was geplant ist",
-          "Aufstehversuch: RR liegend messen → Beine über Bettkante (operiertes Bein zuerst) → Schellong (≥1 Min sitzen, RR sitzend) → dann aufstehen",
+          "Aufstehversuch: RR liegend messen → Beine über Bettkante (operiertes Bein zürst) → Schellong (≥1 Min sitzen, RR sitzend) → dann aufstehen",
           "Nach Aufstehen: Schmerz-Reassessment, Lagerung danach prüfen",
         ],
       },
@@ -214,7 +214,7 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
       quellen: ["§ 630f BGB (Behandlungsdokumentation)"],
       track: "vertiefung",
       modus: "entdecker",
-      lernziel: "ce02-yilmaz-plan-pflegeplan-vs-muendlich",
+      lernziel: "ce02-yilmaz-plan-pflegeplan-vs-mündlich",
       tag: "pflege",
       contentC1: {
         title: "Mündliche Absprache vs. schriftlicher Pflegeplan",

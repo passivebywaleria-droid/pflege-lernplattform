@@ -10,7 +10,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
   titel: "Evaluieren",
   titelB1: "Bewerten",
   kontext:
-    "Szenen-Sprung. 24 Stunden später, 06:42 Uhr. Frühdienst. Du stehst wieder auf demselben Flur, aber alles ist anders. Das Stationslicht ist hell, die Neonleuchten brummen leise und gleichmäßig, draußen vor den Fenstern dämmert es bläulich, eine Amsel hat irgendwo zu singen begonnen. Es riecht nach frischem Kaffee aus der Stationsküche, nach Toast und nach dem dezent süßen Duft des Pflegelotion-Spenders, den jemand neu aufgefüllt hat. Aus Zimmer 12 kommt das gedämpfte Klappern von Frühstücksgeschirr, Frau Schmidts Lachen, das Geräusch eines Verbandwagens, der über die Türschwelle rollt. Eine Reinigungskraft schiebt einen Wagen mit Mopps vorbei, nickt dir zu. Du hast zu Hause nicht gut geschlafen. Bilder sind dir geblieben — Frau M. am Boden, ihre Hand in deiner, der Satz 'Sind Sie böse?'. Du hast lange in der U-Bahn aus dem Fenster gesehen und überlegt, ob du etwas hättest anders machen können, früher, schneller, ruhiger. Frau Keller steht jetzt neben dir am Stationstresen, hat schon eine Tasse Kaffee in der Hand, ihre Augen sind ruhig, fast warm. 'Komm', sagt sie, 'wir gucken zusammen.' Auf dem Bildschirm liest du die Übergabe der Spätschicht: Zolpidem wurde gegen 09:00 vom Stationsarzt abgesetzt, neuer Eintrag mit Begründung steht im Verlauf. Nachtlicht hat über Nacht gebrannt. Toilettenstuhl wurde einmal um 02:50 genutzt — Frau M. hat geklingelt, die Spätschicht-Schülerin war innerhalb von 90 Sekunden im Zimmer. Vitalzeichen stabil. Schmerz NRS 2 morgens, keine neuen Auffälligkeiten, kein zweiter Sturz. Du gehst mit Frau Keller in Zimmer 14. Die Tür steht halb offen, das Morgenlicht fällt durchs Fenster auf die Bettdecke. Frau M. sitzt aufrecht im Bett, die Brille wieder auf der Nase — irgendjemand hat den verbogenen Bügel zurechtgedrückt — eine Tasse Tee in der Hand, sie lächelt vorsichtig, als sie dich sieht. Ihre Haare sind frisch gekämmt. 'Sie sind die von der Nacht', sagt sie. 'Sie haben geklingelt', sagst du. Sie nickt: 'Ja. Es ging.' Drei Worte, und du spürst, wie etwas Großes in dir aufatmet, ein Knoten in der Brust, der sich löst. Aber Routine ist das nicht. Jetzt brauchst du den klaren Blick zurück: Was von dem, was ihr in der Nacht geplant und durchgeführt habt, hat tatsächlich gewirkt? Was war eher Aktivismus, gut gemeint, aber überflüssig — vielleicht sogar belastend für die Patientin? Und was fehlt noch — Physiotherapie, HCT-Review, Hüftprotektor-Gespräch mit der Tochter, das Entlass-Management? Reflexion ist kein Luxus, sie ist Teil deines Berufs. Frau Keller wartet darauf, dass du das jetzt strukturiert benennst. Und du selbst willst es auch — für die nächste Schicht, für die nächste Frau M., für dich.",
+    "Szenen-Sprung. 24 Stunden später, 06:42 Uhr. Frühdienst. Du stehst wieder auf demselben Flur, aber alles ist anders. Das Stationslicht ist hell, die Neonleuchten brummen leise und gleichmäßig, draußen vor den Fenstern dämmert es bläulich, eine Amsel hat irgendwo zu singen begonnen. Es riecht nach frischem Kaffee aus der Stationsküche, nach Toast und nach dem dezent süßen Duft des Pflegelotion-Spenders, den jemand neu aufgefüllt hat. Aus Zimmer 12 kommt das gedämpfte Klappern von Frühstücksgeschirr, Frau Schmidts Lachen, das Geräusch eines Verbandwagens, der über die Türschwelle rollt. Eine Reinigungskraft schiebt einen Wagen mit Mopps vorbei, nickt dir zu. Du hast zu Hause nicht gut geschlafen. Bilder sind dir geblieben — Frau M. am Boden, ihre Hand in deiner, der Satz 'Sind Sie böse?'. Du hast lange in der U-Bahn aus dem Fenster gesehen und überlegt, ob du etwas hättest anders machen können, früher, schneller, ruhiger. Frau Keller steht jetzt neben dir am Stationstresen, hat schon eine Tasse Kaffee in der Hand, ihre Augen sind ruhig, fast warm. 'Komm', sagt sie, 'wir gucken zusammen.' Auf dem Bildschirm liest du die Übergabe der Spätschicht: Zolpidem wurde gegen 09:00 vom Stationsarzt abgesetzt, neür Eintrag mit Begründung steht im Verlauf. Nachtlicht hat über Nacht gebrannt. Toilettenstuhl wurde einmal um 02:50 genutzt — Frau M. hat geklingelt, die Spätschicht-Schülerin war innerhalb von 90 Sekunden im Zimmer. Vitalzeichen stabil. Schmerz NRS 2 morgens, keine neün Auffälligkeiten, kein zweiter Sturz. Du gehst mit Frau Keller in Zimmer 14. Die Tür steht halb offen, das Morgenlicht fällt durchs Fenster auf die Bettdecke. Frau M. sitzt aufrecht im Bett, die Brille wieder auf der Nase — irgendjemand hat den verbogenen Bügel zurechtgedrückt — eine Tasse Tee in der Hand, sie lächelt vorsichtig, als sie dich sieht. Ihre Haare sind frisch gekämmt. 'Sie sind die von der Nacht', sagt sie. 'Sie haben geklingelt', sagst du. Sie nickt: 'Ja. Es ging.' Drei Worte, und du spürst, wie etwas Großes in dir aufatmet, ein Knoten in der Brust, der sich löst. Aber Routine ist das nicht. Jetzt brauchst du den klaren Blick zurück: Was von dem, was ihr in der Nacht geplant und durchgeführt habt, hat tatsächlich gewirkt? Was war eher Aktivismus, gut gemeint, aber überflüssig — vielleicht sogar belastend für die Patientin? Und was fehlt noch — Physiotherapie, HCT-Review, Hüftprotektor-Gespräch mit der Tochter, das Entlass-Management? Reflexion ist kein Luxus, sie ist Teil deines Berufs. Frau Keller wartet darauf, dass du das jetzt strukturiert benennst. Und du selbst willst es auch — für die nächste Schicht, für die nächste Frau M., für dich.",
   kontextB1:
     "24 Stunden später. 06:42 Uhr. Frühdienst. Du stehst wieder auf dem Flur. Alles ist anders. Das Licht ist hell. Draußen wird es langsam blau. Eine Amsel singt. Es riecht nach Kaffee und Toast. Du hast zuhause schlecht geschlafen. Du denkst noch an Frau M. — wie sie am Boden lag, wie sie deine Hand hielt. Frau Keller steht neben dir. Sie hat eine Tasse Kaffee. Sie sagt: 'Komm, wir gucken zusammen.' Du liest die Übergabe von der Spätschicht. Zolpidem wurde abgesetzt. Nachtlicht hat gebrannt. Toilettenstuhl wurde benutzt — Frau M. hat geklingelt um 02:50. Vitalzeichen sind stabil. Schmerzen: 2 von 10. Du gehst mit Frau Keller zu Frau M. Sie sitzt im Bett. Sie hat ihre Brille auf. Sie trinkt Tee. Sie lächelt vorsichtig. Sie sagt: 'Sie sind die von der Nacht.' Du sagst: 'Sie haben geklingelt.' Sie nickt: 'Ja. Es ging.' Etwas in dir wird ruhig. Aber jetzt ist die Frage: Was hat wirklich geholfen? Was war zu viel? Was fehlt noch — zum Beispiel Physiotherapie, Hüftprotektor, HCT-Review? Du musst es klar sagen. Frau Keller wartet. Du selbst willst es auch wissen — für die nächste Schicht und für dich.",
   kernSteps: [
@@ -32,7 +32,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
       modus: "entdecker",
       lernziel: "ce02-frau-m-eval-reassessment",
       tag: "pflege",
-      transition: "24 Stunden spaeter. Was hat funktioniert?",
+      transition: "24 Stunden später. Was hat funktioniert?",
       themaPrimaer: "sturz-prophylaxe",
       themenSekundaer: ["pflegeprozess", "pflegedokumentation"],
       contentC1: {
@@ -60,7 +60,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
         storyAufhaengerB1:
           "Frau M. sagt: \\\"Schmerzen sind besser, NRS 2.\\\" Aber sie sagt oft, dass alles ok ist. Wie weißt du, ob es wirklich besser ist?",
         kerntext:
-          "**Re-Assessment ist nicht nur Score-Wiederholung.** Du prüfst:\n\n• **Hat die Intervention gewirkt?** (NRS-Reduktion ≥30 % oder absolut auf < 4 = Erfolg laut DGSS 2023)\n\n• **War der Wirkbeginn zeitlich richtig erwartet?** (oral 30 Min, i.v. 15 Min, transdermal 30-60 Min)\n\n• **Stimmt der subjektive Score mit objektiven Zeichen?** (Mimik, Atemfrequenz, Bewegungs-Toleranz, Schlafqualität)\n\n• **Was war die Nebenwirkung?** (z.B. Sedierung, Übelkeit, Obstipation bei Opioiden)\n\n**Bei Frau M. heute Morgen:**\n\n• **NRS 2** (von 4-5 vorher) = Reduktion 2-3 Punkte = klarer Erfolg.\n\n• Aber: Sie ist auch die, die in Phase 1 \\\"etwas unangenehm\\\" für NRS 8 sagte → **Bias prüfen**.\n\n• Objektive Hinweise: Sie sitzt aufrecht, lächelt vorsichtig, trinkt Tee. Atmung ruhig. Bewegung links nicht eingeschränkt → konsistent mit niedrigem Schmerz.\n\n**Pflegerische Konsequenz:**\n\n• Schmerztherapie weiter so + 24h-Beobachtung + nicht reduzieren bevor Mobilisations-Belastung getestet ist (NRS bei Bewegung kann höher sein als in Ruhe).\n\n• Wenn Mobilisation NRS > 4 verursacht → Bedarfsanalgesie 30 Min vor nächster Mobi.\n\n**Wichtige Erinnerung:** Re-Assessment auch bei nicht-medikamentösen Maßnahmen (Lagerung, Eis, Wärme) — gleiche Logik, andere Zeiten.",
+          "**Re-Assessment ist nicht nur Score-Wiederholung.** Du prüfst:\n\n• **Hat die Intervention gewirkt?** (NRS-Reduktion ≥30 % oder absolut auf < 4 = Erfolg laut DGSS 2023)\n\n• **War der Wirkbeginn zeitlich richtig erwartet?** (oral 30 Min, i.v. 15 Min, transdermal 30-60 Min)\n\n• **Stimmt der subjektive Score mit objektiven Zeichen?** (Mimik, Atemfreqünz, Bewegungs-Toleranz, Schlafqualität)\n\n• **Was war die Nebenwirkung?** (z.B. Sedierung, Übelkeit, Obstipation bei Opioiden)\n\n**Bei Frau M. heute Morgen:**\n\n• **NRS 2** (von 4-5 vorher) = Reduktion 2-3 Punkte = klarer Erfolg.\n\n• Aber: Sie ist auch die, die in Phase 1 \\\"etwas unangenehm\\\" für NRS 8 sagte → **Bias prüfen**.\n\n• Objektive Hinweise: Sie sitzt aufrecht, lächelt vorsichtig, trinkt Tee. Atmung ruhig. Bewegung links nicht eingeschränkt → konsistent mit niedrigem Schmerz.\n\n**Pflegerische Konseqünz:**\n\n• Schmerztherapie weiter so + 24h-Beobachtung + nicht reduzieren bevor Mobilisations-Belastung getestet ist (NRS bei Bewegung kann höher sein als in Ruhe).\n\n• Wenn Mobilisation NRS > 4 verursacht → Bedarfsanalgesie 30 Min vor nächster Mobi.\n\n**Wichtige Erinnerung:** Re-Assessment auch bei nicht-medikamentösen Maßnahmen (Lagerung, Eis, Wärme) — gleiche Logik, andere Zeiten.",
         kerntextB1:
           "**Re-Assessment ist mehr als nochmal Schmerz fragen.** Du prüfst 4 Dinge:\n\n• **Hat die Behandlung geholfen?** (NRS muss um 30 % runter oder unter 4 sein = Erfolg laut DGSS 2023)\n\n• **War der Zeitpunkt richtig?** (Tablette wirkt nach 30 Min, Spritze nach 15 Min, Pflaster nach 30-60 Min)\n\n• **Passt der Score zu dem, was du siehst?** (Gesicht, Atmung, Bewegung, Schlaf)\n\n• **Gibt es Nebenwirkungen?** (Müdigkeit, Übelkeit, Verstopfung)\n\n**Bei Frau M. heute Morgen:**\n\n• **NRS 2** (vorher 4-5) = 2-3 Punkte besser. Klarer Erfolg.\n\n• Aber: Sie hat in Phase 1 NRS 4 als \\\"etwas unangenehm\\\" gesagt → **Bist du sicher?**\n\n• Was du siehst: Sie sitzt aufrecht, lächelt, trinkt Tee. Atmung normal. → Passt zu wenig Schmerz.\n\n**Was du jetzt tust:**\n\n• Schmerztherapie weiterlaufen lassen + 24h beobachten.\n\n• Nicht zu früh reduzieren — bei Bewegung tut es vielleicht mehr weh als in Ruhe.\n\n• Wenn Mobilisation NRS > 4 macht → 30 Min vorher Bedarfs-Schmerzmittel.\n\n**Wichtig:** Re-Assessment auch bei nicht-Medikamenten (Lagerung, Eis, Wärme).",
         faustregel:
@@ -70,35 +70,35 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
         spektrum: [
           {
             patientName: "Lukas (Verbrühung, KUSS)",
-            situationsId: "ls-lukas-verbruehung",
+            situationsId: "ls-lukas-verbrühung",
             hauptfaktor: "Re-Assessment mit KUSS statt NRS",
             kurzbeschreibung:
               "Bei Säuglingen/Kleinkindern (< 4 J.) Re-Assessment mit KUSS-Skala. Erfolg = KUSS-Reduktion auf < 4. Beobachtung wichtig wegen fehlender verbaler Selbstauskunft.",
           },
           {
-            patientName: "Herr Bauer (Demenz)",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür (Demenz)",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "Re-Assessment mit BESD/PAINAD",
             kurzbeschreibung:
               "Bei fortgeschrittener Demenz keine NRS möglich — BESD oder PAINAD bewertet Atmung, Lautäußerung, Mimik, Körpersprache, Trostbarkeit. Re-Assessment alle 30-60 Min nach Intervention.",
           },
           {
             patientName: "Frau Yilmaz (Hüft-TEP)",
-            situationsId: "ls-yilmaz-hueft-tep",
+            situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "Re-Assessment in Ruhe + Bewegung",
             kurzbeschreibung:
               "Bei post-OP-Patient(inn)en NRS in Ruhe + Bewegung getrennt erheben. Mobilisation gelingt nur bei NRS-Bewegung ≤ 3-4 — sonst Analgesie 30 Min vor Mobi.",
           },
         ],
         sonstBox:
-          "Andere Re-Assessment-Tools die du kennen solltest: **VAS** (visuelle Analogskala 10 cm), **Faces Pain Scale** (Smileys, Kinder + Sprachbarriere), **CPOT** (intensivpflichtige nicht-kommunikationsfähige Patient(inn)en). Mehr in DNQP Schmerzmanagement 2020 (akut + chronisch).",
+          "Andere Re-Assessment-Tools die du kennen solltest: **VAS** (visülle Analogskala 10 cm), **Faces Pain Scale** (Smileys, Kinder + Sprachbarriere), **CPOT** (intensivpflichtige nicht-kommunikationsfähige Patient(inn)en). Mehr in DNQP Schmerzmanagement 2020 (akut + chronisch).",
         sonstBoxB1:
           "Andere Schmerz-Skalen für Re-Assessment: **VAS** (Strich auf einer Linie), **Smiley-Skala** (für Kinder), **CPOT** (für Intensivpatienten die nicht sprechen können).",
         karteikarte: {
           vorderseite:
             "Frau M. (Sturz vor 24h, NRS 4-5 → 2 nach Schmerzmittel) — wie machst du Re-Assessment, was sind Erfolgs-Kriterien?",
           rueckseite:
-            "Re-Assessment nach DNQP/DGSS:\n\n4 Punkte:\n1. Wirkung? (NRS-Reduktion ≥ 30 % oder < 4 = Erfolg)\n2. Zeitpunkt richtig? (oral 30 Min, i.v. 15 Min, transdermal 30-60 Min)\n3. Score plausibel mit objektiven Zeichen? (Mimik, Atmung, Bewegung)\n4. Nebenwirkungen?\n\nBei Frau M.: NRS 2 = 6 Punkte Reduktion = Erfolg. Aber Bias-Prüfung wegen \\\"runterspielenden\\\"-Stil → Mimik/Atmung/Bewegung kongruent → ok.\n\nFaustregel: Bei runterspielenden Patient(inn)en immer Score + objektive Zeichen kombinieren.",
+            "Re-Assessment nach DNQP/DGSS:\n\n4 Punkte:\n1. Wirkung? (NRS-Reduktion ≥ 30 % oder < 4 = Erfolg)\n2. Zeitpunkt richtig? (oral 30 Min, i.v. 15 Min, transdermal 30-60 Min)\n3. Score plausibel mit objektiven Zeichen? (Mimik, Atmung, Bewegung)\n4. Nebenwirkungen?\n\nBei Frau M.: NRS 2 = 6 Punkte Reduktion = Erfolg. Aber Bias-Prüfung wegen \\\"runterspielenden\\\"-Stil → Mimik/Atmung/Bewegung kongrünt → ok.\n\nFaustregel: Bei runterspielenden Patient(inn)en immer Score + objektive Zeichen kombinieren.",
         },
       },
     },
@@ -115,7 +115,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
       modus: "sortierstation",
       lernziel: "ce02-frau-m-eval-reassessment",
       tag: "pflege",
-      transition: "Frau M. sitzt im Bett. Sie trinkt Tee. Sie laechelt.",
+      transition: "Frau M. sitzt im Bett. Sie trinkt Tee. Sie lächelt.",
       contentC1: {
         title: "Maßnahmen-Reassessment",
         body: "Du schaust dir die umgesetzten Maßnahmen an und ordnest sie drei Kategorien zu: (1) **Hat gewirkt** — ist eingetreten und hat Frau M. geholfen. (2) **War überflüssig** — hätte man weglassen können. (3) **Fehlt noch** — muss als Nächstes gemacht werden.",
@@ -173,7 +173,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-frau-m-eval-patientensicht",
       tag: "pflege",
-      transition: "Wie sicher fuehlst du dich jetzt — nach dieser Nacht?",
+      transition: "Wie sicher fühlst du dich jetzt — nach dieser Nacht?",
       displayFormat: "quote",
       contentC1: {
         title: "Was Frau M. am Morgen sagt",

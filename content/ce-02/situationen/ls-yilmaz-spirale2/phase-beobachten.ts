@@ -10,9 +10,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
   phaseId: "ls-yilmaz-spirale2-beobachten",
   phase: "beobachten",
   titel: "Beobachten — Dekubitus Grad II erkennen + Braden-Skala",
-  titelB1: "Schauen — Was ist die Wunde? Warum ist sie entstanden?",
+  titelB1: "Schaün — Was ist die Wunde? Warum ist sie entstanden?",
   kontext:
-    "Du hilfst Frau Yilmaz, sich auf die Seite zu legen, damit du das Sakrum inspizieren kannst. Mustafa schaut besorgt zu. Bevor du startest schaltest du das Zimmerlicht und die Bettleuchte ein — Tageslicht reicht im Halbdunkel des Frühdienstes nicht für eine Wundinspektion. Die Handlampe nutzt du zusätzlich für die Detailansicht. Du ziehst die Schutzhandschuhe an. Was du siehst, ist nicht mehr das, was die Kollegin als 'Rötung' bezeichnet hat. Du siehst zuerst die Wunde — bevor dir jemand erklärt, was ein Dekubitus Kategorie II ist. Das ist bewusst so.",
+    "Du hilfst Frau Yilmaz, sich auf die Seite zu legen, damit du das Sakrum inspizieren kannst. Mustafa schaut besorgt zu. Bevor du startest schaltest du das Zimmerlicht und die Bettleuchte ein — Tageslicht reicht im Halbdunkel des Frühdienstes nicht für eine Wundinspektion. Die Handlampe nutzt du zusätzlich für die Detailansicht. Du ziehst die Schutzhandschuhe an. Was du siehst, ist nicht mehr das, was die Kollegin als 'Rötung' bezeichnet hat. Du siehst zürst die Wunde — bevor dir jemand erklärt, was ein Dekubitus Kategorie II ist. Das ist bewusst so.",
   kontextB1:
     "Du hilfst Frau Yilmaz, sich auf die Seite zu legen. Mustafa schaut zu. Du machst das Zimmerlicht und die Bettleuchte an — du brauchst gutes Licht für die Wunde. Die Handlampe nutzt du extra für Details. Du ziehst Handschuhe an. Du schaust dir die Haut am Steißbein an. Was du siehst, ist mehr als eine Rötung.",
   kernSteps: [
@@ -39,59 +39,59 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Wie entsteht ein Dekubitus?",
         body: "",
-        glossarBegriffe: ["Ischaemie", "Scherkraefte", "Reperfusionsschaden", "Gewebehypoxie"],
+        glossarBegriffe: ["Ischämie", "Scherkräfte", "Reperfusionsschaden", "Gewebehypoxie"],
       },
       contentB1: {
         title: "Warum entsteht ein Dekubitus?",
         body: "",
-        glossarBegriffe: ["Ischaemie", "Scherkraefte"],
+        glossarBegriffe: ["Ischämie", "Scherkräfte"],
       },
       inlineWissen: {
         bausteinRef: "dekubitus-prophylaxe-entstehung",
         storyAufhaenger:
-          "Frau Yilmaz liegt seit 14 Tagen ueberwiegend auf dem Ruecken. Ihr Koerpergewicht (BMI 34) drueckt auf das Sakrum — den Knochenvorsprung am unteren Ruecken. Die Haut und das Gewebe dazwischen werden zusammengedrueckt wie ein Schwamm. Was passiert dabei genau?",
+          "Frau Yilmaz liegt seit 14 Tagen ueberwiegend auf dem Rücken. Ihr Körpergewicht (BMI 34) drückt auf das Sakrum — den Knochenvorsprung am unteren Rücken. Die Haut und das Gewebe dazwischen werden zusammengedrückt wie ein Schwamm. Was passiert dabei genau?",
         storyAufhaengerB1:
-          "Frau Yilmaz liegt seit 14 Tagen meist auf dem Ruecken. Ihr Koerpergewicht drueckt auf das Steissbein. Was passiert mit der Haut dabei?",
+          "Frau Yilmaz liegt seit 14 Tagen meist auf dem Rücken. Ihr Körpergewicht drückt auf das Steissbein. Was passiert mit der Haut dabei?",
         kerntext:
-          "**Das Grundprinzip:** Wenn Gewebe zwischen Knochen und Unterlage laenger als toleriert zusammengedrueckt wird, entsteht **Ischaemie** — die Blutversorgung wird unterbrochen.\n\n**3 Mechanismen wirken zusammen:**\n\n• **Druck** — Das Koerpergewicht presst Haut und Gewebe auf den Knochen. Je hoeher das Gewicht (Adipositas) und je kleiner die Auflageflaeche (Knochenvorsprung), desto hoeher der lokale Druck.\n\n• **Scherkraefte** — Beim Hochrutschen im Bett verschieben sich Hautschichten gegeneinander. Das Gewebe wird nicht nur gedrueckt, sondern auch gezogen. Bei Frau Yilmaz: Scherkraefte beim Transfer und beim Rollator-Gehen.\n\n• **Zeit** — Einzelner Druck schadet wenig. Dauerhafter Druck ueber Stunden toetet Gewebe. Deshalb ist der **Umlagerungsrhythmus** so entscheidend: alle 2 Stunden Druck-Entlastung.\n\n**Bei Frau Yilmaz kamen 4 Verstaerker hinzu:**\nNeuropathie (kein Schmerzsignal), Diabetes (schlechte Durchblutung), Inkontinenz (Mazeration), und die gelegentlich abgelehnte Umlagerung.",
+          "**Das Grundprinzip:** Wenn Gewebe zwischen Knochen und Unterlage länger als toleriert zusammengedrückt wird, entsteht **Ischämie** — die Blutversorgung wird unterbrochen.\n\n**3 Mechanismen wirken zusammen:**\n\n• **Druck** — Das Körpergewicht presst Haut und Gewebe auf den Knochen. Je höher das Gewicht (Adipositas) und je kleiner die Auflagefläche (Knochenvorsprung), desto höher der lokale Druck.\n\n• **Scherkräfte** — Beim Hochrutschen im Bett verschieben sich Hautschichten gegeneinander. Das Gewebe wird nicht nur gedrückt, sondern auch gezogen. Bei Frau Yilmaz: Scherkräfte beim Transfer und beim Rollator-Gehen.\n\n• **Zeit** — Einzelner Druck schadet wenig. Daürhafter Druck ueber Stunden tötet Gewebe. Deshalb ist der **Umlagerungsrhythmus** so entscheidend: alle 2 Stunden Druck-Entlastung.\n\n**Bei Frau Yilmaz kamen 4 Verstärker hinzu:**\nNeuropathie (kein Schmerzsignal), Diabetes (schlechte Durchblutung), Inkontinenz (Mazeration), und die gelegentlich abgelehnte Umlagerung.",
         kerntextB1:
-          "**Das Grundprinzip:** Wenn die Haut zu lange gedrueckt wird, bekommt sie kein Blut mehr. Das nennt man **Ischaemie**.\n\n**3 Dinge wirken zusammen:**\n\n• **Druck** — Das Koerpergewicht drueckt auf den Knochen. Je schwerer der Mensch, desto mehr Druck.\n\n• **Scherkraefte** — Beim Hochrutschen im Bett wird die Haut gezogen und gedrueckt gleichzeitig.\n\n• **Zeit** — Kurzer Druck ist nicht schlimm. Langer Druck (Stunden) toetet Gewebe. Deshalb: alle 2 Stunden umlagern.\n\n**Bei Frau Yilmaz kam dazu:** Nerven spueren nichts (Neuropathie), Diabetes (schlechte Durchblutung), Feuchtigkeit (Inkontinenz-Pad), und sie wollte manchmal nicht umgelagert werden.",
+          "**Das Grundprinzip:** Wenn die Haut zu lange gedrückt wird, bekommt sie kein Blut mehr. Das nennt man **Ischämie**.\n\n**3 Dinge wirken zusammen:**\n\n• **Druck** — Das Körpergewicht drückt auf den Knochen. Je schwerer der Mensch, desto mehr Druck.\n\n• **Scherkräfte** — Beim Hochrutschen im Bett wird die Haut gezogen und gedrückt gleichzeitig.\n\n• **Zeit** — Kurzer Druck ist nicht schlimm. Langer Druck (Stunden) tötet Gewebe. Deshalb: alle 2 Stunden umlagern.\n\n**Bei Frau Yilmaz kam dazu:** Nerven spüren nichts (Neuropathie), Diabetes (schlechte Durchblutung), Feuchtigkeit (Inkontinenz-Pad), und sie wollte manchmal nicht umgelagert werden.",
         faustregel:
-          "Dekubitus = Druck x Zeit. Scherkraefte und Feuchtigkeit verstaerken den Schaden. Umlagerung bricht die Gleichung.",
+          "Dekubitus = Druck x Zeit. Scherkräfte und Feuchtigkeit verstärken den Schaden. Umlagerung bricht die Gleichung.",
         faustregelB1:
           "Dekubitus entsteht durch Druck ueber lange Zeit. Umlagern alle 2 Stunden unterbricht den Druck.",
         spektrum: [
           {
-            patientName: "Herr Bauer",
-            situationsId: "ls-bauer-demenz-sturz",
-            hauptfaktor: "Immobilitaet durch Demenz",
+            patientName: "Herr Baür",
+            situationsId: "ls-baür-demenz-sturz",
+            hauptfaktor: "Immobilität durch Demenz",
             kurzbeschreibung:
-              "Er bewegt sich nachts nicht, weil er nicht versteht, dass er sich drehen muss. Kein Schmerzsignal durch kognitive Einschraenkung — anderer Mechanismus als Neuropathie, gleiches Ergebnis.",
+              "Er bewegt sich nachts nicht, weil er nicht versteht, dass er sich drehen muss. Kein Schmerzsignal durch kognitive Einschränkung — anderer Mechanismus als Neuropathie, gleiches Ergebnis.",
           },
           {
             patientName: "Frau Schmidt",
             situationsId: "ls-schmidt-adipositas",
             hauptfaktor: "Hoher lokaler Druck durch BMI 38",
             kurzbeschreibung:
-              "Mehr Koerpergewicht = mehr Druck auf Knochenvorspruenge. Standard-Matratzen reichen bei BMI > 35 oft nicht — Schwerlast-Matratze noetig.",
+              "Mehr Körpergewicht = mehr Druck auf Knochenvorsprünge. Standard-Matratzen reichen bei BMI > 35 oft nicht — Schwerlast-Matratze nötig.",
           },
           {
             patientName: "Herr Petrov",
             situationsId: "ls-petrov-schlaganfall",
-            hauptfaktor: "Scherkraefte durch Spastik",
+            hauptfaktor: "Scherkräfte durch Spastik",
             kurzbeschreibung:
-              "Spastik in der betroffenen Seite erzeugt unkontrollierte Scherkraefte. Er rutscht im Bett, ohne es zu merken. Bobath-Lagerung reduziert Spastik und damit Scherkraefte.",
+              "Spastik in der betroffenen Seite erzeugt unkontrollierte Scherkräfte. Er rutscht im Bett, ohne es zu merken. Bobath-Lagerung reduziert Spastik und damit Scherkräfte.",
           },
         ],
         sonstBox:
-          "Der **Reperfusionsschaden**: Wenn nach langer Ischaemie das Blut zurueckkehrt, entsteht paradoxerweise zusaetzlicher Schaden durch freie Sauerstoffradikale. Deshalb ist kurze regelmaessige Entlastung (Mikrobewegungen alle 15-20 Min) besser als seltene grosse Umlagerungen.",
+          "Der **Reperfusionsschaden**: Wenn nach langer Ischämie das Blut zurückkehrt, entsteht paradoxerweise zusätzlicher Schaden durch freie Saürstoffradikale. Deshalb ist kurze regelmässige Entlastung (Mikrobewegungen alle 15-20 Min) besser als seltene grosse Umlagerungen.",
         sonstBoxB1:
-          "Wenn nach langem Druck das Blut zurueckkommt, kann das Gewebe nochmal geschaedigt werden (Reperfusionsschaden). Deshalb sind kleine Bewegungen zwischendurch auch wichtig — nicht nur die grosse Umlagerung alle 2 Stunden.",
+          "Wenn nach langem Druck das Blut zurückkommt, kann das Gewebe nochmal geschädigt werden (Reperfusionsschaden). Deshalb sind kleine Bewegungen zwischendurch auch wichtig — nicht nur die grosse Umlagerung alle 2 Stunden.",
         karteikarte: {
           vorderseite:
-            "Erklaere die 3 Mechanismen der Dekubitus-Entstehung am Beispiel von Frau Yilmaz (BMI 34, Sakrum, 14 Tage post-OP).",
+            "Erkläre die 3 Mechanismen der Dekubitus-Entstehung am Beispiel von Frau Yilmaz (BMI 34, Sakrum, 14 Tage post-OP).",
           rueckseite:
-            "1) Druck: Koerpergewicht (BMI 34) auf Sakrum (Knochenvorsprung). 2) Scherkraefte: Verschiebung der Hautschichten beim Transfer/Hochrutschen. 3) Zeit: 14 Tage ueberwiegend Rueckenlage, gelegentlich Umlagerung abgelehnt.\n\nVerstaerker: Neuropathie (kein Schmerzsignal), Diabetes (Mikrozirkulation), Inkontinenz (Mazeration).\n\nSpektrum: Bauer (Demenz-Immobilitaet), Schmidt (BMI 38), Petrov (Spastik-Scherkraefte).\n\nFaustregel: **Dekubitus = Druck x Zeit. Umlagerung bricht die Gleichung.**",
+            "1) Druck: Körpergewicht (BMI 34) auf Sakrum (Knochenvorsprung). 2) Scherkräfte: Verschiebung der Hautschichten beim Transfer/Hochrutschen. 3) Zeit: 14 Tage ueberwiegend Rückenlage, gelegentlich Umlagerung abgelehnt.\n\nVerstärker: Neuropathie (kein Schmerzsignal), Diabetes (Mikrozirkulation), Inkontinenz (Mazeration).\n\nSpektrum: Baür (Demenz-Immobilität), Schmidt (BMI 38), Petrov (Spastik-Scherkräfte).\n\nFaustregel: **Dekubitus = Druck x Zeit. Umlagerung bricht die Gleichung.**",
         },
       },
     },
@@ -155,7 +155,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
               y: 70,
               radius: 12,
               label:
-                "Mazerierte Umgebungshaut — aufgeweichte Hornschicht durch Dauerfeuchte (Inkontinenz-Pad)",
+                "Mazerierte Umgebungshaut — aufgeweichte Hornschicht durch Daürfeuchte (Inkontinenz-Pad)",
             },
           ],
         },
@@ -190,15 +190,15 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
       inlineWissen: {
         bausteinRef: "dekubitus-prophylaxe-wundbeurteilung",
         storyAufhaenger: "Du hast gerade die Wunde auf dem Bild markiert. Jetzt die Fachbegriffe dazu: Was genau sind Wundrand, Wundgrund, und was unterscheidet Kategorie I von II?",
-        storyAufhaengerB1: "Du hast die Wunde gesehen. Jetzt die Fachwoerter: Was ist Wundrand? Was ist Wundgrund?",
-        kerntext: "**Wundgrund** = die Oberflaeche innerhalb der Wunde. Farbe zeigt den Zustand:\n\u2022 Rosa-rot (Granulation) = Heilung\n\u2022 Gelblich (Fibrin) = Reinigungsphase\n\u2022 Schwarz (Nekrose) = totes Gewebe\n\n**Wundrand** = die Grenze zwischen Wunde und gesunder Haut. Mazeriert = aufgeweicht durch Feuchtigkeit. Epithelialisierend = neue Haut waechst nach.\n\n**Erosion** = flacher, oberflaechlicher Hautverlust (Epidermis). Typisch fuer Kategorie II.\n\n**Kategorie I** = Intakte Haut, nicht-wegdrueckbare Roetung. Fingertest positiv. **Hautbarriere** (= **Hornschicht** als oberste Schutzschicht) noch intakt.\n\n**Kategorie II** = Teilverlust der Haut. Flache Erosion oder Blase. Hornschicht durchbrochen. Ab hier: Wundversorgung statt Prophylaxe.",
-        kerntextB1: "**Wundgrund** = die Flaeche in der Wunde. Farbe zeigt den Zustand: Rosa = heilt. Gelb = reinigt sich. Schwarz = totes Gewebe.\n\n**Wundrand** = Grenze zwischen Wunde und gesunder Haut. Aufgeweicht = mazeriert.\n\n**Erosion** = flache offene Stelle. Typisch fuer Kategorie 2.\n\n**Kategorie 1** = Haut noch ganz. Rote Stelle. **Hautbarriere** (= **Hornschicht**) intakt.\n**Kategorie 2** = Haut offen. Hornschicht kaputt. Jetzt braucht es Wundversorgung.",
+        storyAufhaengerB1: "Du hast die Wunde gesehen. Jetzt die Fachwörter: Was ist Wundrand? Was ist Wundgrund?",
+        kerntext: "**Wundgrund** = die Oberfläche innerhalb der Wunde. Farbe zeigt den Zustand:\n\u2022 Rosa-rot (Granulation) = Heilung\n\u2022 Gelblich (Fibrin) = Reinigungsphase\n\u2022 Schwarz (Nekrose) = totes Gewebe\n\n**Wundrand** = die Grenze zwischen Wunde und gesunder Haut. Mazeriert = aufgeweicht durch Feuchtigkeit. Epithelialisierend = neue Haut wächst nach.\n\n**Erosion** = flacher, oberflächlicher Hautverlust (Epidermis). Typisch für Kategorie II.\n\n**Kategorie I** = Intakte Haut, nicht-wegdrückbare Roetung. Fingertest positiv. **Hautbarriere** (= **Hornschicht** als oberste Schutzschicht) noch intakt.\n\n**Kategorie II** = Teilverlust der Haut. Flache Erosion oder Blase. Hornschicht durchbrochen. Ab hier: Wundversorgung statt Prophylaxe.",
+        kerntextB1: "**Wundgrund** = die Fläche in der Wunde. Farbe zeigt den Zustand: Rosa = heilt. Gelb = reinigt sich. Schwarz = totes Gewebe.\n\n**Wundrand** = Grenze zwischen Wunde und gesunder Haut. Aufgeweicht = mazeriert.\n\n**Erosion** = flache offene Stelle. Typisch für Kategorie 2.\n\n**Kategorie 1** = Haut noch ganz. Rote Stelle. **Hautbarriere** (= **Hornschicht**) intakt.\n**Kategorie 2** = Haut offen. Hornschicht kaputt. Jetzt braucht es Wundversorgung.",
         faustregel: "Wundgrund = Farbe zeigt Zustand. Wundrand = mazeriert oder heilend. Kategorie I = Haut intakt. Kategorie II = Haut offen = Therapie.",
         faustregelB1: "Wundgrund: Rosa = heilt. Wundrand: aufgeweicht = schlecht. Kat. 1 = Haut ganz. Kat. 2 = Haut offen.",
         spektrum: [],
         karteikarte: {
           vorderseite: "Was unterscheidet Dekubitus Kategorie I von Kategorie II am Beispiel von Frau Yilmaz?",
-          rueckseite: "Kat. I: Intakte Haut, nicht-wegdrueckbare Roetung, Fingertest positiv, Hornschicht intakt. Kat. II: Teilverlust der Haut (Erosion/Blase), Hornschicht durchbrochen. Bei Frau Yilmaz: 2x3 cm Erosion am Sakrum = Kat. II. Wundgrund: roetlich-feucht. Wundrand: mazeriert.",
+          rueckseite: "Kat. I: Intakte Haut, nicht-wegdrückbare Roetung, Fingertest positiv, Hornschicht intakt. Kat. II: Teilverlust der Haut (Erosion/Blase), Hornschicht durchbrochen. Bei Frau Yilmaz: 2x3 cm Erosion am Sakrum = Kat. II. Wundgrund: rötlich-feucht. Wundrand: mazeriert.",
         },
       },
     },
@@ -367,7 +367,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
           },
           {
             context:
-              "Frau Yilmaz fragt: 'Aber warum habe ich das nicht gespürt? Die Schwestern haben mich immer auf die Seite gelegt — ich hab das manchmal nicht gewollt, das war unbequem. Aber sie haben es trotzdem gemacht.' Sie schaut dich fragend an.",
+              "Frau Yilmaz fragt: 'Aber warum habe ich das nicht gespürt? Die Schwestern haben mich immer auf die Seite gelegt — ich hab das manchmal nicht gewollt, das war unbeqüm. Aber sie haben es trotzdem gemacht.' Sie schaut dich fragend an.",
             contextB1:
               "Frau Yilmaz fragt: 'Warum habe ich das nicht gespürt? Die Schwestern haben mich immer auf die Seite gelegt — das war nicht schön. Aber sie haben es gemacht.' Sie schaut dich an.",
             speaker: "Du",
@@ -424,7 +424,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
       tag: "krankheitslehre",
       themaPrimaer: "dekubitus-prophylaxe",
       themenSekundaer: ["haut"],
-      transition: "Frisch im Kopf? Dann fuell die Braden-Skala fuer Frau Yilmaz heute aus.",
+      transition: "Frisch im Kopf? Dann füll die Braden-Skala für Frau Yilmaz heute aus.",
       contentC1: {
         title: "Braden-Skala — Erinnerung aus Spirale 1",
         body: "",
@@ -441,27 +441,27 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
           basisBausteinId: "dekubitus-prophylaxe-braden-skala",
           basisPatient: "Frau Yilmaz (Spirale 1)",
           vertiefung:
-            "In Spirale 1 hast du die Braden-Skala bei Aufnahme ausgefuellt: Score 13 (maessiges Risiko). Heute, 14 Tage spaeter, hat sich der Score kaum veraendert — aber ein Dekubitus Kategorie II ist trotzdem entstanden. Das zeigt: Die Braden-Skala misst Risiko, nicht Ergebnis. Ein Score von 13-14 heisst nicht \"sicher\", sondern \"Prophylaxe ist Pflicht\". Wenn die Prophylaxe lueckenhaft durchgefuehrt wird, entsteht trotz moderatem Score ein Dekubitus.",
+            "In Spirale 1 hast du die Braden-Skala bei Aufnahme ausgefüllt: Score 13 (mässiges Risiko). Heute, 14 Tage später, hat sich der Score kaum verändert — aber ein Dekubitus Kategorie II ist trotzdem entstanden. Das zeigt: Die Braden-Skala misst Risiko, nicht Ergebnis. Ein Score von 13-14 heißt nicht \"sicher\", sondern \"Prophylaxe ist Pflicht\". Wenn die Prophylaxe lückenhaft durchgeführt wird, entsteht trotz moderatem Score ein Dekubitus.",
           vertiefungB1:
-            "In Spirale 1 hast du die Braden-Skala ausgefuellt: Score 13 (mittleres Risiko). Heute nach 14 Tagen: Der Score ist aehnlich — aber trotzdem ist eine Wunde entstanden. Das zeigt: Ein mittlerer Score bedeutet nicht \"alles gut\". Es bedeutet: Prophylaxe muss gemacht werden. Wenn sie nicht gemacht wird, passiert genau das.",
+            "In Spirale 1 hast du die Braden-Skala ausgefüllt: Score 13 (mittleres Risiko). Heute nach 14 Tagen: Der Score ist ähnlich — aber trotzdem ist eine Wunde entstanden. Das zeigt: Ein mittlerer Score bedeutet nicht \"alles gut\". Es bedeutet: Prophylaxe muss gemacht werden. Wenn sie nicht gemacht wird, passiert genau das.",
         },
         storyAufhaenger:
-          "Du sollst gleich die Braden-Skala fuer Frau Yilmaz heute ausfuellen. Erinnerst du dich an die 6 Subskalen? Kurze Auffrischung, bevor du die Tabelle ausfuellst.",
+          "Du sollst gleich die Braden-Skala für Frau Yilmaz heute ausfüllen. Erinnerst du dich an die 6 Subskalen? Kurze Auffrischung, bevor du die Tabelle ausfüllst.",
         storyAufhaengerB1:
-          "Gleich fuellst du die Braden-Skala fuer heute aus. Kurze Erinnerung: Was war die Braden-Skala nochmal?",
+          "Gleich füllst du die Braden-Skala für heute aus. Kurze Erinnerung: Was war die Braden-Skala nochmal?",
         kerntext:
-          "Die **Braden-Skala** (Braden & Bergstrom 1987) ist das am haeufigsten verwendete Instrument zur Einschaetzung des Dekubitusrisikos im deutschsprachigen Raum.\n\n**6 Subskalen, je 1-4 Punkte:**\n\n• **Sensorisches Empfinden** — Kann der Patient Druck spueren?\n\n• **Feuchtigkeit** — Wie oft ist die Haut feucht?\n\n• **Aktivitaet** — Wie viel bewegt sich der Patient (Bett, Stuhl, Gehen)?\n\n• **Mobilitaet** — Kann er seine Position selbst aendern?\n\n• **Ernaehrung** — Isst er ausreichend?\n\n• **Reibung/Scherkraefte** — Rutscht er beim Bewegen?\n\n**Gesamtscore 6-23:** Je niedriger, desto hoeher das Risiko.\n• ≤ 12 = hohes Risiko\n• 13-14 = maessiges Risiko\n• 15-18 = geringes Risiko\n• > 18 = kein erhoehtes Risiko",
+          "Die **Braden-Skala** (Braden & Bergstrom 1987) ist das am häufigsten verwendete Instrument zur Einschätzung des Dekubitusrisikos im deutschsprachigen Raum.\n\n**6 Subskalen, je 1-4 Punkte:**\n\n• **Sensorisches Empfinden** — Kann der Patient Druck spüren?\n\n• **Feuchtigkeit** — Wie oft ist die Haut feucht?\n\n• **Aktivität** — Wie viel bewegt sich der Patient (Bett, Stuhl, Gehen)?\n\n• **Mobilität** — Kann er seine Position selbst ändern?\n\n• **Ernährung** — Isst er ausreichend?\n\n• **Reibung/Scherkräfte** — Rutscht er beim Bewegen?\n\n**Gesamtscore 6-23:** Je niedriger, desto höher das Risiko.\n• ≤ 12 = hohes Risiko\n• 13-14 = mässiges Risiko\n• 15-18 = geringes Risiko\n• > 18 = kein erhöhtes Risiko",
         kerntextB1:
-          "Die **Braden-Skala** misst das Dekubitus-Risiko.\n\n**6 Punkte werden bewertet:**\n\n• Kann der Patient Druck spueren?\n• Wie oft ist die Haut feucht?\n• Wie viel bewegt er sich?\n• Kann er sich selbst drehen?\n• Isst er genug?\n• Rutscht er beim Bewegen?\n\n**Jeder Punkt: 1-4.** Alle zusammen = Gesamtscore (6-23).\n\n• 12 oder weniger = hohes Risiko\n• 13-14 = mittleres Risiko\n• 15-18 = geringes Risiko\n• Ueber 18 = kein erhoehtes Risiko",
+          "Die **Braden-Skala** misst das Dekubitus-Risiko.\n\n**6 Punkte werden bewertet:**\n\n• Kann der Patient Druck spüren?\n• Wie oft ist die Haut feucht?\n• Wie viel bewegt er sich?\n• Kann er sich selbst drehen?\n• Isst er genug?\n• Rutscht er beim Bewegen?\n\n**Jeder Punkt: 1-4.** Alle zusammen = Gesamtscore (6-23).\n\n• 12 oder weniger = hohes Risiko\n• 13-14 = mittleres Risiko\n• 15-18 = geringes Risiko\n• Über 18 = kein erhöhtes Risiko",
         faustregel:
-          "Braden ≤ 14 = Prophylaxe ist Pflicht. Aber: Ein moderater Score schuetzt nicht — nur konsequente Massnahmen tun es.",
+          "Braden ≤ 14 = Prophylaxe ist Pflicht. Aber: Ein moderater Score schützt nicht — nur konseqünte Maßnahmen tun es.",
         faustregelB1:
           "Braden 14 oder weniger = Prophylaxe ist Pflicht. Aber auch mit mittlerem Risiko kann ein Dekubitus entstehen.",
         karteikarte: {
           vorderseite:
-            "Frau Yilmaz hat Braden-Score 14 (maessiges Risiko). Trotzdem ist ein Dekubitus Kat. II entstanden. Was sagt das ueber die Braden-Skala?",
+            "Frau Yilmaz hat Braden-Score 14 (mässiges Risiko). Trotzdem ist ein Dekubitus Kat. II entstanden. Was sagt das ueber die Braden-Skala?",
           rueckseite:
-            "Die Braden-Skala misst Risiko, nicht Ergebnis. Score 13-14 = maessiges Risiko = Prophylaxe ist Pflicht. Wenn Prophylaxe lueckenhaft (Schichtausfall, Ablehnung, fehlende Dokumentation), entsteht Dekubitus trotz moderatem Score.\n\n6 Subskalen: Sensorik, Feuchtigkeit, Aktivitaet, Mobilitaet, Ernaehrung, Reibung/Scherkraefte. Score 6-23 (niedriger = hoeher Risiko).\n\nFaustregel: **Braden ≤ 14 = Prophylaxe Pflicht. Nur konsequente Massnahmen schuetzen.**",
+            "Die Braden-Skala misst Risiko, nicht Ergebnis. Score 13-14 = mässiges Risiko = Prophylaxe ist Pflicht. Wenn Prophylaxe lückenhaft (Schichtausfall, Ablehnung, fehlende Dokumentation), entsteht Dekubitus trotz moderatem Score.\n\n6 Subskalen: Sensorik, Feuchtigkeit, Aktivität, Mobilität, Ernährung, Reibung/Scherkräfte. Score 6-23 (niedriger = höher Risiko).\n\nFaustregel: **Braden ≤ 14 = Prophylaxe Pflicht. Nur konseqünte Maßnahmen schützen.**",
         },
       },
     },
@@ -558,7 +558,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Donabedian und Risikofaktoren \u2014 Systemanalyse statt Schuld",
         body: "",
-        glossarBegriffe: ["Donabedian", "Strukturqualitaet", "Prozessqualitaet", "Endogene Faktoren", "Exogene Faktoren", "Organisationsfaktoren"],
+        glossarBegriffe: ["Donabedian", "Strukturqualität", "Prozessqualität", "Endogene Faktoren", "Exogene Faktoren", "Organisationsfaktoren"],
       },
       contentB1: {
         title: "Warum ist die Wunde entstanden? System statt Schuld",
@@ -569,14 +569,14 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
         bausteinRef: "dekubitus-prophylaxe-donabedian",
         storyAufhaenger: "Warum ist Frau Yilmaz Dekubitus trotz Prophylaxeplan entstanden? Die Antwort liegt nicht bei einer Person \u2014 sondern im System. Das **Donabedian-Modell** hilft, die Ursachen systematisch zu sortieren.",
         storyAufhaengerB1: "Warum ist die Wunde entstanden \u2014 obwohl Prophylaxe geplant war? Ein Modell hilft: Donabedian.",
-        kerntext: "**Donabedian-Modell** (1966) teilt Qualitaet in 3 Dimensionen:\n\n\u2022 **Strukturqualitaet** = Was IST vorhanden? Personal, Material, Ausstattung. Bei Frau Yilmaz: Weichlagerungsmatratze war da, aber Personalschluessel war knapp.\n\n\u2022 **Prozessqualitaet** = Was WIRD getan? Umlagerung, Hautinspektion, Dokumentation. Bei Frau Yilmaz: Umlagerung geplant, aber nicht immer durchgefuehrt. Roetung gesehen, nicht dokumentiert.\n\n\u2022 Ergebnisqualitaet = Was IST das Resultat? Dekubitus entstanden (negativ), aber Kat. II statt III/IV (Schadensbegrenzung).\n\n**Risikofaktoren** nach Ebene:\n\u2022 **Endogene Faktoren** (= vom Patienten): Diabetes, Neuropathie, Adipositas, Alter.\n\u2022 **Exogene Faktoren** (= von aussen): Inkontinenz-Pad, Matratze, Scherkraefte.\n\u2022 **Organisationsfaktoren** (= System): Personalknappheit, Dokumentationsluecke, Ablehnung der Umlagerung.\n\nWichtig: Kein Schuld-Framing. Dekubitus ist ein Systemereignis \u2014 nicht das Versagen einer Person.",
-        kerntextB1: "**Donabedian-Modell** (1966) hat 3 Teile:\n\n\u2022 **Struktur** = Was ist da? Personal, Material.\n\u2022 **Prozess** = Was wurde gemacht? Umlagerung, Hautinspektion.\n\u2022 **Ergebnis** = Was ist passiert? Wunde entstanden.\n\n**Risikofaktoren:**\n\u2022 **Endogen** (= Person): Diabetes, Uebergewicht, Nerven-Schaedigung.\n\u2022 **Exogen** (= von aussen): Inkontinenz-Pad, Matratze.\n\u2022 **Organisation** (= System): Zu wenig Personal, nicht aufgeschrieben.\n\nWichtig: Niemand ist schuld. Es ist ein System-Problem.",
+        kerntext: "**Donabedian-Modell** (1966) teilt Qualität in 3 Dimensionen:\n\n\u2022 **Strukturqualität** = Was IST vorhanden? Personal, Material, Ausstattung. Bei Frau Yilmaz: Weichlagerungsmatratze war da, aber Personalschlüssel war knapp.\n\n\u2022 **Prozessqualität** = Was WIRD getan? Umlagerung, Hautinspektion, Dokumentation. Bei Frau Yilmaz: Umlagerung geplant, aber nicht immer durchgeführt. Roetung gesehen, nicht dokumentiert.\n\n\u2022 Ergebnisqualität = Was IST das Resultat? Dekubitus entstanden (negativ), aber Kat. II statt III/IV (Schadensbegrenzung).\n\n**Risikofaktoren** nach Ebene:\n\u2022 **Endogene Faktoren** (= vom Patienten): Diabetes, Neuropathie, Adipositas, Alter.\n\u2022 **Exogene Faktoren** (= von aussen): Inkontinenz-Pad, Matratze, Scherkräfte.\n\u2022 **Organisationsfaktoren** (= System): Personalknappheit, Dokumentationslücke, Ablehnung der Umlagerung.\n\nWichtig: Kein Schuld-Framing. Dekubitus ist ein Systemereignis \u2014 nicht das Versagen einer Person.",
+        kerntextB1: "**Donabedian-Modell** (1966) hat 3 Teile:\n\n\u2022 **Struktur** = Was ist da? Personal, Material.\n\u2022 **Prozess** = Was wurde gemacht? Umlagerung, Hautinspektion.\n\u2022 **Ergebnis** = Was ist passiert? Wunde entstanden.\n\n**Risikofaktoren:**\n\u2022 **Endogen** (= Person): Diabetes, Übergewicht, Nerven-Schädigung.\n\u2022 **Exogen** (= von aussen): Inkontinenz-Pad, Matratze.\n\u2022 **Organisation** (= System): Zu wenig Personal, nicht aufgeschrieben.\n\nWichtig: Niemand ist schuld. Es ist ein System-Problem.",
         faustregel: "Donabedian: Struktur \u2192 Prozess \u2192 Ergebnis. Dekubitus = Systemereignis, kein Einzelversagen. Endogen + Exogen + Organisation.",
         faustregelB1: "3 Teile: Struktur + Prozess + Ergebnis. Risiken: Person + Umgebung + System. Niemand ist schuld.",
         spektrum: [],
         karteikarte: {
-          vorderseite: "Erklaere das Donabedian-Modell am Fall Frau Yilmaz.",
-          rueckseite: "Donabedian (1966): S = Struktur (Matratze da, Personal knapp). P = Prozess (Umlagerung lueckenhaft, Roetung nicht dokumentiert). E = Ergebnis (Dekubitus Kat. II). Risikofaktoren: Endogen (Diabetes, Neuropathie), Exogen (Inkontinenz-Pad), Organisation (Personalschluessel, Dokumentationsluecke). Systemanalyse, kein Schuld-Framing.",
+          vorderseite: "Erkläre das Donabedian-Modell am Fall Frau Yilmaz.",
+          rueckseite: "Donabedian (1966): S = Struktur (Matratze da, Personal knapp). P = Prozess (Umlagerung lückenhaft, Roetung nicht dokumentiert). E = Ergebnis (Dekubitus Kat. II). Risikofaktoren: Endogen (Diabetes, Neuropathie), Exogen (Inkontinenz-Pad), Organisation (Personalschlüssel, Dokumentationslücke). Systemanalyse, kein Schuld-Framing.",
         },
       },
     },
@@ -611,7 +611,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
         fragetext:
           "Nenne mindestens 3 mögliche Gründe, warum der Dekubitus trotz korrekter Prophylaxeplanung entstanden ist.",
         musterantwort:
-          "1) Prophylaxeplan korrekt, aber nicht immer umgesetzt: Schichtlücken, Personalknappheit → Strukturqualitätsproblem (Donabedian 1966). 2) Frau Yilmaz hat Umlagerung manchmal abgelehnt ('das war unbequem') → Patientenautonomie vs. Prophylaxepflicht. 3) Neuropathie durch Diabetes → kein Schmerzsignal → kein Melden an Pflegende. 4) Inkontinenz = Dauerfeuchte durch Pad → Mazeration → Hautbarriere geschwächt → erhöhte Anfälligkeit. 5) Adipositas → lokaler Auflagedruck am Sakrum trotz Weichlagerungsmatratze erhöht (Körpermasse verteilt Druck ungleichmäßig).",
+          "1) Prophylaxeplan korrekt, aber nicht immer umgesetzt: Schichtlücken, Personalknappheit → Strukturqualitätsproblem (Donabedian 1966). 2) Frau Yilmaz hat Umlagerung manchmal abgelehnt ('das war unbeqüm') → Patientenautonomie vs. Prophylaxepflicht. 3) Neuropathie durch Diabetes → kein Schmerzsignal → kein Melden an Pflegende. 4) Inkontinenz = Daürfeuchte durch Pad → Mazeration → Hautbarriere geschwächt → erhöhte Anfälligkeit. 5) Adipositas → lokaler Auflagedruck am Sakrum trotz Weichlagerungsmatratze erhöht (Körpermasse verteilt Druck ungleichmäßig).",
         bewertungskriterien: [
           "Mindestens 3 Ebenen benannt (Patient, System, Umgebung)",
           "Nicht nur Patientenfaktoren — auch Systemfaktoren erkannt",
@@ -670,7 +670,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
           { text: "Inkontinenz-Pad — Feuchtigkeitskammer am Sakrum", correctCategory: 1 },
           { text: "Krankenhausmatratze — Weichlagerung nicht immer optimiert", correctCategory: 1 },
           { text: "Scherkräfte beim Rollator-Gehen", correctCategory: 1 },
-          { text: "Ablehnung der Umlagerung durch Frau Yilmaz ('war unbequem')", correctCategory: 2 },
+          { text: "Ablehnung der Umlagerung durch Frau Yilmaz ('war unbeqüm')", correctCategory: 2 },
           { text: "Rötung von Kollegin gesehen aber nicht dokumentiert", correctCategory: 2 },
         ],
       },
@@ -738,7 +738,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
             },
             {
               front: "Welche Verbindung hat Mazeration zum Inkontinenz-Pad bei Frau Yilmaz?",
-              back: "Das Inkontinenz-Pad wirkt wie eine Feuchtigkeitskammer. Selbst bei kleiner Feuchtigkeit bleibt die Haut unter dem Pad dauerhaft feucht. Dies beschleunigt Mazeration am Sakrum — besonders gefährlich in Kombination mit Druck.",
+              back: "Das Inkontinenz-Pad wirkt wie eine Feuchtigkeitskammer. Selbst bei kleiner Feuchtigkeit bleibt die Haut unter dem Pad daürhaft feucht. Dies beschleunigt Mazeration am Sakrum — besonders gefährlich in Kombination mit Druck.",
               backB1:
                 "Das Pad hält Feuchtigkeit fest. Die Haut am Steißbein ist dann immer feucht. Das macht die Haut schwächer. Zusammen mit dem Druck entsteht schneller eine Wunde.",
               category: "Mazeration + Inkontinenz-Pad",

@@ -17,7 +17,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
   kernSteps: [
     // Step 3.1 — Matrix: Maßnahmen einordnen
     {
-      stepId: "ce02-lukas-plan-01-massnahmen-matrix",
+      stepId: "ce02-lukas-plan-01-maßnahmen-matrix",
       phase: 3,
       stepType: "matrix",
       bloomLevel: 4,
@@ -25,7 +25,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
       quellen: ["DGV 2023", "DNQP 2022", "§ 4 KKG 2012"],
       track: "basis",
       modus: "sortierstation",
-      lernziel: "ce02-lukas-plan-massnahmen",
+      lernziel: "ce02-lukas-plan-maßnahmen",
       tag: "pflege",
       transition: "Maßnahmen sortiert. Aber warum eigentlich feuchte Wundbehandlung?",
       contentC1: {
@@ -97,7 +97,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
       lernziel: "ce02-lukas-plan-feuchte-prinzip",
       tag: "krankheitslehre",
       themaPrimaer: "haut",
-      themenSekundaer: ["saeuglingspflege"],
+      themenSekundaer: ["säuglingspflege"],
       transition: "Das Prinzip steht. Jetzt die konkreten Materialien für Lukas.",
       contentC1: {
         title: "Warum feucht heilen? — Das Winter-Prinzip",
@@ -129,7 +129,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
             situationsId: "ls-yilmaz-spirale2",
             hauptfaktor: "Dekubitus — feuchte Wundbehandlung als Standard",
             kurzbeschreibung:
-              "Auch bei Frau Yilmaz' Dekubitus Kat. II gilt das Winter-Prinzip. Hydrokolloide oder Schaumverbände halten die Wundfläche feucht. Der Unterschied zu Lukas: Dekubitusheilung dauert länger (Wochen bis Monate) und braucht Druckentlastung als Hauptmaßnahme.",
+              "Auch bei Frau Yilmaz' Dekubitus Kat. II gilt das Winter-Prinzip. Hydrokolloide oder Schaumverbände halten die Wundfläche feucht. Der Unterschied zu Lukas: Dekubitusheilung daürt länger (Wochen bis Monate) und braucht Druckentlastung als Hauptmaßnahme.",
           },
           {
             patientName: "Herr Petrov (Schlaganfall)",
@@ -149,7 +149,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
         sonstBox:
           "Weitere Wundauflagen-Typen: **Hydrogel** (spendet Feuchtigkeit bei trockenen Wunden), **Alginat** (bei stark nässenden Wunden, aus Braunalgen), **Silber-beschichtete Auflagen** (bei Infektionsgefahr, bakterizid), **Vakuumtherapie (NPWT)** — bei tiefen, schlecht heilenden Wunden (ab Grad 2b/3). All das lernst du in CE-02 Thema Haut vertieft.",
         sonstBoxB1:
-          "Andere Wundauflagen: **Hydrogel** (gibt Feuchtigkeit ab), **Alginat** (bei viel Wundwasser), **Silber-Auflagen** (gegen Infektion), **Vakuum-Therapie** (bei tiefen Wunden). Das kommt in CE-02 Thema Haut genauer.",
+          "Andere Wundauflagen: **Hydrogel** (gibt Feuchtigkeit ab), **Alginat** (bei viel Wundwasser), **Silber-Auflagen** (gegen Infektion), **Vakuum-Therapie** (bei tiefen Wunden). Das kommt in CE-02 Thema Haut genaür.",
         karteikarte: {
           vorderseite:
             "Kathrin sagt: \"Feuchte Wundbehandlung.\" Warum heilt eine Wunde feucht schneller als trocken — und wann wird Feuchtigkeit zum Problem?",
@@ -186,7 +186,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
 
     // Step 3.3 — Calculation: Flüssigkeitsbedarf
     {
-      stepId: "ce02-lukas-plan-03-fluessigkeitsbedarf",
+      stepId: "ce02-lukas-plan-03-flüssigkeitsbedarf",
       phase: 3,
       stepType: "calculation",
       bloomLevel: 4,
@@ -194,7 +194,7 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
       quellen: ["Holliday/Segar 1957", "GNPI 2022"],
       track: "basis",
       modus: "challenge",
-      lernziel: "ce02-lukas-plan-fluessigkeit",
+      lernziel: "ce02-lukas-plan-flüssigkeit",
       tag: "anatomie",
       contentC1: {
         title: "Flüssigkeitsbedarf berechnen — Holliday-Segar",
@@ -262,15 +262,15 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
             text: "\"Das stimmt gar nicht — keine Sorge.\"",
             isCorrect: false,
             feedback:
-              "Falsch — das ist eine Lüge. Frau Fink kommt. Wenn Kevin das herausfindet, ist das Vertrauen zerstört. Lügen schützen im Moment — aber zerstören die Beziehung. Nie lügen in der Pflege um eine Situation zu entschärfen.",
+              "Falsch — das ist eine Lüge. Frau Fink kommt. Wenn Kevin das herausfindet, ist das Vertraün zerstört. Lügen schützen im Moment — aber zerstören die Beziehung. Nie lügen in der Pflege um eine Situation zu entschärfen.",
             feedbackB1:
-              "Falsch — das stimmt nicht. Frau Fink kommt wirklich. Wenn Kevin das merkt, ist alles Vertrauen weg. Lügen geht nicht.",
+              "Falsch — das stimmt nicht. Frau Fink kommt wirklich. Wenn Kevin das merkt, ist alles Vertraün weg. Lügen geht nicht.",
           },
           {
             text: "\"Ich verstehe, dass sich das anfühlt wie ein Vorwurf — das ist es nicht. Bei jeder Verbrühung über 10 Prozent bei Kindern führen wir dieses Gespräch, weil wir uns um das Kind sorgen. Nicht um Schuld. Lukas steht dabei im Mittelpunkt, nicht ihr als Eltern.\"",
             isCorrect: true,
             feedback:
-              "Richtig. Drei Elemente: (1) Empathie zuerst ('ich verstehe, dass sich das anfühlt wie...') — du musst Kevins Wahrnehmung nicht teilen, aber du anerkennst sie. (2) Standard klar machen ('bei jeder Verbrühung') — keine Ausnahme, keine Schuld. (3) Fokus auf Lukas setzen — das schützt die Eltern und erklärt das Ziel. Kevin muss nicht zustimmen — aber er hört es als Aussage der Fürsorge, nicht als Anklage.",
+              "Richtig. Drei Elemente: (1) Empathie zürst ('ich verstehe, dass sich das anfühlt wie...') — du musst Kevins Wahrnehmung nicht teilen, aber du anerkennst sie. (2) Standard klar machen ('bei jeder Verbrühung') — keine Ausnahme, keine Schuld. (3) Fokus auf Lukas setzen — das schützt die Eltern und erklärt das Ziel. Kevin muss nicht zustimmen — aber er hört es als Aussage der Fürsorge, nicht als Anklage.",
             feedbackB1:
               "Richtig. Du sagst drei Dinge: Ich verstehe deinen Eindruck. Das ist Standard für alle Kinder. Es geht um Lukas. Das ist die richtige Reihenfolge.",
           },

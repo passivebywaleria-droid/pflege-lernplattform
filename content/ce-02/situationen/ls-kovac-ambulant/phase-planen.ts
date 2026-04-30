@@ -69,7 +69,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
               correctQuadrant: 1,
             },
             {
-              id: "kompressions-gespraech",
+              id: "kompressions-gespräch",
               text: "Gespräch über Kompressionsstrümpfe führen + dokumentieren (Aufklärung)",
               correctQuadrant: 1,
             },
@@ -117,6 +117,54 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       },
     },
 
+    // Inline-Wissen: ASS — VOR Step 3.3 (Branching erklärt ASS vs. Kompression)
+    {
+      stepId: "ce02-kovac-plan-iw-ass",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Mutschler Arzneimittelwirkungen 11. Aufl. 2020",
+        "AWMF S3-Leitlinie Thromboseprophylaxe 003-001 2015",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-kovac-plan-ass",
+      tag: "krankheitslehre",
+      contentC1: {
+        title: "Was ist ASS — und was kann es nicht?",
+        body: "",
+        glossarBegriffe: ["ASS"],
+      },
+      contentB1: {
+        title: "Was ist ASS (Aspirin)?",
+        body: "",
+        glossarBegriffe: ["ASS"],
+      },
+      inlineWissen: {
+        bausteinRef: "ass-thrombozytenaggregation",
+        storyAufhaenger:
+          "Frau Kovač sagt gleich: \"Ich brauch keine Strümpfe — ich hab doch die Tabletten.\" Sie meint ASS 100 mg. Bevor du das Gespräch führst, musst du verstehen: Was macht ASS tatsächlich — und wo liegt die Verwechslung?",
+        storyAufhaengerB1:
+          "Frau Kovač denkt: Die Tablette schützt mich schon. Sie meint ASS (Aspirin). Aber stimmt das? Was macht ASS wirklich — und wogegen schützt es nicht?",
+        kerntext:
+          "**ASS** (Acetylsalicylsäure, bekannt als Aspirin) in der Dosis 100 mg/Tag hemmt die **Thrombozytenaggregation** — das Verklumpen der Blutplättchen. Das schützt vor **arteriellen** Thrombosen: Herzinfarkt, Schlaganfall.\n\nAber: **Tiefe Venenthrombosen (TVT)** entstehen durch einen anderen Mechanismus — venöse Stase (Blutstau) + Aktivierung der plasmatischen Gerinnung (Virchow-Trias). Auf diesen Weg hat ASS **kaum Einfluss**. Deshalb schützt ASS nicht ausreichend vor TVT.\n\n**Kompressionsstrümpfe** wirken mechanisch: Sie drücken die Venen zusammen, beschleunigen den Blutrückfluss und reduzieren die Stase — direkt auf den Entstehungsmechanismus der TVT.\n\nASS und Kompression sind keine Alternativen — sie wirken auf **verschiedene Systeme** und ergänzen sich.\n\nQuelle: (Mutschler 2020; AWMF S3 Thromboseprophylaxe 2015)",
+        kerntextB1:
+          "**ASS** (Aspirin) ist ein Medikament. In der kleinen Dosis (100 mg/Tag) verhindert es, dass Blutplättchen verklumpen. Das schützt vor **Herzinfarkt und Schlaganfall** (das passiert in den Arterien).\n\nAber: **Thrombosen in den Beinvenen** entstehen anders — durch langsamen Blutfluss in den Venen. Dagegen hilft ASS **kaum**.\n\n**Kompressionsstrümpfe** drücken die Beinvenen zusammen und helfen dem Blut, schneller nach oben zu fließen. Das schützt gegen Venenthrombose.\n\nASS und Strümpfe sind **kein Ersatz** füreinander. Sie schützen vor verschiedenen Dingen.",
+        faustregel:
+          "ASS = Arterienschutz (Herzinfarkt/Schlaganfall). Kompression = Venenschutz (TVT). Beides zusammen, nicht entweder-oder.",
+        faustregelB1:
+          "ASS schützt die Arterien (Herz, Hirn). Kompressionsstrümpfe schützen die Venen (Beine). Beides ist wichtig — nicht nur eines.",
+        karteikarte: {
+          vorderseite: "Frau Kovač sagt: \"Ich brauch keine Strümpfe, ich hab doch ASS.\" Was antwortest du — fachlich begründet?",
+          rueckseite: "ASS hemmt Thrombozytenaggregation → schützt vor arterieller Thrombose (Herzinfarkt, Schlaganfall). TVT entsteht durch venöse Stase + plasmatische Gerinnung (Virchow-Trias) → ASS kaum wirksam. Kompression reduziert Stase mechanisch → wirkt direkt auf TVT-Risiko. Beide Maßnahmen ergänzen sich, ersetzen sich nicht. Quelle: Mutschler 2020, AWMF S3 Thromboseprophylaxe 2015.",
+          vorderseiteB1: "Frau Kovač glaubt, ASS ersetzt die Kompressionsstrümpfe. Was ist falsch an dieser Annahme?",
+          rueckseiteB1: "ASS schützt vor Herzinfarkt und Schlaganfall (Arterien). Kompressionsstrümpfe schützen vor Thrombose in den Beinvenen. ASS hilft nicht gegen Venenthrombose. Beides zusammen ist am besten.",
+        },
+      },
+    },
+
     // Step 3.3 — Ethisches Dilemma Branching
     {
       stepId: "ce02-kovac-plan-03-kompressions-branching",
@@ -146,7 +194,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
             text: "Ich erkläre den Unterschied zwischen ASS und Kompressionsstrümpfen, frage konkret nach dem Grund der Ablehnung (Druck? Anziehen? Hitze?), biete Alternativen an (Klasse 1 statt Klasse 2, Anziehhilfe, Hauttest) — und akzeptiere dann ihre Entscheidung.",
             isCorrect: true,
             feedback:
-              "Richtig. Vollständige Aufklärung heißt: erklären (Wirkung), nachfragen (konkretes Hindernis), Alternativen anbieten (oft ist das Problem lösbar), Entscheidung respektieren.\n\n**Konkrete Alternativen die du anbieten kannst:**\n- **Klasse 1** (leichterer Druck) statt Klasse 2 — bei NYHA II + Beinödemen oft ausreichend, Tragekomfort deutlich besser. Erfordert ärztliche Verordnung.\n- **Anziehhilfe** (Gleitstrumpf, Schlaufengriff) — viele Patient:innen lehnen ab, weil sie das Anziehen nicht schaffen.\n- **Hauttest** — wenn 'die drücken' = Hautirritation, kann eine andere Materialqualität helfen.\n- **Tragezeit anpassen** — z.B. nur tagsüber, nicht beim Schlafen.\n\n**Frau Kovačs Reaktion:** Sie hört zu, mit verschränkten Armen. Nach deiner Erklärung sagt sie: \"Hmm. ASS ist also nicht dasselbe. Das hat mir keiner so erklärt. Klasse 1 — das hab ich noch nie probiert. Trotzdem, heute will ich keine. Aber dass Sie mir das so sagen, das ist anders. Schreiben Sie's halt auf.\" — Vertrauen bleibt, Autonomie respektiert, Aufklärung dokumentiert. Ein Spalt für eine spätere Lösung ist offen.\n\nJetzt musst du die Verweigerung im Pflegebericht dokumentieren — vollständig: was du erklärt hast, welche Alternativen du angeboten hast, wie sie reagiert hat, dass es ihre freiwillige Entscheidung ist. Quelle: (§ 630f BGB; § 1901a BGB; AWMF S3-Leitlinie Thromboseprophylaxe 003-001)",
+              "Richtig. Vollständige Aufklärung heißt: erklären (Wirkung), nachfragen (konkretes Hindernis), Alternativen anbieten (oft ist das Problem lösbar), Entscheidung respektieren.\n\n**Konkrete Alternativen die du anbieten kannst:**\n- **Klasse 1** (leichterer Druck) statt Klasse 2 — bei NYHA II + Beinödemen oft ausreichend, Tragekomfort deutlich besser. Erfordert ärztliche Verordnung.\n- **Anziehhilfe** (Gleitstrumpf, Schlaufengriff) — viele Patient:innen lehnen ab, weil sie das Anziehen nicht schaffen.\n- **Hauttest** — wenn 'die drücken' = Hautirritation, kann eine andere Materialqualität helfen.\n- **Tragezeit anpassen** — z.B. nur tagsüber, nicht beim Schlafen.\n\n**Frau Kovačs Reaktion:** Sie hört zu, mit verschränkten Armen. Nach deiner Erklärung sagt sie: \"Hmm. ASS ist also nicht dasselbe. Das hat mir keiner so erklärt. Klasse 1 — das hab ich noch nie probiert. Trotzdem, heute will ich keine. Aber dass Sie mir das so sagen, das ist anders. Schreiben Sie's halt auf.\" — Vertraün bleibt, Autonomie respektiert, Aufklärung dokumentiert. Ein Spalt für eine spätere Lösung ist offen.\n\nJetzt musst du die Verweigerung im Pflegebericht dokumentieren — vollständig: was du erklärt hast, welche Alternativen du angeboten hast, wie sie reagiert hat, dass es ihre freiwillige Entscheidung ist. Quelle: (§ 630f BGB; § 1901a BGB; AWMF S3-Leitlinie Thromboseprophylaxe 003-001)",
             feedbackB1:
               "Richtig. Aufklärung ist mehr als nur erklären — du **fragst nach** warum sie ablehnt (Druck? Anziehen? Hitze?) und **bietest Alternativen** an:\n- Klasse 1 (leichter) statt Klasse 2\n- Anziehhilfe (Gleitstrumpf)\n- Andere Materialqualität (wenn die Haut juckt)\n- Nur tagsüber tragen, nicht nachts\n\n**Frau Kovač sagt:** \"Hmm. ASS und Strümpfe sind nicht dasselbe. Klasse 1 — das wusste ich nicht. Heute will ich trotzdem keine. Aber Sie reden mit mir, das ist anders. Schreiben Sie es auf.\"\n\nDann schreibst du alles auf — auch welche Alternativen du angeboten hast.",
           },
@@ -154,17 +202,17 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
             text: "Ich lasse das Thema fallen — sie wird ihre Meinung ohnehin nicht ändern.",
             isCorrect: false,
             feedback:
-              "Nicht korrekt. Unterlassene Aufklärung ist ein Dokumentations- und Haftungsproblem.\n\n**Frau Kovačs Reaktion:** Sie merkt, dass du das Thema umgehst. \"Sind Sie fertig? Dann können Sie ja gehen.\" — Misstrauen wächst (du hast offensichtlich etwas, was du ihr nicht sagst), und du hast keine Aufklärung dokumentiert. Wenn Frau Kovač später eine Thrombose entwickelt und die Pflegedokumentation zeigt: Strümpfe verweigert, keine Aufklärung dokumentiert — kann das rechtliche Konsequenzen haben (§ 630f BGB Verletzung).\n\nAufklärung ist Pflicht, auch wenn die Entscheidung festzustehen scheint. Geh zurück und wähle Pfad A.",
+              "Nicht korrekt. Unterlassene Aufklärung ist ein Dokumentations- und Haftungsproblem.\n\n**Frau Kovačs Reaktion:** Sie merkt, dass du das Thema umgehst. \"Sind Sie fertig? Dann können Sie ja gehen.\" — Misstraün wächst (du hast offensichtlich etwas, was du ihr nicht sagst), und du hast keine Aufklärung dokumentiert. Wenn Frau Kovač später eine Thrombose entwickelt und die Pflegedokumentation zeigt: Strümpfe verweigert, keine Aufklärung dokumentiert — kann das rechtliche Konseqünzen haben (§ 630f BGB Verletzung).\n\nAufklärung ist Pflicht, auch wenn die Entscheidung festzustehen scheint. Geh zurück und wähle Pfad A.",
             feedbackB1:
-              "Nicht richtig. Du musst es ihr erklären — auch wenn sie wahrscheinlich Nein sagt.\n\n**Frau Kovač merkt das:** \"Sind Sie fertig? Dann gehen Sie.\" — Sie verliert Vertrauen. Und juristisch hast du nichts dokumentiert. Das ist ein Problem.\n\nGeh zurück zu Pfad A.",
+              "Nicht richtig. Du musst es ihr erklären — auch wenn sie wahrscheinlich Nein sagt.\n\n**Frau Kovač merkt das:** \"Sind Sie fertig? Dann gehen Sie.\" — Sie verliert Vertraün. Und juristisch hast du nichts dokumentiert. Das ist ein Problem.\n\nGeh zurück zu Pfad A.",
           },
           {
             text: "Ich überzeuge sie mit Nachdruck — das Thromboserisiko ist zu groß, um es zu ignorieren.",
             isCorrect: false,
             feedback:
-              "Nicht erlaubt. Überreden ist erlaubt — aber Druck ausüben verletzt die Patientenautonomie (§ 1901a BGB) und beschädigt das Vertrauensverhältnis.\n\n**Frau Kovačs Reaktion:** Sie wird sehr still. Dann, scharf: \"Dann gehen Sie. Ich will Sie nicht in meiner Wohnung. Ich rufe beim Pflegedienst an.\" — Du hast den Auftrag verloren, der Pflegedienst hat eine formale Beschwerde, und Frau Kovač wird auch andere Pflegekräfte mit Misstrauen begegnen.\n\nDer Unterschied: Aufklärung = 'Ich erkläre, warum es wichtig ist.' Druck = 'Du musst das tun.' Nur ersteres ist erlaubt. In ihrer Wohnung gilt ihre Regel — du bist Gast mit Auftrag, kein Befehlshaber. Geh zurück und wähle Pfad A.",
+              "Nicht erlaubt. Überreden ist erlaubt — aber Druck ausüben verletzt die Patientenautonomie (§ 1901a BGB) und beschädigt das Vertraünsverhältnis.\n\n**Frau Kovačs Reaktion:** Sie wird sehr still. Dann, scharf: \"Dann gehen Sie. Ich will Sie nicht in meiner Wohnung. Ich rufe beim Pflegedienst an.\" — Du hast den Auftrag verloren, der Pflegedienst hat eine formale Beschwerde, und Frau Kovač wird auch andere Pflegekräfte mit Misstraün begegnen.\n\nDer Unterschied: Aufklärung = 'Ich erkläre, warum es wichtig ist.' Druck = 'Du musst das tun.' Nur ersteres ist erlaubt. In ihrer Wohnung gilt ihre Regel — du bist Gast mit Auftrag, kein Befehlshaber. Geh zurück und wähle Pfad A.",
             feedbackB1:
-              "Nicht erlaubt. Du darfst ihr erklären. Du darfst sie nicht zwingen.\n\n**Frau Kovač wird wütend:** \"Dann gehen Sie. Ich will Sie nicht in meiner Wohnung. Ich rufe den Pflegedienst an.\" — Du hast das Vertrauen verloren. Und der Pflegedienst hat eine Beschwerde.\n\nIn ihrer Wohnung gilt ihre Regel. Geh zurück zu Pfad A.",
+              "Nicht erlaubt. Du darfst ihr erklären. Du darfst sie nicht zwingen.\n\n**Frau Kovač wird wütend:** \"Dann gehen Sie. Ich will Sie nicht in meiner Wohnung. Ich rufe den Pflegedienst an.\" — Du hast das Vertraün verloren. Und der Pflegedienst hat eine Beschwerde.\n\nIn ihrer Wohnung gilt ihre Regel. Geh zurück zu Pfad A.",
           },
         ],
       },
@@ -202,7 +250,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
             {
               id: "seq-1",
               label:
-                "Aktuelle Schlafgewohnheiten zusammenfassen — ohne Wertung ('Sie haben mir erzählt, dass ...')",
+                "Aktülle Schlafgewohnheiten zusammenfassen — ohne Wertung ('Sie haben mir erzählt, dass ...')",
             },
             {
               id: "seq-2",
@@ -374,7 +422,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
 
     // Opt-3.C — Angehörigen-Einbindung als RESSOURCE (NEU — nicht nur als Datenschutz-Abwehr)
     {
-      stepId: "ce02-kovac-plan-opt-c-angehoerige-ressource",
+      stepId: "ce02-kovac-plan-opt-c-angehörige-ressource",
       phase: 3,
       stepType: "text",
       bloomLevel: 4,

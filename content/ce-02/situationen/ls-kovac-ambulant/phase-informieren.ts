@@ -50,7 +50,7 @@ export const CE02_SIT_KOVAC_AMBULANT_INFORMIEREN: SituationsPhase = {
 
     // Step 1.2 — Prioritäten vor der Tür
     {
-      stepId: "ce02-kovac-info-02-prioritaeten-vor-betreten",
+      stepId: "ce02-kovac-info-02-prioritäten-vor-betreten",
       phase: 1,
       stepType: "sorting",
       bloomLevel: 2,
@@ -58,11 +58,11 @@ export const CE02_SIT_KOVAC_AMBULANT_INFORMIEREN: SituationsPhase = {
       quellen: ["DNQP Kontinenzförderung 2014", "GOLD-Report COPD 2023"],
       track: "basis",
       modus: "sortierstation",
-      lernziel: "ce02-kovac-ambulant-info-prioritaeten",
+      lernziel: "ce02-kovac-ambulant-info-prioritäten",
       tag: "pflege",
       contentC1: {
         title: "Prioritäten vor der Tür",
-        body: "Du stehst vor der Wohnungstür. Bevor du klingelst, ordnest du die Informationen aus der Übergabe nach Dringlichkeit. Es gibt keine absolut richtige Reihenfolge — aber es gibt eine klinische Logik: Akutsignale zuerst, dann Prophylaxe, dann Beratungsthemen.",
+        body: "Du stehst vor der Wohnungstür. Bevor du klingelst, ordnest du die Informationen aus der Übergabe nach Dringlichkeit. Es gibt keine absolut richtige Reihenfolge — aber es gibt eine klinische Logik: Akutsignale zürst, dann Prophylaxe, dann Beratungsthemen.",
         glossarBegriffe: [],
       },
       contentB1: {
@@ -72,7 +72,7 @@ export const CE02_SIT_KOVAC_AMBULANT_INFORMIEREN: SituationsPhase = {
       },
       question: {
         fragetext:
-          "Ordne die Informationen aus der Übergabe nach Dringlichkeit (Wichtigstes zuerst).",
+          "Ordne die Informationen aus der Übergabe nach Dringlichkeit (Wichtigstes zürst).",
         sortItems: [
           "Kein Stuhlgang seit 4 Tagen (Obstipationsrisiko, Dehydration-Zusammenhang)",
           "Trinkmenge 820 ml gestern (deutlich unter Bedarf bei COPD + Herzinsuffizienz)",
@@ -209,7 +209,7 @@ export const CE02_SIT_KOVAC_AMBULANT_INFORMIEREN: SituationsPhase = {
                 textB1:
                   "\"Guten Morgen. Ich muss jetzt gleich mit den Übungen anfangen.\"",
                 patientResponse:
-                  "Frau Kovač zieht die Augenbrauen hoch. \"Na, bitte sehr.\"",
+                  "Frau Kovač zieht die Augenbraün hoch. \"Na, bitte sehr.\"",
                 patientResponseB1:
                   "Frau Kovač schaut weg. \"Na, wenn Sie meinen.\"",
                 score: 1,
@@ -256,9 +256,9 @@ export const CE02_SIT_KOVAC_AMBULANT_INFORMIEREN: SituationsPhase = {
                   "Nicht gut. 'Das ist normal' schließt das Gespräch. Frau Kovač fühlt sich nicht gehört.",
               },
               {
-                text: "\"Wir schauen das heute genauer an. Jetzt erst die Übungen, ja?\"",
+                text: "\"Wir schaün das heute genaür an. Jetzt erst die Übungen, ja?\"",
                 textB1:
-                  "\"Wir schauen das später an. Jetzt erst die Übungen, ja?\"",
+                  "\"Wir schaün das später an. Jetzt erst die Übungen, ja?\"",
                 patientResponse:
                   "Frau Kovač nickt ohne Begeisterung. \"Wenn Sie wollen.\"",
                 patientResponseB1:
@@ -279,9 +279,9 @@ export const CE02_SIT_KOVAC_AMBULANT_INFORMIEREN: SituationsPhase = {
             speaker: "Du",
             options: [
               {
-                text: "\"Frau Kovač, wir schauen heute auf die Atemübungen, auf das Trinken und auf die Gelenke. Für den Schlaf machen wir heute Abend ein kurzes Gespräch — ich erkläre Ihnen dann, was im Körper passiert.\"",
+                text: "\"Frau Kovač, wir schaün heute auf die Atemübungen, auf das Trinken und auf die Gelenke. Für den Schlaf machen wir heute Abend ein kurzes Gespräch — ich erkläre Ihnen dann, was im Körper passiert.\"",
                 textB1:
-                  "\"Frau Kovač, heute machen wir Atem-Übungen, reden über das Trinken und schauen die Gelenke an. Den Schlaf besprechen wir heute Abend — ich erkläre dir dann, was im Körper passiert.\"",
+                  "\"Frau Kovač, heute machen wir Atem-Übungen, reden über das Trinken und schaün die Gelenke an. Den Schlaf besprechen wir heute Abend — ich erkläre dir dann, was im Körper passiert.\"",
                 patientResponse:
                   "\"Na gut. Dann fangen wir an.\" — Sie dreht sich zum Fenster und zieht die Vorhänge auf.",
                 patientResponseB1:
@@ -313,7 +313,7 @@ export const CE02_SIT_KOVAC_AMBULANT_INFORMIEREN: SituationsPhase = {
 
     // Step 1.5 — Comparison: ambulant vs. stationär
     {
-      stepId: "ce02-kovac-info-05-ambulant-vs-stationaer",
+      stepId: "ce02-kovac-info-05-ambulant-vs-stationär",
       phase: 1,
       stepType: "comparison",
       bloomLevel: 3,
@@ -450,7 +450,7 @@ export const CE02_SIT_KOVAC_AMBULANT_INFORMIEREN: SituationsPhase = {
       displayFormat: "scenario",
       contentC1: {
         title: "Pflegegrad 3 — was deckt das SGB XI ab?",
-        body: "Frau Kovač hat Pflegegrad 3 (PG 3) — \"schwere Beeinträchtigung der Selbstständigkeit\" nach § 14, § 15 SGB XI. Was bedeutet das konkret für die ambulante Versorgung?\n\n**Leistungsrahmen PG 3 (Stand 2024):**\n- **§ 36 Pflegesachleistung:** 1.497 €/Monat — finanziert die Hausbesuche durch den ambulanten Pflegedienst (etwa 2× tägl. Besuch à 30–45 Min, kein Nachtdienst enthalten).\n- **§ 37 Pflegegeld** (alternativ): 573 €/Monat — wenn Angehörige die Pflege übernehmen.\n- **Kombinationsleistung:** Mischung aus § 36 + § 37 anteilig möglich.\n- **§ 45a Entlastungsbetrag:** 125 €/Monat zusätzlich — z.B. für Haushaltshilfe, Betreuungsangebote.\n- **Verhinderungspflege § 39:** 1.612 €/Jahr für Vertretung wenn Pflegeperson ausfällt.\n- **Tages-/Nachtpflege § 41:** zusätzlicher Anspruch — kann bei Frau Kovačs nächtlichem Risikoprofil (Insomnie + Schwindel + COPD) sinnvoll sein.\n\n**Spannungsfeld bei Frau Kovač:**\nIhr Risikoprofil — alleinlebend, COPD III mit FEV1 30-49 %, NYHA II, Sturzneigung durch Kontraktur + Schwindel, nächtliches Erwachen mit Husten — sprengt eigentlich den Standard-PG-3-Rahmen. Der Pflegedienst kommt 2× tägl., **nachts ist sie allein**. Das ist kein Versagen des Pflegedienstes — das ist die Grenze des § 36-Budgets. Aufgabe der Pflegefachkraft: dieses Spannungsfeld erkennen, dokumentieren und ggf. Höherstufung (§ 18 MD-Begutachtung) anregen oder Tagespflege/Verhinderungspflege thematisieren.\n\nQuelle: (SGB XI §§ 14, 15, 36, 37, 41, 45a — aktuelle Beträge 2024)",
+        body: "Frau Kovač hat Pflegegrad 3 (PG 3) — \"schwere Beeinträchtigung der Selbstständigkeit\" nach § 14, § 15 SGB XI. Was bedeutet das konkret für die ambulante Versorgung?\n\n**Leistungsrahmen PG 3 (Stand 2024):**\n- **§ 36 Pflegesachleistung:** 1.497 €/Monat — finanziert die Hausbesuche durch den ambulanten Pflegedienst (etwa 2× tägl. Besuch à 30–45 Min, kein Nachtdienst enthalten).\n- **§ 37 Pflegegeld** (alternativ): 573 €/Monat — wenn Angehörige die Pflege übernehmen.\n- **Kombinationsleistung:** Mischung aus § 36 + § 37 anteilig möglich.\n- **§ 45a Entlastungsbetrag:** 125 €/Monat zusätzlich — z.B. für Haushaltshilfe, Betreuungsangebote.\n- **Verhinderungspflege § 39:** 1.612 €/Jahr für Vertretung wenn Pflegeperson ausfällt.\n- **Tages-/Nachtpflege § 41:** zusätzlicher Anspruch — kann bei Frau Kovačs nächtlichem Risikoprofil (Insomnie + Schwindel + COPD) sinnvoll sein.\n\n**Spannungsfeld bei Frau Kovač:**\nIhr Risikoprofil — alleinlebend, COPD III mit FEV1 30-49 %, NYHA II, Sturzneigung durch Kontraktur + Schwindel, nächtliches Erwachen mit Husten — sprengt eigentlich den Standard-PG-3-Rahmen. Der Pflegedienst kommt 2× tägl., **nachts ist sie allein**. Das ist kein Versagen des Pflegedienstes — das ist die Grenze des § 36-Budgets. Aufgabe der Pflegefachkraft: dieses Spannungsfeld erkennen, dokumentieren und ggf. Höherstufung (§ 18 MD-Begutachtung) anregen oder Tagespflege/Verhinderungspflege thematisieren.\n\nQuelle: (SGB XI §§ 14, 15, 36, 37, 41, 45a — aktülle Beträge 2024)",
         fallbezug:
           "Frau Kovačs Pflegegrad 3 deckt morgens und abends Sachleistung ab. Wenn sie nachts stürzt — niemand ist da. Sohn Darko in Split kann nicht in 5 Min vorbeikommen. Notruf-System (Hausnotruf-Knopf) wäre hier ein konkreter, finanzierbarer Schritt (zuzahlungsfrei über § 40 Pflegehilfsmittel).",
         glossarBegriffe: [

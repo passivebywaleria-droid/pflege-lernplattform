@@ -5,8 +5,8 @@
 import type { SituationsPhase } from "../../../_types";
 
 export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
-  phaseId: "ls-frau-m-durchfuehren",
-  phase: "durchfuehren",
+  phaseId: "ls-frau-m-durchführen",
+  phase: "durchführen",
   titel: "Maßnahmen durchführen",
   titelB1: "Maßnahmen umsetzen",
   kontext:
@@ -18,7 +18,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
     // PILOT (Inline-Wissen v1, Phase 4): Vor dem Sorting-Step zum Transfer wird
     // Kinästhetik-Prinzip geklärt — Anti-Pattern \"ich hebe Sie hoch" muss bewusst werden.
     {
-      stepId: "ce02-frau-m-dur-00b-kinaesthetik-transfer",
+      stepId: "ce02-frau-m-dur-00b-kinästhetik-transfer",
       phase: 4,
       stepType: "inlineWissen",
       bloomLevel: 2,
@@ -30,10 +30,10 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       ],
       track: "basis",
       modus: "entdecker",
-      lernziel: "ce02-frau-m-dur-kinaesthetik",
+      lernziel: "ce02-frau-m-dur-kinästhetik",
       tag: "pflege",
       transition: "Du weisst wie. Jetzt die Reihenfolge.",
-      themaPrimaer: "kinaesthetik",
+      themaPrimaer: "kinästhetik",
       themenSekundaer: ["mobilisation", "sturz-prophylaxe"],
       contentC1: {
         title: "Kinästhetik — bevor du Frau M. hochbringst",
@@ -46,7 +46,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
         glossarBegriffe: ["Kinästhetik"],
       },
       inlineWissen: {
-        bausteinRef: "kinaesthetik-transfer-boden",
+        bausteinRef: "kinästhetik-transfer-boden",
         storyAufhaenger:
           "Frau M. liegt auf dem Boden, will hoch ins Bett. Du gehst gleich an den Transfer. Aber: **Du hebst sie nicht hoch.** Das ist Anti-Pattern. Hatch & Maietta haben Pflege-Kinästhetik aus japanischer Bewegungslehre + Tanztheorie entwickelt — Patient bewegt sich selbst, du begleitest.",
 
@@ -63,7 +63,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
         spektrum: [
           {
             patientName: "Frau Yilmaz (Hüft-TEP)",
-            situationsId: "ls-yilmaz-hueft-tep",
+            situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "Kinästhetik post-OP mit Lagerungsregeln",
             kurzbeschreibung:
               "Bei ihr: Kinästhetik unter Beachtung der Hüft-TEP-Verbote (max. 90° Flexion, keine Adduktion über Mittellinie, keine Innenrotation). Das schränkt Bewegungs-Ablauf ein — du brauchst Plan vorher.",
@@ -179,6 +179,60 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       },
     },
 
+    // ───── Inline-Wissen: Trochanter major ─────
+    // Der Begriff wird im nachfolgenden Pflegewagen-Step im Kontext der
+    // Mobilisation verwendet. Schüler muss den anatomischen Bezugspunkt kennen.
+    {
+      stepId: "ce02-frau-m-dur-iw-trochanter-major",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "I Care Anatomie, 2. Aufl. 2020, Thieme",
+        "DNQP 2022 — Expertenstandard Sturzprophylaxe in der Pflege",
+        "Hoehl/Kullick 2019",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-dur-trochanter-major",
+      tag: "anatomie",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["kinästhetik", "mobilisation"],
+      transition: "Du weißt jetzt wo der Trochanter major liegt — und warum er bei Frau M. gefährdet ist. Gleich richtest du das Material her.",
+      contentC1: {
+        title: "Trochanter major — warum dieser Knochenvorsprung bei Stürzen entscheidend ist",
+        body: "",
+        glossarBegriffe: ["Trochanter major", "Hüftfraktur", "Schenkelhalsfraktur"],
+      },
+      contentB1: {
+        title: "Trochanter major — der gefährdete Knochen an der Hüfte",
+        body: "",
+        glossarBegriffe: ["Trochanter major"],
+      },
+      inlineWissen: {
+        bausteinRef: "trochanter-major",
+        storyAufhaenger:
+          "Frau M. hat Schmerzen in der linken Hüfte — NRS 4 bei Bewegung. Keine sichtbare Verkürzung, keine Außenrotation. Aber bei Osteoporose (T-Wert -3,1) ist der **Trochanter major** der Knochen, der bei einem Sturz als erstes aufprallt — und am häufigsten bricht.",
+        storyAufhaengerB1:
+          "Frau M. hat Hüftschmerzen links. Bei ihren schwachen Knochen (Osteoporose) ist ein bestimmter Knochen an der Hüfte besonders gefährdet: der **Trochanter major**.",
+        kerntext:
+          "Der **Trochanter major** ist der große Knochenvorsprung an der Außenseite des Oberschenkelknochens (Femur), den du bei schlanken Menschen seitlich an der Hüfte tasten kannst.\n\n**Warum ist er sturzrelevant?**\n\n• Bei einem Sturz auf die Seite prallt der **Trochanter major direkt auf den Boden** — er ist kaum durch Muskulatur oder Fettgewebe gepolstert\n\n• Die häufigste Fraktur bei älteren Menschen nach Sturz ist die **proximale Femurfraktur** (Schenkelhalsfraktur oder pertrochantäre Fraktur) — zusammen ca. **120.000 Fälle pro Jahr** in Deutschland\n\n• Bei Osteoporose (wie bei Frau M., T-Wert -3,1) reicht bereits ein Sturz aus niedriger Höhe (Bettkante) für eine Fraktur\n\n**Klinische Zeichen einer Schenkelhalsfraktur:**\n\n• **Bein-Verkürzung** auf der betroffenen Seite\n\n• **Außenrotation** des Beins (Fuß dreht nach außen)\n\n• **Belastungsschmerz** — Patient kann nicht auf dem Bein stehen\n\n**Bei Frau M.:** Keine Verkürzung, keine Außenrotation — gute Zeichen. Aber: Mikrofrakturen sind klinisch nicht sichtbar. Deshalb: Bildgebung (Röntgen) bei der Arzt-Visite morgen empfehlen.\n\n**Hüftprotektor:** Polster, die den Trochanter major bei einem Sturz abfedern — dazu gleich mehr.",
+        kerntextB1:
+          "Der **Trochanter major** ist ein Knochen-Vorsprung an der Seite der Hüfte. Du kannst ihn an der Außenseite des Oberschenkels tasten.\n\n**Warum ist er wichtig?**\n\n• Wenn man auf die Seite fällt, trifft man genau diesen Knochen\n\n• Er hat wenig Schutz durch Muskeln oder Fett\n\n• Bei alten Menschen mit Osteoporose kann er leicht brechen (**Schenkelhalsfraktur**) — ca. 120.000 Mal pro Jahr in Deutschland\n\n**Zeichen für einen Bruch:**\n\n• Das Bein ist kürzer\n\n• Der Fuß dreht nach außen\n\n• Man kann nicht darauf stehen\n\n**Bei Frau M.:** Kein kurzes Bein, kein nach außen gedrehter Fuß — gute Zeichen. Aber: Kleine Brüche sieht man von außen nicht. Deshalb morgen Röntgen empfehlen.\n\n**Hüftprotektor:** Ein Polster, der genau diesen Knochen schützt. Dazu kommt gleich mehr.",
+        faustregel:
+          "Trochanter major = Aufprallzone bei seitlichem Sturz. Bei Osteoporose reicht ein Sturz aus Betthöhe für eine Fraktur.",
+        faustregelB1:
+          "Trochanter major = der Knochen, der bei einem Sturz auf die Seite als erstes den Boden trifft.",
+        karteikarte: {
+          vorderseite:
+            "Frau M. (82, Osteoporose T-Wert -3,1) ist auf die linke Seite gestürzt. Was ist der Trochanter major — und warum ist er sturzrelevant?",
+          rueckseite:
+            "Trochanter major = großer Knochenvorsprung am seitlichen Femur. Aufprallzone bei seitlichem Sturz, kaum gepolstert. Proximale Femurfraktur = häufigste Fraktur bei Älteren (~120.000/Jahr DE). Zeichen: Bein-Verkürzung, Außenrotation, Belastungsschmerz. Bei Frau M.: keine Zeichen, aber Mikrofraktur nicht ausschließbar → Röntgen empfehlen. Hüftprotektor polstert den Trochanter. Faustregel: Trochanter = Aufprallzone.",
+        },
+      },
+    },
+
     // Step 4.2b — Pflegewagen: Material für die erste Mobilisation vorbereiten
     {
       stepId: "ce02-frau-m-dur-02b-mobi-vorbereitung",
@@ -241,7 +295,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
                 "Sie schützen vor dem Ausrutschen. Das ist wichtig nach einem Sturz.",
             },
             {
-              id: "hueftprotektor",
+              id: "hüftprotektor",
               label: "Hüftprotektor",
               labelB1: "Hüft-Schutz",
               icon: "ShieldCheck",
@@ -330,7 +384,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
             },
           ],
           begruendung:
-            "Sturzprophylaxe nach Sturz folgt einem klaren Standard (DNQP): Sicherheit zuerst (Antirutsch-Socken, Brille, Notruf), Kreislauf-Stabilisierung (Schellong-Test, Wasser). Frakturschutz wie der Hüftprotektor wird nicht spontan beim ersten Aufstehen eingeführt — die Indikation klärt ihr später in Ruhe (siehe MC-Step im Anschluss).",
+            "Sturzprophylaxe nach Sturz folgt einem klaren Standard (DNQP): Sicherheit zürst (Antirutsch-Socken, Brille, Notruf), Kreislauf-Stabilisierung (Schellong-Test, Wasser). Frakturschutz wie der Hüftprotektor wird nicht spontan beim ersten Aufstehen eingeführt — die Indikation klärt ihr später in Ruhe (siehe MC-Step im Anschluss).",
           begruendungB1:
             "Nach einem Sturz brauchst du jetzt: Schutz (Socken, Brille), Sicherheit (Notruf), Kreislauf-Hilfe (Blutdruck, Wasser). Den Hüft-Schutz besprichst du später in Ruhe — nicht jetzt beim ersten Aufstehen.",
         },
@@ -439,7 +493,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
                   "Frau M. atmet tief. \"Danke. Mein Mann sagte immer: Zeit lassen hilft.\"",
                 score: 3,
                 feedback:
-                  "Ideal. Validierend, präsent, ohne Zeitdruck. Frau M. fühlt sich sicher. Der Satz 'Richard, mein Mann' zeigt dir: Sie öffnet sich. Solche Momente schaffen Vertrauen, das du in den nächsten Stunden brauchst.",
+                  "Ideal. Validierend, präsent, ohne Zeitdruck. Frau M. fühlt sich sicher. Der Satz 'Richard, mein Mann' zeigt dir: Sie öffnet sich. Solche Momente schaffen Vertraün, das du in den nächsten Stunden brauchst.",
                 feedbackB1:
                   "Perfekt. Du gibst ihr Zeit. Du bist da. Frau M. fühlt sich sicher. Sie spricht sogar über ihren Mann — das heißt: Sie vertraut dir jetzt mehr.",
               },
@@ -538,7 +592,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
                 patientResponseB1: "(Frau M. schaut beschämt.)",
                 score: 2,
                 feedback:
-                  "Wichtiger Moment. Frau M. zeigt offen ihre Scham — und zeigt damit Vertrauen zu dir. Die fachlich richtige Reaktion ist sofortige Validierung: 'Sie sind nicht umständlich, Frau M. Sie sind eine 82-jährige Frau, die nach einem Sturz das erste Mal aufsteht — und Sie machen das sehr gut.' Die Aussage hat zwei Teile: 1. Beschämung explizit zurückweisen ('nicht umständlich'). 2. Realität benennen (Sturz + Alter + erstmaliges Aufstehen). Damit nimmst du der Scham die Grundlage.",
+                  "Wichtiger Moment. Frau M. zeigt offen ihre Scham — und zeigt damit Vertraün zu dir. Die fachlich richtige Reaktion ist sofortige Validierung: 'Sie sind nicht umständlich, Frau M. Sie sind eine 82-jährige Frau, die nach einem Sturz das erste Mal aufsteht — und Sie machen das sehr gut.' Die Aussage hat zwei Teile: 1. Beschämung explizit zurückweisen ('nicht umständlich'). 2. Realität benennen (Sturz + Alter + erstmaliges Aufstehen). Damit nimmst du der Scham die Grundlage.",
                 feedbackB1:
                   "Wichtig. Frau M. schämt sich. Sie zeigt dir das offen — sie vertraut dir. Was du jetzt sagst: 'Sie sind nicht umständlich, Frau M. Sie sind 82, Sie sind gestürzt, und Sie stehen das erste Mal wieder auf. Sie machen das sehr gut.' Zwei Teile: 1. 'Nicht umständlich' (Scham widersprechen). 2. Realität benennen (Alter, Sturz, erstes Aufstehen). So nimmst du der Scham den Boden.",
               },
@@ -620,7 +674,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
             feedback:
               "Gefährlich. Bei Schwindel NACH frischem Sturz, Parkinson und Restwirkung Zolpidem ist 'weitergehen' keine Option — das Sturzrisiko ist akut. Ein zweiter Sturz in derselben Nacht wäre traumatisch (Post-Fall-Syndrom verstärken) und fachlich vermeidbar. Tief atmen hilft bei leichter Nervosität, nicht bei echter Orthostase. Richtiger Weg: Sofort sicheren Untergrund, Reassessment, 2. Person.",
             feedbackB1:
-              "Gefährlich. Nach dem Sturz + Parkinson + Zolpidem ist 'weitergehen' falsch. Ein zweiter Sturz in derselben Nacht wäre sehr schlimm. Tief atmen hilft bei Nervosität, nicht bei echter Orthostase. Richtig: Sofort hinsetzen, schauen, 2. Person holen.",
+              "Gefährlich. Nach dem Sturz + Parkinson + Zolpidem ist 'weitergehen' falsch. Ein zweiter Sturz in derselben Nacht wäre sehr schlimm. Tief atmen hilft bei Nervosität, nicht bei echter Orthostase. Richtig: Sofort hinsetzen, schaün, 2. Person holen.",
             isCorrect: false,
           },
         ],
@@ -639,7 +693,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-frau-m-dur-beratung",
       tag: "pflege",
-      transition: "Noch etwas: Hueftprotektor. Sie kennt das Wort nicht.",
+      transition: "Noch etwas: Hüftprotektor. Sie kennt das Wort nicht.",
       displayFormat: "scenario",
       contentC1: {
         title: "Beratung gegen Sturzangst — 3 Bausteine",
@@ -653,9 +707,63 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       },
     },
 
+    // ───── Inline-Wissen: Hüftprotektor ─────
+    // Der Begriff wird im nachfolgenden MC-Step verwendet.
+    // Schüler muss wissen was ein Hüftprotektor ist, bevor er über die Indikation entscheidet.
+    {
+      stepId: "ce02-frau-m-dur-iw-hüftprotektor",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP 2022 — Expertenstandard Sturzprophylaxe in der Pflege",
+        "Cochrane Review Parker et al. 2006 (Update 2018) — Hip protectors for preventing hip fractures in older people",
+        "I Care Pflege, 2. Aufl. 2020, Thieme",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-dur-hüftprotektor-grundwissen",
+      tag: "pflege",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["mobilisation"],
+      transition: "Du weißt jetzt was ein Hüftprotektor ist und wann er sinnvoll ist. Gleich entscheidest du: Empfiehlst du ihn Frau M. — ja, nein, oder kommt drauf an?",
+      contentC1: {
+        title: "Hüftprotektor — was ist das und wann hilft er?",
+        body: "",
+        glossarBegriffe: ["Hüftprotektor", "Trochanter major"],
+      },
+      contentB1: {
+        title: "Hüftprotektor — was ist das?",
+        body: "",
+        glossarBegriffe: ["Hüftprotektor"],
+      },
+      inlineWissen: {
+        bausteinRef: "hüftprotektor",
+        storyAufhaenger:
+          "Es ist 04:30 Uhr. Frau M. liegt im Bett, der erste Toilettengang hat geklappt. Du willst mit ihr über einen **Hüftprotektor** sprechen — ein Hilfsmittel, das sie noch nicht kennt. Aber bevor du berätst, musst du selbst wissen: Was ist das genau, und bei wem hilft es wirklich?",
+        storyAufhaengerB1:
+          "Frau M. liegt im Bett. Du willst mit ihr über einen **Hüftprotektor** sprechen. Sie kennt das Wort nicht. Was ist das — und wem hilft es?",
+        kerntext:
+          "Ein **Hüftprotektor** ist eine gepolsterte Unterhose mit integrierten Schalen oder Polstern über den Trochanteren major (die seitlichen Knochenvorsprünge am Oberschenkel). Bei einem Sturz auf die Seite absorbiert das Polster die Aufprallenergie und verteilt sie — statt dass der Knochen direkt den Boden trifft.\n\n**Evidenz (Cochrane Review Parker et al., Update 2018):**\n\n• **In Pflegeheimen:** Signifikante Reduktion von Hüftfrakturen bei konsequentem Tragen\n\n• **Im häuslichen Setting:** Evidenz schwächer — das Hauptproblem ist **Compliance** (Patienten tragen den Protektor nicht konsequent)\n\n• **Im Akutkrankenhaus:** Keine klare Empfehlung — Aufenthalt zu kurz für Gewöhnung\n\n**Compliance-Probleme (das Haupthindernis):**\n\n• Unbequem unter der Kleidung (Hitze, Druckstellen)\n\n• Schwierig allein anzuziehen (bei eingeschränkter Mobilität)\n\n• Ästhetik — viele Patienten empfinden ihn als stigmatisierend\n\n• Inkontinenz — Wechseln wird aufwändiger\n\n**Indikation nach DNQP 2022:**\n\n• Hochrisiko-Patient (Sturzgeschichte + Osteoporose)\n\n• Besonders: Pflegeheim, ambulant mit wiederholten Stürzen\n\n• Immer: **mit** dem Patienten besprechen, nicht **über** ihn entscheiden\n\n**Bei Frau M.:** Osteoporose T-Wert -3,1 + frischer Sturz = grundsätzlich Indikation. Aber: im Akutkrankenhaus nicht primär sinnvoll (kurzer Aufenthalt, Compliance noch nicht getestet). Für die Entlassung nach Hause mit Tochter besprechen.",
+        kerntextB1:
+          "Ein **Hüftprotektor** ist eine spezielle Unterhose mit Polstern an der Seite. Die Polster schützen den Knochen an der Hüfte (Trochanter major), wenn man auf die Seite fällt.\n\n**Hilft das wirklich?**\n\n• Im **Pflegeheim:** ja — wenn man ihn regelmäßig trägt\n\n• **Zu Hause:** hilft auch — aber viele tragen ihn nicht regelmäßig\n\n• Im **Krankenhaus:** zu kurze Zeit, um sich daran zu gewöhnen\n\n**Warum tragen viele ihn nicht?**\n\n• Unbequem (warm, drückt)\n\n• Schwer alleine anzuziehen\n\n• Peinlich (sieht man unter der Kleidung)\n\n• Bei Inkontinenz: Wechseln dauert länger\n\n**Wann empfohlen (DNQP 2022)?**\n\n• Hohes Sturzrisiko + Osteoporose\n\n• Vor allem: Pflegeheim oder zuhause mit vielen Stürzen\n\n• Immer: **mit** der Patientin besprechen\n\n**Bei Frau M.:** Osteoporose + Sturz = grundsätzlich ja. Aber: jetzt im Krankenhaus nicht sinnvoll. Für zuhause mit ihrer Tochter besprechen.",
+        faustregel:
+          "Hüftprotektor polstert den Trochanter major bei Seitensturz. Wirksam bei Compliance — und die ist das Hauptproblem.",
+        faustregelB1:
+          "Hüftprotektor = Polster an der Hüfte. Schützt bei Sturz. Aber: nur wenn man ihn auch trägt.",
+        karteikarte: {
+          vorderseite:
+            "Frau M. (82, Osteoporose, frischer Sturz) — was ist ein Hüftprotektor, und würdest du ihn im Akutkrankenhaus empfehlen?",
+          rueckseite:
+            "Hüftprotektor = gepolsterte Unterhose, schützt Trochanter major bei Seitensturz. Evidenz (Cochrane 2018): signifikant in Pflegeheimen, schwächer ambulant, keine Empfehlung Akutkrankenhaus. Hauptproblem: Compliance (Komfort, Ästhetik, Inkontinenz). Bei Frau M.: Indikation ja (Osteoporose + Sturz), aber akut nicht sinnvoll — für Entlassung mit Tochter besprechen. Faustregel: Wirksam wenn getragen — Compliance ist der Schlüssel.",
+        },
+      },
+    },
+
     // Step 4.7 — MC (fallstrick): Hüftprotektor
     {
-      stepId: "ce02-frau-m-dur-07-hueftprotektor-option",
+      stepId: "ce02-frau-m-dur-07-hüftprotektor-option",
       phase: 4,
       stepType: "mc",
       bloomLevel: 4,
@@ -663,7 +771,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       quellen: ["DNQP 2022"],
       track: "basis",
       modus: "challenge",
-      lernziel: "ce02-frau-m-dur-hueftprotektor",
+      lernziel: "ce02-frau-m-dur-hüftprotektor",
       tag: "pflege",
       contentC1: {
         title: "Hüftprotektor für Frau M.?",
@@ -700,7 +808,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
             text: "Bei diesem akuten Aufenthalt eher nicht — Compliance schlecht, Fokus auf Medikamentenreview + Umgebung; für Entlassung nach Hause ggf. mit Tochter besprechen.",
             isCorrect: true,
             explanation:
-              "Genau — nuancierte, evidenzbasierte Antwort. Im Akut-Setting ist der Nutzen fraglich: Compliance ist bei neuer Versorgung schwer herzustellen, die Hauptrisiken (Zolpidem, Umgebung) werden bereits adressiert. Für **zu Hause** — wo sie allein lebt und weiter stürzen könnte — ist ein Hüftprotektor eine Option, die mit der Tochter (und ggf. Ergotherapie für Gesamt-Hilfsmittel-Beratung) besprochen werden sollte. Das respektiert auch Frau M.s Autonomie.",
+              "Genau — nuancierte, evidenzbasierte Antwort. Im Akut-Setting ist der Nutzen fraglich: Compliance ist bei neür Versorgung schwer herzustellen, die Hauptrisiken (Zolpidem, Umgebung) werden bereits adressiert. Für **zu Hause** — wo sie allein lebt und weiter stürzen könnte — ist ein Hüftprotektor eine Option, die mit der Tochter (und ggf. Ergotherapie für Gesamt-Hilfsmittel-Beratung) besprochen werden sollte. Das respektiert auch Frau M.s Autonomie.",
             explanationB1:
               "Sehr gut — kluge Antwort. Jetzt im Krankenhaus bringt er wenig: Sie muss erst lernen, ihn zu tragen. Die wichtigeren Sachen (Zolpidem, sichere Umgebung) machen wir schon. Aber: Für **zu Hause** ist es sinnvoll — sie wohnt alleine. Also: Mit ihr und der Tochter besprechen.",
           },

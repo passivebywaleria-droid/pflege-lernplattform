@@ -59,15 +59,15 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
           "DNQP 6 Punkte: Einschätzen → Beraten → MIT Patient planen → Tun → Bei Sturz eskalieren → Prüfen.",
         spektrum: [
           {
-            patientName: "Herr Bauer (Demenz)",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür (Demenz)",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "Kriterium 3 schwierig bei Demenz",
             kurzbeschreibung:
-              "Bei fortgeschrittener Demenz ist \"gemeinsame Maßnahmenplanung\" eingeschränkt — Validation nach Naomi Feil + Einbezug der Tochter Ingrid (gesetzliche Betreuerin) wird zentral.",
+              "Bei fortgeschrittener Demenz ist \"gemeinsame Maßnahmenplanung\" eingeschränkt — Validation nach Naomi Feil + Einbezug der Tochter Ingrid (gesetzliche Betreürin) wird zentral.",
           },
           {
             patientName: "Frau Yilmaz (Hüft-TEP)",
-            situationsId: "ls-yilmaz-hueft-tep",
+            situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "Kriterium 4 ist post-OP-spezifisch",
             kurzbeschreibung:
               "Bei ihr ist \"Maßnahmen durchführen\" anders gewichtet: Lagerungsregeln (max. 90° Hüftflexion), Kraft-Balance-Training erst nach Wundheilung, Hilfsmittel = Rollator + Toilettensitzerhöhung.",
@@ -218,31 +218,31 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
         storyAufhaengerB1:
           "Gleich entscheidest du: Beide Bettgitter hoch — oder eines — oder keines? Das ist nicht nur Pflege, das ist auch **Recht**. § 1831 BGB regelt das.",
         kerntext:
-          "**Wann ist ein Bettgitter eine Fixierung?**\n\nLaut **BGH 2019**: Wenn der Patient durch das Bettgitter daran gehindert wird, das Bett zu verlassen. Dann liegt eine **freiheitsentziehende Maßnahme (FEM)** vor.\n\n**Folgen einer FEM:**\n\n• **Patient kann selbst zustimmen** (informed consent + Dokumentation) — dann legal.\n\n• **Patient kann nicht zustimmen** (Demenz, Bewusstlosigkeit, Verwirrung) — Pflicht: **richterliche Genehmigung** nach § 1831 BGB. Antrag durch Betreuer/Bevollmächtigten.\n\n• **Notfall:** § 34 StGB Notstand — kurzfristige FEM ohne Genehmigung erlaubt, **muss aber sofort angezeigt** und nachträglich genehmigt werden.\n\n**Bettgitter ohne FEM-Charakter (kein Genehmigungsbedarf):**\n\n• **Einseitig** + Patient kann selbst raus auf der anderen Seite — dann nur Sturzschutz, keine FEM.\n\n• **Halbe Bettgitter** (1/3 oder 2/3) — Sturzhinweis, kein Hindernis.\n\n• **Mit Patienten-Wunsch** (er fühlt sich sicherer mit Gitter) + Doku.\n\n**Bei Frau M.:** Sie ist **orientiert**, kann **zustimmen oder ablehnen**. Du musst sie fragen — Selbstbestimmung respektieren (DNQP Kriterium 3).\n\n**Werdenfelser Weg (2022):** Alternativen vor FEM. Niedrigbett, Sensormatte, Klingelband am Handgelenk, Bewegungsmelder. Werden in der Praxis zu wenig genutzt — Pflege kann hier viel bewegen.",
+          "**Wann ist ein Bettgitter eine Fixierung?**\n\nLaut **BGH 2019**: Wenn der Patient durch das Bettgitter daran gehindert wird, das Bett zu verlassen. Dann liegt eine **freiheitsentziehende Maßnahme (FEM)** vor.\n\n**Folgen einer FEM:**\n\n• **Patient kann selbst zustimmen** (informed consent + Dokumentation) — dann legal.\n\n• **Patient kann nicht zustimmen** (Demenz, Bewusstlosigkeit, Verwirrung) — Pflicht: **richterliche Genehmigung** nach § 1831 BGB. Antrag durch Betreür/Bevollmächtigten.\n\n• **Notfall:** § 34 StGB Notstand — kurzfristige FEM ohne Genehmigung erlaubt, **muss aber sofort angezeigt** und nachträglich genehmigt werden.\n\n**Bettgitter ohne FEM-Charakter (kein Genehmigungsbedarf):**\n\n• **Einseitig** + Patient kann selbst raus auf der anderen Seite — dann nur Sturzschutz, keine FEM.\n\n• **Halbe Bettgitter** (1/3 oder 2/3) — Sturzhinweis, kein Hindernis.\n\n• **Mit Patienten-Wunsch** (er fühlt sich sicherer mit Gitter) + Doku.\n\n**Bei Frau M.:** Sie ist **orientiert**, kann **zustimmen oder ablehnen**. Du musst sie fragen — Selbstbestimmung respektieren (DNQP Kriterium 3).\n\n**Werdenfelser Weg (2022):** Alternativen vor FEM. Niedrigbett, Sensormatte, Klingelband am Handgelenk, Bewegungsmelder. Werden in der Praxis zu wenig genutzt — Pflege kann hier viel bewegen.",
         kerntextB1:
-          "**Wann ist ein Bettgitter eine Fixierung?**\n\nDas Gericht hat 2019 entschieden: Wenn der Patient durch das Bettgitter NICHT mehr aus dem Bett kommt, ist es eine **Fixierung** (= freiheitsentziehende Maßnahme).\n\n**Wenn es eine Fixierung ist:**\n\n• **Patient sagt selbst Ja** und du schreibst es auf — dann erlaubt.\n\n• **Patient kann nicht entscheiden** (Demenz, bewusstlos) — du brauchst **Erlaubnis vom Richter** (§ 1831 BGB). Den Antrag stellt der Betreuer.\n\n• **Notfall:** Du darfst kurzfristig fixieren ohne Erlaubnis (§ 34 StGB), musst es aber SOFORT melden und nachträglich genehmigen lassen.\n\n**Wann ist es KEINE Fixierung?**\n\n• **Nur ein Gitter** + Patient kann auf der anderen Seite raus — kein Problem.\n\n• **Halbe Bettgitter** (kurze Stücke) — nur als Hinweis, kein Hindernis.\n\n• **Patient will es selbst** + du schreibst es auf — kein Problem.\n\n**Bei Frau M.:** Sie ist **wach und kann selbst entscheiden**. Du musst sie fragen!\n\n**Werdenfelser Weg (2022):** Es gibt **Alternativen**, bevor man fixiert. Z.B.:\n\n• Niedriges Bett\n\n• Sensor-Matte am Boden (klingelt wenn jemand aufsteht)\n\n• Klingelband am Arm",
+          "**Wann ist ein Bettgitter eine Fixierung?**\n\nDas Gericht hat 2019 entschieden: Wenn der Patient durch das Bettgitter NICHT mehr aus dem Bett kommt, ist es eine **Fixierung** (= freiheitsentziehende Maßnahme).\n\n**Wenn es eine Fixierung ist:**\n\n• **Patient sagt selbst Ja** und du schreibst es auf — dann erlaubt.\n\n• **Patient kann nicht entscheiden** (Demenz, bewusstlos) — du brauchst **Erlaubnis vom Richter** (§ 1831 BGB). Den Antrag stellt der Betreür.\n\n• **Notfall:** Du darfst kurzfristig fixieren ohne Erlaubnis (§ 34 StGB), musst es aber SOFORT melden und nachträglich genehmigen lassen.\n\n**Wann ist es KEINE Fixierung?**\n\n• **Nur ein Gitter** + Patient kann auf der anderen Seite raus — kein Problem.\n\n• **Halbe Bettgitter** (kurze Stücke) — nur als Hinweis, kein Hindernis.\n\n• **Patient will es selbst** + du schreibst es auf — kein Problem.\n\n**Bei Frau M.:** Sie ist **wach und kann selbst entscheiden**. Du musst sie fragen!\n\n**Werdenfelser Weg (2022):** Es gibt **Alternativen**, bevor man fixiert. Z.B.:\n\n• Niedriges Bett\n\n• Sensor-Matte am Boden (klingelt wenn jemand aufsteht)\n\n• Klingelband am Arm",
         faustregel:
           "Beide Bettgitter hoch + nicht-zustimmungsfähig + ohne richterliche Genehmigung = strafbare Freiheitsberaubung. Bei orientierten Patienten: fragen, dokumentieren, Selbstbestimmung respektieren.",
         faustregelB1:
           "Beide Bettgitter hoch + Patient kann nicht zustimmen + keine Erlaubnis vom Richter = STRAFBAR. Bei wachen Patienten immer fragen!",
         spektrum: [
           {
-            patientName: "Herr Bauer (Demenz)",
-            situationsId: "ls-bauer-demenz-sturz",
+            patientName: "Herr Baür (Demenz)",
+            situationsId: "ls-baür-demenz-sturz",
             hauptfaktor: "FEM-Genehmigung über Tochter Ingrid",
             kurzbeschreibung:
-              "Bei fortgeschrittener Demenz ist Patient nicht zustimmungsfähig — FEM braucht Genehmigung über gesetzlichen Betreuer (Tochter Ingrid). Werdenfelser Weg: Niedrigbett + Sensormatte vor jedem Gitter.",
+              "Bei fortgeschrittener Demenz ist Patient nicht zustimmungsfähig — FEM braucht Genehmigung über gesetzlichen Betreür (Tochter Ingrid). Werdenfelser Weg: Niedrigbett + Sensormatte vor jedem Gitter.",
           },
           {
             patientName: "Frau Yilmaz (Hüft-TEP)",
-            situationsId: "ls-yilmaz-hueft-tep",
+            situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "Bettgitter post-OP klar nicht-FEM",
             kurzbeschreibung:
               "Bei ihr sind Bettgitter post-OP-Tag-1 unkritisch: orientiert, lehnt nicht ab, kann selbst zustimmen. Plus: nach 90°-Lagerungsregel ohnehin reduzierte Mobilität — Gitter dienen primär dem Selbstschutz.",
           },
           {
             patientName: "Lukas (Säugling, Verbrühung)",
-            situationsId: "ls-lukas-verbruehung",
+            situationsId: "ls-lukas-verbrühung",
             hauptfaktor: "Sicherheits-Gitter ist Pflicht, keine FEM",
             kurzbeschreibung:
               "Bei Säuglingen/Kleinkindern sind Bett-Gitter Sicherheits-Standard, keine FEM — Eltern oder Sorgeberechtigte stimmen routinemäßig zu (Aufnahmegespräch).",
@@ -309,7 +309,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
           {
             text: "\"Ich frage den Arzt morgen früh, dann entscheiden wir.\"",
             feedback:
-              "Zwischen-Antwort. Du hast das Bauchgefühl richtig — du zögerst bei der Fixierung. Aber: Frau M. braucht JETZT eine sichere Nacht, nicht morgen. Und: Auch der Arzt darf keine Bettgitter ohne Zustimmung anordnen. Das ist ein rechtliches Thema. Richtig wäre: Sofortmaßnahmen ohne Fixierung (Bett niedrig, Nachtlicht, Klingel, ggf. Präsenz), und am Morgen strukturiertes Gespräch mit Arzt + Frau M. über dauerhafte Lösungen.",
+              "Zwischen-Antwort. Du hast das Bauchgefühl richtig — du zögerst bei der Fixierung. Aber: Frau M. braucht JETZT eine sichere Nacht, nicht morgen. Und: Auch der Arzt darf keine Bettgitter ohne Zustimmung anordnen. Das ist ein rechtliches Thema. Richtig wäre: Sofortmaßnahmen ohne Fixierung (Bett niedrig, Nachtlicht, Klingel, ggf. Präsenz), und am Morgen strukturiertes Gespräch mit Arzt + Frau M. über daürhafte Lösungen.",
             feedbackB1:
               "Du bist auf dem richtigen Weg — du zögerst. Aber: Frau M. braucht SOFORT eine sichere Nacht. Und: Auch der Arzt darf Bettgitter nicht einfach anordnen. Das ist rechtlich. Mach jetzt: Bett niedrig, Nachtlicht, Klingel. Morgen: Gespräch mit Arzt und Frau M.",
             isCorrect: false,
@@ -330,7 +330,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       modus: "story",
       lernziel: "ce02-frau-m-plan-angst",
       tag: "pflege",
-      transition: "Gleich rufst du den Arzt an. SBAR macht dich in 30 Sekunden praezise.",
+      transition: "Gleich rufst du den Arzt an. SBAR macht dich in 30 Sekunden präzise.",
       displayFormat: "scenario",
       contentC1: {
         title: "Post-Fall-Angst adressieren",
@@ -341,7 +341,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       contentB1: {
         title: "Frau M.s Angst ernst nehmen",
         // FIX (walkthrough B-14): Markdown-Underscores entfernt.
-        body: "Frau M. sitzt im Bett. Sie faltet die Hände. Sie sagt leise:\n\n> \"Ich habe Angst. Nicht vor Ihnen. Ich habe Angst, wieder aufzustehen. Wenn ich noch einmal falle — was ist dann mit meiner Wohnung?\"\n\nDas ist **Post-Fall-Angst** — der Anfang eines Teufelskreises: Angst → weniger Bewegung → schwächere Muskeln → schlechteres Gleichgewicht → neues Sturzrisiko. Deine Aufgabe: **Angst ernst nehmen**. Nicht sagen: 'Das wird schon.' Und: Perspektive geben. Sage: 'Der Grund ist kein Alter — es war die Tablette. Die kann man ändern.' Merke: Bewegung ist die Therapie. Aber: langsam, mit Erfolgen, sicher.",
+        body: "Frau M. sitzt im Bett. Sie faltet die Hände. Sie sagt leise:\n\n> \"Ich habe Angst. Nicht vor Ihnen. Ich habe Angst, wieder aufzustehen. Wenn ich noch einmal falle — was ist dann mit meiner Wohnung?\"\n\nDas ist **Post-Fall-Angst** — der Anfang eines Teufelskreises: Angst → weniger Bewegung → schwächere Muskeln → schlechteres Gleichgewicht → neüs Sturzrisiko. Deine Aufgabe: **Angst ernst nehmen**. Nicht sagen: 'Das wird schon.' Und: Perspektive geben. Sage: 'Der Grund ist kein Alter — es war die Tablette. Die kann man ändern.' Merke: Bewegung ist die Therapie. Aber: langsam, mit Erfolgen, sicher.",
         glossarBegriffe: ["Post-Fall-Syndrom"],
       },
     },
@@ -384,9 +384,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
         storyAufhaengerB1:
           "Du rufst gleich den Arzt an. **Wenn du wirr erzählst, fragt er viel zurück.** Mit SBAR brauchst du nur 30 Sekunden — und der Arzt versteht alles.",
         kerntext:
-          "**SBAR = Situation, Background, Assessment, Recommendation** — entwickelt von der US-Navy, in der Pflege seit ~2005 Standard, in Deutschland Kern der DIVI-Übergabe-Empfehlung.\n\n**S — Situation (10 Sek):**\n\n• Wer ruft an, von wo, welcher Patient, was ist akut.\n\n• Bei Frau M.: \"Hier Schwester X, Station 3B, Zimmer 14. Frau M., 82, ist um 02:48 Uhr aus dem Bett gestürzt.\"\n\n**B — Background (15 Sek):**\n\n• Aufnahmegrund + relevante Vorgeschichte + Medikation.\n\n• Bei Frau M.: \"Stationäre Aufnahme Dienstag, Pneumonie Tag 3 Antibiose. Vorerkrankungen: Parkinson II, Osteoporose, Katarakt. Seit 2 Tagen neu: Zolpidem 10 mg.\"\n\n**A — Assessment (15 Sek):**\n\n• Vitalwerte + aktueller Befund + deine Einschätzung.\n\n• Bei Frau M.: \"RR 142/88, HF 76, SpO2 95 %, Temp 36,8. Wach, orientiert, NRS 4 in der linken Hüfte. Keine Verkürzung, keine Außenrotation. ABCDE unauffällig. Verdacht: Hüftprellung, Parkinson + Zolpidem als Sturz-Auslöser.\"\n\n**R — Recommendation (10 Sek):**\n\n• Konkreter Vorschlag, was du brauchst.\n\n• Bei Frau M.: \"Ich brauche Bedarfsanalgesie nach AVO und eine ärztliche Sturzbeurteilung morgen früh. Frage: Können wir Zolpidem heute pausieren?\"\n\n**Tipps für sicheren SBAR-Anruf:**\n\n• Notiere die 4 Punkte vorher auf einem Zettel — auch erfahrene Pflegekräfte tun das.\n\n• **Frag nach Repeat-Back:** \"Ich notiere die AVO — können Sie sie nochmal sagen?\" Verhindert Missverständnisse.\n\n• **Dokumentiere AVO sofort** mit Zeitstempel + ärztl. Namen.",
+          "**SBAR = Situation, Background, Assessment, Recommendation** — entwickelt von der US-Navy, in der Pflege seit ~2005 Standard, in Deutschland Kern der DIVI-Übergabe-Empfehlung.\n\n**S — Situation (10 Sek):**\n\n• Wer ruft an, von wo, welcher Patient, was ist akut.\n\n• Bei Frau M.: \"Hier Schwester X, Station 3B, Zimmer 14. Frau M., 82, ist um 02:48 Uhr aus dem Bett gestürzt.\"\n\n**B — Background (15 Sek):**\n\n• Aufnahmegrund + relevante Vorgeschichte + Medikation.\n\n• Bei Frau M.: \"Stationäre Aufnahme Dienstag, Pneumonie Tag 3 Antibiose. Vorerkrankungen: Parkinson II, Osteoporose, Katarakt. Seit 2 Tagen neu: Zolpidem 10 mg.\"\n\n**A — Assessment (15 Sek):**\n\n• Vitalwerte + aktüller Befund + deine Einschätzung.\n\n• Bei Frau M.: \"RR 142/88, HF 76, SpO2 95 %, Temp 36,8. Wach, orientiert, NRS 4 in der linken Hüfte. Keine Verkürzung, keine Außenrotation. ABCDE unauffällig. Verdacht: Hüftprellung, Parkinson + Zolpidem als Sturz-Auslöser.\"\n\n**R — Recommendation (10 Sek):**\n\n• Konkreter Vorschlag, was du brauchst.\n\n• Bei Frau M.: \"Ich brauche Bedarfsanalgesie nach AVO und eine ärztliche Sturzbeurteilung morgen früh. Frage: Können wir Zolpidem heute pausieren?\"\n\n**Tipps für sicheren SBAR-Anruf:**\n\n• Notiere die 4 Punkte vorher auf einem Zettel — auch erfahrene Pflegekräfte tun das.\n\n• **Frag nach Repeat-Back:** \"Ich notiere die AVO — können Sie sie nochmal sagen?\" Verhindert Missverständnisse.\n\n• **Dokumentiere AVO sofort** mit Zeitstempel + ärztl. Namen.",
         kerntextB1:
-          "**SBAR = Situation, Background, Assessment, Recommendation** — eine Struktur für Übergaben.\n\n**S — Situation (10 Sek):**\n\n• Wer du bist, wo du bist, welcher Patient, was passiert ist.\n\n• Bei Frau M.: \"Hier Schwester X, Station 3B, Zimmer 14. Frau M., 82, ist um 02:48 Uhr aus dem Bett gestürzt.\"\n\n**B — Background (15 Sek):**\n\n• Warum ist Patient hier, was ist die Vorgeschichte, was nimmt sie.\n\n• Bei Frau M.: \"Aufnahme Dienstag, Lungenentzündung Tag 3. Hat Parkinson, Osteoporose. Seit 2 Tagen Schlafmittel Zolpidem.\"\n\n**A — Assessment (15 Sek):**\n\n• Vitalwerte + aktuelle Beobachtung + deine Einschätzung.\n\n• Bei Frau M.: \"RR 142/88, Puls 76, SpO2 95 %. Wach, orientiert, Schmerz 4/10 in der linken Hüfte. Kein Bein-Bruch sichtbar. Vermutung: Prellung.\"\n\n**R — Recommendation (10 Sek):**\n\n• Was du brauchst.\n\n• Bei Frau M.: \"Ich brauche ein Schmerzmittel und morgen ärztliche Untersuchung. Frage: Können wir das Schlafmittel heute pausieren?\"\n\n**Tipps:**\n\n• **Notiere die 4 Punkte vorher** auf Zettel.\n\n• **Frag den Arzt nochmal:** \"Können Sie die Anordnung wiederholen?\"\n\n• **Schreibe sofort auf** mit Uhrzeit + Arztnamen.",
+          "**SBAR = Situation, Background, Assessment, Recommendation** — eine Struktur für Übergaben.\n\n**S — Situation (10 Sek):**\n\n• Wer du bist, wo du bist, welcher Patient, was passiert ist.\n\n• Bei Frau M.: \"Hier Schwester X, Station 3B, Zimmer 14. Frau M., 82, ist um 02:48 Uhr aus dem Bett gestürzt.\"\n\n**B — Background (15 Sek):**\n\n• Warum ist Patient hier, was ist die Vorgeschichte, was nimmt sie.\n\n• Bei Frau M.: \"Aufnahme Dienstag, Lungenentzündung Tag 3. Hat Parkinson, Osteoporose. Seit 2 Tagen Schlafmittel Zolpidem.\"\n\n**A — Assessment (15 Sek):**\n\n• Vitalwerte + aktülle Beobachtung + deine Einschätzung.\n\n• Bei Frau M.: \"RR 142/88, Puls 76, SpO2 95 %. Wach, orientiert, Schmerz 4/10 in der linken Hüfte. Kein Bein-Bruch sichtbar. Vermutung: Prellung.\"\n\n**R — Recommendation (10 Sek):**\n\n• Was du brauchst.\n\n• Bei Frau M.: \"Ich brauche ein Schmerzmittel und morgen ärztliche Untersuchung. Frage: Können wir das Schlafmittel heute pausieren?\"\n\n**Tipps:**\n\n• **Notiere die 4 Punkte vorher** auf Zettel.\n\n• **Frag den Arzt nochmal:** \"Können Sie die Anordnung wiederholen?\"\n\n• **Schreibe sofort auf** mit Uhrzeit + Arztnamen.",
         faustregel:
           "SBAR in 50 Sekunden: 10s Situation + 15s Background + 15s Assessment + 10s Recommendation. Vorher aufschreiben, nachher Repeat-Back.",
         faustregelB1:
@@ -408,7 +408,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
           },
           {
             patientName: "Frau Yilmaz (Hüft-TEP)",
-            situationsId: "ls-yilmaz-hueft-tep",
+            situationsId: "ls-yilmaz-hüft-tep",
             hauptfaktor: "SBAR + Wunddokumentation post-OP",
             kurzbeschreibung:
               "Post-OP-Schichtübergabe nutzt SBAR + zusätzliches Wund-Foto-Dokument (mit Einwilligung). Background-Teil enthält OP-Berichts-Kerndaten.",
@@ -423,6 +423,60 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
             "Es ist 03:15 Uhr. Du musst den Nachtarzt wegen Frau M. (Sturz, Hüftschmerz NRS 4) anrufen. Welche Struktur, welche Inhalte?",
           rueckseite:
             "SBAR (Situation/Background/Assessment/Recommendation):\n\nS (10s): \"Schwester X, Station 3B, Zimmer 14. Frau M., 82, ist um 02:48 gestürzt.\"\nB (15s): \"Aufnahme Dienstag, Pneumonie Tag 3, Parkinson II, Osteoporose, seit 2 Tagen Zolpidem.\"\nA (15s): \"RR 142/88, HF 76, SpO2 95%. Wach, orientiert, NRS 4 linke Hüfte. Keine Verkürzung/Außenrotation.\"\nR (10s): \"Bedarfsanalgesie nach AVO + ärztliche Sturzbeurteilung morgen. Frage: Zolpidem heute pausieren?\"\n\nFaustregel: 50 Sek total, vorher aufschreiben, nachher Repeat-Back. Sofortige Doku mit Zeitstempel + Arztname. (Aktionsbündnis Patientensicherheit 2014, DIVI 2020)",
+        },
+      },
+    },
+
+    // ───── Inline-Wissen: Interprofessionell ─────
+    // Der Begriff wird im nachfolgenden Matching-Step verwendet.
+    // Schüler muss verstehen was interprofessionelle Zusammenarbeit bedeutet.
+    {
+      stepId: "ce02-frau-m-plan-iw-interprofessionell",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "V.1",
+      quellen: [
+        "§ 5 PflBG — Ausbildungsziel generalistische Pflege",
+        "WHO 2010 — Framework for Action on Interprofessional Education & Collaborative Practice",
+        "Sachverständigenrat Gesundheit 2007 — Kooperation und Verantwortung",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-frau-m-plan-interprofessionell",
+      tag: "pflege",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["pflegeprozess"],
+      transition: "Du weißt jetzt warum Teamarbeit kein Bonus ist, sondern Pflicht. Gleich ordnest du die Aufgaben zu.",
+      contentC1: {
+        title: "Was heißt interprofessionell — und warum ist das bei Frau M. wichtig?",
+        body: "",
+        glossarBegriffe: ["Interprofessionell", "Interprofessionelle Zusammenarbeit"],
+      },
+      contentB1: {
+        title: "Interprofessionell — was bedeutet das?",
+        body: "",
+        glossarBegriffe: ["Interprofessionell"],
+      },
+      inlineWissen: {
+        bausteinRef: "interprofessionell",
+        storyAufhaenger:
+          "Frau M. liegt wieder im Bett. Zolpidem muss der Arzt absetzen. Mobilisation macht die Physio. Hilfsmittel für zuhause empfiehlt die Ergotherapie. Und du? Du bist die **Koordination** — die Person, die 24 Stunden bei der Patientin ist und alle Fäden zusammenhält. Das nennt sich interprofessionelle Zusammenarbeit.",
+        storyAufhaengerB1:
+          "Frau M. braucht Hilfe von vielen Berufen: Arzt, Physiotherapie, Ergotherapie, Apotheker. Du als Pflege bist den ganzen Tag da und koordinierst alles. Das heißt **interprofessionelle Zusammenarbeit**.",
+        kerntext:
+          "**Interprofessionell** bedeutet: Verschiedene Berufsgruppen arbeiten gemeinsam an einem Ziel — nicht nebeneinander, sondern **miteinander**. Die WHO definiert es so (2010): \"Wenn mehrere Gesundheitsfachkräfte aus verschiedenen Berufen gemeinsam mit Patienten, Familien und Gemeinschaften zusammenarbeiten, um die bestmögliche Versorgung zu gewährleisten.\"\n\n**Pflege ist nicht \"Zuarbeit\":**\n\n• § 5 PflBG definiert Pflege als eigenständigen Heilberuf mit eigenen Vorbehaltstätigkeiten\n\n• Pflegeprozesssteürung, Beratung, Edukation — das sind Pflege-Aufgaben, keine Arzt-Aufgaben\n\n• Pflege koordiniert, weil sie 24 Stunden am Patienten ist — kein anderer Beruf hat diese Nähe\n\n**Bei Frau M. konkret:**\n\n• **Arzt:** Medikamentenreview (Zolpidem + HCT), Grunderkrankungen behandeln\n\n• **Physiotherapie:** Mobilisations-Aufbau, Balance-Training, Gangschule\n\n• **Ergotherapie:** Hilfsmittel für zuhause (Haltegriffe, Toilettenstuhl, Hüftprotektor)\n\n• **Apotheker:** Brown-Bag-Review vor Entlassung (alle Medikamente + Wechselwirkungen prüfen)\n\n• **Pflege:** Umgebungsanpassung, Nachtbetreuung, Beratung, Koordination aller anderen\n\n**Häufiges Missverständnis:** \"Interprofessionell\" heißt nicht \"multidisziplinär\" (= jeder arbeitet für sich). Es heißt: **Gemeinsame Ziele, gemeinsame Sprache, geteilte Verantwortung.** *(WHO 2010; Sachverständigenrat 2007)*",
+        kerntextB1:
+          "**Interprofessionell** heißt: Verschiedene Berufe arbeiten **zusammen** — nicht jeder für sich.\n\n**Wer arbeitet bei Frau M. zusammen?**\n\n• **Arzt:** ändert Medikamente\n\n• **Physiotherapie:** übt Aufstehen und Gehen\n\n• **Ergotherapie:** plant Hilfsmittel für zuhause\n\n• **Apotheker:** prüft alle Medikamente zusammen\n\n• **Pflege (du):** passt die Umgebung an, berätst Frau M., koordinierst alles\n\n**Pflege ist kein Zuarbeiter!**\n\n• Pflege ist ein eigenständiger Beruf (§ 5 PflBG)\n\n• Pflege ist 24 Stunden beim Patienten — kein anderer Beruf hat diese Nähe\n\n• Pflege koordiniert das Team\n\n**Wichtig:** Interprofessionell heißt nicht: jeder macht sein Ding. Es heißt: **Alle arbeiten am gleichen Ziel.**",
+        faustregel:
+          "Interprofessionell = gemeinsames Ziel, gemeinsame Sprache, geteilte Verantwortung. Pflege koordiniert, weil sie 24 h am Patienten ist.",
+        faustregelB1:
+          "Interprofessionell = alle Berufe arbeiten zusammen am gleichen Ziel. Pflege ist die Koordination.",
+        karteikarte: {
+          vorderseite:
+            "Nach Frau M.s Sturz planst du die Maßnahmen. Was bedeutet interprofessionelle Zusammenarbeit — und welche Rolle hat die Pflege?",
+          rueckseite:
+            "Interprofessionell (WHO 2010): Verschiedene Berufsgruppen arbeiten gemeinsam mit dem Patienten am besten Ergebnis. Nicht nebeneinander, sondern miteinander.\n\nBei Frau M.: Arzt (Medi-Review), Physio (Mobilisation), Ergo (Hilfsmittel), Apotheker (Brown-Bag), Pflege (Koordination + 24h-Nähe).\n\nPflege = eigenständiger Beruf (§ 5 PflBG), koordiniert das Team. Faustregel: Gemeinsames Ziel, gemeinsame Sprache, geteilte Verantwortung.",
         },
       },
     },

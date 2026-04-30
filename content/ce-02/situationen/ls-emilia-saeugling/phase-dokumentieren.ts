@@ -15,6 +15,59 @@ export const CE02_SIT_EMILIA_SAEUGLING_DOKUMENTIEREN: SituationsPhase = {
   kontextB1:
     "Es ist 15:30 Uhr. Frühdienst fast vorbei. Andrea sagt: \"Schreib jetzt alles auf — Trinken, Windeln, Beratung, Schlaflage. Die Nachtschicht muss das wissen.\" Du öffnest die Dokumentationsmaske. Drei Sachen müssen rein.",
   kernSteps: [
+    // ───── Inline-Wissen: Trinkprotokoll ─────
+    // Der Begriff wird im nachfolgenden Freetext-Step verwendet, in dem der Schüler
+    // ein vollständiges Trinkprotokoll für Emilia schreiben soll.
+    {
+      stepId: "ce02-emilia-dok-iw-trinkprotokoll",
+      phase: 6,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Hoehl/Kullick 2019 — Gesundheits- und Kinderkrankenpflege, 5. Aufl.",
+        "Fiechter/Meier 1981 — Der Pflegeprozess",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-emilia-dok-trinkprotokoll-grundlagen",
+      tag: "pflege",
+      themaPrimaer: "säuglingspflege",
+      themenSekundaer: ["pflegedokumentation"],
+      transition: "Jetzt schreibst du selbst das Trinkprotokoll für Emilia — mit allem was dazugehört.",
+      contentC1: {
+        title: "Trinkprotokoll beim Säugling — was muss rein, was nicht?",
+        body: "",
+        glossarBegriffe: ["Trinkprotokoll", "Flüssigkeitsbilanz", "Einfuhr", "Ausfuhr"],
+      },
+      contentB1: {
+        title: "Trinkprotokoll — was muss man aufschreiben?",
+        body: "",
+        glossarBegriffe: ["Trinkprotokoll", "Flüssigkeitsbilanz"],
+      },
+      inlineWissen: {
+        bausteinRef: "trinkprotokoll",
+        storyAufhaenger:
+          "Andrea sagt: \"Schreib jetzt alles rein — Verlauf, Bilanz, Beratung. Die Nachtschicht muss wissen wo ihr steht.\" Du öffnest die Dokumentationsmaske. Was genau gehört in ein **Trinkprotokoll** beim Säugling — und was nicht?",
+        storyAufhaengerB1:
+          "Andrea sagt: \"Schreib alles auf.\" Du öffnest die Dokumentation. Was gehört in ein **Trinkprotokoll** für ein Baby?",
+        kerntext:
+          "Ein **Trinkprotokoll** dokumentiert die Flüssigkeitsaufnahme eines Patienten über einen definierten Zeitraum. Beim Säugling ist es besonders wichtig, weil Dehydratation schnell lebensbedrohlich werden kann.\n\n**Pflicht-Angaben im Trinkprotokoll:**\n\n• **Datum und Dienst** (Früh-/Spät-/Nachtdienst)\n\n• **Trinkmengen mit Uhrzeiten** — beim Stillen geschätzt (1 Stillmahlzeit ≈ 60-80 ml bei 4 Monaten), bei Flasche/Abpumpen gemessen\n\n• **Trinkverhalten:** Wie gut hat der Säugling getrunken? Pause nach 3 Schlucken? Erbrechen?\n\n• **Ausfuhr:** Windelanzahl, Windelgewicht (Nasswindelgewicht minus Trockengewicht = Urinmenge; 1 g ≈ 1 ml)\n\n• **Stuhl:** Farbe, Konsistenz, Häufigkeit (wird dokumentiert, aber nicht in die Flüssigkeitsbilanz einberechnet)\n\n• **Beobachtungen:** Hautturgor, Fontanelle, Mundschleimhaut, Atemfrequenz\n\n• **Fieberverlauf:** Temperaturen mit Uhrzeiten\n\n• **Gesamtbilanz:** Einfuhr minus Ausfuhr = Bilanz (positiv = mehr rein als raus)\n\n**Was NICHT rein gehört:**\n\n• Werturteile: ❌ \"Guter Tag\" oder \"Laura hat sich Mühe gegeben\"\n\n• Meinungen: ❌ \"Emilia scheint es besser zu gehen\"\n\n• Nur Fakten, Zahlen, Zeiten — objektiv und nachprüfbar\n\n**Warum so genau?** Die Nachtschicht muss nahtlos weiterarbeiten können. Wenn du schreibst \"hat gut getrunken\" weiß niemand: 40 ml oder 200 ml? *(Fiechter/Meier 1981; Hoehl/Kullick 2019)*",
+        kerntextB1:
+          "Ein **Trinkprotokoll** schreibt auf: Wie viel hat das Baby getrunken?\n\n**Was muss rein?**\n\n• **Datum und Dienst** (Frühdienst, Spätdienst...)\n\n• **Wann getrunken?** Uhrzeiten\n\n• **Wie viel getrunken?** In ml (beim Stillen geschätzt: ~60-80 ml pro Mahlzeit)\n\n• **Wie hat es getrunken?** (Gut? Pausen? Erbrechen?)\n\n• **Windeln:** Wie viele? Wie schwer? (1 Gramm = 1 ml Urin)\n\n• **Stuhl:** Farbe und wie weich\n\n• **Beobachtungen:** Haut, Fontanelle, Mund, Atmung\n\n• **Fieber:** Temperaturen mit Uhrzeit\n\n• **Bilanz:** Getrunken minus Urin = Bilanz\n\n**Was NICHT rein gehört:**\n\n• ❌ \"Guter Tag\" — das ist eine Meinung\n\n• ❌ \"Laura hat sich Mühe gegeben\" — das ist ein Werturteil\n\n• Nur Fakten und Zahlen!\n\n**Warum so genau?** Die Nachtschicht muss wissen: Wie viel ml hat Emilia getrunken? Nicht: \"Es war ok.\"",
+        faustregel:
+          "Trinkprotokoll = Zahlen, Zeiten, keine Meinungen. Die Nachtschicht muss damit weiterarbeiten können.",
+        faustregelB1:
+          "Trinkprotokoll = Zahlen und Uhrzeiten. Keine Meinungen. Nur Fakten.",
+        karteikarte: {
+          vorderseite:
+            "Andrea sagt: \"Schreib das Trinkprotokoll.\" Was muss in ein Trinkprotokoll beim Säugling — und was nicht?",
+          rueckseite:
+            "Pflicht: Datum/Dienst, Trinkmengen + Uhrzeiten (Stillen geschätzt ~60-80 ml), Trinkverhalten, Windelanzahl + -gewicht (1g ≈ 1ml), Stuhl (Farbe/Konsistenz), Beobachtungen (Turgor, Fontanelle, Mund, AF), Fieberverlauf, Gesamtbilanz (Einfuhr − Ausfuhr). Verboten: Werturteile, Meinungen. Faustregel: Zahlen, Zeiten, keine Meinungen. (Fiechter/Meier 1981; Hoehl/Kullick 2019)",
+        },
+      },
+    },
+
     // Step 6.1 — Freetext (LANG): Trinkprotokoll
     {
       stepId: "ce02-emilia-dok-01-trinkprotokoll-frei",
@@ -134,7 +187,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DOKUMENTIEREN: SituationsPhase = {
             "Infant Handling: Kopf immer halten, Haltearm ruhig, Bewegungen ankündigen, von oben nach unten reinigen.",
             "SIDS-Prävention: Rückenlage immer — auch bei Bronchiolitis, auch bei Schnupfen, keine Ausnahme ohne Arzt.",
             "Beratung erschöpfter Mütter: Zuhören kommt vor Informieren. Handlungskompetenz zurückgeben (empowern) statt Übernahme.",
-            "Emotionale Komplikation: Bei Tränen — zuerst Raum halten und validieren. Nicht entwerten. Dann konkrete Angebote.",
+            "Emotionale Komplikation: Bei Tränen — zürst Raum halten und validieren. Nicht entwerten. Dann konkrete Angebote.",
             "Dokumentation: Fakten und Zahlen, Uhrzeiten, keine Werturteile, Bilanz-Zahl, Reaktion der Mutter.",
           ],
         },
@@ -172,7 +225,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DOKUMENTIEREN: SituationsPhase = {
         bewertungskriterien: [
           "S: Patient, Diagnose, Tag",
           "B: Kontext (Trinkschwäche, Stillen, Mutter)",
-          "A: Aktueller Status (Trinkmenge, Windeln, Fieber, Turgor)",
+          "A: Aktüller Status (Trinkmenge, Windeln, Fieber, Turgor)",
           "R: Nächste Schritte (Bilanz, Nasenpflege, Eskalation)",
         ],
         satzanfaengeB1: [
