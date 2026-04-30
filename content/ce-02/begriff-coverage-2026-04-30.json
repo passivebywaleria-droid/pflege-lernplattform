@@ -1,7 +1,7 @@
 [
   {
     "situationId": "frau-m-nacht-sturz",
-    "totalBegriffe": 13,
+    "totalBegriffe": 11,
     "erklaerteBegriffe": 6,
     "luecken": [
       {
@@ -15,30 +15,6 @@
         "stepType": "highlight",
         "phase": "beobachten",
         "begriff": "Nykturie"
-      },
-      {
-        "stepId": "ce02-frau-m-beob-04-risikofaktoren-katz",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Intrinsische Risikofaktoren"
-      },
-      {
-        "stepId": "ce02-frau-m-beob-04-risikofaktoren-katz",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Extrinsische Risikofaktoren"
-      },
-      {
-        "stepId": "ce02-frau-m-beob-04-risikofaktoren-katz",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Intrinsische Risikofaktoren"
-      },
-      {
-        "stepId": "ce02-frau-m-beob-04-risikofaktoren-katz",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Extrinsische Risikofaktoren"
       },
       {
         "stepId": "ce02-frau-m-plan-03-fixierung-nein",
@@ -83,43 +59,13 @@
         "begriff": "Hüftprotektor"
       }
     ],
-    "coveragePercent": 46
+    "coveragePercent": 55
   },
   {
     "situationId": "ls-bauer-demenz-sturz",
-    "totalBegriffe": 99,
-    "erklaerteBegriffe": 11,
+    "totalBegriffe": 80,
+    "erklaerteBegriffe": 69,
     "luecken": [
-      {
-        "stepId": "ce02-bauer-info-04-zimmer-betreten",
-        "stepType": "dialog",
-        "phase": "informieren",
-        "begriff": "Deeskalation"
-      },
-      {
-        "stepId": "ce02-bauer-info-05-demenzstadien",
-        "stepType": "flipcard",
-        "phase": "informieren",
-        "begriff": "FAST-Skala"
-      },
-      {
-        "stepId": "ce02-bauer-info-05-demenzstadien",
-        "stepType": "flipcard",
-        "phase": "informieren",
-        "begriff": "Alzheimer-Demenz"
-      },
-      {
-        "stepId": "ce02-bauer-info-05-demenzstadien",
-        "stepType": "flipcard",
-        "phase": "informieren",
-        "begriff": "FAST-Skala"
-      },
-      {
-        "stepId": "ce02-bauer-beob-01-brilliant-erstblick",
-        "stepType": "freetext",
-        "phase": "beobachten",
-        "begriff": "Schonhaltung"
-      },
       {
         "stepId": "ce02-bauer-beob-01-brilliant-erstblick",
         "stepType": "freetext",
@@ -127,12 +73,6 @@
         "begriff": "Außenrotation"
       },
       {
-        "stepId": "ce02-bauer-beob-01-brilliant-erstblick",
-        "stepType": "freetext",
-        "phase": "beobachten",
-        "begriff": "Schonhaltung"
-      },
-      {
         "stepId": "ce02-bauer-beob-02-sturz-assessment",
         "stepType": "sequencing",
         "phase": "beobachten",
@@ -142,199 +82,13 @@
         "stepId": "ce02-bauer-beob-02-sturz-assessment",
         "stepType": "sequencing",
         "phase": "beobachten",
-        "begriff": "Vitalzeichen"
-      },
-      {
-        "stepId": "ce02-bauer-beob-02-sturz-assessment",
-        "stepType": "sequencing",
-        "phase": "beobachten",
-        "begriff": "ABCDE-Schema"
-      },
-      {
-        "stepId": "ce02-bauer-beob-02-sturz-assessment",
-        "stepType": "sequencing",
-        "phase": "beobachten",
-        "begriff": "Synkope"
-      },
-      {
-        "stepId": "ce02-bauer-beob-02-sturz-assessment",
-        "stepType": "sequencing",
-        "phase": "beobachten",
-        "begriff": "BESD-Skala"
-      },
-      {
-        "stepId": "ce02-bauer-beob-02-sturz-assessment",
-        "stepType": "sequencing",
-        "phase": "beobachten",
-        "begriff": "Vitalzeichen"
-      },
-      {
-        "stepId": "ce02-bauer-beob-02-sturz-assessment",
-        "stepType": "sequencing",
-        "phase": "beobachten",
-        "begriff": "ABCDE"
-      },
-      {
-        "stepId": "ce02-bauer-beob-03-knie-kontraktur",
-        "stepType": "dialog",
-        "phase": "beobachten",
-        "begriff": "Schmerzsignal"
-      },
-      {
-        "stepId": "ce02-bauer-beob-03-knie-kontraktur",
-        "stepType": "dialog",
-        "phase": "beobachten",
         "begriff": "BESD-Skala"
       },
       {
         "stepId": "ce02-bauer-beob-03-knie-kontraktur",
         "stepType": "dialog",
         "phase": "beobachten",
-        "begriff": "Schmerzsignal"
-      },
-      {
-        "stepId": "ce02-bauer-beob-04-haut-trinkprotokoll",
-        "stepType": "highlight",
-        "phase": "beobachten",
-        "begriff": "Exsikkose"
-      },
-      {
-        "stepId": "ce02-bauer-beob-04-haut-trinkprotokoll",
-        "stepType": "highlight",
-        "phase": "beobachten",
-        "begriff": "Soor"
-      },
-      {
-        "stepId": "ce02-bauer-beob-04-haut-trinkprotokoll",
-        "stepType": "highlight",
-        "phase": "beobachten",
-        "begriff": "Miktionsprotokoll"
-      },
-      {
-        "stepId": "ce02-bauer-beob-04-haut-trinkprotokoll",
-        "stepType": "highlight",
-        "phase": "beobachten",
-        "begriff": "Dekubitusgefahr"
-      },
-      {
-        "stepId": "ce02-bauer-beob-04-haut-trinkprotokoll",
-        "stepType": "highlight",
-        "phase": "beobachten",
-        "begriff": "Exsikkose"
-      },
-      {
-        "stepId": "ce02-bauer-beob-04-haut-trinkprotokoll",
-        "stepType": "highlight",
-        "phase": "beobachten",
-        "begriff": "Soor"
-      },
-      {
-        "stepId": "ce02-bauer-beob-04-haut-trinkprotokoll",
-        "stepType": "highlight",
-        "phase": "beobachten",
-        "begriff": "Risiko"
-      },
-      {
-        "stepId": "ce02-bauer-beob-05-risiken-einordnen",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Sturzrisiko"
-      },
-      {
-        "stepId": "ce02-bauer-beob-05-risiken-einordnen",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Kontrakturrisiko"
-      },
-      {
-        "stepId": "ce02-bauer-beob-05-risiken-einordnen",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Exsikkose"
-      },
-      {
-        "stepId": "ce02-bauer-beob-05-risiken-einordnen",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Inkontinenz-assoziierte Dermatitis"
-      },
-      {
-        "stepId": "ce02-bauer-beob-05-risiken-einordnen",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Sturzrisiko"
-      },
-      {
-        "stepId": "ce02-bauer-beob-05-risiken-einordnen",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Haut"
-      },
-      {
-        "stepId": "ce02-bauer-plan-01-ziele-formulieren",
-        "stepType": "freetext",
-        "phase": "planen",
-        "begriff": "Pflegeziel"
-      },
-      {
-        "stepId": "ce02-bauer-plan-01-ziele-formulieren",
-        "stepType": "freetext",
-        "phase": "planen",
-        "begriff": "Pflegeprozess"
-      },
-      {
-        "stepId": "ce02-bauer-plan-01-ziele-formulieren",
-        "stepType": "freetext",
-        "phase": "planen",
-        "begriff": "messbar"
-      },
-      {
-        "stepId": "ce02-bauer-plan-01-ziele-formulieren",
-        "stepType": "freetext",
-        "phase": "planen",
-        "begriff": "Pflegeziel"
-      },
-      {
-        "stepId": "ce02-bauer-plan-01-ziele-formulieren",
-        "stepType": "freetext",
-        "phase": "planen",
-        "begriff": "messbar"
-      },
-      {
-        "stepId": "ce02-bauer-plan-02-sturzprophylaxe-massnahmen",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Sturzprophylaxe"
-      },
-      {
-        "stepId": "ce02-bauer-plan-02-sturzprophylaxe-massnahmen",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Niedrigbett"
-      },
-      {
-        "stepId": "ce02-bauer-plan-02-sturzprophylaxe-massnahmen",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Sensormatte"
-      },
-      {
-        "stepId": "ce02-bauer-plan-02-sturzprophylaxe-massnahmen",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Sturzprophylaxe"
-      },
-      {
-        "stepId": "ce02-bauer-plan-02-sturzprophylaxe-massnahmen",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Nachtlicht"
-      },
-      {
-        "stepId": "ce02-bauer-plan-02-sturzprophylaxe-massnahmen",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Niedrigbett"
+        "begriff": "BESD-Skala"
       },
       {
         "stepId": "ce02-bauer-plan-03-bewegungsplan",
@@ -346,99 +100,9 @@
         "stepId": "ce02-bauer-plan-03-bewegungsplan",
         "stepType": "sequencing",
         "phase": "planen",
-        "begriff": "Kontrakturprophylaxe"
-      },
-      {
-        "stepId": "ce02-bauer-plan-03-bewegungsplan",
-        "stepType": "sequencing",
-        "phase": "planen",
         "begriff": "Spitzfuß"
       },
       {
-        "stepId": "ce02-bauer-plan-03-bewegungsplan",
-        "stepType": "sequencing",
-        "phase": "planen",
-        "begriff": "Bewegung"
-      },
-      {
-        "stepId": "ce02-bauer-plan-04-interprofessionell",
-        "stepType": "matrix",
-        "phase": "planen",
-        "begriff": "Interdisziplinär"
-      },
-      {
-        "stepId": "ce02-bauer-plan-04-interprofessionell",
-        "stepType": "matrix",
-        "phase": "planen",
-        "begriff": "Physiotherapie"
-      },
-      {
-        "stepId": "ce02-bauer-plan-04-interprofessionell",
-        "stepType": "matrix",
-        "phase": "planen",
-        "begriff": "Mirtazapin"
-      },
-      {
-        "stepId": "ce02-bauer-plan-04-interprofessionell",
-        "stepType": "matrix",
-        "phase": "planen",
-        "begriff": "Physiotherapie"
-      },
-      {
-        "stepId": "ce02-bauer-plan-04-interprofessionell",
-        "stepType": "matrix",
-        "phase": "planen",
-        "begriff": "Arzt"
-      },
-      {
-        "stepId": "ce02-bauer-plan-04-interprofessionell",
-        "stepType": "matrix",
-        "phase": "planen",
-        "begriff": "Pflege"
-      },
-      {
-        "stepId": "ce02-bauer-plan-06-freiheitsentziehung",
-        "stepType": "truefalse",
-        "phase": "planen",
-        "begriff": "Freiheitsentziehende Maßnahme"
-      },
-      {
-        "stepId": "ce02-bauer-plan-06-freiheitsentziehung",
-        "stepType": "truefalse",
-        "phase": "planen",
-        "begriff": "§ 1831 BGB"
-      },
-      {
-        "stepId": "ce02-bauer-plan-06-freiheitsentziehung",
-        "stepType": "truefalse",
-        "phase": "planen",
-        "begriff": "Richterliche Genehmigung"
-      },
-      {
-        "stepId": "ce02-bauer-plan-06-freiheitsentziehung",
-        "stepType": "truefalse",
-        "phase": "planen",
-        "begriff": "Freiheitsentziehung"
-      },
-      {
-        "stepId": "ce02-bauer-plan-06-freiheitsentziehung",
-        "stepType": "truefalse",
-        "phase": "planen",
-        "begriff": "Genehmigung"
-      },
-      {
-        "stepId": "ce02-bauer-plan-06-freiheitsentziehung",
-        "stepType": "truefalse",
-        "phase": "planen",
-        "begriff": "Bettgitter"
-      },
-      {
-        "stepId": "ce02-bauer-dur-02-abwehr-komplikation",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Deeskalation"
-      },
-      {
         "stepId": "ce02-bauer-dur-02-abwehr-komplikation",
         "stepType": "branching",
         "phase": "durchfuehren",
@@ -448,37 +112,13 @@
         "stepId": "ce02-bauer-dur-02-abwehr-komplikation",
         "stepType": "branching",
         "phase": "durchfuehren",
-        "begriff": "Autonomie"
-      },
-      {
-        "stepId": "ce02-bauer-dur-02-abwehr-komplikation",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Deeskalation"
-      },
-      {
-        "stepId": "ce02-bauer-dur-02-abwehr-komplikation",
-        "stepType": "branching",
-        "phase": "durchfuehren",
         "begriff": "Würde"
-      },
-      {
-        "stepId": "ce02-bauer-dur-03-deeskalation-ressource",
-        "stepType": "dialog",
-        "phase": "durchfuehren",
-        "begriff": "Ressourcen"
       },
       {
         "stepId": "ce02-bauer-dur-03-deeskalation-ressource",
         "stepType": "dialog",
         "phase": "durchfuehren",
         "begriff": "Handführung"
-      },
-      {
-        "stepId": "ce02-bauer-dur-03-deeskalation-ressource",
-        "stepType": "dialog",
-        "phase": "durchfuehren",
-        "begriff": "Ressource"
       },
       {
         "stepId": "ce02-bauer-dur-04-bewegungsuebungen",
@@ -505,100 +145,10 @@
         "begriff": "Knie"
       },
       {
-        "stepId": "ce02-bauer-dur-04-bewegungsuebungen",
-        "stepType": "sequencing",
-        "phase": "durchfuehren",
-        "begriff": "Bewegung"
-      },
-      {
-        "stepId": "ce02-bauer-dur-05-mundpflege",
-        "stepType": "mc",
-        "phase": "durchfuehren",
-        "begriff": "Soor-Prophylaxe"
-      },
-      {
-        "stepId": "ce02-bauer-dur-05-mundpflege",
-        "stepType": "mc",
-        "phase": "durchfuehren",
-        "begriff": "Mundpflege"
-      },
-      {
-        "stepId": "ce02-bauer-dur-05-mundpflege",
-        "stepType": "mc",
-        "phase": "durchfuehren",
-        "begriff": "Aspirationsgefahr"
-      },
-      {
-        "stepId": "ce02-bauer-dur-05-mundpflege",
-        "stepType": "mc",
-        "phase": "durchfuehren",
-        "begriff": "Chlorhexidin"
-      },
-      {
-        "stepId": "ce02-bauer-dur-05-mundpflege",
-        "stepType": "mc",
-        "phase": "durchfuehren",
-        "begriff": "Soor"
-      },
-      {
-        "stepId": "ce02-bauer-dur-05-mundpflege",
-        "stepType": "mc",
-        "phase": "durchfuehren",
-        "begriff": "Mundpflege"
-      },
-      {
-        "stepId": "ce02-bauer-dur-05-mundpflege",
-        "stepType": "mc",
-        "phase": "durchfuehren",
-        "begriff": "Aspiration"
-      },
-      {
-        "stepId": "ce02-bauer-dur-06-mobilisation-komplikation",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Mobilisation"
-      },
-      {
-        "stepId": "ce02-bauer-dur-06-mobilisation-komplikation",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Abwehr"
-      },
-      {
-        "stepId": "ce02-bauer-dur-06-mobilisation-komplikation",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Patientenwille"
-      },
-      {
-        "stepId": "ce02-bauer-dur-06-mobilisation-komplikation",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Mobilisation"
-      },
-      {
-        "stepId": "ce02-bauer-dur-06-mobilisation-komplikation",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Abwehr"
-      },
-      {
-        "stepId": "ce02-bauer-dur-06-mobilisation-komplikation",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Patientenwille"
-      },
-      {
         "stepId": "ce02-bauer-dur-08-inkontinenz-wuerde",
         "stepType": "reflection",
         "phase": "durchfuehren",
         "begriff": "Würde"
-      },
-      {
-        "stepId": "ce02-bauer-dur-08-inkontinenz-wuerde",
-        "stepType": "reflection",
-        "phase": "durchfuehren",
-        "begriff": "Selbstbestimmung"
       },
       {
         "stepId": "ce02-bauer-dur-08-inkontinenz-wuerde",
@@ -610,285 +160,27 @@
         "stepId": "ce02-bauer-dur-08-inkontinenz-wuerde",
         "stepType": "reflection",
         "phase": "durchfuehren",
-        "begriff": "Patientenwille"
-      },
-      {
-        "stepId": "ce02-bauer-dur-08-inkontinenz-wuerde",
-        "stepType": "reflection",
-        "phase": "durchfuehren",
         "begriff": "Würde"
       },
       {
-        "stepId": "ce02-bauer-dur-08-inkontinenz-wuerde",
-        "stepType": "reflection",
-        "phase": "durchfuehren",
-        "begriff": "Pflege"
-      },
-      {
-        "stepId": "ce02-bauer-dur-08-inkontinenz-wuerde",
-        "stepType": "reflection",
-        "phase": "durchfuehren",
-        "begriff": "Patientenwille"
-      },
-      {
-        "stepId": "ce02-bauer-dur-09-trinken-strategie",
-        "stepType": "timer",
-        "phase": "durchfuehren",
-        "begriff": "Trinkmanagement bei Demenz"
-      },
-      {
-        "stepId": "ce02-bauer-dur-09-trinken-strategie",
-        "stepType": "timer",
-        "phase": "durchfuehren",
-        "begriff": "Biographiearbeit"
-      },
-      {
-        "stepId": "ce02-bauer-dur-09-trinken-strategie",
-        "stepType": "timer",
-        "phase": "durchfuehren",
-        "begriff": "Trinken"
-      },
-      {
-        "stepId": "ce02-bauer-dur-09-trinken-strategie",
-        "stepType": "timer",
-        "phase": "durchfuehren",
-        "begriff": "Biographie"
-      },
-      {
-        "stepId": "ce02-bauer-eval-01-ziele-pruefung",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "Evaluation"
-      },
-      {
-        "stepId": "ce02-bauer-eval-01-ziele-pruefung",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "Pflegeziel"
-      },
-      {
-        "stepId": "ce02-bauer-eval-01-ziele-pruefung",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "Anpassung"
-      },
-      {
-        "stepId": "ce02-bauer-eval-01-ziele-pruefung",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "Evaluation"
-      },
-      {
-        "stepId": "ce02-bauer-eval-01-ziele-pruefung",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "Pflegeziel"
-      },
-      {
-        "stepId": "ce02-bauer-eval-02-angehoerigen-gespraech",
-        "stepType": "dialog",
-        "phase": "evaluieren",
-        "begriff": "Empathie"
-      },
-      {
-        "stepId": "ce02-bauer-eval-02-angehoerigen-gespraech",
-        "stepType": "dialog",
-        "phase": "evaluieren",
-        "begriff": "Angehörigenkommunikation"
-      },
-      {
         "stepId": "ce02-bauer-eval-02-angehoerigen-gespraech",
         "stepType": "dialog",
         "phase": "evaluieren",
         "begriff": "Schuldgefühle"
-      },
-      {
-        "stepId": "ce02-bauer-eval-02-angehoerigen-gespraech",
-        "stepType": "dialog",
-        "phase": "evaluieren",
-        "begriff": "Transparenz"
-      },
-      {
-        "stepId": "ce02-bauer-eval-02-angehoerigen-gespraech",
-        "stepType": "dialog",
-        "phase": "evaluieren",
-        "begriff": "Schweigepflicht"
-      },
-      {
-        "stepId": "ce02-bauer-eval-02-angehoerigen-gespraech",
-        "stepType": "dialog",
-        "phase": "evaluieren",
-        "begriff": "Gesetzliche Betreuung"
-      },
-      {
-        "stepId": "ce02-bauer-eval-02-angehoerigen-gespraech",
-        "stepType": "dialog",
-        "phase": "evaluieren",
-        "begriff": "Empathie"
-      },
-      {
-        "stepId": "ce02-bauer-eval-02-angehoerigen-gespraech",
-        "stepType": "dialog",
-        "phase": "evaluieren",
-        "begriff": "Schuldgefühle"
-      },
-      {
-        "stepId": "ce02-bauer-eval-02-angehoerigen-gespraech",
-        "stepType": "dialog",
-        "phase": "evaluieren",
-        "begriff": "Ehrlichkeit"
-      },
-      {
-        "stepId": "ce02-bauer-eval-02-angehoerigen-gespraech",
-        "stepType": "dialog",
-        "phase": "evaluieren",
-        "begriff": "Schweigepflicht"
-      },
-      {
-        "stepId": "ce02-bauer-eval-02-angehoerigen-gespraech",
-        "stepType": "dialog",
-        "phase": "evaluieren",
-        "begriff": "Betreuung"
-      },
-      {
-        "stepId": "ce02-bauer-eval-04-reflexion-tag",
-        "stepType": "reflection",
-        "phase": "evaluieren",
-        "begriff": "Reflexion"
-      },
-      {
-        "stepId": "ce02-bauer-eval-04-reflexion-tag",
-        "stepType": "reflection",
-        "phase": "evaluieren",
-        "begriff": "Professionalisierung"
-      },
-      {
-        "stepId": "ce02-bauer-eval-04-reflexion-tag",
-        "stepType": "reflection",
-        "phase": "evaluieren",
-        "begriff": "Reflexion"
-      },
-      {
-        "stepId": "ce02-bauer-eval-04-reflexion-tag",
-        "stepType": "reflection",
-        "phase": "evaluieren",
-        "begriff": "Lernen"
-      },
-      {
-        "stepId": "ce02-bauer-eval-06-exsikkose-bilanz",
-        "stepType": "calculation",
-        "phase": "evaluieren",
-        "begriff": "Perspiratio"
-      },
-      {
-        "stepId": "ce02-bauer-eval-06-exsikkose-bilanz",
-        "stepType": "calculation",
-        "phase": "evaluieren",
-        "begriff": "Einfuhr"
-      },
-      {
-        "stepId": "ce02-bauer-eval-06-exsikkose-bilanz",
-        "stepType": "calculation",
-        "phase": "evaluieren",
-        "begriff": "Ausfuhr"
-      },
-      {
-        "stepId": "ce02-bauer-eval-06-exsikkose-bilanz",
-        "stepType": "calculation",
-        "phase": "evaluieren",
-        "begriff": "Einfuhr"
-      },
-      {
-        "stepId": "ce02-bauer-eval-06-exsikkose-bilanz",
-        "stepType": "calculation",
-        "phase": "evaluieren",
-        "begriff": "Ausfuhr"
-      },
-      {
-        "stepId": "ce02-bauer-dok-01-sturzprotokoll-frei",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Ursachenhypothese"
-      },
-      {
-        "stepId": "ce02-bauer-dok-01-sturzprotokoll-frei",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Verletzungscheck"
-      },
-      {
-        "stepId": "ce02-bauer-dok-01-sturzprotokoll-frei",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Dokumentationspflicht"
-      },
-      {
-        "stepId": "ce02-bauer-dok-01-sturzprotokoll-frei",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Verletzungscheck"
-      },
-      {
-        "stepId": "ce02-bauer-dok-01-sturzprotokoll-frei",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Ursache"
       },
       {
         "stepId": "ce02-bauer-dok-02-pflegebericht-formulierung",
         "stepType": "errorspot",
         "phase": "dokumentieren",
         "begriff": "Objektivität"
-      },
-      {
-        "stepId": "ce02-bauer-dok-02-pflegebericht-formulierung",
-        "stepType": "errorspot",
-        "phase": "dokumentieren",
-        "begriff": "Dokumentation"
-      },
-      {
-        "stepId": "ce02-bauer-dok-02-pflegebericht-formulierung",
-        "stepType": "errorspot",
-        "phase": "dokumentieren",
-        "begriff": "Fehler"
-      },
-      {
-        "stepId": "ce02-bauer-dok-02-pflegebericht-formulierung",
-        "stepType": "errorspot",
-        "phase": "dokumentieren",
-        "begriff": "Dokumentation"
-      },
-      {
-        "stepId": "ce02-bauer-dok-03-miktionsprotokoll",
-        "stepType": "tablefillin",
-        "phase": "dokumentieren",
-        "begriff": "Miktion"
-      },
-      {
-        "stepId": "ce02-bauer-dok-03-miktionsprotokoll",
-        "stepType": "tablefillin",
-        "phase": "dokumentieren",
-        "begriff": "Inkontinenz"
-      },
-      {
-        "stepId": "ce02-bauer-dok-03-miktionsprotokoll",
-        "stepType": "tablefillin",
-        "phase": "dokumentieren",
-        "begriff": "Miktion"
-      },
-      {
-        "stepId": "ce02-bauer-dok-03-miktionsprotokoll",
-        "stepType": "tablefillin",
-        "phase": "dokumentieren",
-        "begriff": "Inkontinenz"
       }
     ],
-    "coveragePercent": 11
+    "coveragePercent": 86
   },
   {
     "situationId": "ls-emilia-saeugling",
-    "totalBegriffe": 21,
-    "erklaerteBegriffe": 15,
+    "totalBegriffe": 18,
+    "erklaerteBegriffe": 13,
     "luecken": [
       {
         "stepId": "ce02-emilia-beob-03-windeln-zaehlen",
@@ -909,22 +201,22 @@
         "begriff": "Muttermilchstuhl"
       },
       {
-        "stepId": "ce02-emilia-beob-06-atemfrequenz-beurteilen",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Interkostale Einziehungen"
-      },
-      {
-        "stepId": "ce02-emilia-beob-06-atemfrequenz-beurteilen",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Interkostale Einziehungen"
+        "stepId": "ce02-emilia-plan-01-pflegeziele-formulieren",
+        "stepType": "freetext",
+        "phase": "planen",
+        "begriff": "SMART-Ziel"
       },
       {
         "stepId": "ce02-emilia-plan-01-pflegeziele-formulieren",
         "stepType": "freetext",
         "phase": "planen",
         "begriff": "SMART-Ziel"
+      },
+      {
+        "stepId": "ce02-emilia-dur-04-wickeln-kinaesthetik",
+        "stepType": "sequencing",
+        "phase": "durchfuehren",
+        "begriff": "Kinästhetik"
       },
       {
         "stepId": "ce02-emilia-dur-04-wickeln-kinaesthetik",
@@ -945,104 +237,14 @@
         "begriff": "Trinkprotokoll"
       }
     ],
-    "coveragePercent": 71
+    "coveragePercent": 72
   },
   {
     "situationId": "ls-kovac-ambulant",
-    "totalBegriffe": 60,
-    "erklaerteBegriffe": 24,
+    "totalBegriffe": 44,
+    "erklaerteBegriffe": 27,
     "luecken": [
       {
-        "stepId": "ce02-kovac-info-03-wohnungscheck",
-        "stepType": "highlight",
-        "phase": "informieren",
-        "begriff": "Kontraktur"
-      },
-      {
-        "stepId": "ce02-kovac-info-03-wohnungscheck",
-        "stepType": "highlight",
-        "phase": "informieren",
-        "begriff": "Thrombose"
-      },
-      {
-        "stepId": "ce02-kovac-info-03-wohnungscheck",
-        "stepType": "highlight",
-        "phase": "informieren",
-        "begriff": "Trinkprotokoll"
-      },
-      {
-        "stepId": "ce02-kovac-info-03-wohnungscheck",
-        "stepType": "highlight",
-        "phase": "informieren",
-        "begriff": "Trinkprotokoll"
-      },
-      {
-        "stepId": "ce02-kovac-info-04-erstkontakt-dialog",
-        "stepType": "dialog",
-        "phase": "informieren",
-        "begriff": "Hausrecht"
-      },
-      {
-        "stepId": "ce02-kovac-info-04-erstkontakt-dialog",
-        "stepType": "dialog",
-        "phase": "informieren",
-        "begriff": "Hausrecht"
-      },
-      {
-        "stepId": "ce02-kovac-beob-01-atembeobachtung-brilliant",
-        "stepType": "freetext",
-        "phase": "beobachten",
-        "begriff": "Atemhilfsmuskulatur"
-      },
-      {
-        "stepId": "ce02-kovac-beob-03-gelenke-assessment",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Kontraktur"
-      },
-      {
-        "stepId": "ce02-kovac-beob-03-gelenke-assessment",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Extensionsdefizit"
-      },
-      {
-        "stepId": "ce02-kovac-beob-03-gelenke-assessment",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Flexionskontraktur"
-      },
-      {
-        "stepId": "ce02-kovac-beob-03-gelenke-assessment",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "VAS"
-      },
-      {
-        "stepId": "ce02-kovac-beob-03-gelenke-assessment",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "DNQP Schmerz"
-      },
-      {
-        "stepId": "ce02-kovac-beob-03-gelenke-assessment",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Kontraktur"
-      },
-      {
-        "stepId": "ce02-kovac-beob-03-gelenke-assessment",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Extensionsdefizit"
-      },
-      {
-        "stepId": "ce02-kovac-beob-03-gelenke-assessment",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "VAS"
-      },
-      {
         "stepId": "ce02-kovac-beob-04-schlafanamnese",
         "stepType": "dialog",
         "phase": "beobachten",
@@ -1055,34 +257,16 @@
         "begriff": "Einschlaflatenz"
       },
       {
-        "stepId": "ce02-kovac-beob-06-oedeme-thrombose-blick",
-        "stepType": "truefalse",
+        "stepId": "ce02-kovac-beob-05-trinkprotokoll-auswerten",
+        "stepType": "calculation",
         "phase": "beobachten",
-        "begriff": "Thrombose"
+        "begriff": "Flüssigkeitsbilanz"
       },
       {
-        "stepId": "ce02-kovac-beob-06-oedeme-thrombose-blick",
-        "stepType": "truefalse",
+        "stepId": "ce02-kovac-beob-05-trinkprotokoll-auswerten",
+        "stepType": "calculation",
         "phase": "beobachten",
-        "begriff": "Virchow-Trias"
-      },
-      {
-        "stepId": "ce02-kovac-beob-06-oedeme-thrombose-blick",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Stase"
-      },
-      {
-        "stepId": "ce02-kovac-beob-06-oedeme-thrombose-blick",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Kompressionstherapie"
-      },
-      {
-        "stepId": "ce02-kovac-beob-06-oedeme-thrombose-blick",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Thrombose"
+        "begriff": "Flüssigkeitsbilanz"
       },
       {
         "stepId": "ce02-kovac-beob-opt-a-copd-stadien",
@@ -1115,58 +299,22 @@
         "begriff": "Prophylaxe"
       },
       {
-        "stepId": "ce02-kovac-plan-04-schlafberatung-planen",
-        "stepType": "sequencing",
-        "phase": "planen",
-        "begriff": "Zirkadiane Rhythmik"
-      },
-      {
         "stepId": "ce02-kovac-plan-opt-b-ass-vs-kompression",
         "stepType": "comparison",
         "phase": "planen",
         "begriff": "ASS"
       },
       {
-        "stepId": "ce02-kovac-plan-opt-b-ass-vs-kompression",
-        "stepType": "comparison",
-        "phase": "planen",
-        "begriff": "Thrombozytenaggregationshemmung"
-      },
-      {
-        "stepId": "ce02-kovac-plan-opt-b-ass-vs-kompression",
-        "stepType": "comparison",
-        "phase": "planen",
-        "begriff": "Venöse Stase"
-      },
-      {
-        "stepId": "ce02-kovac-plan-opt-b-ass-vs-kompression",
-        "stepType": "comparison",
-        "phase": "planen",
-        "begriff": "Kompressionstherapie"
-      },
-      {
-        "stepId": "ce02-kovac-plan-opt-b-ass-vs-kompression",
-        "stepType": "comparison",
-        "phase": "planen",
-        "begriff": "ASS"
-      },
-      {
-        "stepId": "ce02-kovac-plan-opt-b-ass-vs-kompression",
-        "stepType": "comparison",
-        "phase": "planen",
-        "begriff": "Thrombose"
-      },
-      {
-        "stepId": "ce02-kovac-dur-03-komplikation-kurzatmigkeit",
-        "stepType": "branching",
+        "stepId": "ce02-kovac-dur-02-atemuebung-ausfuehren-mc",
+        "stepType": "mc",
         "phase": "durchfuehren",
-        "begriff": "Lippenzyanose"
+        "begriff": "Tachypnoe"
       },
       {
-        "stepId": "ce02-kovac-dur-03-komplikation-kurzatmigkeit",
-        "stepType": "branching",
+        "stepId": "ce02-kovac-dur-02-atemuebung-ausfuehren-mc",
+        "stepType": "mc",
         "phase": "durchfuehren",
-        "begriff": "Notarzt"
+        "begriff": "Tachypnoe"
       },
       {
         "stepId": "ce02-kovac-dur-03-komplikation-kurzatmigkeit",
@@ -1184,18 +332,6 @@
         "stepId": "ce02-kovac-dur-04-bewegung-knie-im-sitzen",
         "stepType": "sorting",
         "phase": "durchfuehren",
-        "begriff": "Kontraktur"
-      },
-      {
-        "stepId": "ce02-kovac-dur-04-bewegung-knie-im-sitzen",
-        "stepType": "sorting",
-        "phase": "durchfuehren",
-        "begriff": "Sprunggelenkmobilisation"
-      },
-      {
-        "stepId": "ce02-kovac-dur-04-bewegung-knie-im-sitzen",
-        "stepType": "sorting",
-        "phase": "durchfuehren",
         "begriff": "Wadenmuskel-Pumpe"
       },
       {
@@ -1203,60 +339,12 @@
         "stepType": "sorting",
         "phase": "durchfuehren",
         "begriff": "Kinästhetik"
-      },
-      {
-        "stepId": "ce02-kovac-dur-04-bewegung-knie-im-sitzen",
-        "stepType": "sorting",
-        "phase": "durchfuehren",
-        "begriff": "Kontraktur"
-      },
-      {
-        "stepId": "ce02-kovac-dur-04-bewegung-knie-im-sitzen",
-        "stepType": "sorting",
-        "phase": "durchfuehren",
-        "begriff": "Wadenmuskel-Pumpe"
-      },
-      {
-        "stepId": "ce02-kovac-dur-04-bewegung-knie-im-sitzen",
-        "stepType": "sorting",
-        "phase": "durchfuehren",
-        "begriff": "Kinästhetik"
-      },
-      {
-        "stepId": "ce02-kovac-dur-05-komplikation-sohn-datenschutz",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "DSGVO"
-      },
-      {
-        "stepId": "ce02-kovac-dur-05-komplikation-sohn-datenschutz",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Schweigepflicht"
-      },
-      {
-        "stepId": "ce02-kovac-dur-05-komplikation-sohn-datenschutz",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Gesundheitsdaten"
-      },
-      {
-        "stepId": "ce02-kovac-dur-05-komplikation-sohn-datenschutz",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Datenschutz"
-      },
-      {
-        "stepId": "ce02-kovac-dur-05-komplikation-sohn-datenschutz",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Schweigepflicht"
       },
       {
         "stepId": "ce02-kovac-dur-06-trinkmenge-vereinbaren",
         "stepType": "dialog",
         "phase": "durchfuehren",
-        "begriff": "Motivierende Gesprächsführung"
+        "begriff": "Flüssigkeitsbilanz"
       },
       {
         "stepId": "ce02-kovac-dur-opt-b-gold-warnsignale",
@@ -1277,30 +365,6 @@
         "begriff": "Bewusstseinstrübung"
       },
       {
-        "stepId": "ce02-kovac-eval-02-schlafberatung-abend",
-        "stepType": "dialog",
-        "phase": "evaluieren",
-        "begriff": "Motivierende Gesprächsführung"
-      },
-      {
-        "stepId": "ce02-kovac-dok-01-ambulant-vs-stationaer-doku",
-        "stepType": "comparison",
-        "phase": "dokumentieren",
-        "begriff": "Pflegedokumentation"
-      },
-      {
-        "stepId": "ce02-kovac-dok-01-ambulant-vs-stationaer-doku",
-        "stepType": "comparison",
-        "phase": "dokumentieren",
-        "begriff": "Besuchsbericht"
-      },
-      {
-        "stepId": "ce02-kovac-dok-01-ambulant-vs-stationaer-doku",
-        "stepType": "comparison",
-        "phase": "dokumentieren",
-        "begriff": "§ 630f BGB"
-      },
-      {
         "stepId": "ce02-kovac-dok-01-ambulant-vs-stationaer-doku",
         "stepType": "comparison",
         "phase": "dokumentieren",
@@ -1329,6 +393,12 @@
         "stepType": "freetext",
         "phase": "dokumentieren",
         "begriff": "Besuchsbericht"
+      },
+      {
+        "stepId": "ce02-kovac-dok-opt-b-errorspot",
+        "stepType": "errorspot",
+        "phase": "dokumentieren",
+        "begriff": "Verweigerungsdokumentation"
       },
       {
         "stepId": "ce02-kovac-dok-opt-c-reflexion",
@@ -1337,44 +407,14 @@
         "begriff": "Haftung"
       }
     ],
-    "coveragePercent": 40
+    "coveragePercent": 61
   },
   {
     "situationId": "ls-lukas-verbruehung",
     "totalBegriffe": 39,
-    "erklaerteBegriffe": 12,
+    "erklaerteBegriffe": 28,
     "luecken": [
       {
-        "stepId": "ce02-lukas-info-04-u-heft-impfstatus",
-        "stepType": "highlight",
-        "phase": "informieren",
-        "begriff": "U-Untersuchungen"
-      },
-      {
-        "stepId": "ce02-lukas-info-04-u-heft-impfstatus",
-        "stepType": "highlight",
-        "phase": "informieren",
-        "begriff": "Tetanus-Impfung"
-      },
-      {
-        "stepId": "ce02-lukas-info-04-u-heft-impfstatus",
-        "stepType": "highlight",
-        "phase": "informieren",
-        "begriff": "STIKO"
-      },
-      {
-        "stepId": "ce02-lukas-info-04-u-heft-impfstatus",
-        "stepType": "highlight",
-        "phase": "informieren",
-        "begriff": "U-Untersuchungen"
-      },
-      {
-        "stepId": "ce02-lukas-info-04-u-heft-impfstatus",
-        "stepType": "highlight",
-        "phase": "informieren",
-        "begriff": "Tetanus-Impfung"
-      },
-      {
         "stepId": "ce02-lukas-beob-03-wundgradierung-mc",
         "stepType": "mc",
         "phase": "beobachten",
@@ -1397,48 +437,12 @@
         "stepType": "categorize",
         "phase": "beobachten",
         "begriff": "Hämatom"
-      },
-      {
-        "stepId": "ce02-lukas-beob-05-trinken-mundschleimhaut",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Exsikkose"
-      },
-      {
-        "stepId": "ce02-lukas-beob-05-trinken-mundschleimhaut",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Holliday-Segar-Regel"
       },
       {
         "stepId": "ce02-lukas-beob-05-trinken-mundschleimhaut",
         "stepType": "truefalse",
         "phase": "beobachten",
         "begriff": "Exsikkose (= Austrocknung)"
-      },
-      {
-        "stepId": "ce02-lukas-beob-06-vitalwerte-altersgerecht",
-        "stepType": "comparison",
-        "phase": "beobachten",
-        "begriff": "Herzfrequenz"
-      },
-      {
-        "stepId": "ce02-lukas-beob-06-vitalwerte-altersgerecht",
-        "stepType": "comparison",
-        "phase": "beobachten",
-        "begriff": "Atemfrequenz"
-      },
-      {
-        "stepId": "ce02-lukas-beob-06-vitalwerte-altersgerecht",
-        "stepType": "comparison",
-        "phase": "beobachten",
-        "begriff": "SpO₂"
-      },
-      {
-        "stepId": "ce02-lukas-beob-06-vitalwerte-altersgerecht",
-        "stepType": "comparison",
-        "phase": "beobachten",
-        "begriff": "Normwerte Kleinkind"
       },
       {
         "stepId": "ce02-lukas-beob-06-vitalwerte-altersgerecht",
@@ -1462,31 +466,13 @@
         "stepId": "ce02-lukas-plan-01-massnahmen-matrix",
         "stepType": "matrix",
         "phase": "planen",
-        "begriff": "Wundauflage"
-      },
-      {
-        "stepId": "ce02-lukas-plan-01-massnahmen-matrix",
-        "stepType": "matrix",
-        "phase": "planen",
         "begriff": "Flüssigkeitsbilanz"
       },
       {
         "stepId": "ce02-lukas-plan-01-massnahmen-matrix",
         "stepType": "matrix",
         "phase": "planen",
-        "begriff": "Wundauflage"
-      },
-      {
-        "stepId": "ce02-lukas-plan-01-massnahmen-matrix",
-        "stepType": "matrix",
-        "phase": "planen",
         "begriff": "Flüssigkeitsbilanz"
-      },
-      {
-        "stepId": "ce02-lukas-plan-03-fluessigkeitsbedarf",
-        "stepType": "calculation",
-        "phase": "planen",
-        "begriff": "Holliday-Segar-Regel"
       },
       {
         "stepId": "ce02-lukas-plan-03-fluessigkeitsbedarf",
@@ -1501,66 +487,6 @@
         "begriff": "Flüssigkeitsbedarf"
       },
       {
-        "stepId": "ce02-lukas-plan-03-fluessigkeitsbedarf",
-        "stepType": "calculation",
-        "phase": "planen",
-        "begriff": "Holliday-Segar-Regel"
-      },
-      {
-        "stepId": "ce02-lukas-plan-04-ethisches-dilemma-kinderschutz",
-        "stepType": "branching",
-        "phase": "planen",
-        "begriff": "Deeskalation"
-      },
-      {
-        "stepId": "ce02-lukas-plan-04-ethisches-dilemma-kinderschutz",
-        "stepType": "branching",
-        "phase": "planen",
-        "begriff": "Deeskalation"
-      },
-      {
-        "stepId": "ce02-lukas-plan-05-interprofessionell",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Interprofessionelle Zusammenarbeit"
-      },
-      {
-        "stepId": "ce02-lukas-dur-01-vorbereitung-kinder",
-        "stepType": "sequencing",
-        "phase": "durchfuehren",
-        "begriff": "Analgesie (= Schmerzmittel)"
-      },
-      {
-        "stepId": "ce02-lukas-dur-05-mundpflege-trinkangebot",
-        "stepType": "mc",
-        "phase": "durchfuehren",
-        "begriff": "Mundpflege Kleinkind"
-      },
-      {
-        "stepId": "ce02-lukas-dur-06-komplikation-vater-laut",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Deeskalation"
-      },
-      {
-        "stepId": "ce02-lukas-dur-06-komplikation-vater-laut",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Raumwechsel als Technik"
-      },
-      {
-        "stepId": "ce02-lukas-dur-06-komplikation-vater-laut",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Deeskalation"
-      },
-      {
-        "stepId": "ce02-lukas-eval-01-wundstatus",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "Exsikkose"
-      },
-      {
         "stepId": "ce02-lukas-eval-01-wundstatus",
         "stepType": "categorize",
         "phase": "evaluieren",
@@ -1571,26 +497,14 @@
         "stepType": "timeline",
         "phase": "evaluieren",
         "begriff": "KUSS-Skala (= Schmerzmessung für Kinder)"
-      },
-      {
-        "stepId": "ce02-lukas-dok-02-kinderschutz-doku",
-        "stepType": "matching",
-        "phase": "dokumentieren",
-        "begriff": "Sachliche Dokumentation"
-      },
-      {
-        "stepId": "ce02-lukas-dok-02-kinderschutz-doku",
-        "stepType": "matching",
-        "phase": "dokumentieren",
-        "begriff": "Sachliche Dokumentation"
       }
     ],
-    "coveragePercent": 31
+    "coveragePercent": 72
   },
   {
     "situationId": "ls-nguyen-stoma",
     "totalBegriffe": 91,
-    "erklaerteBegriffe": 27,
+    "erklaerteBegriffe": 24,
     "luecken": [
       {
         "stepId": "ce02-nguyen-info-03-5-probleme-sehen",
@@ -1801,6 +715,12 @@
         "stepType": "truefalse",
         "phase": "beobachten",
         "begriff": "Venenthrombose"
+      },
+      {
+        "stepId": "ce02-nguyen-beob-opt1-stoma-output-bristol",
+        "stepType": "comparison",
+        "phase": "beobachten",
+        "begriff": "Bristol Stool Scale"
       },
       {
         "stepId": "ce02-nguyen-beob-opt1-stoma-output-bristol",
@@ -2169,6 +1089,12 @@
         "begriff": "Pflicht-Elemente"
       },
       {
+        "stepId": "ce02-nguyen-dok-01-stoma-doku-frei",
+        "stepType": "freetext",
+        "phase": "dokumentieren",
+        "begriff": "Behandlungskontinuität"
+      },
+      {
         "stepId": "ce02-nguyen-dok-02-ernaehrungsprotokoll",
         "stepType": "tablefillin",
         "phase": "dokumentieren",
@@ -2199,6 +1125,12 @@
         "begriff": "Kalorien"
       },
       {
+        "stepId": "ce02-nguyen-dok-03-pflegebericht-matching",
+        "stepType": "matching",
+        "phase": "dokumentieren",
+        "begriff": "Behandlungskontinuität"
+      },
+      {
         "stepId": "ce02-nguyen-dok-04-uebergabe-formulieren",
         "stepType": "freetext",
         "phase": "dokumentieren",
@@ -2208,207 +1140,33 @@
         "stepId": "ce02-nguyen-dok-04-uebergabe-formulieren",
         "stepType": "freetext",
         "phase": "dokumentieren",
+        "begriff": "Behandlungskontinuität"
+      },
+      {
+        "stepId": "ce02-nguyen-dok-04-uebergabe-formulieren",
+        "stepType": "freetext",
+        "phase": "dokumentieren",
         "begriff": "Übergabe"
+      },
+      {
+        "stepId": "ce02-nguyen-dok-opt1-was-nicht-dokumentieren",
+        "stepType": "mc",
+        "phase": "dokumentieren",
+        "begriff": "Objektivität"
       }
     ],
-    "coveragePercent": 30
+    "coveragePercent": 26
   },
   {
     "situationId": "ls-petrov-schlaganfall",
-    "totalBegriffe": 81,
-    "erklaerteBegriffe": 29,
+    "totalBegriffe": 66,
+    "erklaerteBegriffe": 56,
     "luecken": [
-      {
-        "stepId": "ce02-petrov-info-02-pflegeprozess-check",
-        "stepType": "mc",
-        "phase": "informieren",
-        "begriff": "Pflegeprozess"
-      },
-      {
-        "stepId": "ce02-petrov-info-02-pflegeprozess-check",
-        "stepType": "mc",
-        "phase": "informieren",
-        "begriff": "Pflegeprozess"
-      },
-      {
-        "stepId": "ce02-petrov-info-03-schlaganfall-akutwissen",
-        "stepType": "flipcard",
-        "phase": "informieren",
-        "begriff": "MCA"
-      },
-      {
-        "stepId": "ce02-petrov-info-03-schlaganfall-akutwissen",
-        "stepType": "flipcard",
-        "phase": "informieren",
-        "begriff": "GUSS"
-      },
-      {
-        "stepId": "ce02-petrov-info-04-zimmer-betreten",
-        "stepType": "dialog",
-        "phase": "informieren",
-        "begriff": "Aphasie"
-      },
-      {
-        "stepId": "ce02-petrov-info-04-zimmer-betreten",
-        "stepType": "dialog",
-        "phase": "informieren",
-        "begriff": "Kommunikation"
-      },
-      {
-        "stepId": "ce02-petrov-info-04-zimmer-betreten",
-        "stepType": "dialog",
-        "phase": "informieren",
-        "begriff": "Aphasie"
-      },
-      {
-        "stepId": "ce02-petrov-info-05-aphasie-kommunikation",
-        "stepType": "matching",
-        "phase": "informieren",
-        "begriff": "Broca-Aphasie"
-      },
-      {
-        "stepId": "ce02-petrov-info-05-aphasie-kommunikation",
-        "stepType": "matching",
-        "phase": "informieren",
-        "begriff": "nonverbale Kommunikation"
-      },
-      {
-        "stepId": "ce02-petrov-info-05-aphasie-kommunikation",
-        "stepType": "matching",
-        "phase": "informieren",
-        "begriff": "Aphasie"
-      },
-      {
-        "stepId": "ce02-petrov-beob-01-motorik-brilliantfrage",
-        "stepType": "freetext",
-        "phase": "beobachten",
-        "begriff": "Muskeltonus"
-      },
-      {
-        "stepId": "ce02-petrov-beob-01-motorik-brilliantfrage",
-        "stepType": "freetext",
-        "phase": "beobachten",
-        "begriff": "Lagerung"
-      },
-      {
-        "stepId": "ce02-petrov-beob-01-motorik-brilliantfrage",
-        "stepType": "freetext",
-        "phase": "beobachten",
-        "begriff": "Lagerung"
-      },
-      {
-        "stepId": "ce02-petrov-beob-02-motorik-assessment",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Dorsalflexion"
-      },
-      {
-        "stepId": "ce02-petrov-beob-02-motorik-assessment",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Motorik"
-      },
-      {
-        "stepId": "ce02-petrov-beob-02-motorik-assessment",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Motorik"
-      },
-      {
-        "stepId": "ce02-petrov-beob-03-schluckversuch",
-        "stepType": "branching",
-        "phase": "beobachten",
-        "begriff": "GUSS"
-      },
-      {
-        "stepId": "ce02-petrov-beob-05-katheter-check",
-        "stepType": "truefalse",
-        "phase": "beobachten",
-        "begriff": "Bilanzierung"
-      },
-      {
-        "stepId": "ce02-petrov-beob-06-hautinspektion",
-        "stepType": "hotspot",
-        "phase": "beobachten",
-        "begriff": "Dekubitus"
-      },
       {
         "stepId": "ce02-petrov-beob-06-hautinspektion",
         "stepType": "hotspot",
         "phase": "beobachten",
         "begriff": "Prädilektionsstellen"
-      },
-      {
-        "stepId": "ce02-petrov-beob-06-hautinspektion",
-        "stepType": "hotspot",
-        "phase": "beobachten",
-        "begriff": "EPUAP"
-      },
-      {
-        "stepId": "ce02-petrov-beob-06-hautinspektion",
-        "stepType": "hotspot",
-        "phase": "beobachten",
-        "begriff": "Dekubitus"
-      },
-      {
-        "stepId": "ce02-petrov-beob-06-hautinspektion",
-        "stepType": "hotspot",
-        "phase": "beobachten",
-        "begriff": "Haut"
-      },
-      {
-        "stepId": "ce02-petrov-beob-07-risikosynthese",
-        "stepType": "matrix",
-        "phase": "beobachten",
-        "begriff": "Dekubitus"
-      },
-      {
-        "stepId": "ce02-petrov-beob-07-risikosynthese",
-        "stepType": "matrix",
-        "phase": "beobachten",
-        "begriff": "Dekubitus"
-      },
-      {
-        "stepId": "ce02-petrov-plan-02-pesr-selbst-formulieren",
-        "stepType": "freetext",
-        "phase": "planen",
-        "begriff": "Dekubitus"
-      },
-      {
-        "stepId": "ce02-petrov-plan-02-pesr-selbst-formulieren",
-        "stepType": "freetext",
-        "phase": "planen",
-        "begriff": "Körperpflege"
-      },
-      {
-        "stepId": "ce02-petrov-plan-02-pesr-selbst-formulieren",
-        "stepType": "freetext",
-        "phase": "planen",
-        "begriff": "Dekubitus"
-      },
-      {
-        "stepId": "ce02-petrov-plan-03-pflegeziele-matching",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "SMART"
-      },
-      {
-        "stepId": "ce02-petrov-plan-03-pflegeziele-matching",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Pflegeziel"
-      },
-      {
-        "stepId": "ce02-petrov-plan-03-pflegeziele-matching",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Pflegeziel"
-      },
-      {
-        "stepId": "ce02-petrov-plan-03-pflegeziele-matching",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "SMART"
       },
       {
         "stepId": "ce02-petrov-plan-04-priorisierung",
@@ -2426,12 +1184,6 @@
         "stepId": "ce02-petrov-plan-04-priorisierung",
         "stepType": "sorting",
         "phase": "planen",
-        "begriff": "ABCDE"
-      },
-      {
-        "stepId": "ce02-petrov-plan-04-priorisierung",
-        "stepType": "sorting",
-        "phase": "planen",
         "begriff": "Pflegemaßnahmen"
       },
       {
@@ -2441,124 +1193,16 @@
         "begriff": "Körperpflege"
       },
       {
-        "stepId": "ce02-petrov-dur-02-ganzkoerperpflege-sequencing",
-        "stepType": "sequencing",
-        "phase": "durchfuehren",
-        "begriff": "Seitenlage"
-      },
-      {
-        "stepId": "ce02-petrov-dur-02-ganzkoerperpflege-sequencing",
-        "stepType": "sequencing",
-        "phase": "durchfuehren",
-        "begriff": "Körperpflege"
-      },
-      {
         "stepId": "ce02-petrov-dur-03-drehen-seitenlage",
         "stepType": "diagram",
         "phase": "durchfuehren",
         "begriff": "Schultergürtel"
       },
       {
-        "stepId": "ce02-petrov-dur-03-drehen-seitenlage",
-        "stepType": "diagram",
-        "phase": "durchfuehren",
-        "begriff": "Schulterblatt"
-      },
-      {
-        "stepId": "ce02-petrov-dur-03-drehen-seitenlage",
-        "stepType": "diagram",
-        "phase": "durchfuehren",
-        "begriff": "Beckenkamm"
-      },
-      {
-        "stepId": "ce02-petrov-dur-03-drehen-seitenlage",
-        "stepType": "diagram",
-        "phase": "durchfuehren",
-        "begriff": "Seitenlage"
-      },
-      {
-        "stepId": "ce02-petrov-dur-03-drehen-seitenlage",
-        "stepType": "diagram",
-        "phase": "durchfuehren",
-        "begriff": "Seitenlage"
-      },
-      {
-        "stepId": "ce02-petrov-dur-03-drehen-seitenlage",
-        "stepType": "diagram",
-        "phase": "durchfuehren",
-        "begriff": "Schultergürtel"
-      },
-      {
-        "stepId": "ce02-petrov-dur-03-drehen-seitenlage",
-        "stepType": "diagram",
-        "phase": "durchfuehren",
-        "begriff": "Beckenkamm"
-      },
-      {
-        "stepId": "ce02-petrov-dur-04-atemuebungen",
-        "stepType": "matching",
-        "phase": "durchfuehren",
-        "begriff": "Lippenbremse"
-      },
-      {
-        "stepId": "ce02-petrov-dur-04-atemuebungen",
-        "stepType": "matching",
-        "phase": "durchfuehren",
-        "begriff": "Frühmobilisation"
-      },
-      {
-        "stepId": "ce02-petrov-dur-04-atemuebungen",
-        "stepType": "matching",
-        "phase": "durchfuehren",
-        "begriff": "Oberkörperhochlagerung"
-      },
-      {
-        "stepId": "ce02-petrov-dur-04-atemuebungen",
-        "stepType": "matching",
-        "phase": "durchfuehren",
-        "begriff": "Mobilisation"
-      },
-      {
-        "stepId": "ce02-petrov-dur-06-komp1-verschlucken",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Obstruktion"
-      },
-      {
-        "stepId": "ce02-petrov-dur-06-komp1-verschlucken",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Husten"
-      },
-      {
         "stepId": "ce02-petrov-dur-07-komp1-nachbeobachtung",
         "stepType": "timer",
         "phase": "durchfuehren",
         "begriff": "Sauerstoffsättigung"
-      },
-      {
-        "stepId": "ce02-petrov-dur-07-komp1-nachbeobachtung",
-        "stepType": "timer",
-        "phase": "durchfuehren",
-        "begriff": "Pulsoximeter"
-      },
-      {
-        "stepId": "ce02-petrov-dur-07-komp1-nachbeobachtung",
-        "stepType": "timer",
-        "phase": "durchfuehren",
-        "begriff": "stille Aspiration"
-      },
-      {
-        "stepId": "ce02-petrov-dur-07-komp1-nachbeobachtung",
-        "stepType": "timer",
-        "phase": "durchfuehren",
-        "begriff": "Sauerstoffsättigung"
-      },
-      {
-        "stepId": "ce02-petrov-dur-07-komp1-nachbeobachtung",
-        "stepType": "timer",
-        "phase": "durchfuehren",
-        "begriff": "stille Aspiration"
       },
       {
         "stepId": "ce02-petrov-dur-08-komp2-natalya",
@@ -2571,72 +1215,6 @@
         "stepType": "chatSim",
         "phase": "durchfuehren",
         "begriff": "Angehörigenberatung"
-      },
-      {
-        "stepId": "ce02-petrov-dur-09-mobilisation-bettkante",
-        "stepType": "dialog",
-        "phase": "durchfuehren",
-        "begriff": "RR-Kontrolle"
-      },
-      {
-        "stepId": "ce02-petrov-dur-09-mobilisation-bettkante",
-        "stepType": "dialog",
-        "phase": "durchfuehren",
-        "begriff": "RR-Kontrolle"
-      },
-      {
-        "stepId": "ce02-petrov-eval-01-zielcheck",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "Evaluation"
-      },
-      {
-        "stepId": "ce02-petrov-eval-01-zielcheck",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "Pflegeziel"
-      },
-      {
-        "stepId": "ce02-petrov-eval-01-zielcheck",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "SMART"
-      },
-      {
-        "stepId": "ce02-petrov-eval-01-zielcheck",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "Evaluation"
-      },
-      {
-        "stepId": "ce02-petrov-eval-01-zielcheck",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "Pflegeziel"
-      },
-      {
-        "stepId": "ce02-petrov-eval-02-schluckstatus-neu",
-        "stepType": "mc",
-        "phase": "evaluieren",
-        "begriff": "Schlucktherapeutin"
-      },
-      {
-        "stepId": "ce02-petrov-eval-02-schluckstatus-neu",
-        "stepType": "mc",
-        "phase": "evaluieren",
-        "begriff": "Schlucktherapeutin"
-      },
-      {
-        "stepId": "ce02-petrov-eval-03-mobilisations-fortschritt",
-        "stepType": "slider",
-        "phase": "evaluieren",
-        "begriff": "Rehabilitation"
-      },
-      {
-        "stepId": "ce02-petrov-eval-03-mobilisations-fortschritt",
-        "stepType": "slider",
-        "phase": "evaluieren",
-        "begriff": "MRC-Skala"
       },
       {
         "stepId": "ce02-petrov-eval-03-mobilisations-fortschritt",
@@ -2645,100 +1223,16 @@
         "begriff": "Reha"
       },
       {
-        "stepId": "ce02-petrov-eval-03-mobilisations-fortschritt",
-        "stepType": "slider",
-        "phase": "evaluieren",
-        "begriff": "MRC-Skala"
-      },
-      {
-        "stepId": "ce02-petrov-eval-04-katheter-entscheidung",
-        "stepType": "branching",
-        "phase": "evaluieren",
-        "begriff": "proaktiv"
-      },
-      {
-        "stepId": "ce02-petrov-eval-05-reflexion-natalya",
-        "stepType": "reflection",
-        "phase": "evaluieren",
-        "begriff": "Prognose"
-      },
-      {
-        "stepId": "ce02-petrov-eval-05-reflexion-natalya",
-        "stepType": "reflection",
-        "phase": "evaluieren",
-        "begriff": "Autonomie"
-      },
-      {
         "stepId": "ce02-petrov-eval-05-reflexion-natalya",
         "stepType": "reflection",
         "phase": "evaluieren",
         "begriff": "Aufklärungspflicht"
       },
       {
-        "stepId": "ce02-petrov-eval-05-reflexion-natalya",
-        "stepType": "reflection",
-        "phase": "evaluieren",
-        "begriff": "Prognose"
-      },
-      {
-        "stepId": "ce02-petrov-dok-01-pflegebericht-frei",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Pflegebericht"
-      },
-      {
-        "stepId": "ce02-petrov-dok-01-pflegebericht-frei",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Dokumentation"
-      },
-      {
-        "stepId": "ce02-petrov-dok-01-pflegebericht-frei",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "§ 630f BGB"
-      },
-      {
-        "stepId": "ce02-petrov-dok-01-pflegebericht-frei",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Pflegebericht"
-      },
-      {
-        "stepId": "ce02-petrov-dok-01-pflegebericht-frei",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Dokumentation"
-      },
-      {
-        "stepId": "ce02-petrov-dok-02-katheter-bilanz",
-        "stepType": "tablefillin",
-        "phase": "dokumentieren",
-        "begriff": "Bilanzierung"
-      },
-      {
-        "stepId": "ce02-petrov-dok-02-katheter-bilanz",
-        "stepType": "tablefillin",
-        "phase": "dokumentieren",
-        "begriff": "Ausscheidung"
-      },
-      {
-        "stepId": "ce02-petrov-dok-02-katheter-bilanz",
-        "stepType": "tablefillin",
-        "phase": "dokumentieren",
-        "begriff": "Bilanzierung"
-      },
-      {
         "stepId": "ce02-petrov-dok-03-sbar-uebergabe",
         "stepType": "freetext",
         "phase": "dokumentieren",
         "begriff": "Übergabe"
-      },
-      {
-        "stepId": "ce02-petrov-dok-03-sbar-uebergabe",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Pflegedokumentation"
       },
       {
         "stepId": "ce02-petrov-dok-03-sbar-uebergabe",
@@ -2747,12 +1241,12 @@
         "begriff": "Übergabe"
       }
     ],
-    "coveragePercent": 36
+    "coveragePercent": 85
   },
   {
     "situationId": "ls-schmidt-adipositas",
     "totalBegriffe": 28,
-    "erklaerteBegriffe": 8,
+    "erklaerteBegriffe": 24,
     "luecken": [
       {
         "stepId": "ce02-schmidt-beob-01-brilliantfrage",
@@ -2795,212 +1289,14 @@
         "stepType": "hotspot",
         "phase": "beobachten",
         "begriff": "Dekubitus"
-      },
-      {
-        "stepId": "ce02-schmidt-beob-06-fussinspektion",
-        "stepType": "mc",
-        "phase": "beobachten",
-        "begriff": "Diabetisches Fußsyndrom"
-      },
-      {
-        "stepId": "ce02-schmidt-beob-06-fussinspektion",
-        "stepType": "mc",
-        "phase": "beobachten",
-        "begriff": "Podologe"
-      },
-      {
-        "stepId": "ce02-schmidt-beob-06-fussinspektion",
-        "stepType": "mc",
-        "phase": "beobachten",
-        "begriff": "Onychomykose"
-      },
-      {
-        "stepId": "ce02-schmidt-beob-06-fussinspektion",
-        "stepType": "mc",
-        "phase": "beobachten",
-        "begriff": "Diabetisches Fußsyndrom"
-      },
-      {
-        "stepId": "ce02-schmidt-beob-06-fussinspektion",
-        "stepType": "mc",
-        "phase": "beobachten",
-        "begriff": "Podologe"
-      },
-      {
-        "stepId": "ce02-schmidt-beob-06-fussinspektion",
-        "stepType": "mc",
-        "phase": "beobachten",
-        "begriff": "Onychomykose"
-      },
-      {
-        "stepId": "ce02-schmidt-beob-07-inkontinenz-assessment",
-        "stepType": "dialog",
-        "phase": "beobachten",
-        "begriff": "Belastungsinkontinenz"
-      },
-      {
-        "stepId": "ce02-schmidt-beob-07-inkontinenz-assessment",
-        "stepType": "dialog",
-        "phase": "beobachten",
-        "begriff": "Belastungsinkontinenz"
-      },
-      {
-        "stepId": "ce02-schmidt-plan-01-pflegediagnosen",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "PESR-Schema"
-      },
-      {
-        "stepId": "ce02-schmidt-plan-01-pflegediagnosen",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Pflegediagnose"
-      },
-      {
-        "stepId": "ce02-schmidt-plan-01-pflegediagnosen",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "PESR-Schema"
-      },
-      {
-        "stepId": "ce02-schmidt-plan-01-pflegediagnosen",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Pflegediagnose"
-      },
-      {
-        "stepId": "ce02-schmidt-plan-02-ziele-smart",
-        "stepType": "freetext",
-        "phase": "planen",
-        "begriff": "SMART-Ziel"
-      },
-      {
-        "stepId": "ce02-schmidt-plan-02-ziele-smart",
-        "stepType": "freetext",
-        "phase": "planen",
-        "begriff": "SMART-Ziel"
-      },
-      {
-        "stepId": "ce02-schmidt-plan-03-interprof-team",
-        "stepType": "matrix",
-        "phase": "planen",
-        "begriff": "Interprofessionell"
-      },
-      {
-        "stepId": "ce02-schmidt-plan-03-interprof-team",
-        "stepType": "matrix",
-        "phase": "planen",
-        "begriff": "Podologe"
-      },
-      {
-        "stepId": "ce02-schmidt-plan-03-interprof-team",
-        "stepType": "matrix",
-        "phase": "planen",
-        "begriff": "Interprofessionell"
-      },
-      {
-        "stepId": "ce02-schmidt-plan-03-interprof-team",
-        "stepType": "matrix",
-        "phase": "planen",
-        "begriff": "Podologe"
-      },
-      {
-        "stepId": "ce02-schmidt-plan-06-inkontinenz-wuerde",
-        "stepType": "branching",
-        "phase": "planen",
-        "begriff": "Belastungsinkontinenz"
-      },
-      {
-        "stepId": "ce02-schmidt-plan-06-inkontinenz-wuerde",
-        "stepType": "branching",
-        "phase": "planen",
-        "begriff": "Ressourcenorientierung"
-      },
-      {
-        "stepId": "ce02-schmidt-plan-06-inkontinenz-wuerde",
-        "stepType": "branching",
-        "phase": "planen",
-        "begriff": "Belastungsinkontinenz"
-      },
-      {
-        "stepId": "ce02-schmidt-dur-06-fuss-arztmeldung",
-        "stepType": "chatSim",
-        "phase": "durchfuehren",
-        "begriff": "SBAR"
-      },
-      {
-        "stepId": "ce02-schmidt-dur-08-inkontinenz-versorgung-kleinbr",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Ressourcenorientierung"
-      },
-      {
-        "stepId": "ce02-schmidt-dur-08-inkontinenz-versorgung-kleinbr",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Autonomie"
-      },
-      {
-        "stepId": "ce02-schmidt-dur-08-inkontinenz-versorgung-kleinbr",
-        "stepType": "branching",
-        "phase": "durchfuehren",
-        "begriff": "Ressourcenorientierung"
-      },
-      {
-        "stepId": "ce02-schmidt-eval-01-bz-verlauf",
-        "stepType": "timeline",
-        "phase": "evaluieren",
-        "begriff": "Blutzucker-Tagesprofil"
-      },
-      {
-        "stepId": "ce02-schmidt-eval-01-bz-verlauf",
-        "stepType": "timeline",
-        "phase": "evaluieren",
-        "begriff": "Postprandial"
-      },
-      {
-        "stepId": "ce02-schmidt-eval-01-bz-verlauf",
-        "stepType": "timeline",
-        "phase": "evaluieren",
-        "begriff": "Blutzucker-Tagesprofil"
-      },
-      {
-        "stepId": "ce02-schmidt-eval-02-pflegeziele-erreicht",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "Evaluation"
-      },
-      {
-        "stepId": "ce02-schmidt-eval-02-pflegeziele-erreicht",
-        "stepType": "categorize",
-        "phase": "evaluieren",
-        "begriff": "Pflegeziel"
-      },
-      {
-        "stepId": "ce02-schmidt-eval-04-reflexion-beratungsgesprach",
-        "stepType": "freetext",
-        "phase": "evaluieren",
-        "begriff": "Autonomie"
-      },
-      {
-        "stepId": "ce02-schmidt-dok-03-entlassungsplanung",
-        "stepType": "matching",
-        "phase": "dokumentieren",
-        "begriff": "Entlassungsmanagement"
-      },
-      {
-        "stepId": "ce02-schmidt-dok-03-entlassungsplanung",
-        "stepType": "matching",
-        "phase": "dokumentieren",
-        "begriff": "Entlassungsmanagement"
       }
     ],
-    "coveragePercent": 29
+    "coveragePercent": 86
   },
   {
     "situationId": "ls-yilmaz-hueft-tep",
-    "totalBegriffe": 93,
-    "erklaerteBegriffe": 29,
+    "totalBegriffe": 96,
+    "erklaerteBegriffe": 30,
     "luecken": [
       {
         "stepId": "ce02-yilmaz-beob-01-haut-brilliant",
@@ -3114,6 +1410,12 @@
         "stepId": "ce02-yilmaz-beob-07-drainage-optional",
         "stepType": "flipcard",
         "phase": "beobachten",
+        "begriff": "Wundbeobachtung"
+      },
+      {
+        "stepId": "ce02-yilmaz-beob-07-drainage-optional",
+        "stepType": "flipcard",
+        "phase": "beobachten",
         "begriff": "Drainage"
       },
       {
@@ -3121,6 +1423,24 @@
         "stepType": "flipcard",
         "phase": "beobachten",
         "begriff": "Wundflüssigkeit"
+      },
+      {
+        "stepId": "ce02-yilmaz-beob-07-drainage-optional",
+        "stepType": "flipcard",
+        "phase": "beobachten",
+        "begriff": "Wundbeobachtung"
+      },
+      {
+        "stepId": "ce02-yilmaz-plan-01-schmerz-zuerst",
+        "stepType": "mc",
+        "phase": "planen",
+        "begriff": "Physiotherapie"
+      },
+      {
+        "stepId": "ce02-yilmaz-plan-01-schmerz-zuerst",
+        "stepType": "mc",
+        "phase": "planen",
+        "begriff": "Physiotherapie"
       },
       {
         "stepId": "ce02-yilmaz-plan-02-pesr-formulieren",
@@ -3487,8 +1807,8 @@
   },
   {
     "situationId": "ls-yilmaz-spirale2",
-    "totalBegriffe": 72,
-    "erklaerteBegriffe": 10,
+    "totalBegriffe": 47,
+    "erklaerteBegriffe": 33,
     "luecken": [
       {
         "stepId": "ce02-yilmaz-s2-info-02-akte-risikoprofil",
@@ -3515,18 +1835,6 @@
         "begriff": "Hyperglykämie"
       },
       {
-        "stepId": "ce02-yilmaz-s2-info-opt-02-braden-vorwissen",
-        "stepType": "estimation",
-        "phase": "informieren",
-        "begriff": "Braden-Skala"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-info-opt-02-braden-vorwissen",
-        "stepType": "estimation",
-        "phase": "informieren",
-        "begriff": "Braden-Skala"
-      },
-      {
         "stepId": "ce02-yilmaz-s2-beob-01-wunde-sehen",
         "stepType": "hotspot",
         "phase": "beobachten",
@@ -3537,42 +1845,6 @@
         "stepType": "hotspot",
         "phase": "beobachten",
         "begriff": "Wundgrund"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-beob-02-kategorien-abgrenzen",
-        "stepType": "comparison",
-        "phase": "beobachten",
-        "begriff": "Dekubitus Kategorie I"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-beob-02-kategorien-abgrenzen",
-        "stepType": "comparison",
-        "phase": "beobachten",
-        "begriff": "Dekubitus Kategorie II"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-beob-02-kategorien-abgrenzen",
-        "stepType": "comparison",
-        "phase": "beobachten",
-        "begriff": "Erosion"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-beob-02-kategorien-abgrenzen",
-        "stepType": "comparison",
-        "phase": "beobachten",
-        "begriff": "Dekubitus Kategorie I"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-beob-02-kategorien-abgrenzen",
-        "stepType": "comparison",
-        "phase": "beobachten",
-        "begriff": "Dekubitus Kategorie II"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-beob-05-warum-trotz-prophylaxe",
-        "stepType": "freetext",
-        "phase": "beobachten",
-        "begriff": "Donabedian"
       },
       {
         "stepId": "ce02-yilmaz-s2-beob-05-warum-trotz-prophylaxe",
@@ -3587,72 +1859,6 @@
         "begriff": "Prozessqualität"
       },
       {
-        "stepId": "ce02-yilmaz-s2-beob-06-umgebung-feuchtigkeit",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Endogene Faktoren"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-beob-06-umgebung-feuchtigkeit",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Exogene Faktoren"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-beob-06-umgebung-feuchtigkeit",
-        "stepType": "categorize",
-        "phase": "beobachten",
-        "begriff": "Organisationsfaktoren"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-beob-opt-02-mazeration",
-        "stepType": "flipcard",
-        "phase": "beobachten",
-        "begriff": "Hornschicht"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-beob-opt-02-mazeration",
-        "stepType": "flipcard",
-        "phase": "beobachten",
-        "begriff": "Hautbarriere"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-01-wundauflage-auswahl",
-        "stepType": "mc",
-        "phase": "planen",
-        "begriff": "Hydrokolloid-Verband"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-01-wundauflage-auswahl",
-        "stepType": "mc",
-        "phase": "planen",
-        "begriff": "Alginate"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-01-wundauflage-auswahl",
-        "stepType": "mc",
-        "phase": "planen",
-        "begriff": "VAC-Therapie"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-01-wundauflage-auswahl",
-        "stepType": "mc",
-        "phase": "planen",
-        "begriff": "Feuchtes Wundmilieu"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-01-wundauflage-auswahl",
-        "stepType": "mc",
-        "phase": "planen",
-        "begriff": "Hydrokolloid-Verband"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-01-wundauflage-auswahl",
-        "stepType": "mc",
-        "phase": "planen",
-        "begriff": "Feuchtes Wundmilieu"
-      },
-      {
         "stepId": "ce02-yilmaz-s2-plan-02-positionierungsplan",
         "stepType": "sequencing",
         "phase": "planen",
@@ -3663,12 +1869,6 @@
         "stepType": "sequencing",
         "phase": "planen",
         "begriff": "135°-Seitenlage"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-04-donabedian-qualitaet",
-        "stepType": "conceptmap",
-        "phase": "planen",
-        "begriff": "Donabedian"
       },
       {
         "stepId": "ce02-yilmaz-s2-plan-04-donabedian-qualitaet",
@@ -3689,58 +1889,10 @@
         "begriff": "Ergebnisqualität"
       },
       {
-        "stepId": "ce02-yilmaz-s2-plan-04-donabedian-qualitaet",
-        "stepType": "conceptmap",
-        "phase": "planen",
-        "begriff": "Donabedian"
-      },
-      {
         "stepId": "ce02-yilmaz-s2-plan-05-arzt-information",
         "stepType": "dialog",
         "phase": "planen",
         "begriff": "§ 3 PflBG"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-opt-01-wundauflagen-glossar",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Hydrokolloid"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-opt-01-wundauflagen-glossar",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Alginate"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-opt-01-wundauflagen-glossar",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Silber-Wundauflage"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-opt-01-wundauflagen-glossar",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Fettgaze"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-opt-01-wundauflagen-glossar",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Schaumverband"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-opt-01-wundauflagen-glossar",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Hydrokolloid"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-plan-opt-01-wundauflagen-glossar",
-        "stepType": "matching",
-        "phase": "planen",
-        "begriff": "Alginate"
       },
       {
         "stepId": "ce02-yilmaz-s2-durch-01-vorbereitung-hygiene",
@@ -3771,296 +1923,8 @@
         "stepType": "sorting",
         "phase": "durchfuehren",
         "begriff": "Aseptisch"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-02-wundzustand-beschreiben",
-        "stepType": "cloze",
-        "phase": "durchfuehren",
-        "begriff": "Wundgrund"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-02-wundzustand-beschreiben",
-        "stepType": "cloze",
-        "phase": "durchfuehren",
-        "begriff": "Wundrand"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-02-wundzustand-beschreiben",
-        "stepType": "cloze",
-        "phase": "durchfuehren",
-        "begriff": "Exsudat"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-02-wundzustand-beschreiben",
-        "stepType": "cloze",
-        "phase": "durchfuehren",
-        "begriff": "Wundgrund"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-02-wundzustand-beschreiben",
-        "stepType": "cloze",
-        "phase": "durchfuehren",
-        "begriff": "Wundrand"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-03-foto-dokumentation",
-        "stepType": "truefalse",
-        "phase": "durchfuehren",
-        "begriff": "DSGVO Art. 9"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-03-foto-dokumentation",
-        "stepType": "truefalse",
-        "phase": "durchfuehren",
-        "begriff": "Einwilligung"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-03-foto-dokumentation",
-        "stepType": "truefalse",
-        "phase": "durchfuehren",
-        "begriff": "Fotodokumentation"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-03-foto-dokumentation",
-        "stepType": "truefalse",
-        "phase": "durchfuehren",
-        "begriff": "DSGVO"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-03-foto-dokumentation",
-        "stepType": "truefalse",
-        "phase": "durchfuehren",
-        "begriff": "Einwilligung"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-04-positionierung-135",
-        "stepType": "labelImage",
-        "phase": "durchfuehren",
-        "begriff": "Fersenfreistellung"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-04-positionierung-135",
-        "stepType": "labelImage",
-        "phase": "durchfuehren",
-        "begriff": "Hüft-TEP Schutzlagerung"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-05-kommunikation-waehrend",
-        "stepType": "dialog",
-        "phase": "durchfuehren",
-        "begriff": "Interkulturelle Kompetenz"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-05-kommunikation-waehrend",
-        "stepType": "dialog",
-        "phase": "durchfuehren",
-        "begriff": "Manuka-Honig"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-opt-01-hygienefehler-erkennen",
-        "stepType": "errorspot",
-        "phase": "durchfuehren",
-        "begriff": "Kontamination"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-opt-01-hygienefehler-erkennen",
-        "stepType": "errorspot",
-        "phase": "durchfuehren",
-        "begriff": "Aseptisch"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-durch-opt-01-hygienefehler-erkennen",
-        "stepType": "errorspot",
-        "phase": "durchfuehren",
-        "begriff": "Kontamination"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-01-wundstatus-beurteilen",
-        "stepType": "comparison",
-        "phase": "evaluieren",
-        "begriff": "Granulationsgewebe"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-01-wundstatus-beurteilen",
-        "stepType": "comparison",
-        "phase": "evaluieren",
-        "begriff": "Exsudat"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-02-umlagerung-compliance",
-        "stepType": "mc",
-        "phase": "evaluieren",
-        "begriff": "Donabedian"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-02-umlagerung-compliance",
-        "stepType": "mc",
-        "phase": "evaluieren",
-        "begriff": "Strukturebene"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-02-umlagerung-compliance",
-        "stepType": "mc",
-        "phase": "evaluieren",
-        "begriff": "Prozessebene"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-04-entlassungsplanung",
-        "stepType": "careplan",
-        "phase": "evaluieren",
-        "begriff": "Entlassungsmanagement"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-04-entlassungsplanung",
-        "stepType": "careplan",
-        "phase": "evaluieren",
-        "begriff": "Pflegeüberleitung"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-04-entlassungsplanung",
-        "stepType": "careplan",
-        "phase": "evaluieren",
-        "begriff": "Hilfsmittelversorgung"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-04-entlassungsplanung",
-        "stepType": "careplan",
-        "phase": "evaluieren",
-        "begriff": "Entlassungsmanagement"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-opt-01-wundheilung-phasen",
-        "stepType": "timeline",
-        "phase": "evaluieren",
-        "begriff": "Exsudationsphase"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-opt-01-wundheilung-phasen",
-        "stepType": "timeline",
-        "phase": "evaluieren",
-        "begriff": "Resorptionsphase"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-opt-01-wundheilung-phasen",
-        "stepType": "timeline",
-        "phase": "evaluieren",
-        "begriff": "Proliferationsphase"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-opt-01-wundheilung-phasen",
-        "stepType": "timeline",
-        "phase": "evaluieren",
-        "begriff": "Regenerationsphase"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-opt-02-negativszenario",
-        "stepType": "branching",
-        "phase": "evaluieren",
-        "begriff": "Rubor"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-opt-02-negativszenario",
-        "stepType": "branching",
-        "phase": "evaluieren",
-        "begriff": "Calor"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-opt-02-negativszenario",
-        "stepType": "branching",
-        "phase": "evaluieren",
-        "begriff": "Dolor"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-opt-02-negativszenario",
-        "stepType": "branching",
-        "phase": "evaluieren",
-        "begriff": "Tumor"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-opt-02-negativszenario",
-        "stepType": "branching",
-        "phase": "evaluieren",
-        "begriff": "Functio laesa"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-opt-02-negativszenario",
-        "stepType": "branching",
-        "phase": "evaluieren",
-        "begriff": "Wundinfektion"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-eval-opt-02-negativszenario",
-        "stepType": "branching",
-        "phase": "evaluieren",
-        "begriff": "Wundinfektion"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-doku-01-wundbericht-freitext",
-        "stepType": "freetext",
-        "phase": "dokumentieren",
-        "begriff": "Verbandwechsel"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-doku-02-spe-qualitaetscheck",
-        "stepType": "matrix",
-        "phase": "dokumentieren",
-        "begriff": "Strukturqualität"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-doku-02-spe-qualitaetscheck",
-        "stepType": "matrix",
-        "phase": "dokumentieren",
-        "begriff": "Prozessqualität"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-doku-02-spe-qualitaetscheck",
-        "stepType": "matrix",
-        "phase": "dokumentieren",
-        "begriff": "Ergebnisqualität"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-doku-02-spe-qualitaetscheck",
-        "stepType": "matrix",
-        "phase": "dokumentieren",
-        "begriff": "Donabedian"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-doku-02-spe-qualitaetscheck",
-        "stepType": "matrix",
-        "phase": "dokumentieren",
-        "begriff": "Donabedian"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-doku-03-expertenstandard-anwenden",
-        "stepType": "matching",
-        "phase": "dokumentieren",
-        "begriff": "DNQP"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-doku-03-expertenstandard-anwenden",
-        "stepType": "matching",
-        "phase": "dokumentieren",
-        "begriff": "Expertenstandard"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-doku-03-expertenstandard-anwenden",
-        "stepType": "matching",
-        "phase": "dokumentieren",
-        "begriff": "Struktur-Kriterium"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-doku-03-expertenstandard-anwenden",
-        "stepType": "matching",
-        "phase": "dokumentieren",
-        "begriff": "DNQP"
-      },
-      {
-        "stepId": "ce02-yilmaz-s2-doku-03-expertenstandard-anwenden",
-        "stepType": "matching",
-        "phase": "dokumentieren",
-        "begriff": "Expertenstandard"
       }
     ],
-    "coveragePercent": 14
+    "coveragePercent": 70
   }
 ]

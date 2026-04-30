@@ -37,14 +37,14 @@ export const CE02_SIT_KOVAC_AMBULANT_INFORMIEREN: SituationsPhase = {
         body: "Du öffnest die Dokumentationsmappe. Die Kollegin vom Abendbesuch — Petra — hat einen handschriftlichen Zettel beigelegt:\n\n\"Fr. Kovač unruhig. Hat kaum gegessen — nur Brot. Trinkmenge 820 ml (Protokoll liegt am Küchentisch). Stühle seit 4 Tagen keiner. Kompressionsstrümpfe wieder abgelehnt. Atemübungen kurz gemacht, Frau K. erschöpft nach 3 Min. Kollegin Petra.\"\n\nDas ist die ambulante Übergabe — knapp und alltagstauglich. Sie enthält **S** (Situation: 84-jährige Patientin, unruhig) und **B** (Background: 820 ml, 4 Tage Obstipation, Verweigerung) — aber **A** (Assessment: was hat Petra eingeschätzt?) und **R** (Recommendation: was schlägt sie für heute vor?) fehlen. Das ist keine vollständige SBAR-Übergabe — das ist Realität ambulanter Praxis. Du musst Assessment und Recommendation heute Morgen selbst ergänzen.",
         fallbezug:
           "Frau Kovač (84, COPD III, Herzinsuffizienz NYHA II, Pflegegrad 3) — dein dritter Morgenbesuch. Praxisanleiterin Frau Özdemir hat dir empfohlen: 'Nimm dir Zeit für die Erklärungen — nicht für uns, für sie.'",
-        glossarBegriffe: ["Kompressionsstrümpfe", "Obstipation", "Trinkmenge", "SBAR"],
+        glossarBegriffe: ["Kompressionsstrümpfe", "Obstipation", "Trinkmenge", "SBAR", "COPD", "Herzinsuffizienz"],
       },
       contentB1: {
         title: "Der Zettel von Kollegin Petra",
         body: "Du liest den Zettel der Kollegin vom Abend-Besuch. Die Kollegin heißt Petra.\n\nSie hat aufgeschrieben:\n\"Frau Kovač war unruhig. Sie hat fast nichts gegessen — nur Brot. Sie hat 820 ml getrunken (das steht im Protokoll, es liegt auf dem Küchentisch). Seit 4 Tagen kein Stuhlgang. Die Kompressionsstrümpfe (= Strümpfe gegen Blut-Gerinnsel) hat sie wieder abgelehnt. Die Atem-Übungen hat sie kurz gemacht. Nach 3 Minuten war sie erschöpft. Kollegin Petra.\"\n\nDas ist die ambulante Übergabe (= kurze Information von Kollegin zu Kollegin). Sie ist kürzer als im Krankenhaus. **Wichtig:** Petras Zettel sagt **was war**. Aber er sagt **nicht** was Petra dachte und was sie für heute vorschlägt. Das musst du selbst ergänzen.",
         fallbezug:
           "Frau Kovač, 84 Jahre. Sie hat COPD (= schwere Lungen-Erkrankung). Pflegegrad 3. Du bist Pflegeschülerin im 2. Ausbildungsdrittel.",
-        glossarBegriffe: ["Kompressionsstrümpfe", "Obstipation", "Trinkmenge"],
+        glossarBegriffe: ["Kompressionsstrümpfe", "Obstipation", "Trinkmenge", "COPD", "Herzinsuffizienz"],
       },
     },
 

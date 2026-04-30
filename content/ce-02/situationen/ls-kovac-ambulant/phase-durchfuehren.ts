@@ -68,12 +68,12 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Lippenbremse — was zeigt dir, dass sie funktioniert?",
         body: "Frau Kovač macht die ersten 3 Wiederholungen mit. Du beobachtest. Was ist das wichtigste Zeichen, dass die Lippenbremse korrekt ausgeführt wird?",
-        glossarBegriffe: ["Lippenbremse", "PEEP-Effekt"],
+        glossarBegriffe: ["Lippenbremse", "PEEP-Effekt", "Tachypnoe"],
       },
       contentB1: {
         title: "Wie erkennst du eine richtige Lippenbremse?",
         body: "Frau Kovač macht die Übung. Du schaust zu. Was zeigt dir: Sie macht es richtig?",
-        glossarBegriffe: ["Lippenbremse"],
+        glossarBegriffe: ["Lippenbremse", "Tachypnoe"],
       },
       question: {
         fragetext:

@@ -256,12 +256,12 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
       contentC1: {
         title: "Lagerungsregeln nach Hüft-TEP — Begründungen zuordnen",
         body: "Vor der Mobilisation musst du die Lagerungsvorschriften genau kennen — nicht nur auswendig, sondern auch warum. Die DGU S2k-Leitlinie Endoprothetik Hüfte (2022) nennt drei zentrale Bewegungsverbote für die ersten 6–12 Wochen post-OP: keine Hüftflexion über 90°, keine Adduktion über die Körpermittellinie, keine Innenrotation des operierten Beins. Ordne jede Lagerungsregel dem richtigen Grund zu.",
-        glossarBegriffe: ["Luxation", "Luxationsprophylaxe", "Adduktion", "Innenrotation"],
+        glossarBegriffe: ["Luxation", "Luxationsprophylaxe", "Adduktion", "Innenrotation", "Flexion"],
       },
       contentB1: {
         title: "Lagerungsregeln — warum sind sie wichtig?",
         body: "Frau Yilmaz hat genaue Regeln, wie sie liegen und sich bewegen darf. Diese Regeln schützen das neue Hüftgelenk in den ersten 6–12 Wochen. Drei Verbote: 1. Hüfte nicht über 90° beugen. 2. Beine nicht über die Mitte kreuzen (= Adduktion). 3. Operiertes Bein nicht nach innen drehen (= Innenrotation). Ordne jede Regel dem richtigen Grund zu.",
-        glossarBegriffe: ["Luxation", "Adduktion", "Innenrotation"],
+        glossarBegriffe: ["Luxation", "Adduktion", "Innenrotation", "Flexion"],
       },
       question: {
         fragetext: "Ordne die Lagerungsregeln nach Hüft-TEP dem richtigen Grund zu.",

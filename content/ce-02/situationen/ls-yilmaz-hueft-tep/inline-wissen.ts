@@ -113,12 +113,12 @@ export const IW_YILMAZ_02_LUXATIONSPROPHYLAXE: ContentStep = {
   contentC1: {
     title: "Luxationsprophylaxe: Drei Verbote nach Hueft-TEP",
     body: "",
-    glossarBegriffe: ["Luxation", "Luxationsprophylaxe", "Adduktion", "Innenrotation"],
+    glossarBegriffe: ["Luxation", "Luxationsprophylaxe", "Adduktion", "Innenrotation", "Flexion"],
   },
   contentB1: {
     title: "Drei Bewegungen, die verboten sind",
     body: "",
-    glossarBegriffe: ["Luxation", "Adduktion", "Innenrotation"],
+    glossarBegriffe: ["Luxation", "Adduktion", "Innenrotation", "Flexion"],
   },
   inlineWissen: {
     bausteinRef: "positionierung-huefte-luxationsprophylaxe",

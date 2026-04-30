@@ -253,7 +253,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
       contentB1: {
         title: "Wickeln — Schritt für Schritt",
         body: "Bringe die Schritte in die richtige Reihenfolge. Nie an den Knöcheln anheben — immer am Becken.",
-        glossarBegriffe: [],
+        glossarBegriffe: ["Kinästhetik"],
       },
       question: {
         fragetext:

@@ -29,12 +29,12 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
       contentC1: {
         title: "Schlüsseleinsicht: Schmerzmittel VOR Mobilisation",
         body: "Du möchtest Frau Yilmaz heute aufstehen lassen. Gestern ist der erste Versuch bei NRS 7 gescheitert. Analgesie: Metamizol 500 mg 4× täglich, Wirkungseintritt ca. 30 Minuten. Was tust du ZUERST?",
-        glossarBegriffe: ["Analgesie", "Metamizol", "NRS", "Mobilisation"],
+        glossarBegriffe: ["Analgesie", "Metamizol", "NRS", "Mobilisation", "Physiotherapie"],
       },
       contentB1: {
         title: "Was machst du zuerst — bevor sie aufsteht?",
         body: "Gestern hat der Aufstehversuch nicht geklappt — die Schmerzen waren zu stark (NRS 7). Heute willst du es besser machen. Was tust du zuerst?",
-        glossarBegriffe: ["Schmerzmittel", "Mobilisation"],
+        glossarBegriffe: ["Schmerzmittel", "Mobilisation", "Physiotherapie"],
       },
       question: {
         fragetext: "Du möchtest Frau Yilmaz heute aufstehen lassen. Was tust du ZUERST?",

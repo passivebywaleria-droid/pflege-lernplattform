@@ -35,7 +35,7 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
       contentB1: {
         title: "Pflegeziele formulieren",
         body: "Formuliere 2 Ziele für Emilia in den nächsten 24 Stunden. Ziele müssen messbar sein. Nicht: 'Emilia soll besser trinken.' Sondern: 'Emilia trinkt mindestens 5× und hat mindestens 5 nasse Windeln in 24 Stunden.'",
-        glossarBegriffe: ["Pflegeziel"],
+        glossarBegriffe: ["Pflegeziel", "SMART-Ziel"],
       },
       question: {
         fragetext:

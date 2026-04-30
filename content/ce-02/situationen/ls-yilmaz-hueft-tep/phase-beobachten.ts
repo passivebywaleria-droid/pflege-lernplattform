@@ -398,12 +398,12 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Redon-Drainage: Was du wissen musst",
         body: "Frau Yilmaz hat noch eine Redon-Drainage an der rechten Hüfte. Heute Morgen: 40 ml serös-blutige Förderung (gestern: 80 ml). Was bedeutet das — und wer entscheidet was?",
-        glossarBegriffe: ["Redon-Drainage", "serös-blutig", "Wundheilung"],
+        glossarBegriffe: ["Redon-Drainage", "serös-blutig", "Wundheilung", "Wundbeobachtung"],
       },
       contentB1: {
         title: "Redon-Drainage — was ist das?",
         body: "Frau Yilmaz hat einen Schlauch an der Wunde (= Redon-Drainage). Er saugt Wundflüssigkeit ab. Heute: 40 ml. Gestern: 80 ml. Was bedeutet das?",
-        glossarBegriffe: ["Drainage", "Wundflüssigkeit"],
+        glossarBegriffe: ["Drainage", "Wundflüssigkeit", "Wundbeobachtung"],
       },
       question: {
         fragetext: "Drehe die Karten um — lerne die wichtigsten Fakten zur Redon-Drainage.",
