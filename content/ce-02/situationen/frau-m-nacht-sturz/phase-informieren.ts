@@ -470,12 +470,12 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
                 textB1:
                   "\"Frau M., wo tut es weh? Wie stark — von 0 bis 10? Können Sie alles bewegen?\"",
                 patientResponse:
-                  "\"Die linke Hüfte, innen. Eine Sechs vielleicht, wenn ich mich nicht bewege. Und ich glaube, meine Zehen kann ich bewegen …\" — sie probiert es.",
+                  "\"Die linke Hüfte, innen. Eine Sechs vielleicht, wenn ich mich bewege. Und ich glaube, meine Zehen kann ich bewegen …\" — sie probiert es.",
                 patientResponseB1:
-                  "\"Die linke Hüfte, innen. Eine Sechs, wenn ich still liege. Meine Zehen bewegen sich, glaube ich …\" — sie probiert es.",
+                  "\"Die linke Hüfte, innen. Eine Sechs, wenn ich mich bewege. Meine Zehen bewegen sich, glaube ich …\" — sie probiert es.",
                 score: 3,
                 feedback:
-                  "Klar, konkret, sicher. Drei Informationen in einem Atemzug: Schmerzlokalisation (linke Hüfte — möglicher Bereich für eine Hüftfraktur), Schmerzintensität (NRS 6 — moderat bis stark, dokumentationspflichtig nach DNQP-Schmerz, im SBAR-Anruf an Arzt erwähnen), grobe Motorik (Zehenbewegung — keine schwere Rückenmarkverletzung).",
+                  "Klar, konkret, sicher. Drei Informationen in einem Atemzug: Schmerzlokalisation (linke Hüfte — möglicher Bereich für eine Hüftfraktur), Schmerzintensität (NRS 6 — mäßiger Schmerz, interventions- und dokumentationspflichtig nach DNQP-Schmerz, im SBAR-Anruf an Arzt erwähnen), grobe Motorik (Zehenbewegung — keine schwere Rückenmarkverletzung).",
                 feedbackB1:
                   "Sehr gut. Drei wichtige Antworten in einer Frage: Wo tut es weh (linke Hüfte — Hüftbruch möglich?), wie stark (NRS 6 — das ist nicht wenig, das musst du dokumentieren und dem Arzt sagen), kann sie bewegen (Zehen gehen — kein Rückenschaden).",
               },

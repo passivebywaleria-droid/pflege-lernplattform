@@ -48,7 +48,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       inlineWissen: {
         bausteinRef: "kinästhetik-transfer-boden",
         storyAufhaenger:
-          "Frau M. liegt auf dem Boden, will hoch ins Bett. Du gehst gleich an den Transfer. Aber: **Du hebst sie nicht hoch.** Das ist Anti-Pattern. Hatch & Maietta haben Pflege-Kinästhetik aus japanischer Bewegungslehre + Tanztheorie entwickelt — Patient bewegt sich selbst, du begleitest.",
+          "Frau M. liegt auf dem Boden, will hoch ins Bett. Du gehst gleich an den Transfer. Aber: **Du hebst sie nicht hoch.** Das ist Anti-Pattern. Hatch & Maietta haben Pflege-Kinästhetik aus Behavioral Cybernetics (Karl U. Smith) und Bewegungsanalyse entwickelt — Patient bewegt sich selbst, du begleitest.",
 
         storyAufhaengerB1:
           "Frau M. liegt auf dem Boden. Du musst sie ins Bett bringen. Aber: **Du hebst sie NICHT hoch.** Das ist falsch. Bei Kinästhetik bewegt sich Frau M. selbst, du begleitest sie nur.",

@@ -232,7 +232,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DOKUMENTIEREN: SituationsPhase = {
             "Risikofaktoren erkennen — besonders Medikamente: Zolpidem steht auf PRISCUS-2.0 und erhöht das Sturzrisiko 2- bis 3-fach bei Älteren.",
             "Beobachten und aktiv fragen — Patienten berichten Nebenwirkungen oft nicht von selbst ('ich dachte, das gehört dazu').",
             "Würdevolle Kommunikation bei Sturz-Angst — Angst validieren, Ursache benennen ('Tabletten, nicht Alter'), konkreten Plan geben.",
-            "Rechtliche Grenzen der Fixierung (§ 1906a BGB) — beidseitige Bettgitter ohne Zustimmung sind verboten und keine Prophylaxe.",
+            "Rechtliche Grenzen der Fixierung (§ 1831 BGB) — beidseitige Bettgitter ohne Zustimmung sind verboten und keine Prophylaxe.",
             "Sofortmaßnahmen nach Sturz: Prüfen vor Bewegen. Bei Hüftfraktur-Zeichen (Bein-Verkürzung + Außenrotation): nicht bewegen, Arzt.",
             "Interprofessionelle Kommunikation — SBAR-Anruf strukturiert Übergabe an Arzt. Und: Sturzprophylaxe ist Team-Aufgabe (Cochrane Gillespie et al. 2012, aktualisiert 2023: multifaktorielle Interventionen senken Sturzrate um ca. 21-31 %).",
             "Sturzprotokoll — 9 Pflicht-Elemente, sachlich, zeitnah. Auch verletzungsfreie Stürze + Near-Miss dokumentieren.",

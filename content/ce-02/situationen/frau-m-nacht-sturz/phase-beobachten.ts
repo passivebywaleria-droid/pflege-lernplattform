@@ -584,9 +584,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
           {
             statement:
               "Ich messe den Blutdruck liegend, dann direkt im Sitzen, dann nach 1 Minute im Stand.",
-            isTrue: true,
+            isTrue: false,
             explanation:
-              "Richtig — das ist der pflegerische Schellong-ähnliche Ablauf (liegend → sitzend → stehend mit Pausen). Er zeigt orthostatische Reaktion.",
+              "Falsch — 'direkt' und '1 Minute' sind zu kurz. Korrekter Ablauf: Mindestens 5 Min liegen → RR messen → mindestens 1 Min sitzen → RR messen → 3 Min stehen → RR messen (AAS-Konsensus 2011). Ohne die Wartezeiten sind die Werte nicht aussagekräftig.",
           },
           {
             statement:
