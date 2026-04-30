@@ -243,7 +243,7 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
             text: "Ich frage Frau Yilmaz sofort, warum sie sich nicht gemeldet hat.",
             isCorrect: false,
             explanation:
-              "Das wäre keine gute erste Frage. Frau Yilmaz hat keinen Schmerz gespürt — sie hat keine Schuld. Zudem: Neuropathie erklärt das fehlende Schmerzsignal. Vorwürfe helfen nicht, Vertrauen aufbaün schon.",
+              "Das wäre keine gute erste Frage. Frau Yilmaz hat keinen Schmerz gespürt — sie hat keine Schuld. Zudem: Neuropathie erklärt das fehlende Schmerzsignal. Vorwürfe helfen nicht, Vertrauen aufbauen schon.",
             explanationB1:
               "Das ist keine gute Frage. Frau Yilmaz hat keinen Schmerz gespürt — das liegt an der Nerven-Schädigung durch Diabetes. Sie hat nichts falsch gemacht.",
           },

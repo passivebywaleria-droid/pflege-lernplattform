@@ -267,7 +267,7 @@ export const CE02_SIT_NGUYEN_STOMA_PLANEN: SituationsPhase = {
           "Herr Nguyens Ernährungsprotokoll zeigt minimalen Intake. Was ist dein nächster Schritt?",
         branchingOptions: [
           {
-            text: "Ich animiere ihn mehr zu essen — er muss Kraft aufbaün.",
+            text: "Ich animiere ihn mehr zu essen — er muss Kraft aufbauen.",
             feedback:
               "Zu oberflächlich. 'Mehr essen' ohne Ursachenklärung greift nicht: Warum isst er nicht? Übelkeit? Schmerzen? Erschöpfung? Körperbild-Belastung? Ohne Assessment keine sinnvolle Intervention. Außerdem: Albumin 28 g/l + 6 kg Gewichtsverlust = aktive Mangelernährung — das erfordert eine Ernährungsberaterin, nicht nur Ermutigung. Quelle: DGEM 2020.",
             feedbackB1:

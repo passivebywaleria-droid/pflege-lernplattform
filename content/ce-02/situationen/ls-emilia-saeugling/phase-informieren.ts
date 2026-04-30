@@ -11,9 +11,9 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
   titel: "Informieren & Aufnahmegespräch",
   titelB1: "Informieren: Ankommen im Zimmer",
   kontext:
-    "Du stehst vor Zimmer 8 der Kinderstation. Es ist 07:45 Uhr, Frühdienst. Schwester Andrea hat dir gerade erklärt: Baby Emilia (4 Monate) wurde heute Nacht wegen Bronchiolitis aufgenommen. Die Mutter ist dabei. Du wirst jetzt das Aufnahmegespräch führen — Andrea beobachtet, greift nur ein wenn nötig. Das Ziel der nächsten 20 Minuten: Vertrauen aufbaün, Informationen sammeln, den Ist-Zustand verstehen.",
+    "Du stehst vor Zimmer 8 der Kinderstation. Es ist 07:45 Uhr, Frühdienst. Schwester Andrea hat dir gerade erklärt: Baby Emilia (4 Monate) wurde heute Nacht wegen Bronchiolitis aufgenommen. Die Mutter ist dabei. Du wirst jetzt das Aufnahmegespräch führen — Andrea beobachtet, greift nur ein wenn nötig. Das Ziel der nächsten 20 Minuten: Vertrauen aufbauen, Informationen sammeln, den Ist-Zustand verstehen.",
   kontextB1:
-    "Du stehst vor Zimmer 8. Es ist 07:45 Uhr. Schwester Andrea hat dir erklärt: Emilia (4 Monate) ist krank. Die Diagnose ist Bronchiolitis (= Entzündung der kleinen Atemwege). Die Mutter ist dabei. Du führst jetzt das Aufnahmegespräch. Andrea schaut zu. Sie hilft nur wenn nötig. Dein Ziel in den nächsten 20 Minuten: Vertrauen aufbaün. Informationen sammeln. Verstehen was gerade los ist.",
+    "Du stehst vor Zimmer 8. Es ist 07:45 Uhr. Schwester Andrea hat dir erklärt: Emilia (4 Monate) ist krank. Die Diagnose ist Bronchiolitis (= Entzündung der kleinen Atemwege). Die Mutter ist dabei. Du führst jetzt das Aufnahmegespräch. Andrea schaut zu. Sie hilft nur wenn nötig. Dein Ziel in den nächsten 20 Minuten: Vertrauen aufbauen. Informationen sammeln. Verstehen was gerade los ist.",
   kernSteps: [
     // Step 1.1 — SBAR-Übergabe (scenario)
     {
@@ -139,9 +139,9 @@ export const CE02_SIT_EMILIA_SAEUGLING_INFORMIEREN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Laura schaut dich an. Sie sagt mit ruhiger, aber angespannter Stimme:",
+              "Laura schaut dich an. Sie sagt mit ruhiger, aber angespannter Stimme:\n\n\"Sie trinkt kaum noch. Seit gestern Nacht hat sie nur ein paar Schluck genommen. Ich mache mir große Sorgen.\"",
             contextB1:
-              "Laura schaut dich an. Sie spricht ruhig, aber ihre Stimme ist angespannt:",
+              "Laura schaut dich an. Sie spricht ruhig, aber ihre Stimme ist angespannt:\n\n\"Sie trinkt fast nichts mehr. Seit gestern Nacht nur ganz wenig. Ich habe große Angst.\"",
             speaker: "Laura K.",
             options: [
               {
