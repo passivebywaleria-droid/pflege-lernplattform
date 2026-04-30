@@ -305,6 +305,60 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       },
     },
 
+    // Inline-Wissen: Deeskalation bei Demenz \u2014 wenn Worte nicht helfen
+    {
+      stepId: "ce02-bauer-info-03b-deeskalation",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["DNQP 2018 \u2014 Beziehungsgestaltung bei Demenz", "Savaskan E. et al. (2014): SGAP-Empfehlungen Agitation"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-info-03b-deeskalation",
+      tag: "pflege",
+      themaPrimaer: "basale-stimulation",
+      themenSekundaer: ["sturz-prophylaxe"],
+      transition: "Deeskalation im Kopf? Dann oeffne jetzt die Tuer.",
+      contentC1: {
+        title: "Deeskalation bei Demenz \u2014 wenn Worte nicht helfen",
+        body: "",
+        glossarBegriffe: ["Deeskalation", "Agitation", "Reizreduktion"],
+      },
+      contentB1: {
+        title: "Was tun wenn er aufgeregt ist?",
+        body: "",
+        glossarBegriffe: ["Deeskalation", "Agitation"],
+      },
+      inlineWissen: {
+        bausteinRef: "basale-stimulation-deeskalation",
+        storyAufhaenger: "Herr Bauer ist aufgewuehlt. Du hoerst ihn durch die Tuer. Gleich oeffnest du sie. Aber: Wie beruhigst du jemanden, der nicht versteht wo er ist und wer du bist? Deeskalation bei Demenz funktioniert anders als bei orientierten Patienten.",
+        storyAufhaengerB1: "Herr Bauer ist aufgeregt. Du hoerst ihn. Wie beruhigst du ihn, wenn er nicht versteht wer du bist?",
+        kerntext: "**Deeskalation bei Demenz** bedeutet: Den Erregungskreislauf durchbrechen \u2014 nicht durch Argumente, sondern durch Reizreduktion und Beziehungsangebote (DNQP 2018).\n\n**4 Stufen der Deeskalation:**\n\n\u2022 **Reize reduzieren** \u2014 Licht dimmen (nicht grell), Stimmen senken, Hektik vermeiden. Zu viele Reize ueberfordern das geschaedigte Gehirn.\n\n\u2022 **Koerpersprache anpassen** \u2014 Langsame Bewegungen, Augenhoehe, offene Haltung. Nie von hinten ansprechen.\n\n\u2022 **Beruehrung anbieten** \u2014 Handdruck, Schulterberuehrung (Initialberuehrung). Nur wenn der Patient es zulaesst.\n\n\u2022 **Ablenken statt Korrigieren** \u2014 Statt \"Sie sind im Krankenhaus\" lieber \"Ich sehe, du hast heute viel zu tun.\" Emotionale Realitaet aufgreifen.\n\n**Agitation ist keine Aggressivitaet.** Herr Bauer schlaegt nicht aus Bosheit \u2014 er schlaegt aus Angst. Die Deeskalation richtet sich an die Angst, nicht an das Verhalten.",
+        kerntextB1: "**Deeskalation bei Demenz** heisst: Die Aufregung stoppen.\n\n**4 Schritte:**\n\n\u2022 **Reize weniger machen** \u2014 Leise sprechen, wenig Licht, keine Hektik.\n\n\u2022 **Langsam bewegen** \u2014 Auf Augenhoehe. Nie von hinten kommen.\n\n\u2022 **Beruehrung anbieten** \u2014 Hand halten, Schulter beruehren. Nur wenn er es zulaesst.\n\n\u2022 **Nicht korrigieren** \u2014 Sage nicht: \"Du bist im Krankenhaus.\" Sage: \"Ich sehe, du hast viel zu tun.\"\n\nHerr Bauer ist nicht boese \u2014 er hat Angst.",
+        faustregel: "Deeskalation bei Demenz: Nicht argumentieren, sondern Reize reduzieren, Beruehrung anbieten, emotionale Realitaet aufgreifen.",
+        faustregelB1: "Deeskalation bei Demenz: Leise, langsam, beruehren, nicht korrigieren. Er hat Angst \u2014 keine Bosheit.",
+        spektrum: [
+          {
+            patientName: "Frau M.",
+            situationsId: "frau-m-nacht-sturz",
+            hauptfaktor: "Parkinson \u2014 orientiert",
+            kurzbeschreibung: "Bei Frau M. reicht verbale Deeskalation: ruhig erklaeren, Optionen anbieten. Sie versteht Argumente \u2014 bei Demenz funktioniert das nicht.",
+          },
+          {
+            patientName: "Frau Yilmaz",
+            situationsId: "ls-yilmaz-hueft-tep",
+            hauptfaktor: "Post-OP Angst",
+            kurzbeschreibung: "Bei ihr hilft sachliche Information + Schmerzmanagement. Angst kommt von Unsicherheit ueber die OP \u2014 nicht von Desorientierung.",
+          },
+        ],
+        karteikarte: {
+          vorderseite: "Herr Bauer (82, Demenz FAST 6a) ist aufgewuehlt und schreit. Wie deeskalierst du \u2014 bevor du sein Zimmer betrittst?",
+          rueckseite: "4 Stufen: 1) Reize reduzieren (Licht, Stimme, Hektik). 2) Koerpersprache (langsam, Augenhoehe). 3) Beruehrung (Initialberuehrung an gleicher Stelle). 4) Ablenken statt korrigieren (emotionale Realitaet aufgreifen). **Agitation = Angst, nicht Aggression.** (DNQP 2018)",
+        },
+      },
+    },
+
     // Step 1.4 — Dialog: Zimmer betreten
     {
       stepId: "ce02-bauer-info-04-zimmer-betreten",
@@ -388,6 +442,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
   ],
 
   optionaleSteps: [
+    // Inline-Wissen: Alzheimer-Demenz und die FAST-Skala
+    {
+      stepId: "ce02-bauer-info-04b-alzheimer-fast",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["Reisberg B. et al. (1982): FAST-Skala", "DGN 2024 \u2014 S3-Leitlinie Demenzen"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-info-04b-alzheimer-fast",
+      tag: "krankheitslehre",
+      themaPrimaer: "basale-stimulation",
+      themenSekundaer: ["ganzkörperpflege"],
+      transition: "Du kennst jetzt die Stufen. Herr Bauer ist FAST 6a \u2014 was das fuer die Pflege bedeutet, zeigen die Flipcards.",
+      contentC1: {
+        title: "Alzheimer-Demenz und die FAST-Skala",
+        body: "",
+        glossarBegriffe: ["Alzheimer-Demenz", "FAST-Skala", "Demenzstadien"],
+      },
+      contentB1: {
+        title: "Was ist Alzheimer? Wie schwer ist Herr Bauers Demenz?",
+        body: "",
+        glossarBegriffe: ["Alzheimer-Demenz", "FAST-Skala"],
+      },
+      inlineWissen: {
+        bausteinRef: "basale-stimulation-alzheimer-fast",
+        storyAufhaenger: "Herr Bauer hat Alzheimer-Demenz, Stufe FAST 6a. Aber was bedeutet das genau? Die FAST-Skala (Functional Assessment Staging) teilt Demenz in 7 Stufen ein \u2014 nach dem, was der Mensch noch kann.",
+        storyAufhaengerB1: "Herr Bauer hat Alzheimer-Demenz. Wie schwer ist sie? Die FAST-Skala sagt: Stufe 6a. Was bedeutet das?",
+        kerntext: "**Alzheimer-Demenz** ist die haeufigste Demenzform (60-70 % aller Demenzen, DGN 2024). Kennzeichen: fortschreitender Verlust von Gedaechtnis, Orientierung und Alltagsfaehigkeiten.\n\n**FAST-Skala** (Reisberg 1982) \u2014 7 Stufen der funktionellen Einschraenkung:\n\n\u2022 **Stufe 1-3:** Keine bis leichte Einschraenkungen. Vergesslichkeit, aber selbststaendig.\n\n\u2022 **Stufe 4:** Braucht Hilfe bei komplexen Aufgaben (Finanzen, Einkaufen).\n\n\u2022 **Stufe 5:** Braucht Hilfe beim Ankleiden. Erinnert sich nicht an aktuelle Adresse.\n\n\u2022 **Stufe 6a (= Herr Bauer):** Schwierigkeiten beim korrekten Ankleiden, Desorientierung, naechtliche Unruhe, Weglauftendenz. Koerperpflege mit Hilfe moeglich.\n\n\u2022 **Stufe 6b-7:** Zunehmender Sprachverlust, Inkontinenz, Verlust der Gehfaehigkeit.\n\nFuer die Pflege entscheidend: Ab FAST 6 sind **Validation** und **Basale Stimulation** die zentralen Kommunikationswege \u2014 verbale Instruktionen funktionieren nicht mehr zuverlaessig.",
+        kerntextB1: "**Alzheimer-Demenz** ist die haeufigste Demenzform. Gedaechtnis und Alltags-Faehigkeiten gehen langsam verloren.\n\n**FAST-Skala** \u2014 7 Stufen:\n\n\u2022 Stufe 1-3: Leichte Vergesslichkeit.\n\u2022 Stufe 4: Braucht Hilfe bei schwierigen Aufgaben.\n\u2022 Stufe 5: Braucht Hilfe beim Anziehen.\n\u2022 **Stufe 6a (Herr Bauer):** Zieht sich falsch an, weiss nicht wo er ist, ist nachts unruhig, will weglaufen. Pflege mit Hilfe moeglich.\n\u2022 Stufe 7: Spricht kaum noch, kann nicht mehr gehen.\n\nAb Stufe 6: Worte reichen nicht mehr. Beruehrung und ruhige Ansprache sind wichtiger.",
+        faustregel: "FAST 6a = Desorientierung, Nachtunruhe, Weglauftendenz. Verbale Instruktionen unzuverlaessig \u2014 Validation + Basale Stimulation als Kommunikationsweg.",
+        faustregelB1: "FAST 6a = weiss nicht wo er ist, nachts unruhig, will weglaufen. Worte allein reichen nicht mehr \u2014 Beruehrung hilft.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Was bedeutet FAST 6a bei Herrn Bauer (82, Alzheimer) fuer die pflegerische Kommunikation?",
+          rueckseite: "FAST 6a (Reisberg 1982): Desorientierung (Ort, Zeit, Situation), naechtliche Unruhe, Weglauftendenz, Schwierigkeiten beim Ankleiden. Verbale Instruktionen nicht zuverlaessig \u2014 Kommunikation ueber Validation (Feil) + Basale Stimulation (Bienstein/Froehlich). Alzheimer = 60-70 % aller Demenzen (DGN 2024).",
+        },
+      },
+    },
+
     // Step 1.5 — Flipcard: FAST-Skala Stufen
     {
       stepId: "ce02-bauer-info-05-demenzstadien",

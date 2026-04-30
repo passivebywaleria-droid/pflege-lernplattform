@@ -117,6 +117,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
       },
     },
 
+    // Inline-Wissen: Wuerde, Autonomie und Ressourcen in der Demenzpflege
+    {
+      stepId: "ce02-bauer-dur-01c-wuerde-autonomie",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["Kitwood T. (1997): Dementia Reconsidered", "DNQP 2018 \u2014 Beziehungsgestaltung bei Demenz"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-dur-01c-wuerde-autonomie",
+      tag: "pflege",
+      themaPrimaer: "ganzkörperpflege",
+      themenSekundaer: ["basale-stimulation"],
+      transition: "Wuerde, Autonomie und Ressourcen \u2014 jetzt kommt die Komplikation.",
+      contentC1: {
+        title: "Wuerde, Autonomie und Ressourcen in der Demenzpflege",
+        body: "",
+        glossarBegriffe: ["Wuerde", "Autonomie", "Deeskalation", "Ressourcen", "Ressource", "Handfuehrung"],
+      },
+      contentB1: {
+        title: "Wuerde und Selbstbestimmung bei Demenz",
+        body: "",
+        glossarBegriffe: ["Wuerde", "Deeskalation", "Ressource"],
+      },
+      inlineWissen: {
+        bausteinRef: "ganzkoerperpflege-wuerde-autonomie",
+        storyAufhaenger: "Gleich wird Herr Bauer nach deiner Hand schlagen. Die Frage ist nicht: Wie setzt du die Pflege durch? Die Frage ist: Wie wahrst du seine **Wuerde**, respektierst seine **Autonomie** und nutzt trotzdem seine **Ressourcen**?",
+        storyAufhaengerB1: "Gleich schlaegt Herr Bauer nach dir. Wie pflegst du ihn \u2014 und wahrst gleichzeitig seine Wuerde?",
+        kerntext: "**Wuerde** = Jeder Mensch hat einen unantastbaren Wert \u2014 unabhaengig von Kognition oder Kooperation (Kitwood 1997, GG Art. 1). Herr Bauers Wuerde gilt auch wenn er schlaegt.\n\n**Autonomie** = Selbstbestimmungsrecht. Auch Demenz-Patienten haben ein Recht auf Ablehnung. \"Nein\" ist ein gueltiger Wille \u2014 auch nonverbal (Kopfschuetteln, Abwehr, Wegdrehen).\n\n**Deeskalation** = Erregungskreislauf unterbrechen: Pause, Reizreduktion, Beruehrung anbieten. Nicht argumentieren.\n\n**Ressourcen** bei Demenz = Faehigkeiten die NOCH da sind. Bei Herrn Bauer: Beruehrung spueren, Musik erkennen (Freddy Quinn), **Handfuehrung** akzeptieren (du legst den Waschlappen in seine Hand, er fuehrt die Bewegung). Ressource nutzen heisst: Den Menschen tun lassen was er kann \u2014 nicht alles uebernehmen.\n\nRegel: **Nie gegen massiven Widerstand pflegen.** Pause, Strategie wechseln, Ressource einsetzen. Nur bei akuter Gefahr (Notfall) gilt die Ausnahme.",
+        kerntextB1: "**Wuerde** = Jeder Mensch hat Wert \u2014 auch wenn er verwirrt ist oder schlaegt.\n\n**Autonomie** = Selbstbestimmung. Auch bei Demenz darf er Nein sagen. \"Nein\" gilt \u2014 auch ohne Worte (Wegdrehen, Schlagen).\n\n**Deeskalation** = Aufregung stoppen: Pause machen, ruhig bleiben, Beruehrung anbieten.\n\n**Ressourcen** = Was er NOCH kann. Bei Herrn Bauer: Beruehrung spueren, Musik hoeren. **Handfuehrung** = Waschlappen in seine Hand legen \u2014 er waesche sich selbst.\n\nRegel: Nie gegen massiven Widerstand pflegen. Pause \u2192 andere Strategie.",
+        faustregel: "Wuerde gilt immer. Autonomie gilt auch bei Demenz. Nie gegen massiven Widerstand \u2014 Pause, Strategie wechseln, Ressourcen nutzen.",
+        faustregelB1: "Wuerde gilt immer. Auch bei Demenz darf er Nein sagen. Nicht kaempfen \u2014 Pause machen und anders versuchen.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Herr Bauer schlaegt bei der Gesichtswaesche nach dir. Wie vereinst du Pflegebedarf mit Wuerde und Autonomie?",
+          rueckseite: "Wuerde (Kitwood 1997, GG Art. 1): unantastbar, auch bei Agitation. Autonomie: \"Nein\" gilt auch nonverbal. Deeskalation: Pause, Reizreduktion, Beruehrung. Ressourcen: Handfuehrung (Waschlappen in seine Hand), Musik. Regel: Nie gegen massiven Widerstand. Pause \u2192 Strategie wechseln \u2192 Ressource nutzen.",
+        },
+      },
+    },
+
     // Step 4.2 — Branching: KOMPLIKATION 1 — Abwehr bei Pflege
     {
       stepId: "ce02-bauer-dur-02-abwehr-komplikation",
@@ -395,6 +436,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
       },
     },
 
+    // Inline-Wissen: Mundpflege bei Demenz und Aspirationsgefahr
+    {
+      stepId: "ce02-bauer-dur-04b-mundpflege-soor-aspiration",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["DNQP 2023 \u2014 Mundpflege", "AWMF 2021 \u2014 Aspirationsprophylaxe"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-dur-04b-mundpflege-soor-aspiration",
+      tag: "pflege",
+      themaPrimaer: "mundpflege",
+      themenSekundaer: ["ganzkörperpflege", "kontraktur-prophylaxe"],
+      transition: "Mundpflege und Aspirationsrisiken im Kopf. Jetzt: Die MC-Frage.",
+      contentC1: {
+        title: "Mundpflege bei Demenz und Aspirationsgefahr",
+        body: "",
+        glossarBegriffe: ["Soor-Prophylaxe", "Mundpflege", "Aspirationsgefahr", "Chlorhexidin", "Soor", "Aspiration", "Spitzfussprophylaxe", "passiv", "Spitzfuss", "Knie", "Bewegung"],
+      },
+      contentB1: {
+        title: "Wie pflege ich den Mund bei Demenz?",
+        body: "",
+        glossarBegriffe: ["Mundpflege", "Soor", "Aspiration", "Spitzfuss", "Knie"],
+      },
+      inlineWissen: {
+        bausteinRef: "mundpflege-demenz-aspiration",
+        storyAufhaenger: "Herrn Bauers Mundschleimhaut ist trocken. Er trinkt wenig. Und er wehrt sich bei Beruehrungen im Mundbereich. Mundpflege bei Demenz ist ein Balanceakt zwischen Notwendigkeit und Abwehr \u2014 und **Aspirationsgefahr** ist dabei real.",
+        storyAufhaengerB1: "Herrn Bauers Mund ist trocken. Er trinkt wenig. Und er wehrt sich beim Mundpflegen. Wie machst du das sicher?",
+        kerntext: "**Mundpflege** bei Demenz verfolgt 3 Ziele: Befeuchtung, **Soor-Prophylaxe** (Pilzinfektions-Vorbeugung), Aspirationsschutz (DNQP 2023).\n\n**Soor** = Candidose der Mundschleimhaut. Risikofaktoren: trockene Schleimhaut, Immunschwaeche, Antibiotika. Bei Herrn Bauer: Exsikkose = trockene Schleimhaut = erhoehtes Soor-Risiko.\n\n**Soor-Prophylaxe:** Befeuchtung der Mundschleimhaut mit feuchten Wattestäbchen oder Mundschwämmchen. NICHT: **Chlorhexidin** ohne aerztliche Anordnung (ist ein Arzneimittel). NICHT: Zahnbuerste bei Abwehr (Aspirationsgefahr).\n\n**Aspirationsgefahr** = Risiko dass Fluessigkeit oder Fremdkoerper in die Luftroehre gelangen. Bei Demenz erhoehtes Risiko: gestörter Schluckreflex, Beissreflex, Abwehr. Mundschwämmchen nur unter Aufsicht \u2014 sicheren Sitz pruefen (FDA-Warnung 2017).\n\n**Aspiration** = Eindringen von Material in die Atemwege. Kann zu Aspirationspneumonie fuehren.\n\nZusaetzlich: **Spitzfuss, Knie, Bewegung** \u2014 Die Begriffe aus den Bewegungsuebungen (passive Kniebewegung, Spitzfussprophylaxe) wurden im vorherigen Sequencing-Step eingeubt. Kurz: **passiv** = Pflegekraft fuehrt die Bewegung, Patient laesst es geschehen.",
+        kerntextB1: "**Mundpflege** bei Demenz hat 3 Ziele: Mund feucht halten, Pilz verhindern (**Soor**), Verschlucken vermeiden.\n\n**Soor** = Pilz im Mund. Entsteht bei trockenem Mund. Bei Herrn Bauer: Er trinkt zu wenig = Mund trocken = Pilz-Risiko.\n\nWas hilft: Feuchte Wattestäbchen auf die Schleimhaut. Nicht: **Chlorhexidin** ohne Arzt-Anordnung. Nicht: Zahnbuerste bei Abwehr (Verschluckungsgefahr).\n\n**Aspiration** = etwas gelangt in die Luftroehre statt in den Magen. Gefaehrlich. Bei Demenz: gestoerter Schluckreflex. Mundschwämmchen nur unter Aufsicht.",
+        faustregel: "Mundpflege bei Demenz: feuchte Wattestäbchen = sicher. Zahnbuerste bei Abwehr = Aspirationsgefahr. Soor-Prophylaxe = Befeuchtung, nicht Chlorhexidin.",
+        faustregelB1: "Mundpflege bei Demenz: Feuchte Wattestäbchen = sicher. Zahnbuerste bei Abwehr = gefaehrlich (Verschlucken).",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Herrn Bauers Mundschleimhaut ist trocken und er wehrt sich bei Beruehrungen. Was ist die sicherste Mundpflege?",
+          rueckseite: "Feuchte Wattestäbchen oder Mundschwämmchen (unter Aufsicht, sicheren Sitz pruefen). NICHT: Chlorhexidin ohne Anordnung. NICHT: Zahnbuerste bei Abwehr (Aspirationsgefahr). Soor-Prophylaxe = Befeuchtung. Aspiration = Material in Atemwege \u2192 Pneumonie-Risiko.",
+        },
+      },
+    },
+
     // Step 4.5 — MC: Mundpflege bei Demenz
     {
       stepId: "ce02-bauer-dur-05-mundpflege",
@@ -460,6 +542,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
               "Falsch. Mundpflege geht auch ohne Trinken. Trockener Mund macht Pilzinfektionen (Soor) wahrscheinlicher. Du musst handeln.",
           },
         ],
+      },
+    },
+
+    // Inline-Wissen: Mobilisation bei Abwehr \u2014 Patientenwille und Verhaeltnismaessigkeit
+    {
+      stepId: "ce02-bauer-dur-05b-mobilisation-patientenwille",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["DNQP 2022 \u2014 Sturzprophylaxe", "Kinaesthetik Hatch/Maietta"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-dur-05b-mobilisation-patientenwille",
+      tag: "pflege",
+      themaPrimaer: "mobilisation",
+      themenSekundaer: ["basale-stimulation", "kontraktur-prophylaxe"],
+      transition: "Mobilisation, Patientenwille, Verhaeltnismaessigkeit \u2014 jetzt die Entscheidung.",
+      contentC1: {
+        title: "Mobilisation bei Abwehr \u2014 Patientenwille und Verhaeltnismaessigkeit",
+        body: "",
+        glossarBegriffe: ["Mobilisation", "Abwehr", "Patientenwille", "Selbstbestimmung", "Verhaeltnismaessigkeit"],
+      },
+      contentB1: {
+        title: "Was tun wenn er nicht aufstehen will?",
+        body: "",
+        glossarBegriffe: ["Mobilisation", "Abwehr", "Patientenwille"],
+      },
+      inlineWissen: {
+        bausteinRef: "mobilisation-patientenwille",
+        storyAufhaenger: "Gleich versuchst du mit Frau Meier, Herrn Bauer an den Bettrand zu setzen. Er wird sich wehren. Drei Begriffe brauchst du: Mobilisation, Patientenwille und Verhaeltnismaessigkeit.",
+        storyAufhaengerB1: "Gleich sitzt du Herrn Bauer auf. Er wird sich wehren. Was ist richtig?",
+        kerntext: "**Mobilisation** = Foerderung der Bewegungsfaehigkeit. Nach einem Sturz: Erstmobilisation so frueh wie moeglich, um Immobilitaetsfolgen (Kontraktur, Pneumonie, Dekubitus) zu vermeiden. Aber: **nie gegen massiven Widerstand**.\n\n**Patientenwille** bei Demenz: Herr Bauer kann seinen Willen nicht verbal formulieren \u2014 aber er zeigt ihn: Schreien, Festhalten am Bettgitter, Zurueckziehen. Nonverbale Willensaeusserung ist gueltig (Paragraph 1827 BGB).\n\n**Verhaeltnismaessigkeit** = Abwaegen: Wie dringend ist die Massnahme? Wie stark ist der Widerstand? Erstmobilisation ist medizinisch sinnvoll \u2014 aber kein Notfall. Morgen geht auch.\n\n**Kinaesthetik-Grundsatz** (Hatch/Maietta): Der Patient bewegt sich selbst, die Pflege begleitet und sichert. Nie ziehen, nie heben, nie schneller als der Patient.\n\n**Abwehr** bei Demenz = Angstreaktion, kein Angriff. Strategie: Pause \u2192 Musik \u2192 langsameres Vorgehen \u2192 morgen erneut versuchen.",
+        kerntextB1: "**Mobilisation** = Bewegung foerdern. Nach Sturz: so frueh wie moeglich aufsetzen. Aber nie gegen heftigen Widerstand.\n\n**Patientenwille:** Herr Bauer kann nicht sagen was er will \u2014 aber er zeigt es: Schreien, Festhalten, Zurueckziehen. Das zaehlt.\n\n**Verhaeltnismaessigkeit** = Abwaegen: Wie wichtig ist die Massnahme JETZT? Erstmobilisation ist wichtig \u2014 aber kein Notfall. Morgen geht auch.\n\n**Abwehr** = Er hat Angst \u2014 er greift nicht an. Strategie: Pause \u2192 Musik \u2192 langsamer \u2192 morgen nochmal.",
+        faustregel: "Mobilisation ist wichtig \u2014 aber nie gegen massiven Widerstand. Patientenwille gilt auch nonverbal. Abwehr = Angst, nicht Aggression.",
+        faustregelB1: "Mobilisation ist wichtig \u2014 aber nicht mit Gewalt. Wenn er Nein zeigt, gilt das. Morgen nochmal versuchen.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Herr Bauer schreit und greift nach dem Bettgitter bei der Erstmobilisation. Was tust du?",
+          rueckseite: "Mobilisation nach Sturz ist medizinisch sinnvoll, aber kein Notfall. Patientenwille gilt auch nonverbal (Schreien, Festhalten = Nein). Verhaeltnismaessigkeit: Abbruch heute, neuer Versuch morgen mit veraenderter Strategie (Musik, langsameres Vorgehen). Kinaesthetik: Patient bewegt sich selbst, nie ziehen/heben. Abwehr = Angst, nicht Aggression.",
+        },
       },
     },
 
@@ -579,6 +702,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
             "Meine Gedanken zu diesem Dilemma: Würde vs. Hygiene bei Demenz...",
           systemPrompt:
             "Der Schüler reflektiert das ethische Dilemma zwischen Hygiene-Notwendigkeit und Ablehnungsrecht bei Demenz. Gib Sandwich-Feedback: 1) Was der Schüler gut erkannt hat, 2) Ergänzende Perspektive (Verhältnismäßigkeit, minimaler Eingriff, Dokumentationspflicht, Teamkommunikation), 3) Ermutigung.",
+        },
+      },
+    },
+
+    // Inline-Wissen: Trinkmanagement und Biographiearbeit bei Demenz
+    {
+      stepId: "ce02-bauer-dur-08b-trinken-biographie",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["DNQP 2014 \u2014 Foerderung Harnkontinenz", "Kitwood T. (1997)"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-dur-08b-trinken-biographie",
+      tag: "pflege",
+      themaPrimaer: "ganzkörperpflege",
+      themenSekundaer: ["basale-stimulation"],
+      transition: "Trinkmanagement und Biographiearbeit \u2014 jetzt der Timer.",
+      contentC1: {
+        title: "Trinkmanagement und Biographiearbeit bei Demenz",
+        body: "",
+        glossarBegriffe: ["Trinkmanagement bei Demenz", "Biographiearbeit", "Trinken", "Biographie"],
+      },
+      contentB1: {
+        title: "Wie bekommt man ihn zum Trinken? Biographie hilft.",
+        body: "",
+        glossarBegriffe: ["Trinkmanagement bei Demenz", "Biographiearbeit"],
+      },
+      inlineWissen: {
+        bausteinRef: "ganzkoerperpflege-trinken-biographie",
+        storyAufhaenger: "Herr Bauer trinkt auf Aufforderung nicht. Die Worte \"Bitte trinken Sie\" erreichen ihn nicht. Aber was wenn du sein Lieblingsgetraenk in seine Hand gibst \u2014 ohne zu fragen? Das ist **Biographiearbeit**: Wissen ueber den Menschen nutzen, um Pflege zu gestalten.",
+        storyAufhaengerB1: "Herr Bauer trinkt nicht wenn du ihn bittest. Aber wenn du ihm sein Lieblingsgetraenk in die Hand gibst \u2014 vielleicht trinkt er dann. Das nennt man Biographiearbeit.",
+        kerntext: "**Trinkmanagement bei Demenz** = Strategien zur Erhoehung der Trinkmenge bei Menschen, die auf Aufforderung nicht trinken (DNQP 2014).\n\nWarum trinkt Herr Bauer nicht? Er versteht die Aufforderung nicht. Er erkennt die Tasse nicht als Trinkgefaess. Er hat keinen bewussten Durst.\n\n**Biographiearbeit** (Kitwood 1997) = Wissen ueber die Lebensgeschichte nutzen fuer die Pflege. Bei Herrn Bauer: Er war Schreinermeister, trank mittags immer ein Malzbier in der Werkstatt.\n\n**Strategien:**\n\u2022 Tasse in die Hand geben (nicht bitten \u2014 Handlungstriggern)\n\u2022 Lieblingsgetraenk aus **Biographie** bereitstellen (alkoholfreies Malzbier \u2014 kein Alkohol wegen Mirtazapin!)\n\u2022 Trinken im sozialen Kontext (Mahlzeiten, nicht isoliert)\n\u2022 Fluessigkeitsreiche Lebensmittel (Suppe, Joghurt, Wassermelone)\n\u2022 Miktionsprotokoll zur Erfolgsmessung",
+        kerntextB1: "**Trinkmanagement bei Demenz** = Wege finden damit er trinkt, auch wenn er nicht versteht dass er soll.\n\nWarum trinkt er nicht? Er versteht die Bitte nicht. Er erkennt die Tasse nicht.\n\n**Biographiearbeit** = sein Leben kennen und nutzen. Herr Bauer war Schreinermeister. Er trank mittags immer Malzbier.\n\n**Was hilft:**\n\u2022 Tasse in die Hand geben (nicht fragen)\n\u2022 Alkoholfreies Malzbier (kein Alkohol wegen Medikament!)\n\u2022 Beim Essen trinken (nicht alleine)\n\u2022 Suppe und Joghurt (zaehlt auch)",
+        faustregel: "Biographiearbeit = Lebensgeschichte fuer die Pflege nutzen. Tasse in die Hand geben statt bitten. Malzbier (alkoholfrei!) statt Wasser.",
+        faustregelB1: "Sein Leben kennen hilft: Malzbier (ohne Alkohol!) in die Hand geben, nicht bitten.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Herr Bauer trinkt auf Aufforderung nicht. Wie erhoehst du seine Trinkmenge mit Biographiearbeit?",
+          rueckseite: "Biographiearbeit (Kitwood 1997): Lieblingsgetraenk (alkoholfreies Malzbier aus Werkstatt-Biographie). Strategien: Tasse in Hand geben (Handlungstriggern), sozialer Kontext (Mahlzeiten), fluessigkeitsreiche Nahrung. Kein Alkohol (Mirtazapin-Interaktion). Miktionsprotokoll zur Erfolgsmessung.",
         },
       },
     },

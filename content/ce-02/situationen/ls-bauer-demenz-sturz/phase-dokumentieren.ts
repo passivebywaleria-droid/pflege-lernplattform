@@ -16,6 +16,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
   kontextB1:
     "Das Sturzprotokoll ist nicht fertig. Die Nachtschwester hat nur kurze Stichpunkte aufgeschrieben. Jetzt bist du dran. Du schreibst das Protokoll fertig und du schreibst den Pflegebericht für den Nachtdienst. Dokumentation ist das Gedächtnis des Teams. Was du nicht aufschreibst, weiß morgen niemand.",
   kernSteps: [
+    // Inline-Wissen: Sturzprotokoll \u2014 was muss drinstehen?
+    {
+      stepId: "ce02-bauer-dok-00b-sturzprotokoll-begriffe",
+      phase: 6,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["DNQP 2022 \u2014 Sturzprophylaxe", "Paragraph 4 PflBG"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-dok-00b-sturzprotokoll-begriffe",
+      tag: "pflege",
+      themaPrimaer: "pflegedokumentation",
+      themenSekundaer: ["sturz-prophylaxe"],
+      transition: "Begriffe klar? Dann schreib das Sturzprotokoll.",
+      contentC1: {
+        title: "Sturzprotokoll \u2014 was muss drinstehen?",
+        body: "",
+        glossarBegriffe: ["Ursachenhypothese", "Verletzungscheck", "Dokumentationspflicht", "Ursache"],
+      },
+      contentB1: {
+        title: "Sturzprotokoll \u2014 was schreibst du rein?",
+        body: "",
+        glossarBegriffe: ["Ursachenhypothese", "Verletzungscheck", "Dokumentationspflicht"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegedokumentation-sturzprotokoll",
+        storyAufhaenger: "Vier Begriffe fuer ein vollstaendiges Sturzprotokoll.",
+        storyAufhaengerB1: "Vier wichtige Begriffe fuer das Sturzprotokoll.",
+        kerntext: "**Verletzungscheck** = Systematische Inspektion: Blutungen, Deformitaeten, Haematome, Schwellungen. Kopf bis Fuss, Seitenvergleich. Bei Demenz: BESD beobachten.\n\n**Ursachenhypothese** = Begruendete Vermutung ueber Sturzursache: \"Desorientierung + Harndrang + Mirtazapin.\" Keine Diagnose, aber lenkt Prophylaxe.\n\n**Ursache** = Ausloesender Faktor: intrinsisch (Demenz, Medikamente) vs. extrinsisch (Umgebung).\n\n**Dokumentationspflicht** (Paragraph 4 PflBG): Pflegefachkraft MUSS den Pflegeprozess dokumentieren.",
+        kerntextB1: "**Verletzungscheck** = Koerper anschauen: Blutungen? Beulen? Kopf bis Fuss.\n\n**Ursachenhypothese** = Warum ist er gestuerzt? Deine begruendete Vermutung.\n\n**Ursache** = Was hat den Sturz ausgeloest?\n\n**Dokumentationspflicht** = Du MUSST alles aufschreiben (Gesetz).",
+        faustregel: "Sturzprotokoll: Verletzungscheck, Ursachenhypothese (WARUM gestuerzt), Dokumentationspflicht.",
+        faustregelB1: "Sturzprotokoll: Koerper anschauen, Vermutung aufschreiben warum, alles dokumentieren.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Was ist eine Ursachenhypothese im Sturzprotokoll?",
+          rueckseite: "Begruendete Vermutung ueber Sturzursache. Lenkt Prophylaxe. Beispiel: Desorientierung + Mirtazapin + Harndrang. Dokumentationspflicht: Paragraph 4 PflBG.",
+        },
+      },
+    },
+
     // Step 6.1 — Freetext: Sturzprotokoll ausfüllen (HAUPT-FREITEXT)
     {
       stepId: "ce02-bauer-dok-01-sturzprotokoll-frei",
@@ -156,6 +197,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       },
     },
 
+    // Inline-Wissen: Pflegebericht \u2014 objektiv und fehlerfrei
+    {
+      stepId: "ce02-bauer-dok-01c-pflegebericht-grundlagen",
+      phase: 6,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["Paragraph 4 PflBG", "DNQP 2022"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-dok-01c-pflegebericht-grundlagen",
+      tag: "pflege",
+      themaPrimaer: "pflegedokumentation",
+      themenSekundaer: ["ganzkörperpflege"],
+      transition: "Dokumentations-Grundlagen klar. Finde die Fehler.",
+      contentC1: {
+        title: "Pflegebericht \u2014 objektiv und fehlerfrei",
+        body: "",
+        glossarBegriffe: ["Objektivitaet", "Dokumentation", "Fehler"],
+      },
+      contentB1: {
+        title: "Pflegebericht \u2014 wie schreibt man richtig?",
+        body: "",
+        glossarBegriffe: ["Dokumentation", "Fehler"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegedokumentation-grundlagen",
+        storyAufhaenger: "Drei Prinzipien fuer einen guten Pflegebericht.",
+        storyAufhaengerB1: "Drei Dinge fuer einen guten Pflegebericht.",
+        kerntext: "**Objektivitaet** = Beschreibe Beobachtung, nicht Meinung. Falsch: \"schwierig\". Richtig: \"2x Schlagen.\"\n\n**Dokumentation** muss: vollstaendig, zeitnah, nachvollziehbar, unterschrieben (Paragraph 630f BGB).\n\n**Haeufige Fehler:**\n\u2022 Wertung statt Beobachtung\n\u2022 Fehlende Zeitangabe\n\u2022 Fehlende Konsequenz\n\u2022 Passive Formulierung ohne Details",
+        kerntextB1: "**Objektivitaet** = schreibe was du SIEHST. Falsch: \"schwierig\". Richtig: \"2x geschlagen.\"\n\n**Haeufige Fehler:** \"schwierig\" schreiben, keine Uhrzeit, \"beobachten\" statt Massnahme.",
+        faustregel: "Verhalten beschreiben, nicht bewerten. Zahlen statt Adjektive.",
+        faustregelB1: "Schreibe was du siehst. Keine Wertungen.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Drei haeufige Fehler in Pflegeberichten?",
+          rueckseite: "1) Wertung statt Beobachtung. 2) Fehlende Zeitangabe. 3) Fehlende Konsequenz. Objektivitaet: Beobachtung, nicht Meinung.",
+        },
+      },
+    },
+
     // Step 6.2 — ErrorSpot: Fehler im Pflegebericht finden
     {
       stepId: "ce02-bauer-dok-02-pflegebericht-formulierung",
@@ -228,6 +310,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
                 "'Wurde gewechselt' — wann? Von wem? Wie sah die Haut aus? Was wurde dagegen getan? Das alles gehört in die Dokumentation.",
             },
           ],
+        },
+      },
+    },
+
+    // Inline-Wissen: Miktion und Inkontinenz \u2014 Grundbegriffe
+    {
+      stepId: "ce02-bauer-dok-02b-miktionsprotokoll-begriffe",
+      phase: 6,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["DNQP 2014 \u2014 Foerderung Harnkontinenz"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-dok-02b-miktionsprotokoll-begriffe",
+      tag: "krankheitslehre",
+      themaPrimaer: "harnausscheidung",
+      themenSekundaer: ["ganzkörperpflege"],
+      transition: "Begriffe klar? Fuell das Protokoll aus.",
+      contentC1: {
+        title: "Miktion und Inkontinenz \u2014 Grundbegriffe",
+        body: "",
+        glossarBegriffe: ["Miktion", "Inkontinenz"],
+      },
+      contentB1: {
+        title: "Was ist Miktion? Was ist Inkontinenz?",
+        body: "",
+        glossarBegriffe: ["Miktion", "Inkontinenz"],
+      },
+      inlineWissen: {
+        bausteinRef: "harnausscheidung-miktion",
+        storyAufhaenger: "Zwei Grundbegriffe fuer das Miktionsprotokoll.",
+        storyAufhaengerB1: "Zwei Woerter fuer das Protokoll.",
+        kerntext: "**Miktion** = Wasserlassen. Dokumentiert im Miktionsprotokoll: Zeitpunkt, Menge, Art.\n\n**Inkontinenz** = unwillkuerlicher Urinverlust. Bei Herrn Bauer: funktionelle Inkontinenz \u2014 Blase ok, aber er findet die Toilette nicht (Demenz). Massnahme: Toilettenangebot regelmaessig (DNQP 2014).",
+        kerntextB1: "**Miktion** = Wasserlassen.\n**Inkontinenz** = Urin verlieren ohne zu wollen. Bei Herrn Bauer: Er findet die Toilette nicht (Demenz). Toilette regelmaessig anbieten.",
+        faustregel: "Miktion = Wasserlassen. Inkontinenz bei Demenz: oft funktionell (Toilette nicht gefunden).",
+        faustregelB1: "Miktion = Wasserlassen. Inkontinenz bei Demenz: Er findet die Toilette nicht.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Was ist funktionelle Inkontinenz bei Herrn Bauer?",
+          rueckseite: "Blase funktioniert, aber Patient findet Toilette nicht (Demenz). Massnahme: Toilettenangebot regelmaessig.",
         },
       },
     },

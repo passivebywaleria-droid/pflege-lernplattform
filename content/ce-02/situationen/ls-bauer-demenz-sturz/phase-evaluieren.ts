@@ -16,6 +16,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
   kontextB1:
     "Es ist 15:30 Uhr. Spätdienst. Frau Meier sagt dir: 'Herr Bauer hat bis jetzt zusammen ca. 1000 ml getrunken (200 Frühstück, 400 Mittag, 400 Nachmittag) — besser als gestern. Er ist nicht gestürzt. Aber mittags war er wieder sehr unruhig.' Dann kommt Tochter Ingrid. Sie hat von dem Sturz heute Nacht erfahren. Sie ist aufgewühlt. Sie sagt zu dir: 'Hätte das nicht verhindert werden können? Warum war er allein im Flur?' Das ist der schwerste Moment des Tages — nicht medizinisch, sondern emotional.",
   kernSteps: [
+    // Inline-Wissen: Evaluation \u2014 hat der Plan funktioniert?
+    {
+      stepId: "ce02-bauer-eval-00b-evaluation-grundlagen",
+      phase: 5,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["Fiechter/Meier (1981)", "DNQP 2022 \u2014 Sturzprophylaxe"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-eval-00b-evaluation-grundlagen",
+      tag: "pflege",
+      themaPrimaer: "pflegeprozess",
+      themenSekundaer: ["sturz-prophylaxe"],
+      transition: "Evaluation im Kopf? Sortiere die Ergebniskarten.",
+      contentC1: {
+        title: "Evaluation \u2014 hat der Plan funktioniert?",
+        body: "",
+        glossarBegriffe: ["Evaluation", "Pflegeziel", "Anpassung"],
+      },
+      contentB1: {
+        title: "Ueberpruefen: Hat der Plan funktioniert?",
+        body: "",
+        glossarBegriffe: ["Evaluation", "Pflegeziel", "Anpassung"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegeprozess-evaluation",
+        storyAufhaenger: "Es ist Nachmittag. Der Tag mit Herrn Bauer neigt sich dem Ende. Jetzt kommt Schritt 5 im Pflegeprozess: **Evaluation** \u2014 die systematische Ueberpruefung ob die geplanten Pflegeziele erreicht wurden.",
+        storyAufhaengerB1: "Es ist Nachmittag. Jetzt pruefst du: Hat der Plan von heute Morgen funktioniert?",
+        kerntext: "**Evaluation** (Fiechter/Meier 1981) = 5. Schritt im Pflegeprozess. Systematischer Vergleich: Pflegeziel vs. tatsaechliches Ergebnis.\n\n**3 moegliche Ergebnisse:**\n\u2022 **Ziel erreicht** \u2014 Massnahme beibehalten oder abschliessen.\n\u2022 **Ziel teilweise erreicht** \u2014 Massnahme intensivieren oder anpassen.\n\u2022 **Ziel nicht erreicht** \u2014 Plan ueberarbeiten (**Anpassung**). Neue Ursachenanalyse.\n\nBei Herrn Bauer heute: Manche Ziele erreicht (Koerperpflege, Kniebewegung), manche offen (Trinkmenge, Nachtlicht). Die **Anpassung** ist kein Scheitern \u2014 sie ist Teil des Pflegeprozesses.\n\nEvaluation ist NICHT \"Hat es heute geklappt?\" \u2014 sondern: \"Wurde das Ziel erreicht, und wenn nicht, warum nicht, und was aendern wir?\"",
+        kerntextB1: "**Evaluation** = pruefe ob der Plan funktioniert hat.\n\n**3 Ergebnisse:**\n\u2022 Ziel erreicht \u2014 weiter so.\n\u2022 Ziel teilweise erreicht \u2014 anpassen.\n\u2022 Ziel nicht erreicht \u2014 Plan aendern (**Anpassung**).\n\nBei Herrn Bauer: Manche Ziele erreicht (Pflege, Knie), manche offen (Trinken, Nachtlicht). Das ist normal. **Anpassung** gehoert zum Pflegeprozess.",
+        faustregel: "Evaluation = Ziel vs. Ergebnis vergleichen. Anpassung ist kein Scheitern \u2014 sie ist Teil des Prozesses.",
+        faustregelB1: "Evaluation = pruefe ob es geklappt hat. Wenn nicht: Plan aendern. Das ist normal.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Was bedeutet Evaluation im Pflegeprozess und welche drei Ergebnisse sind moeglich?",
+          rueckseite: "Evaluation (Fiechter/Meier 1981): Systematischer Vergleich Pflegeziel vs. Ergebnis. 3 Ergebnisse: 1) Erreicht \u2192 beibehalten. 2) Teilweise \u2192 anpassen. 3) Nicht erreicht \u2192 Plan ueberarbeiten. Anpassung = Teil des Prozesses, kein Versagen.",
+        },
+      },
+    },
+
     // Step 5.1 — Categorize: Pflegeziele erreicht/offen/anzupassen
     {
       stepId: "ce02-bauer-eval-01-ziele-pruefung",
@@ -164,6 +205,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
             "Herr Bauer ist heute nicht gestuerzt. Nachtlicht und Niedrigbett stehen noch nicht. Ist die Sturzprophylaxe erfolgreich?",
           rueckseite:
             "**Nein** — Ergebnis (kein Sturz) ≠ Prozess (Maßnahmen umgesetzt). DNQP 2022, E5 fordert **beide** Evaluationsebenen. Bei Herrn Bauer: Nachtlicht, Niedrigbett, Sensormatte NICHT umgesetzt → Prozess-Evaluation NICHT bestanden. Evaluations-Intervalle: taeglich in 72h nach Sturz, dann woechentlich. Spektrum: Frau M. (situativ, sinkt mit Genesung), Yilmaz (Mobilisationsfortschritt), Schmidt (chronisch, monatlich). Faustregel: **Kein Sturz + alle Maßnahmen umgesetzt = Erfolg. Kein Sturz allein = Zufall.**",
+        },
+      },
+    },
+
+    // Inline-Wissen: Angehoerigenkommunikation \u2014 Schweigepflicht, Empathie und Ehrlichkeit
+    {
+      stepId: "ce02-bauer-eval-01c-angehoerigen-kommunikation",
+      phase: 5,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "V.1",
+      quellen: ["DNQP 2018 \u2014 Beziehungsgestaltung bei Demenz", "Paragraph 203 StGB", "Paragraph 1814 BGB"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-eval-01c-angehoerigen-kommunikation",
+      tag: "pflege",
+      themaPrimaer: "pflegeprozess",
+      themenSekundaer: ["basale-stimulation"],
+      transition: "Rechtliches und emotionales Ruestzeug \u2014 jetzt kommt Ingrid.",
+      contentC1: {
+        title: "Angehoerigenkommunikation \u2014 Schweigepflicht, Empathie und Ehrlichkeit",
+        body: "",
+        glossarBegriffe: ["Empathie", "Angehoerigenkommunikation", "Schuldgefuehle", "Transparenz", "Schweigepflicht", "Gesetzliche Betreuung", "Ehrlichkeit", "Betreuung"],
+      },
+      contentB1: {
+        title: "Gespraech mit der Tochter \u2014 was darfst du sagen?",
+        body: "",
+        glossarBegriffe: ["Empathie", "Schuldgefuehle", "Ehrlichkeit", "Schweigepflicht", "Betreuung"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegeprozess-angehoerigenkommunikation",
+        storyAufhaenger: "Tochter Ingrid steht gleich vor dir. Sie ist aufgewuehlt. Bevor du sprichst brauchst du: Wissen ueber **Schweigepflicht**, Faehigkeit zur **Empathie**, und Mut zur **Ehrlichkeit**.",
+        storyAufhaengerB1: "Die Tochter kommt gleich. Bevor du sprichst: Was darfst du sagen?",
+        kerntext: "**Schweigepflicht** (Paragraph 203 StGB): Nicht jedem Auskunft geben. ABER: Ingrid ist **gesetzliche Betreuerin** (Paragraph 1814 BGB) \u2014 Auskunft zulaessig. Pruefe Akte.\n\n**Empathie** = Gefuehle wahrnehmen und spiegeln: \"Ich verstehe Ihre Aufregung.\" Nicht: \"Beruhigen Sie sich.\"\n\n**Schuldgefuehle** bei Angehoerigen von Demenz-Patienten: extrem haeufig. \"Haette ich ihn nicht ins Heim geben sollen?\" Die Pflege bewertet nicht \u2014 entlastet.\n\n**Transparenz** = ehrlich berichten ohne Schuldzuweisung.\n\n**Ehrlichkeit** = konkrete Massnahmen nennen, keine Floskeln.\n\n**Gesetzliche Betreuung** = vom Gericht bestellte Person fuer Entscheidungen bei Nicht-Einwilligungsfaehigkeit.",
+        kerntextB1: "**Schweigepflicht**: Nicht jedem alles sagen. ABER: Ingrid ist Betreuerin \u2014 ihr darfst du Auskunft geben.\n\n**Empathie** = Gefuehle verstehen: \"Ich verstehe dass Sie aufgewuehlt sind.\"\n\n**Schuldgefuehle**: Normal bei Angehoerigen.\n\n**Transparenz** = ehrlich sagen was passiert ist.\n\n**Ehrlichkeit** = konkrete Massnahmen, keine Floskeln.\n\n**Betreuung** = Ingrid darf mitentscheiden.",
+        faustregel: "Erst Akte pruefen (Betreuungsstatus). Dann: Empathie zuerst, ehrlich berichten, konkrete Massnahmen. Keine Floskeln.",
+        faustregelB1: "Erst Akte: Darf ich Auskunft geben? Dann: Gefuehle ernst nehmen, ehrlich sein, konkret sagen was passiert.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Ingrid fragt aufgewuehlt: Haette das verhindert werden koennen? Wie fuehrst du das Gespraech?",
+          rueckseite: "1) Schweigepflicht pruefen: Betreuerin = Auskunft zulaessig. 2) Empathie: Gefuehle aufgreifen. 3) Transparenz: sachlich berichten. 4) Ehrlichkeit: konkrete Massnahmen. 5) Schuldgefuehle entlasten.",
         },
       },
     },
@@ -435,6 +517,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
       },
     },
 
+    // Inline-Wissen: Reflexion \u2014 aus Erfahrung lernen
+    {
+      stepId: "ce02-bauer-eval-03b-reflexion-begriffe",
+      phase: 5,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["Schoen D.A. (1983): The Reflective Practitioner"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-eval-03b-reflexion-begriffe",
+      tag: "pflege",
+      themaPrimaer: "pflegeprozess",
+      themenSekundaer: [],
+      transition: "Reflexion als Werkzeug. Schreib jetzt deine Gedanken auf.",
+      contentC1: {
+        title: "Reflexion \u2014 aus Erfahrung lernen",
+        body: "",
+        glossarBegriffe: ["Reflexion", "Professionalisierung", "Lernen"],
+      },
+      contentB1: {
+        title: "Was hast du heute gelernt?",
+        body: "",
+        glossarBegriffe: ["Reflexion", "Lernen"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegeprozess-reflexion",
+        storyAufhaenger: "Der Tag mit Herrn Bauer war lang. Reflexion ist nicht Tagebuch \u2014 sondern professionelles Werkzeug.",
+        storyAufhaengerB1: "Reflexion: Was habe ich gelernt? Was mache ich naechstes Mal anders?",
+        kerntext: "**Reflexion** = systematisches Nachdenken ueber eigenes Handeln (Schoen 1983). Nicht Gefuehle sondern: Was habe ich beobachtet? Was getan? Was aendern?\n\n**Professionalisierung** = Weg vom Anfaenger zum Experten. Reflexion ist der Motor: Jede reflektierte Erfahrung macht besser.\n\n**Lernen** in der Pflege: Fachwissen + Handlungskompetenz + Haltungskompetenz. Heute alle drei berührt.",
+        kerntextB1: "**Reflexion** = nachdenken ueber dein Handeln. Was gesehen? Was getan? Was aendern?\n\n**Professionalisierung** = vom Anfaenger zum Experten. Reflexion hilft.\n\n**Lernen** = Wissen + Koennen + Haltung.",
+        faustregel: "Reflexion = systematisches Nachdenken. Professionalisierung = Weg zum Experten durch reflektierte Erfahrung.",
+        faustregelB1: "Reflexion = nachdenken was du getan hast. So wirst du besser.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Was bedeutet Reflexion in der Pflege und warum ist sie wichtig?",
+          rueckseite: "Reflexion (Schoen 1983): Beobachtung \u2192 Handlung \u2192 Bewertung \u2192 Verbesserung. Professionalisierung durch reflektierte Erfahrung.",
+        },
+      },
+    },
+
     // Step 5.4 — Reflection: Tag-Reflexion
     {
       stepId: "ce02-bauer-eval-04-reflexion-tag",
@@ -495,6 +618,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
         title: "VIPS — Pflege für Menschen mit Demenz",
         body: "Das VIPS-Modell erklärt, wie man Menschen mit Demenz gut pflegt. 4 Buchstaben:\n\nV = Würde: Herr Bauer hat Würde — auch wenn er schlägt oder laut ist.\nI = Einzigartigkeit: Er war Schreiner. Er mag Freddy Quinn. Das ist wichtig für die Pflege.\nP = Innenperspektive: Wie erlebt ER die Situation? Er hat Angst.\nS = Soziales: Ingrid ist Partner der Pflege — nicht nur Besucherin.\n\nQuelle: Kitwood T. (1997).",
         glossarBegriffe: ["VIPS", "Würde", "Demenz"],
+      },
+    },
+
+    // Inline-Wissen: Fluessigkeitsbilanz \u2014 Einfuhr, Ausfuhr, Perspiratio
+    {
+      stepId: "ce02-bauer-eval-05b-fluessigkeitsbilanz",
+      phase: 5,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["ICS Leitlinien"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-eval-05b-fluessigkeitsbilanz",
+      tag: "krankheitslehre",
+      themaPrimaer: "pflegeprozess",
+      themenSekundaer: ["ganzkörperpflege"],
+      transition: "Begriffe klar? Berechne jetzt die Bilanz.",
+      contentC1: {
+        title: "Fluessigkeitsbilanz \u2014 Einfuhr, Ausfuhr, Perspiratio",
+        body: "",
+        glossarBegriffe: ["Perspiratio", "Einfuhr", "Ausfuhr"],
+      },
+      contentB1: {
+        title: "Fluessigkeitsbilanz \u2014 was rein kommt und was raus geht",
+        body: "",
+        glossarBegriffe: ["Perspiratio", "Einfuhr", "Ausfuhr"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegeprozess-fluessigkeitsbilanz",
+        storyAufhaenger: "Drei Begriffe fuer die Fluessigkeitsbilanz: Einfuhr, Ausfuhr, Perspiratio.",
+        storyAufhaengerB1: "Drei Begriffe fuer die Berechnung.",
+        kerntext: "**Einfuhr** = Fluessigkeit die reinkommt: Trinken, Infusionen, fluessige Nahrung.\n\n**Ausfuhr** = Fluessigkeit die rausgeht: Urin, Stuhl, Erbrechen.\n\n**Perspiratio insensibilis** = unsichtbarer Wasserverlust ueber Haut und Atmung. Ca. 700-1000 ml/Tag. Bei Fieber hoeher.\n\n**Bilanz** = Einfuhr minus Ausfuhr (inkl. Perspiratio). Negativ = Defizit = Exsikkose-Risiko.",
+        kerntextB1: "**Einfuhr** = was reinkommt (Trinken, Suppe).\n**Ausfuhr** = was rausgeht (Urin).\n**Perspiratio** = unsichtbarer Wasserverlust (Haut + Atmung, ca. 700-1000 ml).\n**Bilanz** = Einfuhr minus Ausfuhr. Negativ = Austrocknung.",
+        faustregel: "Bilanz = Einfuhr minus Ausfuhr (inkl. Perspiratio). Negativ = Exsikkose.",
+        faustregelB1: "Bilanz = was rein minus was raus. Negativ = Austrocknung.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Berechne: 1000 ml Einfuhr, 1550 ml Ausfuhr. Was bedeutet das?",
+          rueckseite: "1000 - 1550 = -550 ml Defizit. Perspiratio = unsichtbarer Wasserverlust. Massnahme: Trinkmenge erhoehen.",
+        },
       },
     },
 

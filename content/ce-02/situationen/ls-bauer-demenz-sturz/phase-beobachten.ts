@@ -16,6 +16,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
   kontextB1:
     "Herr Bauer ist etwas ruhiger. Er sitzt im Bett. Du hast seine Hand gehalten — das hat geholfen. Jetzt schaust du: Was hat der Sturz hinterlassen? Was zeigt sein Körper dir heute Morgen? Menschen mit Demenz sagen nicht immer: \"Ich habe Schmerzen.\" Sie zeigen es mit dem Gesicht, mit der Körperhaltung. Du lernst heute: Wie beobachte ich, wenn jemand nicht sprechen kann?",
   kernSteps: [
+    // Inline-Wissen: Koerperbeobachtung nach Sturz \u2014 Schonhaltung und Aussenrotation
+    {
+      stepId: "ce02-bauer-beob-00b-koerperbeobachtung",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["DNQP 2022 \u2014 Sturzprophylaxe", "I Care Pflege \u2014 Koerperbeobachtung"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-beob-00b-koerperbeobachtung",
+      tag: "anatomie",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["kontraktur-prophylaxe"],
+      transition: "Du weisst jetzt worauf du achtest. Schau dir Herrn Bauer an \u2014 bevor du irgendetwas misst.",
+      contentC1: {
+        title: "Koerperbeobachtung nach Sturz \u2014 Schonhaltung und Aussenrotation",
+        body: "",
+        glossarBegriffe: ["Schonhaltung", "Aussenrotation", "Koerperbeobachtung"],
+      },
+      contentB1: {
+        title: "Worauf achtest du nach einem Sturz?",
+        body: "",
+        glossarBegriffe: ["Schonhaltung", "Aussenrotation"],
+      },
+      inlineWissen: {
+        bausteinRef: "sturz-prophylaxe-koerperbeobachtung",
+        storyAufhaenger: "Gleich schaust du Herrn Bauer an \u2014 noch bevor du irgendetwas misst. Was verraten dir Haltung, Mimik und Beinstellung ueber moegliche Verletzungen? Zwei Begriffe musst du kennen.",
+        storyAufhaengerB1: "Du schaust gleich Herrn Bauer an. Was verraten Haltung und Beinstellung ueber Verletzungen?",
+        kerntext: "Nach einem Sturz ist die **Koerperbeobachtung** der erste diagnostische Schritt \u2014 vor jeder Messung (DNQP 2022).\n\n**Schonhaltung** = Der Patient haelt eine Koerperregion unbewusst ruhig oder in einer bestimmten Position, um Schmerz zu vermeiden. Bei Herrn Bauer: Er haelt das rechte Bein leicht angewinkelt und bewegt es nicht aktiv.\n\n**Aussenrotation** = Das Bein ist nach aussen gedreht (Fussspitze zeigt nach aussen statt zur Decke). Hinweis auf:\n\u2022 Hueftfraktur (klassisches Zeichen: verkuerztes, aussenrotiertes Bein)\n\u2022 Muskulaere Schonung nach Sturz\n\u2022 Kontraktur (bei laengerer Immobilitaet)\n\nBei Herrn Bauer: Aussenrotation rechts + Schonhaltung + angespannte Mimik = Schmerzhinweis, auch wenn er es nicht sagen kann.\n\n**Systematik:** Kopf \u2192 Wirbelsaeule \u2192 Becken \u2192 Extremitaeten. Seitenvergleich (rechts vs. links). Immer BESD beobachten waehrend der Inspektion.",
+        kerntextB1: "Nach einem Sturz schaust du zuerst den Koerper an \u2014 bevor du etwas misst.\n\n**Schonhaltung** = Er haelt eine Stelle ruhig, weil es wehtut. Herrn Bauers rechtes Bein ist angewinkelt \u2014 er bewegt es nicht.\n\n**Aussenrotation** = Das Bein ist nach aussen gedreht. Kann auf eine Hueftverletzung hinweisen.\n\nBei Herrn Bauer: Bein nach aussen gedreht + er bewegt es nicht + sein Gesicht ist angespannt = Er hat wahrscheinlich Schmerzen.\n\nImmer schauen: Kopf \u2192 Ruecken \u2192 Beine. Rechte und linke Seite vergleichen.",
+        faustregel: "Schonhaltung + Aussenrotation + angespannte Mimik = Schmerzhinweis. Erst beobachten, dann messen.",
+        faustregelB1: "Bein nach aussen gedreht + er bewegt es nicht + Gesicht angespannt = wahrscheinlich Schmerzen. Erst schauen, dann messen.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Herrn Bauers rechtes Bein ist leicht nach aussen gedreht und er bewegt es nicht. Was sagt dir das?",
+          rueckseite: "**Aussenrotation** (Bein nach aussen gedreht) + **Schonhaltung** (Bein nicht aktiv bewegt) = Schmerzhinweis. Moegliche Ursachen: Hueftfraktur (klassisch: verkuerztes, aussenrotiertes Bein), muskulaere Schonung, beginnende Kontraktur. Immer Seitenvergleich (rechts vs. links) + BESD beobachten.",
+        },
+      },
+    },
+
     // Step 2.1 — Brilliant-Frage: Erstblick
     {
       stepId: "ce02-bauer-beob-01-brilliant-erstblick",
@@ -53,6 +94,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
           "Gesichtsausdruck / Mimik erwähnt",
           "Körperhaltung oder Spannung beschrieben",
         ],
+      },
+    },
+
+    // Inline-Wissen: Vitalzeichen, ABCDE-Schema und Synkope \u2014 Grundlagen der Ersteinschaetzung
+    {
+      stepId: "ce02-bauer-beob-01b-vitalzeichen-abcde",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["DNQP 2022 \u2014 Sturzprophylaxe", "ERC 2021 \u2014 ABCDE-Systematic Approach"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-beob-01b-vitalzeichen-abcde",
+      tag: "pflege",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["basale-stimulation"],
+      transition: "Vitalzeichen, ABCDE, Synkope \u2014 alles im Kopf. Jetzt bringe die Schritte in die richtige Reihenfolge.",
+      contentC1: {
+        title: "Vitalzeichen, ABCDE-Schema und Synkope \u2014 Grundlagen der Ersteinschaetzung",
+        body: "",
+        glossarBegriffe: ["Vitalzeichen", "ABCDE-Schema", "Synkope", "Schmerzsignal"],
+      },
+      contentB1: {
+        title: "Was sind Vitalzeichen? Was ist das ABCDE-Schema?",
+        body: "",
+        glossarBegriffe: ["Vitalzeichen", "ABCDE", "Synkope", "Schmerzsignal"],
+      },
+      inlineWissen: {
+        bausteinRef: "sturz-prophylaxe-vitalzeichen-abcde",
+        storyAufhaenger: "Bevor du die Sturz-Assessment-Reihenfolge sortierst, brauchst du drei Grundbegriffe: Vitalzeichen, ABCDE-Schema und Synkope. Denn die Reihenfolge der Untersuchung ergibt sich aus der Logik: Kreislaufproblem ausschliessen, BEVOR du Extremitaeten bewegst.",
+        storyAufhaengerB1: "Bevor du die Sturz-Untersuchung sortierst, musst du drei Begriffe kennen: Vitalzeichen, ABCDE-Schema und Synkope.",
+        kerntext: "**Vitalzeichen** sind die Basismesswerte des Koerpers: Blutdruck (RR), Herzfrequenz (Puls), Atemfrequenz, Sauerstoffsaettigung (SpO2), Koerpertemperatur. Sie zeigen in Sekunden ob der Kreislauf stabil ist.\n\n**ABCDE-Schema** (ERC 2021) ist die Reihenfolge der Ersteinschaetzung bei jedem Notfall/Sturz:\n\u2022 **A** = Airway (Atemweg frei?)\n\u2022 **B** = Breathing (Atmung regelmaessig?)\n\u2022 **C** = Circulation (Kreislauf: RR, Puls, SpO2)\n\u2022 **D** = Disability (Bewusstsein, Orientierung, Pupillen)\n\u2022 **E** = Exposure (Koerper entkleiden, Verletzungen suchen)\n\n**Synkope** = kurzzeitiger Bewusstseinsverlust durch Minderdurchblutung des Gehirns (z. B. Blutdruckabfall beim Aufstehen). Bei Herrn Bauer: Mirtazapin kann orthostatische Hypotonie verursachen \u2014 eine Synkope als Sturzursache muss vor Bewegung der Extremitaeten ausgeschlossen werden.\n\n**Schmerzsignal** bei Demenz: Kein verbales \"Es tut weh\" \u2014 sondern Grimassieren, Schlagen, Steifwerden, Stoehnlaute. Jedes Abwehrverhalten bei Beruehrung ist ein potenzielles Schmerzsignal.",
+        kerntextB1: "**Vitalzeichen** = die wichtigsten Koerperwerte: Blutdruck, Puls, Sauerstoff im Blut, Atemfrequenz, Temperatur.\n\n**ABCDE-Schema** = Reihenfolge bei Notfall/Sturz:\n\u2022 A = Atemweg frei?\n\u2022 B = Atmet er normal?\n\u2022 C = Kreislauf (Blutdruck, Puls)\n\u2022 D = Bewusstsein (wach? orientiert?)\n\u2022 E = Koerper anschauen (Verletzungen)\n\n**Synkope** = kurze Ohnmacht durch Kreislaufproblem. Herr Bauer nimmt Mirtazapin \u2014 das kann den Blutdruck senken. Deshalb: Erst Kreislauf pruefen, dann Beine bewegen.\n\n**Schmerzsignal bei Demenz:** Nicht \"Es tut weh\" \u2014 sondern: Grimasse, Schlagen, steif werden, Stoehnen.",
+        faustregel: "ABCDE = zuerst Kreislauf, dann Extremitaeten. Synkope als Sturzursache ausschliessen bevor du bewegst. Schmerzsignal bei Demenz = Verhalten beobachten.",
+        faustregelB1: "ABCDE = zuerst Kreislauf pruefen. Synkope = kurze Ohnmacht. Schmerz bei Demenz erkennt man am Verhalten.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Warum misst du bei Herrn Bauer nach dem Sturz zuerst Vitalzeichen \u2014 bevor du sein Knie bewegst?",
+          rueckseite: "ABCDE-Schema: Circulation (C) vor Exposure (E). Synkope (Blutdruckabfall als Sturzursache) muss ausgeschlossen werden bevor Extremitaeten bewegt werden. Mirtazapin verursacht orthostatische Hypotonie (PRISCUS). Vitalzeichen: RR, Puls, SpO2, Atemfrequenz, Temperatur. Schmerzsignal bei Demenz: Grimasse, Abwehr, Stoehnen \u2014 nicht verbal.",
+        },
       },
     },
 
@@ -276,6 +358,47 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
             ],
           },
         ],
+      },
+    },
+
+    // Inline-Wissen: Dreifach-Risiko: Exsikkose, Hautschaeden und Sturzgefahr
+    {
+      stepId: "ce02-bauer-beob-03b-exsikkose-hautrisiken",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["DNQP 2022 \u2014 Sturzprophylaxe", "DNQP 2024 \u2014 Dekubitusprophylaxe", "DNQP 2023 \u2014 Mundpflege"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-bauer-beob-03b-exsikkose-hautrisiken",
+      tag: "pflege",
+      themaPrimaer: "sturz-prophylaxe",
+      themenSekundaer: ["dekubitus-prophylaxe", "kontraktur-prophylaxe", "mundpflege"],
+      transition: "Du kennst jetzt die drei Risiko-Bereiche. Finde sie im Pflegebericht.",
+      contentC1: {
+        title: "Dreifach-Risiko: Exsikkose, Hautschaeden und Sturzgefahr",
+        body: "",
+        glossarBegriffe: ["Exsikkose", "Soor", "Miktionsprotokoll", "Dekubitusgefahr", "Sturzrisiko", "Kontrakturrisiko", "Inkontinenz-assoziierte Dermatitis", "Haut", "Risiko"],
+      },
+      contentB1: {
+        title: "Drei Risiken auf einmal: Austrocknung, Haut und Sturz",
+        body: "",
+        glossarBegriffe: ["Exsikkose", "Soor", "Miktionsprotokoll", "Dekubitusgefahr", "Sturzrisiko", "Kontraktur", "Haut"],
+      },
+      inlineWissen: {
+        bausteinRef: "sturz-prophylaxe-dreifach-risiko",
+        storyAufhaenger: "Herr Bauer hat nicht ein Risiko \u2014 er hat drei gleichzeitig: Er trinkt zu wenig (Exsikkose), seine Haut leidet unter Feuchtigkeit und Immobilitaet, und er stuerzt nachts. Diese drei Risiken verstaerken sich gegenseitig.",
+        storyAufhaengerB1: "Herr Bauer hat drei Risiken gleichzeitig: Er trinkt zu wenig, seine Haut ist gefaehrdet, und er stuerzt nachts.",
+        kerntext: "Bei Herrn Bauer ueberlagern sich **drei Risikobereiche** (DNQP 2022/2023/2024):\n\n**1. Exsikkose (Austrocknung)**\nTrinkmenge 900 ml/Tag = deutlich unter dem Bedarf (ca. 1500 ml). Folgen: trockene Mundschleimhaut, erhoehtes **Soor**-Risiko (Mundpilz bei trockener Schleimhaut), Verwirrtheit verstaerkt. **Miktionsprotokoll** = Dokumentation von Urinausscheidung + Trinkmenge \u2014 zeigt das Gleichgewicht.\n\n**2. Hautrisiken**\n\u2022 **Dekubitusgefahr** \u2014 Immobilitaet + Mangelernährung + Inkontinenz. Sakrum und Fersen sind Praedilektionsstellen.\n\u2022 **Inkontinenz-assoziierte Dermatitis (IAD)** \u2014 Hautentzuendung durch Dauerfeuchtigkeit im Inkontinenz-Pad. Nicht dasselbe wie Dekubitus, aber haeufig verwechselt.\n\u2022 **Kontrakturrisiko** \u2014 Immobilitaet + Schonhaltung nach Sturz = Gelenke versteifen.\n\n**3. Sturzrisiko** (weiterhin hoch)\nDemenz + Mirtazapin + Inkontinenz-Drang nachts + Desorientierung. Kein Einzelereignis \u2014 strukturelles Risiko.\n\nDiese drei Bereiche verstaerken sich: Exsikkose \u2192 Verwirrtheit \u2192 Sturzrisiko steigt. Inkontinenz \u2192 IAD + naechtliches Aufstehen \u2192 Sturzrisiko steigt. Immobilitaet \u2192 Kontraktur + Dekubitus.",
+        kerntextB1: "Herr Bauer hat **drei Risiken gleichzeitig**:\n\n**1. Austrocknung (Exsikkose)**\nEr trinkt nur 900 ml am Tag. Zu wenig. Mund wird trocken \u2192 **Soor** (Pilz im Mund) droht. **Miktionsprotokoll** = aufschreiben wie viel er trinkt und wie viel Urin er hat.\n\n**2. Haut-Risiken**\n\u2022 **Dekubitusgefahr** \u2014 er liegt viel, bewegt sich wenig.\n\u2022 **IAD** \u2014 Haut entzuendet weil das Inkontinenz-Pad feucht ist.\n\u2022 **Kontrakturrisiko** \u2014 Gelenke werden steif weil er sich nicht bewegt.\n\n**3. Sturzrisiko** \u2014 Demenz + Medikament + Inkontinenz-Drang nachts.\n\nDiese drei verstaerken sich: Wenig trinken \u2192 verwirrter \u2192 mehr Sturze. Inkontinenz \u2192 Haut leidet + nachts aufstehen \u2192 mehr Sturze.",
+        faustregel: "Exsikkose, Hautschaeden und Sturzgefahr verstaerken sich gegenseitig. Miktionsprotokoll zeigt das Gleichgewicht. IAD ist nicht Dekubitus \u2014 aber genauso ernst.",
+        faustregelB1: "Drei Risiken auf einmal: Austrocknung + Haut + Sturz. Sie verstaerken sich gegenseitig.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Herrn Bauers Trinkmenge betraegt 900 ml/Tag, seine Inkontinenzversorgung ist 3x nass, und er stuerzt nachts. Wie haengen diese drei Risiken zusammen?",
+          rueckseite: "Dreifach-Risiko: 1) **Exsikkose** (900 ml < 1500 ml Bedarf) \u2192 trockene Mundschleimhaut, Soor-Risiko, verstaerkte Verwirrtheit. 2) **Hautrisiken**: Dekubitusgefahr (Immobilitaet), IAD (Inkontinenz-Feuchtigkeit), Kontrakturrisiko (Schonhaltung). 3) **Sturzrisiko** (Demenz + Mirtazapin + Inkontinenz-Drang). Wechselwirkung: Exsikkose \u2192 Verwirrtheit \u2192 Sturzrisiko. Miktionsprotokoll = Monitoring-Instrument.",
+        },
       },
     },
 
