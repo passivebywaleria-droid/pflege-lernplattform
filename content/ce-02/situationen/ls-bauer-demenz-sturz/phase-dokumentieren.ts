@@ -144,7 +144,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       contentC1: {
         title: "Dokumentation bei Demenz — 4 Besonderheiten",
         body: "",
-        glossarBegriffe: ["Pflegebericht", "Abwehrverhalten", "BESD-Dokumentation"],
+        glossarBegriffe: ["Pflegebericht", "Abwehrverhalten", "BESD-Dokumentation", "Dokumentation", "Fehler", "Objektivitaet", ],
       },
       contentB1: {
         title: "Was ist beim Aufschreiben bei Demenz anders?",
@@ -196,49 +196,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
         },
       },
     },
-
-    // Inline-Wissen: Pflegebericht \u2014 objektiv und fehlerfrei
-    {
-      stepId: "ce02-bauer-dok-01c-pflegebericht-grundlagen",
-      phase: 6,
-      stepType: "inlineWissen",
-      bloomLevel: 2,
-      kompetenzbereich: "I.1",
-      quellen: ["Paragraph 4 PflBG", "DNQP 2022"],
-      track: "basis",
-      modus: "entdecker",
-      lernziel: "ce02-bauer-dok-01c-pflegebericht-grundlagen",
-      tag: "pflege",
-      themaPrimaer: "pflegedokumentation",
-      themenSekundaer: ["ganzkörperpflege"],
-      transition: "Dokumentations-Grundlagen klar. Finde die Fehler.",
-      contentC1: {
-        title: "Pflegebericht \u2014 objektiv und fehlerfrei",
-        body: "",
-        glossarBegriffe: ["Objektivitaet", "Dokumentation", "Fehler"],
-      },
-      contentB1: {
-        title: "Pflegebericht \u2014 wie schreibt man richtig?",
-        body: "",
-        glossarBegriffe: ["Dokumentation", "Fehler"],
-      },
-      inlineWissen: {
-        bausteinRef: "pflegedokumentation-grundlagen",
-        storyAufhaenger: "Drei Prinzipien fuer einen guten Pflegebericht.",
-        storyAufhaengerB1: "Drei Dinge fuer einen guten Pflegebericht.",
-        kerntext: "**Objektivitaet** = Beschreibe Beobachtung, nicht Meinung. Falsch: \"schwierig\". Richtig: \"2x Schlagen.\"\n\n**Dokumentation** muss: vollstaendig, zeitnah, nachvollziehbar, unterschrieben (Paragraph 630f BGB).\n\n**Haeufige Fehler:**\n\u2022 Wertung statt Beobachtung\n\u2022 Fehlende Zeitangabe\n\u2022 Fehlende Konsequenz\n\u2022 Passive Formulierung ohne Details",
-        kerntextB1: "**Objektivitaet** = schreibe was du SIEHST. Falsch: \"schwierig\". Richtig: \"2x geschlagen.\"\n\n**Haeufige Fehler:** \"schwierig\" schreiben, keine Uhrzeit, \"beobachten\" statt Massnahme.",
-        faustregel: "Verhalten beschreiben, nicht bewerten. Zahlen statt Adjektive.",
-        faustregelB1: "Schreibe was du siehst. Keine Wertungen.",
-        spektrum: [],
-        karteikarte: {
-          vorderseite: "Drei haeufige Fehler in Pflegeberichten?",
-          rueckseite: "1) Wertung statt Beobachtung. 2) Fehlende Zeitangabe. 3) Fehlende Konsequenz. Objektivitaet: Beobachtung, nicht Meinung.",
-        },
-      },
-    },
-
-    // Step 6.2 — ErrorSpot: Fehler im Pflegebericht finden
+// Step 6.2 — ErrorSpot: Fehler im Pflegebericht finden
     {
       stepId: "ce02-bauer-dok-02-pflegebericht-formulierung",
       phase: 6,

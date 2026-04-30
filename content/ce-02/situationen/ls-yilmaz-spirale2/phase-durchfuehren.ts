@@ -453,6 +453,47 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       },
     },
 
+    // Inline-Wissen: Interkulturelle Kompetenz und evidenzbasierte Pflege
+    {
+      stepId: "ce02-yilmaz-s2-durch-04b-interkulturell",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["Domenig D. (2007): Transkulturelle Kompetenz", "Molan P. (2006): Manuka-Honig"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-durch-04b-interkulturell",
+      tag: "pflege",
+      themaPrimaer: "pflegeprozess",
+      themenSekundaer: ["dekubitus-prophylaxe"],
+      transition: "Interkulturelle Kompetenz im Kopf. Jetzt: Das Gespraech.",
+      contentC1: {
+        title: "Interkulturelle Kompetenz und evidenzbasierte Pflege",
+        body: "",
+        glossarBegriffe: ["Interkulturelle Kompetenz", "Manuka-Honig"],
+      },
+      contentB1: {
+        title: "Kulturelle Unterschiede in der Pflege",
+        body: "",
+        glossarBegriffe: ["Interkulturelle Kompetenz"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegeprozess-interkulturell",
+        storyAufhaenger: "Gleich erzaehlt Frau Yilmaz etwas ueber Honig als Hausmittel. Interkulturelle Kompetenz heisst: respektieren UND fachlich korrekt bleiben.",
+        storyAufhaengerB1: "Frau Yilmaz erzaehlt gleich ueber Hausmittel. Wie reagierst du?",
+        kerntext: "**Interkulturelle Kompetenz** (Domenig 2007) = respektvoll mit Menschen aus anderen Kulturen umgehen. Kulturelle Praktiken nicht abwerten \u2014 und gleichzeitig evidenzbasiert handeln.\n\n**Manuka-Honig** = medizinisch standardisierter Honig aus Neuseeland mit nachgewiesener antibakterieller Wirkung (Methylglyoxal, Molan 2006). Wird in zertifizierten Wundprodukten verwendet. NICHT: normaler Haushaltshonig auf offene Wunden.\n\nBei Frau Yilmaz: Anerkennen (\"Honig wurde historisch als Antiseptikum verwendet\") + Erklaeren warum Hydrokolloid hier besser passt.",
+        kerntextB1: "**Interkulturelle Kompetenz** = mit Menschen aus anderen Kulturen respektvoll umgehen. Ihre Erfahrungen ernst nehmen \u2014 und fachlich erklaeren warum der Arzt einen anderen Weg waehlt.\n\n**Manuka-Honig** = medizinischer Honig. Wird im Krankenhaus genutzt. Nicht: normaler Honig.",
+        faustregel: "Interkulturelle Kompetenz: Nicht abwerten, nicht unkritisch uebernehmen. Anerkennen + evidenzbasiert erklaeren.",
+        faustregelB1: "Respektieren + fachlich erklaeren. Nicht Unsinn sagen, nicht einfach mitmachen.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Frau Yilmaz erwaehnt Honig als Hausmittel. Wie zeigst du interkulturelle Kompetenz?",
+          rueckseite: "Anerkennen (historisch wirksam, Manuka-Honig medizinisch genutzt) + Erklaeren warum Hydrokolloid besser passt. Interkulturelle Kompetenz = Respektieren + Abwaegen + Erklaeren (Domenig 2007).",
+        },
+      },
+    },
+
     // Step 4.5 — Dialog (2 Phasen): Kommunikation während Pflege (Zitat Z6)
     {
       stepId: "ce02-yilmaz-s2-durch-05-kommunikation-waehrend",

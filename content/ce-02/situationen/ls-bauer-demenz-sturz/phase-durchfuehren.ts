@@ -64,7 +64,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Warum Haarwuchsrichtung? — Was Beruehrung im Gehirn macht",
         body: "",
-        glossarBegriffe: ["Koerperschema", "Propriozeption", "Haarwuchsrichtung"],
+        glossarBegriffe: ["Koerperschema", "Propriozeption", "Haarwuchsrichtung", "Autonomie", "Deeskalation", "Handfuehrung", "Ressource", "Ressourcen", "Wuerde", ],
       },
       contentB1: {
         title: "Warum in Haarrichtung waschen?",
@@ -116,49 +116,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
         },
       },
     },
-
-    // Inline-Wissen: Wuerde, Autonomie und Ressourcen in der Demenzpflege
-    {
-      stepId: "ce02-bauer-dur-01c-wuerde-autonomie",
-      phase: 4,
-      stepType: "inlineWissen",
-      bloomLevel: 2,
-      kompetenzbereich: "I.1",
-      quellen: ["Kitwood T. (1997): Dementia Reconsidered", "DNQP 2018 \u2014 Beziehungsgestaltung bei Demenz"],
-      track: "basis",
-      modus: "entdecker",
-      lernziel: "ce02-bauer-dur-01c-wuerde-autonomie",
-      tag: "pflege",
-      themaPrimaer: "ganzkörperpflege",
-      themenSekundaer: ["basale-stimulation"],
-      transition: "Wuerde, Autonomie und Ressourcen \u2014 jetzt kommt die Komplikation.",
-      contentC1: {
-        title: "Wuerde, Autonomie und Ressourcen in der Demenzpflege",
-        body: "",
-        glossarBegriffe: ["Wuerde", "Autonomie", "Deeskalation", "Ressourcen", "Ressource", "Handfuehrung"],
-      },
-      contentB1: {
-        title: "Wuerde und Selbstbestimmung bei Demenz",
-        body: "",
-        glossarBegriffe: ["Wuerde", "Deeskalation", "Ressource"],
-      },
-      inlineWissen: {
-        bausteinRef: "ganzkoerperpflege-wuerde-autonomie",
-        storyAufhaenger: "Gleich wird Herr Bauer nach deiner Hand schlagen. Die Frage ist nicht: Wie setzt du die Pflege durch? Die Frage ist: Wie wahrst du seine **Wuerde**, respektierst seine **Autonomie** und nutzt trotzdem seine **Ressourcen**?",
-        storyAufhaengerB1: "Gleich schlaegt Herr Bauer nach dir. Wie pflegst du ihn \u2014 und wahrst gleichzeitig seine Wuerde?",
-        kerntext: "**Wuerde** = Jeder Mensch hat einen unantastbaren Wert \u2014 unabhaengig von Kognition oder Kooperation (Kitwood 1997, GG Art. 1). Herr Bauers Wuerde gilt auch wenn er schlaegt.\n\n**Autonomie** = Selbstbestimmungsrecht. Auch Demenz-Patienten haben ein Recht auf Ablehnung. \"Nein\" ist ein gueltiger Wille \u2014 auch nonverbal (Kopfschuetteln, Abwehr, Wegdrehen).\n\n**Deeskalation** = Erregungskreislauf unterbrechen: Pause, Reizreduktion, Beruehrung anbieten. Nicht argumentieren.\n\n**Ressourcen** bei Demenz = Faehigkeiten die NOCH da sind. Bei Herrn Bauer: Beruehrung spueren, Musik erkennen (Freddy Quinn), **Handfuehrung** akzeptieren (du legst den Waschlappen in seine Hand, er fuehrt die Bewegung). Ressource nutzen heisst: Den Menschen tun lassen was er kann \u2014 nicht alles uebernehmen.\n\nRegel: **Nie gegen massiven Widerstand pflegen.** Pause, Strategie wechseln, Ressource einsetzen. Nur bei akuter Gefahr (Notfall) gilt die Ausnahme.",
-        kerntextB1: "**Wuerde** = Jeder Mensch hat Wert \u2014 auch wenn er verwirrt ist oder schlaegt.\n\n**Autonomie** = Selbstbestimmung. Auch bei Demenz darf er Nein sagen. \"Nein\" gilt \u2014 auch ohne Worte (Wegdrehen, Schlagen).\n\n**Deeskalation** = Aufregung stoppen: Pause machen, ruhig bleiben, Beruehrung anbieten.\n\n**Ressourcen** = Was er NOCH kann. Bei Herrn Bauer: Beruehrung spueren, Musik hoeren. **Handfuehrung** = Waschlappen in seine Hand legen \u2014 er waesche sich selbst.\n\nRegel: Nie gegen massiven Widerstand pflegen. Pause \u2192 andere Strategie.",
-        faustregel: "Wuerde gilt immer. Autonomie gilt auch bei Demenz. Nie gegen massiven Widerstand \u2014 Pause, Strategie wechseln, Ressourcen nutzen.",
-        faustregelB1: "Wuerde gilt immer. Auch bei Demenz darf er Nein sagen. Nicht kaempfen \u2014 Pause machen und anders versuchen.",
-        spektrum: [],
-        karteikarte: {
-          vorderseite: "Herr Bauer schlaegt bei der Gesichtswaesche nach dir. Wie vereinst du Pflegebedarf mit Wuerde und Autonomie?",
-          rueckseite: "Wuerde (Kitwood 1997, GG Art. 1): unantastbar, auch bei Agitation. Autonomie: \"Nein\" gilt auch nonverbal. Deeskalation: Pause, Reizreduktion, Beruehrung. Ressourcen: Handfuehrung (Waschlappen in seine Hand), Musik. Regel: Nie gegen massiven Widerstand. Pause \u2192 Strategie wechseln \u2192 Ressource nutzen.",
-        },
-      },
-    },
-
-    // Step 4.2 — Branching: KOMPLIKATION 1 — Abwehr bei Pflege
+// Step 4.2 — Branching: KOMPLIKATION 1 — Abwehr bei Pflege
     {
       stepId: "ce02-bauer-dur-02-abwehr-komplikation",
       phase: 4,

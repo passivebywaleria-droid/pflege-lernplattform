@@ -213,7 +213,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       contentC1: {
         title: "Ganzkörperpflege bei Demenz — drei Ziele in einer Handlung",
         body: "",
-        glossarBegriffe: ["Ganzkörperpflege", "Initialberuehrung", "Beziehungsgestaltung"],
+        glossarBegriffe: ["Ganzkörperpflege", "Initialberuehrung", "Beziehungsgestaltung", "Bewegung", "Kontrakturprophylaxe", "Spitzfuss", "Spitzfussprophylaxe", ],
       },
       contentB1: {
         title: "Wie pflege ich Herrn Bauer?",
@@ -276,49 +276,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
         },
       },
     },
-
-    // Inline-Wissen: Spitzfuss und Kontrakturprophylaxe \u2014 wenn Gelenke versteifen
-    {
-      stepId: "ce02-bauer-plan-02c-spitzfuss-kontraktur",
-      phase: 3,
-      stepType: "inlineWissen",
-      bloomLevel: 2,
-      kompetenzbereich: "I.1",
-      quellen: ["DNQP 2018 \u2014 Kontrakturenprophylaxe (Hinweispapier)", "DNQP 2014 \u2014 Mobilitaetsfoerderung"],
-      track: "basis",
-      modus: "entdecker",
-      lernziel: "ce02-bauer-plan-02c-spitzfuss-kontraktur",
-      tag: "anatomie",
-      themaPrimaer: "kontraktur-prophylaxe",
-      themenSekundaer: ["basale-stimulation"],
-      transition: "Spitzfuss im Kopf? Gut. Jetzt den Bewegungsablauf sortieren.",
-      contentC1: {
-        title: "Spitzfuss und Kontrakturprophylaxe \u2014 wenn Gelenke versteifen",
-        body: "",
-        glossarBegriffe: ["Spitzfussprophylaxe", "Kontrakturprophylaxe", "Spitzfuss", "Bewegung"],
-      },
-      contentB1: {
-        title: "Was ist ein Spitzfuss? Was ist Kontrakturprophylaxe?",
-        body: "",
-        glossarBegriffe: ["Spitzfuss", "Kontrakturprophylaxe", "Bewegung"],
-      },
-      inlineWissen: {
-        bausteinRef: "kontraktur-prophylaxe-spitzfuss",
-        storyAufhaenger: "Herr Bauer hat ein Knie-Streckdefizit von 20 Grad. Wenn auch sein Sprunggelenk versteift, kann er nicht mehr stehen. Das nennt man **Spitzfuss** \u2014 eine der gefuerchtetsten Kontrakturen.",
-        storyAufhaengerB1: "Herrn Bauers Knie ist schon steifer. Wenn auch sein Fussgelenk steif wird, kann er nicht mehr stehen. Das heisst Spitzfuss.",
-        kerntext: "**Kontrakturprophylaxe** = Massnahmen zur Verhinderung von Gelenkversteifungen (DNQP 2018).\n\n**Spitzfuss** (Pes equinus) = Dauerhafte Plantarflexion des Fusses. Die Ferse erreicht den Boden nicht mehr. Ursache: Verkürzung der Wadenmuskulatur durch Immobilitaet. Folge: Stehen und Gehen unmoeglich.\n\n**Spitzfussprophylaxe:** \n\u2022 Fusssohle gegen weiches Brett oder Kissen stellen (5-10 Min, 2x/Tag)\n\u2022 Fersenstimulation beim Abtrocknen (somatische Stimulation)\n\u2022 Lagerungsrolle unter den Unterschenkel (Ferse frei, Eigengewicht foerdert Streckung)\n\n**Bewegung** bei Demenz: Passive Bewegung waehrend der Koerperpflege (integriert, nicht als separater Block). Aktiv-assistiv wenn moeglich. Tempo: Patient bestimmt. Schmerzgrenze: BESD beobachten.",
-        kerntextB1: "**Kontrakturprophylaxe** = verhindern dass Gelenke steif werden.\n\n**Spitzfuss** = der Fuss ist dauerhaft nach unten gebeugt. Die Ferse kommt nicht mehr auf den Boden. Ursache: Die Wadenmuskel verkuerzt sich wenn der Fuss nicht bewegt wird.\n\n**Was hilft:**\n\u2022 Fusssohle gegen Brett oder Kissen stellen (2x am Tag, 5-10 Min)\n\u2022 Ferse beim Abtrocknen stimulieren\n\u2022 Lagerungsrolle unter den Unterschenkel (Ferse frei)\n\n**Bewegung bei Demenz:** Beim Waschen mitmachen, nicht extra. Langsam. Stoppen bei Schmerz.",
-        faustregel: "Spitzfuss = Ferse erreicht den Boden nicht mehr. Prophylaxe: Fusssohle stimulieren, Ferse freistellen, passive Bewegung waehrend Pflege.",
-        faustregelB1: "Spitzfuss = Ferse kommt nicht mehr auf den Boden. Prophylaxe: Fuss stimulieren, Ferse frei lagern, beim Waschen Fuss bewegen.",
-        spektrum: [],
-        karteikarte: {
-          vorderseite: "Was ist ein Spitzfuss und welche Prophylaxe-Massnahmen setzt du bei Herrn Bauer ein?",
-          rueckseite: "Spitzfuss = dauerhafte Plantarflexion, Ferse erreicht Boden nicht (Wadenmuskulatur verkuerzt). Prophylaxe: 1) Fusssohle gegen Brett (5-10 Min, 2x/Tag). 2) Fersenstimulation (somatisch). 3) Lagerungsrolle unter Unterschenkel (Ferse frei). Integration in Koerperpflege bei Demenz.",
-        },
-      },
-    },
-
-    // Step 3.3 — Sequencing: Bewegungsablauf Morgenpflege planen
+// Step 3.3 — Sequencing: Bewegungsablauf Morgenpflege planen
     {
       stepId: "ce02-bauer-plan-03-bewegungsplan",
       phase: 3,

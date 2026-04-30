@@ -137,6 +137,47 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
       },
     },
 
+    // Inline-Wissen: Qualitaetsdimensionen und DNQP-Expertenstandard
+    {
+      stepId: "ce02-yilmaz-s2-doku-01b-qualitaet-dnqp",
+      phase: 6,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: ["Donabedian A. (1966)", "DNQP 2024"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-s2-doku-01b-qualitaet-dnqp",
+      tag: "pflege",
+      themaPrimaer: "pflegedokumentation",
+      themenSekundaer: ["dekubitus-prophylaxe"],
+      transition: "Qualitaetsbegriffe klar. Ordne sie in die Matrix.",
+      contentC1: {
+        title: "Qualitaetsdimensionen und DNQP-Expertenstandard",
+        body: "",
+        glossarBegriffe: ["Strukturqualitaet", "Prozessqualitaet", "Ergebnisqualitaet", "Donabedian", "DNQP", "Expertenstandard", "Struktur-Kriterium"],
+      },
+      contentB1: {
+        title: "Qualitaet pruefen mit dem DNQP",
+        body: "",
+        glossarBegriffe: ["DNQP", "Expertenstandard"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegedokumentation-dnqp",
+        storyAufhaenger: "Du hast den Wundbericht geschrieben. Hat die Pflege dem Standard entsprochen? Sieben Begriffe.",
+        storyAufhaengerB1: "Hat die Pflege dem Standard entsprochen?",
+        kerntext: "**DNQP** = Deutsches Netzwerk fuer Qualitaetsentwicklung in der Pflege. Gibt **Expertenstandards** heraus. Dekubitusprophylaxe 2024 hat **Struktur-Kriterien** (S), Prozess-Kriterien (P), Ergebnis-Kriterien (E).\n\n**Struktur-Kriterium** = Was muss vorhanden sein?\n\n**Strukturqualitaet** = Voraussetzungen erfuellt? **Prozessqualitaet** = Massnahmen durchgefuehrt? **Ergebnisqualitaet** = Resultat? (Donabedian 1966)\n\nBei Frau Yilmaz: S teilweise, P teilweise, E Kat. II aber heilend.",
+        kerntextB1: "**DNQP** = Organisation fuer Pflege-Standards. **Expertenstandard** = was mindestens gemacht werden muss.\n**Struktur-Kriterium** = Was muss da sein?\n**Strukturqualitaet** = Genug da? **Prozessqualitaet** = Gemacht? **Ergebnisqualitaet** = Ergebnis?",
+        faustregel: "DNQP-Expertenstandard: S + P + E. Systemanalyse, kein Schuld-Framing.",
+        faustregelB1: "DNQP = Standard. Struktur + Prozess + Ergebnis pruefen.",
+        spektrum: [],
+        karteikarte: {
+          vorderseite: "Was sind die 3 DNQP-Dimensionen bei Frau Yilmaz?",
+          rueckseite: "DNQP 2024: S-Kriterien (Kompetenz, Material), P-Kriterien (Inspektion, Umlagerung), E-Kriterien (Dekubitusfreiheit/Verbesserung). Donabedian: Systemanalyse.",
+        },
+      },
+    },
+
     // Step 6.2 — Matrix (3×3): Donabedian Qualitätsprüfung
     {
       stepId: "ce02-yilmaz-s2-doku-02-spe-qualitaetscheck",

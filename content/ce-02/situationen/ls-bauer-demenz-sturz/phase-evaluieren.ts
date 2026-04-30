@@ -148,7 +148,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
       contentC1: {
         title: "Sturzschutz evaluieren — wann ist eine Maßnahme wirksam?",
         body: "",
-        glossarBegriffe: ["Evaluation", "Sturzprophylaxe", "DNQP Kriterium E5"],
+        glossarBegriffe: ["Evaluation", "Sturzprophylaxe", "DNQP Kriterium E5", "Angehoerigenkommunikation", "Betreuung", "Ehrlichkeit", "Empathie", "Gesetzliche Betreuung", "Schuldgefuehle", "Schweigepflicht", "Transparenz", ],
       },
       contentB1: {
         title: "Hat der Sturzschutz funktioniert?",
@@ -208,49 +208,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
         },
       },
     },
-
-    // Inline-Wissen: Angehoerigenkommunikation \u2014 Schweigepflicht, Empathie und Ehrlichkeit
-    {
-      stepId: "ce02-bauer-eval-01c-angehoerigen-kommunikation",
-      phase: 5,
-      stepType: "inlineWissen",
-      bloomLevel: 2,
-      kompetenzbereich: "V.1",
-      quellen: ["DNQP 2018 \u2014 Beziehungsgestaltung bei Demenz", "Paragraph 203 StGB", "Paragraph 1814 BGB"],
-      track: "basis",
-      modus: "entdecker",
-      lernziel: "ce02-bauer-eval-01c-angehoerigen-kommunikation",
-      tag: "pflege",
-      themaPrimaer: "pflegeprozess",
-      themenSekundaer: ["basale-stimulation"],
-      transition: "Rechtliches und emotionales Ruestzeug \u2014 jetzt kommt Ingrid.",
-      contentC1: {
-        title: "Angehoerigenkommunikation \u2014 Schweigepflicht, Empathie und Ehrlichkeit",
-        body: "",
-        glossarBegriffe: ["Empathie", "Angehoerigenkommunikation", "Schuldgefuehle", "Transparenz", "Schweigepflicht", "Gesetzliche Betreuung", "Ehrlichkeit", "Betreuung"],
-      },
-      contentB1: {
-        title: "Gespraech mit der Tochter \u2014 was darfst du sagen?",
-        body: "",
-        glossarBegriffe: ["Empathie", "Schuldgefuehle", "Ehrlichkeit", "Schweigepflicht", "Betreuung"],
-      },
-      inlineWissen: {
-        bausteinRef: "pflegeprozess-angehoerigenkommunikation",
-        storyAufhaenger: "Tochter Ingrid steht gleich vor dir. Sie ist aufgewuehlt. Bevor du sprichst brauchst du: Wissen ueber **Schweigepflicht**, Faehigkeit zur **Empathie**, und Mut zur **Ehrlichkeit**.",
-        storyAufhaengerB1: "Die Tochter kommt gleich. Bevor du sprichst: Was darfst du sagen?",
-        kerntext: "**Schweigepflicht** (Paragraph 203 StGB): Nicht jedem Auskunft geben. ABER: Ingrid ist **gesetzliche Betreuerin** (Paragraph 1814 BGB) \u2014 Auskunft zulaessig. Pruefe Akte.\n\n**Empathie** = Gefuehle wahrnehmen und spiegeln: \"Ich verstehe Ihre Aufregung.\" Nicht: \"Beruhigen Sie sich.\"\n\n**Schuldgefuehle** bei Angehoerigen von Demenz-Patienten: extrem haeufig. \"Haette ich ihn nicht ins Heim geben sollen?\" Die Pflege bewertet nicht \u2014 entlastet.\n\n**Transparenz** = ehrlich berichten ohne Schuldzuweisung.\n\n**Ehrlichkeit** = konkrete Massnahmen nennen, keine Floskeln.\n\n**Gesetzliche Betreuung** = vom Gericht bestellte Person fuer Entscheidungen bei Nicht-Einwilligungsfaehigkeit.",
-        kerntextB1: "**Schweigepflicht**: Nicht jedem alles sagen. ABER: Ingrid ist Betreuerin \u2014 ihr darfst du Auskunft geben.\n\n**Empathie** = Gefuehle verstehen: \"Ich verstehe dass Sie aufgewuehlt sind.\"\n\n**Schuldgefuehle**: Normal bei Angehoerigen.\n\n**Transparenz** = ehrlich sagen was passiert ist.\n\n**Ehrlichkeit** = konkrete Massnahmen, keine Floskeln.\n\n**Betreuung** = Ingrid darf mitentscheiden.",
-        faustregel: "Erst Akte pruefen (Betreuungsstatus). Dann: Empathie zuerst, ehrlich berichten, konkrete Massnahmen. Keine Floskeln.",
-        faustregelB1: "Erst Akte: Darf ich Auskunft geben? Dann: Gefuehle ernst nehmen, ehrlich sein, konkret sagen was passiert.",
-        spektrum: [],
-        karteikarte: {
-          vorderseite: "Ingrid fragt aufgewuehlt: Haette das verhindert werden koennen? Wie fuehrst du das Gespraech?",
-          rueckseite: "1) Schweigepflicht pruefen: Betreuerin = Auskunft zulaessig. 2) Empathie: Gefuehle aufgreifen. 3) Transparenz: sachlich berichten. 4) Ehrlichkeit: konkrete Massnahmen. 5) Schuldgefuehle entlasten.",
-        },
-      },
-    },
-
-    // Step 5.2 — Dialog: Angehörigen-Gespräch mit Ingrid
+// Step 5.2 — Dialog: Angehörigen-Gespräch mit Ingrid
     {
       stepId: "ce02-bauer-eval-02-angehoerigen-gespraech",
       phase: 5,
