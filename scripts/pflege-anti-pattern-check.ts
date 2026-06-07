@@ -30,6 +30,9 @@ interface AntiPattern {
   empfehlung: string;
   /** Wenn diese zweite Regex auch matched (im selben Treffer-Kontext), wird der Treffer ignoriert */
   ignoreIf?: RegExp;
+  /** Treffer in einer FALSCH-Antwort-Option (score: 0/1) überspringen — dort sind
+   *  gefährliche Aussagen gewollte Distraktoren mit korrigierendem Feedback, kein Fehler. */
+  skipInDistraktor?: boolean;
 }
 
 interface Match {
@@ -139,6 +142,32 @@ const ANTI_PATTERNS: AntiPattern[] = [
     // Ignoriere wenn der Satz innerhalb eines Patient-Zitats liegt (von "..." umschlossen)
     ignoreIf: /["„].*?(Nehmen\s+Sie|Sie\s+müssen).*?["""]/,
   },
+  {
+    id: "AP-GLUECK-VOR-ASSESSMENT",
+    severity: "HOCH",
+    regex:
+      /(Sie\s+haben\s+(ja\s+)?Glück\s+gehabt|nochmal\s+Glück\s+gehabt|ist\s+ja\s+(nochmal\s+)?(nichts|gut)\s+(passiert|gegangen)|halb\s+so\s+wild)/i,
+    beschreibung:
+      "'Glück gehabt / nichts passiert' VOR abgeschlossenem Assessment ist Fehlinformation — Verletzung (z.B. Fraktur, intrakranielle Blutung) noch nicht ausgeschlossen. Rechtlich/ethisch problematisch.",
+    empfehlung:
+      "Erst vollständig untersuchen (ABCDE, Schmerz, Beweglichkeit), DANN beruhigend sprechen — und nur was gesichert ist.",
+    skipInDistraktor: true,
+  },
+  {
+    id: "AP-BETTGITTER-BEIDSEITIG",
+    severity: "HOCH",
+    regex:
+      /(beide[ns]?\s+Bettgitter\s+(hoch|oben|rauf)|Bettgitter\s+beidseitig\s+(hoch|oben)|beide\s+Seitenteile?\s+(hoch|oben))/i,
+    beschreibung:
+      "Beidseitig hochgestellte Bettgitter ohne Einwilligung/richterliche Genehmigung gelten als freiheitsentziehende Maßnahme (Fixierung), § 1906a BGB.",
+    empfehlung:
+      "Einseitiges Bettgitter (Patient kann selbst raus) ODER richterlicher Beschluss + dokumentierte Einwilligung. Bettgitter ist KEINE Sturzprophylaxe.",
+    // Ignoriere Frage-/Diskussions-/Rechts-Kontexte (Lehrinhalt ÜBER die Fixierung,
+    // keine Empfehlung): "?", Paragraph-Verweise, kritische Rahmung, Kollegin-Szene.
+    ignoreIf:
+      /(\?|§\s*\d|BGB|richterlich|Betreuungsgericht|Einwilligung|Genehmigung|Anordnung|\bKEINE\b|keine\s+Fixierung|gilt\s+als\s+Fixierung|Lifestyle|Kollegin|möchte)/i,
+    skipInDistraktor: true,
+  },
 ];
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
@@ -191,10 +220,23 @@ function checkFile(filePath: string): Match[] {
         if (pattern.ignoreIf.test(context)) continue;
       }
 
+      // Distraktor-Check: gefährliche Aussage in einer score:0/1-Option ist
+      // ein gewollter Lehr-Distraktor (mit korrigierendem Feedback), kein Fehler.
+      if (pattern.skipInDistraktor) {
+        const optStart = Math.max(0, match.index - 300);
+        const optEnd = Math.min(content.length, match.index + 600);
+        if (/score:\s*[01]\b/.test(content.slice(optStart, optEnd))) continue;
+      }
+
       // Zeilennummer berechnen
       const beforeMatch = content.slice(0, match.index);
       const lineNumber = beforeMatch.split("\n").length;
       const lineText = lines[lineNumber - 1] ?? "";
+
+      // Code-Kommentare überspringen — dort wird das Anti-Pattern oft DOKUMENTIERT
+      // (z.B. "// Anti-Pattern 'ich hebe Sie hoch' muss bewusst werden"), nicht angewendet.
+      const trimmed = lineText.trimStart();
+      if (trimmed.startsWith("//") || trimmed.startsWith("*") || trimmed.startsWith("/*")) continue;
 
       matches.push({
         file: filePath.replace(process.cwd() + "/", ""),
