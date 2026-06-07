@@ -162,6 +162,9 @@
 **Wissensart:** Recht + Handlung
 **Bloom-Potential:** 4-5 (Bewerten, Entscheiden)
 **Primärquelle:** (BGB § 1906a; DNQP 2022; Bundesverfassungsgericht: Selbstbestimmung)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "freiheitsentziehende Maßnahmen benötigen grundsätzlich einen richterlichen Beschluss durch das Betreuungsgericht"
 **Praxisfehler:** Fixierung aus Angst vor Haftung angewandt — führt umgekehrt zu Haftungsrisiko.
 
 **Misconceptions:**
