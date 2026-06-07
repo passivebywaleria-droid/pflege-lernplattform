@@ -34,17 +34,31 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
         "Hospital ward early morning, nurse reading patient notes at a computer station outside room 8, calm professional atmosphere, soft warm light, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Übergabe im System — Frau Schmidt, Zimmer 8",
-        body: "08:30 Uhr, Flur der Inneren Station.\n\nDu liest die Pflegeübergabe in SBAR-Struktur: **S** — Situation: Frau Schmidt (68 J., weiblich) ist seit 3 Tagen stationär wegen entgleistem Blutzucker (BZ 398 mg/dl bei Einlieferung). **B** — Hintergrund: Diabetes Typ 2 (seit 8 Jahren, bisher diätetisch, heute Metformin 500 mg 2× tgl. neu angesetzt), Adipositas Grad II (BMI 38), diabetisches Fußsyndrom Wagner Grad 1 (Wagner-Armstrong 1A), Belastungsinkontinenz seit 2 Jahren, Albumin 31 g/l (Norm: 35–52 g/l), NRS-2002-Score 1 + GLIM-Diagnose Mangelernährung Stadium 1. **A** — Aktuelles: ansprechbar, wach, kooperativ, klagt über Schwäche, BZ heute nüchtern 187 mg/dl. **R** — Reaktion: Morgenpflege, BZ messen, Ernährungsgespräch vorbereiten. SBAR ist die Standard-Struktur für klinische Übergaben — vollständig und klar.",
+        body: "08:30 Uhr, Flur der Inneren Station.\n\n**SBAR** = strukturierte Übergabe-Methode (Situation, Background, Assessment, Recommendation), Standard in der klinischen Kommunikation.\n\nDu liest die Pflegeübergabe in SBAR-Struktur:\n\n**S — Situation:** Frau Schmidt (68 J., weiblich) ist seit 3 Tagen stationär wegen entgleistem Blutzucker (BZ 398 mg/dl bei Einlieferung).\n\n**B — Background:** Diabetes Typ 2 (seit 8 Jahren, bisher diätetisch, heute Metformin 500 mg 2× tgl. neu angesetzt). **Adipositas** = krankhaftes Übergewicht ab BMI 30, hier Grad II (BMI 38). **Diabetisches Fußsyndrom** = krankhafte Veränderung der Füße bei Diabetes (Risse, Geschwüre, Nervenstörung), hier Wagner **Grad 1** = oberflächliche Hautläsion ohne Infektion. **Belastungsinkontinenz** = ungewollter Urinverlust bei Druckanstieg im Bauchraum (Husten, Niesen, Heben), seit 2 Jahren. Albumin 31 g/l (Norm: 35–52 g/l). **NRS** (= Nutritional Risk Screening) ist das Standard-Screening-Werkzeug für Ernährungsrisiko, hier Variante **NRS-2002** mit Score 1. **GLIM** = Global Leadership Initiative on Malnutrition — Diagnose-Kriterien für **Mangelernährung** (= unzureichende oder einseitige Nährstoffversorgung). GLIM-Diagnose Mangelernährung Stadium 1.\n\n**A — Assessment:** **ansprechbar** = wach und reagiert auf Anrede, kooperativ, klagt über Schwäche, BZ heute nüchtern 187 mg/dl.\n\n**R — Recommendation:** Morgenpflege, BZ messen, **Ernährung** (= alles was Frau Schmidt isst und trinkt, Qualität und Menge) im Gespräch vorbereiten. **Inkontinenz** = ungewollter Verlust von Urin oder Stuhl — hier in Form der Belastungsinkontinenz.",
         fallbezug:
           "Frau Schmidt (68 J., Adipositas Grad II, Diabetes Typ 2) ist seit 3 Tagen stationär. Du bist Pflegeschülerin im 2. Ausbildungsdrittel, Frühdienst.",
-        glossarBegriffe: ["NRS 2002", "Albumin", "Wagner-Armstrong-Klassifikation"],
+        glossarBegriffe: [
+          "NRS 2002", "NRS-2002", "NRS", "NRS (= Numeric Rating Scale)",
+          "Albumin", "Wagner-Armstrong-Klassifikation",
+          "SBAR", "Adipositas", "Diabetisches Fußsyndrom", "Grad 1",
+          "Belastungsinkontinenz", "Inkontinenz", "Mangelernährung", "GLIM",
+          "Ernährung", "ansprechbar",
+          "Übergabe", "Assessment", "Haut", "Risiko", "Husten", "BMI", "Kommunikation",
+        ],
       },
       contentB1: {
         title: "Die Übergabe lesen",
-        body: "08:30 Uhr, Flur der Inneren Station.\n\nDu liest die Pflegeübergabe (SBAR-Struktur): **S** = Situation: Frau Schmidt ist seit 3 Tagen hier. Der Blutzucker (= BZ) war bei der Einlieferung sehr hoch: 398 mg/dl. Jetzt nüchtern: 187 mg/dl. **B** = Hintergrund: Sie hat Diabetes Typ 2, Adipositas Grad II (BMI 38). Sie hat ein Fußsyndrom (Wagner Grad 1 = erste Risse an der Haut, keine Wunde). Sie hat Belastungs-Inkontinenz (= sie verliert manchmal Urin bei Bewegung). Albumin (= Eiweiß im Blut) ist zu niedrig: 31 g/l. **A** = Aktuelles: Sie ist wach und ansprechbar. Sie fühlt sich schwach. **R** = Reaktion: Du machst die Morgenpflege. Dann misst du den Blutzucker. Dann sprichst du mit ihr über Ernährung.",
+        body: "08:30 Uhr, Flur der Inneren Station.\n\n**SBAR** = die Methode wie eine Übergabe aufgebaut ist (4 Punkte: Situation, Hintergrund, Beurteilung, Empfehlung).\n\nDu liest die Pflegeübergabe in SBAR-Struktur:\n\n**S = Situation:** Frau Schmidt ist seit 3 Tagen hier. Der Blutzucker (= BZ) war bei der Einlieferung sehr hoch: 398 mg/dl. Jetzt nüchtern: 187 mg/dl.\n\n**B = Hintergrund:** Sie hat Diabetes Typ 2. **Adipositas** = sehr starkes Übergewicht (BMI ab 30), hier Grad II (BMI 38). Sie hat ein **Diabetisches Fußsyndrom** = krankhafte Haut und Nägel an den Füßen bei Diabetes (Wagner **Grad 1** = erste Risse an der Haut, noch keine offene Wunde). **Belastungsinkontinenz** = sie verliert manchmal Urin beim Husten, Niesen oder Heben. Albumin (= Eiweiß im Blut) ist zu niedrig: 31 g/l. **NRS** = Nutritional Risk Screening, ein Test-Werkzeug für Ernährungs-Risiko. **NRS-2002** ist die Variante davon. Score = 1. **GLIM** = ein anderes Werkzeug, das **Mangelernährung** (= zu wenig oder einseitige Nahrung) erkennt — auch bei Übergewicht.\n\n**A = Aktuelles:** Sie ist wach und **ansprechbar** (= sie reagiert wenn man sie anspricht). Sie fühlt sich schwach.\n\n**R = Reaktion:** Du machst die Morgenpflege. Dann misst du den Blutzucker. Dann sprichst du mit ihr über **Ernährung** (= was sie isst und trinkt). **Inkontinenz** = Urin- oder Stuhlverlust — hier nur Urin.",
         fallbezug:
           "Frau Schmidt ist 68 Jahre alt. Sie ist seit 3 Tagen im Krankenhaus. Du bist Schülerin im Frühdienst.",
-        glossarBegriffe: ["NRS 2002", "Albumin", "Wagner-Armstrong-Klassifikation"],
+        glossarBegriffe: [
+          "NRS 2002", "NRS-2002", "NRS", "NRS (= Numeric Rating Scale)",
+          "Albumin", "Wagner-Armstrong-Klassifikation",
+          "SBAR", "Adipositas", "Diabetisches Fußsyndrom", "Grad 1",
+          "Belastungsinkontinenz", "Inkontinenz", "Mangelernährung", "GLIM",
+          "Ernährung", "ansprechbar",
+          "Übergabe", "Assessment", "Haut", "Risiko", "Husten", "BMI", "Kommunikation",
+        ],
       },
     },
 
@@ -72,12 +86,20 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
       contentC1: {
         title: "NRS 2002 — das Screening-Werkzeug aus der Übergabe",
         body: "",
-        glossarBegriffe: ["NRS 2002", "Ernährungsscreening", "ESPEN"],
+        glossarBegriffe: [
+          "NRS 2002", "Ernährungsscreening", "ESPEN",
+          "NRS", "NRS (= Numeric Rating Scale)", "NRS-2002",
+          "Ernährung", "Adipositas",
+        ],
       },
       contentB1: {
         title: "Was ist NRS 2002?",
         body: "",
-        glossarBegriffe: ["NRS 2002", "Ernährungsscreening"],
+        glossarBegriffe: [
+          "NRS 2002", "Ernährungsscreening",
+          "NRS", "NRS (= Numeric Rating Scale)", "NRS-2002",
+          "Ernährung", "Adipositas",
+        ],
       },
       inlineWissen: {
         bausteinRef: "ernährungsassessment-nrs-2002",
@@ -150,7 +172,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Wie sicher fühlst du dich?",
-        body: "Bevor du das Zimmer betrittst: Mach einen Moment Pause. Das Thema Übergewicht und Ernährung ist heikel — viele Pflegende sind unsicher, wie sie es ansprechen, ohne zu verletzen. Es gibt kein richtig oder falsch — nur ehrliche Selbsteinschätzung. Wir spiegeln diese Antwort am Ende der Situation.",
+        body: "Bevor du das Zimmer betrittst: Mach einen Moment Pause. Das Thema Übergewicht und Ernährung ist heikel — viele Pflegende sind unsicher, wie sie es ansprechen, ohne zu verletzen. Es gibt kein richtig oder falsch — nur ehrliche Selbsteinschätzung. Am Ende der Situation kommt dieselbe Frage noch einmal — du wirst dann sehen, ob sich dein Gefühl verändert hat.",
         glossarBegriffe: [],
       },
       contentB1: {
@@ -406,28 +428,28 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_INFORMIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Was weißt du — was weißt du noch nicht?",
-        body: "Sortieraufgabe: Was weißt du jetzt schon über Frau Schmidt — und was weißt du noch nicht? Sortiere die Karten in zwei Gruppen: Bekannt (aus der Übergabe) vs. Noch offen (muss im Assessment erhoben werden).",
+        body: "Sortieraufgabe: Welche Informationen liegen dir bereits vor — und welche musst du im Assessment noch erheben? Ziehe jede Karte in die passende Gruppe.",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Sortier-Aufgabe: Was weißt du schon?",
-        body: "Was weißt du schon über Frau Schmidt? Was weißt du noch nicht? Sortiere die Karten.",
+        body: "Welche Informationen hast du schon? Welche fehlen noch? Sortiere die Karten in die zwei Gruppen.",
         glossarBegriffe: [],
       },
       question: {
         fragetext:
-          "Sortiere: Was ist aus der Übergabe bekannt? Was muss im Assessment noch erhoben werden?",
+          "Sortiere die Karten in die zwei Gruppen: Information liegt vor (aus der SBAR-Übergabe) vs. Information fehlt noch (muss im Assessment erhoben werden).",
         sortItems: [
-          "Bekannt: BMI 38, Adipositas Grad II",
-          "Bekannt: Diagnosen (Diabetes Typ 2, Fußsyndrom Kategorie 1, Belastungsinkontinenz)",
-          "Bekannt: Aktuelle BZ-Werte (nüchtern 187 mg/dl, postprandial 298 mg/dl)",
-          "Bekannt: Metformin 500 mg 2× tgl. neu angesetzt heute",
-          "Bekannt: Albumin 31 g/l, NRS-2002-Score 1, GLIM-Diagnose Mangelernährung Stadium 1",
-          "Noch offen: Ernährungsgewohnheiten zuhause (was isst sie täglich?)",
-          "Noch offen: Bewegungsbiografie und Mobilität im Alltag",
-          "Noch offen: Wie geht sie mit der Inkontinenz zuhause um?",
-          "Noch offen: Was weiß Frau Schmidt über Diabetes und Ernährung?",
-          "Noch offen: Motivation und Bereitschaft zur Ernährungsänderung",
+          "BMI 38, Adipositas Grad II",
+          "Diagnosen (Diabetes Typ 2, Fußsyndrom Kategorie 1, Belastungsinkontinenz)",
+          "Aktuelle BZ-Werte (nüchtern 187 mg/dl, postprandial 298 mg/dl)",
+          "Metformin 500 mg 2× tgl. neu angesetzt heute",
+          "Albumin 31 g/l, NRS-2002-Score 1, GLIM-Diagnose Mangelernährung Stadium 1",
+          "Ernährungsgewohnheiten zuhause (was isst sie täglich?)",
+          "Bewegungsbiografie und Mobilität im Alltag",
+          "Wie geht sie mit der Inkontinenz zuhause um?",
+          "Was weiß Frau Schmidt über Diabetes und Ernährung?",
+          "Motivation und Bereitschaft zur Ernährungsänderung",
         ],
       },
     },

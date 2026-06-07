@@ -38,13 +38,13 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
       transition: "Jetzt weisst du wie ein Dekubitus entsteht. Schau dir an, was bei Frau Yilmaz passiert ist.",
       contentC1: {
         title: "Wie entsteht ein Dekubitus?",
-        body: "",
-        glossarBegriffe: ["Ischämie", "Scherkräfte", "Reperfusionsschaden", "Gewebehypoxie"],
+        body: "**Dekubitus** = lokale Druckwunde der Haut. Entsteht durch Druck × Zeit, verstärkt durch Scherkräfte und Feuchtigkeit (NPUAP/EPUAP/PPPIA 2019). Drei Mechanismen wirken zusammen — siehe Detail-Erklärung unten.",
+        glossarBegriffe: ["Dekubitus", "Ischämie", "Scherkräfte", "Reperfusionsschaden", "Gewebehypoxie", "Haut", "Druckwunde"],
       },
       contentB1: {
         title: "Warum entsteht ein Dekubitus?",
-        body: "",
-        glossarBegriffe: ["Ischämie", "Scherkräfte"],
+        body: "**Dekubitus** = Wunde durch zu langen Druck auf die Haut. Wenn das Gewebe gedrückt wird, bekommt es kein Blut mehr (Ischämie). Drei Dinge wirken zusammen: Druck, Scherkräfte, Zeit.",
+        glossarBegriffe: ["Dekubitus", "Ischämie", "Scherkräfte", "Haut", "Druckwunde"],
       },
       inlineWissen: {
         bausteinRef: "dekubitus-prophylaxe-entstehung",
@@ -557,13 +557,13 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
       transition: "Du kennst das Modell. Schreib jetzt deine Analyse.",
       contentC1: {
         title: "Donabedian und Risikofaktoren \u2014 Systemanalyse statt Schuld",
-        body: "",
-        glossarBegriffe: ["Donabedian", "Strukturqualität", "Prozessqualität", "Endogene Faktoren", "Exogene Faktoren", "Organisationsfaktoren"],
+        body: "**Donabedian-Modell** = Qualitäts-Konzept aus 3 Ebenen: Struktur, Prozess, Ergebnis. Drei Begriffe brauchst du gleich:\n\n• **Patientenautonomie** = Recht der Patientin, über ihren Körper und ihre Pflege selbst zu entscheiden — auch wenn die Entscheidung pflegerisch ungünstig ist.\n\n• **Wundheilung** = biologischer Prozess der Geweberegeneration nach einer Verletzung; verläuft in 4 Phasen.\n\n• **Weichlagerung** = Lagerung auf druckverteilenden Matratzen oder Auflagen, um den Auflagedruck auf Knochen-Vorsprünge zu senken.",
+        glossarBegriffe: ["Donabedian", "Strukturqualität", "Prozessqualität", "Endogene Faktoren", "Exogene Faktoren", "Organisationsfaktoren", "Patientenautonomie", "Wundheilung", "Weichlagerung", "Pflege", "Lagerung"],
       },
       contentB1: {
         title: "Warum ist die Wunde entstanden? System statt Schuld",
-        body: "",
-        glossarBegriffe: ["Donabedian", "Endogene Faktoren", "Exogene Faktoren", "Organisationsfaktoren"],
+        body: "**Donabedian-Modell** = Qualität in 3 Teilen: Struktur, Prozess, Ergebnis. Drei wichtige Wörter:\n\n• **Patientenautonomie** = die Patientin darf selbst entscheiden — auch wenn es nicht ideal ist.\n\n• **Wundheilung** = wie eine Wunde heilt. Es gibt 4 Phasen.\n\n• **Weichlagerung** = Lagerung auf einer weichen Matratze, damit weniger Druck auf den Knochen kommt.",
+        glossarBegriffe: ["Donabedian", "Endogene Faktoren", "Exogene Faktoren", "Organisationsfaktoren", "Patientenautonomie", "Wundheilung", "Weichlagerung", "Pflege", "Lagerung"],
       },
       inlineWissen: {
         bausteinRef: "dekubitus-prophylaxe-donabedian",
@@ -693,12 +693,12 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Fingertest — jetzt nicht mehr anwendbar",
         body: "Der Fingertest funktioniert nur bei intakter Haut (Kategorie I). Bei Frau Yilmaz ist die Haut offen (Kategorie II) — der Fingertest ist hier nicht mehr sinnvoll. Zur Erinnerung: Beim Fingertest drückt man 3 Sekunden auf die gerötete Stelle. Verschwindet die Rötung nicht (= nicht-wegdrückbar) → Kategorie I. Bei offener Haut hat der Test keine Bedeutung mehr.",
-        glossarBegriffe: ["Fingertest", "Nicht-wegdrückbare Rötung"],
+        glossarBegriffe: ["Fingertest", "Nicht-wegdrückbare Rötung", "Haut", "Rötung"],
       },
       contentB1: {
         title: "Fingertest — warum jetzt nicht?",
         body: "Den Fingertest machst du, wenn die Haut noch ganz ist. Du drückst 3 Sekunden drauf. Geht die Rötung nicht weg → Kategorie 1. Bei Frau Yilmaz geht das nicht — die Haut ist schon offen. Der Test macht keinen Sinn mehr.",
-        glossarBegriffe: ["Fingertest"],
+        glossarBegriffe: ["Fingertest", "Haut", "Rötung"],
       },
     },
 
@@ -765,7 +765,12 @@ export const CE02_SIT_YILMAZ_SPIRALE2_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Vertiefung: Deep Tissue Injury (DTI)",
         body: "Warum eine Kategorie-II-Wunde manchmal nur die sichtbare Spitze einer tieferen Schädigung ist: Scherkräfte-Mechanismus — die Gewebeschichten verschieben sich in entgegengesetzte Richtungen (z.B. beim Hochrutschen im Bett). Tiefes Gewebe (Muskel, Fettgewebe nahe Knochen) wird stärker belastet als die Hautoberfläche. Die Haut kann noch intakt sein, während darunter Gewebe bereits nekrotisch wird — das ergibt das Bild eines 'Eisbergs'. Verbindung zu Frau Yilmaz: Scherkräfte beim Rollator-Gehen (Becken verschiebt sich relativ zur Haut). Quelle: (NPUAP/EPUAP/PPPIA 2019)",
-        glossarBegriffe: ["Deep Tissue Injury", "Scherkräfte", "Nekrose"],
+        glossarBegriffe: ["Deep Tissue Injury", "Scherkräfte", "Nekrose", "Haut", "Ursache"],
+      },
+      contentB1: {
+        title: "Vertiefung: Tiefe Gewebeschädigung (DTI)",
+        body: "Manchmal sieht die Haut oben noch fast gut aus — aber darunter ist das Gewebe schon kaputt. Das nennt man Deep Tissue Injury (= tiefe Gewebeschädigung). Es ist wie ein Eisberg: oben klein, unten groß. Ursache: Beim Rutschen im Bett werden die Schichten im Gewebe gegeneinander geschoben (Scherkräfte). Bei Frau Yilmaz: Scherkräfte beim Gehen mit Rollator.",
+        glossarBegriffe: ["Deep Tissue Injury", "Scherkräfte", "Haut", "Ursache"],
       },
     },
   ],

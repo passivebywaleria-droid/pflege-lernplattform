@@ -94,12 +94,12 @@ export const CE02_SIT_EMILIA_SAEUGLING_EVALUIEREN: SituationsPhase = {
       contentC1: {
         title: "Lauras Satz — und was er bedeutet",
         body: "Als du ins Zimmer kommst, wacht Laura kurz auf und sagt:\n\n> *\"Danke. Ich glaube ich hatte nicht gewusst, dass die Nase der Grund ist. Das klingt jetzt komisch, aber das beruhigt mich irgendwie.\"*\n\nLauras Satz zeigt, was Pflegeberatung leisten kann: Wenn Menschen den Grund verstehen, fühlen sie sich weniger ausgeliefert. Das ist mehr als Information — es ist Handlungskompetenz zurückgeben. Das gilt für alle Pflegesituationen: Erklären warum ist oft wichtiger als erklären was. Laura hat heute nicht nur eine kranke Tochter erlebt — sie hat verstanden, was passiert. Das ist der Unterschied.",
-        glossarBegriffe: [],
+        glossarBegriffe: ["Pflege", "Tochter"],
       },
       contentB1: {
         title: "Lauras Satz",
         body: "Als du reinkommst, sagt Laura:\n\n> *\"Danke. Ich glaube ich hatte nicht gewusst, dass die Nase der Grund ist. Das klingt jetzt komisch, aber das beruhigt mich irgendwie.\"*\n\nWas bedeutet das? Laura hat heute nicht nur eine kranke Tochter erlebt. Sie hat verstanden warum es so ist. Und das macht den Unterschied. Wenn Mütter den Grund kennen, fühlen sie sich weniger hilflos. Das ist deine Aufgabe als Pflege: nicht nur machen — sondern auch erklären.",
-        glossarBegriffe: [],
+        glossarBegriffe: ["Pflege", "Tochter"],
       },
     },
 

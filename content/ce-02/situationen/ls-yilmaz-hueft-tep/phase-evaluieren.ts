@@ -130,7 +130,10 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_EVALUIEREN: SituationsPhase = {
       stepType: "freetext",
       bloomLevel: 6,
       kompetenzbereich: "V.1",
-      quellen: [],
+      quellen: [
+        "DNQP (2022): Expertenstandard Sturzprophylaxe in der Pflege, 2. Aktualisierung",
+        "PflAPrV Anlage 1, Kompetenzbereich II.1 — Reflexion und Begründung pflegerischen Handelns",
+      ],
       track: "basis",
       modus: "schreibtisch",
       lernziel: "ce02-yilmaz-eval-selbstreflexion",
@@ -166,7 +169,10 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_EVALUIEREN: SituationsPhase = {
       stepType: "selfrating",
       bloomLevel: 4,
       kompetenzbereich: "I.1",
-      quellen: [],
+      quellen: [
+        "DNQP (2022): Expertenstandard Sturzprophylaxe in der Pflege, 2. Aktualisierung",
+        "PflAPrV Anlage 1, Kompetenzbereich II.1 — Reflexion und Begründung pflegerischen Handelns",
+      ],
       track: "vertiefung",
       modus: "checkpoint",
       lernziel: "ce02-yilmaz-eval-konfidenz-nachher",

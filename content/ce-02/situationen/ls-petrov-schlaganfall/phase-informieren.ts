@@ -37,7 +37,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
         body: "Du hältst die Akte in der Hand. Frau Wegner hat dir eine SBAR-Kurzübergabe gegeben.\n\n**S** — Situation: Herr Petrov, 58, ischämischer Apoplex Tag 5. Gestern von Stroke Unit verlegt.\n**B** — Background: Hemiparese rechts (Arm funktionell komplett ausgefallen, Bein partiell). Dysphagie Grad 2 nach GUSS: breiige Konsistenz sicher, Dünnflüssiges aspirationsgefährdet. Aphasie: versteht alles, spricht kaum. BVK seit Tag 1.\n**A** — Assessment: Stabile Vitalzeichen, keine Dekubituszeichen. Orale Ernährung mit angedickter Flüssigkeit (IDDSI Level 2) + Kostform B möglich. Pneumonieprophylaxe aktiv.\n**R** — Recommendation: Körperpflege nach Bobath, Mobilisation (Bettkante anstreben), Frühstück anreichen, Kathetercheck, Vitalzeichen.\n\nSBAR macht Übergaben vollständig und klar — jede Pflegekraft weltweit liest dasselbe heraus.",
         fallbezug:
           "Herr Petrov, 58, Ischämischer Apoplex Tag 5, Hemiparese rechts, Dysphagie, Aphasie, BVK. Du übernimmst ihn für die Frühschicht.",
-        glossarBegriffe: ["SBAR", "Apoplex", "Hemiparese", "Dysphagie", "BVK"],
+        glossarBegriffe: ["SBAR", "Apoplex", "Hemiparese", "Dysphagie", "BVK", "Assessment", "Pflege", "Vitalzeichen", "Flüssigkeit", "Mobilisation", "Ernährung", "Konsistenz", "Körperpflege", "Katheter", "GUSS", "Aphasie", "Anreichen"],
       },
       contentB1: {
         title: "Die Akte lesen",
@@ -71,12 +71,12 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
       contentC1: {
         title: "Blasenverweilkatheter (BVK) — warum jeder Tag zählt",
         body: "",
-        glossarBegriffe: ["BVK", "CAUTI", "Katheter", "KRINKO"],
+        glossarBegriffe: ["BVK", "CAUTI", "Katheter", "KRINKO", "Pflegeprozess"],
       },
       contentB1: {
         title: "Was ist ein Blasen-Katheter?",
         body: "",
-        glossarBegriffe: ["BVK", "Katheter"],
+        glossarBegriffe: ["BVK", "Katheter", "Pflegeprozess"],
       },
       inlineWissen: {
         bausteinRef: "harnausscheidung-bvk-grundlagen",
@@ -441,9 +441,9 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
                   "Herr Petrov schaut kurz. Dann weg.",
                 score: 0,
                 feedback:
-                  "Unehrlich. Herr Petrov ist 58, Ingenieur — er merkt wenn jemand schönredet. Er versteht jeden Satz, jede leere Floskel. Falsche Versprechen machen die Kommunikation kaputt. Lieber ehrlich mit Perspektive als optimistisch ohne Basis.",
+                  "Du hast gut erkannt, dass Hoffnung wichtig ist — der Satz selbst ist aber problematisch. Herr Petrov ist 58, Ingenieur — er merkt wenn jemand schönredet. Er versteht jeden Satz, jede leere Floskel. Falsche Versprechen machen die Kommunikation kaputt, weil Vertrauen verloren geht und er sich nicht mehr ernst genommen fühlt. Stattdessen besser: ehrlich mit Perspektive bleiben, statt optimistisch ohne Basis. Beim nächsten Mal: Sage was du tun kannst (Plan für heute) und überlasse die Prognose dem ärztlichen Team.",
                 feedbackB1:
-                  "Nicht gut. Das ist nicht ehrlich. Herr Petrov versteht alles. Er merkt, wenn jemand nicht die Wahrheit sagt. Sage die Wahrheit — mit Hoffnung.",
+                  "Du hast ihm Mut machen wollen — guter Ansatz. Allerdings ist das nicht ehrlich, weil Herr Petrov alles versteht und merkt, wenn jemand nicht die Wahrheit sagt — dadurch verliert er Vertrauen. Stattdessen: Sag die Wahrheit — und gib gleichzeitig Hoffnung. Zum Beispiel: \"Ich weiß es nicht, aber heute machen wir...\".",
               },
               {
                 text: "\"Das können nur die Ärzte sagen. Fragen Sie die beim Morgenvisite.\"",
@@ -455,9 +455,9 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_INFORMIEREN: SituationsPhase = {
                   "Herr Petrov nickt kurz. Kein Augenkontakt mehr.",
                 score: 1,
                 feedback:
-                  "Nicht falsch — Ärzten die Prognose überlassen ist richtig. Aber du hast die Möglichkeit verpasst, ihm zu sagen was heute passiert. Herr Petrov bleibt ohne Orientierung für den Morgen. Besseres Sandwich: Ärzte für die Prognose + du für den heutigen Plan.",
+                  "Du hast richtig erkannt, dass die Prognose ärztliche Aufgabe ist — das stimmt. Allerdings hast du die Möglichkeit verpasst, ihm zu sagen was heute passiert. Herr Petrov bleibt deshalb ohne Orientierung für den Morgen. Stattdessen besser ein Sandwich: Ärzte für die Prognose + du für den heutigen Plan. Beim nächsten Mal: Verweise auf den Arzt UND beschreibe konkret, was du heute mit ihm tust.",
                 feedbackB1:
-                  "Nicht komplett falsch — Ärzte entscheiden über die Prognose. Aber: Sage auch was heute passiert. Herr Petrov braucht Orientierung.",
+                  "Du hast nicht ganz unrecht — Ärzte entscheiden über die Prognose, das stimmt. Aber: Sage auch was heute passiert, weil Herr Petrov sonst keine Orientierung hat. Stattdessen sage: \"Die Ärzte sagen Ihnen die Prognose. Heute machen wir mit Ihnen Folgendes...\".",
               },
             ],
           },

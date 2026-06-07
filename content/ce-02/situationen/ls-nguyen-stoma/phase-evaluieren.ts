@@ -29,13 +29,13 @@ export const CE02_SIT_NGUYEN_STOMA_EVALUIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Evaluierung: Was hat sich verändert — was bleibt offen?",
-        body: "Sortiere die Ereignisse und Beobachtungen des Morgens in vier Kategorien. Bloom 4 — Analysieren und Bewerten.",
-        glossarBegriffe: ["Evaluation", "Verlauf"],
+        body: "**Beinübungen** = aktive oder unterstützte Bewegungen der Beine im Bett (Fußkreisen, Fußheben, Zehenspitzen-Hacken-Wechsel) zur Aktivierung der Bein-Muskelpumpe und damit zur Thromboseprophylaxe.\n\nSortiere die Ereignisse und Beobachtungen des Morgens in vier Kategorien. Bloom 4 — Analysieren und Bewerten.",
+        glossarBegriffe: ["Evaluation", "Verlauf", "Beinübungen"],
       },
       contentB1: {
         title: "Was hat sich heute verändert?",
-        body: "Sortiere die Ereignisse des Morgens: Was ist besser? Was ist gleich geblieben? Was ist noch offen?",
-        glossarBegriffe: [],
+        body: "**Beinübungen** = Bewegungen der Beine im Bett (z.B. Fußkreisen). Sie verhindern Blutgerinnsel in den Beinen.\n\nSortiere die Ereignisse des Morgens: Was ist besser? Was ist gleich geblieben? Was ist noch offen?",
+        glossarBegriffe: ["Beinübungen"],
       },
       question: {
         fragetext:
@@ -135,14 +135,14 @@ export const CE02_SIT_NGUYEN_STOMA_EVALUIEREN: SituationsPhase = {
         body: "Nach dem Nachmittag — Herr Nguyen, langsam, sucht nach Worten:\n\n> **'Danke. Das... war nicht so schlimm. Wie ich dachte.'**\n\nHerr Nguyen hat nicht gesagt: 'Es ist mir jetzt egal.' Er hat gesagt: 'Nicht so schlimm wie ich dachte.' Das ist der erste Schritt. Körperbild-Akzeptanz nach Stoma-Anlage ist ein Prozess, der Wochen bis Monate dauert. Pflege setzt die Grundlage durch Würde, Transparenz und Geduld — nicht durch falschen Optimismus. Dieser Satz ist kein Endpunkt — er ist ein Anfang.",
         fallbezug:
           "Patientenzitat Z6. Dieser Satz ist die fachliche und menschliche Evaluation des Morgens.",
-        glossarBegriffe: ["Körperbild-Akzeptanz", "Würde"],
+        glossarBegriffe: ["Körperbild-Akzeptanz", "Würde", "Evaluation", "Pflege", "Stoma", "Transparenz"],
       },
       contentB1: {
         title: "Was Herr Nguyen sagt",
         body: "Nach dem Nachmittag sagt Herr Nguyen langsam:\n\n> **'Danke. Das... war nicht so schlimm. Wie ich dachte.'**\n\nHerr Nguyen sagt nicht: 'Es ist mir egal.' Er sagt: 'Nicht so schlimm wie ich dachte.' Das ist der erste Schritt. Das Körperbild verändert sich langsam — Wochen bis Monate. Pflege macht das durch Würde und Geduld möglich.",
         fallbezug:
           "Patientenzitat Z6. Ein kleiner Satz — aber er bedeutet viel.",
-        glossarBegriffe: ["Körperbild", "Würde"],
+        glossarBegriffe: ["Körperbild", "Würde", "Pflege", "Stoma"],
       },
     },
 
@@ -153,7 +153,10 @@ export const CE02_SIT_NGUYEN_STOMA_EVALUIEREN: SituationsPhase = {
       stepType: "freetext",
       bloomLevel: 5,
       kompetenzbereich: "III.2",
-      quellen: [],
+      quellen: [
+        "PflAPrV Anlage 1, Kompetenzbereich II.1 — Reflexion und Begründung pflegerischen Handelns",
+        "I Care Pflege (Thieme): Pflegeprozess und Pflegeplanung",
+      ],
       track: "basis",
       modus: "schreibtisch",
       lernziel: "ce02-nguyen-eval-reflexion",
@@ -204,12 +207,12 @@ export const CE02_SIT_NGUYEN_STOMA_EVALUIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Thromboseprophylaxe — Vollständigkeits-Check",
-        body: "Evaluiere: Hat heute alles stattgefunden, was zur Thromboseprophylaxe gehört?",
-        glossarBegriffe: ["Thromboseprophylaxe", "Beinübungen", "Heparin"],
+        body: "**Thrombose-Schutz** = umgangssprachlich für Thromboseprophylaxe = alle Maßnahmen, die das Entstehen von Blutgerinnseln verhindern (Heparin, Kompression, Mobilisation, Beinübungen).\n\nEvaluiere: Hat heute alles stattgefunden, was zur Thromboseprophylaxe gehört?",
+        glossarBegriffe: ["Thromboseprophylaxe", "Beinübungen", "Heparin", "Thrombose-Schutz"],
       },
       contentB1: {
         title: "Thrombose-Schutz — was ist passiert?",
-        body: "Was wurde heute für den Thrombose-Schutz getan? Und was fehlt noch?",
+        body: "**Thrombose-Schutz** = alle Maßnahmen gegen Blutgerinnsel (Heparin-Spritze, Bewegung, Strümpfe).\n\nWas wurde heute für den Thrombose-Schutz getan? Und was fehlt noch?",
         glossarBegriffe: ["Thrombose-Schutz", "Heparin", "Beinübungen"],
       },
       question: {
@@ -264,12 +267,12 @@ export const CE02_SIT_NGUYEN_STOMA_EVALUIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Dekubitus-Risiko heute vs. gestern — deine Einschätzung",
-        body: "Herr Nguyen wurde heute Morgen erstmals an der Bettkante mobilisiert. Die Ernährungsberaterin ist noch nicht da. Wie schätzt du sein Dekubitus-Risiko heute im Vergleich zu gestern ein?",
-        glossarBegriffe: ["Braden-Skala", "Dekubitusrisiko"],
+        body: "**Dekubitus-Risiko** = das Risiko, ein Druckgeschwür (Dekubitus) zu entwickeln. Wird mit Assessment-Instrumenten wie der Braden-Skala quantifiziert.\n\nHerr Nguyen wurde heute Morgen erstmals an der Bettkante mobilisiert. Die Ernährungsberaterin ist noch nicht da. Wie schätzt du sein Dekubitus-Risiko heute im Vergleich zu gestern ein?",
+        glossarBegriffe: ["Braden-Skala", "Dekubitusrisiko", "Dekubitus-Risiko"],
       },
       contentB1: {
         title: "Ist das Dekubitus-Risiko heute besser oder schlechter?",
-        body: "Heute wurde Herr Nguyen kurz mobilisiert. Die Ernährungsberaterin ist noch nicht da. Ist das Risiko für ein Druckgeschwür heute besser, gleich oder schlechter als gestern?",
+        body: "**Dekubitus-Risiko** = das Risiko, ein Druckgeschwür zu bekommen. Wird mit der Braden-Skala gemessen.\n\nHeute wurde Herr Nguyen kurz mobilisiert. Die Ernährungsberaterin ist noch nicht da. Ist das Risiko für ein Druckgeschwür heute besser, gleich oder schlechter als gestern?",
         glossarBegriffe: ["Dekubitus-Risiko"],
       },
       question: {

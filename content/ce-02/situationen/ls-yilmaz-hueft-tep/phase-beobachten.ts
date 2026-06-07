@@ -14,6 +14,64 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_BEOBACHTEN: SituationsPhase = {
   kontextB1:
     "Du sitzt neben Frau Yilmaz. Sie liegt im Bett. Das Kopfteil ist auf 30° hochgestellt. Mustafa schaut zu. Frau Yilmaz ist ein bisschen ruhiger. Jetzt schaust du genauer hin. Du willst wissen: Wie stark sind die Schmerzen? Wie ist die Haut? Gibt es Anzeichen für eine Thrombose? Wie sieht die Wunde aus?",
   kernSteps: [
+    // InlineWissen — Anatomie + Druckstellen-Vokabular
+    // Position: VOR Step 2.1 (Hotspot-Brilliant) — Schüler braucht Begriffe wie Trochanter,
+    // Druckstelle, Fingertest, Dekubitus, Dekubitus-Risiko, bevor er die Stellen markieren
+    // und benennen kann. WICHTIG: nur Vokabular — KEINE Klassifikation (das kommt nach dem
+    // Hotspot, im inlineWissen-Step "Dekubitus-Kategorien" — Brilliant-Prinzip bleibt erhalten).
+    {
+      stepId: "ce02-yilmaz-beob-iw-anatomie-druckstellen",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 1,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP (2017, 2. Aktualisierung 2024): Expertenstandard Dekubitusprophylaxe in der Pflege",
+        "NPUAP/EPUAP/PPPIA (2019): International Pressure Injury Guideline",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-beob-anatomie-druckstellen-begriffe",
+      tag: "anatomie",
+      themaPrimaer: "dekubitus",
+      themenSekundaer: ["hautinspektion"],
+      transition: "Du kennst die Begriffe. Jetzt schau auf das Bild — was siehst du bei Frau Yilmaz?",
+      contentC1: {
+        title: "Anatomie + Druckstellen — wie heißt was?",
+        body: "",
+        glossarBegriffe: [
+          "Dekubitus", "Dekubitus-Risiko", "Druckstelle", "Druckentlastung",
+          "Trochanter", "Fingertest", "Hautinspektion", "Prädilektionsstelle",
+        ],
+      },
+      contentB1: {
+        title: "Wichtige Wörter zur Hautkontrolle",
+        body: "",
+        glossarBegriffe: ["Druckstelle", "Druckwunde", "Hautkontrolle"],
+      },
+      inlineWissen: {
+        bausteinRef: "anatomie-druckstellen-vokabular",
+        storyAufhaenger:
+          "Bevor du Frau Yilmaz' Haut anschaust, brauchst du die richtigen Begriffe. Sonst kannst du in der Übergabe nicht klar sagen, was du gesehen hast.",
+        storyAufhaengerB1:
+          "Bevor du Frau Yilmaz' Haut anschaust, brauchst du ein paar Wörter. Sonst kannst du nicht erklären, was du gesehen hast.",
+        kerntext:
+          "**Dekubitus** = Druckwunde auf der Haut, die durch dauerhaften Druck auf eine Körperstelle entsteht (NPUAP/EPUAP 2019). Häufig an Knochen-Vorsprüngen.\n\n**Dekubitus-Risiko** = Wahrscheinlichkeit, einen Dekubitus zu entwickeln. Steigt durch Bettlägerigkeit, Mangelernährung, Inkontinenz, Adipositas, Diabetes, Alter.\n\n**Druckstelle** = sichtbare oder fühlbare Hautveränderung an einer Stelle, an der dauerhaft Druck wirkt. Vorstufe oder erste Form eines Dekubitus.\n\n**Druckentlastung** = pflegerische Maßnahme, die den Druck von einer Körper-Stelle nimmt: Umlagern, Hilfsmittel (Kissen, Wechseldruck-Matratze), Mikrolagerung.\n\n**Trochanter** = großer Knochen-Vorsprung am oberen Oberschenkelknochen, seitlich tastbar wenn man die Hand auf die Hüfte legt. Klassische **Prädilektionsstelle** für Dekubitus in Seitenlage.\n\n**Prädilektionsstelle** = bevorzugter Ort, an dem ein Dekubitus typischerweise entsteht: Steißbein, Fersen, Trochanter, Schulterblatt, Hinterkopf, Ohrmuscheln.\n\n**Fingertest** = einfacher Test bei geröteter Haut: Mit dem Finger auf die Rötung drücken. **Wegdrückbare Rötung** = Haut wird kurz blass und rötet sich wieder = noch keine Schädigung. **Nicht wegdrückbare Rötung** = bleibt rot = Dekubitus Kategorie I.\n\n**Hautinspektion** = systematisches Anschauen aller Haut-Stellen, besonders der Prädilektionsstellen, mindestens 1× pro Schicht bei Risikopatienten (DNQP 2024).",
+        kerntextB1:
+          "**Dekubitus** = Druckwunde auf der Haut. Entsteht durch zu langen Druck.\n\n**Dekubitus-Risiko** = wie hoch die Gefahr ist, eine Druckwunde zu bekommen.\n\n**Druckstelle** = eine Stelle an der die Haut auf Druck reagiert (rote Stelle, Vorstufe).\n\n**Druckentlastung** = den Druck wegnehmen. Umlagern, Kissen.\n\n**Trochanter** = ein Knochen seitlich an der Hüfte. Du kannst ihn fühlen, wenn du die Hand auf die Hüfte legst.\n\n**Fingertest** = du drückst kurz mit dem Finger auf eine rote Stelle. Wird sie weiß und rötet sich dann wieder = ok. Bleibt sie rot = Druckwunde.\n\n**Hautinspektion** = die Haut anschauen, vor allem an den typischen Stellen.",
+        faustregel:
+          "**Dekubitus = Druckwunde. Trochanter = seitliche Hüfte. Fingertest entscheidet: wegdrückbar = ok, nicht wegdrückbar = Kategorie I.**",
+        faustregelB1:
+          "Druckwunde = Dekubitus. Hüftknochen seitlich = Trochanter. Drück auf rote Stellen — bleibt sie rot, ist es eine Druckwunde.",
+        karteikarte: {
+          vorderseite:
+            "Erkläre die Begriffe: Dekubitus, Trochanter, Fingertest. Wo liegen die typischen Druckstellen bei einem Patienten in Rückenlage?",
+          rueckseite:
+            "Dekubitus = Druckwunde. Trochanter = seitlicher Hüftknochen. Fingertest = Druck auf rote Stelle; nicht wegdrückbar = Kategorie I. Prädilektionsstellen Rückenlage: Steißbein, Fersen, Schulterblatt, Hinterkopf. In Seitenlage: Trochanter, Schulter, Ohr, Knöchel.",
+        },
+      },
+    },
+
     // Step 2.1 — Brilliant-Frage: Hotspot Hautbefund
     {
       stepId: "ce02-yilmaz-beob-01-haut-brilliant",
@@ -100,12 +158,16 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Dekubitus-Kategorien I–IV",
         body: "",
-        glossarBegriffe: ["Dekubitus", "Dekubitus Kategorie I", "Dekubitus Kategorie II", "Dekubitus Kategorie III", "Dekubitus Kategorie IV"],
+        glossarBegriffe: [
+          "Dekubitus", "Dekubitus Kategorie",
+          "Dekubitus Kategorie I", "Dekubitus Kategorie II", "Dekubitus Kategorie III", "Dekubitus Kategorie IV",
+          "Druckentlastung",
+        ],
       },
       contentB1: {
         title: "Druckwunden: 4 Stufen",
         body: "",
-        glossarBegriffe: ["Dekubitus", "Druckwunde"],
+        glossarBegriffe: ["Dekubitus", "Druckwunde", "Druckentlastung"],
       },
       inlineWissen: {
         bausteinRef: "dekubitus-kategorien",
@@ -321,6 +383,60 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_BEOBACHTEN: SituationsPhase = {
       },
     },
 
+    // InlineWissen — Virchow-Trias Begriffe + Hyperglykämie
+    // Position: VOR Step 2.4 (Categorize Virchow) — definiert Virchow-Trias, Stase,
+    // Hyperkoagulabilität, Hyperglykämie. Diese Begriffe tauchen im Categorize-Step
+    // und in den Items auf — Schüler muss sie kennen, bevor er zuordnet.
+    {
+      stepId: "ce02-yilmaz-beob-iw-virchow-begriffe",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Virchow R. (1856): Gesammelte Abhandlungen zur wissenschaftlichen Medicin",
+        "AWMF (2024): S3-Leitlinie Prophylaxe der venösen Thromboembolie",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-beob-virchow-grundlagen",
+      tag: "krankheitslehre",
+      themaPrimaer: "thrombose-prophylaxe",
+      themenSekundaer: ["dekubitus"],
+      transition: "Du kennst die drei Säulen. Jetzt ordne Frau Yilmaz' Risikofaktoren zu.",
+      contentC1: {
+        title: "Virchow-Trias: drei Begriffe für ein Blutgerinnsel",
+        body: "",
+        glossarBegriffe: ["Virchow-Trias", "Stase", "Hyperkoagulabilität", "Hyperglykämie", "Endothel"],
+      },
+      contentB1: {
+        title: "Drei Wörter für ein Blutgerinnsel",
+        body: "",
+        glossarBegriffe: ["Virchow-Trias", "Blutgerinnsel"],
+      },
+      inlineWissen: {
+        bausteinRef: "thrombose-virchow-begriffe",
+        storyAufhaenger:
+          "Frau Yilmaz bekommt täglich eine Spritze gegen Thrombose. Aber warum ist gerade SIE so gefährdet? Die Antwort liegt in einem 170 Jahre alten Modell, das heute noch gilt — der Virchow-Trias.",
+        storyAufhaengerB1:
+          "Frau Yilmaz bekommt eine Spritze gegen Blutgerinnsel. Warum ist das Risiko bei ihr so hoch? Die Antwort: drei Wörter.",
+        kerntext:
+          "**Virchow-Trias** = drei Faktoren, die gemeinsam eine Thrombose auslösen (Virchow, 1856). Bis heute gültig (AWMF S3 2024).\n\n• **Endothel** = die innere, glatte Schicht der Blutgefäße. Bei OP-Verletzung, Entzündung oder Katheter wird sie rau — Blutplättchen bleiben kleben → erste Säule der Trias.\n\n• **Stase** = verlangsamter oder stehender Blutfluss. Wenn man lange liegt, pumpt die Wadenmuskelpumpe nicht. Blut staut sich in den Bein-Venen.\n\n• **Hyperkoagulabilität** = erhöhte Gerinnungs-Bereitschaft des Blutes. Entzündungs-Reaktion nach OP, aber auch Diabetes, Rauchen oder Pille verschieben das Gleichgewicht in Richtung Gerinnung.\n\n**Hyperglykämie** = dauerhaft zu hoher Blut-Zucker bei Diabetes mellitus. Aktiviert Thrombozyten, erhöht PAI-1 und Fibrinogen → ist eine Hauptursache der Hyperkoagulabilität bei Diabetes.\n\n**Bei Frau Yilmaz aktiv gleichzeitig:** Hüft-OP (Endothel-Schaden) + 3 Tage Bettruhe (Stase) + Diabetes mit Hyperglykämie + OP-Entzündung (Hyperkoagulabilität).",
+        kerntextB1:
+          "**Virchow-Trias** = drei Ursachen für ein Blutgerinnsel.\n\n• **Endothel** = die innere Wand der Blutgefäße. Wenn sie verletzt ist (z.B. nach OP), bleiben Blutplättchen kleben.\n\n• **Stase** = das Blut fließt zu langsam. Bei Bettruhe.\n\n• **Hyperkoagulabilität** = das Blut gerinnt zu leicht. Nach OP. Bei Diabetes.\n\n**Hyperglykämie** = zu viel Zucker im Blut. Macht das Blut klebriger.\n\nBei Frau Yilmaz sind alle drei Ursachen gleichzeitig da.",
+        faustregel:
+          "**Wand, Fluss, Gerinnung** — drei Worte, ein Risiko. Wenn alle drei aktiv sind, ist die Thrombose-Gefahr am höchsten.",
+        faustregelB1:
+          "Drei Wörter merken: Wand, Fluss, Gerinnung. Bei Frau Yilmaz alle drei aktiv.",
+        karteikarte: {
+          vorderseite:
+            "Was bedeutet Virchow-Trias? Welche drei Säulen sind bei Frau Yilmaz aktiv?",
+          rueckseite:
+            "Virchow-Trias = drei Ursachen für Thrombose: (1) Endothel-Schaden (OP), (2) Stase = verlangsamter Blutfluss (Bettruhe), (3) Hyperkoagulabilität = erhöhte Gerinnung (OP-Entzündung + Diabetes-Hyperglykämie). Alle drei zugleich = höchste Risiko-Gruppe (Virchow 1856; AWMF 2024).",
+        },
+      },
+    },
+
     // Step 2.4 — Categorize: Virchow-Trias anwenden
     {
       stepId: "ce02-yilmaz-beob-04-thrombose-virchow",
@@ -404,12 +520,18 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Doppler-Sonografie: Der Goldstandard bei Thrombose-Verdacht",
         body: "",
-        glossarBegriffe: ["Doppler-Sonografie", "Kompressionssonografie", "Thrombose-Diagnostik"],
+        glossarBegriffe: [
+          "Doppler-Sonografie", "Kompressionssonografie", "Thrombose-Diagnostik", "Thrombose",
+          "Antiemboliestrümpfe", "Kompressionsstrümpfe",
+        ],
       },
       contentB1: {
         title: "Doppler-Sonografie: Ultraschall für Blutgerinnsel",
         body: "",
-        glossarBegriffe: ["Doppler-Sonografie", "Ultraschall", "Blutgerinnsel"],
+        glossarBegriffe: [
+          "Doppler-Sonografie", "Ultraschall", "Blutgerinnsel", "Thrombose",
+          "Antiemboliestrümpfe",
+        ],
       },
       inlineWissen: {
         bausteinRef: "thrombose-doppler-sonografie",
@@ -618,12 +740,15 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Wundsekret: serös, blutig, serös-blutig — was bedeutet das?",
         body: "",
-        glossarBegriffe: ["serös", "serös-blutig", "blutig", "purulent", "Wundsekret", "Exsudat"],
+        glossarBegriffe: [
+          "serös", "serös-blutig", "blutig", "purulent", "Wundsekret", "Exsudat",
+          "Drainage", "Redon-Drainage",
+        ],
       },
       contentB1: {
         title: "Wundflüssigkeit: Welche Farben gibt es?",
         body: "",
-        glossarBegriffe: ["Wundflüssigkeit", "serös-blutig"],
+        glossarBegriffe: ["Wundflüssigkeit", "serös-blutig", "Drainage"],
       },
       inlineWissen: {
         bausteinRef: "wundsekret-klassifikation",

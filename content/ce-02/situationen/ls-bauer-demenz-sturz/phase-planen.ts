@@ -33,13 +33,13 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       transition: "Du kennst den Pflegeprozess. Jetzt: Formuliere Ziele für Herrn Bauer.",
       contentC1: {
         title: "Pflegeprozess und Pflegeziele \u2014 messbar formulieren",
-        body: "",
-        glossarBegriffe: ["Pflegeziel", "Pflegeprozess", "messbar"],
+        body: "**Pflegeprozess** = 6-Schritte-Kreislauf (Fiechter/Meier 1981). **Pflegeziel** = was der Patient in einem definierten Zeitraum zeigen oder können soll \u2014 messbar. **Niedrigbett** = Pflegebett in unterster Position (ca. 20 cm \u00fcber Boden), Sturzhöhe reduziert, keine FEM. **Trinkprotokoll** = schriftliche Dokumentation der Trinkmengen mit Uhrzeit (DNQP 2014). **Sturzschutz** = Sammelbegriff für sturzpräventive Maßnahmen ohne Fixierung.",
+        glossarBegriffe: ["Pflegeziel", "Pflegeprozess", "messbar", "Niedrigbett", "Trinkprotokoll", "Sturzschutz", "Fixierung", "Dokumentation", "Patient"],
       },
       contentB1: {
         title: "Was ist ein Pflegeziel? Wie schreibt man es?",
-        body: "",
-        glossarBegriffe: ["Pflegeziel", "Pflegeprozess", "messbar"],
+        body: "**Pflegeprozess** = 6 Schritte. **Pflegeziel** = was der Patient in X Tagen zeigen soll. **Niedrigbett** = Bett ganz niedrig stellen \u2014 weniger Verletzung wenn er fällt. **Trinkprotokoll** = wir schreiben auf, wie viel er trinkt. **Sturzschutz** = was wir tun, damit er nicht stürzt.",
+        glossarBegriffe: ["Pflegeziel", "Pflegeprozess", "messbar", "Niedrigbett", "Trinkprotokoll", "Sturzschutz", "Patient"],
       },
       inlineWissen: {
         bausteinRef: "pflegeprozess-ziele-grundlagen",
@@ -213,12 +213,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       contentC1: {
         title: "Ganzkörperpflege bei Demenz — drei Ziele in einer Handlung",
         body: "",
-        glossarBegriffe: ["Ganzkörperpflege", "Initialberührung", "Beziehungsgestaltung", "Bewegung", "Kontrakturprophylaxe", "Spitzfuss", "Spitzfussprophylaxe", ],
+        glossarBegriffe: ["Ganzkörperpflege", "Initialberührung", "Beziehungsgestaltung", "Bewegung", "Kontrakturprophylaxe", "Spitzfuss", "Spitzfussprophylaxe", "Hygiene", "Demenz", "ankündigen"],
       },
       contentB1: {
         title: "Wie pflege ich Herrn Bauer?",
-        body: "",
-        glossarBegriffe: ["Ganzkörperpflege", "Beziehungsgestaltung"],
+        body: "**Ganzkörperpflege** bei Demenz = Beziehung + Schmerzbeobachtung + Gelenkbewegung. **Hygiene** = sauber waschen, Reihenfolge sauber nach unrein. **Beziehungsgestaltung** = ankündigen, langsam, immer an gleicher Stelle anfassen.",
+        glossarBegriffe: ["Ganzkörperpflege", "Beziehungsgestaltung", "Hygiene", "Demenz", "ankündigen"],
       },
       inlineWissen: {
         bausteinRef: "ganzkörperpflege-bei-demenz",
@@ -482,12 +482,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_PLANEN: SituationsPhase = {
       contentC1: {
         title: "Trinkmenge erhöhen bei Demenz — 5 Strategien",
         body: "Herr Bauer trinkt auf Aufforderung nicht. Wie erhöhst du die Trinkmenge trotzdem? 5 Strategien die funktionieren:\n\n✓ Tasse in die Hand geben — nicht bitten: Er trinkt bereitwilliger wenn er eine Tasse in der Hand hält.\n✓ Lieblingsgetränk: alkoholfreies Malzgetränk (Malzbier, Malztrunk — nicht zu verwechseln mit alkoholhaltigem Bier; Alkohol wäre wegen Mirtazapin kontraindiziert) aus Biographie bereitstellen — erhöht Trinkmotivation.\n✓ Trinken im sozialen Kontext: Frühstück, Mittagessen — kein isoliertes Trinken.\n✓ Flüssigkeitsreiche Lebensmittel: Suppe, Joghurt, Wassermelone — zählen zur Flüssigkeitsbilanz.\n✓ Miktionsprotokoll führen — um die Tendenz zu erkennen und den Plan zu justieren.\n\nQuelle: DNQP Förderung der Harnkontinenz (2014).",
-        glossarBegriffe: ["Flüssigkeitsbilanz", "Miktionsprotokoll", "Exsikkose"],
+        glossarBegriffe: ["Flüssigkeitsbilanz", "Miktionsprotokoll", "Exsikkose", "DNQP", "Mirtazapin", "Trinken", "Biographie", "Trinkmenge"],
       },
       contentB1: {
         title: "Wie trinkt Herr Bauer mehr?",
         body: "Herr Bauer trinkt nicht, wenn man ihn bittet. Wie geht das trotzdem? 5 Strategien:\n\n✓ Tasse in die Hand geben — er trinkt dann besser.\n✓ Alkoholfreies Malzgetränk (Malzbier ohne Alkohol) anbieten — das mag er (aus seiner Lebensgeschichte). Wichtig: Kein Alkohol — er nimmt Mirtazapin.\n✓ Beim Essen trinken — nicht alleine.\n✓ Suppe und Joghurt geben — das zählt auch als Trinken.\n✓ Aufschreiben wie viel er trinkt — dann weißt du wie es sich verändert.",
-        glossarBegriffe: ["Flüssigkeit", "Exsikkose"],
+        glossarBegriffe: ["Flüssigkeit", "Exsikkose", "Mirtazapin", "Trinken", "Biographie", "Trinkmenge"],
       },
     },
 

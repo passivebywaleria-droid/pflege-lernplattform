@@ -31,13 +31,13 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Pflegediagnosen nach PESR-Schema zuordnen",
-        body: "Ordne die erhobenen Probleme den passenden Pflegediagnosen zu. Drei Paare. PESR = Problem, Einflussfaktor, Symptom, Ressource.",
-        glossarBegriffe: ["PESR-Schema", "Pflegediagnose"],
+        body: "Kurz erklärt: **Pflegediagnose** = strukturierte Beschreibung eines pflegerelevanten Problems oder Risikos einer Patientin (NANDA / NANDA-International). Sie unterscheidet sich von der ärztlichen Diagnose. **Ressource** = vorhandene Stärke, Fähigkeit oder Unterstützung (eigene Kraft, Familie, Wissen), die in der Pflege gezielt einbezogen wird (§ 2 PflBG).\n\nOrdne die erhobenen Probleme den passenden Pflegediagnosen zu. Drei Paare. PESR = Problem, Einflussfaktor, Symptom, Ressource.",
+        glossarBegriffe: ["PESR-Schema", "Pflegediagnose", "Ressource"],
       },
       contentB1: {
         title: "Pflege-Diagnosen zuordnen",
-        body: "Pflege-Diagnosen nach PESR (= Pflege-Problem, Einflussfaktor, Symptom, Ressource) zuordnen. Ordne zu: Welches Problem → welche Pflege-Diagnose?",
-        glossarBegriffe: ["PESR-Schema", "Pflegediagnose"],
+        body: "Kurz erklärt: **Pflegediagnose** = ein Pflege-Problem in fester Struktur beschrieben. Anders als die ärztliche Diagnose. **Ressource** = was Frau Schmidt SCHON kann oder hat (Familie, Kraft, Wissen) — das nutzt die Pflege gezielt.\n\nOrdne die Pflege-Diagnosen nach PESR zu (= Pflege-Problem, Einflussfaktor, Symptom, Ressource).",
+        glossarBegriffe: ["PESR-Schema", "Pflegediagnose", "Ressource"],
       },
       question: {
         fragetext:
@@ -76,13 +76,13 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "SMART-Pflegeziel formulieren",
-        body: "Formuliere ein SMART-Ziel für das Ernährungsproblem von Frau Schmidt. SMART: Spezifisch (Protein), Messbar (Zielwert oder Mahlzeiten), Erreichbar (stationär machbar), Relevant (für Heilung und BZ-Kontrolle), Terminiert (bis wann?).",
-        glossarBegriffe: ["SMART-Ziel"],
+        body: "SMART ist eine Abkürzung. SMART-Ziel = ein Pflegeziel, das nach 5 Kriterien formuliert ist: Spezifisch, Messbar, Erreichbar, Relevant, Terminiert (Doran 1981, in der Pflege seit den 1990ern Standard).\n\nFormuliere ein SMART-Ziel für das Ernährungsproblem von Frau Schmidt. Spezifisch (Protein), Messbar (Zielwert oder Mahlzeiten), Erreichbar (stationär machbar), Relevant (für Heilung und BZ-Kontrolle), Terminiert (bis wann?).",
+        glossarBegriffe: ["SMART-Ziel", "SMART"],
       },
       contentB1: {
         title: "SMART-Ziel schreiben",
-        body: "SMART-Ziel formulieren für Frau Schmidts Ernährungs-Problem. SMART bedeutet: **S** = Spezifisch, **M** = Messbar, **A** = Erreichbar, **R** = Relevant, **T** = Terminiert (bis wann). Beispiel: \"Frau Schmidt isst bis zur Entlassung (in 5 Tagen) täglich 3 eiweiß-reiche Mahlzeiten.\"",
-        glossarBegriffe: ["SMART-Ziel"],
+        body: "SMART ist eine Abkürzung. SMART-Ziel = ein Pflegeziel mit 5 Punkten:\nS = Spezifisch (was genau?)\nM = Messbar (wie viel?)\nA = Erreichbar (geht das wirklich?)\nR = Relevant (warum wichtig?)\nT = Terminiert (bis wann?)\n\nBeispiel: \"Frau Schmidt isst bis zur Entlassung (in 5 Tagen) täglich 3 eiweiß-reiche Mahlzeiten.\"",
+        glossarBegriffe: ["SMART-Ziel", "SMART"],
       },
       question: {
         fragetext:
@@ -122,13 +122,13 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Wer macht was? — Kompetenzgrenzen kennen",
-        body: "Ordne die Aufgaben in eine 2×2-Matrix:\n\n**X-Achse:** Sofort (heute Vormittag) — Geplant (im Tagesverlauf / mehrtägig)\n**Y-Achse:** Pflege (eigenständig durch Pflegefachkraft) — Spezialist (Arzt/Podologe/Ernährungsberater)\n\nQuadranten-Konvention:\n- **Q1 (unten-links)** = Sofort + Pflege\n- **Q2 (unten-rechts)** = Geplant + Pflege\n- **Q3 (oben-links)** = Sofort + Spezialist\n- **Q4 (oben-rechts)** = Geplant + Spezialist\n\nKompetenzgrenzen kennen ist keine Schwäche — es ist Qualitätssicherung.",
-        glossarBegriffe: ["Interprofessionell", "Podologe"],
+        body: "**Anpassung** = die Veränderung einer Therapie oder eines Pflegeplans, weil sich der Zustand der Patientin verändert hat (zum Beispiel Dosis-Anpassung von Metformin nach BZ-Trend). Der Begriff wird hier im Kontext der Therapie-Anpassung im Verlauf verwendet. **Qualitätssicherung** = systematische Kontrolle, dass die Pflege den fachlichen Standards entspricht (DNQP, AWMF) — Kompetenzgrenzen einzuhalten gehört dazu (§ 4 PflBG).\n\nOrdne die Aufgaben in eine 2×2-Matrix:\n\n**X-Achse:** Sofort (heute Vormittag) — Geplant (im Tagesverlauf / mehrtägig)\n**Y-Achse:** Pflege (eigenständig durch Pflegefachkraft) — Spezialist (Arzt/Podologe/Ernährungsberater)\n\nQuadranten-Konvention:\n- **Q1 (unten-links)** = Sofort + Pflege\n- **Q2 (unten-rechts)** = Geplant + Pflege\n- **Q3 (oben-links)** = Sofort + Spezialist\n- **Q4 (oben-rechts)** = Geplant + Spezialist\n\nKompetenzgrenzen kennen ist keine Schwäche — es ist Qualitätssicherung.",
+        glossarBegriffe: ["Interprofessionell", "Podologe", "Anpassung", "Qualitätssicherung"],
       },
       contentB1: {
         title: "Wer macht was?",
-        body: "Ordne zu: Welche Aufgabe gehört zu welcher Berufsgruppe?\n\nMatrix mit 4 Quadranten:\n- **Q1 (unten-links):** Sofort + Pflege\n- **Q2 (unten-rechts):** Geplant + Pflege\n- **Q3 (oben-links):** Sofort + Spezialist (Arzt/Podologe)\n- **Q4 (oben-rechts):** Geplant + Spezialist",
-        glossarBegriffe: ["Interprofessionell", "Podologe"],
+        body: "Kurz erklärt: **Anpassung** = wenn etwas verändert wird, weil sich der Zustand der Patientin verändert hat (zum Beispiel: andere Dosis vom Medikament). **Qualitätssicherung** = sicherstellen, dass die Pflege nach den Standards gemacht wird. Kompetenzgrenzen einzuhalten gehört dazu.\n\nOrdne zu: Welche Aufgabe gehört zu welcher Berufsgruppe?\n\nMatrix mit 4 Quadranten:\n- **Q1 (unten-links):** Sofort + Pflege\n- **Q2 (unten-rechts):** Geplant + Pflege\n- **Q3 (oben-links):** Sofort + Spezialist (Arzt/Podologe)\n- **Q4 (oben-rechts):** Geplant + Spezialist",
+        glossarBegriffe: ["Interprofessionell", "Podologe", "Anpassung", "Qualitätssicherung"],
       },
       question: {
         fragetext:
@@ -176,12 +176,12 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_PLANEN: SituationsPhase = {
       contentC1: {
         title: "Dekubitus bei Adipositas — Wiederbegegnung",
         body: "",
-        glossarBegriffe: ["Dekubitus", "Braden-Skala", "Scherkraft"],
+        glossarBegriffe: ["Dekubitus", "Braden-Skala", "Scherkraft", "Risiko", "Dekubitus-Risiko"],
       },
       contentB1: {
         title: "Dekubitus bei Übergewicht — was ist anders?",
         body: "",
-        glossarBegriffe: ["Dekubitus", "Braden-Skala"],
+        glossarBegriffe: ["Dekubitus", "Braden-Skala", "Risiko", "Dekubitus-Risiko"],
       },
       inlineWissen: {
         bausteinRef: "dekubitus-prophylaxe-haut-ernährung",
@@ -319,12 +319,22 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_PLANEN: SituationsPhase = {
         body: "09:30 Uhr — du überlegst mit Frau Schmidt gemeinsam.\n\nFrau Schmidt sagt: \"Ich hab's versucht, wirklich. Aber dann bin ich so außer Atem. Das ist mir unangenehm, wenn alle zuschauen.\"\n\nDer Schlüssel: Nicht \"Sport\" — sondern erreichbare Alltagsbewegungen. Dreimal täglich kurz aufstehen und zum Waschbecken gehen. Warum ist das wichtig? Mobilisation verbessert die Insulinsensitivität (BZ sinkt), entlastet Druckpunkte (Dekubitusprophylaxe) und aktiviert den Beckenboden (hilft bei Inkontinenz). (DNQP 2020; DGG 2022)\n\n**Sturzrisiko-Assessment (DNQP Sturzprophylaxe 2022):** Frau Schmidt hat mehrere Risikofaktoren — Adipositas Grad II (Schwerpunktverlagerung beim Aufstehen), Belastungsinkontinenz (Eile zur Toilette), entgleister Diabetes (mögliche Hypoglykämie unter Metformin neu), Atemnot bei Anstrengung. Das ist ein erhöhtes Sturzrisiko — dokumentationspflichtig und Teil des Pflegeplans.\n\n**Bariatrische Hilfsmittel — Tragkraft-Schwellen (DGUV 207-018, DBfK 2021):**\n- **Standardbett**: meist bis 135–185 kg belastbar — bei BMI 38 / 98 kg ausreichend, **Tragkraft trotzdem prüfen** und im Pflegeplan vermerken\n- **Schwerlast-/Bariatriebett (Modelle ab ca. 200-450 kg Tragkraft verfügbar) und Lifter**: zwingend bei Patientengewicht > 150 kg (Lifter-Pflicht zum Schutz von Patient UND Pflege-Rücken). Frau Schmidt liegt darunter, aber **Equipment-Awareness gehört in den Plan**\n- **Bett**: Bettleiter/Bettaufrichter zum eigenständigen Aufrichten\n- **Aufstehen**: Aufstehhilfe am Bettrand, ggf. Rollator (XXL-Belastbarkeit prüfen) für sichere Gehstrecke zum Waschbecken\n- **Sitzen**: Bariatrie-Stuhl mit Armlehnen + erhöhter Sitzfläche, Tragkraft prüfen (Standard-Stühle teils nur bis 110 kg)\n- **Toilettenstuhl/Toilettensitzerhöhung**: Belastbarkeit prüfen, breitere Sitzfläche\n- **Anti-Rutsch-Socken** + festes Schuhwerk (NICHT barfuß auf Diabetikerfuß!)\n\n**Kinästhetik nach Hatch/Maietta:** Bei der Mobilisation gilt: Frau Schmidt bewegt SICH SELBST — du begleitest und sicherst. Niemals \"unter den Achseln greifen\" oder \"hochziehen\" (Schultergelenk-Risiko + Rückenbelastung Pflege). Stattdessen: seitlich am Becken/Rumpf sichern, sie bestimmt das Tempo. Aufstehbewegung über die Seite (Bett-Kante → 90°-Drehung über Hüfte → Aufstehen mit Bettleiter).\n\nDein Ziel: Frau Schmidt verstehen warum Bewegung ihr direkt nutzt — nicht als \"Abnahme-Programm\" verkaufen, das bei ihr Widerstand weckt.",
         fallbezug:
           "Frau Schmidt hat Angst vor dem Außer-Atem-Sein. Der Ansatz: kleine erreichbare Schritte, sofort spürbare Vorteile, sichere Hilfsmittel, kinästhetisch korrekte Begleitung.",
-        glossarBegriffe: ["Insulinsensitivität", "Dekubitusprophylaxe", "Kinästhetik", "Bariatrische Pflege"],
+        glossarBegriffe: [
+          "Insulinsensitivität", "Dekubitusprophylaxe", "Kinästhetik", "Bariatrische Pflege",
+          "Sturz", "Hatch/Maietta", "Assessment", "Sturzrisiko", "Risiko",
+          "Bewegung", "Mobilisation", "Inkontinenz", "Ziel", "BMI",
+          "Dekubitus", "Adipositas", "Belastungsinkontinenz", "Pflegeplan",
+        ],
       },
       contentB1: {
         title: "Mobilisations-Plan bei Adipositas",
         body: "Du planst mit Frau Schmidt zusammen kleine Bewegungs-Schritte.\n\nFrau Schmidt sagt: \"Ich hab's versucht. Aber dann bin ich so außer Atem. Das ist mir unangenehm.\"\n\nWas hilft? Nicht \"Sport machen\" — das ist zu viel. Besser: Kleine Schritte — zum Beispiel dreimal täglich kurz aufstehen und zum Waschbecken gehen.\n\nWarum ist das wichtig?\n- Bewegung senkt den Blutzucker (= der Körper braucht weniger Insulin)\n- Bewegung schützt vor Dekubitus (= Druck-Stelle) — der Druck ändert sich\n- Bewegung stärkt den Beckenboden (= hilft bei Inkontinenz)\n\n**Sturz-Risiko prüfen (DNQP 2022):** Frau Schmidt hat mehrere Risiken: BMI 38, Inkontinenz (sie geht schnell zur Toilette), Diabetes (Unterzucker möglich), Atemnot. Das ist ein erhöhtes Sturz-Risiko — du dokumentierst das.\n\n**Hilfsmittel bei Adipositas (= bariatrische Hilfsmittel):**\n- Bett: Tragkraft prüfen! Standard-Betten sind oft nur bis 135-185 kg belastbar. Frau Schmidt wiegt 98 kg — Standard reicht. **Wichtig:** Über 150 kg ist ein Schwerlast-/Bariatriebett (Modelle ab ca. 200-450 kg Tragkraft verfügbar) und ein Lifter Pflicht nach individueller Risikobewertung (DGUV 207-018).\n- Bett: Bettleiter zum Aufrichten\n- Aufstehen: Rollator (Tragkraft prüfen!), Aufstehhilfe am Bettrand\n- Sitzen: Bariatrie-Stuhl (extra breit, mit Armlehnen) — auch hier Tragkraft prüfen\n- Anti-Rutsch-Socken (NICHT barfuß — Diabetikerfuß!)\n\n**Kinästhetik (= Bewegungs-Lehre nach Hatch/Maietta):** Frau Schmidt bewegt SICH SELBST — du begleitest. Niemals \"unter den Achseln greifen\" oder \"hochziehen\". Stattdessen: seitlich am Becken/Rumpf sichern. Sie bestimmt das Tempo.",
-        glossarBegriffe: ["Dekubitusprophylaxe", "Kinästhetik", "Bariatrische Pflege"],
+        glossarBegriffe: [
+          "Dekubitusprophylaxe", "Kinästhetik", "Bariatrische Pflege",
+          "Sturz", "Hatch/Maietta", "Assessment", "Sturzrisiko", "Risiko",
+          "Bewegung", "Mobilisation", "Inkontinenz", "Ziel", "BMI",
+          "Dekubitus", "Adipositas", "Belastungsinkontinenz", "Pflegeplan",
+        ],
       },
     },
 

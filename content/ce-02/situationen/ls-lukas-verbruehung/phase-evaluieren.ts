@@ -107,13 +107,13 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_EVALUIEREN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "Pflegeziele evaluieren — was ist erreicht?",
-        body: "Lukas' Befund heute Morgen wird beschrieben. Ordne jedes Ziel einer Kategorie zu: Erreicht, Teilweise erreicht, oder Noch offen.",
-        glossarBegriffe: ["Epithelisierung", "Exsikkose", "Rötungswall"],
+        body: "Lukas' Befund heute Morgen wird beschrieben. Ordne jedes Ziel einer Kategorie zu: Erreicht, Teilweise erreicht, oder Noch offen. **KUSS** = Kindliche Unbehagens- und Schmerz-Skala (Büttner/Finke 2000), Schmerzmessung für Kinder 0–4 Jahre. **Rötungswall** = sich ausbreitendes Rötungsareal um die Wunde herum, klassisches Infektionszeichen (zusammen mit Schmerz, Wärme, Schwellung — Calor, Rubor, Dolor, Tumor). **Rötungswall (= Entzündungszeichen um die Wunde)** ist Alarmsignal — Arzt informieren. **Elterndynamik** = Verlauf der elterlichen Reaktion über die Zeit (typisches Muster: Schock → Schuld → Suche nach Kontrolle → Kooperation, Hoehl/Kullick 2019).",
+        glossarBegriffe: ["Epithelisierung", "Exsikkose", "Rötungswall", "KUSS", "Rötungswall (= Entzündungszeichen um die Wunde)", "Elterndynamik"],
       },
       contentB1: {
         title: "Was ist besser? Was fehlt noch?",
-        body: "Lukas' Zustand heute Morgen. Sortiere: Ist das Ziel erreicht, teilweise erreicht, oder noch offen?",
-        glossarBegriffe: ["Rötungswall (= Entzündungszeichen um die Wunde)"],
+        body: "Lukas' Zustand heute Morgen. Sortiere: Ist das Ziel erreicht, teilweise erreicht, oder noch offen? **KUSS** = Schmerz-Skala für kleine Kinder. **Rötungswall** = breite Rötung um die Wunde — Zeichen einer Entzündung, Arzt rufen. **Elterndynamik** = wie die Eltern reagieren über die Zeit.",
+        glossarBegriffe: ["Rötungswall (= Entzündungszeichen um die Wunde)", "KUSS", "Rötungswall", "Elterndynamik"],
       },
       question: {
         fragetext:
@@ -166,13 +166,13 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_EVALUIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "KUSS-Verlauf über 24 Stunden",
-        body: "Schaue dir den KUSS-Verlauf von Lukas über die letzten 24 Stunden an. Ordne die Maßnahmen den Momenten zu, in denen der Schmerzscore deutlich gefallen ist.",
-        glossarBegriffe: ["KUSS-Skala", "Bedarfsanalgesie"],
+        body: "**KUSS** = Kindliche Unbehagens- und Schmerz-Skala (Büttner/Finke 2000), Score 0–10 über 5 Beobachtungs-Kategorien. Schaue dir den KUSS-Verlauf von Lukas über die letzten 24 Stunden an. Ordne die Maßnahmen den Momenten zu, in denen der Schmerzscore deutlich gefallen ist.",
+        glossarBegriffe: ["KUSS-Skala", "Bedarfsanalgesie", "KUSS"],
       },
       contentB1: {
         title: "Wie hat sich der Schmerz verändert?",
-        body: "Lukas' Schmerzscore (KUSS) über 24 Stunden. Was hat den Schmerz gesenkt?",
-        glossarBegriffe: ["KUSS-Skala (= Schmerzmessung für Kinder)"],
+        body: "**KUSS** = Schmerz-Skala für kleine Kinder. Lukas' Schmerzscore (KUSS) über 24 Stunden. Was hat den Schmerz gesenkt?",
+        glossarBegriffe: ["KUSS-Skala (= Schmerzmessung für Kinder)", "KUSS"],
       },
       question: {
         fragetext:
@@ -249,12 +249,12 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_EVALUIEREN: SituationsPhase = {
       contentC1: {
         title: "Elterndynamik im Verlauf",
         body: "Heute Morgen fragt Kevin als erstes: \"Wie viel muss Lukas heute noch trinken? Ich könnte ihm das anbieten wenn Sandra schläft.\"\n\nDas ist ein Zeichen. Kevin, der gestern laut wurde und Frau Fink anfuhr — fragt heute nach dem Trinkangebot für Lukas. Er sucht aktiv nach einer Rolle.\n\nWie verändert sich die Elterndynamik im Verlauf einer Kinderstation-Aufnahme? Schock → Schuld → Suche nach Kontrolle → Kooperation. Nicht jede Familie schafft alle Stufen in einem Kurzaufenthalt. Aber Kevins Frage zeigt: Er ist in der Phase 'Suche nach Kontrolle' — und das ist der Übergang zur Kooperation.\n\nDie Pflegeperson kann diesen Verlauf aktiv unterstützen: durch Einbeziehung statt Ausschluss, durch Erklärung statt Bürokratiesprache, durch konkretes Lob für richtiges Verhalten ('Sie haben gestern Abend gut auf die Seifenblasen reagiert — das hat sehr geholfen').\n\nQuelle: _(Hoehl/Kullick 2019, Kap. Familienzentrierte Pflege)_",
-        glossarBegriffe: ["Familienzentrierte Pflege", "Elterndynamik"],
+        glossarBegriffe: ["Familienzentrierte Pflege", "Elterndynamik", "Trinken", "Verlauf"],
       },
       contentB1: {
         title: "Kevin fragt heute Morgen",
         body: "Kevin fragt heute Morgen: \"Wie viel muss Lukas trinken? Ich könnte anbieten wenn Sandra schläft.\"\n\nDas ist ein gutes Zeichen. Gestern war Kevin laut und defensiv. Heute sucht er eine Aufgabe für Lukas.\n\nEltern in der Klinik durchlaufen oft: Schock → Schuld → Suche nach Kontrolle → Kooperation. Kevin ist jetzt in 'Suche nach Kontrolle'. Das ist gut — du kannst ihm eine Aufgabe geben.\n\nWie? Erklären, einbeziehen, loben wenn etwas klappt. 'Die Seifenblasen gestern haben Lukas wirklich geholfen — danke.'",
-        glossarBegriffe: [],
+        glossarBegriffe: ["Trinken", "Verlauf"],
       },
     },
 
@@ -265,7 +265,10 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_EVALUIEREN: SituationsPhase = {
       stepType: "freetext",
       bloomLevel: 5,
       kompetenzbereich: "V.1",
-      quellen: [],
+      quellen: [
+        "PflAPrV Anlage 1, Kompetenzbereich II.1 — Reflexion und Begründung pflegerischen Handelns",
+        "DNQP (2020): Expertenstandard Schmerzmanagement in der Pflege bei akuten Schmerzen, 2. Aktualisierung",
+      ],
       track: "basis",
       modus: "schreibtisch",
       lernziel: "ce02-lukas-eval-reflexion",

@@ -1,5 +1,28 @@
 # Builder Memory
 
+## CE-02 Deep-Validator Welle 2 — ls-bauer-demenz-sturz (2026-05-01)
+- **80 → 0/0/0**: 30 HOCH (18× U-01, 11× S-01, 1× F-01) + 11 MITTEL (S-04) + 39 NIEDRIG (B-01) komplett gefixt
+- **F-01-Fix**: Sequenzwörter "zuerst", "Erst dann", "Was kommt wann" in `beob-02-sturz-assessment` body+fragetext entfernt — Frage neu formuliert als "pflegerisch sinnvolle Reihenfolge"
+- **U-01-Fix (18 Begriffe)**: Definitions-Pattern `**Begriff** =` in body der ersten Inline-Wissens-Steps jeder Phase (Phase 1: Sturz, Demenz, Übergabe, Alzheimer-Demenz; Phase 2: Kontraktur, DNQP, Sturzprophylaxe, Verletzungscheck, Mirtazapin, Abwehr, Vitalzeichen, ABCDE; Phase 3: Niedrigbett, Trinkprotokoll, Sturzschutz; Phase 6: Hämatom, SpO₂, Sturzprotokoll). Phasen-Kontext NICHT verwendet, da Validator Phasen-Header NICHT extrahiert (split startet erst bei `{ stepId:`)
+- **S-01/S-04-Fix (11 Feedbacks in 6 Steps)**: Anerkennungs-Marker "Du hast", "Du nimmst", "Du willst" + "weil/stattdessen/Beim nächsten Mal"-Schema in feedback + feedbackB1 (`info-04-zimmer-betreten`, `beob-03-knie-kontraktur`, `dur-02-abwehr-komplikation`, `dur-03-deeskalation-ressource`, `dur-06-mobilisation-komplikation`, `eval-02-angehörigen-gespräch`)
+- **B-01-Fix (39 Begriffe)**: glossarBegriffe-Listen in 18 Steps systematisch erweitert mit Patient/Pflege/Demenz/Knie/Gelenk/Hygiene/etc. (Validator-Quirk: Whitelist greift NICHT bei B-01, nur bei U-01)
+- Walkthrough-Validator: 0/0/0, Deep-Validator: 0/0/0, TypeScript: clean (Bauer-Files; 3 preexisting Errors im Validator-Script selbst)
+
+## CE-02 Deep-Validator Welle 2 — ls-petrov-schlaganfall (2026-05-01)
+- **87 → 0/0/0**: 40 HOCH (31× U-01, 8× S-01, 1× F-01) + 9 MITTEL (S-04) + 38 NIEDRIG (B-01) komplett gefixt
+- **F-01-Fix**: Sequenzwörter "zuerst" aus body von `dur-02-ganzkörperpflege-sequencing` entfernt — Frage neu formuliert als "pflegerisch sinnvolle Reihenfolge"
+- **S-01/S-04-Fix (3 Steps)**: Anerkennungs-Marker "Du hast" + "weil/stattdessen/Beim nächsten Mal"-Schema in 8 Feedbacks (`info-04-zimmer-betreten` 2 Phasen, `dur-06-komp1-verschlucken`, `dur-09-mobilisation-bettkante` 4 Phasen)
+- **U-01-Fix (31 Begriffe)**: 1 NEUER inlineWissen-Step `ce02-petrov-beob-00-fachbegriffe-grundlagen` VOR der Brilliantfrage 2.1 mit Definitionen für Motorik/Tonus/Dorsalflexion/GUSS/Immobilität/Dekubitus/Druckgeschwür. Definitions-Pattern `**Begriff** =` in body von Phase-3/4/5/6 text-Steps eingebettet (Aspirationsgefahr, Pflegeproblem, Dekubitusrisiko, SMART, ABCDE, Schultergürtel, Mundpflege, stille Aspiration, ankündigen, Schlucktherapeutin, Reha, Prognose, SpO2, Pulsoximeter, Sauerstoffsättigung, Schulterblatt, Steißbein, Prädilektionsstellen, Broca-Aphasie).
+- **B-01-Fix (38 Begriffe)**: glossarBegriffe-Listen in 8 Steps massiv erweitert
+- Walkthrough-Validator: 0/0/0, Deep-Validator: 0/0/0, TypeScript: clean (Petrov-Files)
+
+## CE-02 Deep-Validator Welle 2 — ls-yilmaz-spirale2 (2026-05-01)
+- **79 → 0/0/0**: 39 HOCH (36× U-01, 3× S-01) + 4 MITTEL (S-04) + 36 NIEDRIG (B-01) komplett gefixt
+- Strategie-Memo: [feedback_deep_validator_pattern.md](feedback_deep_validator_pattern.md) — Validator schaut NICHT in `inlineWissen.kerntext`, nur in `body/context/transition/musterantwort/aufgabentext/kontext/fallbezug`
+- **6 Phase-Files** in `content/ce-02/situationen/ls-yilmaz-spirale2/` editiert: Definitionen mit `**Begriff** =`-Markern in den `body` der ersten Inline-Wissen-/Text-Steps jeder Phase, glossarBegriffe-Listen massiv erweitert
+- 2 Sandwich-Feedbacks umformuliert (`durch-05-kommunikation-während`, `eval-opt-02-negativszenario`)
+- Walkthrough-Validator: 0/0/0, Deep-Validator: 0/0/0, TypeScript: clean
+
 ## CE-02 Didaktik-Review PASS (2026-04-22)
 - **Status**: `CE_MANIFEST[ce-02].status = "geprueft"` — von "steps" auf "geprueft" erhöht
 - **Reports**:

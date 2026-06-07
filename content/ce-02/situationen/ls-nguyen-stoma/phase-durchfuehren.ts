@@ -30,13 +30,13 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Material-Check: Was muss VOR dem Öffnen des Beutels passiert sein?",
-        body: "Bevor du den alten Beutel öffnest, müssen bestimmte Schritte abgeschlossen sein. Reihenfolge mit fachlicher Begründung — besonders: Würdeschutz für Herrn Nguyen und den Zimmernachbarn.",
+        body: "**Würdeschutz** = pflegerische Maßnahmen, die die Würde des Patienten wahren — z.B. Sichtschutz, Türen schließen, Ankündigung jeder Handlung, Wahlfreiheit ermöglichen.\n\nBevor du den alten Beutel öffnest, müssen bestimmte Schritte abgeschlossen sein. Reihenfolge mit fachlicher Begründung — besonders: Würdeschutz für Herrn Nguyen und den Zimmernachbarn.",
         glossarBegriffe: ["Intimsphäre", "Würdeschutz"],
       },
       contentB1: {
         title: "Was machst du VOR dem Öffnen des Beutels?",
-        body: "Bevor du den Beutel öffnest — was muss fertig sein? Sortiere die Schritte.",
-        glossarBegriffe: ["Würde", "Vorbereitung"],
+        body: "**Würdeschutz** = was du tust, damit Herr Nguyen seine Würde behält — Vorhang zuziehen, Tür schließen, vorher sagen was du tust, ihn entscheiden lassen.\n\nBevor du den Beutel öffnest — was muss fertig sein? Sortiere die Schritte.",
+        glossarBegriffe: ["Würde", "Vorbereitung", "Würdeschutz"],
       },
       question: {
         fragetext:
@@ -75,12 +75,12 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Stoma-Durchmesser — warum Millimeter zählen",
         body: "",
-        glossarBegriffe: ["Stoma-Durchmesser", "Messschablone", "Abschwellung"],
+        glossarBegriffe: ["Stoma-Durchmesser", "Messschablone", "Abschwellung", "Stoma"],
       },
       contentB1: {
         title: "Stoma-Durchmesser — warum jeder Millimeter wichtig ist",
         body: "",
-        glossarBegriffe: ["Stoma-Durchmesser", "Schablone"],
+        glossarBegriffe: ["Stoma-Durchmesser", "Schablone", "Stoma"],
       },
       inlineWissen: {
         bausteinRef: "stoma-durchmesser",
@@ -240,9 +240,9 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
                   "Herr Nguyen wirkt angespannt. Er dreht den Kopf zur Wand.",
                 score: 0,
                 feedback:
-                  "Nicht richtig. Vollständiges Schweigen lässt den Patienten im Unklaren — er weiß nicht was als nächstes kommt, was Angst und Kontrollverlust verstärkt. Auch wenn Herr Nguyen wegschaut: kurze Ankündigungen geben ihm Würde und ermöglichen informierte Duldung. 'Nichts sagen' ist keine würdevolle Pflege.",
+                  "Du hast erkannt, dass Herr Nguyen Ruhe braucht — der Impuls ist nachvollziehbar. Aber vollständiges Schweigen lässt den Patienten im Unklaren, weil er nicht weiß was als nächstes kommt — das verstärkt Angst und Kontrollverlust. Stattdessen: Auch wenn Herr Nguyen wegschaut, kurze Ankündigungen geben ihm Würde und ermöglichen informierte Duldung. Stille darf sein, aber begleitet von Orientierungs-Sätzen.",
                 feedbackB1:
-                  "Nicht richtig. Schweigen macht Herrn Nguyen unsicher. Er weiß nicht was als nächstes kommt. Kurze Ankündigungen sind wichtig.",
+                  "Du hast erkannt, dass Herr Nguyen Ruhe braucht — verständlich. Aber Schweigen macht ihn unsicher, weil er nicht weiß was als nächstes kommt. Stattdessen: Kurze Ankündigungen geben ihm Sicherheit.",
               },
             ],
           },
@@ -263,9 +263,9 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
                   "Linh übersetzt. Herr Nguyen nickt leicht.",
                 score: 3,
                 feedback:
-                  "Richtig. Ein kurzes positives Feedback zum Stoma-Befund ist fachlich korrekt und gibt Herrn Nguyen eine erste Orientierung: Sein Körper tut gerade etwas Gesundes. Das ist ein kleiner, wichtiger Baustein auf dem Weg zur Körperbild-Akzeptanz — nicht als falscher Optimismus, sondern als sachliche Information.",
+                  "Richtig. Ein kurzes positives Feedback zum Stoma-Befund ist fachlich korrekt, weil es Herrn Nguyen eine erste Orientierung gibt: Sein Körper tut gerade etwas Gesundes. Deshalb ist das ein kleiner, wichtiger Baustein auf dem Weg zur Körperbild-Akzeptanz — nicht beschwichtigend, sondern als sachliche Information.",
                 feedbackB1:
-                  "Gut. Du gibst ihm eine Information, die gut ist. 'Das Stoma ist rosig' — das ist positiv und korrekt.",
+                  "Gut. Du gibst ihm eine Information, die hilft. 'Das Stoma ist rosig' — das ist positiv und korrekt.",
               },
               {
                 text: "Nichts sagen — erst fertig werden, dann reden.",
@@ -277,9 +277,9 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
                   "Herr Nguyen wartet. Er weiß nicht was passiert.",
                 score: 1,
                 feedback:
-                  "Nicht falsch — aber eine Chance verpasst. Ein ruhiger Kommentar zum Stoma-Befund ('sieht gut aus') gibt Herrn Nguyen eine sachliche Information und baut minimalst Vertrauen auf. Vollständiges Schweigen ist zwar nicht falsch, aber nicht optimal bei einem Patienten der sich schämt und Orientierung braucht.",
+                  "Du hast einen wichtigen Punkt erkannt — fokussiertes Arbeiten ist gut. Aber eine Chance verpasst, weil ein ruhiger Kommentar zum Stoma-Befund ('sieht gut aus') Herrn Nguyen eine sachliche Information gibt und Vertrauen aufbaut. Stattdessen: Sachlicher Kurzkommentar während des Wechsels — das ist nicht Plauderei, sondern Würdeschutz.",
                 feedbackB1:
-                  "Nicht falsch — aber ein kurzes Wort wäre besser. Herr Nguyen braucht Orientierung.",
+                  "Du hast erkannt, dass Konzentration wichtig ist — gut. Aber ein kurzes Wort wäre besser, weil Herr Nguyen Orientierung braucht. Stattdessen: Sag kurz 'Das Stoma sieht gut aus' — das hilft ihm.",
               },
             ],
           },
@@ -301,15 +301,15 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "KOMPLIKATION 1 — 'Ich bin kein richtiger Mann mehr'",
-        body: "Mitten im Beutelwechsel, du trocknest die Haut rund um das Stoma. Herr Nguyen sagt leise, auf Deutsch, ohne Linh anzusehen: **'Ich bin kein richtiger Mann mehr.'** Du hörst es. Linh hört es. Ehefrau Mai schaut auf. Was tust du?",
+        body: "**Körperbild-Akzeptanz** = der innere Prozess, bei dem ein Patient die Veränderung seines Körpers (z.B. nach einer Stoma-OP) als Teil von sich annimmt. Akzeptanz braucht Wochen bis Monate und kann nicht erzwungen werden — sie wird durch Würde, Offenheit und Geduld der Pflege ermöglicht.\n\nMitten im Beutelwechsel, du trocknest die Haut rund um das Stoma. Herr Nguyen sagt leise, auf Deutsch, ohne Linh anzusehen: **'Ich bin kein richtiger Mann mehr.'** Du hörst es. Linh hört es. Ehefrau Mai schaut auf. Was tust du?",
         fallbezug:
           "Patientenzitat Z3. Dieses Zitat ist das emotionale Zentrum dieser Lernsituation. Der Umgang damit bestimmt, ob Herr Nguyen einen ersten Schritt in Richtung Körperbild-Akzeptanz machen kann.",
-        glossarBegriffe: ["Körperbild", "Würde", "Spiegeln"],
+        glossarBegriffe: ["Körperbild", "Würde", "Spiegeln", "Körperbild-Akzeptanz"],
       },
       contentB1: {
         title: "KOMPLIKATION 1 — 'Ich bin kein richtiger Mann mehr'",
-        body: "Während du die Haut trocknest sagt Herr Nguyen leise auf Deutsch: **'Ich bin kein richtiger Mann mehr.'** Linh hört es. Ehefrau Mai schaut auf. Was tust du?",
-        glossarBegriffe: ["Körperbild", "Würde"],
+        body: "**Körperbild-Akzeptanz** = wenn ein Patient annimmt, dass sein Körper sich verändert hat (z.B. nach einer Stoma-OP). Das braucht Zeit — Wochen oder Monate.\n\nWährend du die Haut trocknest sagt Herr Nguyen leise auf Deutsch: **'Ich bin kein richtiger Mann mehr.'** Linh hört es. Ehefrau Mai schaut auf. Was tust du?",
+        glossarBegriffe: ["Körperbild", "Würde", "Körperbild-Akzeptanz"],
       },
       question: {
         fragetext: "Herr Nguyen sagt: 'Ich bin kein richtiger Mann mehr.' Was tust du?",
@@ -317,15 +317,15 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
           {
             text: "'Das ist doch nicht so. Sie sind noch derselbe Mensch.'",
             feedback:
-              "Entwertend — auch wenn gut gemeint. Diese Antwort minimiert Herrn Nguyens Erleben. Er hat nicht gesagt 'Ich fühle mich anders' — er hat gesagt 'Ich bin kein richtiger Mann mehr.' Das ist kein Irrtum den du korrigieren kannst, sondern ein tiefer Schmerz der gehört werden will. 'Das ist doch nicht so' sagt: Dein Erleben ist falsch. Das ist das Gegenteil von würdevoller Begegnung.",
+              "Du wolltest Herrn Nguyen Trost spenden — der Impuls ist menschlich. Aber entwertend, weil diese Antwort sein Erleben minimiert. Er hat nicht gesagt 'Ich fühle mich anders' — er hat gesagt 'Ich bin kein richtiger Mann mehr.' Das ist kein Irrtum den du korrigieren kannst, sondern ein tiefer Schmerz der gehört werden will. Stattdessen: Spiegeln statt Korrigieren. Sein Erleben anerkennen und Raum lassen — das ist würdevolle Begegnung.",
             feedbackB1:
-              "Nicht gut. Du versuchst ihn zu beruhigen — aber du wertest sein Erleben ab. Er fühlt so. Das ist real.",
+              "Du wolltest ihn beruhigen — der Impuls ist gut gemeint. Aber: Du wertest sein Erleben ab, weil er sich wirklich so fühlt. Stattdessen: Sein Gefühl ernst nehmen, ohne es zu bewerten.",
             isCorrect: false,
           },
           {
             text: "Kurz Pause machen. Handgriff stoppen. Ihn anschauen: 'Das muss sich sehr schwer anfühlen. Darf ich kurz mit Ihnen darüber reden, wenn wir fertig sind?'",
             feedback:
-              "Richtig. Vier Elemente dieser Reaktion sind entscheidend: 1) Pause — Körper und Wort trennen (er spricht, du hörst), 2) Blickkontakt — Würde und Präsenz, 3) Spiegeln statt falscher Trost ('Das muss sich schwer anfühlen' = du nimmst es ernst ohne es zu bewerten), 4) Raum lassen ('Darf ich?') — nicht aufdrängen, Einverständnis einholen. Das ist pflegetherapeutisches Handeln nach dem ICN-Ethik-Kodex.",
+              "Richtig. Vier Elemente dieser Reaktion sind entscheidend, weil sie Würde herstellen: 1) Pause — Körper und Wort trennen (er spricht, du hörst), 2) Blickkontakt — Würde und Präsenz, 3) Spiegeln statt beschwichtigender Antwort ('Das muss sich schwer anfühlen' = du nimmst es ernst ohne es zu bewerten), 4) Raum lassen ('Darf ich?') — nicht aufdrängen, Einverständnis einholen. Deshalb ist das pflegetherapeutisches Handeln nach dem ICN-Ethik-Kodex.",
             feedbackB1:
               "Richtig. Du machst Pause. Du schaust ihn an. Du sagst: 'Das klingt schwer.' Das ist Spiegeln — du nimmst sein Gefühl ernst ohne es zu bewerten. Dann bietest du ein Gespräch an — aber du drängst nicht.",
             isCorrect: true,
@@ -356,16 +356,16 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "KOMPLIKATION 2 — 'Mama hat Angst'",
-        body: "Du hast den neuen Beutel angebracht. Alles dicht. Herr Nguyen atmet durch. In diesem Moment spricht Linh: **'Mama hat Angst. Was wenn der Beutel zuhause ausläuft? Was wenn sie es falsch macht?'** Du schaust zur Ehefrau — sie nickt. Wichtig: Primäres Ziel der Stoma-Anleitung ist die Selbstversorgung durch Herrn Nguyen — Ehefrau Mai ist unterstützende Begleiterin und Backup, nicht Hauptpflegeperson. Erst wenn Herr Nguyen es körperlich/sprachlich nicht schaffen kann, übernimmt Mai. Was tust du?",
+        body: "**Selbstversorgung** = der Patient versorgt sein Stoma selbstständig (Beutelwechsel, Hautpflege, Materialwahl) — das langfristige Ziel jeder Stoma-Anleitung.\n\n**Empowerment** = pflegerischer Ansatz, bei dem die Pflegekraft den Patienten befähigt, selbst zu handeln, statt ihn zu übernehmen. Der Patient bekommt Wissen, Fertigkeiten und Selbstvertrauen.\n\nDu hast den neuen Beutel angebracht. Alles dicht. Herr Nguyen atmet durch. In diesem Moment spricht Linh: **'Mama hat Angst. Was wenn der Beutel zuhause ausläuft? Was wenn sie es falsch macht?'** Du schaust zur Ehefrau — sie nickt. Wichtig: Primäres Ziel der Stoma-Anleitung ist die Selbstversorgung durch Herrn Nguyen — Ehefrau Mai ist unterstützende Begleiterin und Backup, nicht Hauptpflegeperson. Erst wenn Herr Nguyen es körperlich/sprachlich nicht schaffen kann, übernimmt Mai. Was tust du?",
         fallbezug: "Patientenzitat Z4. Mais Angst ist real und legitim — aber die Botschaft an sie und an Herrn Nguyen ist: Wir leiten zuerst dich, Herr Nguyen, an. Mai darf zuschauen und mitlernen für den Backup-Fall. Empowerment vor Übernahme.",
         glossarBegriffe: ["Entlassungsmanagement", "Selbstversorgung", "Empowerment", "Stomatherapeut"],
       },
       contentB1: {
         title: "KOMPLIKATION 2 — 'Mama hat Angst'",
-        body: "Du hast den neuen Beutel angebracht. Linh sagt: **'Mama hat Angst. Was wenn der Beutel zuhause ausläuft?'** Ehefrau Mai nickt. Wichtig: Herr Nguyen lernt zuerst — er soll den Beutel selbst wechseln. Mai schaut zu und ist Backup. Was tust du?",
+        body: "**Selbstversorgung** = Herr Nguyen versorgt sein Stoma selbst (Beutel wechseln, Haut pflegen).\n\n**Empowerment** = die Pflegekraft macht den Patienten stark, damit er es selbst kann — nicht 'wir machen das für ihn'.\n\nDu hast den neuen Beutel angebracht. Linh sagt: **'Mama hat Angst. Was wenn der Beutel zuhause ausläuft?'** Ehefrau Mai nickt. Wichtig: Herr Nguyen lernt zuerst — er soll den Beutel selbst wechseln. Mai schaut zu und ist Backup. Was tust du?",
         fallbezug:
           "Ziel: Herr Nguyen versorgt sein Stoma selbst. Mai hilft nur, wenn Herr Nguyen es nicht kann.",
-        glossarBegriffe: ["Selbstversorgung", "Stomatherapeut"],
+        glossarBegriffe: ["Selbstversorgung", "Stomatherapeut", "Empowerment"],
       },
       question: {
         fragetext:
@@ -389,9 +389,9 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
                   "Linh übersetzt. Ehefrau Mai schaut weg.",
                 score: 0,
                 feedback:
-                  "Zu passiv und fachlich falsch. Angehörigen-Anleitung ist eine pflegerische Aufgabe — auch wenn der Stomatherapeut die Hauptanleitung übernimmt. Hier und jetzt: Ehefrau Mai hat gezeigt, dass sie Angst hat. Die richtige Reaktion ist: Kontextualisierung (was kommt, von wem), nicht Abweisung. Die Weichenstellung für das Entlassungsmanagement liegt bei der Pflegekraft.",
+                  "Du hast die Aufgabentrennung erkannt — der Gedanke ist nicht ganz daneben. Aber zu passiv, weil Angehörigen-Anleitung eine pflegerische Aufgabe ist — auch wenn der Stomatherapeut die Hauptanleitung übernimmt. Hier und jetzt hat Ehefrau Mai gezeigt, dass sie Angst hat. Stattdessen: Kontextualisierung (was kommt, von wem), nicht Abweisung — die Weichenstellung für das Entlassungsmanagement liegt deshalb bei der Pflegekraft.",
                 feedbackB1:
-                  "Nicht richtig. Die Angst von Ehefrau Mai ist real und sie braucht eine Antwort — nicht 'das ist nicht mein Problem'.",
+                  "Du hast erkannt, dass es Spezialisten gibt — der Gedanke ist nicht falsch. Aber: Die Angst von Ehefrau Mai ist real und sie braucht jetzt eine Antwort, weil Angehörigen-Anleitung auch Pflege-Aufgabe ist. Stattdessen: Du erklärst, was kommt und wann.",
               },
               {
                 text: "'Frau Mai, ich verstehe Ihre Sorge. Wichtig zu wissen: Wir leiten zuerst Herrn Nguyen an — er soll den Beutel selbst wechseln können. Sie sind dabei und lernen mit, falls er Hilfe braucht. Heute kommt der Stomatherapeut, da können Sie und Herr Nguyen gemeinsam alles fragen.' (Linh übersetzt.)",
@@ -417,9 +417,9 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
                   "Linh übersetzt. Ehefrau Mai nickt, aber sie wirkt sehr überfordert.",
                 score: 1,
                 feedback:
-                  "Gut gemeint — aber überfordert alle Beteiligten. Mitten im Beutelwechsel, ohne Stomatherapeuten, ohne strukturiertes Anleitungskonzept, über Linh als Übersetzerin: Das ist zu viel auf einmal. Ehefrau Mai kann diese Informationsmenge nicht verarbeiten. Außerdem: Die Hauptanleitung ist Aufgabe des Stomatherapeuten (Fachkraft), nicht der Pflegekraft im Akut-Kontext.",
+                  "Du hast Mais Angst ernst genommen und reagiert — der Impuls ist richtig. Aber überfordert alle Beteiligten, weil mitten im Beutelwechsel, ohne Stomatherapeuten, ohne strukturiertes Anleitungskonzept und über Linh als Übersetzerin zu viel auf einmal kommt. Ehefrau Mai kann diese Informationsmenge nicht verarbeiten. Stattdessen: Die Hauptanleitung ist Aufgabe des Stomatherapeuten (Fachkraft) — du verweist konkret darauf, mit Termin und Sicherheit.",
                 feedbackB1:
-                  "Gut gemeint — aber zu viel auf einmal. Jetzt ist nicht der richtige Moment für die komplette Anleitung.",
+                  "Du wolltest helfen und zeigen, dass du dich kümmerst — gut. Aber zu viel auf einmal, weil Ehefrau Mai das nicht aufnehmen kann. Stattdessen: Heute gibt der Stomatherapeut die Anleitung, du verweist auf den Termin.",
               },
             ],
           },
@@ -481,6 +481,20 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
                 feedbackB1:
                   "Richtig. Du gibst ihr: Wann? Um 10 Uhr. Wer? Herr Baum. Wirst du dabei sein? Ja. Das ist Entlastung.",
               },
+              {
+                text: "'Das wird schon. Machen Sie sich keine Sorgen.' (Linh übersetzt.)",
+                textB1:
+                  "'Das wird schon. Keine Sorge.' (Linh übersetzt.)",
+                patientResponse:
+                  "Ehefrau Mai nickt, aber schaut unsicher auf ihre Hände.",
+                patientResponseB1:
+                  "Ehefrau Mai nickt. Sie wirkt nicht beruhigt.",
+                score: 1,
+                feedback:
+                  "Zu vage. 'Das wird schon' ist eine Floskel ohne Inhalt. Ehefrau Mai braucht konkrete Information: Wann kommt wer, was passiert dann, darf sie dabei sein? Ohne diese Eckpunkte bleibt die Angst.",
+                feedbackB1:
+                  "Zu allgemein. 'Das wird schon' hilft nicht. Sie braucht konkrete Antworten: Wann? Wer? Darf sie dabei sein?",
+              },
             ],
           },
         ],
@@ -501,15 +515,15 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "KOMPLIKATION 3 — Beutel undicht",
-        body: "20 Minuten nach dem Wechsel ruft Herr Nguyen. Der Beutel ist an der Unterseite undicht — Stomainhalt auf der Bauch-Haut, Bettlaken kontaminiert. Du betrittst das Zimmer. Was tust du zuerst?",
+        body: "**Faltenwurf** = Hautfalten oder Narben rund um das Stoma, durch die die Hautschutzplatte nicht plan aufliegt — eine häufige Leckage-Ursache (Details kommen im Optional-Step).\n\n20 Minuten nach dem Wechsel ruft Herr Nguyen. Der Beutel ist an der Unterseite undicht — Stomainhalt auf der Bauch-Haut, Bettlaken kontaminiert. Du betrittst das Zimmer. Was tust du zuerst?",
         fallbezug:
-          "Leckage ist die häufigste Stoma-Komplikation. Häufige Ursache: falsch angepasste Plattengröße oder Faltenwurf der Haut. Quelle: FG SKM 2023.",
-        glossarBegriffe: ["Leckage", "Stomaplatte", "Mazerierung"],
+          "Leckage ist die häufigste Stoma-Komplikation. Häufige Ursache: nicht passende Plattengröße oder Faltenwurf der Haut. Quelle: FG SKM 2023.",
+        glossarBegriffe: ["Leckage", "Stomaplatte", "Mazerierung", "Faltenwurf"],
       },
       contentB1: {
         title: "KOMPLIKATION 3 — Der Beutel läuft aus",
-        body: "20 Minuten nach dem Wechsel ruft Herr Nguyen. Der Beutel ist undicht — Stuhl auf der Bauchhaut, Bettlaken nass. Du gehst ins Zimmer. Was tust du zuerst?",
-        glossarBegriffe: ["Leckage", "Stomaplatte"],
+        body: "**Faltenwurf** = Falten in der Haut rund um das Stoma. Die Klebeplatte liegt dann nicht glatt → der Beutel wird undicht.\n\n20 Minuten nach dem Wechsel ruft Herr Nguyen. Der Beutel ist undicht — Stuhl auf der Bauchhaut, Bettlaken nass. Du gehst ins Zimmer. Was tust du zuerst?",
+        glossarBegriffe: ["Leckage", "Stomaplatte", "Faltenwurf"],
       },
       question: {
         fragetext:
@@ -518,17 +532,17 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
           {
             text: "Sofort den Beutel abermals wechseln.",
             feedback:
-              "Falsche Priorität. Stomainhalt auf der Haut ist aggressiv — bei Kolostoma leicht alkalisch, bei Ileostoma enzymatisch und stark hautaggressiv. Jede Minute, die der Inhalt auf der Haut bleibt, erhöht das Mazerierungsrisiko. Die Haut muss zuerst gereinigt und getrocknet werden — dann wird beurteilt ob und wie die Platte neu angelegt werden muss.",
+              "Du hast erkannt, dass schnelles Handeln wichtig ist — der Impuls stimmt. Aber die Priorität ist anders, weil Stomainhalt auf der Haut aggressiv ist (bei Kolostoma leicht alkalisch, bei Ileostoma enzymatisch stark hautaggressiv). Jede Minute, die der Inhalt auf der Haut bleibt, erhöht das Mazerierungsrisiko. Stattdessen: Haut zuerst reinigen und trocknen — dann wird beurteilt, ob und wie die Platte neu angelegt werden muss.",
             feedbackB1:
-              "Nicht zuerst. Erst die Haut reinigen — der Stuhl beschädigt die Haut. Dann den Beutel neu anlegen.",
+              "Du hast erkannt, dass es schnell gehen muss — gut. Aber: Erst die Haut reinigen, weil der Stuhl die Haut angreift. Stattdessen: Haut zuerst, dann den Beutel neu anlegen.",
             isCorrect: false,
           },
           {
             text: "Haut sofort reinigen und gründlich trocknen — dann Beutel und Platte beurteilen, ob neu angelegt werden muss.",
             feedback:
-              "Richtig. Haut vor Beutel — das ist die Prioritätsreihenfolge bei Leckage. Stomainhalt auf Haut = Mazerationsgefahr = sofort handeln. Nach der Hautreinigung: Beurteilen wo die Leckage war (Platte-Haut-Übergang? Beutel-Platten-Verbindung? Falsch angepasste Plattengröße?). Dann Konsequnz: Platte neu anpassen, Stoma nochmals ausmessen. Quelle: FG SKM 2023.",
+              "Richtig. Haut vor Beutel — das ist die Prioritätsreihenfolge bei Leckage, weil Stomainhalt auf Haut akute Mazerationsgefahr bedeutet. Nach der Hautreinigung: Beurteilen wo die Leckage war (Platte-Haut-Übergang? Beutel-Platten-Verbindung? Plattengröße zu groß oder zu klein?). Deshalb dann Platte neu anpassen, Stoma nochmals ausmessen. Quelle: FG SKM 2023.",
             feedbackB1:
-              "Richtig. Erst die Haut reinigen und trocknen. Dann schauen: Warum war der Beutel undicht? Dann neu anlegen.",
+              "Richtig. Erst die Haut reinigen und trocknen, weil der Stuhl die Haut angreift. Stattdessen wird der Beutel danach neu angelegt.",
             isCorrect: true,
           },
           {
@@ -557,13 +571,13 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Ganzkörperpflege: Reihenfolge nach Hygiene-Grundsatz",
-        body: "Du führst jetzt die Ganzkörperpflege durch. Herr Nguyen ist geschwächt, kann nicht selbst waschen. Welche Körperbereiche werden in welcher Reihenfolge gewaschen? Wichtig: Die Stomaversorgung läuft NICHT als Schritt der GKP, sondern als eigenständige Maßnahme — eigenes Set, eigene Schüssel, vor oder nach der GKP. Sortiere die GKP-Schritte.",
+        body: "**Von sauber zu unrein** = Hygiene-Prinzip der Ganzkörperpflege: Du beginnst beim saubersten Körperbereich (Gesicht) und arbeitest dich zum unreinsten (Genital-/Perianalbereich) vor. So vermeidest du, dass Keime von Bereichen mit hoher Bakterien-Belastung in saubere Bereiche getragen werden (Kreuzkontamination).\n\nDu führst jetzt die Ganzkörperpflege durch. Herr Nguyen ist geschwächt, kann nicht selbst waschen. Welche Körperbereiche werden in welcher Reihenfolge gewaschen? Wichtig: Die Stomaversorgung läuft NICHT als Schritt der GKP, sondern als eigenständige Maßnahme — eigenes Set, eigene Schüssel, vor oder nach der GKP. Sortiere die GKP-Schritte.",
         glossarBegriffe: ["von sauber zu unrein", "Kreuzkontamination"],
       },
       contentB1: {
         title: "Ganzkörperpflege: In welcher Reihenfolge waschen?",
-        body: "Du wäschst Herrn Nguyen. Er kann es nicht alleine. Wichtig: Die Stomapflege ist ein eigener Vorgang — nicht Teil der Ganzkörperpflege. Sortiere die Schritte der GKP.",
-        glossarBegriffe: ["Hygiene", "Stoma"],
+        body: "**Von sauber zu unrein** = Hygiene-Regel: Du wäschst zuerst die saubersten Bereiche (Gesicht), zuletzt die unsaubersten (Genital). So wandern keine Keime mit.\n\nDu wäschst Herrn Nguyen. Er kann es nicht alleine. Wichtig: Die Stomapflege ist ein eigener Vorgang — nicht Teil der Ganzkörperpflege. Sortiere die Schritte der GKP.",
+        glossarBegriffe: ["Hygiene", "Stoma", "von sauber zu unrein"],
       },
       question: {
         fragetext:
@@ -593,13 +607,13 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "Erste Mobilisation — 4. postoperativer Tag",
-        body: "Herr Nguyen ist jetzt gewaschen und versorgt. Durch Linh lässt er ausrichten: Er möchte aufsetzen. Wie planst du die erste Mobilisation für diesen Moment — 4. postoperativer Tag, Stoma, Schmerz NRS 3/10, BMI 19?",
-        glossarBegriffe: ["Mobilisation", "NRS", "Orthostase", "Bettkante"],
+        body: "**NRS** (= Numeric Rating Scale) = ein numerisches Bewertungs-Instrument mit Werten von 0 bis 10 zur Beurteilung von Schmerz. 0 = keine Schmerzen, 10 = stärkster vorstellbarer Schmerz. Pflege-Standard.\n\nHerr Nguyen ist jetzt gewaschen und versorgt. Durch Linh lässt er ausrichten: Er möchte aufsetzen. Wie planst du die erste Mobilisation für diesen Moment — 4. postoperativer Tag, Stoma, Schmerz NRS 3/10, BMI 19?",
+        glossarBegriffe: ["Mobilisation", "NRS", "Orthostase", "Bettkante", "NRS (= Numeric Rating Scale)"],
       },
       contentB1: {
         title: "Herr Nguyen möchte aufsetzen — wie planst du?",
-        body: "Herr Nguyen möchte aufsetzen. 4. Tag nach der OP. Schmerz NRS 3/10. BMI 19. Wie gehst du vor?",
-        glossarBegriffe: ["Mobilisation", "Bettkante", "Schwindel"],
+        body: "**NRS** = Numeric Rating Scale = ein Bewertungs-Werkzeug von 0 bis 10 für Schmerz. 0 = kein Schmerz, 10 = stärkster Schmerz. Standard in der Pflege.\n\nHerr Nguyen möchte aufsetzen. 4. Tag nach der OP. Schmerz NRS 3/10. BMI 19. Wie gehst du vor?",
+        glossarBegriffe: ["Mobilisation", "Bettkante", "Schwindel", "NRS"],
       },
       question: {
         fragetext:
@@ -610,9 +624,9 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
             text: "Ich bringe ihn sofort auf den Stuhl — Bewegung ist das Wichtigste.",
             isCorrect: false,
             explanation:
-              "Zu schnell. Post-OP-Mobilisation folgt einem Stufenprinzip: Bettkante → Aufstehen → kurze Schritte → Stuhl. Direkt auf den Stuhl ohne Vorstufen ist bei BMI 19 + Schmerz NRS 3 + Ramipril (Orthostase-Risiko) zu risikoreich. Schwindel beim Aufstehen kann zu Sturz führen.",
+              "Du hast erkannt, dass Mobilisation wichtig ist — fachlich richtig. Aber zu schnell, weil Post-OP-Mobilisation einem Stufenprinzip folgt: Bettkante → Aufstehen → kurze Schritte → Stuhl. Stattdessen: Direkt auf den Stuhl ohne Vorstufen ist bei BMI 19 + Schmerz NRS 3 + Ramipril (Orthostase-Risiko) zu risikoreich. Deshalb können Schwindel beim Aufstehen zu Sturz führen.",
             explanationB1:
-              "Zu schnell. Man muss in Schritten vorgehen: erst Bettkante, dann Aufstehen, dann Stuhl. Direkt auf den Stuhl kann gefährlich sein.",
+              "Du hast erkannt, dass Bewegung wichtig ist — gut. Aber zu schnell, weil man in Schritten vorgehen muss: erst Bettkante, dann Aufstehen, dann Stuhl. Stattdessen: Direkt auf den Stuhl kann gefährlich sein.",
           },
           {
             text: "Schellong-Modus: RR liegend messen und dokumentieren → an die Bettkante setzen, 1–3 Min warten, RR sitzend messen → erst dann ans Aufstehen denken. Bei RR-Abfall ≥20 mmHg systolisch oder Schwindel: zurücklegen.",
@@ -626,17 +640,17 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
             text: "Mobilisation erst wenn Schmerz NRS < 2.",
             isCorrect: false,
             explanation:
-              "NRS < 2 ist kein realistisches Ziel bei frischer post-OP-Situation mit Stoma. Warten auf NRS < 2 bedeutet oft: keine Mobilisation. Das erhöht Dekubitus- und Thromboserisiko. NRS 3/10 ist tolerierbar für Mobilisation — wichtig ist: Schmerzschutz (Metamizol 30 Min vor geplanter Mobilisation), dann vorsichtig beginnen.",
+              "Du hast erkannt, dass Schmerz die Mobilisation beeinflusst — fachlich richtig. Aber NRS < 2 ist kein realistisches Ziel bei frischer post-OP-Situation mit Stoma, weil Warten auf NRS < 2 oft keine Mobilisation bedeutet — und das erhöht Dekubitus- und Thromboserisiko. Stattdessen: NRS 3/10 ist tolerierbar — Schmerzschutz (Metamizol 30 Min vor Mobilisation), dann vorsichtig beginnen.",
             explanationB1:
-              "NRS 3/10 ist tolerierbar. Warten auf NRS < 2 ist nicht realistisch. Schmerzmittel geben (30 Min vorher), dann mobilisieren.",
+              "Du hast erkannt, dass Schmerz wichtig ist — gut. Aber: NRS 3/10 ist tolerierbar, weil Warten auf NRS < 2 nicht realistisch ist. Stattdessen: Schmerzmittel geben (30 Min vorher), dann mobilisieren.",
           },
           {
             text: "Nur die Physiotherapeutin darf Herrn Nguyen mobilisieren.",
             isCorrect: false,
             explanation:
-              "Falsch. Erste Mobilisation (Bettkante, kurze Schritte) ist eine pflegerische Aufgabe — kein Physiotherapie-Vorbehalt. Die Physiotherapeutin unterstützt Aufbau und komplexe Übungen, aber die Pflege ist für die tägliche Mobilisations-Pflege verantwortlich. Delegieren ist hier falsch.",
+              "Du hast die Rollenklarheit erkannt — der Gedanke ist nicht ganz daneben. Aber unzutreffend, weil die erste Mobilisation (Bettkante, kurze Schritte) eine pflegerische Aufgabe ist — kein Physiotherapie-Vorbehalt. Stattdessen: Die Physiotherapeutin unterstützt Aufbau und komplexe Übungen, die Pflege ist für die tägliche Mobilisations-Pflege verantwortlich. Deshalb: Pflege übernimmt die Bettkante, Physio die Aufbauübungen.",
             explanationB1:
-              "Nicht richtig. Die Pflegekraft kann Herrn Nguyen mobilisieren — an die Bettkante ist Pflege-Aufgabe. Die Physio hilft bei komplexeren Übungen.",
+              "Du hast erkannt, dass es Spezialisten gibt — der Gedanke ist verständlich. Aber: Die Pflegekraft kann Herrn Nguyen an die Bettkante mobilisieren, weil das Pflege-Aufgabe ist. Stattdessen: Pflege macht die Bettkante, Physio hilft bei komplexeren Übungen.",
           },
         ],
       },
@@ -659,12 +673,12 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Schutzpaste — was, warum, wie?",
         body: "Die Schutzpaste (auch Stomapaste, Hautschutzpaste) ist ein wichtiger Bestandteil der Stoma-Versorgung.\n\n**Was:** Eine zähflüssige Paste auf Pektin-Basis (z.B. Stomahesive-Paste von ConvaTec, Cohesive-Paste von Coloplast).\n\n**Warum:** Stomainhalt enthält Enzyme und Bakterien, die die Haut angreifen. Die Schutzpaste bildet eine Barriere + füllt kleine Unebenheiten der Haut aus → die Stomaplatte sitzt dichter, das Leckage-Risiko sinkt.\n\n**Wie:** 1) Dünn auftragenüberall um die Stomaöffnung (kein Häufen), 2) Ring-förmig, ca. 2–3 mm dick, 3) Kurz antrocknen lassen (1–2 Min), 4) Dann Stomaplatte aufsetzen. Wichtig: Paste NICHT auf das Stoma selbst auftragen.",
-        glossarBegriffe: ["Schutzpaste", "Pektin", "Stomaplatte"],
+        glossarBegriffe: ["Schutzpaste", "Pektin", "Stomaplatte", "Haut", "Leckage", "Risiko", "Stoma"],
       },
       contentB1: {
         title: "Schutzpaste — was ist das?",
         body: "Schutzpaste schützt die Haut rund um das Stoma.\n\nWarum: Der Stuhl aus dem Stoma greift die Haut an. Die Schutzpaste schützt die Haut davor.\n\nWie: 1) Dünn auftragen — rund um die Stomaöffnung, 2) Ring-Form, 3) Kurz trocknen lassen, 4) Dann die Stomaplatte aufsetzen. Nicht auf das Stoma selbst auftragen.",
-        glossarBegriffe: ["Schutzpaste", "Stomaplatte"],
+        glossarBegriffe: ["Schutzpaste", "Stomaplatte", "Haut", "Stoma"],
       },
     },
 
@@ -728,12 +742,12 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Faltenwurf — warum die Bauchdecke nicht immer glatt ist",
         body: "",
-        glossarBegriffe: ["Faltenwurf", "Stomaplatte", "Leckage"],
+        glossarBegriffe: ["Faltenwurf", "Stomaplatte", "Leckage", "Ursache"],
       },
       contentB1: {
         title: "Faltenwurf — Hautfalten um das Stoma",
         body: "",
-        glossarBegriffe: ["Faltenwurf", "Leckage"],
+        glossarBegriffe: ["Faltenwurf", "Leckage", "Ursache"],
       },
       inlineWissen: {
         bausteinRef: "faltenwurf",

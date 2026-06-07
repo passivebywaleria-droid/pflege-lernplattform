@@ -151,12 +151,18 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
         body: "Analogie: Kohlenhydrate = Kurzzeit-Kraftstoff (schnell verfügbar, schnell verbraucht). Fette = Langzeit-Reserve (langfristige Energie, Wärmeschutz). Proteine = Baumaterial (Wundheilung, Immunabwehr, Muskeln, Albumin).\n\nWarum ist Protein für Frau Schmidt so wichtig? Albumin-Mangel (31 g/l) bedeutet: Der Körper kann keine Wunden heilen, keine Immunabwehr aufbauen und keine Ödeme verhindern.\n\n**Protein-Bedarf bei Adipositas mit Mangelernährung — Berechnung:** Wichtig: Bei Adipositas wird das **Idealgewicht** als Berechnungsbasis genommen (nicht das Istgewicht — sonst Überschätzung), nach BMI 22 oder Broca. Bei Frau Schmidt (1,60 m): Idealgewicht ca. 56 kg.\n- Erhaltungsbedarf (gesund): 0,8 g × 56 kg = ca. 45 g/Tag (DGE D-A-CH 2024)\n- Bei nachgewiesener Mangelernährung: 1,2 g × 56 kg = **ca. 67 g/Tag** (ESPEN 2017 Guidelines)\n\nFertigpizza (Beispiel Frau Schmidt): ca. 6-8 g Protein pro 100 g (eine ganze Pizza a 300 g: ca. 18-24 g, aber bei ~700-900 kcal). Hüttenkäse 200 g: ca. 26 g Protein bei nur ~200 kcal. Der Unterschied liegt nicht im Verzicht, sondern in der Auswahl.",
         fallbezug:
           "Frau Schmidt isst aktuell proteinarme Fertigprodukte. Die Analogie macht verständlich warum das trotz ausreichender Kalorien problematisch ist. Berechnungsbasis: Idealgewicht 56 kg (BMI 22 bei 1,60 m), nicht Istgewicht 98 kg.",
-        glossarBegriffe: ["Protein", "Albumin", "Makronährstoffe", "Idealgewicht"],
+        glossarBegriffe: [
+          "Protein", "Albumin", "Makronährstoffe", "Idealgewicht",
+          "Mangelernährung", "BMI", "Ernährung", "Kalorien", "Adipositas",
+        ],
       },
       contentB1: {
         title: "Makro-Nährstoffe einfach erklärt",
         body: "Analogie: Was sind Makro-Nährstoffe?\n- **Kohlenhydrate** (= Zucker und Stärke) = schnelle Energie. Zum Beispiel: Brot, Nudeln, Reis.\n- **Fette** = lang andauernde Energie. Zum Beispiel: Öl, Käse, Nüsse.\n- **Protein** (= Eiweiß) = Baumaterial für den Körper. Zum Beispiel: Fleisch, Eier, Hülsenfrüchte.\n\nFrau Schmidt braucht mehr Protein. Warum? Protein hilft: Wunden heilen, Immunsystem stärken, Ödeme (= Wasser-Einlagerungen) verhindern. Eine Fertig-Pizza hat viel Kohlenhydrate und Fett — aber wenig Protein.\n\n**Wie viel Protein braucht Frau Schmidt?** Wichtig: Bei Adipositas rechnet man mit dem **Idealgewicht**, nicht mit dem aktuellen Gewicht. Frau Schmidts Idealgewicht ist ca. 56 kg (bei 1,60 m).\n- Gesund: 0,8 g × 56 kg = ca. 45 g/Tag\n- Bei Mangel-Ernährung wie bei Frau Schmidt: 1,2 g × 56 kg = ca. **67 g/Tag**",
-        glossarBegriffe: ["Protein", "Albumin", "Idealgewicht"],
+        glossarBegriffe: [
+          "Protein", "Albumin", "Idealgewicht",
+          "Mangelernährung", "BMI", "Ernährung", "Kalorien", "Adipositas",
+        ],
       },
     },
 
@@ -178,12 +184,12 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
         body: "Du hast gehört: Frau Schmidt fehlt die Freude am Kochen seit der Scheidung. Fertigprodukte wurden zur Gewohnheit. Bevor du jetzt über Lebensmittel sprichst, baust du eine Brücke: \"Frau Schmidt, ich hab eine Idee. Drei alltagsnahe Mahlzeiten — die brauchen kein Kochen. Hüttenkäse aufs Brot. Ein gekochtes Ei. Joghurt mit Nüssen. Das passt zu Ihrem Alltag — und liefert Protein.\"\n\nDieser Übergang ist wichtig: Du knüpfst an ihre Biographie an. Du machst aus dem \"Kochen-keine-Freude-mehr\" keine Kritik — sondern eine Lösung. Erst danach öffnet sich Frau Schmidt für konkrete Lebensmittel-Sortierung.",
         fallbezug:
           "Frau Schmidts Biographie (Kochen ohne Freude) wird zum Anker: Drei No-Cook-Mahlzeiten als realistischer Vorschlag.",
-        glossarBegriffe: ["Motivierende Gesprächsführung"],
+        glossarBegriffe: ["Motivierende Gesprächsführung", "Biographie", "Protein"],
       },
       contentB1: {
         title: "Übergang — von Biographie zu Lebensmitteln",
         body: "Du hast gehört: Frau Schmidt mag das Kochen nicht mehr. Fertig-Essen ist Gewohnheit.\n\nDu sagst: \"Frau Schmidt, ich habe eine Idee. Drei einfache Mahlzeiten — ohne Kochen. Hüttenkäse aufs Brot. Ein gekochtes Ei. Joghurt mit Nüssen. Das passt zu Ihrem Alltag — und hat viel Protein.\"\n\nDas ist wichtig: Du nimmst Frau Schmidts Geschichte ernst. Du machst keine Vorwürfe. Du gibst eine Lösung, die zu ihr passt.",
-        glossarBegriffe: [],
+        glossarBegriffe: ["Biographie", "Protein"],
       },
     },
 
@@ -579,9 +585,9 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DURCHFUEHREN: SituationsPhase = {
           {
             text: "\"Das geht nicht, wir müssen das dokumentieren, also machen wir es.\"",
             feedback:
-              "Autonomie verletzt, rechtlich falsch. Frau Schmidt hat das Recht auf Selbstpflege soweit möglich (§ 2 PflBG — ressourcenorientierte Pflege). Dokumentation ist deine Aufgabe — nicht ein Argument gegen die Selbstständigkeit der Patientin. Du übernimmst, was Frau Schmidt noch kann.",
+              "Du hast erkannt, dass Dokumentation wichtig ist — das stimmt. Allerdings ist sie deine Aufgabe und kein Druckmittel gegen Frau Schmidt. Hier wird Autonomie übergangen, weil du das übernimmst, was sie selbst noch leisten kann. Ressourcenorientierte Pflege (§ 2 PflBG) verlangt das Gegenteil: stärken was vorhanden ist, statt zu ersetzen. Stattdessen: Begleiten, Klingel in Reichweite, Selbstständigkeit dokumentieren. Beim nächsten Mal trennst du \"Aufgabe der Pflege\" und \"Recht der Patientin\" sauber — du bist dicht dran.",
             feedbackB1:
-              "Nein! Frau Schmidt hat das Recht, selbst zu entscheiden. Das ist ihr Körper. Dokumentation ist deine Aufgabe — kein Argument gegen sie.",
+              "Du hast richtig gesehen: Dokumentieren ist wichtig. Aber: Dokumentation ist DEINE Aufgabe — kein Druckmittel gegen Frau Schmidt. Hier wird ihre Selbstbestimmung übergangen, weil du machst, was sie selbst kann. Ressourcen-orientierte Pflege heißt: stärken was Frau Schmidt schon kann (§ 2 PflBG). Stattdessen: bei ihr bleiben, Klingel hinlegen, ihre Selbstständigkeit aufschreiben. Beim nächsten Mal wirst du das trennen können.",
             isCorrect: false,
           },
           {

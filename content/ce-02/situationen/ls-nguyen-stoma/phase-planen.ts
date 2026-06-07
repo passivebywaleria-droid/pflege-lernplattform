@@ -77,12 +77,12 @@ export const CE02_SIT_NGUYEN_STOMA_PLANEN: SituationsPhase = {
       contentC1: {
         title: "Hautschutz-Schablone — das Werkzeug für die richtige Lochgröße",
         body: "",
-        glossarBegriffe: ["Hautschutz-Schablone", "Hautschutzplatte", "Stoma-Durchmesser"],
+        glossarBegriffe: ["Hautschutz-Schablone", "Hautschutzplatte", "Stoma-Durchmesser", "Schablone"],
       },
       contentB1: {
         title: "Hautschutz-Schablone — wie misst du das Stoma?",
         body: "",
-        glossarBegriffe: ["Hautschutz-Schablone", "Hautschutzplatte"],
+        glossarBegriffe: ["Hautschutz-Schablone", "Hautschutzplatte", "Schablone"],
       },
       inlineWissen: {
         bausteinRef: "hautschutz-schablone",
@@ -208,12 +208,12 @@ export const CE02_SIT_NGUYEN_STOMA_PLANEN: SituationsPhase = {
       contentC1: {
         title: "Ernährungsassessment — systematisch statt Bauchgefühl",
         body: "",
-        glossarBegriffe: ["Ernährungsassessment", "NRS-2002", "interprofessionell"],
+        glossarBegriffe: ["Ernährungsassessment", "NRS-2002", "interprofessionell", "Ernährung"],
       },
       contentB1: {
         title: "Ernährungs-Assessment — Ernährung richtig einschätzen",
         body: "",
-        glossarBegriffe: ["Ernährungsassessment", "NRS-2002"],
+        glossarBegriffe: ["Ernährungsassessment", "NRS-2002", "Ernährung"],
       },
       inlineWissen: {
         bausteinRef: "ernährungsassessment",
@@ -254,13 +254,13 @@ export const CE02_SIT_NGUYEN_STOMA_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Ernährung: Assessment vor Intervention",
-        body: "Herrn Nguyens Ernährungsprotokoll zeigt: 3 Teelöffel Haferschleim gestern Abend, kein Frühstück heute. Was ist dein nächster Schritt?",
-        glossarBegriffe: ["NRS-2002", "Ernährungsassessment", "interprofessionell"],
+        body: "**Kalorien** = Maßeinheit für die Energie, die Nahrung dem Körper liefert (1 kcal = 4,18 kJ). Ein Erwachsener im Krankenhaus benötigt durchschnittlich 1500–2500 kcal pro Tag.\n\n**Trinknahrung** = bilanzierte flüssige Nahrung mit definiertem Kalorien- und Eiweißgehalt (z.B. Fresubin 2 kcal/ml), die als Ergänzung zur normalen Kost oder als Hauptnahrungsquelle eingesetzt wird, wenn Patienten zu wenig essen können oder wollen.\n\nHerrn Nguyens Ernährungsprotokoll zeigt: 3 Teelöffel Haferschleim gestern Abend, kein Frühstück heute. Was ist dein nächster Schritt?",
+        glossarBegriffe: ["NRS-2002", "Ernährungsassessment", "interprofessionell", "Trinknahrung"],
       },
       contentB1: {
         title: "Herr Nguyen isst kaum — was tust du?",
-        body: "Das Ernährungsprotokoll: gestern Abend drei Löffel Haferschleim, heute kein Frühstück. Was ist dein nächster Schritt?",
-        glossarBegriffe: ["NRS-2002", "Ernährungsberaterin"],
+        body: "**Kalorien** = Maß für die Energie im Essen. Ein Erwachsener im Krankenhaus braucht etwa 1500–2500 Kalorien pro Tag.\n\n**Trinknahrung** = flüssige Nahrung mit viel Energie und Eiweiß, in kleinen Flaschen. Wird gegeben, wenn ein Patient nicht genug essen kann.\n\nDas Ernährungsprotokoll: gestern Abend drei Löffel Haferschleim, heute kein Frühstück. Was ist dein nächster Schritt?",
+        glossarBegriffe: ["NRS-2002", "Ernährungsberaterin", "Trinknahrung"],
       },
       question: {
         fragetext:
@@ -285,9 +285,9 @@ export const CE02_SIT_NGUYEN_STOMA_PLANEN: SituationsPhase = {
           {
             text: "Ich gebe ihm Trinknahrung aus dem Stationsvorrat.",
             feedback:
-              "Nicht vollständig. Trinknahrung kann sinnvoll sein — aber ohne ärztliche Anordnung und ohne Ernährungsassessment (NRS-2002, Kalorienbedarf berechnen, mögliche Kontraindikationen prüfen) ist das eine unvollständige Maßnahme. Außerdem: Ohne Ernährungsberaterin kann keine individuelle Ernährungsstrategie geplant werden, die das Stoma berücksichtigt (z.B. blähende Lebensmittel meiden, Flüssigkeit erhöhen). Trinknahrung als Sofortmaßnahme muss mit Arzt und Ernährungsberaterin abgestimmt werden.",
+              "Du hast die Energieproblematik erkannt — Trinknahrung kann tatsächlich sinnvoll sein. Allerdings unvollständig, weil ohne ärztliche Anordnung und ohne Ernährungsassessment (NRS-2002, Kalorienbedarf berechnen, Kontraindikationen prüfen) eine wichtige Sicherheitsstufe fehlt. Stattdessen: Erst Ernährungsberaterin anfordern + Arzt informieren — sie planen mit dir die individuelle Strategie für ein Kolostoma (blähende Lebensmittel meiden, Flüssigkeitsbedarf erhöhen). Trinknahrung wird dann gezielt eingesetzt.",
             feedbackB1:
-              "Nicht ganz falsch — aber ohne Arzt und Ernährungsberaterin nicht vollständig. Erst Assessment, dann Maßnahme.",
+              "Du hast erkannt, dass Herr Nguyen mehr Energie braucht — das stimmt. Aber unvollständig, weil ohne Arzt und Ernährungsberaterin die Strategie nicht passt. Stattdessen: Erst Assessment (NRS-2002, Beraterin), dann Trinknahrung als geplante Maßnahme.",
             isCorrect: false,
           },
         ],
@@ -312,14 +312,14 @@ export const CE02_SIT_NGUYEN_STOMA_PLANEN: SituationsPhase = {
         body: "Planung auf der chirurgischen Station, 8:05 Uhr.\n\nPsychosoziale Pflege ist keine Zusatzaufgabe für später — sie läuft gleichzeitig mit jeder körperlichen Pflegehandlung. Was das für Herrn Nguyen heute konkret bedeutet:\n\n1) **Beim Beutelwechsel erkläre laut, was du tust** (auch wenn Linh übersetzt) — Herr Nguyen wird Schritt für Schritt einbezogen, auch sprachlich. Er soll nicht das Gefühl haben, dass 'etwas an ihm gemacht wird'.\n\n2) **Ermögliche Herrn Nguyen wegzuschauen** — das ist sein Recht. Das Ziel ist langfristig Eigenständigkeit, nicht heute. Würde geht vor Tempo.\n\n3) **Ehefrau Mai ist beim Wechsel dabei** — nicht als Lernende, sondern als unterstützende Angehörige. Die strukturierte Anleitung für zuhause kommt mit dem Stomatherapeuten Herrn Baum um 10 Uhr — nicht jetzt, nicht ad hoc.\n\n4) **Plane Zeit für Pausen und stille Momente** — das Schweigen von Herrn Nguyen ist Kommunikation. Kulturell respektvoller Umgang mit Scham bedeutet: Raum lassen, nicht aufdrängen.",
         fallbezug:
           "Herr Nguyen, 72 J., hat gesagt 'Ich bin kein richtiger Mann mehr.' Dieses Zitat ist kein Nebensatz — es ist das zentrale psychosoziale Thema dieser Lernsituation. Es wird in Phase 4 explizit aufgegriffen.",
-        glossarBegriffe: ["Körperbild", "Würde", "interkulturell"],
+        glossarBegriffe: ["Körperbild", "Würde", "interkulturell", "Angehörige", "Beutelwechsel", "Kommunikation", "Körperpflege", "Pflege", "Planung", "Ziel"],
       },
       contentB1: {
         title: "Psychosoziale Pflege — was bedeutet das bei Herrn Nguyen?",
         body: "Psychosoziale Pflege heißt: auch an den Menschen denken, nicht nur an die Körperpflege.\n\nBei Herrn Nguyen heißt das:\n\n1) Erkläre laut was du tust (Linh übersetzt) — Herr Nguyen soll sich nicht ausgeliefert fühlen.\n\n2) Er darf wegschauen — das ist sein Recht. Eigenständigkeit kommt later.\n\n3) Ehefrau Mai ist dabei — sie schaut zu, aber das Anleiten kommt mit dem Stomatherapeuten.\n\n4) Lass Pausen und Stille zu — Herr Nguyen spricht wenig. Das ist okay.",
         fallbezug:
           "Herr Nguyen hat gesagt: 'Ich bin kein richtiger Mann mehr.' Das ist wichtig. Es kommt in Phase 4.",
-        glossarBegriffe: ["Würde", "Körperbild"],
+        glossarBegriffe: ["Würde", "Körperbild", "Beutelwechsel", "Kommunikation", "Körperpflege", "Pflege", "Angehörige"],
       },
     },
   ],
@@ -331,7 +331,10 @@ export const CE02_SIT_NGUYEN_STOMA_PLANEN: SituationsPhase = {
       stepType: "text",
       bloomLevel: 2,
       kompetenzbereich: "I.1",
-      quellen: [],
+      quellen: [
+        "Fiechter/Meier (1981): Pflegeplanung — Eine Anleitung für die Praxis (6-stufiger Pflegeprozess)",
+        "§ 630f BGB — Dokumentationspflicht der Behandelnden",
+      ],
       track: "vertiefung",
       modus: "entdecker",
       lernziel: "ce02-nguyen-plan-pflegeplanung",
@@ -340,12 +343,12 @@ export const CE02_SIT_NGUYEN_STOMA_PLANEN: SituationsPhase = {
       contentC1: {
         title: "Wie sieht eine Pflegeplanung aus?",
         body: "Eine Pflegeplanung hat 4 Elemente:\n\n**1) Pflegeproblem** — Was ist das Problem?\n**2) Pflegeziel** (SMART: Spezifisch, Messbar, Attraktiv, Realistisch, Terminiert)\n**3) Pflegemaßnahmen** — Was wird konkret getan? Von wem? Wie oft?\n**4) Evaluation** — Wann wird geprüft ob das Ziel erreicht ist?\n\nBeispiel für Herrn Nguyen:\n- Problem: Neuanlage Kolostoma, 4. Tag post-OP — Patient meidet Blickkontakt mit Stoma\n- Ziel: Herr Nguyen benennt bis Entlassung 3 Zeichen, dass das Stoma gesund aussieht\n- Maßnahmen: Tägliche Inspektion mit lauterer Erklärung (+ Tochter als Übersetzerin), Stomatherapeut einbinden, schrittweise Eigenversorgung anleiten\n- Evaluation: täglich, Stomatherapeut und Pflegekraft gemeinsam",
-        glossarBegriffe: ["Pflegeplanung", "SMART-Ziel", "Pflegeproblem"],
+        glossarBegriffe: ["Pflegeplanung", "SMART-Ziel", "Pflegeproblem", "Evaluation", "Kolostoma", "Patient", "Pflegemaßnahmen", "Pflegeziel", "Problem", "Stoma", "Stomatherapeut"],
       },
       contentB1: {
         title: "Was ist eine Pflegeplanung?",
         body: "Eine Pflegeplanung hat 4 Teile:\n\n**1) Problem** — Was ist das Problem?\n**2) Ziel** — Was soll erreicht werden? (SMART = genau, messbar, realistisch, mit Datum)\n**3) Maßnahmen** — Was tust du? Wann? Wie oft?\n**4) Evaluation** — Wann prüfst du, ob das Ziel erreicht ist?\n\nBeispiel Herr Nguyen:\n- Problem: Er schaut nicht auf sein Stoma\n- Ziel: Er nennt bis zur Entlassung 3 Zeichen, dass das Stoma gesund ist\n- Maßnahmen: Jeden Tag erklären + Stomatherapeut einbinden\n- Evaluation: Täglich prüfen",
-        glossarBegriffe: ["Pflegeplanung", "Ziel", "massnahme"],
+        glossarBegriffe: ["Pflegeplanung", "Ziel", "massnahme", "Evaluation", "Patient", "Stoma", "Stomatherapeut", "Problem", "Kolostoma", "Pflegemaßnahmen", "Pflegeziel"],
       },
     },
 

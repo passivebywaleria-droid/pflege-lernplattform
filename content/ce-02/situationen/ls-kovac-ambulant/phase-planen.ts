@@ -106,14 +106,14 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
         body: "Frau Kovač lehnt die Kompressionsstrümpfe ab. Das ist ihr gutes Recht.\n\nPatientenautonomie ist ein rechtlich verankerter Grundsatz: § 630d BGB regelt, dass jede Behandlung nur mit wirksamer Einwilligung des Patienten erfolgen darf. § 1901a BGB stärkt das Selbstbestimmungsrecht. Zwang ist nicht erlaubt — auch nicht wenn du weißt, dass die Maßnahme dem Patienten nützen würde.\n\nAber: Als Pflegekraft hast du eine Aufklärungspflicht. Du musst ihr erklären, warum die Strümpfe wichtig sind — vollständig, verständlich, auf Augenhöhe. Dann entscheidet sie.\n\n**Drei Regeln:**\n1. Aufklärung ist Pflicht — du erklärst, du drängst nicht.\n2. Erzwingen ist verboten — auch bei gut gemeinter Fürsorge.\n3. Dokumentieren ist notwendig — die Entscheidung der Patientin muss im Pflegebericht stehen.\n\nQuelle: (§ 630f BGB; § 1901a BGB)",
         fallbezug:
           "Frau Kovač hat die Kompressionsstrümpfe seit 3 Wochen abgelehnt. Heute ist das Gespräch Pflicht — nicht um sie zu überreden, sondern um zu dokumentieren: Sie wurde aufgeklärt. Sie hat entschieden. Das ist ihr Recht.",
-        glossarBegriffe: ["Patientenautonomie", "Aufklärungspflicht", "Verweigerung"],
+        glossarBegriffe: ["Patientenautonomie", "Aufklärungspflicht", "Verweigerung", "Pflegebericht", "Würde", "Kompressionsstrümpfe", "Einwilligung", "§ 630f BGB", "Maßnahme", "Aufklärung"],
       },
       contentB1: {
         title: "Darf Frau Kovač Nein sagen?",
         body: "Frau Kovač lehnt die Kompressionsstrümpfe ab. Das ist ihr Recht.\n\nWas du tun musst:\n\n**1. Aufklärung ist Pflicht.** Du erklärst ihr warum die Strümpfe wichtig sind. Klar und verständlich.\n\n**2. Erzwingen ist verboten.** Du darfst sie nicht zwingen — auch wenn du weißt, dass es ihr helfen würde.\n\n**3. Dokumentieren ist Pflicht.** Du schreibst auf: Du hast erklärt. Sie hat Nein gesagt. Das ist ihr Recht.\n\nGesetze dazu: § 630d BGB (Einwilligung), § 1901a BGB (Selbstbestimmungsrecht), § 630f BGB (Dokumentationspflicht).",
         fallbezug:
           "Frau Kovač sagt schon seit 3 Wochen Nein zu den Strümpfen. Heute erklärst du ihr nochmal warum sie wichtig sind. Und dann schreibst du auf was sie gesagt hat.",
-        glossarBegriffe: ["Selbstbestimmungsrecht", "Dokumentationspflicht"],
+        glossarBegriffe: ["Selbstbestimmungsrecht", "Dokumentationspflicht", "Pflegebericht", "Würde", "Kompressionsstrümpfe", "Einwilligung", "§ 630f BGB", "Maßnahme", "Aufklärung"],
       },
     },
 
@@ -204,7 +204,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
             feedback:
               "Nicht korrekt. Unterlassene Aufklärung ist ein Dokumentations- und Haftungsproblem.\n\n**Frau Kovačs Reaktion:** Sie merkt, dass du das Thema umgehst. \"Sind Sie fertig? Dann können Sie ja gehen.\" — Misstraün wächst (du hast offensichtlich etwas, was du ihr nicht sagst), und du hast keine Aufklärung dokumentiert. Wenn Frau Kovač später eine Thrombose entwickelt und die Pflegedokumentation zeigt: Strümpfe verweigert, keine Aufklärung dokumentiert — kann das rechtliche Konsequnzen haben (§ 630f BGB Verletzung).\n\nAufklärung ist Pflicht, auch wenn die Entscheidung festzustehen scheint. Geh zurück und wähle Pfad A.",
             feedbackB1:
-              "Nicht richtig. Du musst es ihr erklären — auch wenn sie wahrscheinlich Nein sagt.\n\n**Frau Kovač merkt das:** \"Sind Sie fertig? Dann gehen Sie.\" — Sie verliert Vertrauen. Und juristisch hast du nichts dokumentiert. Das ist ein Problem.\n\nGeh zurück zu Pfad A.",
+              "Du erkennst, dass Frau Kovač ihre Meinung wahrscheinlich nicht ändert — gute Beobachtung. **Stattdessen** musst du **trotzdem** aufklären, **weil** § 630f BGB die Aufklärung zur Pflicht macht — auch bei zu erwartendem Nein.\n\n**Frau Kovač merkt das:** \"Sind Sie fertig? Dann gehen Sie.\" — Sie verliert Vertrauen. Und juristisch hast du nichts dokumentiert.\n\n**Stattdessen** richtig: Pfad A — vollständig aufklären, dann Verweigerung dokumentieren.",
           },
           {
             text: "Ich überzeuge sie mit Nachdruck — das Thromboserisiko ist zu groß, um es zu ignorieren.",
@@ -232,20 +232,20 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Schlafhygiene-Gespräch planen",
-        body: "Heute Abend willst du mit Frau Kovač über den Schlaf sprechen. Du hast es ihr angekündigt. Jetzt planst du: In welcher Reihenfolge baust du das Gespräch auf? Die Reihenfolge ist entscheidend — erst zuhören, dann erklären, dann einigen.",
-        glossarBegriffe: ["Schlafhygiene", "Zirkadiane Rhythmik"],
+        body: "Heute Abend willst du mit Frau Kovač über den Schlaf sprechen. Du hast es ihr angekündigt. Jetzt planst du den Gesprächs-Aufbau.\n\n**Schlafhygiene** = die Verhaltensweisen und Umgebungsfaktoren, die guten Schlaf fördern (z.B. feste Schlafenszeiten, dunkles Zimmer, kein Bildschirm vor dem Schlafen).\n\n**Insomnie** = eine Schlafstörung mit verlängerter Einschlafdauer (>30 Min), nächtlichem Erwachen oder zu frühem Aufwachen, die mindestens 3 Nächte/Woche über mindestens 3 Monate auftritt (Kriterien nach ICSD-3 / DGSM S3-Leitlinie 2017).\n\nBringe die fünf Bausteine des Beratungsgesprächs in eine pflegerisch sinnvolle Reihenfolge.",
+        glossarBegriffe: ["Schlafhygiene", "Zirkadiane Rhythmik", "Insomnie"],
       },
       contentB1: {
         title: "Wie planst du das Schlaf-Gespräch?",
-        body: "Heute Abend redest du mit Frau Kovač über den Schlaf. In welcher Reihenfolge machst du das? Ordne die Schritte.",
-        glossarBegriffe: ["Schlafhygiene"],
+        body: "Heute Abend redest du mit Frau Kovač über den Schlaf.\n\n**Schlafhygiene** = alles, was guten Schlaf möglich macht. Zum Beispiel: feste Schlafzeiten, dunkles Zimmer, kein Fernseher kurz vor dem Schlaf.\n\n**Insomnie** = eine Schlafstörung. Du brauchst lange zum Einschlafen (mehr als 30 Minuten) oder wachst nachts oft auf — mindestens 3 Nächte pro Woche, mindestens 3 Monate lang.\n\nBringe die fünf Bausteine des Gesprächs in eine sinnvolle Reihenfolge.",
+        glossarBegriffe: ["Schlafhygiene", "Insomnie"],
       },
       question: {
         fragetext:
-          "Bringe die 5 Schritte des Schlafhygiene-Gesprächs in die richtige Reihenfolge.",
+          "Bringe die 5 Bausteine des Schlafhygiene-Gesprächs in eine pflegerisch sinnvolle Reihenfolge.",
         sequencing: {
           instruction:
-            "Ziehe die Karten in die richtige Reihenfolge — von Schritt 1 bis Schritt 5.",
+            "Ziehe die Karten in eine sinnvolle Reihenfolge — die 5 Bausteine eines guten Beratungsgesprächs.",
           items: [
             {
               id: "seq-1",
@@ -265,7 +265,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
             {
               id: "seq-4",
               label:
-                "Frau Kovačs Reaktion abwarten — auf Bedenken eingehen, Bedürfnisse hören ('TV als Einschlaf-Hilfe')",
+                "Frau Kovačs Reaktion aufnehmen — auf Bedenken eingehen, Bedürfnisse hören ('TV als Einschlaf-Hilfe')",
             },
             {
               id: "seq-5",
@@ -291,13 +291,13 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Pflegeziele SMART formulieren",
-        body: "Gute Pflegeziele sind SMART: **S**pezifisch (Was genau?), **M**essbar (Wie erkenne ich es?), **A**kzeptiert (Hat Frau Kovač zugestimmt?), **R**ealistisch (Erreichbar?), **T**erminiert (Bis wann?). Vervollständige die Pflegeziele.\n\n**Trinkmengen-Ziel:** 1.200 ml ist der **ärztlich vereinbarte Tageszielwert** für Frau Kovač (Hausarzt-Festlegung wegen NYHA II + Furosemid laut ESC Heart Failure 2023) — gilt als Obergrenze, an die man sich schrittweise herantastet. NICHT 1.500 ml (das ist die DNQP-Empfehlung für Gesunde).\n\n**Bewegungsziel:** DNQP Mobilität (2017/2024) empfiehlt bei Kontrakturgefahr **mehrfach tägliche** Bewegung — mindestens 2-3× täglich. Ein 1×-tägliches Ziel wäre Sub-Standard.",
-        glossarBegriffe: ["SMART-Ziel", "Pflegeplanung"],
+        body: "**SMART** = Akronym für die fünf Qualitätskriterien guter Pflegeziele: **S**pezifisch (Was genau?), **M**essbar (Wie erkenne ich es?), **A**kzeptiert (Hat Frau Kovač zugestimmt?), **R**ealistisch (Erreichbar?), **T**erminiert (Bis wann?).\n\n**DNQP** = Deutsches Netzwerk für Qualitätsentwicklung in der Pflege (gibt nationale Pflege-Standards heraus).\n\n**Kontraktur** = dauerhafte Bewegungseinschränkung eines Gelenks durch Verkürzung von Muskeln, Sehnen oder Kapseln.\n\nVervollständige die Pflegeziele.\n\n**Trinkmengen-Ziel:** 1.200 ml ist der **ärztlich vereinbarte Tageszielwert** für Frau Kovač (Hausarzt-Festlegung wegen NYHA II + Furosemid laut ESC Heart Failure 2023) — gilt als Obergrenze, an die man sich schrittweise herantastet. NICHT 1.500 ml (das ist die allgemeine DNQP-Empfehlung für Gesunde).\n\n**Bewegungsziel:** Der DNQP-Standard Mobilität (2017/2024) empfiehlt bei Kontrakturgefahr **mehrfach tägliche** Bewegung — mindestens 2-3× täglich. Ein 1×-tägliches Ziel wäre Sub-Standard.",
+        glossarBegriffe: ["SMART", "SMART-Ziel", "Pflegeplanung", "DNQP", "Kontraktur"],
       },
       contentB1: {
         title: "Pflegeziele formulieren",
-        body: "Ein Pflegeziel muss genau, messbar und realistisch sein. Es muss auch einen Termin haben.\n\nWichtig:\n- **Trinken:** 1.200 ml pro Tag (vom Hausarzt für Frau Kovač festgelegt — wegen Herz-Schwäche und Furosemid).\n- **Bewegung:** Bei Kontraktur **mehrmals am Tag** üben — nicht nur einmal. Sonst bleibt das Knie steif (DNQP Mobilität 2017/2024).",
-        glossarBegriffe: ["Pflegeziel"],
+        body: "**SMART** = ein Wort aus 5 Buchstaben für gute Pflege-Ziele:\n- **S**pezifisch — was genau?\n- **M**essbar — wie erkenne ich es?\n- **A**kzeptiert — sagt Frau Kovač Ja?\n- **R**ealistisch — schaffbar?\n- **T**erminiert — bis wann?\n\n**DNQP** = ein deutsches Netzwerk für Pflege-Standards.\n\n**Kontraktur** = ein Gelenk wird steif, weil Muskeln oder Sehnen kurz geworden sind.\n\nWichtig:\n- **Trinken:** 1.200 ml pro Tag (vom Hausarzt für Frau Kovač festgelegt — wegen Herz-Schwäche und Furosemid).\n- **Bewegung:** Bei Kontraktur **mehrmals am Tag** üben — nicht nur einmal. Sonst bleibt das Knie steif (Standard DNQP Mobilität 2017/2024).",
+        glossarBegriffe: ["Pflegeziel", "SMART", "DNQP", "Kontraktur"],
       },
       question: {
         fragetext: "Vervollständige die beiden Pflegeziele für Frau Kovač.",
@@ -337,12 +337,12 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       contentC1: {
         title: "§ 630d BGB — was steht da?",
         body: "§ 630d BGB regelt die Einwilligung nach Aufklärung:\n\n_\"Vor Durchführung einer medizinischen Maßnahme ist eine Einwilligung des Patienten erforderlich. Soweit nicht ein anderer Aufklärungspflichtige ist, hat der Behandelnde den Patienten in verständlicher Weise aufzuklären.\"_\n\nWas das für die Pflege bedeutet: Keine Maßnahme ohne Einwilligung — auch Kompressionsstrümpfe anlegen ohne Einwilligung wäre ein Eingriff in die körperliche Unversehrtheit.",
-        glossarBegriffe: ["Einwilligung", "Aufklärungspflicht"],
+        glossarBegriffe: ["Einwilligung", "Aufklärungspflicht", "Pflege", "Kompressionsstrümpfe", "Maßnahme", "Aufklärung"],
       },
       contentB1: {
         title: "Was sagt das Gesetz?",
         body: "§ 630d BGB sagt:\n\n_\"Für jede Behandlung braucht man die Einwilligung (= das Ja) des Patienten. Vorher muss man ihn verständlich aufklären (= erklären).\"_\n\nWas das bedeutet: Du darfst Frau Kovač keine Kompressionsstrümpfe anziehen, wenn sie Nein sagt. Zuerst erklären. Dann entscheidet sie.",
-        glossarBegriffe: ["Einwilligung"],
+        glossarBegriffe: ["Einwilligung", "Pflege", "Kompressionsstrümpfe", "Maßnahme", "Aufklärung"],
       },
     },
     // Opt-3.B — Vergleich ASS vs. Kompression
@@ -358,7 +358,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "ASS und Kompressionsstrümpfe — was wirkt wie?",
-        body: "Frau Kovač sagt: 'Ich hab doch die Tabletten.' Sie meint ASS 100 mg. Verstehe den Unterschied.",
+        body: "Frau Kovač sagt: 'Ich hab doch die Tabletten.' Sie meint ASS 100 mg. Verstehe den Unterschied.\n\n**Kompressionstherapie** = Behandlung mit medizinischen Strümpfen (oder Wickeln), die die oberflächlichen Beinvenen zusammendrücken. Dadurch fließt das Blut schneller zum Herzen zurück und der Blutstau in den Beinen wird reduziert.",
         glossarBegriffe: [
           "ASS",
           "Thrombozytenaggregationshemmung",
@@ -368,8 +368,8 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       },
       contentB1: {
         title: "Tabletten und Strümpfe — was macht was?",
-        body: "Frau Kovač denkt: Die Tablette reicht. Stimmt das? Vergleiche.",
-        glossarBegriffe: ["ASS", "Thrombose", "Kompressionsstrümpfe"],
+        body: "Frau Kovač denkt: Die Tablette reicht. Stimmt das? Vergleiche.\n\n**Kompressionstherapie** = Behandlung mit medizinischen Strümpfen, die die Beine zusammendrücken. So fließt das Blut besser nach oben.",
+        glossarBegriffe: ["ASS", "Thrombose", "Kompressionsstrümpfe", "Kompressionstherapie"],
       },
       question: {
         fragetext: "Vergleiche die Wirkungsweise von ASS und Kompressionstherapie.",
@@ -447,6 +447,20 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
           "Verhinderungspflege",
           "Entlastungsbetrag",
           "Angehörigenarbeit",
+          "Sturzprophylaxe",
+          "Risiko",
+          "Pflege",
+          "Ressource",
+          "Angehörige",
+          "Lernen",
+          "SGB XI",
+          "Lippenbremse",
+          "Einwilligung",
+          "DSGVO",
+          "Datenschutz",
+          "Patient",
+          "Lagerung",
+          "Problem",
         ],
       },
       contentB1: {
@@ -456,6 +470,20 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
           "Schweigepflichtsentbindung",
           "Pflegekurs",
           "Angehörigenarbeit",
+          "Sturzprophylaxe",
+          "Risiko",
+          "Pflege",
+          "Ressource",
+          "Angehörige",
+          "Lernen",
+          "SGB XI",
+          "Lippenbremse",
+          "Einwilligung",
+          "DSGVO",
+          "Datenschutz",
+          "Patient",
+          "Lagerung",
+          "Problem",
         ],
       },
       wusstestDuDas:

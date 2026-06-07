@@ -200,7 +200,10 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_EVALUIEREN: SituationsPhase = {
       stepType: "selfrating",
       bloomLevel: 4,
       kompetenzbereich: "I.1",
-      quellen: [],
+      quellen: [
+        "DNQP (2022): Expertenstandard Sturzprophylaxe in der Pflege, 2. Aktualisierung",
+        "PflAPrV Anlage 1, Kompetenzbereich II.1 — Reflexion und Begründung pflegerischen Handelns",
+      ],
       track: "basis",
       modus: "checkpoint",
       lernziel: "ce02-frau-m-eval-confidence-nachher",

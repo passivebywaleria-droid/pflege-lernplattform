@@ -39,13 +39,13 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       transition: "Jetzt holst du das Material. Aseptischer Verbandwechsel — Schritt für Schritt.",
       contentC1: {
         title: "Warum feucht statt trocken?",
-        body: "",
-        glossarBegriffe: ["Feuchte Wundbehandlung", "Granulation", "Epithelialisierung", "Winter 1962"],
+        body: "**Feuchte Wundbehandlung** = Wundversorgung mit feucht haltenden Wundauflagen (Hydrokolloid, Schaum) — Wunden heilen so bis zu 50 % schneller als unter trockenem Mullverband (Winter 1962).\n\n**Verbandwechsel** = aseptische Erneuerung der Wundauflage in festgelegter Reihenfolge (Material vorbereiten → Hände desinfizieren → Verband entfernen → Wunde inspizieren → reinigen → neuer Verband → Dokumentation).\n\nWeitere Begriffe, die du gleich brauchst:\n\n• **Wunddokumentation** = vollständige schriftliche Beschreibung des Wundzustands (Größe, Wundgrund, Wundrand, Exsudat, Aktion) nach standardisierten Kriterien.\n\n• **Datenschutz** = rechtliche Pflicht zum Schutz personenbezogener Daten (DSGVO); Wundfotos sind besonders schützenswerte Gesundheitsdaten (Art. 9).",
+        glossarBegriffe: ["Feuchte Wundbehandlung", "Granulation", "Epithelialisierung", "Winter 1962", "Verbandwechsel", "Wunddokumentation", "Datenschutz", "Gesundheitsdaten", "Wundauflage"],
       },
       contentB1: {
         title: "Warum feuchter Verband?",
-        body: "",
-        glossarBegriffe: ["Feuchte Wundbehandlung"],
+        body: "**Feuchte Wundbehandlung** = die Wunde wird mit einem Verband bedeckt, der sie feucht hält. Feuchte Wunden heilen schneller.\n\n**Verbandwechsel** = den alten Verband abnehmen und einen neuen aufkleben — keimfrei und in einer festen Reihenfolge.\n\n• **Wunddokumentation** = die Wunde aufschreiben (Größe, Farbe, was du gemacht hast).\n\n• **Datenschutz** = die Daten der Patientin schützen — besonders Fotos von der Wunde.",
+        glossarBegriffe: ["Feuchte Wundbehandlung", "Verbandwechsel", "Wunddokumentation", "Datenschutz", "Gesundheitsdaten", "Wundauflage"],
       },
       inlineWissen: {
         bausteinRef: "dekubitus-prophylaxe-feuchte-wundbehandlung",
@@ -234,13 +234,13 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       transition: "Datenschutz klar. Prüfe dein Wissen mit den Richtig/Falsch-Aussagen.",
       contentC1: {
         title: "Datenschutz bei Fotodokumentation \u2014 DSGVO Art. 9",
-        body: "",
-        glossarBegriffe: ["DSGVO Art. 9", "Einwilligung", "Fotodokumentation", "DSGVO"],
+        body: "**Datenschutz** = rechtliche Pflicht zum Schutz personenbezogener Daten (DSGVO). Wundfotos sind nach Art. 9 DSGVO besondere Kategorie (Gesundheitsdaten) \u2014 h\u00f6herer Schutzbedarf als normale Daten.",
+        glossarBegriffe: ["DSGVO Art. 9", "Einwilligung", "Fotodokumentation", "DSGVO", "Datenschutz"],
       },
       contentB1: {
         title: "Darf ich ein Foto von der Wunde machen?",
-        body: "",
-        glossarBegriffe: ["DSGVO", "Einwilligung", "Fotodokumentation"],
+        body: "**Datenschutz** = die Daten der Patientin sch\u00fctzen. Wundfotos sind besonders gesch\u00fctzt (DSGVO Art. 9).",
+        glossarBegriffe: ["DSGVO", "Einwilligung", "Fotodokumentation", "Datenschutz"],
       },
       inlineWissen: {
         bausteinRef: "pflegedokumentation-datenschutz-foto",
@@ -599,9 +599,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
                   "Frau Yilmaz fragt: 'Und ich darf das nicht lesen?'",
                 score: 0,
                 feedback:
-                  "Falsch und paternalistisch. Patientinnen haben nach § 630g BGB das Recht auf Einsicht in ihre Krankenakte. 'Ist nicht für Sie' ist rechtlich und ethisch nicht korrekt.",
+                  "Du wolltest Frau Yilmaz vor zu vielen Details schützen — der Impuls ist nachvollziehbar. Hier kippt er aber ins Paternalistische. Stattdessen gilt: Patientinnen haben nach § 630g BGB das Recht auf Einsicht in ihre Krankenakte, weil die Akte sie betrifft und sie über ihre eigene Behandlung Bescheid wissen darf. Beim nächsten Mal: erkläre den Sinn der Dokumentation und biete Einsicht aktiv an.",
                 feedbackB1:
-                  "Das ist falsch. Frau Yilmaz darf ihre Akte lesen — das steht im Gesetz (§ 630g BGB). Du hast sie falsch informiert.",
+                  "Du wolltest Frau Yilmaz schützen — guter Gedanke. Aber: Frau Yilmaz darf ihre Akte lesen, weil das Gesetz (§ 630g BGB) ihr dieses Recht gibt. Sage ihr beim nächsten Mal: 'Die Akte gehört Ihnen — Sie dürfen sie jederzeit lesen.'",
               },
             ],
           },
@@ -624,13 +624,13 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Hygienefehler im Ablauf finden",
-        body: "Der folgende Text beschreibt einen Verbandwechsel. Zwei Hygienefehler sind eingebaut. Finde und markiere sie.",
-        glossarBegriffe: ["Kontamination", "Aseptisch"],
+        body: "Der folgende Text beschreibt einen Verbandwechsel. Zwei Hygienefehler sind eingebaut. Finde und markiere sie.\n\n**Fehler** = unbeabsichtigte Abweichung vom korrekten Ablauf, die ein Risiko für die Patientin erzeugt (z.B. Kontamination steriler Materialien).",
+        glossarBegriffe: ["Kontamination", "Aseptisch", "Fehler"],
       },
       contentB1: {
         title: "Wo sind die Fehler? Markiere sie.",
-        body: "Lies den Text. Zwei Fehler sind drin. Markiere sie.",
-        glossarBegriffe: ["Kontamination"],
+        body: "Lies den Text. Zwei Fehler sind drin. Markiere sie.\n\n**Fehler** = etwas geht schief — zum Beispiel: sterile Handschuhe werden unsauber gemacht.",
+        glossarBegriffe: ["Kontamination", "Fehler"],
       },
       question: {
         fragetext: "Markiere die zwei Hygienefehler im Text.",
@@ -685,12 +685,12 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Warum müssen Fersen freigestellt werden?",
         body: "Weichlagerungsmatratzen entlasten das Sakrum gut — aber die Fersen bleiben ein Prädilektionsort für Dekubitus. Die Matratze gibt dort weniger nach (Ferse = kleine Fläche, hoher lokaler Druck). Fersenfreistellung durch Kissen unter dem Unterschenkel ist deshalb unabhängig von der Sakrum-Entlastung notwendig. Fersen-Dekubitus ist der zweithäufigste Ort nach dem Sakrum. Quelle: (NPUAP/EPUAP 2019)",
-        glossarBegriffe: ["Fersenfreistellung", "Prädilektionsstelle"],
+        glossarBegriffe: ["Fersenfreistellung", "Prädilektionsstelle", "Dekubitus", "Steißbein"],
       },
       contentB1: {
         title: "Warum Fersen freistellen?",
         body: "Die Weich-Matratze hilft am Steißbein. Aber an den Fersen hilft sie nicht genug. Die Ferse ist klein — viel Druck auf wenig Fläche. Deshalb: Kissen unter den Unterschenkel. Dann haben die Fersen keinen Druck. Fersen-Dekubitus ist nach dem Steißbein am häufigsten.",
-        glossarBegriffe: [],
+        glossarBegriffe: ["Dekubitus", "Steißbein"],
       },
     },
   ],

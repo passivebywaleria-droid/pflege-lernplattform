@@ -108,13 +108,13 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
       transition: "Matrix steht. Jetzt das Zimmer sicher machen.",
       contentC1: {
         title: "Maßnahmen-Matrix: Zeit × Ebene",
-        body: "Ordne die Maßnahmen in eine Matrix ein. Zwei Dimensionen: **Wann** (sofort / diese Nacht / bis Entlassung) und **wo** (Person / Umgebung / Medikation).\n\nIn dieser einfachen 2×2-Darstellung: X-Achse = Zeit, Y-Achse = Ebene.",
-        glossarBegriffe: [],
+        body: "Ordne die Maßnahmen in eine Matrix ein. Zwei Dimensionen: **Wann** (sofort / diese Nacht / bis Entlassung) und **wo** (Person / Umgebung / Medikation).\n\n**Hüftprotektor** = eine gepolsterte Unterhose mit Schalen, die bei einem seitlichen Sturz die Aufprallenergie am seitlichen Knochenvorsprung des Oberschenkels abfedert (Cochrane Santesso 2014). **Sturzprotokoll** = das standardisierte Pflicht-Formular nach DNQP 2022 zur Dokumentation eines Sturz-Ereignisses (Hergang, Bewusstseinslage, Vitalzeichen, Verletzungen, Maßnahmen).\n\nIn dieser einfachen 2×2-Darstellung: X-Achse = Zeit, Y-Achse = Ebene.",
+        glossarBegriffe: ["Hüftprotektor", "Sturzprotokoll"],
       },
       contentB1: {
         title: "Maßnahmen sortieren",
-        body: "Sortiere die Maßnahmen in zwei Dimensionen: **Wann** (sofort oder später) und **Was** (Umgebung oder Medikation/Person).",
-        glossarBegriffe: [],
+        body: "Sortiere die Maßnahmen in zwei Dimensionen: **Wann** (sofort oder später) und **Was** (Umgebung oder Medikation/Person).\n\n**Hüftprotektor** = eine spezielle Unterhose mit Polstern an der Hüfte. Sie schützt den Knochen, wenn jemand zur Seite fällt. **Sturzprotokoll** = ein festes Formular, in dem du nach einem Sturz alle wichtigen Infos aufschreibst (DNQP 2022).",
+        glossarBegriffe: ["Hüftprotektor", "Sturzprotokoll"],
       },
       question: {
         fragetext:
@@ -295,7 +295,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_PLANEN: SituationsPhase = {
             feedback:
               "Diese Entscheidung ist rechtlich und fachlich problematisch. Beidseitige Bettgitter ohne Zustimmung der orientierten Patientin sind eine **freiheitsentziehende Maßnahme** (§ 1831 BGB). Sie braucht richterliche Genehmigung oder informierte Einwilligung. Zusätzlich: Bettgitter verhindern keine Stürze — sie erhöhen die Fall-Höhe und können Verletzungen verschlimmern (Patienten klettern darüber). Frau M. könnte diese Entscheidung später als Eingriff in ihre Würde empfinden. Besser: Zustimmung einholen ODER Alternativen (Niederflur-Bett, Sturzmatte, Bewegungsmelder).",
             feedbackB1:
-              "Diese Entscheidung ist falsch und rechtlich gefährlich. Beide Bettgitter ohne Frau M.s Erlaubnis sind **Fixierung** (§ 1831 BGB). Man braucht Erlaubnis vom Gericht oder von ihr selbst. Außerdem: Bettgitter verhindern keine Stürze — Patienten klettern darüber und fallen tiefer. Besser: Frau M. fragen ODER niedriges Bett, Sturzmatte, Bewegungsmelder.",
+              "Du hast erkannt, dass Frau M. Schutz braucht — das ist richtig gedacht. Aber die Entscheidung ist trotzdem falsch und rechtlich gefährlich, weil beide Bettgitter ohne Frau M.s Erlaubnis eine **Fixierung** sind (§ 1831 BGB). Man braucht stattdessen Erlaubnis vom Gericht oder von ihr selbst. Außerdem: Bettgitter verhindern keine Stürze, denn Patienten klettern darüber und fallen tiefer. Beim nächsten Mal: Frag Frau M. zuerst ODER nutze niedriges Bett, Sturzmatte, Bewegungsmelder — das ist sicher und rechtlich erlaubt.",
             isCorrect: false,
           },
           {

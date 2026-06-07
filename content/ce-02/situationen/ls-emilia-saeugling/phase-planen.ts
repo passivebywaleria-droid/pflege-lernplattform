@@ -39,12 +39,12 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
       contentC1: {
         title: "SMART-Ziele — warum \"besser trinken\" kein Pflegeziel ist",
         body: "",
-        glossarBegriffe: ["SMART-Ziel", "Pflegeziel"],
+        glossarBegriffe: ["SMART-Ziel", "Pflegeziel", "SMART", "Ziel"],
       },
       contentB1: {
         title: "SMART-Ziel — was muss ein gutes Ziel haben?",
         body: "",
-        glossarBegriffe: ["SMART-Ziel", "Pflegeziel"],
+        glossarBegriffe: ["SMART-Ziel", "Pflegeziel", "SMART", "Ziel"],
       },
       inlineWissen: {
         bausteinRef: "smart-ziel",
@@ -125,12 +125,12 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
       contentC1: {
         title: "Flüssigkeitsbilanz beim Säugling führen",
         body: "Die Flüssigkeitsbilanz ist der Kern der Überwachung. Vier Schritte:\n\n**Schritt 1 — Einfuhr dokumentieren:** Beim Stillen geschätzt (eine Stillmahlzeit = ca. 60-80 ml bei 4 Monaten). Beim Abpumpen messbar. Beim Zufüttern messbar.\n\n**Schritt 2 — Ausfuhr dokumentieren:** Windeln wiegen — Windel vor dem Wechseln wiegen, danach Differenz berechnen. 1 g Gewichtsdifferenz ≈ 1 ml Urin.\n\n**Schritt 3 — Bilanz berechnen:** Einfuhr minus Ausfuhr. Positive Bilanz = gut (mehr rein als raus).\n\n**Schritt 4 — Bilanz mit Arzt besprechen:** Bei negativer Bilanz oder Verschlechterung sofort melden. Normwert: Säugling 4 Monate braucht ca. 800-900 ml Flüssigkeit pro Tag. *(Hoehl/Kullick, 2019)*",
-        glossarBegriffe: ["Flüssigkeitsbilanz", "Einfuhr", "Ausfuhr"],
+        glossarBegriffe: ["Flüssigkeitsbilanz", "Einfuhr", "Ausfuhr", "messbar", "Arzt", "Flüssigkeit"],
       },
       contentB1: {
         title: "Flüssigkeitsbilanz führen",
         body: "Die Flüssigkeitsbilanz zeigt: Bekommt Emilia genug Flüssigkeit? Vier Schritte:\n\n**Schritt 1 — Einfuhr:** Wie viel trinkt Emilia? Stillen = geschätzt (~60-80 ml). Flasche = gemessen.\n\n**Schritt 2 — Ausfuhr:** Windeln wiegen. Vorher und nachher wiegen. Differenz = Urin. 1 Gramm = 1 Milliliter.\n\n**Schritt 3 — Bilanz:** Einfuhr minus Ausfuhr. Plus = gut (mehr rein als raus).\n\n**Schritt 4 — Arzt informieren:** Bei negativer Bilanz — sofort melden. Emilia braucht ca. 800-900 ml pro Tag. *(Hoehl/Kullick, 2019)*",
-        glossarBegriffe: ["Flüssigkeitsbilanz"],
+        glossarBegriffe: ["Flüssigkeitsbilanz", "messbar", "Arzt", "Flüssigkeit"],
       },
     },
 
@@ -232,13 +232,13 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Schlafposition bei Schnupfen — Lauras Frage",
-        body: "Laura fragt dich: \"Wenn Emilia Schnupfen hat, schläft sie besser auf der Seite — darf ich das?\"",
-        glossarBegriffe: ["SIDS", "SIDS-Prävention"],
+        body: "**Lagerung** = die kontrollierte Positionierung des Patienten/Säuglings im Bett (Rückenlage, Seitenlage, Bauchlage). **Seitenlage** = der Patient liegt auf der linken oder rechten Körperseite — beim Säugling KEINE empfohlene Schlafposition (SIDS-Risiko). Laura fragt dich: \"Wenn Emilia Schnupfen hat, schläft sie besser auf der Seite — darf ich das?\"",
+        glossarBegriffe: ["SIDS", "SIDS-Prävention", "Lagerung", "Seitenlage"],
       },
       contentB1: {
         title: "Schlafposition — Lauras Frage",
-        body: "Laura fragt: \"Darf Emilia auf der Seite schlafen? Sie atmet dann besser.\"",
-        glossarBegriffe: ["SIDS", "SIDS-Prävention"],
+        body: "**Lagerung** = wie das Baby im Bett liegt (auf dem Rücken, auf der Seite, auf dem Bauch). **Seitenlage** = das Baby liegt auf der Seite — das ist beim Säugling NICHT erlaubt (SIDS-Risiko). Laura fragt: \"Darf Emilia auf der Seite schlafen? Sie atmet dann besser.\"",
+        glossarBegriffe: ["SIDS", "SIDS-Prävention", "Lagerung", "Seitenlage"],
       },
       question: {
         fragetext:
@@ -355,12 +355,12 @@ export const CE02_SIT_EMILIA_SAEUGLING_PLANEN: SituationsPhase = {
       contentC1: {
         title: "Flüssigkeitsbilanz berechnen — Beispiel Emilia",
         body: "Emilia hat heute getrunken (geschätzt): 4× je 60 ml + 1× 40 ml = **280 ml Einfuhr**.\n\nWindeln: 3 Windeln mit Nassgewicht-Überschuss 30 g, 40 g, 25 g = **95 ml Ausfuhr** (1 Stuhl nicht bilanziert).\n\nBilanz: 280 ml − 95 ml = **+185 ml** (positive Bilanz).\n\nWas bedeutet das? Positive Bilanz: mehr rein als raus — grundsätzlich gut. Aber: 280 ml ist deutlich unter dem Tagesbedarf von ~800-900 ml für einen 4-monatigen Säugling. Die Bilanz ist positiv, aber die absolute Trinkmenge bleibt zu niedrig. Maßnahmen bleiben notwendig.",
-        glossarBegriffe: ["Flüssigkeitsbilanz"],
+        glossarBegriffe: ["Flüssigkeitsbilanz", "Trinkmenge", "Einfuhr", "Ausfuhr"],
       },
       contentB1: {
         title: "Bilanz berechnen — Beispiel",
         body: "Emilia hat heute getrunken: 280 ml gesamt.\n\nWindeln: 3 Windeln = 95 ml Urin.\n\nBilanz: 280 − 95 = +185 ml.\n\nDas ist positiv (mehr rein als raus) — gut. Aber: 280 ml ist viel zu wenig. Emilia braucht ~800-900 ml pro Tag. Die Maßnahmen müssen weitergehen.",
-        glossarBegriffe: ["Flüssigkeitsbilanz"],
+        glossarBegriffe: ["Flüssigkeitsbilanz", "Trinkmenge"],
       },
     },
 

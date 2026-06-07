@@ -14,6 +14,61 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
   kontextB1:
     "Du stehst am Bett von Herrn Petrov. Es ist 07:25 Uhr. Du hast dich vorgestellt. Er hat genickt. Jetzt schaust du genau hin. Bevor du etwas tust, beobachtest du. Du stellst dir die Frage: Wie geht es ihm heute Morgen?",
   kernSteps: [
+    // Step 2.0 — Inline-Wissen: Motorik-Grundbegriffe (Tonus, Dorsalflexion, Motorik, GUSS, Immobilität, Druckgeschwür, Dekubitus)
+    // Position VOR der Brilliantfrage 2.1 — gibt dem Schüler die anatomisch-pflegerischen Begriffe,
+    // damit er die Beobachtung in 2.1 präzise formulieren kann.
+    {
+      stepId: "ce02-petrov-beob-00-fachbegriffe-grundlagen",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DGN S2e-Leitlinie Rehabilitative Therapie 2021",
+        "MRC Scale (Medical Research Council 1943/2010)",
+        "DNQP Dekubitusprophylaxe 2017/2024",
+        "EPUAP/NPIAP/PPPIA 2019",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-petrov-beob-fachbegriffe",
+      tag: "anatomie",
+      themaPrimaer: "kontraktur-prophylaxe",
+      themenSekundaer: ["dekubitus-prophylaxe", "mobilisation"],
+      transition: "Begriffe sitzen. Jetzt schaust du selbst hin — mit dem richtigen Vokabular im Kopf.",
+      contentC1: {
+        title: "Fachbegriffe für deine Beobachtung",
+        body: "Bevor du Herrn Petrov gleich systematisch beobachtest, brauchst du die richtigen Begriffe. **Motorik** = die willkürliche Bewegungsfähigkeit des Körpers (Arm heben, Bein anwinkeln). **Tonus** = die Grundspannung eines Muskels in Ruhe; bei Hemiparese anfangs oft schlaff (hypoton). **Dorsalflexion** = das Anheben der Fußspitze Richtung Schienbein; bei eingeschränkter Dorsalflexion droht ein Spitzfuß. **GUSS** = Gugging Swallowing Screen, ein standardisiertes Schluck-Screening für die Einstufung von Dysphagie. **Immobilität** = die anhaltende Bewegungsunfähigkeit (z.B. Bettlägerigkeit). **Dekubitus** = eine Druckschädigung der Haut und des Gewebes über Knochenvorsprüngen; **Druckgeschwür** ist das deutsche Wort dafür.",
+        glossarBegriffe: ["Motorik", "Tonus", "Dorsalflexion", "GUSS", "Immobilität", "Dekubitus", "Druckgeschwür", "Haut", "Bewegung", "Spitzfuß", "Hemiparese", "Dysphagie"],
+      },
+      contentB1: {
+        title: "Wichtige Wörter — was bedeuten sie?",
+        body: "Du brauchst gleich diese Wörter. **Motorik** = die Bewegung der Muskeln (Arm heben, Bein heben). **Tonus** = die Spannung der Muskeln im Ruhe-Zustand. **Dorsalflexion** = die Fuß-Spitze nach oben ziehen. **GUSS** = ein Test, der prüft, ob jemand sicher schlucken kann. **Immobilität** = jemand kann sich nicht selbst bewegen. **Dekubitus** = die Haut geht kaputt durch zu langen Druck. **Druckgeschwür** ist das gleiche wie Dekubitus.",
+        glossarBegriffe: ["Motorik", "Tonus", "Dorsalflexion", "GUSS", "Immobilität", "Dekubitus", "Druckgeschwür", "Haut", "Bewegung", "Spitzfuß", "Hemiparese", "Dysphagie"],
+      },
+      inlineWissen: {
+        bausteinRef: "kontraktur-prophylaxe-fachbegriffe-petrov",
+        storyAufhaenger:
+          "Du gleich Herrn Petrov beobachten. Sein rechter Arm liegt schlaff auf der Matratze, sein Bein bewegt sich kaum. Bevor du beschreibst was du siehst, brauchst du die richtigen Worte dafür — sonst bleibt deine Beobachtung vage.",
+        storyAufhaengerB1:
+          "Du beobachtest gleich Herrn Petrov. Du brauchst die richtigen Wörter, damit du genau beschreiben kannst was du siehst.",
+        kerntext:
+          "**7 Begriffe für deine Beobachtung:**\n\n• **Motorik** = die willkürliche Bewegungsfähigkeit des Körpers. Arme heben, Beine bewegen, Kopf drehen — alles Motorik.\n\n• **Tonus** = die Grundspannung eines Muskels in Ruhe. Bei Hemiparese: anfangs oft **hypoton** (schlaff). Später kann sich **Spastik** entwickeln (erhöhter Tonus).\n\n• **Dorsalflexion** = das Anheben der Fußspitze Richtung Schienbein. Wichtig für das Gangbild. Wenn die Dorsalflexion fehlt: Spitzfuß-Gefahr und Sturzrisiko bei Mobilisation.\n\n• **GUSS** = Gugging Swallowing Screen (Trapl 2007). Standardisiertes Schluck-Screening: 1) Indirekt (Speichel, Husten), 2) Direkt (breiig → flüssig). Klassifiziert Dysphagie in Schweregrade.\n\n• **Immobilität** = die dauerhafte Bewegungsunfähigkeit. Folge: Risiko für Dekubitus, Kontraktur, Pneumonie, Thrombose.\n\n• **Dekubitus** = die Druckschädigung der Haut und des darunterliegenden Gewebes. Entsteht durch Druck und Scherkräfte über Knochenvorsprüngen.\n\n• **Druckgeschwür** = das deutsche Synonym für Dekubitus. EPUAP-Klassifikation: Kat. I (Rötung) bis Kat. IV (Knochen sichtbar).\n\nQuelle: (DGN S2e 2021; MRC 1943/2010; DNQP 2017; EPUAP 2019)",
+        kerntextB1:
+          "**7 wichtige Wörter:**\n\n• **Motorik** = Bewegung der Muskeln. Arme, Beine, Kopf bewegen.\n\n• **Tonus** = Wie fest oder schlaff ein Muskel ist. Bei Schlaganfall: oft schlaff (= hypoton).\n\n• **Dorsalflexion** = Fuß-Spitze nach oben ziehen. Wenn das nicht geht: Stolper-Gefahr.\n\n• **GUSS** = Schluck-Test. Prüft: Kann der Patient sicher schlucken?\n\n• **Immobilität** = Der Patient kann sich nicht bewegen. Folge: Druckstellen, steife Gelenke, Lungenentzündung.\n\n• **Dekubitus** = Die Haut geht kaputt durch zu langen Druck.\n\n• **Druckgeschwür** ist das gleiche wie Dekubitus.",
+        faustregel:
+          "**Motorik + Tonus + Dorsalflexion** für die Bewegungs-Beobachtung. **GUSS** für die Schluckfunktion. **Immobilität → Dekubitus** als Ursache-Folge-Kette.",
+        faustregelB1:
+          "Bewegung: Motorik, Tonus, Dorsalflexion. Schlucken: GUSS. Liegen → Druckstellen: Immobilität → Dekubitus.",
+        karteikarte: {
+          vorderseite:
+            "Welche 7 Fachbegriffe brauchst du für die Beobachtung von Herrn Petrov — und was bedeuten sie kurz?",
+          rueckseite:
+            "Motorik = willkürliche Bewegung. Tonus = Muskel-Grundspannung in Ruhe (hypoton bei Hemiparese). Dorsalflexion = Fußspitze Richtung Schienbein. GUSS = Schluck-Screening (Trapl 2007). Immobilität = dauerhafte Bewegungsunfähigkeit. Dekubitus = Druckschädigung der Haut. Druckgeschwür = Synonym Dekubitus. Faustregel: Motorik + Tonus + Dorsalflexion für Bewegung; GUSS für Schlucken; Immobilität → Dekubitus.",
+        },
+      },
+    },
+
     // Step 2.1 — Freetext: Motorik-Brilliantfrage
     {
       stepId: "ce02-petrov-beob-01-motorik-brilliantfrage",
@@ -258,13 +313,13 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_BEOBACHTEN: SituationsPhase = {
       displayFormat: "stepbystep",
       contentC1: {
         title: "Atembeobachtung — 4 Schritte",
-        body: "Pneumonieprophylaxe beginnt mit pflegerischer Atembeobachtung. Auskultation mit dem Stethoskop ist ärztliche Aufgabe — Pflege beobachtet strukturiert und dokumentiert Auffälligkeiten.\n\n1) Atemfrequenz zählen: 15 Sek × 4 = Atemzüge/Min. Norm: 12-18/Min. Abweichung dokumentieren.\n2) Atemtiefe beobachten: flache vs. tiefe Atmung. Schlaganfall-Patienten atmen oft flach — Atelektasegefahr.\n3) Hörbare Atemgeräusche am Bett: Klingt die Atmung normal? Hörst du Rasseln, Giemen oder Brodeln ohne Stethoskop? Gibt es eine sichtbare Seitendifferenz der Atemexkursion?\n4) Husten und Sekret: Ist Husten möglich? Farbe des Sekrets (klar = normal, gelb/grün = Infektion möglich), Hautfarbe (Lippen, Akren).\n\nBefund Herr Petrov: Atemfrequenz 17/Min, hörbares Atemgeräusch unauffällig, leicht reduzierte Atemexkursion rechts, kein Auswurf, keine Zyanose. → Pneumonieprophylaxe weiterführen, bei Auffälligkeiten ärztliche Auskultation veranlassen. (KRINKO 2013; PflBG-Kompetenzen)",
-        glossarBegriffe: ["Atelektase", "Atemexkursion", "Pneumonie", "Sekret"],
+        body: "Pneumonieprophylaxe beginnt mit pflegerischer Atembeobachtung. Auskultation mit dem Stethoskop ist ärztliche Aufgabe — Pflege beobachtet strukturiert und dokumentiert Auffälligkeiten.\n\n1) Atemfrequenz zählen: 15 Sek × 4 = Atemzüge/Min. Norm: 12-18/Min. Abweichung dokumentieren.\n2) Atemtiefe beobachten: flache vs. tiefe Atmung. Schlaganfall-Patienten atmen oft flach — Atelektasegefahr.\n3) Hörbare Atemgeräusche am Bett: Klingt die Atmung normal? Hörst du Rasseln, Giemen oder Brodeln ohne Stethoskop? Gibt es eine sichtbare Seitendifferenz der Atemexkursion?\n4) Husten und Sekret: Ist Husten möglich? Farbe des Sekrets (klar = normal, gelb/grün = Infektion möglich), Hautfarbe (Lippen, Akren).\n\n**Wichtige Begriffe:** **Zyanose** = die bläuliche Verfärbung von Haut und Schleimhäuten bei Sauerstoffmangel. **Prophylaxe** = die vorbeugende Maßnahme gegen eine Erkrankung.\n\nBefund Herr Petrov: Atemfrequenz 17/Min, hörbares Atemgeräusch unauffällig, leicht reduzierte Atemexkursion rechts, kein Auswurf, keine Zyanose. → Pneumonieprophylaxe weiterführen, bei Auffälligkeiten ärztliche Auskultation veranlassen. (KRINKO 2013; PflBG-Kompetenzen)",
+        glossarBegriffe: ["Atelektase", "Atemexkursion", "Pneumonie", "Sekret", "Pflege", "Haut", "Arzt", "Prophylaxe", "Husten", "Zyanose", "Hygiene", "Schlaganfall", "Katheter", "Maßnahme"],
       },
       contentB1: {
         title: "Die Atmung beobachten — 4 Schritte",
-        body: "Du beobachtest die Atmung von Herrn Petrov. 4 Schritte:\nSchritt 1: Zähle die Atemzüge in 15 Sekunden. Dann × 4. Normal sind 12-18 pro Minute.\nSchritt 2: Atmet er tief oder flach?\nSchritt 3: Hörst du am Bett ein Rasseln oder Brodeln (ohne Stethoskop)? Bewegt sich der Brust-Korb gleichmäßig auf beiden Seiten?\nSchritt 4: Hustet er? Kommt Sekret (= Schleim) heraus? Welche Farbe haben Lippen und Haut?\nWichtig: Mit dem Stethoskop hört der Arzt die Lunge ab (= Auskultation). Das ist nicht deine Aufgabe als Pflege-Schülerin.\nBefund bei Herrn Petrov: 17 Atemzüge pro Minute. Atmung gleichmäßig, kein Rasseln hörbar, kein Husten.\nDeshalb machst du weiter mit der Pneumonie-Prophylaxe (= Lungenentzündung verhindern).",
-        glossarBegriffe: ["Pneumonie", "Atemfrequenz", "Atemexkursion"],
+        body: "Du beobachtest die Atmung von Herrn Petrov. 4 Schritte:\nSchritt 1: Zähle die Atemzüge in 15 Sekunden. Dann × 4. Normal sind 12-18 pro Minute.\nSchritt 2: Atmet er tief oder flach?\nSchritt 3: Hörst du am Bett ein Rasseln oder Brodeln (ohne Stethoskop)? Bewegt sich der Brust-Korb gleichmäßig auf beiden Seiten?\nSchritt 4: Hustet er? Kommt Sekret (= Schleim) heraus? Welche Farbe haben Lippen und Haut?\n**Zyanose** = die Lippen und Haut werden blau bei Sauerstoff-Mangel. **Prophylaxe** = etwas tun, damit eine Krankheit nicht entsteht.\nWichtig: Mit dem Stethoskop hört der Arzt die Lunge ab (= Auskultation). Das ist nicht deine Aufgabe als Pflege-Schülerin.\nBefund bei Herrn Petrov: 17 Atemzüge pro Minute. Atmung gleichmäßig, kein Rasseln hörbar, kein Husten.\nDeshalb machst du weiter mit der Pneumonie-Prophylaxe (= Lungenentzündung verhindern).",
+        glossarBegriffe: ["Pneumonie", "Atemfrequenz", "Atemexkursion", "Pflege", "Haut", "Arzt", "Prophylaxe", "Husten", "Zyanose", "Hygiene", "Schlaganfall", "Katheter"],
       },
     },
 

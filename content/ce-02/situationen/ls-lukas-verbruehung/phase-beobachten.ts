@@ -38,13 +38,13 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
       transition: "Du weißt jetzt was die KUSS-Skala ist. Schau dir Lukas an — und markiere, was du siehst.",
       contentC1: {
         title: "KUSS-Skala — Schmerzmessung bei Kindern, die nicht sprechen können",
-        body: "",
-        glossarBegriffe: ["KUSS-Skala", "NRS", "Fremdbeobachtung", "Schmerzassessment"],
+        body: "**KUSS** = Kindliche Unbehagens- und Schmerz-Skala (Büttner/Finke 2000), validiert für Kinder von 0 bis 4 Jahren. **Schmerzmittel** = pharmakologisches Analgetikum (z.B. Paracetamol, Ibuprofen, Opioide), das den Schmerz reduziert; bei Lukas wurde i.v.-Analgesie in der Notaufnahme verabreicht. **SpO₂** = peripher gemessene Sauerstoffsättigung im Blut, gemessen mit Pulsoximeter — Normwert ≥ 95 %.",
+        glossarBegriffe: ["KUSS-Skala", "KUSS", "NRS", "Fremdbeobachtung", "Schmerzassessment", "Schmerzmittel", "SpO₂"],
       },
       contentB1: {
         title: "Wie misst man Schmerz bei kleinen Kindern?",
-        body: "",
-        glossarBegriffe: ["KUSS-Skala", "NRS (= Numeric Rating Scale)"],
+        body: "**KUSS** = Schmerz-Skala für kleine Kinder (0-4 Jahre). **Schmerzmittel** = Medikament gegen Schmerzen (z.B. Paracetamol). **SpO₂** = Sauerstoff im Blut, gemessen am Finger — normal ≥ 95 %.",
+        glossarBegriffe: ["KUSS-Skala", "KUSS", "NRS (= Numeric Rating Scale)", "Schmerzmittel", "SpO₂"],
       },
       inlineWissen: {
         bausteinRef: "schmerz-kuss-skala-grundlagen",
@@ -194,13 +194,13 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
       transition: "Jetzt weißt du die Grade. Kathrin löst den Verband — schau genau hin.",
       contentC1: {
         title: "Verbrühungsgrade — 4 Stufen, 4 Prognosen",
-        body: "",
-        glossarBegriffe: ["Grad 1", "Grad 2a", "Grad 2b", "Grad 3", "Nekrose", "Epithelisierung"],
+        body: "**Verbrühungsgrad** = Klassifikation der Gewebstiefe einer thermischen Verletzung in 4 Stufen (Grad 1, 2a, 2b, 3) — entscheidet über Prognose, Schmerzempfinden und Therapie. **Wundauflage** = sterile Abdeckung der Wunde, die Exsudat aufnimmt und die Wunde schützt (z.B. silikonbeschichteter Polyurethanschaum, Hydrokolloid, Alginat). **Feuchte Wundbehandlung** = Wundversorgung nach dem Winter-Prinzip (1962): Wunde wird mit feuchthaltender Wundauflage versorgt — Heilung bis zu 50 % schneller als trocken, weniger Schmerz beim Verbandwechsel.",
+        glossarBegriffe: ["Grad 1", "Grad 2a", "Grad 2b", "Grad 3", "Nekrose", "Epithelisierung", "Verbrühungsgrad", "Wundauflage", "Feuchte Wundbehandlung"],
       },
       contentB1: {
         title: "Verbrühungsgrade — von leicht bis schwer",
-        body: "",
-        glossarBegriffe: ["Grad 2a", "Nekrose (= abgestorbenes Gewebe)"],
+        body: "**Verbrühungsgrad** = Wie tief die Hautverletzung ist — Grad 1 (leicht) bis Grad 3 (sehr schwer). **Wundauflage** = das, was du auf die Wunde legst (z.B. Mepilex). **Feuchte Wundbehandlung** = Wunde wird feucht gehalten — heilt schneller und tut weniger weh.",
+        glossarBegriffe: ["Grad 2a", "Nekrose (= abgestorbenes Gewebe)", "Verbrühungsgrad", "Wundauflage", "Feuchte Wundbehandlung"],
       },
       inlineWissen: {
         bausteinRef: "haut-verbrühungsgrade-uebersicht",
@@ -272,17 +272,17 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_BEOBACHTEN: SituationsPhase = {
         "Nurse carefully inspecting wound dressing on toddler arm, mother holding child calmly, kind face-to-face interaction, pediatric ward, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Wundinspektion — was ihr seht",
-        body: "Lukas, Zimmer 3, Kinderstation.\n\nKathrin löst vorsichtig den provisorischen Verband. Lukas weint kurz auf, greift nach Sandras Hand. Kathrin kündigt jede Bewegung an: \"Ich schaue jetzt kurz hin — das dauert nur einen Moment.\"\n\nWas ihr seht:\n- Linker Unterarm: 2–3 feuchte Blasen, Durchmesser 2–3 cm, noch intakt (nicht geplatzt)\n- Linke Schulter + Thorax lateral: Rötung mit weißlicher Oberfläche, Wundfläche nässend (Exsudat klar-gelblich)\n- Keine schwarz-weißliche Trockennekrose\n- Wundumgebung: leicht gerötet, warm\n- Schmerzreaktion: Lukas reagiert auf Berührung der Wundfläche — zieht sich zurück, KUSS-Score momentweise auf 8/10\n\n**Einordnung: Grad 2a.** Warum? Feuchte Blasen (intakt) + erhaltenes Schmerzempfinden + rosig-rötliche Wundfläche ohne Nekrose. Grad 2b hätte trockene, mattweißliche Blasen und vermindertes Schmerzempfinden. Grad 3 wäre schmerzlos (nerves destroyed) mit Nekrose. Quelle: _(DGV-Leitlinie Thermische Verletzungen, 2023)_.",
+        body: "Lukas, Zimmer 3, Kinderstation.\n\nKathrin löst vorsichtig den provisorischen Verband. Lukas weint kurz auf, greift nach Sandras Hand. Kathrin kündigt jede Bewegung an: \"Ich schaue jetzt kurz hin — das dauert nur einen Moment.\"\n\nWas ihr seht:\n- Linker Unterarm: 2–3 feuchte Blasen, Durchmesser 2–3 cm, noch intakt (nicht geplatzt)\n- Linke Schulter + Thorax lateral: Rötung mit weißlicher Oberfläche, Wundfläche nässend (Exsudat klar-gelblich)\n- Keine schwarz-weißliche Trockennekrose\n- Wundumgebung: leicht gerötet, warm\n- Schmerzreaktion: Lukas reagiert auf Berührung der Wundfläche — zieht sich zurück, KUSS-Score momentweise auf 8/10\n\n**Einordnung: Grad 2a.** Warum? Feuchte Blasen (intakt) + erhaltenes Schmerzempfinden + rosig-rötliche Wundfläche ohne Nekrose. Grad 2b hätte trockene, mattweißliche Blasen und vermindertes Schmerzempfinden. Grad 3 wäre schmerzlos (nerves destroyed) mit Nekrose. **KUSS** = Schmerz-Skala bei Kleinkindern. **Grad 2b** = tiefe Dermis-Verbrühung mit trockenen Blasen. **Grad 3** = vollschichtige Hautzerstörung mit Nekrose. **Bewegung** = aktive Mobilisation der betroffenen Extremität (bei Lukas: Arm muss weiter bewegt werden, kein zu fester Verband). **Rötung** = umschriebene Hautrötung (Erythem) als physiologisches Heilungszeichen oder Infektionsindikator. Quelle: _(DGV-Leitlinie Thermische Verletzungen, 2023)_.",
         fallbezug:
           "Lukas K., 2,5 J., Verbrühung Grad 2a ~15 % KOF. Wundinspektion Tag 1 nach Erstversorgung in der Notaufnahme.",
-        glossarBegriffe: ["Grad 2a", "Exsudat", "Nekrose", "KOF"],
+        glossarBegriffe: ["Grad 2a", "Exsudat", "Nekrose", "KOF", "KUSS", "Bewegung", "Grad 2b", "Grad 3", "Rötung"],
       },
       contentB1: {
         title: "Die Wunde — was wir sehen",
-        body: "Lukas, Zimmer 3.\n\nKathrin löst den Verband. Lukas weint kurz. Kathrin sagt: \"Ich schaue nur kurz — gleich fertig.\"\n\nWas ihr seht:\n- Linker Unterarm: feuchte Blasen (2–3 cm), noch intakt\n- Linke Schulter + Thorax: Rötung, Wundfläche nässt (= Exsudat)\n- Keine schwarzen oder weißen trockenen Stellen\n- Lukas hat Schmerzen wenn man die Wunde berührt\n\n**Das ist Grad 2a.** Feuchte Blasen + Schmerzen + Rötung = Grad 2a. Gut: Das heilt normalerweise gut — aber es braucht richtige Wundversorgung.",
+        body: "Lukas, Zimmer 3.\n\nKathrin löst den Verband. Lukas weint kurz. Kathrin sagt: \"Ich schaue nur kurz — gleich fertig.\"\n\nWas ihr seht:\n- Linker Unterarm: feuchte Blasen (2–3 cm), noch intakt\n- Linke Schulter + Thorax: Rötung, Wundfläche nässt (= Exsudat)\n- Keine schwarzen oder weißen trockenen Stellen\n- Lukas hat Schmerzen wenn man die Wunde berührt\n\n**Das ist Grad 2a.** Feuchte Blasen + Schmerzen + Rötung = Grad 2a. Gut: Das heilt normalerweise gut — aber es braucht richtige Wundversorgung. **KUSS** = Schmerz-Skala für kleine Kinder. **Grad 2b** = tiefere Verletzung mit trockenen Blasen. **Grad 3** = sehr tief, keine Schmerzen mehr. **Bewegung** = Lukas muss seinen Arm weiter bewegen können (kein zu fester Verband). **Rötung** = rote Stelle auf der Haut.",
         fallbezug:
           "Lukas K., 2,5 J., Verbrühung Grad 2a. Wundinspektion Tag 1.",
-        glossarBegriffe: ["Grad 2a", "Exsudat", "KOF"],
+        glossarBegriffe: ["Grad 2a", "Exsudat", "KOF", "KUSS", "Bewegung", "Grad 2b", "Grad 3", "Rötung"],
       },
     },
 

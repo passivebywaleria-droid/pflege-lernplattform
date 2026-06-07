@@ -1,0 +1,428 @@
+[
+  {
+    "situationId": "frau-m-nacht-sturz",
+    "totalSteps": 46,
+    "findings": [
+      {
+        "ruleId": "G-04",
+        "severity": "HOCH",
+        "location": "informieren/ce02-frau-m-info-04-zimmer-betreten",
+        "message": "contentC1.body ist leer (kein inlineWissen-Step)"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "informieren/ce02-frau-m-info-04-zimmer-betreten/dialogPhase[1]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "informieren/ce02-frau-m-info-04-zimmer-betreten/dialogPhase[2]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-frau-m-beob-03-patientenfrage/dialogPhase[0]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "durchfuehren/ce02-frau-m-dur-04-dialog-mobilisation/dialogPhase[0]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "durchfuehren/ce02-frau-m-dur-04-dialog-mobilisation/dialogPhase[0]",
+        "message": "Dialog-Context enthält Sprechverb \"sagt\" + \":\" ohne Zitat"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "durchfuehren/ce02-frau-m-dur-04-dialog-mobilisation/dialogPhase[2]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "durchfuehren/ce02-frau-m-dur-04-dialog-mobilisation/dialogPhase[2]",
+        "message": "Dialog-Context enthält Sprechverb \"sagt\" + \":\" ohne Zitat"
+      },
+      {
+        "ruleId": "D-03",
+        "severity": "HOCH",
+        "location": "durchfuehren/ce02-frau-m-dur-04-dialog-mobilisation/dialogPhase[2]",
+        "message": "Keine Option mit score <= 1 (kein Distraktor)"
+      },
+      {
+        "ruleId": "G-08",
+        "severity": "MITTEL",
+        "location": "evaluieren/ce02-frau-m-eval-03-konfidenz-nachher",
+        "message": "quellen Array ist leer"
+      }
+    ],
+    "hochCount": 9,
+    "mittelCount": 1,
+    "niedrigCount": 0
+  },
+  {
+    "situationId": "ls-bauer-demenz-sturz",
+    "totalSteps": 64,
+    "findings": [
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "informieren/ce02-bauer-info-04-zimmer-betreten/dialogPhase[0]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "informieren/ce02-bauer-info-04-zimmer-betreten/dialogPhase[0]",
+        "message": "Dialog-Context enthält Sprechverb \"sagt\" + \":\" ohne Zitat"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-bauer-beob-03-knie-kontraktur/dialogPhase[0]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-bauer-beob-03-knie-kontraktur/dialogPhase[0]",
+        "message": "Dialog-Context enthält Sprechverb \"sagt\" + \":\" ohne Zitat"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "evaluieren/ce02-bauer-eval-02-angehörigen-gespräch/dialogPhase[3]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "evaluieren/ce02-bauer-eval-02-angehörigen-gespräch/dialogPhase[3]",
+        "message": "Dialog-Context enthält Sprechverb \"sagt\" + \":\" ohne Zitat"
+      }
+    ],
+    "hochCount": 6,
+    "mittelCount": 0,
+    "niedrigCount": 0
+  },
+  {
+    "situationId": "ls-emilia-saeugling",
+    "totalSteps": 46,
+    "findings": [
+      {
+        "ruleId": "PAT-01",
+        "severity": "HOCH",
+        "location": "patient.ts",
+        "message": "patient.alter fehlt oder ungültig"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "informieren/ce02-emilia-info-03-aufnahmegespräch-dialog/dialogPhase[1]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "informieren/ce02-emilia-info-03-aufnahmegespräch-dialog/dialogPhase[1]",
+        "message": "Dialog-Context enthält Sprechverb \"sagt\" + \":\" ohne Zitat"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-emilia-beob-04-trinkverhalten-beobachten/dialogPhase[0]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-emilia-beob-04-trinkverhalten-beobachten/dialogPhase[0]",
+        "message": "Dialog-Context enthält Sprechverb \"sagt\" + \":\" ohne Zitat"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-emilia-beob-04-trinkverhalten-beobachten/dialogPhase[1]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-emilia-beob-04-trinkverhalten-beobachten/dialogPhase[2]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-emilia-beob-04-trinkverhalten-beobachten/dialogPhase[2]",
+        "message": "Dialog-Context enthält Sprechverb \"fragt\" + \":\" ohne Zitat"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "durchfuehren/ce02-emilia-dur-03-bad-durchführen/dialogPhase[1]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "durchfuehren/ce02-emilia-dur-03-bad-durchführen/dialogPhase[1]",
+        "message": "Dialog-Context enthält Sprechverb \"sagt\" + \":\" ohne Zitat"
+      }
+    ],
+    "hochCount": 10,
+    "mittelCount": 0,
+    "niedrigCount": 0
+  },
+  {
+    "situationId": "ls-kovac-ambulant",
+    "totalSteps": 56,
+    "findings": [
+      {
+        "ruleId": "D-03",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-kovac-beob-04-schlafanamnese/dialogPhase[2]",
+        "message": "Keine Option mit score <= 1 (kein Distraktor)"
+      },
+      {
+        "ruleId": "D-03",
+        "severity": "HOCH",
+        "location": "durchfuehren/ce02-kovac-dur-06-trinkmenge-vereinbaren/dialogPhase[0]",
+        "message": "Keine Option mit score <= 1 (kein Distraktor)"
+      },
+      {
+        "ruleId": "D-03",
+        "severity": "HOCH",
+        "location": "evaluieren/ce02-kovac-eval-02-schlafberatung-abend/dialogPhase[0]",
+        "message": "Keine Option mit score <= 1 (kein Distraktor)"
+      },
+      {
+        "ruleId": "D-03",
+        "severity": "HOCH",
+        "location": "evaluieren/ce02-kovac-eval-02-schlafberatung-abend/dialogPhase[1]",
+        "message": "Keine Option mit score <= 1 (kein Distraktor)"
+      },
+      {
+        "ruleId": "D-03",
+        "severity": "HOCH",
+        "location": "evaluieren/ce02-kovac-eval-02-schlafberatung-abend/dialogPhase[3]",
+        "message": "Keine Option mit score <= 1 (kein Distraktor)"
+      }
+    ],
+    "hochCount": 5,
+    "mittelCount": 0,
+    "niedrigCount": 0
+  },
+  {
+    "situationId": "ls-lukas-verbruehung",
+    "totalSteps": 39,
+    "findings": [
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "informieren/ce02-lukas-info-03-kinderschutz-erklären/dialogPhase[0]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "informieren/ce02-lukas-info-03-kinderschutz-erklären/dialogPhase[1]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "informieren/ce02-lukas-info-03-kinderschutz-erklären/dialogPhase[1]",
+        "message": "Dialog-Context enthält Sprechverb \"fragt\" + \":\" ohne Zitat"
+      },
+      {
+        "ruleId": "G-08",
+        "severity": "MITTEL",
+        "location": "evaluieren/ce02-lukas-eval-04-reflexion-freetext",
+        "message": "quellen Array ist leer"
+      },
+      {
+        "ruleId": "G-08",
+        "severity": "MITTEL",
+        "location": "dokumentieren/ce02-lukas-dok-03-session-summary",
+        "message": "quellen Array ist leer"
+      }
+    ],
+    "hochCount": 3,
+    "mittelCount": 2,
+    "niedrigCount": 0
+  },
+  {
+    "situationId": "ls-nguyen-stoma",
+    "totalSteps": 54,
+    "findings": [
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-nguyen-beob-04-ernährung-sehen/dialogPhase[0]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-nguyen-beob-04-ernährung-sehen/dialogPhase[0]",
+        "message": "Dialog-Context enthält Sprechverb \"sagt\" + \":\" ohne Zitat"
+      },
+      {
+        "ruleId": "D-03",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-nguyen-beob-04-ernährung-sehen/dialogPhase[0]",
+        "message": "Keine Option mit score <= 1 (kein Distraktor)"
+      },
+      {
+        "ruleId": "D-02",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-nguyen-beob-04-ernährung-sehen/dialogPhase[2]/option[0]",
+        "message": "Dialog-Option patientResponse ist leer"
+      },
+      {
+        "ruleId": "D-02",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-nguyen-beob-04-ernährung-sehen/dialogPhase[2]/option[1]",
+        "message": "Dialog-Option patientResponse ist leer"
+      },
+      {
+        "ruleId": "G-08",
+        "severity": "MITTEL",
+        "location": "planen/ce02-nguyen-plan-opt1-pflegeplanung-format",
+        "message": "quellen Array ist leer"
+      },
+      {
+        "ruleId": "D-03",
+        "severity": "HOCH",
+        "location": "durchfuehren/ce02-nguyen-dur-04-k2-angehörige/dialogPhase[2]",
+        "message": "Keine Option mit score <= 1 (kein Distraktor)"
+      },
+      {
+        "ruleId": "G-08",
+        "severity": "MITTEL",
+        "location": "evaluieren/ce02-nguyen-eval-04-freetext-reflexion",
+        "message": "quellen Array ist leer"
+      },
+      {
+        "ruleId": "G-08",
+        "severity": "MITTEL",
+        "location": "dokumentieren/ce02-nguyen-dok-04-uebergabe-formulieren",
+        "message": "quellen Array ist leer"
+      },
+      {
+        "ruleId": "G-08",
+        "severity": "MITTEL",
+        "location": "dokumentieren/ce02-nguyen-dok-opt1-was-nicht-dokumentieren",
+        "message": "quellen Array ist leer"
+      },
+      {
+        "ruleId": "G-08",
+        "severity": "MITTEL",
+        "location": "dokumentieren/ce02-nguyen-dok-opt2-session-summary",
+        "message": "quellen Array ist leer"
+      }
+    ],
+    "hochCount": 6,
+    "mittelCount": 5,
+    "niedrigCount": 0
+  },
+  {
+    "situationId": "ls-petrov-schlaganfall",
+    "totalSteps": 45,
+    "findings": [
+      {
+        "ruleId": "G-08",
+        "severity": "MITTEL",
+        "location": "dokumentieren/ce02-petrov-dok-04-session-summary",
+        "message": "quellen Array ist leer"
+      }
+    ],
+    "hochCount": 0,
+    "mittelCount": 1,
+    "niedrigCount": 0
+  },
+  {
+    "situationId": "ls-schmidt-adipositas",
+    "totalSteps": 47,
+    "findings": [
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-schmidt-beob-07-inkontinenz-assessment/dialogPhase[0]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "beobachten/ce02-schmidt-beob-07-inkontinenz-assessment/dialogPhase[1]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      },
+      {
+        "ruleId": "G-08",
+        "severity": "MITTEL",
+        "location": "evaluieren/ce02-schmidt-eval-05-konfidenz-nachher",
+        "message": "quellen Array ist leer"
+      },
+      {
+        "ruleId": "G-08",
+        "severity": "MITTEL",
+        "location": "dokumentieren/ce02-schmidt-dok-04-session-zusammenfassung",
+        "message": "quellen Array ist leer"
+      }
+    ],
+    "hochCount": 2,
+    "mittelCount": 2,
+    "niedrigCount": 0
+  },
+  {
+    "situationId": "ls-yilmaz-hueft-tep",
+    "totalSteps": 40,
+    "findings": [
+      {
+        "ruleId": "G-08",
+        "severity": "MITTEL",
+        "location": "evaluieren/ce02-yilmaz-eval-03-selbstreflexion-freetext",
+        "message": "quellen Array ist leer"
+      },
+      {
+        "ruleId": "G-08",
+        "severity": "MITTEL",
+        "location": "evaluieren/ce02-yilmaz-eval-04-konfidenz-vergleich-optional",
+        "message": "quellen Array ist leer"
+      }
+    ],
+    "hochCount": 0,
+    "mittelCount": 2,
+    "niedrigCount": 0
+  },
+  {
+    "situationId": "ls-yilmaz-spirale2",
+    "totalSteps": 62,
+    "findings": [
+      {
+        "ruleId": "G-05",
+        "severity": "MITTEL",
+        "location": "beobachten/ce02-yilmaz-s2-beob-opt-03-deep-tissue",
+        "message": "contentB1 fehlt (contentC1 existiert)"
+      },
+      {
+        "ruleId": "D-01",
+        "severity": "HOCH",
+        "location": "planen/ce02-yilmaz-s2-plan-05-arzt-information/dialogPhase[0]",
+        "message": "Dialog-Context endet mit \":\" ohne Patienten-Zitat in Anführungszeichen"
+      }
+    ],
+    "hochCount": 1,
+    "mittelCount": 1,
+    "niedrigCount": 0
+  }
+]

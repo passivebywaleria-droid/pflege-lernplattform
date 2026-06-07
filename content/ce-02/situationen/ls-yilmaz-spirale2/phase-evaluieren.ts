@@ -32,13 +32,13 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
       transition: "Wundheilungsphasen im Kopf. Vergleiche Tag 14 mit Tag 17.",
       contentC1: {
         title: "Wundheilungsphasen und Granulationsgewebe",
-        body: "",
-        glossarBegriffe: ["Granulationsgewebe", "Exsudat", "Exsudationsphase", "Resorptionsphase", "Proliferationsphase", "Regenerationsphase"],
+        body: "**Wundheilung** = biologischer Prozess der Geweberegeneration nach einer Verletzung — verläuft in 4 Phasen (Exsudation, Resorption, Proliferation, Regeneration).\n\nWeitere Begriffe für die nächsten Schritte:\n\n• **Reflexion** = systematisches Nachdenken über das eigene pflegerische Handeln, um aus Erfahrungen zu lernen.\n\n• **Prophylaxe** = vorbeugende Maßnahme, um Komplikationen wie Dekubitus, Thrombose oder Sturz zu verhindern.\n\n• **Dekubitusprophylaxe** = bündelt alle vorbeugenden Maßnahmen gegen Dekubitus (Umlagern, Hautinspektion, Weichlagerung — DNQP-Expertenstandard 2024).\n\n• **Dekubitusrisiko** = Wahrscheinlichkeit, einen Dekubitus zu entwickeln; wird mit standardisierten Skalen (Braden) gemessen.\n\n• **Pflegegrad** = Einstufung 1-5 nach SGB XI; bestimmt Höhe der Leistungen aus der Pflegeversicherung.",
+        glossarBegriffe: ["Granulationsgewebe", "Exsudat", "Exsudationsphase", "Resorptionsphase", "Proliferationsphase", "Regenerationsphase", "Wundheilung", "Reflexion", "Prophylaxe", "Dekubitusprophylaxe", "Dekubitusrisiko", "Pflegegrad", "Sturz", "Pflege", "Lernen", "Thrombose", "SGB XI", "Maßnahme", "Dekubitus", "massnahme", "Druckwunde"],
       },
       contentB1: {
         title: "Wie heilt eine Wunde? 4 Phasen",
-        body: "",
-        glossarBegriffe: ["Granulationsgewebe", "Exsudat"],
+        body: "**Wundheilung** = wie eine Wunde heilt. Es gibt 4 Phasen.\n\nWeitere Wörter:\n\n• **Reflexion** = nachdenken über das, was du gemacht hast — und lernen daraus.\n\n• **Prophylaxe** = vorbeugen — etwas verhindern, bevor es passiert.\n\n• **Dekubitusprophylaxe** = alles, was Dekubitus verhindert (Umlagern, Hautinspektion).\n\n• **Dekubitusrisiko** = wie hoch die Gefahr ist, eine Druckwunde zu bekommen.\n\n• **Pflegegrad** = wie viel Pflege jemand braucht (1 bis 5). Die Pflegekasse zahlt nach Pflegegrad.",
+        glossarBegriffe: ["Granulationsgewebe", "Exsudat", "Wundheilung", "Reflexion", "Prophylaxe", "Dekubitusprophylaxe", "Dekubitusrisiko", "Pflegegrad", "Sturz", "Pflege", "Lernen", "Thrombose", "SGB XI", "Maßnahme", "Dekubitus", "massnahme", "Druckwunde"],
       },
       inlineWissen: {
         bausteinRef: "dekubitus-prophylaxe-wundheilung",
@@ -688,9 +688,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_EVALUIEREN: SituationsPhase = {
           {
             text: "Verbandwechsel wie geplant durchführen, nichts melden — vielleicht ist es morgen besser.",
             feedback:
-              "Falsch. Geröteter Wundrand (Rubor) + erhöhte Temperatur (Calor) sind 2 klassische Cardinal Signs der Inflammation nach Celsus/Galen. Hinzu kommt purulentes (eitriges) Exsudat — das ist ein Infektionszeichen. Zusammen ergibt das einen Infektionsverdacht, der sofortige ärztliche Einschätzung erfordert. Abwarten verschlimmert die Situation.",
+              "Du bist auf dem richtigen Weg, dass der Verbandwechsel weiterhin nötig ist — das stimmt. Hier reicht das aber nicht: Geröteter Wundrand (Rubor) und erhöhte Temperatur (Calor) sind zwei klassische Cardinal Signs der Inflammation nach Celsus/Galen, deshalb ist das nicht harmlos. Zusammen mit purulentem (eitrigem) Exsudat liegt ein Infektionsverdacht vor, der sofortige ärztliche Einschätzung erfordert — Abwarten würde die Situation verschlimmern. Stattdessen: dokumentieren + sofort SBAR an die Ärztin.",
             feedbackB1:
-              "Falsch. Rötung und erhöhte Temperatur (das sind Inflammationszeichen) zusammen mit eitrigem Exsudat zeigen eine Wundinfektion. Du musst sofort den Arzt informieren — nicht warten.",
+              "Verbandwechsel ist gut — das stimmt. Aber es reicht nicht: Rötung und höhere Temperatur sind Inflammationszeichen. Zusammen mit dem Eiter zeigt das eine Wundinfektion, deshalb musst du sofort den Arzt informieren. Stattdessen: dokumentieren und sofort die Ärztin per SBAR anrufen — nicht warten.",
             isCorrect: false,
           },
           {

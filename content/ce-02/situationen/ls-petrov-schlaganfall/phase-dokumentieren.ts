@@ -32,7 +32,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DOKUMENTIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Pflegebericht Frühschicht — frei formulieren",
-        body: "Schreibe den Pflegebericht für Herrn Petrov, Frühschicht. Dein Text soll enthalten:\n\n1) Beginn der Schicht: Zustand beim Ankommen\n2) Maßnahmen: Körperpflege (Bobath), Mobilisation (Bettkante), Frühstück anreichen, Katheterkontrolle\n3) Besonderes Ereignis: Aspiration beim Frühstück — was passierte genau, welche Maßnahmen du ergriffen hast\n4) Befund nach der Schicht: Wie ist der Zustand jetzt?\n5) Offene Punkte: Was muss die Spätdienst-Kollegin wissen?\n\nSchreibe professionell, knapp, vollständig. Keine Wertungen (\"war unkooperativ\"), keine Abkürzungen ohne Erläuterung.",
+        body: "Schreibe den Pflegebericht für Herrn Petrov, Frühschicht. Dein Text soll enthalten:\n\n1) Beginn der Schicht: Zustand beim Ankommen\n2) Maßnahmen: Körperpflege (Bobath), Mobilisation (Bettkante), Frühstück anreichen, Katheterkontrolle\n3) Besonderes Ereignis: Aspiration beim Frühstück — was passierte genau, welche Maßnahmen du ergriffen hast\n4) Befund nach der Schicht: Wie ist der Zustand jetzt?\n5) Offene Punkte: Was muss die Spätdienst-Kollegin wissen? Z.B. **Schlucktherapeutin** kontaktieren wegen Konsistenz-Anpassung.\n\n**Begriffe für deinen Bericht:**\n- **SpO2** = die Sauerstoffsättigung im Blut, gemessen am Finger; Normwert 96-99 %.\n- **Sauerstoffsättigung** = der Anteil mit Sauerstoff beladener Hämoglobin-Moleküle im Blut, gemessen in Prozent.\n- **Pulsoximeter** = das kleine Messgerät am Finger, das SpO2 und Puls anzeigt.\n- **Schulterblatt** (Scapula) = der dreieckige Knochen am hinteren Brustkorb.\n- **Prädilektionsstellen** = die typischen Druckstellen, an denen Dekubitus bevorzugt entsteht (Steißbein, Fersen, Schulterblatt, Hinterhaupt).\n- **Steißbein** (Os coccygis) = der untere Knochen der Wirbelsäule; die häufigste Dekubitus-Stelle bei liegenden Patienten (~43 %).\n- **Schlucktherapeutin** = die Logopädin mit Spezialisierung auf Dysphagie.\n- **Anpassung** = die Änderung einer Pflege-Maßnahme an die aktuelle Situation des Patienten.\n\nSchreibe professionell, knapp, vollständig. Keine Wertungen (\"war unkooperativ\"), keine Abkürzungen ohne Erläuterung.",
         fallbezug:
           "Frühschicht mit Herrn Petrov — Schlaganfall Tag 5, Hemiparese rechts, Dysphagie Grad 2, Aphasie.",
         glossarBegriffe: [
@@ -40,14 +40,22 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DOKUMENTIEREN: SituationsPhase = {
           "Dokumentation",
           "§ 630f BGB",
           "SBAR",
+          "SpO2",
+          "Sauerstoffsättigung",
+          "Pulsoximeter",
+          "Schulterblatt",
+          "Prädilektionsstellen",
+          "Steißbein",
+          "Schlucktherapeutin",
+          "Anpassung",
         ],
       },
       contentB1: {
         title: "Den Pflege-Bericht schreiben",
-        body: "Du schreibst den Pflege-Bericht für Herrn Petrov, Früh-Schicht. Dein Text muss enthalten:\nBeginn der Schicht: Wie war Herr Petrov am Morgen?\nMaßnahmen: Körper-Pflege, Mobilisation, Frühstück, Katheter-Kontrolle.\nBesonderes Ereignis: Aspiration beim Frühstück. Was ist passiert? Was hast du getan?\nBefund danach: Wie war die Situation am Ende?\nOffene Punkte: Was muss die nächste Kollegin wissen?",
+        body: "Du schreibst den Pflege-Bericht für Herrn Petrov, Früh-Schicht. Dein Text muss enthalten:\nBeginn der Schicht: Wie war Herr Petrov am Morgen?\nMaßnahmen: Körper-Pflege, Mobilisation, Frühstück, Katheter-Kontrolle.\nBesonderes Ereignis: Aspiration beim Frühstück. Was ist passiert? Was hast du getan?\nBefund danach: Wie war die Situation am Ende?\nOffene Punkte: Was muss die nächste Kollegin wissen? Zum Beispiel: **Schlucktherapeutin** anrufen.\n\n**Wichtige Wörter:**\n- **SpO2** = der Sauerstoff im Blut in Prozent. Normal: 96-99 %.\n- **Sauerstoffsättigung** = wie viel Sauerstoff im Blut ist, in Prozent.\n- **Pulsoximeter** = das Mess-Gerät am Finger, das SpO2 zeigt.\n- **Schulterblatt** = der flache Knochen hinten auf dem Rücken.\n- **Prädilektionsstellen** = die Stellen, wo am häufigsten Dekubitus entsteht (Steißbein, Fersen, Schulterblatt).\n- **Steißbein** = der unterste Knochen der Wirbelsäule. Hier ist das größte Dekubitus-Risiko (43 %).\n- **Schlucktherapeutin** = die Logopädin für Schluck-Probleme.\n- **Anpassung** = die Änderung einer Pflege-Maßnahme.",
         fallbezug:
           "Frühschicht mit Herrn Petrov — Schlaganfall, Hemiparese, Dysphagie, Aphasie.",
-        glossarBegriffe: ["Pflegebericht", "Dokumentation"],
+        glossarBegriffe: ["Pflegebericht", "Dokumentation", "SpO2", "Sauerstoffsättigung", "Pulsoximeter", "Schulterblatt", "Prädilektionsstellen", "Steißbein", "Schlucktherapeutin", "Anpassung"],
       },
       question: {
         fragetext:
@@ -193,13 +201,13 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DOKUMENTIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Mündliche SBAR-Übergabe formulieren",
-        body: "Formuliere die mündliche SBAR-Übergabe an die Spätdienst-Kollegin für Herrn Petrov in 3-4 Sätzen. Die Kollegin kennt Herrn Petrov noch nicht.",
-        glossarBegriffe: ["SBAR", "Übergabe", "Pflegedokumentation"],
+        body: "Formuliere die mündliche SBAR-Übergabe an die Spätdienst-Kollegin für Herrn Petrov in 3-4 Sätzen. Die Kollegin kennt Herrn Petrov noch nicht.\n\n**Hinweis zu Fachbegriffen:** **Broca-Aphasie** = motorische Aphasie durch Schädigung des Broca-Areals (links frontal); Sprachproduktion gestört, Sprachverständnis erhalten. **Schlucktherapeutin** = Logopädin mit Dysphagie-Spezialisierung. Beide Begriffe kannst du in der SBAR-Übergabe ohne weitere Erklärung verwenden — die Kollegin kennt sie als Fachvokabular.",
+        glossarBegriffe: ["SBAR", "Übergabe", "Pflegedokumentation", "Broca-Aphasie", "Schlucktherapeutin"],
       },
       contentB1: {
         title: "Die mündliche Übergabe",
-        body: "Du übergibst mündlich an die Spät-Dienst-Kollegin. Das geht nach SBAR:",
-        glossarBegriffe: ["SBAR", "Übergabe"],
+        body: "Du übergibst mündlich an die Spät-Dienst-Kollegin. Das geht nach SBAR.\n\n**Wichtige Wörter:** **Broca-Aphasie** = die Sprach-Störung bei Herrn Petrov. Er versteht alles, kann aber kaum sprechen. **Schlucktherapeutin** = die Logopädin für Schluck-Probleme.",
+        glossarBegriffe: ["SBAR", "Übergabe", "Broca-Aphasie", "Schlucktherapeutin"],
       },
       question: {
         fragetext:
@@ -228,7 +236,10 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DOKUMENTIEREN: SituationsPhase = {
       stepType: "summary",
       bloomLevel: 5,
       kompetenzbereich: "I.1",
-      quellen: [],
+      quellen: [
+        "AWMF S2e-Leitlinie (2020): Akuttherapie des ischämischen Schlaganfalls",
+        "§ 630f BGB — Dokumentationspflicht der Behandelnden",
+      ],
       track: "basis",
       modus: "checkpoint",
       lernziel: "ce02-petrov-dok-summary",

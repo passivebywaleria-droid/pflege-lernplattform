@@ -215,12 +215,22 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
         body: "**Vorher (vor dem Blutbefund):** \"Frau Schmidt ist adipös — BMI 38. Sie isst genug. Sie ist sicher gut ernährt.\"\n\n**Nachher (mit dem Befund):** Albumin 31 g/l (Norm 35–52). NRS-2002-Score = 1 (allein NICHT interventionspflichtig). ABER: GLIM-Diagnostik ist positiv — phänotypisch (reduzierte Muskelmasse) + ätiologisch (reduzierte Proteinzufuhr + Inflammation durch entgleisten Diabetes) → GLIM-Diagnose Mangelernährung Stadium 1, trotz Adipositas. **Ernährungsintervention ist indiziert** — nicht über NRS allein, sondern über die GLIM-Diagnostik.\n\nDas Paradox: Frau Schmidt isst energiereiche, aber proteinarme Kost (Fertigprodukte, Kohlenhydrate, Fette). Der Körper braucht Protein — nicht nur für Muskeln, sondern für Wundheilung, Immunabwehr und Ödemprophylaxe. Albumin ist ein Hinweis auf den Eiweißstatus — aber Albumin sinkt auch bei Akut-Inflammation (Akut-Phase-Negativ-Protein). Deshalb ist die GLIM-Kombi-Diagnostik aussagekräftiger als Albumin allein. (Cederholm et al., GLIM-Kriterien, 2019)\n\nFrau Schmidt sagt: \"Ich esse doch genug — schauen Sie mich an! Wie kann ich da Eiweiß-Mangel haben? Das versteh ich nicht.\"",
         fallbezug:
           "Frau Schmidt hat NRS-Score 1 + positive GLIM-Diagnose → Ernährungsintervention indiziert. Die Ernährungsberaterin kommt nachmittags.",
-        glossarBegriffe: ["Albumin", "Proteinmangelernährung", "NRS 2002"],
+        glossarBegriffe: [
+          "Albumin", "Proteinmangelernährung", "NRS 2002",
+          "NRS", "NRS-2002", "NRS (= Numeric Rating Scale)",
+          "Risiko", "Wundheilung", "Mangelernährung", "BMI",
+          "Ernährungsberaterin", "Adipositas", "Protein",
+        ],
       },
       contentB1: {
         title: "Das Albumin-Paradox",
         body: "**Vorher:** \"Frau Schmidt hat Adipositas — sie ist sicher gut ernährt.\"\n\n**Nachher (nach dem Blutbefund):** Albumin 31 g/l — das ist zu niedrig.\n\nWas bedeutet das? Frau Schmidt isst viel Kohlenhydrate (= Zucker und Stärke) und Fett. Aber sie isst wenig Protein (= Eiweiß). Zum Beispiel: Fertig-Pizza. Der Körper braucht Protein für: Wunden heilen, das Immunsystem stärken, Ödeme (= Wassereinlagerungen) verhindern.\n\nWichtig: Albumin allein zeigt nicht alles. NRS 2002 (= Test-Werkzeug) ergibt 1 Punkt — kein hohes Risiko. Aber GLIM (= anderes Werkzeug, prüft Eiweiß-Mangel auch bei Übergewicht) ist positiv. Deshalb braucht Frau Schmidt eine Ernährungs-Hilfe.\n\nFrau Schmidt sagt: \"Ich esse doch genug — schauen Sie mich an! Wie kann ich da Eiweiß-Mangel haben? Das versteh ich nicht.\"",
-        glossarBegriffe: ["Albumin", "Proteinmangelernährung", "GLIM"],
+        glossarBegriffe: [
+          "Albumin", "Proteinmangelernährung", "GLIM",
+          "NRS", "NRS-2002", "NRS (= Numeric Rating Scale)",
+          "Risiko", "Wundheilung", "Mangelernährung", "BMI",
+          "Ernährungsberaterin", "Adipositas", "Protein",
+        ],
       },
     },
 
@@ -250,12 +260,12 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "GLIM-Kriterien — warum NRS allein nicht reicht",
         body: "",
-        glossarBegriffe: ["GLIM", "Phänotyp", "Ätiologie", "Mangelernährung"],
+        glossarBegriffe: ["GLIM", "Phänotyp", "Ätiologie", "Mangelernährung", "Haut"],
       },
       contentB1: {
         title: "GLIM — der Test der mehr findet",
         body: "",
-        glossarBegriffe: ["GLIM", "Mangelernährung"],
+        glossarBegriffe: ["GLIM", "Mangelernährung", "Haut"],
       },
       inlineWissen: {
         bausteinRef: "ernährungsassessment-formen-mangel",
@@ -329,12 +339,12 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
         "Medical illustration of an overweight female patient from behind and side view, showing anatomical risk zones for intertrigo and pressure sores: submammary folds, inguinal folds, abdominal hanging fold, sacrum area, clean educational style, no text no labels",
       contentC1: {
         title: "Haut-Inspektion — gefährdete Stellen markieren",
-        body: "Markiere auf dem Bild: Wo sind die gefährdeten Stellen für Intertrigo und Dekubitus bei Adipositas? Du hast vier Hauptstellen zu finden.",
+        body: "Bevor du markierst, kurze Begriffsklärung: **Intertrigo** = entzündliche Hautreaktion in Körperfalten durch Feuchtigkeit, Wärme und Reibung. **Dekubitus** = Hautschaden durch anhaltenden Druck auf eine Knochenprominenz (Sakrum, Fersen, Trochanter). Bei Adipositas können beide gleichzeitig auftreten.\n\nMarkiere auf dem Bild: Wo sind die gefährdeten Stellen für Intertrigo und Dekubitus bei Adipositas? Du hast vier Hauptstellen zu finden.",
         glossarBegriffe: ["Intertrigo", "Dekubitus", "Mazerierung"],
       },
       contentB1: {
         title: "Haut anschauen — wo ist sie gefährdet?",
-        body: "Bild: Rücken und Seite einer Patientin mit Übergewicht. Wo ist die Haut gefährdet? Markiere die Stellen.",
+        body: "Kurz erklärt: **Intertrigo** = Hautentzündung in Falten (durch Feuchtigkeit und Reibung). **Dekubitus** = Hautschaden durch anhaltenden Druck auf einen Knochen (zum Beispiel Steißbein, Fersen).\n\nBild: Rücken und Seite einer Patientin mit Übergewicht. Wo ist die Haut gefährdet? Markiere die Stellen.",
         glossarBegriffe: ["Intertrigo", "Dekubitus"],
       },
       question: {
@@ -564,9 +574,9 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Du bist bei Frau Schmidt, das Assessment läuft. Du weißt aus der Übergabe: Belastungsinkontinenz seit 2 Jahren. Du fragst:",
+              "Du bist bei Frau Schmidt, das Assessment läuft. Du weißt aus der Übergabe: Belastungsinkontinenz seit 2 Jahren. Jetzt möchtest du das Thema behutsam ansprechen.",
             contextB1:
-              "Du weißt: Frau Schmidt verliert manchmal Urin. Das ist ihr unangenehm. Du fragst jetzt:",
+              "Du weißt: Frau Schmidt verliert manchmal Urin. Das ist ihr unangenehm. Jetzt möchtest du vorsichtig danach fragen.",
             speaker: "Du",
             options: [
               {
@@ -615,9 +625,9 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_BEOBACHTEN: SituationsPhase = {
           },
           {
             context:
-              "Frau Schmidt schweigt. Sie schaut weg. Die Stille hält an. Du reagierst:",
+              "Frau Schmidt schweigt. Sie schaut weg. Die Stille hält an. Du möchtest sie nicht drängen, aber das Thema ist wichtig.",
             contextB1:
-              "Frau Schmidt schweigt kurz. Sie schaut weg. Was sagst du jetzt?",
+              "Frau Schmidt schweigt kurz. Sie schaut weg. Du möchtest sie nicht drängen — aber das Thema ist wichtig.",
             speaker: "Du",
             options: [
               {

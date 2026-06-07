@@ -270,12 +270,17 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
         body: "Hintergrund zur Medikation von Frau M.\n\nZolpidem gehört zu den Z-Substanzen — Schlafmittel aus der Gruppe der sogenannten **Nicht-Benzodiazepin-Hypnotika**. In der Jugend/im mittleren Alter wird es relativ schnell abgebaut (Halbwertszeit 2-3 h). Bei älteren Menschen ist das anders: Leber- und Nierenfunktion nehmen ab, die **Halbwertszeit verlängert sich auf bis zu 6-8 h**. Das heißt: Um 22 Uhr eingenommen, wirkt Zolpidem bei Frau M. noch nachts um 3 Uhr und morgens um 7 Uhr — sedierend, muskelrelaxierend, kognitiv dämpfend. Die PRISCUS-2.0-Liste (Holt/Schmiedl/Thürmann 2022) listet Zolpidem als **potenziell inadäquate Medikation (PIM)** im Alter. Das Sturzrisiko ist 2- bis 3-fach erhöht. Bei Frau M. kam dazu: Zolpidem (sediert) + HCT (Nykturie treibt nachts zur Toilette) + Parkinson (Bradykinese) = ein klassisches **Sturz-Trio**.",
         // FIX (walkthrough B-12): PRISCUS, Z-Substanzen, PIM ergänzt (hochspezifische Fachbegriffe).
         // FIX (walkthrough B-11): Nykturie ergänzt.
+        // FIX (Deep-Validator B-01): Sturz, Parkinson, Sturzrisiko, Halbwertszeit ergänzt.
         glossarBegriffe: [
           "Polypharmazie",
           "PRISCUS-Liste",
           "Z-Substanzen",
           "PIM (potenziell inadäquate Medikation)",
           "Nykturie",
+          "Sturz",
+          "Parkinson",
+          "Sturzrisiko",
+          "Halbwertszeit",
         ],
       },
       contentB1: {
@@ -288,6 +293,10 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
           "PRISCUS-Liste",
           "Z-Substanzen",
           "Nykturie",
+          "Sturz",
+          "Parkinson",
+          "Sturzrisiko",
+          "Halbwertszeit",
         ],
       },
     },
@@ -321,9 +330,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Du setzt dich zu Frau M., die immer noch auf dem Boden liegt (mit Decke). Du fragst:",
+              "Du setzt dich zu Frau M., die immer noch auf dem Boden liegt (mit Decke). Du willst wissen, wie sie die neue Schlaftablette erlebt hat.",
             contextB1:
-              "Du sitzt neben Frau M. am Boden. Sie hat eine Decke. Du fragst:",
+              "Du sitzt neben Frau M. am Boden. Sie hat eine Decke. Du willst wissen, wie die Schlaftablette war.",
             speaker: "Du",
             options: [
               {
@@ -350,9 +359,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
                   "Frau M. zögert. \"Doch — war das falsch?\"",
                 score: 1,
                 feedback:
-                  "Suggestive Frage mit Wertung. Frau M. hat die Tablette legitim auf Anordnung bekommen und eingenommen. Deine Formulierung impliziert, sie habe etwas falsch gemacht — Scham und Verunsicherung sind die Folge. Neutral fragen.",
+                  "Du hast erkannt, dass du nach dem Schlafmittel fragen musst — guter Ansatz. Allerdings ist die Formulierung suggestiv und enthält eine Wertung, weil 'hoffentlich nicht' impliziert, sie habe etwas falsch gemacht. Frau M. hat die Tablette aber legitim auf ärztliche Anordnung bekommen. Stattdessen: Frag neutral, z.B. 'Haben Sie die Schlaftablette heute Abend genommen?' — das schafft Information ohne Scham.",
                 feedbackB1:
-                  "Die Frage hat eine Wertung. Frau M. hat die Tablette vom Arzt bekommen. Sie hat nichts falsch gemacht. Deine Frage macht sie unsicher und sie schämt sich.",
+                  "Du hast richtig nach der Tablette gefragt — das war wichtig. Aber die Frage hat eine Wertung, denn 'hoffentlich nicht' klingt vorwurfsvoll. Frau M. hat die Tablette vom Arzt bekommen, deshalb hat sie nichts falsch gemacht. Beim nächsten Mal: Stelle die Frage neutral, zum Beispiel 'Haben Sie die Tablette heute Abend genommen?' — so bekommst du die Antwort ohne dass sie sich schämt.",
               },
               {
                 text: "\"Nehmen Sie die Schlaftablette regelmäßig?\"",
@@ -427,22 +436,25 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       transition: "Bevor du Frau M. bewegst, brauchst du noch etwas: den Schellong-Test.",
       contentC1: {
         title: "Risikofaktoren von Frau M. kategorisieren",
-        body: "Du hast viele Informationen über Frau M. Teile die Risikofaktoren in zwei Kategorien: **intrinsisch** (vom Patienten selbst) vs. **extrinsisch** (von der Umgebung).",
+        body: "Du hast viele Informationen über Frau M. Teile die Risikofaktoren in zwei Kategorien: **intrinsisch** (vom Patienten selbst) vs. **extrinsisch** (von der Umgebung).\n\nGleich brauchst du noch ein Werkzeug: **Schellong-Test** = ein einfaches Pflege-Verfahren, um den Blutdruck-Abfall beim Aufstehen zu messen (liegend → sitzend → stehend mit RR-Messung dazwischen, AAS-Konsensus 2011). Wir vertiefen die Methode im nächsten Step.",
         // FIX (walkthrough B-11): Nykturie ergänzt — wird in categoryItems erwähnt.
+        // FIX (Deep-Validator U-01): Schellong-Test definiert.
         glossarBegriffe: [
           "Intrinsische Risikofaktoren",
           "Extrinsische Risikofaktoren",
           "Nykturie",
+          "Schellong-Test",
         ],
       },
       contentB1: {
         title: "Risiken von Frau M. sortieren",
-        body: "Du kennst viele Risiken von Frau M. Sortiere sie: **intrinsisch** (vom Patienten) oder **extrinsisch** (von der Umgebung)?",
+        body: "Du kennst viele Risiken von Frau M. Sortiere sie: **intrinsisch** (vom Patienten) oder **extrinsisch** (von der Umgebung)?\n\nGleich brauchst du noch: **Schellong-Test** = ein einfacher Test in der Pflege. Du misst den Blutdruck im Liegen, dann im Sitzen, dann im Stehen — so siehst du, ob der Kreislauf beim Aufstehen abfällt (AAS 2011). Mehr im nächsten Step.",
         // FIX (walkthrough B-11): Nykturie ergänzt.
         glossarBegriffe: [
           "Intrinsische Risikofaktoren",
           "Extrinsische Risikofaktoren",
           "Nykturie",
+          "Schellong-Test",
         ],
       },
       question: {
@@ -632,12 +644,30 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Frau M. über ihre Situation",
         body: "Während du die Vitalzeichen misst, sagt Frau M. leise:\n\n\"Zu Hause komme ich zurecht. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst wirklich selbstständig, das müssen Sie mir glauben.\"\n\n**Was Frau M. sagt, ist didaktisch zentral.**\n\nEin Mensch verliert Orientierung in neuer Umgebung — auch ohne Demenz.\n\nSelbstständigkeit bei Aufnahme ≠ Selbstständigkeit in fremder Umgebung unter Pneumonie-Behandlung + neuer Sedierung.\n\n**Deine Aufgabe als Pflege:**\n\n• Das anerkennen, nicht relativieren (\"Jetzt sind Sie halt im Krankenhaus\").\n\n• Zuhören.\n\n• Dokumentieren, dass die Umgebung ein relevanter Risikofaktor ist.",
-        glossarBegriffe: [],
+        glossarBegriffe: [
+          "Sturz",
+          "Risikofaktor",
+          "Vitalzeichen",
+          "Pneumonie",
+          "Demenz",
+          "Pflege",
+          "Risiko",
+          "Blutdruck",
+        ],
       },
       contentB1: {
         title: "Frau M. erzählt",
         body: "Während du Blutdruck misst, sagt Frau M. leise:\n\n\"Zu Hause komme ich klar. Ich weiß, wo alles steht. Hier ist alles fremd, und das Bett ist so hoch. Ich bin sonst selbstständig — bitte glauben Sie mir.\"\n\n**Das ist wichtig.**\n\nJemand kann zuhause alles gut machen — und trotzdem in der Klinik verloren sein. Auch ohne Demenz!\n\nDie neue Umgebung, die Pneumonie, das neue Schlafmittel — das sind zusammen viele Änderungen.\n\n**Deine Aufgabe:**\n\n• Ihr zuhören.\n\n• Nicht sagen: \"Sie sind halt jetzt hier.\"\n\n• Die Umgebung mit-dokumentieren als Sturz-Risiko.",
-        glossarBegriffe: [],
+        glossarBegriffe: [
+          "Sturz",
+          "Risikofaktor",
+          "Vitalzeichen",
+          "Pneumonie",
+          "Demenz",
+          "Pflege",
+          "Risiko",
+          "Blutdruck",
+        ],
       },
     },
   ],

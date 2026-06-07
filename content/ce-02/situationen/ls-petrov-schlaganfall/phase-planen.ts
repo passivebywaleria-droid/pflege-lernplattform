@@ -29,17 +29,17 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
       displayFormat: "scenario",
       contentC1: {
         title: "PESR — Pflegeprobleme formulieren",
-        body: "Das PESR-Schema strukturiert Pflegeprobleme so, dass sie direkt handlungsleitend sind. PESR = Problem / Etiologie / Symptom / Ressource.\n\nBeispiel aus dem Fall:\n**Problem:** Aspirationsgefahr bei Herrn Petrov.\n**Etiologie:** Dysphagie Grad 2 nach ischämischem Apoplex links (Schädigung der Schluckmuskulatur durch linkshemisphärische Läsion).\n**Symptom:** Husten nach Schluckversuch mit dünnflüssiger Flüssigkeit, feuchte Stimme nach dem Schlucken (GUSS-Befund aus Akte).\n**Ressource:** Schlucken breiiger Konsistenz sicher möglich. Herr Petrov ist kooperativ und versteht Anweisungen trotz Aphasie.\n\nSo wird aus einer Diagnose eine pflegerisch handlungsleitende Formulierung — konkret, messbar, lösungsorientiert. (Fiechter/Meier 1981)",
+        body: "**Pflegeproblem** = eine konkrete pflegerische Herausforderung, die Maßnahmen erfordert. Das PESR-Schema strukturiert solche Pflegeprobleme so, dass sie direkt handlungsleitend sind. PESR = Problem / Etiologie / Symptom / Ressource.\n\n**Aspirationsgefahr** = das Risiko, dass Speichel, Flüssigkeit oder Nahrung unter die Stimmritze in die unteren Atemwege gelangen. Bei Dysphagie eine der größten Pflegerisiken.\n\nBeispiel aus dem Fall:\n**Problem:** Aspirationsgefahr bei Herrn Petrov.\n**Etiologie:** Dysphagie Grad 2 nach ischämischem Apoplex links (Schädigung der Schluckmuskulatur durch linkshemisphärische Läsion).\n**Symptom:** Husten nach Schluckversuch mit dünnflüssiger Flüssigkeit, feuchte Stimme nach dem Schlucken (GUSS-Befund aus Akte).\n**Ressource:** Schlucken breiiger Konsistenz sicher möglich. Herr Petrov ist kooperativ und versteht Anweisungen trotz Aphasie.\n\n**Dekubitusrisiko** (= Dekubitus-Risiko) = die Wahrscheinlichkeit, einen Dekubitus zu entwickeln; bei Immobilität, fehlender Sensibilität und Mangelernährung erhöht.\n\nSo wird aus einer Diagnose eine pflegerisch handlungsleitende Formulierung — konkret, messbar, lösungsorientiert. (Fiechter/Meier 1981; DNQP 2017)",
         fallbezug:
           "Herrn Petrovs Aspirationsgefahr als Vorlage für das PESR-Schema.",
-        glossarBegriffe: ["PESR", "Etiologie", "Ressource", "Aspiration"],
+        glossarBegriffe: ["PESR", "PESR-Schema", "Etiologie", "Ressource", "Aspiration", "Aspirationsgefahr", "Pflegeproblem", "Dekubitusrisiko", "Dekubitus-Risiko", "Pflege", "Immobilität", "Risiko", "messbar", "Flüssigkeit", "Trinken", "Ursache", "Husten", "Problem", "Mangelernährung", "Dekubitus", "Konsistenz", "Apoplex", "Aphasie"],
       },
       contentB1: {
         title: "PESR — Was ist das?",
-        body: "Das PESR-Schema hilft dir, ein Pflege-Problem zu beschreiben. PESR = Problem / Ursache (= Etiologie) / Zeichen (= Symptom) / Ressource.\nBeispiel bei Herrn Petrov:\nProblem: Er kann sich verschlucken (= Aspirations-Gefahr).\nUrsache: Die Schluck-Muskeln funktionieren nicht gut (= Dysphagie Grad 2 nach Schlaganfall).\nZeichen: Er hustet beim Trinken. Seine Stimme klingt feucht.\nRessource: Er schluckt breiiges Essen sicher. Er arbeitet gut mit.",
+        body: "**Pflegeproblem** = eine Schwierigkeit, bei der die Pflege helfen muss. Das PESR-Schema hilft dir, ein Pflege-Problem zu beschreiben. PESR = Problem / Ursache (= Etiologie) / Zeichen (= Symptom) / Ressource.\n\n**Aspirationsgefahr** = die Gefahr, dass Flüssigkeit oder Essen in die Lunge kommt.\n\nBeispiel bei Herrn Petrov:\nProblem: Er kann sich verschlucken (= Aspirationsgefahr).\nUrsache: Die Schluck-Muskeln funktionieren nicht gut (= Dysphagie Grad 2 nach Schlaganfall).\nZeichen: Er hustet beim Trinken. Seine Stimme klingt feucht.\nRessource: Er schluckt breiiges Essen sicher. Er arbeitet gut mit.\n\n**Dekubitusrisiko** = die Gefahr, dass ein Dekubitus entsteht.",
         fallbezug:
           "PESR-Beispiel: Aspirationsgefahr bei Herrn Petrov.",
-        glossarBegriffe: ["PESR", "Aspiration", "Dysphagie"],
+        glossarBegriffe: ["PESR", "PESR-Schema", "Aspiration", "Aspirationsgefahr", "Dysphagie", "Pflegeproblem", "Dekubitusrisiko", "Pflege", "Immobilität", "Risiko", "messbar", "Flüssigkeit", "Trinken", "Ursache", "Husten", "Problem", "Mangelernährung", "Dekubitus", "Konsistenz", "Apoplex", "Aphasie"],
       },
     },
 
@@ -110,13 +110,13 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Pflegeprobleme → Pflegeziele",
-        body: "Ordne die Pflegeprobleme den richtigen SMART-Pflegezielen zu. SMART: Spezifisch, Messbar, Akzeptiert (erreichbar), Relevant, Terminiert.",
-        glossarBegriffe: ["SMART", "Pflegeziel"],
+        body: "**SMART** = ein Akronym für gute Zielformulierung: **S**pezifisch, **M**essbar, **A**kzeptiert (erreichbar), **R**elevant, **T**erminiert. **Pflegeproblem** = die konkrete pflegerische Herausforderung. Ordne die Pflegeprobleme den richtigen SMART-Pflegezielen zu.",
+        glossarBegriffe: ["SMART", "Pflegeziel", "Pflegeproblem"],
       },
       contentB1: {
         title: "Welches Ziel passt zu welchem Problem?",
-        body: "Ordne das Pflege-Problem dem richtigen Pflege-Ziel zu. Pflege-Ziele müssen SMART sein: konkret, messbar, erreichbar, sinnvoll, mit Zeit.",
-        glossarBegriffe: ["Pflegeziel", "SMART"],
+        body: "**SMART** = eine Regel für gute Ziele: konkret (S), messbar (M), erreichbar (A), wichtig (R), mit Zeit (T). **Pflegeproblem** = das pflegerische Problem. Ordne das Pflege-Problem dem richtigen Pflege-Ziel zu.",
+        glossarBegriffe: ["Pflegeziel", "SMART", "Pflegeproblem"],
       },
       question: {
         fragetext:
@@ -241,13 +241,13 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_PLANEN: SituationsPhase = {
       transition: "Plan steht, Reihenfolge klar. Aber was wenn die orale Ernährung nicht reicht?",
       contentC1: {
         title: "Maßnahmen priorisieren",
-        body: "Du hast 3 Stunden. Fünf Maßnahmen warten. Bringe sie in die richtige Prioritätsreihenfolge nach ABCDE-Logik (Atmung vor allem anderen außer Atemwegs-Notfall) und Aspirations-Risiko.",
+        body: "Du hast 3 Stunden. Fünf Maßnahmen warten. **ABCDE** = ein Notfall- und Priorisierungs-Schema aus der Notfallmedizin: **A**irway (Atemweg), **B**reathing (Atmung), **C**irculation (Kreislauf), **D**isability (Bewusstsein), **E**xposure (Inspektion). Bringe die Maßnahmen in eine pflegerisch sinnvolle Reihenfolge.",
         glossarBegriffe: ["Priorität", "Pflegemaßnahmen", "ABCDE"],
       },
       contentB1: {
         title: "Was machst du zuerst?",
-        body: "Was machst du zuerst? Bringe die 5 Maßnahmen in die richtige Reihenfolge. Wichtig: Die Atmung kommt immer zuerst (= ABCDE).",
-        glossarBegriffe: ["Pflegemaßnahmen"],
+        body: "Bringe die 5 Maßnahmen in eine sinnvolle Reihenfolge. **ABCDE** = Notfall-Schema: A = Atemweg, B = Atmung, C = Kreislauf, D = Bewusstsein, E = Inspektion. Wichtig: Die Atmung kommt am Anfang.",
+        glossarBegriffe: ["Pflegemaßnahmen", "ABCDE"],
       },
       question: {
         fragetext:

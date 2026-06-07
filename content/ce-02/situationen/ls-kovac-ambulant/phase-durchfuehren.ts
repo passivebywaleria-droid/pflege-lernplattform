@@ -42,6 +42,9 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
           "Kontaktatmung",
           "PEEP-Effekt",
           "Propriozeptiv",
+          "passiv",
+          "COPD",
+          "Kutschersitz",
         ],
       },
       contentB1: {
@@ -49,7 +52,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
         body: "**Schritt 1 — Hinsetzen**\nFrau Kovač sitzt aufrecht im Sessel. Leicht vorgeneigt. Hände auf den Knien.\n\n**Schritt 2 — Einatmen**\nDurch die Nase einatmen — ruhig und langsam (2 Sekunden). Keine Schultern hochziehen.\n\n**Schritt 3 — Ausatmen mit Lippenbremse**\nLippen leicht schließen — wie durch einen Strohhalm ausatmen (4 Sekunden). Doppelt so lang wie einatmen.\n\n**Schritt 4 — Kontaktatmung**\nFrage Frau Kovac, ob du die Hände auflegen darfst. Du legst deine Hände sanft auf den unteren Brustkorb. Die Hände **folgen** der Ausatmung — du drückst nicht. Das hilft der Patientin, ihre eigene Atmung zu spüren.\n\n**Achtung:** Wenn sie gerade akut Atemnot hat — diese Übung **nicht** machen. Dann nur Lippenbremse + Kutschersitz.\n\n**Wichtig:** Nur 3–5 Wiederholungen — dann Pause. Bei COPD ist die Lunge schnell erschöpft.",
         fallbezug:
           "Gestern hat Frau Kovač nur 3 Minuten durchgehalten. Heute machst du es langsamer und ruhiger.",
-        glossarBegriffe: ["Lippenbremse", "Kontaktatmung"],
+        glossarBegriffe: ["Lippenbremse", "Kontaktatmung", "passiv", "COPD", "Kutschersitz"],
       },
     },
 
@@ -175,13 +178,13 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "Was ist Zyanose?",
-        body: "",
-        glossarBegriffe: ["Zyanose"],
+        body: "**Zyanose** = bläulich-violette Verfärbung von Haut und Schleimhäuten durch Sauerstoffmangel im Blut.\n\n**Lippenzyanose** = Zyanose der Lippen, eine Form der zentralen Zyanose (Sauerstoffmangel im arteriellen Blut). Bei Frau Kovač immer als Warnsignal zu werten.",
+        glossarBegriffe: ["Zyanose", "Lippenzyanose", "Haut"],
       },
       contentB1: {
         title: "Was bedeutet Zyanose?",
-        body: "",
-        glossarBegriffe: ["Zyanose"],
+        body: "**Zyanose** = blaue Verfärbung der Haut, weil zu wenig Sauerstoff im Blut ist.\n\n**Lippenzyanose** = blaue Lippen — bedeutet zu wenig Sauerstoff im Blut, das aus der Lunge kommt. Immer ernst nehmen.",
+        glossarBegriffe: ["Zyanose", "Lippenzyanose", "Haut"],
       },
       inlineWissen: {
         bausteinRef: "zyanose",
@@ -294,17 +297,17 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
             text: "Ich sage: 'Noch eine Runde, dann hören wir auf.' Sie kennt das ja schon.",
             isCorrect: false,
             feedback:
-              "Nicht korrekt und gefährlich. Bei sichtbarer Lippenzyanose (Zeichen von Sauerstoffmangel) und erhöhter Atemfrequenz ist Weitermachen kontraindiziert. 'Sie kennt das ja schon' ist kein Freifahrtschein — auch bekannte Symptome können eskalieren. Merke: Zyanose = sofort stoppen. Geh zurück und wähle Pfad A.",
+              "Du hast erkannt, dass Frau Kovač Erfahrung mit ihren Symptomen hat — das stimmt grundsätzlich. Die Antwort ist hier **trotzdem** gefährlich, **weil** bei sichtbarer Lippenzyanose (Sauerstoffmangel) und erhöhter Atemfrequenz Weitermachen kontraindiziert ist. 'Sie kennt das ja schon' ist kein Freifahrtschein, **denn** auch bekannte Symptome können eskalieren. **Stattdessen** richtig: Zyanose = sofort stoppen. Geh zurück und wähle Pfad A.",
             feedbackB1:
-              "Falsch und gefährlich. Die blauen Lippen zeigen: zu wenig Sauerstoff. Das ist ein Warnsignal. Sofort stoppen. Nicht weitermachen.",
+              "Du achtest auf Frau Kovačs Erfahrung — das ist ein guter Reflex. Aber **die blauen Lippen zeigen: zu wenig Sauerstoff**. Das ist ein klares Warnsignal. **Stattdessen**: sofort stoppen, **weil** auch bekannte Symptome plötzlich gefährlich werden können.",
           },
           {
             text: "Ich rufe sofort den Notarzt — bei sichtbarer Lippenzyanose und allein in der Wohnung ist mir das zu unsicher.",
             isCorrect: true,
             feedback:
-              "Auch korrekt — und im Zweifel nie falsch. In der ambulanten Solo-Situation gilt: Wer 112 wählt, hat nicht 'zu früh' gehandelt. Lippenzyanose + AF ~22/Min ist ein klinisches Warnzeichen, du bist allein, du hast kein SpO2-Wert, kein Backup im Nebenraum. Optimal wäre: Erstmaßnahmen (Übung stoppen + aufrechte Position + Frischluft) machst du **parallel** zum Notarzt-Anruf — nicht entweder/oder. Pfad A ist die didaktisch elegantere Reihenfolge (erst entlasten, dann eskalieren bei <5 Min keine Besserung), aber 112 wählen ist im Zweifel immer richtig. Faustregel ambulant: lieber einmal zu viel anrufen als einmal zu spät. Quelle: (GOLD-Report COPD 2023; ABCDE-Schema)",
+              "Richtig — und im Zweifel nie ein Fehler. Du hast die Sicherheit Frau Kovačs vor das Optimieren der Reihenfolge gestellt — ein guter Profi-Reflex. **Der Grund**: In der ambulanten Solo-Situation gilt: Wer 112 wählt, hat nicht 'zu früh' gehandelt. Lippenzyanose + AF ~22/Min ist ein klinisches Warnzeichen, **denn** du bist allein, du hast keinen SpO2-Wert, kein Backup im Nebenraum.\n\n**Was noch besser wäre:** Erstmaßnahmen (Übung stoppen + aufrechte Position + Frischluft) machst du **parallel** zum Notarzt-Anruf — nicht entweder/oder. Pfad A ist didaktisch eleganter, **weil** er erst entlastet und dann eskaliert (bei <5 Min keine Besserung). Aber 112 zu wählen ist im Zweifel immer korrekt. Faustregel ambulant: lieber einmal zu viel anrufen als einmal zu spät. Quelle: (GOLD-Report COPD 2023; ABCDE-Schema)",
             feedbackB1:
-              "Auch richtig. Du bist allein in der Wohnung. Du siehst blaue Lippen. Im Zweifel ist 112 nie falsch. Noch besser: Erst stoppen, aufrecht setzen (Kutschersitz), Lippenbremse anleiten — und gleichzeitig (parallel) Notarzt rufen. Aber: 112 anzurufen ist nie ein Fehler. Lieber einmal zu viel als einmal zu spät.",
+              "Richtig. Du bist allein in der Wohnung. Du siehst blaue Lippen. Im Zweifel ist 112 nie ein Fehler — guter Profi-Reflex. **Der Grund**: Du hast keine Hilfe in der Nähe. **Noch besser**: Erst stoppen, aufrecht setzen (Kutschersitz), Lippenbremse anleiten — und **gleichzeitig** (parallel) Notarzt rufen, **weil** das die Wartezeit produktiv nutzt. Aber: 112 anzurufen ist nie ein Fehler. Lieber einmal zu viel als einmal zu spät.",
           },
         ],
       },
@@ -420,22 +423,23 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Bewegungsübungen im Sitzen — in welcher Reihenfolge?",
-        body: "Frau Kovač hat sich erholt. Jetzt kommen die Bewegungsübungen für Knie und Sprunggelenke — im Sitzen, schonend.\n\n**Pflicht-Prinzip — Kinästhetik (Hatch/Maietta):**\nFrau Kovač **macht alle Bewegungen selbst aktiv**. Du **begleitest und sicherst verbal**, du **greifst nicht** in die Bewegung ein. Bei einer 84-jährigen mit Kontrakturen ist Eigenbewegung das therapeutische Wirkprinzip — nicht die passive Mobilisation durch dich. Du gibst Tempo-Vorgaben, korrigierst verbal, sicherst durch deine Anwesenheit. Frau Kovač bestimmt das Tempo.\n\nWelche Reihenfolge ist klinisch sinnvoll?",
+        body: "**Mobilisation** = pflegerische Maßnahme zur Förderung der Beweglichkeit. Aktiv = die Patientin bewegt sich selbst. Passiv = die Pflegekraft bewegt das Gelenk.\n\nFrau Kovač hat sich erholt. Jetzt kommen die Bewegungsübungen für Knie und Sprunggelenke — im Sitzen, schonend.\n\n**Pflicht-Prinzip — Kinästhetik (Hatch/Maietta):**\nFrau Kovač **macht alle Bewegungen selbst aktiv**. Du **begleitest und sicherst verbal**, du **greifst nicht** in die Bewegung ein. Bei einer 84-jährigen mit Kontrakturen ist Eigenbewegung das therapeutische Wirkprinzip — nicht die passive Mobilisation durch dich. Du gibst Tempo-Vorgaben, korrigierst verbal, sicherst durch deine Anwesenheit. Frau Kovač bestimmt das Tempo.\n\nBringe die Schritte in eine pflegerisch sinnvolle Reihenfolge.",
         glossarBegriffe: [
           "Kontraktur",
           "Sprunggelenkmobilisation",
+          "Mobilisation",
           "Wadenmuskel-Pumpe",
           "Kinästhetik",
         ],
       },
       contentB1: {
         title: "Welche Reihenfolge bei den Bewegungs-Übungen?",
-        body: "Frau Kovač hat sich erholt. Jetzt kommen Übungen für Knie und Sprunggelenke. Sitzen ist sicherer als Stehen.\n\n**Wichtig — Kinästhetik:** Frau Kovač **bewegt sich selbst**. Du **machst die Bewegung NICHT für sie**. Du sagst was sie machen soll. Du schaust hin. Du sicherst (z.B. dass sie nicht vom Sessel rutscht). Aber: Sie führt die Bewegung — du nicht. Sie bestimmt das Tempo.\n\nSortiere die Schritte in die richtige Reihenfolge.",
-        glossarBegriffe: ["Kontraktur", "Wadenmuskel-Pumpe", "Kinästhetik"],
+        body: "**Mobilisation** = eine Pflege-Maßnahme. Sie bringt einen Menschen in Bewegung. Aktive Mobilisation = die Patientin bewegt sich selbst. Passive Mobilisation = du bewegst das Gelenk für sie.\n\nFrau Kovač hat sich erholt. Jetzt kommen Übungen für Knie und Sprunggelenke. Sitzen ist sicherer als Stehen.\n\n**Wichtig — Kinästhetik:** Frau Kovač **bewegt sich selbst**. Du **machst die Bewegung NICHT für sie**. Du sagst was sie machen soll. Du schaust hin. Du sicherst (z.B. dass sie nicht vom Sessel rutscht). Aber: Sie führt die Bewegung — du nicht. Sie bestimmt das Tempo.\n\nBringe die Schritte in eine sinnvolle Reihenfolge.",
+        glossarBegriffe: ["Kontraktur", "Wadenmuskel-Pumpe", "Kinästhetik", "Mobilisation"],
       },
       question: {
         fragetext:
-          "Sortiere die Schritte der Bewegungsübung im Sitzen — von Anfang bis Ende.",
+          "Bringe die Schritte der Bewegungsübung im Sitzen in eine pflegerisch sinnvolle Reihenfolge.",
         sortItems: [
           "Warm-up: Füße kreisen — Sprunggelenke mobilisieren, 10× je Seite",
           "Knie: langsam strecken so weit möglich (Extensionsdefizit respektieren), halten 3 Sek, zurück — 5× je Seite",
@@ -559,6 +563,20 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
                 feedbackB1:
                   "Gut. Du erklärst warum es wichtig ist. Frau Kovač hört zu. Aber sie hat einen Einwand.",
               },
+              {
+                text: "\"Frau Kovač, Sie müssen mehr trinken. 800 ml ist viel zu wenig.\"",
+                textB1:
+                  "\"Frau Kovač, 800 ml ist viel zu wenig. Sie müssen mehr trinken.\"",
+                patientResponse:
+                  "Frau Kovač schaut kurz weg. \"Wenn Sie das sagen.\"",
+                patientResponseB1:
+                  "Frau Kovač nickt ohne Begeisterung. \"Wenn Sie das sagen.\"",
+                score: 1,
+                feedback:
+                  "Richtige Aussage, aber ohne Erklärung. Frau Kovač weiß nicht WARUM sie mehr trinken soll. Die Verbindung zum Schleim (Husten erleichtern) fehlt — damit fehlt ihr die persönliche Relevanz.",
+                feedbackB1:
+                  "Du sagst was sie tun soll — aber nicht warum. Die Erklärung fehlt: Mehr trinken hilft gegen den Schleim.",
+              },
             ],
           },
           {
@@ -606,9 +624,9 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
                   "Frau Kovač nickt. \"Dann warte ich.\"",
                 score: 1,
                 feedback:
-                  "Nicht falsch — aber unnötig. Das Trinkgespräch ist pflegerische Beratung, nicht ärztliche Entscheidung. Du kannst das jetzt lösen. Weiter bis abends zu warten bedeutet: Frau Kovač trinkt heute Morgen weiterhin zu wenig.",
+                  "Du hast erkannt, dass komplexe Trink-Mengen ärztlich vereinbart sind — das stimmt grundsätzlich. **Stattdessen** kannst du das hier aber selbst lösen, **weil** das Trinkgespräch pflegerische Beratung ist und keine ärztliche Entscheidung. **Der Grund:** Bis zum Arzttermin verstreichen Stunden in denen Frau Kovač weiterhin zu wenig trinkt. Beim nächsten Mal: pflegerische Lösung versuchen, **dann** dokumentieren.",
                 feedbackB1:
-                  "Nicht falsch, aber unnötig. Du kannst das jetzt besprechen. Beim Arzt warten bedeutet: noch mehr Stunden ohne Trinken.",
+                  "Guter Reflex, den Arzt einzubeziehen — wichtig bei Unsicherheit. **Stattdessen** kannst du das hier selbst lösen, **weil** das Trinkgespräch zur Pflege-Beratung gehört. **Der Grund:** Beim Arzt warten bedeutet noch mehr Stunden ohne Trinken.",
               },
             ],
           },
@@ -639,12 +657,16 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
           "Zirkadianer Rhythmus",
           "Blaulicht",
           "Zirbeldrüse",
+          "COPD",
+          "Husten",
+          "Problem",
+          "Aufklärung",
         ],
       },
       contentB1: {
         title: "Was machst du vor dem Gehen?",
         body: "Du packst deine Sachen. Du sagst Frau Kovač:\n\n\"Heute Abend möchte ich mit Ihnen über den Schlaf sprechen. Nicht um Ihnen zu sagen was Sie tun sollen. Sondern damit Sie verstehen was im Körper passiert.\"\n\nFrau Kovač sagt: \"Na gut.\"\n\n**Warum beeinflusst Fernsehen den Schlaf?**\nFernsehen sendet blaüs Licht. Dieses Licht sagt dem Körper: Es ist Tag. Deshalb macht der Körper kein Melatonin (= das Schlaf-Hormon). Ohne Melatonin kommt der Schlaf nicht. Bei älteren Menschen gibt es ohnehin schon weniger Melatonin.\n\nDazu kommt: Unregelmäßige Schlafzeiten stören die innere Uhr des Körpers.",
-        glossarBegriffe: ["Melatonin", "Zirkadianer Rhythmus"],
+        glossarBegriffe: ["Melatonin", "Zirkadianer Rhythmus", "COPD", "Husten", "Problem", "Aufklärung"],
       },
       wusstestDuDas:
         "Frau Kovačs Fernsehen bis Mitternacht begann nach dem Tod ihres Mannes Josip. Es ist ihr Weg, nicht allein einzuschlafen. Reine Schlafentzieher-Kritik ohne dieses Verständnis würde das Gespräch scheitern lassen.",
@@ -672,6 +694,10 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
           "PEEP-Effekt",
           "Melatonin",
           "Zirkadiane Rhythmik",
+          "COPD",
+          "Atemhilfsmuskulatur",
+          "Blaulicht",
+          "Zirbeldrüse",
         ],
       },
       contentB1: {
@@ -682,6 +708,10 @@ export const CE02_SIT_KOVAC_AMBULANT_DURCHFUEHREN: SituationsPhase = {
           "Kutschersitz",
           "Melatonin",
           "Zirkadiane Rhythmik",
+          "COPD",
+          "Atemhilfsmuskulatur",
+          "Blaulicht",
+          "Zirbeldrüse",
         ],
       },
     },

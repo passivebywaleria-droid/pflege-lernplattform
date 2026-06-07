@@ -38,17 +38,55 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
         "Early morning hospital nursing station, nurse reading digital patient record, soft warm light, chirurgical ward, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Die digitale Pflegeakte — Übergabe SBAR",
-        body: "7:45 Uhr, Stationscomputer der chirurgischen Station.\n\nDu öffnest die digitale Pflegeakte von Herrn Nguyen. Die Nachtschicht hat eine SBAR-Übergabe hinterlassen: **S**ituation — Tran Nguyen, 72 J., 4. Tag post-OP Sigmaresektion, endständiges Kolostoma. **B**ackground — Mangelernährung (BMI 19, Albumin 28 g/l), Braden 14, Heparin-Prophylaxe läuft, Mobilisation gestern erstmals an Bettkante. **A**ssessment — Stoma aktiv: rosig, ca. 1,5 cm prominent (NS-Befund, dokumentiert 04:30), Output dünnflüssig-gelblich-braun, Beutel halb voll seit gestern Abend, noch nicht gewechselt. Bauchdeckenwunde leicht gerötet. Kaum Nahrungs-Intake seit OP. **R**ecommendation — Beutelwechsel heute Morgen notwendig, Ernährungsstatus evaluieren, erste Mobilisationsübung planen. Tochter Linh anwesend (übersetzt), Ehefrau Mai heute früh angereist. Stomatherapeut Herr Baum kommt um 10 Uhr.",
+        body: "7:45 Uhr, Stationscomputer der chirurgischen Station.\n\nDu öffnest die digitale Pflegeakte von Herrn Nguyen. Die Nachtschicht hat eine **SBAR-Übergabe** hinterlassen — SBAR = Situation, Background, Assessment, Recommendation, ein Standard-Format für klinische Übergaben.\n\n**S**ituation — Tran Nguyen, 72 J., 4. Tag post-OP **Sigmaresektion** (= operative Entfernung des Sigmas, des letzten S-förmigen Dickdarm-Abschnitts), **endständiges Kolostoma** (= dauerhaft nach außen geleiteter Dickdarm).\n\n**B**ackground — **Mangelernährung** = unzureichende Nahrungsaufnahme über Wochen mit Energie- und Eiweiß-Defizit (**BMI** = Body-Mass-Index, Gewicht/Größe², bei Mangelernährung < 20). BMI 19, Albumin 28 g/l. Braden 14. **Heparin** = blutverdünnendes Medikament, das die Bildung von Blutgerinnseln in den Venen verhindert (Thromboseprophylaxe). **Mobilisation** = pflegerische Begleitung von Bewegung und Aktivität, hier: erstmals an die Bettkante.\n\n**A**ssessment — Stoma aktiv: rosig, ca. 1,5 cm prominent (NS-Befund, dokumentiert 04:30), Output dünnflüssig-gelblich-braun, Beutel halb voll seit gestern Abend, noch nicht gewechselt. Bauchdeckenwunde leicht gerötet. Kaum Nahrungs-Intake seit OP.\n\n**R**ecommendation — **Beutelwechsel** = Erneuern des Stoma-Versorgungssystems (heute Morgen notwendig), Ernährungsstatus evaluieren, erste Mobilisationsübung planen. **Tochter** Linh anwesend (übersetzt), Ehefrau Mai heute früh angereist. **Stomatherapeut** = Pflegefachkraft mit Spezialweiterbildung für Stomaversorgung — Herr Baum kommt um 10 Uhr.",
         fallbezug:
           "Herr Nguyen (72, Kolonkarzinom, 4. Tag post-OP) — fünf Pflegeprobleme gleichzeitig. Du bist Pflegeschüler/in im 3. Ausbildungsdrittel, Frühdienst auf der chirurgischen Station.",
-        glossarBegriffe: ["Sigmaresektion", "Kolostoma", "endständig", "SBAR"],
+        glossarBegriffe: [
+          "Sigmaresektion",
+          "Kolostoma",
+          "endständig",
+          "SBAR",
+          "Mangelernährung",
+          "BMI",
+          "Heparin",
+          "Mobilisation",
+          "Beutelwechsel",
+          "Stomatherapeut",
+          "Übergabe",
+          "Ernährung",
+          "Tochter",
+          "Bettkante",
+          "Spritze",
+          "Prophylaxe",
+          "Assessment",
+          "Bewegung",
+        ],
       },
       contentB1: {
         title: "Die Pflegeakte lesen",
-        body: "7:45 Uhr, Computer auf der Station.\n\nDu liest die Pflegeakte von Herrn Nguyen. Die Nachtschicht hat folgendes aufgeschrieben: **S** = Herr Nguyen, 72 Jahre, 4 Tage nach der Operation. Er hat ein Stoma (= Öffnung am Bauch). **B** = Er isst fast nichts (BMI 19, Albumin 28 g/l = zu niedrig). Braden-Skala: 14 (= leichtes Druck-Geschwür-Risiko). Heparin-Spritze läuft. **A** = Das Stoma sieht rosig aus, ca. 1,5 cm groß (Befund Nachtschicht). Der Output ist dünn und gelb-braun. Der Stoma-Beutel ist seit gestern Abend halb voll — er wurde nicht mehr gewechselt. Die Bauch-Wunde ist leicht rot. Herr Nguyen isst fast nichts seit der Operation. **R** = Beutel heute Morgen wechseln. Ernährung prüfen. Tochter Linh übersetzt. Stoma-Fachkraft Herr Baum kommt um 10 Uhr.",
+        body: "7:45 Uhr, Computer auf der Station.\n\nDu liest die Pflegeakte von Herrn Nguyen. Die Nachtschicht hat eine **SBAR-Übergabe** geschrieben. SBAR = ein Standard-Format für Übergaben (Situation, Background, Assessment, Recommendation).\n\n**S** = Herr Nguyen, 72 Jahre, 4 Tage nach der Operation. Er hat ein **Stoma** = Öffnung am Bauch. Genauer: ein **endständiges Kolostoma** = der Dickdarm wird dauerhaft nach außen geleitet.\n\n**B** = Er isst fast nichts. **BMI** = Gewicht im Verhältnis zur Größe — bei Herrn Nguyen 19 (zu wenig). **Mangelernährung** = wenn jemand über Wochen zu wenig isst und zu wenig Eiweiß hat. Albumin 28 g/l — auch zu niedrig. Braden-Skala: 14 (= leichtes Druck-Geschwür-Risiko). **Heparin** = ein Medikament, das vor Blutgerinnseln schützt — wird täglich gespritzt. **Mobilisation** = die Pflegekraft hilft beim Bewegen.\n\n**A** = Das Stoma sieht rosig aus, ca. 1,5 cm groß. Der Output ist dünn und gelb-braun. Der Stoma-Beutel ist seit gestern Abend halb voll — er wurde nicht mehr gewechselt. Die Bauch-Wunde ist leicht rot. Herr Nguyen isst fast nichts seit der Operation.\n\n**R** = **Beutelwechsel** = den Stoma-Beutel und die Klebe-Platte erneuern — heute Morgen wechseln. Ernährung prüfen. **Tochter** Linh übersetzt. **Stomatherapeut** = Pflegefachkraft mit Spezialausbildung für Stomas — Herr Baum kommt um 10 Uhr.",
         fallbezug:
           "Herr Nguyen, 72 Jahre alt, 4 Tage nach der Operation. Du bist Schüler/in im 3. Ausbildungsjahr. Du arbeitest heute Morgen auf der chirurgischen Station.",
-        glossarBegriffe: ["Stoma", "Beutelwechsel", "Braden-Skala", "Albumin"],
+        glossarBegriffe: [
+          "Stoma",
+          "Beutelwechsel",
+          "Braden-Skala",
+          "Albumin",
+          "Mangelernährung",
+          "BMI",
+          "Heparin",
+          "Mobilisation",
+          "Stomatherapeut",
+          "endständig",
+          "Kolostoma",
+          "SBAR",
+          "Übergabe",
+          "Ernährung",
+          "Tochter",
+          "Bettkante",
+          "Spritze",
+          "Prophylaxe",
+        ],
       },
     },
 
@@ -66,12 +104,12 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "Endständiges Kolostoma einordnen",
-        body: "Herr Nguyen hat ein endständiges Kolostoma nach Sigmaresektion. Was bedeutet das genau — und was unterscheidet es von anderen Stomaformen?",
+        body: "Herr Nguyen hat ein endständiges Kolostoma nach Sigmaresektion.",
         glossarBegriffe: ["endständig", "Kolostoma", "Ileostoma", "Doppelläufig"],
       },
       contentB1: {
         title: "Was ist ein endständiges Kolostoma?",
-        body: "Herr Nguyen hat ein Stoma. Es heißt: 'endständiges Kolostoma'. Was bedeutet das?",
+        body: "Herr Nguyen hat ein endständiges Kolostoma.",
         glossarBegriffe: ["Kolostoma", "Ileostoma", "Stoma"],
       },
       question: {
@@ -160,42 +198,69 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
       },
     },
 
-    // Step 1.4 — Sequencing: Vorbereitung vor Zimmerbetreten
+    // Step 1.4 — MC: Vorbereitung vor Zimmerbetreten
+    // (Umgewandelt von sequencing zu MC, weil Reihenfolge "Plan → Akte → Begrüßung
+    //  → Material" pflegerisch nicht zwingend ist und vorherige Sortier-Variante
+    //  Sequenzwörter im Body enthielt — F-01 Finding.)
     {
       stepId: "ce02-nguyen-info-04-vorbereitung",
       phase: 1,
-      stepType: "sequencing",
+      stepType: "mc",
       bloomLevel: 3,
       kompetenzbereich: "I.1",
       quellen: ["FG SKM — Handlungsempfehlungen Stomapflege (2023)"],
       track: "basis",
-      modus: "sortierstation",
+      modus: "challenge",
       lernziel: "ce02-nguyen-info-vorbereitung",
       tag: "pflege",
       contentC1: {
         title: "Vorbereitung vor dem Zimmerbetreten",
-        body: "Bevor du das Zimmer betrittst, gibt es mehrere Schritte, die du jetzt am Computer und am Stationsflur erledigen kannst. Standard nach FG SKM 2023: erst Patientendaten und Tagesplan klären → dann Material vorbereiten → erst dann ins Zimmer gehen. Sortiere in dieser Logik.",
+        body: "Bevor du das Zimmer betrittst, gibt es mehrere mögliche Vorbereitungsschritte. Was gehört zur fachlich sinnvollen Vorbereitung — und was kann warten oder unter sterilen Aspekten gar nicht jetzt vorbereitet werden?",
         glossarBegriffe: [],
       },
       contentB1: {
         title: "Was bereitest du vor?",
-        body: "Bevor du ins Zimmer gehst — was tust du zuerst? Erst Plan und Daten lesen, dann Material vorbereiten. Sortiere in dieser Reihenfolge.",
+        body: "Bevor du ins Zimmer gehst — welche Vorbereitung gehört dazu? Welche Aussage stimmt?",
         glossarBegriffe: [],
       },
       question: {
         fragetext:
-          "Sortiere die Vorbereitungsschritte in die sinnvolle Reihenfolge, bevor du das Zimmer betrittst (FG SKM 2023: Daten → Plan → Material → Patient).",
-        sequencing: {
-          instruction:
-            "Bringe die Schritte in die richtige Reihenfolge: erst Tagesplan/Termine prüfen, dann Patientendaten lesen, dann Begrüßung überlegen, zuletzt Material vorbereiten.",
-          items: [
-            { id: "s3", label: "Prüfen, ob Stomatherapeut Herr Baum heute bestätigt ist (Uhrzeit)" },
-            { id: "s1", label: "Ernährungsprotokoll der letzten 24h in der Akte anschauen" },
-            { id: "s4", label: "Kurz überlegen, wie du Herrn Nguyen begrüßt (Tochter als Übersetzerin)" },
-            { id: "s2", label: "Beutelwechsel-Utensilien vorbereiten und bereitlegen" },
-            { id: "s5", label: "Intimpflege-Set für Ganzkörperpflege bereitstellen" },
-          ],
-        },
+          "Welche Aussage zur Vorbereitung vor dem Betreten von Herrn Nguyens Zimmer ist korrekt?",
+        mcVariant: "standard",
+        optionen: [
+          {
+            text: "Patientendaten (Akte, Ernährungsprotokoll, Termin Stomatherapeut) und Begrüßungsstrategie über Linh klären — dann Material griffbereit auf einer sauberen Unterlage bereitlegen.",
+            isCorrect: true,
+            explanation:
+              "Richtig. Vorbereitung umfasst zwei Bereiche: 1) Informations-Vorbereitung (Akte lesen, offene Fragen klären, Termin Stomatherapeut bestätigen), 2) Material-Vorbereitung (Beutelwechsel-Utensilien griffbereit). Die fachliche Logik: Im Zimmer hast du keine Zeit mehr nachzuschlagen — also vorher klären. Reihenfolge zwischen Akte und Tagesplan ist pflegerisch nicht zwingend, beide gehören zur Informations-Vorbereitung.",
+            explanationB1:
+              "Richtig. Vorbereitung hat zwei Teile: 1) Informationen lesen (Akte, Ernährungsprotokoll, Termin Stomatherapeut), 2) Material bereitlegen. Beides muss fertig sein, bevor du das Zimmer betrittst — im Zimmer hast du keine Zeit nachzuschlagen.",
+          },
+          {
+            text: "Du gehst direkt ins Zimmer und holst dir alle Informationen vor Ort von Herrn Nguyen und Linh.",
+            isCorrect: false,
+            explanation:
+              "Nicht ideal. Du hast zwar einen guten Impuls — direkten Patientenkontakt suchen — doch ohne vorbereitete Informationsbasis fehlen dir wichtige Daten (Albumin, Braden, Nachtschicht-Befund). Eine strukturierte Übergabe-Lektüre VOR dem Zimmerkontakt schützt Herrn Nguyen vor Doppelfragen und gibt dir Sicherheit. Stattdessen: Akte erst lesen, dann mit informierter Haltung ins Zimmer.",
+            explanationB1:
+              "Nicht so gut. Du willst direkt mit Herrn Nguyen sprechen — der Impuls ist gut. Aber ohne die Informationen aus der Akte fehlen dir wichtige Daten. Stattdessen erst Akte lesen, dann ins Zimmer.",
+          },
+          {
+            text: "Du bereitest die sterile Stoma-Versorgung im Stationsflur vor und nimmst sie ins Zimmer mit.",
+            isCorrect: false,
+            explanation:
+              "Fachlich falsch. Stoma-Versorgung erfolgt unter aseptischen Bedingungen am Patientenbett — Material wird auf einer sauberen Unterlage neben dem Bett aufgebaut, nicht im Stationsflur (Kontaminations-Risiko). Außerdem ist die Stomaversorgung nicht steril im OP-Sinn, sondern aseptisch nach Hygiene-Standards. Stattdessen: Material griffbereit, aber noch verpackt mitnehmen und am Bett aufbauen.",
+            explanationB1:
+              "Fachlich nicht richtig. Material wird neben dem Bett aufgebaut, nicht im Flur. Auf dem Flur ist es nicht sauber genug. Stattdessen: Material verpackt mitnehmen und am Bett auspacken.",
+          },
+          {
+            text: "Du brauchst keine Vorbereitung — Herr Nguyens Stoma ist Routine.",
+            isCorrect: false,
+            explanation:
+              "Nicht richtig. Auch wenn der Beutelwechsel selbst Routine sein kann, ist dieser Patient kein Routine-Patient: Mangelernährung, kulturelle Sensibilität, Tochter als Übersetzerin, Würde-Thema. Vorbereitung ist hier nicht optional, sondern Voraussetzung für individuell passgenaue Pflege. Stattdessen: Akte lesen, Sprachsituation klären, Material vorbereiten.",
+            explanationB1:
+              "Nicht richtig. Der Beutelwechsel kann Routine sein — aber Herr Nguyen ist kein Routine-Patient. Mangelernährung, Sprache, Würde — das alles braucht Vorbereitung.",
+          },
+        ],
       },
     },
 
@@ -220,21 +285,21 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
       contentC1: {
         title: "Was ist ein Rollenkonflikt?",
         body: "",
-        glossarBegriffe: ["Rollenkonflikt"],
+        glossarBegriffe: ["Rollenkonflikt", "Dolmetscher"],
       },
       contentB1: {
         title: "Was ist ein Rollenkonflikt?",
         body: "",
-        glossarBegriffe: ["Rollenkonflikt"],
+        glossarBegriffe: ["Rollenkonflikt", "Dolmetscher"],
       },
       inlineWissen: {
         bausteinRef: "rollenkonflikt",
         storyAufhaenger:
           "Tochter Linh sitzt neben ihrem Vater und übersetzt für dich. Klingt praktisch — aber Linh ist gleichzeitig Tochter, Übersetzerin und emotionale Stütze. Drei Rollen, die sich gegenseitig behindern können. Das nennt man einen Rollenkonflikt.",
         kerntext:
-          "**Was ist ein Rollenkonflikt?** Eine Person hat gleichzeitig mehrere Rollen mit widersprüchlichen Erwartungen. Sie kann nicht allen Rollen gleichzeitig gerecht werden.\n\n**Beispiel Linh:**\n\n• **Rolle 1 — Tochter:** Sie will ihren Vater schützen und trösten. Schlechte Nachrichten würde sie vielleicht abmildern.\n\n• **Rolle 2 — Übersetzerin:** Sie soll medizinische Informationen sachlich und vollständig übersetzen — auch unangenehme.\n\n• **Rolle 3 — Emotionale Stütze:** Sie trägt selbst Angst und Trauer, soll aber ruhig und souverän bleiben.\n\n**Warum ist das ein Problem?** Eine Tochter, die ihren Vater schützen will, übersetzt möglicherweise abgemildert: 'Die Ärztin hat gesagt, es wird alles gut' — statt der tatsächlichen Aussage. Das verzerrt die Patientenaufklärung und kann rechtliche und ethische Probleme erzeugen.\n\n**Professionelle Alternative:** Telefon-Dolmetscherdienst oder Video-Dolmetscher (kultursensibel, medizinisch geschult). In der Akutversorgung ist die Tochter oft die pragmatische Lösung — aber mit Bewusstsein für die Grenzen (ICN 2021, § 2 PflBG).",
+          "**Was ist ein Rollenkonflikt?** Eine Person hat gleichzeitig mehrere Rollen mit widersprüchlichen Erwartungen. Sie kann nicht allen Rollen gleichzeitig gerecht werden.\n\n**Was ist ein Dolmetscher?** Ein **Dolmetscher** ist eine Person, die mündlich zwischen zwei Sprachen übersetzt — im Gegensatz zum Übersetzer, der schriftlich arbeitet.\n\n**Beispiel Linh:**\n\n• **Rolle 1 — Tochter:** Sie will ihren Vater schützen und trösten. Schlechte Nachrichten würde sie vielleicht abmildern.\n\n• **Rolle 2 — Übersetzerin:** Sie soll medizinische Informationen sachlich und vollständig übersetzen — auch unangenehme.\n\n• **Rolle 3 — Emotionale Stütze:** Sie trägt selbst Angst und Trauer, soll aber ruhig und souverän bleiben.\n\n**Warum ist das ein Problem?** Eine Tochter, die ihren Vater schützen will, übersetzt möglicherweise abgemildert: 'Die Ärztin hat gesagt, es wird alles gut' — statt der tatsächlichen Aussage. Das verzerrt die Patientenaufklärung und kann rechtliche und ethische Probleme erzeugen.\n\n**Professionelle Alternative:** Telefon-Dolmetscherdienst oder Video-Dolmetscher (kultursensibel, medizinisch geschult). In der Akutversorgung ist die Tochter oft die pragmatische Lösung — aber mit Bewusstsein für die Grenzen (ICN 2021, § 2 PflBG).",
         kerntextB1:
-          "**Was ist ein Rollenkonflikt?** Eine Person hat mehrere Aufgaben gleichzeitig, die nicht zusammenpassen.\n\n**Beispiel Linh:**\n• **Tochter:** Sie will ihren Vater beschützen.\n• **Übersetzerin:** Sie soll alles genau übersetzen — auch schlechte Nachrichten.\n• **Stütze:** Sie hat selbst Angst — soll aber ruhig bleiben.\n\n**Das Problem:** Als Tochter will sie vielleicht schlechte Nachrichten abschwächen. Als Übersetzerin muss sie genau sein. Das geht nicht beides.\n\n**Besser wäre:** Ein professioneller Dolmetscher (per Telefon oder Video). Aber der ist nicht immer sofort verfügbar. Dann hilft Linh — aber wir wissen: Es gibt Grenzen.",
+          "**Was ist ein Rollenkonflikt?** Eine Person hat mehrere Aufgaben gleichzeitig, die nicht zusammenpassen.\n\n**Was ist ein Dolmetscher?** Ein **Dolmetscher** = eine Person, die mündlich übersetzt — also beim Sprechen.\n\n**Beispiel Linh:**\n• **Tochter:** Sie will ihren Vater beschützen.\n• **Übersetzerin:** Sie soll alles genau übersetzen — auch schlechte Nachrichten.\n• **Stütze:** Sie hat selbst Angst — soll aber ruhig bleiben.\n\n**Das Problem:** Als Tochter will sie vielleicht schlechte Nachrichten abschwächen. Als Übersetzerin muss sie genau sein. Das geht nicht beides.\n\n**Besser wäre:** Ein professioneller Dolmetscher (per Telefon oder Video). Aber der ist nicht immer sofort verfügbar. Dann hilft Linh — aber wir wissen: Es gibt Grenzen.",
         faustregel:
           "**Angehörige als Übersetzer = Rollenkonflikt.** Tochter, Übersetzerin, Stütze — drei Rollen, die sich widersprechen.",
         faustregelB1:
@@ -325,12 +390,12 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
       contentC1: {
         title: "Kurzanatomie: Was ist das Sigma und wo sitzt es?",
         body: "Das Sigma (Colon sigmoideum) ist der S-förmige letzte Teil des Dickdarms vor dem Mastdarm (Rektum). Analogie: 'Das Sigma ist wie das letzte Stück Rohr vor dem Abfluss — der engste und kurvenreichste Teil. Wenn dort ein Tumor wächst, wird dieser Teil entfernt.' Bei Herrn Nguyen wurde das gesamte Sigma und der Mastdarm entfernt. Das restliche Dickdarm-Ende wird dann durch die Bauchdecke nach außen geleitet — das ist das endständige Kolostoma.",
-        glossarBegriffe: ["Sigma", "Kolon", "Rektum", "endständig"],
+        glossarBegriffe: ["Sigma", "Kolon", "Rektum", "endständig", "Tumor", "Arzt"],
       },
       contentB1: {
         title: "Was ist das Sigma?",
         body: "Das Sigma ist der letzte Teil des Dickdarms. Es kommt kurz vor dem After. Analogie: Stell dir ein Rohr vor. Das Sigma ist das letzte Stück Rohr vor dem Abfluss. Bei Herrn Nguyen war dort ein Tumor. Der Arzt hat diesen Teil entfernt. Das Ende des Dickdarms kommt jetzt durch die Bauch-Wand nach außen. Das nennt man Kolostoma.",
-        glossarBegriffe: ["Sigma", "Kolostoma", "Tumor"],
+        glossarBegriffe: ["Sigma", "Kolostoma", "Tumor", "Kolon", "Rektum"],
       },
     },
 
@@ -348,13 +413,13 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Braden-Skala: Was bedeutet Wert 14?",
-        body: "Die Braden-Skala misst das Dekubitusrisiko anhand von 6 Subskalen. Lerne die Grundstruktur.",
-        glossarBegriffe: ["Braden-Skala", "Dekubitusrisiko"],
+        body: "Die **Braden-Skala** = ein Assessment-Instrument, das das **Dekubitusrisiko** (= Risiko für ein Druckgeschwür) anhand von 6 Subskalen einschätzt. Wert 6–23, je niedriger desto höher das Risiko. Lerne die Grundstruktur.",
+        glossarBegriffe: ["Braden-Skala", "Dekubitusrisiko", "Dekubitus"],
       },
       contentB1: {
         title: "Braden-Skala — kurz erklärt",
-        body: "Die Braden-Skala misst das Risiko für Druckgeschwüre (Dekubitus). Lerne die Grundstruktur.",
-        glossarBegriffe: ["Braden-Skala", "Dekubitus"],
+        body: "Die **Braden-Skala** = ein Test, der das Risiko für ein Druckgeschwür misst. **Druckgeschwür** = Wunde, die entsteht, wenn ein Körperbereich zu lange auf einer Stelle aufliegt. **Dekubitus** = Druckgeschwür (medizinischer Fachbegriff). **Dekubitusrisiko** = das Risiko, ein Druckgeschwür zu bekommen. Lerne die Grundstruktur.",
+        glossarBegriffe: ["Braden-Skala", "Dekubitus", "Dekubitusrisiko", "Druckgeschwür"],
       },
       question: {
         fragetext: "Klicke die Karten um, um die Braden-Skala zu verstehen.",
@@ -394,13 +459,13 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Heparin-Injektion bei Herrn Nguyen: Wo?",
-        body: "Herr Nguyen bekommt täglich Heparin (niedermolekulares Heparin, NMH) zur Thromboseprophylaxe. Standard-Ort ist die Bauchdecke periumbilikal mit 3–5 cm Abstand zum Nabel und alternierenden Quadranten (Stelle jeden Tag rotieren). ABER: Herr Nguyen hat eine frische Bauchdeckenwunde im unteren Abdomen und ein Kolostoma im linken Unterbauch. Mindestabstand 5 cm zu Wunde und Stoma ist Pflicht. Wo gibst du die Heparin-Spritze konkret?",
-        glossarBegriffe: ["niedermolekulares Heparin", "subkutan", "Thromboseprophylaxe", "alternierende Quadranten"],
+        body: "**Blutgerinnsel** = ein Klumpen aus geronnenem Blut, der ein Gefäß verschließen kann.\n\n**Thrombose** = Bildung eines Blutgerinnsels in einer Vene, häufig im Bein, gefährlich weil der Pfropf in die Lunge wandern kann (Lungenembolie).\n\n**Thromboseprophylaxe** = Maßnahmen, die genau das verhindern: 1) pharmakologisch (Heparin), 2) physikalisch (Kompression, Beinübungen), 3) Mobilisation.\n\n**Alternierende Quadranten** = die Bauchdecke wird in vier Felder geteilt (rechts oben, links oben, rechts unten, links unten); die Injektionsstelle wechselt täglich zwischen den Feldern, um Hämatome und verminderte Resorption zu vermeiden.\n\nHerr Nguyen bekommt täglich Heparin (niedermolekulares Heparin, NMH) zur Thromboseprophylaxe. Standard-Ort ist die Bauchdecke periumbilikal mit 3–5 cm Abstand zum Nabel und alternierenden Quadranten. ABER: Herr Nguyen hat eine frische Bauchdeckenwunde im unteren Abdomen und ein Kolostoma im linken Unterbauch. Mindestabstand 5 cm zu Wunde und Stoma ist Pflicht. Wo gibst du die Heparin-Spritze konkret?",
+        glossarBegriffe: ["niedermolekulares Heparin", "subkutan", "Thromboseprophylaxe", "alternierende Quadranten", "Thrombose"],
       },
       contentB1: {
         title: "Heparin-Spritze bei Herrn Nguyen — wo?",
-        body: "Herr Nguyen bekommt jeden Tag eine Heparin-Spritze. Heparin schützt vor Thrombose (= Blutgerinnsel in der Vene). Normal: Bauchdecke, 3–5 cm neben dem Nabel — und du wechselst die Stelle täglich (alternierende Quadranten). Aber: Herr Nguyen hat eine frische Wunde am Bauch und ein Stoma. Mindestens 5 cm Abstand zu Wunde und Stoma. Wo gibst du die Spritze?",
-        glossarBegriffe: ["Heparin", "Thrombose", "Spritze"],
+        body: "**Blutgerinnsel** = ein Klumpen aus geronnenem Blut, der ein Gefäß verschließen kann.\n\n**Thrombose** = ein Blutgerinnsel in der Vene (meist im Bein). Gefährlich, weil das Gerinnsel in die Lunge wandern kann.\n\n**Thromboseprophylaxe** = alle Maßnahmen, die das verhindern: Heparin-Spritze, Kompressions-Strümpfe, Bewegung.\n\n**Alternierende Quadranten** = die Bauchdecke hat vier Felder (rechts oben, links oben, rechts unten, links unten). Du wechselst die Spritzstelle jeden Tag.\n\nHerr Nguyen bekommt jeden Tag eine Heparin-Spritze. Normal: Bauchdecke, 3–5 cm neben dem Nabel. Aber: Herr Nguyen hat eine frische Wunde am Bauch und ein Stoma. Mindestens 5 cm Abstand zu Wunde und Stoma. Wo gibst du die Spritze?",
+        glossarBegriffe: ["Heparin", "Thrombose", "Spritze", "Thromboseprophylaxe", "alternierende Quadranten"],
       },
       question: {
         fragetext:

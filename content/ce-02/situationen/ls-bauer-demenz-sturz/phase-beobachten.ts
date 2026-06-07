@@ -33,13 +33,13 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
       transition: "Du weisst jetzt worauf du achtest. Schau dir Herrn Bauer an \u2014 bevor du irgendetwas misst.",
       contentC1: {
         title: "Körperbeobachtung nach Sturz \u2014 Schonhaltung und Aussenrotation",
-        body: "",
-        glossarBegriffe: ["Schonhaltung", "Aussenrotation", "Körperbeobachtung"],
+        body: "**Schonhaltung** = der Patient hält eine Körperregion ruhig oder in einer bestimmten Position, um Schmerz zu vermeiden. **Aussenrotation** = das Bein ist nach aussen gedreht (Fussspitze zeigt nach aussen). **Körperbeobachtung** = systematische visuelle Inspektion von Kopf bis Fuß. **Kontraktur** = dauerhafte Versteifung eines Gelenks durch Verkürzung von Muskeln, Sehnen oder Gelenkkapsel (DNQP 2018) \u2014 kann Folge längerer Immobilität sein.",
+        glossarBegriffe: ["Schonhaltung", "Aussenrotation", "Körperbeobachtung", "Kontraktur", "Immobilität", "Schmerz", "Patient", "Gelenk"],
       },
       contentB1: {
         title: "Worauf achtest du nach einem Sturz?",
-        body: "",
-        glossarBegriffe: ["Schonhaltung", "Aussenrotation"],
+        body: "**Schonhaltung** = er hält eine Stelle ruhig, weil es wehtut. **Aussenrotation** = das Bein ist nach aussen gedreht. **Körperbeobachtung** = wir schauen den Körper an. **Kontraktur** = ein Gelenk wird steif, weil es nicht bewegt wird.",
+        glossarBegriffe: ["Schonhaltung", "Aussenrotation", "Kontraktur", "Schmerz", "Gelenk"],
       },
       inlineWissen: {
         bausteinRef: "sturz-prophylaxe-körperbeobachtung",
@@ -114,13 +114,13 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
       transition: "Vitalzeichen, ABCDE, Synkope \u2014 alles im Kopf. Jetzt bringe die Schritte in die richtige Reihenfolge.",
       contentC1: {
         title: "Vitalzeichen, ABCDE-Schema und Synkope \u2014 Grundlagen der Ersteinschätzung",
-        body: "",
-        glossarBegriffe: ["Vitalzeichen", "ABCDE-Schema", "Synkope", "Schmerzsignal"],
+        body: "**Vitalzeichen** = Basismesswerte des Körpers (RR, Puls, Atemfrequenz, SpO2, Temperatur). **ABCDE-Schema** = strukturierte Reihenfolge der Ersteinschätzung (Airway, Breathing, Circulation, Disability, Exposure; ERC 2021). **Synkope** = kurzzeitiger Bewusstseinsverlust durch Minderdurchblutung des Gehirns. **Schmerzsignal** = bei Demenz nonverbal (Grimasse, Abwehr). **DNQP** = Deutsches Netzwerk für Qualitätsentwicklung in der Pflege \u2014 gibt nationale Expertenstandards heraus. **Sturzprophylaxe** = strukturierte Maßnahmen zur Sturzvermeidung (DNQP 2022). **Verletzungscheck** = systematische Inspektion auf Wunden, Hämatome, Deformitäten von Kopf bis Fuß.",
+        glossarBegriffe: ["Vitalzeichen", "ABCDE-Schema", "Synkope", "Schmerzsignal", "DNQP", "Sturzprophylaxe", "Verletzungscheck", "Demenz", "Pflege", "Abwehr"],
       },
       contentB1: {
         title: "Was sind Vitalzeichen? Was ist das ABCDE-Schema?",
-        body: "",
-        glossarBegriffe: ["Vitalzeichen", "ABCDE", "Synkope", "Schmerzsignal"],
+        body: "**Vitalzeichen** = die wichtigsten Körperwerte (Blutdruck, Puls, Sauerstoff, Atmung, Temperatur). **ABCDE-Schema** = die Reihenfolge bei Notfall (Atemweg, Atmung, Kreislauf, Bewusstsein, Körper anschauen). **Synkope** = kurze Ohnmacht. **Schmerzsignal** bei Demenz: Grimasse, Abwehr. **DNQP** = die deutsche Pflege-Standard-Organisation. **Sturzprophylaxe** = was wir tun, damit niemand stürzt. **Verletzungscheck** = Körper anschauen auf Wunden und Beulen.",
+        glossarBegriffe: ["Vitalzeichen", "ABCDE", "Synkope", "Schmerzsignal", "DNQP", "Sturzprophylaxe", "Verletzungscheck", "Demenz", "Pflege", "Abwehr"],
       },
       inlineWissen: {
         bausteinRef: "sturz-prophylaxe-vitalzeichen-abcde",
@@ -152,17 +152,17 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Sturz-Folge-Assessment — richtige Reihenfolge",
-        body: "Lege die Reihenfolge des strukturierten Sturz-Folge-Assessments fest. Orientierung: ABCDE-Schema (Bewusstsein und Vitalzeichen zuerst — eine Synkope kann Sturzursache sein und muss vor Bewegung der Extremitäten ausgeschlossen werden) und DNQP Sturzprophylaxe 2022, Kriterium 3b. Hinweis: Vitalzeichen und Verletzungscheck fließen später ins Sturzprotokoll (Phase 6) — saubere Erfassung jetzt = solide Dokumentation am Ende. Was kommt wann?",
+        body: "Lege die Reihenfolge des strukturierten Sturz-Folge-Assessments fest. Orientierung: ABCDE-Schema und DNQP Sturzprophylaxe 2022, Kriterium 3b. Hinweis: Vitalzeichen und Verletzungscheck fließen ins Sturzprotokoll (Phase 6) — saubere Erfassung jetzt = solide Dokumentation am Ende. In welcher Abfolge prüfst du systematisch?",
         glossarBegriffe: ["BESD-Skala", "Assessment", "Vitalzeichen", "ABCDE-Schema", "Synkope", "Sturzprotokoll"],
       },
       contentB1: {
         title: "Sturz-Assessment — welche Reihenfolge?",
-        body: "In welcher Reihenfolge prüfst du nach einem Sturz? Wichtig: Erst Bewusstsein und Vitalzeichen (RR, Puls) prüfen — sonst weißt du nicht, ob ein Kreislaufproblem den Sturz ausgelöst hat. Erst dann den Körper bewegen. Hinweis: Was du jetzt misst, schreibst du später ins Sturzprotokoll.",
+        body: "In welcher Reihenfolge prüfst du nach einem Sturz? Hinweis: Was du misst, schreibst du ins Sturzprotokoll. Bring die 6 Schritte in eine pflegerisch sinnvolle Abfolge.",
         glossarBegriffe: ["BESD-Skala", "Vitalzeichen", "ABCDE", "Sturzprotokoll"],
       },
       question: {
         fragetext:
-          "Sortiere die Assessment-Schritte in die richtige Reihenfolge (1 = zuerst).",
+          "Bringe die Assessment-Schritte in eine pflegerisch sinnvolle Reihenfolge.",
         sequencing: {
           instruction: "Ziehe die Karten in die richtige Reihenfolge.",
           items: [
@@ -218,13 +218,13 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
       transition: "Kontraktur im Kopf? Gut. Jetzt geht es an Herrn Bauers rechtes Knie.",
       contentC1: {
         title: "Kontraktur — was passiert wenn Gelenke nicht bewegt werden",
-        body: "",
-        glossarBegriffe: ["Kontraktur", "Streckdefizit", "Funktionsstellung", "Immobilität"],
+        body: "**Kontraktur** = dauerhafte Versteifung eines Gelenks. **Streckdefizit** = das Gelenk lässt sich nicht mehr ganz strecken. **Funktionsstellung** = die Gelenkstellung in der Pflege das Gelenk lagert, damit es funktionsfähig bleibt. **Immobilität** = der Patient bewegt sich kaum noch. **Knie** = das hauptsächlich betroffene Gelenk bei Herrn Bauer.",
+        glossarBegriffe: ["Kontraktur", "Streckdefizit", "Funktionsstellung", "Immobilität", "Knie", "Patient", "Pflege", "Gelenk"],
       },
       contentB1: {
         title: "Was ist eine Kontraktur?",
-        body: "",
-        glossarBegriffe: ["Kontraktur", "Streckdefizit"],
+        body: "**Kontraktur** = ein Gelenk wird steif. **Streckdefizit** = das Knie geht nicht mehr ganz gerade. **Knie** = bei Herrn Bauer rechts 20 Grad Streckdefizit.",
+        glossarBegriffe: ["Kontraktur", "Streckdefizit", "Knie", "Gelenk"],
       },
       inlineWissen: {
         bausteinRef: "kontraktur-prophylaxe-grundlagen",
@@ -308,9 +308,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Du nimmst behutsam Herrn Bauers rechtes Knie. Beim langsamen Beugen zieht er scharf die Luft ein und sagt:",
+              "Du nimmst behutsam Herrn Bauers rechtes Knie. Beim langsamen Beugen zieht er scharf die Luft ein.\n\n\"Aua! Nein! Lassen Sie das!\"",
             contextB1:
-              "Du hältst Herrn Bauers rechtes Knie. Du beugst es langsam. Er zieht die Luft ein und sagt:",
+              "Du hältst Herrn Bauers rechtes Knie. Du beugst es langsam. Er zieht die Luft ein.\n\n\"Aua! Nein! Lassen Sie das!\"",
             speaker: "Herr Bauer",
             options: [
               {
@@ -337,9 +337,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
                   "Herr Bauer schlägt nach dir.",
                 score: 0,
                 feedback:
-                  "Falsch. Schmerz bei Demenz-Patienten ist ein Stopsignal — nicht zu übergehen. Zwang führt zu Agitation, Vertrauensverlust und kann Verletzungen verschlimmern. Assessment ist wichtig, aber Würde und Schutz haben Vorrang vor Vollständigkeit.",
+                  "Du willst gründlich sein \u2014 das ist ein guter Anspruch. Allerdings ist Schmerz bei Demenz-Patienten ein Stopsignal, weil sie ihn nicht verbal mitteilen können und Zwang zu Agitation, Vertrauensverlust und Verletzungs-Verschlimmerung führt. Stattdessen: Assessment ist wichtig, aber Würde und Schutz haben Vorrang vor Vollständigkeit \u2014 deshalb innehalten, ankündigen, minimal weiterprüfen.",
                 feedbackB1:
-                  "Falsch. Schmerz ist ein Stopsignal. Nicht übergehen. Er schlägt nach dir — weil er Angst hat. Zuerst stoppen, dann behutsam weiterschauen.",
+                  "Du willst es richtig machen \u2014 guter Anspruch. Aber Schmerz ist ein Stopsignal, weil er sich sonst noch mehr wehrt. Stattdessen: Stoppen und behutsam weiterschauen \u2014 das nennt man BESD-Prinzip.",
               },
               {
                 text: "Ich breche das Assessment ab und komme später wieder.",
@@ -351,7 +351,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
                   "Herr Bauer schaut weg.",
                 score: 1,
                 feedback:
-                  "Manchmal sinnvoll — aber hier: Assessment nach Sturz ist dringlich, Schmerzerfassung gehört dazu. Besser: kurz innehalten, ankündigen, dann minimal weitermachen. Abbrechen ist der letzte Ausweg, nicht die erste Reaktion.",
+                  "Du nimmst seine Abwehr ernst \u2014 das ist gut. Allerdings ist das Assessment nach Sturz dringlich, deshalb sollte Abbruch der letzte Ausweg sein. Stattdessen: kurz innehalten, ankündigen, dann minimal weitermachen \u2014 so erhältst du die Information ohne Eskalation.",
                 feedbackB1:
                   "Manchmal ok — aber hier ist das Assessment nach dem Sturz wichtig. Besser: kurze Pause, dann behutsam weiterschauen. Ganz aufhören ist die letzte Option.",
               },
@@ -378,13 +378,13 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
       transition: "Du kennst jetzt die drei Risiko-Bereiche. Finde sie im Pflegebericht.",
       contentC1: {
         title: "Dreifach-Risiko: Exsikkose, Hautschäden und Sturzgefahr",
-        body: "",
-        glossarBegriffe: ["Exsikkose", "Soor", "Miktionsprotokoll", "Dekubitusgefahr", "Sturzrisiko", "Kontrakturrisiko", "Inkontinenz-assoziierte Dermatitis", "Haut", "Risiko"],
+        body: "**Exsikkose** = Austrocknung durch zu geringe Flüssigkeitszufuhr. **Soor** = Pilzinfektion der Mundschleimhaut bei trockener Schleimhaut. **Miktionsprotokoll** = schriftliche Dokumentation von Trinkmenge und Urin-Ausscheidung. **Inkontinenz-assoziierte Dermatitis** = Hautentzündung durch Dauerfeuchtigkeit im Inkontinenz-Pad. **Pflegebericht** = textuelle Verlaufs-Dokumentation der Schicht. **Trinkprotokoll** = Erfassung von Trinkmengen mit Uhrzeit. **Mirtazapin** = Antidepressivum mit dosisabhängiger Sedierung (PRISCUS 2023).",
+        glossarBegriffe: ["Exsikkose", "Soor", "Miktionsprotokoll", "Dekubitusgefahr", "Sturzrisiko", "Kontrakturrisiko", "Inkontinenz-assoziierte Dermatitis", "Haut", "Risiko", "Pflegebericht", "Trinkprotokoll", "Mirtazapin", "Dokumentation", "Inkontinenz", "Trinkmenge", "Ausscheidung"],
       },
       contentB1: {
         title: "Drei Risiken auf einmal: Austrocknung, Haut und Sturz",
-        body: "",
-        glossarBegriffe: ["Exsikkose", "Soor", "Miktionsprotokoll", "Dekubitusgefahr", "Sturzrisiko", "Kontraktur", "Haut"],
+        body: "**Exsikkose** = der Körper trocknet aus. **Soor** = Pilz im Mund. **Miktionsprotokoll** = wir schreiben auf, wie viel er trinkt und wie viel Urin er hat. **Pflegebericht** = wir schreiben auf, was in der Schicht passiert ist. **Trinkprotokoll** = wir schreiben auf, was er trinkt.",
+        glossarBegriffe: ["Exsikkose", "Soor", "Miktionsprotokoll", "Dekubitusgefahr", "Sturzrisiko", "Kontraktur", "Haut", "Pflegebericht", "Trinkprotokoll", "Dokumentation", "Inkontinenz", "Trinkmenge"],
       },
       inlineWissen: {
         bausteinRef: "sturz-prophylaxe-dreifach-risiko",
@@ -519,13 +519,13 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
       transition: "Schmerzerfassung läuft bei Herrn Bauer ueber Beobachtung, nicht ueber Fragen. Jetzt: Risiken sortieren.",
       contentC1: {
         title: "Schmerz bei Demenz — warum NRS hier nicht reicht",
-        body: "",
-        glossarBegriffe: ["BESD", "PAINAD", "NRS", "Schmerzerfassung bei Demenz"],
+        body: "**Schmerzerfassung** = systematisches Erfassen der Schmerzintensität (DNQP 2020). **BESD** = Beurteilung von Schmerzen bei Demenz, 5 Kategorien je 0-2 Punkte, Gesamtwert ≥ 3 = Schmerz wahrscheinlich (Basler 2006). **PAINAD** = Pain Assessment in Advanced Dementia, ähnlich BESD (Warden 2003). **NRS** = Numerische Rating-Skala 0-10, funktioniert bei FAST 6a nicht zuverlässig. **Abwehr** = nonverbale Ablehnung einer Pflegehandlung (Schlagen, Wegschieben, Weinen) \u2014 bei Demenz Ausdruck von Angst, nicht von Aggression.",
+        glossarBegriffe: ["BESD", "PAINAD", "NRS", "Schmerzerfassung bei Demenz", "Schmerzerfassung", "Abwehr", "Schmerz-Skala", "Schmerzskala", "Assessment", "Demenz", "Patient"],
       },
       contentB1: {
         title: "Wie misst man Schmerz bei Demenz?",
-        body: "",
-        glossarBegriffe: ["BESD", "NRS", "Schmerz"],
+        body: "**Schmerzerfassung** = wir prüfen, wie stark Schmerzen sind. **BESD** = Schmerz-Skala bei Demenz, beobachtet Verhalten. **NRS** = Schmerzskala 0-10 \u2014 funktioniert bei schwerer Demenz nicht. **Abwehr** = der Patient wehrt sich, weil er Angst hat \u2014 nicht aus Bosheit.",
+        glossarBegriffe: ["BESD", "NRS", "Schmerz", "Schmerzerfassung", "Abwehr", "Schmerz-Skala", "Schmerzskala", "Demenz"],
       },
       inlineWissen: {
         bausteinRef: "sturz-prophylaxe-schmerz-bei-demenz",
@@ -668,12 +668,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "BESD-Skala — Schmerz bei Demenz erfassen",
         body: "Die BESD-Skala (Beurteilung von Schmerzen bei Demenz) erfasst Schmerz über Verhaltensbeobachtung — weil Demenz-Patienten Schmerz oft nicht verbalisieren können. 5 Kategorien, je 0–2 Punkte:\n\n1. Atmung — verändert, stoßweise (0–2)\n2. Negative Lautäußerungen — Stöhnen, Schreien (0–2)\n3. Gesichtsausdruck — Grimassieren, Stirnrunzeln (0–2)\n4. Körpersprache — Steifheit, Abwehr, Schonhaltung (0–2)\n5. Trost — beruhigbar oder nicht (0–2)\n\nGesamtwert ≥ 3 = Schmerz wahrscheinlich → Maßnahmen einleiten. Bei Herrn Bauer: BESD vor und nach Bewegungsübungen.",
-        glossarBegriffe: ["BESD-Skala", "Schmerzerfassung", "Verhaltensbeobachtung"],
+        glossarBegriffe: ["BESD-Skala", "Schmerzerfassung", "Verhaltensbeobachtung", "BESD", "Demenz", "Schonhaltung", "Abwehr"],
       },
       contentB1: {
         title: "BESD: Schmerz erkennen ohne Worte",
         body: "Herr Bauer kann Schmerzen nicht gut beschreiben. Die BESD-Skala hilft: Du beobachtest sein Verhalten. 5 Bereiche, je 0–2 Punkte:\n\n1. Atmung — normal oder verändert?\n2. Geräusche — stöhnt er? schreit er?\n3. Gesicht — zieht er die Stirn zusammen?\n4. Körper — steif? Abwehr?\n5. Trost — wird er ruhig wenn du ihn beruhigst?\n\nWert ≥ 3 = Schmerz wahrscheinlich. Dann musst du handeln.",
-        glossarBegriffe: ["BESD-Skala", "Schmerz", "Verhalten beobachten"],
+        glossarBegriffe: ["BESD-Skala", "Schmerz", "Verhalten beobachten", "BESD", "Demenz", "Abwehr"],
       },
     },
 

@@ -84,6 +84,7 @@ export function StepCrowdPoll({
           body={body}
           glossar={glossar}
         >
+        <div style={{ color: "var(--lern-text-primary)" }}>
         <p className="text-sm font-medium text-[var(--lern-text-primary)] mb-2">
           <FachbegriffText glossar={glossar ?? []}>
             {question}
@@ -136,7 +137,7 @@ export function StepCrowdPoll({
             })}
           </div>
         )}
-
+        </div>
         </StepShell>
         <StepActionBar>
           <button

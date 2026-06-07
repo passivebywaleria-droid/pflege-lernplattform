@@ -39,12 +39,15 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Orthostase und orthostatische Hypotonie: Warum wird Frau Yilmaz schwindelig?",
         body: "",
-        glossarBegriffe: ["Orthostase", "Orthostatische Hypotonie", "Schellong-Test", "Blutdruckregulation"],
+        glossarBegriffe: [
+          "Orthostase", "Orthostatische Hypotonie", "Schellong-Test",
+          "Blutdruckregulation", "Blutdruckabfall",
+        ],
       },
       contentB1: {
         title: "Schwindel beim Aufstehen: Warum passiert das?",
         body: "",
-        glossarBegriffe: ["Orthostase", "Schwindel beim Aufstehen", "Schellong-Test"],
+        glossarBegriffe: ["Orthostase", "Schwindel beim Aufstehen", "Schellong-Test", "Blutdruckabfall"],
       },
       inlineWissen: {
         bausteinRef: "orthostase-hypotonie",
@@ -254,9 +257,9 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
                   "Frau Yilmaz schaut unsicher. \"Ist das schlimm?\"",
                 score: 2,
                 feedback:
-                  "Nicht schlecht — ehrlich und direkt. Aber 'keine Sorge' klingt wie Abwimmeln. Frau Yilmaz spürt, dass etwas passiert ist — du kannst es besser erklären: Was war das? Warum? Und warum ist es ok, nochmal zu versuchen?",
+                  "Du bist auf dem richtigen Weg — die Information \"Blutdruck ist abgefallen\" ist sachlich korrekt und ehrlich. Allerdings wirkt das angehängte \"keine Sorge\" wie ein Abwimmeln, weil Frau Yilmaz ja deutlich gespürt hat, dass etwas passiert ist. Besser ist es, weil sie die körperliche Erfahrung selbst spürt: kurz erklären was orthostatische Hypotonie ist, warum das nach Bettlägerigkeit normal ist und stattdessen eine konkrete Sicherheits-Aussage geben (z.B. \"Wir messen jetzt erst Ihren Blutdruck im Liegen, dann beim Sitzen — deshalb passiert es beim zweiten Versuch nicht mehr.\").",
                 feedbackB1:
-                  "Nicht falsch — aber 'keine Sorge' ist zu wenig. Erkläre besser, was passiert ist und warum der zweite Versuch jetzt sicherer ist.",
+                  "Du bist nah dran — der Hinweis auf den Blutdruck ist richtig. Allerdings ist \"keine Sorge\" zu wenig, weil Frau Yilmaz den Schwindel selbst gefühlt hat. Stattdessen besser: erklären, was passiert ist und warum der zweite Versuch jetzt sicherer ist — deshalb messen wir vorher den Blutdruck.",
               },
               {
                 text: "\"Das ist wegen Ihrer Diabetesmedikamente. Die müssen angepasst werden.\"",
@@ -268,9 +271,9 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
                   "Frau Yilmaz macht sich Sorgen. \"Wieder neue Tabletten?\"",
                 score: 0,
                 feedback:
-                  "Das stimmt so nicht. Die orthostatische Hypotonie hat mehrere Ursachen — Bettlägerigkeit ist die Hauptursache, nicht primär die Diabetesmedikamente. Fehlinformationen zu Medikamenten können unnötige Sorgen auslösen. Bleib bei der Wahrheit: Körper und Bettlägerigkeit.",
+                  "Du hast erkannt, dass Medikamente eine Rolle spielen können — und das ist grundsätzlich ein guter Reflex. Allerdings stimmt die Aussage in dieser Form nicht, weil orale Antidiabetika selbst nicht primär den Blutdruck senken. Die Hauptursache der Orthostase ist die 3-tägige Bettlägerigkeit (gedämpfter Baroreflex) plus postoperative Volumen-Verschiebung. Stattdessen erklärst du Frau Yilmaz: \"Ihr Körper hat sich an das Liegen gewöhnt — beim Aufstehen muss er die Blutdruck-Regulation erst wieder lernen. Deshalb passiert es heute, ist aber nicht gefährlich.\" Fehlinformationen zu Medikamenten können bei diabetischen Patientinnen unnötige Therapie-Sorgen auslösen.",
                 feedbackB1:
-                  "Das stimmt nicht so. Die Diabetesmedikamente sind nicht der Hauptgrund. Sag ihr besser: Ihr Körper hat sich ans Liegenbleiben gewöhnt — das Aufstehen muss er wieder lernen.",
+                  "Du denkst an Medikamente — das ist ein guter Reflex. Allerdings sind die Diabetes-Tabletten nicht der Hauptgrund, weil sie keine Blutdruck-Senker sind. Stattdessen sag ihr besser: \"Ihr Körper hat sich ans Liegen gewöhnt. Das Aufstehen muss er wieder lernen.\" Das stimmt — und macht ihr keine Angst um ihre Tabletten.",
               },
             ],
           },
@@ -362,9 +365,9 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
             text: "Ruhig, klar, nonverbal: Hebe die Hand (Stopp-Geste), lächle ihn gleichzeitig an. Frau Yilmaz erst sicher zurück ans Bett/auf den Stuhl begleiten — DANN über Frau Yilmaz: \"Frau Yilmaz, könnten Sie Ihrem Mann kurz sagen, dass alles gut ist und Sie selbst entschieden haben aufzustehen?\"",
             isCorrect: true,
             feedback:
-              "Sicherheit zuerst — dann Kommunikation. Frau Yilmaz steht nach Hüft-TEP zum ersten Mal (NRS 4, gerade aktiv stabilisiert). Wenn sie als Vermittlerin im Stehen reden soll, verliert sie den Fokus auf Stand und Schmerz → Sturz- und Luxationsgefahr (DNQP Sturzprophylaxe; ABCDE). Reihenfolge: 1. Stopp-Geste + Lächeln Richtung Mustafa, 2. Frau Yilmaz sicher zurück zum Stuhl/Bett, 3. erst dann Frau Yilmaz als Vermittlerin aktivieren. Mustafas Reaktion ist Liebe, kein Angriff. Wichtig: Angehörige greifen instinktiv unter die Achseln — erkläre Mustafa (ueber Frau Yilmaz als Dolmetscherin) warum das bei Hüft-TEP gefährlich ist: Schultergelenk-Risiko und unkontrollierte Belastung der operierten Hüfte. Sichern am Becken/Rumpf ist der korrekte Griff (Kinästhetik nach Hatch/Maietta).",
+              "Sicherheit zuerst — dann Kommunikation. Frau Yilmaz steht nach Hüft-TEP zum ersten Mal (NRS 4, gerade aktiv stabilisiert). Wenn sie als Vermittlerin im Stehen reden soll, verliert sie den Fokus auf Stand und Schmerz → Sturz- und Luxationsgefahr (DNQP Sturzprophylaxe; ABCDE). Reihenfolge: 1. Stopp-Geste + Lächeln Richtung Mustafa, 2. Frau Yilmaz sicher zurück zum Stuhl/Bett, 3. erst dann Frau Yilmaz als Vermittlerin aktivieren. Mustafas Reaktion ist Liebe, kein Angriff. Wichtig: Angehörige greifen instinktiv unter die Achseln — erkläre Mustafa (über Frau Yilmaz als Dolmetscherin) warum das bei Hüft-TEP gefährlich ist: Schultergelenk-Risiko und unkontrollierte Belastung der operierten Hüfte. Sichern am Becken/Rumpf ist der korrekte Griff (Kinästhetik nach Hatch/Maietta).",
             feedbackB1:
-              "Genau richtig — aber in der richtigen Reihenfolge. Erst: Stopp-Geste + Lächeln Richtung Mustafa. Dann: Frau Yilmaz sicher hinsetzen — sie steht ja erst zum ersten Mal. Erst wenn sie sicher sitzt, bittest du sie, Mustafa zu erklären. Sicherheit kommt vor Reden. Und: Erkläre Mustafa ueber Frau Yilmaz, dass er nicht unter den Achseln greifen soll — das ist gefährlich für die Hüfte. Sichern geht seitlich am Becken.",
+              "Genau richtig — aber in der richtigen Reihenfolge. Erst: Stopp-Geste + Lächeln Richtung Mustafa. Dann: Frau Yilmaz sicher hinsetzen — sie steht ja erst zum ersten Mal. Erst wenn sie sicher sitzt, bittest du sie, Mustafa zu erklären. Sicherheit kommt vor Reden. Und: Erkläre Mustafa über Frau Yilmaz, dass er nicht unter den Achseln greifen soll — das ist gefährlich für die Hüfte. Sichern geht seitlich am Becken.",
           },
           {
             text: "Direkt auf Türkisch via Übersetzungs-App: 'Bitte nicht stören.'",
@@ -383,6 +386,65 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
               "Frau Wendt holen ist ok — aber du kannst selbst handeln. Stopp-Geste und Lächeln dauern 10 Sekunden. Dann Frau Yilmaz bitten, es zu erklären. Danach kannst du Frau Wendt informieren.",
           },
         ],
+      },
+    },
+
+    // InlineWissen — 30°-Mikrolagerung
+    // Position: VOR Step 4.5 (MC Lagerung) und Step 4.6 (Timer Umlagerungsintervall) —
+    // definiert 30°-Mikrolagerung, Mikrolagerung, 30°-Lagerung, Umlagern,
+    // Umlagerungsintervall, Umlagerungsrhythmus.
+    {
+      stepId: "ce02-yilmaz-dur-04b-30grad-mikrolagerung",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "NPUAP/EPUAP/PPPIA (2019): International Pressure Injury Guideline",
+        "DNQP (2017, 2. Aktualisierung 2024): Expertenstandard Dekubitusprophylaxe in der Pflege",
+        "Deutsche Gesellschaft für Unfallchirurgie (2022): S2k-Leitlinie Endoprothetik Hüfte",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-dur-30grad-positionierung",
+      tag: "pflege",
+      themaPrimaer: "positionierung",
+      themenSekundaer: ["mobilisation", "dekubitus"],
+      transition: "Du kennst die 30°-Regel. Welche Lagerung wählst du jetzt für Frau Yilmaz?",
+      contentC1: {
+        title: "30°-Mikrolagerung: Dekubitusschutz UND Hüft-TEP-Sicherheit",
+        body: "",
+        glossarBegriffe: [
+          "30°-Mikrolagerung", "Mikrolagerung", "30°-Lagerung", "Lagerung",
+          "Umlagern", "Umlagerungsintervall", "Umlagerungsrhythmus",
+          "Dekubitusprophylaxe", "Trochanter",
+        ],
+      },
+      contentB1: {
+        title: "30°-Lagerung: Steißbein entlasten + Hüfte schützen",
+        body: "",
+        glossarBegriffe: ["30°-Lagerung", "Lagerung", "Druckentlastung", "Umlagern"],
+      },
+      inlineWissen: {
+        bausteinRef: "positionierung-30-grad-mikrolagerung",
+        storyAufhaenger:
+          "Frau Yilmaz ist nach dem Aufstehversuch wieder im Bett. Zwei Probleme gleichzeitig: Dekubitus Kategorie I am Steißbein (Druck muss weg) und Hüft-TEP-Lagerungsvorschrift (Hüftwinkel < 90°). Gibt es eine Lagerung, die beides gleichzeitig löst?",
+        storyAufhaengerB1:
+          "Frau Yilmaz liegt wieder im Bett. Zwei Probleme: Die Druckwunde am Steißbein (Druck muss weg). Und: Die Hüfte darf nicht zu stark gebeugt werden. Gibt es eine Lagerung, die beides schafft?",
+        kerntext:
+          "**Mikrolagerung** = kleine, gezielte Lage-Veränderung um wenige Grad — der Patient wird nicht komplett gewendet, sondern nur leicht gekippt. Reicht oft, um Druck von einer Stelle zu nehmen.\n\n**30°-Mikrolagerung** = die Standard-Form der Mikrolagerung mit einem 30°-Keil oder Kissen. Der Patient liegt schräg, das Steißbein ist frei.\n\n**30°-Lagerung** = umgangs-sprachlich gleichbedeutend mit 30°-Mikrolagerung.\n\n**Umlagern** = den Patienten von einer Position in eine andere bringen, um Druck zu entlasten.\n\n**Umlagerungsintervall** = der Zeitabstand zwischen zwei Umlagerungen. Standard nach DNQP 2024: alle 2 Stunden bei Risikopatienten.\n\n**Umlagerungsrhythmus** = die geplante Abfolge von Lagerungs-Positionen über den Tag (z.B. 30° links → Rückenlage mit Fersen-frei → 30° rechts).\n\n**Die 30°-Mikrolagerung** ist die Lösung für genau dieses Problem (NPUAP/EPUAP 2019):\n\n• **Prinzip:** Der Patient wird leicht zur Seite gekippt — nur 30°, nicht 90°. Das Steißbein liegt frei, der Trochanter wird nicht belastet.\n\n• **Warum nicht 90° Seitenlage?** Bei 90° liegt der Trochanter direkt auf — neue Druckstelle. Außerdem: Hüftwinkel bei 90°-Seitenlage ist schwer kontrollierbar (Luxationsgefahr).\n\n• **Warum nicht Rückenlage?** In Rückenlage liegt das Steißbein direkt auf der Matratze — genau dort, wo Frau Yilmaz bereits Kategorie I hat.\n\n• **Umlagerungsrhythmus bei Frau Yilmaz:** 30° links → 2h → 30° rechts → 2h → kurz Rückenlage (mit Fersen-frei-Lagerung) → wieder 30°.\n\n• **Kissen zwischen die Beine:** Auch in 30°-Lagerung Keil oder Kissen zwischen die Beine — Adduktionsprophylaxe.",
+        kerntextB1:
+          "**Mikrolagerung** = den Patienten nur ein bisschen drehen — nicht ganz auf die Seite.\n\n**30°-Mikrolagerung** = die Standard-Form. Mit einem Kissen wird der Mensch leicht gekippt, etwa 30 Grad.\n\n**30°-Lagerung** = das gleiche.\n\n**Umlagern** = den Patienten in eine andere Position bringen.\n\n**Umlagerungsintervall** = wie oft umgelagert wird. Standard: alle 2 Stunden.\n\n**Umlagerungsrhythmus** = der Plan für den ganzen Tag (z.B. 2h links, 2h Rückenlage, 2h rechts).\n\n**Warum 30°?**\n\n• Steißbein hat keinen Druck = Druckwunde wird besser\n• Hüfte ist sicher = Gelenk geschützt\n• Auf voller Seite (90°) liegt die Hüfte auf = neue Druckstelle\n• Auf dem Rücken liegt das Steißbein auf = Wunde wird schlimmer\n\n**Wie oft?** Alle 2 Stunden wechseln. Kissen zwischen die Beine.",
+        faustregel:
+          "**30° ist der goldene Winkel** — Steißbein frei, Trochanter geschont, Hüft-TEP sicher. Alle 2 Stunden umlagern.",
+        faustregelB1:
+          "30 Grad ist die beste Lagerung: Steißbein hat keinen Druck, Hüfte ist sicher, alle 2 Stunden wechseln.",
+        karteikarte: {
+          vorderseite:
+            "Warum ist die 30°-Mikrolagerung bei Frau Yilmaz die beste Wahl — und warum nicht 90° Seitenlage oder Rückenlage?",
+          rueckseite:
+            "30°: Steißbein entlastet + Trochanter geschont + Hüftwinkel < 90°. 90° Seitenlage: Trochanter belastet (neue Druckstelle) + Hüftwinkel unkontrollierbar. Rückenlage: Steißbein belastet (Kategorie I verschlechtert sich). Umlagerungsintervall alle 2 Stunden (DNQP 2024). Kissen zwischen die Beine (Adduktionsprophylaxe). Faustregel: **30° ist der goldene Winkel.**",
+        },
       },
     },
 

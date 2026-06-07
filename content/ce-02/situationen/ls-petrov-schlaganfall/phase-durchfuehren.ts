@@ -33,13 +33,13 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
       displayFormat: "stepbystep",
       contentC1: {
         title: "Vier Schritte vor der Körperpflege",
-        body: "Bevor du anfängst, 4 Vorbereitungsschritte nach Bobath-Prinzip:\n\n1) **Bett auf Arbeitshöhe** bringen — Rückenprävention (LasthandhabV §2). Du arbeitest sicher, wenn du nicht gebückt bist.\n2) **Herrn Petrov über alles informieren** was als nächstes kommt — jeder Handgriff wird angekündigt. \"Ich drehe jetzt Ihren Arm leicht nach außen.\" Nie überraschend anfassen.\n3) **Betroffene Seite (rechts) als gleichwertige Seite einbeziehen** — nicht übergehen, nicht kompensieren. Bobath: Die betroffene Seite ist nicht weg — sie braucht gezielte Angebote.\n4) **Ressourcen aktivieren:** Was kann er selbst? Linke Hand am Waschvorgang beteiligen. Grundsatz Bobath: Bewegungsangebote machen, nicht übernehmen. (Bobath B. 1990)",
-        glossarBegriffe: ["Bobath-Konzept", "betroffene Seite", "Ressourcen"],
+        body: "Bevor du anfängst, 4 Vorbereitungsschritte nach Bobath-Prinzip:\n\n1) **Bett auf Arbeitshöhe** bringen — Rückenprävention (LasthandhabV §2). Du arbeitest sicher, wenn du nicht gebückt bist.\n2) **Ankündigen** = Herrn Petrov über alles informieren was als nächstes kommt — jeder Handgriff wird angekündigt. \"Ich drehe jetzt Ihren Arm leicht nach außen.\" Nie überraschend anfassen.\n3) **Betroffene Seite (rechts) als gleichwertige Seite einbeziehen** — nicht übergehen, nicht kompensieren. Bobath: Die betroffene Seite ist nicht weg — sie braucht gezielte Angebote.\n4) **Mundpflege** = die systematische Reinigung von Zähnen, Zunge, Wangentaschen und Schleimhäuten — bei Aspirationsrisiko vor dem Essen Pflicht (Pneumonieschutz). **Schultergürtel** = die anatomische Einheit aus Schulterblatt + Schlüsselbein + Schultergelenk; bei Hemiparese sturz- und subluxationsgefährdet. **Ressourcen aktivieren:** Was kann er selbst? Linke Hand am Waschvorgang beteiligen. Grundsatz Bobath: Bewegungsangebote machen, nicht übernehmen. (Bobath B. 1990)",
+        glossarBegriffe: ["Bobath-Konzept", "betroffene Seite", "Ressourcen", "ankündigen", "Mundpflege", "Schultergürtel", "Sturz", "Bewegung", "Hemiparese", "Schulterblatt"],
       },
       contentB1: {
         title: "Vor der Körper-Pflege — 4 Schritte",
-        body: "Schritt 1: Stelle das Bett auf die richtige Höhe. Das schützt deinen Rücken.\nSchritt 2: Sage Herrn Petrov immer vorher, was du machst. Zum Beispiel: \"Jetzt drehe ich Sie auf die Seite.\"\nSchritt 3: Die rechte Seite ist die betroffene Seite. Sie ist genauso wichtig. Übergehe sie nicht. Beziehe sie mit ein.\nSchritt 4: Was kann Herr Petrov selbst tun? Seine linke Hand ist aktiv. Lass ihn mitmachen. Das ist das Bobath-Prinzip: Bewegung anbieten — nicht übernehmen.",
-        glossarBegriffe: ["Bobath-Konzept"],
+        body: "Schritt 1: Stelle das Bett auf die richtige Höhe. Das schützt deinen Rücken.\nSchritt 2: **Ankündigen** = sage Herrn Petrov immer vorher, was du machst. Zum Beispiel: \"Jetzt drehe ich Sie auf die Seite.\"\nSchritt 3: Die rechte Seite ist die betroffene Seite. Sie ist genauso wichtig. Übergehe sie nicht. Beziehe sie mit ein.\nSchritt 4: **Mundpflege** = Zähne und Mund putzen. Wichtig vor dem Essen bei Schluck-Störung. **Schultergürtel** = Schulter, Schulter-Blatt und Schlüssel-Bein zusammen. Was kann Herr Petrov selbst tun? Seine linke Hand ist aktiv. Lass ihn mitmachen. Das ist das Bobath-Prinzip: Bewegung anbieten — nicht übernehmen.",
+        glossarBegriffe: ["Bobath-Konzept", "ankündigen", "Mundpflege", "Schultergürtel", "Sturz", "Bewegung", "Hemiparese", "Schulterblatt"],
       },
     },
 
@@ -60,8 +60,8 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
       lernziel: "ce02-petrov-dur-ganzkörperpflege",
       tag: "pflege",
       contentC1: {
-        title: "Ganzkörperpflege — richtige Reihenfolge",
-        body: "Bringe die Schritte der Ganzkörperpflege beim halbseitig betroffenen Patienten in die richtige Reihenfolge nach Bobath. Merkhilfe: \"Ausziehen: Gesunde zuerst — Anziehen: Betroffene zuerst.\"",
+        title: "Ganzkörperpflege — pflegerisch sinnvolle Reihenfolge",
+        body: "Bringe die Schritte der Ganzkörperpflege beim halbseitig betroffenen Patienten in eine pflegerisch sinnvolle Reihenfolge nach Bobath. Beachte dabei die anatomisch-hygienische Logik (von oben nach unten, Intimbereich am Schluss) sowie das Bobath-Prinzip (gesunde Seite beim Entkleiden, betroffene Seite beim Ankleiden).",
         glossarBegriffe: [
           "Bobath-Konzept",
           "betroffene Seite",
@@ -71,12 +71,12 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
       },
       contentB1: {
         title: "Die Reihenfolge der Körper-Pflege",
-        body: "Bringe die Schritte in die richtige Reihenfolge. Merkhilfe: \"Ausziehen: Gesunde zuerst. Anziehen: Betroffene zuerst.\"",
+        body: "Bringe die Schritte in eine pflegerisch sinnvolle Reihenfolge. Denke an die Hygiene-Logik (oben → unten, Intim am Schluss) und das Bobath-Prinzip (Entkleiden: gesunde Seite. Ankleiden: betroffene Seite).",
         glossarBegriffe: ["Bobath-Konzept", "Körperpflege"],
       },
       question: {
         fragetext:
-          "Bringe die Schritte der Ganzkörperpflege in die richtige Reihenfolge nach Bobath.",
+          "Bringe die Schritte der Ganzkörperpflege in eine pflegerisch sinnvolle Reihenfolge nach Bobath.",
         sequencing: {
           instruction: "Ordne die Schritte in der richtigen Reihenfolge.",
           items: [
@@ -268,12 +268,12 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Mundpflege vor dem Essen — Pneumonieschutz beginnt im Mund",
         body: "",
-        glossarBegriffe: ["Mundpflege", "Aspirationspneumonie", "Oral Health"],
+        glossarBegriffe: ["Mundpflege", "Aspirationspneumonie", "Oral Health", "Anreichen"],
       },
       contentB1: {
         title: "Mundpflege vor dem Essen — warum?",
         body: "",
-        glossarBegriffe: ["Mundpflege", "Pneumonie"],
+        glossarBegriffe: ["Mundpflege", "Pneumonie", "Anreichen"],
       },
       inlineWissen: {
         bausteinRef: "mundpflege-bei-aspirationsrisiko",
@@ -337,13 +337,13 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
       displayFormat: "checklist",
       contentC1: {
         title: "Frühstück anreichen — 6 Punkte",
-        body: "Checkliste für das Anreichen bei Herrn Petrov (Dysphagie Grad 2, IDDSI Level 2):\n\n☐ Oberkörper auf 90° aufgerichtet (Aspirationsschutz, IDDSI 2019)\n☐ Angedickte Flüssigkeit Level 2 bereitgestellt — kein normales Wasser\n☐ Löffel von der gesunden Seite (links) anreichen — Schluckreiz stimulieren\n☐ Kleine Portionen: max. 5 ml pro Löffel\n☐ Ruhige Atmosphäre: kein Radio, kein Gesprächsdruck\n☐ Beobachten: Hustet er? Feuchte Stimme? Verschluckt er sich? → Wenn ja: sofort Stop.\n\n(IDDSI 2019; DGG/DGN 2020 Neurogene Dysphagie)",
-        glossarBegriffe: ["IDDSI", "Dysphagie", "Aspiration", "Schluckreiz"],
+        body: "Checkliste für das Anreichen bei Herrn Petrov (Dysphagie Grad 2, IDDSI Level 2):\n\n☐ Oberkörper auf 90° aufgerichtet (Aspirationsschutz, IDDSI 2019)\n☐ Angedickte Flüssigkeit Level 2 bereitgestellt — kein normales Wasser\n☐ Löffel von der gesunden Seite (links) anreichen — Schluckreiz stimulieren\n☐ Kleine Portionen: max. 5 ml pro Löffel\n☐ Ruhige Atmosphäre: kein Radio, kein Gesprächsdruck\n☐ Beobachten: Hustet er? Feuchte Stimme? Verschluckt er sich? → Wenn ja: sofort Stop.\n\n**Wichtig — stille Aspiration** = das unbemerkte Eindringen von Material in die Atemwege OHNE Hustenreflex. Bei Dysphagie-Patienten in ca. 40 % der Fälle (Daniels 2019). Erkennungszeichen: feuchte/gurgelnde Stimme nach dem Schlucken, leichtes Fieber, Sauerstoffsättigungs-Abfall. Deshalb 30 Min nach Mahlzeit aufrecht halten.\n\n(IDDSI 2019; DGG/DGN 2020 Neurogene Dysphagie; Daniels 2019)",
+        glossarBegriffe: ["IDDSI", "Dysphagie", "Aspiration", "Schluckreiz", "stille Aspiration", "Flüssigkeit", "Patient", "Schlaganfall", "Anreichen"],
       },
       contentB1: {
         title: "Frühstück anreichen — 6 Punkte",
-        body: "Herr Petrov isst Frühstück. Du reichst ihm das Essen an. 6 Punkte:\nOber-Körper auf 90° aufgerichtet — das schützt vor Verschlucken.\nAngedickte Flüssigkeit Level 2 bereitstellen — kein normales Wasser.\nLöffel von links anreichen — das ist seine gesunde Seite.\nKleine Portionen: max. 5 ml pro Löffel.\nRuhige Atmosphäre: Kein Radio. Kein Gesprächs-Druck.\nBeobachten: Hustet er? Klingt die Stimme feucht? Verschluckt er sich? Wenn ja: Sofort aufhören.",
-        glossarBegriffe: ["IDDSI", "Dysphagie", "Aspiration"],
+        body: "Herr Petrov isst Frühstück. Du reichst ihm das Essen an. 6 Punkte:\nOber-Körper auf 90° aufgerichtet — das schützt vor Verschlucken.\nAngedickte Flüssigkeit Level 2 bereitstellen — kein normales Wasser.\nLöffel von links anreichen — das ist seine gesunde Seite.\nKleine Portionen: max. 5 ml pro Löffel.\nRuhige Atmosphäre: Kein Radio. Kein Gesprächs-Druck.\nBeobachten: Hustet er? Klingt die Stimme feucht? Verschluckt er sich? Wenn ja: Sofort aufhören.\n\nWichtig: **Stille Aspiration** = Flüssigkeit kommt in die Lunge OHNE dass der Patient hustet. Das passiert bei etwa 40 von 100 Schlaganfall-Patienten mit Schluck-Störung. Erkennungs-Zeichen: feuchte Stimme nach dem Schlucken, Fieber, Sauerstoff sinkt. Deshalb: 30 Minuten nach dem Essen aufrecht bleiben.",
+        glossarBegriffe: ["IDDSI", "Dysphagie", "Aspiration", "stille Aspiration", "Flüssigkeit", "Patient", "Schlaganfall", "Anreichen"],
       },
     },
 
@@ -380,9 +380,9 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
             text: "Ich schlage ihm fest auf den Rücken, damit er frei bekommt.",
             isCorrect: false,
             feedback:
-              "Hier falsch. Rückenschläge gehören zum Choking-Algorithmus (ERC 2021) bei mechanischer Atemwegsverlegung durch einen festen Bolus — bei ineffektivem Husten zuerst 5 Rückenschläge, dann 5 Bauchstöße (Heimlich-Manöver). Bei Herrn Petrov liegt aber eine Aspiration vor (Flüssigkeit in die Atemwege) — kein Bolusverschluss. Sein aktives Husten zeigt: Atemwege nicht vollständig verlegt, der Schutzreflex funktioniert. Bei komplettem Atemwegsverschluss (kein Husten, Zyanose) wären Rückenschläge und Heimlich-Manöver indiziert (ERC 2021). Hier ist Husten der wirksamste Selbstreinigungs-Mechanismus. Die richtige Reaktion ist: Anreichen stoppen, aufrichten, Husten fördern, beobachten.",
+              "Du hast richtig erkannt, dass Hilfe nötig ist — der Impuls zum Handeln ist gut. Allerdings ist hier ein Eingreifen mit Rückenschlägen falsch, weil dieser Algorithmus zum Choking-Schema gehört (ERC 2021): bei mechanischer Atemwegsverlegung durch einen festen Bolus zuerst 5 Rückenschläge, dann 5 Bauchstöße (Heimlich-Manöver). Bei Herrn Petrov liegt aber eine Aspiration vor (Flüssigkeit in die Atemwege) — kein Bolusverschluss. Sein aktives Husten zeigt: Atemwege nicht vollständig verlegt, der Schutzreflex funktioniert. Stattdessen ist Husten der wirksamste Selbstreinigungs-Mechanismus. Beim nächsten Mal: Anreichen stoppen, aufrichten, Husten fördern, beobachten — Rückenschläge nur bei komplettem Atemwegsverschluss (kein Husten, Zyanose).",
             feedbackB1:
-              "Hier falsch. Rücken-Schläge macht man bei einem festen Stück Essen, das die Atemwege verschließt (= Bolus). Hier ist es Flüssigkeit in der Lunge (= Aspiration). Husten ist die beste Hilfe — der Körper reinigt sich selbst. Stoppen, aufrichten, Husten anregen, beobachten.",
+              "Du hast schnell helfen wollen — guter Ansatz. Allerdings sind Rücken-Schläge hier falsch, weil sie nur bei einem festen Stück Essen helfen, das die Atemwege ganz verschließt (= Bolus). Hier ist es Flüssigkeit in der Lunge (= Aspiration). Stattdessen ist Husten die beste Hilfe — der Körper reinigt sich selbst. Beim nächsten Mal: Stoppen, aufrichten, Husten anregen, beobachten.",
           },
           {
             text: "Ich stoppe das Anreichen sofort, fordere Herrn Petrov auf zu husten wenn er kann, halte ihn aufrecht (90°) mit Kopf leicht nach vorne, beobachte Atemgeräusch und Sättigung.",
@@ -699,9 +699,9 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
                   "Herr Petrov schaut unsicher. Er greift an die Kante.",
                 score: 0,
                 feedback:
-                  "\"Heben\" ist falsch: Bobath bedeutet Bewegungsangebot machen, nicht übernehmen/heben. \"Kein Problem\" minimiert seine Anstrengung — für ihn ist es sehr anstrengend. Kein Grund genannt warum es wichtig ist.",
+                  "Du hast erkannt, dass du Herrn Petrov bewegen sollst — das ist richtig. Allerdings ist \"Heben\" falsch, weil Bobath bedeutet Bewegungsangebot machen, nicht übernehmen oder heben. Auch \"Kein Problem\" minimiert seine Anstrengung — für ihn ist es sehr anstrengend. Stattdessen besser: Schritt ankündigen, Grund nennen (warum Bettkante wichtig ist), Bewegung anbieten. Beim nächsten Mal: \"Wir setzen Sie an die Bettkante — das hilft Ihrer Atmung.\"",
                 feedbackB1:
-                  "\"Heben\" ist falsch. Nach Bobath: Bewegung anbieten, nicht übernehmen. Außerdem: Sage warum es wichtig ist.",
+                  "Du hast den nächsten Schritt einleiten wollen — guter Ansatz. Allerdings ist \"Heben\" falsch, weil Bobath sagt: Bewegung anbieten, nicht übernehmen. Stattdessen: Sage warum es wichtig ist — zum Beispiel: \"An die Bett-Kante zu sitzen ist gut für die Lunge.\"",
               },
               {
                 text: "\"Ich frage schnell Frau Wegner ob wir das machen sollen.\"",
@@ -748,9 +748,9 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
                 patientResponseB1: "Herr Petrov zieht scharf die Luft ein.",
                 score: 0,
                 feedback:
-                  "Gefährlich. Heben unter den Achseln bei Hemiparese: Subluxationsgefahr des Schultergelenks rechts (der betroffenen Seite). Das kann massive Schmerzen und dauerhafte Schäden verursachen. Außerdem: Bobath-Prinzip = Bewegungsangebot, nicht Übernehmen.",
+                  "Du hast verstanden, dass es schnell gehen soll — aber das Vorgehen ist hier gefährlich. Heben unter den Achseln bei Hemiparese verursacht eine Subluxationsgefahr des Schultergelenks rechts (der betroffenen Seite), weil der hemiparetische Arm keinen Muskeltonus hat und das Schultergelenk nur durch Sehnen gehalten wird. Das kann massive Schmerzen und dauerhafte Schäden verursachen. Stattdessen gilt das Bobath-Prinzip = Bewegungsangebot, nicht Übernehmen. Beim nächsten Mal: Drehen über die betroffene Seite, kein Zug am Arm.",
                 feedbackB1:
-                  "Sehr gefährlich. Bei Hemiparese: Das Schulter-Gelenk kann herausspringen (= Subluxation). Das verursacht starke Schmerzen. Immer nach Bobath drehen.",
+                  "Du hast Zeit sparen wollen — guter Ansatz, aber das Vorgehen ist hier sehr gefährlich, weil bei Hemiparese das Schulter-Gelenk herausspringen kann (= Subluxation). Stattdessen: Immer nach Bobath drehen — das schützt die Schulter.",
               },
               {
                 text: "Ich ziehe ihn an beiden Händen in die Sitzposition.",
@@ -762,9 +762,9 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
                   "Herr Petrov macht eine Stopp-Geste mit der linken Hand.",
                 score: 0,
                 feedback:
-                  "Falsch und gefährlich. Zug an beiden Händen: Rechter Arm hat keinen Muskeltonus — kein gezielter Griff möglich, Zug führt zu Überstreckung des Ellenbogen- und Schultergelenks. Herr Petrov selbst reagiert richtig: Stopp-Signal.",
+                  "Du hast erkannt, dass beidseitiges Vorgehen normalerweise stabilisiert — bei einem gesunden Patienten wäre das ein guter Reflex. Hier ist es aber gefährlich, weil der rechte Arm keinen Muskeltonus hat und kein gezielter Griff möglich ist. Zug am hemiparetischen Arm führt deshalb zur Überstreckung des Ellenbogen- und Schultergelenks. Herr Petrov selbst reagiert tatsächlich richtig mit dem Stopp-Signal. Stattdessen: Drehen über die betroffene Seite (Bobath), Patient nutzt linke Hand zum Abstützen, kein Zug am rechten Arm.",
                 feedbackB1:
-                  "Falsch. Zug am rechten Arm ist gefährlich. Der Arm hat keine Kraft — er kann beim Zug verletzt werden.",
+                  "Du hast ihm Halt geben wollen — guter Ansatz. Allerdings ist Zug am rechten Arm gefährlich, weil der Arm keine Kraft hat und beim Zug verletzt werden kann. Stattdessen: Auf die Seite drehen (Bobath) — er stützt sich mit der linken Hand selbst ab.",
               },
             ],
           },

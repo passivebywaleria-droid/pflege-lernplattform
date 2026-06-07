@@ -116,13 +116,13 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
         "Elderly woman on hospital floor next to bed, nurse kneeling beside her in supportive posture, calm controlled atmosphere, respectful professional setting, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Transfer von Frau M. vom Boden ins Bett",
-        body: "Frau M. liegt noch immer neben dem Bett. Keine sichtbare Hüftfraktur-Zeichen (keine Verkürzung, keine Außenrotation), Schmerzen NRS 4/10.\n\nDu hast Frau Keller dazugeholt. Jetzt: Transfer über Seitlage und Kniestand (kinästhetisches Prinzip — nicht heben, sondern bewegen lassen).\n\nBringe die Schritte in die richtige Reihenfolge.",
-        glossarBegriffe: [],
+        body: "Frau M. liegt noch immer neben dem Bett. Keine sichtbare Hüftfraktur-Zeichen (keine Verkürzung, keine Außenrotation), Schmerzen NRS 4/10.\n\n**Hüftfraktur** = ein Bruch am hüftnahen Oberschenkelknochen (proximales Femur, meist Schenkelhals oder pertrochantär) — ca. 140.000-160.000 Fälle/Jahr in Deutschland (Destatis 2023). Klinische Zeichen: Bein-Verkürzung + Außenrotation des Fußes + Belastungsschmerz. **Außenrotation** bedeutet: Der Fuß dreht sich nach außen — bei Frau M. nicht sichtbar (gutes Zeichen).\n\nDu hast Frau Keller dazugeholt. Jetzt: Transfer über Seitlage und Kniestand (kinästhetisches Prinzip — nicht heben, sondern bewegen lassen).\n\nBringe die Schritte in die richtige Reihenfolge.",
+        glossarBegriffe: ["Hüftfraktur", "Außenrotation"],
       },
       contentB1: {
         title: "Frau M. vom Boden ins Bett",
-        body: "Frau M. liegt noch neben dem Bett. Keine sichtbaren Zeichen für einen Hüftbruch.\n\nSchmerzen: 4 von 10. Frau Keller ist da.\n\nJetzt bringst du sie ins Bett — nicht heben, sondern führen (Kinästhetik). Bringe die Schritte in die richtige Reihenfolge.",
-        glossarBegriffe: [],
+        body: "Frau M. liegt noch neben dem Bett. Keine sichtbaren Zeichen für einen Hüftbruch.\n\n**Hüftfraktur** = ein Bruch am Knochen oben am Oberschenkel, nahe der Hüfte. Häufig bei alten Menschen mit Osteoporose. Zeichen: Bein ist kürzer, Fuß dreht nach außen, starke Schmerzen beim Stehen. **Außenrotation** = der Fuß dreht sich nach außen. Bei Frau M. ist das NICHT zu sehen — gutes Zeichen.\n\nSchmerzen: 4 von 10. Frau Keller ist da.\n\nJetzt bringst du sie ins Bett — nicht heben, sondern führen (Kinästhetik). Bringe die Schritte in die richtige Reihenfolge.",
+        glossarBegriffe: ["Hüftfraktur", "Außenrotation"],
       },
       question: {
         fragetext: "Sortiere die Transfer-Schritte in die richtige Reihenfolge.",
@@ -248,13 +248,13 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
       transition: "Material liegt bereit. Die grosse Frage: Toilette oder nicht?",
       contentC1: {
         title: "Material vorbereiten — erste Mobilisation",
-        body: "Frau M. liegt jetzt im Bett, der Arzt ist informiert. Bevor du sie zum ersten Aufstehen nach dem Sturz mobilisierst, richtest du dein Material her. Was brauchst du wirklich — und was nicht?",
-        glossarBegriffe: ["Schellong-Test", "Trochanter major", "Orthostase"],
+        body: "Frau M. liegt jetzt im Bett, der Arzt ist informiert. Bevor du sie zum ersten Aufstehen nach dem Sturz mobilisierst, richtest du dein Material her.\n\n**Mobilisation** = die geführte Aktivierung von Bewegung (Aufstehen, Gehen, Lagewechsel) zur Förderung der Selbstständigkeit und zur Prophylaxe von Komplikationen langer Bettruhe (DNQP Mobilität 2014/2024). Erste Mobilisation nach Sturz = besonders kritisch: nur nach Schellong-Test und mit 2 Personen.\n\nWas brauchst du wirklich — und was nicht?",
+        glossarBegriffe: ["Schellong-Test", "Trochanter major", "Orthostase", "Mobilisation"],
       },
       contentB1: {
         title: "Material vorbereiten",
-        body: "Frau M. liegt jetzt im Bett. Der Arzt weiß Bescheid. Jetzt bereitest du Marianne vor, dass sie das erste Mal aufsteht. Was legst du auf den Wagen? Was brauchst du nicht?",
-        glossarBegriffe: ["Schellong-Test"],
+        body: "Frau M. liegt jetzt im Bett. Der Arzt weiß Bescheid. Jetzt bereitest du Marianne vor, dass sie das erste Mal aufsteht.\n\n**Mobilisation** = das geführte Aufstehen, Gehen oder Lagewechsel mit Pflegehilfe. Es hilft Frau M. wieder selbstständig zu werden und beugt Komplikationen langer Bettruhe vor (DNQP).\n\nWas legst du auf den Wagen? Was brauchst du nicht?",
+        glossarBegriffe: ["Schellong-Test", "Mobilisation"],
       },
       question: {
         fragetext:
@@ -478,9 +478,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Du nimmst wahr, dass Frau M. gerade etwas Wichtiges sagt. Du reagierst:",
+              "Du nimmst wahr, dass Frau M. gerade etwas Wichtiges sagt.\n\n\"Geben Sie mir einen Moment. Meine Beine fühlen sich an, als gehörten sie mir nicht ganz.\"",
             contextB1:
-              "Du siehst: Frau M. sagt etwas Wichtiges. Wie antwortest du?",
+              "Du hörst: Frau M. sagt etwas Wichtiges.\n\n\"Geben Sie mir einen Moment. Meine Beine fühlen sich an, als wären sie nicht meine.\"",
             speaker: "Du",
             options: [
               {
@@ -509,7 +509,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
                 feedback:
                   "Zeitdruck ist in dieser Situation destruktiv. Frau M. spürt: Sie macht Umstände. Sie versteift sich, was orthostatische Dysregulation verschlimmern kann (Schwindel beim Aufstehen). Gerade jetzt braucht sie Raum, nicht Tempo.",
                 feedbackB1:
-                  "Zeitdruck ist hier falsch. Frau M. denkt: 'Ich mache Umstände.' Sie wird angespannt. Das macht das Aufstehen gefährlicher (sie wird schwindelig). Sie braucht Ruhe, keinen Druck.",
+                  "Du hast die Situation als Zeitfrage erkannt — das ist nachvollziehbar. Aber Zeitdruck ist hier trotzdem falsch, denn Frau M. denkt: 'Ich mache Umstände.' Sie wird angespannt, weil sie sich als Last fühlt. Das macht das Aufstehen gefährlicher, denn Anspannung verstärkt orthostatischen Schwindel. Stattdessen: Gib ihr Raum und Ruhe — die zwei Minuten sind investierte Sicherheit, nicht verlorene Zeit. Beim nächsten Mal: Sage 'Nehmen Sie sich die Zeit, die Sie brauchen.'",
               },
               {
                 text: "\"Soll ich Ihnen die Beine etwas massieren, dann geht es schneller?\"",
@@ -558,7 +558,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
                   "Frau M.: \"Oh — ja…\"",
                 score: 1,
                 feedback:
-                  "Problematisch. 'Unter den Achseln nehmen' ist a) kinästhetisch falsch (Hebeln statt Bewegung führen — dein Rücken plus Schultergelenk-Risiko bei Frau M.) und b) entmachtet sie (sie wird zum Objekt, verliert die Kontrolle). Korrekt: Frau M. macht die Bewegung selbst, du sicherst seitlich am Becken/Rumpf, Frau Keller auf der anderen Seite. Tempo bestimmt die Patientin.",
+                  "Du hast erkannt, dass Frau M. Unterstützung beim Aufstehen braucht — das ist richtig gedacht. Allerdings ist 'unter den Achseln nehmen' problematisch, weil es kinästhetisch falsch ist: Du hebelst statt Bewegung zu führen, dein Rücken wird belastet und Frau M.s Schultergelenk ist gefährdet (Subluxationsrisiko bei Osteoporose). Außerdem entmachtet es Frau M., denn sie wird zum Objekt und verliert die Kontrolle über ihr eigenes Tempo. Stattdessen (Hatch/Maietta): Frau M. macht die Bewegung selbst, du sicherst seitlich am Becken/Rumpf, Frau Keller auf der anderen Seite. Beim nächsten Mal: Hand ans Becken, nicht unter die Achseln.",
                 feedbackB1:
                   // FIX (walkthrough B-08): Sandwich-Prinzip — Loben vor Korrigieren.
                   "Du willst Frau M. helfen — das ist richtig. Aber 'Unter den Achseln' passt hier nicht. Erstens: Dein Rücken leidet. Zweitens: Frau M.s Schulter kann verletzt werden (sie ist 82 mit Osteoporose). Drittens: Sie wird zum Objekt, verliert die Kontrolle. Besser: Sie macht die Bewegung selbst, du und Frau Keller sichern seitlich. Du bist nah dran!",
@@ -567,9 +567,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
           },
           {
             context:
-              "Frau M. steht sicher, du und Frau Keller stützen. Sie setzt sich auf den Toilettenstuhl. Nach 2 Minuten ist sie fertig. Transfer zurück ins Bett. Sie sagt:",
+              "Frau M. steht sicher, du und Frau Keller stützen. Sie setzt sich auf den Toilettenstuhl. Nach 2 Minuten ist sie fertig. Transfer zurück ins Bett. Sie schaut dich an.",
             contextB1:
-              "Frau M. steht sicher. Du und Frau Keller stützen. Sie geht zum Toilettenstuhl. Danach zurück ins Bett. Sie sagt:",
+              "Frau M. steht sicher. Du und Frau Keller stützen. Sie geht zum Toilettenstuhl. Danach zurück ins Bett. Sie schaut dich an.",
             speaker: "Frau M.",
             options: [
               {
@@ -590,7 +590,7 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
                   "\"Bitte sagen Sie niemandem, dass ich so umständlich bin.\"",
                 patientResponse: "(Frau M. schaut beschämt.)",
                 patientResponseB1: "(Frau M. schaut beschämt.)",
-                score: 2,
+                score: 1,
                 feedback:
                   "Wichtiger Moment. Frau M. zeigt offen ihre Scham — und zeigt damit Vertrauen zu dir. Die fachlich richtige Reaktion ist sofortige Validierung: 'Sie sind nicht umständlich, Frau M. Sie sind eine 82-jährige Frau, die nach einem Sturz das erste Mal aufsteht — und Sie machen das sehr gut.' Die Aussage hat zwei Teile: 1. Beschämung explizit zurückweisen ('nicht umständlich'). 2. Realität benennen (Sturz + Alter + erstmaliges Aufstehen). Damit nimmst du der Scham die Grundlage.",
                 feedbackB1:
@@ -672,9 +672,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_DURCHFUEHREN: SituationsPhase = {
           {
             text: "Ich sage ihr, sie soll tief atmen, und wir gehen langsam weiter zum Toilettenstuhl.",
             feedback:
-              "Gefährlich. Bei Schwindel NACH frischem Sturz, Parkinson und Restwirkung Zolpidem ist 'weitergehen' keine Option — das Sturzrisiko ist akut. Ein zweiter Sturz in derselben Nacht wäre traumatisch (Post-Fall-Syndrom verstärken) und fachlich vermeidbar. Tief atmen hilft bei leichter Nervosität, nicht bei echter Orthostase. Richtiger Weg: Sofort sicheren Untergrund, Reassessment, 2. Person.",
+              "Du hast erkannt, dass Frau M. Unterstützung braucht — guter Reflex. Allerdings ist 'weitergehen' bei Schwindel NACH frischem Sturz + Parkinson + Restwirkung Zolpidem keine Option, weil das Sturzrisiko akut ist. Ein zweiter Sturz in derselben Nacht wäre traumatisch (Post-Fall-Syndrom verstärken) und fachlich vermeidbar. Tief atmen hilft bei leichter Nervosität, aber nicht bei echter Orthostase, denn der Blutdruck-Abfall verschwindet dadurch nicht. Stattdessen: Sofort sicheren Untergrund (zurück auf Bettkante), Reassessment, 2. Person dazu. Beim nächsten Mal: Bei Schwindel immer Sicherheit vor Ziel — setzen, prüfen, dann entscheiden.",
             feedbackB1:
-              "Gefährlich. Nach dem Sturz + Parkinson + Zolpidem ist 'weitergehen' falsch. Ein zweiter Sturz in derselben Nacht wäre sehr schlimm. Tief atmen hilft bei Nervosität, nicht bei echter Orthostase. Richtig: Sofort hinsetzen, schauen, 2. Person holen.",
+              "Du willst Frau M. das Ziel erreichen lassen — das ist verständlich. Aber 'weitergehen' ist hier gefährlich, denn nach Sturz + Parkinson + Zolpidem ist das Sturzrisiko sehr hoch. Ein zweiter Sturz in derselben Nacht wäre schlimm, weil sie dann noch mehr Angst bekommt. Tief atmen hilft bei Nervosität, aber nicht bei echter Orthostase, denn der Blutdruck steigt davon nicht. Stattdessen: Sofort hinsetzen, prüfen, 2. Person holen. Beim nächsten Mal: Bei Schwindel immer zuerst Sicherheit — setzen, dann denken.",
             isCorrect: false,
           },
         ],

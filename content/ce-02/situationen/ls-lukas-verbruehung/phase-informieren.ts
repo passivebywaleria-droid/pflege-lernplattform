@@ -183,14 +183,34 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
         body: "Du hast dich vorgestellt. Sandra atmet hörbar aus. Du bittest sie zu erzählen.\n\nSandra berichtet: **S** = Verbrühung linker Arm + Thorax, heute 09:20 Uhr. **B** = Lukas 2,5 J., bisher gesund, keine Vorerkrankungen, keine Allergien, U-Heft liegt vor. **A** = KUSS 8/10 bei Aufnahme, Schmerzmittel i.v. bereits verabreicht, provisorische Abdeckung angelegt. **R** = Aufnahme + Wundversorgung + Flüssigkeitsbilanz + Kinderschutz-Screening.\n\nWas Sandra als erstes erzählt: \"Ich hab nur kurz nicht hingeschaut. Eine Sekunde. Das war alles meine Schuld.\"\n\nWichtig — und das sagst du Sandra jetzt: **\"Sie haben das schnell und richtig gemacht.\"** Sandra hat die nasse Kleidung sofort entfernt, kurz lokal mit lauwarmem Wasser gekühlt (~8 Min) und Lukas dann warm zugedeckt — genau das ist nach aktueller DGV/GNPI-Empfehlung der Standard für Kleinkinder. Bei Kindern unter 8 Jahren bzw. >10 % KOF gilt: nur kurz lokal kühlen (max. 10 Min), lauwarmes Wasser (~20 °C), Wärmeerhalt am Restkörper — sonst droht Hypothermie und der Schock verstärkt sich. Das ist keine Beruhigung aus der Luft — das ist eine fachliche Rückmeldung. Sandra muss das wissen, und Kevin auch. Dieser Satz ist Kommunikation — nicht nur Befund.",
         fallbezug:
           "Lukas K., 2,5 J., Verbrühung Grad 2a ~15 % KOF linker Arm + Thorax. Du bist Pflegeschüler/in im 2. Ausbildungsdrittel auf der Kinderstation. Praxisanleiterin Kathrin kommt in 5 Minuten.",
-        glossarBegriffe: ["SBAR", "KOF (Körperoberfläche)", "KUSS-Skala"],
+        glossarBegriffe: [
+          "SBAR",
+          "KOF (Körperoberfläche)",
+          "KUSS-Skala",
+          "KUSS",
+          "Flüssigkeitsbilanz",
+          "Kinderschutz-Screening",
+          "Grad 2a",
+          "Kommunikation",
+          "Schmerzmittel",
+        ],
       },
       contentB1: {
         title: "Was Sandra erzählt",
         body: "Du hast dich vorgestellt. Sandra erzählt:\n\nLukas hat heute Morgen um 9:20 Uhr eine Teetasse vom Tisch gezogen. Der heiße Tee ist auf seinen linken Arm und Oberkörper gefallen. Sandra hat sofort die nasse Kleidung ausgezogen. Dann hat sie die Stelle kurz mit lauwarmem Wasser gekühlt — etwa 8 Minuten, nur lokal. Dann hat sie Lukas warm zugedeckt und den Notruf gerufen.\n\nWichtig: Du sagst Sandra jetzt: **\"Sie haben das schnell und richtig gemacht.\"** Bei kleinen Kindern darf man nicht zu lange kühlen. Kinder kühlen schnell aus — das ist gefährlich (Hypothermie = zu kalter Körper). Die Regel: kurz lokal kühlen (max. 10 Minuten), lauwarmes Wasser, Restkörper warm halten. Sandra hat das genau so gemacht. Sandra braucht das zu hören.\n\nLukas hat keine Vorerkrankungen. Er hat keine Allergien. Das Impfheft liegt vor. Er hat in der Notaufnahme schon Schmerzmittel in die Vene bekommen (i.v.). Der Verband wurde schon angelegt.",
         fallbezug:
           "Lukas K., 2,5 J., Verbrühung Grad 2a. Du bist Schüler/in im 2. Ausbildungsdrittel auf der Kinderstation.",
-        glossarBegriffe: ["KUSS-Skala", "KOF (Körperoberfläche)", "Hypothermie"],
+        glossarBegriffe: [
+          "KUSS-Skala",
+          "KUSS",
+          "KOF (Körperoberfläche)",
+          "Hypothermie",
+          "Flüssigkeitsbilanz",
+          "Kinderschutz-Screening",
+          "Grad 2a",
+          "Kommunikation",
+          "Schmerzmittel",
+        ],
       },
     },
 
@@ -218,13 +238,13 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
       transition: "Mit diesem Wissen gehst du jetzt ins Gespräch. Kevin wird laut werden — du bist vorbereitet.",
       contentC1: {
         title: "Kinderschutz-Screening — Standard, nicht Verdacht",
-        body: "",
-        glossarBegriffe: ["§ 4 KKG", "§ 8a SGB VIII", "Kinderschutz-Screening", "Kindeswohlgefährdung"],
+        body: "**Kinderschutz-Screening** = systematische Abklärung bei jeder Verbrühung eines Kindes unter 6 Jahren mit über 10 % KOF (§ 4 KKG 2012). Es ist Standard, kein Verdacht. **Ressourcen** = familiäre Stärken und Unterstützungsmöglichkeiten (z.B. Großeltern, Hebamme, Erziehungsberatung) — die Sozialarbeiterin fragt: \"Was habt ihr, was hilft euch?\" — nicht: \"Was habt ihr falsch gemacht?\". **Kindeswohlgefährdung** = konkrete Gefahr für das körperliche, geistige oder seelische Wohl des Kindes (§ 8a SGB VIII).",
+        glossarBegriffe: ["§ 4 KKG", "§ 8a SGB VIII", "Kinderschutz-Screening", "Kindeswohlgefährdung", "Ressourcen"],
       },
       contentB1: {
         title: "Kinderschutz-Screening — was ist das?",
-        body: "",
-        glossarBegriffe: ["§ 4 KKG", "Kinderschutz-Screening"],
+        body: "**Kinderschutz-Screening** = standardmäßige Prüfung bei jedem kleinen Kind mit Verbrühung. Standard, kein Verdacht. **Ressourcen** = was hilft der Familie (Oma, Opa, Beratung). Frau Fink fragt: \"Was hilft euch?\". **Kindeswohlgefährdung** = echte Gefahr für das Kind.",
+        glossarBegriffe: ["§ 4 KKG", "Kinderschutz-Screening", "Ressourcen"],
       },
       inlineWissen: {
         bausteinRef: "pflegeprozess-kinderschutz-screening",
@@ -304,9 +324,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Du erklärst Sandra und Kevin, dass bei jeder Verbrühung eines Kleinkindes ein standardisiertes Gespräch mit einer Sozialarbeiterin stattfindet. Kevin hört das. Er wird sofort laut:",
+              "Du erklärst Sandra und Kevin, dass bei jeder Verbrühung eines Kleinkindes ein standardisiertes Gespräch mit einer Sozialarbeiterin stattfindet. Kevin hört das. Er wird sofort laut.\n\n\"Was soll das? Beschuldigen Sie uns jetzt?\"",
             contextB1:
-              "Du sagst Kevin und Sandra: Es kommt ein Gespräch zum Kinderschutz. Das ist bei jedem kleinen Kind mit Verbrühung so. Kevin hört das. Er reagiert sofort:",
+              "Du sagst Kevin und Sandra: Es kommt ein Gespräch zum Kinderschutz. Das ist bei jedem kleinen Kind mit Verbrühung so. Kevin hört das. Er reagiert sofort.\n\n\"Was soll das? Beschuldigen Sie uns jetzt?\"",
             speaker: "Kevin",
             options: [
               {
@@ -353,8 +373,8 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
           },
           {
             context:
-              "Kevin hat gefragt: 'Was bedeutet das jetzt praktisch?' Du erklärst:",
-            contextB1: "Kevin fragt: 'Was bedeutet das für uns?' Du erklärst:",
+              "Kevin hat gefragt:\n\n\"Was bedeutet das jetzt praktisch?\"",
+            contextB1: "Kevin fragt:\n\n\"Was bedeutet das für uns?\"",
             speaker: "Du",
             options: [
               {
@@ -418,9 +438,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_INFORMIEREN: SituationsPhase = {
                   "Sandra zieht sich zurück. \"Okay.\" Sie schaut weg.",
                 score: 0,
                 feedback:
-                  "Du weißt mehr als du sagst. Sandra hat etwas Falsches getan? Nein — sie hat alles richtig gemacht. Das weißt du aus dem Unfallhergang. Eine Abschiebung an Frau Fink lässt Sandra mit ihrer Angst allein. Das schadet dem Vertrauen.",
+                  "Du hast Sandra ernst genommen — das ist gut. Aber du weißt mehr als du sagst, denn aus dem Unfallhergang ist klar: Sandra hat alles richtig gemacht (sofort Kühlen, Notruf). Stattdessen alles an Frau Fink abzuschieben lässt Sandra mit ihrer Angst allein und schadet dem Vertrauen, weil sie den Eindruck bekommt, du hieltest etwas zurück. Beim nächsten Mal: bestätige fachlich, was richtig war, und erkläre dann, dass das Screening Standard ist.",
                 feedbackB1:
-                  "Du weißt mehr. Sandra hat alles richtig gemacht — das weißt du schon. Sage es ihr. Sonst bleibt sie mit ihrer Angst allein.",
+                  "Du hast Sandra ernst genommen — gut. Aber du weißt mehr: Sandra hat alles richtig gemacht (sofort Kühlen, Notruf). Stattdessen abzuschieben lässt sie mit ihrer Angst allein, weil sie denkt, du sagst nicht alles. Beim nächsten Mal: bestätige zuerst, was sie richtig gemacht hat — dann erkläre das Screening.",
               },
             ],
           },

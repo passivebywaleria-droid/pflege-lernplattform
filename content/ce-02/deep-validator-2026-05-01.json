@@ -1,0 +1,218 @@
+[
+  {
+    "situationId": "frau-m-nacht-sturz",
+    "totalSteps": 46,
+    "findings": [
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase1/ce02-frau-m-info-01-uebergabe-sbar",
+        "message": "Explainer verwendet Fachbegriff \"Sturz\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase1/ce02-frau-m-info-01-uebergabe-sbar",
+        "message": "Explainer verwendet Fachbegriff \"Parkinson\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase1/ce02-frau-m-info-01-uebergabe-sbar",
+        "message": "Explainer verwendet Fachbegriff \"Pneumonie\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase1/ce02-frau-m-info-01-uebergabe-sbar",
+        "message": "Explainer verwendet Fachbegriff \"SBAR\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase1/ce02-frau-m-info-01-uebergabe-sbar",
+        "message": "Explainer verwendet Fachbegriff \"Übergabe\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase1/ce02-frau-m-info-01-uebergabe-sbar",
+        "message": "Explainer verwendet Fachbegriff \"Assessment\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase1/ce02-frau-m-info-01-uebergabe-sbar",
+        "message": "Explainer verwendet Fachbegriff \"ansprechbar\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase1/ce02-frau-m-info-01-uebergabe-sbar",
+        "message": "Explainer verwendet Fachbegriff \"Pflege\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase1/ce02-frau-m-info-01-uebergabe-sbar",
+        "message": "Explainer verwendet Fachbegriff \"Arzt\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase2/ce02-frau-m-beob-02-zolpidem-erklärt",
+        "message": "Explainer verwendet Fachbegriff \"Sturz\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase2/ce02-frau-m-beob-02-zolpidem-erklärt",
+        "message": "Explainer verwendet Fachbegriff \"Parkinson\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase2/ce02-frau-m-beob-02-zolpidem-erklärt",
+        "message": "Explainer verwendet Fachbegriff \"Sturzrisiko\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase2/ce02-frau-m-beob-02-zolpidem-erklärt",
+        "message": "Explainer verwendet Fachbegriff \"Halbwertszeit\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase2/ce02-frau-m-beob-06-patient-zitat-kontext",
+        "message": "Explainer verwendet Fachbegriff \"Sturz\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase2/ce02-frau-m-beob-06-patient-zitat-kontext",
+        "message": "Explainer verwendet Fachbegriff \"Risikofaktor\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase2/ce02-frau-m-beob-06-patient-zitat-kontext",
+        "message": "Explainer verwendet Fachbegriff \"Vitalzeichen\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase2/ce02-frau-m-beob-06-patient-zitat-kontext",
+        "message": "Explainer verwendet Fachbegriff \"Pneumonie\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase2/ce02-frau-m-beob-06-patient-zitat-kontext",
+        "message": "Explainer verwendet Fachbegriff \"Demenz\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase2/ce02-frau-m-beob-06-patient-zitat-kontext",
+        "message": "Explainer verwendet Fachbegriff \"Pflege\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase2/ce02-frau-m-beob-06-patient-zitat-kontext",
+        "message": "Explainer verwendet Fachbegriff \"Risiko\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase2/ce02-frau-m-beob-06-patient-zitat-kontext",
+        "message": "Explainer verwendet Fachbegriff \"Blutdruck\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase3/ce02-frau-m-plan-04-angst-adressieren",
+        "message": "Explainer verwendet Fachbegriff \"SBAR\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase3/ce02-frau-m-plan-04-angst-adressieren",
+        "message": "Explainer verwendet Fachbegriff \"Sturzrisiko\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase3/ce02-frau-m-plan-04-angst-adressieren",
+        "message": "Explainer verwendet Fachbegriff \"Bewegung\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase3/ce02-frau-m-plan-04-angst-adressieren",
+        "message": "Explainer verwendet Fachbegriff \"Arzt\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase3/ce02-frau-m-plan-04-angst-adressieren",
+        "message": "Explainer verwendet Fachbegriff \"Ursache\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase4/ce02-frau-m-dur-iw-trochanter-major",
+        "message": "Explainer verwendet Fachbegriff \"Trochanter\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase4/ce02-frau-m-dur-06-beratung-angst",
+        "message": "Explainer verwendet Fachbegriff \"Hüftprotektor\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase4/ce02-frau-m-dur-06-beratung-angst",
+        "message": "Explainer verwendet Fachbegriff \"Nachtlicht\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase4/ce02-frau-m-dur-06-beratung-angst",
+        "message": "Explainer verwendet Fachbegriff \"Arzt\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase4/ce02-frau-m-dur-06-beratung-angst",
+        "message": "Explainer verwendet Fachbegriff \"Ursache\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase4/ce02-frau-m-dur-06-beratung-angst",
+        "message": "Explainer verwendet Fachbegriff \"Aufklärung\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase5/ce02-frau-m-eval-02-patientensicht",
+        "message": "Explainer verwendet Fachbegriff \"passiv\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase5/ce02-frau-m-eval-02-patientensicht",
+        "message": "Explainer verwendet Fachbegriff \"Aufklärung\" im body, aber nicht in glossarBegriffe gelistet."
+      },
+      {
+        "ruleId": "B-01",
+        "severity": "NIEDRIG",
+        "location": "phase5/ce02-frau-m-eval-02-patientensicht",
+        "message": "Explainer verwendet Fachbegriff \"Tochter\" im body, aber nicht in glossarBegriffe gelistet."
+      }
+    ]
+  }
+]

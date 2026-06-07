@@ -14,6 +14,60 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
   kontextB1:
     "Du bist kurz im Stationszimmer. Du weißt jetzt: Druckwunde Kategorie 1 am Steißbein. Thrombose-Risiko hoch. Schmerzen NRS 5–6. Heute soll sie aufstehen. Frau Wendt fragt dich: 'Was machst du zuerst?'",
   kernSteps: [
+    // InlineWissen — Analgesie + Wirkzeit + Timing-Regel
+    // Position: VOR Step 3.1 (MC Schmerzmittel zuerst) — definiert „Wirkzeit" und
+    // erklärt warum Analgesie VOR Mobilisation kommt. Schüler braucht das Konzept
+    // bevor er die richtige Reihenfolge wählt.
+    {
+      stepId: "ce02-yilmaz-plan-00b-analgesie-mobilisation",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 3,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP (2020): Expertenstandard Erhaltung und Förderung der Mobilität in der Pflege",
+        "DNQP (2020): Expertenstandard Schmerzmanagement in der Pflege",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-plan-analgesie-timing",
+      tag: "pflege",
+      themaPrimaer: "mobilisation",
+      themenSekundaer: ["schmerz"],
+      transition: "Du weißt: Erst das Schmerzmittel, dann das Aufstehen. Was tust du also ZUERST?",
+      contentC1: {
+        title: "Schmerzmittel VOR Mobilisation — warum Timing alles entscheidet",
+        body: "",
+        glossarBegriffe: ["Analgesie", "Metamizol", "Wirkzeit", "Mobilisation"],
+      },
+      contentB1: {
+        title: "Erst Schmerzmittel — dann Aufstehen",
+        body: "",
+        glossarBegriffe: ["Schmerzmittel", "Wirkzeit"],
+      },
+      inlineWissen: {
+        bausteinRef: "mobilisation-analgesie-timing",
+        storyAufhaenger:
+          "Gestern ist Frau Yilmaz' Aufstehversuch bei NRS 7 gescheitert. Heute willst du es besser machen. Aber was war gestern der Fehler? Nicht der Aufstehversuch selbst — sondern das Timing. Schmerz und Mobilisation hängen untrennbar zusammen.",
+        storyAufhaengerB1:
+          "Gestern hat Frau Yilmaz versucht aufzustehen. Es hat nicht geklappt — die Schmerzen waren zu stark. Was lief falsch? Das Schmerzmittel kam zu spät.",
+        kerntext:
+          "**Wirkzeit** = die Zeit zwischen der Einnahme eines Medikaments und seinem messbaren Wirkungs-Eintritt. Bei oralen Schmerzmitteln meist 30–60 Minuten.\n\n**Timing-Regel:** Analgesie muss **BEVOR** die Mobilisation beginnt wirken — nicht gleichzeitig, nicht danach.\n\n**Bei Frau Yilmaz:**\n• Metamizol 500 mg oral — Wirkzeit ca. 30 Minuten\n• Ibuprofen 400 mg bei Bedarf — Wirkzeit ca. 30–60 Minuten\n\n**Die Planung:** Schmerzmittel-Status um 7:30 Uhr prüfen (wurde die Morgen-Medikation gegeben?). Falls nicht: sofort nachholen. Dann 30 Minuten warten. Dann NRS messen. Erst bei NRS ≤ 5: Mobilisation starten.\n\n**Warum das so wichtig ist:**\n• Schmerz hemmt Eigenbewegung — ohne Analgesie verkrampft Frau Yilmaz\n• Verkrampfung erhöht Sturzrisiko und Luxationsgefahr\n• Gescheiterter Versuch zerstört Vertrauen — der nächste wird noch schwieriger\n\nDer DNQP 2020 nennt das explizit: **Schmerzmanagement ist Voraussetzung für erfolgreiche Mobilisation.**",
+        kerntextB1:
+          "**Wirkzeit** = die Zeit, bis ein Schmerzmittel wirkt. Bei Metamizol: etwa 30 Minuten.\n\n**Regel:** Schmerzmittel BEVOR du aufstehst. Nicht gleichzeitig.\n\n**Bei Frau Yilmaz:**\n• Metamizol — braucht 30 Minuten bis es wirkt\n• Ibuprofen — braucht 30-60 Minuten\n\n**Was du tust:** Morgens prüfen: Hat sie das Schmerzmittel bekommen? Wenn nicht: jetzt geben. Dann 30 Minuten warten. Dann Schmerz messen. Erst wenn NRS 5 oder weniger: aufstehen.\n\n**Warum?** Wenn sie starke Schmerzen hat, verkrampft sie sich. Dann fällt sie leichter. Und das Gelenk kann sich lösen. Und: Ein gescheiterter Versuch macht es beim nächsten Mal noch schwerer.",
+        faustregel:
+          "**Erst wirken lassen, dann mobilisieren** — 30 Minuten Geduld sparen Stunden Vertrauensverlust.",
+        faustregelB1:
+          "Erst Schmerzmittel. Dann 30 Minuten warten. Dann aufstehen. Nicht andersrum.",
+        karteikarte: {
+          vorderseite:
+            "Warum ist der gestrige Aufstehversuch bei Frau Yilmaz gescheitert — und was machst du heute anders?",
+          rueckseite:
+            "Gestern: NRS 7 beim Aufstehen — Analgesie nicht rechtzeitig wirksam. Heute: Metamizol-Status prüfen, ggf. nachholen, 30 Min warten (Wirkzeit), NRS messen, erst bei ≤ 5 mobilisieren. DNQP 2020: Schmerzmanagement ist Voraussetzung für erfolgreiche Mobilisation. Faustregel: **Erst wirken lassen, dann mobilisieren.**",
+        },
+      },
+    },
+
     // Step 3.1 — MC: Schmerzmittel VOR Mobilisation
     {
       stepId: "ce02-yilmaz-plan-01-schmerz-zuerst",
@@ -72,6 +126,59 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
               "Physiotherapie und Pflege arbeiten zusammen — aber die Planung liegt bei dir. Frau Yilmaz' Angst, ihre Schmerzen, Mustafa — das bist du, die das anspricht.",
           },
         ],
+      },
+    },
+
+    // InlineWissen — PESR-Schema
+    // Position: VOR Step 3.2 (Cloze PESR) — definiert PESR und PESR-Schema
+    // bevor der Schüler die Lücken füllt.
+    {
+      stepId: "ce02-yilmaz-plan-01b-pesr-schema",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Fiechter V./Meier M. (1981): Pflegeprozess — 6-Schritte-Modell",
+        "DNQP (2020): Expertenstandard Erhaltung und Förderung der Mobilität",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-plan-pesr-schema",
+      tag: "pflege",
+      themaPrimaer: "pflegeprozess",
+      themenSekundaer: ["dokumentation"],
+      transition: "Du kennst PESR. Jetzt formulierst du das Pflegeziel für Frau Yilmaz.",
+      contentC1: {
+        title: "PESR — vier Buchstaben, ein klares Pflegeziel",
+        body: "",
+        glossarBegriffe: ["PESR", "PESR-Schema", "Pflegeziel", "Etiologie", "Ressource"],
+      },
+      contentB1: {
+        title: "Vier Buchstaben für ein gutes Pflegeziel",
+        body: "",
+        glossarBegriffe: ["PESR", "Pflegeziel", "Ressource"],
+      },
+      inlineWissen: {
+        bausteinRef: "pflegeprozess-pesr-schema",
+        storyAufhaenger:
+          "Du musst gleich ein Pflegeziel für Frau Yilmaz formulieren. Aber wie schreibt man ein Pflegeziel so, dass es nachvollziehbar UND messbar ist? In Deutschland nutzt die Pflege dafür das PESR-Schema.",
+        storyAufhaengerB1:
+          "Du sollst ein Pflegeziel schreiben. Damit andere im Team es verstehen, gibt es vier Buchstaben — PESR. Was bedeuten sie?",
+        kerntext:
+          "**PESR** = vier Buchstaben, die strukturieren wie ein Pflegeziel formuliert wird (Fiechter/Meier 1981, deutscher Standard).\n\n**PESR-Schema** = das vollständige Format mit allen vier Komponenten:\n\n• **P — Problem**: Was ist das pflegerische Problem? (z.B. erhöhtes Dekubitus-Risiko)\n\n• **E — Etiologie**: Woher kommt das Problem? Welche Ursachen oder Risikofaktoren sind aktiv? (z.B. Bettlägerigkeit + Adipositas)\n\n• **S — Symptome**: Woran erkennt man das Problem konkret? Welche Zeichen siehst du? (z.B. nicht wegdrückbare Rötung am Steißbein)\n\n• **R — Ressourcen**: Was kann die Patientin trotz des Problems leisten? Was sind ihre Stärken?\n\n**Ressource** = jede Fähigkeit, jedes Mittel oder jede Unterstützung, auf die in der Pflege aufgebaut werden kann (Eigenbewegung, Familie, Sprache, Verstehen, Kooperation).\n\n**Etiologie** = Lehre von den Ursachen einer Erkrankung oder eines pflegerischen Problems.\n\nNach PESR folgt das eigentliche **Pflegeziel** — formuliert als Soll-Zustand mit Zeit-Bezug und Messbarkeit (z.B. \"Bis zur Entlassung keine Verschlechterung des Dekubitus Kategorie I\").",
+        kerntextB1:
+          "**PESR** = vier Buchstaben für ein gutes Pflegeziel. Das **PESR-Schema** ist die deutsche Standard-Form.\n\n• **P — Problem**: Was ist das Problem?\n• **E — Etiologie**: Woher kommt es?\n• **S — Symptome**: Woran sieht man es?\n• **R — Ressourcen**: Was kann der Mensch trotzdem?\n\n**Ressource** = was ein Mensch trotz Krankheit noch kann oder hat (z.B. spricht klar, hat Familie, will mitmachen).",
+        faustregel:
+          "**Problem, Etiologie, Symptome, Ressourcen — vier Sichten auf einen Menschen.** Das macht ein Pflegeziel nachvollziehbar.",
+        faustregelB1:
+          "Vier Buchstaben: P-E-S-R. Problem, Ursache, Zeichen, Stärken. Damit ist ein Pflegeziel klar.",
+        karteikarte: {
+          vorderseite:
+            "Was bedeutet PESR? Nenne ein Beispiel zu jedem Buchstaben für Frau Yilmaz.",
+          rueckseite:
+            "P = Problem (erhöhtes Dekubitus-Risiko). E = Etiologie (3 Tage Bettruhe + Adipositas + Diabetes). S = Symptome (nicht wegdrückbare Rötung Steißbein, Kategorie I). R = Ressource (kooperativ, gibt Schmerzen an, vollständig orientiert). PESR-Schema nach Fiechter/Meier 1981.",
+        },
       },
     },
 
@@ -192,14 +299,20 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_PLANEN: SituationsPhase = {
         body: "Frau Yilmaz sagt: \"Die Frau von der Physiotherapie hat auch gesagt, ich soll. Aber ich habe Angst. Was wenn es kaputt geht?\"\n\nFrau Yilmaz macht sich Sorgen. Und Mustafa macht sich Sorgen. Er hat seine Frau seit Jahrzehnten beschützt — er versteht nicht, warum Fremde sie jetzt bewegen sollen, wenn sie Schmerzen hat.\n\nDu kannst ihn nicht ausschließen. Aber du kannst ihn einbeziehen — auch ohne gemeinsame Sprache.\n\n**Drei Möglichkeiten der Kommunikation mit Mustafa:**\n\n**1. Über Frau Yilmaz:** Bitte sie, ihm kurz zu erklären was heute geplant ist. Gib ihr ein einfaches Satz-Angebot: \"Bitte sagen Sie Ihrem Mann: Die Pflegerin hilft mir heute aufzustehen. Das ist wichtig für meine Beine.\"\n\n**2. Nonverbal:** Aufstehen zeigen — langsam vordemonstrieren, was du mit Frau Yilmaz vorhast. Lächeln, Augenkontakt, ruhige Gesten. Mustafa versteht Körpersprache.\n\n**3. Dolmetscher-Service:** Wenn die Situation kritisch wird oder Mustafa aktiv interveniert — dann Dolmetscher-Service aktivieren (Klinik-Standard, Telefondolmetsch).\n\n**Didaktische Botschaft:** Interkulturelle Kommunikation ist nicht nur eine Frage der Sprache. Sie ist eine Frage von Respekt, Tempo und Körpersprache. Mustafa ist kein Problem — er ist eine Ressource, wenn du ihn richtig einbindest.",
         fallbezug:
           "Mustafa sitzt täglich am Bett. Er spricht kein Deutsch. Er ist kein Hindernis — er ist ein Teil der Pflege. Wie du ihn einbeziehst, entscheidet mit, ob der Aufstehversuch heute gelingt.",
-        glossarBegriffe: ["Interkulturelle Kommunikation", "Dolmetscher-Service", "Angehörige"],
+        glossarBegriffe: [
+          "Interkulturelle Kommunikation", "Dolmetscher-Service", "Angehörige",
+          "Physiotherapie", "Pflege", "Ressource", "Kommunikation", "Problem",
+        ],
       },
       contentB1: {
         title: "Mustafa einbeziehen — auch ohne Deutsch",
         body: "Frau Yilmaz sagt: \"Ich habe Angst. Was wenn es kaputt geht?\"\n\nMustafa macht sich Sorgen um seine Frau. Er spricht kein Deutsch. Er versteht nicht, warum du sie bewegen willst.\n\n**Drei Möglichkeiten:**\n\n**1. Über Frau Yilmaz:** Bitte sie, Mustafa zu erklären was passiert. Sie kann ihm sagen: \"Die Pflegerin hilft mir aufzustehen. Das ist wichtig für meine Beine.\"\n\n**2. Mit Gesten:** Zeig ihm langsam, was du vorhast. Lächeln, Augenkontakt, ruhige Bewegungen. Er versteht das.\n\n**3. Dolmetscher:** Wenn Mustafa wirklich eingreift — Dolmetscher-Service anrufen.\n\nMustafa ist kein Problem. Er ist ein Unterstützer — wenn du ihn einbeziehst.",
         fallbezug:
           "Mustafa liebt seine Frau. Er macht sich Sorgen. Das ist keine Schwierigkeit — das ist eine Ressource.",
-        glossarBegriffe: ["Dolmetscher", "Gesten", "Angehörige"],
+        glossarBegriffe: [
+          "Dolmetscher", "Gesten", "Angehörige",
+          "Pflege", "Ressource", "Problem",
+        ],
       },
     },
   ],

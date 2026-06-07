@@ -14,6 +14,64 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DOKUMENTIEREN: SituationsPhase = {
   kontextB1:
     "Es ist 16:15 Uhr. Übergabe in 45 Minuten. Du sitzt am Computer. Jetzt schreibst du auf, was heute mit Frau Yilmaz passiert ist. Pflegebericht. Pflegeplan. Übergabe. Was du nicht aufschreibst, weiß das nächste Team nicht.",
   kernSteps: [
+    // InlineWissen — Begriffe für Pflegebericht und Übergabe
+    // Position: VOR Step 6.1 (freetext Pflegebericht) — definiert Begriffe wie
+    // Unterarmgehstützen und Mündliche Übergabe, die im freetext-Step erwartet
+    // werden, aber bisher nicht definiert wurden.
+    {
+      stepId: "ce02-yilmaz-dok-00b-begriffe-pflegebericht",
+      phase: 6,
+      stepType: "inlineWissen",
+      bloomLevel: 1,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Leonard M., Graham S., Bonacum D. (2004): SBAR — BMJ Qual Saf",
+        "DNQP (2020): Expertenstandard Erhaltung und Förderung der Mobilität",
+        "§ 630f BGB (Behandlungsdokumentation)",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-dok-pflegebericht-begriffe",
+      tag: "pflege",
+      themaPrimaer: "dokumentation",
+      themenSekundaer: ["pflegeprozess"],
+      transition: "Du kennst die Begriffe. Jetzt schreibst du den Pflegebericht.",
+      contentC1: {
+        title: "Begriffe für Pflegebericht und Übergabe",
+        body: "",
+        glossarBegriffe: [
+          "Unterarmgehstützen", "Gehhilfe", "Pflegebericht",
+          "Mündliche Übergabe", "Schriftlicher Pflegebericht",
+        ],
+      },
+      contentB1: {
+        title: "Wichtige Wörter zum Aufschreiben",
+        body: "",
+        glossarBegriffe: ["Gehstützen", "Übergabe", "Pflegebericht"],
+      },
+      inlineWissen: {
+        bausteinRef: "dokumentation-pflegebericht-begriffe",
+        storyAufhaenger:
+          "Bevor du den Pflegebericht schreibst und gleich darauf die Übergabe machst, sortieren wir kurz zwei Begriffe, die du gleich brauchst — und die häufig verwechselt werden.",
+        storyAufhaengerB1:
+          "Du schreibst gleich den Bericht und übergibst dann mündlich. Zwei Wörter musst du sicher kennen.",
+        kerntext:
+          "**Unterarmgehstützen** = die in Deutschland am häufigsten genutzte Gehhilfe nach Hüft- oder Knie-Operationen. Sie tragen das Gewicht über den Unterarm (Manschette) und den Handgriff. Bei Frau Yilmaz angeordnet: Teilbelastung rechts max. 20 kg.\n\n**Mündliche Übergabe** = die zeitlich begrenzte (meist 2–5 Min pro Patient), strukturierte Information des Folge-Dienstes durch den abgebenden Dienst. Wird mit dem **schriftlichen Pflegebericht** kombiniert — sie ersetzt ihn nicht (§ 630f BGB).\n\n**Schriftlicher Pflegebericht** = die rechtsverbindliche Dokumentation aller Beobachtungen, Maßnahmen und Verlaufs-Ereignisse einer Schicht. Ohne ihn gilt eine Maßnahme als nicht durchgeführt.",
+        kerntextB1:
+          "**Unterarmgehstützen** = Gehhilfen, die über den Unterarm gehalten werden. Frau Yilmaz darf rechts nur 20 kg drauf.\n\n**Mündliche Übergabe** = wenn du dem nächsten Team kurz erzählst, was wichtig ist (2–5 Minuten).\n\n**Schriftlicher Pflegebericht** = was du aufschreibst. Das ist Pflicht. Was nicht steht, gilt als nicht gemacht.",
+        faustregel:
+          "**Mündlich für das Wichtigste, schriftlich für die Pflicht.** — Beides gehört zusammen, eines ersetzt das andere nicht.",
+        faustregelB1:
+          "Erzählen UND aufschreiben. Beides nötig.",
+        karteikarte: {
+          vorderseite:
+            "Unterscheide: mündliche Übergabe vs. schriftlicher Pflegebericht. Was hat welche Funktion?",
+          rueckseite:
+            "Mündliche Übergabe = kurze, gezielte Information ans Folge-Team (2–5 Min, SBAR-Struktur, das Wichtigste). Schriftlicher Pflegebericht = vollständige rechtsverbindliche Dokumentation (§ 630f BGB), Grundlage für alle weiteren Schichten. Beide ergänzen sich, ersetzen sich nicht.",
+        },
+      },
+    },
+
     // Step 6.1 — Freetext: Pflegebericht schreiben (Haupt-Step)
     {
       stepId: "ce02-yilmaz-dok-01-pflegebericht-frei",

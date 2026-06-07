@@ -257,7 +257,7 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_EVALUIEREN: SituationsPhase = {
       contentC1: {
         title: "Frau Schmidts Abschlusszitat",
         body: "> \"Wissen Sie, was mich überrascht hat? Dass mein Essen so viel mit dem Zucker zu tun hat. Ich hab gedacht, das ist einfach mein Schicksal.\"\n\nFrau Schmidts Aussage ist mehr als ein Dank — sie zeigt, dass Informationsvermittlung und Beziehungsaufbau zusammen wirken. \"Ich hab gedacht, das ist mein Schicksal\" signalisiert erlernte Hilflosigkeit — das Gegenteil von dem, was Pflege anstrebt. \"Das kann man ändern\" ist der Wendepunkt: Wenn Menschen verstehen warum, entstehen Motivation und Eigenverantwortung. Das ist Pflegeaufgabe.",
-        glossarBegriffe: ["Erlernte Hilflosigkeit", "Gesundheitskompetenz"],
+        glossarBegriffe: ["Erlernte Hilflosigkeit", "Gesundheitskompetenz", "Pflege"],
       },
       contentB1: {
         title: "Frau Schmidt sagt:",
@@ -317,7 +317,10 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_EVALUIEREN: SituationsPhase = {
       stepType: "selfrating",
       bloomLevel: 4,
       kompetenzbereich: "V.1",
-      quellen: [],
+      quellen: [
+        "DNQP (2017): Expertenstandard Ernährungsmanagement zur Sicherung und Förderung der oralen Ernährung in der Pflege",
+        "PflAPrV Anlage 1, Kompetenzbereich II.1 — Reflexion und Begründung pflegerischen Handelns",
+      ],
       track: "basis",
       modus: "checkpoint",
       lernziel: "ce02-schmidt-eval-confidence-nachher",

@@ -36,10 +36,10 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
         "Early morning nursing handover at geriatric psychiatry ward, nurse holding handwritten note, warm morning light, calm atmosphere, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Übergabe von der Nacht",
-        body: "Stationszimmer, 7:15 Uhr.\n\nNachtpflegerin Aylin gibt dir beim Verlassen kurz ein Blatt: \"Hier — das hab ich von Herrn Bauer notiert. Sturzprotokoll angefangen, aber ich hatte keine Zeit mehr.\" Du liest die handschriftlichen Stichworte: Sturz ca. 02:30 Uhr, Flur vor Zimmer 8. Sitzend vorgefunden, ansprechbar. Keine Blutung, keine Deformität. Sehr unruhig, wollte 'zur Arbeit'. Zurück ins Bett gebracht. Schläft jetzt. Einschätzung noch offen. Was weißt du — und was weißt du NICHT?",
+        body: "Stationszimmer, 7:15 Uhr.\n\nNachtpflegerin Aylin gibt dir beim Verlassen kurz ein Blatt: \"Hier — das hab ich von Herrn Bauer notiert. Sturzprotokoll angefangen, aber ich hatte keine Zeit mehr.\" Du liest die handschriftlichen Stichworte: **Sturz** = Ereignis bei dem ein Patient unbeabsichtigt auf Boden oder tiefere Fläche gelangt (DNQP 2022) — ca. 02:30 Uhr, Flur vor Zimmer 8. Sitzend vorgefunden, ansprechbar. Keine Blutung, keine Deformität. Sehr unruhig, wollte 'zur Arbeit'. Zurück ins Bett gebracht. Schläft jetzt. Einschätzung noch offen. Was weißt du — und was weißt du NICHT?",
         fallbezug:
           "Herr Bauer (82, Alzheimer FAST 6a, Pflegegrad 4) ist heute Nacht gestürzt. Du übernimmst ihn in der Frühschicht. Das Assessment der Nacht ist unvollständig.",
-        glossarBegriffe: ["Sturzprotokoll", "Assessment"],
+        glossarBegriffe: ["Sturzprotokoll", "Assessment", "Sturz", "Patient"],
       },
       contentB1: {
         title: "Übergabe von der Nacht",
@@ -74,13 +74,13 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       transition: "Du weißt jetzt: Sturz bei Demenz ist anders. Was steht in der Übergabe — und was fehlt?",
       contentC1: {
         title: "Sturz bei Demenz — was ist hier anders?",
-        body: "",
-        glossarBegriffe: ["Sundowning", "Desorientierung", "Weglauftendenz"],
+        body: "**Sturz** = unbeabsichtigtes Gelangen auf den Boden (DNQP 2022). **Demenz** = erworbene Einschränkung von Gedächtnis, Orientierung und Alltagsfähigkeiten. **Alzheimer-Demenz** = häufigste Demenzform (60-70 %, DGN 2024) mit fortschreitendem Verlust von Gedächtnis, Orientierung und Alltagsfähigkeiten. **Übergabe** = strukturierte Informationsweitergabe zwischen Schichten — bei Frau M. hast du das schon gesehen, hier ist es bei Herrn Bauer dran.",
+        glossarBegriffe: ["Sundowning", "Desorientierung", "Weglauftendenz", "Sturz", "Demenz", "Übergabe", "Alzheimer-Demenz"],
       },
       contentB1: {
         title: "Warum stürzt Herr Bauer?",
-        body: "",
-        glossarBegriffe: ["Sundowning", "Desorientierung"],
+        body: "**Sturz** = ungewollt auf den Boden gelangen. **Demenz** = Gedächtnis und Orientierung sind gestört. **Alzheimer-Demenz** = die häufigste Form von Demenz. **Übergabe** = die Information von der vorigen Schicht.",
+        glossarBegriffe: ["Sundowning", "Desorientierung", "Sturz", "Demenz", "Übergabe", "Alzheimer-Demenz"],
       },
       inlineWissen: {
         bausteinRef: "sturz-prophylaxe-sturz-bei-demenz",
@@ -296,12 +296,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       contentC1: {
         title: "Validation: Wie öffne ich die Tür?",
         body: "Du stehst vor Herrn Bauers Zimmer. Bevor du eintrittst: Was ist der richtige Zugang bei einem Menschen mit Demenz nach einem nächtlichen Sturz? Validation nach Feil arbeitet mit 14 Techniken (Zentrieren, Reformulieren, Spiegeln, Berührung u. a.). Für die Praxis lassen sich daraus folgende Grundprinzipien ableiten (vereinfacht nach Feil 2012):\n\n1. Gefühle ernst nehmen — nicht korrigieren. Sag nicht: \"Sie sind nicht in der Werkstatt.\" Das erhöht Angst.\n2. In der emotionalen Realität des Menschen ankommen — wenn er denkt, er muss arbeiten, höre zu.\n3. Ruhige Stimme und Augenhöhe — nicht von oben sprechen.\n4. Namen benutzen: \"Herr Bauer\" — persönlich, nicht abstrakt.\n5. Kurze, einfache Sätze — nicht erklären, nicht argumentieren.\n\nQuelle: Feil N. / de Klerk-Rubin V. (2012): Validation. Reinhardt-Verlag.",
-        glossarBegriffe: ["Validation", "Demenz", "Desorientierung"],
+        glossarBegriffe: ["Validation", "Demenz", "Desorientierung", "Sturz"],
       },
       contentB1: {
         title: "Wie gehe ich zu Herrn Bauer?",
         body: "Du gehst gleich zu Herrn Bauer. Wie machst du das richtig? Das nennt man Validation (= den Menschen so nehmen, wie er ist). Vereinfacht nach Naomi Feil — 5 Grundregeln:\n\n1. Nimm seine Gefühle ernst. Sage nicht: \"Du bist nicht in der Werkstatt.\" Das macht Angst.\n2. Gehe in seine Welt. Er glaubt, er muss arbeiten? Höre zu.\n3. Sprich ruhig. Gehe auf Augenhöhe.\n4. Sage seinen Namen: \"Herr Bauer\".\n5. Sprich kurze, einfache Sätze.\n\nBeispiel richtig: \"Herr Bauer, ich sehe, du hast heute viel zu tun. Ich bin [dein Name]. Ich helfe dir heute früh.\"",
-        glossarBegriffe: ["Validation", "Demenz"],
+        glossarBegriffe: ["Validation", "Demenz", "Sturz"],
       },
     },
 
@@ -387,9 +387,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Herr Bauer schaut dich an, seine Stimme ist laut und aufgewühlt. Er sagt:",
+              "Herr Bauer schaut dich an, seine Stimme ist laut und aufgewühlt.\n\n\"Wer sind Sie? Ich muss zur Arbeit! Die Bestellung kommt heute!\"",
             contextB1:
-              "Herr Bauer schaut dich an. Er spricht laut. Er sagt:",
+              "Herr Bauer schaut dich an. Er spricht laut.\n\n\"Wer sind Sie? Ich muss zur Arbeit! Die Bestellung kommt heute!\"",
             speaker: "Herr Bauer",
             options: [
               {
@@ -402,9 +402,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
                   "Herr Bauer schreit lauter: \"Nein! Ich muss raus!\" Er will aufstehen.",
                 score: 0,
                 feedback:
-                  "Realitätsorientierung bei schwerer Demenz verstärkt Angst und Agitation. Du korrigierst seine Realität — das fühlt sich für ihn wie ein Angriff an. Validation-Prinzip: Gefühle ernst nehmen statt korrigieren.",
+                  "Du hast versucht, ihm Sicherheit zu geben — guter Ansatz. Allerdings verstärkt Realitätsorientierung bei schwerer Demenz Angst und Agitation, weil du seine erlebte Realität korrigierst und sich das für ihn wie ein Angriff anfühlt. Stattdessen gilt das Validation-Prinzip: Gefühle ernst nehmen statt korrigieren — deshalb sagst du \"du hast viel zu tun\" und nicht \"du bist im Krankenhaus\".",
                 feedbackB1:
-                  "Das ist falsch bei Demenz. Wenn du seine Realität korrigierst, macht er mehr Angst. Er versteht die Korrektur nicht — er fühlt nur Bedrohung.",
+                  "Du wolltest ihm helfen — guter Ansatz. Aber bei Demenz macht Korrigieren mehr Angst, weil er die Korrektur nicht versteht. Stattdessen: Seine Welt anerkennen. Deshalb sagst du \"du hast viel zu tun\" — das beruhigt.",
               },
               {
                 text: "\"Herr Bauer, ich sehe — heute haben Sie viel zu tun. Ich bin [Name]. Ich helfe Ihnen heute früh und bleibe ein bisschen bei Ihnen.\"",
@@ -459,13 +459,13 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_INFORMIEREN: SituationsPhase = {
       transition: "Du kennst jetzt die Stufen. Herr Bauer ist FAST 6a \u2014 was das für die Pflege bedeutet, zeigen die Flipcards.",
       contentC1: {
         title: "Alzheimer-Demenz und die FAST-Skala",
-        body: "",
-        glossarBegriffe: ["Alzheimer-Demenz", "FAST-Skala", "Demenzstadien"],
+        body: "**Alzheimer-Demenz** = häufigste Demenzform (60-70 %, DGN 2024). **FAST-Skala** = Functional Assessment Staging nach Reisberg 1982, teilt Demenz in 7 Stufen ein. **Pflege** bei FAST 6a = Validation + Basale Stimulation als Hauptzugang.",
+        glossarBegriffe: ["Alzheimer-Demenz", "FAST-Skala", "Demenzstadien", "Pflege", "Demenz", "Assessment", "Validation", "Basale Stimulation"],
       },
       contentB1: {
         title: "Was ist Alzheimer? Wie schwer ist Herr Bauers Demenz?",
-        body: "",
-        glossarBegriffe: ["Alzheimer-Demenz", "FAST-Skala"],
+        body: "**Alzheimer-Demenz** = die häufigste Demenz-Form. **FAST-Skala** = 7 Stufen wie schwer die Demenz ist. **Pflege** bei Stufe 6a: Mehr ueber Berührung und Tonfall, weniger ueber Worte.",
+        glossarBegriffe: ["Alzheimer-Demenz", "FAST-Skala", "Pflege", "Demenz"],
       },
       inlineWissen: {
         bausteinRef: "basale-stimulation-alzheimer-fast",

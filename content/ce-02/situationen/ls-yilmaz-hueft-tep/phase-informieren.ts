@@ -34,10 +34,17 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
         "Nurse reading patient file at nursing station desk, early morning light, calm orthopedic ward, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Übergabe: SBAR für Frau Yilmaz",
-        body: "7:40 Uhr, Stationszimmer der orthopädischen Station.\n\nFrau Wendt hat dir kurz die Übergabe gegeben. Vor dir liegt die verkürzte SBAR-Dokumentation:\n\n**S — Situation:** Frau Yilmaz, Zi. 12, 79 J., 3. post-OP-Tag nach Hüft-TEP rechts (Oberschenkelhalsbruch nach Sturz). Redon-Drainage in situ, Fördermenge heute Morgen 40 ml serös-blutig.\n\n**B — Background:** Diabetes mellitus Typ 2 (orale Antidiabetika), Adipositas (BMI 34). Analgesie: Metamizol 4× tgl., Ibuprofen bei Bedarf. Fondaparinux 2,5 mg s.c. tgl. seit OP-Tag. Lagerungsvorschrift aktiv (Hüftbeugung < 90°, kein Überkreuzen). Sprache: Türkisch/Deutsch (mit Akzent, versteht alles).\n\n**A — Assessment:** Gestern erster Aufstehversuch abgebrochen — Schmerz NRS 7 nach 2 Min. an Bettkante. Haut Steiß und Fersen noch unauffällig laut Nachtdienst. Schlaf unruhig, mehrfach geläutet.\n\n**R — Recommendation:** Heute erneuter Aufstehversuch geplant. Schmerzassessment vor Mobilisation. Ehemann Mustafa anwesend, kommuniziert nur auf Türkisch.\n\nDu hast die Übergabe gelesen. Eine Information fällt dir besonders auf: Der Aufstehversuch ist gestern gescheitert. Bevor du das Zimmer betrittst — was weißt du jetzt über die Herausforderung, die heute vor dir liegt?",
+        body: "7:40 Uhr, Stationszimmer der orthopädischen Station.\n\nFrau Wendt hat dir kurz die Übergabe gegeben. **Übergabe** = strukturierte Weitergabe aller Patienten-Informationen zwischen Schichten (Standard: SBAR). Vor dir liegt die verkürzte SBAR-Dokumentation:\n\n**S — Situation:** Frau Yilmaz, Zi. 12, 79 J., 3. post-OP-Tag nach Hüft-TEP rechts (Oberschenkelhalsbruch nach Sturz). **Hüftgelenk** = Verbindung zwischen Becken und Oberschenkelknochen. Redon-Drainage in situ, Fördermenge heute Morgen 40 ml serös-blutig. **Drainage** = Schlauch der Wundflüssigkeit aus der Wunde absaugt. **Wundflüssigkeit** = Sekret das im Heilungsprozess entsteht. **Serös** = klar, gelblich (= Wundwasser). **Blutig** = rötlich, mit Erythrozyten. **Serös-blutig** = Mischung aus klarem Wundwasser und etwas Blut, normal an Tag 1–3 nach OP.\n\n**B — Background:** Diabetes mellitus Typ 2 (orale Antidiabetika), **Adipositas** = krankhaftes Übergewicht ab BMI 30 (BMI 34). **Analgesie** = Schmerzbehandlung mit Schmerzmitteln. Konkret: **Metamizol** = nicht-opioides Schmerzmittel, 4× tgl. **Schmerzmittel** Ibuprofen bei Bedarf. Fondaparinux 2,5 mg s.c. tgl. seit OP-Tag. **Lagerungsvorschrift** = ärztliche Anordnung welche Körperpositionen nach OP erlaubt sind (hier: Hüftbeugung < 90°, kein Überkreuzen). Sprache: **Türkisch** = Muttersprache von Frau Yilmaz und Mustafa / Deutsch (mit Akzent, versteht alles).\n\n**A — Assessment:** **Assessment** = strukturierte pflegerische Einschätzung. Gestern erster Aufstehversuch abgebrochen — **Schmerz** NRS 7 nach 2 Min. an **Bettkante** = seitlicher Rand des Bettes (Position für Aufrichten und Aufstehen). **Haut** Steiß und Fersen noch unauffällig laut Nachtdienst. Schlaf unruhig, mehrfach geläutet.\n\n**R — Recommendation:** Heute erneuter Aufstehversuch geplant. **Schmerzassessment** = strukturierte Einschätzung der Schmerz-Intensität (z.B. mit NRS) vor **Mobilisation** = jede pflegerische Bewegungs-Förderung von kleinen Lageänderungen bis zum Gehen. Ehemann Mustafa anwesend, kommuniziert nur auf Türkisch.\n\nDu hast die Übergabe gelesen. Eine Information fällt dir besonders auf: Der Aufstehversuch ist gestern gescheitert. Bevor du das Zimmer betrittst — was weißt du jetzt über die Herausforderung, die heute vor dir liegt? Auch das wirst du am Ende dokumentieren — **Dokumentation** = schriftliche Aufzeichnung jeder pflegerischen Beobachtung und Maßnahme (§ 630f BGB).",
         fallbezug:
           "Frau Yilmaz (79, Hüft-TEP Tag 3) wartet auf dich. Der erste Aufstehversuch gestern ist gescheitert. Heute muss es klappen.",
-        glossarBegriffe: ["SBAR", "Hüft-TEP", "Redon-Drainage", "Fondaparinux", "Antikoagulation"],
+        glossarBegriffe: [
+          "SBAR", "Hüft-TEP", "Redon-Drainage", "Fondaparinux", "Antikoagulation",
+          "Übergabe", "Hüftgelenk", "Drainage", "Wundflüssigkeit", "serös", "blutig", "serös-blutig",
+          "Adipositas", "Analgesie (= Schmerzmittel)", "Metamizol", "Schmerzmittel",
+          "Lagerungsvorschrift", "Türkisch", "Assessment", "Schmerz", "Bettkante", "Haut",
+          "Schmerzassessment", "Mobilisation", "Dokumentation", "Analgesie",
+          "BMI", "massnahme", "Sekret",
+        ],
       },
       contentB1: {
         title: "Die Übergabe — was weißt du über Frau Yilmaz?",
@@ -45,6 +52,64 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
         fallbezug:
           "Frau Yilmaz ist 79 Jahre. Vor 3 Tagen wurde sie operiert. Gestern hat das Aufstehen nicht geklappt. Heute versuchst du es mit ihr.",
         glossarBegriffe: ["Hüft-TEP", "Redon-Drainage", "NRS", "Fondaparinux"],
+      },
+    },
+
+    // InlineWissen — Erste Begriffe rund um die Übergabe
+    // Position: VOR Step 1.2 (Prioritäten-MC) — definiert „ankündigen", „Drainage" und
+    // die nonverbalen Kommunikations-Begriffe (Dolmetscher, Dolmetscher-Service, Gesten),
+    // die im MC und im anschließenden Dialog auftauchen.
+    {
+      stepId: "ce02-yilmaz-info-01b-begriffe-uebergabe",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 1,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "DNQP (2020): Expertenstandard Erhaltung und Förderung der Mobilität in der Pflege",
+        "Bundesärztekammer (2018): Leitfaden Sprachmittler im Gesundheitswesen",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-info-begriffe-uebergabe",
+      tag: "pflege",
+      themaPrimaer: "kommunikation",
+      themenSekundaer: ["pflegeprozess"],
+      transition: "Du kennst jetzt die wichtigsten Begriffe der Übergabe. Was tust du als erstes, wenn du Frau Yilmaz' Zimmer betrittst?",
+      contentC1: {
+        title: "Begriffe der Übergabe — was bedeutet was?",
+        body: "",
+        glossarBegriffe: [
+          "ankündigen", "Drainage", "Dolmetscher", "Dolmetscher-Service", "Gesten",
+          "nonverbale Kommunikation", "Nonverbale Kommunikation", "interkulturell",
+          "Mobilisation", "Übergabe",
+        ],
+      },
+      contentB1: {
+        title: "Wichtige Begriffe — kurz erklärt",
+        body: "",
+        glossarBegriffe: ["Drainage", "Dolmetscher", "Gesten", "Übergabe"],
+      },
+      inlineWissen: {
+        bausteinRef: "kommunikation-begriffe-uebergabe",
+        storyAufhaenger:
+          "In der Übergabe und im nächsten Schritt tauchen Begriffe auf, die du sicher verstehen musst — sonst kannst du Frau Yilmaz weder gut anleiten noch ihren Mann respektvoll einbeziehen.",
+        storyAufhaengerB1:
+          "Bevor du zu Frau Yilmaz gehst, schauen wir uns ein paar Wörter an. Du brauchst sie gleich.",
+        kerntext:
+          "**ankündigen** = einer Patientin oder einem Angehörigen vorher sagen, was du als nächstes tust und warum. Das ist Pflicht (Selbstbestimmungsrecht, Art. 2 GG; Information vor Maßnahme).\n\n**Drainage** = Kunststoff-Schlauch, der Wundflüssigkeit aus der Wunde absaugt, damit sich kein Wund-Sekret staut. Bei Frau Yilmaz: Redon-Drainage an der Hüfte.\n\n**Mobilisation** = jede pflegerisch-aktivierende Bewegungs-Förderung — von kleinen Lageänderungen im Bett bis zum Gehen mit Hilfsmitteln (DNQP 2020).\n\n**Dolmetscher** = Mensch, der zwischen zwei Sprachen übersetzt — entweder vor Ort oder am Telefon. **Dolmetscher-Service** = Telefon-Dienst der Klinik, den Pflege oder Ärzte bei Sprachbarriere anfordern.\n\n**Gesten** = sichtbare Hand- und Körper-Bewegungen, die ohne Worte etwas vermitteln (z.B. Stopp-Geste, Lächeln, Nicken).\n\n**Nonverbale Kommunikation** = jede Verständigung ohne gesprochene Sprache: Mimik, Gestik, Körperhaltung, Berührung. Sie überbrückt Sprachbarrieren — und überträgt Stimmung sofort.\n\n**Interkulturell** = die Begegnung von Menschen mit verschiedenen kulturellen Hintergründen. In der Pflege: bewusst und respektvoll mit unterschiedlichen Werten, Sprachen und Familienrollen umgehen.",
+        kerntextB1:
+          "**ankündigen** = vorher sagen, was du gleich tust. Beispiel: \"Ich helfe Ihnen jetzt aufzustehen.\"\n\n**Drainage** = Schlauch der Wundwasser aus der Wunde holt. Frau Yilmaz hat einen an der Hüfte.\n\n**Mobilisation** = Bewegung fördern. Vom Drehen im Bett bis zum Gehen.\n\n**Dolmetscher** = Person die übersetzt. **Dolmetscher-Service** = Telefon-Übersetzer der Klinik.\n\n**Gesten** = Bewegungen mit den Händen oder dem Gesicht. Lächeln, Nicken, Stopp-Hand.\n\n**Nonverbale Kommunikation** = Reden ohne Worte — mit Mimik, Gestik, Körpersprache. Wichtig wenn jemand kein Deutsch spricht.\n\n**Interkulturell** = wenn Menschen aus verschiedenen Kulturen zusammen sind.",
+        faustregel:
+          "**Erst ankündigen, dann handeln. Erst Mensch, dann Sprache.** — Wer Begriffe kennt, kann respektvoll führen.",
+        faustregelB1:
+          "Erst sagen was du tust. Dann tun. Auch ohne gemeinsame Sprache geht das mit Gesten.",
+        karteikarte: {
+          vorderseite:
+            "Was bedeutet \"Mobilisation\"? Und warum ist das Ankündigen pflegerischer Standard?",
+          rueckseite:
+            "Mobilisation = jede pflegerische Bewegungs-Förderung (Lagewechsel bis Gehen, DNQP 2020). Ankündigen ist Standard, weil Patientinnen ein Recht auf Information vor jeder Maßnahme haben (Selbstbestimmung, Art. 2 GG). Bei Frau Yilmaz besonders wichtig: Sie war gestern beim Aufstehversuch überrumpelt — heute kündigst du jeden Schritt vorher an.",
+        },
       },
     },
 
@@ -238,6 +303,86 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_INFORMIEREN: SituationsPhase = {
             ],
           },
         ],
+      },
+    },
+
+    // InlineWissen — Luxationsprophylaxe nach Hüft-TEP (3 Bewegungsverbote)
+    // Position: VOR Step 1.4 (Matching Lagerungsregeln) — definiert Adduktion,
+    // Innenrotation, Luxation, Luxationsprophylaxe, Flexion. Diese Begriffe sind im
+    // Matching-Step zentral und müssen vorher klar definiert sein.
+    {
+      stepId: "ce02-yilmaz-info-03b-luxationsprophylaxe",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "Deutsche Gesellschaft für Unfallchirurgie (2022): S2k-Leitlinie Endoprothetik Hüfte",
+        "DNQP (2017, 2. Aktualisierung 2024): Expertenstandard Dekubitusprophylaxe",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-yilmaz-info-luxationsprophylaxe",
+      tag: "pflege",
+      themaPrimaer: "positionierung",
+      themenSekundaer: ["mobilisation"],
+      transition: "Du kennst jetzt die drei Verbote. Gleich ordnest du sie den Gründen zu.",
+      contentC1: {
+        title: "Luxationsprophylaxe: Drei Verbote nach Hüft-TEP",
+        body: "",
+        glossarBegriffe: [
+          "Luxation", "Luxationsprophylaxe", "Prophylaxe",
+          "Adduktion", "Innenrotation", "Flexion",
+        ],
+      },
+      contentB1: {
+        title: "Drei Bewegungen, die verboten sind",
+        body: "",
+        glossarBegriffe: ["Luxation", "Adduktion", "Innenrotation"],
+      },
+      inlineWissen: {
+        bausteinRef: "positionierung-hüfte-luxationsprophylaxe",
+        storyAufhaenger:
+          "Frau Yilmaz hat ein neues Hüftgelenk — aber es sitzt noch nicht fest. In den ersten 6–12 Wochen kann die Prothese aus der Pfanne springen (= Luxation). Das passiert, wenn das operierte Bein in bestimmte Positionen gerät. Du musst die drei Verbote kennen, bevor du das Zimmer betrittst.",
+        storyAufhaengerB1:
+          "Frau Yilmaz hat ein neues Hüftgelenk. Aber es sitzt noch nicht ganz fest. Es kann aus der Pfanne springen. Das heißt Luxation. Es gibt drei Bewegungen, die das auslösen können. Die musst du kennen.",
+        kerntext:
+          "**Prophylaxe** = vorbeugende pflegerische Maßnahme, die ein Risiko gar nicht erst entstehen lässt.\n\n**Luxation** = Verrenkung — der Gelenkkopf springt aus der Gelenkpfanne. Bei Hüft-TEP ein chirurgischer Notfall.\n\n**Luxationsprophylaxe** = alle Maßnahmen, die eine Luxation des Hüftgelenks verhindern. Konkret: drei Bewegungsverbote nach Hüft-TEP (DGU S2k-Leitlinie 2022).\n\n• **Flexion** = Beugung. Hüftbeugung muss < 90° bleiben. Beim Sitzen: Stuhl höher als Knie. Beim Schuhe-anziehen: langer Schuhlöffel.\n\n• **Adduktion** = Heranführen eines Körperteils zur Körpermitte. Bei Hüft-TEP verboten: das operierte Bein darf nicht über die Körper-Mittellinie geführt werden — kein Beine-Übereinanderschlagen.\n\n• **Innenrotation** = Drehung eines Körperteils nach innen. Bei Hüft-TEP verboten: die Fußspitze des operierten Beins zeigt nach außen oder geradeaus, niemals nach innen.\n\n**Geltungsdauer:** 6–12 Wochen post-OP, je nach Operationstechnik und Chirurgen-Anweisung.\n\n**Konsequenz bei Verstoß:** Luxation = Notfall-OP, extremer Schmerz, verlängerte Rehabilitations-Zeit.",
+        kerntextB1:
+          "**Prophylaxe** = etwas tun, damit ein Problem gar nicht erst entsteht.\n\n**Luxation** = das Gelenk springt aus der Pfanne. Großer Notfall.\n\n**Luxationsprophylaxe** = das Gelenk schützen.\n\n**Drei verbotene Bewegungen** nach Hüft-OP:\n\n• **Flexion (Beugung)** — Hüfte nicht über 90° beugen. Beim Sitzen: Stuhl höher als Knie.\n\n• **Adduktion (Heranführen)** — Bein nicht über die Mitte kreuzen. Kein Beine-Übereinander-Schlagen.\n\n• **Innenrotation (Drehung nach innen)** — Fußspitze zeigt nach außen oder geradeaus, nie nach innen.\n\nDiese Regeln gelten 6–12 Wochen lang. Wenn jemand die Regeln bricht, kann das Gelenk aus der Pfanne springen. Das ist ein Notfall.",
+        faustregel:
+          "**90°, Mitte, Innenrotation** — drei Grenzen, die du in den nächsten 6–12 Wochen bei jedem Handgriff beachtest.",
+        faustregelB1:
+          "Drei Verbote: Nicht über 90° beugen, nicht überkreuzen, nicht nach innen drehen. 6–12 Wochen lang.",
+        spektrum: [
+          {
+            patientName: "Herr Petrov",
+            situationsId: "ls-petrov-schlaganfall",
+            hauptfaktor: "Hemiparese — kann die Lagerungsvorschrift nicht aktiv einhalten",
+            kurzbeschreibung:
+              "Bei ihm muss die Pflege die Positionierung komplett übernehmen — er kann das operierte Bein nicht selbst kontrollieren. Kissen-Positionierung wird zur Dauer-Maßnahme.",
+          },
+          {
+            patientName: "Herr Bauer",
+            situationsId: "ls-bauer-demenz-sturz",
+            hauptfaktor: "Demenz — vergisst die Lagerungsregeln",
+            kurzbeschreibung:
+              "Er versteht die Regeln im Moment, vergisst sie aber sofort. Bettgitter und Kissen-Positionierung sind mechanische Sicherheits-Netze — Erklärungen allein reichen nicht.",
+          },
+          {
+            patientName: "Frau Schmidt",
+            situationsId: "ls-schmidt-adipositas",
+            hauptfaktor: "Adipositas — erschwert Kissen-Positionierung",
+            kurzbeschreibung:
+              "Körperumfang und Gewicht erschweren die Kissen-Platzierung zwischen den Beinen. Größere Keilkissen oder spezielle Abduktionslagerungs-Hilfen nötig.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Nenne die drei Bewegungsverbote nach Hüft-TEP und erkläre, warum Mustafa (Frau Yilmaz' Ehemann) ein Risiko darstellt.",
+          rueckseite:
+            "(1) Hüftbeugung (Flexion) < 90°, (2) keine Adduktion über Körper-Mitte, (3) keine Innenrotation. Mustafa versucht manchmal, Frau Yilmaz selbst aufzuhelfen — ohne zu wissen, dass er dabei Luxationsgefahr riskiert. Alle drei Verbote gelten 6–12 Wochen. Spektrum: Petrov (kann Regeln nicht aktiv einhalten), Bauer (vergisst sie), Schmidt (Kissen-Positionierung erschwert). Faustregel: **90°, Mitte, Innenrotation.**",
+        },
       },
     },
 

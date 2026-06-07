@@ -275,9 +275,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
                   "Ingrid sagt: \"Aber es ist passiert.\"",
                 score: 0,
                 feedback:
-                  "Defensiv und wenig glaubwürdig. Ingrid weiß, dass Stürze bei Demenz häufig vorkommen — das ist kein Ausnahmefall. Defensive Reaktionen verringern Vertrauen. Ehrlichkeit und Empathie sind wirksamer.",
+                  "Du willst Ingrid beruhigen \u2014 guter Impuls. Allerdings ist diese Antwort defensiv und wenig glaubwürdig, weil Ingrid weiß, dass Stürze bei Demenz häufig vorkommen. Stattdessen wirken Ehrlichkeit und Empathie \u2014 deshalb sage offen, was passiert ist.",
                 feedbackB1:
-                  "Falsch. Du versuchst dich zu schützen. Aber Ingrid merkt: Das stimmt nicht. Stürze kommen bei Demenz oft vor. Ehrlichkeit ist besser.",
+                  "Du willst Ingrid beruhigen \u2014 guter Impuls. Aber Ingrid merkt, dass es nicht stimmt, weil Stürze bei Demenz oft vorkommen. Stattdessen ist Ehrlichkeit besser.",
               },
               {
                 text: "\"Wir tun alles was wir können, aber Stürze können wir leider nicht immer verhindern.\"",
@@ -289,9 +289,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
                   "Ingrid hört zu. Aber sie ist noch angespannt.",
                 score: 1,
                 feedback:
-                  "Nicht falsch — aber noch nicht genug. Das ist eine sachliche Antwort, aber sie geht nicht auf Ingrids emotionalen Zustand ein. Zuerst Empathie, dann Information.",
+                  "Du gibst eine sachliche Antwort \u2014 das ist ein guter Anfang. Allerdings reicht das noch nicht, weil sie nicht auf Ingrids emotionalen Zustand eingeht. Stattdessen: Zuerst Empathie zeigen (\"Ich kann verstehen, wie aufgewühlt Sie gerade sind\"), dann die Information \u2014 in dieser Reihenfolge.",
                 feedbackB1:
-                  "Nicht falsch — aber Ingrid braucht zuerst das Gefühl, dass du sie verstehst. Dann erst die sachliche Erklärung.",
+                  "Deine Antwort ist sachlich \u2014 ein guter Anfang. Aber Ingrid braucht zuerst Empathie, weil sie aufgewühlt ist. Stattdessen: Erst Verständnis zeigen, dann erklären.",
               },
             ],
           },
@@ -326,9 +326,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
                   "Ingrid schaut enttäuscht.",
                 score: 0,
                 feedback:
-                  "Nicht ok. Du kennst den Sachverhalt aus der Übergabe — das ist genug um es zu erklären. 'Ich war nicht dabei' lässt Ingrid im Stich. Die Pflegedokumentation gehört allen im Team.",
+                  "Du willst dich nicht ueber den Kopf hinaus äussern \u2014 verständlich. Allerdings kennst du den Sachverhalt aus der Übergabe und das reicht für eine Erklärung, weil die Pflegedokumentation allen im Team gehört. Stattdessen: Erkläre ruhig, was die Nachtkollegin festgestellt hat \u2014 Ingrid braucht eine Antwort, nicht eine Weiterleitung.",
                 feedbackB1:
-                  "Falsch. Du weißt es aus der Übergabe. Du musst nicht dabei gewesen sein um es zu erklären. Ingrid braucht eine Antwort von dir.",
+                  "Du willst sicher gehen \u2014 guter Gedanke. Aber du kennst alles aus der Übergabe und das reicht, weil das Team gemeinsam dokumentiert. Stattdessen: Erkläre, was du weißt \u2014 Ingrid braucht jetzt eine Antwort.",
               },
             ],
           },
@@ -371,9 +371,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
           },
           {
             context:
-              "Plötzlich kommt Herr Bauer in einem Rollstuhl in die Flurnähe — eine Pflegerin hat ihn zum Nachmittagsspaziergang gefahren. Er sieht Ingrid und sagt:",
+              "Plötzlich kommt Herr Bauer in einem Rollstuhl in die Flurnähe — eine Pflegerin hat ihn zum Nachmittagsspaziergang gefahren. Er sieht Ingrid. Sein Blick verändert sich — er erkennt sie.",
             contextB1:
-              "Plötzlich kommt Herrn Bauer im Rollstuhl auf den Flur. Er sieht Ingrid und sagt:",
+              "Plötzlich kommt Herr Bauer im Rollstuhl auf den Flur. Er sieht Ingrid. Sein Blick verändert sich — er erkennt sie.",
             speaker: "Herr Bauer",
             options: [
               {
@@ -466,12 +466,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
       contentC1: {
         title: "Angehörige von Demenz-Patienten — was wir wissen",
         body: "Gesprächssituation mit Ingrid Bauer, Nachmittag.\n\n3 Dinge die du über Angehörige von Menschen mit Demenz im Pflegeheim wissen solltest:\n\n1. Schuldgefühle beim Heimübergang sind normal und sehr häufig — das Gespräch mit Ingrid ist pflegerische Aufgabe, nicht nur Sozialarbeit. Das DNQP (2018) nennt Angehörige ausdrücklich als Teil der Pflegebeziehung.\n\n2. Angehörige sind Experten für den Menschen — Ingrid kennt ihren Vater besser als das gesamte Pflegeteam. Sie weiß welches Lied ihn beruhigt, welche Geste er liebt. Diese Information ist Ressource.\n\n3. Angehörige brauchen Entlastung, keine Bewertung — Ingrid macht sich Vorwürfe ('Hätte ich ihn nicht ins Heim geben sollen?'). Die Pflege beantwortet keine Fragen die sie sich selbst stellen muss. Aber die Pflege kann bestätigen: 'Sie haben eine sehr schwere Entscheidung getroffen — und das aus Liebe.' (Kitwood T. 1997: Demenz reconsidered).",
-        glossarBegriffe: ["Angehörigenberatung", "Schuldgefühle", "Person-Centered Care"],
+        glossarBegriffe: ["Angehörigenberatung", "Schuldgefühle", "Person-Centered Care", "DNQP", "Pflege", "Ressource"],
       },
       contentB1: {
         title: "Angehörige von Demenz-Patienten",
         body: "Gespräch mit Ingrid Bauer.\n\n3 wichtige Dinge:\n\n1. Schuldgefühle sind normal — fast alle Angehörigen haben Schuldgefühle wenn jemand ins Heim kommt. Das Gespräch mit ihr ist deine Aufgabe als Pflegeperson.\n\n2. Angehörige kennen den Menschen — Ingrid kennt ihren Vater besser als du. Was beruhigt ihn? Was mag er? Sie weiß es.\n\n3. Sie brauchen Entlastung — keine Vorwürfe. Ingrid fragt sich: 'Habe ich richtig entschieden?' Das kannst du nicht beantworten. Aber du kannst sagen: 'Das war eine schwere Entscheidung — aus Liebe.'",
-        glossarBegriffe: ["Angehörige", "Schuldgefühle", "Demenz"],
+        glossarBegriffe: ["Angehörige", "Schuldgefühle", "Demenz", "Pflege", "Ressource"],
       },
     },
 
@@ -570,12 +570,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_EVALUIEREN: SituationsPhase = {
       contentC1: {
         title: "VIPS-Modell der personenzentrierten Pflege",
         body: "Das VIPS-Modell nach Kitwood (1997) beschreibt personenzentrierte Pflege bei Demenz in 4 Dimensionen:\n\nV — Value (Würde): Jeder Mensch hat einen Wert — unabhängig von Kognition oder Kooperation. Herr Bauers Würde gilt auch wenn er schlägt.\n\nI — Individual (Einzigartigkeit): Herr Bauer ist Schreiner, war verheiratet, mag Freddy Quinn. Diese Biographie ist der Schlüssel zur Pflege.\n\nP — Perspective (Innenperspektive): Wie erlebt Herr Bauer die Pflegesituation? Er hat Angst — das ist seine Realität.\n\nS — Social (Soziale Einbettung): Ingrid ist Teil des Pflegesystems — nicht Besucher, sondern Partnerin.\n\nQuelle: Kitwood T. (1997): Dementia Reconsidered. Open University Press.",
-        glossarBegriffe: ["VIPS-Modell", "Personenzentrierte Pflege", "Würde"],
+        glossarBegriffe: ["VIPS-Modell", "Personenzentrierte Pflege", "Würde", "Pflege", "Biographie"],
       },
       contentB1: {
         title: "VIPS — Pflege für Menschen mit Demenz",
         body: "Das VIPS-Modell erklärt, wie man Menschen mit Demenz gut pflegt. 4 Buchstaben:\n\nV = Würde: Herr Bauer hat Würde — auch wenn er schlägt oder laut ist.\nI = Einzigartigkeit: Er war Schreiner. Er mag Freddy Quinn. Das ist wichtig für die Pflege.\nP = Innenperspektive: Wie erlebt ER die Situation? Er hat Angst.\nS = Soziales: Ingrid ist Partner der Pflege — nicht nur Besucherin.\n\nQuelle: Kitwood T. (1997).",
-        glossarBegriffe: ["VIPS", "Würde", "Demenz"],
+        glossarBegriffe: ["VIPS", "Würde", "Demenz", "Pflege", "Biographie"],
       },
     },
 

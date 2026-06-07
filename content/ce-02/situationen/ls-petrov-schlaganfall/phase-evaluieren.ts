@@ -87,7 +87,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "Konsequnz nach dem Aspirationsereignis",
-        body: "Beim Frühstück kam es zu einem Aspirationsereignis. Was ist die richtige Konsequnz für die Mittagsmahlzeit?",
+        body: "Beim Frühstück kam es zu einem Aspirationsereignis. **Schlucktherapeutin** = eine Logopädin/ein Logopäde mit Spezialisierung auf Dysphagie; führt FEES- und GUSS-Untersuchungen durch und legt Konsistenzstufen fest. Was ist die richtige Konsequnz für die Mittagsmahlzeit?",
         glossarBegriffe: [
           "IDDSI",
           "Schlucktherapeutin",
@@ -97,7 +97,7 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Was machst du jetzt für das Mittag-Essen?",
-        body: "Beim Frühstück hat Herr Petrov sich verschluckt. Was machst du jetzt für das Mittag-Essen?",
+        body: "Beim Frühstück hat Herr Petrov sich verschluckt. **Schlucktherapeutin** = eine Sprach-Therapeutin (Logopädin), die sich auf Schluck-Störungen spezialisiert hat. Was machst du jetzt für das Mittag-Essen?",
         glossarBegriffe: ["IDDSI", "Schlucktherapeutin"],
       },
       question: {
@@ -158,18 +158,20 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_EVALUIEREN: SituationsPhase = {
       transition: "Prognose macht Hoffnung. Jetzt noch eine offene Frage: Der Katheter. Bleibt er oder geht er?",
       contentC1: {
         title: "Schätzfrage: Anteil mit Gehfähigkeit nach Reha",
-        body: "Pflegerische Kraft-Beurteilung erfolgt mit der MRC-Skala (0-5 nach Janda) — keine Prozentwerte. Diese Schätzfrage zielt auf einen anderen Prognose-Marker: Welcher prozentuale Anteil aller Schlaganfall-Patienten mit Hemiparese erreicht nach 3-6 Monaten intensiver Frührehabilitation wieder eine Gehfähigkeit (mit oder ohne Hilfsmittel)?",
+        body: "**Rehabilitation** (kurz **Reha**) = der gezielte therapeutische Wiederaufbau von Funktionen nach einer Erkrankung (Logopädie, Ergotherapie, Physiotherapie). **Prognose** = die ärztliche Vorhersage über den voraussichtlichen Krankheitsverlauf. Pflegerische Kraft-Beurteilung erfolgt mit der MRC-Skala (0-5 nach Janda) — keine Prozentwerte. Diese Schätzfrage zielt auf einen anderen Prognose-Marker: Welcher prozentuale Anteil aller Schlaganfall-Patienten mit Hemiparese erreicht nach 3-6 Monaten intensiver Frührehabilitation wieder eine Gehfähigkeit (mit oder ohne Hilfsmittel)?",
         glossarBegriffe: [
           "Neuroplastizität",
           "Rehabilitation",
+          "Reha",
+          "Prognose",
           "Frühmobilisation",
           "MRC-Skala",
         ],
       },
       contentB1: {
         title: "Schätzfrage: Wie viele Patienten gehen wieder?",
-        body: "Pflege bewertet Muskel-Kraft mit der MRC-Skala 0-5 (nicht in Prozent). Diese Frage ist anders: Wie viele Schlaganfall-Patienten mit Halbseiten-Schwäche können nach 3-6 Monaten Reha wieder gehen — in Prozent aller Patienten?",
-        glossarBegriffe: ["Neuroplastizität", "Reha", "MRC-Skala"],
+        body: "**Reha** = Rehabilitation, das gezielte Üben nach einer Krankheit (Sprache, Bewegung, Alltag). **Prognose** = die Vorhersage des Arztes wie es weitergeht. Pflege bewertet Muskel-Kraft mit der MRC-Skala 0-5 (nicht in Prozent). Wie viele Schlaganfall-Patienten mit Halbseiten-Schwäche können nach 3-6 Monaten Reha wieder gehen — in Prozent aller Patienten?",
+        glossarBegriffe: ["Neuroplastizität", "Reha", "Prognose", "MRC-Skala"],
       },
       question: {
         fragetext:

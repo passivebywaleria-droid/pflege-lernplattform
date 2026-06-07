@@ -32,12 +32,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Beruhigende Ganzkörperwaschung — Basale Stimulation",
         body: "Was versteht man unter einer beruhigenden Ganzkörperwaschung im Sinne der Basalen Stimulation? 5 Prinzipien:\n\n1. Bewegungen in Haarwuchsrichtung führen — von Schulter zur Hand, von Hüftgelenk zum Fuß. Das aktiviert das Körperschema des Patienten.\n2. Körpertemperatur-angepasstes Wasser (nicht zu kalt, nicht zu heiß).\n3. Reihenfolge nach Hygiene: vom sauberen zum unreinen Bereich (Gesicht/Augen zuerst, Genital- und Analbereich zuletzt) — innerhalb dieses Rahmens jeden Körperabschnitt in Haarwuchsrichtung waschen.\n4. Jeden Handgriff kurz ankündigen — ruhige Stimme: \"Ich wasche jetzt deinen rechten Arm.\"\n5. Pausieren wenn Abwehr kommt — nie gegen Widerstand waschen.\n\nQuelle: Bienstein C./Fröhlich A. (2021): Basale Stimulation in der Pflege. Huber. I Care Pflege, Kapitel Körperpflege.",
-        glossarBegriffe: ["Basale Stimulation", "Körperschema", "beruhigende Waschung"],
+        glossarBegriffe: ["Basale Stimulation", "Körperschema", "beruhigende Waschung", "Pflege", "Abwehr", "Haarwuchsrichtung", "Körperpflege", "Hygiene", "Hüftgelenk"],
       },
       contentB1: {
         title: "Wie wäscht man richtig bei Demenz?",
         body: "Das nennt man beruhigende Waschung — eine Methode aus der Basalen Stimulation. 5 Regeln:\n\n1. Wasche in Richtung der Haare (z. B. von der Schulter zur Hand).\n2. Wasser angenehm warm.\n3. Reihenfolge nach Hygiene: erst Gesicht (sauber), zuletzt Genital- und Analbereich (unrein).\n4. Immer ankündigen: \"Jetzt wasche ich deinen rechten Arm.\"\n5. Wenn er sich wehrt: stoppen, warten.\n\nQuelle: Bienstein C./Fröhlich A. (2021).",
-        glossarBegriffe: ["Basale Stimulation", "beruhigende Waschung", "ankündigen"],
+        glossarBegriffe: ["Basale Stimulation", "beruhigende Waschung", "ankündigen", "Pflege", "Abwehr", "Haarwuchsrichtung", "Körperpflege", "Hygiene"],
       },
     },
 
@@ -147,9 +147,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
           {
             text: "Ich ziehe die Decke weg und mache weiter — Hygiene ist medizinisch notwendig.",
             feedback:
-              "Das ist Zwang — und rechtlich sowie ethisch nicht erlaubt. Zwangspflege verletzt die Würde des Patienten und verstärkt die Abwehr. Körperliche Pflege gegen den Willen eines Patienten ist nur in absoluten Notfällen (unmittelbare Lebensgefahr) rechtfertigbar — nicht bei der Morgentoilette. Herr Bauer kann seinen Willen nicht verbal formulieren, aber er zeigt ihn deutlich: Nein. Das gilt.",
+              "Du sorgst dich um Hygiene — guter Anspruch. Allerdings ist das hier Zwang und damit rechtlich sowie ethisch nicht erlaubt, weil Zwangspflege die Würde des Patienten verletzt und die Abwehr verstärkt. Stattdessen gilt: Körperliche Pflege gegen den Willen eines Patienten ist nur in absoluten Notfällen (unmittelbare Lebensgefahr) rechtfertigbar — nicht bei der Morgentoilette. Herr Bauer kann seinen Willen nicht verbal formulieren, aber er zeigt ihn deutlich: Nein. Deshalb pausierst du.",
             feedbackB1:
-              "Das ist falsch. Zwang bei der Pflege ist verboten — auch wenn Pflege wichtig ist. Er zeigt dir mit dem Schlagen: \"Nein.\" Dieser Wille gilt, auch wenn er ihn nicht erklären kann.",
+              "Du willst Hygiene machen — guter Ansatz. Aber das ist Zwang, weil er Nein zeigt. Stattdessen gilt: Sein Wille gilt, auch wenn er ihn nicht in Worten sagen kann. Deshalb stoppst du.",
             isCorrect: false,
           },
           {
@@ -163,7 +163,7 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
           {
             text: "Ich breche die Pflege ab und komme in einer Stunde wieder.",
             feedback:
-              "Manchmal sinnvoll — wenn der Zeitraum wirklich genutzt wird um die Strategie zu ändern (z. B. Musik einschalten, Tochter informieren, Ressource vorbereiten). Aber: Assessment ist heute Morgen noch unvollständig und der Pflegebedarf hoch. Abbrechen ist nicht die erste Wahl. Besser: kurze Pause, dann neuer Anlauf mit anderer Strategie.",
+              "Du nimmst seinen Willen ernst — guter Ansatz. Allerdings ist Abbruch hier nicht ideal, weil das Assessment heute Morgen noch unvollständig ist und der Pflegebedarf hoch. Stattdessen: kurze Pause, dann neuer Anlauf mit anderer Strategie (Musik, Ressource, schrittweise Ankündigung) — eine Stunde Pause hilft nur, wenn sie strategisch genutzt wird.",
             feedbackB1:
               "Manchmal ok — wenn du in einer Stunde mit einer anderen Strategie wiederkommst. Aber hier ist die Pflege heute früh dringend. Besser: kurze Pause, dann anderer Versuch.",
             isCorrect: false,
@@ -233,9 +233,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
                   "Herr Bauer erschrickt, weil er es nicht erwartet hat.",
                 score: 0,
                 feedback:
-                  "Falsch. Auch wenn Herr Bauer Sprache nicht vollständig verarbeiten kann, helfen kurze Ankündigungen — er spürt Tonfall und Absicht. Ohne Ankündigung ist jede Berührung am Gesicht ein Schreckreiz. Immer ankündigen.",
+                  "Du willst ihn nicht verwirren — guter Gedanke. Allerdings helfen kurze Ankündigungen auch bei Demenz, weil Herr Bauer Tonfall und Absicht spürt, auch wenn er nicht alle Worte versteht. Stattdessen: Ohne Ankündigung wird jede Gesichtsberührung ein Schreckreiz, deshalb immer ankündigen.",
                 feedbackB1:
-                  "Falsch. Auch bei Demenz: Immer ankündigen. Er versteht vielleicht nicht alle Worte — aber er hört den Tonfall. Ohne Ankündigung erschrickt er.",
+                  "Du willst es kurz machen — guter Gedanke. Aber bei Demenz hilft Ankündigung trotzdem, weil er den Tonfall hört. Stattdessen: Immer ankündigen \u2014 ohne Ankündigung erschrickt er.",
               },
               {
                 text: "\"Darf ich Ihr Gesicht waschen?\" — ich frage ihn direkt um Erlaubnis.",
@@ -247,9 +247,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
                   "Herr Bauer sagt: \"Nein.\" Du stehst wieder am Anfang.",
                 score: 1,
                 feedback:
-                  "Gut gemeint, aber bei Demenz problematisch. Offene Fragen mit Ja/Nein-Antwortmöglichkeit aktivieren oft das \"Nein\" — weil Nein einfacher ist als die Situation zu verarbeiten. Besser: ankündigen was du tust, nicht ob du es tust. \"Ich wasche jetzt...\" statt \"Darf ich...\"",
+                  "Du willst seine Autonomie wahren — guter Ansatz. Allerdings sind Ja/Nein-Fragen bei Demenz problematisch, weil sie oft das \"Nein\" aktivieren \u2014 Nein ist einfacher als die Situation zu verarbeiten. Stattdessen: Ankündigen was du tust, nicht ob du es tust. \"Ich wasche jetzt...\" statt \"Darf ich...\"",
                 feedbackB1:
-                  "Gut gemeint — aber bei Demenz funktioniert das oft nicht. \"Darf ich?\" bekommt oft \"Nein\" zur Antwort. Besser: Ankündigen was du tust.",
+                  "Gut gemeint \u2014 du willst ihn fragen. Aber bei Demenz kommt oft \"Nein\", weil das einfacher ist. Stattdessen: Ankündigen was du tust, nicht fragen ob.",
               },
             ],
           },
@@ -280,12 +280,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Passive Kniebewegung bei Demenz — wie ohne Abwehr?",
         body: "",
-        glossarBegriffe: ["passive Bewegung", "aktiv-assistiv", "Schmerzgrenze", "Kontraktur-Prophylaxe"],
+        glossarBegriffe: ["passive Bewegung", "aktiv-assistiv", "Schmerzgrenze", "Kontraktur-Prophylaxe", "Bewegung", "Patient", "Demenz", "Pflege", "Gelenk"],
       },
       contentB1: {
         title: "Knie bewegen ohne Abwehr?",
-        body: "",
-        glossarBegriffe: ["passive Bewegung", "Schmerzgrenze"],
+        body: "**Passive Bewegung** = Pflegekraft bewegt das Gelenk, der Patient lässt es geschehen. **Bewegung** bei Demenz: in die Pflege integrieren, nicht extra. **Schmerzgrenze** = bei Mimikveränderung sofort stoppen.",
+        glossarBegriffe: ["passive Bewegung", "Schmerzgrenze", "Bewegung", "Demenz", "Gelenk"],
       },
       inlineWissen: {
         bausteinRef: "kontraktur-prophylaxe-passive-bewegung-demenz",
@@ -576,9 +576,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
           {
             text: "Wir legen ihn sofort zurück und dokumentieren: Mobilisation heute nicht möglich.",
             feedback:
-              "Konservativ — und für den Moment richtig. Aber: nur abbrechen ohne Plan reicht nicht. Was passiert morgen? Die Mobilisation ist medizinisch notwendig nach einem Sturz. Besser: Abbruch mit sofortigem Plan — anderen Zeitpunkt wählen, Strategie ändern (Musik, Ressource vorbereiten, Schritt für Schritt ankündigen), Pflegedokumentation führen.",
+              "Du nimmst seine Abwehr ernst \u2014 guter Ansatz. Allerdings reicht reiner Abbruch ohne Plan nicht aus, weil die Mobilisation nach einem Sturz medizinisch notwendig bleibt. Stattdessen: Abbruch mit sofortigem Plan \u2014 anderen Zeitpunkt wählen, Strategie ändern (Musik, Ressource vorbereiten, Schritt für Schritt ankündigen), Pflegedokumentation führen.",
             feedbackB1:
-              "Für den Moment ok — du hörst auf. Aber: Was ist der Plan für morgen? Mobilisation ist wichtig. Dokumentiere, was passiert ist, und plane einen neuen Versuch mit anderer Strategie.",
+              "Du hörst auf \u2014 für den Moment ok. Aber Mobilisation ist wichtig, weil sie Komplikationen vermeidet. Stattdessen: Plane einen neuen Versuch mit anderer Strategie und dokumentiere alles.",
             isCorrect: false,
           },
           {
@@ -592,9 +592,9 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
           {
             text: "Wir setzen ihn trotz Schreien zügig auf den Bettrand — je schneller, desto kürzer der Stress für ihn.",
             feedback:
-              "Falsch. Mobilisation gegen massive Abwehr ist Zwang — kinästhetisch und ethisch nicht vertretbar. Sturzrisiko steigt (er kann sich entwinden, fallen), Vertrauensverlust ist sicher, BESD verschlechtert sich. \"Schnell hinter sich bringen\" ist kein anerkanntes Prinzip — Kinästhetik nach Hatch/Maietta verlangt: Patient bewegt sich selbst, Pflege begleitet im Tempo des Patienten.",
+              "Du willst die Mobilisation effizient bringen — guter Anspruch. Allerdings ist Mobilisation gegen massive Abwehr Zwang und kinästhetisch wie ethisch nicht vertretbar, weil das Sturzrisiko steigt (er kann sich entwinden, fallen), Vertrauensverlust folgt und BESD sich verschlechtert. Stattdessen: Kinästhetik nach Hatch/Maietta verlangt, dass der Patient sich selbst bewegt und die Pflege im Tempo des Patienten begleitet \u2014 deshalb ist \"schnell hinter sich bringen\" kein anerkanntes Prinzip.",
             feedbackB1:
-              "Falsch. Schnell und gegen seinen Willen ist Zwang. Das ist gefährlich — er kann sich wehren, runterfallen. Und: Er verliert Vertrauen in dich. Bei Demenz: nie schneller machen als der Patient mitkommt.",
+              "Du willst es schnell hinter dich bringen \u2014 verständlich. Aber das ist gefährlich, weil er sich wehren und runterfallen kann und Vertrauen verliert. Stattdessen: Bei Demenz nie schneller machen als der Patient mitkommt \u2014 deshalb pausieren und langsam.",
             isCorrect: false,
           },
         ],
@@ -619,12 +619,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Basale Stimulation — Sprache ohne Worte",
         body: "Was genau ist Basale Stimulation? Eine Analogie hilft: Wenn ein Kleinkind Angst hat, helfen Worte oft wenig — aber eine Umarmung, eine ruhige Berührung, ein vertrauter Geruch helfen sofort. Das Körpergefühl ist mächtiger als Sprache. Bei Menschen mit schwerer Demenz ist es ähnlich: Der Körper erinnert sich, auch wenn das Gedächtnis vergisst. Herrn Bauer kann nicht mehr sagen, was er fühlt — aber sein Körper reagiert auf ruhige, strukturierte Berührungen mit Entspannung. Das ist die Grundidee der Basalen Stimulation nach Andreas Fröhlich (1978): Sinneskanäle aktivieren, die intakt sind — auch wenn Sprache und Kognition versagen. Quelle: Fröhlich A. (2023). Basale Stimulation — Das Konzept. 10. Aufl.",
-        glossarBegriffe: ["Basale Stimulation", "Sinneskanäle", "Körperschema"],
+        glossarBegriffe: ["Basale Stimulation", "Sinneskanäle", "Körperschema", "Demenz"],
       },
       contentB1: {
         title: "Basale Stimulation — was ist das?",
         body: "Stell dir ein kleines Kind vor, das Angst hat. Worte helfen oft nicht viel. Aber: Eine Umarmung hilft. Eine ruhige Berührung hilft. Ein bekannter Geruch hilft. Das Körpergefühl ist stärker als Worte. Bei Menschen mit Demenz ist es ähnlich. Herrn Bauers Gedächtnis vergisst vieles — aber sein Körper reagiert auf ruhige Berührungen. Das nennt man Basale Stimulation: den Körper ansprechen wenn Worte nicht mehr helfen.",
-        glossarBegriffe: ["Basale Stimulation"],
+        glossarBegriffe: ["Basale Stimulation", "Demenz"],
       },
     },
 

@@ -36,17 +36,17 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
         "Hospital nurses station, morning shift, nurse reading digital patient file on screen, warm early morning light, copic marker sketch style, absolutely no text no labels no words",
       contentC1: {
         title: "Die Akte — was steht drin?",
-        body: "Dienstzimmer, 06:55 Uhr — Frühdienst.\n\nDu öffnest die digitale Pflegekurve für Frau Yilmaz, Zimmer 7. Die Übergabe in SBAR-Struktur: **S** = 'Rötung Sakrum gesehen, kein Schmerz, keine Maßnahmen.' **B** = 'Hüft-TEP Tag 13, Diabetes Typ 2, Adipositas BMI 34, Rollator-Mobilisation.' **A** = 'Wunde TEP-seitig reizlos, Rötung Sakrum nicht dokumentiert.' **R** = 'Morgen Früh genau schauen.' Das Entscheidende: Die Kollegin hat etwas gesehen — aber es nicht dokumentiert. Was nicht in der Akte steht, gilt als nicht geschehen. (§ 630f BGB)",
+        body: "Dienstzimmer, 06:55 Uhr — Frühdienst.\n\nDu öffnest die digitale Pflegekurve für Frau Yilmaz, Zimmer 7. Die Übergabe in SBAR-Struktur: **S** = 'Rötung Sakrum gesehen, kein Schmerz, keine Maßnahmen.' **B** = 'Hüft-TEP Tag 13, Diabetes Typ 2, Adipositas BMI 34, Rollator-Mobilisation.' **A** = 'Wunde TEP-seitig reizlos, Rötung Sakrum nicht dokumentiert.' **R** = 'Morgen Früh genau schauen.' Das Entscheidende: Die Kollegin hat etwas gesehen — aber es nicht dokumentiert. Was nicht in der Akte steht, gilt als nicht geschehen. (§ 630f BGB)\n\n**Kurz erklärt — Begriffe aus der Akte:**\n\n• **Übergabe** = strukturierte Informations-Weitergabe von einer Schicht an die nächste, meist nach SBAR-Schema.\n\n• **Schmerz** = subjektive Empfindung; bei Frau Yilmaz wegen Neuropathie nicht zuverlässig vorhanden, NRS-Skala dokumentiert die Stärke.\n\n• **Mobilisation** = aktive oder unterstützte Bewegung des Patienten — bei Frau Yilmaz: Aufstehen, Gehen mit Rollator.\n\n• **BMI** (Body-Mass-Index) = Körpergewicht (kg) geteilt durch Körpergröße (m²); BMI ≥ 30 = **Adipositas** (Übergewicht mit Krankheitswert).\n\n• **Hüft-TEP** = Hüft-Totalendoprothese, ein künstliches Hüftgelenk; Frau Yilmaz hat die TEP rechts.\n\n• **Steißbein** (lat. Sakrum) = unteres Ende der Wirbelsäule, eine **Prädilektionsstelle** für Druckwunden.\n\n• **Dekubitus** = Druckwunde auf der Haut, entsteht durch dauerhaften Druck auf eine Körperstelle (NPUAP/EPUAP 2019).\n\n• **Rötung** = sichtbare Hautverfärbung als erstes Warnzeichen für Druckschaden.",
         fallbezug:
           "Frau Yilmaz (79, Hüft-TEP Tag 14) wird heute entlassen? Nicht sicher. Erst wenn du gesehen hast, was am Steißbein ist.",
-        glossarBegriffe: ["SBAR", "§ 630f BGB"],
+        glossarBegriffe: ["SBAR", "§ 630f BGB", "Übergabe", "Schmerz", "Mobilisation", "BMI", "Adipositas", "Hüft-TEP", "Steißbein", "Dekubitus", "Rötung", "NRS", "Haut", "Bewegung", "Patient", "NRS (= Numeric Rating Scale)", "Hüftgelenk", "Prädilektionsstelle", "Druckwunde"],
       },
       contentB1: {
         title: "Was steht in der Akte?",
-        body: "Dienstzimmer, 06:55 Uhr — Frühdienst.\n\nDu liest die Pflegeakte am Computer. Du siehst eine kurze Notiz von der Spätschicht: **S** = 'Rötung Steißbein gesehen, kein Schmerz, keine Maßnahmen.' **B** = 'Hüft-OP vor 13 Tagen, Zuckerkrankheit, Übergewicht, läuft mit Rollator.' **A** = 'Hüftwunde gut, Rötung Steißbein nicht aufgeschrieben.' **R** = 'Morgen früh genau schauen.' Wichtig: Was nicht aufgeschrieben ist, gilt als nicht passiert. Das steht im Gesetz (§ 630f BGB).",
+        body: "Dienstzimmer, 06:55 Uhr — Frühdienst.\n\nDu liest die Pflegeakte am Computer. Du siehst eine kurze Notiz von der Spätschicht: **S** = 'Rötung Steißbein gesehen, kein Schmerz, keine Maßnahmen.' **B** = 'Hüft-OP vor 13 Tagen, Zuckerkrankheit, Übergewicht, läuft mit Rollator.' **A** = 'Hüftwunde gut, Rötung Steißbein nicht aufgeschrieben.' **R** = 'Morgen früh genau schauen.' Wichtig: Was nicht aufgeschrieben ist, gilt als nicht passiert. Das steht im Gesetz (§ 630f BGB).\n\n**Wichtige Wörter:**\n\n• **Übergabe** = die Informations-Weitergabe von einer Schicht zur nächsten.\n\n• **Schmerz** = was der Patient fühlt. Frau Yilmaz fühlt wenig wegen ihrer Nerven-Krankheit.\n\n• **Mobilisation** = Bewegung — bei Frau Yilmaz: Aufstehen mit Rollator.\n\n• **BMI** = Zahl für das Gewicht. BMI über 30 = **Adipositas** (Übergewicht).\n\n• **Hüft-TEP** = künstliches Hüftgelenk.\n\n• **Steißbein** = unten am Rücken, häufige Stelle für Druckwunden.\n\n• **Dekubitus** = Druckwunde durch zu viel Druck auf eine Stelle.\n\n• **Rötung** = rote Stelle auf der Haut — erstes Warnzeichen.",
         fallbezug:
           "Frau Yilmaz ist 79 Jahre alt. Sie hat eine Hüft-OP vor 14 Tagen. Heute bist du für sie zuständig.",
-        glossarBegriffe: ["§ 630f BGB"],
+        glossarBegriffe: ["§ 630f BGB", "Übergabe", "Schmerz", "Mobilisation", "BMI", "Adipositas", "Hüft-TEP", "Steißbein", "Dekubitus", "Rötung", "NRS", "Haut", "Bewegung", "Patient", "NRS (= Numeric Rating Scale)", "Hüftgelenk", "Prädilektionsstelle", "Druckwunde"],
       },
     },
 
@@ -72,13 +72,13 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
       transition: "Jetzt weisst du was ein Dekubitus ist. Frau Yilmaz bringt ein ganzes Buendel an Risiken mit.",
       contentC1: {
         title: "Was ist ein Dekubitus?",
-        body: "",
-        glossarBegriffe: ["Dekubitus", "Druckgeschwür", "NPUAP/EPUAP", "Kategorie I-IV", "Braden-Skala", "Hyperglykämie", "Mikrozirkulationsstörung", "Prädilektionsstelle", ],
+        body: "**Dekubitus** = Druckwunde auf der Haut, entsteht durch anhaltenden Druck (NPUAP/EPUAP/PPPIA 2019).\n\n**Dekubitus Kategorie** = Einteilungs-System nach Tiefe der Wunde (4 Stufen):\n\n• **Kategorie I** — Haut intakt, nicht-wegdrückbare Rötung.\n\n• **Kategorie II** — Haut offen, flache Wunde (Erosion). Hier steht Frau Yilmaz.\n\n• **Kategorie III** — Wunde tief bis ins Fettgewebe.\n\n• **Kategorie IV** — Wunde sehr tief, Knochen oder Muskeln sichtbar.\n\n**Wundgrund** = die Oberfläche IN der Wunde (Farbe zeigt Heilungs-Stadium).\n\n**Wundrand** = die Grenze zwischen Wunde und gesunder Haut.\n\n**Schwellenuebergang Kategorie I zu II:** Bei Kategorie I ist die Haut noch intakt — hier reicht **Prophylaxe**. Ab Kategorie II ist die Haut offen — jetzt brauchst du **Wundversorgung + Therapie**.",
+        glossarBegriffe: ["Dekubitus", "Dekubitus Kategorie", "Druckgeschwür", "NPUAP/EPUAP", "Kategorie I-IV", "Wundrand", "Wundgrund", "Braden-Skala", "Hyperglykämie", "Mikrozirkulationsstörung", "Prädilektionsstelle", "Haut", "Prophylaxe", "Rötung", "Druckwunde", "Nicht-wegdrückbare Rötung"],
       },
       contentB1: {
         title: "Was ist ein Dekubitus?",
-        body: "",
-        glossarBegriffe: ["Dekubitus", "Druckgeschwür"],
+        body: "**Dekubitus** = Druckwunde durch zu viel Druck auf die Haut.\n\n**Dekubitus Kategorie** = wie tief die Wunde ist (4 Stufen):\n\n• **Kategorie 1** — Haut noch ganz, rote Stelle.\n\n• **Kategorie 2** — Haut offen, flache Wunde. Das hat Frau Yilmaz.\n\n• **Kategorie 3** — tiefe Wunde im Fettgewebe.\n\n• **Kategorie 4** — sehr tiefe Wunde, Knochen sichtbar.\n\n**Wundgrund** = die Stelle IN der Wunde.\n\n**Wundrand** = der Rand der Wunde — Grenze zur gesunden Haut.\n\nKategorie 1: Haut noch ganz = Vorbeugung reicht. Ab Kategorie 2: Haut offen = Behandlung nötig.",
+        glossarBegriffe: ["Dekubitus", "Dekubitus Kategorie", "Druckgeschwür", "Wundrand", "Wundgrund", "Haut", "Prophylaxe", "Rötung", "Druckwunde", "Nicht-wegdrückbare Rötung"],
       },
       inlineWissen: {
         bausteinRef: "dekubitus-prophylaxe-was-ist-dekubitus",
@@ -471,13 +471,13 @@ export const CE02_SIT_YILMAZ_SPIRALE2_INFORMIEREN: SituationsPhase = {
       displayFormat: "news",
       contentC1: {
         title: "Was passiert, wenn etwas nicht dokumentiert wird?",
-        body: "Eine Beobachtung ohne Dokumentation ist rechtlich nicht existent. § 630f BGB (Behandlungsvertrag) verpflichtet zur zeitnahen, vollständigen Dokumentation. Bei fehlender Dokumentation gilt im Streitfall: Beweislastumkehr — die Einrichtung muss beweisen, dass die Maßnahme durchgeführt wurde, was ohne Dokumentation unmöglich ist. Aufbewahrungspflicht: 10 Jahre.",
-        glossarBegriffe: ["§ 630f BGB", "Beweislastumkehr"],
+        body: "Eine Beobachtung ohne Dokumentation ist rechtlich nicht existent. § 630f BGB (Behandlungsvertrag) verpflichtet zur zeitnahen, vollständigen Dokumentation. Bei fehlender Dokumentation gilt im Streitfall: Beweislastumkehr — die Einrichtung muss beweisen, dass die Maßnahme durchgeführt wurde, was ohne Dokumentation unmöglich ist. Aufbewahrungspflicht: 10 Jahre.\n\n**Dokumentation** = systematische schriftliche Festhaltung aller pflegerischen Beobachtungen, Massnahmen und Reaktionen in der Patientenakte.\n\n**Maßnahme** = konkrete pflegerische Handlung (z.B. Umlagerung, Hautinspektion, Verbandwechsel) — sie muss geplant, durchgeführt und dokumentiert werden.",
+        glossarBegriffe: ["§ 630f BGB", "Beweislastumkehr", "Dokumentation", "Maßnahme", "Pflege", "Patientenakte"],
       },
       contentB1: {
         title: "Was passiert, wenn man etwas nicht aufschreibt?",
-        body: "Wenn eine Pflegekraft etwas sieht aber nicht aufschreibt: Das gilt rechtlich als nicht passiert. Das Gesetz (§ 630f BGB) sagt: Alles muss schnell und vollständig aufgeschrieben werden. Wenn etwas fehlt: Die Einrichtung muss beweisen, dass es trotzdem gemacht wurde. Das ist sehr schwer ohne Aufschrieb. Die Akte muss 10 Jahre aufbewahrt werden.",
-        glossarBegriffe: ["§ 630f BGB"],
+        body: "Wenn eine Pflegekraft etwas sieht aber nicht aufschreibt: Das gilt rechtlich als nicht passiert. Das Gesetz (§ 630f BGB) sagt: Alles muss schnell und vollständig aufgeschrieben werden. Wenn etwas fehlt: Die Einrichtung muss beweisen, dass es trotzdem gemacht wurde. Das ist sehr schwer ohne Aufschrieb. Die Akte muss 10 Jahre aufbewahrt werden.\n\n**Dokumentation** = alles, was die Pflegekraft sieht und macht, in die Akte schreiben.\n\n**Maßnahme** = eine konkrete Pflege-Handlung (zum Beispiel Umlagern, Verband wechseln).",
+        glossarBegriffe: ["§ 630f BGB", "Dokumentation", "Maßnahme", "Pflege", "Patientenakte"],
       },
     },
 

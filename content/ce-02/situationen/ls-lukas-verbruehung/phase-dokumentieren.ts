@@ -37,13 +37,13 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DOKUMENTIEREN: SituationsPhase = {
       transition: "Du kennst die 8 Kriterien. Jetzt: Schreibe den Eintrag für Lukas.",
       contentC1: {
         title: "Wunddokumentation — 8 Kriterien die rein müssen",
-        body: "",
-        glossarBegriffe: ["Wunddokumentation", "Fotodokumentation", "§ 630f BGB"],
+        body: "**Wunddokumentation** = standardisierte schriftliche Erfassung aller wundrelevanten Beobachtungen und Maßnahmen, gesetzliche Pflicht nach § 630f BGB. **KUSS** = Kindliche Unbehagens- und Schmerz-Skala (Büttner/Finke 2000), wird vor und nach jeder schmerzhaften Maßnahme erhoben und in der Doku festgehalten. **Rötungswall** = sich ausbreitendes Rötungsareal um die Wunde herum, klassisches Infektionszeichen — gehört in die Doku. **Rötungswall (= Entzündungszeichen um die Wunde)** ist Alarmsignal, Arzt informieren.",
+        glossarBegriffe: ["Wunddokumentation", "Fotodokumentation", "§ 630f BGB", "KUSS", "Rötungswall", "Rötungswall (= Entzündungszeichen um die Wunde)"],
       },
       contentB1: {
         title: "Wunddokumentation — was muss rein?",
-        body: "",
-        glossarBegriffe: ["Wunddokumentation", "Fotodokumentation"],
+        body: "**Wunddokumentation** = was du über die Wunde aufschreibst — Pflicht (§ 630f BGB). **KUSS** = Schmerz-Skala für kleine Kinder. **Rötungswall** = breite Rötung um die Wunde — Zeichen einer Entzündung, gehört in die Doku.",
+        glossarBegriffe: ["Wunddokumentation", "Fotodokumentation", "KUSS", "Rötungswall", "Rötungswall (= Entzündungszeichen um die Wunde)"],
       },
       inlineWissen: {
         bausteinRef: "pflegedokumentation-wunddoku-kriterien",
@@ -204,7 +204,10 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DOKUMENTIEREN: SituationsPhase = {
       stepType: "summary",
       bloomLevel: 5,
       kompetenzbereich: "I.1",
-      quellen: [],
+      quellen: [
+        "DNQP (2020): Expertenstandard Schmerzmanagement in der Pflege bei akuten Schmerzen, 2. Aktualisierung",
+        "§ 630f BGB — Dokumentationspflicht der Behandelnden",
+      ],
       track: "basis",
       modus: "checkpoint",
       lernziel: "ce02-lukas-dok-zusammenfassung",

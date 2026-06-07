@@ -32,13 +32,13 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
       transition: "Du kennst die Verbände. Waehle den richtigen für Frau Yilmaz.",
       contentC1: {
         title: "Wundauflagen \u2014 welcher Verband für welche Wunde?",
-        body: "",
-        glossarBegriffe: ["Hydrokolloid-Verband", "Alginate", "VAC-Therapie", "Feuchtes Wundmilieu", "Hydrokolloid", "Silber-Wundauflage", "Fettgaze", "Schaumverband"],
+        body: "**Wundauflage** = medizinisches Material, das direkt auf die Wunde aufgetragen wird (Verband, Hydrokolloid, Schaumverband etc.) — schützt die Wunde, regelt das Wundmilieu und unterstützt die Heilung.\n\n**Umlagern** = Position der Patientin im Bett oder Stuhl regelmäßig verändern (z.B. alle 2 Stunden), um Druck-Stellen zu entlasten und einem Dekubitus vorzubeugen.\n\n**Qualitätssicherung** = systematische Prüfung und Dokumentation pflegerischer Prozesse, damit Standards (DNQP-Expertenstandards, Hygiene-Vorgaben) eingehalten werden.\n\n**Fotodokumentation** = standardisierte Wundfotografie mit Klinikgerät und Maßstab als Ergänzung zur schriftlichen Dokumentation; nur mit Einwilligung der Patientin (DSGVO Art. 9).",
+        glossarBegriffe: ["Wundauflage", "Hydrokolloid-Verband", "Alginate", "VAC-Therapie", "Feuchtes Wundmilieu", "Hydrokolloid", "Silber-Wundauflage", "Fettgaze", "Schaumverband", "Umlagern", "Qualitätssicherung", "Fotodokumentation", "Dokumentation", "Einwilligung", "Dekubitus"],
       },
       contentB1: {
         title: "Welcher Verband passt? Ein Überblick",
-        body: "",
-        glossarBegriffe: ["Hydrokolloid-Verband", "Feuchtes Wundmilieu"],
+        body: "**Wundauflage** = der Verband oder das Material, das auf die Wunde kommt.\n\n**Umlagern** = Frau Yilmaz im Bett in eine andere Position bringen (z.B. alle 2 Stunden) — gegen Druckwunden.\n\n**Qualitätssicherung** = prüfen, ob alles richtig gemacht wird — und es aufschreiben.\n\n**Fotodokumentation** = ein Foto von der Wunde machen, nur mit Erlaubnis der Patientin und mit Maßstab.",
+        glossarBegriffe: ["Wundauflage", "Hydrokolloid-Verband", "Feuchtes Wundmilieu", "Umlagern", "Qualitätssicherung", "Fotodokumentation", "Dokumentation", "Einwilligung", "Dekubitus"],
       },
       inlineWissen: {
         bausteinRef: "dekubitus-prophylaxe-wundauflagen",
@@ -274,15 +274,23 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
         glossarBegriffe: [
           "135°-Schräge Seitenlage",
           "Trochanter major",
+          "Trochanter",
           "Prädilektionsstelle",
           "Kontralateral",
           "Abduktion",
+          "Adduktion",
+          "Innenrotation",
+          "Würde",
+          "Lagerung",
+          "Seitenlage",
+          "Dekubitus",
+          "Hüft-TEP",
         ],
       },
       contentB1: {
         title: "Warum 135°-Seitenlage?",
         body: "Bei 90°-Seitenlage drückt das Gewicht auf den Oberschenkelknochen seitlich. Das ist auch eine gefährliche Stelle für Dekubitus. Bei 135° liegt man schräger: Das Gewicht verteilt sich auf die Gesäßmuskeln. Viel Fleisch und Muskel schützen den Knochen besser.\n\n**Wichtig: Auf welcher Seite?** Frau Yilmaz hat Hüft-OP rechts. Das heißt: Sie liegt auf der **linken** Seite (die nicht-operierte Seite). Die operierte Hüfte ist oben. Niemals auf der operierten Seite liegen — das tut der OP-Stelle weh.\n\nKissen: eins unter die Brust (Stabilisierung), eins zwischen die Beine (wichtig: hält die operierte Hüfte in der richtigen Position!), eins unter den Unterschenkel (Fersen frei), eins am Rücken (damit sie nicht zurückrollt). Das dauert 5 Minuten länger — aber es hilft.",
-        glossarBegriffe: ["135°-Seitenlage", "Kontralateral"],
+        glossarBegriffe: ["135°-Seitenlage", "Kontralateral", "Würde", "Lagerung", "Seitenlage", "Dekubitus", "Hüft-TEP", "Trochanter"],
       },
     },
 
@@ -413,9 +421,9 @@ export const CE02_SIT_YILMAZ_SPIRALE2_PLANEN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Dr. Kirchner betritt das Zimmer. Sie schaut kurz auf Frau Yilmaz, dann auf dich. 'Was haben wir?' Du berichtest:",
+              "Dr. Kirchner betritt das Zimmer. Sie schaut kurz auf Frau Yilmaz, dann auf dich.\n\n\"Was haben wir?\"",
             contextB1:
-              "Dr. Kirchner kommt herein. Sie fragt: 'Was ist los?' Du berichtest.",
+              "Dr. Kirchner kommt herein. Sie fragt:\n\n\"Was ist los?\"",
             speaker: "Du",
             options: [
               {

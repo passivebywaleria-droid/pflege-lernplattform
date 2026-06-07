@@ -41,7 +41,17 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
         body: "02:48 Uhr, Flur der internistischen Station.\n\nFrau Keller flüstert: \"Frau M., Zimmer 14, grad gestürzt, links neben dem Bett, ansprechbar, klagt über Hüftschmerz. Ich übernehme die Infusion nebenan — schau du mal.\" Du liest kurz die Pflegeübergabe in SBAR-Struktur: **S**ituation — Sturz vor 7 Min. **B**ackground — Pneumonie Tag 3, Parkinson II. **A**ssessment — ansprechbar, orientiert, Hüftschmerz links. **R**ecommendation — Assessment + Arzt informieren falls nötig. SBAR ist die Standard-Struktur für klinische Übergaben — sie macht Übergaben vollständig und klar.",
         fallbezug:
           "Frau M. (82, Pneumonie Tag 3) ist in der Nacht gestürzt. Du bist Nachtdienst im 2. Ausbildungsdrittel, arbeitest mit Frau Keller (examinierte Pflegekraft).",
-        glossarBegriffe: [],
+        glossarBegriffe: [
+          "Sturz",
+          "Parkinson",
+          "Pneumonie",
+          "SBAR",
+          "Übergabe",
+          "Assessment",
+          "ansprechbar",
+          "Pflege",
+          "Arzt",
+        ],
       },
       contentB1: {
         title: "Die Übergabe",
@@ -50,7 +60,17 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
         body: "02:48 Uhr, Flur der Station.\n\nFrau Keller flüstert: \"Frau M., Zimmer 14. Sie ist gerade gestürzt, links neben dem Bett. Sie ist wach und klagt über Schmerzen in der Hüfte. Ich gehe zu einem anderen Patienten — schau du mal nach ihr.\" Du bekommst eine kurze Pflege-Übergabe (SBAR-Struktur): **S** = Sturz vor 7 Minuten. **B** = Pneumonie Tag 3, Parkinson. **A** = wach, orientiert, Schmerzen in der linken Hüfte. **R** = Assessment machen, Arzt rufen wenn nötig. SBAR ist ein Standard — so bleibt die Übergabe klar und vollständig.",
         fallbezug:
           "Frau M. ist 82. Sie ist seit 3 Tagen im Krankenhaus wegen Lungenentzündung. Heute Nacht ist sie gestürzt. Du bist Schülerin im Nachtdienst.",
-        glossarBegriffe: [],
+        glossarBegriffe: [
+          "Sturz",
+          "Parkinson",
+          "Pneumonie",
+          "SBAR",
+          "Übergabe",
+          "Assessment",
+          "ansprechbar",
+          "Pflege",
+          "Arzt",
+        ],
       },
     },
 
@@ -394,7 +414,8 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
         // Setting + Patient-Reaktion komplett in dialogPhases[0].context — sonst wurden
         // zwei narrative Bubbles direkt nacheinander gezeigt (body via parseGestikUndSpeech
         // + context als Phase-Setup).
-        body: "",
+        // FIX (2026-04-30): Validator G-04 — body darf bei Dialog-Steps nicht leer sein.
+        body: "Du betrittst das Zimmer. Frau M. liegt am Boden. Das Gespräch beginnt.",
         glossarBegriffe: [],
       },
       contentB1: {
@@ -460,9 +481,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
           },
           {
             context:
-              "Du setzt dich neben Frau M. auf den Boden, Rücken zur Wand, damit ihr auf einer Ebene seid. Du fragst ruhig:",
+              "Du setzt dich neben Frau M. auf den Boden, Rücken zur Wand, damit ihr auf einer Ebene seid. Frau M. schaut dich an und wartet.",
             contextB1:
-              "Du setzt dich neben Frau M. auf den Boden. Ihr seid auf einer Höhe. Du fragst ruhig:",
+              "Du setzt dich neben Frau M. auf den Boden. Ihr seid auf einer Höhe. Frau M. schaut dich an und wartet.",
             speaker: "Du",
             options: [
               {
@@ -511,9 +532,9 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
           },
           {
             context:
-              "Du hast jetzt: ansprechbar, orientiert, keine sichtbare Deformität, Schmerz linke Hüfte (NRS 6), kann Zehen bewegen. Du entscheidest:",
+              "Du hast jetzt: ansprechbar, orientiert, keine sichtbare Deformität, Schmerz linke Hüfte (NRS 6), kann Zehen bewegen. Frau M. schaut dich fragend an.",
             contextB1:
-              "Du weißt jetzt: Frau M. ist wach und orientiert. Keine sichtbare Verletzung. Schmerz in der linken Hüfte. Sie kann die Zehen bewegen. Du entscheidest:",
+              "Du weißt jetzt: Frau M. ist wach und orientiert. Keine sichtbare Verletzung. Schmerz in der linken Hüfte. Sie kann die Zehen bewegen. Frau M. schaut dich fragend an.",
             speaker: "Du",
             options: [
               {
@@ -579,13 +600,13 @@ export const CE02_SIT_FRAU_M_NACHT_STURZ_INFORMIEREN: SituationsPhase = {
       transition: "Noch ein Werkzeug brauchst du, bevor Phase 2 beginnt: die Schmerzskala.",
       contentC1: {
         title: "Erste Assessment-Reihenfolge",
-        body: "Du hast Frau M. begrüßt, Bewusstsein geprüft, erste Fragen gestellt. Jetzt folgt das strukturierte Assessment.\n\nSortiere die folgenden Schritte in die richtige Reihenfolge — nach Priorität (ABCDE-ähnlich) und Sicherheitslogik.",
-        glossarBegriffe: [],
+        body: "Du hast Frau M. begrüßt, Bewusstsein geprüft, erste Fragen gestellt. Jetzt folgt das strukturierte Assessment.\n\n**Schmerzskala** = ein Messinstrument für Schmerzintensität. Standard ist die NRS (Numerische Rating-Skala 0-10) — die Patientin nennt selbst eine Zahl. **Pneumonie** = Lungenentzündung, oft bakteriell, Frau M.s Hauptdiagnose Tag 3. **Vitalzeichen** = die zentralen Kreislauf-Basiswerte: Blutdruck, Puls, Sauerstoff im Blut, Körpertemperatur und Atmung. **SpO2** = der Sauerstoff-Wert im Blut, auf einer Skala von 0 bis 100 % — Normwert ≥ 95 % (bei Pneumonie kann er fallen).\n\nSortiere die folgenden Schritte in die richtige Reihenfolge — nach Priorität (ABCDE-ähnlich) und Sicherheitslogik.",
+        glossarBegriffe: ["Schmerzskala", "NRS", "Vitalzeichen", "Pneumonie", "SpO2"],
       },
       contentB1: {
         title: "Was prüfe ich als nächstes?",
-        body: "Du hast Frau M. begrüßt. Du weißt: Sie ist wach. Jetzt prüfst du weiter. In welcher Reihenfolge? Sortiere die Schritte.",
-        glossarBegriffe: [],
+        body: "Du hast Frau M. begrüßt. Du weißt: Sie ist wach. Jetzt prüfst du weiter.\n\n**Schmerzskala** = eine Skala für Schmerzen. Standard ist die NRS von 0 bis 10. Die Patientin sagt selbst eine Zahl. **Pneumonie** = Lungenentzündung. Frau M. hat das. **Vitalzeichen** = die wichtigsten Kreislauf-Werte: Blutdruck, Puls, Sauerstoff im Blut, Temperatur, Atmung. **SpO2** = der Sauerstoff-Wert im Blut auf einer Skala von 0-100 %. Normal ist 95 % oder höher.\n\nIn welcher Reihenfolge prüfst du? Sortiere die Schritte.",
+        glossarBegriffe: ["Schmerzskala", "Vitalzeichen", "Pneumonie", "SpO2"],
       },
       question: {
         fragetext:

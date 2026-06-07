@@ -7,7 +7,7 @@ import type { PatientBeschreibung } from "../../../_types";
 export const CE02_SIT_EMILIA_SAEUGLING_PATIENT: PatientBeschreibung = {
   patientId: "pat-emilia-k",
   name: "Emilia K.",
-  alter: 0, // 4 Monate
+  alter: 0.33, // 4 Monate
   geschlecht: "w",
   diagnosen: [
     "Bronchiolitis durch RSV (Respiratorisches Synzytial-Virus)",

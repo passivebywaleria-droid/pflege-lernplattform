@@ -126,6 +126,20 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
                 feedbackB1:
                   "Gut. Frau Kovač erinnert sich. Sie ist bereit zuzuhören.",
               },
+              {
+                text: "\"Also Frau Kovač — der Fernseher muss abends aus. Das stört Ihren Schlaf.\"",
+                textB1:
+                  "\"Der Fernseher muss abends aus. Das ist schlecht für den Schlaf.\"",
+                patientResponse:
+                  "Frau Kovač verschränkt die Arme. \"Das hab ich mir schon gedacht, dass das kommt.\"",
+                patientResponseB1:
+                  "Frau Kovač verschränkt die Arme. \"Das hab ich mir gedacht.\"",
+                score: 0,
+                feedback:
+                  "Zu direktiv und ohne Beziehungsaufbau. Du hast das Gespräch angekündigt, aber jetzt kommst du mit einer Anweisung statt einer offenen Eröffnung. Frau Kovač fühlt sich bevormundet.",
+                feedbackB1:
+                  "Nicht gut. Du gibst eine Anweisung statt zu fragen. Frau Kovač fühlt sich bevormundet.",
+              },
             ],
           },
           {
@@ -138,7 +152,7 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
               {
                 text: "\"Das Fernsehen bis Mitternacht — das Licht des Bildschirms gibt Ihrem Körper das Signal: Tag. Deshalb schüttet Ihr Körper kein Melatonin aus — das ist das Hormon, das Sie müde macht und einschlafen lässt.\"",
                 textB1:
-                  "\"Der Fernseher sendet blaüs Licht. Das sagt Ihrem Körper: Es ist Tag. Deshalb macht Ihr Körper kein Melatonin (= das Schlaf-Hormon). Ohne Melatonin kommen Sie nicht ins Schlafen.\"",
+                  "\"Der Fernseher sendet blaues Licht. Das sagt Ihrem Körper: Es ist Tag. Deshalb macht Ihr Körper kein Melatonin (= das Schlaf-Hormon). Ohne Melatonin kommen Sie nicht ins Schlafen.\"",
                 patientResponse:
                   "\"Melatonin — das kenn ich. Aus der Apotheke.\" — Sie überlegt kurz.",
                 patientResponseB1:
@@ -148,6 +162,20 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
                   "Sehr gut — die Erklärung ist sachlich, verständlich und ohne Vorwurf. Frau Kovač kennt Melatonin — das ist ein Anknüpfungspunkt. Weiter.",
                 feedbackB1:
                   "Gut. Einfach erklärt. Frau Kovač kennt Melatonin — das hilft.",
+              },
+              {
+                text: "\"Fernsehen ist halt schlecht für den Schlaf. Das weiß man.\"",
+                textB1:
+                  "\"Fernsehen ist schlecht für den Schlaf.\"",
+                patientResponse:
+                  "\"Das sagen alle. Aber warum genau?\"",
+                patientResponseB1:
+                  "\"Das sagen alle. Aber warum?\"",
+                score: 1,
+                feedback:
+                  "Zu allgemein. Du sagst WAS, aber nicht WARUM. Frau Kovač braucht die Erklärung (Blaulicht, Melatonin), nicht nur die Behauptung. Ohne Verständnis gibt es keine Verhaltensänderung.",
+                feedbackB1:
+                  "Zu allgemein. Du sagst dass es schlecht ist — aber nicht warum. Ohne Erklärung ändert Frau Kovač nichts.",
               },
             ],
           },
@@ -223,6 +251,20 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
                 feedbackB1:
                   "Gut. Die Vereinbarung ist konkret und von ihr. Du fragst morgen nach. Das ist Pflege-Beratung.",
               },
+              {
+                text: "\"Gut, dann machen Sie das einfach. Bis morgen.\"",
+                textB1:
+                  "\"Ok, dann machen Sie das. Bis morgen.\"",
+                patientResponse:
+                  "Frau Kovač nickt, aber sie wirkt etwas verloren.",
+                patientResponseB1:
+                  "Frau Kovač nickt. Sie wirkt etwas unsicher.",
+                score: 1,
+                feedback:
+                  "Kein echter Abschluss. Du übergehst die Vereinbarungs-Phase und gibst keine Rückmeldung. Frau Kovač weiß nicht ob du morgen nachfragst — und ohne Feedback-Loop wird sie es wahrscheinlich nicht durchziehen.",
+                feedbackB1:
+                  "Nicht gut. Du sagst nicht, dass du morgen fragst. Ohne Nachfrage wird Frau Kovač es wahrscheinlich nicht probieren.",
+              },
             ],
           },
         ],
@@ -246,13 +288,13 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Pflegeplan anpassen — Befund trifft Maßnahme",
-        body: "Jetzt aktualisierst du den Pflegeplan. Paare den aktuellen Befund mit der passenden Maßnahmen-Anpassung.",
-        glossarBegriffe: ["Pflegeplanung", "SMART-Ziel"],
+        body: "**Anpassung** = die Veränderung einer Pflegemaßnahme oder eines Pflegeziels nach der Evaluation. Sie ist der letzte Schritt im Pflegeprozess, bevor der nächste Zyklus startet.\n\nJetzt aktualisierst du den Pflegeplan. Paare den aktuellen Befund mit der passenden Maßnahmen-Anpassung.",
+        glossarBegriffe: ["Pflegeplanung", "SMART-Ziel", "Anpassung"],
       },
       contentB1: {
         title: "Was muss sich morgen ändern?",
-        body: "Der heutige Tag hat etwas gezeigt. Was muss im Plan für morgen anders sein? Verbinde Befund mit Anpassung.",
-        glossarBegriffe: ["Pflegeplanung"],
+        body: "**Anpassung** = du veränderst eine Pflegemaßnahme oder ein Ziel, weil die Evaluation gezeigt hat: so wie geplant funktioniert es nicht (oder es geht besser).\n\nDer heutige Tag hat etwas gezeigt. Was muss im Plan für morgen anders sein? Verbinde Befund mit Anpassung.",
+        glossarBegriffe: ["Pflegeplanung", "Anpassung"],
       },
       question: {
         fragetext:
@@ -292,13 +334,13 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Reflexion — ambulante Evaluation",
-        body: "Nach dem Abendbesuch: Kurze Reflexionsfrage (2–3 Sätze).",
-        glossarBegriffe: ["Evaluation", "Pflegeprozess"],
+        body: "**Kontinuität** = die durchgehende, ununterbrochene Begleitung einer Patientin durch dieselbe Bezugspflegekraft oder dasselbe Team. In der ambulanten Pflege schwierig, weil viele verschiedene Kolleginnen abwechselnd kommen.\n\nNach dem Abendbesuch: Kurze Reflexionsfrage (2–3 Sätze).",
+        glossarBegriffe: ["Evaluation", "Pflegeprozess", "Kontinuität"],
       },
       contentB1: {
         title: "Was ist schwierig an der ambulanten Pflege?",
-        body: "Schreibe 1–2 Sätze: Was ist das Schwierigste an der Evaluation in der ambulanten Pflege?",
-        glossarBegriffe: ["Evaluation"],
+        body: "**Kontinuität** = wenn dieselbe Pflegekraft (oder ein festes kleines Team) eine Patientin lange begleitet. Ambulant schwierig, weil oft verschiedene Kolleginnen kommen.\n\nSchreibe 1–2 Sätze: Was ist das Schwierigste an der Evaluation in der ambulanten Pflege?",
+        glossarBegriffe: ["Evaluation", "Kontinuität"],
       },
       question: {
         fragetext:
@@ -335,12 +377,12 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
       contentC1: {
         title: "Was bedeutet Evaluation im Pflegeprozess?",
         body: "Evaluation ist Phase 5 des sechsstufigen Pflegeprozesses (Assess, Diagnose, Plan, Implement, Evaluate, Document). Sie prüft: Hat die Maßnahme das Ziel erreicht? Wenn nicht — warum nicht? Welche Anpassung ist nötig?\n\nFür Frau Kovač: Das Pflegeziel war 'Trinkmenge ≥1.200 ml in 3 Tagen'. Das Ergebnis heute: 680 ml bis 18:30 Uhr. Zum Tagesziel fehlt noch etwas — das ist Ausgangspunkt für den Abendbesuch und den Plan für morgen.",
-        glossarBegriffe: ["Evaluation", "Pflegeprozess", "SMART-Ziel"],
+        glossarBegriffe: ["Evaluation", "Pflegeprozess", "SMART-Ziel", "Anpassung", "Trinkmenge", "Ziel", "Maßnahme"],
       },
       contentB1: {
         title: "Was ist Evaluation?",
         body: "Evaluation = Nachschauen ob das Pflegeziel erreicht ist.\n\nBeispiel: Das Ziel war: Frau Kovač trinkt mehr. Hat sie mehr getrunken? Wie viel? Was muss morgen anders sein?\n\nEvaluation ist keine Kontrolle. Es ist: Informationen sammeln um den Plan zu verbessern.",
-        glossarBegriffe: ["Evaluation", "Pflegeziel"],
+        glossarBegriffe: ["Evaluation", "Pflegeziel", "Anpassung", "Trinkmenge", "Ziel", "Maßnahme"],
       },
     },
     // Opt-5.B — Timeline des Tages

@@ -30,13 +30,13 @@ export const CE02_SIT_NGUYEN_STOMA_DOKUMENTIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Haupt-Freitext: Stoma-Dokumentation heute Morgen",
-        body: "Schreibe die Stoma-Dokumentation für den heutigen Morgen. Dein Text soll ca. 120–180 Wörter umfassen. Die KI prüft ob 9 Pflicht-Elemente enthalten sind.\n\n**Pflicht-Elemente:**\n1) Datum + Uhrzeit des Beutelwechsels\n2) Stoma-Befund (Farbe, Prominenz, Schleimhaut)\n3) Hautumgebungs-Befund (gereizt? Mazerierung? Rötung?)\n4) Output (Konsistenz, Farbe, Menge geschätzt)\n5) Leckage und Maßnahme\n6a) Querverweis Bauchdeckenwunde (Status — Detail in der Wunddokumentation)\n7) Wer beim Wechsel dabei war\n8) Angehörigen-Anleitung (was, mit wem, durch wen)\n9) Stomatherapeut-Visite (wann, was, Ergebnis)\n\n**Wichtig:** Die postoperative Bauchdeckenwunde wird ausführlich in einer eigenen Wunddokumentation (DNQP Wunde, standardisierter Wund-Assessment-Bogen) erfasst — in der Stomadokumentation reicht ein kurzer Querverweis zum Status.\n\n**Stil:** sachlich, keine Wertungen, keine Diagnosen — nur Beobachtungen und Maßnahmen.",
-        glossarBegriffe: ["Stomadokumentation", "Wunddokumentation", "Pflicht-Elemente", "Behandlungskontinuität"],
+        body: "**DNQP** = Deutsches Netzwerk für Qualitätsentwicklung in der Pflege — entwickelt die Expertenstandards (z.B. Sturzprophylaxe, Dekubitusprophylaxe, Schmerzmanagement, chronische Wunden), die für die Pflege in Deutschland verbindlich sind.\n\n**Stomadokumentation** = standardisierte Pflegedokumentation, die alle Beobachtungen und Maßnahmen rund um das Stoma erfasst (Befund, Output, Leckage, Beutelwechsel, Anleitung). Auch geschrieben als **Stoma-Dokumentation**.\n\n**Wunddokumentation** = standardisierte Pflegedokumentation für Wunden (z.B. die postoperative Bauchdeckenwunde) nach DNQP-Standard mit Wund-Assessment-Bogen (Lokalisation, Größe, Tiefe, Wundgrund, Wundrand, Exsudat).\n\nSchreibe die Stoma-Dokumentation für den heutigen Morgen. Dein Text soll ca. 120–180 Wörter umfassen. Die KI prüft ob 9 Pflicht-Elemente enthalten sind.\n\n**Pflicht-Elemente:**\n1) Datum + Uhrzeit des Beutelwechsels\n2) Stoma-Befund (Farbe, Prominenz, Schleimhaut)\n3) Hautumgebungs-Befund (gereizt? Mazerierung? Rötung?)\n4) Output (Konsistenz, Farbe, Menge geschätzt)\n5) Leckage und Maßnahme\n6a) Querverweis Bauchdeckenwunde (Status — Detail in der Wunddokumentation)\n7) Wer beim Wechsel dabei war\n8) Angehörigen-Anleitung (was, mit wem, durch wen)\n9) Stomatherapeut-Visite (wann, was, Ergebnis)\n\n**Wichtig:** Die postoperative Bauchdeckenwunde wird ausführlich in einer eigenen Wunddokumentation (DNQP Wunde, standardisierter Wund-Assessment-Bogen) erfasst — in der Stomadokumentation reicht ein kurzer Querverweis zum Status.\n\n**Stil:** sachlich, keine Wertungen, keine Diagnosen — nur Beobachtungen und Maßnahmen.",
+        glossarBegriffe: ["Stomadokumentation", "Wunddokumentation", "Pflicht-Elemente", "Behandlungskontinuität", "Stoma-Dokumentation", "DNQP"],
       },
       contentB1: {
         title: "Stoma-Dokumentation schreiben",
-        body: "Schreibe die Stoma-Dokumentation für heute Morgen. Ca. 120–180 Wörter. Die KI prüft 9 Elemente.\n\n**Was muss drin sein:**\n1) Datum + Uhrzeit des Beutelwechsels\n2) Wie das Stoma aussieht (Farbe, Größe)\n3) Wie die Haut rund ums Stoma aussieht\n4) Was aus dem Stoma kommt (Farbe, Konsistenz, Menge)\n5) Leckage — was war, was du getan hast\n6a) Kurzer Hinweis auf die Bauch-Wunde — die ausführliche Beschreibung steht in der Wunddokumentation\n7) Wer dabei war\n8) Was du der Ehefrau gezeigt hast (Anleitung)\n9) Was Herr Baum (Stomatherapeut) gesagt hat\n\nFür B1-Schüler: Textbausteine einblendbar.",
-        glossarBegriffe: ["Stoma-Dokumentation", "Wunddokumentation"],
+        body: "**Stoma-Dokumentation** (auch **Stomadokumentation**) = das, was du über das Stoma in die Akte schreibst (Farbe, Output, Leckage, Beutelwechsel).\n\n**Wunddokumentation** = das, was du über eine Wunde aufschreibst (z.B. die Bauch-OP-Wunde) — separat vom Stoma.\n\nSchreibe die Stoma-Dokumentation für heute Morgen. Ca. 120–180 Wörter. Die KI prüft 9 Elemente.\n\n**Was muss drin sein:**\n1) Datum + Uhrzeit des Beutelwechsels\n2) Wie das Stoma aussieht (Farbe, Größe)\n3) Wie die Haut rund ums Stoma aussieht\n4) Was aus dem Stoma kommt (Farbe, Konsistenz, Menge)\n5) Leckage — was war, was du getan hast\n6a) Kurzer Hinweis auf die Bauch-Wunde — die ausführliche Beschreibung steht in der Wunddokumentation\n7) Wer dabei war\n8) Was du der Ehefrau gezeigt hast (Anleitung)\n9) Was Herr Baum (Stomatherapeut) gesagt hat\n\nFür B1-Schüler: Textbausteine einblendbar.",
+        glossarBegriffe: ["Stoma-Dokumentation", "Wunddokumentation", "Stomadokumentation"],
       },
       question: {
         fragetext:
@@ -164,13 +164,13 @@ export const CE02_SIT_NGUYEN_STOMA_DOKUMENTIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Was gehört wohin? — Dokumentationsbereiche",
-        body: "Informationen aus dem heutigen Morgen. Welche gehört in welchen Dokumentationsbereich? Wichtige Trennfälle: Herr Nguyens Zitat 'Ich bin kein richtiger Mann mehr' — Pflegebericht oder nicht dokumentieren? Bauchdeckenwunde — Stomadokumentation oder Wunddokumentation?",
+        body: "**Stomadokumentation** = Befunde rund ums Stoma (Farbe, Output, Beutelwechsel, Leckage). **Wunddokumentation** = separate Doku für Wunden (z.B. Bauchdeckenwunde) nach DNQP-Standard.\n\nInformationen aus dem heutigen Morgen. Welche gehört in welchen Dokumentationsbereich? Wichtige Trennfälle: Herr Nguyens Zitat 'Ich bin kein richtiger Mann mehr' — Pflegebericht oder nicht dokumentieren? Bauchdeckenwunde — Stomadokumentation oder Wunddokumentation?",
         glossarBegriffe: ["Pflegebericht", "Stomadokumentation", "Wunddokumentation", "Behandlungskontinuität"],
       },
       contentB1: {
         title: "Was kommt wohin in die Dokumentation?",
-        body: "Informationen aus dem Morgen. Wohin schreibst du sie? Wichtig: Stoma-Befunde und Wund-Befunde werden getrennt dokumentiert.",
-        glossarBegriffe: ["Pflegebericht", "Stoma-Dokumentation", "Wunddokumentation"],
+        body: "**Stomadokumentation** = was du über das Stoma schreibst. **Wunddokumentation** = was du über die Bauch-Wunde schreibst. Beides getrennt!\n\nInformationen aus dem Morgen. Wohin schreibst du sie? Wichtig: Stoma-Befunde und Wund-Befunde werden getrennt dokumentiert.",
+        glossarBegriffe: ["Pflegebericht", "Stoma-Dokumentation", "Wunddokumentation", "Stomadokumentation"],
       },
       question: {
         fragetext:
@@ -227,20 +227,23 @@ export const CE02_SIT_NGUYEN_STOMA_DOKUMENTIEREN: SituationsPhase = {
       stepType: "freetext",
       bloomLevel: 6,
       kompetenzbereich: "I.1",
-      quellen: [],
+      quellen: [
+        "Joint Commission (2017): SBAR Communication Tool — Situation, Background, Assessment, Recommendation",
+        "I Care Pflege (Thieme): Kommunikation und Übergabe",
+      ],
       track: "basis",
       modus: "schreibtisch",
       lernziel: "ce02-nguyen-dok-uebergabe",
       tag: "pflege",
       contentC1: {
         title: "Mündliche Übergabe im SBAR-Format",
-        body: "Schreibe die mündliche Übergabe für die Kollegin im Spätdienst. SBAR-Format. 3–4 Sätze. Die KI prüft: Ist SBAR vollständig? Stoma-Status klar? Emotionaler Status erwähnt? Ernährung als offener Punkt?",
-        glossarBegriffe: ["SBAR", "Übergabe", "Behandlungskontinuität"],
+        body: "**Mündliche Übergabe** = die strukturierte Weitergabe patientenbezogener Informationen von Schicht zu Schicht. SBAR ist das Standard-Format dafür.\n\n**Beinübungen** = aktive oder unterstützte Bewegungen der Beine im Bett (Fußkreisen, Fußheben, Hacke-Spitze) zur Aktivierung der Bein-Muskelpumpe und damit zur Thromboseprophylaxe.\n\nSchreibe die mündliche Übergabe für die Kollegin im Spätdienst. SBAR-Format. 3–4 Sätze. Die KI prüft: Ist SBAR vollständig? Stoma-Status klar? Emotionaler Status erwähnt? Ernährung als offener Punkt?",
+        glossarBegriffe: ["SBAR", "Übergabe", "Behandlungskontinuität", "Mündliche Übergabe", "Beinübungen"],
       },
       contentB1: {
         title: "Übergabe schreiben",
-        body: "Schreibe die Übergabe für die Nachmittags-Kollegin. SBAR-Format. 3–4 Sätze. Was ist wichtig?",
-        glossarBegriffe: ["SBAR", "Übergabe"],
+        body: "**Mündliche Übergabe** = wenn du der nächsten Schicht mündlich erzählst, was wichtig ist. SBAR ist das Standard-Format.\n\n**Beinübungen** = Bewegungen der Beine im Bett (z.B. Fußkreisen). Schützen vor Thrombose.\n\nSchreibe die Übergabe für die Nachmittags-Kollegin. SBAR-Format. 3–4 Sätze. Was ist wichtig?",
+        glossarBegriffe: ["SBAR", "Übergabe", "Mündliche Übergabe", "Beinübungen"],
       },
       question: {
         fragetext:
@@ -271,7 +274,10 @@ export const CE02_SIT_NGUYEN_STOMA_DOKUMENTIEREN: SituationsPhase = {
       stepType: "mc",
       bloomLevel: 4,
       kompetenzbereich: "I.1",
-      quellen: [],
+      quellen: [
+        "§ 630f BGB — Dokumentationspflicht der Behandelnden",
+        "DSGVO Art. 5 — Grundsätze für die Verarbeitung personenbezogener Daten (Datenminimierung, Zweckbindung)",
+      ],
       track: "vertiefung",
       modus: "challenge",
       lernziel: "ce02-nguyen-dok-dokumentationsfehler",
@@ -334,20 +340,23 @@ export const CE02_SIT_NGUYEN_STOMA_DOKUMENTIEREN: SituationsPhase = {
       stepType: "summary",
       bloomLevel: 5,
       kompetenzbereich: "I.1",
-      quellen: [],
+      quellen: [
+        "I Care Pflege (Thieme): Pflegeprozess und Pflegeplanung",
+        "§ 630f BGB — Dokumentationspflicht der Behandelnden",
+      ],
       track: "vertiefung",
       modus: "checkpoint",
       lernziel: "ce02-nguyen-dok-summary",
       tag: "pflege",
       contentC1: {
         title: "Was du heute gelernt hast",
-        body: "Du hast heute eine komplexe Lernsituation abgeschlossen: Herr Nguyen, 72 Jahre, 4. Tag post-OP, Kolostoma, Mangelernährung, Würde-Thema, interkulturelle Kommunikation. Hier ist eine Zusammenfassung der Lernziele — und die Karteikarten, die für dich vorbereitet wurden.",
-        glossarBegriffe: [],
+        body: "**Interkulturelle Kommunikation** = Kommunikation zwischen Menschen unterschiedlicher kultureller Hintergründe. In der Pflege bedeutet das: kultursensible Sprache, Beachtung von Werten (z.B. Schamgrenzen, Geschlechterrollen, Familienstrukturen), Einsatz professioneller Dolmetscher.\n\nDu hast heute eine komplexe Lernsituation abgeschlossen: Herr Nguyen, 72 Jahre, 4. Tag post-OP, Kolostoma, Mangelernährung, Würde-Thema, interkulturelle Kommunikation. Hier ist eine Zusammenfassung der Lernziele — und die Karteikarten, die für dich vorbereitet wurden.",
+        glossarBegriffe: ["Interkulturelle Kommunikation"],
       },
       contentB1: {
         title: "Das hast du heute gelernt",
-        body: "Du hast heute viel gelernt. Hier ist eine Zusammenfassung.",
-        glossarBegriffe: [],
+        body: "**Interkulturelle Kommunikation** = Kommunikation zwischen Menschen aus verschiedenen Kulturen. In der Pflege: respektvolle Sprache, Werte beachten, Dolmetscher nutzen.\n\nDu hast heute viel gelernt. Hier ist eine Zusammenfassung.",
+        glossarBegriffe: ["Interkulturelle Kommunikation"],
       },
       question: {
         fragetext: "Zusammenfassung der Lernsituation ls-nguyen-stoma.",

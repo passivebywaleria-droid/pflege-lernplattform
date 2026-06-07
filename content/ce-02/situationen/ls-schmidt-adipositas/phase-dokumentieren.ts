@@ -32,13 +32,13 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Pflegebericht — Frühdienst heute",
-        body: "Schreibe den Pflegebericht für Frau Schmidt, Frühdienst heute. **Wichtig — § 630f BGB / DBfK-Pflegedokumentationsstandard:** Pflegedokumentation muss OBJEKTIV sein. Erlaubt sind: Beobachtungen, Messwerte, Handlungen, wörtliche Patientenzitate. NICHT erlaubt sind: Wertungen wie \"fachgerecht\", \"gut versorgt\", \"freut sich\". Statt Wertung den BEFUND beschreiben.\n\nDein Text soll enthalten: 1) Zustand der Haut (Hautfalten — Befund nach Inspektion), 2) BZ-Messwert (nüchtern + postprandial), 3) BZ-Tagesprofil-Trend (5 Tage), 4) Ernährungsgespräch (was besprochen, mit wörtlichem Patientenzitat statt Bewertung), 5) Fußbefund + Podologie-Termin (was beobachtet, was geleistet, KEINE Bewertung der Fremd-Leistung), 6) Inkontinenzversorgung (Beobachtung der Selbstständigkeit), 7) Verhalten/Stimmung — beschreiben, nicht interpretieren.",
-        glossarBegriffe: [],
+        body: "Begriffsklärung vorab: § 630f BGB ist der Paragraf im Bürgerlichen Gesetzbuch, der die Dokumentationspflicht jeder behandelnden Person regelt — also auch der Pflege. Dokumentationspflicht bedeutet: Jede pflegerische Beobachtung, Maßnahme und Entscheidung muss zeitnah, sachlich und nachvollziehbar schriftlich festgehalten werden. Pflegedokumentation muss vollständig und objektiv sein.\n\nSchreibe den Pflegebericht für Frau Schmidt, Frühdienst heute. **Wichtig (DBfK-Pflegedokumentationsstandard):** Pflegedokumentation muss OBJEKTIV sein. Erlaubt sind: Beobachtungen, Messwerte, Handlungen, wörtliche Patientenzitate. NICHT erlaubt sind: Wertungen wie \"fachgerecht\", \"gut versorgt\", \"freut sich\". Statt Wertung den BEFUND beschreiben.\n\nDein Text soll enthalten: 1) Zustand der Haut (Hautfalten — Befund nach Inspektion), 2) BZ-Messwert (nüchtern + postprandial), 3) BZ-Tagesprofil-Trend (5 Tage), 4) Ernährungsgespräch (was besprochen, mit wörtlichem Patientenzitat statt Bewertung), 5) Fußbefund + Podologie-Termin (was beobachtet, was geleistet, KEINE Bewertung der Fremd-Leistung), 6) Inkontinenzversorgung (Beobachtung der Selbstständigkeit), 7) Verhalten/Stimmung — beschreiben, nicht interpretieren.",
+        glossarBegriffe: ["§ 630f BGB", "Dokumentationspflicht"],
       },
       contentB1: {
         title: "Pflege-Bericht — Frühdienst heute",
-        body: "Schreibe einen Pflege-Bericht für Frau Schmidt — Frühdienst heute.\n\n**Wichtig:** Pflege-Dokumentation muss OBJEKTIV sein (§ 630f BGB).\n- Schreibe nur was du gesehen, gemessen, gemacht hast.\n- KEINE Wertungen wie \"gut\", \"fachgerecht\", \"freut sich\". Stattdessen: Befund beschreiben oder Frau Schmidt zitieren.\n\nDein Text soll enthalten:\n1. Haut der Falten: Wie sieht die Haut aus?\n2. Blutzucker: Welcher Wert?\n3. Blutzucker-Trend: Welche Werte über 5 Tage?\n4. Ernährungs-Gespräch: Was besprochen? Was hat Frau Schmidt wörtlich gesagt?\n5. Fuß-Befund: Was gesehen? Wer war heute morgen da?\n6. Inkontinenz-Versorgung: Wie hat sie es heute gemacht?\n7. Stimmung: Was hast du beobachtet?\n\nSchreibe kurz und sachlich.",
-        glossarBegriffe: [],
+        body: "Kurz erklärt: § 630f BGB ist ein Paragraf im BGB. Er sagt: Pflege MUSS dokumentieren — vollständig, sachlich, nachvollziehbar. Dokumentationspflicht bedeutet: Jede Beobachtung und jede Maßnahme muss aufgeschrieben werden.\n\nSchreibe einen Pflege-Bericht für Frau Schmidt — Frühdienst heute.\n\n**Wichtig:** Pflege-Dokumentation muss OBJEKTIV sein.\n- Schreibe nur was du gesehen, gemessen, gemacht hast.\n- KEINE Wertungen wie \"gut\", \"fachgerecht\", \"freut sich\". Stattdessen: Befund beschreiben oder Frau Schmidt zitieren.\n\nDein Text soll enthalten:\n1. Haut der Falten: Wie sieht die Haut aus?\n2. Blutzucker: Welcher Wert?\n3. Blutzucker-Trend: Welche Werte über 5 Tage?\n4. Ernährungs-Gespräch: Was besprochen? Was hat Frau Schmidt wörtlich gesagt?\n5. Fuß-Befund: Was gesehen? Wer war heute morgen da?\n6. Inkontinenz-Versorgung: Wie hat sie es heute gemacht?\n7. Stimmung: Was hast du beobachtet?\n\nSchreibe kurz und sachlich.",
+        glossarBegriffe: ["§ 630f BGB", "Dokumentationspflicht"],
       },
       question: {
         fragetext:
@@ -265,7 +265,10 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_DOKUMENTIEREN: SituationsPhase = {
       stepType: "summary",
       bloomLevel: 5,
       kompetenzbereich: "I.1",
-      quellen: [],
+      quellen: [
+        "DNQP (2017): Expertenstandard Ernährungsmanagement zur Sicherung und Förderung der oralen Ernährung in der Pflege",
+        "§ 630f BGB — Dokumentationspflicht der Behandelnden",
+      ],
       track: "basis",
       modus: "checkpoint",
       lernziel: "ce02-schmidt-dok-zusammenfassung",

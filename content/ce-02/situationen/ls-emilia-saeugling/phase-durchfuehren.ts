@@ -69,12 +69,12 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Infant Handling beim Säuglingsbad — 5 Prinzipien",
         body: "Bevor du anfängst: die 5 Prinzipien beim Säuglingsbad.\n\n**1. Kopf immer sicher halten:** Nacken liegt auf dem Unterarm, Daumen und Zeigefinger umfassen die Schulter.\n\n**2. Haltearm schafft feste Führung:** Der haltende Arm bleibt ruhig. Die freie Hand wäscht.\n\n**3. Bewegungen langsam und ankündigen:** Emilia braucht Zeit um sich anzupassen. \"Jetzt wasche ich deinen Rücken.\"\n\n**4. Reihenfolge: Gesicht → Körper → Haare:** Von oben nach unten — damit Schmutz nicht nach oben gelangt. Gesicht mit trockenem Waschlappen, Augen von innen nach außen.\n\n**5. Wassertemperatur prüfen:** 36-37 °C — vor dem Eintauchen nochmals am Handgelenk prüfen. *(Hoehl/Kullick, 2019 — Infant Handling)*",
-        glossarBegriffe: ["Infant Handling"],
+        glossarBegriffe: ["Infant Handling", "ankündigen"],
       },
       contentB1: {
         title: "Säuglingsbad — 5 wichtige Regeln",
-        body: "Bevor du anfängst — lerne diese 5 Regeln:\n\n**1. Kopf immer halten:** Nacken liegt auf deinem Unterarm.\n**2. Eine Hand hält, eine wäscht:** Der Haltearm bewegt sich nicht.\n**3. Langsam und ansagen:** Sage Emilia was du tust: \"Jetzt der Rücken.\"\n**4. Zuerst Gesicht, dann Körper, dann Haare:** Von oben nach unten.\n**5. Wasser prüfen:** 36-37 °C — nochmal am Handgelenk testen.",
-        glossarBegriffe: ["Infant Handling"],
+        body: "Bevor du anfängst — lerne diese 5 Regeln:\n\n**1. Kopf immer halten:** Nacken liegt auf deinem Unterarm.\n**2. Eine Hand hält, eine wäscht:** Der Haltearm bewegt sich nicht.\n**3. Langsam und ansagen:** Sage Emilia was du tust: \"Jetzt der Rücken.\"\n**4. Erst Gesicht, dann Körper, dann Haare:** Von oben nach unten.\n**5. Wasser prüfen:** 36-37 °C — nochmal am Handgelenk testen.",
+        glossarBegriffe: ["Infant Handling", "ankündigen"],
       },
     },
 
@@ -121,9 +121,9 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
                   "Laura nickt. \"Ich dachte, ich habe etwas falsch gemacht.\"",
                 score: 3,
                 feedback:
-                  "Du normalisierst Emilias Reaktion und schließt Lauras stille Schuldfrage aus ('ich mache etwas falsch'). Gleichzeitig gibst du eine Vorschau auf eine positive Reaktion — das hält Laura bei der Beobachtung.",
+                  "Du hast Lauras stille Schuldfrage gut erkannt und nimmst ihr die Sorge, sie habe einen Fehler gemacht. Genau richtig: Du normalisierst Emilias Reaktion und gibst gleichzeitig eine Vorschau auf eine positive Reaktion — das hält Laura bei der Beobachtung, weil sie versteht, dass Quengeln zum Bad gehört.",
                 feedbackB1:
-                  "Sehr gut. Du erklärst, dass es normal ist. Und du nimmst Laura die Sorge, sie habe etwas falsch gemacht.",
+                  "Sehr gut. Du erklärst, dass das Quengeln normal ist. Und du nimmst Laura die Sorge, sie habe einen Fehler gemacht — weil das Verhalten zur Eingewöhnung gehört.",
               },
               {
                 text: "\"Warte, ich mache jetzt weiter — Emilia ist etwas empfindlich.\"",
@@ -135,17 +135,17 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
                   "Laura tritt zurück. Sie schaut weg.",
                 score: 0,
                 feedback:
-                  "Ausgrenzend. Du schickst Laura mental aus dem Zimmer — und erklärst ihr nichts. Das ist eine verpasste Gelegenheit für Mutter-Kind-Anleitung, die Lauras Selbstwirksamkeit unterstützt.",
+                  "Du willst Emilia konzentriert versorgen — guter Schutzreflex. Aber stattdessen wirkt es ausgrenzend, weil du Laura mental aus dem Zimmer schickst und ihr nichts erklärst. Das ist eine verpasste Gelegenheit für Mutter-Kind-Anleitung, die Lauras Selbstwirksamkeit unterstützt. Beim nächsten Mal: kurz erklären was passiert und Laura aktiv einbeziehen.",
                 feedbackB1:
-                  "Du schickst Laura weg. Das ist falsch. Laura soll dabei sein und lernen.",
+                  "Du willst Emilia gut versorgen — gut. Aber stattdessen schickst du Laura weg, weil sie nichts versteht und sich überflüssig fühlt. Laura soll dabei sein und lernen. Beim nächsten Mal: Laura einbeziehen, kurz erklären was du machst.",
               },
             ],
           },
           {
             context:
-              "Emilia beruhigt sich wieder. Du wäschst den Rücken. Laura schaut fasziniert zu. Dann sagt sie:",
+              "Emilia beruhigt sich wieder. Du wäschst den Rücken. Laura schaut fasziniert zu. Dann sagt sie:\n\n\"Darf ich das auch mal machen? Ich habe sie noch nie richtig gebadet.\"",
             contextB1:
-              "Emilia wird ruhiger. Du wäschst den Rücken. Laura sagt:",
+              "Emilia wird ruhiger. Du wäschst den Rücken. Laura sagt:\n\n\"Darf ich das auch mal machen? Ich habe sie noch nie richtig gebadet.\"",
             speaker: "Laura K.",
             options: [
               {
@@ -223,9 +223,9 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
                   "Laura schaut nur zu.",
                 score: 1,
                 feedback:
-                  "Du beruhigst Emilia — das ist korrekt. Aber du verpasst die Chance, Laura einzubeziehen. Emilia beruhigt sich auf dem Arm der Mutter sogar schneller — und Laura bekommt eine wichtige Erfolgserfahrung.",
+                  "Du beruhigst Emilia — das ist korrekt. Aber du verpasst die Chance, Laura einzubeziehen. Emilia beruhigt sich auf dem Arm der Mutter sogar schneller — und Laura bekommt eine wichtige Erfolgserfahrung. Beim nächsten Mal: Laura aktiv anbieten Emilia zu halten, weil das die Mutter-Kind-Bindung stärkt.",
                 feedbackB1:
-                  "Nicht falsch — aber Laura hätte jetzt Emilia halten können. Das wäre wichtig für sie.",
+                  "Du bist auf dem richtigen Weg — du beruhigst Emilia. Aber stattdessen hätte Laura jetzt Emilia halten können, weil das ein wichtiger Bonding-Moment für sie wäre. Beim nächsten Mal: Laura aktiv einbeziehen.",
               },
             ],
           },
@@ -397,9 +397,9 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
             text: "\"Ich hole kurz Schwester Andrea — die ist erfahrener mit solchen Situationen.\"",
             isCorrect: false,
             feedback:
-              "Zwischen-Antwort. Unterstützung zu holen ist nie falsch — aber: Laura braucht gerade jemanden der da ist. Sofort rauszugehen schickt die Botschaft: 'Ich weiß nicht was ich mit dir anfangen soll.' Erstmal da sein, Raum halten — dann Andrea holen wenn nötig. Nicht umgekehrt.",
+              "Du hast den richtigen Instinkt — Unterstützung zu holen ist nie verkehrt. Aber stattdessen würde Laura gerade jemanden brauchen der da ist, weil sofort rauszugehen die Botschaft schickt: 'Ich weiß nicht was ich mit dir anfangen soll.' Beim nächsten Mal: erstmal da sein, Raum halten — dann Andrea holen wenn nötig. Nicht umgekehrt.",
             feedbackB1:
-              "Du hast den richtigen Instinkt — Hilfe holen ist okay. Aber erst kurz bei Laura bleiben. Dann Andrea holen wenn nötig.",
+              "Du hast den richtigen Instinkt — Hilfe holen ist okay. Aber stattdessen erst kurz bei Laura bleiben, weil sie gerade niemanden allein lassen braucht. Beim nächsten Mal: erst da sein, dann Andrea holen wenn nötig.",
           },
         ],
       },
@@ -423,12 +423,12 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
         body: "Du setzt dich zu Laura. Emilia schläft auf dem Arm der Mutter. Drei Elemente guter Beratung in dieser Situation:\n\n**1. Aktive Zuhörung — erst zuhören, nicht sofort Ratschläge:** Stelle eine offene Frage: \"Was macht dir gerade am meisten zu schaffen?\" Dann zuhören. Nicht unterbrechen. Nicht sofort lösungsorientiert sein.\n\n**2. Normalisieren ohne entwerten:** \"Viele Mütter nach schlaflosen Nächten fühlen sich genauso. Das bedeutet nicht, dass du versagst — das bedeutet, du gibst gerade alles.\" Nie sagen: 'Das kenne ich' ohne Bezug zu Laura.\n\n**3. Konkretes anbieten:** \"Was würde dir jetzt helfen? Ich passe auf Emilia auf, wenn du kurz schlafen willst — oder ich bringe dir etwas zu trinken.\" Konkrete kleine Angebote wirken mehr als allgemeine Beruhigungen.",
         fallbezug:
           "Laura ist 24, Erstgebärende, allein erziehend, eine Nacht nicht geschlafen. Ihr soziales Netz ist dünn. Sie braucht nicht nur Fakten — sie braucht das Gefühl: 'Ich schaffe das, und jemand sieht das.'",
-        glossarBegriffe: [],
+        glossarBegriffe: ["Trinken", "Wuerde", "Würde"],
       },
       contentB1: {
         title: "Beratung nach dem Weinen — 3 Schritte",
         body: "Du setzt dich neben Laura. Emilia schläft. Jetzt: drei Schritte.\n\n**Schritt 1 — Erst zuhören:** Frage: \"Was macht dir gerade am meisten zu schaffen?\" Und dann: zuhören. Nicht sofort Tipps geben.\n\n**Schritt 2 — Normalisieren:** \"Viele Mütter fühlen sich genauso nach schlaflosen Nächten. Das bedeutet nicht, dass du versagst.\"\n\n**Schritt 3 — Konkretes anbieten:** \"Was würde dir jetzt helfen? Ich passe auf Emilia auf, wenn du kurz schlafen möchtest.\" Kleine konkrete Angebote helfen mehr als große Versprechen.",
-        glossarBegriffe: [],
+        glossarBegriffe: ["Trinken", "Wuerde", "Würde"],
       },
     },
 
@@ -511,12 +511,12 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
       contentC1: {
         title: "Babyhaut-Pflege — was ist erlaubt, was nicht?",
         body: "Checkliste: Was kommt ans Baby — was nicht?\n\n✓ Wasser allein (reicht für gesunde Babyhaut meist völlig)\n✓ pH-neutrale Baby-Waschlotion wenn nötig (sparsam)\n✗ Parfümierte Seifen oder Erwachsenen-Duschgel\n✗ Alkohol-haltige Pflegeprodukte (trocknen die Haut aus)\n✗ Körperpuder (Einatmungsgefahr — Lungenreizung möglich)\n✗ Cremes auf wunde Haut ohne ärztliche Anordnung *(Hoehl/Kullick, 2019)*",
-        glossarBegriffe: [],
+        glossarBegriffe: ["Haut"],
       },
       contentB1: {
         title: "Was ist erlaubt beim Bad?",
         body: "Diese Checkliste zeigt: Was darf ans Baby — was nicht?\n\n✓ Wasser allein — das reicht meistens\n✓ Baby-Waschlotion (pH-neutral, sparsam)\n✗ Parfümierte Seife — nein\n✗ Alkohol-Produkte — nein (trocknet die Haut)\n✗ Puder — nein (Einatmungsgefahr)",
-        glossarBegriffe: [],
+        glossarBegriffe: ["Haut"],
       },
     },
 
@@ -534,12 +534,12 @@ export const CE02_SIT_EMILIA_SAEUGLING_DURCHFUEHREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Windeldermatitis — Ursache und Prävention",
-        body: "Klapp die Karte um.",
+        body: "**Windeldermatitis** = entzündliche Hautreizung im Windelbereich, ausgelöst durch Kontakt mit Stuhl, Urin und feuchtem Klima. Klapp die Karte um.",
         glossarBegriffe: ["Windeldermatitis"],
       },
       contentB1: {
         title: "Windeldermatitis",
-        body: "Klapp die Karte um.",
+        body: "**Windeldermatitis** = wunde, rote Haut im Windelbereich (entsteht durch Urin und Stuhl in der feuchten Windel). Klapp die Karte um.",
         glossarBegriffe: ["Windeldermatitis"],
       },
       question: {

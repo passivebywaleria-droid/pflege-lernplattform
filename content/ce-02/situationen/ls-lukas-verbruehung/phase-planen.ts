@@ -30,13 +30,13 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
       transition: "Maßnahmen sortiert. Aber warum eigentlich feuchte Wundbehandlung?",
       contentC1: {
         title: "Maßnahmen einordnen — Zeitachse und Bereich",
-        body: "Sortiere die Maßnahmen in die richtige Zelle: nach Zeitachse (sofort / heute / bis Entlassung) und Bereich (Wunde / Flüssigkeit / Kommunikation).",
-        glossarBegriffe: ["Wundauflage", "Flüssigkeitsbilanz"],
+        body: "Sortiere die Maßnahmen in die richtige Zelle: nach Zeitachse (sofort / heute / bis Entlassung) und Bereich (Wunde / Flüssigkeit / Kommunikation). **Wundauflage** = sterile Abdeckung der Wunde, die Exsudat aufnimmt (z.B. Mepilex). **Feuchte Wundbehandlung** = Wundversorgung, bei der das feuchte Wundmilieu erhalten bleibt — nach Winter-Prinzip (1962) heilt feucht bis zu 50 % schneller als trocken. **Schmerzmittel** = Analgetikum (z.B. Paracetamol, Ibuprofen, ggf. Opioide), nach Schema oder als Bedarfsanalgesie verordnet.",
+        glossarBegriffe: ["Wundauflage", "Flüssigkeitsbilanz", "Feuchte Wundbehandlung", "Schmerzmittel"],
       },
       contentB1: {
         title: "Maßnahmen sortieren",
-        body: "Sortiere die Maßnahmen: Wann passiert was? Und in welchem Bereich?",
-        glossarBegriffe: ["Wundauflage", "Flüssigkeitsbilanz"],
+        body: "Sortiere die Maßnahmen: Wann passiert was? Und in welchem Bereich? **Wundauflage** = was du auf die Wunde legst. **Feuchte Wundbehandlung** = Wunde feucht halten — heilt schneller. **Schmerzmittel** = Medikament gegen Schmerzen.",
+        glossarBegriffe: ["Wundauflage", "Flüssigkeitsbilanz", "Feuchte Wundbehandlung", "Schmerzmittel"],
       },
       question: {
         fragetext:
@@ -174,13 +174,42 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
       displayFormat: "stepbystep",
       contentC1: {
         title: "Feuchte Wundbehandlung bei Grad 2a — warum und wie",
-        body: "**Warum feuchte Wundbehandlung?** Das feuchte Wundmilieu beschleunigt die Epithelisierung, schützt die Wundfläche vor Austrocknung und reduziert den Schmerz beim nächsten Verbandwechsel — weil die Auflage nicht an der Wunde festklebt.\n\n**Materialien für Lukas:**\n1. Hydroaktive Wundauflage — bei nässender Grad-2a-Verbrühung im Akutstadium ist ein **silikonbeschichteter Polyurethanschaum** (z. B. Mepilex Border / Mepilex Ag) erste Wahl: nimmt Exsudat auf, haftet nicht an der Wunde, schmerzarmer Wechsel. Hydrokolloid-Verbände sind in der späteren Phase (saubere, granulierende Wunde, geringes Exsudat) eine Option, aber bei stark nässenden Akutwunden suboptimal — Mazerationsgefahr durch Exsudatstau (DGV 2023; Hoehl/Kullick 2019).\n2. Kein festes Einwickeln — Lukas muss seinen Arm bewegen können\n3. Keine alkoholhaltigen Desinfektionsmittel — Schleimhaut und Kinderhaut reagieren empfindlich\n4. Keine Chlorhexidin-Mundspülungen bei Kindern unter 6 Jahren (Schluckgefahr, Schleimhautreizung — DGKJ 2022); kindgerechte Alternative für die Mundpflege ist Octenidin oder eine schluckbare Kamillen-/Salbei-Lösung\n\n**Intervall:** 48–72 Stunden bei intakten Blasen, bei Zeichen von Infektion früher.\n\n**Hinweis Blasen-Management:** Kleine intakte Blasen werden belassen — sie sind natürlicher Wundschutz. Großflächige oder spannungsreiche Blasen können vom Arzt steril punktiert werden (Stichkanal, Blasendach belassen) — das ist ärztliche Entscheidung, keine Pflegemaßnahme (DGV 2023).\n\nQuelle: _(DGV-Leitlinie Thermische Verletzungen, 2023; Hoehl/Kullick 2019; DGKJ 2022 Mundpflege Kleinkind)_",
-        glossarBegriffe: ["Epithelisierung", "Polyurethanschaum (silikonbeschichtet)", "Mazeration", "Octenidin"],
+        body: "**Warum feuchte Wundbehandlung?** Das feuchte Wundmilieu beschleunigt die Epithelisierung, schützt die Wundfläche vor Austrocknung und reduziert den Schmerz beim nächsten Verbandwechsel — weil die Auflage nicht an der Wunde festklebt.\n\n**Materialien für Lukas:**\n1. Hydroaktive Wundauflage — bei nässender Grad-2a-Verbrühung im Akutstadium ist ein **silikonbeschichteter Polyurethanschaum** (z. B. Mepilex Border / Mepilex Ag) erste Wahl: nimmt Exsudat auf, haftet nicht an der Wunde, schmerzarmer Wechsel. Hydrokolloid-Verbände sind in der späteren Phase (saubere, granulierende Wunde, geringes Exsudat) eine Option, aber bei stark nässenden Akutwunden suboptimal — Mazerationsgefahr durch Exsudatstau (DGV 2023; Hoehl/Kullick 2019).\n2. Kein festes Einwickeln — Lukas muss seinen Arm bewegen können\n3. Keine alkoholhaltigen Desinfektionsmittel — Schleimhaut und Kinderhaut reagieren empfindlich\n4. Keine Chlorhexidin-Mundspülungen bei Kindern unter 6 Jahren (Schluckgefahr, Schleimhautreizung — DGKJ 2022); kindgerechte Alternative für die Mundpflege ist Octenidin oder eine schluckbare Kamillen-/Salbei-Lösung\n\n**Intervall:** 48–72 Stunden bei intakten Blasen, bei Zeichen von Infektion früher.\n\n**Hinweis Blasen-Management:** Kleine intakte Blasen werden belassen — sie sind natürlicher Wundschutz. Großflächige oder spannungsreiche Blasen können vom Arzt steril punktiert werden (Stichkanal, Blasendach belassen) — das ist ärztliche Entscheidung, keine Pflegemaßnahme (DGV 2023).\n\n**Begriffe:** **Pflege** = pflegerische Maßnahmen am Patienten. **Schmerz** = subjektive Empfindung, die bei Lukas mit der KUSS-Skala bewertet wird. **Arzt** = ärztliche Entscheidungskompetenz (z.B. Blasenpunktion). **Mundpflege** = Reinigung und Befeuchtung der Mundhöhle. **Chlorhexidin** = antiseptische Mundspüllösung, kontraindiziert bei Kindern unter 6 Jahren wegen Schluckgefahr. **Exsudat** = Wundflüssigkeit, klar bis gelblich-trübe. **Feuchte Wundbehandlung** = Wundversorgung mit feuchtigkeitserhaltender Auflage. **Hydroaktive Wundauflage** = Wundauflage, die mit dem Wundmilieu interagiert (saugt auf oder gibt Feuchtigkeit ab). **Hydrokolloid** = Wundauflage aus gelbildenden Polymeren — geeignet für saubere, gering nässende Wunden. **Verbandwechsel** = standardisierter Austausch der Wundauflage.\n\nQuelle: _(DGV-Leitlinie Thermische Verletzungen, 2023; Hoehl/Kullick 2019; DGKJ 2022 Mundpflege Kleinkind)_",
+        glossarBegriffe: [
+          "Epithelisierung",
+          "Polyurethanschaum (silikonbeschichtet)",
+          "Mazeration",
+          "Octenidin",
+          "Pflege",
+          "Schmerz",
+          "Arzt",
+          "Mundpflege",
+          "Chlorhexidin",
+          "Exsudat",
+          "Feuchte Wundbehandlung",
+          "Hydroaktive Wundauflage",
+          "Hydrokolloid",
+          "Verbandwechsel",
+        ],
       },
       contentB1: {
         title: "Feuchte Wundversorgung — Schritt für Schritt",
-        body: "**Warum feucht?** Feucht heilt besser als trocken. Die Auflage klebt nicht an der Wunde — das macht den nächsten Verbandwechsel weniger schmerzhaft.\n\n**Was wir brauchen:**\n1. Wundauflage die nicht klebt — bei Lukas (nässende Wunde, Akutphase) ist ein **silikonbeschichteter Polyurethanschaum** (z. B. Mepilex) erste Wahl. Er saugt das Wundwasser auf und klebt nicht. Hydrokolloid passt erst später — wenn die Wunde nicht mehr stark nässt.\n2. Kein fest Einwickeln — Lukas muss seinen Arm bewegen\n3. Kein Alkohol auf die Wunde — zu reizend für Kinderhaut\n4. Kein Chlorhexidin für die Mundpflege bei Kindern unter 6 Jahren (Schluckgefahr, reizt die Schleimhaut). Stattdessen: Octenidin oder Kamille — die kann Lukas schlucken ohne Gefahr.\n\n**Blasen:** Kleine ganze Blasen lassen wir zu — sie schützen die Wunde. Große oder pralle Blasen kann der Arzt aufstechen (steril). Das macht aber der Arzt, nicht die Pflege.\n\n**Wann Wechsel?** Alle 48–72 Stunden — bei intakten Blasen. Früher bei Zeichen einer Entzündung.",
-        glossarBegriffe: ["Wundauflage", "Polyurethanschaum", "Octenidin"],
+        body: "**Warum feucht?** Feucht heilt besser als trocken. Die Auflage klebt nicht an der Wunde — das macht den nächsten Verbandwechsel weniger schmerzhaft.\n\n**Was wir brauchen:**\n1. Wundauflage die nicht klebt — bei Lukas (nässende Wunde, Akutphase) ist ein **silikonbeschichteter Polyurethanschaum** (z. B. Mepilex) erste Wahl. Er saugt das Wundwasser auf und klebt nicht. Hydrokolloid passt erst später — wenn die Wunde nicht mehr stark nässt.\n2. Kein fest Einwickeln — Lukas muss seinen Arm bewegen\n3. Kein Alkohol auf die Wunde — zu reizend für Kinderhaut\n4. Kein Chlorhexidin für die Mundpflege bei Kindern unter 6 Jahren (Schluckgefahr, reizt die Schleimhaut). Stattdessen: Octenidin oder Kamille — die kann Lukas schlucken ohne Gefahr.\n\n**Blasen:** Kleine ganze Blasen lassen wir zu — sie schützen die Wunde. Große oder pralle Blasen kann der Arzt aufstechen (steril). Das macht aber der Arzt, nicht die Pflege.\n\n**Wann Wechsel?** Alle 48–72 Stunden — bei intakten Blasen. Früher bei Zeichen einer Entzündung.\n\n**Begriffe:** **Pflege** = pflegerische Aufgaben. **Schmerz** = was Lukas mit KUSS bewertet wird. **Arzt** = entscheidet z.B. ob Blasen aufgestochen werden. **Mundpflege** = Mund sauber und feucht halten. **Chlorhexidin** = Mundspülung — bei Kindern unter 6 nicht erlaubt. **Exsudat** = Wundwasser. **Feuchte Wundbehandlung** = Wunde feucht halten. **Hydroaktive Wundauflage** = Auflage, die mit der Wunde mitarbeitet. **Hydrokolloid** = Auflage für saubere Wunden. **Verbandwechsel** = neue Auflage anlegen.",
+        glossarBegriffe: [
+          "Wundauflage",
+          "Polyurethanschaum",
+          "Octenidin",
+          "Pflege",
+          "Schmerz",
+          "Arzt",
+          "Mundpflege",
+          "Chlorhexidin",
+          "Exsudat",
+          "Feuchte Wundbehandlung",
+          "Hydroaktive Wundauflage",
+          "Hydrokolloid",
+          "Verbandwechsel",
+        ],
       },
     },
 
@@ -198,13 +227,13 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
       tag: "anatomie",
       contentC1: {
         title: "Flüssigkeitsbedarf berechnen — Holliday-Segar",
-        body: "Lukas wiegt 13,2 kg. Berechne seinen Grundflüssigkeitsbedarf nach der Holliday-Segar-Regel für Kinder:\n\n**Formel:** 100 ml/kg/Tag für die ersten 10 kg + 50 ml/kg/Tag für jedes weitere kg (10–20 kg)\n\nBerechne: Wie viel ml Grundflüssigkeitsbedarf hat Lukas pro Tag?",
-        glossarBegriffe: ["Holliday-Segar-Regel", "Grundflüssigkeitsbedarf"],
+        body: "**Flüssigkeitsbedarf** = Menge an Flüssigkeit, die ein Mensch täglich braucht; bei Kindern altersabhängig nach Körpergewicht. **Grundflüssigkeitsbedarf** = Mindestbedarf bei Stoffwechselruhe, ohne Zusatzbedarf durch Fieber oder Wundverlust. **Holliday-Segar-Regel** (1957) = Standard-Formel zur Berechnung des Grundflüssigkeitsbedarfs bei Kindern: 100 ml/kg für die ersten 10 kg + 50 ml/kg für die nächsten 10 kg + 20 ml/kg für jedes weitere kg.\n\nLukas wiegt 13,2 kg. Berechne seinen Grundflüssigkeitsbedarf nach der Holliday-Segar-Regel für Kinder:\n\n**Formel:** 100 ml/kg/Tag für die ersten 10 kg + 50 ml/kg/Tag für jedes weitere kg (10–20 kg)\n\nBerechne: Wie viel ml Grundflüssigkeitsbedarf hat Lukas pro Tag?",
+        glossarBegriffe: ["Holliday-Segar-Regel", "Grundflüssigkeitsbedarf", "Flüssigkeitsbedarf"],
       },
       contentB1: {
         title: "Wie viel soll Lukas trinken?",
-        body: "Lukas wiegt 13,2 kg. Wir berechnen seinen Flüssigkeitsbedarf.\n\nFormel:\n- Für die ersten 10 kg: 100 ml pro kg pro Tag\n- Für das nächste kg (bis 20 kg): 50 ml pro kg pro Tag\n\nBerechne: Wie viel ml pro Tag braucht Lukas mindestens?",
-        glossarBegriffe: ["Flüssigkeitsbedarf", "Holliday-Segar-Regel"],
+        body: "**Flüssigkeitsbedarf** = wie viel ein Mensch trinken muss. **Grundflüssigkeitsbedarf** = Mindestmenge — ohne Zusatzbedarf bei Fieber oder Wunde. **Holliday-Segar-Regel** = Formel für Kinder: 100 ml/kg für die ersten 10 kg + 50 ml/kg für die nächsten 10 kg.\n\nLukas wiegt 13,2 kg. Wir berechnen seinen Flüssigkeitsbedarf.\n\nFormel:\n- Für die ersten 10 kg: 100 ml pro kg pro Tag\n- Für das nächste kg (bis 20 kg): 50 ml pro kg pro Tag\n\nBerechne: Wie viel ml pro Tag braucht Lukas mindestens?",
+        glossarBegriffe: ["Flüssigkeitsbedarf", "Holliday-Segar-Regel", "Grundflüssigkeitsbedarf"],
       },
       question: {
         fragetext:
@@ -262,9 +291,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_PLANEN: SituationsPhase = {
             text: "\"Das stimmt gar nicht — keine Sorge.\"",
             isCorrect: false,
             feedback:
-              "Falsch — das ist eine Lüge. Frau Fink kommt. Wenn Kevin das herausfindet, ist das Vertrauen zerstört. Lügen schützen im Moment — aber zerstören die Beziehung. Nie lügen in der Pflege um eine Situation zu entschärfen.",
+              "Du wolltest Kevin entlasten — gut beobachtet, dass er Druck hat. Aber das ist eine Lüge, weil Frau Fink wirklich kommt. Wenn Kevin das herausfindet, ist das Vertrauen zerstört, denn er bemerkt die Diskrepanz im Verlauf der Schicht. Lügen schützen kurzfristig, zerstören aber stattdessen die Beziehung. Beim nächsten Mal: Sage die Wahrheit und erkläre den Standard ohne zu beschönigen — Kevin braucht Klarheit, nicht Beruhigung.",
             feedbackB1:
-              "Falsch — das stimmt nicht. Frau Fink kommt wirklich. Wenn Kevin das merkt, ist alles Vertrauen weg. Lügen geht nicht.",
+              "Du hast Kevin geschützt — das war gut gemeint. Aber das ist eine Lüge, weil Frau Fink wirklich kommt. Wenn Kevin das merkt, ist das Vertrauen weg, weil er denkt, du sagst nicht alles. Stattdessen: Sage die Wahrheit. Erkläre, dass das Standard ist — kein Verdacht.",
           },
           {
             text: "\"Ich verstehe, dass sich das anfühlt wie ein Vorwurf — das ist es nicht. Bei jeder Verbrühung über 10 Prozent bei Kindern führen wir dieses Gespräch, weil wir uns um das Kind sorgen. Nicht um Schuld. Lukas steht dabei im Mittelpunkt, nicht ihr als Eltern.\"",

@@ -14,6 +14,52 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
   kontextB1:
     "Frau Kovač sitzt im Sessel. Du hast mit ihr gesprochen. Jetzt beobachtest du sie genau. Du schaust auf die Atmung. Du schaust auf die Knie. Du fragst nach dem Schlaf. Du schaust auf das Trinkprotokoll. Nimm dir Zeit — was du übersiehst, wird schlimmer.",
   kernSteps: [
+    // Inline-Wissen: Atemzeichen-Vokabular — VOR Step 2.1 (damit die Brilliant-Frage offen bleibt,
+    // aber die Vokabel "Atemfrequenz, Lippenbremse, Atemhilfsmuskulatur, Sputum" klar sind)
+    {
+      stepId: "ce02-kovac-beob-iw-atemzeichen-vokabular",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 1,
+      kompetenzbereich: "I.1",
+      quellen: ["GOLD-Report COPD 2023", "I Care Pflege 2020"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce02-kovac-beob-atemzeichen-vokabular",
+      tag: "krankheitslehre",
+      contentC1: {
+        title: "Atemzeichen — die Begriffe vorab",
+        body: "Bevor du gleich Frau Kovač beobachtest: Diese Fachbegriffe brauchst du — kurz definiert.\n\n**Atemfrequenz** = Anzahl der Atemzüge pro Minute. Normal beim Erwachsenen: 12–20/Min.\n\n**Lippenbremse** = Ausatmungstechnik. Lippen leicht schließen, langsam ausatmen — wie durch einen Strohhalm.\n\n**Atemhilfsmuskulatur** = Hilfsmuskeln am Hals und an den Schultern, die nur bei Atemnot aktiv mitarbeiten. Sichtbar als Schulterheben beim Einatmen.\n\n**Sputum** = Auswurf, der beim Husten aus der Lunge nach oben kommt. Farbe und Menge sind klinisch wichtig.\n\n**Infektionszeichen** = Hinweise auf Entzündung — z.B. gelber/grüner Schleim, Fieber, schnellere Atmung.",
+        glossarBegriffe: ["Atemfrequenz", "Lippenbremse", "Atemhilfsmuskulatur", "Sputum", "Infektionszeichen", "Husten"],
+      },
+      contentB1: {
+        title: "Wichtige Wörter zur Atmung",
+        body: "Bevor du Frau Kovač anschaust, lerne kurz die Wörter:\n\n**Atemfrequenz** = wie oft jemand pro Minute atmet. Normal: 12–20 Mal pro Minute.\n\n**Lippenbremse** = eine Atem-Technik. Du atmest aus mit fast geschlossenen Lippen — wie durch einen Strohhalm.\n\n**Atemhilfsmuskulatur** = Hilfs-Muskeln am Hals und an den Schultern. Sie helfen nur, wenn die Atmung schwer ist. Du siehst es: die Schultern gehen hoch beim Einatmen.\n\n**Sputum** = der Schleim, der beim Husten hochkommt. Die Farbe ist wichtig.\n\n**Infektionszeichen** = Hinweise auf eine Entzündung — z.B. gelber Schleim oder Fieber.",
+        glossarBegriffe: ["Atemfrequenz", "Lippenbremse", "Atemhilfsmuskulatur", "Sputum", "Infektionszeichen", "Husten"],
+      },
+      inlineWissen: {
+        bausteinRef: "atemzeichen-vokabular",
+        storyAufhaenger:
+          "Frau Kovač sitzt vor dir und atmet. Gleich wirst du beobachten und beschreiben, was du siehst. Damit du genau benennen kannst, was du siehst — hier die Vokabel-Liste.",
+        storyAufhaengerB1:
+          "Frau Kovač sitzt vor dir. Du wirst gleich genau beobachten. Damit du sagen kannst, was du siehst — hier die wichtigsten Wörter.",
+        kerntext:
+          "**Atemfrequenz** = Anzahl der Atemzüge pro Minute. Normal beim Erwachsenen: 12–20/Min.\n\n**Lippenbremse** = Ausatmungstechnik. Lippen leicht schließen, langsam ausatmen — wie durch einen Strohhalm.\n\n**Atemhilfsmuskulatur** = Hilfsmuskeln am Hals und an den Schultern, die nur bei Atemnot aktiv mitarbeiten. Sichtbar als Schulterheben beim Einatmen.\n\n**Sputum** = Auswurf, der beim Husten aus der Lunge nach oben kommt. Farbe und Menge sind klinisch wichtig.\n\n**Infektionszeichen** = Hinweise auf Entzündung — z.B. gelber/grüner Schleim, Fieber, schnellere Atmung.",
+        kerntextB1:
+          "**Atemfrequenz** = wie oft jemand pro Minute atmet. Normal: 12–20 Mal pro Minute.\n\n**Lippenbremse** = eine Atem-Technik. Lippen fast geschlossen — wie ein Strohhalm.\n\n**Atemhilfsmuskulatur** = Hilfs-Muskeln am Hals und an den Schultern. Sie helfen nur bei Atemnot.\n\n**Sputum** = der Schleim, der beim Husten hochkommt.\n\n**Infektionszeichen** = Hinweise auf eine Entzündung — z.B. gelber Schleim oder Fieber.",
+        faustregel:
+          "Atemfrequenz, Lippenbremse, Atemhilfsmuskulatur, Sputum, Infektionszeichen — diese 5 Begriffe sind das Vokabular für jede COPD-Beobachtung.",
+        faustregelB1:
+          "5 Wörter für die Atem-Beobachtung: Atemfrequenz, Lippenbremse, Atemhilfsmuskulatur, Sputum, Infektionszeichen.",
+        karteikarte: {
+          vorderseite: "Welche 5 Begriffe brauchst du, um Frau Kovačs Atmung systematisch zu beobachten und zu dokumentieren?",
+          rueckseite: "Atemfrequenz (12–20/Min normal) · Lippenbremse (Ausatmungstechnik) · Atemhilfsmuskulatur (Schulterheben bei Atemnot) · Sputum (Auswurf, Farbe wichtig) · Infektionszeichen (gelber Schleim, Fieber, Tachypnoe).",
+          vorderseiteB1: "Welche 5 Wörter brauchst du, um Frau Kovačs Atmung zu beschreiben?",
+          rueckseiteB1: "Atemfrequenz, Lippenbremse, Atemhilfsmuskulatur, Sputum, Infektionszeichen.",
+        },
+      },
+    },
+
     // Step 2.1 — BRILLIANT-FRAGE Atembeobachtung
     {
       stepId: "ce02-kovac-beob-01-atembeobachtung-brilliant",
@@ -91,6 +137,14 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
           "Kutschersitz",
           "SpO2",
           "PEEP-Effekt",
+          "Fixierung",
+          "Arzt",
+          "Trinken",
+          "COPD",
+          "Herzinsuffizienz",
+          "Ziel",
+          "Obstruktion",
+          "Pulsoximeter",
         ],
       },
       contentB1: {
@@ -103,6 +157,14 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
           "Lippenbremse",
           "Kutschersitz",
           "SpO2",
+          "Fixierung",
+          "Arzt",
+          "Trinken",
+          "COPD",
+          "Herzinsuffizienz",
+          "Ziel",
+          "Obstruktion",
+          "Pulsoximeter",
         ],
       },
     },
@@ -126,19 +188,19 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "Gelenk-Assessment: Was siehst du?",
-        body: "Du schaust dir Frau Kovačs Kniegelenke an. Ordne die Befunde in drei Kategorien ein:\n\n- **Normalbefund (kein Hinweis):** keine Auffälligkeit, keine Maßnahme nötig.\n- **Kontraktur-Zeichen (chronisch bekannt, dokumentationspflichtig):** gehört zum bekannten Krankheitsbild — beobachten, dokumentieren, ggf. mit Physiotherapie abstimmen. Auch milder Schmerz (VAS 1-3) bei Bewegung gehört hierher: nach DNQP Schmerzmanagement immer zu dokumentieren, ab VAS ≥4 interventionspflichtig.\n- **Akutes Warnsignal (jetzt Arzt-Rücksprache):** **neue** Befunde, die nicht zum bekannten Krankheitsbild passen — TVT-Verdacht, Entzündungszeichen.\n\nQuelle: (MDS/Medizinischer Dienst 2018; DNQP Schmerzmanagement 2020)",
+        body: "**Vokabel-Block — vier Begriffe vorab:**\n\n**Kontraktur** = dauerhafte Bewegungseinschränkung eines Gelenks durch Verkürzung von Muskeln, Sehnen oder Kapseln.\n\n**Extensionsdefizit** = das Gelenk lässt sich nicht vollständig strecken (z.B. Knie bleibt um 15° gebeugt).\n\n**VAS** = Visuelle Analogskala für Schmerz, 0 (kein Schmerz) bis 10 (stärkster Schmerz). Standard-Instrument der Schmerz-Erfassung.\n\n**DNQP** = Deutsches Netzwerk für Qualitätsentwicklung in der Pflege — gibt die nationalen Expertenstandards heraus (z.B. DNQP Schmerzmanagement 2020).\n\n---\n\nDu schaust dir Frau Kovačs Kniegelenke an. Ordne die Befunde in drei Kategorien ein:\n\n- **Normalbefund** (kein Hinweis): keine Auffälligkeit, keine Maßnahme nötig.\n- **Kontraktur-Zeichen** (chronisch bekannt, dokumentationspflichtig): gehört zum bekannten Krankheitsbild — beobachten, dokumentieren, ggf. mit Physiotherapie abstimmen. Auch milder Schmerz (VAS 1-3) bei Bewegung gehört hierher: nach DNQP Schmerzmanagement immer zu dokumentieren, ab VAS ≥4 interventionspflichtig.\n- **Akutes Warnsignal** (jetzt Arzt-Rücksprache): **neue** Befunde, die nicht zum bekannten Krankheitsbild passen — TVT-Verdacht, Entzündungszeichen.\n\nQuelle: (MDS/Medizinischer Dienst 2018; DNQP Schmerzmanagement 2020)",
         glossarBegriffe: [
           "Kontraktur",
           "Extensionsdefizit",
           "Flexionskontraktur",
           "VAS",
-          "DNQP Schmerz",
+          "DNQP",
         ],
       },
       contentB1: {
         title: "Was ist normal — was ist ein Warnsignal?",
-        body: "Du schaust auf Frau Kovačs Knie. Es gibt 3 Kategorien:\n\n- **Normalbefund** = nichts Auffälliges, keine Maßnahme.\n- **Kontraktur-Zeichen** = bekanntes Problem. Beobachten und aufschreiben.\n- **Akutes Warnsignal** = etwas Neüs. Jetzt Arzt informieren.\n\nWichtig: Auch leichter Schmerz (z.B. VAS 3 von 10) ist nicht 'normal'. Du musst ihn aufschreiben (DNQP Schmerz). Ab VAS 4 musst du etwas dagegen tun.",
-        glossarBegriffe: ["Kontraktur", "Extensionsdefizit", "VAS"],
+        body: "**Vier Wörter vorab:**\n\n**Kontraktur** = ein Gelenk lässt sich nicht mehr richtig bewegen, weil Muskeln oder Sehnen kürzer geworden sind. Es bleibt steif.\n\n**Extensionsdefizit** = das Gelenk geht nicht mehr ganz gerade. Beispiel: das Knie bleibt um 15 Grad gebeugt.\n\n**VAS** = visuelle Skala für Schmerz: 0 = kein Schmerz, 10 = stärkster Schmerz.\n\n**Schmerz-Skala** = ein Erhebungs-Instrument für Schmerzen, das einen Zahlen- oder Bildwert von 0 bis 10 abfragt.\n\n**DNQP** = ein deutsches Netzwerk, das Pflege-Standards macht (z.B. für die Schmerz-Pflege).\n\n---\n\nDu schaust auf Frau Kovačs Knie. Es gibt 3 Kategorien:\n\n- **Normalbefund** = nichts Auffälliges, keine Maßnahme.\n- **Kontraktur-Zeichen** = bekanntes Problem. Beobachten und aufschreiben.\n- **Akutes Warnsignal** = etwas Neues. Jetzt Arzt informieren.\n\nWichtig: Auch leichter Schmerz (z.B. VAS 3 von 10) ist nicht 'normal'. Du musst ihn aufschreiben (Standard DNQP Schmerz). Ab VAS 4 musst du etwas dagegen tun.",
+        glossarBegriffe: ["Kontraktur", "Extensionsdefizit", "VAS", "Schmerz-Skala", "DNQP"],
       },
       question: {
         fragetext:
@@ -345,11 +407,11 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
                   "\"Nein. Der Arzt wollte mir welche geben. Ich hab abgelehnt. Die machen süchtig.\"",
                 patientResponseB1:
                   "\"Nein. Ich will keine. Die machen süchtig.\"",
-                score: 2,
+                score: 1,
                 feedback:
-                  "Relevante Frage (Medikamenten-Anamnese ist immer wichtig), aber nicht die prioritäre nächste Frage. Tagesschläfrigkeit wäre informativer für die Diagnosestellung. Trotzdem: Informiert.",
+                  "Guter Ansatz — Medikamenten-Anamnese ist immer wichtig und gehört in jedes Schlaf-Assessment. Aber: Tagesschläfrigkeit wäre **stattdessen** die prioritäre nächste Frage gewesen, **weil** sie zwischen primärer Insomnie und zirkadianer Rhythmusstörung unterscheiden hilft. Beim nächsten Mal: erst Schlafmuster komplettieren, dann Medikamente.",
                 feedbackB1:
-                  "Nicht falsch, aber nicht die wichtigste Frage jetzt. Erst besser: Schläft sie tagsüber?",
+                  "Guter Ansatz — Medikamente fragen ist wichtig. Aber **stattdessen** wäre die wichtigere Frage jetzt: Schläft sie tagsüber? **Weil** Tagesschlaf den Nachtschlaf erklären kann.",
               },
             ],
           },
@@ -422,8 +484,8 @@ export const CE02_SIT_KOVAC_AMBULANT_BEOBACHTEN: SituationsPhase = {
       tag: "anatomie",
       contentC1: {
         title: "Trinkprotokoll auswerten",
-        body: "Du nimmst das Trinkprotokoll vom Küchentisch. Frau Kovač hat gestern eingetragen:\n\n07:30 — Kaffee: 150 ml\n09:00 — Wasser: 100 ml\n12:00 — Suppe: 200 ml\n15:30 — Tee: 100 ml\n18:30 — Abend-Kaffee: 100 ml\n21:00 — Wasser: 150 ml\n\nBerechne die Gesamttrinkmenge im Protokoll. **Hinweis zur Diskrepanz:** Petras Übergabezettel nennt 820 ml — das Protokoll ergibt 800 ml. Petra hat überschlagen, du rechnest exakt aus dem Protokoll. Solche kleinen Differenzen sind in ambulanter Praxis normal und kein Fehler.\n\n**Wichtig — der Zielwert für Frau Kovač:**\nDie allgemeine DNQP/DGE-Empfehlung für Gesunde liegt bei 1.500 ml/Tag. Diese Empfehlung gilt für Frau Kovač **nicht 1:1**. Bei Herzinsuffizienz NYHA II + Furosemid (40 mg) ist die Trinkmenge ärztlich individuell festzulegen — die ESC Heart Failure Guidelines 2023 nennen für stabile Herzinsuffizienz häufig **1.200 ml/Tag als ärztlich vereinbarte Obergrenze**, NICHT als Untergrenze. Im Pflegeplan von Frau Kovač ist mit dem Hausarzt **1.200 ml/Tag** als individuelles Tagesziel vereinbart. Berechne deshalb das Defizit zu **diesem ärztlich festgelegten Wert** — nicht zur Generic-Empfehlung von 1.500 ml. (ESC Heart Failure Guidelines 2023; DGE Referenzwerte Wasserzufuhr 2024)",
-        glossarBegriffe: ["Flüssigkeitsbilanz", "Exsikkose"],
+        body: "Du nimmst das Trinkprotokoll vom Küchentisch. Frau Kovač hat gestern eingetragen:\n\n07:30 — Kaffee: 150 ml\n09:00 — Wasser: 100 ml\n12:00 — Suppe: 200 ml\n15:30 — Tee: 100 ml\n18:30 — Abend-Kaffee: 100 ml\n21:00 — Wasser: 150 ml\n\nBerechne die Gesamttrinkmenge im Protokoll. **Hinweis zur Diskrepanz:** Petras Übergabezettel nennt 820 ml — das Protokoll ergibt 800 ml. Petra hat überschlagen, du rechnest exakt aus dem Protokoll. Solche kleinen Differenzen sind in ambulanter Praxis normal und keine Dokumentations-Lücke.\n\n**Wichtig — der Zielwert für Frau Kovač:**\nDNQP = Deutsches Netzwerk für Qualitätsentwicklung in der Pflege (gibt deutsche Pflege-Standards heraus). Die allgemeine DNQP/DGE-Empfehlung für Gesunde liegt bei 1.500 ml/Tag. Diese Empfehlung gilt für Frau Kovač **nicht 1:1**. Bei Herzinsuffizienz NYHA II + Furosemid (40 mg) ist die Trinkmenge ärztlich individuell festzulegen — die ESC Heart Failure Guidelines 2023 nennen für stabile Herzinsuffizienz häufig **1.200 ml/Tag als ärztlich vereinbarte Obergrenze**, NICHT als Untergrenze. Im Pflegeplan von Frau Kovač ist mit dem Hausarzt **1.200 ml/Tag** als individuelles Tagesziel vereinbart. Berechne deshalb das Defizit zu **diesem ärztlich festgelegten Wert** — nicht zur Generic-Empfehlung von 1.500 ml. (ESC Heart Failure Guidelines 2023; DGE Referenzwerte Wasserzufuhr 2024)",
+        glossarBegriffe: ["Flüssigkeitsbilanz", "Exsikkose", "DNQP"],
       },
       contentB1: {
         title: "Wie viel hat Frau Kovač getrunken?",

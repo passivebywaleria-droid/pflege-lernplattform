@@ -37,13 +37,13 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
       transition: "Du weißt jetzt wie man Lukas vorbereitet. Bringe die Schritte in die richtige Reihenfolge.",
       contentC1: {
         title: "Kindgerechte Vorbereitung — Ankündigen, nicht überrumpeln",
-        body: "",
-        glossarBegriffe: ["Ablenkung als Pflegetechnik", "Prozedurale Angst", "Bedarfsanalgesie"],
+        body: "**Ankündigen** = dem Kind kurz, konkret und altersgerecht mitteilen, was als nächstes passiert (z.B. \"Ich schaue jetzt deinen Arm an. Mama ist dabei.\") — entscheidende Pflege-Technik, um prozedurale Angst zu reduzieren (Hoehl/Kullick 2019). **Bedarfsanalgesie** = ärztlich verordnetes Schmerzmittel, das bei Bedarf zusätzlich zum festen Schema gegeben werden kann (z.B. vor schmerzhaftem Verbandwechsel). **Analgesie** = Schmerzlinderung, fachsprachlich für \"Schmerzmittel\" oder die schmerzlindernde Wirkung. **KUSS** = Kindliche Unbehagens- und Schmerz-Skala (Büttner/Finke 2000) — Schmerzmessung für Kinder von 0 bis 4 Jahren über 5 Beobachtungs-Kategorien.",
+        glossarBegriffe: ["Ablenkung als Pflegetechnik", "Prozedurale Angst", "Bedarfsanalgesie", "ankündigen", "Analgesie", "KUSS"],
       },
       contentB1: {
         title: "Wie bereitest du Lukas auf den Verbandwechsel vor?",
-        body: "",
-        glossarBegriffe: ["Ablenkung (= Distraction)", "Bedarfsanalgesie (= Schmerzmittel bei Bedarf)"],
+        body: "**Ankündigen** = vorher kurz sagen, was passiert — z.B. \"Ich schaue deinen Arm an. Mama ist dabei.\" Macht Kinder weniger ängstlich. **Bedarfsanalgesie** = Schmerzmittel, das bei Bedarf gegeben werden kann (zusätzlich zum festen Plan). **Analgesie** = anderes Wort für Schmerzmittel. **KUSS** = Schmerz-Skala für Kinder von 0 bis 4 Jahren.",
+        glossarBegriffe: ["Ablenkung (= Distraction)", "Bedarfsanalgesie (= Schmerzmittel bei Bedarf)", "ankündigen", "Analgesie", "KUSS"],
       },
       inlineWissen: {
         bausteinRef: "säuglingspflege-kindgerechte-vorbereitung",
@@ -196,9 +196,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
                   "Lukas spürt die Berührung. Er schreit: \"Nein! Mama!\" und schlägt nach dir.",
                 score: 0,
                 feedback:
-                  "Kein Einverständnis, keine Ankündigung — das ist ein Vertrauensbruch. 'Ablenkung ausnutzen' fühlt sich für das Kind wie Hinterlist an. Lukas reagiert mit Abwehr — schlagen, schreien. Das macht den Verbandwechsel schwerer, nicht leichter. Ablenkung ist eine Technik, kein Trick. Sie begleitet die Handlung, ersetzt aber nie die Ankündigung.",
+                  "Du hast erkannt, dass das Ablenkungs-Fenster kostbar ist — gut beobachtet. Aber stattdessen ohne Ankündigung zu beginnen ist ein Vertrauensbruch, weil 'Ablenkung ausnutzen' für das Kind wie Hinterlist wirkt. Lukas reagiert deshalb mit Abwehr — schlagen, schreien — und das macht den Verbandwechsel schwerer, nicht leichter. Ablenkung ist eine Technik, kein Trick: sie begleitet die Handlung, ersetzt aber nie die Ankündigung. Beim nächsten Mal: erst kurz ankündigen (\"Ich schaue jetzt kurz, Mama ist dabei\") — die Seifenblasen laufen währenddessen weiter.",
                 feedbackB1:
-                  "Das ist ein Fehler. Du hast nicht angekündigt. Lukas fühlt sich getäuscht. Er schreit und schlägt. Das macht alles schwerer.",
+                  "Du hast gemerkt, dass Lukas kurz ruhig ist — gut. Aber stattdessen sofort anzufangen ist ein Fehler, weil du nicht angekündigt hast. Lukas fühlt sich getäuscht — deshalb schreit er und schlägt. Beim nächsten Mal: erst sagen, was du machst (\"Ich schaue deinen Arm an, Mama ist dabei\"). Dann erst beginnen. Die Seifenblasen bleiben dabei.",
               },
               {
                 text: "Lukas ansprechen: \"Ich schaue jetzt kurz deinen Arm an. Das kitzelt kurz. Mama ist dabei.\" — dann langsam beginnen.",
@@ -334,9 +334,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
             text: "\"Ich muss das machen, er gewöhnt sich dran.\"",
             isCorrect: false,
             feedback:
-              "Ethisch problematisch und fachlich falsch. Kinder 'gewöhnen' sich nicht an Schmerz beim Verbandwechsel — sie lernen, dass Behandlung Schmerz bedeutet, und die Abwehr wird stärker. Das ist Retraumatisierung. Pflege ohne adäquate Analgesie ist eine Verletzung des Kindeswohls. Außerdem: Sandra hat einen validen Einwand — sie kennt Lukas. Ihre Reaktion muss ernst genommen werden.",
+              "Du hast erkannt, dass die Maßnahme nötig ist — fachlich richtig gedacht. Aber stattdessen mit der Begründung 'er gewöhnt sich dran' weiterzumachen ist ethisch problematisch und fachlich falsch, weil Kinder sich nicht an Schmerz beim Verbandwechsel gewöhnen. Sie lernen tatsächlich das Gegenteil: dass Behandlung Schmerz bedeutet — die Abwehr wird stärker, das nennt man Retraumatisierung. Außerdem hat Sandra einen validen Einwand: sie kennt Lukas. Beim nächsten Mal: Pause machen, KUSS prüfen, Bedarfsanalgesie anfragen — Pflege ohne adäquate Analgesie ist eine Verletzung des Kindeswohls.",
             feedbackB1:
-              "Das ist falsch. Kinder gewöhnen sich nicht daran. Das macht alles schlimmer. Sandras Reaktion muss ernst genommen werden.",
+              "Du hast erkannt, dass die Maßnahme nötig ist — guter Ansatz. Aber stattdessen weiterzumachen ist falsch, weil Kinder sich nicht an Schmerz gewöhnen. Das macht alles schlimmer, denn Lukas lernt: Behandlung = Schmerz. Sandras Reaktion muss ernst genommen werden, weil sie Lukas kennt. Beim nächsten Mal: Pause, KUSS messen, Schmerzmittel anfragen.",
           },
           {
             text: "Pause machen. Lukas beruhigen. KUSS-Skala prüfen. Arzt fragen ob Bedarfs-Analgesie gegeben werden kann. Dann neuer Versuch mit Sandra als aktive Unterstützung.",
@@ -350,9 +350,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
             text: "Sandra soll Lukas festhalten, dann geht es schneller.",
             isCorrect: false,
             feedback:
-              "Falsch — wegen des Motivs. Therapeutisches Halten durch Eltern (mit Einverständnis, ruhiger Stimme, als beruhigender Halt — nicht als Zwang) ist bei kindgerechten Maßnahmen eine etablierte Technik (Hoehl/Kullick 2019). Es geht aber um das Kindeswohl — nicht um Geschwindigkeit. 'Damit es schneller geht' macht aus Halt einen Zwang gegen den Willen des Kindes. Rechtlich wichtig: Festhalten gegen den erkennbaren Willen eines Kindes ohne Notfallsituation kann als freiheitsentziehende Maßnahme gewertet werden. Hier liegt kein Notfall vor; die richtige Antwort ist: Pause, KUSS-Reassessment, Bedarfsanalgesie. Wenn Lukas nach der Pause kooperiert, kann Sandra ihn beruhigend halten — als Sicherheit, nicht als Fixierung.",
+              "Du hast erkannt, dass Sandra Lukas Sicherheit geben kann — guter Gedanke. Therapeutisches Halten durch Eltern (mit Einverständnis, ruhiger Stimme, als beruhigender Halt — nicht als Zwang) ist tatsächlich eine etablierte Technik (Hoehl/Kullick 2019). Aber das Motiv 'damit es schneller geht' macht aus Halt einen Zwang gegen den Willen des Kindes — und das ist rechtlich problematisch, weil Festhalten gegen den erkennbaren Willen ohne Notfall als freiheitsentziehende Maßnahme gewertet werden kann. Hier liegt kein Notfall vor. Stattdessen ist die richtige Antwort: Pause, KUSS-Reassessment, Bedarfsanalgesie. Beim nächsten Mal: Wenn Lukas nach der Pause kooperiert, kann Sandra ihn beruhigend halten — als Sicherheit, nicht als Fixierung.",
             feedbackB1:
-              "Falsch — wegen des Grundes. Eltern dürfen ihr Kind beruhigend halten — als Sicherheit. Aber nicht 'damit es schneller geht'. Wichtig: Festhalten gegen den Willen des Kindes ohne Notfall kann rechtlich als Fixierung gelten. Hier ist kein Notfall. Erst Pause, Schmerzmittel und Beruhigung. Wenn Lukas dann kooperiert, kann Sandra ihn ruhig halten.",
+              "Du hast Sandra einbeziehen wollen — guter Ansatz. Eltern dürfen ihr Kind beruhigend halten — als Sicherheit. Aber nicht 'damit es schneller geht', weil das Zwang gegen den Willen des Kindes ist. Festhalten gegen den Willen ohne Notfall kann rechtlich als Fixierung gelten. Hier ist kein Notfall. Stattdessen: Erst Pause, Schmerzmittel und Beruhigung. Beim nächsten Mal: Wenn Lukas wieder kooperiert, kann Sandra ihn ruhig halten — als Sicherheit, nicht als Festhalten.",
           },
         ],
       },
@@ -374,13 +374,36 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
       transition: "Verbandwechsel geschafft. Jetzt: Was darf Lukas im Mund haben — und was nicht?",
       contentC1: {
         title: "Verbandwechsel Grad 2a — korrekte Durchführung",
-        body: "Nach der Pause. Arzt hat Bedarfsanalgesie freigegeben. Lukas ist ruhiger. Der korrekte Verbandwechsel:\n\n1. **Blasen nicht öffnen** (wenn intakt) — intakte Blasen bieten natürlichen Wundschutz, Öffnung erhöht Infektionsrisiko\n2. **NaCl-0,9-%-Spülung NUR bei Bedarf** — bei Verschmutzung, Wundsekretkrusten oder Belägen. Bei sauberer, intakter Wundfläche keine routinemäßige Spülung — sie irritiert das fragile Wundbett unnötig (DGV 2023: minimale Manipulation)\n3. **Hydroaktive Wundauflage anlegen** (z. B. Mepilex-ähnlich) — haftet nicht an der Wunde, schmerzarmer nächster Wechsel\n4. **Locker wickeln** — kein Abschnüren, Lukas muss Arm bewegen können\n5. **Schmerzkontrolle nach dem Wechsel** — KUSS-Skala erheben, Ergebnis dokumentieren\n\nQuelle: _(DGV-Leitlinie Thermische Verletzungen 2023; Hoehl/Kullick 2019, kindgerechte Wundversorgung mit sparsamer Wundreinigung)_",
-        glossarBegriffe: ["NaCl 0,9 %", "Hydroaktive Wundauflage", "Mepilex"],
+        body: "**Verbandwechsel** = standardisierter Austausch der Wundauflage; Intervall bei Lukas: 48–72 Stunden. **Wundauflage** = sterile Abdeckung der Wunde (z.B. silikonbeschichteter Polyurethanschaum). **Bedarfsanalgesie** = ärztlich verordnetes Schmerzmittel, das bei Bedarf zusätzlich gegeben wird (z.B. vor schmerzhaftem Verbandwechsel). **Bedarfsanalgesie (= Schmerzmittel bei Bedarf)** wirkt 30–45 Minuten nach Gabe — Wirkzeit prüfen vor Maßnahme. **Arzt** = ärztliche Anordnungs- und Entscheidungskompetenz (z.B. Freigabe Bedarfsanalgesie, Blasenpunktion). **KUSS** = Kindliche Unbehagens- und Schmerz-Skala. **KUSS-Skala (= Schmerzmessung für Kinder)** wird vor und nach jeder schmerzhaften Maßnahme erhoben.\n\nNach der Pause. Arzt hat Bedarfsanalgesie freigegeben. Lukas ist ruhiger. Der korrekte Verbandwechsel:\n\n1. **Blasen nicht öffnen** (wenn intakt) — intakte Blasen bieten natürlichen Wundschutz, Öffnung erhöht Infektionsrisiko\n2. **NaCl-0,9-%-Spülung NUR bei Bedarf** — bei Verschmutzung, Wundsekretkrusten oder Belägen. Bei sauberer, intakter Wundfläche keine routinemäßige Spülung — sie irritiert das fragile Wundbett unnötig (DGV 2023: minimale Manipulation)\n3. **Hydroaktive Wundauflage anlegen** (z. B. Mepilex-ähnlich) — haftet nicht an der Wunde, schmerzarmer nächster Wechsel\n4. **Locker wickeln** — kein Abschnüren, Lukas muss Arm bewegen können\n5. **Schmerzkontrolle nach dem Wechsel** — KUSS-Skala erheben, Ergebnis dokumentieren\n\nQuelle: _(DGV-Leitlinie Thermische Verletzungen 2023; Hoehl/Kullick 2019, kindgerechte Wundversorgung mit sparsamer Wundreinigung)_",
+        glossarBegriffe: [
+          "NaCl 0,9 %",
+          "Hydroaktive Wundauflage",
+          "Mepilex",
+          "KUSS",
+          "Arzt",
+          "KUSS-Skala",
+          "Wundauflage",
+          "Bedarfsanalgesie",
+          "Bedarfsanalgesie (= Schmerzmittel bei Bedarf)",
+          "KUSS-Skala (= Schmerzmessung für Kinder)",
+          "Verbandwechsel",
+        ],
       },
       contentB1: {
         title: "Verbandwechsel — Schritt für Schritt",
-        body: "Nach der Pause. Lukas ist ruhiger. Jetzt der Verbandwechsel:\n\n1. Blasen nicht aufmachen — wenn sie ganz sind, schützen sie die Wunde\n2. Wunde NUR spülen wenn sie schmutzig ist — mit NaCl (= Salzwasser 0,9 %). Bei sauberer Wunde nicht spülen (das reizt die Wunde)\n3. Wundauflage anlegen die nicht klebt\n4. Locker wickeln — Lukas muss den Arm bewegen können\n5. Danach: KUSS-Skala prüfen und aufschreiben",
-        glossarBegriffe: ["NaCl 0,9 % (= Kochsalzlösung, 0,9 %)", "Hydroaktive Wundauflage"],
+        body: "**Verbandwechsel** = neue Auflage anlegen — bei Lukas alle 48–72 Stunden. **Wundauflage** = was du auf die Wunde legst. **Bedarfsanalgesie** = Schmerzmittel, das du bei Bedarf gibst (z.B. vor dem Wechsel). **Arzt** = der entscheidet, wann welches Schmerzmittel. **KUSS** = Schmerz-Skala für kleine Kinder.\n\nNach der Pause. Lukas ist ruhiger. Jetzt der Verbandwechsel:\n\n1. Blasen nicht aufmachen — wenn sie ganz sind, schützen sie die Wunde\n2. Wunde NUR spülen wenn sie schmutzig ist — mit NaCl (= Salzwasser 0,9 %). Bei sauberer Wunde nicht spülen (das reizt die Wunde)\n3. Wundauflage anlegen die nicht klebt\n4. Locker wickeln — Lukas muss den Arm bewegen können\n5. Danach: KUSS-Skala prüfen und aufschreiben",
+        glossarBegriffe: [
+          "NaCl 0,9 % (= Kochsalzlösung, 0,9 %)",
+          "Hydroaktive Wundauflage",
+          "KUSS",
+          "Arzt",
+          "KUSS-Skala",
+          "Wundauflage",
+          "Bedarfsanalgesie",
+          "Bedarfsanalgesie (= Schmerzmittel bei Bedarf)",
+          "KUSS-Skala (= Schmerzmessung für Kinder)",
+          "Verbandwechsel",
+        ],
       },
     },
 
@@ -556,9 +579,9 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
             text: "\"Herr K., beruhigen Sie sich sofort!\"",
             isCorrect: false,
             feedback:
-              "'Beruhigen Sie sich' eskaliert fast immer — bei Menschen in emotionaler Ausnahmesituation wirkt es bevormundend und als Kritik. Kevin hört: 'Du bist falsch.' Sein Lautsein wird lauter. Lukas weint mehr. Die Formulierung 'sofort' macht es noch schlimmer.",
+              "Du hast erkannt, dass die Lautstärke ein Problem ist — guter Beobachtungspunkt. Aber 'Beruhigen Sie sich' eskaliert fast immer, weil es bei Menschen in emotionaler Ausnahmesituation bevormundend und als Kritik wirkt. Kevin hört stattdessen: 'Du bist falsch.' Sein Lautsein wird deshalb lauter, Lukas weint mehr — die Formulierung 'sofort' verstärkt das noch. Beim nächsten Mal: erst Empathie ('Ich sehe, dass Sie das sehr trifft'), dann Raumwechsel anbieten ('Gehen wir kurz auf den Flur — für Lukas').",
             feedbackB1:
-              "'Beruhigen Sie sich' macht es schlimmer. Kevin fühlt sich nicht ernst genommen. Er wird lauter.",
+              "Du hast die Situation erkannt — gut. Aber 'Beruhigen Sie sich' macht es schlimmer, weil Kevin sich nicht ernst genommen fühlt. Er wird lauter, denn er hört: 'Du bist falsch.' Stattdessen: Erst sagen 'Ich sehe, dass Sie das sehr trifft', dann auf den Flur gehen — für Lukas.",
           },
           {
             text: "\"Herr K., ich sehe dass Sie das sehr trifft. Gehen wir kurz auf den Flur — für Lukas.\"",
@@ -598,14 +621,31 @@ export const CE02_SIT_LUKAS_VERBRUEHUNG_DURCHFUEHREN: SituationsPhase = {
         body: "Nach dem Gespräch mit Frau Fink. Kevin ist ruhiger — er hat verstanden dass das Screening kein Vorwurf ist. Sandra möchte beim nächsten Verbandwechsel aktiv dabei helfen.\n\nElternanleitung ist eine Pflege-Aufgabe, keine Vereinfachung. Sie ist therapeutisch für das Kind (vertraute Person = weniger Angst) und stärkend für die Eltern (Handlungsfähigkeit zurückgewinnen statt ohnmächtig zuschauen).\n\n**Was Sandra beim nächsten Verbandwechsel tun kann:**\n- Ablenkung übernehmen (Seifenblasen, Musik, ruhige Stimme — das kann nur Sandra so wie Sandra)\n- Lukas halten wenn er es erlaubt — nicht fixieren, aber halten\n- Signale lesen: 'Bah-bah!' heißt Seifenblasen. 'Nein!' heißt: Pause. 'Mama!' heißt: näher kommen\n- Trinken anbieten nach dem Wechsel\n\n**Was Sandra nicht tun soll:** Lukas gegen seinen Willen festhalten. Eigene Schuldgefühle in die Situation einbringen ('Mama ist so traurig, das tut mir leid...'). Anleitung ist eine Kooperation, keine Delegation von Verantwortung.",
         fallbezug:
           "Lukas K., 2,5 J., Verbrühung Grad 2a. Sandra (28) wird in die Pflege einbezogen — mit klarer Rolle und ohne Überforderung.",
-        glossarBegriffe: ["Elternanleitung", "Familienzentrierte Pflege"],
+        glossarBegriffe: [
+          "Elternanleitung",
+          "Familienzentrierte Pflege",
+          "Pflege",
+          "Trinken",
+          "Schuldgefühle",
+          "Grad 2a",
+          "Ablenkung (= Distraction)",
+          "Verbandwechsel",
+        ],
       },
       contentB1: {
         title: "Sandra beim nächsten Verbandwechsel",
         body: "Sandra möchte helfen. Das ist gut. Eltern einbeziehen ist wichtig — für Lukas und für Sandra.\n\n**Was Sandra tun kann:**\n- Seifenblasen oder Musik machen\n- Lukas halten wenn er es will — nicht festhalten\n- Signale lesen: 'Bah-bah!' = Seifenblasen. 'Nein!' = Pause. 'Mama!' = näher kommen\n- Danach Trinken anbieten\n\n**Was Sandra nicht tun soll:** Lukas festhalten gegen seinen Willen. Die eigene Traurigkeit zeigen während des Verbandwechsels — das macht Lukas noch ängstlicher.",
         fallbezug:
           "Lukas K., 2,5 J. Sandra wird als Co-Pflegerin angeleitet.",
-        glossarBegriffe: ["Familienzentrierte Pflege"],
+        glossarBegriffe: [
+          "Familienzentrierte Pflege",
+          "Pflege",
+          "Trinken",
+          "Schuldgefühle",
+          "Grad 2a",
+          "Ablenkung (= Distraction)",
+          "Verbandwechsel",
+        ],
       },
     },
   ],

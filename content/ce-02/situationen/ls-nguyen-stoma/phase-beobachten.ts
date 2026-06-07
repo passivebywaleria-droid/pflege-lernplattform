@@ -101,13 +101,13 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
       displayFormat: "checklist",
       contentC1: {
         title: "Was ist ein gesundes Stoma? — Normalzeichen",
-        body: "Nach dem Hotspot: Hier sind die klinischen Zeichen, die du bei der Stomainspektion beobachten und dokumentieren musst.\n\n☑ Farbe rosig bis kräftig rot (durchblutetes Schleimhautgewebe)\n☑ Schleimhaut feucht und leicht glänzend\n☑ Herausragen 1–2 cm über Hautniveau\n☑ Hautumgebung reizlos (keine Rötung, kein Ausschlag, keine Mazerierung)\n☑ Stomaöffnung zentral positioniert\n\n**Alarmzeichen (sofortiger Handlungsbedarf):**\n⚠ Blass/weißlich = Durchblutungsstörung → sofort Arzt informieren\n⚠ Livide/dunkel-violett oder schwarz = Nekrose-Verdacht → akuter Notfall, Stomatherapeuten + Arzt sofort rufen\n\nQuelle: (FG SKM, Handlungsempfehlungen Stomapflege, 2023)",
-        glossarBegriffe: ["livide", "Mazerierung", "Nekrose", "Stomaplatte"],
+        body: "Nach dem Hotspot: Hier sind die klinischen Zeichen, die du bei der Stomainspektion beobachten und dokumentieren musst.\n\n☑ Farbe rosig bis kräftig rot (durchblutetes Schleimhautgewebe)\n☑ Schleimhaut feucht und leicht glänzend\n☑ Herausragen 1–2 cm über Hautniveau\n☑ Hautumgebung reizlos (keine Rötung, kein Ausschlag, keine **Mazerierung** — Aufweichung der Haut durch zu viel Feuchtigkeit)\n☑ Stomaöffnung zentral positioniert\n\n**Alarmzeichen (sofortiger Handlungsbedarf):**\n⚠ Blass/weißlich = Durchblutungsstörung → sofort Arzt informieren\n⚠ Livide/dunkel-violett oder schwarz = Nekrose-Verdacht → akuter Notfall, Stomatherapeuten + Arzt sofort rufen\n\nMerke: **Wundheilung** = der natürliche Prozess, mit dem der Körper geschädigtes Gewebe repariert. Phasen: Reinigung → Granulation → Epithelisation. Brauchen wir später bei Albumin und Ernährung.\n\nQuelle: (FG SKM, Handlungsempfehlungen Stomapflege, 2023)",
+        glossarBegriffe: ["livide", "Mazerierung", "Nekrose", "Stomaplatte", "Wundheilung", "Haut", "Arzt", "Ernährung", "Albumin", "Granulation"],
       },
       contentB1: {
         title: "Ein gesundes Stoma — so sieht es aus",
-        body: "Nach dem Bild: Das hier sind die Zeichen, dass das Stoma gesund ist:\n\n☑ Farbe: rosig bis kräftig rot\n☑ Schleimhaut feucht und glänzend\n☑ Steht 1–2 cm aus der Bauch-Wand heraus\n☑ Die Haut rund um das Stoma ist reizlos (nicht rot, kein Ausschlag)\n\n**Alarm-Zeichen (sofort melden!):**\n⚠ Blass oder weiß = Blut fließt nicht richtig → Arzt informieren\n⚠ Dunkel-lila oder schwarz = Gewebe stirbt ab → sofort Arzt rufen",
-        glossarBegriffe: ["Stoma", "livide", "Nekrose"],
+        body: "Nach dem Bild: Das hier sind die Zeichen, dass das Stoma gesund ist:\n\n☑ Farbe: rosig bis kräftig rot\n☑ Schleimhaut feucht und glänzend\n☑ Steht 1–2 cm aus der Bauch-Wand heraus\n☑ Die Haut rund um das Stoma ist reizlos (nicht rot, kein Ausschlag)\n\n**Alarm-Zeichen (sofort melden!):**\n⚠ Blass oder weiß = Blut fließt nicht richtig → Arzt informieren\n⚠ Dunkel-lila oder schwarz = Gewebe stirbt ab → sofort Arzt rufen\n\nMerke: **Wundheilung** = wie der Körper Wunden repariert. Sie braucht Eiweiß (Albumin). Wenn jemand wenig isst, heilt die Wunde schlechter.",
+        glossarBegriffe: ["Stoma", "livide", "Nekrose", "Wundheilung", "Haut", "Mazerierung", "Arzt", "Albumin"],
       },
     },
 
@@ -239,23 +239,36 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Du schaust auf das fast unberührte Frühstückstablett. Du fragst Linh: 'Hat Ihr Vater heute Morgen etwas gegessen oder getrunken?' Linh schaut kurz auf ihren Vater, dann sagt sie:",
+              "Du schaust auf das fast unberührte Frühstückstablett. Du fragst Linh: \"Hat Ihr Vater heute Morgen etwas gegessen oder getrunken?\" Linh schaut kurz auf ihren Vater, dann sagt sie:\n\n\"Papa hat früher für 60 Gäste gekocht. Jetzt isst er drei Löffel und schiebt den Teller weg. Das macht mir Sorgen.\"",
             contextB1:
-              "Das Frühstück ist fast nicht angerührt. Du fragst Linh: 'Hat Ihr Vater heute etwas gegessen?' Linh schaut kurz ihren Vater an und sagt dann:",
+              "Das Frühstück ist fast nicht angerührt. Du fragst Linh: \"Hat Ihr Vater heute etwas gegessen?\" Linh schaut kurz ihren Vater an und sagt dann:\n\n\"Papa hat früher für 60 Gäste gekocht. Jetzt isst er drei Löffel und schiebt den Teller weg. Das macht mir Sorgen.\"",
             speaker: "Linh",
             options: [
               {
-                text: "Linh: 'Papa hat früher für 60 Gäste gekocht. Jetzt isst er drei Löffel und schiebt den Teller weg. Das macht mir Sorgen.'",
+                text: "\"Danke Linh. Das ist eine wichtige Information — ich notiere das und frage weiter.\"",
                 textB1:
-                  "Linh: 'Papa hat früher für 60 Gäste gekocht. Jetzt isst er drei Löffel und schiebt den Teller weg. Das macht mir Sorgen.'",
-                patientResponse: "Herr Nguyen schaut zur Seite. Er sagt nichts.",
+                  "\"Danke. Das ist wichtig — ich schreibe das auf und frage weiter.\"",
+                patientResponse: "Linh nickt. Herr Nguyen schaut zur Seite. Er sagt nichts.",
                 patientResponseB1:
-                  "Herr Nguyen schaut zur Seite. Er sagt nichts.",
+                  "Linh nickt. Herr Nguyen schaut zur Seite.",
                 score: 3,
                 feedback:
-                  "Dieses Zitat ist zentral. Linh verbindet Fakten (drei Löffel) mit Biografie (Koch für 60 Gäste) und Emotion (Sorge). Das ist wichtige Information für das Pflegeteam. Merke: Der minimale Intake ist nicht nur ein Ernährungsproblem — er ist auch ein Ausdruck von Herr Nguyens psychosozialer Situation.",
+                  "Richtig. Du nimmst Linhs Information ernst und dokumentierst sie. Der minimale Intake ist nicht nur ein Ernährungsproblem — er ist auch ein Ausdruck von Herr Nguyens psychosozialer Situation. Linh verbindet Fakten (drei Löffel) mit Biografie (Koch für 60 Gäste) und Emotion (Sorge).",
                 feedbackB1:
-                  "Wichtiges Zitat. Linh sagt: Papa isst fast nichts. Das ist medizinisch ein Problem — und auch menschlich. Herr Nguyen hat früher Essen geliebt. Jetzt kann er nicht essen. Das ist schwer.",
+                  "Gut. Du nimmst die Information ernst. Linhs Hinweis ist wichtig: Papa isst fast nichts. Das ist medizinisch und menschlich ein Problem.",
+              },
+              {
+                text: "\"Das ist nach einer OP oft so — das wird schon wieder.\"",
+                textB1:
+                  "\"Das ist normal nach einer OP. Das kommt wieder.\"",
+                patientResponse: "Linh übersetzt. Herr Nguyen sagt nichts. Linh wirkt enttäuscht.",
+                patientResponseB1:
+                  "Linh übersetzt. Herr Nguyen schweigt. Linh wirkt enttäuscht.",
+                score: 1,
+                feedback:
+                  "Du hast erkannt, dass Beruhigung wichtig ist — aber hier zu verharmlosend. Herrn Nguyens Albumin liegt bei 28 g/l, das ist bereits klinische Hypoalbuminämie und kommt nicht 'von selbst' wieder, weil sein Körper post-OP einen erhöhten Eiweißbedarf hat. Stattdessen: Linhs Sorge ernst nehmen, dokumentieren und Ernährungsberaterin anfordern. Ihre biografische Beobachtung (Koch für 60 Gäste) ist wertvolle Information.",
+                feedbackB1:
+                  "Du wolltest Linh beruhigen — der Impuls ist verständlich. Aber: Albumin 28 g/l ist zu niedrig, weil Herr Nguyen nach der OP mehr Eiweiß braucht — das geht nicht von selbst weg. Stattdessen: Linhs Sorge ernst nehmen und aufschreiben.",
               },
             ],
           },
@@ -276,9 +289,9 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
                   "Linh nickt. Herr Nguyen sagt nichts.",
                 score: 0,
                 feedback:
-                  "Zu verharmlosend. Herrn Nguyens Albumin liegt bei 28 g/l (Normwert 35–52 g/l) — das ist bereits eine klinische Hypoalbuminämie. 'Kommt von selbst' ist hier falsch: post-OP-Mangelernährung verlangsamt Wundheilung, erhöht Infektionsrisiko und verlängert den stationären Aufenthalt. Eine Ernährungsberaterin muss aktiv angefordert werden.",
+                  "Du hast den Impuls, Herrn Nguyen zu beruhigen — das ist gut gemeint. Aber hier zu verharmlosend, weil Albumin 28 g/l (Normwert 35–52 g/l) bereits eine klinische Hypoalbuminämie ist. Das ist deshalb gefährlich: post-OP-Mangelernährung verlangsamt Wundheilung, erhöht Infektionsrisiko und verlängert den stationären Aufenthalt. Stattdessen: Eine Ernährungsberaterin muss aktiv angefordert werden — das ist eine pflegerische Pflicht (DGEM 2020).",
                 feedbackB1:
-                  "Nicht richtig. Albumin 28 g/l ist zu niedrig. Das heißt: Herr Nguyen hat schon eine Mangelernährung. Das geht nicht 'von selbst weg'. Wir müssen handeln.",
+                  "Du wolltest Herrn Nguyen beruhigen — der Impuls ist verständlich. Aber: Albumin 28 g/l ist zu niedrig. Das heißt: Herr Nguyen hat schon eine Mangelernährung, weil er nicht genug Eiweiß isst. Stattdessen: Wir müssen handeln und die Ernährungsberaterin anfordern.",
               },
               {
                 text: "'Ich dokumentiere den minimalen Intake, fordere die Ernährungsberaterin an und frage Herrn Nguyen — durch Linh — ob er Übelkeit hat.'",
@@ -304,9 +317,9 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
                   "Linh übersetzt. Herr Nguyen schaut auf seine Hände.",
                 score: 1,
                 feedback:
-                  "Zu direktiv — ohne Ursachenklärung. 'Sie müssen' erzeugt Druck ohne Verständnis des Problems. Warum isst Herr Nguyen nicht? Übelkeit? Schmerzen? Appetitlosigkeit durch Stress und Körperbild-Veränderung? Ohne Ursachenklärung ist die Aufforderung wenig hilfreich — und kulturell kann sie als Vorwurf wirken.",
+                  "Du hast erkannt, dass Wundheilung Energie braucht — fachlich richtig. Aber zu direktiv ohne Ursachenklärung, weil 'Sie müssen' Druck erzeugt, ohne das Problem zu verstehen. Warum isst Herr Nguyen nicht? Übelkeit? Schmerzen? Appetitlosigkeit durch Stress und Körperbild-Veränderung? Stattdessen: Erst Ursachen klären, dann gemeinsam Lösung suchen — das ist Assessment vor Intervention (DGEM 2020).",
                 feedbackB1:
-                  "Nicht so gut. 'Sie müssen' macht Druck. Wir wissen noch nicht, warum Herr Nguyen nicht isst. Erst fragen, dann handeln.",
+                  "Du hast erkannt, dass Essen wichtig ist — das stimmt. Aber: 'Sie müssen' macht Druck. Wir wissen noch nicht, warum Herr Nguyen nicht isst. Stattdessen: Erst fragen (Hat er Übelkeit? Schmerzen?), dann handeln.",
               },
             ],
           },
@@ -321,8 +334,8 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
                 text: "'Minimaler oraler Intake seit OP-Tag: heute Morgen kein Frühstück. Albumin 28 g/l (prä-OP bekannt). Ernährungsberaterin angefordert um [Zeit]. Ursachenklärung: keine Übelkeit geäußert.'",
                 textB1:
                   "'Herr Nguyen hat heute kein Frühstück gegessen. Albumin 28 g/l. Ernährungsberaterin angefordert um [Zeit].'",
-                patientResponse: "",
-                patientResponseB1: "",
+                patientResponse: "Linh nickt anerkennend. Herr Nguyen schaut kurz zu dir — das erste Mal heute.",
+                patientResponseB1: "Linh nickt. Herr Nguyen schaut dich kurz an.",
                 score: 3,
                 feedback:
                   "Korrekte Dokumentation: Beobachtung (kein Frühstück), klinischer Hintergrund (Albumin 28 als bekannter Risikofaktor), Maßnahme (Anforderung mit Zeit), Ursachenklärung (Übelkeit verneint). Das ermöglicht Verlaufsmessung und zeigt der Folgeschicht, was bereits getan wurde.",
@@ -332,13 +345,13 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
               {
                 text: "'Herr Nguyen isst nicht.' (Ende)",
                 textB1: "'Herr Nguyen isst nicht.'",
-                patientResponse: "",
-                patientResponseB1: "",
+                patientResponse: "Linh schaut dich fragend an. Sie wartet auf mehr.",
+                patientResponseB1: "Linh wartet. Sie erwartet mehr Information.",
                 score: 0,
                 feedback:
-                  "Zu knapp. Eine klinisch relevante Information braucht: Was genau (kein Frühstück), Hintergrund (Albumin, Gewichtsverlust), Maßnahme (was du getan hast), und Verantwortlicher (Ernährungsberaterin angefordert). Ohne diese Elemente ist die Dokumentation nicht behandlungskontinuierend.",
+                  "Du hast den Kerngedanken erkannt — Essen ist ein Thema. Aber zu knapp, weil eine klinisch relevante Dokumentation vier Elemente braucht: Was genau (kein Frühstück), Hintergrund (Albumin, Gewichtsverlust), Maßnahme (was du getan hast), und Verantwortlicher (Ernährungsberaterin angefordert). Stattdessen: Diese vier Punkte zusammenführen — sonst kann die Folgeschicht nicht weiterarbeiten.",
                 feedbackB1:
-                  "Zu wenig. Die Dokumentation braucht mehr: Was genau hat er nicht gegessen? Was hast du getan? Wer wurde informiert?",
+                  "Du hast erkannt, dass es um Essen geht — gut. Aber zu wenig, weil die Dokumentation mehr braucht: Was genau hat er nicht gegessen? Was hast du getan? Wer wurde informiert? Stattdessen: Diese vier Punkte aufschreiben.",
               },
             ],
           },
@@ -370,21 +383,21 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Braden-Subskala: Sensorisches Empfinden",
         body: "",
-        glossarBegriffe: ["sensorisches Empfinden", "Braden-Skala", "Nozizeption"],
+        glossarBegriffe: ["sensorisches Empfinden", "Braden-Skala", "Nozizeption", "Subskala", "Leckage"],
       },
       contentB1: {
         title: "Braden-Skala: Was ist sensorisches Empfinden?",
         body: "",
-        glossarBegriffe: ["sensorisches Empfinden", "Braden-Skala"],
+        glossarBegriffe: ["sensorisches Empfinden", "Braden-Skala", "Subskala", "Leckage"],
       },
       inlineWissen: {
         bausteinRef: "sensorisches-empfinden",
         storyAufhaenger:
           "Gleich ordnest du Herrn Nguyens Braden-Subskalen ein. Eine davon ist das 'sensorische Empfinden'. Herr Nguyen hat post-OP-Schmerzen — das klingt nach intaktem Empfinden. Aber: Schmerz kann auch dazu führen, dass er Bewegung vermeidet. Was bedeutet das für sein Dekubitusrisiko?",
         kerntext:
-          "**Was ist sensorisches Empfinden?** Die Fähigkeit, auf druckbedingte Beschwerden (Schmerz, Unbehagen) zu reagieren und eine Lageveränderung einzuleiten. Es ist die erste der 6 Braden-Subskalen.\n\n**4 Stufen (Braden-Score):**\n\n• **4 Punkte — Nicht eingeschränkt:** Patient spürt Druck, reagiert sofort, verändert die Lage selbstständig.\n• **3 Punkte — Leicht eingeschränkt:** Patient spürt Druck, reagiert aber verzögert oder braucht Aufforderung.\n• **2 Punkte — Stark eingeschränkt:** Patient reagiert nur auf starke Schmerzreize, kann Unbehagen nicht sinnvoll verbalisieren.\n• **1 Punkt — Vollständig ausgefallen:** Patient reagiert nicht auf Schmerzreize (Bewusstlosigkeit, tiefe Sedierung, Plegie).\n\n**Herr Nguyen:** Er hat post-OP-Schmerzen (NRS 3/10). Das bedeutet: Sein sensorisches Empfinden ist grundsätzlich intakt — er SPÜRT Druck. Aber: Der Schmerz begrenzt seine Bewegungsbereitschaft. Jede Lageveränderung tut weh → er bleibt liegen → Druck wirkt länger → Dekubitusrisiko steigt. Score: **3 Punkte (leicht eingeschränkt).**\n\n**Klinische Relevanz:** Bei Patienten mit Schmerz-bedingter Immobilität ist das sensorische Empfinden formal intakt, aber funktionell eingeschränkt. Schmerzmanagement ist deshalb Teil der Dekubitusprophylaxe.",
+          "**Was ist eine Subskala?** Eine **Subskala** = ein Teilbereich (Unter-Skala) eines Assessment-Instruments. Die Braden-Skala besteht aus 6 Subskalen, die einzeln bewertet werden — die Summe ergibt den Gesamtscore.\n\n**Was ist eine Leckage?** Eine **Leckage** = das Austreten von Stomainhalt (oder Wundsekret) zwischen Hautschutzplatte und Haut, weil die Abdichtung nicht mehr hält.\n\n**Was ist sensorisches Empfinden?** Die Fähigkeit, auf druckbedingte Beschwerden (Schmerz, Unbehagen) zu reagieren und eine Lageveränderung einzuleiten. Es ist die erste der 6 Braden-Subskalen.\n\n**4 Stufen (Braden-Score):**\n\n• **4 Punkte — Nicht eingeschränkt:** Patient spürt Druck, reagiert sofort, verändert die Lage selbstständig.\n• **3 Punkte — Leicht eingeschränkt:** Patient spürt Druck, reagiert aber verzögert oder braucht Aufforderung.\n• **2 Punkte — Stark eingeschränkt:** Patient reagiert nur auf starke Schmerzreize, kann Unbehagen nicht sinnvoll verbalisieren.\n• **1 Punkt — Vollständig ausgefallen:** Patient reagiert nicht auf Schmerzreize (Bewusstlosigkeit, tiefe Sedierung, Plegie).\n\n**Herr Nguyen:** Er hat post-OP-Schmerzen (NRS 3/10). Das bedeutet: Sein sensorisches Empfinden ist grundsätzlich intakt — er SPÜRT Druck. Aber: Der Schmerz begrenzt seine Bewegungsbereitschaft. Jede Lageveränderung tut weh → er bleibt liegen → Druck wirkt länger → Dekubitusrisiko steigt. Score: **3 Punkte (leicht eingeschränkt).**\n\n**Klinische Relevanz:** Bei Patienten mit Schmerz-bedingter Immobilität ist das sensorische Empfinden formal intakt, aber funktionell eingeschränkt. Schmerzmanagement ist deshalb Teil der Dekubitusprophylaxe.",
         kerntextB1:
-          "**Was ist sensorisches Empfinden?** Die Fähigkeit, Druck zu spüren und sich deshalb umzulagern.\n\n**Braden-Skala Punkte:**\n• 4 = spürt alles, bewegt sich sofort\n• 3 = spürt Druck, reagiert aber langsam\n• 2 = reagiert nur auf starke Schmerzen\n• 1 = reagiert gar nicht\n\n**Herr Nguyen:** Er spürt Druck (Schmerz NRS 3/10). Aber: Weil Bewegung weh tut, bleibt er liegen. Druck wirkt länger → Dekubitus-Risiko steigt.\n\nScore: **3 Punkte** (leicht eingeschränkt).",
+          "**Was ist eine Subskala?** Eine **Subskala** = ein Teil-Bereich eines Tests. Die Braden-Skala hat 6 Subskalen.\n\n**Was ist eine Leckage?** **Leckage** = wenn Stuhl aus dem Stoma seitlich neben der Platte rauskommt (statt in den Beutel).\n\n**Was ist sensorisches Empfinden?** Die Fähigkeit, Druck zu spüren und sich deshalb umzulagern.\n\n**Braden-Skala Punkte:**\n• 4 = spürt alles, bewegt sich sofort\n• 3 = spürt Druck, reagiert aber langsam\n• 2 = reagiert nur auf starke Schmerzen\n• 1 = reagiert gar nicht\n\n**Herr Nguyen:** Er spürt Druck (Schmerz NRS 3/10). Aber: Weil Bewegung weh tut, bleibt er liegen. Druck wirkt länger → Dekubitus-Risiko steigt.\n\nScore: **3 Punkte** (leicht eingeschränkt).",
         faustregel:
           "**Sensorisches Empfinden = Spürt der Patient Druck und bewegt sich?** Bei Herrn Nguyen: Er spürt — aber Schmerz hält ihn fest.",
         faustregelB1:
@@ -478,13 +491,13 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
       tag: "krankheitslehre",
       contentC1: {
         title: "Thrombose-Assessment bei Herrn Nguyen",
-        body: "Du schaust kurz auf beide Beine von Herrn Nguyen — Inspektion (Schwellung, Verfärbung, Kollateralvenen) und vorsichtige Palpation. Vier Aussagen zur Thromboseprophylaxe und -assessment — welche stimmen?",
-        glossarBegriffe: ["Thrombose", "Heparin", "Wells-Score", "Tumorerkrankung"],
+        body: "**Thromboseprophylaxe** = Maßnahmen zur Verhinderung von Blutgerinnseln in den Venen (pharmakologisch z.B. Heparin, physikalisch z.B. Kompression, plus Mobilisation).\n\nDu schaust kurz auf beide Beine von Herrn Nguyen — Inspektion (Schwellung, Verfärbung, Kollateralvenen) und vorsichtige Palpation. Vier Aussagen zur Thromboseprophylaxe und -assessment — welche stimmen?",
+        glossarBegriffe: ["Thrombose", "Heparin", "Wells-Score", "Tumorerkrankung", "Thromboseprophylaxe"],
       },
       contentB1: {
         title: "Thrombose prüfen — was stimmt?",
-        body: "Du schaust auf die Beine von Herrn Nguyen. Vier Aussagen — welche sind richtig?",
-        glossarBegriffe: ["Thrombose", "Heparin", "Venenthrombose"],
+        body: "**Thromboseprophylaxe** = alle Maßnahmen, die Blutgerinnsel verhindern: Heparin-Spritze, Bewegung, Kompressions-Strümpfe.\n\nDu schaust auf die Beine von Herrn Nguyen. Vier Aussagen — welche sind richtig?",
+        glossarBegriffe: ["Thrombose", "Heparin", "Venenthrombose", "Thromboseprophylaxe"],
       },
       question: {
         fragetext:
@@ -547,12 +560,12 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Bristol Stool Scale — Stuhlkonsistenz standardisiert beurteilen",
         body: "",
-        glossarBegriffe: ["Bristol Stool Scale", "Stuhlkonsistenz", "Stoma-Output"],
+        glossarBegriffe: ["Bristol Stool Scale", "Stuhlkonsistenz", "Stoma-Output", "Stoma"],
       },
       contentB1: {
         title: "Bristol Stool Scale — Stuhl-Form beurteilen",
         body: "",
-        glossarBegriffe: ["Bristol Stool Scale", "Stuhlkonsistenz"],
+        glossarBegriffe: ["Bristol Stool Scale", "Stuhlkonsistenz", "Stoma"],
       },
       inlineWissen: {
         bausteinRef: "bristol-stool-scale",
@@ -687,12 +700,12 @@ export const CE02_SIT_NGUYEN_STOMA_BEOBACHTEN: SituationsPhase = {
       contentC1: {
         title: "Mazerierung: Wenn Stomainhalt auf die Haut trifft",
         body: "Mazerierung ist die häufigste Haut-Komplikation bei Stoma-Patienten — und sie entsteht durch eine klare Ursache.\n\nAnalogievon: Stell dir vor, du trägst stundenlang nasse Socken. Die Fußhaut wird aufgeweicht, weißlich und verletzlich — winzige Belastungen, die du sonst nicht spürst, reißen jetzt die Haut ein. Genauso passiert es, wenn Stomainhalt (bei Kolostoma: leicht alkalisch, bei Ileostoma: enzymatisch aggressiv) dauerhaft auf die Haut rund ums Stoma gelangt. Die Haut verliert ihre Schutzbarriere. Es entstehen Mazeration, Rötung, Einrisse — ein Teufelskreis, weil die Stomaplatte dann nicht mehr dicht sitzt.\n\n**Was schützt?** 1) Passende Plattengröße (Stoma exakt ausgemessen), 2) Schutzpaste (füllt Unebenheiten), 3) Regelmäßiger Beutelwechsel (spätestens wenn 1/3–2/3 voll).",
-        glossarBegriffe: ["Mazerierung", "Stomaplatte", "Schutzpaste"],
+        glossarBegriffe: ["Mazerierung", "Stomaplatte", "Schutzpaste", "Beutelwechsel", "Haut", "Mazeration", "Rötung", "Stoma", "Ursache"],
       },
       contentB1: {
         title: "Mazerierung: Was passiert mit der Haut?",
         body: "Mazerierung heißt: die Haut wird durch Feuchtigkeit beschädigt.\n\nAnalogievon: Stell dir vor: Du trägst stundenlang nasse Socken. Die Haut wird weich und verletzlich. Genauso passiert es, wenn Stuhl aus dem Stoma auf die Haut kommt. Der Stuhl greift die Haut an. Die Haut wird rot, weich, und reißt ein.\n\n**Was schützt?** 1) Die Stomaplatte muss genau passen, 2) Schutzpaste füllt kleine Lücken, 3) Beutel regelmäßig wechseln — nicht zu voll werden lassen.",
-        glossarBegriffe: ["Mazerierung", "Stomaplatte", "Schutzpaste"],
+        glossarBegriffe: ["Mazerierung", "Stomaplatte", "Schutzpaste", "Haut", "Stoma", "Beutelwechsel", "Rötung", "Ursache", "Mazeration"],
       },
     },
   ],

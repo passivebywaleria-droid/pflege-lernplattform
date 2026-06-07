@@ -88,13 +88,13 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
       displayFormat: "beforeafter",
       contentC1: {
         title: "Hautturgor beim Säugling — so bewertest du ihn",
-        body: "Der Hautturgor zeigt den Flüssigkeitszustand des Körpers. Du drückst die Haut kurz zwischen Daumen und Zeigefinger zusammen. **Normaler Turgor:** Die Haut springt sofort zurück — ausreichend Flüssigkeit. **Reduzierter Turgor:** Die Haut bleibt kurz als Falte stehen — Zeichen von Exsikkose (Austrocknung). Beim Säugling prüfst du den Turgor am Bauch oder am Unterarm — nie an den Beinen (dort zu wenig Unterhautfettgewebe für zuverlässige Beurteilung). Ergänzend beobachtest du die vordere Fontanelle: normalerweise flach und leicht federnd. Eingefallen = schwerer Flüssigkeitsmangel. Aufgewölbt = erhöhter Hirndruck. *(Hoehl/Kullick, 2019)*",
-        glossarBegriffe: ["Hautturgor", "Exsikkose", "Fontanelle"],
+        body: "Der Hautturgor zeigt den Flüssigkeitszustand des Körpers. Du drückst die Haut kurz zwischen Daumen und Zeigefinger zusammen. **Normaler Turgor:** Die Haut springt sofort zurück — ausreichend Flüssigkeit. **Reduzierter Turgor:** Die Haut bleibt kurz als Falte stehen — Zeichen von Exsikkose (Austrocknung). Beim Säugling prüfst du den Turgor am Bauch oder am Unterarm — nie an den Beinen (dort zu wenig Unterhautfettgewebe für zuverlässige Beurteilung). Ergänzend beobachtest du die vordere Fontanelle: normalerweise flach und leicht federnd. Eingefallen = schwerer Flüssigkeitsmangel. Aufgewölbt = erhöhter Hirndruck.\n\n**Atemfrequenz** = die Anzahl der Atemzüge pro Minute. Beim 4-monatigen Säugling: 30-40/min in Ruhe, bis 50/min wach akzeptabel; >60/min = Tachypnoe. **Atemfrequenz (= Atemzüge pro Minute)** dokumentierst du im Pflegebericht zusammen mit Turgor und Fontanelle. *(Hoehl/Kullick, 2019)*",
+        glossarBegriffe: ["Hautturgor", "Exsikkose", "Fontanelle", "Haut", "Flüssigkeit", "Atemfrequenz"],
       },
       contentB1: {
         title: "Hautturgor beim Säugling prüfen",
-        body: "Der Hautturgor zeigt: Hat Emilia genug Flüssigkeit? Du drückst kurz auf die Haut (Bauch oder Unterarm). **Normal:** Haut springt sofort zurück. Das ist gut. **Auffällig:** Haut bleibt kurz als Falte stehen. Das ist ein Zeichen von Exsikkose (= Austrocknung). Nie an den Beinen prüfen — dort ist die Haut anders. Außerdem schaust du auf die Fontanelle (= die weiche Stelle am Kopf). Normal: flach und etwas federnd. Eingefallen = zu wenig Flüssigkeit. Aufgewölbt = Alarm. *(Hoehl/Kullick, 2019)*",
-        glossarBegriffe: ["Hautturgor", "Exsikkose", "Fontanelle"],
+        body: "Der Hautturgor zeigt: Hat Emilia genug Flüssigkeit? Du drückst kurz auf die Haut (Bauch oder Unterarm). **Normal:** Haut springt sofort zurück. Das ist gut. **Auffällig:** Haut bleibt kurz als Falte stehen. Das ist ein Zeichen von Exsikkose (= Austrocknung). Nie an den Beinen prüfen — dort ist die Haut anders. Außerdem schaust du auf die Fontanelle (= die weiche Stelle am Kopf). Normal: flach und etwas federnd. Eingefallen = zu wenig Flüssigkeit. Aufgewölbt = Alarm.\n\n**Atemfrequenz** = wie oft Emilia pro Minute atmet. Beim 4 Monate alten Baby: 30-40/min in Ruhe ist normal. **Atemfrequenz (= Atemzüge pro Minute)** schreibst du immer in die Dokumentation. *(Hoehl/Kullick, 2019)*",
+        glossarBegriffe: ["Hautturgor", "Exsikkose", "Fontanelle", "Haut", "Flüssigkeit", "Atemfrequenz"],
       },
     },
 
@@ -112,13 +112,13 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Windeln einschätzen — normal, auffällig oder Alarm?",
-        body: "Emilia ist 4 Monate alt und wird vollgestillt. Ordne die folgenden Befunde der richtigen Kategorie zu.",
+        body: "Emilia ist 4 Monate alt und wird vollgestillt. Zwei Begriffe vorab: **Mekonium** = der erste Stuhl eines Neugeborenen — schwarz-grünlich, zähklebrig, normal in den ersten 2-3 Lebenstagen. **Muttermilchstuhl** = der typische Stuhl gestillter Säuglinge — goldgelb, dünn-pastös, mild riechend. Ordne die folgenden Befunde der richtigen Kategorie zu.",
         glossarBegriffe: ["Mekonium", "Muttermilchstuhl"],
       },
       contentB1: {
         title: "Windeln beurteilen",
-        body: "Emilia ist 4 Monate, gestillt. Sortiere die Befunde: normal, auffällig oder sofort melden?",
-        glossarBegriffe: ["Muttermilchstuhl"],
+        body: "Emilia ist 4 Monate, gestillt. Zwei Begriffe vorab: **Mekonium** = der erste Stuhl bei Neugeborenen, schwarz-grünlich. Nur in den ersten 2-3 Lebenstagen normal. **Muttermilchstuhl** = der Stuhl bei gestillten Babys: goldgelb, weich, riecht mild. Sortiere die Befunde: normal, auffällig oder sofort melden?",
+        glossarBegriffe: ["Mekonium", "Muttermilchstuhl"],
       },
       question: {
         fragetext:
@@ -183,9 +183,9 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
         dialogPhases: [
           {
             context:
-              "Emilia macht wieder 3 Schlucke, lässt dann los. Laura sagt leise:",
+              "Emilia macht wieder 3 Schlucke, lässt dann los. Laura sagt leise:\n\n\"Warum trinkt sie nicht mehr? Ich mache doch alles, was ich kann.\"",
             contextB1:
-              "Emilia trinkt kurz, lässt dann los. Laura sagt:",
+              "Emilia trinkt kurz, lässt dann los. Laura sagt:\n\n\"Warum trinkt sie nicht? Ich mache doch alles richtig.\"",
             speaker: "Laura K.",
             options: [
               {
@@ -226,17 +226,17 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
                   "Laura ist unglücklich. \"Also doch meine Milch.\"",
                 score: 0,
                 feedback:
-                  "Falscher Rat und kontraproduktiv. Erstens: Muttermilch ist bei Bronchiolitis aktiv vorteilhaft (Antikörper). Zweitens: Dieser Rat bestätigt Lauras schlimmste Befürchtung — dass sie für Emilias Trinkschwäche verantwortlich ist. Drittens: Flasche ist beim obligaten Nasenatmer genauso schwierig wie Brust. Die Ursache bleibt.",
+                  "Du willst Laura eine Lösung anbieten — guter Reflex. Aber dieser Rat ist kontraproduktiv, weil: Erstens ist Muttermilch bei Bronchiolitis aktiv vorteilhaft (Antikörper) — sie ist nicht das Problem. Zweitens bestätigt dieser Rat Lauras schlimmste Befürchtung, sie sei für Emilias Trinkschwäche verantwortlich. Drittens ist die Flasche beim obligaten Nasenatmer genauso schwierig wie die Brust — die Ursache bleibt. Stattdessen: Erkläre Laura den Mechanismus (Nase → Saugen-Atmen-Konflikt), dann Nasenpflege vor jeder Mahlzeit anbieten.",
                 feedbackB1:
-                  "Falscher Rat. Muttermilch ist gut für Emilia — besonders jetzt, weil sie Abwehrstoffe enthält. Und Laura fühlt sich jetzt schuldig. Das war nicht die Absicht.",
+                  "Du willst Laura helfen — das ist gut. Aber dieser Rat ist kontraproduktiv, weil Muttermilch gerade jetzt sehr gut für Emilia ist (Abwehrstoffe). Und Laura fühlt sich jetzt schuldig — das war nicht deine Absicht. Stattdessen: Erkläre, dass die Nase das Problem ist, nicht die Milch. Beim nächsten Mal: Mechanismus erklären, dann Nasenpflege zeigen.",
               },
             ],
           },
           {
             context:
-              "Du hast erklärt: Das Problem ist die Nase. Laura hört gespannt zu. Du fährst fort:",
+              "Du hast erklärt: Das Problem ist die Nase. Laura hört gespannt zu und wartet auf mehr.",
             contextB1:
-              "Du hast erklärt: die Nase ist das Problem. Laura hört zu. Du erklärst weiter:",
+              "Du hast erklärt: die Nase ist das Problem. Laura hört zu und wartet.",
             speaker: "Du",
             options: [
               {
@@ -271,9 +271,9 @@ export const CE02_SIT_EMILIA_SAEUGLING_BEOBACHTEN: SituationsPhase = {
           },
           {
             context:
-              "Laura nickt. Dann fragt sie:",
+              "Laura nickt. Dann fragt sie:\n\n\"Was kann ich tun — jetzt gerade? Wann reinigen wir die Nase?\"",
             contextB1:
-              "Laura nickt. Dann fragt sie:",
+              "Laura nickt. Dann fragt sie:\n\n\"Was kann ich jetzt tun? Wann wird die Nase gereinigt?\"",
             speaker: "Laura K.",
             options: [
               {

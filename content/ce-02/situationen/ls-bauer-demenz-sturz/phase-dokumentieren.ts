@@ -33,13 +33,13 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       transition: "Begriffe klar? Dann schreib das Sturzprotokoll.",
       contentC1: {
         title: "Sturzprotokoll \u2014 was muss drinstehen?",
-        body: "",
-        glossarBegriffe: ["Ursachenhypothese", "Verletzungscheck", "Dokumentationspflicht", "Ursache"],
+        body: "**Verletzungscheck** = systematische Inspektion (Blutungen, Deformitäten, Hämatome, Schwellungen). **Hämatom** = Bluterguss (eingeblutetes Gewebe nach Stoß). **SpO\u2082** = peripher gemessene Sauerstoffsättigung des Blutes in Prozent (Normbereich 95-100 %). **Ursachenhypothese** = begründete Vermutung über die Sturzursache. **Ursache** = auslösender Faktor. **Dokumentationspflicht** = gesetzliche Pflicht nach \u00a7 4 PflBG, den Pflegeprozess vollständig zu dokumentieren. **Sturzprotokoll** = strukturiertes Dokument zur Erfassung von Sturzereignis und Folgen (DNQP 2022). **Sturz** = unbeabsichtigtes Gelangen auf den Boden. **SGB XI** = Sozialgesetzbuch Elftes Buch (Pflegeversicherung). **Pflegedokumentation** = strukturierte schriftliche Erfassung aller Pflegehandlungen. **Qualitätssicherung** = systematische Maßnahmen zur Sicherstellung pflegerischer Qualität.",
+        glossarBegriffe: ["Ursachenhypothese", "Verletzungscheck", "Dokumentationspflicht", "Ursache", "Hämatom", "SpO₂", "Sturzprotokoll", "Sturz", "SGB XI", "Pflegedokumentation", "Qualitätssicherung", "Pflege", "Pflegeprozess", "§ 4 PflBG", "Sauerstoffsättigung"],
       },
       contentB1: {
         title: "Sturzprotokoll \u2014 was schreibst du rein?",
-        body: "",
-        glossarBegriffe: ["Ursachenhypothese", "Verletzungscheck", "Dokumentationspflicht"],
+        body: "**Verletzungscheck** = wir schauen den Körper an: Wunden, Beulen, Schiefstellungen. **Hämatom** = Bluterguss. **SpO\u2082** = Sauerstoff im Blut in Prozent (Sauerstoffsättigung). **Ursachenhypothese** = unsere begründete Vermutung warum er gestürzt ist. **Dokumentationspflicht** = wir müssen alles aufschreiben (Gesetz). **Sturzprotokoll** = das Formular dafür. **Sturz** = ungewollt auf den Boden gelangen. **SGB XI** = Pflege-Gesetz. **Pflegedokumentation** = wir schreiben alles auf was wir machen.",
+        glossarBegriffe: ["Ursachenhypothese", "Verletzungscheck", "Dokumentationspflicht", "Hämatom", "SpO₂", "Sturzprotokoll", "Sturz", "SGB XI", "Pflegedokumentation", "Pflege", "Sauerstoffsättigung"],
       },
       inlineWissen: {
         bausteinRef: "pflegedokumentation-sturzprotokoll",
@@ -144,12 +144,12 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
       contentC1: {
         title: "Dokumentation bei Demenz — 4 Besonderheiten",
         body: "",
-        glossarBegriffe: ["Pflegebericht", "Abwehrverhalten", "BESD-Dokumentation", "Dokumentation", "Fehler", "Objektivität", ],
+        glossarBegriffe: ["Pflegebericht", "Abwehrverhalten", "BESD-Dokumentation", "Dokumentation", "Fehler", "Objektivität", "Demenz"],
       },
       contentB1: {
         title: "Was ist beim Aufschreiben bei Demenz anders?",
-        body: "",
-        glossarBegriffe: ["Pflegebericht", "Abwehrverhalten"],
+        body: "**Pflegebericht** bei **Demenz** = Verhalten beschreiben statt bewerten. Statt \"er war schwierig\": konkret was er getan hat (\"2x nach Pflegekraft geschlagen\") und was geholfen hat (Pause, Musik).",
+        glossarBegriffe: ["Pflegebericht", "Abwehrverhalten", "Demenz"],
       },
       inlineWissen: {
         bausteinRef: "ganzkörperpflege-dokumentation-demenz",
@@ -448,12 +448,17 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_DOKUMENTIEREN: SituationsPhase = {
           "SGB XI § 115",
           "Haftung",
           "Dokumentationspflicht",
+          "Sturz",
+          "Sturzprotokoll",
+          "SGB XI",
+          "Pflegedokumentation",
+          "Qualitätssicherung",
         ],
       },
       contentB1: {
         title: "Warum muss man alles aufschreiben?",
         body: "Das Gesetz sagt:\n\n§ 4 PflBG: Die Dokumentation gehört zur Arbeit der Pflegefachkraft. Das darf nicht jemand anderes machen. Und es muss vollständig sein.\n\nWenn etwas nicht dokumentiert ist — dann gilt es vor Gericht als nicht passiert.\n\nBeispiel: Herr Bauer stürzt wieder. Der Anwalt fragt: 'Was haben Sie nach dem ersten Sturz getan?' Wenn das Protokoll leer ist, gibt es keine Antwort.\n\nDokumentation schützt Herrn Bauer, das Team und die Einrichtung.",
-        glossarBegriffe: ["§ 4 PflBG", "Haftung", "Dokumentation"],
+        glossarBegriffe: ["§ 4 PflBG", "Haftung", "Dokumentation", "Sturz", "Sturzprotokoll", "SGB XI", "Pflegedokumentation"],
       },
     },
   ],
