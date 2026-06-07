@@ -64,7 +64,13 @@ Diff committet, Entscheidungen dokumentiert, Fakten-Pool-Struktur steht, Plan-Au
 **Ziel:** Generierung quellengebunden. Jeder Fakt rückführbar auf eine abgerufene Buchpassage. Umsetzung der Empfehlungen 1–3 + 7.
 
 ### Schritte
-- **1.1 Kernfakten-Schema erweitern** (`content/_types.ts` + Kernfakten-Format): pro Fakt `beleg: { werk, quelldatei, woertlichesZitat, primaerquelle }` (Rev. 2: Zitat statt Seitenzahl). In zentralem Fakten-Pool, mit `verwendetInCE: string[]`.
+- **1.1 ✅ Beleg-Format definiert + Vertikalschnitt bewiesen (2026-06-07):** Markdown-Beleg-Block pro Kernfakt:
+  ```
+  **Beleg:**
+  - Quelle: `dnqp-standards-index/<datei>.txt`
+  - Zitat: "<verbatim aus Primärquelle>"
+  ```
+  Verifizierer-Modus `--check-file <kernfakten.md>` parst alle Beleg-Blöcke + prüft jedes Zitat. Bewiesen an `sturz-prophylaxe.md` F-02: 2 DNQP-Zitate, beide ✅. (TS-Interface-Feld `belege[]` an Baustein folgt in 1.2, wenn Belege in den generierten Content fließen.)
 - **1.2 `dozentin-recherche`-Agent umbauen:** statt frei „in eigenen Worten paraphrasieren" → pro Fakt die konkrete Passage aus `recherche/*-index/` abrufen, wörtlich zitieren, DANN paraphrasieren MIT Beleg. Regel: kein Fakt ohne verbatim-Zitat aus einer real existierenden Quelldatei.
 - **1.3 ✅ `scripts/zitat-verifizierer.ts` gebaut + bewiesen (2026-06-07):** prüft jedes `woertlichesZitat` per String-Match (normalisiert) gegen die zitierte Quelldatei. Self-Test PASS gegen echte DNQP-**Primärquelle** (S1-Standardkriterium + Prozesskriterium matchen verbatim; erfundenes Zitat abgelehnt). Plus geplanter adversarialer KI-Check „passt Paraphrase zum Zitat?".
 - **1.3b ✅ DNQP-Primärquellen beschafft (2026-06-07):** 10 Original-Auszüge von dnqp.de heruntergeladen + Volltext extrahiert (~32k Wörter) → `recherche/dnqp-standards-index/` (lokal, gitignored). Reproduzierbar via `scripts/fetch-dnqp-standards.sh`. **Löst die Primär-vs-Digest-Frage:** jetzt echte Primärquelle für DNQP-Themen (Sturz/Dekubitus/Ernährung/Kontinenz/Haut/Mund/Schmerz/Wunden/Demenz/Entlassung), nicht mehr second-hand-Zusammenfassung. **Praxis-Regel:** kurze zusammenhängende Verbatim-Phrasen zitieren (lange mehrzeilige scheitern an Tabellen-Spalten der Extraktion).

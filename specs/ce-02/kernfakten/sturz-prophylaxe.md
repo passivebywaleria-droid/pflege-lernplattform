@@ -39,6 +39,10 @@
 **Wissensart:** Assessment
 **Bloom-Potential:** 3-4 (Anwenden, Analysieren)
 **Primärquelle:** (DNQP 2022; Expertenstandard Sturzprophylaxe 2. Aktualisierung)
+**Beleg:**
+- Quelle: `dnqp-standards-index/sturzprophylaxe.txt`
+- Zitat: "Die Pflegefachkraft identifiziert unmittelbar zu Beginn des pflegerischen Auftrages mittels eines Screenings systematisch das Sturzrisiko"
+- Zitat: "das multifaktorielle Geschehen, das zu einem Sturz führt und entsprechend komplexer Interventionen bedarf"
 **Praxisfehler:** Viele Pflegende verlassen sich auf ein einzelnes Punkte-Schema (z.B. "18 = kein Risiko") statt multifaktoriell zu denken.
 **Transfer:** [Transfer] Wie ein Arzt nicht nur Fieber misst, sondern den ganzen Patienten anschaut.
 

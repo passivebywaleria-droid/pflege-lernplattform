@@ -76,6 +76,35 @@ export function verifyZitat(beleg: Beleg, rechercheRoot = "recherche"): VerifyRe
   };
 }
 
+/** Parst `**Beleg:**`-Blöcke aus einer Kernfakten-.md und verifiziert jedes Zitat.
+ *  Format:
+ *    **Beleg:**
+ *    - Quelle: `dnqp-standards-index/datei.txt`
+ *    - Zitat: "..."
+ *    - Zitat: "..."
+ */
+export function checkKernfaktenFile(mdPfad: string, rechercheRoot = "recherche") {
+  const lines = readFileSync(mdPfad, "utf8").split("\n");
+  const results: { zitat: string; quelle: string; r: VerifyResult }[] = [];
+  let belege = 0;
+  for (let i = 0; i < lines.length; i++) {
+    if (!/\*\*Beleg:\*\*/.test(lines[i])) continue;
+    belege++;
+    let quelle = "";
+    for (let j = i + 1; j < lines.length; j++) {
+      const l = lines[j].trim();
+      if (!l.startsWith("-")) break; // Block-Ende
+      const mQ = l.match(/Quelle:\s*`([^`]+)`/);
+      if (mQ) { quelle = mQ[1]; continue; }
+      const mZ = l.match(/Zitat:\s*"([^"]+)"/);
+      if (mZ && quelle) {
+        results.push({ zitat: mZ[1], quelle, r: verifyZitat({ werk: "", quelldatei: quelle, woertlichesZitat: mZ[1] }, rechercheRoot) });
+      }
+    }
+  }
+  return { belege, results };
+}
+
 // ─── CLI / Self-Test ───
 const arg = process.argv[2];
 if (arg === "--self-test") {
@@ -113,10 +142,24 @@ if (arg === "--self-test") {
   }
   console.log(`\n${"─".repeat(60)}`);
   console.log(`Erwartetes Verhalten: ${pass}/${tests.length} (2 Matches + 1 korrekte Ablehnung)`);
+} else if (arg === "--check-file") {
+  const md = process.argv[3];
+  if (!md) { console.log("Usage: --check-file <kernfakten.md>"); process.exit(2); }
+  const { belege, results } = checkKernfaktenFile(md);
+  console.log(`Kernfakten-Beleg-Check: ${md}`);
+  console.log(`Beleg-Blöcke: ${belege} · Zitate: ${results.length}`);
+  let fail = 0;
+  for (const x of results) {
+    if (!x.r.ok) fail++;
+    console.log(`  ${x.r.ok ? "✅" : "❌"} [${x.quelle}] "${x.zitat.slice(0, 70)}${x.zitat.length > 70 ? "…" : ""}"`);
+    if (!x.r.ok) console.log(`       ${x.r.grund}`);
+  }
+  console.log(`\n${fail === 0 ? "✅ Alle Belege verifiziert" : `❌ ${fail}/${results.length} Belege FAIL`}`);
+  process.exit(fail === 0 ? 0 : 1);
 } else if (arg) {
   const r = verifyZitat({ werk: "CLI", quelldatei: arg, woertlichesZitat: process.argv[3] ?? "" });
   console.log(`${r.ok ? "✅ MATCH" : "❌ KEIN MATCH"} — ${r.grund}`);
   process.exit(r.ok ? 0 : 1);
 } else {
-  console.log("Usage: zitat-verifizierer.ts --self-test  |  <quelldatei> \"<zitat>\"");
+  console.log("Usage: zitat-verifizierer.ts --self-test | --check-file <md> | <quelldatei> \"<zitat>\"");
 }
