@@ -52,7 +52,7 @@ Zwei Workstreams, die NICHT unabhängig sind:
 - **0.3** Per-CE-Stunden: KB-Raster (Abschnitt 1 der Sizing-Spec) als verbindliche Zielgröße bestätigen; exakte Multi-CE-LE-Aufteilung nur falls Schul-Nachweis sie verlangt.
 - **0.4** Tracking: `measure-content.ts` als wöchentlicher Fortschritts-Check gegen KB-Ziele.
 - **0.5** Zentrale Fakten-Basis aufsetzen (Querschnitt-Prinzip 2): Pool-Struktur für CE-übergreifende Kernfakten anlegen, damit Phase 1+4 referenzieren statt duplizieren.
-- **0.6** Bestehende `.md`-Pläne sichten: die ~80 `bausteine-plan.md` der 10 unbebauten CE auf Verwertbarkeit auditieren (v1-Stil → was ist als Phase-4-Input brauchbar?).
+- **0.6 ✅ erledigt (2026-06-07):** ~70 `bausteine-plan.md` über 9 CE (~300k Wörter) auditiert. Ergebnis: **wertvoller Vorlauf** — jeder Plan hat schon bausteinId, Bloom-Metadaten, `quelleFakten` (echte Zitate, z.B. „ESC Guidelines 2021"), Stufe 1/2/3, Misconceptions→Distraktoren, Karteikarte, Glossar-Beitrag. **Fehlt für Rev. 2:** v2-Stil (Lehr-Patient + Anker+Spektrum + Aha-Moment), passagen-genaue Verbatim-Belege (statt dokument-level), Inline-Wissen-Integration. → Phase 4 ist **Refactor v1→v2 + Beleg-Härtung + TS-Generierung**, NICHT von Null. Senkt den Aufwand spürbar (Fakten-/Recherche-Schicht für 9 CE großteils vorhanden).
 
 ### Exit-Kriterium
 Diff committet, Entscheidungen dokumentiert, Fakten-Pool-Struktur steht, Plan-Audit liegt vor.
