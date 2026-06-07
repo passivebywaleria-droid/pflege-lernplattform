@@ -94,6 +94,9 @@ content/ce-{NN}/rohmaterial/
 2. **CE-Konzept**: `specs/ce-{NN}/` — Themen-Katalog + Situationen-Katalog
 3. **Quality-Report lesen** (PFLICHT): `content/ce-{NN}/quality-report.json` — muss existieren und `"verdict": "PASS"` zeigen. Wenn nicht vorhanden → `npx tsx scripts/quality-gate.ts ce-{NN}` aufrufen. Wenn `"verdict": "FAIL"` → STOP, Quality-Gate muss erst bestanden werden.
 4. **Script-Report lesen**: Quality-Report enthält Ergebnisse aller automatischen Checks
+4b. **Quellenbindung prüfen (PFLICHT, Pipeline v10)**:
+   - `npx tsx scripts/zitat-verifizierer.ts --check-file specs/ce-{NN}/kernfakten/{thema}.md` → muss „✅ Alle Belege verifiziert" zeigen (außer explizit als „⚠️ Quelle beschaffen" markierte Fakten). Jeder Kernfakt braucht einen verifizierten Verbatim-Beleg aus einer Grounding-Quelle (`dnqp-standards-index/`, `*-volltext/`).
+   - `npx tsx scripts/faktentreue-check.ts ce-{NN}` → benannte Instrumente/Standards im Content müssen in der Faktenbasis gedeckt sein (ungedeckte = Coverage-Lücke oder erfunden → prüfen).
 5. **Rohmaterial**: `content/ce-{NN}/rohmaterial/`
 6. **Plan-Dateien**: Alle `*-plan.md` Dateien in Themen- und Situations-Ordnern
 7. **Generierte Dateien**: Alle `*.ts` Dateien in Themen- und Situations-Ordnern

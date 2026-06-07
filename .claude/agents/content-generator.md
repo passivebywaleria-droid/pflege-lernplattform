@@ -535,6 +535,8 @@ Nach der Generierung:
 
 ## Gates
 - [ ] `npx tsc --noEmit` → 0 Fehler
+- [ ] **Quellenbindung (Pipeline v10):** Die Kernfakten tragen `**Beleg:**`-Blöcke (verifizierte Verbatim-Zitate). Du erfindest KEINE Fakten/Zahlen/Standards, die nicht in den belegten Kernfakten stehen. `quellen[]` pro Step = die Primärquelle des zugrundeliegenden Kernfakts.
+- [ ] **`npx tsx scripts/faktentreue-check.ts ce-{NN}`** → kein benanntes Instrument/Standard im Content ohne Faktenbasis-Deckung (sonst Coverage-Lücke melden ODER ist erfunden → STOPP).
 
 ## TypeScript-Check
 npx tsc --noEmit → {0 Fehler / N Fehler}

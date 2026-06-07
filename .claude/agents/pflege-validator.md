@@ -32,6 +32,15 @@ In BEIDEN Modi: Lies ALLE Files und finde alle pflegerisch fragwürdigen, falsch
 Vor der Prüfung lies:
 - `.claude/rules/pflege-konformitaet.md` — Pflicht-Patterns + Anti-Patterns
 
+## Mechanisierte Vor-Checks (Pipeline v10 — vor semantischer Prüfung)
+
+Lass erst die schnellen Skript-Gates laufen, dann prüfe semantisch das, was Regex NICHT kann:
+- `npx tsx scripts/pflege-anti-pattern-check.ts content/{ce}` — mechanisierte Anti-Patterns (Pre-Filter; Distraktoren/Fragen werden ausgenommen)
+- `npx tsx scripts/zitat-verifizierer.ts --check-file specs/{ce}/kernfakten/{thema}.md` — sind die Kernfakten quellenbelegt?
+- `npx tsx scripts/faktentreue-check.ts {ce}` — referenziert der Content nur gedeckte Instrumente/Standards?
+
+Du bist die **letzte Instanz**: Du unterscheidest „empfiehlt Falsches" (Fehler) von „lehrt über Falsches" (Distraktor, korrekt) — das kann der Regex-Pre-Filter nicht.
+
 ## Prüfkriterien (für JEDEN Step, egal Typ)
 
 ### 1. Pflege-Standards

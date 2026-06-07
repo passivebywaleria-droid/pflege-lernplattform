@@ -108,6 +108,12 @@
 - **ABCDE**: Airway, Breathing, Circulation, Disability, Exposure — Erstuntersuchung Notfall
 - **Watzlawick / Schulz von Thun**: Kommunikations-Modelle, Validierung, gewaltfreie Kommunikation
 
+## Mechanisierte Checks (Pre-Filter, Pipeline v10)
+
+Diese Anti-Patterns sind als harte Regex-Checks in `scripts/pflege-anti-pattern-check.ts` umgesetzt (12 Patterns, inkl. NRS≥4-ok, Schellong-ohne-RR, Fixierung/Bettgitter-beidseitig, „Glück gehabt" vor Assessment, unter-Achseln, Heben/Ziehen). Der Check ist ein **Pre-Filter** — er kann „empfehlen" nicht von „über Falsches lehren" unterscheiden (Distraktoren/Fragen/Kommentare werden via `skipInDistraktor`/ignoreIf/Kommentar-Skip ausgenommen). Der semantische `pflege-validator` bleibt die letzte Instanz.
+
+**Quellenbindung (Pipeline v10):** Kernfakten brauchen verifizierte Verbatim-Belege (`scripts/zitat-verifizierer.ts --check-file`), Content darf keine ungedeckten Instrumente/Standards enthalten (`scripts/faktentreue-check.ts`). Grounding-Quellen: `recherche/dnqp-standards-index/` + `recherche/*-volltext/` (Lesereihenfolge-Extraktion, NICHT die `-layout`-Indexe).
+
 ## Trigger für pflege-validator
 
 - Bei JEDER neuen Situation (nach didaktik-pruefer)

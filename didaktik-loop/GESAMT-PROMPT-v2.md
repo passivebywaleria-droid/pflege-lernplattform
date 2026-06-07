@@ -123,6 +123,13 @@ Führt automatisch aus:
 
 Plus: TSC + Content-Lint
 
+**Quellenbindung (Pipeline v10) — zusätzliche Gates:**
+```bash
+npx tsx scripts/zitat-verifizierer.ts --check-file specs/ce-{NN}/kernfakten/{thema}.md  # Kernfakt-Belege verifiziert?
+npx tsx scripts/faktentreue-check.ts ce-{NN}                                            # Instrumente in Faktenbasis gedeckt?
+npx tsx scripts/pflege-anti-pattern-check.ts content/ce-{NN}                            # mechanisierte Anti-Patterns (Pre-Filter)
+```
+
 **Output:** Zusammenfassung + `dozentin-checkliste.md` (auto-generiert)
 
 ### 3b: Exa Fact-Check (optional, bei Verdacht)
