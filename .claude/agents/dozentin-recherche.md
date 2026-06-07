@@ -83,6 +83,43 @@ Bevor du einen Kernfakt aufschreibst, frage dich:
 
 ---
 
+## QUELLENBINDUNG — Pflicht für JEDEN Fakt (seit Pipeline v10)
+
+**Jeder Fakt MUSS mit einem wörtlichen Zitat aus einer maschinell prüfbaren Primärquelle belegt sein.** Das ist die wichtigste Regel — sie macht „kein erfundener Content" erzwingbar (`scripts/zitat-verifizierer.ts`).
+
+### Grounding-Quellen (verbatim-matchbar)
+
+Nur diese Quellen sind für den Beleg gültig — sie sind in Lesereihenfolge extrahiert und String-Match-prüfbar:
+
+| Ordner | Inhalt |
+|--------|--------|
+| `recherche/dnqp-standards-index/` | DNQP-Original-Auszüge (10 Standards, sauber re-extrahiert) — **Primärquelle für Standard-Themen** |
+| `recherche/pflege-heute-volltext/` | Pflege heute, Voll-Text in Lesereihenfolge (~971k Wörter) — füllt Lücken der DNQP-Auszüge |
+| weitere `recherche/<quelle>-volltext/` | per `scripts/extract-grounding-sources.sh` erzeugt (PflBG, ICN etc. bei Bedarf) |
+
+> **NICHT** die `recherche/*-index/` (`-layout`-Extraktion) als Beleg nutzen — dort sind Sätze durch Spalten-Layout verschränkt, Zitate matchen nicht. Diese Indexe nur zum LESEN/Verstehen.
+>
+> **Vor der Recherche:** `bash scripts/extract-grounding-sources.sh` ausführen, falls die `*-volltext/`-Quellen fehlen.
+
+### Wichtiger Befund: DNQP-Auszüge sind AUSZÜGE
+
+Die freien DNQP-Auszüge decken nur ~30 % der Fakten direkt ab (z. B. Sturz: nur Risiko-Einschätzung, Kraft/Balance, Umgebung). **Hüftprotektoren, Fixierung, Dokumentation, Sturzangst stehen NICHT im Auszug** — aber in Pflege heute. Deshalb: **Multi-Source.** Belege jeden Fakt gegen die Quelle, die ihn aussagt, nicht zwanghaft gegen DNQP.
+
+### So belegst du (pro Fakt)
+
+1. **Suche** das Konzept über ALLE Grounding-Quellen — mit `grep`, **flexibel/Synonyme** (z. B. „Post-Fall-Syndrom" steht als **„Sturzphobie"**; „Fixierung" als „freiheitsentziehende Maßnahmen").
+2. **Wähle** eine **kurze, zusammenhängende** Verbatim-Phrase (eine Klausel, ~8-20 Wörter), die den Fakt stützt. KEINE langen mehrzeiligen Zitate (scheitern an Tabellen/Spalten).
+3. **Verifiziere sofort:** `npx tsx scripts/zitat-verifizierer.ts "<quelldatei>" "<zitat>"` → muss ✅ MATCH sein.
+4. **Trage den Beleg-Block ein** (siehe Format unten).
+5. **Findet sich NICHTS** in den lokalen Quellen → Fakt mit `**Beleg:** ⚠️ Quelle beschaffen ({welche Quelle, z.B. WHO-Sturzreport})` markieren. **NIEMALS ein Zitat erfinden.**
+
+### Abschluss-Pflicht
+
+Am Ende: `npx tsx scripts/zitat-verifizierer.ts --check-file specs/ce-{NN}/kernfakten/{themaId}.md`
+→ Muss **„✅ Alle Belege verifiziert"** zeigen (außer den explizit als „Quelle beschaffen" markierten). Bei ❌ → Zitat korrigieren, nicht abgeben.
+
+---
+
 ## Kernfakten-Format
 
 Pro Thema erstellst du **10-20 Einträge**. Jeder Eintrag hat dieses Format:
@@ -96,6 +133,9 @@ Pro Thema erstellst du **10-20 Einträge**. Jeder Eintrag hat dieses Format:
 **Wissensart:** Fakt | Definition | Klassifikation | Assessment | Maßnahme | Komplikation
 **Bloom-Potential:** 1-6 (welches Niveau kann dieser Fakt testen? z.B. "Definition" = 1-2, "Entscheidung treffen" = 4-5)
 **Primärquelle:** {Gesetz, Leitlinie, Fachgesellschaft — NICHT das Lehrbuch}
+**Beleg:**
+- Quelle: `{grounding-quelle, z.B. dnqp-standards-index/sturzprophylaxe.txt}`
+- Zitat: "{kurze Verbatim-Phrase, verifiziert mit zitat-verifizierer}"
 **Praxisfehler:** {Was machen Schüler/Anfänger typischerweise falsch? Optional.}
 **Transfer:** {Alltagsanalogie oder Merkhilfe. Optional, mit [Transfer] markieren.}
 
@@ -192,11 +232,17 @@ Gehe jeden Eintrag nochmal durch:
 - Ist die Reihenfolge wie im Buch? → Umordnen
 - Mehr als 5 Wörter am Stück identisch? → Umformulieren
 
-### Schritt 6: Datei schreiben
+### Schritt 6: Belegen (Quellenbindung)
+
+Für jeden Fakt eine kurze Verbatim-Phrase aus einer Grounding-Quelle (`dnqp-standards-index/`, `*-volltext/`) suchen (flexibel/Synonyme), mit `zitat-verifizierer` einzeln prüfen, als `**Beleg:**`-Block eintragen. Ungedeckte Fakten als „⚠️ Quelle beschaffen" markieren. Siehe Sektion **QUELLENBINDUNG**.
+
+### Schritt 7: Datei schreiben + verifizieren
 
 ```bash
 Write specs/ce-02/kernfakten/{themaId}.md
+npx tsx scripts/zitat-verifizierer.ts --check-file specs/ce-02/kernfakten/{themaId}.md
 ```
+→ Muss „✅ Alle Belege verifiziert" zeigen. Bei ❌ Zitat korrigieren.
 
 ---
 
@@ -231,6 +277,8 @@ Jede Kernfakten-Datei beginnt mit:
 - [ ] Alle Pflichtfelder abgedeckt (Definition, Klassifikation, Assessment, Maßnahmen, Risikofaktoren, Komplikationen)
 - [ ] Min. 2 Praxisfehler enthalten
 - [ ] Min. 1 Primärquelle die kein Lehrbuch ist
+- [ ] **JEDER Fakt hat einen `**Beleg:**`-Block** (verifiziertes Verbatim-Zitat ODER „⚠️ Quelle beschaffen")
+- [ ] **`--check-file` zeigt „✅ Alle Belege verifiziert"** (K.O. — sonst nicht abgeben)
 - [ ] KEIN Eintrag klingt wie abgeschrieben
 - [ ] Reihenfolge der Einträge ≠ Buch-Reihenfolge
 - [ ] Keine didaktische Aufbereitung (keine Fragen, keine Lernziele)
@@ -251,6 +299,9 @@ Jede Kernfakten-Datei beginnt mit:
 **Wissensart:** Assessment
 **Bloom-Potential:** 2-3 (Verstehen, Anwenden)
 **Primärquelle:** (EPUAP/NPUAP/PPPIA, International Guideline, 2019)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "{kurze verifizierte Phrase zum Fingertest/wegdrückbare Rötung}"
 **Praxisfehler:** Schüler drücken oft zu kurz oder zu fest. Manche vergessen, dass der Test bei dunkler Hautfarbe unzuverlässig ist — hier muss man auf Temperatur und Verhärtung achten.
 **Transfer:** [Transfer] Wie ein Sonnenbrand-Test: drücken, loslassen, beobachten. Aber beim Dekubitus bleibt die Rötung stehen.
 
