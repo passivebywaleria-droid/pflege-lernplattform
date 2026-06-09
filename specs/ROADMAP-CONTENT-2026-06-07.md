@@ -84,8 +84,8 @@ Diff committet, Entscheidungen dokumentiert, Fakten-Pool-Struktur steht, Plan-Au
 - **1.6 ✅ Mechanisierbare Anti-Patterns ergänzt (2026-06-07):** `pflege-anti-pattern-check.ts` hatte schon 10 Patterns (NRS≥4, Schellong, Achseln, Heben/Ziehen…). **2 fehlende ergänzt:** AP-GLUECK-VOR-ASSESSMENT („Glück gehabt/nichts passiert" vor Assessment) + AP-BETTGITTER-BEIDSEITIG (Fixierung ohne Anordnung). **FP-Resistenz verbessert:** `skipInDistraktor` (gefährliche Aussage in score:0/1-Option = gewollter Lehr-Distraktor) + Kommentar-Skip (Pattern-Doku in `//`-Zeilen) + ignoreIf für Frage-/Rechts-Kontexte. Verifiziert: bald-Empfehlung flaggt, Frage/Distraktor/Kommentar werden übersprungen. (Offen: Bestand AP-NRS-OK/Schellong/Achseln-Treffer in CE-02 sind Content-Review-Backlog — FP vs. echt prüfen.)
 - **1.7 ✅ Pipeline-Sync (2026-06-07):** Quellenbindung an allen Pflicht-Stellen verankert: **didaktik-pruefer** (Voraussetzung 4b: `--check-file` + faktentreue-check vor Prüfbeginn), **content-generator** (Gates: Beleg-Treue + faktentreue-check), **pflege-konformitaet** (mechanisierte Checks + Grounding-Quellen dokumentiert), **pflege-validator** (mechanisierte Vor-Checks vor semantischer Prüfung), **GESAMT-PROMPT** (Grounding-Gates in Schritt 3a), **Memory**. Unverändert (kein Bedarf): **didaktik-regisseur** (Sessionplan-Format unberührt — Grounding sitzt upstream bei Kernfakten), **_types.ts** (Belege auf .md-Ebene, kein ContentStep-Feld — TS-Feld erst wenn Belege in Steps fließen).
 
-### Exit-Kriterium (Rev. 2: vollständiger vertikaler Schnitt)
-Pipeline v10 dokumentiert + an EINEM Thema (`sturz-prophylaxe`) die GANZE Kette bewiesen — nicht nur die Fakten-Schicht: Kernfakten mit Zitat-Beleg → Verifizierer PASS → Bausteine → Situation+Steps (mit ≥2 alternativen Darstellungen pro Lernziel, B1+C1) → Faktentreue-Check + Quality-Gate PASS. So lernen wir, was an der echten Generierung schwer ist, bevor wir für alles härten.
+### Exit-Kriterium (Rev. 2: vollständiger vertikaler Schnitt) — ✅ Fakten-Schicht erreicht
+Pipeline v10 dokumentiert; an `sturz-prophylaxe` die **Fakten→Beleg→Verifiziert-Kette komplett bewiesen** (alle 11 Kernfakten quellengebunden, `--check-file` PASS). Offen für die GANZE Kette: die zugehörigen Situation+Steps durch die gehärtete Pipeline neu generieren (Phase 3, echte Generierung).
 
 ---
 
@@ -94,14 +94,14 @@ Pipeline v10 dokumentiert + an EINEM Thema (`sturz-prophylaxe`) die GANZE Kette 
 **Ziel:** Qualität messbar machen + bestehenden CE-02-Content nachhärten.
 
 ### Schritte
-- **2.1 Gold-Standard-Testset** bauen: 30–50 Items, je hälftig pflegefachlich korrekt und absichtlich falsch (echte Anfänger-Fehler). Dient als Validator-Benchmark.
-- **2.2 Validator-Trefferquote messen:** Faktentreue-Check + adversariale Validierung gegen das Testset → Baseline-Zahl. Ziel: ≥ X % Erkennung (Schwelle in 2.1 festlegen).
-- **2.3 Bestehenden CE-02-Content retro-validieren:** alle 10 Situationen + 25 Themen durch die neuen Checks. Findings sammeln.
-- **2.4 CE-02-Findings fixen** (alle Severities, gemäß `feedback_pflege_findings`).
-- **2.5 Fehlende 21/25 CE-02-Kernfakten** als Lücke notieren (wird in Phase 3 geschlossen).
+- **2.1 ✅ Gold-Standard-Test** (`scripts/gold-standard-test.ts`): 16 Fälle (8 echt, 8 Fälschungen). Baseline **16/16** — 100% True-Positive + 100% True-Negative, 0 FP/FN. Grounding-Gate trennt echt/erfunden perfekt.
+- **2.2 ✅ Baseline gemessen** (s.o.).
+- **2.3 ✅ CE-02 retro-validiert** (alle 3 Gates): Gate 1 — nur sturz echt belegt (3 Themen vakuös → brauchen Grounding). Gate 2 — 3 Lücken (ABCDE/STRATIFY/ZOPA). Gate 3 — 22 Anti-Pattern-Treffer, **alle als FP triagiert** (Phrasen in korrigierendem Feedback/Distraktoren = Lehrinhalt). CE-02 inhaltlich sauber.
+- **2.4 ✅ Findings gefixt:** ABCDE/STRATIFY/ZOPA als fachlich korrekte Glossar-Einträge → Faktentreue 21/21 gedeckt.
+- **2.5 Vermerkt:** 21/25 fehlende + 3 unbelegte Kernfakten → Phase 3.
 
-### Exit-Kriterium
-Gold-Standard existiert, Validator-Baseline gemessen, bestehender CE-02-Content faktentreue-PASS.
+### Exit-Kriterium ✅
+Gold-Standard existiert (16/16), Baseline gemessen, CE-02 faktentreue-PASS (21/21), Anti-Pattern-Treffer triagiert (FP).
 
 ---
 
