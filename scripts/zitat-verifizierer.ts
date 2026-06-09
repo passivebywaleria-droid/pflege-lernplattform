@@ -105,9 +105,11 @@ export function checkKernfaktenFile(mdPfad: string, rechercheRoot = "recherche")
   return { belege, results };
 }
 
-// ─── CLI / Self-Test ───
-const arg = process.argv[2];
-if (arg === "--self-test") {
+// ─── CLI / Self-Test ─── (nur bei Direktaufruf, nicht beim Import)
+const arg = process.argv[1]?.includes("zitat-verifizierer") ? process.argv[2] : "__imported__";
+if (arg === "__imported__") {
+  // importiert — kein CLI-Output
+} else if (arg === "--self-test") {
   // Echte Fakten aus specs/ce-02/kernfakten/sturz-prophylaxe.md gegen
   // recherche/expertenstandards-index/sturzprophylaxe.md
   const tests: Beleg[] = [
