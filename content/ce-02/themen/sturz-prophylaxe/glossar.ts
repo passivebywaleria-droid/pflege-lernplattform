@@ -24,6 +24,24 @@ export const CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR: GlossarEntry[] = [
     uebersetzungAr: "شبه سقوط",
   },
   {
+    begriff: "STRATIFY",
+    erklaerung:
+      "Sturzrisiko-Screening-Instrument (St. Thomas's Risk Assessment Tool) mit 5 Items (frühere Stürze, Unruhe, Sehbeeinträchtigung, häufiger Toilettengang, Transfer/Mobilität). Der DNQP empfiehlt KEIN einzelnes Instrument verpflichtend — die klinische Einschätzung ist führend (DNQP 2022).",
+    erklaerungB1:
+      "Ein Test mit 5 Fragen, um das Sturz-Risiko einzuschätzen. Aber: Kein Test ist Pflicht. Wichtiger ist, dass du den Patienten genau anschaust (DNQP 2022).",
+    uebersetzungTr: "STRATIFY düşme riski ölçeği",
+    uebersetzungAr: "أداة STRATIFY لتقييم خطر السقوط",
+  },
+  {
+    begriff: "ABCDE",
+    erklaerung:
+      "Strukturiertes Schema zur Erstuntersuchung in (Notfall-)Situationen: Airway (Atemweg), Breathing (Atmung), Circulation (Kreislauf), Disability (neurologischer Status), Exposure (Entkleiden/Inspektion). Sichert, dass lebensbedrohliche Probleme zuerst erkannt werden — z. B. nach einem Sturz.",
+    erklaerungB1:
+      "Eine feste Reihenfolge, was du zuerst prüfst: A Atemweg, B Atmung, C Kreislauf, D Bewusstsein, E ganzen Körper anschauen. So übersiehst du nichts Gefährliches — z. B. nach einem Sturz.",
+    uebersetzungTr: "ABCDE ilk değerlendirme şeması",
+    uebersetzungAr: "مخطط ABCDE للفحص الأولي",
+  },
+  {
     begriff: "Intrinsische Risikofaktoren",
     erklaerung:
       "Personenbezogene Sturzrisiken: Alter, Muskelschwäche, Medikamente, Kognition, Sehminderung, Sturz-Vorgeschichte (DNQP 2022).",

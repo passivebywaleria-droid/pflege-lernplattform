@@ -6,6 +6,15 @@ import type { GlossarEntry } from "../../../_types";
 
 export const CE02_THEMA_ASSESSMENTS_EXPERTENSTANDARDS_GLOSSAR: GlossarEntry[] = [
   {
+    begriff: "ZOPA",
+    erklaerung:
+      "Zurich Observation Pain Assessment — Fremdeinschätzungs-Instrument für Schmerz bei Menschen, die sich nicht (mehr) äußern können (z. B. Demenz, Sedierung). Beobachtet 4 Kategorien: Lautäußerungen, Gesichtsausdruck, Körpersprache und physiologische Zeichen (DNQP Schmerz 2020).",
+    erklaerungB1:
+      "Ein Beobachtungs-Bogen für Schmerz. Du nutzt ihn, wenn ein Mensch nicht sagen kann, dass er Schmerzen hat (z. B. bei Demenz). Du schaust auf: Laute, Gesicht, Körperhaltung und Körperzeichen (DNQP 2020).",
+    uebersetzungTr: "ZOPA ağrı gözlem ölçeği",
+    uebersetzungAr: "أداة ZOPA لمراقبة الألم",
+  },
+  {
     begriff: "Screening",
     erklaerung:
       "Kurzes Such-Verfahren mit wenigen Fragen oder Beobachtungen. Ziel: Risiko-Personen aus einer Gruppe identifizieren, damit bei Auffälligkeit ein vertieftes Assessment folgen kann. (DNQP-Verfahrensordnung 2024)",
