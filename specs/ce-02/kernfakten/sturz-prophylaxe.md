@@ -20,7 +20,10 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Definition
 **Bloom-Potential:** 1-2 (Erinnern, Verstehen)
-**Primärquelle:** (WHO, Global Report on Falls Prevention in Older Age, 2007)
+**Primärquelle:** (WHO, Global Report on Falls Prevention in Older Age, 2007; DNQP 2022)
+**Beleg:**
+- Quelle: `dnqp-standards-index/sturzprophylaxe.txt`
+- Zitat: "Ein Sturz ist ein Ereignis, bei dem der oder die Betroffene unbeabsichtigt auf dem Boden oder auf einer anderen tieferen Ebene aufkommt"
 **Praxisfehler:** Fast-Stürze werden oft nicht dokumentiert, obwohl sie wichtige Warnzeichen sind.
 **Transfer:** Wie bei einem Unfall: nicht nur der Crash zählt, auch das "Fast-Passiert" ist eine Warnung.
 
@@ -61,6 +64,9 @@
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 2-4
 **Primärquelle:** (DNQP 2022)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "sind personen-, medikamenten-, umgebungs- sowie situationsbezogen"
 **Praxisfehler:** Fokus nur auf intrinsische Faktoren (Patient) und Vernachlässigung der Umgebung.
 
 **Intrinsische Faktoren:**
@@ -97,6 +103,9 @@
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 3-5
 **Primärquelle:** (DNQP 2022; Cochrane-Review zur Sturzprävention)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Balancetraining, auf ausreichende Flüssigkeitszufuhr achten"
 **Praxisfehler:** "Schonung" als Sturzprävention — führt zu Muskelabbau und erhöht das Risiko (Teufelskreis).
 **Transfer:** [Transfer] Wie im Sport: ohne Training keine Muskelkraft. Der Unterschied: bei älteren Menschen geht es schneller verloren.
 
@@ -115,6 +124,9 @@
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 3
 **Primärquelle:** (DNQP 2022)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Stolperfallen/Hindernisse zu identifizieren, diese anschließend beseitigen"
 **Praxisfehler:** Bett-Höhe wird oft nicht patientenindividuell angepasst (tief bei Demenz vs. hoch für Transfer).
 
 **Misconceptions:**
@@ -131,6 +143,9 @@
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 4 (Analysieren)
 **Primärquelle:** (DNQP 2022; Beers-Liste für potenziell inadäquate Medikation)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die im Alter häufige Polypharmazie erhöht das Sturzrisiko durch wenig kalkulierbare Wechselwirkungen der Arzneimittel"
 **Praxisfehler:** Pflege übernimmt Medikamente unkritisch, ohne Wechselwirkungen/Sturzrisiko zu hinterfragen.
 
 **Misconceptions:**
@@ -147,6 +162,9 @@
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 3
 **Primärquelle:** (DNQP 2022)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "muss das Verletzungsrisiko bei einem Sturz betrachtet und reduziert werden"
 
 **Misconceptions:**
 - `M1`: **"Hüftprotektoren verhindern Stürze"** — Sie verhindern Frakturen, nicht Stürze. Sturzprävention ist davon unabhängig.
@@ -182,6 +200,9 @@
 **Wissensart:** Komplikation
 **Bloom-Potential:** 3-4
 **Primärquelle:** (DNQP 2022)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Dadurch entsteht ein Teufelskreis, weil die Bewegungseinschränkung und der damit verbundene Trainingsmangel das Sturzrisiko weiter fördern"
 **Transfer:** [Transfer] Wie bei einem Fahrrad-Unfall: nach dem Sturz will man erstmal nicht mehr fahren — bis man wieder das Vertrauen findet.
 
 **Misconceptions:**
@@ -198,6 +219,9 @@
 **Wissensart:** Dokumentation
 **Bloom-Potential:** 6 (Erschaffen — Bericht formulieren)
 **Primärquelle:** (DNQP 2022; Pflegedokumentations-Richtlinien)
+**Beleg:**
+- Quelle: `dnqp-standards-index/sturzprophylaxe.txt`
+- Zitat: "Die Pflegefachkraft dokumentiert und analysiert jeden Sturz"
 **Praxisfehler:** Knappe Dokumentation ("Patient gestürzt") statt strukturierte Analyse.
 
 **Misconceptions:**
@@ -214,6 +238,9 @@
 **Wissensart:** Organisation
 **Bloom-Potential:** 3
 **Primärquelle:** (DNQP 2022)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Sturzprävention ist eine multiprofessionelle Aufgabe"
 
 **Misconceptions:**
 - `M1`: **"Sturzprophylaxe ist Pflege-Sache allein"** — Ohne Arzt-Beteiligung (Medikamente), Physio (Training), Augenarzt (Sehkorrektur) ist Prophylaxe unvollständig.
