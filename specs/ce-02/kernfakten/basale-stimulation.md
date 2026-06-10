@@ -23,8 +23,9 @@
 **Primärquelle:** (Fröhlich A., 1975; Bienstein C./Fröhlich A., 1991)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "ursprünglich zur Früh- und Wahrnehmungsförderung von behinderten Kindern"
-- Zitat: "übertrugen Andreas Fröhlich und Christel Bienstein das Konzept der Basalen Stimulation"
+- Zitat: "Kommunikationskonzept zur Förderung und Aktivierung beeinträchtigter Menschen mit Bewegungs-, Kommunikations- und Wahrnehmungsveränderungen"
+- Zitat: "ursprünglich zur Früh- und Wahrnehmungsförderung von behinderten Kindern/Jugendlichen entwickeltes Konzept"
+- Zitat: "Anfang der 1980er-Jahre übertrugen Andreas Fröhlich und Christel Bienstein das Konzept der Basalen Stimulation"
 **Praxisfehler:** Das Konzept wird fälschlich für eine geschützte Therapieform gehalten, die nur Spezialisten anwenden dürfen — tatsächlich ist es ein Pflegekonzept für jede Pflegefachkraft.
 
 **Misconceptions:**
@@ -44,8 +45,9 @@
 **Primärquelle:** (Fröhlich A., 1975; Bienstein C./Fröhlich A., 1991)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Die zentralen Themen ermöglichen den"
-- Zitat: "als eigenaktive Subjekte"
+- Zitat: "Die zentralen Themen beschreiben Aktivitäten aus dem Leben der Patienten"
+- Zitat: "Die zentralen Themen ermöglichen den Pflegenden eine Orientierung am Erleben des Patienten, nicht nur an seinen Erkrankungen"
+- Zitat: "nicht als Objekte der Pflege gesehen, sondern als eigenaktive Subjekte"
 **Praxisfehler:** Pflegehandlungen werden rein hygieneorientiert durchgeführt, ohne das Erleben und die Bedürfnisse des Patienten in den Mittelpunkt zu rücken.
 
 **Misconceptions:**
@@ -65,8 +67,8 @@
 **Primärquelle:** (Bienstein C./Fröhlich A., 1991)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "orientiert sich an"
-- Zitat: "den Fähigkeiten eines Menschen, nicht"
+- Zitat: "orientiert sich an den Fähigkeiten eines Menschen, nicht an seinen Defiziten"
+- Zitat: "ein Angebot verstanden, über dessen Akzeptanz der Patient entscheidet"
 **Praxisfehler:** Das Konzept wird als „Bereizung" missverstanden — der Patient wird mit Reizen versorgt, statt ihm ein Angebot zu machen, das er annehmen oder ablehnen kann.
 
 **Misconceptions:**
@@ -86,8 +88,15 @@
 **Primärquelle:** (Bienstein C./Fröhlich A., 1991)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "grundlegende sensorische Angebote, die sich auf die"
+- Zitat: "die somatische, die vestibuläre und die vibratorische Wahrnehmung" (die drei basalen)
+- Zitat: "Olfaktorische Angebote"
+- Zitat: "Orale Angebote"
+- Zitat: "Auditive Angebote"
+- Zitat: "Taktil-haptische Angebote"
+- Zitat: "Visuelle Angebote"
 - Zitat: "von körpernahen zu mehr körperfernen Wahrnehmungen geordnet"
+- Zitat: "Die Angebote setzen zunächst bei schwerster Einschränkung körpernah, beim vitalen Zentrum des Körperstamms an"
+- ⚠️ Der Fakt-Titel spricht von „Neun Wahrnehmungsbereiche"; Pflege heute zählt acht sensorische Angebote auf (somatisch, vibratorisch, vestibulär, olfaktorisch, oral, auditiv, taktil-haptisch, visuell). Die „neun" entsteht nur, wenn der kommunikative Bereich mitgezählt wird — diese Zählung ist in Pflege heute nicht so ausgewiesen → Quelle beschaffen (Bienstein/Fröhlich Original) ODER Titel auf „acht Angebote" anpassen.
 **Praxisfehler:** Es werden zu viele Bereiche gleichzeitig stimuliert — die Folge ist Überstimulation. Es gilt das Prinzip „Weniger ist oft mehr".
 
 **Misconceptions:**
@@ -107,8 +116,10 @@
 **Primärquelle:** (Bienstein C./Fröhlich A., 1991)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "eindeutige Informationen über seinen Körper und damit über"
+- Zitat: "Die somatische Stimulation (griech. soma = Körper) fördert den grundlegendsten Wahrnehmungsbereich"
+- Zitat: "eindeutige Informationen über seinen Körper und damit über sich selbst vermittelt"
 - Zitat: "mit konstantem Druck, mit flach aufgelegter Hand und mit Ruhe ausgeübt werden"
+- ⚠️ Konkrete Angebots-Beispiele „Nest-Positionierung" und „Abtasten mit fester Hand" sind in Pflege heute Kap. 12.4 nicht wörtlich als somatische Angebote benannt (genannt sind Berührung, Frotteetücher/raue Waschlappen, Ganzkörperwaschung) → Quelle beschaffen (Bienstein/Fröhlich) ODER auf belegte Beispiele reduzieren.
 **Praxisfehler:** Zu leichtes, zaghaftes Streicheln statt klarem, konstantem Druck — unklare Reize können bei schwerstkranken Menschen Stress auslösen.
 
 **Misconceptions:**
@@ -129,7 +140,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Vestibulum = Gleichgewichtsorgan im Innenohr"
+- Zitat: "Informationen über Lage und Bewegung ihres Körpers im Raum zu vermitteln"
 - Zitat: "wirkt haltungsstabilisierend und tonusnormalisierend"
+- ⚠️ Die im Praxisfehler/M2 genannten Kontraindikationen (erhöhter Hirndruck, instabiler Kreislauf, frische HWS-Verletzung, akuter Schwindel) sind in Pflege heute Kap. 12.4 nicht als Kontraindikationen-Liste der vestibulären Stimulation ausgewiesen → Quelle beschaffen (Bienstein/Fröhlich bzw. Nydahl/Bartoszek) ODER als allgemeine pflegerische Vorsicht ohne Quellen-Anspruch kennzeichnen.
 **Praxisfehler:** Bewegungen werden zu schnell ausgeführt (Schwindel, Übelkeit) oder Kontraindikationen (erhöhter Hirndruck, instabiler Kreislauf, HWS-Verletzung) nicht geprüft.
 
 **Misconceptions:**
@@ -150,7 +163,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Vibratorische Angebote ermöglichen ein Spüren der Körpertiefe"
-- Zitat: "Vibrationen am Knochen, z. B. an der"
+- Zitat: "Während Vibrationen am Muskel eher lokale Empfindungen auslösen"
+- Zitat: "Vibrationen am Knochen, z. B. an der Ferse oder am Ellenbogen, im Skelett weitergeleitet und sind tiefer im Körperinnern zu spüren"
+- Zitat: "indem Pflegende ihre Hände am Körper des Menschen vibrieren lassen" (Hände als Mittel)
+- Zitat: "spezielle vibrierende Geräte verwendet werden" (Vibrationsgeräte als Mittel)
+- ⚠️ Die „eigene summende Stimme" als vibratorisches Mittel ist in Pflege heute Kap. 12.4 nicht belegt (genannt: Hände, vibrierende Geräte) → Quelle beschaffen (Bienstein/Fröhlich) ODER entfernen. Auch die Kontraindikationen (Frakturen, frische OP, Thrombose-Risiko) sind dort nicht ausgewiesen → analog flaggen.
 **Praxisfehler:** Vibration wird zu lange oder bei Kontraindikationen (Frakturen, frische OP, Thrombose-Risiko) eingesetzt; Vibration ermüdet schnell und sollte dosiert werden.
 
 **Misconceptions:**
@@ -170,8 +187,12 @@
 **Primärquelle:** (Bienstein C./Fröhlich A., 1991; Pflege heute Tab. 6.4)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Waschen mit dem Haarstrich beruhigend"
-- Zitat: "Wenig mit dem Patienten sprechen"
+- Zitat: "wirkt das Waschen mit dem Haarstrich beruhigend"
+- Zitat: "Warme Raumtemperatur" (Tab. 6.4 beruhigende GKW)
+- Zitat: "Wenig mit dem Patienten sprechen" (Tab. 6.4 beruhigende GKW)
+- Zitat: "Bei Angstzuständen" (Indikation, Tab. 6.4 beruhigende Spalte)
+- Zitat: "Bei Einschlafstörungen" (Indikation, Tab. 6.4 beruhigende Spalte)
+- Hinweis: Indikationen „Unruhezustände", „Bei Schmerzen", „Am Abend" stehen ebenfalls in der beruhigenden Spalte von Tab. 6.4 (`pflege-heute.txt` Zeilen 17729–17745); wegen OCR-Spaltenverschachtelung nur zeilenweise verbatim auffindbar, inhaltlich manuell bestätigt.
 **Praxisfehler:** Bei der beruhigenden Waschung wird gegen den Haarstrich gewaschen oder viel gesprochen — beides wirkt aktivierend statt beruhigend.
 
 **Misconceptions:**
@@ -191,9 +212,16 @@
 **Primärquelle:** (Bienstein C./Fröhlich A., 1991; Pflege heute Tab. 6.4)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Das Waschen gegen den"
-- Zitat: "wird als belebend und anregend empfunden"
-**Praxisfehler:** Belebende Waschung bei Fieber, Hypertonie-Krise oder akuten Schmerzen — hier ist sie kontraindiziert.
+- Zitat: "Das Waschen gegen den Haarwuchs ist intensiver und wird als belebend und anregend empfunden"
+- Zitat: "Eher kühlere Raumtemperatur" (Tab. 6.4 belebende GKW)
+- Zitat: "Bei Depression" (Indikation, Tab. 6.4 belebende Spalte)
+- Zitat: "Bei Somnolenz" (Indikation, Tab. 6.4 belebende Spalte)
+- Zitat: "gem Blutdruck" (Tab. 6.4: „Kreislaufinstabilität und niedrigem Blutdruck", belebende Spalte)
+- Zitat: "Bei schlaffem Muskeltonus" (Indikation, Tab. 6.4 belebende Spalte)
+- Zitat: "Die belebende Körperwaschung kann den systolischen Blutdruck um 10–20 mmHg erhöhen" (Kontraindikations-Begründung)
+- Zitat: "Bei Patienten mit Hypertonie oder Druckerhöhungen im Gehirn ist diese Waschung daher kontraindiziert"
+- Hinweis: „Am Morgen" steht in der belebenden Spalte von Tab. 6.4 (`pflege-heute.txt` Zeile 17745); wegen OCR-Spaltenverschachtelung nur zeilenweise verbatim. „Bei akuten Schmerzen kontraindiziert" ist aus der Quelle NICHT belegt (Schmerzen sind dort Indikation der beruhigenden, nicht KI der belebenden Waschung) → im Praxisfehler entschärft.
+**Praxisfehler:** Belebende Waschung bei Fieber oder Hypertonie/Hirndruck-Erhöhung — bei Hypertonie/Druckerhöhung im Gehirn laut Pflege heute kontraindiziert (Blutdruckanstieg 10–20 mmHg systolisch).
 
 **Misconceptions:**
 - `M1`: **"Belebende Waschung macht man mit heißem Wasser"** — Heißes Wasser ermüdet; belebend ist kühleres Wasser (Temperaturunterschied zur Haut). Fachbegriff: "Heiß-ist-belebend-Irrtum".
@@ -212,8 +240,9 @@
 **Primärquelle:** (Bobath B., 1971; Bienstein C./Fröhlich A., 1991)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "primär für Patienten mit Halbseitenlähmung"
-- Zitat: "beide Körperhälften in den Bewegungsablauf integriert werden"
+- Zitat: "Das Bobath-Konzept ist primär für Patienten mit Halbseitenlähmung (Hemiparese bzw. Hemiplegie) entwickelt"
+- Zitat: "dass beide Körperhälften in den Bewegungsablauf integriert werden"
+- ⚠️ Die spezifischen Aussagen „betroffene Seite gleichwertig oder zuerst waschen", „Neglect reduzieren", „Körperschema reorganisieren" sind in Pflege heute Kap. 12.4/9.5 nicht wörtlich als Vorgehen der neurophysiologischen GKW belegt — der dortige Bobath-Abschnitt (Zeile 34240–34258) betrifft Mobilisation/Bewegungsanbahnung, nicht die Waschung → Quelle beschaffen (Bobath-Originalliteratur bzw. Friedhelm/Bienstein neurophysiol. GKW) ODER Aussage auf „beide Körperhälften einbeziehen" reduzieren.
 **Praxisfehler:** Die gesunde Seite wird zuerst und ausführlicher gewaschen — das verstärkt den Neglect, statt die betroffene Seite ins Körperschema zurückzuholen.
 
 **Misconceptions:**
@@ -234,7 +263,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "auf eine frühere Entwicklungsstufe zurückversetzt werden"
-- Zitat: "Horizontalen, wie wir es als Säugling gewohnt waren"
+- Zitat: "Leben in der Horizontalen, wie wir es als Säugling gewohnt waren"
+- Zitat: "Am Körperstamm beginnen, dann erst die Extremitäten waschen" (basal stimulierende GKW: Stamm vor Extremitäten)
+- ⚠️ Die Detail-Maßnahmen der entwicklungsfördernden GKW — „Berührungsreihenfolge Kopf → Rumpf → Extremitäten", „Beugung statt Streckung (fetale Haltung)", „Einpacken/Nest", „konstante Bezugsperson" — sind in Pflege heute Kap. 12.4 NICHT belegt (dort nur: Regression, Leben in der Horizontalen, sowie für die basale GKW „am Körperstamm beginnen") → Quelle beschaffen (Bienstein/Fröhlich Original, entwicklungsfördernde GKW) ODER diese Detailliste entfernen/auf das Belegte (Stamm-zuerst, Regression) reduzieren. Hinweis: Quelle gibt „Stamm → Extremitäten", nicht „Kopf → Rumpf → Extremitäten".
 **Praxisfehler:** Streckung statt Beugung der Gelenke — die fetale Beugehaltung vermittelt Sicherheit; Streckung kann Spastik oder Unruhe auslösen. Häufiger Pflegekraftwechsel stört zudem die Bezugspflege.
 
 **Misconceptions:**
@@ -254,8 +285,11 @@
 **Primärquelle:** (Bienstein C./Fröhlich A., 1991)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Ritualisierte Begrüßung und Verabschiedung"
-- Zitat: "beginnt mit einer Ansprache"
+- Zitat: "Ritualisierte Begrüßung und Verabschiedung, durch die" (Definition Initialberührung)
+- Zitat: "besonders wichtig für Patienten, die ihr Umfeld nicht kontrollieren können"
+- Zitat: "beginnt mit einer Ansprache (Fernsinn), der eine Berührung folgt (Nahsinn)"
+- Zitat: "geht die Berührung stets von einer Initialberührung aus"
+- ⚠️ Die konkrete Stelle „immer an derselben Stelle (Schulter/Oberarm/Brustbein)" und das „vor jeder Handlung" sind in Pflege heute Kap. 12.4 nicht wörtlich ausgewiesen (dort: „individuell angemessen", „stets von einer Initialberührung aus") → Quelle beschaffen (Bienstein/Fröhlich) ODER auf „individuell festgelegte, gleichbleibende rumpfnahe Stelle" entschärfen.
 **Praxisfehler:** Ohne Initialberührung wird eine Pflegehandlung als Übergriff erlebt — Folge sind Abwehr, Unruhe und Stressreaktionen. Häufig wird sie nur einmal zu Schichtbeginn statt vor jeder Handlung gesetzt.
 
 **Misconceptions:**
@@ -275,8 +309,11 @@
 **Primärquelle:** (Bienstein C./Fröhlich A., 1991)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "gleichmäßig mit beiden Handflächen auf"
-- Zitat: "vom Nacken aus zum Steiß hin"
+- Zitat: "verhilft zu einer gleichmäßigen und tiefen Atmung" (Wirkung der ASE)
+- Zitat: "gleichmäßig mit beiden Handflächen auf den Körper des Patienten verteilt, immer vom Nacken aus zum Steiß hin"
+- Zitat: "Mit der Kreisbewegung während der Ausatmung des Patienten beginnen"
+- Zitat: "direkt rechts oder links neben der Wirbelsäule" (symmetrisch beidseits der WS)
+- Zitat: "führt die atemstimulierende Einreibung nicht am Patienten, sondern mit ihm gemeinsam aus"
 **Praxisfehler:** Die Pflegende gibt dem Patienten einen Atemrhythmus vor, statt ihrem Rhythmus dem Ausatmen des Patienten anzupassen; die ASE wird einhändig statt symmetrisch durchgeführt.
 
 **Misconceptions:**
@@ -298,6 +335,8 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "ist die Geruchswahrnehmung in vielen Fällen erhalten"
 - Zitat: "Orale Angebote beziehen sich auf den hochsensiblen Mundraum"
+- Zitat: "die Lippen des Patienten mit einer wohlschmeckenden Flüssigkeit bestreichen"
+- Zitat: "Sogar bei komatösen Patienten wurde durch solche Angebote eine erhöhte Mundaktivität wie Schmatzen und Kauen bis hin zu verbesserten Schluckreflexen beobachtet"
 **Praxisfehler:** Düfte werden ohne Biografie-Bezug gewählt — was der Pflegekraft angenehm ist, kann beim Patienten negative Erinnerungen wecken. Orale Angebote bei unsicherem Schluckakt bergen Aspirationsgefahr.
 
 **Misconceptions:**
@@ -317,9 +356,11 @@
 **Primärquelle:** (Fröhlich A., 1975; DNQP Beziehungsgestaltung Demenz, 2018)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "reagieren durchaus auf"
-- Zitat: "eindeutige Angebote zu entwickeln"
-- Zitat: "seine Umwelt förmlich mit den Händen"
+- Zitat: "reagieren durchaus auf vertraute Geräusche"
+- Zitat: "versinkt dann meist in einem" (auditives Rauschen bei ungefilterten Geräuschen)
+- Zitat: "wechselnde, aber ganz klare und eindeutige Angebote zu entwickeln"
+- Zitat: "seine Umwelt förmlich mit den Händen" (taktil-haptisch: der Mensch begreift seine Umwelt mit den Händen)
+- Zitat: "die der Patient nicht selbst entfer" (Kopfhörer-Risiko der Zwangsanregung)
 **Praxisfehler:** Dauerbeschallung durch Radio/Fernseher führt zu „auditivem Rauschen", in dem der Patient einzelne Reize nicht mehr differenzieren kann; Kopfhörer, die der Patient nicht selbst entfernen kann, bergen das Risiko der „Zwangsanregung".
 
 **Misconceptions:**
@@ -339,9 +380,11 @@
 **Primärquelle:** (Bienstein C./Fröhlich A., 1991; DNQP Beziehungsgestaltung Demenz, 2018; Nydahl P., 2018)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "beachtliche Erfolge v. a."
-- Zitat: "bei Menschen im Wachkoma"
+- Zitat: "erzielten sie beachtliche Erfolge v. a. bei Menschen im Wachkoma"
+- Zitat: "Konzept mittlerer Reichweite"
 - Zitat: "es gilt für viele, aber nicht für alle Patienten"
+- Zitat: "Die basal stimulierende Pflege wird bei Patienten angewendet, die Störungen in ihrer Wahrnehmung, Kommunikation und Bewegung aufweisen"
+- Hinweis: Die Einzel-Indikationen Frühgeborene, Bewusstseinsveränderte, schwere Schlafstörungen, Immobile, Demente (Morbus Alzheimer), Lähmungen/Hemiplegie und Sterbende sind im Spickzettel „Basale Stimulation®" (`pflege-heute.txt` Zeilen 40006–40021) gelistet; OCR-Spaltenformat erlaubt nur zeilenweise Verbatim, Inhalt manuell bestätigt.
 **Praxisfehler:** Basale Stimulation wird als wirkungslos abgetan, wenn keine sichtbare Reaktion erfolgt — viele Reaktionen liegen unterhalb der Sichtbarkeit (Atmung, Puls, Hautwiderstand).
 
 **Misconceptions:**
@@ -361,8 +404,11 @@
 **Primärquelle:** (Fröhlich A., 1975; Bienstein C./Fröhlich A., 1991)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "während der embryonalen Entwicklung angelegt worden"
-- Zitat: "drei elementaren Wahrnehmungsbereiche"
+- Zitat: "Die Möglichkeiten der Wahrnehmung sind während der embryonalen Entwicklung angelegt worden"
+- Zitat: "die somatische, die vestibuläre und die vibratorische Wahrnehmung" (die drei grundlegenden Bereiche)
+- Zitat: "mit Sicherheit aber im vierten Schwangerschaftsmonat, über diese drei elementaren Wahrnehmungsbereiche verfügt"
+- Zitat: "zumindest in Spuren auch dann noch erhalten sind, wenn kaum mehr offensichtliche Zeichen von Bewusstsein vorliegen" (für M3: Erhalt bei schwerster Einschränkung)
+- ⚠️ Die explizite Abgrenzung „basal" (vor-sprachlich/vor-bewusst) vs. „sensorisch" (fünf Sinne) als Begriffspaar ist in Pflege heute Kap. 12.1/12.4 nicht wörtlich so formuliert — die drei elementaren Bereiche werden den fünf weiteren gegenübergestellt, aber ohne den Terminus „sensorisch vs. basal" → Quelle beschaffen (Bienstein/Fröhlich) ODER als didaktische Einordnung ohne Quellen-Anspruch kennzeichnen.
 **Praxisfehler:** „Basal" wird mit „sensorisch" gleichgesetzt — dadurch geht der Kern verloren, dass die drei basalen Bereiche vor allen Sinnen und vor dem Bewusstsein entstehen und auch bei schwerster Einschränkung erhalten bleiben.
 
 **Misconceptions:**

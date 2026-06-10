@@ -24,6 +24,10 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Sichtschutz zur Wahrung der Intimsphäre verwenden"
+- Zitat: "Für eine angenehme Zimmertemperatur" (deckt Raumtemperatur-Prinzip)
+- Zitat: "37–40 °C, bei Abkühlung Wasser wieder" (deckt Wassertemperatur 37-40 °C)
+- ⚠️ Teilaussage "Raumtemperatur **22-24 °C**" — konkreter Zahlenwert im Korpus nicht belegt (Korpus nennt nur "angenehme Zimmertemperatur"); Quelle beschaffen (Juchli/Pflege-heute Körperpflege-Kapitel mit Zahlenangabe) oder Zahl entschärfen.
+- ⚠️ Teilaussage "Wassertemperatur **am inneren Unterarm prüfen**" — im Korpus nicht belegt; Quelle beschaffen oder als didaktischer Praxistipp kennzeichnen.
 **Praxisfehler:** Wassertemperatur am Handrücken statt am inneren Unterarm prüfen — der Handrücken ist weniger temperaturempfindlich.
 **Transfer:** Wie beim Babyfläschchen — innen am Unterarm prüfen, nicht außen.
 
@@ -45,6 +49,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Reihenfolge bei der Ganzkörperwaschung richtet sich nach der individuellen Patientensituation"
+- Zitat: "Zwei (Einmal-)Waschlappen" (deckt „mindestens zwei Waschlappen")
+- Zitat: "Waschwasser, Waschlappen und Handtuch vor der Intimpflege wechseln" (deckt eigener Waschlappen/frisches Wasser für Intim)
+- ⚠️ Teilaussage feste Reihenfolge "Gesicht → Haare → Ohren → Hals → Brust/Bauch → Arme → Rücken → Beine → Intim" sowie Prinzip "von sauber nach schmutzig, von oben nach unten" — als geschlossene Liste/Merksatz im Korpus nicht verbatim belegt (Korpus betont stattdessen die individuelle Patientensituation). Quelle beschaffen (Juchli/Pflege-heute Ablauf-Schema) oder als didaktische Standard-Heuristik kennzeichnen.
 **Praxisfehler:** Nur ein Waschlappen für den ganzen Körper — verschleppt Keime aus dem Intimbereich.
 **Transfer:** Wie beim Putzen — vom saubersten zum schmutzigsten Bereich, nie zurück.
 
@@ -66,6 +73,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "die für den venösen Rückfluss herzwärts mitverantwortlich ist"
+- Zitat: "mit angemessenem Druck und in langen Zügen waschen" (deckt „lange Züge" + „Druck mittelschwer/angemessen")
+- Zitat: "Um die Körperwahrnehmung des Patienten zu fördern" (deckt Bezug Waschtechnik ↔ Körperwahrnehmung)
+- ⚠️ Teilaussage "Kreisbewegungen verwirren die Körperwahrnehmung und reizen die Haut" — als ausdrückliche Negativ-Aussage zu Kreisbewegungen im Korpus nicht verbatim belegt (Korpus empfiehlt positiv lange Züge). Aus der Standard-Empfehlung ableitbar, aber kein Direktbeleg — Quelle beschaffen oder als didaktische Begründung kennzeichnen.
 **Praxisfehler:** Kleine Kreisbewegungen oder zu fester Druck reizen Altershaut (Mikrotraumata).
 **Transfer:** Wie eine sanfte Pumpe — Richtung Körpermitte unterstützt das Blut zurück zum Herzen.
 
@@ -87,7 +97,12 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "5 Indikationen zur Händedesinfektion"
-- Zitat: "Vor aseptischer Tätigkeit"
+- Zitat: "Vor Patientenkontakt" (Moment 1)
+- Zitat: "Vor aseptischer Tätigkeit" (Moment 2)
+- Zitat: "Nach Kontakt mit potenziell infek" (Moment 3 — Kontakt mit Körperflüssigkeiten/infektiösem Material)
+- Zitat: "Nach Patientenkontakt" (Moment 4)
+- Zitat: "Nach Kontakt mit der unmittelba" / "ren Patientenumgebung" (Moment 5 — PDF-Extraktion umbruchgetrennt)
+- Zitat: "30 Sek. in die Hände inkl. Handgelenk" (deckt Einwirkzeit 30 Sekunden)
 **Praxisfehler:** Nach dem Ausziehen von Handschuhen nicht desinfizieren — Handschuhe haben Mikroporen und kontaminieren beim Ausziehen die Hände.
 
 **Misconceptions:**
@@ -108,6 +123,10 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "noch gesunder Fähigkeiten und Ressourcen bei. Aktivierende Pflege"
+- Zitat: "förderndes und ressourcenorientiertes" (deckt Ressourcen nutzen)
+- Zitat: "Auf weitestmögliche Eigenständigkeit" (deckt Selbstständigkeit erhalten)
+- Zitat: "Erhaltung vorhandener und Wiedererlangung verloren gegangener Fähigkeiten" (deckt „use it or lose it" / Fähigkeiten erhalten)
+- ⚠️ Teilaussage "Zeitersparnis ist kein Pflegeziel" — als Negativ-Formulierung im Korpus nicht verbatim; inhaltlich aus der Ressourcen-/Eigenständigkeits-Ausrichtung ableitbar. Als didaktische Schlussfolgerung kennzeichnen oder Quelle beschaffen.
 **Praxisfehler:** Aus Eile alles übernehmen — macht den Patienten kurzfristig schneller sauber, langfristig hilfloser.
 **Transfer:** Wie Muskeltraining — wer eine Fähigkeit nicht nutzt, verliert sie.
 
@@ -129,6 +148,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Den Intimbereich stets von der Symphyse zum Anus, also von vorne"
+- Zitat: "verhindern, dass Darmbakterien" (deckt Verschleppung von Darmkeimen als Grund der Waschrichtung)
+- Zitat: "Verschleppung von Darmkeimen zu vermeiden" (deckt Keim-Verschleppungs-Prinzip)
+- Zitat: "häufiger bei Frauen" + Zitat: "kurze Harnröhre" (deckt: kurze weibliche Harnröhre → erhöhtes HWI-Risiko)
+- ⚠️ Teilaussage Harnröhrenlänge "**3-5 cm**" — konkreter Zahlenwert im Korpus nicht belegt (Korpus nennt nur „kurze Harnröhre"). Quelle beschaffen (Anatomie-Index) oder Zahl entfernen.
+- ⚠️ Teilaussage Keim explizit "**E. coli**" im Intimpflege-Kontext — Korpus nennt hier „Darmbakterien/Darmkeime"; E. coli wird an anderer Stelle als Enterobakterium genannt (Z. 108800/110457), aber nicht direkt mit der weiblichen Intimwaschrichtung verknüpft. Als typischen Erreger kennzeichnen oder Querbeleg beschaffen.
 **Praxisfehler:** Dasselbe Wasser wie für den Körper verwenden — es enthält bereits Keime, Hautschuppen und Seifenreste.
 
 **Misconceptions:**
@@ -149,6 +173,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Vorhaut ganz zurückziehen, Harnröhren"
+- Zitat: "Vorhaut wieder zurückschieben, um" (deckt: Vorhaut wieder nach vorne ziehen — wichtigster Schritt)
+- Zitat: "bildet sich hinter der Eichel durch die zu enge" (deckt Paraphimose = Schnürring/Einschnürung der Eichel)
+- Zitat: "schwellen schmerzhaft an, es drohen" (deckt: schmerzhafte Schwellung + drohende Durchblutungsstörung)
+- Zitat: "nicht zurückgezogen werden, da dies zu" (deckt: bei Phimose nicht mit Gewalt zurückziehen → Einrisse/Vernarbung)
+- ⚠️ Teilaussage Folge "**Nekrose**" — Korpus nennt „Durchblutungsstörungen", nicht wörtlich Nekrose. Als Eskalationsstufe fachlich korrekt, aber nicht verbatim belegt — Begriff entschärfen („drohende Durchblutungsstörung, im schlimmsten Fall Nekrose") oder Quelle beschaffen.
 **Praxisfehler:** Das Vorziehen der Vorhaut vergessen, besonders bei Dauerkatheter-Trägern — Paraphimose-Risiko.
 
 **Misconceptions:**
@@ -169,6 +198,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "von außen nach innen gewaschen"
+- Zitat: "damit Sekrete ihren natürlichen" (deckt Rationale: natürlicher Abflussweg über Tränenkanal/innerer Lidwinkel)
+- Zitat: "jede Kompresse nur einmal benutzen, um einer Keimverschleppung vorzubeugen" (deckt: pro Auge/Wisch eigenes Material)
+- Zitat: "Sterile Reinigungs- oder Spüllösung" (deckt: bei Entzündung steriles Material, NaCl 0,9 %)
 **Praxisfehler:** Denselben Tupfer für beide Augen verwenden — eine einseitige Konjunktivitis wird beidseitig.
 
 **Misconceptions:**
@@ -189,6 +221,10 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Für jede Ohrmuschel ein separates Wattestäbchen verwenden"
+- Zitat: "Wasser und Seife" + Zitat: "dürfen nicht ins Ohr dringen" (deckt: nichts tief ins Ohr/Gehörgang)
+- Zitat: "Zähem Nasensekret und verborkter Nase" (deckt Nasenpflege bei Verkrustungen)
+- Zitat: "Nasenpflege bei nasogastraler Sonde" (deckt Sonden-Bezug → Nasenflügel-Druckstellen prüfen)
+- ⚠️ Teilaussage "**niemals etwas in den Gehörgang einführen**" — strenger als Korpus: Pflege heute erlaubt, Cerumen „am Gehörgang vorsichtig mit Wattestäbchen" zu entfernen (Z. 18573 ff.) und stützt den Watteträger ab (Abb. 6.22). Aussage didaktisch zuspitzen auf „nicht tief in den Gehörgang" oder mit aktueller HNO-/Cerumen-Leitlinie belegen.
 **Praxisfehler:** Wattestäbchen in den Gehörgang einführen — schiebt Cerumen tiefer und gefährdet das Trommelfell.
 
 **Misconceptions:**
@@ -209,6 +245,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Haarwäsche im Bett"
+- Zitat: "eine Haarwäsche 1- bis 2-mal pro Woche" (deckt Frequenz ca. 1-2×/Woche)
+- Zitat: "Ggf. Augenschutz (z. B. Waschlappen)" (deckt Augenschutz)
+- Zitat: "Haare bei Halswirbel- und Schädelverletzungen nur auf Anordnung des" (deckt HWS-Vorsicht: bei HWS-Problemen nur nach Anordnung / keine unkontrollierte Überstreckung)
+- ⚠️ Teilaussage Wasser "**37-40 °C**" speziell für die Haarwäsche — im Haarpflege-Kapitel nicht direkt angegeben; Wert nur generell aus Basale-Stimulation-Tabelle (F-15) übertragbar. Querbeleg kennzeichnen oder eigene Quelle beschaffen.
+- ⚠️ Teilaussage Alternative "**Trockenshampoo**" — Begriff im Korpus nicht belegt. Quelle beschaffen oder als praktische Alternative ohne Quellenanspruch kennzeichnen.
 **Praxisfehler:** Kopf bei HWS-Problemen überstrecken — Schmerzen, Nervenreizung, im schlimmsten Fall Wirbelverschiebung.
 
 **Misconceptions:**
@@ -231,6 +272,8 @@
 - Zitat: "Fingernägel rund schneiden"
 - Zitat: "Fußnägel gerade schneiden, um ein Einwachsen zu verhindern"
 - Zitat: "um die Nägel aufzuweichen, da sie sich"
+- Zitat: "Nägel kurz halten (besser feilen, nicht" (deckt: Feile bevorzugt statt schneiden)
+- ⚠️ Teilaussage "nicht in die **Nagelecken** schneiden" — als Detailregel nicht verbatim belegt; aus der „Fußnägel gerade + Einwachsen verhindern"-Logik ableitbar. Als didaktische Konkretisierung kennzeichnen oder Quelle beschaffen.
 **Praxisfehler:** Fußnägel rund schneiden — die Nagelecken wachsen in den seitlichen Nagelwall (Entzündung, Schmerz, ggf. OP).
 
 **Misconceptions:**
@@ -251,6 +294,12 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Verletzungen vermeiden, z. B. Fußpflege von Podologen durchführen"
+- Zitat: "Durch das reduzierte Schmerzempfinden werden Verletzungen oft nicht" (deckt diabetische Neuropathie/Gefühllosigkeit)
+- Zitat: "der schlechten Durchblutung meist" (deckt Mikroangiopathie/schlechte Wundheilung)
+- Zitat: "diabetische Fußsyndrom ist eine schwerwiegende Folgeerkrankung des Diabetes" (deckt diabetisches Fußsyndrom als Folge)
+- Zitat: "aber nicht die Zehenzwischenräume) mit einer Pflegecreme eincremen" (deckt: nicht zwischen die Zehen eincremen)
+- Zitat: "Täglich die Füße, vor allem Zehen und" (deckt tägliche Fußinspektion)
+- ⚠️ Teilaussage "**häufigste Ursache nicht-unfallbedingter Amputationen**" — konkrete epidemiologische Aussage im Korpus nicht belegt (Korpus: „schwerwiegende Folgeerkrankung", „Nekrosen drohen"). Quelle beschaffen (NVL Typ-2-Diabetes / DDG-Statistik) oder Aussage entschärfen.
 **Praxisfehler:** Zwischen die Zehen eincremen — Feuchtigkeitsstau begünstigt Fußpilz (Eintrittspforte bei Diabetes).
 
 **Misconceptions:**
@@ -271,6 +320,12 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Typisch ist die scharfe Begrenzung der Rötung"
+- Zitat: "häufigsten durch Streptokokken" (deckt Erreger)
+- Zitat: "Unterschenkel) ist flammend gerötet" (deckt Lokalisation Unterschenkel + feuerrote Rötung; im Korpus folgt „geschwollen und schmerzt")
+- Zitat: "bekommt der Patient hohes Fieber" (deckt hohes Fieber)
+- Zitat: "Die Behandlung besteht in der systemischen Penicillingabe" (deckt systemische Penicillingabe)
+- Zitat: "Gefahr einer Sepsis" (deckt: Notfall, sonst Sepsis-Risiko; Korpus: Fußpilz als begünstigende Eintrittspforte genannt)
+- ⚠️ Teilaussage Abgrenzung "Dekubitus-I-Rötung ist diffus, **nicht scharf begrenzt**" — der direkte Vergleich Erysipel↔Dekubitus-Grad-I steht nicht verbatim im Korpus. Fachlich korrekte didaktische Abgrenzung; als solche kennzeichnen oder über DNQP-Dekubitus belegen.
 **Praxisfehler:** Erysipel mit lokaler Wundversorgung „selbst behandeln" — es braucht systemische Antibiotika, sonst droht Sepsis.
 
 **Misconceptions:**
@@ -291,6 +346,10 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Pflegenden beobachten die Haut z. B. bei der Körperpflege"
+- Zitat: "sehen sie z. B. Hautfarbe" (Korpus-Liste: „Hautfarbe, Ödeme und Schwellungen, … Wunden" — deckt mehrere Beobachtungskriterien)
+- Zitat: "Voraussetzung für die Planung und Evaluation der" (deckt: Hautbeobachtung als Grundlage/Frühwarnsystem für die Pflegeplanung)
+- ⚠️ Teilaussage einzelne Fachbegriffe der Beobachtungsliste "**Turgor, Ekchymosen, Exantheme**" — diese spezifischen Begriffe stehen nicht in derselben Korpus-Liste (dort: Hautfarbe, Ödeme, Wunden, Verhärtungen, Trockenheit/Feuchtigkeit). Fachlich korrekt, aber als didaktische Erweiterung kennzeichnen oder über Anatomie-/Assessment-Quelle belegen.
+- ⚠️ Misconception M1 nennt Rechtsnorm "**PflBG § 5**" als Beleg für Hautbeobachtung als Pflege-Kernkompetenz — § 5 PflBG (Ausbildungsziel/Vorbehaltsaufgaben) im Korpus nicht zitiert. Gesetzestext als Primärquelle beschaffen oder Verweis präzisieren.
 **Praxisfehler:** Hautbeobachtung dem Arzt überlassen — der sieht den Patienten nur kurz; die Pflege bemerkt Veränderungen als Erste.
 
 **Misconceptions:**
@@ -311,6 +370,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Belebende Ganzkörperwaschung entgegen"
+- Zitat: "Gegen die Haarwuchsrichtung" (belebend) + Zitat: "Mit der Haarwuchsrichtung" (beruhigend)
+- Zitat: "Ca. 10 °C unter der Körpertemperatur: 24–28 °C" (belebend, kühler) + Zitat: "37–40 °C, bei Abkühlung Wasser wieder" (beruhigend, warm)
+- Zitat: "Bei Depression" + Zitat: "Bei schlaffem Muskeltonus" (Indikationen belebend; Korpus auch „Bei Somnolenz")
+- Zitat: "Bei Schmerzen" + Zitat: "Bei Einschlafstörungen" (Indikationen beruhigend; Korpus auch „Bei Unruhezuständen/Angstzuständen")
+- ⚠️ Teilaussage physiologische Zuordnung "**Parasympathikus** (beruhigend) / **Sympathikus** (belebend)" — diese vegetative Begriffspaarung steht in der Basale-Stimulation-Tabelle des Korpus NICHT (dort nur Ziele/Indikationen/Temperatur/Richtung). Fachlich plausibel, aber als didaktische Erklärung kennzeichnen oder über Fröhlich/Bienstein-Originalquelle bzw. Physiologie-Index belegen.
 **Praxisfehler:** Sterbende belebend waschen — das Ziel ist Ruhe und Würde, nicht Wachheit; beruhigende Waschung unterstützt das Loslassen.
 **Transfer:** Wie ein sanftes Medikament — die richtige Form je nach Zustand dosieren, nicht immer dieselbe.
 
@@ -332,6 +396,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "dem Handzeichen der Pflegenden dokumentiert werden"
+- Zitat: "mangelhafte Pflegedokumentation kann jedoch zur Beweislastumkehr führen" (deckt Beweislast-Prinzip / „nicht dokumentiert = nicht durchgeführt")
+- Zitat: "die individuellen Ressourcen und Einschränkungen" (deckt Doku-Ebene 2: Ressourcen + Einschränkungen)
+- ⚠️ Teilaussage geschlossenes "**Drei-Ebenen-Schema** (Maßnahme / Ressourcen / Auffälligkeiten)" — als strukturierte Dreiteilung im Korpus nicht verbatim; Einzelelemente belegt, die Gliederung ist didaktisch. Kennzeichnen oder Quelle beschaffen.
+- ⚠️ Teilaussage "Sprache **sachlich und wertfrei**" — als Doku-Sprachregel nicht direkt im Korpus-Doku-Kapitel belegt (nur als Feedback-Regel an anderer Stelle, Z. 158541 „Beschreibend und nicht wertend"). Querbeleg kennzeichnen oder eigene Quelle beschaffen.
+- ⚠️ Teilaussage Rechtsgrundsatz-Zuschreibung "**(BGH Beweislast)**" in der Primärquellen-Zeile — kein BGH-Urteilszitat im Korpus; belegt ist die Beweislastumkehr über Pflege heute. Konkretes Urteil (z. B. BGH VI ZR) beschaffen oder Verweis auf Pflege heute reduzieren.
 **Praxisfehler:** Wertungen statt Beobachtungen eintragen („Patient wie immer mürrisch") — Dokumentation muss beobachtungsbezogen sein.
 
 **Misconceptions:**
@@ -353,6 +422,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Reihenfolge bei der Ganzkörperwaschung richtet sich nach der individuellen Patientensituation"
+- Zitat: "und vorbehaltene Tätigkeit im Sinne des" (deckt: pflegerische Vorbehalts-/Eigenentscheidung im Sinne des Pflegeberufegesetzes)
+- ⚠️ Teilaussage exakte Rechtsnorm "**§ 4 PflBG**" — Korpus belegt nur „vorbehaltene Tätigkeit im Sinne des Pflegeberufegesetzes", nicht die Paragraphennummer. § 4 PflBG (Vorbehaltsaufgaben) als Gesetzestext beschaffen oder Verweis auf „Pflegeberufegesetz" reduzieren.
 **Praxisfehler:** Schwache Patienten besonders gründlich waschen „um Vorrat zu schaffen" — der Patient verliert zusätzlich Energie und Wärme (Kollapsgefahr).
 
 **Misconceptions:**
@@ -373,6 +444,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "darf ein Vollbad nur nach"
+- Zitat: "Der Wasserdruck (hydrostatischer Druck)" (deckt: Baden belastet Kreislauf über hydrostatischen Druck)
+- Zitat: "insbesondere für Patienten mit Herzinsuffizienz" (deckt Kontraindikation/Vorsicht Herzinsuffizienz)
+- Zitat: "bereits die physiologischen" (Korpus: „physiologischen Kreislaufreaktionen können zu Komplikationen führen" — deckt: nur bei stabilem Kreislauf)
+- Zitat: "lassen die Pflegenden den Patienten daher nur kurz bei niedriger Temperatur" (Korpus: „(35 °C)" — deckt niedrige Badetemperatur bei Herz-/Kreislauferkrankung)
+- ⚠️ Teilaussage Schwellenwerte "Fieber **>38,5 °C**", "frische Wunden **< 48 h / bis Epithelisierung**", "Wasser **35-38 °C** (Dusche/Bad)" sowie geschlossene Kontraindikationsliste (Thrombose, frische OP-Wunde, dekompensierte Herzinsuffizienz, schwere Infektionen) — als Duschen/Baden-spezifische Schwellen/Listen im Korpus nicht verbatim belegt (Korpus nennt 38,5 °C als Fiebergrenze allgemein und 35 °C als Badetemperatur bei Herzkranken, nicht als Duschen-Kontraindikationsset). Quelle beschaffen (Hygiene-/Wundleitlinie) oder Werte als didaktische Faustregeln kennzeichnen.
 **Praxisfehler:** Frisch operierten Patienten schnell duschen lassen — Wasser auf der Wunde verursacht Infektion und Wunddehiszenz.
 
 **Misconceptions:**
@@ -393,6 +469,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Sorgfältiges Abtrocknen in den Hautfalten beugt"
+- Zitat: "verschlechtert die Situation zusätzlich" (Korpus: „Reibung verschlechtert die Situation zusätzlich" — deckt: nicht reiben/rubbeln)
+- Zitat: "Candida-Intertrigo bei Befall der Hautfalten" (deckt: Intertrigo durch Candida in Hautfalten)
+- Zitat: "Hautfalten nicht eincremen, da Salben und Cremes die Poren" (deckt: keine Creme auf feuchte Falten; Ausnahme Antimykotikum n. Anordnung)
+- ⚠️ Teilaussage geschlossene Lokalisationsliste "**submammär, inguinal, axillär, abdominell, interdigital**" — als zusammenhängende Aufzählung im Korpus nicht verbatim (belegt sind einzeln „Bauchfalte" Abb. 6.4, „Achselhöhlen"). Fachlich korrekt; als didaktische Liste kennzeichnen oder über Dermatologie-/Anatomie-Quelle belegen.
+- ⚠️ Teilaussage Technik "Hautfalten einzeln **anheben und tupfen**" — die konkrete Anheb-/Tupf-Technik nicht verbatim belegt (Korpus: „Abtrocknen sollte vorsichtig geschehen", „Reibung verschlechtert"). Aus dem Schonungsgebot ableitbar — als didaktische Konkretisierung kennzeichnen.
 **Praxisfehler:** Hautfalten kräftig trockenrubbeln — verletzt Altershaut (Mikrotraumata, Hämatome unter Antikoagulation).
 
 **Misconceptions:**

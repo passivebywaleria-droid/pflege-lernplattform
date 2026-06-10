@@ -15,7 +15,7 @@
 
 ### F-01: BMI-Berechnung
 
-**Fakt:** Der Body-Mass-Index (BMI) setzt Körpergewicht und Körpergröße ins Verhältnis. Formel: BMI = Körpergewicht (kg) ÷ Körpergröße² (m²). Beispiel: 75 kg / (1,70 m)² = 25,9 kg/m². Der BMI ist ein Screening-Wert, keine Diagnose — nicht aussagekräftig bei Ödemen, Aszites, Muskelsportlern, Amputationen.
+**Fakt:** Der Body-Mass-Index (BMI) setzt Körpergewicht und Körpergröße ins Verhältnis. Formel: BMI = Körpergewicht (kg) ÷ Körpergröße² (m²). Beispiel (Pflege heute): 74 kg / (1,67 m)² = 26,6 kg/m². Der BMI ist ein Screening-Wert, keine Diagnose — nicht aussagekräftig bei Ödemen, Aszites, Muskelsportlern, Amputationen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Definition
@@ -24,6 +24,14 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Der Body-Mass-Index betrachtet das Verhältnis von Körpergewicht und Körpergröße zueinander"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Körpergewicht in kg = BMI in kg/m2 (Körpergröße in m)2"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "74 kg : (1,67 m)2 = 74 : 2,78 = 26,6 kg/m2"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Der BMI alleine ist wenig aussagekräftig, da das Gewicht auch stark durch den Wasserhaushalt beeinflusst wird"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Auch bei Amputationen oder stark verkrümmter Wirbelsäule ist der BMI nicht aussagekräftig"
 **Praxisfehler:** Größe nicht quadriert (Gewicht ÷ Größe statt Gewicht ÷ Größe²) → völlig falscher Wert.
 
 **Misconceptions:**
@@ -35,7 +43,7 @@
 
 ### F-02: BMI-Kategorien (WHO) und Altersanpassung
 
-**Fakt:** WHO-BMI-Kategorien (kg/m²): <18,5 Untergewicht | 18,5-24,9 Normalgewicht | 25,0-29,9 Übergewicht (Präadipositas) | 30,0-34,9 Adipositas Grad I | 35,0-39,9 Adipositas Grad II | ≥40 Adipositas Grad III. Bei Menschen über 65 Jahren liegt der günstigste Bereich höher (ca. 22-27 kg/m²) — ein BMI unter 22 ist im Alter bereits ein Warnsignal.
+**Fakt:** WHO-BMI-Kategorien (kg/m²): <18,5 Untergewicht | 18,5-24,9 Normalgewicht | 25,0-29,9 Übergewicht (Präadipositas) | 30,0-34,9 Adipositas Grad I | 35,0-39,9 Adipositas Grad II | ≥40 Adipositas Grad III (Adipositas per magna). Mit zunehmendem Alter sind höhere BMI-Werte wünschenswert; bei Älteren liegt der günstigste Bereich höher (Pflege heute Tab. 7.8 nennt für >64-Jährige 24-29 kg/m²).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
@@ -44,11 +52,22 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Mit zunehmendem Alter sind höhere BMI-Werte wünschenswert"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Beim Gesunden liegt der BMI bei 18,5– 24,9 kg/m2 (bei Älteren auch etwas höher)"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Bei einem BMI von 25–29,9 kg/m2 spricht man von Übergewicht oder Präadipositas"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "BMI 30–34,9 kg/m2 = Adipositas Grad I"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "BMI 35–39,9 kg/m2 = Adipositas Grad II"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "BMI ≥ 40 kg/m2 = Adipositas Grad III"
+- ⚠️ Detailwerte "günstiger Bereich über 65 = 22-27 kg/m², BMI < 22 = Warnsignal" lokal nicht verbatim belegbar (Pflege heute Tab. 7.8 gibt für >64 J. 24-29 kg/m²). Quelle beschaffen (DGE/ESPEN-Leitlinie Geriatrie bzw. DGEM-Leitlinie Ernährung im Alter) ODER Aussage auf die belegte Grenze (24-29 kg/m² für >64 J.) zurückführen.
 **Praxisfehler:** Bei älteren Menschen die gleichen BMI-Grenzen wie bei Jüngeren anlegen → Mangelernährung bei BMI 21 wird übersehen.
 
 **Misconceptions:**
-- `M1`: **"Ab BMI 25 muss der Patient abnehmen"** — Übergewicht (25-29,9) ist nicht automatisch krankhaft; bei über 65-Jährigen gilt ein BMI bis 27 sogar als günstig. Entscheidend sind Begleiterkrankungen, Taillenumfang und Verlauf. Fachbegriff: "Automatismus-Fehler".
-- `M2`: **"Bei alten Menschen gelten die gleichen BMI-Grenzen wie bei Jungen"** — Über 65 Jahre liegt der günstigste BMI-Bereich höher (22-27 kg/m²); BMI unter 22 ist bereits ein Warnsignal. Fachbegriff: "Altersgrenzen-Irrtum".
+- `M1`: **"Ab BMI 25 muss der Patient abnehmen"** — Übergewicht (25-29,9) ist nicht automatisch krankhaft; im Alter sind höhere BMI-Werte sogar wünschenswert. Entscheidend sind Begleiterkrankungen, Taillenumfang und Verlauf. Fachbegriff: "Automatismus-Fehler".
+- `M2`: **"Bei alten Menschen gelten die gleichen BMI-Grenzen wie bei Jungen"** — Mit zunehmendem Alter sind höhere BMI-Werte wünschenswert (Pflege heute Tab. 7.8: >64 J. = 24-29 kg/m²); die gleichen Grenzen wie bei Jüngeren anzulegen übersieht Mangelernährung im Alter. Fachbegriff: "Altersgrenzen-Irrtum".
 - `M3`: **"Adipositas Grad III heißt BMI 35 bis 39,9"** — BMI 35-39,9 ist Adipositas Grad II; Grad III beginnt ab BMI 40. Merkhilfe: Grad I ab 30, Grad II ab 35, Grad III ab 40. Fachbegriff: "Grenzwert-Verwechslung".
 
 ---
@@ -66,6 +85,9 @@
 - Zitat: "Anzeichen für eine drohende oder bestehende Mangelernährung"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ausführliche Erhebung, die auch die beeinflussenden Faktoren untersucht"
+- Quelle: `dnqp-standards-index/ernaehrungsmanagement.txt`
+- Zitat: "Sind entsprechende Anzeichen vorhanden, führt sie eine tiefergehende Einschätzung der Ernährungssituation und der sie beeinflussenden Faktoren durch (vertieftes Assessment)"
+- ⚠️ Zeitangaben "Screening 2-5 Min, binnen 24h" und "Assessment 15-30 Min" sind didaktische Orientierungswerte, im Korpus nicht verbatim belegt. Aussage ohne konkrete Minuten-/Stundenwerte formulieren ODER Quelle beschaffen (DNQP-Implementierungshinweise / Instrument-Manuale).
 **Praxisfehler:** Screening nur bei "sichtbar dünnen" Patienten machen — der Standard verlangt es für alle (auch Adipöse, verdeckte Mangelernährung).
 
 **Misconceptions:**
@@ -86,6 +108,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Kriterium des Screening-Instruments Mini Nutritional Assessment (MNA)"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "des Screening-Instruments Mini Nutritional Assessment (MNA); dort gelten Werte über 22 cm als normal"
+- ⚠️ MNA-Short-Form-Detail (6 Fragen; Punktebereich 0-14; Cut-offs 12-14 normal / 8-11 Risiko / 0-7 Mangelernährung) im Korpus nicht belegt — Pflege heute nennt das MNA nur als Instrument + OAU-Kriterium. Quelle beschaffen (MNA-Originalarbeit Guigoz/Vellas bzw. Nestlé-MNA-Manual) oder Score-Detail entfernen.
 **Praxisfehler:** MNA bei jüngeren Erwachsenen einsetzen — es ist nur für Ältere (≥65) validiert; im Krankenhaus gilt NRS-2002.
 
 **Misconceptions:**
@@ -106,6 +131,7 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Nutritional Risk Score (NRS) für den Krankenhausbereich"
+- ⚠️ NRS-2002-Detail (4 Vorscreening-Fragen; Hauptscreening Ernährungs-Score 0-3 + Krankheits-Score 0-3 + Altersbonus +1 bei ≥70; Cut-off ≥3 Punkte; Maximum 7; wöchentliche Wiederholung) im Korpus nicht belegt — Pflege heute nennt nur den Instrument-Namen. Quelle beschaffen (NRS-2002-Originalarbeit Kondrup et al. 2003 / ESPEN-Leitlinie) oder Score-Detail entfernen.
 **Praxisfehler:** Nach negativem Pre-Screening nie wieder testen — bei Klinik-Patienten ist wöchentliche Wiederholung Pflicht (Verschlechterung nach OP/Infekt).
 
 **Misconceptions:**
@@ -126,10 +152,13 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "bei allen Patienten mit einem auffälligen Screening-Ergebnis ein vertieftes Assessment"
-**Praxisfehler:** PEMU auf die Gewichtsmessung verkürzen — der eigentliche Kern ist die Ursachenanalyse in 5 Bereichen.
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "ein vertieftes Assessment, z. B. mithilfe des PEMU (Pflegerische Erfassung von Mangelernährung und deren Ursachen)"
+- ⚠️ PEMU-Binnenstruktur (Teil 1 Ernährungszustand / Teil 2 Ursachen in den fünf Bereichen Essen-Trinken-Signale, Mundgesundheit, Fähigkeiten, Umgebung/Angebot, weitere Gründe) im Korpus nicht belegt — Pflege heute nennt nur Name + Langform + Einsatzzweck. Quelle beschaffen (PEMU-Originalinstrument Bartholomeyczik/Schreier 2008) oder Bereichsaufzählung entfernen.
+**Praxisfehler:** PEMU auf die Gewichtsmessung verkürzen — der eigentliche Kern ist die Ursachenanalyse in den im PEMU erfassten Ursachenbereichen.
 
 **Misconceptions:**
-- `M1`: **"PEMU erfasst nur das Gewicht"** — Gewicht ist nur Teil 1; der Kern (Teil 2) sucht Ursachen in 5 Bereichen. Ohne Ursachen keine gezielten Maßnahmen. Fachbegriff: "Verkürzungs-Irrtum".
+- `M1`: **"PEMU erfasst nur das Gewicht"** — Das Gewicht ist nur der erste Teil; der Kern des PEMU sucht die Ursachen der Mangelernährung. Ohne Ursachen keine gezielten Maßnahmen. Fachbegriff: "Verkürzungs-Irrtum".
 - `M2`: **"PEMU macht der Arzt"** — Das P in PEMU steht für "Pflegerisch"; es gehört in den Pflegeprozess. Die Pflege sieht den Patienten täglich beim Essen. Fachbegriff: "Zuständigkeits-Irrtum".
 - `M3`: **"PEMU und MNA sind dasselbe"** — MNA ist ein punktbasiertes Screening/Assessment für Ältere (international); PEMU ist ein deutschsprachiges Pflege-Assessment nach 5 Ursachenbereichen. Fachbegriff: "Instrument-Gleichsetzung".
 
@@ -146,7 +175,8 @@
 **Beleg:**
 - Quelle: `dnqp-standards-index/ernaehrungsmanagement.txt`
 - Zitat: "Der vorliegende Expertenstandard beschreibt den pflegerischen Beitrag zum Ernährungsmanagement"
-- Zitat: "Die Pflegefachkraft erfasst bei allen Patienten/Bewohnern zu Beginn des pflegerischen Auftrags"
+- Zitat: "Die Pflegefachkraft erfasst bei allen Patienten/Bewohnern zu Beginn des pflegerischen Auftrags im Rahmen der Pflegeanamnese, bei akuten Veränderungen"
+- Zitat: "Die Pflegefachkraft plant gemeinsam mit dem Patienten/Bewohner und seinen Angehörigen Maßnahmen zur Unterstützung der Nahrungsaufnahme"
 **Praxisfehler:** Einmaliges Screening bei Aufnahme genügt nicht — der Standard verlangt Re-Screening bei akuten Veränderungen.
 
 **Misconceptions:**
@@ -167,7 +197,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ausgeprägter Verlust an Muskelmasse, Muskelkraft und Muskelleistung"
-- Zitat: "wenn der Gewichtsverlust und der Kräfteverfall sehr ausgeprägt ist"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Von Kachexie (Auszehrung, hochgradige Abmagerung, „Kräfteverfall“) spricht man, wenn der Gewichtsverlust und der Kräfteverfall sehr ausgeprägt ist"
+- ⚠️ PEM als eigener, klar abgegrenzter Terminus ("Protein-Energie-Mangelernährung, reversibel durch Kalorien-/Eiweißzufuhr") im Korpus nicht verbatim belegt — Pflege heute nutzt den Oberbegriff "Mangelernährung (Malnutrition)". Quelle beschaffen (DGEM-Terminologie-Leitlinie / ESPEN 2017 Definitions) oder PEM als Unterform der belegten Malnutrition-Definition führen.
 **Praxisfehler:** Kachexie mit "einfachem Dünn-Sein" gleichsetzen — sie ist krankheitsbedingt und nicht durch Essen allein zu beheben.
 
 **Misconceptions:**
@@ -188,6 +220,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Bei älteren Menschen ist jede unbeabsichtigte Gewichtsabnahme ein wichtiges Warnsignal"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Als Orientierung für einen auffälligen Gewichtsverlust können die in"
+- ⚠️ Konkrete Prozent-/Zeit-Schwellen (>5 % in 3 Mon., >10 % in 6 Mon. bzw. die Werte aus Pflege heute Tab. 7.9: 5 %/Monat, 7,5 %/3 Mon., 10 %/6 Mon.) liegen in einer Tabelle, die im Volltext-Extrakt nicht als Zahlenwerte vorliegt (nur der Verweis auf Tab. 7.9). Quelle beschaffen (Pflege heute Tab. 7.9 als Zahlentabelle nachextrahieren ODER DGEM/ESPEN-Leitlinie) — bis dahin Schwellen als "z. B. >5 %/3 Mon. (laut DGEM/ESPEN)" kennzeichnen.
 **Praxisfehler:** Verlust in absoluten Kilo statt in Prozent beurteilen — 5 kg sind für 50 kg = 10%, für 100 kg = 5%.
 
 **Misconceptions:**
@@ -208,6 +243,14 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ein Wadenumfang unter 31 cm kann ein zusätzlicher Hinweis auf eine Mangelernährung sein"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "des Screening-Instruments Mini Nutritional Assessment (MNA); dort gelten Werte über 22 cm als normal"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Schlaffe Hautfalten an Armen, Abdomen, Gesäß"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Eingefallene Augen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Schuppige und trockene Haut"
 **Praxisfehler:** Aus normalem Hautbild auf gute Ernährung schließen — Hautveränderungen sind späte Zeichen.
 
 **Misconceptions:**
@@ -228,7 +271,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Eiweißmangel führt zu Ödemen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Im Alter bedingt er einen Muskelabbau"
+- ⚠️ Sämtliche konkreten Laborparameter mit Halbwertszeiten und Cut-offs (Albumin HWZ ~20 Tage, <35 g/l; Präalbumin 2-3 Tage; Transferrin ~8 Tage) im Korpus nicht belegt — Pflege heute belegt nur die Folge des Eiweißmangels (Ödeme, Muskelabbau), nicht die Labordiagnostik. Quelle beschaffen (Labormedizin-Referenz / DGEM-Leitlinie klinische Ernährung) oder HWZ-/Cut-off-Werte entfernen. Der didaktische Kern (kein Einzelwert reicht; CRP/Leber/Niere/Dehydratation verfälschen) ist davon unabhängig korrekt, aber ebenfalls unbelegt.
 **Praxisfehler:** Albumin isoliert als Mangelernährungsmarker werten — es wird auch durch Entzündung gesenkt; immer CRP mitbestimmen.
 
 **Misconceptions:**
@@ -249,6 +294,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "weicht die Einfuhr von der Ausfuhr in 24 Std. nur maximal 250 ml ab"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Diese Absonderung bleibt fast unbemerkt (Perspiratio insensibilis)"
+- ⚠️ Konkrete Zahlen "Perspiratio insensibilis ca. 700-900 ml/d" und "bei Fieber +500 ml/°C" im Korpus nicht belegt — Pflege heute nennt für Schweiß "ca. einen Liter/Tag" (Haut + Lunge laut Tab. 7.16 je ca. 0,5 l/Tag) ohne die 700-900-ml-Spanne und ohne die °C-Regel. Quelle beschaffen (Physiologie-Lehrbuch / DGE) oder Zahl auf die belegten Tab.-7.16-Werte (Haut ca. 0,5 l + Lunge ca. 0,5 l) umstellen; die +500-ml/°C-Regel separat belegen oder entfernen.
 **Praxisfehler:** Einfuhr nur als "Trinken" erfassen — Infusionen, Sondenkost und Suppen gehören dazu, sonst wird die Einfuhr systematisch unterschätzt.
 
 **Misconceptions:**
@@ -269,7 +317,18 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Bei alten Menschen treten „stehende Hautfalten“ auch ohne Dehydratation auf"
-- Zitat: "Veränderung der gewohnten geistigen Aktivität oder Verwirrtheit"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Zunehmende Lethargie, Veränderung der gewohnten geistigen Aktivität oder Verwirrtheit"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Trockene Mundschleimhaut mit Schluckstörungen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Verminderte Urinausscheidung, Urin stark konzentriert"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Tachykardie, Hypotonie"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Verringertes Durstempfinden, besonders bei alten, desorientierten oder alkoholkranken Menschen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "im Alter das Durstempfinden deutlich reduziert ist"
 **Praxisfehler:** Auf das Durstgefühl des alten Menschen vertrauen — das Durstempfinden ist im Alter reduziert; aktive Überwachung (Trinkplan, Bilanz) ist Pflicht.
 
 **Misconceptions:**
@@ -281,7 +340,7 @@
 
 ### F-14: Flüssigkeitsbedarf
 
-**Fakt:** Richtwert für Erwachsene: ca. 30-35 ml Flüssigkeit pro kg Körpergewicht pro Tag (ein 70-kg-Mensch ≈ 2,1 l; nach DGE-Tagesbilanz ca. 2,6 l Wasseraufnahme inkl. Nahrung). Davon ca. 1,5 l über Getränke, der Rest aus fester Nahrung. Die Flüssigkeitsaufnahme soll ungefähr der Abgabe entsprechen; bei erhöhter Abgabe (Fieber +500 ml/°C, Durchfall, Schwitzen, Hitze) entsprechend mehr. Achtung: Bei Herz-/Niereninsuffizienz gilt ärztlich angeordnete Restriktion.
+**Fakt:** Richtwert für Erwachsene: ca. 35 ml Flüssigkeit pro kg Körpergewicht pro Tag (ein 70-kg-Mensch ≈ 2,45 l; erhöht z. B. bei Erbrechen, Diarrhö, Fieber). Nach der DGE-Tagesbilanz (Pflege heute Tab. 7.16) beträgt die gesamte Wasseraufnahme ca. 2,6 l/Tag — davon ca. 1,4 l über Getränke, ca. 0,9 l über Speisen, ca. 0,3 l Oxidationswasser; die Abgabe (ebenfalls ca. 2,6 l) verteilt sich auf Urin ca. 1,4 l, Stuhl ca. 0,2 l, Haut ca. 0,5 l, Lunge ca. 0,5 l. Die Flüssigkeitsaufnahme soll ungefähr der Abgabe entsprechen. Achtung: Bei Herz-/Niereninsuffizienz gilt ärztlich angeordnete Restriktion.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Fakt
@@ -290,13 +349,17 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Flüssigkeitsaufnahme soll ungefähr der Abgabe entsprechen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Tägliche Wasseraufnahme und -abgabe nach der Empfehlung der Deutschen Gesellschaft für Ernährung"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Erwachsene benötigen ca. 35 ml/kg KG; erhöht z. B. bei Erbrechen, Diarrhö, Fieber"
+- ⚠️ Die im Original genannte Spanne "30-35 ml/kg" sowie die Faustregel "Fieber +500 ml/°C" sind im Korpus nicht belegt — Pflege heute nennt nur "ca. 35 ml/kg KG" und Fieber als qualitativen Erhöhungsgrund. Spanne/°C-Wert auf den belegten Wert zurückgeführt bzw. entfernt; falls 30-35 ml/kg gewünscht → Quelle beschaffen (DGE/DGEM-Referenzwerte).
 **Praxisfehler:** Pauschal "viel trinken" empfehlen, ohne ärztliche Restriktion bei Herz-/Niereninsuffizienz zu beachten.
 
 **Misconceptions:**
 - `M1`: **"Jeder soll mindestens 2-3 Liter trinken"** — Der Bedarf ist gewichts- und situationsabhängig (30-35 ml/kg) und bei Herz-/Niereninsuffizienz ärztlich begrenzt. Fachbegriff: "Pauschal-Trinkmenge".
 - `M2`: **"Tee und Suppe zählen nicht zur Flüssigkeit"** — Alle Getränke und flüssigkeitsreiche Speisen (Suppe, Eis) zählen zur Einfuhr; Kaffee/Tee in normalen Mengen werden wie jedes andere Getränk berücksichtigt. Fachbegriff: "Getränke-Ausschluss".
-- `M3`: **"Bei Fieber bleibt der Flüssigkeitsbedarf gleich"** — Bei Fieber steigt der Bedarf (ca. +500 ml pro °C über 37 °C), ebenso bei Durchfall/Schwitzen/Hitze. Fachbegriff: "Bedarfs-Konstanz-Irrtum".
+- `M3`: **"Bei Fieber bleibt der Flüssigkeitsbedarf gleich"** — Bei Fieber steigt der Bedarf (Pflege heute: erhöht u. a. bei Fieber), ebenso bei Erbrechen, Durchfall, Schwitzen/Hitze. Fachbegriff: "Bedarfs-Konstanz-Irrtum". (Faustregel "+500 ml/°C" nur mit separater Quelle verwenden.)
 
 ---
 
@@ -311,6 +374,13 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Speisen mit Butter, Sahne oder hochwertigen Ölen anreichern"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Energiereiche Zwischenmahlzeiten anbieten, z. B. Sahnejoghurt, Milchreis"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Ergänzung der Nahrung durch Trinknahrung"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Häufigere kleine Mahlzeiten"
+- ⚠️ Quantitative Zielwerte "eiweißreiche Kost ca. 1,0-1,5 g/kg KG/Tag", "5-6 kleine Portionen" und "Evaluation nach 1-2 Wochen" im Korpus nicht verbatim belegt — Pflege heute belegt das Anreicherungs-/Zwischenmahlzeiten-/Trinknahrungs-Prinzip und "häufigere kleine Mahlzeiten" qualitativ. Quelle beschaffen (DGEM/ESPEN-Leitlinie klinische Ernährung für die g/kg-Vorgabe) oder konkrete Zahlen entfernen.
 **Praxisfehler:** Reflexartig Trinknahrung verordnen, ohne die Ursache zu klären — eine drückende Prothese wird nicht durch Trinknahrung behoben.
 
 **Misconceptions:**
@@ -331,6 +401,10 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "werden im Anamnesebogen, im Pflegebericht oder in einem speziellen Screening oder Assessment dokumentiert"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die Dokumentation der objektiven Daten"
+- Quelle: `dnqp-standards-index/ernaehrungsmanagement.txt`
+- Zitat: "Ein individueller Maßnahmenplan zur Sicherung einer bedürfnisorientierten und bedarfsgerechten Ernährung liegt vor"
 **Praxisfehler:** Nur "Patient isst wenig" dokumentieren — ohne Score, Ursachen, Maßnahmen und Evaluationstermin ist die Doku für Kollegen nicht handlungsleitend.
 
 **Misconceptions:**
