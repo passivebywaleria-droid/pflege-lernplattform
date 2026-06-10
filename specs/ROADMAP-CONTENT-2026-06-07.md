@@ -110,7 +110,7 @@ Gold-Standard existiert (16/16), Baseline gemessen, CE-02 faktentreue-PASS (21/2
 **Ziel:** Eine vollständige, quellengebundene CE als Blaupause. Heute 65 % (~65 h von ~99 h).
 
 ### Schritte
-- **3.1 Fehlende 21 Kernfakten-Dateien** für CE-02-Themen generieren — gehärtete Pipeline, parallel (1 Agent/Thema), je Verifizierer-PASS.
+- **3.1 ✅ CE-02 Kernfakten KOMPLETT (2026-06-10):** 25/25 Themen quellengebunden, **353 Fakten, 353 verifizierte Verbatim-Belege**, 0 Re-Verify-Fehler. Via 4 überwachte Agenten-Batches (gehärtete Pipeline, --check-file als Gate), jeder Batch unabhängig re-verifiziert. 8 ehrliche „⚠️ Quelle beschaffen" statt Erfindung (SBAR/ISBAR/Bristol/Refeeding/Omphalitis/Heparin-Technik/Diarrhö-Klassif. — nicht in recherche/).
 - **3.2 Content-Lücke schließen (+34 h):** zusätzliche Steps/Blickwinkel/Fälle pro Thema bis Ziel ~99 h. Abundanz in der Darbietungs-Schicht (Zwei-Schichten-Prinzip), Fakten bleiben endlich.
 - **3.3 Inline-Wissen v2 + Karteikarten** über alle 10 Situationen vollständig (Anker + Spektrum, Auto-Karteikarten).
 - **3.4 Voll-Validierung:** Pflege-Validator (Plan+Code) + Faktentreue + Dozentin-Stichprobe + measure-content (Ziel ≥ 99 h).
