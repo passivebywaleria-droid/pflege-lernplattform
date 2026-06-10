@@ -81,10 +81,12 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
 **Bloom-Potential:** 3-4
-**Primärquelle:** (AWMF S3-Leitlinie VTE 2015, Update 2025; Barbar S. et al., Padua Prediction Score, J Thromb Haemost 2010; Caprini JA., Dis Mon 2005)
+**Primärquelle:** (AWMF S3-Leitlinie Prophylaxe der venösen Thromboembolie (VTE), Version 4.1, 2025; Barbar S. et al., Padua Prediction Score, J Thromb Haemost 2010; Caprini JA., Dis Mon 2005)
 **Beleg:**
-- Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Zur systematischen Risikoeinschätzung gibt es verschiedene Assessmentinstrumente und Skalen"
+- Quelle: `leitlinien-volltext/awmf-vte-prophylaxe.txt`
+- Zitat: "Die Einschätzung des VTE-Risikos auf der Basis von expositionellen und dispositionellen Risikofaktoren sollte zur Einteilung in eine von drei Risikogruppen"
+- Zitat: "Instrumente zur Risikostratifizierung – sog. „Risk Assessment Models“ – können bei der Evaluation des individuellen VTE-Risikos hilfreich sein."
+- Zitat: "validierter RAMs wie des Caprini-, des Padua- oder des IMPROVE-Score"
 **Praxisfehler:** Scores werden nicht dokumentiert oder nur einmalig bei Aufnahme erhoben — Re-Assessment bei Zustandsänderung fehlt.
 
 **Misconceptions:**
@@ -101,8 +103,10 @@
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Maßnahme (Basismaßnahme)
 **Bloom-Potential:** 3-4
-**Primärquelle:** (AWMF S3-Leitlinie VTE, Update 2025; Österreichische Ärztezeitung 2024: "Thromboseprophylaxe — Frühmobilisation maßgeblich"; Cochrane-Review zu früher Mobilisation)
+**Primärquelle:** (AWMF S3-Leitlinie VTE, Version 4.1, 2025; Österreichische Ärztezeitung 2024: "Thromboseprophylaxe — Frühmobilisation maßgeblich"; Cochrane-Review zu früher Mobilisation)
 **Beleg:**
+- Quelle: `leitlinien-volltext/awmf-vte-prophylaxe.txt`
+- Zitat: "Allgemeine Basismaßnahmen sind Frühmobilisation, Bewegungsübungen und Anleitung zu Eigenübungen. Diese sollten regelmäßig bei allen Patienten zur Anwendung kommen."
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Frühmobilisation ist jedoch maßgeblich für den Operationserfolg und die Thromboseprophylaxe"
 **Praxisfehler:** "Schonung nach OP" wird zu lang verordnet oder von Pflege zögerlich umgesetzt — führt zu vermeidbaren Thrombosen.
@@ -122,8 +126,11 @@
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Maßnahme + Pflege-Beobachtung
 **Bloom-Potential:** 3-5
-**Primärquelle:** (AWMF S3-Leitlinie VTE, Update 2025; Fachinformationen Enoxaparin/Rivaroxaban; AMBOSS Therapeutische Antikoagulation)
+**Primärquelle:** (AWMF S3-Leitlinie VTE, Version 4.1, 2025; Fachinformationen Enoxaparin/Rivaroxaban; AMBOSS Therapeutische Antikoagulation)
 **Beleg:**
+- Quelle: `leitlinien-volltext/awmf-vte-prophylaxe.txt`
+- Zitat: "Zur medikamentösen VTE-Prophylaxe sollten vorzugsweise Heparine, Fondaparinux, Apixaban, Rivaroxaban, Dabigatran oder Acetylsalicylsäure eingesetzt werden."
+- Zitat: "Die Risiken für die Entwicklung einer Heparin-induzierten Thrombozytopenie (HIT) bzw. HIT-assoziierter VTE-Ereignisse sind unter NMH signifikant niedriger als unter UFH"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "kann es zu einem heparininduzierten Abfall der Blutplättchen (heparininduzierte Thrombozytopenie, HIT) kommen"
 **Praxisfehler:** Pflege dokumentiert Injektion ohne Beobachtungszeichen; Blutungen werden erst spät erkannt.
@@ -143,7 +150,7 @@
 **Wissensart:** Handlung (Technik)
 **Bloom-Potential:** 3-4
 **Primärquelle:** (Fachinformation Enoxaparin/Dalteparin; Pflegeleitlinie Thromboseprophylaxe UKGM; AMBOSS Antikoagulation)
-**Beleg:** ⚠️ Quelle beschaffen (Fachinformation Enoxaparin/Dalteparin bzw. Pflege heute Kap. Injektionen / s.c.-Injektionstechnik — die detaillierte Technik mit Bauchnabel-Abstand, Hautfalte, Nicht-Aspirieren, Luftblock und Nicht-Reiben ist im vorliegenden Pflege-heute-Volltext nicht verbatim enthalten)
+**Beleg:** ⚠️ Quelle beschaffen (Fachinformation Enoxaparin/Dalteparin bzw. Pflege heute Kap. Injektionen / s.c.-Injektionstechnik). Die AWMF-S3-Leitlinie VTE (2025) wurde geprüft: Sie behandelt NMH/UFH nur pharmakologisch (Wirkstoffwahl, Bioverfügbarkeit bei Subkutangabe, Nebenwirkungen wie Hämatome/Spättypallergie an Injektionsstellen) — die konkrete pflegerische s.c.-Injektionstechnik mit Bauchnabel-Abstand, Hautfalte, Nicht-Aspirieren, Luftblock und Nicht-Reiben ist NICHT verbatim enthalten. Auch im vorliegenden Pflege-heute-Volltext nicht enthalten. ⚠️ bleibt bis Fachinformation/Pflege-Standard lokal verfügbar.
 **Praxisfehler:** Hautfalte wird losgelassen vor Injektions-Ende; Luftbläschen wird entfernt; aspiriert wird trotz Fertigspritze.
 
 **Misconceptions:**
@@ -155,15 +162,17 @@
 
 ### F-08: MTPS — Medizinische Thromboseprophylaxe-Strümpfe
 
-**Fakt:** MTPS (Medizinische Thromboseprophylaxe-Strümpfe) sind Kompressionsstrümpfe mit definiertem Druckverlauf (höchster Druck am Knöchel, abnehmend nach proximal). Sie aktivieren den venösen Rückfluss. Die aktuelle AWMF S3-Leitlinie sieht MTPS **kritischer als früher**: Zusatznutzen zu medikamentöser Prophylaxe ist nicht eindeutig belegt (z.B. nach Hüft-TEP, nach Schlaganfall). **Klare Indikation nur noch**, wenn medikamentöse Prophylaxe kontraindiziert ist (z.B. Blutungsrisiko). Korrekte Anlage: morgens vor dem Aufstehen, faltenfrei, bis zum Oberschenkel (oder wadenlang — beide Formen gelten als gleichwertig).
+**Fakt:** MTPS (Medizinische Thromboseprophylaxe-Strümpfe) sind Kompressionsstrümpfe mit definiertem Druckverlauf (höchster Druck am Knöchel, abnehmend nach proximal). Sie aktivieren den venösen Rückfluss. **Wichtig (AWMF S3 VTE 2025):** Basismaßnahmen und physikalische Maßnahmen — also auch MTPS — sollen eine *indizierte* medikamentöse VTE-Prophylaxe NICHT ersetzen. Bei mittlerem/hohem Risiko und Kontraindikation gegen Medikamente sind physikalische Maßnahmen indiziert, dabei wird die IPK gegenüber den MTPS bevorzugt. MTPS *zusätzlich* zur medikamentösen Prophylaxe werden nicht explizit empfohlen (kein klar belegter Zusatznutzen, vermehrt Hautläsionen). Korrekte Anlage: morgens vor dem Aufstehen, faltenfrei, bis zum Oberschenkel (oder wadenlang — beide Formen gelten als gleichwertig).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme (physikalische Prophylaxe)
 **Bloom-Potential:** 3-4
-**Primärquelle:** (AWMF S3-Leitlinie VTE 2015, Update 2025; Rabe E. et al., Medizinische Thromboseprophylaxestrümpfe, Phlebologie 2011; BDC-Artikel "Wirksamkeit und Einsetzbarkeit von Thromboseprophylaxestrümpfen")
+**Primärquelle:** (AWMF S3-Leitlinie VTE, Version 4.1, 2025; Rabe E. et al., Medizinische Thromboseprophylaxestrümpfe, Phlebologie 2011; BDC-Artikel "Wirksamkeit und Einsetzbarkeit von Thromboseprophylaxestrümpfen")
 **Beleg:**
-- Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Die alleinige Wirksamkeit von medizinischen Thromboseprophylaxestrümpfen zur Vorbeugung einer Thrombose ist nicht nachgewiesen"
+- Quelle: `leitlinien-volltext/awmf-vte-prophylaxe.txt`
+- Zitat: "Basismaßnahmen und physikalische Maßnahmen sollen eine indizierte medikamentöse VTE-Prophylaxe nicht ersetzen."
+- Zitat: "Bei Patienten mit mittlerem oder hohem VTE-Risiko und Kontraindikationen gegen eine medikamentöse VTE-Prophylaxe sollen physikalische Maßnahmen, bevorzugt die intermittierende pneumatische Kompression (IPK), zur Anwendung kommen."
+- Zitat: "werden MTPS zusätzlich zur medikamentösen VTE-Prophylaxe nicht explizit empfohlen"
 **Praxisfehler:** MTPS werden bei allen Patienten angelegt ohne Indikations-Prüfung; falsche Größe verursacht Abschnürung.
 
 **Misconceptions:**
@@ -180,10 +189,14 @@
 **Prüfungsrelevanz:** sehr hoch (Patientensicherheit!)
 **Wissensart:** Kontraindikation (Recht + Handlung)
 **Bloom-Potential:** 4-5
-**Primärquelle:** (AWMF S3-Leitlinie VTE, Update 2025; Draco-Leitlinie Kompressionstherapie; DGP Leitlinie Kompressionstherapie 2018)
+**Primärquelle:** (AWMF S3-Leitlinie VTE, Version 4.1, 2025; Draco-Leitlinie Kompressionstherapie; DGP Leitlinie Kompressionstherapie 2018)
 **Beleg:**
+- Quelle: `leitlinien-volltext/awmf-vte-prophylaxe.txt`
+- Zitat: "Limitationen in der Anwendung physikalischer Maßnahmen können sich ergeben durch eine schwere periphere arterielle Verschlusskrankheit (PAVK) mit kritischer Extremitätenischämie"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "bei Werten < 0,9 ist von einer peripheren arteriellen Verschlusskrankheit auszugehen"
+
+> ⚠️ Hinweis: Die AWMF-S3-Leitlinie VTE (2025) nennt die schwere PAVK mit kritischer Extremitätenischämie als Limitation physikalischer Maßnahmen, gibt aber KEINE konkreten ABI-Schwellenwerte (z.B. ABI < 0,5; 0,5–0,9) vor. Diese Schwellen stammen aus der Kompressionstherapie-Literatur (DGP/Draco) und sind im vorliegenden AWMF-Volltext nicht verbatim enthalten — bis zur lokalen Verfügbarkeit der Kompressions-Leitlinie als ⚠️ Detail-Werte zu führen.
 **Praxisfehler:** MTPS werden ohne Prüfung der arteriellen Durchblutung angelegt; ABI nicht bekannt, kein Nachfragen.
 
 **Misconceptions:**
@@ -200,8 +213,10 @@
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme (physikalische Prophylaxe)
 **Bloom-Potential:** 2-3
-**Primärquelle:** (AWMF S3-Leitlinie VTE, Update 2025; CLOTS 3-Studie zur IPK nach Schlaganfall, Lancet 2013)
+**Primärquelle:** (AWMF S3-Leitlinie VTE, Version 4.1, 2025; CLOTS 3-Studie zur IPK nach Schlaganfall, Lancet 2013)
 **Beleg:**
+- Quelle: `leitlinien-volltext/awmf-vte-prophylaxe.txt`
+- Zitat: "Die intermittierende pneumatische Kompression (IPK) imitiert die Arbeit der Wadenmuskelpumpe beim immobilen Patienten."
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "knie- oder oberschenkellange Beinmanschetten angelegt. Diese füllen sich zyklisch und wellenartig mit Luft und entleeren sich dann wieder, so wird der venöse Rückfluss unterstützt"
 **Praxisfehler:** IPK wird angelegt bei akuter TVT (kontraindiziert, Emboliegefahr!) oder ohne pAVK-Abklärung.

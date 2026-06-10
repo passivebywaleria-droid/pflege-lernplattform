@@ -60,8 +60,11 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakten
 **Bloom-Potential:** 2
-**Primärquelle:** (KRINKO 2015; Pflege heute Kap. 8.1.5)
+**Primärquelle:** (KRINKO 2015 — RKI; Pflege heute Kap. 8.1.5)
 **Beleg:**
+- Quelle: `leitlinien-volltext/rki-krinko-harnwegsinfektion.txt`
+- Zitat: "Für den Einmalkatheterismus werden Katheter aus PVC verwendet"
+- Zitat: "ist daher für die transurethrale und suprapubische Langzeitdrainage am besten geeignet"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Katheter zur Langzeitdrainage"
 - Zitat: "1 Charrière entspricht"
@@ -82,8 +85,11 @@
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Entscheidung
 **Bloom-Potential:** 4 (Analysieren, Bewerten)
-**Primärquelle:** (KRINKO 2015; CDC/HICPAC 2009; Pflege heute Kap. 8.1.5)
+**Primärquelle:** (KRINKO 2015 — Prävention Katheter-assoziierter Harnwegsinfektionen, RKI; CDC/HICPAC 2009; Pflege heute Kap. 8.1.5)
 **Beleg:**
+- Quelle: `leitlinien-volltext/rki-krinko-harnwegsinfektion.txt`
+- Zitat: "jede Anwendung eines Blasenkatheters von einer strengen, medizinisch begründeten und ärztlich angeord"
+- Zitat: "die Verordnung nur aufgrund einer Harninkontinenz des Patienten"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Harninkontinenz ist keine Indikation für die Anlage eines transurethralen Dauerkatheters"
 - Zitat: "Eine Harnkatheterisierung sollte immer nur nach strenger"
@@ -103,8 +109,11 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Handlung
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (KRINKO 2015; CDC/HICPAC 2009; Pflege heute Kap. 8.1.5)
+**Primärquelle:** (KRINKO 2015 — RKI; CDC/HICPAC 2009; Pflege heute Kap. 8.1.5)
 **Beleg:**
+- Quelle: `leitlinien-volltext/rki-krinko-harnwegsinfektion.txt`
+- Zitat: "Das Legen eines Katheters erfolgt unter aseptischen Bedingungen."
+- Zitat: "den Ballon eines Blasenverweilkatheters mit sterilem Aqua dest. nach Herstellerangaben"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Im Idealfall legen zwei Pflegende gemeinsam einen transurethralen Blasenkatheter"
 - Zitat: "Spritze mit 10 ml steriler Flüssigkeit zum"
@@ -165,8 +174,11 @@
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Zusammenhang
 **Bloom-Potential:** 4 (Analysieren)
-**Primärquelle:** (KRINKO 2015; RKI/KISS; Pflege heute Kap. 30 / 8.1.5)
+**Primärquelle:** (KRINKO 2015 — RKI; RKI/KISS; Pflege heute Kap. 30 / 8.1.5)
 **Beleg:**
+- Quelle: `leitlinien-volltext/rki-krinko-harnwegsinfektion.txt`
+- Zitat: "Der transurethrale Dauerkatheter ist somit der bedeutendste Risikofaktor für eine aszendierende Harnwegsinfektion"
+- Zitat: "E. coli (43,6 %"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Harnwegsinfektionen, v. a. als Folge von Harnableitungen"
 - Zitat: "E. coli ist der häufigste Erreger von Harnwegsinfektionen überhaupt"
@@ -186,8 +198,11 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Handlung
 **Bloom-Potential:** 3-4
-**Primärquelle:** (KRINKO 2015; CDC/HICPAC 2009; Pflege heute Kap. 8.1.5)
+**Primärquelle:** (KRINKO 2015 — RKI; CDC/HICPAC 2009; Pflege heute Kap. 8.1.5)
 **Beleg:**
+- Quelle: `leitlinien-volltext/rki-krinko-harnwegsinfektion.txt`
+- Zitat: "Es sind nur sterile und geschlossene Harnableitungssysteme zu verwenden."
+- Zitat: "den Katheter und den Drainageschlauch grundsätzlich, außer bei"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "akribische Infektionsprophylaxe und"
 - Zitat: "Verschleppen pathogener Keime von der Harnröhrenmündung in die Blase"
@@ -206,8 +221,12 @@
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Handlung
 **Bloom-Potential:** 3
-**Primärquelle:** (KRINKO 2015; CDC/HICPAC 2009; Pflege heute Kap. 8.1.5)
+**Primärquelle:** (KRINKO 2015 — RKI; CDC/HICPAC 2009; Pflege heute Kap. 8.1.5)
 **Beleg:**
+- Quelle: `leitlinien-volltext/rki-krinko-harnwegsinfektion.txt`
+- Zitat: "den Auffangbeutel frei hängend ohne Bodenkontakt und stets unter Blasenniveau anzubringen"
+- Zitat: "eine Abknickung der Harnableitung (Katheter und Drainageschlauch) zu vermeiden"
+- Zitat: "den Auffangbeutel vor jedem Transport des Patienten zu leeren"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Katheter und Urinauffangsystem nicht voneinander trennen und Urinauffangbeutel nicht routinemäßig wechseln"
 - Zitat: "Katheterschlauch und Urinbeutel nicht über Blasenniveau anheben"
@@ -228,8 +247,11 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Handlung
 **Bloom-Potential:** 3
-**Primärquelle:** (KRINKO 2015; CDC/HICPAC 2009; Pflege heute Kap. 8.1.5)
+**Primärquelle:** (KRINKO 2015 — RKI; CDC/HICPAC 2009; Pflege heute Kap. 8.1.5)
 **Beleg:**
+- Quelle: `leitlinien-volltext/rki-krinko-harnwegsinfektion.txt`
+- Zitat: "die Reinigung des Genitales mit Trinkwasser und Seifenlotion ohne Zusatz antiseptischer Substanzen"
+- Zitat: "Inkrustationen des Katheters im Bereich der Urethraöffnung schonend zu entfernen"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Eine routinemäßige Schleimhautdesinfektion ist nicht sinnvoll"
 - Zitat: "Harnröhreneingang und Katheter"
@@ -267,8 +289,12 @@
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Entscheidung
 **Bloom-Potential:** 4
-**Primärquelle:** (KRINKO 2015; CDC/HICPAC 2009; Pflege heute Kap. 8.1.5)
+**Primärquelle:** (KRINKO 2015 — RKI; CDC/HICPAC 2009; Pflege heute Kap. 8.1.5)
 **Beleg:**
+- Quelle: `leitlinien-volltext/rki-krinko-harnwegsinfektion.txt`
+- Zitat: "Katheter sollen so früh wie möglich entfernt werden."
+- Zitat: "den Blasenverweilkatheter aus Gründen der Infektionsprävention nicht routinemäßig in festen Intervallen zu"
+- Zitat: "auf ein Blasentraining vor Entfernung des Katheters grundsätzlich zu verzichten"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ein routinemäßiger Wechsel wird nicht mehr empfohlen"
 - Zitat: "Im Vordergrund der Überlegung steht immer die Überprüfung der weiteren Notwendigkeit der Harnableitung"
@@ -289,8 +315,10 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Entscheidung
 **Bloom-Potential:** 4
-**Primärquelle:** (KRINKO 2015; EAUN 2021; Pflege heute Kap. 8.1.5)
+**Primärquelle:** (KRINKO 2015 — RKI; EAUN 2021; Pflege heute Kap. 8.1.5)
 **Beleg:**
+- Quelle: `leitlinien-volltext/rki-krinko-harnwegsinfektion.txt`
+- Zitat: "ist ein intermittieren"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Kondomurinale für den Mann"
 - Zitat: "höchstens 6-mal am Tag katheterisieren"
@@ -310,8 +338,10 @@
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Handlung
 **Bloom-Potential:** 3
-**Primärquelle:** (§ 630a BGB; KRINKO 2015; Pflege heute Kap. 33.1)
+**Primärquelle:** (§ 630a BGB; KRINKO 2015 — RKI; Pflege heute Kap. 33.1)
 **Beleg:**
+- Quelle: `leitlinien-volltext/rki-krinko-harnwegsinfektion.txt`
+- Zitat: "auf regelmäßige Spülungen der Harnblase bei liegendem Katheter zu verzichten"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Nach Arztanordnung wird der Katheter mit physiologische Kochsalzlösung und Blasenspritze"
 - Zitat: "Die Spülgeschwindigkeit wird vom Arzt angeordnet"
