@@ -20,6 +20,9 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Definition
 **Primärquelle:** (NPUAP/EPUAP/PPPIA, International Guideline, 2014; DNQP Expertenstandard Dekubitusprophylaxe, 2. Aktualisierung, 2017)
+**Beleg:**
+- Quelle: `dnqp-standards-index/dekubitusprophylaxe.txt`
+- Zitat: "Ein Dekubitus ist eine lokal begrenzte Schädigung der Haut und/oder des darunter liegenden Gewebes, typischerweise über knöchernen Vorsprüngen, infolge von Druck oder Druck in Verbindung mit Scherkräften"
 **Praxisfehler:** Schüler verwechseln Dekubitus häufig mit Intertrigo (Wundscheuern in Hautfalten). Intertrigo entsteht durch Feuchtigkeit und Reibung in Falten — nicht durch Auflagedruck auf Knochenvorsprüngen.
 
 ---
@@ -31,6 +34,9 @@
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Fakt
 **Primärquelle:** (DNQP, 2017)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die Versorgung des Gewebes mit Sauerstoff und Nährstoffen sowie die Entsorgung von Kohlendioxid und Stoffwechselendprodukten werden unterbrochen"
 **Transfer:** [Transfer] Wie bei einem Gartenschlauch: wird er abgeknickt, fließt kein Wasser mehr. Je länger der Knick, desto größer der Schaden am Schlauch.
 
 ---
@@ -42,6 +48,9 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Primärquelle:** (DNQP, 2017)
+**Beleg:**
+- Quelle: `dnqp-standards-index/dekubitusprophylaxe.txt`
+- Zitat: "erhöhten und/oder verlängerten Einwirkung von Druck und/oder Scherkräften"
 **Praxisfehler:** Schüler vergessen beim Hochziehen im Bett oft die Scherkräfte. Statt den Patienten zu ziehen, sollten sie den Oberkörper erst drehen lassen und scherkraftarme Transfertechniken (Kinästhetik) nutzen.
 
 ---
@@ -53,6 +62,9 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
 **Primärquelle:** (DNQP, 2017)
+**Beleg:**
+- Quelle: `dnqp-standards-index/dekubitusprophylaxe.txt`
+- Zitat: "medizinische Hilfsmittel oder Geräte, welche von außen auf die Haut Druck ausüben, ein Dekubitusrisiko dar"
 **Praxisfehler:** Schüler denken bei Dekubitusrisiko nur an bettlägerige ältere Menschen. Aber auch Neugeborene auf Intensivstationen sind gefährdet — durch aufgeklebte Elektroden und Sonden auf ihrer unreifen Haut.
 
 ---
@@ -64,6 +76,9 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
 **Primärquelle:** (EPUAP/NPUAP/PPPIA, 2014; DNQP, 2017)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Kategorie I: Nicht wegdrückbare, umschriebene Hautrötung bei intakter"
 **Praxisfehler:** Schüler verwechseln häufig Kategorie II mit Kategorie III. Entscheidend: bei Kategorie II ist der Defekt oberflächlich und ohne Beläge. Sobald Nekrosen oder Wundtaschen sichtbar werden, ist es mindestens Kategorie III.
 
 ---
@@ -75,6 +90,9 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Primärquelle:** (DNQP, 2017)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "In Rückenlage: Kreuz- und Steißbein, Fersen, Schultern, Hinterkopf, Wirbelsäule und Ellenbogen"
 **Transfer:** [Transfer] Stell dir vor, du sitzt auf einem harten Holzstuhl. Nach einer Stunde tut der Sitzknochen weh — genau dort, wo wenig Polster zwischen Knochen und Stuhl ist. Dasselbe passiert bei bettlägerigen Menschen, nur dass sie sich nicht einfach umsetzen können.
 
 ---
@@ -86,6 +104,9 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
 **Primärquelle:** (EPUAP/NPUAP/PPPIA, 2014; DNQP, 2017)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Bleibt die Rötung nach dem Fingerdruck bestehen, liegt bereits ein Dekubitus Kategorie I vor"
 **Praxisfehler:** Bei dunkler Hautfarbe ist die Rötung oft nicht sichtbar. Schüler verlassen sich dann fälschlich auf den Fingertest allein. Stattdessen muss hier auf Temperaturunterschiede (kälter oder wärmer als Umgebung), Verhärtung und Schmerzempfindlichkeit geachtet werden.
 
 ---
@@ -97,6 +118,9 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
 **Primärquelle:** (DNQP, 2017; Braden & Bergstrom, 1987)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "erfolgt eine klinische Einschätzung durch die Pflegefachperson"
 **Praxisfehler:** Schüler verlassen sich zu sehr auf den Zahlenwert der Skala und vergessen die klinische Gesamtbeurteilung. Ein Braden-Wert von 18 bedeutet nicht automatisch "kein Risiko" — wenn der Patient gerade von einer 6-stündigen OP kommt, kann sich die Situation in Stunden ändern.
 
 ---
@@ -108,6 +132,9 @@
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Assessment
 **Primärquelle:** (DNQP, 2017; Coleman et al., 2014)
+**Beleg:**
+- Quelle: `dnqp-standards-index/dekubitusprophylaxe.txt`
+- Zitat: "ein initiales Screening sowie eine differenzierte Beurteilung des Dekubitusrisikos"
 
 ---
 
@@ -118,6 +145,9 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
 **Primärquelle:** (DNQP, 2017)
+**Beleg:**
+- Quelle: `dnqp-standards-index/dekubitusprophylaxe.txt`
+- Zitat: "Die Pflegefachkraft fördert soweit wie möglich die Eigenbewegung des"
 **Praxisfehler:** Das starre "2-Stunden-Umlagern" ist veraltet und wird in der Praxis trotzdem noch häufig als Regel gelehrt. Tatsächlich muss das Intervall individuell bestimmt werden — manche Patienten brauchen alle 30 Minuten eine Positionsänderung, andere kommen mit 6 Stunden aus, wenn sie genug Eigenbewegung haben.
 
 ---
@@ -129,6 +159,9 @@
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Fakt
 **Primärquelle:** (DNQP, 2017)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Maßnahmen geplant, z. B. Mikrobewegungen und 30°-Positionierung"
 
 ---
 
@@ -139,6 +172,9 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
 **Primärquelle:** (DNQP, 2017)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Besonders gefährdete Körperstellen, z. B. die Fersen, positionieren Pflegende frei"
 
 ---
 
@@ -149,6 +185,9 @@
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme
 **Primärquelle:** (DNQP, 2017)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Ringförmige Hilfsmittel, Wattepolster oder -verbände, luft- oder wassergefüllte Handschuhe gelten als ungeeignet"
 **Praxisfehler:** Schüler setzen gerne Sitzringe bei Steißbein-Problemen ein. Das ist kontraproduktiv: Ringe erhöhen den Druck an den Rändern und verschlechtern die Durchblutung im Zentrum. Gleiches gilt für Wattepolster — sie bieten keinen stabilen Halt und verteilen den Druck nicht gleichmäßig.
 
 ---
@@ -160,6 +199,9 @@
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme
 **Primärquelle:** (DNQP, 2017)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Bei dekubitusgefährdeten Patienten kontrollieren sie die Haut nach individuell zu bestimmenden Intervallen"
 
 ---
 
@@ -170,6 +212,9 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Primärquelle:** (DNQP, Expertenstandard Dekubitusprophylaxe, 2. Aktualisierung, 2017)
+**Beleg:**
+- Quelle: `dnqp-standards-index/dekubitusprophylaxe.txt`
+- Zitat: "Jeder dekubitusgefährdete Patient/Bewohner erhält eine Prophylaxe, die die Entstehung eines Dekubitus verhindert"
 
 ---
 
@@ -180,4 +225,7 @@
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Komplikation
 **Primärquelle:** (DNQP, 2017; Theisen et al., 2012)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Der Dekubitus ist eine der am meisten gefürchteten Komplikationen längerer Bewegungsarmut"
 **Transfer:** [Transfer] Ein Dekubitus ist wie ein Loch im Dach: Je länger man wartet, desto teurer und aufwendiger wird die Reparatur. Früh erkannt (Kategorie I) ist es eine kleine Stelle — übersehen kann es bis auf den Knochen gehen.

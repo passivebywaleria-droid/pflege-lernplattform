@@ -21,6 +21,9 @@
 **Wissensart:** Definition + Abgrenzung
 **Bloom-Potential:** 2-4 (Verstehen, Anwenden, Analysieren)
 **Primärquelle:** (Hatch/Maietta, Kinaesthetik-Grundkonzept); (DNQP 2020 — Expertenstandard Mobilität empfiehlt Kinästhetik explizit)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "durch die Vermeidung von unphysiologischem Heben und Tragen zu betreiben"
 **Praxisfehler:** Routine-Transfers werden weiterhin hebend durchgeführt, weil es "schneller geht" — langfristig Rückenschäden + Deaktivierung des Patienten.
 **Transfer:** Wie beim Tanzen: einer führt, einer folgt — aber beide bewegen sich. Wer den Partner trägt, tanzt nicht, er schleppt.
 
@@ -39,6 +42,9 @@
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 1-2 (Erinnern, Verstehen) auf Übersichtsebene; 4 (Analysieren) bei Anwendung auf Fall
 **Primärquelle:** (Hatch/Maietta, Kinaesthetik-Grundkonzept)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Sechs kinästhetische Konzepte sind die Basis"
 
 **Misconceptions:**
 - `M1`: **"Die 6 Konzepte sind eine Reihenfolge"** — Nein, sie laufen parallel. Jede Bewegung enthält alle 6 Aspekte gleichzeitig.
@@ -54,6 +60,9 @@
 **Wissensart:** Konzept
 **Bloom-Potential:** 2-3
 **Primärquelle:** (Hatch/Maietta); (DNQP 2020 — Kommunikation bei Bewegung)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Das Konzept Interaktion beschreibt die Wechselbeziehung zwischen Patient und Pflegender"
 **Praxisfehler:** Bewegung wird nicht angekündigt, Patient erschrickt, wehrt sich reflexhaft. Eigenbewegung kommt nicht zustande.
 **Transfer:** [Transfer] Wie beim Paartanz: ohne Blickkontakt und spürbare Führung stolpert man übereinander.
 
@@ -71,6 +80,9 @@
 **Wissensart:** Konzept + Handlung
 **Bloom-Potential:** 3-4
 **Primärquelle:** (Hatch/Maietta)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Körpergewicht möglichst über knöcherne Strukturen führen und nicht tragen"
 **Praxisfehler:** Patient wird unter den Achseln gegriffen oder am Oberarm gezogen → Schmerz, Schulterverletzung, Gegenspannung.
 **Transfer:** [Transfer] Beim Umzug hebt man eine Kommode am Korpus, nicht an den Schubladengriffen — sonst brechen sie ab. Am Körper: tragende Knochen, nicht Muskelweichteile.
 
@@ -89,6 +101,9 @@
 **Wissensart:** Konzept
 **Bloom-Potential:** 3-4
 **Primärquelle:** (Hatch/Maietta); (DNQP 2020)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "dass er sein Körpergewicht zum Aufstehen auf die Füße verlagern kann"
 **Praxisfehler:** "Hochziehen" am Arm ohne vorherige Gewichtsverlagerung → Patient hängt wie ein Sack, Pflegekraft ruiniert Rücken.
 **Transfer:** Wer aus einem tiefen Sessel aufstehen will, rutscht erst nach vorn an die Kante — dann klappt's mühelos. Derselbe Trick, nur professionell.
 
@@ -106,6 +121,9 @@
 **Wissensart:** Konzept + Handlung
 **Bloom-Potential:** 3-5
 **Primärquelle:** (Hatch/Maietta)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die zwei Anstrengungsformen sind Ziehen und Drücken"
 **Praxisfehler:** Pflegekraft zieht am Arm, während Patient instinktiv drückt → Gegenspannung, Bewegung blockiert, Patient wird "schwerer".
 
 **Misconceptions:**
@@ -123,6 +141,9 @@
 **Wissensart:** Konzept
 **Bloom-Potential:** 3-4
 **Primärquelle:** (Hatch/Maietta)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Bewegungen am Ort sind z. B. Essen und Trinken, An- und Auskleiden oder Ruhen und Schlafen"
 **Praxisfehler:** Pflegekraft übernimmt die ganze Bewegungssequenz (z.B. Glas heben + Mund öffnen + schlucken anleiten), obwohl der Patient einzelne Teile selbst könnte → Deaktivierung.
 
 **Misconceptions:**
@@ -139,6 +160,9 @@
 **Wissensart:** Konzept + Handlung
 **Bloom-Potential:** 3
 **Primärquelle:** (Hatch/Maietta); (DNQP 2020)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die Pflegenden gestalten die Umgebung eines Patienten derart, dass eine Bewegung so sicher und so einfach wie möglich wird"
 **Praxisfehler:** Bett bleibt nachts ganz tief eingestellt → Pflegekraft arbeitet morgens im gebückten Rücken.
 
 **Misconceptions:**
@@ -155,6 +179,9 @@
 **Wissensart:** Anatomie + Handlung
 **Bloom-Potential:** 2-3
 **Primärquelle:** (Hatch/Maietta)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die sieben Massen sind: Kopf, Brustkorb, Becken, Arme und Beine"
 
 **Misconceptions:**
 - `M1`: **"Taille ist ein guter Griffpunkt"** — Falsch. Taille ist Zwischenraum, Griff dort presst Organe. Stattdessen: Beckenkamm.
@@ -170,6 +197,9 @@
 **Wissensart:** Handlung + Sequenz
 **Bloom-Potential:** 3 (Anwenden), 5 (Bewerten bei Komplikationen)
 **Primärquelle:** (Hatch/Maietta); (DNQP 2020)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Anschließend bittet die Pflegende ihn, die Beine nacheinander aus dem Bett zu schieben"
 **Praxisfehler:** Transfer wird "in einem Ruck" durchgeführt — Patient kommt nicht hinterher, Pflegekraft trägt ihn effektiv.
 
 **Misconceptions:**
@@ -187,6 +217,9 @@
 **Wissensart:** Handlung
 **Bloom-Potential:** 3
 **Primärquelle:** (Hatch/Maietta); (DNQP 2020)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Sie hebt den Patienten nicht an, sondern signalisiert ihm durch Druck auf Rücken und Arm"
 **Praxisfehler:** Patient wird am Arm und an der Schulter gezogen, ohne dass das Bein aufgestellt wird → Pflegekraft hebt effektiv den Brustkorb an, Patient ist passiv.
 
 **Misconceptions:**
@@ -204,6 +237,9 @@
 **Wissensart:** Handlung + Transfer
 **Bloom-Potential:** 4-5 (Analysieren, Bewerten)
 **Primärquelle:** (Hatch/Maietta); (Bobath B./K.); (DNQP 2020)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Beide Konzepte schließen sich nicht aus und können bei der Pflege bewegungs- und wahrnehmungseingeschränkter Menschen kombiniert werden"
 **Praxisfehler:** Betroffene Seite wird ignoriert ("ist ja gelähmt") — führt zu assoziierten Reaktionen und Vernachlässigung.
 
 **Misconceptions:**
@@ -221,6 +257,9 @@
 **Wissensart:** Handlung + Arbeitsschutz
 **Bloom-Potential:** 2-3
 **Primärquelle:** (DNQP 2020); (BGW — Berufsgenossenschaft Gesundheitsdienst, Rückenprävention); (Hatch/Maietta)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Kinaesthetics ist ein kräfteschonendes und sehr physiologisches Konzept und beugt daher möglichen Rückenproblemen wie Bandscheibenschäden vor"
 **Praxisfehler:** Bett bleibt unten eingestellt, weil "es schneller geht" — kurzfristig ja, langfristig Rückenschaden.
 **Transfer:** [Transfer] Wie beim Kistenheben im Umzug: aus den Knien heben, nicht aus dem Rücken. Bei Menschen: dazu noch das Gewicht des Patienten MITNEHMEN, nicht GEGEN sich halten.
 

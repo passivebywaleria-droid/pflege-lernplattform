@@ -21,6 +21,9 @@
 **Wissensart:** Definition + Pathogenese
 **Bloom-Potential:** 1-3
 **Primärquelle:** (Virchow R., Gesammelte Abhandlungen zur wissenschaftlichen Medicin, 1856; AWMF S3-Leitlinie VTE 2015, Update 2025)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die Entstehung eines Thrombus wird vor allem durch drei Risikofaktoren begünstigt (Virchow-Trias)"
 **Praxisfehler:** Schüler nennen nur 2 der 3 Säulen oder verwechseln sie mit Entzündungszeichen.
 
 **Misconceptions:**
@@ -38,6 +41,9 @@
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 2-4
 **Primärquelle:** (AWMF S3-Leitlinie VTE, Update 2025; DGP Leitlinie "Diagnostik und Therapie der Venenthrombose und Lungenembolie")
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Von besonderer klinischer Bedeutung ist die tiefe Venenthrombose (TVT) der Beine"
 **Praxisfehler:** Oberflächliche Phlebitis wird als harmlos abgetan, ohne auf ein mögliches Einwachsen zu achten.
 
 **Misconceptions:**
@@ -55,6 +61,9 @@
 **Wissensart:** Komplikation
 **Bloom-Potential:** 4-6
 **Primärquelle:** (AWMF S3-Leitlinie VTE, Update 2025; ESC Guidelines on Acute Pulmonary Embolism 2019)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "gelangt er mit dem Blutstrom in die Lunge und kann dort als venöse Thromboembolie (VTE) eine lebensbedrohliche Lungenembolie"
 **Praxisfehler:** Leitsymptome werden als Aufregung, Panikattacke oder banale Atemnot fehlgedeutet — Zeitverlust bis zur Notfall-Versorgung.
 **Transfer:** [Transfer] Wie ein Stein, der sich aus einem Stau in der Beinvene löst und in die Lunge geschwemmt wird — wo er einen Stau verursacht, der die Sauerstoffaufnahme blockiert.
 
@@ -73,6 +82,9 @@
 **Wissensart:** Assessment
 **Bloom-Potential:** 3-4
 **Primärquelle:** (AWMF S3-Leitlinie VTE 2015, Update 2025; Barbar S. et al., Padua Prediction Score, J Thromb Haemost 2010; Caprini JA., Dis Mon 2005)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Zur systematischen Risikoeinschätzung gibt es verschiedene Assessmentinstrumente und Skalen"
 **Praxisfehler:** Scores werden nicht dokumentiert oder nur einmalig bei Aufnahme erhoben — Re-Assessment bei Zustandsänderung fehlt.
 
 **Misconceptions:**
@@ -90,6 +102,9 @@
 **Wissensart:** Maßnahme (Basismaßnahme)
 **Bloom-Potential:** 3-4
 **Primärquelle:** (AWMF S3-Leitlinie VTE, Update 2025; Österreichische Ärztezeitung 2024: "Thromboseprophylaxe — Frühmobilisation maßgeblich"; Cochrane-Review zu früher Mobilisation)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die Frühmobilisation ist jedoch maßgeblich für den Operationserfolg und die Thromboseprophylaxe"
 **Praxisfehler:** "Schonung nach OP" wird zu lang verordnet oder von Pflege zögerlich umgesetzt — führt zu vermeidbaren Thrombosen.
 **Transfer:** [Transfer] Wie ein Fluss, der fließen muss, damit er sich nicht staut: Bewegung ist die natürlichste Thromboseprophylaxe.
 
@@ -108,6 +123,9 @@
 **Wissensart:** Maßnahme + Pflege-Beobachtung
 **Bloom-Potential:** 3-5
 **Primärquelle:** (AWMF S3-Leitlinie VTE, Update 2025; Fachinformationen Enoxaparin/Rivaroxaban; AMBOSS Therapeutische Antikoagulation)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "kann es zu einem heparininduzierten Abfall der Blutplättchen (heparininduzierte Thrombozytopenie, HIT) kommen"
 **Praxisfehler:** Pflege dokumentiert Injektion ohne Beobachtungszeichen; Blutungen werden erst spät erkannt.
 
 **Misconceptions:**
@@ -125,6 +143,7 @@
 **Wissensart:** Handlung (Technik)
 **Bloom-Potential:** 3-4
 **Primärquelle:** (Fachinformation Enoxaparin/Dalteparin; Pflegeleitlinie Thromboseprophylaxe UKGM; AMBOSS Antikoagulation)
+**Beleg:** ⚠️ Quelle beschaffen (Fachinformation Enoxaparin/Dalteparin bzw. Pflege heute Kap. Injektionen / s.c.-Injektionstechnik — die detaillierte Technik mit Bauchnabel-Abstand, Hautfalte, Nicht-Aspirieren, Luftblock und Nicht-Reiben ist im vorliegenden Pflege-heute-Volltext nicht verbatim enthalten)
 **Praxisfehler:** Hautfalte wird losgelassen vor Injektions-Ende; Luftbläschen wird entfernt; aspiriert wird trotz Fertigspritze.
 
 **Misconceptions:**
@@ -142,6 +161,9 @@
 **Wissensart:** Maßnahme (physikalische Prophylaxe)
 **Bloom-Potential:** 3-4
 **Primärquelle:** (AWMF S3-Leitlinie VTE 2015, Update 2025; Rabe E. et al., Medizinische Thromboseprophylaxestrümpfe, Phlebologie 2011; BDC-Artikel "Wirksamkeit und Einsetzbarkeit von Thromboseprophylaxestrümpfen")
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die alleinige Wirksamkeit von medizinischen Thromboseprophylaxestrümpfen zur Vorbeugung einer Thrombose ist nicht nachgewiesen"
 **Praxisfehler:** MTPS werden bei allen Patienten angelegt ohne Indikations-Prüfung; falsche Größe verursacht Abschnürung.
 
 **Misconceptions:**
@@ -159,6 +181,9 @@
 **Wissensart:** Kontraindikation (Recht + Handlung)
 **Bloom-Potential:** 4-5
 **Primärquelle:** (AWMF S3-Leitlinie VTE, Update 2025; Draco-Leitlinie Kompressionstherapie; DGP Leitlinie Kompressionstherapie 2018)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "bei Werten < 0,9 ist von einer peripheren arteriellen Verschlusskrankheit auszugehen"
 **Praxisfehler:** MTPS werden ohne Prüfung der arteriellen Durchblutung angelegt; ABI nicht bekannt, kein Nachfragen.
 
 **Misconceptions:**
@@ -176,6 +201,9 @@
 **Wissensart:** Maßnahme (physikalische Prophylaxe)
 **Bloom-Potential:** 2-3
 **Primärquelle:** (AWMF S3-Leitlinie VTE, Update 2025; CLOTS 3-Studie zur IPK nach Schlaganfall, Lancet 2013)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "knie- oder oberschenkellange Beinmanschetten angelegt. Diese füllen sich zyklisch und wellenartig mit Luft und entleeren sich dann wieder, so wird der venöse Rückfluss unterstützt"
 **Praxisfehler:** IPK wird angelegt bei akuter TVT (kontraindiziert, Emboliegefahr!) oder ohne pAVK-Abklärung.
 
 **Misconceptions:**
@@ -193,6 +221,9 @@
 **Wissensart:** Symptome + Diagnostik
 **Bloom-Potential:** 4-5 (Analysieren, Bewerten)
 **Primärquelle:** (AWMF S2k-Leitlinie Venenthrombose und Lungenembolie 2015/2017; IHAMZ-Guideline TVT 2024; DGP)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die Beschwerden können sehr ausgeprägt sein, insbesondere bei bettlägerigen Patienten aber auch gering"
 **Praxisfehler:** Pflege prüft Homans-Zeichen als "Standard" — auslösend kann Emboliegefahr sein (Thrombusteile lösen!); klinisch stumme TVT wird verpasst.
 **Transfer:** [Transfer] Wie in der alten Medizin, wo man dem Patienten auf die Stirn gefühlt hat um Fieber zu messen — heute haben wir Thermometer. Homans ist wie Stirnfühlen: ungenau, kann Schaden machen.
 
@@ -211,6 +242,9 @@
 **Wissensart:** Komplikation + Notfall-Erkennung
 **Bloom-Potential:** 5-6 (Bewerten, Entscheiden)
 **Primärquelle:** (AWMF S3-Leitlinie VTE, Update 2025; ESC Guidelines Acute Pulmonary Embolism 2019; AMBOSS Lungenembolie)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Typisch sind plötzliche Atemnot, schnelle Atmung, atemabhängige Thoraxschmerzen und Husten, evtl. mit blutigem Sputum"
 **Praxisfehler:** Symptome werden als Panikattacke oder Angst fehlgedeutet; Patient wird allein gelassen oder nicht priorisiert.
 **Transfer:** [Transfer] Wie ein Alarm im Haus — plötzliche Atemnot bei Risikopatient ist die Brandmeldung. Du schickst niemanden hin zum "Nachsehen", du rufst sofort die Feuerwehr.
 
@@ -229,6 +263,9 @@
 **Wissensart:** Rolle + Verantwortung
 **Bloom-Potential:** 4-6
 **Primärquelle:** (§ 4 PflBG — vorbehaltene Tätigkeiten; AWMF S3-Leitlinie VTE; DNQP-Leitlinien pflegerische Beobachtung)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "halten die Pflegenden vor der Mobilisation Rücksprache mit dem Arzt"
 **Praxisfehler:** Pflege wartet auf Arzt-Visite statt sofort zu melden; Beobachtungen werden nicht dokumentiert.
 
 **Misconceptions:**
