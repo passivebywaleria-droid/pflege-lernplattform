@@ -160,12 +160,12 @@
 
 ### F-08: Vitamin D — Sonderstellung und Mangel
 
-**Fakt:** Vitamin D (Calciferol) nimmt eine Sonderstellung ein: Es kann im Körper unter Sonnenlicht-Einfluss gebildet werden — Pflege heute spricht von „fehlender Bildung im Körper" als Supplementierungs-Indikation. Funktionen: Knochenbildung, Aufnahme von Kalzium und Phosphaten (Knochen), Muskelfunktion (Sturzprävention). Vitamin D (v.a. bei älteren Menschen) ist eine der wenigen relevanten Mangel-Ausnahmen in Deutschland. Empfehlung bei fehlender Eigensynthese (Pflege heute, Osteoporoseprävention): **Vitamin D 10–20 µg/Tag**. Risikogruppen: Ältere, Pflegeheimbewohner, dunkle Haut, Vollverschleierung, Säuglinge. Mangelfolgen: Rachitis (Kinder), Osteomalazie, Begünstigung der Osteoporose, Muskelschwäche, erhöhtes Sturzrisiko. ⚠️ Quelle beschaffen (DGE D-A-CH-Referenzwerte 2024): Der Synthese-Mechanismus **aus 7-Dehydrocholesterin in der Haut unter UVB-Strahlung** sowie die exakte DGE-Angabe **800 IE** sind im lokalen Korpus nicht belegt — Pflege heute nennt die Eigenbildung nur qualitativ („Bildung im Körper") und 10–20 µg/Tag.
+**Fakt:** Vitamin D (Calciferol) nimmt eine Sonderstellung ein: Es kann im Körper unter Sonnenlicht-Einfluss gebildet werden — Pflege heute spricht von „fehlender Bildung im Körper" als Supplementierungs-Indikation. Funktionen: Knochenbildung, Aufnahme von Kalzium und Phosphaten (Knochen), Muskelfunktion (Sturzprävention). Vitamin D (v.a. bei älteren Menschen) ist eine der wenigen relevanten Mangel-Ausnahmen in Deutschland. Empfehlung bei fehlender Eigensynthese (Pflege heute, Osteoporoseprävention): **Vitamin D 10–20 µg/Tag**. Die DGE/D-A-CH-Referenzwerte bestätigen qualitativ, dass ab dem 50.–60. Lebensjahr für Vitamin D eine höhere Zufuhr empfohlen wird; der obere Grenzwert für Erwachsene liegt bei 50 µg/Tag. Risikogruppen: Ältere, Pflegeheimbewohner, dunkle Haut, Vollverschleierung, Säuglinge. Mangelfolgen: Rachitis (Kinder), Osteomalazie, Begünstigung der Osteoporose, Muskelschwäche, erhöhtes Sturzrisiko. ⚠️ Quelle beschaffen (DGE D-A-CH-Referenzwerte, Einzelnährstoff-Tabelle): Der konkrete **Vitamin-D-Referenzwert von 20 µg/Tag (= 800 IE) bei fehlender Eigensynthese** steht NICHT verbatim im lokalen DGE-Extrakt (dieses enthält nur den oberen Grenzwert 50 µg sowie die Säuglingsdosis 10–12,5 µg) — die Tagesreferenzwert-Tabelle ist im verfügbaren Korpus nicht enthalten. Ebenso ⚠️: der Synthese-Mechanismus **aus 7-Dehydrocholesterin in der Haut unter UVB-Strahlung** ist weder bei Pflege heute (nennt Eigenbildung nur qualitativ: „Bildung im Körper") noch im DGE-Extrakt belegt.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Bloom-Potential:** 4 (Analysieren)
-**Primärquelle:** (Pflege heute Kap. 7/26/29; Synthese-Mechanismus + 800 IE: ⚠️ lokal nicht verifizierbar)
+**Primärquelle:** (Pflege heute Kap. 7/26/29; DGE/D-A-CH-Referenzwerte — qualitativ + oberer Grenzwert; 20 µg/800 IE-Referenzwert + Synthese-Mechanismus: ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Knochenbildung"
@@ -173,6 +173,8 @@
 - Zitat: "Vitamin D (10–20 µg/Tag bei fehlender Bildung im Körper)"
 - Zitat: "Osteomalazie (➔ 33.10.4), Rachitis"
 - Zitat: "Vitamin D (v. a. bei älteren Menschen"
+- Quelle: `leitlinien-volltext/dge-dach-referenzwerte.txt`
+- Zitat: "Etwa ab dem 50. bis 60. Lebensjahr wird für einzelne Nährstoffe eine höhere Zufuhr empfohlen"
 **Praxisfehler:** Bei Pflegeheimbewohnern wird der Vitamin-D-Status nicht beachtet — obwohl Supplementierung Stürze und Frakturen nachweislich senkt.
 
 **Misconceptions:**
@@ -229,11 +231,15 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Bloom-Potential:** 4 (Analysieren / Berechnen)
-**Primärquelle:** (FAO/WHO/UNU 2004; Harris/Benedict 1919; DGEM 2019)
+**Primärquelle:** (DGE/D-A-CH-Referenzwerte — Energierichtwert = Grundumsatz × PAL; FAO/WHO/UNU 2004; Harris/Benedict 1919; DGEM 2019)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Gesamtenergiebedarf = Grundumsatz + Leistungsumsatz"
 - Zitat: "Im Alter nimmt der Grundumsatz ab"
+- Quelle: `leitlinien-volltext/dge-dach-referenzwerte.txt`
+- Zitat: "Richtwert für die Energiezufuhr ="
+- Zitat: "Der Richtwert für die Energiezufuhr wird als ein Mehrfaches des Grundumsatzes angegeben"
+- Zitat: "kann der PAL-Wert zwischen"
 **Praxisfehler:** Bei kranken/älteren Patienten pauschal "weniger Kalorien" annehmen — bei Fieber, Wundheilung und OP ist der Bedarf oft erhöht.
 
 **Misconceptions:**

@@ -57,16 +57,19 @@
 
 ### F-04: Risikofaktoren — Drei Kategorien
 
-**Fakt:** Laut DNQP-Expertenstandard sind die drei wichtigsten (personenbezogenen) Risikofaktoren für einen Dekubitus: Beeinträchtigung der Mobilität, Störungen der Durchblutung und ein beeinträchtigter Hautzustand (bzw. ein bereits vorhandener Dekubitus). Hinzu kommen weitere Einflussgrößen wie Sensibilitätsstörungen, Kachexie oder Adipositas, faltige/harte Unterlagen, vergessene Gegenstände im Bett sowie therapiebedingte Druckquellen (Sonden, Katheter, Drainagen, Pflaster, Sedativa). ⚠️ Quelle beschaffen (konkrete Primärquelle): Die Gliederung in genau drei Kategorien „personenbezogen / umgebungsbezogen / therapiebezogen" ist im vorliegenden Dekubitus-Korpus nicht belegbar (diese Drei-Kategorien-Systematik findet sich dort für Sturz, nicht für Dekubitus). Für eine dekubitus-spezifische Kategorisierung wäre der DNQP-Volltext oder eine Krankheitslehre-Quelle zu beschaffen.
+**Fakt:** Laut DNQP-Expertenstandard sind die drei wichtigsten (personenbezogenen) Risikofaktoren für einen Dekubitus: Beeinträchtigung der Mobilität, Störungen der Durchblutung und ein beeinträchtigter Hautzustand (bzw. ein bereits vorhandener Dekubitus). Hinzu kommen weitere Einflussgrößen wie Sensibilitätsstörungen, Kachexie oder Adipositas, faltige/harte Unterlagen, vergessene Gegenstände im Bett sowie therapiebedingte Druckquellen (Sonden, Katheter, Drainagen, Pflaster, Sedativa). Die internationale EPUAP/NPIAP-Leitlinie (2019) benennt als zentrale Risikofaktoren eingeschränkte Mobilität und Aktivität, hohes Reibungs-/Scherkraft-Potenzial sowie einen bereits bestehenden bzw. früheren Dekubitus. ⚠️ Quelle beschaffen (konkrete Primärquelle): Die Gliederung in genau drei Kategorien „personenbezogen / umgebungsbezogen / therapiebezogen" ist im vorliegenden Dekubitus-Korpus nicht belegbar (diese Drei-Kategorien-Systematik findet sich dort für Sturz, nicht für Dekubitus). Die EPUAP-Leitlinie führt die Risikofaktoren als Einzelaussagen, nicht in dieser Drei-Kategorien-Systematik.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
-**Primärquelle:** (DNQP, 2017 — drei Hauptrisikofaktoren; Pflege heute Kap. 6.12)
+**Primärquelle:** (EPUAP/NPIAP/PPPIA, International Clinical Practice Guideline, 2019 — Risikofaktoren; DNQP, 2017 — drei Hauptrisikofaktoren; Pflege heute Kap. 6.12)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Als wichtigste Faktoren für das Dekubitusrisiko nennt der Expertenstandard"
 - Zitat: "drei Patientenmerkmale"
 - Zitat: "Beeinträchtigung der Mobilität"
+- Quelle: `leitlinien-volltext/epuap-dekubitus-2019.txt`
+- Zitat: "Consider individuals with limited mobility, limited activity and a high potential for friction and shear to be at risk of pressure injuries"
+- Zitat: "Consider individuals with a Category/Stage I pressure injury to be at risk of developing a Category/Stage II or greater pressure injury"
 **Praxisfehler:** Schüler denken bei Dekubitusrisiko nur an bettlägerige ältere Menschen. Aber auch Neugeborene auf Intensivstationen sind gefährdet — durch aufgeklebte Elektroden und Sonden auf ihrer unreifen Haut.
 
 ---
@@ -77,10 +80,15 @@
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
-**Primärquelle:** (EPUAP/NPUAP/PPPIA, 2014; DNQP, 2017)
+**Primärquelle:** (EPUAP/NPIAP/PPPIA, International Clinical Practice Guideline, 2019 — Klassifikationssystem; DNQP, 2017)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Kategorie I: Nicht wegdrückbare, umschriebene Hautrötung bei intakter"
+- Quelle: `leitlinien-volltext/epuap-dekubitus-2019.txt`
+- Zitat: "Intact skin with nonblanchable redness of a localized area usually over a bony prominence"
+- Zitat: "Partial thickness loss of dermis presenting as a shallow open ulcer"
+- Zitat: "Subcutaneous fat may be visible, but bone, tendon or muscle are not exposed"
+- Zitat: "Full thickness tissue loss with exposed bone, tendon or muscle"
 **Praxisfehler:** Schüler verwechseln häufig Kategorie II mit Kategorie III. Entscheidend: bei Kategorie II ist der Defekt oberflächlich und ohne Beläge. Sobald Nekrosen oder Wundtaschen sichtbar werden, ist es mindestens Kategorie III.
 
 ---
@@ -115,15 +123,18 @@
 
 ### F-08: Braden-Skala — Standardisiertes Risikoassessment
 
-**Fakt:** Die Braden-Skala ist eines der etablierten Instrumente zur Einschätzung des Dekubitusrisikos bei Erwachsenen (neben Norton- und Waterlow-Skala). ⚠️ Quelle beschaffen (Braden & Bergstrom 1987): Dass die Braden-Skala das *am häufigsten eingesetzte* Instrument ist und dass sie genau *sechs Bereiche* (Sensorisches Empfinden, Feuchtigkeit, Aktivität, Mobilität, Ernährung, Reibung/Scherkräfte) mit der genannten Punktelogik erfasst, ist im vorliegenden Korpus nicht belegbar — dafür wäre die Skalen-Originalarbeit (Braden & Bergstrom 1987) zu beschaffen. Belegt ist hingegen die Kern-Aussage: Der DNQP betont, dass keine Skala allein die klinische Einschätzung der Pflegefachkraft ersetzt — Skalen sind ein Hilfsmittel, kein Ersatz für Fachwissen.
+**Fakt:** Die Braden-Skala ist eines der etablierten Instrumente zur Einschätzung des Dekubitusrisikos bei Erwachsenen (neben Norton- und Waterlow-Skala). Belegt ist die Kern-Aussage der EPUAP/NPIAP-Leitlinie (2019): Ein Risiko-Assessment-Instrument soll durch die Beurteilung zusätzlicher Risikofaktoren ergänzt und das Ergebnis mit klinischem Urteil interpretiert werden — die Skala ist Hilfsmittel, kein Ersatz für die fachliche Einschätzung. Der DNQP betont ebenso, dass keine Skala allein die klinische Einschätzung der Pflegefachkraft ersetzt. ⚠️ Quelle beschaffen (Braden & Bergstrom 1987): Dass die Braden-Skala das *am häufigsten eingesetzte* Instrument ist und dass sie genau *sechs Bereiche* (Sensorisches Empfinden, Feuchtigkeit, Aktivität, Mobilität, Ernährung, Reibung/Scherkräfte) mit der genannten Punktelogik erfasst, ist weder im Pflege-heute-/DNQP-Korpus noch in der EPUAP-Leitlinie belegbar (EPUAP nennt Braden nicht namentlich) — dafür wäre die Skalen-Originalarbeit (Braden & Bergstrom 1987) zu beschaffen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
-**Primärquelle:** (DNQP, 2017 — Vorrang klinische Einschätzung; für Skalen-Spezifika: Braden & Bergstrom, 1987 — zu beschaffen)
+**Primärquelle:** (EPUAP/NPIAP/PPPIA, 2019 — Tool ergänzt um Risikofaktoren + klinisches Urteil; DNQP, 2017 — Vorrang klinische Einschätzung; für Skalen-Spezifika: Braden & Bergstrom, 1987 — zu beschaffen)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Braden-Skala"
 - Zitat: "erfolgt eine klinische Einschätzung durch die Pflegefachperson"
+- Quelle: `leitlinien-volltext/epuap-dekubitus-2019.txt`
+- Zitat: "Supplement use of a risk assessment tool with assessment of additional risk factors"
+- Zitat: "Interpret the assessment outcomes using clinical judgment"
 **Praxisfehler:** Schüler verlassen sich zu sehr auf den Zahlenwert der Skala und vergessen die klinische Gesamtbeurteilung. Ein Braden-Wert von 18 bedeutet nicht automatisch "kein Risiko" — wenn der Patient gerade von einer 6-stündigen OP kommt, kann sich die Situation in Stunden ändern.
 
 ---
@@ -187,11 +198,16 @@
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme
-**Primärquelle:** (DNQP, 2017; Pflege heute Kap. 6.12)
+**Primärquelle:** (EPUAP/NPIAP/PPPIA, 2019 — Support Surfaces, Repositioning; DNQP, 2017; Pflege heute Kap. 6.12)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Druckverteilende und -entlastende Hilfsmittel, z. B. Wechseldruck- oder Weichlagerungssysteme, kommen zum Einsatz, wenn"
 - Zitat: "Ringförmige Hilfsmittel, Wattepolster oder -verbände, luft- oder wassergefüllte Handschuhe gelten als ungeeignet"
+- Quelle: `leitlinien-volltext/epuap-dekubitus-2019.txt`
+- Zitat: "Use a high specification reactive single layer foam mattress or overlay"
+- Zitat: "Consider using a reactive air mattress or overlay for individuals at risk for developing pressure injuries"
+- Zitat: "alternating pressure air mattress or overlay for individuals at risk of pressure injuries"
+- Zitat: "Reposition all individuals with or at risk of pressure injuries on an individualized schedule"
 **Praxisfehler:** Schüler setzen gerne Sitzringe bei Steißbein-Problemen ein. Das ist kontraproduktiv: Ringe erhöhen den Druck an den Rändern und verschlechtern die Durchblutung im Zentrum. Gleiches gilt für Wattepolster — sie bieten keinen stabilen Halt und verteilen den Druck nicht gleichmäßig.
 
 ---

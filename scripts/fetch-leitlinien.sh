@@ -28,6 +28,9 @@ get "https://edoc.rki.de/bitstream/handle/176904/260/220QQ8Itoi1ME.pdf?sequence=
 get "https://achpccg.com/wp-content/uploads/2024/10/Nut-in-Clin-Prac-2020-da-Silva-ASPEN-Consensus-Recommendations-for-Refeeding-Syndrome.pdf" "aspen-refeeding"
 get "https://www.csap.cam.ac.uk/media/uploads/files/1/leonard-2004-standardised-communication.pdf" "sbar-leonard-2004"
 get "https://www.nhshighland.scot.nhs.uk/media/ap4fvgob/complete_iddsi_framework_detailed_definitions_july_2019.pdf" "iddsi-framework"
+get "https://nzwcs.org.nz/images/1Resources/Quick_Ref_2019_PI_Guidelines.pdf" "epuap-dekubitus-2019"
+get "https://www.dge.de/fileadmin/dok/wissenschaft/referenzwerte/Erlaeuterungen_2021.pdf" "dge-referenzwerte-erlaeuterungen"
+get "https://ernaehrungs-umschau.de/fileadmin/Ernaehrungs-Umschau/pdfs/pfd_2009/06_09/EU06_346_353.qxd.pdf" "dge-dach-referenzwerte"
 # Weitere frei verfügbare Quellen hier ergänzen (siehe specs/QUELLEN-EINKAUFSLISTE-2026-06-10.md Abschnitt A/B):
 # get "<DGE D-A-CH Referenzwerte>" "dge-referenzwerte"
 # get "<ESPEN/DGEM Klinische Ernaehrung>" "espen-klinische-ernaehrung"
