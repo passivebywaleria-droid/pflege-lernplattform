@@ -141,7 +141,9 @@
 **Primärquelle:** (NANDA-I 2021; § 4 PflBG)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "PÄS-Format (Problem, Ätiologie [beeinflussende Faktoren] und Symptome [bestimmende Merkmale])"
+- Zitat: "womit selbstverständlich nicht das Diagnostizieren von" (Pflege-Diagnostizieren ≠ Krankheits-Diagnostizieren)
+- Zitat: "Es bedeutet vielmehr das Erkennen der Folgen von Gesundheitsproblemen, für die Pflegende zuständig" (Pflegeperspektive = Folgen/Reaktion)
+- Zitat: "menschlichen Reaktion auf Gesundheitszustände/Lebensprozesse oder die" (Pflegediagnose = menschliche Reaktion)
 
 **Misconceptions:**
 - `M1`: **"Pflegediagnose und medizinische Diagnose sind dasselbe, nur anders formuliert"** — Verschiedene Perspektiven: Krankheit vs. menschliche Reaktion. Dieselbe Krankheit kann bei zwei Patienten zu verschiedenen Pflegediagnosen führen.

@@ -57,14 +57,16 @@
 
 ### F-04: Risikofaktoren — Drei Kategorien
 
-**Fakt:** Die Risikofaktoren für einen Dekubitus lassen sich in drei Gruppen einteilen. Personenbezogen: eingeschränkte Beweglichkeit, Sensibilitätsstörungen, Durchblutungsprobleme, Kachexie oder Adipositas, vorgeschädigter Hautzustand. Umgebungsbezogen: harte oder faltige Unterlagen, vergessene Gegenstände im Bett, ungeeignete Matratzen. Therapiebezogen: Sonden, Katheter, Drainagen, Pflaster auf der Haut, sedierende Medikamente. Die drei Hauptrisikofaktoren sind Immobilität, Durchblutungsstörung und geschädigter Hautzustand.
+**Fakt:** Laut DNQP-Expertenstandard sind die drei wichtigsten (personenbezogenen) Risikofaktoren für einen Dekubitus: Beeinträchtigung der Mobilität, Störungen der Durchblutung und ein beeinträchtigter Hautzustand (bzw. ein bereits vorhandener Dekubitus). Hinzu kommen weitere Einflussgrößen wie Sensibilitätsstörungen, Kachexie oder Adipositas, faltige/harte Unterlagen, vergessene Gegenstände im Bett sowie therapiebedingte Druckquellen (Sonden, Katheter, Drainagen, Pflaster, Sedativa). ⚠️ Quelle beschaffen (konkrete Primärquelle): Die Gliederung in genau drei Kategorien „personenbezogen / umgebungsbezogen / therapiebezogen" ist im vorliegenden Dekubitus-Korpus nicht belegbar (diese Drei-Kategorien-Systematik findet sich dort für Sturz, nicht für Dekubitus). Für eine dekubitus-spezifische Kategorisierung wäre der DNQP-Volltext oder eine Krankheitslehre-Quelle zu beschaffen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
-**Primärquelle:** (DNQP, 2017)
+**Primärquelle:** (DNQP, 2017 — drei Hauptrisikofaktoren; Pflege heute Kap. 6.12)
 **Beleg:**
-- Quelle: `dnqp-standards-index/dekubitusprophylaxe.txt`
-- Zitat: "medizinische Hilfsmittel oder Geräte, welche von außen auf die Haut Druck ausüben, ein Dekubitusrisiko dar"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Als wichtigste Faktoren für das Dekubitusrisiko nennt der Expertenstandard"
+- Zitat: "drei Patientenmerkmale"
+- Zitat: "Beeinträchtigung der Mobilität"
 **Praxisfehler:** Schüler denken bei Dekubitusrisiko nur an bettlägerige ältere Menschen. Aber auch Neugeborene auf Intensivstationen sind gefährdet — durch aufgeklebte Elektroden und Sonden auf ihrer unreifen Haut.
 
 ---
@@ -113,13 +115,14 @@
 
 ### F-08: Braden-Skala — Standardisiertes Risikoassessment
 
-**Fakt:** Die Braden-Skala ist das am häufigsten eingesetzte Instrument zur Einschätzung des Dekubitusrisikos bei Erwachsenen. Sie erfasst sechs Bereiche: Sensorisches Empfinden, Feuchtigkeit, Aktivität, Mobilität, Ernährung und Reibung/Scherkräfte. Jeder Bereich wird mit 1 bis 4 Punkten bewertet (Reibung/Scherkräfte nur 1-3). Niedrige Gesamtwerte zeigen ein hohes Risiko an. Der DNQP weist allerdings darauf hin, dass keine Skala allein die klinische Einschätzung der Pflegefachkraft ersetzen kann — Skalen sind ein Hilfsmittel, kein Ersatz für Fachwissen. Für Kinder existiert eine angepasste Version (Braden-Q-Skala).
+**Fakt:** Die Braden-Skala ist eines der etablierten Instrumente zur Einschätzung des Dekubitusrisikos bei Erwachsenen (neben Norton- und Waterlow-Skala). ⚠️ Quelle beschaffen (Braden & Bergstrom 1987): Dass die Braden-Skala das *am häufigsten eingesetzte* Instrument ist und dass sie genau *sechs Bereiche* (Sensorisches Empfinden, Feuchtigkeit, Aktivität, Mobilität, Ernährung, Reibung/Scherkräfte) mit der genannten Punktelogik erfasst, ist im vorliegenden Korpus nicht belegbar — dafür wäre die Skalen-Originalarbeit (Braden & Bergstrom 1987) zu beschaffen. Belegt ist hingegen die Kern-Aussage: Der DNQP betont, dass keine Skala allein die klinische Einschätzung der Pflegefachkraft ersetzt — Skalen sind ein Hilfsmittel, kein Ersatz für Fachwissen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
-**Primärquelle:** (DNQP, 2017; Braden & Bergstrom, 1987)
+**Primärquelle:** (DNQP, 2017 — Vorrang klinische Einschätzung; für Skalen-Spezifika: Braden & Bergstrom, 1987 — zu beschaffen)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Braden-Skala"
 - Zitat: "erfolgt eine klinische Einschätzung durch die Pflegefachperson"
 **Praxisfehler:** Schüler verlassen sich zu sehr auf den Zahlenwert der Skala und vergessen die klinische Gesamtbeurteilung. Ein Braden-Wert von 18 bedeutet nicht automatisch "kein Risiko" — wenn der Patient gerade von einer 6-stündigen OP kommt, kann sich die Situation in Stunden ändern.
 
@@ -180,13 +183,14 @@
 
 ### F-13: Druckverteilende Hilfsmittel — Matratzen und Auflagen
 
-**Fakt:** Spezielle Hilfsmittel kommen zum Einsatz, wenn Eigenbewegung dauerhaft nicht herstellbar ist. Drei Systeme werden unterschieden: Weichlagerungssysteme (z. B. Schaumstoffmatratzen, Gelauflagen) vergrößern die Auflagefläche und senken so den Druck pro Fläche. Wechseldrucksysteme pumpen abwechselnd Luft in verschiedene Kammern und entlasten so zyklisch unterschiedliche Körperstellen. Mikrostimulationssysteme fördern gleichzeitig Wahrnehmung, Schmerzreduktion und Bewegungsimpulse. Wichtig: weiche Matratzen können die Eigenbewegung einschränken — je weicher die Unterlage, desto schwerer kann sich der Patient selbst bewegen.
+**Fakt:** Druckverteilende und -entlastende Hilfsmittel kommen zum Einsatz, wenn Druckentlastung durch Bewegungsförderung und Positionswechsel nicht ausreicht. Im Korpus belegt sind zwei Systemtypen: Weichlagerungssysteme passen die Matratzenoberfläche dem Körper an und verringern so den Auflagedruck auf einzelne Körperpartien, Wechseldrucksysteme entlasten zyklisch unterschiedliche Körperstellen. Wichtig: Weich- und Superweichpositionierung schränken Eigenbewegung und Wahrnehmung ein — je weicher die Unterlage, desto schwerer kann sich der Patient selbst bewegen. ⚠️ Quelle beschaffen (konkrete Primärquelle): Die feste Drei-System-Klassifikation inkl. "Mikrostimulationssysteme" als dritte Kategorie ist im vorliegenden Korpus nicht belegbar (Mikrostimulationssysteme werden dort nicht als druckverteilendes Hilfsmittel geführt) — dafür wäre eine Hilfsmittel-/Herstellerklassifikation oder der DNQP-Volltext zu beschaffen.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme
-**Primärquelle:** (DNQP, 2017)
+**Primärquelle:** (DNQP, 2017; Pflege heute Kap. 6.12)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Druckverteilende und -entlastende Hilfsmittel, z. B. Wechseldruck- oder Weichlagerungssysteme, kommen zum Einsatz, wenn"
 - Zitat: "Ringförmige Hilfsmittel, Wattepolster oder -verbände, luft- oder wassergefüllte Handschuhe gelten als ungeeignet"
 **Praxisfehler:** Schüler setzen gerne Sitzringe bei Steißbein-Problemen ein. Das ist kontraproduktiv: Ringe erhöhen den Druck an den Rändern und verschlechtern die Durchblutung im Zentrum. Gleiches gilt für Wattepolster — sie bieten keinen stabilen Halt und verteilen den Druck nicht gleichmäßig.
 

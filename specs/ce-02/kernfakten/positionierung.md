@@ -15,15 +15,18 @@
 
 ### F-01: Definition Positionierung
 
-**Fakt:** Positionierung ist eine aktive Pflegehandlung, bei der du dem Patienten hilfst, eine gezielte Körperhaltung einzunehmen — im Bett, Stuhl oder Rollstuhl. Drei Ziele: Druckentlastung (Dekubitusprophylaxe), Funktionsförderung (Atmung, Kreislauf, Wahrnehmung), Aktivitäts-Ermöglichung (essen, sehen, kommunizieren). Der Begriff löst das passive "Lagerung" ab, weil er den Patienten als Mitgestalter betont.
+**Fakt:** Positionierung ist eine Pflegehandlung, bei der du dem Patienten hilfst, eine gezielte Körperhaltung einzunehmen — im Bett, Stuhl oder Rollstuhl. Zentrale Ziele: Druckentlastung (Dekubitusprophylaxe), Funktions- und Sensorikförderung sowie Bewegungserleichterung, sodass der Patient in der Position eigene Bewegung durchführen kann. Maßgeblich ist nicht ein starrer Lagerungsplan, sondern das aktuelle Bedürfnis des Patienten — er ist Mitgestalter, nicht passives Objekt.
+⚠️ Quelle beschaffen (konkrete Primärquelle): die explizite Aussage, dass der Begriff „Positionierung" den Begriff „Lagerung" terminologisch ablöst (aktiv vs. passiv) — im vorhandenen Korpus nur sinngemäß, nicht als wörtlicher Begriffswechsel belegbar.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Definition
 **Bloom-Potential:** 1-2 (Erinnern, Verstehen)
-**Primärquelle:** (DNQP 2017/2024; Kinästhetik nach Hatch/Maietta 1970er)
+**Primärquelle:** (Pflege heute Kap. Bewegung/Positionierung; Kinästhetik nach Hatch/Maietta 1970er)
 **Beleg:**
-- Quelle: `dnqp-standards-index/dekubitusprophylaxe.txt`
-- Zitat: "schonende Bewegungs-, Positionierungs- und Transfertechniken"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Ziele der Positionierung sind:"
+- Zitat: "Bewegungserleichterung, indem der Patient in der Position eigene Bewegung durchführen kann"
+- Zitat: "Nicht ein starrer Lagerungsplan, sondern das aktuelle Bedürfnis des Patienten ist maßgeblich"
 **Praxisfehler:** "Positionierung" wird als reines Modewort für "Lagerung" abgetan — der inhaltliche Wechsel (aktiv statt passiv) geht verloren.
 **Transfer:** Wie der Unterschied zwischen "abgelegt werden" und "sich hinlegen" — im zweiten Fall macht der Mensch mit.
 

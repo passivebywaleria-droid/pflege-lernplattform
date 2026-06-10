@@ -15,19 +15,20 @@
 
 ### F-01: Besonderheiten der Säuglingshaut
 
-**Fakt:** Neugeborenenhaut ist rund 60 % dünner als Erwachsenenhaut. Barrierefunktion und Säureschutzmantel (Hydro-Lipid-Film) sind noch nicht ausgereift — der saure pH-Wert stellt sich erst mit etwa 4 Wochen ein. Die große Körperoberfläche im Verhältnis zum Gewicht führt zu schnellem Wärme- und Flüssigkeitsverlust. Pflegekonsequenz: wenig, warm und mild waschen.
+**Fakt:** Säuglingshaut reagiert empfindlich: Barrierefunktion und Säureschutzmantel (Hydro-Lipid-Film) sind noch nicht ausgereift. Die große Körperoberfläche im Verhältnis zum Gewicht führt zu schnellem Wärme- und Flüssigkeitsverlust. Pflegekonsequenz: wenig, warm und mild waschen.
+⚠️ Quelle beschaffen (Hoehl/Kullick Kinderkrankenpflege): quantitative Hautdaten „rund 60 % dünner als Erwachsenenhaut" und „saurer pH-Wert stellt sich erst mit etwa 4 Wochen ein" — im Korpus pflege-heute nicht belegbar (pflege-heute belegt nur „empfindlich"). Hoehl/Kullick belegt einen Säuglings-Haut-pH von 6,7 vs. 5–6,5 beim Erwachsenen, aber weder die 60-%-Angabe noch die 4-Wochen-Frist.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
 **Bloom-Potential:** 2 (Verstehen)
-**Primärquelle:** (Hoehl/Kullick 2019)
+**Primärquelle:** (Hoehl/Kullick 2019; Pflege heute Kap. Hautpflege)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "besonders die Haut des Säuglings und des alten Menschen reagiert empfindlich"
 
 **Misconceptions:**
 - `M1`: **"Säuglingshaut ist nur kleiner, aber sonst wie Erwachsenenhaut"** — Skalierungs-Irrtum. Babyhaut ist anders gebaut (dünner, durchlässiger, ohne reifen Säureschutzmantel), nicht nur kleiner.
-- `M2`: **"Der Säureschutzmantel ist bei Geburt schon fertig"** — pH-Reife-Mythos. Bei Geburt ist der pH neutral (ca. 6,5-7), der saure Schutz baut sich erst über rund 4 Wochen auf.
+- `M2`: **"Der Säureschutzmantel ist bei Geburt schon fertig"** — pH-Reife-Mythos. Der Haut-pH liegt beim Säugling höher (Hoehl/Kullick: 6,7) als beim Erwachsenen (5–6,5); der saure Schutz reift erst nach und nach. (Konkrete Reifungsdauer ⚠️ Quelle beschaffen.)
 - `M3`: **"Babys verlieren weniger Wärme, weil sie kleiner sind"** — Thermoregulations-Fehlschluss. Die große Körperoberfläche bezogen auf das Gewicht führt zu MEHR Wärmeverlust.
 
 ---
@@ -111,18 +112,21 @@
 
 ### F-06: Wickeln nach Infant-Handling-Prinzipien
 
-**Fakt:** Wickeln ist Beziehungs- und Bewegungsarbeit: neue Windel vorher unterlegen, mit warmem Wasser und Waschlappen reinigen. Bei Mädchen von vorne nach hinten (Harnröhre Richtung After) zur Vermeidung von Harnwegsinfekten, bei Jungen die Vorhaut nicht zurückziehen (physiologische Phimose). Öl statt Feuchttücher bei empfindlicher Haut. Kinästhetik/Infant Handling: rollen statt heben, nie an den Beinen hochziehen.
+**Fakt:** Wickeln ist Beziehungs- und Bewegungsarbeit: mit warmem Wasser und Waschlappen reinigen. Der Intimbereich wird stets von der Symphyse zum Anus, also von vorne nach hinten gewaschen — so wird Keimverschleppung in Harnröhre/Scheide verhindert. Bei Jungen wird die Vorhaut nicht zurückgezogen (physiologische Phimose bis zum Ende des 2. Lebensjahrs); gewaltsames Zurückziehen führt zu Einrissen und Vernarbungen.
+⚠️ Quelle beschaffen (Hoehl/Kullick Kinderkrankenpflege): konkrete Infant-Handling-Bewegungsmechanik beim Wickeln („rollen statt heben, nie an den Beinen hochziehen") sowie „Öl statt Feuchttücher" — im Korpus pflege-heute nur als allgemeines Kinästhetik-Prinzip, nicht als wörtliche Wickel-Anweisung belegbar.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (Hoehl/Kullick 2019)
+**Primärquelle:** (Hoehl/Kullick 2019; Pflege heute Kap. Intimpflege)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "die Windel unterhalb des Nabels anliegen, damit er trocken bleibt"
+- Zitat: "Den Intimbereich stets von der Symphyse zum Anus, also von vorne nach hinten waschen"
+- Zitat: "Bei Kindern ist eine Phimose (Verengung der Vorhaut) bis zum Ende des 2. Lebensjahrs normal"
+- Zitat: "Die Vorhaut darf daher nicht zurückgezogen werden, da dies zu Einrissen und Vernarbungen führen kann"
 
 **Misconceptions:**
-- `M1`: **"Beine hochheben geht am schnellsten"** — Hochhebe-Mythos. Das Anheben an den Beinen überstreckt Hüfte und Wirbelsäule; Infant Handling empfiehlt Rollen zur Seite.
+- `M1`: **"Beine hochheben geht am schnellsten"** — Hochhebe-Mythos. Das ruckartige Anheben an den Beinen belastet Hüfte und Wirbelsäule; schonende Bewegungsführung (Kinästhetik/Infant Handling) ist vorzuziehen. (Konkrete Wickel-Bewegungsfolge ⚠️ Quelle beschaffen.)
 - `M2`: **"Bei Mädchen wischt man von hinten nach vorne"** — Wischrichtungs-Fehler. Von hinten nach vorne schleppt Darmkeime in die Harnröhre; richtig ist von vorne nach hinten.
 - `M3`: **"Bei Jungen muss man die Vorhaut zurückziehen"** — Vorhaut-Mythos. Die Vorhaut ist beim Säugling physiologisch verklebt; gewaltsames Zurückziehen verursacht Risse.
 

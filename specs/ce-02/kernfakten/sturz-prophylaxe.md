@@ -97,15 +97,16 @@
 
 ### F-04: Kraft- und Balance-Training als wirksamste Maßnahme
 
-**Fakt:** Die wissenschaftlich am besten belegte Maßnahme zur Sturzprävention ist progressives Kraft- und Balancetraining. Effektiv bei 2-3 Einheiten pro Woche, Dauer mindestens 12 Wochen. Kann individuell oder in der Gruppe durchgeführt werden.
+**Fakt:** Gezieltes Kraft- und Balancetraining ist eine zentrale Maßnahme zur Sturzprävention und wirkt dem sturzfördernden Muskelabbau (Sarkopenie) entgegen. Es kann individuell oder in der Gruppe durchgeführt werden. ⚠️ Quelle beschaffen (konkrete Primärquelle): Die Aussage, Kraft-/Balancetraining sei die *wissenschaftlich am besten belegte* Einzelmaßnahme sowie die konkrete Dosierung *2-3 Einheiten/Woche über mindestens 12 Wochen* ist im vorliegenden Korpus nicht belegbar — der DNQP-Standard hält fest, dass zu sturzpräventiven Interventionen "teilweise widersprüchliche Ergebnisse" vorliegen. Für Überlegenheit und Dosierung wäre eine Trainings-Originalarbeit/Cochrane-Review zu beschaffen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 3-5
-**Primärquelle:** (DNQP 2022; Cochrane-Review zur Sturzprävention)
+**Primärquelle:** (DNQP 2022; für Dosierung/Überlegenheit: Cochrane-Review zur Sturzprävention — zu beschaffen)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Balancetraining, auf ausreichende Flüssigkeitszufuhr achten"
+- Zitat: "Falls möglich, gezieltes Kraft- und Balancetraining"
+- Zitat: "Dem Abbau von Muskelkraft und Reaktionsfähigkeit kann entgegengewirkt werden durch regelmäßiges Trainieren von"
 **Praxisfehler:** "Schonung" als Sturzprävention — führt zu Muskelabbau und erhöht das Risiko (Teufelskreis).
 **Transfer:** [Transfer] Wie im Sport: ohne Training keine Muskelkraft. Der Unterschied: bei älteren Menschen geht es schneller verloren.
 
@@ -161,10 +162,10 @@
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 3
-**Primärquelle:** (DNQP 2022)
+**Primärquelle:** (DNQP 2022; Pflege heute Kap. Sturzprophylaxe)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "muss das Verletzungsrisiko bei einem Sturz betrachtet und reduziert werden"
+- Zitat: "Bei hohem Sturzrisiko Verwendung von Hüftprotektoren zur Prophylaxe hüftgelenknaher Frakturen bei Akzeptanz des Patienten"
 
 **Misconceptions:**
 - `M1`: **"Hüftprotektoren verhindern Stürze"** — Sie verhindern Frakturen, nicht Stürze. Sturzprävention ist davon unabhängig.

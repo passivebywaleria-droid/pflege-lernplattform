@@ -83,7 +83,12 @@
 **Primärquelle:** (Pflege heute Kap. 1.11; § 630f BGB)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Eindeutigkeit: Doppelte Dokumentationen (Redundanzen) sind zu vermeiden"
+- Zitat: "chronologischen Aufzeichnung von patientenbezogenen Informationen" (chronologisch)
+- Zitat: "mit Datum und Uhrzeit sowie" (Datum/Uhrzeit)
+- Zitat: "dem Handzeichen der Pflegenden dokumentiert werden" (Handzeichen)
+- Zitat: "um Eintragungen in den Pflegebericht, in" / "dem Tatsächliches festgehalten wird" (sachlich = nur Tatsächliches)
+- Zitat: "alle Beobachtungen möglichst zeitnah und" / "eindeutig, d. h., unverfälscht von anderen" (zeitnah + eindeutig/unverfälscht)
+- ⚠️ Quelle beschaffen (konkrete Primärquelle) — Teilaussagen "wertfrei (keine Persönlichkeitsurteile)" und "in der Ich-Form" sind im Korpus nicht verbatim belegt; Beleg z. B. BGB § 630f-Kommentierung / Dokumentations-Leitfaden beschaffen oder Teilaussage entschärfen.
 **Praxisfehler:** Persönlichkeitsurteile ("stur", "schwierig") und Passiv-Formulierungen ("wurde mobilisiert"), die verschleiern, wer gehandelt hat.
 
 **Misconceptions:**

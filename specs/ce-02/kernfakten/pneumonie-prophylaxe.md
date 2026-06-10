@@ -201,15 +201,21 @@
 
 ### F-10: Schluckstörung (Dysphagie) und Aspirationsgefahr
 
-**Fakt:** Eine Schluckstörung — etwa die Unfähigkeit, richtig zu kauen und zu schlucken nach Schlaganfall — ist eine zentrale Aspirations- und Pneumonieursache. Bei Verdacht gilt: nichts per os, Arzt informieren, strukturiertes Schluck-Screening (z.B. GUSS-Test), bei bestätigter Dysphagie angepasste Kostform und aufrechte Esshaltung. Risikozeichen: Husten beim Schlucken, gurgelnde Stimme, häufiges Räuspern.
+**Fakt:** Eine Schluckstörung — etwa die Unfähigkeit, richtig zu kauen und zu schlucken nach Schlaganfall — ist eine zentrale Aspirations- und Pneumonieursache. Bei Verdacht gilt: keine Nahrung/Flüssigkeit, bevor vor der Nahrungsaufnahme geprüft ist, ob Husten- und Schluckreflex intakt sind (nur bei intakten Schutzreflexen darf der Patient essen/trinken); bei bestätigter Dysphagie angepasste Kost-/Flüssigkeitskonsistenz (z.B. dickflüssige Kost, Andickungsmittel) und aufrechte Esshaltung mit anschließendem aufrechten Sitzen zur Aspirationsprophylaxe. Risikozeichen: häufiges Verschlucken/Husten und Würgen, gurgelnde Sprache/Stimmverschlechterung, Speisereste in den Wangentaschen. ⚠️ Quelle beschaffen (Trapl et al. 2007 / GUSS-Originalarbeit): Das konkret benannte Screening-Instrument **GUSS-Test** ist im lokalen Korpus nicht belegt — Pflege heute beschreibt die strukturierte Reflexprüfung, aber nicht das GUSS-Verfahren namentlich.
 
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Entscheidung
 **Bloom-Potential:** 5 (Bewerten, Entscheiden)
-**Primärquelle:** (Pflege heute 7. Aufl. Kap. 3.5/7.10; AWMF S3 2017; Trapl et al. 2007)
+**Primärquelle:** (Pflege heute 7. Aufl. Kap. 3.5/7.11; AWMF S3 2017; GUSS: Trapl et al. 2007 — ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Hat der Patient Schluckstörungen, oder ist sein Bewusstsein eingeschränkt?"
+- Zitat: "überprüfen sie vor der Nahrungsaufnahme, ob"
+- Zitat: "Ein Patient darf nur bei intakten Schutzreflexen essen oder trinken"
+- Zitat: "Häufiges Verschlucken, Husten und Würgen"
+- Zitat: "Gurgelnde Sprache, Stimmverschlechterung"
+- Zitat: "Flüssigkeiten ggf. mit einem Andickungsmittel andicken"
+- Zitat: "Den Patienten nach dem Essen noch"
 **Praxisfehler:** "Ein Schluck Wasser zum Testen" ohne strukturiertes Screening — bei stiller Aspiration gelangt das Wasser unbemerkt in die Lunge.
 
 **Misconceptions:**
@@ -250,6 +256,7 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Jedes Jahr werden in Deutschland etwa"
+- Zitat: "75.000–112.000 Pneumonien im Krankenhaus erworben"
 **Praxisfehler:** Die Häufigkeit wird unterschätzt — Pneumonieprophylaxe gilt fälschlich als nachrangige Routine statt als Kernaufgabe.
 
 **Misconceptions:**

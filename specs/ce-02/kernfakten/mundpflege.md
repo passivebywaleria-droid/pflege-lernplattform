@@ -35,7 +35,8 @@
 
 ### F-02: Funktionen des Mundes
 
-**Fakt:** Der Mund erfüllt fünf zentrale Funktionen: Nahrungsaufnahme (Kauen), Geschmack (Geschmacksknospen auf der Zunge), Schluckbeginn (orale Phase), Sprache (Artikulation) und Atmung (Zweitweg). Die Funktionen hängen zusammen — eine gestörte Mundpflege beeinträchtigt mehrere gleichzeitig.
+**Fakt:** Der Mund erfüllt mehrere zentrale Funktionen: Nahrungszerkleinerung (Kauen), Geschmack (Geschmacksknospen auf der Zunge), Schlucken (orale Phase) und Sprache (Artikulation). Die Funktionen hängen zusammen — eine gestörte Mundpflege beeinträchtigt mehrere gleichzeitig.
+⚠️ Quelle beschaffen (konkrete Primärquelle): Atmung als reguläre Mund-Funktion — im vorhandenen Korpus nur als Mundatmung (kompensatorisch/pathologisch), nicht als physiologische Mund-Grundfunktion belegbar.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Funktion
@@ -43,11 +44,13 @@
 **Primärquelle:** (Pflege heute Kap. Mund- und Zahnpflege)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die aufgenommenen Nahrungsmittel werden hier zerkleinert und für die weitere Verdauung vorbereitet"
+- Zitat: "Außerdem ist die Mundhöhle am Schlucken und Sprechen beteiligt"
 - Zitat: "Auf ihrer Oberseite trägt die Zunge die Geschmacksknospen"
 **Praxisfehler:** Reduzierung des Mundes auf die Ernährungsfunktion — wer nicht mehr essen kann, muss trotzdem noch sprechen und atmen.
 
 **Misconceptions:**
-- `M1`: **"Die Hauptaufgabe des Mundes ist das Essen"** — Der Mund ist auch für Sprache, Geschmack, Schluckbeginn und Atmung zuständig. Fachbegriff: "Reduzierung auf Ernährung".
+- `M1`: **"Die Hauptaufgabe des Mundes ist das Essen"** — Der Mund ist auch für Sprache, Geschmack und Schluckbeginn zuständig. Fachbegriff: "Reduzierung auf Ernährung".
 - `M2`: **"Geschmack wird nur auf bestimmten Zonen der Zunge wahrgenommen (Zungenkarte)"** — Die Zungenkarte ist seit den 1970ern widerlegt; alle Grundgeschmäcker werden auf der gesamten Zunge wahrgenommen.
 - `M3`: **"Mundatmung und Nasenatmung sind gleichwertig"** — Mundatmung umgeht den Schutz der Nase und trocknet die Schleimhaut aus.
 
@@ -96,7 +99,8 @@
 
 ### F-05: Reinigung von Zahnprothesen
 
-**Fakt:** Zahnprothesen werden mindestens zweimal täglich, bei locker sitzenden Prothesen nach jeder Mahlzeit gereinigt — über einem wassergefüllten Waschbecken oder Tuch (bruchempfindlich), mit der Zahnbürste unter fließendem Wasser. Auch die Schleimhaut wird gepflegt, wenn die Prothese draußen ist; sonst drohen Prothesenstomatitis und Soor.
+**Fakt:** Zahnprothesen werden mindestens zweimal täglich, bei locker sitzenden Prothesen nach jeder Mahlzeit gereinigt — über einem wassergefüllten Waschbecken oder Tuch (bruchempfindlich), mit der Zahnbürste unter fließendem Wasser. Wird die Mundschleimhaut vernachlässigt, kann sich Candida albicans (Soor) auf geschädigten Schleimhäuten ansiedeln.
+⚠️ Quelle beschaffen (konkrete Primärquelle): Begriff „Prothesenstomatitis" und die konkrete Aussage „Schleimhautpflege bei herausgenommener Prothese" — im vorhandenen Korpus nicht direkt belegbar.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
@@ -104,7 +108,11 @@
 **Primärquelle:** (Pflege heute Kap. Mund- und Zahnpflege; DGP/DGPPN 2019)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Plaques und bakterielle Besiedelung zu verhindern"
+- Zitat: "Die Prothesenpflege wird mindestens"
+- Zitat: "bei locker sitzenden Prothesen ist es notwendig, diese nach jeder Mahlzeit abzuspülen"
+- Zitat: "Prothese über dem wassergefüllten Waschbecken"
+- Zitat: "Prothese unter fließendem Wasser mit"
+- Zitat: "der sich gern auf geschädigten Schleimhäuten ansiedelt"
 **Praxisfehler:** Mundpflege bei Prothesenträgern wird auf die Prothesenreinigung reduziert — die Schleimhaut darunter bleibt mit Belägen bedeckt.
 
 **Misconceptions:**

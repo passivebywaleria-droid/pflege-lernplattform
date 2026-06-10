@@ -96,14 +96,17 @@
 
 ### F-05: Atwater-Faktoren / Energiedichte-Vergleich
 
-**Fakt:** Die Atwater-Faktoren (Atwater, USDA 1899) sind die bis heute gültigen Umrechnungswerte zwischen Masse und Energie: **Kohlenhydrate 4 kcal/g**, **Proteine 4 kcal/g**, **Fette 9 kcal/g**, **Alkohol 7 kcal/g**, **Ballaststoffe ~2 kcal/g**, **Wasser 0 kcal/g**. Fett ist über doppelt so energiedicht wie KH oder Eiweiß — relevant bei Mangelernährung (Anreicherung mit Sahne/Öl) und Übergewicht (Fettreduktion).
+**Fakt:** Die physiologischen Brennwerte (Atwater-Faktoren) sind die Umrechnungswerte zwischen Masse und Energie. Pflege heute nennt: **Kohlenhydrate 4,1 kcal/g (17,2 kJ)**, **Eiweiß 4,1 kcal/g (17,2 kJ)**, **Fett 9,3 kcal/g** (gerundet: KH 4, Prot 4, Fett 9 kcal/g). **Wasser 0 kcal/g** (siehe F-01/M2). Fett ist über doppelt so energiedicht wie KH oder Eiweiß — relevant bei Mangelernährung (Anreicherung mit Sahne/Öl) und Übergewicht (Fettreduktion). ⚠️ Quelle beschaffen (DGE/Atwater-Originalwerte): Die häufig zitierten Rundwerte **Alkohol 7 kcal/g** und **Ballaststoffe ~2 kcal/g** sind im lokalen Korpus nicht belegt (Alkohol-7-kcal kommt nur in F-01/M3 und F-05/M3 als didaktische Aussage vor, ohne Primärbeleg).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Bloom-Potential:** 4 (Analysieren)
-**Primärquelle:** (Atwater 1899; DGE 2024)
+**Primärquelle:** (Pflege heute Kap. 7; DGE 2024; Alkohol/Ballaststoffe: ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "1 g Kohlenhydrate liefert 4,1 kcal (17,2 kJ)"
+- Zitat: "1 g Eiweiß liefert"
+- Zitat: "1 g Fett liefert 9,3 kcal"
 - Zitat: "1 kcal entspricht 4,185 kJ"
 **Praxisfehler:** Bei Mangelernährung wird die Portion vergrößert statt energetisch angereichert (Fett/Sahne) — der Patient schafft die Menge nicht.
 
@@ -157,15 +160,19 @@
 
 ### F-08: Vitamin D — Sonderstellung und Mangel
 
-**Fakt:** Vitamin D (Calciferol) nimmt eine Sonderstellung ein: Es ist das einzige Vitamin, das der Körper aus 7-Dehydrocholesterin in der Haut unter UVB-Strahlung **selbst synthetisieren** kann. Funktionen: Calcium-/Phosphathaushalt (Knochen), Muskelfunktion (Sturzprävention!). In Deutschland (ab 50° N) reicht die UVB-Strahlung nur April-September. DGE-Empfehlung bei fehlender Eigensynthese: **20 µg/Tag (800 IE)**. Risikogruppen: Ältere, Pflegeheimbewohner, dunkle Haut, Vollverschleierung, Säuglinge. Mangelfolgen: Rachitis (Kinder), Osteomalazie/Osteoporose, Muskelschwäche, erhöhtes Sturzrisiko.
+**Fakt:** Vitamin D (Calciferol) nimmt eine Sonderstellung ein: Es kann im Körper unter Sonnenlicht-Einfluss gebildet werden — Pflege heute spricht von „fehlender Bildung im Körper" als Supplementierungs-Indikation. Funktionen: Knochenbildung, Aufnahme von Kalzium und Phosphaten (Knochen), Muskelfunktion (Sturzprävention). Vitamin D (v.a. bei älteren Menschen) ist eine der wenigen relevanten Mangel-Ausnahmen in Deutschland. Empfehlung bei fehlender Eigensynthese (Pflege heute, Osteoporoseprävention): **Vitamin D 10–20 µg/Tag**. Risikogruppen: Ältere, Pflegeheimbewohner, dunkle Haut, Vollverschleierung, Säuglinge. Mangelfolgen: Rachitis (Kinder), Osteomalazie, Begünstigung der Osteoporose, Muskelschwäche, erhöhtes Sturzrisiko. ⚠️ Quelle beschaffen (DGE D-A-CH-Referenzwerte 2024): Der Synthese-Mechanismus **aus 7-Dehydrocholesterin in der Haut unter UVB-Strahlung** sowie die exakte DGE-Angabe **800 IE** sind im lokalen Korpus nicht belegt — Pflege heute nennt die Eigenbildung nur qualitativ („Bildung im Körper") und 10–20 µg/Tag.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Bloom-Potential:** 4 (Analysieren)
-**Primärquelle:** (DGE/ÖGE/SGE 2024; RKI KiGGS 2008)
+**Primärquelle:** (Pflege heute Kap. 7/26/29; Synthese-Mechanismus + 800 IE: ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Knochenbildung"
 - Zitat: "Aufnahme von Kalzium und Phosphaten"
+- Zitat: "Vitamin D (10–20 µg/Tag bei fehlender Bildung im Körper)"
+- Zitat: "Osteomalazie (➔ 33.10.4), Rachitis"
+- Zitat: "Vitamin D (v. a. bei älteren Menschen"
 **Praxisfehler:** Bei Pflegeheimbewohnern wird der Vitamin-D-Status nicht beachtet — obwohl Supplementierung Stürze und Frakturen nachweislich senkt.
 
 **Misconceptions:**
@@ -263,10 +270,17 @@
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Entscheidung / Handlung
 **Bloom-Potential:** 5 (Bewerten)
-**Primärquelle:** (§ 5 PflBG)
+**Primärquelle:** (Pflege heute Kap. 15.3 Religionen; § 5 PflBG)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "allen muslimischen Patienten das gleiche Essen wie anderen Patienten"
+- Zitat: "Der Verzehr anderer Fleischsorten ist nur erlaubt (halal), wenn die Schlachtung nach islamischem Ritus (Schächten) durchgeführt wurde"
+- Zitat: "Im Fastenmonat Ramadan dürfen Gläubige nur zwischen Sonnenuntergang und"
+- Zitat: "kranke und schwache Menschen sind von"
+- Zitat: "Strenggläubige Juden dürfen nur Speisen zu sich nehmen, die koscher sind"
+- Zitat: "darf Fleisch nicht mit Milchprodukten"
+- Zitat: "Fast alle Hindus lehnen das Töten von Kühen und das Essen von Rindfleisch"
+- Zitat: "Vorschriften gibt es nicht, Vegetarismus wird jedoch oft bevorzugt"
 **Praxisfehler:** Allen Angehörigen einer Religion pauschal dasselbe Essen anbieten (z.B. "Muslim = nur ohne Schweinefleisch"), statt individuell nachzufragen.
 
 **Misconceptions:**
@@ -299,16 +313,22 @@
 
 ### F-15: Sonderkostformen
 
-**Fakt:** In der Klinik gibt es definierte Kostformen, die ärztlich/pflegerisch zugeordnet werden: **Vollkost** (Normalkost), **leichte Vollkost/Schonkost** (leicht verdaulich, nicht blähend, fettarm, ohne scharfes Würzen), **pürierte/passierte Kost** (bei eingeschränktem Kauvermögen/Schluckstörung), **Aufbaukost** (stufenweiser Nahrungsaufbau nach OP/Nahrungskarenz), **energiedefinierte Kost** (Reduktionsdiät bei Adipositas), **kalorienreiche Kost** (bei Untergewicht/Kachexie), sowie eiweiß-/elektrolytdefinierte Diäten (z.B. natriumarme Kost bei Niereninsuffizienz).
+**Fakt:** In der Klinik gibt es definierte Kostformen, die ärztlich/pflegerisch zugeordnet werden (Pflege heute Tab. 7.12). Zentrale Kostformen mit Indikation: **Vollkost** (normale Kost mit normalem Kaloriengehalt), **leichte Vollkost/Schonkost** (leicht verdaulich, nicht blähend, fettarm, ohne scharfes Würzen), **pürierte/passierte Kost** (alle festen Speisen püriert, bei eingeschränktem Kauvermögen/Schluckstörung), **Aufbaukost** (stufenweiser Nahrungsaufbau nach OP/Nahrungskarenz), **energiedefinierte Kost** (reduzierter Kaloriengehalt, Reduktionsdiät bei Adipositas), **kalorienreiche Kost** (bei Untergewicht/Kachexie), sowie eiweiß-/elektrolytdefinierte Diäten (z.B. natriumarme Kost bei Niereninsuffizienz). Tab. 7.12 listet darüber hinaus weitere Diätformen (Diabetes-, fettarme, purinarme, keimarme, glutenfreie Kost).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Entscheidung / Handlung
 **Bloom-Potential:** 5 (Bewerten / Zuordnen)
-**Primärquelle:** (DGE-Qualitätsstandard Krankenhausverpflegung; Pflege heute Kap. 7)
+**Primärquelle:** (Pflege heute 7. Aufl. Kap. 7 Tab. 7.12 Kostformen und Diäten)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Patienten mit eingeschränktem Kauvermögen"
+- Zitat: "Normale Kost mit normalem Kaloriengehalt"
 - Zitat: "Leicht verdaulich"
+- Zitat: "Patienten mit eingeschränktem Kauvermögen"
+- Zitat: "Alle festen Speisen sind püriert"
+- Zitat: "Kost wird nach einem Schema aufgebaut"
+- Zitat: "Reduzierter Kaloriengehalt"
+- Zitat: "Patienten mit Untergewicht/Kachexie"
+- Zitat: "z. B. natriumarme Kost"
 **Praxisfehler:** Nach einer Magen-Darm-OP direkt Vollkost anbieten statt stufenweiser Aufbaukost — Gefahr von Unverträglichkeit/Komplikationen.
 
 **Misconceptions:**

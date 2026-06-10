@@ -63,7 +63,12 @@
 **Primärquelle:** (DNQP 2024; Pflege heute 7. Aufl. Kap. 47.7 Nationale Expertenstandards)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Ein Expertenstandard stellt das Niveau der Pflege bezogen auf das jeweilige Thema zum genannten Zeitpunkt dar"
+- Zitat: "Ein Expertenstandard stellt das Niveau der Pflege bezogen auf das jeweilige Thema zum genannten Zeitpunkt dar" (Niveau-/Zeitpunkt-Aussage)
+- Zitat: "Bis heute liegen" / "folgende Expertenstandards vor:" (leitet die Liste ein)
+- Zitat: "Schmerzmanagement bei akutem und" (Listenpunkt akut/chronisch)
+- Zitat: "Ernährungsmanagement zur Sicherung und Förderung der oralen Ernährung in der Pflege" (Listenpunkt)
+- Zitat: "Beziehungsgestaltung in der Pflege" (Listenpunkt Demenz)
+- ⚠️ Quelle beschaffen (DNQP-Übersicht) — die konkrete Anzahl "12" und die beiden neuesten Standards (Mundgesundheit, Hautintegrität) sind im Korpus NICHT belegt; Pflege heute listet nur die älteren ~10 (inkl. Physiologische Geburt). DNQP-Aktualisierungsübersicht beschaffen oder die Zahl/zwei neuen Standards entschärfen.
 **Praxisfehler:** Mit einer veralteten Standard-Version arbeiten, ohne die Jahresangabe zu prüfen.
 
 **Misconceptions:**
@@ -183,7 +188,8 @@
 **Primärquelle:** (Podsiadlo & Richardson 1991, JAGS 39(2); DNQP Sturzprophylaxe 2022; Pflege heute 7. Aufl. Kap. 19 Geriatrie)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Timed Up & Go-Test (Mobilität)"
+- Zitat: "Timed Up & Go-Test (Mobilität)" (belegt nur Existenz/Zweck des Instruments)
+- ⚠️ Quelle beschaffen (Podsiadlo & Richardson 1991) — die Schwellenwerte (<10 / ≥20 / ≥30 Sek.), die Strecke "3 Meter" und der Ablauf (Aufstehen → Gehen → Umdrehen → Setzen) sind im Korpus NICHT belegt; Pflege heute nennt nur die Überschrift. Originalarbeit Podsiadlo & Richardson 1991 (JAGS 39(2)) beschaffen oder die Detailwerte entschärfen.
 **Praxisfehler:** Beim TUG nur die Zeit stoppen und die Bewegungsqualität (Unsicherheit, Abstützen, Gleichgewichtsverlust) ignorieren.
 
 **Misconceptions:**
@@ -223,7 +229,11 @@
 **Primärquelle:** (NANDA International 2021-2023; ICN 2021; Pflege heute 7. Aufl. Kap. 1.8.1 NANDA-Pflegediagnosen)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Organisation in Nordamerika, die sich mit der Bildung, Entwicklung und Klassifikation von Pflegediagnosen befasst"
+- Zitat: "Organisation in Nordamerika, die sich mit der" (NANDA-I = Pflegediagnosen)
+- Zitat: "Ergebnisqualität beschreiben, z. B. NOC" (NOC = Outcomes/Ergebnisse)
+- Zitat: "ICNP® (International Classification" / "als Internationale Klassifikation für die Pflegepraxis (International Classification for" (ICNP = internationale Terminologie des ICN)
+- Zitat: "ENP (European Nursing Care Pathways)" (ENP)
+- ⚠️ Quelle beschaffen (konkrete Primärquelle) — folgende Teilaussagen sind im Korpus NICHT belegt: (a) NIC (Nursing Interventions Classification) kommt im Pflege-heute-Volltext nicht vor; (b) "NANDA-I seit 1982"; (c) "In Deutschland ist kein System gesetzlich vorgeschrieben — die Einrichtung wählt selbst". Jeweils Primärquelle (NANDA-I Klassifikation; ICN/DPR-Aussage zur Wahlfreiheit) beschaffen oder Teilaussage entschärfen.
 **Praxisfehler:** Pflegediagnosen mit medizinischen Diagnosen gleichsetzen und so pflegerelevante Probleme nicht eigenständig erfassen.
 
 **Misconceptions:**
@@ -243,7 +253,13 @@
 **Primärquelle:** (DNQP 2024; Donabedian 1966; Pflege heute 7. Aufl. Kap. 47.7)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "findet breite Anwendung im Gesundheitswesen, zum Beispiel auch beim Aufbau der Expertenstandards"
+- Zitat: "findet breite Anwendung im Gesundheitswesen, zum Beispiel auch beim Aufbau der Expertenstandards" (Donabedian-S-P-E im Standard-Aufbau)
+- Quelle: `dnqp-standards-index/dekubitusprophylaxe.txt`
+- Zitat: "Strukturkriterien" / "Prozesskriterien" / "Ergebniskriterien" (S-P-E-Spalten je Kriterium)
+- Beleg für 6 Kriterien-Ebenen: Standard ist durchnummeriert S1–S6 / P1–P6 / E1–E6 (im DNQP-Original verifizierbar: "S6a"/"P6"/"E6a" vorhanden) → 6 Standardkriterien je Expertenstandard.
+- Zitat: "Eine aktuelle, systematische Einschätzung des individuellen Dekubitusrisikos" (Kriterium 1 = Risikoerhebung/Assessment)
+- Zitat: "Die Pflegefachkraft verfügt über die Kompetenz, die Effektivität der pro" (Kriterium 6 = Evaluation)
+- ⚠️ Hinweis: Die Kurz-Labels (1) Risikoerhebung … (6) Evaluation sind eine zusammenfassende Paraphrase der S1–S6-Originalformulierungen (themengleich, nicht wortgleich) — nicht als Zitat ausgeben.
 **Praxisfehler:** Kriterium 5 (Information/Beratung) als optional behandeln, obwohl es Kernaufgabe (§ 4 PflBG) ist und über die Compliance des Patienten entscheidet.
 
 **Misconceptions:**

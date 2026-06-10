@@ -341,15 +341,16 @@
 
 ### F-17: Teilkörperwäsche — Indikation
 
-**Fakt:** Die Teilkörperwäsche ist keine „halbe Arbeit", sondern eine bewusste Anpassung an den Zustand („so viel wie nötig, so wenig belastend"). Indikationen: Kreislauf-Instabilität, starke Schmerzen, schwere Erschöpfung, Palliativsituation, Fieber, Demenz mit hoher Abwehr. Priorität: Gesicht/Mund, Achseln, Intim, Hände, Hautfalten. Es ist eine pflegerische Entscheidung (§ 4 PflBG).
+**Fakt:** Die Teilkörperwäsche ist keine „halbe Arbeit", sondern eine bewusste Anpassung an den Zustand: Umfang und Reihenfolge der Waschung richten sich nach der individuellen Patientensituation, den Wünschen und den hygienischen Notwendigkeiten — nicht nach starrem Schema. Es ist eine pflegerische Entscheidung (§ 4 PflBG).
+⚠️ Quelle beschaffen (konkrete Primärquelle): konkrete Indikationsliste (Kreislauf-Instabilität, starke Schmerzen, schwere Erschöpfung, Palliativsituation, Fieber, Demenz mit hoher Abwehr) und feste Prioritäten-Reihenfolge (Gesicht/Mund, Achseln, Intim, Hände, Hautfalten) — im vorhandenen Korpus nicht direkt belegbar.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Entscheidung
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (Juchli ATLs 1987; § 4 PflBG)
+**Primärquelle:** (Pflege heute Kap. Körperpflege; § 4 PflBG)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Duschen, Ganz- oder Teilkörperwaschung können mit Unterstützung"
+- Zitat: "Die Reihenfolge bei der Ganzkörperwaschung richtet sich nach der individuellen Patientensituation"
 **Praxisfehler:** Schwache Patienten besonders gründlich waschen „um Vorrat zu schaffen" — der Patient verliert zusätzlich Energie und Wärme (Kollapsgefahr).
 
 **Misconceptions:**
