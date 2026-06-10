@@ -119,10 +119,16 @@
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (IDDSI 2019; Pflege heute 7. Aufl., Kap. 7.11 — Auswahl der Speisen)
+**Primärquelle:** (Complete IDDSI Framework — Detailed Definitions 2.0, 2019, CC BY-SA 4.0; Pflege heute 7. Aufl., Kap. 7.11 — Auswahl der Speisen)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Flüssigkeiten können in der Regel schlechter kontrolliert werden als dickflüssige Speisen"
+- Quelle: `leitlinien-volltext/iddsi-framework.txt`
+- Zitat: "the IDDSI Framework consisting of a continuum of 8 levels (0-7)" (8 Levels 0–7)
+- Zitat: "Levels are identified by numbers, text labels and colour codes." (Kennzeichnung)
+- Zitat: "Less than 1 mL remaining in the 10 mL slip tip syringe" (Flow-Test, 10-ml-Spritze, Beispiel Level 0)
+- Zitat: "texture modified foods and thickened liquids used for individuals with dysphagia of all ages" (Geltungsbereich)
+- Hinweis (TEILWEISE geklärt): Die Aussage "Levels 0–7 + Flow-Test (10-ml-Spritze)" ist mit IDDSI 2019 nun verbatim belegt. Die exakte Bereichsaufteilung "Getränke 0–4 / Nahrung 3–7" ist in diesem Detailed-Definitions-Volltext nicht als einzelner Satz verbatim enthalten (im Original nur grafisch dargestellt) → ⚠️ bleibt für die Bereichsgrenzen (IDDSI Complete Framework Grafik / Cichero et al. 2017, Dysphagia 32:293–314).
 **Praxisfehler:** Alte Nomenklatur (Nektar/Honig/Pudding) als offizielle Begriffe verwenden.
 
 **Misconceptions:**

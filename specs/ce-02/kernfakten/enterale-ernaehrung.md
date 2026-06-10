@@ -208,21 +208,29 @@
 
 ### F-10: Vorsichtiger Kostaufbau — Mengensteigerung nur bei Verträglichkeit (Refeeding-Risiko)
 
-**Fakt:** Die Nahrungsmenge darf immer erst gesteigert werden, wenn die vorangegangene Menge über mindestens 24 Std. gut vertragen wurde; bei Unverträglichkeit (Erbrechen, Durchfall) wird auf die zuletzt vertragene Menge reduziert. Besondere Gefahr nach langer Mangelernährung: das Refeeding-Syndrom — bei zu schneller Nahrungszufuhr treiben hohe Insulinspiegel Elektrolyte (Phosphat, Kalium, Magnesium) in die Zellen, die Plasmaspiegel crashen (Risiko Herzrhythmusstörungen, Atemversagen). Prophylaxe: langsamer Start (10–20 kcal/kg/Tag), Steigerung über 5–7 Tage, Thiamin + Elektrolyte substituieren, tägliche Laborkontrolle.
+**Fakt:** Die Nahrungsmenge darf immer erst gesteigert werden, wenn die vorangegangene Menge über mindestens 24 Std. gut vertragen wurde; bei Unverträglichkeit (Erbrechen, Durchfall) wird auf die zuletzt vertragene Menge reduziert. Besondere Gefahr nach langer Mangelernährung: das Refeeding-Syndrom — bei zu schneller Kalorienzufuhr treiben steigende Insulinspiegel Elektrolyte (Phosphat, Kalium, Magnesium) in die Zellen, die Plasmaspiegel fallen ab (ASPEN-Definition: Abfall von Phosphat, Kalium und/oder Magnesium um 10–20 % [mild] bis >30 % [schwer] und/oder Organfunktionsstörung bzw. Thiaminmangel, innerhalb von 5 Tagen nach Kalorienstart; Risiko u. a. Herzrhythmusstörungen, Atemversagen). Prophylaxe (ASPEN 2020): langsamer Start mit 10–20 kcal/kg in den ersten 24 Std. und Steigerung um 33 % des Ziels alle 1–2 Tage; vor Start Serum-Kalium, -Magnesium und -Phosphat kontrollieren und niedrige Werte ausgleichen; Thiamin 100 mg vor Nahrungsbeginn substituieren.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Komplikation
 **Bloom-Potential:** 4 (klinische Beurteilung)
-**Primärquelle:** (Pflege heute 7. Aufl. Kap. 7.7.5; DGEM S3-Leitlinie 2013/2020; ESPEN Guidelines)
+**Primärquelle:** (Pflege heute 7. Aufl. Kap. 7.7.5; ASPEN Consensus Recommendations for Refeeding Syndrome 2020, Nutr Clin Pract 35(2):178–195; DGEM S3-Leitlinie 2013/2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "darf immer erst gesteigert werden, wenn die vorangegangene"
-- Belege für Refeeding-spezifischen Elektrolyt-Mechanismus (Hypophosphatämie, 10–20 kcal/kg/Tag, Thiamin): ⚠️ Quelle beschaffen (DGEM S3-Leitlinie Klinische Ernährung 2013/2020; ESPEN Guidelines on Refeeding) — in Pflege heute/DNQP nicht namentlich belegt
+- Quelle: `leitlinien-volltext/aspen-refeeding.txt`
+- Zitat: "A decrease in any 1, 2, or 3 of serum phosphorus, potassium, and/or magnesium levels by 10%–20%" (Definition/Diagnosekriterien)
+- Zitat: "And occurring within 5 days of reinitiating or substantially increasing energy provision." (Zeitfenster)
+- Zitat: "Rising insulin levels drive phosphorus and potassium intracellularly" (Mechanismus)
+- Zitat: "Initiate with 100–150 g of dextrose or 10–20 kcal/kg for the first 24 hours" (Kostaufbau 10–20 kcal/kg)
+- Zitat: "advance by 33% of goal every 1 to 2 days" (Steigerung)
+- Zitat: "Check serum potassium, magnesium, and phosphorus before initiation of nutrition." (Elektrolytkontrolle)
+- Zitat: "Supplement thiamin 100 mg before feeding or before initiating dextrose-containing IV fluids in patients at risk." (Thiamin)
+- Hinweis: Die in v9 noch offene ⚠️-Markierung (10–20 kcal/kg, Thiamin, Elektrolyt-Mechanismus, Hypophosphatämie) ist mit ASPEN 2020 nun verbatim belegt. Die in Pflege heute verwendete pauschale Angabe "Steigerung über 5–7 Tage" ist in ASPEN nicht verbatim als Fixwert genannt (ASPEN: "advance by 33% of goal every 1 to 2 days"); deshalb oben auf die ASPEN-Formulierung umgestellt.
 **Praxisfehler:** Nach langer Mangelernährung sofort die volle Kalorienmenge geben — löst das Refeeding-Syndrom aus.
 
 **Misconceptions:**
 - `M1`: **"Nach Mangelernährung schnell viel Energie geben, um aufzubauen"** — Genau das löst das Refeeding-Syndrom aus; Elektrolyte stürzen ab. Fachbegriff: "Aufbau-Irrtum".
-- `M2`: **"Refeeding-Syndrom betrifft nur Magersucht-Patienten"** — Risikogruppen sind breit: Tumorpatienten, Alkoholkranke, BMI <18,5, ≥10 Tage ohne adäquate Nahrung.
+- `M2`: **"Refeeding-Syndrom betrifft nur Magersucht-Patienten"** — Risikogruppen sind breit; ASPEN nennt u. a. Tumorerkrankung, chronischen Alkohol-/Drogenkonsum, Essstörungen sowie längeres Fasten/negligible Nahrungsaufnahme (BMI <16 bzw. 16–18,5 kg/m² als Risikokriterien).
 - `M3`: **"Bei parenteraler Ernährung tritt es nicht auf"** — Der Mechanismus ist wegunabhängig; das Risiko hängt an Menge und Geschwindigkeit, nicht am Weg.
 
 ---

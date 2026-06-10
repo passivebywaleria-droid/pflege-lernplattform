@@ -25,6 +25,9 @@ get() { # <url> <slug>
 
 get "https://register.awmf.org/assets/guidelines/003-001l_S3_Prophylaxe-venoese-Thromboembolie-VTE_2026-04.pdf" "awmf-vte-prophylaxe"
 get "https://edoc.rki.de/bitstream/handle/176904/260/220QQ8Itoi1ME.pdf?sequence=1&isAllowed=y" "rki-krinko-harnwegsinfektion"
+get "https://achpccg.com/wp-content/uploads/2024/10/Nut-in-Clin-Prac-2020-da-Silva-ASPEN-Consensus-Recommendations-for-Refeeding-Syndrome.pdf" "aspen-refeeding"
+get "https://www.csap.cam.ac.uk/media/uploads/files/1/leonard-2004-standardised-communication.pdf" "sbar-leonard-2004"
+get "https://www.nhshighland.scot.nhs.uk/media/ap4fvgob/complete_iddsi_framework_detailed_definitions_july_2019.pdf" "iddsi-framework"
 # Weitere frei verfügbare Quellen hier ergänzen (siehe specs/QUELLEN-EINKAUFSLISTE-2026-06-10.md Abschnitt A/B):
 # get "<DGE D-A-CH Referenzwerte>" "dge-referenzwerte"
 # get "<ESPEN/DGEM Klinische Ernaehrung>" "espen-klinische-ernaehrung"

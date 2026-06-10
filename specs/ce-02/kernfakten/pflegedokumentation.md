@@ -144,8 +144,18 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 4 (Analysieren, Anwenden)
-**Primärquelle:** (Leonard M., Graham S., Bonacum D. 2004, BMJ Qual Saf)
-**Beleg:** ⚠️ Quelle beschaffen (Leonard et al. 2004, BMJ Qual Saf — nicht im verfügbaren Recherche-Korpus; SBAR kommt in `pflege-heute-volltext/pflege-heute.txt` nicht vor)
+**Primärquelle:** (Leonard M., Graham S., Bonacum D. 2004, Qual Saf Health Care 13(Suppl 1):i85–i90)
+**Beleg:**
+- Quelle: `leitlinien-volltext/sbar-leonard-2004.txt`
+- Zitat: "SBAR (situation, background, assessment, recommendation): a situational briefing model" (Akronym/Komponenten)
+- Zitat: "situation 2 what is going on with the" (Situation; Original-OCR-"2" = Gedankenstrich)
+- Zitat: "background 2 what is the clinical background," (Background)
+- Zitat: "assessment 2 what do I think the problem" (Assessment)
+- Zitat: "recommendation 2 what would I do to correct" (Recommendation)
+- Zitat: "SBAR is a very effective tool that provides a common and" (Zweck)
+- Zitat: "predictable structure to the communication." (Zweck, Forts.)
+- Zitat: "Communication failures are the leading cause of inadvertent patient harm." (Begründung)
+- Hinweis: ⚠️-Markierung aus v9 geklärt — SBAR und alle vier Komponenten sind in Leonard et al. 2004 verbatim belegt.
 
 **Misconceptions:**
 - `M1`: **"SBAR steht für 'Schnell, Beknöpft, Aussagekräftig, Richtig'"** — Es ist ein englisches Akronym: Situation, Background, Assessment, Recommendation.
@@ -161,7 +171,7 @@
 **Wissensart:** Fakt
 **Bloom-Potential:** 4
 **Primärquelle:** (WHO Patient Safety / High 5s 2007)
-**Beleg:** ⚠️ Quelle beschaffen (WHO 2007, High-5s-Initiative — nicht im verfügbaren Recherche-Korpus; ISBAR kommt in `pflege-heute-volltext/pflege-heute.txt` nicht vor)
+**Beleg:** ⚠️ Quelle beschaffen (WHO 2007, High-5s-Initiative — nicht im verfügbaren Recherche-Korpus; ISBAR/"Identification" kommt weder in `pflege-heute-volltext/pflege-heute.txt` noch in der neu verfügbaren `leitlinien-volltext/sbar-leonard-2004.txt` vor — Leonard 2004 begründet nur SBAR, nicht das vorangestellte "I". Bleibt ⚠️ bis WHO-High-5s-Volltext lokal verfügbar.)
 
 **Misconceptions:**
 - `M1`: **"ISBAR und SBAR sind völlig austauschbar"** — ISBAR ist sicherer bei der Patienten-Identifikation; die WHO empfiehlt ISBAR für Kliniken.
