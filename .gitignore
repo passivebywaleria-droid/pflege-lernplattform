@@ -75,3 +75,4 @@ content/**/*.backup/
 # Service Worker (Serwist generiert)
 public/sw.js
 public/swe-worker-*.js
+recherche/leitlinien/*.pdf
