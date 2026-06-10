@@ -1,0 +1,263 @@
+# Kernfakten: Essen & Trinken anreichen
+
+| Feld | Wert |
+|------|------|
+| themaId | `essen-anreichen` |
+| ceId | `ce-02` |
+| cluster | D (Ernährung) |
+| geschätzteUE | 7 |
+| wissensart | handlung |
+| quellen | Pflege heute 7. Aufl. Kap. 7 (Ernährung; Schlucken und Schlucktraining; Aspirationsprophylaxe); Expertenstandard Ernährungsmanagement (DNQP); IDDSI 2019; GUSS (Trapl et al. 2007); DGG/DGN S1-Leitlinie Neurogene Dysphagie 2020 |
+| einträge | 13 |
+| erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
+
+---
+
+### F-01: Sitzposition über 60° als Aspirationsschutz
+
+**Fakt:** Vor dem Anreichen muss der Oberkörper mindestens 60° aufrecht sein (besser 90°). Eine aufrechte Körperhaltung unterstützt den physiologischen Transportweg der Nahrung durch die Speiseröhre und verhindert ein Verschlucken (Schwerkraft leitet den Bolus zum Ösophagus statt zur Trachea). Essen im Liegen ist kontraindiziert.
+
+**Prüfungsrelevanz:** hoch
+**Wissensart:** Maßnahme
+**Bloom-Potential:** 2-3 (Verstehen, Anwenden)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7 Ernährung; DGE 2024)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "eine aufrechte Körperhaltung den physiologischen Transportweg der Nahrung durch die Speiseröhre"
+**Praxisfehler:** Nur den Kopf hochlagern statt den ganzen Oberkörper aufzurichten.
+
+**Misconceptions:**
+- `M1`: **"Der Patient kann auch im Liegen essen, Hauptsache der Kopf ist leicht erhöht"** — Im Liegen läuft der Bolus Richtung Trachea; der ganze Oberkörper muss über 60° aufrecht sein. Fachbegriff: "Flachlagerungs-Irrtum".
+- `M2`: **"Die Temperatur ist egal, der Patient sagt wenn es zu heiß ist"** — Viele Patienten (Demenz, Schlaganfall mit gestörter Sensibilität) können das nicht zuverlässig melden; Temperaturkontrolle am Innenarm ist Pflegeaufgabe.
+
+---
+
+### F-02: Würde beim Essenreichen — Augenhöhe, Serviette statt Lätzchen
+
+**Fakt:** Beim Anreichen wahrt die Pflegefachperson die Würde des erwachsenen Patienten: auf Augenhöhe sitzen (nicht herabsehen), eine Serviette statt eines "Lätzchens" oder "Esslatzes" anbieten, den Ausdruck "Füttern" vermeiden. Der Patient bestimmt Geschwindigkeit und Reihenfolge der Mahlzeit.
+
+**Prüfungsrelevanz:** hoch
+**Wissensart:** Konzept
+**Bloom-Potential:** 2-3
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7 — Respektvolle Kommunikation; WHO 2015; § 1901a BGB)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Beim Essenreichen respektieren Pflegende die Würde des erwachsenen Patienten"
+- Zitat: "Ihm nicht „Esslatz“ oder „Lätzchen“ anbieten, sondern eine Serviette"
+- Zitat: "Der Patient bestimmt Geschwindigkeit und Reihenfolge der Mahlzeit"
+**Praxisfehler:** Stehen über dem Bett (Machtgefälle), Hetzen aus Zeitdruck.
+
+**Misconceptions:**
+- `M1`: **"Es reicht, wenn ich freundlich bin — Stehen oder Sitzen ist egal"** — Körperhaltung ist Teil der nonverbalen Kommunikation; Stehen über dem liegenden Patienten signalisiert Machtgefälle. Fachbegriff: "Haltungs-Unterschätzung".
+- `M2`: **"Der Patient bekommt eh nichts mit, weil er dement ist"** — Menschen mit Demenz spüren Emotionen und Körperhaltung oft feinfühliger; Würde ist hier wichtiger, nicht weniger wichtig.
+
+---
+
+### F-03: Aspirationsschutz-Technik — Kopf nach vorn, kleine Bissen, Schluck abwarten
+
+**Fakt:** Beim Anreichen: Kopf leicht nach vorne geneigt (Kinn Richtung Brust — die Epiglottis verschließt so die Trachea), kleine Bissen (halber Löffel), und erst der nächste Bissen, wenn der Patient fertig gekaut und heruntergeschluckt hat. Kein Druck, Patient bestimmt das Tempo.
+
+**Prüfungsrelevanz:** sehr hoch
+**Wissensart:** Maßnahme
+**Bloom-Potential:** 3-4 (Anwenden, Analysieren)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7.11 Schlucktraining; DGG/DGN S1-LL Neurogene Dysphagie 2020)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Kopf leicht nach vorne geneigt"
+- Zitat: "Bevor sie den nächsten Bissen anbieten, warten sie, bis der Patient fertig gekaut und heruntergeschluckt hat"
+**Praxisfehler:** Kopf nach hinten (Reklination) beim Trinken aus engem Becher — öffnet die Luftröhre.
+
+**Misconceptions:**
+- `M1`: **"Den Kopf nach hinten beugen hilft beim Schlucken"** — Reklination öffnet die Trachea und ist hochgefährlich; der Kopf muss nach vorn. Für das Trinken: Nasenschlitzbecher. Fachbegriff: "Reklinations-Irrtum".
+- `M2`: **"Große Bissen sind effizienter, der Patient ist schneller satt"** — Große Bissen überfordern den Schluckakt und erhöhen das Aspirationsrisiko; ein halber Löffel reicht.
+
+---
+
+### F-04: Dysphagie-Warnzeichen beim Anreichen
+
+**Fakt:** Dysphagie (Schluckstörung) zeigt sich beim Essen durch: Speichel-/Essensaustritt aus dem Mund, Speisereste in Mund/Wangentaschen, gurgelnde Sprache/Stimmverschlechterung, häufiges Verschlucken, Husten und Würgen — oder gerade das Ausbleiben von Husten und Würgen. Tritt auf bei Schlaganfall, Schädel-Hirn-Trauma, Demenz, nach längerer Beatmung, Parkinson, MS.
+
+**Prüfungsrelevanz:** sehr hoch
+**Wissensart:** Assessment
+**Bloom-Potential:** 3 (Anwenden)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7.11.2 Schluckstörung)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Gurgelnde Sprache, Stimmverschlechterung"
+- Zitat: "Die Gefahren und Folgen einer Dysphagie können für den Betroffenen schwerwiegend sein"
+**Praxisfehler:** Langes Essen als reine Altersnormalität abtun statt als Warnzeichen werten.
+
+**Misconceptions:**
+- `M1`: **"Wenn der Patient nicht hustet, hat er keine Schluckstörung"** — Stille Aspiration ("silent aspiration") verläuft ohne Husten; gerade das Ausbleiben von Husten ist ein Warnzeichen. Fachbegriff: "Stille-Aspirations-Blindheit".
+- `M2`: **"Bei Schluckstörung einfach pürieren — das löst das Problem"** — Dysphagie ist individuell; nur ein Schluck-Assessment (GUSS/Logopädie) zeigt die passende Konsistenz.
+
+---
+
+### F-05: Schluck-Screening vor oraler Kost (GUSS)
+
+**Fakt:** Vor der Nahrungsaufnahme bei Dysphagie-Verdacht wird geprüft, ob Husten- und Schluckreflex intakt sind — ein Patient darf nur bei intakten Schutzreflexen essen oder trinken, sonst droht Aspiration (im Extremfall Erstickungstod). Strukturiertes Screening (z.B. GUSS — Gugging Swallowing Screen, Trapl et al. 2007) testet stufenweise von trocken über halbfest und flüssig bis fest; bei Versagen einer Stufe: Stopp, Logopädie.
+
+**Prüfungsrelevanz:** hoch
+**Wissensart:** Assessment
+**Bloom-Potential:** 4 (Analysieren)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7.11.3 Beurteilung des Schluckvorgangs; GUSS — Trapl et al., Stroke 2007;38:2948-2952)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Ein Patient darf nur bei intakten Schutzreflexen essen oder trinken"
+**Praxisfehler:** Mit der schwierigsten Konsistenz (dünner Flüssigkeit) beginnen statt von leicht zu schwer.
+
+**Misconceptions:**
+- `M1`: **"Ich fange gleich mit Wasser an, das ist am schnellsten"** — Dünne Flüssigkeit ist am schwersten zu kontrollieren; Reihenfolge ist trocken → halbfest → flüssig → fest. Fachbegriff: "Reihenfolge-Fehler".
+- `M2`: **"Wenn Stufe 2 nicht klappt, probiere ich Stufe 3 trotzdem"** — Jedes Versagen = sofort Stopp; das Screening ist kein Versuch-und-Irrtum-Verfahren.
+
+---
+
+### F-06: IDDSI — internationaler Standard für Konsistenz
+
+**Fakt:** IDDSI (International Dysphagia Diet Standardisation Initiative, 2019) standardisiert Konsistenzen mit Levels 0-7 und ersetzt alte Bezeichnungen wie "Nektar", "Honig", "Pudding". Getränke: Level 0-4 (dünn → extrem dick); Nahrung: Level 3-7 (flüssig → normal). Geprüft mit dem Flow-Test (10-ml-Spritze). Hintergrund: Flüssigkeiten können in der Regel schlechter kontrolliert werden als dickflüssige Speisen.
+
+**Prüfungsrelevanz:** mittel
+**Wissensart:** Klassifikation
+**Bloom-Potential:** 3 (Anwenden)
+**Primärquelle:** (IDDSI 2019; Pflege heute 7. Aufl., Kap. 7.11 — Auswahl der Speisen)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Flüssigkeiten können in der Regel schlechter kontrolliert werden als dickflüssige Speisen"
+**Praxisfehler:** Alte Nomenklatur (Nektar/Honig/Pudding) als offizielle Begriffe verwenden.
+
+**Misconceptions:**
+- `M1`: **"Je dicker das Getränk, desto sicherer für jeden Dysphagie-Patienten"** — Zu dick bedeutet weniger Trinkmenge (Dehydration) und Geschmacksverlust; das individuell passende Level (GUSS/Logopädie) ist richtig. Fachbegriff: "Dicker-ist-besser-Irrtum".
+- `M2`: **"Nektar, Honig, Pudding sind die offiziellen Begriffe"** — Seit IDDSI 2019 durch Level 1-4 ersetzt; die alten Begriffe waren uneinheitlich.
+
+---
+
+### F-07: Andicken von Getränken
+
+**Fakt:** Flüssigkeiten werden bei Bedarf mit einem Andickungsmittel angedickt, damit der Patient den Schluckvorgang besser kontrollieren kann. Vorgehen: Pulver gleichmäßig einstreuen, umrühren, ca. 2 Minuten quellen lassen, nochmal rühren, dann IDDSI-Level prüfen. Keine kohlensäurehaltigen Getränke (CO2 zerstört die Bindung), keine Medikamente ohne Absprache mit der Apotheke.
+
+**Prüfungsrelevanz:** mittel
+**Wissensart:** Maßnahme
+**Bloom-Potential:** 3 (Anwenden)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7.11 — Trinktraining; IDDSI 2019; Hersteller-Fachinfos)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Flüssigkeiten ggf. mit einem Andickungsmittel andicken"
+**Praxisfehler:** Sofort geben ohne Quellzeit — das Getränk dickt erst im Mund/Rachen nach.
+
+**Misconceptions:**
+- `M1`: **"Ich rühre einmal um und gebe es direkt dem Patienten"** — Ohne 2 Min Quellzeit ist die Flüssigkeit zu dünn und dickt erst beim Schlucken nach. Fachbegriff: "Quell-Zeit-Fehler".
+- `M2`: **"Ich gebe Cola mit Andickungspulver, das schmeckt besser"** — Kohlensäure zerstört die Andickung; nur stille Getränke verwenden.
+
+---
+
+### F-08: Spezielle Trinkhilfen (Nasenschlitzbecher u.a.)
+
+**Fakt:** Normale Becher mit engem Durchmesser sind bei Dysphagie ungeeignet, weil der Kopf zum Trinken in den Nacken gelegt werden muss (Reklination → Aspirationsgefahr). Besser sind Gefäße mit Nasenausschnitt (Nasenschlitzbecher) oder großem Durchmesser. Ein Sicherheitstrinkbecher gibt nur eine definierte Menge pro Schluck ab. Strohhalm nur auf logopädische/ärztliche Anordnung.
+
+**Prüfungsrelevanz:** mittel
+**Wissensart:** Maßnahme
+**Bloom-Potential:** 2-3
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7.11 — Trinktraining/Trinkgefäße; DGG/DGN 2020)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Besser sind Gefäße mit Nasenausschnitt"
+**Praxisfehler:** Strohhalm als pauschale Standardlösung — manche Patienten saugen zu schnell.
+
+**Misconceptions:**
+- `M1`: **"Ein Strohhalm ist die einfachste Lösung für alle Dysphagie-Patienten"** — Manche saugen zu stark und bekommen zu viel auf einmal (Aspiration); Strohhalm nur auf Anordnung. Fachbegriff: "Strohhalm-Pauschallösung".
+- `M2`: **"Der Nasenschlitzbecher sieht lustig aus, das ist schlecht für die Würde"** — Die Alternative wäre Aspirationsrisiko; Würde heißt hier: sicher und selbstständig trinken können.
+
+---
+
+### F-09: Kommunikation und Tempo beim Anreichen
+
+**Fakt:** Beim Anreichen wird dem Patienten Zeit gelassen und er nie gedrängt; Pausen sind nötig, da Esstraining Kraft und Konzentration kostet. Kommunikationsregeln: Autonomie wahren (fragen statt bestimmen), Handlungen ankündigen, offene Fragen stellen, nie gleichzeitig sprechen und essen (Aspirationsrisiko), Körpersprache lesen und respektieren. Bei Ablehnung: Grund suchen, nie zwangsfüttern (§ 1901a BGB).
+
+**Prüfungsrelevanz:** hoch
+**Wissensart:** Konzept (Schwerpunkt KB II.1 Kommunikation)
+**Bloom-Potential:** 4 (Analysieren, Bewerten)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7.11 — Trink- und Esstraining; § 1901a BGB)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Dem Patienten Zeit lassen und ihn nie drängen"
+**Praxisfehler:** Beim Kauen/Schlucken plaudern (Aspirationsrisiko) oder bei Ablehnung weiterfüttern (Paternalismus).
+
+**Misconceptions:**
+- `M1`: **"Wenn der Patient ablehnt, muss ich trotzdem füttern — er braucht Energie"** — Zwangsfüttern verletzt die Selbstbestimmung (§ 1901a BGB) und ist Gewalt; Grund verstehen, Alternativen anbieten, Arzt informieren. Fachbegriff: "Paternalismus-Falle".
+- `M2`: **"Ich frage: 'Schmeckt's?' — das reicht als Kommunikation"** — Geschlossene Fragen liefern automatische Ja-Antworten; offene Fragen ("Wie schmeckt dir das?") geben echte Information.
+
+---
+
+### F-10: Essen anreichen bei Kindern
+
+**Fakt:** Kinder sind keine kleinen Erwachsenen: Essensverweigerung ab ca. 2 Jahren ist entwicklungspsychologisch oft normal. Prinzipien: Wunschkost, spielerisch anreichen, kein Druck/keine Bestrafung, kleine Portionen häufiger, Eltern als Partner einbeziehen. Fingerfood (mundgerechte Portionen) fördert Selbstständigkeit. Bei anhaltender Verweigerung über mehrere Mahlzeiten: Kinderärztin informieren.
+
+**Prüfungsrelevanz:** mittel
+**Wissensart:** Maßnahme
+**Bloom-Potential:** 3 (Anwenden)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7 — Fingerfood/mundgerechte Portionen; DGE 2024)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "„Fingerfood“, d. h. lauwarme Nahrung in mundgerechten Portionen"
+**Praxisfehler:** Druck oder Bestrafung ("kein Nachtisch, wenn du das nicht isst").
+
+**Misconceptions:**
+- `M1`: **"Bei Kindern muss ich strenger sein, sonst essen sie nie genug"** — Druck und Bestrafung sind pädagogisch schädlich und bei kranken Kindern zusätzlich belastend; bei Abwehr: Pause, anderes anbieten, später.
+- `M2`: **"Eltern stören beim Essen, die soll ich rausschicken"** — Eltern kennen das Kind und sind Partner; sie wissen, was beim Essen hilft.
+
+---
+
+### F-11: Essen anreichen bei Demenz
+
+**Fakt:** Bei Demenz erschweren Agnosie (Speisen nicht erkennen) und Apraxie (Besteck nicht benutzen können) das Essen. Anpassungen: Fingerfood statt Besteck (erhält Selbstständigkeit), eine erkennbare Komponente pro Teller statt Mischungen, ruhige reizarme Umgebung (keine Reizüberflutung), biografie-vertraute Speisen. Selbstständigkeit so lange wie möglich erhalten.
+
+**Prüfungsrelevanz:** hoch
+**Wissensart:** Maßnahme
+**Bloom-Potential:** 3-4
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7 — Selbstständigkeit fördern / kognitiv beeinträchtigte Menschen; DGE 2024 Ernährung im Alter)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Insbesondere für Menschen mit kognitiven Einschränkungen muss eine Reizüberflutung vermieden werden"
+**Praxisfehler:** Aus Zeitgründen füttern, obwohl der Patient mit Fingerfood noch selbst essen könnte.
+
+**Misconceptions:**
+- `M1`: **"Wenn er das Essen nicht erkennt, muss ich ihm einfach mehr erklären"** — Bei Agnosie hilft sprachliche Erklärung nicht mehr; besser: vertraute Speisen zeigen, Bissen vormachen, Geruch aktivieren. Fachbegriff: "Kognitive Überforderung".
+- `M2`: **"Animation und Gesellschaft beim Essen helfen Demenz-Patienten"** — Beim Essen überfordert Stimulation (TV, Musik) und führt zum Abbruch; hier gilt: ruhige Umgebung.
+
+---
+
+### F-12: Beobachtung während des Essens + Nachsorge
+
+**Fakt:** Während des Anreichens beobachtet die Pflegefachperson parallel Mundbewegungen (Lippenverschluss, Kauen, Zungenbewegung, Taschenbildung), Schluckakt (Heben/Senken des Kehlkopfs, Stimme nach dem Schluck) und Atmung (Husten, Atemnot). Nach dem Essen: Patient noch etwa eine halbe Stunde aufrecht sitzen lassen, um eine Aspiration zu vermeiden.
+
+**Prüfungsrelevanz:** hoch
+**Wissensart:** Assessment
+**Bloom-Potential:** 3-4
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7.11 — Trink- und Esstraining/Schluckreflex; DGG/DGN 2020)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Den Patienten nach dem Essen noch etwa eine halbe Stunde aufrecht sitzen lassen, um eine Aspiration zu vermeiden"
+**Praxisfehler:** Patient direkt nach dem Essen flach hinlegen (Reflux-/Aspirationsrisiko).
+
+**Misconceptions:**
+- `M1`: **"Wenn der Adamsapfel sich bewegt, ist alles sicher"** — Die Kehlkopfbewegung zeigt nur, dass geschluckt wurde, nicht wohin der Bolus ging; immer mehrere Zeichen prüfen (Stimm-Check, Mundkontrolle, Atmung). Fachbegriff: "Adamsapfel-Alleinkriterium".
+- `M2`: **"Nach dem Essen kann ich den Patienten direkt ins Bett legen"** — Der Oberkörper muss mindestens 30 Min hoch bleiben (Reflux-/Pneumonie-Risiko).
+
+---
+
+### F-13: Dokumentation von Essen und Trinken
+
+**Fakt:** Jede Mahlzeit wird dokumentiert: Essmenge (Portion ¼/½/¾/voll oder Gramm), Trinkmenge (ml exakt, ggf. Ein-/Ausfuhr-Bilanz), Konsistenz (IDDSI-Level), Selbstständigkeit (selbst/Teilhilfe/Vollhilfe), Auffälligkeiten (Husten, Verweigerung, Schmerzen) sowie Assessment-Parameter (Gewicht, MNA). Die Einrichtung stellt geeignete Instrumente und Hilfsmittel zur Einschätzung und Dokumentation bereit (DNQP). Dokumentationspflicht nach § 630f BGB.
+
+**Prüfungsrelevanz:** sehr hoch
+**Wissensart:** Dokumentation
+**Bloom-Potential:** 5 (Bewerten — Entscheiden was relevant ist)
+**Primärquelle:** (Expertenstandard Ernährungsmanagement DNQP; § 630f BGB)
+**Beleg:**
+- Quelle: `dnqp-standards-index/ernaehrungsmanagement.txt`
+- Zitat: "geeignete Instrumente und Hilfsmittel zur Einschätzung und Dokumentation zur Verfügung stehen"
+**Praxisfehler:** Nur "Besonderes" notieren statt jede Mahlzeit — Verlaufstrends (schleichende Exsikkose) bleiben unsichtbar.
+
+**Misconceptions:**
+- `M1`: **"Ich schreibe nur auf, wenn was besonderes war — sonst ist es Routine"** — § 630f BGB verlangt lückenlose Dokumentation; Probleme erkennt man nur über Verlaufsdaten. Fachbegriff: "Dokumentations-Lücke".
+- `M2`: **"Trinkmenge schätze ich — genau messen ist übertrieben"** — Bei herz-/nieren-/lungenkranken Patienten ist exakte Bilanzierung entscheidend; "ein halber Becher" kann 100 oder 200 ml sein.
