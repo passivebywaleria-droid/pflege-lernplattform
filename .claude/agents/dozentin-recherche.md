@@ -105,18 +105,27 @@ Nur diese Quellen sind für den Beleg gültig — sie sind in Lesereihenfolge ex
 
 Die freien DNQP-Auszüge decken nur ~30 % der Fakten direkt ab (z. B. Sturz: nur Risiko-Einschätzung, Kraft/Balance, Umgebung). **Hüftprotektoren, Fixierung, Dokumentation, Sturzangst stehen NICHT im Auszug** — aber in Pflege heute. Deshalb: **Multi-Source.** Belege jeden Fakt gegen die Quelle, die ihn aussagt, nicht zwanghaft gegen DNQP.
 
+### HOHE LATTE (verbindlich, siehe `specs/QUALITAETSSTANDARD-GROUNDING.md`)
+
+**Nur STÜTZT zählt.** Ein themenverwandtes Zitat ist KEIN Beleg. Jede prüfungsrelevante Teilaussage eines Fakts — **jede Zahl, jeder Schwellenwert, jede benannte Skala, jede Liste, jede Rechtsnorm** — braucht ein Zitat, das GENAU diese Aussage direkt stützt. Ein Zitat, das nur das Thema oder die Definition trägt, reicht für einen Multi-Claim-Fakt NICHT.
+
 ### So belegst du (pro Fakt)
 
-1. **Suche** das Konzept über ALLE Grounding-Quellen — mit `grep`, **flexibel/Synonyme** (z. B. „Post-Fall-Syndrom" steht als **„Sturzphobie"**; „Fixierung" als „freiheitsentziehende Maßnahmen").
-2. **Wähle** eine **kurze, zusammenhängende** Verbatim-Phrase (eine Klausel, ~8-20 Wörter), die den Fakt stützt. KEINE langen mehrzeiligen Zitate (scheitern an Tabellen/Spalten).
-3. **Verifiziere sofort:** `npx tsx scripts/zitat-verifizierer.ts "<quelldatei>" "<zitat>"` → muss ✅ MATCH sein.
-4. **Trage den Beleg-Block ein** (siehe Format unten).
-5. **Findet sich NICHTS** in den lokalen Quellen → Fakt mit `**Beleg:** ⚠️ Quelle beschaffen ({welche Quelle, z.B. WHO-Sturzreport})` markieren. **NIEMALS ein Zitat erfinden.**
+1. **Zerlege den Fakt** in seine prüfungsrelevanten Teilaussagen (Kern-Definition + jede konkrete Zahl/Skala/Liste/Norm).
+2. **Suche pro Teilaussage** ein direkt stützendes Verbatim-Zitat über ALLE Grounding-Quellen — `grep`, **flexibel/Synonyme** („Post-Fall-Syndrom"=„Sturzphobie"; „Fixierung"=„freiheitsentziehende Maßnahmen").
+3. **Wähle** kurze, zusammenhängende Phrasen (~8-20 Wörter, keine Tabellen/Zeilenumbruch-Silbentrennung). Mehrere Belege pro Fakt sind die REGEL, nicht die Ausnahme.
+4. **Verifiziere sofort:** `npx tsx scripts/zitat-verifizierer.ts "<quelldatei>" "<zitat>"` → muss ✅ MATCH.
+5. **Selbst-Test pro Fakt (adversarial):** Frage dich ehrlich „Stützt dieses Zitat den KONKRETEN Claim — oder nur das Thema?" Wenn nur das Thema → es ist KEIN gültiger Beleg.
+6. **Eine ungedeckte Teilaussage hat genau 3 Wege** (KEIN vierter):
+   a) Zweitzitat aus dem Korpus, das sie direkt deckt.
+   b) `⚠️ Quelle beschaffen ({konkrete Primärquelle, z.B. DGE-Referenzwerte 2024 / AWMF-S3 / ESPEN / Braden&Bergstrom 1987})` — Beschaffung ist die Standard-Antwort, nicht Notlösung.
+   c) Die Detail-Aussage aus dem Fakt-Text ENTFERNEN oder als `⚠️ laut Primärquelle X` kennzeichnen.
+   **NIEMALS** ein themenverwandtes Zitat als Beleg stehen lassen. **NIEMALS** ein Zitat erfinden.
 
-### Abschluss-Pflicht
+### Abschluss-Pflicht (zwei Gates)
 
-Am Ende: `npx tsx scripts/zitat-verifizierer.ts --check-file specs/ce-{NN}/kernfakten/{themaId}.md`
-→ Muss **„✅ Alle Belege verifiziert"** zeigen (außer den explizit als „Quelle beschaffen" markierten). Bei ❌ → Zitat korrigieren, nicht abgeben.
+1. **Existenz-Gate:** `npx tsx scripts/zitat-verifizierer.ts --check-file specs/ce-{NN}/kernfakten/{themaId}.md` → muss **„✅ Alle Belege verifiziert"** zeigen (außer `⚠️ Quelle beschaffen`). Bei ❌ → Zitat korrigieren.
+2. **Semantik-Gate (HOHE LATTE):** Gehe JEDEN Fakt nochmal adversarial durch — stützt das/die Zitat(e) den KONKRETEN Claim inkl. aller Zahlen/Skalen/Listen? Alles, was nur STÜTZT-NICHT oder TEILWEISE wäre, nach R3 auflösen (Zweitzitat / Quelle beschaffen / Detail entfernen). Erst wenn **0 themenverwandte Belege** verbleiben, ist das Thema fertig.
 
 ---
 
