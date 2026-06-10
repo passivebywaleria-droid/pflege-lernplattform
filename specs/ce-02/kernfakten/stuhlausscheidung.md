@@ -7,27 +7,34 @@
 | cluster | E (Ernährung & Ausscheidung) |
 | geschätzteUE | 10 |
 | wissensart | handlung |
-| quellen | Pflege heute 7. Aufl. Kap. Ausscheidung/Stuhl; Heaton Bristol Stool Scale 1997; AWMF S2k Chronische Obstipation 2022; FG SKM Handlungsempfehlungen Stomapflege 2023 |
+| quellen | Pflege heute 7. Aufl. Kap. 8.2 Stuhl / 24.2.6 Obstipation / 8.2.6 Enterostoma (Korpus-Primärquelle, verbatim belegt); zu beschaffen für Detail-Zahlen: Heaton/Lewis Bristol Stool Scale 1997, Rom-IV-Kriterien, AWMF S2k Chronische Obstipation 2022, FG SKM Handlungsempfehlungen Stomapflege 2023, DGE-Referenzwert Ballaststoffe |
 | einträge | 14 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md) |
+| grounding | 2026-06-10 Dozentin A — auf STÜTZT gehoben gegen pflege-heute.txt; ungedeckte Detail-Zahlen mit ⚠️ markiert (R3), nicht kaschiert |
 
 ---
 
 ### F-01: Normwerte der Stuhlausscheidung
 
-**Fakt:** Normal ist eine große Spannweite: 3× pro Woche bis 3× pro Tag gilt als regelrecht. Die Menge beträgt etwa 100-200 g/Tag, die Form geformt bis weich. Die braune Farbe entsteht durch Sterkobilin, ein Abbauprodukt des Gallenfarbstoffs Bilirubin. Wichtiger als absolute Zahlen ist das individuelle Gewohnheitsmuster des Patienten.
+**Fakt:** Normal ist eine große Spannweite: Im Durchschnitt gilt ein Rhythmus zwischen 3-4× wöchentlich und 1-2× täglich als regelrecht. Die normale Stuhlmenge schwankt beim Erwachsenen zwischen 100 und 500 g täglich (bei Vollkornernährung bis 1.000 g), die Form geformt bis weich (homogene breiige bis feste Masse). Die braune Farbe entsteht durch Sterkobilin, ein Abbauprodukt des Gallenfarbstoffs Bilirubin. Wichtiger als absolute Zahlen ist das individuelle Gewohnheitsmuster des Patienten.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Definition
 **Bloom-Potential:** 1-2 (Erinnern, Verstehen)
-**Primärquelle:** (Heaton Bristol Stool Scale, 1997)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 8.2 Stuhl)
 **Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "ein Rhythmus zwischen 3- bis"
+- Zitat: "4-mal wöchentlich und 1- bis 2-mal täglich"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die normale Stuhlmenge schwankt beim"
+- Zitat: "Erwachsenen zwischen 100 und 500 g täglich"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "wird durch Nahrungsfarbstoffe und"
 - Zitat: "Sterkobilin verursacht, das aus dem Gallenfarbstoff (Bilirubin) gebildet wird"
 
 **Misconceptions:**
-- `M1`: **"Wer nicht täglich Stuhlgang hat, ist verstopft"** — Obstipation beginnt erst bei weniger als 3× pro Woche in Kombination mit hartem Stuhl. 2× pro Woche ohne Beschwerden ist für manche Menschen normal. Fachbegriff: "Alltags-Mythos Tagesrhythmus".
+- `M1`: **"Wer nicht täglich Stuhlgang hat, ist verstopft"** — Obstipation beginnt erst bei weniger als 3× pro Woche in Kombination mit hartem Stuhl. Als normal gilt eine große Spannweite (im Durchschnitt 3-4× wöchentlich bis 1-2× täglich); entscheidend ist das individuelle Gewohnheitsmuster, nicht der Tagesrhythmus. Fachbegriff: "Alltags-Mythos Tagesrhythmus".
 - `M2`: **"Brauner Stuhl kommt vom Essen"** — Die Farbe entsteht durch Sterkobilin (Abbauprodukt des Gallenfarbstoffs), nicht aus der Nahrung. Bei Gallengangsverschluss wird der Stuhl entfärbt (lehmfarben, acholisch).
 - `M3`: **"Die Stuhlmenge hängt nur davon ab, wie viel jemand isst"** — Sie hängt vor allem von Ballaststoff-Aufnahme und Flüssigkeitsanteil ab. Ballaststoffe machen Volumen.
 
@@ -72,18 +79,20 @@
 
 ### F-04: Definition Diarrhö
 
-**Fakt:** Diarrhö (Durchfall) liegt vor bei mehr als 3 ungeformten, dünnflüssigen Stühlen pro Tag (oder einer Stuhlmenge über 250 g/Tag, Bristol-Typ 6-7). Kernproblem ist der Flüssigkeits- und Elektrolytverlust mit Dehydratationsgefahr — besonders kritisch bei Säuglingen, Kleinkindern und Hochbetagten.
+**Fakt:** Diarrhö (Durchfall) liegt bei Erwachsenen vor bei drei und mehr ungeformten Stuhlausscheidungen täglich (meist flüssig-schleimig, Bristol-Typ 6-7); bei Kindern sind dünnere Stühle mehrmals am Tag durchaus gewöhnlich. Kernproblem ist der Flüssigkeits- und Elektrolytverlust mit Dehydratationsgefahr — besonders kritisch bei Säuglingen, Kleinkindern und Hochbetagten.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Definition
 **Bloom-Potential:** 2 (Verstehen)
-**Primärquelle:** (WHO; S3-Leitlinie Gastrointestinale Infektionen 2023)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 8.2 Stuhl; WHO)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Bei Erwachsenen gelten drei und mehr ungeformte Stuhlausscheidungen täglich als"
+- Zitat: "bei Kindern sind dünnere Stühle"
+- ⚠️ Detail-Zahl „Stuhlmenge > 250 g/Tag" laut WHO/S3-Leitlinie Gastrointestinale Infektionen — in `pflege-heute.txt` nicht verbatim (dort nur Frequenz-Kriterium). Quelle beschaffen ODER Detail aus Schüler-Content weglassen.
 
 **Misconceptions:**
-- `M1`: **"Einmal weicher Stuhl = Durchfall"** — Definition: mindestens 3 ungeformte Stühle/Tag oder > 250 g/24 h. Ein einzelner weicher Stuhl kann ernährungsbedingt sein.
+- `M1`: **"Einmal weicher Stuhl = Durchfall"** — Definition: drei und mehr ungeformte Stühle/Tag. Ein einzelner weicher Stuhl kann ernährungsbedingt sein.
 - `M2`: **"Bei Diarrhö sollte der Patient weniger trinken, damit der Darm zur Ruhe kommt"** — Gefährlich! Bei Diarrhö muss MEHR getrunken werden (orale Rehydratationslösung), weil Flüssigkeit und Elektrolyte verloren gehen.
 - `M3`: **"Durchfall dauert immer nur 1-2 Tage"** — Akute Diarrhö < 2 Wochen, chronische Diarrhö > 4 Wochen (CED, Malabsorption, Tumoren). Chronisch = Abklärung nötig.
 
@@ -108,19 +117,23 @@
 
 ### F-06: Definition Obstipation
 
-**Fakt:** Obstipation (Verstopfung) bezeichnet weniger als drei Stuhlentleerungen pro Woche, in der Regel mit sehr festem Stuhl, unproduktiven Entleerungsversuchen und dem Gefühl der unvollständigen Entleerung. Nach den Rom-IV-Kriterien müssen mindestens 2 von 6 Merkmalen (< 3 Stühle/Woche, harter Stuhl Bristol 1-2, starkes Pressen, unvollständige Entleerung, Blockadegefühl, manuelle Manöver) über 3 Monate vorliegen. Rote Flagge: neu aufgetretene Obstipation nach dem 50. Lebensjahr mit Blut/Gewichtsverlust → Kolon-Karzinom ausschließen.
+**Fakt:** Obstipation (Verstopfung) bezeichnet weniger als drei Stuhlentleerungen pro Woche, in der Regel mit sehr festem Stuhl, unproduktiven Entleerungsversuchen und dem Gefühl der unvollständigen Entleerung. Rote Flagge: Jede plötzlich (neu) einsetzende Obstipation beim Erwachsenen ist verdächtig auf ein Kolonkarzinom — besonders bei Wechsel von Obstipation und Diarrhö, Blutauflagerungen und Gewichtsverlust → ärztlich abklären.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Definition
 **Bloom-Potential:** 2 (Verstehen)
-**Primärquelle:** (AWMF S2k Chronische Obstipation, 2022; Rom-IV-Kriterien)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 24.2.6 Obstipation)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Als Obstipation (Verstopfung) werden weniger als drei Stuhlentleerungen pro Woche"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Jede plötzlich einsetzende Obstipation"
+- Zitat: "ein Kolonkarzinom"
+- ⚠️ Detail „Rom-IV-Kriterien (2 von 6 Merkmalen über 3 Monate)" nicht im Korpus (Begriff „Rom" fehlt in `pflege-heute.txt`). Quelle beschaffen (Lacy et al., Rome IV / AWMF S2k Chronische Obstipation 2022) ODER aus Schüler-Content weglassen — Kerndefinition (< 3/Woche) ist belegt.
 
 **Misconceptions:**
 - `M1`: **"Obstipation ist, wenn jemand weniger als 1× pro Tag Stuhlgang hat"** — Die Grenze liegt bei weniger als 3× pro Woche, nicht "täglich". Frequenz allein reicht nicht — auch Konsistenz und Pressen zählen.
-- `M2`: **"Obstipation ist nur unangenehm, aber nicht gefährlich"** — Komplikationen: Hämorrhoiden, Analfissuren, Koprostase mit paradoxer Diarrhö, Sub-/Ileus. Rote Flagge nach 50 mit Blut/Gewichtsverlust ernst nehmen.
+- `M2`: **"Obstipation ist nur unangenehm, aber nicht gefährlich"** — Komplikationen: Hämorrhoiden, Analfissuren, Koprostase mit paradoxer Diarrhö, Sub-/Ileus. Jede plötzlich einsetzende Obstipation beim Erwachsenen mit Blutauflagerung/Gewichtsverlust ist verdächtig auf ein Kolonkarzinom — ernst nehmen.
 - `M3`: **"Man wird zunehmend von Abführmitteln abhängig"** — Moderne osmotische Laxanzien (Macrogol) machen nicht abhängig und sind auch zur Dauertherapie geeignet.
 
 ---
@@ -132,10 +145,13 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Komplikation
 **Bloom-Potential:** 4 (Analysieren)
-**Primärquelle:** (AWMF S2k Chronische Obstipation, 2022)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 24.2.6 Obstipation)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "aufgestauten Kotmassen"
 - Zitat: "Folge ist eine paradoxe Diarrhö mit"
+- Zitat: "ständigem Stuhlschmieren"
+- ⚠️ Detail „Loperamid (Imodium) kontraindiziert" nicht im Korpus (Wirkstoff nicht in `pflege-heute.txt`). Quelle beschaffen (Fachinfo Loperamid / AWMF S2k Chronische Obstipation 2022) ODER im Schüler-Content als pharmakologische Logik ohne Zahlenwert führen.
 
 **Misconceptions:**
 - `M1`: **"Bei Durchfall gibt man immer erstmal Imodium (Loperamid)"** — Bei älteren, immobilen Patienten erst paradoxe Diarrhö bei Koprostase ausschließen. Loperamid würde die Obstipation massiv verschlimmern — bis zum Ileus.
@@ -146,40 +162,51 @@
 
 ### F-08: Obstipationsursachen
 
-**Fakt:** Obstipation entsteht fast immer durch eine Kombination beeinflussbarer Faktoren: Immobilität (träge Peristaltik), Trinkmangel (Stuhl wird hart, da der Dickdarm Wasser entzieht), Ballaststoffmangel, Medikamente (besonders Opioide → opioid-induzierte Obstipation/OIC bei > 90 % — prophylaktisch Laxans obligat) sowie organische Kolonerkrankungen (Tumor, M. Hirschsprung, Hypothyreose). Bewegung und ausreichende Flüssigkeit sind Voraussetzung für die Wirkung von Ballaststoffen.
+**Fakt:** Obstipation entsteht fast immer durch eine Kombination beeinflussbarer Faktoren: Immobilität bzw. mangelnde Bewegung (träge Peristaltik), Trinkmangel/verminderte Flüssigkeitsaufnahme (bei zu geringer Flüssigkeitszufuhr wird dem Stuhl Wasser entzogen, er dickt ein), ballaststoffarme Ernährung, Medikamente (besonders Opiate → opioidbedingte Obstipation, prophylaktisch Laxans) sowie organische/endokrine Ursachen (Tumor, Hypothyreose). Bewegung und ausreichende Flüssigkeit sind Voraussetzung dafür, dass Ballaststoffe aufquellen können.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (AWMF S2k Chronische Obstipation, 2022)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 8.2/24.2.6 + Kap. Schmerz)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "wird dem Stuhl Wasser entzogen, er dickt"
 - Zitat: "dass Ballaststoffe aufquellen können"
+- Zitat: "Medikamente, z. B. Opiate"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "gegen eine opioidbedingte Obstipation und"
+- ⚠️ Detail-Zahl „OIC bei > 90 % der Opioid-Patienten" nicht im Korpus. Quelle beschaffen (AWMF S2k Chronische Obstipation 2022 / S3-Leitlinie Palliativmedizin) ODER im Schüler-Content ohne Prozentzahl führen („sehr häufig, Laxans-Prophylaxe obligat").
 
 **Misconceptions:**
 - `M1`: **"Obstipation ist normal im Alter — das muss man akzeptieren"** — Die altersbedingten Faktoren (weniger Bewegung, geringeres Durstgefühl, Multimedikation) sind pflegerisch beeinflussbar. Häufig ≠ normal.
-- `M2`: **"Bei Opioiden entsteht Obstipation nur manchmal"** — OIC tritt bei > 90 % der Opioid-Patienten ohne Prophylaxe auf. Standard: Opioid starten = Laxans starten.
+- `M2`: **"Bei Opioiden entsteht Obstipation nur manchmal"** — Opioidbedingte Obstipation tritt sehr häufig auf; Laxanzien werden gezielt gegen die opioidbedingte Obstipation gegeben. Standard: Opioid starten = Laxans-Prophylaxe starten. (Exakte Häufigkeitszahl → Primärquelle, s. Beleg-Flag.)
 - `M3`: **"Ballaststoffe helfen immer — je mehr, desto besser"** — Ballaststoffe brauchen ausreichend Flüssigkeit zum Quellen; ohne Trinken können sie die Obstipation verschlimmern.
 
 ---
 
 ### F-09: Nicht-medikamentöse Maßnahmen bei Obstipation
 
-**Fakt:** Vor dem Laxans stehen fünf pflegerische Maßnahmen: 1. Flüssigkeit (1,5-2 l/Tag, warm morgens nüchtern, regt den Defäkationsreflex an), 2. Bewegung (Peristaltikstimulation), 3. Ballaststoffe (Ziel 30 g/Tag, immer mit Flüssigkeit), 4. Toilettentraining 20-30 Min nach dem Frühstück (gastrokolischer Reflex am stärksten, mit Fußbank/Hockstellung), 5. Kolonmassage im Uhrzeigersinn (von rechts unten nach links unten entlang des Dickdarmverlaufs).
+**Fakt:** Vor dem Laxans stehen pflegerische Maßnahmen: 1. Flüssigkeit (mindestens 2 l/Tag beim Erwachsenen — Voraussetzung, dass Ballaststoffe aufquellen; ein Glas zimmerwarmes Wasser morgens auf nüchternen Magen unterstützt die Darmaktivität), 2. Bewegung (frühzeitig und viel, fördert die Darmperistaltik), 3. ballaststoffreich essen (immer mit ausreichend Flüssigkeit), 4. Toilettentraining zu festem Zeitpunkt nach dem Frühstück oder nach den Mahlzeiten (da ist der Darm besonders aktiv), 5. Kolonmassage morgens im Dickdarmverlauf von rechts unten nach links unten (im Uhrzeigersinn), mindestens 5 Min.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 4 (Analysieren, Planen)
-**Primärquelle:** (AWMF S2k Chronische Obstipation, 2022)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 8.2.4 Obstipationsprophylaxe)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Ausreichend trinken, mindestens 2 l pro"
+- Zitat: "Frühzeitig und viel bewegen"
+- Zitat: "fördert die Darmperistaltik"
+- Zitat: "besonders geeignet ist"
+- Zitat: "die Zeit nach dem Aufstehen und nach"
 - Zitat: "von rechts unten nach links unten (im Uhrzeigersinn)"
+- Zitat: "Ein Glas zimmerwarmes Wasser morgens auf nüchternen"
+- ⚠️ Detail-Zahlen „Ballaststoffe 30 g/Tag", „Toilettentraining genau 20-30 Min nach dem Frühstück", „gastrokolischer Reflex am stärksten" nicht verbatim im Korpus. Quelle beschaffen (DGE-Referenzwert Ballaststoffe ≥ 30 g/d; AWMF S2k Chronische Obstipation 2022) ODER im Schüler-Content ohne die exakten Zahlen führen (Pflege heute: „nach dem Frühstück / nach den Mahlzeiten, da ist der Darm besonders aktiv").
 
 **Misconceptions:**
 - `M1`: **"Bauchmassage muss gegen den Uhrzeigersinn gemacht werden"** — Anatomisch korrekt ist im Uhrzeigersinn: Colon ascendens → transversum → descendens → Sigmoid, entsprechend der Stuhlpassagerichtung.
-- `M2`: **"Flohsamen kann man ohne Flüssigkeit nehmen"** — Quellmittel brauchen viel Wasser (200-300 ml/Portion); ohne Flüssigkeit verschlimmern sie die Obstipation, bis zum Darmverschluss.
-- `M3`: **"Der gastrokolische Reflex ist abends am stärksten"** — Er ist morgens nach dem Frühstück am stärksten — optimale Zeit für die Toilettenroutine: 20-30 Min nach dem Frühstück.
+- `M2`: **"Flohsamen kann man ohne Flüssigkeit nehmen"** — Quellmittel müssen immer mit reichlich Flüssigkeit eingenommen werden; sonst verkleben sie im Darm und können im Extremfall zu einem mechanischen Ileus führen.
+- `M3`: **"Die beste Zeit für die Toilettenroutine ist abends"** — Der Darm ist nach dem Aufstehen und nach den Mahlzeiten besonders aktiv; optimale Zeit für die Toilettenroutine ist daher nach dem Frühstück.
 
 ---
 
@@ -190,10 +217,20 @@
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 4 (Analysieren)
-**Primärquelle:** (AWMF S2k Chronische Obstipation, 2022)
+**Primärquelle:** (Pflege heute 7. Aufl., Pharma-Info 24.2 Laxanzien + Abb. 24.4 Stufentherapie der Obstipation)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Stufentherapie der Obstipation"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Mittel der Wahl ist das synthetische Macrogol"
+- Zitat: "Dauereinnahme ist möglich"
+- Zitat: "seltener eingesetzt wird der Zweifachzucker Laktulose"
+- Zitat: "der häufiger zu Blähungen führt"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Empfohlen werden Bisacodyl"
+- Zitat: "Natriumpicosulfat"
+- Zitat: "Nebenwirkungen bei Dauereinnahme"
+- Zitat: "Hypokaliämie mit Verstärkung der Obstipation"
 
 **Misconceptions:**
 - `M1`: **"Lactulose ist besser verträglich als Macrogol und daher 1. Wahl"** — Macrogol hat das günstigere Nebenwirkungsprofil; Lactulose wird bakteriell fermentiert (Blähungen, Bauchkrämpfe). Macrogol = 1. Wahl.
@@ -204,15 +241,20 @@
 
 ### F-11: Meteorismus und Flatulenz
 
-**Fakt:** Meteorismus ist die übermäßige Füllung von Magen und Darm mit Luft oder anderen Gasen (aufgetriebener, gespannter Bauch); Flatulenz ist übermäßiger Windabgang (> 20×/Tag pathologisch). Ursachen: blähende Speisen (Hülsenfrüchte, Kohl, Kohlensäure), Darmträgheit, Reizdarmsyndrom, Malabsorption (Laktose, Zöliakie), Aerophagie. Pflegerische Maßnahmen: blähende Speisen reduzieren, Wärmeapplikation, Bauchmassage, Bewegung, Karminativa (Kümmel/Fenchel). Bei plötzlichem Meteorismus mit Schmerz ohne Wind-/Stuhlabgang: Ileus-Verdacht → sofort Arzt.
+**Fakt:** Meteorismus (Blähungen) ist die übermäßige Füllung von Magen und Darm mit Luft oder anderen Gasen (aufgetriebener, gespannter Bauch); Flatulenz ist übermäßiger Windabgang. Häufigste Ursachen: blähende Lebensmittel (Hülsenfrüchte, Zwiebeln, Kohl), kohlensäurehaltige Getränke, vermehrte Gasproduktion durch Darmbakterien und Luftschlucken (Aerophagie); Blähungen können auch Krankheitszeichen sein (Malassimilation, Leberzirrhose, Darmerkrankung). Pflegerische Maßnahmen: blähende Speisen meiden, kohlensäurefreie Getränke, kleine Bissen + langsames Kauen, Karminativa als Teeaufguss (Kümmel, Pfefferminz, Fenchel, Ingwer); selten medikamentös (Antischaummittel Simethicon).
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Definition + Maßnahme
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (Pflege heute 7. Aufl., Kap. Ausscheidung)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 24.2 Blähungen/Meteorismus)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Füllung von Magen und Darm mit Luft"
+- Zitat: "Häufigste Ursachen von Blähungen sind"
+- Zitat: "Hülsenfrüchte, Zwiebeln oder Kohl"
+- Zitat: "Luftschlucken (Aerophagie)"
+- Zitat: "Kümmel, Pfefferminz, Fenchel"
+- ⚠️ Detail-Zahl „Flatulenz > 20×/Tag pathologisch" nicht im Korpus. Quelle beschaffen (gastroenterologische Fachliteratur) ODER aus Schüler-Content weglassen — Pflege heute definiert Flatulenz qualitativ, nicht über eine Tageszahl.
 
 **Misconceptions:**
 - `M1`: **"Blähungen sind immer harmlos"** — Warnsignale: plötzlicher starker Meteorismus + Schmerzen + kein Wind-/Stuhlabgang → Ileus-Verdacht. Chronischer Meteorismus mit Gewichtsverlust → Abklärung.
@@ -228,13 +270,16 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Differenzierung
 **Bloom-Potential:** 4 (Analysieren)
-**Primärquelle:** (Pflege heute 7. Aufl., Kap. Gastrointestinalblutung; DGVS-Leitlinien)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 8.2.3 Beurteilung des Stuhls / Beimengungen)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Durch Hämoglobinabbauprodukte schwarz gefärbter,"
 - Zitat: "Blutungen im oberen Verdauungstrakt"
 - Zitat: "Peranaler Abgang von rotem"
 - Zitat: "Fettstuhl (Steatorrhö), Störung der Fettverdauung als Folge"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Reiswasserähnlich"
+- Zitat: "lebensbedrohlich ist die Cholera durch das gekrümmte, bewegliche Stäbchenbakterium"
 
 **Misconceptions:**
 - `M1`: **"Schwarzer Stuhl bedeutet immer eine schwere GI-Blutung"** — Auch harmlose Ursachen: Eisenpräparate, Bismut, Rotkohl, Heidelbeeren. Echter Teerstuhl ist klebrig, teerartig, übelriechend.
@@ -245,38 +290,61 @@
 
 ### F-13: Stomaarten und rektale Applikationen
 
-**Fakt:** Ein Enterostoma ist ein operativ angelegtes Stoma im Magen-Darm-Trakt. Drei Stomaarten: Kolostomie (Dickdarm — breiig bis geformter Stuhl, 1-2×/Tag), Ileostomie (Dünndarm — dünnflüssig, kontinuierlich, hohe Enzymaktivität → Hautreizung, Elektrolytverluste, erhöhter Flüssigkeitsbedarf 2-3 l/Tag), Urostomie (Harnableitung über Ileum-Conduit). Anlageformen: endständig (permanent) vs. doppelläufig (protektiv, rückverlagerbar). Rektale Applikationen — Suppositorium, Klysma, hoher Einlauf — erfolgen in Linksseitenlage; Suppositorien werden mit der abgerundeten Seite zuerst eingeführt.
+**Fakt:** Ein Enterostoma ist ein operativ angelegtes Stoma im Magen-Darm-Trakt. Stomaarten: Kolostomie (Dickdarm — Stuhl zunächst flüssig, nach 8-14 Tagen breiig bis halbfest geformt), Ileostomie (Dünndarm — flüssiger Stuhl, hohe Ausscheidungsmengen → häufiger Beutelwechsel/Ausstreifbeutel, Hautreizung, Elektrolytverluste), Urostomie (Harnableitung: Harnleiter werden in ein ausgeschaltetes Darmstück = Conduit eingepflanzt). Anlageformen: endständig (z. B. häufigstes Enterostoma = endständiges Sigmoidostoma nach Rektumexstirpation, permanent) vs. doppelläufig (protektiv). Rektale Applikationen — Suppositorium, Klysma, Einlauf — erfolgen in flacher Linksseitenlage mit leicht angezogenen Knien (die Flüssigkeit fließt anatomisch bedingt leichter in den Darm).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation + Handlung
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (FG SKM Handlungsempfehlungen Stomapflege 2023; Pflege heute 7. Aufl., Kap. Enterostoma/Einlauf)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 8.2.6 Enterostoma + Einlauf)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "operativ angelegtes Stoma im"
+- Zitat: "Kolostomie: Beginn der Stuhlausscheidung ab dem"
+- Zitat: "nach 8–14 Tagen sollte der Stuhl breiig bis halbfest geformt sein"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ileostomie: Beginn der Stuhlausscheidung ab dem"
+- Zitat: "weil die hohen"
+- Zitat: "Ausscheidungsmengen einen häufigen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "häufigste Enterostoma ist das endständige Sigmoidostoma"
+- Zitat: "Die Harnleiter werden in ein"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Patienten flache Linksseitenlage mit"
+- Zitat: "die Spülflüssigkeit fließt in Linksseitenlage anatomisch bedingt leichter in"
+- ⚠️ Detail-Werte „Kolostomie 1-2×/Tag", „Ileostomie Flüssigkeitsbedarf 2-3 l/Tag", „Suppositorium mit der abgerundeten Seite zuerst einführen" nicht verbatim im Korpus. Quelle beschaffen (FG SKM Handlungsempfehlungen Stomapflege 2023; Fachinfo/Pflegestandard rektale Applikation) ODER aus Schüler-Content weglassen.
 
 **Misconceptions:**
-- `M1`: **"Ileostomie und Kolostomie sind das Gleiche — nur an verschiedenen Stellen"** — Ileostomie = Dünndarm, dünnflüssig/kontinuierlich, Hautreizung, Elektrolytverluste. Kolostomie = Dickdarm, breiig/geformt, 1-2×/Tag. Völlig andere Versorgung.
+- `M1`: **"Ileostomie und Kolostomie sind das Gleiche — nur an verschiedenen Stellen"** — Ileostomie = Dünndarm, flüssiger Stuhl, hohe Ausscheidungsmengen, Hautreizung, Elektrolytverluste. Kolostomie = Dickdarm, Stuhl nach 8-14 Tagen breiig bis halbfest geformt. Völlig andere Versorgung.
 - `M2`: **"Eine Urostomie führt Stuhl ab"** — Eine Urostomie leitet Urin ab, keinen Stuhl (Harnleiter in ein Ileum-Conduit).
-- `M3`: **"Zäpfchen werden mit der spitzen Seite zuerst eingeführt"** — Suppositorien werden mit der abgerundeten (stumpfen) Seite zuerst eingeführt; die Muskelspannung des Sphinkters verankert sie.
+- `M3`: **"Bei der Zäpfchengabe ist die Lagerung egal"** — Rektale Applikationen erfolgen in flacher Linksseitenlage mit leicht angezogenen Knien; bei Säuglingen/Kleinkindern Pobacken danach 1-2 Min. zusammenhalten. (Einführrichtung „abgerundete Seite zuerst" → Primärquelle, in Pflege heute nicht belegt; s. Beleg-Flag.)
 
 ---
 
 ### F-14: Stomaversorgung, Hautschutz und Beratung
 
-**Fakt:** Die Stomatherapie dient der körperlichen, psychischen und gesellschaftlichen Rehabilitation des Stomaträgers. Perristomale Haut ist die kritischste Zone: Die Basisplatte wird exakt auf Stomadurchmesser + 2-3 mm zugeschnitten (Tragezeit 2-5 Tage); konvexe Platten bei eingesunkenem/flachem Stoma (Retraktion); Stomapaste füllt Unebenheiten, Stoma-Puder trocknet nässende Haut. Nekrose (livide/schwarzes Stoma) ist ein chirurgischer Notfall. Beratung umfasst psychosoziale Begleitung (Körperbild, Normalisieren, ILCO), schrittweise Selbstversorgung und stomaartspezifische Ernährung.
+**Fakt:** Die Stomatherapie dient der körperlichen, psychischen und gesellschaftlichen Rehabilitation des Stomaträgers. Die peristomale Haut ist die kritischste Zone: Die Basisplatte wird mithilfe einer Schablone auf die Maße des Stomas zugeschnitten; plane Platten bei prominenten Stomata, konvexe Platten, wenn das Stoma unter das Hautniveau absinkt (Retraktion), um Undichtigkeiten auszugleichen. Stomapaste gleicht Unebenheiten aus, Stoma-Puder entzieht der nässenden Haut Feuchtigkeit. Stomafarbe: normal rosarot; violett/bläulich = verminderte, weißlich = schlechte, schwarz = keine Durchblutung/Nekrose (chirurgischer Notfall). Beratung umfasst psychosoziale Begleitung (Körperbild, Normalisieren), schrittweise Selbstversorgung und stomaartspezifische Ernährung.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Handlung + Beratung
 **Bloom-Potential:** 5 (Bewerten, Beraten)
-**Primärquelle:** (FG SKM Handlungsempfehlungen Stomapflege 2023; Pflege heute 7. Aufl., Kap. Stomatherapie)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 8.2.6 Stomatherapie/Stomaversorgung)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Stomatherapie dient der körperlichen,"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "auf die Maße des Stomas zuschneiden"
+- Zitat: "plane, flache Platte wird bei prominenten"
+- Zitat: "Fall werden konvexe Platten verwendet, um"
+- Zitat: "Undichtigkeiten auszugleichen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Ggf. eine Stomapaste verwenden"
+- Zitat: "Durch den Puderanteil entziehen sie der"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Schwarz: keine Durchblutung/Nekrose"
+- Zitat: "Violett/bläulich: verminderte Durchblutung"
+- ⚠️ Detail-Werte „Basisplatte Stomadurchmesser + 2-3 mm", „Tragezeit 2-5 Tage" nicht verbatim im Korpus. Quelle beschaffen (FG SKM Handlungsempfehlungen Stomapflege 2023 / Hersteller-Pflegestandard) ODER aus Schüler-Content weglassen — Pflege heute belegt Schablonen-Zuschnitt und plan/konvex-Indikation qualitativ.
 
 **Misconceptions:**
-- `M1`: **"Die Basisplatte sollte großzügig zugeschnitten werden — besser zu groß"** — Zu groß lässt einen Rand ungeschützter Haut frei → Ausscheidungskontakt → Mazeration. Korrekt: Stomadurchmesser + 2-3 mm.
+- `M1`: **"Die Basisplatte sollte großzügig zugeschnitten werden — besser zu groß"** — Zu groß lässt einen Rand ungeschützter Haut frei → Ausscheidungskontakt → Mazeration. Korrekt: mit Schablone exakt auf die Maße des Stomas zuschneiden.
 - `M2`: **"Stoma-Puder dichtet das Stoma ab"** — Puder ist ein Hautpflegeprodukt (trocknet nässende Haut, ermöglicht Plattenhaftung), kein Dichtungsmittel. Abdichtung: Paste oder Hautschutzring.
 - `M3`: **"Ein livide verfärbtes Stoma braucht Zeit — erst nach einem Tag Arzt rufen"** — Ein livides/schwarzes Stoma weist auf Ischämie/Nekrose hin: chirurgischer Notfall, sofortige ärztliche Beurteilung, niemals abwarten.

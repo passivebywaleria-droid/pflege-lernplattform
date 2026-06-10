@@ -7,9 +7,10 @@
 | cluster | A (Pflegeprozess & Dokumentation) |
 | geschätzteUE | 7 |
 | wissensart | orientierung |
-| quellen | DNQP Expertenstandards (Dekubitusprophylaxe, Sturzprophylaxe, Ernährungsmanagement); Pflege heute 7. Aufl. Kap. Pflegeassessment, Schmerz, Qualität; Donabedian 1966; Mahoney/Barthel 1965; Braden/Bergstrom 1987; Guigoz 1994; Podsiadlo/Richardson 1991; NANDA-I 2021-2023; § 113a SGB XI; § 135a/137a SGB V |
+| quellen | DNQP Expertenstandards (Dekubitusprophylaxe, Schmerzmanagement, Mundgesundheit, Hautintegrität — `dnqp-standards-index/`); Pflege heute 7. Aufl. Kap. Pflegeassessment, Schmerz, Qualität (`pflege-heute-volltext/`); Donabedian 1966 (Jahr korpus-unbelegt ⚠️); Mahoney/Barthel 1965; Braden/Bergstrom 1987 (Subskalen/Spanne korpus-unbelegt ⚠️); Guigoz 1994 (Spannen korpus-unbelegt ⚠️); Podsiadlo/Richardson 1991 (Schwellenwerte korpus-unbelegt ⚠️); NANDA-I 2021-2023; § 113a SGB XI; § 135a/137a SGB V |
 | einträge | 14 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
+| grounding | 2026-06-10 STÜTZT-Härtung (Dozentin A): 24→39 verifizierte Verbatim-Belege; 6 ⚠️-Beschaffungs-Marker (F-03 Anzahl 12, F-04 Donabedian-Jahr, F-05 Braden-Subskalen/Spanne, F-08 MNA-Spannen/Cut-off, F-09 TUG-Schwellenwerte, F-13 antiz. Sachverständigengutachten) |
 
 ---
 
@@ -43,11 +44,16 @@
 **Primärquelle:** (DNQP 2024; Pflege heute 7. Aufl. Kap. 47.7 Qualität und Pflegequalität)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "1999 beschloss die Gesundheitsministerkonferenz (GMK) im Rahmen einer Qualitätsstrategie im Gesundheitswesen u. a. die Entwicklung von ärztlichen Leitlinien und Pflegestandards für zehn wichtige Krankheiten"
+- Zitat: "1999 beschloss die Gesundheitsministerkonferenz (GMK) im Rahmen einer Qualitätsstrategie im Gesundheitswesen u. a. die Entwicklung von ärztlichen Leitlinien und Pflegestandards für zehn wichtige Krankheiten" (belegt: 1999 als Startjahr der nationalen Pflegestandards)
+- Zitat: "Sie werden in der Regel alle fünf Jahre überprüft" (belegt: 5-Jahres-Überprüfungszyklus)
+- Quelle: `dnqp-standards-index/schmerzmanagement.txt`
+- Zitat: "Hochschule Osnabrück" (belegt: institutioneller Sitz/Geschäftsstelle des DNQP — im Original "Geschäftsstelle: … Hochschule Osnabrück ∙ Fakultät für Wirtschafts- und Sozialwissenschaften")
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Deutsche Netzwerk für Qualitätsentwicklung in der Pflege" (belegt: Auflösung des Akronyms DNQP)
 **Praxisfehler:** Expertenstandards als unverbindliche Empfehlungen behandeln, von denen man beliebig abweichen darf.
 
 **Misconceptions:**
-- `M1`: **"Expertenstandards sind Empfehlungen, die man befolgen kann oder nicht"** — Sie haben juristische Wertigkeit (antizipiertes Sachverständigengutachten). Abweichen nur mit dokumentierter Begründung. Fachbegriff: "Freiwilligkeits-Irrtum".
+- `M1`: **"Expertenstandards sind Empfehlungen, die man befolgen kann oder nicht"** — Sie sind verbindliche Grundlage der Leistungserbringung (§ 113a SGB XI / § 135a SGB V, korpusbelegt; die zusätzliche Einordnung als "antizipiertes Sachverständigengutachten" ist korpus-unbelegt ⚠️, s. F-13). Abweichen nur mit dokumentierter Begründung. Fachbegriff: "Freiwilligkeits-Irrtum".
 - `M2`: **"Das DNQP ist eine staatliche Behörde"** — Das DNQP ist kein Amt, sondern ein bundesweiter Zusammenschluss von Pflegefachleuten an der Hochschule Osnabrück, der unabhängig arbeitet. Fachbegriff: "Behörden-Verwechslung".
 - `M3`: **"Expertenstandards gelten nur im Krankenhaus"** — Sie gelten in allen Pflege-Settings (Krankenhaus, Altenpflege, ambulant); für die Altenpflege über § 113a SGB XI. Fachbegriff: "Setting-Irrtum".
 
@@ -68,7 +74,12 @@
 - Zitat: "Schmerzmanagement bei akutem und" (Listenpunkt akut/chronisch)
 - Zitat: "Ernährungsmanagement zur Sicherung und Förderung der oralen Ernährung in der Pflege" (Listenpunkt)
 - Zitat: "Beziehungsgestaltung in der Pflege" (Listenpunkt Demenz)
-- ⚠️ Quelle beschaffen (DNQP-Übersicht) — die konkrete Anzahl "12" und die beiden neuesten Standards (Mundgesundheit, Hautintegrität) sind im Korpus NICHT belegt; Pflege heute listet nur die älteren ~10 (inkl. Physiologische Geburt). DNQP-Aktualisierungsübersicht beschaffen oder die Zahl/zwei neuen Standards entschärfen.
+- Zitat: "Sie werden in der Regel alle fünf Jahre überprüft" (belegt: regelmäßige Aktualisierung der Standards)
+- Quelle: `dnqp-standards-index/mundgesundheit.txt`
+- Zitat: "Expertenstandards Förderung der Mundgesundheit in der Pflege" (belegt: Standard Mundgesundheit existiert — im Original-Titel "EXPERTENSTANDARD FÖRDERUNG DER MUNDGESUNDHEIT IN DER PFLEGE")
+- Quelle: `dnqp-standards-index/hautintegritaet.txt`
+- Zitat: "Erhaltung und Förderung der Hautintegrität in der Pflege" (belegt: Standard Hautintegrität existiert — im Original-Titel "EXPERTENSTANDARD ERHALTUNG UND FÖRDERUNG DER HAUTINTEGRITÄT IN DER PFLEGE")
+- ⚠️ Quelle beschaffen (DNQP-Gesamtübersicht) — die exakte Gesamt-**Anzahl** "12" ist im Korpus NICHT als Zahl belegt (Pflege heute zählt im Fließtext nicht aus; die Einzel-Standards Dekubitus, Sturz, Schmerz, Kontinenz, chronische Wunden, Ernährung, Demenz, Mundgesundheit, Hautintegrität, Entlassungsmanagement sind als dnqp-standards-index-Dateien bzw. PH-Listenpunkte belegt). DNQP-Aktualisierungsübersicht beschaffen oder die Zahl "12" entschärfen ("u. a. folgende Standards").
 **Praxisfehler:** Mit einer veralteten Standard-Version arbeiten, ohne die Jahresangabe zu prüfen.
 
 **Misconceptions:**
@@ -88,12 +99,13 @@
 **Primärquelle:** (Donabedian 1966, Milbank Memorial Fund Quarterly 44(3); Pflege heute 7. Aufl. Kap. 47.7)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "schlägt Donabedian vor, Qualität auf den Ebenen Struktur, Prozess und Ergebnis zu beurteilen"
+- Zitat: "schlägt Donabedian vor, Qualität auf den Ebenen Struktur, Prozess und Ergebnis zu beurteilen" (belegt: S-P-E geht auf Donabedian zurück)
+- ⚠️ Quelle beschaffen (Donabedian 1966, Milbank Memorial Fund Quarterly 44(3)) — die **Jahreszahl 1966** ist im Korpus NICHT belegt. Pflege heute zitiert Donabedian im Literaturverzeichnis mit "Evaluating the quality of medical care … 1977" (nicht das S-P-E-Grundlagenwerk von 1966). Die Originalarbeit Donabedian 1966 beschaffen oder die Jahresangabe im Fakt entschärfen ("Donabedian-Modell" ohne Jahr).
 **Praxisfehler:** Nur das Ergebnis betrachten ("Bewohner zufrieden = alles gut") und Struktur- und Prozessqualität vernachlässigen.
 
 **Misconceptions:**
 - `M1`: **"S-P-E ist eine zeitliche Reihenfolge: zuerst Struktur, dann Prozess, dann Ergebnis"** — S-P-E ist keine Zeitabfolge, sondern drei parallele Betrachtungsebenen ("three approaches to quality of care"). Fachbegriff: "Zeitabfolge-Irrtum".
-- `M2`: **"Die S-P-E-Kriterien werden vom Gesetzgeber vorgeschrieben"** — Die Struktur stammt von Donabedian (1966); das DNQP nutzt sie freiwillig, weil sie sich bewährt hat. Fachbegriff: "Gesetzes-Verwechslung".
+- `M2`: **"Die S-P-E-Kriterien werden vom Gesetzgeber vorgeschrieben"** — Die Struktur stammt von Donabedian (Jahr 1966 ⚠️ korpus-unbelegt, s. o.); das DNQP nutzt sie freiwillig, weil sie sich bewährt hat. Fachbegriff: "Gesetzes-Verwechslung".
 - `M3`: **"Ergebnis-Kriterien messen nur medizinische Outcomes (z.B. Wundheilung)"** — Ergebnis (E) misst pflegerische Zielerreichung, auch organisatorisch ("aktuelle Einschätzung liegt vor") oder beziehungsbezogen. Fachbegriff: "Outcome-Enge".
 
 ---
@@ -108,7 +120,8 @@
 **Primärquelle:** (Braden & Bergstrom 1987, Rehabilitation Nursing 12(1); DNQP Dekubitusprophylaxe 2017/2024; Pflege heute 7. Aufl. Kap. 1.9 / 6.12)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Skalen können allenfalls im Rahmen der klinischen Einschätzung zur Unterstützung der pflegerischen Beobachtung genutzt werden"
+- Zitat: "Skalen können allenfalls im Rahmen der klinischen Einschätzung zur Unterstützung der pflegerischen Beobachtung genutzt werden" (belegt: Skalen ergänzen, ersetzen die klinische Einschätzung nicht)
+- ⚠️ Quelle beschaffen (Braden & Bergstrom 1987, Rehabilitation Nursing 12(1) — Skalen-Originalarbeit) — folgende Teilaussagen sind im Korpus NICHT belegt: (a) die **6 Subskalen-Namen** (sensorische Wahrnehmung, Hautfeuchtigkeit, Aktivität, Mobilität, Ernährung, Reibung/Scherkräfte); (b) die **Punkt-Spanne 6-23** und die Umkehr-Richtung (niedrig = hohes Risiko). Pflege heute nennt "Braden-Skala" nur als Listenpunkt unter den Dekubitus-Instrumenten, ohne Subskalen/Spanne. Skalen-Originalarbeit Braden & Bergstrom 1987 beschaffen oder Subskalen/Spanne als ⚠️-markiert behandeln.
 **Praxisfehler:** Sich "blind" auf das Skalen-Ergebnis verlassen, statt die klinische Einschätzung führen zu lassen.
 
 **Misconceptions:**
@@ -128,7 +141,9 @@
 **Primärquelle:** (Mahoney & Barthel 1965, Maryland State Medical Journal 14; Pflege heute 7. Aufl. Kap. 1.9 / 17.5.1)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Der Barthel-Index ist ein Instrument mit 10 Items zur Erfassung der Selbstständigkeit bei grundlegenden Alltagsaktivitäten"
+- Zitat: "Der Barthel-Index ist ein Instrument mit 10 Items zur Erfassung der Selbstständigkeit bei grundlegenden Alltagsaktivitäten" (belegt: 10 ADL-Items, körperliche Selbstständigkeit)
+- Zitat: "die eine Gesamtsumme (max. 100 Punkte) ergeben. 100 Punkte drücken weitgehende Selbstständigkeit des Patienten bei den Verrichtungen aus. Je geringer die Punktzahl ist, desto höher ist die bestehende Abhängigkeit von Hilfe und Versorgung" (belegt: Spanne max. 100, je höher = selbstständiger / je niedriger = abhängiger)
+- ⚠️ Hinweis: Die **Untergrenze "0"** und die vollständige Item-Liste (Essen, Baden, Körperpflege, Ankleiden, Stuhl-/Harnkontrolle, WC, Transfer, Gehen, Treppensteigen) sind im Korpus nicht einzeln aufgezählt — die Spanne "0-100" folgt aus "max. 100 Punkte" + 5-Punkte-Schritten; für die exakte Item-Liste ggf. Mahoney & Barthel 1965 (Maryland State Medical Journal 14) beschaffen.
 **Praxisfehler:** Eine niedrige Barthel-Punktzahl als geistige Behinderung fehldeuten, statt sie ursachen-neutral als Hilfebedarf zu lesen.
 
 **Misconceptions:**
@@ -148,7 +163,10 @@
 **Primärquelle:** (DNQP Schmerzmanagement akut 2011 / chronisch 2015; Pflege heute 7. Aufl. Kap. 13 Pflege bei Schmerzen)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "ordnet der Patient seine Schmerzen einer Zahl zwischen 0 und 10 zu, wobei 0 für „kein Schmerz“ und 10 für „stärkster vorstellbarer Schmerz“ steht"
+- Zitat: "ordnet der Patient seine Schmerzen einer Zahl zwischen 0 und 10 zu, wobei 0 für „kein Schmerz“ und 10 für „stärkster vorstellbarer Schmerz“ steht" (belegt: NRS-Spanne 0-10 mit Polen)
+- Zitat: "Visuelle Analogskala (VAS): Einzeichnen der Schmerzintensität auf einer Linie" (belegt: Alternative VAS)
+- Zitat: "Gesichterskala: Angabe der Schmerzintensität durch Ankreuzen von Gesichtsausdrücken" (belegt: Alternative Gesichter-/Smiley-Skala für Kinder)
+- Zitat: "Beurteilung von Schmerzen bei Demenz (BESD)" (belegt: Fremdeinschätzungs-Instrument BESD bei Demenz)
 **Praxisfehler:** Annehmen, bei nicht sprechfähigen Patienten könne man Schmerz nicht messen — dafür gibt es Beobachtungsinstrumente wie BESD.
 
 **Misconceptions:**
@@ -168,7 +186,9 @@
 **Primärquelle:** (Guigoz 1994, Facts and Research in Gerontology; DNQP Ernährungsmanagement 2017; Pflege heute 7. Aufl. Kap. 1.9 / 7.2)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Die Expertenstandards in der Pflege empfehlen z. B. das Mini Nutritional Assessment (MNA) zur Einschätzung des Risikos einer Unterernährung"
+- Zitat: "Die Expertenstandards in der Pflege empfehlen z. B. das Mini Nutritional Assessment (MNA) zur Einschätzung des Risikos einer Unterernährung" (belegt: MNA als Standard-/Expertenstandard-empfohlenes Instrument für Mangelernährung)
+- Zitat: "Mini Nutritional Assessment short form (MNA-SF) für geriatrische Einrichtungen" (belegt: Kurzform MNA-SF, Einsatz im geriatrischen/älteren Kontext)
+- ⚠️ Quelle beschaffen (Guigoz 1994, Facts and Research in Gerontology; MNA-Manual) — folgende Teilaussagen sind im Korpus NICHT belegt: (a) "validiert ab 65 Jahren" (die "ab 65"-Treffer im Korpus betreffen Armut/Transplantation, nicht das MNA); (b) die **Zweistufigkeit mit Cut-off ≤11**; (c) die **Punkt-Spannen** MNA-SF 0-14 und volles MNA 0-30. MNA-Originalquelle/Manual beschaffen oder diese Detailwerte entschärfen. (Belegt ist nur: MNA-SF = Kurzform für geriatrische Einrichtungen.)
 **Praxisfehler:** Mangelernährung allein am BMI festmachen und den ungewollten Gewichtsverlust als wichtigsten Indikator übersehen.
 
 **Misconceptions:**
@@ -229,6 +249,7 @@
 **Primärquelle:** (NANDA International 2021-2023; ICN 2021; Pflege heute 7. Aufl. Kap. 1.8.1 NANDA-Pflegediagnosen)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "North American Nursing Diagnosis Association" (belegt: Auflösung des Akronyms NANDA)
 - Zitat: "Organisation in Nordamerika, die sich mit der" (NANDA-I = Pflegediagnosen)
 - Zitat: "Ergebnisqualität beschreiben, z. B. NOC" (NOC = Outcomes/Ergebnisse)
 - Zitat: "ICNP® (International Classification" / "als Internationale Klassifikation für die Pflegepraxis (International Classification for" (ICNP = internationale Terminologie des ICN)
@@ -279,7 +300,11 @@
 **Primärquelle:** (DNQP 2024; § 113a SGB XI; § 135a/137a SGB V; § 222/§ 229 StGB; Pflege heute 7. Aufl. Kap. 47.7.3)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Dies betrifft auch die Expertenstandards, die – für ihren jeweiligen Bereich – den gegenwärtigen Stand des Wissens darstellen und somit verbindliche Grundlage für die pflegerische Leistungserbringung sind"
+- Zitat: "Dies betrifft auch die Expertenstandards, die – für ihren jeweiligen Bereich – den gegenwärtigen Stand des Wissens darstellen und somit verbindliche Grundlage für die pflegerische Leistungserbringung sind" (belegt: verbindliche Grundlage)
+- Zitat: "Expertenstandards sind verbindliche Grundlage der Leistungserbringung im SGB XI (§ 113a)" (belegt: Rechtsnorm § 113a SGB XI für Altenpflege)
+- Zitat: "Verpflichtung der Leistungserbringer zur Qualitätssicherung (§§ 135a, 137, 137a SGB V)" (belegt: Rechtsnormen § 135a/137a SGB V)
+- Zitat: "Eine mangelhafte Pflegedokumentation kann jedoch zur Beweislastumkehr führen" (belegt: Beweislastumkehr — im Korpus an die Pflegedokumentation gekoppelt, nicht explizit an die Standard-Abweichung)
+- ⚠️ Quelle beschaffen (DNQP-Methodenpapier / pflegerechtliche Kommentierung) — der Begriff **"antizipiertes Sachverständigengutachten"** kommt im Korpus NICHT vor (auch nicht "Sachverständigengutachten"/"antizipiert"). Diese juristische Einordnung über DNQP-Methodenpapier oder Pflegerecht-Kommentar belegen oder im Fakt/M1 entschärfen.
 **Praxisfehler:** Von einem Standard abweichen (z.B. weil der Patient ablehnt) ohne Aufklärung und Dokumentation — dann entfällt die Entlastung.
 
 **Misconceptions:**

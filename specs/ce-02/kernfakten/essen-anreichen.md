@@ -23,7 +23,9 @@
 **Primärquelle:** (Pflege heute 7. Aufl., Kap. 7 Ernährung; DGE 2024)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "eine aufrechte Körperhaltung den physiologischen Transportweg der Nahrung durch die Speiseröhre"
+- Zitat: "eine aufrechte Körperhaltung den physiologischen Transportweg der Nahrung durch die Speiseröhre unterstützt und ein Verschlucken verhindert" ✅ MATCH (stützt die aufrechte Position generell)
+- Zitat: "Entsprechend helfen die Pflegenden den Patienten dabei, diese Position zum Essen einzunehmen" ✅ MATCH
+- ⚠️ **Der konkrete Schwellenwert „mindestens 60° (besser 90°)" ist im Korpus NICHT verbatim belegt** — Pflege heute spricht nur von „aufrechter Körperhaltung"/„aufrechter Sitzposition", nennt keinen Gradwert für die orale Nahrungsaufnahme. Quelle beschaffen: DGG/DGN S1-Leitlinie Neurogene Dysphagie 2020 oder DGE-Positionierungsempfehlung. Bis dahin im Schüler-Content nur als „aufrecht sitzen, nicht im Liegen" formulieren oder den Gradwert als „häufige Praxisempfehlung (≥60°)" kennzeichnen.
 **Praxisfehler:** Nur den Kopf hochlagern statt den ganzen Oberkörper aufzurichten.
 
 **Misconceptions:**
@@ -63,8 +65,10 @@
 **Primärquelle:** (Pflege heute 7. Aufl., Kap. 7.11 Schlucktraining; DGG/DGN S1-LL Neurogene Dysphagie 2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Kopf leicht nach vorne geneigt"
-- Zitat: "Bevor sie den nächsten Bissen anbieten, warten sie, bis der Patient fertig gekaut und heruntergeschluckt hat"
+- Zitat: "Kopf leicht nach vorne geneigt" ✅ MATCH
+- Zitat: "Bevor sie den nächsten Bissen anbieten, warten sie, bis der Patient fertig gekaut und heruntergeschluckt hat" ✅ MATCH
+- Zitat: "Kleine Bissen sowie langsames und gründliches Kauen" ✅ MATCH (stützt „kleine Bissen")
+- Hinweis: Die exakte Mengenangabe „halber Löffel" ist nicht verbatim belegt; durch „Kleine Bissen" inhaltlich gedeckt. Im Schüler-Content „halber Löffel" als Faustregel kennzeichnen, nicht als Zitat.
 **Praxisfehler:** Kopf nach hinten (Reklination) beim Trinken aus engem Becher — öffnet die Luftröhre.
 
 **Misconceptions:**
@@ -103,7 +107,8 @@
 **Primärquelle:** (Pflege heute 7. Aufl., Kap. 7.11.3 Beurteilung des Schluckvorgangs; GUSS — Trapl et al., Stroke 2007;38:2948-2952)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Ein Patient darf nur bei intakten Schutzreflexen essen oder trinken"
+- Zitat: "Ein Patient darf nur bei intakten Schutzreflexen essen oder trinken" ✅ MATCH (stützt die Reflex-Voraussetzung)
+- ⚠️ **GUSS-Spezifika NICHT im Korpus belegt:** Weder „GUSS"/„Gugging Swallowing Screen" noch die stufenweise Reihenfolge „trocken → halbfest → flüssig → fest" sind in Pflege heute, IDDSI oder DNQP verbatim enthalten. Quelle beschaffen: Trapl et al., *Stroke* 2007;38:2948–2952 (GUSS-Originalarbeit). Bis dahin im Schüler-Content nur „strukturiertes Schluck-Screening, Stufen von leicht nach schwer, bei Versagen Stopp + Logopädie" formulieren, ohne GUSS-Stufenreihenfolge als belegt auszugeben.
 **Praxisfehler:** Mit der schwierigsten Konsistenz (dünner Flüssigkeit) beginnen statt von leicht zu schwer.
 
 **Misconceptions:**
@@ -147,7 +152,9 @@
 **Primärquelle:** (Pflege heute 7. Aufl., Kap. 7.11 — Trinktraining; IDDSI 2019; Hersteller-Fachinfos)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Flüssigkeiten ggf. mit einem Andickungsmittel andicken"
+- Zitat: "Flüssigkeiten ggf. mit einem Andickungsmittel andicken" ✅ MATCH (stützt die Maßnahme; im Quelltext eingebettet in „Patienten können den Schluckvorgang so besser kontrollieren …")
+- ⚠️ **„ca. 2 Minuten Quellzeit" NICHT im Korpus belegt** — kein Zeitwert für das Andicken in Pflege heute/IDDSI/DNQP. Quelle beschaffen: Hersteller-Fachinformation (z. B. Nutilis/Resource ThickenUp, Quellzeit i. d. R. 1–3 Min) oder IDDSI-Methodik. Bis dahin als „kurze Quellzeit nach Herstellerangabe abwarten" formulieren.
+- ⚠️ **„Keine kohlensäurehaltigen Getränke (CO₂ zerstört die Bindung)" NICHT im Korpus belegt** — Pflege heute nennt dies nicht im Kontext Andicken. Quelle beschaffen: Hersteller-Fachinformation Andickungsmittel. Bis dahin im Schüler-Content nur „stille Getränke verwenden, Herstellerhinweise beachten".
 **Praxisfehler:** Sofort geben ohne Quellzeit — das Getränk dickt erst im Mund/Rachen nach.
 
 **Misconceptions:**
@@ -166,7 +173,9 @@
 **Primärquelle:** (Pflege heute 7. Aufl., Kap. 7.11 — Trinktraining/Trinkgefäße; DGG/DGN 2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Besser sind Gefäße mit Nasenausschnitt"
+- Zitat: "und Trinkgefäße mit einem engen Durchmesser sind nicht geeignet, da der Kopf zum Trinken in den Nacken gelegt werden muss" ✅ MATCH (stützt Reklinations-Begründung)
+- Zitat: "Besser sind Gefäße mit Nasenausschnitt" ✅ MATCH
+- Hinweis: „Sicherheitstrinkbecher (definierte Menge pro Schluck)" und „Strohhalm nur auf Anordnung" sind nicht verbatim belegt — als didaktische Ergänzung kennzeichnen, nicht als Zitat.
 **Praxisfehler:** Strohhalm als pauschale Standardlösung — manche Patienten saugen zu schnell.
 
 **Misconceptions:**
@@ -185,7 +194,10 @@
 **Primärquelle:** (Pflege heute 7. Aufl., Kap. 7.11 — Trink- und Esstraining; § 1901a BGB)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Dem Patienten Zeit lassen und ihn nie drängen"
+- Zitat: "Dem Patienten Zeit lassen und ihn nie drängen" ✅ MATCH (stützt Tempo)
+- Zitat: "Pausen einlegen, da das Trink- und Es" ✅ MATCH (stützt Pausen; im Quelltext „… Esstraining Kraft und Konzentration kostet")
+- ⚠️ **§ 1901a BGB als Beleg für „nie zwangsfüttern" ist eine gedehnte Zitierung:** § 1901a BGB im Korpus betrifft die **Patientenverfügung** ("kann man festlegen, ob und wie man in bestimmten Krankheitssituationen behandelt werden möchte") — nicht ein verbatim Verbot des Zwangsfütterns. Die Selbstbestimmung ist damit grundsätzlich gedeckt, das spezifische Zwangsernährungs-Verbot aber nicht. Quelle beschaffen / korrekt zitieren: Zwangsernährung ohne Einwilligung = Körperverletzung (§ 223 StGB) bzw. Patientenautonomie (§ 1901a Abs. 1 BGB Patientenverfügung). Bis dahin im Schüler-Content „Zwangsfüttern verletzt die Selbstbestimmung (Patientenverfügung, § 1901a BGB)" präzise statt pauschal.
+- Hinweis: Die Kommunikationsregeln (Autonomie wahren, Handlungen ankündigen, offene Fragen, nicht gleichzeitig sprechen+essen) sind didaktisch korrekt, im Ernährungs-Kapitel aber nur teils verbatim belegt (Zeit lassen/Pausen). „Nicht gleichzeitig sprechen und essen" ist als Aspirationslogik fachlich korrekt, hier aber nicht verbatim — als fachliche Ableitung kennzeichnen.
 **Praxisfehler:** Beim Kauen/Schlucken plaudern (Aspirationsrisiko) oder bei Ablehnung weiterfüttern (Paternalismus).
 
 **Misconceptions:**
@@ -261,7 +273,8 @@
 **Primärquelle:** (Expertenstandard Ernährungsmanagement DNQP; § 630f BGB)
 **Beleg:**
 - Quelle: `dnqp-standards-index/ernaehrungsmanagement.txt`
-- Zitat: "geeignete Instrumente und Hilfsmittel zur Einschätzung und Dokumentation zur Verfügung stehen"
+- Zitat: "Die Einrichtung stellt sicher, dass geeignete Instrumente und Hilfsmittel zur Einschätzung und Dokumentation zur Verfügung stehen" ✅ MATCH (stützt Bereitstellungspflicht)
+- ⚠️ **§ 630f BGB NICHT im Korpus belegt:** Pflege heute enthält nur den allgemeinen Verweis auf das Patientenrechtegesetz (§ 630 b–h BGB) sowie § 630c und § 630e — die spezifische Dokumentationspflicht des § 630f BGB ist nicht verbatim vorhanden. Quelle beschaffen: Gesetzestext § 630f BGB (gesetze-im-internet.de). Bis dahin im Schüler-Content „gesetzliche Dokumentationspflicht (Patientenrechtegesetz, § 630 b–h BGB)" formulieren — das ist verbatim gedeckt — statt § 630f isoliert als belegt auszugeben.
 **Praxisfehler:** Nur "Besonderes" notieren statt jede Mahlzeit — Verlaufstrends (schleichende Exsikkose) bleiben unsichtbar.
 
 **Misconceptions:**

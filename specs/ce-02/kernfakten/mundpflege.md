@@ -24,6 +24,12 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Drei große Speicheldrüsen und zahlreichere kleinere produzieren zusammen ca."
+- Zitat: "1–1,5 Liter Speichel am Tag"
+- Zitat: "Drei große Speicheldrüsenpaare und zahlreiche kleinere geben kontinuierlich Speichel in"
+- Zitat: "der Ohrspeicheldrüsen (Parotiden, Glandulae parotides) und der Unterkieferspeicheldrüsen (Glandulae submandibulares)"
+- Zitat: "nach hinten geht die"
+- Zitat: "Mundhöhle in den Rachen (Pharynx) über"
+⚠️ Quelle beschaffen (konkrete Primärquelle): der Drüsenname „Sublingualis" (Unterzungenspeicheldrüse) — im vorhandenen Korpus sind nur Parotis (Glandula parotis) und Submandibularis namentlich belegt; die Sublingualis als dritte große Drüse ist anatomisch korrekt (I Care Anatomie), lokal aber nicht verbatim verifizierbar.
 **Praxisfehler:** Annahme, alle Speicheldrüsen lägen unter der Zunge — tatsächlich liegt die Parotis vor dem Ohr, die Submandibularis unter dem Unterkiefer.
 
 **Misconceptions:**
@@ -66,7 +72,8 @@
 **Primärquelle:** (Pflege heute Kap. Mund- und Zahnpflege)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "halten sich gegenseitig im Gleichgewicht"
+- Zitat: "Milliarden verschiedenster Mikroorganismen siedeln in der Mundhöhle (physiologische Mundflora) und halten sich gegenseitig im Gleichgewicht"
+⚠️ Quelle beschaffen (konkrete Primärquelle): die sechs konkreten Speichel-Kernaufgaben (Befeuchten, Bolus-Bindung, Alpha-Amylase/Verdauungsbeginn, Remineralisation/Zahnschutz, Lysozym/IgA-Abwehr, Spülung) — Pflege heute belegt nur die physiologische Mundflora im Gleichgewicht, nicht die sechs Einzelfunktionen. Fachlich korrekt (I Care Anatomie / Physiologie des Speichels), lokal nicht verbatim verifizierbar — die Sechserliste als Fakt nur unter Anatomie-Beleg führen oder auf belegte Teilaussagen (Mundflora-Gleichgewicht, antimikrobielle Selbstreinigung) reduzieren.
 **Praxisfehler:** Reduktion des Speichels auf die Befeuchtungsfunktion — ein Patient mit Xerostomie verliert auch Verdauungs-, Zahn- und Infektionsschutz.
 
 **Misconceptions:**
@@ -78,7 +85,7 @@
 
 ### F-04: Grundstandard der Zahnpflege
 
-**Fakt:** Zähne werden mehrmals täglich (Empfehlung: zweimal, idealerweise nach den Mahlzeiten) jeweils mindestens zwei bis drei Minuten mit einer weichen Bürste (kurzer Bürstenkopf, abgerundete Borsten) und fluoridhaltiger Zahnpasta geputzt. Ergänzend einmal täglich Zahnseide oder Interdentalbürste für die Zwischenräume.
+**Fakt:** Zähne werden mehrmals täglich (Pflege heute: dreimal täglich nach den Mahlzeiten) jeweils etwa drei Minuten mit einer Bürste mit kurzem Bürstenkopf und abgerundeten Borsten sowie fluoridhaltiger Zahnpasta geputzt; bei erhöhter Blutungsgefahr eine weiche Zahnbürste bzw. Reinigungsstäbchen. Ergänzend Zahnseide oder — bei größeren Zahnabständen — eine Interdentalbürste für die Zwischenräume.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
@@ -86,8 +93,15 @@
 **Primärquelle:** (Pflege heute Kap. Mund- und Zahnpflege; DGZMK S3-Leitlinie Kariesprophylaxe 2023)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "drei Minuten lang die Zähne sorgfältig putzen"
+- Zitat: "täglich (nach den Mahlzeiten) drei Minuten lang die Zähne sorgfältig putzen"
 - Zitat: "Zahnbürste mit kurzem Bürstenkopf"
+- Zitat: "und abgerundeten Borsten"
+- Zitat: "sollten eine weiche Zahnbürste bzw. Reinigungsstäbchen"
+- Zitat: "Unterstützung der Zahnhärtung und damit der Abwehrkraft des Zahns durch"
+- Zitat: "Zufuhr von Fluoriden"
+- Zitat: "Zahnseide zum Entfernen der Zahnbeläge"
+- Zitat: "kann eine Interdentalzahnbürste"
+⚠️ Quelle beschaffen (konkrete Primärquelle): die Putz-Frequenz „zweimal täglich" und die Dauer „zwei bis drei Minuten" — Pflege heute nennt ausdrücklich „dreimal täglich … drei Minuten". Die im Fakt ursprünglich genannte Zweimal-/2-Min-Empfehlung stammt aus der DGZMK-S3-Leitlinie Kariesprophylaxe 2023, die lokal NICHT vorliegt; bis zur Beschaffung gilt der Pflege-heute-Wortlaut (dreimal/drei Minuten). Fakt entsprechend angepasst.
 **Praxisfehler:** Verwendung harter Borsten — diese schädigen das Zahnfleisch (Rezession) und tragen Zahnhartsubstanz ab, reinigen aber nicht besser.
 
 **Misconceptions:**
@@ -109,9 +123,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Prothesenpflege wird mindestens"
+- Zitat: "zweimal täglich durchgeführt"
 - Zitat: "bei locker sitzenden Prothesen ist es notwendig, diese nach jeder Mahlzeit abzuspülen"
 - Zitat: "Prothese über dem wassergefüllten Waschbecken"
 - Zitat: "Prothese unter fließendem Wasser mit"
+- Zitat: "der Zahnbürste reinigen"
 - Zitat: "der sich gern auf geschädigten Schleimhäuten ansiedelt"
 **Praxisfehler:** Mundpflege bei Prothesenträgern wird auf die Prothesenreinigung reduziert — die Schleimhaut darunter bleibt mit Belägen bedeckt.
 
@@ -133,6 +149,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Inspektion der Mundhöhle erfolgt mithilfe einer kleinen Taschenlampe und"
+- Zitat: "eines Spatels. Mit dem angefeuchteten Spatel wird die Mundhöhle einschließlich des"
+- Zitat: "hinteren Rachenraums sorgfältig inspiziert"
+- Zitat: "mit Strahlentherapie"
+- Zitat: "inspizieren die Pflegenden den Mund-Rachen-Raum täglich"
+⚠️ Quelle beschaffen (konkrete Primärquelle): die feste Inspektions-Reihenfolge „Lippen → Zähne/Prothese → Zahnfleisch → Wangenschleimhaut → Gaumen → Zunge → Mundboden" — Pflege heute belegt Werkzeug (Taschenlampe + angefeuchteter Spatel), systematische Inspektion „einschließlich des hinteren Rachenraums" und die tägliche Frequenz bei Risikopatienten, nennt aber KEINE Schritt-für-Schritt-Reihenfolge. Die geordnete Sequenz nur unter einem Beleg führen, der sie explizit nennt (z. B. DGP/DGPPN-Leitlinie 2019, lokal nicht vorliegend), sonst als „systematisch von außen nach innen" entschärfen.
 **Praxisfehler:** Inspektion nur „in den offenen Mund schauen" ohne Spatel und Licht — Soor und Mukositis beginnen oft am hinteren Gaumen und an den Zungenrändern.
 
 **Misconceptions:**
@@ -152,7 +173,13 @@
 **Primärquelle:** (Pflege heute Kap. Haut und Anhangsgebilde / Candidose; DGP/DGPPN 2019)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "weißliche, nur anfangs abwischbare Beläge auf geröteter Schleimhaut"
+- Zitat: "Der Mundsoor ist bei Babys im ersten"
+- Zitat: "Lebensvierteljahr relativ häufig, danach"
+- Zitat: "tritt er v. a. bei Abwehrschwäche auf"
+- Zitat: "weißliche, nur anfangs abwischbare Beläge auf geröteter"
+- Zitat: "die bei Babys mit Milchresten verwechselt"
+- Zitat: "sich aber durch Trinken von"
+- Zitat: "Tee nicht entfernen lassen"
 **Praxisfehler:** Verwechslung von Soor-Belägen mit Milch- oder Essensresten — Soor lässt sich durch Trinken nicht entfernen und sitzt auf geröteter Fläche.
 
 **Misconceptions:**
@@ -172,9 +199,19 @@
 **Primärquelle:** (Pflege heute Kap. Mund- und Zahnpflege; DGP/DGPPN 2019; Cochrane Weening-Verbree 2023)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Mindestens einmal täglich sorgfältige Inspektion der Mundhöhle"
 - Zitat: "Regelmäßige Mund- und Zahnpflege"
+- Zitat: "Mundschleimhaut feucht halten und"
+- Zitat: "Speichelfluss anregen"
+- Zitat: "Mundspülung mit Wasser, Kochsalzlösung oder Tee nach"
+- Zitat: "Auswischen der Mundhöhle mit milden alkoholfreien Lösungen, Wasser oder Tee"
 - Zitat: "danach tritt er v. a. bei Abwehrschwäche auf"
-**Praxisfehler:** Mundpflege mit Zitrone-Glycerin-Tupfern — gilt seit den 1990ern als obsolet (Zitrone reizt, Glycerin entzieht Wasser).
+⚠️ Quelle beschaffen (konkrete Primärquelle): die exakte Konzentration „0,9 % NaCl" als Mund-Befeuchtungslösung — Pflege heute nennt im Mundpflege-Plan nur „Kochsalzlösung" (ohne Prozentangabe). 0,9 % ist der allgemeine physiologische Standard (im Korpus z. B. NaCl 0,9 % als Spüllösung belegt), aber nicht verbatim als Mund-Konzentration. Bis Beleg: „physiologische Kochsalzlösung (0,9 %)" als allgemeinen Standard führen, nicht aus Mundpflege-Stelle zitieren. — Ebenso ist „zuckerhaltige/alkoholische Lösungen vermeiden" nur indirekt belegt (Korpus empfiehlt „milde alkoholfreie Lösungen"); das „keine zuckerhaltigen" stammt aus dem Soor-Nährboden-Argument (siehe M2), nicht aus einer Verbots-Stelle.
+**Praxisfehler:** Mundpflege mit Zitrone-Glycerin-Tupfern — Glycerin entzieht Wasser, trocknet die Schleimhaut zusätzlich aus.
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Es eignen sich keine Mittel zur Mundpflege, die die Mundschleimhaut zusätzlich austrocknen, wie Zitronenstäbchen"
+- Zitat: "mit Glycerin oder Tees mit Gerbstoffen"
+⚠️ Quelle beschaffen (konkrete Primärquelle): die Datierung „obsolet seit den 1990ern" — der austrocknende Effekt ist belegt (Zeile 66172 f.), die historische Jahresangabe nicht. Datierung entfernt; bei Bedarf mit Pflege-/Hygiene-Historie belegen. Hinweis: Pflege heute empfiehlt sauren Zitronen-/Traubensaft im Parotitis-Kontext (Zeile 19188) zur Speichelanregung — Zitrone ist also nicht pauschal verboten, nur die Zitrone-Glycerin-Kombination zur Befeuchtung ist kontraproduktiv.
 
 **Misconceptions:**
 - `M1`: **"Zitrone-Glycerin ist ein guter Standard"** — Obsolet; empfohlen sind Wasser, 0,9 % NaCl oder Salbeitee. Fachbegriff: "Zitrone-Glycerin-Mythos".
@@ -193,8 +230,16 @@
 **Primärquelle:** (Pflege heute Kap. Mund- und Zahnpflege; I Care Pflege)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Entzündung der Ohrspeicheldrüse"
+- Zitat: "Entzündung der Ohrspeicheldrüse (Glandula parotis, Parotis), hervorgerufen durch Staphylokokken oder"
+- Zitat: "Hauptrisikofaktor für eine Parotitis ist eine"
 - Zitat: "Reduktion der Speichelproduktion des Patienten durch"
+- Zitat: "Längere Nahrungskarenz"
+- Zitat: "Erheblichen Flüssigkeitsmangel"
+- Zitat: "Normalerweise können keine Bakterien"
+- Zitat: "in die Ausführungsgänge dieser Drüsen gelangen, denn der ständig fließende Speichel"
+- Zitat: "Ziel ist, den Speichelfluss anzuregen"
+- Zitat: "Lutschen von Eiswürfeln oder sauren"
+- Zitat: "(zuckerfreien) Bonbons"
 **Praxisfehler:** Prophylaktische Antibiotika gegen Parotitis — fördern Resistenzen und Soor; Prophylaxe ist Speichelfluss-Anregung und Mundhygiene.
 
 **Misconceptions:**
@@ -215,6 +260,12 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "kommt es bei den Patienten zur Mundtrockenheit"
+- Zitat: "Spätestens wenn im Sterbeprozess die"
+- Zitat: "Mundatmung beginnt, kommt es bei den"
+- Zitat: "Dehydratation oder aufgrund von medikamentösen Nebenwirkungen kommt es"
+- Zitat: "Eine trockene Zunge entsteht bei längerer Mundatmung, mangelnder Flüssigkeitszufuhr, als unerwünschte Arzneimittelwirkung"
+- Zitat: "Bei den immungeschwächten Patienten können sich in der Folge Infektionen wie z. B. der Mundsoor entwickeln"
+⚠️ Quelle beschaffen (konkrete Primärquelle): der objektive Schwellenwert „Ruhespeichelfluss unter 0,1 ml/min" — im lokalen Korpus NICHT belegt (Pflege heute definiert Xerostomie qualitativ als Mundtrockenheit, ohne Flussrate). Wert stammt aus der Speichel-/Xerostomie-Fachliteratur (z. B. DGP/DGPPN 2019, zahnmedizinische Leitlinien); bis Beschaffung als „verringerte Speichelproduktion" führen oder den Zahlenwert mit Sekundärbeleg kennzeichnen. — Die Einzel-Medikamentengruppen (Opioide, Antidepressiva, Diuretika, Anticholinergika) sind im Korpus nur pauschal als „medikamentöse Nebenwirkungen / unerwünschte Arzneimittelwirkung" belegt, nicht namentlich.
 **Praxisfehler:** Behandlung der Mundtrockenheit mit süßen Getränken — fördert Karies und Soor; besser Wasser, ungesüßter Tee, zuckerfreier Kaugummi.
 
 **Misconceptions:**
@@ -235,7 +286,13 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "darf keine Flüssigkeit in den Mund gegeben werden, da Aspirationsgefahr besteht"
-- Zitat: "Auch bei bewusstlosen und intubierten Patienten ist die Zahnpflege mit einer weichen Zahnbürste möglich"
+- Zitat: "entfernen Pflegende die Zahnpasta mittels Tupfer"
+- Zitat: "Auch bei bewusstlosen und intubierten Patienten ist die"
+- Zitat: "Zahnpflege mit einer weichen Zahnbürste"
+- Zitat: "sie werden deshalb zur Mundpflege in eine flache Seitenlage gebracht"
+- Zitat: "Pflegende halten auch ein"
+- Zitat: "Absauggerät bereit"
+- Zitat: "Ggf. erfolgt danach eine Mundspülung mit Chlorhexidin (ohne Alkohol,"
 **Praxisfehler:** Weglassen der Mundpflege bei Bewusstlosen — gerade dann fehlt Speichelfluss und das Infektionsrisiko steigt.
 
 **Misconceptions:**
@@ -257,6 +314,14 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "steht das Ziel der Mundhygiene in dieser Phase des Lebens nicht mehr im"
 - Zitat: "das Wohlbefinden des Patienten sein"
+- Zitat: "kann auch durch einen Schluck Trinken oder ein Löffel"
+- Zitat: "Sprühflaschen mit ihrem Lieblingsgetränk oder eingefrorene Flüssigkeiten zum Lutschen"
+- Zitat: "Wichtig ist, dass jeweils"
+- Zitat: "nur so viel Flüssigkeit zugeführt wird,"
+- Zitat: "dass sich der Patient nicht verschluckt"
+- Zitat: "Mundpflegestäbchen aus Schaumstoff"
+- Zitat: "mit fettenden oder feuchten Lebensmitteln ausgewischt werden"
+⚠️ Quelle beschaffen (konkrete Primärquelle): die Aussage „Durstgefühl ist zentral-nerval reduziert" (Praxisfehler/M1) — Pflege heute belegt, dass Mundtrockenheit „oft als ständiges Durstgefühl empfunden" wird und kein Schluckzwang besteht, aber NICHT die neurophysiologische Reduktion des Durstempfindens. Diese Aussage mit Palliativ-Leitlinien-Beleg (DGP S3 2020) führen oder entschärfen.
 **Praxisfehler:** Sterbende zum Trinken drängen aus Angst vor „Verdursten" — das Durstgefühl ist zentral-nerval reduziert; befeuchten, nicht füllen.
 
 **Misconceptions:**
@@ -276,7 +341,9 @@
 **Primärquelle:** (DNQP Expertenstandard Förderung der Mundgesundheit; DGP/DGPPN 2019)
 **Beleg:**
 - Quelle: `dnqp-standards-index/mundgesundheit.txt`
-- Zitat: "ob Probleme im Mundbereich oder Risiken hierfür bestehen"
+- Zitat: "Die Pflegefachkraft erhebt zu Beginn des pflegerischen Auftrags"
+- Zitat: "mittels einer ersten Einschätzung (Screening), ob Probleme im Mundbereich oder Risiken hierfür bestehen"
+- Zitat: "Die Einschätzung wird in settingspezifischen sowie individuell festzulegenden Zeitabständen wiederholt"
 - Zitat: "führt bei festgestellten oder zu erwartenden Problemen im Mundbereich ein Assessment durch"
 **Praxisfehler:** Einmaliges Screening bei Aufnahme — die Einschätzung muss bei Zustandsänderungen (neue Medikamente, neue Diagnose) wiederholt werden.
 
@@ -297,7 +364,11 @@
 **Primärquelle:** (DNQP Expertenstandard Förderung der Mundgesundheit; Fiechter/Meier 1981)
 **Beleg:**
 - Quelle: `dnqp-standards-index/mundgesundheit.txt`
-- Zitat: "plant gemeinsam mit dem Menschen mit einem"
+- Zitat: "Die Pflegefachkraft plant gemeinsam mit dem Menschen mit einem"
+- Zitat: "pflegerischen Unterstützungsbedarf und ggf. seinen Angehörigen"
+- Zitat: "sowie den an der Versorgung beteiligten weiteren Berufsgruppen"
+- Zitat: "auf Grundlage des Assessments unter Berücksichtigung von individuellen Vorlieben, Abneigungen, Gewohnheiten und vorhandenen Selbstmanagementkompetenzen"
+⚠️ Quelle beschaffen (konkrete Primärquelle): die explizite Zuordnung „Planung folgt der Logik des Pflegeprozesses (Informieren, Beobachten, Planen, Durchführen, Evaluieren)" — die 5-/6-Phasen-Benennung stammt aus Fiechter/Meier 1981 (lokal nicht vorliegend), nicht aus dem DNQP-Mundgesundheits-Auszug. Mit Fiechter/Meier-Beleg führen oder als allgemeines Pflegeprozess-Wissen kennzeichnen.
 **Praxisfehler:** Standardplan „von der Stange" ohne individuelle Vorlieben — die Planung muss Gewohnheiten und Selbstmanagementkompetenzen berücksichtigen.
 
 **Misconceptions:**

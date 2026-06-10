@@ -10,6 +10,7 @@
 | quellen | Hatch/Maietta Grundkonzept; DNQP Expertenstandard Mobilität 2020; Kinaesthetics e.V. (Arbeitsdefinitionen); I Care Pflege Kap. Mobilität (als Faktenquelle, nicht Textquelle) |
 | einträge | 13 |
 | erstellt | 2026-04-21 (Pipeline v9) |
+| grounding | 2026-06-10 auf STÜTZT gehoben (Dozentin A) — 43 Verbatim-Belege (`pflege-heute-volltext/pflege-heute.txt`), `--check-file` ✅ 0 FAIL. Ungedeckte Detailaussagen markiert: F-07 (ATL-6er-Liste entfernt), F-10 (45° entfernt, Betthöhe korrigiert, 8-Schritt-Nummerierung als didaktisch markiert), F-11 (Bein-Arm-Choreografie ⚠️ Quelle beschaffen), F-13 (Rückengurt-Studie + ArbSchG-Pflicht ⚠️ Quelle beschaffen). |
 
 ---
 
@@ -23,7 +24,14 @@
 **Primärquelle:** (Hatch/Maietta, Kinaesthetik-Grundkonzept); (DNQP 2020 — Expertenstandard Mobilität empfiehlt Kinästhetik explizit)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "durch die Arbeiten von Frank Hatch und"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Lenny Maietta in direktem Austausch"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Bewegungsabläufe für Patient und Pflegende so physiologisch und kräfteschonend wie möglich"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "durch die Vermeidung von unphysiologischem Heben und Tragen zu betreiben"
+> ⚠️ Teilaussage „Hebetechniken sind im Routineeinsatz obsolet" — Quelle entschärft: Pflege heute formuliert nicht „obsolet", sondern „Heben und Tragen … widersprechen dem körperschonenden Prinzip der Kinaesthetics" (siehe F-10-Beleg). Aussage entsprechend als didaktische Zuspitzung lesen, nicht als wörtlichen Quellensatz.
 **Praxisfehler:** Routine-Transfers werden weiterhin hebend durchgeführt, weil es "schneller geht" — langfristig Rückenschäden + Deaktivierung des Patienten.
 **Transfer:** Wie beim Tanzen: einer führt, einer folgt — aber beide bewegen sich. Wer den Partner trägt, tanzt nicht, er schleppt.
 
@@ -36,7 +44,7 @@
 
 ### F-02: Die 6 Kinästhetik-Konzepte — Übersicht
 
-**Fakt:** Kinästhetik umfasst 6 Konzepte, die jede Bewegung strukturieren: (1) Interaktion, (2) Funktionale Anatomie, (3) Menschliche Bewegung, (4) Anstrengung, (5) Menschliche Funktion, (6) Umgebung. Diese Konzepte werden nicht nacheinander abgearbeitet, sondern sind immer gleichzeitig präsent und bilden ein Analyse-Raster für jede Bewegungssituation.
+**Fakt:** Kinästhetik umfasst 6 Konzepte, die jede Bewegung strukturieren: (1) Interaktion, (2) Funktionale Anatomie, (3) Menschliche Bewegung, (4) Anstrengung, (5) Menschliche Funktionen, (6) Umgebung. Diese Konzepte werden nicht nacheinander abgearbeitet, sondern sind immer gleichzeitig präsent und bilden ein Analyse-Raster für jede Bewegungssituation.
 
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Klassifikation
@@ -45,6 +53,10 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Sechs kinästhetische Konzepte sind die Basis"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Interaktion • Funktionale Anatomie • Menschliche Bewegung • Anstrengung • Menschliche Funktionen • Umgebung"
+> Hinweis: Das 6. Konzept heißt in Pflege heute „Umgebung(sgestaltung)", das 5. „Menschliche **Funktionen**" (Plural) — Fakt-Liste daran angeglichen.
+> ⚠️ Teilaussage „immer gleichzeitig präsent / Analyse-Raster" ist didaktische Rahmung; Pflege heute belegt die Liste, nicht die Gleichzeitigkeits-Aussage. Als Lehr-Interpretation gekennzeichnet.
 
 **Misconceptions:**
 - `M1`: **"Die 6 Konzepte sind eine Reihenfolge"** — Nein, sie laufen parallel. Jede Bewegung enthält alle 6 Aspekte gleichzeitig.
@@ -63,6 +75,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Das Konzept Interaktion beschreibt die Wechselbeziehung zwischen Patient und Pflegender"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "die Qualität einer Berührung (taktile Interaktion)"
 **Praxisfehler:** Bewegung wird nicht angekündigt, Patient erschrickt, wehrt sich reflexhaft. Eigenbewegung kommt nicht zustande.
 **Transfer:** [Transfer] Wie beim Paartanz: ohne Blickkontakt und spürbare Führung stolpert man übereinander.
 
@@ -82,7 +96,15 @@
 **Primärquelle:** (Hatch/Maietta)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Knochen und Muskeln stellen eine Funktionseinheit dar"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Körpergewicht möglichst über knöcherne Strukturen führen und nicht tragen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die sieben Massen sind: Kopf, Brustkorb, Becken, Arme und Beine"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die Massen fassen, die Zwischenräume"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Kontakt an den Zwischenräumen hingegen hemmt"
 **Praxisfehler:** Patient wird unter den Achseln gegriffen oder am Oberarm gezogen → Schmerz, Schulterverletzung, Gegenspannung.
 **Transfer:** [Transfer] Beim Umzug hebt man eine Kommode am Korpus, nicht an den Schubladengriffen — sonst brechen sie ab. Am Körper: tragende Knochen, nicht Muskelweichteile.
 
@@ -103,7 +125,9 @@
 **Primärquelle:** (Hatch/Maietta); (DNQP 2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "dass er sein Körpergewicht zum Aufstehen auf die Füße verlagern kann"
+- Zitat: "Eine Fortbewegung, wie z. B. das Gehen, wird durch Gewichtsverlagerung ermöglicht"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "sein Körpergewicht zum Aufstehen auf die Füße verlagern kann"
 **Praxisfehler:** "Hochziehen" am Arm ohne vorherige Gewichtsverlagerung → Patient hängt wie ein Sack, Pflegekraft ruiniert Rücken.
 **Transfer:** Wer aus einem tiefen Sessel aufstehen will, rutscht erst nach vorn an die Kante — dann klappt's mühelos. Derselbe Trick, nur professionell.
 
@@ -124,6 +148,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die zwei Anstrengungsformen sind Ziehen und Drücken"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "baut sich ein fortlaufendes Spannungssystem im ganzen Körper auf"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "ist sein Drücken ineffektiv und die Anstrengung erhöht sich bei beiden"
+> Hinweis: Die Fakt-Aussage „nicht beides gleichzeitig" entspricht dem Quellenbeispiel: drückt sich der Patient mit den Armen ab, während gleichzeitig gezogen wird, wird „sein Drücken ineffektiv" — Quelle belegt die Störung des Spannungssystems, nicht ein wörtliches „nie gleichzeitig". Als Lehr-Zuspitzung lesbar.
 **Praxisfehler:** Pflegekraft zieht am Arm, während Patient instinktiv drückt → Gegenspannung, Bewegung blockiert, Patient wird "schwerer".
 
 **Misconceptions:**
@@ -135,13 +164,19 @@
 
 ### F-07: Konzept 5 — Menschliche Funktion (Bewegungsmuster in Alltag)
 
-**Fakt:** Menschliche Funktionen sind wiederkehrende Bewegungsmuster: Sich ernähren, sich ausscheiden, sich bewegen, sich pflegen, sich ausruhen, sich kleiden. Jede pflegerische Handlung dient einer dieser Funktionen und soll die zugehörigen Bewegungsmuster des Patienten aktivieren. Wer einen Schluck trinkt, führt 5-7 einzelne Bewegungen aus — die Pflegekraft entscheidet, welche der Patient selbst macht und bei welchen sie assistiert.
+**Fakt:** Das Konzept „Menschliche Funktionen" unterscheidet in Pflege heute die **einfache Funktion** (Position und Grundposition) und die **komplexe Funktion** (Bewegung am Ort und Fortbewegung). Bewegungen am Ort sind z. B. Essen und Trinken, An- und Auskleiden oder Ruhen und Schlafen; Fortbewegung ist z. B. das Gehen. Jede pflegerische Handlung lässt sich diesen Funktionen zuordnen und soll die zugehörigen Bewegungsmuster des Patienten aktivieren — die Pflegekraft entscheidet, welche Teilbewegungen der Patient selbst macht und bei welchen sie assistiert.
+
+> ⚠️ Frühere Fakt-Version listete „Sich ernähren / ausscheiden / bewegen / pflegen / ausruhen / kleiden" als „6 menschliche Funktionen". Diese ATL-/ABEDL-artige 6er-Liste steht NICHT in Pflege heute (Kinaesthetics-Konzept) und ist keine Kinästhetik-Systematik — entfernt. Pflege heute gliedert „Menschliche Funktionen" in einfache vs. komplexe Funktion (Beleg unten).
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Konzept
 **Bloom-Potential:** 3-4
 **Primärquelle:** (Hatch/Maietta)
 **Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "einfache Funktion (Position und Grundposition) und die komplexe Funktion"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Bewegung am Ort und Fortbewegung"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Bewegungen am Ort sind z. B. Essen und Trinken, An- und Auskleiden oder Ruhen und Schlafen"
 **Praxisfehler:** Pflegekraft übernimmt die ganze Bewegungssequenz (z.B. Glas heben + Mund öffnen + schlucken anleiten), obwohl der Patient einzelne Teile selbst könnte → Deaktivierung.
@@ -163,6 +198,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Pflegenden gestalten die Umgebung eines Patienten derart, dass eine Bewegung so sicher und so einfach wie möglich wird"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "das Patientenbett so weit wie möglich senken oder einen Stuhl so dicht wie möglich ans Bett"
 **Praxisfehler:** Bett bleibt nachts ganz tief eingestellt → Pflegekraft arbeitet morgens im gebückten Rücken.
 
 **Misconceptions:**
@@ -182,6 +219,13 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die sieben Massen sind: Kopf, Brustkorb, Becken, Arme und Beine"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die Zwischenräume sind die sechs zwischen den"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Hals, Taille, Schultergelenke und Hüftgelenke"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die Massen fassen, die Zwischenräume"
+> Hinweis: Pflege heute zählt die 7 Massen ohne „2×" auf (Arme und Beine = je beidseits → 7 Massen gesamt: Kopf, Brustkorb, Becken + 2 Arme + 2 Beine). 6 Zwischenräume = Hals, Taille + 2 Schultergelenke + 2 Hüftgelenke. Fakt-Aufschlüsselung deckungsgleich.
 
 **Misconceptions:**
 - `M1`: **"Taille ist ein guter Griffpunkt"** — Falsch. Taille ist Zwischenraum, Griff dort presst Organe. Stattdessen: Beckenkamm.
@@ -191,7 +235,12 @@
 
 ### F-10: Transfer Bett zu Stuhl — kinästhetische Schrittfolge
 
-**Fakt:** Ein sicherer kinästhetischer Transfer von Bett zu Stuhl läuft in definierten Schritten ab: (1) Umgebung vorbereiten (Stuhl 45° zum Bett, Betthöhe knapp über Patientenhüfte), (2) Patient informieren und zum Mitmachen auffordern, (3) Patient an die Bettkante bewegen (Beine über die Bettkante, Oberkörper aufrichten), (4) Sitz an der Bettkante stabilisieren, (5) Gewicht nach vorn auf die Füße verlagern lassen, (6) Aufstehen im gleichen Rhythmus wie Patient, (7) Drehen auf die Füße, nicht Heben, (8) Absitzen auf Stuhl in kontrolliertem Hinsetzen.
+**Fakt:** Ein kinästhetischer Transfer Bett→Stuhl folgt dem in Pflege heute belegten Vorgehen „Aufsetzen an die Bettkante" und der anschließenden Mobilisation über Gewichtsverlagerung: (1) Umgebung vorbereiten — Liegefläche auf Beckenhöhe der Pflegenden bringen, Stuhl so dicht wie möglich ans Bett; (2) Patient informieren und zum Mitmachen auffordern; (3) Patient an die Bettkante bewegen — erst zur Seite drehen, Becken nach hinten, dann die Beine nacheinander aus dem Bett schieben und sich mit dem unten liegenden Unterarm abstützen; (4) Sitz an der Bettkante stabilisieren — die Pflegende hebt nicht an, sondern signalisiert durch Druck auf Rücken und Arm, dass der Patient sein Gewicht über Arme und Oberschenkel in Richtung Becken verlagert; (5) Gewicht nach vorn auf die Füße verlagern lassen; (6) Aufstehen im Tempo des Patienten, ruckartige Gewichtsverlagerungen vermeiden; (7) Drehen auf die Füße statt Heben; (8) kontrolliertes Hinsetzen auf den Stuhl.
+
+> ⚠️ Drei Detailangaben sind in Pflege heute NICHT belegt und wurden korrigiert/markiert:
+> - „Stuhl **45°** zum Bett" → Pflege heute nennt keinen Winkel; nur „Stuhl so dicht wie möglich ans Bett". 45°-Angabe entfernt (war ungedeckt; M1 unten entsprechend entschärft).
+> - „Betthöhe **knapp über Patientenhüfte**" → Pflege heute: Liegefläche auf **Beckenhöhe der Pflegenden** (rückengerechtes Arbeiten). Angabe ersetzt.
+> - Die strikte **8-Schritt-Nummerierung** ist eine didaktische Strukturierung der Plattform; Pflege heute beschreibt Aufsetzen + Mobilisation als Etappen ohne fixe 8er-Sequenz. ⚠️ Quelle beschaffen (Hatch/Maietta Kinästhetik-Grundlagen / Kinaesthetics e.V.), falls eine normierte Schrittzahl belegt werden soll.
 
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Handlung + Sequenz
@@ -199,11 +248,19 @@
 **Primärquelle:** (Hatch/Maietta); (DNQP 2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Anschließend bittet die Pflegende ihn, die Beine nacheinander aus dem Bett zu schieben"
+- Zitat: "Liegefläche des Bettes zunächst auf ihre Beckenhöhe"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "die Beine nacheinander aus dem Bett zu schieben"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "signalisiert ihm durch Druck auf Rücken und Arm"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Heben und Tragen sowie ruckartige Gewichtsverlagerungen widersprechen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "das Patientenbett so weit wie möglich senken oder einen Stuhl so dicht wie möglich ans Bett"
 **Praxisfehler:** Transfer wird "in einem Ruck" durchgeführt — Patient kommt nicht hinterher, Pflegekraft trägt ihn effektiv.
 
 **Misconceptions:**
-- `M1`: **"Der Stuhl muss direkt vor dem Bett stehen"** — Falsch. 45°-Winkel erleichtert die Drehbewegung auf den Füßen.
+- `M1`: **"Der Stuhl muss direkt vor dem Bett stehen"** — Pflege heute empfiehlt, den Stuhl so dicht wie möglich ans Bett zu stellen und die Umgebung so zu gestalten, dass die Bewegung einfach wird; ein konkreter Winkel (z. B. 45°) wird in Pflege heute nicht genannt.
 - `M2`: **"Je schneller der Transfer, desto besser"** — Umgekehrt: Tempo des Patienten bestimmt das Tempo. Zu schnell führt zu Angst und Gegenspannung.
 - `M3`: **"Patient muss vollständig aufrichten können, sonst Transfer nicht möglich"** — Auch Menschen mit Resteigenbewegung können gemeinsam mit der Pflegekraft transferiert werden; komplette Immobilität braucht Lifter.
 
@@ -219,7 +276,14 @@
 **Primärquelle:** (Hatch/Maietta); (DNQP 2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "verlagert der Patient seine Körpermassen in Etappen an"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "unterstützt jene Massen, die der Patient nicht selbst bewegen kann"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Der Patient kann mithelfen, indem er mit einem Arm zieht oder mit dem Fuß drückt"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Sie hebt den Patienten nicht an, sondern signalisiert ihm durch Druck auf Rücken und Arm"
+> ⚠️ Die konkrete Choreografie „entgegengesetztes Bein aufstellen + gleichseitigen Arm über die Brust legen, dann über das Bein rollen" ist eine geläufige Kinästhetik-Praxisanleitung, in Pflege heute aber nicht wörtlich so belegt. Pflege heute belegt das Prinzip (Massen Etappe für Etappe, Patient hilft mit Arm-Zug/Fuß-Druck, Pflegende begleitet/stabilisiert statt zu heben). ⚠️ Quelle beschaffen (Hatch/Maietta Kinästhetik-Grundlagen / Kinaesthetics e.V.), falls die Bein-Arm-Choreografie wörtlich belegt werden soll.
 **Praxisfehler:** Patient wird am Arm und an der Schulter gezogen, ohne dass das Bein aufgestellt wird → Pflegekraft hebt effektiv den Brustkorb an, Patient ist passiv.
 
 **Misconceptions:**
@@ -240,6 +304,14 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Beide Konzepte schließen sich nicht aus und können bei der Pflege bewegungs- und wahrnehmungseingeschränkter Menschen kombiniert werden"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Beide Konzepte fördern die Selbstständigkeit des Patienten"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "beide Körperhälften in den Bewegungsablauf integriert werden"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Zug auf den Arm vermeiden, betroffenen Arm immer mitführen"
+> Beleg „niemals am betroffenen Arm ziehen (Subluxationsgefahr Schulter)" stammt aus dem Bobath-/Hemiplegie-Kapitel derselben Quelle (Pflege heute, Abschnitt subluxierte Schulter): „Zug auf den Arm vermeiden, betroffenen Arm immer mitführen … Arm nie länger nach unten hängen lassen".
+> ⚠️ Parkinson-spezifische Wirksamkeit (M3: „Gerade bei Parkinson-Rigor helfen kinästhetische Techniken …") ist in Pflege heute nicht eigens belegt — als Plausibilitäts-Aussage gekennzeichnet, nicht als Quellensatz.
 **Praxisfehler:** Betroffene Seite wird ignoriert ("ist ja gelähmt") — führt zu assoziierten Reaktionen und Vernachlässigung.
 
 **Misconceptions:**
@@ -260,6 +332,12 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Kinaesthetics ist ein kräfteschonendes und sehr physiologisches Konzept und beugt daher möglichen Rückenproblemen wie Bandscheibenschäden vor"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Liegefläche des Bettes zunächst auf ihre Beckenhöhe"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "das Gewicht nicht getragen, sondern verlagert"
+> Die „drei Grundregeln" (Arbeitshöhe anpassen / Gewicht verlagern statt heben / mit dem Patienten arbeiten) fassen belegte Einzelaussagen zusammen (Beckenhöhe, „Gewicht … verlagert … nicht getragen"). Die Zusatzangaben „breiter Stand, Knie leicht gebeugt, Beckenmitte über Fußmitte" sind allgemeine rückengerechte Stand-Regeln, im Kinaesthetics-Kapitel von Pflege heute nicht wörtlich belegt — als Standard-Ergänzung lesbar.
+> ⚠️ M1 (Rückengurt: „Studien zeigen keine klare Schutzwirkung") und M3 (Arbeitgeber „nach Arbeitsschutzgesetz verpflichtet, kinästhetische Fortbildungen zu ermöglichen") sind im Korpus (Pflege heute) NICHT belegt. ⚠️ Quelle beschaffen (BGW-Publikationen zu Rückenprävention / ArbSchG §3, DGUV) ODER als ungedeckte Detailaussage entfernen, falls geprüft werden soll.
 **Praxisfehler:** Bett bleibt unten eingestellt, weil "es schneller geht" — kurzfristig ja, langfristig Rückenschaden.
 **Transfer:** [Transfer] Wie beim Kistenheben im Umzug: aus den Knien heben, nicht aus dem Rücken. Bei Menschen: dazu noch das Gewicht des Patienten MITNEHMEN, nicht GEGEN sich halten.
 
