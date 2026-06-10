@@ -1,29 +1,29 @@
 # Autonom-Status — lebende Queue & Metriken
 
-**Letzter Lauf:** 2026-06-10 (Setup) · **Phase:** CE-02 auf hohe Latte heben (vor Skalierung auf CE-05+)
+**Letzter Lauf:** 2026-06-10 Zyklus 1 (Voll-Re-Audit) · **Phase:** CE-02 auf hohe Latte heben (vor Skalierung auf CE-05+)
 
 ---
 
-## Metriken (ehrlich, beim letzten Selbst-Check)
+## Metriken (ehrlich, Voll-Re-Audit 2026-06-10, 353 Fakten)
 
 | Metrik | Wert | Ziel |
 |--------|------|------|
 | CE-02 Themen mit Kernfakten | 25/25 | 25/25 ✅ |
 | Fakten gesamt | 353 | — |
-| **STÜTZT-Quote (Semantik-Audit)** | ~51 % (vor Fix) → **neu messen** | ≥ 90 % |
-| STÜTZT-NICHT | 23 gefixt → **neu messen** | 0 |
+| **STÜTZT (Zitat trägt Claim voll)** | **44 % (156)** | ≥ 90 % |
+| **TEILWEISE (Kern ok, Detail nicht im Zitat)** | **49 % (172)** | → STÜTZT heben |
+| **STÜTZT-NICHT (Zitat trägt Claim nicht)** | **0** ✅ (2 gefixt) | 0 ✅ |
+| ⚠️ ehrlich markiert | ~24 | nur lizenzpflichtig/Dozentin |
 | Freie Primärquellen integriert | 8 (AWMF-VTE, RKI-KRINKO, ASPEN, SBAR, IDDSI, EPUAP, DGE×2) | alle freien |
-| ⚠️ ehrliche Lücken | ~33 | nur lizenzpflichtig/Dozentin |
 
-**Letzte ehrliche Selbst-Einschätzung:** „halluzinationssicher fundiert" — aber NICHT „pflegefachlich top": nur ~51 % der Fakten voll quellengedeckt (Stand vor jüngsten Fixes — muss neu gemessen werden), kein Dozentin-Review, Detail-Zahlen teils nur lizenzpflichtig belegbar.
+**Ehrliche Selbst-Einschätzung (kein Schönreden):** Nahezu HALLUZINATIONSSICHER (0 STÜTZT-NICHT) — aber NICHT „pflegefachlich top": erst **44 %** voll quellengedeckt, **49 %** nur im Kern belegt (konkrete Zahlen/Skalen/Listen nicht im Zitat = plausibel, aber nicht maschinell bewiesen). Kein Dozentin-Review. Detail-Zahlen teils nur lizenzpflichtig belegbar. **Bin ich top? Nein — halb voll-belegt.**
 
 ---
 
 ## QUEUE (oberste Zeile = nächstes Paket)
 
-1. **Voll-Semantik-Audit CE-02 neu** (alle 25 Themen, adversarial) → echte STÜTZT-Quote nach den jüngsten Fixes messen + STÜTZT-NICHT-Liste neu.
-2. **Restliche STÜTZT-NICHT fixen** (aus 1) — echtes Zitat / ⚠️ / entschärfen.
-3. **TEILWEISE auflösen** (~140, batchweise pro Thema): Zweitzitat aus vorhandenem Korpus (Pflege heute / 8 Primärquellen) für die ungedeckte Teilaussage; wo nicht im Korpus → ⚠️ mit konkreter Quelle.
+1. ✅ ERLEDIGT Zyklus 1: Voll-Re-Audit (44 % STÜTZT, 0 STÜTZT-NICHT) + 2 STÜTZT-NICHT gefixt.
+2. **TEILWEISE auflösen (172 Fälle)** — DAS ist jetzt der Haupthebel zu ≥90 % STÜTZT. Batchweise pro Thema: für jede ungedeckte Detail-Aussage (Zahl/Skala/Liste) ein ZWEITZITAT aus dem Korpus (Pflege heute / 8 Primärquellen); wo nicht im Korpus → ⚠️ mit konkreter Quelle. Reihenfolge nach schlechtester Datei: positionierung (11 TW), ganzkörperpflege (14), basale-stimulation (11), saeuglingspflege (11), ernaehrungsassessment (12), mobilisation (8), dann Rest.
 4. **Weitere FREIE Quellen prüfen/beschaffen:** ESPEN-Vollleitlinie (klin. Ernährung), WHO Falls Report 2007, weitere AWMF-S3 (Dekubitus, Ernährung), RKI nosokomiale Pneumonie (pneumonie F-12 Fallzahl). Jede via fetch-leitlinien.sh-Muster, dann betroffene Fakten re-grounden.
 5. **Re-Audit** → STÜTZT-Quote gegen Ziel ≥ 90 % prüfen.
 6. Wenn ≥ 90 % + 0 STÜTZT-NICHT + Rest sauber ⚠️ → **CE-02 fertig genug** → Übergabe (siehe Eskalationen), DANN erst Queue für CE-05/weitere CE öffnen.
@@ -40,4 +40,5 @@
 ---
 
 ## LOG (neueste oben — jeder Lauf trägt 1 Zeile ein)
-- 2026-06-10 Setup: Playbook + Status + Zeitplan eingerichtet. 8 freie Quellen integriert; STÜTZT-NICHT-Erstrunde (23) gefixt. Nächstes: Voll-Re-Audit.
+- 2026-06-10 Zyklus 1: Voll-Re-Audit (5 adversariale Prüfer, 353 Fakten) → ehrlich 44 % STÜTZT / 49 % TEILWEISE / 0 STÜTZT-NICHT / 24 ⚠️. 2 verbliebene STÜTZT-NICHT (mobilisation F-06, ganzkörper F-11) gefixt. Selbst-Check: halluzinationssicher ja, top nein. Nächstes: TEILWEISE-Auflösung (172).
+- 2026-06-10 Setup: Playbook + Status eingerichtet. 8 freie Quellen integriert; STÜTZT-NICHT-Erstrunde (23) gefixt.

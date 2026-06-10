@@ -61,3 +61,20 @@ Diese brauchen ein besseres Zitat ODER eine Claim-Anpassung:
 2. **STÜTZT-NICHT zuerst fixen** (~30 Fakten): besseres Zitat oder Claim entschärfen.
 3. **TEILWEISE:** Zweitzitat für die Teilaussage ODER Detail-Zahlen aus dem Fakt in eine klar als „Primärquelle-Tag" markierte Nebenrolle.
 4. Das beantwortet „sind wir pflegefachlich top?": **Noch nicht** — wir sind zu ~51 % voll quellengedeckt, der Rest ist teil- oder schwach gedeckt. Plus weiterhin: kein Mensch hat es geprüft (Dozentin-Review fehlt).
+
+---
+
+## RE-AUDIT nach Fixes + Quellen (2026-06-10, Zyklus 1)
+
+Voll-Re-Audit über alle 353 Fakten (5 adversariale Prüfer), strenger/vollständiger als der Erst-Audit:
+
+| Verdikt | Erst-Audit | **Re-Audit** |
+|---------|-----------:|-------------:|
+| STÜTZT | ~51 % | **44 % (156)** |
+| TEILWEISE | ~41 % | **49 % (172)** |
+| STÜTZT-NICHT | ~9 % (~30) | **0,6 % → 0** (2 gefixt) |
+| ⚠️ ehrlich markiert | — | 24 |
+
+**Befund:** STÜTZT-NICHT (echte Defekte/dekorative Zitate) von ~30 auf **0** — Halluzinations-Risiko nahezu eliminiert. ABER nur 44 % voll belegt; 49 % „Kern belegt, Detail-Zahl/Skala nicht im Zitat". Der scheinbare STÜTZT-Rückgang ggü. Erst-Audit = strengere/vollständigere Bewertung diesmal.
+
+**Hebel zu ≥90 %:** Die 172 TEILWEISE auflösen — pro Detail-Aussage ein Zweitzitat (R2) oder ehrlich ⚠️. Das ist überwiegend Beleg-ABDECKUNG, kein Faktenfehler.

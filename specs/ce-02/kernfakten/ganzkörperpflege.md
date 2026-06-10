@@ -228,7 +228,9 @@
 **Primärquelle:** (Juchli ATLs 1987)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Fingernägel rund schneiden"
 - Zitat: "Fußnägel gerade schneiden, um ein Einwachsen zu verhindern"
+- Zitat: "um die Nägel aufzuweichen, da sie sich"
 **Praxisfehler:** Fußnägel rund schneiden — die Nagelecken wachsen in den seitlichen Nagelwall (Entzündung, Schmerz, ggf. OP).
 
 **Misconceptions:**

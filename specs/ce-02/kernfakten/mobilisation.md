@@ -115,7 +115,8 @@
 
 ### F-06: Gehhilfsmittel nach Stabilität
 
-**Fakt:** Gehhilfsmittel unterscheiden sich nach Unterstützungsgrad: Gehstock (geringste Unterstützung, in die gesunde Hand, da er den gesunden Arm verlängert und die betroffene Seite entlastet), Unterarmgehstütze (UAG, Teilbelastung einer Seite nach Fraktur/OP), Rollator (4-rädriger Gehwagen mit großer Standfläche und Sitzmöglichkeit für unsichere Patienten) und Rollstuhl (bei fehlender Steh-/Gehfähigkeit, aber parallel weiter mobilisieren). Der Rollator setzt Kraft zum Stützen, Stehen und Gehen voraus.
+**Fakt:** Gehhilfsmittel unterscheiden sich nach Unterstützungsgrad: Gehstock (geringste Unterstützung), Unterarmgehstütze (UAG, Teilbelastung einer Seite nach Fraktur/OP), Rollator (4-rädriger Gehwagen mit großer Standfläche und Sitzmöglichkeit für unsichere Patienten) und Rollstuhl (bei fehlender Steh-/Gehfähigkeit, aber parallel weiter mobilisieren). Der Rollator setzt Kraft zum Stützen, Stehen und Gehen voraus.
+⚠️ Quelle beschaffen (konkrete Primärquelle): Die Kern-Regel „Gehstock in die GESUNDE Hand (verlängert den gesunden Arm, entlastet die betroffene Seite)" ist im vorhandenen Korpus (Pflege heute) nicht verbatim belegbar — die einzige Stockstelle (Kap. zu Arthrose) beschreibt nur das gleichzeitige Aufsetzen mit dem erkrankten Bein, nicht die Hand-/Seitenwahl. Beleg über physiotherapeutische Primärquelle (z. B. AWMF-Leitlinie/Hilfsmittel-Versorgung, Ergo-/Physiotherapie-Lehrbuch) nachziehen, bevor die Hand-Regel als Schüler-Inhalt ausgespielt wird.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Klassifikation
@@ -123,7 +124,7 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 9.6; BGW 2019)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "setzt Kraft zum Stützen, Stehen"
+- Zitat: "setzt Kraft zum Stützen, Stehen"  (belegt die Rollator-Teilaussage)
 **Praxisfehler:** Gehstock wird in die kranke Hand gegeben; Rollator wird nicht individuell angepasst (Griffhöhe, Bremsen, Reifendruck).
 
 **Misconceptions:**
