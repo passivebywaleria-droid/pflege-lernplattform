@@ -136,10 +136,17 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 3
-**Primärquelle:** (DNQP 2022)
+**Primärquelle:** (DNQP 2022; Pflege heute 7. Aufl., Kap. 9.8 Sturzprophylaxe)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Stolperfallen/Hindernisse zu identifizieren, diese anschließend beseitigen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Beseitigen von Stolperfallen (z. B. Teppiche, Türschwellen), Anbringen von Haltegriffen, gute und ausreichende Beleuchtung"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Niedrige Betthöhe"
+- Quelle: `dnqp-standards-index/sturzprophylaxe.txt`
+- Zitat: "Die Pflegefachkraft sorgt für eine individuelle Umgebungsanpassung sowie für den Einsatz geeigneter Hilfsmittel zur Sturzprophylaxe"
+**Belegstatus Teilaussagen:** Stolperfallen entfernen, Haltegriffe, gute Beleuchtung und angepasste (niedrige) Betthöhe sind nun verbatim aus dem Korpus gedeckt (Pflege heute Kap. 9.8). Die individuelle, sturzrisiko-bezogene Umgebungsanpassung ist über den DNQP-Standard (P4b) gedeckt. ⚠️ Die Teilaussagen *rutschfeste Unterlagen* und *freie Wege* sind im Korpus nur in Transfer-/Waschkontexten belegt, nicht in einem generischen Sturz-Umgebungs-Kontext — als allgemein anerkannte Maßnahmen geführt, nicht verbatim sturz-belegt.
 **Praxisfehler:** Bett-Höhe wird oft nicht patientenindividuell angepasst (tief bei Demenz vs. hoch für Transfer).
 
 **Misconceptions:**
@@ -161,6 +168,13 @@
 - Zitat: "Die im Alter häufige Polypharmazie erhöht das Sturzrisiko durch wenig kalkulierbare Wechselwirkungen der Arzneimittel"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Stürze werden durch die Menge der Medikamente und durch einige spezielle Medikamentengruppen begünstigt"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Polypharmazie > 4 Medikamente"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Einnahme von mehr als vier verschiedenen Medikamenten"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Psychotrope Medikamente"
+**Belegstatus Teilaussagen:** Die Definition *Polypharmazie > 4 Medikamente* ist nun verbatim doppelt gedeckt (Pflege heute Kap. 9.8 listet sie als medikamentenbezogenen Risikofaktor; Kap. 9.8.2 nennt „Einnahme von mehr als vier verschiedenen Medikamenten" als Risikomerkmal). Als sturzrelevante Medikamentengruppen nennt der Korpus verbatim *Antihypertensiva* und *Psychotrope Medikamente*. ⚠️ Die im Fakt als Beispiele genannten psychotropen Untergruppen *Benzodiazepine, Z-Substanzen, Antidepressiva* sowie *Diuretika* sind im Korpus zwar als Wirkstoffklassen vorhanden, aber NICHT verbatim in einem Sturz-Verursachungs-Kontext belegt (sie stehen in den Kapiteln Schlafmittel/Psychopharmaka, nicht im Sturz-Kapitel). Sie sind als fachübliche Konkretisierung der belegten Oberkategorie „Psychotrope Medikamente" geführt; für namentliche sturzbezogene Nennung wäre PRISCUS/FORTA bzw. STOPP/START zu beschaffen. Die Zahl *20-40 % medikamentöse Mitursache* bleibt unbelegt (s. Fakt-Text).
 **Praxisfehler:** Pflege übernimmt Medikamente unkritisch, ohne Wechselwirkungen/Sturzrisiko zu hinterfragen.
 
 **Misconceptions:**

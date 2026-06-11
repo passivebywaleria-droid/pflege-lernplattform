@@ -10,7 +10,7 @@
 | quellen | Pflege heute Kap. 11 Schlaf (lokal verbatim belegt). Zusätzlich referenziert, aber im Korpus NICHT verifizierbar (⚠️ Quelle beschaffen): AASM Scoring Manual 2020; DGSM S3-Leitlinie Insomnie 2017/2020 + SBAS 2020; ICSD-3 (AASM); Borbély 1982; National Sleep Foundation 2015; Beers-Liste AGS 2023 |
 | einträge | 13 |
 | erstellt | 2026-06-10 |
-| grounding | Hohe Latte (QUALITAETSSTANDARD-GROUNDING R1–R3) · alle Pflege-heute-Belege verbatim (57 Zitate, zitat-verifizierer ✅) · 6 ⚠️-Markierungen für korpus-fremde Sub-Claims (NSF-Spannweiten, ICSD-3-Schwellen + „häufigste", NREM/REM-Parasomnien-Zuordnung, STOP-BANG/nCPAP, Beers-Liste/Z-Substanz-Bewertung, „Licht wichtigster Taktgeber"-Superlativ, Sleep-Bundle-Begriff) · geprüft 2026-06-11 |
+| grounding | Hohe Latte (QUALITAETSSTANDARD-GROUNDING R1–R3) · alle Pflege-heute-Belege verbatim (85 Zitate, zitat-verifizierer ✅) · F-09/F-10/F-11/F-12 nach Semantik-Audit TEILWEISE→aufgelöst: Aufzählungs-Bestandteile (Alters-Ursachen-Liste, Genussmittel schwarzer Tee/üppige Mahlzeit, Tab. 11.2 Störfaktoren, Schlafhygiene-Prinzipien) je per Zweitzitat gedeckt · ⚠️-Markierungen für korpus-fremde Sub-Claims/Superlative (NSF-Spannweiten, ICSD-3-Schwellen + „häufigste", NREM/REM-Parasomnien-Zuordnung, STOP-BANG/nCPAP, Beers-Liste/Z-Substanz-Bewertung, „Licht wichtigster Taktgeber"-Superlativ, Sleep-Bundle-Begriff, „Alkohol kein Einschlafmittel"-Schluss, „Schlafhygiene Basis vor Medikation"-Superlativ) · geprüft 2026-06-11 |
 
 ---
 
@@ -205,6 +205,14 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Im Alter nimmt die Häufigkeit von Schlafstörungen zu"
+- Zitat: "physiologischen Veränderungen des Schlafmusters, z. B. häufigen nächtlichen Wachphasen" (belegt: schwer von physiolog. Altersveränderung abzugrenzen)
+- Zitat: "erhebliche Einschlafstörungen oder sehr häufige und lange Schlafphasen am Tag auf eine behandlungsbedürftige Störung hin" (belegt: Warnzeichen einer behandlungsbedürftigen Störung)
+- Zitat: "Bewegungsmangel, Bettlägerigkeit" (Ursachen-Liste 1/6)
+- Zitat: "Schmerzen oder andere körperliche Beschwerden" (Ursachen-Liste 2/6)
+- Zitat: "Nebenwirkung von Arzneimitteln" (Ursachen-Liste 3/6)
+- Zitat: "Ängste, Sorgen, Einsamkeit" (Ursachen-Liste 4/6)
+- Zitat: "Psychische Erkrankungen, z. B. Depression" (Ursachen-Liste 5/6)
+- Zitat: "Ungewohnte Umgebung, beispielsweise" (Fortsetzung: "nach einem Umzug in eine Pflegeeinrichtung" — Ursachen-Liste 6/6)
 
 **Misconceptions:**
 - `M1`: **"Mit 70 ist schlechter Schlaf normal — da hilft eh nichts"** — Schlafhygiene hilft auch älteren Menschen (Tageslicht am Morgen, Bewegung, feste Zeiten). Gestörter Schlaf erhöht Sturz-, Depressions- und Demenzrisiko. Fachbegriff: "Alters-Fatalismus".
@@ -214,7 +222,7 @@
 
 ### F-10: Schlafstörungen durch Genussmittel (Koffein, Alkohol)
 
-**Fakt:** Genuss- und Arzneimittel können den gesunden Schlaf beeinträchtigen: Kaffee und koffeinhaltige Getränke, schwarzer Tee, üppige abendliche Mahlzeiten sowie Alkohol. Unter deutlichem Alkoholeinfluss ist die erholsame REM-Schlafphase wesentlich verkürzt, und Schnarchen sowie Schlafapnoe werden begünstigt. Alkohol ist deshalb kein geeignetes Einschlafmittel.
+**Fakt:** Genuss- und Arzneimittel können den gesunden Schlaf beeinträchtigen: Kaffee und koffeinhaltige Getränke, schwarzer Tee, üppige abendliche Mahlzeiten sowie Alkohol. Unter deutlichem Alkoholeinfluss ist die erholsame REM-Schlafphase wesentlich verkürzt, und Schnarchen sowie Schlafapnoe werden begünstigt. ⚠️ Die Folgerung „Alkohol ist deshalb kein geeignetes Einschlafmittel" ist eine fachlich korrekte Schlussfolgerung aus der belegten REM-Verkürzung, steht aber in Pflege heute nicht verbatim — als interpretierende Aussage ausgewiesen, nicht als Zitat belegbar.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Fakt
@@ -226,7 +234,10 @@
 - Zitat: "ist unter deutlichem Alkoholeinfluss wesentlich verkürzt" (belegt REM-Verkürzung durch Alkohol)
 - Zitat: "das Schnarchen sowie eine Schlafapnoe werden begünstigt" (belegt Schnarchen/Apnoe-Begünstigung)
 - Zitat: "Kaffee und andere koffeinhaltige Getränke" (belegt Koffein als Störfaktor)
+- Zitat: "Schwarzer Tee nach kurzer Ziehzeit" (belegt: schwarzer Tee als Störfaktor)
+- Zitat: "Üppige, schwer verdauliche abendliche" (Fortsetzung: "Mahlzeiten" — belegt: üppige Abendmahlzeit als Störfaktor)
 - Zitat: "nach dem Kaffeegenuss werden viele Menschen zuerst müde" (belegt M2)
+- ⚠️ Nicht verbatim belegbar: „Alkohol kein geeignetes Einschlafmittel" — interpretierende Schlussfolgerung aus der belegten REM-Verkürzung; im Korpus nicht als Aussage vorhanden.
 
 **Misconceptions:**
 - `M1`: **"Ein Glas Wein am Abend hilft beim Einschlafen"** — Alkohol wirkt biphasisch: zunächst sedierend, dann fragmentiert er den Schlaf (REM-Unterdrückung, Weckreaktionen, Harndrang). Der Schlaf wird insgesamt schlechter. Fachbegriff: "Alkohol-Schlaf-Mythos".
@@ -245,7 +256,16 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Eine Krankenhausstation ist jedoch kein Schlaflabor"
+- Zitat: "Ungewohntes Bett" (Tab. 11.2 Umgebungsfaktor 1)
+- Zitat: "Ungewohnte Lage" (Tab. 11.2 Umgebungsfaktor 2)
+- Zitat: "Mehrbettzimmer" (Tab. 11.2 Umgebungsfaktor 3)
+- Zitat: "Nächtlicher Kontrollgang" (Fortsetzung: "des Pflegepersonals" — Tab. 11.2 Störfaktor Kontrollgänge)
+- Zitat: "Bewegungseinschränkung durch Verbände," (Fortsetzung: "Infusionsleitungen, Sonden etc." — Tab. 11.2 krankheitsbedingter Faktor)
+- Zitat: "Sich vor der Nachtruhe nach Harndrang erkundigen" (belegt: nächtliches Wasserlassen als Störfaktor + Maßnahme, Tab. 11.2)
 - Zitat: "Kontrollgänge auf ein vertretbares Minimum reduzieren" (belegt: weniger Zimmerrunden)
+- Zitat: "Leise arbeiten" (belegt: leise arbeiten als Maßnahme, Tab. 11.2)
+- Zitat: "Zimmer abdunkeln" (belegt: abdunkeln, Tab. 11.2 Licht)
+- Zitat: "Schlafbrille empfehlen" (belegt: Schlafbrille anbieten, Tab. 11.2 Licht)
 - Zitat: "Nach Arztanordnung Schmerz- und Beruhigungsmittel kombinieren" (belegt: Schmerz als Störfaktor + Maßnahme)
 - Zitat: "Bündeln der verschiedenen Pflegetätigkeiten" (Zweitzitat aus Kap. 13.4 Schmerzprävention — belegt das „clustern/bündeln"-Prinzip; Pflege heute: „sodass der Patient dazwischen längere Ruhepausen hat")
 - ⚠️ Quelle beschaffen für den Begriff „Sleep-Bundle" als benanntes Paket: **Kamdar et al. 2012 / DGSM** — im Korpus nicht enthalten.
@@ -258,7 +278,7 @@
 
 ### F-12: Schlafhygiene und schlaffördernde Maßnahmen
 
-**Fakt:** Damit ein Mensch gut schlafen kann, benötigt er eine angenehme Schlafumgebung; Pflegende schaffen die Voraussetzungen für erholsamen Schlaf und beraten zur Schlafhygiene. Prinzipien gesunder Schlafhygiene: tagsüber regelmäßig bewegen, leichte Abendmahlzeiten, Aktivitäten vor dem Schlafen allmählich reduzieren, möglichst immer zur selben Zeit ins Bett, Ermüdung erkennen, warme Füße, Entspannungstechniken. Optimale Raumtemperatur zum Schlafen liegt bei ca. 18 °C, störendes Licht vermeiden. Schlafhygiene ist die Basis vor jeder medikamentösen Therapie.
+**Fakt:** Damit ein Mensch gut schlafen kann, benötigt er eine angenehme Schlafumgebung; Pflegende schaffen die Voraussetzungen für erholsamen Schlaf und beraten zur Schlafhygiene. Prinzipien gesunder Schlafhygiene: tagsüber regelmäßig bewegen, leichte Abendmahlzeiten, Aktivitäten vor dem Schlafen allmählich reduzieren, möglichst immer zur selben Zeit ins Bett, Ermüdung erkennen, warme Füße, Entspannungstechniken. Optimale Raumtemperatur zum Schlafen liegt bei ca. 18 °C, störendes Licht vermeiden. ⚠️ Die Aussage „Schlafhygiene ist die Basis vor jeder medikamentösen Therapie" ist fachlich korrekt (DGSM/KVT-I als Erstlinie), aber im lokalen Korpus nicht verbatim belegt — Pflege heute belegt nur, dass nichtmedikamentöse Maßnahmen und „natürliche" Hilfsmittel als Alternative zu Schlafmitteln in Betracht kommen, nicht den Vorrang-Superlativ. Quelle beschaffen: DGSM S3-Leitlinie Insomnie.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
@@ -267,7 +287,17 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Damit ein Mensch gut schlafen kann, benötigt er eine angenehme Schlafumgebung"
+- Zitat: "Sich tagsüber regelmäßig bewegen" (Prinzip 1/7)
+- Zitat: "Leichte Abendmahlzeiten einnehmen, nicht hungrig ins Bett gehen" (Prinzip 2/7)
+- Zitat: "geistige und körperliche Anstrengungen allmählich reduzieren" (Prinzip 3/7 — Aktivitäten vor dem Schlafen reduzieren)
+- Zitat: "Nach Möglichkeit immer zur selben Zeit ins Bett gehen" (Prinzip 4/7)
+- Zitat: "Ermüdungserscheinungen erkennen und ins Bett gehen" (Prinzip 5/7)
+- Zitat: "Dafür sorgen, dass Körper und Füße warm sind" (Prinzip 6/7 — warme Füße)
+- Zitat: "Entspannungstechniken erlernen" (Prinzip 7/7)
 - Zitat: "optimale Raumtemperatur zum Schlafen liegt bei ca. 18 °C"
+- Zitat: "Störendes Licht vermeiden, z. B. Gardinen zuziehen" (belegt: störendes Licht vermeiden)
+- Zitat: "Als Alternative zu Schlafmitteln kommen neben den nichtmedikamentösen" (Fortsetzung: "Maßnahmen pflanzliche Präparate ..." — belegt nichtmedikamentöse Maßnahmen als Alternative, NICHT den „Basis vor jeder Medikation"-Superlativ)
+- ⚠️ Nicht verbatim belegbar: „Schlafhygiene ist die Basis vor jeder medikamentösen Therapie" — Vorrang-Superlativ; Quelle beschaffen: DGSM S3-Leitlinie Insomnie (KVT-I als Erstlinie).
 
 **Misconceptions:**
 - `M1`: **"Wenn ich nicht schlafen kann, sollte ich liegen bleiben und warten"** — Nach 20 Min ohne Einschlafen gilt die Stimulus-Kontroll-Regel: aufstehen, ruhige Tätigkeit, erst bei Müdigkeit zurück ins Bett, damit das Bett nicht als "Ort des Wachliegens" konditioniert wird. Fachbegriff: "Stimulus-Kontroll-Verstoß".

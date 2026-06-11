@@ -124,6 +124,15 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Im Idealfall legen zwei Pflegende gemeinsam einen transurethralen Blasenkatheter"
 - Zitat: "Spritze mit 10 ml steriler Flüssigkeit zum"
+- Zitat: "Verpackungstuch = sterile Arbeitsfläche"
+- Zitat: "Lochtuch, geschlitzt"
+- Zitat: "Ein Paar sterile Handschuhe"
+- Zitat: "Sterile anatomische Pinzetten"
+- Zitat: "Sechs Kugeltupfer"
+- Zitat: "Anästhesierendes Gleitgel"
+- Zitat: "Ca. 30 ml Schleimhautdesinfektionsmittel, z. B. Octenisept"
+- Zitat: "zwei sterile Katheter (einer als Reserve) benötigt"
+- Zitat: "Steriles Urinauffangsystem"
 **Praxisfehler:** Geschlossenes System wird vor der Anlage geöffnet oder Materialien werden unsteril gerichtet.
 
 **Misconceptions:**
@@ -143,6 +152,10 @@
 **Primärquelle:** (KRINKO 2015; EAUN 2021; Pflege heute Kap. 8.1.5)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Patientin flach auf dem Rücken"
+- Zitat: "Knie anwinkeln und Beine"
+- Zitat: "Schamlippen mit einer Hand spreizen (die Hand verbleibt bis nach"
+- Zitat: "Einwirkzeit des Desinfektionsmittels beachten"
 - Zitat: "große Schamlippen mit je einem Tupfer von der Symphyse zum Anus"
 - Zitat: "Beim Legen eines Dauerkatheters den Katheter – nachdem der Urin fließt – noch etwas weiterschieben"
 - Zitat: "das anschließende Blocken (Füllen des Ballons mit 8–10 ml Aqua dest."
@@ -165,6 +178,13 @@
 **Primärquelle:** (KRINKO 2015; EAUN 2021; Pflege heute Kap. 8.1.5)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Patienten flach auf dem Rücken"
+- Zitat: "Beine leicht spreizen"
+- Zitat: "Mit einer Hand Penisschaft"
+- Zitat: "fassen, Vorhaut zurückschieben und"
+- Zitat: "Eichel desinfizieren"
+- Zitat: "Gleitgel auf die Harnröhrenmün"
+- Zitat: "in die Harnröhre geben"
 - Zitat: "Bei geringem Widerstand nach ca. 10 cm Penis senken und Katheter weiterschieben, bis Urin fließt"
 - Zitat: "Bei stärkerem Widerstand oder Schmerzen des Patienten Vorgang abbrechen"
 - Zitat: "Mann zum Schutz vor einer Paraphimose"

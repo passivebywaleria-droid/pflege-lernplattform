@@ -114,12 +114,28 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 3 (Anwenden)
+⚠️ Quelle beschaffen (konkrete Primärquelle): Zwei Detail-Teilaussagen sind im Korpus (Pflege heute) NICHT verbatim belegbar: (a) die „Stoppfunktion mit dem Fuß" als benannte Transfer-Technik (Pflege heute belegt nur das Sichern/Bremsen des (Roll-)Stuhls, nicht eine fußbetätigte Stoppfunktion) und (b) die explizite Griff-Regel „Patient greift an die Schulterblätter [der Pflegekraft] — NIE an den Hals" (Pflege heute belegt nur, dass die *Pflegende* den *Patienten* unterhalb der Schulterblätter unterstützt; ein Griff des Patienten an den Hals der Pflegekraft bzw. dessen Verbot ist im Korpus nicht belegt). Für beide kinästhetik-/transfer-didaktische Regeln Primärquelle nachziehen (Hatch/Maietta Kinästhetik-Lehrbuch, BGW „Rückengerechtes Arbeiten"), bevor sie als Schüler-Inhalt (auch in M1) ausgespielt werden.
+
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 9.6; Hatch/Maietta Kinästhetik; DNQP 2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Bewegungseingeschränkte Patienten haben oft Angst vor Transfersituationen"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "unterstützt ihn die Pflegende unterhalb der Schulterblätter"  (belegt Griff an/unterhalb der Schulterblätter, NICHT am Hals)
+- Zitat: "unterstützt ihn die Pflegende unterhalb der Schulterblätter"  (belegt: die Pflegende stützt den Patienten unterhalb der Schulterblätter)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "(Roll-)Stuhl steht nah neben dem Bett und ist gegen Wegrutschen oder Wegrollen gesichert"  (belegt Vorbereitung: Stuhl nah + gesichert/gebremst)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die Pflegende fixiert die Bremsen"  (belegt Bremsen feststellen)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Arm- und Fußstützen werden entfernt"  (belegt Vorbereitung: störende Stützen entfernen)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Hüfthöhe der Pflegenden verstellen"  (belegt: Bett-/Liegefläche auf Hüft-/Beckenhöhe — rückengerechte Arbeitshöhe)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Patient trägt Schuhe mit rutschfester"  (belegt feste, rutschfeste Schuhe)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Er setzt seine Füße fest und sicher in Schrittstellung auf den Boden"  (belegt sicheren Bodenkontakt vor dem Transfer)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Der Patient hat die Rufanlage in greifbarer Nähe und kann sie betätigen"  (belegt Nachbereitung: Rufanlage in Reichweite)
 **Praxisfehler:** Patient greift um den Hals der Pflegekraft (Last über Halswirbelsäule); Transfer wird zu schnell und ohne Vorbereitung durchgeführt.
 
 **Misconceptions:**

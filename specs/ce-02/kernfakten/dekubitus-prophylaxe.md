@@ -87,25 +87,34 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Kategorie I: Nicht wegdrückbare, umschriebene Hautrötung bei intakter"
+- Zitat: "Kategorie II: Teilzerstörung der Haut bis zur Dermis"
+- Zitat: "Kategorie III: Zerstörung aller Hautschichten: Subkutanes Fett kann sichtbar"
+- Zitat: "Kategorie IV: Vollständiger Gewebeverlust mit freiliegenden Knochen, Sehnen oder Muskeln"
+- Zitat: "Keiner Kategorie zuordenbar: Tiefe unbekannt. Vollständiger Gewebeverlust mit Belägen und/oder Schorf im Wundbett"
+- Zitat: "Vermutete tiefe Gewebeschädigung: Tiefe unbekannt"
 - Quelle: `leitlinien-volltext/epuap-dekubitus-2019.txt`
 - Zitat: "Intact skin with nonblanchable redness of a localized area usually over a bony prominence"
 - Zitat: "Partial thickness loss of dermis presenting as a shallow open ulcer"
 - Zitat: "Subcutaneous fat may be visible, but bone, tendon or muscle are not exposed"
 - Zitat: "Full thickness tissue loss with exposed bone, tendon or muscle"
+- Zitat: "Unstageable: Depth unknown"
+- Zitat: "Suspected deep tissue injury: Depth unknown"
 **Praxisfehler:** Schüler verwechseln häufig Kategorie II mit Kategorie III. Entscheidend: bei Kategorie II ist der Defekt oberflächlich und ohne Beläge. Sobald Nekrosen oder Wundtaschen sichtbar werden, ist es mindestens Kategorie III.
 
 ---
 
 ### F-06: Prädilektionsstellen — Wo entsteht ein Dekubitus?
 
-**Fakt:** Besonders gefährdet sind Körperstellen, an denen Knochen dicht unter der Haut liegen und wenig Fettpolster schützt. Bei Erwachsenen sind Kreuzbein/Steißbein und Fersen die häufigsten Stellen. Weitere gefährdete Bereiche: Trochanter (großer Rollhügel), Sitzbein, Knöchel, Schulterblätter, Ellenbogen, Hinterkopf. Bei Säuglingen und Kindern ist vor allem der Hinterkopf betroffen, bei nasaler Beatmung auch die Nasenscheidewand. Die gefährdeten Stellen ändern sich je nach Lageposition: Rückenlage belastet Kreuzbein und Fersen, Seitenlage den Trochanter, Sitzen das Steißbein.
+**Fakt:** Besonders gefährdet sind Körperstellen, an denen Knochen dicht unter der Haut liegen und wenig Fettpolster schützt. Bei Erwachsenen sind Kreuzbein/Steißbein und Fersen die häufigsten Stellen. Weitere gefährdete Bereiche: Trochanter (großer Rollhügel), Sitzbein, Knöchel, Schulterblätter, Ellenbogen, Hinterkopf. Die gefährdeten Stellen ändern sich je nach Lageposition: Rückenlage belastet Kreuz-/Steißbein und Fersen, Seitenlage den Trochanter major, Sitzen die Sitzbeinhöcker. ⚠️ Quelle beschaffen (Hoehl/Kullick Kinderkrankenpflege bzw. neonatologische Primärquelle): Die Aussage, bei Säuglingen/Kindern sei vor allem der Hinterkopf betroffen und bei nasaler Beatmung zusätzlich die Nasenscheidewand, ist im vorliegenden Dekubitus-Korpus (Pflege heute Kap. 6.12, DNQP, EPUAP) nicht als Prädilektionsstellen-Aussage belegbar; der Kinderkrankenpflege-Index enthält nur allgemeine Druckstellen-Hinweise (Hinterkopf, Nasenrücken bei CPAP) in spaltenzerbrochenen Layout-Dateien — kein verbatim-fähiger Beleg.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
-**Primärquelle:** (DNQP, 2017)
+**Primärquelle:** (DNQP, 2017; Pflege heute Kap. 6.12 — Prädilektionsstellen je Position)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "In Rückenlage: Kreuz- und Steißbein, Fersen, Schultern, Hinterkopf, Wirbelsäule und Ellenbogen"
+- Zitat: "In Seitenlage: Ohrmuscheln, Trochanter major (großer Rollhügel), Knie, Ellenbogen, Fußknöchel"
+- Zitat: "Im Sitzen: Fersen, Fußballen, Hinterkopf, Sitzbeinhöcker, Wirbelsäule, hintere Seite des Oberschenkels"
 **Transfer:** [Transfer] Stell dir vor, du sitzt auf einem harten Holzstuhl. Nach einer Stunde tut der Sitzknochen weh — genau dort, wo wenig Polster zwischen Knochen und Stuhl ist. Dasselbe passiert bei bettlägerigen Menschen, nur dass sie sich nicht einfach umsetzen können.
 
 ---
@@ -119,6 +128,8 @@
 **Primärquelle:** (EPUAP/NPUAP/PPPIA, 2014; DNQP, 2017)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Beim Fingertest drücken sie mit dem Finger auf das gerötete Hautareal"
+- Zitat: "Wenn sich die Stelle nach Wegnehmen des Fingers weißlich verfärbt, handelt es sich um eine Minderdurchblutung, die reversibel ist"
 - Zitat: "Bleibt die Rötung nach dem Fingerdruck bestehen, liegt bereits ein Dekubitus Kategorie I vor"
 - Zitat: "Das Intervall wird"
 - Zitat: "mithilfe des Fingertests"
@@ -198,10 +209,10 @@
 **Primärquelle:** (DNQP, 2017)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "klassische seitliche Positionierung zur Dekubitusprophylaxe"
-- Zitat: "erfährt v. a. der Trochanter major"
-- Zitat: "Rückseite des Patienten"
-- Zitat: "vollständig entlastet"
+- Zitat: "Die 30°-Seitenlage"
+- Zitat: "klassische seitliche Positionierung zur Dekubitusprophylaxe. In dieser Position erfährt v. a. der Trochanter major"
+- Zitat: "Rollhügel) keine Druckbelastung"
+- Zitat: "wird in dieser Position die Rückseite des Patienten vollständig entlastet"
 - Zitat: "Besonders gefährdete Körperstellen, z. B. die Fersen, positionieren Pflegende frei"
 
 ---
@@ -236,6 +247,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Bei dekubitusgefährdeten Patienten kontrollieren sie die Haut nach individuell zu bestimmenden Intervallen"
+- Zitat: "führen zu Mazerationen (Aufweichen) der Haut"
+- Zitat: "Haut ist spröde, reißt leicht ein"
+- Zitat: "Keine Salben und Cremes verwenden, die die Hautporen verschließen und die Hautatmung behindern, z. B. Vaseline, Zinkpaste"
 
 ---
 

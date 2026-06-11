@@ -107,10 +107,14 @@
 **Primärquelle:** (Guigoz, MNA 1994; Pflege heute 7. Aufl., Kap. 7)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Kriterium des Screening-Instruments Mini Nutritional Assessment (MNA)"
+- Zitat: "Kriterium des Screening-Instruments Mini Nutritional Assessment (MNA)"  (belegt MNA als geriatrisches Screening-Instrument)
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "des Screening-Instruments Mini Nutritional Assessment (MNA); dort gelten Werte über 22 cm als normal"
-- ⚠️ MNA-Short-Form-Detail (6 Fragen; Punktebereich 0-14; Cut-offs 12-14 normal / 8-11 Risiko / 0-7 Mangelernährung) im Korpus nicht belegt — Pflege heute nennt das MNA nur als Instrument + OAU-Kriterium. Quelle beschaffen (MNA-Originalarbeit Guigoz/Vellas bzw. Nestlé-MNA-Manual) oder Score-Detail entfernen.
+- Zitat: "Der Oberarmumfang ist ein Kriterium des Screening-Instruments Mini Nutritional Assessment"  (belegt OAU als MNA-Kriterium bei nicht messbarem BMI)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "des Screening-Instruments Mini Nutritional Assessment (MNA); dort gelten Werte über 22 cm als normal"  (belegt Grenzwert OAU > 22 cm = normal)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Ein Wadenumfang unter 31 cm kann ein zusätzlicher Hinweis"  (belegt Wadenumfang als alternatives MNA-Kriterium)
+- ⚠️ MNA-Short-Form-Score-Detail (6 Fragen; Punktebereich 0-14; Cut-offs 12-14 normal / 8-11 Risiko / 0-7 Mangelernährung) im gesamten Korpus (Pflege heute + leitlinien-volltext + dnqp-standards-index, geprüft 2026-06-11) NICHT belegt — Pflege heute nennt das MNA nur als Instrument + OAU-/Wadenumfang-Kriterium. Score-Aufbau über MNA-Originalarbeit Guigoz/Vellas bzw. Nestlé-MNA-Manual beschaffen, bevor Punktwerte/Cut-offs als Schüler-Inhalt ausgespielt werden, ODER Score-Detail entfernen. (Die Instrument-/Altersgruppen- und Umfang-Kriterien sind über die Zweitzitate gedeckt.)
 **Praxisfehler:** MNA bei jüngeren Erwachsenen einsetzen — es ist nur für Ältere (≥65) validiert; im Krankenhaus gilt NRS-2002.
 
 **Misconceptions:**

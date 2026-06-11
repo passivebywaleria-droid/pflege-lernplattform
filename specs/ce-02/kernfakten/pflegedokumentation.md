@@ -25,6 +25,10 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Eine mangelhafte Pflegedokumentation kann jedoch zur Beweislastumkehr führen"
 - Zitat: "Der Dienstleister muss nun belegen und beweisen, welche Pflegemaßnahmen wann und warum durchgeführt wurden"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Bereits in den 1970er-Jahren hat auch der" / "Gesetzgeber die Bedeutung einer exakten" / "Dokumentation erkannt und inzwischen alle Einrichtungen des Gesundheitswesens" / "durch verschiedene Vorschriften in Sozialgesetzbüchern und im Pflegeberufegesetz" / "zur Dokumentation verpflichtet" (gesetzliche Pflicht, keine freiwillige Zusatzaufgabe — belegt über SGB/Pflegeberufegesetz)
+- ⚠️ Quelle beschaffen — die konkrete Rechtsnorm "§ 630f BGB" (Dokumentationspflicht des Behandelnden) ist im Korpus nicht verbatim belegt; Pflege heute nennt nur generisch "Vorschriften in Sozialgesetzbüchern und im Pflegeberufegesetz" sowie § 630 b–h BGB im Kontext ärztlicher Aufklärung (§ 630c/e), nicht § 630f. Beleg: Gesetzestext § 630f BGB (Bürgerliches Gesetzbuch) beschaffen oder Norm-Verweis auf die belegte generische Pflicht reduzieren.
+- ⚠️ Quelle beschaffen — der Praxisleitsatz "Was nicht dokumentiert ist, gilt als nicht durchgeführt" ist im Korpus nicht verbatim belegt. Beleg z. B. juristischer Dokumentations-Leitfaden / BGB § 630f-Kommentierung beschaffen oder als didaktische Merkregel (nicht als Zitat) kennzeichnen.
 **Praxisfehler:** Dokumentation wird als lästige Bürokratie statt als rechtliche Absicherung gesehen — und im Stress weggelassen.
 
 **Misconceptions:**
@@ -44,7 +48,11 @@
 **Primärquelle:** (Pflege heute Kap. 1.11; § 3 PflBG)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Informationen allen an der Pflege und" / "Therapie Beteiligten zur Verfügung zu" / "stellen" (Ziel: Information allen Beteiligten zur Verfügung stellen)
+- Zitat: "Informationen übersichtlich zu ordnen" (Ziel: übersichtlich ordnen)
 - Zitat: "Informationen nachlesen und (auch durch Dritte) nachprüfen (lassen) zu können"
+- Zitat: "Daten für Erhebungen zu sammeln (Pflegeforschung, ➔ 50.2)" (Ziel: Daten für die Pflegeforschung sammeln)
+- Zitat: "Erbrachte Leistungen abrechnen zu können (Leistungserfassung, ➔ 47.4)" (Ziel: Leistungen abrechnen)
 - Zitat: "Auch im juristischen Sinne erbrachte Leistungen nachweisen zu können"
 **Praxisfehler:** Dokumentation wird nur als Abrechnungsmittel verstanden, der Kommunikations- und Nachweiszweck wird übersehen.
 
@@ -64,7 +72,15 @@
 **Primärquelle:** (Pflege heute Kap. 2.2.8; § 630f BGB)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Messwerte: Puls, Blutdruck, Körpertemperatur, Größe und Gewicht, Ausscheidungsmenge"
+- Zitat: "Messwerte: Puls, Blutdruck, Körpertemperatur, Größe und Gewicht, Ausscheidungsmenge" (Messwerte: Puls, Blutdruck, Temperatur)
+- Zitat: "Pflegeplanung (➔ 1.10) einschließlich" / "der durchgeführten Pflegemaßnahmen" / "und der Angabe, wer sie durchgeführt" / "hat" (durchgeführte Maßnahmen mit Handelnden-Angabe)
+- Zitat: "Ärztliche Anordnungen, Therapien" / "und durchgeführte Maßnahmen sowie" / "die Angabe, wer sie angeordnet und/oder" / "durchgeführt hat" (ärztliche Anordnungen und deren Umsetzung)
+- Zitat: "Beobachtungen: Stimmungslage, Schlaf," / "Schmerzen, Wundverhältnisse, Aussehen, Atmung, Ausscheidungen" (Beobachtungen/Verhalten)
+- Zitat: "Vitalzeichen und Reaktionen des Patien" (Reaktionen des Patienten — Dokumentations-Inhalt)
+- Zitat: "betrachtet und sachlich, ohne Vorurteile beurteilt" (objektiv/wertfrei — keine Privatmeinungen/Wertungen)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Nach jedem erfolgten Sturz, auch wenn" / "der Gestürzte keine Verletzungen hat," / "fertigen Pflegende ein Protokoll an" (Besonderheiten: Stürze werden protokolliert)
+- ⚠️ Quelle beschaffen / entschärfen — die Teilaussagen "Haut" (Pflege heute listet im Dokumentations-Inhalt "Wundverhältnisse, Aussehen", nicht den Begriff "Haut"), "Abweichungen von der Planung" als eigenständiger Dokumentations-Inhalt (im Korpus nur im Kontext der Charting-by-Exception-Formulare, nicht als Pflicht-Inhalt verbatim) und "Unfälle" (im Korpus nur Sturzereignisprotokoll, kein generischer Unfall-Begriff) sind nicht verbatim als Pflichtinhalte belegt. Beleg z. B. § 630f Abs. 2 BGB (Inhalt der Patientenakte) / Dokumentations-Leitfaden beschaffen oder Teilaussagen auf die belegten Inhalte (Messwerte, Beobachtungen, Maßnahmen, ärztliche Anordnungen, Reaktionen, Stürze) reduzieren.
 **Praxisfehler:** Wertungen ("Patient ist unkooperativ") statt beobachtbarer Fakten ("verweigerte die Mobilisation mit den Worten...").
 
 **Misconceptions:**
@@ -115,6 +131,7 @@
 - Zitat: "Kognition und Kommunikation" (Themenfeld 1)
 - Zitat: "Mobilität und Bewegung" (Themenfeld 2)
 - Zitat: "Krankheitsbezogene Anforderungen und Belastungen" (Themenfeld 3)
+- Zitat: "Selbstversorgung" (Themenfeld 4)
 - Zitat: "Leben in sozialen Beziehungen" (Themenfeld 5)
 - Zitat: "Haushaltsführung und Wohnen." (Themenfeld 6)
 **Praxisfehler:** Die SIS wird für den ganzen Pflegeprozess gehalten, obwohl sie nur Schritt 1 (Informationssammlung) ist.
@@ -286,6 +303,10 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Das Dokumentationssystem darf nur den Personen zugänglich sein, die unmittelbar am oder mit diesem Patienten arbeiten"
 - Zitat: "Keine Auskünfte über Patienten am Telefon gegenüber Außenstehenden"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Grundlage der Schweigepflicht bildet u. a." / "§ 203 StGB" (Rechtsnorm § 203 StGB — Verletzung von Privatgeheimnissen)
+- Zitat: "Die Schweigepflicht gilt gegenüber allen:" (Schweigepflicht gilt gegenüber allen — auch Angehörigen)
+- Zitat: "In Ausnahmefällen Telefonnummer" / "geben lassen, mit dem Patienten" / "kontrollieren und selbst zurückrufen," / "um die Identität des Telefonpartners" / "sicherzustellen." (im Zweifel Identität durch Rückruf sichern)
 **Praxisfehler:** Auskunft am Telefon an eine angebliche Angehörige ohne Identitätsprüfung oder Einwilligung des Patienten.
 
 **Misconceptions:**

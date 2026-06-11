@@ -21,10 +21,16 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 1-2 (Erinnern, Verstehen)
+⚠️ Quelle beschaffen / Terminologie-Hinweis: Pflege heute teilt Nahrungsbestandteile NICHT in „Makro-/Mikronährstoffe" ein, sondern in **energieliefernde** (Kohlenhydrate, Eiweiße, Fette) und **nicht energieliefernde** (Ballaststoffe, Mineralstoffe, Wasser, Vitamine, sekundäre Pflanzenstoffe) Bestandteile. Die Makro-/Mikronährstoff-Terminologie selbst ist im lokalen Korpus NICHT verbatim belegt — für die genaue Begriffsabgrenzung (Makronährstoffe = Energie-/Baustoffe in Gramm-Mengen vs. Mikronährstoffe = Vitamine/Mineralstoffe/Spurenelemente in mg/µg) DGE-D-A-CH-Referenzwerte/Ernährungslehre-Primärquelle nachziehen. Die Sachaussagen sind über die Zweitzitate gedeckt (Energieträger = KH/Eiweiß/Fett; Mikronährstoffe wirken in Kleinstmengen 1 µg–5 mg). Der Begriff **„versteckter Hunger"** ist im Korpus ebenfalls nicht belegt — als didaktischer Merkbegriff kennzeichnen oder belegen.
+
 **Primärquelle:** (DGE/ÖGE/SGE, D-A-CH-Referenzwerte 2024)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Nicht energieliefernde Nahrungsbestandteile (Ballaststoffe, Mineralstoffe"
+- Zitat: "Energieliefernde Nahrungsbestandteile (Kohlenhydrate, Eiweiße, Fette)"  (belegt die Energieträger — entspr. den „Makronährstoffen" Kohlenhydrate/Fette/Proteine)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Nicht energieliefernde Nahrungsbestandteile (Ballaststoffe, Mineralstoffe, Wasser, Vitamine, sekundäre Pflanzenstoffe)"  (belegt Ballaststoffe + Wasser als eigene Bestandteile sowie Mineralstoffe/Vitamine als nicht-energieliefernde Stoffe)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "wenigen Millionstel bis Tausendstel Gramm (1 µg–5 mg)"  (belegt Mikronährstoff-Wirkung in mg/µg-Kleinstmengen — siehe auch F-09)
 **Praxisfehler:** Mikronährstoff-Mangel wird übersehen, weil der Patient ausreichend Kalorien zu sich nimmt.
 
 **Misconceptions:**

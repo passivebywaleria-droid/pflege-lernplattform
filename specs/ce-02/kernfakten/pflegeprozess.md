@@ -165,6 +165,9 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "in vielen Einrichtungen wird der Vorgang der Informationssammlung und mancherorts auch die Problemformulierung als Pflegeanamnese bezeichnet"
 - Zitat: "Anamnese jedoch „Vorgeschichte“ und meint damit die Erhebung des Zustands des Patienten vor Beginn der Pflegebeziehung"
+- Zitat: "Eine zentrale Bedeutung kommt dem Erst- oder Aufnahmegespräch"  (belegt zentrale Bedeutung des Erst-/Aufnahmegesprächs)
+- Zitat: "Dieses beinhaltet neben der Befragung und Beobachtung des Patienten auch eine körperliche Untersuchung"  (belegt Bestandteile: Befragung, Beobachtung, körperliche Untersuchung)
+- Zitat: "die Einbeziehung von Angehörigen und Bezugspersonen"  (belegt Einbeziehung von Angehörigen)
 **Praxisfehler:** Checklisten/Formulare werden stur "abgearbeitet" statt individuell auf den Patienten bezogen.
 **Misconceptions:**
 - `M1`: **"Die Pflegeanamnese erfasst nur körperliche Beschwerden und Diagnosen"** — Sie ist ganzheitlich (Gewohnheiten, Biografie, Ressourcen, soziale Einbindung). Diagnosen sind ärztliche Aufgabe.

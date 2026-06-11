@@ -47,6 +47,8 @@
 - Zitat: "Beim Essenreichen respektieren Pflegende die Würde des erwachsenen Patienten"
 - Zitat: "Ihm nicht „Esslatz“ oder „Lätzchen“ anbieten, sondern eine Serviette"
 - Zitat: "Der Patient bestimmt Geschwindigkeit und Reihenfolge der Mahlzeit"
+- Zitat: "neben dem Bett, das sie auf entsprechende Höhe gebracht haben, sodass sie nicht auf ihn herabsehen" ✅ MATCH (stützt „auf Augenhöhe sitzen, nicht herabsehen")
+- ⚠️ **Teilaussage „den Ausdruck ‚Füttern‘ vermeiden" NICHT im Korpus belegt** — Pflege heute verwendet „Füttern"/„gefüttert" nur im Säuglingskontext, nennt aber kein verbatim Gebot, den Begriff bei Erwachsenen zu vermeiden. Quelle beschaffen: Charta der Rechte hilfe- und pflegebedürftiger Menschen (BMFSFJ/BMG, Artikel 1 Selbstbestimmung) oder Leininger/Würde-Konzept-Literatur. Bis dahin im Schüler-Content als didaktische Sprachempfehlung kennzeichnen, nicht als belegtes Fachgebot.
 **Praxisfehler:** Stehen über dem Bett (Machtgefälle), Hetzen aus Zeitdruck.
 
 **Misconceptions:**
@@ -89,6 +91,12 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Gurgelnde Sprache, Stimmverschlechterung"
 - Zitat: "Die Gefahren und Folgen einer Dysphagie können für den Betroffenen schwerwiegend sein"
+- Zitat: "Speichel oder Essensreste laufen aus dem Mund" ✅ MATCH (stützt „Speichel-/Essensaustritt aus dem Mund")
+- Zitat: "Speisereste sammeln sich in Mund oder Wangentaschen" ✅ MATCH (stützt „Speisereste in Mund/Wangentaschen")
+- Zitat: "Häufiges Verschlucken, Husten und Würgen" ✅ MATCH (stützt „häufiges Verschlucken, Husten und Würgen")
+- Zitat: "Ausbleiben von Husten und Würgen" ✅ MATCH (stützt „oder gerade das Ausbleiben von Husten und Würgen")
+- Zitat: "Schlaganfall (➔ 37.6), M. Parkinson (➔ 37.11.1), Multiple Sklerose (➔ 37.10), Schädel-Hirn-Trauma" ✅ MATCH (stützt die Ursachen Schlaganfall, Parkinson, MS, SHT)
+- ⚠️ **Ursachen „Demenz" und „nach längerer Beatmung" NICHT als Dysphagie-Ursachen im Korpus belegt** — die Ursachen-Aufzählung der neurogenen Dysphagie (Pflege heute 37.2.8) nennt Schlaganfall/Parkinson/MS/SHT/ALS, aber weder Demenz noch Beatmung; „Beatmung" erscheint nur in der Pneumonie-Risikoliste, nicht als Schluckstörungs-Ursache. Quelle beschaffen: DGN/DGG S1-Leitlinie „Neurogene Dysphagie" 2020 (Demenz, postextubatorische/Post-Beatmungs-Dysphagie). Bis dahin im Schüler-Content nur die belegten neurologischen Ursachen als gesichert ausgeben.
 **Praxisfehler:** Langes Essen als reine Altersnormalität abtun statt als Warnzeichen werten.
 
 **Misconceptions:**
@@ -217,6 +225,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "„Fingerfood“, d. h. lauwarme Nahrung in mundgerechten Portionen"
+- Zitat: "Manchmal isst der Patient – insbesondere Kinder – lieber in Anwesenheit seiner Familie" ✅ MATCH (stützt „Eltern als Partner einbeziehen")
+- ⚠️ **Teilaussagen „Essensverweigerung ab ca. 2 Jahren entwicklungspsychologisch normal", „spielerisch anreichen", „kein Druck/keine Bestrafung", „kleine Portionen häufiger" und „bei anhaltender Verweigerung Kinderärztin informieren" NICHT im Korpus belegt** — Pflege heute behandelt Nahrungsverweigerung primär beim Säugling und allgemein, nennt aber keine altersbezogene Normalität ab 2 Jahren und keine dieser Kinder-Fütter-Prinzipien verbatim. Quelle beschaffen: DGE/aid-Empfehlungen „Essen und Trinken im Kleinkindalter" bzw. Hoehl/Kullick „Gesundheits- und Kinderkrankenpflege" (5. Aufl.) — liegt als Recherche-Index vor, aber nicht im Volltext-Korpus. Bis dahin im Schüler-Content als pädiatrische Praxisempfehlung kennzeichnen, nicht als belegt.
 **Praxisfehler:** Druck oder Bestrafung ("kein Nachtisch, wenn du das nicht isst").
 
 **Misconceptions:**
@@ -236,6 +246,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Insbesondere für Menschen mit kognitiven Einschränkungen muss eine Reizüberflutung vermieden werden"
+- Zitat: "Agnosie. Störung des Erkennens" ✅ MATCH (stützt „Agnosie = Speisen nicht erkennen")
+- Zitat: "Apraxie. Unfähigkeit, bestimmte Hand" ✅ MATCH (im Quelltext: „Unfähigkeit, bestimmte Handlungen koordiniert … auszuführen" — stützt „Apraxie = Besteck nicht benutzen können")
+- Zitat: "oder auch Speisen aufgrund von Demenz" ✅ MATCH (im Quelltext: „… nicht identifizieren können, können die Speisen durch Anfassen ‚begreifen‘" — stützt Agnosie-Anpassung)
+- Zitat: "Besonders bei dementen Menschen wurden in den letzten Jahren erfolgreich Ansätze mit Fingerfood" ✅ MATCH (stützt „Fingerfood statt Besteck bei Demenz")
+- ⚠️ **Teilaussagen „eine erkennbare Komponente pro Teller statt Mischungen" und „biografie-vertraute Speisen" NICHT im Korpus belegt** — Pflege heute belegt reizarme Umgebung, Agnosie/Apraxie und Fingerfood, aber weder die Ein-Komponenten-Teller-Regel noch die biografieorientierte Speisenauswahl verbatim. Quelle beschaffen: DNQP-Expertenstandard „Beziehungsgestaltung in der Pflege von Menschen mit Demenz" bzw. Biografiearbeit-Literatur (z. B. Böhm/Psychobiografisches Pflegemodell). Bis dahin im Schüler-Content als didaktische Anpassung kennzeichnen.
 **Praxisfehler:** Aus Zeitgründen füttern, obwohl der Patient mit Fingerfood noch selbst essen könnte.
 
 **Misconceptions:**
@@ -255,6 +270,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Den Patienten nach dem Essen noch etwa eine halbe Stunde aufrecht sitzen lassen, um eine Aspiration zu vermeiden"
+- Zitat: "Beobachtung von Mundmotorik und Zungenbeweglichkeit, Muskeltonus im Gesicht, Fähigkeit zur Kehlkopfhebung" ✅ MATCH (stützt Beobachtung von Mundbewegung/Zungenbewegung + Heben des Kehlkopfs)
+- Zitat: "Husten nach dem Schlucken" ✅ MATCH (stützt Atmungs-/Hustenbeobachtung beim Schluckakt)
+- ⚠️ **Detail-Items „Lippenverschluss", „Taschenbildung" und „Stimme nach dem Schluck (feuchte/nasse Stimme)" NICHT verbatim im Korpus** — Pflege heute belegt Mundmotorik/Zungenbeweglichkeit/Kehlkopfhebung sowie „Stimmverschlechterung" (F-04), nicht aber diese drei exakten Beobachtungsbegriffe. Quelle beschaffen: DGN/DGG S1-Leitlinie „Neurogene Dysphagie" 2020 oder GUSS-Originalarbeit (Trapl et al. 2007, „voice quality" nach Schluck). Bis dahin im Schüler-Content als fachlich abgeleitete Beobachtungsmerkmale kennzeichnen.
 **Praxisfehler:** Patient direkt nach dem Essen flach hinlegen (Reflux-/Aspirationsrisiko).
 
 **Misconceptions:**

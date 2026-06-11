@@ -32,6 +32,11 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "wird durch Nahrungsfarbstoffe und"
 - Zitat: "Sterkobilin verursacht, das aus dem Gallenfarbstoff (Bilirubin) gebildet wird"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "bei Ernährung mit Vollkornprodukten bis zu 1.000 g betragen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "homogene breiige bis feste Masse"
+**Belegstatus Teilaussagen:** Alle konkreten Teilaussagen sind nun verbatim gedeckt: Rhythmus (3-4×/Woche bis 1-2×/Tag), Menge (100-500 g), Vollkorn-Spitzenwert (bis 1.000 g), Konsistenz (homogene breiige bis feste Masse) und braune Farbe via Sterkobilin/Bilirubin. Keine ungedeckte Teilaussage offen.
 
 **Misconceptions:**
 - `M1`: **"Wer nicht täglich Stuhlgang hat, ist verstopft"** — Obstipation beginnt erst bei weniger als 3× pro Woche in Kombination mit hartem Stuhl. Als normal gilt eine große Spannweite (im Durchschnitt 3-4× wöchentlich bis 1-2× täglich); entscheidend ist das individuelle Gewohnheitsmuster, nicht der Tagesrhythmus. Fachbegriff: "Alltags-Mythos Tagesrhythmus".
@@ -69,6 +74,15 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "grün-schwarze Mekonium (Kindspech) besteht u. a. aus abgeschilferten Epithelzellen"
 - Zitat: "Ist nach 48 Std. noch kein Mekonium abgegangen, kann dies auf eine ernsthafte Erkrankung hinweisen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Dieses zähe, grün-schwarze Mekonium (Kindspech) besteht u. a. aus abgeschilferten Epithelzellen des Darms, Körperhärchen und eingedickter Galle"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Der erste Stuhlgang geht meist innerhalb der ersten 12 Stunden ab"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "z. B. bei Morbus Hirschsprung"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Darmverschluss durch zu zähes Mekonium (Mekonium-Ileus bei Mukoviszidose"
+**Belegstatus Teilaussagen:** Verbatim gedeckt sind nun: Zusammensetzung (abgeschilferte Epithelzellen, Körperhärchen = Lanugo, eingedickte Galle), Konsistenz „zäh"(klebrig), die Farbe (grün-schwarz), das Abgangs-Zeitfenster (Erststuhl meist innerhalb der ersten 12 Stunden, Warngrenze 48 Std.) sowie beide Differenzialdiagnosen Morbus Hirschsprung und Mekonium-Ileus. ⚠️ Die Teilaussage *geruchlos* ist im vorliegenden Korpus (Pflege heute) NICHT verbatim für Mekonium belegt — fachlich korrekt (noch keine bakterielle Darmbesiedlung), aber für die Verbatim-Deckung wäre eine pädiatrische Primärquelle (z. B. Hoehl/Kullick Gesundheits- und Kinderkrankenpflege) zu beschaffen. Als didaktischer Hinweis geführt, nicht als korpus-belegte Aussage.
 
 **Misconceptions:**
 - `M1`: **"Schwarzer Stuhl beim Neugeborenen ist immer ein Notfall"** — In den ersten 48 Stunden ist schwarz-grüner Stuhl normal (Mekonium). Erst später anhaltend oder beim älteren Patienten (Melaena) ist es pathologisch. Der Zeitpunkt zählt.
