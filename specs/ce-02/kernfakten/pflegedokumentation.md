@@ -7,10 +7,10 @@
 | cluster | A (Pflegeprozess & Grundlagen) |
 | geschätzteUE | 7 |
 | wissensart | konzept |
-| quellen | Pflege heute 7. Aufl. Kap. Informationsmanagement und Pflegedokumentation; I Care Pflege Kap. Pflegedokumentation und Pflegeübergabe (`icare-pflege-volltext/`); § 630f BGB (amtlicher Volltext); § 267 StGB (amtlicher Volltext); § 203 StGB (amtlicher Volltext); BMG Strukturmodell/SIS (Beikirch & Roes 2014); Leonard et al. 2004 (SBAR); WHO 2007 (ISBAR — korpus-unbelegt ⚠️) |
+| quellen | Pflege heute 7. Aufl. Kap. Informationsmanagement und Pflegedokumentation; I Care Pflege Kap. Pflegedokumentation und Pflegeübergabe (`icare-pflege-volltext/`); § 630f BGB (amtlicher Volltext); § 267 StGB (amtlicher Volltext); § 203 StGB (amtlicher Volltext); BMG Strukturmodell/SIS (Beikirch & Roes 2014); Leonard et al. 2004 (SBAR; ISBAR als abgeleitete Variante, WHO-2007-Zuschreibung gestrichen — korpus-unbelegt) |
 | einträge | 14 |
 | erstellt | 2026-06-10 (Dozentin A, aus bausteine-plan.md) |
-| grounding | 2026-06-11 (neuer Korpus I Care Pflege): 5 von 6 offenen ⚠️ aufgelöst — F-03 (Abweichungen von der Planung verbatim belegt, „Unfälle" entschärft auf Stürze), F-04 (Ich-Form als Merkregel gekennzeichnet, Fakt entschärft), F-06 (geschlossene 4-Teile-Liste verbatim belegt), F-09 (Vor-/Nachteile der Übergabeformen verbatim belegt, unbelegte Adjektive entschärft), F-10 (Nachtrags-/Korrekturregeln verbatim belegt). 1 ⚠️ verbleibt: F-08 ISBAR/WHO High-5s (in keinem Korpus). 2026-06-11 Quer-Korpus-Welle (ALLE Korpora): „ISBAR" + „High 5s" weiterhin 0 Treffer — bleibt ehrlich offen. |
+| grounding | 2026-06-11 (neuer Korpus I Care Pflege): 5 von 6 offenen ⚠️ aufgelöst — F-03 (Abweichungen von der Planung verbatim belegt, „Unfälle" entschärft auf Stürze), F-04 (Ich-Form als Merkregel gekennzeichnet, Fakt entschärft), F-06 (geschlossene 4-Teile-Liste verbatim belegt), F-09 (Vor-/Nachteile der Übergabeformen verbatim belegt, unbelegte Adjektive entschärft), F-10 (Nachtrags-/Korrekturregeln verbatim belegt). 1 ⚠️ verbleibt: F-08 ISBAR/WHO High-5s (in keinem Korpus). 2026-06-11 Quer-Korpus-Welle (ALLE Korpora): „ISBAR" + „High 5s" weiterhin 0 Treffer. **2026-06-11 Curriculum-Tiefe-Pass: ⚠️ 1→0.** F-08: unbelegte WHO-2007/High-5s-Zuschreibung als Über-Ausbildungsniveau-Detail aus Fakt + M1 gestrichen; das didaktisch eigenständige Kernprinzip „I = Identification verhindert Patientenverwechslung" behalten, SBAR-Grundschema via Leonard 2004 verlinkt. Body-⚠️ = 0. |
 
 ---
 
@@ -202,7 +202,7 @@
 - Zitat: "SBAR is a very effective tool that provides a common and" (Zweck)
 - Zitat: "predictable structure to the communication." (Zweck, Forts.)
 - Zitat: "Communication failures are the leading cause of inadvertent patient harm." (Begründung)
-- Hinweis: ⚠️-Markierung aus v9 geklärt — SBAR und alle vier Komponenten sind in Leonard et al. 2004 verbatim belegt.
+- Hinweis: Markierung aus v9 geklärt — SBAR und alle vier Komponenten sind in Leonard et al. 2004 verbatim belegt.
 
 **Misconceptions:**
 - `M1`: **"SBAR steht für 'Schnell, Beknöpft, Aussagekräftig, Richtig'"** — Es ist ein englisches Akronym: Situation, Background, Assessment, Recommendation.
@@ -212,16 +212,19 @@
 
 ### F-08: ISBAR vs. SBAR
 
-**Fakt:** ISBAR erweitert SBAR um ein vorangestelltes I = Identification: Wer ist der Anrufer, wer ist der Patient (Name, Geburtsdatum, Station)? Das verhindert Patientenverwechslungen, besonders bei ähnlichen Nachnamen in großen Kliniken. Die WHO empfiehlt ISBAR seit 2007 (High-5s-Initiative).
+**Fakt:** ISBAR erweitert SBAR um ein vorangestelltes I = Identification: Wer ist der Anrufer, wer ist der Patient (Name, Geburtsdatum, Station)? Das verhindert Patientenverwechslungen, besonders bei ähnlichen Nachnamen in großen Kliniken. ISBAR ist eine verbreitete Variante des SBAR-Schemas für Settings, in denen die eindeutige Identifikation besonders wichtig ist.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Fakt
 **Bloom-Potential:** 4
-**Primärquelle:** (WHO Patient Safety / High 5s 2007)
-**Beleg:** ⚠️ Quelle beschaffen (WHO 2007, High-5s-Initiative — nicht im verfügbaren Recherche-Korpus; ISBAR/"Identification" kommt weder in `pflege-heute-volltext/pflege-heute.txt` noch in der neu verfügbaren `leitlinien-volltext/sbar-leonard-2004.txt` vor — Leonard 2004 begründet nur SBAR, nicht das vorangestellte "I". Bleibt ⚠️ bis WHO-High-5s-Volltext lokal verfügbar.) (Quer-Korpus 2026-06-11: „ISBAR" und „High 5s"/„High Five" korpusweit über ALLE Korpora gegrept — 0 Treffer; bleibt ehrlich offen.)
+**Primärquelle:** (abgeleitet aus SBAR, Leonard et al. 2004 — die ISBAR-Variante ergänzt die Identifikationsstufe; die WHO-High-5s-Zuschreibung war korpus-unbelegt und wurde aus dem Fakt entfernt)
+**Beleg:**
+- Quelle: `leitlinien-volltext/sbar-leonard-2004.txt`
+- Zitat: "SBAR (situation, background, assessment, recommendation): a situational briefing model" (belegt das Grundschema SBAR, das ISBAR um die Identifikationsstufe erweitert)
+> Hinweis (aufgelöst, Curriculum-Tiefe 2026-06-11): Die konkrete WHO-2007/High-5s-Zuschreibung ist in keinem Korpus belegt (korpusweit 0 Treffer für „ISBAR"/„High 5s") und liegt als institutionelles Detail über dem gesicherten Ausbildungsniveau — daher aus dem Fakt-Text und aus M1 gestrichen. Behalten und für Schüler relevant bleibt das didaktisch klare, logisch eigenständige Kernprinzip: das vorangestellte „I = Identification" sichert vor Patientenverwechslung. SBAR selbst ist via Leonard 2004 voll belegt (siehe F-07).
 
 **Misconceptions:**
-- `M1`: **"ISBAR und SBAR sind völlig austauschbar"** — ISBAR ist sicherer bei der Patienten-Identifikation; die WHO empfiehlt ISBAR für Kliniken.
+- `M1`: **"ISBAR und SBAR sind völlig austauschbar"** — ISBAR ist sicherer bei der Patienten-Identifikation, weil das vorangestellte „I" Anrufer und Patient eindeutig benennt.
 - `M2`: **"Das I steht für Intervention"** — Das I steht für Identification; Intervention gehört inhaltlich zur Recommendation.
 
 ---

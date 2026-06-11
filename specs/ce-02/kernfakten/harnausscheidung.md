@@ -302,7 +302,7 @@
 - Zitat: "Abhängig kompensierte Inkontinenz" — Profil 5 ✅ MATCH
 - Zitat: "Nicht kompensierte Inkontinenz" — Profil 6 ✅ MATCH
 - Zitat: "der Patient selbst bestimmt, welches Kontinenzprofil" — Selbstbestimmung/Ziel ✅ MATCH
-- ⚠️ KORREKTUR: Bisherige Profil-Namen („unabhängig kontinent / abhängig kontinent / unabhängig nicht-kontinent / abhängig nicht-kontinent") waren **fachlich falsch** (nicht die DNQP-Terminologie) und wurden durch die belegten 6 Profile ersetzt.
+- KORREKTUR: Bisherige Profil-Namen („unabhängig kontinent / abhängig kontinent / unabhängig nicht-kontinent / abhängig nicht-kontinent") waren **fachlich falsch** (nicht die DNQP-Terminologie) und wurden durch die belegten 6 Profile ersetzt.
 **Praxisfehler:** Es wird nur "kontinent / inkontinent" dokumentiert, statt das differenzierte Profil und damit den realen Hilfebedarf abzubilden.
 
 **Misconceptions:**

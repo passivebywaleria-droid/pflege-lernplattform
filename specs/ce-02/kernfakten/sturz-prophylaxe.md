@@ -10,7 +10,7 @@
 | quellen | DNQP Expertenstandard Sturzprophylaxe 2. Aktual. 2022 (`dnqp-standards-index/sturzprophylaxe.txt`); Pflege heute Kap. Sturzprophylaxe (`pflege-heute-volltext/pflege-heute.txt`) |
 | einträge | 11 |
 | erstellt | 2026-04-22 (Pilot-Lauf Pipeline v9) |
-| grounding | STÜTZT-gehoben 2026-06-11 (Dozentin A) → erneut überarbeitet 2026-06-11. Belege ergänzt: F-02 Tinetti/TUG (DNQP Gebrauchsanleitung), F-03 intrinsisch/extrinsisch aufgelöst (DNQP-Zitat: Einteilung nicht mehr statt), F-05 Rutschfester Bodenbelag + freie Wege, F-06 Benzodiazepine/Antidepressiva Sturz-Kontext, F-08 § 1831 Abs. 4 BGB amtlich belegt (bgb-1831.txt) + Werktags-Frist (SACHKORREKTUR: nicht 24h; Lehrbuch-Zitat § 1906 a.F. als altes Recht markiert). Quer-Korpus-Welle 2026-06-11 (alle 19 Korpora geprüft): verbleibende ⚠️-Flags bleiben ehrlich offen, korpusweit 0 Treffer — F-04 Trainings-Dosierung 2-3 Einh./12 Wo. + „am besten belegt" (einziger „3×/Woche"-Treffer betrifft Hypertonie-Sport, nicht Sturz); F-06 20-40-%-Anteil + Diuretika-im-Sturzkontext (DNQP-Gebrauchsanleitung Sturz-Kapitel listet nur Antihypertensiva + Psychotrope, KEINE Diuretika); F-03/M2 Prozent-Anteil Umgebungsfaktoren. Betroffene Zahlen waren bereits aus den Fakt-Texten entfernt. F-08 (§ 1831 BGB) unverändert. |
+| grounding | STÜTZT-gehoben 2026-06-11 (Dozentin A) → erneut überarbeitet 2026-06-11. Belege ergänzt: F-02 Tinetti/TUG (DNQP Gebrauchsanleitung), F-03 intrinsisch/extrinsisch aufgelöst (DNQP-Zitat: Einteilung nicht mehr statt), F-05 Rutschfester Bodenbelag + freie Wege, F-06 Benzodiazepine/Antidepressiva Sturz-Kontext, F-08 § 1831 Abs. 4 BGB amtlich belegt (bgb-1831.txt) + Werktags-Frist (SACHKORREKTUR: nicht 24h; Lehrbuch-Zitat § 1906 a.F. als altes Recht markiert). Quer-Korpus-Welle 2026-06-11 (alle 19 Korpora geprüft). 2026-06-11 (Curriculum-Tiefe-Pass): alle verbleibenden Marker aufgelöst, indem die nicht belegbaren Über-Ausbildungsniveau-Details aus dem Schüler-Text gestrichen wurden statt extern zu beschaffen — F-04 Trainings-Dosierung 2-3 Einh./12 Wo. + „am besten belegt" (war bereits nicht im Fakt-Text behauptet, Hinweis im Fakt belassen); F-06 20-40-%-Anteil (nie im Fakt-Text) + Diuretika als Sturz-Risikofaktor aus Fakt-Text F-06 UND aus F-03-Liste gestrichen (DNQP-Gebrauchsanleitung Sturz-Kapitel listet nur Antihypertensiva + Psychotrope, KEINE Diuretika); F-03/M2 + F-06/M1 Prozent-Hinweise (bereits qualitativ). F-08 (§ 1831 BGB) unverändert. Body-Marker = 0. |
 
 ---
 
@@ -93,7 +93,7 @@
 - Muskelschwäche (Sarkopenie)
 - Sehminderung
 - Kognitive Einschränkung (Demenz, Delir)
-- Medikamente (Polypharmazie, Psychopharmaka, Diuretika)
+- Medikamente (Polypharmazie, Psychopharmaka)
 - Inkontinenz (Eile zur Toilette)
 - Orthostatische Dysregulation
 - Chronische Erkrankungen (Parkinson, Schlaganfall)
@@ -108,14 +108,14 @@
 
 **Misconceptions:**
 - `M1`: **"Bettgitter schützen vor Stürzen"** — Bettgitter erhöhen die Sturzhöhe und können zu schwereren Verletzungen führen. Fachbegriff: "Bettgitter-Illusion".
-- `M2`: **"Nur die Krankheit verursacht Stürze"** — Ein erheblicher Teil der Stürze hat umgebungs- und situationsbezogene Mitursachen; meist wirken mehrere Faktoren zusammen (Pflege heute: "mehrere, scheinbar voneinander unabhängige Ursachen"). Fachbegriff: "Personen-zentrierte Voreingenommenheit". (⚠️ konkrete Prozent-Anteile umgebungsbezogener Ursachen im Korpus nicht belegbar — bewusst qualitativ formuliert. Quer-Korpus-Welle 2026-06-11: korpusweit 0 Treffer auf einen beziffert­baren Umgebungs-Anteil.)
+- `M2`: **"Nur die Krankheit verursacht Stürze"** — Ein erheblicher Teil der Stürze hat umgebungs- und situationsbezogene Mitursachen; meist wirken mehrere Faktoren zusammen (Pflege heute: "mehrere, scheinbar voneinander unabhängige Ursachen"). Fachbegriff: "Personen-zentrierte Voreingenommenheit".
 - `M3`: **"Schlechte Beleuchtung ist ein Luxus-Problem"** — Schlechte Beleuchtung ist ein großer Sturzrisikofaktor, besonders nachts.
 
 ---
 
 ### F-04: Kraft- und Balance-Training als wirksamste Maßnahme
 
-**Fakt:** Gezieltes Kraft- und Balancetraining ist eine zentrale Maßnahme zur Sturzprävention und wirkt dem sturzfördernden Muskelabbau (Sarkopenie) entgegen. Es kann individuell oder in der Gruppe durchgeführt werden. ⚠️ Quelle beschaffen (konkrete Primärquelle): Die Aussage, Kraft-/Balancetraining sei die *wissenschaftlich am besten belegte* Einzelmaßnahme sowie die konkrete Dosierung *2-3 Einheiten/Woche über mindestens 12 Wochen* ist im vorliegenden Korpus nicht belegbar — der DNQP-Standard hält fest, dass zu sturzpräventiven Interventionen "teilweise widersprüchliche Ergebnisse" vorliegen. Für Überlegenheit und Dosierung wäre eine Trainings-Originalarbeit/Cochrane-Review zu beschaffen. (Quer-Korpus-Welle 2026-06-11: korpusweit 0 Treffer auf eine Sturz-Trainings-Dosierung; der einzige „3-mal pro Woche, 30 Min"-Treffer in I Care Pflege betrifft Ausdauersport bei arterieller Hypertonie, NICHT Sturz-/Balancetraining.)
+**Fakt:** Gezieltes Kraft- und Balancetraining ist eine zentrale Maßnahme zur Sturzprävention und wirkt dem sturzfördernden Muskelabbau (Sarkopenie) entgegen. Es kann individuell oder in der Gruppe durchgeführt werden. (Hinweis: Eine konkrete „beste"-Einzelmaßnahme-Rangfolge sowie eine exakte Trainings-Dosierung sind im Schüler-Text bewusst nicht behauptet — der DNQP-Standard hält fest, dass zu sturzpräventiven Interventionen teilweise widersprüchliche Ergebnisse vorliegen.)
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
@@ -167,7 +167,7 @@
 
 ### F-06: Medikamentenreview als Präventivmaßnahme
 
-**Fakt:** Medikamente sind eine eigene Sturzrisiko-Kategorie: Die im Alter häufige Polypharmazie (> 4 Medikamente) erhöht das Sturzrisiko durch wenig kalkulierbare Wechselwirkungen; besonders riskant sind psychotrope Medikamente (z. B. Benzodiazepine, Z-Substanzen, Antidepressiva), Antihypertensiva und Diuretika. Regelmäßiger interprofessioneller Medikamentenreview ist wichtiger Baustein. ⚠️ Quelle beschaffen: Die konkrete Quote *20-40 % der Stürze haben medikamentöse Mitursachen* ist im vorliegenden Korpus NICHT belegbar — Pflege heute nennt Polypharmazie und Medikamentengruppen als Risikofaktor, ohne diesen Anteil zu beziffern. Für die Zahl wäre eine pharmako-epidemiologische Primärquelle (z. B. PRISCUS/FORTA-Listen, STOPP/START, Cochrane) zu beschaffen. (Quer-Korpus-Welle 2026-06-11: korpusweit 0 Treffer auf den 20-40-%-Anteil. ERGÄNZUNG Diuretika: Im DNQP-Standard-Kapitel Sturzprophylaxe der „Gebrauchsanleitung" sind als medikamentenbezogene Sturzrisikofaktoren nur „Antihypertensiva" und „Psychotrope Medikamente" gelistet — Diuretika tauchen dort NICHT auf; Diuretika erscheinen korpusweit nur in Harnkontinenz-/Volumen-/Elektrolyt-Kontexten, nicht als expliziter Sturz-Risikofaktor. Diuretika daher weiter ⚠️.)
+**Fakt:** Medikamente sind eine eigene Sturzrisiko-Kategorie: Die im Alter häufige Polypharmazie (> 4 Medikamente) erhöht das Sturzrisiko durch wenig kalkulierbare Wechselwirkungen; besonders riskant sind psychotrope Medikamente (z. B. Benzodiazepine, Z-Substanzen, Antidepressiva) und Antihypertensiva. Regelmäßiger interprofessioneller Medikamentenreview ist wichtiger Baustein.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme
@@ -192,11 +192,11 @@
 - Zitat: "Einnahme von Benzodiazepinen und Anticholinergika"
 - Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
 - Zitat: "Einnahme von Antidepressiva und Nicht-Einnahme von Medikamenten zur Leistungssteigerung bei Menschen mit Demenz"
-**Belegstatus Teilaussagen:** Die Definition *Polypharmazie > 4 Medikamente* ist verbatim doppelt gedeckt. Als sturzrelevante Medikamentengruppen sind nun verbatim belegt: *Antihypertensiva* und *Psychotrope Medikamente* (DNQP/Pflege heute), *Benzodiazepine* mit dem Mechanismus „Herabsetzung des Muskeltonus → erhöhte Sturzgefahr" (Pflege heute Kap. 38), *Psychopharmaka* mit sturzbezogenem Kontext (icare-examen-kompakt), sowie *Benzodiazepine* und *Antidepressiva* in der DNQP-Gebrauchsanleitung-Kriterienliste. ⚠️ *Diuretika* in einem expliziten Sturz-Ursachen-Kontext und die konkrete Zahl *20-40 % medikamentöse Mitursache* sind im Korpus weiterhin nicht verbatim belegbar.
+**Belegstatus Teilaussagen:** Die Definition *Polypharmazie > 4 Medikamente* ist verbatim doppelt gedeckt. Als sturzrelevante Medikamentengruppen sind verbatim belegt: *Antihypertensiva* und *Psychotrope Medikamente* (DNQP/Pflege heute), *Benzodiazepine* mit dem Mechanismus „Herabsetzung des Muskeltonus → erhöhte Sturzgefahr" (Pflege heute Kap. 38), *Psychopharmaka* mit sturzbezogenem Kontext (icare-examen-kompakt), sowie *Benzodiazepine* und *Antidepressiva* in der DNQP-Gebrauchsanleitung-Kriterienliste. *Diuretika* in einem expliziten Sturz-Ursachen-Kontext und die konkrete Zahl *20-40 % medikamentöse Mitursache* sind im Korpus nicht belegbar — daher aus dem Schüler-Text gestrichen (über Ausbildungsniveau bzw. unbelegte Quote).
 **Praxisfehler:** Pflege übernimmt Medikamente unkritisch, ohne Wechselwirkungen/Sturzrisiko zu hinterfragen.
 
 **Misconceptions:**
-- `M1`: **"Schlafmittel sind harmlos"** — Benzodiazepine und Z-Substanzen (Zolpidem etc.) zählen zu den psychotropen Medikamenten, die das Sturzrisiko deutlich erhöhen (Pflege heute: "spezielle Medikamentengruppen"). (⚠️ konkrete Risiko-Steigerung in % im Korpus nicht belegbar — qualitativ formuliert.)
+- `M1`: **"Schlafmittel sind harmlos"** — Benzodiazepine und Z-Substanzen (Zolpidem etc.) zählen zu den psychotropen Medikamenten, die das Sturzrisiko deutlich erhöhen (Pflege heute: "spezielle Medikamentengruppen").
 - `M2`: **"Medikamente sind Arzt-Sache"** — Pflege hat Beobachtungs- und Meldepflicht bei Nebenwirkungen.
 
 ---

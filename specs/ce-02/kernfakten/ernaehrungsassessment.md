@@ -10,7 +10,7 @@
 | quellen | DNQP Expertenstandard Ernährungsmanagement 2017; Pflege heute 7. Aufl. Kap. 7 (Ernährung) + Kap. 19 (Sarkopenie/Frailty); Guigoz MNA 1994; Kondrup NRS-2002 2003; WHO BMI-Klassifikation; DGEM/ESPEN 2020; Bartholomeyczik PEMU 2008 |
 | einträge | 16 |
 | erstellt | 2026-06-10 (Pipeline v9, Quellenbindung) |
-| grounding | 2026-06-11 (Welle 2, ⚠️-Auflösung via icare-pflege-volltext + expertenstandards-gebrauchsanleitung Anhänge 16/17): F-12 (Perspiratio ≈900 ml/d), F-14 (30-35 ml/kg), F-04 (MNA-Voranamnese: 6 Items, max. 14 P., Cut-off ≥12/≤11 — Sachkorrektur: revidierte SF-Dreiteilung 8-11/0-7 entfernt, nicht im Korpus) und F-05 (NRS-2002 komplett: 4 Vorscreening-Fragen, Hauptscreening 0-3+0-3, Altersbonus ≥70, Cut-off ≥3, wöchentl. Wiederholung) voll gelöst. Offen bleiben: F-03 (Minuten-/24h-Werte), F-06 (PEMU-5-Bereiche), F-08 (PEM-Term), F-11 (Labor-HWZ/Cut-offs), F-15 (5-6 Portionen, Evaluationsfrist) — im gesamten Korpus nicht verbatim. 2026-06-11 (Welle 3, Quer-Korpus-Grep über alle ~18 Volltext-Korpora): F-08 PEM-Terminus via NANDA-Pflegediagnosen („Protein-Energie-Mangelernährung") verbatim GELÖST; F-06 SACHKORREKTUR — die unbelegte „Fünf-Bereiche"-Aufzählung ersetzt durch die verbatim belegte DNQP-Sechserliste (Körperliche/kognitive Beeinträchtigungen, Fehlende Lust, Ungünstige Umgebungsfaktoren, Inadäquates Angebot, Erhöhter Bedarf, Vereinsamung) aus der Expertenstandards-Gebrauchsanleitung; F-03 24-h-Frist via NANDA verbatim belegt (nur Minutenangaben bleiben ⚠️); F-11 qualitativ teilbelegt (DGEM-Heimenterale: Transthyretin/Präalbumin = kürzere HWZ als Albumin, Albumin/Präalbumin als Parameter — konkrete Tage/Cut-offs bleiben ⚠️); F-15 „mehrere kleine Mahlzeiten" mehrfach belegt, nur „5-6"/Evaluationsfrist bleiben ⚠️. Korpusweit weiterhin 0 Treffer: Screening-Minutenwerte (F-03), konkrete Labor-HWZ-Tage/Cut-offs (F-11), Portionszahl 5-6 + 1-2-Wochen-Frist (F-15). |
+| grounding | 2026-06-11 (Welle 2, ⚠️-Auflösung via icare-pflege-volltext + expertenstandards-gebrauchsanleitung Anhänge 16/17): F-12 (Perspiratio ≈900 ml/d), F-14 (30-35 ml/kg), F-04 (MNA-Voranamnese: 6 Items, max. 14 P., Cut-off ≥12/≤11 — Sachkorrektur: revidierte SF-Dreiteilung 8-11/0-7 entfernt, nicht im Korpus) und F-05 (NRS-2002 komplett: 4 Vorscreening-Fragen, Hauptscreening 0-3+0-3, Altersbonus ≥70, Cut-off ≥3, wöchentl. Wiederholung) voll gelöst. Offen bleiben: F-03 (Minuten-/24h-Werte), F-06 (PEMU-5-Bereiche), F-08 (PEM-Term), F-11 (Labor-HWZ/Cut-offs), F-15 (5-6 Portionen, Evaluationsfrist) — im gesamten Korpus nicht verbatim. 2026-06-11 (Welle 3, Quer-Korpus-Grep über alle ~18 Volltext-Korpora): F-08 PEM-Terminus via NANDA-Pflegediagnosen („Protein-Energie-Mangelernährung") verbatim GELÖST; F-06 SACHKORREKTUR — die unbelegte „Fünf-Bereiche"-Aufzählung ersetzt durch die verbatim belegte DNQP-Sechserliste (Körperliche/kognitive Beeinträchtigungen, Fehlende Lust, Ungünstige Umgebungsfaktoren, Inadäquates Angebot, Erhöhter Bedarf, Vereinsamung) aus der Expertenstandards-Gebrauchsanleitung; F-03 24-h-Frist via NANDA verbatim belegt (nur Minutenangaben bleiben ⚠️); F-11 qualitativ teilbelegt (DGEM-Heimenterale: Transthyretin/Präalbumin = kürzere HWZ als Albumin, Albumin/Präalbumin als Parameter — konkrete Tage/Cut-offs bleiben ⚠️); F-15 „mehrere kleine Mahlzeiten" mehrfach belegt, nur „5-6"/Evaluationsfrist bleiben ⚠️. Korpusweit weiterhin 0 Treffer: Screening-Minutenwerte (F-03), konkrete Labor-HWZ-Tage/Cut-offs (F-11), Portionszahl 5-6 + 1-2-Wochen-Frist (F-15). Curriculum-Tiefe-Pass 2026-06-11: 3 über-detaillierte Angaben gestrichen (über Ausbildungsniveau: Screening-/Assessment-Minutenwerte 2-5/15-30 Min F-03, exakte Labor-HWZ-Tage + Cut-offs Albumin/Präalbumin/Transferrin F-11, Portionszahl 5-6 + 1-2-Wochen-Evaluationsfrist F-15 — jeweils auf belegte qualitative Aussage reduziert), 5 erledigte Marker entschärft (F-04, F-05, F-06, F-08, F-12, F-14). |
 
 ---
 
@@ -76,7 +76,7 @@
 
 ### F-03: Screening vs. Assessment — zweistufiges Vorgehen
 
-**Fakt:** Der DNQP-Expertenstandard schreibt ein zweistufiges Vorgehen vor: Stufe 1 ist das Screening (kurzer Risiko-Check, 2-5 Min, bei allen Patienten binnen 24h: "Risiko ja/nein?"). Stufe 2 ist das Assessment (15-30 Min, nur bei positivem Screening: Ursachenanalyse und Pflegeplan). Assessment ist die "ausführliche Erhebung, die auch die beeinflussenden Faktoren untersucht".
+**Fakt:** Der DNQP-Expertenstandard schreibt ein zweistufiges Vorgehen vor: Stufe 1 ist das Screening (kurzer Risiko-Check, bei allen Patienten binnen 24h nach Aufnahme: "Risiko ja/nein?"). Stufe 2 ist das Assessment (nur bei positivem Screening: Ursachenanalyse und Pflegeplan). Assessment ist die "ausführliche Erhebung, die auch die beeinflussenden Faktoren untersucht".
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
@@ -95,12 +95,12 @@
 - Zitat: "Sie dienen somit einer ersten Einschätzung und Erfassung eines potenziellen Risikos" — belegt, dass das Screening eine erste, breite Risiko-Einschätzung ist (Stufe 1)
 - Quelle: `nanda-pflegediagnosen-volltext/nanda-pflegediagnosen.txt`
 - Zitat: "Assessment innerhalb von 24 Stunden nach Aufnahme ausgefüllt werden" (Kontext: standardisiertes Aufnahme-Screening/-Assessment im Krankenhaus — belegt die 24-h-Frist nach Aufnahme; NANDA nennt MNA/SGA als Screening-Tools dieser Erst-Einschätzung)
-- ⚠️ Die 24-h-Frist nach Aufnahme ist nun via NANDA verbatim belegt. Nur die konkreten Minutenangaben "Screening 2-5 Min" und "Assessment 15-30 Min" bleiben korpusweit unbelegt → als didaktische Orientierungswerte kennzeichnen oder weglassen. Hinweis: Expertenstandards-Gebrauchsanleitung belegt für MNA-SF "schnelle Einschätzung in nur drei Minuten" als Kurzform; nicht auf Screening generell übertragbar.
+- Hinweis (geklärt 2026-06-11): Die 24-h-Frist nach Aufnahme ist via NANDA verbatim belegt. Die konkreten Minutenangaben "Screening 2-5 Min" und "Assessment 15-30 Min" waren korpusweit unbelegt und wurden aus dem Schülertext entfernt (über Ausbildungsniveau). Expertenstandards-Gebrauchsanleitung belegt für MNA-SF "schnelle Einschätzung in nur drei Minuten" als Kurzform; nicht auf Screening generell übertragbar.
 **Praxisfehler:** Screening nur bei "sichtbar dünnen" Patienten machen — der Standard verlangt es für alle (auch Adipöse, verdeckte Mangelernährung).
 
 **Misconceptions:**
 - `M1`: **"Screening machst du nur bei dünnen Patienten"** — Der DNQP verlangt ein Screening für alle Patienten bei Aufnahme. Auch Adipöse können mangelernährt sein (verdeckte Mangelernährung). Fachbegriff: "Sichtdiagnose-Fehler".
-- `M2`: **"Screening und Assessment sind das Gleiche"** — Screening ist kurz und breit (2-5 Min, alle, "Risiko?"), Assessment tief und gezielt (15-30 Min, nur nach positivem Screening, "Warum? Wie schlimm?"). Fachbegriff: "Begriffs-Gleichsetzung".
+- `M2`: **"Screening und Assessment sind das Gleiche"** — Screening ist kurz und breit (alle Patienten, "Risiko?"), Assessment tief und gezielt (nur nach positivem Screening, "Warum? Wie schlimm?"). Fachbegriff: "Begriffs-Gleichsetzung".
 - `M3`: **"Assessment macht nur der Arzt"** — Das Ernährungs-Assessment ist eine pflegerische Aufgabe (DNQP). Die Pflege erfasst mit PEMU oder MNA-Long; der Arzt ergänzt Labordiagnostik. Fachbegriff: "Zuständigkeits-Irrtum".
 
 ---
@@ -146,7 +146,7 @@
 - Zitat: "Körpermassenindex (Body Mass Index, BMI)" — Voranamnese-Item F
 - Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
 - Zitat: "Guigoz Y, Vellas B and Garry PJ. 1994. Mini Nutritional Assessment" — belegt die Originalarbeit als Primärquelle (Referenzzeile des abgedruckten MNA-Bogens)
-- Hinweis (geklärt 2026-06-11): Die Expertenstandards-Gebrauchsanleitung druckt den vollständigen MNA-Bogen (Anhang 17) ab — 6 Voranamnese-Items, max. 14 Punkte, Cut-off ≥ 12 unauffällig / ≤ 11 vertiefen sind damit verbatim belegt. SACHKORREKTUR (2026-06-11): Die frühere Dreiteilung "12-14 normal, 8-11 Risiko, 0-7 Mangelernährung" stammt aus der revidierten MNA-SF (Kaiser et al. 2009) und ist im Korpus NICHT enthalten — aus dem Fakt entfernt; im Korpus belegt ist nur die zweistufige Auswertung des Original-MNA. ⚠️ aufgelöst.
+- Hinweis (geklärt 2026-06-11): Die Expertenstandards-Gebrauchsanleitung druckt den vollständigen MNA-Bogen (Anhang 17) ab — 6 Voranamnese-Items, max. 14 Punkte, Cut-off ≥ 12 unauffällig / ≤ 11 vertiefen sind damit verbatim belegt. SACHKORREKTUR (2026-06-11): Die frühere Dreiteilung "12-14 normal, 8-11 Risiko, 0-7 Mangelernährung" stammt aus der revidierten MNA-SF (Kaiser et al. 2009) und ist im Korpus NICHT enthalten — aus dem Fakt entfernt; im Korpus belegt ist nur die zweistufige Auswertung des Original-MNA.
 **Praxisfehler:** MNA bei jüngeren Erwachsenen einsetzen — es ist nur für Ältere (≥65) validiert; im Krankenhaus gilt NRS-2002.
 
 **Misconceptions:**
@@ -193,7 +193,7 @@
 - Zitat: "Ernährungsrisiko liegt vor, Erstellung eines Ernährungsplanes" — belegt Cut-off ≥ 3 Punkte → Ernährungsplan (Bogen-Zeile "≥ 3 Punkte")
 - Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
 - Zitat: "wöchentlich wiederholtes Screening" — belegt die wöchentliche Wiederholung bei < 3 Punkten
-- Hinweis (geklärt 2026-06-11): Der komplette NRS-2002-Score-Aufbau ist über den abgedruckten Originalbogen (Anhang 16 der Expertenstandards-Gebrauchsanleitung) verbatim belegt. Das "Maximum 7 Punkte" ist arithmetische Ableitung (3 + 3 + 1), steht nicht als eigener Satz im Bogen. ⚠️ aufgelöst.
+- Hinweis (geklärt 2026-06-11): Der komplette NRS-2002-Score-Aufbau ist über den abgedruckten Originalbogen (Anhang 16 der Expertenstandards-Gebrauchsanleitung) verbatim belegt. Das "Maximum 7 Punkte" ist arithmetische Ableitung (3 + 3 + 1), steht nicht als eigener Satz im Bogen.
 **Praxisfehler:** Nach negativem Pre-Screening nie wieder testen — bei Klinik-Patienten ist wöchentliche Wiederholung Pflicht (Verschlechterung nach OP/Infekt).
 
 **Misconceptions:**
@@ -235,7 +235,7 @@
 - Zitat: "Erhöhter Bedarf" — Assessment-Kriterium 5
 - Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
 - Zitat: "Vereinsamung" — Assessment-Kriterium 6
-- ⚠️ aufgelöst: Die belegbare DNQP-Sechserliste ersetzt die frühere, unbelegte Fünfer-Aufzählung (Bartholomeyczik/Schreier-Originalinstrument nicht im Korpus). Die Misconceptions M3 (PEMU „nach 5 Ursachenbereichen") sollte im Schülerinhalt auf die 6 DNQP-Kriterien angepasst werden.
+- Hinweis (geklärt): Die belegbare DNQP-Sechserliste ersetzt die frühere, unbelegte Fünfer-Aufzählung (Bartholomeyczik/Schreier-Originalinstrument nicht im Korpus). Die Misconceptions M3 (PEMU „nach 5 Ursachenbereichen") sollte im Schülerinhalt auf die 6 DNQP-Kriterien angepasst werden.
 **Praxisfehler:** PEMU auf die Gewichtsmessung verkürzen — der eigentliche Kern ist die Ursachenanalyse in den im PEMU erfassten Ursachenbereichen.
 
 **Misconceptions:**
@@ -282,7 +282,7 @@
 - Zitat: “Von Kachexie (Auszehrung, hochgradige Abmagerung, „Kräfteverfall”) spricht man, wenn der Gewichtsverlust und der Kräfteverfall sehr ausgeprägt ist”
 - Quelle: `nanda-pflegediagnosen-volltext/nanda-pflegediagnosen.txt`
 - Zitat: "Protein-Energie-Mangelernährung" — belegt den Fachterminus „Protein-Energie-Mangelernährung" verbatim (NANDA führt ihn als Risikofaktor/beeinflussenden Faktor); die deutsche Vollform des PEM-Begriffs ist damit korpusbelegt
-- ⚠️ aufgelöst (Terminus): Der Fachbegriff „Protein-Energie-Mangelernährung" ist via NANDA verbatim belegt. Die ergänzende Charakterisierung „reversibel durch Kalorien-/Eiweißzufuhr" bleibt didaktische Abgrenzung (im Korpus nicht als wörtlicher PEM-Definitionssatz, aber konsistent mit der belegten Malnutrition-Definition: „negative Bilanz zwischen Aufnahme und Bedarf").
+- Hinweis (geklärt, Terminus): Der Fachbegriff „Protein-Energie-Mangelernährung" ist via NANDA verbatim belegt. Die ergänzende Charakterisierung „reversibel durch Kalorien-/Eiweißzufuhr" bleibt didaktische Abgrenzung (im Korpus nicht als wörtlicher PEM-Definitionssatz, aber konsistent mit der belegten Malnutrition-Definition: „negative Bilanz zwischen Aufnahme und Bedarf").
 **Praxisfehler:** Kachexie mit "einfachem Dünn-Sein" gleichsetzen — sie ist krankheitsbedingt und nicht durch Essen allein zu beheben.
 
 **Misconceptions:**
@@ -350,7 +350,7 @@
 
 ### F-11: Laborwerte im Ernährungsassessment
 
-**Fakt:** Zentrale Laborwerte: Albumin (langsam, Halbwertszeit ca. 20 Tage, <35 g/l auffällig, zeigt langfristige Eiweißversorgung), Präalbumin (schnell, 2-3 Tage, geeignet für kurzfristiges Therapie-Monitoring), Transferrin (ca. 8 Tage), Gesamteiweiß, Lymphozyten, CRP. Eiweißmangel führt zu Ödemen und bedingt im Alter einen Muskelabbau. Kein Einzelwert reicht: Entzündung (CRP), Leber-/Niereninsuffizienz und Dehydratation verfälschen die Proteinwerte unabhängig vom Ernährungsstatus.
+**Fakt:** Zentrale Laborwerte: Albumin (langsamer Marker, zeigt die langfristige Eiweißversorgung), Präalbumin/Transthyretin (schnellerer Marker mit kürzerer Halbwertszeit als Albumin, geeignet für kurzfristiges Therapie-Monitoring), Transferrin, Gesamteiweiß, Lymphozyten, CRP. Eiweißmangel führt zu Ödemen und bedingt im Alter einen Muskelabbau. Kein Einzelwert reicht: Entzündung (CRP), Leber-/Niereninsuffizienz und Dehydratation verfälschen die Proteinwerte unabhängig vom Ernährungsstatus.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Fakt
@@ -365,12 +365,12 @@
 - Zitat: "Halbwertszeit als Albumin" (Kontext: „Proteinstatus, gemessen über Serum-Albumin oder Serum-Transthyretin (letzteres aufgrund einer kürzeren Halbwertszeit als Albumin)" — belegt qualitativ, dass Transthyretin/Präalbumin eine kürzere HWZ hat als Albumin und sich daher für kurzfristiges Monitoring eignet)
 - Quelle: `leitlinien-volltext/dgem-heimenterale-2024.txt`
 - Zitat: "Mn; Albumin, Präalbumin," (Kontext: „…Vit D, Vit B12, Folsäure, Zn, Cu, Se, Mn; Albumin, Präalbumin, Bicarbonat, CHE, INR u.a." — belegt Albumin und Präalbumin als labordiagnostische Ernährungsparameter)
-- ⚠️ Teilbelegt: Die qualitative Aussage „Präalbumin/Transthyretin = kürzere HWZ als Albumin → kurzfristiges Monitoring" ist via DGEM-Heimenterale 2024 belegt. Die konkreten Zahlenwerte (Albumin ~20 Tage, <35 g/l; Präalbumin 2-3 Tage; Transferrin ~8 Tage) bleiben korpusweit unbelegt → im Schülerinhalt als Orientierungswerte kennzeichnen oder durch die belegte qualitative HWZ-Aussage ersetzen.
+- Hinweis (geklärt 2026-06-11): Die qualitative Aussage „Präalbumin/Transthyretin = kürzere HWZ als Albumin → kurzfristiges Monitoring" ist via DGEM-Heimenterale 2024 belegt. Die konkreten Zahlenwerte (Albumin ~20 Tage, <35 g/l; Präalbumin 2-3 Tage; Transferrin ~8 Tage) waren korpusweit unbelegt und wurden aus dem Schülertext entfernt (über Ausbildungsniveau); im Text bleibt die belegte qualitative HWZ-Aussage.
 **Praxisfehler:** Albumin isoliert als Mangelernährungsmarker werten — es wird auch durch Entzündung gesenkt; immer CRP mitbestimmen.
 
 **Misconceptions:**
 - `M1`: **"Albumin allein reicht, um Mangelernährung zu beurteilen"** — Albumin wird auch durch Entzündung (CRP), Leber-/Niereninsuffizienz und Dehydratation verändert. Niedriges Albumin bei akuter Entzündung sagt nichts über die Ernährung. Fachbegriff: "Einzelwert-Irrtum".
-- `M2`: **"Präalbumin und Albumin zeigen das Gleiche"** — Die Halbwertszeit unterscheidet sie: Albumin ~20 Tage (Langzeitstatus), Präalbumin 2-3 Tage (aktuelle Veränderung, Therapie-Monitoring). Fachbegriff: "HWZ-Verwechslung".
+- `M2`: **"Präalbumin und Albumin zeigen das Gleiche"** — Die Halbwertszeit unterscheidet sie: Albumin hat eine längere HWZ (Langzeitstatus), Präalbumin/Transthyretin eine kürzere (aktuelle Veränderung, Therapie-Monitoring). Fachbegriff: "HWZ-Verwechslung".
 - `M3`: **"Bei Dehydratation sind Laborwerte nicht verwertbar"** — Dehydratation verfälscht Proteinwerte nach oben (Pseudonormalisierung); niedriges Albumin trotz Dehydratation belegt Mangelernährung sehr sicher, normale Werte sind mit Vorsicht zu deuten. Fachbegriff: "Dehydratations-Totalausfall".
 
 ---
@@ -402,7 +402,7 @@
 - Zitat: "insensibilis: Der unbemerkte Flüssigkeitsverlust über Atmung, Stuhl und Haut" — belegt Definition der Perspiratio insensibilis als unbemerkten Verlust über Atmung/Stuhl/Haut
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "Einfuhr: alle flüssigen Lebensmittel, Getränke, Infusionen, Blutprodukte, evtl. Sondennahrung; bei fester" — belegt, dass zur Einfuhr Infusionen, Blutprodukte und Sondennahrung zählen (Quelltext: "… bei fester Nahrung geschätzter Flüssigkeitsgehalt")
-- Hinweis (geklärt 2026-06-11): Die Spanne "700-900 ml/d" ist mit I Care (≈900 ml/d, Zusammensetzung Haut/Atmung/Stuhl) nun belegt. Pflege heute belegt parallel die Faustregel "+500 ml/°C" bei Fieber (➔ Beleg oben). ⚠️ aufgelöst.
+- Hinweis (geklärt 2026-06-11): Die Spanne "700-900 ml/d" ist mit I Care (≈900 ml/d, Zusammensetzung Haut/Atmung/Stuhl) nun belegt. Pflege heute belegt parallel die Faustregel "+500 ml/°C" bei Fieber (➔ Beleg oben).
 **Praxisfehler:** Einfuhr nur als "Trinken" erfassen — Infusionen, Sondenkost und Suppen gehören dazu, sonst wird die Einfuhr systematisch unterschätzt.
 
 **Misconceptions:**
@@ -463,7 +463,7 @@
 - Zitat: "gesunde Menschen: ca. 30–35 ml pro kg/KG" — I Care belegt die Spanne "30-35 ml/kg KG" verbatim
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "durch Diurese, Erbrechen, Diarrhö oder starkes Schwitzen, erniedrigter Bedarf bei Herz-/Niereninsuﬃzienz" — belegt erhöhten Bedarf bei Flüssigkeitsverlust und erniedrigten Bedarf bei Herz-/Niereninsuffizienz
-- Hinweis (geklärt 2026-06-11): Die Spanne "30-35 ml/kg" ist mit I Care nun verbatim belegt; die ärztliche Restriktion bei Herz-/Niereninsuffizienz ebenfalls (I Care: "erniedrigter Bedarf bei Herz-/Niereninsuffizienz"). ⚠️ aufgelöst.
+- Hinweis (geklärt 2026-06-11): Die Spanne "30-35 ml/kg" ist mit I Care nun verbatim belegt; die ärztliche Restriktion bei Herz-/Niereninsuffizienz ebenfalls (I Care: "erniedrigter Bedarf bei Herz-/Niereninsuffizienz").
 **Praxisfehler:** Pauschal "viel trinken" empfehlen, ohne ärztliche Restriktion bei Herz-/Niereninsuffizienz zu beachten.
 
 **Misconceptions:**
@@ -475,7 +475,7 @@
 
 ### F-15: Maßnahmenableitung aus dem Assessment
 
-**Fakt:** Pflegemaßnahmen werden individuell aus den PEMU-Ursachen abgeleitet — nicht pauschal "mehr essen". Beispiele: Prothese drückt → Zahnarztkonsil + weiche Kost; Dysphagie → Logopädie + Konsistenzanpassung; kein Appetit → Lieblingsspeisen + 5-6 kleine Portionen; einsam → Esskreis/Angehörige. Bei bestätigter Mangelernährung zusätzlich: Speisen mit Butter, Sahne oder hochwertigen Ölen anreichern, Ergänzung durch (hochkalorische) Trinknahrung, eiweißreiche Kost (ca. 1,0-1,5 g/kg KG/Tag), tägliches Wiegen, Evaluation nach 1-2 Wochen.
+**Fakt:** Pflegemaßnahmen werden individuell aus den PEMU-Ursachen abgeleitet — nicht pauschal "mehr essen". Beispiele: Prothese drückt → Zahnarztkonsil + weiche Kost; Dysphagie → Logopädie + Konsistenzanpassung; kein Appetit → Lieblingsspeisen + mehrere kleine Mahlzeiten; einsam → Esskreis/Angehörige. Bei bestätigter Mangelernährung zusätzlich: Speisen mit Butter, Sahne oder hochwertigen Ölen anreichern, Ergänzung durch (hochkalorische) Trinknahrung, eiweißreiche Kost (ca. 1,0-1,5 g/kg KG/Tag), tägliches Wiegen, regelmäßige Evaluation.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
@@ -494,13 +494,13 @@
 - Zitat: "ausreichende Proteinmengen: 0,8–1,5 g/kgKG" — belegt die eiweißreiche Zielvorgabe (oberer Bereich 1,0-1,5 g/kg/Tag) im Kontext Ernährung im Alter
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "tägliche Proteinzufuhr von mindestens 1,0 g/kg Körpergewicht" — I Care belegt für substituierte/unterernährte ältere Menschen (hochkalorische Trinknahrung) eine Proteinzufuhr von mindestens 1,0 g/kg KG (Schuetz et al. 2017); Quelltext warnt zugleich vor dem Refeeding-/Overfeeding-Syndrom
-- ⚠️ Korpusweit bestätigt: Das Prinzip "häufigere/mehrere kleine Mahlzeiten" ist mehrfach belegt (Pflege heute „Häufigere kleine Mahlzeiten"; icare-examen-kompakt + icare-krankheitslehre „mehrere kleine Mahlzeiten"; DGEM-Heimenterale 2024 nennt „mehrere kleine Mahlzeiten" als diätetische Maßnahme). Die konkrete Portionszahl "5-6" und die Frist "Evaluation nach 1-2 Wochen" bleiben jedoch korpusweit unbelegt → als Faustregel kennzeichnen. Die g/kg-Vorgabe (1,0-1,5 g/kg/Tag) ist mit I Care belegt.
+- Hinweis (geklärt 2026-06-11): Das Prinzip "häufigere/mehrere kleine Mahlzeiten" ist mehrfach belegt (Pflege heute „Häufigere kleine Mahlzeiten"; icare-examen-kompakt + icare-krankheitslehre „mehrere kleine Mahlzeiten"; DGEM-Heimenterale 2024 nennt „mehrere kleine Mahlzeiten" als diätetische Maßnahme). Die konkrete Portionszahl "5-6" und die Frist "Evaluation nach 1-2 Wochen" waren korpusweit unbelegt und wurden aus dem Schülertext entfernt (über Ausbildungsniveau). Die g/kg-Vorgabe (1,0-1,5 g/kg/Tag) ist mit I Care belegt.
 **Praxisfehler:** Reflexartig Trinknahrung verordnen, ohne die Ursache zu klären — eine drückende Prothese wird nicht durch Trinknahrung behoben.
 
 **Misconceptions:**
 - `M1`: **"Die erste Maßnahme bei Mangelernährung ist immer Trinknahrung"** — Zuerst die Ursache klären (PEMU); Trinknahrung ist eine Ergänzung, wenn normale Kost nicht ausreicht. Fachbegriff: "Supplement-Reflex".
-- `M2`: **"Bei Mangelernährung hilft 'viel essen auf einmal'"** — Große Portionen überfordern Mangelernährte (Völlegefühl, Refeeding-Risiko); besser 5-6 kleine, energie- und eiweißreich angereicherte Mahlzeiten. Fachbegriff: "Mengen-Fehler".
-- `M3`: **"Nach Start der Ernährungstherapie muss nicht mehr evaluiert werden"** — Der DNQP verlangt regelmäßige Evaluation (tägl. Wiegen, Protokoll, Überprüfung nach 1-2 Wochen) und Plananpassung. Fachbegriff: "Einmal-Plan-Irrtum".
+- `M2`: **"Bei Mangelernährung hilft 'viel essen auf einmal'"** — Große Portionen überfordern Mangelernährte (Völlegefühl, Refeeding-Risiko); besser mehrere kleine, energie- und eiweißreich angereicherte Mahlzeiten. Fachbegriff: "Mengen-Fehler".
+- `M3`: **"Nach Start der Ernährungstherapie muss nicht mehr evaluiert werden"** — Der DNQP verlangt regelmäßige Evaluation (tägl. Wiegen, Protokoll, Überprüfung) und Plananpassung. Fachbegriff: "Einmal-Plan-Irrtum".
 
 ---
 

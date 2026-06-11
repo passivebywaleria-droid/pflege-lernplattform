@@ -10,7 +10,7 @@
 | quellen | AWMF S3-Leitlinie Prophylaxe der venösen Thromboembolie (VTE), Registernr. 003-001, Version 4.0 (2025 Update zu 2015); Pflege heute Kap. Thromboseprophylaxe; I Care Pflege Kap. Prophylaxen; DGP (Deutsche Gesellschaft für Phlebologie) Leitlinien |
 | einträge | 13 |
 | erstellt | 2026-04-21 |
-| grounding | 2026-06-11 (Quer-Korpus-Welle): F-02 ~90-%-Lokalisationsquote aufgelöst (Becken-/Beinvenen). F-11 VOLL aufgelöst — ~50 % klinisch stumm + Homans/Payr/Meyer unsicher belegt; Homans-„Sensitivität 60–90 %" als SACHKORREKTUR entfernt (I Care Krankheitslehre Z.28193: „unsichere Anhaltspunkte" — Prozentangabe widerspricht Beleg). F-12 Atemnot als führendes LE-Zeichen qualitativ belegt. Offen (korpusweit 0 Treffer): F-03 (50 % proximale TVT→LE — nur qualitative Richtung belegt), F-07 (Heparin-Luftblock s.c. — in keinem Korpus), F-12 (80-%-Dyspnoe-Quote). F-05 ist Korrektur-Notiz (Wert ersetzt), kein offenes ⚠️. |
+| grounding | 2026-06-11 (Quer-Korpus-Welle): F-02 ~90-%-Lokalisationsquote aufgelöst (Becken-/Beinvenen). F-11 VOLL aufgelöst — ~50 % klinisch stumm + Homans/Payr/Meyer unsicher belegt; Homans-„Sensitivität 60–90 %" als SACHKORREKTUR entfernt. F-12 Atemnot als führendes LE-Zeichen qualitativ belegt. 2026-06-11 (Curriculum-Tiefe-Pass): alle alle Body-Marker aufgelöst → Über-Ausbildungsniveau-Details aus Schüler-Text entfernt statt extern beschafft: F-03 (50-%-Quote bereits qualitativ), F-07 (Heparin-Luftblock-Behauptung aus M1 gestrichen — Detail über Ausbildungsniveau, nicht verbatim belegbar), F-12 (80-%-Dyspnoe-Quote aus Fakt-Text gestrichen, „erstes/führendes Symptom" qualitativ belegt). F-05 ist Korrektur-Notiz (Wert ersetzt). Body-Marker = 0. |
 
 ---
 
@@ -76,7 +76,7 @@
 - Quelle: `leitlinien-volltext/awmf-vte-prophylaxe.txt`
 - Zitat: "wobei das symptomatische LE-Risiko bei proximalen TBVT höher ist als bei distalen"
 
-> ⚠️ Detail-Wert „50 % aller proximalen TVT verursachen LE": Die AWMF-S3-Leitlinie VTE (2025) belegt verbatim nur die *Richtung* (proximale TVT → höheres symptomatisches LE-Risiko) und dass TVT symptomlose LE auslösen können — gibt aber KEINE 50-%-Quote an. Konkrete Prozentangabe entfernt; qualitativer Beleg steht. Bis zur lokalen Verfügbarkeit einer Epidemiologie-/ESC-Quelle keine 50-%-Zahl behaupten.
+Detail-Wert „50 % aller proximalen TVT verursachen LE": Die AWMF-S3-Leitlinie VTE (2025) belegt verbatim nur die *Richtung* (proximale TVT → höheres symptomatisches LE-Risiko) und dass TVT symptomlose LE auslösen können — gibt aber KEINE 50-%-Quote an. Konkrete Prozentangabe entfernt; qualitativer Beleg steht.
 **Praxisfehler:** Leitsymptome werden als Aufregung, Panikattacke oder banale Atemnot fehlgedeutet — Zeitverlust bis zur Notfall-Versorgung.
 **Transfer:** [Transfer] Wie ein Stein, der sich aus einem Stau in der Beinvene löst und in die Lunge geschwemmt wird — wo er einen Stau verursacht, der die Sauerstoffaufnahme blockiert.
 
@@ -125,7 +125,7 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Durch Aktivierung der Wadenmuskelpumpe kann der venöse Rückfluss um mindestens 50 % gesteigert werden"
 
-> ⚠️ Korrektur Detail-Wert: Die ursprüngliche Aussage „Wadenpumpe bewirkt ~80 % des venösen Rückflusses" ist NICHT belegbar und wurde durch den verbatim belegten Wert ersetzt: Pflege heute belegt, dass die Aktivierung der Wadenmuskelpumpe den venösen Rückfluss um *mindestens 50 %* steigert (anderer Bezugswert — Steigerung, nicht Anteil am Gesamtrückfluss). Keine 80-%-Zahl behaupten.
+> KORREKTUR Detail-Wert: Die ursprüngliche Aussage „Wadenpumpe bewirkt ~80 % des venösen Rückflusses" ist NICHT belegbar und wurde durch den verbatim belegten Wert ersetzt: Pflege heute belegt, dass die Aktivierung der Wadenmuskelpumpe den venösen Rückfluss um *mindestens 50 %* steigert (anderer Bezugswert — Steigerung, nicht Anteil am Gesamtrückfluss). Keine 80-%-Zahl behaupten.
 **Praxisfehler:** "Schonung nach OP" wird zu lang verordnet oder von Pflege zögerlich umgesetzt — führt zu vermeidbaren Thrombosen.
 **Transfer:** [Transfer] Wie ein Fluss, der fließen muss, damit er sich nicht staut: Bewegung ist die natürlichste Thromboseprophylaxe.
 
@@ -168,12 +168,10 @@
 
 **Fakt:** Subkutane NMH-Injektion in die Bauchhaut: Bauchnabel 2 cm frei lassen (nicht direkt neben dem Nabel), besonders der Bereich unterhalb des Bauchnabels ist bevorzugt. Hautfalte mit Daumen und Zeigefinger abheben. Nadel zügig senkrecht einstechen. **Nicht aspirieren** bei Heparin — kann Hämatome verursachen. Injektionsstelle systematisch wechseln.
 
-> ⚠️ Detail: „Luftblock in der Fertigspritze nicht entfernen" ist im Pflege-heute-Volltext (s.c.-Kap.) NICHT verbatim enthalten — diese Teilaussage bis zur Verfügbarkeit einer Fachinformation (Enoxaparin/Dalteparin) oder einer Pflegeleitlinie Thromboseprophylaxe streichen.
-
 **Prüfungsrelevanz:** sehr hoch (praktisch-technisch)
 **Wissensart:** Handlung (Technik)
 **Bloom-Potential:** 3-4
-**Primärquelle:** (Pflege heute Kap. 43.4.3 Subkutane Injektion; Fachinformation Enoxaparin/Dalteparin für Luftblock-Detail)
+**Primärquelle:** (Pflege heute Kap. 43.4.3 Subkutane Injektion)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Bauchdecke um den Bauchnabel (um den Nabel 2 cm frei lassen)"
@@ -181,10 +179,10 @@
 - Zitat: "zügig senkrecht in die Hautfalte einstechen"
 - Zitat: "Bei der Injektion von Heparin wird dies wegen der möglichen Hämatombildung nicht empfohlen"
 - Zitat: "Injektionsstellen wechseln"
-**Praxisfehler:** Hautfalte wird losgelassen vor Injektions-Ende; Luftbläschen wird entfernt; aspiriert wird trotz Fertigspritze.
+**Praxisfehler:** Hautfalte wird losgelassen vor Injektions-Ende; aspiriert wird trotz Fertigspritze.
 
 **Misconceptions:**
-- `M1`: **"Luftbläschen muss raus, sonst Embolie"** — Falsch für subkutane Injektion. Das Luftbläschen in der Fertigspritze ist absichtlich dort (Luftblock). Luftembolie-Risiko gibt es bei i.v.-Injektion, nicht bei s.c.
+- `M1`: **"Bei Heparin-Fertigspritzen muss man vor dem Spritzen die Luft entfernen"** — Falsch für s.c. Fertigspritzen: Die Spritze wird so verabreicht, wie sie vom Hersteller vorbereitet ist (Herstellerangabe beachten). Luftembolie-Risiko gibt es bei i.v.-Injektion, nicht bei s.c.
 - `M2`: **"Aspirieren ist Pflicht"** — Bei subkutaner NMH-Injektion NICHT aspirieren. Erhöht Hämatom-Risiko ohne Nutzen. Nur bei i.m.-Injektionen teils noch gelehrt.
 - `M3`: **"Nach Injektion leicht reiben hilft gegen Bluterguss"** — Genau umgekehrt: Reiben verursacht Hämatome. Nur sanft mit Tupfer abdrücken, nicht reiben.
 
@@ -293,7 +291,7 @@
 
 ### F-12: Lungenembolie — Notfall-Symptome erkennen
 
-**Fakt:** Akute Lungenembolie-Symptome: **plötzliche Atemnot (Dyspnoe)** ist häufigstes Symptom (80%); **Thoraxschmerz** (meist atemabhängig, stechend); **Tachykardie** (>100/min); **Tachypnoe** (>20/min); **Zyanose**; **Schwindel, Kollaps, Synkope**; **Husten** (teils blutig); **Angst, Todesangst, Unruhe**. Bei massiver LE: **Schock, Kreislaufstillstand**. Bei Verdacht: **SOFORT Notfall-Maßnahmen**: Arzt/Notruf, Patient flach lagern bei Schock oder Oberkörperhochlagerung bei Dyspnoe, O2-Gabe, Monitoring, venösen Zugang vorbereiten, KEINE körperliche Belastung mehr. Jede Minute zählt!
+**Fakt:** Akute Lungenembolie-Symptome: **plötzliche Atemnot (Dyspnoe)** ist das erste/führende Symptom; **Thoraxschmerz** (meist atemabhängig, stechend); **Tachykardie** (>100/min); **Tachypnoe** (>20/min); **Zyanose**; **Schwindel, Kollaps, Synkope**; **Husten** (teils blutig); **Angst, Todesangst, Unruhe**. Bei massiver LE: **Schock, Kreislaufstillstand**. Bei Verdacht: **SOFORT Notfall-Maßnahmen**: Arzt/Notruf, Patient flach lagern bei Schock oder Oberkörperhochlagerung bei Dyspnoe, O2-Gabe, Monitoring, venösen Zugang vorbereiten, KEINE körperliche Belastung mehr. Jede Minute zählt!
 
 **Prüfungsrelevanz:** sehr hoch (lebensrettend!)
 **Wissensart:** Komplikation + Notfall-Erkennung
@@ -308,7 +306,7 @@
 - Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
 - Zitat: "Das erste Zeichen ist oft die plötzliche Atemnot. Später kommen auch Husten und atemabhängige Brustschmerzen dazu." — Atemnot als erstes/führendes LE-Zeichen (qualitativ) belegt
 
-> ⚠️ Detail-Wert „Dyspnoe häufigstes Symptom (80 %)": Die *qualitative* Aussage „Atemnot ist das erste/führende LE-Zeichen" ist jetzt verbatim aus I Care Krankheitslehre belegt. Die konkrete *80-%-Quote* bleibt in keinem lokalen Korpus (Pflege heute, AWMF VTE, Paetz, Prüfungswissen, I Care Krankheitslehre) enthalten. Bis zur Verfügbarkeit einer LE-Epidemiologie-Quelle (ESC Acute Pulmonary Embolism Guidelines) keine 80-%-Zahl behaupten.
+Detail-Wert „Dyspnoe häufigstes Symptom (80 %)": Die *qualitative* Aussage „Atemnot ist das erste/führende LE-Zeichen" ist verbatim aus I Care Krankheitslehre belegt. Die konkrete *80-%-Quote* bleibt in keinem lokalen Korpus enthalten — Prozentangabe entfernt, qualitative Aussage steht.
 **Praxisfehler:** Symptome werden als Panikattacke oder Angst fehlgedeutet; Patient wird allein gelassen oder nicht priorisiert.
 **Transfer:** [Transfer] Wie ein Alarm im Haus — plötzliche Atemnot bei Risikopatient ist die Brandmeldung. Du schickst niemanden hin zum "Nachsehen", du rufst sofort die Feuerwehr.
 

@@ -10,8 +10,8 @@
 | quellen | I Care Pflege Kap. Körperpflege; Pflege heute 7. Aufl. Kap. 6 Haut- und Körperpflege; Juchli ATLs 1987; WHO/RKI-KRINKO Händehygiene 2022; Fröhlich Basale Stimulation 1998; AWMF-S3-NVL Typ-2-Diabetes 2023; DDG S2k-Leitlinie Erysipel 2020; I Care Pflegeexamen kompakt (Elsevier); Prüfungswissen Pflegefachfrau (Elsevier) |
 | einträge | 19 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, v9 Gold-Standard) |
-| belege-aktualisiert | 2026-06-11 (⚠️ 25→17 aufgelöst; 2 Sachkorrekturen: Harnröhre 3-5→4-5 cm, Dekubitus-I-Abgrenzung korrigiert) |
-| grounding | 2026-06-11 Welle 2 (neuer Korpus + Kennzeichnungs-Durchgang): 11 von 12 offenen ⚠️ aufgelöst — F-01 (22-24 °C via Säuglingsbad-Querbeleg + Unterarm-Prüfstelle via Wickel/Säuglingsnahrung verbatim), F-14 (Hämatome verbatim, Fakt umgestellt), F-16 (Ressourcen via pflege-heute-Einzelbeleg + Primärquellen-Zeile korrigiert), F-17 (Indikation Erschöpfung verbatim, Rest-Liste bleibt ⚠️); F-02/F-03/F-05/F-10/F-15/F-18: didaktische Heuristiken/Faustregeln im Fakt explizit gekennzeichnet statt als belegte Fakten geführt. 1 ⚠️ verbleibt (F-17 Indikationsliste + Prioritäten-Reihenfolge). 2026-06-11 Quer-Korpus-Welle (ALLE Korpora): Pflege heute belegt die Reihenfolge der VOLLEN GKW, aber keine reduzierte Teilwaschungs-Prioritätenliste und keine geschlossene Indikationsliste → F-17 bleibt für diese beiden Detail-Aspekte ehrlich offen. |
+| belege-aktualisiert | 2026-06-11 (25→17 Marker aufgelöst; 2 Sachkorrekturen: Harnröhre 3-5→4-5 cm, Dekubitus-I-Abgrenzung korrigiert) |
+| grounding | 2026-06-11 Welle 2 (neuer Korpus + Kennzeichnungs-Durchgang): 11 von 12 offenen Markern aufgelöst — F-01 (22-24 °C via Säuglingsbad-Querbeleg + Unterarm-Prüfstelle via Wickel/Säuglingsnahrung verbatim), F-14 (Hämatome verbatim, Fakt umgestellt), F-16 (Ressourcen via pflege-heute-Einzelbeleg + Primärquellen-Zeile korrigiert), F-17 (Indikation Erschöpfung verbatim); F-02/F-03/F-05/F-10/F-15/F-18: didaktische Heuristiken/Faustregeln im Fakt explizit gekennzeichnet statt als belegte Fakten geführt. 2026-06-11 (Curriculum-Tiefe-Pass): letzter Marker (F-17 geschlossene Indikationsliste + feste Prioritäten-Reihenfolge) aufgelöst — beides im Korpus nicht belegbar und über Ausbildungsniveau, daher als starres Schema bewusst NICHT behauptet; belegte qualitative Anpassungs-Aussage (inkl. Indikation Erschöpfung) bleibt. Body-Marker = 0. |
 
 ---
 
@@ -172,7 +172,7 @@
 - Zitat: "häufiger bei Frauen" + Zitat: "kurze Harnröhre" (deckt: kurze weibliche Harnröhre → erhöhtes HWI-Risiko)
 - Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
 - Zitat: "Die Harnröhre einer Frau ist 4–5 cm lang und verläuft gerade."
-- ⚠️ SACHKORREKTUR: Claim nennt „3-5 cm" — Korpus belegt „4–5 cm". Fakt-Zeile auf 4–5 cm korrigiert (Elsevier icare-examen-kompakt, Anatomie Harnwege).
+- SACHKORREKTUR: Claim nannte „3-5 cm" — Korpus belegt „4–5 cm". Fakt-Zeile auf 4–5 cm korrigiert (Elsevier icare-examen-kompakt, Anatomie Harnwege).
 - Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
 - Zitat: "Meistens gelangen die Erreger, v.a. Bakterien, insbesondere E. coli, auf dem aszendierenden Weg in die Harnblase." (deckt E. coli als typischen Erreger bei HWI durch aszendierende Keimverschleppung)
 **Praxisfehler:** Dasselbe Wasser wie für den Körper verwenden — es enthält bereits Keime, Hautschuppen und Seifenreste.
@@ -330,7 +330,7 @@
 - Zitat: "Täglich die Füße, vor allem Zehen und" (deckt tägliche Fußinspektion)
 - Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
 - Zitat: "Häufigste Ursache für eine Amputation ist die pAVK = periphere arterielle Verschlusskrankheit (S. 280), insbesondere bei Patienten mit Diabetes mellitus." (deckt: Diabetes-bedingte Durchblutungsstörung ist die führende Ursache nicht-unfallbedingter Amputationen)
-- SACHKORREKTUR (2026-06-11): Der Fakt nennt das diabetische Fußsyndrom als „häufigste Ursache nicht-unfallbedingter Amputationen". I Care Krankheitslehre belegt präziser: Häufigste Amputationsursache ist die **pAVK, insbesondere bei Diabetes** — das diabetische Fußsyndrom ist der klinische Endpunkt dieses Geschehens. Aussage damit gestützt, aber Formulierung präzisieren (pAVK/diabetische Durchblutungsstörung als Mechanismus). Nicht mehr ⚠️.
+- SACHKORREKTUR (2026-06-11): Der Fakt nennt das diabetische Fußsyndrom als „häufigste Ursache nicht-unfallbedingter Amputationen". I Care Krankheitslehre belegt präziser: Häufigste Amputationsursache ist die **pAVK, insbesondere bei Diabetes** — das diabetische Fußsyndrom ist der klinische Endpunkt dieses Geschehens. Aussage damit gestützt, aber Formulierung präzisieren (pAVK/diabetische Durchblutungsstörung als Mechanismus). Aufgelöst.
 **Praxisfehler:** Zwischen die Zehen eincremen — Feuchtigkeitsstau begünstigt Fußpilz (Eintrittspforte bei Diabetes).
 
 **Misconceptions:**
@@ -360,7 +360,7 @@
 - Zitat: "Dekubitus Kategorie I: umschriebene, nicht „wegdrückbare" (persistierende) Hautrötung (positiver Fingertest), kein Hautdefekt" (deckt: Dekubitus I = umschriebene Rötung ohne Hautdefekt, Gegenüber statt diffus)
 - Zitat: "Charakteristisch ist die scharf" (Erysipel — deckt: charakteristisches Merkmal der scharf begrenzten Rötung mit flammenden Ausläufern)
 - Zitat: "begrenzte, starke Rötung mit flammenden Ausläufern." (deckt: scharf begrenzte Rötung mit flammenden Ausläufern als Abgrenzungsmerkmal gegenüber Dekubitus)
-- ⚠️ SACHKORREKTUR: Originalclaim „Dekubitus-I-Rötung ist diffus" war FALSCH — Dekubitus I ist ebenfalls umschrieben/lokalisiert; Abgrenzungsmerkmal ist nicht diffus/scharf, sondern: Dekubitus = wegdrückbarkeitstest; Erysipel = scharf mit flammenden Ausläufern + Systemzeichen. Fakt korrigiert.
+- SACHKORREKTUR: Originalclaim „Dekubitus-I-Rötung ist diffus" war FALSCH — Dekubitus I ist ebenfalls umschrieben/lokalisiert; Abgrenzungsmerkmal ist nicht diffus/scharf, sondern: Dekubitus = wegdrückbarkeitstest; Erysipel = scharf mit flammenden Ausläufern + Systemzeichen. Fakt korrigiert.
 **Praxisfehler:** Erysipel mit lokaler Wundversorgung „selbst behandeln" — es braucht systemische Antibiotika, sonst droht Sepsis.
 
 **Misconceptions:**
@@ -470,8 +470,8 @@
 
 ### F-17: Teilkörperwäsche — Indikation
 
-**Fakt:** Die Teilkörperwäsche ist keine „halbe Arbeit", sondern eine bewusste Anpassung an den Zustand: Umfang und Reihenfolge der Waschung richten sich nach der individuellen Patientensituation, den Wünschen und den hygienischen Notwendigkeiten — nicht nach starrem Schema. Es ist eine pflegerische Entscheidung (§ 4 PflBG).
-⚠️ Quelle beschaffen (konkrete Primärquelle): vollständige Indikationsliste (Kreislauf-Instabilität, starke Schmerzen, Palliativsituation, Fieber, Demenz mit hoher Abwehr) und feste Prioritäten-Reihenfolge (Gesicht/Mund, Achseln, Intim, Hände, Hautfalten) — im vorhandenen Korpus nicht direkt belegbar. TEILAUFGELÖST (2026-06-11): Indikation Müdigkeit/Erschöpfung jetzt verbatim via I Care Pflege belegt (s. Beleg unten). (Quer-Korpus 2026-06-11: erneut über ALLE Korpora geprüft. Pflege heute belegt zwar die Standard-Reihenfolge der VOLLEN GKW — Hände → Gesicht (Stirn/Wangen/Kinn, dann Nase/Mund) → Hals/Arme/Achseln → Brust/Bauch → Rücken/Gesäß —, aber KEINE eigene Prioritäten-Reihenfolge für die reduzierte Teilwaschung und keine geschlossene Indikationsliste. Beides bleibt ehrlich offen.)
+**Fakt:** Die Teilkörperwäsche ist keine „halbe Arbeit", sondern eine bewusste Anpassung an den Zustand: Umfang und Reihenfolge der Waschung richten sich nach der individuellen Patientensituation, den Wünschen und den hygienischen Notwendigkeiten — nicht nach starrem Schema. Ein belegter Anpassungsgrund ist Müdigkeit/Erschöpfung des Patienten (I Care Pflege). Es ist eine pflegerische Entscheidung (§ 4 PflBG).
+> Hinweis (Curriculum-Tiefe-Pass): Eine geschlossene Indikationsliste und eine feste Prioritäten-Reihenfolge für die reduzierte Teilwaschung sind im Korpus nicht belegbar — beides wird daher im Schüler-Text bewusst NICHT als starres Schema behauptet. Belegt ist die individuelle, patientenorientierte Anpassung (statt fester Liste). Für die generalistische Ausbildung trägt diese qualitative Aussage; eine pauschale Merkliste wäre über dem nötigen Detailgrad.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Entscheidung

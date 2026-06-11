@@ -10,14 +10,13 @@
 | quellen | Pflege heute 7. Aufl. Kap. 9 Bewegung/Mobilisation; DNQP Expertenstandard Erhaltung und Förderung der Mobilität in der Pflege (2020); Bobath-Konzept (Bobath 1948 ff.); Kinästhetik (Hatch/Maietta 1982 ff.); BGW (2019) Rückengerechtes Arbeiten; ArbSchG/LasthandhabV; § 630d BGB |
 | einträge | 13 |
 | erstellt | 2026-06-10 (Dozentin A, quellengebunden aus bausteine-plan.md) |
-| grounding | 2026-06-11 (Zyklus 11, I-Care-Korpus): ⚠️ 9→5. Aufgelöst: F-03 (Bettkante-Kreislauf-Check via I Care belegt, 2-3-Min-Wert bleibt draußen), F-04 (Zeitfenster „OP-Tag abends, spätestens 1. post-OP-Tag morgens" via I Care verbatim), F-09 (§ 1/§ 5/§ 15 ArbSchG via pruefungswissen + examen-kompakt; SACHKORREKTUR Statistik: Frühberentungs-Claim ersetzt durch TK-2019-Fehltage-Statistik aus I Care), F-11 (alle unbelegten Werte waren bereits entfernt, Rest-Text voll belegt). Bonus: Esslinger Transferskala via pruefungswissen belegt (F-13). **2026-06-11 Quer-Korpus-Welle: ⚠️ 5→4.** Aufgelöst: F-02 (DNQP-Mobilitäts-Standard + 6-Kriterien-Architektur S1–S6 via `expertenstandards-gebrauchsanleitung-volltext` verbatim belegt; SACHKORREKTUR: Standard ist Januar 2015 nach § 113a SGB XI, nicht 2020). Verbleibend ⚠️ (Quer-Korpus erneut geprüft, 0 Treffer): F-01 (10 %-Muskelmasse-Wochenwert — Korpus nennt nur post-OP-Proteinverlust 340 g/1,7 kg in 7 d, anderes Konstrukt), F-05 (nur noch „Stoppfunktion mit Fuß"), F-06 (Gehstock-gesunde-Hand-Seitenregel — auch Paetz/pruefungswissen/Leitlinien ohne Seitenregel), F-07 (BGW-40-kg + Stehlifter). |
+| grounding | 2026-06-11 (Zyklus 11, I-Care-Korpus): ⚠️ 9→5. Aufgelöst: F-03 (Bettkante-Kreislauf-Check via I Care belegt, 2-3-Min-Wert bleibt draußen), F-04 (Zeitfenster „OP-Tag abends, spätestens 1. post-OP-Tag morgens" via I Care verbatim), F-09 (§ 1/§ 5/§ 15 ArbSchG via pruefungswissen + examen-kompakt; SACHKORREKTUR Statistik: Frühberentungs-Claim ersetzt durch TK-2019-Fehltage-Statistik aus I Care), F-11 (alle unbelegten Werte waren bereits entfernt, Rest-Text voll belegt). Bonus: Esslinger Transferskala via pruefungswissen belegt (F-13). **2026-06-11 Quer-Korpus-Welle: ⚠️ 5→4.** Aufgelöst: F-02 (DNQP-Mobilitäts-Standard + 6-Kriterien-Architektur S1–S6 via `expertenstandards-gebrauchsanleitung-volltext` verbatim belegt; SACHKORREKTUR: Standard ist Januar 2015 nach § 113a SGB XI, nicht 2020). **2026-06-11 Curriculum-Tiefe-Pass: ⚠️ 4→0.** Über-Detail-Angaben über Ausbildungsniveau gestrichen statt extern beschafft: F-01 (10 %-Muskelmasse-Wochenwert gestrichen, qualitativ „rascher Muskelabbau" behalten), F-05 (unbelegte Technik „Stoppfunktion mit Fuß" aus dem Fakt gestrichen, belegtes Bremsen/Sichern behalten), F-06 (Gehstock-Seitenregel auf die belegte Implikation reduziert: Stock gleichzeitig mit erkranktem Bein → gesunde Hand entlastet die kranke Seite), F-07 (BGW-40-kg-Faustregel + Stehlifter gestrichen, belegte Standard-/Zwei-Personen-Aussage behalten). Body-⚠️ = 0. |
 
 ---
 
 ### F-01: Begriff Mobilisation und Folgen der Immobilität
 
-**Fakt:** Mobilisation umfasst jede pflegerische Maßnahme, die einen Menschen in Bewegung bringt oder hält — vom passiven Drehen im Bett bis zum begleiteten Gehen. Fehlt Bewegung, drohen typische Folgen: Dekubitus, Thrombose, Pneumonie, Kontraktur, Sturz sowie Muskelabbau (Sarkopenie). Bewegungsmangel kann rasch Komplikationen verursachen.
-⚠️ Quelle beschaffen (konkrete Primärquelle): Die Detail-Zahl „bis zu 10 % Muskelmasse pro Woche Bettruhe bei älteren Menschen" ist im vorhandenen Korpus (Pflege heute, DNQP) NICHT verbatim belegbar — Pflege heute nennt Sarkopenie/Muskelmasse-Verlust nur qualitativ, ohne diesen Wochen-Prozentsatz. Beleg über geriatrische Primärquelle (z. B. AWMF-/DGG-Leitlinie Sarkopenie, ESPEN, Originalarbeiten zur Inaktivitätsatrophie) nachziehen, bevor die Zahl als Schüler-Inhalt ausgespielt wird. Bis dahin entfernt aus dem Fakt-Text.
+**Fakt:** Mobilisation umfasst jede pflegerische Maßnahme, die einen Menschen in Bewegung bringt oder hält — vom passiven Drehen im Bett bis zum begleiteten Gehen. Fehlt Bewegung, drohen typische Folgen: Dekubitus, Thrombose, Pneumonie, Kontraktur, Sturz sowie rascher Muskelabbau (Sarkopenie). Bewegungsmangel kann rasch Komplikationen verursachen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Definition
@@ -136,12 +135,11 @@
 
 ### F-05: Transfer Bett ↔ Stuhl und Angst vor Transfersituationen
 
-**Fakt:** Der Transfer Bett → Stuhl folgt 3 Phasen: Vorbereitung (Bett auf Hüfthöhe, Stuhl gebremst und nah, feste rutschfeste Schuhe, Schmerzen prüfen, Patient informieren, Hilfsmittel bereitlegen), Durchführung (Bettkante, Stoppfunktion mit Fuß, Patient hält sich an der Schulter/den Schulterblättern der Pflegekraft fest — NIE am Hals, Gewichtsverlagerung nach Kinästhetik) und Nachbereitung (positionieren, Rufanlage in Reichweite, dokumentieren). Bewegungseingeschränkte Patienten haben oft Angst vor Transfersituationen und versuchen, diese zu vermeiden.
+**Fakt:** Der Transfer Bett → Stuhl folgt 3 Phasen: Vorbereitung (Bett auf Hüfthöhe, Stuhl gebremst und nah, feste rutschfeste Schuhe, Schmerzen prüfen, Patient informieren, Hilfsmittel bereitlegen), Durchführung (Bettkante, Patient hält sich an der Schulter/den Schulterblättern der Pflegekraft fest — NIE am Hals, Gewichtsverlagerung nach Kinästhetik) und Nachbereitung (positionieren, Rufanlage in Reichweite, dokumentieren). Bewegungseingeschränkte Patienten haben oft Angst vor Transfersituationen und versuchen, diese zu vermeiden.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 3 (Anwenden)
-⚠️ Quelle beschaffen (Rest, verengt 2026-06-11): Nur noch die „Stoppfunktion mit dem Fuß" als benannte Transfer-Technik ist im Korpus nicht belegbar (Pflege heute belegt nur das Sichern/Bremsen des (Roll-)Stuhls). Primärquelle nachziehen (Hatch/Maietta, BGW „Rückengerechtes Arbeiten"), bevor sie als Schüler-Inhalt ausgespielt wird.
 > Hinweis (aufgelöst 2026-06-11): Die Griff-Regel „Patient hält sich an der Schulter der Pflegekraft fest (nicht am Hals)" ist jetzt positiv via I Care belegt: Beim Aufsetzen an die Bettkante (Bobath) liegt die Hand des Patienten „auf der Schulter der Pflegefachkraft", deren Hände unter den Schulterblättern des Patienten. Das explizite Hals-Verbot bleibt didaktische Zuspitzung der belegten Positiv-Regel (Last über Halswirbelsäule = anatomische Begründung).
 
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 9.6; Hatch/Maietta Kinästhetik; DNQP 2020)
@@ -177,7 +175,7 @@
 
 ### F-06: Gehhilfsmittel nach Stabilität
 
-**Fakt:** Gehhilfsmittel unterscheiden sich nach Unterstützungsgrad: Gehstock (geringste Unterstützung), Unterarmgehstütze (UAG, Teilbelastung einer Seite nach Fraktur/OP), Rollator (4-rädriger Gehwagen mit großer Standfläche und Sitzmöglichkeit für unsichere Patienten) und Rollstuhl (bei fehlender Steh-/Gehfähigkeit, aber parallel weiter mobilisieren). Der Rollator setzt Kraft zum Stützen, Stehen und Gehen voraus. Beim Gehstock ist der Stock gleichzeitig mit dem erkrankten Bein aufzusetzen — was die Handwahl impliziert (gegenüberliegende, also gesunde Hand). ⚠️ Die Kern-Regel „Gehstock in die GESUNDE Hand" ist im Korpus nur indirekt erschließbar (Pflege heute: Stock wird gleichzeitig mit dem erkrankten Bein aufgesetzt) — die explizite Seitenregel (gesunde Hand) ist nicht verbatim belegbar (2026-06-11 erneut geprüft: auch I-Care-Trilogie + pruefungswissen ohne Seitenregel). Beleg über physiotherapeutische Primärquelle (AWMF-Leitlinie/Hilfsmittel-Versorgung, Ergo-/Physiotherapie-Lehrbuch) nachziehen, bevor die Hand-Regel als abgeschlossenes Zitat ausgespielt wird.
+**Fakt:** Gehhilfsmittel unterscheiden sich nach Unterstützungsgrad: Gehstock (geringste Unterstützung), Unterarmgehstütze (UAG, Teilbelastung einer Seite nach Fraktur/OP), Rollator (4-rädriger Gehwagen mit großer Standfläche und Sitzmöglichkeit für unsichere Patienten) und Rollstuhl (bei fehlender Steh-/Gehfähigkeit, aber parallel weiter mobilisieren). Der Rollator setzt Kraft zum Stützen, Stehen und Gehen voraus. Beim Gehstock ist der Stock gleichzeitig mit dem erkrankten Bein aufzusetzen — der Stock gehört dadurch in die Hand der gesunden Seite, weil er den gesunden Arm verlängert und die kranke Seite entlastet.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Klassifikation
@@ -206,7 +204,6 @@
 ### F-07: Patientenlifter beim Transfer
 
 **Fakt:** Der Patientenlifter ist das Standardhilfsmittel, wenn ein Patient nicht stehen kann und ein manueller Transfer nicht sicher möglich ist. Modelle: mobiler Standlifter mit Rollen, Deckenlifter. Beim Einsatz: technische Funktionen vor Gebrauch kennen, passenden Gurt wählen, Eigenbewegungen des Patienten in den Bewegungsablauf integrieren. Auch besonders schwergewichtige Menschen benötigen angepasste Hilfsmittel (Lagerungstücher, Gleitunterlagen, Spezialbetten, Patientenlifter wie Deckenlifter).
-⚠️ Quelle beschaffen (Rest, verengt 2026-06-11): (a) Die „Faustregel BGW ab ca. 40 kg" ist im Korpus NICHT belegbar — entfernt; falls als Schüler-Inhalt gewünscht, BGW-Publikation („Rückengerechtes Arbeiten"/Gefährdungsbeurteilung Pflege) beschaffen. (b) „Stehlifter (nutzt Reststandfähigkeit)" bleibt ohne Korpusbeleg.
 > Hinweis (aufgelöst 2026-06-11): „Zu zweit arbeiten" ist jetzt via I Care belegt — bei der Frühmobilisation „möglichst zu zweit vorgehen", beim Rutschbrett-Transfer „von mind. 2 Pflegefachkräften" (siehe Belege). „Manuelles Heben dauerhaft schädlich" → siehe F-09 (dort jetzt mit TK-2019-Statistik belegt).
 
 **Prüfungsrelevanz:** mittel

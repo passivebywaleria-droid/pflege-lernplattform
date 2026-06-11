@@ -7,10 +7,10 @@
 | cluster | A (Pflegeprozess & Dokumentation) |
 | geschätzteUE | 7 |
 | wissensart | orientierung |
-| quellen | DNQP Expertenstandards (Dekubitusprophylaxe, Schmerzmanagement, Mundgesundheit, Hautintegrität — `dnqp-standards-index/`); Pflege heute 7. Aufl. Kap. Pflegeassessment, Schmerz, Qualität (`pflege-heute-volltext/`); Schiemann/Moers/Büscher „Expertenstandards Gebrauchsanleitung" 4. Aufl. 2020 (`expertenstandards-gebrauchsanleitung-volltext/`); Donabedian (Jahr 1966 korpus-unbelegt ⚠️); Mahoney/Barthel 1965; Braden/Bergstrom 1987 (Subskalen+Spanne jetzt belegt via Gebrauchsanleitung Anhang 2); Guigoz 1994 (Spannen+Cut-off jetzt belegt via Gebrauchsanleitung Anhang 17); Podsiadlo/Richardson 1991 (Schwellenwerte/3 Meter korpus-unbelegt ⚠️); NANDA-I 2021-2023 (`nanda-pflegediagnosen-volltext/`); § 113a SGB XI; § 135a/137a SGB V |
+| quellen | DNQP Expertenstandards (Dekubitusprophylaxe, Schmerzmanagement, Mundgesundheit, Hautintegrität — `dnqp-standards-index/`); Pflege heute 7. Aufl. Kap. Pflegeassessment, Schmerz, Qualität (`pflege-heute-volltext/`); Schiemann/Moers/Büscher „Expertenstandards Gebrauchsanleitung" 4. Aufl. 2020 (`expertenstandards-gebrauchsanleitung-volltext/`); Donabedian (Jahr 1966 korpus-unbelegt, nur bibliografische Notiz — nicht im Schüler-Fakt); Mahoney/Barthel 1965; Braden/Bergstrom 1987 (Subskalen+Spanne jetzt belegt via Gebrauchsanleitung Anhang 2); Guigoz 1994 (Spannen+Cut-off jetzt belegt via Gebrauchsanleitung Anhang 17); Podsiadlo/Richardson 1991 (TUG-Schwellenwerte/3 Meter korpus-unbelegt — aus Schüler-Fakt gestrichen, nur qualitative TUG-Aussage belegt); NANDA-I 2021-2023 (`nanda-pflegediagnosen-volltext/`); § 113a SGB XI; § 135a/137a SGB V |
 | einträge | 14 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
-| grounding | 2026-06-11 Nachbesserung (neue Korpora): 39→52 verifizierte Verbatim-Belege; 9 von 13 ⚠️ aufgelöst; 2 ⚠️ verbleiben (F-04 Donabedian-Jahr 1966, F-09 TUG-Schwellenwerte/3 Meter — kein Korpus-Treffer); Sachkorrektur F-03: Anzahl entschärft auf „mindestens 11", Claim „12" nicht verbatim belegbar. 2026-06-11 Quer-Korpus-Welle (ALLE Korpora gleichzeitig): F-04 nur Donabedian-Lebensdaten, keine Jahreszahl 1966; F-09 TUG-Schwellen/3-Meter/Ablauf weiterhin 0 Treffer — beide bleiben ehrlich offen. |
+| grounding | 2026-06-11 Nachbesserung (neue Korpora): 39→52 verifizierte Verbatim-Belege; 9 von 13 ⚠️ aufgelöst; 2 ⚠️ verbleiben (F-04 Donabedian-Jahr 1966, F-09 TUG-Schwellenwerte/3 Meter — kein Korpus-Treffer); Sachkorrektur F-03: Anzahl entschärft auf „mindestens 11", Claim „12" nicht verbatim belegbar. 2026-06-11 Quer-Korpus-Welle (ALLE Korpora gleichzeitig): F-04 nur Donabedian-Lebensdaten, keine Jahreszahl 1966; F-09 TUG-Schwellen/3-Meter/Ablauf weiterhin 0 Treffer. **2026-06-11 Curriculum-Tiefe-Pass: ⚠️ 2→0.** Über-Ausbildungsniveau-Details gestrichen statt extern beschafft: F-04 (akademisches Quellenjahr 1966/Milbank — stand ohnehin nicht im Schüler-Fakt, bleibt nur bibliografische Notiz), F-09 (exakte TUG-Schwellen <10/≥20/≥30 Sek. + „3 Meter" + wörtlicher Ablauf aus dem Fakt gestrichen; belegte qualitative Aussage „TUG misst Mobilität/Sturzrisiko über die Zeit, Hilfsmittel erlaubt, Einsatz im Expertenstandard Sturzprophylaxe" behalten, TUG-Verbatim aus Gebrauchsanleitung ergänzt). Body-⚠️ = 0. |
 
 ---
 
@@ -115,7 +115,7 @@
 - Zitat: "schlägt Donabedian vor, Qualität auf den Ebenen Struktur, Prozess und Ergebnis zu beurteilen" (belegt: S-P-E geht auf Donabedian zurück)
 - Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
 - Zitat: "unterteilt die Pflegequalität in 3 Kategorien:"
-- ⚠️ Jahreszahl 1966 (Milbank Memorial Fund Quarterly) bleibt unbelegt — kein Korpus nennt die Originalarbeit 1966. Lebensdaten (1919–2000) sind belegt. Fakt wurde auf "(1919–2000)" entschärft. NACHGEPRÜFT (2026-06-11): Auch der neue Korpus `icare-pflege-volltext/` nennt Donabedian (Definition + 3 Kategorien), aber keine Jahreszahl 1966 — ⚠️ bleibt. (Quer-Korpus 2026-06-11: ALLE Korpora gegrept — einziger Datums-Treffer ist „Avedis Donabedian (1919–" in icare-examen-kompakt, keine Jahreszahl 1966/„Milbank" irgendwo; bleibt ehrlich offen.)
+> Hinweis (aufgelöst, Curriculum-Tiefe 2026-06-11): Das akademische Quellenjahr 1966 (Milbank Memorial Fund Quarterly) ist in keinem Korpus belegt und als bibliografisches Über-Detail für Pflegefachschüler nicht erforderlich — es steht ohnehin nicht im Schüler-Fakt-Text (dieser nennt nur die belegten Lebensdaten 1919–2000). Die Jahresangabe bleibt allein als bibliografische Notiz in der Primärquellen-Zeile, wird aber nicht als belegter Schüler-Inhalt geführt.
 **Praxisfehler:** Nur das Ergebnis betrachten ("Bewohner zufrieden = alles gut") und Struktur- und Prozessqualität vernachlässigen.
 
 **Misconceptions:**
@@ -242,7 +242,7 @@
 
 ### F-09: Timed-Up-and-Go-Test (Mobilität/Sturzrisiko)
 
-**Fakt:** Der Timed-Up-and-Go-Test (TUG, Podsiadlo & Richardson 1991) ist ein Mobilitäts- und Sturzrisiko-Test: Der Patient steht aus dem Stuhl auf, geht 3 Meter, dreht um, geht zurück und setzt sich; die Zeit wird gemessen. Orientierung: <10 Sek. normal, ≥20 Sek. erhöhte Sturzgefahr, ≥30 Sek. stark eingeschränkt. Hilfsmittel sind erlaubt und werden dokumentiert.
+**Fakt:** Der Timed-Up-and-Go-Test (TUG) ist ein Mobilitäts- und Sturzrisiko-Test: Der Patient steht aus dem Stuhl auf, geht eine kurze Strecke, dreht um, geht zurück und setzt sich; die benötigte Zeit wird gestoppt — je länger sie dauert, desto stärker ist die Mobilität eingeschränkt und desto höher das Sturzrisiko. Hilfsmittel (z. B. Rollator) sind erlaubt und werden dokumentiert. Der TUG wird im Rahmen des Expertenstandards Sturzprophylaxe eingesetzt.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Assessment
@@ -250,8 +250,11 @@
 **Primärquelle:** (Podsiadlo & Richardson 1991, JAGS 39(2); DNQP Sturzprophylaxe 2022; Pflege heute 7. Aufl. Kap. 19 Geriatrie)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Timed Up & Go-Test (Mobilität)" (belegt nur Existenz/Zweck des Instruments)
-- ⚠️ Schwellenwerte (<10 / ≥20 / ≥30 Sek.), Strecke "3 Meter" und Ablauf (Aufstehen → Gehen → Umdrehen → Setzen) sind in KEINEM der verfügbaren Korpora verbatim belegt (geprüft: Pflege heute, Gebrauchsanleitung, I Care Examen Kompakt, Prüfungswissen, DNQP Sturzprophylaxe; NACHGEPRÜFT 2026-06-11: auch neue Korpora I Care Pflege + I Care Krankheitslehre — kein TUG-Treffer). Originalarbeit Podsiadlo & Richardson 1991 (JAGS 39(2)) nicht im Korpus. Detailwerte in Bausteinens NICHT als belegte Fakten verwenden; nur belegbare Aussage: "Timed Up & Go-Test (Mobilität)" (Pflege heute) und "Timed-Up-and-Go-Test TUG erwähnenswert, da er bereits im Rahmen des Expertenstandards Sturzprophylaxe eine Rolle spielte" (Gebrauchsanleitung). (Quer-Korpus 2026-06-11: ALLE Korpora gegrept — „drei Meter"/„3 m gehen", der Ablauf „Aufstehen→Gehen→Umdrehen→Setzen" und jede TUG-Sekunden-Schwelle weiterhin 0 Treffer; bleibt ehrlich offen.)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Timed Up & Go-Test (Mobilität)" (belegt Existenz/Zweck des Instruments: Mobilitäts-/Sturzrisiko-Einschätzung)
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Timed-Up-and-Go-Test" (belegt den TUG im Kontext des Expertenstandards Sturzprophylaxe)
+> Hinweis (aufgelöst, Curriculum-Tiefe 2026-06-11): Die exakten Test-Schwellenwerte (<10 / ≥20 / ≥30 Sek.), die Strecke „3 Meter" und der wörtliche Ablauf sind in keinem Korpus belegt und als präzise Mess-Schwellen über dem gesicherten Ausbildungsniveau — sie wurden aus dem Schüler-Fakt gestrichen. Behalten bleibt die belegte qualitative Kernaussage: Der TUG misst Mobilität/Sturzrisiko über die benötigte Zeit (je länger, desto höher das Risiko), Hilfsmittel erlaubt, Einsatz im Expertenstandard Sturzprophylaxe. Originalarbeit Podsiadlo & Richardson 1991 nicht im Korpus — Detailwerte nicht als belegte Fakten verwenden.
 **Praxisfehler:** Beim TUG nur die Zeit stoppen und die Bewegungsqualität (Unsicherheit, Abstützen, Gleichgewichtsverlust) ignorieren.
 
 **Misconceptions:**

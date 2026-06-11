@@ -10,7 +10,7 @@
 | quellen | DNQP Expertenstandard Förderung der Mundgesundheit in der Pflege; Pflege heute Kap. Mund- und Zahnpflege; DGP/DGPPN Leitlinie Mundgesundheit 2019 |
 | einträge | 14 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md v9) |
-| grounding | 2026-06-11 Welle (icare-pflege/icare-anatomie/icare-krankheitslehre Volltext erschlossen): F-03 ⚠️ aufgelöst — Remineralisation/Zahnschutz als Speichel-Kernaufgabe durch I Care Anatomie Kap. 9.4 verbatim belegt; F-05 Sachaussage (Mundpflege bei Vollprothesenträgern) durch I Care Pflege verbatim gestützt, Terminus „Prothesenstomatitis" bleibt offen (im Korpus 0 Treffer); F-06 feste Inspektions-Sequenz bleibt offen (im Korpus nur „systematische Inspektion", keine Schritt-für-Schritt-Reihenfolge — ICSD/DGP-DGPPN-2019-Quelle beschaffen). Verbleibende ⚠️ (korpusweit 0 Treffer bestätigt, Welle 3 Quer-Korpus-Grep über alle ~18 Bücher): F-05 Terminus „Prothesenstomatitis" (nur engl. „dentures"), F-06 Mundinspektions-Sequenz (kein Schritt-für-Schritt-Beleg; „von außen nach innen" nur in Fremdkontexten) — beide nur via DGP/DGPPN 2019 (lokal nicht vorliegend) lösbar · geprüft 2026-06-11 |
+| grounding | 2026-06-11 Welle (icare-pflege/icare-anatomie/icare-krankheitslehre Volltext erschlossen): F-03 ⚠️ aufgelöst — Remineralisation/Zahnschutz als Speichel-Kernaufgabe durch I Care Anatomie Kap. 9.4 verbatim belegt; F-05 Sachaussage (Mundpflege bei Vollprothesenträgern) durch I Care Pflege verbatim gestützt, Terminus „Prothesenstomatitis" bleibt offen (im Korpus 0 Treffer); F-06 feste Inspektions-Sequenz bleibt offen (im Korpus nur „systematische Inspektion", keine Schritt-für-Schritt-Reihenfolge — ICSD/DGP-DGPPN-2019-Quelle beschaffen). Curriculum-Tiefe-Pass 2026-06-11 (Quer-Korpus-Grep über alle ~18 Bücher, korpusweit 0 Treffer bestätigt): zwei Über-Detail-Angaben aufgelöst — F-05 Spezial-Terminus „Prothesenstomatitis" (nur engl. „dentures") kommt im Schülertext ohnehin nicht vor, belegte Sachaussage „Schleimhaut unter Prothese mitpflegen" trägt F-05; F-06 feste Mundinspektions-Sequenz „Lippen→…→Mundboden" nicht belegt (nur Werkzeug + systematische Inspektion inkl. Rachenraum) → Fakt auf „systematisch von außen nach innen" entschärft, Regionen nur als Aufzählung. Body-⚠️ = 0 · geprüft 2026-06-11 |
 
 ---
 
@@ -126,7 +126,7 @@
 - Zitat: "Vor Einsetzen der Zahnprothese massiert der Patient ggf. die Kauleiste mit einer Zahnbürste, anschließend spült er den Mund mit Wasser aus"
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "Auch Pflegeempfänger, die eine Vollprothese tragen, bedürfen der Mundpflege" — belegt verbatim, dass Prothesenträger zusätzlich zur Prothesenreinigung Mundpflege brauchen (Inspektion der Mundschleimhaut, Ausspülen/Auswischen von Mund und Wangentaschen); stützt Praxisfehler + M3
-⚠️ Teilweise offen — korpusweit 0 Treffer: Der spezifische Terminus „Prothesenstomatitis" ist im gesamten Korpus (Quer-Korpus-Grep über alle ~18 Bücher: nur englisch „dentures", kein deutscher Fachterminus) nicht verbatim belegt (I Care Pflege/Krankheitslehre kennen nur „Stomatitis"/„Soor-Stomatitis"). Die Sachaussage — Schleimhaut unter der Prothese mitpflegen, sonst Candida-Ansiedlung — ist durch Pflege heute (Soor auf geschädigter Schleimhaut) und I Care Pflege (Vollprothesen-Mundpflege) gedeckt. Falls der Fachterminus im Content benötigt wird: DGP/DGPPN 2019-Leitlinie oder zahnmedizinische Fachliteratur beschaffen.
+CURRICULUM-TIEFE-PASS (2026-06-11): Der spezifische Terminus „Prothesenstomatitis" ist im gesamten Korpus (Quer-Korpus-Grep über alle ~18 Bücher: nur englisch „dentures", kein deutscher Fachterminus) nicht verbatim belegt (I Care Pflege/Krankheitslehre kennen nur „Stomatitis"/„Soor-Stomatitis"). Der Spezial-Terminus ist über dem Ausbildungsniveau → kommt im Schülertext (Fakt F-05 + M1–M3) ohnehin nicht vor; dort steht die belegte Sachaussage „Schleimhaut unter der Prothese mitpflegen, sonst Candida-/Soor-Ansiedlung", gedeckt durch Pflege heute (Soor auf geschädigter Schleimhaut) und I Care Pflege (Vollprothesen-Mundpflege). ⚠️ aufgelöst (keine Schülertext-Änderung nötig).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
@@ -152,7 +152,7 @@
 
 ### F-06: Systematische Mundinspektion
 
-**Fakt:** Die Inspektion der Mundhöhle erfolgt mit Taschenlampe und (angefeuchtetem) Spatel, in fester Reihenfolge von außen nach innen: Lippen → Zähne/Prothese → Zahnfleisch → Wangenschleimhaut → Gaumen → Zunge → Mundboden. Bei Risikopatienten (Tumortherapie, Demenz, Intubation, Nahrungs- und Flüssigkeitskarenz) täglich.
+**Fakt:** Die Inspektion der Mundhöhle erfolgt mit Taschenlampe und (angefeuchtetem) Spatel, systematisch von außen nach innen — vom Mundeingang (Lippen, Zähne/Prothese) bis einschließlich des hinteren Rachenraums, sodass keine Region (Zahnfleisch, Wangenschleimhaut, Gaumen, Zunge, Mundboden) übersehen wird. Bei Risikopatienten (Tumortherapie, Demenz, Intubation, Nahrungs- und Flüssigkeitskarenz) täglich.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
@@ -165,7 +165,7 @@
 - Zitat: "hinteren Rachenraums sorgfältig inspiziert"
 - Zitat: "mit Strahlentherapie"
 - Zitat: "inspizieren die Pflegenden den Mund-Rachen-Raum täglich"
-⚠️ Quelle beschaffen — korpusweit 0 Treffer: die feste Inspektions-Reihenfolge „Lippen → Zähne/Prothese → Zahnfleisch → Wangenschleimhaut → Gaumen → Zunge → Mundboden" ist nach Quer-Korpus-Grep über alle ~18 Bücher (I Care Pflege/Examen kompakt/Krankheitslehre, Pflege heute, DNQP Mundgesundheit, Prüfungswissen) NICHT als Schritt-für-Schritt-Sequenz belegt. „von außen nach innen" findet sich im Korpus nur in anderen Kontexten (Wundreinigung, Augenpflege, Bewegungssystem-Inspektion), nicht für die Mundinspektion. Pflege heute belegt nur Werkzeug + systematische Inspektion „einschließlich des hinteren Rachenraums". Sequenz aus DGP/DGPPN 2019 (lokal nicht vorliegend) beschaffen ODER im Fakt auf „systematisch von außen nach innen" entschärfen.
+CURRICULUM-TIEFE-PASS (2026-06-11): die feste Schritt-für-Schritt-Inspektions-Reihenfolge „Lippen → Zähne/Prothese → Zahnfleisch → Wangenschleimhaut → Gaumen → Zunge → Mundboden" ist nach Quer-Korpus-Grep über alle ~18 Bücher (I Care Pflege/Examen kompakt/Krankheitslehre, Pflege heute, DNQP Mundgesundheit, Prüfungswissen) NICHT als Sequenz belegt. „von außen nach innen" findet sich im Korpus nur in anderen Kontexten (Wundreinigung, Augenpflege, Bewegungssystem-Inspektion), nicht für die Mundinspektion. Belegt sind in Pflege heute nur das Werkzeug (Taschenlampe + angefeuchteter Spatel) und die systematische Inspektion „einschließlich des hinteren Rachenraums". Die feste Reihenfolge ist ein Detail jenseits des Lehrbuchs → im Fakt auf „systematisch von außen nach innen" entschärft, die Regionen nur noch als Aufzählung (keine zu erlernende Sequenz). ⚠️ aufgelöst.
 **Praxisfehler:** Inspektion nur „in den offenen Mund schauen" ohne Spatel und Licht — Soor und Mukositis beginnen oft am hinteren Gaumen und an den Zungenrändern.
 
 **Misconceptions:**

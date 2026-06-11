@@ -10,7 +10,7 @@
 | quellen | Pflege heute 7. Aufl. Kap. 7.7 Enterale Ernährung über Sonden; ASPEN Consensus Recommendations for Refeeding Syndrome 2020 (Nutr Clin Pract 35(2):178–195); DNQP Expertenstandard Ernährungsmanagement (2. Aktual.); DGEM S3-Leitlinie Klinische Ernährung 2013/2020 |
 | einträge | 11 |
 | erstellt | 2026-06-10 (Pipeline v9) |
-| grounding | 2026-06-11 auf STÜTZT gehoben (Dozentin A): 67 Verbatim-Belege, alle ✅ MATCH. Pro Teilaussage ein Beleg (R2). [F-09 Spülmenge via DGEM-Heimenterale 2024 belegt: 20–40 mL.] „schwere Mukositis" (F-01) → korrigiert auf belegtes „Stenosen im MDT"; Cola-Aussage (F-09) → an Korpus angepasst (Ausnahme-Spüllösung). 2026-06-11 (Welle icare-Volltext): F-01 karenzbedingte Darmschleimhaut-Atrophie via icare-krankheitslehre verbatim belegt (⚠️ gelöst); F-11 >800-mosmol/l-Schwelle via icare-pflege + icare-examen-kompakt zusätzlich verbatim verstärkt. Verbleibende ⚠️ (Welle 3, Quer-Korpus-Grep über alle ~18 Bücher → korpusweit 0 Treffer, bestätigt): pH <5,5 (F-03 — nur DGEM-Heimenterale ≤5 belegt; icare-pflege „Magensäure pH ca. 2"; exakter 5,5-Wert 0 Treffer), ZPE-Obergrenze ~2000 mosmol/l (F-11 — nur >800-Schwelle belegt; 2000er-Treffer betrifft Neonat-Kalium-Lösung, nicht ZPE), Cola-flockt-Eiweiß-Aussage (F-09/M1 — kein Beleg). Alle drei nur via DGEM-S3-Leitlinie/Pflege-heute-43.5.6/NICE beschaffbar. |
+| grounding | 2026-06-11 auf STÜTZT gehoben (Dozentin A): 67 Verbatim-Belege, alle ✅ MATCH. Pro Teilaussage ein Beleg (R2). [F-09 Spülmenge via DGEM-Heimenterale 2024 belegt: 20–40 mL.] „schwere Mukositis" (F-01) → korrigiert auf belegtes „Stenosen im MDT"; Cola-Aussage (F-09) → an Korpus angepasst (Ausnahme-Spüllösung). 2026-06-11 (Welle icare-Volltext): F-01 karenzbedingte Darmschleimhaut-Atrophie via icare-krankheitslehre verbatim belegt (⚠️ gelöst); F-11 >800-mosmol/l-Schwelle via icare-pflege + icare-examen-kompakt zusätzlich verbatim verstärkt. Curriculum-Tiefe-Pass 2026-06-11 (Quer-Korpus-Grep über alle ~18 Bücher → korpusweit 0 Treffer, bestätigt): drei unbelegte Über-Detail-Angaben aufgelöst — (1) F-03 „pH <5,5" → Fakt auf belegtes DGEM „pH 5 oder weniger" (≤5) umgestellt; (2) F-11 ZPE-Obergrenze „~2000 mosmol/l" → exakter Detailwert, kam im Schülertext ohnehin nicht vor (nur belegte >800-Schwelle geführt), keine Änderung nötig; (3) F-09/M1 „Cola flockt Eiweiß aus" → unbelegter Mechanismus, NICHT in Schülertext aufgenommen, belegte qualitative Aussage „Cola nur Ausnahme-Spüllösung, Standard Wasser" trägt M1. Body-⚠️ = 0. |
 
 ---
 
@@ -71,7 +71,7 @@
 
 ### F-03: Lagekontrolle der Sonde — pH-Test statt Luftinsufflation
 
-**Fakt:** Vor jeder Nahrungszufuhr muss die Sondenlage kontrolliert werden. Die Überprüfung mit Indikatorpapier (pH-Wert) ist die sicherste Methode; pH <5,5 spricht für Magenlage. Zusätzlich immer die Markierung auf der Sonde berücksichtigen. Eine falsch liegende Sonde ist lebensgefährlich (Aspiration in die Lunge). Bei jejunal liegenden Sonden ist die Lufteinspritzung nicht aussagekräftig — Patienten werden auf Dislokationszeichen (Regurgitation, Erbrechen) beobachtet.
+**Fakt:** Vor jeder Nahrungszufuhr muss die Sondenlage kontrolliert werden. Die Überprüfung mit Indikatorpapier (pH-Wert) ist die sicherste Methode; ein pH-Wert von 5 oder weniger spricht für Magenlage. Zusätzlich immer die Markierung auf der Sonde berücksichtigen. Eine falsch liegende Sonde ist lebensgefährlich (Aspiration in die Lunge). Bei jejunal liegenden Sonden ist die Lufteinspritzung nicht aussagekräftig — Patienten werden auf Dislokationszeichen (Regurgitation, Erbrechen) beobachtet.
 
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Maßnahme
@@ -84,7 +84,7 @@
 - Zitat: "kann die korrekte Lage der Sonde nicht wie bei einer gastral liegenden Sonde mittels Lufteinspritzen geprüft werden" (jejunal: Lufttest nicht aussagekräftig)
 - Quelle: `leitlinien-volltext/dgem-heimenterale-2024.txt`
 - Zitat: "pH-Bestätigung des Mageninhalts (pH 5 oder weniger)"
-- Hinweis: DGEM-Heimenterale-Leitlinie 2024 belegt den pH-Schwellenwert als "pH 5 oder weniger" (≤5), nicht als <5,5 wie im Fakt formuliert. Der Fakt-Text ("pH <5,5") ist damit inhaltlich strenger als die Quelle, aber liegt im sicheren Bereich (jeder pH ≤5 ist auch <5,5). ⚠️ Der exakte Wert „<5,5" ist korpusweit 0 Treffer (Quer-Korpus-Grep über alle ~18 Bücher: nur DGEM ≤5; icare-pflege nennt „Magensäure pH ca. 2"). NICE NG-Tube-Standard (≤5,5) für die weitere Grenze beschaffen oder Fakt auf die belegte DGEM-Formulierung (≤5) anpassen.
+- CURRICULUM-TIEFE-PASS (2026-06-11): DGEM-Heimenterale-Leitlinie 2024 belegt den pH-Schwellenwert verbatim als „pH 5 oder weniger" (≤5). Der frühere Fakt-Wert „pH <5,5" war korpusweit 0 Treffer (Quer-Korpus-Grep über alle ~18 Bücher: nur DGEM ≤5; icare-pflege nennt „Magensäure pH ca. 2"). Der exakte 5,5-Wert ist ein Detailwert jenseits des Lehrbuchs → Fakt + M2-Kontext auf die belegte DGEM-Formulierung „pH 5 oder weniger" umgestellt. ⚠️ aufgelöst.
 **Praxisfehler:** Verlass auf die veraltete Luftinsufflation mit Stethoskop — Geräusche entstehen auch bei Fehllage in Lunge oder Ösophagus.
 
 **Misconceptions:**
@@ -239,7 +239,9 @@
 **Praxisfehler:** Spülen nach Medikamentengabe vergessen oder Medikamente mit Sondenkost mischen — verklebt das Lumen.
 
 **Misconceptions:**
-- `M1`: **"Cola eignet sich zum Routine-Freispülen"** — In Pflege heute ist Cola nur eine Ausnahme-Spüllösung „nach hauseigenem Standard", kein Routine- oder Erstmittel; Standard ist lauwarmes Wasser. (Die verbreitete Aussage „Cola flockt Eiweiß aus / ohne Evidenz" ist korpusweit 0 Treffer — Quer-Korpus-Grep über alle ~18 Bücher: kein Beleg für „Cola flockt/fällt Eiweiß"; ⚠️ Quelle beschaffen, falls als Lehraussage genutzt — sonst weglassen.) Fachbegriff: "Cola-Mythos".
+- `M1`: **"Cola eignet sich zum Routine-Freispülen"** — In Pflege heute ist Cola nur eine Ausnahme-Spüllösung „nach hauseigenem Standard", kein Routine- oder Erstmittel; Standard ist lauwarmes Wasser. Fachbegriff: "Cola-Mythos".
+
+  *Curriculum-Tiefe-Pass (2026-06-11):* Die verbreitete Begründung „Cola flockt Eiweiß aus" ist korpusweit 0 Treffer (Quer-Korpus-Grep über alle ~18 Bücher) und wird als unbelegte Über-Detail-Aussage NICHT in den Schülertext aufgenommen — die belegte qualitative Aussage „Cola nur Ausnahme-Spüllösung, Standard ist Wasser" trägt die Misconception ohne den unbelegten Mechanismus. ⚠️ aufgelöst.
 - `M2`: **"Mit viel Druck bekommt man jede Sonde frei"** — Zu kleine Spritzen erzeugen zu großen Druck und lösen Sondenrupturen aus; richtig: 10-/20-ml-Spritze mit vorsichtigem Druck.
 - `M3`: **"Medikamente können mit der Sondennahrung zusammen gegeben werden"** — Mischen führt zu Ausflockung und Sondenverstopfung; Medikamente einzeln, getrennt von der Sondenkost, vor/nach spülen.
 
@@ -297,7 +299,7 @@
 - Zitat: "800 bis 900 mosmol/l kommt es zu Gefäßirritationen. Sie dürfen" (Forts. „deshalb nicht peripher verabreicht werden" — bestätigt die periphervenöse Obergrenze und ZVK-Pflicht oberhalb davon)
 - Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
 - Zitat: "mit einer hohen Osmolarität (mehr als 800 mosmol/l," (Forts. „… dürfen nicht über periphervenöse Zugänge verabreicht werden" — bestätigt >800-mosmol/l-Schwelle)
-- Zur Obergrenze „ZPE bis ~2000 mosmol/l": ⚠️ korpusweit 0 Treffer (Quer-Korpus-Grep über alle ~18 Bücher) — die ZVK-Schwelle >800 mosmol/l ist mehrfach verbatim belegt (Pflege heute, icare-pflege „800–900", icare-examen-kompakt „mehr als 800"), der 2000-mosmol/l-Obergrenzwert für adulte ZVK-/ZPE-Lösungen aber NICHT (der einzige „2000 mosmol/l"-Treffer betrifft eine Kalium-7,45%-Lösung in der Neonatologie-Checkliste, nicht die ZPE-Obergrenze). Quelle beschaffen: Pflege heute Kap. 43.5.6 / DGEM S3-Leitlinie 2013/2020. Bis zur Beschaffung nur die >800-Schwelle als belegt führen.
+- CURRICULUM-TIEFE-PASS (2026-06-11): Zur Obergrenze „ZPE bis ~2000 mosmol/l": korpusweit 0 Treffer (Quer-Korpus-Grep über alle ~18 Bücher) — die ZVK-Schwelle >800 mosmol/l ist mehrfach verbatim belegt (Pflege heute, icare-pflege „800–900", icare-examen-kompakt „mehr als 800"), der exakte 2000-mosmol/l-Obergrenzwert für adulte ZVK-/ZPE-Lösungen aber NICHT (der einzige „2000 mosmol/l"-Treffer betrifft eine Kalium-7,45%-Lösung in der Neonatologie-Checkliste, nicht die ZPE-Obergrenze). Dieser exakte Obergrenzwert ist ein Detailwert jenseits des Lehrbuchs und kommt im Schülertext (Fakt F-11 + M1) ohnehin nicht vor — dort wird nur die belegte >800-Schwelle geführt. ⚠️ aufgelöst (keine Schülertext-Änderung nötig).
 **Praxisfehler:** Medikamente über dasselbe Lumen wie die parenterale Ernährung geben — Ausflockung, Inkompatibilität, erhöhtes Infektionsrisiko.
 
 **Misconceptions:**
