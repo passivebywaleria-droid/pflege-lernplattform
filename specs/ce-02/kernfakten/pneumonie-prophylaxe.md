@@ -10,7 +10,7 @@
 | quellen | Pflege heute 7. Aufl. Kap. 3.5 Unterstützung der Atmung und Pneumonieprophylaxe; AWMF S3-Leitlinie Nosokomiale Pneumonie 2017 (Reg.-Nr. 020-013); RKI/KRINKO 2013; WHO 2009 |
 | einträge | 12 |
 | erstellt | 2026-06-10 (Dozentin A, quellengebunden aus bausteine-plan.md) |
-| grounding | 2026-06-11 auf STÜTZT gehoben (Dozentin A): 25 → 61 Verbatim-Belege, pro Teilaussage ein Beleg (R2). Offene ⚠️ (R3): F-09 Mikroaspirations-Term, F-10 GUSS-Instrument, F-11 KRINKO-Bündel-Attribution. `--check-file` ✅ alle 61 verifiziert. |
+| grounding | 2026-06-11 auf STÜTZT gehoben (Dozentin A): 25 → 61 Verbatim-Belege, pro Teilaussage ein Beleg (R2). R3 abgeschlossen 2026-06-11: F-09 Mikroaspiration-Term entfernt (Fakt auf gestörte Mundflora gestützt), F-10 GUSS-Referenz entfernt, F-11 Bündel-Attribution entfernt. `--check-file` ✅ alle Belege verifiziert. |
 
 ---
 
@@ -228,7 +228,6 @@
 - Zitat: "Kontrolle der Sondenlage vor Verabreichen" (deckt: Kontrolle der Sondenlage)
 - Zitat: "Bei Risikopatienten: funktionsfähiges Absauggerät bereithalten" (deckt: funktionsfähiges Absauggerät bei Risikopatienten)
 - Zitat: "Auch bei bewusstlosen und intubierten Patienten ist die" (deckt: Mundpflege auch bei nicht-essenden/zahnlosen Hochrisikopatienten wichtig — Mundpflege-Kapitel 6.7)
-- ⚠️ **Mechanismus-Term „Mikroaspiration":** Der Wirkpfad „Mundkeime → Atemwege" ist im Korpus über die Mundflora-Störung als Atemwegsinfektions-Ursache belegt (s. o.); der **spezifische Term „Mikroaspiration" als Mechanismus der Mund-Pneumonie-Verbindung ist in Pflege heute nicht verbatim vorhanden** (das Wort steht nur im Trachealkanülen-Cuff-Kontext, Z. 142669). Fakt-Formulierung daher auf „Aspiration mundständiger Keime / gestörte Mundflora" gestützt. Quelle für expliziten Mikroaspirations-Pathomechanismus beschaffen (KRINKO nosokomiale Pneumonie 2013 / Scannapieco-Reviews) **ODER** Term bei „Mikroaspiration" belassen nur als allgemeine Erläuterung.
 **Praxisfehler:** Mundpflege wird bei zahnlosen Patienten oder bei Magensonde vernachlässigt — gerade dort ist sie besonders wichtig.
 
 **Misconceptions:**
@@ -240,12 +239,12 @@
 
 ### F-10: Schluckstörung (Dysphagie) und Aspirationsgefahr
 
-**Fakt:** Eine Schluckstörung — etwa die Unfähigkeit, richtig zu kauen und zu schlucken nach Schlaganfall — ist eine zentrale Aspirations- und Pneumonieursache. Bei Verdacht gilt: keine Nahrung/Flüssigkeit, bevor vor der Nahrungsaufnahme geprüft ist, ob Husten- und Schluckreflex intakt sind (nur bei intakten Schutzreflexen darf der Patient essen/trinken); bei bestätigter Dysphagie angepasste Kost-/Flüssigkeitskonsistenz (z.B. dickflüssige Kost, Andickungsmittel) und aufrechte Esshaltung mit anschließendem aufrechten Sitzen zur Aspirationsprophylaxe. Risikozeichen: häufiges Verschlucken/Husten und Würgen, gurgelnde Sprache/Stimmverschlechterung, Speisereste in den Wangentaschen. ⚠️ Quelle beschaffen (Trapl et al. 2007 / GUSS-Originalarbeit): Das konkret benannte Screening-Instrument **GUSS-Test** ist im lokalen Korpus nicht belegt — Pflege heute beschreibt die strukturierte Reflexprüfung, aber nicht das GUSS-Verfahren namentlich.
+**Fakt:** Eine Schluckstörung — etwa die Unfähigkeit, richtig zu kauen und zu schlucken nach Schlaganfall — ist eine zentrale Aspirations- und Pneumonieursache. Bei Verdacht gilt: keine Nahrung/Flüssigkeit, bevor vor der Nahrungsaufnahme geprüft ist, ob Husten- und Schluckreflex intakt sind (nur bei intakten Schutzreflexen darf der Patient essen/trinken); bei bestätigter Dysphagie angepasste Kost-/Flüssigkeitskonsistenz (z.B. dickflüssige Kost, Andickungsmittel) und aufrechte Esshaltung mit anschließendem aufrechten Sitzen zur Aspirationsprophylaxe. Risikozeichen: häufiges Verschlucken/Husten und Würgen, gurgelnde Sprache/Stimmverschlechterung, Speisereste in den Wangentaschen.
 
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Entscheidung
 **Bloom-Potential:** 5 (Bewerten, Entscheiden)
-**Primärquelle:** (Pflege heute 7. Aufl. Kap. 3.5/7.11; AWMF S3 2017; GUSS: Trapl et al. 2007 — ⚠️ lokal nicht verifizierbar)
+**Primärquelle:** (Pflege heute 7. Aufl. Kap. 3.5/7.11; AWMF S3 2017)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Hat der Patient Schluckstörungen, oder ist sein Bewusstsein eingeschränkt?"
@@ -279,7 +278,6 @@
 - Zitat: "Einhalten der Basishygiene" (deckt: Basishygiene)
 - Zitat: "Hygienisch korrektes Verhalten" (deckt: korrektes Verhalten bei Absaugen/Intubation/O2-/Inhalationstherapie)
 - Zitat: "Richtlinien zur Krankenhaushygiene zu erstellen" (deckt: KRINKO-Auftrag = Krankenhaushygiene-Richtlinien)
-- ⚠️ **Teilaussage „KRINKO empfiehlt diese Maßnahmen als Bündel":** Pflege heute listet die Hygienemaßnahmen für die Prophylaxe der nosokomialen Pneumonie gemeinsam auf, **attribuiert aber keine ausdrückliche „Bündel"-Empfehlung an die KRINKO** für die nosokomiale Pneumonie. Die explizite Bündel-Strategie (care bundle) wurde daher aus dem Fakt entfernt und auf „wirken zusammen" entschärft. Quelle beschaffen für KRINKO-Bündel-Empfehlung (KRINKO-Empfehlung „Prävention der nosokomialen beatmungsassoziierten Pneumonie" 2013, Bundesgesundheitsbl.), falls die Bündel-Aussage wieder aufgenommen werden soll.
 **Praxisfehler:** Händedesinfektion nach dem Absaugen wird oft vergessen — hohes Übertragungsrisiko.
 
 **Misconceptions:**

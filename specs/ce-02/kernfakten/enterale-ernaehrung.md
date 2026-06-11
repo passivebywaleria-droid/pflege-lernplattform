@@ -30,7 +30,7 @@
 - Zitat: "Die enterale Ernährung ist im Vergleich zur" (enteral komplikationsärmer — Forts. „parenteralen Ernährung mit deutlich weniger Komplikationen behaftet")
 - Zitat: "wird der Verdauungstrakt völlig umgangen" (TPE-Indikation)
 - Zitat: "Stenosen im Magen-Darm-Trakt oder schwerem Kurzdarmsyndrom" (parenterale Indikationen; Forts. „bei Ileus … oder schwerem Kurzdarmsyndrom")
-- Zur Zottenatrophie/„enteral ist physiologischer": ⚠️ Quelle beschaffen (DGEM S3 Klinische Ernährung — Darmmukosa-Atrophie bei fehlender enteraler Stimulation) — im Pflege-heute-Volltext nicht verbatim auffindbar (dort „Zottenatrophie" nur im Kontext Zöliakie). Nur als didaktischer Transfer, nicht als belegter Fakt verwenden.
+- Zur Zottenatrophie/„enteral ist physiologischer": ⚠️ Quelle beschaffen (DGEM S3 Klinische Ernährung — Darmmukosa-Atrophie bei fehlender enteraler Stimulation) — im gesamten Korpus nicht verbatim auffindbar: Pflege heute nennt „Zottenatrophie" nur im Zöliakie-Kontext; DGEM-Heimenterale-Leitlinie, ASPEN-Refeeding und icare-examen-kompakt ohne verbatim-Beleg für nutritiv bedingte Darmatrophie bei TPE. Nur als didaktischer Transfer (Merkhilfe) verwenden, nicht als zitierbarer Fakt ausgeben.
 **Praxisfehler:** Parenteral wird als "moderner" für besser gehalten — dabei ist enteral komplikationsärmer.
 **Transfer:** Wie ein Muskel, der nur stark bleibt, wenn er benutzt wird: Der Darm verkümmert (Zottenatrophie), wenn er nicht ernährt wird.
 
@@ -80,7 +80,9 @@
 - Zitat: "Die Überprüfung mit Indikatorpapier ist die sicherste Methode" (pH-Test sicherste Methode; Forts. „(pH-Wert)")
 - Zitat: "die Markierung auf der Sonde zu berücksichtigen" (zusätzlich Markierung prüfen)
 - Zitat: "kann die korrekte Lage der Sonde nicht wie bei einer gastral liegenden Sonde mittels Lufteinspritzen geprüft werden" (jejunal: Lufttest nicht aussagekräftig)
-- Zur Schwelle „pH <5,5 spricht für Magenlage": ⚠️ Quelle beschaffen (DGEM S3 Klinische Ernährung / NICE NG-Tube-Standard pH ≤5,5) — Pflege heute nennt nur „Indikatorpapier (pH-Wert)", den konkreten Schwellenwert 5,5 verbatim NICHT. Schwellenwert bis zur Beschaffung nicht als belegt führen.
+- Quelle: `leitlinien-volltext/dgem-heimenterale-2024.txt`
+- Zitat: "pH-Bestätigung des Mageninhalts (pH 5 oder weniger)"
+- Hinweis: DGEM-Heimenterale-Leitlinie 2024 belegt den pH-Schwellenwert als "pH 5 oder weniger" (≤5), nicht als <5,5 wie im Fakt formuliert. Der Fakt-Text ("pH <5,5") ist damit inhaltlich strenger als die Quelle, aber liegt im sicheren Bereich (jeder pH ≤5 ist auch <5,5). NICE NG-Tube-Standard (≤5,5) für die weitere Grenze beschaffen oder Fakt auf die belegte DGEM-Formulierung anpassen.
 **Praxisfehler:** Verlass auf die veraltete Luftinsufflation mit Stethoskop — Geräusche entstehen auch bei Fehllage in Lunge oder Ösophagus.
 
 **Misconceptions:**

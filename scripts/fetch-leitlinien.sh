@@ -55,6 +55,22 @@ get "https://register.awmf.org/assets/guidelines/063-003l_S3_Insomnie-bei-Erwach
 # DGEM S3-Leitlinie Heimenterale/-parenterale Ernaehrung 2024 (AWMF 073-021) — belegt
 # enterale-ernaehrung F-09 (Routine-Spuelmenge 20-40 mL nach Medikamentengabe).
 get "https://register.awmf.org/assets/guidelines/073-021l_S3_Heimenterale-heimparenterale-Ernaehrung__2024-05.pdf" "dgem-heimenterale-2024"
+
+# WHO Guideline Sugars intake for adults and children 2015 — belegt ernaehrungsgrundlagen
+# (freie Zucker <10 %, konditional <5 % der Energiezufuhr). Bitstream-API, da
+# iris.who.int/bitstream/handle/... HTTP 500 liefert.
+get "https://iris.who.int/server/api/core/bitstreams/4be74f01-de93-4596-bbd1-02a97afb1221/content" "who-zucker-2015"
+# AWMF S1 Neurogene Dysphagie 030-111 (Stand 2020, formal abgelaufen 2025-03 — letzte
+# publizierte Fassung; Nachfolger noch nicht erschienen). Belegt Dysphagie-Claims in
+# essen-anreichen/ernaehrung.
+get "https://register.awmf.org/assets/guidelines/030-111l_Neurogene-Dysphagie_2025-03_abgelaufen.pdf" "awmf-dysphagie"
+# Pflege-Charta (BMBFSFJ) — Charta der Rechte hilfe- und pflegebeduerftiger Menschen,
+# Artikel 1-8 (Selbstbestimmung, Privatheit etc.).
+get "https://www.bmbfsfj.bund.de/resource/blob/93450/be474bfdb4016bbbca9bf87b4cb9264b/charta-der-rechte-hilfe-und-pflegebeduerftiger-menschen-data.pdf" "pflege-charta"
+# § 1827 BGB (Patientenverfuegung, frueher § 1901a) — belegt essen-anreichen F-09.
+getlaw "https://www.gesetze-im-internet.de/bgb/__1827.html" "bgb-1827"
+# § 1831 BGB (FeM/Unterbringung, frueher § 1906) — belegt positionierung F-12 + sturz F-08.
+getlaw "https://www.gesetze-im-internet.de/bgb/__1831.html" "bgb-1831"
 # Weitere frei verfügbare Quellen hier ergänzen (siehe specs/QUELLEN-EINKAUFSLISTE-2026-06-10.md Abschnitt A/B):
 # get "<DGE D-A-CH Referenzwerte>" "dge-referenzwerte"
 # get "<ESPEN/DGEM Klinische Ernaehrung>" "espen-klinische-ernaehrung"

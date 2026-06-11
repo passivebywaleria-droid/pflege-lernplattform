@@ -7,8 +7,8 @@
 | cluster | D (Ernährung & Flüssigkeit) |
 | geschätzteUE | 8 |
 | wissensart | handlung |
-| quellen | Pflege heute 7. Aufl. Kap. 7 Ernährung (verbatim-belegt); DNQP Expertenstandard Ernährungsmanagement 1. Aktual. 2017/2024; DGE/ÖGE/SGE D-A-CH-Referenzwerte (Erläuterungen, lokaler Extrakt — Einzelnährstoff-Tabellen NICHT enthalten); I Care Pflegeexamen kompakt (Thieme, verbatim-belegt); Prüfungswissen Pflegefachfrau (Elsevier, verbatim-belegt); Hoehl/Kullick Kinderkrankenpflege 5. Aufl. (verbatim-belegt); WHO 2015 Sugars intake (⚠️ noch zu beschaffen); Atwater 1899 |
-| grounding-stand | 2026-06-11, zweite Überarbeitung. Neue Korpora (icare-examen-kompakt, pruefungswissen, kinderkrankenpflege) integriert. Aufgelöste ⚠️: F-01 Makro-/Mikronährstoff-Terminologie, F-04 0,8–1 g/kgKG Protein-Referenz + Senioren-Erhöhung, F-08 Vitamin-D-Synthese (Haut-Vorstufe + UV), F-09 Mengenelemente/Spurenelemente-Definition nach Körpertrockenmasse, F-09/M1 Jod-Richtwert, F-10 +500 ml/°C Fieber, F-10 1,5-l-Trinkmenge, F-12 DGE-Prozentwerte Erwachsene. Verbleibende ⚠️ (DGE-Tool erforderlich): WHO Zucker <10%/<5% (F-02), Gehirn 120 g Glukose (F-02), gesättigte FA <10% (F-03), 20 µg/800 IE Vitamin-D-Referenzwert (F-08), +700 ml Stillen (F-10). |
+| quellen | Pflege heute 7. Aufl. Kap. 7 Ernährung (verbatim-belegt); DNQP Expertenstandard Ernährungsmanagement 1. Aktual. 2017/2024; DGE/ÖGE/SGE D-A-CH-Referenzwerte (Erläuterungen, lokaler Extrakt — Einzelnährstoff-Tabellen NICHT enthalten); I Care Pflegeexamen kompakt (Thieme, verbatim-belegt); Prüfungswissen Pflegefachfrau (Elsevier, verbatim-belegt); Hoehl/Kullick Kinderkrankenpflege 5. Aufl. (verbatim-belegt); WHO 2015 Guideline Sugars intake (verbatim-belegt, leitlinien-volltext); Atwater 1899 |
+| grounding-stand | 2026-06-11, zweite Überarbeitung. Neue Korpora (icare-examen-kompakt, pruefungswissen, kinderkrankenpflege) integriert. Aufgelöste ⚠️: F-01 Makro-/Mikronährstoff-Terminologie, F-04 0,8–1 g/kgKG Protein-Referenz + Senioren-Erhöhung, F-08 Vitamin-D-Synthese (Haut-Vorstufe + UV), F-09 Mengenelemente/Spurenelemente-Definition nach Körpertrockenmasse, F-09/M1 Jod-Richtwert, F-10 +500 ml/°C Fieber, F-10 1,5-l-Trinkmenge, F-12 DGE-Prozentwerte Erwachsene. 2026-06-11 (2): WHO Zucker <10%/<5% (F-02) via who-zucker-2015.txt verbatim aufgelöst. Verbleibende ⚠️ (DGE-Tool erforderlich): Gehirn 120 g Glukose (F-02), gesättigte FA <10% (F-03), 20 µg/800 IE Vitamin-D-Referenzwert (F-08), +700 ml Stillen (F-10), Ballaststoffe ≥30 g (F-06). |
 | einträge | 16 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
 
@@ -48,23 +48,25 @@
 ### F-02: Kohlenhydrate — Energiegehalt und Anteil
 
 **Fakt:** Kohlenhydrate sind die Hauptenergiequelle des Körpers. Energiewert: **4 kcal pro Gramm** (Atwater; Pflege heute: 4,1 kcal/17,2 kJ). Empfohlener Anteil an der täglichen Nahrungsaufnahme: **55–60%** (Pflege heute Kap. 7; DGE qualitativ: KH liefern >50% der Energie), Schwerpunkt auf komplexen Kohlenhydraten mit Ballaststoffen. Einteilung nach Kettenlänge: Mono-, Di-, Polysaccharide. Glukose ist der Hauptenergielieferant; vor allem die Gehirnzellen können nur Glukose verbrennen. Der Körper kann nur 300–500 g Glukose (als Glykogen) speichern.
-⚠️ Quelle beschaffen (WHO 2015 Sugars intake / DGE D-A-CH Referenzwerte-Tool): Die WHO-Empfehlung **freier Zucker <10%, besser <5% der Tagesenergie** ist im lokalen Korpus (Pflege heute, DGE-Extrakte) NICHT belegt.
 ⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool): Die konkrete Zahl **Gehirn verbraucht ca. 120 g Glukose/Tag** ist im Korpus nicht verbatim belegt (Pflege heute belegt nur qualitativ „nur Glukose verbrennen" + Speicherkapazität 300–500 g).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Bloom-Potential:** 2 (Verstehen)
-**Primärquelle:** (Pflege heute Kap. 7; Atwater 1899; WHO-Zucker + 120-g-Gehirnglukose: ⚠️ lokal nicht verifizierbar)
+**Primärquelle:** (Pflege heute Kap. 7; Atwater 1899; WHO 2015 Guideline Sugars intake; 120-g-Gehirnglukose: ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "1 g Kohlenhydrate liefert 4,1 kcal (17,2 kJ)"
 - Zitat: "Täglicher Bedarf: 55–60 % der Gesamtnahrungsaufnahme"
 - Zitat: "Vor allem die Zellen des Gehirns können nur Glukose verbrennen"
 - Zitat: "der menschliche Körper kann nur 300–500 g Glukose speichern"
+- Quelle: `leitlinien-volltext/who-zucker-2015.txt`
+- Zitat: "In both adults and children, WHO recommends reducing the intake of free sugars to less than 10% of total energy intake"
+- Zitat: "WHO suggests a further reduction of the intake of free sugars to below 5% of total energy intake (conditional recommendation"
 **Praxisfehler:** Kohlenhydrate pauschal als "Dickmacher" weglassen statt komplexe KH (Vollkorn, Hülsenfrüchte) zu bevorzugen.
 
 **Misconceptions:**
-- `M1`: **"Obst enthält schädlichen Zucker wie Haushaltszucker"** — Es wird unterschieden zwischen freiem Zucker (Haushaltszucker, Saft, Honig) und Zucker in ganzen Früchten (mit Ballaststoffen, Vitaminen), der anders zu bewerten ist. Fachbegriff: "Fruchtzucker-Irrtum". (WHO-Schwelle freier Zucker <10%/<5%: ⚠️ siehe Fakt-Hinweis, WHO-/DGE-Quelle.)
+- `M1`: **"Obst enthält schädlichen Zucker wie Haushaltszucker"** — Es wird unterschieden zwischen freiem Zucker (Haushaltszucker, Saft, Honig) und Zucker in ganzen Früchten (mit Ballaststoffen, Vitaminen), der anders zu bewerten ist. Fachbegriff: "Fruchtzucker-Irrtum". (WHO-Schwelle freier Zucker <10%/<5%: verbatim belegt, WHO 2015 — siehe Beleg-Block F-02.)
 - `M2`: **"Kohlenhydrate soll man weglassen, weil sie dick machen"** — Kohlenhydrate sollen mit 55–60% den größten Nahrungsanteil stellen (Pflege heute). Dick macht eine positive Energiebilanz, nicht KH an sich. Fachbegriff: "Low-Carb-Mythos".
 - `M3`: **"Ballaststoffe sind Kohlenhydrate, die viel Energie liefern"** — Ballaststoffe sind Polysaccharide, aber für den Menschen unverdaulich und liefern fast keine Energie.
 

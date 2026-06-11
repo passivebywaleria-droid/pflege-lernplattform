@@ -7,7 +7,7 @@
 | cluster | B (Mobilität & Prophylaxen) |
 | geschätzteUE | 3 |
 | wissensart | handlung |
-| quellen | Pflege heute Kap. 9.7 Kontrakturprophylaxe + Kap. 29.4 (Funktionsstellung/Lagerung); I Care Pflege Kap. 17.8 (Thieme 2020); DNQP Expertenstandard Mobilität 2020 (kap-16); MDS Pflege-Qualitätsbericht 2018; Gnass et al. 2010; Sackley et al. 2008; Bobath 1990; ⚠️ noch zu beschaffen: Bundesärztekammer/AAOS Neutral-Null-Methode (Mess-Definition + gelenkspezifische Funktionsstellungswinkel) |
+| quellen | Pflege heute Kap. 9.7 Kontrakturprophylaxe + Kap. 29.4 (Funktionsstellung/Lagerung); I Care Pflege Kap. 17.8 (Thieme 2020); DNQP Expertenstandard Mobilität 2020 (kap-16); MDS Pflege-Qualitätsbericht 2018; Gnass et al. 2010; Sackley et al. 2008; Bobath 1990; Paetz Chirurgie 23. Aufl. Kap. 32 (Neutral-Null-Methode + Funktionsstellung Gelenke) |
 | einträge | 9 |
 | erstellt | 2026-06-10 (Pipeline v9) |
 
@@ -76,9 +76,16 @@
 - Quelle: `icare-index/kap-57.md` (Funktionsstellung-Ignorieren fördert Kontrakturen; Neutral-Null bei Hemiplegie)
 - Zitat: "tionsstellung der Gelenke" ✅ MATCH (im Quelltext zeilenumbrochen "Funk-\ntionsstellung der Gelenke ignoriert wird")
 - Zitat: "hemiplegischen Arm im Liegen eng am Körper bzw. im Sitzen in Neutral-Null-Stellung nach Bobath positionieren" ✅ MATCH
-**⚠️ Quelle beschaffen (AAOS / Bundesärztekammer Neutral-Null-Methode):** Die allgemeine Aussage „Neutral-Null-Methode (AAOS-Standard) definiert für jedes Gelenk eine Ausgangsstellung, von der aus in Grad gemessen wird" ist im Korpus NICHT verbatim belegbar — im Korpus erscheint Neutral-Null nur als Hemiplegie-Positionierung nach Bobath (I Care kap-57). Für die Mess-Definition Primärquelle beschaffen (AAOS/Bundesärztekammer) ODER Claim auf den belegten Hemiplegie-Bezug reduzieren.
-**⚠️ Quelle beschaffen (gelenkspezifische Funktionsstellungswinkel):** Die konkreten Winkel als Funktionsstellungs-Set (Ellenbogen 90°, Knie 0° gestreckt, oberes Sprunggelenk 90°, Schulter leicht abduziert + außenrotiert) sind im Korpus nicht als zusammenhängende, gelenk-zugeordnete Funktionsstellungs-Prosa belegbar. Im Korpus belegbar sind nur Einzel-Winkel in anderem Kontext: "Der Ellenbogen ist 90° gebeugt" (✅ MATCH, aber Kap. 29 Gilchrist-Verband, NICHT Funktionsstellung) und "90°-Winkel im Sprunggelenk (zur Spitzfußprophylaxe)" (✅ MATCH, Kap. 29 Schienen-Lagerung). Funktionsstellungs-Winkel je Gelenk → Standard-Quelle (AAOS / Lehrbuch Orthopädie) beschaffen ODER Winkel-Liste entfernen. „Schulter abduziert + außenrotiert" ist im Korpus gar nicht belegbar.
-**Praxisfehler:** Annahme "Funktionsstellung = so weit strecken wie möglich" — falsch, sie ist gelenk-spezifisch (Ellenbogen 90° gebeugt, Knie 0° gestreckt). ⚠️ gelenkspezifische Winkel siehe Quellen-Hinweis oben.
+- Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`
+- Zitat: "Die Gelenkfunktionen werden international nach der Neutral-Null-Methode untersucht und dokumentiert"
+- Zitat: "Die Neutral-Null-Stellung entspricht der Körperhaltung, die ein gesunder Mensch im aufrechten Stand mit hängenden Armen und nach vorn gerichteten Daumen sowie parallel stehenden Füßen einnimmt"
+- Zitat: "in Funktionsstellung (Gebrauchsstellung) fixiert"
+- Zitat: "Ellenbogen 90°"
+- Zitat: "wird das Sprunggelenk grundsätzlich in der Neutral-Null-Stellung"
+
+> ⚠️ Claim entschärft (Schulterwinkel): „Schulter leicht abduziert + außenrotiert" als Funktionsstellungswinkel ist im Paetz-Volltext NICHT verbatim belegt. Dieser Gelenkwinkel bis zur lokalen Verfügbarkeit einer Orthopädie-/Reha-Quelle nicht als konkrete Gradzahl behaupten.
+
+**Praxisfehler:** Annahme "Funktionsstellung = so weit strecken wie möglich" — falsch, sie ist gelenk-spezifisch. Laut Paetz Kap. 32 (Pflegepraxis): Ellenbogen 90° gebeugt, Sprunggelenk in Neutral-Null.
 **Transfer:** [Transfer] Wenn ein Gelenk versteifen müsste: in welcher Stellung kann der Patient noch essen, greifen, stehen?
 
 **Misconceptions:**
@@ -115,7 +122,7 @@
 
 ### F-05: Risikogruppen & Ursachen
 
-**Fakt:** Die Entstehung von Kontrakturen ist multifaktoriell bedingt und oft Sekundärerscheinung vieler Krankheiten. Hochrisikogruppen: Schlaganfall (Hemiplegie), Intensivpatienten (Sedierung, Beatmung), Demenz, Parkinson (Rigor), fixierte Patienten (FeM § 1906a BGB), multimorbide Pflegeheimbewohner, Z.n. Mammaablatio, Kinder mit Zerebralparese. Prävalenz: 15-70 % älterer Krankenhauspatienten (Gnass 2010), 59,1 % ambulant Pflegebedürftiger (MDS 2018).
+**Fakt:** Die Entstehung von Kontrakturen ist multifaktoriell bedingt und oft Sekundärerscheinung vieler Krankheiten. Hochrisikogruppen: Schlaganfall (Hemiplegie), Intensivpatienten (Sedierung, Beatmung), Demenz, Parkinson (Rigor), fixierte Patienten (FeM, § 1831 Abs. 4 BGB; bis 2022: § 1906 Abs. 4 BGB a.F.), multimorbide Pflegeheimbewohner, Z.n. Mammaablatio, Kinder mit Zerebralparese. Prävalenz: 15-70 % älterer Krankenhauspatienten (Gnass 2010), 59,1 % ambulant Pflegebedürftiger (MDS 2018).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
@@ -130,11 +137,13 @@
 - Zitat: "leiden 15–70 % der älteren Krankenhauspatien-" ✅ MATCH (Gnass et al. 2010; Forts.: "ten in Deutschland unter Kontrakturen")
 - Zitat: "59,1 % der älteren pflegebedürftigen Menschen" ✅ MATCH (MDS 2018; im Quelltext: "Im ambulanten Be-" / "reich sind 59,1 % ...")
 - Zitat: "Bei Schlaganfallbetroﬀenen tritt eine Kontraktur häufiger" ✅ MATCH (Sackley et al. 2008; Forts.: "auf als ein Sturz")
+- Quelle: `leitlinien-volltext/bgb-1831.txt`
+- Zitat: "Bürgerliches Gesetzbuch (BGB) § 1831 Freiheitsentziehende Unterbringung und freiheitsentziehende Maßnahmen" — aktuelle FeM-Rechtsgrundlage (seit 1.1.2023; SACHKORREKTUR: vorher fälschlich „§ 1906a BGB" — diese Norm regelte ärztliche Zwangsmaßnahmen und ist aufgehoben)
 **Praxisfehler:** Annahme "nur bewegungsunfähige Patienten brauchen Prophylaxe" — schon eine Reduktion des gewohnten Bewegungsradius reicht.
 **Transfer:** [Transfer] Wer früher spazieren ging und jetzt nur noch sitzt, ist bereits gefährdet — weniger Bewegung als früher = Risiko.
 
 **Misconceptions:**
-- `M1`: **"Fixierung schützt vor Stürzen UND Kontrakturen"** — Fixierung reduziert Bewegung und kann selbst Kontrakturen verursachen. FeM (§ 1906a BGB) brauchen strenge Indikation und richterliche Genehmigung. Fachbegriff: "Fixierungs-Schutzmythos".
+- `M1`: **"Fixierung schützt vor Stürzen UND Kontrakturen"** — Fixierung reduziert Bewegung und kann selbst Kontrakturen verursachen. FeM (§ 1831 Abs. 4 BGB; bis 2022: § 1906 Abs. 4 BGB a.F.) brauchen strenge Indikation und richterliche Genehmigung. Fachbegriff: "Fixierungs-Schutzmythos".
 - `M2`: **"Nur bewegungsunfähige Patienten brauchen Kontrakturprophylaxe"** — Schon die Reduktion des gewohnten Bewegungsradius reicht (MDS 2018: 59 % ambulant Pflegebedürftiger gefährdet). Fachbegriff: "Vollmobilitäts-Mythos".
 - `M3`: **"Bei Schlaganfall verursacht die Lähmung die Kontraktur — Pflege kann nichts tun"** — Bobath-Positionierung, frühe Mobilisation und passive Bewegung sind wirksam; Kontrakturen treten bei Schlaganfallbetroffenen häufiger auf als Stürze (Sackley 2008). Fachbegriff: "Ohnmachts-Irrtum".
 
@@ -195,7 +204,7 @@
 
 ### F-08: Aktive, assistive, passive Bewegung
 
-**Fakt:** Drei Bewegungsarten nach Indikation: Aktiv = Patient bewegt selbst (wach, kooperativ, kräftig). Assistiv = Patient bewegt mit, Pflege unterstützt (Schwäche, Erschöpfung, teilweise Lähmung). Passiv = Pflege bewegt allein, ohne aktive Mitarbeit des Patienten (Bewusstlose, sedierte Intensivpatienten, vollständige Lähmung, Koma). Passiv wird langsam und unter leichtem Zug bewegt, ein Gelenk gleichzeitig. Regeln für alle: schmerzfrei, physiologisch, angekündigt; bei Hemiplegie Bobath-Prinzip.
+**Fakt:** Drei Bewegungsarten nach Indikation: Aktiv = Patient bewegt selbst (wach, kooperativ, kräftig). Assistiv = Patient bewegt mit, Pflege unterstützt (Schwäche, Erschöpfung, teilweise Lähmung). Passiv = Pflege bewegt allein, ohne aktive Mitarbeit des Patienten (Bewusstlose, sedierte Intensivpatienten, vollständige Lähmung, Koma). Passiv wird gezielt, langsam und unter leichtem Zug bewegt — jeweils das gefährdete Gelenk. Regeln für alle: schmerzfrei, physiologisch, angekündigt; bei Hemiplegie Bobath-Prinzip.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Entscheidung
@@ -212,7 +221,8 @@
 - Quelle: `icare-index/kap-57.md` (oberstes Gebot Bewegung — jedes Gelenk durchbewegen)
 - Zitat: "Gelenk, das nicht aus medizinischen Gründen ruhiggestellt" ✅ MATCH (im Quelltext zeilenumbrochen "Jedes\nGelenk, das nicht aus medizinischen Gründen ruhiggestellt\nsein muss, aktiv oder passiv durchbewegen")
 - Zitat: "aktiv oder passiv durchbewegen" ✅ MATCH
-**⚠️ Quelle beschaffen / Claim entschärfen ("ein Gelenk gleichzeitig"):** Die Teilaussage „ein Gelenk gleichzeitig" (jeweils nur ein Gelenk passiv bewegen) ist im gesamten Korpus NICHT belegbar. Pflege heute belegt nur „Die jeweils gefährdeten Gelenke sollten langsam und unter leichtem Zug ... bewegt werden" (✅ MATCH), nicht „eines gleichzeitig". → Primärquelle beschaffen (z. B. Lehrbuch Bewegungsübungen) ODER Formulierung entfernen/auf „gezielt, langsam, ein gefährdetes Gelenk nach dem anderen" stützen, sofern Quelle das deckt.
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die jeweils gefährdeten Gelenke sollten langsam und unter leichtem Zug"
 **Praxisfehler:** Bei Komapatienten nur einmal pro Woche durchbewegen — empfohlen sind mehrmals täglich, integriert in jede Lagerung und Waschung.
 **Transfer:** [Transfer] Du wählst die Bewegungsart wie das richtige Werkzeug — nach dem Zustand des Patienten.
 

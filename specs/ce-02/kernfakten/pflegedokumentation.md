@@ -29,7 +29,8 @@
 - Zitat: "Bereits in den 1970er-Jahren hat auch der" / "Gesetzgeber die Bedeutung einer exakten" / "Dokumentation erkannt und inzwischen alle Einrichtungen des Gesundheitswesens" / "durch verschiedene Vorschriften in Sozialgesetzbüchern und im Pflegeberufegesetz" / "zur Dokumentation verpflichtet" (gesetzliche Pflicht, keine freiwillige Zusatzaufgabe — belegt über SGB/Pflegeberufegesetz)
 - Quelle: `leitlinien-volltext/bgb-630f.txt`
 - Zitat: "Der Behandelnde ist verpflichtet, zum Zweck der Dokumentation in unmittelbarem zeitlichen Zusammenhang mit der Behandlung eine Behandlungsakte in Papierform oder elektronisch zu führen." (§ 630f Abs. 1 S. 1 BGB — Dokumentationspflicht des Behandelnden, gesetzliche Pflicht)
-- ⚠️ BLEIBT — der Praxisleitsatz "Was nicht dokumentiert ist, gilt als nicht durchgeführt" ist KEIN Gesetzeswortlaut (steht nicht in § 630f BGB) und im Korpus nicht verbatim belegt. Er ist eine didaktische Merkregel, die die Beweislastumkehr-Folge zuspitzt — im Schüler-Content als solche kennzeichnen (nicht als Zitat/Rechtsnorm ausgeben). Verbatim-Beleg nur über juristische Kommentierung beschaffbar.
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Als Merksatz gilt: „Was nicht dokumentiert ist, wurde nicht gemacht"." (Kap. 3.6.1 — Merke-Box: didaktischer Merksatz, kein Gesetzeswortlaut; im Schüler-Content entsprechend kennzeichnen)
 **Praxisfehler:** Dokumentation wird als lästige Bürokratie statt als rechtliche Absicherung gesehen — und im Stress weggelassen.
 
 **Misconceptions:**
@@ -83,7 +84,9 @@
 - Zitat: "Nach jedem erfolgten Sturz, auch wenn" / "der Gestürzte keine Verletzungen hat," / "fertigen Pflegende ein Protokoll an" (Besonderheiten: Stürze werden protokolliert)
 - Quelle: `leitlinien-volltext/bgb-630f.txt`
 - Zitat: "sämtliche aus fachlicher Sicht für die derzeitige und künftige Behandlung wesentlichen Maßnahmen und deren Ergebnisse aufzuzeichnen, insbesondere die Anamnese, Diagnosen, Untersuchungen, Untersuchungsergebnisse, Befunde, Therapien und ihre Wirkungen, Eingriffe und ihre Wirkungen, Einwilligungen und Aufklärungen." (§ 630f Abs. 2 BGB — gesetzliche Pflichtinhalte: wesentliche Maßnahmen + Ergebnisse, Anamnese, Diagnosen, Untersuchungen, Untersuchungsergebnisse, Befunde, Therapien + Wirkungen, Eingriffe + Wirkungen, Einwilligungen, Aufklärungen)
-- ⚠️ BLEIBT — die Teilaussagen "Haut" (Pflege heute listet "Wundverhältnisse, Aussehen", § 630f Abs. 2 nennt "Haut" NICHT namentlich), "Abweichungen von der Planung" als eigenständiger Dokumentations-Inhalt (im Korpus nur im Kontext der Charting-by-Exception-Formulare, in § 630f nicht genannt) und "Unfälle" (im Korpus nur Sturzereignisprotokoll, § 630f nennt keinen generischen Unfall-Begriff) sind weiterhin nicht verbatim als Pflichtinhalte belegt. § 630f Abs. 2 deckt die o. g. Inhalte, NICHT diese drei Begriffe — daher nicht mit dem Paragraphen kaschieren. Beleg z. B. Dokumentations-Leitfaden beschaffen oder Teilaussagen auf die belegten Inhalte reduzieren.
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die Dokumentation der Hautsituation eines Menschen erfordert bei Abweichungen vom Normalzustand eine genaue Beschreibung der Veränderung und ihrer Lokalisation." (Hautzustand als eigenständiger Dokumentations-Inhalt)
+- ⚠️ BLEIBT (2 Sub-Claims) — "Abweichungen von der Planung" als eigenständiger Dokumentations-Pflichtinhalt ist im Korpus nur im Kontext der Charting-by-Exception-Formulare belegt, nicht als allgemeiner Pflichtinhalt; "Unfälle" als generischer Begriff ist nicht verbatim — nur Sturzereignisprotokoll. Teilaussagen auf die belegten Inhalte reduzieren oder Leitfaden beschaffen.
 **Praxisfehler:** Wertungen ("Patient ist unkooperativ") statt beobachtbarer Fakten ("verweigerte die Mobilisation mit den Worten...").
 
 **Misconceptions:**
@@ -108,7 +111,9 @@
 - Zitat: "um Eintragungen in den Pflegebericht, in" / "dem Tatsächliches festgehalten wird" (sachlich = nur Tatsächliches)
 - Zitat: "alle Beobachtungen möglichst zeitnah und" / "eindeutig, d. h., unverfälscht von anderen" (zeitnah + eindeutig/unverfälscht)
 - Zitat: "Eintragungen in den Pflegebericht, in" / "dem Tatsächliches festgehalten wird" (sachlich = nur Tatsächliches, nicht Spekulation)
-- ⚠️ Quelle beschaffen (konkrete Primärquelle) — Teilaussagen "wertfrei (keine Persönlichkeitsurteile)" und "in der Ich-Form" sind im Korpus nicht verbatim belegt; Beleg z. B. BGB § 630f-Kommentierung / Dokumentations-Leitfaden beschaffen oder Teilaussage entschärfen. (Fachlich korrekt, aber laut hoher Latte nicht als belegt ausweisbar.)
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "wertfreie Beschreibung" (Kap. 3.6.2 — Anforderungen an die Dokumentation; steht als eigenständiger Bullet in der Liste der Dokumentationsanforderungen)
+- ⚠️ BLEIBT (1 Sub-Claim) — "in der Ich-Form" ist im Korpus nicht verbatim als Anforderung für den Pflegebericht belegt. Teilaussage entschärfen oder konkreten Dokumentations-Leitfaden beschaffen.
 **Praxisfehler:** Persönlichkeitsurteile ("stur", "schwierig") und Passiv-Formulierungen ("wurde mobilisiert"), die verschleiern, wer gehandelt hat.
 
 **Misconceptions:**
@@ -160,7 +165,9 @@
 - Zitat: "Das Strukturmodell des BMG baut auf" (Strukturmodell-Grundlage)
 - Zitat: "einem vierphasigen Pflegeprozess auf" (vierphasiger Pflegeprozess)
 - Zitat: "hebt die Personenzentrierung" (Personenzentrierung)
-- ⚠️ Quelle beschaffen / entschärfen — die Jahresangabe "seit 2016" ist im Korpus nicht verbatim belegt (Pflege heute schreibt nur "bereits von vielen Pflegeeinrichtungen verwendet" ohne Jahr). Beleg z. B. BMG-Abschlussbericht Strukturmodell oder Jahresangabe entfernen. Die Bestandteile SIS / Maßnahmenplan / Berichteblatt / Evaluation sind in Pflege heute Kap. 1.10.4 fachlich beschrieben, aber nicht als geschlossene Vier-Teile-Liste verbatim — als Konzept-Aussage führen.
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "2016 wurde in vielen Einrichtungen das" (Jahresangabe 2016 verbatim — Pflege heute Kap. 1.10.4, Satz über Einführung des Strukturmodells in der Altenpflege)
+- ⚠️ BLEIBT (1 Sub-Claim) — die vier Bestandteile SIS / Maßnahmenplan / Berichteblatt / Evaluation sind in Pflege heute Kap. 1.10.4 beschrieben, aber nicht als geschlossene Vier-Teile-Liste verbatim — als Konzept-Aussage führen.
 **Praxisfehler:** "Bericht nur bei Abweichungen" wird als "tagelang gar nichts dokumentieren" missverstanden — durchgeführte Maßnahmen werden weiterhin quittiert.
 
 **Misconceptions:**
@@ -222,7 +229,11 @@
 **Beleg:**
 - Quelle: `dnqp-standards-index/entlassungsmanagement.txt`
 - Zitat: "bietet den Mitarbeiter*innen der weiterversorgenden Einrichtung und den pflegenden Angehörigen eine Pflegeübergabe unter Einbeziehung der Patientin" (belegt: Patienteneinbeziehung bei Übergabe = Bedside-Prinzip)
-- ⚠️ Quelle beschaffen / entschärfen — die Drei-Formen-Klassifikation (mündlich / schriftlich / Bedside-Handover) und ihre Vor-/Nachteile sind im Korpus nicht verbatim belegt. "Bedside" kommt in Pflege heute nur als "Bedside-Test" (Transfusion, § 96050 ff.) vor — anderes Konzept. Beleg z. B. Pflegekommunikations-Lehrbuch / DBfK-Übergabe-Empfehlung beschaffen oder Aussage auf die belegte Patienteneinbeziehung reduzieren. (Fachlich korrekt, aber laut hoher Latte nicht als belegt ausweisbar.)
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "patientenferne Übergabe (z.B. im Stationszimmer)" (Kap. 3.6.4 — Form ohne Patienteneinbeziehung)
+- Zitat: "patientennahe Übergabe (z.B. am Bett des Pflegeempfängers)" (Kap. 3.6.4 — Bedside-Äquivalent mit Patienteneinbeziehung)
+- Zitat: "mündlich (die Regel)" (Kap. 3.6.4 — Standardform)
+- ⚠️ BLEIBT (Vor-/Nachteile-Klassifikation) — die Vor-/Nachteile-Tabelle für die drei Übergabeformen (mündlich/schriftlich/Bedside) ist im Korpus nicht verbatim belegt. Aussage auf die belegten Formen reduzieren oder DBfK-Übergabe-Empfehlung beschaffen.
 **Praxisfehler:** Bedside-Handover wird aus Angst vor Schweigepflichtverletzung gemieden, statt im Mehrbettzimmer leise und sensibel durchgeführt zu werden.
 
 **Misconceptions:**
@@ -246,7 +257,11 @@
 - Zitat: "Eintragungen weder überkleben noch" / "mit Korrekturstiften übermalen" (kein Überkleben/Korrekturstift)
 - Quelle: `leitlinien-volltext/stgb-267.txt`
 - Zitat: "Wer zur Täuschung im Rechtsverkehr eine unechte Urkunde herstellt, eine echte Urkunde verfälscht oder eine unechte oder verfälschte Urkunde gebraucht, wird mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft." (§ 267 Abs. 1 StGB — Urkundenfälschung; greift, da das Dokumentationssystem laut Pflege heute eine Urkunde ist und Manipulation/Rückdatieren ein Verfälschen darstellt)
-- ⚠️ BLEIBT — das konkrete Korrektur-Verfahren ("einmal durchstreichen, Original lesbar lassen, Korrektur daneben mit Datum + Handzeichen") sowie "Rückdatieren unzulässig" sind im Korpus nicht verbatim belegt. § 267 StGB deckt die strafrechtliche Einordnung des Verfälschens, nicht das konkrete Pflege-Korrekturverfahren — daher nicht damit kaschieren. Beleg: Dokumentations-Leitfaden / Pflege-heute-Korrekturpassage beschaffen.
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "so korrigieren, dass der ursprüngliche Text lesbar bleibt" (Kap. 3.6.2 — Anforderung: Fehler-Korrekturen müssen den Original-Text lesbar lassen)
+- Quelle: `leitlinien-volltext/bgb-630f.txt`
+- Zitat: "Berichtigungen und Änderungen von Eintragungen in der Behandlungsakte sind nur zulässig, wenn neben dem ursprünglichen Inhalt erkennbar bleibt, wann sie vorgenommen worden sind." (§ 630f Abs. 1 S. 2 BGB — gesetzliche Grundlage: Korrekturen erfordern Lesbarkeit des Originals + Zeitstempel)
+- ⚠️ BLEIBT (1 Sub-Claim) — "Rückdatieren unzulässig" sowie das konkrete Handzeichen-Erfordernis bei Papier-Korrekturen sind im Korpus nicht als eigenständige Regel verbatim belegt. § 630f Abs. 1 S. 2 BGB impliziert das Verbot (fehlender Zeitstempel = unzulässige Änderung), aber "Rückdatieren" als Begriff nicht verbatim — Dokumentations-Leitfaden beschaffen.
 **Praxisfehler:** Tippex oder Überkleben "weil die Korrektur ja stimmt" — macht das Original unleserlich und wirkt wie Manipulation.
 
 **Misconceptions:**

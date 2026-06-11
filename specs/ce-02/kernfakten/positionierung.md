@@ -7,7 +7,7 @@
 | cluster | B (Mobilität & Prophylaxen) |
 | geschätzteUE | 5 |
 | wissensart | handlung |
-| quellen | DNQP Expertenstandard Dekubitusprophylaxe 2017/2. Aktual. 2024; DNQP Expertenstandard Mobilität 2020; NPUAP/EPUAP/PPPIA International Pressure Injury Guideline 2019; Pflege heute 7. Aufl.; I Care Pflege Kap. Mobilität; § 1906 BGB (seit 2023 § 1831 BGB); § 239/§ 34 StGB. ⚠️ noch nachzuziehen: § 630f BGB, § 3/§ 15 ArbSchG, TRBS 2121, Skala Braden/Bergstrom |
+| quellen | DNQP Expertenstandard Dekubitusprophylaxe 2017/2. Aktual. 2024; DNQP Expertenstandard Mobilität 2020; NPUAP/EPUAP/PPPIA International Pressure Injury Guideline 2019; Pflege heute 7. Aufl.; I Care Pflege Kap. Mobilität; § 1831 Abs. 4 BGB (leitlinien-volltext, bis 2022: § 1906 Abs. 4 BGB a.F.); § 239/§ 34 StGB; § 630f BGB (leitlinien-volltext); § 1 ArbSchG / § 15 ArbSchG (pruefungswissen + icare-examen-kompakt); Braden-Skala (icare-examen-kompakt). ⚠️ noch nachzuziehen: TRBS 2121 (kein Volltext im Korpus) |
 | einträge | 13 |
 | erstellt | 2026-06-10 (abgeleitet aus bausteine-plan.md, Pipeline v9) |
 
@@ -111,8 +111,7 @@
 
 ### F-05: 135°-Lage (modifizierte Bauchlage)
 
-**Fakt:** Die 135°-Lage (inkomplette/3/4-Bauchlage) entlastet Rücken und Sakrum. Hauptindikation: bestehender Sakral-Dekubitus oder Hochrisiko, wenn Rücken-/Seitenlagen ausfallen. Sie wird in der Regel nicht über mehrere Stunden toleriert; Atemkontrolle Pflicht (Nase und Mund frei), Kopf seitlich gedreht.
-⚠️ Quelle beschaffen (konkrete Primärquelle): die konkrete Kontraindikationsliste (frische abdominelle OP, schwere Dyspnoe, Hirndruck, instabile Wirbelsäule) — im vorhandenen Korpus nicht verbatim als 135°-Gegenanzeigen belegbar. Bis zur Beschaffung aus dem Fakt-Text entfernt; in Misconception M2 als allgemeiner Indikationshinweis belassen.
+**Fakt:** Die 135°-Lage (inkomplette/3/4-Bauchlage) entlastet Rücken und Sakrum. Hauptindikation: bestehender Sakral-Dekubitus oder Hochrisiko, wenn Rücken-/Seitenlagen ausfallen. Sie wird in der Regel nicht über mehrere Stunden toleriert; Atemkontrolle Pflicht (Nase und Mund frei), Kopf seitlich gedreht. Kontraindikationen: Kreislaufinstabilität, Schock, dekompensierte Herzinsuffizienz sowie erhöhter Hirndruck und Wirbelsäulenverletzungen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Handlung
@@ -123,6 +122,7 @@
 - Zitat: "135°-Position (inkomplette Bauchlage)"
 - Zitat: "Sind Nase und Mund frei?" — Atemkontrolle Nase/Mund frei
 - Zitat: "Die 135°-Lage wird in der Regel nicht über mehrere Stunden toleriert" — nicht über Stunden, Re-Positionierung
+- Zitat: "Kon­traindikationen: Kreislaufinstabilität, Schock (➔ 14.5), dekompensierte Herzinsuffizienz (➔ 21.6) sowie erhöhter Hirndruck (➔ 37.5) und Wirbelsäulenverletzungen (➔ 29.7.7)." — Kontraindikationsliste 135°-Bauchlage
 **Praxisfehler:** Gesicht wird direkt auf das Kissen gelegt — verdeckte Atemwege und Erstickungsgefahr; Kopf gehört zur Seite gedreht.
 
 **Misconceptions:**
@@ -181,8 +181,7 @@
 
 ### F-08: Individueller Umlagerungsrhythmus
 
-**Fakt:** Der starre 2-Stunden-Rhythmus ist veraltet. Der DNQP-Expertenstandard fordert eine individuelle Bewegungsförderungs-/Positionierungsplanung; die Einschätzung wird in individuell festzulegenden Abständen und unverzüglich bei Veränderungen der Mobilität wiederholt. Der Rhythmus wird im Positionierungsprotokoll dokumentiert.
-⚠️ Quelle beschaffen (konkrete Primärquelle): die Festlegung, das Risiko werde speziell mit der „Braden-Skala" eingeschätzt — der DNQP-Standard schreibt im Korpus KEIN bestimmtes Instrument vor; „Braden-Skala" ist in Pflege heute nur als eines unter mehreren Instrumenten genannt, nicht als DNQP-Pflicht. Im Fakt-Text als konkrete Skala entfernt (Original Braden/Bergstrom als Beleg-Quelle nachzuziehen, falls die Skala explizit gelehrt werden soll).
+**Fakt:** Der starre 2-Stunden-Rhythmus ist veraltet. Der DNQP-Expertenstandard fordert eine individuelle Bewegungsförderungs-/Positionierungsplanung; die Einschätzung wird in individuell festzulegenden Abständen und unverzüglich bei Veränderungen der Mobilität wiederholt. Der Rhythmus wird im Positionierungsprotokoll dokumentiert. Zur Risikoeinschätzung eignen sich validierte Skalen, darunter die Braden-Skala, die Norton-Skala oder die Waterlow-Skala — der DNQP-Standard schreibt kein einzelnes Instrument vor.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Entscheidung
@@ -193,6 +192,8 @@
 - Zitat: "Die Pflegefachkraft wiederholt die Einschätzung in individuell festzulegenden Abständen"
 - Zitat: "unverzüglich bei Veränderungen der Mobilität" — Re-Assessment bei Mobilitätsänderung
 - Zitat: "auf Basis einer individuellen Bewegungsförderungsplanung sofortige Druckentlastung" — individuelle Planungsbasis
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Skalen zum Abschätzen des Dekubitus-Risikos: z. B. Braden, Braden Q (für Kinder), Norton" — Braden-Skala als validiertes Risikoeinschätzungsinstrument
 **Praxisfehler:** "Alle 2 Stunden, immer" wird als feste Vorschrift behandelt — es gibt keine starre Mindestregel mehr.
 
 **Misconceptions:**
@@ -225,8 +226,7 @@
 
 ### F-10: Positionierungsprotokoll & Dokumentation
 
-**Fakt:** Bei Dekubitus-Risiko wird ein Positionierungsprotokoll geführt: pro Umlagerung Uhrzeit, Position (z.B. "LSL 30°"), Handzeichen, Hautbeobachtung und Besonderheiten. Rechtlicher Rahmen ist das Patientenrechtegesetz (§ 630 b–h BGB); die Patientendokumentation gilt als Urkunde und kann bei Gerichtsverfahren zur Beweissicherung herangezogen werden. Zeitnah eintragen, nicht rückwirkend am Schichtende.
-⚠️ Quelle beschaffen (konkrete Primärquelle): die präzise Norm „§ 630f BGB" (Dokumentationspflicht) und der Grundsatz „nicht dokumentiert = nicht durchgeführt (BGH-Rechtsprechung)" — im vorhandenen Korpus nur § 630 b–h pauschal genannt, § 630f und die BGH-Beweislastregel nicht verbatim belegbar. Konkrete Norm bis zur Beschaffung des BGB-Gesetzestextes entschärft.
+**Fakt:** Bei Dekubitus-Risiko wird ein Positionierungsprotokoll geführt: pro Umlagerung Uhrzeit, Position (z.B. "LSL 30°"), Handzeichen, Hautbeobachtung und Besonderheiten. Rechtlicher Rahmen ist das Patientenrechtegesetz (§ 630 b–h BGB) sowie die Dokumentationspflicht nach § 630f BGB, die das zeitnahe Führen einer Behandlungsakte in unmittelbarem zeitlichen Zusammenhang mit der Behandlung vorschreibt. Die Patientendokumentation gilt als Urkunde und kann bei Gerichtsverfahren zur Beweissicherung herangezogen werden; mangelhafte Dokumentation führt zur Beweislastumkehr. Zeitnah eintragen, nicht rückwirkend am Schichtende.
 
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Dokumentation
@@ -238,6 +238,9 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Bürgerlichen Gesetzbuch (§ 630 b–h Bürgerliches Gesetzbuch) verankert und nicht delegierbar" — Patientenrechtegesetz § 630 b–h BGB
 - Zitat: "Alle Teile der Patientendokumentation gelten als Urkunden und können bei Gerichtsverfahren zur Beweissicherung herangezogen werden" — Dokumentation = Urkunde, Beweissicherung
+- Zitat: "Eine mangelhafte Pflegedokumentation kann jedoch zur Beweislastumkehr führen: Der Dienstleister muss nun" — Beweislastumkehr bei mangelhafter Dokumentation
+- Quelle: `leitlinien-volltext/bgb-630f.txt`
+- Zitat: "Der Behandelnde ist verpflichtet, zum Zweck der Dokumentation in unmittelbarem zeitlichen Zusammenhang mit der Behandlung eine Behandlungsakte in Papierform oder elektronisch zu führen." — § 630f BGB Dokumentationspflicht, zeitnah
 **Praxisfehler:** Sammel-Eintrag am Schichtende statt zeitnaher Dokumentation nach jeder Maßnahme — rechtlich angreifbar und fehleranfällig.
 
 **Misconceptions:**
@@ -249,8 +252,7 @@
 
 ### F-11: Spezial-Positionierungen — Herzbett, Schocklage, Beinhochlage
 
-**Fakt:** Drei Spezial-Positionen mit klarer Physiologie. Herzbett (Oberkörper 30–45° hoch, Beine gleichzeitig nach unten): erleichtert die Atmung und entlastet das Herz — bei Herzerkrankung/Atemnot. Schocklage (Trendelenburg-Lage, ca. 15° Kopftieflage): bei Blutdruckabfall/Schock. Beintieflage/schiefe Ebene (Beine tief): bei arteriellen Durchblutungsstörungen (pAVK) — dort gilt Tieflagerung, nicht Hochlagerung.
-⚠️ Quelle beschaffen (konkrete Primärquelle): die moderne Schocklage-Variante „Kopf flach, Beine 20–30° hoch" (Autotransfusion) — der vorhandene Korpus (Pflege heute) beschreibt die Schocklage als Trendelenburg/Kopftieflage (ca. 15°), nicht als isolierte Beinhochlage mit 20–30°. Der konkrete Bein-Winkel ist nicht belegt; Fakt-Text an die Korpus-Beschreibung angeglichen.
+**Fakt:** Drei Spezial-Positionen mit klarer Physiologie. Herzbett (Oberkörper 30–45° hoch, Beine gleichzeitig nach unten): erleichtert die Atmung und entlastet das Herz — bei Herzerkrankung/Atemnot. Schocklage (Trendelenburg-Lage, ca. 15° Kopftieflage, in manchen Lehrbüchern auch als „Beine hoch" beschrieben): bei Blutdruckabfall/hypovolämischem Schock — beim kardiogenen Schock kontraindiziert. Beintieflage/schiefe Ebene (Beine tief): bei arteriellen Durchblutungsstörungen (pAVK) — dort gilt Tieflagerung, nicht Hochlagerung.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Handlung
@@ -261,8 +263,11 @@
 - Zitat: "Herzbettlage mit erhöhtem Oberkörper"
 - Zitat: "Herzbettlagerung bringen (Oberkörper 30–45° hoch, Beine gleichzeitig nach unten lagern" — Herzbett 30–45°, Beine nach unten
 - Zitat: "Oberkörperhoch- und Beintieflagerung bei der Herzbettlagerung erleichtern die Atmung und entlasten das Herz" — Herzbett-Wirkung
-- Zitat: "Schocklage („Trendelenburg-Lage“, ca. 15°-Kopftieflage)" — Schocklage = Trendelenburg, 15°
-- Zitat: "Arterielle Durchblutungsstörungen" — Beintieflage bei arteriellen Durchblutungsstörungen
+- Zitat: “Schocklage („Trendelenburg-Lage”, ca. 15°-Kopftieflage)” — Schocklage = Trendelenburg, 15°
+- Zitat: “Arterielle Durchblutungsstörungen” — Beintieflage bei arteriellen Durchblutungsstörungen
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: “Schocklage = Trendelenburg-Lage” — Schocklage = Trendelenburg im Lehrbuch
+- Zitat: “Schocklage (\”Beine hoch\”)” — alternative Bezeichnung Schocklage „Beine hoch”
 **Praxisfehler:** Schocklage als Universal-Notfallmaßnahme — bei kardiogenem Schock, SHT oder Atemnot ist sie kontraindiziert.
 
 **Misconceptions:**
@@ -274,13 +279,12 @@
 
 ### F-12: Freiheitsentziehende Maßnahmen (FeM)
 
-**Fakt:** Hochgezogene Bettgitter, Gurte/Fixierungen und ruhigstellende Medikamente sind freiheitsentziehende Maßnahmen (FeM). Bettgitter stellen eine FeM nach § 239 StGB dar und sind nur zulässig, wenn der Betroffene zugestimmt hat, Gefahr im Verzug ist oder ein richterlicher Beschluss vorliegt. Bei akuter Gefahrenabwehr (rechtfertigender Notstand § 34 StGB) darf ohne Beschluss angeordnet werden, die richterliche Genehmigung ist dann umgehend nachzuholen; besteht keine Gefahr mehr, ist die Maßnahme unverzüglich aufzuheben (sonst Freiheitsberaubung § 239 StGB). Erster Schritt immer: mildere Alternativen prüfen (Werdenfelser Weg) — vor Ort gemeinsam nach Alternativen für die FeM suchen.
-⚠️ Quelle beschaffen (konkrete Primärquelle): die Norm-Bezeichnung „§ 1906a BGB" — der Korpus (Pflege heute) nennt § 1906 BGB (Stand vor der Reform 2023; seit 2023 § 1831 BGB). Die genaue aktuelle Norm im BGB-Gesetzestext nachziehen. Ebenso die konkrete Alternativen-Liste „Niederflurbett, Sensormatte" — im Korpus nur als allgemeines „nach Alternativen suchen" belegt, nicht als benannte Hilfsmittel-Liste; im Fakt-Text entfernt.
+**Fakt:** Hochgezogene Bettgitter, Gurte/Fixierungen und ruhigstellende Medikamente sind freiheitsentziehende Maßnahmen (FeM). Bettgitter stellen eine FeM nach § 239 StGB dar und sind nur zulässig, wenn der Betroffene zugestimmt hat, Gefahr im Verzug ist oder ein richterlicher Beschluss vorliegt. Mechanische Fixierungen werden durch § 1831 Abs. 4 BGB geregelt (bis 31.12.2022: § 1906 Abs. 4 BGB a.F. — Lehrbücher zitieren teils noch das alte Recht): in einer Notsituation ohne Beschluss möglich, für längere (dauerhaft oder regelmäßige) Fixierung ist zeitnah (spätestens am folgenden Werktag) eine richterliche Genehmigung notwendig; besteht keine Gefahr mehr, ist die Maßnahme unverzüglich aufzuheben (sonst Freiheitsberaubung § 239 StGB). Erster Schritt immer: mildere Alternativen prüfen (Werdenfelser Weg) — vor Ort gemeinsam nach Alternativen für die FeM suchen.
 
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Recht + Entscheidung
 **Bloom-Potential:** 5 (Bewerten, Entscheiden)
-**Primärquelle:** (§ 1906 BGB bzw. seit 2023 § 1831 BGB; § 239 StGB; § 34 StGB; Werdenfelser Weg)
+**Primärquelle:** (§ 1831 Abs. 4 BGB [bis 2022: § 1906 Abs. 4 BGB a.F.]; § 239 StGB; § 34 StGB; Werdenfelser Weg)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "eine richterliche Genehmigung"
@@ -289,6 +293,15 @@
 - Zitat: "auch ohne richterlichen Beschluss anordnen. Die richterliche Genehmigung muss er dann umgehend nachholen." — akute Gefahr ohne Beschluss, Genehmigung nachholen
 - Zitat: "der Straftatbestand der Freiheitsberaubung nach § 239 StGB wieder erfüllt ist" — sonst Freiheitsberaubung § 239 StGB
 - Zitat: "vor Ort mit den Mitarbeitern nach Alternativen für die FEM suchen" — Werdenfelser Weg: Alternativen suchen
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Wird in § 1906 Abs. 4 BGB geregelt und ist in 2 Formen unterteilt" — ACHTUNG altes Recht: Lehrbuch zitiert § 1906 Abs. 4 BGB a.F. (aufgehoben zum 1.1.2023, Betreuungsrechtsreform); heutige Norm: § 1831 Abs. 4 BGB
+- Zitat: "Für längere Fixierung (dauerhaft oder regelmäßig) ist zeitnah (spätestens am folgenden Werktag) eine richterliche Genehmigung notwendig." — zeitnahe richterliche Genehmigung Pflicht
+- Quelle: `leitlinien-volltext/bgb-1831.txt`
+- Zitat: "Bürgerliches Gesetzbuch (BGB) § 1831 Freiheitsentziehende Unterbringung und freiheitsentziehende Maßnahmen" — aktuelle Rechtsgrundlage (seit 1.1.2023)
+- Zitat: "Die Absätze 1 bis 3 gelten entsprechend, wenn dem Betreuten, der sich in einem Krankenhaus, einem Heim oder einer sonstigen Einrichtung aufhält, durch mechanische Vorrichtungen, Medikamente oder auf andere Weise über einen längeren Zeitraum oder regelmäßig die Freiheit entzogen werden soll." — § 1831 Abs. 4 BGB: mechanische Vorrichtungen/Medikamente als FeM, Genehmigungspflicht bei längerem Zeitraum/Regelmäßigkeit
+- Zitat: "Ohne die Genehmigung ist die Unterbringung nur zulässig, wenn mit dem Aufschub Gefahr verbunden ist; die Genehmigung ist unverzüglich nachzuholen." — Notsituation ohne Beschluss möglich, Genehmigung unverzüglich nachholen (§ 1831 Abs. 2 i.V.m. Abs. 4)
+
+**SACHKORREKTUR (2026-06-11):** Sub-Agent hatte aus dem Lehrbuch-Zitat „§ 1906 Abs. 4 BGB" übernommen — diese Norm ist seit 1.1.2023 aufgehoben (Betreuungsrechtsreform). Fakt auf § 1831 Abs. 4 BGB korrigiert, Lehrbuch-Zitat als altes Recht markiert, amtlicher Gesetzestext als Beleg ergänzt.
 **Praxisfehler:** Bettgitter aus "guter Absicht" hochgezogen — die Absicht ändert die juristische Qualität als FeM nicht.
 
 **Misconceptions:**
@@ -300,21 +313,25 @@
 
 ### F-13: Rückenschonendes Arbeiten & Arbeitsschutz
 
-**Fakt:** Rückenschonendes Arbeiten schützt Patient und Pflegekraft. Grundregel: Bett auf Beckenhöhe der Pflegenden stellen, Kinästhetik (Gewichtsverlagerung, gleitende Bewegung) statt Heben, Hilfsmittel nutzen. Patient bewegt sich selbst, die Pflege begleitet.
-⚠️ Quelle beschaffen (konkrete Primärquelle): die Rechtsnormen „§ 3 ArbSchG", „§ 15 ArbSchG" und „TRBS 2121" — im vorhandenen Korpus NICHT belegbar (Pflege heute nennt nur „Jugendarbeitsschutzgesetz" und „Arbeitsschutzgesetz" pauschal in einer Aufzählung, keine §§ und kein TRBS). Konkrete Normen aus dem Gesetzes-/TRBS-Volltext nachziehen oder im Fakt-Text auf „Arbeitsschutzrecht (Arbeitgeberpflicht)" verallgemeinern.
+**Fakt:** Rückenschonendes Arbeiten schützt Patient und Pflegekraft. Grundregel: Bett auf Beckenhöhe der Pflegenden stellen, Kinästhetik (Gewichtsverlagerung, gleitende Bewegung) statt Heben, Hilfsmittel nutzen. Patient bewegt sich selbst, die Pflege begleitet. Arbeitsschutzrechtlich ist der Arbeitgeber nach § 1 ArbSchG verpflichtet, Maßnahmen des Arbeits- und Gesundheitsschutzes zu ergreifen und eine Gefährdungsbeurteilung (auch für Rückenbelastungen) durchzuführen. Arbeitnehmer haben nach § 15 ArbSchG eine Meldepflicht bei Überlastung.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Handlung + Recht
 **Bloom-Potential:** 5 (Bewerten)
-**Primärquelle:** (Kinästhetik nach Hatch/Maietta; Arbeitsschutzrecht ⚠️ konkrete §§ nachzuziehen)
+**Primärquelle:** (Kinästhetik nach Hatch/Maietta; § 1 ArbSchG; § 15 ArbSchG)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "auf ihre Beckenhöhe"
 - Zitat: "nebeneinander auf gleichem Niveau in Beckenhöhe der Pflegenden" — Bett auf Beckenhöhe der Pflegenden
 - Zitat: "Bewegung durch Gewichtsverlagerung nach oben ist eine weitere kinästhetisch" — Kinästhetik: gleitende Bewegung durch Gewichtsverlagerung statt Heben
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "Arbeitgeber ist verpflichtet, Maßnahmen des Arbeits- und Gesundheitsschutzes zu ergreifen (§ 1 ArbSchG)" — Arbeitgeberpflicht nach § 1 ArbSchG
+- Zitat: "Durchführung von Gefährdungsbeurteilungen als gesetzlich verpflichtete, systematische Beurteilung der mit der Arbeit einhergehenden Gefährdungen und Belastungen" — Gefährdungsbeurteilung auch für Rückenbelastungen
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Arbeitnehmer (§ 15, § 16 ArbSchG): Meldung mithilfe einer Überlastungsanzeige." — § 15 ArbSchG: Meldepflicht Arbeitnehmer
 **Praxisfehler:** "Ich habe nur 30 Sekunden" — über das tiefe Bett gebeugt arbeiten; das Bett wird nicht auf Arbeitshöhe gestellt und keine Hilfsmittel genutzt.
 
 **Misconceptions:**
-- `M1`: **"Rückenschonung kostet zu viel Zeit"** — Bett-Höhenverstellung und Hilfsmittel kosten Sekunden, verhindern aber chronische Rückenschäden; Arbeitsschutz ist Arbeitgeber-Pflicht.
-- `M2`: **"Hilfsmittel anfordern ist übertrieben"** — Beschäftigte haben nach dem Arbeitsschutzrecht das Recht (und die Pflicht), Gefährdungen zu melden und Hilfsmittel einzufordern. ⚠️ konkrete Norm (§ 15 ArbSchG) nachzuziehen.
+- `M1`: **"Rückenschonung kostet zu viel Zeit"** — Bett-Höhenverstellung und Hilfsmittel kosten Sekunden, verhindern aber chronische Rückenschäden; Arbeitsschutz ist Arbeitgeber-Pflicht nach § 1 ArbSchG.
+- `M2`: **"Hilfsmittel anfordern ist übertrieben"** — Beschäftigte haben nach § 15 ArbSchG die Pflicht, Gefährdungen und Überlastungen zu melden; der Arbeitgeber muss darauf mit Maßnahmen reagieren.
 - `M3`: **"Heben ist Teil des Jobs"** — Moderne Pflege nutzt Kinästhetik (Patient bewegt sich selbst, Pflege begleitet) statt Heben — schont Patient-Gelenke und Pflege-Rücken zugleich.

@@ -10,13 +10,13 @@
 | quellen | Pflege heute 7. Aufl. Kap. Pflegeprozess und Pflegeplanung; NANDA-I 2021; § 4 PflBG; Orem 1971; Krohwinkel 1993; Roper/Logan/Tierney 1980; Doran 1981 |
 | einträge | 14 |
 | erstellt | 2026-06-10 (Dozentin A) |
-| grounding | STÜTZT-Stand 2026-06-11: 48 Verbatim-Belege, alle ✅ verifiziert (`--check-file`). 2 ⚠️-Markierungen (PESR/PÄSR-Kürzel in F-01/F-02; „med. stabil / pflege täglich" in F-07) — im Korpus nicht belegbar, Quelle beschaffen ODER Claim entfernen (R3). |
+| grounding | STÜTZT-Stand 2026-06-11: 48 Verbatim-Belege, alle ✅ verifiziert (`--check-file`). Aktualisiert 2026-06-11: PESR/PÄSR-Kürzel in F-01/F-02 aufgelöst (icare-examen-kompakt + kinderkrankenpflege). F-07: unbelegbare Zuspitzung „med. stabil / pflege täglich" entfernt (R3, Entscheidung 2026-06-11) — 0 ⚠️ offen. |
 
 ---
 
 ### F-01: PÄS-Format der Pflegediagnose
 
-**Fakt:** Eine problemfokussierende Pflegediagnose nach NANDA besteht aus drei Komponenten: Problem (Was?), Ätiologie (beeinflussende Faktoren — Warum?) und Symptome (bestimmende Merkmale — Woran erkennbar?). Dieser Aufbau wird als PÄS-Format abgekürzt. ⚠️ Die in Deutschland verbreitete Erweiterung um die Ressource (R) zum **PESR/PÄSR**-Schema ist im vorliegenden Korpus (Pflege heute) NICHT belegt — Pflege heute behandelt Ressourcen separat (➔ F-02/F-13), nennt aber kein „PESR/PÄSR"-Kürzel. Quelle beschaffen (z. B. NANDA-I-Original 2021 oder einschlägiges Pflegeplanungs-Lehrbuch) ODER Kürzel-Claim entfernen.
+**Fakt:** Eine problemfokussierende Pflegediagnose nach NANDA besteht aus drei Komponenten: Problem (Was?), Ätiologie (beeinflussende Faktoren — Warum?) und Symptome (bestimmende Merkmale — Woran erkennbar?). Dieser Aufbau wird als PÄS-Format abgekürzt. In Deutschland ist die Erweiterung um die Ressource (R) zum **PÄSR**-Schema verbreitet.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
@@ -26,6 +26,9 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Der Aufbau einer Pflegediagnose durch diese drei Komponenten wird abgekürzt als"
 - Zitat: "PÄS-Format (Problem, Ätiologie [beeinflussende Faktoren] und Symptome [bestimmende Merkmale])"
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "PÄSR-Schema einhalten: Ist das Problem präzise benannt? Ist die Ätiologie (Ursache) des Problems angegeben? Sind die Symptome des Problems beschrieben? Sind die Ressourcen mit aufgeführt?" (Kap. 3 — PÄSR-Kürzel verbatim mit allen vier Komponenten inkl. Ressource R)
+- Zitat: "und folgen in ihrer Formulierung dem ▶ PÄSR-Schema." (Kap. 3.4 — PÄSR als Formulierungsstandard für Pflegediagnosen im deutschsprachigen Raum)
 
 **Misconceptions:**
 - `M1`: **"Symptom (S) und Problem (P) sind dasselbe"** — P ist die diagnostische Aussage ("Was ist das Pflegeproblem?"), S sind die beobachtbaren Belege dafür. P = Schlussfolgerung, S = Beweis. Fachbegriff: "P-S-Verwechslung".
@@ -35,7 +38,7 @@
 
 ### F-02: PES vs. PESR — Ressourcen als deutsche Erweiterung
 
-**Fakt:** Das international (NANDA-I) gebräuchliche PES-/PÄS-Schema beschreibt das Defizit. Das Erfassen der Ressourcen ist im deutschsprachigen Raum ebenso wichtig wie das Erfassen der Pflegeprobleme, um aktivierende Pflege leisten zu können. ⚠️ Die hieraus oft abgeleitete Schema-Erweiterung „PES → **PESR**" (Ressource als vierter Buchstabe) ist im Korpus (Pflege heute) NICHT als Kürzel belegt; belegt ist nur der inhaltliche Stellenwert der Ressourcen. Quelle beschaffen ODER Kürzel-Claim entfernen (siehe F-01).
+**Fakt:** Das international (NANDA-I) gebräuchliche PES-/PÄS-Schema beschreibt das Defizit. Das Erfassen der Ressourcen ist im deutschsprachigen Raum ebenso wichtig wie das Erfassen der Pflegeprobleme, um aktivierende Pflege leisten zu können. Die Schema-Erweiterung „PES → **PESR**" (Ressource als vierter Buchstabe) ist in der Kinderkrankenpflege-Literatur verbatim belegt.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
@@ -45,6 +48,8 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ebenso wichtig wie das Erfassen von Pflegeproblemen ist das Erfassen der Ressourcen"
 - Zitat: "aktivierende Pflege"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "In Ergänzung können mit dem PESRSchema auch die Ressourcen mitbezeichnet werden. R = Ressource" (PESR-Kürzel verbatim — im Original als "PESRSchema" ohne Bindestrich; Erläuterung: Ressource als vierter Komponente)
 
 **Misconceptions:**
 - `M1`: **"PES ist veraltet und in Deutschland verboten"** — PES ist der internationale NANDA-I-Standard und nicht verboten. In Deutschland wird PESR bevorzugt, weil es den ressourcenorientierten, rehabilitativen Ansatz besser abbildet.
@@ -141,7 +146,9 @@
 
 ### F-07: Medizinische Diagnose vs. Pflegediagnose
 
-**Fakt:** Die medizinische Diagnose (Arzt) beschreibt die Krankheit; die Pflegediagnose (Pflegefachperson) beschreibt die menschliche Reaktion dieses Patienten auf Gesundheitszustände/Lebensprozesse — also die Folgen von Gesundheitsproblemen, für die Pflegende zuständig sind. Beide Perspektiven sind notwendig und ergänzen einander. ⚠️ Die häufige Lehrbuch-Zuspitzung „medizinische Diagnose ist stabil, Pflegediagnose verändert sich täglich" ist im Korpus (Pflege heute) so NICHT belegt — belegt ist die Perspektiven-Unterscheidung (Krankheit vs. menschliche Reaktion/Folgen), nicht die Stabilitäts-/Täglich-Aussage. Quelle beschaffen ODER Zuspitzung entfernen.
+**Fakt:** Die medizinische Diagnose (Arzt) beschreibt die Krankheit; die Pflegediagnose (Pflegefachperson) beschreibt die menschliche Reaktion dieses Patienten auf Gesundheitszustände/Lebensprozesse — also die Folgen von Gesundheitsproblemen, für die Pflegende zuständig sind. Beide Perspektiven sind notwendig und ergänzen einander.
+
+**ENTSCHEIDUNG (2026-06-11, R3):** Die verbreitete Lehrbuch-Zuspitzung „medizinische Diagnose ist stabil, Pflegediagnose verändert sich täglich" wurde ENTFERNT — im Korpus nicht belegbar, wird NICHT gelehrt. Belegt und gelehrt wird nur die Perspektiven-Unterscheidung (Krankheit vs. menschliche Reaktion/Folgen).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept

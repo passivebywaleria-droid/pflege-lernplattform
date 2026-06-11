@@ -62,7 +62,8 @@
 - Zitat: "BMI 35–39,9 kg/m2 = Adipositas Grad II"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "BMI ≥ 40 kg/m2 = Adipositas Grad III"
-- ⚠️ Detailwerte "günstiger Bereich über 65 = 22-27 kg/m², BMI < 22 = Warnsignal" lokal nicht verbatim belegbar (Pflege heute Tab. 7.8 gibt für >64 J. 24-29 kg/m²). Quelle beschaffen (DGE/ESPEN-Leitlinie Geriatrie bzw. DGEM-Leitlinie Ernährung im Alter) ODER Aussage auf die belegte Grenze (24-29 kg/m² für >64 J.) zurückführen.
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "nach National Research Council, USA). Mit zunehmendem Alter sind höhere BMI-Werte wünschenswert."
 **Praxisfehler:** Bei älteren Menschen die gleichen BMI-Grenzen wie bei Jüngeren anlegen → Mangelernährung bei BMI 21 wird übersehen.
 
 **Misconceptions:**
@@ -87,7 +88,7 @@
 - Zitat: "Ausführliche Erhebung, die auch die beeinflussenden Faktoren untersucht"
 - Quelle: `dnqp-standards-index/ernaehrungsmanagement.txt`
 - Zitat: "Sind entsprechende Anzeichen vorhanden, führt sie eine tiefergehende Einschätzung der Ernährungssituation und der sie beeinflussenden Faktoren durch (vertieftes Assessment)"
-- ⚠️ Zeitangaben "Screening 2-5 Min, binnen 24h" und "Assessment 15-30 Min" sind didaktische Orientierungswerte, im Korpus nicht verbatim belegt. Aussage ohne konkrete Minuten-/Stundenwerte formulieren ODER Quelle beschaffen (DNQP-Implementierungshinweise / Instrument-Manuale).
+- ⚠️ Zeitangaben "Screening 2-5 Min, binnen 24h" und "Assessment 15-30 Min" sind didaktische Orientierungswerte, im Korpus nicht verbatim belegt. Aussage ohne konkrete Minuten-/Stundenwerte formulieren ODER Quelle beschaffen (DNQP-Implementierungshinweise / Instrument-Manuale). Hinweis: Expertenstandards-Gebrauchsanleitung belegt für MNA-SF "schnelle Einschätzung in nur drei Minuten" als Kurzform; nicht übertragbar auf Screening generell.
 **Praxisfehler:** Screening nur bei "sichtbar dünnen" Patienten machen — der Standard verlangt es für alle (auch Adipöse, verdeckte Mangelernährung).
 
 **Misconceptions:**
@@ -114,7 +115,7 @@
 - Zitat: "des Screening-Instruments Mini Nutritional Assessment (MNA); dort gelten Werte über 22 cm als normal"  (belegt Grenzwert OAU > 22 cm = normal)
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ein Wadenumfang unter 31 cm kann ein zusätzlicher Hinweis"  (belegt Wadenumfang als alternatives MNA-Kriterium)
-- ⚠️ MNA-Short-Form-Score-Detail (6 Fragen; Punktebereich 0-14; Cut-offs 12-14 normal / 8-11 Risiko / 0-7 Mangelernährung) im gesamten Korpus (Pflege heute + leitlinien-volltext + dnqp-standards-index, geprüft 2026-06-11) NICHT belegt — Pflege heute nennt das MNA nur als Instrument + OAU-/Wadenumfang-Kriterium. Score-Aufbau über MNA-Originalarbeit Guigoz/Vellas bzw. Nestlé-MNA-Manual beschaffen, bevor Punktwerte/Cut-offs als Schüler-Inhalt ausgespielt werden, ODER Score-Detail entfernen. (Die Instrument-/Altersgruppen- und Umfang-Kriterien sind über die Zweitzitate gedeckt.)
+- ⚠️ MNA-Short-Form-Score-Detail (6 Fragen; Punktebereich 0-14; Cut-offs 12-14 normal / 8-11 Risiko / 0-7 Mangelernährung) im gesamten Korpus (Pflege heute + leitlinien-volltext + dnqp-standards-index + icare-examen-kompakt + pruefungswissen + expertenstandards-gebrauchsanleitung, geprüft 2026-06-11) NICHT verbatim belegt — Pflege heute nennt das MNA nur als Instrument + OAU-/Wadenumfang-Kriterium; Gebrauchsanleitung belegt nur Instrument-Empfehlung für Geriatrie/Pflegeheim + MNA-SF als 3-Minuten-Kurzform. Score-Aufbau über MNA-Originalarbeit Guigoz/Vellas bzw. Nestlé-MNA-Manual beschaffen, bevor Punktwerte/Cut-offs als Schüler-Inhalt ausgespielt werden, ODER Score-Detail entfernen.
 **Praxisfehler:** MNA bei jüngeren Erwachsenen einsetzen — es ist nur für Ältere (≥65) validiert; im Krankenhaus gilt NRS-2002.
 
 **Misconceptions:**
@@ -135,7 +136,7 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Nutritional Risk Score (NRS) für den Krankenhausbereich"
-- ⚠️ NRS-2002-Detail (4 Vorscreening-Fragen; Hauptscreening Ernährungs-Score 0-3 + Krankheits-Score 0-3 + Altersbonus +1 bei ≥70; Cut-off ≥3 Punkte; Maximum 7; wöchentliche Wiederholung) im Korpus nicht belegt — Pflege heute nennt nur den Instrument-Namen. Quelle beschaffen (NRS-2002-Originalarbeit Kondrup et al. 2003 / ESPEN-Leitlinie) oder Score-Detail entfernen.
+- ⚠️ NRS-2002-Detail (4 Vorscreening-Fragen; Hauptscreening Ernährungs-Score 0-3 + Krankheits-Score 0-3 + Altersbonus +1 bei ≥70; Cut-off ≥3 Punkte; Maximum 7; wöchentliche Wiederholung) im Korpus nicht verbatim belegt — Pflege heute und icare-examen-kompakt nennen NRS-2002 nur namentlich als Krankenhaus-Screening-Instrument (ohne Score-Aufbau). Quelle beschaffen (NRS-2002-Originalarbeit Kondrup et al. 2003 / ESPEN-Leitlinie) oder Score-Detail entfernen.
 **Praxisfehler:** Nach negativem Pre-Screening nie wieder testen — bei Klinik-Patienten ist wöchentliche Wiederholung Pflicht (Verschlechterung nach OP/Infekt).
 
 **Misconceptions:**
@@ -158,7 +159,9 @@
 - Zitat: "bei allen Patienten mit einem auffälligen Screening-Ergebnis ein vertieftes Assessment"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "ein vertieftes Assessment, z. B. mithilfe des PEMU (Pflegerische Erfassung von Mangelernährung und deren Ursachen)"
-- ⚠️ PEMU-Binnenstruktur (Teil 1 Ernährungszustand / Teil 2 Ursachen in den fünf Bereichen Essen-Trinken-Signale, Mundgesundheit, Fähigkeiten, Umgebung/Angebot, weitere Gründe) im Korpus nicht belegt — Pflege heute nennt nur Name + Langform + Einsatzzweck. Quelle beschaffen (PEMU-Originalinstrument Bartholomeyczik/Schreier 2008) oder Bereichsaufzählung entfernen.
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Das PEMU – Pflegerische Erfassung von Mangelernährung und deren Ursachen – besteht im ersten Teil aus einem Screening- und im zweiten Teil aus einem Assessmentinstrument."
+- ⚠️ PEMU-Fünf-Bereiche (Essen-Trinken-Signale, Mundgesundheit, Fähigkeiten, Umgebung/Angebot, weitere Gründe) im Korpus nicht verbatim belegt — Gebrauchsanleitung belegt nur Zweiteiler (Screening + Assessment), Nennung der fünf Ursachenbereiche stammt aus PEMU-Originalinstrument Bartholomeyczik/Schreier 2008 (nicht im Korpus). Bereichsaufzählung entfernen oder Originalinstrument beschaffen.
 **Praxisfehler:** PEMU auf die Gewichtsmessung verkürzen — der eigentliche Kern ist die Ursachenanalyse in den im PEMU erfassten Ursachenbereichen.
 
 **Misconceptions:**
@@ -202,8 +205,8 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ausgeprägter Verlust an Muskelmasse, Muskelkraft und Muskelleistung"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Von Kachexie (Auszehrung, hochgradige Abmagerung, „Kräfteverfall“) spricht man, wenn der Gewichtsverlust und der Kräfteverfall sehr ausgeprägt ist"
-- ⚠️ PEM als eigener, klar abgegrenzter Terminus ("Protein-Energie-Mangelernährung, reversibel durch Kalorien-/Eiweißzufuhr") im Korpus nicht verbatim belegt — Pflege heute nutzt den Oberbegriff "Mangelernährung (Malnutrition)". Quelle beschaffen (DGEM-Terminologie-Leitlinie / ESPEN 2017 Definitions) oder PEM als Unterform der belegten Malnutrition-Definition führen.
+- Zitat: “Von Kachexie (Auszehrung, hochgradige Abmagerung, „Kräfteverfall”) spricht man, wenn der Gewichtsverlust und der Kräfteverfall sehr ausgeprägt ist”
+- ⚠️ PEM als eigener, klar abgegrenzter Terminus (“Protein-Energie-Mangelernährung, reversibel durch Kalorien-/Eiweißzufuhr”) im gesamten Korpus nicht verbatim belegt — Pflege heute nutzt den Oberbegriff “Mangelernährung (Malnutrition)” ohne PEM-Untertyp; icare-examen-kompakt und pruefungswissen ebenfalls ohne PEM-Term. Quelle beschaffen (DGEM-Terminologie-Leitlinie / ESPEN 2017 Definitions and Criteria) oder PEM-Bezeichnung entfernen und als Unterform der belegten Malnutrition-Definition führen.
 **Praxisfehler:** Kachexie mit "einfachem Dünn-Sein" gleichsetzen — sie ist krankheitsbedingt und nicht durch Essen allein zu beheben.
 
 **Misconceptions:**
@@ -226,7 +229,12 @@
 - Zitat: "Bei älteren Menschen ist jede unbeabsichtigte Gewichtsabnahme ein wichtiges Warnsignal"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Als Orientierung für einen auffälligen Gewichtsverlust können die in"
-- ⚠️ Konkrete Prozent-/Zeit-Schwellen (>5 % in 3 Mon., >10 % in 6 Mon. bzw. die Werte aus Pflege heute Tab. 7.9: 5 %/Monat, 7,5 %/3 Mon., 10 %/6 Mon.) liegen in einer Tabelle, die im Volltext-Extrakt nicht als Zahlenwerte vorliegt (nur der Verweis auf Tab. 7.9). Quelle beschaffen (Pflege heute Tab. 7.9 als Zahlentabelle nachextrahieren ODER DGEM/ESPEN-Leitlinie) — bis dahin Schwellen als "z. B. >5 %/3 Mon. (laut DGEM/ESPEN)" kennzeichnen.
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Tab. 7.9 aufgeführten Werte gelten"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "7,5 % in 3 Monaten"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "10 % in 6 Monaten"
 **Praxisfehler:** Verlust in absoluten Kilo statt in Prozent beurteilen — 5 kg sind für 50 kg = 10%, für 100 kg = 5%.
 
 **Misconceptions:**
@@ -277,7 +285,7 @@
 - Zitat: "Eiweißmangel führt zu Ödemen"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Im Alter bedingt er einen Muskelabbau"
-- ⚠️ Sämtliche konkreten Laborparameter mit Halbwertszeiten und Cut-offs (Albumin HWZ ~20 Tage, <35 g/l; Präalbumin 2-3 Tage; Transferrin ~8 Tage) im Korpus nicht belegt — Pflege heute belegt nur die Folge des Eiweißmangels (Ödeme, Muskelabbau), nicht die Labordiagnostik. Quelle beschaffen (Labormedizin-Referenz / DGEM-Leitlinie klinische Ernährung) oder HWZ-/Cut-off-Werte entfernen. Der didaktische Kern (kein Einzelwert reicht; CRP/Leber/Niere/Dehydratation verfälschen) ist davon unabhängig korrekt, aber ebenfalls unbelegt.
+- ⚠️ Sämtliche konkreten Laborparameter mit Halbwertszeiten und Cut-offs (Albumin HWZ ~20 Tage, <35 g/l; Präalbumin 2-3 Tage; Transferrin ~8 Tage) im gesamten Korpus nicht verbatim belegt — Pflege heute belegt nur die Folge des Eiweißmangels (Ödeme, Muskelabbau), nicht die Labordiagnostik; icare-examen-kompakt und pruefungswissen ebenfalls ohne konkrete HWZ-/Cut-off-Werte für Ernährungs-Labor. Quelle beschaffen (DGEM-Leitlinie klinische Ernährung / Labormedizin-Referenz) oder HWZ-/Cut-off-Werte aus dem Schülerinhalt entfernen bis Beleg vorliegt.
 **Praxisfehler:** Albumin isoliert als Mangelernährungsmarker werten — es wird auch durch Entzündung gesenkt; immer CRP mitbestimmen.
 
 **Misconceptions:**
@@ -300,7 +308,13 @@
 - Zitat: "weicht die Einfuhr von der Ausfuhr in 24 Std. nur maximal 250 ml ab"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Diese Absonderung bleibt fast unbemerkt (Perspiratio insensibilis)"
-- ⚠️ Konkrete Zahlen "Perspiratio insensibilis ca. 700-900 ml/d" und "bei Fieber +500 ml/°C" im Korpus nicht belegt — Pflege heute nennt für Schweiß "ca. einen Liter/Tag" (Haut + Lunge laut Tab. 7.16 je ca. 0,5 l/Tag) ohne die 700-900-ml-Spanne und ohne die °C-Regel. Quelle beschaffen (Physiologie-Lehrbuch / DGE) oder Zahl auf die belegten Tab.-7.16-Werte (Haut ca. 0,5 l + Lunge ca. 0,5 l) umstellen; die +500-ml/°C-Regel separat belegen oder entfernen.
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Schweißdrüsen des Menschen produzieren täglich ca. einen Liter Schweiß"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Tägliche Wasseraufnahme und -abgabe nach der Empfehlung der Deutschen Gesellschaft für Ernährung"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Faustregel: 500 ml pro 1 °C Temperaturerhöhung"
+- ⚠️ Zahlenspanne "ca. 700-900 ml/d" für Perspiratio insensibilis im Korpus nicht belegt — Pflege heute belegt nur "ca. einen Liter Schweiß" (Gesamtschweiß Haut; Tab. 7.16 je ca. 0,5 l für Haut + 0,5 l für Lunge = ~1 l Perspiratio insensibilis gesamt). Die 700-900-ml-Spanne ist eine physiologische Querverweis-Angabe — im Fakt-Text auf die belegte Aussage "ca. 1 l/d über Haut und Lunge" korrigieren oder die Spanne separat belegen (DGE/Physiologie-Lehrbuch).
 **Praxisfehler:** Einfuhr nur als "Trinken" erfassen — Infusionen, Sondenkost und Suppen gehören dazu, sonst wird die Einfuhr systematisch unterschätzt.
 
 **Misconceptions:**
@@ -357,7 +371,7 @@
 - Zitat: "Tägliche Wasseraufnahme und -abgabe nach der Empfehlung der Deutschen Gesellschaft für Ernährung"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Erwachsene benötigen ca. 35 ml/kg KG; erhöht z. B. bei Erbrechen, Diarrhö, Fieber"
-- ⚠️ Die im Original genannte Spanne "30-35 ml/kg" sowie die Faustregel "Fieber +500 ml/°C" sind im Korpus nicht belegt — Pflege heute nennt nur "ca. 35 ml/kg KG" und Fieber als qualitativen Erhöhungsgrund. Spanne/°C-Wert auf den belegten Wert zurückgeführt bzw. entfernt; falls 30-35 ml/kg gewünscht → Quelle beschaffen (DGE/DGEM-Referenzwerte).
+- ⚠️ Spanne "30-35 ml/kg" im Korpus nicht verbatim belegt — Pflege heute nennt nur "ca. 35 ml/kg KG" (Einzelwert, kein Bereich). Faustregel "+500 ml/°C" ist in Pflege heute Kap. 8 verbatim belegt (➔ F-12 Beleg) und damit einsetzbar. Für die "30-35 ml/kg"-Variante: Quelle beschaffen (DGE-Referenzwerte / DGEM-Leitlinie) oder auf den belegten Wert "ca. 35 ml/kg KG" (Pflege heute) beschränken.
 **Praxisfehler:** Pauschal "viel trinken" empfehlen, ohne ärztliche Restriktion bei Herz-/Niereninsuffizienz zu beachten.
 
 **Misconceptions:**
@@ -384,7 +398,7 @@
 - Zitat: "Ergänzung der Nahrung durch Trinknahrung"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Häufigere kleine Mahlzeiten"
-- ⚠️ Quantitative Zielwerte "eiweißreiche Kost ca. 1,0-1,5 g/kg KG/Tag", "5-6 kleine Portionen" und "Evaluation nach 1-2 Wochen" im Korpus nicht verbatim belegt — Pflege heute belegt das Anreicherungs-/Zwischenmahlzeiten-/Trinknahrungs-Prinzip und "häufigere kleine Mahlzeiten" qualitativ. Quelle beschaffen (DGEM/ESPEN-Leitlinie klinische Ernährung für die g/kg-Vorgabe) oder konkrete Zahlen entfernen.
+- ⚠️ Quantitative Zielwerte "eiweißreiche Kost ca. 1,0-1,5 g/kg KG/Tag", "5-6 kleine Portionen" und "Evaluation nach 1-2 Wochen" im gesamten Korpus nicht verbatim belegt — Pflege heute belegt das Anreicherungs-/Zwischenmahlzeiten-/Trinknahrungs-Prinzip und "häufigere kleine Mahlzeiten" qualitativ; icare-examen-kompakt und pruefungswissen ohne konkrete g/kg-Vorgabe für Mangelernährung (nur allgemeine Hinweise auf eiweißreiche Kost). Quelle beschaffen (DGEM/ESPEN-Leitlinie klinische Ernährung für die g/kg-Vorgabe) oder konkrete Zahlen entfernen.
 **Praxisfehler:** Reflexartig Trinknahrung verordnen, ohne die Ursache zu klären — eine drückende Prothese wird nicht durch Trinknahrung behoben.
 
 **Misconceptions:**

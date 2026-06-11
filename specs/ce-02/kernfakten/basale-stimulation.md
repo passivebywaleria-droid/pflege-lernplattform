@@ -78,9 +78,9 @@
 
 ---
 
-### F-04: Neun Wahrnehmungsbereiche, von körpernah zu körperfern geordnet
+### F-04: Acht Wahrnehmungsbereiche, von körpernah zu körperfern geordnet
 
-**Fakt:** Die Basale Stimulation bietet sensorische Angebote in mehreren Wahrnehmungsbereichen: somatisch, vibratorisch, vestibulär (die drei basalen), olfaktorisch, oral, auditiv, taktil-haptisch und visuell. Die Bereiche sind entsprechend der menschlichen Entwicklung von körpernahen zu körperfernen Wahrnehmungen geordnet; die Angebote setzen bei schwerster Einschränkung körpernah am Körperstamm an.
+**Fakt:** Die Basale Stimulation bietet sensorische Angebote in acht Wahrnehmungsbereichen: somatisch, vibratorisch, vestibulär (die drei basalen), olfaktorisch, oral, auditiv, taktil-haptisch und visuell. Die Bereiche sind entsprechend der menschlichen Entwicklung von körpernahen zu körperfernen Wahrnehmungen geordnet; die Angebote setzen bei schwerster Einschränkung körpernah am Körperstamm an.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
@@ -96,7 +96,6 @@
 - Zitat: "Visuelle Angebote"
 - Zitat: "von körpernahen zu mehr körperfernen Wahrnehmungen geordnet"
 - Zitat: "Die Angebote setzen zunächst bei schwerster Einschränkung körpernah, beim vitalen Zentrum des Körperstamms an"
-- ⚠️ Der Fakt-Titel spricht von „Neun Wahrnehmungsbereiche"; Pflege heute zählt acht sensorische Angebote auf (somatisch, vibratorisch, vestibulär, olfaktorisch, oral, auditiv, taktil-haptisch, visuell). Die „neun" entsteht nur, wenn der kommunikative Bereich mitgezählt wird — diese Zählung ist in Pflege heute nicht so ausgewiesen → Quelle beschaffen (Bienstein/Fröhlich Original) ODER Titel auf „acht Angebote" anpassen.
 **Praxisfehler:** Es werden zu viele Bereiche gleichzeitig stimuliert — die Folge ist Überstimulation. Es gilt das Prinzip „Weniger ist oft mehr".
 
 **Misconceptions:**
@@ -119,7 +118,10 @@
 - Zitat: "Die somatische Stimulation (griech. soma = Körper) fördert den grundlegendsten Wahrnehmungsbereich"
 - Zitat: "eindeutige Informationen über seinen Körper und damit über sich selbst vermittelt"
 - Zitat: "mit konstantem Druck, mit flach aufgelegter Hand und mit Ruhe ausgeübt werden"
-- ⚠️ Konkrete Angebots-Beispiele „Nest-Positionierung" und „Abtasten mit fester Hand" sind in Pflege heute Kap. 12.4 nicht wörtlich als somatische Angebote benannt (genannt sind Berührung, Frotteetücher/raue Waschlappen, Ganzkörperwaschung) → Quelle beschaffen (Bienstein/Fröhlich) ODER auf belegte Beispiele reduzieren.
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "körperbegrenzende Lagerung" (Tab. 1.38: Beispiele für somatische Angebote der Basalen Stimulation)
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Nestlage) unterstützen die Körperwahrnehmung" (Nestlage als körperbegrenzende Positionierung bei Frühgeborenen, Kinderkrankenpflege Kap. 6.7)
 **Praxisfehler:** Zu leichtes, zaghaftes Streicheln statt klarem, konstantem Druck — unklare Reize können bei schwerstkranken Menschen Stress auslösen.
 
 **Misconceptions:**
@@ -167,7 +169,9 @@
 - Zitat: "Vibrationen am Knochen, z. B. an der Ferse oder am Ellenbogen, im Skelett weitergeleitet und sind tiefer im Körperinnern zu spüren"
 - Zitat: "indem Pflegende ihre Hände am Körper des Menschen vibrieren lassen" (Hände als Mittel)
 - Zitat: "spezielle vibrierende Geräte verwendet werden" (Vibrationsgeräte als Mittel)
-- ⚠️ Die „eigene summende Stimme" als vibratorisches Mittel ist in Pflege heute Kap. 12.4 nicht belegt (genannt: Hände, vibrierende Geräte) → Quelle beschaffen (Bienstein/Fröhlich) ODER entfernen. Auch die Kontraindikationen (Frakturen, frische OP, Thrombose-Risiko) sind dort nicht ausgewiesen → analog flaggen.
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "summen und singen, Vibrationen mit der Hand" (Tab. 1.38: Beispiele für vibratorische Angebote der Basalen Stimulation)
+- ⚠️ Kontraindikationen (Frakturen, frische OP, Thrombose-Risiko) für vibratorische Stimulation sind in den verfügbaren Korpora nicht verbatim als Liste ausgewiesen → Quelle beschaffen (Bienstein/Fröhlich oder Nydahl/Bartoszek) ODER als allgemeine pflegerische Vorsicht ohne Quellen-Anspruch kennzeichnen.
 **Praxisfehler:** Vibration wird zu lange oder bei Kontraindikationen (Frakturen, frische OP, Thrombose-Risiko) eingesetzt; Vibration ermüdet schnell und sollte dosiert werden.
 
 **Misconceptions:**

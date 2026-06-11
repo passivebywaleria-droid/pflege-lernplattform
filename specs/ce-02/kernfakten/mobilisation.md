@@ -147,8 +147,7 @@
 
 ### F-06: Gehhilfsmittel nach Stabilität
 
-**Fakt:** Gehhilfsmittel unterscheiden sich nach Unterstützungsgrad: Gehstock (geringste Unterstützung), Unterarmgehstütze (UAG, Teilbelastung einer Seite nach Fraktur/OP), Rollator (4-rädriger Gehwagen mit großer Standfläche und Sitzmöglichkeit für unsichere Patienten) und Rollstuhl (bei fehlender Steh-/Gehfähigkeit, aber parallel weiter mobilisieren). Der Rollator setzt Kraft zum Stützen, Stehen und Gehen voraus.
-⚠️ Quelle beschaffen (konkrete Primärquelle): Die Kern-Regel „Gehstock in die GESUNDE Hand (verlängert den gesunden Arm, entlastet die betroffene Seite)" ist im vorhandenen Korpus (Pflege heute) nicht verbatim belegbar — die einzige Stockstelle (Kap. zu Arthrose) beschreibt nur das gleichzeitige Aufsetzen mit dem erkrankten Bein, nicht die Hand-/Seitenwahl. Beleg über physiotherapeutische Primärquelle (z. B. AWMF-Leitlinie/Hilfsmittel-Versorgung, Ergo-/Physiotherapie-Lehrbuch) nachziehen, bevor die Hand-Regel als Schüler-Inhalt ausgespielt wird.
+**Fakt:** Gehhilfsmittel unterscheiden sich nach Unterstützungsgrad: Gehstock (geringste Unterstützung), Unterarmgehstütze (UAG, Teilbelastung einer Seite nach Fraktur/OP), Rollator (4-rädriger Gehwagen mit großer Standfläche und Sitzmöglichkeit für unsichere Patienten) und Rollstuhl (bei fehlender Steh-/Gehfähigkeit, aber parallel weiter mobilisieren). Der Rollator setzt Kraft zum Stützen, Stehen und Gehen voraus. Beim Gehstock ist der Stock gleichzeitig mit dem erkrankten Bein aufzusetzen — was die Handwahl impliziert (gegenüberliegende, also gesunde Hand). ⚠️ Die Kern-Regel „Gehstock in die GESUNDE Hand" ist im Korpus nur indirekt erschließbar (Pflege heute: Stock wird gleichzeitig mit dem erkrankten Bein aufgesetzt) — die explizite Seitenregel (gesunde Hand) ist nicht verbatim belegbar. Beleg über physiotherapeutische Primärquelle (AWMF-Leitlinie/Hilfsmittel-Versorgung, Ergo-/Physiotherapie-Lehrbuch) nachziehen, bevor die Hand-Regel als abgeschlossenes Zitat ausgespielt wird.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Klassifikation
@@ -157,6 +156,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "setzt Kraft zum Stützen, Stehen"  (belegt die Rollator-Teilaussage)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "dabei wird der Gehstock gleichzeitig mit dem erkrankten Bein aufgesetzt"  (belegt Stockrhythmus — impliziert gegenüberliegende/gesunde Hand)
 **Praxisfehler:** Gehstock wird in die kranke Hand gegeben; Rollator wird nicht individuell angepasst (Griffhöhe, Bremsen, Reifendruck).
 
 **Misconceptions:**
@@ -286,7 +287,7 @@
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Recht + Entscheidung
 **Bloom-Potential:** 5 (Bewerten)
-**Primärquelle:** (Pflege heute 7. Aufl.; § 630d BGB; § 1906a BGB; PflBG)
+**Primärquelle:** (Pflege heute 7. Aufl.; § 630d BGB; § 223 StGB; PflBG) — SACHKORREKTUR 2026-06-11: „§ 1906a BGB" entfernt (Norm seit 1.1.2023 aufgehoben; regelte ärztliche Zwangsmaßnahmen [heute § 1832 BGB], war hier ohnehin nicht einschlägig — der Fakt stützt sich auf Einwilligung § 630d BGB)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "ihre Selbstständigkeit und Selbstbestimmung gefördert"
@@ -307,8 +308,7 @@
 
 ### F-13: Mobilisationsplan und Dokumentation
 
-**Fakt:** Der Mobilisationsplan folgt dem Sechs-Schritt-Modell des Pflegeprozesses nach Fiechter/Meier: Assessment (Instrumente wie Tinetti, TUG, Barthel; ressourcenorientiert — die individuellen Bewegungsressourcen des Patienten erkennen) → Pflegediagnose im PÄS-Format (Problem, Ätiologie, Symptome; ggf. um Ressourcen erweitert) → SMART-Ziel mit dem Patienten (spezifisch, messbar, akzeptiert, realisierbar, terminierbar) → Maßnahmen (wer/wann/wie/womit) → Evaluation → Dokumentation im Pflegebericht. Der Pflegeprozess gilt als selbstständig durchzuführende und vorbehaltene Tätigkeit im Sinne des Pflegeberufegesetzes. Grundsatz: „Was nicht dokumentiert ist, gilt als nicht durchgeführt."
-⚠️ Fachkorrektur / Hinweis: Das Korpus belegt das Pflegediagnose-Schema verbatim als „PÄS" (Problem, Ätiologie, Symptome), nicht als „PESR" — „PESR/PÄS-R" mit zusätzlichem R für Ressourcen ist eine didaktische Erweiterung, im Pflege-heute-Extrakt nicht als Akronym belegt. Die Esslinger Transferskala ist im Korpus nicht belegbar (aus der Instrumenten-Liste entfernt; Tinetti/TUG/Barthel sind über F-02 belegt). Für „PESR" und Esslinger Transferskala ggf. Pflegediagnostik-/Assessment-Primärquelle beschaffen.
+**Fakt:** Der Mobilisationsplan folgt dem Sechs-Schritt-Modell des Pflegeprozesses nach Fiechter/Meier: Assessment (Instrumente wie Tinetti, TUG, Barthel; ressourcenorientiert — die individuellen Bewegungsressourcen des Patienten erkennen) → Pflegediagnose im PÄS-Format (Problem, Ätiologie [beeinflussende Faktoren], Symptome [bestimmende Merkmale]) → SMART-Ziel mit dem Patienten (spezifisch, messbar, akzeptiert, realisierbar, terminierbar) → Maßnahmen (wer/wann/wie/womit) → Evaluation → Dokumentation im Pflegebericht. Der Pflegeprozess gilt als selbstständig durchzuführende und vorbehaltene Tätigkeit im Sinne des Pflegeberufegesetzes. Grundsatz: „Was nicht dokumentiert ist, gilt als nicht durchgeführt." Hinweis: Das Akronym „PESR" (mit R für Ressourcen) ist eine didaktische Erweiterung — im Korpus verbatim nur als „PÄS" belegt. Die Esslinger Transferskala ist im Korpus nicht belegbar. Für „PESR" und Esslinger Transferskala ggf. Pflegediagnostik-Primärquelle beschaffen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme + Dokumentation
@@ -323,6 +323,8 @@
 - Zitat: "spezifisch, messbar, akzeptiert, realisierbar, terminierbar"  (belegt SMART-Formulierung der Ziele)
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "vorbehaltene Tätigkeit im Sinne des"  (belegt: Pflegeprozess/Pflegediagnose = vorbehaltene Aufgabe nach PflBG — siehe M2)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "PÄS-Format (Problem, Ätiologie [beeinflussende Faktoren] und Symptome [bestimmende Merkmale])"  (belegt PÄS-Format als verbatimes Akronym und Vollform)
 **Praxisfehler:** Unkonkrete Ziele („Frau M. wird mobilisiert") statt SMART-Formulierung; Defizit-Fokus statt Ressourcenorientierung.
 
 **Misconceptions:**

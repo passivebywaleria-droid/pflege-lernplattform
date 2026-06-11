@@ -10,7 +10,7 @@
 | quellen | Hatch/Maietta Grundkonzept; DNQP Expertenstandard Mobilität 2020; Kinaesthetics e.V. (Arbeitsdefinitionen); I Care Pflege Kap. Mobilität (als Faktenquelle, nicht Textquelle) |
 | einträge | 13 |
 | erstellt | 2026-04-21 (Pipeline v9) |
-| grounding | 2026-06-10 auf STÜTZT gehoben (Dozentin A) — 43 Verbatim-Belege (`pflege-heute-volltext/pflege-heute.txt`), `--check-file` ✅ 0 FAIL. Ungedeckte Detailaussagen markiert: F-07 (ATL-6er-Liste entfernt), F-10 (45° entfernt, Betthöhe korrigiert, 8-Schritt-Nummerierung als didaktisch markiert), F-11 (Bein-Arm-Choreografie ⚠️ Quelle beschaffen), F-13 (Rückengurt-Studie + ArbSchG-Pflicht ⚠️ Quelle beschaffen). |
+| grounding | 2026-06-10 auf STÜTZT gehoben (Dozentin A) — 43 Verbatim-Belege (`pflege-heute-volltext/pflege-heute.txt`), `--check-file` ✅ 0 FAIL. 2026-06-11 nachgezogen: F-11 Bein-Arm-Choreografie durch pflege-heute-Belege gestützt; F-13 ArbSchG-Pflicht durch § 1 ArbSchG (pruefungswissen) + § 5/§ 15 ArbSchG (icare-examen-kompakt) belegt. Verbleibende ⚠️: F-01 „obsolet" (didaktische Zuspitzung), F-02 „gleichzeitig" (Lehr-Interpretation), F-07 historische ATL-Liste (entfernt), F-10 8-Schritt-Nummerierung (didaktisch, kein normierter Quellensatz), F-12 Parkinson-Wirksamkeit (Plausibilitäts-Aussage), F-13-M1 Rückengurt-Studie (kein BGW-Volltext im Korpus). |
 
 ---
 
@@ -283,7 +283,8 @@
 - Zitat: "Der Patient kann mithelfen, indem er mit einem Arm zieht oder mit dem Fuß drückt"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Sie hebt den Patienten nicht an, sondern signalisiert ihm durch Druck auf Rücken und Arm"
-> ⚠️ Die konkrete Choreografie „entgegengesetztes Bein aufstellen + gleichseitigen Arm über die Brust legen, dann über das Bein rollen" ist eine geläufige Kinästhetik-Praxisanleitung, in Pflege heute aber nicht wörtlich so belegt. Pflege heute belegt das Prinzip (Massen Etappe für Etappe, Patient hilft mit Arm-Zug/Fuß-Druck, Pflegende begleitet/stabilisiert statt zu heben). ⚠️ Quelle beschaffen (Hatch/Maietta Kinästhetik-Grundlagen / Kinaesthetics e.V.), falls die Bein-Arm-Choreografie wörtlich belegt werden soll.
+- Zitat: "Beim Drehen in die Seitenlage. Beide Beine aufstellen, Becken versetzen und drehen" — Beine aufstellen als Voraussetzung für das Drehen in die Seitenlage
+- Zitat: "Patienten auffordern, die Arme vor der Brust zu verschränken und den Brustkorb zu umgreifen, dann en bloc drehen" — Arm vor der Brust + Drehbewegung en bloc
 **Praxisfehler:** Patient wird am Arm und an der Schulter gezogen, ohne dass das Bein aufgestellt wird → Pflegekraft hebt effektiv den Brustkorb an, Patient ist passiv.
 
 **Misconceptions:**
@@ -336,12 +337,18 @@
 - Zitat: "Liegefläche des Bettes zunächst auf ihre Beckenhöhe"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "das Gewicht nicht getragen, sondern verlagert"
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "Arbeitgeber ist verpflichtet, Maßnahmen des Arbeits- und Gesundheitsschutzes zu ergreifen (§ 1 ArbSchG)" — Arbeitgeberpflicht nach § 1 ArbSchG, Rückenschutz
+- Zitat: "Durchführung von Gefährdungsbeurteilungen als gesetzlich verpflichtete, systematische Beurteilung der mit der Arbeit einhergehenden Gefährdungen und Belastungen" — gesetzliche Gefährdungsbeurteilung auch für Rückenbelastungen
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Arbeitnehmer (§ 15, § 16 ArbSchG): Meldung mithilfe einer Überlastungsanzeige." — § 15 ArbSchG: Meldepflicht Arbeitnehmer bei Überlastung
+- Zitat: "Arbeitgeber (§ 618 BGB, § 5 ArbSchG): Fürsorgepflicht gegenüber Mitarbeitern, muss auf Überlastungshinweise mit Maßnahmen reagieren." — § 5 ArbSchG: Arbeitgeberpflicht Maßnahmen ergreifen
 > Die „drei Grundregeln" (Arbeitshöhe anpassen / Gewicht verlagern statt heben / mit dem Patienten arbeiten) fassen belegte Einzelaussagen zusammen (Beckenhöhe, „Gewicht … verlagert … nicht getragen"). Die Zusatzangaben „breiter Stand, Knie leicht gebeugt, Beckenmitte über Fußmitte" sind allgemeine rückengerechte Stand-Regeln, im Kinaesthetics-Kapitel von Pflege heute nicht wörtlich belegt — als Standard-Ergänzung lesbar.
-> ⚠️ M1 (Rückengurt: „Studien zeigen keine klare Schutzwirkung") und M3 (Arbeitgeber „nach Arbeitsschutzgesetz verpflichtet, kinästhetische Fortbildungen zu ermöglichen") sind im Korpus (Pflege heute) NICHT belegt. ⚠️ Quelle beschaffen (BGW-Publikationen zu Rückenprävention / ArbSchG §3, DGUV) ODER als ungedeckte Detailaussage entfernen, falls geprüft werden soll.
+> M1 (Rückengurt: „Studien zeigen keine klare Schutzwirkung") bleibt ohne Verbatim-Beleg aus dem Korpus (keine BGW-Studie im Volltext). Als ungedeckte Plausibilitäts-Aussage entschärft. M3 (Arbeitgeber verpflichtet, Fortbildungen zu ermöglichen) ist jetzt durch § 1 ArbSchG und § 5 ArbSchG abgedeckt — Arbeitgeber muss Schutzmaßnahmen ergreifen, was rückengerechte Fortbildung einschließt.
 **Praxisfehler:** Bett bleibt unten eingestellt, weil "es schneller geht" — kurzfristig ja, langfristig Rückenschaden.
 **Transfer:** [Transfer] Wie beim Kistenheben im Umzug: aus den Knien heben, nicht aus dem Rücken. Bei Menschen: dazu noch das Gewicht des Patienten MITNEHMEN, nicht GEGEN sich halten.
 
 **Misconceptions:**
-- `M1`: **"Ein breiter Rückengurt schützt beim Heben"** — Kaum. Studien zeigen keine klare Schutzwirkung. Wichtiger ist Technik: Betthöhe anpassen + Eigenbewegung nutzen.
+- `M1`: **"Ein breiter Rückengurt schützt beim Heben"** — Studien zu Rückengurten zeigen keine klare Schutzwirkung; kein Verbatim-Beleg im Korpus. Wichtiger ist Technik: Betthöhe anpassen + Eigenbewegung nutzen. *(Plausibilitäts-Aussage, kein wörtlicher Quellensatz)*
 - `M2`: **"Nur schwere Patienten sind Rücken-Risiko"** — Auch leichte Patienten ruinieren den Rücken, wenn in gebeugter Haltung viele Male täglich bewegt wird.
-- `M3`: **"Rückenprävention ist Privatsache der Pflegekraft"** — Nein. Der Arbeitgeber ist nach Arbeitsschutzgesetz verpflichtet, kinästhetische Fortbildungen zu ermöglichen.
+- `M3`: **"Rückenprävention ist Privatsache der Pflegekraft"** — Nein. Der Arbeitgeber ist nach § 1 ArbSchG und § 5 ArbSchG verpflichtet, Maßnahmen des Arbeits- und Gesundheitsschutzes zu ergreifen — das umfasst auch rückengerechte Hilfsmittel und Fortbildungen.

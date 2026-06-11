@@ -47,7 +47,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Verzahnung der Epidermis (Oberhaut) mit dem darunterliegenden Dermis"
-- ⚠️ Quelle beschaffen (I-Care Anatomie): `pflege-heute.txt` benennt **Epidermis** und **Dermis** verbatim, aber keine geschlossene Drei-Schichten-Aussage, die die **Subcutis (Unterhaut, Fettgewebe)** als dritte Hautschicht der Strukturbeschreibung nennt (Vorkommen nur in Dekubitus-/Turgor-Kontext, nicht als Schichtdefinition). Subcutis-Schicht ist daher in diesem Korpus nicht STÜTZT-belegbar.
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Mit Oberhaut, Lederhaut und Unterhaut besteht die Haut aus 3 Schichten" (Abb. 54.1 Bildunterschrift, I Care Examen Kompakt Kap. 54)
+- Zitat: "Oberhaut (Epidermis): besteht aus Plattenepithel" (mit Lederhaut/Corium und Unterhaut/Subkutis als drei Schichten)
 **Praxisfehler:** Subcutis wird als "nur Fett" abgetan — dabei ist das Unterhautfettgewebe für Druckverteilung (Dekubitusschutz) und Turgor wichtig.
 
 **Misconceptions:**
@@ -275,7 +277,7 @@
 
 ### F-13: Drüsentypen — Sebum (Talg) vs. Sudor (Schweiß)
 
-**Fakt:** Die Haut besitzt Talgdrüsen (produzieren Sebum/Fett) und Schweißdrüsen (produzieren wässrigen Schweiß). Schweiß wird von den exokrinen Schweißdrüsen abgesondert und reagiert leicht sauer. Sebum und Schweiß bilden gemeinsam den Hydrolipidfilm. Bei Männern hat die Haut mehr Talgdrüsen, bei Frauen ist das Unterhautfettgewebe stärker.
+**Fakt:** Die Haut besitzt Talgdrüsen (produzieren Sebum/Fett) und Schweißdrüsen (produzieren wässrigen Schweiß). Schweiß wird von den exokrinen Schweißdrüsen abgesondert und reagiert sauer (pH 4–5). Sebum und Schweiß bilden gemeinsam den Hydrolipidfilm. Bei Männern hat die Haut mehr Talgdrüsen, bei Frauen ist das Unterhautfettgewebe stärker.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Fakt
@@ -286,7 +288,7 @@
 - Zitat: "Das Wasser stammt von den Schweißdrüsen, das Fett wird von den Talgdrüsen produziert"
 - Zitat: "Haut besitzt mehr Talgdrüsen und die"
 - Zitat: "bei Frauen das Unterhautfettgewebe stärker ausgeprägt"
-- ⚠️ Quelle beschaffen (I-Care Anatomie / Physiologie): Teilaussage "Schweiß reagiert leicht sauer" ist in `pflege-heute.txt` nicht verbatim belegbar (nur der pH-5,5-Wert des Hydrolipidfilms in F-04). Bei nächster Überarbeitung entweder mit Physiologie-Quelle belegen oder aus dem Fakt entfernen.
+- Zitat: "Schweiß reagiert sauer: der pH-Wert liegt zwischen 4 und 5" (Kap. 5.7 Schweiß)
 **Praxisfehler:** Sebum und Schweiß werden gleichgesetzt — beide sind unterschiedliche Sekrete (Fett vs. Wasser/Salz), die erst zusammen den Schutzfilm bilden.
 
 **Misconceptions:**

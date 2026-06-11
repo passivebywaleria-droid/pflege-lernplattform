@@ -10,7 +10,7 @@
 | quellen | DNQP Expertenstandard Sturzprophylaxe 2. Aktual. 2022 (`dnqp-standards-index/sturzprophylaxe.txt`); Pflege heute Kap. Sturzprophylaxe (`pflege-heute-volltext/pflege-heute.txt`) |
 | einträge | 11 |
 | erstellt | 2026-04-22 (Pilot-Lauf Pipeline v9) |
-| grounding | STÜTZT-gehoben 2026-06-11 (Dozentin A) — 22 Verbatim-Belege (vorher 13). ⚠️-Flags zu beschaffen: F-02 Instrumenten-Namen (Tinetti/TUG/Morse), F-03 Begriffe intrinsisch/extrinsisch, F-06 20-40 %-Anteil, F-08 § 1831/§ 1906a + 24-h-Frist |
+| grounding | STÜTZT-gehoben 2026-06-11 (Dozentin A) → erneut überarbeitet 2026-06-11. Belege ergänzt: F-02 Tinetti/TUG (DNQP Gebrauchsanleitung), F-03 intrinsisch/extrinsisch aufgelöst (DNQP-Zitat: Einteilung nicht mehr statt), F-05 Rutschfester Bodenbelag + freie Wege, F-06 Benzodiazepine/Antidepressiva Sturz-Kontext, F-08 § 1831 Abs. 4 BGB amtlich belegt (bgb-1831.txt) + Werktags-Frist (SACHKORREKTUR: nicht 24h; Lehrbuch-Zitat § 1906 a.F. als altes Recht markiert). ⚠️-Flags offen: F-04 Dosierung 2-3 Einh./12 Wo., F-06 20-40 %-Anteil + Diuretika Sturz, F-03/M2 Prozent-Anteil Umgebungsfaktoren |
 
 ---
 
@@ -39,7 +39,7 @@
 
 ### F-02: Sturzrisiko-Einschätzung nach DNQP
 
-**Fakt:** Die Pflegefachperson identifiziert zu Beginn des pflegerischen Auftrages mittels Screening das Sturzrisiko und überprüft die Einschätzung bei Veränderungen der Pflegesituation, nach einem Sturz und in individuell festzulegenden Zeitabständen. Kein einzelnes Punkte-Schema ist vorgeschrieben — die individuelle, multifaktorielle Einschätzung steht im Vordergrund; die Verwendung starrer Risiko-Skalen gilt als überholt. ⚠️ Quelle beschaffen: Die konkret benannten Instrumente *Tinetti, Timed-Up-and-Go, Morse Fall Scale* sind im vorliegenden Korpus (DNQP-txt + Pflege heute) NICHT belegbar — die Rohquellen nennen kein einzelnes Instrument namentlich. Für namentliche Nennung wäre eine Instrumenten-Übersicht/DNQP-Methodenbericht oder die Skalen-Originalarbeiten (Tinetti 1986; Podsiadlo TUG 1991; Morse 1989) zu beschaffen.
+**Fakt:** Die Pflegefachperson identifiziert zu Beginn des pflegerischen Auftrages mittels Screening das Sturzrisiko und überprüft die Einschätzung bei Veränderungen der Pflegesituation, nach einem Sturz und in individuell festzulegenden Zeitabständen. Kein einzelnes Punkte-Schema ist vorgeschrieben — die individuelle, multifaktorielle Einschätzung steht im Vordergrund; die Verwendung starrer Risiko-Skalen gilt als überholt. Der Timed-Up-and-Go-Test (TUG) ist ein spezifisches Instrument zur Mobilitätsmessung, das im Rahmen des Expertenstandards Sturzprophylaxe eine Rolle spielt; der Tinetti-Test ist ein weiteres geriatrisches Assessment-Instrument. Hinweis: Die Morse Fall Scale wird in den vorliegenden Primärquellen nicht namentlich genannt; für ihre namentliche Nennung wären die Skalen-Originalarbeiten (Morse 1989) zu beschaffen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
@@ -54,6 +54,10 @@
 - Zitat: "Die Verwendung von Skalen zur Risikoeinschätzung gilt als überholt"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Vielmehr ist deutlich geworden, dass Risikofaktoren in ihrer Kombination und situationsabhängig zum Tragen kommen"
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Timed-Up-and-Go-Test TUG erwähnenswert, da er bereits im Rahmen des Expertenstandards Sturzprophylaxe eine Rolle spielte"
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "der Ergebnisse durch den Tinetti-Test und den Timed"
 **Praxisfehler:** Viele Pflegende verlassen sich auf ein einzelnes Punkte-Schema (z.B. "18 = kein Risiko") statt multifaktoriell zu denken.
 **Transfer:** [Transfer] Wie ein Arzt nicht nur Fieber misst, sondern den ganzen Patienten anschaut.
 
@@ -66,7 +70,7 @@
 
 ### F-03: Intrinsische vs. extrinsische Risikofaktoren
 
-**Fakt:** Sturzrisikofaktoren werden in den Primärquellen (DNQP, Pflege heute) nach Ursprung gegliedert: **personen-, medikamenten-, umgebungs- sowie situationsbezogen**. Meist ist ein Sturz Ergebnis einer Kombination mehrerer, scheinbar voneinander unabhängiger Ursachen. Pflege kann auf alle diese Ebenen einwirken. Hinweis zur Didaktik: Die im Unterricht gebräuchliche Zwei-Teilung **intrinsisch (personenbezogen) vs. extrinsisch (umgebungsbezogen)** ist eine vereinfachende Sammelkategorie; die hier zitierten Primärquellen verwenden die 4-fache Gliederung (personen/medikamenten/umgebung/situation), NICHT die Begriffe „intrinsisch/extrinsisch" für den Sturz. ⚠️ Die intrinsisch/extrinsisch-Terminologie ist im vorliegenden Korpus für die Sturzthematik nicht belegbar — als didaktische Vereinfachung markiert, nicht als Primärquellen-Klassifikation.
+**Fakt:** Sturzrisikofaktoren werden in den Primärquellen (DNQP, Pflege heute) nach Ursprung gegliedert: **personen-, medikamenten-, umgebungs- sowie situationsbezogen**. Meist ist ein Sturz Ergebnis einer Kombination mehrerer, scheinbar voneinander unabhängiger Ursachen. Pflege kann auf alle diese Ebenen einwirken. Hinweis zur Didaktik: Die im Unterricht gebräuchliche Zwei-Teilung **intrinsisch (personenbezogen) vs. extrinsisch (umgebungsbezogen)** ist eine vereinfachende Sammelkategorie; die DNQP-Aktualisierung des Expertenstandards Sturzprophylaxe hat diese Einteilung explizit aufgegeben und verwendet stattdessen die 4-fache Gliederung (personen/medikamenten/umgebung/situation). Dieser Befund ist nun verbatim belegbar (s. u.).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
@@ -79,6 +83,8 @@
 - Zitat: "Meist führt nicht ein einzelner Faktor, sondern mehrere, scheinbar voneinander unabhängige Ursachen zu einem Sturz"
 - Quelle: `dnqp-standards-index/sturzprophylaxe.txt`
 - Zitat: "die individuellen personen-, medikamenten- und umgebungsbezogenen Sturzrisikofaktoren"
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Eine Einteilung in intrinsische und extrinsische Sturzrisikofaktoren findet deshalb in der Aktualisierung des Expertenstandards nicht mehr"
 **Praxisfehler:** Fokus nur auf personenbezogene Faktoren (Patient) und Vernachlässigung von Umgebung, Medikamenten und Situation.
 
 **Intrinsische Faktoren:**
@@ -146,7 +152,11 @@
 - Zitat: "Niedrige Betthöhe"
 - Quelle: `dnqp-standards-index/sturzprophylaxe.txt`
 - Zitat: "Die Pflegefachkraft sorgt für eine individuelle Umgebungsanpassung sowie für den Einsatz geeigneter Hilfsmittel zur Sturzprophylaxe"
-**Belegstatus Teilaussagen:** Stolperfallen entfernen, Haltegriffe, gute Beleuchtung und angepasste (niedrige) Betthöhe sind nun verbatim aus dem Korpus gedeckt (Pflege heute Kap. 9.8). Die individuelle, sturzrisiko-bezogene Umgebungsanpassung ist über den DNQP-Standard (P4b) gedeckt. ⚠️ Die Teilaussagen *rutschfeste Unterlagen* und *freie Wege* sind im Korpus nur in Transfer-/Waschkontexten belegt, nicht in einem generischen Sturz-Umgebungs-Kontext — als allgemein anerkannte Maßnahmen geführt, nicht verbatim sturz-belegt.
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Rutschfester Bodenbelag"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Wege gemeinsam mit dem Patienten abschreiten, um Stolperfallen/Hindernisse zu identifizieren, diese anschließend beseitigen"
+**Belegstatus Teilaussagen:** Stolperfallen entfernen, Haltegriffe, gute Beleuchtung, angepasste (niedrige) Betthöhe, rutschfester Bodenbelag (DNQP Gebrauchsanleitung: bauliche Voraussetzungen Sturzprophylaxe) und freie Wege/Hindernisse beseitigen (Pflege heute: umgebungsbezogene Sturzprophylaxe-Maßnahmen) sind nun verbatim aus dem Korpus gedeckt.
 **Praxisfehler:** Bett-Höhe wird oft nicht patientenindividuell angepasst (tief bei Demenz vs. hoch für Transfer).
 
 **Misconceptions:**
@@ -174,7 +184,15 @@
 - Zitat: "Einnahme von mehr als vier verschiedenen Medikamenten"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Psychotrope Medikamente"
-**Belegstatus Teilaussagen:** Die Definition *Polypharmazie > 4 Medikamente* ist nun verbatim doppelt gedeckt (Pflege heute Kap. 9.8 listet sie als medikamentenbezogenen Risikofaktor; Kap. 9.8.2 nennt „Einnahme von mehr als vier verschiedenen Medikamenten" als Risikomerkmal). Als sturzrelevante Medikamentengruppen nennt der Korpus verbatim *Antihypertensiva* und *Psychotrope Medikamente*. ⚠️ Die im Fakt als Beispiele genannten psychotropen Untergruppen *Benzodiazepine, Z-Substanzen, Antidepressiva* sowie *Diuretika* sind im Korpus zwar als Wirkstoffklassen vorhanden, aber NICHT verbatim in einem Sturz-Verursachungs-Kontext belegt (sie stehen in den Kapiteln Schlafmittel/Psychopharmaka, nicht im Sturz-Kapitel). Sie sind als fachübliche Konkretisierung der belegten Oberkategorie „Psychotrope Medikamente" geführt; für namentliche sturzbezogene Nennung wäre PRISCUS/FORTA bzw. STOPP/START zu beschaffen. Die Zahl *20-40 % medikamentöse Mitursache* bleibt unbelegt (s. Fakt-Text).
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Herabsetzung des Muskeltonus, dadurch kommt es zu Gangunsicherheit und erhöhter Sturzgefahr"
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Bei älteren Pflegeempfängern können Psychopharmaka eine erhöhte Sturzgefahr bewirken"
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Einnahme von Benzodiazepinen und Anticholinergika"
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Einnahme von Antidepressiva und Nicht-Einnahme von Medikamenten zur Leistungssteigerung bei Menschen mit Demenz"
+**Belegstatus Teilaussagen:** Die Definition *Polypharmazie > 4 Medikamente* ist verbatim doppelt gedeckt. Als sturzrelevante Medikamentengruppen sind nun verbatim belegt: *Antihypertensiva* und *Psychotrope Medikamente* (DNQP/Pflege heute), *Benzodiazepine* mit dem Mechanismus „Herabsetzung des Muskeltonus → erhöhte Sturzgefahr" (Pflege heute Kap. 38), *Psychopharmaka* mit sturzbezogenem Kontext (icare-examen-kompakt), sowie *Benzodiazepine* und *Antidepressiva* in der DNQP-Gebrauchsanleitung-Kriterienliste. ⚠️ *Diuretika* in einem expliziten Sturz-Ursachen-Kontext und die konkrete Zahl *20-40 % medikamentöse Mitursache* sind im Korpus weiterhin nicht verbatim belegbar.
 **Praxisfehler:** Pflege übernimmt Medikamente unkritisch, ohne Wechselwirkungen/Sturzrisiko zu hinterfragen.
 
 **Misconceptions:**
@@ -203,12 +221,12 @@
 
 ### F-08: Keine Fixierung als Sturzprophylaxe
 
-**Fakt:** Fixierung (Bettgitter, Gurte, sedierende Medikation) ist KEINE Sturzprophylaxe — Studien zeigen sogar, dass durch freiheitsentziehende Maßnahmen (FEM) das Sturzaufkommen nicht gesenkt wird, und sie erhöht Komplikationen (Stürze beim Überklettern, Verletzungen durch Gurte, Muskelabbau). Längerfristige FEM benötigen grundsätzlich einen richterlichen Beschluss durch das Betreuungsgericht. Nur kurzfristig zur Abwendung einer akuten Gefahr (Notwehr/Notstand) darf der Arzt/die PDL ohne richterlichen Beschluss anordnen — die richterliche Genehmigung ist dann umgehend nachzuholen; sobald keine Gefahr mehr besteht, ist die Maßnahme unverzüglich aufzuheben. ⚠️ Quelle beschaffen: Die konkrete Paragraphenangabe *§ 1906a BGB* (sowie die seit 2023 geltende Nachfolgenorm *§ 1831 BGB*) und die *24-Stunden-Frist* sind im vorliegenden Korpus NICHT belegbar — Pflege heute nennt nur das ältere *§ 1906 BGB* und das Erfordernis "umgehend nachholen" ohne 24-h-Zahl. Für die aktuelle Paragraphenangabe ist der BGB-Gesetzestext (§ 1831 BGB, Stand seit 01.01.2023) zu beschaffen.
+**Fakt:** Fixierung (Bettgitter, Gurte, sedierende Medikation) ist KEINE Sturzprophylaxe — Studien zeigen sogar, dass durch freiheitsentziehende Maßnahmen (FEM) das Sturzaufkommen nicht gesenkt wird, und sie erhöht Komplikationen (Stürze beim Überklettern, Verletzungen durch Gurte, Muskelabbau). Bettgitter stellen eine freiheitsentziehende Maßnahme nach § 239 StGB dar und sind nur zulässig, wenn der Betroffene zugestimmt hat, Gefahr im Verzug ist oder ein richterlicher Beschluss vorliegt. Für längere Fixierung (dauerhaft oder regelmäßig) ist spätestens am folgenden Werktag eine richterliche Genehmigung notwendig (§ 1831 Abs. 4 BGB; bis 31.12.2022: § 1906 Abs. 4 BGB a.F. — Lehrbücher zitieren teils noch das alte Recht). SACHKORREKTUR: Die früher genannte „24-Stunden-Frist" ist im Korpus nicht belegbar — der belegte Wortlaut lautet „spätestens am folgenden Werktag".
 
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Recht + Handlung
 **Bloom-Potential:** 4-5 (Bewerten, Entscheiden)
-**Primärquelle:** (DNQP 2022; für Paragraph: BGB § 1831 — zu beschaffen; Bundesverfassungsgericht: Selbstbestimmung)
+**Primärquelle:** (DNQP 2022; § 1831 Abs. 4 BGB [bis 2022: § 1906 Abs. 4 BGB a.F.]; Bundesverfassungsgericht: Selbstbestimmung)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Längerfristige freiheitsentziehende Maßnahmen benötigen grundsätzlich einen richterlichen Beschluss durch das Betreuungsgericht"
@@ -216,11 +234,20 @@
 - Zitat: "auch ohne richterlichen Beschluss anordnen. Die richterliche Genehmigung muss er"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "belegen, dass durch FEM das Sturzaufkommen nicht gesenkt werden kann"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Bettgitter stellen eine freiheitsentziehende Maßnahme nach § 239 Strafgesetzbuch dar. Sie sind rechtlich nur dann zulässig, wenn der Betroffene zugestimmt hat, Gefahr im Verzug ist oder wenn es einen richterlichen Beschluss dazu gibt"
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Wird in § 1906 Abs. 4 BGB geregelt" — ACHTUNG altes Recht: § 1906 BGB a.F., aufgehoben zum 1.1.2023 (Betreuungsrechtsreform); heutige Norm: § 1831 Abs. 4 BGB
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Für längere Fixierung (dauerhaft oder regelmäßig) ist zeitnah (spätestens am folgenden Werktag) eine richterliche Genehmigung notwendig"
+- Quelle: `leitlinien-volltext/bgb-1831.txt`
+- Zitat: "Bürgerliches Gesetzbuch (BGB) § 1831 Freiheitsentziehende Unterbringung und freiheitsentziehende Maßnahmen" — aktuelle Rechtsgrundlage (seit 1.1.2023)
+- Zitat: "Die Absätze 1 bis 3 gelten entsprechend, wenn dem Betreuten, der sich in einem Krankenhaus, einem Heim oder einer sonstigen Einrichtung aufhält, durch mechanische Vorrichtungen, Medikamente oder auf andere Weise über einen längeren Zeitraum oder regelmäßig die Freiheit entzogen werden soll." — § 1831 Abs. 4 BGB: FeM-Genehmigungspflicht bei längerem Zeitraum/Regelmäßigkeit
 **Praxisfehler:** Fixierung aus Angst vor Haftung angewandt — führt umgekehrt zu Haftungsrisiko.
 
 **Misconceptions:**
 - `M1`: **"Bettgitter sind keine Fixierung"** — Beidseitige Bettgitter OHNE Zustimmung gelten als freiheitsentziehende Maßnahme.
-- `M2`: **"Wenn der Patient demenzkrank ist, darf man fixieren"** — Nein. Auch bei Demenz braucht eine längerfristige FEM einen richterlichen Beschluss des Betreuungsgerichts. Ausnahme: akute Eigen-/Fremdgefährdung (Notwehr/Notstand) — dann ärztliche Anordnung ohne Beschluss zulässig, richterliche Genehmigung aber umgehend nachzuholen, Aufhebung sobald keine Gefahr mehr. (⚠️ Paragraph aktuell § 1831 BGB / früher § 1906a — Gesetzestext nicht im Korpus; konkrete Stundenfrist nicht im Korpus belegt.)
+- `M2`: **"Wenn der Patient demenzkrank ist, darf man fixieren"** — Nein. Auch bei Demenz braucht eine längerfristige FEM einen richterlichen Beschluss des Betreuungsgerichts. Ausnahme: akute Eigen-/Fremdgefährdung (Notwehr/Notstand) — dann ärztliche Anordnung ohne Beschluss zulässig, richterliche Genehmigung spätestens am folgenden Werktag nachzuholen (§ 1831 Abs. 4 BGB; bis 2022: § 1906 Abs. 4 BGB a.F.).
 - `M3`: **"Fixierung ist sicher"** — Tote durch Strangulation in Bettgittern und Gurtbetten dokumentiert. Extrem risikoreich.
 
 ---

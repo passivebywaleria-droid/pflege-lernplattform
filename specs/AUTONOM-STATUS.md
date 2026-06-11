@@ -1,6 +1,6 @@
 # Autonom-Status — lebende Queue & Metriken
 
-**Letzter Lauf:** 2026-06-11 Zyklus 7 (Cleanup-Pass) · **Phase:** CE-02 autonome Decke erreicht — Übergabe an Mensch/Geld-Tore (Lizenzquellen + Dozentin)
+**Letzter Lauf:** 2026-06-11 Zyklus 10 Welle 2 (Buch-Korpora + 5 neue freie Quellen) · **Phase:** „Autonome Decke" REVIDIERT — Gründerin-PDFs (24 Bücher) + dokumen.pub-Pfad öffnen weitere Quellen. ⚠️ 250→148.
 
 ---
 
@@ -13,8 +13,9 @@
 | **STÜTZT (Zitat trägt Claim voll)** | **91 % (322)** ✅ ZIEL ERREICHT | ≥ 90 % |
 | **TEILWEISE unmarkiert (Listen ohne Beleg/⚠️)** | **0** ✅ (Cleanup Zyklus 7) | 0 ✅ |
 | **STÜTZT-NICHT (Zitat trägt Claim nicht)** | **0** ✅ (2 gefixt) | 0 ✅ |
-| **⚠️ ehrlich markierte Sub-Claims (Korrektur!)** | **~250 Vorkommen** (≈10/Datei) | so weit wie freie Quellen reichen |
-| Freie Primärquellen integriert | 12 (AWMF-VTE, RKI-KRINKO, ASPEN, SBAR, IDDSI, EPUAP, DGE×2, **§630f BGB, §267/§203 StGB, DGSM-Insomnie 2025**) | alle freien |
+| **⚠️ ehrlich markierte Sub-Claims** | **148 Vorkommen** (Stand Zyklus 10 Welle 2; vorher ~250) | so weit wie Quellen reichen |
+| Freie Primärquellen integriert | 18 (AWMF-VTE, RKI-KRINKO, ASPEN, SBAR, IDDSI, EPUAP, DGE×2, §630f BGB, §267/§203 StGB, DGSM-Insomnie 2025, DGEM-Heimenterale 2024, **WHO-Zucker 2015, AWMF-Dysphagie [letzte Fassung], Pflege-Charta, §1827 BGB, §1831 BGB**) | alle freien |
+| Buch-Korpora (Gründerin-PDFs) | 24 Bücher als Volltext erschlossen (Welle 1) | — |
 
 **Ehrliche Selbst-Einschätzung (kein Schönreden — KORREKTUR früherer Unterschätzung):** Zwei verschiedene Granularitäten nicht verwechseln:
 - **Fakt-Ebene:** 322/353 Fakten (91 %) haben ihren **Kern**-Claim voll verbatim belegt; 0 STÜTZT-NICHT, 0 unmarkierte Listen → **halluzinationssicher**.
@@ -30,9 +31,10 @@
 2. ✅ ERLEDIGT Zyklus 7: Cleanup-Pass 30 unmarkierte Listen-TEILWEISE → 0 unmarkiert (Zweitzitat ODER ehrliches ⚠️).
 3. ✅ ERLEDIGT Zyklus 8: 4 amtliche freie Quellen (§630f BGB, §267/§203 StGB, DGSM-Insomnie 2025) → 7 ⚠️→Beleg. Geblockt: AWMF-Dysphagie (HTTP 500), Charta (404), PRISCUS (keine Kausalität).
 4. ✅ ERLEDIGT Zyklus 9: DGEM-S3 Heimenterale 2024 (AWMF 073-021) → enterale F-09 Spülmenge belegt (20–40 mL). Geblockt: DGEM-Intensiv HTTP 500; pH-5,5/Osmolaritäts-Schwellen nicht in dieser LL.
-5. **⛔ FREIE QUELLEN AUSGESCHÖPFT (autonome Decke erreicht).** Verbleibende ~243 ⚠️-Sub-Claims sind NICHT mehr autonom lösbar — sie brauchen Mensch/Geld:
-   - **Lizenzpflichtig (Gründerin-Kaufentscheidung):** Hoehl/Kullick Kinderkrankenpflege (saeuglingspflege 21 + Kinder-Sub-Claims), Guigoz/Vellas MNA-Originalarbeit, ICSD-3/AASM (Schlaf-Schwellen), Braden&Bergstrom-Original, PRISCUS-Detail/Beers, Cochrane-Volltexte.
-   - **Server-blockiert (kein Geld, aber aktuell HTTP 500/404):** AWMF Neurogene Dysphagie (030-111), DGEM Intensiv (073-004), Charta der Rechte — später erneut versuchen.
+5. ✅ ERLEDIGT Zyklus 10 (Welle 1+2): Die „autonome Decke" aus Zyklus 9 war FALSCH klassifiziert — Gründerin-PDFs (24 Bücher) + WHO/AWMF-Dysphagie/Charta/§1827/§1831 lösten ~100 ⚠️. saeuglingspflege 21→0, pneumonie 5→0, pflegeplanung→0, kontraktur 5→1.
+6. **NÄCHSTES: dokumen.pub-Beschaffungsrunde** (Gründerin-Hinweis 2026-06-11) — fehlende Titel dort suchen, Liste siehe Eskalationen; Downloads ggf. durch Gründerin. Danach Rest-⚠️-Wellen mit neuen Korpora.
+7. Verbleibende ⚠️-Sub-Claims, die WIRKLICH externe Beschaffung brauchen:
+   - **Beschaffungsliste (dokumen.pub / Verlage / Originalarbeiten):** Hatch/Maietta Kinästhetik-Original (kinaesthetik 6 ⚠️), EAUN Katheterisierung 2021, Trapl 2007 GUSS-Original (Stufenreihenfolge), Heaton/Lewis 1997 Bristol, Fröhlich/Bienstein Basale-Stimulation-Original, ICSD-3/AASM + NSF/Hirshkowitz 2015 (schlaf 14 ⚠️), FG SKM Stomapflege 2023, Bobath-Pflegeliteratur, Cochrane Sturzprävention (F-04-Dosierung), Braden/Bergstrom 1987, Guigoz/Vellas MNA, Physiotherapie-Lehrbuch (Gehstock-Seitenregel), BGW-Schriften (40-kg-Grenze), ESC Lungenembolie-LL, DGEM Intensiv (073-004, HTTP 500 — erneut versuchen).
    - **Didaktische Merksätze** (kein Gesetzeszitat möglich): „nicht dokumentiert = nicht durchgeführt" etc. → als Merkregel kennzeichnen, nicht als Beleg.
    - **Dozentin-Review (R6):** das menschliche „pflegefachlich korrekt"-Siegel.
 6. **→ ÜBERGABE an Gründerin/Dozentin** (siehe Eskalationen). Pipeline-Umbau v9→v10 (project_pipeline_neu_vor_naechsten_ces) + CE-05-Queue erst NACH Gründerin-Freigabe öffnen — nicht autonom vorgreifen.
@@ -49,6 +51,7 @@
 ---
 
 ## LOG (neueste oben — jeder Lauf trägt 1 Zeile ein)
+- 2026-06-11 Zyklus 10 Welle 2: 8 Sub-Agenten über 16 Themen mit neuen Buch-Korpora + 5 neue freie Quellen (WHO-Zucker 2015 via Bitstream-API, AWMF-Dysphagie letzte Fassung, Pflege-Charta, §1827+§1831 BGB). ~45 weitere ⚠️ aufgelöst (Gesamt 250→148): saeuglingspflege 21→0, mundpflege 11→3, pneumonie 5→0, kontraktur 5→1, thrombose 8→6, u.v.m. **5 Sachkorrekturen:** s.c.-Injektion 2 cm um Nabel (nicht 5 cm), Mundspülung „physiologische Kochsalzlösung" (0,9 %-Zahl unbelegt entfernt), Xerostomie-Schwellenwert 0,1 ml/min entfernt, 24h-Frist→„folgender Werktag", pflegeplanung F-07 Zuspitzung entfernt (R3). **KRITISCH — Rechtsstand-Regressionen gefunden+gefixt:** Sub-Agenten übernahmen aus Lehrbüchern §1906/§1906a BGB a.F. (aufgehoben 1.1.2023) in positionierung F-12, sturz F-08, kontraktur F-05/M1, mobilisation F-12 → alle auf §1831 Abs. 4 BGB korrigiert, amtlicher Gesetzestext als Beleg, Lehrbuch-Zitate als altes Recht markiert. Lehre: Buch-Verbatim-Zitate können veraltetes Recht einschleppen — bei jeder §-Angabe Rechtsstand prüfen. Alle 19 geänderten Dateien --check-file PASS, unabhängig re-verifiziert. Nächstes: dokumen.pub-Beschaffung (Gründerin-Hinweis).
 - 2026-06-11 Zyklus 9 (Ernährungs-Cluster): DGEM-S3 Heimenterale 2024 beschafft (AWMF 073-021, 62k Wörter) → enterale F-09 Routine-Spülmenge verbatim „20–40 mL" belegt; unbelegte „20–50 ml" korrekt auf DGEM-Wert reduziert (kein Papern über Differenz). DGEM-Intensiv-LL HTTP 500. **Befund: freie Quellen ausgeschöpft** — restliche ~243 ⚠️ = lizenzpflichtig/server-blockiert/Dozentin. Autonome Decke erreicht → Übergabe.
 - 2026-06-11 Zyklus 8 (Freie Quellen): 4 amtliche Quellen beschafft (§630f BGB, §267/§203 StGB via gesetze-im-internet.de; DGSM-S3-Insomnie 2025 via AWMF) → **7 ⚠️ in echte verbatim Belege umgewandelt** (pflegedoku F-01/F-03/Korrektur/eDoku/F-13; schlaf F-10/F-12). Alle in fetch-leitlinien.sh reproduzierbar. Geblockt (ehrlich, kein Schönreden): AWMF Neurogene Dysphagie HTTP 500 (deregistriert), Charta-PDF 404, PRISCUS-Artikel deckt PIM aber nicht Sturz-Kausalität, DGE-Texte kennen „Makro/Mikronährstoff" nicht. **KORREKTUR:** ⚠️-Gesamtzahl ehrlich gezählt = ~250 Sub-Claim-Vorkommen (nicht ~40) — die 91 % STÜTZT gelten auf Fakt-Kern-Ebene, nicht Sub-Claim-Ebene. Nächstes: ESPEN/DGEM für Ernährungs-Cluster (44 ⚠️), sonst Decke (Lizenz+Dozentin).
 - 2026-06-11 Zyklus 7 (Cleanup-Pass): 30 unmarkierte Listen-TEILWEISE über 11 Themen (7 Sub-Agenten). +~60 verbatim Zweitzitate; voll aufgelöst: blasenkatheter/pflegeprozess/pflegedoku F-02·05·13/schlaf F-09·11/stuhl F-01/dekubitus/essen-anreichen. Rest ehrlich ⚠️ (Quelle benannt). Sachkorrektur dekubitus F-06 Steißbein→Sitzbeinhöcker. Alle 11 --check-file PASS, unabhängig re-verifiziert. **0 unmarkierte TEILWEISE.** Selbst-Check ergab: mehrere ⚠️-Quellen sind FREI (BGB/PRISCUS/DGSM/AWMF-Dysphagie/Charta) → nicht „Decke", sondern Zyklus 8 nötig. Kein Schönreden.

@@ -97,7 +97,9 @@
 - Zitat: "Häufiges Verschlucken, Husten und Würgen" ✅ MATCH (stützt „häufiges Verschlucken, Husten und Würgen")
 - Zitat: "Ausbleiben von Husten und Würgen" ✅ MATCH (stützt „oder gerade das Ausbleiben von Husten und Würgen")
 - Zitat: "Schlaganfall (➔ 37.6), M. Parkinson (➔ 37.11.1), Multiple Sklerose (➔ 37.10), Schädel-Hirn-Trauma" ✅ MATCH (stützt die Ursachen Schlaganfall, Parkinson, MS, SHT)
-- ⚠️ **Ursachen „Demenz" und „nach längerer Beatmung" NICHT als Dysphagie-Ursachen im Korpus belegt** — die Ursachen-Aufzählung der neurogenen Dysphagie (Pflege heute 37.2.8) nennt Schlaganfall/Parkinson/MS/SHT/ALS, aber weder Demenz noch Beatmung; „Beatmung" erscheint nur in der Pneumonie-Risikoliste, nicht als Schluckstörungs-Ursache. Quelle beschaffen: DGN/DGG S1-Leitlinie „Neurogene Dysphagie" 2020 (Demenz, postextubatorische/Post-Beatmungs-Dysphagie). Bis dahin im Schüler-Content nur die belegten neurologischen Ursachen als gesichert ausgeben.
+- Quelle: `leitlinien-volltext/awmf-dysphagie.txt` (DGN S1-Leitlinie Neurogene Dysphagie 2020, AWMF 030-111 — letzte publizierte Fassung, formal abgelaufen 2025-03)
+- Zitat: "Schlaganfall, Parkinson, Critical-Illness-Polyneuropathie, MotoneuronErkrankungen, Demenzen, Myasthenia gravis und Myopathien" (stützt Demenz als Dysphagie-assoziierte Erkrankung)
+- Zitat: "So weisen 70–80% der Patienten mit prolongierter Beatmung nach der Entwöhnung vom Respirator vermutlich auf dem Boden einer Critical-Illness-Polyneuropathie/-Myopathie zumindest passager schwere Schluckstörungen mit Aspirationen auf" (stützt „nach längerer Beatmung" als Ursache)
 **Praxisfehler:** Langes Essen als reine Altersnormalität abtun statt als Warnzeichen werten.
 
 **Misconceptions:**
@@ -117,7 +119,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ein Patient darf nur bei intakten Schutzreflexen essen oder trinken" ✅ MATCH (stützt die Reflex-Voraussetzung)
-- ⚠️ **GUSS-Spezifika NICHT im Korpus belegt:** Weder „GUSS"/„Gugging Swallowing Screen" noch die stufenweise Reihenfolge „trocken → halbfest → flüssig → fest" sind in Pflege heute, IDDSI oder DNQP verbatim enthalten. Quelle beschaffen: Trapl et al., *Stroke* 2007;38:2948–2952 (GUSS-Originalarbeit). Bis dahin im Schüler-Content nur „strukturiertes Schluck-Screening, Stufen von leicht nach schwer, bei Versagen Stopp + Logopädie" formulieren, ohne GUSS-Stufenreihenfolge als belegt auszugeben.
+- Quelle: `leitlinien-volltext/awmf-dysphagie.txt` (DGN S1-Leitlinie Neurogene Dysphagie 2020, AWMF 030-111)
+- Zitat: "lässt sich aus den Mehr-Konsistenzen-Tests (z.B. Gugging Swallowing Screen (Trapl et al., 2007; Warnecke et al., 2017); Volume-Viscosity Test (Clave et al., 2008)), die neben Wasser auch andere Nahrungskonsistenzen evaluieren, eine genauere Graduierung der Dysphagie vornehmen" (stützt GUSS als Mehr-Konsistenzen-Screening + Trapl 2007)
+- ⚠️ **Nur die exakte GUSS-Stufenreihenfolge „trocken → halbfest → flüssig → fest" bleibt unbelegt** — die S1-Leitlinie belegt GUSS als Mehr-Konsistenzen-Test, nennt aber die Stufenreihenfolge nicht. Quelle beschaffen: Trapl et al., *Stroke* 2007;38:2948–2952 (GUSS-Originalarbeit). Bis dahin Reihenfolge im Schüler-Content als „Stufen von leicht nach schwer" formulieren.
 **Praxisfehler:** Mit der schwierigsten Konsistenz (dünner Flüssigkeit) beginnen statt von leicht zu schwer.
 
 **Misconceptions:**
@@ -195,22 +199,25 @@
 
 ### F-09: Kommunikation und Tempo beim Anreichen
 
-**Fakt:** Beim Anreichen wird dem Patienten Zeit gelassen und er nie gedrängt; Pausen sind nötig, da Esstraining Kraft und Konzentration kostet. Kommunikationsregeln: Autonomie wahren (fragen statt bestimmen), Handlungen ankündigen, offene Fragen stellen, nie gleichzeitig sprechen und essen (Aspirationsrisiko), Körpersprache lesen und respektieren. Bei Ablehnung: Grund suchen, nie zwangsfüttern (§ 1901a BGB).
+**Fakt:** Beim Anreichen wird dem Patienten Zeit gelassen und er nie gedrängt; Pausen sind nötig, da Esstraining Kraft und Konzentration kostet. Kommunikationsregeln: Autonomie wahren (fragen statt bestimmen), Handlungen ankündigen, offene Fragen stellen, nie gleichzeitig sprechen und essen (Aspirationsrisiko), Körpersprache lesen und respektieren. Bei Ablehnung: Grund suchen, nie zwangsfüttern — die Selbstbestimmung des Patienten gilt (Patientenverfügung, § 1827 BGB; bis 2022: § 1901a BGB a.F.).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept (Schwerpunkt KB II.1 Kommunikation)
 **Bloom-Potential:** 4 (Analysieren, Bewerten)
-**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7.11 — Trink- und Esstraining; § 1901a BGB)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7.11 — Trink- und Esstraining; § 1827 BGB Patientenverfügung)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Dem Patienten Zeit lassen und ihn nie drängen" ✅ MATCH (stützt Tempo)
 - Zitat: "Pausen einlegen, da das Trink- und Es" ✅ MATCH (stützt Pausen; im Quelltext „… Esstraining Kraft und Konzentration kostet")
-- ⚠️ **§ 1901a BGB als Beleg für „nie zwangsfüttern" ist eine gedehnte Zitierung:** § 1901a BGB im Korpus betrifft die **Patientenverfügung** ("kann man festlegen, ob und wie man in bestimmten Krankheitssituationen behandelt werden möchte") — nicht ein verbatim Verbot des Zwangsfütterns. Die Selbstbestimmung ist damit grundsätzlich gedeckt, das spezifische Zwangsernährungs-Verbot aber nicht. Quelle beschaffen / korrekt zitieren: Zwangsernährung ohne Einwilligung = Körperverletzung (§ 223 StGB) bzw. Patientenautonomie (§ 1901a Abs. 1 BGB Patientenverfügung). Bis dahin im Schüler-Content „Zwangsfüttern verletzt die Selbstbestimmung (Patientenverfügung, § 1901a BGB)" präzise statt pauschal.
+- ⚠️ SACHKORREKTUR (2026-06-11): Der Fakt zitierte **§ 1901a BGB** — diese Norm ist seit der Betreuungsrechtsreform (1.1.2023) aufgehoben; die Patientenverfügung steht jetzt in **§ 1827 BGB**. Fakt, Primärquelle und M1 auf § 1827 korrigiert. (Pflege heute 7. Aufl. zitiert noch die alte Norm.)
+- Quelle: `leitlinien-volltext/bgb-1827.txt`
+- Zitat: "Bürgerliches Gesetzbuch (BGB) § 1827 Patientenverfügung; Behandlungswünsche oder mutmaßlicher Wille des Betreuten"
+- Zitat: "Hat ein einwilligungsfähiger Volljähriger für den Fall seiner Einwilligungsunfähigkeit schriftlich festgelegt, ob er in bestimmte, zum Zeitpunkt der Festlegung noch nicht unmittelbar bevorstehende Untersuchungen seines Gesundheitszustands, Heilbehandlungen oder ärztliche Eingriffe einwilligt oder sie untersagt (Patientenverfügung), prüft der Betreuer, ob diese Festlegungen auf die aktuelle Lebens- und Behandlungssituation des Betreuten zutreffen. Ist dies der Fall, hat der Betreuer dem Willen des Betreuten Ausdruck und Geltung zu verschaffen." (stützt Selbstbestimmung/Untersagungsrecht; ein wörtliches „Zwangsfüttern verboten" steht in keinem Gesetz — im Schüler-Content als Ableitung aus Selbstbestimmung + Körperverletzung § 223 StGB formulieren)
 - Hinweis: Die Kommunikationsregeln (Autonomie wahren, Handlungen ankündigen, offene Fragen, nicht gleichzeitig sprechen+essen) sind didaktisch korrekt, im Ernährungs-Kapitel aber nur teils verbatim belegt (Zeit lassen/Pausen). „Nicht gleichzeitig sprechen und essen" ist als Aspirationslogik fachlich korrekt, hier aber nicht verbatim — als fachliche Ableitung kennzeichnen.
 **Praxisfehler:** Beim Kauen/Schlucken plaudern (Aspirationsrisiko) oder bei Ablehnung weiterfüttern (Paternalismus).
 
 **Misconceptions:**
-- `M1`: **"Wenn der Patient ablehnt, muss ich trotzdem füttern — er braucht Energie"** — Zwangsfüttern verletzt die Selbstbestimmung (§ 1901a BGB) und ist Gewalt; Grund verstehen, Alternativen anbieten, Arzt informieren. Fachbegriff: "Paternalismus-Falle".
+- `M1`: **"Wenn der Patient ablehnt, muss ich trotzdem füttern — er braucht Energie"** — Zwangsfüttern verletzt die Selbstbestimmung (Patientenverfügung, § 1827 BGB) und ist Gewalt; Grund verstehen, Alternativen anbieten, Arzt informieren. Fachbegriff: "Paternalismus-Falle".
 - `M2`: **"Ich frage: 'Schmeckt's?' — das reicht als Kommunikation"** — Geschlossene Fragen liefern automatische Ja-Antworten; offene Fragen ("Wie schmeckt dir das?") geben echte Information.
 
 ---

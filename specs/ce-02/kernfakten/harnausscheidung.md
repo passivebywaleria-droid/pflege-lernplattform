@@ -88,7 +88,7 @@
 
 ### F-04: Miktionsstörungen — Fachbegriffe
 
-**Fakt:** Die wichtigsten Miktionsstörungen mit eigenen Fachbegriffen: Pollakisurie (häufiges Wasserlassen kleiner Mengen bei normaler Tagesgesamtmenge), Nykturie (vermehrtes nächtliches Wasserlassen), Dysurie/Algurie (schmerzhaftes/erschwertes Wasserlassen), Strangurie (schmerzhaft-krampfartig) und Harnverhalt (Unfähigkeit, die gefüllte Blase zu entleeren).
+**Fakt:** Die wichtigsten Miktionsstörungen mit eigenen Fachbegriffen: Pollakisurie (häufiges Wasserlassen kleiner Mengen bei normaler Tagesgesamtmenge), Nykturie (vermehrtes nächtliches Wasserlassen), Dysurie/Algurie (schmerzhaftes und/oder erschwertes Wasserlassen), Strangurie (wird in der Pflegeliteratur zusammen mit Dysurie unter dem Begriff „Dysurie/Strangurie" geführt: schmerzhaftes und/oder erschwertes Wasserlassen) und Harnverhalt (Unfähigkeit, die gefüllte Blase zu entleeren).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fachbegriff
@@ -98,9 +98,8 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Häufiges Wasserlassen kleiner Mengen, die Tagesgesamtmenge ist normal" — Pollakisurie (Tab. 8.2) ✅ MATCH
 - Zitat: "Vermehrtes nächtliches Wasserlassen" — Nykturie (DEFINITION Nykturie) ✅ MATCH
-- Zitat: "Schmerzhaftes und/oder erschwertes Wasserlassen" — Dysurie/Algurie ✅ MATCH
+- Zitat: "Schmerzhaftes und/oder erschwertes Wasserlassen" — Dysurie/Strangurie (Tab. 8.2: beide Begriffe teilen dieselbe Definition im Tabellenfeld „Dysurie/Strangurie") ✅ MATCH
 - Zitat: "Unfähigkeit, die gefüllte Blase zu entleeren" — Harnverhalt ✅ MATCH
-- ⚠️ Strangurie als „schmerzhaft-krampfartiges Wasserlassen": im Pflege-heute-Volltext keine eigenständige Definition (Tab.-Eintrag „Dysurie/Strangurie" OCR-vermischt). Fachlich korrekt (Standardterminologie), aber ⚠️ Quelle beschaffen (Pschyrembel / Urologie-Lehrbuch) oder im Schüler-Content auf Dysurie/Algurie beschränken.
 
 **Misconceptions:**
 - `M1`: **"Pollakisurie und Polyurie sind dasselbe"** — Polyurie = große Gesamtmenge (>3 L/24h), Pollakisurie = oft, aber kleine Portionen bei normaler Gesamtmenge. Fachbegriff: "Poly-Polla-Verwechslung".

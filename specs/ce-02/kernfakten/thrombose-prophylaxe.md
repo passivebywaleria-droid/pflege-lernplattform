@@ -147,8 +147,11 @@
 - Zitat: "Die Risiken für die Entwicklung einer Heparin-induzierten Thrombozytopenie (HIT) bzw. HIT-assoziierter VTE-Ereignisse sind unter NMH signifikant niedriger als unter UFH"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "kann es zu einem heparininduzierten Abfall der Blutplättchen (heparininduzierte Thrombozytopenie, HIT) kommen"
-
-> ⚠️ Detail-Werte HIT „Thrombozytenabfall > 50 % nach 5–14 Tagen": Die AWMF-S3-Leitlinie VTE (2025) belegt verbatim nur, dass HIT als Nebenwirkung auftritt und unter NMH seltener ist als unter UFH — gibt aber im vorliegenden Volltext KEINE konkreten Diagnosekriterien (Abfall > 50 %, Tag 5–14) an. Auch im Pflege-heute-Volltext nicht verbatim enthalten. Die Diagnose-Schwellen stammen aus der HIT-Spezialliteratur (z. B. 4T-Score / AWMF-Leitlinie HIT) und sind bis zu deren lokaler Verfügbarkeit als ⚠️ Detail-Werte zu führen.
+- Quelle: `leitlinien-volltext/awmf-vte-prophylaxe.txt`
+- Zitat: "zwischen Tag 5 und 14 (selten bis Tag 21) um >50 % des höchsten Wertes nach Beginn der Heparintherapie"
+- Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`
+- Zitat: "Unter der Behandlung mit Heparin kann es zu einem Abfall der Thrombozytenzahl im Blut unter 50 % des Ausgangswerts kommen"
+- Zitat: "Zwischen 5. und 14. Tag nach Beginn der Heparingabe."
 **Praxisfehler:** Pflege dokumentiert Injektion ohne Beobachtungszeichen; Blutungen werden erst spät erkannt.
 
 **Misconceptions:**
@@ -160,13 +163,21 @@
 
 ### F-07: Korrekte Heparin-Injektions-Technik
 
-**Fakt:** Subkutane NMH-Injektion in die Bauchhaut: mindestens 5 cm seitlich vom Bauchnabel, abwechselnd links/rechts. Hautfalte zwischen Daumen und Zeigefinger abheben und während der gesamten Injektion halten. Nadel im 90°-Winkel komplett einstechen (bei Fertigspritze). **Nicht aspirieren** (nicht aufziehen vor Injektion) — kann Hämatome verursachen. **Nicht reiben** nach der Injektion — verursacht Hämatome. Luftbläschen in der Fertigspritze **nicht entfernen** — dient als Luftblock, damit kein Wirkstoff im Stichkanal zurückbleibt. Injektionsstelle wechseln.
+**Fakt:** Subkutane NMH-Injektion in die Bauchhaut: Bauchnabel 2 cm frei lassen (nicht direkt neben dem Nabel), besonders der Bereich unterhalb des Bauchnabels ist bevorzugt. Hautfalte mit Daumen und Zeigefinger abheben. Nadel zügig senkrecht einstechen. **Nicht aspirieren** bei Heparin — kann Hämatome verursachen. Injektionsstelle systematisch wechseln.
+
+> ⚠️ Detail: „Luftblock in der Fertigspritze nicht entfernen" ist im Pflege-heute-Volltext (s.c.-Kap.) NICHT verbatim enthalten — diese Teilaussage bis zur Verfügbarkeit einer Fachinformation (Enoxaparin/Dalteparin) oder einer Pflegeleitlinie Thromboseprophylaxe streichen.
 
 **Prüfungsrelevanz:** sehr hoch (praktisch-technisch)
 **Wissensart:** Handlung (Technik)
 **Bloom-Potential:** 3-4
-**Primärquelle:** (Fachinformation Enoxaparin/Dalteparin; Pflegeleitlinie Thromboseprophylaxe UKGM; AMBOSS Antikoagulation)
-**Beleg:** ⚠️ Quelle beschaffen (Fachinformation Enoxaparin/Dalteparin bzw. Pflege heute Kap. Injektionen / s.c.-Injektionstechnik). Die AWMF-S3-Leitlinie VTE (2025) wurde geprüft: Sie behandelt NMH/UFH nur pharmakologisch (Wirkstoffwahl, Bioverfügbarkeit bei Subkutangabe, Nebenwirkungen wie Hämatome/Spättypallergie an Injektionsstellen) — die konkrete pflegerische s.c.-Injektionstechnik mit Bauchnabel-Abstand, Hautfalte, Nicht-Aspirieren, Luftblock und Nicht-Reiben ist NICHT verbatim enthalten. Auch im vorliegenden Pflege-heute-Volltext nicht enthalten. ⚠️ bleibt bis Fachinformation/Pflege-Standard lokal verfügbar.
+**Primärquelle:** (Pflege heute Kap. 43.4.3 Subkutane Injektion; Fachinformation Enoxaparin/Dalteparin für Luftblock-Detail)
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die Bauchdecke um den Bauchnabel (um den Nabel 2 cm frei lassen)"
+- Zitat: "Mit Daumen und Zeigefinger eine Hautfalte bilden"
+- Zitat: "zügig senkrecht in die Hautfalte einstechen"
+- Zitat: "Bei der Injektion von Heparin wird dies wegen der möglichen Hämatombildung nicht empfohlen"
+- Zitat: "Injektionsstellen wechseln"
 **Praxisfehler:** Hautfalte wird losgelassen vor Injektions-Ende; Luftbläschen wird entfernt; aspiriert wird trotz Fertigspritze.
 
 **Misconceptions:**
@@ -211,8 +222,8 @@
 - Zitat: "Limitationen in der Anwendung physikalischer Maßnahmen können sich ergeben durch eine schwere periphere arterielle Verschlusskrankheit (PAVK) mit kritischer Extremitätenischämie"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "bei Werten < 0,9 ist von einer peripheren arteriellen Verschlusskrankheit auszugehen"
-
-> ⚠️ Hinweis: Die AWMF-S3-Leitlinie VTE (2025) nennt die schwere PAVK mit kritischer Extremitätenischämie als Limitation physikalischer Maßnahmen, gibt aber KEINE konkreten ABI-Schwellenwerte (z.B. ABI < 0,5; 0,5–0,9) vor. Diese Schwellen stammen aus der Kompressionstherapie-Literatur (DGP/Draco) und sind im vorliegenden AWMF-Volltext nicht verbatim enthalten — bis zur lokalen Verfügbarkeit der Kompressions-Leitlinie als ⚠️ Detail-Werte zu führen.
+- Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`
+- Zitat: "Ein ABI von unter 0,5 bedeutet eine schwere arterielle Durchblutungsstörung, die den Erhalt des Beines gefährdet"
 **Praxisfehler:** MTPS werden ohne Prüfung der arteriellen Durchblutung angelegt; ABI nicht bekannt, kein Nachfragen.
 
 **Misconceptions:**
@@ -282,8 +293,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Typisch sind plötzliche Atemnot, schnelle Atmung, atemabhängige Thoraxschmerzen und Husten, evtl. mit blutigem Sputum"
+- Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`
+- Zitat: "Tachykardie. Ein Pulsanstieg über 100/Minute bei Erwachsenen wird als Tachykardie bezeichnet"
+- Zitat: "Tachypnoe (Atemfrequenz > 20/min)"
 
-> ⚠️ Detail-Werte „Dyspnoe häufigstes Symptom (80 %)", „Tachykardie > 100/min", „Tachypnoe > 20/min": Pflege heute belegt verbatim die *qualitative* Symptomatik (plötzliche Atemnot, schnelle Atmung = Tachypnoe, atemabhängige Thoraxschmerzen, Husten) — gibt aber KEINE Häufigkeits-Prozente (80 %) und KEINE numerischen Schwellen (> 100/min, > 20/min) an. Die AWMF-S3-Leitlinie VTE (2025) ist eine Prophylaxe-Leitlinie und enthält keine LE-Symptom-Epidemiologie. Prozente/Schwellenwerte bis zur lokalen Verfügbarkeit einer LE-Diagnostik-Quelle (ESC Acute Pulmonary Embolism Guidelines) als ⚠️ Detail-Werte führen — qualitativer Symptomkatalog ist belegt.
+> ⚠️ Detail-Wert „Dyspnoe häufigstes Symptom (80 %)": Dieser Prozentsatz ist in keinem der lokalen Korpora (Pflege heute, AWMF VTE, Paetz, Prüfungswissen) verbatim enthalten. Bis zur lokalen Verfügbarkeit einer LE-Epidemiologie-Quelle (ESC Acute Pulmonary Embolism Guidelines) keine 80-%-Zahl behaupten — qualitativer Befund (Dyspnoe als häufigstes Symptom) bleibt fachlich korrekt.
 **Praxisfehler:** Symptome werden als Panikattacke oder Angst fehlgedeutet; Patient wird allein gelassen oder nicht priorisiert.
 **Transfer:** [Transfer] Wie ein Alarm im Haus — plötzliche Atemnot bei Risikopatient ist die Brandmeldung. Du schickst niemanden hin zum "Nachsehen", du rufst sofort die Feuerwehr.
 
