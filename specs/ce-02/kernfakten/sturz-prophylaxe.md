@@ -7,15 +7,16 @@
 | cluster | B (Mobilität) |
 | geschätzteUE | 4 |
 | wissensart | handlung |
-| quellen | I Care Pflege Kap. Mobilität; DNQP Expertenstandard Sturzprophylaxe 2. Aktual. 2022; Pflege heute Kap. Sturzprophylaxe |
+| quellen | DNQP Expertenstandard Sturzprophylaxe 2. Aktual. 2022 (`dnqp-standards-index/sturzprophylaxe.txt`); Pflege heute Kap. Sturzprophylaxe (`pflege-heute-volltext/pflege-heute.txt`) |
 | einträge | 11 |
 | erstellt | 2026-04-22 (Pilot-Lauf Pipeline v9) |
+| grounding | STÜTZT-gehoben 2026-06-11 (Dozentin A) — 22 Verbatim-Belege (vorher 13). ⚠️-Flags zu beschaffen: F-02 Instrumenten-Namen (Tinetti/TUG/Morse), F-03 Begriffe intrinsisch/extrinsisch, F-06 20-40 %-Anteil, F-08 § 1831/§ 1906a + 24-h-Frist |
 
 ---
 
 ### F-01: Definition Sturz
 
-**Fakt:** Ein Sturz ist ein Ereignis, bei dem die betroffene Person unbeabsichtigt auf dem Boden oder einer tieferen Ebene landet. Beinhaltet auch Fast-Stürze (Near-Miss), die ebenfalls dokumentiert werden sollen.
+**Fakt:** Ein Sturz ist ein Ereignis, bei dem die betroffene Person unbeabsichtigt auf dem Boden oder einer tieferen Ebene landet. Fast-Stürze (Beinahestürze/Near-Miss) gelten laut DNQP ausdrücklich NICHT als Sturz, sollen aber im Rahmen der Risikoeinschätzung berücksichtigt werden, weil sie wichtige Hinweise auf Risikofaktoren (z. B. Balance-Störung, orthostatische Hypotonie) geben.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Definition
@@ -24,6 +25,8 @@
 **Beleg:**
 - Quelle: `dnqp-standards-index/sturzprophylaxe.txt`
 - Zitat: "Ein Sturz ist ein Ereignis, bei dem der oder die Betroffene unbeabsichtigt auf dem Boden oder auf einer anderen tieferen Ebene aufkommt"
+- Quelle: `dnqp-standards-index/sturzprophylaxe.txt`
+- Zitat: "dass Beinahestürze nicht als Stürze zu definieren sind, aber im pflegerischen Alltag im Rahmen der Risikoeinschätzung durchaus berücksichtigt werden sollten"
 **Praxisfehler:** Fast-Stürze werden oft nicht dokumentiert, obwohl sie wichtige Warnzeichen sind.
 **Transfer:** Wie bei einem Unfall: nicht nur der Crash zählt, auch das "Fast-Passiert" ist eine Warnung.
 
@@ -36,16 +39,21 @@
 
 ### F-02: Sturzrisiko-Einschätzung nach DNQP
 
-**Fakt:** Die Pflegefachperson schätzt bei Aufnahme und bei Zustandsveränderungen das Sturzrisiko ein. Der DNQP-Standard empfiehlt KEIN universelles Instrument — die klinische Einschätzung mit Berücksichtigung multifaktorieller Risiken steht im Vordergrund. Instrumente wie Tinetti, Timed-Up-and-Go, Morse Fall Scale können unterstützen, sind aber nicht verpflichtend.
+**Fakt:** Die Pflegefachperson identifiziert zu Beginn des pflegerischen Auftrages mittels Screening das Sturzrisiko und überprüft die Einschätzung bei Veränderungen der Pflegesituation, nach einem Sturz und in individuell festzulegenden Zeitabständen. Kein einzelnes Punkte-Schema ist vorgeschrieben — die individuelle, multifaktorielle Einschätzung steht im Vordergrund; die Verwendung starrer Risiko-Skalen gilt als überholt. ⚠️ Quelle beschaffen: Die konkret benannten Instrumente *Tinetti, Timed-Up-and-Go, Morse Fall Scale* sind im vorliegenden Korpus (DNQP-txt + Pflege heute) NICHT belegbar — die Rohquellen nennen kein einzelnes Instrument namentlich. Für namentliche Nennung wäre eine Instrumenten-Übersicht/DNQP-Methodenbericht oder die Skalen-Originalarbeiten (Tinetti 1986; Podsiadlo TUG 1991; Morse 1989) zu beschaffen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
 **Bloom-Potential:** 3-4 (Anwenden, Analysieren)
-**Primärquelle:** (DNQP 2022; Expertenstandard Sturzprophylaxe 2. Aktualisierung)
+**Primärquelle:** (DNQP 2022; Expertenstandard Sturzprophylaxe 2. Aktualisierung; für Instrumenten-Namen: Skalen-Originalarbeiten — zu beschaffen)
 **Beleg:**
 - Quelle: `dnqp-standards-index/sturzprophylaxe.txt`
 - Zitat: "Die Pflegefachkraft identifiziert unmittelbar zu Beginn des pflegerischen Auftrages mittels eines Screenings systematisch das Sturzrisiko"
-- Zitat: "das multifaktorielle Geschehen, das zu einem Sturz führt und entsprechend komplexer Interventionen bedarf"
+- Quelle: `dnqp-standards-index/sturzprophylaxe.txt`
+- Zitat: "Die Pflegefachkraft überprüft die Einschätzung des Sturzrisikos bei"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die Verwendung von Skalen zur Risikoeinschätzung gilt als überholt"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Vielmehr ist deutlich geworden, dass Risikofaktoren in ihrer Kombination und situationsabhängig zum Tragen kommen"
 **Praxisfehler:** Viele Pflegende verlassen sich auf ein einzelnes Punkte-Schema (z.B. "18 = kein Risiko") statt multifaktoriell zu denken.
 **Transfer:** [Transfer] Wie ein Arzt nicht nur Fieber misst, sondern den ganzen Patienten anschaut.
 
@@ -58,16 +66,20 @@
 
 ### F-03: Intrinsische vs. extrinsische Risikofaktoren
 
-**Fakt:** Sturzrisikofaktoren gliedern sich in intrinsisch (personenbezogen) und extrinsisch (umgebungsbezogen). Meist ist ein Sturz Ergebnis einer Kombination beider. Pflege kann auf beide Arten einwirken.
+**Fakt:** Sturzrisikofaktoren werden in den Primärquellen (DNQP, Pflege heute) nach Ursprung gegliedert: **personen-, medikamenten-, umgebungs- sowie situationsbezogen**. Meist ist ein Sturz Ergebnis einer Kombination mehrerer, scheinbar voneinander unabhängiger Ursachen. Pflege kann auf alle diese Ebenen einwirken. Hinweis zur Didaktik: Die im Unterricht gebräuchliche Zwei-Teilung **intrinsisch (personenbezogen) vs. extrinsisch (umgebungsbezogen)** ist eine vereinfachende Sammelkategorie; die hier zitierten Primärquellen verwenden die 4-fache Gliederung (personen/medikamenten/umgebung/situation), NICHT die Begriffe „intrinsisch/extrinsisch" für den Sturz. ⚠️ Die intrinsisch/extrinsisch-Terminologie ist im vorliegenden Korpus für die Sturzthematik nicht belegbar — als didaktische Vereinfachung markiert, nicht als Primärquellen-Klassifikation.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 2-4
-**Primärquelle:** (DNQP 2022)
+**Primärquelle:** (DNQP 2022; Pflege heute Kap. Sturzprophylaxe)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "sind personen-, medikamenten-, umgebungs- sowie situationsbezogen"
-**Praxisfehler:** Fokus nur auf intrinsische Faktoren (Patient) und Vernachlässigung der Umgebung.
+- Zitat: "Faktoren, die ein Sturzereignis begünstigen, sind personen-, medikamenten-, umgebungs- sowie situationsbezogen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Meist führt nicht ein einzelner Faktor, sondern mehrere, scheinbar voneinander unabhängige Ursachen zu einem Sturz"
+- Quelle: `dnqp-standards-index/sturzprophylaxe.txt`
+- Zitat: "die individuellen personen-, medikamenten- und umgebungsbezogenen Sturzrisikofaktoren"
+**Praxisfehler:** Fokus nur auf personenbezogene Faktoren (Patient) und Vernachlässigung von Umgebung, Medikamenten und Situation.
 
 **Intrinsische Faktoren:**
 - Sturz in den letzten 12 Monaten (stärkster Prädiktor!)
@@ -90,7 +102,7 @@
 
 **Misconceptions:**
 - `M1`: **"Bettgitter schützen vor Stürzen"** — Bettgitter erhöhen die Sturzhöhe und können zu schwereren Verletzungen führen. Fachbegriff: "Bettgitter-Illusion".
-- `M2`: **"Nur die Krankheit verursacht Stürze"** — Etwa 50% der Stürze haben umgebungsbezogene Ursachen. Fachbegriff: "Intrinsische Voreingenommenheit".
+- `M2`: **"Nur die Krankheit verursacht Stürze"** — Ein erheblicher Teil der Stürze hat umgebungs- und situationsbezogene Mitursachen; meist wirken mehrere Faktoren zusammen (Pflege heute: "mehrere, scheinbar voneinander unabhängige Ursachen"). Fachbegriff: "Personen-zentrierte Voreingenommenheit". (⚠️ konkrete Prozent-Anteile umgebungsbezogener Ursachen im Korpus nicht belegbar — bewusst qualitativ formuliert.)
 - `M3`: **"Schlechte Beleuchtung ist ein Luxus-Problem"** — Schlechte Beleuchtung ist ein großer Sturzrisikofaktor, besonders nachts.
 
 ---
@@ -138,19 +150,21 @@
 
 ### F-06: Medikamentenreview als Präventivmaßnahme
 
-**Fakt:** Etwa 20-40% der Stürze bei Senioren haben medikamentöse Mitursachen. Besonders riskant: Psychopharmaka (Benzodiazepine, Z-Substanzen), Antihypertensiva, Diuretika, Antidepressiva. Regelmäßiger interprofessioneller Medikamentenreview ist wichtiger Baustein.
+**Fakt:** Medikamente sind eine eigene Sturzrisiko-Kategorie: Die im Alter häufige Polypharmazie (> 4 Medikamente) erhöht das Sturzrisiko durch wenig kalkulierbare Wechselwirkungen; besonders riskant sind psychotrope Medikamente (z. B. Benzodiazepine, Z-Substanzen, Antidepressiva), Antihypertensiva und Diuretika. Regelmäßiger interprofessioneller Medikamentenreview ist wichtiger Baustein. ⚠️ Quelle beschaffen: Die konkrete Quote *20-40 % der Stürze haben medikamentöse Mitursachen* ist im vorliegenden Korpus NICHT belegbar — Pflege heute nennt Polypharmazie und Medikamentengruppen als Risikofaktor, ohne diesen Anteil zu beziffern. Für die Zahl wäre eine pharmako-epidemiologische Primärquelle (z. B. PRISCUS/FORTA-Listen, STOPP/START, Cochrane) zu beschaffen.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 4 (Analysieren)
-**Primärquelle:** (DNQP 2022; Beers-Liste für potenziell inadäquate Medikation)
+**Primärquelle:** (DNQP 2022; für Anteil/Medikationslisten: PRISCUS/FORTA bzw. Beers-Liste — zu beschaffen)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die im Alter häufige Polypharmazie erhöht das Sturzrisiko durch wenig kalkulierbare Wechselwirkungen der Arzneimittel"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Stürze werden durch die Menge der Medikamente und durch einige spezielle Medikamentengruppen begünstigt"
 **Praxisfehler:** Pflege übernimmt Medikamente unkritisch, ohne Wechselwirkungen/Sturzrisiko zu hinterfragen.
 
 **Misconceptions:**
-- `M1`: **"Schlafmittel sind harmlos"** — Benzodiazepine erhöhen Sturzrisiko um 50-100%. Z-Substanzen (Zolpidem etc.) auch.
+- `M1`: **"Schlafmittel sind harmlos"** — Benzodiazepine und Z-Substanzen (Zolpidem etc.) zählen zu den psychotropen Medikamenten, die das Sturzrisiko deutlich erhöhen (Pflege heute: "spezielle Medikamentengruppen"). (⚠️ konkrete Risiko-Steigerung in % im Korpus nicht belegbar — qualitativ formuliert.)
 - `M2`: **"Medikamente sind Arzt-Sache"** — Pflege hat Beobachtungs- und Meldepflicht bei Nebenwirkungen.
 
 ---
@@ -175,20 +189,24 @@
 
 ### F-08: Keine Fixierung als Sturzprophylaxe
 
-**Fakt:** Fixierung (Bettgitter, Gurte, sedierende Medikation) ist KEINE Sturzprophylaxe. Sie erhöht Komplikationen (Stürze beim Überklettern, Verletzungen durch Gurte, Muskelabbau). Fixierung ist rechtlich nur mit richterlicher Genehmigung (§ 1906a BGB) oder informierter Zustimmung erlaubt.
+**Fakt:** Fixierung (Bettgitter, Gurte, sedierende Medikation) ist KEINE Sturzprophylaxe — Studien zeigen sogar, dass durch freiheitsentziehende Maßnahmen (FEM) das Sturzaufkommen nicht gesenkt wird, und sie erhöht Komplikationen (Stürze beim Überklettern, Verletzungen durch Gurte, Muskelabbau). Längerfristige FEM benötigen grundsätzlich einen richterlichen Beschluss durch das Betreuungsgericht. Nur kurzfristig zur Abwendung einer akuten Gefahr (Notwehr/Notstand) darf der Arzt/die PDL ohne richterlichen Beschluss anordnen — die richterliche Genehmigung ist dann umgehend nachzuholen; sobald keine Gefahr mehr besteht, ist die Maßnahme unverzüglich aufzuheben. ⚠️ Quelle beschaffen: Die konkrete Paragraphenangabe *§ 1906a BGB* (sowie die seit 2023 geltende Nachfolgenorm *§ 1831 BGB*) und die *24-Stunden-Frist* sind im vorliegenden Korpus NICHT belegbar — Pflege heute nennt nur das ältere *§ 1906 BGB* und das Erfordernis "umgehend nachholen" ohne 24-h-Zahl. Für die aktuelle Paragraphenangabe ist der BGB-Gesetzestext (§ 1831 BGB, Stand seit 01.01.2023) zu beschaffen.
 
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Recht + Handlung
 **Bloom-Potential:** 4-5 (Bewerten, Entscheiden)
-**Primärquelle:** (BGB § 1906a; DNQP 2022; Bundesverfassungsgericht: Selbstbestimmung)
+**Primärquelle:** (DNQP 2022; für Paragraph: BGB § 1831 — zu beschaffen; Bundesverfassungsgericht: Selbstbestimmung)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "freiheitsentziehende Maßnahmen benötigen grundsätzlich einen richterlichen Beschluss durch das Betreuungsgericht"
+- Zitat: "Längerfristige freiheitsentziehende Maßnahmen benötigen grundsätzlich einen richterlichen Beschluss durch das Betreuungsgericht"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "auch ohne richterlichen Beschluss anordnen. Die richterliche Genehmigung muss er"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "belegen, dass durch FEM das Sturzaufkommen nicht gesenkt werden kann"
 **Praxisfehler:** Fixierung aus Angst vor Haftung angewandt — führt umgekehrt zu Haftungsrisiko.
 
 **Misconceptions:**
 - `M1`: **"Bettgitter sind keine Fixierung"** — Beidseitige Bettgitter OHNE Zustimmung gelten als freiheitsentziehende Maßnahme.
-- `M2`: **"Wenn der Patient demenzkrank ist, darf man fixieren"** — Nein. Auch bei Demenz: Betreuer + Richter müssen zustimmen (§ 1906a BGB). Ausnahme: akute Eigengefährdung (max 24h ohne Genehmigung).
+- `M2`: **"Wenn der Patient demenzkrank ist, darf man fixieren"** — Nein. Auch bei Demenz braucht eine längerfristige FEM einen richterlichen Beschluss des Betreuungsgerichts. Ausnahme: akute Eigen-/Fremdgefährdung (Notwehr/Notstand) — dann ärztliche Anordnung ohne Beschluss zulässig, richterliche Genehmigung aber umgehend nachzuholen, Aufhebung sobald keine Gefahr mehr. (⚠️ Paragraph aktuell § 1831 BGB / früher § 1906a — Gesetzestext nicht im Korpus; konkrete Stundenfrist nicht im Korpus belegt.)
 - `M3`: **"Fixierung ist sicher"** — Tote durch Strangulation in Bettgittern und Gurtbetten dokumentiert. Extrem risikoreich.
 
 ---
@@ -223,10 +241,12 @@
 **Beleg:**
 - Quelle: `dnqp-standards-index/sturzprophylaxe.txt`
 - Zitat: "Die Pflegefachkraft dokumentiert und analysiert jeden Sturz"
+- Quelle: `dnqp-standards-index/sturzprophylaxe.txt`
+- Zitat: "Jeder Sturz ist dokumentiert und analysiert"
 **Praxisfehler:** Knappe Dokumentation ("Patient gestürzt") statt strukturierte Analyse.
 
 **Misconceptions:**
-- `M1`: **"Wenn keine Verletzung, keine Dokumentation"** — Auch verletzungsfreie Stürze und Near-Miss dokumentieren. Wichtig für Trend-Analyse.
+- `M1`: **"Wenn keine Verletzung, keine Dokumentation"** — Auch verletzungsfreie Stürze müssen dokumentiert und analysiert werden. Beinahestürze (Near-Miss) gelten laut DNQP zwar nicht als Sturz, sind aber im Rahmen der Risikoeinschätzung zu berücksichtigen (siehe F-01) — wichtig für die Trend-Analyse.
 - `M2`: **"Sturz-Ursache = was der Patient sagt"** — Patientenbericht ist subjektiv und unvollständig (besonders nach Kopfverletzung, bei Demenz). Pflegerische Einschätzung + Situationsanalyse nötig.
 
 ---

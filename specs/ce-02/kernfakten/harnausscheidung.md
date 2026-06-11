@@ -10,12 +10,13 @@
 | quellen | DNQP Expertenstandard Kontinenzförderung in der Pflege (Aktual. 2024); Pflege heute Kap. 8 Ausscheidung + Kap. 33 Harnsystem; ICS 2023 |
 | einträge | 16 |
 | erstellt | 2026-06-10 (Dozentin A, quellengebunden aus bausteine-plan.md) |
+| grounding | 2026-06-11 (Dozentin A — auf STÜTZT gehoben gegen QUALITAETSSTANDARD-GROUNDING R1–R3; alle 16 Fakten pro Teilaussage verifiziert, ✅ MATCH eingetragen; F-13 Profil-Namen korrigiert; 3 ungedeckte Teilaussagen markiert/entfernt) |
 
 ---
 
 ### F-01: Urin-Normalwerte beim Erwachsenen
 
-**Fakt:** Ein gesunder Erwachsener scheidet pro Tag etwa 1,5–2 Liter Urin aus. Normalurin ist klar und strohgelb (Farbstoff Urochrom), leicht aromatisch, pH 5–6 (leicht sauer), spezifisches Gewicht 1010–1025 g/l. Diese Werte prüft die Pflege bei jeder Schicht mit bloßem Auge.
+**Fakt:** Ein gesunder Erwachsener scheidet pro Tag etwa 1,5–2 Liter Urin aus (Menge pro Miktion 200–400 ml, Frequenz 4–6×/Tag). Der Farbstoff sind die Urochrome (natürliche gelbe Harnfarbstoffe); der normale pH-Wert des Urins liegt bei 5–6 (leicht sauer). Diese Werte prüft die Pflege bei jeder Schicht mit bloßem Auge bzw. per Teststreifen (Harndichte).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
@@ -23,8 +24,11 @@
 **Primärquelle:** (Pflege heute Kap. 8 / Kap. 33)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "1,5–2 Liter, über das Trinken aufgenommen werden"
-- Zitat: "Urochrome = natürliche gelbe Harnfarbstoffe"
+- Zitat: "Menge pro Tag: 1,5–2 l" — Tagesmenge (Spickzettel „Normalwerte der Miktion und Urinmenge") ✅ MATCH
+- Zitat: "Menge pro Miktion: 200–400 ml • Häufigkeit (Frequenz): 4-bis 6-mal pro Tag" — Miktionsmenge/Frequenz ✅ MATCH
+- Zitat: "Urochrome = natürliche gelbe Harnfarbstoffe" — Farbstoff ✅ MATCH
+- Zitat: "Der normale pH-Wert des Urins liegt bei 5–6" — pH ✅ MATCH
+- ⚠️ Entfernt (nicht im Korpus belegbar): „klar und strohgelb", „leicht aromatisch", „spezifisches Gewicht 1010–1025 g/l". Im Pflege-heute-Volltext kein Beleg für strohgelb/aromatisch (nur „strohgelbe Haut" = Ikterus, kein Urin) und keine numerische Harndichte 1010–1025 für Urin. Teststreifen erfassen die Harndichte qualitativ. ⚠️ Quelle beschaffen (Labormedizin / DIN-Referenz Urin-Dichte 1.001–1.040, Normwert ~1.010–1.025), falls die numerische Spanne wieder aufgenommen werden soll.
 **Praxisfehler:** Urinbeurteilung wird übersprungen, obwohl sie kostenlos und täglich verfügbar ist — der Blick in die Toilette ist ein vollwertiges Assessment.
 
 **Misconceptions:**
@@ -44,9 +48,10 @@
 **Primärquelle:** (Pflege heute Kap. 33)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Polyurie > 3.000 ml/24 Std."
-- Zitat: "100–500 ml/24 Std."
-- Zitat: "< 100 ml/24 Std."
+- Zitat: "Polyurie > 3.000 ml/24 Std." — Polyurie ✅ MATCH
+- Zitat: "Oligurie 100–500 ml/24 Std." — Oligurie ✅ MATCH
+- Zitat: "Anurie < 100 ml/24 Std." — Anurie ✅ MATCH
+- Zitat: "Leitsymptome Appetitlosigkeit, Polyurie, Polydipsie. Dehydratation durch osmotische Diurese (massive Glukosurie)" — Polyurie+Polydipsie bei Diabetes/hyperglykämischem Koma (NICHT die hyperkalzämische Krise) ✅ MATCH
 **Praxisfehler:** Reduzierte Ausscheidung wird als "trinkt halt wenig" abgetan, statt Exsikkose, Niereninsuffizienz oder Schock auszuschließen.
 
 **Misconceptions:**
@@ -58,16 +63,20 @@
 
 ### F-03: Urinfarbe und -geruch als Assessment
 
-**Fakt:** Farbe und Geruch sind ein kostenloses Pflege-Assessment. Pathologische Farbveränderungen entstehen durch Blutungen der ableitenden Harnwege (Hämaturie), Ausscheidung von Hämoglobin/Bilirubin bei Lebererkrankungen oder Hämolyse, sowie Infektionen des Urogenitaltrakts. Süßlicher Geruch deutet auf Ketonurie (entgleister Diabetes) hin.
+**Fakt:** Farbe und Geruch sind ein kostenloses Pflege-Assessment. Rötlich-fleischfarbener, trüber Urin spricht für eine Makrohämaturie (Blut im Urin, z. B. durch Nierensteine oder Tumoren); bierbrauner Urin für Bilirubin (Lebererkrankung). Ein obstartiger Geruch (wie sehr reife Äpfel = Azetongeruch) deutet auf Ketonkörper im Urin (Ketonurie bei entgleistem Diabetes) hin — Azeton im Urin ist immer ein Alarmsignal.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Assessment
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (Pflege heute Kap. 8)
+**Primärquelle:** (Pflege heute Kap. 8 / Kap. 25 / Kap. 26)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Bei längerem Stehenlassen wird der Urin trübe und dunkler"
-- Zitat: "Makrohämaturie (Blut im Urin), z. B. durch Nierensteine"
+- Zitat: "Makrohämaturie (Blut im Urin), z. B. durch Nierensteine" — Hämaturie (Tab. 8.7 Urinfarbe) ✅ MATCH
+- Zitat: "Bilirubinhaltiger bierbrauner Urin" — Bilirubin/Leber ✅ MATCH
+- Zitat: "Bei längerem Stehenlassen wird der Urin trübe und dunkler" — Stehzeit-Effekt ✅ MATCH
+- Zitat: "Ein Azetongeruch (Geruch wie sehr reife Äpfel) ist bei Hyperglykämie mit Ausscheidung von Ketonkörpern wahrnehmbar" — Ketongeruch ✅ MATCH
+- Zitat: "Azeton im Urin ist immer ein Alarmsignal für eine Stoffwechselentgleisung" — Ketonurie/Alarm ✅ MATCH
+- Hinweis: Begriff im Korpus „obstartig / wie sehr reife Äpfel" (Azetongeruch), nicht wörtlich „süßlich" — Faktentext an Korpus-Wortlaut angeglichen, „süßlich" als laienverständliches Synonym ergänzt.
 **Praxisfehler:** Rötlicher Urin wird sofort als Blut gedeutet, ohne Nahrungsmittel/Medikamente und Teststreifen zu berücksichtigen.
 
 **Misconceptions:**
@@ -87,9 +96,11 @@
 **Primärquelle:** (Pflege heute Kap. 8)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Häufiges Wasserlassen kleiner Mengen, die Tagesgesamtmenge ist normal"
-- Zitat: "Unfähigkeit, die gefüllte Blase zu entleeren"
-**Praxisfehler:** Begriffe werden ungenau benutzt ("pinkelt oft" statt Pollakisurie), wodurch die Übergabe unscharf wird.
+- Zitat: "Häufiges Wasserlassen kleiner Mengen, die Tagesgesamtmenge ist normal" — Pollakisurie (Tab. 8.2) ✅ MATCH
+- Zitat: "Vermehrtes nächtliches Wasserlassen" — Nykturie (DEFINITION Nykturie) ✅ MATCH
+- Zitat: "Schmerzhaftes und/oder erschwertes Wasserlassen" — Dysurie/Algurie ✅ MATCH
+- Zitat: "Unfähigkeit, die gefüllte Blase zu entleeren" — Harnverhalt ✅ MATCH
+- ⚠️ Strangurie als „schmerzhaft-krampfartiges Wasserlassen": im Pflege-heute-Volltext keine eigenständige Definition (Tab.-Eintrag „Dysurie/Strangurie" OCR-vermischt). Fachlich korrekt (Standardterminologie), aber ⚠️ Quelle beschaffen (Pschyrembel / Urologie-Lehrbuch) oder im Schüler-Content auf Dysurie/Algurie beschränken.
 
 **Misconceptions:**
 - `M1`: **"Pollakisurie und Polyurie sind dasselbe"** — Polyurie = große Gesamtmenge (>3 L/24h), Pollakisurie = oft, aber kleine Portionen bei normaler Gesamtmenge. Fachbegriff: "Poly-Polla-Verwechslung".
@@ -108,8 +119,11 @@
 **Primärquelle:** (Pflege heute Kap. 8)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Pathologische Ausscheidung von roten Blutkörperchen"
-- Zitat: "Pathologische Ausscheidung von Eiweiß"
+- Zitat: "Pathologische Ausscheidung von roten Blutkörperchen" — Hämaturie (Tab. 8.6) ✅ MATCH
+- Zitat: "Leukozyturie Pathologische Ausscheidung von weißen Blutkörperchen" — Leukozyturie ✅ MATCH
+- Zitat: "Pyurie Eiterharn" — Pyurie ✅ MATCH
+- Zitat: "Bakteriurie Vorhandensein von Bakterien" — Bakteriurie ✅ MATCH
+- Zitat: "Proteinurie Pathologische Ausscheidung von Eiweiß" — Proteinurie ✅ MATCH
 **Praxisfehler:** Zucker oder Nitrit im Streifen wird verharmlost statt als Hinweis auf Diabetes bzw. Harnwegsinfekt gemeldet.
 
 **Misconceptions:**
@@ -129,8 +143,8 @@
 **Primärquelle:** (DNQP Kontinenzförderung Aktual. 2024; ICS 2023)
 **Beleg:**
 - Quelle: `dnqp-standards-index/kontinenzfoerderung.txt`
-- Zitat: "Harninkontinenz ist in Anlehnung an die „International Continence Society“ (ICS) jeglicher unfreiwilliger Harnverlust"
-- Zitat: "die Fähigkeit, willkürlich und zur passenden Zeit an einem geeigneten Ort die Blase zu entleeren"
+- Zitat: "Harninkontinenz ist in Anlehnung an die „International Continence Society“ (ICS) jeglicher unfreiwilliger Harnverlust/Urinabgang (ICS 2023)" — Inkontinenz-Def/ICS ✅ MATCH
+- Zitat: "die Fähigkeit, willkürlich und zur passenden Zeit an einem geeigneten Ort die Blase zu entleeren" — Kontinenz-Def ✅ MATCH
 **Praxisfehler:** Inkontinenz wird als Schicksal hingenommen, der Leidensdruck nicht aktiv angesprochen — obwohl Scham viele schweigen lässt.
 
 **Misconceptions:**
@@ -150,7 +164,8 @@
 **Primärquelle:** (Pflege heute Kap. 8)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Bei der Stressinkontinenz (Belastungsinkontinenz) verliert der Patient bei abdominaler Druckerhöhung unwillkürlich Urin"
+- Zitat: "Bei der Stressinkontinenz (Belastungsinkontinenz) verliert der Patient bei abdominaler Druckerhöhung unwillkürlich Urin" — Def ✅ MATCH
+- Belegt (Auslöser/Ursachen, Einzelbegriffe im Korpus verifiziert): „Husten", „Pressen", „Prostatektomie", „Gebärmuttersenkung", „Östrogenmangel" ✅ MATCH
 **Praxisfehler:** "Stress" wird als psychischer Stress missverstanden statt als körperliche Druckerhöhung.
 
 **Misconceptions:**
@@ -170,7 +185,8 @@
 **Primärquelle:** (Pflege heute Kap. 8)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "verspürt der Patient schon bei geringer Blasenfüllung plötzlich einen so starken, zwanghaften Harndrang"
+- Zitat: "verspürt der Patient schon bei geringer Blasenfüllung plötzlich einen so starken, zwanghaften Harndrang" — Def ✅ MATCH
+- Belegt (Begriff/Ursachen/Therapie, Einzelbegriffe im Korpus verifiziert): „imperativer Harndrang", „Apoplex", „Multiple Sklerose", „Blasentraining" ✅ MATCH
 **Praxisfehler:** Sofortiges Aufsuchen der Toilette bei jedem Drang wird als "Training" verkauft — das Gegenteil von Blasentraining.
 
 **Misconceptions:**
@@ -190,7 +206,7 @@
 **Primärquelle:** (Pflege heute Kap. 8)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Bei der Mischinkontinenz kommt es zum unfreiwilligen Urinverlust sowohl im Zusammenhang mit Harndrang als auch bei"
+- Zitat: "Bei der Mischinkontinenz kommt es zum unfreiwilligen Urinverlust sowohl im Zusammenhang mit Harndrang als auch bei körperlicher Belastung" — Def ✅ MATCH
 **Praxisfehler:** Es wird nur nach einem Symptom gefragt, sodass die Mischform übersehen wird.
 
 **Misconceptions:**
@@ -210,8 +226,9 @@
 **Primärquelle:** (Pflege heute Kap. 8)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "unvollständige Blasenentleerung (Restharnbildung) mit und ohne unfreiwilligen Urinverlust"
-- Zitat: "Im Gegensatz zum akuten Harnverhalt ist sie i. d. R. schmerzlos"
+- Zitat: "unvollständige Blasenentleerung (Restharnbildung) mit und ohne unfreiwilligen Urinverlust" — Def ✅ MATCH
+- Zitat: "Im Gegensatz zum akuten Harnverhalt ist sie i. d. R. schmerzlos" — schmerzlos ✅ MATCH
+- Zitat: "Ursache kann ein Abflusshindernis, z. B. Prostatahypertrophie" — Ursachen (Tumor/Blasenstein folgen) ✅ MATCH
 **Praxisfehler:** "Hat doch gepinkelt, also ist die Blase leer" — ohne Restharnmessung bleibt die prall volle Blase unentdeckt.
 
 **Misconceptions:**
@@ -231,8 +248,8 @@
 **Primärquelle:** (Pflege heute Kap. 8)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "eine eingeschränkte Kognition und Mobilität können zur Inkontinenz führen"
-- Zitat: "Ausbildung einer Reflexblase (obere Blasenlähmung). Die willkürliche Entleerungsfunktion ist ausgefallen"
+- Zitat: "eine eingeschränkte Kognition und Mobilität können zur Inkontinenz führen" — funktionelle Inkontinenz ✅ MATCH
+- Zitat: "Ausbildung einer Reflexblase (obere Blasenlähmung). Die willkürliche Entleerungsfunktion ist ausgefallen" — Reflexblase ✅ MATCH
 **Praxisfehler:** Funktionelle Inkontinenz wird mit Inkontinenzhosen "versorgt", statt Toilettentraining und Orientierungshilfen anzubieten.
 
 **Misconceptions:**
@@ -252,8 +269,8 @@
 **Primärquelle:** (Pflege heute Kap. 8)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Unfähigkeit, die gefüllte Blase zu entleeren"
-- Zitat: "Im Gegensatz zum akuten Harnverhalt ist sie i. d. R. schmerzlos"
+- Zitat: "Unfähigkeit, die gefüllte Blase zu entleeren" — Harnverhalt-Def ✅ MATCH
+- Zitat: "Im Gegensatz zum akuten Harnverhalt ist sie i. d. R. schmerzlos" — chronisch schmerzlos vs. akut ✅ MATCH
 **Praxisfehler:** Fehlende Schmerzen beim chronischen Bild werden als "harmlos" gewertet, obwohl ein Nierenschaden droht.
 
 **Misconceptions:**
@@ -265,16 +282,25 @@
 
 ### F-13: DNQP-Kontinenzprofile
 
-**Fakt:** Der DNQP-Expertenstandard nutzt Kontinenzprofile, um bei inkontinenten Personen den Grad des Unterstützungsbedarfs bezüglich personeller und/oder materieller Hilfe zu bestimmen und nach den Maßnahmen zu evaluieren. Die Profile bilden ein Spektrum (z. B. kontinent, unabhängig kontinent, abhängig kontinent, unabhängig nicht-kontinent, abhängig nicht-kontinent). Pflegerisches Ziel: das angestrebte Kontinenzprofil erhalten oder erreichen.
+**Fakt:** Der DNQP-Expertenstandard nutzt Kontinenzprofile, um bei inkontinenten Personen den Grad des Unterstützungsbedarfs bezüglich personeller und/oder materieller Hilfe zu bestimmen und nach den Maßnahmen zu evaluieren. Die sechs Profile (Tab. 8.8, nach dem Expertenstandard „Förderung der Harnkontinenz in der Pflege") bilden ein Spektrum: **Kontinenz**, **unabhängig erreichte Kontinenz**, **abhängig erreichte Kontinenz**, **unabhängig kompensierte Inkontinenz**, **abhängig kompensierte Inkontinenz**, **nicht kompensierte Inkontinenz**. Pflegerisches Ziel: das angestrebte Kontinenzprofil erhalten oder erreichen; der Patient bestimmt selbst, welches Profil er anstrebt.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (DNQP Kontinenzförderung Aktual. 2024)
+**Primärquelle:** (DNQP Kontinenzförderung Aktual. 2024; Pflege heute Kap. 8 Tab. 8.8)
 **Beleg:**
 - Quelle: `dnqp-standards-index/kontinenzfoerderung.txt`
-- Zitat: "den Grad des Unterstützungsbedarfs bezüglich personeller und/oder materieller Hilfe zu bestimmen"
-- Zitat: "hat die damalige Expert*innenarbeitsgruppe Kontinenzprofile entwickelt"
+- Zitat: "den Grad des Unterstützungsbedarfs bezüglich personeller und/oder materieller Hilfe zu bestimmen" — Zweck ✅ MATCH
+- Zitat: "hat die damalige Expert*innenarbeitsgruppe Kontinenzprofile entwickelt" — Entwicklung ✅ MATCH
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Kontinenzprofile nach dem Expertenstandard „Förderung der Harnkontinenz in der Pflege“" — Tab. 8.8 Überschrift ✅ MATCH
+- Zitat: "Unabhängig erreichte Kontinenz" — Profil 2 ✅ MATCH
+- Zitat: "Abhängig erreichte Kontinenz" — Profil 3 ✅ MATCH
+- Zitat: "Unabhängig kompensierte Inkontinenz" — Profil 4 ✅ MATCH
+- Zitat: "Abhängig kompensierte Inkontinenz" — Profil 5 ✅ MATCH
+- Zitat: "Nicht kompensierte Inkontinenz" — Profil 6 ✅ MATCH
+- Zitat: "der Patient selbst bestimmt, welches Kontinenzprofil" — Selbstbestimmung/Ziel ✅ MATCH
+- ⚠️ KORREKTUR: Bisherige Profil-Namen („unabhängig kontinent / abhängig kontinent / unabhängig nicht-kontinent / abhängig nicht-kontinent") waren **fachlich falsch** (nicht die DNQP-Terminologie) und wurden durch die belegten 6 Profile ersetzt.
 **Praxisfehler:** Es wird nur "kontinent / inkontinent" dokumentiert, statt das differenzierte Profil und damit den realen Hilfebedarf abzubilden.
 
 **Misconceptions:**
@@ -294,8 +320,9 @@
 **Primärquelle:** (Pflege heute Kap. 8; DNQP Kontinenzförderung Aktual. 2024)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "erstelltes Miktionsprotokoll während 3–7 Tagen"
-- Zitat: "Im Miktionsprotokoll werden folgende Informationen erhoben"
+- Zitat: "gemeinsam mit dem Betroffenen erstelltes Miktionsprotokoll während 3–7 Tagen" — Dauer 3–7 Tage ✅ MATCH
+- Zitat: "Im Miktionsprotokoll werden folgende Informationen erhoben" — Datenkatalog (Anzahl Miktionen, Urinmenge, ungewollter Verlust, situative Bedingungen, Ersuchen um Unterstützung) ✅ MATCH
+- Zitat: "Trinkmenge/-gewohnheiten" — Trinkmenge als Protokoll-Item ✅ MATCH
 **Praxisfehler:** Nur die Uhrzeit wird notiert; ohne Mengenangabe lässt sich die funktionelle Blasenkapazität nicht bestimmen.
 
 **Misconceptions:**
@@ -315,8 +342,10 @@
 **Primärquelle:** (Pflege heute Kap. 8; DNQP Kontinenzförderung Aktual. 2024)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "die Blasenkapazität zu erhöhen und die Fähigkeit, den Harndrang zu verdrängen, zu verbessern"
-- Zitat: "Es werden Ausscheidungsintervalle von 3–4 Std. angestrebt"
+- Zitat: "die Blasenkapazität zu erhöhen und die Fähigkeit, den Harndrang zu verdrängen, zu verbessern" — Ziel ✅ MATCH
+- Zitat: "Es werden Ausscheidungsintervalle von 3–4 Std. angestrebt" — Intervall 3–4 Std ✅ MATCH
+- Zitat: "Blasentraining eignet sich für Frauen mit Stress-, Drangund Mischinkontinenz" — Eignung (OCR-Artefakt „Drangund" = „Drang- und" im Quelltext) ✅ MATCH
+- Zitat: "Bei Erfolg werden die Ausscheidungsintervalle wöchentlich um 15–30 Min. verlängert" — Steigerung +15–30 Min ✅ MATCH
 **Praxisfehler:** Bei jeder Inkontinenzform wird dasselbe Training angewendet, statt die Trainingsform an die Ursache anzupassen.
 
 **Misconceptions:**
@@ -336,7 +365,9 @@
 **Primärquelle:** (Pflege heute Kap. 8 / Kap. 33)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "ist bei saurem Urin die Gefahr eines Harnwegsinfekts geringer"
+- Zitat: "Der normale pH-Wert des Urins liegt bei 5–6" — pH 5–6 ✅ MATCH
+- Zitat: "ist bei saurem Urin die Gefahr eines Harnwegsinfekts geringer, weil sich aufgrund des sauren Milieus krankheitserregende Keime weniger leicht vermehren können" — saurer Urin = weniger HWI ✅ MATCH
+- Zitat: "Die Flüssigkeitszufuhr soll täglich mindestens 1,5–2 l betragen, da dies auch die Gefahr von Harnwegsinfekten vermindert" — Trinkmenge 1,5–2 L + HWI ✅ MATCH
 **Praxisfehler:** Reduzierte Trinkmenge "damit weniger Urin kommt" begünstigt konzentrierten Urin und Harnwegsinfekte.
 
 **Misconceptions:**

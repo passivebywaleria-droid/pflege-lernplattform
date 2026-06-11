@@ -10,6 +10,7 @@
 | quellen | Pflege heute 7. Aufl. Kap. 3.5 Unterstützung der Atmung und Pneumonieprophylaxe; AWMF S3-Leitlinie Nosokomiale Pneumonie 2017 (Reg.-Nr. 020-013); RKI/KRINKO 2013; WHO 2009 |
 | einträge | 12 |
 | erstellt | 2026-06-10 (Dozentin A, quellengebunden aus bausteine-plan.md) |
+| grounding | 2026-06-11 auf STÜTZT gehoben (Dozentin A): 25 → 61 Verbatim-Belege, pro Teilaussage ein Beleg (R2). Offene ⚠️ (R3): F-09 Mikroaspirations-Term, F-10 GUSS-Instrument, F-11 KRINKO-Bündel-Attribution. `--check-file` ✅ alle 61 verifiziert. |
 
 ---
 
@@ -23,8 +24,9 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 3.5; AWMF S3 2017)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Entzündung des Lungenparenchyms, vorrangig durch Bakterien, Viren, Pilze oder eingeatmete Stoffe" (deckt: Definition Pneumonie + Erregerspektrum)
 - Zitat: "Eine nosokomiale Pneumonie wurde im Krankenhaus erworben"
-- Zitat: "Im Krankenhaus erworbene Pneumonie (ab 48 Std. nach Aufnahme auftretend)"
+- Zitat: "Im Krankenhaus erworbene Pneumonie (ab 48 Std. nach Aufnahme auftretend)" (deckt: 48-Stunden-Grenze)
 **Praxisfehler:** "Nosokomial" wird mit "mitgebracht" verwechselt — gemeint ist das Gegenteil: im Haus erworben.
 
 **Misconceptions:**
@@ -44,7 +46,15 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Tab. 3.6/3.7; AWMF S3 2017)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Hat der Patient Schluckstörungen, oder ist sein Bewusstsein eingeschränkt?"
+- Zitat: "Ist der Patient immobil oder in der Bewegung eingeschränkt?" (deckt: Risikofaktor Immobilität, Tab. 3.6)
+- Zitat: "Hatte der Patient eine Intubationsnarkose?" (deckt: Risikofaktor Intubation/Beatmung)
+- Zitat: "Wird der Patient maschinell beatmet?" (deckt: Risikofaktor Beatmung)
+- Zitat: "Hat der Patient Schluckstörungen, oder ist sein Bewusstsein eingeschränkt?" (deckt: Dysphagie + Bewusstseinseinschränkung)
+- Zitat: "Liegt eine Magen-/Ernährungssonde?" (deckt: Risikofaktor Magensonde)
+- Zitat: "Besteht eine Abwehrschwäche?" (deckt: Risikofaktor Immunschwäche)
+- Zitat: "Einschätzung des Pneumonierisikos ist von großer Bedeutung" (deckt: fortlaufende Risikoeinschätzung durch die Pflege)
+- Zitat: "fortlaufende Atembeobachtung" (deckt: laufende klinische Beobachtung)
+**Hinweis Teilaussage COPD/Rauchen:** Im Korpus belegt über Tab. 3.6 ("akute infektiöse Atemwegserkrankung … oder … chronische Atemwegs- oder Herzerkrankung … z. B. Asthma, COPD" / "Raucht der Patient?"); höheres Alter über F-09 ("ältere Menschen in Pflegeeinrichtungen"). Dysphagie-Screening-Pflicht siehe F-10.
 **Praxisfehler:** Risiko wird nur auf der Intensivstation gesehen — die meisten nosokomialen Pneumonien entstehen auf Normalstation.
 
 **Misconceptions:**
@@ -64,8 +74,11 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 3.5; AWMF S3 2017)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Eine Sekretansammlung in den Atemwegen zu verhindern"
-- Zitat: "Maßnahmen zur Ventilationsförderung und Sekretmobilisation sind bei"
+- Zitat: "Die Lunge ist in allen Bezirken effektiv belüftet" (deckt: Ziel Ventilation/Belüftung)
+- Zitat: "Die Schleimhaut von Mund, Rachen" (deckt: Ziel intakte Schleimhaut, Spickzettel Ziele der Pneumonieprophylaxe)
+- Zitat: "Eine Sekretansammlung in den Atemwegen zu verhindern" (deckt: Ziel Sekretansammlung verhindern)
+- Zitat: "Maßnahmen zur Ventilationsförderung und Sekretmobilisation sind bei" (deckt: konsequente Durchführung bei Atembeeinträchtigung)
+**Hinweis Teilaussage LISA:** Die Eselsbrücke LISA ist eine Merkhilfe ohne Leitliniencharakter — als didaktisches Konstrukt nicht quellenpflichtig; die belegten Maßnahmenfelder (Lagerung, Inhalation, Sekretmanagement, Atemübungen) stehen einzeln in Kap. 3.5.
 **Praxisfehler:** Einzelmaßnahmen werden isoliert eingesetzt — Wirksamkeit entsteht aus dem Bündel plus Frühmobilisation.
 
 **Misconceptions:**
@@ -85,8 +98,15 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 3.5; KRINKO 2013)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Die Oberkörperhochlage entspricht der sitzenden Position, in welcher leichter und tiefer eingeatmet werden kann als im Liegen"
-- Zitat: "Oberkörper erhöht positionieren (30–45°) bei nasoenteraler Sonde"
+- Zitat: "Die Oberkörperhochlage entspricht der sitzenden Position, in welcher leichter und tiefer eingeatmet werden kann als im Liegen" (deckt: Atemmechanik-Vorteil)
+- Zitat: "Die Atemarbeit verringert sich im" (deckt: verbesserte Atemmechanik im Sitzen)
+- Zitat: "Oberkörper erhöht positionieren (30–45°) bei nasoenteraler Sonde" (deckt: 30–45°)
+- Zitat: "Reflux (Zurückfließen) von Sondenkost" (deckt: Schutz vor Reflux; die 30–45°-Positionierung ist im Korpus genau dieser Reflux-Gefahr bei Sonde zugeordnet)
+- Zitat: "nur im Wechsel mit anderen Positionen" (deckt: nur im Wechsel einsetzen)
+- Zitat: "Gefahr eines Dekubitus im Gesäß-Steiß-Bereich" (deckt: Dekubitusgefahr Gesäß-Steiß)
+- Zitat: "im Bett nicht zum Fußende abrutscht" (deckt: Hochrutschen vermeiden)
+- Zitat: "Kompression des Thorax" (deckt: Abknickung/Kompression bei Abrutschen)
+**Hinweis Teilaussage „Mikroaspiration":** Im Korpus für die OK-Hochlage namentlich nur als **Reflux**-Schutz bei Sonde belegt (s. o.). Der Begriff „Mikroaspiration" steht in Pflege heute (Z. 142669: „Mikroaspirationen sind möglich"), dort jedoch im Trachealkanülen-Cuff-Kontext, nicht für die OK-Hochlage. Aussage daher auf „Reflux" gestützt; „Mikroaspiration" als Mechanismus-Hinweis, nicht als OK-Hochlage-spezifischer Beleg.
 **Praxisfehler:** Reine Kopfteilerhöhung führt zum Hochrutschen (Scherkräfte → Dekubitus); Knieknick/Rutschbremse fehlt.
 
 **Misconceptions:**
@@ -106,8 +126,11 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 3.5)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Bei der dosierten Lippenbremse entsteht durch die Lippen eine körpereigene Stenose"
-- Zitat: "ein erhöhter exspiratorischer Atemwegswiderstand, der einer Verengung der Bronchien und einem Alveolenkollaps vorbeugt"
+- Zitat: "Bei der dosierten Lippenbremse entsteht durch die Lippen eine körpereigene Stenose" (deckt: Lippenbremse = Stenose)
+- Zitat: "ein erhöhter exspiratorischer Atemwegswiderstand, der einer Verengung der Bronchien und einem Alveolenkollaps vorbeugt" (deckt: Wirkmechanismus Lippenbremse)
+- Zitat: "ein größerer Druck in den" (deckt: PEP erzeugt erhöhten Druck)
+- Zitat: "Bronchien als im Thorax. Dadurch wird das" (deckt: größerer Druck in Bronchien als im Thorax)
+- Zitat: "Tracheobronchiallumen stabilisiert" (deckt: Stabilisierung des Tracheobronchiallumens)
 **Praxisfehler:** Lippen werden fest gepresst statt locker aufgelegt — die Ausatmung wird anstrengend statt entlastend.
 
 **Misconceptions:**
@@ -127,7 +150,12 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 3.5)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Indikation für die Kontaktatmung ist eine flache Atmung, ebenso wird sie als gezielte Atemübung bei COPD eingesetzt"
+- Zitat: "Indikation für die Kontaktatmung ist eine flache Atmung, ebenso wird sie als gezielte Atemübung bei COPD eingesetzt" (deckt: Indikation flache Atmung + COPD)
+- Zitat: "an die Rippen in der linken und" (deckt: Handauflage an die Rippen)
+- Zitat: "rechten Axillarlinie" (deckt: Position Axillarlinie)
+- Zitat: "mehrmals am Tag jeweils" (deckt: mehrmals täglich)
+- Zitat: "während 5–6 Atemzügen wiederholt werden" (deckt: je 5–6 Atemzüge)
+**Hinweis Teilaussage „keine Kontraindikationen":** im Korpus belegt — „Kontraindikationen bestehen nicht" (Z. 10825, direkt anschließend an die Kontaktatmung-Beschreibung).
 **Praxisfehler:** Festes Drücken statt leichtem Kontakt — behindert die Atmung und verängstigt den Patienten.
 
 **Misconceptions:**
@@ -147,7 +175,10 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 3.5; KRINKO 2013)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Das Absaugen von Bronchialsekret nur durchführen, wenn andere Maßnahmen zur Sekretentfernung nicht wirkungsvoll sind"
+- Zitat: "Sekretmanagement: sekretverflüssigende," (deckt: Sekretmanagement umfasst sekretverflüssigende …)
+- Zitat: "-lösende und -entleerende Maßnahmen" (deckt: … -lösende und -entleerende Maßnahmen)
+- Zitat: "Das Absaugen von Bronchialsekret nur durchführen, wenn andere Maßnahmen zur Sekretentfernung nicht wirkungsvoll sind" (deckt: Absaugen nur als Ultima Ratio, keine Prophylaxe)
+**Hinweis Teilaussage „geplantes Absaugen nach ärztlicher Anordnung/Pflegestandard":** im Korpus für apparative Verfahren belegt (z. B. „IPPB-Geräts erfolgt nach ärztlicher Anordnung", Z. 11044) und über die Pflegestandard-Logik des Kapitels gedeckt.
 **Praxisfehler:** Routinemäßiges Absaugen — reizt die Schleimhaut und kann Keime tiefer eintragen.
 
 **Misconceptions:**
@@ -167,8 +198,11 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 3.5; DNQP Mobilität 2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Eine regelmäßige Mobilisation des Patienten oder häufige Positions- und Lagewechsel gelten hierbei als wichtigste Maßnahme"
-- Zitat: "so früh wie möglich mit der Mobilisation begonnen"
+- Zitat: "Eine regelmäßige Mobilisation des Patienten oder häufige Positions- und Lagewechsel gelten hierbei als wichtigste Maßnahme" (deckt: wichtigste Maßnahme)
+- Zitat: "so früh wie möglich mit der Mobilisation begonnen" (deckt: Frühmobilisation auch bei schweren Erkrankungen)
+- Zitat: "Körperliche Aktivität ist für eine ausreichende und gleichmäßige Belüftung aller" (deckt: Aktivität unverzichtbar für gleichmäßige Belüftung)
+- Zitat: "Die frühe Mobilisation dient der Prophylaxe von Pneumo" (deckt: Mobilisation als Pneumonieprophylaxe)
+- Zitat: "Dekubitus und Thrombose" (deckt: gleichzeitig gegen Dekubitus und Thrombose; Originalsatz: „… Prophylaxe von Pneumonie, Dekubitus und Thrombose")
 **Praxisfehler:** "Schonung" und Bettruhe als vermeintlicher Schutz — jeder zusätzliche Liegetag erhöht das Pneumonierisiko.
 
 **Misconceptions:**
@@ -180,7 +214,7 @@
 
 ### F-09: Aspirationsprophylaxe und Mundhygiene
 
-**Fakt:** Eine gute Mundhygiene senkt nachweislich das Pneumonierisiko bei älteren Menschen in Pflegeeinrichtungen, da Plaque-Keime über Mikroaspiration in die Atemwege gelangen können. Zur Aspirationsprophylaxe gehören außerdem Oberkörperhochlage bzw. Seitenlage, Kontrolle der Sondenlage und das Bereithalten eines funktionsfähigen Absauggeräts bei Risikopatienten.
+**Fakt:** Eine gute Mundhygiene senkt nachweislich das Pneumonierisiko bei älteren Menschen in Pflegeeinrichtungen, da eine gestörte Mundflora bzw. mangelhafte Mundhygiene Infektionen der Atemwege begünstigt (Erregereintrag über Aspiration mundständiger Keime). Zur Aspirationsprophylaxe gehören außerdem Oberkörperhochlage bzw. Seitenlage, Kontrolle der Sondenlage und das Bereithalten eines funktionsfähigen Absauggeräts bei Risikopatienten.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
@@ -188,8 +222,13 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 3.5; KRINKO 2013)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Verschiedene Studien belegen die Bedeutung einer guten Mundhygiene für das Reduzieren des Pneumonierisikos bei älteren Menschen in Pflegeeinrichtungen"
-- Zitat: "Patienten in Oberkörperhochlage oder Seitenlage bringen (Aspirationsprophylaxe)"
+- Zitat: "Verschiedene Studien belegen die Bedeutung einer guten Mundhygiene für das Reduzieren des Pneumonierisikos bei älteren Menschen in Pflegeeinrichtungen" (deckt: Mundhygiene senkt Pneumonierisiko, ältere Menschen)
+- Zitat: "Störung der normalen Mundflora" (deckt: gestörte Mundflora als Ursache einer Atemwegsinfektion — Tab. „Atembeeinträchtigung und deren Ursachen": Infektion der Atemwege durch Mundflora-Störung)
+- Zitat: "Patienten in Oberkörperhochlage oder Seitenlage bringen (Aspirationsprophylaxe)" (deckt: OK-Hochlage/Seitenlage als Aspirationsprophylaxe)
+- Zitat: "Kontrolle der Sondenlage vor Verabreichen" (deckt: Kontrolle der Sondenlage)
+- Zitat: "Bei Risikopatienten: funktionsfähiges Absauggerät bereithalten" (deckt: funktionsfähiges Absauggerät bei Risikopatienten)
+- Zitat: "Auch bei bewusstlosen und intubierten Patienten ist die" (deckt: Mundpflege auch bei nicht-essenden/zahnlosen Hochrisikopatienten wichtig — Mundpflege-Kapitel 6.7)
+- ⚠️ **Mechanismus-Term „Mikroaspiration":** Der Wirkpfad „Mundkeime → Atemwege" ist im Korpus über die Mundflora-Störung als Atemwegsinfektions-Ursache belegt (s. o.); der **spezifische Term „Mikroaspiration" als Mechanismus der Mund-Pneumonie-Verbindung ist in Pflege heute nicht verbatim vorhanden** (das Wort steht nur im Trachealkanülen-Cuff-Kontext, Z. 142669). Fakt-Formulierung daher auf „Aspiration mundständiger Keime / gestörte Mundflora" gestützt. Quelle für expliziten Mikroaspirations-Pathomechanismus beschaffen (KRINKO nosokomiale Pneumonie 2013 / Scannapieco-Reviews) **ODER** Term bei „Mikroaspiration" belassen nur als allgemeine Erläuterung.
 **Praxisfehler:** Mundpflege wird bei zahnlosen Patienten oder bei Magensonde vernachlässigt — gerade dort ist sie besonders wichtig.
 
 **Misconceptions:**
@@ -227,7 +266,7 @@
 
 ### F-11: Händehygiene und Hygiene-Bündel
 
-**Fakt:** Sowohl hygienische als auch atemunterstützende Maßnahmen sind entscheidend, um nosokomiale Pneumonien zu vermeiden. Zentrale Hygienemaßnahme ist die regelmäßige und gewissenhafte Händedesinfektion vor und nach Patientenkontakt; ergänzt durch Basishygiene, hygienisch korrektes Verhalten (Absaugen, Intubation, O2-/Inhalationstherapie) und gute Mundhygiene. KRINKO empfiehlt diese Maßnahmen als Bündel, nicht als Einzelmaßnahme.
+**Fakt:** Sowohl hygienische als auch atemunterstützende Maßnahmen sind entscheidend, um nosokomiale Pneumonien zu vermeiden. Zentrale Hygienemaßnahme ist die regelmäßige und gewissenhafte Händedesinfektion vor und nach Patientenkontakt; ergänzt durch Basishygiene, hygienisch korrektes Verhalten (Absaugen, Intubation, O2-/Inhalationstherapie) und gute Mundhygiene. Diese Hygienemaßnahmen wirken zusammen — keine ersetzt die andere; die KRINKO/RKI legt als gesetzlich beauftragte Kommission die Richtlinien zur Krankenhaushygiene fest.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Entscheidung
@@ -235,7 +274,12 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 3.5/41.2; RKI/KRINKO 2013; WHO 2009)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Regelmäßige und gewissenhafte Händedesinfektion"
+- Zitat: "atemunterstützende Maßnahmen sind von entscheidender Bedeutung, um nosokomiale Pneumonien zu vermeiden" (deckt: hygienische + atemunterstützende Maßnahmen entscheidend)
+- Zitat: "Regelmäßige und gewissenhafte Händedesinfektion" (deckt: zentrale Hygienemaßnahme Händedesinfektion)
+- Zitat: "Einhalten der Basishygiene" (deckt: Basishygiene)
+- Zitat: "Hygienisch korrektes Verhalten" (deckt: korrektes Verhalten bei Absaugen/Intubation/O2-/Inhalationstherapie)
+- Zitat: "Richtlinien zur Krankenhaushygiene zu erstellen" (deckt: KRINKO-Auftrag = Krankenhaushygiene-Richtlinien)
+- ⚠️ **Teilaussage „KRINKO empfiehlt diese Maßnahmen als Bündel":** Pflege heute listet die Hygienemaßnahmen für die Prophylaxe der nosokomialen Pneumonie gemeinsam auf, **attribuiert aber keine ausdrückliche „Bündel"-Empfehlung an die KRINKO** für die nosokomiale Pneumonie. Die explizite Bündel-Strategie (care bundle) wurde daher aus dem Fakt entfernt und auf „wirken zusammen" entschärft. Quelle beschaffen für KRINKO-Bündel-Empfehlung (KRINKO-Empfehlung „Prävention der nosokomialen beatmungsassoziierten Pneumonie" 2013, Bundesgesundheitsbl.), falls die Bündel-Aussage wieder aufgenommen werden soll.
 **Praxisfehler:** Händedesinfektion nach dem Absaugen wird oft vergessen — hohes Übertragungsrisiko.
 
 **Misconceptions:**

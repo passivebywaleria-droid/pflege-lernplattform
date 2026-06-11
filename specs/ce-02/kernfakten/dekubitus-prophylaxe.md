@@ -37,6 +37,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Versorgung des Gewebes mit Sauerstoff und Nährstoffen sowie die Entsorgung von Kohlendioxid und Stoffwechselendprodukten werden unterbrochen"
+- Zitat: "Anhäufung saurer Metaboliten"
+- Zitat: "Dilatation der"
+- Zitat: "sterben einzelne Zellen ab, es bildet sich eine Nekrose"
 **Transfer:** [Transfer] Wie bei einem Gartenschlauch: wird er abgeknickt, fließt kein Wasser mehr. Je länger der Knick, desto größer der Schaden am Schlauch.
 
 ---
@@ -109,7 +112,7 @@
 
 ### F-07: Fingertest — Früherkennung einer Kategorie-I-Schädigung
 
-**Fakt:** Um eine beginnende Druckschädigung zu erkennen, wird mit dem Finger kurz auf die gerötete Hautstelle gedrückt. Verfärbt sich die Stelle dabei weiß und kehrt die Farbe nach dem Loslassen zurück, funktioniert die Durchblutung noch — der Test ist negativ. Bleibt die Rötung dagegen bestehen (positiver Fingertest), liegt bereits eine Gefäßschädigung vor und es handelt sich mindestens um Kategorie I. Der Fingertest gilt als beste verfügbare Methode, um den Zeitpunkt für den nächsten Positionswechsel zu bestimmen.
+**Fakt:** Um eine beginnende Druckschädigung zu erkennen, wird mit dem Finger kurz auf die gerötete Hautstelle gedrückt. Verfärbt sich die Stelle dabei weiß und kehrt die Farbe nach dem Loslassen zurück, funktioniert die Durchblutung noch — der Test ist negativ. Bleibt die Rötung dagegen bestehen (positiver Fingertest), liegt bereits eine Gefäßschädigung vor und es handelt sich mindestens um Kategorie I. Der Fingertest dient zusätzlich dazu, das individuelle Positionierungsintervall festzulegen: Das Intervall wird mithilfe des Fingertests bestimmt, Patientenwünsche werden dabei berücksichtigt.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
@@ -117,6 +120,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Bleibt die Rötung nach dem Fingerdruck bestehen, liegt bereits ein Dekubitus Kategorie I vor"
+- Zitat: "Das Intervall wird"
+- Zitat: "mithilfe des Fingertests"
 **Praxisfehler:** Bei dunkler Hautfarbe ist die Rötung oft nicht sichtbar. Schüler verlassen sich dann fälschlich auf den Fingertest allein. Stattdessen muss hier auf Temperaturunterschiede (kälter oder wärmer als Umgebung), Verhärtung und Schmerzempfindlichkeit geachtet werden.
 
 ---
@@ -172,22 +177,31 @@
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Fakt
-**Primärquelle:** (DNQP, 2017)
+**Primärquelle:** (I Care Pflege Kap. 17.2.1 Makro- und Mikrobewegungen — Bewegungsfrequenzen 12–40/h bzw. 4–8/h; DNQP, 2017 — individueller Bewegungsplan)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Maßnahmen geplant, z. B. Mikrobewegungen und 30°-Positionierung"
+- Quelle: `icare-index/kap-52.md`
+- Zitat: "Mikrobewegungen verringern den Druck"
+- Zitat: "12–40-mal pro Stunde"
+- Zitat: "Makrobewegungen dienen der vollständigen Druckentlastung"
+- Zitat: "4–8-mal pro Stunde"
 
 ---
 
 ### F-12: Positionierungsarten — Verschiedene Lagen zur Druckentlastung
 
-**Fakt:** Für den Makropositionswechsel stehen verschiedene Positionen zur Verfügung. Die 30°-Seitenlage gilt als besonders günstig — sie verteilt den Druck großflächig und entlastet Kreuzbein, Ferse und Trochanter der Gegenseite. Die 135°-Lage entlastet die gesamte Rückseite des Körpers. Die Bauchlage befreit Hinterkopf, Kreuzbein und Fersen vollständig vom Druck. Bei der Hohllage (Freilage) werden besonders gefährdete Stellen wie Fersen durch Kissen oder Handtücher komplett frei positioniert, sodass kein Auflagedruck mehr besteht. Welche Position gewählt wird, hängt vom einzelnen Patienten ab — seine Vorlieben, Grunderkrankung und Therapie bestimmen die Auswahl.
+**Fakt:** Für den Makropositionswechsel stehen verschiedene Positionen zur Verfügung. Die 30°-Seitenlage ist die klassische seitliche Positionierung zur Dekubitusprophylaxe — in dieser Position erfährt vor allem der Trochanter major (großer Rollhügel) keine Druckbelastung. Die 135°-Lage entlastet die gesamte Rückseite des Körpers. Bei der Hohllage (Freilage) werden besonders gefährdete Stellen wie Fersen durch Kissen oder Handtücher komplett frei positioniert, sodass kein Auflagedruck mehr besteht. Welche Position gewählt wird, hängt vom einzelnen Patienten ab — seine Vorlieben, Grunderkrankung und Therapie bestimmen die Auswahl.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
 **Primärquelle:** (DNQP, 2017)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "klassische seitliche Positionierung zur Dekubitusprophylaxe"
+- Zitat: "erfährt v. a. der Trochanter major"
+- Zitat: "Rückseite des Patienten"
+- Zitat: "vollständig entlastet"
 - Zitat: "Besonders gefährdete Körperstellen, z. B. die Fersen, positionieren Pflegende frei"
 
 ---
@@ -240,11 +254,11 @@
 
 ### F-16: Komplikationen — Was passiert ohne Prophylaxe?
 
-**Fakt:** Wird ein Dekubitus nicht verhindert oder zu spät erkannt, drohen schwerwiegende Folgen. Die Behandlungskosten eines im Krankenhaus entstandenen Dekubitus liegen zwischen 28.000 und 64.000 Euro. Die Verweildauer verlängert sich durchschnittlich um 10 Tage. Für den Betroffenen bedeutet ein fortgeschrittener Dekubitus starke Schmerzen, Wundinfektionen bis hin zur Sepsis, monatelange Wundbehandlung und erhebliche Einschränkung der Lebensqualität. Bei Kategorie III und IV sind operative Eingriffe (plastische Deckung) oft unvermeidlich. Besonders schwerwiegend: ein Dekubitus ist ein anerkannter Qualitätsindikator — sein Auftreten kann auf pflegerische Mängel hinweisen und haftungsrechtliche Konsequenzen haben.
+**Fakt:** Wird ein Dekubitus nicht verhindert oder zu spät erkannt, drohen schwerwiegende Folgen. Der Dekubitus ist eine der am meisten gefürchteten Komplikationen längerer Bewegungsarmut. Für den Betroffenen bedeutet ein fortgeschrittener Dekubitus starke Schmerzen, Wundinfektionen bis hin zur Sepsis, monatelange Wundbehandlung und erhebliche Einschränkung der Lebensqualität. Bei Kategorie III und IV sind operative Eingriffe (plastische Deckung) oft unvermeidlich. Besonders schwerwiegend: ein Dekubitus ist ein anerkannter Qualitätsindikator — sein Auftreten kann auf pflegerische Mängel hinweisen und haftungsrechtliche Konsequenzen haben. ⚠️ Quelle beschaffen (Theisen et al. 2012 / aktuelle Gesundheitsökonomie): Die konkreten Zahlen — Behandlungskosten 28.000–64.000 Euro pro im Krankenhaus entstandenem Dekubitus und durchschnittlich +10 Tage Verweildauer — sind im vorliegenden Korpus (Pflege heute, DNQP-Auszug, EPUAP, I Care) nicht belegbar. Bis zur Beschaffung der Primärquelle dürfen diese Zahlen nicht als belegt im Schüler-Content erscheinen.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Komplikation
-**Primärquelle:** (DNQP, 2017; Theisen et al., 2012)
+**Primärquelle:** (DNQP, 2017 — Bedeutung/Qualitätsindikator; für Kosten-/Verweildauer-Zahlen: Theisen et al., 2012 — zu beschaffen)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Der Dekubitus ist eine der am meisten gefürchteten Komplikationen längerer Bewegungsarmut"

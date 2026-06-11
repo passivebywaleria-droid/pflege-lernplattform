@@ -23,7 +23,10 @@
 **Primärquelle:** (Pflege heute, 7. Aufl., Kap. 6.1)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Mit einer Fläche von 1,5–2 m2 und einem"
+- Zitat: "Gewicht von 3,5–10 kg ist die Haut das"
 - Zitat: "ist die Haut das größte Organ des menschlichen Körpers"
+- ⚠️ Quelle beschaffen (I-Care Anatomie): die exakte Aufzählung der **fünf** Funktionen (Schutz, Temperaturregulation, Sinneswahrnehmung, Stoffwechsel/Vitamin-D, soziale Kommunikation) ist in `pflege-heute.txt` durch das PDF-Layout aufgebrochen — nur Funktion 1 ("Trennwand und Schutzschild") ist verbatim zusammenhängend. Einzelfunktionen sind belegt (Temperaturregulation, Vitamin-D-Bildung, Sinneswahrnehmung kommen vor), die geschlossene 5er-Liste nicht.
 **Praxisfehler:** Haut wird nur als passive "Schutzhülle" gesehen statt als aktives, multifunktionales Organ — dadurch wird Hautbeobachtung unterschätzt.
 
 **Misconceptions:**
@@ -44,6 +47,7 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Verzahnung der Epidermis (Oberhaut) mit dem darunterliegenden Dermis"
+- ⚠️ Quelle beschaffen (I-Care Anatomie): `pflege-heute.txt` benennt **Epidermis** und **Dermis** verbatim, aber keine geschlossene Drei-Schichten-Aussage, die die **Subcutis (Unterhaut, Fettgewebe)** als dritte Hautschicht der Strukturbeschreibung nennt (Vorkommen nur in Dekubitus-/Turgor-Kontext, nicht als Schichtdefinition). Subcutis-Schicht ist daher in diesem Korpus nicht STÜTZT-belegbar.
 **Praxisfehler:** Subcutis wird als "nur Fett" abgetan — dabei ist das Unterhautfettgewebe für Druckverteilung (Dekubitusschutz) und Turgor wichtig.
 
 **Misconceptions:**
@@ -63,6 +67,8 @@
 **Primärquelle:** (Pflege heute, 7. Aufl., Kap. 6.1.1)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Je nach Körperregion und Belastung ist die"
+- Zitat: "Hornschicht zwischen 0,5 und 4 mm dick"
 - Zitat: "Sie verhindert das Eindringen von Chemikalien und Mikroorganismen"
 **Praxisfehler:** Aggressives, häufiges Waschen zerstört die Hornschicht-Barriere — die Haut trocknet aus und wird durchlässig für Keime.
 
@@ -84,6 +90,7 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Das Wasser stammt von den Schweißdrüsen, das Fett wird von den Talgdrüsen produziert"
+- Zitat: "mit seinem pH-Wert um 5,5"
 - Zitat: "ein für Mikroorganismen ungünstiges Milieu geschaffen"
 **Praxisfehler:** Verwendung alkalischer Seife (pH 9–10) statt hautneutralem Syndet (pH 5,5) zerstört den Säureschutzmantel.
 
@@ -124,6 +131,11 @@
 **Primärquelle:** (Pflege heute, 7. Aufl., Kap. 6.1.2)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Bei der Hautbeobachtung lassen sich"
+- Zitat: "Hautspannung (Hautturgor)"
+- Zitat: "Hauttemperatur"
+- Zitat: "Hautoberfläche"
+- Zitat: "Pflegende in erster Linie ihren Seh- und"
 - Zitat: "erfordert bei Abweichungen vom Normalzustand eine genaue Beschreibung der Veränderung und ihrer Lokalisation"
 **Praxisfehler:** Knappe Dokumentation ("Haut o. B.") ohne konkrete Beschreibung von Stelle, Größe und Aussehen einer Veränderung.
 
@@ -145,6 +157,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die typische Hautfarbe wird bestimmt durch die Pigmentierung, die Durchblutungsintensität"
+- Zitat: "durch die Pigmentierung, die Durchblutungsintensität und die Dicke der Epithelschicht"
+- Zitat: "Bläuliche Verfärbung der Haut als"
+- Zitat: "Gallenfarbstoffs Bilirubin, zuerst in den Skleren"
 **Praxisfehler:** Bei dunkler Haut wird eine Rötung übersehen, weil sie nicht "rot" erscheint, sondern als violette/braune Verfärbung oder Verhärtung — Dekubiti werden zu spät erkannt.
 
 **Misconceptions:**
@@ -184,6 +199,7 @@
 **Primärquelle:** (Pflege heute, 7. Aufl., Kap. 6.1.3)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Die Hautspannung (Hautturgor) ist abhängig vom Flüssigkeitsgehalt der Haut"
 - Zitat: "bleibt sie bei einer Dehydratation einige Sekunden stehen"
 **Praxisfehler:** Turgor-Test wird bei sehr alten Menschen falsch interpretiert — bei Altershaut steht die Falte auch ohne Dehydratation länger (Test am Sternum/Schlüsselbein aussagekräftiger).
 
@@ -225,6 +241,7 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "wird vom Wärmeregulationszentrum im Hypothalamus"
+- Zitat: "liegt physiologisch bei 37 °C"
 - Zitat: "Wärmebildung und Wärmeabgabe im Gleichgewicht hält"
 **Praxisfehler:** Bei alten Menschen wird die eingeschränkte Thermoregulation unterschätzt — sie unterkühlen und überhitzen schneller (Hitzewellen-Mortalität).
 
@@ -245,6 +262,7 @@
 **Primärquelle:** (Pflege heute, 7. Aufl., Kap. 6.1.3)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "ebenso die elastischen Fasern"
 - Zitat: "Außerdem regeneriert sich die Haut im Alter langsamer"
 **Praxisfehler:** Altershaut wird zu häufig und mit Seife gewaschen — verstärkt Trockenheit, Juckreiz und Rissigkeit; richtig: seltener, hautneutral, rückfetten.
 
@@ -266,6 +284,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Das Wasser stammt von den Schweißdrüsen, das Fett wird von den Talgdrüsen produziert"
+- Zitat: "Haut besitzt mehr Talgdrüsen und die"
+- Zitat: "bei Frauen das Unterhautfettgewebe stärker ausgeprägt"
+- ⚠️ Quelle beschaffen (I-Care Anatomie / Physiologie): Teilaussage "Schweiß reagiert leicht sauer" ist in `pflege-heute.txt` nicht verbatim belegbar (nur der pH-5,5-Wert des Hydrolipidfilms in F-04). Bei nächster Überarbeitung entweder mit Physiologie-Quelle belegen oder aus dem Fakt entfernen.
 **Praxisfehler:** Sebum und Schweiß werden gleichgesetzt — beide sind unterschiedliche Sekrete (Fett vs. Wasser/Salz), die erst zusammen den Schutzfilm bilden.
 
 **Misconceptions:**
