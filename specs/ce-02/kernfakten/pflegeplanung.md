@@ -10,12 +10,13 @@
 | quellen | Pflege heute 7. Aufl. Kap. Pflegeprozess und Pflegeplanung; NANDA-I 2021; § 4 PflBG; Orem 1971; Krohwinkel 1993; Roper/Logan/Tierney 1980; Doran 1981 |
 | einträge | 14 |
 | erstellt | 2026-06-10 (Dozentin A) |
+| grounding | STÜTZT-Stand 2026-06-11: 48 Verbatim-Belege, alle ✅ verifiziert (`--check-file`). 2 ⚠️-Markierungen (PESR/PÄSR-Kürzel in F-01/F-02; „med. stabil / pflege täglich" in F-07) — im Korpus nicht belegbar, Quelle beschaffen ODER Claim entfernen (R3). |
 
 ---
 
 ### F-01: PÄS-Format der Pflegediagnose
 
-**Fakt:** Eine problemfokussierende Pflegediagnose nach NANDA besteht aus drei Komponenten: Problem (Was?), Ätiologie (beeinflussende Faktoren — Warum?) und Symptome (bestimmende Merkmale — Woran erkennbar?). Dieser Aufbau wird als PÄS-Format abgekürzt. In Deutschland wird das Schema häufig um die Ressource (R) zum PESR/PÄSR erweitert.
+**Fakt:** Eine problemfokussierende Pflegediagnose nach NANDA besteht aus drei Komponenten: Problem (Was?), Ätiologie (beeinflussende Faktoren — Warum?) und Symptome (bestimmende Merkmale — Woran erkennbar?). Dieser Aufbau wird als PÄS-Format abgekürzt. ⚠️ Die in Deutschland verbreitete Erweiterung um die Ressource (R) zum **PESR/PÄSR**-Schema ist im vorliegenden Korpus (Pflege heute) NICHT belegt — Pflege heute behandelt Ressourcen separat (➔ F-02/F-13), nennt aber kein „PESR/PÄSR"-Kürzel. Quelle beschaffen (z. B. NANDA-I-Original 2021 oder einschlägiges Pflegeplanungs-Lehrbuch) ODER Kürzel-Claim entfernen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
@@ -23,6 +24,7 @@
 **Primärquelle:** (NANDA-I 2021)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Der Aufbau einer Pflegediagnose durch diese drei Komponenten wird abgekürzt als"
 - Zitat: "PÄS-Format (Problem, Ätiologie [beeinflussende Faktoren] und Symptome [bestimmende Merkmale])"
 
 **Misconceptions:**
@@ -33,7 +35,7 @@
 
 ### F-02: PES vs. PESR — Ressourcen als deutsche Erweiterung
 
-**Fakt:** Das international (NANDA-I) gebräuchliche PES-/PÄS-Schema beschreibt das Defizit. In Deutschland wird es um die Ressource (R) zum PESR-Schema erweitert — denn das Erfassen der Ressourcen ist ebenso wichtig wie das Erfassen der Pflegeprobleme, um aktivierende Pflege leisten zu können (rehabilitierende Prozesspflege nach Krohwinkel).
+**Fakt:** Das international (NANDA-I) gebräuchliche PES-/PÄS-Schema beschreibt das Defizit. Das Erfassen der Ressourcen ist im deutschsprachigen Raum ebenso wichtig wie das Erfassen der Pflegeprobleme, um aktivierende Pflege leisten zu können. ⚠️ Die hieraus oft abgeleitete Schema-Erweiterung „PES → **PESR**" (Ressource als vierter Buchstabe) ist im Korpus (Pflege heute) NICHT als Kürzel belegt; belegt ist nur der inhaltliche Stellenwert der Ressourcen. Quelle beschaffen ODER Kürzel-Claim entfernen (siehe F-01).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
@@ -42,6 +44,7 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ebenso wichtig wie das Erfassen von Pflegeproblemen ist das Erfassen der Ressourcen"
+- Zitat: "aktivierende Pflege"
 
 **Misconceptions:**
 - `M1`: **"PES ist veraltet und in Deutschland verboten"** — PES ist der internationale NANDA-I-Standard und nicht verboten. In Deutschland wird PESR bevorzugt, weil es den ressourcenorientierten, rehabilitativen Ansatz besser abbildet.
@@ -59,6 +62,7 @@
 **Primärquelle:** (NANDA-I 2021)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Pflegediagnosen unterscheiden: problemfokussierende Pflegediagnose, Risikopflegediagnose und Pflegediagnosen der Gesundheitsförderung"
 - Zitat: "Die Risikopflegediagnose benennt Zustände, die vorhergesagt werden können, aber noch nicht eingetreten sind"
 - Zitat: "Beschreibung der Motivation und der Wünsche des Patienten, sein Wohlbefinden zu steigern"
 
@@ -80,6 +84,9 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ein korrekt formuliertes Pflegeziel beinhaltet folgende Anforderungen z. B. nach der"
 - Zitat: "Spezifisch: Ist die Pflegemaßnahme speziell auf die Situation des Patienten bezogen"
+- Zitat: "Messbar: Lässt sich das Ergebnis beschreiben oder messen"
+- Zitat: "Akzeptiert: Ist der Patient mit dem Vorgehen einverstanden"
+- Zitat: "Realisierbar: Sind die festgelegten Ziele"
 - Zitat: "Terminierbar: Ist die Umsetzung der Pflegemaßnahme bis zu einem bestimmten Termin zu erreichen"
 
 **Praxisfehler:** Hilfsverben wie "sollen", "müssen", "können" in der Zielformulierung — das Ziel beschreibt einen Soll-Zustand, nicht einen Wunsch.
@@ -122,6 +129,7 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "konkret als Antwort auf folgende W-Fragen formuliert: „Wer macht wann, was, wie, womit?"
+- Zitat: "Die Formulierung ist dabei so knapp wie möglich und so ausführlich wie nötig zu halten"
 
 **Praxisfehler:** Floskeln wie "psychische Betreuung" oder "Angst nehmen" erfüllen die Kriterien nicht — richtig sind konkrete, überprüfbare Aussagen.
 
@@ -133,7 +141,7 @@
 
 ### F-07: Medizinische Diagnose vs. Pflegediagnose
 
-**Fakt:** Medizinische Diagnose (Arzt) beschreibt die Krankheit und ist meist stabil. Die Pflegediagnose (Pflegefachperson) beschreibt die menschliche Reaktion dieses Patienten auf die Krankheit und verändert sich täglich. Beide Perspektiven sind notwendig und ergänzen einander.
+**Fakt:** Die medizinische Diagnose (Arzt) beschreibt die Krankheit; die Pflegediagnose (Pflegefachperson) beschreibt die menschliche Reaktion dieses Patienten auf Gesundheitszustände/Lebensprozesse — also die Folgen von Gesundheitsproblemen, für die Pflegende zuständig sind. Beide Perspektiven sind notwendig und ergänzen einander. ⚠️ Die häufige Lehrbuch-Zuspitzung „medizinische Diagnose ist stabil, Pflegediagnose verändert sich täglich" ist im Korpus (Pflege heute) so NICHT belegt — belegt ist die Perspektiven-Unterscheidung (Krankheit vs. menschliche Reaktion/Folgen), nicht die Stabilitäts-/Täglich-Aussage. Quelle beschaffen ODER Zuspitzung entfernen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
@@ -161,8 +169,12 @@
 **Primärquelle:** (§ 4 PflBG)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "nur von Personen mit erfolgreich abgeschlossener dreijähriger Pflegeausbildung durchgeführt werden dürfen"
 - Zitat: "Erhebung und Feststellung des individuellen Pflegebedarfs"
+- Zitat: "Organisation, Gestaltung und Steuerung des Pflegeprozesses"
+- Zitat: "Analyse, Evaluation, Sicherung und Entwicklung der Qualität der Pflege"
 - Zitat: "Diese vorbehaltenen Tätigkeiten im Rahmen der Pflegeplanung sind somit dem"
+- Zitat: "eigenverantwortlichen Aufgabenbereich der"
 
 **Misconceptions:**
 - `M1`: **"Erfahrene Pflegehilfen dürfen selbst planen — Erfahrung zählt mehr als der Abschluss"** — § 4 PflBG ist gesetzliche Regelung, kein Ermessen. Erfahrung ersetzt weder Ausbildung noch gesetzliche Berechtigung.
@@ -172,7 +184,7 @@
 
 ### F-09: Pflegemodell Orem — Selbstpflegedefizit
 
-**Fakt:** Nach Orem achten die Pflegenden auf Selbstpflegeerfordernisse, indem sie Selbstpflegefähigkeiten und Selbstpflegedefizite identifizieren. Pflege ist notwendig, wenn ein Selbstpflegedefizit besteht — die Lücke zwischen Selbstpflegefähigkeit und Selbstpflegeanforderung. Orem unterscheidet drei Pflegesysteme: vollständig kompensierend, teilweise kompensierend, unterstützend-anleitend.
+**Fakt:** Nach Orem achten die Pflegenden auf Selbstpflegeerfordernisse, indem sie Selbstpflegefähigkeiten und Selbstpflegedefizite identifizieren. Pflege ist notwendig, wenn ein Selbstpflegedefizit besteht — die Lücke zwischen Selbstpflegefähigkeit und Selbstpflegeanforderung. Orem beschreibt das pflegerische Handeln in drei prinzipiellen Formen (Pflegesystemen): **vollständig kompensatorisches**, **teilweise kompensatorisches** und **anleitend-unterstützendes System** (Terminologie nach Pflege heute).
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Modell
@@ -181,9 +193,13 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Nach Orem (➔ 50.3.4) achten die Pflegenden insbesondere auf Selbstpflegeerfordernisse, indem sie Selbstpflegefähigkeiten und Selbstpflegedefizite identifizieren"
+- Zitat: "Dieses beschreibt Orem in drei prinzi"
+- Zitat: "Vollständig kompensatorisches System"
+- Zitat: "Teilweise kompensatorisches System"
+- Zitat: "Anleitend-unterstützendes System"
 
 **Misconceptions:**
-- `M1`: **"Pflege nach Orem heißt immer alles übernehmen"** — Nur das vollständig kompensierende System übernimmt alles; im unterstützend-anleitenden System gibt die Pflege nur Anleitung und Wissen.
+- `M1`: **"Pflege nach Orem heißt immer alles übernehmen"** — Nur das vollständig kompensatorische System übernimmt alles; im anleitend-unterstützenden System gibt die Pflege nur Anleitung, Beratung und Schulung.
 - `M2`: **"Selbstpflegedefizit bedeutet Bequemlichkeit des Patienten"** — Es ist die fachliche Beschreibung der Lücke zwischen Fähigkeit und Anforderung, kein Werturteil.
 
 ---
@@ -200,7 +216,8 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "den Aspekt „Mit existenziellen Erfahrungen des Lebens umgehen"
 - Zitat: "als 13 Aktivitäten und existenzielle Erfahrungen des Lebens"
-- Zitat: "ABEDL®-Modell (Aktivitäten, Beziehungen und existenzielle Erfahrungen des Lebens)"
+- Zitat: "Die Theorie wurde 1993 erstmals veröffentlicht"
+- Zitat: "ABEDL®: Aktivitäten, Beziehungen und existenzielle Erfahrungen des Lebens"
 
 **Misconceptions:**
 - `M1`: **"AEDL und ABEDL sind verschiedene Modelle"** — ABEDL ist die überarbeitete Fassung des AEDL-Modells (B = Beziehungen ergänzt), nicht ein anderes Modell.
@@ -256,6 +273,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Fähigkeiten und Fertigkeiten des Patienten, Folgen von Gesundheitsproblemen"
+- Zitat: "aus eigener Kraft auszugleichen"
+- Zitat: "Körperliche, psychische, spirituelle, räumliche, soziale, ökonomische Fähigkeiten und Motivationen"
 - Zitat: "Ebenso wichtig wie das Erfassen von Pflegeproblemen ist das Erfassen der Ressourcen"
 
 **Misconceptions:**
@@ -274,7 +293,10 @@
 **Primärquelle:** (Pflege heute; Strukturmodell SIS® 2016)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Seit 2016 wurde in vielen Einrichtungen das"
 - Zitat: "Strukturmodell zur Entbürokratisierung der Pflegedokumentation"
+- Zitat: "mit der Strukturierten Informationssammlung (SIS®)"
+- Zitat: "um den Dokumentationsaufwand möglichst gering zu halten"
 
 **Misconceptions:**
 - `M1`: **"Das Strukturmodell ersetzt den Pflegeprozess"** — Es ist ein Dokumentationsmodell zur Entbürokratisierung, nicht ein Ersatz für die fachliche Pflegeprozess-Logik.

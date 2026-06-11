@@ -15,7 +15,8 @@
 
 ### F-01: Begriff Mobilisation und Folgen der Immobilität
 
-**Fakt:** Mobilisation umfasst jede pflegerische Maßnahme, die einen Menschen in Bewegung bringt oder hält — vom passiven Drehen im Bett bis zum begleiteten Gehen. Fehlt Bewegung, drohen typische Folgen: Dekubitus, Thrombose, Pneumonie, Kontraktur, Sturz sowie Muskelabbau (Sarkopenie, bis zu 10 % Muskelmasse pro Woche Bettruhe bei älteren Menschen). Bewegungsmangel kann rasch Komplikationen verursachen.
+**Fakt:** Mobilisation umfasst jede pflegerische Maßnahme, die einen Menschen in Bewegung bringt oder hält — vom passiven Drehen im Bett bis zum begleiteten Gehen. Fehlt Bewegung, drohen typische Folgen: Dekubitus, Thrombose, Pneumonie, Kontraktur, Sturz sowie Muskelabbau (Sarkopenie). Bewegungsmangel kann rasch Komplikationen verursachen.
+⚠️ Quelle beschaffen (konkrete Primärquelle): Die Detail-Zahl „bis zu 10 % Muskelmasse pro Woche Bettruhe bei älteren Menschen" ist im vorhandenen Korpus (Pflege heute, DNQP) NICHT verbatim belegbar — Pflege heute nennt Sarkopenie/Muskelmasse-Verlust nur qualitativ, ohne diesen Wochen-Prozentsatz. Beleg über geriatrische Primärquelle (z. B. AWMF-/DGG-Leitlinie Sarkopenie, ESPEN, Originalarbeiten zur Inaktivitätsatrophie) nachziehen, bevor die Zahl als Schüler-Inhalt ausgespielt wird. Bis dahin entfernt aus dem Fakt-Text.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Definition
@@ -35,7 +36,8 @@
 
 ### F-02: DNQP-Expertenstandard Mobilität (2020)
 
-**Fakt:** Die Förderung der Mobilität ist im nationalen DNQP-Expertenstandard „Erhaltung und Förderung der Mobilität in der Pflege" (2020) geregelt. Er gliedert sich in 6 Kriterien: 1. einschätzen, 2. informieren/beraten, 3. planen, 4. durchführen, 5. evaluieren, 6. dokumentieren/überleiten. Die Einschätzung erfolgt bei Aufnahme UND bei jeder Zustandsveränderung — unterstützt durch Instrumente wie Tinetti-Test, Timed Up and Go (TUG) und Barthel-Index.
+**Fakt:** Die Förderung der Mobilität ist im nationalen DNQP-Expertenstandard „Erhaltung und Förderung der Mobilität in der Pflege" (2020) geregelt. Wie alle DNQP-Standards gliedert er sich in sechs Standardkriterien (jeweils Struktur-, Prozess- und Ergebnisebene): einschätzen, informieren/beraten, planen, durchführen, evaluieren, dokumentieren/überleiten. Die Einschätzung erfolgt bei Aufnahme UND bei jeder Zustandsveränderung — unterstützt durch Instrumente wie Tinetti-Test, Timed Up & Go-Test (TUG) und Barthel-Index.
+⚠️ Quelle beschaffen (konkrete Primärquelle): Die EXAKTE 6-Kriterien-Benennung speziell des Mobilitäts-Standards (einschätzen → … → überleiten) ist im Korpus nicht verbatim belegbar — Pflege heute beschreibt nur den allgemeinen Donabedian-Aufbau (Struktur/Prozess/Ergebnis), die DNQP-Dekubitus-Extrakte zeigen die S1–S6-Struktur themengleich, aber nicht den Mobilitäts-Standard. Original-DNQP-Standard „Mobilität" (2020) beschaffen, dann die konkrete Kriterien-Reihenfolge belegen. Die 6-Kriterien-/Struktur-Prozess-Ergebnis-ARCHITEKTUR ist jedoch über die Dekubitus-S1–S6 + Donabedian-Aufbau gedeckt (siehe Zweitzitate).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
@@ -44,6 +46,14 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Förderung der Mobilität wird im nationalen Expertenstandard"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Handkraftmessung und Tinetti-Test"  (belegt Instrument Tinetti-Test, geriatrisches Assessment)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Timed Up & Go-Test (Mobilität)"  (belegt Instrument TUG)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Barthel-Index (Alltagsaktivitäten)"  (belegt Instrument Barthel-Index)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Expertenstandards sind verbindliche Grundlage der Leistungserbringung im"  (belegt Verbindlichkeit nach § 113a SGB XI — siehe M1)
 **Praxisfehler:** Einschätzung nur einmal bei Aufnahme statt bei jeder Zustandsveränderung; Planung wird nicht schriftlich dokumentiert.
 
 **Misconceptions:**
@@ -55,7 +65,8 @@
 
 ### F-03: Stufenaufbau der Mobilisation
 
-**Fakt:** Mobilisation folgt einem Stufenaufbau vom Liegen zum Gehen: 1. Bewegung im Bett, 2. Aufsitzen an der Bettkante (mit Orthostase-Check: 2-3 Min sitzen, RR und Puls kontrollieren), 3. Stehen vor dem Bett, 4. Gehen am Platz, 5. Gehstrecke. Jede Stufe wird erst stabil beherrscht, bevor die nächste begonnen wird. Beim Aufsetzen an die Bettkante hilft die Pflegende dem Patienten, sich auf die Seite zu drehen und sich mit den Armen abzustützen.
+**Fakt:** Mobilisation folgt einem Stufenaufbau vom Liegen zum Gehen: 1. Bewegung im Bett, 2. Aufsitzen an der Bettkante (mit Orthostase-Check: kurz sitzen lassen, RR und Puls kontrollieren), 3. Stehen vor dem Bett, 4. Gehen am Platz, 5. Gehstrecke. Jede Stufe wird erst stabil beherrscht, bevor die nächste begonnen wird. Beim Aufsetzen an die Bettkante hilft die Pflegende dem Patienten, sich auf die Seite zu drehen und sich mit den Armen abzustützen.
+⚠️ Quelle beschaffen (konkrete Primärquelle): Die konkrete Wartezeit „2-3 Min sitzen" als Orthostase-Check an der Bettkante ist im Korpus nicht verbatim belegbar (Pflege heute beschreibt das Bettkante-Aufsetzen und die Puls-/RR-Kontrolle vor Mobilisation, aber ohne diese 2-3-Min-Angabe; der Schellong-Test nennt andere Mess-Intervalle: liegen 5–10 Min, alle 1–2 Min messen). Wert generisch zu „kurz sitzen lassen" entschärft; falls 2-3 Min ausgespielt werden soll, geriatrische/physiotherapeutische Primärquelle nachziehen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Handlung
@@ -75,7 +86,8 @@
 
 ### F-04: Frühmobilisation als wirksamste Einzelmaßnahme
 
-**Fakt:** Frühmobilisation (Bewegung innerhalb der ersten 24-48 Stunden nach OP oder akutem Ereignis, sofern stabil) ist die wirksamste Einzelmaßnahme der Pflege, weil sie gleichzeitig auf 5 Systeme wirkt: Gefäße (Thrombose), Lunge (Pneumonie), Haut (Dekubitus), Muskeln (Abbau), Darm (Obstipation). Eine Frühmobilisation am ersten postoperativen Tag wird angestrebt. Voraussetzung: Kreislauf stabil, Schmerzen niedrig (NRS ≤ 3), Patient wach und orientiert.
+**Fakt:** Frühmobilisation (Bewegung früh nach OP oder akutem Ereignis, sofern stabil) wirkt zugleich prophylaktisch gegen mehrere Komplikationen: Thrombose (Gefäße), Pneumonie (Lunge), Dekubitus (Haut), Muskelabbau und Obstipation (Darm). Eine Frühmobilisation am ersten postoperativen Tag wird angestrebt — auch zur Dekubitus- und Pneumonieprophylaxe. Voraussetzung: Kreislauf stabil, Schmerzen niedrig, Patient wach und orientiert; die Pflegenden begleiten so lange beim Aufstehen, bis der Patient kreislaufstabil ist.
+⚠️ Quelle beschaffen / entschärft: (a) Die Superlativ-Formulierung „wirksamste Einzelmaßnahme der Pflege" ist im Korpus nicht belegbar — als Wertung entfernt. (b) Die feste Spanne „innerhalb der ersten 24-48 Stunden" ist im Korpus nicht verbatim belegt (Pflege heute: „am ersten postoperativen Tag wird angestrebt"); auf die belegte Aussage zurückgeführt. (c) Der Grenzwert „NRS ≤ 3" als Mobilisations-Voraussetzung ist im Korpus nicht belegbar — entfernt; für eine konkrete NRS-Schwelle DNQP-Schmerzmanagement/S3-Leitlinie Schmerz beschaffen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
@@ -84,6 +96,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Eine Frühmobilisation am ersten postoperativen Tag wird angestrebt"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "begleiten ihn so lange beim Aufstehen, bis er kreislaufstabil ist"  (belegt Voraussetzung Kreislaufstabilität + Begleitung)
 **Praxisfehler:** „Schon-Prinzip" — Patient wird nach OP oder schlechter Nacht liegen gelassen, statt früh zu mobilisieren.
 
 **Misconceptions:**
@@ -104,6 +118,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Bewegungseingeschränkte Patienten haben oft Angst vor Transfersituationen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "unterstützt ihn die Pflegende unterhalb der Schulterblätter"  (belegt Griff an/unterhalb der Schulterblätter, NICHT am Hals)
 **Praxisfehler:** Patient greift um den Hals der Pflegekraft (Last über Halswirbelsäule); Transfer wird zu schnell und ohne Vorbereitung durchgeführt.
 
 **Misconceptions:**
@@ -136,7 +152,8 @@
 
 ### F-07: Patientenlifter beim Transfer
 
-**Fakt:** Der Patientenlifter ist das Standardhilfsmittel, wenn ein Patient nicht stehen kann und ein manueller Transfer nicht sicher möglich ist (Faustregel BGW ab ca. 40 kg). Modelle: mobiler Standlifter mit Rollen, Deckenlifter, Stehlifter (nutzt Reststandfähigkeit). Beim Einsatz: Tragkraft beachten, Gurt passend wählen, immer zu zweit arbeiten (eine führt, eine sichert). Manuelles Heben ist auch für junge, starke Pflegekräfte dauerhaft schädlich.
+**Fakt:** Der Patientenlifter ist das Standardhilfsmittel, wenn ein Patient nicht stehen kann und ein manueller Transfer nicht sicher möglich ist. Modelle: mobiler Standlifter mit Rollen, Deckenlifter. Beim Einsatz: technische Funktionen vor Gebrauch kennen, passenden Gurt wählen, Eigenbewegungen des Patienten in den Bewegungsablauf integrieren. Auch besonders schwergewichtige Menschen benötigen angepasste Hilfsmittel (Lagerungstücher, Gleitunterlagen, Spezialbetten, Patientenlifter wie Deckenlifter).
+⚠️ Quelle beschaffen (konkrete Primärquelle): (a) Die „Faustregel BGW ab ca. 40 kg" ist im Korpus NICHT belegbar — entfernt; falls als Schüler-Inhalt gewünscht, BGW-Publikation („Rückengerechtes Arbeiten"/Gefährdungsbeurteilung Pflege) beschaffen. (b) „Stehlifter (nutzt Reststandfähigkeit)" und „immer zu zweit arbeiten (eine führt, eine sichert)" als feste Regel sind im Korpus nicht verbatim — auf die belegten Lifter-Aussagen zurückgeführt. (c) „Manuelles Heben ist auch für junge … dauerhaft schädlich" → siehe F-09 (gehört zum Arbeitsschutz-Fakt, dort ebenfalls ⚠️/zu beschaffen).
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme
@@ -145,6 +162,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Der Einsatz eines Patientenlifters (Patientenheber) ist angezeigt, wenn ein Transfer"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Patientenlifter, z. B. Deckenlifter"  (belegt Modell Deckenlifter + Hilfsmittel bei Schwergewicht)
 **Praxisfehler:** Lifter wird als „Notlösung" statt als Standardhilfsmittel verstanden; Transfers im Bett werden allein statt zu zweit durchgeführt.
 
 **Misconceptions:**
@@ -176,7 +195,8 @@
 
 ### F-09: Rückengerechtes Arbeiten und Arbeitsschutz
 
-**Fakt:** Rückengerechtes Arbeiten ist Pflicht: Bevor Pflegende mit einem liegenden Patienten arbeiten, bringen sie die Liegefläche des Bettes auf ihre Beckenhöhe. Weitere Regeln: Kinästhetik statt Hebetechniken, Hilfsmittel konsequent einsetzen, bei schweren Transfers zu zweit, Gewichtsverlagerung statt Heben, feste Schuhe, Pausen. Rechtliche Basis: ArbSchG (§ 3 Maßnahmen, § 5 Gefährdungsbeurteilung, § 15 Pflicht zur Hilfsmittelnutzung/Eigenschutz), LasthandhabV (§ 2). Muskel-Skelett-Erkrankungen sind Hauptursache für Frühberentung in der Pflege (BGW 2019).
+**Fakt:** Rückengerechtes Arbeiten ist Pflicht: Bevor Pflegende mit einem liegenden Patienten arbeiten, bringen sie die Liegefläche des Bettes zunächst auf ihre Beckenhöhe. Weitere Regeln: Kinästhetik statt Hebetechniken, Hilfsmittel konsequent einsetzen, bei schweren Transfers zu zweit, Gewichtsverlagerung statt Heben, feste Schuhe, Pausen. Der Träger jeder Einrichtung im Gesundheitswesen ist zu einer Gefährdungsbeurteilung verpflichtet.
+⚠️ Quelle beschaffen (konkrete Primärquelle): (a) Die konkreten Paragraphen „ArbSchG § 3 / § 5 / § 15" und „LasthandhabV § 2" sind im Korpus NICHT verbatim belegbar (Pflege heute nennt das Arbeitsschutzgesetz nur als Aufzählungs-Stichwort und die Gefährdungsbeurteilungs-Pflicht ohne § 5-Zitat) — Gesetzestext direkt aus ArbSchG/LasthandhabV (gesetze-im-internet.de) als Primärquelle nachziehen, bevor die §§ als Schüler-Inhalt (auch in M2/M3) ausgespielt werden. (b) Die Statistik „Muskel-Skelett-Erkrankungen Hauptursache für Frühberentung in der Pflege" ist im Korpus nicht belegbar — entfernt; für die Aussage BGW-/DGUV-Statistik beschaffen.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Recht + Handlung
@@ -185,6 +205,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "bringen sie die Liegefläche des Bettes zunächst auf ihre Beckenhöhe"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Jeder Träger einer Einrichtung im Gesundheitswesen hat eine Gefährdungsbeurteilung"  (belegt Gefährdungsbeurteilungs-Pflicht — NICHT die §-5-ArbSchG-Verortung)
 **Praxisfehler:** Gebeugtes Arbeiten am zu tiefen Bett; Heben aus „Kraftvertrauen", obwohl Hilfsmittel verfügbar wären.
 
 **Misconceptions:**
@@ -216,7 +238,8 @@
 
 ### F-11: Schmerz- und Kreislaufmanagement bei Mobilisation
 
-**Fakt:** Schmerz und Kreislauf sind die zwei häufigsten Abbruchgründe einer Mobilisation. Vor Mobilisation: Schmerz mit NRS erfassen, Ziel NRS ≤ 3, ggf. ärztlich verordnete Analgetika 30-60 Min vorher geben — sind Schmerzen bei der Mobilisation zu erwarten, verabreichen Pflegende rechtzeitig vorher Analgetika. Kreislauf: RR/Puls als Baseline, Orthostase-Check an der Bettkante, Warnzeichen beobachten (Blässe, Schwitzen, Schwindel, Übelkeit, Puls > 120). Abbruchkriterien: RR-Abfall systolisch > 20 mmHg bzw. diastolisch > 10 mmHg, Präsynkope/Synkope, starke Schmerzen.
+**Fakt:** Schmerz und Kreislauf sind die zwei häufigsten Abbruchgründe einer Mobilisation. Vor Mobilisation: Schmerz mit NRS erfassen und behandeln — sind Schmerzen bei der Mobilisation zu erwarten, verabreichen Pflegende rechtzeitig vorher (ärztlich verordnete) Analgetika. Kreislauf: RR/Puls als Baseline, vor und nach der Mobilisation den Puls kontrollieren, Warnzeichen beobachten (Blässe, Schwitzen, Schwindel, Übelkeit). Abbruch-/Alarmkriterien: orthostatischer RR-Abfall über das normale Maß hinaus (normal max. 20 mmHg systolisch / 10 mmHg diastolisch), Anstieg der Pulsfrequenz infolge der Mobilisation um mehr als 20 Schläge/Min. oder neu aufgetretene Rhythmusstörungen (dann Arzt informieren), Präsynkope/Synkope, starke Schmerzen.
+⚠️ Quelle beschaffen / Fachkorrektur: (a) „Analgetika 30-60 Min vorher" — die konkrete Vorlaufzeit ist im Korpus nicht belegbar; Pflege heute sagt nur „rechtzeitig vorher". Für eine feste Spanne pharmakologische Primärquelle/Fachinfo beschaffen. (b) „Ziel NRS ≤ 3" — Grenzwert im Korpus nicht belegbar; DNQP-Schmerzmanagement/S3-Leitlinie Schmerz beschaffen. (c) FACHKORREKTUR „Puls > 120" als Mobilisations-Warnzeichen: Der Korpus stützt diesen absoluten Wert NICHT — Pflege heute nennt als mobilisationsbezogenes Kriterium den ANSTIEG um mehr als 20 Schläge/Min. (relativ zur Baseline), nicht eine fixe Grenze von 120/Min. Absolutwert entfernt und durch das belegte relative Kriterium ersetzt.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment + Entscheidung
@@ -225,6 +248,12 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "verabreichen sie rechtzeitig vorher Analgetika"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "20 mmHg systolisch und 10 mmHg diastolisch"  (belegt Orthostase-Grenzwert RR-Abfall, Schellong-Kontext)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "vor und nach der Mobilisation den"  (belegt Puls-Kontrolle vor/nach Mobilisation)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "um mehr als 20 Schläge/Min. gestiegen"  (belegt Puls-ANSTIEG-Kriterium > 20/Min — ersetzt fälschliches „Puls > 120")
 **Praxisfehler:** NRS wird bei selbstberichteter Schmerzfreiheit nicht gemessen; Schwindel beim Aufstehen wird bagatellisiert statt als Warnzeichen ernst genommen.
 
 **Misconceptions:**
@@ -245,6 +274,12 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "ihre Selbstständigkeit und Selbstbestimmung gefördert"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Lehnt ein geschäftsfähiger, aufgeklärter Kranker eine"  (belegt: Ablehnung des Einwilligungsfähigen ist zu respektieren)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Jeder ärztliche Eingriff stellt eine"  (belegt: Eingriff ohne Einwilligung = Körperverletzung, §§ 223 ff. StGB — siehe Praxisfehler/M1)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Patientenrechtegesetz im Bürgerlichen"  (belegt Verankerung der Einwilligung in § 630 b–h BGB, schließt § 630d BGB ein)
 **Praxisfehler:** Mobilisation wird „zum Besten" des Patienten gegen seinen Willen durchgeführt (Paternalismus) — rechtlich Körperverletzung (§ 223 StGB).
 
 **Misconceptions:**
@@ -256,7 +291,8 @@
 
 ### F-13: Mobilisationsplan und Dokumentation
 
-**Fakt:** Der Mobilisationsplan folgt dem 6-Schritte-Pflegeprozess (Fiechter/Meier 1981): Assessment (Tinetti, TUG, Barthel, Esslinger Transferskala; ressourcenorientiert — die individuellen Bewegungsressourcen des Patienten erkennen) → Pflegediagnose nach PESR-Schema (Problem, Ätiologie, Symptome, Ressourcen) → SMART-Ziel mit dem Patienten (spezifisch, messbar, akzeptiert, realisierbar, terminierbar) → Maßnahmen (wer/wann/wie/womit) → Evaluation → Dokumentation im Pflegebericht (chronologisch, sachlich, wertfrei). Grundsatz: „Was nicht dokumentiert ist, gilt als nicht durchgeführt."
+**Fakt:** Der Mobilisationsplan folgt dem Sechs-Schritt-Modell des Pflegeprozesses nach Fiechter/Meier: Assessment (Instrumente wie Tinetti, TUG, Barthel; ressourcenorientiert — die individuellen Bewegungsressourcen des Patienten erkennen) → Pflegediagnose im PÄS-Format (Problem, Ätiologie, Symptome; ggf. um Ressourcen erweitert) → SMART-Ziel mit dem Patienten (spezifisch, messbar, akzeptiert, realisierbar, terminierbar) → Maßnahmen (wer/wann/wie/womit) → Evaluation → Dokumentation im Pflegebericht. Der Pflegeprozess gilt als selbstständig durchzuführende und vorbehaltene Tätigkeit im Sinne des Pflegeberufegesetzes. Grundsatz: „Was nicht dokumentiert ist, gilt als nicht durchgeführt."
+⚠️ Fachkorrektur / Hinweis: Das Korpus belegt das Pflegediagnose-Schema verbatim als „PÄS" (Problem, Ätiologie, Symptome), nicht als „PESR" — „PESR/PÄS-R" mit zusätzlichem R für Ressourcen ist eine didaktische Erweiterung, im Pflege-heute-Extrakt nicht als Akronym belegt. Die Esslinger Transferskala ist im Korpus nicht belegbar (aus der Instrumenten-Liste entfernt; Tinetti/TUG/Barthel sind über F-02 belegt). Für „PESR" und Esslinger Transferskala ggf. Pflegediagnostik-/Assessment-Primärquelle beschaffen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme + Dokumentation
@@ -265,6 +301,12 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "die individuellen Bewegungsressourcen des Patienten zu erkennen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "von Verena Fiechter und Martha Meier"  (belegt Sechs-Schritt-Modell nach Fiechter/Meier)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "spezifisch, messbar, akzeptiert, realisierbar, terminierbar"  (belegt SMART-Formulierung der Ziele)
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "vorbehaltene Tätigkeit im Sinne des"  (belegt: Pflegeprozess/Pflegediagnose = vorbehaltene Aufgabe nach PflBG — siehe M2)
 **Praxisfehler:** Unkonkrete Ziele („Frau M. wird mobilisiert") statt SMART-Formulierung; Defizit-Fokus statt Ressourcenorientierung.
 
 **Misconceptions:**

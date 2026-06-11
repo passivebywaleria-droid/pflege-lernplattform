@@ -7,7 +7,8 @@
 | cluster | D (Ernährung & Flüssigkeit) |
 | geschätzteUE | 8 |
 | wissensart | handlung |
-| quellen | Pflege heute 7. Aufl. Kap. 7 Ernährung; DNQP Expertenstandard Ernährungsmanagement 1. Aktual. 2017/2024; DGE/ÖGE/SGE D-A-CH-Referenzwerte 2024; WHO 2015 Sugars intake; Atwater 1899 |
+| quellen | Pflege heute 7. Aufl. Kap. 7 Ernährung (verbatim-belegt); DNQP Expertenstandard Ernährungsmanagement 1. Aktual. 2017/2024; DGE/ÖGE/SGE D-A-CH-Referenzwerte (Erläuterungen, lokaler Extrakt — Einzelnährstoff-Tabellen NICHT enthalten); WHO 2015 Sugars intake (⚠️ noch zu beschaffen); Atwater 1899 |
+| grounding-stand | 2026-06-11 auf STÜTZT gehoben (Dozentin A). Numerische DGE-/WHO-Einzelreferenzwerte, die nicht im lokalen Korpus stehen, sind je Fakt mit `⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool)` markiert statt kaschiert. |
 | einträge | 16 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
 
@@ -35,35 +36,43 @@
 
 ### F-02: Kohlenhydrate — Energiegehalt und Anteil
 
-**Fakt:** Kohlenhydrate sind die Hauptenergiequelle des Körpers. Energiewert: **4 kcal pro Gramm** (Atwater; Pflege heute: 4,1 kcal/17,2 kJ). DGE-Empfehlung: **>50% der Tagesenergie** (Pflege heute: 55-60%), Schwerpunkt auf komplexen Kohlenhydraten mit Ballaststoffen. Einteilung nach Kettenlänge: Mono-, Di-, Polysaccharide. WHO-Empfehlung freier Zucker: <10%, besser <5% der Tagesenergie. Das Gehirn verbraucht ca. 120 g Glukose/Tag.
+**Fakt:** Kohlenhydrate sind die Hauptenergiequelle des Körpers. Energiewert: **4 kcal pro Gramm** (Atwater; Pflege heute: 4,1 kcal/17,2 kJ). Empfohlener Anteil an der täglichen Nahrungsaufnahme: **55–60%** (Pflege heute Kap. 7; DGE qualitativ: KH liefern >50% der Energie), Schwerpunkt auf komplexen Kohlenhydraten mit Ballaststoffen. Einteilung nach Kettenlänge: Mono-, Di-, Polysaccharide. Glukose ist der Hauptenergielieferant; vor allem die Gehirnzellen können nur Glukose verbrennen. Der Körper kann nur 300–500 g Glukose (als Glykogen) speichern.
+⚠️ Quelle beschaffen (WHO 2015 Sugars intake / DGE D-A-CH Referenzwerte-Tool): Die WHO-Empfehlung **freier Zucker <10%, besser <5% der Tagesenergie** ist im lokalen Korpus (Pflege heute, DGE-Extrakte) NICHT belegt.
+⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool): Die konkrete Zahl **Gehirn verbraucht ca. 120 g Glukose/Tag** ist im Korpus nicht verbatim belegt (Pflege heute belegt nur qualitativ „nur Glukose verbrennen" + Speicherkapazität 300–500 g).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Bloom-Potential:** 2 (Verstehen)
-**Primärquelle:** (DGE 2024; WHO 2015; Atwater 1899)
+**Primärquelle:** (Pflege heute Kap. 7; Atwater 1899; WHO-Zucker + 120-g-Gehirnglukose: ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "1 g Kohlenhydrate liefert 4,1 kcal (17,2 kJ)"
+- Zitat: "Täglicher Bedarf: 55–60 % der Gesamtnahrungsaufnahme"
+- Zitat: "Vor allem die Zellen des Gehirns können nur Glukose verbrennen"
+- Zitat: "der menschliche Körper kann nur 300–500 g Glukose speichern"
 **Praxisfehler:** Kohlenhydrate pauschal als "Dickmacher" weglassen statt komplexe KH (Vollkorn, Hülsenfrüchte) zu bevorzugen.
 
 **Misconceptions:**
-- `M1`: **"Obst enthält schädlichen Zucker wie Haushaltszucker"** — Die WHO unterscheidet: Freier Zucker (Haushaltszucker, Saft, Honig) soll <10% bleiben; Zucker in ganzen Früchten (mit Ballaststoffen, Vitaminen) zählt nicht dazu. Fachbegriff: "Fruchtzucker-Irrtum".
-- `M2`: **"Kohlenhydrate soll man weglassen, weil sie dick machen"** — DGE empfiehlt >50% der Tagesenergie aus KH. Dick macht eine positive Energiebilanz, nicht KH an sich. Fachbegriff: "Low-Carb-Mythos".
+- `M1`: **"Obst enthält schädlichen Zucker wie Haushaltszucker"** — Es wird unterschieden zwischen freiem Zucker (Haushaltszucker, Saft, Honig) und Zucker in ganzen Früchten (mit Ballaststoffen, Vitaminen), der anders zu bewerten ist. Fachbegriff: "Fruchtzucker-Irrtum". (WHO-Schwelle freier Zucker <10%/<5%: ⚠️ siehe Fakt-Hinweis, WHO-/DGE-Quelle.)
+- `M2`: **"Kohlenhydrate soll man weglassen, weil sie dick machen"** — Kohlenhydrate sollen mit 55–60% den größten Nahrungsanteil stellen (Pflege heute). Dick macht eine positive Energiebilanz, nicht KH an sich. Fachbegriff: "Low-Carb-Mythos".
 - `M3`: **"Ballaststoffe sind Kohlenhydrate, die viel Energie liefern"** — Ballaststoffe sind Polysaccharide, aber für den Menschen unverdaulich und liefern fast keine Energie.
 
 ---
 
 ### F-03: Fette — Energiedichte und Fettsäure-Qualität
 
-**Fakt:** Fette (Lipide) sind die energiedichteste Nährstoffgruppe: **9 kcal pro Gramm** (Atwater; Pflege heute: 9,3 kcal/38,9 kJ) — mehr als doppelt so viel wie KH/Protein. DGE-Empfehlung: ~30% der Tagesenergie (Pflege heute: 25-30%), gesättigte Fettsäuren <10%. Entscheidend ist die Qualität: ungesättigte Fettsäuren (Olivenöl, Rapsöl, Fisch) vor gesättigten (Butter, Wurst). Essentielle Fettsäuren (Omega-3, Omega-6) kann der Körper nicht selbst herstellen.
+**Fakt:** Fette (Lipide) sind die energiedichteste Nährstoffgruppe: **9 kcal pro Gramm** (Atwater; Pflege heute: 9,3 kcal/38,9 kJ) — mehr als doppelt so viel wie KH/Protein. Empfohlener Anteil an der täglichen Nahrungsaufnahme: **25–30%** (Pflege heute Kap. 7). Entscheidend ist die Qualität: gesättigte Fettsäuren erhöhen das „schlechte" LDL-Cholesterin und sollten möglichst wenig verzehrt werden; ungesättigte Fettsäuren (Olivenöl, Rapsöl, Fisch) sind günstiger. Mehrfach ungesättigte (essentielle) Fettsäuren kann der Körper nicht selbst herstellen.
+⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool / Fett-Kapitel): Der konkrete Schwellenwert **gesättigte Fettsäuren <10% der Tagesenergie** ist im lokalen Korpus NICHT belegt — Pflege heute formuliert nur qualitativ („möglichst wenig").
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (DGE 2024; Atwater 1899)
+**Primärquelle:** (Pflege heute Kap. 7; Atwater 1899; gesättigt-<10%-Schwellenwert: ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "1 g Fett liefert 9,3 kcal"
+- Zitat: "Täglicher Bedarf: 25–30 % der Gesamtnahrungsaufnahme"
+- Zitat: "Gesättigte Fettsäuren erhöhen das"
 **Praxisfehler:** Fett komplett meiden — führt zu Mangel an fettlöslichen Vitaminen (A, D, E, K) und essentiellen Fettsäuren.
 
 **Misconceptions:**
@@ -75,22 +84,24 @@
 
 ### F-04: Proteine — Funktion und Aminosäuren
 
-**Fakt:** Proteine (Eiweiße) sind die Baustoffe des Körpers. Energiewert: **4 kcal pro Gramm** (Pflege heute: 4,1 kcal). DGE-Empfehlung: 15-20% der Tagesenergie (Pflege heute: 10-15%) bzw. 0,8 g/kg KG bei Erwachsenen, **1,0 g/kg ab 65 Jahren** (Sarkopenie-Prävention). Sie bestehen aus 20 Aminosäuren, davon **9 essentiell** (müssen über die Nahrung aufgenommen werden). Tierisches Protein hat meist höhere biologische Wertigkeit; Kombination pflanzlicher Quellen steigert die Wertigkeit.
+**Fakt:** Proteine (Eiweiße) sind die Baustoffe des Körpers. Energiewert: **4 kcal pro Gramm** (Pflege heute: 4,1 kcal). Empfohlener Anteil an der täglichen Nahrungsaufnahme: **10–15%** (Pflege heute Kap. 7); erhöhter Bedarf in Wachstum, Schwangerschaft, Stillzeit und Alter. Sie bestehen aus 20 Aminosäuren, davon **9 essentiell** (müssen über die Nahrung aufgenommen werden). Tierisches Protein hat meist höhere biologische Wertigkeit; Kombination pflanzlicher Quellen steigert die Wertigkeit.
+⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool, Protein-Kapitel 2017): Die gewichtsbezogenen DGE-Referenzwerte **0,8 g/kg KG für gesunde Erwachsene** und **1,0 g/kg ab 65 Jahren (Sarkopenie-Prävention)** sind im lokalen Korpus NICHT als allgemeine Empfehlung belegt — der 0,8-g/kg-Wert in Pflege heute steht ausschließlich im Kontext der Niereninsuffizienz-Diät, nicht als Referenzwert für Gesunde.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (DGE 2024; FAO/WHO/UNU 2004)
+**Primärquelle:** (Pflege heute Kap. 7; 0,8/1,0 g/kg-Referenzwerte: ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "neun davon kann der Körper nicht selbst herstellen, sie müssen mit der Nahrung aufgenommen werden"
 - Zitat: "Tierisches Eiweiß hat für den Menschen eine höhere biologische Wertigkeit"
+- Zitat: "Täglicher Bedarf: 10–15 % der Gesamtnahrungsaufnahme"
 **Praxisfehler:** Bei älteren/mangelernährten Patienten zu wenig Protein anbieten — fördert Muskelabbau und schlechte Wundheilung.
 
 **Misconceptions:**
 - `M1`: **"Nur Fleisch enthält hochwertiges Eiweiß"** — Durch geschickte Kombination pflanzlicher Proteine (Kartoffeln + Ei, Reis + Bohnen) erreicht man hohe biologische Wertigkeiten. Fachbegriff: "Tier-Protein-Monopol-Irrtum".
-- `M2`: **"Je mehr Eiweiß, desto besser (auch 3 g/kg)"** — DGE empfiehlt 0,8 g/kg (1,0 g/kg ab 65). Sehr hohe Mengen können die Nieren belasten; Überschuss wird nicht gespeichert.
-- `M3`: **"Ältere brauchen weniger Eiweiß, weil sie weniger aktiv sind"** — Das Gegenteil: Ab 65 Jahren empfiehlt die DGE 1,0 g/kg (mehr als bei Jüngeren), weil Muskelmasse schneller abgebaut wird.
+- `M2`: **"Je mehr Eiweiß, desto besser"** — Ein sehr hoher Eiweißüberschuss belastet Stoffwechsel und Nieren (Pflege heute: „Eiweißüberschuss belastet … die Nieren"); Überschuss wird nicht als Eiweiß gespeichert. (Konkrete g/kg-Referenzwerte: ⚠️ siehe Fakt-Hinweis, DGE-Tool.)
+- `M3`: **"Ältere brauchen weniger Eiweiß, weil sie weniger aktiv sind"** — Das Gegenteil ist fachlicher Konsens: Im Alter steigt der relative Proteinbedarf zur Vorbeugung von Muskelabbau/Sarkopenie. (Exakter Referenzwert 1,0 g/kg ab 65: ⚠️ siehe Fakt-Hinweis, DGE-Tool.)
 
 ---
 
@@ -119,15 +130,17 @@
 
 ### F-06: Ballaststoffe
 
-**Fakt:** Ballaststoffe sind weitgehend unverdauliche, vorwiegend pflanzliche Polysaccharide. DGE-Empfehlung: **≥ 30 g pro Tag** (Realität DE: 20-25 g). Zwei Typen: wasserlöslich (Pektine, Beta-Glucane — senken Cholesterin, verlangsamen Blutzuckeranstieg) und wasserunlöslich (Cellulose, Lignin — fördern Darmbewegung, beugen Obstipation vor). Bei Erhöhung der Zufuhr unbedingt Trinkmenge steigern (≥ 1,5 l/Tag).
+**Fakt:** Ballaststoffe sind weitgehend unverdauliche, vorwiegend pflanzliche Polysaccharide. Sie regen u. a. die Darmperistaltik an und erhalten die physiologische Darmflora (Pflege heute). Zwei Typen: wasserlöslich (Pektine, Beta-Glucane — senken Cholesterin, verlangsamen Blutzuckeranstieg) und wasserunlöslich (Cellulose, Lignin — fördern Darmbewegung, beugen Obstipation vor). Bei Erhöhung der Zufuhr Trinkmenge mitsteigern.
+⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool, Ballaststoff-Kapitel 2021): Der **DGE-Richtwert ≥ 30 g/Tag** (sowie der Vergleichswert „Realität DE 20–25 g" und „≥ 1,5 l/Tag") ist im lokalen Korpus NICHT verbatim belegt.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Konzept
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (DGE/ÖGE/SGE 2024; WHO)
+**Primärquelle:** (Pflege heute Kap. 7; ≥30-g-Richtwert: ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ballaststoffe sind weitgehend unverdauliche Polysaccharide"
+- Zitat: "Ballaststoffe regulieren u. a. die Darmperistaltik und erhalten die physiologische Darmflora"
 **Praxisfehler:** Ballaststoffreiche Kost ohne ausreichende Flüssigkeit ansetzen — führt zu Verstopfung und Bauchbeschwerden.
 
 **Misconceptions:**
@@ -139,16 +152,17 @@
 
 ### F-07: Vitamine — Löslichkeit (fett- vs. wasserlöslich)
 
-**Fakt:** Vitamine sind 13 lebensnotwendige organische Verbindungen, die der Körper (bis auf Ausnahmen) nicht selbst bilden kann. Einteilung nach Löslichkeit: **Fettlöslich** sind E, D, E (K), A (Merkhilfe "EDEKA") — werden im Körper gespeichert, brauchen Nahrungsfett zur Aufnahme, Überdosierung möglich. **Wasserlöslich** sind die 8 B-Vitamine und Vitamin C — werden nicht gespeichert (Ausnahme B12), Überschuss wird über den Urin ausgeschieden, tägliche Zufuhr nötig, hitze-/lichtempfindlich.
+**Fakt:** Vitamine sind lebensnotwendige (essenzielle) organische Verbindungen, die der Körper (bis auf Ausnahmen) nicht selbst bilden kann. Einteilung nach Löslichkeit: **Fettlöslich** sind A, D, E, K (Merkhilfe "EDEKA") — werden im Körper gespeichert, Überdosierung kann zu Vergiftungserscheinungen führen. **Wasserlöslich** sind die B-Komplex-Vitamine (B1, B2, B6, B12, Niacin, Biotin, Pantothensäure, Folsäure) und Vitamin C — Überschuss wird über die Nieren ausgeschieden, eine Überdosierung ist nicht möglich; hitze-/licht-/sauerstoffempfindlich. Damit benennt Pflege heute insgesamt 13 Vitamine (4 fettlöslich + 9 wasserlöslich).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 2 (Verstehen)
-**Primärquelle:** (DGE/ÖGE/SGE 2024)
+**Primärquelle:** (Pflege heute Kap. 7; „13"-Gesamtzahl = Summe der bei Pflege heute aufgezählten 4 + 9 Vitamine)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Wasserlösliche Vitamine werden bei einer übermäßigen Aufnahme über die Nieren ausgeschieden"
 - Zitat: "Fettlösliche Vitamine: Vitamin A, Vitamin"
+- Zitat: "Wasserlösliche Vitamine: Vitamin B1, Vitamin B2, Vitamin B6, Vitamin B12, Niacin, Biotin, Pantothensäure, Folsäure, Vitamin C"
 **Praxisfehler:** Fettlösliche Vitamine (z.B. Vitamin A aus Möhren) ohne Fett servieren — der Körper nimmt sie schlecht auf.
 
 **Misconceptions:**
@@ -186,19 +200,23 @@
 
 ### F-09: Mineralstoffe und Spurenelemente
 
-**Fakt:** Mineralstoffe sind anorganische, lebensnotwendige Stoffe, die der Körper nicht selbst bilden kann. Einteilung nach Tagesbedarf: **Mengenelemente** (>50 mg/Tag — Natrium, Kalium, Calcium, Magnesium, Phosphor, Chlorid, Schwefel) und **Spurenelemente** (<50 mg/Tag — Eisen, Zink, Jod, Selen, Kupfer u.a.). Häufige Mangelzustände in Deutschland: Eisenmangel (Frauen im gebärfähigen Alter, Schwangere), Jodmangel (DE ist Jodmangelgebiet — Jodsalz wichtig), Magnesiummangel.
+**Fakt:** Mineralstoffe sind lebensnotwendige Stoffe, die der Körper nicht selbst bilden kann. Einteilung nach ihrem Gehalt im Körper (Pflege heute): **Mengenelemente** — werden in größeren Mengen (bis über 1 kg beim Kalzium) gespeichert: Natrium, Kalium, Kalzium, Chlor, Phosphor, Schwefel, Magnesium. **Spurenelemente** — werden nur in Kleinstmengen (1 µg–5 mg) täglich benötigt: Eisen, Kobalt, Chrom, Kupfer, Mangan, Molybdän, Selen, Zink, Jod, Fluor. Häufige Mangelzustände in Deutschland: Eisenmangel (Frauen im gebärfähigen Alter, Schwangere), Jodmangel (DE ist Jodmangelgebiet — Jodsalz wichtig), Magnesiummangel.
+⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool): Die in Lehrbüchern verbreitete Abgrenzung **Mengenelemente >50 mg/Tag vs. Spurenelemente <50 mg/Tag (Tagesbedarf)** ist im lokalen Korpus NICHT belegt — Pflege heute grenzt nach dem Gehalt im Körper bzw. der täglich benötigten Kleinstmenge (1 µg–5 mg) ab, nicht über eine 50-mg-Tagesbedarfsgrenze.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (DGE/ÖGE/SGE 2024; RKI NVS II)
+**Primärquelle:** (Pflege heute Kap. 7; 50-mg-Tagesbedarfsgrenze: ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "werden Mineralstoffe in Mengen- und Spurenelemente unterschieden"
+- Zitat: "Mengenelemente werden in größeren Mengen"
+- Zitat: "Spurenelemente werden nur in Kleinstmengen"
+- Zitat: "wenigen Millionstel bis Tausendstel Gramm (1 µg–5 mg)"
 **Praxisfehler:** Muskelkrämpfe pauschal mit Magnesium behandeln, ohne die Ursache (Natriummangel, Dehydrierung, Medikamente) abzuklären.
 
 **Misconceptions:**
-- `M1`: **"Spurenelemente sind weniger wichtig als Mengenelemente"** — "Spur" heißt nur "wenig Menge", nicht "weniger wichtig". Jod ist mit 200 µg/Tag winzig, aber unverzichtbar für die Schilddrüse. Fachbegriff: "Mengen-Wichtigkeits-Verwechslung".
+- `M1`: **"Spurenelemente sind weniger wichtig als Mengenelemente"** — "Spur" heißt nur "wenig Menge" (1 µg–5 mg täglich), nicht "weniger wichtig". Jod wird nur in Kleinstmengen benötigt, ist aber unverzichtbar für die Schilddrüse. Fachbegriff: "Mengen-Wichtigkeits-Verwechslung". (Konkreter Jod-Referenzwert in µg/Tag: ⚠️ DGE-Tool.)
 - `M2`: **"Jodsalz ist künstlich und sollte vermieden werden"** — Deutschland ist Jodmangelgebiet; jodiertes Speisesalz ist eine der wichtigsten Maßnahmen gegen Struma und Kretinismus.
 - `M3`: **"Magnesium-Präparate helfen immer bei Muskelkrämpfen"** — Krämpfe haben viele Ursachen; nur bei echtem Magnesiummangel hilft Supplementierung. Diagnostik vor Supplement.
 
@@ -206,15 +224,19 @@
 
 ### F-10: Flüssigkeitsbedarf
 
-**Fakt:** Wasser ist mengenmäßig der größte Körperbestandteil (Erwachsene 55-60%, Säugling ~75%). Flüssigkeitsbedarf Erwachsene: ca. **30-35 ml pro kg Körpergewicht/Tag** (bei 70 kg ~2,1-2,5 l), davon ca. **1,5 l über Getränke** (DGE), Rest aus Nahrung und Oxidationswasser. Mehrbedarf bei Fieber (+0,5-1 l pro °C über 37°C), Diarrhoe/Erbrechen, Hitze, Sport, Stillen (+700 ml). Senioren-Problem: vermindertes Durstempfinden → hohes Dehydratationsrisiko → aktive Trinkbegleitung und Trinkprotokoll.
+**Fakt:** Wasser ist mengenmäßig der größte Körperbestandteil: Der Körper eines Erwachsenen besteht zu **ca. 60%** aus Wasser, bei Neugeborenen zu ca. **80%** (Pflege heute Kap. 7). Flüssigkeitsbedarf ist von Lebensalter und Körpergewicht abhängig; Erwachsene (bis 50 J.) benötigen **ca. 35 ml/kg KG/Tag** (Pflege heute Tab. 7.6). Diese Gesamtflüssigkeitsmenge wird zu einem Teil über die Nahrung gedeckt (Pflege heute: ~0,33 ml je zugeführter kcal), der Rest ist Trinkmenge. Mehrbedarf u. a. bei Fieber, Diarrhö, Erbrechen, starkem Schwitzen. Senioren-Problem: vermindertes Durstempfinden → hohes Dehydratationsrisiko → aktive Trinkbegleitung und Trinkprotokoll.
+⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool / Wasser-Kapitel): Die Zusatz-Faustregeln **+0,5–1 l pro °C Fieber über 37 °C**, **+700 ml beim Stillen** und der **DGE-Trinkmengen-Richtwert „ca. 1,5 l über Getränke"** sind im lokalen Korpus NICHT verbatim belegt — Pflege heute nennt Fieber nur als qualitativen Mehrbedarf und arbeitet mit der ml/kg-Formel (Tab. 7.5/7.6), nicht mit einem 1,5-l-Pauschalwert.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (EFSA 2010; DGE 2024)
+**Primärquelle:** (Pflege heute Kap. 7 Tab. 7.5/7.6; +0,5–1 l/°C, +700 ml, 1,5-l-Trinkmenge: ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Der Flüssigkeitsbedarf ist von Lebensalter und Körpergewicht abhängig"
+- Zitat: "besteht der Körper eines Erwachsenen zu ca. 60 % (bei Neugeborenen sind es 80 %)"
+- Zitat: "Erwachsene benötigen ca. 35 ml/kg KG"
+- Zitat: "erhöht z. B. bei Erbrechen, Diarrhö, Fieber"
 **Praxisfehler:** Auf Durst warten statt aktiv zum Trinken zu motivieren — bei Senioren ist Durst ein später, unzuverlässiger Indikator.
 
 **Misconceptions:**
@@ -251,20 +273,24 @@
 
 ### F-12: Nährstoffverteilung und DGE-Regeln
 
-**Fakt:** Die DGE formuliert drei Richtwerte für eine vollwertige Ernährung: **>50% Kohlenhydrate**, **~30% Fett**, **15-20% Protein** der Tagesenergie (bei 2000 kcal: ~250 g KH, ~67 g Fett, 75-100 g Eiweiß). Grundlage sind die "10 Regeln der DGE" und die D-A-CH-Referenzwerte 2024. Praktische Plattenregel: ½ Gemüse/Obst, ¼ Beilage (Vollkorn, Kartoffeln), ¼ Proteinquelle. Der DGE-Ernährungskreis dient als Wegweiser für die Lebensmittelauswahl.
+**Fakt:** Eine vollwertige Ernährung verteilt sich auf die drei energieliefernden Makronährstoffe (Anteile nach Pflege heute Kap. 7): **Kohlenhydrate 55–60%**, **Fett 25–30%**, **Eiweiß 10–15%** der täglichen Nahrungsaufnahme. Praktische Plattenregel: ½ Gemüse/Obst, ¼ Beilage (Vollkorn, Kartoffeln), ¼ Proteinquelle. Der DGE-Ernährungskreis dient als Wegweiser für die Lebensmittelauswahl.
+⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool / „10 Regeln der DGE"): Die DGE-Originalformulierung der prozentualen Richtwerte (z. T. „>50% KH", „Protein 15–20%") weicht von den Pflege-heute-Bandbreiten ab und ist im lokalen Korpus nicht belegt; hier sind die im Korpus belegten Pflege-heute-Werte angesetzt.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Fakt
 **Bloom-Potential:** 4 (Analysieren / Berechnen)
-**Primärquelle:** (DGE 2024; D-A-CH-Referenzwerte 2024)
+**Primärquelle:** (Pflege heute Kap. 7; DGE-Original-Prozentwerte: ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "zeigt die ideale Zusammensetzung für eine vollwertige Ernährung"
+- Zitat: "Täglicher Bedarf: 55–60 % der Gesamtnahrungsaufnahme"
+- Zitat: "Täglicher Bedarf: 25–30 % der Gesamtnahrungsaufnahme"
+- Zitat: "Täglicher Bedarf: 10–15 % der Gesamtnahrungsaufnahme"
 **Praxisfehler:** Bei der Mahlzeitenplanung nur auf die Kalorienzahl achten, nicht auf eine ausgewogene Makronährstoff-Verteilung.
 
 **Misconceptions:**
-- `M1`: **"Eine gesunde Ernährung besteht vor allem aus Eiweiß"** — Den größten Energieanteil (>50%) sollen Kohlenhydrate liefern, Protein nur 15-20%. Plattenregel: Gemüse/Obst dominiert.
-- `M2`: **"Fett sollte man weglassen, Kohlenhydrate sind immer gut"** — DGE empfiehlt ~30% Fett (Qualität entscheidend) und KH vorwiegend komplex; einseitige Verteilung ist nicht vollwertig.
+- `M1`: **"Eine gesunde Ernährung besteht vor allem aus Eiweiß"** — Den größten Anteil (55–60%) sollen Kohlenhydrate liefern, Eiweiß nur 10–15% (Pflege heute). Plattenregel: Gemüse/Obst dominiert.
+- `M2`: **"Fett sollte man weglassen, Kohlenhydrate sind immer gut"** — Empfohlen sind ~25–30% Fett (Qualität entscheidend) und KH vorwiegend komplex; einseitige Verteilung ist nicht vollwertig.
 - `M3`: **"Die 10 DGE-Regeln gelten nur für gesunde Menschen"** — Sie sind die Basis jeder vollwertigen Ernährung; krankheitsbedingte Kostformen bauen darauf auf.
 
 ---

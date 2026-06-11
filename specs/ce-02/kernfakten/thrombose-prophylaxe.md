@@ -35,7 +35,7 @@
 
 ### F-02: Tiefe Venenthrombose (TVT) vs. oberflächliche Phlebitis
 
-**Fakt:** Eine tiefe Venenthrombose (TVT, Phlebothrombose) betrifft die tiefen Leitvenen (meist Beinvenen) und ist potenziell lebensbedrohlich durch Lungenembolie-Risiko. Eine oberflächliche Venenthrombose (Thrombophlebitis) betrifft oberflächliche Venen unter der Haut und ist meist harmlos, kann aber in die tiefen Venen einwachsen (→ TVT). Etwa 90% aller TVT entstehen in den Beinvenen.
+**Fakt:** Eine tiefe Venenthrombose (TVT, Phlebothrombose) betrifft die tiefen Leitvenen (bevorzugt die Beinvenen) und ist potenziell lebensbedrohlich durch Lungenembolie-Risiko. Eine oberflächliche Venenthrombose (Thrombophlebitis) betrifft oberflächliche Venen unter der Haut und ist meist harmlos, kann aber in die tiefen Venen einwachsen (→ TVT). VTE entstehen pathophysiologisch bevorzugt in den Beinvenen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
@@ -44,6 +44,10 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Von besonderer klinischer Bedeutung ist die tiefe Venenthrombose (TVT) der Beine"
+- Quelle: `leitlinien-volltext/awmf-vte-prophylaxe.txt`
+- Zitat: "Pathophysiologisch entwickeln sich VTE in den tiefen Venen (TVT), bevorzugt in den Beinvenen"
+
+> ⚠️ Detail-Wert „90 % aller TVT in den Beinvenen": Die AWMF-S3-Leitlinie VTE (2025) belegt verbatim nur die *Lokalisation* („bevorzugt in den Beinvenen"), gibt aber KEINE konkrete Quote von 90 % an. Auch im Pflege-heute-Volltext nicht enthalten. Konkrete Prozentangabe entfernt — qualitativer Beleg („bevorzugt") steht. Bis zur lokalen Verfügbarkeit einer Epidemiologie-Quelle (z. B. DGP-Leitlinie Venenthrombose/LE) keine 90-%-Zahl behaupten.
 **Praxisfehler:** Oberflächliche Phlebitis wird als harmlos abgetan, ohne auf ein mögliches Einwachsen zu achten.
 
 **Misconceptions:**
@@ -55,7 +59,7 @@
 
 ### F-03: Lungenembolie als lebensbedrohliche Komplikation
 
-**Fakt:** Die Lungenembolie (LE) ist die gefürchtetste Komplikation einer TVT: Ein Thrombus löst sich aus der tiefen Vene, wandert über das rechte Herz in die Lungenarterie und verschließt diese teilweise oder vollständig. Etwa 50% aller proximalen TVT verursachen (oft symptomlose) Lungenembolien. Eine fulminante LE ist sofort lebensbedrohlich und eine häufige Todesursache im Krankenhaus.
+**Fakt:** Die Lungenembolie (LE) ist die gefürchtetste Komplikation einer TVT: Ein Thrombus löst sich aus der tiefen Vene, wandert über das rechte Herz in die Lungenarterie und verschließt diese teilweise oder vollständig. Proximale TVT haben dabei ein höheres Risiko für eine symptomatische Lungenembolie als distale. Asymptomatische TVT können asymptomatische, symptomatische oder fatale Lungenembolien auslösen. Eine fulminante LE ist sofort lebensbedrohlich und eine häufige Todesursache im Krankenhaus.
 
 **Prüfungsrelevanz:** sehr hoch (Notfall-Erkennung!)
 **Wissensart:** Komplikation
@@ -64,6 +68,12 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "gelangt er mit dem Blutstrom in die Lunge und kann dort als venöse Thromboembolie (VTE) eine lebensbedrohliche Lungenembolie"
+- Quelle: `leitlinien-volltext/awmf-vte-prophylaxe.txt`
+- Zitat: "Asymptomatische TVT können asymptomatische, symptomatische oder fatale Lungenembolien"
+- Quelle: `leitlinien-volltext/awmf-vte-prophylaxe.txt`
+- Zitat: "wobei das symptomatische LE-Risiko bei proximalen TBVT höher ist als bei distalen"
+
+> ⚠️ Detail-Wert „50 % aller proximalen TVT verursachen LE": Die AWMF-S3-Leitlinie VTE (2025) belegt verbatim nur die *Richtung* (proximale TVT → höheres symptomatisches LE-Risiko) und dass TVT symptomlose LE auslösen können — gibt aber KEINE 50-%-Quote an. Konkrete Prozentangabe entfernt; qualitativer Beleg steht. Bis zur lokalen Verfügbarkeit einer Epidemiologie-/ESC-Quelle keine 50-%-Zahl behaupten.
 **Praxisfehler:** Leitsymptome werden als Aufregung, Panikattacke oder banale Atemnot fehlgedeutet — Zeitverlust bis zur Notfall-Versorgung.
 **Transfer:** [Transfer] Wie ein Stein, der sich aus einem Stau in der Beinvene löst und in die Lunge geschwemmt wird — wo er einen Stau verursacht, der die Sauerstoffaufnahme blockiert.
 
@@ -98,7 +108,7 @@
 
 ### F-05: Frühmobilisation als stärkste Einzelmaßnahme
 
-**Fakt:** Frühmobilisation (Umhergehen am 1. postoperativen Tag, Wadenmuskelpumpe aktivieren) ist die am besten belegte Einzelmaßnahme der Thromboseprophylaxe. Sie aktiviert die Muskel-Venen-Pumpe der Wade, die etwa 80% des venösen Rückflusses aus dem Bein bewirkt. Auch kurze Spaziergänge (wenige Meter) oder gezielte Fuß-/Beinübungen im Bett sind wirksam. Jede nicht-notwendige Bettruhe ist ein Risiko.
+**Fakt:** Frühmobilisation (Umhergehen am 1. postoperativen Tag, Wadenmuskelpumpe aktivieren) ist die am besten belegte Einzelmaßnahme der Thromboseprophylaxe. Durch Aktivierung der Wadenmuskelpumpe kann der venöse Rückfluss um mindestens 50 % gesteigert werden. Auch kurze Spaziergänge (wenige Meter) oder gezielte Fuß-/Beinübungen im Bett sind wirksam. Jede nicht-notwendige Bettruhe ist ein Risiko.
 
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Maßnahme (Basismaßnahme)
@@ -109,6 +119,10 @@
 - Zitat: "Allgemeine Basismaßnahmen sind Frühmobilisation, Bewegungsübungen und Anleitung zu Eigenübungen. Diese sollten regelmäßig bei allen Patienten zur Anwendung kommen."
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Frühmobilisation ist jedoch maßgeblich für den Operationserfolg und die Thromboseprophylaxe"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Durch Aktivierung der Wadenmuskelpumpe kann der venöse Rückfluss um mindestens 50 % gesteigert werden"
+
+> ⚠️ Korrektur Detail-Wert: Die ursprüngliche Aussage „Wadenpumpe bewirkt ~80 % des venösen Rückflusses" ist NICHT belegbar und wurde durch den verbatim belegten Wert ersetzt: Pflege heute belegt, dass die Aktivierung der Wadenmuskelpumpe den venösen Rückfluss um *mindestens 50 %* steigert (anderer Bezugswert — Steigerung, nicht Anteil am Gesamtrückfluss). Keine 80-%-Zahl behaupten.
 **Praxisfehler:** "Schonung nach OP" wird zu lang verordnet oder von Pflege zögerlich umgesetzt — führt zu vermeidbaren Thrombosen.
 **Transfer:** [Transfer] Wie ein Fluss, der fließen muss, damit er sich nicht staut: Bewegung ist die natürlichste Thromboseprophylaxe.
 
@@ -133,6 +147,8 @@
 - Zitat: "Die Risiken für die Entwicklung einer Heparin-induzierten Thrombozytopenie (HIT) bzw. HIT-assoziierter VTE-Ereignisse sind unter NMH signifikant niedriger als unter UFH"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "kann es zu einem heparininduzierten Abfall der Blutplättchen (heparininduzierte Thrombozytopenie, HIT) kommen"
+
+> ⚠️ Detail-Werte HIT „Thrombozytenabfall > 50 % nach 5–14 Tagen": Die AWMF-S3-Leitlinie VTE (2025) belegt verbatim nur, dass HIT als Nebenwirkung auftritt und unter NMH seltener ist als unter UFH — gibt aber im vorliegenden Volltext KEINE konkreten Diagnosekriterien (Abfall > 50 %, Tag 5–14) an. Auch im Pflege-heute-Volltext nicht verbatim enthalten. Die Diagnose-Schwellen stammen aus der HIT-Spezialliteratur (z. B. 4T-Score / AWMF-Leitlinie HIT) und sind bis zu deren lokaler Verfügbarkeit als ⚠️ Detail-Werte zu führen.
 **Praxisfehler:** Pflege dokumentiert Injektion ohne Beobachtungszeichen; Blutungen werden erst spät erkannt.
 
 **Misconceptions:**
@@ -239,6 +255,12 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Beschwerden können sehr ausgeprägt sein, insbesondere bei bettlägerigen Patienten aber auch gering"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Schwellung, Rötung oder blaue (livide)"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Überwärmung von Ober- oder Unterschenkel"
+
+> ⚠️ Detail-Werte „etwa 50 % der TVT klinisch stumm" und „Homans-Sensitivität 60–90 %": Pflege heute belegt verbatim nur, dass die Beschwerden „auch gering" sein können (Symptom-Variabilität) — gibt aber KEINE 50-%-Quote an. Eine Homans-Sensitivitätsangabe (60–90 %) ist in keinem der beiden lokalen Volltexte (AWMF VTE, Pflege heute) enthalten. Beide Zahlen bis zur lokalen Verfügbarkeit einer Diagnostik-Quelle (z. B. DGP/AWMF Venenthrombose-Diagnostik) als ⚠️ Detail-Werte führen — nicht als belegt behaupten. Die *qualitative* Kernaussage (TVT oft symptomarm; Homans veraltet/unzuverlässig/auslösegefährlich) bleibt fachlich korrekt und steht im Misconception-Block.
 **Praxisfehler:** Pflege prüft Homans-Zeichen als "Standard" — auslösend kann Emboliegefahr sein (Thrombusteile lösen!); klinisch stumme TVT wird verpasst.
 **Transfer:** [Transfer] Wie in der alten Medizin, wo man dem Patienten auf die Stirn gefühlt hat um Fieber zu messen — heute haben wir Thermometer. Homans ist wie Stirnfühlen: ungenau, kann Schaden machen.
 
@@ -260,6 +282,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Typisch sind plötzliche Atemnot, schnelle Atmung, atemabhängige Thoraxschmerzen und Husten, evtl. mit blutigem Sputum"
+
+> ⚠️ Detail-Werte „Dyspnoe häufigstes Symptom (80 %)", „Tachykardie > 100/min", „Tachypnoe > 20/min": Pflege heute belegt verbatim die *qualitative* Symptomatik (plötzliche Atemnot, schnelle Atmung = Tachypnoe, atemabhängige Thoraxschmerzen, Husten) — gibt aber KEINE Häufigkeits-Prozente (80 %) und KEINE numerischen Schwellen (> 100/min, > 20/min) an. Die AWMF-S3-Leitlinie VTE (2025) ist eine Prophylaxe-Leitlinie und enthält keine LE-Symptom-Epidemiologie. Prozente/Schwellenwerte bis zur lokalen Verfügbarkeit einer LE-Diagnostik-Quelle (ESC Acute Pulmonary Embolism Guidelines) als ⚠️ Detail-Werte führen — qualitativer Symptomkatalog ist belegt.
 **Praxisfehler:** Symptome werden als Panikattacke oder Angst fehlgedeutet; Patient wird allein gelassen oder nicht priorisiert.
 **Transfer:** [Transfer] Wie ein Alarm im Haus — plötzliche Atemnot bei Risikopatient ist die Brandmeldung. Du schickst niemanden hin zum "Nachsehen", du rufst sofort die Feuerwehr.
 
