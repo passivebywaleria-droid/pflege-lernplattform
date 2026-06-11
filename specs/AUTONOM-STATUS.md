@@ -29,8 +29,13 @@
 1. ✅ ERLEDIGT Zyklus 1–6: Voll-Re-Audit + TEILWEISE-Auflösung alle 25 Themen → 91 % STÜTZT, 0 STÜTZT-NICHT.
 2. ✅ ERLEDIGT Zyklus 7: Cleanup-Pass 30 unmarkierte Listen-TEILWEISE → 0 unmarkiert (Zweitzitat ODER ehrliches ⚠️).
 3. ✅ ERLEDIGT Zyklus 8: 4 amtliche freie Quellen (§630f BGB, §267/§203 StGB, DGSM-Insomnie 2025) → 7 ⚠️→Beleg. Geblockt: AWMF-Dysphagie (HTTP 500), Charta (404), PRISCUS (keine Kausalität).
-4. **→ NÄCHSTES: Zyklus 9 — ESPEN/DGEM-Leitlinien für den Ernährungs-Cluster** (höchster ⚠️-Hebel: ernaehrungsgrundlagen 26 + ernaehrungsassessment 11 + enterale-ernaehrung 7 = 44 ⚠️). Freie DGEM/ESPEN-Leitlinien klinische Ernährung (AWMF 073er-Reihe) + DGE-Ernährungsbericht. Pro Quelle: fetch → betroffene ⚠️-Sub-Claims (MNA-Score, enterale Sondenkost, Energiebedarf, Makro/Mikro) re-grounden.
-5. **Danach freie Quellen ausgeschöpft** → verbleibende ⚠️ (~200) = **echt lizenzpflichtig** (Hoehl/Kullick für Säugling/Kinder, Guigoz/Vellas-MNA-Original, ICSD-3/AASM, Beers/PRISCUS-Detail, Cochrane) + didaktische Merksätze + **Dozentin-Review** → **CE-02 autonome Decke final erreicht** → Übergabe (Eskalationen), DANN Queue für CE-05/weitere CE öffnen.
+4. ✅ ERLEDIGT Zyklus 9: DGEM-S3 Heimenterale 2024 (AWMF 073-021) → enterale F-09 Spülmenge belegt (20–40 mL). Geblockt: DGEM-Intensiv HTTP 500; pH-5,5/Osmolaritäts-Schwellen nicht in dieser LL.
+5. **⛔ FREIE QUELLEN AUSGESCHÖPFT (autonome Decke erreicht).** Verbleibende ~243 ⚠️-Sub-Claims sind NICHT mehr autonom lösbar — sie brauchen Mensch/Geld:
+   - **Lizenzpflichtig (Gründerin-Kaufentscheidung):** Hoehl/Kullick Kinderkrankenpflege (saeuglingspflege 21 + Kinder-Sub-Claims), Guigoz/Vellas MNA-Originalarbeit, ICSD-3/AASM (Schlaf-Schwellen), Braden&Bergstrom-Original, PRISCUS-Detail/Beers, Cochrane-Volltexte.
+   - **Server-blockiert (kein Geld, aber aktuell HTTP 500/404):** AWMF Neurogene Dysphagie (030-111), DGEM Intensiv (073-004), Charta der Rechte — später erneut versuchen.
+   - **Didaktische Merksätze** (kein Gesetzeszitat möglich): „nicht dokumentiert = nicht durchgeführt" etc. → als Merkregel kennzeichnen, nicht als Beleg.
+   - **Dozentin-Review (R6):** das menschliche „pflegefachlich korrekt"-Siegel.
+6. **→ ÜBERGABE an Gründerin/Dozentin** (siehe Eskalationen). Pipeline-Umbau v9→v10 (project_pipeline_neu_vor_naechsten_ces) + CE-05-Queue erst NACH Gründerin-Freigabe öffnen — nicht autonom vorgreifen.
 
 ---
 
@@ -44,6 +49,7 @@
 ---
 
 ## LOG (neueste oben — jeder Lauf trägt 1 Zeile ein)
+- 2026-06-11 Zyklus 9 (Ernährungs-Cluster): DGEM-S3 Heimenterale 2024 beschafft (AWMF 073-021, 62k Wörter) → enterale F-09 Routine-Spülmenge verbatim „20–40 mL" belegt; unbelegte „20–50 ml" korrekt auf DGEM-Wert reduziert (kein Papern über Differenz). DGEM-Intensiv-LL HTTP 500. **Befund: freie Quellen ausgeschöpft** — restliche ~243 ⚠️ = lizenzpflichtig/server-blockiert/Dozentin. Autonome Decke erreicht → Übergabe.
 - 2026-06-11 Zyklus 8 (Freie Quellen): 4 amtliche Quellen beschafft (§630f BGB, §267/§203 StGB via gesetze-im-internet.de; DGSM-S3-Insomnie 2025 via AWMF) → **7 ⚠️ in echte verbatim Belege umgewandelt** (pflegedoku F-01/F-03/Korrektur/eDoku/F-13; schlaf F-10/F-12). Alle in fetch-leitlinien.sh reproduzierbar. Geblockt (ehrlich, kein Schönreden): AWMF Neurogene Dysphagie HTTP 500 (deregistriert), Charta-PDF 404, PRISCUS-Artikel deckt PIM aber nicht Sturz-Kausalität, DGE-Texte kennen „Makro/Mikronährstoff" nicht. **KORREKTUR:** ⚠️-Gesamtzahl ehrlich gezählt = ~250 Sub-Claim-Vorkommen (nicht ~40) — die 91 % STÜTZT gelten auf Fakt-Kern-Ebene, nicht Sub-Claim-Ebene. Nächstes: ESPEN/DGEM für Ernährungs-Cluster (44 ⚠️), sonst Decke (Lizenz+Dozentin).
 - 2026-06-11 Zyklus 7 (Cleanup-Pass): 30 unmarkierte Listen-TEILWEISE über 11 Themen (7 Sub-Agenten). +~60 verbatim Zweitzitate; voll aufgelöst: blasenkatheter/pflegeprozess/pflegedoku F-02·05·13/schlaf F-09·11/stuhl F-01/dekubitus/essen-anreichen. Rest ehrlich ⚠️ (Quelle benannt). Sachkorrektur dekubitus F-06 Steißbein→Sitzbeinhöcker. Alle 11 --check-file PASS, unabhängig re-verifiziert. **0 unmarkierte TEILWEISE.** Selbst-Check ergab: mehrere ⚠️-Quellen sind FREI (BGB/PRISCUS/DGSM/AWMF-Dysphagie/Charta) → nicht „Decke", sondern Zyklus 8 nötig. Kein Schönreden.
 - 2026-06-11 FINAL-AUDIT: alle 25 Themen durch (Zyklus 2-6, TEILWEISE-Auflösung). STÜTZT 44%→**91%** (Ziel ≥90% erreicht), TEILWEISE 49%→8,5%, STÜTZT-NICHT 1. Viele Fachfehler nebenbei korrigiert. Rest: Cleanup-Pass 30 unmarkierte Listen-Items, dann DECKE (Lizenz-Quellen + Dozentin).
