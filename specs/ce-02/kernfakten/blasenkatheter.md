@@ -10,7 +10,7 @@
 | quellen | KRINKO 2015 (Prävention Katheter-assoziierter Harnwegsinfektionen); CDC/HICPAC 2009 (CAUTI-Guideline); EAUN 2021 (Catheterisation); Pflege heute Kap. 8.1 Urin / Kap. 33.1 Urologie; § 630a BGB |
 | einträge | 15 |
 | erstellt | 2026-06-07 (Pipeline v9) |
-| grounding | 2026-06-11 (neuer Korpus I Care Pflege geprüft): F-12 Via-falsa-Teilaussage BLEIBT ⚠️ — Begriff im neuen `icare-pflege-volltext/` nicht vorhanden; ergänzender Anlage-Risiko-Beleg aus I Care Pflege Kap. 19.3.6 eingefügt. 1 ⚠️ verbleibt (Via falsa katheterspezifisch). |
+| grounding | 2026-06-11: F-12 Via-falsa-Teilaussage AUFGELÖST über EAUN-Leitlinie Indwelling Catheterisation 2024 (`eaun-katheterisierung-2024-volltext/`) — katheterspezifischer Verbatim-Beleg „via falsa (accidental passage made when inserting the catheter)" + „formation of a false passage … prostate or bladder". Zusätzlich Anlage-Risiko aus I Care Pflege Kap. 19.3.6. 0 ⚠️ offen. |
 
 ---
 
@@ -310,7 +310,10 @@
 - Zitat: "oder am Katheter Inkrustationen sind"
 - Zitat: "Bei einer Paraphimose"
 - Zitat: "Auf Urinveränderungen (Farbe, Konzentration, Menge) und Beimengungen"
-- ⚠️ BLEIBT **Via falsa (Katheter):** Im lokalen Korpus nur im Magensonden-Kontext belegt (`pflege-heute.txt`: "Via falsa („falscher Weg")"), NICHT katheterspezifisch. Auch der NEU erschlossene Korpus `icare-pflege-volltext/` enthält den Begriff „Via falsa" gar nicht (grep 0 Treffer); I Care Pflege Kap. 19.3.6 nennt als Katheter-Anlage-Komplikationen ausdrücklich nur Keimverschleppung/Infektion, Harnröhrenstrikturen und Blutung — nicht den falschen Weg. Teilaussage „Via falsa beim Katheterlegen" → ⚠️ Quelle beschaffen (EAUN 2021 Catheterisation / urologisches Standardwerk), bis dahin nicht maschinell verifizierbar. Belegbare Nachbar-Aussage aus I Care Pflege Kap. 19.3.6: "Das größte Risiko bei der Anlage eines" / "transurethralen Blasenkatheters sind die Keimverschleppung mit Infektion von Harnröhre und Harnblase".
+- **Via falsa (Katheter) — AUFGELÖST:** Jetzt katheterspezifisch belegt durch die EAUN-Leitlinie Indwelling Catheterisation 2024 (siehe Beleg). Im deutschen Korpus war der Begriff nur im Magensonden-Kontext (Pflege heute) belegt; I Care Pflege Kap. 19.3.6 nennt als Anlage-Hauptrisiko Keimverschleppung/Infektion. EAUN nennt Via falsa als transurethrale Katheter-Anlage-Komplikation explizit.
+- Quelle: `eaun-katheterisierung-2024-volltext/eaun-katheterisierung-2024.txt`
+- Zitat: "for transurethral catheterisation, also via falsa (accidental passage" (Forts. „made when inserting the catheter) and urethral strictures" — EAUN 2024: Via falsa als Komplikation der transurethralen Katheteranlage, katheterspezifisch)
+- Zitat: "either the formation of a false passage, usually at the level of the prostate or bladder" (EAUN 2024, iatrogenes Trauma: falscher Weg typisch auf Höhe Prostata/Blasenhals)
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "Das größte Risiko bei der Anlage eines" / "transurethralen Blasenkatheters sind die Keimverschleppung mit Infektion von Harnröhre und Harnblase" (Anlage-Hauptrisiko — stützt Komplikationsliste, ersetzt aber NICHT den Via-falsa-Beleg)
 **Praxisfehler:** Rote Verfärbung wird als "normal nach dem Legen" abgetan statt beobachtet und dokumentiert.
