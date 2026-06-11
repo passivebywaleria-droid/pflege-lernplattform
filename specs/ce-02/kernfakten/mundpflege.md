@@ -10,6 +10,7 @@
 | quellen | DNQP Expertenstandard Förderung der Mundgesundheit in der Pflege; Pflege heute Kap. Mund- und Zahnpflege; DGP/DGPPN Leitlinie Mundgesundheit 2019 |
 | einträge | 14 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md v9) |
+| grounding | 2026-06-11 Welle (icare-pflege/icare-anatomie/icare-krankheitslehre Volltext erschlossen): F-03 ⚠️ aufgelöst — Remineralisation/Zahnschutz als Speichel-Kernaufgabe durch I Care Anatomie Kap. 9.4 verbatim belegt; F-05 Sachaussage (Mundpflege bei Vollprothesenträgern) durch I Care Pflege verbatim gestützt, Terminus „Prothesenstomatitis" bleibt offen (im Korpus 0 Treffer); F-06 feste Inspektions-Sequenz bleibt offen (im Korpus nur „systematische Inspektion", keine Schritt-für-Schritt-Reihenfolge — ICSD/DGP-DGPPN-2019-Quelle beschaffen). Verbleibende ⚠️: F-05 Terminus, F-06 Sequenz · geprüft 2026-06-11 |
 
 ---
 
@@ -77,7 +78,11 @@
 - Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
 - Zitat: "Die Speicheldrüsen produzieren den Mundspeichel (täglich 500–1500 ml) und münden in der Mundhöhle bzw. im Mundvorhof"
 - Zitat: "Lysozym und IgA-Antikörper (wirkt desinfizierend), Mineralstoffen, Amylase (Enzym beginnt mit der Kohlenhydratverdauung)"
-⚠️ Quelle beschaffen (konkrete Primärquelle): Remineralisation/Zahnschutz als Speichel-Kernaufgabe — in den verfügbaren Korpora nicht verbatim belegt. Die übrigen fünf Aufgaben (Befeuchten, Bolus-Bindung, Amylase-Verdauung, Lysozym/IgA-Abwehr, Spülung) sind durch I Care Examen kompakt und Pflege heute gestützt.
+- Quelle: `icare-anatomie-volltext/icare-anatomie.txt`
+- Zitat: "Mineralien aus den Zähnen freigesetzt werden (Demineralisation)" — Säuren entziehen dem Zahn Mineralien
+- Zitat: "Auf diesem Weg vermindert der Speichel die Wirkung der Säuren, die den Zahnschmelz angreifen, und schützt die Zähne" — belegt verbatim die Remineralisation/Zahnschutz-Funktion des Speichels (gelöste Mineralstoffe werden wieder in den Zahnschmelz eingebaut)
+- Zitat: "ist der Mundspeichel wichtig für die Zahngesundheit und schützt die Mundschleimhaut vor Austrocknung" — belegt Zahnschutz + Befeuchtung als Speichelfunktionen
+**Belegstatus (2026-06-11):** Aufgelöst (vormals ⚠️) — die Remineralisation/Zahnschutz-Aufgabe ist nun durch I Care Anatomie (Kap. 9.4 Speicheldrüsen) verbatim belegt. Damit sind alle sechs Kernaufgaben des Speichels gedeckt (Befeuchten, Bolus-Bindung/Gleitfähigkeit, Amylase-Verdauung, Lysozym/IgA-Abwehr, Remineralisation/Zahnschutz, Spülung).
 **Praxisfehler:** Reduktion des Speichels auf die Befeuchtungsfunktion — ein Patient mit Xerostomie verliert auch Verdauungs-, Zahn- und Infektionsschutz.
 
 **Misconceptions:**
@@ -119,7 +124,9 @@
 **Fakt:** Zahnprothesen werden mindestens zweimal täglich, bei locker sitzenden Prothesen nach jeder Mahlzeit gereinigt — über einem wassergefüllten Waschbecken oder Tuch (bruchempfindlich), mit der Zahnbürste unter fließendem Wasser. Wird die Mundschleimhaut vernachlässigt, kann sich Candida albicans (Soor) auf geschädigten Schleimhäuten ansiedeln.
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Vor Einsetzen der Zahnprothese massiert der Patient ggf. die Kauleiste mit einer Zahnbürste, anschließend spült er den Mund mit Wasser aus"
-⚠️ Quelle beschaffen (konkrete Primärquelle): Begriff „Prothesenstomatitis" — in den verfügbaren Korpora nicht verbatim belegt. Pflege heute belegt die Schleimhautpflege vor dem Einsetzen der Prothese (Kauleisten-Massage, Mundspülung), aber nicht den Terminus Prothesenstomatitis. Quelle: DGP/DGPPN 2019-Leitlinie oder zahnmedizinische Fachliteratur beschaffen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Auch Pflegeempfänger, die eine Vollprothese tragen, bedürfen der Mundpflege" — belegt verbatim, dass Prothesenträger zusätzlich zur Prothesenreinigung Mundpflege brauchen (Inspektion der Mundschleimhaut, Ausspülen/Auswischen von Mund und Wangentaschen); stützt Praxisfehler + M3
+⚠️ Teilweise offen: Der spezifische Terminus „Prothesenstomatitis" ist im Korpus nicht verbatim belegt (I Care Pflege/Krankheitslehre kennen nur „Stomatitis"/„Soor-Stomatitis"). Die Sachaussage — Schleimhaut unter der Prothese mitpflegen, sonst Candida-Ansiedlung — ist durch Pflege heute (Soor auf geschädigter Schleimhaut) und I Care Pflege (Vollprothesen-Mundpflege) gedeckt. Falls der Fachterminus im Content benötigt wird: DGP/DGPPN 2019-Leitlinie oder zahnmedizinische Fachliteratur beschaffen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme

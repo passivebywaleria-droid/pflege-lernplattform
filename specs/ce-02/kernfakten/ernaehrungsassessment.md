@@ -10,7 +10,7 @@
 | quellen | DNQP Expertenstandard Ernährungsmanagement 2017; Pflege heute 7. Aufl. Kap. 7 (Ernährung) + Kap. 19 (Sarkopenie/Frailty); Guigoz MNA 1994; Kondrup NRS-2002 2003; WHO BMI-Klassifikation; DGEM/ESPEN 2020; Bartholomeyczik PEMU 2008 |
 | einträge | 16 |
 | erstellt | 2026-06-10 (Pipeline v9, Quellenbindung) |
-| grounding | 2026-06-11 (⚠️-Auflösung via icare-pflege-volltext): F-12 (Perspiratio ≈900 ml/d) + F-14 (30-35 ml/kg) voll gelöst; F-15 (g/kg-Vorgabe) + F-03/F-04/F-05/F-06 (Setting-Mapping + zweistufiges Vorgehen) teilbelegt. Offen bleiben Score-Details (MNA/NRS), PEMU-5-Bereiche, PEM-Term (F-08), Labor-HWZ/Cut-offs (F-11) — in I Care 2020 nicht verbatim. |
+| grounding | 2026-06-11 (Welle 2, ⚠️-Auflösung via icare-pflege-volltext + expertenstandards-gebrauchsanleitung Anhänge 16/17): F-12 (Perspiratio ≈900 ml/d), F-14 (30-35 ml/kg), F-04 (MNA-Voranamnese: 6 Items, max. 14 P., Cut-off ≥12/≤11 — Sachkorrektur: revidierte SF-Dreiteilung 8-11/0-7 entfernt, nicht im Korpus) und F-05 (NRS-2002 komplett: 4 Vorscreening-Fragen, Hauptscreening 0-3+0-3, Altersbonus ≥70, Cut-off ≥3, wöchentl. Wiederholung) voll gelöst. Offen bleiben: F-03 (Minuten-/24h-Werte), F-06 (PEMU-5-Bereiche), F-08 (PEM-Term), F-11 (Labor-HWZ/Cut-offs), F-15 (5-6 Portionen, Evaluationsfrist) — im gesamten Korpus nicht verbatim. |
 
 ---
 
@@ -105,7 +105,7 @@
 
 ### F-04: MNA (Mini Nutritional Assessment)
 
-**Fakt:** Das MNA ist das Standard-Screening für Menschen ab 65 Jahren (geriatrische Einrichtungen). MNA-Short Form: 6 Fragen (Nahrungszufuhr, Gewichtsverlust, Mobilität, akute Erkrankung/Stress, neuropsychologische Probleme, BMI bzw. Wadenumfang), 0-14 Punkte (12-14 normal, 8-11 Risiko, 0-7 Mangelernährung). Bei Auffälligkeit folgt die MNA-Long Form. Ist der BMI nicht messbar, dient der Oberarmumfang (Werte über 22 cm normal) bzw. der Wadenumfang als Kriterium.
+**Fakt:** Das MNA ist das Standard-Screening für Menschen ab 65 Jahren (geriatrische Einrichtungen). Die Voranamnese (Screening; als eigenständige Kurzversion: MNA-SF, Short Form) umfasst 6 Fragen — Appetit/Nahrungszufuhr, Gewichtsverlust, Mobilität, akute Krankheit/psychischer Stress, psychische Situation (Demenz/Depression), BMI — mit maximal 14 Punkten: 12 Punkte oder mehr = unauffällig; 11 Punkte oder weniger = weiter mit der vollständigen Anamnese (MNA-Long Form, Gesamt-Index). Der MNA-SF ermöglicht eine schnelle Einschätzung in nur drei Minuten. Ist der BMI nicht messbar, dient der Oberarmumfang (Werte über 22 cm normal) bzw. der Wadenumfang als Kriterium; die Kniehöhe wird bestimmt, wenn die Körpergröße nicht messbar ist.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
@@ -124,7 +124,27 @@
 - Zitat: "geriatrisches Setting: Mini Nutritional Assessment (MNA)" — belegt MNA als settingspezifisches Screening fürs geriatrische Setting (gefolgt im Quelltext von "bzw. die Kurzversion MNA-SF (Short Form)")
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "MNA-Assessment, das Mini Nutritional Assessment, ist zur Bestimmung des Ernährungszustandes beim" — belegt im Quelltext "… älteren Menschen entwickelt worden" (MNA für ältere Menschen)
-- ⚠️ Nur das MNA-Short-Form-Score-Detail (6 Fragen; Punktebereich 0-14; Cut-offs 12-14 normal / 8-11 Risiko / 0-7 Mangelernährung) bleibt im gesamten Korpus (Pflege heute + I Care Pflege 2020 + leitlinien-volltext + dnqp-standards-index + icare-examen-kompakt + pruefungswissen + expertenstandards-gebrauchsanleitung, geprüft 2026-06-11) NICHT verbatim belegt — I Care nennt das MNA/MNA-SF nur als settingspezifisches Instrument (ohne Punktwerte/Cut-offs); Pflege heute nennt es als Instrument + OAU-/Wadenumfang-Kriterium. Score-Aufbau über MNA-Originalarbeit Guigoz/Vellas bzw. Nestlé-MNA-Manual beschaffen, bevor Punktwerte/Cut-offs als Schüler-Inhalt ausgespielt werden, ODER Score-Detail entfernen.
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Beim MNA-SF werden nur die Items der Voranamnese betrachtet, um eine schnelle Einschätzung in nur drei Minuten zu ermöglichen" — belegt MNA-SF als Kurzversion aus den Voranamnese-Items
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Ergebnis der Vor-Anamnese (max. 14 Punkte)" — belegt den Punktebereich (maximal 14 Punkte); der MNA-Originalbogen (Anhang 17) nennt direkt darunter den Cut-off "12 Punkte oder mehr"
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Wenn der Wert 11 oder kleiner 11 ist, fahren Sie mit der Anamnese fort, um den Gesamt-Index zu erhalten" — belegt den Stufen-Cut-off ≤ 11 Punkte → vollständige Anamnese (Long Form)
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Hat der Patient einen verminderten Appetit?" — Voranamnese-Item A (Appetit/Nahrungszufuhr)
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Gewichtsverlust in den letzten 3 Monaten" — Voranamnese-Item B
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Mobilität / Beweglichkeit" — Voranamnese-Item C
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Akute Krankheit oder psychischer Stress" — Voranamnese-Item D
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Psychische Situation" — Voranamnese-Item E (Demenz/Depression)
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Körpermassenindex (Body Mass Index, BMI)" — Voranamnese-Item F
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Guigoz Y, Vellas B and Garry PJ. 1994. Mini Nutritional Assessment" — belegt die Originalarbeit als Primärquelle (Referenzzeile des abgedruckten MNA-Bogens)
+- Hinweis (geklärt 2026-06-11): Die Expertenstandards-Gebrauchsanleitung druckt den vollständigen MNA-Bogen (Anhang 17) ab — 6 Voranamnese-Items, max. 14 Punkte, Cut-off ≥ 12 unauffällig / ≤ 11 vertiefen sind damit verbatim belegt. SACHKORREKTUR (2026-06-11): Die frühere Dreiteilung "12-14 normal, 8-11 Risiko, 0-7 Mangelernährung" stammt aus der revidierten MNA-SF (Kaiser et al. 2009) und ist im Korpus NICHT enthalten — aus dem Fakt entfernt; im Korpus belegt ist nur die zweistufige Auswertung des Original-MNA. ⚠️ aufgelöst.
 **Praxisfehler:** MNA bei jüngeren Erwachsenen einsetzen — es ist nur für Ältere (≥65) validiert; im Krankenhaus gilt NRS-2002.
 
 **Misconceptions:**
@@ -147,7 +167,31 @@
 - Zitat: "Nutritional Risk Score (NRS) für den Krankenhausbereich"
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "Krankenhaus: Nutritional Risk Screening 2002 (NRS 2002)" — belegt NRS-2002 als settingspezifisches Screening-Instrument für den Krankenhausbereich (Quelltext nennt parallel SGA)
-- ⚠️ Nur das NRS-2002-Detail (4 Vorscreening-Fragen; Hauptscreening Ernährungs-Score 0-3 + Krankheits-Score 0-3 + Altersbonus +1 bei ≥70; Cut-off ≥3 Punkte; Maximum 7; wöchentliche Wiederholung) bleibt im Korpus (inkl. I Care Pflege 2020) nicht verbatim belegt — Pflege heute, I Care und icare-examen-kompakt nennen NRS-2002 nur namentlich als Krankenhaus-Screening-Instrument (ohne Score-Aufbau). Quelle beschaffen (NRS-2002-Originalarbeit Kondrup et al. 2003 / ESPEN-Leitlinie) oder Score-Detail entfernen.
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "nach Kondrup J et al., Clinical Nutrition 2003; 22: 415-421" — Anhang 16 druckt den vollständigen NRS-2002-Bogen ab und belegt die Originalarbeit Kondrup 2003
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Empfohlen von der Europäischen Gesellschaft für Klinische Ernährung und Stoffwechsel (ESPEN)" — belegt die ESPEN-Empfehlung
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Ist der Body Mass Index < 20,5 kg/m2 ?" — Vorscreening-Frage 1
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Hat der Patient in den vergangenen 3 Monaten an Gewicht verloren?" — Vorscreening-Frage 2
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "War die Nahrungszufuhr in der vergangenen Woche vermindert?" — Vorscreening-Frage 3
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Ist der Patient schwer erkrankt? (z.B. Intensivtherapie)" — Vorscreening-Frage 4
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Wird eine dieser Fragen mit »Ja« beantwortet, wird mit dem Hauptscreening fortgefahren" — belegt die Vorscreening→Hauptscreening-Logik (mind. 1× "ja")
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Störung des Ernährungszustands" — Hauptscreening-Spalte 1 (Skala Keine 0 bis Schwer 3)
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Krankheitsschwere" — Hauptscreening-Spalte 2 (Skala Keine 0 bis Schwer 3)
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "1 Punkt, wenn Alter ≥ 70 Jahre" — belegt den Altersbonus
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Ernährungsrisiko liegt vor, Erstellung eines Ernährungsplanes" — belegt Cut-off ≥ 3 Punkte → Ernährungsplan (Bogen-Zeile "≥ 3 Punkte")
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "wöchentlich wiederholtes Screening" — belegt die wöchentliche Wiederholung bei < 3 Punkten
+- Hinweis (geklärt 2026-06-11): Der komplette NRS-2002-Score-Aufbau ist über den abgedruckten Originalbogen (Anhang 16 der Expertenstandards-Gebrauchsanleitung) verbatim belegt. Das "Maximum 7 Punkte" ist arithmetische Ableitung (3 + 3 + 1), steht nicht als eigener Satz im Bogen. ⚠️ aufgelöst.
 **Praxisfehler:** Nach negativem Pre-Screening nie wieder testen — bei Klinik-Patienten ist wöchentliche Wiederholung Pflicht (Verschlechterung nach OP/Infekt).
 
 **Misconceptions:**

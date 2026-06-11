@@ -115,7 +115,7 @@
 - Zitat: "schlägt Donabedian vor, Qualität auf den Ebenen Struktur, Prozess und Ergebnis zu beurteilen" (belegt: S-P-E geht auf Donabedian zurück)
 - Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
 - Zitat: "unterteilt die Pflegequalität in 3 Kategorien:"
-- ⚠️ Jahreszahl 1966 (Milbank Memorial Fund Quarterly) bleibt unbelegt — kein Korpus nennt die Originalarbeit 1966. Lebensdaten (1919–2000) sind belegt. Fakt wurde auf "(1919–2000)" entschärft.
+- ⚠️ Jahreszahl 1966 (Milbank Memorial Fund Quarterly) bleibt unbelegt — kein Korpus nennt die Originalarbeit 1966. Lebensdaten (1919–2000) sind belegt. Fakt wurde auf "(1919–2000)" entschärft. NACHGEPRÜFT (2026-06-11): Auch der neue Korpus `icare-pflege-volltext/` nennt Donabedian (Definition + 3 Kategorien), aber keine Jahreszahl 1966 — ⚠️ bleibt.
 **Praxisfehler:** Nur das Ergebnis betrachten ("Bewohner zufrieden = alles gut") und Struktur- und Prozessqualität vernachlässigen.
 
 **Misconceptions:**
@@ -251,7 +251,7 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Timed Up & Go-Test (Mobilität)" (belegt nur Existenz/Zweck des Instruments)
-- ⚠️ Schwellenwerte (<10 / ≥20 / ≥30 Sek.), Strecke "3 Meter" und Ablauf (Aufstehen → Gehen → Umdrehen → Setzen) sind in KEINEM der verfügbaren Korpora verbatim belegt (geprüft: Pflege heute, Gebrauchsanleitung, I Care Examen Kompakt, Prüfungswissen, DNQP Sturzprophylaxe). Originalarbeit Podsiadlo & Richardson 1991 (JAGS 39(2)) nicht im Korpus. Detailwerte in Bausteinens NICHT als belegte Fakten verwenden; nur belegbare Aussage: "Timed Up & Go-Test (Mobilität)" (Pflege heute) und "Timed-Up-and-Go-Test TUG erwähnenswert, da er bereits im Rahmen des Expertenstandards Sturzprophylaxe eine Rolle spielte" (Gebrauchsanleitung).
+- ⚠️ Schwellenwerte (<10 / ≥20 / ≥30 Sek.), Strecke "3 Meter" und Ablauf (Aufstehen → Gehen → Umdrehen → Setzen) sind in KEINEM der verfügbaren Korpora verbatim belegt (geprüft: Pflege heute, Gebrauchsanleitung, I Care Examen Kompakt, Prüfungswissen, DNQP Sturzprophylaxe; NACHGEPRÜFT 2026-06-11: auch neue Korpora I Care Pflege + I Care Krankheitslehre — kein TUG-Treffer). Originalarbeit Podsiadlo & Richardson 1991 (JAGS 39(2)) nicht im Korpus. Detailwerte in Bausteinens NICHT als belegte Fakten verwenden; nur belegbare Aussage: "Timed Up & Go-Test (Mobilität)" (Pflege heute) und "Timed-Up-and-Go-Test TUG erwähnenswert, da er bereits im Rahmen des Expertenstandards Sturzprophylaxe eine Rolle spielte" (Gebrauchsanleitung).
 **Praxisfehler:** Beim TUG nur die Zeit stoppen und die Bewegungsqualität (Unsicherheit, Abstützen, Gleichgewichtsverlust) ignorieren.
 
 **Misconceptions:**

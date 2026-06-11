@@ -7,9 +7,10 @@
 | cluster | A (Pflegeprozess & Grundlagen) |
 | geschätzteUE | 7 |
 | wissensart | konzept |
-| quellen | Pflege heute 7. Aufl. Kap. Informationsmanagement und Pflegedokumentation; § 630f BGB (amtlicher Volltext); § 267 StGB (amtlicher Volltext); § 203 StGB (amtlicher Volltext); BMG Strukturmodell/SIS (Beikirch & Roes 2014); Leonard et al. 2004 (SBAR); WHO 2007 (ISBAR); DNQP Entlassungsmanagement 2019 |
+| quellen | Pflege heute 7. Aufl. Kap. Informationsmanagement und Pflegedokumentation; I Care Pflege Kap. Pflegedokumentation und Pflegeübergabe (`icare-pflege-volltext/`); § 630f BGB (amtlicher Volltext); § 267 StGB (amtlicher Volltext); § 203 StGB (amtlicher Volltext); BMG Strukturmodell/SIS (Beikirch & Roes 2014); Leonard et al. 2004 (SBAR); WHO 2007 (ISBAR — korpus-unbelegt ⚠️) |
 | einträge | 14 |
 | erstellt | 2026-06-10 (Dozentin A, aus bausteine-plan.md) |
+| grounding | 2026-06-11 (neuer Korpus I Care Pflege): 5 von 6 offenen ⚠️ aufgelöst — F-03 (Abweichungen von der Planung verbatim belegt, „Unfälle" entschärft auf Stürze), F-04 (Ich-Form als Merkregel gekennzeichnet, Fakt entschärft), F-06 (geschlossene 4-Teile-Liste verbatim belegt), F-09 (Vor-/Nachteile der Übergabeformen verbatim belegt, unbelegte Adjektive entschärft), F-10 (Nachtrags-/Korrekturregeln verbatim belegt). 1 ⚠️ verbleibt: F-08 ISBAR/WHO High-5s (in keinem Korpus). |
 
 ---
 
@@ -66,7 +67,7 @@
 
 ### F-03: Pflichtinhalte der Dokumentation
 
-**Fakt:** Dokumentiert werden alle pflegerelevanten Informationen: durchgeführte Maßnahmen, Messwerte/Beobachtungen (Puls, Blutdruck, Temperatur, Haut, Verhalten), ärztliche Anordnungen und deren Umsetzung, Reaktionen des Patienten, Abweichungen von der Planung und Besonderheiten (Stürze, Unfälle). Privatmeinungen, Wertungen und Spekulationen gehören nicht hinein.
+**Fakt:** Dokumentiert werden alle pflegerelevanten Informationen: durchgeführte Maßnahmen, Messwerte/Beobachtungen (Puls, Blutdruck, Temperatur, Haut, Verhalten), ärztliche Anordnungen und deren Umsetzung, Reaktionen des Patienten, Abweichungen von der Planung und Besonderheiten (z. B. Stürze). Privatmeinungen, Wertungen und Spekulationen gehören nicht hinein.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Handlung
@@ -86,7 +87,10 @@
 - Zitat: "sämtliche aus fachlicher Sicht für die derzeitige und künftige Behandlung wesentlichen Maßnahmen und deren Ergebnisse aufzuzeichnen, insbesondere die Anamnese, Diagnosen, Untersuchungen, Untersuchungsergebnisse, Befunde, Therapien und ihre Wirkungen, Eingriffe und ihre Wirkungen, Einwilligungen und Aufklärungen." (§ 630f Abs. 2 BGB — gesetzliche Pflichtinhalte: wesentliche Maßnahmen + Ergebnisse, Anamnese, Diagnosen, Untersuchungen, Untersuchungsergebnisse, Befunde, Therapien + Wirkungen, Eingriffe + Wirkungen, Einwilligungen, Aufklärungen)
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Dokumentation der Hautsituation eines Menschen erfordert bei Abweichungen vom Normalzustand eine genaue Beschreibung der Veränderung und ihrer Lokalisation." (Hautzustand als eigenständiger Dokumentations-Inhalt)
-- ⚠️ BLEIBT (2 Sub-Claims) — "Abweichungen von der Planung" als eigenständiger Dokumentations-Pflichtinhalt ist im Korpus nur im Kontext der Charting-by-Exception-Formulare belegt, nicht als allgemeiner Pflichtinhalt; "Unfälle" als generischer Begriff ist nicht verbatim — nur Sturzereignisprotokoll. Teilaussagen auf die belegten Inhalte reduzieren oder Leitfaden beschaffen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Abweichungen sind je nach Bedarf und Tagesform des Pflegeempfängers immer möglich. Pflegefachkräfte dokumentieren diese, um sie bei der abschließenden Bewertung der" / "Planung zu berücksichtigen." (Abweichungen von der Planung als Dokumentations-Inhalt — Kap. Pflegeprozess, Maßnahmenplanung)
+- Zitat: "Die Durchführung und Abweichungen davon müssen dokumentiert werden." (Pflegeprozess Schritt 5: Durchführung UND Abweichungen davon sind dokumentationspflichtig)
+- AUFGELÖST (2026-06-11): Teilaussage "Abweichungen von der Planung" jetzt verbatim via I Care Pflege belegt (nicht mehr nur Charting-by-Exception-Kontext). Teilaussage "Unfälle" als generischer Begriff bleibt korpus-unbelegt (nur Sturzereignisprotokoll + Arbeitsunfall beim Durchgangsarzt) — Fakt entschärft auf "(z. B. Stürze)".
 **Praxisfehler:** Wertungen ("Patient ist unkooperativ") statt beobachtbarer Fakten ("verweigerte die Mobilisation mit den Worten...").
 
 **Misconceptions:**
@@ -97,7 +101,7 @@
 
 ### F-04: Pflegebericht-Regeln
 
-**Fakt:** Der Pflegebericht ist der narrative Teil der Dokumentation. Er muss chronologisch (mit Datum, Uhrzeit, Handzeichen), sachlich (nur beobachtbare Fakten), wertfrei (keine Persönlichkeitsurteile), in der Ich-Form und konkret (Zahlen, Zeiten, wörtliche Zitate) geführt werden.
+**Fakt:** Der Pflegebericht ist der narrative Teil der Dokumentation. Er muss chronologisch (mit Datum, Uhrzeit, Handzeichen), sachlich (nur beobachtbare Fakten), wertfrei (keine Persönlichkeitsurteile) und konkret (Zahlen, Zeiten, wörtliche Zitate) geführt werden; wer gehandelt hat, muss erkennbar sein. Merkregel (didaktisch, korpus-unbelegt): Die Ich-Form bzw. Aktiv-Formulierung macht den Handelnden eindeutig — Passiv ("wurde mobilisiert") verschleiert ihn.
 
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Handlung
@@ -113,12 +117,14 @@
 - Zitat: "Eintragungen in den Pflegebericht, in" / "dem Tatsächliches festgehalten wird" (sachlich = nur Tatsächliches, nicht Spekulation)
 - Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
 - Zitat: "wertfreie Beschreibung" (Kap. 3.6.2 — Anforderungen an die Dokumentation; steht als eigenständiger Bullet in der Liste der Dokumentationsanforderungen)
-- ⚠️ BLEIBT (1 Sub-Claim) — "in der Ich-Form" ist im Korpus nicht verbatim als Anforderung für den Pflegebericht belegt. Teilaussage entschärfen oder konkreten Dokumentations-Leitfaden beschaffen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "kurz, prägnant und wertfrei wiedergeben und mit Datum, ggf. Uhrzeit" / "und Handzeichen versehen werden." (Kap. Pflegedokumentation, Anforderungen — kurz/prägnant/wertfrei + Datum/Uhrzeit/Handzeichen)
+- AUFGELÖST (2026-06-11): Teilaussage "in der Ich-Form" aus dem Fakt-Satz entfernt und als didaktische Merkregel gekennzeichnet — in keinem Korpus (I Care Pflege, Pflege heute, Examen kompakt, Prüfungswissen) als Anforderung an den Pflegebericht belegt; belegt ist nur das Prinzip, dass der Handelnde erkennbar sein muss (Pflege heute: "Wer gemessen hat, dokumentiert den gemessenen Wert").
 **Praxisfehler:** Persönlichkeitsurteile ("stur", "schwierig") und Passiv-Formulierungen ("wurde mobilisiert"), die verschleiern, wer gehandelt hat.
 
 **Misconceptions:**
 - `M1`: **"Im Pflegebericht schreibe ich auch meine Einschätzung der Persönlichkeit"** — Der Bericht ist wertfrei; statt "schwierig" das beobachtbare Verhalten beschreiben.
-- `M2`: **"Ich schreibe im Passiv: 'Der Patient wurde mobilisiert.'"** — Passiv verschleiert den Handelnden; die Ich-Form ist rechtlich klarer.
+- `M2`: **"Ich schreibe im Passiv: 'Der Patient wurde mobilisiert.'"** — Passiv verschleiert den Handelnden; wer gehandelt hat, muss erkennbar sein (Merkregel: Ich-/Aktiv-Form).
 - `M3`: **"Ein Pflegebericht ist nur bei Problemen nötig"** — Er wird regelmäßig geführt und dokumentiert auch Normalverläufe.
 
 ---
@@ -167,7 +173,9 @@
 - Zitat: "hebt die Personenzentrierung" (Personenzentrierung)
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "2016 wurde in vielen Einrichtungen das" (Jahresangabe 2016 verbatim — Pflege heute Kap. 1.10.4, Satz über Einführung des Strukturmodells in der Altenpflege)
-- ⚠️ BLEIBT (1 Sub-Claim) — die vier Bestandteile SIS / Maßnahmenplan / Berichteblatt / Evaluation sind in Pflege heute Kap. 1.10.4 beschrieben, aber nicht als geschlossene Vier-Teile-Liste verbatim — als Konzept-Aussage führen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Pflegeprozess wurde auf 4 Schritte reduziert (SIS, Maßnahmenplanung, Pflegebericht zur Verlaufsdokumentation, Evaluation)" (Kap. Pflege als Prozess gestalten — geschlossene Vier-Teile-Liste verbatim; I Care nennt den dritten Baustein "Pflegebericht zur Verlaufsdokumentation", das Strukturmodell-Papier "Berichteblatt")
+- AUFGELÖST (2026-06-11): Die vier Bestandteile sind jetzt als geschlossene Liste verbatim belegt (I Care Pflege). Hinweis: I Care datiert das Strukturmodell "seit 2015", Pflege heute die breite Einführung in Einrichtungen auf 2016 — kein Widerspruch (Entwicklung vs. Implementierung).
 **Praxisfehler:** "Bericht nur bei Abweichungen" wird als "tagelang gar nichts dokumentieren" missverstanden — durchgeführte Maßnahmen werden weiterhin quittiert.
 
 **Misconceptions:**
@@ -220,7 +228,7 @@
 
 ### F-09: Übergabeformen (mündlich, schriftlich, Bedside)
 
-**Fakt:** Es gibt drei Übergabeformen: mündlich (schnell, Rückfragen möglich, aber fehleranfällig und ohne Patientenbezug), schriftlich (immer verfügbar, rechtssicher, aber keine Rückfragen), Bedside-Handover am Bett (Patient wird einbezogen, kann Angaben korrigieren, Sicherheit steigt, dauert aber länger). Best Practice ist die Kombination, mit Patienteneinbeziehung bei der Übergabe.
+**Fakt:** Übergabeformen: mündlich (die Regel, meist üblich), schriftlich (Inhalt später nachvollziehbar, aber aufwendiger), patientennah am Bett/Bedside (Patient kann direkt nachfragen, fehlende oder unklare Angaben ergänzen und lernt die zuständige Pflegefachkraft kennen) sowie patientenfern (auch noch nicht mitteilbare Informationen besprechbar, aber störanfällig). Mischformen sind möglich; der DNQP-Expertenstandard empfiehlt die Pflegeübergabe unter Einbeziehung des Patienten.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Klassifikation
@@ -233,7 +241,13 @@
 - Zitat: "patientenferne Übergabe (z.B. im Stationszimmer)" (Kap. 3.6.4 — Form ohne Patienteneinbeziehung)
 - Zitat: "patientennahe Übergabe (z.B. am Bett des Pflegeempfängers)" (Kap. 3.6.4 — Bedside-Äquivalent mit Patienteneinbeziehung)
 - Zitat: "mündlich (die Regel)" (Kap. 3.6.4 — Standardform)
-- ⚠️ BLEIBT (Vor-/Nachteile-Klassifikation) — die Vor-/Nachteile-Tabelle für die drei Übergabeformen (mündlich/schriftlich/Bedside) ist im Korpus nicht verbatim belegt. Aussage auf die belegten Formen reduzieren oder DBfK-Übergabe-Empfehlung beschaffen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Meist ist eine mündliche Übergabe" (mündlich = übliche Form; Forts. im Korpus: "üblich")
+- Zitat: "Eine schriftliche Übergabe hat den Vorteil, dass zu einem" / "späteren Zeitpunkt der Inhalt der Übergabe nachvollzogen" / "werden kann – allerdings ist sie aufwendiger." (schriftlich: Vorteil Nachvollziehbarkeit, Nachteil Aufwand — verbatim)
+- Zitat: "Dieser hat Gelegenheit, direkt nachzufragen oder noch fehlende oder bislang unklar gebliebene Informationen zu ergänzen. Und er" / "lernt nicht zuletzt die für ihn ab jetzt zuständige Pflegefachkraft kennen." (Übergabe direkt am Pflegeempfänger: Patient fragt nach, ergänzt, lernt zuständige Pflegefachkraft kennen)
+- Zitat: "sind Störungen von außen" / "recht häufig." (patientenferne Übergabe: Nachteil häufige Störungen)
+- Zitat: "Gemischte Formen • Möglich sind Mischformen." (Mischformen möglich)
+- AUFGELÖST (2026-06-11): Vor-/Nachteile der Übergabeformen jetzt verbatim via I Care Pflege (Kap. Pflegedokumentation und Pflegeübergabe) belegt. Korpus-unbelegte Adjektive des Alt-Fakts ("fehleranfällig", "rechtssicher", "Sicherheit steigt", "dauert länger") entschärft und durch die belegten Vor-/Nachteile ersetzt.
 **Praxisfehler:** Bedside-Handover wird aus Angst vor Schweigepflichtverletzung gemieden, statt im Mehrbettzimmer leise und sensibel durchgeführt zu werden.
 
 **Misconceptions:**
@@ -261,7 +275,12 @@
 - Zitat: "so korrigieren, dass der ursprüngliche Text lesbar bleibt" (Kap. 3.6.2 — Anforderung: Fehler-Korrekturen müssen den Original-Text lesbar lassen)
 - Quelle: `leitlinien-volltext/bgb-630f.txt`
 - Zitat: "Berichtigungen und Änderungen von Eintragungen in der Behandlungsakte sind nur zulässig, wenn neben dem ursprünglichen Inhalt erkennbar bleibt, wann sie vorgenommen worden sind." (§ 630f Abs. 1 S. 2 BGB — gesetzliche Grundlage: Korrekturen erfordern Lesbarkeit des Originals + Zeitstempel)
-- ⚠️ BLEIBT (1 Sub-Claim) — "Rückdatieren unzulässig" sowie das konkrete Handzeichen-Erfordernis bei Papier-Korrekturen sind im Korpus nicht als eigenständige Regel verbatim belegt. § 630f Abs. 1 S. 2 BGB impliziert das Verbot (fehlender Zeitstempel = unzulässige Änderung), aber "Rückdatieren" als Begriff nicht verbatim — Dokumentations-Leitfaden beschaffen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "nicht nachträglich gelöscht oder ohne Kennzeichnung geändert werden" (Kap. Pflegedokumentation, "Änderungen" — Eintragungen dürfen nicht ohne Kennzeichnung geändert werden)
+- Zitat: "Nachtragungen können erfolgen, müssen allerdings als solche gekennzeichnet sein und mit dem korrekten Datum versehen" (Nachtragungen nur mit korrektem Datum = Rückdatieren unzulässig; "Rückdatieren" als Wort nicht verbatim, Regel inhaltlich vom Verbatim-Satz getragen)
+- Zitat: "Fehlerhafte Dokumentation darf nicht komplett gelöscht werden, z. B. durch TippEx, sondern sollte durchgestrichen werden. Und zwar so, dass der ursprüngliche" / "Text noch lesbar ist, aber dennoch klar ist, dass er nicht gilt." (Tippex unzulässig, durchstreichen, Original lesbar — verbatim)
+- Zitat: "kurz, prägnant und wertfrei wiedergeben und mit Datum, ggf. Uhrzeit" / "und Handzeichen versehen werden." (allgemeine Anforderung: jede Eintragung — damit auch die Korrektur — mit Datum, ggf. Uhrzeit und Handzeichen)
+- AUFGELÖST (2026-06-11): "Rückdatieren unzulässig" und Handzeichen-Erfordernis jetzt via I Care Pflege gedeckt (Nachtragungen als solche kennzeichnen + korrektes Datum; Eintragungen mit Datum/Handzeichen). § 630f Abs. 1 S. 2 BGB bleibt die gesetzliche Grundlage.
 **Praxisfehler:** Tippex oder Überkleben "weil die Korrektur ja stimmt" — macht das Original unleserlich und wirkt wie Manipulation.
 
 **Misconceptions:**

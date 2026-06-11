@@ -7,30 +7,38 @@
 | cluster | D (Ernährung) |
 | geschätzteUE | 7 |
 | wissensart | handlung |
-| quellen | Pflege heute 7. Aufl. Kap. 7 (Ernährung; Schlucken und Schlucktraining; Aspirationsprophylaxe); Expertenstandard Ernährungsmanagement (DNQP); IDDSI 2019; GUSS (Trapl et al. 2007); DGG/DGN S1-Leitlinie Neurogene Dysphagie 2020; Hoehl/Kullick „Gesundheits- und Kinderkrankenpflege" 5. Aufl. (Volltext) |
+| quellen | Pflege heute 7. Aufl. Kap. 7 (Ernährung; Schlucken und Schlucktraining; Aspirationsprophylaxe); I Care Pflege 2020 Kap. 18.9 (Essen anreichen) + Kap. 52 (Schlaganfall); Expertenstandard Ernährungsmanagement (DNQP); IDDSI 2019; GUSS (Trapl et al. 2007); DGG/DGN S1-Leitlinie Neurogene Dysphagie 2020; Hoehl/Kullick „Gesundheits- und Kinderkrankenpflege" 5. Aufl. (Volltext) |
 | einträge | 13 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
-| grounding-update | 2026-06-11 (⚠️-Auflösung: kinderkrankenpflege-volltext, icare-examen-kompakt-volltext, pruefungswissen-volltext geprüft) |
+| grounding-update | 2026-06-11 Welle 2 (icare-pflege-volltext erschlossen): F-01 SACHKORREKTUR 60°→belegte 70° (Kopfteil, I Care) + Rückenlage-Kontraindikation + Linksseitenlage-Ausnahme; F-09 (gleiche Ebene, keine Gespräche beim Essen) + F-10 (spielerisch, kein Druck) voll belegt; F-08 Quellen-Divergenz Strohhalm dokumentiert; F-11/F-12 teilbelegt (⚠️ eng gezogen: nur „biografie-vertraut" als Wortverbindung bzw. „Lippenverschluss"); F-12 Nachsitzzeit als Quellen-Spanne 20-30 Min. Offen: F-05 GUSS-Stufenfolge, F-06 IDDSI-Bereichsgrenzen, F-07 Quellzeit + Kohlensäure-Verbot, F-10 Kinderärztin-Eskalation — im gesamten Korpus nicht verbatim. |
 
 ---
 
 ### F-01: Sitzposition über 60° als Aspirationsschutz
 
-**Fakt:** Vor dem Anreichen muss der Oberkörper mindestens 60° aufrecht sein (besser 90°). Eine aufrechte Körperhaltung unterstützt den physiologischen Transportweg der Nahrung durch die Speiseröhre und verhindert ein Verschlucken (Schwerkraft leitet den Bolus zum Ösophagus statt zur Trachea). Essen im Liegen ist kontraindiziert.
+**Fakt:** Vor dem Anreichen wird eine aufrechte (Sitz-)Position eingenommen — beim Essen sitzend im Bett ist das Kopfteil mindestens um 70° zu erhöhen, sodass aufrechtes Sitzen möglich ist. Eine aufrechte Körperhaltung unterstützt den physiologischen Transportweg der Nahrung durch die Speiseröhre und verhindert ein Verschlucken (Schwerkraft leitet den Bolus zum Ösophagus statt zur Trachea). Essen in Rückenlage ist wegen der hohen Aspirationsgefahr kontraindiziert. Ausnahme: Darf der Patient nur mit flachem Oberkörper liegen (z. B. nach Wirbelsäulen-OP), wird die Nahrung bevorzugt in Linksseitenlage eingenommen (der Magenkorpus liegt linkslateral).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 2-3 (Verstehen, Anwenden)
-**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7 Ernährung; DGE 2024)
+**Primärquelle:** (Pflege heute 7. Aufl., Kap. 7 Ernährung; I Care Pflege 2020, Kap. 18.9.5)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "eine aufrechte Körperhaltung den physiologischen Transportweg der Nahrung durch die Speiseröhre unterstützt und ein Verschlucken verhindert" ✅ MATCH (stützt die aufrechte Position generell)
 - Zitat: "Entsprechend helfen die Pflegenden den Patienten dabei, diese Position zum Essen einzunehmen" ✅ MATCH
-- ⚠️ **Der konkrete Schwellenwert „mindestens 60° (besser 90°)" ist im Korpus NICHT verbatim belegt** — Pflege heute spricht nur von „aufrechter Körperhaltung"/„aufrechter Sitzposition", nennt keinen Gradwert für die orale Nahrungsaufnahme. Quelle beschaffen: DGG/DGN S1-Leitlinie Neurogene Dysphagie 2020 oder DGE-Positionierungsempfehlung. Bis dahin im Schüler-Content nur als „aufrecht sitzen, nicht im Liegen" formulieren oder den Gradwert als „häufige Praxisempfehlung (≥60°)" kennzeichnen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Das Kopfteil sollte mind. um 70° erhöht sein und ein aufrechtes Sitzen ermöglichen" — belegt den konkreten Gradwert für die sitzende Position im Bett
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Auf keinen Fall sollten die Pflegeempfänger die Nahrung auf dem Rücken liegend zu sich nehmen. Die Aspirationsgefahr ist dabei viel zu hoch." — belegt die Kontraindikation der Rückenlage
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "die Nahrung auf der linken Seite liegend einzunehmen" — belegt die Linksseitenlage als Ausnahme bei erzwungener Flachlage (Quelltext: "Darf der Pflegeempfänger nur mit flachem Oberkörper liegen … Häufig empfinden Pflegeempfänger es als angenehmer, …")
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Pflegeempfänger bei der Einnahme einer aufrechten Position unterstützen" — belegt die aufrechte Position als Grundsatz beim Essenreichen
+- SACHKORREKTUR (2026-06-11): Der frühere Schwellenwert „mindestens 60° (besser 90°)" war im gesamten Korpus nicht belegt. I Care 2020 nennt als konkreten, belegten Wert „Kopfteil mind. um 70° erhöht". Zudem war „Essen im Liegen ist kontraindiziert" zu absolut: Kontraindiziert ist die Rückenlage; bei erzwungener Flachlage ist die Linksseitenlage die belegte Ausnahme. Fakt, Primärquelle und M1 korrigiert. ⚠️ aufgelöst.
 **Praxisfehler:** Nur den Kopf hochlagern statt den ganzen Oberkörper aufzurichten.
 
 **Misconceptions:**
-- `M1`: **"Der Patient kann auch im Liegen essen, Hauptsache der Kopf ist leicht erhöht"** — Im Liegen läuft der Bolus Richtung Trachea; der ganze Oberkörper muss über 60° aufrecht sein. Fachbegriff: "Flachlagerungs-Irrtum".
+- `M1`: **"Der Patient kann auch im Liegen essen, Hauptsache der Kopf ist leicht erhöht"** — In Rückenlage läuft der Bolus Richtung Trachea (hohe Aspirationsgefahr); zum Essen aufrecht sitzen, im Bett das Kopfteil mind. 70° erhöhen. Fachbegriff: "Flachlagerungs-Irrtum".
 - `M2`: **"Die Temperatur ist egal, der Patient sagt wenn es zu heiß ist"** — Viele Patienten (Demenz, Schlaganfall mit gestörter Sensibilität) können das nicht zuverlässig melden; Temperaturkontrolle am Innenarm ist Pflegeaufgabe.
 
 ---
@@ -188,7 +196,12 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "und Trinkgefäße mit einem engen Durchmesser sind nicht geeignet, da der Kopf zum Trinken in den Nacken gelegt werden muss" ✅ MATCH (stützt Reklinations-Begründung)
 - Zitat: "Besser sind Gefäße mit Nasenausschnitt" ✅ MATCH
-- Hinweis: „Sicherheitstrinkbecher (definierte Menge pro Schluck)" und „Strohhalm nur auf Anordnung" sind nicht verbatim belegt — als didaktische Ergänzung kennzeichnen, nicht als Zitat.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "muss der Pflegeempfänger den Kopf nach hinten überstrecken. Dadurch erhöht sich das Risiko einer Aspiration" — belegt die Reklinations-Begründung zusätzlich am Schnabelbecher (Quelltext: das Strecken des Kopfes begünstigt das Öffnen des Kehlkopfdeckels)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Verzichten Sie auf den Schnabelbecher" — belegt die Empfehlung gegen den Schnabelbecher (Merke-Kasten; Ausnahme: Pflegeempfänger verlangt ihn aus Gewohnheit)
+- QUELLEN-DIVERGENZ (dokumentiert 2026-06-11): I Care 2020 nennt den Strohhalm ausdrücklich als gute Trinkhilfe ("so ist die beste Trinkhilfe ein Strohhalm"; "Auch Menschen mit kognitiver Beeinträchtigung können einen Strohhalm meist sicher anwenden") — die hier formulierte Einschränkung „Strohhalm nur auf logopädische/ärztliche Anordnung" gilt dysphagie-spezifisch (Saugkontrolle bei Schluckstörung) und ist im Korpus nicht verbatim belegt. Im Schüler-Content differenzieren: ohne Dysphagie ist der Strohhalm eine gute Alternative zum Schnabelbecher; bei diagnostizierter Dysphagie Einsatz nur nach logopädischer Einschätzung (fachliche Ableitung, Quelle beschaffen: DGN/DGG S1-LL 2020).
+- Hinweis: „Sicherheitstrinkbecher (definierte Menge pro Schluck)" ist nicht verbatim belegt — als didaktische Ergänzung kennzeichnen, nicht als Zitat.
 **Praxisfehler:** Strohhalm als pauschale Standardlösung — manche Patienten saugen zu schnell.
 
 **Misconceptions:**
@@ -213,7 +226,11 @@
 - Quelle: `leitlinien-volltext/bgb-1827.txt`
 - Zitat: "Bürgerliches Gesetzbuch (BGB) § 1827 Patientenverfügung; Behandlungswünsche oder mutmaßlicher Wille des Betreuten"
 - Zitat: "Hat ein einwilligungsfähiger Volljähriger für den Fall seiner Einwilligungsunfähigkeit schriftlich festgelegt, ob er in bestimmte, zum Zeitpunkt der Festlegung noch nicht unmittelbar bevorstehende Untersuchungen seines Gesundheitszustands, Heilbehandlungen oder ärztliche Eingriffe einwilligt oder sie untersagt (Patientenverfügung), prüft der Betreuer, ob diese Festlegungen auf die aktuelle Lebens- und Behandlungssituation des Betreuten zutreffen. Ist dies der Fall, hat der Betreuer dem Willen des Betreuten Ausdruck und Geltung zu verschaffen." (stützt Selbstbestimmung/Untersagungsrecht; ein wörtliches „Zwangsfüttern verboten" steht in keinem Gesetz — im Schüler-Content als Ableitung aus Selbstbestimmung + Körperverletzung § 223 StGB formulieren)
-- Hinweis: Die Kommunikationsregeln (Autonomie wahren, Handlungen ankündigen, offene Fragen, nicht gleichzeitig sprechen+essen) sind didaktisch korrekt, im Ernährungs-Kapitel aber nur teils verbatim belegt (Zeit lassen/Pausen). „Nicht gleichzeitig sprechen und essen" ist als Aspirationslogik fachlich korrekt, hier aber nicht verbatim — als fachliche Ableitung kennzeichnen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Von Gesprächen während der Nahrungsaufnahme sollte abgesehen werden" — belegt „nicht gleichzeitig sprechen und essen" verbatim (I Care 2020, Pflege bei Schlaganfall, Unterstützen beim Essen und Trinken)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "sollte sich die Pflegefachkraft immer auf der gleichen Ebene wie der Pflegeempfänger befinden" — belegt die Augenhöhen-/Ebenen-Regel (Quelltext-Begründung: "damit er keine unphysiologische Kopfhaltung einnehmen muss")
+- Hinweis (aktualisiert 2026-06-11): „Nicht gleichzeitig sprechen und essen" und „gleiche Ebene/Augenhöhe" sind mit I Care 2020 nun verbatim belegt. Die übrigen Kommunikationsregeln (Autonomie wahren, Handlungen ankündigen, offene Fragen) sind didaktisch korrekt, aber nur teils verbatim belegt (Zeit lassen/Pausen) — als fachliche Ableitung kennzeichnen.
 **Praxisfehler:** Beim Kauen/Schlucken plaudern (Aspirationsrisiko) oder bei Ablehnung weiterfüttern (Paternalismus).
 
 **Misconceptions:**
@@ -240,7 +257,18 @@
 - Zitat: "Es werden jeweils kleine Portionen und Schlucke gereicht" ✅ MATCH (stützt „kleine Portionen")
 - Zitat: "Die Portionen werden nach Wunsch gerichtet und das Kind bestimmt die Reihenfolge und Geschwindigkeit der Nahrungsaufnahme" ✅ MATCH (stützt Wunschkost + Autonomie des Kindes beim Essen)
 - Zitat: "empfiehlt es sich, ihm seine altersgemäße Wunschkost in vielen kleinen Mahlzeiten anzubieten" ✅ MATCH (stützt Wunschkost + kleine Portionen häufiger)
-- ⚠️ **Teilaussagen „spielerisch anreichen", „kein Druck/keine Bestrafung" und „bei anhaltender Verweigerung Kinderärztin informieren" NICHT im Korpus belegt** — Hoehl/Kullick belegen die Entwicklungsnormalität und kleine Portionen/Wunschkost, nennen aber weder eine spielerische Anreichungstechnik noch ein Druckverbot noch die Empfehlung zur Kinderärztin bei anhaltender Verweigerung in dieser Form verbatim. Bis dahin im Schüler-Content als pädiatrische Praxisempfehlung kennzeichnen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "indem sie spielerische Elemente in die Nahrungsgabe einbauen" — belegt „spielerisch anreichen" verbatim (I Care 2020, Kap. 18.4.2, Beispiel Tonsillektomie: Ablenkung des Kindes)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Druck bei der Nahrungsaufnahme kann zu einem gesteigerten Protest bis zu Verweigerung führen!" — belegt das Druckverbot mit Begründung
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Bei Normalgewicht und gesunden Kindern braucht eine phasenweise Ablehnung bestimmter Lebensmittel nicht zu beunruhigen" — belegt zusätzlich die Entwicklungsnormalität phasenweiser Ablehnung
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Die anreichende Pflegefachkraft bzw. die Bezugsperson sitzt auf Augenhöhe zum Kind" — belegt die Augenhöhen-Regel auch für Kinder
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Das Kind bestimmt wie schnell das Essen angereicht wird" — belegt die Tempo-Autonomie des Kindes
+- Hinweis (aktualisiert 2026-06-11): „Spielerisch anreichen" und „kein Druck" sind mit I Care 2020 nun verbatim belegt.
+- ⚠️ Nur die Teilaussage „bei anhaltender Verweigerung über mehrere Mahlzeiten Kinderärztin informieren" bleibt im gesamten Korpus (inkl. I Care 2020, Hoehl/Kullick) nicht verbatim belegt — fachlich plausibel (Eskalationslogik), im Schüler-Content als pädiatrische Praxisempfehlung kennzeichnen oder Quelle beschaffen.
 **Praxisfehler:** Druck oder Bestrafung ("kein Nachtisch, wenn du das nicht isst").
 
 **Misconceptions:**
@@ -265,7 +293,15 @@
 - Zitat: "oder auch Speisen aufgrund von Demenz" ✅ MATCH (im Quelltext: „… nicht identifizieren können, können die Speisen durch Anfassen ‚begreifen‘" — stützt Agnosie-Anpassung)
 - Zitat: "Besonders bei dementen Menschen wurden in den letzten Jahren erfolgreich Ansätze mit Fingerfood" ✅ MATCH (stützt „Fingerfood statt Besteck bei Demenz")
 - Zitat: "Konsistenzen nicht mischen, z. B. Nudelsuppe oder Joghurt mit Früchten" ✅ MATCH (aus Kap. 7.11 „Auswahl der Speisen" — stützt die Empfehlung, keine Mischkonsistenzen anzubieten; deckt das Prinzip „eine erkennbare Komponente/Konsistenz statt Mischungen" inhaltlich ab)
-- ⚠️ **Teilaussage „biografie-vertraute Speisen" NICHT im Korpus verbatim belegt** — Pflege heute nennt „Vorlieben des Patienten berücksichtigen, z. B. Lieblingsessen" (Kap. 7 allgemein) und „Lieblingsessen" punktuell, aber keine verbatim Aussage über biografieorientierte Speisenauswahl speziell für Demenzpatienten. Quelle beschaffen: DNQP-Expertenstandard „Beziehungsgestaltung in der Pflege von Menschen mit Demenz" oder Böhm/Psychobiografisches Pflegemodell. Bis dahin im Schüler-Content als didaktische Anpassung kennzeichnen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Unterschiedliche Konsistenzen nicht mischen (Aspirationsgefahr!)" — belegt das Misch-Verbot zusätzlich mit Begründung (Aspirationsgefahr)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Speisen als Speisen erkannt werden" — belegt das Agnosie-Ziel der Speisenauswahl bei Demenz (I Care 2020, Schluckstörungen und Demenz: Maßnahmenliste)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Lebensmittel gereicht werden, die den Pflegeempfänger schmecken" — belegt die Orientierung an individuellen Geschmacksvorlieben bei Demenz
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Das Wissen über die Lebensgeschichte eines Menschen mit Demenz ist in vielen Bereichen wichtig" — belegt den Biografie-Zugang in der Demenzpflege allgemein (I Care 2020, Kap. „Über Biografie einen Zugang finden")
+- ⚠️ Die spezifische Verknüpfung „**biografie-vertraute Speisen**" bleibt als wörtliche Aussage unbelegt — belegt sind die Bausteine getrennt (Geschmacksvorlieben beim Essen bei Demenz + Biografie-Zugang in der Demenzpflege, beide I Care 2020). Im Schüler-Content als naheliegende Kombination kennzeichnen oder Quelle beschaffen (DNQP „Beziehungsgestaltung in der Pflege von Menschen mit Demenz" / Böhm).
 **Praxisfehler:** Aus Zeitgründen füttern, obwohl der Patient mit Fingerfood noch selbst essen könnte.
 
 **Misconceptions:**
@@ -276,7 +312,7 @@
 
 ### F-12: Beobachtung während des Essens + Nachsorge
 
-**Fakt:** Während des Anreichens beobachtet die Pflegefachperson parallel Mundbewegungen (Lippenverschluss, Kauen, Zungenbewegung, Taschenbildung), Schluckakt (Heben/Senken des Kehlkopfs, Stimme nach dem Schluck) und Atmung (Husten, Atemnot). Nach dem Essen: Patient noch etwa eine halbe Stunde aufrecht sitzen lassen, um eine Aspiration zu vermeiden.
+**Fakt:** Während des Anreichens beobachtet die Pflegefachperson parallel Mundbewegungen (Lippenverschluss, Kauen, Zungenbewegung, Taschenbildung), Schluckakt (Heben/Senken des Kehlkopfs, Stimme nach dem Schluck) und Atmung (Husten, Atemnot). Nach dem Essen: Patient noch ca. 20-30 Minuten aufrecht sitzen lassen, um Aspiration und Reflux zu vermeiden (Pflege heute: "etwa eine halbe Stunde"; I Care: "etwa 20 Minuten"). Nach der Mahlzeit Mund kontrollieren und Speisereste entfernen — Nahrungsreste können sich in den Wangentaschen ansammeln.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
@@ -287,12 +323,20 @@
 - Zitat: "Den Patienten nach dem Essen noch etwa eine halbe Stunde aufrecht sitzen lassen, um eine Aspiration zu vermeiden"
 - Zitat: "Beobachtung von Mundmotorik und Zungenbeweglichkeit, Muskeltonus im Gesicht, Fähigkeit zur Kehlkopfhebung" ✅ MATCH (stützt Beobachtung von Mundbewegung/Zungenbewegung + Heben des Kehlkopfs)
 - Zitat: "Husten nach dem Schlucken" ✅ MATCH (stützt Atmungs-/Hustenbeobachtung beim Schluckakt)
-- ⚠️ **Detail-Items „Lippenverschluss", „Taschenbildung" und „Stimme nach dem Schluck (feuchte/nasse Stimme)" NICHT verbatim im Korpus** — Pflege heute belegt Mundmotorik/Zungenbeweglichkeit/Kehlkopfhebung sowie „Stimmverschlechterung" (F-04), nicht aber diese drei exakten Beobachtungsbegriffe. Quelle beschaffen: DGN/DGG S1-Leitlinie „Neurogene Dysphagie" 2020 oder GUSS-Originalarbeit (Trapl et al. 2007, „voice quality" nach Schluck). Bis dahin im Schüler-Content als fachlich abgeleitete Beobachtungsmerkmale kennzeichnen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Nahrungsreste in den Wangentaschen ansammeln können" — belegt die Wangentaschen-Kontrolle nach dem Essen (I Care 2020, Schlaganfall-Kapitel; Quelltext: "Besonders wichtig ist es, Speisereste zu entfernen und die Wangen zu reinigen, da sich …")
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Der Betroﬀene sollte in Ruhe schlucken und nachschlucken können" — belegt die Beobachtung von Schlucken/Nachschlucken in Ruhe
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Gurgelnde Sprache, Stimmverschlechterung" — belegt die Stimm-Beobachtung als Dysphagie-/Aspirationszeichen (deckt „Stimme nach dem Schluck" inhaltlich)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "noch etwa 20 Minuten sitzen lassen, um einen Reflux zu verhindern" — I Care (Schlaganfall) nennt ca. 20 Minuten Nachsitzen; Pflege heute nennt "etwa eine halbe Stunde" (Beleg oben). Quellen-Spanne ehrlich ausweisen: 20-30 Min aufrecht bleiben.
+- ⚠️ Nur das Detail-Item „**Lippenverschluss**" bleibt als exakter Beobachtungsbegriff im Korpus unbelegt — Pflege heute belegt Mundmotorik/Zungenbeweglichkeit/Kehlkopfhebung, I Care Wangentaschen/Nachschlucken/Stimme. Quelle beschaffen: DGN/DGG S1-Leitlinie „Neurogene Dysphagie" 2020 oder GUSS-Originalarbeit (Trapl et al. 2007). Bis dahin als fachlich abgeleitetes Beobachtungsmerkmal kennzeichnen.
 **Praxisfehler:** Patient direkt nach dem Essen flach hinlegen (Reflux-/Aspirationsrisiko).
 
 **Misconceptions:**
 - `M1`: **"Wenn der Adamsapfel sich bewegt, ist alles sicher"** — Die Kehlkopfbewegung zeigt nur, dass geschluckt wurde, nicht wohin der Bolus ging; immer mehrere Zeichen prüfen (Stimm-Check, Mundkontrolle, Atmung). Fachbegriff: "Adamsapfel-Alleinkriterium".
-- `M2`: **"Nach dem Essen kann ich den Patienten direkt ins Bett legen"** — Der Oberkörper muss mindestens 30 Min hoch bleiben (Reflux-/Pneumonie-Risiko).
+- `M2`: **"Nach dem Essen kann ich den Patienten direkt ins Bett legen"** — Der Oberkörper muss noch ca. 20-30 Min hoch bleiben (Reflux-/Aspirations-/Pneumonie-Risiko).
 
 ---
 

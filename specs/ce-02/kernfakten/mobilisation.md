@@ -10,6 +10,7 @@
 | quellen | Pflege heute 7. Aufl. Kap. 9 Bewegung/Mobilisation; DNQP Expertenstandard Erhaltung und Förderung der Mobilität in der Pflege (2020); Bobath-Konzept (Bobath 1948 ff.); Kinästhetik (Hatch/Maietta 1982 ff.); BGW (2019) Rückengerechtes Arbeiten; ArbSchG/LasthandhabV; § 630d BGB |
 | einträge | 13 |
 | erstellt | 2026-06-10 (Dozentin A, quellengebunden aus bausteine-plan.md) |
+| grounding | 2026-06-11 (Zyklus 11, I-Care-Korpus): ⚠️ 9→5. Aufgelöst: F-03 (Bettkante-Kreislauf-Check via I Care belegt, 2-3-Min-Wert bleibt draußen), F-04 (Zeitfenster „OP-Tag abends, spätestens 1. post-OP-Tag morgens" via I Care verbatim), F-09 (§ 1/§ 5/§ 15 ArbSchG via pruefungswissen + examen-kompakt; SACHKORREKTUR Statistik: Frühberentungs-Claim ersetzt durch TK-2019-Fehltage-Statistik aus I Care), F-11 (alle unbelegten Werte waren bereits entfernt, Rest-Text voll belegt). Verbleibend ⚠️: F-01 (10 %-Muskelmasse-Wochenwert), F-02 (exakte 6-Kriterien-Benennung DNQP Mobilität), F-05 (nur noch „Stoppfunktion mit Fuß" — Schulter-Griff jetzt via I-Care-Bobath belegt), F-06 (Gehstock-Hand-Regel), F-07 (nur noch BGW-40-kg + Stehlifter — „zu zweit" jetzt belegt). Bonus: Esslinger Transferskala via pruefungswissen belegt (F-13). |
 
 ---
 
@@ -25,6 +26,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Bewegungsmangel kann rasch Komplikationen verursachen"
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "Altersbedingter degenerativer Abbau der Skelettmuskulatur"  (I Care Krankheitslehre: Definition Sarkopenie — stützt den Fachbegriff im Fakt-Text; der Wochen-Prozentwert bleibt weiterhin unbelegt, siehe Quelle-beschaffen-Hinweis oben)
 **Praxisfehler:** Mobilisation wird mit „Laufen" gleichgesetzt; kleine aktive Bewegungen (Drehen, Aufsetzen) werden nicht als Mobilisation gewertet.
 
 **Misconceptions:**
@@ -66,7 +69,7 @@
 ### F-03: Stufenaufbau der Mobilisation
 
 **Fakt:** Mobilisation folgt einem Stufenaufbau vom Liegen zum Gehen: 1. Bewegung im Bett, 2. Aufsitzen an der Bettkante (mit Orthostase-Check: kurz sitzen lassen, RR und Puls kontrollieren), 3. Stehen vor dem Bett, 4. Gehen am Platz, 5. Gehstrecke. Jede Stufe wird erst stabil beherrscht, bevor die nächste begonnen wird. Beim Aufsetzen an die Bettkante hilft die Pflegende dem Patienten, sich auf die Seite zu drehen und sich mit den Armen abzustützen.
-⚠️ Quelle beschaffen (konkrete Primärquelle): Die konkrete Wartezeit „2-3 Min sitzen" als Orthostase-Check an der Bettkante ist im Korpus nicht verbatim belegbar (Pflege heute beschreibt das Bettkante-Aufsetzen und die Puls-/RR-Kontrolle vor Mobilisation, aber ohne diese 2-3-Min-Angabe; der Schellong-Test nennt andere Mess-Intervalle: liegen 5–10 Min, alle 1–2 Min messen). Wert generisch zu „kurz sitzen lassen" entschärft; falls 2-3 Min ausgespielt werden soll, geriatrische/physiotherapeutische Primärquelle nachziehen.
+> Hinweis (aufgelöst 2026-06-11): Die frühere Detail-Angabe „2-3 Min sitzen" bleibt entfernt (kein Korpusbeleg; Schellong-Test nennt andere Intervalle). Das entschärfte Vorgehen — an der Bettkante sitzen lassen, Kreislauf prüfen, nicht allein lassen — ist jetzt via I Care verbatim belegt (siehe Belege). Falls je eine fixe Minuten-Angabe ausgespielt werden soll: geriatrische/physiotherapeutische Primärquelle nachziehen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Handlung
@@ -75,6 +78,12 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Zum Aufsetzen an die Bettkante hilft die"
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Ist er kreislaufstabil, sollten sie ihn"  (I Care Frühmobilisation: erst Bettkante, erst bei Kreislaufstabilität weiter in den Stand — belegt den Stufen-Check)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "er darf nicht alleine an der Bettkante sitzen gelassen werden"  (I Care: Patient an der Bettkante stützen, nicht allein lassen)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Es besteht die Gefahr einer Kreislaufschwäche"  (I Care: Begründung des Kreislauf-Checks an der Bettkante)
 **Praxisfehler:** Orthostase-Check an der Bettkante wird übersprungen, vor allem nach mehreren Tagen Bettruhe; Stufen werden bei motivierten Patienten übersprungen.
 
 **Misconceptions:**
@@ -86,8 +95,8 @@
 
 ### F-04: Frühmobilisation als wirksamste Einzelmaßnahme
 
-**Fakt:** Frühmobilisation (Bewegung früh nach OP oder akutem Ereignis, sofern stabil) wirkt zugleich prophylaktisch gegen mehrere Komplikationen: Thrombose (Gefäße), Pneumonie (Lunge), Dekubitus (Haut), Muskelabbau und Obstipation (Darm). Eine Frühmobilisation am ersten postoperativen Tag wird angestrebt — auch zur Dekubitus- und Pneumonieprophylaxe. Voraussetzung: Kreislauf stabil, Schmerzen niedrig, Patient wach und orientiert; die Pflegenden begleiten so lange beim Aufstehen, bis der Patient kreislaufstabil ist.
-⚠️ Quelle beschaffen / entschärft: (a) Die Superlativ-Formulierung „wirksamste Einzelmaßnahme der Pflege" ist im Korpus nicht belegbar — als Wertung entfernt. (b) Die feste Spanne „innerhalb der ersten 24-48 Stunden" ist im Korpus nicht verbatim belegt (Pflege heute: „am ersten postoperativen Tag wird angestrebt"); auf die belegte Aussage zurückgeführt. (c) Der Grenzwert „NRS ≤ 3" als Mobilisations-Voraussetzung ist im Korpus nicht belegbar — entfernt; für eine konkrete NRS-Schwelle DNQP-Schmerzmanagement/S3-Leitlinie Schmerz beschaffen.
+**Fakt:** Frühmobilisation (Bewegung früh nach OP oder akutem Ereignis, sofern stabil) wirkt zugleich prophylaktisch gegen mehrere Komplikationen: Thrombose (Gefäße), Pneumonie (Lunge), Dekubitus (Haut), Muskelabbau und Obstipation (Darm). Eine Frühmobilisation am ersten postoperativen Tag wird angestrebt — bei kleineren Eingriffen erfolgt sie meist noch am Operationstag abends, spätestens jedoch am ersten postoperativen Tag morgens. Voraussetzung: Kreislauf stabil, Schmerzen niedrig, Patient wach und orientiert; die Pflegenden begleiten so lange beim Aufstehen, bis der Patient kreislaufstabil ist, und achten v. a. auf die Kreislaufsituation.
+> Hinweis (aufgelöst 2026-06-11): (a) Die Superlativ-Formulierung „wirksamste Einzelmaßnahme der Pflege" bleibt entfernt (Wertung ohne Korpusbeleg). (b) Die frühere ungedeckte Spanne „24-48 Stunden" ist ersetzt durch die jetzt via I Care verbatim belegte Zeitangabe „meist noch am Operationstag abends, spätestens jedoch am ersten postoperativen Tag morgens". (c) Der Grenzwert „NRS ≤ 3" bleibt entfernt; für eine konkrete NRS-Schwelle DNQP-Schmerzmanagement/S3-Leitlinie Schmerz beschaffen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
@@ -98,6 +107,12 @@
 - Zitat: "Eine Frühmobilisation am ersten postoperativen Tag wird angestrebt"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "begleiten ihn so lange beim Aufstehen, bis er kreislaufstabil ist"  (belegt Voraussetzung Kreislaufstabilität + Begleitung)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Frühmobilisation meist noch am Operationstag abends, spätestens jedoch am ersten postoperativen Tag morgens"  (I Care: belegt das konkrete Zeitfenster bei kleineren Eingriffen)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Um postoperative Komplikationen wie Thrombose, Pneumonie oder Obstipation zu verhindern"  (I Care: belegt den Mehrfach-Prophylaxe-Effekt der Frühmobilisation)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Achten Sie bei der Frühmobilisation v. a. auf die Kreislaufsituation"  (I Care ACHTUNG-Box: Kreislauf als zentrales Überwachungskriterium)
 **Praxisfehler:** „Schon-Prinzip" — Patient wird nach OP oder schlechter Nacht liegen gelassen, statt früh zu mobilisieren.
 
 **Misconceptions:**
@@ -109,12 +124,13 @@
 
 ### F-05: Transfer Bett ↔ Stuhl und Angst vor Transfersituationen
 
-**Fakt:** Der Transfer Bett → Stuhl folgt 3 Phasen: Vorbereitung (Bett auf Hüfthöhe, Stuhl gebremst und nah, feste rutschfeste Schuhe, Schmerzen prüfen, Patient informieren, Hilfsmittel bereitlegen), Durchführung (Bettkante, Stoppfunktion mit Fuß, Patient greift an die Schulterblätter — NIE an den Hals, Gewichtsverlagerung nach Kinästhetik) und Nachbereitung (positionieren, Rufanlage in Reichweite, dokumentieren). Bewegungseingeschränkte Patienten haben oft Angst vor Transfersituationen und versuchen, diese zu vermeiden.
+**Fakt:** Der Transfer Bett → Stuhl folgt 3 Phasen: Vorbereitung (Bett auf Hüfthöhe, Stuhl gebremst und nah, feste rutschfeste Schuhe, Schmerzen prüfen, Patient informieren, Hilfsmittel bereitlegen), Durchführung (Bettkante, Stoppfunktion mit Fuß, Patient hält sich an der Schulter/den Schulterblättern der Pflegekraft fest — NIE am Hals, Gewichtsverlagerung nach Kinästhetik) und Nachbereitung (positionieren, Rufanlage in Reichweite, dokumentieren). Bewegungseingeschränkte Patienten haben oft Angst vor Transfersituationen und versuchen, diese zu vermeiden.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
 **Bloom-Potential:** 3 (Anwenden)
-⚠️ Quelle beschaffen (konkrete Primärquelle): Zwei Detail-Teilaussagen sind im Korpus (Pflege heute) NICHT verbatim belegbar: (a) die „Stoppfunktion mit dem Fuß" als benannte Transfer-Technik (Pflege heute belegt nur das Sichern/Bremsen des (Roll-)Stuhls, nicht eine fußbetätigte Stoppfunktion) und (b) die explizite Griff-Regel „Patient greift an die Schulterblätter [der Pflegekraft] — NIE an den Hals" (Pflege heute belegt nur, dass die *Pflegende* den *Patienten* unterhalb der Schulterblätter unterstützt; ein Griff des Patienten an den Hals der Pflegekraft bzw. dessen Verbot ist im Korpus nicht belegt). Für beide kinästhetik-/transfer-didaktische Regeln Primärquelle nachziehen (Hatch/Maietta Kinästhetik-Lehrbuch, BGW „Rückengerechtes Arbeiten"), bevor sie als Schüler-Inhalt (auch in M1) ausgespielt werden.
+⚠️ Quelle beschaffen (Rest, verengt 2026-06-11): Nur noch die „Stoppfunktion mit dem Fuß" als benannte Transfer-Technik ist im Korpus nicht belegbar (Pflege heute belegt nur das Sichern/Bremsen des (Roll-)Stuhls). Primärquelle nachziehen (Hatch/Maietta, BGW „Rückengerechtes Arbeiten"), bevor sie als Schüler-Inhalt ausgespielt wird.
+> Hinweis (aufgelöst 2026-06-11): Die Griff-Regel „Patient hält sich an der Schulter der Pflegekraft fest (nicht am Hals)" ist jetzt positiv via I Care belegt: Beim Aufsetzen an die Bettkante (Bobath) liegt die Hand des Patienten „auf der Schulter der Pflegefachkraft", deren Hände unter den Schulterblättern des Patienten. Das explizite Hals-Verbot bleibt didaktische Zuspitzung der belegten Positiv-Regel (Last über Halswirbelsäule = anatomische Begründung).
 
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 9.6; Hatch/Maietta Kinästhetik; DNQP 2020)
 **Beleg:**
@@ -122,6 +138,8 @@
 - Zitat: "Bewegungseingeschränkte Patienten haben oft Angst vor Transfersituationen"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "unterstützt ihn die Pflegende unterhalb der Schulterblätter"  (belegt: die Pflegende stützt den Patienten unterhalb der Schulterblätter)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Die weniger betroﬀene Hand liegt auf der Schulter der Pflegefachkraft, deren Hände liegen unter den Schulterblättern"  (I Care, Aufsetzen an die Bettkante nach Bobath: Patientenhand auf der SCHULTER der Pflegekraft — belegt die Positiv-Griff-Regel, siehe M1)
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "(Roll-)Stuhl steht nah neben dem Bett und ist gegen Wegrutschen oder Wegrollen gesichert"  (belegt Vorbereitung: Stuhl nah + gesichert/gebremst)
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
@@ -147,7 +165,7 @@
 
 ### F-06: Gehhilfsmittel nach Stabilität
 
-**Fakt:** Gehhilfsmittel unterscheiden sich nach Unterstützungsgrad: Gehstock (geringste Unterstützung), Unterarmgehstütze (UAG, Teilbelastung einer Seite nach Fraktur/OP), Rollator (4-rädriger Gehwagen mit großer Standfläche und Sitzmöglichkeit für unsichere Patienten) und Rollstuhl (bei fehlender Steh-/Gehfähigkeit, aber parallel weiter mobilisieren). Der Rollator setzt Kraft zum Stützen, Stehen und Gehen voraus. Beim Gehstock ist der Stock gleichzeitig mit dem erkrankten Bein aufzusetzen — was die Handwahl impliziert (gegenüberliegende, also gesunde Hand). ⚠️ Die Kern-Regel „Gehstock in die GESUNDE Hand" ist im Korpus nur indirekt erschließbar (Pflege heute: Stock wird gleichzeitig mit dem erkrankten Bein aufgesetzt) — die explizite Seitenregel (gesunde Hand) ist nicht verbatim belegbar. Beleg über physiotherapeutische Primärquelle (AWMF-Leitlinie/Hilfsmittel-Versorgung, Ergo-/Physiotherapie-Lehrbuch) nachziehen, bevor die Hand-Regel als abgeschlossenes Zitat ausgespielt wird.
+**Fakt:** Gehhilfsmittel unterscheiden sich nach Unterstützungsgrad: Gehstock (geringste Unterstützung), Unterarmgehstütze (UAG, Teilbelastung einer Seite nach Fraktur/OP), Rollator (4-rädriger Gehwagen mit großer Standfläche und Sitzmöglichkeit für unsichere Patienten) und Rollstuhl (bei fehlender Steh-/Gehfähigkeit, aber parallel weiter mobilisieren). Der Rollator setzt Kraft zum Stützen, Stehen und Gehen voraus. Beim Gehstock ist der Stock gleichzeitig mit dem erkrankten Bein aufzusetzen — was die Handwahl impliziert (gegenüberliegende, also gesunde Hand). ⚠️ Die Kern-Regel „Gehstock in die GESUNDE Hand" ist im Korpus nur indirekt erschließbar (Pflege heute: Stock wird gleichzeitig mit dem erkrankten Bein aufgesetzt) — die explizite Seitenregel (gesunde Hand) ist nicht verbatim belegbar (2026-06-11 erneut geprüft: auch I-Care-Trilogie + pruefungswissen ohne Seitenregel). Beleg über physiotherapeutische Primärquelle (AWMF-Leitlinie/Hilfsmittel-Versorgung, Ergo-/Physiotherapie-Lehrbuch) nachziehen, bevor die Hand-Regel als abgeschlossenes Zitat ausgespielt wird.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Klassifikation
@@ -158,6 +176,12 @@
 - Zitat: "setzt Kraft zum Stützen, Stehen"  (belegt die Rollator-Teilaussage)
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "dabei wird der Gehstock gleichzeitig mit dem erkrankten Bein aufgesetzt"  (belegt Stockrhythmus — impliziert gegenüberliegende/gesunde Hand)
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "stabiler Gehwagen mit Bremsen an den"  (I Care Examen kompakt, Rollator-Definition — Forts.: „Haltegriffen und Sitzfläche")
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Haltegriffen und Sitzfläche, der den Bewegungsradius"  (belegt Rollator-Merkmale: Bremsen an Haltegriffen + Sitzfläche + erweiterter Bewegungsradius)
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "gestreckten Armen auf der Handgelenkshöhe"  (I Care Examen kompakt, Gehhilfen-Einstellung: Handgriffe bei gestreckten Armen auf Handgelenkshöhe — belegt die Anpass-Regel in M2)
 **Praxisfehler:** Gehstock wird in die kranke Hand gegeben; Rollator wird nicht individuell angepasst (Griffhöhe, Bremsen, Reifendruck).
 
 **Misconceptions:**
@@ -170,7 +194,8 @@
 ### F-07: Patientenlifter beim Transfer
 
 **Fakt:** Der Patientenlifter ist das Standardhilfsmittel, wenn ein Patient nicht stehen kann und ein manueller Transfer nicht sicher möglich ist. Modelle: mobiler Standlifter mit Rollen, Deckenlifter. Beim Einsatz: technische Funktionen vor Gebrauch kennen, passenden Gurt wählen, Eigenbewegungen des Patienten in den Bewegungsablauf integrieren. Auch besonders schwergewichtige Menschen benötigen angepasste Hilfsmittel (Lagerungstücher, Gleitunterlagen, Spezialbetten, Patientenlifter wie Deckenlifter).
-⚠️ Quelle beschaffen (konkrete Primärquelle): (a) Die „Faustregel BGW ab ca. 40 kg" ist im Korpus NICHT belegbar — entfernt; falls als Schüler-Inhalt gewünscht, BGW-Publikation („Rückengerechtes Arbeiten"/Gefährdungsbeurteilung Pflege) beschaffen. (b) „Stehlifter (nutzt Reststandfähigkeit)" und „immer zu zweit arbeiten (eine führt, eine sichert)" als feste Regel sind im Korpus nicht verbatim — auf die belegten Lifter-Aussagen zurückgeführt. (c) „Manuelles Heben ist auch für junge … dauerhaft schädlich" → siehe F-09 (gehört zum Arbeitsschutz-Fakt, dort ebenfalls ⚠️/zu beschaffen).
+⚠️ Quelle beschaffen (Rest, verengt 2026-06-11): (a) Die „Faustregel BGW ab ca. 40 kg" ist im Korpus NICHT belegbar — entfernt; falls als Schüler-Inhalt gewünscht, BGW-Publikation („Rückengerechtes Arbeiten"/Gefährdungsbeurteilung Pflege) beschaffen. (b) „Stehlifter (nutzt Reststandfähigkeit)" bleibt ohne Korpusbeleg.
+> Hinweis (aufgelöst 2026-06-11): „Zu zweit arbeiten" ist jetzt via I Care belegt — bei der Frühmobilisation „möglichst zu zweit vorgehen", beim Rutschbrett-Transfer „von mind. 2 Pflegefachkräften" (siehe Belege). „Manuelles Heben dauerhaft schädlich" → siehe F-09 (dort jetzt mit TK-2019-Statistik belegt).
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme
@@ -181,6 +206,10 @@
 - Zitat: "Der Einsatz eines Patientenlifters (Patientenheber) ist angezeigt, wenn ein Transfer"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Patientenlifter, z. B. Deckenlifter"  (belegt Modell Deckenlifter + Hilfsmittel bei Schwergewicht)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "sollten Pflegefachkräfte möglichst zu zweit vorgehen"  (I Care Frühmobilisation: Zwei-Personen-Regel)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "von mind. 2 Pflegefachkräften"  (I Care Rutschbrett-Transfer: Transfers im Bett mit mindestens 2 Pflegefachkräften — belegt M3)
 **Praxisfehler:** Lifter wird als „Notlösung" statt als Standardhilfsmittel verstanden; Transfers im Bett werden allein statt zu zweit durchgeführt.
 
 **Misconceptions:**
@@ -212,8 +241,8 @@
 
 ### F-09: Rückengerechtes Arbeiten und Arbeitsschutz
 
-**Fakt:** Rückengerechtes Arbeiten ist Pflicht: Bevor Pflegende mit einem liegenden Patienten arbeiten, bringen sie die Liegefläche des Bettes zunächst auf ihre Beckenhöhe. Weitere Regeln: Kinästhetik statt Hebetechniken, Hilfsmittel konsequent einsetzen, bei schweren Transfers zu zweit, Gewichtsverlagerung statt Heben, feste Schuhe, Pausen. Der Träger jeder Einrichtung im Gesundheitswesen ist zu einer Gefährdungsbeurteilung verpflichtet.
-⚠️ Quelle beschaffen (konkrete Primärquelle): (a) Die konkreten Paragraphen „ArbSchG § 3 / § 5 / § 15" und „LasthandhabV § 2" sind im Korpus NICHT verbatim belegbar (Pflege heute nennt das Arbeitsschutzgesetz nur als Aufzählungs-Stichwort und die Gefährdungsbeurteilungs-Pflicht ohne § 5-Zitat) — Gesetzestext direkt aus ArbSchG/LasthandhabV (gesetze-im-internet.de) als Primärquelle nachziehen, bevor die §§ als Schüler-Inhalt (auch in M2/M3) ausgespielt werden. (b) Die Statistik „Muskel-Skelett-Erkrankungen Hauptursache für Frühberentung in der Pflege" ist im Korpus nicht belegbar — entfernt; für die Aussage BGW-/DGUV-Statistik beschaffen.
+**Fakt:** Rückengerechtes Arbeiten ist Pflicht: Bevor Pflegende mit einem liegenden Patienten arbeiten, bringen sie die Liegefläche des Bettes zunächst auf ihre Beckenhöhe. Weitere Regeln: Kinästhetik statt Hebetechniken, Hilfsmittel konsequent einsetzen, bei schweren Transfers zu zweit, Gewichtsverlagerung statt Heben, feste Schuhe, Pausen. Der Träger jeder Einrichtung im Gesundheitswesen ist zu einer Gefährdungsbeurteilung verpflichtet. Die Belastung ist messbar: Wegen Muskel-Skelett-Erkrankungen fehlten Pflegefachkräfte zuletzt rund 83 % mehr Tage als der Durchschnitt aller Beschäftigten (4,78 vs. 2,61 Tage/Jahr; TK-Gesundheitsreport 2019, zit. n. I Care).
+> Hinweis (aufgelöst 2026-06-11): (a) Die ArbSchG-Paragraphen sind jetzt über den Korpus belegt: § 1 ArbSchG (Arbeitgeber-Pflicht, pruefungswissen), § 5 ArbSchG (Arbeitgeber muss auf Überlastungshinweise reagieren, I Care Examen kompakt) und § 15 ArbSchG (Arbeitnehmer-Meldung/Überlastungsanzeige, I Care Examen kompakt) — M2/M3 damit gedeckt. „§ 3 ArbSchG" und „LasthandhabV § 2" bleiben ohne Korpusbeleg und werden nicht als Schüler-Inhalt ausgespielt (nur Quellen-Metadatum). (b) SACHKORREKTUR (2026-06-11): Die unbelegte Behauptung „MSE = Hauptursache für Frühberentung in der Pflege" bleibt entfernt — ersetzt durch die via I Care verbatim belegte Fehltage-Statistik (TK-Gesundheitsreport 2019).
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Recht + Handlung
@@ -223,7 +252,15 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "bringen sie die Liegefläche des Bettes zunächst auf ihre Beckenhöhe"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Jeder Träger einer Einrichtung im Gesundheitswesen hat eine Gefährdungsbeurteilung"  (belegt Gefährdungsbeurteilungs-Pflicht — NICHT die §-5-ArbSchG-Verortung)
+- Zitat: "Jeder Träger einer Einrichtung im Gesundheitswesen hat eine Gefährdungsbeurteilung"  (belegt Gefährdungsbeurteilungs-Pflicht)
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "Arbeitgeber ist verpflichtet, Maßnahmen des Arbeits- und Gesundheitsschutzes zu ergreifen (§ 1 ArbSchG)"  (belegt Arbeitgeber-Pflicht nach § 1 ArbSchG)
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Arbeitnehmer (§ 15, § 16 ArbSchG): Meldung mithilfe einer Überlastungsanzeige."  (belegt § 15 ArbSchG: Arbeitnehmer melden Überlastung/fehlende Hilfsmittel — deckt M2)
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Arbeitgeber (§ 618 BGB, § 5 ArbSchG): Fürsorgepflicht gegenüber Mitarbeitern, muss auf Überlastungshinweise mit Maßnahmen reagieren."  (belegt § 5 ArbSchG: Arbeitgeber-Reaktionspflicht)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Aufgrund von Muskel-Skelett-Erkrankungen fehlte jeder Beschäftigte letztes Jahr 2,61 Tage – bei Pflegefachkräften waren es mit 4,78 Tagen rund 83 % mehr"  (I Care, TK-Gesundheitsreport 2019: belegt die MSE-Fehltage-Statistik im Fakt-Text)
 **Praxisfehler:** Gebeugtes Arbeiten am zu tiefen Bett; Heben aus „Kraftvertrauen", obwohl Hilfsmittel verfügbar wären.
 
 **Misconceptions:**
@@ -256,7 +293,7 @@
 ### F-11: Schmerz- und Kreislaufmanagement bei Mobilisation
 
 **Fakt:** Schmerz und Kreislauf sind die zwei häufigsten Abbruchgründe einer Mobilisation. Vor Mobilisation: Schmerz mit NRS erfassen und behandeln — sind Schmerzen bei der Mobilisation zu erwarten, verabreichen Pflegende rechtzeitig vorher (ärztlich verordnete) Analgetika. Kreislauf: RR/Puls als Baseline, vor und nach der Mobilisation den Puls kontrollieren, Warnzeichen beobachten (Blässe, Schwitzen, Schwindel, Übelkeit). Abbruch-/Alarmkriterien: orthostatischer RR-Abfall über das normale Maß hinaus (normal max. 20 mmHg systolisch / 10 mmHg diastolisch), Anstieg der Pulsfrequenz infolge der Mobilisation um mehr als 20 Schläge/Min. oder neu aufgetretene Rhythmusstörungen (dann Arzt informieren), Präsynkope/Synkope, starke Schmerzen.
-⚠️ Quelle beschaffen / Fachkorrektur: (a) „Analgetika 30-60 Min vorher" — die konkrete Vorlaufzeit ist im Korpus nicht belegbar; Pflege heute sagt nur „rechtzeitig vorher". Für eine feste Spanne pharmakologische Primärquelle/Fachinfo beschaffen. (b) „Ziel NRS ≤ 3" — Grenzwert im Korpus nicht belegbar; DNQP-Schmerzmanagement/S3-Leitlinie Schmerz beschaffen. (c) FACHKORREKTUR „Puls > 120" als Mobilisations-Warnzeichen: Der Korpus stützt diesen absoluten Wert NICHT — Pflege heute nennt als mobilisationsbezogenes Kriterium den ANSTIEG um mehr als 20 Schläge/Min. (relativ zur Baseline), nicht eine fixe Grenze von 120/Min. Absolutwert entfernt und durch das belegte relative Kriterium ersetzt.
+> Hinweis (aufgelöst 2026-06-11): Alle früher ungedeckten Werte sind aus dem Fakt-Text entfernt, der verbleibende Text ist voll belegt. (a) „Analgetika 30-60 Min vorher" bleibt draußen — Pflege heute sagt nur „rechtzeitig vorher" (belegt); für eine feste Spanne pharmakologische Fachinfo beschaffen. (b) „Ziel NRS ≤ 3" bleibt draußen; DNQP-Schmerzmanagement/S3-Leitlinie beschaffen. (c) FACHKORREKTUR (2026-06-10, bestätigt): „Puls > 120" durch das belegte relative Kriterium „Anstieg > 20 Schläge/Min." ersetzt.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment + Entscheidung
@@ -308,7 +345,7 @@
 
 ### F-13: Mobilisationsplan und Dokumentation
 
-**Fakt:** Der Mobilisationsplan folgt dem Sechs-Schritt-Modell des Pflegeprozesses nach Fiechter/Meier: Assessment (Instrumente wie Tinetti, TUG, Barthel; ressourcenorientiert — die individuellen Bewegungsressourcen des Patienten erkennen) → Pflegediagnose im PÄS-Format (Problem, Ätiologie [beeinflussende Faktoren], Symptome [bestimmende Merkmale]) → SMART-Ziel mit dem Patienten (spezifisch, messbar, akzeptiert, realisierbar, terminierbar) → Maßnahmen (wer/wann/wie/womit) → Evaluation → Dokumentation im Pflegebericht. Der Pflegeprozess gilt als selbstständig durchzuführende und vorbehaltene Tätigkeit im Sinne des Pflegeberufegesetzes. Grundsatz: „Was nicht dokumentiert ist, gilt als nicht durchgeführt." Hinweis: Das Akronym „PESR" (mit R für Ressourcen) ist eine didaktische Erweiterung — im Korpus verbatim nur als „PÄS" belegt. Die Esslinger Transferskala ist im Korpus nicht belegbar. Für „PESR" und Esslinger Transferskala ggf. Pflegediagnostik-Primärquelle beschaffen.
+**Fakt:** Der Mobilisationsplan folgt dem Sechs-Schritt-Modell des Pflegeprozesses nach Fiechter/Meier: Assessment (Instrumente wie Tinetti, TUG, Barthel; ressourcenorientiert — die individuellen Bewegungsressourcen des Patienten erkennen) → Pflegediagnose im PÄS-Format (Problem, Ätiologie [beeinflussende Faktoren], Symptome [bestimmende Merkmale]) → SMART-Ziel mit dem Patienten (spezifisch, messbar, akzeptiert, realisierbar, terminierbar) → Maßnahmen (wer/wann/wie/womit) → Evaluation → Dokumentation im Pflegebericht. Der Pflegeprozess gilt als selbstständig durchzuführende und vorbehaltene Tätigkeit im Sinne des Pflegeberufegesetzes. Grundsatz: „Was nicht dokumentiert ist, gilt als nicht durchgeführt." Hinweis: Das Akronym „PESR" (mit R für Ressourcen) ist eine didaktische Erweiterung — im Korpus verbatim nur als „PÄS" belegt; ggf. Pflegediagnostik-Primärquelle beschaffen. Die Esslinger Transferskala ist seit 2026-06-11 via pruefungswissen belegt (DNQP-2020-Instrumentenliste, siehe Beleg).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme + Dokumentation
@@ -325,6 +362,8 @@
 - Zitat: "vorbehaltene Tätigkeit im Sinne des"  (belegt: Pflegeprozess/Pflegediagnose = vorbehaltene Aufgabe nach PflBG — siehe M2)
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "PÄS-Format (Problem, Ätiologie [beeinflussende Faktoren] und Symptome [bestimmende Merkmale])"  (belegt PÄS-Format als verbatimes Akronym und Vollform)
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "FIM, Neues Begutachtungsassessment (NBA), Timed-Up-and-Go-Test, Esslinger"  (pruefungswissen, DNQP-2020-Instrumentenliste — Forts. im Quelltext zeilenumbrochen: „Transferskala"; belegt die Esslinger Transferskala als Mobilitäts-Assessment)
 **Praxisfehler:** Unkonkrete Ziele („Frau M. wird mobilisiert") statt SMART-Formulierung; Defizit-Fokus statt Ressourcenorientierung.
 
 **Misconceptions:**

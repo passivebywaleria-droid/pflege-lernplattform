@@ -10,6 +10,7 @@
 | quellen | Fröhlich A. (1975/2023): Basale Stimulation — Das Konzept; Bienstein C./Fröhlich A. (1991/2021): Basale Stimulation in der Pflege; Pflege heute Kap. 12.4 Basale Stimulation; DNQP Beziehungsgestaltung Demenz (2018); Bobath-Konzept |
 | einträge | 17 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
+| grounding | 2026-06-11 (Zyklus 11, I-Care-Korpus + Kinderkrankenpflege): ⚠️ 6→1. Aufgelöst: F-07 (Vibrations-KI via Kinderkrankenpflege-Merke-Box, Liste sachlich angepasst), F-10 (SACHKORREKTUR: Waschrichtung „von der weniger betroffenen ZUR betroffenen Seite" via pruefungswissen; „zuerst betroffene Seite" + „Körperschema reorganisieren" entfernt), F-11 (SACHKORREKTUR: Reihenfolge „Körperstamm → Extremitäten" statt „Kopf → Rumpf"; Beugung/Nest/Bezugsperson via Kinderkrankenpflege belegt), F-12 (bereits 2026-06-11 Welle 1 gelöst), F-17 (basal = vorgeburtlich-grundlegend via Kinderkrankenpflege + I Care; „sensorisch"-Terminus bleibt didaktisch). Verbleibend ⚠️: F-06 (Kontraindikationen vestibuläre Stimulation — in keinem Korpus als Liste). |
 
 ---
 
@@ -144,7 +145,7 @@
 - Zitat: "Vestibulum = Gleichgewichtsorgan im Innenohr"
 - Zitat: "Informationen über Lage und Bewegung ihres Körpers im Raum zu vermitteln"
 - Zitat: "wirkt haltungsstabilisierend und tonusnormalisierend"
-- ⚠️ Die im Praxisfehler/M2 genannten Kontraindikationen (erhöhter Hirndruck, instabiler Kreislauf, frische HWS-Verletzung, akuter Schwindel) sind in Pflege heute Kap. 12.4 nicht als Kontraindikationen-Liste der vestibulären Stimulation ausgewiesen → Quelle beschaffen (Bienstein/Fröhlich bzw. Nydahl/Bartoszek) ODER als allgemeine pflegerische Vorsicht ohne Quellen-Anspruch kennzeichnen.
+- ⚠️ Die im Praxisfehler/M2 genannten Kontraindikationen (erhöhter Hirndruck, instabiler Kreislauf, frische HWS-Verletzung, akuter Schwindel) sind in Pflege heute Kap. 12.4 nicht als Kontraindikationen-Liste der vestibulären Stimulation ausgewiesen (2026-06-11 erneut geprüft: auch I-Care-Trilogie, Kinderkrankenpflege Kap. 6.7 und pruefungswissen ohne vestibuläre KI-Liste) → Quelle beschaffen (Bienstein/Fröhlich bzw. Nydahl/Bartoszek) ODER als allgemeine pflegerische Vorsicht ohne Quellen-Anspruch kennzeichnen.
 **Praxisfehler:** Bewegungen werden zu schnell ausgeführt (Schwindel, Übelkeit) oder Kontraindikationen (erhöhter Hirndruck, instabiler Kreislauf, HWS-Verletzung) nicht geprüft.
 
 **Misconceptions:**
@@ -171,13 +172,17 @@
 - Zitat: "spezielle vibrierende Geräte verwendet werden" (Vibrationsgeräte als Mittel)
 - Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
 - Zitat: "summen und singen, Vibrationen mit der Hand" (Tab. 1.38: Beispiele für vibratorische Angebote der Basalen Stimulation)
-- ⚠️ Kontraindikationen (Frakturen, frische OP, Thrombose-Risiko) für vibratorische Stimulation sind in den verfügbaren Korpora nicht verbatim als Liste ausgewiesen → Quelle beschaffen (Bienstein/Fröhlich oder Nydahl/Bartoszek) ODER als allgemeine pflegerische Vorsicht ohne Quellen-Anspruch kennzeichnen.
-**Praxisfehler:** Vibration wird zu lange oder bei Kontraindikationen (Frakturen, frische OP, Thrombose-Risiko) eingesetzt; Vibration ermüdet schnell und sollte dosiert werden.
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Die Vibration ist kontraindiziert bei Rippenfrakturen, Lungenblutungen, Lungenembolie, erhöhtem Hirndruck und"  (Merke-Box Kap. 11.4.6 — Forts.: „nach Operationen im Thorax- oder Bauchbereich")
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "nach Operationen im Thorax- oder"  (Forts. der KI-Liste: frische Thorax-/Bauch-OPs)
+> Hinweis (aufgelöst 2026-06-11): Die Kontraindikationen-Liste ist jetzt quellengedeckt — allerdings aus dem Kontext der Vibration als pflegerisch-physiotherapeutische Maßnahme am Thorax (Sekretlösung), nicht spezifisch für basale vibratorische Angebote. Die frühere ungedeckte Liste „Frakturen, frische OP, Thrombose-Risiko" wurde an die belegte Liste angepasst (Rippenfrakturen, frische Thorax-/Bauch-OPs, Lungenembolie, Lungenblutung, erhöhter Hirndruck). Eine Bienstein/Fröhlich-spezifische KI-Liste für basale Angebote bleibt wünschenswert, ist aber kein offener Beleg-Bedarf mehr für den ausgespielten Inhalt.
+**Praxisfehler:** Vibration wird zu lange oder bei Kontraindikationen (Rippenfrakturen, frische Thorax-/Bauch-OPs, Lungenembolie, erhöhter Hirndruck) eingesetzt; Vibration ermüdet schnell und sollte dosiert werden.
 
 **Misconceptions:**
 - `M1`: **"Vibration wird nur über die Haut wahrgenommen, nicht über die Knochen"** — Vibration wandert hauptsächlich über die Knochenleitung ins Körperinnere. Fachbegriff: "Haut-Leitungs-Irrtum".
 - `M2`: **"Vibration wirkt überall gleich stark"** — Am Muskel lokal, am Knochen tief weitergeleitet — die Stelle entscheidet die Wirkung. Fachbegriff: "Stellen-Gleichheits-Irrtum".
-- `M3`: **"Vibration kann beliebig lange eingesetzt werden"** — Vibration ermüdet schnell und muss dosiert werden; Kontraindikationen beachten. Fachbegriff: "Dosierungs-Irrtum".
+- `M3`: **"Vibration kann beliebig lange eingesetzt werden"** — Vibration ermüdet schnell und muss dosiert werden; Kontraindikationen beachten (Rippenfrakturen, frische Thorax-/Bauch-OPs, Lungenembolie, erhöhter Hirndruck). Fachbegriff: "Dosierungs-Irrtum".
 
 ---
 
@@ -236,7 +241,7 @@
 
 ### F-10: Neurophysiologische GKW — betroffene Seite einbeziehen (Bobath)
 
-**Fakt:** Die neurophysiologische Ganzkörperwaschung ist mit dem Bobath-Konzept verknüpft, das primär für Patienten mit Halbseitenlähmung (Hemiparese/Hemiplegie) entwickelt wurde. Beide Körperhälften werden bewusst in den Bewegungsablauf integriert; die betroffene Seite wird gleichwertig oder zuerst gewaschen, mitbenannt und einbezogen, um Neglect zu reduzieren und das Körperschema zu reorganisieren.
+**Fakt:** Die neurophysiologische Ganzkörperwaschung ist mit dem Bobath-Konzept verknüpft, das primär für Patienten mit Halbseitenlähmung (Hemiparese/Hemiplegie) entwickelt wurde. Beide Körperhälften werden bewusst in den Bewegungsablauf integriert; gewaschen wird von der weniger betroffenen Seite ZUR betroffenen Seite — die betroffene Seite wird mitbenannt und einbezogen, Blick, Aufmerksamkeit und Aktivität werden gezielt zur betroffenen Seite gelenkt, um Neglect zu reduzieren.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
@@ -246,11 +251,17 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Das Bobath-Konzept ist primär für Patienten mit Halbseitenlähmung (Hemiparese bzw. Hemiplegie) entwickelt"
 - Zitat: "dass beide Körperhälften in den Bewegungsablauf integriert werden"
-- ⚠️ Die spezifischen Aussagen „betroffene Seite gleichwertig oder zuerst waschen", „Neglect reduzieren", „Körperschema reorganisieren" sind in Pflege heute Kap. 12.4/9.5 nicht wörtlich als Vorgehen der neurophysiologischen GKW belegt — der dortige Bobath-Abschnitt (Zeile 34240–34258) betrifft Mobilisation/Bewegungsanbahnung, nicht die Waschung → Quelle beschaffen (Bobath-Originalliteratur bzw. Friedhelm/Bienstein neurophysiol. GKW) ODER Aussage auf „beide Körperhälften einbeziehen" reduzieren.
-**Praxisfehler:** Die gesunde Seite wird zuerst und ausführlicher gewaschen — das verstärkt den Neglect, statt die betroffene Seite ins Körperschema zurückzuholen.
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "Spezielle Körperpflege, z. B. neurophysiologische Waschung von der weniger betroffenen Seite"  (Schlaganfall-Pflege — Forts. im Quelltext zeilenumbrochen: „zur betroffenen Seite")
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "zur betroffenen Seite, spezielle Mundpflege"  (Forts.: Waschrichtung endet auf der betroffenen Seite)
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "Aufmerksamkeit und Aktivität von der weniger betroffenen zur betroffenen Seite lenken"  (Pflege bei Neglect: Aufmerksamkeit gezielt zur betroffenen Seite — belegt das Neglect-Ziel)
+> SACHKORREKTUR (2026-06-11): Die frühere Formulierung „betroffene Seite gleichwertig oder ZUERST gewaschen" war nicht belegbar und ist korrigiert — pruefungswissen belegt die neurophysiologische Waschung als Richtungs-Prinzip „von der weniger betroffenen Seite zur betroffenen Seite". „Körperschema reorganisieren" als Wirkbehauptung entfernt (nicht belegt); belegt ist das Neglect-Ziel (Aufmerksamkeit zur betroffenen Seite lenken). Beleg-Bedarf damit aufgelöst.
+**Praxisfehler:** Die betroffene Seite wird weggelassen oder nur flüchtig gewaschen — das verstärkt den Neglect, statt Aufmerksamkeit und Aktivität zur betroffenen Seite zu lenken.
 
 **Misconceptions:**
-- `M1`: **"Man wäscht zuerst die gesunde Seite, weil der Patient das besser wahrnimmt"** — Umgekehrt: die betroffene Seite wird bewusst einbezogen, sonst verstärkt sich der Neglect. Fachbegriff: "Gesunde-Seite-Zuerst-Irrtum".
+- `M1`: **"Die betroffene Seite kann man auslassen — der Patient spürt sie ja kaum"** — Falsch: Gewaschen wird gezielt von der weniger betroffenen ZUR betroffenen Seite; die betroffene Seite wird bewusst einbezogen und mitbenannt, sonst verstärkt sich der Neglect. Fachbegriff: "Auslass-Irrtum".
 - `M2`: **"Neurophysiologische Waschung ist dasselbe wie die beruhigende Waschung"** — Anderes Konzept und Ziel: Integration der betroffenen Seite ins Körperschema, nicht vegetative Regulation. Fachbegriff: "Konzept-Verwechslung".
 - `M3`: **"Die Pflegekraft sollte auf der gesunden Seite stehen"** — Sie steht auf der betroffenen Seite, damit der Blick des Patienten dorthin geht. Fachbegriff: "Stand-Seite-Irrtum".
 
@@ -258,7 +269,7 @@
 
 ### F-11: Entwicklungsfördernde GKW — Regression und frühkindliche Wahrnehmung
 
-**Fakt:** Bei langem Liegen und Immobilität gehen Patienten häufig in Regression — sie werden auf eine frühere Entwicklungsstufe zurückversetzt (Leben in der Horizontalen wie ein Säugling). Die entwicklungsfördernde Ganzkörperwaschung orientiert sich daran: Berührungsreihenfolge Kopf → Rumpf → Extremitäten, Beugung statt Streckung (fetale Haltung), Einpacken/Nest, konstante Bezugsperson.
+**Fakt:** Bei langem Liegen und Immobilität gehen Patienten häufig in Regression — sie werden auf eine frühere Entwicklungsstufe zurückversetzt (Leben in der Horizontalen wie ein Säugling). Die entwicklungsfördernde Ganzkörperwaschung orientiert sich daran: Berührungsreihenfolge vom Körperstamm zu den Extremitäten, Beugung statt Streckung (fetale Haltung), Einpacken/Nest-Positionierung, konstante Bezugsperson.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme
@@ -268,12 +279,20 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "auf eine frühere Entwicklungsstufe zurückversetzt werden"
 - Zitat: "Leben in der Horizontalen, wie wir es als Säugling gewohnt waren"
-- Zitat: "Am Körperstamm beginnen, dann erst die Extremitäten waschen" (basal stimulierende GKW: Stamm vor Extremitäten)
-- ⚠️ Die Detail-Maßnahmen der entwicklungsfördernden GKW — „Berührungsreihenfolge Kopf → Rumpf → Extremitäten", „Beugung statt Streckung (fetale Haltung)", „Einpacken/Nest", „konstante Bezugsperson" — sind in Pflege heute Kap. 12.4 NICHT belegt (dort nur: Regression, Leben in der Horizontalen, sowie für die basale GKW „am Körperstamm beginnen") → Quelle beschaffen (Bienstein/Fröhlich Original, entwicklungsfördernde GKW) ODER diese Detailliste entfernen/auf das Belegte (Stamm-zuerst, Regression) reduzieren. Hinweis: Quelle gibt „Stamm → Extremitäten", nicht „Kopf → Rumpf → Extremitäten".
+- Zitat: "Am Körperstamm beginnen, dann erst die Extremitäten waschen" (basal stimulierende GKW: Stamm vor Extremitäten — belegt die Berührungsreihenfolge im Fakt)
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "der physiologischen fetalen Stellung und bringt das Baby in Flexion"  (Frühgeborenen-Positionierung: Seitenlage entspricht der fetalen Stellung, bringt in Beugung — belegt das Prinzip „Beugung statt Streckung/fetale Haltung")
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Nestlage) unterstützen die Körperwahrnehmung"  (Nest-Positionierung als körperbegrenzende, wahrnehmungsfördernde Maßnahme — belegt „Einpacken/Nest")
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Wird das Kind regelmäßig von"  (Kap. 6.7 Basale Stimulation — Forts. im Quelltext zeilenumbrochen: „denselben Pflegefachkräften versorgt, kann zu ihnen Vertrauen aufgebaut werden")
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "denselben Pflegefachkräften versorgt,"  (belegt „konstante Bezugsperson" als Vertrauens-Prinzip der Basalen Stimulation)
+> SACHKORREKTUR (2026-06-11): Die frühere Reihenfolge „Kopf → Rumpf → Extremitäten" war nicht belegbar und ist korrigiert auf die belegte Reihenfolge „Körperstamm → Extremitäten" (Pflege heute). Beugung/fetale Haltung, Nest und konstante Bezugsperson sind jetzt via Kinderkrankenpflege-Korpus belegt (Kontext Frühgeborene/Kinder — die Übertragung auf erwachsene Patienten in Regression ist die didaktische Kernidee der entwicklungsfördernden GKW). Beleg-Bedarf aufgelöst.
 **Praxisfehler:** Streckung statt Beugung der Gelenke — die fetale Beugehaltung vermittelt Sicherheit; Streckung kann Spastik oder Unruhe auslösen. Häufiger Pflegekraftwechsel stört zudem die Bezugspflege.
 
 **Misconceptions:**
-- `M1`: **"Die Reihenfolge der Waschung ist bei allen Konzepten gleich: Gesicht, dann absteigend"** — Die entwicklungsfördernde GKW folgt der kindlichen Wahrnehmungsentwicklung (Kopf → Rumpf → Arme → Beine). Fachbegriff: "Standard-Reihenfolge-Irrtum".
+- `M1`: **"Die Reihenfolge der Waschung ist bei allen Konzepten gleich: Gesicht, dann absteigend"** — Die entwicklungsfördernde GKW folgt der kindlichen Wahrnehmungsentwicklung: am Körperstamm beginnen, dann erst die Extremitäten. Fachbegriff: "Standard-Reihenfolge-Irrtum".
 - `M2`: **"Die Gelenke sollen gestreckt werden"** — Beugung (fetale Haltung) vermittelt Sicherheit; Streckung kann Spastik auslösen. Fachbegriff: "Strecke-vs.-Beugung-Irrtum".
 - `M3`: **"Ein ständiger Wechsel der Pflegekraft hilft, Abwechslung zu erleben"** — Bezugspflege gibt Orientierung; Wiedererkennung von Stimme und Berührung stabilisiert. Fachbegriff: "Wechsel-ist-gut-Irrtum".
 
@@ -418,7 +437,15 @@
 - Zitat: "die somatische, die vestibuläre und die vibratorische Wahrnehmung" (die drei grundlegenden Bereiche)
 - Zitat: "mit Sicherheit aber im vierten Schwangerschaftsmonat, über diese drei elementaren Wahrnehmungsbereiche verfügt"
 - Zitat: "zumindest in Spuren auch dann noch erhalten sind, wenn kaum mehr offensichtliche Zeichen von Bewusstsein vorliegen" (für M3: Erhalt bei schwerster Einschränkung)
-- ⚠️ Die explizite Abgrenzung „basal" (vor-sprachlich/vor-bewusst) vs. „sensorisch" (fünf Sinne) als Begriffspaar ist in Pflege heute Kap. 12.1/12.4 nicht wörtlich so formuliert — die drei elementaren Bereiche werden den fünf weiteren gegenübergestellt, aber ohne den Terminus „sensorisch vs. basal" → Quelle beschaffen (Bienstein/Fröhlich) ODER als didaktische Einordnung ohne Quellen-Anspruch kennzeichnen.
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "die grundlegenden, d. h. basalen Elemente unserer Wahrnehmung"  (Kap. 6.7: „Basale Stimulation bezieht sich auf die körperlichen Erfahrungen, die jeder Mensch bereits vor der Geburt gemacht hat" — belegt: basal = grundlegend, vorgeburtlich angelegt)
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Besonders die ersten drei Wahrnehmungsbereiche (somatischer, vestibulärer und vibratorischer Bereich) bilden"  (Merke-Box, Bienstein/Fröhlich 2016 — Forts.: „die Grundlage unseres Urvertrauens")
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "knüpfen an unsere Embryonalzeit an"  (belegt den embryonalen Ursprung der drei basalen Bereiche)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "steht dabei für eine einfache und voraussetzungslose Anregung der Eigenaktivität"  (I Care: Definition von „basal" — einfach, voraussetzungslos)
+> Hinweis (aufgelöst 2026-06-11): Der Kern des Fakts — „basal" meint die vorgeburtlich angelegte, grundlegende Wahrnehmungsebene (somatisch/vestibulär/vibratorisch), nicht die fünf Sinne — ist jetzt mehrfach belegt (Kinderkrankenpflege: „die grundlegenden, d. h. basalen Elemente unserer Wahrnehmung", Embryonalzeit-Bezug; I Care: „einfach und voraussetzungslos"). Nur der Gegen-Terminus „sensorisch" als Begriffspaar bleibt didaktische Einordnung ohne wörtlichen Quellensatz — im Fakt entsprechend als Abgrenzungshilfe formuliert, nicht als Quellen-Zitat.
 **Praxisfehler:** „Basal" wird mit „sensorisch" gleichgesetzt — dadurch geht der Kern verloren, dass die drei basalen Bereiche vor allen Sinnen und vor dem Bewusstsein entstehen und auch bei schwerster Einschränkung erhalten bleiben.
 
 **Misconceptions:**
