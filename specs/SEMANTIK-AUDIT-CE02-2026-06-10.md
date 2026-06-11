@@ -92,3 +92,28 @@ Voll-Re-Audit über alle 353 Fakten (5 adversariale Prüfer), strenger/vollstän
 **91 % STÜTZT — Ziel ≥90 % erreicht.** Die 30 Rest-TEILWEISE sind fast ausschließlich **unmarkierte Aufzählungs-Bestandteile** (Listen, bei denen der Kern belegt ist, einzelne Listenpunkte aber weder zitiert noch ⚠️) + wenige Zahlen. Das 1 STÜTZT-NICHT = pflegedoku F-08 ISBAR (Beleg vollständig ⚠️ „Quelle beschaffen" — Zähl-Grenzfall, faktisch ehrlich markiert).
 
 **Restarbeit (klein, definiert):** Cleanup-Pass über die 30 Listen-TEILWEISE — je unmarkierten Listenpunkt ein Zweitzitat ODER ⚠️. Danach Decke erreicht (Lizenz-Quellen + Dozentin).
+
+---
+
+## CLEANUP-PASS Listen-TEILWEISE (2026-06-11, Zyklus 7)
+
+Die 30 unmarkierten Listen-TEILWEISE über 11 Themen abgearbeitet (7 Sub-Agenten, je Datei). Pro ungedeckter Teilaussage GENAU EIN Weg: Zweitzitat aus Korpus (R3a) ODER ehrliches ⚠️ mit zu beschaffender Primärquelle (R3b). Kein Zitat erfunden, kein themenverwandtes Zitat als Beleg stehengelassen.
+
+**+~60 verbatim Zweitzitate** ergänzt. Voll aufgelöst → **STÜTZT**:
+- blasenkatheter F-05/06/07 (alle Material-/Durchführungs-Listen, 19 Zitate aus Pflege heute)
+- pflegeprozess F-08, pflegedoku F-02/05/13, schlaf F-09/11, stuhlausscheidung F-01
+- dekubitus F-05/07/12/14 (EPUAP + Pflege heute), essen-anreichen 10 Teilaussagen
+
+**Rest jetzt ehrlich ⚠️ markiert** (nicht mehr „unmarkiert" — Korpus reicht nicht, Quelle benannt):
+- essen-anreichen: Charta Würde, neurogene-Dysphagie-Ursachen (Demenz/Beatmung), Kinder-Verhalten, Demenz-Speisen-Detail, GUSS-Stimmqualität (Trapl 2007)
+- pflegedoku F-01 (§ 630f BGB Gesetzestext, Praxis-Merksatz), F-03 (Haut/Abweichungen/Unfälle), F-08 ISBAR (WHO High-5s) — unverändert ⚠️
+- schlaf F-10 (Alkohol-Schlussfolgerung), F-12 (Vorrang-Superlativ → DGSM S3-Insomnie)
+- dekubitus F-06 (Säugling-Hinterkopf/Nasenscheidewand → Hoehl/Kullick)
+- sturz F-05 (rutschfest/freie Wege sturzspezifisch), F-06 (psychotrope Untergruppen + Diuretika namentlich, 20–40 %-Quote → PRISCUS/FORTA)
+- stuhlausscheidung F-03 (geruchlos → Hoehl/Kullick)
+- mobilisation F-05 (Stoppfunktion mit Fuß, Schulterblatt-Griff → Hatch/Maietta/BGW)
+- ernaehrungsgrundlagen F-01 (Makro-/Mikronährstoff-Terminologie, „versteckter Hunger" → DGE), ernaehrungsassessment F-04 (MNA-Short-Score-Details → Guigoz/Vellas)
+
+**Sachkorrektur nebenbei:** dekubitus F-06 „Sitzen das Steißbein" → **Sitzbeinhöcker** (Quelle Pflege heute sagt Sitzbeinhöcker).
+
+**Stand nach Zyklus 7: 0 unmarkierte TEILWEISE.** Jeder Fakt ist entweder voll STÜTZT-belegt ODER trägt ein ehrliches ⚠️ mit konkret benannter, zu beschaffender Primärquelle. **Damit ist die autonom erreichbare Decke erreicht** — der Rest hängt an (a) lizenzpflichtigen Quellen (Hoehl/Kullick, PRISCUS/FORTA, DGSM, Guigoz/Vellas, BGB-Gesetzestext, Charta) und (b) Dozentin-Review (R6). Beides ist Mensch/Geld — siehe Eskalationen.
