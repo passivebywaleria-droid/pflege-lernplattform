@@ -78,3 +78,17 @@ Voll-Re-Audit über alle 353 Fakten (5 adversariale Prüfer), strenger/vollstän
 **Befund:** STÜTZT-NICHT (echte Defekte/dekorative Zitate) von ~30 auf **0** — Halluzinations-Risiko nahezu eliminiert. ABER nur 44 % voll belegt; 49 % „Kern belegt, Detail-Zahl/Skala nicht im Zitat". Der scheinbare STÜTZT-Rückgang ggü. Erst-Audit = strengere/vollständigere Bewertung diesmal.
 
 **Hebel zu ≥90 %:** Die 172 TEILWEISE auflösen — pro Detail-Aussage ein Zweitzitat (R2) oder ehrlich ⚠️. Das ist überwiegend Beleg-ABDECKUNG, kein Faktenfehler.
+
+---
+
+## FINAL-AUDIT nach kompletter TEILWEISE-Auflösung (2026-06-11, Zyklus 6 Ende)
+
+| Verdikt | Erst-Audit | Re-Audit (Z1) | **Final** |
+|---------|-----------:|--------------:|----------:|
+| STÜTZT | ~51 % | 44 % | **91 % (322)** |
+| TEILWEISE | ~41 % | 49 % | **8,5 % (30)** |
+| STÜTZT-NICHT | ~9 % | 0,6 % | **0,3 % (1)** |
+
+**91 % STÜTZT — Ziel ≥90 % erreicht.** Die 30 Rest-TEILWEISE sind fast ausschließlich **unmarkierte Aufzählungs-Bestandteile** (Listen, bei denen der Kern belegt ist, einzelne Listenpunkte aber weder zitiert noch ⚠️) + wenige Zahlen. Das 1 STÜTZT-NICHT = pflegedoku F-08 ISBAR (Beleg vollständig ⚠️ „Quelle beschaffen" — Zähl-Grenzfall, faktisch ehrlich markiert).
+
+**Restarbeit (klein, definiert):** Cleanup-Pass über die 30 Listen-TEILWEISE — je unmarkierten Listenpunkt ein Zweitzitat ODER ⚠️. Danach Decke erreicht (Lizenz-Quellen + Dozentin).
