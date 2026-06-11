@@ -10,7 +10,7 @@
 | quellen | Pflege heute Kap. 11 Schlaf (lokal verbatim belegt). Zusätzlich referenziert, aber im Korpus NICHT verifizierbar (⚠️ Quelle beschaffen): AASM Scoring Manual 2020; DGSM S3-Leitlinie Insomnie 2017/2020 + SBAS 2020; ICSD-3 (AASM); Borbély 1982; National Sleep Foundation 2015; Beers-Liste AGS 2023 |
 | einträge | 13 |
 | erstellt | 2026-06-10 |
-| grounding | Hohe Latte (QUALITAETSSTANDARD-GROUNDING R1–R3) · alle Pflege-heute-Belege verbatim (85 Zitate, zitat-verifizierer ✅) · F-09/F-10/F-11/F-12 nach Semantik-Audit TEILWEISE→aufgelöst: Aufzählungs-Bestandteile (Alters-Ursachen-Liste, Genussmittel schwarzer Tee/üppige Mahlzeit, Tab. 11.2 Störfaktoren, Schlafhygiene-Prinzipien) je per Zweitzitat gedeckt · ⚠️-Markierungen für korpus-fremde Sub-Claims/Superlative (NSF-Spannweiten, ICSD-3-Schwellen + „häufigste", NREM/REM-Parasomnien-Zuordnung, STOP-BANG/nCPAP, Beers-Liste/Z-Substanz-Bewertung, „Licht wichtigster Taktgeber"-Superlativ, Sleep-Bundle-Begriff, „Alkohol kein Einschlafmittel"-Schluss, „Schlafhygiene Basis vor Medikation"-Superlativ) · geprüft 2026-06-11 |
+| grounding | Hohe Latte (QUALITAETSSTANDARD-GROUNDING R1–R3) · alle Pflege-heute-Belege verbatim (85 Zitate, zitat-verifizierer ✅) · F-09/F-10/F-11/F-12 nach Semantik-Audit TEILWEISE→aufgelöst: Aufzählungs-Bestandteile (Alters-Ursachen-Liste, Genussmittel schwarzer Tee/üppige Mahlzeit, Tab. 11.2 Störfaktoren, Schlafhygiene-Prinzipien) je per Zweitzitat gedeckt · ⚠️-Markierungen für korpus-fremde Sub-Claims/Superlative (NSF-Spannweiten, ICSD-3-Schwellen + „häufigste", NREM/REM-Parasomnien-Zuordnung, STOP-BANG/nCPAP, Beers-Liste/Z-Substanz-Bewertung, „Licht wichtigster Taktgeber"-Superlativ, Sleep-Bundle-Begriff) · F-10 „Alkohol kein Einschlafmittel" + F-12 „nichtmedikamentös vor Medikation" nun via DGSM-S3-Leitlinie Insomnie 2025 verbatim belegt (Zyklus 8) · geprüft 2026-06-11 |
 
 ---
 
@@ -222,7 +222,7 @@
 
 ### F-10: Schlafstörungen durch Genussmittel (Koffein, Alkohol)
 
-**Fakt:** Genuss- und Arzneimittel können den gesunden Schlaf beeinträchtigen: Kaffee und koffeinhaltige Getränke, schwarzer Tee, üppige abendliche Mahlzeiten sowie Alkohol. Unter deutlichem Alkoholeinfluss ist die erholsame REM-Schlafphase wesentlich verkürzt, und Schnarchen sowie Schlafapnoe werden begünstigt. ⚠️ Die Folgerung „Alkohol ist deshalb kein geeignetes Einschlafmittel" ist eine fachlich korrekte Schlussfolgerung aus der belegten REM-Verkürzung, steht aber in Pflege heute nicht verbatim — als interpretierende Aussage ausgewiesen, nicht als Zitat belegbar.
+**Fakt:** Genuss- und Arzneimittel können den gesunden Schlaf beeinträchtigen: Kaffee und koffeinhaltige Getränke, schwarzer Tee, üppige abendliche Mahlzeiten sowie Alkohol. Unter deutlichem Alkoholeinfluss ist die erholsame REM-Schlafphase wesentlich verkürzt, und Schnarchen sowie Schlafapnoe werden begünstigt. Alkohol ist deshalb kein geeignetes Einschlafmittel — die DGSM-S3-Leitlinie Insomnie empfiehlt ausdrücklich, Alkohol „weitgehend [zu] vermeiden und keinesfalls als Schlafmittel" einzusetzen.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Fakt
@@ -237,7 +237,8 @@
 - Zitat: "Schwarzer Tee nach kurzer Ziehzeit" (belegt: schwarzer Tee als Störfaktor)
 - Zitat: "Üppige, schwer verdauliche abendliche" (Fortsetzung: "Mahlzeiten" — belegt: üppige Abendmahlzeit als Störfaktor)
 - Zitat: "nach dem Kaffeegenuss werden viele Menschen zuerst müde" (belegt M2)
-- ⚠️ Nicht verbatim belegbar: „Alkohol kein geeignetes Einschlafmittel" — interpretierende Schlussfolgerung aus der belegten REM-Verkürzung; im Korpus nicht als Aussage vorhanden.
+- Quelle: `leitlinien-volltext/dgsm-insomnie-2025.txt`
+- Zitat: "Alkohol weitgehend vermeiden und keinesfalls als Schlafmittel einsetzen" (DGSM-S3-Leitlinie Insomnie 2025 — belegt verbatim: Alkohol ist kein geeignetes Einschlafmittel)
 
 **Misconceptions:**
 - `M1`: **"Ein Glas Wein am Abend hilft beim Einschlafen"** — Alkohol wirkt biphasisch: zunächst sedierend, dann fragmentiert er den Schlaf (REM-Unterdrückung, Weckreaktionen, Harndrang). Der Schlaf wird insgesamt schlechter. Fachbegriff: "Alkohol-Schlaf-Mythos".
@@ -278,7 +279,7 @@
 
 ### F-12: Schlafhygiene und schlaffördernde Maßnahmen
 
-**Fakt:** Damit ein Mensch gut schlafen kann, benötigt er eine angenehme Schlafumgebung; Pflegende schaffen die Voraussetzungen für erholsamen Schlaf und beraten zur Schlafhygiene. Prinzipien gesunder Schlafhygiene: tagsüber regelmäßig bewegen, leichte Abendmahlzeiten, Aktivitäten vor dem Schlafen allmählich reduzieren, möglichst immer zur selben Zeit ins Bett, Ermüdung erkennen, warme Füße, Entspannungstechniken. Optimale Raumtemperatur zum Schlafen liegt bei ca. 18 °C, störendes Licht vermeiden. ⚠️ Die Aussage „Schlafhygiene ist die Basis vor jeder medikamentösen Therapie" ist fachlich korrekt (DGSM/KVT-I als Erstlinie), aber im lokalen Korpus nicht verbatim belegt — Pflege heute belegt nur, dass nichtmedikamentöse Maßnahmen und „natürliche" Hilfsmittel als Alternative zu Schlafmitteln in Betracht kommen, nicht den Vorrang-Superlativ. Quelle beschaffen: DGSM S3-Leitlinie Insomnie.
+**Fakt:** Damit ein Mensch gut schlafen kann, benötigt er eine angenehme Schlafumgebung; Pflegende schaffen die Voraussetzungen für erholsamen Schlaf und beraten zur Schlafhygiene. Prinzipien gesunder Schlafhygiene: tagsüber regelmäßig bewegen, leichte Abendmahlzeiten, Aktivitäten vor dem Schlafen allmählich reduzieren, möglichst immer zur selben Zeit ins Bett, Ermüdung erkennen, warme Füße, Entspannungstechniken. Optimale Raumtemperatur zum Schlafen liegt bei ca. 18 °C, störendes Licht vermeiden. Nichtmedikamentöse Maßnahmen haben Vorrang vor Schlafmitteln: Die DGSM-S3-Leitlinie Insomnie empfiehlt die kognitive Verhaltenstherapie für Insomnie (KVT-I, deren Bestandteil die Schlafhygiene-/Stimuluskontroll-Beratung ist) als erste Behandlungsoption — vor einer medikamentösen Therapie.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
@@ -296,8 +297,9 @@
 - Zitat: "Entspannungstechniken erlernen" (Prinzip 7/7)
 - Zitat: "optimale Raumtemperatur zum Schlafen liegt bei ca. 18 °C"
 - Zitat: "Störendes Licht vermeiden, z. B. Gardinen zuziehen" (belegt: störendes Licht vermeiden)
-- Zitat: "Als Alternative zu Schlafmitteln kommen neben den nichtmedikamentösen" (Fortsetzung: "Maßnahmen pflanzliche Präparate ..." — belegt nichtmedikamentöse Maßnahmen als Alternative, NICHT den „Basis vor jeder Medikation"-Superlativ)
-- ⚠️ Nicht verbatim belegbar: „Schlafhygiene ist die Basis vor jeder medikamentösen Therapie" — Vorrang-Superlativ; Quelle beschaffen: DGSM S3-Leitlinie Insomnie (KVT-I als Erstlinie).
+- Zitat: "Als Alternative zu Schlafmitteln kommen neben den nichtmedikamentösen" (Fortsetzung: "Maßnahmen pflanzliche Präparate ..." — belegt nichtmedikamentöse Maßnahmen als Alternative)
+- Quelle: `leitlinien-volltext/dgsm-insomnie-2025.txt`
+- Zitat: "Die kognitive Verhaltenstherapie für Insomnie (KVT-I) soll bei allen Patientinnen und Patienten mit Insomnie als erste Behandlungsoption empfohlen werden" (DGSM-S3-Leitlinie Insomnie 2025, Empfehlung T1 — belegt: nichtmedikamentöse Therapie als Erstlinie vor Medikation; Schlafhygiene-Beratung ist KVT-I-Bestandteil)
 
 **Misconceptions:**
 - `M1`: **"Wenn ich nicht schlafen kann, sollte ich liegen bleiben und warten"** — Nach 20 Min ohne Einschlafen gilt die Stimulus-Kontroll-Regel: aufstehen, ruhige Tätigkeit, erst bei Müdigkeit zurück ins Bett, damit das Bett nicht als "Ort des Wachliegens" konditioniert wird. Fachbegriff: "Stimulus-Kontroll-Verstoß".

@@ -48,6 +48,10 @@ getlaw() { # <url> <slug>
 getlaw "https://www.gesetze-im-internet.de/bgb/__630f.html" "bgb-630f"
 getlaw "https://www.gesetze-im-internet.de/stgb/__267.html" "stgb-267"
 getlaw "https://www.gesetze-im-internet.de/stgb/__203.html" "stgb-203"
+
+# DGSM S3-Leitlinie Insomnie bei Erwachsenen 2025 (AWMF 063-003) — belegt schlaf F-10
+# (Alkohol kein Schlafmittel) + F-12 (KVT-I/nichtmedikamentoes als Erstlinie vor Medikation).
+get "https://register.awmf.org/assets/guidelines/063-003l_S3_Insomnie-bei-Erwachsenen_2025-04.pdf" "dgsm-insomnie-2025"
 # Weitere frei verfügbare Quellen hier ergänzen (siehe specs/QUELLEN-EINKAUFSLISTE-2026-06-10.md Abschnitt A/B):
 # get "<DGE D-A-CH Referenzwerte>" "dge-referenzwerte"
 # get "<ESPEN/DGEM Klinische Ernaehrung>" "espen-klinische-ernaehrung"
