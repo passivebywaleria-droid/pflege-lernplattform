@@ -10,7 +10,7 @@
 | quellen | Pflege heute 7. Aufl. Kap. 7.7 Enterale Ernährung über Sonden; ASPEN Consensus Recommendations for Refeeding Syndrome 2020 (Nutr Clin Pract 35(2):178–195); DNQP Expertenstandard Ernährungsmanagement (2. Aktual.); DGEM S3-Leitlinie Klinische Ernährung 2013/2020 |
 | einträge | 11 |
 | erstellt | 2026-06-10 (Pipeline v9) |
-| grounding | 2026-06-11 auf STÜTZT gehoben (Dozentin A): 67 Verbatim-Belege, alle ✅ MATCH. Pro Teilaussage ein Beleg (R2). Offen als ⚠️ Quelle beschaffen (DGEM S3): pH <5,5 (F-03), ZPE-Obergrenze ~2000 mosmol/l (F-11), Zottenatrophie/„physiologischer" (F-01, nur didaktischer Transfer). [F-09 Spülmenge nun via DGEM-Heimenterale 2024 belegt: 20–40 mL.] „schwere Mukositis" (F-01) → korrigiert auf belegtes „Stenosen im MDT"; Cola-Aussage (F-09) → an Korpus angepasst (Ausnahme-Spüllösung, nicht „ohne Evidenz"). |
+| grounding | 2026-06-11 auf STÜTZT gehoben (Dozentin A): 67 Verbatim-Belege, alle ✅ MATCH. Pro Teilaussage ein Beleg (R2). [F-09 Spülmenge via DGEM-Heimenterale 2024 belegt: 20–40 mL.] „schwere Mukositis" (F-01) → korrigiert auf belegtes „Stenosen im MDT"; Cola-Aussage (F-09) → an Korpus angepasst (Ausnahme-Spüllösung). 2026-06-11 (Welle icare-Volltext): F-01 karenzbedingte Darmschleimhaut-Atrophie via icare-krankheitslehre verbatim belegt (⚠️ gelöst); F-11 >800-mosmol/l-Schwelle via icare-pflege + icare-examen-kompakt zusätzlich verbatim verstärkt. Verbleibende ⚠️ (DGEM-S3-Tool, im icare-Korpus NICHT verbatim): pH <5,5 (F-03 — DGEM-Heimenterale belegt ≤5; icare-pflege nennt „Magensäure pH ca. 2"), ZPE-Obergrenze ~2000 mosmol/l (F-11), Cola-flockt-Eiweiß-Aussage (F-09/M1, nur falls als Lehraussage genutzt). |
 
 ---
 
@@ -30,7 +30,9 @@
 - Zitat: "Die enterale Ernährung ist im Vergleich zur" (enteral komplikationsärmer — Forts. „parenteralen Ernährung mit deutlich weniger Komplikationen behaftet")
 - Zitat: "wird der Verdauungstrakt völlig umgangen" (TPE-Indikation)
 - Zitat: "Stenosen im Magen-Darm-Trakt oder schwerem Kurzdarmsyndrom" (parenterale Indikationen; Forts. „bei Ileus … oder schwerem Kurzdarmsyndrom")
-- Zur Zottenatrophie/„enteral ist physiologischer": ⚠️ Quelle beschaffen (DGEM S3 Klinische Ernährung — Darmmukosa-Atrophie bei fehlender enteraler Stimulation) — im gesamten Korpus nicht verbatim auffindbar: Pflege heute nennt „Zottenatrophie" nur im Zöliakie-Kontext; DGEM-Heimenterale-Leitlinie, ASPEN-Refeeding und icare-examen-kompakt ohne verbatim-Beleg für nutritiv bedingte Darmatrophie bei TPE. Nur als didaktischer Transfer (Merkhilfe) verwenden, nicht als zitierbarer Fakt ausgeben.
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "bei zu langer Nahrungskarenz eine Atrophie der Darmschleimhaut mit dem Risiko" (Forts. „einer Einwanderung von Darmbakterien in das nekrotische Gewebe droht" — belegt nutritiv/karenzbedingte Darmschleimhaut-Atrophie bei fehlender enteraler Ernährung; trägt den Transfer „Darm verkümmert ohne Benutzung")
+- Hinweis: Der Fachbegriff „Zottenatrophie" ist im Korpus nur im Zöliakie-Kontext belegt (icare-pflege/-krankheitslehre); die karenzbedingte Mukosa-Atrophie ist nun aber über icare-krankheitslehre (Pankreatitis-Kapitel: „bei zu langer Nahrungskarenz eine Atrophie der Darmschleimhaut") verbatim belegt. Im Content „Atrophie der Darmschleimhaut" zitieren, „Zottenatrophie" als didaktische Merkhilfe kennzeichnen.
 **Praxisfehler:** Parenteral wird als "moderner" für besser gehalten — dabei ist enteral komplikationsärmer.
 **Transfer:** Wie ein Muskel, der nur stark bleibt, wenn er benutzt wird: Der Darm verkümmert (Zottenatrophie), wenn er nicht ernährt wird.
 
@@ -291,7 +293,11 @@
 - Zitat: "Die enterale Ernährung ist im Vergleich zur" (enteral komplikationsärmer)
 - Zitat: "Katheterinfektionen (z. B. durch ZVK)" (parenterales Hauptrisiko: Katheterinfektion)
 - Zitat: "unterliegt dem Arzneimittelgesetz" (parenterale Lösungen = Arzneimittel, ärztliche Anordnung)
-- Zur Obergrenze „ZPE bis ~2000 mosmol/l": ⚠️ Quelle beschaffen (Pflege heute Kap. 43.5.6 / DGEM S3-Leitlinie 2013/2020) — die ZVK-Schwelle >800 mosmol/l ist verbatim belegt, der 2000-mosmol/l-Obergrenzwert nicht. Bis zur Beschaffung nur die >800-Schwelle als belegt führen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "800 bis 900 mosmol/l kommt es zu Gefäßirritationen. Sie dürfen" (Forts. „deshalb nicht peripher verabreicht werden" — bestätigt die periphervenöse Obergrenze und ZVK-Pflicht oberhalb davon)
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "mit einer hohen Osmolarität (mehr als 800 mosmol/l," (Forts. „… dürfen nicht über periphervenöse Zugänge verabreicht werden" — bestätigt >800-mosmol/l-Schwelle)
+- Zur Obergrenze „ZPE bis ~2000 mosmol/l": ⚠️ Quelle beschaffen (Pflege heute Kap. 43.5.6 / DGEM S3-Leitlinie 2013/2020) — die ZVK-Schwelle >800 mosmol/l ist mehrfach verbatim belegt (Pflege heute, icare-pflege „800–900", icare-examen-kompakt „mehr als 800"), der 2000-mosmol/l-Obergrenzwert für ZVK-Lösungen aber weiterhin NICHT. Bis zur Beschaffung nur die >800-Schwelle als belegt führen.
 **Praxisfehler:** Medikamente über dasselbe Lumen wie die parenterale Ernährung geben — Ausflockung, Inkompatibilität, erhöhtes Infektionsrisiko.
 
 **Misconceptions:**

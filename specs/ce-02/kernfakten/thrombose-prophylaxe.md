@@ -10,6 +10,7 @@
 | quellen | AWMF S3-Leitlinie Prophylaxe der venösen Thromboembolie (VTE), Registernr. 003-001, Version 4.0 (2025 Update zu 2015); Pflege heute Kap. Thromboseprophylaxe; I Care Pflege Kap. Prophylaxen; DGP (Deutsche Gesellschaft für Phlebologie) Leitlinien |
 | einträge | 13 |
 | erstellt | 2026-04-21 |
+| grounding | 2026-06-11 (icare-krankheitslehre-Korpus): F-02 ~90-%-Lokalisationsquote aufgelöst (Becken-/Beinvenen, nicht Beinvenen allein); F-11 ~50 % klinisch stumm + Homans/Payr/Meyer unzuverlässig aufgelöst (Homans-Sensitivität 60–90 % bleibt ⚠️); F-12 Atemnot als erstes LE-Zeichen qualitativ belegt (80-%-Quote bleibt ⚠️). Offen: F-03 (50 % proximale TVT→LE), F-05 (bereits korrigiert, kein offenes ⚠️), F-07 (Heparin-Luftblock — in keinem Korpus). |
 
 ---
 
@@ -46,8 +47,10 @@
 - Zitat: "Von besonderer klinischer Bedeutung ist die tiefe Venenthrombose (TVT) der Beine"
 - Quelle: `leitlinien-volltext/awmf-vte-prophylaxe.txt`
 - Zitat: "Pathophysiologisch entwickeln sich VTE in den tiefen Venen (TVT), bevorzugt in den Beinvenen"
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "Im speziellen Fall der tiefen Venen an den Extremitäten spricht man von einer tiefen Venenthrombose (TVT) oder auch Phlebothrombose; 90 % davon betreﬀen Becken- oder Beinvenen." — Lokalisations-Quote 90 % belegt (Bezugswert: Becken- ODER Beinvenen zusammen, nicht Beinvenen allein)
 
-> ⚠️ Detail-Wert „90 % aller TVT in den Beinvenen": Die AWMF-S3-Leitlinie VTE (2025) belegt verbatim nur die *Lokalisation* („bevorzugt in den Beinvenen"), gibt aber KEINE konkrete Quote von 90 % an. Auch im Pflege-heute-Volltext nicht enthalten. Konkrete Prozentangabe entfernt — qualitativer Beleg („bevorzugt") steht. Bis zur lokalen Verfügbarkeit einer Epidemiologie-Quelle (z. B. DGP-Leitlinie Venenthrombose/LE) keine 90-%-Zahl behaupten.
+> ✅ Detail-Wert AUFGELÖST (2026-06-11): Die ~90-%-Quote ist jetzt verbatim aus I Care Krankheitslehre belegbar. WICHTIG zur exakten Scope: Der Korpus belegt „90 % … Becken- ODER Beinvenen" (gemeinsam), NICHT „90 % in den Beinvenen" allein. Im Schüler-Content daher als „rund 90 % aller TVT betreffen die Becken- oder Beinvenen" formulieren — nicht auf Beinvenen verkürzen.
 **Praxisfehler:** Oberflächliche Phlebitis wird als harmlos abgetan, ohne auf ein mögliches Einwachsen zu achten.
 
 **Misconceptions:**
@@ -270,8 +273,12 @@
 - Zitat: "Schwellung, Rötung oder blaue (livide)"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Überwärmung von Ober- oder Unterschenkel"
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "In etwa der Hälfte der Fälle fehlen diese typischen Symptome jedoch; die Thrombose wird dann als „klinisch stumm“ bezeichnet." — ~50 % klinisch stumm verbatim belegt
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "Die nach ihren Erstbeschreibern Meyer, Payr und Homan benannten Zeichen erlauben jedoch keine sichere Diagnosestellung: Eine Thrombose kann hiermit weder ausgeschlossen noch bestätigt werden." — Homans/Payr/Meyer unzuverlässig (qualitativ) belegt
 
-> ⚠️ Detail-Werte „etwa 50 % der TVT klinisch stumm" und „Homans-Sensitivität 60–90 %": Pflege heute belegt verbatim nur, dass die Beschwerden „auch gering" sein können (Symptom-Variabilität) — gibt aber KEINE 50-%-Quote an. Eine Homans-Sensitivitätsangabe (60–90 %) ist in keinem der beiden lokalen Volltexte (AWMF VTE, Pflege heute) enthalten. Beide Zahlen bis zur lokalen Verfügbarkeit einer Diagnostik-Quelle (z. B. DGP/AWMF Venenthrombose-Diagnostik) als ⚠️ Detail-Werte führen — nicht als belegt behaupten. Die *qualitative* Kernaussage (TVT oft symptomarm; Homans veraltet/unzuverlässig/auslösegefährlich) bleibt fachlich korrekt und steht im Misconception-Block.
+> ✅/⚠️ TEILWEISE AUFGELÖST (2026-06-11): Der Detail-Wert „etwa 50 % der TVT klinisch stumm" ist jetzt verbatim aus I Care Krankheitslehre belegbar („In etwa der Hälfte der Fälle fehlen diese typischen Symptome"). Ebenso ist die qualitative Aussage „Homans-/Payr-/Meyer-Zeichen erlauben keine sichere Diagnose" jetzt belegt. NICHT belegt bleibt die konkrete Homans-*Sensitivitätsangabe* (60–90 %) — in keinem lokalen Korpus enthalten. Diese Prozentzahl bis zur Verfügbarkeit einer Diagnostik-Primärquelle nicht als belegt behaupten.
 **Praxisfehler:** Pflege prüft Homans-Zeichen als "Standard" — auslösend kann Emboliegefahr sein (Thrombusteile lösen!); klinisch stumme TVT wird verpasst.
 **Transfer:** [Transfer] Wie in der alten Medizin, wo man dem Patienten auf die Stirn gefühlt hat um Fieber zu messen — heute haben wir Thermometer. Homans ist wie Stirnfühlen: ungenau, kann Schaden machen.
 
@@ -296,8 +303,10 @@
 - Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`
 - Zitat: "Tachykardie. Ein Pulsanstieg über 100/Minute bei Erwachsenen wird als Tachykardie bezeichnet"
 - Zitat: "Tachypnoe (Atemfrequenz > 20/min)"
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "Das erste Zeichen ist oft die plötzliche Atemnot. Später kommen auch Husten und atemabhängige Brustschmerzen dazu." — Atemnot als erstes/führendes LE-Zeichen (qualitativ) belegt
 
-> ⚠️ Detail-Wert „Dyspnoe häufigstes Symptom (80 %)": Dieser Prozentsatz ist in keinem der lokalen Korpora (Pflege heute, AWMF VTE, Paetz, Prüfungswissen) verbatim enthalten. Bis zur lokalen Verfügbarkeit einer LE-Epidemiologie-Quelle (ESC Acute Pulmonary Embolism Guidelines) keine 80-%-Zahl behaupten — qualitativer Befund (Dyspnoe als häufigstes Symptom) bleibt fachlich korrekt.
+> ⚠️ Detail-Wert „Dyspnoe häufigstes Symptom (80 %)": Die *qualitative* Aussage „Atemnot ist das erste/führende LE-Zeichen" ist jetzt verbatim aus I Care Krankheitslehre belegt. Die konkrete *80-%-Quote* bleibt in keinem lokalen Korpus (Pflege heute, AWMF VTE, Paetz, Prüfungswissen, I Care Krankheitslehre) enthalten. Bis zur Verfügbarkeit einer LE-Epidemiologie-Quelle (ESC Acute Pulmonary Embolism Guidelines) keine 80-%-Zahl behaupten.
 **Praxisfehler:** Symptome werden als Panikattacke oder Angst fehlgedeutet; Patient wird allein gelassen oder nicht priorisiert.
 **Transfer:** [Transfer] Wie ein Alarm im Haus — plötzliche Atemnot bei Risikopatient ist die Brandmeldung. Du schickst niemanden hin zum "Nachsehen", du rufst sofort die Feuerwehr.
 

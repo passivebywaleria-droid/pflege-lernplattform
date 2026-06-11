@@ -293,7 +293,13 @@
 - Zitat: "besonders wichtig für Patienten, die ihr Umfeld nicht kontrollieren können"
 - Zitat: "beginnt mit einer Ansprache (Fernsinn), der eine Berührung folgt (Nahsinn)"
 - Zitat: "geht die Berührung stets von einer Initialberührung aus"
-- ⚠️ Die konkrete Stelle „immer an derselben Stelle (Schulter/Oberarm/Brustbein)" und das „vor jeder Handlung" sind in Pflege heute Kap. 12.4 nicht wörtlich ausgewiesen (dort: „individuell angemessen", „stets von einer Initialberührung aus") → Quelle beschaffen (Bienstein/Fröhlich) ODER auf „individuell festgelegte, gleichbleibende rumpfnahe Stelle" entschärfen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "an einer bestimmten, deutlich wahrnehmbaren Stelle berührt werden, z. B. im Bereich des oberen Rumpfes, unterhalb"  (I Care: feste, rumpfnahe Stelle — „im Bereich des oberen Rumpfes, unterhalb der Schulter")
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "der Schulter (basale Initialberührung)"  (I Care: Stelle = unterhalb der Schulter, oberer Rumpf — belegt die rumpfnahe Lokalisation)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Mit einer Initialberührung wird die Maßnahme angekündigt und beendet"  (I Care: Initialberührung kündigt JEDE Maßnahme an und beendet sie — belegt „vor jeder Handlung")
+> Hinweis (2026-06-11): ⚠️ aufgelöst. I Care benennt die Stelle konkret („oberer Rumpf, unterhalb der Schulter") und belegt die Anwendung pro Maßnahme. Die Quelle markiert die Stelle mit „z. B." und erlaubt „in Absprache" eine andere Körperpartie — der Fakt nennt Schulter/Oberarm/Brustbein daher als typische, individuell festgelegte rumpfnahe Stelle, nicht als zwingend einzige.
 **Praxisfehler:** Ohne Initialberührung wird eine Pflegehandlung als Übergriff erlebt — Folge sind Abwehr, Unruhe und Stressreaktionen. Häufig wird sie nur einmal zu Schichtbeginn statt vor jeder Handlung gesetzt.
 
 **Misconceptions:**

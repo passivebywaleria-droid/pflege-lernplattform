@@ -7,10 +7,10 @@
 | cluster | E (Ernährung & Ausscheidung) |
 | geschätzteUE | 10 |
 | wissensart | handlung |
-| quellen | Pflege heute 7. Aufl. Kap. 8.2 Stuhl / 24.2.6 Obstipation / 8.2.6 Enterostoma (Korpus-Primärquelle, verbatim belegt); zu beschaffen für Detail-Zahlen: Heaton/Lewis Bristol Stool Scale 1997, Rom-IV-Kriterien, AWMF S2k Chronische Obstipation 2022, FG SKM Handlungsempfehlungen Stomapflege 2023, DGE-Referenzwert Ballaststoffe |
+| quellen | Pflege heute 7. Aufl. Kap. 8.2 Stuhl / 24.2.6 Obstipation / 8.2.6 Enterostoma (Korpus-Primärquelle, verbatim belegt); I Care Pflege (verbatim: paradoxe Diarrhö/Koprostase, OIC „fast 90 %"); I Care Krankheitslehre (verbatim: Diarrhö-Def > 250 g, Mechanismus-Klassen sekretorisch/exsudativ, Loperamid-Kontraindikation Ileus, C.-difficile-Händewaschen); zu beschaffen für Detail-Zahlen: Heaton/Lewis Bristol Stool Scale 1997, Rom-IV-Kriterien, AWMF S2k Chronische Obstipation 2022, FG SKM Handlungsempfehlungen Stomapflege 2023, DGE-Referenzwert Ballaststoffe |
 | einträge | 14 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md) |
-| grounding | 2026-06-10 Dozentin A — auf STÜTZT gehoben gegen pflege-heute.txt; ungedeckte Detail-Zahlen mit ⚠️ markiert (R3), nicht kaschiert; 2026-06-11 F-03 geruchlos durch kinderkrankenpflege-volltext verbatim belegt |
+| grounding | 2026-06-10 Dozentin A — auf STÜTZT gehoben gegen pflege-heute.txt; ungedeckte Detail-Zahlen mit ⚠️ markiert (R3), nicht kaschiert; 2026-06-11 F-03 geruchlos durch kinderkrankenpflege-volltext verbatim belegt; 2026-06-11 Welle 3 (icare-pflege + icare-krankheitslehre Volltext erschlossen): 4 ⚠️ aufgelöst — F-04 Diarrhö > 250 g (krankheitslehre verbatim), F-05 Mechanismus-Klassen sekretorisch/entzündlich-exsudativ + C.-difficile-Händewaschen (krankheitslehre verbatim), F-07 paradoxe Diarrhö/Koprostase-Mechanismus (icare-pflege verbatim) + Loperamid-Kontraindikation Ileus (krankheitslehre verbatim), F-08 OIC „fast 90 %" (icare-pflege verbatim). Verbleibende ⚠️: F-02 Bristol-Skala (im gesamten Korpus 0 Treffer), F-06 Rom-IV, F-09 Ballaststoffe 30 g/d, F-11 Flatulenz > 20×/d, F-13/F-14 Stoma-Detail-Zahlen (qualitativ belegt, exakte Zahlen nicht), F-05 osmotische/motile Diarrhö-Kategorie · geprüft 2026-06-11 |
 
 ---
 
@@ -112,7 +112,8 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Bei Erwachsenen gelten drei und mehr ungeformte Stuhlausscheidungen täglich als"
 - Zitat: "bei Kindern sind dünnere Stühle"
-- ⚠️ Detail-Zahl „Stuhlmenge > 250 g/Tag" laut WHO/S3-Leitlinie Gastrointestinale Infektionen — in `pflege-heute.txt` nicht verbatim (dort nur Frequenz-Kriterium). Quelle beschaffen ODER Detail aus Schüler-Content weglassen.
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "Unter Diarrhoe (Durchfall) versteht man ein zu hohes Stuhlgewicht (> 250 g) bei einer zu hohen Stuhlfrequenz (> 3-mal pro Tag);" (I Care Krankheitslehre — belegt verbatim die Stuhlmengen-Schwelle > 250 g/Tag zusätzlich zum Frequenzkriterium)
 
 **Misconceptions:**
 - `M1`: **"Einmal weicher Stuhl = Durchfall"** — Definition: drei und mehr ungeformte Stühle/Tag. Ein einzelner weicher Stuhl kann ernährungsbedingt sein.
@@ -129,7 +130,14 @@
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 4 (Analysieren)
 **Primärquelle:** (WHO Cholera-Leitlinie 2017; S3-Leitlinie Gastrointestinale Infektionen 2023; RKI 2023)
-**Beleg:** ⚠️ Quelle beschaffen (S3-Leitlinie Gastrointestinale Infektionen 2023 / RKI 2023) — differenzierte Mechanismus-Klassifikation nicht verbatim in `pflege-heute-volltext/pflege-heute.txt`
+**Beleg:**
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "sekretorische Diarrhoe (nicht entzündlich): Elektrolyte" (Fortsetzung: "und Wasser werden aktiv aus der Darmschleimhaut ins Darmlumen abgegeben (sezerniert)" — belegt Mechanismus sekretorisch)
+- Zitat: "entzündlich-exsudative Diarrhoe: Die Darmschleimhaut" (Fortsetzung: "wird durch die Erreger selbst oder durch deren Toxine geschädigt" — belegt Mechanismus entzündlich/exsudativ)
+- Zitat: "Es kommt zu Flüssigkeitsverlusten bis zu" (Fortsetzung: "20 l/Tag" — Cholera als sekretorische Diarrhö, belegt Reiswasserstuhl-Schweregrad)
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "Händedesinfektion allein reicht nicht aus, da sporenbildende Bakterien mit" (Clostridioides difficile — Fortsetzung: "Händedesinfektionsmittel nur unzureichend abgetötet werden → vor der Händedesinfektion müssen die Hände gründlich gewaschen werden"; belegt verbatim: alkoholische Händedesinfektion wirkt nicht, mechanisches Waschen nötig)
+- ⚠️ Die Mechanismus-Klassen „osmotisch" (sistiert beim Fasten) und „motil" (Hyperthyreose) als eigene Kategorien sind im Korpus nicht als Diarrhö-Einteilung verbatim — I Care Krankheitslehre belegt sekretorisch + entzündlich-exsudativ + systemisch. Quelle für die vollständige Vier-Mechanismen-Klassifikation (osmotisch/sekretorisch/exsudativ/motil) weiterhin S3-Leitlinie Gastrointestinale Infektionen beschaffen.
 
 **Misconceptions:**
 - `M1`: **"Bei allen Magen-Darm-Infekten hilft Handdesinfektionsmittel zum Schutz"** — Gefährlich bei Clostridioides difficile: die Sporen sind alkoholresistent, nur mechanische Reinigung mit Wasser und Seife entfernt sie.
@@ -174,7 +182,12 @@
 - Zitat: "aufgestauten Kotmassen"
 - Zitat: "Folge ist eine paradoxe Diarrhö mit"
 - Zitat: "ständigem Stuhlschmieren"
-- ⚠️ Detail „Loperamid (Imodium) kontraindiziert" nicht im Korpus (Wirkstoff nicht in `pflege-heute.txt`). Quelle beschaffen (Fachinfo Loperamid / AWMF S2k Chronische Obstipation 2022) ODER im Schüler-Content als pharmakologische Logik ohne Zahlenwert führen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "In manchen Fällen sammelt sich im Enddarm eine sehr große Menge" (Merke Paradoxe Diarrhö — Fortsetzung: "Stuhl an und es bilden sich Kotsteine. Entlang der Kotsteine und des Stuhls im Rektum kann flüssiger Stuhl aus dem Dickdarm vorbeifließen"; belegt verbatim den Überlauf-Mechanismus der paradoxen Diarrhö bei Koprostase)
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "Loperamid sollte immer nur kurzfristig eingenommen werden. Es ist kontraindiziert bei einem Ileus und" (Fortsetzung: "bei schweren fieberhaften Darminfektionen mit blutigem Stuhlgang"; belegt verbatim: Loperamid ist bei Ileus kontraindiziert — die pharmakologische Grundlage für die Kontraindikation bei Koprostase/Ileus-Gefahr)
+- Zitat: "Loperamid ist ein Opioid, das die Darmperistaltik und die Sekretion im MagenDarm-Trakt hemmt; außerdem erhöht es den Tonus der" (Fortsetzung: "Schließmuskulatur" — belegt Wirkmechanismus, der die Koprostase verschlimmern würde)
+- ⚠️ Der Markenname „Imodium" als Synonym für Loperamid ist im Korpus belegt (I Care Krankheitslehre: „Loperamid (Imodium)"). Die exakte Formulierung „kontraindiziert bei Koprostase" steht nicht verbatim — belegt ist „kontraindiziert bei einem Ileus"; die Koprostase-Kontraindikation ist die direkte pharmakologische Schlussfolgerung (Peristaltik-/Tonus-Hemmung).
 
 **Misconceptions:**
 - `M1`: **"Bei Durchfall gibt man immer erstmal Imodium (Loperamid)"** — Bei älteren, immobilen Patienten erst paradoxe Diarrhö bei Koprostase ausschließen. Loperamid würde die Obstipation massiv verschlimmern — bis zum Ileus.
@@ -198,11 +211,13 @@
 - Zitat: "Medikamente, z. B. Opiate"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "gegen eine opioidbedingte Obstipation und"
-- ⚠️ Detail-Zahl „OIC bei > 90 % der Opioid-Patienten" nicht im Korpus. Quelle beschaffen (AWMF S2k Chronische Obstipation 2022 / S3-Leitlinie Palliativmedizin) ODER im Schüler-Content ohne Prozentzahl führen („sehr häufig, Laxans-Prophylaxe obligat").
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "tritt bei fast 90 % der Pflegeempfänger mit" (Fortsetzung: "Opioidtherapie auf, dementsprechend von Anfang an Obstipationsprophylaxe ... durchführen (ballaststoﬀreiche Kost, viel Flüssigkeit, ggf. Laxanzien, Bewegung)"; I Care Pflege — belegt verbatim die Häufigkeitsangabe „fast 90 %" und die obligate Prophylaxe ab Therapiebeginn)
+- Zitat: "Eine opioidinduzierte Obstipation führt häufig dazu, dass Betroﬀene" (Fortsetzung: "die Schmerzmedikamente eigenständig absetzen" — belegt klinische Relevanz der OIC)
 
 **Misconceptions:**
 - `M1`: **"Obstipation ist normal im Alter — das muss man akzeptieren"** — Die altersbedingten Faktoren (weniger Bewegung, geringeres Durstgefühl, Multimedikation) sind pflegerisch beeinflussbar. Häufig ≠ normal.
-- `M2`: **"Bei Opioiden entsteht Obstipation nur manchmal"** — Opioidbedingte Obstipation tritt sehr häufig auf; Laxanzien werden gezielt gegen die opioidbedingte Obstipation gegeben. Standard: Opioid starten = Laxans-Prophylaxe starten. (Exakte Häufigkeitszahl → Primärquelle, s. Beleg-Flag.)
+- `M2`: **"Bei Opioiden entsteht Obstipation nur manchmal"** — Opioidbedingte Obstipation tritt bei fast 90 % der Pflegeempfänger mit Opioidtherapie auf (I Care Pflege verbatim); Laxanzien werden gezielt gegen die opioidbedingte Obstipation gegeben. Standard: Opioid starten = Laxans-Prophylaxe starten.
 - `M3`: **"Ballaststoffe helfen immer — je mehr, desto besser"** — Ballaststoffe brauchen ausreichend Flüssigkeit zum Quellen; ohne Trinken können sie die Obstipation verschlimmern.
 
 ---

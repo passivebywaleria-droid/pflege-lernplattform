@@ -10,7 +10,7 @@
 | quellen | Hatch/Maietta Grundkonzept; DNQP Expertenstandard Mobilität 2020; Kinaesthetics e.V. (Arbeitsdefinitionen); I Care Pflege Kap. Mobilität (als Faktenquelle, nicht Textquelle) |
 | einträge | 13 |
 | erstellt | 2026-04-21 (Pipeline v9) |
-| grounding | 2026-06-10 auf STÜTZT gehoben (Dozentin A) — 43 Verbatim-Belege (`pflege-heute-volltext/pflege-heute.txt`), `--check-file` ✅ 0 FAIL. 2026-06-11 nachgezogen: F-11 Bein-Arm-Choreografie durch pflege-heute-Belege gestützt; F-13 ArbSchG-Pflicht durch § 1 ArbSchG (pruefungswissen) + § 5/§ 15 ArbSchG (icare-examen-kompakt) belegt. Verbleibende ⚠️: F-01 „obsolet" (didaktische Zuspitzung), F-02 „gleichzeitig" (Lehr-Interpretation), F-07 historische ATL-Liste (entfernt), F-10 8-Schritt-Nummerierung (didaktisch, kein normierter Quellensatz), F-12 Parkinson-Wirksamkeit (Plausibilitäts-Aussage), F-13-M1 Rückengurt-Studie (kein BGW-Volltext im Korpus). |
+| grounding | 2026-06-10 auf STÜTZT gehoben (Dozentin A) — 43 Verbatim-Belege (`pflege-heute-volltext/pflege-heute.txt`), `--check-file` ✅ 0 FAIL. 2026-06-11 nachgezogen: F-11 Bein-Arm-Choreografie durch pflege-heute-Belege gestützt; F-13 ArbSchG-Pflicht durch § 1 ArbSchG (pruefungswissen) + § 5/§ 15 ArbSchG (icare-examen-kompakt) belegt. 2026-06-11 (I-Care-Korpus): F-01 „Heben/Tragen vermeiden" + F-02 „6 Konzepte als Analyse-Raster" durch `icare-pflege-volltext` belegt — beide ⚠️ aufgelöst. Verbleibende ⚠️: F-10 8-Schritt-Nummerierung (didaktisch, kein normierter Quellensatz — I Care beschreibt die Bettkante-Mobilisation als Etappen ohne fixe 8er-Sequenz), F-12 Parkinson-Wirksamkeit (Plausibilitäts-Aussage — I Care belegt Rigor nur als Symptom, keine Kinästhetik-Parkinson-Wirksamkeit), F-13-M1 Rückengurt-Studie (kein Rückengurt-Beleg im Korpus). |
 
 ---
 
@@ -31,7 +31,11 @@
 - Zitat: "Bewegungsabläufe für Patient und Pflegende so physiologisch und kräfteschonend wie möglich"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "durch die Vermeidung von unphysiologischem Heben und Tragen zu betreiben"
-> ⚠️ Teilaussage „Hebetechniken sind im Routineeinsatz obsolet" — Quelle entschärft: Pflege heute formuliert nicht „obsolet", sondern „Heben und Tragen … widersprechen dem körperschonenden Prinzip der Kinaesthetics" (siehe F-10-Beleg). Aussage entsprechend als didaktische Zuspitzung lesen, nicht als wörtlichen Quellensatz.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "unphysiologisches und schädliches Heben und Tragen zu"  (I Care: Ziel der Kinästhetik ist „unphysiologisches und schädliches Heben und Tragen zu vermeiden" — stützt die Abgrenzung Kinästhetik ↔ Hebetechnik)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Das Konzept wurde in den 1970er-Jahren von Dr. Frank"  (I Care: Hatch/Maietta-Ursprung 1970er-Jahre, Hatch Tänzer/Verhaltenskybernetiker, Maietta Psychologin)
+> Hinweis (2026-06-11): Die didaktische Zuspitzung „Hebetechniken im Routineeinsatz obsolet" ist jetzt durch I Care gedeckt — die Quelle nennt das Vermeiden von „unphysiologischem und schädlichem Heben und Tragen" ausdrücklich als Kinästhetik-Ziel. Pflege heute formuliert komplementär „Heben und Tragen … widersprechen dem körperschonenden Prinzip der Kinaesthetics" (siehe F-10-Beleg).
 **Praxisfehler:** Routine-Transfers werden weiterhin hebend durchgeführt, weil es "schneller geht" — langfristig Rückenschäden + Deaktivierung des Patienten.
 **Transfer:** Wie beim Tanzen: einer führt, einer folgt — aber beide bewegen sich. Wer den Partner trägt, tanzt nicht, er schleppt.
 
@@ -55,8 +59,12 @@
 - Zitat: "Sechs kinästhetische Konzepte sind die Basis"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Interaktion • Funktionale Anatomie • Menschliche Bewegung • Anstrengung • Menschliche Funktionen • Umgebung"
-> Hinweis: Das 6. Konzept heißt in Pflege heute „Umgebung(sgestaltung)", das 5. „Menschliche **Funktionen**" (Plural) — Fakt-Liste daran angeglichen.
-> ⚠️ Teilaussage „immer gleichzeitig präsent / Analyse-Raster" ist didaktische Rahmung; Pflege heute belegt die Liste, nicht die Gleichzeitigkeits-Aussage. Als Lehr-Interpretation gekennzeichnet.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Das Konzeptsystem „Kinästhetik“ basiert auf folgenden Konzepten"  (I Care listet anschließend: 1. Interaktion, 2. Funktionale Anatomie, 3. Menschliche Bewegung, 4. Anstrengung, 5. Menschliche Funktion, 6. Umgebung)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Über die 6 Konzepte kann diese diﬀerenziert analysiert"  (I Care: Aktivität wird „über die 6 Konzepte … differenziert analysiert und erfahren" — stützt die Lesart der 6 Konzepte als Analyse-Raster jeder Bewegungssituation)
+> Hinweis: Das 6. Konzept heißt in Pflege heute „Umgebung(sgestaltung)", das 5. „Menschliche **Funktionen**" (Plural) — I Care nennt das 5. „Menschliche Funktion" (Singular). Fakt-Liste an die belegte Reihenfolge angeglichen.
+> Hinweis (2026-06-11): Die „Analyse-Raster"-Rahmung ist jetzt durch I Care gedeckt („Über die 6 Konzepte kann diese differenziert analysiert und erfahren werden"). Die Zusatz-Formulierung „immer gleichzeitig präsent" bleibt als didaktische Lehr-Interpretation lesbar — die Quelle belegt das Raster, nicht wörtlich die Gleichzeitigkeit.
 
 **Misconceptions:**
 - `M1`: **"Die 6 Konzepte sind eine Reihenfolge"** — Nein, sie laufen parallel. Jede Bewegung enthält alle 6 Aspekte gleichzeitig.
@@ -240,7 +248,7 @@
 > ⚠️ Drei Detailangaben sind in Pflege heute NICHT belegt und wurden korrigiert/markiert:
 > - „Stuhl **45°** zum Bett" → Pflege heute nennt keinen Winkel; nur „Stuhl so dicht wie möglich ans Bett". 45°-Angabe entfernt (war ungedeckt; M1 unten entsprechend entschärft).
 > - „Betthöhe **knapp über Patientenhüfte**" → Pflege heute: Liegefläche auf **Beckenhöhe der Pflegenden** (rückengerechtes Arbeiten). Angabe ersetzt.
-> - Die strikte **8-Schritt-Nummerierung** ist eine didaktische Strukturierung der Plattform; Pflege heute beschreibt Aufsetzen + Mobilisation als Etappen ohne fixe 8er-Sequenz. ⚠️ Quelle beschaffen (Hatch/Maietta Kinästhetik-Grundlagen / Kinaesthetics e.V.), falls eine normierte Schrittzahl belegt werden soll.
+> - Die strikte **8-Schritt-Nummerierung** ist eine didaktische Strukturierung der Plattform; Pflege heute UND I Care beschreiben Aufsetzen + Mobilisation als Etappen ohne fixe 8er-Sequenz. Die einzelnen Etappen (Beine nacheinander herausschieben, mit dem Arm abdrücken, Oberkörper selbst aufrichten, Schinkengang/Gewichtsverlagerung) sind durch I Care belegt (siehe Belege unten). ⚠️ Verbleibend: nur die normierte Schrittzahl „8" ist im Korpus nicht belegt — falls eine fixe Schrittzahl behauptet werden soll, Hatch/Maietta-Grundlagen bzw. Kinaesthetics e.V. beschaffen.
 
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Handlung + Sequenz
@@ -257,6 +265,14 @@
 - Zitat: "Heben und Tragen sowie ruckartige Gewichtsverlagerungen widersprechen"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "das Patientenbett so weit wie möglich senken oder einen Stuhl so dicht wie möglich ans Bett"
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "winkelt mit Unterstützung leicht die Beine an und schiebt diese nacheinander aus"  (I Care „Mobilisation an die Bettkante": Beine nacheinander aus dem Bett schieben — belegt Schritt 3)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "drückt er sich mit dem Arm von der"  (I Care: Patient drückt sich selbst mit dem Arm von der Bettkante ab — Eigenaktivität statt Heben, belegt Schritt 4)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "richtet den Oberkörper ggf. mit Unterstützung an der Schulter auf"  (I Care: Pflege unterstützt nur an der Schulter, Patient richtet selbst auf)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "durch Gewichtsverlagerung von einer Seite auf die andere"  (I Care „Schinkengang": Gesäß durch Gewichtsverlagerung an die Bettkante bringen — belegt gewichtsbasiertes Vorgehen)
 **Praxisfehler:** Transfer wird "in einem Ruck" durchgeführt — Patient kommt nicht hinterher, Pflegekraft trägt ihn effektiv.
 
 **Misconceptions:**

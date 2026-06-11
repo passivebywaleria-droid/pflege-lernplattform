@@ -8,7 +8,7 @@
 | geschätzteUE | 8 |
 | wissensart | handlung |
 | quellen | Pflege heute 7. Aufl. Kap. 7 Ernährung (verbatim-belegt); DNQP Expertenstandard Ernährungsmanagement 1. Aktual. 2017/2024; DGE/ÖGE/SGE D-A-CH-Referenzwerte (Erläuterungen, lokaler Extrakt — Einzelnährstoff-Tabellen NICHT enthalten); I Care Pflegeexamen kompakt (Thieme, verbatim-belegt); Prüfungswissen Pflegefachfrau (Elsevier, verbatim-belegt); Hoehl/Kullick Kinderkrankenpflege 5. Aufl. (verbatim-belegt); WHO 2015 Guideline Sugars intake (verbatim-belegt, leitlinien-volltext); Atwater 1899 |
-| grounding-stand | 2026-06-11, zweite Überarbeitung. Neue Korpora (icare-examen-kompakt, pruefungswissen, kinderkrankenpflege) integriert. Aufgelöste ⚠️: F-01 Makro-/Mikronährstoff-Terminologie, F-04 0,8–1 g/kgKG Protein-Referenz + Senioren-Erhöhung, F-08 Vitamin-D-Synthese (Haut-Vorstufe + UV), F-09 Mengenelemente/Spurenelemente-Definition nach Körpertrockenmasse, F-09/M1 Jod-Richtwert, F-10 +500 ml/°C Fieber, F-10 1,5-l-Trinkmenge, F-12 DGE-Prozentwerte Erwachsene. 2026-06-11 (2): WHO Zucker <10%/<5% (F-02) via who-zucker-2015.txt verbatim aufgelöst. Verbleibende ⚠️ (DGE-Tool erforderlich): Gehirn 120 g Glukose (F-02), gesättigte FA <10% (F-03), 20 µg/800 IE Vitamin-D-Referenzwert (F-08), +700 ml Stillen (F-10), Ballaststoffe ≥30 g (F-06). |
+| grounding-stand | 2026-06-11, dritte Überarbeitung (icare-pflege/-anatomie-Volltext erschlossen). Aufgelöste ⚠️ (Vorrunden): F-01 Makro-/Mikronährstoff-Terminologie, F-04 0,8–1 g/kgKG Protein-Referenz + Senioren-Erhöhung, F-08 Vitamin-D-Synthese (Haut-Vorstufe + UV), F-09 Mengenelemente/Spurenelemente nach Körpertrockenmasse, F-09/M1 Jod-Richtwert, F-10 +500 ml/°C Fieber, F-10 1,5-l-Trinkmenge, F-12 DGE-Prozentwerte, F-02 WHO Zucker <10%/<5%. 2026-06-11 (3): F-08 Vitamin-D-Synthese-Mechanismus (Cholecalciferol aus Cholesterin in Keratinozyten der Haut unter Sonnenlicht) via icare-anatomie verbatim belegt; F-04 Senioren-Protein 0,8–1,5 g/kgKG + 1,0 g/kg-Untergrenze (Schuetz 2017) via icare-pflege verbatim verstärkt. Verbleibende ⚠️ (DGE-Tool erforderlich, im neuen Korpus NICHT verbatim auffindbar): Gehirn 120 g Glukose/Tag (F-02), gesättigte FA <10% (F-03), Alkohol 7 kcal/g + Ballaststoffe ~2 kcal/g (F-05), Ballaststoffe ≥30 g (F-06), 20 µg/800 IE Vitamin-D-Referenzwert + Fachbegriff 7-Dehydrocholesterin (F-08), +700 ml Stillen (F-10). |
 | einträge | 16 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
 
@@ -98,7 +98,7 @@
 ### F-04: Proteine — Funktion und Aminosäuren
 
 **Fakt:** Proteine (Eiweiße) sind die Baustoffe des Körpers. Energiewert: **4 kcal pro Gramm** (Pflege heute: 4,1 kcal). Empfohlener Anteil an der täglichen Nahrungsaufnahme: **10–15%** (Pflege heute Kap. 7); erhöhter Bedarf in Wachstum, Schwangerschaft, Stillzeit und Alter. Sie bestehen aus 20 Aminosäuren, davon **9 essentiell** (müssen über die Nahrung aufgenommen werden). Tierisches Protein hat meist höhere biologische Wertigkeit; Kombination pflanzlicher Quellen steigert die Wertigkeit.
-Der Referenzwert **0,8–1 g/kgKG/Tag für gesunde Erwachsene** ist über I Care Examen kompakt (Tab. 18.1) belegt. Der spezifische Wert **1,0 g/kg ab 65 Jahren** als DGE-Senioren-Referenz ist im Korpus nicht exakt so belegt — I Care Examen kompakt nennt für Senioren "0,8–1,5 g/kgKG" als Orientierungsspanne, und formuliert qualitativ: "der Proteinbedarf steigt" im Alter. Der Fakt wurde entsprechend präzisiert: statt "1,0 g/kg ab 65" ist der belegte Wert "0,8–1,5 g/kgKG für Senioren (erhöhter Bedarf)".
+Der Referenzwert **0,8–1 g/kgKG/Tag für gesunde Erwachsene** ist über I Care Examen kompakt (Tab. 18.1) belegt. Für Senioren ist die Spanne **0,8–1,5 g/kgKG** nun zusätzlich über I Care Pflege verbatim belegt; bei mangelernährten älteren Patienten nennt I Care Pflege die Regel **„mindestens 1,0 g/kg Körpergewicht" (Schuetz et al. 2017)**. Der Fakt führt daher den belegten Wert "0,8–1,5 g/kgKG für Senioren (erhöhter Bedarf)" mit 1,0 g/kg als Untergrenze bei Mangelernährung.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
@@ -113,6 +113,10 @@ Der Referenzwert **0,8–1 g/kgKG/Tag für gesunde Erwachsene** ist über I Care
 - Zitat: "15–20 % der Energiezufuhr (0,8–1 g/kgKG/Tag)"
 - Zitat: "ausreichende Proteinmengen (0,8–"
 - Zitat: "der Proteinbedarf steigt"
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Auf ausreichende Proteinmengen (zwischen 0,8 und" (Forts. „1,5 g/kgKG) sollte geachtet werden" — belegt Senioren-Proteinspanne 0,8–1,5 g/kgKG)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "tägliche Proteinzufuhr von mindestens 1,0 g/kg Körpergewicht" (Schuetz et al. 2017 — belegt 1,0-g/kg-Untergrenze bei mangelernährten älteren Patienten)
 **Praxisfehler:** Bei älteren/mangelernährten Patienten zu wenig Protein anbieten — fördert Muskelabbau und schlechte Wundheilung.
 
 **Misconceptions:**
@@ -191,7 +195,7 @@ Der Referenzwert **0,8–1 g/kgKG/Tag für gesunde Erwachsene** ist über I Care
 
 ### F-08: Vitamin D — Sonderstellung und Mangel
 
-**Fakt:** Vitamin D (Calciferol) nimmt eine Sonderstellung ein: Es kann im Körper unter Sonnenlicht-Einfluss gebildet werden — Pflege heute spricht von „fehlender Bildung im Körper" als Supplementierungs-Indikation. Funktionen: Knochenbildung, Aufnahme von Kalzium und Phosphaten (Knochen), Muskelfunktion (Sturzprävention). Vitamin D (v.a. bei älteren Menschen) ist eine der wenigen relevanten Mangel-Ausnahmen in Deutschland. Empfehlung bei fehlender Eigensynthese (Pflege heute, Osteoporoseprävention): **Vitamin D 10–20 µg/Tag**. Die DGE/D-A-CH-Referenzwerte bestätigen qualitativ, dass ab dem 50.–60. Lebensjahr für Vitamin D eine höhere Zufuhr empfohlen wird; der obere Grenzwert für Erwachsene liegt bei 50 µg/Tag. Risikogruppen: Ältere, Pflegeheimbewohner, dunkle Haut, Vollverschleierung, Säuglinge. Mangelfolgen: Rachitis (Kinder), Osteomalazie, Begünstigung der Osteoporose, Muskelschwäche, erhöhtes Sturzrisiko. ⚠️ Quelle beschaffen (DGE D-A-CH-Referenzwerte, Einzelnährstoff-Tabelle): Der konkrete **Vitamin-D-Referenzwert von 20 µg/Tag (= 800 IE) bei fehlender Eigensynthese** steht NICHT verbatim im lokalen DGE-Extrakt. Der Synthese-Mechanismus **aus 7-Dehydrocholesterin in der Haut unter UVB-Strahlung** ist im Kinderkrankenpflege-Korpus nun qualitativ belegt (Haut als Vorstufe + UV-Aktivierung), der biochemische Fachbegriff "7-Dehydrocholesterin" bleibt unbelegt.
+**Fakt:** Vitamin D (Calciferol) nimmt eine Sonderstellung ein: Es kann im Körper unter Sonnenlicht-Einfluss gebildet werden — Pflege heute spricht von „fehlender Bildung im Körper" als Supplementierungs-Indikation. Funktionen: Knochenbildung, Aufnahme von Kalzium und Phosphaten (Knochen), Muskelfunktion (Sturzprävention). Vitamin D (v.a. bei älteren Menschen) ist eine der wenigen relevanten Mangel-Ausnahmen in Deutschland. Empfehlung bei fehlender Eigensynthese (Pflege heute, Osteoporoseprävention): **Vitamin D 10–20 µg/Tag**. Die DGE/D-A-CH-Referenzwerte bestätigen qualitativ, dass ab dem 50.–60. Lebensjahr für Vitamin D eine höhere Zufuhr empfohlen wird; der obere Grenzwert für Erwachsene liegt bei 50 µg/Tag. Risikogruppen: Ältere, Pflegeheimbewohner, dunkle Haut, Vollverschleierung, Säuglinge. Mangelfolgen: Rachitis (Kinder), Osteomalazie, Begünstigung der Osteoporose, Muskelschwäche, erhöhtes Sturzrisiko. Der Synthese-Mechanismus ist über I Care Anatomie nun präziser belegt: **Cholecalciferol** wird in der Haut aus **Cholesterin** unter Sonneneinstrahlung gebildet und in Leber und Niere zur aktiven Form (1,25-Dihydroxycholecalciferol) umgewandelt. ⚠️ Quelle beschaffen (DGE D-A-CH-Referenzwerte, Einzelnährstoff-Tabelle): Der konkrete **Vitamin-D-Referenzwert von 20 µg/Tag (= 800 IE) bei fehlender Eigensynthese** steht NICHT verbatim im lokalen DGE-Extrakt. Der biochemische Fachbegriff "7-Dehydrocholesterin" als exakte Vorstufe bleibt im Korpus unbelegt (I Care Anatomie nennt nur „Cholesterin" als Ausgangsstoff).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
@@ -208,6 +212,12 @@ Der Referenzwert **0,8–1 g/kgKG/Tag für gesunde Erwachsene** ist über I Care
 - Zitat: "Etwa ab dem 50. bis 60. Lebensjahr wird für einzelne Nährstoffe eine höhere Zufuhr empfohlen"
 - Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
 - Zitat: "Es liegt in der Haut als Vorstufe vor und benötigt zur Aktivierung UV-Strahlen."
+- Quelle: `icare-anatomie-volltext/icare-anatomie.txt`
+- Zitat: "Bei ausreichender Sonneneinstrahlung kann sein Ausgangsstoﬀ, das Cholecalciferol, in der" (Forts. „Haut aus Cholesterin (S.36) gebildet werden" — belegt Hautsynthese aus Cholesterin unter Sonnenlicht)
+- Quelle: `icare-anatomie-volltext/icare-anatomie.txt`
+- Zitat: "In den Keratinozyten wird bei Sonneneinstrahlung aus Cholesterin das Cholecalciferol gebildet." (belegt Bildungsort Keratinozyten der Haut)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Bei langer Bettlägerigkeit sollte über eine Vitamin-D-Gabe" (Forts. „nachgedacht werden, da die körpereigene Synthese durch das fehlende Sonnenlicht unterbleibt" — belegt Supplementierung bei fehlender Eigensynthese im Pflegekontext)
 **Praxisfehler:** Bei Pflegeheimbewohnern wird der Vitamin-D-Status nicht beachtet — obwohl Supplementierung Stürze und Frakturen nachweislich senkt.
 
 **Misconceptions:**

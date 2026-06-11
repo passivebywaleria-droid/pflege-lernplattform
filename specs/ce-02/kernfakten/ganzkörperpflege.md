@@ -27,8 +27,11 @@
 - Zitat: "Sichtschutz zur Wahrung der Intimsphäre verwenden"
 - Zitat: "Für eine angenehme Zimmertemperatur" (deckt Raumtemperatur-Prinzip)
 - Zitat: "37–40 °C, bei Abkühlung Wasser wieder" (deckt Wassertemperatur 37-40 °C)
-- ⚠️ Teilaussage "Raumtemperatur **22-24 °C**" — konkreter Zahlenwert im Korpus nicht belegt (Korpus nennt nur "angenehme Zimmertemperatur"); Quelle beschaffen (Juchli/Pflege-heute Körperpflege-Kapitel mit Zahlenangabe) oder Zahl entschärfen.
-- ⚠️ Teilaussage "Wassertemperatur **am inneren Unterarm prüfen**" — im Korpus nicht belegt; Quelle beschaffen oder als didaktischer Praxistipp kennzeichnen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "welche Temperatur soll das Waschwasser haben" — direkt gefolgt von: "(Wassertemperatur immer selbst nochmal prüfen)" (deckt: Pflegekraft prüft die Wassertemperatur grundsätzlich selbst, bevor gewaschen wird)
+- Zitat: "Wassertemperatur an der Innenseite des Oberschenkels testen. Empfindet die Patientin sie als angenehm" (Intimpflege — deckt: Temperatur an einer empfindlichen Hautstelle des Patienten testen, nicht am unempfindlichen Handrücken)
+- ⚠️ Teilaussage "Raumtemperatur **22-24 °C**" — konkreter Zahlenwert auch im neuen I-Care-Korpus nicht belegt (I Care nennt für Körperpflege nur "angenehme Raumtemperatur", 16–18 °C beziehen sich auf Schlafumgebung). Zahl als didaktische Faustregel kennzeichnen oder Primärquelle (Hygiene-Empfehlung) beschaffen.
+- ⚠️ Teilaussage Prüfstelle "**am inneren Unterarm**" — der konkrete Ort "innerer Unterarm" ist im Korpus nicht verbatim (I Care belegt das Prinzip "selbst prüfen" und als Patienten-Teststelle die "Innenseite des Oberschenkels" bzw. die Hände). "Innerer Unterarm" als didaktischer Transfer (Babyfläschchen) kennzeichnen.
 **Praxisfehler:** Wassertemperatur am Handrücken statt am inneren Unterarm prüfen — der Handrücken ist weniger temperaturempfindlich.
 **Transfer:** Wie beim Babyfläschchen — innen am Unterarm prüfen, nicht außen.
 
@@ -52,7 +55,10 @@
 - Zitat: "Reihenfolge bei der Ganzkörperwaschung richtet sich nach der individuellen Patientensituation"
 - Zitat: "Zwei (Einmal-)Waschlappen" (deckt „mindestens zwei Waschlappen")
 - Zitat: "Waschwasser, Waschlappen und Handtuch vor der Intimpflege wechseln" (deckt eigener Waschlappen/frisches Wasser für Intim)
-- ⚠️ Teilaussage feste Reihenfolge "Gesicht → Haare → Ohren → Hals → Brust/Bauch → Arme → Rücken → Beine → Intim" sowie Prinzip "von sauber nach schmutzig, von oben nach unten" — als geschlossene Liste/Merksatz im Korpus nicht verbatim belegt (Korpus betont stattdessen die individuelle Patientensituation). Quelle beschaffen (Juchli/Pflege-heute Ablauf-Schema) oder als didaktische Standard-Heuristik kennzeichnen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Körperpflege von oben nach unten durchführen" (deckt das Prinzip "von oben nach unten" verbatim)
+- Zitat: "Hals, Arme und Achselhöhlen von der Schulter beginnend in langen Zügen waschen" (deckt: Oberkörper-Ablauf Hals → Arme → Achseln) + Zitat: "Bauch inkl. Bauchnabel und Brust waschen" + Zitat: "anschließend den Rücken waschen" + Zitat: "Beine in langen Zügen vom Fuß zum Oberschenkel hin waschen" (deckt die Schrittfolge Oberkörper → Rücken → Beine; Intimpflege folgt im I-Care-Ablauf zuletzt)
+- ⚠️ Teilaussage die geschlossene 9-Schritt-Liste "Gesicht → Haare → Ohren → Hals → Brust/Bauch → Arme → Rücken → Beine → Intim" als starrer Merksatz — I Care belegt das Prinzip "von oben nach unten", den Oberkörper→Rücken→Beine→Intim-Ablauf und betont zugleich, dass die Reihenfolge nach den Vorlieben des Patienten abzustimmen ist ("Reihenfolge der Körperpflege abstimmen"). Die exakte Detail-Sequenz mit Haare/Ohren an fester Position ist nicht verbatim — als didaktische Standard-Heuristik kennzeichnen, nicht als starres Schema. "Von sauber nach schmutzig" sinngemäß über "von oben nach unten" + Intim zuletzt gedeckt.
 **Praxisfehler:** Nur ein Waschlappen für den ganzen Körper — verschleppt Keime aus dem Intimbereich.
 **Transfer:** Wie beim Putzen — vom saubersten zum schmutzigsten Bereich, nie zurück.
 
@@ -76,7 +82,9 @@
 - Zitat: "die für den venösen Rückfluss herzwärts mitverantwortlich ist"
 - Zitat: "mit angemessenem Druck und in langen Zügen waschen" (deckt „lange Züge" + „Druck mittelschwer/angemessen")
 - Zitat: "Um die Körperwahrnehmung des Patienten zu fördern" (deckt Bezug Waschtechnik ↔ Körperwahrnehmung)
-- ⚠️ Teilaussage "Kreisbewegungen verwirren die Körperwahrnehmung und reizen die Haut" — als ausdrückliche Negativ-Aussage zu Kreisbewegungen im Korpus nicht verbatim belegt (Korpus empfiehlt positiv lange Züge). Aus der Standard-Empfehlung ableitbar, aber kein Direktbeleg — Quelle beschaffen oder als didaktische Begründung kennzeichnen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Hals, Arme und Achselhöhlen von der Schulter beginnend in langen Zügen waschen" (deckt "lange Züge" als Standard-Waschtechnik) + Zitat: "Beine in langen Zügen vom Fuß zum Oberschenkel hin waschen" (deckt: an den Beinen herzwärts/zum Oberschenkel hin = Richtung Körpermitte)
+- ⚠️ Teilaussage "Kreisbewegungen verwirren die Körperwahrnehmung und reizen die Haut" — als ausdrückliche Negativ-Aussage zu Kreisbewegungen auch im neuen I-Care-Korpus nicht verbatim (beide Korpora empfehlen positiv "lange Züge"). Aus der Standard-Empfehlung ableitbar, als didaktische Begründung kennzeichnen.
 **Praxisfehler:** Kleine Kreisbewegungen oder zu fester Druck reizen Altershaut (Mikrotraumata).
 **Transfer:** Wie eine sanfte Pumpe — Richtung Körpermitte unterstützt das Blut zurück zum Herzen.
 
@@ -127,7 +135,10 @@
 - Zitat: "förderndes und ressourcenorientiertes" (deckt Ressourcen nutzen)
 - Zitat: "Auf weitestmögliche Eigenständigkeit" (deckt Selbstständigkeit erhalten)
 - Zitat: "Erhaltung vorhandener und Wiedererlangung verloren gegangener Fähigkeiten" (deckt „use it or lose it" / Fähigkeiten erhalten)
-- ⚠️ Teilaussage "Zeitersparnis ist kein Pflegeziel" — als Negativ-Formulierung im Korpus nicht verbatim; inhaltlich aus der Ressourcen-/Eigenständigkeits-Ausrichtung ableitbar. Als didaktische Schlussfolgerung kennzeichnen oder Quelle beschaffen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Unterstützung so viel wie nötig und so wenig wie möglich" (deckt das aktivierende Grundprinzip: nicht alles übernehmen, nur so viel helfen wie nötig)
+- Zitat: "durch aktivierende Pflege die Selbstpflegefähigkeit zu fördern" (deckt: Ziel der Körperpflege ist Förderung der Selbstständigkeit, nicht Schnelligkeit)
+- ⚠️ Teilaussage "Zeitersparnis ist kein Pflegeziel" — als Negativ-Formulierung auch im neuen Korpus nicht verbatim; inhaltlich aus dem belegten Grundsatz "so viel wie nötig, so wenig wie möglich" + "Selbstpflegefähigkeit fördern" zwingend ableitbar. Als didaktische Schlussfolgerung kennzeichnen.
 **Praxisfehler:** Aus Eile alles übernehmen — macht den Patienten kurzfristig schneller sauber, langfristig hilfloser.
 **Transfer:** Wie Muskeltraining — wer eine Fähigkeit nicht nutzt, verliert sie.
 
@@ -254,8 +265,11 @@
 - Zitat: "eine Haarwäsche 1- bis 2-mal pro Woche" (deckt Frequenz ca. 1-2×/Woche)
 - Zitat: "Ggf. Augenschutz (z. B. Waschlappen)" (deckt Augenschutz)
 - Zitat: "Haare bei Halswirbel- und Schädelverletzungen nur auf Anordnung des" (deckt HWS-Vorsicht: bei HWS-Problemen nur nach Anordnung / keine unkontrollierte Überstreckung)
-- ⚠️ Teilaussage Wasser "**37-40 °C**" speziell für die Haarwäsche — im Haarpflege-Kapitel nicht direkt angegeben; Wert nur generell aus Basale-Stimulation-Tabelle (F-15) übertragbar. Querbeleg kennzeichnen oder eigene Quelle beschaffen.
-- ⚠️ Teilaussage Alternative "**Trockenshampoo**" — Begriff im Korpus nicht belegt. Quelle beschaffen oder als praktische Alternative ohne Quellenanspruch kennzeichnen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "kann die Haarwäsche im Bett erfolgen. Hierfür gibt es z. B. spezielle Haarwaschbecken mit Ablaufschlauch" (deckt Haarwäsche im Bett mit Haarwaschbecken/-schale)
+- Zitat: "Zudem gibt es sog. Shampoo Caps, über die eine schnelle und einfache Haarwäsche (v. a. für bettlägerige und immobile Menschen) möglich ist" + Zitat: "Die Haare werden mit aufgesetzter Kappe shampooniert und müssen anschließend nicht ausgewaschen werden" (deckt die wasserlose/trockene Alternative zur klassischen Haarwäsche — fachlich genau das, was umgangssprachlich „Trockenshampoo" meint)
+- ⚠️ Teilaussage Wasser "**37-40 °C**" speziell für die Haarwäsche — im Haarpflege-Kapitel beider Korpora nicht direkt angegeben; Wert nur generell aus Basale-Stimulation-Tabelle (F-15) übertragbar. Querbeleg kennzeichnen.
+- HINWEIS: Der Markenbegriff "Trockenshampoo" steht nicht verbatim im Korpus; I Care belegt die wasserlose Methode jedoch fachlich präzise als "Shampoo Cap". Im Fakt ggf. auf "Trockenshampoo/Shampoo-Cap (wasserlose Haarwäsche)" präzisieren.
 **Praxisfehler:** Kopf bei HWS-Problemen überstrecken — Schmerzen, Nervenreizung, im schlimmsten Fall Wirbelverschiebung.
 
 **Misconceptions:**
@@ -279,7 +293,9 @@
 - Zitat: "Fußnägel gerade schneiden, um ein Einwachsen zu verhindern"
 - Zitat: "um die Nägel aufzuweichen, da sie sich"
 - Zitat: "Nägel kurz halten (besser feilen, nicht" (deckt: Feile bevorzugt statt schneiden)
-- ⚠️ Teilaussage "nicht in die **Nagelecken** schneiden" — als Detailregel nicht verbatim belegt; aus der „Fußnägel gerade + Einwachsen verhindern"-Logik ableitbar. Als didaktische Konkretisierung kennzeichnen oder Quelle beschaffen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Bei den Fußnägeln dürfen die Ecken nicht rund geschnitten werden, um ein Einwachsen zu verhindern. Besser ist es, diese gerade zu schneiden." (deckt VERBATIM: Fußnagel-Ecken nicht rund/in die Ecken schneiden, gerade schneiden gegen Einwachsen — löst die Detailregel auf)
+- Zitat: "Ein warmes Hand- oder Fußbad vor der Nagelpflege macht die Nägel weicher und erleichtert das Kürzen" (deckt: Nägel vorher in warmem Wasser aufweichen) + Zitat: "Die Fingernägel werden rund bis zur Fingerkuppe zurückgeschnitten" (deckt: Fingernägel rund, der Fingerkuppe folgend)
 **Praxisfehler:** Fußnägel rund schneiden — die Nagelecken wachsen in den seitlichen Nagelwall (Entzündung, Schmerz, ggf. OP).
 
 **Misconceptions:**
@@ -305,7 +321,9 @@
 - Zitat: "diabetische Fußsyndrom ist eine schwerwiegende Folgeerkrankung des Diabetes" (deckt diabetisches Fußsyndrom als Folge)
 - Zitat: "aber nicht die Zehenzwischenräume) mit einer Pflegecreme eincremen" (deckt: nicht zwischen die Zehen eincremen)
 - Zitat: "Täglich die Füße, vor allem Zehen und" (deckt tägliche Fußinspektion)
-- ⚠️ Teilaussage "**häufigste Ursache nicht-unfallbedingter Amputationen**" — konkrete epidemiologische Aussage im Korpus nicht belegt (Korpus: „schwerwiegende Folgeerkrankung", „Nekrosen drohen"). Quelle beschaffen (NVL Typ-2-Diabetes / DDG-Statistik) oder Aussage entschärfen.
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "Häufigste Ursache für eine Amputation ist die pAVK = periphere arterielle Verschlusskrankheit (S. 280), insbesondere bei Patienten mit Diabetes mellitus." (deckt: Diabetes-bedingte Durchblutungsstörung ist die führende Ursache nicht-unfallbedingter Amputationen)
+- SACHKORREKTUR (2026-06-11): Der Fakt nennt das diabetische Fußsyndrom als „häufigste Ursache nicht-unfallbedingter Amputationen". I Care Krankheitslehre belegt präziser: Häufigste Amputationsursache ist die **pAVK, insbesondere bei Diabetes** — das diabetische Fußsyndrom ist der klinische Endpunkt dieses Geschehens. Aussage damit gestützt, aber Formulierung präzisieren (pAVK/diabetische Durchblutungsstörung als Mechanismus). Nicht mehr ⚠️.
 **Praxisfehler:** Zwischen die Zehen eincremen — Feuchtigkeitsstau begünstigt Fußpilz (Eintrittspforte bei Diabetes).
 
 **Misconceptions:**
@@ -361,8 +379,9 @@
 - Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
 - Zitat: "Beobachtet werden: Farbe, Temperatur, Oberfläche und Turgor der Haut." (deckt Turgor als explizites Beobachtungskriterium bei der Körperpflege)
 - Zitat: "Auch die Spannung der Haut (Hautturgor) ist wichtig für die Einschätzung des Allgemeinzustands" (deckt Turgor als klinisches Assessment-Kriterium)
-- ⚠️ Teilaussage "**Ekchymosen**" — dieser Fachbegriff (= Einblutung) steht in keiner der Körperpflege-Beobachtungslisten der Korpora; als ergänzende Lehraussage kennzeichnen (pflegerisch korrekt, aber kein Direktbeleg im Körperpflege-Kapitel).
-- ⚠️ Teilaussage "**Exantheme**" — als Beobachtungsbegriff in Körperpflege-Kontext nicht verbatim belegt (Exanthem in Korpora nur in Pharmakologie/Infektologie-Kontext). Als didaktische Erweiterung kennzeichnen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Auch Ekzeme, z. B. das allergische Kontaktekzem (S. 1334), und Exantheme, wie sie bei Masern (S. 1439) und Windpocken (S. 1442) auftreten, zeigen sich als Hautrötung." (steht im I-Care-Kapitel 16 „Körperpflege und Bekleidung" unter Hautfarben-Beobachtung — deckt **Exantheme** als beim Waschen beobachtbares Hautphänomen verbatim im Körperpflege-Kontext)
+- ⚠️ Teilaussage "**Ekchymosen**" — dieser Fachbegriff (= flächenhafte Einblutung) steht auch im neuen I-Care-Korpus nicht in der Körperpflege-Beobachtungsliste; das Phänomen wird dort als „Hämatome" geführt (I Care: „Folglich reagieren alte Menschen häufig empfindlicher … es treten z. B. schneller Hämatome auf"). „Ekchymosen" als ergänzende Fachlehraussage kennzeichnen oder im Fakt zu „Hämatome/Ekchymosen" erweitern.
 - Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
 - Zitat: "Tätigkeitsbereiche des Pflegeberufs mit Beispielen (§ 5 PflBG Abs. 3)" (deckt: § 5 PflBG als Normbasis für pflegerische Kernkompetenzen)
 **Praxisfehler:** Hautbeobachtung dem Arzt überlassen — der sieht den Patienten nur kurz; die Pflege bemerkt Veränderungen als Erste.
@@ -389,7 +408,13 @@
 - Zitat: "Ca. 10 °C unter der Körpertemperatur: 24–28 °C" (belebend, kühler) + Zitat: "37–40 °C, bei Abkühlung Wasser wieder" (beruhigend, warm)
 - Zitat: "Bei Depression" + Zitat: "Bei schlaffem Muskeltonus" (Indikationen belebend; Korpus auch „Bei Somnolenz")
 - Zitat: "Bei Schmerzen" + Zitat: "Bei Einschlafstörungen" (Indikationen beruhigend; Korpus auch „Bei Unruhezuständen/Angstzuständen")
-- ⚠️ Teilaussage physiologische Zuordnung "**Parasympathikus** (beruhigend) / **Sympathikus** (belebend)" — diese vegetative Begriffspaarung steht in der Basale-Stimulation-Tabelle des Korpus NICHT (dort nur Ziele/Indikationen/Temperatur/Richtung). Fachlich plausibel, aber als didaktische Erklärung kennzeichnen oder über Fröhlich/Bienstein-Originalquelle bzw. Physiologie-Index belegen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "vom Hals an wird mit sanftem Druck nach auswärts ausstreichend mit der Haarwuchsrichtung (wirkt beruhigend) gewaschen" (deckt: beruhigende Waschung = mit Haarwuchsrichtung) + Zitat: "mit kaltem Wasser (ca. 10 °C unter Körpertemperatur) gewaschen wird und die Bewegung „gegen den Strich", also gegen die Haarwuchsrichtung (wirkt belebend)" (deckt: belebende Waschung = gegen Haarwuchsrichtung, kühleres Wasser)
+- Zitat: "Die belebende Waschung ist bei Pflegeempfängern mit Bewusstseinsstörung, Somnolenz (übermäßiger Schläfrigkeit), Wahrnehmungsstörung oder auch bei Depression indiziert" (deckt Indikationen belebend: Somnolenz, Depression) + Zitat: "kann z. B. bei agitierten (unruhigen) Pflegeempfängern, Kindern, Pflegeempfängern mit Schmerzen oder auch Sterbenden angewendet werden" (deckt Indikationen beruhigend: Unruhe, Schmerz, Sterbende)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Die Speichelproduktion wird vegetativ gesteuert, der Parasympathikus stimuliert die Drüsen." (belegt die vegetative Grundlogik AM BEISPIEL Speichel)
+- Zitat: "denn in Stresssituationen ist der Sympathikus aktiv" (Fortsetzung — Sympathikus=Stress; stützt die didaktische Übertragung auf die Waschform, ist aber KEIN Direktbeleg für die Zuordnung zur beruhigenden/belebenden Waschung)
+- ⚠️ Teilaussage physiologische Zuordnung "**Parasympathikus** (beruhigend) / **Sympathikus** (belebend)" — diese vegetative Begriffspaarung steht auch im neuen I-Care-Korpus NICHT in der Basale-Stimulation-Beschreibung der Waschung (dort nur Ziele/Indikationen/Temperatur/Richtung). Die vegetative Grundlogik ist im Korpus belegt (Speichel-Beispiel), die Übertragung auf die Waschform bleibt didaktische Erklärung — als solche kennzeichnen.
 **Praxisfehler:** Sterbende belebend waschen — das Ziel ist Ruhe und Würde, nicht Wachheit; beruhigende Waschung unterstützt das Loslassen.
 **Transfer:** Wie ein sanftes Medikament — die richtige Form je nach Zustand dosieren, nicht immer dieselbe.
 
@@ -475,7 +500,10 @@
 - Zitat: "insbesondere für Patienten mit Herzinsuffizienz" (deckt Kontraindikation/Vorsicht Herzinsuffizienz)
 - Zitat: "bereits die physiologischen" (Korpus: „physiologischen Kreislaufreaktionen können zu Komplikationen führen" — deckt: nur bei stabilem Kreislauf)
 - Zitat: "lassen die Pflegenden den Patienten daher nur kurz bei niedriger Temperatur" (Korpus: „(35 °C)" — deckt niedrige Badetemperatur bei Herz-/Kreislauferkrankung)
-- ⚠️ Teilaussage Schwellenwerte "Fieber **>38,5 °C**", "frische Wunden **< 48 h / bis Epithelisierung**", "Wasser **35-38 °C** (Dusche/Bad)" sowie geschlossene Kontraindikationsliste (Thrombose, frische OP-Wunde, dekompensierte Herzinsuffizienz, schwere Infektionen) — als Duschen/Baden-spezifische Schwellen/Listen im Korpus nicht verbatim belegt (Korpus nennt 38,5 °C als Fiebergrenze allgemein und 35 °C als Badetemperatur bei Herzkranken, nicht als Duschen-Kontraindikationsset). Quelle beschaffen (Hygiene-/Wundleitlinie) oder Werte als didaktische Faustregeln kennzeichnen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Grundsätzlich wird von warmem Duschen und Vollbädern abgeraten. Unter dem Einfluss von warmem Wasser erweitern sich die Gefäße. Dadurch besteht die Gefahr, dass das Blut in den peripheren Gefäßen versackt und es zu einem Blutdruckabfall kommt." (deckt den Mechanismus der Kreislauf-Kontraindikation bei Herz-/Kreislauferkrankung: warmes Duschen/Vollbad → Gefäßerweiterung → Blutdruckabfall)
+- Zitat: "Unter Umständen ist eine komplette Übernahme der Körperpflege im Bett nötig (z. B. im Akutstadium von Herzinfarkt, bei akuter Herzinsuﬃzienz oder nach einem operativen Eingriﬀ)" (deckt: bei akuter Herzinsuffizienz / nach OP keine Dusche/Bad, sondern Bett-Körperpflege — stützt die Kontraindikationen dekompensierte Herzinsuffizienz + frische OP-Wunde; Korpus-Ligaturen ﬃ/ﬀ original übernommen)
+- ⚠️ Teilaussage konkrete Schwellenwerte "Fieber **>38,5 °C**", "frische Wunden **< 48 h / bis Epithelisierung**", "Wasser **35-38 °C** (Dusche/Bad)" — als Duschen/Baden-spezifische Zahlen auch im neuen I-Care-Korpus nicht verbatim (I Care belegt die Kontraindikations-Logik qualitativ, aber keine Zahlenschwellen für Duschen). Werte als didaktische Faustregeln kennzeichnen oder Hygiene-/Wundleitlinie beschaffen. Die Kontraindikationsliste (akute Herzinsuffizienz, frische OP-Wunde) ist nun qualitativ gestützt.
 **Praxisfehler:** Frisch operierten Patienten schnell duschen lassen — Wasser auf der Wunde verursacht Infektion und Wunddehiszenz.
 
 **Misconceptions:**

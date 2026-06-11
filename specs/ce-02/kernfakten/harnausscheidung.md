@@ -10,7 +10,7 @@
 | quellen | DNQP Expertenstandard Kontinenzförderung in der Pflege (Aktual. 2024); Pflege heute Kap. 8 Ausscheidung + Kap. 33 Harnsystem; ICS 2023 |
 | einträge | 16 |
 | erstellt | 2026-06-10 (Dozentin A, quellengebunden aus bausteine-plan.md) |
-| grounding | 2026-06-11 (Dozentin A — auf STÜTZT gehoben gegen QUALITAETSSTANDARD-GROUNDING R1–R3; alle 16 Fakten pro Teilaussage verifiziert, ✅ MATCH eingetragen; F-13 Profil-Namen korrigiert; 3 ungedeckte Teilaussagen markiert/entfernt) |
+| grounding | 2026-06-11 (Dozentin A — auf STÜTZT gehoben gegen QUALITAETSSTANDARD-GROUNDING R1–R3; alle 16 Fakten pro Teilaussage verifiziert, ✅ MATCH eingetragen; F-13 Profil-Namen korrigiert; 3 ungedeckte Teilaussagen markiert/entfernt). NACHTRAG 2026-06-11 (neuer Korpus I Care Krankheitslehre): F-01 ⚠️ aufgelöst — „klar und strohgelb" + spezifisches Gewicht jetzt verbatim belegt; Sachkorrektur Spanne 1010–1025 → 1,001–1,035 g/ml; „leicht aromatisch" bleibt unbelegt. 0 ⚠️ verbleiben. |
 
 ---
 
@@ -28,7 +28,10 @@
 - Zitat: "Menge pro Miktion: 200–400 ml • Häufigkeit (Frequenz): 4-bis 6-mal pro Tag" — Miktionsmenge/Frequenz ✅ MATCH
 - Zitat: "Urochrome = natürliche gelbe Harnfarbstoffe" — Farbstoff ✅ MATCH
 - Zitat: "Der normale pH-Wert des Urins liegt bei 5–6" — pH ✅ MATCH
-- ⚠️ Entfernt (nicht im Korpus belegbar): „klar und strohgelb", „leicht aromatisch", „spezifisches Gewicht 1010–1025 g/l". Im Pflege-heute-Volltext kein Beleg für strohgelb/aromatisch (nur „strohgelbe Haut" = Ikterus, kein Urin) und keine numerische Harndichte 1010–1025 für Urin. Teststreifen erfassen die Harndichte qualitativ. ⚠️ Quelle beschaffen (Labormedizin / DIN-Referenz Urin-Dichte 1.001–1.040, Normwert ~1.010–1.025), falls die numerische Spanne wieder aufgenommen werden soll.
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "Urin ist normalerweise klar und strohgelb." (Aussehen normal: klar + strohgelb — I Care Krankheitslehre, Kap. Nieren/Urindiagnostik) ✅ MATCH
+- Zitat: "Das normale spezifische Gewicht des Urins liegt zwischen ca." / "1,001 und 1,035 g/ml." (spezifisches Gewicht/Harndichte — I Care Krankheitslehre) ✅ MATCH
+- SACHKORREKTUR (2026-06-11): Die früher entfernten Teilaussagen „klar und strohgelb" und das spezifische Gewicht sind im NEU erschlossenen Korpus `icare-krankheitslehre-volltext/` verbatim belegt und wieder aufgenommen. ACHTUNG Zahlen-Korrektur: belegt ist die physiologische Gesamtspanne **1,001–1,035 g/ml** (I Care Krankheitslehre) — NICHT die früher genannte engere Spanne „1010–1025 g/l". Im Schüler-Content die belegte Spanne 1,001–1,035 g/ml verwenden. „leicht aromatisch" als Normalgeruch bleibt korpus-unbelegt (in keinem der drei neuen Korpora verbatim) und wird NICHT als Fakt geführt.
 **Praxisfehler:** Urinbeurteilung wird übersprungen, obwohl sie kostenlos und täglich verfügbar ist — der Blick in die Toilette ist ein vollwertiges Assessment.
 
 **Misconceptions:**

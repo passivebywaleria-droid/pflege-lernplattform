@@ -10,6 +10,7 @@
 | quellen | KRINKO 2015 (Prävention Katheter-assoziierter Harnwegsinfektionen); CDC/HICPAC 2009 (CAUTI-Guideline); EAUN 2021 (Catheterisation); Pflege heute Kap. 8.1 Urin / Kap. 33.1 Urologie; § 630a BGB |
 | einträge | 15 |
 | erstellt | 2026-06-07 (Pipeline v9) |
+| grounding | 2026-06-11 (neuer Korpus I Care Pflege geprüft): F-12 Via-falsa-Teilaussage BLEIBT ⚠️ — Begriff im neuen `icare-pflege-volltext/` nicht vorhanden; ergänzender Anlage-Risiko-Beleg aus I Care Pflege Kap. 19.3.6 eingefügt. 1 ⚠️ verbleibt (Via falsa katheterspezifisch). |
 
 ---
 
@@ -309,7 +310,9 @@
 - Zitat: "oder am Katheter Inkrustationen sind"
 - Zitat: "Bei einer Paraphimose"
 - Zitat: "Auf Urinveränderungen (Farbe, Konzentration, Menge) und Beimengungen"
-- ⚠️ **Via falsa (Katheter):** Im lokalen Korpus nur im Magensonden-Kontext belegt (`pflege-heute.txt`: "Via falsa („falscher Weg")"), NICHT katheterspezifisch. Teilaussage „Via falsa beim Katheterlegen" → ⚠️ Quelle beschaffen (EAUN 2021 Catheterisation / urologisches Standardwerk), bis dahin nicht maschinell verifizierbar.
+- ⚠️ BLEIBT **Via falsa (Katheter):** Im lokalen Korpus nur im Magensonden-Kontext belegt (`pflege-heute.txt`: "Via falsa („falscher Weg")"), NICHT katheterspezifisch. Auch der NEU erschlossene Korpus `icare-pflege-volltext/` enthält den Begriff „Via falsa" gar nicht (grep 0 Treffer); I Care Pflege Kap. 19.3.6 nennt als Katheter-Anlage-Komplikationen ausdrücklich nur Keimverschleppung/Infektion, Harnröhrenstrikturen und Blutung — nicht den falschen Weg. Teilaussage „Via falsa beim Katheterlegen" → ⚠️ Quelle beschaffen (EAUN 2021 Catheterisation / urologisches Standardwerk), bis dahin nicht maschinell verifizierbar. Belegbare Nachbar-Aussage aus I Care Pflege Kap. 19.3.6: "Das größte Risiko bei der Anlage eines" / "transurethralen Blasenkatheters sind die Keimverschleppung mit Infektion von Harnröhre und Harnblase".
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Das größte Risiko bei der Anlage eines" / "transurethralen Blasenkatheters sind die Keimverschleppung mit Infektion von Harnröhre und Harnblase" (Anlage-Hauptrisiko — stützt Komplikationsliste, ersetzt aber NICHT den Via-falsa-Beleg)
 **Praxisfehler:** Rote Verfärbung wird als "normal nach dem Legen" abgetan statt beobachtet und dokumentiert.
 
 **Misconceptions:**

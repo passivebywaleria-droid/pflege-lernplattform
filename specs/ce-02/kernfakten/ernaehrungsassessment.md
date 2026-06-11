@@ -10,6 +10,7 @@
 | quellen | DNQP Expertenstandard Ernährungsmanagement 2017; Pflege heute 7. Aufl. Kap. 7 (Ernährung) + Kap. 19 (Sarkopenie/Frailty); Guigoz MNA 1994; Kondrup NRS-2002 2003; WHO BMI-Klassifikation; DGEM/ESPEN 2020; Bartholomeyczik PEMU 2008 |
 | einträge | 16 |
 | erstellt | 2026-06-10 (Pipeline v9, Quellenbindung) |
+| grounding | 2026-06-11 (⚠️-Auflösung via icare-pflege-volltext): F-12 (Perspiratio ≈900 ml/d) + F-14 (30-35 ml/kg) voll gelöst; F-15 (g/kg-Vorgabe) + F-03/F-04/F-05/F-06 (Setting-Mapping + zweistufiges Vorgehen) teilbelegt. Offen bleiben Score-Details (MNA/NRS), PEMU-5-Bereiche, PEM-Term (F-08), Labor-HWZ/Cut-offs (F-11) — in I Care 2020 nicht verbatim. |
 
 ---
 
@@ -88,7 +89,11 @@
 - Zitat: "Ausführliche Erhebung, die auch die beeinflussenden Faktoren untersucht"
 - Quelle: `dnqp-standards-index/ernaehrungsmanagement.txt`
 - Zitat: "Sind entsprechende Anzeichen vorhanden, führt sie eine tiefergehende Einschätzung der Ernährungssituation und der sie beeinflussenden Faktoren durch (vertieftes Assessment)"
-- ⚠️ Zeitangaben "Screening 2-5 Min, binnen 24h" und "Assessment 15-30 Min" sind didaktische Orientierungswerte, im Korpus nicht verbatim belegt. Aussage ohne konkrete Minuten-/Stundenwerte formulieren ODER Quelle beschaffen (DNQP-Implementierungshinweise / Instrument-Manuale). Hinweis: Expertenstandards-Gebrauchsanleitung belegt für MNA-SF "schnelle Einschätzung in nur drei Minuten" als Kurzform; nicht übertragbar auf Screening generell.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Ist das Ergebnis des Screenings positiv, folgt eine weitere Abklärung, u. a. mittels vertiefender Assessments" — belegt das zweistufige Vorgehen (Screening → bei positivem Ergebnis vertiefendes Assessment) verbatim aus I Care
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Sie dienen somit einer ersten Einschätzung und Erfassung eines potenziellen Risikos" — belegt, dass das Screening eine erste, breite Risiko-Einschätzung ist (Stufe 1)
+- ⚠️ Nur die konkreten Zeitangaben "Screening 2-5 Min, binnen 24h" und "Assessment 15-30 Min" bleiben didaktische Orientierungswerte, im Korpus (inkl. I Care 2020) nicht verbatim belegt. Aussage ohne konkrete Minuten-/Stundenwerte formulieren ODER Quelle beschaffen (DNQP-Implementierungshinweise / Instrument-Manuale). Hinweis: Expertenstandards-Gebrauchsanleitung belegt für MNA-SF "schnelle Einschätzung in nur drei Minuten" als Kurzform; nicht übertragbar auf Screening generell.
 **Praxisfehler:** Screening nur bei "sichtbar dünnen" Patienten machen — der Standard verlangt es für alle (auch Adipöse, verdeckte Mangelernährung).
 
 **Misconceptions:**
@@ -115,7 +120,11 @@
 - Zitat: "des Screening-Instruments Mini Nutritional Assessment (MNA); dort gelten Werte über 22 cm als normal"  (belegt Grenzwert OAU > 22 cm = normal)
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ein Wadenumfang unter 31 cm kann ein zusätzlicher Hinweis"  (belegt Wadenumfang als alternatives MNA-Kriterium)
-- ⚠️ MNA-Short-Form-Score-Detail (6 Fragen; Punktebereich 0-14; Cut-offs 12-14 normal / 8-11 Risiko / 0-7 Mangelernährung) im gesamten Korpus (Pflege heute + leitlinien-volltext + dnqp-standards-index + icare-examen-kompakt + pruefungswissen + expertenstandards-gebrauchsanleitung, geprüft 2026-06-11) NICHT verbatim belegt — Pflege heute nennt das MNA nur als Instrument + OAU-/Wadenumfang-Kriterium; Gebrauchsanleitung belegt nur Instrument-Empfehlung für Geriatrie/Pflegeheim + MNA-SF als 3-Minuten-Kurzform. Score-Aufbau über MNA-Originalarbeit Guigoz/Vellas bzw. Nestlé-MNA-Manual beschaffen, bevor Punktwerte/Cut-offs als Schüler-Inhalt ausgespielt werden, ODER Score-Detail entfernen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "geriatrisches Setting: Mini Nutritional Assessment (MNA)" — belegt MNA als settingspezifisches Screening fürs geriatrische Setting (gefolgt im Quelltext von "bzw. die Kurzversion MNA-SF (Short Form)")
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "MNA-Assessment, das Mini Nutritional Assessment, ist zur Bestimmung des Ernährungszustandes beim" — belegt im Quelltext "… älteren Menschen entwickelt worden" (MNA für ältere Menschen)
+- ⚠️ Nur das MNA-Short-Form-Score-Detail (6 Fragen; Punktebereich 0-14; Cut-offs 12-14 normal / 8-11 Risiko / 0-7 Mangelernährung) bleibt im gesamten Korpus (Pflege heute + I Care Pflege 2020 + leitlinien-volltext + dnqp-standards-index + icare-examen-kompakt + pruefungswissen + expertenstandards-gebrauchsanleitung, geprüft 2026-06-11) NICHT verbatim belegt — I Care nennt das MNA/MNA-SF nur als settingspezifisches Instrument (ohne Punktwerte/Cut-offs); Pflege heute nennt es als Instrument + OAU-/Wadenumfang-Kriterium. Score-Aufbau über MNA-Originalarbeit Guigoz/Vellas bzw. Nestlé-MNA-Manual beschaffen, bevor Punktwerte/Cut-offs als Schüler-Inhalt ausgespielt werden, ODER Score-Detail entfernen.
 **Praxisfehler:** MNA bei jüngeren Erwachsenen einsetzen — es ist nur für Ältere (≥65) validiert; im Krankenhaus gilt NRS-2002.
 
 **Misconceptions:**
@@ -136,7 +145,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Nutritional Risk Score (NRS) für den Krankenhausbereich"
-- ⚠️ NRS-2002-Detail (4 Vorscreening-Fragen; Hauptscreening Ernährungs-Score 0-3 + Krankheits-Score 0-3 + Altersbonus +1 bei ≥70; Cut-off ≥3 Punkte; Maximum 7; wöchentliche Wiederholung) im Korpus nicht verbatim belegt — Pflege heute und icare-examen-kompakt nennen NRS-2002 nur namentlich als Krankenhaus-Screening-Instrument (ohne Score-Aufbau). Quelle beschaffen (NRS-2002-Originalarbeit Kondrup et al. 2003 / ESPEN-Leitlinie) oder Score-Detail entfernen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Krankenhaus: Nutritional Risk Screening 2002 (NRS 2002)" — belegt NRS-2002 als settingspezifisches Screening-Instrument für den Krankenhausbereich (Quelltext nennt parallel SGA)
+- ⚠️ Nur das NRS-2002-Detail (4 Vorscreening-Fragen; Hauptscreening Ernährungs-Score 0-3 + Krankheits-Score 0-3 + Altersbonus +1 bei ≥70; Cut-off ≥3 Punkte; Maximum 7; wöchentliche Wiederholung) bleibt im Korpus (inkl. I Care Pflege 2020) nicht verbatim belegt — Pflege heute, I Care und icare-examen-kompakt nennen NRS-2002 nur namentlich als Krankenhaus-Screening-Instrument (ohne Score-Aufbau). Quelle beschaffen (NRS-2002-Originalarbeit Kondrup et al. 2003 / ESPEN-Leitlinie) oder Score-Detail entfernen.
 **Praxisfehler:** Nach negativem Pre-Screening nie wieder testen — bei Klinik-Patienten ist wöchentliche Wiederholung Pflicht (Verschlechterung nach OP/Infekt).
 
 **Misconceptions:**
@@ -161,7 +172,9 @@
 - Zitat: "ein vertieftes Assessment, z. B. mithilfe des PEMU (Pflegerische Erfassung von Mangelernährung und deren Ursachen)"
 - Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
 - Zitat: "Das PEMU – Pflegerische Erfassung von Mangelernährung und deren Ursachen – besteht im ersten Teil aus einem Screening- und im zweiten Teil aus einem Assessmentinstrument."
-- ⚠️ PEMU-Fünf-Bereiche (Essen-Trinken-Signale, Mundgesundheit, Fähigkeiten, Umgebung/Angebot, weitere Gründe) im Korpus nicht verbatim belegt — Gebrauchsanleitung belegt nur Zweiteiler (Screening + Assessment), Nennung der fünf Ursachenbereiche stammt aus PEMU-Originalinstrument Bartholomeyczik/Schreier 2008 (nicht im Korpus). Bereichsaufzählung entfernen oder Originalinstrument beschaffen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "stationäre Langzeitpflege: pflegerische Erfassung von" — belegt im Quelltext "… Mangelernährung und deren Ursachen (PEMU)" als settingspezifisches Instrument für die stationäre Langzeitpflege
+- ⚠️ Die PEMU-Fünf-Bereiche (Essen-Trinken-Signale, Mundgesundheit, Fähigkeiten, Umgebung/Angebot, weitere Gründe) bleiben im Korpus (inkl. I Care Pflege 2020) nicht verbatim belegt — I Care und Gebrauchsanleitung belegen nur den Zweiteiler (Screening + Assessment) bzw. das Setting (Langzeitpflege); die Nennung der fünf Ursachenbereiche stammt aus dem PEMU-Originalinstrument Bartholomeyczik/Schreier 2008 (nicht im Korpus). Bereichsaufzählung entfernen oder Originalinstrument beschaffen.
 **Praxisfehler:** PEMU auf die Gewichtsmessung verkürzen — der eigentliche Kern ist die Ursachenanalyse in den im PEMU erfassten Ursachenbereichen.
 
 **Misconceptions:**
@@ -314,7 +327,15 @@
 - Zitat: "Tägliche Wasseraufnahme und -abgabe nach der Empfehlung der Deutschen Gesellschaft für Ernährung"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Faustregel: 500 ml pro 1 °C Temperaturerhöhung"
-- ⚠️ Zahlenspanne "ca. 700-900 ml/d" für Perspiratio insensibilis im Korpus nicht belegt — Pflege heute belegt nur "ca. einen Liter Schweiß" (Gesamtschweiß Haut; Tab. 7.16 je ca. 0,5 l für Haut + 0,5 l für Lunge = ~1 l Perspiratio insensibilis gesamt). Die 700-900-ml-Spanne ist eine physiologische Querverweis-Angabe — im Fakt-Text auf die belegte Aussage "ca. 1 l/d über Haut und Lunge" korrigieren oder die Spanne separat belegen (DGE/Physiologie-Lehrbuch).
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Verlust beträgt etwa 900 ml. Dieser setzt sich zusammen" — I Care beziffert die Perspiratio insensibilis auf etwa 900 ml/Tag (Quelltext-Einleitung: "Als Faustregel kann gelten: Der tägliche …"); belegt damit die obere Grenze der Spanne "700-900 ml/d"
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "200–400 ml über die Haut, 400–600 ml über die Atmung und 100 ml über den Stuhl" — belegt die Zusammensetzung der Perspiratio insensibilis (Haut + Atmung + Stuhl)
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "insensibilis: Der unbemerkte Flüssigkeitsverlust über Atmung, Stuhl und Haut" — belegt Definition der Perspiratio insensibilis als unbemerkten Verlust über Atmung/Stuhl/Haut
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Einfuhr: alle flüssigen Lebensmittel, Getränke, Infusionen, Blutprodukte, evtl. Sondennahrung; bei fester" — belegt, dass zur Einfuhr Infusionen, Blutprodukte und Sondennahrung zählen (Quelltext: "… bei fester Nahrung geschätzter Flüssigkeitsgehalt")
+- Hinweis (geklärt 2026-06-11): Die Spanne "700-900 ml/d" ist mit I Care (≈900 ml/d, Zusammensetzung Haut/Atmung/Stuhl) nun belegt. Pflege heute belegt parallel die Faustregel "+500 ml/°C" bei Fieber (➔ Beleg oben). ⚠️ aufgelöst.
 **Praxisfehler:** Einfuhr nur als "Trinken" erfassen — Infusionen, Sondenkost und Suppen gehören dazu, sonst wird die Einfuhr systematisch unterschätzt.
 
 **Misconceptions:**
@@ -371,7 +392,11 @@
 - Zitat: "Tägliche Wasseraufnahme und -abgabe nach der Empfehlung der Deutschen Gesellschaft für Ernährung"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Erwachsene benötigen ca. 35 ml/kg KG; erhöht z. B. bei Erbrechen, Diarrhö, Fieber"
-- ⚠️ Spanne "30-35 ml/kg" im Korpus nicht verbatim belegt — Pflege heute nennt nur "ca. 35 ml/kg KG" (Einzelwert, kein Bereich). Faustregel "+500 ml/°C" ist in Pflege heute Kap. 8 verbatim belegt (➔ F-12 Beleg) und damit einsetzbar. Für die "30-35 ml/kg"-Variante: Quelle beschaffen (DGE-Referenzwerte / DGEM-Leitlinie) oder auf den belegten Wert "ca. 35 ml/kg KG" (Pflege heute) beschränken.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "gesunde Menschen: ca. 30–35 ml pro kg/KG" — I Care belegt die Spanne "30-35 ml/kg KG" verbatim
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "durch Diurese, Erbrechen, Diarrhö oder starkes Schwitzen, erniedrigter Bedarf bei Herz-/Niereninsuﬃzienz" — belegt erhöhten Bedarf bei Flüssigkeitsverlust und erniedrigten Bedarf bei Herz-/Niereninsuffizienz
+- Hinweis (geklärt 2026-06-11): Die Spanne "30-35 ml/kg" ist mit I Care nun verbatim belegt; die ärztliche Restriktion bei Herz-/Niereninsuffizienz ebenfalls (I Care: "erniedrigter Bedarf bei Herz-/Niereninsuffizienz"). ⚠️ aufgelöst.
 **Praxisfehler:** Pauschal "viel trinken" empfehlen, ohne ärztliche Restriktion bei Herz-/Niereninsuffizienz zu beachten.
 
 **Misconceptions:**
@@ -398,7 +423,11 @@
 - Zitat: "Ergänzung der Nahrung durch Trinknahrung"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Häufigere kleine Mahlzeiten"
-- ⚠️ Quantitative Zielwerte "eiweißreiche Kost ca. 1,0-1,5 g/kg KG/Tag", "5-6 kleine Portionen" und "Evaluation nach 1-2 Wochen" im gesamten Korpus nicht verbatim belegt — Pflege heute belegt das Anreicherungs-/Zwischenmahlzeiten-/Trinknahrungs-Prinzip und "häufigere kleine Mahlzeiten" qualitativ; icare-examen-kompakt und pruefungswissen ohne konkrete g/kg-Vorgabe für Mangelernährung (nur allgemeine Hinweise auf eiweißreiche Kost). Quelle beschaffen (DGEM/ESPEN-Leitlinie klinische Ernährung für die g/kg-Vorgabe) oder konkrete Zahlen entfernen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "ausreichende Proteinmengen: 0,8–1,5 g/kgKG" — belegt die eiweißreiche Zielvorgabe (oberer Bereich 1,0-1,5 g/kg/Tag) im Kontext Ernährung im Alter
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "tägliche Proteinzufuhr von mindestens 1,0 g/kg Körpergewicht" — I Care belegt für substituierte/unterernährte ältere Menschen (hochkalorische Trinknahrung) eine Proteinzufuhr von mindestens 1,0 g/kg KG (Schuetz et al. 2017); Quelltext warnt zugleich vor dem Refeeding-/Overfeeding-Syndrom
+- ⚠️ Nur die Zielwerte "5-6 kleine Portionen" und "Evaluation nach 1-2 Wochen" bleiben im gesamten Korpus (inkl. I Care Pflege 2020) nicht verbatim belegt — I Care, Pflege heute und icare-examen-kompakt belegen das Prinzip "häufigere kleine Mahlzeiten" qualitativ, aber keine konkrete Portionsanzahl/Evaluations-Frist. Die g/kg-Vorgabe (1,0-1,5 g/kg/Tag) ist mit I Care nun belegt. Restliche Zahlen als Faustregel kennzeichnen oder Quelle beschaffen (DGEM/ESPEN-Leitlinie klinische Ernährung).
 **Praxisfehler:** Reflexartig Trinknahrung verordnen, ohne die Ursache zu klären — eine drückende Prothese wird nicht durch Trinknahrung behoben.
 
 **Misconceptions:**

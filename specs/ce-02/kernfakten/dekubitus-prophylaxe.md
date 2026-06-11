@@ -61,7 +61,7 @@
 
 ### F-04: Risikofaktoren — Drei Kategorien
 
-**Fakt:** Laut DNQP-Expertenstandard sind die drei wichtigsten (personenbezogenen) Risikofaktoren für einen Dekubitus: Beeinträchtigung der Mobilität, Störungen der Durchblutung und ein beeinträchtigter Hautzustand (bzw. ein bereits vorhandener Dekubitus). Hinzu kommen weitere Einflussgrößen wie Sensibilitätsstörungen, Kachexie oder Adipositas, faltige/harte Unterlagen, vergessene Gegenstände im Bett sowie therapiebedingte Druckquellen (Sonden, Katheter, Drainagen, Pflaster, Sedativa). Die internationale EPUAP/NPIAP-Leitlinie (2019) benennt als zentrale Risikofaktoren eingeschränkte Mobilität und Aktivität, hohes Reibungs-/Scherkraft-Potenzial sowie einen bereits bestehenden bzw. früheren Dekubitus. ⚠️ Quelle beschaffen (konkrete Primärquelle): Die Gliederung in genau drei Kategorien „personenbezogen / umgebungsbezogen / therapiebezogen" ist im vorliegenden Dekubitus-Korpus nicht belegbar (diese Drei-Kategorien-Systematik findet sich dort für Sturz, nicht für Dekubitus). Die EPUAP-Leitlinie führt die Risikofaktoren als Einzelaussagen, nicht in dieser Drei-Kategorien-Systematik.
+**Fakt:** Laut DNQP-Expertenstandard sind die drei wichtigsten (personenbezogenen) Risikofaktoren für einen Dekubitus: Beeinträchtigung der Mobilität, Störungen der Durchblutung und ein beeinträchtigter Hautzustand (bzw. ein bereits vorhandener Dekubitus). Hinzu kommen weitere Einflussgrößen wie Sensibilitätsstörungen, Kachexie oder Adipositas, faltige/harte Unterlagen, vergessene Gegenstände im Bett sowie therapiebedingte Druckquellen (Sonden, Katheter, Drainagen, Pflaster, Sedativa). Die internationale EPUAP/NPIAP-Leitlinie (2019) benennt als zentrale Risikofaktoren eingeschränkte Mobilität und Aktivität, hohes Reibungs-/Scherkraft-Potenzial sowie einen bereits bestehenden bzw. früheren Dekubitus. ✅ AUFGELÖST (2026-06-11): Die Gliederung der *weiteren* Dekubitus-Risikofaktoren in „personen-, umgebungs- und therapiebezogene" ist jetzt durch I Care Pflege verbatim belegt (s. Beleg) — also auch für Dekubitus, nicht nur für Sturz. WICHTIG zur exakten Scope: Der Korpus belegt diese Drei-Gliederung für die *weiteren* Risikofaktoren; die *drei Hauptrisikofaktoren* (Mobilität, Durchblutung, Hautzustand) sind davon eine separate Kategorie. Nicht beide Ebenen vermischen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
@@ -74,6 +74,9 @@
 - Quelle: `leitlinien-volltext/epuap-dekubitus-2019.txt`
 - Zitat: "Consider individuals with limited mobility, limited activity and a high potential for friction and shear to be at risk of pressure injuries"
 - Zitat: "Consider individuals with a Category/Stage I pressure injury to be at risk of developing a Category/Stage II or greater pressure injury"
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Hauptrisikofaktoren sind Beeinträchtigung der Mobilität, Störung der Durchblutung und beeinträchtigter Hautzustand." — drei Hauptrisikofaktoren
+- Zitat: "Weitere Risikofaktoren sind personen-, umgebungs- und therapiebezogene wie Sensibilitätsstörungen, kognitive und kommunikative Unfähigkeiten, harte Unterlagen oder Matratzen mit zu hartem Druck gegen den Körper" — Drei-Kategorien-Gliederung der weiteren Risikofaktoren (personen-/umgebungs-/therapiebezogen) verbatim für Dekubitus belegt
 **Praxisfehler:** Schüler denken bei Dekubitusrisiko nur an bettlägerige ältere Menschen. Aber auch Neugeborene auf Intensivstationen sind gefährdet — durch aufgeklebte Elektroden und Sonden auf ihrer unreifen Haut.
 
 ---
@@ -147,7 +150,7 @@
 
 ### F-08: Braden-Skala — Standardisiertes Risikoassessment
 
-**Fakt:** Die Braden-Skala ist eines der etablierten Instrumente zur Einschätzung des Dekubitusrisikos bei Erwachsenen (neben Norton- und Waterlow-Skala). Belegt ist die Kern-Aussage der EPUAP/NPIAP-Leitlinie (2019): Ein Risiko-Assessment-Instrument soll durch die Beurteilung zusätzlicher Risikofaktoren ergänzt und das Ergebnis mit klinischem Urteil interpretiert werden — die Skala ist Hilfsmittel, kein Ersatz für die fachliche Einschätzung. Der DNQP betont ebenso, dass keine Skala allein die klinische Einschätzung der Pflegefachkraft ersetzt. ⚠️ Quelle beschaffen (Braden & Bergstrom 1987): Dass die Braden-Skala das *am häufigsten eingesetzte* Instrument ist und dass sie genau *sechs Bereiche* (Sensorisches Empfinden, Feuchtigkeit, Aktivität, Mobilität, Ernährung, Reibung/Scherkräfte) mit der genannten Punktelogik erfasst, ist weder im Pflege-heute-/DNQP-Korpus noch in der EPUAP-Leitlinie belegbar (EPUAP nennt Braden nicht namentlich) — dafür wäre die Skalen-Originalarbeit (Braden & Bergstrom 1987) zu beschaffen.
+**Fakt:** Die Braden-Skala ist eines der etablierten Instrumente zur Einschätzung des Dekubitusrisikos bei Erwachsenen (neben Norton- und Waterlow-Skala). Belegt ist die Kern-Aussage der EPUAP/NPIAP-Leitlinie (2019): Ein Risiko-Assessment-Instrument soll durch die Beurteilung zusätzlicher Risikofaktoren ergänzt und das Ergebnis mit klinischem Urteil interpretiert werden — die Skala ist Hilfsmittel, kein Ersatz für die fachliche Einschätzung. Der DNQP betont ebenso, dass keine Skala allein die klinische Einschätzung der Pflegefachkraft ersetzt. Dass die Braden-Skala das *häufig verwendete* Instrument zur Erfassung des Dekubitusrisikos ist (mit Braden-Q für Kinder), ist jetzt durch I Care Pflege verbatim belegt (s. Beleg). ⚠️ TEILWEISE OFFEN (Braden & Bergstrom 1987): Dass die Skala genau *sechs Bereiche* (Sensorisches Empfinden, Feuchtigkeit, Aktivität, Mobilität, Ernährung, Reibung/Scherkräfte) mit der genannten Punktelogik erfasst, ist weiterhin in keinem lokalen Korpus (Pflege heute, DNQP, EPUAP, I Care Pflege) als Aufzählung der sechs Domänen belegbar — dafür wäre die Skalen-Originalarbeit (Braden & Bergstrom 1987) zu beschaffen. Die Formulierung „am häufigsten eingesetzt" auf „häufig verwendet" zurücknehmen (Korpus belegt nur „häufig verwendet").
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
@@ -159,6 +162,8 @@
 - Quelle: `leitlinien-volltext/epuap-dekubitus-2019.txt`
 - Zitat: "Supplement use of a risk assessment tool with assessment of additional risk factors"
 - Zitat: "Interpret the assessment outcomes using clinical judgment"
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Für pflegerisch relevante Risiken, etwa das Dekubitusrisiko, wurden verschiedene Skalen entwickelt. Häufig verwendet wird die Braden-Skala, die mit der Braden-Q-Skala auch für Kinder angewendet werden kann." — Braden als häufig verwendetes Risikoassessment-Instrument (+ Braden-Q für Kinder) belegt
 **Praxisfehler:** Schüler verlassen sich zu sehr auf den Zahlenwert der Skala und vergessen die klinische Gesamtbeurteilung. Ein Braden-Wert von 18 bedeutet nicht automatisch "kein Risiko" — wenn der Patient gerade von einer 6-stündigen OP kommt, kann sich die Situation in Stunden ändern.
 
 ---
@@ -227,7 +232,7 @@
 
 ### F-13: Druckverteilende Hilfsmittel — Matratzen und Auflagen
 
-**Fakt:** Druckverteilende und -entlastende Hilfsmittel kommen zum Einsatz, wenn Druckentlastung durch Bewegungsförderung und Positionswechsel nicht ausreicht. Im Korpus belegt sind zwei Systemtypen: Weichlagerungssysteme passen die Matratzenoberfläche dem Körper an und verringern so den Auflagedruck auf einzelne Körperpartien, Wechseldrucksysteme entlasten zyklisch unterschiedliche Körperstellen. Wichtig: Weich- und Superweichpositionierung schränken Eigenbewegung und Wahrnehmung ein — je weicher die Unterlage, desto schwerer kann sich der Patient selbst bewegen. ⚠️ Quelle beschaffen (konkrete Primärquelle): Die feste Drei-System-Klassifikation inkl. "Mikrostimulationssysteme" als dritte Kategorie ist im vorliegenden Korpus nicht belegbar (Mikrostimulationssysteme werden dort nicht als druckverteilendes Hilfsmittel geführt) — dafür wäre eine Hilfsmittel-/Herstellerklassifikation oder der DNQP-Volltext zu beschaffen.
+**Fakt:** Druckverteilende und -entlastende Hilfsmittel kommen zum Einsatz, wenn Druckentlastung durch Bewegungsförderung und Positionswechsel nicht ausreicht. Im Korpus belegt sind zwei Systemtypen: Weichlagerungssysteme passen die Matratzenoberfläche dem Körper an und verringern so den Auflagedruck auf einzelne Körperpartien, Wechseldrucksysteme entlasten zyklisch unterschiedliche Körperstellen. Wichtig: Weich- und Superweichpositionierung schränken Eigenbewegung und Wahrnehmung ein — je weicher die Unterlage, desto schwerer kann sich der Patient selbst bewegen. Die Drei-System-Klassifikation (Weichlagerungs-, Wechseldruck- und Mikro-Stimulationssysteme) ist durch I Care Pflege verbatim belegt (s. Beleg). ✅ AUFGELÖST (2026-06-11): Mikro-Stimulationssysteme (MiS) sind in I Care Pflege ausdrücklich als dritte druckverteilende Hilfsmittel-Kategorie geführt — die frühere Annahme „im Korpus nicht belegbar" galt nur für die schmaleren DNQP/Pflege-heute-Auszüge.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme
@@ -241,6 +246,9 @@
 - Zitat: "Consider using a reactive air mattress or overlay for individuals at risk for developing pressure injuries"
 - Zitat: "alternating pressure air mattress or overlay for individuals at risk of pressure injuries"
 - Zitat: "Reposition all individuals with or at risk of pressure injuries on an individualized schedule"
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Zu den druckverteilenden Hilfsmitteln gehören (▶ Tab. 17.1): ● Weichlagerungssysteme: z. B. Schaumstoﬀmatratzen, Gelauflagen, Luftkissen usw. ● Wechseldrucksysteme: z. B. klein- und großzellige Wechseldrucksysteme ● Mikro-Stimulationssysteme (MiS): wahrnehmungsfördernde, schmerzreduzierende, bewegungsfördernde Systeme" — Drei-System-Klassifikation inkl. Mikro-Stimulationssysteme verbatim belegt
+- Zitat: "Weichlagerungs- und Wechseldrucksysteme reduzieren zwar den Auflagedruck, heben ihn aber nicht komplett auf. Ihr Einsatz reicht somit als alleinige druckpräventive Maßnahme nicht aus" — Hilfsmittel ersetzen Positionswechsel nicht
 **Praxisfehler:** Schüler setzen gerne Sitzringe bei Steißbein-Problemen ein. Das ist kontraproduktiv: Ringe erhöhen den Druck an den Rändern und verschlechtern die Durchblutung im Zentrum. Gleiches gilt für Wattepolster — sie bieten keinen stabilen Halt und verteilen den Druck nicht gleichmäßig.
 
 ---

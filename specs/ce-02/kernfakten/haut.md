@@ -10,6 +10,7 @@
 | quellen | DNQP Expertenstandard Erhaltung und Förderung der Hautintegrität in der Pflege (2023); Pflege heute Kap. 6 Hautpflege + Kap. 5 Wärmeregulation; Celsus/Galen (Entzündungszeichen); Marchini 1902 (Säureschutzmantel) |
 | einträge | 14 |
 | erstellt | 2026-06-10 (Dozentin A, quellengebunden aus bausteine-plan.md) |
+| grounding | 2026-06-11 (neuer Korpus I Care Anatomie/Pflege): F-01 ⚠️ aufgelöst — alle 5 Hautfunktionen einzeln verbatim aus `icare-anatomie-volltext/` belegt; Mengenangabe „genau fünf" entschärft auf „zentrale Aufgaben" (Korpus führt offene Liste). 0 ⚠️ verbleiben. |
 
 ---
 
@@ -26,7 +27,17 @@
 - Zitat: "Mit einer Fläche von 1,5–2 m2 und einem"
 - Zitat: "Gewicht von 3,5–10 kg ist die Haut das"
 - Zitat: "ist die Haut das größte Organ des menschlichen Körpers"
-- ⚠️ Quelle beschaffen (I-Care Anatomie): die exakte Aufzählung der **fünf** Funktionen (Schutz, Temperaturregulation, Sinneswahrnehmung, Stoffwechsel/Vitamin-D, soziale Kommunikation) ist in `pflege-heute.txt` durch das PDF-Layout aufgebrochen — nur Funktion 1 ("Trennwand und Schutzschild") ist verbatim zusammenhängend. Einzelfunktionen sind belegt (Temperaturregulation, Vitamin-D-Bildung, Sinneswahrnehmung kommen vor), die geschlossene 5er-Liste nicht.
+- Quelle: `icare-anatomie-volltext/icare-anatomie.txt`
+- Zitat: "Die Haut ist das größte Organ unseres Körpers. Bei Erwachsenen hat sie ausgebreitet eine Fläche von ca. 1,5–2 m²." (größtes Organ + Fläche — I Care Anatomie Kap. 16.1.2)
+- Zitat: "Eine ihrer wichtigsten Aufgaben ist der" / "Schutz vor äußeren Einflüssen" (Funktion 1: Schutz)
+- Zitat: "Schutz vor dem Eindringen von Krankheitserregern" (Schutz-Detail Keime)
+- Zitat: "Schutz vor Chemikalien oder Strahlung (z. B. Sonnenstrahlung)" (Schutz-Detail chemisch/UV)
+- Zitat: "Schutz vor Austrocknung" (Schutz-Detail Wasserverlust)
+- Zitat: "Neben ihrer Schutzfunktion dient die Haut der Wahrnehmung von Berührungen, Druck und Temperatur." (Funktion 2: Sinneswahrnehmung)
+- Zitat: "außerdem als Fassade zur Außenwelt eine wichtige Rolle im" / "sozialen Kontext (Erröten oder Erblassen)" (Funktion 3: soziale Kommunikation)
+- Zitat: "In den Keratinozyten wird bei Sonneneinstrahlung aus Cholesterin das Cholecalciferol gebildet. Es stellt die Vorstufe" / "des Vitamin D3 (S. 242) dar." (Funktion 4: Stoffwechsel/Vitamin-D-Bildung)
+- Zitat: "Mithilfe des Tastsinns werden Form und Struktur berührter Gegenstände wahrgenommen. Der Temperatursinn erfasst über Kalt- und Warmsensoren die Temperatur" (Sinneswahrnehmung + Temperatursinn)
+- SACHKORREKTUR/Einordnung (2026-06-11): Die fünf Funktionen sind jetzt einzeln verbatim aus I Care Anatomie belegt (Schutz, Sinneswahrnehmung, soziale Kommunikation, Vitamin-D/Stoffwechsel; Temperaturregulation s. F-11). I Care Anatomie führt diese als offene Liste, nicht als nummerierte „genau fünf"-Aufzählung — der Fakt darf die fünf Kernaufgaben benennen, aber „genau fünf und nicht mehr" wäre nicht korpusgedeckt (auch Immunabwehr/Energiespeicher werden genannt). Mengen-Hinweis im Schüler-Content entsprechend offen halten („zentrale Aufgaben").
 **Praxisfehler:** Haut wird nur als passive "Schutzhülle" gesehen statt als aktives, multifunktionales Organ — dadurch wird Hautbeobachtung unterschätzt.
 
 **Misconceptions:**
