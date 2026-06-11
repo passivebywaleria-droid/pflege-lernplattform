@@ -10,7 +10,7 @@
 | quellen | Pflege heute 7. Aufl. Kap. 8.2 Stuhl / 24.2.6 Obstipation / 8.2.6 Enterostoma (Korpus-Primärquelle, verbatim belegt); zu beschaffen für Detail-Zahlen: Heaton/Lewis Bristol Stool Scale 1997, Rom-IV-Kriterien, AWMF S2k Chronische Obstipation 2022, FG SKM Handlungsempfehlungen Stomapflege 2023, DGE-Referenzwert Ballaststoffe |
 | einträge | 14 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md) |
-| grounding | 2026-06-10 Dozentin A — auf STÜTZT gehoben gegen pflege-heute.txt; ungedeckte Detail-Zahlen mit ⚠️ markiert (R3), nicht kaschiert |
+| grounding | 2026-06-10 Dozentin A — auf STÜTZT gehoben gegen pflege-heute.txt; ungedeckte Detail-Zahlen mit ⚠️ markiert (R3), nicht kaschiert; 2026-06-11 F-03 geruchlos durch kinderkrankenpflege-volltext verbatim belegt |
 
 ---
 
@@ -82,7 +82,16 @@
 - Zitat: "z. B. bei Morbus Hirschsprung"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Darmverschluss durch zu zähes Mekonium (Mekonium-Ileus bei Mukoviszidose"
-**Belegstatus Teilaussagen:** Verbatim gedeckt sind nun: Zusammensetzung (abgeschilferte Epithelzellen, Körperhärchen = Lanugo, eingedickte Galle), Konsistenz „zäh"(klebrig), die Farbe (grün-schwarz), das Abgangs-Zeitfenster (Erststuhl meist innerhalb der ersten 12 Stunden, Warngrenze 48 Std.) sowie beide Differenzialdiagnosen Morbus Hirschsprung und Mekonium-Ileus. ⚠️ Die Teilaussage *geruchlos* ist im vorliegenden Korpus (Pflege heute) NICHT verbatim für Mekonium belegt — fachlich korrekt (noch keine bakterielle Darmbesiedlung), aber für die Verbatim-Deckung wäre eine pädiatrische Primärquelle (z. B. Hoehl/Kullick Gesundheits- und Kinderkrankenpflege) zu beschaffen. Als didaktischer Hinweis geführt, nicht als korpus-belegte Aussage.
+**Belegstatus Teilaussagen:** Verbatim gedeckt sind nun: Zusammensetzung (abgeschilferte Epithelzellen, Körperhärchen = Lanugo, eingedickte Galle), Konsistenz „zäh"(klebrig), die Farbe (grün-schwarz), das Abgangs-Zeitfenster (Erststuhl meist innerhalb der ersten 12 Stunden laut Pflege heute; Kinderkrankenpflege: innerhalb der ersten 24–36 Std.; Neonatologie-Checkliste: kein Mekonium innerhalb 24–48 h = Warngrenze → Warngrenze 48 Std. im Fakt ist konservativ korrekt), beide Differenzialdiagnosen Morbus Hirschsprung und Mekonium-Ileus sowie — neu — die Eigenschaft *geruchlos* durch Kinderkrankenpflege verbatim belegt.
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Mekonium = Kindspech, grün-schwarz"
+- Zitat: "geruchlos (keine Bakterien)"
+- Zitat: "eingedickte Galle"
+- Zitat: "Lanugohaare"
+- Zitat: "Darmepithelien"
+- Zitat: "innerhalb der ersten"
+- Zitat: "24 – 36 Std. nach der"
+- Zitat: "Gefahr bei Nichtabsetzen: Mekoniumileus"
 
 **Misconceptions:**
 - `M1`: **"Schwarzer Stuhl beim Neugeborenen ist immer ein Notfall"** — In den ersten 48 Stunden ist schwarz-grüner Stuhl normal (Mekonium). Erst später anhaltend oder beim älteren Patienten (Melaena) ist es pathologisch. Der Zeitpunkt zählt.

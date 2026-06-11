@@ -7,9 +7,10 @@
 | cluster | C (Körperpflege & Prophylaxen) |
 | geschätzteUE | 12 |
 | wissensart | handlung |
-| quellen | I Care Pflege Kap. Körperpflege; Pflege heute 7. Aufl. Kap. 6 Haut- und Körperpflege; Juchli ATLs 1987; WHO/RKI-KRINKO Händehygiene 2022; Fröhlich Basale Stimulation 1998; AWMF-S3-NVL Typ-2-Diabetes 2023; DDG S2k-Leitlinie Erysipel 2020 |
+| quellen | I Care Pflege Kap. Körperpflege; Pflege heute 7. Aufl. Kap. 6 Haut- und Körperpflege; Juchli ATLs 1987; WHO/RKI-KRINKO Händehygiene 2022; Fröhlich Basale Stimulation 1998; AWMF-S3-NVL Typ-2-Diabetes 2023; DDG S2k-Leitlinie Erysipel 2020; I Care Pflegeexamen kompakt (Elsevier); Prüfungswissen Pflegefachfrau (Elsevier) |
 | einträge | 19 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, v9 Gold-Standard) |
+| belege-aktualisiert | 2026-06-11 (⚠️ 25→17 aufgelöst; 2 Sachkorrekturen: Harnröhre 3-5→4-5 cm, Dekubitus-I-Abgrenzung korrigiert) |
 
 ---
 
@@ -139,7 +140,7 @@
 
 ### F-06: Intimpflege der Frau — von vorne nach hinten
 
-**Fakt:** Bei der Frau wird immer von vorne (Vulva/Symphyse) nach hinten (Anus) gewaschen, um die Verschleppung von Darmkeimen (v.a. E. coli) in die kurze weibliche Harnröhre (3-5 cm) zu verhindern — Schutz vor aufsteigenden Harnwegsinfekten. Frisches Wasser, eigener Waschlappen, gut trocknen.
+**Fakt:** Bei der Frau wird immer von vorne (Vulva/Symphyse) nach hinten (Anus) gewaschen, um die Verschleppung von Darmkeimen (v.a. E. coli) in die kurze weibliche Harnröhre (4–5 cm) zu verhindern — Schutz vor aufsteigenden Harnwegsinfekten. Frisches Wasser, eigener Waschlappen, gut trocknen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Handlung
@@ -151,8 +152,11 @@
 - Zitat: "verhindern, dass Darmbakterien" (deckt Verschleppung von Darmkeimen als Grund der Waschrichtung)
 - Zitat: "Verschleppung von Darmkeimen zu vermeiden" (deckt Keim-Verschleppungs-Prinzip)
 - Zitat: "häufiger bei Frauen" + Zitat: "kurze Harnröhre" (deckt: kurze weibliche Harnröhre → erhöhtes HWI-Risiko)
-- ⚠️ Teilaussage Harnröhrenlänge "**3-5 cm**" — konkreter Zahlenwert im Korpus nicht belegt (Korpus nennt nur „kurze Harnröhre"). Quelle beschaffen (Anatomie-Index) oder Zahl entfernen.
-- ⚠️ Teilaussage Keim explizit "**E. coli**" im Intimpflege-Kontext — Korpus nennt hier „Darmbakterien/Darmkeime"; E. coli wird an anderer Stelle als Enterobakterium genannt (Z. 108800/110457), aber nicht direkt mit der weiblichen Intimwaschrichtung verknüpft. Als typischen Erreger kennzeichnen oder Querbeleg beschaffen.
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Die Harnröhre einer Frau ist 4–5 cm lang und verläuft gerade."
+- ⚠️ SACHKORREKTUR: Claim nennt „3-5 cm" — Korpus belegt „4–5 cm". Fakt-Zeile auf 4–5 cm korrigiert (Elsevier icare-examen-kompakt, Anatomie Harnwege).
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Meistens gelangen die Erreger, v.a. Bakterien, insbesondere E. coli, auf dem aszendierenden Weg in die Harnblase." (deckt E. coli als typischen Erreger bei HWI durch aszendierende Keimverschleppung)
 **Praxisfehler:** Dasselbe Wasser wie für den Körper verwenden — es enthält bereits Keime, Hautschuppen und Seifenreste.
 
 **Misconceptions:**
@@ -177,7 +181,8 @@
 - Zitat: "bildet sich hinter der Eichel durch die zu enge" (deckt Paraphimose = Schnürring/Einschnürung der Eichel)
 - Zitat: "schwellen schmerzhaft an, es drohen" (deckt: schmerzhafte Schwellung + drohende Durchblutungsstörung)
 - Zitat: "nicht zurückgezogen werden, da dies zu" (deckt: bei Phimose nicht mit Gewalt zurückziehen → Einrisse/Vernarbung)
-- ⚠️ Teilaussage Folge "**Nekrose**" — Korpus nennt „Durchblutungsstörungen", nicht wörtlich Nekrose. Als Eskalationsstufe fachlich korrekt, aber nicht verbatim belegt — Begriff entschärfen („drohende Durchblutungsstörung, im schlimmsten Fall Nekrose") oder Quelle beschaffen.
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Bei der Paraphimose klemmt eine zu enge, zurückgeschobene Vorhaut die Eichel ein. Das kann eine Nekrose der Eichel zur Folge haben und gilt als Notfall." (deckt Nekrose als Folge der Paraphimose verbatim)
 **Praxisfehler:** Das Vorziehen der Vorhaut vergessen, besonders bei Dauerkatheter-Trägern — Paraphimose-Risiko.
 
 **Misconceptions:**
@@ -224,7 +229,8 @@
 - Zitat: "Wasser und Seife" + Zitat: "dürfen nicht ins Ohr dringen" (deckt: nichts tief ins Ohr/Gehörgang)
 - Zitat: "Zähem Nasensekret und verborkter Nase" (deckt Nasenpflege bei Verkrustungen)
 - Zitat: "Nasenpflege bei nasogastraler Sonde" (deckt Sonden-Bezug → Nasenflügel-Druckstellen prüfen)
-- ⚠️ Teilaussage "**niemals etwas in den Gehörgang einführen**" — strenger als Korpus: Pflege heute erlaubt, Cerumen „am Gehörgang vorsichtig mit Wattestäbchen" zu entfernen (Z. 18573 ff.) und stützt den Watteträger ab (Abb. 6.22). Aussage didaktisch zuspitzen auf „nicht tief in den Gehörgang" oder mit aktueller HNO-/Cerumen-Leitlinie belegen.
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Die Reinigung mit Wattestäbchen ist kontraindiziert, da dadurch das Ohrenschmalz tiefer in den Gehörgang gedrückt wird, was zur Verschlechterung des Hörvermögens führen kann." (deckt: Wattestäbchen im Gehörgang kontraindiziert — stützt „niemals" als fachliche Aussage für Pflegepersonal)
 **Praxisfehler:** Wattestäbchen in den Gehörgang einführen — schiebt Cerumen tiefer und gefährdet das Trommelfell.
 
 **Misconceptions:**
@@ -311,7 +317,7 @@
 
 ### F-13: Erysipel (Wundrose) erkennen
 
-**Fakt:** Das Erysipel (Wundrose) ist eine flächenhafte bakterielle Hautinfektion, meist durch Streptokokken. Leitsymptome: scharf begrenzte, feuerrote Schwellung, Überwärmung, Schmerz, oft hohes Fieber. Häufig am Unterschenkel (Eintrittspforte z.B. Fußpilz). Notfall — Arzt sofort informieren (systemische Penicillingabe). Abgrenzung: Dekubitus-I-Rötung ist diffus, nicht scharf begrenzt.
+**Fakt:** Das Erysipel (Wundrose) ist eine flächenhafte bakterielle Hautinfektion, meist durch Streptokokken. Leitsymptome: scharf begrenzte, feuerrote Schwellung, Überwärmung, Schmerz, oft hohes Fieber. Häufig am Unterschenkel (Eintrittspforte z.B. Fußpilz). Notfall — Arzt sofort informieren (systemische Penicillingabe). Abgrenzung zu Dekubitus Grad I: Dekubitus I = umschriebene, nicht wegdrückbare Rötung (positiver Fingertest, kein Hautdefekt); Erysipel = scharf begrenzt mit flammenden Ausläufern.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
@@ -325,7 +331,11 @@
 - Zitat: "bekommt der Patient hohes Fieber" (deckt hohes Fieber)
 - Zitat: "Die Behandlung besteht in der systemischen Penicillingabe" (deckt systemische Penicillingabe)
 - Zitat: "Gefahr einer Sepsis" (deckt: Notfall, sonst Sepsis-Risiko; Korpus: Fußpilz als begünstigende Eintrittspforte genannt)
-- ⚠️ Teilaussage Abgrenzung "Dekubitus-I-Rötung ist diffus, **nicht scharf begrenzt**" — der direkte Vergleich Erysipel↔Dekubitus-Grad-I steht nicht verbatim im Korpus. Fachlich korrekte didaktische Abgrenzung; als solche kennzeichnen oder über DNQP-Dekubitus belegen.
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Dekubitus Kategorie I: umschriebene, nicht „wegdrückbare" (persistierende) Hautrötung (positiver Fingertest), kein Hautdefekt" (deckt: Dekubitus I = umschriebene Rötung ohne Hautdefekt, Gegenüber statt diffus)
+- Zitat: "Charakteristisch ist die scharf" (Erysipel — deckt: charakteristisches Merkmal der scharf begrenzten Rötung mit flammenden Ausläufern)
+- Zitat: "begrenzte, starke Rötung mit flammenden Ausläufern." (deckt: scharf begrenzte Rötung mit flammenden Ausläufern als Abgrenzungsmerkmal gegenüber Dekubitus)
+- ⚠️ SACHKORREKTUR: Originalclaim „Dekubitus-I-Rötung ist diffus" war FALSCH — Dekubitus I ist ebenfalls umschrieben/lokalisiert; Abgrenzungsmerkmal ist nicht diffus/scharf, sondern: Dekubitus = wegdrückbarkeitstest; Erysipel = scharf mit flammenden Ausläufern + Systemzeichen. Fakt korrigiert.
 **Praxisfehler:** Erysipel mit lokaler Wundversorgung „selbst behandeln" — es braucht systemische Antibiotika, sonst droht Sepsis.
 
 **Misconceptions:**
@@ -348,8 +358,13 @@
 - Zitat: "Die Pflegenden beobachten die Haut z. B. bei der Körperpflege"
 - Zitat: "sehen sie z. B. Hautfarbe" (Korpus-Liste: „Hautfarbe, Ödeme und Schwellungen, … Wunden" — deckt mehrere Beobachtungskriterien)
 - Zitat: "Voraussetzung für die Planung und Evaluation der" (deckt: Hautbeobachtung als Grundlage/Frühwarnsystem für die Pflegeplanung)
-- ⚠️ Teilaussage einzelne Fachbegriffe der Beobachtungsliste "**Turgor, Ekchymosen, Exantheme**" — diese spezifischen Begriffe stehen nicht in derselben Korpus-Liste (dort: Hautfarbe, Ödeme, Wunden, Verhärtungen, Trockenheit/Feuchtigkeit). Fachlich korrekt, aber als didaktische Erweiterung kennzeichnen oder über Anatomie-/Assessment-Quelle belegen.
-- ⚠️ Misconception M1 nennt Rechtsnorm "**PflBG § 5**" als Beleg für Hautbeobachtung als Pflege-Kernkompetenz — § 5 PflBG (Ausbildungsziel/Vorbehaltsaufgaben) im Korpus nicht zitiert. Gesetzestext als Primärquelle beschaffen oder Verweis präzisieren.
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Beobachtet werden: Farbe, Temperatur, Oberfläche und Turgor der Haut." (deckt Turgor als explizites Beobachtungskriterium bei der Körperpflege)
+- Zitat: "Auch die Spannung der Haut (Hautturgor) ist wichtig für die Einschätzung des Allgemeinzustands" (deckt Turgor als klinisches Assessment-Kriterium)
+- ⚠️ Teilaussage "**Ekchymosen**" — dieser Fachbegriff (= Einblutung) steht in keiner der Körperpflege-Beobachtungslisten der Korpora; als ergänzende Lehraussage kennzeichnen (pflegerisch korrekt, aber kein Direktbeleg im Körperpflege-Kapitel).
+- ⚠️ Teilaussage "**Exantheme**" — als Beobachtungsbegriff in Körperpflege-Kontext nicht verbatim belegt (Exanthem in Korpora nur in Pharmakologie/Infektologie-Kontext). Als didaktische Erweiterung kennzeichnen.
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "Tätigkeitsbereiche des Pflegeberufs mit Beispielen (§ 5 PflBG Abs. 3)" (deckt: § 5 PflBG als Normbasis für pflegerische Kernkompetenzen)
 **Praxisfehler:** Hautbeobachtung dem Arzt überlassen — der sieht den Patienten nur kurz; die Pflege bemerkt Veränderungen als Erste.
 
 **Misconceptions:**
@@ -398,9 +413,18 @@
 - Zitat: "dem Handzeichen der Pflegenden dokumentiert werden"
 - Zitat: "mangelhafte Pflegedokumentation kann jedoch zur Beweislastumkehr führen" (deckt Beweislast-Prinzip / „nicht dokumentiert = nicht durchgeführt")
 - Zitat: "die individuellen Ressourcen und Einschränkungen" (deckt Doku-Ebene 2: Ressourcen + Einschränkungen)
-- ⚠️ Teilaussage geschlossenes "**Drei-Ebenen-Schema** (Maßnahme / Ressourcen / Auffälligkeiten)" — als strukturierte Dreiteilung im Korpus nicht verbatim; Einzelelemente belegt, die Gliederung ist didaktisch. Kennzeichnen oder Quelle beschaffen.
-- ⚠️ Teilaussage "Sprache **sachlich und wertfrei**" — als Doku-Sprachregel nicht direkt im Korpus-Doku-Kapitel belegt (nur als Feedback-Regel an anderer Stelle, Z. 158541 „Beschreibend und nicht wertend"). Querbeleg kennzeichnen oder eigene Quelle beschaffen.
-- ⚠️ Teilaussage Rechtsgrundsatz-Zuschreibung "**(BGH Beweislast)**" in der Primärquellen-Zeile — kein BGH-Urteilszitat im Korpus; belegt ist die Beweislastumkehr über Pflege heute. Konkretes Urteil (z. B. BGH VI ZR) beschaffen oder Verweis auf Pflege heute reduzieren.
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "geplante und durchgeführte Maßnahmen" (Ebene 1: durchgeführte Maßnahmen)
+- Zitat: "weitere Beobachtungen" (Ebene 2: Beobachtungen/Ressourcen)
+- Zitat: "Besonderheiten und Veränderungen" (Ebene 3: Auffälligkeiten)
+- ⚠️ Teilaussage "**Ressourcen**" als explizite dritte Ebene — das Drei-Teiler-Schema im Corpus nennt „Beobachtungen" und „Besonderheiten", nicht explizit „Ressourcen" als eigenständige Ebene. Für Ressourcen-Nennung bleibt pflege-heute als alleiniger Beleg.
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "wertfreie Beschreibung" (deckt Anforderung sachlich/wertfreie Sprache in der Pflegedokumentation)
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Als Merksatz gilt: „Was nicht dokumentiert ist, wurde nicht gemacht"." (deckt den Grundsatz der Beweislastumkehr durch Nicht-Dokumentation verbatim)
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "bei mangelhafter Dokumentation muss die Einrichtung per Beweislastumkehr beweisen, dass die Maßnahmen korrekt ausgeführt wurden" (deckt Beweislastumkehr-Prinzip rechtlich)
+- ⚠️ Primärquellen-Zeile "BGH Beweislast" auf Pflege heute + icare-examen-kompakt korrigieren — kein konkretes BGH-Urteilszitat in Korpora verfügbar.
 **Praxisfehler:** Wertungen statt Beobachtungen eintragen („Patient wie immer mürrisch") — Dokumentation muss beobachtungsbezogen sein.
 
 **Misconceptions:**
@@ -423,7 +447,10 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Reihenfolge bei der Ganzkörperwaschung richtet sich nach der individuellen Patientensituation"
 - Zitat: "und vorbehaltene Tätigkeit im Sinne des" (deckt: pflegerische Vorbehalts-/Eigenentscheidung im Sinne des Pflegeberufegesetzes)
-- ⚠️ Teilaussage exakte Rechtsnorm "**§ 4 PflBG**" — Korpus belegt nur „vorbehaltene Tätigkeit im Sinne des Pflegeberufegesetzes", nicht die Paragraphennummer. § 4 PflBG (Vorbehaltsaufgaben) als Gesetzestext beschaffen oder Verweis auf „Pflegeberufegesetz" reduzieren.
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Im Pflegeberufegesetz (2017) wurden erstmals die sog. „vorbehaltenen Tätigkeiten" (§4 Pflegeberufegesetz) definiert, die nur von der Berufsgruppe der Pflegefachkräfte durchgeführt und nicht an z.B. Pflegehelfer delegiert werden dürfen." (deckt § 4 PflBG als Rechtsgrundlage für vorbehaltene Tätigkeiten)
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "Mit dem Pflegeberufegesetz wurden historisch betrachtet erstmals Vorbehaltsaufgaben für den Berufsstand der Pflege definiert und gesetzlich verankert (§ 4 PflBG)" (deckt § 4 PflBG verbatim)
 **Praxisfehler:** Schwache Patienten besonders gründlich waschen „um Vorrat zu schaffen" — der Patient verliert zusätzlich Energie und Wärme (Kollapsgefahr).
 
 **Misconceptions:**
@@ -472,8 +499,10 @@
 - Zitat: "verschlechtert die Situation zusätzlich" (Korpus: „Reibung verschlechtert die Situation zusätzlich" — deckt: nicht reiben/rubbeln)
 - Zitat: "Candida-Intertrigo bei Befall der Hautfalten" (deckt: Intertrigo durch Candida in Hautfalten)
 - Zitat: "Hautfalten nicht eincremen, da Salben und Cremes die Poren" (deckt: keine Creme auf feuchte Falten; Ausnahme Antimykotikum n. Anordnung)
-- ⚠️ Teilaussage geschlossene Lokalisationsliste "**submammär, inguinal, axillär, abdominell, interdigital**" — als zusammenhängende Aufzählung im Korpus nicht verbatim (belegt sind einzeln „Bauchfalte" Abb. 6.4, „Achselhöhlen"). Fachlich korrekt; als didaktische Liste kennzeichnen oder über Dermatologie-/Anatomie-Quelle belegen.
-- ⚠️ Teilaussage Technik "Hautfalten einzeln **anheben und tupfen**" — die konkrete Anheb-/Tupf-Technik nicht verbatim belegt (Korpus: „Abtrocknen sollte vorsichtig geschehen", „Reibung verschlechtert"). Aus dem Schonungsgebot ableitbar — als didaktische Konkretisierung kennzeichnen.
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Erwachsene: z.B. Leisten, Bauch, Brust, Achseln, Analfalte, Zehenzwischenräume, Skrotum" (deckt Intertrigo-gefährdete Lokalisationen bei Erwachsenen verbatim — entspricht den Fachbegriffen inguinal, abdominell, submammär, axillär, anal, interdigital, skrotal)
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Haut und Hautfalten nach dem Waschen sorgfältig abtrocknen (nicht reiben, sondern tupfen!)" (deckt „tupfen" als explizite Technik verbatim)
 **Praxisfehler:** Hautfalten kräftig trockenrubbeln — verletzt Altershaut (Mikrotraumata, Hämatome unter Antikoagulation).
 
 **Misconceptions:**

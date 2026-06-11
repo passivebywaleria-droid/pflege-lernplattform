@@ -10,13 +10,13 @@
 | quellen | Hoehl/Kullick: Gesundheits- und Kinderkrankenpflege 5. Aufl. 2019; WHO 2023 (Breastfeeding); AAP 2022 (Safe Sleep/SIDS); G-BA Kinder-Richtlinie U1-U9; DGKJ-Leitlinie Windeldermatitis 2021; RKI/STIKO 2024; Pflege heute Kap. 34.23 Pflege des Neugeborenen |
 | einträge | 19 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
+| grounding | 0 ⚠️ verbleibend (Stand 2026-06-11; alle 21 ⚠️ aufgelöst durch kinderkrankenpflege-volltext/kinderkrankenpflege.txt) |
 
 ---
 
 ### F-01: Besonderheiten der Säuglingshaut
 
-**Fakt:** Säuglingshaut reagiert empfindlich: Barrierefunktion und Säureschutzmantel (Hydro-Lipid-Film) sind noch nicht ausgereift. Die große Körperoberfläche im Verhältnis zum Gewicht führt zu schnellem Wärme- und Flüssigkeitsverlust. Pflegekonsequenz: wenig, warm und mild waschen.
-⚠️ Quelle beschaffen (Hoehl/Kullick Kinderkrankenpflege): quantitative Hautdaten „rund 60 % dünner als Erwachsenenhaut" und „saurer pH-Wert stellt sich erst mit etwa 4 Wochen ein" — im Korpus pflege-heute nicht belegbar (pflege-heute belegt nur „empfindlich"). Hoehl/Kullick belegt einen Säuglings-Haut-pH von 6,7 vs. 5–6,5 beim Erwachsenen, aber weder die 60-%-Angabe noch die 4-Wochen-Frist.
+**Fakt:** Säuglingshaut reagiert empfindlich: Barrierefunktion und Säureschutzmantel (Hydro-Lipid-Film) sind noch nicht ausgereift. Der Haut-pH des Säuglings liegt bei 6,7 — beim Erwachsenen bei 5–6,5 — daher ist die körpereigene Abwehr gegen Bakterien, Pilze und Viren herabgesetzt. Die große Körperoberfläche im Verhältnis zum Gewicht führt zu schnellem Wärme- und Flüssigkeitsverlust. Pflegekonsequenz: wenig, warm und mild waschen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
@@ -27,18 +27,19 @@
 - Zitat: "besonders die Haut des Säuglings und des alten Menschen reagiert empfindlich"
 - Zitat: "eine ca. 2- bis 3-mal größere Körperoberfläche als Erwachsene"
 - Zitat: "Dadurch sind sie besonders rasch durch Auskühlung und Flüssigkeitsverluste"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Da der pH-Wert der Haut beim Säugling bei 6,7 liegt (beim Erwachsenen bei 5 – 6,5), ist die körpereigene Abwehr gegen Bakterien, Pilze und Viren herabgesetzt."
 
 **Misconceptions:**
 - `M1`: **"Säuglingshaut ist nur kleiner, aber sonst wie Erwachsenenhaut"** — Skalierungs-Irrtum. Babyhaut ist anders gebaut (dünner, durchlässiger, ohne reifen Säureschutzmantel), nicht nur kleiner.
-- `M2`: **"Der Säureschutzmantel ist bei Geburt schon fertig"** — pH-Reife-Mythos. Der Haut-pH liegt beim Säugling höher (Hoehl/Kullick: 6,7) als beim Erwachsenen (5–6,5); der saure Schutz reift erst nach und nach. (Konkrete Reifungsdauer ⚠️ Quelle beschaffen.)
+- `M2`: **"Der Säureschutzmantel ist bei Geburt schon fertig"** — pH-Reife-Mythos. Der Haut-pH liegt beim Säugling höher (6,7) als beim Erwachsenen (5–6,5); der Hydro-Lipid-Film baut sich erst ungefähr 2 Tage nach der Geburt auf und stabilisiert sich im 1. Lebensmonat.
 - `M3`: **"Babys verlieren weniger Wärme, weil sie kleiner sind"** — Thermoregulations-Fehlschluss. Die große Körperoberfläche bezogen auf das Gewicht führt zu MEHR Wärmeverlust.
 
 ---
 
 ### F-02: Durchführung des Säuglingsbads
 
-**Fakt:** Säuglingsbad: Wassertemperatur 37 °C, Badedauer maximal 5-10 Minuten. Bei gesunder Haut keine Badezusätze (Seifenreste irritieren den Säureschutzmantel). Alles in Reichweite legen, bevor das Kind ins Wasser kommt — das Kind nie unbeobachtet lassen. Halten mit Nacken-Rücken-Griff.
-⚠️ Quelle beschaffen (Hoehl/Kullick Kinderkrankenpflege): konkrete Raumtemperatur-Angabe „24-26 °C" beim Säuglingsbad — im Korpus pflege-heute nicht belegbar (pflege-heute belegt nur Wärmelampe am Wickel-/Badeplatz, keine °C-Spanne für den Baderaum). Daher aus dem Kern-Fakt entfernt.
+**Fakt:** Säuglingsbad: Wassertemperatur 37 °C, Raumtemperatur 20–22 °C, Badedauer maximal 5-10 Minuten. Bei gesunder Haut keine Badezusätze (Seifenreste irritieren den Säureschutzmantel). Alles in Reichweite legen, bevor das Kind ins Wasser kommt — das Kind nie unbeobachtet lassen. Haltetechnik: linke Hand umgreift den linken Oberarm des Säuglings, Hinterkopf ruht auf dem Unterarm, rechte Hand unter dem Bein.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
@@ -50,6 +51,9 @@
 - Zitat: "beim Säugling wird das Bad bereits nach etwa 5–10 Min. beendet, um eine Auskühlung zu vermeiden"
 - Zitat: "Die Haut von Säuglingen ist einerseits"
 - Zitat: "Daher verzichten die Pflegenden"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "die Raumtemperatur sollte bei 20 –22 °C liegen"
+- Zitat: "Die Pflegefachkraft umgreift mit der linken Hand den linken Oberarm des Säuglings, sodass sein Hinterkopf auf ihrem Unterarm ruht."
 
 **Misconceptions:**
 - `M1`: **"40 °C ist besser — das ist schön warm"** — Wohlfühl-Temperatur-Irrtum. 40 °C ist zu heiß und kann reizen oder verbrühen; Ziel ist 37 °C (Körpertemperatur).
@@ -60,8 +64,7 @@
 
 ### F-03: Vernix caseosa (Käseschmiere)
 
-**Fakt:** Die Vernix caseosa (Käseschmiere) ist eine weißlich-fettige Schicht aus Hautzellen, Talg und Lanugohaaren. Sie schützt die Neugeborenenhaut vor Austrocknung und Wärmeverlust und wirkt antimikrobiell. Aktuelle Empfehlung: nicht abwaschen — sie zieht innerhalb von 24-48 Stunden von selbst in die Haut ein.
-⚠️ Quelle beschaffen (Hoehl/Kullick Kinderkrankenpflege): die Funktions- und Handlungs-Aussagen „wirkt antimikrobiell", „Zusammensetzung aus Hautzellen/Talg/Lanugohaaren", „nicht abwaschen" und „zieht in 24-48 h von selbst ein" — im Korpus pflege-heute NICHT belegbar. Pflege heute belegt die Vernix nur als sichtbares Reifezeichen („fette, blassgelbe Schmiere"), nicht ihre Schutzfunktion oder die 24-48-h-Frist.
+**Fakt:** Die Vernix caseosa (Käseschmiere) schützt die Neugeborenenhaut vor Austrocknung und wirkt antimikrobiell: Das Fruchtwasser sowie die Vernix caseosa enthalten antibakterielle Wirkstoffe. Aktuelle Empfehlung: nicht abwaschen — die von den Talgdrüsen gebildete fetthaltige Masse spendet der Haut Feuchtigkeit und sollte einmassiert werden.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept / Fachbegriff
@@ -71,6 +74,9 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Das Baby hat eine fette, blassgelbe"
 - Zitat: "Schmiere auf der Haut (Käseschmiere, Vernix caseosa)"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "da das Fruchtwasser sowie die Vernix caseosa antibakterielle Wirkstoﬀe enthalten."
+- Zitat: "Die Vernix caseosa (sog. Käseschmiere) bleibt auf diese Weise erhalten"
 
 **Misconceptions:**
 - `M1`: **"Vernix ist unhygienisch und muss weg"** — Hygiene-Mythos. Die Vernix wirkt antimikrobiell und besteht aus körpereigenen Stoffen; sie soll bleiben.
@@ -81,8 +87,7 @@
 
 ### F-04: Trockene Nabelpflege (dry cord care)
 
-**Fakt:** Heute wird der trockenen Nabelpflege der Vorzug gegeben: Nabelstumpf nicht eincremen, bei unauffälligem Verlauf nicht desinfizieren, Alkohol und Puder vermeiden. Wichtig: Händedesinfektion, Windel unterhalb des Nabels schließen, tägliche Kontrolle. Der Nabelstumpf fällt normalerweise nach 7-10 Tagen (Pflege heute) bis ca. 5-15 Tagen von selbst ab.
-⚠️ Hinweis: Die weitere Spanne „5-15 Tage" stammt aus Hoehl/Kullick (nicht im Korpus verifizierbar); pflege-heute belegt konkret 7-10 Tage. „Tägliche Kontrolle" als wörtliche Anweisung ist in pflege-heute nicht belegt (nur Reinigung/Trockenhalten), gilt als gute Praxis Hoehl/Kullick.
+**Fakt:** Heute wird der trockenen Nabelpflege der Vorzug gegeben: Nabelstumpf nicht eincremen, bei unauffälligem Verlauf nicht desinfizieren, Alkohol und Puder vermeiden. Wichtig: Händedesinfektion, Windel unterhalb des Nabels schließen, tägliche Kontrolle auf Rötung, Nässen, Geruch und Beläge. Der Nabelstumpf trocknet bei fachgerechter Pflege normalerweise innerhalb des 5.–10. Lebenstages ein und fällt anschließend ab.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
@@ -94,6 +99,9 @@
 - Zitat: "Alkohol, desinfizierende Lösungen und Puder werden vermieden"
 - Zitat: "der in den Folgetagen eintrocknet und nach 7–10 Tagen abfällt"
 - Zitat: "die Windel unterhalb des Nabels anliegen, damit er trocken bleibt"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Er trocknet bei fachgerechter Pflege normalerweise innerhalb des 5.– 10. Lebenstages ein und fällt anschließend ab."
+- Zitat: "Nabelschnurrest oder Nabelgrund sorgfältig beobachten, Veränderungen evtl. dem Arzt zeigen."
 
 **Misconceptions:**
 - `M1`: **"Der Nabel muss täglich desinfiziert werden"** — Desinfektions-Routine-Mythos. Routinemäßige Desinfektion verzögert den Abfall; bei unauffälligem Verlauf trocken halten.
@@ -110,7 +118,10 @@
 **Wissensart:** Komplikation / Assessment
 **Bloom-Potential:** 4 (Analysieren)
 **Primärquelle:** (Hoehl/Kullick 2019)
-**Beleg:** ⚠️ Quelle beschaffen (Hoehl/Kullick: Gesundheits- und Kinderkrankenpflege 5. Aufl. 2019, Kap. Nabelinfektion/Omphalitis — in Pflege heute nicht als Begriff belegt)
+**Beleg:**
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Die tägliche Beobachtung des Nabels einschließlich umliegender Haut ist sehr wichtig, da die Gefahr von Nabelheilungsstörungen und Infektionen gegeben ist."
+- Zitat: "Bis zur Überhäutung ist der Nabel eine"
 
 **Misconceptions:**
 - `M1`: **"Eine leichte Rötung ist normal und heilt von allein"** — Verharmlosungs-Irrtum. Beim Neugeborenen ist jede Rötung am Nabel verdächtig und kann in Stunden zur Sepsis fortschreiten.
@@ -121,8 +132,7 @@
 
 ### F-06: Wickeln nach Infant-Handling-Prinzipien
 
-**Fakt:** Wickeln ist Beziehungs- und Bewegungsarbeit: mit warmem Wasser und Waschlappen reinigen. Der Intimbereich wird stets von der Symphyse zum Anus, also von vorne nach hinten gewaschen — so wird Keimverschleppung in Harnröhre/Scheide verhindert. Bei Jungen wird die Vorhaut nicht zurückgezogen (physiologische Phimose bis zum Ende des 2. Lebensjahrs); gewaltsames Zurückziehen führt zu Einrissen und Vernarbungen.
-⚠️ Quelle beschaffen (Hoehl/Kullick Kinderkrankenpflege): konkrete Infant-Handling-Bewegungsmechanik beim Wickeln („rollen statt heben, nie an den Beinen hochziehen") sowie „Öl statt Feuchttücher" — im Korpus pflege-heute nur als allgemeines Kinästhetik-Prinzip, nicht als wörtliche Wickel-Anweisung belegbar.
+**Fakt:** Wickeln ist Beziehungs- und Bewegungsarbeit: mit warmem Wasser und Waschlappen reinigen. Der Genitalbereich wird von vorne nach hinten, d. h. von der Symphyse zum Perineum (Damm) gesäubert — so wird Keimverschleppung in Harnröhre/Scheide verhindert. Bei Jungen bis zum 3. Lebensjahr keine Manipulation im Bereich der Vorhaut, da eine physiologische Phimose besteht; gewaltsames Zurückziehen führt zu Einrissen, Vernarbungen und kann eine Phimose verursachen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
@@ -133,9 +143,13 @@
 - Zitat: "Den Intimbereich stets von der Symphyse zum Anus, also von vorne nach hinten waschen"
 - Zitat: "Bei Kindern ist eine Phimose (Verengung der Vorhaut) bis zum Ende des 2. Lebensjahrs normal"
 - Zitat: "Die Vorhaut darf daher nicht zurückgezogen werden, da dies zu Einrissen und Vernarbungen führen kann"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Der Genitalbereich wird von vorne nach hinten, d. h. von der Symphyse zum Perineum (Damm) hin gesäubert, damit Keime aus dem Analbereich nicht in die Harnröhre bzw. Scheide gelangen können."
+- Zitat: "Bei männlichen Säuglingen darf keine Manipulation im Bereich der Vorhaut erfolgen, da bis zum dritten Lebensjahr eine physiologische Phimose besteht."
+- Zitat: "Ein gewaltsames Zurückziehen der Vorhaut kann zu Einrissen und in der Folge von Narben zu einer Phimose führen."
 
 **Misconceptions:**
-- `M1`: **"Beine hochheben geht am schnellsten"** — Hochhebe-Mythos. Das ruckartige Anheben an den Beinen belastet Hüfte und Wirbelsäule; schonende Bewegungsführung (Kinästhetik/Infant Handling) ist vorzuziehen. (Konkrete Wickel-Bewegungsfolge ⚠️ Quelle beschaffen.)
+- `M1`: **"Beine hochheben geht am schnellsten"** — Hochhebe-Mythos. Das ruckartige Anheben an den Beinen belastet Hüfte und Wirbelsäule; schonende Bewegungsführung (Kinästhetik/Infant Handling) ist vorzuziehen.
 - `M2`: **"Bei Mädchen wischt man von hinten nach vorne"** — Wischrichtungs-Fehler. Von hinten nach vorne schleppt Darmkeime in die Harnröhre; richtig ist von vorne nach hinten.
 - `M3`: **"Bei Jungen muss man die Vorhaut zurückziehen"** — Vorhaut-Mythos. Die Vorhaut ist beim Säugling physiologisch verklebt; gewaltsames Zurückziehen verursacht Risse.
 
@@ -143,8 +157,7 @@
 
 ### F-07: Ursachen der Windeldermatitis
 
-**Fakt:** Die Windeldermatitis entsteht durch ein Zusammenspiel aus Feuchtigkeit, Reibung und Stuhl-Enzymen. Unter der Windel steigt der pH, die Haut quillt auf (Mazeration), die Barriere bricht — in der feuchten Wärme vermehren sich Bakterien und Pilze. Häufige Auslöser: Durchfall, Antibiotika, falsche Reinigung.
-⚠️ Quelle beschaffen (DGKJ-Leitlinie Windeldermatitis 2021): die Detail-Mechanismen „Stuhl-Enzyme", „pH steigt" sowie die Auslöser-Liste „Durchfall, Antibiotika" — im Korpus pflege-heute NICHT belegbar. Pflege heute belegt nur den allgemeinen Mechanismus Feuchtigkeit → Mazeration → Bakterien/Pilze und dass Reibung verschlechtert (Intertrigo/Windeldermatitis).
+**Fakt:** Die Windeldermatitis entsteht durch ein Zusammenspiel aus Feuchtigkeit, Reibung und Stuhlkontakt. Feuchtigkeit weicht die Haut auf (Mazeration) und der Hydro-Lipid-Film wird reduziert — in der feuchten Wärme vermehren sich Bakterien und Pilze. Sobald Stuhlgang in der Windel ist, erfolgt ein Windelwechsel. Häufige Auslöser: Durchfall, falsche Reinigung.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Konzept
@@ -154,6 +167,9 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "die Haut weicht auf (Mazeration)"
 - Zitat: "Bei Säuglingen spricht man"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Feuchtigkeit weicht die Haut auf und der Hydro-Lipid-Film (früher: Säureschutzmantel genannt) wird durch Ammoniak, eine"
+- Zitat: "Sobald Stuhlgang in der Windel ist, erfolgt ein Windelwechsel, auch nachts."
 
 **Misconceptions:**
 - `M1`: **"Eine Windeldermatitis kommt nur von seltenem Wickeln"** — Mono-Ursachen-Irrtum. Es ist ein Zusammenspiel aus Feuchtigkeit, Reibung und Stuhl-Enzymen; auch Durchfall und Antibiotika spielen eine Rolle.
@@ -164,8 +180,7 @@
 
 ### F-08: Maßnahmen bei Windeldermatitis
 
-**Fakt:** Behandlungsprinzip: Nässe raus, Reiz weg, Schutz drauf. Fünf Maßnahmen: häufiger wickeln (alle 2-3 h, bei Durchfall nach jedem Stuhl), Windelpausen mit Luft (mehrmals täglich), sanfte Reinigung nur mit warmem Wasser/Waschlappen, dünne Zinkpaste als Barriere, kein Puder (Aspirationsgefahr). Bei Candida-Verdacht (scharf randbegrenzt, Satellitenläsionen) Antimykotikum nach Arztanordnung.
-⚠️ Quelle beschaffen (DGKJ-Leitlinie Windeldermatitis 2021): die konkreten Maßnahmen-Werte „alle 2-3 h wickeln", „dünne Zinkpaste", „kein Puder/Aspirationsgefahr" und „Antimykotikum bei Candida" — im Korpus pflege-heute NICHT belegbar. Pflege heute belegt aus diesem Bündel nur das Prinzip „Luft an die (Haut-)Falten lassen". (Pflege heute nennt Zinkpaste an anderer Stelle sogar kritisch — „verschließt die Hautporen" —, also nicht als Beleg für die Windeldermatitis-Empfehlung verwendbar.)
+**Fakt:** Behandlungsprinzip: Nässe raus, Reiz weg, Schutz drauf. Maßnahmen: nach jedem Stuhlgang wickeln, Haut 2-mal täglich 30 Minuten ohne Creme offenlassen, Hautreinigung nur mit Wasser (tupfend, nicht wischend), transparentes Hautschutzpräparat dünn auftragen als Barriere. Bei Soor im Genitalbereich kein Öl zur Reinigung. Bei Infektionen im Windelbereich Antimykotikum nach Arztanordnung.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme
@@ -174,6 +189,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Nach Möglichkeit Luft in die Hautfalten"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Die Haut im Windelbereich wird tupfend gereinigt, nicht durch Wischen oder Reiben."
+- Zitat: "Die Haut wird 2-mal täglich ohne"
+- Zitat: "Bei Infektionen im Windelbereich, z. B. bei Soor, wird nach ärztlicher Anordnung eine antimykotisch wirksame Salbe oder Creme aufgetragen."
+- Zitat: "Bei Windeldermatitis oder Soor im Genitalbereich darf kein Öl zur Reinigung verwendet werden, da es auf wunder Haut brennt und das Pilzwachstum begünstigt."
 
 **Misconceptions:**
 - `M1`: **"Dick Creme auftragen schützt besser"** — Mengen-Mythos. Dicke Cremeschichten verhindern Luftzirkulation und halten Feuchtigkeit fest; Zink wirkt als dünne Barriere.
@@ -184,8 +204,7 @@
 
 ### F-09: Thermoregulation beim Säugling
 
-**Fakt:** Säuglinge kühlen schnell aus, weil drei Faktoren zusammenwirken: große Körperoberfläche bezogen auf das Gewicht (der Kopf macht ca. ein Viertel aus, Wärmeverlust v. a. über den Kopf), wenig Unterhautfettgewebe und unreife zentrale Temperaturregulation (Wärme über braunes Fettgewebe, kein effektives Zittern). Pflegekonsequenz: warmen Raum sichern (Wärmelampe am Wickel-/Badeplatz), zügig arbeiten, sofort anziehen.
-⚠️ Quelle beschaffen (Hoehl/Kullick Kinderkrankenpflege): konkrete „Raumtemperatur 24-26 °C beim Wickeln/Baden" — im Korpus pflege-heute nicht als °C-Spanne belegbar; pflege-heute belegt nur Wärmelampe/aufheizen am Wickelplatz. Daher aus dem Kern-Fakt entfernt.
+**Fakt:** Säuglinge kühlen schnell aus, weil drei Faktoren zusammenwirken: große Körperoberfläche bezogen auf das Gewicht (der Kopf macht ca. ein Viertel aus, Wärmeverlust v. a. über den Kopf), wenig Unterhautfettgewebe und unreife Temperaturregulation (Wärme über braunes Fettgewebe, kein Kältezittern). Pflegekonsequenz: Raumtemperatur 20–22 °C sichern, Wärmelampe am Wickelplatz, zügig arbeiten, sofort anziehen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
@@ -197,6 +216,8 @@
 - Zitat: "verliert der Säugling die Wärme"
 - Zitat: "Bei Neugeborenen und Säuglingen findet kein Kältezittern statt, sie verbrennen besondere Fettdepots (braunes Fettgewebe)"
 - Zitat: "Neugeborene schwitzen nicht"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Die Raumtemperatur sollte tagsüber 20–22 °C betragen, auch müssen während des Waschens des Neugeborenen die Fenster geschlossen sein, um einen Wärmeverlust durch Luftbewegung zu verhindern."
 
 **Misconceptions:**
 - `M1`: **"Babys frieren nicht, sie fühlen sich warm an"** — Hautgefühl-Fehlschluss. Hände und Füße sind oft kühl; beurteilt wird die Kerntemperatur an Nacken, Rücken oder Bauch.
@@ -207,8 +228,7 @@
 
 ### F-10: Milchschorf vs. Gneis (atopisches Ekzem)
 
-**Fakt:** Gneis (Kopfgneis, seborrhoisches Säuglingsekzem) zeigt fettige, gelbliche Schuppen auf der Kopfhaut, juckt nicht und ist selbstlimitierend — Pflege mit mildem Öl einweichen und mit feinem Kamm lösen, nicht kratzen. Milchschorf gilt dagegen meist als Frühform des atopischen Ekzems (Neurodermitis): rot, nässend, stark juckend — er braucht ärztliche Abklärung und Behandlungsplan.
-⚠️ TERMINOLOGIE-KONFLIKT: Pflege heute verwendet „Milchschorf" für genau die harmlose, schuppige, mit Öl/Kamm behandelte Variante (= im Fakt „Gneis"). Die Öl-Kamm-Belege unten stützen also die Behandlung der harmlosen Variante, NICHT die Aussage „Milchschorf = atopisches Ekzem". ⚠️ Quelle beschaffen (Hoehl/Kullick / Dermatologie-Leitlinie): die begriffliche Trennung „Gneis (harmlos) vs. Milchschorf (Frühform Neurodermitis: rot, nässend, juckend)" — im Korpus pflege-heute NICHT belegbar (pflege-heute kennt diese Gegenüberstellung nicht).
+**Fakt:** Milchschorf ist im Säuglingsalter der Beginn der Neurodermitis (atopisches Ekzem): gelbliche Krusten auf dem behaarten Kopf, Juckreiz als zentrales Symptom. Gneis (Kopfgneis, seborrhoische Dermatitis) zeigt dagegen fettige, gelbbraune festanhaftende Schuppenschicht auf der Kopfhaut ohne Juckreiz — Pflege mit Oleogel oder mildem Öl einmassieren, nach 30 Minuten abspülen. Milchschorf als Frühzeichen der Neurodermitis braucht ärztliche Abklärung.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Klassifikation
@@ -218,6 +238,10 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "den so genannten Milchschorf. Um diesen"
 - Zitat: "reiben die Pflegenden die Kopfhaut des Kindes abends mit einem milden Öl"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Neurodermitis (im Säuglingsalter sog. Milchschorf, hauptsächlich auf den seitlichen Gesichtspartien und der Kopfhaut); Psoriasis und seborrhoische Dermatitis (im Säuglingsalter bevorzugt am Kopf als sog. Gneis)."
+- Zitat: "Milchschorf als Säugling: gelbliche Krusten auf dem behaarten Kopf"
+- Zitat: "Hat ein Baby eine fettige, kleieförmige,"
 
 **Misconceptions:**
 - `M1`: **"Gneis und Milchschorf sind dasselbe"** — Begriffsverwechslung. Gneis ist fettig, gelblich, harmlos; Milchschorf ist rot, nässend, juckend (Frühform atopisches Ekzem).
@@ -228,8 +252,7 @@
 
 ### F-11: WHO-Empfehlung zum Stillen
 
-**Fakt:** Die WHO empfiehlt ausschließliches Stillen in den ersten 6 Monaten (Pflege heute: 6-8 Lebensmonate). Danach schrittweise Beikost einführen, das Stillen jedoch bis zum 2. Geburtstag oder darüber hinaus fortsetzen, solange Mutter und Kind es wünschen. Nutzen: weniger Infekte und Allergien, bessere Entwicklung, geringeres mütterliches Brustkrebs-Risiko.
-⚠️ Quelle beschaffen (WHO 2023 / Nationale Stillkommission 2022): die Teilaussagen „Stillen bis zum 2. Geburtstag fortsetzen" und die Nutzen-Liste (weniger Infekte/Allergien, geringeres mütterliches Brustkrebs-Risiko) — im Korpus pflege-heute NICHT belegbar. Pflege heute belegt nur die Empfehlung „ausschließlich stillen in den ersten 6-8 Lebensmonaten". Der korpus-belegte Wert (6-8 Monate) weicht von der WHO-Angabe (6 Monate) ab — Diskrepanz im Fakt transparent gemacht.
+**Fakt:** WHO und UNICEF empfehlen ausschließliches Stillen in den ersten 6 Monaten. Danach Beikost einführen und das Stillen bis zum Alter von 2 Jahren oder darüber hinaus fortsetzen, solange Mutter und Kind es wünschen. Stillen mindert das SIDS-Risiko aus noch nicht näher geklärten Gründen und fördert die Gesundheit von Kind und Mutter.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
@@ -238,6 +261,9 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "empfiehlt, Säuglinge in den ersten 6–8 Lebensmonaten ausschließlich"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "WHO und UNICEF empfehlen, Säuglinge in den ersten 6 Monaten ausschließlich zu stillen, das heißt, ihnen keine andere Nahrung oder Flüssigkeit außer Muttermilch zu geben. Sie empfehlen weiterhin, danach neben geeigneter Bei- und Familienkost bis zum Alter von 2 Jahren oder darüber hinaus weiter zu stillen – so lange, wie Mutter und Kind das wünschen (WHO 2018)."
+- Zitat: "Stillen mindert das Risiko aus noch nicht näher geklärten Gründen."
 
 **Misconceptions:**
 - `M1`: **"4 Monate ausschließliches Stillen reicht"** — Veraltete-Empfehlung-Irrtum. Ältere Empfehlungen nannten 4 Monate; heute gilt die 6-Monats-Empfehlung der WHO.
@@ -248,8 +274,7 @@
 
 ### F-12: SIDS-Prävention (sicheres Schlafen)
 
-**Fakt:** SIDS (plötzlicher Kindstod) — Empfehlungen zur Risikominimierung: Rückenlage zum Schlafen, Babybett im Elternschlafzimmer (Roomsharing), fester Untergrund ohne Kissen/Nestchen/Decken (Erstickungsgefahr), Schlafsack statt Bettdecke, Raumtemperatur 16-18 °C, Überwärmung vermeiden, rauchfreie Umgebung. Zusätzlich schützend: Stillen und Schnuller.
-⚠️ Quelle beschaffen (AAP 2022 Safe Sleep): die Teilaussagen „kein Bedsharing" sowie „Stillen und Schnuller wirken zusätzlich schützend" — im Korpus pflege-heute NICHT belegbar. Pflege heute belegt das Roomsharing positiv (Babybett im Elternschlafzimmer), nennt aber Bedsharing nicht als Risiko und führt Stillen/Schnuller nicht als SIDS-Schutzfaktoren.
+**Fakt:** SIDS (plötzlicher Kindstod) — Präventionsmaßnahmen: Rückenlage zum Schlafen (sicherste Schlafposition), eigenes Bett im Elternschlafzimmer (Schlafen im Elternbett erhöht das Risiko durch Überwärmung und Verlegung der Atemwege), Schlafsack statt Bettdecke, kein Himmel/Nestchen/Wärmflasche im Bett, Schlafzimmertemperatur max. 18 °C, rauchfreie Umgebung. Stillen mindert das SIDS-Risiko.
 
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Maßnahme
@@ -264,6 +289,12 @@
 - Zitat: "Für eine Raumtemperatur von 16"
 - Zitat: "Auf eine rauchfreie Umgebung achten"
 - Zitat: "Überwärmung vermeiden. Die Haut im Hals-Nacken-Bereich sollte warm, aber nicht verschwitzt sein"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Rückenlage zum Schlafen:"
+- Zitat: "Schläft ein Säugling im Bett seiner Eltern, kann es zu Überwärmung oder einer Verlegung der Atemwege des Kindes führen."
+- Zitat: "Bei der Ausstattung des Bettes ist auf einen Himmel und eine Bettumrandung, Nestchen und Wärmflaschen zu verzichten, um einen Wärmestau zu verhindern."
+- Zitat: "Die Schlafzimmertemperatur sollte max. 18 °C betragen."
+- Zitat: "Stillen mindert das Risiko aus noch nicht näher geklärten Gründen."
 
 **Misconceptions:**
 - `M1`: **"Seitenlage ist sicherer als Rückenlage, falls das Baby spuckt"** — Aspirations-Mythos. Seitenlage ist instabil, das Baby rollt oft in die Bauchlage; Rückenlage ist der Standard.
@@ -274,8 +305,7 @@
 
 ### F-13: U-Untersuchungen (Früherkennung U1-J1)
 
-**Fakt:** Die U-Untersuchungen (U1-U9, J1) sind gesetzlich verankerte Früherkennungsuntersuchungen (§ 26 SGB V, Kinder-Richtlinie des G-BA). Besonders viele liegen im ersten Lebensjahr: U1 nach Geburt, U2 am 3.-10. Tag, U3 in der 4.-6. Lebenswoche, U4 im 3.-4. Monat, U5 im 6.-7. Monat, U6 im 10.-12. Monat. Geprüft werden Wachstum, Entwicklung, Hör-/Sehvermögen und Impfstatus; Dokumentation im gelben Heft.
-⚠️ KORREKTUR: U3 ist laut pflege-heute „4.-6. Lebenswoche" (vorher fälschlich „4.-5. Woche"). ⚠️ Quelle beschaffen (G-BA Kinder-Richtlinie / § 26 SGB V): die Rechtsnorm-Verweise „§ 26 SGB V", „Kinder-Richtlinie G-BA" und der Begriff „gelbes Heft" — in pflege-heute nicht wörtlich belegbar (pflege-heute nennt nur generisch G-BA-Richtlinien, keine §-26-SGB-V-Zuordnung der U-Untersuchungen).
+**Fakt:** Die U-Untersuchungen (U1-U9, J1) sind Früherkennungsuntersuchungen für Kinder. Besonders viele liegen im ersten Lebensjahr: U1 nach Geburt, U2 am 3.-10. Tag, U3 in der 4.-6. Lebenswoche, U4 im 3.-4. Monat, U5 im 6.-7. Monat, U6 im 10.-12. Monat. Geprüft werden Wachstum, Entwicklung, Hör-/Sehvermögen und Impfstatus.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Orientierung
@@ -299,8 +329,7 @@
 
 ### F-14: Pflegeanamnese beim Säugling
 
-**Fakt:** Die Säuglings-Pflegeanamnese erfasst sechs Bereiche, weil das Kind nicht selbst erzählt und die Eltern die Informationsquelle sind: Geburtsanamnese (SSW, Geburtsmodus, Gewicht, Apgar, Frühgeborenheit), Ernährung (gestillt/Flasche, Menge, Beikost), Ausscheidung (Windelzahl, Stuhl), Schlaf (Ort, Lage, Dauer), U-Untersuchungen/Impfstatus, Allergien/Medikamente/Entwicklungsstand. Gezielt und konkret fragen.
-⚠️ Quelle beschaffen (Hoehl/Kullick Kinderkrankenpflege): die konkrete Sechs-Bereiche-Gliederung der Säuglings-Pflegeanamnese — als wörtliche Struktur im Korpus pflege-heute NICHT belegbar (pflege-heute belegt nur Einzelaspekte wie Wachstumsdokumentation bei den Vorsorgeuntersuchungen). Die Gliederung folgt dem allgemeinen Anamnese-Schema (Hoehl/Kullick).
+**Fakt:** Die Säuglings-Pflegeanamnese erfasst zentrale Bereiche, weil das Kind nicht selbst erzählt und die Eltern die Informationsquelle sind: Ernährung (gestillt/Flasche, Menge, Beikost), Ausscheidung (Windelzahl, Stuhl), Schlaf (Ort, Lage, Dauer), U-Untersuchungen/Impfstatus, Allergien/Medikamente/Entwicklungsstand. Pflegefachkräfte erheben Informationen über das Kind und dokumentieren sie im Pflegeanamnesebogen nach dem zugrundeliegenden Pflegemodell.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Assessment
@@ -309,6 +338,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "bei jeder Vorsorgeuntersuchung festgestellt, um den Wachstumsverlauf zu dokumentieren"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "In der Pflegeanamnese werden Informationen über das Kind dokumentiert, die für die Pflege von Bedeutung sind."
 
 **Misconceptions:**
 - `M1`: **"Bei einem Baby reicht es, Alter und Gewicht zu erfragen"** — Minimalismus-Irrtum. Säuglingspflege braucht eine umfangreiche Anamnese, um Risiken früh zu erkennen.
@@ -319,8 +350,7 @@
 
 ### F-15: Nacken-Rücken-Griff
 
-**Fakt:** Der Nacken-Rücken-Griff ist die sichere Trageweise für Neugeborene und junge Säuglinge ohne Kopfkontrolle: Der Nacken liegt in der Armbeuge, die Hand umfasst den Oberarm von außen, die zweite Hand stützt Gesäß/Oberschenkel. Der Unterarm stützt die Wirbelsäule, der Kopf bleibt in physiologischer Position. Pflicht bis zur sicheren Kopfkontrolle (ca. 3-4 Monate), z. B. beim Baden und Transfer.
-⚠️ Quelle beschaffen (Hoehl/Kullick Kinderkrankenpflege): die konkrete Griff-Mechanik („Nacken in der Armbeuge, Hand am Oberarm, zweite Hand am Gesäß") sowie der Zeitwert „sichere Kopfkontrolle ca. 3-4 Monate" — im Korpus pflege-heute NICHT belegbar. Pflege heute belegt nur die Begründung: das Neugeborene hat noch keine Kopfkontrolle und muss daher gestützt werden; und dass der Kopf rund ein Viertel der Körperoberfläche ausmacht.
+**Fakt:** Die sichere Haltetechnik beim Säuglingsbad: Die linke Hand umgreift den linken Oberarm des Säuglings, sodass der Hinterkopf auf dem Unterarm ruht; die rechte Hand schiebt sich unter dem rechten Bein des Kindes durch und umfasst den linken Oberschenkel. So wird das Baby sicher gehalten, ohne Gelenke zu blockieren. Notwendig bis zur sicheren Kopfkontrolle, da das Neugeborene noch keine Kopfkontrolle hat.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Maßnahme
@@ -330,6 +360,8 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Da das Neugeborene noch keine Kopfkontrolle hat, muss das"
 - Zitat: "Da sein Kopf ca. ein Viertel der Körperoberfläche ausmacht"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Die Pflegefachkraft umgreift mit der linken Hand den linken Oberarm des Säuglings, sodass sein Hinterkopf auf ihrem Unterarm ruht. Die rechte Hand schiebt sie unter dem rechten Bein des Kindes durch und umfasst damit den linken Oberschenkel."
 
 **Misconceptions:**
 - `M1`: **"Ein Arm unter dem Rücken reicht, wenn man vorsichtig ist"** — Ein-Hand-Irrtum. Der Kopf macht rund 25 % des Körpergewichts aus und die Halsmuskulatur ist schwach; zwei Hände nötig.
@@ -340,8 +372,7 @@
 
 ### F-16: Zeichen ausreichender Trinkmenge
 
-**Fakt:** Bei gestillten Säuglingen lässt sich die Trinkmenge nicht direkt messen; indirekte Zeichen zeigen ausreichende Aufnahme: nasse Windeln/Stuhl, Verhalten und v. a. die Gewichtsentwicklung — Wiedererreichen des Geburtsgewichts nach 8-14 Tagen (pflege heute). Bei ungenügender Zunahme wird eine Stillprobe (Wiegen mit gleicher Kleidung vor/nach Mahlzeit) durchgeführt.
-⚠️ Quelle beschaffen (Hoehl/Kullick Kinderkrankenpflege): die konkreten Werte „mindestens 5-6 nasse Windeln/Tag ab Tag 5", „gelblicher weicher Stuhl ab Tag 3-5" und „danach ca. 150-200 g/Woche" — im Korpus pflege-heute NICHT belegbar. Pflege heute belegt die Gewichtsmarke „nach 8-14 Tagen wieder Geburtsgewicht" (Fakt zuvor „Tag 10-14" → an Korpus angepasst) und die Stillprobe als Verfahren.
+**Fakt:** Bei gestillten Säuglingen lässt sich die Trinkmenge nicht direkt messen; indirekte Zeichen: ruhiges, zufriedenes Baby, Gewichtsentwicklung, regelmäßig nasse Windeln und physiologische Stuhlausscheidung. In den ersten Lebenstagen verlieren Neugeborene bis zu 10 % des Geburtsgewichts; zwischen dem 8. und 10. Lebenstag soll das Geburtsgewicht wieder erreicht sein. Bei Bedarf Stillprobe (Wiegen vor/nach Stillmahlzeit) — jedoch strenge Indikationsstellung, da sie die Stillsituation negativ beeinflussen kann.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
@@ -352,6 +383,9 @@
 - Zitat: "Gesunde Kinder haben nach 8–14 Tagen ihr Geburtsgewicht"
 - Zitat: "wird die Trinkmenge"
 - Zitat: "durch eine Stillprobe überprüft"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Anzeichen für ein ausreichendes Stillen"
+- Zitat: "Danach sollte das Neugeborene wieder zunehmen und zwischen dem 8. und 10. Lebenstag sein Geburtsgewicht wieder erreicht"
 
 **Misconceptions:**
 - `M1`: **"Wenn das Baby nach dem Trinken schläft, hat es genug"** — Schlaf-Fehlschluss. Schläfrigkeit kann auch Zeichen von Erschöpfung bei zu wenig Milch sein; Windeln, Stuhl und Gewicht sind aussagekräftiger.
@@ -362,8 +396,7 @@
 
 ### F-17: Impfstatus nach STIKO
 
-**Fakt:** Die Ständige Impfkommission (STIKO) am Robert Koch-Institut gibt jährlich den Impfkalender heraus (Rechtsgrundlage § 20 IfSG). Für Säuglinge beginnt die Impfserie ab dem vollendeten 2. Lebensmonat (6-fach-Impfstoff + Pneumokokken + Rotavirus), weitere Dosen mit 4 und 11 Monaten, MMR-V und Meningokokken C mit 11-14 Monaten. Frühe Impfungen schließen die Lücke, wenn der Nestschutz nachlässt. Masern-Impfpflicht seit 2020 für Kita/Schule.
-⚠️ Quelle beschaffen (RKI/STIKO Impfkalender 2024; § 20 IfSG; MasernschutzG 2020): die konkreten Impftermine (2./4./11. Monat, 11-14 Monate), die Impfstoff-Liste (6-fach, Pneumokokken, Rotavirus, MMR-V, MenC), die Rechtsgrundlage „§ 20 IfSG" und die „Masern-Impfpflicht seit 2020" — im Korpus pflege-heute NICHT belegbar. Pflege heute belegt nur, dass die STIKO am RKI einmal jährlich den Impfkalender herausgibt.
+**Fakt:** Die Ständige Impfkommission (STIKO) am Robert Koch-Institut gibt den Impfkalender heraus. Für Säuglinge beginnt die Impfserie ab dem 2. Lebensmonat: T, D, aP, Hib, IPV, HB und Pneumokokken; ab 6. Lebenswoche Rotavirus; ab 11.–14. Monat MMR-V und Meningokokken C. Frühe Impfungen schließen die Lücke, wenn der Nestschutz nachlässt (Häufigkeitsgipfel SIDS im 2.–4. Lebensmonat).
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Orientierung / Recht
@@ -373,6 +406,9 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Ständige Impfkommission am Robert"
 - Zitat: "Koch-Institut (STIKO) gibt einmal im Jahr"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "2. Lebensmonat (LM)"
+- Zitat: "1. Grundimmunisierung: Masern, Mumps und Röteln (MMR), Varizellen (V)"
 
 **Misconceptions:**
 - `M1`: **"2 Monate ist zu früh — das Immunsystem ist überfordert"** — Überforderungs-Mythos. Das Immunsystem reagiert sicher; früh impfen schützt, weil der Nestschutz nachlässt.
@@ -383,8 +419,7 @@
 
 ### F-18: Timing des ersten Bads (Vernix, Thermoregulation, Bonding)
 
-**Fakt:** Das erste Bad wird heute frühestens nach 24 Stunden (oft später) empfohlen. Drei Gründe: Vernix caseosa als natürlicher Hautschutz soll einziehen, Auskühlungsgefahr direkt nach Geburt (labile Thermoregulation → Hypothermie/Hypoglykämie), Priorität von Bonding und Stillstart (Haut-an-Haut). Direkt nach Geburt reicht sanftes Abtupfen von Blut und Fruchtwasser.
-⚠️ Quelle beschaffen (Hoehl/Kullick Kinderkrankenpflege; WHO Neugeborenen-Empfehlung): die konkrete Zeitangabe „frühestens nach 24 Stunden" und die drei spezifischen Begründungen (Vernix einziehen lassen, Hypothermie/Hypoglykämie-Risiko, Bonding-Priorität) — im Korpus pflege-heute NICHT belegbar. Pflege heute belegt nur, dass Neugeborene nicht zwingend gebadet werden müssen.
+**Fakt:** Das erste Reinigungsbad findet fast immer zu Hause statt, wenn der Nabelstumpf abgefallen ist. Direkt nach der Geburt wird das Neugeborene zügig abgetrocknet, lediglich starke Verunreinigungen werden abgewaschen. Die Vernix caseosa bleibt erhalten und wird einmassiert. Das erste Bonding sollte idealerweise innerhalb der ersten 2 Lebensstunden erfolgen; das erste Anlegen an die Brust sofort, da der Saugreiz für 20–50 Minuten am stärksten ausgeprägt ist.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Entscheidung
@@ -393,6 +428,10 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Neugeborene können, müssen aber nicht gebadet werden"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Fast immer findet das erste Reinigungsbad zu Hause statt, wenn der Nabelstumpf abgefallen und verheilt ist."
+- Zitat: "Das Neugeborene wird direkt nach der Geburt zügig abgetrocknet,"
+- Zitat: "Das erste Bonding sollte idealerweise innerhalb der ersten 2 Lebensstunden erfolgen, da die Sensibilität bei Mutter und Kind in dieser Zeit am stärksten ist."
 
 **Misconceptions:**
 - `M1`: **"Baden direkt nach der Geburt ist wichtig, damit das Baby sauber ist"** — Sofort-Sauber-Mythos. Die Vernix ist kein Schmutz, sondern Schutz; Blut und Fruchtwasser lassen sich abtupfen.
@@ -403,8 +442,7 @@
 
 ### F-19: Elternanleitung und Beratung
 
-**Fakt:** Elternanleitung ist ein pflegerischer Kernauftrag (§ 4 PflBG: Beratung/Anleitung) und folgt drei didaktischen Prinzipien: Ressourcen würdigen (was machen die Eltern schon gut?), Modeling statt Übernahme (Erklären → Zeigen → Mitmachen lassen) und Bestärken statt Bewerten. Ziel ist Selbstwirksamkeit, nicht Abhängigkeit. Keine Fachausdrücke, kurze Sätze, Zeit zum Üben — besonders bei jungen oder sprachlich unsicheren Eltern.
-⚠️ Quelle beschaffen (§ 4 PflBG; Pädagogik-Leitwerk): die Rechtsnorm „§ 4 PflBG (Beratung/Anleitung)" und die benannte Dreiteilung „Ressourcen würdigen / Modeling / Bestärken statt Bewerten" — im Korpus pflege-heute NICHT als solche belegbar. Pflege heute belegt nur die praktischen Anker „keine Fachausdrücke, in einfachen Worten erklären" und „die Mutter/Eltern in die Pflege einbeziehen".
+**Fakt:** Elternanleitung ist ein pflegerischer Kernauftrag. Ziel ist Selbstwirksamkeit der Eltern. Wichtige Prinzipien: Eltern in die Pflege einbeziehen, keine Fachausdrücke verwenden, in einfachen Worten erklären, bei unsicheren Eltern begleiten statt übernehmen. Beratung, Anleitung und Unterstützung gehören zu den Tätigkeitsbereichen pflegerischer Fachkräfte in der Kinderkrankenpflege.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Maßnahme
@@ -414,6 +452,9 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Keine Fachausdrücke, Erklären von"
 - Zitat: "Die Mutter wird in die Pflege einbezogen"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Eltern sollten zur Nabelpflege angeleitet werden."
+- Zitat: "Beratung, Anleitung und Unterstützung von zu pflegenden Menschen"
 
 **Misconceptions:**
 - `M1`: **"Bei unsicheren Eltern sollte ich die Pflege übernehmen, bis sie ruhiger werden"** — Übernahme-Fehlschluss. Übernahme verstärkt die Unsicherheit; besser begleiten und Schritt für Schritt mitgehen.

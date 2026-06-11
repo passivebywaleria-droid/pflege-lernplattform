@@ -7,10 +7,10 @@
 | cluster | B (Mobilität & Prophylaxen) |
 | geschätzteUE | 3 |
 | wissensart | handlung |
-| quellen | Pflege heute Kap. 11 Schlaf (lokal verbatim belegt). Zusätzlich referenziert, aber im Korpus NICHT verifizierbar (⚠️ Quelle beschaffen): AASM Scoring Manual 2020; DGSM S3-Leitlinie Insomnie 2017/2020 + SBAS 2020; ICSD-3 (AASM); Borbély 1982; National Sleep Foundation 2015; Beers-Liste AGS 2023 |
+| quellen | Pflege heute Kap. 11 Schlaf (lokal verbatim belegt); DGSM S3-Leitlinie Insomnie 2025 (verbatim); I Care Examen kompakt Kap. 15.6 (verbatim); Prüfungswissen Pflegefachfrau Tab. 1.39 (verbatim); Hoehl/Kullick Kinderkrankenpflege (verbatim); I Care Examen kompakt Kap. 17.3 (verbatim). Nicht verifizierbar (⚠️ Quelle weiterhin beschaffen): DGSM S3-Leitlinie SBAS 2020; ICSD-3 (AASM) für NREM/REM-Nachthälften-Zuordnung; National Sleep Foundation 2015 (NSF-Spannweiten Hirshkowitz et al.); Beers-Liste AGS 2023; STOP-BANG |
 | einträge | 13 |
 | erstellt | 2026-06-10 |
-| grounding | Hohe Latte (QUALITAETSSTANDARD-GROUNDING R1–R3) · alle Pflege-heute-Belege verbatim (85 Zitate, zitat-verifizierer ✅) · F-09/F-10/F-11/F-12 nach Semantik-Audit TEILWEISE→aufgelöst: Aufzählungs-Bestandteile (Alters-Ursachen-Liste, Genussmittel schwarzer Tee/üppige Mahlzeit, Tab. 11.2 Störfaktoren, Schlafhygiene-Prinzipien) je per Zweitzitat gedeckt · ⚠️-Markierungen für korpus-fremde Sub-Claims/Superlative (NSF-Spannweiten, ICSD-3-Schwellen + „häufigste", NREM/REM-Parasomnien-Zuordnung, STOP-BANG/nCPAP, Beers-Liste/Z-Substanz-Bewertung, „Licht wichtigster Taktgeber"-Superlativ, Sleep-Bundle-Begriff) · F-10 „Alkohol kein Einschlafmittel" + F-12 „nichtmedikamentös vor Medikation" nun via DGSM-S3-Leitlinie Insomnie 2025 verbatim belegt (Zyklus 8) · geprüft 2026-06-11 |
+| grounding | Hohe Latte (QUALITAETSSTANDARD-GROUNDING R1–R3) · alle Pflege-heute-Belege verbatim (85 Zitate) · nach Zyklus 8: DGSM-S3-Leitlinie 2025 verbatim (F-10, F-12) · nach Zyklus 9 (2026-06-11): 10 ⚠️ aufgelöst/präzisiert via I Care Examen kompakt + Prüfungswissen + Kinderkrankenpflege + DGSM 2025: F-04 „Licht v. a. Taktgeber" (Kinderkrankenpflege verbatim) · F-05 Altersband-Spannweiten (I Care Examen kompakt + Prüfungswissen verbatim) · F-06 „sehr häufige Schlafstörung" + ICD-11-Schwellen „mehrmals/Woche ≥3 Monate" (DGSM 2025 verbatim) · F-07 Parasomnien-Klassifikation (ICSD-3-Tabelle icare-examen-kompakt, NREM/REM-Nachthälften weiterhin ⚠️) · F-08 nCPAP-Therapie + OSA-Symptome + ESS (Prüfungswissen verbatim) · F-13 BZ/BZRA Stürze (DGSM 2025 + icare-examen-kompakt verbatim) + PRISCUS-Liste (icare-examen-kompakt verbatim) + Diphenhydramin-Beispiel (icare-examen-kompakt verbatim) · Verbleibende ⚠️: STOP-BANG, ICSD-3 NREM/REM-Nachthälften exakt, Beers-Liste AGS 2023, NSF-Spannweiten i.e.S., Sleep-Bundle-Begriff · geprüft 2026-06-11 |
 
 ---
 
@@ -82,7 +82,7 @@
 
 ### F-04: Schlaf-Wach-Rhythmus und zirkadianer Rhythmus
 
-**Fakt:** Der Schlaf-Wach-Rhythmus ist genetisch festgelegt (innere Uhr). Der biologische Rhythmus wird von der Formatio reticularis gesteuert (Zellen in Thalamus, Hirnstamm und oberem Rückenmark), die Müdigkeit, Wachsein und die tageszeitabhängige Hormonausschüttung (z.B. Kortison) regulieren. Den Schlaf-Wach-Rhythmus eines Tages bezeichnet man als zirkadianen Rhythmus (lat. circum = um, dies = Tag). Licht beeinflusst die innere Uhr und ist ein zentraler Taktgeber (Zeitgeber). ⚠️ Die in der Chronobiologie übliche Aussage „Licht ist der *wichtigste* Taktgeber" (Superlativ, z.B. Borbély 1982 / DGSM) ist im lokalen Korpus nicht verifizierbar — Pflege heute belegt nur, dass Licht die innere Uhr beeinflusst, nicht den Rang.
+**Fakt:** Der Schlaf-Wach-Rhythmus ist genetisch festgelegt (innere Uhr). Der biologische Rhythmus wird von der Formatio reticularis gesteuert (Zellen in Thalamus, Hirnstamm und oberem Rückenmark), die Müdigkeit, Wachsein und die tageszeitabhängige Hormonausschüttung (z.B. Kortison) regulieren. Den Schlaf-Wach-Rhythmus eines Tages bezeichnet man als zirkadianen Rhythmus (lat. circum = um, dies = Tag). Die innere Uhr wird vor allem (v. a.) vom Tageslicht beeinflusst — Tageslicht ist damit der vorrangige äußere Zeitgeber des Schlaf-Wach-Rhythmus.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
@@ -95,7 +95,10 @@
 - Zitat: "spezialisierte Zellen im Thalamus, Hirnstamm und oberen Rückenmark" (belegt Thalamus/Hirnstamm/Rückenmark)
 - Zitat: "die von der Tageszeit" (Fortsetzung: "abhängige Ausschüttung bestimmter Hormone, z. B. Kortison" — belegt tageszeitabhängige Kortison-Ausschüttung)
 - Zitat: "bezeichnet man als zirkadianen Rhythmus"
-- Zitat: "wie Licht die innere Uhr beeinflusst" (belegt: Licht beeinflusst innere Uhr — NICHT den Superlativ „wichtigster Taktgeber")
+- Zitat: "wie Licht die innere Uhr beeinflusst" (belegt: Licht beeinflusst innere Uhr)
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Die innere Uhr wird v. a. vom Tageslicht beeinflusst" (Hoehl/Kullick — „v. a." = vor allem; belegt Tageslicht als vorrangigen/hauptsächlichen Zeitgeber)
+- Zitat: "Äußere Zeitgeber verändern den Schlaf-Wach-Rhythmus" (belegt: Zeitgeber-Begriff für externe Taktgeber wie Tageslicht)
 
 **Misconceptions:**
 - `M1`: **"Wenn ich einen Tag nicht schlafe, ist mein Rhythmus wieder normal"** — Schlafentzug stellt die innere Uhr nicht zurück; sie wird durch Licht am Morgen synchronisiert, nicht durch Schlafverzicht. Fachbegriff: "Rhythmus-Reset-Mythos".
@@ -105,7 +108,7 @@
 
 ### F-05: Altersabhängiger Schlafbedarf
 
-**Fakt:** Der Schlafbedarf ist altersabhängig und nimmt über die Lebensspanne ab. Pflege heute (Tab. 11.1, Durchschnittswerte): Säugling ca. 18 h, Kleinkind ca. 13 h, Schulkind ca. 11 h, Jugendlicher ca. 9 h, Erwachsener ca. 8 h, älterer Mensch ca. 7 h; die durchschnittliche nächtliche Schlafdauer von ca. 7–9 Std. bleibt beim Erwachsenen nahezu konstant. Bei vielen älteren Menschen reduziert sich der Schlafbedarf bzw. der Schlaf wird fragmentierter. Die individuelle Bandbreite ist groß — die Schlafqualität ist wichtiger als die reine Stundenzahl. ⚠️ Die feiner gestaffelten Spannweiten (Neugeborene 14–17 h, Kleinkinder 11–14 h, Schulkinder 9–11 h, Jugendliche 8–10 h, Erwachsene 7–9 h, Ältere 7–8 h) stammen aus der **National Sleep Foundation 2015** und sind im lokalen Korpus nicht verifizierbar — Quelle beschaffen (NSF-Konsensuspapier Hirshkowitz et al. 2015) ODER für Plattform-Content auf die belegten Pflege-heute-Durchschnittswerte zurückgreifen.
+**Fakt:** Der Schlafbedarf ist altersabhängig und nimmt über die Lebensspanne ab. Pflege heute (Tab. 11.1, Durchschnittswerte): Säugling ca. 18 h, Kleinkind ca. 13 h, Schulkind ca. 11 h, Jugendlicher ca. 9 h, Erwachsener ca. 8 h, älterer Mensch ca. 7 h; die durchschnittliche nächtliche Schlafdauer von ca. 7–9 Std. bleibt beim Erwachsenen nahezu konstant. Bei vielen älteren Menschen reduziert sich der Schlafbedarf bzw. der Schlaf wird fragmentierter. Die individuelle Bandbreite ist groß — die Schlafqualität ist wichtiger als die reine Stundenzahl. Spannweiten aus I Care Examen kompakt: Säugling 16–20 h, Kleinkind 12–15 h, Schulkind 10–11 h, Jugendlicher 7–9 h, Erwachsener 6–9 h, älterer Mensch ca. 7 h. Die NSF-Spannweiten (Neugeborene 14–17 h etc., Hirshkowitz et al. 2015) sind weiterhin im Korpus nicht verbatim belegt.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Fakt
@@ -117,7 +120,14 @@
 - Zitat: "durchschnittliche nächtliche Schlafdauer von ca. 7–9 Std." (belegt Erwachsenen-Band 7–9 h)
 - Zitat: "Bei älteren Menschen ab" (Fortsetzung: "dem 60.–70. Lebensjahr wird der Schlaf durch längere Wachpausen unterbrochen" — belegt Fragmentierung im Alter, M1)
 - Zitat: "dass sich der Schlafbedarf vieler älterer Menschen reduziert"
-- ⚠️ Quelle beschaffen für die NSF-Spannweiten (14–17 h etc.): **National Sleep Foundation 2015** — im Korpus nicht enthalten.
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Säugling 16–20 h, Kleinkind 12–15 h, Schulkind" (I Care Examen kompakt Kap. 15.6.1.1 — belegt Spannweiten Säugling/Kleinkind/Schulkind)
+- Zitat: "Erwachsener: 6–9 h" (belegt Erwachsenenband)
+- Zitat: "alter Mensch: ca. 7 h (kürzere Tiefschlafphasen," (belegt Altersband)
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "Neugeborene 18 Std., Säuglinge 12–18 Std., Schulkinder 9–11 Std., Teenager 9–" (Prüfungswissen Tab. 1.39 — belegt weitere Altersband-Spannweiten)
+- Zitat: "10 Std., Erwachsene 6–8 Std., ältere Menschen bis 7 Std." (Fortsetzung der Tabelle)
+- ⚠️ Die NSF-Spannweiten im engeren Sinne (Neugeborene 14–17 h, Kleinkinder 11–14 h, Jugendliche 8–10 h aus Hirshkowitz et al. 2015) sind weiterhin im Korpus nicht verbatim — Pflege-Content nutzt die belegten Werte aus I Care Examen kompakt + Prüfungswissen.
 
 **Misconceptions:**
 - `M1`: **"Alte Menschen brauchen nur 4-5 Stunden Schlaf"** — Auch über 65-Jährige brauchen 7-8 Stunden; ihr Schlaf ist nur fragmentierter (mehr nächtliche Wachphasen, Tages-Nickerchen). Fachbegriff: "Altersbedarf-Unterschätzung".
@@ -127,7 +137,7 @@
 
 ### F-06: Insomnie — häufigste Schlafstörung
 
-**Fakt:** Schlafstörungen werden in akute und chronische sowie nach Ursache (organisch, psychoreaktiv, chronobiologisch) unterteilt. Die Insomnie äußert sich als Einschlaf-, Durchschlafstörung oder frühmorgendliches Erwachen. Zur Unterscheidung von Ein- und Durchschlafproblemen dient das Schlafprotokoll. ⚠️ Die Aussage „Insomnie ist die *häufigste* Schlafstörung" und die klinischen ICSD-3/DGSM-Schwellenwerte (mindestens 3 Nächte pro Woche über mindestens 3 Monate mit Tagesbeeinträchtigung) sind im lokalen Korpus nicht enthalten — Quelle beschaffen: **DGSM S3-Leitlinie Insomnie 2017/Update 2016** und **ICSD-3 (AASM)**. (Hinweis: Pflege heute referenziert die DGSM-S3-Leitlinie, enthält aber die Häufigkeit/Schwellenwerte nicht im Volltext.)
+**Fakt:** Schlafstörungen werden in akute und chronische sowie nach Ursache (organisch, psychoreaktiv, chronobiologisch) unterteilt. Die Insomnie äußert sich als Einschlaf-, Durchschlafstörung oder frühmorgendliches Erwachen. Zur Unterscheidung von Ein- und Durchschlafproblemen dient das Schlafprotokoll. Die DGSM-S3-Leitlinie Insomnie 2025 bezeichnet die Insomnie als „sehr häufige Schlafstörung" (nicht als „häufigste"). Nach ICD-11 (und analog DGSM 2025) gilt: Symptome mindestens mehrmals pro Woche für mindestens drei Monate mit Tagesbeeinträchtigung.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
@@ -141,10 +151,12 @@
 - Zitat: "Chronobiologische Störungen liegen" (Fortsetzung: "vor, wenn dem biologischen Schlaf-Wach-Rhythmus nicht entsprochen werden kann" — belegt Ursachenklasse chronobiologisch)
 - Zitat: "Einschlafstörungen und Durchschlafstörungen" (belegt die beiden Insomnie-Formen)
 - Zitat: "Das Schlafprotokoll kann auch herangezogen werden, um bei Schlafstörungen zu"
-- ⚠️ Quelle beschaffen für „häufigste Schlafstörung" + ICSD-3-Schwellen (≥3 Nächte/Woche, ≥3 Monate): **DGSM S3-Leitlinie / ICSD-3** — im Korpus nicht enthalten.
+- Quelle: `leitlinien-volltext/dgsm-insomnie-2025.txt`
+- Zitat: "Eine Insomnie ist eine sehr häufige Schlafstörung, die dadurch gekennzeichnet ist, dass" (DGSM S3-Leitlinie Insomnie 2025 — belegt: sehr häufig, NICHT Superlativ „häufigste")
+- Zitat: "die Symptome mindestens mehrmals" (Fortsetzung: "pro Woche für mindestens drei Monate auftreten" — ICD-11-Kriterium nach DGSM 2025; ersetzt nicht-verifizierbares „≥3 Nächte/Woche")
 
 **Misconceptions:**
-- `M1`: **"Eine Nacht schlecht schlafen ist schon Insomnie"** — Für die klinische Insomnie braucht es nach ICSD-3/DGSM-Kriterien ≥3 Nächte/Woche über ≥3 Monate mit Tagesbeeinträchtigung (⚠️ Schwellenwerte aus DGSM/ICSD-3, im Korpus nicht verifizierbar). Pflege heute belegt: akute Schlafstörungen verschwinden mit der Ursache, andernfalls kann eine chronische Schlafstörung entstehen. Fachbegriff: "Akut-Chronisch-Verwechslung".
+- `M1`: **"Eine Nacht schlecht schlafen ist schon Insomnie"** — Für die klinische Insomnie braucht es nach ICD-11/DGSM-Kriterien Symptome mindestens mehrmals pro Woche über mindestens drei Monate mit Tagesbeeinträchtigung. Pflege heute belegt: akute Schlafstörungen verschwinden mit der Ursache, andernfalls kann eine chronische Schlafstörung entstehen. Fachbegriff: "Akut-Chronisch-Verwechslung".
 - `M2`: **"Insomnie ist nur eine Art: Man kann nicht einschlafen"** — Es gibt drei Formen: Einschlaf-, Durchschlaf- und Früh-Erwachen-Insomnie; mehrere Formen können kombiniert auftreten. Fachbegriff: "Ein-Typen-Irrtum".
 - `M3`: **"Wer 4 Stunden schläft, hat immer eine Insomnie"** — Die Schlafdauer allein ist kein Kriterium; entscheidend ist die Tagesbeeinträchtigung. Fachbegriff: "Stunden-Fixierung".
 
@@ -164,17 +176,19 @@
 - Zitat: "wie Schlafwandeln, Einnässen," (Fortsetzung: "Albträume und nächtliche Angstzustände (Pavor nocturnus)")
 - Zitat: "treten überwiegend im Kindes- und" (Fortsetzung: "Jugendalter, im Alter oder nach Belastungssituationen auf")
 - Zitat: "Schlafstörungen zeigen sich als Schlafwandeln und Pavor nocturnus" (Fortsetzung: "(nächtliches Aufschrecken mit Angst aus dem Tiefschlaf)")
-- ⚠️ Quelle beschaffen für die NREM/REM-Nachthälften-Zuordnung: **ICSD-3 (AASM)** — im Korpus nicht enthalten.
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Anfallsartig oder periodisch auftretende Phänomene, die während" (Fortsetzung: "des Schlafes auftreten, z.B. Schlafwandeln, Nachtschreck oder" — nach ICSD-3 2014; belegt Klassifikation Parasomnien)
+- ⚠️ Die spezifische NREM/REM-Nachthälften-Zuordnung (Schlafwandeln/Pavor in NREM, erste Nachthälfte; Albträume in REM, zweite Nachthälfte) ist in keinem neuen Korpus verbatim belegt — ICSD-3 (AASM) weiterhin Pflicht-Quelle.
 
 **Misconceptions:**
-- `M1`: **"Albträume und Schlafwandeln sind dasselbe"** — Schlafwandeln passiert in NREM-N3 (erste Nachthälfte, keine Erinnerung), Albträume im REM (zweite Nachthälfte, gute Erinnerung). ⚠️ NREM/REM-Zuordnung aus ICSD-3, im Korpus nicht verifizierbar. Pflege heute belegt: Pavor nocturnus erfolgt „aus dem Tiefschlaf". Fachbegriff: "Parasomnien-Verwechslung".
+- `M1`: **"Albträume und Schlafwandeln sind dasselbe"** — Schlafwandeln passiert im Tiefschlaf (NREM), Albträume im REM. ⚠️ Die vollständige NREM/REM-Nachthälften-Zuordnung ist im Korpus nicht verbatim belegt; Pflege heute belegt: Pavor nocturnus erfolgt „aus dem Tiefschlaf". Fachbegriff: "Parasomnien-Verwechslung".
 - `M2`: **"Schlafwandeln passiert, weil die Person träumt und herumläuft"** — Schlafwandeln passiert im Tiefschlaf, NICHT in der Traumphase; die Person ist motorisch aktiv ohne Bewusstsein. Fachbegriff: "Schlafwandel-Mechanismus-Fehler".
 
 ---
 
 ### F-08: Obstruktives Schlafapnoesyndrom
 
-**Fakt:** Das Schlafapnoesyndrom ist eine organische Schlafstörung: rezidivierendes kurzes Aussetzen der Atemtätigkeit (v.a. in den Non-REM-Schlafphasen), ggf. mit kurzzeitiger Hypoxie des Gehirns. Betroffen sind überwiegend Männer mittleren Alters. Die Patienten klagen über Müdigkeit und Kopfschmerzen; in schweren Fällen kann es zu Herzrhythmusstörungen kommen. ⚠️ Das Screening-Instrument STOP-BANG und der Therapie-Goldstandard nCPAP sind im lokalen Korpus nicht enthalten — Quelle beschaffen: **DGSM S3-Leitlinie „Schlafbezogene Atmungsstörungen" (SBAS)**. (Beide sind fachlich korrekt und prüfungsrelevant, aber in Pflege heute nicht verbatim belegt.)
+**Fakt:** Das Schlafapnoesyndrom ist eine organische Schlafstörung: rezidivierendes kurzes Aussetzen der Atemtätigkeit (v.a. in den Non-REM-Schlafphasen), ggf. mit kurzzeitiger Hypoxie des Gehirns. Betroffen sind überwiegend Männer mittleren Alters. Die Patienten klagen über Müdigkeit und Kopfschmerzen; in schweren Fällen kann es zu Herzrhythmusstörungen kommen. Symptome des obstruktiven Schlafapnoesyndroms: lautes Schnarchen, Atempausen, starkes Schwitzen, Tagesschläfrigkeit (gemessen mit der Epworth Sleepiness Scale, ESS), Kopfschmerzen, Leistungsabfall. Therapie: (1) Behandlung bestehender Erkrankungen, (2) Umstellung der Lebensweise (Übergewicht reduzieren, Alkohol-/Nikotinverzicht), (3) Unterkieferprotrusionsschiene, (4) nCPAP-Therapie oder Auto-CPAP-Therapie, (5) chirurgische Eingriffe. ⚠️ Das Screening-Instrument STOP-BANG ist in keinem verfügbaren Korpus verbatim belegt — Quelle weiterhin beschaffen: DGSM S3-Leitlinie SBAS.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
@@ -186,7 +200,11 @@
 - Zitat: "Betroffen sind überwiegend Männer mittleren Alters" (belegt Geschlecht/Alter)
 - Zitat: "Die Patienten klagen über Müdigkeit und Kopfschmerzen"
 - Zitat: "in schweren Fällen kann" (Fortsetzung: "es zu Herzrhythmusstörungen kommen")
-- ⚠️ Quelle beschaffen für STOP-BANG + nCPAP: **DGSM S3-Leitlinie SBAS** — im Korpus nicht enthalten.
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "Schlafbezogene Atmungsstörung mit Obstruktion ist das obstruktive" (Fortsetzung: "Schlafapnoesyndrom, u. a. mit den Symptomen lautes Schnarchen, Atempausen," — belegt OSA-Symptome)
+- Zitat: "starkes Schwitzen, Tagesschläfrigkeit, gemessen mit der Epworth Sleepiness Scale" (Fortsetzung: "(ESS), Kopfschmerzen, Leistungsabfall" — belegt Symptome + ESS-Screening)
+- Zitat: "nCPAP-Therapie oder Auto-CPAP-Therapie, d. h." (Fortsetzung: "Beatmung" — belegt nCPAP als Therapieoption)
+- ⚠️ Das Screening-Instrument STOP-BANG ist in keinem verfügbaren Korpus verbatim belegt — DGSM S3-Leitlinie SBAS weiterhin beschaffen.
 
 **Misconceptions:**
 - `M1`: **"Wer laut schnarcht, hat automatisch eine Schlafapnoe"** — Einfaches Schnarchen ohne Atempausen und Tagesmüdigkeit ist keine Apnoe. Apnoe braucht Atempausen + Sauerstoffabfall + Weckreaktion. Fachbegriff: "Schnarchen-Apnoe-Gleichsetzung".
@@ -269,7 +287,7 @@
 - Zitat: "Schlafbrille empfehlen" (belegt: Schlafbrille anbieten, Tab. 11.2 Licht)
 - Zitat: "Nach Arztanordnung Schmerz- und Beruhigungsmittel kombinieren" (belegt: Schmerz als Störfaktor + Maßnahme)
 - Zitat: "Bündeln der verschiedenen Pflegetätigkeiten" (Zweitzitat aus Kap. 13.4 Schmerzprävention — belegt das „clustern/bündeln"-Prinzip; Pflege heute: „sodass der Patient dazwischen längere Ruhepausen hat")
-- ⚠️ Quelle beschaffen für den Begriff „Sleep-Bundle" als benanntes Paket: **Kamdar et al. 2012 / DGSM** — im Korpus nicht enthalten.
+- ⚠️ Der Begriff „Sleep-Bundle" als benanntes Maßnahmenpaket: weder in icare-examen-kompakt, pruefungswissen noch kinderkrankenpflege gefunden (alle drei neuen Korpora geprüft). Kamdar et al. 2012 weiterhin als Pflicht-Quelle beschaffen. Für Plattform-Content ist der Begriff entbehrlich — die einzelnen Komponenten sind verbatim belegt.
 
 **Misconceptions:**
 - `M1`: **"Vitalzeichenkontrolle alle 4 Stunden muss sein, auch wenn sie stört"** — Bei stabilen Patienten reicht oft 1 Kontrolle pro Nacht oder keine. Motto: So viel wie nötig, so wenig wie möglich. Fachbegriff: "Routine-Starre".
@@ -309,7 +327,7 @@
 
 ### F-13: Schlafmittel (Hypnotika) — Abhängigkeitsrisiko
 
-**Fakt:** Schlafmittel (Hypnotika) gehören zu den gebräuchlichsten Arzneimitteln; die am häufigsten eingesetzten gehören zur Stoffgruppe der Benzodiazepine. Sie sind alles andere als unproblematisch: Es besteht insbesondere die Gefahr der Gewöhnung — viele Patienten benötigen immer höhere Dosierungen, was leicht zu körperlicher Abhängigkeit führt; zusätzlich kann die angstlösende Komponente zu psychischer Abhängigkeit führen. Starke Schlafmittel wirken atemdepressiv und blutdrucksenkend. Pflege beobachtet nach Gabe Blutdruck, Atmung und Hangover (Mattheit/Benommenheit) am Folgetag. ⚠️ Die geriatrische Einordnung von Benzodiazepinen/Z-Substanzen auf der **Beers-Liste (AGS 2023)** mit Sturz-/Delir-/Abhängigkeitsrisiko und „letzte Wahl bei Älteren" ist im lokalen Korpus nicht enthalten (Treffer „Beers" = 0) — Quelle beschaffen: **Beers-Liste / PRISCUS-Liste**. Pflege heute belegt Benzodiazepin-Analoga (Z-Substanzen, z.B. Zolpidem) als eigene Stoffgruppe, aber nicht die Beers-Bewertung.
+**Fakt:** Schlafmittel (Hypnotika) gehören zu den gebräuchlichsten Arzneimitteln; die am häufigsten eingesetzten gehören zur Stoffgruppe der Benzodiazepine. Sie sind alles andere als unproblematisch: Es besteht insbesondere die Gefahr der Gewöhnung — viele Patienten benötigen immer höhere Dosierungen, was leicht zu körperlicher Abhängigkeit führt; zusätzlich kann die angstlösende Komponente zu psychischer Abhängigkeit führen. Starke Schlafmittel wirken atemdepressiv und blutdrucksenkend. Pflege beobachtet nach Gabe Blutdruck, Atmung und Hangover (Mattheit/Benommenheit) am Folgetag. Benzodiazepine und Benzodiazepin-Rezeptor-Agonisten (Z-Substanzen, z.B. Zolpidem) haben laut DGSM-S3-Leitlinie 2025 als Nebenwirkungen: Toleranz, Abhängigkeit, nächtliche Verwirrtheit und Stürze. Bei älteren Patienten ist besondere Vorsicht geboten: Nebenwirkungen wie Hypotonie oder Schwindel können von älteren Menschen schlechter kompensiert werden, was zu vermehrten Stürzen führt; pharmakologische Schlafmittel werden in Altersbewertungssystemen (z.B. FORTA-Liste, PRISCUS-Liste) durchgehend kritisch bewertet. ⚠️ Die Beers-Liste (AGS 2023) ist im lokalen Korpus nicht verbatim enthalten; Sturz-Prozentwerte (+40–60 %) ebenfalls nicht verifizierbar.
 
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Entscheidung
@@ -324,9 +342,18 @@
 - Zitat: "Zusätzlich kann die angstlösende" (Fortsetzung: "Komponente vieler Schlafmittel zu einer psychischen Abhängigkeit führen")
 - Zitat: "Starke Schlafmittel wirken atemdepressiv und blutdrucksenkend"
 - Zitat: "Benzodiazepin-Analoga" (belegt Z-Substanzen/Zolpidem als eigene Gruppe, Tab. 11.3)
-- ⚠️ Quelle beschaffen für Beers-Liste-Einordnung + „letzte Wahl bei Älteren": **Beers-Liste AGS 2023 / PRISCUS** — im Korpus nicht enthalten.
+- Quelle: `leitlinien-volltext/dgsm-insomnie-2025.txt`
+- Zitat: "Nebenwirkungen der BZ und BZRA umfassen die Entwicklung von Toleranz und" (Fortsetzung: "Abhängigkeit, nächtliche Verwirrtheit und Stürze" — DGSM S3-Leitlinie 2025, belegt verbatim: Stürze als NW)
+- Zitat: "praktisch alle pharmakologisch wirksamen Schlafmittel in Altersbewertungssystemen" (Fortsetzung: "zur Arzneimitteltauglichkeit (z.B. FORTA-Liste; Wehling et al., 2008) negativ bewertet" — belegt: Schlafmittel in Alterskategorisierungssystemen kritisch)
+- Zitat: "Eine Langzeitbehandlung der Insomnie mit Benzodiazepinen oder" (Fortsetzung: "Benzodiazepin-Rezeptor-Agonisten soll nicht empfohlen werden" — DGSM-Empfehlung T3, Evidenzgrad 1a)
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Sie wirken relaxierend auf" (Fortsetzung: "die Muskulatur (Sturzgefahr), die lange Halbwertszeit führt tagsüber zur Beeinträchtigung der Vigilanz (ebenso Sturzgefahr)" — belegt verbatim: Sturzgefahr durch Benzodiazepine)
+- Zitat: "Ältere Menschen und Kinder können mit" (Fortsetzung: "Unruhe, Angst oder Aggression reagieren (paradoxe Reaktion)" — belegt paradoxe Reaktion bei Älteren)
+- Zitat: "Über die Priscus-Liste (z.B. bei gesetzlichen" (Fortsetzung: "Krankenkassen online einsehbar) können Medikamente eingesehen werden, welche für das höhere Lebensalter wenig geeignet sind" — belegt PRISCUS als Negativliste für Ältere)
+- Zitat: "Nebenwirkungen, die bei jüngeren Menschen eher" (Fortsetzung: "harmlos erscheinen (z.B. Hypotonie, Schwindel), können von älteren Menschen nicht mehr so gut kompensiert werden (z.B. können vermehrt Stürze auftreten)" — belegt: erhöhtes Sturzrisiko im Alter)
+- ⚠️ Die Beers-Liste AGS 2023 ist im lokalen Korpus nicht enthalten (0 Treffer); Sturz-Risiko-Prozentwerte (+40–60 %) sind nicht verbatim belegbar.
 
 **Misconceptions:**
-- `M1`: **"Z-Substanzen (Zolpidem) machen nicht abhängig, die sind sicher"** — Z-Substanzen machen wie Benzodiazepine abhängig (bereits nach 2-4 Wochen); erhöhtes Sturzrisiko bei Älteren; Beers-Liste. ⚠️ Konkrete Risiko-Prozentwerte (+40–60 %) und Beers-Einordnung im Korpus nicht verifizierbar — Quelle: Beers-Liste AGS 2023 / Sturz-Metaanalysen. Pflege heute belegt Z-Substanzen (Benzodiazepin-Analoga) als eigene Gruppe. Fachbegriff: "Z-Substanz-Verharmlosung".
+- `M1`: **"Z-Substanzen (Zolpidem) machen nicht abhängig, die sind sicher"** — Z-Substanzen machen wie Benzodiazepine abhängig (bereits nach 2–4 Wochen); erhöhtes Sturzrisiko bei Älteren (icare-examen-kompakt verbatim: Sturzgefahr); PRISCUS-Liste erfasst sie als für Ältere wenig geeignete Medikamente. ⚠️ Beers-Einordnung und konkrete Risiko-Prozentwerte im Korpus nicht verbatim belegbar. Pflege heute belegt Z-Substanzen (Benzodiazepin-Analoga) als eigene Gruppe. Fachbegriff: "Z-Substanz-Verharmlosung".
 - `M2`: **"Wenn jemand seit Jahren seine Schlaftablette nimmt, kann man sie weitergeben"** — Langzeit-Benzodiazepine sind eine häufige ungewollte Dauermedikation; Wirkung sinkt (Toleranz), Risiken bleiben. Geplante Ausschleichung mit Hausarzt ist oft möglich. Fachbegriff: "Langzeitanwendungs-Legitimation".
-- `M3`: **"Diphenhydramin ist frei verkäuflich und deshalb sicher bei Älteren"** — Diphenhydramin ist anticholinerg, steht auf der Beers-Liste (Delir, Harnverhalt). "Frei verkäuflich" heißt nicht "sicher bei alten Menschen". ⚠️ Beers-Einordnung im Korpus nicht verifizierbar — Quelle: Beers-Liste AGS 2023. Pflege heute belegt „beruhigende Antihistaminika" als Alternative zu Schlafmitteln. Fachbegriff: "OTC-Sicherheits-Trugschluss".
+- `M3`: **"Diphenhydramin ist frei verkäuflich und deshalb sicher bei Älteren"** — Diphenhydramin (z.B. Vivinox Sleep) ist rezeptfrei erhältlich, aber antihistaminerg/anticholinerg und verursacht Überhang. Bei älteren Menschen können Nebenwirkungen nicht mehr gut kompensiert werden. ⚠️ Beers-Einordnung (Delir, Harnverhalt) im Korpus nicht verbatim belegbar — Quelle: Beers-Liste AGS 2023. icare-examen-kompakt belegt Diphenhydramin als Beispiel der Antihistaminika-Schlafmittel. Fachbegriff: "OTC-Sicherheits-Trugschluss".

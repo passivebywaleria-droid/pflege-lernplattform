@@ -10,6 +10,7 @@
 | quellen | I Care Pflege Kap. 17 (Prophylaxen), Kap. 15 (Mobilisation/Positionierung) |
 | einträge | 16 |
 | erstellt | 2026-04-19 |
+| grounding | 2026-06-11 F-06 pädiatrische Prädilektionsstellen: Hinterkopf bei Neugeborenen/kleinen Kindern durch kinderkrankenpflege-volltext verbatim belegt; „Nasenscheidewand"-Claim korrigiert zu „Nasenrücken" (nur Nasenrücken im Korpus belegbar) |
 
 ---
 
@@ -105,7 +106,7 @@
 
 ### F-06: Prädilektionsstellen — Wo entsteht ein Dekubitus?
 
-**Fakt:** Besonders gefährdet sind Körperstellen, an denen Knochen dicht unter der Haut liegen und wenig Fettpolster schützt. Bei Erwachsenen sind Kreuzbein/Steißbein und Fersen die häufigsten Stellen. Weitere gefährdete Bereiche: Trochanter (großer Rollhügel), Sitzbein, Knöchel, Schulterblätter, Ellenbogen, Hinterkopf. Die gefährdeten Stellen ändern sich je nach Lageposition: Rückenlage belastet Kreuz-/Steißbein und Fersen, Seitenlage den Trochanter major, Sitzen die Sitzbeinhöcker. ⚠️ Quelle beschaffen (Hoehl/Kullick Kinderkrankenpflege bzw. neonatologische Primärquelle): Die Aussage, bei Säuglingen/Kindern sei vor allem der Hinterkopf betroffen und bei nasaler Beatmung zusätzlich die Nasenscheidewand, ist im vorliegenden Dekubitus-Korpus (Pflege heute Kap. 6.12, DNQP, EPUAP) nicht als Prädilektionsstellen-Aussage belegbar; der Kinderkrankenpflege-Index enthält nur allgemeine Druckstellen-Hinweise (Hinterkopf, Nasenrücken bei CPAP) in spaltenzerbrochenen Layout-Dateien — kein verbatim-fähiger Beleg.
+**Fakt:** Besonders gefährdet sind Körperstellen, an denen Knochen dicht unter der Haut liegen und wenig Fettpolster schützt. Bei Erwachsenen sind Kreuzbein/Steißbein und Fersen die häufigsten Stellen. Weitere gefährdete Bereiche: Trochanter (großer Rollhügel), Sitzbein, Knöchel, Schulterblätter, Ellenbogen, Hinterkopf. Die gefährdeten Stellen ändern sich je nach Lageposition: Rückenlage belastet Kreuz-/Steißbein und Fersen, Seitenlage den Trochanter major, Sitzen die Sitzbeinhöcker. Bei Neugeborenen und Kleinkindern ist in Rückenlage der Hinterkopf die wichtigste Prädilektionsstelle. Bei Kindern mit nicht-invasiver Beatmung (NIV/CPAP) können Druckstellen am Nasenrücken durch die Maske entstehen. ⚠️ Teilweise aufgelöst: Der Hinterkopf bei Neugeborenen/kleinen Kindern ist jetzt verbatim durch Hoehl/Kullick Kinderkrankenpflege belegt (s. Beleg). Nicht belegt: Die ursprüngliche Formulierung „Nasenscheidewand" — der Korpus liefert nur „Nasenrücken" (bei NIV-Masken), nicht „Nasenscheidewand". Die Claim-Formulierung wurde auf „Nasenrücken" korrigiert.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
@@ -115,6 +116,13 @@
 - Zitat: "In Rückenlage: Kreuz- und Steißbein, Fersen, Schultern, Hinterkopf, Wirbelsäule und Ellenbogen"
 - Zitat: "In Seitenlage: Ohrmuscheln, Trochanter major (großer Rollhügel), Knie, Ellenbogen, Fußknöchel"
 - Zitat: "Im Sitzen: Fersen, Fußballen, Hinterkopf, Sitzbeinhöcker, Wirbelsäule, hintere Seite des Oberschenkels"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Dekubitalgeschwüre sind häufig druckbedingt und treten bevorzugt an exponierten Körperstellen wie Kreuzbeinregion, Trochanter major, Fersen, bei Neugeborenen und kleinen Kindern am Hinterkopf, manchmal auch an der Ohrmuschel auf"
+- Zitat: "in Rückenlage: Hinterkopf, Wirbelsäule,"
+- Zitat: "Schulterblätter, Kreuz- und Steißbein,"
+- Zitat: "Fersen und Ellenbogen"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Leckage, Druckstellen v. a. am Nasenrücken, Minimierung des Totraums"
 **Transfer:** [Transfer] Stell dir vor, du sitzt auf einem harten Holzstuhl. Nach einer Stunde tut der Sitzknochen weh — genau dort, wo wenig Polster zwischen Knochen und Stuhl ist. Dasselbe passiert bei bettlägerigen Menschen, nur dass sie sich nicht einfach umsetzen können.
 
 ---

@@ -7,9 +7,10 @@
 | cluster | D (Ernährung) |
 | geschätzteUE | 7 |
 | wissensart | handlung |
-| quellen | Pflege heute 7. Aufl. Kap. 7 (Ernährung; Schlucken und Schlucktraining; Aspirationsprophylaxe); Expertenstandard Ernährungsmanagement (DNQP); IDDSI 2019; GUSS (Trapl et al. 2007); DGG/DGN S1-Leitlinie Neurogene Dysphagie 2020 |
+| quellen | Pflege heute 7. Aufl. Kap. 7 (Ernährung; Schlucken und Schlucktraining; Aspirationsprophylaxe); Expertenstandard Ernährungsmanagement (DNQP); IDDSI 2019; GUSS (Trapl et al. 2007); DGG/DGN S1-Leitlinie Neurogene Dysphagie 2020; Hoehl/Kullick „Gesundheits- und Kinderkrankenpflege" 5. Aufl. (Volltext) |
 | einträge | 13 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
+| grounding-update | 2026-06-11 (⚠️-Auflösung: kinderkrankenpflege-volltext, icare-examen-kompakt-volltext, pruefungswissen-volltext geprüft) |
 
 ---
 
@@ -48,7 +49,7 @@
 - Zitat: "Ihm nicht „Esslatz“ oder „Lätzchen“ anbieten, sondern eine Serviette"
 - Zitat: "Der Patient bestimmt Geschwindigkeit und Reihenfolge der Mahlzeit"
 - Zitat: "neben dem Bett, das sie auf entsprechende Höhe gebracht haben, sodass sie nicht auf ihn herabsehen" ✅ MATCH (stützt „auf Augenhöhe sitzen, nicht herabsehen")
-- ⚠️ **Teilaussage „den Ausdruck ‚Füttern‘ vermeiden" NICHT im Korpus belegt** — Pflege heute verwendet „Füttern"/„gefüttert" nur im Säuglingskontext, nennt aber kein verbatim Gebot, den Begriff bei Erwachsenen zu vermeiden. Quelle beschaffen: Charta der Rechte hilfe- und pflegebedürftiger Menschen (BMFSFJ/BMG, Artikel 1 Selbstbestimmung) oder Leininger/Würde-Konzept-Literatur. Bis dahin im Schüler-Content als didaktische Sprachempfehlung kennzeichnen, nicht als belegtes Fachgebot.
+- Zitat: "Bewusst den Ausdruck „Füttern" vermeiden; dieser wird nur im Zusammenhang mit Säuglingen und Tieren" ✅ MATCH (verbatim aus Pflege heute 7. Aufl., Kap. 7 — Respektvolle Kommunikation beim Essenreichen)
 **Praxisfehler:** Stehen über dem Bett (Machtgefälle), Hetzen aus Zeitdruck.
 
 **Misconceptions:**
@@ -226,7 +227,13 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "„Fingerfood“, d. h. lauwarme Nahrung in mundgerechten Portionen"
 - Zitat: "Manchmal isst der Patient – insbesondere Kinder – lieber in Anwesenheit seiner Familie" ✅ MATCH (stützt „Eltern als Partner einbeziehen")
-- ⚠️ **Teilaussagen „Essensverweigerung ab ca. 2 Jahren entwicklungspsychologisch normal", „spielerisch anreichen", „kein Druck/keine Bestrafung", „kleine Portionen häufiger" und „bei anhaltender Verweigerung Kinderärztin informieren" NICHT im Korpus belegt** — Pflege heute behandelt Nahrungsverweigerung primär beim Säugling und allgemein, nennt aber keine altersbezogene Normalität ab 2 Jahren und keine dieser Kinder-Fütter-Prinzipien verbatim. Quelle beschaffen: DGE/aid-Empfehlungen „Essen und Trinken im Kleinkindalter" bzw. Hoehl/Kullick „Gesundheits- und Kinderkrankenpflege" (5. Aufl.) — liegt als Recherche-Index vor, aber nicht im Volltext-Korpus. Bis dahin im Schüler-Content als pädiatrische Praxisempfehlung kennzeichnen, nicht als belegt.
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "abweichendem Essverhalten, das besonders im Kleinkindsalter häufig zu beobachten ist, i. d. R. keinen Krankheitswert hat und entwicklungsbedingt von alleine verschwindet" ✅ MATCH (stützt „Essensverweigerung im Kleinkindalter entwicklungspsychologisch normal")
+- Zitat: "Das Kind kann seine Nahrungsaufnahme von entsprechend vorbereiteten Nahrungsmitteln weitestgehend selbstständig durchführen. Das Kind bevorzugt vertraute Geschmacksrichtungen" ✅ MATCH (aus Entwicklungstabelle: „ab ca. 2 Jahre" — stützt Selbstständigkeit und vertraute Speisen ab 2 Jahren)
+- Zitat: "Es werden jeweils kleine Portionen und Schlucke gereicht" ✅ MATCH (stützt „kleine Portionen")
+- Zitat: "Die Portionen werden nach Wunsch gerichtet und das Kind bestimmt die Reihenfolge und Geschwindigkeit der Nahrungsaufnahme" ✅ MATCH (stützt Wunschkost + Autonomie des Kindes beim Essen)
+- Zitat: "empfiehlt es sich, ihm seine altersgemäße Wunschkost in vielen kleinen Mahlzeiten anzubieten" ✅ MATCH (stützt Wunschkost + kleine Portionen häufiger)
+- ⚠️ **Teilaussagen „spielerisch anreichen", „kein Druck/keine Bestrafung" und „bei anhaltender Verweigerung Kinderärztin informieren" NICHT im Korpus belegt** — Hoehl/Kullick belegen die Entwicklungsnormalität und kleine Portionen/Wunschkost, nennen aber weder eine spielerische Anreichungstechnik noch ein Druckverbot noch die Empfehlung zur Kinderärztin bei anhaltender Verweigerung in dieser Form verbatim. Bis dahin im Schüler-Content als pädiatrische Praxisempfehlung kennzeichnen.
 **Praxisfehler:** Druck oder Bestrafung ("kein Nachtisch, wenn du das nicht isst").
 
 **Misconceptions:**
@@ -250,7 +257,8 @@
 - Zitat: "Apraxie. Unfähigkeit, bestimmte Hand" ✅ MATCH (im Quelltext: „Unfähigkeit, bestimmte Handlungen koordiniert … auszuführen" — stützt „Apraxie = Besteck nicht benutzen können")
 - Zitat: "oder auch Speisen aufgrund von Demenz" ✅ MATCH (im Quelltext: „… nicht identifizieren können, können die Speisen durch Anfassen ‚begreifen‘" — stützt Agnosie-Anpassung)
 - Zitat: "Besonders bei dementen Menschen wurden in den letzten Jahren erfolgreich Ansätze mit Fingerfood" ✅ MATCH (stützt „Fingerfood statt Besteck bei Demenz")
-- ⚠️ **Teilaussagen „eine erkennbare Komponente pro Teller statt Mischungen" und „biografie-vertraute Speisen" NICHT im Korpus belegt** — Pflege heute belegt reizarme Umgebung, Agnosie/Apraxie und Fingerfood, aber weder die Ein-Komponenten-Teller-Regel noch die biografieorientierte Speisenauswahl verbatim. Quelle beschaffen: DNQP-Expertenstandard „Beziehungsgestaltung in der Pflege von Menschen mit Demenz" bzw. Biografiearbeit-Literatur (z. B. Böhm/Psychobiografisches Pflegemodell). Bis dahin im Schüler-Content als didaktische Anpassung kennzeichnen.
+- Zitat: "Konsistenzen nicht mischen, z. B. Nudelsuppe oder Joghurt mit Früchten" ✅ MATCH (aus Kap. 7.11 „Auswahl der Speisen" — stützt die Empfehlung, keine Mischkonsistenzen anzubieten; deckt das Prinzip „eine erkennbare Komponente/Konsistenz statt Mischungen" inhaltlich ab)
+- ⚠️ **Teilaussage „biografie-vertraute Speisen" NICHT im Korpus verbatim belegt** — Pflege heute nennt „Vorlieben des Patienten berücksichtigen, z. B. Lieblingsessen" (Kap. 7 allgemein) und „Lieblingsessen" punktuell, aber keine verbatim Aussage über biografieorientierte Speisenauswahl speziell für Demenzpatienten. Quelle beschaffen: DNQP-Expertenstandard „Beziehungsgestaltung in der Pflege von Menschen mit Demenz" oder Böhm/Psychobiografisches Pflegemodell. Bis dahin im Schüler-Content als didaktische Anpassung kennzeichnen.
 **Praxisfehler:** Aus Zeitgründen füttern, obwohl der Patient mit Fingerfood noch selbst essen könnte.
 
 **Misconceptions:**
@@ -292,7 +300,9 @@
 **Beleg:**
 - Quelle: `dnqp-standards-index/ernaehrungsmanagement.txt`
 - Zitat: "Die Einrichtung stellt sicher, dass geeignete Instrumente und Hilfsmittel zur Einschätzung und Dokumentation zur Verfügung stehen" ✅ MATCH (stützt Bereitstellungspflicht)
-- ⚠️ **§ 630f BGB NICHT im Korpus belegt:** Pflege heute enthält nur den allgemeinen Verweis auf das Patientenrechtegesetz (§ 630 b–h BGB) sowie § 630c und § 630e — die spezifische Dokumentationspflicht des § 630f BGB ist nicht verbatim vorhanden. Quelle beschaffen: Gesetzestext § 630f BGB (gesetze-im-internet.de). Bis dahin im Schüler-Content „gesetzliche Dokumentationspflicht (Patientenrechtegesetz, § 630 b–h BGB)" formulieren — das ist verbatim gedeckt — statt § 630f isoliert als belegt auszugeben.
+- Quelle: `leitlinien-volltext/bgb-630f.txt`
+- Zitat: "Bürgerliches Gesetzbuch (BGB) § 630f Dokumentation der Behandlung"
+- Zitat: "Der Behandelnde ist verpflichtet, zum Zweck der Dokumentation in unmittelbarem zeitlichen Zusammenhang mit der Behandlung eine Behandlungsakte in Papierform oder elektronisch zu führen."
 **Praxisfehler:** Nur "Besonderes" notieren statt jede Mahlzeit — Verlaufstrends (schleichende Exsikkose) bleiben unsichtbar.
 
 **Misconceptions:**

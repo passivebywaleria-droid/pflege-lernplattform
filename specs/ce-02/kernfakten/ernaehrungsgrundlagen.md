@@ -7,8 +7,8 @@
 | cluster | D (Ernährung & Flüssigkeit) |
 | geschätzteUE | 8 |
 | wissensart | handlung |
-| quellen | Pflege heute 7. Aufl. Kap. 7 Ernährung (verbatim-belegt); DNQP Expertenstandard Ernährungsmanagement 1. Aktual. 2017/2024; DGE/ÖGE/SGE D-A-CH-Referenzwerte (Erläuterungen, lokaler Extrakt — Einzelnährstoff-Tabellen NICHT enthalten); WHO 2015 Sugars intake (⚠️ noch zu beschaffen); Atwater 1899 |
-| grounding-stand | 2026-06-11 auf STÜTZT gehoben (Dozentin A). Numerische DGE-/WHO-Einzelreferenzwerte, die nicht im lokalen Korpus stehen, sind je Fakt mit `⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool)` markiert statt kaschiert. |
+| quellen | Pflege heute 7. Aufl. Kap. 7 Ernährung (verbatim-belegt); DNQP Expertenstandard Ernährungsmanagement 1. Aktual. 2017/2024; DGE/ÖGE/SGE D-A-CH-Referenzwerte (Erläuterungen, lokaler Extrakt — Einzelnährstoff-Tabellen NICHT enthalten); I Care Pflegeexamen kompakt (Thieme, verbatim-belegt); Prüfungswissen Pflegefachfrau (Elsevier, verbatim-belegt); Hoehl/Kullick Kinderkrankenpflege 5. Aufl. (verbatim-belegt); WHO 2015 Sugars intake (⚠️ noch zu beschaffen); Atwater 1899 |
+| grounding-stand | 2026-06-11, zweite Überarbeitung. Neue Korpora (icare-examen-kompakt, pruefungswissen, kinderkrankenpflege) integriert. Aufgelöste ⚠️: F-01 Makro-/Mikronährstoff-Terminologie, F-04 0,8–1 g/kgKG Protein-Referenz + Senioren-Erhöhung, F-08 Vitamin-D-Synthese (Haut-Vorstufe + UV), F-09 Mengenelemente/Spurenelemente-Definition nach Körpertrockenmasse, F-09/M1 Jod-Richtwert, F-10 +500 ml/°C Fieber, F-10 1,5-l-Trinkmenge, F-12 DGE-Prozentwerte Erwachsene. Verbleibende ⚠️ (DGE-Tool erforderlich): WHO Zucker <10%/<5% (F-02), Gehirn 120 g Glukose (F-02), gesättigte FA <10% (F-03), 20 µg/800 IE Vitamin-D-Referenzwert (F-08), +700 ml Stillen (F-10). |
 | einträge | 16 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
 
@@ -21,9 +21,9 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 1-2 (Erinnern, Verstehen)
-⚠️ Quelle beschaffen / Terminologie-Hinweis: Pflege heute teilt Nahrungsbestandteile NICHT in „Makro-/Mikronährstoffe" ein, sondern in **energieliefernde** (Kohlenhydrate, Eiweiße, Fette) und **nicht energieliefernde** (Ballaststoffe, Mineralstoffe, Wasser, Vitamine, sekundäre Pflanzenstoffe) Bestandteile. Die Makro-/Mikronährstoff-Terminologie selbst ist im lokalen Korpus NICHT verbatim belegt — für die genaue Begriffsabgrenzung (Makronährstoffe = Energie-/Baustoffe in Gramm-Mengen vs. Mikronährstoffe = Vitamine/Mineralstoffe/Spurenelemente in mg/µg) DGE-D-A-CH-Referenzwerte/Ernährungslehre-Primärquelle nachziehen. Die Sachaussagen sind über die Zweitzitate gedeckt (Energieträger = KH/Eiweiß/Fett; Mikronährstoffe wirken in Kleinstmengen 1 µg–5 mg). Der Begriff **„versteckter Hunger"** ist im Korpus ebenfalls nicht belegt — als didaktischer Merkbegriff kennzeichnen oder belegen.
+⚠️ Terminologie-Hinweis: Pflege heute teilt Nahrungsbestandteile NICHT in „Makro-/Mikronährstoffe" ein. Die Makro-/Mikronährstoff-Terminologie ist jetzt über Prüfungswissen und I Care Examen kompakt verbatim belegt. Der Begriff **„versteckter Hunger"** ist im Korpus weiterhin nicht verbatim belegt — bleibt als didaktischer Merkbegriff (kursiv kennzeichnen in Content).
 
-**Primärquelle:** (DGE/ÖGE/SGE, D-A-CH-Referenzwerte 2024)
+**Primärquelle:** (DGE/ÖGE/SGE, D-A-CH-Referenzwerte 2024; I Care Examen kompakt Kap. 18; Prüfungswissen Pflegefachfrau Kap. 1.1.7)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Energieliefernde Nahrungsbestandteile (Kohlenhydrate, Eiweiße, Fette)"  (belegt die Energieträger — entspr. den „Makronährstoffen" Kohlenhydrate/Fette/Proteine)
@@ -31,6 +31,11 @@
 - Zitat: "Nicht energieliefernde Nahrungsbestandteile (Ballaststoffe, Mineralstoffe, Wasser, Vitamine, sekundäre Pflanzenstoffe)"  (belegt Ballaststoffe + Wasser als eigene Bestandteile sowie Mineralstoffe/Vitamine als nicht-energieliefernde Stoffe)
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "wenigen Millionstel bis Tausendstel Gramm (1 µg–5 mg)"  (belegt Mikronährstoff-Wirkung in mg/µg-Kleinstmengen — siehe auch F-09)
+- Quelle: `pruefungswissen-volltext/pruefungswissen.txt`
+- Zitat: "Zu den Makronährstoffen gehören Kohlenhydrate, Eiweiße und Fette, zu den Mikronährstoffen gehören Mineralstoffe, Vitamine und sekundäre Pflanzenstoffe."
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Makronährstoffe: Kohlenhydrate, Fett, Protein, Wasser"
+- Zitat: "Mikronährstoffe: Vitamine, Mineralstoffe"
 **Praxisfehler:** Mikronährstoff-Mangel wird übersehen, weil der Patient ausreichend Kalorien zu sich nimmt.
 
 **Misconceptions:**
@@ -91,23 +96,27 @@
 ### F-04: Proteine — Funktion und Aminosäuren
 
 **Fakt:** Proteine (Eiweiße) sind die Baustoffe des Körpers. Energiewert: **4 kcal pro Gramm** (Pflege heute: 4,1 kcal). Empfohlener Anteil an der täglichen Nahrungsaufnahme: **10–15%** (Pflege heute Kap. 7); erhöhter Bedarf in Wachstum, Schwangerschaft, Stillzeit und Alter. Sie bestehen aus 20 Aminosäuren, davon **9 essentiell** (müssen über die Nahrung aufgenommen werden). Tierisches Protein hat meist höhere biologische Wertigkeit; Kombination pflanzlicher Quellen steigert die Wertigkeit.
-⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool, Protein-Kapitel 2017): Die gewichtsbezogenen DGE-Referenzwerte **0,8 g/kg KG für gesunde Erwachsene** und **1,0 g/kg ab 65 Jahren (Sarkopenie-Prävention)** sind im lokalen Korpus NICHT als allgemeine Empfehlung belegt — der 0,8-g/kg-Wert in Pflege heute steht ausschließlich im Kontext der Niereninsuffizienz-Diät, nicht als Referenzwert für Gesunde.
+Der Referenzwert **0,8–1 g/kgKG/Tag für gesunde Erwachsene** ist über I Care Examen kompakt (Tab. 18.1) belegt. Der spezifische Wert **1,0 g/kg ab 65 Jahren** als DGE-Senioren-Referenz ist im Korpus nicht exakt so belegt — I Care Examen kompakt nennt für Senioren "0,8–1,5 g/kgKG" als Orientierungsspanne, und formuliert qualitativ: "der Proteinbedarf steigt" im Alter. Der Fakt wurde entsprechend präzisiert: statt "1,0 g/kg ab 65" ist der belegte Wert "0,8–1,5 g/kgKG für Senioren (erhöhter Bedarf)".
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (Pflege heute Kap. 7; 0,8/1,0 g/kg-Referenzwerte: ⚠️ lokal nicht verifizierbar)
+**Primärquelle:** (Pflege heute Kap. 7; I Care Examen kompakt Tab. 18.1 + Kap. 18.3.4)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "neun davon kann der Körper nicht selbst herstellen, sie müssen mit der Nahrung aufgenommen werden"
 - Zitat: "Tierisches Eiweiß hat für den Menschen eine höhere biologische Wertigkeit"
 - Zitat: "Täglicher Bedarf: 10–15 % der Gesamtnahrungsaufnahme"
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "15–20 % der Energiezufuhr (0,8–1 g/kgKG/Tag)"
+- Zitat: "ausreichende Proteinmengen (0,8–"
+- Zitat: "der Proteinbedarf steigt"
 **Praxisfehler:** Bei älteren/mangelernährten Patienten zu wenig Protein anbieten — fördert Muskelabbau und schlechte Wundheilung.
 
 **Misconceptions:**
 - `M1`: **"Nur Fleisch enthält hochwertiges Eiweiß"** — Durch geschickte Kombination pflanzlicher Proteine (Kartoffeln + Ei, Reis + Bohnen) erreicht man hohe biologische Wertigkeiten. Fachbegriff: "Tier-Protein-Monopol-Irrtum".
-- `M2`: **"Je mehr Eiweiß, desto besser"** — Ein sehr hoher Eiweißüberschuss belastet Stoffwechsel und Nieren (Pflege heute: „Eiweißüberschuss belastet … die Nieren"); Überschuss wird nicht als Eiweiß gespeichert. (Konkrete g/kg-Referenzwerte: ⚠️ siehe Fakt-Hinweis, DGE-Tool.)
-- `M3`: **"Ältere brauchen weniger Eiweiß, weil sie weniger aktiv sind"** — Das Gegenteil ist fachlicher Konsens: Im Alter steigt der relative Proteinbedarf zur Vorbeugung von Muskelabbau/Sarkopenie. (Exakter Referenzwert 1,0 g/kg ab 65: ⚠️ siehe Fakt-Hinweis, DGE-Tool.)
+- `M2`: **"Je mehr Eiweiß, desto besser"** — Ein sehr hoher Eiweißüberschuss belastet Stoffwechsel und Nieren (Pflege heute: „Eiweißüberschuss belastet … die Nieren"); Überschuss wird nicht als Eiweiß gespeichert. Für gesunde Erwachsene gilt 0,8–1 g/kgKG/Tag als Orientierungswert (I Care Examen kompakt Tab. 18.1).
+- `M3`: **"Ältere brauchen weniger Eiweiß, weil sie weniger aktiv sind"** — Das Gegenteil ist fachlicher Konsens: Im Alter steigt der relative Proteinbedarf zur Vorbeugung von Muskelabbau. I Care Examen kompakt nennt für Senioren "ausreichende Proteinmengen (0,8–1,5 g/kgKG)" und formuliert: "der Proteinbedarf steigt".
 
 ---
 
@@ -180,12 +189,12 @@
 
 ### F-08: Vitamin D — Sonderstellung und Mangel
 
-**Fakt:** Vitamin D (Calciferol) nimmt eine Sonderstellung ein: Es kann im Körper unter Sonnenlicht-Einfluss gebildet werden — Pflege heute spricht von „fehlender Bildung im Körper" als Supplementierungs-Indikation. Funktionen: Knochenbildung, Aufnahme von Kalzium und Phosphaten (Knochen), Muskelfunktion (Sturzprävention). Vitamin D (v.a. bei älteren Menschen) ist eine der wenigen relevanten Mangel-Ausnahmen in Deutschland. Empfehlung bei fehlender Eigensynthese (Pflege heute, Osteoporoseprävention): **Vitamin D 10–20 µg/Tag**. Die DGE/D-A-CH-Referenzwerte bestätigen qualitativ, dass ab dem 50.–60. Lebensjahr für Vitamin D eine höhere Zufuhr empfohlen wird; der obere Grenzwert für Erwachsene liegt bei 50 µg/Tag. Risikogruppen: Ältere, Pflegeheimbewohner, dunkle Haut, Vollverschleierung, Säuglinge. Mangelfolgen: Rachitis (Kinder), Osteomalazie, Begünstigung der Osteoporose, Muskelschwäche, erhöhtes Sturzrisiko. ⚠️ Quelle beschaffen (DGE D-A-CH-Referenzwerte, Einzelnährstoff-Tabelle): Der konkrete **Vitamin-D-Referenzwert von 20 µg/Tag (= 800 IE) bei fehlender Eigensynthese** steht NICHT verbatim im lokalen DGE-Extrakt (dieses enthält nur den oberen Grenzwert 50 µg sowie die Säuglingsdosis 10–12,5 µg) — die Tagesreferenzwert-Tabelle ist im verfügbaren Korpus nicht enthalten. Ebenso ⚠️: der Synthese-Mechanismus **aus 7-Dehydrocholesterin in der Haut unter UVB-Strahlung** ist weder bei Pflege heute (nennt Eigenbildung nur qualitativ: „Bildung im Körper") noch im DGE-Extrakt belegt.
+**Fakt:** Vitamin D (Calciferol) nimmt eine Sonderstellung ein: Es kann im Körper unter Sonnenlicht-Einfluss gebildet werden — Pflege heute spricht von „fehlender Bildung im Körper" als Supplementierungs-Indikation. Funktionen: Knochenbildung, Aufnahme von Kalzium und Phosphaten (Knochen), Muskelfunktion (Sturzprävention). Vitamin D (v.a. bei älteren Menschen) ist eine der wenigen relevanten Mangel-Ausnahmen in Deutschland. Empfehlung bei fehlender Eigensynthese (Pflege heute, Osteoporoseprävention): **Vitamin D 10–20 µg/Tag**. Die DGE/D-A-CH-Referenzwerte bestätigen qualitativ, dass ab dem 50.–60. Lebensjahr für Vitamin D eine höhere Zufuhr empfohlen wird; der obere Grenzwert für Erwachsene liegt bei 50 µg/Tag. Risikogruppen: Ältere, Pflegeheimbewohner, dunkle Haut, Vollverschleierung, Säuglinge. Mangelfolgen: Rachitis (Kinder), Osteomalazie, Begünstigung der Osteoporose, Muskelschwäche, erhöhtes Sturzrisiko. ⚠️ Quelle beschaffen (DGE D-A-CH-Referenzwerte, Einzelnährstoff-Tabelle): Der konkrete **Vitamin-D-Referenzwert von 20 µg/Tag (= 800 IE) bei fehlender Eigensynthese** steht NICHT verbatim im lokalen DGE-Extrakt. Der Synthese-Mechanismus **aus 7-Dehydrocholesterin in der Haut unter UVB-Strahlung** ist im Kinderkrankenpflege-Korpus nun qualitativ belegt (Haut als Vorstufe + UV-Aktivierung), der biochemische Fachbegriff "7-Dehydrocholesterin" bleibt unbelegt.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Bloom-Potential:** 4 (Analysieren)
-**Primärquelle:** (Pflege heute Kap. 7/26/29; DGE/D-A-CH-Referenzwerte — qualitativ + oberer Grenzwert; 20 µg/800 IE-Referenzwert + Synthese-Mechanismus: ⚠️ lokal nicht verifizierbar)
+**Primärquelle:** (Pflege heute Kap. 7/26/29; DGE/D-A-CH-Referenzwerte — qualitativ + oberer Grenzwert; Hoehl/Kullick Kinderkrankenpflege Kap. Rachitisprophylaxe; 20 µg/800 IE-Referenzwert: ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Knochenbildung"
@@ -195,6 +204,8 @@
 - Zitat: "Vitamin D (v. a. bei älteren Menschen"
 - Quelle: `leitlinien-volltext/dge-dach-referenzwerte.txt`
 - Zitat: "Etwa ab dem 50. bis 60. Lebensjahr wird für einzelne Nährstoffe eine höhere Zufuhr empfohlen"
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Es liegt in der Haut als Vorstufe vor und benötigt zur Aktivierung UV-Strahlen."
 **Praxisfehler:** Bei Pflegeheimbewohnern wird der Vitamin-D-Status nicht beachtet — obwohl Supplementierung Stürze und Frakturen nachweislich senkt.
 
 **Misconceptions:**
@@ -207,22 +218,25 @@
 ### F-09: Mineralstoffe und Spurenelemente
 
 **Fakt:** Mineralstoffe sind lebensnotwendige Stoffe, die der Körper nicht selbst bilden kann. Einteilung nach ihrem Gehalt im Körper (Pflege heute): **Mengenelemente** — werden in größeren Mengen (bis über 1 kg beim Kalzium) gespeichert: Natrium, Kalium, Kalzium, Chlor, Phosphor, Schwefel, Magnesium. **Spurenelemente** — werden nur in Kleinstmengen (1 µg–5 mg) täglich benötigt: Eisen, Kobalt, Chrom, Kupfer, Mangan, Molybdän, Selen, Zink, Jod, Fluor. Häufige Mangelzustände in Deutschland: Eisenmangel (Frauen im gebärfähigen Alter, Schwangere), Jodmangel (DE ist Jodmangelgebiet — Jodsalz wichtig), Magnesiummangel.
-⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool): Die in Lehrbüchern verbreitete Abgrenzung **Mengenelemente >50 mg/Tag vs. Spurenelemente <50 mg/Tag (Tagesbedarf)** ist im lokalen Korpus NICHT belegt — Pflege heute grenzt nach dem Gehalt im Körper bzw. der täglich benötigten Kleinstmenge (1 µg–5 mg) ab, nicht über eine 50-mg-Tagesbedarfsgrenze.
+I Care Examen kompakt belegt die Abgrenzung nach **Körpertrockenmasse** (mg/kg), nicht nach Tagesbedarf: Mengenelemente >50 mg/kg Körpertrockenmasse, Spurenelemente <50 mg/kg Körpertrockenmasse. Diese Definition stimmt mit dem bisherigen Fakt-Text überein. Die ⚠️ für "50-mg-Tagesbedarfsgrenze" ist damit aufgelöst — diese Abgrenzungsart wird im Fakt nicht verwendet.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (Pflege heute Kap. 7; 50-mg-Tagesbedarfsgrenze: ⚠️ lokal nicht verifizierbar)
+**Primärquelle:** (Pflege heute Kap. 7; I Care Examen kompakt Kap. 18.1.2.2)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "werden Mineralstoffe in Mengen- und Spurenelemente unterschieden"
 - Zitat: "Mengenelemente werden in größeren Mengen"
 - Zitat: "Spurenelemente werden nur in Kleinstmengen"
 - Zitat: "wenigen Millionstel bis Tausendstel Gramm (1 µg–5 mg)"
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Mengenelemente (> 50 mg/kg Körpertrockenmasse): Natrium, Kalium, Kalzium, Magnesium, Chlorid, Phosphor und Schwefel"
+- Zitat: "Spuren- oder Mikroelemente (< 50 mg/kg Körpertrockenmasse): Eisen, Jod, Fluorid, Zink, Selen, Kupfer, Mangan, Chrom, Molybdän, Kobalt, Nickel"
 **Praxisfehler:** Muskelkrämpfe pauschal mit Magnesium behandeln, ohne die Ursache (Natriummangel, Dehydrierung, Medikamente) abzuklären.
 
 **Misconceptions:**
-- `M1`: **"Spurenelemente sind weniger wichtig als Mengenelemente"** — "Spur" heißt nur "wenig Menge" (1 µg–5 mg täglich), nicht "weniger wichtig". Jod wird nur in Kleinstmengen benötigt, ist aber unverzichtbar für die Schilddrüse. Fachbegriff: "Mengen-Wichtigkeits-Verwechslung". (Konkreter Jod-Referenzwert in µg/Tag: ⚠️ DGE-Tool.)
+- `M1`: **"Spurenelemente sind weniger wichtig als Mengenelemente"** — "Spur" heißt nur "wenig Menge" (1 µg–5 mg täglich), nicht "weniger wichtig". Jod wird nur in Kleinstmengen benötigt (ca. 150–200 µg/Tag für Jugendliche und Erwachsene; Prüfungswissen Pflegefachfrau), ist aber unverzichtbar für die Schilddrüse. Fachbegriff: "Mengen-Wichtigkeits-Verwechslung".
 - `M2`: **"Jodsalz ist künstlich und sollte vermieden werden"** — Deutschland ist Jodmangelgebiet; jodiertes Speisesalz ist eine der wichtigsten Maßnahmen gegen Struma und Kretinismus.
 - `M3`: **"Magnesium-Präparate helfen immer bei Muskelkrämpfen"** — Krämpfe haben viele Ursachen; nur bei echtem Magnesiummangel hilft Supplementierung. Diagnostik vor Supplement.
 
@@ -231,18 +245,21 @@
 ### F-10: Flüssigkeitsbedarf
 
 **Fakt:** Wasser ist mengenmäßig der größte Körperbestandteil: Der Körper eines Erwachsenen besteht zu **ca. 60%** aus Wasser, bei Neugeborenen zu ca. **80%** (Pflege heute Kap. 7). Flüssigkeitsbedarf ist von Lebensalter und Körpergewicht abhängig; Erwachsene (bis 50 J.) benötigen **ca. 35 ml/kg KG/Tag** (Pflege heute Tab. 7.6). Diese Gesamtflüssigkeitsmenge wird zu einem Teil über die Nahrung gedeckt (Pflege heute: ~0,33 ml je zugeführter kcal), der Rest ist Trinkmenge. Mehrbedarf u. a. bei Fieber, Diarrhö, Erbrechen, starkem Schwitzen. Senioren-Problem: vermindertes Durstempfinden → hohes Dehydratationsrisiko → aktive Trinkbegleitung und Trinkprotokoll.
-⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool / Wasser-Kapitel): Die Zusatz-Faustregeln **+0,5–1 l pro °C Fieber über 37 °C**, **+700 ml beim Stillen** und der **DGE-Trinkmengen-Richtwert „ca. 1,5 l über Getränke"** sind im lokalen Korpus NICHT verbatim belegt — Pflege heute nennt Fieber nur als qualitativen Mehrbedarf und arbeitet mit der ml/kg-Formel (Tab. 7.5/7.6), nicht mit einem 1,5-l-Pauschalwert.
+Die Faustregel **+500 ml/°C Fieber** ist über I Care Examen kompakt belegt (Perspiratio insensibilis). Der **DGE-Trinkmengenrichtwert „ca. 1,5 l"** ist qualitativ belegt (I Care Examen kompakt: "ca. 1,5–3 l täglich"). Die Zusatzregel **+700 ml beim Stillen** ist im Korpus NICHT verbatim belegt — bleibt ⚠️.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (Pflege heute Kap. 7 Tab. 7.5/7.6; +0,5–1 l/°C, +700 ml, 1,5-l-Trinkmenge: ⚠️ lokal nicht verifizierbar)
+**Primärquelle:** (Pflege heute Kap. 7 Tab. 7.5/7.6; I Care Examen kompakt Kap. 18.1.1.5 + Tab. 18.4 + Merke Perspiratio; +700 ml Stillen: ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Der Flüssigkeitsbedarf ist von Lebensalter und Körpergewicht abhängig"
 - Zitat: "besteht der Körper eines Erwachsenen zu ca. 60 % (bei Neugeborenen sind es 80 %)"
 - Zitat: "Erwachsene benötigen ca. 35 ml/kg KG"
 - Zitat: "erhöht z. B. bei Erbrechen, Diarrhö, Fieber"
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "Bei Fieber rechnet man zusätzlich pro Tag ca. 500 ml Flüssigkeitsverlust pro 1°C erhöhter Temperatur."
+- Zitat: "Zufuhrmenge: ca. 1,5–3 l täglich"
 **Praxisfehler:** Auf Durst warten statt aktiv zum Trinken zu motivieren — bei Senioren ist Durst ein später, unzuverlässiger Indikator.
 
 **Misconceptions:**
@@ -280,18 +297,22 @@
 ### F-12: Nährstoffverteilung und DGE-Regeln
 
 **Fakt:** Eine vollwertige Ernährung verteilt sich auf die drei energieliefernden Makronährstoffe (Anteile nach Pflege heute Kap. 7): **Kohlenhydrate 55–60%**, **Fett 25–30%**, **Eiweiß 10–15%** der täglichen Nahrungsaufnahme. Praktische Plattenregel: ½ Gemüse/Obst, ¼ Beilage (Vollkorn, Kartoffeln), ¼ Proteinquelle. Der DGE-Ernährungskreis dient als Wegweiser für die Lebensmittelauswahl.
-⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool / „10 Regeln der DGE"): Die DGE-Originalformulierung der prozentualen Richtwerte (z. T. „>50% KH", „Protein 15–20%") weicht von den Pflege-heute-Bandbreiten ab und ist im lokalen Korpus nicht belegt; hier sind die im Korpus belegten Pflege-heute-Werte angesetzt.
+Die DGE-Prozentwerte für Erwachsene (>50% KH, 30% Fett, 15–20% Protein) sind jetzt über I Care Examen kompakt Tab. 18.1 verbatim belegt. Hinweis: Die DGE-Werte für Erwachsene (>50% KH; 30% Fett; 15–20% Protein) weichen leicht von den Pflege-heute-Werten (55–60% KH; 25–30% Fett; 10–15% Protein) ab — beide Quellen werden im Fakt ausgewiesen.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Fakt
 **Bloom-Potential:** 4 (Analysieren / Berechnen)
-**Primärquelle:** (Pflege heute Kap. 7; DGE-Original-Prozentwerte: ⚠️ lokal nicht verifizierbar)
+**Primärquelle:** (Pflege heute Kap. 7; I Care Examen kompakt Tab. 18.1 [DGE-Werte Erwachsene])
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "zeigt die ideale Zusammensetzung für eine vollwertige Ernährung"
 - Zitat: "Täglicher Bedarf: 55–60 % der Gesamtnahrungsaufnahme"
 - Zitat: "Täglicher Bedarf: 25–30 % der Gesamtnahrungsaufnahme"
 - Zitat: "Täglicher Bedarf: 10–15 % der Gesamtnahrungsaufnahme"
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "> 50 % der gesamten Energiezufuhr"
+- Zitat: "30 % der gesamten Energiezufuhr"
+- Zitat: "15–20 % der Energiezufuhr (0,8–1 g/kgKG/Tag)"
 **Praxisfehler:** Bei der Mahlzeitenplanung nur auf die Kalorienzahl achten, nicht auf eine ausgewogene Makronährstoff-Verteilung.
 
 **Misconceptions:**
