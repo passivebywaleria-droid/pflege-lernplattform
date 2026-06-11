@@ -7,15 +7,16 @@
 | cluster | D (Ernährung) |
 | geschätzteUE | 7 |
 | wissensart | handlung |
-| quellen | Pflege heute 7. Aufl. Kap. 7.7 Enterale Ernährung über Sonden; DNQP Expertenstandard Ernährungsmanagement (2. Aktual.); DGEM S3-Leitlinie Klinische Ernährung 2013/2020 |
+| quellen | Pflege heute 7. Aufl. Kap. 7.7 Enterale Ernährung über Sonden; ASPEN Consensus Recommendations for Refeeding Syndrome 2020 (Nutr Clin Pract 35(2):178–195); DNQP Expertenstandard Ernährungsmanagement (2. Aktual.); DGEM S3-Leitlinie Klinische Ernährung 2013/2020 |
 | einträge | 11 |
 | erstellt | 2026-06-10 (Pipeline v9) |
+| grounding | 2026-06-11 auf STÜTZT gehoben (Dozentin A): 67 Verbatim-Belege, alle ✅ MATCH. Pro Teilaussage ein Beleg (R2). Offen als ⚠️ Quelle beschaffen (DGEM S3): pH <5,5 (F-03), 20–50 ml Spülmenge (F-09), ZPE-Obergrenze ~2000 mosmol/l (F-11), Zottenatrophie/„physiologischer" (F-01, nur didaktischer Transfer). „schwere Mukositis" (F-01) → korrigiert auf belegtes „Stenosen im MDT"; Cola-Aussage (F-09) → an Korpus angepasst (Ausnahme-Spüllösung, nicht „ohne Evidenz"). |
 
 ---
 
 ### F-01: Enteral vs. parenteral — "Wenn der Darm funktioniert, wird er benutzt"
 
-**Fakt:** Reicht die orale Ernährung nicht aus, gibt es zwei Wege der künstlichen Ernährung: enteral (über eine im Magen-Darm-Trakt platzierte Sonde) und parenteral (über venöse Zugänge, am Darm vorbei). Enteral ist fast immer erste Wahl — physiologischer, weniger Komplikationen. Parenteral wird nur gewählt, wenn der Darm nicht mehr resorbiert (Ileus, Kurzdarmsyndrom, schwere Mukositis).
+**Fakt:** Reicht die orale Ernährung nicht aus, gibt es zwei Wege der künstlichen Ernährung: enteral (über eine im Magen-Darm-Trakt platzierte Sonde) und parenteral (über venöse Zugänge, am Darm vorbei). Enteral ist fast immer erste Wahl — weniger Komplikationen. Parenteral (totale parenterale Ernährung) wird gewählt, wenn der Verdauungstrakt völlig umgangen werden muss, z. B. bei Ileus, Stenosen im Magen-Darm-Trakt oder schwerem Kurzdarmsyndrom.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Definition
@@ -23,9 +24,14 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 7.7.5; DGEM S3-Leitlinie Klinische Ernährung 2013/2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "die parenterale Ernährung über venöse Zugänge"
-- Zitat: "Dann wird der Patient künstlich ernährt"
-**Praxisfehler:** Parenteral wird als "moderner" für besser gehalten — dabei ist enteral physiologischer und komplikationsärmer.
+- Zitat: "Dann wird der Patient künstlich ernährt" (zwei Wege)
+- Zitat: "die enterale Ernährung über eine im oberen" (enteraler Weg: Sonde im MDT)
+- Zitat: "die parenterale Ernährung über venöse Zugänge" (parenteraler Weg, am Darm vorbei)
+- Zitat: "Die enterale Ernährung ist im Vergleich zur" (enteral komplikationsärmer — Forts. „parenteralen Ernährung mit deutlich weniger Komplikationen behaftet")
+- Zitat: "wird der Verdauungstrakt völlig umgangen" (TPE-Indikation)
+- Zitat: "Stenosen im Magen-Darm-Trakt oder schwerem Kurzdarmsyndrom" (parenterale Indikationen; Forts. „bei Ileus … oder schwerem Kurzdarmsyndrom")
+- Zur Zottenatrophie/„enteral ist physiologischer": ⚠️ Quelle beschaffen (DGEM S3 Klinische Ernährung — Darmmukosa-Atrophie bei fehlender enteraler Stimulation) — im Pflege-heute-Volltext nicht verbatim auffindbar (dort „Zottenatrophie" nur im Kontext Zöliakie). Nur als didaktischer Transfer, nicht als belegter Fakt verwenden.
+**Praxisfehler:** Parenteral wird als "moderner" für besser gehalten — dabei ist enteral komplikationsärmer.
 **Transfer:** Wie ein Muskel, der nur stark bleibt, wenn er benutzt wird: Der Darm verkümmert (Zottenatrophie), wenn er nicht ernährt wird.
 
 **Misconceptions:**
@@ -47,7 +53,11 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Dünner Schlauch aus Kunststoff oder Weichgummi"
 - Zitat: "perkutane endoskopische Gastrostomie"
-- Zitat: "die Verabreichung von Sondenkost, die Pflege der liegenden Sonde"
+- Zitat: "Liegedauer je nach Material bis" (NG-Sonde — Forts. „zu vier Wochen"; deckt kurzzeitig <4 Wochen)
+- Zitat: "Länger oder dauerhaft notwendige enterale Ernährung" (PEG-Indikation: Langzeit)
+- Zitat: "Perkutane Punktion des Magens im Rahmen einer Gastroskopie" (PEG endoskopisch angelegt)
+- Zitat: "die Verabreichung von Sondenkost, die Pflege der liegenden Sonde" (delegierbare Pflegeaufgaben)
+- Hinweis: Pflege heute nennt für die NG-Sonde verbatim „Liegedauer … bis zu vier Wochen" und für PEG/PEJ „länger oder dauerhaft" — die im Fakt genutzte saubere Grenze „<4 / >4 Wochen" operationalisiert das (NG-Wert verbatim belegt; die >4-Wochen-Grenze für PEG ist die gängige DGEM-Konvention, in Pflege heute qualitativ als „länger/dauerhaft" formuliert).
 **Praxisfehler:** PEG wird fälschlich für kurzfristige postoperative Ernährung gelegt — dafür ist die nasogastrale Sonde gedacht.
 
 **Misconceptions:**
@@ -67,8 +77,10 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 7.7.1; DGEM S3-Leitlinie 2013/2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Die Überprüfung mit Indikatorpapier ist die sicherste Methode"
-- Zitat: "kann die korrekte Lage der Sonde nicht wie bei einer gastral liegenden Sonde mittels Lufteinspritzen geprüft werden"
+- Zitat: "Die Überprüfung mit Indikatorpapier ist die sicherste Methode" (pH-Test sicherste Methode; Forts. „(pH-Wert)")
+- Zitat: "die Markierung auf der Sonde zu berücksichtigen" (zusätzlich Markierung prüfen)
+- Zitat: "kann die korrekte Lage der Sonde nicht wie bei einer gastral liegenden Sonde mittels Lufteinspritzen geprüft werden" (jejunal: Lufttest nicht aussagekräftig)
+- Zur Schwelle „pH <5,5 spricht für Magenlage": ⚠️ Quelle beschaffen (DGEM S3 Klinische Ernährung / NICE NG-Tube-Standard pH ≤5,5) — Pflege heute nennt nur „Indikatorpapier (pH-Wert)", den konkreten Schwellenwert 5,5 verbatim NICHT. Schwellenwert bis zur Beschaffung nicht als belegt führen.
 **Praxisfehler:** Verlass auf die veraltete Luftinsufflation mit Stethoskop — Geräusche entstehen auch bei Fehllage in Lunge oder Ösophagus.
 
 **Misconceptions:**
@@ -88,9 +100,12 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 7.7.5; DGEM S3-Leitlinie 2013/2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Bolus (maximal 100 ml in 5–10 Min.), halbkontinuierlich unter Ausnutzung der"
-- Zitat: "muss die Sondenkost kontinuierlich über eine Ernährungspumpe"
-- Zitat: "liegt ggf. eine Magenentleerungsstörung vor"
+- Zitat: "Bolus (maximal 100 ml in 5–10 Min.), halbkontinuierlich unter Ausnutzung der" (Bolus max. 100 ml/5–10 Min.)
+- Zitat: "Schwerkraft (500 ml in ca. 30–45 Min.) oder" (halbkontinuierlich/Schwerkraft 500 ml/30–45 Min.)
+- Zitat: "kontinuierlich mithilfe einer Pumpe (ca." (kontinuierlich Pumpe; Forts. „100 ml pro Stunde")
+- Zitat: "muss die Sondenkost kontinuierlich über eine Ernährungspumpe" (Jejunum: zwingend kontinuierlich/Pumpe)
+- Zitat: "Lassen sich mehr als 50 % der letzten" (Magenrest >50 % aspirierbar; Forts. „Nahrung aspirieren … liegt ggf. eine Magenentleerungsstörung vor")
+- Zitat: "liegt ggf. eine Magenentleerungsstörung vor" (Konsequenz: Arzt informieren)
 **Praxisfehler:** Bolusgabe bei Dünndarm-Sonden — der Dünndarm hat keine Speicherfunktion, Folge sind Durchfall und Kreislaufprobleme.
 
 **Misconceptions:**
@@ -110,9 +125,11 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 7.7.5; DGEM S3-Leitlinie 2013/2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Hochmolekulare Sondenkost: vollbilanzierte Standardnahrung"
-- Zitat: "Stoffwechseladaptierte Sondenkost"
-- Zitat: "Selbstgefertigte Sondenkost (Home-made"
+- Zitat: "Hochmolekulare Sondenkost: vollbilanzierte Standardnahrung" (hochmolekular = vollbilanziert)
+- Zitat: "Verdauungsfunktion muss erhalten sein" (hochmolekular setzt erhaltene Verdauung voraus)
+- Zitat: "enthalten die Nährstoffe bereits in resorptionsfähigen Bestandteilen" (niedermolekular: resorptionsfähig, kaum Verdauungsleistung)
+- Zitat: "Stoffwechseladaptierte Sondenkost" (Spezialdiäten: Diabetes, Leber/Niere, Intensiv)
+- Zitat: "Selbstgefertigte Sondenkost (Home-made" (Home-made i. d. R. nicht empfohlen)
 **Praxisfehler:** Püriertes Küchenessen über die Sonde geben — verstopft die Sonde und hat unklare Zusammensetzung.
 
 **Misconceptions:**
@@ -132,8 +149,13 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 7.7.3; DGEM S3-Leitlinie 2013/2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Sonde mobilisieren: 2–3 cm hin- und herschieben und um 360° drehen"
-- Zitat: "verhindert das Einwachsen der inneren Halteplatte in die Mageninnenwand"
+- Zitat: "Eintrittsstelle mit Kochsalzlösung reinigen" (Reinigung mit NaCl)
+- Zitat: "Hypergranulation" (Beobachtung auf Entzündungszeichen, Sekret, Hypergranulation)
+- Zitat: "Sonde mobilisieren: 2–3 cm hin- und herschieben und um 360° drehen" (Mobilisieren 2–3 cm + 360°)
+- Zitat: "Eine Jet-PEG" (Forts. „darf nicht gedreht werden, um eine Dislokation zu vermeiden")
+- Zitat: "verhindert das Einwachsen der inneren Halteplatte in die Mageninnenwand" (Buried-Bumper-Prävention)
+- Zitat: "Halteplatte ca. 0,5 cm über Hautniveau" (äußere Halteplatte spannungsfrei, 0,5 cm)
+- Zitat: "Keinen starken Zug auf die Sonde" (kein starker Zug — sonst Druckschäden)
 **Praxisfehler:** Sonde "in Ruhe lassen" — ohne tägliches Mobilisieren wächst die innere Halteplatte ein (Buried-Bumper), operative Entfernung nötig.
 
 **Misconceptions:**
@@ -153,8 +175,11 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 3.5/7.7; DGEM S3-Leitlinie 2013/2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Sonde behindert Sphinkterverschluss; Gefahr von"
-- Zitat: "Oberkörper erhöht positionieren (30–45°)"
+- Zitat: "Sonde behindert Sphinkterverschluss; Gefahr von" (Mechanismus: gestörter Sphinkterverschluss)
+- Zitat: "Reflux (Zurückfließen) von Sondenkost" (Reflux → Aspirationsgefahr)
+- Zitat: "Oberkörper erhöht positionieren (30–45°)" (Prophylaxe: OK-Hochlage 30–45°)
+- Zitat: "bewusstlose Patienten mind. 30° halb" (Bewusstlose mind. 30° halb sitzend)
+- Zitat: "Bei Risikopatienten: funktionsfähiges Absauggerät bereithalten" (Absauggerät bei Risikopatienten)
 **Praxisfehler:** Patient liegt während/nach der Gabe flach — fördert Reflux und nächtliche Aspirationspneumonien.
 
 **Misconceptions:**
@@ -174,8 +199,10 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 7.7.5; DGEM S3-Leitlinie 2013/2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "ob die Sondenkost vielleicht zu kalt war, die Einzelportionen zu"
-- Zitat: "ob eine osmotische Diarrhö vorliegen"
+- Zitat: "ob die Sondenkost vielleicht zu kalt war, die Einzelportionen zu" (zu kalt / zu große Einzelportionen)
+- Zitat: "die Menge zu schnell gesteigert" (zu schnelle Mengensteigerung)
+- Zitat: "ob eine osmotische Diarrhö vorliegen" (osmotische Diarrhö — Sondenkost zieht Wasser an)
+- Zitat: "Auch an die Möglichkeit einer infektiösen Diarrhö" (auch infektiöse Diarrhö bedenken)
 **Praxisfehler:** Durchfall als "bei Sonde normal" abtun statt systematisch nach Rate, Temperatur, Hygiene, Antibiotika und Sorbit zu suchen.
 
 **Misconceptions:**
@@ -187,7 +214,7 @@
 
 ### F-09: Sondenverstopfung — Spülen ist die wichtigste Prophylaxe
 
-**Fakt:** Verstopfung der Sonde ist eine häufige, aber vermeidbare Komplikation — vermeidbar durch sorgfältige Spülung vor und nach der Verabreichung von Sondenkost oder Medikamenten (20–50 ml Wasser beim Erwachsenen). Medikamente einzeln und getrennt von der Nahrung geben. Bei Verstopfung: warmes Wasser, sanfter Druck und Zug im Wechsel — keine Gewalt (Sonde reißt, Leckage). Cola und saure Säfte sind veraltete Tipps ohne Evidenz. Hilft nichts, muss die Sonde gewechselt werden.
+**Fakt:** Verstopfung der Sonde ist eine häufige, aber vermeidbare Komplikation — vermeidbar durch sorgfältige Spülung vor und nach der Verabreichung von Sondenkost oder Medikamenten. Medikamente einzeln und getrennt von der Sondenkost geben (sonst Ausflockung). Bei Verstopfung: mit lauwarmem Wasser in einer 10- oder 20-ml-Spritze unter vorsichtigem Druck freispülen — keine kleinen Spritzen mit hohem Druck (lösen Sondenrupturen aus). Kohlensäurehaltige Getränke (z. B. Cola), Pepsinwein oder Pankreasenzyme nur in Ausnahmefällen und nach hauseigenem Standard. Hilft nichts, muss die Sonde entfernt und gewechselt werden.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Komplikation / Handlung
@@ -195,14 +222,21 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 7.7.3; DGEM S3-Leitlinie 2013/2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Verstopfung der Sonde vermeiden"
-- Zitat: "durch sorgfältige Spülung vor und"
+- Zitat: "Verstopfung der Sonde vermeiden" (Prophylaxe-Prinzip)
+- Zitat: "durch sorgfältige Spülung vor und" (Forts. „nach der Verabreichung von Sondenkost oder Medikamenten")
+- Zitat: "mit lauwarmem Wasser in" (Freispülen mit lauwarmem Wasser, 10-/20-ml-Spritze)
+- Zitat: "unter vorsichtigem Druck freispülen" (vorsichtiger Druck)
+- Zitat: "Spritzen erzeugen einen zu großen Druck" (zu kleine Spritzen → Sondenruptur)
+- Zitat: "kohlensäurehaltige Getränke wie z. B. Cola" (Cola nur als Ausnahme-Spüllösung)
+- Zitat: "Medikamente getrennt von der Sondenkost geben" (getrennt wegen Ausflockung)
+- Zitat: "Medikamente möglichst einzeln verabreichen" (einzeln)
+- Zur Spülmenge „20–50 ml beim Erwachsenen": ⚠️ Quelle beschaffen (DGEM S3 Klinische Ernährung) — Pflege heute nennt für das Freispülen 10-/20-ml-Spritzen, aber keine 20–50-ml-Routine-Spülmenge verbatim. Mengenangabe bis zur Beschaffung nicht als belegt führen.
 **Praxisfehler:** Spülen nach Medikamentengabe vergessen oder Medikamente mit Sondenkost mischen — verklebt das Lumen.
 
 **Misconceptions:**
-- `M1`: **"Cola eignet sich zum Freispülen"** — Alter Tipp ohne Evidenz; die Säure flockt Eiweiß aus und verschlimmert die Verstopfung. Fachbegriff: "Cola-Mythos".
-- `M2`: **"Mit viel Druck bekommt man jede Sonde frei"** — Hoher Druck reißt die Sonde (Leckage); richtig: sanfter Druck und Zug im Wechsel.
-- `M3`: **"Medikamente können mit der Sondennahrung zusammen gegeben werden"** — Mischen führt zu Wechselwirkung und Ausflockung; Medikamente einzeln, vor/nach spülen.
+- `M1`: **"Cola eignet sich zum Routine-Freispülen"** — In Pflege heute ist Cola nur eine Ausnahme-Spüllösung „nach hauseigenem Standard", kein Routine- oder Erstmittel; Standard ist lauwarmes Wasser. (Die verbreitete Aussage „Cola flockt Eiweiß aus / ohne Evidenz" ist im Korpus nicht belegt — ⚠️ Quelle beschaffen, falls als Lehraussage genutzt.) Fachbegriff: "Cola-Mythos".
+- `M2`: **"Mit viel Druck bekommt man jede Sonde frei"** — Zu kleine Spritzen erzeugen zu großen Druck und lösen Sondenrupturen aus; richtig: 10-/20-ml-Spritze mit vorsichtigem Druck.
+- `M3`: **"Medikamente können mit der Sondennahrung zusammen gegeben werden"** — Mischen führt zu Ausflockung und Sondenverstopfung; Medikamente einzeln, getrennt von der Sondenkost, vor/nach spülen.
 
 ---
 
@@ -218,13 +252,16 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "darf immer erst gesteigert werden, wenn die vorangegangene"
 - Quelle: `leitlinien-volltext/aspen-refeeding.txt`
-- Zitat: "A decrease in any 1, 2, or 3 of serum phosphorus, potassium, and/or magnesium levels by 10%–20%" (Definition/Diagnosekriterien)
+- Zitat: "A decrease in any 1, 2, or 3 of serum phosphorus, potassium, and/or magnesium levels by 10%–20%" (Definition/Diagnosekriterien — mild)
+- Zitat: "20%–30% (moderate), or >30%" (Schweregrade: moderat / schwer >30 %)
 - Zitat: "And occurring within 5 days of reinitiating or substantially increasing energy provision." (Zeitfenster)
 - Zitat: "Rising insulin levels drive phosphorus and potassium intracellularly" (Mechanismus)
 - Zitat: "Initiate with 100–150 g of dextrose or 10–20 kcal/kg for the first 24 hours" (Kostaufbau 10–20 kcal/kg)
 - Zitat: "advance by 33% of goal every 1 to 2 days" (Steigerung)
 - Zitat: "Check serum potassium, magnesium, and phosphorus before initiation of nutrition." (Elektrolytkontrolle)
 - Zitat: "Supplement thiamin 100 mg before feeding or before initiating dextrose-containing IV fluids in patients at risk." (Thiamin)
+- Zitat: "16–18.5 kg/m" (Risikokriterien-Tabelle: BMI 16–18,5 bzw. <16 kg/m² als Risikomarker — M2)
+- Zitat: "Anorexia Nervosa" (Risikogruppe Essstörung; weitere im Text: Alcohol/Substance-Use, Cancer — M2)
 - Hinweis: Die in v9 noch offene ⚠️-Markierung (10–20 kcal/kg, Thiamin, Elektrolyt-Mechanismus, Hypophosphatämie) ist mit ASPEN 2020 nun verbatim belegt. Die in Pflege heute verwendete pauschale Angabe "Steigerung über 5–7 Tage" ist in ASPEN nicht verbatim als Fixwert genannt (ASPEN: "advance by 33% of goal every 1 to 2 days"); deshalb oben auf die ASPEN-Formulierung umgestellt.
 **Praxisfehler:** Nach langer Mangelernährung sofort die volle Kalorienmenge geben — löst das Refeeding-Syndrom aus.
 
@@ -237,7 +274,7 @@
 
 ### F-11: Parenterale Ernährung — Grundzüge und Hygiene
 
-**Fakt:** Parenterale Ernährung liefert Nährstoffe direkt intravenös, wenn der Magen-Darm-Trakt nicht funktioniert. Periphervenös (Armvene): nur kurzfristig, isoosmolare Lösung. Zentralvenös (ZVK, Port): langfristig, hyperosmolare Lösungen, volle Bedarfsdeckung. Die enterale Ernährung ist im Vergleich zur parenteralen mit deutlich weniger Komplikationen behaftet — parenteral droht v. a. die Katheterinfektion (z. B. durch ZVK) bis zur Sepsis. Parenterale Ernährung ist immer ärztliche Anordnung; strenge Hygiene und ein separates Lumen sind Pflicht.
+**Fakt:** Parenterale Ernährung ist die künstliche Ernährung unter Umgehung des Magen-Darm-Trakts (in der Regel intravenös). Periphervenös (Armvene): kurzfristig (wenn der Patient voraussichtlich nach 2–3 Tagen wieder essen kann), nur niedrig-osmolare Lösungen. Zentralvenös (ZVK): bei länger dauernder totaler parenteraler Ernährung und für höher osmolare Lösungen — Infusionslösungen mit einer Osmolarität >800 mosmol/l müssen über einen zentralvenösen Katheter gegeben werden. Die enterale Ernährung ist im Vergleich zur parenteralen mit deutlich weniger Komplikationen behaftet — parenteral droht v. a. die Katheterinfektion (z. B. durch ZVK) bis zur Sepsis. Parenterale Ernährung unterliegt dem Arzneimittelgesetz (immer ärztliche Anordnung); strenge Hygiene und ein separates Lumen sind Pflicht.
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Fakt
@@ -245,12 +282,16 @@
 **Primärquelle:** (Pflege heute 7. Aufl. Kap. 7.7.5/43.5.6; DGEM S3-Leitlinie 2013/2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Die enterale Ernährung ist im Vergleich zur"
-- Zitat: "Katheterinfektionen (z. B. durch ZVK)"
-- Belege für Osmolaritätsgrenzen (PPE ~800 mosmol/l, ZPE bis 2000 mosmol/l) und Zugangswege im Detail: ⚠️ Quelle beschaffen (Pflege heute Kap. 43.5.6 / DGEM S3-Leitlinie 2013/2020) — Detailwerte im Volltext nicht verbatim auffindbar
+- Zitat: "Künstliche Ernährung unter Umgehung des" (Definition: unter Umgehung des Magen-Darm-Trakts)
+- Zitat: "Kann der Patient voraussichtlich nach" (periphervenös, wenn nach 2–3 Tagen wieder essbar — Forts. „2–3 Tagen wieder essen, werden Flüssigkeit, Elektrolyte und Glukose über einen periphervenösen Zugang gegeben")
+- Zitat: "müssen über einen zen" (Forts. „tralvenösen Katheter verabreicht werden" — Schwelle >800 mosmol/l → ZVK; vollständiger Satz: „Infusionslösungen mit einer Osmolarität > 800 mosmol/l müssen über einen zentralvenösen Katheter verabreicht werden")
+- Zitat: "Die enterale Ernährung ist im Vergleich zur" (enteral komplikationsärmer)
+- Zitat: "Katheterinfektionen (z. B. durch ZVK)" (parenterales Hauptrisiko: Katheterinfektion)
+- Zitat: "unterliegt dem Arzneimittelgesetz" (parenterale Lösungen = Arzneimittel, ärztliche Anordnung)
+- Zur Obergrenze „ZPE bis ~2000 mosmol/l": ⚠️ Quelle beschaffen (Pflege heute Kap. 43.5.6 / DGEM S3-Leitlinie 2013/2020) — die ZVK-Schwelle >800 mosmol/l ist verbatim belegt, der 2000-mosmol/l-Obergrenzwert nicht. Bis zur Beschaffung nur die >800-Schwelle als belegt führen.
 **Praxisfehler:** Medikamente über dasselbe Lumen wie die parenterale Ernährung geben — Ausflockung, Inkompatibilität, erhöhtes Infektionsrisiko.
 
 **Misconceptions:**
-- `M1`: **"Parenterale Ernährung geht nur über ZVK oder Port"** — Auch periphervenös möglich (kurzfristig, isoosmolar). Fachbegriff: "ZVK-Ausschließlichkeits-Irrtum".
+- `M1`: **"Parenterale Ernährung geht nur über ZVK oder Port"** — Auch periphervenös möglich (kurzfristig, niedrig-osmolare Lösungen); erst >800 mosmol/l erfordert einen ZVK. Fachbegriff: "ZVK-Ausschließlichkeits-Irrtum".
 - `M2`: **"Über den Ernährungskatheter kann man auch Medikamente geben"** — Ein separates Lumen ist Pflicht; Mischen führt zu Ausflockung und Infektionsrisiko.
 - `M3`: **"Parenteral hat kein höheres Infektionsrisiko als enteral"** — Parenteral hat deutlich höheres Risiko (Katheter-Sepsis); deshalb enteral bevorzugen.

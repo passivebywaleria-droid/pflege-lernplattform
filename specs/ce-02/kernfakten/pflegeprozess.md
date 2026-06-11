@@ -7,7 +7,7 @@
 | cluster | A (Pflegeprozess & Grundlagen) |
 | geschätzteUE | 8 |
 | wissensart | konzept |
-| quellen | Pflege heute Kap. Pflegeprozess und Pflegeplanung; Fiechter/Meier 1981; § 4 PflBG; Doran SMART 1981; BMG SIS 2014 |
+| quellen | Pflege heute Kap. Pflegeprozess und Pflegeplanung; Fiechter/Meier 1981; § 4 PflBG; Doran SMART 1981; Strukturmodell/SIS seit 2016 |
 | einträge | 14 |
 | erstellt | 2026-06-10 (abgeleitet aus bausteine-plan.md) |
 
@@ -43,6 +43,12 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "von Verena Fiechter und Martha Meier"
+- Zitat: "Informationen sammeln"
+- Zitat: "Probleme und Ressourcen erfassen"
+- Zitat: "Ziele festlegen"
+- Zitat: "Maßnahmen planen"
+- Zitat: "Maßnahmen durchführen"
+- Zitat: "Wirkung der Maßnahmen überprüfen und verbessern"
 **Praxisfehler:** Schritte werden in falscher Reihenfolge genannt — vor allem "Ziele" vor "Probleme/Ressourcen".
 **Misconceptions:**
 - `M1`: **"Es sind 5 Schritte"** — Das 5-Schritt-Modell ist US-amerikanisch (Brobst). Das deutsche Standardmodell hat 6 Schritte.
@@ -81,6 +87,7 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "selbstständig durchzuführende und vorbehaltene Tätigkeit im Sinne des Pflegeberufegesetzes"
+- Zitat: "Mit dem Pflegeberufegesetz von 2017 wird der Pflegeprozess mit der Erhebung des individuellen Pflegebedarfs, der Organisation, Gestaltung und Steuerung des Pflegeprozesses"
 **Praxisfehler:** Steuerung des Pflegeprozesses wird bei Personalmangel an unqualifiziertes Personal delegiert.
 **Misconceptions:**
 - `M1`: **"Pflegehilfskräfte dürfen den Pflegeplan selbstständig erstellen, wenn die Fachkraft beschäftigt ist"** — Die Steuerung ist examinierten Pflegefachpersonen vorbehalten, unabhängig von der Arbeitsbelastung.
@@ -157,6 +164,7 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "in vielen Einrichtungen wird der Vorgang der Informationssammlung und mancherorts auch die Problemformulierung als Pflegeanamnese bezeichnet"
+- Zitat: "Anamnese jedoch „Vorgeschichte“ und meint damit die Erhebung des Zustands des Patienten vor Beginn der Pflegebeziehung"
 **Praxisfehler:** Checklisten/Formulare werden stur "abgearbeitet" statt individuell auf den Patienten bezogen.
 **Misconceptions:**
 - `M1`: **"Die Pflegeanamnese erfasst nur körperliche Beschwerden und Diagnosen"** — Sie ist ganzheitlich (Gewohnheiten, Biografie, Ressourcen, soziale Einbindung). Diagnosen sind ärztliche Aufgabe.
@@ -177,6 +185,9 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "im zweiten Schritt des Pflegeprozesses aus den gesammelten Informationen die relevanten Pflegeprobleme und Ressourcen erfasst"
 - Zitat: "Fähigkeiten und Fertigkeiten des Patienten, Folgen von Gesundheitsproblemen aus eigener Kraft auszugleichen"
+- Zitat: "potenzielle und verdeckte Probleme"
+- Zitat: "Diese liegen im Moment der Datenerhebung noch nicht vor, es besteht jedoch eine erhöhte Wahrscheinlichkeit"
+- Zitat: "Probleme, die übersehen wurden oder die vom Patienten nicht geäußert wurden"
 **Praxisfehler:** Rein problem-zentrierte Sicht; Ressourcen werden übersehen, dadurch keine aktivierende Pflege.
 **Misconceptions:**
 - `M1`: **"Nur aktuelle Probleme zählen, Risiken kommen später"** — Potenzielle (Risiko-)Probleme müssen früh erkannt werden, damit Prophylaxe greift.
@@ -197,6 +208,12 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ein korrekt formuliertes Pflegeziel beinhaltet folgende Anforderungen z. B. nach der SMART-Regel"
 - Zitat: "Unterschieden werden Nahziele, die in absehbarer Zukunft zu erreichen sind, und Fernziele"
+- Zitat: "spezifisch, messbar, akzeptiert, realisierbar, terminierbar"
+- Zitat: "Spezifisch: Ist die Pflegemaßnahme speziell auf die Situation des Patienten bezogen?"
+- Zitat: "Messbar: Lässt sich das Ergebnis beschreiben oder messen?"
+- Zitat: "Akzeptiert: Ist der Patient mit dem Vorgehen einverstanden"
+- Zitat: "Realisierbar: Sind die festgelegten Ziele"
+- Zitat: "Terminierbar: Ist die Umsetzung der"
 **Praxisfehler:** Ziele werden unmessbar/unterminiert formuliert ("soll mehr trinken") und sind später nicht evaluierbar.
 **Misconceptions:**
 - `M1`: **"'Soll gesund werden' ist ein Pflegeziel"** — Zu allgemein, nicht messbar, kein Zeitrahmen; SMART-Ziele beziehen sich auf konkret beeinflussbare Zustands-/Verhaltensänderungen.
@@ -274,7 +291,10 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Zunächst wurde der Pflegeprozess in vier Kernschritte eingeteilt"
+- Zitat: "von Helen Yura und Mary Walsh"
 - Zitat: "In der US-amerikanischen Literatur wird häufig ein Modell mit fünf Schritten verwendet, bei dem das Stellen der Pflegediagnose"
+- Zitat: "Fünf-Schritt-Modell nach Brobst"
+- Zitat: "Seit 2016 wurde in vielen Einrichtungen das sogenannte Strukturmodell zur Entbürokratisierung der Pflegedokumentation mit der Strukturierten Informationssammlung"
 - Zitat: "abgekürzt als PÄS-Format (Problem, Ätiologie [beeinflussende Faktoren] und Symptome"
 **Praxisfehler:** SIS wird mit dem NBA (Begutachtung Pflegegrad) verwechselt; PÄS/PESR-Format wird nicht zur Strukturierung genutzt.
 **Misconceptions:**

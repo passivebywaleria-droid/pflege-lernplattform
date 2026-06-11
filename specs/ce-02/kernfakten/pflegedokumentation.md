@@ -88,7 +88,8 @@
 - Zitat: "dem Handzeichen der Pflegenden dokumentiert werden" (Handzeichen)
 - Zitat: "um Eintragungen in den Pflegebericht, in" / "dem Tatsächliches festgehalten wird" (sachlich = nur Tatsächliches)
 - Zitat: "alle Beobachtungen möglichst zeitnah und" / "eindeutig, d. h., unverfälscht von anderen" (zeitnah + eindeutig/unverfälscht)
-- ⚠️ Quelle beschaffen (konkrete Primärquelle) — Teilaussagen "wertfrei (keine Persönlichkeitsurteile)" und "in der Ich-Form" sind im Korpus nicht verbatim belegt; Beleg z. B. BGB § 630f-Kommentierung / Dokumentations-Leitfaden beschaffen oder Teilaussage entschärfen.
+- Zitat: "Eintragungen in den Pflegebericht, in" / "dem Tatsächliches festgehalten wird" (sachlich = nur Tatsächliches, nicht Spekulation)
+- ⚠️ Quelle beschaffen (konkrete Primärquelle) — Teilaussagen "wertfrei (keine Persönlichkeitsurteile)" und "in der Ich-Form" sind im Korpus nicht verbatim belegt; Beleg z. B. BGB § 630f-Kommentierung / Dokumentations-Leitfaden beschaffen oder Teilaussage entschärfen. (Fachlich korrekt, aber laut hoher Latte nicht als belegt ausweisbar.)
 **Praxisfehler:** Persönlichkeitsurteile ("stur", "schwierig") und Passiv-Formulierungen ("wurde mobilisiert"), die verschleiern, wer gehandelt hat.
 
 **Misconceptions:**
@@ -108,8 +109,14 @@
 **Primärquelle:** (BMG-Strukturmodell, Beikirch & Roes 2014; Pflege heute Kap. 1.10.4)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Strukturierte Informationssammlung (SIS®) ist integraler Teil des Strukturmodells"
-- Zitat: "Krankheitsbezogene Anforderungen und Belastungen"
+- Zitat: "Informationssammlung (SIS®) ist integraler Teil des Strukturmodells" (integraler Teil)
+- Zitat: "Begutachtungsassessment des MDK im Rahmen der Feststellung der Pflegebedürftigkeit nach § 15 SGB XI" (Orientierung am MDK-Assessment, § 15 SGB XI)
+- Zitat: "Die sechs Gliederungspunkte sind:" (genau sechs Themenfelder)
+- Zitat: "Kognition und Kommunikation" (Themenfeld 1)
+- Zitat: "Mobilität und Bewegung" (Themenfeld 2)
+- Zitat: "Krankheitsbezogene Anforderungen und Belastungen" (Themenfeld 3)
+- Zitat: "Leben in sozialen Beziehungen" (Themenfeld 5)
+- Zitat: "Haushaltsführung und Wohnen." (Themenfeld 6)
 **Praxisfehler:** Die SIS wird für den ganzen Pflegeprozess gehalten, obwohl sie nur Schritt 1 (Informationssammlung) ist.
 
 **Misconceptions:**
@@ -128,7 +135,12 @@
 **Primärquelle:** (BMG-Strukturmodell; Pflege heute Kap. 1.10.4)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Strukturmodell zur Entbürokratisierung der Pflegedokumentation"
+- Zitat: "Strukturmodell zur Entbürokratisierung der Pflegedokumentation" (Name + Zweck Entbürokratisierung)
+- Zitat: "im Auftrag des Bundesministeriums für Gesundheit (BMG) entwickelt wurde" (Auftraggeber BMG)
+- Zitat: "Das Strukturmodell des BMG baut auf" (Strukturmodell-Grundlage)
+- Zitat: "einem vierphasigen Pflegeprozess auf" (vierphasiger Pflegeprozess)
+- Zitat: "hebt die Personenzentrierung" (Personenzentrierung)
+- ⚠️ Quelle beschaffen / entschärfen — die Jahresangabe "seit 2016" ist im Korpus nicht verbatim belegt (Pflege heute schreibt nur "bereits von vielen Pflegeeinrichtungen verwendet" ohne Jahr). Beleg z. B. BMG-Abschlussbericht Strukturmodell oder Jahresangabe entfernen. Die Bestandteile SIS / Maßnahmenplan / Berichteblatt / Evaluation sind in Pflege heute Kap. 1.10.4 fachlich beschrieben, aber nicht als geschlossene Vier-Teile-Liste verbatim — als Konzept-Aussage führen.
 **Praxisfehler:** "Bericht nur bei Abweichungen" wird als "tagelang gar nichts dokumentieren" missverstanden — durchgeführte Maßnahmen werden weiterhin quittiert.
 
 **Misconceptions:**
@@ -189,7 +201,8 @@
 **Primärquelle:** (DNQP Expertenstandard Entlassungsmanagement 2019)
 **Beleg:**
 - Quelle: `dnqp-standards-index/entlassungsmanagement.txt`
-- Zitat: "bietet den Mitarbeiter*innen der weiterversorgenden Einrichtung und den pflegenden Angehörigen eine Pflegeübergabe unter Einbeziehung der Patientin"
+- Zitat: "bietet den Mitarbeiter*innen der weiterversorgenden Einrichtung und den pflegenden Angehörigen eine Pflegeübergabe unter Einbeziehung der Patientin" (belegt: Patienteneinbeziehung bei Übergabe = Bedside-Prinzip)
+- ⚠️ Quelle beschaffen / entschärfen — die Drei-Formen-Klassifikation (mündlich / schriftlich / Bedside-Handover) und ihre Vor-/Nachteile sind im Korpus nicht verbatim belegt. "Bedside" kommt in Pflege heute nur als "Bedside-Test" (Transfusion, § 96050 ff.) vor — anderes Konzept. Beleg z. B. Pflegekommunikations-Lehrbuch / DBfK-Übergabe-Empfehlung beschaffen oder Aussage auf die belegte Patienteneinbeziehung reduzieren. (Fachlich korrekt, aber laut hoher Latte nicht als belegt ausweisbar.)
 **Praxisfehler:** Bedside-Handover wird aus Angst vor Schweigepflichtverletzung gemieden, statt im Mehrbettzimmer leise und sensibel durchgeführt zu werden.
 
 **Misconceptions:**
@@ -208,8 +221,10 @@
 **Primärquelle:** (Pflege heute Kap. 1.11; § 267 StGB; § 630f Abs. 1 BGB)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Authentizität: Das Dokumentationssystem ist eine Urkunde"
-- Zitat: "Eintragungen weder überkleben noch mit Korrekturstiften übermalen"
+- Zitat: "Authentizität: Das Dokumentationssystem ist eine Urkunde" (Urkundeneigenschaft)
+- Zitat: "Keine Eintragungen mit Bleistift vornehmen" (kein Bleistift)
+- Zitat: "Eintragungen weder überkleben noch" / "mit Korrekturstiften übermalen" (kein Überkleben/Korrekturstift)
+- ⚠️ Quelle beschaffen — die strafrechtliche Einordnung "Urkundenfälschung, § 267 StGB" sowie das konkrete Korrektur-Verfahren ("einmal durchstreichen, Original lesbar lassen, Korrektur daneben mit Datum + Handzeichen", "Rückdatieren unzulässig") sind im Korpus nicht verbatim belegt. Pflege heute belegt nur die Urkundeneigenschaft + Bleistift-/Korrekturstift-Verbot. Beleg: Gesetzestext § 267 StGB (Urkundenfälschung) + Dokumentations-Leitfaden beschaffen. (Fachlich korrekt; Urkunde→§ 267 ist juristisch zwingend, aber nicht aus dem lokalen Korpus zitierbar.)
 **Praxisfehler:** Tippex oder Überkleben "weil die Korrektur ja stimmt" — macht das Original unleserlich und wirkt wie Manipulation.
 
 **Misconceptions:**
@@ -228,8 +243,10 @@
 **Primärquelle:** (Pflege heute Kap. 1.11; § 630f BGB)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Alle Maßnahmen erst nach der Durchführung und niemals im Voraus als erledigt eintragen"
-- Zitat: "Die Dokumentation geschieht unverzüglich nach dem Ereignis"
+- Zitat: "Alle Maßnahmen erst nach der Durchführung und niemals im Voraus als erledigt eintragen" (keine Voraus-Dokumentation)
+- Zitat: "Die Dokumentation geschieht unverzüglich nach dem Ereignis" (zeitliche Nähe)
+- Zitat: "ohne schuldhaftes Zögern" (juristische Formulierung)
+- Zitat: "Wer gemessen hat, dokumentiert den gemessenen Wert" (Authentizität — selbst dokumentieren)
 **Praxisfehler:** Maßnahmen werden zu Schichtbeginn "auf Vorrat" als erledigt abgezeichnet — das ist eine Falschdokumentation.
 
 **Misconceptions:**
@@ -287,7 +304,11 @@
 **Primärquelle:** (Pflege heute Kap. 1.11)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "bringt die EDV-gestützte Dokumentation jedoch eine enorme Arbeitserleichterung und Sicherung der Dokumentationsqualität"
+- Zitat: "Viele Kliniken, Pflegeheime und Pflegedienste arbeiten nur noch mit elektronischen Patientenakten" (Verbreitung eDoku)
+- Zitat: "bringt die EDV-gestützte Dokumentation" / "jedoch eine enorme Arbeitserleichterung" / "und Sicherung der Dokumentationsqualität" (Aufwand zunächst, langfristig Erleichterung + Qualitätssicherung)
+- Zitat: "Im Unterschied zu handschriftlich erstellten Pflegedokumentationen sind alle" / "Anordnungen und Berichte gut lesbar" (lesbar)
+- Zitat: "können automatisch erstellt und ausgewertet werden" (Statistiken/Reports automatisch — durchsuchbar/auswertbar)
+- ⚠️ Quelle beschaffen / entschärfen — die Teilaussage "automatische Protokollierung jeder Änderung (wer, wann, was)" (Audit-Trail / revisionssichere Logs) ist im Korpus nicht verbatim belegt; Pflege heute belegt Lesbarkeit + automatische Auswertung, nicht die Änderungs-Protokollierung. Beleg z. B. § 630f Abs. 1 S. 2 BGB (Berichtigungs-/Änderungspflicht erkennbar) oder Hersteller-/GDPdU-Vorgaben beschaffen, oder Teilaussage entfernen. (Fachlich korrekt; revisionssichere eDoku ist Standard, aber nicht aus dem lokalen Korpus zitierbar.)
 **Praxisfehler:** Bei Systemausfall wird gar nicht dokumentiert, statt auf das Notfall-Papierformular auszuweichen.
 
 **Misconceptions:**

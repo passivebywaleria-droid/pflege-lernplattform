@@ -7,7 +7,7 @@
 | cluster | B (Mobilität & Prophylaxen) |
 | geschätzteUE | 3 |
 | wissensart | handlung |
-| quellen | Pflege heute Kap. 9.7 Kontrakturprophylaxe; Bundesärztekammer Neutral-Null-Methode (AAOS-Standard); MDS Pflege-Qualitätsbericht 2018; Gnass et al. 2010; Sackley et al. 2008; Bobath 1990; DNQP Expertenstandard Mobilität 2020 |
+| quellen | Pflege heute Kap. 9.7 Kontrakturprophylaxe + Kap. 29.4 (Funktionsstellung/Lagerung); I Care Pflege Kap. 17.8 (Thieme 2020); DNQP Expertenstandard Mobilität 2020 (kap-16); MDS Pflege-Qualitätsbericht 2018; Gnass et al. 2010; Sackley et al. 2008; Bobath 1990; ⚠️ noch zu beschaffen: Bundesärztekammer/AAOS Neutral-Null-Methode (Mess-Definition + gelenkspezifische Funktionsstellungswinkel) |
 | einträge | 9 |
 | erstellt | 2026-06-10 (Pipeline v9) |
 
@@ -42,11 +42,14 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (Pflege heute Kap. 9.7)
+**Primärquelle:** (Pflege heute Kap. 9.7; I Care Pflege Kap. 17.8 (Thieme 2020))
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Bei fehlender Bewegung kommt es zum Untergang von Muskelfasern und zum Ersatz durch Bindegewebe, Kollagen und Fett"
 - Zitat: "Jede Muskelkontraktion führt automatisch zur Dehnung des Gegenspielers"
+- Quelle: `icare-index/kap-57.md` (Teilaussage "4-14 Tage" + Bindegewebe um Gelenkkapsel)
+- Zitat: "Bereits nach 4–14 Tagen" ✅ MATCH
+- Zitat: "bildet sich elastisches Bindege-" ✅ MATCH (Forts.: "webe um die Gelenkkapsel (extraartikulär)")
 **Praxisfehler:** Warten, "bis es schlimm aussieht" — schon nach wenigen Tagen strikter Bettruhe kann ein Spitzfuß entstehen.
 **Transfer:** Wie ein Gummiband, das du nie dehnst, wird hart.
 
@@ -59,17 +62,23 @@
 
 ### F-03: Funktionsstellung & Neutral-Null-Methode
 
-**Fakt:** Die Neutral-Null-Methode (AAOS-Standard) definiert für jedes Gelenk eine Ausgangsstellung, von der aus Beweglichkeit in Grad gemessen wird. Die Funktionsstellung ist die davon abgeleitete pflegerisch-funktionell wichtigste Position — in ihr lässt sich ein steifes Gelenk noch am besten gebrauchen (Ellenbogen 90°, Knie gestreckt, oberes Sprunggelenk 90°, Schulter leicht abduziert + außenrotiert). Bei Positionierung werden Hohlräume unterpolstert, damit Muskeln Tonus abgeben.
+**Fakt:** Beim Positionieren ist auf die Funktionsstellung der Gelenke zu achten — wird sie ignoriert, fördert das Kontrakturen. Die Funktionsstellung ist die pflegerisch-funktionell wichtigste Position, in der sich ein steifes Gelenk noch am besten gebrauchen lässt; bei Hemiplegie gilt die Neutral-Null-Stellung nach Bobath. Bei Positionierung werden Hohlräume (Nacken, unterer Rücken) unterpolstert, damit Arme und Beine ihr Gewicht ablegen und die Muskeln Tonus abgeben. Beim Eingipsen werden die Gelenke in Funktionsstellung gebracht, um den Funktionsverlust durch die Ruhigstellung zu minimieren.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
 **Bloom-Potential:** 4 (Analysieren)
-**Primärquelle:** (Bundesärztekammer, Neutral-Null-Methode/AAOS-Standard; Bobath 1990)
+**Primärquelle:** (Pflege heute Kap. 9.7 + Kap. 29.4; I Care Pflege Kap. 17.8 (Thieme 2020); Bobath 1990)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Arme und Beine sollen ihr Gewicht ablegen können; Hohlräume z. B. im Nacken und unteren Rücken werden unterlagert"
-- Zitat: "Wechsel zwischen Beuge- und Streckstellung der Gelenke"
-**Praxisfehler:** Annahme "Funktionsstellung = so weit strecken wie möglich" — falsch, sie ist gelenk-spezifisch (Ellenbogen 90° gebeugt, Knie 0° gestreckt).
+- Zitat: "Arme und Beine sollen ihr Gewicht ablegen können; Hohlräume z. B. im Nacken und unteren Rücken werden unterlagert" ✅ MATCH
+- Zitat: "Wechsel zwischen Beuge- und Streckstellung der Gelenke" ✅ MATCH
+- Zitat: "werden in Funktionsstellung gebracht, um" ✅ MATCH (Kap. 29.4, Eingipsen — Forts.: "den Funktionsverlust durch die Ruhigstellung zu minimieren")
+- Quelle: `icare-index/kap-57.md` (Funktionsstellung-Ignorieren fördert Kontrakturen; Neutral-Null bei Hemiplegie)
+- Zitat: "tionsstellung der Gelenke" ✅ MATCH (im Quelltext zeilenumbrochen "Funk-\ntionsstellung der Gelenke ignoriert wird")
+- Zitat: "hemiplegischen Arm im Liegen eng am Körper bzw. im Sitzen in Neutral-Null-Stellung nach Bobath positionieren" ✅ MATCH
+**⚠️ Quelle beschaffen (AAOS / Bundesärztekammer Neutral-Null-Methode):** Die allgemeine Aussage „Neutral-Null-Methode (AAOS-Standard) definiert für jedes Gelenk eine Ausgangsstellung, von der aus in Grad gemessen wird" ist im Korpus NICHT verbatim belegbar — im Korpus erscheint Neutral-Null nur als Hemiplegie-Positionierung nach Bobath (I Care kap-57). Für die Mess-Definition Primärquelle beschaffen (AAOS/Bundesärztekammer) ODER Claim auf den belegten Hemiplegie-Bezug reduzieren.
+**⚠️ Quelle beschaffen (gelenkspezifische Funktionsstellungswinkel):** Die konkreten Winkel als Funktionsstellungs-Set (Ellenbogen 90°, Knie 0° gestreckt, oberes Sprunggelenk 90°, Schulter leicht abduziert + außenrotiert) sind im Korpus nicht als zusammenhängende, gelenk-zugeordnete Funktionsstellungs-Prosa belegbar. Im Korpus belegbar sind nur Einzel-Winkel in anderem Kontext: "Der Ellenbogen ist 90° gebeugt" (✅ MATCH, aber Kap. 29 Gilchrist-Verband, NICHT Funktionsstellung) und "90°-Winkel im Sprunggelenk (zur Spitzfußprophylaxe)" (✅ MATCH, Kap. 29 Schienen-Lagerung). Funktionsstellungs-Winkel je Gelenk → Standard-Quelle (AAOS / Lehrbuch Orthopädie) beschaffen ODER Winkel-Liste entfernen. „Schulter abduziert + außenrotiert" ist im Korpus gar nicht belegbar.
+**Praxisfehler:** Annahme "Funktionsstellung = so weit strecken wie möglich" — falsch, sie ist gelenk-spezifisch (Ellenbogen 90° gebeugt, Knie 0° gestreckt). ⚠️ gelenkspezifische Winkel siehe Quellen-Hinweis oben.
 **Transfer:** [Transfer] Wenn ein Gelenk versteifen müsste: in welcher Stellung kann der Patient noch essen, greifen, stehen?
 
 **Misconceptions:**
@@ -86,12 +95,14 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (Pflege heute Kap. 9.7)
+**Primärquelle:** (Pflege heute Kap. 9.7 + Kap. 29.4)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "eine häufige Kontraktur bei bettlägerigen und immobilen Patienten"
 - Zitat: "der Betroffene nur noch auf den Zehenspitzen gehen und den Fuß beim Gehen nicht mehr abrollen"
 - Zitat: "Vorfuß zum Fußrücken hin anbeugen"
+- Zitat (90°-Winkel Fuß–Unterschenkel): "90°-Winkel im Sprunggelenk (zur Spitzfußprophylaxe)" ✅ MATCH (Kap. 29, Schienen-Lagerung)
+- Zitat (Sitzen erzeugt 90°-Stellung): "eine 90°-Stellung einnehmen" ✅ MATCH (Forts. zu "weil seine Füße hier bei richtigem Bodenkontakt")
 **Praxisfehler:** Bei Intensiv- und bewusstseinsgetrübten Patienten reichen wenige Tage Bettruhe — daher täglich kontrollieren.
 **Transfer:** [Transfer] Die Bettdecke drückt den Fuß nach unten — wie ein dauerhafter "Zehenspitzenstand" im Liegen.
 
@@ -109,12 +120,16 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Bloom-Potential:** 2 (Verstehen)
-**Primärquelle:** (Pflege heute Kap. 9.7; Gnass et al. 2010; MDS 2018; Sackley et al. 2008)
+**Primärquelle:** (Pflege heute Kap. 9.7; I Care Pflege Kap. 17.8 (Thieme 2020); Gnass et al. 2010; MDS 2018; Sackley et al. 2008)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Entstehung von Kontrakturen ist multifaktoriell bedingt"
 - Zitat: "Erkrankungen des Nervensystems führen häufig zu Kontrakturen"
 - Zitat: "Bei chronischen Schmerzen nehmen Patienten häufig eine Schonhaltung ein"
+- Quelle: `icare-index/kap-57.md` (Prävalenzzahlen — pro Teilaussage belegt)
+- Zitat: "leiden 15–70 % der älteren Krankenhauspatien-" ✅ MATCH (Gnass et al. 2010; Forts.: "ten in Deutschland unter Kontrakturen")
+- Zitat: "59,1 % der älteren pflegebedürftigen Menschen" ✅ MATCH (MDS 2018; im Quelltext: "Im ambulanten Be-" / "reich sind 59,1 % ...")
+- Zitat: "Bei Schlaganfallbetroﬀenen tritt eine Kontraktur häufiger" ✅ MATCH (Sackley et al. 2008; Forts.: "auf als ein Sturz")
 **Praxisfehler:** Annahme "nur bewegungsunfähige Patienten brauchen Prophylaxe" — schon eine Reduktion des gewohnten Bewegungsradius reicht.
 **Transfer:** [Transfer] Wer früher spazieren ging und jetzt nur noch sitzt, ist bereits gefährdet — weniger Bewegung als früher = Risiko.
 
@@ -132,11 +147,19 @@
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Assessment
 **Bloom-Potential:** 4 (Analysieren)
-**Primärquelle:** (Pflege heute Kap. 9.7; DNQP Expertenstandard Mobilität 2020)
+**Primärquelle:** (Pflege heute Kap. 9.7; I Care Pflege Kap. 17.8 (Thieme 2020); DNQP Expertenstandard Mobilität 2020)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Risikoerkennung, Maßnahmenplanung, Durchführung und Evaluation sind Bestandteile"
 - Zitat: "lässt eine beginnende Bewegungseinschränkung rechtzeitig erkennen"
+- Quelle: `icare-index/kap-57.md` (kein Einzelinstrument; MOTPA + EBoMo als Mobilitätsassessment-Items)
+- Zitat: "Spezielle Instrumente zur Feststellung eines Kontrakturrisi-" ✅ MATCH (Forts.: "kos sind bisher nicht bekannt")
+- Zitat: "MOTPA von Brach et al. (2006)" ✅ MATCH
+- Zitat: "EBoMo von Zegelin u. Reuther" ✅ MATCH (Forts.: "(2007) für das Pflegeheim")
+- Quelle: `expertenstandards-index/kap-16.md` (DNQP Mobilität 2020 — Barthel + TUG + EBoMo benannte Instrumente)
+- Zitat: "Barthel-Index (Anhang 6)" ✅ MATCH (komplexes Instrument)
+- Zitat: "Timed-Up-and-Go-Test TUG" ✅ MATCH (spezifisches Instrument)
+- Zitat: "Erfassungsbogen Mobilität EBoMo" ✅ MATCH
 **Praxisfehler:** Das Risiko nur einmal bei Aufnahme erheben — es verändert sich und muss bei Verschlechterung oder Verbesserung neu eingeschätzt werden.
 **Transfer:** [Transfer] Wie ein Arzt nicht nur einen Wert misst, sondern jedes Gelenk einzeln im Verlauf beobachtet.
 
@@ -177,12 +200,19 @@
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Entscheidung
 **Bloom-Potential:** 5 (Bewerten)
-**Primärquelle:** (Pflege heute Kap. 9.7; Bobath 1990)
+**Primärquelle:** (Pflege heute Kap. 9.7; I Care Pflege Kap. 17.8 (Thieme 2020); Bobath 1990)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Passive Bewegungsübungen werden ohne aktive Mitarbeit des Patienten ausgeführt"
 - Zitat: "langsam und unter leichtem Zug"
 - Zitat: "Aktive, passive bzw. assistive Bewegungsübungen"
+- Zitat (Indikation passiv): "Passive Bewegungsübungen werden bei" ✅ MATCH (Forts.: "bewusstlosen, komatösen, gelähmten oder im Allgemeinzustand sehr reduzierten Patienten angewendet")
+- Zitat (Indikation assistiv): "Bei assistiven Bewegungsübungen hilft" ✅ MATCH (Forts.: "der Patient aktiv bei der Durchführung mit, die Pflegende führt und unterstützt")
+- Zitat (Indikation aktiv): "Aktive Bewegungsübungen kann der Patient selbstständig ohne fremdes Zutun ausführen" ✅ MATCH
+- Quelle: `icare-index/kap-57.md` (oberstes Gebot Bewegung — jedes Gelenk durchbewegen)
+- Zitat: "Gelenk, das nicht aus medizinischen Gründen ruhiggestellt" ✅ MATCH (im Quelltext zeilenumbrochen "Jedes\nGelenk, das nicht aus medizinischen Gründen ruhiggestellt\nsein muss, aktiv oder passiv durchbewegen")
+- Zitat: "aktiv oder passiv durchbewegen" ✅ MATCH
+**⚠️ Quelle beschaffen / Claim entschärfen ("ein Gelenk gleichzeitig"):** Die Teilaussage „ein Gelenk gleichzeitig" (jeweils nur ein Gelenk passiv bewegen) ist im gesamten Korpus NICHT belegbar. Pflege heute belegt nur „Die jeweils gefährdeten Gelenke sollten langsam und unter leichtem Zug ... bewegt werden" (✅ MATCH), nicht „eines gleichzeitig". → Primärquelle beschaffen (z. B. Lehrbuch Bewegungsübungen) ODER Formulierung entfernen/auf „gezielt, langsam, ein gefährdetes Gelenk nach dem anderen" stützen, sofern Quelle das deckt.
 **Praxisfehler:** Bei Komapatienten nur einmal pro Woche durchbewegen — empfohlen sind mehrmals täglich, integriert in jede Lagerung und Waschung.
 **Transfer:** [Transfer] Du wählst die Bewegungsart wie das richtige Werkzeug — nach dem Zustand des Patienten.
 

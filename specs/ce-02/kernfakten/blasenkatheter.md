@@ -44,6 +44,11 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Es gibt drei verschiedene transurethrale Katheterarten"
+- Zitat: "Sie haben ein Lumen zur Urinableitung und ein zweites Lumen zur Blockung"
+- Zitat: "Sie haben zusätzlich ein drittes Lumen zur Flüssigkeitseinleitung"
+- Zitat: "Spitze nach Nélaton. Sie ist gerade, zylindrisch und hat eine abgerundete Spitze und wird in der Regel bei Frauen verwendet"
+- Zitat: "Spitze nach Tiemann. Sie ist gebogen und konisch (kegelig) dünn auslaufend, damit können die Harnröhrenkrümmungen und Engstellen der männlichen Harnröhre leichter passiert werden"
+- Zitat: "Suprapubischer Blasenkatheter"
 - Zitat: "intermittierende Selbstkatheterisierung, kurz: ISK"
 **Praxisfehler:** Verwechslung von Einmal- und Verweilkatheter — der Einmalkatheter kann nicht geblockt werden.
 
@@ -66,9 +71,11 @@
 - Zitat: "Für den Einmalkatheterismus werden Katheter aus PVC verwendet"
 - Zitat: "ist daher für die transurethrale und suprapubische Langzeitdrainage am besten geeignet"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Katheter zur Langzeitdrainage"
-- Zitat: "1 Charrière entspricht"
-- Zitat: "Übliche Katheterstärken bei Männern sind 14"
+- Zitat: "Katheter zur Langzeitdrainage (> 5 Tage, Dauerkatheter) bestehen aus Silikon"
+- Zitat: "(max. Verweildauer 4 Wochen)"
+- Zitat: "kann ein Silikon-Latex-Katheter gewählt werden (max. Verweildauer 1–2 Wochen)"
+- Zitat: "Charrière (1 Ch ≙ ⅓ mm Durchmesser)"
+- Zitat: "Übliche Katheterstärken bei Männern sind 14–18 Ch, bei Frauen 12–14 Ch und bei Kindern 8–10 Ch"
 **Praxisfehler:** Ch wird mit Zentimeter verwechselt oder ein zu dicker Katheter gewählt — erhöht Verletzungs- und Strikturrisiko.
 
 **Misconceptions:**
@@ -137,7 +144,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "große Schamlippen mit je einem Tupfer von der Symphyse zum Anus"
-- Zitat: "Füllen des Ballons mit 8"
+- Zitat: "Beim Legen eines Dauerkatheters den Katheter – nachdem der Urin fließt – noch etwas weiterschieben"
+- Zitat: "das anschließende Blocken (Füllen des Ballons mit 8–10 ml Aqua dest."
 **Praxisfehler:** Geblockt wird, sobald Urin fließt — der Ballon liegt dann noch in der Harnröhre (Verletzungsgefahr).
 
 **Misconceptions:**
@@ -157,8 +165,10 @@
 **Primärquelle:** (KRINKO 2015; EAUN 2021; Pflege heute Kap. 8.1.5)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "Bei geringem Widerstand nach"
-- Zitat: "zum Schutz vor einer Paraphimose"
+- Zitat: "Bei geringem Widerstand nach ca. 10 cm Penis senken und Katheter weiterschieben, bis Urin fließt"
+- Zitat: "Bei stärkerem Widerstand oder Schmerzen des Patienten Vorgang abbrechen"
+- Zitat: "Mann zum Schutz vor einer Paraphimose"
+- Zitat: "Vorhaut über die Eichel zurückschieben"
 **Praxisfehler:** Bei Widerstand wird Gewalt angewandt (Via-falsa-Gefahr) oder die Vorhaut wird nach der Anlage nicht reponiert (Paraphimose).
 
 **Misconceptions:**
@@ -265,15 +275,21 @@
 
 ### F-12: Komplikationen und tägliche Beobachtung
 
-**Fakt:** Mögliche Komplikationen des Dauerkatheters: Harnwegsinfektion, Via falsa (falscher Weg mit Blutung beim Legen), Harnröhrenstriktur, Inkrustation/Verstopfung, Paraphimose (Mann), Blutung. Daher beim liegenden Katheter auf Urinveränderungen (Farbe, Konzentration, Menge) und Beimengungen (Urethralsekret, Blut) achten und dokumentieren. Bei Blutung + ausbleibendem Urinfluss beim Legen Vorgang sofort abbrechen.
+**Fakt:** Mögliche Komplikationen des Dauerkatheters: Harnwegsinfektion, Harnröhrenstriktur, Inkrustation/Verstopfung, Paraphimose (Mann), Via falsa (falscher Weg mit Blutung beim Legen) und Blutung. Daher beim liegenden Katheter auf Urinveränderungen (Farbe, Konzentration, Menge) und Beimengungen (Urethralsekret, Blut) achten und dokumentieren. Bei Blutung + ausbleibendem Urinfluss beim Legen Vorgang sofort abbrechen.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Zusammenhang
 **Bloom-Potential:** 4
-**Primärquelle:** (AWMF-LL HWI 2017/2024; KRINKO 2015; Pflege heute Kap. 8.1.5)
+**Primärquelle:** (KRINKO 2015 — RKI; Pflege heute Kap. 8.1.5 / 33.8.2)
 **Beleg:**
+- Quelle: `leitlinien-volltext/rki-krinko-harnwegsinfektion.txt`
+- Zitat: "Der transurethrale Dauerkatheter ist somit der bedeutendste Risikofaktor für eine aszendierende Harnwegsinfektion"
+- Zitat: "Die Vermeidung von Harnröhrenstrikturen und subvesikalen Infektionen"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "oder am Katheter Inkrustationen sind"
+- Zitat: "Bei einer Paraphimose"
 - Zitat: "Auf Urinveränderungen (Farbe, Konzentration, Menge) und Beimengungen"
+- ⚠️ **Via falsa (Katheter):** Im lokalen Korpus nur im Magensonden-Kontext belegt (`pflege-heute.txt`: "Via falsa („falscher Weg")"), NICHT katheterspezifisch. Teilaussage „Via falsa beim Katheterlegen" → ⚠️ Quelle beschaffen (EAUN 2021 Catheterisation / urologisches Standardwerk), bis dahin nicht maschinell verifizierbar.
 **Praxisfehler:** Rote Verfärbung wird als "normal nach dem Legen" abgetan statt beobachtet und dokumentiert.
 
 **Misconceptions:**
