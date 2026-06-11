@@ -10,7 +10,7 @@
 | quellen | I Care Pflege Kap. 17 (Prophylaxen), Kap. 15 (Mobilisation/Positionierung) |
 | einträge | 16 |
 | erstellt | 2026-04-19 |
-| grounding | 2026-06-11 F-06 pädiatrische Prädilektionsstellen: Hinterkopf bei Neugeborenen/kleinen Kindern durch kinderkrankenpflege-volltext verbatim belegt; „Nasenscheidewand"-Claim korrigiert zu „Nasenrücken" (nur Nasenrücken im Korpus belegbar) |
+| grounding | 2026-06-11 (Quer-Korpus-Welle): ALLE ⚠️ aufgelöst. F-06 Hinterkopf (Kinderkrankenpflege) belegt + „Nasenscheidewand"→„Nasenrücken" korrigiert. F-08 Braden-6-Domänen jetzt über Braden-Skala-Anhang in expertenstandards-gebrauchsanleitung-volltext verbatim belegt (Sensorisches Empfindungsvermögen, Reibung+Scherkräfte, Ernährung, Mobilität, Aktivität, Feuchtigkeit + Risiko-Punktelogik) — Braden&Bergstrom-1987-Originalarbeit nicht mehr nötig. F-16 Behandlungskosten 28.450–64.010 Euro + 10 Tage Verweildauer in icare-pflege-volltext verbatim belegt (Quellen Chan 2013 + Theisen 2012). |
 
 ---
 
@@ -109,7 +109,7 @@
 
 ### F-06: Prädilektionsstellen — Wo entsteht ein Dekubitus?
 
-**Fakt:** Besonders gefährdet sind Körperstellen, an denen Knochen dicht unter der Haut liegen und wenig Fettpolster schützt. Bei Erwachsenen sind Kreuzbein/Steißbein und Fersen die häufigsten Stellen. Weitere gefährdete Bereiche: Trochanter (großer Rollhügel), Sitzbein, Knöchel, Schulterblätter, Ellenbogen, Hinterkopf. Die gefährdeten Stellen ändern sich je nach Lageposition: Rückenlage belastet Kreuz-/Steißbein und Fersen, Seitenlage den Trochanter major, Sitzen die Sitzbeinhöcker. Bei Neugeborenen und Kleinkindern ist in Rückenlage der Hinterkopf die wichtigste Prädilektionsstelle. Bei Kindern mit nicht-invasiver Beatmung (NIV/CPAP) können Druckstellen am Nasenrücken durch die Maske entstehen. ⚠️ Teilweise aufgelöst: Der Hinterkopf bei Neugeborenen/kleinen Kindern ist jetzt verbatim durch Hoehl/Kullick Kinderkrankenpflege belegt (s. Beleg). Nicht belegt: Die ursprüngliche Formulierung „Nasenscheidewand" — der Korpus liefert nur „Nasenrücken" (bei NIV-Masken), nicht „Nasenscheidewand". Die Claim-Formulierung wurde auf „Nasenrücken" korrigiert.
+**Fakt:** Besonders gefährdet sind Körperstellen, an denen Knochen dicht unter der Haut liegen und wenig Fettpolster schützt. Bei Erwachsenen sind Kreuzbein/Steißbein und Fersen die häufigsten Stellen. Weitere gefährdete Bereiche: Trochanter (großer Rollhügel), Sitzbein, Knöchel, Schulterblätter, Ellenbogen, Hinterkopf. Die gefährdeten Stellen ändern sich je nach Lageposition: Rückenlage belastet Kreuz-/Steißbein und Fersen, Seitenlage den Trochanter major, Sitzen die Sitzbeinhöcker. Bei Neugeborenen und Kleinkindern ist in Rückenlage der Hinterkopf die wichtigste Prädilektionsstelle. Bei Kindern mit nicht-invasiver Beatmung (NIV/CPAP) können Druckstellen am Nasenrücken durch die Maske entstehen. ✅ AUFGELÖST + Sachkorrektur (2026-06-11): Der Hinterkopf bei Neugeborenen/kleinen Kindern ist verbatim durch Hoehl/Kullick Kinderkrankenpflege belegt (s. Beleg). Die ursprüngliche Formulierung „Nasenscheidewand" war nicht belegbar — der Korpus liefert nur „Nasenrücken" (bei NIV-Masken); die Claim-Formulierung wurde entsprechend auf „Nasenrücken" korrigiert.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
@@ -150,7 +150,7 @@
 
 ### F-08: Braden-Skala — Standardisiertes Risikoassessment
 
-**Fakt:** Die Braden-Skala ist eines der etablierten Instrumente zur Einschätzung des Dekubitusrisikos bei Erwachsenen (neben Norton- und Waterlow-Skala). Belegt ist die Kern-Aussage der EPUAP/NPIAP-Leitlinie (2019): Ein Risiko-Assessment-Instrument soll durch die Beurteilung zusätzlicher Risikofaktoren ergänzt und das Ergebnis mit klinischem Urteil interpretiert werden — die Skala ist Hilfsmittel, kein Ersatz für die fachliche Einschätzung. Der DNQP betont ebenso, dass keine Skala allein die klinische Einschätzung der Pflegefachkraft ersetzt. Dass die Braden-Skala das *häufig verwendete* Instrument zur Erfassung des Dekubitusrisikos ist (mit Braden-Q für Kinder), ist jetzt durch I Care Pflege verbatim belegt (s. Beleg). ⚠️ TEILWEISE OFFEN (Braden & Bergstrom 1987): Dass die Skala genau *sechs Bereiche* (Sensorisches Empfinden, Feuchtigkeit, Aktivität, Mobilität, Ernährung, Reibung/Scherkräfte) mit der genannten Punktelogik erfasst, ist weiterhin in keinem lokalen Korpus (Pflege heute, DNQP, EPUAP, I Care Pflege) als Aufzählung der sechs Domänen belegbar — dafür wäre die Skalen-Originalarbeit (Braden & Bergstrom 1987) zu beschaffen. Die Formulierung „am häufigsten eingesetzt" auf „häufig verwendet" zurücknehmen (Korpus belegt nur „häufig verwendet").
+**Fakt:** Die Braden-Skala ist eines der etablierten Instrumente zur Einschätzung des Dekubitusrisikos bei Erwachsenen (neben Norton- und Waterlow-Skala). Belegt ist die Kern-Aussage der EPUAP/NPIAP-Leitlinie (2019): Ein Risiko-Assessment-Instrument soll durch die Beurteilung zusätzlicher Risikofaktoren ergänzt und das Ergebnis mit klinischem Urteil interpretiert werden — die Skala ist Hilfsmittel, kein Ersatz für die fachliche Einschätzung. Der DNQP betont ebenso, dass keine Skala allein die klinische Einschätzung der Pflegefachkraft ersetzt. Dass die Braden-Skala das *häufig verwendete* Instrument zur Erfassung des Dekubitusrisikos ist (mit Braden-Q für Kinder), ist durch I Care Pflege verbatim belegt (s. Beleg). ✅ AUFGELÖST (2026-06-11, Quer-Korpus): Dass die Braden-Skala genau *sechs Bereiche* (Sensorisches Empfindungsvermögen, Feuchtigkeit, Aktivität, Mobilität, Ernährung, Reibung und Scherkräfte) erfasst, ist jetzt über den vollständigen Braden-Skala-Anhang in „Expertenstandards in der Pflege — eine Gebrauchsanleitung" verbatim belegbar (s. Beleg): die Domänen-Überschriften „Sensorisches Empfindungsvermögen" und „Reibung und Scherkräfte" sowie die vier weiteren Domänen (Ernährung, Mobilität, Aktivität, Feuchtigkeit) sind im Anhang einzeln aufgeführt; die Risiko-Punktelogik (geringes/mittleres/hohes/sehr hohes Risiko) ist ebenfalls belegt. Die Skalen-Originalarbeit (Braden & Bergstrom 1987) ist damit nicht mehr nötig. Formulierung „am häufigsten eingesetzt" bleibt auf „häufig verwendet" zurückgenommen (Korpus belegt nur „häufig verwendet").
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
@@ -164,6 +164,15 @@
 - Zitat: "Interpret the assessment outcomes using clinical judgment"
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "Für pflegerisch relevante Risiken, etwa das Dekubitusrisiko, wurden verschiedene Skalen entwickelt. Häufig verwendet wird die Braden-Skala, die mit der Braden-Q-Skala auch für Kinder angewendet werden kann." — Braden als häufig verwendetes Risikoassessment-Instrument (+ Braden-Q für Kinder) belegt
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Anhang 2 Braden Skala" — vollständiger Braden-Skala-Anhang im Korpus
+- Zitat: "Sensorisches Empfindungsvermögen" — Braden-Domäne 1 (Wahrnehmung)
+- Zitat: "Reibung und Scherkräfte" — Braden-Domäne 6 (Reibung und Scherkräfte)
+- Zitat: "Adäquate Ernährung" — Braden-Domäne Ernährung (Ausprägung im Anhang)
+- Zitat: "Mobilität gering eingeschränkt" — Braden-Domäne Mobilität (Ausprägung im Anhang)
+- Zitat: "Geht regelmäßig" — Braden-Domäne Aktivität (Ausprägung im Anhang)
+- Zitat: "Selten feucht" — Braden-Domäne Feuchtigkeit (Ausprägung im Anhang)
+- Zitat: "geringes Risiko = 16" — Braden-Risiko-Punktelogik (geringes/mittleres/hohes/sehr hohes Risiko)
 **Praxisfehler:** Schüler verlassen sich zu sehr auf den Zahlenwert der Skala und vergessen die klinische Gesamtbeurteilung. Ein Braden-Wert von 18 bedeutet nicht automatisch "kein Risiko" — wenn der Patient gerade von einer 6-stündigen OP kommt, kann sich die Situation in Stunden ändern.
 
 ---
@@ -284,12 +293,15 @@
 
 ### F-16: Komplikationen — Was passiert ohne Prophylaxe?
 
-**Fakt:** Wird ein Dekubitus nicht verhindert oder zu spät erkannt, drohen schwerwiegende Folgen. Der Dekubitus ist eine der am meisten gefürchteten Komplikationen längerer Bewegungsarmut. Für den Betroffenen bedeutet ein fortgeschrittener Dekubitus starke Schmerzen, Wundinfektionen bis hin zur Sepsis, monatelange Wundbehandlung und erhebliche Einschränkung der Lebensqualität. Bei Kategorie III und IV sind operative Eingriffe (plastische Deckung) oft unvermeidlich. Besonders schwerwiegend: ein Dekubitus ist ein anerkannter Qualitätsindikator — sein Auftreten kann auf pflegerische Mängel hinweisen und haftungsrechtliche Konsequenzen haben. ⚠️ Quelle beschaffen (Theisen et al. 2012 / aktuelle Gesundheitsökonomie): Die konkreten Zahlen — Behandlungskosten 28.000–64.000 Euro pro im Krankenhaus entstandenem Dekubitus und durchschnittlich +10 Tage Verweildauer — sind im vorliegenden Korpus (Pflege heute, DNQP-Auszug, EPUAP, I Care) nicht belegbar. Bis zur Beschaffung der Primärquelle dürfen diese Zahlen nicht als belegt im Schüler-Content erscheinen.
+**Fakt:** Wird ein Dekubitus nicht verhindert oder zu spät erkannt, drohen schwerwiegende Folgen. Der Dekubitus ist eine der am meisten gefürchteten Komplikationen längerer Bewegungsarmut. Für den Betroffenen bedeutet ein fortgeschrittener Dekubitus starke Schmerzen, Wundinfektionen bis hin zur Sepsis, monatelange Wundbehandlung und erhebliche Einschränkung der Lebensqualität. Bei Kategorie III und IV sind operative Eingriffe (plastische Deckung) oft unvermeidlich. Besonders schwerwiegend: ein Dekubitus ist ein anerkannter Qualitätsindikator — sein Auftreten kann auf pflegerische Mängel hinweisen und haftungsrechtliche Konsequenzen haben. Die Behandlung eines im Krankenhaus entstandenen Dekubitus kostet zwischen 28.450 und 64.010 Euro (bis zu 9-mal höhere Kosten als bei einem „mitgebrachten" Dekubitus); zusätzlich verlängert sich die Verweildauer im Krankenhaus um durchschnittlich 10 Tage. ✅ AUFGELÖST (2026-06-11, Quer-Korpus): Die zuvor als „nicht belegbar" markierten Kosten-/Verweildauer-Zahlen sind in I Care Pflege (Kap. Dekubitusprophylaxe) verbatim enthalten (s. Beleg) — frühere Wellen prüften nur die schmaleren DNQP/Pflege-heute/EPUAP-Auszüge. I Care nennt als Primärquellen Chan et al. 2013 (Kosten) und Theisen et al. 2012 (Verweildauer).
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Komplikation
-**Primärquelle:** (DNQP, 2017 — Bedeutung/Qualitätsindikator; für Kosten-/Verweildauer-Zahlen: Theisen et al., 2012 — zu beschaffen)
+**Primärquelle:** (DNQP, 2017 — Bedeutung/Qualitätsindikator; I Care Pflege Kap. Dekubitusprophylaxe — Kosten/Verweildauer mit Quellen Chan et al. 2013 + Theisen et al. 2012)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Der Dekubitus ist eine der am meisten gefürchteten Komplikationen längerer Bewegungsarmut"
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Die Behandlung eines im Krankenhaus entstandenen Dekubitus kostet zwischen 28 450 und 64 010 Euro." — Behandlungskosten 28.450–64.010 Euro pro nosokomialem Dekubitus
+- Zitat: "verlängert sich die Verweildauer im Krankenhaus um durchschnittlich 10 Tage" — +10 Tage Verweildauer (Theisen et al. 2012)
 **Transfer:** [Transfer] Ein Dekubitus ist wie ein Loch im Dach: Je länger man wartet, desto teurer und aufwendiger wird die Reparatur. Früh erkannt (Kategorie I) ist es eine kleine Stelle — übersehen kann es bis auf den Knochen gehen.

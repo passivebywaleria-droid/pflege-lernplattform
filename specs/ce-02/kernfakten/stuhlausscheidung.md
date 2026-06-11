@@ -10,7 +10,7 @@
 | quellen | Pflege heute 7. Aufl. Kap. 8.2 Stuhl / 24.2.6 Obstipation / 8.2.6 Enterostoma (Korpus-Primärquelle, verbatim belegt); I Care Pflege (verbatim: paradoxe Diarrhö/Koprostase, OIC „fast 90 %"); I Care Krankheitslehre (verbatim: Diarrhö-Def > 250 g, Mechanismus-Klassen sekretorisch/exsudativ, Loperamid-Kontraindikation Ileus, C.-difficile-Händewaschen); zu beschaffen für Detail-Zahlen: Heaton/Lewis Bristol Stool Scale 1997, Rom-IV-Kriterien, AWMF S2k Chronische Obstipation 2022, FG SKM Handlungsempfehlungen Stomapflege 2023, DGE-Referenzwert Ballaststoffe |
 | einträge | 14 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md) |
-| grounding | 2026-06-10 Dozentin A — auf STÜTZT gehoben gegen pflege-heute.txt; ungedeckte Detail-Zahlen mit ⚠️ markiert (R3), nicht kaschiert; 2026-06-11 F-03 geruchlos durch kinderkrankenpflege-volltext verbatim belegt; 2026-06-11 Welle 3 (icare-pflege + icare-krankheitslehre Volltext erschlossen): 4 ⚠️ aufgelöst — F-04 Diarrhö > 250 g (krankheitslehre verbatim), F-05 Mechanismus-Klassen sekretorisch/entzündlich-exsudativ + C.-difficile-Händewaschen (krankheitslehre verbatim), F-07 paradoxe Diarrhö/Koprostase-Mechanismus (icare-pflege verbatim) + Loperamid-Kontraindikation Ileus (krankheitslehre verbatim), F-08 OIC „fast 90 %" (icare-pflege verbatim). Verbleibende ⚠️: F-02 Bristol-Skala (im gesamten Korpus 0 Treffer), F-06 Rom-IV, F-09 Ballaststoffe 30 g/d, F-11 Flatulenz > 20×/d, F-13/F-14 Stoma-Detail-Zahlen (qualitativ belegt, exakte Zahlen nicht), F-05 osmotische/motile Diarrhö-Kategorie · geprüft 2026-06-11 · Nachprüfung 2026-06-11 (Welle): F-14 qualitatives Prinzip „Basisplatte exakt auf Stomamaße zuschneiden" zusätzlich durch I Care Pflege ACHTUNG-Box verbatim belegt (exakte mm-Toleranz/Tragezeit bleiben offen); Re-Grep bestätigt Bristol/Rom-IV/gastrokolisch/„Ballaststoffe 30 g"/osmotisch-motile-Diarrhö-Kategorie = weiterhin 0 Treffer im gesamten Korpus → diese ⚠️ ehrlich offen |
+| grounding | 2026-06-10 Dozentin A — auf STÜTZT gehoben gegen pflege-heute.txt; ungedeckte Detail-Zahlen mit ⚠️ markiert (R3), nicht kaschiert; 2026-06-11 F-03 geruchlos durch kinderkrankenpflege-volltext verbatim belegt; 2026-06-11 Welle 3 (icare-pflege + icare-krankheitslehre Volltext erschlossen): 4 ⚠️ aufgelöst — F-04 Diarrhö > 250 g (krankheitslehre verbatim), F-05 Mechanismus-Klassen sekretorisch/entzündlich-exsudativ + C.-difficile-Händewaschen (krankheitslehre verbatim), F-07 paradoxe Diarrhö/Koprostase-Mechanismus (icare-pflege verbatim) + Loperamid-Kontraindikation Ileus (krankheitslehre verbatim), F-08 OIC „fast 90 %" (icare-pflege verbatim). Verbleibende ⚠️: F-02 Bristol-Skala (im gesamten Korpus 0 Treffer), F-06 Rom-IV, F-09 Ballaststoffe 30 g/d, F-11 Flatulenz > 20×/d, F-13/F-14 Stoma-Detail-Zahlen (qualitativ belegt, exakte Zahlen nicht), F-05 osmotische/motile Diarrhö-Kategorie · geprüft 2026-06-11 · Nachprüfung 2026-06-11 (Welle): F-14 qualitatives Prinzip „Basisplatte exakt auf Stomamaße zuschneiden" zusätzlich durch I Care Pflege ACHTUNG-Box verbatim belegt (exakte mm-Toleranz/Tragezeit bleiben offen); Re-Grep bestätigt Bristol/Rom-IV/gastrokolisch/„Ballaststoffe 30 g"/osmotisch-motile-Diarrhö-Kategorie = weiterhin 0 Treffer im gesamten Korpus → diese ⚠️ ehrlich offen · Welle 4 (2026-06-11, Quer-Korpus-Grep über alle 19 Volltext-Korpora — neuer Ansatz statt nur I Care): 4 ⚠️ teil-/voll aufgelöst — F-02 Bristol-Stuhlformen-Skala-Name + Typ-1–2-→-Obstipation via nanda-pflegediagnosen verbatim (volle 7-Typen-Tabelle bleibt offen); F-05 Begriff+Mechanismus „osmotische Diarrhö" via pflege-heute verbatim (motil bleibt offen); F-09 DGE-Richtwert Ballaststoffe ≥ 30 g/Tag via dge-referenzwerte verbatim + gastrokolischer Reflex via kinderkrankenpflege verbatim; F-13 Ileostomie-Dehydratationsgefahr (icare-pflege) + Kolostomie-Ausscheidungsverzögerung (paetz-chirurgie) verbatim (exakte Litermengen bleiben offen). Korpusweit weiterhin 0: Rom-IV, Flatulenz-Tagesgrenze, motile Diarrhö/Hyperthyreose, Suppositorium-Einführrichtung, exakte Stoma-mm/Tragezeit → diese ⚠️ ehrlich offen |
 
 ---
 
@@ -53,7 +53,10 @@
 **Wissensart:** Assessment
 **Bloom-Potential:** 3 (Anwenden)
 **Primärquelle:** (Heaton K.W., Lewis S.J., Bristol Stool Scale, 1997)
-**Beleg:** ⚠️ Quelle beschaffen (Heaton/Lewis 1997, Scand. J. Gastroenterol.) — Begriff "Bristol" in `pflege-heute-volltext/pflege-heute.txt` nicht enthalten
+**Beleg:**
+- Quelle: `nanda-pflegediagnosen-volltext/nanda-pflegediagnosen.txt`
+- Zitat: "Typ 1 oder 2 der Bristol-Stuhlformen-Skala" (NANDA-Diagnose Obstipation, Domäne 3 Ausscheidung/Klasse 2 Magen-Darm-Funktion, als bestimmendes Merkmal — belegt verbatim sowohl den Skalen-Namen „Bristol-Stuhlformen-Skala" als auch die Zuordnung Typ 1–2 = Obstipation)
+- ⚠️ Teil-Belegstatus: Der Skalen-Name „Bristol-Stuhlformen-Skala" und die Zuordnung Typ 1–2 → Obstipation sind über NANDA verbatim belegt. Die vollständige 7-Typen-Tabelle mit den Zwischenstufen (Typ 3–5 normal, Typ 4 Idealform, Typ 6–7 Diarrhö) sowie die Jahresangabe Heaton/Lewis 1997 sind korpusweit nicht verbatim — Originalquelle (Heaton/Lewis 1997, Scand. J. Gastroenterol.) für die exakte Typen-Stufung weiterhin beschaffen.
 
 **Misconceptions:**
 - `M1`: **"Typ 4 ist ein Zeichen für Durchfall"** — Typ 4 ist die Idealform (glatte Wurst, genau die Mitte). Typ 6-7 sind Diarrhö, Typ 1-2 sind Obstipation. Die Skala geht von hart (1) zu flüssig (7).
@@ -137,7 +140,9 @@
 - Zitat: "Es kommt zu Flüssigkeitsverlusten bis zu" (Fortsetzung: "20 l/Tag" — Cholera als sekretorische Diarrhö, belegt Reiswasserstuhl-Schweregrad)
 - Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
 - Zitat: "Händedesinfektion allein reicht nicht aus, da sporenbildende Bakterien mit" (Clostridioides difficile — Fortsetzung: "Händedesinfektionsmittel nur unzureichend abgetötet werden → vor der Händedesinfektion müssen die Hände gründlich gewaschen werden"; belegt verbatim: alkoholische Händedesinfektion wirkt nicht, mechanisches Waschen nötig)
-- ⚠️ Die Mechanismus-Klassen „osmotisch" (sistiert beim Fasten) und „motil" (Hyperthyreose) als eigene Kategorien sind im Korpus nicht als Diarrhö-Einteilung verbatim — I Care Krankheitslehre belegt sekretorisch + entzündlich-exsudativ + systemisch. Quelle für die vollständige Vier-Mechanismen-Klassifikation (osmotisch/sekretorisch/exsudativ/motil) weiterhin S3-Leitlinie Gastrointestinale Infektionen beschaffen.
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "ob eine osmotische Diarrhö vorliegen" (Fortsetzung: "könnte, bei der die Sondenkost im Darm osmotisch Wasser anzieht" — Kap. 7 enterale Ernährung/Komplikationen; belegt verbatim den Begriff „osmotische Diarrhö" UND ihren Mechanismus „zieht im Darm osmotisch Wasser an" = Stoffe ziehen Wasser passiv ins Darmlumen, M2)
+- ⚠️ Die Mechanismus-Klasse „motil" (Hyperthyreose) als eigene Diarrhö-Kategorie ist korpusweit nicht verbatim (Hyperthyreose-Diarrhö = 0 Treffer). Der Begriff „osmotische Diarrhö" und ihr Mechanismus sind jetzt via Pflege heute belegt; sekretorisch + entzündlich-exsudativ via I Care Krankheitslehre. Quelle für die vollständige Vier-Mechanismen-Klassifikation inkl. „motil" weiterhin S3-Leitlinie Gastrointestinale Infektionen beschaffen.
 
 **Misconceptions:**
 - `M1`: **"Bei allen Magen-Darm-Infekten hilft Handdesinfektionsmittel zum Schutz"** — Gefährlich bei Clostridioides difficile: die Sporen sind alkoholresistent, nur mechanische Reinigung mit Wasser und Seife entfernt sie.
@@ -160,7 +165,7 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Jede plötzlich einsetzende Obstipation"
 - Zitat: "ein Kolonkarzinom"
-- ⚠️ Detail „Rom-IV-Kriterien (2 von 6 Merkmalen über 3 Monate)" nicht im Korpus (Begriff „Rom" fehlt in `pflege-heute.txt`). Quelle beschaffen (Lacy et al., Rome IV / AWMF S2k Chronische Obstipation 2022) ODER aus Schüler-Content weglassen — Kerndefinition (< 3/Woche) ist belegt.
+- ⚠️ Detail „Rom-IV-Kriterien (2 von 6 Merkmalen über 3 Monate)" korpusweit 0 Treffer (Rom-IV/Rome-IV/Rom-Kriterien in keinem der 19 Volltext-Korpora). Quelle beschaffen (Lacy et al., Rome IV / AWMF S2k Chronische Obstipation 2022) ODER aus Schüler-Content weglassen — Kerndefinition (< 3/Woche) ist belegt.
 
 **Misconceptions:**
 - `M1`: **"Obstipation ist, wenn jemand weniger als 1× pro Tag Stuhlgang hat"** — Die Grenze liegt bei weniger als 3× pro Woche, nicht "täglich". Frequenz allein reicht nicht — auch Konsistenz und Pressen zählen.
@@ -239,7 +244,11 @@
 - Zitat: "die Zeit nach dem Aufstehen und nach"
 - Zitat: "von rechts unten nach links unten (im Uhrzeigersinn)"
 - Zitat: "Ein Glas zimmerwarmes Wasser morgens auf nüchternen"
-- ⚠️ Detail-Zahlen „Ballaststoffe 30 g/Tag", „Toilettentraining genau 20-30 Min nach dem Frühstück", „gastrokolischer Reflex am stärksten" nicht verbatim im Korpus. Quelle beschaffen (DGE-Referenzwert Ballaststoffe ≥ 30 g/d; AWMF S2k Chronische Obstipation 2022) ODER im Schüler-Content ohne die exakten Zahlen führen (Pflege heute: „nach dem Frühstück / nach den Mahlzeiten, da ist der Darm besonders aktiv").
+- Quelle: `dge-referenzwerte-volltext/dge-ballaststoffe.txt`
+- Zitat: "Richtwert für die Ballaststoffzufuhr" (Tabellen-Überschrift; die Spalte „g/Taga" enthält für alle Erwachsenen-Altersgruppen 19–<25 / 25–<51 / 51–<65 / 65 Jahre und älter sowie Schwangere den Zellenwert „≥ 30" — belegt den DGE-Richtwert ≥ 30 g Ballaststoffe pro Tag für Erwachsene)
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Der beste Zeitpunkt für die Stuhlentleerung ist nach dem Frühstück, da die Darmperistaltik durch die Füllung des Magens intensiviert wird (gastrokolischer Reflex)." (Hoehl/Kullick — belegt verbatim sowohl den optimalen Toilettenzeitpunkt „nach dem Frühstück" als auch den Mechanismus „gastrokolischer Reflex" als dessen Begründung)
+- ⚠️ Die exakte Minuten-Toleranz „genau 20-30 Min nach dem Frühstück" bleibt korpusweit unbelegt — Pflege heute/Kinderkrankenpflege belegen qualitativ „nach dem Frühstück, da ist der Darm besonders aktiv (gastrokolischer Reflex)". Der DGE-Richtwert ≥ 30 g/d und der gastrokolische Reflex sind nun verbatim gedeckt.
 
 **Misconceptions:**
 - `M1`: **"Bauchmassage muss gegen den Uhrzeigersinn gemacht werden"** — Anatomisch korrekt ist im Uhrzeigersinn: Colon ascendens → transversum → descendens → Sigmoid, entsprechend der Stuhlpassagerichtung.
@@ -292,7 +301,7 @@
 - Zitat: "Hülsenfrüchte, Zwiebeln oder Kohl"
 - Zitat: "Luftschlucken (Aerophagie)"
 - Zitat: "Kümmel, Pfefferminz, Fenchel"
-- ⚠️ Detail-Zahl „Flatulenz > 20×/Tag pathologisch" nicht im Korpus. Quelle beschaffen (gastroenterologische Fachliteratur) ODER aus Schüler-Content weglassen — Pflege heute definiert Flatulenz qualitativ, nicht über eine Tageszahl.
+- ⚠️ Detail-Zahl „Flatulenz > 20×/Tag pathologisch" korpusweit 0 Treffer (keine Tagesgrenze für Windabgänge in einem der 19 Korpora; die „20-mal"-Treffer betreffen unverwandte Themen — Epilepsie-Häufigkeit, Insulin-Schwenken, Faustübung). Quelle beschaffen (gastroenterologische Fachliteratur) ODER aus Schüler-Content weglassen — Pflege heute definiert Flatulenz qualitativ, nicht über eine Tageszahl.
 
 **Misconceptions:**
 - `M1`: **"Blähungen sind immer harmlos"** — Warnsignale: plötzlicher starker Meteorismus + Schmerzen + kein Wind-/Stuhlabgang → Ileus-Verdacht. Chronischer Meteorismus mit Gewichtsverlust → Abklärung.
@@ -349,7 +358,11 @@
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Patienten flache Linksseitenlage mit"
 - Zitat: "die Spülflüssigkeit fließt in Linksseitenlage anatomisch bedingt leichter in"
-- ⚠️ Detail-Werte „Kolostomie 1-2×/Tag", „Ileostomie Flüssigkeitsbedarf 2-3 l/Tag", „Suppositorium mit der abgerundeten Seite zuerst einführen" nicht verbatim im Korpus. Quelle beschaffen (FG SKM Handlungsempfehlungen Stomapflege 2023; Fachinfo/Pflegestandard rektale Applikation) ODER aus Schüler-Content weglassen.
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Bei Menschen mit einer Ileostomie muss postoperativ die Flüssigkeitszufuhr überwacht und an die große Ausscheidungsmenge angepasst werden. Sonst besteht die Gefahr einer Dehydratation" (I Care Pflege — belegt verbatim das qualitative Prinzip „erhöhter Flüssigkeitsbedarf/Dehydratationsgefahr bei Ileostomie", ohne exakte Litermenge)
+- Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`
+- Zitat: "Bei der Kolostomie kann es durchaus länger (2–3 Tage" (Fortsetzung: "postoperativ) dauern, bis eine Ausscheidung erfolgt" — Paetz Chirurgie; belegt den postop. Zeitverlauf bis zur ersten Kolostomie-Ausscheidung)
+- ⚠️ Die exakten Detail-Werte „Kolostomie 1-2×/Tag Stuhlfrequenz", „Ileostomie Flüssigkeitsbedarf 2-3 l/Tag" und „Suppositorium mit der abgerundeten Seite zuerst einführen" sind korpusweit nicht verbatim. Belegt sind nur die qualitativen Prinzipien (Ileostomie = hohe Ausscheidung/Dehydratationsgefahr via I Care Pflege; verzögerter Ausscheidungsbeginn bei Kolostomie via Paetz). Für die exakten Zahlen FG SKM Handlungsempfehlungen Stomapflege 2023 / Pflegestandard rektale Applikation beschaffen ODER aus Schüler-Content weglassen.
 
 **Misconceptions:**
 - `M1`: **"Ileostomie und Kolostomie sind das Gleiche — nur an verschiedenen Stellen"** — Ileostomie = Dünndarm, flüssiger Stuhl, hohe Ausscheidungsmengen, Hautreizung, Elektrolytverluste. Kolostomie = Dickdarm, Stuhl nach 8-14 Tagen breiig bis halbfest geformt. Völlig andere Versorgung.

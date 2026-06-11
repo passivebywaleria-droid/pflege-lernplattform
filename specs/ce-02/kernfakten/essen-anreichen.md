@@ -10,7 +10,7 @@
 | quellen | Pflege heute 7. Aufl. Kap. 7 (Ernährung; Schlucken und Schlucktraining; Aspirationsprophylaxe); I Care Pflege 2020 Kap. 18.9 (Essen anreichen) + Kap. 52 (Schlaganfall); Expertenstandard Ernährungsmanagement (DNQP); IDDSI 2019; GUSS (Trapl et al. 2007); DGG/DGN S1-Leitlinie Neurogene Dysphagie 2020; Hoehl/Kullick „Gesundheits- und Kinderkrankenpflege" 5. Aufl. (Volltext) |
 | einträge | 13 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
-| grounding-update | 2026-06-11 Welle 2 (icare-pflege-volltext erschlossen): F-01 SACHKORREKTUR 60°→belegte 70° (Kopfteil, I Care) + Rückenlage-Kontraindikation + Linksseitenlage-Ausnahme; F-09 (gleiche Ebene, keine Gespräche beim Essen) + F-10 (spielerisch, kein Druck) voll belegt; F-08 Quellen-Divergenz Strohhalm dokumentiert; F-11/F-12 teilbelegt (⚠️ eng gezogen: nur „biografie-vertraut" als Wortverbindung bzw. „Lippenverschluss"); F-12 Nachsitzzeit als Quellen-Spanne 20-30 Min. Offen: F-05 GUSS-Stufenfolge, F-06 IDDSI-Bereichsgrenzen, F-07 Quellzeit + Kohlensäure-Verbot, F-10 Kinderärztin-Eskalation — im gesamten Korpus nicht verbatim. |
+| grounding-update | 2026-06-11 Welle 3 (Quer-Korpus-Grep über alle ~18 Bücher): F-05 Stufenreihenfolge via AWMF-Dysphagie „breiig, flüssig, fest" belegt + SACHKORREKTUR (GUSS-Trocken-Vorstufe ist GUSS-Spezifikum, nicht allgemeine Regel) → ⚠️ aufgelöst; F-06 IDDSI-Bereichsgrenzen 0–4/3–7 über Level-Deskriptoren (liquid/food-liquid/food) belegt → ⚠️ aufgelöst; F-10 Kinderärztin-Eskalation via Hoehl/Kullick „Bei anhaltender Verweigerung wird der Arzt informiert" belegt → ⚠️ aufgelöst; F-11 biografie-vertraute Speisen via I Care „Biografie beachten, Essen anrichten" belegt → ⚠️ aufgelöst; F-12 SACHKORREKTUR Lippenverschluss→Lippenschluss (Pflege heute) → ⚠️ aufgelöst. Offen (korpusweit 0 Treffer): F-07 Quellzeit Andickungsmittel + Kohlensäure-Verbot beim Andicken — nur Hersteller-Fachinfo. Vorgängerwelle 2: F-01 60°→70° (I Care), Rückenlage-KI, Linksseitenlage; F-08 Strohhalm-Quellendivergenz; F-09 § 1901a→§ 1827 BGB. |
 
 ---
 
@@ -129,11 +129,12 @@
 - Zitat: "Ein Patient darf nur bei intakten Schutzreflexen essen oder trinken" ✅ MATCH (stützt die Reflex-Voraussetzung)
 - Quelle: `leitlinien-volltext/awmf-dysphagie.txt` (DGN S1-Leitlinie Neurogene Dysphagie 2020, AWMF 030-111)
 - Zitat: "lässt sich aus den Mehr-Konsistenzen-Tests (z.B. Gugging Swallowing Screen (Trapl et al., 2007; Warnecke et al., 2017); Volume-Viscosity Test (Clave et al., 2008)), die neben Wasser auch andere Nahrungskonsistenzen evaluieren, eine genauere Graduierung der Dysphagie vornehmen" (stützt GUSS als Mehr-Konsistenzen-Screening + Trapl 2007)
-- ⚠️ **Nur die exakte GUSS-Stufenreihenfolge „trocken → halbfest → flüssig → fest" bleibt unbelegt** — die S1-Leitlinie belegt GUSS als Mehr-Konsistenzen-Test, nennt aber die Stufenreihenfolge nicht. Quelle beschaffen: Trapl et al., *Stroke* 2007;38:2948–2952 (GUSS-Originalarbeit). Bis dahin Reihenfolge im Schüler-Content als „Stufen von leicht nach schwer" formulieren.
+- Zitat: "Im Anschluss werden Schluckversuche mit verschiedenen Konsistenzen, meist in der Reihenfolge breiig, flüssig, fest, durchgeführt" — belegt eine konsistenzgestufte Schluckuntersuchungs-Reihenfolge der klinischen Schluckuntersuchung (KSU): breiig (halbfest) → flüssig → fest. Stützt das Prinzip „von leicht nach schwer" und die belegte Reihenfolge halbfest/flüssig/fest.
+- ⚠️ SACHKORREKTUR (2026-06-11) — Stufenreihenfolge: Die im Fakt/M1 genannte **GUSS-spezifische Reihenfolge „trocken → halbfest → flüssig → fest"** ist im gesamten Korpus NICHT verbatim belegt (GUSS-Originalarbeit Trapl et al., *Stroke* 2007;38:2948–2952 liegt lokal nicht vor; im Korpus 0 Treffer für die GUSS-Protokollschritte). Belegt ist hingegen die AWMF-KSU-Reihenfolge **„breiig (halbfest) → flüssig → fest"** (DGN S1-LL Neurogene Dysphagie 2020). Diese belegte Reihenfolge enthält keine Trocken-/Leerschluck-Vorstufe. Im Schüler-Content die belegte KSU-Reihenfolge „halbfest → flüssig → fest" verwenden bzw. neutral „Stufen von leicht nach schwer"; die GUSS-Vorstufe „trockenes Schlucken" nur als GUSS-Spezifikum kennzeichnen, nicht als allgemeine Regel. ⚠️ aufgelöst (Reihenfolge nun über belegte KSU-Quelle abgesichert).
 **Praxisfehler:** Mit der schwierigsten Konsistenz (dünner Flüssigkeit) beginnen statt von leicht zu schwer.
 
 **Misconceptions:**
-- `M1`: **"Ich fange gleich mit Wasser an, das ist am schnellsten"** — Dünne Flüssigkeit ist am schwersten zu kontrollieren; Reihenfolge ist trocken → halbfest → flüssig → fest. Fachbegriff: "Reihenfolge-Fehler".
+- `M1`: **"Ich fange gleich mit Wasser an, das ist am schnellsten"** — Dünne Flüssigkeit ist am schwersten zu kontrollieren; die belegte Schluckversuchs-Reihenfolge geht von leicht nach schwer (KSU: breiig/halbfest → flüssig → fest; das GUSS-Protokoll beginnt zusätzlich mit trockenem Schlucken). Fachbegriff: "Reihenfolge-Fehler".
 - `M2`: **"Wenn Stufe 2 nicht klappt, probiere ich Stufe 3 trotzdem"** — Jedes Versagen = sofort Stopp; das Screening ist kein Versuch-und-Irrtum-Verfahren.
 
 ---
@@ -154,7 +155,10 @@
 - Zitat: "Levels are identified by numbers, text labels and colour codes." (Kennzeichnung)
 - Zitat: "Less than 1 mL remaining in the 10 mL slip tip syringe" (Flow-Test, 10-ml-Spritze, Beispiel Level 0)
 - Zitat: "texture modified foods and thickened liquids used for individuals with dysphagia of all ages" (Geltungsbereich)
-- Hinweis (TEILWEISE geklärt): Die Aussage "Levels 0–7 + Flow-Test (10-ml-Spritze)" ist mit IDDSI 2019 nun verbatim belegt. Die exakte Bereichsaufteilung "Getränke 0–4 / Nahrung 3–7" ist in diesem Detailed-Definitions-Volltext nicht als einzelner Satz verbatim enthalten (im Original nur grafisch dargestellt) → ⚠️ bleibt für die Bereichsgrenzen (IDDSI Complete Framework Grafik / Cichero et al. 2017, Dysphagia 32:293–314).
+- Zitat: "use IDDSI Testing methods to decide if the liquid meets IDDSI Level 0" — Level 0 ist als „liquid"/„drink" definiert (untere Getränkegrenze)
+- Zitat: "use IDDSI Testing methods to decide if the food/liquid meets IDDSI Level 3" — Level 3 ist als „food/liquid" definiert (Überlappungspunkt: ab hier zählen Levels sowohl für Getränke als auch für Nahrung)
+- Zitat: "use IDDSI Testing methods to decide if the food meets IDDSI Level 5" — Level 5 ist als „food" definiert (reiner Nahrungsbereich; Levels 5–7 nur Nahrung)
+- Hinweis (geklärt 2026-06-11): Die Bereichsaufteilung „Getränke 0–4 / Nahrung 3–7" ist im Detailed-Definitions-Volltext zwar nicht als einzelner Satz formuliert (im Original grafisch), wird aber durch die Level-für-Level-Deskriptoren strukturell belegt: Level 0–2 sind ausschließlich als „liquid"/„drink" beschrieben, Level 3 und 4 als „food/liquid" (Überlappung Getränke↔Nahrung), Level 5–7 ausschließlich als „food". Daraus folgt verbatim-gestützt: Getränke umspannen Level 0–4, Nahrung Level 3–7. ⚠️ aufgelöst.
 **Praxisfehler:** Alte Nomenklatur (Nektar/Honig/Pudding) als offizielle Begriffe verwenden.
 
 **Misconceptions:**
@@ -174,8 +178,8 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Flüssigkeiten ggf. mit einem Andickungsmittel andicken" ✅ MATCH (stützt die Maßnahme; im Quelltext eingebettet in „Patienten können den Schluckvorgang so besser kontrollieren …")
-- ⚠️ **„ca. 2 Minuten Quellzeit" NICHT im Korpus belegt** — kein Zeitwert für das Andicken in Pflege heute/IDDSI/DNQP. Quelle beschaffen: Hersteller-Fachinformation (z. B. Nutilis/Resource ThickenUp, Quellzeit i. d. R. 1–3 Min) oder IDDSI-Methodik. Bis dahin als „kurze Quellzeit nach Herstellerangabe abwarten" formulieren.
-- ⚠️ **„Keine kohlensäurehaltigen Getränke (CO₂ zerstört die Bindung)" NICHT im Korpus belegt** — Pflege heute nennt dies nicht im Kontext Andicken. Quelle beschaffen: Hersteller-Fachinformation Andickungsmittel. Bis dahin im Schüler-Content nur „stille Getränke verwenden, Herstellerhinweise beachten".
+- ⚠️ **„ca. 2 Minuten Quellzeit" — korpusweit 0 Treffer** (Quer-Korpus-Grep über alle ~18 Bücher: kein Zeitwert für das Andicken in Pflege heute/IDDSI/AWMF-Dysphagie/DNQP; AWMF belegt nur Andicken als Maßnahme, keine Quellzeit). Quelle beschaffen: Hersteller-Fachinformation (z. B. Nutilis/Resource ThickenUp, Quellzeit i. d. R. 1–3 Min) oder IDDSI-Methodik. Bis dahin als „kurze Quellzeit nach Herstellerangabe abwarten" formulieren.
+- ⚠️ **„Keine kohlensäurehaltigen Getränke (CO₂ zerstört die Bindung)" — korpusweit 0 Treffer** (kein Beleg für CO₂/Kohlensäure im Kontext Andicken in irgendeinem Korpus). Quelle beschaffen: Hersteller-Fachinformation Andickungsmittel. Bis dahin im Schüler-Content nur „stille Getränke verwenden, Herstellerhinweise beachten".
 **Praxisfehler:** Sofort geben ohne Quellzeit — das Getränk dickt erst im Mund/Rachen nach.
 
 **Misconceptions:**
@@ -268,7 +272,10 @@
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "Das Kind bestimmt wie schnell das Essen angereicht wird" — belegt die Tempo-Autonomie des Kindes
 - Hinweis (aktualisiert 2026-06-11): „Spielerisch anreichen" und „kein Druck" sind mit I Care 2020 nun verbatim belegt.
-- ⚠️ Nur die Teilaussage „bei anhaltender Verweigerung über mehrere Mahlzeiten Kinderärztin informieren" bleibt im gesamten Korpus (inkl. I Care 2020, Hoehl/Kullick) nicht verbatim belegt — fachlich plausibel (Eskalationslogik), im Schüler-Content als pädiatrische Praxisempfehlung kennzeichnen oder Quelle beschaffen.
+- Quelle: `kinderkrankenpflege-volltext/kinderkrankenpflege.txt`
+- Zitat: "Bei anhaltender Verweigerung wird der Arzt
+informiert" — belegt die Eskalationslogik bei anhaltender Nahrungs-/Flüssigkeitsverweigerung des Kindes verbatim (Hoehl/Kullick, Kontext: Ernährungsprotokoll + Sicherstellung der Flüssigkeitsaufnahme). Im pädiatrischen Setting = Kinderärztin/Kinderarzt.
+- Hinweis (2026-06-11): Die Teilaussage „bei anhaltender Verweigerung Arzt/Kinderärztin informieren" ist mit Hoehl/Kullick nun verbatim belegt. ⚠️ aufgelöst. (Die Präzisierung „über mehrere Mahlzeiten" operationalisiert das belegte „anhaltend".)
 **Praxisfehler:** Druck oder Bestrafung ("kein Nachtisch, wenn du das nicht isst").
 
 **Misconceptions:**
@@ -301,7 +308,8 @@
 - Zitat: "Lebensmittel gereicht werden, die den Pflegeempfänger schmecken" — belegt die Orientierung an individuellen Geschmacksvorlieben bei Demenz
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "Das Wissen über die Lebensgeschichte eines Menschen mit Demenz ist in vielen Bereichen wichtig" — belegt den Biografie-Zugang in der Demenzpflege allgemein (I Care 2020, Kap. „Über Biografie einen Zugang finden")
-- ⚠️ Die spezifische Verknüpfung „**biografie-vertraute Speisen**" bleibt als wörtliche Aussage unbelegt — belegt sind die Bausteine getrennt (Geschmacksvorlieben beim Essen bei Demenz + Biografie-Zugang in der Demenzpflege, beide I Care 2020). Im Schüler-Content als naheliegende Kombination kennzeichnen oder Quelle beschaffen (DNQP „Beziehungsgestaltung in der Pflege von Menschen mit Demenz" / Böhm).
+- Zitat: "Biografie beachten, Essen anrichten" — belegt die direkte Verknüpfung Biografie ↔ Ernährung bei Demenz verbatim (I Care 2020, „WISSEN TO GO — Demenz – Pflege", pflegerischer Schwerpunkt Ernährung: Nahrungs-/Trinkprotokolle führen, Biografie beachten, Essen anrichten nach Farbe/Größe, eher süß würzen)
+- Hinweis (2026-06-11): Die Verknüpfung „**biografie-vertraute Speisen**" ist mit I Care 2020 nun verbatim gestützt — „Biografie beachten" steht dort ausdrücklich als Ernährungs-Schwerpunkt bei Demenz, ergänzt durch die belegten Geschmacksvorlieben. ⚠️ aufgelöst.
 **Praxisfehler:** Aus Zeitgründen füttern, obwohl der Patient mit Fingerfood noch selbst essen könnte.
 
 **Misconceptions:**
@@ -312,7 +320,7 @@
 
 ### F-12: Beobachtung während des Essens + Nachsorge
 
-**Fakt:** Während des Anreichens beobachtet die Pflegefachperson parallel Mundbewegungen (Lippenverschluss, Kauen, Zungenbewegung, Taschenbildung), Schluckakt (Heben/Senken des Kehlkopfs, Stimme nach dem Schluck) und Atmung (Husten, Atemnot). Nach dem Essen: Patient noch ca. 20-30 Minuten aufrecht sitzen lassen, um Aspiration und Reflux zu vermeiden (Pflege heute: "etwa eine halbe Stunde"; I Care: "etwa 20 Minuten"). Nach der Mahlzeit Mund kontrollieren und Speisereste entfernen — Nahrungsreste können sich in den Wangentaschen ansammeln.
+**Fakt:** Während des Anreichens beobachtet die Pflegefachperson parallel Mundbewegungen (Lippenschluss, Kauen, Zungenbewegung, Taschenbildung), Schluckakt (Heben/Senken des Kehlkopfs, Stimme nach dem Schluck) und Atmung (Husten, Atemnot). Nach dem Essen: Patient noch ca. 20-30 Minuten aufrecht sitzen lassen, um Aspiration und Reflux zu vermeiden (Pflege heute: "etwa eine halbe Stunde"; I Care: "etwa 20 Minuten"). Nach der Mahlzeit Mund kontrollieren und Speisereste entfernen — Nahrungsreste können sich in den Wangentaschen ansammeln.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
@@ -331,7 +339,9 @@
 - Zitat: "Gurgelnde Sprache, Stimmverschlechterung" — belegt die Stimm-Beobachtung als Dysphagie-/Aspirationszeichen (deckt „Stimme nach dem Schluck" inhaltlich)
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "noch etwa 20 Minuten sitzen lassen, um einen Reflux zu verhindern" — I Care (Schlaganfall) nennt ca. 20 Minuten Nachsitzen; Pflege heute nennt "etwa eine halbe Stunde" (Beleg oben). Quellen-Spanne ehrlich ausweisen: 20-30 Min aufrecht bleiben.
-- ⚠️ Nur das Detail-Item „**Lippenverschluss**" bleibt als exakter Beobachtungsbegriff im Korpus unbelegt — Pflege heute belegt Mundmotorik/Zungenbeweglichkeit/Kehlkopfhebung, I Care Wangentaschen/Nachschlucken/Stimme. Quelle beschaffen: DGN/DGG S1-Leitlinie „Neurogene Dysphagie" 2020 oder GUSS-Originalarbeit (Trapl et al. 2007). Bis dahin als fachlich abgeleitetes Beobachtungsmerkmal kennzeichnen.
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Ungenügender Lippenschluss" — belegt den Lippenschluss als Mund-/Schluckbeobachtungsmerkmal verbatim (Pflege heute, Symptomtabelle Schluck-/Mundschlussstörungen: „Ungenügender Lippenschluss" bei Mundschlussstörung/Fazialisparese). Der belegte Fachterminus ist „Lippenschluss" (bzw. „Mundschluss").
+- SACHKORREKTUR (2026-06-11): Der Fakt nannte „**Lippenverschluss**" — der korpus-belegte und fachsprachlich übliche Terminus ist „**Lippenschluss**" (Pflege heute; auch NANDA „Unvollständiger Lippenschluss", Kinderkrankenpflege „Lippenschluss/Mundschluss"). Fakt auf „Lippenschluss" korrigiert. ⚠️ aufgelöst.
 **Praxisfehler:** Patient direkt nach dem Essen flach hinlegen (Reflux-/Aspirationsrisiko).
 
 **Misconceptions:**

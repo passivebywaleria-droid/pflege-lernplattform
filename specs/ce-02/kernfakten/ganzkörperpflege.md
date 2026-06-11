@@ -11,7 +11,7 @@
 | einträge | 19 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, v9 Gold-Standard) |
 | belege-aktualisiert | 2026-06-11 (⚠️ 25→17 aufgelöst; 2 Sachkorrekturen: Harnröhre 3-5→4-5 cm, Dekubitus-I-Abgrenzung korrigiert) |
-| grounding | 2026-06-11 Welle 2 (neuer Korpus + Kennzeichnungs-Durchgang): 11 von 12 offenen ⚠️ aufgelöst — F-01 (22-24 °C via Säuglingsbad-Querbeleg + Unterarm-Prüfstelle via Wickel/Säuglingsnahrung verbatim), F-14 (Hämatome verbatim, Fakt umgestellt), F-16 (Ressourcen via pflege-heute-Einzelbeleg + Primärquellen-Zeile korrigiert), F-17 (Indikation Erschöpfung verbatim, Rest-Liste bleibt ⚠️); F-02/F-03/F-05/F-10/F-15/F-18: didaktische Heuristiken/Faustregeln im Fakt explizit gekennzeichnet statt als belegte Fakten geführt. 1 ⚠️ verbleibt (F-17 Indikationsliste + Prioritäten-Reihenfolge). |
+| grounding | 2026-06-11 Welle 2 (neuer Korpus + Kennzeichnungs-Durchgang): 11 von 12 offenen ⚠️ aufgelöst — F-01 (22-24 °C via Säuglingsbad-Querbeleg + Unterarm-Prüfstelle via Wickel/Säuglingsnahrung verbatim), F-14 (Hämatome verbatim, Fakt umgestellt), F-16 (Ressourcen via pflege-heute-Einzelbeleg + Primärquellen-Zeile korrigiert), F-17 (Indikation Erschöpfung verbatim, Rest-Liste bleibt ⚠️); F-02/F-03/F-05/F-10/F-15/F-18: didaktische Heuristiken/Faustregeln im Fakt explizit gekennzeichnet statt als belegte Fakten geführt. 1 ⚠️ verbleibt (F-17 Indikationsliste + Prioritäten-Reihenfolge). 2026-06-11 Quer-Korpus-Welle (ALLE Korpora): Pflege heute belegt die Reihenfolge der VOLLEN GKW, aber keine reduzierte Teilwaschungs-Prioritätenliste und keine geschlossene Indikationsliste → F-17 bleibt für diese beiden Detail-Aspekte ehrlich offen. |
 
 ---
 
@@ -471,7 +471,7 @@
 ### F-17: Teilkörperwäsche — Indikation
 
 **Fakt:** Die Teilkörperwäsche ist keine „halbe Arbeit", sondern eine bewusste Anpassung an den Zustand: Umfang und Reihenfolge der Waschung richten sich nach der individuellen Patientensituation, den Wünschen und den hygienischen Notwendigkeiten — nicht nach starrem Schema. Es ist eine pflegerische Entscheidung (§ 4 PflBG).
-⚠️ Quelle beschaffen (konkrete Primärquelle): vollständige Indikationsliste (Kreislauf-Instabilität, starke Schmerzen, Palliativsituation, Fieber, Demenz mit hoher Abwehr) und feste Prioritäten-Reihenfolge (Gesicht/Mund, Achseln, Intim, Hände, Hautfalten) — im vorhandenen Korpus nicht direkt belegbar. TEILAUFGELÖST (2026-06-11): Indikation Müdigkeit/Erschöpfung jetzt verbatim via I Care Pflege belegt (s. Beleg unten).
+⚠️ Quelle beschaffen (konkrete Primärquelle): vollständige Indikationsliste (Kreislauf-Instabilität, starke Schmerzen, Palliativsituation, Fieber, Demenz mit hoher Abwehr) und feste Prioritäten-Reihenfolge (Gesicht/Mund, Achseln, Intim, Hände, Hautfalten) — im vorhandenen Korpus nicht direkt belegbar. TEILAUFGELÖST (2026-06-11): Indikation Müdigkeit/Erschöpfung jetzt verbatim via I Care Pflege belegt (s. Beleg unten). (Quer-Korpus 2026-06-11: erneut über ALLE Korpora geprüft. Pflege heute belegt zwar die Standard-Reihenfolge der VOLLEN GKW — Hände → Gesicht (Stirn/Wangen/Kinn, dann Nase/Mund) → Hals/Arme/Achseln → Brust/Bauch → Rücken/Gesäß —, aber KEINE eigene Prioritäten-Reihenfolge für die reduzierte Teilwaschung und keine geschlossene Indikationsliste. Beides bleibt ehrlich offen.)
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Entscheidung

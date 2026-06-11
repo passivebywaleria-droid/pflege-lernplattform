@@ -7,16 +7,17 @@
 | cluster | B (Mobilität & Prophylaxen) |
 | geschätzteUE | 5 |
 | wissensart | handlung |
-| quellen | DNQP Expertenstandard Dekubitusprophylaxe 2017/2. Aktual. 2024; DNQP Expertenstandard Mobilität 2020; NPUAP/EPUAP/PPPIA International Pressure Injury Guideline 2019; Pflege heute 7. Aufl.; I Care Pflege Kap. Mobilität; § 1831 Abs. 4 BGB (leitlinien-volltext, bis 2022: § 1906 Abs. 4 BGB a.F.); § 239/§ 34 StGB; § 630f BGB (leitlinien-volltext); § 1 ArbSchG / § 15 ArbSchG (pruefungswissen + icare-examen-kompakt); Braden-Skala (icare-examen-kompakt). ⚠️ noch nachzuziehen: TRBS 2121 (kein Volltext im Korpus) |
+| quellen | DNQP Expertenstandard Dekubitusprophylaxe 2017/2. Aktual. 2024; DNQP Expertenstandard Mobilität 2020; NPUAP/EPUAP/PPPIA International Pressure Injury Guideline 2019; Pflege heute 7. Aufl.; I Care Pflege Kap. Mobilität; § 1831 Abs. 4 BGB (leitlinien-volltext, bis 2022: § 1906 Abs. 4 BGB a.F.); § 239/§ 34 StGB; § 630f BGB (leitlinien-volltext); § 1 ArbSchG / § 15 ArbSchG (pruefungswissen + icare-examen-kompakt); Braden-Skala (icare-examen-kompakt). ⚠️ noch nachzuziehen: TRBS 2121 (korpusweit 0 Treffer — kein Volltext im Korpus; externe Beschaffung nötig) |
 | einträge | 13 |
 | erstellt | 2026-06-10 (abgeleitet aus bausteine-plan.md, Pipeline v9) |
+| grounding | 2026-06-11 (Quer-Korpus-Welle): Alle 5 ⚠️ über sämtliche Korpora (icare-pflege/-krankheitslehre/-anatomie/-examen, pflege-heute, paetz, pruefungswissen, expertenstandards-gebrauchsanleitung, leitlinien u.a.) geprüft — bleiben ehrlich offen (korpusweit 0 Treffer): Header TRBS 2121; F-01 Begriffswechsel „Positionierung löst Lagerung ab"; F-04 Sakrum „häufigste" Dekubitus-Stelle (Korpus nur „bevorzugt/qualitativ", keine Häufigkeits-Rangfolge); F-06 Sakrum „ca. 46 %"; F-07 „2-3 cm Bewegung stellt Kapillardruck wieder her" (Korpus belegt nur den 35-mmHg-Kapillardruck-Mechanismus, nicht den 2-3-cm-Wert). Alle betroffenen Zahlen/Claims waren bereits aus den Fakt-Texten entfernt — nichts Unbelegtes im Schüler-Content. F-12 (§ 1831 BGB) unverändert. |
 
 ---
 
 ### F-01: Definition Positionierung
 
 **Fakt:** Positionierung ist eine Pflegehandlung, bei der du dem Patienten hilfst, eine gezielte Körperhaltung einzunehmen — im Bett, Stuhl oder Rollstuhl. Zentrale Ziele: Druckentlastung (Dekubitusprophylaxe), Funktions- und Sensorikförderung sowie Bewegungserleichterung, sodass der Patient in der Position eigene Bewegung durchführen kann. Maßgeblich ist nicht ein starrer Lagerungsplan, sondern das aktuelle Bedürfnis des Patienten — er ist Mitgestalter, nicht passives Objekt.
-⚠️ Quelle beschaffen (konkrete Primärquelle): die explizite Aussage, dass der Begriff „Positionierung" den Begriff „Lagerung" terminologisch ablöst (aktiv vs. passiv) — im vorhandenen Korpus nur sinngemäß, nicht als wörtlicher Begriffswechsel belegbar.
+⚠️ Quelle beschaffen (konkrete Primärquelle): die explizite Aussage, dass der Begriff „Positionierung" den Begriff „Lagerung" terminologisch ablöst (aktiv vs. passiv) — im vorhandenen Korpus nur sinngemäß, nicht als wörtlicher Begriffswechsel belegbar. (Quer-Korpus-Welle 2026-06-11: korpusweit 0 Treffer auf einen expliziten Begriffswechsel.)
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Definition
@@ -88,7 +89,7 @@
 ### F-04: 90°-Seitenlage und Rückenlage
 
 **Fakt:** In der 90°-Seitenlage ruht das gesamte Körpergewicht auf dem Trochanter major (kleine, knochige Fläche) — daher zur Dekubitusprophylaxe ungeeignet und nur kurzzeitig indiziert. Die Rückenlage (0°) ist Ausgangsposition vieler Maßnahmen, aber Dauer-Rückenlage belastet Kreuz- und Steißbein (Sakralbereich). Beide Positionen brauchen regelmäßigen Wechsel oder aktive Mikrobewegung.
-⚠️ Quelle beschaffen (konkrete Primärquelle): die quantitative Aussage, das Sakrum/Steißbein sei die „häufigste" Dekubitus-Stelle (Häufigkeits-Ranking) — im vorhandenen Korpus nur als Lokalisations-Auflistung, nicht als Häufigkeits-Rangfolge belegt. Daher im Fakt-Text entfernt.
+⚠️ Quelle beschaffen (konkrete Primärquelle): die quantitative Aussage, das Sakrum/Steißbein sei die „häufigste" Dekubitus-Stelle (Häufigkeits-Ranking) — im vorhandenen Korpus nur als Lokalisations-Auflistung, nicht als Häufigkeits-Rangfolge belegt. Daher im Fakt-Text entfernt. (Quer-Korpus-Welle 2026-06-11: korpusweit 0 Treffer auf eine Häufigkeits-Rangfolge; I Care Krankheitslehre nennt Steißbein nur „bevorzugt", ohne Prozent/Rang.)
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Handlung
@@ -135,7 +136,7 @@
 ### F-06: Prädilektionsstellen je Position
 
 **Fakt:** Prädilektionsstellen für Dekubitus liegen dort, wo Knochenvorsprünge mit wenig Weichteilpolster auf die Unterlage drücken — und wechseln mit der Position. Rückenlage: Hinterkopf, Kreuz-/Steißbein, Fersen, Schultern. Seitenlage: Trochanter major, Ohrmuschel, Fußknöchel. Sitzend: Sitzbeinhöcker, Fersen, Hinterkopf. Bauchlage: Stirn, Beckenknochen, Kniescheiben. Zusätzlich geräteassoziierte Stellen (O2-Brille, Katheter, Manschette).
-⚠️ Quelle beschaffen (konkrete Primärquelle): die Prozentangabe „Sakrum ca. 46%" — im vorhandenen Korpus nicht belegbar (Treffer auf „46." sind Kapitelverweise, keine Häufigkeit). Aus dem Fakt-Text entfernt.
+⚠️ Quelle beschaffen (konkrete Primärquelle): die Prozentangabe „Sakrum ca. 46%" — im vorhandenen Korpus nicht belegbar (Treffer auf „46." sind Kapitelverweise, keine Häufigkeit). Aus dem Fakt-Text entfernt. (Quer-Korpus-Welle 2026-06-11: korpusweit 0 Treffer auf eine Sakrum-Prozentangabe.)
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
@@ -159,7 +160,7 @@
 ### F-07: Mikrobewegungen
 
 **Fakt:** Mikrobewegungen sind kleine, häufige Gewichtsverlagerungen (durch den Patienten selbst oder angeleitet), die den Dauerdruck zwischen den großen Umlagerungs-Intervallen unterbrechen. Sie ergänzen die großen Positionswechsel, ersetzen sie aber nicht.
-⚠️ Quelle beschaffen (konkrete Primärquelle): die quantitative Aussage „schon 2-3 cm Bewegung stellen den Kapillardruck wieder her" — im vorhandenen Korpus nicht belegbar (weder Pflege heute noch DNQP noch EPUAP nennen diesen Wert). Aus dem Fakt-Text entfernt.
+⚠️ Quelle beschaffen (konkrete Primärquelle): die quantitative Aussage „schon 2-3 cm Bewegung stellen den Kapillardruck wieder her" — im vorhandenen Korpus nicht belegbar (weder Pflege heute noch DNQP noch EPUAP nennen diesen Wert). Aus dem Fakt-Text entfernt. (Quer-Korpus-Welle 2026-06-11: korpusweit 0 Treffer auf den 2-3-cm-Wert; belegt ist nur der zugrundeliegende Mechanismus — physiologischer Kapillardruck ~35 mmHg, Pflege heute — nicht die konkrete Bewegungsdistanz.)
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept + Handlung

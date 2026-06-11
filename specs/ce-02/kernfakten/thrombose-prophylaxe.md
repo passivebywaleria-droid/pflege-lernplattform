@@ -10,7 +10,7 @@
 | quellen | AWMF S3-Leitlinie Prophylaxe der venösen Thromboembolie (VTE), Registernr. 003-001, Version 4.0 (2025 Update zu 2015); Pflege heute Kap. Thromboseprophylaxe; I Care Pflege Kap. Prophylaxen; DGP (Deutsche Gesellschaft für Phlebologie) Leitlinien |
 | einträge | 13 |
 | erstellt | 2026-04-21 |
-| grounding | 2026-06-11 (icare-krankheitslehre-Korpus): F-02 ~90-%-Lokalisationsquote aufgelöst (Becken-/Beinvenen, nicht Beinvenen allein); F-11 ~50 % klinisch stumm + Homans/Payr/Meyer unzuverlässig aufgelöst (Homans-Sensitivität 60–90 % bleibt ⚠️); F-12 Atemnot als erstes LE-Zeichen qualitativ belegt (80-%-Quote bleibt ⚠️). Offen: F-03 (50 % proximale TVT→LE), F-05 (bereits korrigiert, kein offenes ⚠️), F-07 (Heparin-Luftblock — in keinem Korpus). |
+| grounding | 2026-06-11 (Quer-Korpus-Welle): F-02 ~90-%-Lokalisationsquote aufgelöst (Becken-/Beinvenen). F-11 VOLL aufgelöst — ~50 % klinisch stumm + Homans/Payr/Meyer unsicher belegt; Homans-„Sensitivität 60–90 %" als SACHKORREKTUR entfernt (I Care Krankheitslehre Z.28193: „unsichere Anhaltspunkte" — Prozentangabe widerspricht Beleg). F-12 Atemnot als führendes LE-Zeichen qualitativ belegt. Offen (korpusweit 0 Treffer): F-03 (50 % proximale TVT→LE — nur qualitative Richtung belegt), F-07 (Heparin-Luftblock s.c. — in keinem Korpus), F-12 (80-%-Dyspnoe-Quote). F-05 ist Korrektur-Notiz (Wert ersetzt), kein offenes ⚠️. |
 
 ---
 
@@ -277,13 +277,15 @@
 - Zitat: "In etwa der Hälfte der Fälle fehlen diese typischen Symptome jedoch; die Thrombose wird dann als „klinisch stumm“ bezeichnet." — ~50 % klinisch stumm verbatim belegt
 - Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
 - Zitat: "Die nach ihren Erstbeschreibern Meyer, Payr und Homan benannten Zeichen erlauben jedoch keine sichere Diagnosestellung: Eine Thrombose kann hiermit weder ausgeschlossen noch bestätigt werden." — Homans/Payr/Meyer unzuverlässig (qualitativ) belegt
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "Alle 3 genannten Zeichen sind jedoch unsichere Anhaltspunkte für das Vorliegen einer TVT. Sicher diagnostiziert" — Meyer/Payr/Homans-Zeichen sind unsichere Anhaltspunkte; sichere Diagnose nur apparativ (Sonografie = Goldstandard)
 
-> ✅/⚠️ TEILWEISE AUFGELÖST (2026-06-11): Der Detail-Wert „etwa 50 % der TVT klinisch stumm" ist jetzt verbatim aus I Care Krankheitslehre belegbar („In etwa der Hälfte der Fälle fehlen diese typischen Symptome"). Ebenso ist die qualitative Aussage „Homans-/Payr-/Meyer-Zeichen erlauben keine sichere Diagnose" jetzt belegt. NICHT belegt bleibt die konkrete Homans-*Sensitivitätsangabe* (60–90 %) — in keinem lokalen Korpus enthalten. Diese Prozentzahl bis zur Verfügbarkeit einer Diagnostik-Primärquelle nicht als belegt behaupten.
+> ✅ AUFGELÖST + SACHKORREKTUR (2026-06-11): Der Detail-Wert „etwa 50 % der TVT klinisch stumm" ist verbatim aus I Care Krankheitslehre belegt („In etwa der Hälfte der Fälle fehlen diese typischen Symptome"). Die qualitative Aussage „Homans-/Payr-/Meyer-Zeichen erlauben keine sichere Diagnose" ist doppelt belegt. **SACHKORREKTUR (2026-06-11):** Die ursprünglich behauptete Homans-*Sensitivität von 60–90 %* ist in keinem Korpus belegbar UND steht inhaltlich im Widerspruch zur belegten Quelle: I Care Krankheitslehre ordnet alle drei Zeichen explizit als „unsichere Anhaltspunkte" ein — eine konkrete Sensitivitätsangabe würde fälschlich Genauigkeit suggerieren. Im Content daher KEINE Prozentzahl, sondern die belegte Einordnung „unsicheres, unspezifisches Zeichen — kann TVT weder ausschließen noch beweisen".
 **Praxisfehler:** Pflege prüft Homans-Zeichen als "Standard" — auslösend kann Emboliegefahr sein (Thrombusteile lösen!); klinisch stumme TVT wird verpasst.
 **Transfer:** [Transfer] Wie in der alten Medizin, wo man dem Patienten auf die Stirn gefühlt hat um Fieber zu messen — heute haben wir Thermometer. Homans ist wie Stirnfühlen: ungenau, kann Schaden machen.
 
 **Misconceptions:**
-- `M1`: **"Homans-Zeichen ist Standard-Test"** — VERALTET! Aktuelle Leitlinien empfehlen Homans NICHT mehr. Sensitivität 60-90%, aber Spezifität schlecht. Risiko: Beim Prüfen können Thrombusteile gelöst werden. Fachbegriff: "Homans-Mythos".
+- `M1`: **"Homans-Zeichen ist Standard-Test"** — VERALTET! Aktuelle Leitlinien empfehlen Homans NICHT mehr. Das Zeichen ist ein unsicherer, unspezifischer Anhaltspunkt — eine TVT kann hiermit weder ausgeschlossen noch bestätigt werden (I Care Krankheitslehre). Risiko: Beim Prüfen können Thrombusteile gelöst werden. Fachbegriff: "Homans-Mythos".
 - `M2`: **"Ohne sichtbare Schwellung keine TVT"** — 50% der TVT sind klinisch stumm oder diskret. Besonders Waden-TVT kann wenig Schwellung zeigen. Fachbegriff: "Symptom-Fehlschluss".
 - `M3`: **"Beide Beine prüfen ist genug"** — Seitendifferenz ist ein Hinweis, aber nicht beweisend. Bei klinischem Verdacht IMMER Wells-Score + D-Dimer + Sonographie.
 

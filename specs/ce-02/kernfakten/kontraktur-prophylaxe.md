@@ -10,7 +10,7 @@
 | quellen | Pflege heute Kap. 9.7 Kontrakturprophylaxe + Kap. 29.4 (Funktionsstellung/Lagerung); I Care Pflege Kap. 17.8 (Thieme 2020); DNQP Expertenstandard Mobilität 2020 (kap-16); MDS Pflege-Qualitätsbericht 2018; Gnass et al. 2010; Sackley et al. 2008; Bobath 1990; Paetz Chirurgie 23. Aufl. Kap. 32 (Neutral-Null-Methode + Funktionsstellung Gelenke) |
 | einträge | 9 |
 | erstellt | 2026-06-10 (Pipeline v9) |
-| grounding | 2026-06-11 (Zyklus 11): ⚠️ 1→1. F-03 Schulter-Funktionsstellungswinkel auch im I-Care-Korpus + Paetz (erneut) nicht belegbar — Such-Stand unter F-03 dokumentiert, ⚠️ bleibt ehrlich offen (Orthopädie-/Reha-Quelle beschaffen). |
+| grounding | 2026-06-11 (Quer-Korpus-Welle, alle 19 Korpora): ⚠️ 1→1. F-03 Schulter-Funktionsstellungswinkel korpusweit 0 Treffer (Paetz-Funktionsstellungs-Liste nennt nur Ellenbogen/Finger/Sprunggelenk, keine Schulter) — Such-Stand unter F-03 dokumentiert, ⚠️ bleibt ehrlich offen (Orthopädie-/Reha-Quelle beschaffen). Schulterwinkel ist bereits aus allen Fakt-/Misconception-Texten entfernt; nichts Unbelegtes im Schüler-Content. |
 
 ---
 
@@ -85,7 +85,7 @@
 - Zitat: "wird das Sprunggelenk grundsätzlich in der Neutral-Null-Stellung"
 
 > ⚠️ Claim entschärft (Schulterwinkel): „Schulter leicht abduziert + außenrotiert" als Funktionsstellungswinkel ist im Paetz-Volltext NICHT verbatim belegt. Dieser Gelenkwinkel bis zur lokalen Verfügbarkeit einer Orthopädie-/Reha-Quelle nicht als konkrete Gradzahl behaupten.
-> Such-Stand (2026-06-11, I-Care-Korpus + Paetz erneut geprüft): Kein Treffer für eine generische Schulter-Funktionsstellung. Nächstliegende Korpus-Stellen — Paetz Brust-OP-Lagerung: „Der betroffene Arm wird in leichter Abduktion des Schultergelenks," (Kontext Lymphabfluss, nicht Funktionsstellung) und Paetz Frozen Shoulder: „wodurch die Abduktion und Außenrotation des Oberarms im Schultergelenk eingeschränkt oder aufgehoben werden" (belegt nur, dass Abduktion/Außenrotation die kontrakturgefährdeten Schulter-Bewegungen sind). Beide tragen den Funktionsstellungs-Claim nicht — ⚠️ bleibt.
+> Such-Stand (2026-06-11, Quer-Korpus-Welle über ALLE 19 Volltext-Korpora): Kein Treffer für eine generische Schulter-Funktionsstellung mit Gradangabe. Die Paetz-Funktionsstellungs-Liste (Z.44448) nennt nur „Ellenbogen 90° gebeugt, Finger leicht gebeugt" + „Sprunggelenk Neutral-Null" — KEINE Schulter. Nächstliegende Korpus-Stellen — Paetz Brust-OP-Lagerung: „Der betroffene Arm wird in leichter Abduktion des Schultergelenks," (Kontext Lymphabfluss, nicht Funktionsstellung); Paetz Frozen Shoulder: „wodurch die Abduktion und Außenrotation des Oberarms im Schultergelenk eingeschränkt oder aufgehoben werden" (belegt nur, dass Abduktion/Außenrotation die kontrakturgefährdeten Schulter-Bewegungen sind); Paetz Bein-Keilkissen „Eine Abduktion > 20–30° … sollte verhindert werden" (betrifft Hüfte/Bein post-OP, nicht Schulter). Keine dieser Stellen trägt den Funktionsstellungs-Claim — korpusweit 0 Treffer, ⚠️ bleibt ehrlich offen (Orthopädie-/Reha-Quelle beschaffen).
 
 **Praxisfehler:** Annahme "Funktionsstellung = so weit strecken wie möglich" — falsch, sie ist gelenk-spezifisch. Laut Paetz Kap. 32 (Pflegepraxis): Ellenbogen 90° gebeugt, Sprunggelenk in Neutral-Null.
 **Transfer:** [Transfer] Wenn ein Gelenk versteifen müsste: in welcher Stellung kann der Patient noch essen, greifen, stehen?

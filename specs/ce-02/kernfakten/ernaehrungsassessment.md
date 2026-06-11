@@ -10,7 +10,7 @@
 | quellen | DNQP Expertenstandard Ernährungsmanagement 2017; Pflege heute 7. Aufl. Kap. 7 (Ernährung) + Kap. 19 (Sarkopenie/Frailty); Guigoz MNA 1994; Kondrup NRS-2002 2003; WHO BMI-Klassifikation; DGEM/ESPEN 2020; Bartholomeyczik PEMU 2008 |
 | einträge | 16 |
 | erstellt | 2026-06-10 (Pipeline v9, Quellenbindung) |
-| grounding | 2026-06-11 (Welle 2, ⚠️-Auflösung via icare-pflege-volltext + expertenstandards-gebrauchsanleitung Anhänge 16/17): F-12 (Perspiratio ≈900 ml/d), F-14 (30-35 ml/kg), F-04 (MNA-Voranamnese: 6 Items, max. 14 P., Cut-off ≥12/≤11 — Sachkorrektur: revidierte SF-Dreiteilung 8-11/0-7 entfernt, nicht im Korpus) und F-05 (NRS-2002 komplett: 4 Vorscreening-Fragen, Hauptscreening 0-3+0-3, Altersbonus ≥70, Cut-off ≥3, wöchentl. Wiederholung) voll gelöst. Offen bleiben: F-03 (Minuten-/24h-Werte), F-06 (PEMU-5-Bereiche), F-08 (PEM-Term), F-11 (Labor-HWZ/Cut-offs), F-15 (5-6 Portionen, Evaluationsfrist) — im gesamten Korpus nicht verbatim. |
+| grounding | 2026-06-11 (Welle 2, ⚠️-Auflösung via icare-pflege-volltext + expertenstandards-gebrauchsanleitung Anhänge 16/17): F-12 (Perspiratio ≈900 ml/d), F-14 (30-35 ml/kg), F-04 (MNA-Voranamnese: 6 Items, max. 14 P., Cut-off ≥12/≤11 — Sachkorrektur: revidierte SF-Dreiteilung 8-11/0-7 entfernt, nicht im Korpus) und F-05 (NRS-2002 komplett: 4 Vorscreening-Fragen, Hauptscreening 0-3+0-3, Altersbonus ≥70, Cut-off ≥3, wöchentl. Wiederholung) voll gelöst. Offen bleiben: F-03 (Minuten-/24h-Werte), F-06 (PEMU-5-Bereiche), F-08 (PEM-Term), F-11 (Labor-HWZ/Cut-offs), F-15 (5-6 Portionen, Evaluationsfrist) — im gesamten Korpus nicht verbatim. 2026-06-11 (Welle 3, Quer-Korpus-Grep über alle ~18 Volltext-Korpora): F-08 PEM-Terminus via NANDA-Pflegediagnosen („Protein-Energie-Mangelernährung") verbatim GELÖST; F-06 SACHKORREKTUR — die unbelegte „Fünf-Bereiche"-Aufzählung ersetzt durch die verbatim belegte DNQP-Sechserliste (Körperliche/kognitive Beeinträchtigungen, Fehlende Lust, Ungünstige Umgebungsfaktoren, Inadäquates Angebot, Erhöhter Bedarf, Vereinsamung) aus der Expertenstandards-Gebrauchsanleitung; F-03 24-h-Frist via NANDA verbatim belegt (nur Minutenangaben bleiben ⚠️); F-11 qualitativ teilbelegt (DGEM-Heimenterale: Transthyretin/Präalbumin = kürzere HWZ als Albumin, Albumin/Präalbumin als Parameter — konkrete Tage/Cut-offs bleiben ⚠️); F-15 „mehrere kleine Mahlzeiten" mehrfach belegt, nur „5-6"/Evaluationsfrist bleiben ⚠️. Korpusweit weiterhin 0 Treffer: Screening-Minutenwerte (F-03), konkrete Labor-HWZ-Tage/Cut-offs (F-11), Portionszahl 5-6 + 1-2-Wochen-Frist (F-15). |
 
 ---
 
@@ -93,7 +93,9 @@
 - Zitat: "Ist das Ergebnis des Screenings positiv, folgt eine weitere Abklärung, u. a. mittels vertiefender Assessments" — belegt das zweistufige Vorgehen (Screening → bei positivem Ergebnis vertiefendes Assessment) verbatim aus I Care
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "Sie dienen somit einer ersten Einschätzung und Erfassung eines potenziellen Risikos" — belegt, dass das Screening eine erste, breite Risiko-Einschätzung ist (Stufe 1)
-- ⚠️ Nur die konkreten Zeitangaben "Screening 2-5 Min, binnen 24h" und "Assessment 15-30 Min" bleiben didaktische Orientierungswerte, im Korpus (inkl. I Care 2020) nicht verbatim belegt. Aussage ohne konkrete Minuten-/Stundenwerte formulieren ODER Quelle beschaffen (DNQP-Implementierungshinweise / Instrument-Manuale). Hinweis: Expertenstandards-Gebrauchsanleitung belegt für MNA-SF "schnelle Einschätzung in nur drei Minuten" als Kurzform; nicht übertragbar auf Screening generell.
+- Quelle: `nanda-pflegediagnosen-volltext/nanda-pflegediagnosen.txt`
+- Zitat: "Assessment innerhalb von 24 Stunden nach Aufnahme ausgefüllt werden" (Kontext: standardisiertes Aufnahme-Screening/-Assessment im Krankenhaus — belegt die 24-h-Frist nach Aufnahme; NANDA nennt MNA/SGA als Screening-Tools dieser Erst-Einschätzung)
+- ⚠️ Die 24-h-Frist nach Aufnahme ist nun via NANDA verbatim belegt. Nur die konkreten Minutenangaben "Screening 2-5 Min" und "Assessment 15-30 Min" bleiben korpusweit unbelegt → als didaktische Orientierungswerte kennzeichnen oder weglassen. Hinweis: Expertenstandards-Gebrauchsanleitung belegt für MNA-SF "schnelle Einschätzung in nur drei Minuten" als Kurzform; nicht auf Screening generell übertragbar.
 **Praxisfehler:** Screening nur bei "sichtbar dünnen" Patienten machen — der Standard verlangt es für alle (auch Adipöse, verdeckte Mangelernährung).
 
 **Misconceptions:**
@@ -203,7 +205,8 @@
 
 ### F-06: PEMU (Pflegerische Erfassung von Mangelernährung und deren Ursachen)
 
-**Fakt:** Der Expertenstandard fordert bei auffälligem Screening ein vertieftes Assessment, z. B. mit dem PEMU. Das PEMU ist das deutschsprachige Pflege-Assessment: Teil 1 erfasst den Ernährungszustand (Gewicht, BMI, Verlauf, Nahrungs-/Flüssigkeitsmenge), Teil 2 (Kern) erfasst die Ursachen in fünf Bereichen: 1) Essen/Trinken-Signale, 2) Mundgesundheit, 3) Fähigkeiten, 4) Umgebung/Angebot, 5) weitere Gründe. Ergebnis: handlungsleitende Pflegediagnose ("isst zu wenig, weil Prothese drückt und er allein isst").
+**Fakt:** Der Expertenstandard fordert bei auffälligem Screening ein vertieftes Assessment, z. B. mit dem PEMU. Das PEMU ist das deutschsprachige Pflege-Assessment: Teil 1 ist ein Screening-, Teil 2 ein Assessmentinstrument, das die Ursachen der Mangelernährung erfasst. Die Expertenstandards-Gebrauchsanleitung führt als **Untersuchungskriterien für das Assessment nach dem DNQP** sechs Kriterien auf: 1) Körperliche oder kognitive Beeinträchtigungen, 2) Fehlende Lust zum Essen oder Trinken, 3) Ungünstige Umgebungsfaktoren, 4) Inadäquates Angebot, 5) Erhöhter Bedarf, 6) Vereinsamung. Ergebnis: handlungsleitende Pflegediagnose ("isst zu wenig, weil Prothese drückt und er allein isst").
+**SACHKORREKTUR (2026-06-11):** Die früher genannten „fünf Bereiche" (Essen/Trinken-Signale, Mundgesundheit, Fähigkeiten, Umgebung/Angebot, weitere Gründe) entsprachen einer freien Paraphrase des PEMU-Originalinstruments und sind so im Korpus nicht belegt. Verbatim belegbar ist die obige DNQP-Sechserliste aus der Expertenstandards-Gebrauchsanleitung — sie ersetzt die alte Fünfer-Aufzählung.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Assessment
@@ -218,13 +221,27 @@
 - Zitat: "Das PEMU – Pflegerische Erfassung von Mangelernährung und deren Ursachen – besteht im ersten Teil aus einem Screening- und im zweiten Teil aus einem Assessmentinstrument."
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "stationäre Langzeitpflege: pflegerische Erfassung von" — belegt im Quelltext "… Mangelernährung und deren Ursachen (PEMU)" als settingspezifisches Instrument für die stationäre Langzeitpflege
-- ⚠️ Die PEMU-Fünf-Bereiche (Essen-Trinken-Signale, Mundgesundheit, Fähigkeiten, Umgebung/Angebot, weitere Gründe) bleiben im Korpus (inkl. I Care Pflege 2020) nicht verbatim belegt — I Care und Gebrauchsanleitung belegen nur den Zweiteiler (Screening + Assessment) bzw. das Setting (Langzeitpflege); die Nennung der fünf Ursachenbereiche stammt aus dem PEMU-Originalinstrument Bartholomeyczik/Schreier 2008 (nicht im Korpus). Bereichsaufzählung entfernen oder Originalinstrument beschaffen.
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Untersuchungskriterien für das Assessment nach dem DNQP" — leitet die belegte Sechserliste der Assessment-Kriterien ein
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Körperliche oder kognitive Beeinträchtigungen" — Assessment-Kriterium 1
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Fehlende Lust zum Essen oder Trinken" — Assessment-Kriterium 2
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Ungünstige Umgebungsfaktoren" — Assessment-Kriterium 3
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Inadäquates Angebot" — Assessment-Kriterium 4
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Erhöhter Bedarf" — Assessment-Kriterium 5
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Vereinsamung" — Assessment-Kriterium 6
+- ⚠️ aufgelöst: Die belegbare DNQP-Sechserliste ersetzt die frühere, unbelegte Fünfer-Aufzählung (Bartholomeyczik/Schreier-Originalinstrument nicht im Korpus). Die Misconceptions M3 (PEMU „nach 5 Ursachenbereichen") sollte im Schülerinhalt auf die 6 DNQP-Kriterien angepasst werden.
 **Praxisfehler:** PEMU auf die Gewichtsmessung verkürzen — der eigentliche Kern ist die Ursachenanalyse in den im PEMU erfassten Ursachenbereichen.
 
 **Misconceptions:**
 - `M1`: **"PEMU erfasst nur das Gewicht"** — Das Gewicht ist nur der erste Teil; der Kern des PEMU sucht die Ursachen der Mangelernährung. Ohne Ursachen keine gezielten Maßnahmen. Fachbegriff: "Verkürzungs-Irrtum".
 - `M2`: **"PEMU macht der Arzt"** — Das P in PEMU steht für "Pflegerisch"; es gehört in den Pflegeprozess. Die Pflege sieht den Patienten täglich beim Essen. Fachbegriff: "Zuständigkeits-Irrtum".
-- `M3`: **"PEMU und MNA sind dasselbe"** — MNA ist ein punktbasiertes Screening/Assessment für Ältere (international); PEMU ist ein deutschsprachiges Pflege-Assessment nach 5 Ursachenbereichen. Fachbegriff: "Instrument-Gleichsetzung".
+- `M3`: **"PEMU und MNA sind dasselbe"** — MNA ist ein punktbasiertes Screening/Assessment für Ältere (international); PEMU ist ein deutschsprachiges Pflege-Assessment, dessen vertiefte Ursachenerfassung den 6 DNQP-Untersuchungskriterien folgt (körperliche/kognitive Beeinträchtigungen, fehlende Lust, ungünstige Umgebung, inadäquates Angebot, erhöhter Bedarf, Vereinsamung). Fachbegriff: "Instrument-Gleichsetzung".
 
 ---
 
@@ -263,7 +280,9 @@
 - Zitat: "Ausgeprägter Verlust an Muskelmasse, Muskelkraft und Muskelleistung"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: “Von Kachexie (Auszehrung, hochgradige Abmagerung, „Kräfteverfall”) spricht man, wenn der Gewichtsverlust und der Kräfteverfall sehr ausgeprägt ist”
-- ⚠️ PEM als eigener, klar abgegrenzter Terminus (“Protein-Energie-Mangelernährung, reversibel durch Kalorien-/Eiweißzufuhr”) im gesamten Korpus nicht verbatim belegt — Pflege heute nutzt den Oberbegriff “Mangelernährung (Malnutrition)” ohne PEM-Untertyp; icare-examen-kompakt und pruefungswissen ebenfalls ohne PEM-Term. Quelle beschaffen (DGEM-Terminologie-Leitlinie / ESPEN 2017 Definitions and Criteria) oder PEM-Bezeichnung entfernen und als Unterform der belegten Malnutrition-Definition führen.
+- Quelle: `nanda-pflegediagnosen-volltext/nanda-pflegediagnosen.txt`
+- Zitat: "Protein-Energie-Mangelernährung" — belegt den Fachterminus „Protein-Energie-Mangelernährung" verbatim (NANDA führt ihn als Risikofaktor/beeinflussenden Faktor); die deutsche Vollform des PEM-Begriffs ist damit korpusbelegt
+- ⚠️ aufgelöst (Terminus): Der Fachbegriff „Protein-Energie-Mangelernährung" ist via NANDA verbatim belegt. Die ergänzende Charakterisierung „reversibel durch Kalorien-/Eiweißzufuhr" bleibt didaktische Abgrenzung (im Korpus nicht als wörtlicher PEM-Definitionssatz, aber konsistent mit der belegten Malnutrition-Definition: „negative Bilanz zwischen Aufnahme und Bedarf").
 **Praxisfehler:** Kachexie mit "einfachem Dünn-Sein" gleichsetzen — sie ist krankheitsbedingt und nicht durch Essen allein zu beheben.
 
 **Misconceptions:**
@@ -342,7 +361,11 @@
 - Zitat: "Eiweißmangel führt zu Ödemen"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Im Alter bedingt er einen Muskelabbau"
-- ⚠️ Sämtliche konkreten Laborparameter mit Halbwertszeiten und Cut-offs (Albumin HWZ ~20 Tage, <35 g/l; Präalbumin 2-3 Tage; Transferrin ~8 Tage) im gesamten Korpus nicht verbatim belegt — Pflege heute belegt nur die Folge des Eiweißmangels (Ödeme, Muskelabbau), nicht die Labordiagnostik; icare-examen-kompakt und pruefungswissen ebenfalls ohne konkrete HWZ-/Cut-off-Werte für Ernährungs-Labor. Quelle beschaffen (DGEM-Leitlinie klinische Ernährung / Labormedizin-Referenz) oder HWZ-/Cut-off-Werte aus dem Schülerinhalt entfernen bis Beleg vorliegt.
+- Quelle: `leitlinien-volltext/dgem-heimenterale-2024.txt`
+- Zitat: "Halbwertszeit als Albumin" (Kontext: „Proteinstatus, gemessen über Serum-Albumin oder Serum-Transthyretin (letzteres aufgrund einer kürzeren Halbwertszeit als Albumin)" — belegt qualitativ, dass Transthyretin/Präalbumin eine kürzere HWZ hat als Albumin und sich daher für kurzfristiges Monitoring eignet)
+- Quelle: `leitlinien-volltext/dgem-heimenterale-2024.txt`
+- Zitat: "Mn; Albumin, Präalbumin," (Kontext: „…Vit D, Vit B12, Folsäure, Zn, Cu, Se, Mn; Albumin, Präalbumin, Bicarbonat, CHE, INR u.a." — belegt Albumin und Präalbumin als labordiagnostische Ernährungsparameter)
+- ⚠️ Teilbelegt: Die qualitative Aussage „Präalbumin/Transthyretin = kürzere HWZ als Albumin → kurzfristiges Monitoring" ist via DGEM-Heimenterale 2024 belegt. Die konkreten Zahlenwerte (Albumin ~20 Tage, <35 g/l; Präalbumin 2-3 Tage; Transferrin ~8 Tage) bleiben korpusweit unbelegt → im Schülerinhalt als Orientierungswerte kennzeichnen oder durch die belegte qualitative HWZ-Aussage ersetzen.
 **Praxisfehler:** Albumin isoliert als Mangelernährungsmarker werten — es wird auch durch Entzündung gesenkt; immer CRP mitbestimmen.
 
 **Misconceptions:**
@@ -471,7 +494,7 @@
 - Zitat: "ausreichende Proteinmengen: 0,8–1,5 g/kgKG" — belegt die eiweißreiche Zielvorgabe (oberer Bereich 1,0-1,5 g/kg/Tag) im Kontext Ernährung im Alter
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "tägliche Proteinzufuhr von mindestens 1,0 g/kg Körpergewicht" — I Care belegt für substituierte/unterernährte ältere Menschen (hochkalorische Trinknahrung) eine Proteinzufuhr von mindestens 1,0 g/kg KG (Schuetz et al. 2017); Quelltext warnt zugleich vor dem Refeeding-/Overfeeding-Syndrom
-- ⚠️ Nur die Zielwerte "5-6 kleine Portionen" und "Evaluation nach 1-2 Wochen" bleiben im gesamten Korpus (inkl. I Care Pflege 2020) nicht verbatim belegt — I Care, Pflege heute und icare-examen-kompakt belegen das Prinzip "häufigere kleine Mahlzeiten" qualitativ, aber keine konkrete Portionsanzahl/Evaluations-Frist. Die g/kg-Vorgabe (1,0-1,5 g/kg/Tag) ist mit I Care nun belegt. Restliche Zahlen als Faustregel kennzeichnen oder Quelle beschaffen (DGEM/ESPEN-Leitlinie klinische Ernährung).
+- ⚠️ Korpusweit bestätigt: Das Prinzip "häufigere/mehrere kleine Mahlzeiten" ist mehrfach belegt (Pflege heute „Häufigere kleine Mahlzeiten"; icare-examen-kompakt + icare-krankheitslehre „mehrere kleine Mahlzeiten"; DGEM-Heimenterale 2024 nennt „mehrere kleine Mahlzeiten" als diätetische Maßnahme). Die konkrete Portionszahl "5-6" und die Frist "Evaluation nach 1-2 Wochen" bleiben jedoch korpusweit unbelegt → als Faustregel kennzeichnen. Die g/kg-Vorgabe (1,0-1,5 g/kg/Tag) ist mit I Care belegt.
 **Praxisfehler:** Reflexartig Trinknahrung verordnen, ohne die Ursache zu klären — eine drückende Prothese wird nicht durch Trinknahrung behoben.
 
 **Misconceptions:**

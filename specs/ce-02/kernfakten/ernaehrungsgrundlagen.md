@@ -8,7 +8,7 @@
 | geschätzteUE | 8 |
 | wissensart | handlung |
 | quellen | Pflege heute 7. Aufl. Kap. 7 Ernährung (verbatim-belegt); DNQP Expertenstandard Ernährungsmanagement 1. Aktual. 2017/2024; DGE/ÖGE/SGE D-A-CH-Referenzwerte (Erläuterungen, lokaler Extrakt — Einzelnährstoff-Tabellen NICHT enthalten); I Care Pflegeexamen kompakt (Thieme, verbatim-belegt); Prüfungswissen Pflegefachfrau (Elsevier, verbatim-belegt); Hoehl/Kullick Kinderkrankenpflege 5. Aufl. (verbatim-belegt); WHO 2015 Guideline Sugars intake (verbatim-belegt, leitlinien-volltext); Atwater 1899 |
-| grounding-stand | 2026-06-11, dritte Überarbeitung (icare-pflege/-anatomie-Volltext erschlossen). Aufgelöste ⚠️ (Vorrunden): F-01 Makro-/Mikronährstoff-Terminologie, F-04 0,8–1 g/kgKG Protein-Referenz + Senioren-Erhöhung, F-08 Vitamin-D-Synthese (Haut-Vorstufe + UV), F-09 Mengenelemente/Spurenelemente nach Körpertrockenmasse, F-09/M1 Jod-Richtwert, F-10 +500 ml/°C Fieber, F-10 1,5-l-Trinkmenge, F-12 DGE-Prozentwerte, F-02 WHO Zucker <10%/<5%. 2026-06-11 (3): F-08 Vitamin-D-Synthese-Mechanismus (Cholecalciferol aus Cholesterin in Keratinozyten der Haut unter Sonnenlicht) via icare-anatomie verbatim belegt; F-04 Senioren-Protein 0,8–1,5 g/kgKG + 1,0 g/kg-Untergrenze (Schuetz 2017) via icare-pflege verbatim verstärkt. 2026-06-11 (4, DGE-Referenzwert-Einzelseiten via dge.de erschlossen → `dge-referenzwerte-volltext/`): F-06 Ballaststoffe ≥30 g/Tag (DGE-Richtwert-Tabelle) + F-08 Vitamin D 20 µg/Tag bei fehlender Eigensynthese (DGE Vitamin-D-Seite) beide verbatim belegt. Verbleibende ⚠️ (DGE-Position 2011 / Atwater-Original erforderlich, auf den Referenzwert-Seiten NICHT verbatim): Gehirn 120 g Glukose/Tag (F-02), gesättigte FA <10% (F-03), Alkohol 7 kcal/g + Ballaststoffe ~2 kcal/g (F-05), Fachbegriff 7-Dehydrocholesterin (F-08), +700 ml Stillen (F-10). |
+| grounding-stand | 2026-06-11, dritte Überarbeitung (icare-pflege/-anatomie-Volltext erschlossen). Aufgelöste ⚠️ (Vorrunden): F-01 Makro-/Mikronährstoff-Terminologie, F-04 0,8–1 g/kgKG Protein-Referenz + Senioren-Erhöhung, F-08 Vitamin-D-Synthese (Haut-Vorstufe + UV), F-09 Mengenelemente/Spurenelemente nach Körpertrockenmasse, F-09/M1 Jod-Richtwert, F-10 +500 ml/°C Fieber, F-10 1,5-l-Trinkmenge, F-12 DGE-Prozentwerte, F-02 WHO Zucker <10%/<5%. 2026-06-11 (3): F-08 Vitamin-D-Synthese-Mechanismus (Cholecalciferol aus Cholesterin in Keratinozyten der Haut unter Sonnenlicht) via icare-anatomie verbatim belegt; F-04 Senioren-Protein 0,8–1,5 g/kgKG + 1,0 g/kg-Untergrenze (Schuetz 2017) via icare-pflege verbatim verstärkt. 2026-06-11 (4, DGE-Referenzwert-Einzelseiten via dge.de erschlossen → `dge-referenzwerte-volltext/`): F-06 Ballaststoffe ≥30 g/Tag (DGE-Richtwert-Tabelle) + F-08 Vitamin D 20 µg/Tag bei fehlender Eigensynthese (DGE Vitamin-D-Seite) beide verbatim belegt. Verbleibende ⚠️ (DGE-Position 2011 / Atwater-Original erforderlich, auf den Referenzwert-Seiten NICHT verbatim): Gehirn 120 g Glukose/Tag (F-02), gesättigte FA <10% (F-03), Alkohol 7 kcal/g + Ballaststoffe ~2 kcal/g (F-05), Fachbegriff 7-Dehydrocholesterin (F-08), +700 ml Stillen (F-10). 2026-06-11 (5, Quer-Korpus-Grep über alle ~18 Volltext-Korpora): F-03 gesättigte FA ≤10% via Pflege heute („höchstens 10 % gesättigte Fettsäuren") verbatim GELÖST; F-05 Alkohol 7 kcal/g via Expertenstandards-Gebrauchsanleitung („Alkohol 7,0 kcal/g") + I Care Anatomie („30 kJ (= 7 kcal)") verbatim GELÖST; F-10 SACHKORREKTUR „+700 ml Stillen" → DGE-Wasserreferenzwerte belegen nur ca. +300 ml Getränke (1710 vs. 1410 ml), +700 ml NICHT belegt und abweichend; F-02 Gehirn-120-g präzisiert (DGEM-Heimenterale 2024 belegt nur Gesamtkörper-Glukosebedarf 150–170 g/d, keine isolierte 120-g-Gehirnzahl → bleibt ⚠️). Korpusweit weiterhin 0 Treffer: Gehirn-spezifische 120 g (F-02), Ballaststoffe ~2 kcal/g (F-05), 7-Dehydrocholesterin (F-08). |
 | einträge | 16 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
 
@@ -48,7 +48,7 @@
 ### F-02: Kohlenhydrate — Energiegehalt und Anteil
 
 **Fakt:** Kohlenhydrate sind die Hauptenergiequelle des Körpers. Energiewert: **4 kcal pro Gramm** (Atwater; Pflege heute: 4,1 kcal/17,2 kJ). Empfohlener Anteil an der täglichen Nahrungsaufnahme: **55–60%** (Pflege heute Kap. 7; DGE qualitativ: KH liefern >50% der Energie), Schwerpunkt auf komplexen Kohlenhydraten mit Ballaststoffen. Einteilung nach Kettenlänge: Mono-, Di-, Polysaccharide. Glukose ist der Hauptenergielieferant; vor allem die Gehirnzellen können nur Glukose verbrennen. Der Körper kann nur 300–500 g Glukose (als Glykogen) speichern.
-⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool): Die konkrete Zahl **Gehirn verbraucht ca. 120 g Glukose/Tag** ist im Korpus nicht verbatim belegt (Pflege heute belegt nur qualitativ „nur Glukose verbrennen" + Speicherkapazität 300–500 g).
+⚠️ Die konkrete Zahl **Gehirn verbraucht ca. 120 g Glukose/Tag** ist korpusweit nicht verbatim belegt. Pflege heute belegt nur qualitativ „nur Glukose verbrennen" + Speicherkapazität 300–500 g. DGEM-Heimenterale 2024 nennt zwar einen Glukosebedarf, aber als **Gesamtkörper-Schätzwert (ca. 150–170 g/d)** unter Berücksichtigung des proteinsparenden Effekts — nicht als isolierten Gehirn-Tagesverbrauch von 120 g. Die 120-g-Zahl bleibt ⚠️ (korpusweit 0 Treffer für die Gehirn-spezifische 120-g-Angabe).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
@@ -63,6 +63,8 @@
 - Quelle: `leitlinien-volltext/who-zucker-2015.txt`
 - Zitat: "In both adults and children, WHO recommends reducing the intake of free sugars to less than 10% of total energy intake"
 - Zitat: "WHO suggests a further reduction of the intake of free sugars to below 5% of total energy intake (conditional recommendation"
+- Quelle: `leitlinien-volltext/dgem-heimenterale-2024.txt`
+- Zitat: "Glukosebedarf des Gehirns" (DGEM nennt im Kontext „Eine Glukoseaufnahme von 50-100 g wird als essentiell angesehen, um eine Ketose zu verhindern" + Gesamtkörper-Glukosebedarf „ca. 150-170 g/d" — belegt die Glukose-Abhängigkeit des Gehirns quantitativ, jedoch NICHT die isolierte 120-g-Gehirnzahl)
 **Praxisfehler:** Kohlenhydrate pauschal als "Dickmacher" weglassen statt komplexe KH (Vollkorn, Hülsenfrüchte) zu bevorzugen.
 
 **Misconceptions:**
@@ -75,17 +77,19 @@
 ### F-03: Fette — Energiedichte und Fettsäure-Qualität
 
 **Fakt:** Fette (Lipide) sind die energiedichteste Nährstoffgruppe: **9 kcal pro Gramm** (Atwater; Pflege heute: 9,3 kcal/38,9 kJ) — mehr als doppelt so viel wie KH/Protein. Empfohlener Anteil an der täglichen Nahrungsaufnahme: **25–30%** (Pflege heute Kap. 7). Entscheidend ist die Qualität: gesättigte Fettsäuren erhöhen das „schlechte" LDL-Cholesterin und sollten möglichst wenig verzehrt werden; ungesättigte Fettsäuren (Olivenöl, Rapsöl, Fisch) sind günstiger. Mehrfach ungesättigte (essentielle) Fettsäuren kann der Körper nicht selbst herstellen.
-⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool / Fett-Kapitel): Der konkrete Schwellenwert **gesättigte Fettsäuren <10% der Tagesenergie** ist im lokalen Korpus NICHT belegt — Pflege heute formuliert nur qualitativ („möglichst wenig").
+Der Schwellenwert **gesättigte Fettsäuren höchstens 10% der Kalorien** ist jetzt über Pflege heute (Kap. Fettstoffwechsel/Prävention) verbatim belegt: Fett sollte unter 30% der Kalorien liefern, davon je 10% mehrfach- und einfach ungesättigte und **höchstens 10% gesättigte Fettsäuren** (siehe Beleg). ⚠️ aufgelöst.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Konzept
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (Pflege heute Kap. 7; Atwater 1899; gesättigt-<10%-Schwellenwert: ⚠️ lokal nicht verifizierbar)
+**Primärquelle:** (Pflege heute Kap. 7 + Kap. Fettstoffwechsel/Prävention; Atwater 1899)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "1 g Fett liefert 9,3 kcal"
 - Zitat: "Täglicher Bedarf: 25–30 % der Gesamtnahrungsaufnahme"
 - Zitat: "Gesättigte Fettsäuren erhöhen das"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "einfach ungesättigte und höchstens 10 % gesättigte Fettsäuren" (im Kontext „Weniger als 30 % der Kalorien sollten aus Fett stammen (mindestens 10 % mehrfach ungesättigte, 10 % …)" — belegt den Schwellenwert ≤10% gesättigte Fettsäuren der Kalorien)
 **Praxisfehler:** Fett komplett meiden — führt zu Mangel an fettlöslichen Vitaminen (A, D, E, K) und essentiellen Fettsäuren.
 
 **Misconceptions:**
@@ -128,18 +132,22 @@ Der Referenzwert **0,8–1 g/kgKG/Tag für gesunde Erwachsene** ist über I Care
 
 ### F-05: Atwater-Faktoren / Energiedichte-Vergleich
 
-**Fakt:** Die physiologischen Brennwerte (Atwater-Faktoren) sind die Umrechnungswerte zwischen Masse und Energie. Pflege heute nennt: **Kohlenhydrate 4,1 kcal/g (17,2 kJ)**, **Eiweiß 4,1 kcal/g (17,2 kJ)**, **Fett 9,3 kcal/g** (gerundet: KH 4, Prot 4, Fett 9 kcal/g). **Wasser 0 kcal/g** (siehe F-01/M2). Fett ist über doppelt so energiedicht wie KH oder Eiweiß — relevant bei Mangelernährung (Anreicherung mit Sahne/Öl) und Übergewicht (Fettreduktion). ⚠️ Quelle beschaffen (DGE/Atwater-Originalwerte): Die häufig zitierten Rundwerte **Alkohol 7 kcal/g** und **Ballaststoffe ~2 kcal/g** sind im lokalen Korpus nicht belegt (Alkohol-7-kcal kommt nur in F-01/M3 und F-05/M3 als didaktische Aussage vor, ohne Primärbeleg).
+**Fakt:** Die physiologischen Brennwerte (Atwater-Faktoren) sind die Umrechnungswerte zwischen Masse und Energie. Pflege heute nennt: **Kohlenhydrate 4,1 kcal/g (17,2 kJ)**, **Eiweiß 4,1 kcal/g (17,2 kJ)**, **Fett 9,3 kcal/g** (gerundet: KH 4, Prot 4, Fett 9 kcal/g). **Wasser 0 kcal/g** (siehe F-01/M2). Fett ist über doppelt so energiedicht wie KH oder Eiweiß — relevant bei Mangelernährung (Anreicherung mit Sahne/Öl) und Übergewicht (Fettreduktion). Der Brennwert **Alkohol 7 kcal/g (≈30 kJ)** ist jetzt verbatim belegt: die Expertenstandards-Gebrauchsanleitung führt in ihrer Brennwert-Tabelle „Alkohol 7,0 kcal/g", I Care Anatomie nennt „30 kJ (= 7 kcal)" und WHO 2015 „7 kcal/29.3 kJ per gram" (siehe Beleg). ⚠️ Nur der Rundwert **Ballaststoffe ~2 kcal/g** bleibt korpusweit nicht belegt (didaktische Faustregel; im Korpus erscheint „2 kcal" nur als Energiedichte enteraler Sondennahrung, nicht als Ballaststoff-Brennwert).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Bloom-Potential:** 4 (Analysieren)
-**Primärquelle:** (Pflege heute Kap. 7; DGE 2024; Alkohol/Ballaststoffe: ⚠️ lokal nicht verifizierbar)
+**Primärquelle:** (Pflege heute Kap. 7; Expertenstandards-Gebrauchsanleitung Anhang [Brennwert-Tabelle]; I Care Anatomie; WHO 2015; Ballaststoffe ~2 kcal/g: ⚠️ lokal nicht verifizierbar)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "1 g Kohlenhydrate liefert 4,1 kcal (17,2 kJ)"
 - Zitat: "1 g Eiweiß liefert"
 - Zitat: "1 g Fett liefert 9,3 kcal"
 - Zitat: "1 kcal entspricht 4,185 kJ"
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Alkohol 7,0 kcal/g" (Brennwert-Tabelle: Protein 4,1 / Fett 9,3 / Kohlenhydrate 4,1 / Alkohol 7,0 kcal/g — belegt den Alkohol-Brennwert)
+- Quelle: `icare-anatomie-volltext/icare-anatomie.txt`
+- Zitat: "30 kJ (= 7 kcal)" (Energiegehalt Alkohol je Gramm — belegt 7 kcal/g ≈ 30 kJ)
 **Praxisfehler:** Bei Mangelernährung wird die Portion vergrößert statt energetisch angereichert (Fett/Sahne) — der Patient schafft die Menge nicht.
 
 **Misconceptions:**
@@ -198,7 +206,7 @@ Der **DGE-Richtwert ≥ 30 g/Tag** für Erwachsene ist jetzt verbatim über die 
 
 ### F-08: Vitamin D — Sonderstellung und Mangel
 
-**Fakt:** Vitamin D (Calciferol) nimmt eine Sonderstellung ein: Es kann im Körper unter Sonnenlicht-Einfluss gebildet werden — Pflege heute spricht von „fehlender Bildung im Körper" als Supplementierungs-Indikation. Funktionen: Knochenbildung, Aufnahme von Kalzium und Phosphaten (Knochen), Muskelfunktion (Sturzprävention). Vitamin D (v.a. bei älteren Menschen) ist eine der wenigen relevanten Mangel-Ausnahmen in Deutschland. Empfehlung bei fehlender Eigensynthese (Pflege heute, Osteoporoseprävention): **Vitamin D 10–20 µg/Tag**. Die DGE/D-A-CH-Referenzwerte bestätigen qualitativ, dass ab dem 50.–60. Lebensjahr für Vitamin D eine höhere Zufuhr empfohlen wird; der obere Grenzwert für Erwachsene liegt bei 50 µg/Tag. Risikogruppen: Ältere, Pflegeheimbewohner, dunkle Haut, Vollverschleierung, Säuglinge. Mangelfolgen: Rachitis (Kinder), Osteomalazie, Begünstigung der Osteoporose, Muskelschwäche, erhöhtes Sturzrisiko. Der Synthese-Mechanismus ist über I Care Anatomie nun präziser belegt: **Cholecalciferol** wird in der Haut aus **Cholesterin** unter Sonneneinstrahlung gebildet und in Leber und Niere zur aktiven Form (1,25-Dihydroxycholecalciferol) umgewandelt. Der konkrete **Vitamin-D-Referenzwert von 20 µg/Tag (= 800 IE; Standard-Umrechnung 1 µg = 40 IE) bei fehlender Eigensynthese** ist jetzt verbatim über die DGE-D-A-CH-Referenzwerte belegt (siehe Beleg). ⚠️ Der biochemische Fachbegriff "7-Dehydrocholesterin" als exakte Vorstufe bleibt im Korpus unbelegt (I Care Anatomie nennt nur „Cholesterin" als Ausgangsstoff); die IE-Umrechnung 800 IE ist arithmetisch, nicht DGE-Wortlaut.
+**Fakt:** Vitamin D (Calciferol) nimmt eine Sonderstellung ein: Es kann im Körper unter Sonnenlicht-Einfluss gebildet werden — Pflege heute spricht von „fehlender Bildung im Körper" als Supplementierungs-Indikation. Funktionen: Knochenbildung, Aufnahme von Kalzium und Phosphaten (Knochen), Muskelfunktion (Sturzprävention). Vitamin D (v.a. bei älteren Menschen) ist eine der wenigen relevanten Mangel-Ausnahmen in Deutschland. Empfehlung bei fehlender Eigensynthese (Pflege heute, Osteoporoseprävention): **Vitamin D 10–20 µg/Tag**. Die DGE/D-A-CH-Referenzwerte bestätigen qualitativ, dass ab dem 50.–60. Lebensjahr für Vitamin D eine höhere Zufuhr empfohlen wird; der obere Grenzwert für Erwachsene liegt bei 50 µg/Tag. Risikogruppen: Ältere, Pflegeheimbewohner, dunkle Haut, Vollverschleierung, Säuglinge. Mangelfolgen: Rachitis (Kinder), Osteomalazie, Begünstigung der Osteoporose, Muskelschwäche, erhöhtes Sturzrisiko. Der Synthese-Mechanismus ist über I Care Anatomie nun präziser belegt: **Cholecalciferol** wird in der Haut aus **Cholesterin** unter Sonneneinstrahlung gebildet und in Leber und Niere zur aktiven Form (1,25-Dihydroxycholecalciferol) umgewandelt. Der konkrete **Vitamin-D-Referenzwert von 20 µg/Tag (= 800 IE; Standard-Umrechnung 1 µg = 40 IE) bei fehlender Eigensynthese** ist jetzt verbatim über die DGE-D-A-CH-Referenzwerte belegt (siehe Beleg). ⚠️ Der biochemische Fachbegriff "7-Dehydrocholesterin" als exakte Vorstufe bleibt im Korpus unbelegt (korpusweit 0 Treffer für „Dehydrocholesterin"; I Care Anatomie nennt nur „Cholesterin" als Ausgangsstoff); die IE-Umrechnung 800 IE ist arithmetisch, nicht DGE-Wortlaut.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
@@ -263,12 +271,12 @@ I Care Examen kompakt belegt die Abgrenzung nach **Körpertrockenmasse** (mg/kg)
 ### F-10: Flüssigkeitsbedarf
 
 **Fakt:** Wasser ist mengenmäßig der größte Körperbestandteil: Der Körper eines Erwachsenen besteht zu **ca. 60%** aus Wasser, bei Neugeborenen zu ca. **80%** (Pflege heute Kap. 7). Flüssigkeitsbedarf ist von Lebensalter und Körpergewicht abhängig; Erwachsene (bis 50 J.) benötigen **ca. 35 ml/kg KG/Tag** (Pflege heute Tab. 7.6). Diese Gesamtflüssigkeitsmenge wird zu einem Teil über die Nahrung gedeckt (Pflege heute: ~0,33 ml je zugeführter kcal), der Rest ist Trinkmenge. Mehrbedarf u. a. bei Fieber, Diarrhö, Erbrechen, starkem Schwitzen. Senioren-Problem: vermindertes Durstempfinden → hohes Dehydratationsrisiko → aktive Trinkbegleitung und Trinkprotokoll.
-Die Faustregel **+500 ml/°C Fieber** ist über I Care Examen kompakt belegt (Perspiratio insensibilis). Der **DGE-Trinkmengenrichtwert „ca. 1,5 l"** ist qualitativ belegt (I Care Examen kompakt: "ca. 1,5–3 l täglich"). Die Zusatzregel **+700 ml beim Stillen** ist im Korpus NICHT verbatim belegt — bleibt ⚠️.
+Die Faustregel **+500 ml/°C Fieber** ist über I Care Examen kompakt belegt (Perspiratio insensibilis). Der **DGE-Trinkmengenrichtwert „ca. 1,5 l"** ist qualitativ belegt (I Care Examen kompakt: "ca. 1,5–3 l täglich"). **SACHKORREKTUR (2026-06-11):** Die früher genannte Zusatzregel „+700 ml beim Stillen" ist im Korpus NICHT verbatim belegt und weicht von den belegbaren DGE-Referenzwerten ab: Die DGE-D-A-CH-Wasserbilanz nennt für Stillende eine Getränke-Wasserzufuhr von 1710 ml vs. 1410 ml (25–<51 J.) — also **rund +300 ml über Getränke** bzw. +450–500 ml Gesamtwasser, nicht +700 ml. Der konkrete Stillzeit-Mehrbedarf wird daher als „Stillende: erhöhte Flüssigkeitszufuhr (DGE: Getränke ca. 1,7 l/Tag)" geführt. I Care Examen kompakt belegt parallel einen **Energie-Mehrbedarf von ca. 500–800 kcal** in der Stillzeit (nicht Flüssigkeit).
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (Pflege heute Kap. 7 Tab. 7.5/7.6; I Care Examen kompakt Kap. 18.1.1.5 + Tab. 18.4 + Merke Perspiratio; +700 ml Stillen: ⚠️ lokal nicht verifizierbar)
+**Primärquelle:** (Pflege heute Kap. 7 Tab. 7.5/7.6; I Care Examen kompakt Kap. 18.1.1.5 + Tab. 18.4 + Merke Perspiratio; DGE-D-A-CH-Wasserreferenzwerte [Stillende])
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Der Flüssigkeitsbedarf ist von Lebensalter und Körpergewicht abhängig"
@@ -278,6 +286,10 @@ Die Faustregel **+500 ml/°C Fieber** ist über I Care Examen kompakt belegt (Pe
 - Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
 - Zitat: "Bei Fieber rechnet man zusätzlich pro Tag ca. 500 ml Flüssigkeitsverlust pro 1°C erhöhter Temperatur."
 - Zitat: "Zufuhrmenge: ca. 1,5–3 l täglich"
+- Quelle: `dge-referenzwerte-volltext/dge-wasser.txt`
+- Zitat: "Wasserzufuhr durch Getränke = Gesamtwasserzufuhr - Oxidationswasser - Wasserzufuhr durch feste Nahrung" (definiert die Tabellenspalte; Stillende = 1710 ml Getränke / 3100 ml Gesamtwasser vs. Erwachsene 25–<51 J. 1410 / 2600 ml — belegt Stillzeit-Mehrbedarf ca. +300 ml Getränke statt +700 ml)
+- Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
+- Zitat: "von ca. 500–800 kcal" (Kontext „Stillende Frauen haben einen täglichen Mehrbedarf …" — belegt Energie-, nicht Flüssigkeits-Mehrbedarf)
 **Praxisfehler:** Auf Durst warten statt aktiv zum Trinken zu motivieren — bei Senioren ist Durst ein später, unzuverlässiger Indikator.
 
 **Misconceptions:**

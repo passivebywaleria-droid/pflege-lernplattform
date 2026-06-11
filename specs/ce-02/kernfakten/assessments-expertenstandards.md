@@ -10,7 +10,7 @@
 | quellen | DNQP Expertenstandards (Dekubitusprophylaxe, Schmerzmanagement, Mundgesundheit, Hautintegrität — `dnqp-standards-index/`); Pflege heute 7. Aufl. Kap. Pflegeassessment, Schmerz, Qualität (`pflege-heute-volltext/`); Schiemann/Moers/Büscher „Expertenstandards Gebrauchsanleitung" 4. Aufl. 2020 (`expertenstandards-gebrauchsanleitung-volltext/`); Donabedian (Jahr 1966 korpus-unbelegt ⚠️); Mahoney/Barthel 1965; Braden/Bergstrom 1987 (Subskalen+Spanne jetzt belegt via Gebrauchsanleitung Anhang 2); Guigoz 1994 (Spannen+Cut-off jetzt belegt via Gebrauchsanleitung Anhang 17); Podsiadlo/Richardson 1991 (Schwellenwerte/3 Meter korpus-unbelegt ⚠️); NANDA-I 2021-2023 (`nanda-pflegediagnosen-volltext/`); § 113a SGB XI; § 135a/137a SGB V |
 | einträge | 14 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
-| grounding | 2026-06-11 Nachbesserung (neue Korpora): 39→52 verifizierte Verbatim-Belege; 9 von 13 ⚠️ aufgelöst; 2 ⚠️ verbleiben (F-04 Donabedian-Jahr 1966, F-09 TUG-Schwellenwerte/3 Meter — kein Korpus-Treffer); Sachkorrektur F-03: Anzahl entschärft auf „mindestens 11", Claim „12" nicht verbatim belegbar |
+| grounding | 2026-06-11 Nachbesserung (neue Korpora): 39→52 verifizierte Verbatim-Belege; 9 von 13 ⚠️ aufgelöst; 2 ⚠️ verbleiben (F-04 Donabedian-Jahr 1966, F-09 TUG-Schwellenwerte/3 Meter — kein Korpus-Treffer); Sachkorrektur F-03: Anzahl entschärft auf „mindestens 11", Claim „12" nicht verbatim belegbar. 2026-06-11 Quer-Korpus-Welle (ALLE Korpora gleichzeitig): F-04 nur Donabedian-Lebensdaten, keine Jahreszahl 1966; F-09 TUG-Schwellen/3-Meter/Ablauf weiterhin 0 Treffer — beide bleiben ehrlich offen. |
 
 ---
 
@@ -115,7 +115,7 @@
 - Zitat: "schlägt Donabedian vor, Qualität auf den Ebenen Struktur, Prozess und Ergebnis zu beurteilen" (belegt: S-P-E geht auf Donabedian zurück)
 - Quelle: `icare-examen-kompakt-volltext/icare-examen-kompakt.txt`
 - Zitat: "unterteilt die Pflegequalität in 3 Kategorien:"
-- ⚠️ Jahreszahl 1966 (Milbank Memorial Fund Quarterly) bleibt unbelegt — kein Korpus nennt die Originalarbeit 1966. Lebensdaten (1919–2000) sind belegt. Fakt wurde auf "(1919–2000)" entschärft. NACHGEPRÜFT (2026-06-11): Auch der neue Korpus `icare-pflege-volltext/` nennt Donabedian (Definition + 3 Kategorien), aber keine Jahreszahl 1966 — ⚠️ bleibt.
+- ⚠️ Jahreszahl 1966 (Milbank Memorial Fund Quarterly) bleibt unbelegt — kein Korpus nennt die Originalarbeit 1966. Lebensdaten (1919–2000) sind belegt. Fakt wurde auf "(1919–2000)" entschärft. NACHGEPRÜFT (2026-06-11): Auch der neue Korpus `icare-pflege-volltext/` nennt Donabedian (Definition + 3 Kategorien), aber keine Jahreszahl 1966 — ⚠️ bleibt. (Quer-Korpus 2026-06-11: ALLE Korpora gegrept — einziger Datums-Treffer ist „Avedis Donabedian (1919–" in icare-examen-kompakt, keine Jahreszahl 1966/„Milbank" irgendwo; bleibt ehrlich offen.)
 **Praxisfehler:** Nur das Ergebnis betrachten ("Bewohner zufrieden = alles gut") und Struktur- und Prozessqualität vernachlässigen.
 
 **Misconceptions:**
@@ -251,7 +251,7 @@
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Timed Up & Go-Test (Mobilität)" (belegt nur Existenz/Zweck des Instruments)
-- ⚠️ Schwellenwerte (<10 / ≥20 / ≥30 Sek.), Strecke "3 Meter" und Ablauf (Aufstehen → Gehen → Umdrehen → Setzen) sind in KEINEM der verfügbaren Korpora verbatim belegt (geprüft: Pflege heute, Gebrauchsanleitung, I Care Examen Kompakt, Prüfungswissen, DNQP Sturzprophylaxe; NACHGEPRÜFT 2026-06-11: auch neue Korpora I Care Pflege + I Care Krankheitslehre — kein TUG-Treffer). Originalarbeit Podsiadlo & Richardson 1991 (JAGS 39(2)) nicht im Korpus. Detailwerte in Bausteinens NICHT als belegte Fakten verwenden; nur belegbare Aussage: "Timed Up & Go-Test (Mobilität)" (Pflege heute) und "Timed-Up-and-Go-Test TUG erwähnenswert, da er bereits im Rahmen des Expertenstandards Sturzprophylaxe eine Rolle spielte" (Gebrauchsanleitung).
+- ⚠️ Schwellenwerte (<10 / ≥20 / ≥30 Sek.), Strecke "3 Meter" und Ablauf (Aufstehen → Gehen → Umdrehen → Setzen) sind in KEINEM der verfügbaren Korpora verbatim belegt (geprüft: Pflege heute, Gebrauchsanleitung, I Care Examen Kompakt, Prüfungswissen, DNQP Sturzprophylaxe; NACHGEPRÜFT 2026-06-11: auch neue Korpora I Care Pflege + I Care Krankheitslehre — kein TUG-Treffer). Originalarbeit Podsiadlo & Richardson 1991 (JAGS 39(2)) nicht im Korpus. Detailwerte in Bausteinens NICHT als belegte Fakten verwenden; nur belegbare Aussage: "Timed Up & Go-Test (Mobilität)" (Pflege heute) und "Timed-Up-and-Go-Test TUG erwähnenswert, da er bereits im Rahmen des Expertenstandards Sturzprophylaxe eine Rolle spielte" (Gebrauchsanleitung). (Quer-Korpus 2026-06-11: ALLE Korpora gegrept — „drei Meter"/„3 m gehen", der Ablauf „Aufstehen→Gehen→Umdrehen→Setzen" und jede TUG-Sekunden-Schwelle weiterhin 0 Treffer; bleibt ehrlich offen.)
 **Praxisfehler:** Beim TUG nur die Zeit stoppen und die Bewegungsqualität (Unsicherheit, Abstützen, Gleichgewichtsverlust) ignorieren.
 
 **Misconceptions:**

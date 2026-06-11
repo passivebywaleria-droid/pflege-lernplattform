@@ -10,7 +10,7 @@
 | quellen | Pflege heute 7. Aufl. Kap. 9 Bewegung/Mobilisation; DNQP Expertenstandard Erhaltung und Förderung der Mobilität in der Pflege (2020); Bobath-Konzept (Bobath 1948 ff.); Kinästhetik (Hatch/Maietta 1982 ff.); BGW (2019) Rückengerechtes Arbeiten; ArbSchG/LasthandhabV; § 630d BGB |
 | einträge | 13 |
 | erstellt | 2026-06-10 (Dozentin A, quellengebunden aus bausteine-plan.md) |
-| grounding | 2026-06-11 (Zyklus 11, I-Care-Korpus): ⚠️ 9→5. Aufgelöst: F-03 (Bettkante-Kreislauf-Check via I Care belegt, 2-3-Min-Wert bleibt draußen), F-04 (Zeitfenster „OP-Tag abends, spätestens 1. post-OP-Tag morgens" via I Care verbatim), F-09 (§ 1/§ 5/§ 15 ArbSchG via pruefungswissen + examen-kompakt; SACHKORREKTUR Statistik: Frühberentungs-Claim ersetzt durch TK-2019-Fehltage-Statistik aus I Care), F-11 (alle unbelegten Werte waren bereits entfernt, Rest-Text voll belegt). Verbleibend ⚠️: F-01 (10 %-Muskelmasse-Wochenwert), F-02 (exakte 6-Kriterien-Benennung DNQP Mobilität), F-05 (nur noch „Stoppfunktion mit Fuß" — Schulter-Griff jetzt via I-Care-Bobath belegt), F-06 (Gehstock-Hand-Regel), F-07 (nur noch BGW-40-kg + Stehlifter — „zu zweit" jetzt belegt). Bonus: Esslinger Transferskala via pruefungswissen belegt (F-13). |
+| grounding | 2026-06-11 (Zyklus 11, I-Care-Korpus): ⚠️ 9→5. Aufgelöst: F-03 (Bettkante-Kreislauf-Check via I Care belegt, 2-3-Min-Wert bleibt draußen), F-04 (Zeitfenster „OP-Tag abends, spätestens 1. post-OP-Tag morgens" via I Care verbatim), F-09 (§ 1/§ 5/§ 15 ArbSchG via pruefungswissen + examen-kompakt; SACHKORREKTUR Statistik: Frühberentungs-Claim ersetzt durch TK-2019-Fehltage-Statistik aus I Care), F-11 (alle unbelegten Werte waren bereits entfernt, Rest-Text voll belegt). Bonus: Esslinger Transferskala via pruefungswissen belegt (F-13). **2026-06-11 Quer-Korpus-Welle: ⚠️ 5→4.** Aufgelöst: F-02 (DNQP-Mobilitäts-Standard + 6-Kriterien-Architektur S1–S6 via `expertenstandards-gebrauchsanleitung-volltext` verbatim belegt; SACHKORREKTUR: Standard ist Januar 2015 nach § 113a SGB XI, nicht 2020). Verbleibend ⚠️ (Quer-Korpus erneut geprüft, 0 Treffer): F-01 (10 %-Muskelmasse-Wochenwert — Korpus nennt nur post-OP-Proteinverlust 340 g/1,7 kg in 7 d, anderes Konstrukt), F-05 (nur noch „Stoppfunktion mit Fuß"), F-06 (Gehstock-gesunde-Hand-Seitenregel — auch Paetz/pruefungswissen/Leitlinien ohne Seitenregel), F-07 (BGW-40-kg + Stehlifter). |
 
 ---
 
@@ -39,16 +39,28 @@
 
 ### F-02: DNQP-Expertenstandard Mobilität (2020)
 
-**Fakt:** Die Förderung der Mobilität ist im nationalen DNQP-Expertenstandard „Erhaltung und Förderung der Mobilität in der Pflege" (2020) geregelt. Wie alle DNQP-Standards gliedert er sich in sechs Standardkriterien (jeweils Struktur-, Prozess- und Ergebnisebene): einschätzen, informieren/beraten, planen, durchführen, evaluieren, dokumentieren/überleiten. Die Einschätzung erfolgt bei Aufnahme UND bei jeder Zustandsveränderung — unterstützt durch Instrumente wie Tinetti-Test, Timed Up & Go-Test (TUG) und Barthel-Index.
-⚠️ Quelle beschaffen (konkrete Primärquelle): Die EXAKTE 6-Kriterien-Benennung speziell des Mobilitäts-Standards (einschätzen → … → überleiten) ist im Korpus nicht verbatim belegbar — Pflege heute beschreibt nur den allgemeinen Donabedian-Aufbau (Struktur/Prozess/Ergebnis), die DNQP-Dekubitus-Extrakte zeigen die S1–S6-Struktur themengleich, aber nicht den Mobilitäts-Standard. Original-DNQP-Standard „Mobilität" (2020) beschaffen, dann die konkrete Kriterien-Reihenfolge belegen. Die 6-Kriterien-/Struktur-Prozess-Ergebnis-ARCHITEKTUR ist jedoch über die Dekubitus-S1–S6 + Donabedian-Aufbau gedeckt (siehe Zweitzitate).
+**Fakt:** Die Förderung der Mobilität ist im nationalen DNQP-Expertenstandard „Erhaltung und Förderung der Mobilität in der Pflege" (nach § 113a SGB XI, Januar 2015) geregelt. Wie alle DNQP-Standards gliedert er sich in sechs Standardkriterien (S1–S6, jeweils mit Struktur-, Prozess- und Ergebnisebene): Risikoerhebung/Assessment, Verfahrensregelung, Planung von Maßnahmen, Durchführung, Information/Anleitung/Schulung/Beratung, Evaluation. Die Einschätzung erfolgt bei Aufnahme UND bei jeder Zustandsveränderung — unterstützt durch Instrumente wie Tinetti-Test, Timed Up & Go-Test (TUG) und Barthel-Index.
+> Hinweis (aufgelöst 2026-06-11, Quer-Korpus): Die 6-Kriterien-/Struktur-Prozess-Ergebnis-ARCHITEKTUR jedes DNQP-Standards ist jetzt generisch und verbatim über die „Expertenstandards Gebrauchsanleitung" (Schiemann/Moers/Büscher, 4. Aufl. 2020) belegt: dort sind die sechs Standardkriterien S1–S6 explizit aufgeführt (S1 Risikoerhebung/Assessment, S2 Verfahrensregel, S3 Planung, S4 Durchführung, S5 Information/Anleitung/Schulung/Beratung, S6 Evaluation) und jedem Standardkriterium sind Struktur-, Prozess- und Ergebniskriterien zugeordnet (siehe Belege). Damit ist die im Fakt genannte 6-gliedrige Architektur quellengedeckt. Verbleibender Vorbehalt: die EXAKTE Wortwahl der sechs Kriterien speziell des Mobilitäts-Standards („einschätzen … überleiten") ist eine didaktische Glättung der generischen S1–S6-Systematik; für die wörtliche Mobilitäts-Standard-Formulierung ggf. den Original-DNQP-Standard beschaffen. SACHKORREKTUR (2026-06-11): Der DNQP-Standard „Erhaltung und Förderung der Mobilität in der Pflege" wurde nach § 113a SGB XI im **Januar 2015** veröffentlicht (Gebrauchsanleitung 2020, verbatim) — die im Fakt-Text geführte Jahresangabe „(2020)" ist daher der Stand der Gebrauchsanleitung, nicht des Original-Standards; Fakt-Text auf „(DNQP 2015)" präzisiert.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Klassifikation
 **Bloom-Potential:** 2-3 (Verstehen, Anwenden)
-**Primärquelle:** (DNQP 2020; Pflege heute 7. Aufl. Kap. 9.5)
+**Primärquelle:** (DNQP 2015; Schiemann/Moers/Büscher Gebrauchsanleitung 4. Aufl. 2020; Pflege heute 7. Aufl. Kap. 9.5)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Förderung der Mobilität wird im nationalen Expertenstandard"
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Erhaltung und Förderung der Mobilität"  (Gebrauchsanleitung: Titel des DNQP-Standards Nr. 10 nach § 113a SGB XI — Forts. im Quelltext: „in der Pflege (Januar 2015)")
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "Struktur-, Prozess- und Ergebniskriterien wurden für jedes Standardkriterium"  (belegt generisch: jedes Standardkriterium hat eine Struktur-/Prozess-/Ergebnisebene)
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "S1 Risikoerhebung, Screening, Assessment, erforderliche Kompetenz der PFK"  (belegt Standardkriterium S1 — Einschätzung/Assessment)
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "S3 Planung von Maßnahmen"  (belegt Standardkriterium S3 — Planung)
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "S5 Information, Anleitung, Schulung und Beratung"  (belegt Standardkriterium S5)
+- Quelle: `expertenstandards-gebrauchsanleitung-volltext/expertenstandards-gebrauchsanleitung.txt`
+- Zitat: "S6 Evaluation"  (belegt Standardkriterium S6 — Evaluation; zusammen mit S1/S3/S5 + S2 Verfahrensregel/S4 Durchführung = sechsgliedrige Architektur)
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Handkraftmessung und Tinetti-Test"  (belegt Instrument Tinetti-Test, geriatrisches Assessment)
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
