@@ -31,6 +31,23 @@ get "https://www.nhshighland.scot.nhs.uk/media/ap4fvgob/complete_iddsi_framework
 get "https://nzwcs.org.nz/images/1Resources/Quick_Ref_2019_PI_Guidelines.pdf" "epuap-dekubitus-2019"
 get "https://www.dge.de/fileadmin/dok/wissenschaft/referenzwerte/Erlaeuterungen_2021.pdf" "dge-referenzwerte-erlaeuterungen"
 get "https://ernaehrungs-umschau.de/fileadmin/Ernaehrungs-Umschau/pdfs/pfd_2009/06_09/EU06_346_353.qxd.pdf" "dge-dach-referenzwerte"
+
+# Amtliche Gesetzestexte (gesetze-im-internet.de, HTML -> txt via textutil/macOS).
+# Belegen Pflegedokumentation: § 630f BGB (Dokumentationspflicht/Pflichtinhalte/eDoku-Aenderbarkeit),
+# § 267 StGB (Urkundenfaelschung), § 203 StGB (Schweigepflicht).
+getlaw() { # <url> <slug>
+  curl -sL -A "Mozilla/5.0" -o "$PDFDIR/$2.html" "$1"
+  if command -v textutil >/dev/null 2>&1; then
+    textutil -convert txt -encoding UTF-8 -output "$TXTDIR/$2.txt" "$PDFDIR/$2.html" 2>/dev/null || true
+  else
+    # Fallback ohne macOS: grobe HTML->txt-Reinigung
+    sed -e 's/<[^>]*>//g' "$PDFDIR/$2.html" > "$TXTDIR/$2.txt"
+  fi
+  printf "  %-32s %8s Woerter\n" "$2" "$(wc -w < "$TXTDIR/$2.txt" | tr -d ' ')"
+}
+getlaw "https://www.gesetze-im-internet.de/bgb/__630f.html" "bgb-630f"
+getlaw "https://www.gesetze-im-internet.de/stgb/__267.html" "stgb-267"
+getlaw "https://www.gesetze-im-internet.de/stgb/__203.html" "stgb-203"
 # Weitere frei verfügbare Quellen hier ergänzen (siehe specs/QUELLEN-EINKAUFSLISTE-2026-06-10.md Abschnitt A/B):
 # get "<DGE D-A-CH Referenzwerte>" "dge-referenzwerte"
 # get "<ESPEN/DGEM Klinische Ernaehrung>" "espen-klinische-ernaehrung"

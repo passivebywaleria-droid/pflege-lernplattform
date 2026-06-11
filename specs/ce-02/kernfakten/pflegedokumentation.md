@@ -7,7 +7,7 @@
 | cluster | A (Pflegeprozess & Grundlagen) |
 | geschätzteUE | 7 |
 | wissensart | konzept |
-| quellen | Pflege heute 7. Aufl. Kap. Informationsmanagement und Pflegedokumentation; § 630f BGB; § 203 StGB; BMG Strukturmodell/SIS (Beikirch & Roes 2014); Leonard et al. 2004 (SBAR); WHO 2007 (ISBAR); DNQP Entlassungsmanagement 2019 |
+| quellen | Pflege heute 7. Aufl. Kap. Informationsmanagement und Pflegedokumentation; § 630f BGB (amtlicher Volltext); § 267 StGB (amtlicher Volltext); § 203 StGB (amtlicher Volltext); BMG Strukturmodell/SIS (Beikirch & Roes 2014); Leonard et al. 2004 (SBAR); WHO 2007 (ISBAR); DNQP Entlassungsmanagement 2019 |
 | einträge | 14 |
 | erstellt | 2026-06-10 (Dozentin A, aus bausteine-plan.md) |
 
@@ -27,8 +27,9 @@
 - Zitat: "Der Dienstleister muss nun belegen und beweisen, welche Pflegemaßnahmen wann und warum durchgeführt wurden"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Bereits in den 1970er-Jahren hat auch der" / "Gesetzgeber die Bedeutung einer exakten" / "Dokumentation erkannt und inzwischen alle Einrichtungen des Gesundheitswesens" / "durch verschiedene Vorschriften in Sozialgesetzbüchern und im Pflegeberufegesetz" / "zur Dokumentation verpflichtet" (gesetzliche Pflicht, keine freiwillige Zusatzaufgabe — belegt über SGB/Pflegeberufegesetz)
-- ⚠️ Quelle beschaffen — die konkrete Rechtsnorm "§ 630f BGB" (Dokumentationspflicht des Behandelnden) ist im Korpus nicht verbatim belegt; Pflege heute nennt nur generisch "Vorschriften in Sozialgesetzbüchern und im Pflegeberufegesetz" sowie § 630 b–h BGB im Kontext ärztlicher Aufklärung (§ 630c/e), nicht § 630f. Beleg: Gesetzestext § 630f BGB (Bürgerliches Gesetzbuch) beschaffen oder Norm-Verweis auf die belegte generische Pflicht reduzieren.
-- ⚠️ Quelle beschaffen — der Praxisleitsatz "Was nicht dokumentiert ist, gilt als nicht durchgeführt" ist im Korpus nicht verbatim belegt. Beleg z. B. juristischer Dokumentations-Leitfaden / BGB § 630f-Kommentierung beschaffen oder als didaktische Merkregel (nicht als Zitat) kennzeichnen.
+- Quelle: `leitlinien-volltext/bgb-630f.txt`
+- Zitat: "Der Behandelnde ist verpflichtet, zum Zweck der Dokumentation in unmittelbarem zeitlichen Zusammenhang mit der Behandlung eine Behandlungsakte in Papierform oder elektronisch zu führen." (§ 630f Abs. 1 S. 1 BGB — Dokumentationspflicht des Behandelnden, gesetzliche Pflicht)
+- ⚠️ BLEIBT — der Praxisleitsatz "Was nicht dokumentiert ist, gilt als nicht durchgeführt" ist KEIN Gesetzeswortlaut (steht nicht in § 630f BGB) und im Korpus nicht verbatim belegt. Er ist eine didaktische Merkregel, die die Beweislastumkehr-Folge zuspitzt — im Schüler-Content als solche kennzeichnen (nicht als Zitat/Rechtsnorm ausgeben). Verbatim-Beleg nur über juristische Kommentierung beschaffbar.
 **Praxisfehler:** Dokumentation wird als lästige Bürokratie statt als rechtliche Absicherung gesehen — und im Stress weggelassen.
 
 **Misconceptions:**
@@ -80,7 +81,9 @@
 - Zitat: "betrachtet und sachlich, ohne Vorurteile beurteilt" (objektiv/wertfrei — keine Privatmeinungen/Wertungen)
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Nach jedem erfolgten Sturz, auch wenn" / "der Gestürzte keine Verletzungen hat," / "fertigen Pflegende ein Protokoll an" (Besonderheiten: Stürze werden protokolliert)
-- ⚠️ Quelle beschaffen / entschärfen — die Teilaussagen "Haut" (Pflege heute listet im Dokumentations-Inhalt "Wundverhältnisse, Aussehen", nicht den Begriff "Haut"), "Abweichungen von der Planung" als eigenständiger Dokumentations-Inhalt (im Korpus nur im Kontext der Charting-by-Exception-Formulare, nicht als Pflicht-Inhalt verbatim) und "Unfälle" (im Korpus nur Sturzereignisprotokoll, kein generischer Unfall-Begriff) sind nicht verbatim als Pflichtinhalte belegt. Beleg z. B. § 630f Abs. 2 BGB (Inhalt der Patientenakte) / Dokumentations-Leitfaden beschaffen oder Teilaussagen auf die belegten Inhalte (Messwerte, Beobachtungen, Maßnahmen, ärztliche Anordnungen, Reaktionen, Stürze) reduzieren.
+- Quelle: `leitlinien-volltext/bgb-630f.txt`
+- Zitat: "sämtliche aus fachlicher Sicht für die derzeitige und künftige Behandlung wesentlichen Maßnahmen und deren Ergebnisse aufzuzeichnen, insbesondere die Anamnese, Diagnosen, Untersuchungen, Untersuchungsergebnisse, Befunde, Therapien und ihre Wirkungen, Eingriffe und ihre Wirkungen, Einwilligungen und Aufklärungen." (§ 630f Abs. 2 BGB — gesetzliche Pflichtinhalte: wesentliche Maßnahmen + Ergebnisse, Anamnese, Diagnosen, Untersuchungen, Untersuchungsergebnisse, Befunde, Therapien + Wirkungen, Eingriffe + Wirkungen, Einwilligungen, Aufklärungen)
+- ⚠️ BLEIBT — die Teilaussagen "Haut" (Pflege heute listet "Wundverhältnisse, Aussehen", § 630f Abs. 2 nennt "Haut" NICHT namentlich), "Abweichungen von der Planung" als eigenständiger Dokumentations-Inhalt (im Korpus nur im Kontext der Charting-by-Exception-Formulare, in § 630f nicht genannt) und "Unfälle" (im Korpus nur Sturzereignisprotokoll, § 630f nennt keinen generischen Unfall-Begriff) sind weiterhin nicht verbatim als Pflichtinhalte belegt. § 630f Abs. 2 deckt die o. g. Inhalte, NICHT diese drei Begriffe — daher nicht mit dem Paragraphen kaschieren. Beleg z. B. Dokumentations-Leitfaden beschaffen oder Teilaussagen auf die belegten Inhalte reduzieren.
 **Praxisfehler:** Wertungen ("Patient ist unkooperativ") statt beobachtbarer Fakten ("verweigerte die Mobilisation mit den Worten...").
 
 **Misconceptions:**
@@ -241,7 +244,9 @@
 - Zitat: "Authentizität: Das Dokumentationssystem ist eine Urkunde" (Urkundeneigenschaft)
 - Zitat: "Keine Eintragungen mit Bleistift vornehmen" (kein Bleistift)
 - Zitat: "Eintragungen weder überkleben noch" / "mit Korrekturstiften übermalen" (kein Überkleben/Korrekturstift)
-- ⚠️ Quelle beschaffen — die strafrechtliche Einordnung "Urkundenfälschung, § 267 StGB" sowie das konkrete Korrektur-Verfahren ("einmal durchstreichen, Original lesbar lassen, Korrektur daneben mit Datum + Handzeichen", "Rückdatieren unzulässig") sind im Korpus nicht verbatim belegt. Pflege heute belegt nur die Urkundeneigenschaft + Bleistift-/Korrekturstift-Verbot. Beleg: Gesetzestext § 267 StGB (Urkundenfälschung) + Dokumentations-Leitfaden beschaffen. (Fachlich korrekt; Urkunde→§ 267 ist juristisch zwingend, aber nicht aus dem lokalen Korpus zitierbar.)
+- Quelle: `leitlinien-volltext/stgb-267.txt`
+- Zitat: "Wer zur Täuschung im Rechtsverkehr eine unechte Urkunde herstellt, eine echte Urkunde verfälscht oder eine unechte oder verfälschte Urkunde gebraucht, wird mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft." (§ 267 Abs. 1 StGB — Urkundenfälschung; greift, da das Dokumentationssystem laut Pflege heute eine Urkunde ist und Manipulation/Rückdatieren ein Verfälschen darstellt)
+- ⚠️ BLEIBT — das konkrete Korrektur-Verfahren ("einmal durchstreichen, Original lesbar lassen, Korrektur daneben mit Datum + Handzeichen") sowie "Rückdatieren unzulässig" sind im Korpus nicht verbatim belegt. § 267 StGB deckt die strafrechtliche Einordnung des Verfälschens, nicht das konkrete Pflege-Korrekturverfahren — daher nicht damit kaschieren. Beleg: Dokumentations-Leitfaden / Pflege-heute-Korrekturpassage beschaffen.
 **Praxisfehler:** Tippex oder Überkleben "weil die Korrektur ja stimmt" — macht das Original unleserlich und wirkt wie Manipulation.
 
 **Misconceptions:**
@@ -307,6 +312,8 @@
 - Zitat: "Grundlage der Schweigepflicht bildet u. a." / "§ 203 StGB" (Rechtsnorm § 203 StGB — Verletzung von Privatgeheimnissen)
 - Zitat: "Die Schweigepflicht gilt gegenüber allen:" (Schweigepflicht gilt gegenüber allen — auch Angehörigen)
 - Zitat: "In Ausnahmefällen Telefonnummer" / "geben lassen, mit dem Patienten" / "kontrollieren und selbst zurückrufen," / "um die Identität des Telefonpartners" / "sicherzustellen." (im Zweifel Identität durch Rückruf sichern)
+- Quelle: `leitlinien-volltext/stgb-203.txt`
+- Zitat: "Wer unbefugt ein fremdes Geheimnis, namentlich ein zum persönlichen Lebensbereich gehörendes Geheimnis oder ein Betriebs- oder Geschäftsgeheimnis, offenbart" (§ 203 Abs. 1 StGB — amtlicher Gesetzestext: Verletzung von Privatgeheimnissen, strafbewehrte Schweigepflicht)
 **Praxisfehler:** Auskunft am Telefon an eine angebliche Angehörige ohne Identitätsprüfung oder Einwilligung des Patienten.
 
 **Misconceptions:**
@@ -329,7 +336,10 @@
 - Zitat: "bringt die EDV-gestützte Dokumentation" / "jedoch eine enorme Arbeitserleichterung" / "und Sicherung der Dokumentationsqualität" (Aufwand zunächst, langfristig Erleichterung + Qualitätssicherung)
 - Zitat: "Im Unterschied zu handschriftlich erstellten Pflegedokumentationen sind alle" / "Anordnungen und Berichte gut lesbar" (lesbar)
 - Zitat: "können automatisch erstellt und ausgewertet werden" (Statistiken/Reports automatisch — durchsuchbar/auswertbar)
-- ⚠️ Quelle beschaffen / entschärfen — die Teilaussage "automatische Protokollierung jeder Änderung (wer, wann, was)" (Audit-Trail / revisionssichere Logs) ist im Korpus nicht verbatim belegt; Pflege heute belegt Lesbarkeit + automatische Auswertung, nicht die Änderungs-Protokollierung. Beleg z. B. § 630f Abs. 1 S. 2 BGB (Berichtigungs-/Änderungspflicht erkennbar) oder Hersteller-/GDPdU-Vorgaben beschaffen, oder Teilaussage entfernen. (Fachlich korrekt; revisionssichere eDoku ist Standard, aber nicht aus dem lokalen Korpus zitierbar.)
+- Quelle: `leitlinien-volltext/bgb-630f.txt`
+- Zitat: "Berichtigungen und Änderungen von Eintragungen in der Behandlungsakte sind nur zulässig, wenn neben dem ursprünglichen Inhalt erkennbar bleibt, wann sie vorgenommen worden sind." (§ 630f Abs. 1 S. 2 BGB — Änderungen müssen nachvollziehbar protokolliert sein, ursprünglicher Inhalt bleibt erkennbar)
+- Quelle: `leitlinien-volltext/bgb-630f.txt`
+- Zitat: "Dies ist auch für elektronisch geführte Behandlungsakten sicherzustellen." (§ 630f Abs. 1 S. 3 BGB — die Nachvollziehbarkeit von Änderungen gilt ausdrücklich auch für eDoku → gesetzliche Grundlage des Audit-Trails)
 **Praxisfehler:** Bei Systemausfall wird gar nicht dokumentiert, statt auf das Notfall-Papierformular auszuweichen.
 
 **Misconceptions:**
