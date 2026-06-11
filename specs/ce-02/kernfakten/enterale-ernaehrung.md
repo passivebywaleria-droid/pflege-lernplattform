@@ -10,7 +10,7 @@
 | quellen | Pflege heute 7. Aufl. Kap. 7.7 Enterale Ernährung über Sonden; ASPEN Consensus Recommendations for Refeeding Syndrome 2020 (Nutr Clin Pract 35(2):178–195); DNQP Expertenstandard Ernährungsmanagement (2. Aktual.); DGEM S3-Leitlinie Klinische Ernährung 2013/2020 |
 | einträge | 11 |
 | erstellt | 2026-06-10 (Pipeline v9) |
-| grounding | 2026-06-11 auf STÜTZT gehoben (Dozentin A): 67 Verbatim-Belege, alle ✅ MATCH. Pro Teilaussage ein Beleg (R2). Offen als ⚠️ Quelle beschaffen (DGEM S3): pH <5,5 (F-03), 20–50 ml Spülmenge (F-09), ZPE-Obergrenze ~2000 mosmol/l (F-11), Zottenatrophie/„physiologischer" (F-01, nur didaktischer Transfer). „schwere Mukositis" (F-01) → korrigiert auf belegtes „Stenosen im MDT"; Cola-Aussage (F-09) → an Korpus angepasst (Ausnahme-Spüllösung, nicht „ohne Evidenz"). |
+| grounding | 2026-06-11 auf STÜTZT gehoben (Dozentin A): 67 Verbatim-Belege, alle ✅ MATCH. Pro Teilaussage ein Beleg (R2). Offen als ⚠️ Quelle beschaffen (DGEM S3): pH <5,5 (F-03), ZPE-Obergrenze ~2000 mosmol/l (F-11), Zottenatrophie/„physiologischer" (F-01, nur didaktischer Transfer). [F-09 Spülmenge nun via DGEM-Heimenterale 2024 belegt: 20–40 mL.] „schwere Mukositis" (F-01) → korrigiert auf belegtes „Stenosen im MDT"; Cola-Aussage (F-09) → an Korpus angepasst (Ausnahme-Spüllösung, nicht „ohne Evidenz"). |
 
 ---
 
@@ -230,7 +230,8 @@
 - Zitat: "kohlensäurehaltige Getränke wie z. B. Cola" (Cola nur als Ausnahme-Spüllösung)
 - Zitat: "Medikamente getrennt von der Sondenkost geben" (getrennt wegen Ausflockung)
 - Zitat: "Medikamente möglichst einzeln verabreichen" (einzeln)
-- Zur Spülmenge „20–50 ml beim Erwachsenen": ⚠️ Quelle beschaffen (DGEM S3 Klinische Ernährung) — Pflege heute nennt für das Freispülen 10-/20-ml-Spritzen, aber keine 20–50-ml-Routine-Spülmenge verbatim. Mengenangabe bis zur Beschaffung nicht als belegt führen.
+- Quelle: `leitlinien-volltext/dgem-heimenterale-2024.txt`
+- Zitat: "20–40 mL frischem Trinkwasser gespült werden" (DGEM-S3-Leitlinie Heimenterale/-parenterale Ernährung 2024 — evidenzbasierte Routine-Spülmenge nach Medikamentengabe; ersetzt frühere unbelegte „20–50 ml"-Angabe, korrekt belegt 20–40 mL)
 **Praxisfehler:** Spülen nach Medikamentengabe vergessen oder Medikamente mit Sondenkost mischen — verklebt das Lumen.
 
 **Misconceptions:**

@@ -52,6 +52,9 @@ getlaw "https://www.gesetze-im-internet.de/stgb/__203.html" "stgb-203"
 # DGSM S3-Leitlinie Insomnie bei Erwachsenen 2025 (AWMF 063-003) — belegt schlaf F-10
 # (Alkohol kein Schlafmittel) + F-12 (KVT-I/nichtmedikamentoes als Erstlinie vor Medikation).
 get "https://register.awmf.org/assets/guidelines/063-003l_S3_Insomnie-bei-Erwachsenen_2025-04.pdf" "dgsm-insomnie-2025"
+# DGEM S3-Leitlinie Heimenterale/-parenterale Ernaehrung 2024 (AWMF 073-021) — belegt
+# enterale-ernaehrung F-09 (Routine-Spuelmenge 20-40 mL nach Medikamentengabe).
+get "https://register.awmf.org/assets/guidelines/073-021l_S3_Heimenterale-heimparenterale-Ernaehrung__2024-05.pdf" "dgem-heimenterale-2024"
 # Weitere frei verfügbare Quellen hier ergänzen (siehe specs/QUELLEN-EINKAUFSLISTE-2026-06-10.md Abschnitt A/B):
 # get "<DGE D-A-CH Referenzwerte>" "dge-referenzwerte"
 # get "<ESPEN/DGEM Klinische Ernaehrung>" "espen-klinische-ernaehrung"
