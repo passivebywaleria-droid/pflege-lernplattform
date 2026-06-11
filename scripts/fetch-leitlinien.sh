@@ -71,6 +71,12 @@ get "https://www.bmbfsfj.bund.de/resource/blob/93450/be474bfdb4016bbbca9bf87b4cb
 getlaw "https://www.gesetze-im-internet.de/bgb/__1827.html" "bgb-1827"
 # § 1831 BGB (FeM/Unterbringung, frueher § 1906) — belegt positionierung F-12 + sturz F-08.
 getlaw "https://www.gesetze-im-internet.de/bgb/__1831.html" "bgb-1831"
+# EAUN-Leitlinie Indwelling Catheterisation 2024 (frei, nurses.uroweb.org via CloudFront) —
+# belegt blasenkatheter-Claims (Ballonfuellung, Katheterpflege, CAUTI-Praevention).
+get "https://d56bochluxqnz.cloudfront.net/documents/full-guideline/EAUN_Guideline-indwelling-catheterisation_2024-v10-final.pdf" "eaun-katheterisierung-2024"
+# Nydahl-Skript Basale Stimulation (frei, nydahl.de — anerkannter Basale-Stimulation-Trainer) —
+# Sekundaerquelle fuer basale-stimulation-Claims.
+get "https://www.nydahl.de/Nydahl/Skripte_files/SkriptBasis10b.pdf" "nydahl-basale-stimulation"
 # Weitere frei verfügbare Quellen hier ergänzen (siehe specs/QUELLEN-EINKAUFSLISTE-2026-06-10.md Abschnitt A/B):
 # get "<DGE D-A-CH Referenzwerte>" "dge-referenzwerte"
 # get "<ESPEN/DGEM Klinische Ernaehrung>" "espen-klinische-ernaehrung"
