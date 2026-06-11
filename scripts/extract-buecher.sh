@@ -35,4 +35,11 @@ ex "$DL/dokumen.pub_palliativmedizin-4-4nbsped-9783540298885-3540298886-97835402
 ex "$DL/dokumen.pub_lernen-mit-85-komplexen-fallsituationen-ein-arbeitsbuch-fr-das-erlernen-der-przisen-pflegediagnostik-in-studium-und-praxis-9783991118435.pdf" "fallsituationen-85"
 ex "$DL/1 Curriculum generalistische Pflegeausbildung PDF.pdf" "curriculum-generalistik"
 
+# Prioritaet 1b (Zyklus 11) — I-Care-Trilogie. Lagen schon lokal in recherche/icare/
+# vor, waren aber nur als zweispaltig-verschraenkter icare-index (NICHT verbatim-
+# matchbar) erschlossen. Hier in Lesereihenfolge (ohne -layout) als Volltext:
+ex "recherche/icare/Icare Pflege.pdf" "icare-pflege"
+ex "recherche/icare/I Care - Krankheitslehre_080753.pdf" "icare-krankheitslehre"
+ex "recherche/icare/I Care - Anatomie_092225.pdf" "icare-anatomie"
+
 echo "Fertig. Verifizieren: npx tsx scripts/zitat-verifizierer.ts \"<slug>-volltext/<slug>.txt\" \"<zitat>\""
