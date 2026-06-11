@@ -8,7 +8,7 @@
 | geschätzteUE | 8 |
 | wissensart | handlung |
 | quellen | Pflege heute 7. Aufl. Kap. 7 Ernährung (verbatim-belegt); DNQP Expertenstandard Ernährungsmanagement 1. Aktual. 2017/2024; DGE/ÖGE/SGE D-A-CH-Referenzwerte (Erläuterungen, lokaler Extrakt — Einzelnährstoff-Tabellen NICHT enthalten); I Care Pflegeexamen kompakt (Thieme, verbatim-belegt); Prüfungswissen Pflegefachfrau (Elsevier, verbatim-belegt); Hoehl/Kullick Kinderkrankenpflege 5. Aufl. (verbatim-belegt); WHO 2015 Guideline Sugars intake (verbatim-belegt, leitlinien-volltext); Atwater 1899 |
-| grounding-stand | 2026-06-11, dritte Überarbeitung (icare-pflege/-anatomie-Volltext erschlossen). Aufgelöste ⚠️ (Vorrunden): F-01 Makro-/Mikronährstoff-Terminologie, F-04 0,8–1 g/kgKG Protein-Referenz + Senioren-Erhöhung, F-08 Vitamin-D-Synthese (Haut-Vorstufe + UV), F-09 Mengenelemente/Spurenelemente nach Körpertrockenmasse, F-09/M1 Jod-Richtwert, F-10 +500 ml/°C Fieber, F-10 1,5-l-Trinkmenge, F-12 DGE-Prozentwerte, F-02 WHO Zucker <10%/<5%. 2026-06-11 (3): F-08 Vitamin-D-Synthese-Mechanismus (Cholecalciferol aus Cholesterin in Keratinozyten der Haut unter Sonnenlicht) via icare-anatomie verbatim belegt; F-04 Senioren-Protein 0,8–1,5 g/kgKG + 1,0 g/kg-Untergrenze (Schuetz 2017) via icare-pflege verbatim verstärkt. Verbleibende ⚠️ (DGE-Tool erforderlich, im neuen Korpus NICHT verbatim auffindbar): Gehirn 120 g Glukose/Tag (F-02), gesättigte FA <10% (F-03), Alkohol 7 kcal/g + Ballaststoffe ~2 kcal/g (F-05), Ballaststoffe ≥30 g (F-06), 20 µg/800 IE Vitamin-D-Referenzwert + Fachbegriff 7-Dehydrocholesterin (F-08), +700 ml Stillen (F-10). |
+| grounding-stand | 2026-06-11, dritte Überarbeitung (icare-pflege/-anatomie-Volltext erschlossen). Aufgelöste ⚠️ (Vorrunden): F-01 Makro-/Mikronährstoff-Terminologie, F-04 0,8–1 g/kgKG Protein-Referenz + Senioren-Erhöhung, F-08 Vitamin-D-Synthese (Haut-Vorstufe + UV), F-09 Mengenelemente/Spurenelemente nach Körpertrockenmasse, F-09/M1 Jod-Richtwert, F-10 +500 ml/°C Fieber, F-10 1,5-l-Trinkmenge, F-12 DGE-Prozentwerte, F-02 WHO Zucker <10%/<5%. 2026-06-11 (3): F-08 Vitamin-D-Synthese-Mechanismus (Cholecalciferol aus Cholesterin in Keratinozyten der Haut unter Sonnenlicht) via icare-anatomie verbatim belegt; F-04 Senioren-Protein 0,8–1,5 g/kgKG + 1,0 g/kg-Untergrenze (Schuetz 2017) via icare-pflege verbatim verstärkt. 2026-06-11 (4, DGE-Referenzwert-Einzelseiten via dge.de erschlossen → `dge-referenzwerte-volltext/`): F-06 Ballaststoffe ≥30 g/Tag (DGE-Richtwert-Tabelle) + F-08 Vitamin D 20 µg/Tag bei fehlender Eigensynthese (DGE Vitamin-D-Seite) beide verbatim belegt. Verbleibende ⚠️ (DGE-Position 2011 / Atwater-Original erforderlich, auf den Referenzwert-Seiten NICHT verbatim): Gehirn 120 g Glukose/Tag (F-02), gesättigte FA <10% (F-03), Alkohol 7 kcal/g + Ballaststoffe ~2 kcal/g (F-05), Fachbegriff 7-Dehydrocholesterin (F-08), +700 ml Stillen (F-10). |
 | einträge | 16 |
 | erstellt | 2026-06-10 (extrahiert aus bausteine-plan.md, Pipeline v9) |
 
@@ -152,16 +152,19 @@ Der Referenzwert **0,8–1 g/kgKG/Tag für gesunde Erwachsene** ist über I Care
 ### F-06: Ballaststoffe
 
 **Fakt:** Ballaststoffe sind weitgehend unverdauliche, vorwiegend pflanzliche Polysaccharide. Sie regen u. a. die Darmperistaltik an und erhalten die physiologische Darmflora (Pflege heute). Zwei Typen: wasserlöslich (Pektine, Beta-Glucane — senken Cholesterin, verlangsamen Blutzuckeranstieg) und wasserunlöslich (Cellulose, Lignin — fördern Darmbewegung, beugen Obstipation vor). Bei Erhöhung der Zufuhr Trinkmenge mitsteigern.
-⚠️ Quelle beschaffen (DGE D-A-CH Referenzwerte-Tool, Ballaststoff-Kapitel 2021): Der **DGE-Richtwert ≥ 30 g/Tag** (sowie der Vergleichswert „Realität DE 20–25 g" und „≥ 1,5 l/Tag") ist im lokalen Korpus NICHT verbatim belegt.
+Der **DGE-Richtwert ≥ 30 g/Tag** für Erwachsene ist jetzt verbatim über die DGE-D-A-CH-Referenzwerte belegt (siehe Beleg). ⚠️ Der Vergleichswert „Realität DE 20–25 g" und die Faustregel „≥ 1,5 l/Tag Trinkmenge bei Ballaststofferhöhung" sind weiterhin nicht verbatim belegt (didaktische Ergänzung).
 
 **Prüfungsrelevanz:** mittel
 **Wissensart:** Konzept
 **Bloom-Potential:** 3 (Anwenden)
-**Primärquelle:** (Pflege heute Kap. 7; ≥30-g-Richtwert: ⚠️ lokal nicht verifizierbar)
+**Primärquelle:** (Pflege heute Kap. 7; DGE-D-A-CH-Referenzwerte 2021, Ballaststoffe)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Ballaststoffe sind weitgehend unverdauliche Polysaccharide"
 - Zitat: "Ballaststoffe regulieren u. a. die Darmperistaltik und erhalten die physiologische Darmflora"
+- Quelle: `dge-referenzwerte-volltext/dge-ballaststoffe.txt`
+- Zitat: "Erwachsene 19 bis unter 25 Jahre ≥ 30" (DGE-Richtwert-Tabelle Ballaststoffzufuhr g/Tag; gilt durchgängig „≥ 30" auch für 25–51 / 51–65 J.)
+- Zitat: "Der Richtwert für die Ballaststoffzufuhr gilt für Frauen und Männer gleichermaßen" (geschlechtsunabhängiger DGE-Richtwert)
 **Praxisfehler:** Ballaststoffreiche Kost ohne ausreichende Flüssigkeit ansetzen — führt zu Verstopfung und Bauchbeschwerden.
 
 **Misconceptions:**
@@ -195,12 +198,12 @@ Der Referenzwert **0,8–1 g/kgKG/Tag für gesunde Erwachsene** ist über I Care
 
 ### F-08: Vitamin D — Sonderstellung und Mangel
 
-**Fakt:** Vitamin D (Calciferol) nimmt eine Sonderstellung ein: Es kann im Körper unter Sonnenlicht-Einfluss gebildet werden — Pflege heute spricht von „fehlender Bildung im Körper" als Supplementierungs-Indikation. Funktionen: Knochenbildung, Aufnahme von Kalzium und Phosphaten (Knochen), Muskelfunktion (Sturzprävention). Vitamin D (v.a. bei älteren Menschen) ist eine der wenigen relevanten Mangel-Ausnahmen in Deutschland. Empfehlung bei fehlender Eigensynthese (Pflege heute, Osteoporoseprävention): **Vitamin D 10–20 µg/Tag**. Die DGE/D-A-CH-Referenzwerte bestätigen qualitativ, dass ab dem 50.–60. Lebensjahr für Vitamin D eine höhere Zufuhr empfohlen wird; der obere Grenzwert für Erwachsene liegt bei 50 µg/Tag. Risikogruppen: Ältere, Pflegeheimbewohner, dunkle Haut, Vollverschleierung, Säuglinge. Mangelfolgen: Rachitis (Kinder), Osteomalazie, Begünstigung der Osteoporose, Muskelschwäche, erhöhtes Sturzrisiko. Der Synthese-Mechanismus ist über I Care Anatomie nun präziser belegt: **Cholecalciferol** wird in der Haut aus **Cholesterin** unter Sonneneinstrahlung gebildet und in Leber und Niere zur aktiven Form (1,25-Dihydroxycholecalciferol) umgewandelt. ⚠️ Quelle beschaffen (DGE D-A-CH-Referenzwerte, Einzelnährstoff-Tabelle): Der konkrete **Vitamin-D-Referenzwert von 20 µg/Tag (= 800 IE) bei fehlender Eigensynthese** steht NICHT verbatim im lokalen DGE-Extrakt. Der biochemische Fachbegriff "7-Dehydrocholesterin" als exakte Vorstufe bleibt im Korpus unbelegt (I Care Anatomie nennt nur „Cholesterin" als Ausgangsstoff).
+**Fakt:** Vitamin D (Calciferol) nimmt eine Sonderstellung ein: Es kann im Körper unter Sonnenlicht-Einfluss gebildet werden — Pflege heute spricht von „fehlender Bildung im Körper" als Supplementierungs-Indikation. Funktionen: Knochenbildung, Aufnahme von Kalzium und Phosphaten (Knochen), Muskelfunktion (Sturzprävention). Vitamin D (v.a. bei älteren Menschen) ist eine der wenigen relevanten Mangel-Ausnahmen in Deutschland. Empfehlung bei fehlender Eigensynthese (Pflege heute, Osteoporoseprävention): **Vitamin D 10–20 µg/Tag**. Die DGE/D-A-CH-Referenzwerte bestätigen qualitativ, dass ab dem 50.–60. Lebensjahr für Vitamin D eine höhere Zufuhr empfohlen wird; der obere Grenzwert für Erwachsene liegt bei 50 µg/Tag. Risikogruppen: Ältere, Pflegeheimbewohner, dunkle Haut, Vollverschleierung, Säuglinge. Mangelfolgen: Rachitis (Kinder), Osteomalazie, Begünstigung der Osteoporose, Muskelschwäche, erhöhtes Sturzrisiko. Der Synthese-Mechanismus ist über I Care Anatomie nun präziser belegt: **Cholecalciferol** wird in der Haut aus **Cholesterin** unter Sonneneinstrahlung gebildet und in Leber und Niere zur aktiven Form (1,25-Dihydroxycholecalciferol) umgewandelt. Der konkrete **Vitamin-D-Referenzwert von 20 µg/Tag (= 800 IE; Standard-Umrechnung 1 µg = 40 IE) bei fehlender Eigensynthese** ist jetzt verbatim über die DGE-D-A-CH-Referenzwerte belegt (siehe Beleg). ⚠️ Der biochemische Fachbegriff "7-Dehydrocholesterin" als exakte Vorstufe bleibt im Korpus unbelegt (I Care Anatomie nennt nur „Cholesterin" als Ausgangsstoff); die IE-Umrechnung 800 IE ist arithmetisch, nicht DGE-Wortlaut.
 
 **Prüfungsrelevanz:** hoch
 **Wissensart:** Fakt
 **Bloom-Potential:** 4 (Analysieren)
-**Primärquelle:** (Pflege heute Kap. 7/26/29; DGE/D-A-CH-Referenzwerte — qualitativ + oberer Grenzwert; Hoehl/Kullick Kinderkrankenpflege Kap. Rachitisprophylaxe; 20 µg/800 IE-Referenzwert: ⚠️ lokal nicht verifizierbar)
+**Primärquelle:** (Pflege heute Kap. 7/26/29; DGE-D-A-CH-Referenzwerte Vitamin D — 20 µg/Tag verbatim belegt; Hoehl/Kullick Kinderkrankenpflege Kap. Rachitisprophylaxe)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Knochenbildung"
@@ -214,6 +217,9 @@ Der Referenzwert **0,8–1 g/kgKG/Tag für gesunde Erwachsene** ist über I Care
 - Zitat: "Es liegt in der Haut als Vorstufe vor und benötigt zur Aktivierung UV-Strahlen."
 - Quelle: `icare-anatomie-volltext/icare-anatomie.txt`
 - Zitat: "Bei ausreichender Sonneneinstrahlung kann sein Ausgangsstoﬀ, das Cholecalciferol, in der" (Forts. „Haut aus Cholesterin (S.36) gebildet werden" — belegt Hautsynthese aus Cholesterin unter Sonnenlicht)
+- Quelle: `dge-referenzwerte-volltext/dge-vitamin-d.txt`
+- Zitat: "Der Referenzwert für eine angemessene Vitamin-D-Zufuhr gilt nur bei fehlender Eigenproduktion und beträgt 20 Mikrogramm pro Tag." (DGE-D-A-CH-Referenzwert bei fehlender Eigensynthese)
+- Zitat: "Hierfür werden 20 µg/Tag benötigt" (Bestätigung Tagesbedarf 20 µg bei fehlender endogener Synthese)
 - Quelle: `icare-anatomie-volltext/icare-anatomie.txt`
 - Zitat: "In den Keratinozyten wird bei Sonneneinstrahlung aus Cholesterin das Cholecalciferol gebildet." (belegt Bildungsort Keratinozyten der Haut)
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`

@@ -32,6 +32,16 @@ get "https://nzwcs.org.nz/images/1Resources/Quick_Ref_2019_PI_Guidelines.pdf" "e
 get "https://www.dge.de/fileadmin/dok/wissenschaft/referenzwerte/Erlaeuterungen_2021.pdf" "dge-referenzwerte-erlaeuterungen"
 get "https://ernaehrungs-umschau.de/fileadmin/Ernaehrungs-Umschau/pdfs/pfd_2009/06_09/EU06_346_353.qxd.pdf" "dge-dach-referenzwerte"
 
+# DGE-D-A-CH-Referenzwert-EINZELSEITEN (frei, dge.de, HTML -> txt via textutil) — belegen
+# ernaehrungsgrundlagen: Ballaststoffe >=30 g/Tag (F-06), Vitamin D 20 ug/Tag (F-08).
+# Eigener Ordner recherche/dge-referenzwerte-volltext/ (nicht leitlinien-volltext).
+DGEDIR="recherche/dge-referenzwerte-volltext"; mkdir -p "$DGEDIR"
+for slug in ballaststoffe fett vitamin-d wasser kohlenhydrate; do
+  curl -sL -A "Mozilla/5.0" -o "recherche/leitlinien/dge-$slug.html" "https://www.dge.de/wissenschaft/referenzwerte/$slug/"
+  textutil -convert txt -encoding UTF-8 -output "$DGEDIR/dge-$slug.txt" "recherche/leitlinien/dge-$slug.html" 2>/dev/null || true
+  printf "  %-32s %8s Woerter\n" "dge-$slug" "$(wc -w < "$DGEDIR/dge-$slug.txt" | tr -d ' ')"
+done
+
 # Amtliche Gesetzestexte (gesetze-im-internet.de, HTML -> txt via textutil/macOS).
 # Belegen Pflegedokumentation: § 630f BGB (Dokumentationspflicht/Pflichtinhalte/eDoku-Aenderbarkeit),
 # § 267 StGB (Urkundenfaelschung), § 203 StGB (Schweigepflicht).
