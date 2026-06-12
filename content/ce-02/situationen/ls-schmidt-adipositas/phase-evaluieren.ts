@@ -310,6 +310,41 @@ export const CE02_SIT_SCHMIDT_ADIPOSITAS_EVALUIEREN: SituationsPhase = {
       },
     },
 
+    // Reflexion: Eigene Essbiografie (Rahmenlehrplan LE8 E4) — Nachzug 2026-06-12
+    {
+      stepId: "ce02-schmidt-eval-04b-eigene-essbiografie",
+      phase: 5,
+      stepType: "reflection",
+      bloomLevel: 6,
+      kompetenzbereich: "I.1",
+      quellen: ["I Care Pflege — Ernährung und Biografie", "DNQP Ernährungsmanagement 2017/2024"],
+      track: "basis",
+      modus: "schreibtisch",
+      lernziel: "ce02-schmidt-eval-eigene-essbiografie",
+      tag: "pflege",
+      contentC1: {
+        title: "Deine eigene Essbiografie",
+        body: "Du hast heute mit Herrn Schmidt über sein Essverhalten gesprochen — Gewohnheiten, Vorlieben, Frust, Belohnung. Bevor du über andere urteilst, lohnt der Blick auf dich selbst: Auch DU hast eine Essbiografie — geprägt von Familie, Kultur, Gefühlen und Gewohnheiten. Wer das bei sich kennt, beratet andere weniger belehrend und mehr auf Augenhöhe — ohne Vorwürfe wie \"einfach weniger essen\".",
+        glossarBegriffe: ["Essbiografie"],
+      },
+      contentB1: {
+        title: "Deine eigene Essbiografie",
+        body: "Du hast mit Herrn Schmidt über sein Essen gesprochen. Aber auch du isst nicht immer \"vernünftig\" — jeder hat seine Gewohnheiten, Lieblingsessen, Trost-Essen. Wenn du das bei dir kennst, urteilst du weniger über andere und berätst auf Augenhöhe.",
+        glossarBegriffe: ["Essbiografie"],
+      },
+      question: {
+        fragetext: "Wie sieht deine eigene Essbiografie aus — und was bedeutet das für deine Beratung?",
+        reflection: {
+          prompt:
+            "Schreibe 3-5 Sätze: 1) Welche Essgewohnheiten hast du selbst (auch \"ungesunde\")? 2) Was prägt sie (Familie, Kultur, Gefühle)? 3) Wie verändert dieses Wissen, wie du Herrn Schmidt berätst?",
+          placeholder:
+            "Meine eigenen Essgewohnheiten sind … Geprägt haben sie … Für die Beratung von Herrn Schmidt heißt das …",
+          systemPrompt:
+            "Bewerte im Sandwich-Prinzip. Erkennt der Schüler, dass auch er eine biografisch/emotional geprägte Essbiografie hat (Essen ist nicht nur Vernunft)? Leitet er daraus eine WERTSCHÄTZENDE, nicht-belehrende Haltung gegenüber dem Patienten ab (keine Vorwürfe, Beratung auf Augenhöhe)? Lob für ehrliche Selbstreflexion. Niemals abwertend.",
+        },
+      },
+    },
+
     // Step 5.5 — Selfrating: Konfidenz nachher (Spiegel zu Phase 1)
     {
       stepId: "ce02-schmidt-eval-05-konfidenz-nachher",
