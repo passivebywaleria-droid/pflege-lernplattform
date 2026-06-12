@@ -655,6 +655,41 @@ export const CE02_SIT_NGUYEN_STOMA_DURCHFUEHREN: SituationsPhase = {
         ],
       },
     },
+
+    // Reflexion: Legitimität professioneller Ekelgefühle (Rahmenlehrplan LE9 E13/E14) — Nachzug 2026-06-12
+    {
+      stepId: "ce02-nguyen-dur-08-ekel-legitimitaet",
+      phase: 4,
+      stepType: "reflection",
+      bloomLevel: 6,
+      kompetenzbereich: "I.1",
+      quellen: ["I Care Pflege Kap. 2 — Umgang mit Ekel"],
+      track: "basis",
+      modus: "schreibtisch",
+      lernziel: "ce02-nguyen-dur-ekel-legitimitaet",
+      tag: "pflege",
+      contentC1: {
+        title: "Dürfen sich Pflegende ekeln?",
+        body: "Du hast gerade Herrn Nguyens Stoma versorgt — Stuhl, Geruch, Körperflüssigkeiten. Vielleicht hattest du einen kurzen Moment Ekel. Das Wichtigste vorweg: **Ekel ist eine normale körperliche Reaktion — kein Zeichen von Unprofessionalität.** Fachlich heißt das: Ekelgefühle sich erlauben und zugestehen, statt sie zu verdrängen. Professionell wird der Umgang damit:\n\n- **Kognitives Umprogrammieren:** den Gedanken bewusst umbauen — von \"iii, wie eklig\" zu \"ich möchte diesem Menschen helfen\". Der Stress flacht ab, ein Rest-Ekel darf bleiben.\n- **Austausch im Team:** darüber sprechen entlastet; Kolleginnen können besonders belastende Situationen abnehmen und Strategien teilen.\n- **Schutz und Distanz:** Schutzkleidung, bei Bedarf kurz Distanz/Erholung schaffen.",
+        glossarBegriffe: ["Ekel", "kognitives Umprogrammieren"],
+      },
+      contentB1: {
+        title: "Dürfen sich Pflegende ekeln?",
+        body: "Du hast gerade das Stoma versorgt — Stuhl, Geruch. Vielleicht hast du dich kurz geekelt. **Das ist normal und in Ordnung.** Ekel ist kein Fehler. Wichtig ist, wie du damit umgehst:\n\n- Den Gedanken umbauen: von \"wie eklig\" zu \"ich helfe diesem Menschen\".\n- Im Team darüber reden — das entlastet.\n- Handschuhe/Schutz nutzen, kurz durchatmen.",
+        glossarBegriffe: ["Ekel"],
+      },
+      question: {
+        fragetext: "Dürfen sich Pflegende ekeln? Und wie gehst du mit deinem eigenen Ekel um?",
+        reflection: {
+          prompt:
+            "Schreibe 3-5 Sätze. Beziehe dich auf: 1) Ist Ekel bei der Pflege schlimm oder normal? 2) Was würdest du bei Herrn Nguyen mit deinem eigenen Ekel machen? 3) Welche der Strategien (umprogrammieren, Team, Schutz/Distanz) passt zu dir?",
+          placeholder:
+            "Ekel ist für mich … Bei Herrn Nguyen würde ich … Am besten umgehen kann ich damit, indem …",
+          systemPrompt:
+            "Bewerte die Reflexion im Sandwich-Prinzip (Anerkennen → Hinweis → Ermutigen). Erkennt der Schüler, dass Ekel eine NORMALE, legitime körperliche Reaktion ist und kein Versagen? Nennt er mindestens eine professionelle Bewältigungsstrategie (kognitives Umprogrammieren, Austausch im Team, Schutzkleidung, bewusste Distanz/Erholung)? Achte besonders darauf, ob er die Falle vermeidet, Ekel einfach zu unterdrücken oder so zu tun als ob — gesund ist anerkennen UND aktiv bewältigen. Lob für eine ehrliche Bloom-5/6-Reflexion. Niemals abwertend gegenüber dem Schüler oder dem Patienten.",
+        },
+      },
+    },
   ],
   optionaleSteps: [
     // 4.opt-1 — Text (stepbystep): Schutzpaste erklärt
