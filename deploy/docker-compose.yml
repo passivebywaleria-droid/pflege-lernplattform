@@ -30,6 +30,7 @@ services:
       dockerfile: Dockerfile
       args:
         NEXT_PUBLIC_VAPID_PUBLIC_KEY: ${NEXT_PUBLIC_VAPID_PUBLIC_KEY}
+        NEXT_PUBLIC_PREVIEW_OPEN: ${NEXT_PUBLIC_PREVIEW_OPEN:-}
     restart: unless-stopped
     env_file:
       - .env

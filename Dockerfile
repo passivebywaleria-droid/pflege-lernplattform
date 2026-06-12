@@ -22,6 +22,9 @@ COPY . .
 # NEXT_PUBLIC_* muessen zur Build-Zeit vorliegen (werden ins Client-Bundle gebacken).
 ARG NEXT_PUBLIC_VAPID_PUBLIC_KEY
 ENV NEXT_PUBLIC_VAPID_PUBLIC_KEY=${NEXT_PUBLIC_VAPID_PUBLIC_KEY}
+# Vorschau-Modus (Login/Einstufung ueberspringen) — Default leer/AUS.
+ARG NEXT_PUBLIC_PREVIEW_OPEN
+ENV NEXT_PUBLIC_PREVIEW_OPEN=${NEXT_PUBLIC_PREVIEW_OPEN}
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN npm run build
 

@@ -25,6 +25,10 @@ export default function LernenUebersichtPage() {
   const { profil, loaded: profilLoaded } = useLernFortschritt();
 
   useEffect(() => {
+    // Vorschau-Modus (NEXT_PUBLIC_PREVIEW_OPEN=1): ueberspringt die Einstufungs-
+    // Pflicht, damit Inhalte ohne Login/Test angeschaut werden koennen. NUR fuer
+    // den Vorschau-Server — im echten Pilot ist der Schalter AUS (Default).
+    if (process.env.NEXT_PUBLIC_PREVIEW_OPEN === "1") return;
     if (einstufungLoaded && !hatEinstufung) {
       router.replace(`/${locale}/einstufung`);
     }
