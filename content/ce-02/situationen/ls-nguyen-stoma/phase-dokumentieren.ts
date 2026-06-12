@@ -265,6 +265,52 @@ export const CE02_SIT_NGUYEN_STOMA_DOKUMENTIEREN: SituationsPhase = {
         ],
       },
     },
+
+    // Session-Zusammenfassung — aus Optional in den Kern-Fluss gezogen (2026-06-12)
+    {
+      stepId: "ce02-nguyen-dok-opt2-session-summary",
+      phase: 6,
+      stepType: "summary",
+      bloomLevel: 5,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "I Care Pflege (Thieme): Pflegeprozess und Pflegeplanung",
+        "§ 630f BGB — Dokumentationspflicht der Behandelnden",
+      ],
+      track: "basis",
+      modus: "checkpoint",
+      lernziel: "ce02-nguyen-dok-summary",
+      tag: "pflege",
+      contentC1: {
+        title: "Was du heute gelernt hast",
+        body: "**Interkulturelle Kommunikation** = Kommunikation zwischen Menschen unterschiedlicher kultureller Hintergründe. In der Pflege bedeutet das: kultursensible Sprache, Beachtung von Werten (z.B. Schamgrenzen, Geschlechterrollen, Familienstrukturen), Einsatz professioneller Dolmetscher.\n\nDu hast heute eine komplexe Lernsituation abgeschlossen: Herr Nguyen, 72 Jahre, 4. Tag post-OP, Kolostoma, Mangelernährung, Würde-Thema, interkulturelle Kommunikation. Hier ist eine Zusammenfassung der Lernziele — und die Karteikarten, die für dich vorbereitet wurden.",
+        glossarBegriffe: ["Interkulturelle Kommunikation"],
+      },
+      contentB1: {
+        title: "Das hast du heute gelernt",
+        body: "**Interkulturelle Kommunikation** = Kommunikation zwischen Menschen aus verschiedenen Kulturen. In der Pflege: respektvolle Sprache, Werte beachten, Dolmetscher nutzen.\n\nDu hast heute viel gelernt. Hier ist eine Zusammenfassung.",
+        glossarBegriffe: ["Interkulturelle Kommunikation"],
+      },
+      question: {
+        fragetext: "Zusammenfassung der Lernsituation ls-nguyen-stoma.",
+        summary: {
+          reflexionRueckbezug:
+            "Herr Nguyen hat am Ende gesagt: 'Danke. Das... war nicht so schlimm. Wie ich dachte.' Das ist der erste Schritt. Und du hast ihn begleitet.",
+          kernaussagen: [
+            "Stoma-Inspektion: Normalzeichen (rosig, feucht, 1–2 cm prominent) vs. Alarmzeichen (blass, livide, Nekrose)",
+            "Beutelwechsel-Ablauf in 8 Schritten — Hygiene + Schutzpaste + Plattenanpassung",
+            "Würdeschutz bei Körperbild-Veränderung: Spiegeln statt falscher Trost, Raum lassen, nicht aufdrängen",
+            "Angehörigen-Einbezug als Entlassungsmanagement — Ehefrau Mai als Hauptpflegeperson zuhause",
+            "Interkulturelle Kommunikation: Tochter als Übersetzerin (Rollenkonflikt bewusst halten), Augenkontakt beim Patienten",
+            "5 Pflegeprobleme priorisieren: Stoma → Dekubitus/Mobilisation → Ernährung → Thrombose → Psychosozial (parallel)",
+            "Ernährungs-Assessment post-OP: 440 kcal bei Bedarf 1500–2000 kcal/d = dringendes Defizit",
+            "Leckage-Management: Haut zuerst reinigen und trocknen, dann Ursache beurteilen, dann Platte neu anlegen",
+            "Stomadokumentation: 9 Pflicht-Elemente für Behandlungskontinuität",
+            "SBAR-Übergabe: Stoma-Status + Ernährung + emotionaler Status + offene Punkte",
+          ],
+        },
+      },
+    },
   ],
   optionaleSteps: [
     // 6.opt-1 — MC: Was gehört NICHT in den Pflegebericht?
@@ -330,52 +376,6 @@ export const CE02_SIT_NGUYEN_STOMA_DOKUMENTIEREN: SituationsPhase = {
               "Das gehört in die Dokumentation — mit Datum und Uhrzeit. Die nächste Schicht muss wissen: wurde die Ernährungsberaterin angefordert?",
           },
         ],
-      },
-    },
-
-    // 6.opt-2 — Summary: Session-Zusammenfassung
-    {
-      stepId: "ce02-nguyen-dok-opt2-session-summary",
-      phase: 6,
-      stepType: "summary",
-      bloomLevel: 5,
-      kompetenzbereich: "I.1",
-      quellen: [
-        "I Care Pflege (Thieme): Pflegeprozess und Pflegeplanung",
-        "§ 630f BGB — Dokumentationspflicht der Behandelnden",
-      ],
-      track: "vertiefung",
-      modus: "checkpoint",
-      lernziel: "ce02-nguyen-dok-summary",
-      tag: "pflege",
-      contentC1: {
-        title: "Was du heute gelernt hast",
-        body: "**Interkulturelle Kommunikation** = Kommunikation zwischen Menschen unterschiedlicher kultureller Hintergründe. In der Pflege bedeutet das: kultursensible Sprache, Beachtung von Werten (z.B. Schamgrenzen, Geschlechterrollen, Familienstrukturen), Einsatz professioneller Dolmetscher.\n\nDu hast heute eine komplexe Lernsituation abgeschlossen: Herr Nguyen, 72 Jahre, 4. Tag post-OP, Kolostoma, Mangelernährung, Würde-Thema, interkulturelle Kommunikation. Hier ist eine Zusammenfassung der Lernziele — und die Karteikarten, die für dich vorbereitet wurden.",
-        glossarBegriffe: ["Interkulturelle Kommunikation"],
-      },
-      contentB1: {
-        title: "Das hast du heute gelernt",
-        body: "**Interkulturelle Kommunikation** = Kommunikation zwischen Menschen aus verschiedenen Kulturen. In der Pflege: respektvolle Sprache, Werte beachten, Dolmetscher nutzen.\n\nDu hast heute viel gelernt. Hier ist eine Zusammenfassung.",
-        glossarBegriffe: ["Interkulturelle Kommunikation"],
-      },
-      question: {
-        fragetext: "Zusammenfassung der Lernsituation ls-nguyen-stoma.",
-        summary: {
-          reflexionRueckbezug:
-            "Herr Nguyen hat am Ende gesagt: 'Danke. Das... war nicht so schlimm. Wie ich dachte.' Das ist der erste Schritt. Und du hast ihn begleitet.",
-          kernaussagen: [
-            "Stoma-Inspektion: Normalzeichen (rosig, feucht, 1–2 cm prominent) vs. Alarmzeichen (blass, livide, Nekrose)",
-            "Beutelwechsel-Ablauf in 8 Schritten — Hygiene + Schutzpaste + Plattenanpassung",
-            "Würdeschutz bei Körperbild-Veränderung: Spiegeln statt falscher Trost, Raum lassen, nicht aufdrängen",
-            "Angehörigen-Einbezug als Entlassungsmanagement — Ehefrau Mai als Hauptpflegeperson zuhause",
-            "Interkulturelle Kommunikation: Tochter als Übersetzerin (Rollenkonflikt bewusst halten), Augenkontakt beim Patienten",
-            "5 Pflegeprobleme priorisieren: Stoma → Dekubitus/Mobilisation → Ernährung → Thrombose → Psychosozial (parallel)",
-            "Ernährungs-Assessment post-OP: 440 kcal bei Bedarf 1500–2000 kcal/d = dringendes Defizit",
-            "Leckage-Management: Haut zuerst reinigen und trocknen, dann Ursache beurteilen, dann Platte neu anlegen",
-            "Stomadokumentation: 9 Pflicht-Elemente für Behandlungskontinuität",
-            "SBAR-Übergabe: Stoma-Status + Ernährung + emotionaler Status + offene Punkte",
-          ],
-        },
       },
     },
   ],

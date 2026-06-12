@@ -367,6 +367,46 @@ export const CE02_SIT_YILMAZ_SPIRALE2_DOKUMENTIEREN: SituationsPhase = {
         },
       },
     },
+
+    // Step 6.5 — Summary: Session-Zusammenfassung (Tagesabschluss) — Nachzug 2026-06-12
+    {
+      stepId: "ce02-yilmaz-s2-doku-05-session-summary",
+      phase: 6,
+      stepType: "summary",
+      bloomLevel: 5,
+      kompetenzbereich: "I.1",
+      quellen: ["DNQP Dekubitusprophylaxe (2. Aktualisierung 2024)", "Donabedian A. (1966)"],
+      track: "basis",
+      modus: "checkpoint",
+      lernziel: "ce02-yilmaz-s2-doku-summary",
+      tag: "pflege",
+      contentC1: {
+        title: "Das hast du heute gelernt",
+        body: "Du hast die zweite Begegnung mit Frau Ayşe Yilmaz (79) abgeschlossen: aus dem Dekubitus Kategorie I (Spirale 1, Prophylaxe) ist eine Kategorie II am Sakrum geworden (Spirale 2, Therapie und Qualitätssicherung). Hier sind die Kernpunkte des Tages — und die Karteikarten für die schwierigen Begriffe.",
+        glossarBegriffe: ["Dekubitus", "Wunddokumentation"],
+      },
+      contentB1: {
+        title: "Das hast du heute gelernt",
+        body: "Du warst zum zweiten Mal bei Frau Yilmaz. In Spirale 1 ging es um Vorbeugung (Kategorie 1). Heute ging es um Behandlung und Dokumentation (Kategorie 2). Hier ist die Zusammenfassung.",
+        glossarBegriffe: ["Dekubitus", "Wunddokumentation"],
+      },
+      question: {
+        fragetext: "Zusammenfassung der Lernsituation ls-yilmaz-spirale2.",
+        summary: {
+          reflexionRueckbezug:
+            "Frau Yilmaz kennst du schon aus Spirale 1. Heute hast du gesehen, wie aus einem Risiko ein Schaden wird — und wie du als Pflegekraft genau dann sauber versorgst, evaluierst und dokumentierst. Das ist der Übergang von der Prophylaxe zur Therapie.",
+          kernaussagen: [
+            "Dekubitus Kategorie I vs. II: Kategorie I ist nicht-wegdrückbare Rötung bei intakter Haut, Kategorie II ein offener Teilhautdefekt. Der Übergang bedeutet: aus Prophylaxe wird Wundtherapie.",
+            "Wunddokumentation: Pflichtinhalte sind u. a. Lokalisation, Größe (hier 2×3 cm am Sakrum), Wundgrund, Wundrand, Exsudat und Schmerz — sachlich und beobachtungsbasiert.",
+            "Donabedian-Qualität: Pflegequalität wird in Struktur-, Prozess- und Ergebnisqualität (S-P-E) bewertet — nicht nur am Ergebnis.",
+            "DNQP-Expertenstandard Dekubitusprophylaxe (2. Aktualisierung 2024) ist der Maßstab, an dem die Versorgung gemessen wird.",
+            "Dekubitus als Systemversagen: Entstehung ist meist multifaktoriell (Druck, Diabetes, Neuropathie, Mobilität) — keine Einzelschuld, sondern Anlass zur Systemanalyse.",
+            "Risikoverstärker bei Frau Yilmaz: Diabetes mellitus und periphere Neuropathie senken das Schmerzempfinden an Sakrum und Fersen — Schäden werden später bemerkt.",
+            "Dokumentation als Qualitätssicherung und interkulturelle Kommunikation, angepasst an Sprache und Kultur der Patientin.",
+          ],
+        },
+      },
+    },
   ],
   optionaleSteps: [
     // Opt 6.5 — CarePlan (Lückentext-Variante): Wundbericht Textbausteine (B1-Schüler)
