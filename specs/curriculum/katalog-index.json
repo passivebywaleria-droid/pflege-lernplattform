@@ -1,0 +1,101 @@
+[
+  {
+    "ce": 1,
+    "gesamt": 18,
+    "wissen": 8,
+    "koennen": 7,
+    "einstellung": 3,
+    "altersbezug": 0,
+    "motorisch": 0
+  },
+  {
+    "ce": 2,
+    "gesamt": 77,
+    "wissen": 38,
+    "koennen": 28,
+    "einstellung": 11,
+    "altersbezug": 9,
+    "motorisch": 5
+  },
+  {
+    "ce": 3,
+    "gesamt": 23,
+    "wissen": 8,
+    "koennen": 8,
+    "einstellung": 7,
+    "altersbezug": 1,
+    "motorisch": 0
+  },
+  {
+    "ce": 4,
+    "gesamt": 43,
+    "wissen": 16,
+    "koennen": 19,
+    "einstellung": 8,
+    "altersbezug": 2,
+    "motorisch": 1
+  },
+  {
+    "ce": 5,
+    "gesamt": 58,
+    "wissen": 28,
+    "koennen": 20,
+    "einstellung": 10,
+    "altersbezug": 3,
+    "motorisch": 0
+  },
+  {
+    "ce": 6,
+    "gesamt": 35,
+    "wissen": 13,
+    "koennen": 15,
+    "einstellung": 7,
+    "altersbezug": 0,
+    "motorisch": 0
+  },
+  {
+    "ce": 7,
+    "gesamt": 36,
+    "wissen": 15,
+    "koennen": 15,
+    "einstellung": 6,
+    "altersbezug": 2,
+    "motorisch": 0
+  },
+  {
+    "ce": 8,
+    "gesamt": 85,
+    "wissen": 39,
+    "koennen": 29,
+    "einstellung": 17,
+    "altersbezug": 2,
+    "motorisch": 1
+  },
+  {
+    "ce": 9,
+    "gesamt": 64,
+    "wissen": 37,
+    "koennen": 20,
+    "einstellung": 7,
+    "altersbezug": 8,
+    "motorisch": 0
+  },
+  {
+    "ce": 10,
+    "gesamt": 68,
+    "wissen": 44,
+    "koennen": 18,
+    "einstellung": 6,
+    "altersbezug": 12,
+    "motorisch": 2
+  },
+  {
+    "ce": 11,
+    "gesamt": 67,
+    "wissen": 27,
+    "koennen": 26,
+    "einstellung": 14,
+    "altersbezug": 2,
+    "motorisch": 1
+  }
+]
