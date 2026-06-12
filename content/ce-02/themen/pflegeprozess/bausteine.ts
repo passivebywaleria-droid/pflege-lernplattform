@@ -757,4 +757,56 @@ export const CE02_THEMA_PFLEGEPROZESS_BAUSTEINE: Wissensbaustein[] = [
     glossarBegriffe: ["PESR-Format", "Pflegeplanung", "Pflegeproblem"],
     karteikarten: [],
   },
+
+  // ═══════════════════════════════════════════
+  // Baustein 16: wahrnehmung-wahrnehmungsfehler (Bloom 2) — Rahmenlehrplan CE02-LE1-W2/W3
+  // Lernergebnis-First-Nachzug 2026-06-12 (Wahrnehmungs-Lücke geschlossen)
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "wahrnehmung-wahrnehmungsfehler",
+    themaId: "pflegeprozess",
+    titel: "Wahrnehmung & Wahrnehmungsfehler in der Pflegeeinschätzung",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "In der Übergabe hörst du über einen neuen Patienten: \"Der ist eh nur wehleidig.\" Du gehst zu ihm. Wie könnte dieser eine Satz deine eigene Beobachtung verfälschen — noch bevor du ihn richtig angeschaut hast?",
+      antwort:
+        "Beobachten ist ein aktiver Vorgang der Wahrnehmung — und was du erwartest, beeinflusst, was du siehst. Der Satz löst eine selektive Wahrnehmung aus: Du suchst eher nach Bestätigung (\"sieht ja gar nicht so schlimm aus\") und übersiehst Hinweise, die dagegen sprechen. Eine vorschnelle Zuschreibung wird so zum Wahrnehmungsfehler, der zu einer falschen Einschätzung und damit zu falscher Pflege führt. Gegenstrategie: kriterienorientiert und methodisch beobachten, mehrere Sinne nutzen, im Team abgleichen — und die eigene Erwartung bewusst in Frage stellen.",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text:
+        "Beobachtung im Pflegeprozess ist ein aktiver Vorgang der Wahrnehmung: kriterienorientiert, absichtlich, methodisch. Sie hängt nicht nur von den Sinnesorganen ab, sondern auch von Umwelt- und psychologischen Faktoren. Vier typische Fehler: selektive Wahrnehmung (du siehst, was du erwartest), Halo-Effekt (eine auffällige Eigenschaft überstrahlt alles andere), Vorurteil/Stigmatisierung (starre Zuschreibung → fehlerhafte Schlüsse), Wahrnehmungstäuschung (Wahrnehmung ≠ Realität).",
+      textB1:
+        "Beobachten ist aktive Arbeit, kein einfaches Hinschauen. Achtung: Was du erwartest, verändert, was du siehst. Vier häufige Fehler: 1) du siehst, was du erwartest (selektive Wahrnehmung), 2) eine auffällige Sache überdeckt alles (Halo-Effekt), 3) \"der ist eh so\" → du schaust nicht genau hin (Vorurteil), 4) deine Sinne täuschen dich (Wahrnehmungstäuschung). Besser: nach festen Kriterien beobachten, mehrere Sinne nutzen, im Team nachfragen.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-pflegeprozess-wb-16-wahrnehmung",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 2,
+        kompetenzbereich: "I.1",
+        quellen: ["Pflege heute Kap. 2.2/2.3", "Pflege heute Kap. 39 (Kommunikation)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-pflegeprozess-wahrnehmung",
+        tag: "pflege",
+        displayFormat: "stepbystep",
+        contentC1: {
+          title: "Wahrnehmung & Wahrnehmungsfehler in der Pflegeeinschätzung",
+          body: "**Beobachten ist kein passives Sehen — es ist aktive Arbeit.** Im Pflegeprozess ist Beobachtung ein **aktiver Vorgang der Wahrnehmung**: Du richtest deine Aufmerksamkeit **kriterienorientiert** auf das, was beim Patienten wichtig ist — absichtlich, methodisch, zielgerichtet. Deine Beobachtungsfähigkeit hängt nicht nur von deinen Sinnesorganen ab, **sondern auch von Umwelt- und psychologischen Faktoren**. Genau darin liegt die Gefahr: Was du erwartest, beeinflusst, was du siehst — und **falsche Wahrnehmung führt zu falscher Einschätzung und damit zu falscher Pflege.**\n\n**Vier typische Wahrnehmungs- und Beurteilungsfehler:**\n- **Selektive Wahrnehmung:** Deine Einstellung steuert, welche Informationen du suchst oder übersiehst, wie du sie bewertest und was du dir merkst. Du findest oft das, was du erwartest.\n- **Halo-Effekt (Überstrahlung):** Eine auffällige Eigenschaft überstrahlt alle anderen — das Auffällige fällt auf, der leise Hinweis auf etwas anderes geht unter.\n- **Vorurteil/Stigmatisierung:** Eine starre Zuschreibung (\"der ist eh ...\") führt zu fehlerhaften Schlussfolgerungen — und wird selbst dann nicht korrigiert, wenn die Beobachtung widerspricht. Vorurteile können sich auf Herkunft, Alter, Gewicht, Suchterkrankung oder psychische Erkrankung richten.\n- **Wahrnehmungstäuschung:** Deine Wahrnehmung entspricht nicht der Realität — möglich bei allen Sinnen, verstärkt durch Müdigkeit oder Stress; beim Patienten auch durch Medikamente oder neurologische/psychische Erkrankungen.\n\n**Die Gegenstrategie:** kriterienorientiert statt nach Bauchgefühl, methodisch, mehrere Sinne nutzen, im Team abgleichen — und die eigene Erwartung bewusst in Frage stellen.",
+          glossarBegriffe: ["Wahrnehmung", "selektive Wahrnehmung", "Halo-Effekt", "Vorurteil", "Wahrnehmungstäuschung", "Beobachtung"],
+        },
+        contentB1: {
+          title: "Wahrnehmung & Wahrnehmungsfehler",
+          body: "**Beobachten ist aktive Arbeit, kein einfaches Hinschauen.** Im Pflegeprozess schaust du mit Absicht und nach festen Kriterien. Achtung: **Was du erwartest, verändert, was du siehst.** Wenn du falsch wahrnimmst, schätzt du falsch ein — und pflegst falsch.\n\n**Vier häufige Fehler:**\n- **Selektive Wahrnehmung:** Du siehst, was du erwartest.\n- **Halo-Effekt:** Eine auffällige Sache überdeckt alles andere.\n- **Vorurteil:** \"Der ist eh so\" → du schaust nicht mehr genau hin.\n- **Wahrnehmungstäuschung:** Deine Sinne täuschen dich (z. B. bei Müdigkeit).\n\n**Besser:** nach festen Kriterien beobachten, mehrere Sinne nutzen, im Team nachfragen.",
+          glossarBegriffe: ["Wahrnehmung", "selektive Wahrnehmung", "Halo-Effekt", "Vorurteil", "Beobachtung"],
+        },
+      },
+    },
+    glossarBegriffe: ["Wahrnehmung", "selektive Wahrnehmung", "Halo-Effekt", "Vorurteil", "Wahrnehmungstäuschung", "Beobachtung"],
+    karteikarten: [],
+  },
 ];
