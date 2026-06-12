@@ -97,6 +97,54 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
       },
     },
 
+    // Inline-Aha: Wahrnehmungsfehler bei Demenz \u2014 "nur die Demenz?" (Rahmenlehrplan CE02-LE1-W3 angewandt)
+    // Direkt nach dem Erstblick platziert: erst "was nimmst du wahr", dann die Falle. (2026-06-12)
+    {
+      stepId: "ce02-bauer-beob-01c-wahrnehmungsfehler",
+      phase: 2,
+      stepType: "mc",
+      bloomLevel: 3,
+      kompetenzbereich: "I.1",
+      quellen: ["Pflege heute Kap. 2.2/2.3", "DNQP 2018 \u2014 Beziehungsgestaltung bei Demenz"],
+      track: "basis",
+      modus: "challenge",
+      lernziel: "ce02-bauer-beob-wahrnehmungsfehler",
+      tag: "pflege",
+      contentC1: {
+        title: "Nur die Demenz \u2014 oder ein Warnsignal?",
+        body: "Herr Bauer ist heute anders als gestern: unruhiger, er wehrt sich bei der Pflege, ruft immer wieder. Gestern war er ruhig. Wie deutest du diese Ver\u00e4nderung?",
+        glossarBegriffe: ["selektive Wahrnehmung", "Delir", "BESD", "Demenz"],
+      },
+      contentB1: {
+        title: "Nur die Demenz \u2014 oder ein Warnsignal?",
+        body: "Herr Bauer ist heute anders als gestern: unruhiger, er wehrt sich, ruft viel. Gestern war er ruhig. Was bedeutet diese Ver\u00e4nderung?",
+        glossarBegriffe: ["Delir", "Schmerz", "Demenz"],
+      },
+      question: {
+        fragetext:
+          "Herr Bauer (Demenz) ist heute pl\u00f6tzlich unruhig und abwehrend \u2014 gestern war er ruhig. Wie gehst du vor?",
+        mcVariant: "standard",
+        optionen: [
+          {
+            text: "Das ist die Demenz, das kennt man \u2014 er ist heute halt unruhig. Ich dokumentiere \"unruhig bei Demenz\".",
+            isCorrect: false,
+            explanation:
+              "Vorsicht \u2014 hier w\u00e4re dir ein Wahrnehmungsfehler unterlaufen: Die vorschnelle Annahme \"das ist nur die Demenz\" l\u00e4sst dich aufh\u00f6ren zu suchen (selektive Wahrnehmung). Herr Bauer ist gest\u00fcrzt \u2014 seine pl\u00f6tzliche Unruhe kann ein Schmerzzeichen sein, das er nicht in Worte fassen kann, oder ein erstes Zeichen f\u00fcr einen Infekt oder ein beginnendes Delir. Genau das findest du nur durch gezieltes Beobachten. \"Das ist nur die Demenz\" ist keine Beobachtung, sondern eine Annahme.",
+            explanationB1:
+              "Das war ein Denkfehler: \"Das ist nur die Demenz\" \u2014 und du h\u00f6rst auf zu suchen. Aber Herr Bauer ist gest\u00fcrzt. Die Unruhe kann Schmerz bedeuten oder eine beginnende Infektion. Eine pl\u00f6tzliche Ver\u00e4nderung ist immer ein Warnsignal \u2014 schau genau hin.",
+          },
+          {
+            text: "Die Ver\u00e4nderung zu gestern ist das Signal. Ich schaue gezielt nach: Schmerz (BESD), Vitalzeichen, Trinkmenge, Urin.",
+            isCorrect: true,
+            explanation:
+              "Genau richtig. Bei Menschen mit Demenz, die sich nicht klar \u00e4u\u00dfern k\u00f6nnen, gilt: Jede pl\u00f6tzliche Verhaltens\u00e4nderung ist ein k\u00f6rperliches Warnsignal, bis das Gegenteil fachlich ausgeschlossen ist \u2014 Schmerz, Infekt oder Delir. Du beobachtest kriterienorientiert und nutzt ein Schmerz-Assessment f\u00fcr nicht-sprechende Menschen (BESD), statt dich auf eine schnelle Erkl\u00e4rung zu verlassen.",
+            explanationB1:
+              "Richtig! Die Ver\u00e4nderung von gestern zu heute ist das wichtige Zeichen. Du schaust gezielt: Hat er Schmerzen (mit BESD)? Wie sind Puls und Temperatur? Trinkt er? Wie sieht der Urin aus? So findest du die echte Ursache.",
+          },
+        ],
+      },
+    },
+
     // Inline-Wissen: Vitalzeichen, ABCDE-Schema und Synkope \u2014 Grundlagen der Ersteinschaetzung
     {
       stepId: "ce02-bauer-beob-01b-vitalzeichen-abcde",
@@ -747,54 +795,6 @@ export const CE02_SIT_BAUER_DEMENZ_STURZ_BEOBACHTEN: SituationsPhase = {
             },
           ],
         },
-      },
-    },
-
-    // Inline-Aha: Wahrnehmungsfehler bei Demenz — "nur die Demenz?" (Rahmenlehrplan CE02-LE1-W3 angewandt)
-    // Lernergebnis-First-Nachzug 2026-06-12
-    {
-      stepId: "ce02-bauer-beob-08-wahrnehmungsfehler",
-      phase: 2,
-      stepType: "mc",
-      bloomLevel: 3,
-      kompetenzbereich: "I.1",
-      quellen: ["Pflege heute Kap. 2.2/2.3", "DNQP 2018 — Beziehungsgestaltung bei Demenz"],
-      track: "basis",
-      modus: "challenge",
-      lernziel: "ce02-bauer-beob-wahrnehmungsfehler",
-      tag: "pflege",
-      contentC1: {
-        title: "Nur die Demenz — oder ein Warnsignal?",
-        body: "Herr Bauer ist heute anders als gestern: unruhiger, er wehrt sich bei der Pflege, ruft immer wieder. Gestern war er ruhig. Wie deutest du diese Veränderung?",
-        glossarBegriffe: ["selektive Wahrnehmung", "Delir", "BESD", "Demenz"],
-      },
-      contentB1: {
-        title: "Nur die Demenz — oder ein Warnsignal?",
-        body: "Herr Bauer ist heute anders als gestern: unruhiger, er wehrt sich, ruft viel. Gestern war er ruhig. Was bedeutet diese Veränderung?",
-        glossarBegriffe: ["Delir", "Schmerz", "Demenz"],
-      },
-      question: {
-        fragetext:
-          "Herr Bauer (Demenz) ist heute plötzlich unruhig und abwehrend — gestern war er ruhig. Wie gehst du vor?",
-        mcVariant: "standard",
-        optionen: [
-          {
-            text: "Das ist die Demenz, das kennt man — er ist heute halt unruhig. Ich dokumentiere \"unruhig bei Demenz\".",
-            isCorrect: false,
-            explanation:
-              "Vorsicht — hier wäre dir ein Wahrnehmungsfehler unterlaufen: Die vorschnelle Annahme \"das ist nur die Demenz\" lässt dich aufhören zu suchen (selektive Wahrnehmung). Herr Bauer ist gestürzt — seine plötzliche Unruhe kann ein Schmerzzeichen sein, das er nicht in Worte fassen kann, oder ein erstes Zeichen für einen Infekt oder ein beginnendes Delir. Genau das findest du nur durch gezieltes Beobachten. \"Das ist nur die Demenz\" ist keine Beobachtung, sondern eine Annahme.",
-            explanationB1:
-              "Das war ein Denkfehler: \"Das ist nur die Demenz\" — und du hörst auf zu suchen. Aber Herr Bauer ist gestürzt. Die Unruhe kann Schmerz bedeuten oder eine beginnende Infektion. Eine plötzliche Veränderung ist immer ein Warnsignal — schau genau hin.",
-          },
-          {
-            text: "Die Veränderung zu gestern ist das Signal. Ich schaue gezielt nach: Schmerz (BESD), Vitalzeichen, Trinkmenge, Urin.",
-            isCorrect: true,
-            explanation:
-              "Genau richtig. Bei Menschen mit Demenz, die sich nicht klar äußern können, gilt: Jede plötzliche Verhaltensänderung ist ein körperliches Warnsignal, bis das Gegenteil fachlich ausgeschlossen ist — Schmerz, Infekt oder Delir. Du beobachtest kriterienorientiert und nutzt ein Schmerz-Assessment für nicht-sprechende Menschen (BESD), statt dich auf eine schnelle Erklärung zu verlassen.",
-            explanationB1:
-              "Richtig! Die Veränderung von gestern zu heute ist das wichtige Zeichen. Du schaust gezielt: Hat er Schmerzen (mit BESD)? Wie sind Puls und Temperatur? Trinkt er? Wie sieht der Urin aus? So findest du die echte Ursache.",
-          },
-        ],
       },
     },
   ],
