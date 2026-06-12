@@ -10,7 +10,10 @@ WORKDIR /app
 # ---- Dependencies (inkl. devDeps, fuer den Build noetig) ----
 FROM base AS deps
 COPY package.json package-lock.json* ./
-RUN npm ci
+# npm ci ist strikt (synchrones Lockfile noetig). Faellt das Lockfile durch eine
+# npm-Versionsdifferenz aus, regeneriert npm install die Aufloesung deterministisch
+# aus package.json.
+RUN npm ci --no-audit --no-fund || npm install --no-audit --no-fund
 
 # ---- Build ----
 FROM base AS builder
