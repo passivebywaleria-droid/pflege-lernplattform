@@ -95,7 +95,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       stepType: "text",
       bloomLevel: 3,
       kompetenzbereich: "V.1",
-      quellen: ["§ 1901a BGB", "§ 630d BGB", "§ 630f BGB"],
+      quellen: ["§ 1827 BGB", "§ 630d BGB", "§ 630f BGB"],
       track: "basis",
       modus: "entdecker",
       lernziel: "ce02-kovac-ambulant-plan-autonomie",
@@ -103,14 +103,14 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       displayFormat: "scenario",
       contentC1: {
         title: "Das ethische Dilemma — bevor du handelst",
-        body: "Frau Kovač lehnt die Kompressionsstrümpfe ab. Das ist ihr gutes Recht.\n\nPatientenautonomie ist ein rechtlich verankerter Grundsatz: § 630d BGB regelt, dass jede Behandlung nur mit wirksamer Einwilligung des Patienten erfolgen darf. § 1901a BGB stärkt das Selbstbestimmungsrecht. Zwang ist nicht erlaubt — auch nicht wenn du weißt, dass die Maßnahme dem Patienten nützen würde.\n\nAber: Als Pflegekraft hast du eine Aufklärungspflicht. Du musst ihr erklären, warum die Strümpfe wichtig sind — vollständig, verständlich, auf Augenhöhe. Dann entscheidet sie.\n\n**Drei Regeln:**\n1. Aufklärung ist Pflicht — du erklärst, du drängst nicht.\n2. Erzwingen ist verboten — auch bei gut gemeinter Fürsorge.\n3. Dokumentieren ist notwendig — die Entscheidung der Patientin muss im Pflegebericht stehen.\n\nQuelle: (§ 630f BGB; § 1901a BGB)",
+        body: "Frau Kovač lehnt die Kompressionsstrümpfe ab. Das ist ihr gutes Recht.\n\nPatientenautonomie ist ein rechtlich verankerter Grundsatz: § 630d BGB regelt, dass jede Behandlung nur mit wirksamer Einwilligung des Patienten erfolgen darf. § 1827 BGB stärkt das Selbstbestimmungsrecht. Zwang ist nicht erlaubt — auch nicht wenn du weißt, dass die Maßnahme dem Patienten nützen würde.\n\nAber: Als Pflegekraft hast du eine Aufklärungspflicht. Du musst ihr erklären, warum die Strümpfe wichtig sind — vollständig, verständlich, auf Augenhöhe. Dann entscheidet sie.\n\n**Drei Regeln:**\n1. Aufklärung ist Pflicht — du erklärst, du drängst nicht.\n2. Erzwingen ist verboten — auch bei gut gemeinter Fürsorge.\n3. Dokumentieren ist notwendig — die Entscheidung der Patientin muss im Pflegebericht stehen.\n\nQuelle: (§ 630f BGB; § 1827 BGB)",
         fallbezug:
           "Frau Kovač hat die Kompressionsstrümpfe seit 3 Wochen abgelehnt. Heute ist das Gespräch Pflicht — nicht um sie zu überreden, sondern um zu dokumentieren: Sie wurde aufgeklärt. Sie hat entschieden. Das ist ihr Recht.",
         glossarBegriffe: ["Patientenautonomie", "Aufklärungspflicht", "Verweigerung", "Pflegebericht", "Würde", "Kompressionsstrümpfe", "Einwilligung", "§ 630f BGB", "Maßnahme", "Aufklärung"],
       },
       contentB1: {
         title: "Darf Frau Kovač Nein sagen?",
-        body: "Frau Kovač lehnt die Kompressionsstrümpfe ab. Das ist ihr Recht.\n\nWas du tun musst:\n\n**1. Aufklärung ist Pflicht.** Du erklärst ihr warum die Strümpfe wichtig sind. Klar und verständlich.\n\n**2. Erzwingen ist verboten.** Du darfst sie nicht zwingen — auch wenn du weißt, dass es ihr helfen würde.\n\n**3. Dokumentieren ist Pflicht.** Du schreibst auf: Du hast erklärt. Sie hat Nein gesagt. Das ist ihr Recht.\n\nGesetze dazu: § 630d BGB (Einwilligung), § 1901a BGB (Selbstbestimmungsrecht), § 630f BGB (Dokumentationspflicht).",
+        body: "Frau Kovač lehnt die Kompressionsstrümpfe ab. Das ist ihr Recht.\n\nWas du tun musst:\n\n**1. Aufklärung ist Pflicht.** Du erklärst ihr warum die Strümpfe wichtig sind. Klar und verständlich.\n\n**2. Erzwingen ist verboten.** Du darfst sie nicht zwingen — auch wenn du weißt, dass es ihr helfen würde.\n\n**3. Dokumentieren ist Pflicht.** Du schreibst auf: Du hast erklärt. Sie hat Nein gesagt. Das ist ihr Recht.\n\nGesetze dazu: § 630d BGB (Einwilligung), § 1827 BGB (Selbstbestimmungsrecht), § 630f BGB (Dokumentationspflicht).",
         fallbezug:
           "Frau Kovač sagt schon seit 3 Wochen Nein zu den Strümpfen. Heute erklärst du ihr nochmal warum sie wichtig sind. Und dann schreibst du auf was sie gesagt hat.",
         glossarBegriffe: ["Selbstbestimmungsrecht", "Dokumentationspflicht", "Pflegebericht", "Würde", "Kompressionsstrümpfe", "Einwilligung", "§ 630f BGB", "Maßnahme", "Aufklärung"],
@@ -172,7 +172,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       stepType: "branching",
       bloomLevel: 5,
       kompetenzbereich: "V.1",
-      quellen: ["§ 1901a BGB", "§ 630d BGB", "§ 630f BGB"],
+      quellen: ["§ 1827 BGB", "§ 630d BGB", "§ 630f BGB"],
       track: "basis",
       modus: "praxis-sim",
       lernziel: "ce02-kovac-ambulant-plan-verweigerung",
@@ -194,7 +194,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
             text: "Ich erkläre den Unterschied zwischen ASS und Kompressionsstrümpfen, frage konkret nach dem Grund der Ablehnung (Druck? Anziehen? Hitze?), biete Alternativen an (Klasse 1 statt Klasse 2, Anziehhilfe, Hauttest) — und akzeptiere dann ihre Entscheidung.",
             isCorrect: true,
             feedback:
-              "Richtig. Vollständige Aufklärung heißt: erklären (Wirkung), nachfragen (konkretes Hindernis), Alternativen anbieten (oft ist das Problem lösbar), Entscheidung respektieren.\n\n**Konkrete Alternativen die du anbieten kannst:**\n- **Klasse 1** (leichterer Druck) statt Klasse 2 — bei NYHA II + Beinödemen oft ausreichend, Tragekomfort deutlich besser. Erfordert ärztliche Verordnung.\n- **Anziehhilfe** (Gleitstrumpf, Schlaufengriff) — viele Patient:innen lehnen ab, weil sie das Anziehen nicht schaffen.\n- **Hauttest** — wenn 'die drücken' = Hautirritation, kann eine andere Materialqualität helfen.\n- **Tragezeit anpassen** — z.B. nur tagsüber, nicht beim Schlafen.\n\n**Frau Kovačs Reaktion:** Sie hört zu, mit verschränkten Armen. Nach deiner Erklärung sagt sie: \"Hmm. ASS ist also nicht dasselbe. Das hat mir keiner so erklärt. Klasse 1 — das hab ich noch nie probiert. Trotzdem, heute will ich keine. Aber dass Sie mir das so sagen, das ist anders. Schreiben Sie's halt auf.\" — Vertrauen bleibt, Autonomie respektiert, Aufklärung dokumentiert. Ein Spalt für eine spätere Lösung ist offen.\n\nJetzt musst du die Verweigerung im Pflegebericht dokumentieren — vollständig: was du erklärt hast, welche Alternativen du angeboten hast, wie sie reagiert hat, dass es ihre freiwillige Entscheidung ist. Quelle: (§ 630f BGB; § 1901a BGB; AWMF S3-Leitlinie Thromboseprophylaxe 003-001)",
+              "Richtig. Vollständige Aufklärung heißt: erklären (Wirkung), nachfragen (konkretes Hindernis), Alternativen anbieten (oft ist das Problem lösbar), Entscheidung respektieren.\n\n**Konkrete Alternativen die du anbieten kannst:**\n- **Klasse 1** (leichterer Druck) statt Klasse 2 — bei NYHA II + Beinödemen oft ausreichend, Tragekomfort deutlich besser. Erfordert ärztliche Verordnung.\n- **Anziehhilfe** (Gleitstrumpf, Schlaufengriff) — viele Patient:innen lehnen ab, weil sie das Anziehen nicht schaffen.\n- **Hauttest** — wenn 'die drücken' = Hautirritation, kann eine andere Materialqualität helfen.\n- **Tragezeit anpassen** — z.B. nur tagsüber, nicht beim Schlafen.\n\n**Frau Kovačs Reaktion:** Sie hört zu, mit verschränkten Armen. Nach deiner Erklärung sagt sie: \"Hmm. ASS ist also nicht dasselbe. Das hat mir keiner so erklärt. Klasse 1 — das hab ich noch nie probiert. Trotzdem, heute will ich keine. Aber dass Sie mir das so sagen, das ist anders. Schreiben Sie's halt auf.\" — Vertrauen bleibt, Autonomie respektiert, Aufklärung dokumentiert. Ein Spalt für eine spätere Lösung ist offen.\n\nJetzt musst du die Verweigerung im Pflegebericht dokumentieren — vollständig: was du erklärt hast, welche Alternativen du angeboten hast, wie sie reagiert hat, dass es ihre freiwillige Entscheidung ist. Quelle: (§ 630f BGB; § 1827 BGB; AWMF S3-Leitlinie Thromboseprophylaxe 003-001)",
             feedbackB1:
               "Richtig. Aufklärung ist mehr als nur erklären — du **fragst nach** warum sie ablehnt (Druck? Anziehen? Hitze?) und **bietest Alternativen** an:\n- Klasse 1 (leichter) statt Klasse 2\n- Anziehhilfe (Gleitstrumpf)\n- Andere Materialqualität (wenn die Haut juckt)\n- Nur tagsüber tragen, nicht nachts\n\n**Frau Kovač sagt:** \"Hmm. ASS und Strümpfe sind nicht dasselbe. Klasse 1 — das wusste ich nicht. Heute will ich trotzdem keine. Aber Sie reden mit mir, das ist anders. Schreiben Sie es auf.\"\n\nDann schreibst du alles auf — auch welche Alternativen du angeboten hast.",
           },
@@ -210,7 +210,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
             text: "Ich überzeuge sie mit Nachdruck — das Thromboserisiko ist zu groß, um es zu ignorieren.",
             isCorrect: false,
             feedback:
-              "Nicht erlaubt. Überreden ist erlaubt — aber Druck ausüben verletzt die Patientenautonomie (§ 1901a BGB) und beschädigt das Vertrauensverhältnis.\n\n**Frau Kovačs Reaktion:** Sie wird sehr still. Dann, scharf: \"Dann gehen Sie. Ich will Sie nicht in meiner Wohnung. Ich rufe beim Pflegedienst an.\" — Du hast den Auftrag verloren, der Pflegedienst hat eine formale Beschwerde, und Frau Kovač wird auch andere Pflegekräfte mit Misstraün begegnen.\n\nDer Unterschied: Aufklärung = 'Ich erkläre, warum es wichtig ist.' Druck = 'Du musst das tun.' Nur ersteres ist erlaubt. In ihrer Wohnung gilt ihre Regel — du bist Gast mit Auftrag, kein Befehlshaber. Geh zurück und wähle Pfad A.",
+              "Nicht erlaubt. Überreden ist erlaubt — aber Druck ausüben verletzt die Patientenautonomie (§ 1827 BGB) und beschädigt das Vertrauensverhältnis.\n\n**Frau Kovačs Reaktion:** Sie wird sehr still. Dann, scharf: \"Dann gehen Sie. Ich will Sie nicht in meiner Wohnung. Ich rufe beim Pflegedienst an.\" — Du hast den Auftrag verloren, der Pflegedienst hat eine formale Beschwerde, und Frau Kovač wird auch andere Pflegekräfte mit Misstraün begegnen.\n\nDer Unterschied: Aufklärung = 'Ich erkläre, warum es wichtig ist.' Druck = 'Du musst das tun.' Nur ersteres ist erlaubt. In ihrer Wohnung gilt ihre Regel — du bist Gast mit Auftrag, kein Befehlshaber. Geh zurück und wähle Pfad A.",
             feedbackB1:
               "Nicht erlaubt. Du darfst ihr erklären. Du darfst sie nicht zwingen.\n\n**Frau Kovač wird wütend:** \"Dann gehen Sie. Ich will Sie nicht in meiner Wohnung. Ich rufe den Pflegedienst an.\" — Du hast das Vertrauen verloren. Und der Pflegedienst hat eine Beschwerde.\n\nIn ihrer Wohnung gilt ihre Regel. Geh zurück zu Pfad A.",
           },
@@ -329,7 +329,7 @@ export const CE02_SIT_KOVAC_AMBULANT_PLANEN: SituationsPhase = {
       stepType: "text",
       bloomLevel: 2,
       kompetenzbereich: "V.1",
-      quellen: ["§ 630d BGB", "§ 1901a BGB"],
+      quellen: ["§ 630d BGB", "§ 1827 BGB"],
       track: "vertiefung",
       modus: "entdecker",
       tag: "pflege",

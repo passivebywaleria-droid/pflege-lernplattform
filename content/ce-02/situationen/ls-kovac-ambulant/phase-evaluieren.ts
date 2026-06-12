@@ -57,7 +57,7 @@ export const CE02_SIT_KOVAC_AMBULANT_EVALUIEREN: SituationsPhase = {
             correctCategory: 0,
           },
           {
-            text: "Kompressionsstrümpfe: Verweigerung nach vollständiger Aufklärung dokumentiert — Patientenautonomie respektiert (§ 1901a BGB)",
+            text: "Kompressionsstrümpfe: Verweigerung nach vollständiger Aufklärung dokumentiert — Patientenautonomie respektiert (§ 1827 BGB)",
             correctCategory: 0,
           },
           {

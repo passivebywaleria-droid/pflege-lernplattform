@@ -110,7 +110,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
       stepType: "inlineWissen",
       bloomLevel: 2,
       kompetenzbereich: "V.1",
-      quellen: ["§ 630f BGB", "§ 630d BGB", "§ 1901a BGB"],
+      quellen: ["§ 630f BGB", "§ 630d BGB", "§ 1827 BGB"],
       track: "basis",
       modus: "entdecker",
       lernziel: "ce02-kovac-dok-verweigerungsdokumentation",
@@ -132,9 +132,9 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
         storyAufhaengerB1:
           "Frau Kovač hat Nein zu den Kompressionsstrümpfen gesagt. Das darf sie. Aber du musst jetzt genau aufschreiben, dass du erklärt hast und sie Nein gesagt hat. Das nennt man Verweigerungsdokumentation.",
         kerntext:
-          "Die **Verweigerungsdokumentation** ist ein pflegerisch-juristischer Fachbegriff für die schriftliche Erfassung einer Behandlungsablehnung durch die Patientin. Sie ist **Pflicht** nach § 630f BGB und schützt sowohl die Patientin (Selbstbestimmungsrecht, § 1901a BGB) als auch die Pflegekraft (Nachweis der Aufklärung).\n\nOhne Verweigerungsdokumentation gilt juristisch: **Was nicht dokumentiert ist, hat nicht stattgefunden.** Wenn Frau Kovač eine Thrombose entwickelt und in der Dokumentation steht nur \"Strümpfe abgelehnt\" ohne Aufklärungsnachweis — kann der Pflegedienst haftbar gemacht werden wegen unterlassener Aufklärung.\n\nEine vollständige Verweigerungsdokumentation enthält immer drei Elemente — die du im nächsten Step im Detail lernst.\n\nQuelle: (§ 630f BGB; § 630d BGB; § 1901a BGB)",
+          "Die **Verweigerungsdokumentation** ist ein pflegerisch-juristischer Fachbegriff für die schriftliche Erfassung einer Behandlungsablehnung durch die Patientin. Sie ist **Pflicht** nach § 630f BGB und schützt sowohl die Patientin (Selbstbestimmungsrecht, § 1827 BGB) als auch die Pflegekraft (Nachweis der Aufklärung).\n\nOhne Verweigerungsdokumentation gilt juristisch: **Was nicht dokumentiert ist, hat nicht stattgefunden.** Wenn Frau Kovač eine Thrombose entwickelt und in der Dokumentation steht nur \"Strümpfe abgelehnt\" ohne Aufklärungsnachweis — kann der Pflegedienst haftbar gemacht werden wegen unterlassener Aufklärung.\n\nEine vollständige Verweigerungsdokumentation enthält immer drei Elemente — die du im nächsten Step im Detail lernst.\n\nQuelle: (§ 630f BGB; § 630d BGB; § 1827 BGB)",
         kerntextB1:
-          "**Verweigerungsdokumentation** = Du schreibst auf, dass die Patientin etwas abgelehnt hat. Aber nicht nur \"sie hat Nein gesagt\". Du schreibst auch auf: Was hast du erklärt? Wie hat sie reagiert?\n\nWarum ist das so wichtig? Wenn etwas passiert (z.B. eine Thrombose) und du hast nur \"Strümpfe abgelehnt\" geschrieben — dann kann der Pflegedienst ein Problem bekommen. Das Gericht sagt: Was nicht aufgeschrieben ist, ist nicht passiert.\n\nGesetze: § 630f BGB (Dokumentationspflicht), § 1901a BGB (Selbstbestimmungsrecht).",
+          "**Verweigerungsdokumentation** = Du schreibst auf, dass die Patientin etwas abgelehnt hat. Aber nicht nur \"sie hat Nein gesagt\". Du schreibst auch auf: Was hast du erklärt? Wie hat sie reagiert?\n\nWarum ist das so wichtig? Wenn etwas passiert (z.B. eine Thrombose) und du hast nur \"Strümpfe abgelehnt\" geschrieben — dann kann der Pflegedienst ein Problem bekommen. Das Gericht sagt: Was nicht aufgeschrieben ist, ist nicht passiert.\n\nGesetze: § 630f BGB (Dokumentationspflicht), § 1827 BGB (Selbstbestimmungsrecht).",
         faustregel:
           "Verweigerungsdokumentation = Aufklärungsnachweis + Patientenentscheidung + wörtliches Zitat. Ohne das gilt: \"Nicht dokumentiert = nicht stattgefunden.\"",
         faustregelB1:
@@ -155,7 +155,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
       stepType: "text",
       bloomLevel: 5,
       kompetenzbereich: "V.1",
-      quellen: ["§ 630f BGB", "§ 1901a BGB", "§ 630d BGB"],
+      quellen: ["§ 630f BGB", "§ 1827 BGB", "§ 630d BGB"],
       track: "basis",
       modus: "entdecker",
       lernziel: "ce02-kovac-ambulant-dok-verweigerung",
@@ -163,7 +163,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
       displayFormat: "checklist",
       contentC1: {
         title: "Verweigerung dokumentieren — drei Pflicht-Elemente",
-        body: "Wenn eine Patientin eine Pflegemaßnahme ablehnt, ist die Dokumentation keine Formsache — sie ist rechtliche Absicherung für die Pflegekraft und Respekt vor der Patientenwürde. Drei Elemente müssen zwingend drin sein:\n\n✓ **WAS wurde angeboten und erklärt**\nNicht nur 'Kompressionsstrümpfe abgelehnt'. Sondern: 'Kompressionsstrümpfe wurden empfohlen und Aufklärung über das erhöhte Thromboserisiko bei Herzinsuffizienz, Immobilität und fehlender Mobilisation wurde durchgeführt. Unterschied zwischen ASS-Wirkung und Kompressionstherapie wurde erklärt.'\n\n✓ **WIE wurde aufgeklärt**\n'Mündlich durch Pflegekraft X am [Datum], in verständlicher Sprache, Rückfragen wurden beantwortet.'\n\n✓ **WIE hat die Patientin entschieden**\nWörtliches Zitat wenn möglich: 'Patientin äußerte: Ich brauch keine Strümpfe, ich hab doch die Tabletten. Bewusste, freiwillige Ablehnung der Maßnahme nach vollständiger Aufklärung.'\n\nQuelle: (§ 630f BGB; § 1901a BGB; § 630d BGB)",
+        body: "Wenn eine Patientin eine Pflegemaßnahme ablehnt, ist die Dokumentation keine Formsache — sie ist rechtliche Absicherung für die Pflegekraft und Respekt vor der Patientenwürde. Drei Elemente müssen zwingend drin sein:\n\n✓ **WAS wurde angeboten und erklärt**\nNicht nur 'Kompressionsstrümpfe abgelehnt'. Sondern: 'Kompressionsstrümpfe wurden empfohlen und Aufklärung über das erhöhte Thromboserisiko bei Herzinsuffizienz, Immobilität und fehlender Mobilisation wurde durchgeführt. Unterschied zwischen ASS-Wirkung und Kompressionstherapie wurde erklärt.'\n\n✓ **WIE wurde aufgeklärt**\n'Mündlich durch Pflegekraft X am [Datum], in verständlicher Sprache, Rückfragen wurden beantwortet.'\n\n✓ **WIE hat die Patientin entschieden**\nWörtliches Zitat wenn möglich: 'Patientin äußerte: Ich brauch keine Strümpfe, ich hab doch die Tabletten. Bewusste, freiwillige Ablehnung der Maßnahme nach vollständiger Aufklärung.'\n\nQuelle: (§ 630f BGB; § 1827 BGB; § 630d BGB)",
         fallbezug:
           "Heute ist die dritte Woche in Folge, in der Frau Kovač die Kompressionsstrümpfe ablehnt. Jede Verweigerung muss neu dokumentiert werden — nicht 'wie immer'. Eine Dokumentation von vor 3 Wochen schützt dich heute nicht.",
         glossarBegriffe: [
@@ -185,7 +185,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Wie schreibt man eine Verweigerung richtig auf?",
-        body: "Frau Kovač sagt Nein zu den Kompressionsstrümpfen. Das ist ihr Recht. Du musst es richtig aufschreiben. Es gibt 3 Teile:\n\n✓ **WAS hast du angeboten und erklärt?**\nNicht nur 'Strümpfe abgelehnt'. Sondern: Was hast du ihr erklärt? Warum sind die Strümpfe wichtig? Das muss drinstehen.\n\n✓ **WIE hast du aufgeklärt?**\nMündlich, heute, von dir. In verständlicher Sprache. Sie konnte Fragen stellen.\n\n✓ **Was hat die Patientin gesagt?**\nWörtlich wenn möglich: 'Ich brauch keine Strümpfe, ich hab doch die Tabletten.' Das zeigt: Sie hat bewusst Nein gesagt. Es war ihre freie Entscheidung.\n\nGesetze: § 630f BGB (Dokumentationspflicht), § 1901a BGB (Selbstbestimmungsrecht).",
+        body: "Frau Kovač sagt Nein zu den Kompressionsstrümpfen. Das ist ihr Recht. Du musst es richtig aufschreiben. Es gibt 3 Teile:\n\n✓ **WAS hast du angeboten und erklärt?**\nNicht nur 'Strümpfe abgelehnt'. Sondern: Was hast du ihr erklärt? Warum sind die Strümpfe wichtig? Das muss drinstehen.\n\n✓ **WIE hast du aufgeklärt?**\nMündlich, heute, von dir. In verständlicher Sprache. Sie konnte Fragen stellen.\n\n✓ **Was hat die Patientin gesagt?**\nWörtlich wenn möglich: 'Ich brauch keine Strümpfe, ich hab doch die Tabletten.' Das zeigt: Sie hat bewusst Nein gesagt. Es war ihre freie Entscheidung.\n\nGesetze: § 630f BGB (Dokumentationspflicht), § 1827 BGB (Selbstbestimmungsrecht).",
         glossarBegriffe: [
           "Verweigerungsdokumentation",
           "Aufklärungspflicht",
@@ -213,7 +213,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
       kompetenzbereich: "I.1",
       quellen: [
         "§ 630f BGB",
-        "§ 1901a BGB",
+        "§ 1827 BGB",
         "DSGVO 2018 Art. 4 + Art. 9",
         "GOLD-Report COPD 2023",
         "ESC Heart Failure Guidelines 2023",
@@ -268,7 +268,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
       quellen: [
         "GOLD-Report COPD 2023",
         "§ 630f BGB",
-        "§ 1901a BGB",
+        "§ 1827 BGB",
         "DSGVO 2018",
       ],
       track: "basis",
@@ -292,7 +292,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
             "Du hast heute einen vollständigen ambulanten Pflegetag bei Frau Marija Kovač begleitet — von der Übergabe um 07:30 Uhr bis zum Besuchsbericht nach dem Abendbesuch. Frau Kovač hat die Übungen zweimal allein wiederholt. Das Schlafgespräch ist eröffnet. Die Kompressionsstrümpfe liegen noch. Evaluation heißt nicht: alles gelöst. Es heißt: du weißt was noch fehlt.",
           kernaussagen: [
             "Atembeobachtung bei COPD III: 7 systematische Punkte — Atemfrequenz, Lippenbremse, Atemhilfsmuskulatur, Atemgeräusche, Sputum-Farbe, Körperhaltung, SpO2 (88–92 % nur als Zielkorridor unter Sauerstofftherapie bei Exazerbation; im stabilen Zustand sind >92 % normal)",
-            "Patientenautonomie und Aufklärungspflicht: Aufklärung ist Pflicht — Erzwingen ist verboten — Dokumentieren ist notwendig (§ 630d BGB, § 1901a BGB, § 630f BGB)",
+            "Patientenautonomie und Aufklärungspflicht: Aufklärung ist Pflicht — Erzwingen ist verboten — Dokumentieren ist notwendig (§ 630d BGB, § 1827 BGB, § 630f BGB)",
             "Verweigerungs-Dokumentation: 3 Pflicht-Elemente — Was erklärt? Wie aufgeklärt? Was hat die Patientin gesagt?",
             "Datenschutz in der ambulanten Pflege: Keine Weitergabe von Gesundheitsdaten ohne schriftliche Schweigepflichtsentbindung — auch nicht an Angehörige (DSGVO Art. 9, § 203 StGB)",
             "Ambulante vs. stationäre Pflege: allein, 45 Min, Patientenwohnung, keine 24h-Beobachtung, lückenhafte Protokolle als Informationsgrundlage",
@@ -414,7 +414,7 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
       stepType: "freetext",
       bloomLevel: 6,
       kompetenzbereich: "V.1",
-      quellen: ["§ 630f BGB", "§ 1901a BGB"],
+      quellen: ["§ 630f BGB", "§ 1827 BGB"],
       track: "vertiefung",
       modus: "schreibtisch",
       tag: "pflege",
