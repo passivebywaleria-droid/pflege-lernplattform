@@ -809,4 +809,108 @@ export const CE02_THEMA_PFLEGEPROZESS_BAUSTEINE: Wissensbaustein[] = [
     glossarBegriffe: ["Wahrnehmung", "selektive Wahrnehmung", "Halo-Effekt", "Vorurteil", "Wahrnehmungstäuschung", "Beobachtung"],
     karteikarten: [],
   },
+
+  // ═══════════════════════════════════════════
+  // Baustein 17: pflegeprozess-beziehungsprozess (Bloom 4) — Rahmenlehrplan CE02-LE1-K3
+  // Lernergebnis-First-Nachzug 2026-06-12
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "pflegeprozess-beziehungsprozess",
+    themaId: "pflegeprozess",
+    titel: "Pflegeprozess als Beziehungsprozess",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Zwei Pflegende führen dasselbe Aufnahmegespräch mit demselben Patienten — und kommen mit unterschiedlich vielen, unterschiedlich ehrlichen Informationen zurück. Wie kann das sein, wenn der Pflegeprozess doch ein festes Schritt-Schema ist?",
+      antwort:
+        "Weil der Pflegeprozess zwei Seiten hat. Er ist ein **Problemlösungsprozess** (die Abfolge der Schritte) — aber zugleich ein **Beziehungsprozess**: Durch die Art der Interaktion zwischen Pflegender und Patient können Informationen besser oder schlechter gesammelt werden. Vertrauen, Zuwendung und respektvolle Kommunikation entscheiden mit darüber, was der Patient überhaupt preisgibt. Das Ergebnis wird auch von Intuition und Erfahrung der Pflegefachperson beeinflusst. Methode allein reicht nicht — die Beziehung ist Teil der Methode.",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text:
+        "Der Pflegeprozess ist nicht nur ein Problemlösungsprozess (die Schritte), sondern auch ein Beziehungsprozess. Durch die Art der Interaktion zwischen Pflegender und Patient können Informationen besser oder schlechter gesammelt werden — Beziehung bestimmt die Datenqualität mit.",
+      textB1:
+        "Der Pflegeprozess hat zwei Seiten: die Schritte (Problem lösen) UND die Beziehung. Wie du mit dem Patienten sprichst, entscheidet mit, was er dir erzählt. Eine gute Beziehung ist kein Extra — sie gehört zur Methode.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-pflegeprozess-wb-17-beziehungsprozess",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 4,
+        kompetenzbereich: "I.1",
+        quellen: ["Pflege heute Kap. 1.8 (Pflegediagnostik)", "Fiechter/Meier, 1981"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-pflegeprozess-beziehungsprozess",
+        tag: "pflege",
+        displayFormat: "procontra",
+        contentC1: {
+          title: "Pflegeprozess als Beziehungsprozess",
+          body: "Der Pflegeprozess hat **zwei Seiten, die zusammengehören**:\n\n**1. Problemlösungsprozess** — die sachliche Abfolge: Wahrnehmung, Beobachtung, Analyse, Interpretation, Beurteilung. Das ist die Methode (die 6 Schritte).\n\n**2. Beziehungsprozess** — die zwischenmenschliche Seite: \"Durch die Art der Interaktion zwischen der Pflegenden und dem Patienten können Informationen besser oder schlechter gesammelt werden.\" Wer Vertrauen aufbaut, respektvoll kommuniziert und zuhört, bekommt vollständigere und ehrlichere Informationen. Das Ergebnis wird zusätzlich von Intuition und Erfahrung der Pflegefachperson beeinflusst.\n\n**Warum das zählt:** Ein perfekt abgearbeitetes Schritt-Schema nützt wenig, wenn der Patient sich nicht öffnet. Die Beziehung ist kein \"weicher\" Zusatz — sie ist Teil der fachlichen Methode und entscheidet über die Qualität deiner Einschätzung. Das knüpft direkt an die Wahrnehmung an: Erst die Beziehung schafft die Bedingungen, unter denen du überhaupt richtig wahrnehmen kannst.",
+          glossarBegriffe: ["Pflegeprozess", "Beziehungsprozess", "Interaktion", "Pflegediagnostik"],
+        },
+        contentB1: {
+          title: "Der Pflegeprozess hat zwei Seiten",
+          body: "**Seite 1 — die Schritte:** Du gehst nach Plan vor (die 6 Schritte). Das ist die Methode.\n\n**Seite 2 — die Beziehung:** Wie du mit dem Patienten umgehst, entscheidet mit, was er dir erzählt. Vertrauen, Zuhören, Respekt — dann bekommst du mehr und ehrlichere Informationen.\n\n**Wichtig:** Auch ein perfekter Plan hilft wenig, wenn der Patient sich nicht öffnet. Die Beziehung gehört zur Methode dazu — sie ist kein Extra.",
+          glossarBegriffe: ["Pflegeprozess", "Beziehungsprozess", "Interaktion"],
+        },
+      },
+    },
+    glossarBegriffe: ["Pflegeprozess", "Beziehungsprozess", "Interaktion", "Pflegediagnostik"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 18: dokumentation-aufwand-nutzen (Bloom 5) — Rahmenlehrplan CE02-LE1-E1 (Einstellung: diskutieren)
+  // Lernergebnis-First-Nachzug 2026-06-12
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "dokumentation-aufwand-nutzen",
+    themaId: "pflegeprozess",
+    titel: "Pflegedokumentation: Aufwand und Nutzen abwägen",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Auf Station hörst du zwei Sätze: \"Wir dokumentieren uns zu Tode — Zeit, die am Bett fehlt.\" Und: \"Was nicht dokumentiert ist, gilt als nicht gemacht.\" Beide stimmen. Wie gehst du damit um — und gibt es hier überhaupt ein einfaches Richtig oder Falsch?",
+      antwort:
+        "Nein, ein einfaches Richtig gibt es nicht — deshalb sollst du es abwägen, nicht auswendig lernen. **Nutzen:** Dokumentation macht den Verlauf und die Entscheidungsfindung für alle Beteiligten nachvollziehbar, sichert rechtlich ab (§ 630f BGB) und ist Grundlage der Teamkommunikation und Patientensicherheit. **Aufwand:** Zeit, Doppeldokumentation, Gefahr des \"Abhakens\" statt Denkens. **Die Antwort der Praxis** ist nicht \"weniger sicher dokumentieren\", sondern *schlanker*: das Strukturmodell zur Entbürokratisierung (mit der SIS) soll den Dokumentationsaufwand gering halten, ohne den Nutzen zu opfern. Die Frage ist also nicht *ob*, sondern *wie* man dokumentiert.",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text:
+        "Dokumentation kostet Zeit (Aufwand) — aber sie sichert Nachvollziehbarkeit, Recht (§ 630f BGB), Teamkommunikation und Patientensicherheit (Nutzen). Die Lösung der Praxis: nicht weniger sicher, sondern schlanker dokumentieren — Strukturmodell zur Entbürokratisierung mit SIS. Die Streitfrage lautet: nicht ob, sondern wie.",
+      textB1:
+        "Dokumentieren kostet Zeit. Aber: Was nicht dokumentiert ist, gilt als nicht gemacht — und das Team braucht die Infos. Lösung: nicht weniger sicher, sondern einfacher dokumentieren (Strukturmodell / SIS). Die Frage ist nicht OB, sondern WIE.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-pflegeprozess-wb-18-doku-aufwand-nutzen",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 5,
+        kompetenzbereich: "I.1",
+        quellen: ["Pflege heute Kap. 1 (Strukturmodell/Entbürokratisierung)", "§ 630f BGB"],
+        track: "basis",
+        modus: "challenge",
+        lernziel: "ce02-pflegeprozess-doku-aufwand-nutzen",
+        tag: "pflege",
+        displayFormat: "procontra",
+        contentC1: {
+          title: "Pflegedokumentation: Aufwand und Nutzen abwägen",
+          body: "Dokumentation ist ein **Dauerstreit** in der Pflege — und genau deshalb sollst du beide Seiten abwägen können, statt eine Meinung auswendig zu lernen.\n\n**Nutzen (Pro):**\n- Macht Entscheidungsfindung und Verlauf für alle Beteiligten **nachvollziehbar**.\n- **Rechtliche Absicherung**: Was nicht dokumentiert ist, gilt im Streitfall als nicht durchgeführt (§ 630f BGB, Beweislast).\n- Grundlage von **Teamkommunikation** und **Patientensicherheit** (Übergaben, Verlaufskontrolle).\n\n**Aufwand (Contra):**\n- Kostet **Zeit**, die am Bett fehlt.\n- **Doppeldokumentation** und unnötige Pflichtfelder.\n- Gefahr, dass \"Felder abhaken\" das eigentliche **Denken** ersetzt.\n\n**Die Antwort der Praxis** ist nicht, *weniger sicher* zu dokumentieren, sondern *schlanker*: Das **Strukturmodell zur Entbürokratisierung der Pflegedokumentation** (mit der SIS) soll den Dokumentationsaufwand gering halten, ohne den Nutzen zu opfern. **Deine Haltung dazu** ist gefragt: Die Streitfrage lautet nicht *ob* dokumentiert wird, sondern *wie* — sicher und zugleich so schlank wie möglich.",
+          glossarBegriffe: ["Pflegedokumentation", "Strukturmodell", "SIS (Strukturierte Informationssammlung)", "Beweislast"],
+        },
+        contentB1: {
+          title: "Dokumentation: Aufwand gegen Nutzen",
+          body: "Über Dokumentation wird viel gestritten — du sollst beide Seiten verstehen.\n\n**Nutzen:** Alle im Team sehen, was war und was geplant ist. Rechtlich wichtig: Was nicht dokumentiert ist, gilt als nicht gemacht (§ 630f BGB). Schützt den Patienten.\n\n**Aufwand:** Kostet Zeit, die am Bett fehlt. Manchmal schreibt man dasselbe doppelt.\n\n**Lösung:** Nicht weniger sicher — sondern **einfacher** dokumentieren. Dafür gibt es das Strukturmodell mit der SIS. Die Frage ist nicht OB, sondern WIE.",
+          glossarBegriffe: ["Pflegedokumentation", "Strukturmodell", "SIS (Strukturierte Informationssammlung)"],
+        },
+      },
+    },
+    glossarBegriffe: ["Pflegedokumentation", "Strukturmodell", "SIS (Strukturierte Informationssammlung)", "Beweislast"],
+    karteikarten: [],
+  },
 ];
