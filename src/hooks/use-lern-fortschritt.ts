@@ -516,9 +516,9 @@ export function useLernFortschritt() {
   const setEinstufungsErgebnis = useCallback(
     (ergebnis: EinstufungsErgebnis) => {
       setProfil((prev) => {
-        if (!prev) return prev;
-        return {
-          ...prev,
+        const basis = prev ?? createEmptyProfil();
+        const next: LernProfil = {
+          ...basis,
           achsen: {
             sprache: ergebnis.sprache.level,
             fachwissen: ergebnis.fachwissen.level,
@@ -526,6 +526,17 @@ export function useLernFortschritt() {
           },
           einstufungsErgebnis: ergebnis,
         };
+        // SYNCHRON persistieren: Die Einstufungs-Seite navigiert direkt nach
+        // diesem Aufruf per router.push(/lernen). Beim Unmount wird der 300ms-
+        // Debounce gecancelt und router.push loest kein beforeunload aus —
+        // ohne diesen Sofort-Schreibvorgang ginge das Ergebnis verloren und
+        // /lernen wuerde zurueck auf /einstufung leiten (Redirect-Loop).
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+        } catch {
+          /* quota exceeded — Debounce/IndexedDB uebernimmt */
+        }
+        return next;
       });
     },
     [],
