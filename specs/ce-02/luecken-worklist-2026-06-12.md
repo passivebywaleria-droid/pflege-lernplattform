@@ -35,13 +35,13 @@ Quelle: **kinderkrankenpflege**-Korpus (haben wir).
 - [ ] **Sensomotorische Meilensteine** + entwicklungsfördernder Säuglings-Transfer (LE6) → `ls-emilia-saeugling` / saeuglingspflege-Thema
 - [ ] **Kindliche Sauberkeitsentwicklung/Trockenwerden** (LE9, 0 Treffer) → emilia / harnausscheidung-Thema
 
-## AP-4 — Klein-Lücken (mechanisch, schnell)
-- [ ] **Augentropfen verabreichen** (LE7 K8) → ganzkörperpflege-Thema / Situation. Quelle: I Care.
-- [ ] **Brille/Hörgerät-Umgang** (LE7 K7) → ganzkörperpflege
-- [ ] **Seh-/Hörbehinderung → Auswirkung auf Körperpflege** (LE7 W4) → ganzkörperpflege
-- [ ] **Altersbedingte Geschmacks-/Geruchsveränderung** (LE8 #3) → ernährung-Thema. Quelle: I Care/Pflege heute.
-- [ ] **MDK-Grundsatzstellungnahme** (LE5 #13) → pflegedokumentation (Quellen-Referenz). Quelle: GA/Pflege heute.
-- [ ] **Geschichte des Pflegeprozesses** vertiefen (LE5 #1, nur dünn) → pflegeprozess-Thema.
+## AP-4 — Klein-Lücken (mechanisch, schnell) — ✅ KOMPLETT
+- [x] **Augentropfen verabreichen** (LE7 K8) → `ganzkoerperpflege-augentropfen` (B20). Pflege heute Kap. 35.1.5.
+- [x] **Brille/Hörgerät-Umgang** (LE7 K7) → `ganzkoerperpflege-brille-hoergeraet` (B21). Pflege heute Kap. 10.5/6.4.
+- [x] **Seh-/Hörbehinderung → Auswirkung auf Körperpflege** (LE7 W4) → `ganzkoerperpflege-sinneseinschraenkung` (B22). Pflege heute Kap. 10.5/10.6.
+- [x] **Altersbedingte Geschmacks-/Geruchsveränderung** (LE8 #3) → `ernaehrungsgrundlagen-sinne-im-alter` (B17). Pflege heute Kap. 7, I Care.
+- [x] **MDK-Grundsatzstellungnahme** (LE5 #13) → `pflegedokumentation-mdk-grundsatzstellungnahme` (B15). MDK 2005 (im Rahmenplan zitiert), I Care Kap. 2/3.
+- [x] **Geschichte des Pflegeprozesses** (LE5 #1) → `pflegeprozess-geschichtliche-hintergruende` (B19). Prüfungswissen (WHO/Yura&Walsh, Fiechter/Meier, ADPIE, Strukturmodell).
 
 ---
 
