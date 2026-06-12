@@ -140,4 +140,58 @@ export const CE02_THEMA_THROMBOSE_PROPHYLAXE_GLOSSAR: GlossarEntry[] = [
     uebersetzungTr: "Aralıklı pnömatik kompresyon (APK)",
     uebersetzungAr: "الضغط الهوائي المتقطع",
   },
+  {
+    begriff: "Herz (Aufbau)",
+    erklaerung:
+      "Faustgroße Doppelpumpe mit 4 Räumen: rechter Vorhof + rechte Kammer, linker Vorhof + linke Kammer. Die Herzscheidewand teilt es in 2 Hälften — rechts pumpt sauerstoffarmes Blut in den Lungenkreislauf, links sauerstoffreiches Blut in den Körperkreislauf. 4 Klappen sichern die Flussrichtung. Herzwand: Endokard, Myokard, Epikard. (I Care Anatomie, Kap. 6)",
+    erklaerungB1:
+      "Das Herz ist eine Doppelpumpe mit 4 Räumen: oben 2 Vorhöfe, unten 2 Kammern. Eine Wand teilt es in rechts (pumpt zur Lunge) und links (pumpt zum Körper). 4 Klappen lassen das Blut nur in eine Richtung.",
+    uebersetzungTr: "Kalp (yapısı)",
+    uebersetzungAr: "القلب (التركيب)",
+  },
+  {
+    begriff: "Herzzyklus (Systole/Diastole)",
+    erklaerung:
+      "Ständiger Wechsel der Herzaktion: Systole = Anspannung und Auswurf des Blutes aus den Kammern; Diastole = Erschlaffung und Füllung. Richtwerte: Herzfrequenz 60-80/min, Schlagvolumen ca. 70 ml, Herzzeitvolumen ca. 5 l/min. Getaktet vom Sinusknoten. (I Care Anatomie, Kap. 6)",
+    erklaerungB1:
+      "Der Herzschlag wechselt ständig: Systole = anspannen und Blut auswerfen. Diastole = erschlaffen und sich füllen. Das Herz schlägt etwa 60-80 mal pro Minute.",
+    uebersetzungTr: "Kalp döngüsü (sistol/diyastol)",
+    uebersetzungAr: "الدورة القلبية (الانقباض/الانبساط)",
+  },
+  {
+    begriff: "Herzklappen",
+    erklaerung:
+      "Vier Ventile, die das Blut nur in eine Richtung durchlassen: rechts Trikuspidalklappe (Vorhof→Kammer) und Pulmonalklappe (Kammer→Lungenarterie), links Mitralklappe/Bikuspidalklappe (Vorhof→Kammer) und Aortenklappe (Kammer→Aorta). (I Care Anatomie, Kap. 6)",
+    erklaerungB1:
+      "Vier Klappen im Herzen wirken wie Ventile: Sie lassen das Blut nur in eine Richtung fließen, nicht zurück. Rechts die Trikuspidal- und Pulmonalklappe, links die Mitral- und Aortenklappe.",
+    uebersetzungTr: "Kalp kapakları",
+    uebersetzungAr: "صمامات القلب",
+  },
+  {
+    begriff: "Arterien und Venen",
+    erklaerung:
+      "Arterien führen Blut vom Herzen weg (Hochdrucksystem, dicke Wand), Venen führen Blut zum Herzen hin (Niederdrucksystem, mit Venenklappen). Die Einteilung erfolgt über die Flussrichtung, nicht über den Sauerstoffgehalt (im Lungenkreislauf umgekehrt). Dazwischen liegen die Kapillaren als Ort des Stoffaustauschs. (I Care Anatomie, Kap. 7)",
+    erklaerungB1:
+      "Arterien führen Blut vom Herzen weg, Venen führen Blut zum Herzen hin. Merke: Es geht um die Richtung, nicht um den Sauerstoff. Die kleinsten Gefäße heißen Kapillaren — dort wird Sauerstoff ausgetauscht.",
+    uebersetzungTr: "Atardamarlar ve toplardamarlar",
+    uebersetzungAr: "الشرايين والأوردة",
+  },
+  {
+    begriff: "Puls (Druckpulswelle)",
+    erklaerung:
+      "Tastbare Druckwelle, die sich bei jedem Auswurf des Herzens (Systole) über die Arterienwände ausbreitet. An Stellen, an denen größere Arterien dicht unter der Haut liegen (Handgelenk/A. radialis, Hals/A. carotis, Leiste), ist sie als Puls tastbar. (I Care Anatomie, Kap. 7)",
+    erklaerungB1:
+      "Bei jedem Herzschlag läuft eine Druckwelle durch die Arterien. Wo eine Arterie dicht unter der Haut liegt (Handgelenk, Hals, Leiste), kannst du diese Welle als Puls fühlen.",
+    uebersetzungTr: "Nabız (basınç dalgası)",
+    uebersetzungAr: "النبض (موجة الضغط)",
+  },
+  {
+    begriff: "Venöser Rückfluss",
+    erklaerung:
+      "Rücktransport des Blutes durch die Venen zum Herzen — gegen die Schwerkraft. Unterstützt durch die Muskelpumpe (v.a. Wadenmuskelpumpe), die Venenklappen (verhindern Rückfluss) und die Atmung. Pflegerisch zentral für die Thromboseprophylaxe: Bewegung aktiviert die Muskelpumpe. (I Care Anatomie, Kap. 7)",
+    erklaerungB1:
+      "Das Blut fließt durch die Venen zurück zum Herzen — nach oben, gegen die Schwerkraft. Dabei helfen die Muskelpumpe (Wadenmuskeln), die Venenklappen und die Atmung. Bewegung ist deshalb die beste Thromboseprophylaxe.",
+    uebersetzungTr: "Venöz geri dönüş",
+    uebersetzungAr: "العود الوريدي",
+  },
 ];

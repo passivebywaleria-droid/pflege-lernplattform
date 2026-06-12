@@ -1,4 +1,4 @@
-// CE-02 Thema Thrombose-Prophylaxe — Wissensbausteine (13 Bausteine, 3 Stufen)
+// CE-02 Thema Thrombose-Prophylaxe — Wissensbausteine (15 Bausteine, 3 Stufen)
 // Quelle: content/ce-02/themen/thrombose-prophylaxe/bausteine-plan.md
 // Pipeline v9 — 2026-04-23
 // Stufe 1 = Denkfrage (C1 + Vorerfahrung)
@@ -695,6 +695,106 @@ export const CE02_THEMA_THROMBOSE_PROPHYLAXE_BAUSTEINE: Wissensbaustein[] = [
       },
     },
     glossarBegriffe: [],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 14: herz-aufbau-herzzyklus (Bloom 2) — AP-2 LE6 #2 (Herz)
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "thrombose-prophylaxe-herz-aufbau",
+    themaId: "thrombose-prophylaxe",
+    titel: "Das Herz: Aufbau und Herzzyklus",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Warum hat das Herz vier Räume und zwei getrennte Hälften — und nicht einfach einen großen Pumpraum? Was wäre das Problem, wenn die beiden Blutkreisläufe sich vermischen würden?",
+      antwort:
+        "Die Herzscheidewand trennt das Herz in zwei Pumpen: Die rechte Hälfte pumpt sauerstoffarmes Blut in den Lungenkreislauf, die linke Hälfte sauerstoffreiches Blut in den Körperkreislauf. Würden sie sich mischen, käme sauerstoffarmes Blut in den Körper — die Organe würden nicht versorgt. Jede Hälfte hat einen Vorhof (Sammelkammer) und eine Kammer (Druckpumpe), die Klappen lassen das Blut nur in eine Richtung. (I Care Anatomie, Kap. 6)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Das Herz hat 4 Räume: rechter Vorhof + rechte Kammer, linker Vorhof + linke Kammer; die Scheidewand teilt es in 2 Hälften. Rechte Hälfte → Lungenkreislauf (sauerstoffarm), linke Hälfte → Körperkreislauf (sauerstoffreich, dickere Wand). 4 Klappen sichern die Flussrichtung (rechts Trikuspidal + Pulmonal, links Mitral + Aorta). Herzzyklus: Systole (Auswurf) + Diastole (Füllung). Richtwerte: HF 60-80/min, Schlagvolumen ca. 70 ml, HZV ca. 5 l/min. Takt: Sinusknoten → AV-Knoten → His → Purkinje. (I Care Anatomie, Kap. 6)",
+      textB1:
+        "Das Herz hat 4 Räume: oben 2 Vorhöfe (Sammelräume), unten 2 Kammern (Pumpen). Eine Wand teilt es in eine rechte und eine linke Hälfte. Rechts pumpt es Blut zur Lunge (sauerstoffarm), links zum Körper (sauerstoffreich). 4 Klappen sorgen dafür, dass das Blut nur in eine Richtung fließt. Das Herz schlägt etwa 60-80 mal pro Minute. Anspannen heißt Systole, Erschlaffen heißt Diastole.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-thrombose-wb-14-herz",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 2,
+        kompetenzbereich: "I.1",
+        quellen: ["I Care Anatomie, Kap. 6 (Herz: Aufbau, Klappen, Herzzyklus, Erregungsleitung)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-thrombose-herz-aufbau",
+        tag: "pflege",
+        displayFormat: "stepbystep",
+        contentC1: {
+          title: "Das Herz: Aufbau und Herzzyklus",
+          body: "Das Herz ist eine **Doppelpumpe**, etwa faustgroß, kegelförmig und schräg im Brustkorb gelegen — die Spitze zeigt nach links unten (etwa 5. Zwischenrippenraum) (I Care Anatomie, Kap. 6).\n\n**4 Räume, 2 Hälften:**\nDie **Herzscheidewand (Septum)** teilt das Herz in eine **rechte** und eine **linke Hälfte**. Jede Hälfte hat:\n- einen **Vorhof** (Atrium) — sammelt das ankommende Blut\n- eine **Kammer** (Ventrikel) — die eigentliche Druckpumpe\n\nDie **rechte Hälfte** pumpt sauerstoffarmes Blut in den **Lungenkreislauf** (kleiner Kreislauf). Die **linke Hälfte** pumpt sauerstoffreiches Blut in den **Körperkreislauf** (großer Kreislauf) — ihre Wand ist deshalb dicker (ca. 10-12 mm), weil sie gegen höheren Druck arbeitet.\n\n**4 Herzklappen** (Ventile, lassen Blut nur in eine Richtung):\n- rechts: **Trikuspidalklappe** (Vorhof → Kammer) und **Pulmonalklappe** (Kammer → Lungenarterie)\n- links: **Mitralklappe** (Bikuspidalklappe, Vorhof → Kammer) und **Aortenklappe** (Kammer → Aorta)\n\n**Herzwand** (von innen nach außen): **Endokard** (Innenhaut), **Myokard** (Muskelschicht), **Epikard** (Außenhaut); umhüllt vom **Herzbeutel** (Perikard).\n\n**Der Herzzyklus** ist der ständige Wechsel aus:\n- **Systole** — Anspannung und **Auswurf** des Blutes\n- **Diastole** — Erschlaffung und **Füllung**\n\n**Richtwerte:** Herzfrequenz **60-80/min**, Schlagvolumen **ca. 70 ml**, Herzzeitvolumen **ca. 5 l/min**.\n\n**Der Takt** kommt vom herzeigenen Erregungssystem: **Sinusknoten** (Taktgeber) → **AV-Knoten** → **His-Bündel** → **Tawara-Schenkel** → **Purkinje-Fasern**. Das Herz selbst wird über die **Koronararterien** versorgt — ein Verschluss führt zum Herzinfarkt.\n\n**Pflege-Relevanz:** Du überwachst die Herzarbeit über **Puls und Blutdruck**; bei Herzschwäche (Herzinsuffizienz) achtest du z.B. auf Ödeme, Atemnot und Gewicht. (I Care Anatomie, Kap. 6)",
+          glossarBegriffe: ["Herz (Aufbau)", "Herzzyklus (Systole/Diastole)", "Herzklappen"],
+        },
+        contentB1: {
+          title: "Das Herz: Aufbau und Herzzyklus",
+          body: "Das Herz ist eine **Doppelpumpe**, etwa so groß wie eine Faust. Es liegt schräg im Brustkorb, die Spitze zeigt nach links unten (I Care Anatomie, Kap. 6).\n\n**4 Räume, 2 Hälften:**\nEine **Wand (Scheidewand)** teilt das Herz in **rechts** und **links**. Jede Hälfte hat:\n- einen **Vorhof** oben — er sammelt das Blut\n- eine **Kammer** unten — sie pumpt das Blut weiter\n\nDie **rechte Hälfte** pumpt Blut zur **Lunge** (sauerstoffarm). Die **linke Hälfte** pumpt Blut zum **Körper** (sauerstoffreich). Die linke Wand ist dicker, weil sie kräftiger pumpen muss.\n\n**4 Klappen** sorgen dafür, dass das Blut nur **in eine Richtung** fließt: rechts Trikuspidal- und Pulmonalklappe, links Mitral- und Aortenklappe.\n\n**Die Herzwand** hat 3 Schichten: innen das **Endokard**, in der Mitte der Muskel (**Myokard**), außen das **Epikard**. Außen liegt der **Herzbeutel**.\n\n**Der Herzschlag** wechselt ständig:\n- **Systole** = anspannen und Blut **auswerfen**\n- **Diastole** = erschlaffen und sich **füllen**\n\n**Werte:** Herz schlägt **60-80 mal pro Minute**, jedes Mal ca. **70 ml**, zusammen **ca. 5 Liter pro Minute**.\n\nDer Takt kommt vom **Sinusknoten** (der 'Taktgeber'). Das Herz selbst bekommt Blut über die **Herzkranzgefäße** — sind sie verstopft, gibt es einen Herzinfarkt.\n\n**Für die Pflege:** Du misst **Puls und Blutdruck**. Bei Herzschwäche achtest du auf dicke Beine, Atemnot und Gewicht.",
+          glossarBegriffe: ["Herz (Aufbau)", "Herzzyklus (Systole/Diastole)", "Herzklappen"],
+        },
+      },
+    },
+    glossarBegriffe: ["Herz (Aufbau)", "Herzzyklus (Systole/Diastole)", "Herzklappen"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 15: blutgefaesse-kreislauf-puls (Bloom 2) — AP-2 LE6 #3/#4 (Gefäße, Puls)
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "thrombose-prophylaxe-blutgefaesse-puls",
+    themaId: "thrombose-prophylaxe",
+    titel: "Blutgefäße, Kreislauf und Puls",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Warum schwellen die Beine an, wenn jemand lange unbewegt sitzt — und warum ist 'Bewegung' die wirksamste Thromboseprophylaxe? Welche zwei Mechanismen bringen das Venenblut überhaupt gegen die Schwerkraft nach oben?",
+      antwort:
+        "Venen transportieren das Blut zurück zum Herzen — nach oben, gegen die Schwerkraft. Dabei helfen zwei Dinge: die Muskelpumpe (arbeitende Muskeln drücken das Blut nach oben) und die Venenklappen (verhindern, dass es zurückfließt). Ohne Bewegung fehlt die Muskelpumpe, das Blut staut sich, die Beine schwellen und die Thrombosegefahr steigt. Deshalb aktiviert Bewegung die Muskelpumpe — die stärkste Basismaßnahme. (I Care Anatomie, Kap. 7)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Drei Gefäßarten: Arterien (vom Herzen weg, Hochdrucksystem), Venen (zum Herzen hin, Niederdrucksystem, mit Venenklappen), Kapillaren (kleinste Gefäße, Stoffaustausch). Zwei Kreisläufe: Lungenkreislauf (klein) und Körperkreislauf (groß). Venöser Rückfluss gegen die Schwerkraft durch Muskelpumpe + Venenklappen + Atmung. Der Puls ist die tastbare Druckpulswelle der Arterien, ausgelöst durch den Auswurf in der Systole. (I Care Anatomie, Kap. 7)",
+      textB1:
+        "Es gibt 3 Arten von Gefäßen: Arterien führen Blut vom Herzen weg, Venen führen Blut zum Herzen hin, Kapillaren sind die kleinsten Gefäße (dort findet der Austausch von Sauerstoff statt). Das Blut fließt in zwei Kreisläufen: zur Lunge und zum Körper. In den Beinvenen muss das Blut nach oben — dabei helfen die Muskelpumpe und die Venenklappen. Der Puls ist die Welle, die du an Arterien dicht unter der Haut tasten kannst.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-thrombose-wb-15-gefaesse",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 2,
+        kompetenzbereich: "I.1",
+        quellen: ["I Care Anatomie, Kap. 7 (Blutgefäße, Körper-/Lungenkreislauf, venöser Rückfluss, Puls)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-thrombose-blutgefaesse-puls",
+        tag: "pflege",
+        displayFormat: "stepbystep",
+        contentC1: {
+          title: "Blutgefäße, Kreislauf und Puls",
+          body: "Die Blutgefäße bilden zusammen mit dem Herzen das **Herz-Kreislauf-System** (I Care Anatomie, Kap. 7).\n\n**Drei Gefäßarten:**\n- **Arterien** — führen das Blut **vom Herzen weg**. Sie sind ein **Hochdrucksystem** mit dicker, elastischer Wand.\n- **Venen** — führen das Blut **zum Herzen hin**. Sie sind ein **Niederdrucksystem** und besitzen **Venenklappen**.\n- **Kapillaren** — die kleinsten Gefäße. Hier findet der **Stoffaustausch** statt (Sauerstoff, Kohlendioxid, Nährstoffe).\n\n**Wichtig — nicht verwechseln:** Arterien sind über *Richtung* definiert (vom Herzen weg), **nicht** über den Sauerstoffgehalt. Im Lungenkreislauf führt die Lungenarterie z.B. sauerstoffarmes Blut.\n\n**Zwei Kreisläufe:**\n- **Lungenkreislauf** (kleiner Kreislauf): rechtes Herz → Lunge → linkes Herz. Hier wird das Blut mit Sauerstoff beladen.\n- **Körperkreislauf** (großer Kreislauf): linkes Herz → Organe → rechtes Herz. Hier gibt das Blut Sauerstoff ab.\n\n**Venöser Rückfluss — gegen die Schwerkraft:** Damit das Blut aus den Beinen zum Herzen zurückkommt, wirken zusammen:\n- die **Muskelpumpe** (v.a. die **Wadenmuskelpumpe**): arbeitende Muskeln drücken das Blut nach oben\n- die **Venenklappen**: sie verhindern, dass das Blut zurücksackt\n- die **Atmung** (Sog im Brustkorb)\n\n**Der Puls:** Bei jedem Auswurf (Systole) breitet sich eine **Druckpulswelle** über die Arterienwände aus. An Stellen, an denen größere Arterien **dicht unter der Haut** liegen (Handgelenk, Hals, Leiste), ist sie als **Puls tastbar**.\n\n**Pflege-Relevanz:**\n- **Thromboseprophylaxe = Muskelpumpe aktivieren**: Bewegung, Fußkreisen, Frühmobilisation; Beine hochlagern unterstützt den venösen Rückfluss\n- **Puls tasten** an der A. radialis (Handgelenk); bei Schock/Reanimation zentral an der A. carotis (Hals)\n- **Beim Waschen** an Armen und Beinen **Richtung Herz** wischen — das unterstützt den venösen Rückfluss (I Care Anatomie, Kap. 7)",
+          glossarBegriffe: ["Arterien und Venen", "Puls (Druckpulswelle)", "Venöser Rückfluss"],
+        },
+        contentB1: {
+          title: "Blutgefäße, Kreislauf und Puls",
+          body: "Das Herz und die Gefäße bilden zusammen das **Herz-Kreislauf-System** (I Care Anatomie, Kap. 7).\n\n**Drei Arten von Gefäßen:**\n- **Arterien** — führen Blut **vom Herzen weg**. Hoher Druck, dicke Wand.\n- **Venen** — führen Blut **zum Herzen hin**. Niedriger Druck, mit **Venenklappen**.\n- **Kapillaren** — die kleinsten Gefäße. Hier wird **Sauerstoff** ausgetauscht.\n\n**Achtung:** Arterien heißen so, weil das Blut **vom Herzen weg** fließt — nicht, weil es sauerstoffreich ist. In der Lunge ist es umgekehrt.\n\n**Zwei Kreisläufe:**\n- **Lungenkreislauf:** rechtes Herz → Lunge → linkes Herz (Blut holt Sauerstoff)\n- **Körperkreislauf:** linkes Herz → Körper → rechtes Herz (Blut gibt Sauerstoff ab)\n\n**Blut zurück nach oben — gegen die Schwerkraft:** Damit das Blut aus den Beinen zurückkommt, helfen:\n- die **Muskelpumpe** (vor allem die **Wadenmuskelpumpe**): Muskeln drücken das Blut nach oben\n- die **Venenklappen**: sie halten das Blut, damit es nicht zurückfällt\n- die **Atmung**\n\n**Der Puls:** Bei jedem Herzschlag läuft eine **Druckwelle** durch die Arterien. Wo eine Arterie **dicht unter der Haut** liegt (Handgelenk, Hals, Leiste), kannst du den **Puls tasten**.\n\n**Für die Pflege:**\n- **Thromboseprophylaxe = Muskelpumpe in Gang bringen**: Bewegung, Fußkreisen; Beine hochlegen\n- **Puls tasten** am Handgelenk; im Notfall am Hals\n- **Beim Waschen** an Armen und Beinen **Richtung Herz** wischen",
+          glossarBegriffe: ["Arterien und Venen", "Puls (Druckpulswelle)", "Venöser Rückfluss"],
+        },
+      },
+    },
+    glossarBegriffe: ["Arterien und Venen", "Puls (Druckpulswelle)", "Venöser Rückfluss"],
     karteikarten: [],
   },
 ];
