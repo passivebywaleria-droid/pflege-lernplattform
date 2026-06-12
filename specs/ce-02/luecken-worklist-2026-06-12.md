@@ -18,7 +18,7 @@
 ## AP-1 — Haltungs-/Reflexions-Steps (hoher Wert, klein, klar zuerst)
 Inhalt oft da, nur das Reflexions-/Diskussions-Format fehlt → Bloom „diskutieren/reflektieren".
 - [x] **Ekel-Legitimität** „Dürfen sich Pflegende ekeln?" (LE9 E13/E14) → reflection-Step in `ls-nguyen-stoma` oder `ls-schmidt` (Ausscheidung/Intim). Quelle: pflege-konformitaet (Würde), kommunikation-Korpus. *groß im Wert, klein im Bau*
-- [ ] **Eigene Essbiografie reflektieren** (LE8 E4) → reflection in `ls-schmidt-adipositas`. Quelle: I Care Ernährung/Biografie.
+- [x] **Eigene Essbiografie reflektieren** (LE8 E4) → reflection in `ls-schmidt-adipositas`. Quelle: I Care Ernährung/Biografie.
 - [ ] **Eigenes Bewegungs-/Gesundheitsverhalten** (LE6 #21) → reflection (Kinästhetik-/Rückenschutz-Kontext, z. B. `ls-yilmaz-hueft-tep`).
 - [ ] **Nahrungsverweigerung diskutieren** + **Essen im Krankenhaus** (LE8 E2/E3) → je 1 reflection/freetext.
 
