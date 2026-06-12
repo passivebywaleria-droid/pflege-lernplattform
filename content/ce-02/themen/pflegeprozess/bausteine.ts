@@ -620,7 +620,7 @@ export const CE02_THEMA_PFLEGEPROZESS_BAUSTEINE: Wissensbaustein[] = [
       frage:
         "Du arbeitest auf Station. Alle Dokumentation läuft über ein Tablet — kein Papier mehr. Was ändert sich dadurch für den Pflegeprozess? Was bleibt gleich?",
       antwort:
-        "Die digitale Pflegedokumentation verändert das Medium, nicht die Logik. Der Pflegeprozess läuft unverändert ab. Seit 2014 gibt es die Strukturierte Informationssammlung (SIS) als standardisiertes Erstassessment für die stationäre Langzeitpflege — 5 Themenfelder, ersetzt viele alte Einzelformulare.",
+        "Die digitale Pflegedokumentation verändert das Medium, nicht die Logik. Der Pflegeprozess läuft unverändert ab. Seit 2014 gibt es die Strukturierte Informationssammlung (SIS) als standardisiertes Erstassessment für die stationäre Langzeitpflege — 6 Themenfelder, ersetzt viele alte Einzelformulare.",
     },
     stufe2: {
       typ: "hinweis",
@@ -636,7 +636,7 @@ export const CE02_THEMA_PFLEGEPROZESS_BAUSTEINE: Wissensbaustein[] = [
         stepType: "text",
         bloomLevel: 4,
         kompetenzbereich: "I.1",
-        quellen: ["BMG SIS 2014", "§ 4 PflBG"],
+        quellen: ["BMG SIS 2014", "Prüfungswissen Pflegefachfrau (SIS 6 Themenfelder)", "§ 4 PflBG"],
         track: "basis",
         modus: "entdecker",
         lernziel: "ce02-pflegeprozess-digital",
@@ -644,12 +644,12 @@ export const CE02_THEMA_PFLEGEPROZESS_BAUSTEINE: Wissensbaustein[] = [
         displayFormat: "procontra",
         contentC1: {
           title: "Digitale Pflegedokumentation und SIS",
-          body: "Seit 2014 wird die **Strukturierte Informationssammlung (SIS)** bundesweit in der stationären Langzeitpflege eingeführt (BMG SIS 2014). Die SIS ist das standardisierte Erstassessment — 5 Themenfelder: Kognition, Kommunikation, Mobilität, Selbstversorgung, krankheitsbezogene Anforderungen. **Vorteile** digitaler Dokumentation: sofortige Verfügbarkeit, weniger Medienbrüche, Lesbarkeit. **Nachteile**: Technikabhängigkeit, Datenschutzrisiken, Risiko der Formulardominanz. Der Pflegeprozess selbst bleibt nach § 4 PflBG unverändert — das digitale System ist sein Werkzeug, nicht sein Ersatz.",
+          body: "Seit 2014 wird die **Strukturierte Informationssammlung (SIS)** bundesweit in der stationären Langzeitpflege eingeführt (BMG SIS 2014). Die SIS ist das standardisierte Erstassessment — **6 Themenfelder**: kognitive und kommunikative Fertigkeiten, Mobilität und Bewegung, krankheitsbezogene Anforderungen und Belastungen, Selbstversorgung, Leben in sozialen Beziehungen, Haushaltsführung (ambulant) bzw. Wohnen/Häuslichkeit (stationär). **Vorteile** digitaler Dokumentation: sofortige Verfügbarkeit, weniger Medienbrüche, Lesbarkeit. **Nachteile**: Technikabhängigkeit, Datenschutzrisiken, Risiko der Formulardominanz. Der Pflegeprozess selbst bleibt nach § 4 PflBG unverändert — das digitale System ist sein Werkzeug, nicht sein Ersatz.",
           glossarBegriffe: ["SIS (Strukturierte Informationssammlung)", "Digitale Pflegedokumentation", "NBA (Neues Begutachtungsassessment)"],
         },
         contentB1: {
           title: "Tablet statt Papier — was ändert sich?",
-          body: "Seit 2014 gibt es die **SIS** — ein Formular (digital), das du beim ersten Gespräch mit einem neuen Bewohner ausfüllst. Fünf Themenfelder: Was kann er selbst? Was braucht er? Was ist ihm wichtig? Vorteil: Alle auf Station sehen dieselben Infos. Nachteil: Du darfst nicht vergessen zu **denken** — nur Felder anklicken reicht nicht.",
+          body: "Seit 2014 gibt es die **SIS** — ein Formular (digital), das du beim ersten Gespräch mit einem neuen Bewohner ausfüllst. Sechs Themenfelder: Was kann er selbst? Was braucht er? Wie bewegt er sich? Wie lebt er mit anderen? Vorteil: Alle auf Station sehen dieselben Infos. Nachteil: Du darfst nicht vergessen zu **denken** — nur Felder anklicken reicht nicht.",
           glossarBegriffe: ["SIS (Strukturierte Informationssammlung)", "Digitale Pflegedokumentation", "NBA (Neues Begutachtungsassessment)"],
         },
       },
