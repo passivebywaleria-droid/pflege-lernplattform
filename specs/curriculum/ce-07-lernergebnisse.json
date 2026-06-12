@@ -22,7 +22,7 @@
       "quellzeile": 4308,
       "text": "erläutern Ziele und Maßnahmen der externen und internen Qualitätssicherung für die Pflege",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -34,8 +34,8 @@
       "quellzeile": 4308,
       "text": "stellen die Spezifik von Leitlinien, Verfahrensanweisungen und Standards heraus",
       "typ": "wissen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -106,8 +106,8 @@
       "quellzeile": 4308,
       "text": "stellen den Zusammenhang zwischen dem MDK-Konzept und SGB XI heraus",
       "typ": "koennen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -118,8 +118,8 @@
       "quellzeile": 4308,
       "text": "stellen die Vor- und Nachteile unterschiedlicher Pflegeorganisationssysteme im Zusammenhang mit der Pflegequalität heraus",
       "typ": "koennen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -166,7 +166,7 @@
       "quellzeile": 4470,
       "text": "erläutern Koordinationsaufgaben Pflegender in akuten, ambulanten und langzeitstationären Einrichtungen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -178,7 +178,7 @@
       "quellzeile": 4470,
       "text": "erklären Clinical Pathways erklären Sinn und Ablauf einer Fallbesprechung12 beschreiben die Anforderungen einer professionellen Überleitung in eine andere Pflegeeinrichtung erläutern Ursachen und Auswirkungen interprofessioneller Konflikte und Gewaltphänomene",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -214,7 +214,7 @@
       "quellzeile": 4470,
       "text": "legen die pflegerischen Erfordernisse dem interdisziplinären Team systematisch und begründet dar",
       "typ": "koennen",
-      "bloomVerb": "legen",
+      "bloomVerb": "darlegen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -226,7 +226,7 @@
       "quellzeile": 4470,
       "text": "übertragen den Entlassungsstandard auf Abläufe ihrer ausbildenden Einrichtung",
       "typ": "koennen",
-      "bloomVerb": "übertragen",
+      "bloomVerb": "uebertragen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -274,7 +274,7 @@
       "quellzeile": 4782,
       "text": "erläutern den Einsatz der Wärme- und Kältetherapie zur Schmerztherapie",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -286,7 +286,7 @@
       "quellzeile": 4782,
       "text": "erklären Wirkungsweise und Nebenwirkungen medikamentöser Schmerzmittel erläutern Ernährungsprinzipien für Menschen mit rheumatischen Erkrankungen stellen die Möglichkeiten einer Obstipationsprophylaxe dar erläutern intrinsische und extrinsische Sturzrisikofaktoren",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -310,7 +310,7 @@
       "quellzeile": 4782,
       "text": "führen aktive und passive Bewegungsübungen durch",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -322,7 +322,7 @@
       "quellzeile": 4782,
       "text": "berücksichtigen die Expertenstandards zum Schmerzmanagement und zur Sturzprophylaxe in der Planung ihres Pflegehandelns",
       "typ": "koennen",
-      "bloomVerb": "berücksichtigen",
+      "bloomVerb": "beruecksichtigen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -406,7 +406,7 @@
       "quellzeile": 9355,
       "text": "führen die Handhabung unterschiedlicher Hilfsmittel zur Unterstützung von Menschen mit Apoplexie vor",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false

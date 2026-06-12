@@ -22,7 +22,7 @@
       "quellzeile": 1362,
       "text": "erläutern die menschlichen Entwicklungsstufen und daraus resultierende generelle Unterstützungsbedürfnisse in einzelnen Lebensphasen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -46,7 +46,7 @@
       "quellzeile": 1362,
       "text": "erläutern die Spezifik, Schnittmengen und Abgrenzungen beratender, begleitender, teilkompensierender und kompensierender Pflegehandlungen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -82,8 +82,8 @@
       "quellzeile": 1362,
       "text": "stellen die konstituierenden Merkmale einer professionellen Pflegesituation und deren gegenseitigen Bezüge in Orientierung am systemischen Ansatz n. Hundenborn et al. heraus",
       "typ": "koennen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -178,7 +178,7 @@
       "quellzeile": 2781,
       "text": "erläutern kulturbedingte Unterschiede im Gesundheits- und Krankheitsverständnis, im Umgang mit Körper, Berührung und Sexualität, mit Emotionen und Schmerz, im Ernährungsverhalten und der Inanspruchnahme von Gesundheitsleistungen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -190,8 +190,8 @@
       "quellzeile": 2781,
       "text": "stellen Aussagen zum Pflegeverständnis in einrichtungsbezogenen Leitbildern heraus",
       "typ": "koennen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -202,8 +202,8 @@
       "quellzeile": 2781,
       "text": "stellen die Bedeutung der Modelle ethischer Entscheidungsfindung für ethisch schwierige Situationen heraus",
       "typ": "koennen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -214,8 +214,8 @@
       "quellzeile": 2781,
       "text": "schätzen das Handeln von Pflegenden in unterschiedlichen akut-, langzeitstationären und ambulanten Pflegesettings vor dem Hintergrund des Ethikkodex von Pflegenden ein",
       "typ": "koennen",
-      "bloomVerb": "schätzen",
-      "bloomStufe": 2,
+      "bloomVerb": "einschaetzen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -226,8 +226,8 @@
       "quellzeile": 2781,
       "text": "schätzen das Handeln von Pflegenden in unterschiedlichen Pflegesettings vor dem Hintergrund der Charta für kultursensible Pflege ein",
       "typ": "koennen",
-      "bloomVerb": "schätzen",
-      "bloomStufe": 2,
+      "bloomVerb": "einschaetzen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },

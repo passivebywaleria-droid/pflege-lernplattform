@@ -10,8 +10,8 @@
       "quellzeile": 4170,
       "text": "stellen die Bedeutung des Grundgesetzes für das professionelle Pflegehandeln heraus",
       "typ": "wissen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -46,7 +46,7 @@
       "quellzeile": 4170,
       "text": "erläutern Landesgesetze zur Pflege und Betreuung im Kontext der Bundesgesetzgebung",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -70,8 +70,8 @@
       "quellzeile": 4170,
       "text": "stellen den Zusammenhang zwischen gesamtgesellschaftlichen Entwicklungen und der Sozialgesetzgebung in Deutschland heraus",
       "typ": "koennen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -82,7 +82,7 @@
       "quellzeile": 4170,
       "text": "stellen spezifische Rechtsvorgaben der Sozialgesetzgebung und ihre Bezüge zu Abrechnungs- bzw. Entgeltsystemen der verschiedenen Versorgungsbereiche und Institutionen wie Krankenhäuser, Pflegeheime, ambulante Pflegedienste, Kurund Rehabilitationseinrichtungen dar",
       "typ": "koennen",
-      "bloomVerb": "stellen",
+      "bloomVerb": "darstellen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -106,7 +106,7 @@
       "quellzeile": 4170,
       "text": "schätzen Möglichkeiten und Grenzen des Pflegehandelns in unterschiedlichen Pflegesettings aufgrund rechtlicher und institutioneller Rahmenbedingungen",
       "typ": "koennen",
-      "bloomVerb": "schätzen",
+      "bloomVerb": "schaetzen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -118,7 +118,7 @@
       "quellzeile": 4170,
       "text": "erläutern das Konzept der integrierten Versorgung im Zusammenhang mit gesellschaftlichen Entwicklungen und Systemstrukturen",
       "typ": "koennen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -142,7 +142,7 @@
       "quellzeile": 4629,
       "text": "erläutern Indikationen spezifischer bildgebender Verfahren beschreiben die Abläufe verschiedener diagnostischer ärztlicher Verfahren beschreiben Merkmale und Kontextbedingungen von medizinischen Untersuchungen und Eingriffen, die mit einer besonderen Verunsicherung der betroffenen Menschen einhergehen erläutern vorbereitende Maßnahmen für endoskopische Eingriffe im Gastrointestinaltrakt (Gastroskopie, Coloskopie) erläutern mögliche Reaktionen, die nach Kontrastmittelapplikationen auftreten können stellen Schwerpunkte der perioperativen Pflege dar stellen den Unterschied zwischen Empathie und Mitleid heraus stellen Prinzipien der Aufbereitung medizinischer Instrumente und Geräte dar",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -202,7 +202,7 @@
       "quellzeile": 5312,
       "text": "erklären die Anzeichen eines beeinträchtigten Gasaustausches vor dem Hintergrund der Physiologie der Atmung",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -226,7 +226,7 @@
       "quellzeile": 5312,
       "text": "erklären den Zusammenhang zwischen Herzinsuffizienz und Atemnot",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -250,7 +250,7 @@
       "quellzeile": 5312,
       "text": "führen atemunterstützende Lagerungen durch",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -358,7 +358,7 @@
       "quellzeile": 5470,
       "text": "führen Injektionen durch (Demonstration „Vorführen“)",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -392,7 +392,7 @@
       "ce": 8,
       "leIndex": 4,
       "quellzeile": 5470,
-      "text": "diskutieren den Umgang mit ablehnenden Verhaltensweisen zu diagnostischen oder therapeutischen Maßnahmen ➢ Erstellen einer Synopse zu diagnostischen und therapeutischen Maßnahmen, deren Indikationen, Aufgaben für Pflegende in Eigenverantwortung oder Mitwirkung",
+      "text": "diskutieren den Umgang mit ablehnenden Verhaltensweisen zu diagnostischen oder therapeutischen Maßnahmen",
       "typ": "einstellung",
       "bloomVerb": "diskutieren",
       "bloomStufe": 5,
@@ -418,7 +418,7 @@
       "quellzeile": 5635,
       "text": "erläutern typische akute und chronische Krankheiten des Auges und ihre Auswirkungen auf das Sehen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -430,7 +430,7 @@
       "quellzeile": 5635,
       "text": "erläutern die Anatomie des Ohres und die Physiologie des Hörens",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -454,7 +454,7 @@
       "quellzeile": 5635,
       "text": "erläutern die soziale Bedingtheit von Behinderungen und deren Folgen Können:",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -466,7 +466,7 @@
       "quellzeile": 5635,
       "text": "erläutern die drei Dimensionen von Behinderung (WHO 1980) Impairment, Disabilty und Handicap im Zusammenhang mit Hauterkrankungen, Seh- und Höreinschränkungen bzw. -verlust",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -478,7 +478,7 @@
       "quellzeile": 5635,
       "text": "erläutern den Unterschied zwischen angeborener und erworbener Beeinträchtigung oder Verlust des Seh- und Hörvermögens für das Coping der Betroffenen und ihrer Familien",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -514,7 +514,7 @@
       "quellzeile": 5635,
       "text": "erklären Unterschiede zwischen alltäglicher Hautpflege und therapeutischen Hautpflegemaßnahmen und -mitteln",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -586,7 +586,7 @@
       "quellzeile": 5805,
       "text": "erläutern mögliche Auswirkungen des Sterbeprozesses und seiner Phasen auf das Verhalten terminal Erkrankter und ihrer Angehörigen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -610,7 +610,7 @@
       "quellzeile": 5805,
       "text": "erläutern das Konzept der spezialisierten ambulanten Palliativversorgung",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -622,7 +622,7 @@
       "quellzeile": 5805,
       "text": "erläutern Trauerphasen bei Kindern",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": true,
       "motorisch": false
@@ -646,7 +646,7 @@
       "quellzeile": 5805,
       "text": "erläutern die Bedeutung von Abschiedsritualen (z.B. Beerdigung, Trauerfeiern)",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -670,7 +670,7 @@
       "quellzeile": 5805,
       "text": "erläutern die Bedeutung einer Patientenverfügung für die pflegerische Versorgung Sterbender",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -682,7 +682,7 @@
       "quellzeile": 5805,
       "text": "erläutern Bedingungen und Kontext für die Erstellung eines Nottestamentes",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -706,7 +706,7 @@
       "quellzeile": 5805,
       "text": "erläutern religion- und kulturspezifische Maßnahmen zur Versorgung Verstorbener",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -778,7 +778,7 @@
       "quellzeile": 7573,
       "text": "erläutern die Unterschiede zwischen symmetrischen und asymmetrischen Interaktionen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -802,7 +802,7 @@
       "quellzeile": 7573,
       "text": "erklären das Zustandekommen von Überforderungssituationen bei Menschen mit demenziellen Veränderungen",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -896,7 +896,7 @@
       "ce": 8,
       "leIndex": 7,
       "quellzeile": 7573,
-      "text": "tauschen sich dazu aus, wie persönliche Erfahrungen und Wünsche bei der Herstellung von körperlicher Nähe ➢ Fallarbeit zur biografie- und phasenorientierten Interaktion",
+      "text": "tauschen sich dazu aus, wie persönliche Erfahrungen und Wünsche bei der Herstellung von körperlicher Nähe",
       "typ": "einstellung",
       "bloomVerb": "tauschen",
       "bloomStufe": 5,
@@ -922,7 +922,7 @@
       "quellzeile": 8043,
       "text": "erläutern das Konzept des „total pain“ nach Saunders",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -946,7 +946,7 @@
       "quellzeile": 8043,
       "text": "erläutern die Pathophysiologie und Symptome einer Mukositis erläutern die Pathophysiologie und Symptome einer Fatigue erläutern Haut- und Haarveränderungen als krankheitsund therapiebedingte Folge erläutern pflegerische Maßnahmen zur Linderung der allgemeinen Symptome bei bösartigen Erkrankungen wie Inappetenz, Hautjuckreiz, Fatigue",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -958,7 +958,7 @@
       "quellzeile": 8043,
       "text": "führen eine therapeutische Mundpflege durch",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -970,7 +970,7 @@
       "quellzeile": 8043,
       "text": "führen eine wahrnehmungsfördernde Haut- und Körperpflege durch",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -994,8 +994,8 @@
       "quellzeile": 8043,
       "text": "schätzen Möglichkeiten zur ganzheitlichen Versorgung eines krebskranken Menschen einschließlich der Berücksichtigung des Konzepts der Basalen Stimulation ein",
       "typ": "koennen",
-      "bloomVerb": "schätzen",
-      "bloomStufe": 2,
+      "bloomVerb": "einschaetzen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -1016,7 +1016,7 @@
       "ce": 8,
       "leIndex": 8,
       "quellzeile": 8043,
-      "text": "diskutieren zu Vor- und Nachteilen der Pflege im stationären und häuslichen Bereich ➢ Gruppenpuzzle zur Herausstellung der jeweiligen Pathophysiologie und Symptomatik von Haut- und Haarveränderungen, Fatigue, Mukositis, Inappetenz und Erbrechen",
+      "text": "diskutieren zu Vor- und Nachteilen der Pflege im stationären und häuslichen Bereich",
       "typ": "einstellung",
       "bloomVerb": "diskutieren",
       "bloomStufe": 5,

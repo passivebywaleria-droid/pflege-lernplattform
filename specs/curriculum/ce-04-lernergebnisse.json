@@ -10,8 +10,8 @@
       "quellzeile": 2977,
       "text": "stellen die Bezüge unterschiedlicher Kommunikationsmodelle zu Pflege- und Berufssituationen heraus",
       "typ": "wissen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -22,7 +22,7 @@
       "quellzeile": 2977,
       "text": "erläutern die Bedeutung formaler Aspekte für die Durchführung professioneller Gespräche",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -34,7 +34,7 @@
       "quellzeile": 2977,
       "text": "erklären Prinzipien verbaler und nonverbaler Kommunikation",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -46,8 +46,8 @@
       "quellzeile": 2977,
       "text": "stellen die Charakteristik von Konfliktgesprächen sowie damit verbundene Prinzipien und Regeln zum Führen von Konfliktgesprächen heraus",
       "typ": "wissen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -58,7 +58,7 @@
       "quellzeile": 2977,
       "text": "erklären Beratung aus psychologischer, psychosozialer und pädagogischer Perspektive",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -142,7 +142,7 @@
       "quellzeile": 2977,
       "text": "führen eine kollegiale Beratung durch",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -190,8 +190,8 @@
       "quellzeile": 3160,
       "text": "stellen gesundheitsfördernde Maßnahmen im Zusammenhang mit der Ernährung, Verdauung und Mobilität heraus",
       "typ": "koennen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -214,7 +214,7 @@
       "quellzeile": 3160,
       "text": "stellen das Modell der Salutogenese dar",
       "typ": "koennen",
-      "bloomVerb": "stellen",
+      "bloomVerb": "darstellen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -226,8 +226,8 @@
       "quellzeile": 3160,
       "text": "stellen fallbezogen Stressoren und Widerstandsressourcen von zu Pflegenden heraus",
       "typ": "koennen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -298,7 +298,7 @@
       "quellzeile": 7738,
       "text": "erklären die besondere Gefährdung für Einsamkeit und Isolation von pflegenden Angehörigen mit Migrationshintergrund",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -310,8 +310,8 @@
       "quellzeile": 7738,
       "text": "stellen Tabuthemen für unterschiedliche Kulturkreise heraus",
       "typ": "wissen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -322,7 +322,7 @@
       "quellzeile": 7738,
       "text": "erklären die Gefahr einer Überforderung durch pflegende Angehörige an demenziell veränderte Menschen",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -334,7 +334,7 @@
       "quellzeile": 7738,
       "text": "erklären Auswirkungen und Herausforderungen der einzelnen Demenzphasen auf pflegende Angehörige",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -394,7 +394,7 @@
       "quellzeile": 7879,
       "text": "stellen die Anatomie des Blutes dar",
       "typ": "wissen",
-      "bloomVerb": "stellen",
+      "bloomVerb": "darstellen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -406,7 +406,7 @@
       "quellzeile": 7879,
       "text": "erläutern den Aufbau des lymphatischen Systems",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -430,7 +430,7 @@
       "quellzeile": 7879,
       "text": "systems im Zusammenhang mit dem Immunsystem und der Infektionsabwehr dar erklären die generellen Unterschiede zwischen benignen und malignen Erkrankungen erläutern akute und chronische Formen der Leukämie erläutern Wirkungen und Nebenwirkungen zielgerichteter Therapien (targetet therapies) erläutern Kriterien zur Beobachtung und Überwachung von Menschen, die eine Transfusion erhalten beschreiben Sofortmaßnahmen bei Transfusionszwischenfällen erläutern Applikationsformen, Wirkungsweise und unerwünschte Wirkungen von Zytostatika erläutern Sinn und Handhabung von Portsystemen erläutern Schutzmaßnahmen für die Erkrankten und zum Selbstschutz im Zusammenhang mit Zytostatika und Proteinkinasehemmer erläutern Aspekte zu gesundheitsfördernden Ernährungsund Lebensweisen",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -512,7 +512,7 @@
       "ce": 4,
       "leIndex": 4,
       "quellzeile": 7879,
-      "text": "reflektieren die komplexen Herausforderungen Pflegender bei der Mitwirkung bei therapeutischen Maßnahmen und stellen Unterschiede zu den Anforderungen an den ärztlichen Dienst heraus ➢ Strukturlegverfahren: Aufbau des Blutes",
+      "text": "reflektieren die komplexen Herausforderungen Pflegender bei der Mitwirkung bei therapeutischen Maßnahmen und stellen Unterschiede zu den Anforderungen an den ärztlichen Dienst heraus",
       "typ": "einstellung",
       "bloomVerb": "reflektieren",
       "bloomStufe": 5,

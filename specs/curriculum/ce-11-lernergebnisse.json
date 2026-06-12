@@ -22,7 +22,7 @@
       "quellzeile": 6811,
       "text": "erklären die generellen Unterschiede zwischen sozialemotionaler Entwicklungsstörung und psychischer Erkran•",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -34,7 +34,7 @@
       "quellzeile": 6811,
       "text": "kung erläutern Risikofaktoren für die Entwicklung psychischer Störungen erläutern Klinik, Diagnostik und Therapie pathologischer Verhaltensweisen im Zusammenhang mit der Nahrungsaufnahme erläutern Klinik, Diagnostik und Therapie bei Hebephrenie erläutern psychotherapeutische Verfahrensansätze und Therapieoptionen erklären die besondere Anfälligkeit Adoleszenter für psychische Erkrankungen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -94,7 +94,7 @@
       "quellzeile": 6969,
       "text": "erläutern Gemeinsamkeiten und Unterschiede der Erscheinungsbilder der Demenz und der Depression",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -118,7 +118,7 @@
       "quellzeile": 6969,
       "text": "erläutern verhaltens- und psychotherapeutische Ansätze bei Depressionen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -130,7 +130,7 @@
       "quellzeile": 6969,
       "text": "erläutern die Wirkungsweise von Antidepressiva",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -142,7 +142,7 @@
       "quellzeile": 6969,
       "text": "erläutern die Ansätze der Ergo-, Musik- und Gesprächstherapien",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -154,7 +154,7 @@
       "quellzeile": 6969,
       "text": "erläutern den Verlauf suizidaler Krisen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -178,7 +178,7 @@
       "quellzeile": 6969,
       "text": "erläutern Prinzipien einer Milieugestaltung, die beim Kranken Wohlbefinden und Vertrautheit hervorrufen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -202,8 +202,8 @@
       "quellzeile": 6969,
       "text": "stellen die besondere Bedeutung der Bezugspflegesystem für die Einschätzung und Förderung der Lebensqualität der an Demenz erkrankten Menschen in Abgrenzung von anderen Pflegeorganisationssystemen heraus",
       "typ": "wissen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -214,8 +214,8 @@
       "quellzeile": 6969,
       "text": "stellen den möglichen Nutzen von H.I.L.D.E. für eine erlebnisorientierte Pflege und Betreuung heraus",
       "typ": "wissen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -274,7 +274,7 @@
       "quellzeile": 6969,
       "text": "berücksichtigen das Phänomen „Vergesslichkeit“ bei der Alltagsgestaltung",
       "typ": "koennen",
-      "bloomVerb": "berücksichtigen",
+      "bloomVerb": "beruecksichtigen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -286,7 +286,7 @@
       "quellzeile": 6969,
       "text": "berücksichtigen eine ausreichende Nährstoff- und Flüssigkeitszufuhr in der Pflege- und Tagesplanung",
       "typ": "koennen",
-      "bloomVerb": "berücksichtigen",
+      "bloomVerb": "beruecksichtigen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -370,7 +370,7 @@
       "quellzeile": 7237,
       "text": "erläutern Stadien, die zu einer Suchtkrankheit führen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -418,7 +418,7 @@
       "quellzeile": 7237,
       "text": "erläutern spezifische und unspezifische durch Alkohol verursachte Probleme und Störungen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -512,7 +512,7 @@
       "ce": 11,
       "leIndex": 3,
       "quellzeile": 7237,
-      "text": "diskutieren die Problematik des Freiheitsentzugs bei psychisch kranken Menschen ➢ Fallarbeit (Case-Problem-Variante): Analyse von Missbrauchsverhaltensweisen",
+      "text": "diskutieren die Problematik des Freiheitsentzugs bei psychisch kranken Menschen",
       "typ": "einstellung",
       "bloomVerb": "diskutieren",
       "bloomStufe": 5,
@@ -526,7 +526,7 @@
       "quellzeile": 7405,
       "text": "erläutern ein krankheitsorientiertes Verständnis zur Demenz und daraus resultierende Folgen für den gesellschaftlichen Umgang mit Demenz",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -538,8 +538,8 @@
       "quellzeile": 7405,
       "text": "stellen den Zusammenhang zwischen einer von Erfolg und Effizienz geprägten Gesellschaft und einem krankheitsbezogenen Demenzverständnis heraus",
       "typ": "wissen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -562,7 +562,7 @@
       "quellzeile": 7405,
       "text": "erläutern die Begrifflichkeit „doppelt Fremde“ für demenziell veränderte Menschen mit Migrationshintergrund",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -586,7 +586,7 @@
       "quellzeile": 7405,
       "text": "stellen die Deutung demenzieller Veränderungen verschiedener Kulturkreise synoptisch dar",
       "typ": "koennen",
-      "bloomVerb": "stellen",
+      "bloomVerb": "darstellen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -634,8 +634,8 @@
       "quellzeile": 7405,
       "text": "stellen Unterschiede zwischen Phänomenen und Krankheitszeichen heraus",
       "typ": "einstellung",
-      "bloomVerb": "stellen",
-      "bloomStufe": 5,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -658,7 +658,7 @@
       "quellzeile": 9018,
       "text": "lung erläutern die besonderen therapeutischen und pflegerischen Anforderungen bei der Versorgung multimorbider Patientinnen und Patienten erläutern das Anliegen und die Vorgehensweisen der geriatrischen Assessments Tinetti-Test, Timed up and goTest, Clock-test, Handgrip-Test, Mini-Mental-Status und der geriatrischen Depressionsskala erläutern die Bedeutung einer protein- und B12-reichen Ernährung für ältere Menschen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -670,7 +670,7 @@
       "quellzeile": 9018,
       "text": "führen die Erhebung des Barthel-Index durch",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -730,7 +730,7 @@
       "quellzeile": 9018,
       "text": "übernehmen Verantwortung für die vollständige Dokumentation aller Beobachtungen und Verrichtungen zur Qualitätssicherung, Informationsweitergabe und Fallabrechnung",
       "typ": "einstellung",
-      "bloomVerb": "übernehmen",
+      "bloomVerb": "uebernehmen",
       "bloomStufe": 5,
       "altersbezug": false,
       "motorisch": false
@@ -742,7 +742,7 @@
       "quellzeile": 9839,
       "text": "Deutschland erläutern das Safewards-Modell erläutern das Vulnerabilitäts-Stress-Modell erklären Verhaltensweisen von Menschen mit Phobien und Zwangsstörungen beschreiben verbale und nonverbale Deeskalationsstrategien im psychiatrischen Bereich entwickeln fallbezogene Unterstützungsangebote im Sinne der Milieu- und Sozialtherapie",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false

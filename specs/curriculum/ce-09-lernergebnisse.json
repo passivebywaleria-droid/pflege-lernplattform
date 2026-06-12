@@ -10,7 +10,7 @@
       "quellzeile": 4964,
       "text": "erklären Auswirkungen der Pflegestärkungsgesetze auf das Handlungsfeld der ambulanten Pflege",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -22,7 +22,7 @@
       "quellzeile": 4964,
       "text": "erklären Leistungsangebote der ambulanten Pflege zur Versorgung von Menschen aller Altersstufen und deren rechtlichen Grundlagen der Sozialgesetzgebung",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": true,
       "motorisch": false
@@ -34,7 +34,7 @@
       "quellzeile": 4964,
       "text": "erklären Prinzipien der Tourenplanung und den Tagesablauf in der ambulanten Pflege",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -46,7 +46,7 @@
       "quellzeile": 4964,
       "text": "erläutern Angebote und Beratungsstellen für Menschen mit Migrationshintergrund",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -58,7 +58,7 @@
       "quellzeile": 4964,
       "text": "erläutern Angebote der Lebenshilfe zur Unterstützung von Familien mit behinderten Kindern und Jugendlichen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": true,
       "motorisch": false
@@ -70,8 +70,8 @@
       "quellzeile": 4964,
       "text": "schätzen Vor- und Nachteile der unterschiedlichen Wohnformen für die Betreuung und Pflege einschließlich des Einsatzes von Pflegehilfsmitteln ein",
       "typ": "wissen",
-      "bloomVerb": "schätzen",
-      "bloomStufe": 2,
+      "bloomVerb": "einschaetzen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -94,7 +94,7 @@
       "quellzeile": 4964,
       "text": "erläutern Intention, Schwerpunkte und Ablauf eines Erstkontaktes/ Erstgespräches",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -118,7 +118,7 @@
       "quellzeile": 4964,
       "text": "erklären Anliegen und Arbeitsweisen von Pflegestützpunkten",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -130,7 +130,7 @@
       "quellzeile": 4964,
       "text": "erläutern Hinweise auf Gewaltausübung in der Familie",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -154,7 +154,7 @@
       "quellzeile": 4964,
       "text": "erläutern Herausforderungen und Anforderungen der Pflegedienstleitungen bei den Tourenplanungen im Zusammenhang mit den vorliegenden Widersprüchen zwischen Anforderungsprofilen und Qualifikationsprofilen",
       "typ": "koennen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -166,8 +166,8 @@
       "quellzeile": 4964,
       "text": "stellen die Bedeutung des salutogenetischen Gesundheitsverständnisses für die Arbeit im ambulanten Bereich für Menschen unterschiedlicher Kultur und Sozialisation heraus",
       "typ": "koennen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -200,11 +200,11 @@
       "ce": 9,
       "leIndex": 1,
       "quellzeile": 4964,
-      "text": "diskutieren den Nutzen von Fallbesprechungen und Supervisionen als professionelle Austausch- und Reflexionssettings bei Nähe- und Distanzschwierigkeiten ➢ erstellen einer Synopse zu Pflegeleistungen für Menschen aller Altersstufen und den jeweiligen Leistungsträgern ➢ Erstellen von Informationsbroschüren über Anlauf- und",
+      "text": "diskutieren den Nutzen von Fallbesprechungen und Supervisionen als professionelle Austausch- und Reflexionssettings bei Nähe- und Distanzschwierigkeiten",
       "typ": "einstellung",
       "bloomVerb": "diskutieren",
       "bloomStufe": 5,
-      "altersbezug": true,
+      "altersbezug": false,
       "motorisch": false
     },
     {
@@ -214,7 +214,7 @@
       "quellzeile": 5149,
       "text": "erklären die Anatomie und Physiologie von Leber und Bauchspeicheldrüse im Zusammenhang mit der Regulation des Blutzuckerspiegels",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -226,7 +226,7 @@
       "quellzeile": 5149,
       "text": "erklären Ursachen, Formen, Symptome, Diagnostik, Therapie und Spätfolgen des Diabetes mellitus",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -238,7 +238,7 @@
       "quellzeile": 5149,
       "text": "erläutern die Ursachen, Symptome und erforderlichen Sofortmaßnahmen beim Coma diabeticum und beim hypoglykämischen Schock",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -286,8 +286,8 @@
       "quellzeile": 5149,
       "text": "stellen die Bedeutung gesunder Ernährung bei Diabetes mellitus heraus",
       "typ": "wissen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -332,7 +332,7 @@
       "ce": 9,
       "leIndex": 2,
       "quellzeile": 5149,
-      "text": "diskutieren die Effizienz der Beratung und Beratungsangebote zum Umgang mit Diabetes mellitus ➢ Gruppenpuzzle: Begleiterkrankungen",
+      "text": "diskutieren die Effizienz der Beratung und Beratungsangebote zum Umgang mit Diabetes mellitus",
       "typ": "einstellung",
       "bloomVerb": "diskutieren",
       "bloomStufe": 5,
@@ -346,7 +346,7 @@
       "quellzeile": 5979,
       "text": "erläutern die Konzepte Integration und Inklusion",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -358,7 +358,7 @@
       "quellzeile": 5979,
       "text": "erläutern die unterschiedlichen Wertungen und Bedeutungszuschreibungen von Alter, Geschlecht, sexueller Orientierung und Migrationshintergrund innerhalb der letzten 100 Jahre in Deutschland15",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -370,7 +370,7 @@
       "quellzeile": 5979,
       "text": "erklären die besonderen Anforderungen an lebensweltorientierte Pflegehandlungen für ältere Menschen, Menschen mit chronischen Erkrankungen, Menschen mit erworbenen oder angeborenen Behinderungen, Migrationshintergrund, Menschen mit unterschiedlichen sexuellen Orientierungen und Geschlechtsidentitäten stellen kulturelle Unterschiede im Gesundheits- und Krankheitsverständnis dar erläutern, weshalb nichtheterosexuelle Menschen mehr Identitätsarbeit leisten müssen als heterosexuelle Menschen erläutern pflegerische Aufgaben und Anforderungen bei der Alltagsbegleitung und Pflege von Menschen mit chronischen Erkrankungen beschreiben Veränderungen des Familienlebens und des sozialen Gefüges infolge chronischer Erkrankungen oder erworbener Behinderungen beschreiben Anliegen und Abläufe integrierter Versorgungspfade (pathway management, clinical pathways) stellen Maßnahmen zur Förderung der Selbststeuerungsfähigkeit chronisch kranker Menschen vor beschreiben risikoreiche Gesundheitsprobleme im Alter, ihre Konsequenzen für den alten Menschen und darauf bezogene Anforderungen an die Pflege (vgl. GarmsHomolová) stellen die jeweilige Spezifik von angeborenen, erworbenen, körperlichen, geistigen und seelischen Behinderungen heraus stellen die Kostenträger im Zusammenhang mit der Unterstützung und Eingliederung von Menschen mit Behinderungen vor",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": true,
       "motorisch": false
@@ -394,7 +394,7 @@
       "quellzeile": 5979,
       "text": "ausgewählten chronischen Erkrankungen oder Behinderungen zu leiten aus den WHO-Kategorien Schädigung, Einschränkung und Benachteiligung zum Begriff Behinderung die besondere Bedeutung lebensweltorientierter Pflegehandlun-",
       "typ": "koennen",
-      "bloomVerb": "ausgewählten",
+      "bloomVerb": "ausgewaehlten",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -406,8 +406,8 @@
       "quellzeile": 5979,
       "text": "gen ab stellen Zusammenhänge zwischen dem richtigen Maß an Fordern - und - Fördern und Selbstbestimmungsfähigkeit heraus",
       "typ": "koennen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -442,7 +442,7 @@
       "quellzeile": 6173,
       "text": "erklären das Konzept „Lebenswelt“",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -454,7 +454,7 @@
       "quellzeile": 6173,
       "text": "erläutern Phänomene des Alt-Seins und Alterns",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -466,7 +466,7 @@
       "quellzeile": 6173,
       "text": "erläutern Ziele und Aufgaben der Interventionsgerontologie",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -478,7 +478,7 @@
       "quellzeile": 6173,
       "text": "erläutern die wichtigsten Feste des Christentums, Islams und Judentums",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -490,7 +490,7 @@
       "quellzeile": 6173,
       "text": "stellen die institutionsbedingten Unterschiede der Tagesabläufe im Betreuten Wohnen, in Alten- und Pflegeheimen sowie in der häuslichen Pflege dar",
       "typ": "wissen",
-      "bloomVerb": "stellen",
+      "bloomVerb": "darstellen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -538,7 +538,7 @@
       "quellzeile": 6173,
       "text": "erläutern die Bedeutung des Wohnraums als Lebensraum im Alter stellen Prinzipien der Wohnraumgestaltung für ältere Menschen vor stellen Möglichkeiten der Wohnraumanpassung an altersbedingte Einschränkungen heraus stellen das Aufgabenspektrum von Alltagsbegleiter*innen vor stellen Beispiele für technische Hilfsmittel für den Haushalt heraus, die auf der Grundlage von § 40 SGB XI von der sozialen Pflegeversicherung übernommen werden können",
       "typ": "koennen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": true,
       "motorisch": false
@@ -610,8 +610,8 @@
       "quellzeile": 8568,
       "text": "stellen die Bezüge zwischen den bundesgesetzlichen Regelungen (SGB V, SGB XI, BSHG) und den auf Landesebene entwickelten Rahmenverträgen und Vergütungsempfehlungen heraus",
       "typ": "wissen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -622,7 +622,7 @@
       "quellzeile": 8568,
       "text": "erläutern die Finanzierung ambulanter Pflegeeinrichtungen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -634,7 +634,7 @@
       "quellzeile": 8568,
       "text": "erläutern Voraussetzungen zur Durchführung von Maßnahmen nach SGB V",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -646,7 +646,7 @@
       "quellzeile": 8568,
       "text": "erläutern Zweck und Gegenstand eines Pflegevertrages",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -658,7 +658,7 @@
       "quellzeile": 8568,
       "text": "erläutern den Aufbau und mögliche Ablauforganisationen/Einsatzplanungen ambulanter Pflegedienste",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -682,7 +682,7 @@
       "quellzeile": 8568,
       "text": "erläutern die unterschiedliche Bedeutung der Pflegedokumentation, von SIS und der Dokumentation der Leistungskomplexe bzw. der erbrachten Leistungen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -694,7 +694,7 @@
       "quellzeile": 8568,
       "text": "erläutern Zweck und Prinzipien niedrigschwelliger Betreuungsangebote nach SGB XI § 45 Abs. 3",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -718,7 +718,7 @@
       "quellzeile": 8568,
       "text": "erklären Anliegen und Arbeitsweisen von Pflegestützpunkten",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false

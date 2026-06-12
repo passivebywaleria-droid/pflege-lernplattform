@@ -22,7 +22,7 @@
       "quellzeile": 3538,
       "text": "erläutern Aufbau und Wirkungsweise der Skelettmuskulatur",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -58,7 +58,7 @@
       "quellzeile": 3538,
       "text": "führen Bewegungs- und Haltungsmuster auf spezifische Störungen und Erkrankungen im Bewegungssystem zurück",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -118,7 +118,7 @@
       "quellzeile": 8217,
       "text": "erläutern die physiologischen Wundheilungsprozesse vor dem Hintergrund ihrer naturwissenschaftlichen Kenntnisse zur Zytologie und Histologie",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -130,7 +130,7 @@
       "quellzeile": 8217,
       "text": "erläutern chronische Wunde als systemisch bedingtes Phänomen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -236,7 +236,7 @@
       "ce": 5,
       "leIndex": 2,
       "quellzeile": 8217,
-      "text": "reflektieren eigene Ekelgefühle bei der Bertachtung und Versorgung von Wunden ➢ Demonstration der unterschiedlichen Wundauflagen",
+      "text": "reflektieren eigene Ekelgefühle bei der Bertachtung und Versorgung von Wunden",
       "typ": "einstellung",
       "bloomVerb": "reflektieren",
       "bloomStufe": 5,
@@ -250,7 +250,7 @@
       "quellzeile": 8377,
       "text": "schlechtsorgane erläutern Anatomie und Physiologie des harnableitenden Systems erläutern Stadien der geschlechtsspezifischen Entwicklung und mögliche Entwicklungsstörungen im Kindes- und Jugendalter erläutern typische Verfahren gynäkologischer Diagnostik und Therapie erläutern meldepflichtige Geschlechtskrankheiten erklären Ursachen von und den pflegerischen Umgang mit Descensus uteri im Alltag erläutern die hygienische Handhabung von Ring-Pessars beschreiben die Probleme, die Prostatahyperplasie mit sich bringt und stellen daraus resultierende Konsequenzen für die pflegerische Versorgung heraus beschreiben die erforderlichen Therapie- und Pflegemaßnahmen für Menschen, die infolge von Harnleitersteinen an einer Kolik leiden erläutern Indikationen und Kontraindikationen der intermittierenden Katheterismusarten (sauberer, aseptischer und steriler intermittierender Katheterismus)",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": true,
       "motorisch": false
@@ -274,7 +274,7 @@
       "quellzeile": 8377,
       "text": "führen einen Einmalkatheterismus durch",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -308,7 +308,7 @@
       "ce": 5,
       "leIndex": 3,
       "quellzeile": 8377,
-      "text": "identifizieren und analysieren die körperlichen und psychischen Auswirkungen einer Prostatektomie nach bösartigem Befund ➢ Arbeitsteilige Gruppenarbeit: Abstract-Entwicklung zu den häufigsten entzündlichen und bösartigen Erkrankungen im Urogenitalsystem zu den Kriterien: Krankheitsbild, Altersgruppe, Pflegeschwerpunkte einschließlich Hinweise zur Lebensführung; Präsentation und Gegenüberstellung im Plenum",
+      "text": "identifizieren und analysieren die körperlichen und psychischen Auswirkungen einer Prostatektomie nach bösartigem Befund",
       "typ": "einstellung",
       "bloomVerb": "identifizieren",
       "bloomStufe": 5,
@@ -334,7 +334,7 @@
       "quellzeile": 8855,
       "text": "erläutern Vorgaben zur Arzneimittelaufbewahrung",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -346,7 +346,7 @@
       "quellzeile": 8855,
       "text": "erläutern Hintergründe und Umsetzungsanforderungen von PKMS",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -358,7 +358,7 @@
       "quellzeile": 8855,
       "text": "erläutern Prinzipien und Anforderungen der Dienstplangestaltung",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -370,7 +370,7 @@
       "quellzeile": 8855,
       "text": "stellen Ziele, Formen und Durchführung der Pflegevisite dar",
       "typ": "wissen",
-      "bloomVerb": "stellen",
+      "bloomVerb": "darstellen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -406,7 +406,7 @@
       "quellzeile": 8855,
       "text": "stellen Ziele, Formen und Durchführung der Pflegevisite dar",
       "typ": "koennen",
-      "bloomVerb": "stellen",
+      "bloomVerb": "darstellen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -418,7 +418,7 @@
       "quellzeile": 8855,
       "text": "füllen Anmeldeformulare für medizinische Untersuchungen aus",
       "typ": "koennen",
-      "bloomVerb": "füllen",
+      "bloomVerb": "fuellen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -466,7 +466,7 @@
       "quellzeile": 9523,
       "text": "stellen die Entwicklung der Pflegewissenschaft im angloamerikanischen und deutschsprachigen Raum dar",
       "typ": "wissen",
-      "bloomVerb": "stellen",
+      "bloomVerb": "darstellen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -490,7 +490,7 @@
       "quellzeile": 9523,
       "text": "erläutern evidenz-based nursing (EBN) als wissenschaftliche Methode für Entscheidungen im Praxisfeld",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -502,7 +502,7 @@
       "quellzeile": 9523,
       "text": "stellen Unterschiede und Schnittmengen zwischen den Begrifflichkeiten Phänomen, Konzept, Modell, Theorie dar",
       "typ": "wissen",
-      "bloomVerb": "stellen",
+      "bloomVerb": "darstellen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -610,7 +610,7 @@
       "quellzeile": 9707,
       "text": "erläutern die Auswirkungen demografischer Veränderungen auf Entwicklungen im Gesundheitswesen und das Handlungsfeld der Pflege",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -622,7 +622,7 @@
       "quellzeile": 9707,
       "text": "erläutern das politische Vorgehen bei der Entwicklung und Verabschiedung des Berufsgesetzes und Möglichkeiten der Mitgestaltung",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -634,7 +634,7 @@
       "quellzeile": 9707,
       "text": "stellen Aufgaben und Arbeitsweise berufspolitischer Gremien und Arbeitsgruppen Berufsverbände und Organisationen der Pflege dar",
       "typ": "wissen",
-      "bloomVerb": "stellen",
+      "bloomVerb": "darstellen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -646,7 +646,7 @@
       "quellzeile": 9707,
       "text": "stellen das Berufsbild und Arbeitsfelder der Pflegefachkräfte dar",
       "typ": "wissen",
-      "bloomVerb": "stellen",
+      "bloomVerb": "darstellen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -658,7 +658,7 @@
       "quellzeile": 9707,
       "text": "erläutern die Funktion und Aufgabenfelder der Pflegekammer",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -670,7 +670,7 @@
       "quellzeile": 9707,
       "text": "erläutern Geschichte, Stand und Perspektiven der Profes• sionalisierung der Pflegeberufe erläutern besondere Gefährdungen pflegerischer Berufe",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -682,8 +682,8 @@
       "quellzeile": 9707,
       "text": "stellen die jeweilige Funktion und den Zusammenhang zwischen europäischen, nationalen und Domäne spezifischen Qualifikationsrahmen heraus",
       "typ": "koennen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },

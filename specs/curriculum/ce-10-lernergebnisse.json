@@ -10,7 +10,7 @@
       "quellzeile": 3377,
       "text": "erklären die Spezifika des Atemsystems von Kindern",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": true,
       "motorisch": false
@@ -22,7 +22,7 @@
       "quellzeile": 3377,
       "text": "erklären die menschliche Wärmeregulation und Besonderheiten der Wärmeregulation bei Säuglingen und Kleinkindern",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": true,
       "motorisch": false
@@ -46,7 +46,7 @@
       "quellzeile": 3377,
       "text": "erklären Fiebersymptome vor dem Hintergrund pathophysiologischer Kenntnisse",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -58,7 +58,7 @@
       "quellzeile": 3377,
       "text": "erläutern typische kindliche Infektionserkrankungen der oberen und unteren Atemwege und möglichen Folgeerkrankungen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": true,
       "motorisch": false
@@ -70,7 +70,7 @@
       "quellzeile": 3377,
       "text": "erklären die Wirkungsweise von Antibiotika und Applikationsvorschriften",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -94,7 +94,7 @@
       "quellzeile": 3377,
       "text": "erläutern die zu ergreifenden Sofortmaßnahmen beim Status asthmaticus und bei Pseudokrupp-Anfällen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -106,7 +106,7 @@
       "quellzeile": 3377,
       "text": "erläutern Prinzipien gesunder Lebensweise für Kinder, die an Asthma bronchiale erkrankt sind",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": true,
       "motorisch": false
@@ -118,7 +118,7 @@
       "quellzeile": 3377,
       "text": "erklären den hygienischen Umgang mit Sputum und Nasensekret",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -130,7 +130,7 @@
       "quellzeile": 3377,
       "text": "erläutern Kälte- und Wärmeanwendungen im Zusammenhang mit Infektionen der oberen Atemwege",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -154,7 +154,7 @@
       "quellzeile": 3377,
       "text": "führen fiebersenkende und schmerzhemmende physikali-",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -176,10 +176,10 @@
       "ce": 10,
       "leIndex": 1,
       "quellzeile": 3377,
-      "text": "stellen die von Eltern wahrgenommene Bedrohung bei hochfieberhaften Atemwegsinfekten heraus ➢ Fachpraktische Übungen: Wickel und Auflagen",
+      "text": "stellen die von Eltern wahrgenommene Bedrohung bei hochfieberhaften Atemwegsinfekten heraus",
       "typ": "einstellung",
-      "bloomVerb": "stellen",
-      "bloomStufe": 5,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -190,7 +190,7 @@
       "quellzeile": 6345,
       "text": "erklären Aufbau und Funktion des Immunsystems",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -202,7 +202,7 @@
       "quellzeile": 6345,
       "text": "erläutern die spezifische und unspezifische Immunabwehr",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -214,7 +214,7 @@
       "quellzeile": 6345,
       "text": "erläutern die Vorgänge zur Immunisierung",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -238,7 +238,7 @@
       "quellzeile": 6345,
       "text": "erläutern den Vorgang der Infektion",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -262,7 +262,7 @@
       "quellzeile": 6345,
       "text": "erläutern Ursachen, Auswirkungen und Behandlungsprin•",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -298,8 +298,8 @@
       "quellzeile": 6345,
       "text": "stellen die Unterschiede zwischen Immunreaktionsstörungen und Infektionen heraus",
       "typ": "koennen",
-      "bloomVerb": "stellen",
-      "bloomStufe": 2,
+      "bloomVerb": "herausstellen",
+      "bloomStufe": 4,
       "altersbezug": false,
       "motorisch": false
     },
@@ -308,7 +308,7 @@
       "ce": 10,
       "leIndex": 2,
       "quellzeile": 6345,
-      "text": "diskutieren Pro und Kontra von Schutzimpfungen im Kindesalter vor dem Hintergrund individueller und gesellschaftlicher Interessen ➢ Strukturlegeverfahren zur spezifischen Immunabwehr",
+      "text": "diskutieren Pro und Kontra von Schutzimpfungen im Kindesalter vor dem Hintergrund individueller und gesellschaftlicher Interessen",
       "typ": "einstellung",
       "bloomVerb": "diskutieren",
       "bloomStufe": 5,
@@ -322,7 +322,7 @@
       "quellzeile": 6491,
       "text": "erläutern den Zusammenhang zwischen der Entstehung und Verbreitung von Infektionen und der Notwendigkeit hygienischen Handelns",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -346,7 +346,7 @@
       "quellzeile": 6491,
       "text": "erklären Maßnahmen der Desinfektion und Sterilisation",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -358,7 +358,7 @@
       "quellzeile": 6491,
       "text": "erklären die Bedeutung und Handhabung von Isolierungsmaßnahmen",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -370,7 +370,7 @@
       "quellzeile": 6491,
       "text": "erläutern Ursachen und Konsequenzen einer Resistenzentwicklung",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -430,7 +430,7 @@
       "quellzeile": 6640,
       "text": "erklären den Aufbau der weiblichen Sexualorgane",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -454,7 +454,7 @@
       "quellzeile": 6640,
       "text": "erläutern unsichere, wahrscheinliche und sichere Schwangerschaftszeichen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -478,7 +478,7 @@
       "quellzeile": 6640,
       "text": "erläutern die fetale Entwicklung und Entwicklungsstörun-",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -490,7 +490,7 @@
       "quellzeile": 6640,
       "text": "gen erläutern Schwangerschaftsgefährdungen beschreiben die physiologische Geburt erläutern Geburtsrisiken und -komplikationen erklären aktuelle Versorgungsprinzipien und Versorgungssysteme von Mutter und Kind durch Gesundheits- und Kinderkrankenpflegerinnen und Hebammen erklären Aufgaben von Pflegefachkräften auf Entbindungsund Wöchnerinnenstationen zur Unterstützung des Schwangerschafts-, Geburts- und Wochenbettverlaufs erläutern Kriterien einer Zustands- und Reifebeurteilung bei Neugeborenen erläutern mögliche Geburtsverletzungen bei der Mutter erläutern die häufigsten Erkrankungen, Fehlbildungen und Verletzungen Neugeborener und erforderliche Sofortmaßnahmen stellen Maßnahmen zur Vermeidung des plötzlichen Kindstods dar",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": true,
       "motorisch": false
@@ -514,7 +514,7 @@
       "quellzeile": 6640,
       "text": "stellen Risiko- und Schutzfaktoren in Bezug auf die Entwicklung und den Verlauf einer Postpartum-Depression dar",
       "typ": "koennen",
-      "bloomVerb": "stellen",
+      "bloomVerb": "darstellen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -550,7 +550,7 @@
       "quellzeile": 9183,
       "text": "erklären Intentionen und Schwerpunkte der Rehabilitation",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -562,7 +562,7 @@
       "quellzeile": 9183,
       "text": "erläutern gesetzliche Grundlagen für Sach- und Geldleistungen für die rehabilitative Langzeitpflege (SGB XI Kapitel 4, SGB V Kapitel 3, SGB XII)",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -574,7 +574,7 @@
       "quellzeile": 9183,
       "text": "erläutern mögliche Rehabilitationsträger nach SGB XI § 6 Abs. 1",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -586,7 +586,7 @@
       "quellzeile": 9183,
       "text": "erläutern Intentionen und Inhalte des § 7a des PflegeWeiterentwicklungsgesetzes (28. Mai 2008)",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -610,7 +610,7 @@
       "quellzeile": 9183,
       "text": "erläutern den Aufbau und die Funktionsweise des peripheren Nervensystems mit seinen Anteilen somatisches und vegetatives Nervensystem",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -622,7 +622,7 @@
       "quellzeile": 9183,
       "text": "erläutern die Auswirkungen häufig auftretender neurologischer Krankheitsbilder wie Multiple Sklerose, Parkinson, Meningitis auf die Alltagsgestaltung (Mobilität, Kommunikation, Selbstversorgung)",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -668,7 +668,7 @@
       "ce": 10,
       "leIndex": 5,
       "quellzeile": 9183,
-      "text": "diskutieren die Auswirkungen eingeschränkter Kommunikationsfähigkeiten und Mobilität auf die gesellschaftliche Teilhabe ➢ Arbeit mit den Sozialgesetzbüchern als Nachschlagewerk",
+      "text": "diskutieren die Auswirkungen eingeschränkter Kommunikationsfähigkeiten und Mobilität auf die gesellschaftliche Teilhabe",
       "typ": "einstellung",
       "bloomVerb": "diskutieren",
       "bloomStufe": 5,
@@ -682,7 +682,7 @@
       "quellzeile": 9992,
       "text": "erläutern die Merkmale eines Frühgeborenen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -694,7 +694,7 @@
       "quellzeile": 9992,
       "text": "erläutern die spezifischen Versorgungsanforderungen im Zusammenhang mit der Wärmeregulation Frühgeborener",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -706,7 +706,7 @@
       "quellzeile": 9992,
       "text": "erläutern die eingeschränkte Bedeutung des APGAR-Tests für Frühgeborene",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -742,7 +742,7 @@
       "quellzeile": 9992,
       "text": "erläutern die Vorgehensweise zur Atemstimmulierung",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -754,7 +754,7 @@
       "quellzeile": 9992,
       "text": "erläutern die per Monitor zu beobachtenden Vitalzeichenparameter beschreiben das Vorgehen bei Monitoralarm infolge von Veränderungen der Vitalzeichen erläutern die in der Frühgeborenenpflege anfallenden Dokumentationsaufgaben erläutern die über die Monitorüberwachung hinausgehenden Möglichkeiten und Anforderungen an eine professionelle Krankenbeobachtung erläutern die Spezifik der Nahrungsaufnahme, Verdauungsvorgänge und Ausscheidungen bei Frühgeborenen beschreiben die Bedienung eines Inkubators beschreiben die Vorbereitung eines Rea-Raumes erläutern Konzepte zur Frühförderung beschreiben Maßnahmen und Vorgehensweisen einer entwicklungsfördernden Pflege",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -790,7 +790,7 @@
       "quellzeile": 9992,
       "text": "erklären die besondere Stoffwechsel- und Verdauungssituation frühgeborener Kinder und leiten daraus Beobachtungsschwerpunkte ab",
       "typ": "koennen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": true,
       "motorisch": false

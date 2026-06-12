@@ -10,7 +10,7 @@
       "quellzeile": 3699,
       "text": "erläutern rechtliche und ethische Aspekte zur Ersten Hilfe beschreiben mögliche Katastrophensituationen, in denen Pflegefachkräfte als professionelle Helfer tätig werden beschreiben den Ablauf einer Basisreanimation (BLS) erklären Prinzipien des Advanced Life Supports (ALS) beschreiben Ursachen und Symptomatik des Kammerflimmerns erläutern Indikationen für eine kardiopulmonale Reanimation erläutern das Wirkungsprinzip automatisierter externer Defibrillation (AED)",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -22,7 +22,7 @@
       "quellzeile": 3699,
       "text": "führen Erste-Hilfemaßnahmen bei Wunden, Blutungen, Sturz, Hitzeerschöpfung, Verbrennungen, Erfrierungen, Verätzungen durch",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -34,7 +34,7 @@
       "quellzeile": 3699,
       "text": "führen lebenserhaltende Sofortmaßnahmen durch",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -106,7 +106,7 @@
       "quellzeile": 3847,
       "text": "erläutern Schockursachen und Schocksysteme",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -118,7 +118,7 @@
       "quellzeile": 3847,
       "text": "erklären Notfallmedikamente und –maßnahmen im Zusammenhang mit Schock erklären die Klink und Therapie eines Herzinfarktes erläutern Reizleitungsstörungen und deren Therapiemöglichkeiten erklären die Bedeutung ausgewählter Elektrolyte für das Herz-Kreislaufsystem erklären Aufbau und Handhabung unterschiedlicher Infusionssysteme erläutern Verwendungszweck und Handhabung eines Perfusors erklären unterschiedliche Möglichkeiten der Sauerstoffgabe erläutern Anzeichen für ein Elektrolytungleichgewicht und ein Flüssigkeitsdefizit",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -154,7 +154,7 @@
       "quellzeile": 3847,
       "text": "führen atemunterstützende Lagerungen durch",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -202,7 +202,7 @@
       "quellzeile": 3991,
       "text": "erläutern die Unterschiede zwischen einem Ileo- und Colostoma und daraus resultierende spezifische Versorgungsanforderungen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -214,7 +214,7 @@
       "quellzeile": 3991,
       "text": "erklären die Wirkungsweisen unterschiedlicher Drainagesysteme",
       "typ": "wissen",
-      "bloomVerb": "erklären",
+      "bloomVerb": "erklaeren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -238,7 +238,7 @@
       "quellzeile": 3991,
       "text": "führen die postoperative Versorgung nach Anlage eines Stomas durch",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -250,7 +250,7 @@
       "quellzeile": 3991,
       "text": "führen einen postoperativen Verbandwechsel im Zusammenhang mit Drainagesystemen durch",
       "typ": "koennen",
-      "bloomVerb": "führen",
+      "bloomVerb": "fuehren",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -310,7 +310,7 @@
       "quellzeile": 10147,
       "text": "stellen das Vorgehen zur Krisenintervention dar",
       "typ": "koennen",
-      "bloomVerb": "stellen",
+      "bloomVerb": "darstellen",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -346,7 +346,7 @@
       "quellzeile": 10290,
       "text": "erläutern Ursachen und Konsequenzen fehlender Spenderorgane",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -370,7 +370,7 @@
       "quellzeile": 10290,
       "text": "erläutern den Ablauf einer postmortalen Organspende",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false
@@ -382,7 +382,7 @@
       "quellzeile": 10290,
       "text": "erläutern Aufgaben und Herausforderungen von Pflegefachkräften bei der Pflege eines hirntoten Menschen",
       "typ": "wissen",
-      "bloomVerb": "erläutern",
+      "bloomVerb": "erlaeutern",
       "bloomStufe": 2,
       "altersbezug": false,
       "motorisch": false

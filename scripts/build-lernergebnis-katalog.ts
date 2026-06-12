@@ -52,14 +52,27 @@ const MOTORISCH_VERBEN = new Set([
 
 const AGE_RE = /aller Altersstufen|Altersgruppen|S(ä|ae)ugling|Neugeboren|Kind(es|er|heit)?|Jugendlich|alte[rn]? Mensch|im Alter|Lebensspanne|Lebensalter/i
 
-function firstVerb(text: string): string {
-  // erstes Wort, das wie ein Verb endet (Infinitiv -en/-n), Sonderzeichen weg
+// Trennbare Verben: leichtes Grundverb am Anfang + Partikel am Satzende -> echtes Verb.
+const SEPARABEL: Record<string, Record<string, string>> = {
+  stellen: { heraus: "herausstellen", dar: "darstellen" },
+  schaetzen: { ein: "einschaetzen" },
+  ordnen: { ein: "einordnen" },
+  legen: { dar: "darlegen" },
+  fassen: { zusammen: "zusammenfassen" },
+  nehmen: { wahr: "wahrnehmen", auf: "aufnehmen" },
+}
+function bestVerb(text: string): string {
   const woerter = text.replace(/^[\s•\-–]+/, "").split(/\s+/)
+  let first = ""
   for (const w of woerter) {
-    const c = w.replace(/[^A-Za-zäöüÄÖÜß]/g, "").toLowerCase()
-    if (c.length > 3 && (c.endsWith("en") || c.endsWith("ln") || c.endsWith("rn"))) return c
+    const c = w.replace(/[^A-Za-zäöüÄÖÜß]/g, "").toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue")
+    if (c.length > 3 && (c.endsWith("en") || c.endsWith("ln") || c.endsWith("rn"))) { first = c; break }
   }
-  return woerter[0]?.replace(/[^A-Za-zäöüÄÖÜß]/g, "").toLowerCase() ?? ""
+  if (first && SEPARABEL[first]) {
+    const last = (woerter[woerter.length - 1] || "").replace(/[^A-Za-zäöüÄÖÜß]/g, "").toLowerCase()
+    if (SEPARABEL[first][last]) return SEPARABEL[first][last]
+  }
+  return first || (woerter[0]?.replace(/[^A-Za-zäöüÄÖÜß]/g, "").toLowerCase() ?? "")
 }
 
 function main() {
@@ -107,7 +120,7 @@ function main() {
       cur = []
       if (text.length < 4) return
       counters[typ]++
-      const verb = firstVerb(text)
+      const verb = bestVerb(text)
       let stufe = BLOOM[verb] ?? (typ === "einstellung" ? 5 : 2)
       if (typ === "einstellung" && EINSTELLUNG_VERBEN.has(verb)) stufe = 5
       const prefix = typ === "wissen" ? "W" : typ === "koennen" ? "K" : "E"
@@ -126,6 +139,13 @@ function main() {
       if (/^K(ö|oe)nnen:?$/i.test(t)) { flush(); typ = "koennen"; continue }
       if (/^Einstellung(en)?:?$/i.test(t)) { flush(); typ = "einstellung"; continue }
       if (t === "Lernergebnisse" || /^\d+$/.test(t) || t === "") continue
+      // Fremdtext, der NICHT zum Lernergebnis gehoert: Methoden-Marker, wiederkehrende
+      // Seiten-/Abschnitts-Header. Aktuelles Bullet abschliessen, Zeile ueberspringen
+      // (verhindert Bleed UND fuegt ueber Seitenumbrueche getrennte Bullets wieder zusammen).
+      if (/^[➢▶]/.test(t) || ceRe.test(t) ||
+          /^(Didaktische|Handlungskompetenzen|Konzeptionsprinzip|Pr(ü|ue)fungsform|Empfohlene|Kompetenzschwerpunkt|Anlagen|Wissenschaftsprinzip|Situationsprinzip)/.test(t)) {
+        flush(); continue
+      }
       if (/^[•]/.test(t)) { flush(); cur.push(t.replace(/^[•\s]+/, "")) }
       else if (cur.length) cur.push(t) // Fortsetzungszeile
     }
