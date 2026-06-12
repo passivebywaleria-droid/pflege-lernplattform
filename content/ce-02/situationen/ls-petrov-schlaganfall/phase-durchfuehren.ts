@@ -856,6 +856,40 @@ export const CE02_SIT_PETROV_SCHLAGANFALL_DURCHFUEHREN: SituationsPhase = {
         ],
       },
     },
+    // Reflexion: Nahrungsverweigerung + Essen im Krankenhaus (Rahmenlehrplan LE8 E2/E3) — Nachzug 2026-06-12
+    {
+      stepId: "ce02-petrov-dur-10-nahrungsverweigerung-reflexion",
+      phase: 4,
+      stepType: "reflection",
+      bloomLevel: 6,
+      kompetenzbereich: "I.1",
+      quellen: ["DNQP Ernährungsmanagement 2017/2024", "Pflege heute Kap. 7 — Ernährung", "§ 630d BGB — Einwilligung"],
+      track: "basis",
+      modus: "schreibtisch",
+      lernziel: "ce02-petrov-dur-nahrungsverweigerung",
+      tag: "pflege",
+      contentC1: {
+        title: "Wenn er nicht essen will — und das Krankenhaus mitisst",
+        body: "Herr Petrov bekommt angedickte Kost, muss langsam essen, hat sich verschluckt. Gut möglich, dass er irgendwann den Löffel wegschiebt. Zwei Spannungen lohnen die Reflexion:\n\n**Nahrungsverweigerung:** Essen ist freiwillig. Ein einwilligungsfähiger Mensch darf ablehnen (§ 630d BGB) — Zwang ist tabu. Aber: Erst die URSACHE klären (Angst vorm Verschlucken? Geschmack der angedickten Kost? Depression nach dem Schlaganfall? Erschöpfung?), dann reagieren — nicht einfach \"er will halt nicht\".\n\n**Essen im Krankenhaus:** Die Rahmenbedingungen erschweren das Essen oft — Zeitdruck, fremde Kost, unbequeme Lage, keine Ruhe. Pflege kann hier viel verbessern (Atmosphäre, Zeit, Vorlieben), stößt aber auch an Grenzen des Systems.",
+        glossarBegriffe: ["Nahrungsverweigerung", "Dysphagie", "Einwilligung"],
+      },
+      contentB1: {
+        title: "Wenn er nicht essen will",
+        body: "Herr Petrov isst angedickte Kost und hat sich verschluckt. Vielleicht will er bald nicht mehr essen. Wichtig:\n\n- **Niemand muss essen.** Ein Mensch darf ablehnen — Zwang ist verboten (§ 630d BGB).\n- Aber: Erst **fragen warum** (Angst? Geschmack? Traurigkeit nach dem Schlaganfall?), dann handeln. Nicht einfach \"er will nicht\".\n- **Essen im Krankenhaus ist schwer:** wenig Zeit, fremdes Essen, keine Ruhe. Du kannst viel besser machen — aber nicht alles.",
+        glossarBegriffe: ["Nahrungsverweigerung", "Dysphagie"],
+      },
+      question: {
+        fragetext: "Herr Petrov schiebt den Löffel weg. Wie denkst du darüber — und was tust du?",
+        reflection: {
+          prompt:
+            "Schreibe 3-5 Sätze: 1) Darf ein Patient das Essen verweigern — und wo ist die Grenze deiner Aufgabe? 2) Welche URSACHEN würdest du bei Herrn Petrov prüfen, bevor du \"er will nicht\" denkst? 3) Was kannst du an der Esssituation im Krankenhaus konkret verbessern — und was nicht?",
+          placeholder:
+            "Verweigern darf er … Bevor ich aufgebe, prüfe ich … Verbessern kann ich … An Grenzen stoße ich bei …",
+          systemPrompt:
+            "Bewerte im Sandwich-Prinzip. Erkennt der Schüler das Selbstbestimmungsrecht (Verweigerung erlaubt, kein Zwang, § 630d BGB) UND die pflegerische Pflicht zur Ursachenklärung (Dysphagie-Angst, Geschmack, Depression, Erschöpfung) statt vorschnellem \"er will nicht\"? Differenziert er die Möglichkeiten (Atmosphäre, Zeit, Vorlieben, Lagerung) von den Systemgrenzen des Krankenhauses? Lob für differenzierte Bloom-6-Reflexion. Niemals abwertend.",
+        },
+      },
+    },
   ],
   optionaleSteps: [],
   geschaetzteDauer: 55,

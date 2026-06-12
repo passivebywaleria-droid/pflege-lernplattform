@@ -562,6 +562,41 @@ export const CE02_SIT_YILMAZ_HUEFT_TEP_DURCHFUEHREN: SituationsPhase = {
         ],
       },
     },
+
+    // Reflexion: Eigenes Bewegungs-/Rückenverhalten (Rahmenlehrplan LE6 #21) — Nachzug 2026-06-12
+    {
+      stepId: "ce02-yilmaz-dur-06b-eigener-rueckenschutz",
+      phase: 4,
+      stepType: "reflection",
+      bloomLevel: 6,
+      kompetenzbereich: "I.1",
+      quellen: ["Kinästhetik (Hatch/Maietta)", "§ 3 ArbSchG — Schutzmaßnahmen des Arbeitgebers"],
+      track: "basis",
+      modus: "schreibtisch",
+      lernziel: "ce02-yilmaz-dur-eigener-rueckenschutz",
+      tag: "pflege",
+      contentC1: {
+        title: "Und dein eigener Rücken?",
+        body: "Du hast Frau Yilmaz heute mehrfach mobilisiert und umgelagert. Kinästhetik schützt nicht nur die Patientin — sie schützt **auch deinen Rücken**: Lasten nah am Körper, aus den Beinen heben statt aus dem Rücken, drehen statt verdrehen, Hilfsmittel und zweite Person nutzen. Rückenbeschwerden sind der häufigste Grund, warum Pflegende den Beruf früh verlassen. Selbstschutz ist kein Egoismus — er ist Voraussetzung dafür, dass du lange gut pflegen kannst.",
+        glossarBegriffe: ["Kinästhetik", "rückenschonendes Arbeiten"],
+      },
+      contentB1: {
+        title: "Und dein eigener Rücken?",
+        body: "Du hast Frau Yilmaz oft bewegt. Kinästhetik schützt nicht nur sie — auch **deinen Rücken**: nah am Körper, aus den Beinen heben, nicht verdrehen, Hilfsmittel und eine zweite Person nutzen. Viele Pflegende hören wegen Rückenschmerzen früh auf. Pass auf dich auf — sonst kannst du irgendwann niemandem mehr helfen.",
+        glossarBegriffe: ["Kinästhetik", "rückenschonendes Arbeiten"],
+      },
+      question: {
+        fragetext: "Wie schützt du deinen eigenen Rücken bei der Arbeit — und tust du es wirklich?",
+        reflection: {
+          prompt:
+            "Schreibe 3-5 Sätze: 1) Achtest du im Alltag/Praktikum auf rückenschonendes Arbeiten — oder hebst du auch mal schnell falsch? 2) Was nimmst du dir konkret vor (Hilfsmittel, zweite Person, Bett hochfahren)? 3) Warum ist Selbstschutz Teil von Professionalität?",
+          placeholder:
+            "Auf meinen Rücken achte ich … Schwierig wird es, wenn … Konkret nehme ich mir vor …",
+          systemPrompt:
+            "Bewerte im Sandwich-Prinzip. Erkennt der Schüler rückenschonende Prinzipien (Last nah am Körper, aus den Beinen heben, nicht verdrehen, Hilfsmittel/zweite Person, Bett auf Arbeitshöhe)? Reflektiert er ehrlich die Lücke zwischen Wissen und Tun unter Zeitdruck? Versteht er Selbstschutz als Teil von Professionalität (nicht als Schwäche)? Lob für Ehrlichkeit. Niemals abwertend.",
+        },
+      },
+    },
   ],
   optionaleSteps: [
     // Step 4.7 (Optional) — WordOrder: Antiemboliestrümpfe anlegen
