@@ -1,4 +1,4 @@
-// CE-02 Thema Mobilisation & Transfer — Wissensbausteine (13 Bausteine, 3 Stufen)
+// CE-02 Thema Mobilisation & Transfer — Wissensbausteine (15 Bausteine, 3 Stufen)
 // Quelle: content/ce-02/themen/mobilisation/bausteine-plan.md
 // Pipeline v9 — 2026-04-23
 // Stufe 1 = Denkfrage (C1 + Vorerfahrung)
@@ -655,6 +655,106 @@ export const CE02_THEMA_MOBILISATION_BAUSTEINE: Wissensbaustein[] = [
       },
     },
     glossarBegriffe: ["Pflegeprozess (nach Fiechter/Meier)", "PESR-Schema", "SMART-Ziel"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 14: wirbelsaeule-aufbau (Bloom 2) — AP-2 LE6 #7/#8 (Bewegungsapparat)
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "mobilisation-wirbelsaeule-aufbau",
+    themaId: "mobilisation",
+    titel: "Die Wirbelsäule: Aufbau, Abschnitte und Pflege-Relevanz",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Drei Fragen, eine Antwort: Warum entsteht am Steißbein so leicht ein Dekubitus? Warum hebst du schwere Lasten 'aus den Knien mit geradem Rücken'? Und warum wird ein Mensch im Alter kleiner?",
+      antwort:
+        "Alle drei hängen am Bau der Wirbelsäule. Kreuz- und Steißbein bilden am unteren Ende einen Knochenvorsprung direkt unter der Haut — in Rückenlage eine Dekubitus-Prädilektionsstelle. Beim Heben aus den Knien bleibt die natürliche Lendenlordose erhalten, die Bandscheiben werden gleichmäßig belastet. Und im Alter nehmen die Bandscheiben weniger Wasser auf, werden flacher — die Körpergröße sinkt. (I Care Anatomie, Kap. 13.7.1)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Die Wirbelsäule (Columna vertebralis) ist das Achsenskelett: 7 Hals- (C1-C7), 12 Brust- (Th1-Th12), 5 Lendenwirbel (L1-L5), Kreuzbein (5 verschmolzene Sakralwirbel) und Steißbein — insgesamt 32-34 Wirbel. Doppel-S-Krümmung: Hals- und Lendenlordose (nach vorn), Brust- und Sakralkyphose (nach hinten). Der Wirbelkanal schützt das Rückenmark, Bandscheiben federn als Stoßdämpfer. Die Krümmungen entstehen erst durch den aufrechten Gang; im Alter verlieren die Bandscheiben Wasser (Körpergröße sinkt, Spondylarthrose). (I Care Anatomie, Kap. 13.7.1)",
+      textB1:
+        "Die Wirbelsäule ist die Mittelsäule des Körpers. Sie hat 7 Halswirbel, 12 Brustwirbel, 5 Lendenwirbel, das Kreuzbein und das Steißbein. Sie ist doppelt-S-förmig gebogen. Innen läuft ein Kanal, der das Rückenmark schützt. Zwischen den Wirbeln liegen Bandscheiben — sie federn wie Stoßdämpfer. Die Biegungen entstehen erst, wenn ein Kind laufen lernt. Im Alter werden die Bandscheiben flacher — der Mensch wird kleiner.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-mob-wb-14-wirbelsaeule",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 2,
+        kompetenzbereich: "I.1",
+        quellen: ["I Care Anatomie, Kap. 13.7.1 (Wirbelsäule / Columna vertebralis)", "I Care Anatomie, Kap. 13 (Bandscheiben, Spondylarthrose)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-mob-wirbelsaeule",
+        tag: "pflege",
+        displayFormat: "stepbystep",
+        contentC1: {
+          title: "Die Wirbelsäule: Aufbau, Abschnitte und Pflege-Relevanz",
+          body: "Die **Wirbelsäule (Columna vertebralis)** ist das **Achsenskelett**: Sie verbindet Kopf, Ober- und Unterkörper, ermöglicht die Rumpfbewegungen und **umschließt schützend das Rückenmark** (I Care Anatomie, Kap. 13.7.1).\n\n**Die 5 Abschnitte (von oben nach unten):**\n- **Halswirbelsäule (HWS):** 7 Halswirbel (C1-C7)\n- **Brustwirbelsäule (BWS):** 12 Brustwirbel (Th1-Th12)\n- **Lendenwirbelsäule (LWS):** 5 Lendenwirbel (L1-L5)\n- **Kreuzbein (Os sacrum):** 5 zu einem Knochen verschmolzene Sakralwirbel — verbindet die Wirbelsäule mit dem Becken\n- **Steißbein (Os coccygis):** 3-5 zurückgebildete Wirbel\n\nInsgesamt **32-34 Wirbel**. Bis auf Atlas (C1) und Axis (C2) folgen alle dem gleichen Bauprinzip: **Wirbelkörper, Wirbelbogen, Dorn- und Querfortsätze, Gelenkfortsätze**. Die übereinanderliegenden Wirbellöcher bilden den **Wirbelkanal**, der das **Rückenmark** enthält. Atlas (ringförmig) und Axis (mit Dens) ermöglichen das **Drehen und Nicken des Kopfes**.\n\n**Die Doppel-S-Form:** Hals- und Lendenwirbelsäule sind nach vorn gekrümmt (**Lordose**), Brust- und Kreuzbein nach hinten (**Kyphose**). *Merkhilfe: Lordose = L = an HaLs und Lende.* Die Krümmungen federn Stöße ab.\n\n**Bandscheiben:** Zwischen den Wirbelkörpern liegen die Bandscheiben als **Stoßdämpfer**. Unter Belastung (Stehen, Sitzen) geben sie Wasser ab — die Körpergröße kann **tagsüber um bis zu 2 cm** abnehmen und regeneriert nachts im Liegen.\n\n**Entwicklung:** Die Krümmungen **entstehen erst durch den aufrechten Gang**. Beim Säugling ist die Wirbelsäule noch relativ gerade (leichte Gesamt-Kyphose). Die Halslordose bildet sich mit der **Kopfkontrolle**, die Lendenlordose mit dem **freien Laufen**.\n\n**Im Alter:** Die Bandscheiben können weniger Wasser aufnehmen, werden **flacher** — die **Körpergröße nimmt ab**, und durch die Mehrbelastung der kleinen Wirbelgelenke entsteht häufig eine **Spondylarthrose** (Verschleiß), die bei Älteren normal ist.\n\n**Pflege-Relevanz:**\n- **Kreuz- und Steißbein** sind Knochenvorsprünge direkt unter der Haut → in Rückenlage eine **Dekubitus-Prädilektionsstelle**\n- **Dein eigener Rücken:** Lasten **aus den Knien mit geradem Rücken** heben — so bleibt die Lendenlordose erhalten und die Bandscheiben werden gleichmäßig belastet (Vorbeugung von Hexenschuss/Bandscheibenschaden)\n- **Bei HWS-Problemen** (nach OP, Rheuma): **keine Überstreckung** des Kopfes (z.B. bei der Haarwäsche) (I Care Anatomie, Kap. 13.7.1)",
+          glossarBegriffe: ["Wirbelsäule (Columna vertebralis)", "Lordose und Kyphose", "Bandscheibe"],
+        },
+        contentB1: {
+          title: "Die Wirbelsäule: Aufbau, Abschnitte und Pflege-Relevanz",
+          body: "Die **Wirbelsäule** ist die Mittelsäule des Körpers. Sie verbindet Kopf, Oberkörper und Unterkörper und **schützt das Rückenmark** (I Care Anatomie, Kap. 13.7.1).\n\n**Die 5 Abschnitte (von oben nach unten):**\n- **Halswirbelsäule:** 7 Halswirbel (C1-C7)\n- **Brustwirbelsäule:** 12 Brustwirbel (Th1-Th12)\n- **Lendenwirbelsäule:** 5 Lendenwirbel (L1-L5)\n- **Kreuzbein:** 5 zusammengewachsene Wirbel — verbindet die Wirbelsäule mit dem Becken\n- **Steißbein:** 3-5 kleine Wirbel-Reste\n\nZusammen sind das **32-34 Wirbel**. Innen bilden die Wirbel einen Kanal — darin liegt das **Rückenmark**. Die obersten zwei Halswirbel (Atlas und Axis) lassen den **Kopf drehen und nicken**.\n\n**Die Doppel-S-Form:** Hals und Lende sind nach vorn gebogen (**Lordose**), Brust und Kreuzbein nach hinten (**Kyphose**). *Merke: Lordose = L = HaLs und Lende.* Die Biegung federt Stöße ab.\n\n**Bandscheiben:** Zwischen den Wirbeln liegen Bandscheiben — sie federn wie **Stoßdämpfer**. Tagsüber drückt es Wasser heraus (man wird bis zu 2 cm kleiner), nachts füllen sie sich wieder.\n\n**Entwicklung:** Die Biegungen kommen erst, wenn das Kind **aufrecht geht**. Ein Baby hat eine fast gerade Wirbelsäule. Die Halsbiegung kommt mit dem **Kopfhalten**, die Lendenbiegung mit dem **Laufen**.\n\n**Im Alter:** Die Bandscheiben werden **flacher** — der Mensch wird kleiner, und die kleinen Gelenke nutzen sich ab (Spondylarthrose).\n\n**Wichtig für die Pflege:**\n- **Kreuz- und Steißbein** stehen unter der Haut hervor → in Rückenlage **Dekubitus-Gefahr**\n- **Dein Rücken:** schwer heben **aus den Knien mit geradem Rücken**\n- **Bei HWS-Problemen:** den Kopf **nicht überstrecken**",
+          glossarBegriffe: ["Wirbelsäule (Columna vertebralis)", "Lordose und Kyphose", "Bandscheibe"],
+        },
+      },
+    },
+    glossarBegriffe: ["Wirbelsäule (Columna vertebralis)", "Lordose und Kyphose", "Bandscheibe"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 15: gelenklehre (Bloom 2) — AP-2 LE6 #10 (Gelenktypen, Bewegungsebenen)
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "mobilisation-gelenklehre",
+    themaId: "mobilisation",
+    titel: "Gelenke: Typen und Bewegungen — Grundlage für Mobilisation",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Warum kann die Schulter in alle Richtungen kreisen, das Knie aber nur beugen und strecken? Und warum brauchst du Begriffe wie 'Flexion' oder 'Abduktion', wenn du eine Bewegungsübung dokumentierst?",
+      antwort:
+        "Die Bewegungsfreiheit hängt vom Gelenktyp ab: Das Schultergelenk ist ein Kugelgelenk (3 Achsen, alle Richtungen), Knie und Ellenbogen sind Scharniergelenke (1 Achse, nur beugen/strecken). Die Fachbegriffe beschreiben Bewegungen eindeutig — wichtig für Dokumentation, Bewegungsausmaß und Kontrakturprophylaxe. (I Care Anatomie, Kap. 13)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Echte Gelenke werden nach Form in 6 Typen eingeteilt: Kugelgelenk (Schulter/Hüfte, 3 Achsen), Scharniergelenk (Knie/Ellenbogen, 1 Achse), Sattelgelenk (Daumen), Eigelenk (Handgelenk), Radgelenk (Drehung Elle/Speiche), planes Gelenk (Wirbelbogengelenke). Straffe Gelenke (Amphiarthrosen) sind kaum beweglich (z.B. Kreuzbein-Darmbein-Gelenk). Bewegungen heißen u.a. Flexion/Extension, Abduktion/Adduktion, Pronation/Supination — sie laufen in der Sagittal-, Frontal- oder Transversalebene ab. (I Care Anatomie, Kap. 13)",
+      textB1:
+        "Gelenke gibt es in 6 Formen. Das Kugelgelenk (Schulter, Hüfte) bewegt in alle Richtungen. Das Scharniergelenk (Knie, Ellenbogen) beugt und streckt nur. Es gibt auch Sattel-, Ei-, Rad- und plane Gelenke. Manche Gelenke sind sehr fest und bewegen kaum (straffe Gelenke). Bewegungen haben Fachnamen: Flexion = beugen, Extension = strecken, Abduktion = abspreizen, Adduktion = heranführen. So kannst du Bewegungen genau aufschreiben.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-mob-wb-15-gelenke",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 2,
+        kompetenzbereich: "I.1",
+        quellen: ["I Care Anatomie, Kap. 13 (Gelenktypen, Tab. 13.1 Bewegungen, Tab. 13.2 Gelenktypen)", "I Care Anatomie, Kap. 1 (Körperebenen)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-mob-gelenklehre",
+        tag: "pflege",
+        displayFormat: "stepbystep",
+        contentC1: {
+          title: "Gelenke: Typen und Bewegungen",
+          body: "Gelenke verbinden Knochen beweglich. Wie weit und in welche Richtung sich ein Gelenk bewegen lässt, hängt von seiner **Form** ab (I Care Anatomie, Kap. 13).\n\n**Die 6 Typen echter Gelenke (mit Gelenkspalt):**\n- **Kugelgelenk** — z.B. Schulter, Hüfte. **3 Bewegungsachsen** → größte Beweglichkeit (in alle Richtungen)\n- **Scharniergelenk** — z.B. Knie, Ellenbogen, Fingergelenke. **1 Achse** → nur Beugen und Strecken\n- **Sattelgelenk** — z.B. Daumengrundgelenk\n- **Eigelenk** — z.B. Handgelenk\n- **Radgelenk** — z.B. zwischen Elle und Speiche → Drehbewegung (Unterarm)\n- **Planes Gelenk** — z.B. Wirbelbogengelenke → kleine Verschiebungen\n\n**Straffe Gelenke (Amphiarthrosen):** durch viele straffe Bänder fest fixiert, kaum beweglich — z.B. das **Kreuzbein-Darmbein-Gelenk**.\n\n**Bewegungen haben Fachbegriffe (I Care, Tab. 13.1):**\n- **Flexion** (Beugen) / **Extension** (Strecken)\n- **Abduktion** (Abspreizen vom Körper weg) / **Adduktion** (Heranführen zum Körper)\n- **Pronation** (Einwärtsdrehung) / **Supination** (Auswärtsdrehung)\n- **Anteversion/Retroversion** (Anheben nach vorn/hinten); **Inklination/Reklination** (Wirbelsäule vor-/zurückneigen)\n\n**Bewegungsebenen:** Eine Bewegung läuft in einer der drei Körperebenen ab — **Sagittalebene** (vorne-hinten), **Frontalebene** (seitlich), **Transversalebene** (Drehung um die Längsachse).\n\n**Pflege-Relevanz:**\n- **Bewegungsübungen** (aktiv/passiv) zur **Kontrakturprophylaxe**: jedes Gelenk in seinem **physiologischen Bewegungsausmaß** bewegen — nie gegen die natürliche Achse\n- **Dokumentation:** eindeutige Begriffe ('Knie 0-90° Flexion') statt 'Bein bewegt'\n- **Transfer und Kinästhetik:** Bewegungen entlang der natürlichen Gelenkachsen führen — das schützt Patient und deinen Rücken (I Care Anatomie, Kap. 13)",
+          glossarBegriffe: ["Gelenktypen", "Bewegungsebenen", "Amphiarthrose (straffes Gelenk)"],
+        },
+        contentB1: {
+          title: "Gelenke: Typen und Bewegungen",
+          body: "Gelenke verbinden Knochen so, dass sie sich bewegen können. Wie weit und wohin sich ein Gelenk bewegt, hängt von seiner **Form** ab (I Care Anatomie, Kap. 13).\n\n**Die 6 Gelenk-Formen:**\n- **Kugelgelenk** — Schulter, Hüfte. Bewegt **in alle Richtungen**\n- **Scharniergelenk** — Knie, Ellenbogen. **Nur beugen und strecken**\n- **Sattelgelenk** — Daumen\n- **Eigelenk** — Handgelenk\n- **Radgelenk** — Unterarm (Drehen)\n- **Planes Gelenk** — kleine Wirbelgelenke (kleine Verschiebung)\n\n**Straffe Gelenke** sind sehr fest und bewegen kaum — zum Beispiel das **Kreuzbein-Darmbein-Gelenk**.\n\n**Bewegungen haben Fachnamen:**\n- **Flexion** = beugen / **Extension** = strecken\n- **Abduktion** = vom Körper wegspreizen / **Adduktion** = an den Körper heranführen\n- **Pronation/Supination** = nach innen/außen drehen\n\n**Bewegungsebenen:** vorne-hinten (Sagittal), seitlich (Frontal), Drehung (Transversal).\n\n**Wichtig für die Pflege:**\n- **Bewegungsübungen** gegen **Kontrakturen** (Versteifung): jedes Gelenk in seinem normalen Umfang bewegen — **nie gegen die natürliche Richtung**\n- **Aufschreiben** mit klaren Begriffen ('Knie 0-90° Flexion')\n- **Beim Transfer**: Gelenke in ihre natürliche Richtung bewegen — das schützt den Patienten und deinen Rücken",
+          glossarBegriffe: ["Gelenktypen", "Bewegungsebenen", "Amphiarthrose (straffes Gelenk)"],
+        },
+      },
+    },
+    glossarBegriffe: ["Gelenktypen", "Bewegungsebenen", "Amphiarthrose (straffes Gelenk)"],
     karteikarten: [],
   },
 ];

@@ -317,4 +317,64 @@ export const CE02_THEMA_MOBILISATION_GLOSSAR: GlossarEntry[] = [
     uebersetzungAr: "الموافقة على العلاج",
     istB1Alltagswort: false,
   },
+  {
+    begriff: "Wirbelsäule (Columna vertebralis)",
+    erklaerung:
+      "Achsenskelett des Rumpfes aus 32-34 Wirbeln: 7 Hals- (C1-C7), 12 Brust- (Th1-Th12), 5 Lendenwirbel (L1-L5), Kreuzbein (5 verschmolzene Sakralwirbel) und Steißbein. Sie umschließt im Wirbelkanal schützend das Rückenmark und ist doppel-S-förmig gekrümmt (Hals-/Lendenlordose, Brust-/Sakralkyphose). (I Care Anatomie, Kap. 13.7.1)",
+    erklaerungB1:
+      "Die Mittelsäule des Körpers aus vielen Wirbeln: 7 Hals-, 12 Brust-, 5 Lendenwirbel, dazu Kreuzbein und Steißbein. Innen schützt sie das Rückenmark. Sie ist doppelt-S-förmig gebogen.",
+    uebersetzungTr: "Omurga (columna vertebralis)",
+    uebersetzungAr: "العمود الفقري",
+    istB1Alltagswort: false,
+  },
+  {
+    begriff: "Lordose und Kyphose",
+    erklaerung:
+      "Die natürlichen Krümmungen der Wirbelsäule. Lordose = Krümmung nach vorn (an Hals- und Lendenwirbelsäule). Kyphose = Krümmung nach hinten (an Brustwirbelsäule und Kreuzbein). Zusammen ergeben sie die federnde Doppel-S-Form. Merkhilfe: Lordose = L = an HaLs und Lende. (I Care Anatomie, Kap. 13.7.1)",
+    erklaerungB1:
+      "Die Biegungen der Wirbelsäule. Lordose = Biegung nach vorn (Hals und Lende). Kyphose = Biegung nach hinten (Brust und Kreuzbein). Zusammen ergeben sie die Doppel-S-Form, die Stöße abfedert.",
+    uebersetzungTr: "Lordoz ve kifoz",
+    uebersetzungAr: "القعس والحدب (تقوّسات العمود الفقري)",
+    istB1Alltagswort: false,
+  },
+  {
+    begriff: "Bandscheibe",
+    erklaerung:
+      "Knorpeliges Polster zwischen zwei Wirbelkörpern, das als Stoßdämpfer wirkt. Unter Belastung gibt sie Wasser ab (Körpergröße sinkt tagsüber um bis zu 2 cm), im Liegen nimmt sie wieder Flüssigkeit auf. Im Alter sinkt diese Fähigkeit — die Bandscheiben werden flacher (Chondrose), die Körpergröße nimmt ab. (I Care Anatomie, Kap. 13)",
+    erklaerungB1:
+      "Ein weiches Polster zwischen zwei Wirbeln — wie ein Stoßdämpfer. Tagsüber drückt es Wasser heraus (man wird etwas kleiner), nachts füllt es sich wieder. Im Alter werden die Bandscheiben flacher.",
+    uebersetzungTr: "Disk (omurlar arası kıkırdak)",
+    uebersetzungAr: "القرص الفقري (الديسك)",
+    istB1Alltagswort: false,
+  },
+  {
+    begriff: "Gelenktypen",
+    erklaerung:
+      "Echte Gelenke werden nach Form in 6 Typen eingeteilt: Kugelgelenk (Schulter/Hüfte, 3 Achsen), Scharniergelenk (Knie/Ellenbogen, 1 Achse), Sattelgelenk (Daumen), Eigelenk (Handgelenk), Radgelenk (Drehung Elle/Speiche) und planes Gelenk (Wirbelbogengelenke). Der Typ bestimmt Richtung und Ausmaß der Bewegung. (I Care Anatomie, Kap. 13)",
+    erklaerungB1:
+      "Es gibt 6 Gelenk-Formen: Kugelgelenk (Schulter, Hüfte — alle Richtungen), Scharniergelenk (Knie, Ellenbogen — nur beugen/strecken), Sattelgelenk, Eigelenk, Radgelenk und planes Gelenk. Die Form bestimmt, wie das Gelenk sich bewegt.",
+    uebersetzungTr: "Eklem tipleri",
+    uebersetzungAr: "أنواع المفاصل",
+    istB1Alltagswort: false,
+  },
+  {
+    begriff: "Bewegungsebenen",
+    erklaerung:
+      "Die drei Körperebenen, in denen Bewegungen stattfinden: Sagittalebene (teilt den Körper in links/rechts — Beuge-/Streckbewegungen), Frontalebene (teilt in vorn/hinten — Ab-/Adduktion), Transversalebene (teilt in oben/unten — Drehbewegungen um die Längsachse). (I Care Anatomie, Kap. 1)",
+    erklaerungB1:
+      "Die drei Richtungen, in denen sich der Körper bewegt: vorne-hinten (Sagittal), seitlich (Frontal) und Drehung (Transversal). Mit diesen Ebenen beschreibt man Bewegungen genau.",
+    uebersetzungTr: "Hareket düzlemleri",
+    uebersetzungAr: "مستويات الحركة",
+    istB1Alltagswort: false,
+  },
+  {
+    begriff: "Amphiarthrose (straffes Gelenk)",
+    erklaerung:
+      "Echtes Gelenk, das durch viele straffe Bänder und eine eng anliegende Kapsel so stark fixiert ist, dass es nur einen sehr geringen Bewegungsspielraum hat. Beispiele: Kreuzbein-Darmbein-Gelenk, Zwischengelenke der Hand- und Fußwurzel. Von der Bauart meist plane Gelenke. (I Care Anatomie, Kap. 13)",
+    erklaerungB1:
+      "Ein Gelenk, das durch feste Bänder fast nicht beweglich ist. Zum Beispiel das Gelenk zwischen Kreuzbein und Darmbein. Man nennt es auch 'straffes Gelenk'.",
+    uebersetzungTr: "Amfiartroz (sıkı eklem)",
+    uebersetzungAr: "المفصل شبه الثابت",
+    istB1Alltagswort: false,
+  },
 ];
