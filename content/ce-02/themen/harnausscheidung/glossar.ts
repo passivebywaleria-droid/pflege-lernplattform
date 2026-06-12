@@ -185,4 +185,22 @@ export const CE02_THEMA_HARNAUSSCHEIDUNG_GLOSSAR: GlossarEntry[] = [
     uebersetzungTr: "Pollakiüri",
     uebersetzungAr: "تكرار التبوّل",
   },
+  {
+    begriff: "Sauberkeitsentwicklung",
+    erklaerung:
+      "Entwicklungsprozess, in dem ein Kind lernt, Blasen- und Darmentleerung wahrzunehmen und willentlich zu steuern (Sauberwerden). Beginnt im 2.-3. Lebensjahr, tagsüber meist mit 3 Jahren beherrscht, nachts oft erst mit 4-5 Jahren. Setzt körperliche Reife und seelische Bereitschaft voraus; Druck und zu früher Beginn wirken hinderlich. (Hoehl/Kullick, Kap. 15.4.1)",
+    erklaerungB1:
+      "Wie ein Kind lernt, trocken zu werden — also aufs Töpfchen oder Klo zu gehen. Das geht meist mit 2-3 Jahren los (tagsüber), nachts oft erst mit 4-5 Jahren. Wichtig: kein Druck, jedes Kind ist anders.",
+    uebersetzungTr: "tuvalet eğitimi / temizlik gelişimi",
+    uebersetzungAr: "تطوّر التحكّم في الإخراج",
+  },
+  {
+    begriff: "Enuresis",
+    erklaerung:
+      "Unwillkürliches Einnässen bei Kindern ab einem Alter, in dem normalerweise Blasenkontrolle besteht (ab ca. 5 Jahren). Primäre Enuresis: das Kind war nie trocken. Sekundäre Enuresis: erneutes Einnässen nach einer mindestens halbjährigen trockenen Phase. Erfordert ärztliche Ursachenabklärung. (Hoehl/Kullick, Kap. 15.4.1)",
+    erklaerungB1:
+      "Wenn ein Kind ab etwa 5 Jahren noch einnässt. Entweder war es nie trocken, oder es nässt nach einer trockenen Zeit wieder ein. Dann sollte ein Arzt nach der Ursache schauen.",
+    uebersetzungTr: "enürezis (gece/gündüz altını ıslatma)",
+    uebersetzungAr: "التبوّل اللاإرادي (سلس البول لدى الأطفال)",
+  },
 ];

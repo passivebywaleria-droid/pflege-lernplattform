@@ -158,4 +158,31 @@ export const CE02_THEMA_SAEUGLINGSPFLEGE_GLOSSAR: GlossarEntry[] = [
     uebersetzungTr: "mekonyum / ilk dışkı",
     uebersetzungAr: "العقي (al-ʿaqy)",
   },
+  {
+    begriff: "Kopfkontrolle",
+    erklaerung:
+      "Fähigkeit des Säuglings, den Kopf selbst zu halten. Entwickelt sich um den 3. Lebensmonat: Das Kind hält den Kopf in Bauchlage über längere Zeit (45-90°) und stützt sich auf die Unterarme. Bis dahin müssen Kopf und Nacken bei jedem Transfer gestützt werden (Nacken-Rücken-Griff). (Pflege heute, Kap. 18.2)",
+    erklaerungB1:
+      "Wenn das Baby den Kopf selbst halten kann. Das lernt es mit etwa 3 Monaten. Vorher musst du beim Tragen immer den Kopf und Nacken stützen.",
+    uebersetzungTr: "baş kontrolü",
+    uebersetzungAr: "التحكم في الرأس",
+  },
+  {
+    begriff: "Pinzettengriff",
+    erklaerung:
+      "Feinmotorische Fähigkeit, einen Gegenstand gezielt zwischen Daumen und Zeigefinger zu halten. Entwickelt sich um den 9. Lebensmonat, nach dem gröberen palmaren Greifen (mit der ganzen Hand). Wichtiger Entwicklungsschritt der Hand-Auge-Koordination. (Pflege heute, Kap. 18.2)",
+    erklaerungB1:
+      "Wenn das Baby etwas mit Daumen und Zeigefinger greifen kann — wie mit einer Pinzette. Das lernt es mit etwa 9 Monaten. Vorher greift es mit der ganzen Hand.",
+    uebersetzungTr: "kıskaç tutuşu (parmak ucu kavraması)",
+    uebersetzungAr: "قبضة الكماشة (الإبهام والسبابة)",
+  },
+  {
+    begriff: "Entwicklungskorridor",
+    erklaerung:
+      "Zeitspanne, innerhalb derer ein Entwicklungsschritt normalerweise erreicht wird. Der Begriff ersetzt die früher üblichen festen 'Meilensteine', weil der zeitliche Verlauf individuell sehr unterschiedlich ist und manche Schritte (z.B. Krabbeln) übersprungen werden. Erst deutliche, anhaltende Abweichungen sind auffällig. (Pflege heute, Kap. 18.2)",
+    erklaerungB1:
+      "Eine Zeitspanne, in der ein Kind etwas Neues lernt — zum Beispiel Sitzen oder Laufen. Man sagt heute 'Korridor' statt fester Termin, weil jedes Kind anders ist. Nur große, anhaltende Abweichungen sind ein Warnzeichen.",
+    uebersetzungTr: "gelişim koridoru",
+    uebersetzungAr: "نطاق النمو",
+  },
 ];

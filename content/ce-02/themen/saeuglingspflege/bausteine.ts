@@ -1,4 +1,4 @@
-// CE-02 Thema Säuglingspflege — Wissensbausteine (19 Bausteine, 3 Stufen)
+// CE-02 Thema Säuglingspflege — Wissensbausteine (20 Bausteine, 3 Stufen)
 // Quelle: content/ce-02/themen/saeuglingspflege/bausteine-plan.md
 // Pipeline v9 — 2026-04-23
 // Stufe 1 = Denkfrage (starke Schüler)
@@ -954,6 +954,56 @@ export const CE02_THEMA_SAEUGLINGSPFLEGE_BAUSTEINE: Wissensbaustein[] = [
       },
     },
     glossarBegriffe: [],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 20: sensomotorische-meilensteine (Bloom 2) — AP-3 LE6 (Alters-Breite Säugling)
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "saeuglingspflege-sensomotorische-meilensteine",
+    themaId: "saeuglingspflege",
+    titel: "Sensomotorische Meilensteine im 1. Lebensjahr",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Ein Vater sorgt sich, weil sein 10 Monate altes Baby noch nicht krabbelt, das Nachbarskind aber schon. Ab wann ist eine Abweichung wirklich auffällig — und warum spricht man heute lieber von 'Korridoren' als von festen Meilensteinen?",
+      antwort:
+        "Der zeitliche Verlauf ist individuell sehr unterschiedlich, darum spricht man heute von Entwicklungskorridoren statt fixer Meilensteine — manche Kinder überspringen z.B. das Krabbeln. Grobe Orientierung: 3 Monate Kopfkontrolle, 6 Monate Drehen, 9-10 Monate freies Sitzen/Krabbeln, 12 Monate Laufen mit Festhalten, 18 Monate freies Laufen. Erst deutliche, anhaltende Abweichungen sind auffällig — dafür gibt es die U-Untersuchungen. (Pflege heute, Kap. 18.2)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Die kindliche Motorik reift von oben nach unten (erst Kopf, dann Rumpf, dann Beine). Grobe Korridore: 6 Wo. Kopf kurz anheben · 3 Mon. Kopfkontrolle/Unterarmstütz · 5 Mon. Sitzen mit Stütze · 6 Mon. Drehen Bauch↔Rücken, palmares Greifen · 9-10 Mon. freies Sitzen, Krabbeln, Pinzettengriff · 12 Mon. Laufen mit Festhalten · 14 Mon. freies Stehen · 18 Mon. freies Laufen. Heute spricht man von Entwicklungskorridoren, nicht von festen Meilensteinen — der Verlauf ist individuell. Sensorik (Sehen) reift parallel. (Pflege heute, Kap. 18.2)",
+      textB1:
+        "Ein Baby lernt Bewegungen von oben nach unten: erst den Kopf, dann den Rumpf, dann die Beine. Ungefähr: 3 Monate Kopf halten · 6 Monate sich drehen und greifen · 9-10 Monate frei sitzen und krabbeln · 12 Monate an der Hand laufen · 18 Monate allein laufen. Wichtig: Jedes Kind ist anders. Man spricht von Korridoren, nicht von festen Terminen. Manche Babys krabbeln gar nicht.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-saeuglingspflege-wb-20-meilensteine",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 2,
+        kompetenzbereich: "I.1",
+        quellen: ["Pflege heute (7. Aufl.), Kap. 18.2 (Physiologische Entwicklung, motorische und sensorische Entwicklung, Abb. 18.11)", "Hoehl/Kullick: Gesundheits- und Kinderkrankenpflege"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-saeuglingspflege-meilensteine",
+        tag: "pflege",
+        displayFormat: "stepbystep",
+        contentC1: {
+          title: "Sensomotorische Meilensteine im 1. Lebensjahr",
+          body: "Im ersten Lebensjahr reift das Nervensystem rasant: Die **Primitivreflexe** verschwinden und werden von bewusst gesteuerten Bewegungen abgelöst. Die Entwicklung verläuft **von oben nach unten** — erst Kopf, dann Rumpf, dann Beine. Wichtig: Säuglinge leiten ihre Entwicklungsschritte durch **Üben selbst ein** (angeborener Bewegungsdrang) — man kann sie nicht 'beschleunigen'.\n\n**Grobe motorische Korridore (nach Pflege heute, Abb. 18.11):**\n- **6 Wochen:** hebt den Kopf in Bauchlage kurz an\n- **3 Monate:** **Kopfkontrolle** — hält Kopf in Bauchlage länger (45-90°), stützt sich auf die Unterarme (Unterarmstütz)\n- **5 Monate:** sitzt mit Unterstützung\n- **6 Monate:** dreht sich vom Bauch auf den Rücken und zurück, **greift palmar** (mit ganzer Hand), erforscht Dinge mit dem Mund\n- **9 Monate:** steht mit Festhalten, beginnt frei zu sitzen und zu krabbeln; **Pinzettengriff** (Daumen + Zeigefinger)\n- **10 Monate:** sitzt frei und krabbelt\n- **12 Monate:** läuft mit Festhalten an einer Hand oder an Möbeln entlang\n- **14 Monate:** steht ohne Unterstützung\n- **18 Monate:** läuft frei ohne Hilfe\n\n**Wichtig — Korridore statt fixer Termine:** Der zeitliche Verlauf ist **individuell sehr unterschiedlich**. Heute spricht man eher von **Entwicklungskorridoren** als von fest verankerten 'Meilensteinen'. Manche Säuglinge überspringen z.B. das Krabbeln. Erst **deutliche, anhaltende** Abweichungen sind auffällig — sie werden in den **U-Untersuchungen** erfasst.\n\n**Sensorik reift parallel:** Mit 3 Monaten folgt das Kind bewegten Objekten mit den Augen, mit 4-6 Monaten ist das räumliche Sehen gut entwickelt, mit etwa einem Jahr erreicht die Sehschärfe Erwachsenen-Niveau. Mehr Bewegung erweitert die Wahrnehmung — und bessere Wahrnehmung fördert die Motorik.\n\n**Was heißt das fürs Handling?** Solange die Kopfkontrolle fehlt (bis ca. 3-4 Monate), wird **Kopf und Nacken immer gestützt** (Nacken-Rücken-Griff). Generell gilt **Infant Handling**: das Kind über die Seite **rollen statt gerade hochziehen**, nie an den Beinen hochziehen — so spürt es seine eigene Bewegung und lernt mit. (Pflege heute, Kap. 18.2; Hoehl/Kullick)",
+          glossarBegriffe: ["Kopfkontrolle", "Pinzettengriff", "Entwicklungskorridor", "Nacken-Rücken-Griff"],
+        },
+        contentB1: {
+          title: "Sensomotorische Meilensteine im 1. Lebensjahr",
+          body: "Im ersten Lebensjahr lernt ein Baby sehr schnell. Das Gehirn reift. Die **frühen Reflexe** verschwinden, und das Kind bewegt sich immer mehr mit Absicht. Die Entwicklung geht **von oben nach unten**: erst Kopf, dann Rumpf, dann Beine. Das Baby übt von selbst — man kann es nicht schneller machen.\n\n**Grobe Zeit-Korridore (Pflege heute, Abb. 18.11):**\n- **6 Wochen:** hebt den Kopf in Bauchlage kurz an\n- **3 Monate:** **hält den Kopf** (Kopfkontrolle), stützt sich auf die Unterarme\n- **5 Monate:** sitzt mit Hilfe\n- **6 Monate:** dreht sich vom Bauch auf den Rücken, **greift mit der ganzen Hand**, steckt Dinge in den Mund\n- **9 Monate:** steht mit Festhalten, sitzt frei, krabbelt; **Pinzettengriff** (Daumen + Zeigefinger)\n- **10 Monate:** sitzt frei und krabbelt\n- **12 Monate:** läuft an der Hand oder an Möbeln entlang\n- **14 Monate:** steht allein\n- **18 Monate:** läuft allein\n\n**Wichtig:** Jedes Kind ist **anders**. Man sagt heute **Korridor**, nicht festen Termin. Manche Babys krabbeln nie. Nur **deutliche** und **anhaltende** Abweichungen sind auffällig — dafür gibt es die **U-Untersuchungen**.\n\n**Das Sehen reift mit:** Mit 3 Monaten folgt das Baby Dingen mit den Augen. Mit einem Jahr sieht es fast so gut wie ein Erwachsener.\n\n**Was heißt das fürs Tragen?** Solange das Baby den Kopf nicht hält (bis ca. 3-4 Monate): **immer Kopf und Nacken stützen** (Nacken-Rücken-Griff). Allgemein: das Kind **über die Seite rollen, nicht gerade hochziehen**, nie an den Beinen ziehen.",
+          glossarBegriffe: ["Kopfkontrolle", "Pinzettengriff", "Entwicklungskorridor", "Nacken-Rücken-Griff"],
+        },
+      },
+    },
+    glossarBegriffe: ["Kopfkontrolle", "Pinzettengriff", "Entwicklungskorridor", "Nacken-Rücken-Griff"],
     karteikarten: [],
   },
 ];

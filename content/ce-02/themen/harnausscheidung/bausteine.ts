@@ -1,4 +1,4 @@
-// CE-02 Thema Harnausscheidung & Inkontinenz — Wissensbausteine (19 Bausteine, 3 Stufen)
+// CE-02 Thema Harnausscheidung & Inkontinenz — Wissensbausteine (20 Bausteine, 3 Stufen)
 // Quelle: content/ce-02/themen/harnausscheidung/bausteine-plan.md
 // Pipeline v9 — 2026-04-23
 // Stufe 1 = Denkfrage (starke Schüler, Bloom ≥3)
@@ -955,6 +955,56 @@ export const CE02_THEMA_HARNAUSSCHEIDUNG_BAUSTEINE: Wissensbaustein[] = [
       },
     },
     glossarBegriffe: ["Miktionsprotokoll", "Kontinenzprofil", "Inkontinenz"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 20: sauberkeitsentwicklung (Bloom 2) — AP-3 LE9 (kindliche Sauberkeitsentwicklung)
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "harnausscheidung-sauberkeitsentwicklung",
+    themaId: "harnausscheidung",
+    titel: "Kindliche Sauberkeitsentwicklung: Trockenwerden",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Ein 2,5-jähriges Kind, das zu Hause schon 'trocken' war, nässt im Krankenhaus plötzlich wieder ein. Die Mutter ist beunruhigt. Wie ordnest du das ein — und ab wann ist Einnässen wirklich abklärungsbedürftig?",
+      antwort:
+        "Sauberwerden ist ein Entwicklungsprozess (körperliche UND seelische Reife), beginnt im 2.-3. Lebensjahr und ist meist mit 3 Jahren tagsüber beherrscht — mit individuellen Unterschieden. Vorübergehendes Wiedereinnässen in Ausnahmesituationen (Krankenhaus, Geschwisterkind) ist eine normale Regression. Abklärungsbedürftig: Kinder ab 5 Jahren, die nie sauber waren, oder ein Rückfall nach längerer trockener Phase → ärztliche Abklärung. (Hoehl/Kullick, Kap. 15.4.1)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Sauberkeitsgewöhnung beginnt im 2.-3. Lebensjahr (wenn das Kind Blasenfüllung/Stuhldrang wahrnimmt), meist mit 3 Jahren tagsüber beherrscht, nachts oft erst mit 4-5 Jahren — individuell verschieden. Förderlich: gelassene Eltern, gute Beziehung, kein Druck, kein Schimpfen/Strafen, kein übermäßiges Lob (Ausscheiden ist normal). Trinkmenge nie reduzieren. Wiedereinnässen in Ausnahmesituationen ist normal. Zum Arzt: ab 5 Jahren primär inkontinent oder Rückfall nach trockener Phase. (Hoehl/Kullick, Kap. 15.4.1)",
+      textB1:
+        "Ein Kind wird meist mit 2-3 Jahren tagsüber trocken, nachts oft erst mit 4-5 Jahren. Jedes Kind ist anders. Wichtig: kein Druck, kein Schimpfen, kein großes Lob — aufs Klo gehen ist normal. Trinkmenge nie kleiner machen. Wenn ein Kind im Krankenhaus oder nach der Geburt eines Geschwisters wieder einnässt, ist das normal. Zum Arzt: Kinder ab 5 Jahren, die nie trocken waren oder plötzlich wieder einnässen.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-harn-wb-20-sauberkeit",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 2,
+        kompetenzbereich: "I.1",
+        quellen: ["Hoehl/Kullick: Gesundheits- und Kinderkrankenpflege, Kap. 15.4.1 (Sauberkeitsgewöhnung) + Entwicklungstabelle Selbstständigkeit"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-harn-sauberkeitsentwicklung",
+        tag: "pflege",
+        displayFormat: "stepbystep",
+        contentC1: {
+          title: "Kindliche Sauberkeitsentwicklung: Trockenwerden",
+          body: "Trockenwerden ist keine Leistung, die man 'antrainieren' kann, sondern ein **Entwicklungsprozess**. Voraussetzung sind **körperliche Reife** (das Kind nimmt die Blasenfüllung und den Stuhldrang wahr und kann den Schließmuskel steuern) **und seelische Bereitschaft**.\n\n**Zeitlicher Korridor (individuell verschieden):**\n- **ab ~24 Monaten:** Die Eltern können mit dem Toilettentraining beginnen; das Kind nimmt Blasen-/Stuhldrang allmählich wahr\n- **ab ~30 Monaten:** Das Kind benutzt das Töpfchen selbst, braucht aber noch Hilfe beim Abputzen\n- **ab ~3 Jahren:** tagsüber oft trocken, setzt sich selbst auf die Toilette — die Sauberkeitsgewöhnung ist in der Regel mit 3 Jahren beherrscht\n- **ab ~4 Jahren:** evtl. auch **nachts trocken**, putzt sich selbstständig ab und spült\n- **ab ~5 Jahren:** ausgeprägtes **Schamgefühl** — das Kind möchte nicht mehr von anderen im Genitalbereich gewaschen werden\n\n**Wie Eltern (und Pflege) unterstützen:**\n- **Gelassene Haltung** und eine **gute Eltern-Kind-Beziehung** wirken förderlich\n- **Kein Druck, kein zu früher Beginn** — beides verlangsamt den Lernprozess und kann zu Entwicklungsstörungen führen\n- **Nicht schimpfen oder strafen**, wenn das Kind sich zu spät gemeldet hat\n- Bei Erfolg **kein übermäßiges Lob** — das signalisiert dem Kind, dass Ausscheiden ein **ganz normaler Vorgang** ist\n- **Baumwollwindeln/-tücher** in die Windel legen, damit das Kind die unangenehme **nasse Windel wahrnimmt**\n- **Trinkmengen niemals reduzieren** — Kinder brauchen ausreichend Flüssigkeit\n\n**Regression ist normal:** Auch ein längst sauberes Kind kann in **Ausnahmesituationen** (Krankenhausaufenthalt, Geburt eines Geschwisterkindes) **vorübergehend wieder einnässen**. Das ist kein Rückschritt der Erziehung, sondern eine Stressreaktion.\n\n**Wann zum Arzt?** Kinder ab **5 Jahren**, die **nie sauber** waren (primäre Inkontinenz), oder die nach einer trockenen Phase **wieder einnässen**, sollten einem Arzt vorgestellt werden, um die Ursache abzuklären. (Hoehl/Kullick, Kap. 15.4.1)",
+          glossarBegriffe: ["Sauberkeitsentwicklung", "Enuresis", "Miktion"],
+        },
+        contentB1: {
+          title: "Kindliche Sauberkeitsentwicklung: Trockenwerden",
+          body: "Trockenwerden kann man nicht erzwingen. Es ist ein **Entwicklungsprozess**. Das Kind muss **körperlich reif** sein (es spürt, wann die Blase voll ist) **und innerlich bereit**.\n\n**Ungefährer Zeit-Korridor (jedes Kind ist anders):**\n- **ab ~24 Monaten:** Eltern können mit dem Töpfchen anfangen\n- **ab ~30 Monaten:** Kind benutzt das Töpfchen selbst, braucht Hilfe beim Abputzen\n- **ab ~3 Jahren:** tagsüber oft trocken — meist ist das Sauberwerden mit 3 Jahren geschafft\n- **ab ~4 Jahren:** vielleicht auch **nachts trocken**, putzt sich selbst ab\n- **ab ~5 Jahren:** das Kind **schämt sich** — es will nicht mehr von anderen im Intimbereich gewaschen werden\n\n**Wie man hilft:**\n- **Ruhig bleiben**, gute Beziehung\n- **Kein Druck, nicht zu früh** — das macht es schwerer\n- **Nicht schimpfen**, wenn es zu spät kommt\n- Bei Erfolg **nicht übertrieben loben** — aufs Klo gehen ist normal\n- **Baumwollwindel** in die Windel legen, damit das Kind die **nasse Windel spürt**\n- **Trinken nie reduzieren** — Kinder brauchen Flüssigkeit\n\n**Wieder einnässen ist oft normal:** Im **Krankenhaus** oder wenn ein **Geschwisterkind** kommt, nässen auch trockene Kinder manchmal wieder ein. Das ist Stress, kein Rückschritt.\n\n**Wann zum Arzt?** Kinder ab **5 Jahren**, die **nie trocken** waren oder plötzlich wieder einnässen — dann die Ursache abklären lassen.",
+          glossarBegriffe: ["Sauberkeitsentwicklung", "Enuresis", "Miktion"],
+        },
+      },
+    },
+    glossarBegriffe: ["Sauberkeitsentwicklung", "Enuresis", "Miktion"],
     karteikarten: [],
   },
 ];
