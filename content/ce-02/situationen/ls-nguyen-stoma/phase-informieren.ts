@@ -476,7 +476,7 @@ export const CE02_SIT_NGUYEN_STOMA_INFORMIEREN: SituationsPhase = {
             text: "Bauchnabelnah, ca. 2 cm Abstand zum Nabel — wie im Normalfall",
             isCorrect: false,
             explanation:
-              "Falsch — aber nicht wegen des Nabel-Abstands: 2 cm Abstand zum Nabel ist korrekt (Pflege heute: „um den Nabel 2 cm frei lassen"). Das Problem ist die konkrete Situation: Herr Nguyen hat eine frische OP-Naht im unteren Abdomen und ein Kolostoma links. Der nötige Mindestabstand von 5 cm zu Wunde und Stoma lässt sich periumbilikal nicht sicher einhalten. Deshalb weicht man auf die laterale Oberschenkelaußenseite oder den kontralateralen Oberbauch aus.",
+              "Falsch — aber nicht wegen des Nabel-Abstands: 2 cm Abstand zum Nabel ist korrekt (Pflege heute: um den Nabel 2 cm frei lassen). Das Problem ist die konkrete Situation: Herr Nguyen hat eine frische OP-Naht im unteren Abdomen und ein Kolostoma links. Der nötige Mindestabstand von 5 cm zu Wunde und Stoma lässt sich periumbilikal nicht sicher einhalten. Deshalb weicht man auf die laterale Oberschenkelaußenseite oder den kontralateralen Oberbauch aus.",
             explanationB1:
               "Falsch — aber nicht wegen des Nabels: 2 cm Abstand zum Nabel ist richtig. Das Problem: Herr Nguyen hat eine frische Wunde und ein Stoma am Bauch. Dort braucht man 5 cm Abstand — und so viel Platz ist neben dem Nabel nicht. Besser: seitlich am Oberschenkel.",
           },
