@@ -1,4 +1,4 @@
-// CE-02 Thema Ernährungsgrundlagen — Wissensbausteine (17 Bausteine, 3 Stufen)
+// CE-02 Thema Ernährungsgrundlagen — Wissensbausteine (18 Bausteine, 3 Stufen)
 // Quelle: content/ce-02/themen/ernaehrungsgrundlagen/bausteine-plan.md
 // Pipeline v9 — 2026-04-23
 // Stufe 1 = Denkfrage (C1 + Vorerfahrung)
@@ -855,6 +855,56 @@ export const CE02_THEMA_ERNAEHRUNGSGRUNDLAGEN_BAUSTEINE: Wissensbaustein[] = [
       },
     },
     glossarBegriffe: ["Mangelernährung", "Exsikkose"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 18: verdauungstrakt-topografie (Bloom 2) — AP-2 LE8 #1 (Verdauungsorgan-Topografie)
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "ernaehrungsgrundlagen-verdauungstrakt-topografie",
+    themaId: "ernaehrungsgrundlagen",
+    titel: "Topografie des Verdauungstrakts: Der Weg der Nahrung",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Verfolge ein Stück Brot von der Aufnahme bis zur Ausscheidung — welche Organe durchläuft es in welcher Reihenfolge? Und welche zwei großen Drüsen helfen bei der Verdauung, ohne dass die Nahrung durch sie hindurchfließt?",
+      antwort:
+        "Mund → Speiseröhre → Magen → Dünndarm (Zwölffingerdarm/Duodenum → Leerdarm/Jejunum → Krummdarm/Ileum) → Dickdarm → Mastdarm (Rektum) → Analkanal. Die Leber (mit Galle) und die Bauchspeicheldrüse geben ihre Verdauungssäfte in den Dünndarm ab, ohne dass die Nahrung durch sie hindurchläuft. (I Care Anatomie, Kap. 9)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Der Verdauungstrakt ist ein durchgehender Schlauch: Mundhöhle → Speiseröhre → Magen → Duodenum (oberer Verdauungstrakt) → Jejunum → Ileum → Dickdarm → Rektum → Analkanal (unterer Verdauungstrakt). Der Dünndarm (Duodenum/Jejunum/Ileum) ist der Hauptort von Verdauung und Aufnahme, der Dickdarm entzieht Wasser. Leber (mit Galle) und Bauchspeicheldrüse liefern Verdauungssäfte; die Leber ist zentrales Stoffwechselorgan. (I Care Anatomie, Kap. 9)",
+      textB1:
+        "Die Nahrung läuft durch einen langen Schlauch: Mund → Speiseröhre → Magen → Dünndarm → Dickdarm → Mastdarm → After. Der Dünndarm hat drei Teile: Zwölffingerdarm, Leerdarm, Krummdarm. Im Dünndarm wird die Nahrung aufgenommen, im Dickdarm wird Wasser entzogen. Leber und Bauchspeicheldrüse geben Säfte dazu, die beim Verdauen helfen.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-ernaehr-wb-18-verdauungstrakt",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 2,
+        kompetenzbereich: "I.1",
+        quellen: ["I Care Anatomie, Kap. 9 (Verdauungstrakt: oberer/unterer Abschnitt, Dünndarm, Anhangsdrüsen, Lage)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-ernaehrung-verdauungstrakt",
+        tag: "pflege",
+        displayFormat: "stepbystep",
+        contentC1: {
+          title: "Topografie des Verdauungstrakts",
+          body: "Der Verdauungstrakt ist ein **durchgehender Schlauch** vom Mund bis zum After. Man teilt ihn in einen oberen und einen unteren Abschnitt (I Care Anatomie, Kap. 9).\n\n**Der Weg der Nahrung — der Reihe nach:**\n1. **Mundhöhle** — Zerkleinern (Zähne) und Einspeicheln\n2. **Speiseröhre (Ösophagus)** — Transport in den Magen\n3. **Magen** — Durchmischung mit Magensäure, portionsweise Abgabe\n4. **Dünndarm** — der Hauptort von **Verdauung und Nährstoffaufnahme**, in 3 Abschnitten:\n   - **Zwölffingerdarm (Duodenum)**\n   - **Leerdarm (Jejunum)**\n   - **Krummdarm (Ileum)**\n5. **Dickdarm (Kolon)** — entzieht dem Speisebrei **Wasser**, dickt den Stuhl ein\n6. **Mastdarm (Rektum)** — speichert den Stuhl\n7. **Analkanal** — Ausscheidung\n\n*Einteilung:* Mundhöhle, Speiseröhre, Magen und Duodenum bilden den **oberen Verdauungstrakt**; Jejunum, Ileum, Dickdarm, Rektum und Analkanal den **unteren Verdauungstrakt**.\n\n**Zwei große Anhangsdrüsen** liefern Verdauungssäfte in den Dünndarm, **ohne** dass die Nahrung durch sie hindurchfließt:\n- **Leber** (mit der **Gallenblase**) — wichtig u.a. für die Fettverdauung\n- **Bauchspeicheldrüse (Pankreas)** — liefert Verdauungsenzyme\n\nDie **Leber** ist zugleich das **zentrale Stoffwechselorgan**: Nahezu alle im Darm aufgenommenen Stoffe erreichen zuerst die Leber, die entscheidet, ob sie verbraucht, gespeichert, umgewandelt oder abgebaut werden.\n\n**Lage:** Der größte Teil liegt in der **Bauch- und Beckenhöhle**; viele Organe (Magen, Jejunum, Ileum, Teile des Kolons, Leber, Milz) liegen **innerhalb des Bauchfells** (intraperitoneal).\n\n**Pflege-Relevanz:**\n- **Schluckstörung (Dysphagie):** Gefahr, dass Nahrung statt in die Speiseröhre in die Luftröhre gerät (Aspiration)\n- **Sondenernährung:** Magensonde oder PEG umgehen Mund/Speiseröhre\n- **Obstipation:** entsteht u.a., wenn der Dickdarm zu viel Wasser entzieht\n- **Stoma:** künstlicher Darmausgang an der Bauchdecke (I Care Anatomie, Kap. 9)",
+          glossarBegriffe: ["Verdauungstrakt", "Dünndarm", "Dickdarm (Kolon)"],
+        },
+        contentB1: {
+          title: "Topografie des Verdauungstrakts",
+          body: "Der Verdauungstrakt ist ein **langer Schlauch** vom Mund bis zum After (I Care Anatomie, Kap. 9).\n\n**Der Weg der Nahrung:**\n1. **Mund** — kauen und einspeicheln\n2. **Speiseröhre** — Transport zum Magen\n3. **Magen** — mischen mit Magensäure\n4. **Dünndarm** — hier wird die Nahrung **aufgenommen**. Er hat 3 Teile: **Zwölffingerdarm, Leerdarm, Krummdarm**\n5. **Dickdarm** — entzieht **Wasser**, dickt den Stuhl ein\n6. **Mastdarm** — speichert den Stuhl\n7. **After** — Ausscheidung\n\n**Zwei große Drüsen** geben Säfte in den Dünndarm, ohne dass die Nahrung durch sie fließt:\n- **Leber** (mit **Gallenblase**) — wichtig für die Fettverdauung\n- **Bauchspeicheldrüse** — liefert Verdauungs-Enzyme\n\nDie **Leber** ist auch das wichtigste Stoffwechsel-Organ: Fast alles, was der Darm aufnimmt, kommt zuerst zur Leber.\n\n**Wichtig für die Pflege:**\n- **Schluckstörung:** Nahrung kann in die Luftröhre geraten (Aspiration)\n- **Sonde (Magensonde, PEG):** wenn jemand nicht schlucken kann\n- **Verstopfung (Obstipation):** wenn der Dickdarm zu viel Wasser entzieht\n- **Stoma:** künstlicher Darmausgang am Bauch",
+          glossarBegriffe: ["Verdauungstrakt", "Dünndarm", "Dickdarm (Kolon)"],
+        },
+      },
+    },
+    glossarBegriffe: ["Verdauungstrakt", "Dünndarm", "Dickdarm (Kolon)"],
     karteikarten: [],
   },
 ];

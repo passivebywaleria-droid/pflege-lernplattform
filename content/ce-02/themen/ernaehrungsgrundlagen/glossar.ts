@@ -418,4 +418,31 @@ export const CE02_THEMA_ERNAEHRUNGSGRUNDLAGEN_GLOSSAR: GlossarEntry[] = [
     erklaerungB1:
       "Wasserlöslich bedeutet: ein Stoff löst sich in Wasser. Wasserlösliche Vitamine sind die 8 B-Vitamine und Vitamin C. Sie werden nicht gespeichert — Überschuss geht mit dem Urin raus. Deshalb braucht man sie jeden Tag.",
   },
+  {
+    begriff: "Verdauungstrakt",
+    erklaerung:
+      "Durchgehender Schlauch vom Mund bis zum After: Mundhöhle, Speiseröhre, Magen, Duodenum (oberer Verdauungstrakt), Jejunum, Ileum, Dickdarm, Rektum, Analkanal (unterer Verdauungstrakt). Leber (mit Galle) und Bauchspeicheldrüse liefern als Anhangsdrüsen Verdauungssäfte in den Dünndarm. (I Care Anatomie, Kap. 9)",
+    erklaerungB1:
+      "Der lange Schlauch, durch den die Nahrung läuft: Mund, Speiseröhre, Magen, Dünndarm, Dickdarm, Mastdarm, After. Leber und Bauchspeicheldrüse geben Säfte dazu, die beim Verdauen helfen.",
+    uebersetzungTr: "Sindirim sistemi (kanalı)",
+    uebersetzungAr: "الجهاز الهضمي (القناة الهضمية)",
+  },
+  {
+    begriff: "Dünndarm",
+    erklaerung:
+      "Hauptort von Verdauung und Nährstoffaufnahme, in 3 Abschnitten: Zwölffingerdarm (Duodenum), Leerdarm (Jejunum) und Krummdarm (Ileum). Hier münden die Verdauungssäfte aus Leber/Galle und Bauchspeicheldrüse. (I Care Anatomie, Kap. 9)",
+    erklaerungB1:
+      "Der Teil des Darms, in dem die Nahrung aufgenommen wird. Er hat 3 Abschnitte: Zwölffingerdarm, Leerdarm und Krummdarm.",
+    uebersetzungTr: "İnce bağırsak",
+    uebersetzungAr: "الأمعاء الدقيقة",
+  },
+  {
+    begriff: "Dickdarm (Kolon)",
+    erklaerung:
+      "Auf den Dünndarm folgender Darmabschnitt, der dem Speisebrei Wasser entzieht und den Stuhl eindickt. Mündet über das Rektum (Mastdarm) und den Analkanal nach außen. (I Care Anatomie, Kap. 9)",
+    erklaerungB1:
+      "Der Teil des Darms nach dem Dünndarm. Er entzieht dem Brei Wasser und macht den Stuhl fester. Danach kommen Mastdarm und After.",
+    uebersetzungTr: "Kalın bağırsak (kolon)",
+    uebersetzungAr: "الأمعاء الغليظة (القولون)",
+  },
 ];

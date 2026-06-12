@@ -1,4 +1,4 @@
-// CE-02 Thema Harnausscheidung & Inkontinenz — Wissensbausteine (20 Bausteine, 3 Stufen)
+// CE-02 Thema Harnausscheidung & Inkontinenz — Wissensbausteine (21 Bausteine, 3 Stufen)
 // Quelle: content/ce-02/themen/harnausscheidung/bausteine-plan.md
 // Pipeline v9 — 2026-04-23
 // Stufe 1 = Denkfrage (starke Schüler, Bloom ≥3)
@@ -1005,6 +1005,56 @@ export const CE02_THEMA_HARNAUSSCHEIDUNG_BAUSTEINE: Wissensbaustein[] = [
       },
     },
     glossarBegriffe: ["Sauberkeitsentwicklung", "Enuresis", "Miktion"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 21: urogenital-topografie (Bloom 2) — AP-2 LE9 #1/#2 (Urogenital-Topografie)
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "harnausscheidung-urogenital-topografie",
+    themaId: "harnausscheidung",
+    titel: "Topografie der Harnorgane: Von der Niere zur Harnröhre",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Warum bekommen Frauen häufiger Harnwegsinfekte als Männer — und warum musst du beim Katheterlegen wissen, wie lang die Harnröhre ist? Beide Antworten liegen im anatomischen Aufbau der Harnwege.",
+      antwort:
+        "Die ableitenden Harnwege führen von der Niere über den Harnleiter zur Harnblase und von dort über die Harnröhre nach außen. Die weibliche Harnröhre ist mit ca. 3-5 cm sehr kurz — Keime erreichen die Blase leicht (mehr Harnwegsinfekte). Die männliche ist mit ca. 20 cm deutlich länger. Diese Länge bestimmt, wie weit du einen Katheter vorschiebst. (I Care Anatomie, Kap. 10)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Harnbildung in den 2 Nieren (bohnenförmig, ca. 12 cm, retroperitoneal, beidseits der Wirbelsäule). Ableitende Harnwege in Reihenfolge: Nierenbecken → Harnleiter (Ureter) → Harnblase (dehnbarer Urinspeicher) → Harnröhre (Urethra). Geschlechtsunterschied: weibliche Harnröhre ca. 3-5 cm (kurz, höheres HWI-Risiko), männliche ca. 20 cm (lang, umschlossen von der Prostata). (I Care Anatomie, Kap. 10)",
+      textB1:
+        "Der Urin wird in den 2 Nieren gebildet (bohnenförmig, liegen hinten links und rechts der Wirbelsäule). Dann läuft er: Nierenbecken → Harnleiter → Harnblase (Speicher) → Harnröhre → nach außen. Unterschied: Die Harnröhre der Frau ist kurz (3-5 cm) — darum bekommen Frauen öfter Blasenentzündungen. Beim Mann ist sie ca. 20 cm lang.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-harn-wb-21-topografie",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 2,
+        kompetenzbereich: "I.1",
+        quellen: ["I Care Anatomie, Kap. 10 (Niere und ableitende Harnwege)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-harn-urogenital-topografie",
+        tag: "pflege",
+        displayFormat: "stepbystep",
+        contentC1: {
+          title: "Topografie der Harnorgane",
+          body: "Das Harnsystem besteht aus den **harnbildenden** Organen (Nieren) und den **ableitenden** Harnwegen (I Care Anatomie, Kap. 10).\n\n**Die Nieren:**\n- Es gibt **2 Nieren**, **bohnenförmig**, ca. **12 cm lang**, je 120-200 g\n- Sie liegen **links und rechts der Wirbelsäule**, mit dem oberen Rand etwa auf Höhe des letzten Brustwirbels (die linke etwas höher)\n- Sie liegen **hinter dem Bauchfell (retroperitoneal)** und bewegen sich beim Atmen bis zu 3 cm auf und ab\n- Aufgaben: **Reinigung und Entgiftung** (Harnbildung) sowie Hormonbildung für **Blutdruck, Blutbildung und Knochenstoffwechsel**\n- Innen: Nierenrinde und Nierenmark → Harn sammelt sich über die Nierenkelche im **Nierenbecken**\n\n**Die ableitenden Harnwege — der Reihe nach:**\n1. **Nierenbecken** — sammelt den Harn\n2. **Harnleiter (Ureter)** — paarig, transportiert den Harn zur Blase\n3. **Harnblase** — dehnbares Hohlorgan, **speichert** den Urin\n4. **Harnröhre (Urethra)** — leitet den Urin nach außen\n\n**Geschlechtsunterschied der Harnröhre:**\n- **Frau:** ca. **3-5 cm — kurz** → Darmkeime erreichen die Blase leicht → **höheres Risiko für Harnwegsinfekte**\n- **Mann:** ca. **20 cm — lang**, von der **Prostata** umschlossen; sie dient zugleich dem Samentransport ('Harnsamenröhre')\n\n**Pflege-Relevanz:**\n- **Transurethraler Katheter:** Die Länge der Harnröhre bestimmt, wie weit du vorschiebst; immer **aseptisch** arbeiten (Infektionsweg in die Blase)\n- **HWI-Prophylaxe:** Bei Frauen Intimpflege **von vorne nach hinten** — wegen der kurzen Harnröhre\n- **Suprapubischer Katheter:** wird oberhalb der Symphyse **durch die Bauchdecke** in die Blase gelegt, nicht durch die Harnröhre\n- **Restharn/Harnstau:** Verständnis für Blasenfüllung und Abflusshindernisse (I Care Anatomie, Kap. 10)",
+          glossarBegriffe: ["Niere", "Ableitende Harnwege", "Harnröhre (Urethra)"],
+        },
+        contentB1: {
+          title: "Topografie der Harnorgane",
+          body: "Das Harnsystem besteht aus den **Nieren** (sie bilden den Urin) und den **ableitenden Harnwegen** (sie leiten ihn ab) (I Care Anatomie, Kap. 10).\n\n**Die Nieren:**\n- Es gibt **2 Nieren**, in Form einer **Bohne**, ca. **12 cm lang**\n- Sie liegen **hinten, links und rechts der Wirbelsäule** — hinter dem Bauchfell\n- Aufgaben: **Blut reinigen** (Urin bilden) und **Hormone** bilden (für Blutdruck, Blutbildung, Knochen)\n\n**Der Weg des Urins:**\n1. **Nierenbecken** — sammelt den Urin\n2. **Harnleiter** — bringt den Urin zur Blase\n3. **Harnblase** — speichert den Urin\n4. **Harnröhre** — leitet ihn nach außen\n\n**Unterschied Mann/Frau:**\n- **Frau:** Harnröhre **kurz** (3-5 cm) → Keime kommen leicht in die Blase → **öfter Blasenentzündung**\n- **Mann:** Harnröhre **lang** (ca. 20 cm), läuft durch die **Prostata**\n\n**Wichtig für die Pflege:**\n- **Katheter durch die Harnröhre:** Die Länge sagt, wie weit du schiebst — immer **sauber/steril** arbeiten\n- **Vorbeugung Blasenentzündung:** bei Frauen **von vorne nach hinten** putzen\n- **Suprapubischer Katheter:** durch die **Bauchdecke**, nicht durch die Harnröhre",
+          glossarBegriffe: ["Niere", "Ableitende Harnwege", "Harnröhre (Urethra)"],
+        },
+      },
+    },
+    glossarBegriffe: ["Niere", "Ableitende Harnwege", "Harnröhre (Urethra)"],
     karteikarten: [],
   },
 ];

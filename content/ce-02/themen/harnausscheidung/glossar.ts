@@ -203,4 +203,31 @@ export const CE02_THEMA_HARNAUSSCHEIDUNG_GLOSSAR: GlossarEntry[] = [
     uebersetzungTr: "enürezis (gece/gündüz altını ıslatma)",
     uebersetzungAr: "التبوّل اللاإرادي (سلس البول لدى الأطفال)",
   },
+  {
+    begriff: "Niere",
+    erklaerung:
+      "Paariges, bohnenförmiges Organ (ca. 12 cm lang, 120-200 g), das links und rechts der Wirbelsäule hinter dem Bauchfell (retroperitoneal) liegt. Bildet den Urin (Reinigung/Entgiftung) und produziert Hormone für Blutdruck, Blutbildung und Knochenstoffwechsel. Der Harn sammelt sich über die Nierenkelche im Nierenbecken. (I Care Anatomie, Kap. 10)",
+    erklaerungB1:
+      "Ein bohnenförmiges Organ — es gibt zwei davon, hinten links und rechts der Wirbelsäule. Die Nieren reinigen das Blut und bilden den Urin. Sie machen auch Hormone (für Blutdruck, Blutbildung, Knochen).",
+    uebersetzungTr: "Böbrek",
+    uebersetzungAr: "الكلية",
+  },
+  {
+    begriff: "Ableitende Harnwege",
+    erklaerung:
+      "Der Weg des Urins von der Niere nach außen: Nierenbecken → Harnleiter (Ureter) → Harnblase → Harnröhre (Urethra). Die Harnblase ist ein dehnbares Hohlorgan und speichert den Urin bis zur Entleerung. (I Care Anatomie, Kap. 10)",
+    erklaerungB1:
+      "Der Weg des Urins von der Niere nach draußen: Nierenbecken → Harnleiter → Harnblase (Speicher) → Harnröhre. Die Blase kann sich dehnen und sammelt den Urin.",
+    uebersetzungTr: "İdrar yolları (boşaltım yolları)",
+    uebersetzungAr: "المسالك البولية",
+  },
+  {
+    begriff: "Harnröhre (Urethra)",
+    erklaerung:
+      "Letzter Abschnitt der ableitenden Harnwege, der den Urin von der Blase nach außen leitet. Bei der Frau ca. 3-5 cm (kurz → höheres Risiko für Harnwegsinfekte), beim Mann ca. 20 cm und von der Prostata umschlossen (zugleich Samentransport). Die Länge ist beim transurethralen Katheterismus relevant. (I Care Anatomie, Kap. 10)",
+    erklaerungB1:
+      "Der letzte Teil der Harnwege — er leitet den Urin von der Blase nach außen. Bei der Frau kurz (3-5 cm), beim Mann lang (ca. 20 cm). Darum bekommen Frauen leichter eine Blasenentzündung.",
+    uebersetzungTr: "İdrar yolu (üretra)",
+    uebersetzungAr: "الإحليل (مجرى البول)",
+  },
 ];
