@@ -30,10 +30,10 @@ Kein dedizierter Grundlagen-Strang. Quelle durchgängig: **I Care Anatomie** (ha
 - [ ] **Urogenital-Topografie** (Niere/Harnleiter/Blase/Harnröhre, äußere Organe) (LE9 #1/#2)
 - *Ort offen:* eigenes Thema „Anatomie-Grundlagen" ODER Bausteine in mobilisation/ernährung/ausscheidung. **Vor Bau entscheiden.** Aufwand: 4–6 Wahrnehmung-große Bauten → aufteilen.
 
-## AP-3 — Alters-Breite Kind/Säugling (mittel)
-Quelle: **kinderkrankenpflege**-Korpus (haben wir).
-- [ ] **Sensomotorische Meilensteine** + entwicklungsfördernder Säuglings-Transfer (LE6) → `ls-emilia-saeugling` / saeuglingspflege-Thema
-- [ ] **Kindliche Sauberkeitsentwicklung/Trockenwerden** (LE9, 0 Treffer) → emilia / harnausscheidung-Thema
+## AP-3 — Alters-Breite Kind/Säugling (mittel) — ✅ KOMPLETT
+Quelle: **kinderkrankenpflege**-Korpus + Pflege heute Kap. 18.2.
+- [x] **Sensomotorische Meilensteine** (LE6) → `saeuglingspflege-sensomotorische-meilensteine` (B20). Pflege heute Kap. 18.2/Abb. 18.11. Handling über bestehende B6/B15 (Infant Handling, Nacken-Rücken-Griff) verlinkt.
+- [x] **Kindliche Sauberkeitsentwicklung/Trockenwerden** (LE9) → `harnausscheidung-sauberkeitsentwicklung` (B20). Hoehl/Kullick Kap. 15.4.1.
 
 ## AP-4 — Klein-Lücken (mechanisch, schnell) — ✅ KOMPLETT
 - [x] **Augentropfen verabreichen** (LE7 K8) → `ganzkoerperpflege-augentropfen` (B20). Pflege heute Kap. 35.1.5.
