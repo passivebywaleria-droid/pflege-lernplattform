@@ -113,4 +113,22 @@ export const CE02_THEMA_PFLEGEDOKUMENTATION_GLOSSAR: GlossarEntry[] = [
     uebersetzungTr: "Belge sahteciliği",
     uebersetzungAr: "تزوير الوثائق",
   },
+  {
+    begriff: "Medizinischer Dienst (MDK)",
+    erklaerung:
+      "Medizinischer Dienst der Krankenkassen (MDK; seit 2021 'Medizinischer Dienst', MD). Begutachtet für die Kranken- und Pflegeversicherung, stellt die Pflegebedürftigkeit (Pflegegrad) fest, berät in Versorgungsfragen und sichert die Pflegequalität. Bei Qualitätsprüfungen — stationär wie ambulant — zieht er Pflegedokumentation und Pflegeplanung heran. (I Care Pflege, Kap. 2/3)",
+    erklaerungB1:
+      "Der Medizinische Dienst (früher MDK) arbeitet für die Kranken- und Pflegekasse. Er stellt den Pflegegrad fest und kontrolliert die Pflegequalität. Dabei schaut er sich die Dokumentation und Pflegeplanung an.",
+    uebersetzungTr: "Sağlık Hizmeti Denetim Kurumu (MDK)",
+    uebersetzungAr: "الخدمة الطبية لصناديق التأمين الصحي",
+  },
+  {
+    begriff: "Grundsatzstellungnahme",
+    erklaerung:
+      "Grundsatzpapier des Medizinischen Dienstes mit Handlungsempfehlungen. Die Grundsatzstellungnahme 'Pflegeprozess und Dokumentation' (2005) beschreibt, wie der Pflegeprozess dokumentiert werden soll, und dient als Maßstab, um einrichtungseigene Dokumentationssysteme fachlich einzuschätzen (Vollständigkeit, Nachvollziehbarkeit, keine Doppeldokumentation, Handhabbarkeit). (MDK 2005)",
+    erklaerungB1:
+      "Ein offizielles Papier des Medizinischen Dienstes mit Empfehlungen. Das Papier 'Pflegeprozess und Dokumentation' (2005) sagt, wie man den Pflegeprozess dokumentieren soll. Du nutzt es als Messlatte, um zu beurteilen, ob ein Dokumentationssystem gut ist.",
+    uebersetzungTr: "İlke görüşü (yönerge)",
+    uebersetzungAr: "بيان المبادئ التوجيهية",
+  },
 ];

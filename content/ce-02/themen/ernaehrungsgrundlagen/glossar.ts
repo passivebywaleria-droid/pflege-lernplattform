@@ -83,6 +83,13 @@ export const CE02_THEMA_ERNAEHRUNGSGRUNDLAGEN_GLOSSAR: GlossarEntry[] = [
       "Dehydrierung bedeutet: Der Körper hat zu wenig Flüssigkeit. Zeichen sind Durst, trockener Mund, wenig Urin, schneller Herzschlag. Ältere Menschen und Babys sind besonders gefährdet — ihr Durstgefühl funktioniert nicht so gut.",
   },
   {
+    begriff: "Exsikkose",
+    erklaerung:
+      "Austrocknung des Körpers durch Flüssigkeitsmangel. Im Alter besonders häufig, weil der Wassergehalt des Körpers unter 50 % sinkt und das Durstempfinden reduziert ist. Zeichen: trockene Schleimhäute, stehende Hautfalten (verminderter Turgor), konzentrierter Urin, Verwirrtheit. Pflege: aktiv zum Trinken auffordern, Trinkplan/Trinkprotokoll. (I Care Pflege; Pflege heute, Kap. 7)",
+    erklaerungB1:
+      "Austrocknung — der Körper hat zu wenig Wasser. Alte Menschen sind besonders gefährdet: Ihr Körper speichert weniger Wasser und sie spüren weniger Durst. Zeichen: trockener Mund, wenig dunkler Urin, Verwirrtheit. Pflege: oft ans Trinken erinnern, Trinkplan führen.",
+  },
+  {
     begriff: "Disaccharid",
     erklaerung:
       "Zweifachzucker, bestehend aus zwei verbundenen Einfachzuckern. Wichtige Vertreter: Saccharose (Traubenzucker + Fruchtzucker = Haushaltszucker), Laktose (Milchzucker), Maltose (Malzzucker).",

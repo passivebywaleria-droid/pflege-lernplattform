@@ -1,4 +1,4 @@
-// CE-02 Thema Pflegedokumentation & Übergabe — Wissensbausteine (14 Bausteine, 3 Stufen)
+// CE-02 Thema Pflegedokumentation & Übergabe — Wissensbausteine (15 Bausteine, 3 Stufen)
 // Quelle: content/ce-02/themen/pflegedokumentation/bausteine-plan.md
 // Pipeline v9 — 2026-04-23
 // Stufe 1 = Denkfrage (starke Schüler)
@@ -702,6 +702,56 @@ export const CE02_THEMA_PFLEGEDOKUMENTATION_BAUSTEINE: Wissensbaustein[] = [
       },
     },
     glossarBegriffe: ["Pflegebericht", "Urkundenfälschung"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 15: mdk-grundsatzstellungnahme (Bloom 4) — AP-4 LE5 #13
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "pflegedokumentation-mdk-grundsatzstellungnahme",
+    themaId: "pflegedokumentation",
+    titel: "Doku-Systeme einschätzen: die MDK-Grundsatzstellungnahme als Maßstab",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Dein Träger führt ein neues Dokumentationssystem ein. Woran misst du, ob es gut ist — und welches offizielle Dokument gibt dir dafür Kriterien an die Hand?",
+      antwort:
+        "Maßstab ist die Grundsatzstellungnahme des MDK 'Pflegeprozess und Dokumentation' (2005). Ein gutes System bildet alle Schritte des Pflegeprozesses ab, ist nachvollziehbar, vermeidet überflüssige Doppeldokumentation und ist im Alltag handhabbar. Der Medizinische Dienst prüft die Pflegequalität unter anderem anhand der Dokumentation und Pflegeplanung. (MDK-Grundsatzstellungnahme 2005; I Care, Kap. 2/3)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Die MDK-Grundsatzstellungnahme 'Pflegeprozess und Dokumentation' (2005) ist ein Handlungsempfehlungs-Papier, an dem du einrichtungseigene Dokumentationssysteme einschätzt. Prüfkriterien: Bildet das System alle Pflegeprozess-Schritte ab? Ist es nachvollziehbar? Vermeidet es Doppeldokumentation (Entbürokratisierung, SIS)? Ist es im Alltag handhabbar? Der Medizinische Dienst (MDK, seit 2021 MD) prüft Pflegequalität u.a. anhand der Dokumentation. (I Care, Kap. 2/3)",
+      textB1:
+        "Die MDK-Grundsatzstellungnahme 'Pflegeprozess und Dokumentation' (2005) hilft dir zu beurteilen, ob ein Dokumentationssystem gut ist. Du prüfst: Bildet es alle Schritte des Pflegeprozesses ab? Kann man nachvollziehen, wer was wann gemacht hat? Schreibt man Dinge nicht doppelt? Ist es im Alltag gut machbar? Der Medizinische Dienst (MDK) kontrolliert die Pflegequalität auch über die Dokumentation.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-dokud-wb-15",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 4,
+        kompetenzbereich: "I.1",
+        quellen: ["MDK (Hrsg.) 2005: Grundsatzstellungnahme Pflegeprozess und Dokumentation", "I Care Pflege (Kap. 2 Berufsfeld / Kap. 3 Pflegeplanung, MDK)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-dokud-mdk-grundsatzstellungnahme",
+        tag: "pflege",
+        displayFormat: "checklist",
+        contentC1: {
+          title: "Doku-Systeme einschätzen: die MDK-Grundsatzstellungnahme",
+          body: "Dokumentationssysteme sind nicht alle gleich gut. Um ein einrichtungseigenes System fachlich **einzuschätzen**, brauchst du einen Maßstab — und den liefert ein offizielles Papier des Medizinischen Dienstes.\n\n**Wer ist der Medizinische Dienst?**\nDer **Medizinische Dienst (MDK** — Medizinischer Dienst der Krankenkassen; **seit 2021 'Medizinischer Dienst', MD)** begutachtet für die Kranken- und Pflegeversicherung, stellt die **Pflegebedürftigkeit (Pflegegrad)** fest und **sichert die Pflegequalität**. Bei Qualitätsprüfungen — stationär wie ambulant (z.B. bei Hausbesuchen) — zieht er die **Pflegedokumentation und Pflegeplanung** heran. (I Care, Kap. 2/3)\n\n**Die Grundsatzstellungnahme:**\nDie **Grundsatzstellungnahme 'Pflegeprozess und Dokumentation – Handlungsempfehlungen zur Professionalisierung und Qualitätssicherung'** (2005) beschreibt, wie der Pflegeprozess dokumentiert werden soll. Sie dient als **Maßstab, um Dokumentationssysteme einzuschätzen.**\n\n**Kriterien, an denen du ein System misst:**\n- **Vollständigkeit:** Bildet es **alle Schritte des Pflegeprozesses** ab (Informationssammlung, Probleme/Ressourcen, Ziele, Maßnahmen, Durchführung, Evaluation)?\n- **Nachvollziehbarkeit:** Ist erkennbar, **wer was wann** getan hat?\n- **Keine Doppeldokumentation:** Wird Gleiches nicht mehrfach geschrieben? Hier setzt die **Entbürokratisierung** an (SIS / Strukturmodell)\n- **Handhabbarkeit:** Ist es im Alltag praktikabel und wird es **tatsächlich gelebt** — nicht nur 'für die Prüfung' gepflegt?\n- **Datenschutz:** Sind Aufbewahrung und Schweigepflicht gesichert?\n\n**Warum das zählt:** Die Dokumentation ist zugleich **Qualitäts- und Haftungsnachweis**. Gegenüber dem Medizinischen Dienst belegt sie, dass Maßnahmen geplant und durchgeführt wurden. Trotzdem gilt: Dokumentation ist **Mittel zum Zweck** — Ziel ist nachvollziehbare, gute Pflege, nicht möglichst viel Papier. (MDK 2005; I Care, Kap. 2/3)",
+          glossarBegriffe: ["Medizinischer Dienst (MDK)", "Grundsatzstellungnahme", "SIS"],
+        },
+        contentB1: {
+          title: "Doku-Systeme einschätzen: die MDK-Grundsatzstellungnahme",
+          body: "Nicht jedes Dokumentationssystem ist gleich gut. Um zu **beurteilen**, ob eins gut ist, brauchst du einen Maßstab. Den gibt ein offizielles Papier des Medizinischen Dienstes.\n\n**Wer ist der Medizinische Dienst?**\nDer **Medizinische Dienst (MDK; seit 2021 'MD')** prüft für die Kranken- und Pflegekasse, stellt den **Pflegegrad** fest und **kontrolliert die Pflegequalität**. Dabei schaut er sich die **Dokumentation und Pflegeplanung** an — im Heim und auch zu Hause beim Pflegedienst. (I Care, Kap. 2/3)\n\n**Die Grundsatzstellungnahme:**\nDas Papier **'Pflegeprozess und Dokumentation'** (2005) sagt, wie der Pflegeprozess dokumentiert werden soll. Du nutzt es als **Messlatte** für ein Dokumentationssystem.\n\n**Worauf du achtest:**\n- **Vollständig:** Sind **alle Schritte des Pflegeprozesses** drin (Informationen, Probleme/Ressourcen, Ziele, Maßnahmen, Durchführung, Bewertung)?\n- **Nachvollziehbar:** Sieht man, **wer was wann** gemacht hat?\n- **Nicht doppelt:** Schreibt man Dinge nicht mehrfach? (Dafür gibt es SIS und Strukturmodell)\n- **Machbar:** Ist es im Alltag praktisch und wird es **wirklich benutzt** — nicht nur für die Prüfung?\n- **Datenschutz:** Sind Aufbewahrung und Schweigepflicht sicher?\n\n**Warum wichtig:** Die Dokumentation ist ein **Nachweis** — für gute Qualität und vor Gericht. Dem Medizinischen Dienst zeigst du damit, dass du Maßnahmen geplant und gemacht hast. Aber: Dokumentieren ist **Mittel zum Zweck**. Ziel ist gute Pflege, nicht viel Papier.",
+          glossarBegriffe: ["Medizinischer Dienst (MDK)", "Grundsatzstellungnahme", "SIS"],
+        },
+      },
+    },
+    glossarBegriffe: ["Medizinischer Dienst (MDK)", "Grundsatzstellungnahme", "SIS"],
     karteikarten: [],
   },
 ];

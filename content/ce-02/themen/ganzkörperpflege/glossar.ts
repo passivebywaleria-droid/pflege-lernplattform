@@ -1,4 +1,4 @@
-// CE-02 Thema Ganzkörperpflege — Glossar (19 Einträge)
+// CE-02 Thema Ganzkörperpflege — Glossar (26 Einträge)
 // Quelle: content/ce-02/themen/ganzkörperpflege/glossar-plan.md
 // Pipeline v9 — 2026-04-23
 
@@ -175,5 +175,68 @@ export const CE02_THEMA_GANZKOERPERPFLEGE_GLOSSAR: GlossarEntry[] = [
       "Gefährliche Komplikation bei Diabetes. Die Füße spüren keinen Schmerz (Nerven kaputt) und heilen schlecht (schlechte Durchblutung). Jede kleine Verletzung kann sehr gefährlich werden — bis zur Amputation. Fußnägel bei Diabetes: nur der Podologe schneidet.",
     uebersetzungTr: "Diyabetik ayak sendromu",
     uebersetzungAr: "متلازمة القدم السكرية",
+  },
+  {
+    begriff: "Bindehautsack",
+    erklaerung:
+      "Tasche zwischen Augapfel und Unterlid (Konjunktivalsack), gebildet von der Bindehaut. Hierhin werden Augentropfen und -salben gegeben: Unterlid leicht herunterziehen, ein Tropfen in die Mitte des unteren Bindehautsacks — nie direkt auf die empfindliche Hornhaut. (Pflege heute 7. Aufl., Kap. 35.1.5)",
+    erklaerungB1:
+      "Die kleine Tasche zwischen Auge und Unterlid. Dorthin gibst du Augentropfen: Unterlid leicht herunterziehen und einen Tropfen hineingeben. Nie direkt auf das durchsichtige Fenster (Hornhaut).",
+    uebersetzungTr: "Konjonktiva kesesi (alt göz kapağı cebi)",
+    uebersetzungAr: "كيس الملتحمة",
+  },
+  {
+    begriff: "Hornhaut",
+    erklaerung:
+      "Durchsichtiges, stark gewölbtes Fenster an der Vorderseite des Auges über Iris und Pupille (Cornea). Sehr dicht von Nerven durchzogen und damit extrem berührungsempfindlich. Deshalb dürfen Augentropfen nie direkt auf die Hornhaut fallen — der Patient blickt nach oben, der Tropfen kommt in den Bindehautsack. (Pflege heute 7. Aufl., Kap. 35.1.5)",
+    erklaerungB1:
+      "Das durchsichtige Fenster vorne am Auge, über der farbigen Iris. Es ist sehr empfindlich. Darum tropfst du nie direkt darauf — der Patient schaut nach oben, der Tropfen kommt in die Tasche am Unterlid.",
+    uebersetzungTr: "Kornea (saydam tabaka)",
+    uebersetzungAr: "القرنية",
+  },
+  {
+    begriff: "HdO-Gerät",
+    erklaerung:
+      "Hinter-dem-Ohr-Hörgerät, die gebräuchlichste Bauform. Das Gerät sitzt halbmondförmig hinter der Ohrmuschel und ist über einen Schlauch mit dem individuell angefertigten Ohrpassstück im Gehörgang verbunden. Daneben gibt es kleinere Im-Ohr-Geräte (IO). (Pflege heute 7. Aufl., Kap. 10.5)",
+    erklaerungB1:
+      "Ein Hörgerät, das hinter dem Ohr sitzt (Hinter-dem-Ohr-Gerät). Ein dünner Schlauch verbindet es mit einem kleinen Teil im Ohr (Ohrpassstück). Es ist die häufigste Form.",
+    uebersetzungTr: "Kulak arkası işitme cihazı",
+    uebersetzungAr: "سماعة خلف الأذن",
+  },
+  {
+    begriff: "Ohrpassstück",
+    erklaerung:
+      "Individuell angefertigtes Passstück eines Hörgeräts, das den Gehörgang nach außen abschließt und den Schall weiterleitet. Es muss dicht sitzen — andernfalls funktioniert das Hörsystem nicht richtig und es entsteht ein Pfeifen (Rückkopplung). Beim Wiedereinsetzen nach der Körperpflege auf korrekten, dichten Sitz achten. (Pflege heute 7. Aufl., Kap. 10.5)",
+    erklaerungB1:
+      "Der kleine Teil des Hörgeräts, der im Ohr sitzt. Er muss fest und dicht im Ohr sitzen. Sonst hört der Patient schlecht und das Gerät pfeift.",
+    uebersetzungTr: "Kulak kalıbı",
+    uebersetzungAr: "قالب الأذن",
+  },
+  {
+    begriff: "Rückkopplung",
+    erklaerung:
+      "Pfeifendes Geräusch eines Hörgeräts, das entsteht, wenn verstärkter Schall wieder zum Mikrofon zurückgelangt — typischerweise bei undichtem oder falsch sitzendem Ohrpassstück. Hinweis, dass das Gerät neu und dicht eingesetzt werden muss. (Pflege heute 7. Aufl., Kap. 10.5)",
+    erklaerungB1:
+      "Das Pfeifen aus einem Hörgerät. Es kommt, wenn der Teil im Ohr (Ohrpassstück) nicht richtig sitzt. Dann musst du das Gerät neu und fest einsetzen.",
+    uebersetzungTr: "Geri besleme (ıslık sesi)",
+    uebersetzungAr: "الصفير (التغذية الراجعة)",
+  },
+  {
+    begriff: "Sehbehinderung",
+    erklaerung:
+      "Störung des Sehvermögens, meist durch eine Schädigung des Auges, seltener des zentralen Nervensystems. Auswirkung auf die Körperpflege: Der Patient sieht Utensilien und Handgriffe nicht — feste Anordnung der Materialien, Ansprache vor Berührung, jede Handlung ankündigen, Wassertemperatur fühlen lassen, Selbstständigkeit fördern. (Pflege heute 7. Aufl., Kap. 10.6)",
+    erklaerungB1:
+      "Der Patient kann schlecht oder gar nicht sehen. Beim Waschen heißt das: Sachen immer an den gleichen Platz, erst ansprechen, dann anfassen, jede Handlung vorher sagen, Wasser fühlen lassen, selbst machen lassen.",
+    uebersetzungTr: "Görme engeli",
+    uebersetzungAr: "الإعاقة البصرية",
+  },
+  {
+    begriff: "Hörbehinderung",
+    erklaerung:
+      "Eingeschränktes oder fehlendes Hörvermögen, das die Kommunikation erschwert und zu Isolation führen kann. Auswirkung auf die Körperpflege: von vorne mit Blickkontakt sprechen, langsam und deutlich (nicht schreien), Mundbild sichtbar lassen, störende Geräusche reduzieren, Wichtiges zusätzlich zeigen oder aufschreiben; abgelegtes Hörgerät erschwert die Verständigung. (Pflege heute 7. Aufl., Kap. 10.5)",
+    erklaerungB1:
+      "Der Patient kann schlecht oder gar nicht hören. Beim Waschen heißt das: von vorne sprechen, ihn anschauen, langsam und deutlich (nicht schreien), störende Geräusche aus, Wichtiges zeigen oder aufschreiben.",
+    uebersetzungTr: "İşitme engeli",
+    uebersetzungAr: "الإعاقة السمعية",
   },
 ];

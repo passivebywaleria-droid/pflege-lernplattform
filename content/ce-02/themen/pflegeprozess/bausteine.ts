@@ -1,4 +1,4 @@
-// CE-02 Thema Pflegeprozess — Wissensbausteine (15 Bausteine, 3 Stufen)
+// CE-02 Thema Pflegeprozess — Wissensbausteine (19 Bausteine, 3 Stufen)
 // Quelle: content/ce-02/themen/pflegeprozess/bausteine-plan.md
 // Pipeline v9 — 2026-04-23
 // Stufe 1 = Denkfrage (starke Schüler, Bloom ≥3)
@@ -911,6 +911,56 @@ export const CE02_THEMA_PFLEGEPROZESS_BAUSTEINE: Wissensbaustein[] = [
       },
     },
     glossarBegriffe: ["Pflegedokumentation", "Strukturmodell", "SIS (Strukturierte Informationssammlung)", "Beweislast"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 19: geschichtliche-hintergruende (Bloom 2) — AP-4 LE5 #1 (Geschichte vertiefen)
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "pflegeprozess-geschichtliche-hintergruende",
+    themaId: "pflegeprozess",
+    titel: "Geschichtliche Hintergründe: Woher kommt der Pflegeprozess?",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Der Pflegeprozess wirkt heute selbstverständlich. Aber warum hat man ihn überhaupt erfunden — und aus welchem Land kam die Idee, bevor sie in den deutschsprachigen Raum gelangte?",
+      antwort:
+        "Die Idee stammt aus der angloamerikanischen Pflegewissenschaft (Yura & Walsh, Vier-Phasen-Modell), das die WHO aufgriff (WHO 1973). In den deutschsprachigen Raum kam der Pflegeprozess über Fiechter und Meier (Sechs-Schritt-Modell, ab den 1960er-Jahren, Erstveröffentlichung 1981). Ziel war von Anfang an: weg von reiner Routine, hin zu individueller, nachvollziehbarer Pflege und zur Professionalisierung des Berufs. (Prüfungswissen Pflege; WHO 1973; Fiechter/Meier 1981)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Der Pflegeprozess entstand in der angloamerikanischen Pflegewissenschaft (Yura & Walsh, Vier-Phasen-Modell), aufgegriffen von der WHO (1973). Fiechter und Meier brachten ihn mit dem Sechs-Schritt-Modell in den deutschsprachigen Raum (ab den 1960er-Jahren, 1981 veröffentlicht); es ist bis heute hier prägend. Die NANDA ergänzte das ADPIE-Modell mit eigener Pflegediagnose. 2015 folgte mit Strukturmodell/SIS die Entbürokratisierung, die sich wieder am Vier-Phasen-Modell orientiert. Antrieb: individuelle, humanistische Pflege und Professionalisierung. (Prüfungswissen Pflege)",
+      textB1:
+        "Der Pflegeprozess kommt aus der englischsprachigen Pflegewissenschaft (Yura & Walsh, Vier-Phasen-Modell). Die WHO übernahm ihn 1973. Fiechter und Meier brachten ihn als Sechs-Schritt-Modell in den deutschsprachigen Raum (ab den 1960er-Jahren, 1981 veröffentlicht). Er gilt hier bis heute. Das Ziel war immer: individuelle Pflege statt nur Routine, und mehr Fachlichkeit im Beruf.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-pflegeprozess-wb-19-geschichte",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 2,
+        kompetenzbereich: "I.1",
+        quellen: ["Prüfungswissen Pflege (Pflegeprozessmodelle: WHO/Yura & Walsh, Fiechter & Meier, NANDA/ADPIE, Strukturmodell)", "WHO 1973", "Fiechter/Meier 1981", "Beikirch et al. 2017 (Strukturmodell/SIS)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-pflegeprozess-geschichte",
+        tag: "pflege",
+        displayFormat: "stepbystep",
+        contentC1: {
+          title: "Geschichtliche Hintergründe des Pflegeprozesses",
+          body: "Der Pflegeprozess ist keine alte Selbstverständlichkeit, sondern das Ergebnis einer Entwicklung über mehrere Jahrzehnte. Wer die Hintergründe kennt, versteht, **warum** so systematisch gearbeitet wird.\n\n**Warum überhaupt ein 'Prozess'?**\nDie Idee war: weg von reiner Routine und Anordnungspflege, hin zu einer **individualisierten, humanistischen Pflege**, bei der der Mensch im Mittelpunkt steht. Damit verbunden waren das Ziel besserer **Pflegequalität** und die **Professionalisierung** des Pflegeberufs. (Prüfungswissen Pflege)\n\n**Die Entwicklung — Schritt für Schritt:**\n1. **Ursprung in der angloamerikanischen Pflegewissenschaft:** Hier wurde der 'nursing process' formuliert. **Yura und Walsh** beschrieben das **Vier-Phasen-Modell** (Assessment, Planung, Intervention/Durchführung, Evaluation).\n2. **WHO (1973):** Die Weltgesundheitsorganisation griff den Pflegeprozess auf und machte ihn zum **ersten internationalen Standard** mit breiten Phasen.\n3. **Fiechter und Meier:** Sie brachten den Pflegeprozess als **Sechs-Schritt-Modell** in den **deutschsprachigen Raum** (Arbeiten ab den 1960er-Jahren, Erstveröffentlichung 1981). Dieses Modell ist hier bis heute **prägend** und dient in vielen Einrichtungen als Richtlinie.\n4. **NANDA / ADPIE-Modell:** In den USA wurde ein **Fünf-Schritt-Modell** mit der **Pflegediagnose** als eigenständigem Schritt entwickelt (Assessment, Diagnose, Planung, Implementierung, Evaluation).\n5. **Strukturmodell und SIS (2015):** Zur **Entbürokratisierung** der Pflegedokumentation eingeführt; das Strukturmodell orientiert sich wieder am **Vier-Phasen-Modell nach Yura & Walsh**.\n\n**Heute** ist die Durchführung des Pflegeprozesses in Deutschland eine **vorbehaltene Tätigkeit** (§ 4 PflBG) — also gesetzlich der Pflegefachkraft zugeordnet. So wurde aus einer pflegewissenschaftlichen Idee ein verbindlicher Kern des Berufs. (Prüfungswissen Pflege; WHO 1973; Fiechter/Meier 1981)",
+          glossarBegriffe: ["Pflegeprozess", "WHO-Modell (1973)", "SIS (Strukturierte Informationssammlung)"],
+        },
+        contentB1: {
+          title: "Geschichtliche Hintergründe des Pflegeprozesses",
+          body: "Den Pflegeprozess gab es nicht immer. Er ist über viele Jahrzehnte entstanden. Wenn du die Geschichte kennst, verstehst du, **warum** man so systematisch arbeitet.\n\n**Warum ein 'Prozess'?**\nMan wollte weg von reiner Routine — hin zu **Pflege für jeden einzelnen Menschen**. Ziele waren: bessere **Pflegequalität** und ein **fachlicherer Beruf**. (Prüfungswissen Pflege)\n\n**Die Entwicklung:**\n1. **Ursprung in der englischsprachigen Pflegewissenschaft:** **Yura und Walsh** beschrieben ein **Vier-Phasen-Modell** (Einschätzen, Planen, Durchführen, Bewerten).\n2. **WHO (1973):** Die Weltgesundheitsorganisation übernahm den Pflegeprozess. Das war der erste **internationale Standard**.\n3. **Fiechter und Meier:** Sie brachten ihn als **Sechs-Schritt-Modell** in den **deutschsprachigen Raum** (ab den 1960er-Jahren, 1981 veröffentlicht). Er gilt hier bis heute.\n4. **NANDA / ADPIE:** In den USA kam ein **Fünf-Schritt-Modell** dazu — mit der **Pflegediagnose** als eigenem Schritt.\n5. **Strukturmodell und SIS (2015):** Eingeführt, um die **Dokumentation einfacher** zu machen. Es orientiert sich wieder am Vier-Phasen-Modell.\n\n**Heute** ist der Pflegeprozess in Deutschland eine **vorbehaltene Tätigkeit** (§ 4 PflBG) — er gehört gesetzlich der Pflegefachkraft.",
+          glossarBegriffe: ["Pflegeprozess", "WHO-Modell (1973)", "SIS (Strukturierte Informationssammlung)"],
+        },
+      },
+    },
+    glossarBegriffe: ["Pflegeprozess", "WHO-Modell (1973)", "SIS (Strukturierte Informationssammlung)"],
     karteikarten: [],
   },
 ];

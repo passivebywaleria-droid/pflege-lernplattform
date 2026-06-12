@@ -1,4 +1,4 @@
-// CE-02 Thema Ganzkörperpflege — Wissensbausteine (19 Bausteine, 3 Stufen)
+// CE-02 Thema Ganzkörperpflege — Wissensbausteine (22 Bausteine, 3 Stufen)
 // Quelle: content/ce-02/themen/ganzkörperpflege/bausteine-plan.md
 // Pipeline v9 — 2026-04-23
 // Stufe 1 = Denkfrage (C1 + Vorerfahrung)
@@ -955,6 +955,156 @@ export const CE02_THEMA_GANZKOERPERPFLEGE_BAUSTEINE: Wissensbaustein[] = [
       },
     },
     glossarBegriffe: ["Intertrigo", "Diabetisches Fußsyndrom"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 20: augentropfen-verabreichen (Bloom 3) — AP-4 LE7 K8
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "ganzkoerperpflege-augentropfen",
+    themaId: "ganzkörperpflege",
+    titel: "Augentropfen verabreichen: in den Bindehautsack, nie auf die Hornhaut",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Warum darfst du Augentropfen nie direkt auf die Hornhaut (das durchsichtige Fenster über der farbigen Iris) tropfen — und wohin gehört der Tropfen stattdessen?",
+      antwort:
+        "Die Hornhaut ist extrem empfindlich. Trifft der Tropfen sie direkt, kneift der Patient reflexartig zu, der Tropfen läuft heraus und es tut weh. Richtig: Patient nach oben blicken lassen, Unterlid am Wimpernrand leicht nach unten ziehen und einen Tropfen in die Mitte des unteren Bindehautsacks geben. Nur nach ärztlicher Anordnung. (Pflege heute, Kap. 35.1.5)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Augentropfen kommen nach ärztlicher Anordnung. Ablauf: Hände desinfizieren → Patient sitzt/liegt mit nach hinten geneigtem Kopf und blickt nach oben → Unterlid nahe dem Wimpernrand mit Tupfer leicht herunterziehen → applizierende Hand an der Stirn abstützen → einen Tropfen in die Mitte des unteren Bindehautsacks, nie direkt auf die Hornhaut → Auge langsam schließen lassen, ohne zu kneifen → überschüssige Lösung abtupfen → Fläschchen sofort verschließen. (Pflege heute, Kap. 35.1.5)",
+      textB1:
+        "Augentropfen gibst du nur, wenn der Arzt es anordnet. So geht es: Hände desinfizieren. Der Patient legt den Kopf nach hinten und schaut nach oben. Zieh das Unterlid am Wimpernrand leicht herunter. Stütz deine Hand an der Stirn ab. Gib einen Tropfen in die kleine Tasche zwischen Lid und Auge (Bindehautsack) — nie direkt auf das durchsichtige Fenster (Hornhaut). Der Patient schließt das Auge langsam, ohne zu kneifen. Tupfe zu viel Flüssigkeit ab. Verschließ das Fläschchen sofort.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-gkp-wb-20",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 3,
+        kompetenzbereich: "I.1",
+        quellen: ["Pflege heute (7. Aufl.), Kap. 35.1.5 (Augentropfen/-salbe applizieren)", "Pflege heute (7. Aufl.), Kap. 6.4 (Augenpflege)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-gkp-augentropfen",
+        tag: "pflege",
+        displayFormat: "stepbystep",
+        contentC1: {
+          title: "Augentropfen verabreichen",
+          body: "Augentropfen und -salben werden **nur nach ärztlicher Anordnung** verabreicht (Pflege heute, Kap. 35.1.5). Das Auge ist ein sehr empfindliches Organ mit hoher Verletzungs- und Infektionsgefahr — deshalb ist die Technik genau festgelegt.\n\n**Vorbereitung:**\n1. **Hände hygienisch desinfizieren**\n2. Patienten informieren, **mit erhöhtem Oberkörper oder sitzend** positionieren, **Kopf nach hinten neigen** lassen\n3. Bei Verkrustungen vorher das Auge reinigen (von außen nach innen wischen)\n\n**Durchführung:**\n4. **Patienten nach oben blicken lassen** — so fällt der Tropfen nicht direkt auf die empfindliche **Hornhaut**\n5. **Unterlid nahe dem Wimpernrand** mit einem Tupfer **leicht nach unten ziehen**\n6. Die **applizierende Hand abstützen** (z.B. an der Stirn des Patienten) — verhindert Verletzungen, falls er sich bewegt\n7. **Einen Tropfen** (bzw. einen 0,5 cm langen Salbenstrang) **in die Mitte des unteren Bindehautsacks** geben. **Niemals direkt auf die Hornhaut tropfen.**\n8. Patienten die **Augen langsam schließen** lassen, **ohne zu kneifen** — so verteilt sich das Medikament gleichmäßig\n9. **Überschüssige Lösung abtupfen**\n\n**Nachsorge:**\n10. **Fläschchen/Tube sofort wieder verschließen** — sonst droht Verunreinigung und Infektionsgefahr. Tropferspitze nicht berühren.\n11. **Hände desinfizieren**, Maßnahme dokumentieren, Veränderungen am Auge dem Arzt melden\n\n**Für zu Hause:** Viele Patienten müssen selbst weiter tropfen. Du leitest sie an: Hände waschen, Kopf anlehnen, Finger nahe dem Wimpernrand das Unterlid herunterziehen, nach oben blicken, Tropfen aus der schräg gehaltenen Flasche eingeben, Auge langsam schließen. (Pflege heute, Kap. 35.1.5)",
+          glossarBegriffe: ["Bindehautsack", "Hornhaut", "Händedesinfektion"],
+        },
+        contentB1: {
+          title: "Augentropfen verabreichen",
+          body: "Augentropfen gibst du **nur, wenn der Arzt es angeordnet hat** (Pflege heute, Kap. 35.1.5). Das Auge ist sehr empfindlich. Darum gibt es feste Regeln.\n\n**Vorbereitung:**\n1. **Hände desinfizieren**\n2. Patient sitzt oder liegt, **Kopf nach hinten**\n3. Bei Krusten: Auge vorher reinigen (von außen nach innen)\n\n**So gibst du den Tropfen:**\n4. Der Patient **schaut nach oben**. So fällt der Tropfen nicht auf das durchsichtige Fenster (Hornhaut).\n5. Zieh das **Unterlid am Wimpernrand leicht herunter**\n6. **Stütz deine Hand ab** — zum Beispiel an der Stirn. Falls der Patient sich bewegt, passiert nichts.\n7. Gib **einen Tropfen in die kleine Tasche** zwischen Lid und Auge (Bindehautsack). **Nie direkt auf die Hornhaut.**\n8. Der Patient **schließt das Auge langsam**, **ohne zu kneifen**\n9. **Tupfe zu viel Flüssigkeit ab**\n\n**Danach:**\n10. **Fläschchen sofort verschließen.** Sonst kommen Keime hinein. Die Spitze nicht anfassen.\n11. **Hände desinfizieren**, dokumentieren, Auffälligkeiten am Auge dem Arzt sagen.\n\n**Für zu Hause:** Zeig dem Patienten, wie er selbst tropft: Hände waschen, Kopf anlehnen, Unterlid herunterziehen, nach oben schauen, Tropfen eingeben, Auge langsam schließen.",
+          glossarBegriffe: ["Bindehautsack", "Hornhaut", "Händedesinfektion"],
+        },
+      },
+    },
+    glossarBegriffe: ["Bindehautsack", "Hornhaut", "Händedesinfektion"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 21: brille-hoergeraet-umgang (Bloom 3) — AP-4 LE7 K7
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "ganzkoerperpflege-brille-hoergeraet",
+    themaId: "ganzkörperpflege",
+    titel: "Brille und Hörgerät: Umgang bei der Körperpflege",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Eine Patientin trägt ein Hörgerät. Du willst ihr die Haare waschen. Was machst du vorher mit dem Hörgerät — und worauf achtest du, wenn du es danach wieder einsetzt?",
+      antwort:
+        "Vor der Haarwäsche das Hörgerät (und die Brille) ablegen und sicher verwahren — Wasser und Seife schaden der Elektronik. Danach wieder einsetzen: Das Ohrpassstück muss dicht im Gehörgang sitzen, sonst pfeift das Gerät (Rückkopplung). Hörgerät und Brille machen Kommunikation und Orientierung erst möglich — ohne sie fühlen sich Betroffene schnell isoliert. (Pflege heute, Kap. 6.4 / 10.5)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Brille und Hörgerät sind Hilfsmittel, die Teilhabe ermöglichen. Vor Körper-/Haarwäsche ablegen und sicher verwahren (Wasser/Feuchtigkeit schadet dem Hörgerät, Verlustgefahr). Danach wieder einsetzen: Ohrpassstück muss dicht sitzen, sonst Rückkopplungspfeifen; Brille reinigen und aufsetzen. Aktiv darauf achten, dass der Patient seine Hilfsmittel auch nutzt (Sturzprophylaxe, Kommunikation), und bei der Reinigung helfen. (Pflege heute, Kap. 10.5 / 9.4)",
+      textB1:
+        "Brille und Hörgerät helfen dem Patienten beim Sehen, Hören und Mitmachen. Vor dem Waschen oder Haarewaschen nimmst du sie ab und legst sie sicher hin — Wasser schadet dem Hörgerät, und es kann verloren gehen. Danach setzt du sie wieder ein. Das Ohrpassstück muss fest im Ohr sitzen, sonst pfeift das Hörgerät. Achte darauf, dass der Patient Brille und Hörgerät auch wirklich trägt, und hilf beim Saubermachen.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-gkp-wb-21",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 3,
+        kompetenzbereich: "I.1",
+        quellen: ["Pflege heute (7. Aufl.), Kap. 10.5 (Hilfsmittel: Hörsysteme)", "Pflege heute (7. Aufl.), Kap. 6.4 (Haarwäsche, Hörgerät entfernen)", "I Care Pflege (Körperpflege)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-gkp-brille-hoergeraet",
+        tag: "pflege",
+        displayFormat: "checklist",
+        contentC1: {
+          title: "Brille und Hörgerät: Umgang bei der Körperpflege",
+          body: "Brille und Hörgerät sind **Hilfsmittel, die Teilhabe ermöglichen**: Der Patient orientiert sich, erkennt Mimik, versteht Gespräche. Werden sie vorenthalten oder gehen verloren, fühlen sich Betroffene schnell isoliert (Pflege heute, Kap. 10.5).\n\n**Vor der Körper- und Haarwäsche:**\n- **Brille und Hörgerät ablegen** — Wasser, Seife und Feuchtigkeit schaden der Hörgeräte-Elektronik\n- An einem **festen, sicheren Platz** verwahren (Etui, Nachttisch) — Hilfsmittel sind teuer und gehen im Bett leicht verloren\n\n**Das Hörgerät:**\n- Am gebräuchlichsten ist das **Hinter-dem-Ohr-Gerät (HdO)**: Es sitzt hinter der Ohrmuschel und ist über einen Schlauch mit dem individuell angefertigten **Ohrpassstück** im Gehörgang verbunden. Daneben gibt es kleine **Im-Ohr-Geräte (IO)**.\n- **Nicht nass werden lassen, nicht fallen lassen.** Ohrpassstück bei Bedarf reinigen.\n- **Wiedereinsetzen:** Das **Ohrpassstück muss dicht im Gehörgang abschließen** — sonst funktioniert das Gerät nicht richtig und es entsteht ein **Pfeifen (Rückkopplung)**. Anschließend einschalten.\n\n**Die Brille:**\n- Nach der Pflege **reinigen und wieder aufsetzen**\n\n**Aktive Pflegeaufgabe:** Achte darauf, dass der Patient seine Brille und sein Hörgerät **auch trägt** — besonders bei der Mobilisation (Sturzprophylaxe) und in jedem Gespräch. Gib bei Bedarf **Hilfestellung bei der Reinigung**. Manche Schwerhörige schämen sich ihres Hörgeräts — nimm ihnen die Scheu und zeige, dass es Sicherheit und Lebensqualität bringt. (Pflege heute, Kap. 9.4 / 10.5)",
+          glossarBegriffe: ["HdO-Gerät", "Ohrpassstück", "Rückkopplung"],
+        },
+        contentB1: {
+          title: "Brille und Hörgerät: Umgang bei der Körperpflege",
+          body: "Brille und Hörgerät helfen dem Patienten beim **Sehen, Hören und Mitmachen**. Ohne sie fühlt er sich schnell allein und abgeschnitten (Pflege heute, Kap. 10.5).\n\n**Vor dem Waschen und Haarewaschen:**\n- **Brille und Hörgerät abnehmen** — Wasser und Seife machen das Hörgerät kaputt\n- An einen **festen, sicheren Platz** legen (Etui, Nachttisch). Im Bett gehen kleine Sachen leicht verloren.\n\n**Das Hörgerät:**\n- Am häufigsten ist das **Hinter-dem-Ohr-Gerät**. Es sitzt hinter dem Ohr. Ein kleiner Teil (das **Ohrpassstück**) sitzt im Ohr.\n- **Nicht nass machen, nicht fallen lassen.** Ohrpassstück bei Bedarf sauber machen.\n- **Wieder einsetzen:** Das Ohrpassstück muss **fest im Ohr** sitzen. Sonst hört der Patient schlecht und es **pfeift**. Danach anschalten.\n\n**Die Brille:**\n- Nach der Pflege **putzen und wieder aufsetzen**\n\n**Wichtig:** Achte darauf, dass der Patient Brille und Hörgerät **wirklich trägt** — beim Aufstehen (Sturzgefahr!) und bei jedem Gespräch. **Hilf beim Saubermachen.** Manche schämen sich für ihr Hörgerät. Zeig ihnen: Es macht das Leben leichter und sicherer.",
+          glossarBegriffe: ["HdO-Gerät", "Ohrpassstück", "Rückkopplung"],
+        },
+      },
+    },
+    glossarBegriffe: ["HdO-Gerät", "Ohrpassstück", "Rückkopplung"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 22: sinneseinschraenkung-koerperpflege (Bloom 2) — AP-4 LE7 W4
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "ganzkoerperpflege-sinneseinschraenkung",
+    themaId: "ganzkörperpflege",
+    titel: "Seh- und Hörbehinderung: Auswirkungen auf die Körperpflege",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Ein blinder Patient möchte sich am Waschbecken so weit wie möglich selbst waschen. Was ist für ihn anders als für einen sehenden Patienten — und wie unterstützt du seine Selbstständigkeit, statt einfach zu übernehmen?",
+      antwort:
+        "Er sieht die Anordnung der Utensilien und deine Handgriffe nicht. Darum: feste, gleichbleibende Anordnung der Pflegesachen, nichts unangekündigt wegräumen, jede Handlung vorher ankündigen, Berührung erst nach Ansprache. Wassertemperatur fühlen lassen. Was er selbst ertasten und tun kann, lässt du ihn tun — Selbstständigkeit fördern. (Pflege heute, Kap. 10.6)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Sinnesbeeinträchtigungen verändern die Körperpflege. Sehbehinderung: feste Anordnung der Utensilien, mit Namen ansprechen, Berührung erst nach Ansprache, jede Handlung ankündigen, Wassertemperatur fühlen lassen, Selbstständigkeit fördern. Hörbehinderung: von vorne mit Blickkontakt sprechen, langsam und deutlich (nicht schreien), Mundbild sichtbar lassen, störende Geräusche reduzieren, wichtige Infos zusätzlich zeigen/aufschreiben. Bei beidem: Würde wahren, nicht über den Kopf hinweg handeln. (Pflege heute, Kap. 10.5 / 10.6)",
+      textB1:
+        "Wenn ein Patient schlecht sieht oder hört, ist die Körperpflege anders. Schlecht sehen: Leg die Sachen immer an den gleichen Platz. Sprich ihn mit Namen an. Fass ihn erst an, wenn du ihn angesprochen hast. Sag jede Handlung vorher an. Lass ihn das Wasser fühlen. Lass ihn selbst machen, was er kann. Schlecht hören: Sprich von vorne, schau ihn an, sprich langsam und deutlich (nicht schreien). Mach störende Geräusche aus. Zeig oder schreib wichtige Dinge auf.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-gkp-wb-22",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 2,
+        kompetenzbereich: "I.1",
+        quellen: ["Pflege heute (7. Aufl.), Kap. 10.6 (Pflege bei Sehbehinderung)", "Pflege heute (7. Aufl.), Kap. 10.5 (Pflege bei Hörstörungen)", "I Care Pflege (Körperpflege)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-gkp-sinneseinschraenkung",
+        tag: "pflege",
+        displayFormat: "checklist",
+        contentC1: {
+          title: "Seh- und Hörbehinderung: Auswirkungen auf die Körperpflege",
+          body: "Hör- und Sehfähigkeit beeinflussen, wie ein Mensch Kontakt aufnimmt und sich orientiert. Sind sie eingeschränkt, verändert das auch die Körperpflege — du musst bewusst gegensteuern, damit der Patient sich sicher fühlt und selbstständig bleibt (Pflege heute, Kap. 10.5/10.6).\n\n**Bei Sehbehinderung:**\n- **Mit Namen ansprechen** und sagen, wer du bist — der Patient erkennt dich nicht am Gesicht\n- **Berührung erst nach Ansprache** — sonst erschrickt er, wenn er plötzlich angefasst wird\n- **Jede Handlung vorher ankündigen** ('Ich wasche jetzt deinen rechten Arm')\n- **Feste, gleichbleibende Anordnung** der Pflegeutensilien — nichts unangekündigt umräumen oder wegräumen\n- **Wassertemperatur fühlen lassen** — er kann Dampf oder Beschlag nicht sehen\n- **Selbstständigkeit fördern**: Was er ertasten und selbst tun kann, lässt du ihn tun\n- Beim **Verlassen des Raums Bescheid geben** — sonst spricht er ins Leere\n\n**Bei Hörbehinderung:**\n- **Von vorne ansprechen, Blickkontakt** halten, **Mundbild sichtbar** lassen (kein Gegenlicht, Hand nicht vor den Mund) — viele lesen von den Lippen ab\n- **Langsam und deutlich** sprechen, **nicht schreien** (Schreien verzerrt das Mundbild und ist unangenehm)\n- **Störende Umgebungsgeräusche reduzieren** — laufendes Wasser, Geräte abschalten, solange du sprichst\n- Ist das **Hörgerät zur Wäsche abgelegt**, ist Verständigung schwer: mehr mit **Gestik, Zeigen und Schrift** arbeiten\n- **Wichtige Informationen zusätzlich schriftlich** geben\n\n**Bei beidem gilt:** Die Hilfsmittel (Brille, Hörgerät) verfügbar halten, die **Würde wahren** und **nicht über den Kopf des Patienten hinweg** handeln oder über ihn statt mit ihm reden. (Pflege heute, Kap. 10.5/10.6)",
+          glossarBegriffe: ["Sehbehinderung", "Hörbehinderung", "Aktivierende Pflege"],
+        },
+        contentB1: {
+          title: "Seh- und Hörbehinderung: Auswirkungen auf die Körperpflege",
+          body: "Wenn ein Patient schlecht sieht oder hört, ist die Körperpflege anders. Du musst aufpassen, dass er sich sicher fühlt und selbst mitmachen kann (Pflege heute, Kap. 10.5/10.6).\n\n**Wenn der Patient schlecht sieht:**\n- **Mit Namen ansprechen** und sagen, wer du bist\n- **Erst ansprechen, dann anfassen** — sonst erschrickt er\n- **Jede Handlung vorher sagen** ('Ich wasche jetzt deinen rechten Arm')\n- **Die Sachen immer an den gleichen Platz** legen — nichts heimlich wegräumen\n- **Wasser fühlen lassen** — er sieht den Dampf nicht\n- **Selbst machen lassen**, was er kann\n- **Sag Bescheid, wenn du den Raum verlässt**\n\n**Wenn der Patient schlecht hört:**\n- **Von vorne sprechen**, ihn **anschauen**, den **Mund frei** lassen (viele lesen von den Lippen)\n- **Langsam und deutlich** sprechen, **nicht schreien**\n- **Störende Geräusche ausmachen** (Wasser, Geräte), während du sprichst\n- Wenn das **Hörgerät abgelegt** ist: mehr mit **Zeigen und Aufschreiben** arbeiten\n- **Wichtiges zusätzlich aufschreiben**\n\n**Immer wichtig:** Brille und Hörgerät bereithalten. Die **Würde wahren**. **Mit** dem Patienten reden, nicht **über** ihn.",
+          glossarBegriffe: ["Sehbehinderung", "Hörbehinderung", "Aktivierende Pflege"],
+        },
+      },
+    },
+    glossarBegriffe: ["Sehbehinderung", "Hörbehinderung", "Aktivierende Pflege"],
     karteikarten: [],
   },
 ];

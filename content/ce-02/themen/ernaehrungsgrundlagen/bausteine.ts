@@ -1,4 +1,4 @@
-// CE-02 Thema Ernährungsgrundlagen — Wissensbausteine (16 Bausteine, 3 Stufen)
+// CE-02 Thema Ernährungsgrundlagen — Wissensbausteine (17 Bausteine, 3 Stufen)
 // Quelle: content/ce-02/themen/ernaehrungsgrundlagen/bausteine-plan.md
 // Pipeline v9 — 2026-04-23
 // Stufe 1 = Denkfrage (C1 + Vorerfahrung)
@@ -805,6 +805,56 @@ export const CE02_THEMA_ERNAEHRUNGSGRUNDLAGEN_BAUSTEINE: Wissensbaustein[] = [
       },
     },
     glossarBegriffe: ["DNQP", "PEG", "Trinknahrung", "vorbehaltene Aufgabe"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 17: sinne-im-alter (Bloom 2) — AP-4 LE8 #3
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "ernaehrungsgrundlagen-sinne-im-alter",
+    themaId: "ernaehrungsgrundlagen",
+    titel: "Geschmack, Geruch und Durst im Alter: Folgen für die Ernährung",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Eine 84-Jährige sagt, das Essen schmecke 'nach nichts', und sie trinkt kaum. Was hat sich an ihren Sinnen verändert — und warum greifst du trotzdem nicht einfach zum Salzstreuer?",
+      antwort:
+        "Im Alter lassen Geschmacks- und Geruchssinn nach, dadurch schmeckt Essen fad und der Appetit sinkt — Risiko Mangelernährung. Auch das Durstempfinden ist reduziert (Exsikkose-Gefahr). Antwort: kräftig würzen, aber mit Kräutern und Gewürzen — nicht einfach mehr Salz (Salz belastet Herz und Blutdruck). Aktiv zum Trinken auffordern, Trinkplan. (Pflege heute, Kap. 7; I Care, Ernährung im Alter)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Im Alter nehmen Geschmackssinn und Geruchssinn ab → Speisen schmecken fad, Appetit sinkt, Mangelernährung droht. Zusätzlich ist das Durstempfinden reduziert (Exsikkose-Gefahr, Wassergehalt sinkt unter 50 %). Pflege: kräftig mit Kräutern/Gewürzen würzen (nicht salzen), appetitlich anrichten, angenehmer Geruch im Essbereich, aktiv zum Trinken auffordern. (Pflege heute, Kap. 7; I Care)",
+      textB1:
+        "Im Alter schmeckt und riecht man weniger. Darum schmeckt Essen fad und der Appetit wird kleiner. Das kann zu Mangelernährung führen. Auch das Durstgefühl ist schwächer — Gefahr: der Körper trocknet aus. Pflege: kräftig mit Kräutern und Gewürzen würzen (nicht mit Salz), schön anrichten, guter Geruch im Raum, oft ans Trinken erinnern.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-ernaehr-wb-17",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 2,
+        kompetenzbereich: "I.1",
+        quellen: ["Pflege heute (7. Aufl.), Kap. 7 (Ernährung, Essen anreichen)", "I Care Pflege (Ernährung/Flüssigkeitshaushalt im Alter)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-ernaehrung-sinne-im-alter",
+        tag: "pflege",
+        displayFormat: "checklist",
+        contentC1: {
+          title: "Geschmack, Geruch und Durst im Alter",
+          body: "Mit dem Alter verändern sich die Sinne, die das Essen steuern — das hat direkte Folgen für die Ernährung (Pflege heute, Kap. 7).\n\n**Was sich verändert:**\n- **Geschmackssinn lässt nach**: Speisen schmecken fad, das Essen macht weniger Freude\n- **Geruchssinn lässt nach**: Da Schmecken und Riechen eng zusammenarbeiten, verstärkt das den Eindruck, dass Essen 'nach nichts' schmeckt. Fehlt der Geruchssinn ganz (**Anosmie**), steigt das Risiko für **Mangelernährung**\n- **Durstempfinden ist reduziert**: Im Alter sinkt der Wassergehalt des Körpers unter 50 %, gleichzeitig wird Durst schwächer empfunden — Gefahr der **Exsikkose** (Austrocknung)\n\n**Folge:** Weniger Appetit, weniger Genuss, zu wenig Trinken → Risiko für Mangelernährung und Flüssigkeitsmangel.\n\n**Konsequenzen für die Pflege:**\n- **Kräftig würzen — mit Kräutern und Gewürzen, nicht mit Salz.** Mehr Salz würde Herz und Blutdruck belasten; Kräuter bringen Geschmack ohne diesen Nachteil\n- **Appetitlich anrichten** — das Auge isst mit, gerade wenn der Geschmack nachlässt\n- **Angenehmer Geruch** im Speisebereich: Abgestandene Luft oder Geruch nach Urin und Stuhl verdirbt den Appetit; ein guter Duft regt ihn an\n- **Wunschkost** anbieten, kleine appetitliche Portionen\n- **Aktiv zum Trinken auffordern** und einen Trinkplan/ein Trinkprotokoll nutzen — auf das schwache Durstgefühl ist kein Verlass\n\nSo gleichst du die nachlassenden Sinne gezielt aus, statt nur 'mehr Salz' zu geben. (Pflege heute, Kap. 7; I Care)",
+          glossarBegriffe: ["Mangelernährung", "Exsikkose"],
+        },
+        contentB1: {
+          title: "Geschmack, Geruch und Durst im Alter",
+          body: "Im Alter verändern sich die Sinne, die beim Essen wichtig sind (Pflege heute, Kap. 7).\n\n**Was sich verändert:**\n- **Schmecken lässt nach**: Essen schmeckt fad\n- **Riechen lässt nach**: Schmecken und Riechen gehören zusammen. Darum schmeckt Essen 'nach nichts'. Wenn der Geruchssinn ganz fehlt (**Anosmie**), droht **Mangelernährung**\n- **Durst lässt nach**: Der Körper hat weniger Wasser, und der Durst wird schwächer. Gefahr: Der Körper trocknet aus (**Exsikkose**)\n\n**Folge:** Weniger Appetit, weniger Trinken → Gefahr von Mangelernährung und Flüssigkeitsmangel.\n\n**Was die Pflege macht:**\n- **Kräftig würzen — mit Kräutern und Gewürzen, nicht mit Salz.** Salz ist schlecht für Herz und Blutdruck. Kräuter geben Geschmack ohne diesen Nachteil.\n- **Schön anrichten** — das Auge isst mit\n- **Guter Geruch** im Raum: Schlechte Luft oder Uringeruch macht den Appetit kaputt. Ein guter Duft macht Appetit.\n- **Wunsch-Essen**, kleine schöne Portionen\n- **Oft ans Trinken erinnern** und mit einem Trinkplan arbeiten — auf das Durstgefühl ist kein Verlass\n\nSo hilfst du gezielt, statt nur 'mehr Salz' zu nehmen.",
+          glossarBegriffe: ["Mangelernährung", "Exsikkose"],
+        },
+      },
+    },
+    glossarBegriffe: ["Mangelernährung", "Exsikkose"],
     karteikarten: [],
   },
 ];
