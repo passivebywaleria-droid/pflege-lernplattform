@@ -22,13 +22,12 @@ Inhalt oft da, nur das Reflexions-/Diskussions-Format fehlt → Bloom „diskuti
 - [x] **Eigenes Bewegungs-/Gesundheitsverhalten** (LE6 #21) → reflection `dur-06b-eigener-rueckenschutz` in `ls-yilmaz-hueft-tep` (Kinästhetik/Rückenschutz).
 - [x] **Nahrungsverweigerung diskutieren** + **Essen im Krankenhaus** (LE8 E2/E3) → reflection `dur-10-nahrungsverweigerung-reflexion` in `ls-petrov-schlaganfall` (DNQP Ernährung, §630d BGB).
 
-## AP-2 — Anatomie/Physiologie-Grundlagen-Strang (GROSS, systematische Lücke)
-Kein dedizierter Grundlagen-Strang. Quelle durchgängig: **I Care Anatomie** (haben wir als Volltext).
-- [ ] Bewegungsapparat: **Wirbelsäule** (Aufbau/Abschnitte + alters-/entwicklungsbedingt), **Gelenklehre** (Gelenktypen, Bewegungsebenen) (LE6 #7/#8/#10)
-- [ ] **Herz-Aufbau + Herzzyklus**, **Arterien/Venen-Anatomie**, **Puls-Physiologie** (LE6 #2/#3/#4)
-- [ ] **Verdauungsorgan-Topografie** (LE8 #1)
-- [ ] **Urogenital-Topografie** (Niere/Harnleiter/Blase/Harnröhre, äußere Organe) (LE9 #1/#2)
-- *Ort offen:* eigenes Thema „Anatomie-Grundlagen" ODER Bausteine in mobilisation/ernährung/ausscheidung. **Vor Bau entscheiden.** Aufwand: 4–6 Wahrnehmung-große Bauten → aufteilen.
+## AP-2 — Anatomie/Physiologie-Grundlagen-Strang — ✅ KOMPLETT
+**Entscheidung (Gründerin 2026-06-12):** verteilt in bestehende Themen. Quelle: **I Care Anatomie**.
+- [x] Bewegungsapparat: **Wirbelsäule** + **Gelenklehre** (LE6 #7/#8/#10) → `mobilisation-wirbelsaeule-aufbau` (B14) + `mobilisation-gelenklehre` (B15). I Care Anatomie Kap. 13/13.7.1.
+- [x] **Herz-Aufbau + Herzzyklus** + **Arterien/Venen** + **Puls** (LE6 #2/#3/#4) → `thrombose-prophylaxe-herz-aufbau` (B14) + `thrombose-prophylaxe-blutgefaesse-puls` (B15). I Care Anatomie Kap. 6/7.
+- [x] **Verdauungsorgan-Topografie** (LE8 #1) → `ernaehrungsgrundlagen-verdauungstrakt-topografie` (B18). I Care Anatomie Kap. 9.
+- [x] **Urogenital-Topografie** (LE9 #1/#2) → `harnausscheidung-urogenital-topografie` (B21). I Care Anatomie Kap. 10.
 
 ## AP-3 — Alters-Breite Kind/Säugling (mittel) — ✅ KOMPLETT
 Quelle: **kinderkrankenpflege**-Korpus + Pflege heute Kap. 18.2.
@@ -51,3 +50,8 @@ Nach jedem AP: tsc + commit; nach AP-1+4 zusammen deployen + reviewen.
 
 ## Tracking
 Worklist hier abhaken. Nach Abschluss aller AP: Coverage-Validator (manuell/Agenten) erneut → Ziel: 0 FEHLT, TEILWEISE deutlich runter.
+
+## ✅ ALLE AP ABGESCHLOSSEN (2026-06-12)
+- AP-1 (4 Reflexionen), AP-3 (2), AP-4 (6), AP-2 (6 Anatomie) = **18 neue Inhalte** über 9 Themen + 4 Situationen.
+- Alle belegt (I Care/Pflege heute/Hoehl-Kullick/Prüfungswissen/MDK), B1-Variante, tsc + 411 Tests grün, deployed.
+- Offen: Coverage-Validator erneut laufen lassen zur Bestätigung 0 FEHLT.
