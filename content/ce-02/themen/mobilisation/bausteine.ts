@@ -586,7 +586,7 @@ export const CE02_THEMA_MOBILISATION_BAUSTEINE: Wissensbaustein[] = [
         stepType: "dialog",
         bloomLevel: 5,
         kompetenzbereich: "V.1",
-        quellen: ["§ 630d BGB", "§ 1906a BGB", "DNQP 2020"],
+        quellen: ["§ 630d BGB", "§ 1831 BGB", "DNQP 2020"],
         track: "basis",
         modus: "story",
         lernziel: "ce02-mob-beratung-ablehnung",
@@ -594,7 +594,7 @@ export const CE02_THEMA_MOBILISATION_BAUSTEINE: Wissensbaustein[] = [
         displayFormat: "scenario",
         contentC1: {
           title: "Beratung und Umgang mit Ablehnung der Mobilisation",
-          body: "Die Mobilisation ist ein **pflegerischer Vorschlag**, keine Verpflichtung des Patienten. Nach **§ 630d BGB** braucht jede pflegerische Maßnahme die **Einwilligung** des einwilligungsfähigen Patienten.\n\n**Ablehnung ist ein Signal, kein Problem:**\n\nOft verbirgt sich hinter 'Lass mich in Ruhe' ein anderes Bedürfnis:\n- **Schmerzen** (nicht benannt)\n- **Angst** (Sturzangst, Post-Fall-Syndrom)\n- **Depression** (antriebslos)\n- **Scham** (Blöße im Bett)\n- **Erschöpfung** (schlechter Schlaf)\n- **Fehlende Information** (warum überhaupt?)\n\n**Vorgehen in 5 Schritten:**\n\n1. **Zuhören, nicht widersprechen** — 'Das höre ich. Kannst du mir sagen, warum?'\n2. **Ursache erfragen** — offene Fragen stellen\n3. **Informieren** — laienverständlich über Konsequenzen aufklären\n4. **Alternativen anbieten** — 'Vielleicht nur bis zur Bettkante? Nach dem Kaffee?'\n5. **Dokumentieren und Arzt informieren** — bei wiederholter Ablehnung\n\n**Wann ist Zwang erlaubt?** Nur bei Einwilligungsunfähigkeit mit richterlichem Beschluss (§ 1906a BGB). Für eine routinemäßige Mobilisation: **nie**. (§ 630d BGB)",
+          body: "Die Mobilisation ist ein **pflegerischer Vorschlag**, keine Verpflichtung des Patienten. Nach **§ 630d BGB** braucht jede pflegerische Maßnahme die **Einwilligung** des einwilligungsfähigen Patienten.\n\n**Ablehnung ist ein Signal, kein Problem:**\n\nOft verbirgt sich hinter 'Lass mich in Ruhe' ein anderes Bedürfnis:\n- **Schmerzen** (nicht benannt)\n- **Angst** (Sturzangst, Post-Fall-Syndrom)\n- **Depression** (antriebslos)\n- **Scham** (Blöße im Bett)\n- **Erschöpfung** (schlechter Schlaf)\n- **Fehlende Information** (warum überhaupt?)\n\n**Vorgehen in 5 Schritten:**\n\n1. **Zuhören, nicht widersprechen** — 'Das höre ich. Kannst du mir sagen, warum?'\n2. **Ursache erfragen** — offene Fragen stellen\n3. **Informieren** — laienverständlich über Konsequenzen aufklären\n4. **Alternativen anbieten** — 'Vielleicht nur bis zur Bettkante? Nach dem Kaffee?'\n5. **Dokumentieren und Arzt informieren** — bei wiederholter Ablehnung\n\n**Wann ist Zwang erlaubt?** Nur bei Einwilligungsunfähigkeit mit richterlichem Beschluss (§ 1831 BGB). Für eine routinemäßige Mobilisation: **nie**. (§ 630d BGB)",
           glossarBegriffe: ["Einwilligung"],
         },
         contentB1: {

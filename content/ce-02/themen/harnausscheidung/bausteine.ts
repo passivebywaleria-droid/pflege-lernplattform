@@ -1,4 +1,4 @@
-// CE-02 Thema Harnausscheidung & Inkontinenz — Wissensbausteine (21 Bausteine, 3 Stufen)
+// CE-02 Thema Harnausscheidung & Inkontinenz — Wissensbausteine (22 Bausteine, 3 Stufen)
 // Quelle: content/ce-02/themen/harnausscheidung/bausteine-plan.md
 // Pipeline v9 — 2026-04-23
 // Stufe 1 = Denkfrage (starke Schüler, Bloom ≥3)
@@ -1055,6 +1055,56 @@ export const CE02_THEMA_HARNAUSSCHEIDUNG_BAUSTEINE: Wissensbaustein[] = [
       },
     },
     glossarBegriffe: ["Niere", "Ableitende Harnwege", "Harnröhre (Urethra)"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 22: aeussere-genitalorgane (Bloom 2) — Coverage-Recheck LE9 W1 (äußere Organe Urogenitalsystem)
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "harnausscheidung-aeussere-genitalorgane",
+    themaId: "harnausscheidung",
+    titel: "Die äußeren Geschlechtsorgane: Aufbau und Bezug zur Intimpflege",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Bei der Intimpflege musst du die Strukturen, die du wäschst, auch benennen können. Welche von außen sichtbaren Geschlechtsorgane unterscheidest du bei Frau und Mann — und wo mündet jeweils die Harnröhre?",
+      antwort:
+        "Bei der Frau fasst man die äußeren Geschlechtsorgane als Vulva zusammen: Schamhügel, große und kleine Schamlippen, Klitoris und Scheidenvorhof — in den Scheidenvorhof münden Harnröhre und Scheide. Beim Mann sind es Penis und Hodensack (Skrotum, enthält die Hoden); die Harnröhre mündet an der Penisspitze. (I Care Anatomie, Kap. 14)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Man unterscheidet äußere (von außen sichtbare) und innere Geschlechtsorgane. Frau — äußere Organe = Vulva: Schamhügel, große + kleine Schamlippen, Klitoris, Scheidenvorhof (hier münden Harnröhre und Scheide). Mann — Penis und Hodensack (Skrotum mit den Hoden); die Harnröhre mündet an der Penisspitze. Pflege-Bezug: korrekte Benennung und schonende, fachrichtige Intimpflege. (I Care Anatomie, Kap. 14)",
+      textB1:
+        "Es gibt äußere (sichtbare) und innere Geschlechtsorgane. Bei der Frau heißen die äußeren zusammen Vulva: Schamhügel, große und kleine Schamlippen, Klitoris und der Scheidenvorhof — dort münden Harnröhre und Scheide. Beim Mann sind es Penis und Hodensack (mit den Hoden). Das ist wichtig, damit du bei der Intimpflege weißt, was du wäschst.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-harn-wb-22-aeussere-genitalorgane",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 2,
+        kompetenzbereich: "I.1",
+        quellen: ["I Care Anatomie, Kap. 14 (äußere und innere Geschlechtsorgane)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-harn-aeussere-genitalorgane",
+        tag: "pflege",
+        displayFormat: "stepbystep",
+        contentC1: {
+          title: "Die äußeren Geschlechtsorgane",
+          body: "Die Geschlechtsorgane teilt man in **äußere** (von außen sichtbare) und **innere** (in der Beckenhöhle gelegene) Organe. Für die Pflege — besonders die **Intimpflege** — sind die äußeren Organe wichtig: Du musst sie benennen und schonend, fachrichtig reinigen können (I Care Anatomie, Kap. 14).\n\n**Bei der Frau — die Vulva:**\nDie äußeren weiblichen Geschlechtsorgane fasst man unter dem Begriff **Vulva** zusammen. Dazu gehören:\n- **Schamhügel** (Mons pubis)\n- **große Schamlippen** (Labia majora)\n- **kleine Schamlippen** (Labia minora)\n- **Klitoris** (Kitzler)\n- **Scheidenvorhof** — der Bereich zwischen den kleinen Schamlippen, in den **die Harnröhre** (hinter der Klitoris) **und die Scheide** münden\n\nDie inneren weiblichen Organe (Scheide, Gebärmutter, Eileiter, Eierstöcke) liegen geschützt in der Beckenhöhle.\n\n**Beim Mann:**\n- **Penis** (Glied) — an seiner Spitze mündet die Harnröhre\n- **Hodensack (Skrotum)** — die Hauttasche, die die beiden **Hoden** enthält\n\n**Pflege-Bezug:**\n- **Frau:** Bei der Intimpflege große Schamlippen spreizen und zwischen den Hautfalten reinigen, immer **von vorne nach hinten** (kurze Harnröhre → Schutz vor Harnwegsinfekten)\n- **Mann:** Bei der Intimpflege die **Vorhaut** zurückschieben, reinigen und **wieder vorziehen** (Schutz vor Paraphimose)\n- **Würde wahren:** Die äußeren Geschlechtsorgane gehören zur Intimsphäre — Sichtschutz, Ankündigung, gleichgeschlechtliche Pflege auf Wunsch (I Care Anatomie, Kap. 14)",
+          glossarBegriffe: ["Vulva", "Skrotum (Hodensack)", "Intimpflege"],
+        },
+        contentB1: {
+          title: "Die äußeren Geschlechtsorgane",
+          body: "Die Geschlechtsorgane teilt man in **äußere** (sichtbare) und **innere** (im Becken). Für die **Intimpflege** sind die äußeren wichtig — du musst wissen, was du wäschst (I Care Anatomie, Kap. 14).\n\n**Bei der Frau — die Vulva:**\nDie äußeren Organe heißen zusammen **Vulva**:\n- **Schamhügel**\n- **große Schamlippen**\n- **kleine Schamlippen**\n- **Klitoris**\n- **Scheidenvorhof** — dort münden **Harnröhre** und **Scheide**\n\nDie inneren Organe (Scheide, Gebärmutter, Eileiter, Eierstöcke) liegen geschützt im Becken.\n\n**Beim Mann:**\n- **Penis** — an der Spitze kommt der Urin heraus\n- **Hodensack (Skrotum)** — die Hauttasche mit den **Hoden**\n\n**Wichtig für die Pflege:**\n- **Frau:** Schamlippen vorsichtig spreizen, dazwischen reinigen, immer **von vorne nach hinten**\n- **Mann:** die **Vorhaut** zurückschieben, reinigen und **wieder nach vorne ziehen**\n- **Würde wahren:** Sichtschutz, vorher ankündigen, auf Wunsch gleichgeschlechtliche Pflege",
+          glossarBegriffe: ["Vulva", "Skrotum (Hodensack)", "Intimpflege"],
+        },
+      },
+    },
+    glossarBegriffe: ["Vulva", "Skrotum (Hodensack)", "Intimpflege"],
     karteikarten: [],
   },
 ];

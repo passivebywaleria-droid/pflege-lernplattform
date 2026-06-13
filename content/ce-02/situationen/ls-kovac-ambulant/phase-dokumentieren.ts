@@ -258,7 +258,46 @@ export const CE02_SIT_KOVAC_AMBULANT_DOKUMENTIEREN: SituationsPhase = {
       },
     },
 
-    // Step 6.4 — Summary
+    // Step 6.4 — Reflexion: Aufwand vs. Nutzen der Pflegedokumentation (Coverage LE5 E1, Bloom 5 diskutieren)
+    {
+      stepId: "ce02-kovac-dok-035-aufwand-nutzen-reflexion",
+      phase: 6,
+      stepType: "reflection",
+      bloomLevel: 5,
+      kompetenzbereich: "I.1",
+      quellen: [
+        "§ 630f BGB — Dokumentationspflicht",
+        "MDK (Hrsg.) 2005: Grundsatzstellungnahme Pflegeprozess und Dokumentation",
+        "Strukturmodell / SIS (Beikirch et al. 2017) — Entbürokratisierung",
+      ],
+      track: "basis",
+      modus: "schreibtisch",
+      lernziel: "ce02-kovac-dok-aufwand-nutzen",
+      tag: "pflege",
+      contentC1: {
+        title: "Lohnt der ganze Papierkram? Aufwand vs. Nutzen der Doku",
+        body: "Gerade in der ambulanten Pflege ist es spürbar: Zeit, die du dokumentierst, fehlt scheinbar am Patienten. Trotzdem ist die Dokumentation Pflicht und sinnvoll. Beide Seiten lohnen die Diskussion:\n\n**Nutzen:** rechtlicher Nachweis (§ 630f BGB — im Streit gilt Nicht-Dokumentiertes als nicht durchgeführt), Qualitätssicherung und Nachweis gegenüber dem Medizinischen Dienst, Informationsweitergabe im Team, Versorgungskontinuität und Patientensicherheit.\n\n**Aufwand:** Zeit am Schreibtisch statt am Menschen, Doppeldokumentation, Bürokratie-Frust. Die Antwort darauf ist nicht 'weniger dokumentieren', sondern **klüger** dokumentieren — dafür wurden die **Entbürokratisierung** mit **Strukturmodell und SIS** entwickelt.",
+        glossarBegriffe: ["Pflegedokumentation", "SIS", "Strukturmodell"],
+      },
+      contentB1: {
+        title: "Lohnt der ganze Papierkram?",
+        body: "In der ambulanten Pflege merkst du: Zeit fürs Dokumentieren fehlt beim Patienten. Trotzdem ist die Doku Pflicht und wichtig.\n\n**Was sie bringt:** Nachweis vor Gericht (§ 630f BGB — was nicht dokumentiert ist, gilt als nicht gemacht), Kontrolle der Qualität (Medizinischer Dienst), Infos fürs Team, Sicherheit für den Patienten.\n\n**Was nervt:** Zeit am Schreibtisch, doppelt schreiben, Bürokratie. Die Lösung ist nicht 'weniger schreiben', sondern **schlauer** schreiben — dafür gibt es **SIS** und das **Strukturmodell**.",
+        glossarBegriffe: ["Pflegedokumentation", "SIS"],
+      },
+      question: {
+        fragetext: "Eine Kollegin sagt: 'Die Hälfte der Doku ist doch nur Absicherung — Zeitverschwendung.' Wie diskutierst du das?",
+        reflection: {
+          prompt:
+            "Schreibe 3-5 Sätze: 1) Nenne mindestens zwei echte NUTZEN der Pflegedokumentation. 2) Nimm den AUFWAND ernst — wo ist die Kritik deiner Kollegin berechtigt? 3) Wie löst man die Spannung auf (Stichwort Entbürokratisierung / SIS), statt einfach weniger zu dokumentieren?",
+          placeholder:
+            "Nutzen ist … Berechtigt an der Kritik ist … Die Lösung ist nicht weniger, sondern … (z.B. SIS / Strukturmodell), weil …",
+          systemPrompt:
+            "Bewerte im Sandwich-Prinzip. Wägt der Schüler echte Argumente AB (Bloom 5 diskutieren), statt nur eine Seite zu nennen? Nutzen-Seite: rechtlicher Nachweis (§ 630f BGB), Qualitätssicherung/MDK, Informationsweitergabe, Patientensicherheit. Aufwand-Seite ernst genommen: Zeit, Doppeldokumentation, Bürokratie. Erkennt er, dass die Antwort 'klüger dokumentieren' (Entbürokratisierung, SIS/Strukturmodell) ist und nicht 'weniger/gar nicht'? Lob für ausgewogene Abwägung. Niemals abwertend.",
+        },
+      },
+    },
+
+    // Step 6.5 — Summary
     {
       stepId: "ce02-kovac-dok-04-session-summary",
       phase: 6,

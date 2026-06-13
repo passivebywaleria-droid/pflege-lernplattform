@@ -185,4 +185,31 @@ export const CE02_THEMA_SAEUGLINGSPFLEGE_GLOSSAR: GlossarEntry[] = [
     uebersetzungTr: "gelişim koridoru",
     uebersetzungAr: "نطاق النمو",
   },
+  {
+    begriff: "Saug-Schluck-Koordination",
+    erklaerung:
+      "Das fein abgestimmte Zusammenspiel von Saugen, Schlucken und Atmen beim Trinken. Reift erst um die 32. Schwangerschaftswoche. Frühgeborene haben ein unreifes Saugmuster und können noch nicht gleichzeitig saugen und schlucken — sie brauchen häufige Schluckpausen. (Hoehl/Kullick, Kap. 24)",
+    erklaerungB1:
+      "Das Zusammenspiel von Saugen, Schlucken und Atmen beim Trinken. Es funktioniert erst ab etwa der 32. Schwangerschaftswoche. Frühgeborene können noch nicht gleichzeitig saugen und schlucken.",
+    uebersetzungTr: "Emme-yutma koordinasyonu",
+    uebersetzungAr: "تناسق المص والبلع",
+  },
+  {
+    begriff: "Schluck-Apnoe",
+    erklaerung:
+      "Kurze Atempause während des Schluckens. Bei Frühgeborenen mit unreifer Saug-Schluck-Koordination kann sie zu einem Abfall der Sauerstoffsättigung führen. Gegenmaßnahme: Flasche häufiger herausnehmen, damit das Kind schlucken und atmen kann. (Hoehl/Kullick, Kap. 24)",
+    erklaerungB1:
+      "Eine kurze Atempause beim Schlucken. Bei Frühgeborenen kann dabei der Sauerstoff abfallen. Darum: die Flasche öfter herausnehmen, damit das Kind atmen kann.",
+    uebersetzungTr: "Yutma apnesi",
+    uebersetzungAr: "انقطاع النفس أثناء البلع",
+  },
+  {
+    begriff: "Trinkschwäche",
+    erklaerung:
+      "Kraftloses, zu langsames oder unvollständiges Trinken beim Säugling. Unspezifisches Warnzeichen, das u.a. auf unreife Saug-Schluck-Koordination, aber auch auf Infektion oder andere Erkrankungen hinweisen kann. Bei wiederholtem Nicht-Trinken oder Mahlzeiten über 30 Minuten wird sondiert. (Hoehl/Kullick, Kap. 24)",
+    erklaerungB1:
+      "Wenn ein Baby kraftlos, zu langsam oder zu wenig trinkt. Das ist ein Warnzeichen — man muss die Ursache suchen. Wenn es nicht klappt, bekommt das Kind die Nahrung über eine Sonde.",
+    uebersetzungTr: "Beslenme/emme güçlüğü",
+    uebersetzungAr: "ضعف الرضاعة",
+  },
 ];

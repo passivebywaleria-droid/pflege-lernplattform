@@ -230,4 +230,31 @@ export const CE02_THEMA_HARNAUSSCHEIDUNG_GLOSSAR: GlossarEntry[] = [
     uebersetzungTr: "İdrar yolu (üretra)",
     uebersetzungAr: "الإحليل (مجرى البول)",
   },
+  {
+    begriff: "Vulva",
+    erklaerung:
+      "Sammelbegriff für die äußeren weiblichen Geschlechtsorgane: Schamhügel, große und kleine Schamlippen, Klitoris und Scheidenvorhof. In den Scheidenvorhof münden die Harnröhre (hinter der Klitoris) und die Scheide. (I Care Anatomie, Kap. 14)",
+    erklaerungB1:
+      "Der Name für alle äußeren Geschlechtsorgane der Frau: Schamhügel, große und kleine Schamlippen, Klitoris und der Scheidenvorhof. Dort münden Harnröhre und Scheide.",
+    uebersetzungTr: "Vulva (dış kadın cinsel organları)",
+    uebersetzungAr: "الفرج (الأعضاء التناسلية الأنثوية الخارجية)",
+  },
+  {
+    begriff: "Skrotum (Hodensack)",
+    erklaerung:
+      "Hauttasche des Mannes, die die beiden Hoden enthält und zu den äußeren männlichen Geschlechtsorganen gehört (neben dem Penis, an dessen Spitze die Harnröhre mündet). (I Care Anatomie, Kap. 14)",
+    erklaerungB1:
+      "Die Hauttasche des Mannes, in der die beiden Hoden liegen. Sie gehört zu den äußeren Geschlechtsorganen — wie der Penis.",
+    uebersetzungTr: "Skrotum (testis torbası)",
+    uebersetzungAr: "كيس الصفن",
+  },
+  {
+    begriff: "Intimpflege",
+    erklaerung:
+      "Reinigung des Intimbereichs. Bei der Frau immer von vorne nach hinten (kurze Harnröhre → Schutz vor Harnwegsinfekten), beim Mann mit Zurückschieben und Wiedervorziehen der Vorhaut (Schutz vor Paraphimose). Berührt die Intimsphäre — Sichtschutz, Ankündigung und auf Wunsch gleichgeschlechtliche Pflege wahren.",
+    erklaerungB1:
+      "Das Waschen des Intimbereichs. Bei der Frau immer von vorne nach hinten. Beim Mann die Vorhaut zurückschieben, waschen und wieder vorziehen. Immer mit Sichtschutz und Respekt für die Privatsphäre.",
+    uebersetzungTr: "Mahrem bölge bakımı",
+    uebersetzungAr: "العناية بالمنطقة الحميمة",
+  },
 ];

@@ -1,4 +1,4 @@
-// CE-02 Thema Säuglingspflege — Wissensbausteine (20 Bausteine, 3 Stufen)
+// CE-02 Thema Säuglingspflege — Wissensbausteine (21 Bausteine, 3 Stufen)
 // Quelle: content/ce-02/themen/saeuglingspflege/bausteine-plan.md
 // Pipeline v9 — 2026-04-23
 // Stufe 1 = Denkfrage (starke Schüler)
@@ -1004,6 +1004,56 @@ export const CE02_THEMA_SAEUGLINGSPFLEGE_BAUSTEINE: Wissensbaustein[] = [
       },
     },
     glossarBegriffe: ["Kopfkontrolle", "Pinzettengriff", "Entwicklungskorridor", "Nacken-Rücken-Griff"],
+    karteikarten: [],
+  },
+
+  // ═══════════════════════════════════════════
+  // Baustein 21: saug-schluck-stoerung (Bloom 2) — Coverage-Recheck LE8 W6 (Saug-/Schluckstörung Säugling)
+  // ═══════════════════════════════════════════
+  {
+    bausteinId: "saeuglingspflege-saug-schluck-stoerung",
+    themaId: "saeuglingspflege",
+    titel: "Saug- und Schluckstörung beim Säugling",
+    stufe1: {
+      typ: "denkfrage",
+      frage:
+        "Ein Frühgeborenes (30. SSW) verschluckt sich beim Flaschetrinken und seine Sauerstoffsättigung fällt ab. Warum fällt gerade Frühgeborenen das Trinken so schwer — und was bedeutet das für die Art, wie du fütterst?",
+      antwort:
+        "Bis etwa zur 32. SSW ist die Koordination von Saugen, Schlucken und Atmen noch nicht ausgereift. Frühgeborene können noch nicht gleichzeitig saugen und schlucken und machen während des Schluckens eine Atempause (Schluck-Apnoe) — daher der Sättigungsabfall. Konsequenz: häufiger die Flasche aus dem Mund nehmen, damit das Kind Zeit zum Schlucken und Atmen hat. (Hoehl/Kullick, Kap. 24)",
+    },
+    stufe2: {
+      typ: "hinweis",
+      text: "Saugen, Schlucken und Atmen müssen koordiniert werden — das reift erst um die 32. SSW. Frühgeborene haben ein unreifes Saugmuster (Saugen und Schlucken nicht gleichzeitig) und machen beim Schlucken eine Atempause (Schluck-Apnoe → Sättigungsabfall). Maßnahmen: Flasche häufiger herausnehmen (Schluckpause), Lippenschluss/Schlucken unterstützen, Trinkdauer beobachten. Bei Trinkschwäche/zu langer Mahlzeit (>30 min oder 2× nicht getrunken): sondieren. (Hoehl/Kullick, Kap. 24)",
+      textB1:
+        "Ein Baby muss Saugen, Schlucken und Atmen zusammenbringen. Das lernt es erst um die 32. Schwangerschaftswoche. Frühgeborene können noch nicht gleichzeitig saugen und schlucken. Beim Schlucken atmen sie kurz nicht (Schluck-Apnoe) — dann fällt der Sauerstoff ab. Hilfe: die Flasche öfter herausnehmen, damit das Kind schlucken und atmen kann. Wenn das Trinken zu schwer ist, bekommt es die Nahrung über eine Sonde.",
+    },
+    stufe3: {
+      typ: "erklaerung",
+      step: {
+        stepId: "ce02-saeuglingspflege-wb-21-saug-schluck",
+        phase: 1,
+        stepType: "text",
+        bloomLevel: 2,
+        kompetenzbereich: "I.1",
+        quellen: ["Hoehl/Kullick: Gesundheits- und Kinderkrankenpflege, Kap. 24 (Pflege des zu früh geborenen Kindes; Saug-Schluck-Koordination, Trinkschwäche)"],
+        track: "basis",
+        modus: "entdecker",
+        lernziel: "ce02-saeuglingspflege-saug-schluck",
+        tag: "pflege",
+        displayFormat: "stepbystep",
+        contentC1: {
+          title: "Saug- und Schluckstörung beim Säugling",
+          body: "Trinken sieht einfach aus, ist für einen Säugling aber eine **komplexe Koordinationsleistung**: Saugen, Schlucken und Atmen müssen genau ineinandergreifen (Hoehl/Kullick, Kap. 24).\n\n**Warum das gestört sein kann:**\n- **Bis etwa zur 32. Schwangerschaftswoche (SSW)** ist die Koordination von **Saugen, Schlucken und Atmen** noch **nicht ausgereift**.\n- Frühgeborene haben ein **unreifes Saugmuster**: Sie können noch **nicht gleichzeitig** saugen und schlucken, sondern schlucken **vor oder nach** dem Saugen.\n- Während des Schluckens **atmet das Frühgeborene nicht** (**Schluck-Apnoe**) — das kann zu einem **Abfall der Sauerstoffsättigung** führen.\n- **Trinkschwäche** (kraftloses, zu langsames Trinken) ist außerdem ein **unspezifisches Warnzeichen** und kann auf andere Probleme hinweisen (z.B. Infektion) — immer ernst nehmen.\n\n**Was die Pflege tun kann:**\n- **Flasche häufiger aus dem Mund nehmen**, damit das Kind Gelegenheit zum **Schlucken und Atmen** hat\n- **Lippenschluss unterstützen**: leichter Druck auf den Mundringmuskel, ggf. ein Finger unter dem Kinn\n- **Schlucken anbahnen**: einen Finger leicht auf das Zungenbein legen, um das Schlucken zu ertasten/zu unterstützen\n- **Trinkdauer und -menge beobachten**: Trinkt ein Frühgeborenes **2-mal nacheinander** nicht oder braucht **mehr als 30 Minuten** für eine Mahlzeit, wird die nächste Mahlzeit **sondiert** — sonst verbraucht es beim Trinken mehr Energie, als es aufnimmt\n- **Therapeuten einbeziehen**: Bei anhaltenden Schwierigkeiten Physio-/Ergotherapie hinzuziehen\n\nSo verhinderst du, dass Trinken für das Kind zu Stress, Sättigungsabfall und Erschöpfung wird. (Hoehl/Kullick, Kap. 24)",
+          glossarBegriffe: ["Saug-Schluck-Koordination", "Schluck-Apnoe", "Trinkschwäche"],
+        },
+        contentB1: {
+          title: "Saug- und Schluckstörung beim Säugling",
+          body: "Trinken ist für ein Baby schwer: **Saugen, Schlucken und Atmen** müssen zusammenpassen (Hoehl/Kullick, Kap. 24).\n\n**Warum es schwer sein kann:**\n- **Bis etwa zur 32. Schwangerschaftswoche** klappt das Zusammenspiel von **Saugen, Schlucken und Atmen** noch nicht.\n- Frühgeborene können **nicht gleichzeitig** saugen und schlucken — sie schlucken **vor oder nach** dem Saugen.\n- Beim Schlucken **atmen sie kurz nicht** (**Schluck-Apnoe**) — dann fällt der **Sauerstoff** ab.\n- **Trinkschwäche** (kraftloses Trinken) ist ein **Warnzeichen** — nimm es immer ernst.\n\n**Was du tun kannst:**\n- **Flasche öfter herausnehmen**, damit das Kind **schlucken und atmen** kann\n- **Mund-Hilfe**: leichter Druck auf den Mund-Ringmuskel oder ein Finger unter dem Kinn\n- **Schlucken unterstützen**: einen Finger leicht aufs Zungenbein legen\n- **Beobachten**: Wenn das Kind **2-mal nacheinander** nicht trinkt oder **länger als 30 Minuten** braucht, gibst du die Nahrung über eine **Sonde**\n- **Hilfe holen**: bei großen Problemen Physio- oder Ergotherapie",
+          glossarBegriffe: ["Saug-Schluck-Koordination", "Schluck-Apnoe", "Trinkschwäche"],
+        },
+      },
+    },
+    glossarBegriffe: ["Saug-Schluck-Koordination", "Schluck-Apnoe", "Trinkschwäche"],
     karteikarten: [],
   },
 ];
