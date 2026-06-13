@@ -27,7 +27,7 @@
 
 ## Tracking
 
-- [ ] Thema 1 `kommunikationsmodelle`
+- [x] Thema 1 `kommunikationsmodelle` — 5 Bausteine, 14 Glossar (LE1-W1/W3/E2). tsc+Tests grün.
 - [ ] Thema 2 `gespraechsfuehrung`
 - [ ] Thema 3 `beratung`
 - [ ] Thema 4 `konflikt-deeskalation`
