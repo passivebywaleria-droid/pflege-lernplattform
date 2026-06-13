@@ -316,6 +316,7 @@ export async function loadPatientAcrossLEs(
 // CE-Modul-Loader (Webpack-friendly explicit map)
 const CE_MODULES: Record<string, () => Promise<Record<string, unknown>>> = {
   "ce-02": () => import("./ce-02/index"),
+  "ce-04": () => import("./ce-04/index"),
 };
 
 async function loadCeModule(ceId: string): Promise<Record<string, unknown> | null> {

@@ -28,10 +28,10 @@
 ## Tracking
 
 - [x] Thema 1 `kommunikationsmodelle` — 5 Bausteine, 14 Glossar (LE1-W1/W3/E2). tsc+Tests grün.
-- [ ] Thema 2 `gespraechsfuehrung`
-- [ ] Thema 3 `beratung`
-- [ ] Thema 4 `konflikt-deeskalation`
-- [ ] Thema 5 `kultursensible-kommunikation`
+- [x] Thema 2 `gespraechsfuehrung` — 5 Bausteine, 14 Glossar (LE1-W2/K2/E1).
+- [x] Thema 3 `beratung` — 4 Bausteine, 12 Glossar (LE1-W5/W6/K1/K5).
+- [x] Thema 4 `konflikt-deeskalation` — 4 Bausteine, 9 Glossar (LE1-W4/K3/K4).
+- [x] Thema 5 `kultursensible-kommunikation` — 6 Bausteine, 17 Glossar (LE1-W7 + LE3).
 - [ ] Coverage-Recheck LE1+LE3 → 0 FEHLT
 - [ ] Situationen (separate Welle)
 

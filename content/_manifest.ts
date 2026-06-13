@@ -124,21 +124,19 @@ export const CE_MANIFEST: CEManifestEntry[] = [
     titelShort: "Gesundheitsförderung",
     gesamtUE: 160, // 80 UE 1./2. AD + 80 UE 3. AD
     themen: [
-      // Cluster A — Grundlagen (1./2. AD)
-      "gesundheitsmodelle",
-      "impfungen-infektionsschutz",
-      "betriebliche-gesundheitsfoerderung",
-      // Cluster B — Praxis (1./2. AD)
-      "eigengesundheit",
-      "gesundheitsfoerderung-patienten",
-      "patientenberatung",
-      // Cluster C — Spezialisierung (3. AD)
-      "gesundheitsfoerderung-kinder",
-      "gesundheitsfoerderung-aeltere",
-      "gesundheitsprojekt",
+      // Cluster A — Kommunikation (LE1 + LE3) — GEBAUT (Lernergebnis-First, 2026-06-13)
+      "kommunikationsmodelle",
+      "gespraechsfuehrung",
+      "beratung",
+      "konflikt-deeskalation",
+      "kultursensible-kommunikation",
+      // Cluster B — Gesundheitsförderung (LE2) — nur Pläne, separate Welle:
+      // gesundheitsmodelle, impfungen-infektionsschutz, betriebliche-gesundheitsfoerderung,
+      // eigengesundheit, gesundheitsfoerderung-patienten, patientenberatung,
+      // gesundheitsfoerderung-kinder, gesundheitsfoerderung-aeltere, gesundheitsprojekt
     ],
-    situationen: [], // SituationsTyp: beratung — Beratungsphasen
-    status: "themen-rohmaterial",
+    situationen: [], // SituationsTyp: beratung — separate Welle
+    status: "steps",
     sortOrder: 4,
   },
   {
