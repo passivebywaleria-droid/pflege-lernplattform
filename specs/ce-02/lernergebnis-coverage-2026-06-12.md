@@ -1,5 +1,22 @@
 # CE-02 Lernergebnis-Coverage-Matrix (Rahmenlehrplan § 53 PflBG)
 
+> ## ✅ RE-VALIDIERUNG 2026-06-13 — Stand nach Lücken-Worklist (AP-1..4) + Recheck-Fixes
+>
+> Erneut mit 5 Prüf-Agenten (je 1 LE, leIndex 1–5 = Rahmenplan-LE 5–9) gegen den aktualisierten Content geprüft. **Alle FEHLT geschlossen.**
+>
+> | LE | VOLL | TEILWEISE | FEHLT (vorher→jetzt) |
+> |----|------|-----------|----------------------|
+> | 5 Pflegeprozess | 11 | 3 | 4 → **0** |
+> | 6 Mobilität | 14 | 5 | 4 → **0** |
+> | 7 Körperpflege | 13 | 0 | 2 → **0** |
+> | 8 Ernährung | 7 | 9 | 2 → **0** (W6 Säugling-Saug/Schluck nachgebaut) |
+> | 9 Ausscheidung | 6 | 7 | 1 → **0** (W1 äußere Genitalorgane nachgebaut) |
+> | **Σ** | **~51** | **~24** | **13 → 0** |
+>
+> **Recheck-Fixes (2026-06-13):** LE8 W6 → `saeuglingspflege-saug-schluck-stoerung` (B21); LE9 W1 → `harnausscheidung-aeussere-genitalorgane` (B22); LE5 E1 „diskutieren" → echter reflection-Step `ce02-kovac-dok-035-aufwand-nutzen-reflexion`; Rechtsstand §1906a→§1831 BGB.
+>
+> **Verbleibende TEILWEISE sind by-design / nicht-FEHLT:** (a) motorische Können-Ziele (Blutdruck messen, Katheter/Stoma/Beutel wechseln, UAG demonstrieren) — Plattform deckt nur kognitiv vor, Handausführung bleibt Praxis; (b) „aller Altersstufen"-Breite in einzelnen Ziele weiterhin erwachsenen-/geriatrie-betont; (c) wenige Wissens-Bündelungen (W5 Pflegediagnose-Funktion, W8 Mangelernährung↔Dekubitus-Kausalkette, soziale Dimension Bewegungseinschränkung) — Inhalt verstreut vorhanden, nicht als eigener Step gebündelt. Keine davon blockiert „0 FEHLT".
+
 **Erstellt:** 2026-06-12 · **Quelle:** Fachkommission-Rahmenlehrplan CE 02 „Zu pflegende Menschen in der Bewegung und Selbstversorgung unterstützen", Lerneinheiten 5–9 (`recherche/curriculum-generalistik-volltext/`)
 **Methode:** 5 Prüf-Agenten, je 1 LE, Abgleich offizielle Lernergebnisse (Wissen/Können/Einstellung) gegen `specs/ce-02/kernfakten/` + `content/ce-02/situationen/` + `content/ce-02/themen/`. Bewertung pro Lernergebnis: Abdeckung (VOLL/TEILWEISE/FEHLT) + Bloom-Stufe erreicht? + Altersstufen.
 
