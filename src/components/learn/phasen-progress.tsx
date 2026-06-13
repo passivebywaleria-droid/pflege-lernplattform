@@ -1,7 +1,8 @@
 "use client";
 
-import type { PflegeProzessPhase } from "../../../content/_types";
+import type { AnyPhase, PflegeProzessPhase } from "../../../content/_types";
 
+/** Standard-Pflegeprozess-Phasen (Fallback, wenn keine `phasen` übergeben werden) */
 const PHASEN_ORDER: PflegeProzessPhase[] = [
   "informieren",
   "beobachten",
@@ -12,25 +13,30 @@ const PHASEN_ORDER: PflegeProzessPhase[] = [
 ];
 
 interface PhasenProgressProps {
-  currentPhase: PflegeProzessPhase;
-  completedPhases: PflegeProzessPhase[];
-  onPhaseClick?: (phase: PflegeProzessPhase) => void;
+  currentPhase: AnyPhase;
+  completedPhases: AnyPhase[];
+  /** Phasen-Reihenfolge dieser Situation (situationsTyp-abhängig). Default: Pflegeprozess. */
+  phasen?: AnyPhase[];
+  onPhaseClick?: (phase: AnyPhase) => void;
 }
 
 /**
  * Phasen-Progress im Bundle-Stil (claude-design-bundle/v1-situation-flow.jsx).
- * 6 dünne 4px-Balken, keine Labels, keine Icons.
+ * Dünne 4px-Balken, keine Labels, keine Icons. Phasenmodell-agnostisch
+ * (Pflegeprozess, Beratung, Akut … — Reihenfolge kommt aus `phasen`).
  */
 export function PhasenProgress({
   currentPhase,
   completedPhases,
+  phasen,
   onPhaseClick,
 }: PhasenProgressProps) {
-  const currentIdx = PHASEN_ORDER.indexOf(currentPhase);
+  const order: AnyPhase[] = phasen && phasen.length > 0 ? phasen : PHASEN_ORDER;
+  const currentIdx = order.indexOf(currentPhase);
 
   return (
     <div className="flex w-full gap-1">
-      {PHASEN_ORDER.map((phase, i) => {
+      {order.map((phase, i) => {
         const done = i < currentIdx || completedPhases.includes(phase);
         const active = phase === currentPhase;
         const clickable = !!onPhaseClick && (done || active);
@@ -45,7 +51,7 @@ export function PhasenProgress({
             type="button"
             onClick={handleClick}
             disabled={!clickable}
-            aria-label={`Phase ${i + 1} von ${PHASEN_ORDER.length}: ${phase}`}
+            aria-label={`Phase ${i + 1} von ${order.length}: ${phase}`}
             aria-current={active ? "step" : undefined}
             className={`flex-1 h-1 rounded-full transition-all ${
               clickable ? "cursor-pointer" : "cursor-default"

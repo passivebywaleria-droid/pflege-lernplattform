@@ -369,7 +369,10 @@
       "planen": "Planen",
       "durchfuehren": "Durchführen",
       "evaluieren": "Evaluieren",
-      "dokumentieren": "Dokumentieren"
+      "dokumentieren": "Dokumentieren",
+      "wahrnehmen": "Wahrnehmen",
+      "einschaetzen": "Einschätzen",
+      "beraten": "Beraten"
     },
     "phasenBeschreibung": {
       "informieren": "Lerne den Patienten kennen — Anamnese, Diagnosen, Situation.",
@@ -377,7 +380,10 @@
       "planen": "Erstelle einen Pflegeplan mit Zielen und Maßnahmen.",
       "durchfuehren": "Führe die Pflegemaßnahmen durch.",
       "evaluieren": "Bewerte den Erfolg der Maßnahmen.",
-      "dokumentieren": "Dokumentiere alles fachgerecht."
+      "dokumentieren": "Dokumentiere alles fachgerecht.",
+      "wahrnehmen": "Nimm den Menschen und die Situation wahr — was fällt dir auf?",
+      "einschaetzen": "Schätze den Beratungsbedarf und die Gesprächssituation ein.",
+      "beraten": "Führe das Beratungsgespräch — personenzentriert und kultursensibel."
     },
     "phaseScore": {
       "A": "Sehr gut — du bist bereit für die nächste Phase!",

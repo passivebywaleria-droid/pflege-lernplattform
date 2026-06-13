@@ -369,7 +369,10 @@
       "planen": "Planlama",
       "durchfuehren": "Uygulama",
       "evaluieren": "Değerlendirme",
-      "dokumentieren": "Dokümantasyon"
+      "dokumentieren": "Dokümantasyon",
+      "wahrnehmen": "Algılama",
+      "einschaetzen": "Değerlendirme (durum)",
+      "beraten": "Danışmanlık"
     },
     "phasenBeschreibung": {
       "informieren": "Hastayı tanı — anamnez, tanılar, durum.",
@@ -377,7 +380,10 @@
       "planen": "Hedefler ve önlemlerle bir bakım planı oluştur.",
       "durchfuehren": "Bakım önlemlerini uygula.",
       "evaluieren": "Önlemlerin başarısını değerlendir.",
-      "dokumentieren": "Her şeyi profesyonelce belgele."
+      "dokumentieren": "Her şeyi profesyonelce belgele.",
+      "wahrnehmen": "İnsanı ve durumu algıla — neyi fark ediyorsun?",
+      "einschaetzen": "Danışmanlık ihtiyacını ve görüşme durumunu değerlendir.",
+      "beraten": "Danışmanlık görüşmesini yürüt — kişi merkezli ve kültüre duyarlı."
     },
     "phaseScore": {
       "A": "Çok iyi — bir sonraki aşamaya hazırsın!",

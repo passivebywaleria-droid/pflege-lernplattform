@@ -9,11 +9,11 @@ import { ArrowLeft } from "lucide-react";
 import { loadSituation as staticLoadSituation } from "../../../../../../content/content-loader";
 import type {
   Lernsituation,
-  PflegeProzessPhase,
+  AnyPhase,
   ContentStep,
   GlossarEntry,
 } from "../../../../../../content/_types";
-import { PhasenProgress, PHASEN_ORDER } from "@/components/learn/phasen-progress";
+import { PhasenProgress } from "@/components/learn/phasen-progress";
 import { StepRenderer } from "@/components/learn/step-renderer";
 import { PatientAvatar } from "@/components/learn/patient-avatar";
 import { CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR } from "../../../../../../content/ce-02/themen/sturz-prophylaxe/glossar";
@@ -38,11 +38,8 @@ export default function SituationLernenPage() {
 
   const [situation, setSituation] = useState<Lernsituation | null>(null);
   const [loading, setLoading] = useState(true);
-  const [currentPhaseId, setCurrentPhaseId] =
-    useState<PflegeProzessPhase>("informieren");
-  const [completedPhases, setCompletedPhases] = useState<PflegeProzessPhase[]>(
-    []
-  );
+  const [currentPhaseId, setCurrentPhaseId] = useState<AnyPhase>("informieren");
+  const [completedPhases, setCompletedPhases] = useState<AnyPhase[]>([]);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [patientModalOpen, setPatientModalOpen] = useState(false);
   // Micro-Narration: erzählerischer Übergang — wird als Intro-Text
@@ -52,18 +49,32 @@ export default function SituationLernenPage() {
   useEffect(() => {
     setLoading(true);
     staticLoadSituation(ceId, situationId)
-      .then(setSituation)
+      .then((sit) => {
+        setSituation(sit);
+        // Phasenmodell-agnostisch: auf die ERSTE Phase der Situation setzen
+        // (Pflegeprozess startet bei "informieren", Beratung bei "wahrnehmen" …)
+        if (sit?.phasen?.length) {
+          setCurrentPhaseId(sit.phasen[0].phase);
+          setCompletedPhases([]);
+          setCurrentStepIndex(0);
+        }
+      })
       .finally(() => setLoading(false));
   }, [ceId, situationId]);
 
-  const currentPhase = situation?.phasen.find((p) => p.phase === currentPhaseId);
+  // Reihenfolge der Phasen dieser Situation (situationsTyp-abhängig)
+  const phaseOrder: AnyPhase[] = situation?.phasen.map((p) => p.phase) ?? [];
+
+  const currentPhase =
+    situation?.phasen.find((p) => p.phase === currentPhaseId) ??
+    situation?.phasen[0];
   const phaseSteps: ContentStep[] = currentPhase
     ? [...currentPhase.kernSteps, ...currentPhase.optionaleSteps]
     : [];
   const currentStep = phaseSteps[currentStepIndex] ?? null;
 
   const handlePhaseClick = useCallback(
-    (phase: PflegeProzessPhase) => {
+    (phase: AnyPhase) => {
       if (completedPhases.includes(phase) || phase === currentPhaseId) {
         setCurrentPhaseId(phase);
         setCurrentStepIndex(0);
@@ -79,13 +90,13 @@ export default function SituationLernenPage() {
       if (!completedPhases.includes(currentPhaseId)) {
         setCompletedPhases((prev) => [...prev, currentPhaseId]);
       }
-      const currentIdx = PHASEN_ORDER.indexOf(currentPhaseId);
-      if (currentIdx < PHASEN_ORDER.length - 1) {
-        setCurrentPhaseId(PHASEN_ORDER[currentIdx + 1]);
+      const currentIdx = phaseOrder.indexOf(currentPhaseId);
+      if (currentIdx >= 0 && currentIdx < phaseOrder.length - 1) {
+        setCurrentPhaseId(phaseOrder[currentIdx + 1]);
         setCurrentStepIndex(0);
       }
     }
-  }, [currentStepIndex, phaseSteps.length, completedPhases, currentPhaseId]);
+  }, [currentStepIndex, phaseSteps.length, completedPhases, currentPhaseId, phaseOrder]);
 
   const handleNextStep = useCallback(() => {
     // Micro-Narration: wenn Step ein transition-Feld hat, kurzen
@@ -132,7 +143,8 @@ export default function SituationLernenPage() {
     );
   }
 
-  const allPhasesCompleted = completedPhases.length === PHASEN_ORDER.length;
+  const allPhasesCompleted =
+    phaseOrder.length > 0 && completedPhases.length === phaseOrder.length;
   const phaseLabel = t(`phasen.${currentPhaseId}`);
   const totalSteps = phaseSteps.length;
 
@@ -186,6 +198,7 @@ export default function SituationLernenPage() {
           <PhasenProgress
             currentPhase={currentPhaseId}
             completedPhases={completedPhases}
+            phasen={phaseOrder}
             onPhaseClick={handlePhaseClick}
           />
         </div>
