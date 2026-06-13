@@ -135,7 +135,7 @@ export const CE_MANIFEST: CEManifestEntry[] = [
       // eigengesundheit, gesundheitsfoerderung-patienten, patientenberatung,
       // gesundheitsfoerderung-kinder, gesundheitsfoerderung-aeltere, gesundheitsprojekt
     ],
-    situationen: [], // SituationsTyp: beratung — separate Welle
+    situationen: ["ls-demir-diabetes"], // SituationsTyp: beratung
     status: "steps",
     sortOrder: 4,
   },
