@@ -41,10 +41,10 @@ export const CE04_SIT_DEMIR_WAHRNEHMEN: SituationsPhase = {
         mcVariant: "fallstrick",
         optionen: [
           {
-            text: "Er ist desinteressiert und überlässt alles der Tochter — Beratung lohnt sich kaum.",
+            text: "Er ist wohl nicht so interessiert — ich konzentriere mich auf die Tochter, die ja ohnehin antwortet.",
             isCorrect: false,
             explanation:
-              "Vorschnell und falsch. Wegschauen kann Respekt, Verlegenheit oder Scham bedeuten — nicht Desinteresse. Eine einzelne Geste so zu deuten ist eine selektive Interpretation, die du gerade interkulturell vermeiden sollst.",
+              "Vorschnell. Wegschauen kann Respekt, Verlegenheit oder Scham bedeuten — nicht Desinteresse. Eine einzelne Geste so zu deuten ist eine selektive Interpretation, die du gerade interkulturell vermeiden sollst. Und: Der Patient ist Herr Demir, nicht die Tochter.",
             explanationB1:
               "Falsch. Wegschauen kann Respekt oder Scham heißen — nicht Desinteresse. Ein einzelnes Zeichen darfst du nicht zu schnell deuten.",
           },
@@ -264,8 +264,8 @@ export const CE04_SIT_DEMIR_BERATEN: SituationsPhase = {
                 patientResponse: "Herr Demir zieht sich weiter zurück. \"Ja, ja.\" Er stimmt zu, aber nur, um das unangenehme Gespräch zu beenden.",
                 patientResponseB1: "Herr Demir zieht sich zurück. \"Ja, ja.\" Er stimmt nur zu, um das Gespräch zu beenden.",
                 score: 1,
-                feedback: "Gut gemeint, aber Druck ('müssen') erzeugt bei einem ohnehin verunsicherten, schambesetzten Menschen Widerstand oder Schein-Zustimmung. Personenzentriert heißt: erst verstehen, was ihn zurückhält, nicht überreden.",
-                feedbackB1: "Gut gemeint, aber Druck ('müssen') macht Widerstand — oder er stimmt nur zum Schein zu. Besser: erst verstehen, was ihn zurückhält.",
+                feedback: "Gut gemeint, aber Druck ('müssen') übergeht seine Selbstbestimmung und erzeugt bei einem ohnehin verunsicherten, schambesetzten Menschen Widerstand oder Schein-Zustimmung (er sagt 'Ja', meint aber 'Nein'). Personenzentriert heißt: erst verstehen, was ihn zurückhält, nicht überreden — die Entscheidung bleibt seine.",
+                feedbackB1: "Gut gemeint, aber Druck ('müssen') übergeht sein Recht, selbst zu entscheiden. Er macht Widerstand oder stimmt nur zum Schein zu. Besser: erst verstehen, was ihn zurückhält.",
               },
               {
                 text: "\"Ich merke, das ist gerade viel für Sie. Sagen Sie mir: Was macht Ihnen am meisten Sorgen?\"",
