@@ -33,7 +33,8 @@
 - [x] Thema 4 `konflikt-deeskalation` — 4 Bausteine, 9 Glossar (LE1-W4/K3/K4).
 - [x] Thema 5 `kultursensible-kommunikation` — 6 Bausteine, 17 Glossar (LE1-W7 + LE3).
 - [x] Coverage-Recheck LE1+LE3 → 0 FEHLT (LE1 13 VOLL/1 by-design-TEILW; LE3 8 VOLL nach W4-Demenzphasen-Fix)
-- [ ] Situationen (separate Welle)
+- [x] Situationen: ls-demir-diabetes (kultursensibel) + ls-wagner-konflikt (Deeskalation), je 6 Phasen
+- [x] 3 Review-Korrektur-Zyklen (Pflege+Grounding+Didaktik+Code+Adversarial+Walkthrough) → 0 offene Findings, 0 FEHLT
 
 ## Offene Aufräum-Notiz
 - CE-03 hat nur Kommunikations-**Pläne** (fehlplatziert per Rahmenplan: CE-03 = Reflexion/Ethik). Diese Pläne nach dem CE-04-Bau löschen oder als CE-04-Material verwerten — nicht doppelt führen.
