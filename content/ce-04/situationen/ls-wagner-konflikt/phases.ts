@@ -293,9 +293,9 @@ export const CE04_SIT_WAGNER_EVALUIEREN: SituationsPhase = {
   titel: "Hat die Deeskalation gewirkt?",
   titelB1: "Hat es gewirkt?",
   kontext:
-    "Thomas Wagner ist ruhiger geworden und hat von seiner Überlastung erzählt. Gemeinsam habt ihr die Klingel in Reichweite gelegt und über Entlastung gesprochen. Wie bewertest du den Verlauf?",
+    "Frau Wagner hast du inzwischen versorgt: trockenes Bett, Haut kontrolliert, Klingel in Reichweite. Thomas Wagner ist ruhiger geworden und hat von seiner Überlastung erzählt; gemeinsam habt ihr über Entlastung gesprochen. Wie bewertest du den Verlauf?",
   kontextB1:
-    "Thomas Wagner ist ruhiger und hat von seiner Überlastung erzählt. Ihr habt die Klingel in Reichweite gelegt und über Entlastung gesprochen. Wie bewertest du das?",
+    "Frau Wagner hast du jetzt versorgt: trockenes Bett, Haut angeschaut, Klingel in Reichweite. Thomas Wagner ist ruhiger und hat von seiner Überlastung erzählt. Ihr habt über Entlastung gesprochen. Wie bewertest du das?",
   kernSteps: [
     {
       stepId: "ce04-wagner-eval-01",
@@ -378,12 +378,12 @@ export const CE04_SIT_WAGNER_DOKUMENTIEREN: SituationsPhase = {
       tag: "pflege",
       contentC1: {
         title: "Was nimmst du mit?",
-        body: "Der Vorwurf auf dem Flur war laut — aber das eigentliche Thema lag darunter. Reflektiere, was diesen Konflikt entschärft hat und wie du mit deinem eigenen Impuls (sich rechtfertigen / zurückschnauzen) umgegangen bist.",
+        body: "Der Vorwurf auf dem Flur war laut — aber das eigentliche Thema lag darunter. Beachte auch: Der Sachvorwurf hatte einen **berechtigten Kern** — eine außer Reichweite liegende Klingel ist bei beginnender Demenz ein echtes Sicherheitsrisiko. Deeskalation heißt nicht, den Sachgrund abzutun. Reflektiere, was den Konflikt entschärft hat und wie du mit deinem eigenen Impuls (sich rechtfertigen / zurückschnauzen) umgegangen bist.",
         glossarBegriffe: ["Deeskalation", "Inhalts- und Beziehungsaspekt"],
       },
       contentB1: {
         title: "Was nimmst du mit?",
-        body: "Der Vorwurf war laut — aber das eigentliche Thema lag darunter. Was hat den Konflikt entschärft? Wie bist du mit deinem eigenen Impuls (rechtfertigen / zurückreden) umgegangen?",
+        body: "Der Vorwurf war laut — aber das eigentliche Thema lag darunter. Wichtig: Der Sach-Vorwurf hatte einen **wahren Kern** — eine Klingel außer Reichweite ist bei Demenz ein echtes Sicherheits-Risiko. Deeskalieren heißt nicht, den Grund abzutun. Was hat den Konflikt entschärft? Wie bist du mit deinem eigenen Impuls (rechtfertigen / zurückreden) umgegangen?",
         glossarBegriffe: ["Deeskalation"],
       },
       question: {

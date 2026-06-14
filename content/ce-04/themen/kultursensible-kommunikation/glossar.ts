@@ -34,9 +34,9 @@ export const CE04_THEMA_KULTURSENSIBLE_KOMMUNIKATION_GLOSSAR: GlossarEntry[] = [
   {
     begriff: "direkte Kommunikation",
     erklaerung:
-      "Kommunikationsstil, der inhaltsorientiert und Ich-bezogen ist und Dinge klar und unverblümt ausspricht (gilt z.B. als typisch deutsch). Ein 'Nein' ist ein 'Nein'. (Kommunikation im Gesundheitswesen, Kap. 1)",
+      "Kommunikationsstil, der inhaltsorientiert und Ich-bezogen ist und Dinge klar und unverblümt ausspricht (ein direkter Stil ist eine Tendenz, kein fester Nationalcharakter). Ein 'Nein' ist ein 'Nein'. (Kommunikation im Gesundheitswesen, Kap. 1)",
     erklaerungB1:
-      "Ein Stil, der klar und offen sagt, worum es geht (z.B. typisch deutsch). Ein 'Nein' ist ein 'Nein'.",
+      "Ein Stil, der klar und offen sagt, worum es geht (eine Tendenz, kein fester Nationalcharakter). Ein 'Nein' ist ein 'Nein'.",
     uebersetzungTr: "Doğrudan iletişim",
     uebersetzungAr: "التواصل المباشر",
   },

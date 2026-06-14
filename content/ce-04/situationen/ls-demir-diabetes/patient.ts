@@ -16,9 +16,9 @@ export const CE04_SIT_DEMIR_PATIENT: PatientBeschreibung = {
   hintergrundB1:
     "Herr Demir kam vor 35 Jahren aus der Türkei nach Deutschland. Er spricht zu Hause Türkisch. Bei Alltags-Themen versteht er Deutsch, bei medizinischen Themen nicht gut. Seine Tochter Elif (28) ist dabei und will übersetzen. Die Diagnose Diabetes hat ihn erschreckt. Er soll jetzt Tabletten nehmen, anders essen und die Werte messen.",
   persoenlichkeit:
-    "Höflich und zurückhaltend. Kommuniziert eher indirekt: Er sagt selten offen 'Nein' und lächelt auch dann, wenn ihm etwas unangenehm ist. Über Krankheit und Körper spricht er ungern (Scham). Vermeidet Blickkontakt, wenn ihm ein Thema peinlich ist — das ist kein Desinteresse. Er möchte niemandem zur Last fallen ('machen Sie sich keine Mühe').",
+    "Höflich und zurückhaltend. Kommuniziert eher indirekt: Er sagt selten offen 'Nein' und lächelt auch dann, wenn ihm etwas unangenehm ist. Über Krankheit und Körper spricht er ungern (Scham). Vermeidet Blickkontakt, wenn ihm ein Thema peinlich ist — das ist kein Desinteresse. Er möchte niemandem zur Last fallen ('machen Sie sich keine Mühe'). WICHTIG: Das sind Herrn Demirs persönliche Eigenheiten — kein Automatismus seiner Herkunft. Ein anderer Mensch mit demselben Hintergrund kann ganz direkt und offen sein.",
   persoenlichkeitB1:
-    "Höflich und zurückhaltend. Er sagt selten offen 'Nein' und lächelt auch, wenn ihm etwas unangenehm ist. Über Krankheit spricht er ungern (Scham). Er schaut weg, wenn ihm ein Thema peinlich ist — das heißt nicht Desinteresse. Er will niemandem zur Last fallen.",
+    "Höflich und zurückhaltend. Er sagt selten offen 'Nein' und lächelt auch, wenn ihm etwas unangenehm ist. Über Krankheit spricht er ungern (Scham). Er schaut weg, wenn ihm ein Thema peinlich ist — das heißt nicht Desinteresse. Er will niemandem zur Last fallen. WICHTIG: Das ist seine persönliche Art — nicht typisch für seine Herkunft. Ein anderer Mensch von dort kann ganz anders sein.",
   zitate: [
     "Es geht schon. Machen Sie sich keine Mühe.",
     "Meine Tochter sagt mir das schon zu Hause.",

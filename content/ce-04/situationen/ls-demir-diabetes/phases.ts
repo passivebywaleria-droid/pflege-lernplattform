@@ -147,9 +147,9 @@ export const CE04_SIT_DEMIR_INFORMIEREN: SituationsPhase = {
   titel: "Verständlich informieren",
   titelB1: "Verständlich informieren",
   kontext:
-    "Mit Sprachmittlung erklärst du Herrn Demir, was Diabetes bedeutet. Er fragt leise: 'Zucker… ist das schlimm?'",
+    "Über einen hinzugezogenen Telefon-Dolmetscher (alternativ eine Kollegin mit Türkischkenntnissen) erklärst du Herrn Demir, was Diabetes bedeutet. Er fragt leise: 'Zucker… ist das schlimm?'",
   kontextB1:
-    "Mit dem Dolmetscher erklärst du, was Diabetes ist. Herr Demir fragt leise: 'Zucker… ist das schlimm?'",
+    "Über einen Telefon-Dolmetscher (oder eine Kollegin mit Türkisch) erklärst du, was Diabetes ist. Herr Demir fragt leise: 'Zucker… ist das schlimm?'",
   kernSteps: [
     {
       stepId: "ce04-demir-info-01",
@@ -215,9 +215,9 @@ export const CE04_SIT_DEMIR_BERATEN: SituationsPhase = {
   titel: "Das Beratungsgespräch",
   titelB1: "Das Beratungsgespräch",
   kontext:
-    "Du möchtest mit Herrn Demir besprechen, wie er den Alltag mit Diabetes gestaltet. Er wehrt leise ab: 'Es geht schon. Machen Sie sich keine Mühe. Meine Tochter sagt mir das schon zu Hause.'",
+    "Für das persönliche Gespräch habt ihr einen geschützten Rahmen geschaffen: Die Sprachmittlung übernimmt der Dolmetscher, Elif wartet auf eigenen Wunsch kurz draußen — so kann ihr Vater offen über Belastendes sprechen, ohne sie zu belasten. Du möchtest mit Herrn Demir besprechen, wie er den Alltag mit Diabetes gestaltet. Er wehrt leise ab: 'Es geht schon. Machen Sie sich keine Mühe. Meine Tochter sagt mir das schon zu Hause.'",
   kontextB1:
-    "Du willst mit Herrn Demir über den Alltag mit Diabetes sprechen. Er wehrt leise ab: 'Es geht schon. Machen Sie sich keine Mühe. Meine Tochter sagt mir das zu Hause.'",
+    "Für das persönliche Gespräch habt ihr einen ruhigen, geschützten Rahmen: Der Dolmetscher übersetzt, Elif wartet kurz draußen — so kann ihr Vater offen reden. Du willst mit Herrn Demir über den Alltag mit Diabetes sprechen. Er wehrt leise ab: 'Es geht schon. Machen Sie sich keine Mühe. Meine Tochter sagt mir das zu Hause.'",
   kernSteps: [
     {
       stepId: "ce04-demir-ber-01",

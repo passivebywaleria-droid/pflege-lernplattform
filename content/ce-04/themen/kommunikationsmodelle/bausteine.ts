@@ -68,7 +68,7 @@ export const CE04_THEMA_KOMMUNIKATIONSMODELLE_BAUSTEINE: Wissensbaustein[] = [
       frage:
         "Ein Patient dreht sich bei der Visite wortlos zur Wand und schweigt. 'Er kommuniziert ja gar nicht', sagt ein Schüler. Stimmt das — oder sagt das Schweigen sehr wohl etwas?",
       antwort:
-        "Es sagt sehr viel. Nach Watzlawicks 1. Axiom kann man nicht NICHT kommunizieren — jedes Verhalten (auch Schweigen, Wegdrehen) hat Mitteilungscharakter. Das Wegdrehen kommuniziert Rückzug, Ärger oder Erschöpfung. Watzlawick beschreibt 5 solcher Grundsätze (Axiome), die erklären, warum Kommunikation gelingt oder stört. (Kommunikation im Gesundheitswesen, Kap. 1)",
+        "Es sagt sehr viel. Nach Watzlawicks 1. Axiom kann man nicht NICHT kommunizieren — jedes Verhalten (auch Schweigen, Wegdrehen) hat Mitteilungscharakter. Das Wegdrehen kann möglicherweise Rückzug, Ärger oder Erschöpfung ausdrücken — was genau, musst du erfragen, nicht vorschnell deuten. Watzlawick beschreibt 5 solcher Grundsätze (Axiome), die erklären, warum Kommunikation gelingt oder stört. (Kommunikation im Gesundheitswesen, Kap. 1)",
     },
     stufe2: {
       typ: "hinweis",
