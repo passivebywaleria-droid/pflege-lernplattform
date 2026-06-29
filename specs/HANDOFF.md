@@ -66,7 +66,10 @@ Details & Reihenfolge: `specs/MASTER-BUILDPLAN.md`.
 - **Immer „du"-Anrede** — nie „Sie".
 - **Alle 3 Sprachen** gleichzeitig: `messages/{de,ar,tr}.json`.
 - **Dev-Server NIE über Claude starten.** Deploy nur über Hetzner-CLI (s. o.), nicht Vercel-Webhook.
-- **git push aus der Sandbox hängt** → User pushed selbst im Terminal.
+- **git push funktioniert aus der Sandbox** (getestet 2026-06-29, SSH-Remote, Key ohne
+  Passphrase, GitHub erreichbar). Frühere „hängt"-Notiz war Altlast. Falls es je hängt:
+  git wartet auf einen Prompt — mit `BatchMode=yes` / `GIT_TERMINAL_PROMPT=0` bricht es
+  stattdessen sofort ab.
 - **Validierung vor Commit:** `npx tsc --noEmit && npx vitest run && npm run build`.
 - **Hetzner-API-Token** steht im Chatverlauf → User sollte ihn rotieren.
 
