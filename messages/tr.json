@@ -411,5 +411,24 @@
     "wissensbausteine": "Bilgi Yapıtaşları",
     "voraussetzungen": "Ön Koşullar",
     "noThemen": "Henüz konu mevcut değil."
+  },
+  "early": {
+    "badge": "Erken Erişim",
+    "headline": "Hemşirelik eğitimin için öğrenme uygulaması — en baştan yanımızda ol",
+    "sub": "Kaydol ve erken erişim hakkı kazan. Teşekkür olarak hemen kart setini al: Almanca, Türkçe ve Arapça 100 hemşirelik terimi.",
+    "bullet1": "100 terim — Almanca, Türkçe, Arapça",
+    "bullet2": "Hemen PDF olarak öğrenmek için",
+    "bullet3": "Uygulamaya herkesten önce erken erişim",
+    "emailLabel": "E-posta adresi",
+    "emailPlaceholder": "senin@email.com",
+    "cta": "PDF'i al",
+    "ctaLoading": "Bir saniye …",
+    "privacy": "Spam yok. Sadece başlangıç bilgileri. İstediğin zaman çıkabilirsin.",
+    "successTitle": "Tamamlandı!",
+    "successBody": "Aramıza katıldığın için sevindik. İşte kart PDF'in — öğrenirken başarılar!",
+    "successDownload": "PDF'i indir",
+    "errorGeneric": "Bir şeyler ters gitti. Lütfen tekrar dene.",
+    "trust": "GDPR uyumlu · Sunucular Almanya'da",
+    "back": "← Ana sayfaya dön"
   }
 }

@@ -411,5 +411,24 @@
     "wissensbausteine": "Wissensbausteine",
     "voraussetzungen": "Voraussetzungen",
     "noThemen": "Noch keine Themen verfügbar."
+  },
+  "early": {
+    "badge": "Früher Zugang",
+    "headline": "Die Lern-App für deine Pflegeausbildung — sei von Anfang an dabei",
+    "sub": "Trag dich ein und sichere dir früheren Zugang. Als Dankeschön bekommst du sofort unser Karteikarten-Set: 100 Pflege-Fachbegriffe auf Deutsch, Türkisch und Arabisch.",
+    "bullet1": "100 Fachbegriffe — Deutsch, Türkisch, Arabisch",
+    "bullet2": "Sofort als PDF zum Lernen",
+    "bullet3": "Früher Zugang zur App vor allen anderen",
+    "emailLabel": "E-Mail-Adresse",
+    "emailPlaceholder": "deine@email.de",
+    "cta": "PDF sichern",
+    "ctaLoading": "Moment …",
+    "privacy": "Kein Spam. Nur Infos zum Start. Jederzeit abbestellbar.",
+    "successTitle": "Geschafft!",
+    "successBody": "Schön, dass du dabei bist. Hier ist dein Karteikarten-PDF — viel Erfolg beim Lernen!",
+    "successDownload": "PDF herunterladen",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuch es nochmal.",
+    "trust": "DSGVO-konform · Server in Deutschland",
+    "back": "← Zurück zur Startseite"
   }
 }

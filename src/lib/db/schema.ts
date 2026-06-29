@@ -1355,3 +1355,28 @@ export const userThemaMasteryRelations = relations(
     }),
   })
 )
+
+// ──────────────────────────────────────────────
+// Waitlist / Early Access (Marketing)
+// ──────────────────────────────────────────────
+// Sammelt E-Mails aus Social-Funnel (Link in Bio → Landingpage).
+// DSGVO: nur E-Mail + Sprache + Herkunft, keine weiteren Daten. Server DE.
+
+export const waitlistSignups = pgTable(
+  "waitlist_signups",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    email: varchar("email", { length: 320 }).notNull(),
+    language: languageEnum("language").notNull().default("de"),
+    // Herkunft (z. B. "tiktok", "instagram", "pinterest") aus utm/Query
+    source: varchar("source", { length: 80 }),
+    // Welcher Lead-Magnet versprochen wurde (z. B. "karteikarten-pdf")
+    leadMagnet: varchar("lead_magnet", { length: 80 }),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (table) => ({
+    emailIdx: uniqueIndex("waitlist_email_idx").on(table.email),
+  })
+)
