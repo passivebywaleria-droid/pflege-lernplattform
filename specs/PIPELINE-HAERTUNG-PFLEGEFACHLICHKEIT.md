@@ -31,9 +31,9 @@ ist selbst quellenbelegt, sonst Beschaffungsliste.
 | W7 | Veraltete Rechtsnorm §1906a (Tool + Content) | MITTEL | 1 | ✅ `5d59184` |
 | W9 | 800-Wörter-Cap im Validator | MITTEL | 1 | ✅ `5d59184` |
 | W8 | Drift Skript↔Regel (2 Wahrheitsquellen) | MITTEL | 1 | ✅ `3bf5d05` |
-| W2 | Grounding endet an Kernfakten (Steps ungeprüft) | KRITISCH | 2 | offen |
-| W5 | Self-Grading-Schleife (String-Existenz ≠ Stützt) | HOCH | 2 | offen |
-| W3 | Faktentreue-Gate faktisch AUS (exit 0) | KRITISCH | 2 | offen |
+| W2 | Grounding endet an Kernfakten (Steps ungeprüft) | KRITISCH | 2 | ✅ `9564c62` |
+| W5 | Self-Grading-Schleife (String-Existenz ≠ Stützt) | HOCH | 2 | ✅ `9564c62` |
+| W3 | Faktentreue-Gate faktisch AUS (exit 0) | KRITISCH | 2 | ✅ `9564c62` |
 | W1 | Keine klinische Zahlen-Validierung | KRITISCH | 3 | offen |
 | W4 | Anti-Pattern-Netz winzig + Sturz-zentriert | HOCH | 3 | offen |
 | W6 | Einzel-LLM-Validator, kein Mehr-Augen | HOCH | 4 | offen |
@@ -70,6 +70,37 @@ lernende-sichtbaren Text ausdehnen.
   aktiv, wenn Kernfakten-Coverage > Schwelle).
 - **Abhängigkeit:** braucht Kernfakten pro Thema (eigener Arbeitsstrang). Bis dahin bleibt
   es Warn-Modus — aber sichtbar geloggt, nicht stumm.
+
+### ✅ Stage 2 — umgesetzt (2026-06-30)
+
+**W2 — Step-Level-Grounding**
+- Schema: `kernfaktId?: string[]` in `ContentStep` (`content/_types.ts`). Format pro Eintrag:
+  bare `"F-08"` (Thema = `themaPrimaer`) oder qualifiziert `"sturz-prophylaxe/F-08"`.
+- Pipeline-Sync (7 Stellen): `_types.ts`, didaktik-regisseur, content-generator,
+  didaktik-pruefer (neues K.O.-Kriterium **F12**), GESAMT-PROMPT-v2, ADAPTIVER-THEMENBOGEN, MEMORY.
+- `scripts/step-grounding-check.ts <ce> [--strict]`: lädt echte Steps (dyn. Import der
+  `content/{ce}/index.ts`), Whitelist claim-freier Typen (reflection/selfrating/confidence/
+  crowdPoll/audio/speech). **Auto-Strict pro Situation**: sobald eine Situation ≥1 Grounding
+  hat, müssen ALLE claim-tragenden Steps gegroundet sein; sonst Warn (Coverage-Hinweis).
+  **Dangling-Refs immer FAIL.** Pure Kern + `tests/unit/step-grounding.test.ts` (17 Tests).
+- CE-02-Baseline: alle Situationen „nicht adoptiert" (noch keine kernfaktId) → exit 0,
+  bereit fürs schrittweise Nachrüsten.
+
+**W5 — Semantischer Stützt-Check (adversarial)**
+- `scripts/stuetzt-check.ts --file <kernfakten.md> [--strict]`: parst Claim↔Beleg-Paare,
+  befragt **3 unabhängige Lenses** (wortlaut / spezifisch / skeptiker) per Nebius-Llama,
+  **Mehrheits-Entscheid** (STUETZT braucht echte Mehrheit, kein Self-Grading). Build-Zeit,
+  nicht CI. Ohne `NEBIUS_API_KEY` sichtbarer Skip (exit 0). Injizierbarer `Judge` →
+  `tests/unit/stuetzt-check.test.ts` (12 Tests, Mock-Judge).
+
+**W3 — Faktentreue-Gate scharfschalten**
+- `scripts/faktentreue-check.ts`: Coverage = Kernfakten-Themen / CE-Themen. **Coverage ≥ 80 %
+  → STRICT (exit 1 bei ungedecktem Instrument)**, sonst sichtbarer WARN (exit 0). Override
+  `--strict`/`--warn`. Pure Kern (`computeCoverage`/`decideMode`/`gateExitCode`) +
+  `tests/unit/faktentreue-gate.test.ts` (14 Tests). CE-02 jetzt STRICT (100 % Coverage,
+  0 Lücken → PASS); CE-04 WARN (0 Kernfakten).
+
+Gates grün: `tsc` ✅ · vitest 458 ✅ (+43 neu) · `build` ✅.
 
 ---
 

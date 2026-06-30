@@ -126,7 +126,9 @@ Plus: TSC + Content-Lint
 **Quellenbindung (Pipeline v10) — zusätzliche Gates:**
 ```bash
 npx tsx scripts/zitat-verifizierer.ts --check-file specs/ce-{NN}/kernfakten/{thema}.md  # Kernfakt-Belege verifiziert?
-npx tsx scripts/faktentreue-check.ts ce-{NN}                                            # Instrumente in Faktenbasis gedeckt?
+npx tsx scripts/step-grounding-check.ts ce-{NN}                                         # W2: claim-tragende Steps an F-XX gebunden?
+npx tsx scripts/stuetzt-check.ts --file specs/ce-{NN}/kernfakten/{thema}.md             # W5: Zitat stützt den KONKRETEN Claim? (LLM, Build-Zeit)
+npx tsx scripts/faktentreue-check.ts ce-{NN}                                            # W3: Instrumente in Faktenbasis gedeckt? (ab Coverage ≥80% scharf)
 npx tsx scripts/pflege-anti-pattern-check.ts content/ce-{NN}                            # mechanisierte Anti-Patterns (Pre-Filter)
 ```
 

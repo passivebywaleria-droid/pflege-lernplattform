@@ -131,7 +131,9 @@ Jede `id` im Skript MUSS hier stehen und umgekehrt. Der Test `tests/unit/pflege-
 | `AP-GLUECK-VOR-ASSESSMENT` | HOCH | „Glück gehabt" vor abgeschlossenem Assessment |
 | `AP-BETTGITTER-BEIDSEITIG` | HOCH | Beidseitige Bettgitter ohne Genehmigung (FeM, § 1831 Abs. 4 BGB) |
 
-**Quellenbindung (Pipeline v10):** Kernfakten brauchen verifizierte Verbatim-Belege (`scripts/zitat-verifizierer.ts --check-file`), Content darf keine ungedeckten Instrumente/Standards enthalten (`scripts/faktentreue-check.ts`). Grounding-Quellen: `recherche/dnqp-standards-index/` + `recherche/*-volltext/` (Lesereihenfolge-Extraktion, NICHT die `-layout`-Indexe).
+**Quellenbindung (Pipeline v10):** Kernfakten brauchen verifizierte Verbatim-Belege (`scripts/zitat-verifizierer.ts --check-file`), Content darf keine ungedeckten Instrumente/Standards enthalten (`scripts/faktentreue-check.ts` — ab Kernfakten-Coverage ≥ 80 % scharf/exit 1). Grounding-Quellen: `recherche/dnqp-standards-index/` + `recherche/*-volltext/` (Lesereihenfolge-Extraktion, NICHT die `-layout`-Indexe).
+
+**Step-Level-Grounding (W2/W5, Stage 2):** Jeder claim-tragende Step trägt `kernfaktId: ["F-XX"]`; geprüft mit `scripts/step-grounding-check.ts <ce>` (Auto-Strict pro Situation, Dangling-Refs = Fehler). Vor Live-Deploy zusätzlich der semantische Stützt-Check `scripts/stuetzt-check.ts --file <kernfakten.md>` (3 LLM-Lenses, Mehrheits-Entscheid „stützt das Zitat den KONKRETEN Claim?"; braucht `NEBIUS_API_KEY`).
 
 ## Trigger für pflege-validator
 

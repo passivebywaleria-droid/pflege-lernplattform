@@ -536,7 +536,18 @@ Nach der Generierung:
 ## Gates
 - [ ] `npx tsc --noEmit` → 0 Fehler
 - [ ] **Quellenbindung (Pipeline v10):** Die Kernfakten tragen `**Beleg:**`-Blöcke (verifizierte Verbatim-Zitate). Du erfindest KEINE Fakten/Zahlen/Standards, die nicht in den belegten Kernfakten stehen. `quellen[]` pro Step = die Primärquelle des zugrundeliegenden Kernfakts.
-- [ ] **`npx tsx scripts/faktentreue-check.ts ce-{NN}`** → kein benanntes Instrument/Standard im Content ohne Faktenbasis-Deckung (sonst Coverage-Lücke melden ODER ist erfunden → STOPP).
+- [ ] **Step-Level-Grounding (W2):** Jeder claim-tragende Step trägt `kernfaktId: ["F-XX", …]` — die `F-XX`-IDs aus dem Sessionplan, die seinen klinischen Inhalt stützen. Bare `"F-08"` (Thema = `themaPrimaer`) oder qualifiziert `"sturz-prophylaxe/F-08"`. Claim-freie Steps (reflection, selfrating, confidence, crowdPoll, estimation, audio, speech, summary, timer, memory) brauchen es nicht. Template:
+  ```typescript
+  {
+    stepId: "ce02-frau-m-beob-01-schellong",
+    stepType: "mc",
+    themaPrimaer: "sturz-prophylaxe",
+    kernfaktId: ["F-08"],          // ← W2: bindet Step an Kernfakt
+    // ...
+  }
+  ```
+- [ ] **`npx tsx scripts/step-grounding-check.ts ce-{NN}`** → jede angefangene Situation hat ALLE claim-tragenden Steps gegroundet, keine Dangling-Refs (kernfaktId zeigt auf existierenden `F-XX`).
+- [ ] **`npx tsx scripts/faktentreue-check.ts ce-{NN}`** → kein benanntes Instrument/Standard im Content ohne Faktenbasis-Deckung (sonst Coverage-Lücke melden ODER ist erfunden → STOPP). Ab Kernfakten-Coverage ≥ 80 % ist das Gate **scharf** (exit 1).
 
 ## TypeScript-Check
 npx tsc --noEmit → {0 Fehler / N Fehler}

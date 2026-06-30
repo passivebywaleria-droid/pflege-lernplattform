@@ -148,3 +148,4 @@ Dozentin-Review, Pflege-Härtung. Diese drei lassen sich nicht beschleunigen.
 | 2026-06-14 | CE-04 Kommunikation | 5 Themen + 2 Situationen, 3 Review-Zyklen, 0 FEHLT, deployed |
 | 2026-06-29 | Master-Buildplan angelegt | diese Datei |
 | 2026-06-29 | Landing-Überarbeitung (Design-Chat) | B2C-Landing neu (Warteliste-first, Gründerin Waleria, DE/TR/AR, hreflang/OG); app-weit Teal→Dusty-Rose; Play-then-Gate als Spec (specs/SPEC-PLAY-THEN-GATE.md). tsc/build/vitest ✅. Offen: Commit+Deploy, Gate-Bau (eigener Chat) |
+| 2026-06-30 | Pipeline-Härtung Stage 2 (W2/W5/W3) | Step-Grounding (`kernfaktId` + `step-grounding-check.ts`), adversarialer Stützt-Check (`stuetzt-check.ts`, 3 Lenses), Faktentreue-Gate scharf (Coverage≥80%→exit 1). +43 Tests, tsc/vitest(458)/build ✅. CE-02 STRICT-PASS. Nächste: Stage 3 (W1/W4) |

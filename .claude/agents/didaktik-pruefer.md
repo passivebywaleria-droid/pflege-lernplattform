@@ -104,7 +104,7 @@ content/ce-{NN}/rohmaterial/
 
 ---
 
-## 39 Semantische Kriterien (10 K.O.)
+## 45 Semantische Kriterien (13 K.O.)
 
 ### Block U: Urheberrecht (1 Kriterium, K.O.)
 
@@ -117,15 +117,17 @@ content/ce-{NN}/rohmaterial/
 2. Bei FAIL → zurück an Dozentin mit konkreten Blöcken
 3. Manuell prüfen: Keine I-Care-Referenzen in Wissensbausteine, Phasen-Steps, Glossar
 
-### Block F: Fakten-Treue (3 Kriterien, alle K.O.)
+### Block F: Fakten-Treue (4 Kriterien, alle K.O.)
 
 | # | Kriterium | Prüfung | K.O.? |
 |---|-----------|---------|-------|
 | **F7** | **Fachliche Korrektheit** | Jeder Fakt im TypeScript stimmt mit Rohmaterial überein. Zahlen, Prozentzahlen, Studienaussagen 1:1. Gilt für Wissensbausteine UND Situations-Steps. | **K.O.** |
 | **F10** | **Fachliche Gefahr** | Keine Dosierungsfehler, keine gefährlichen Handlungsanweisungen. Besonders kritisch in Phase 4 (Durchführen) und Komplikations-Steps. | **K.O.** |
 | **F11** | **Halluzinations-Nachweis** | Jede Prozentzahl, Statistik oder namentliche Studie muss im Rohmaterial mit Quelle belegt sein. Bekannte Muster: "X% aller...", Mehrabian-Mythos, erfundene Studienergebnisse. Bei EINEM Treffer: sofort K.O. | **K.O.** |
+| **F12** | **Step-Level-Grounding (W2)** | `npx tsx scripts/step-grounding-check.ts ce-{NN}` läuft ohne Fehler: jede angefangene Situation hat ALLE claim-tragenden Steps mit `kernfaktId` versehen, jede `kernfaktId` zeigt auf einen existierenden, verifizierten `F-XX` (keine Dangling-Refs). | **K.O.** |
 
 **Prüfmethode F7/F11**: Nimm 10 zufällige Fakten aus Wissensbausteinen + 5 aus Situations-Steps und vergleiche WÖRTLICH mit Rohmaterial. Bei Abweichung → systematisch alle prüfen.
+**Prüfmethode F12**: Skript-Lauf — exit 0 = PASS. Findings im Report nennen genau Step-ID + fehlende/ungültige Referenz.
 
 ### Block B: Didaktische Kohärenz (2 Kriterien, beide K.O.)
 
@@ -252,7 +254,7 @@ content/ce-{NN}/rohmaterial/
 | Kategorie | Kriterien | K.O. |
 |-----------|-----------|------|
 | Urheberrecht (U) | 1 | 1 (U1) |
-| Fakten-Treue (F) | 3 | 3 (F7, F10, F11) |
+| Fakten-Treue (F) | 4 | 4 (F7, F10, F11, F12) |
 | Didaktische Kohärenz (B) | 2 | 2 (B5, B6) |
 | **Situations-Kohärenz (S)** | **7** | **2 (S1, S4)** |
 | Textqualität (I) | 7 | 1 (I7) |
@@ -266,9 +268,9 @@ content/ce-{NN}/rohmaterial/
 | Tonalität + Glossar (CQ) | 3 | 0 |
 | **Wissensbausteine (WB)** | **1** | **0** |
 | **MC-Qualität + Feedback (M)** | **5** | **2 (M1, M2)** |
-| **Gesamt** | **44** | **12 K.O.** |
+| **Gesamt** | **45** | **13 K.O.** |
 
-**K.O.-Kriterien (12):** U1, F7, F10, F11, B5, B6, S1, S4, I7, P6, M1, M2
+**K.O.-Kriterien (13):** U1, F7, F10, F11, F12, B5, B6, S1, S4, I7, P6, M1, M2
 
 ---
 

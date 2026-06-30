@@ -1,0 +1,80 @@
+{
+  "ce": "ce-02",
+  "reports": [
+    {
+      "situationId": "frau-m-nacht-sturz",
+      "claimBearingTotal": 44,
+      "grounded": 0,
+      "adopted": false,
+      "findings": []
+    },
+    {
+      "situationId": "ls-yilmaz-hueft-tep",
+      "claimBearingTotal": 45,
+      "grounded": 0,
+      "adopted": false,
+      "findings": []
+    },
+    {
+      "situationId": "ls-bauer-demenz-sturz",
+      "claimBearingTotal": 63,
+      "grounded": 0,
+      "adopted": false,
+      "findings": []
+    },
+    {
+      "situationId": "ls-emilia-saeugling",
+      "claimBearingTotal": 45,
+      "grounded": 0,
+      "adopted": false,
+      "findings": []
+    },
+    {
+      "situationId": "ls-petrov-schlaganfall",
+      "claimBearingTotal": 45,
+      "grounded": 0,
+      "adopted": false,
+      "findings": []
+    },
+    {
+      "situationId": "ls-schmidt-adipositas",
+      "claimBearingTotal": 45,
+      "grounded": 0,
+      "adopted": false,
+      "findings": []
+    },
+    {
+      "situationId": "ls-yilmaz-spirale2",
+      "claimBearingTotal": 61,
+      "grounded": 0,
+      "adopted": false,
+      "findings": []
+    },
+    {
+      "situationId": "ls-kovac-ambulant",
+      "claimBearingTotal": 57,
+      "grounded": 0,
+      "adopted": false,
+      "findings": []
+    },
+    {
+      "situationId": "ls-nguyen-stoma",
+      "claimBearingTotal": 53,
+      "grounded": 0,
+      "adopted": false,
+      "findings": []
+    },
+    {
+      "situationId": "ls-lukas-verbruehung",
+      "claimBearingTotal": 39,
+      "grounded": 0,
+      "adopted": false,
+      "findings": []
+    }
+  ],
+  "totals": {
+    "totalFindings": 0,
+    "dangling": 0,
+    "missing": 0
+  }
+}

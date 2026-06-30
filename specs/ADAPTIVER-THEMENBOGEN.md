@@ -690,3 +690,18 @@ Jeder Step wird einer der 3 Säulen der Pflegeausbildung zugeordnet (wie I Care 
 - Lehrer sieht Review-Fortschritt pro Schüler
 - Schwächen-Übersicht pro Klasse
 - Lernzeit-Export (PDF) inkl. Review-Zeit
+
+---
+
+## Step-Level-Grounding im Phasen-Bogen (W2 — Pipeline-Härtung Stage 2)
+
+Der Spannungsbogen (einführen → erklären → vertiefen → anwenden) ist didaktisch — die
+fachliche **Stütze** jedes claim-tragenden Steps bleibt der Kernfakt. Darum trägt jeder
+solche Step `kernfaktId: ["F-XX", …]` (Referenz auf `specs/{ce}/kernfakten/{thema}.md`).
+
+- **Einführen/Erklären/Vertiefen/Anwenden**-Steps mit klinischem Inhalt → kernfaktId Pflicht.
+- **Checkpoint-/Brücken-/Reflexions-/Confidence-Steps** ohne neuen Fakt → claim-frei, keine
+  Referenz (Whitelist in `scripts/step-grounding-check.ts`).
+- Spiralcurriculum/Wiederbegegnung (`WiederbegegnungEintrag`): der wiederbegegnende Step
+  referenziert denselben `F-XX` wie die Erst-Einführung — die Bindung bleibt über Situationen
+  hinweg konsistent und maschinenprüfbar.

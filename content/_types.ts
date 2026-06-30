@@ -793,6 +793,17 @@ export interface ContentStep {
   themaPrimaer?: string;        // z.B. "sturz-prophylaxe"
   themenSekundaer?: string[];   // z.B. ["schmerz", "kommunikation"]
 
+  // Step-Level-Grounding (W2) — Referenzen auf die Kernfakten, die die klinischen
+  // Claims dieses Steps stützen. Jeder Eintrag ist ein Kernfakt-Schlüssel, entweder
+  //   - bare:        "F-08"                  → aufgelöst über themaPrimaer
+  //   - vollqualifiziert: "sturz-prophylaxe/F-08"  → explizites Thema
+  // gegen `specs/{ce}/kernfakten/{thema}.md` (Header `### F-08: …`).
+  // Pflicht für claim-tragende Step-Typen (mc, sorting, truefalse, inlineWissen …);
+  // claim-freie Typen (reflection, selfrating, confidence …) brauchen keine Referenz.
+  // Geprüft von scripts/step-grounding-check.ts (Auto-Strict pro Situation,
+  // Dangling-Refs = harter Fehler). Ein Step kann mehrere Fakten bündeln → Array.
+  kernfaktId?: string[];
+
   contentC1: {
     title: string;
     body: string;

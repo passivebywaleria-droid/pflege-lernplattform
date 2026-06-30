@@ -238,6 +238,23 @@ Pro Step mit Bild-Slot:
 
 ---
 
+## Step-Level-Grounding (W2 — Pipeline-Härtung Stage 2)
+
+Jeder **claim-tragende** Step (mc, sorting/sequencing, truefalse, categorize, highlight,
+errorspot, cloze, fillin, calculation, comparison, careplan, text mit Fakten, inlineWissen,
+matching, pflegewagen, branching, dialog, swipe, timeline …) bekommt im Sessionplan eine
+Spalte **`kernfaktId`** — die `F-XX`-IDs der Kernfakten, die den klinischen Inhalt stützen.
+Format: `F-08` (Thema = `themaPrimaer`) oder `sturz-prophylaxe/F-08` (explizit).
+Claim-**freie** Steps (reflection, selfrating, confidence, crowdPoll, estimation, audio,
+speech, summary, timer, memory) brauchen **keine** kernfaktId.
+
+→ Der Baustein-Ref pro Step zeigt bereits auf den Kernfakt — die `kernfaktId` macht diese
+Bindung maschinenprüfbar (`scripts/step-grounding-check.ts`). Regel: **Sobald eine Situation
+beginnt zu grounden, MÜSSEN alle claim-tragenden Steps der Situation kernfaktId tragen**
+(Auto-Strict pro Situation).
+
+---
+
 ## Output-Format: Sessionplan
 
 ### Pro Thema
