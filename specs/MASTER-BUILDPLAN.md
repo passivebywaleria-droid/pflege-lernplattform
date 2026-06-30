@@ -73,17 +73,42 @@ Infra/Dozentin/Design-Chats dürfen parallel (andere Dateien).
 
 ## 4. CE-Rezept (Pilot-Tiefe) — identisch für jeden CE-Bau-Chat
 
+**Arbeitsteilung (wichtig): Generierung = Chat-direkt, Prüfung = Skript.**
+Schritte 1-3 (Grounding, Bausteine, Situationen) werden **chat-getrieben mit vollem
+Kontext** gebaut — NICHT über die Sub-Agent-Generatoren. Grund: voller Kontext = weniger
+Drift Richtung „klingt empathisch statt ist korrekt" (siehe pflege-konformitaet.md).
+Schritte 4-5 (Härtung, Coverage) laufen über die **Skripte** — die prüfen tireless,
+exhaustiv und deterministisch, was ein Mensch/Chat in Zeile 400 übersieht.
+
 ```
-1. Grounding   → kernfakten/{thema}.md aus recherche/ (Verbatim-Belege, kein erfundener Content)
-2. Bausteine   → v2-Stil (Lehr-Patient + Anker+Spektrum + Aha-Moment + Wiederbegegnung)
-3. Situationen → 2-3 Leitsituationen mit phases.ts
-4. Härtung     → doppelter Pflege-Check (pflege-validator mode=plan + mode=code)
-5. Coverage    → npx tsx scripts/lernergebnis-coverage-scaffold.ts <ce> → recheck bis 0 FEHLT
+1. Grounding   → kernfakten/{thema}.md aus recherche/ (Verbatim-Belege, kein erfundener Content)  [CHAT]
+2. Bausteine   → v2-Stil (Lehr-Patient + Anker+Spektrum + Aha-Moment + Wiederbegegnung)            [CHAT]
+3. Situationen → 2-3 Leitsituationen mit phases.ts                                                  [CHAT]
+4. Härtung     → doppelter Pflege-Check (pflege-validator mode=plan + mode=code)                    [SKRIPT]
+5. Coverage    → npx tsx scripts/lernergebnis-coverage-scaffold.ts <ce> → recheck bis 0 FEHLT       [SKRIPT]
+   + Cross-Naht → npx tsx scripts/cross-le-checker.ts (Glossar/Patienten/Begriffs-Konsistenz)
 6. Verdrahten  → content-loader.ts (CE_MODULES) + _manifest.ts + deployen (Hetzner)
 7. Abschluss   → commit + MEMORY.md + diesen Plan (Status auf ✅, Tiefe eintragen)
 ```
 
 Validierung vor Commit: `npx tsc --noEmit && npx vitest run && npm run build`
+
+### Session-Erneuerung (wenn die Quali nachlässt)
+
+Die „1 CE pro Chat"-Regel ist KEINE harte Grenze — der Staffelstab (§1) trägt den Stand
+über eine frische Session. Wenn der Kontext voll wird / die Quali spürbar nachlässt:
+
+1. **Build-Journal pflegen** — der Chat notiert *während* des Bauens die harten Fakten in
+   `content/{ce}/BUILD-JOURNAL.md`: Patient (Name/Alter/Diagnose/Ton), welches LE wo
+   abgedeckt, offene Entscheidungen. Das ist die Naht-Versicherung.
+2. **Snapshot** — commit + MEMORY/Journal updaten.
+3. **Frische Session booten** — Boot-Satz (§0) + „lies content/{ce}/BUILD-JOURNAL.md,
+   mach weiter bei <Schritt>". Bootet nahtlos.
+4. **Naht-Brüche fängt das Skript** — `cross-le-checker.ts` prüft Glossar/Patienten/
+   Begriffs-Drift über Sessions hinweg.
+
+→ Nicht „1 CE dann Stopp", sondern: **bauen bis zur Degradierung → snapshot → erneuern.**
+Nicht alle 10 Min erneuern (Re-Orientierung kostet Tokens), sondern bei spürbarem Abfall.
 
 ---
 
