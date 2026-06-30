@@ -89,20 +89,20 @@ export const CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR: GlossarEntry[] = [
   {
     begriff: "Fixierung",
     erklaerung:
-      "Freiheitsentziehende Maßnahme. Umfasst u.a. beidseitige Bettgitter ohne Zustimmung, Gurte, sedierende Bedarfs-Medikation. Nur mit richterlicher Genehmigung oder informierter Einwilligung erlaubt (§ 1906a BGB). Keine Sturzprophylaxe.",
+      "Freiheitsentziehende Maßnahme. Umfasst u.a. beidseitige Bettgitter ohne Zustimmung, Gurte, sedierende Bedarfs-Medikation. Nur mit richterlicher Genehmigung oder informierter Einwilligung erlaubt (§ 1831 BGB). Keine Sturzprophylaxe.",
     erklaerungB1:
       "Jemanden festhalten (Bettgitter beidseits, Gurte). Nur erlaubt mit Erlaubnis vom Gericht oder vom Patienten selbst. Keine Sturzprophylaxe.",
     uebersetzungTr: "Fiksasyon / Kısıtlama",
     uebersetzungAr: "التقييد",
   },
   {
-    begriff: "§ 1906a BGB",
+    begriff: "§ 1831 BGB",
     erklaerung:
       "Rechtliche Grundlage für die Genehmigung freiheitsentziehender Maßnahmen in Deutschland. Fixierung braucht richterliche Genehmigung oder informierte Einwilligung.",
     erklaerungB1:
       "Gesetz in Deutschland. Sagt: Jemanden festhalten (Fixierung) geht nur mit Erlaubnis vom Gericht oder vom Patienten.",
-    uebersetzungTr: "§ 1906a Alman Medeni Kanunu",
-    uebersetzungAr: "المادة 1906a من القانون المدني الألماني",
+    uebersetzungTr: "§ 1831 Alman Medeni Kanunu",
+    uebersetzungAr: "المادة 1831 من القانون المدني الألماني",
   },
   {
     begriff: "Timed-Up-and-Go",

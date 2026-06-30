@@ -125,9 +125,9 @@ export const CE02_THEMA_KONTRAKTUR_PROPHYLAXE_GLOSSAR: GlossarEntry[] = [
   {
     begriff: "Freiheitsentziehende Maßnahme (FeM)",
     erklaerung:
-      "Maßnahme, die die Bewegungsfreiheit eines Patienten einschränkt (Gurte, Bettgitter, Medikamente). Benötigt nach § 1906a BGB Einwilligung oder richterliche Genehmigung. Kann selbst Kontrakturen verursachen.",
+      "Maßnahme, die die Bewegungsfreiheit eines Patienten einschränkt (Gurte, Bettgitter, Medikamente). Benötigt nach § 1831 BGB Einwilligung oder richterliche Genehmigung. Kann selbst Kontrakturen verursachen.",
     erklaerungB1:
-      "Etwas, das den Patienten **festhält** — zum Beispiel Gurte, Bettgitter oder bestimmte Medikamente. Ein Richter muss zustimmen (§ 1906a BGB). FeM können **selbst Kontrakturen machen**.",
+      "Etwas, das den Patienten **festhält** — zum Beispiel Gurte, Bettgitter oder bestimmte Medikamente. Ein Richter muss zustimmen (§ 1831 BGB). FeM können **selbst Kontrakturen machen**.",
     uebersetzungTr: "Özgürlüğü kısıtlayıcı önlem",
     uebersetzungAr: "إجراء مقيِّد للحرية",
   },

@@ -133,7 +133,7 @@ export const CE02_THEMA_KONTRAKTUR_PROPHYLAXE_BAUSTEINE: Wissensbaustein[] = [
         displayFormat: "stepbystep",
         contentC1: {
           title: "Entstehungskette: Wie entsteht eine Kontraktur?",
-          body: "Die Entstehung folgt einer klaren Kette: **Immobilität → Muskelverkürzung → Bindegewebsumbau → Gelenksteife.**\n\n**Schritt 1 — Immobilität:** Ein Mensch reduziert seinen Bewegungsradius. Gründe: Bettruhe nach OP, Schlaganfall, Schmerzen, Schonhaltung, demenzielle Abbauprozesse, freiheitsentziehende Maßnahmen (FeM, § 1906a BGB).\n\n**Schritt 2 — Muskelverkürzung:** Wird ein Muskel nicht mehr in seiner vollen Länge beansprucht, passt er seine Sarkomerzahl an. Er wird **kürzer und schwächer**. Der Dehnungswiderstand steigt.\n\n**Schritt 3 — Bindegewebsumbau (extraartikulär):** Bereits nach **4-14 Tagen** ohne Gelenkbewegung bildet sich um die Gelenkkapsel neues, weniger elastisches Bindegewebe. Die Gelenkkapsel selbst verkürzt sich.\n\n**Schritt 4 — Gelenksteife:** Der Bewegungsradius sinkt. Die Gelenke, die am häufigsten betroffen sind: **Schulter, Knie** und das **obere Sprunggelenk** (Spitzfuß).\n\nWichtig: Die ersten Veränderungen sind reversibel — deshalb zählt jeder Tag.",
+          body: "Die Entstehung folgt einer klaren Kette: **Immobilität → Muskelverkürzung → Bindegewebsumbau → Gelenksteife.**\n\n**Schritt 1 — Immobilität:** Ein Mensch reduziert seinen Bewegungsradius. Gründe: Bettruhe nach OP, Schlaganfall, Schmerzen, Schonhaltung, demenzielle Abbauprozesse, freiheitsentziehende Maßnahmen (FeM, § 1831 BGB).\n\n**Schritt 2 — Muskelverkürzung:** Wird ein Muskel nicht mehr in seiner vollen Länge beansprucht, passt er seine Sarkomerzahl an. Er wird **kürzer und schwächer**. Der Dehnungswiderstand steigt.\n\n**Schritt 3 — Bindegewebsumbau (extraartikulär):** Bereits nach **4-14 Tagen** ohne Gelenkbewegung bildet sich um die Gelenkkapsel neues, weniger elastisches Bindegewebe. Die Gelenkkapsel selbst verkürzt sich.\n\n**Schritt 4 — Gelenksteife:** Der Bewegungsradius sinkt. Die Gelenke, die am häufigsten betroffen sind: **Schulter, Knie** und das **obere Sprunggelenk** (Spitzfuß).\n\nWichtig: Die ersten Veränderungen sind reversibel — deshalb zählt jeder Tag.",
           glossarBegriffe: ["Kontraktur", "Freiheitsentziehende Maßnahme (FeM)"],
         },
         contentB1: {
@@ -380,7 +380,7 @@ export const CE02_THEMA_KONTRAKTUR_PROPHYLAXE_BAUSTEINE: Wissensbaustein[] = [
     },
     stufe2: {
       typ: "hinweis",
-      text: "Hochrisikogruppen: **Schlaganfall** (Hemiplegie mit dysreguliertem Muskeltonus), **Intensivpatienten** (Sedierung, Beatmung), **Demenz** (Bewegungsreduktion), **Parkinson** (Rigor), **Fixierte** (FeM § 1906a BGB), **Multimorbide Pflegeheimbewohner**.",
+      text: "Hochrisikogruppen: **Schlaganfall** (Hemiplegie mit dysreguliertem Muskeltonus), **Intensivpatienten** (Sedierung, Beatmung), **Demenz** (Bewegungsreduktion), **Parkinson** (Rigor), **Fixierte** (FeM § 1831 BGB), **Multimorbide Pflegeheimbewohner**.",
       textB1:
         "Besonders gefährdet sind: **Schlaganfall**-Patienten (halbseitige Lähmung), **Intensivpatienten** (Sedierung), Menschen mit **Demenz**, mit **Parkinson**, **fixierte** Patienten und Menschen im **Pflegeheim** mit vielen Krankheiten.",
     },
@@ -400,7 +400,7 @@ export const CE02_THEMA_KONTRAKTUR_PROPHYLAXE_BAUSTEINE: Wissensbaustein[] = [
         displayFormat: "checklist",
         contentC1: {
           title: "Risikogruppen für Kontrakturen",
-          body: "**Hochrisikogruppen für Kontrakturen:**\n\n| Gruppe | Grund |\n|--------|-------|\n| **Schlaganfall (Hemiplegie)** | Dysregulierter Muskeltonus, Spastik, reduzierte Eigenbewegung. Häufigkeit Kontrakturen > Stürze (Sackley 2008) |\n| **Intensivpatienten** | Sedierung, Beatmung, Immobilität. Häufig Spitzfuß + Schulter-/Ellenbogen-Kontrakturen |\n| **Demenz** | Reduktion des gewohnten Bewegungsradius, demenzielle Abbauprozesse, oft kombiniert mit Schmerzvermeidung |\n| **Parkinson** | Muskulärer Rigor, verminderte Mitbewegung, Schonhaltung |\n| **Fixierte Patienten** | Freiheitsentziehende Maßnahmen (§ 1906a BGB) reduzieren Bewegung — FeM können selbst Kontrakturen verursachen |\n| **Multimorbide Pflegeheimbewohner** | Kombination aus Schmerz, Medikamenten, Schonhaltung, geringer Aktivität |\n| **Z.n. Mammaablatio** | Schulter-Arm-Syndrom durch fehlende Nutzung der betroffenen Seite |\n\n**Prävalenz-Zahlen (belegt):**\n- **15-70 %** der älteren Krankenhauspatienten in Deutschland leiden unter Kontrakturen (Gnass et al. 2010)\n- **59,1 %** der ambulant pflegebedürftigen älteren Menschen sind kontrakturrisikogefährdet (MDS 2018)",
+          body: "**Hochrisikogruppen für Kontrakturen:**\n\n| Gruppe | Grund |\n|--------|-------|\n| **Schlaganfall (Hemiplegie)** | Dysregulierter Muskeltonus, Spastik, reduzierte Eigenbewegung. Häufigkeit Kontrakturen > Stürze (Sackley 2008) |\n| **Intensivpatienten** | Sedierung, Beatmung, Immobilität. Häufig Spitzfuß + Schulter-/Ellenbogen-Kontrakturen |\n| **Demenz** | Reduktion des gewohnten Bewegungsradius, demenzielle Abbauprozesse, oft kombiniert mit Schmerzvermeidung |\n| **Parkinson** | Muskulärer Rigor, verminderte Mitbewegung, Schonhaltung |\n| **Fixierte Patienten** | Freiheitsentziehende Maßnahmen (§ 1831 BGB) reduzieren Bewegung — FeM können selbst Kontrakturen verursachen |\n| **Multimorbide Pflegeheimbewohner** | Kombination aus Schmerz, Medikamenten, Schonhaltung, geringer Aktivität |\n| **Z.n. Mammaablatio** | Schulter-Arm-Syndrom durch fehlende Nutzung der betroffenen Seite |\n\n**Prävalenz-Zahlen (belegt):**\n- **15-70 %** der älteren Krankenhauspatienten in Deutschland leiden unter Kontrakturen (Gnass et al. 2010)\n- **59,1 %** der ambulant pflegebedürftigen älteren Menschen sind kontrakturrisikogefährdet (MDS 2018)",
           glossarBegriffe: ["Hemiplegie", "Freiheitsentziehende Maßnahme (FeM)"],
         },
         contentB1: {
@@ -416,7 +416,7 @@ export const CE02_THEMA_KONTRAKTUR_PROPHYLAXE_BAUSTEINE: Wissensbaustein[] = [
               text: "Fixierung schützt den Patienten vor Kontrakturen, weil er ruhig liegt",
               isCorrect: false,
               explanation:
-                "Nicht ganz — Fixierung kann **selbst Kontrakturen verursachen**, weil die Bewegung reduziert wird. Freiheitsentziehende Maßnahmen (§ 1906a BGB) brauchen strenge Indikation und richterliche Genehmigung. Bewegungsförderung ist die richtige Alternative.",
+                "Nicht ganz — Fixierung kann **selbst Kontrakturen verursachen**, weil die Bewegung reduziert wird. Freiheitsentziehende Maßnahmen (§ 1831 BGB) brauchen strenge Indikation und richterliche Genehmigung. Bewegungsförderung ist die richtige Alternative.",
               explanationB1:
                 "Nein — Fixierung **macht** Kontrakturen. Der Patient kann sich nicht mehr bewegen. Das ist schlecht für die Gelenke.",
             },
@@ -424,7 +424,7 @@ export const CE02_THEMA_KONTRAKTUR_PROPHYLAXE_BAUSTEINE: Wissensbaustein[] = [
               text: "Fixierung kann selbst Kontrakturen verursachen, weil sie die Bewegung reduziert",
               isCorrect: true,
               explanation:
-                "Richtig. Freiheitsentziehende Maßnahmen (FeM, § 1906a BGB) zählen zu den Kontraktur-Risikogruppen, weil sie den Bewegungsradius einschränken. FeM sind nur mit richterlicher Genehmigung oder Einwilligung erlaubt.",
+                "Richtig. Freiheitsentziehende Maßnahmen (FeM, § 1831 BGB) zählen zu den Kontraktur-Risikogruppen, weil sie den Bewegungsradius einschränken. FeM sind nur mit richterlicher Genehmigung oder Einwilligung erlaubt.",
               explanationB1:
                 "Richtig. Fixierung hält den Patienten fest — das schafft Kontrakturen. Deshalb ist Fixierung nur in Ausnahmen erlaubt.",
             },

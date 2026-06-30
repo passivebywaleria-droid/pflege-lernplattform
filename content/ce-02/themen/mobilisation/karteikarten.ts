@@ -147,7 +147,7 @@ export const CE02_THEMA_MOBILISATION_KARTEIKARTEN: KarteikarteVorlage[] = [
     tag: "pflege",
     kategorie: "recht",
     pruefungsrelevant: true,
-    quelle: "§ 630d BGB; § 1906a BGB; § 223 StGB",
+    quelle: "§ 630d BGB; § 1831 BGB; § 223 StGB",
   },
   {
     id: "ce02-mob-kk-13",

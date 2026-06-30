@@ -152,13 +152,13 @@ export const CE02_THEMA_POSITIONIERUNG_KARTEIKARTEN: KarteikarteVorlage[] = [
     vorderseite:
       "Warum ist ein hochgezogenes Bettgitter eine freiheitsentziehende Maßnahme — und welche 3 Alternativen gibt es (Werdenfelser Weg)?",
     rueckseiteC1:
-      "Bettgitter hindert den Patienten am Verlassen des Bettes ohne seine echte Zustimmung → FeM, genehmigungspflichtig nach § 1906a BGB. Alternativen: 1. Niederflurbett (nah am Boden). 2. Sensormatte vor dem Bett. 3. Mehr Betreuung/Aktivierung. Zusätzlich: Ursachensuche (Delir, Schmerz, Durst).",
+      "Bettgitter hindert den Patienten am Verlassen des Bettes ohne seine echte Zustimmung → FeM, genehmigungspflichtig nach § 1831 BGB. Alternativen: 1. Niederflurbett (nah am Boden). 2. Sensormatte vor dem Bett. 3. Mehr Betreuung/Aktivierung. Zusätzlich: Ursachensuche (Delir, Schmerz, Durst).",
     rueckseiteB1:
-      "Bettgitter nimmt dem Patienten die Freiheit → FeM, Erlaubnis vom Richter nötig (§ 1906a BGB). Alternativen: 1. Bett niedrig stellen. 2. Sensor-Matte. 3. Mehr Betreuung.",
+      "Bettgitter nimmt dem Patienten die Freiheit → FeM, Erlaubnis vom Richter nötig (§ 1831 BGB). Alternativen: 1. Bett niedrig stellen. 2. Sensor-Matte. 3. Mehr Betreuung.",
     tag: "pflege",
     kategorie: "recht",
     pruefungsrelevant: true,
-    quelle: "§ 1906a BGB; Werdenfelser Weg",
+    quelle: "§ 1831 BGB; Werdenfelser Weg",
   },
   {
     id: "ce02-pos-kk-13",

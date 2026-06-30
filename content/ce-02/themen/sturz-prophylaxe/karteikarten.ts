@@ -33,13 +33,13 @@ export const CE02_THEMA_STURZ_PROPHYLAXE_KARTEIKARTEN: KarteikarteVorlage[] = [
     id: "ce02-sturz-kk-03",
     vorderseite: "Sind beidseitige Bettgitter eine Sturzprophylaxe?",
     rueckseiteC1:
-      "Nein — sie können Sturzhöhe erhöhen. Ohne Zustimmung: freiheitsentziehende Maßnahme (§ 1906a BGB).",
+      "Nein — sie können Sturzhöhe erhöhen. Ohne Zustimmung: freiheitsentziehende Maßnahme (§ 1831 BGB).",
     rueckseiteB1:
       "Nein. Patienten klettern darüber und fallen tiefer. Ohne Erlaubnis vom Gericht oder Patient verboten.",
     tag: "pflege",
     kategorie: "handlung",
     pruefungsrelevant: true,
-    quelle: "DNQP 2022, § 1906a BGB",
+    quelle: "DNQP 2022, § 1831 BGB",
   },
   {
     id: "ce02-sturz-kk-04",
@@ -83,13 +83,13 @@ export const CE02_THEMA_STURZ_PROPHYLAXE_KARTEIKARTEN: KarteikarteVorlage[] = [
     id: "ce02-sturz-kk-07",
     vorderseite: "Welches Gesetz regelt die Fixierung in Deutschland?",
     rueckseiteC1:
-      "§ 1906a BGB. Freiheitsentziehende Maßnahmen brauchen richterliche Genehmigung oder informierte Einwilligung. In akuter Eigengefährdung notfallmäßig, innerhalb 24 h richterliche Genehmigung beantragen.",
+      "§ 1831 BGB. Freiheitsentziehende Maßnahmen brauchen richterliche Genehmigung oder informierte Einwilligung. In akuter Eigengefährdung notfallmäßig, innerhalb 24 h richterliche Genehmigung beantragen.",
     rueckseiteB1:
-      "§ 1906a BGB. Fixierung nur mit Erlaubnis vom Gericht oder vom Patienten. Im Notfall 24 Stunden Zeit für die Erlaubnis.",
+      "§ 1831 BGB. Fixierung nur mit Erlaubnis vom Gericht oder vom Patienten. Im Notfall 24 Stunden Zeit für die Erlaubnis.",
     tag: "pflege",
     kategorie: "recht",
     pruefungsrelevant: true,
-    quelle: "§ 1906a BGB",
+    quelle: "§ 1831 BGB",
   },
   {
     id: "ce02-sturz-kk-08",

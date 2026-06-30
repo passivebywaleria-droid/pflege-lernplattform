@@ -215,9 +215,9 @@ export const CE02_THEMA_POSITIONIERUNG_GLOSSAR: GlossarEntry[] = [
   {
     begriff: "Freiheitsentziehende Maßnahmen",
     erklaerung:
-      "Maßnahmen, die die Bewegungsfreiheit einer Person einschränken, z.B. hochgezogene Bettgitter, Bauchgurte, Handgelenks-Fixierungen, sedierende Medikamente. Genehmigungspflichtig durch das Betreuungsgericht (§ 1906a BGB). Alternativen: Niederflurbett, Sensormatte, Bewegungsmelder (Werdenfelser Weg). (§ 1906a BGB)",
+      "Maßnahmen, die die Bewegungsfreiheit einer Person einschränken, z.B. hochgezogene Bettgitter, Bauchgurte, Handgelenks-Fixierungen, sedierende Medikamente. Genehmigungspflichtig durch das Betreuungsgericht (§ 1831 BGB). Alternativen: Niederflurbett, Sensormatte, Bewegungsmelder (Werdenfelser Weg). (§ 1831 BGB)",
     erklaerungB1:
-      "Maßnahmen, die einem Patienten die Freiheit nehmen. Zum Beispiel: Bett-Gitter hoch, Bauch-Gurt, Hand-Fesseln, ruhigstellende Medikamente. Erlaubnis kommt vom Richter (§ 1906a BGB). Zuerst immer Alternativen prüfen.",
+      "Maßnahmen, die einem Patienten die Freiheit nehmen. Zum Beispiel: Bett-Gitter hoch, Bauch-Gurt, Hand-Fesseln, ruhigstellende Medikamente. Erlaubnis kommt vom Richter (§ 1831 BGB). Zuerst immer Alternativen prüfen.",
     uebersetzungTr: "Özgürlüğü kısıtlayıcı tedbirler (FEM)",
     uebersetzungAr: "التدابير المقيدة للحرية",
   },

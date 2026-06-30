@@ -621,13 +621,13 @@ export const CE02_THEMA_POSITIONIERUNG_BAUSTEINE: Wissensbaustein[] = [
       frage:
         "Ein verwirrter Patient klettert nachts ständig aus dem Bett. Eine Kollegin sagt: 'Bettgitter hoch, Problem gelöst.' Du zögerst — warum?",
       antwort:
-        "Du zögerst zu Recht. Bettgitter ist eine freiheitsentziehende Maßnahme (FeM), die rechtlich genehmigt werden muss (§ 1906a BGB). Erster Schritt: Alternativen prüfen (Niederflurbett, Sensormatte, mehr Betreuung), Ursachen angehen (Delir? Schmerz? Angst?), dokumentieren. (§ 1906a BGB, Werdenfelser Weg)",
+        "Du zögerst zu Recht. Bettgitter ist eine freiheitsentziehende Maßnahme (FeM), die rechtlich genehmigt werden muss (§ 1831 BGB). Erster Schritt: Alternativen prüfen (Niederflurbett, Sensormatte, mehr Betreuung), Ursachen angehen (Delir? Schmerz? Angst?), dokumentieren. (§ 1831 BGB, Werdenfelser Weg)",
     },
     stufe2: {
       typ: "hinweis",
-      text: "Bettgitter und Fixierungen sind freiheitsentziehende Maßnahmen (FeM). Sie dürfen nur mit richterlicher Genehmigung (§ 1906a BGB) oder mit freiem Willen des Patienten angewendet werden. Ausnahme: akute Gefahrenabwehr für kurze Zeit. Erster Schritt: Alternativen prüfen.",
+      text: "Bettgitter und Fixierungen sind freiheitsentziehende Maßnahmen (FeM). Sie dürfen nur mit richterlicher Genehmigung (§ 1831 BGB) oder mit freiem Willen des Patienten angewendet werden. Ausnahme: akute Gefahrenabwehr für kurze Zeit. Erster Schritt: Alternativen prüfen.",
       textB1:
-        "Bettgitter und Fixierungen sind freiheitsentziehende Maßnahmen. Das heißt: Du nimmst dem Patienten seine Freiheit. Das geht nur mit Erlaubnis vom Richter (§ 1906a BGB). Oder wenn der Patient es wirklich selbst will. Zuerst immer Alternativen suchen.",
+        "Bettgitter und Fixierungen sind freiheitsentziehende Maßnahmen. Das heißt: Du nimmst dem Patienten seine Freiheit. Das geht nur mit Erlaubnis vom Richter (§ 1831 BGB). Oder wenn der Patient es wirklich selbst will. Zuerst immer Alternativen suchen.",
     },
     stufe3: {
       typ: "erklaerung",
@@ -637,7 +637,7 @@ export const CE02_THEMA_POSITIONIERUNG_BAUSTEINE: Wissensbaustein[] = [
         stepType: "text",
         bloomLevel: 5,
         kompetenzbereich: "V.1",
-        quellen: ["§ 1906a BGB", "§ 239 StGB", "Werdenfelser Weg"],
+        quellen: ["§ 1831 BGB", "§ 239 StGB", "Werdenfelser Weg"],
         track: "basis",
         modus: "entdecker",
         lernziel: "ce02-positionierung-fem",
@@ -650,12 +650,12 @@ export const CE02_THEMA_POSITIONIERUNG_BAUSTEINE: Wissensbaustein[] = [
           "Two beds side by side: left bed with raised side rails crossed out in red, right bed low to floor with sensor mat in front and checkmark — copic marker sketch style, absolutely no text no labels no words",
         contentC1: {
           title: "Freiheitsentziehende Maßnahmen (FeM)",
-          body: "**Freiheitsentziehende Maßnahmen (FeM)** schränken die Bewegungsfreiheit ein: hochgezogene **Bettgitter** (auch wenn nur eins), **Bauchgurte**, **Handgelenks-Fixierungen**, **sedierende Medikamente** zum Ruhigstellen, abgeschlossene Türen.\n\n**Rechtliche Grundlage:**\n- **Art. 2 Grundgesetz** schützt die Freiheit der Person.\n- **§ 1906a BGB** regelt FeM bei Betreuten: **genehmigungspflichtig** durch das **Betreuungsgericht**, außer in akuten Gefahrensituationen (dann kurzfristig, richterliche Genehmigung unverzüglich einholen).\n- **§ 239 StGB** (Freiheitsberaubung) droht bei unzulässigen Maßnahmen.\n\n**Werdenfelser Weg** (bundesweit etabliert): Erster Schritt immer **Alternativen** prüfen — Niederflurbett, Sensormatte vor dem Bett, Bewegungsmelder, individuelle Betreuung, Tagesstruktur, Schmerzbehandlung, Delirmanagement.\n\nDie Prüfung der Alternativen muss in der Pflege-Dokumentation sichtbar werden. (§ 1906a BGB, Werdenfelser Weg)",
+          body: "**Freiheitsentziehende Maßnahmen (FeM)** schränken die Bewegungsfreiheit ein: hochgezogene **Bettgitter** (auch wenn nur eins), **Bauchgurte**, **Handgelenks-Fixierungen**, **sedierende Medikamente** zum Ruhigstellen, abgeschlossene Türen.\n\n**Rechtliche Grundlage:**\n- **Art. 2 Grundgesetz** schützt die Freiheit der Person.\n- **§ 1831 BGB** regelt FeM bei Betreuten: **genehmigungspflichtig** durch das **Betreuungsgericht**, außer in akuten Gefahrensituationen (dann kurzfristig, richterliche Genehmigung unverzüglich einholen).\n- **§ 239 StGB** (Freiheitsberaubung) droht bei unzulässigen Maßnahmen.\n\n**Werdenfelser Weg** (bundesweit etabliert): Erster Schritt immer **Alternativen** prüfen — Niederflurbett, Sensormatte vor dem Bett, Bewegungsmelder, individuelle Betreuung, Tagesstruktur, Schmerzbehandlung, Delirmanagement.\n\nDie Prüfung der Alternativen muss in der Pflege-Dokumentation sichtbar werden. (§ 1831 BGB, Werdenfelser Weg)",
           glossarBegriffe: ["Freiheitsentziehende Maßnahmen"],
         },
         contentB1: {
           title: "Freiheitsentziehende Maßnahmen (FeM)",
-          body: "**Freiheitsentziehende Maßnahmen (FeM)** schränken die Freiheit des Patienten ein. Beispiele: **Bett-Gitter hoch**, **Bauch-Gurte**, **Hand-Fesseln**, ruhigstellende Medikamente, abgeschlossene Türen.\n\n**Gesetz:**\n- **Art. 2 Grundgesetz**: Jeder Mensch hat das Recht auf Freiheit.\n- **§ 1906a BGB**: FeM bei Betreuten brauchen die **Erlaubnis vom Gericht**. Nur in akuter Gefahr darfst du kurz ohne Erlaubnis handeln — aber der Richter muss sofort danach eingeschaltet werden.\n- **§ 239 StGB**: Wer Freiheit beraubt, macht sich strafbar.\n\n**Werdenfelser Weg**: Immer zuerst Alternativen prüfen!\n- **Nieder-Flur-Bett** (nah am Boden, kein Gitter nötig).\n- **Sensor-Matte** (ruft Pflege, wenn Patient aufsteht).\n- **Bewegungs-Melder**.\n- **Mehr Betreuung** (Aktivierung, Gespräch).\n- **Schmerz-Behandlung** und **Delir-Management**.\n\nDie Prüfung der Alternativen musst du in der Pflege-Akte dokumentieren.",
+          body: "**Freiheitsentziehende Maßnahmen (FeM)** schränken die Freiheit des Patienten ein. Beispiele: **Bett-Gitter hoch**, **Bauch-Gurte**, **Hand-Fesseln**, ruhigstellende Medikamente, abgeschlossene Türen.\n\n**Gesetz:**\n- **Art. 2 Grundgesetz**: Jeder Mensch hat das Recht auf Freiheit.\n- **§ 1831 BGB**: FeM bei Betreuten brauchen die **Erlaubnis vom Gericht**. Nur in akuter Gefahr darfst du kurz ohne Erlaubnis handeln — aber der Richter muss sofort danach eingeschaltet werden.\n- **§ 239 StGB**: Wer Freiheit beraubt, macht sich strafbar.\n\n**Werdenfelser Weg**: Immer zuerst Alternativen prüfen!\n- **Nieder-Flur-Bett** (nah am Boden, kein Gitter nötig).\n- **Sensor-Matte** (ruft Pflege, wenn Patient aufsteht).\n- **Bewegungs-Melder**.\n- **Mehr Betreuung** (Aktivierung, Gespräch).\n- **Schmerz-Behandlung** und **Delir-Management**.\n\nDie Prüfung der Alternativen musst du in der Pflege-Akte dokumentieren.",
           glossarBegriffe: ["Freiheitsentziehende Maßnahmen"],
         },
       },

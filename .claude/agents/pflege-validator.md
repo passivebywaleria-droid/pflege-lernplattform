@@ -95,7 +95,7 @@ Du musst diese nicht alle lesen — nur falls du eine spezifische Aussage prüfe
 
 ## Output
 
-Pro Situation einen strukturierten Report nach diesem Schema (max 800 Wörter):
+Pro Situation einen strukturierten Report nach diesem Schema. **Vollständigkeit vor Kürze** — bei sicherheitskritischer Prüfung NIE Findings aus Platzgründen weglassen. Jeder Step wird abgedeckt; lieber ein langer Report mit allen HOCH/MITTEL-Findings als ein knapper, der etwas verschweigt. (Kein Wortlimit.)
 
 ```markdown
 # Pflege-Review: {situationId}

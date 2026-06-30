@@ -159,7 +159,7 @@ const ANTI_PATTERNS: AntiPattern[] = [
     regex:
       /(beide[ns]?\s+Bettgitter\s+(hoch|oben|rauf)|Bettgitter\s+beidseitig\s+(hoch|oben)|beide\s+Seitenteile?\s+(hoch|oben))/i,
     beschreibung:
-      "Beidseitig hochgestellte Bettgitter ohne Einwilligung/richterliche Genehmigung gelten als freiheitsentziehende Maßnahme (Fixierung), § 1906a BGB.",
+      "Beidseitig hochgestellte Bettgitter ohne Einwilligung/richterliche Genehmigung gelten als freiheitsentziehende Maßnahme (Fixierung), § 1831 Abs. 4 BGB (seit Betreuungsrechtsreform 2023; vormals § 1906 BGB).",
     empfehlung:
       "Einseitiges Bettgitter (Patient kann selbst raus) ODER richterlicher Beschluss + dokumentierte Einwilligung. Bettgitter ist KEINE Sturzprophylaxe.",
     // Ignoriere Frage-/Diskussions-/Rechts-Kontexte (Lehrinhalt ÜBER die Fixierung,

@@ -678,7 +678,7 @@ export const CE02_THEMA_DEKUBITUS_PROPHYLAXE_BAUSTEINE: Wissensbaustein[] = [
         stepType: "dialog",
         bloomLevel: 5,
         kompetenzbereich: "V.1",
-        quellen: ["DNQP (2024) K5", "§ 1906a BGB"],
+        quellen: ["DNQP (2024) K5", "§ 1831 BGB"],
         track: "basis",
         modus: "entdecker",
         lernziel: "ce02-dekubitus-information",

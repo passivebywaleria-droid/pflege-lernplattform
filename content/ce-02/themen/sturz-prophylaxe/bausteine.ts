@@ -338,13 +338,13 @@ export const CE02_THEMA_STURZ_PROPHYLAXE_BAUSTEINE: Wissensbaustein[] = [
       frage:
         "Frau M. (85, Demenz) ist nachts schon zweimal gestürzt. Deine Kollegin sagt: 'Lass uns heute Nacht beide Bettgitter hochziehen.' Was tust du?",
       antwort:
-        "Du widersprichst und suchst Alternativen. Beidseitige Bettgitter ohne Zustimmung sind Fixierung (§ 1906a BGB) und KEINE Sturzprophylaxe — sie erhöhen die Sturzhöhe. Alternativen: Niederflur-Bett, Sturzmatte, Bewegungsmelder, Einzelbetreuung. Als Pflegefachkraft hast du Aufklärungs- und Widerspruchspflicht.",
+        "Du widersprichst und suchst Alternativen. Beidseitige Bettgitter ohne Zustimmung sind Fixierung (§ 1831 BGB) und KEINE Sturzprophylaxe — sie erhöhen die Sturzhöhe. Alternativen: Niederflur-Bett, Sturzmatte, Bewegungsmelder, Einzelbetreuung. Als Pflegefachkraft hast du Aufklärungs- und Widerspruchspflicht.",
     },
     stufe2: {
       typ: "hinweis",
-      text: "Fixierung (inkl. beidseitiger Bettgitter) ist eine freiheitsentziehende Maßnahme. Sie braucht richterliche Genehmigung (§ 1906a BGB) oder informierte Zustimmung des Patienten. Sie ist keine Sturzprophylaxe — sie kann Verletzungen verschlimmern.",
+      text: "Fixierung (inkl. beidseitiger Bettgitter) ist eine freiheitsentziehende Maßnahme. Sie braucht richterliche Genehmigung (§ 1831 BGB) oder informierte Zustimmung des Patienten. Sie ist keine Sturzprophylaxe — sie kann Verletzungen verschlimmern.",
       textB1:
-        "Fixierung (auch beidseitige Bettgitter) ist eine freiheitsentziehende Maßnahme. Dafür braucht man Erlaubnis vom Gericht (§ 1906a BGB) oder vom Patienten selbst. Fixierung schützt NICHT vor Stürzen. Sie kann Verletzungen schlimmer machen.",
+        "Fixierung (auch beidseitige Bettgitter) ist eine freiheitsentziehende Maßnahme. Dafür braucht man Erlaubnis vom Gericht (§ 1831 BGB) oder vom Patienten selbst. Fixierung schützt NICHT vor Stürzen. Sie kann Verletzungen schlimmer machen.",
     },
     stufe3: {
       typ: "erklaerung",
@@ -354,7 +354,7 @@ export const CE02_THEMA_STURZ_PROPHYLAXE_BAUSTEINE: Wissensbaustein[] = [
         stepType: "text",
         bloomLevel: 5,
         kompetenzbereich: "V.1",
-        quellen: ["§ 1906a BGB", "DNQP 2022"],
+        quellen: ["§ 1831 BGB", "DNQP 2022"],
         track: "basis",
         modus: "entdecker",
         lernziel: "ce02-sturz-fixierung",
@@ -362,17 +362,17 @@ export const CE02_THEMA_STURZ_PROPHYLAXE_BAUSTEINE: Wissensbaustein[] = [
         displayFormat: "procontra",
         contentC1: {
           title: "Fixierung — rechtliche und ethische Grundlagen",
-          body: "Die rechtliche und ethische Lage ist klar: **Fixierung ist keine Sturzprophylaxe**. Der Bundesgerichtshof und § 1906a BGB stellen fest: Freiheitsentziehende Maßnahmen — dazu gehören beidseitige Bettgitter (ohne Zustimmung), Gurte, Bett-am-Boden-Schranken, sedierende 'Bedarfs-Medikation' — sind nur zulässig mit **(a) richterlicher Genehmigung** oder **(b) informierter Einwilligung des Patienten**. In akuter Eigengefährdung darf Pflege notfallmäßig fixieren, muss aber **innerhalb von 24 Stunden** richterliche Genehmigung beantragen. Warum nicht als Prophylaxe? Weil sie das Gegenteil bewirken kann: **Dokumentierte Todesfälle durch Strangulation in Gurten und Bettgittern**; Verletzungen durch Überklettern (Sturzhöhe erhöht); Muskelabbau durch Immobilität; Delir durch Überforderung. Alternativen: Niederflur-Bett, Sturzmatte, Bewegungsmelder, bauliche Anpassung, Einzelbetreuung. Merke: Fixierung ist **ultima ratio**, nicht Erstmaßnahme.",
-          glossarBegriffe: ["Fixierung", "§ 1906a BGB"],
+          body: "Die rechtliche und ethische Lage ist klar: **Fixierung ist keine Sturzprophylaxe**. Der Bundesgerichtshof und § 1831 BGB stellen fest: Freiheitsentziehende Maßnahmen — dazu gehören beidseitige Bettgitter (ohne Zustimmung), Gurte, Bett-am-Boden-Schranken, sedierende 'Bedarfs-Medikation' — sind nur zulässig mit **(a) richterlicher Genehmigung** oder **(b) informierter Einwilligung des Patienten**. In akuter Eigengefährdung darf Pflege notfallmäßig fixieren, muss aber **innerhalb von 24 Stunden** richterliche Genehmigung beantragen. Warum nicht als Prophylaxe? Weil sie das Gegenteil bewirken kann: **Dokumentierte Todesfälle durch Strangulation in Gurten und Bettgittern**; Verletzungen durch Überklettern (Sturzhöhe erhöht); Muskelabbau durch Immobilität; Delir durch Überforderung. Alternativen: Niederflur-Bett, Sturzmatte, Bewegungsmelder, bauliche Anpassung, Einzelbetreuung. Merke: Fixierung ist **ultima ratio**, nicht Erstmaßnahme.",
+          glossarBegriffe: ["Fixierung", "§ 1831 BGB"],
         },
         contentB1: {
           title: "Fixierung — rechtlich und ethisch",
-          body: "Die Regel ist klar: **Fixierung ist keine Sturzprophylaxe**. Der § 1906a BGB sagt: Jemanden festhalten (beide Bettgitter, Gurte, Bett am Boden, Schlafmittel zum Ruhigstellen) ist nur erlaubt mit **Erlaubnis vom Gericht** oder wenn der Patient selbst zustimmt. In einem Notfall (akute Gefahr) darf Pflege fixieren — aber in **24 Stunden muss man die Erlaubnis beim Gericht beantragen**. Warum ist Fixierung keine Prophylaxe? Sie macht es oft schlimmer: Patienten sind in Bettgittern gestorben (Strangulation); Patienten klettern über Bettgitter und fallen tiefer; Muskeln werden schwächer; Delir durch Überforderung. Bessere Alternativen: Bett niedrig stellen, Sturzmatte, Bewegungsmelder. Merke: Fixierung ist die **allerletzte Möglichkeit**, nie die erste.",
-          glossarBegriffe: ["Fixierung", "§ 1906a BGB"],
+          body: "Die Regel ist klar: **Fixierung ist keine Sturzprophylaxe**. Der § 1831 BGB sagt: Jemanden festhalten (beide Bettgitter, Gurte, Bett am Boden, Schlafmittel zum Ruhigstellen) ist nur erlaubt mit **Erlaubnis vom Gericht** oder wenn der Patient selbst zustimmt. In einem Notfall (akute Gefahr) darf Pflege fixieren — aber in **24 Stunden muss man die Erlaubnis beim Gericht beantragen**. Warum ist Fixierung keine Prophylaxe? Sie macht es oft schlimmer: Patienten sind in Bettgittern gestorben (Strangulation); Patienten klettern über Bettgitter und fallen tiefer; Muskeln werden schwächer; Delir durch Überforderung. Bessere Alternativen: Bett niedrig stellen, Sturzmatte, Bewegungsmelder. Merke: Fixierung ist die **allerletzte Möglichkeit**, nie die erste.",
+          glossarBegriffe: ["Fixierung", "§ 1831 BGB"],
         },
       },
     },
-    glossarBegriffe: ["Fixierung", "§ 1906a BGB"],
+    glossarBegriffe: ["Fixierung", "§ 1831 BGB"],
     karteikarten: [],
   },
 
