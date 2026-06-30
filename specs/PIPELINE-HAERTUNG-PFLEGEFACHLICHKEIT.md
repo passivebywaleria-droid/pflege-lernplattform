@@ -34,8 +34,8 @@ ist selbst quellenbelegt, sonst Beschaffungsliste.
 | W2 | Grounding endet an Kernfakten (Steps ungeprüft) | KRITISCH | 2 | ✅ `9564c62` |
 | W5 | Self-Grading-Schleife (String-Existenz ≠ Stützt) | HOCH | 2 | ✅ `9564c62` |
 | W3 | Faktentreue-Gate faktisch AUS (exit 0) | KRITISCH | 2 | ✅ `9564c62` |
-| W1 | Keine klinische Zahlen-Validierung | KRITISCH | 3 | offen |
-| W4 | Anti-Pattern-Netz winzig + Sturz-zentriert | HOCH | 3 | offen |
+| W1 | Keine klinische Zahlen-Validierung | KRITISCH | 3 | ✅ Stage 3 |
+| W4 | Anti-Pattern-Netz winzig + Sturz-zentriert | HOCH | 3 | ✅ Stage 3 |
 | W6 | Einzel-LLM-Validator, kein Mehr-Augen | HOCH | 4 | offen |
 | W10 | Coverage = Präsenz, nicht Korrektheit/Tiefe | MITTEL | 4 | offen |
 
@@ -125,6 +125,33 @@ Gates grün: `tsc` ✅ · vitest 458 ✅ (+43 neu) · `build` ✅.
   erzwingt Sync).
 - **Beispiel-Lücke heute:** „2-Stunden-Umlagern" (Misconception M3 der Recherche) wird von
   keinem Regex gefangen → als Pattern aufnehmen.
+
+### ✅ Stage 3 — umgesetzt (2026-06-30)
+
+**W1 — Klinischer Zahlen-Validator**
+- `recherche/referenzwerte.json`: 18 kuratierte Referenzwerte, JEDER mit Verbatim-Beleg
+  (`quelle{datei,zeile,zitat}`, per `grep` verifiziert). Erwachsene komplett (RR syst/diast,
+  Puls, AF, Temp, SpO2, BZ mg/dl+mmol/l); Kinder Puls+AF je Altersstufe. Bounds aus
+  zitierten Pathologie-Schwellen; fehlt ein Bound → `null` (statt Erfindung).
+- `recherche/BESCHAFFUNGSLISTE-REFERENZWERTE.md`: 6 offene Lücken (BZ-Untergrenze,
+  Kinder-SpO2/-Temp/-BZ/-RR-Band) — Gründerin-Regel: nichts erfinden.
+- `scripts/klinik-zahlen-check.ts <ce> [--json]`: **Präzisions-Prinzip** — prüft NUR
+  Autoritäts-Claims (Norm-Marker + adjazenter Wert+Einheit ohne Komma dazwischen + Größen-Alias
+  im Fenster). Falldaten (NRS/RR) tragen keinen Norm-Marker → nie geprüft; `patient.ts` +
+  `klinik-zahlen:ignore`-Zeilen + Kommentare zusätzlich whitelisted. Altersgruppen-Scoping;
+  fehlt pädiatrischer Beleg → Skip+Log (Coverage-Lücke), kein Fehler. Pure Kern +
+  `tests/unit/klinik-zahlen-check.test.ts` (36 Tests). CE-02: 4 Claims geprüft, 0 Out-of-Range,
+  0 FP (planted-error-getestet: fängt SpO2 80 %, RR 200/130, Kinder-AF 60).
+
+**W4 — Anti-Pattern-Netz erweitert (4 neue, korpus-belegt)**
+- `AP-2H-LAGERUNG-STARR` (MITTEL, DNQP Dekubitus), `AP-DEKUBITUS-MASSAGE` (HOCH, I care/DNQP 2017),
+  `AP-DEKUBITUS-HAUTMYTHOS` (HOCH, Pflege Heute — Franzbranntwein/Eisen+Föhnen),
+  `AP-OPIOID-ATEMDEPRESSION-MYTHOS` (HOCH, Aulbert). Jedes mit `ignoreIf` für korrektive
+  Lehre (verboten/aufgegeben/widerlegt/Titration) → 0 FP auf CE-02 (lehrt alle korrekt).
+- In Skript UND Register (`pflege-konformitaet.md`); **W8-Drift-Test grün**. Fire/Suppress-
+  Regression in `tests/unit/pflege-anti-pattern-w4.test.ts` (11 Cases).
+
+Gates grün: `tsc` ✅ · vitest 509 ✅ (+51 neu) · `build` ✅ · eslint ✅.
 
 ---
 

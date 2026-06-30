@@ -57,6 +57,9 @@ recherche/*
 !recherche/icare-index/
 !recherche/expertenstandards-index/
 !recherche/pflege-heute-index/
+# Kuratierte Referenzwert-DB + Beschaffungsliste (W1) — Wahrheitsquelle, kein Korpus-Dump
+!recherche/referenzwerte.json
+!recherche/BESCHAFFUNGSLISTE-REFERENZWERTE.md
 
 # PDFs
 *.pdf

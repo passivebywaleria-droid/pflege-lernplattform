@@ -130,6 +130,10 @@ Jede `id` im Skript MUSS hier stehen und umgekehrt. Der Test `tests/unit/pflege-
 | `AP-SIE-STATT-DU-PFLEGE` | MITTEL | „Sie" statt „du" an Lernende |
 | `AP-GLUECK-VOR-ASSESSMENT` | HOCH | „Glück gehabt" vor abgeschlossenem Assessment |
 | `AP-BETTGITTER-BEIDSEITIG` | HOCH | Beidseitige Bettgitter ohne Genehmigung (FeM, § 1831 Abs. 4 BGB) |
+| `AP-2H-LAGERUNG-STARR` | MITTEL | Starre/pauschale 2-Stunden-Lagerungsregel statt individuellem Intervall (DNQP Dekubitus) |
+| `AP-DEKUBITUS-MASSAGE` | HOCH | Massieren/Reiben gefährdeter/geröteter Hautstellen als Prophylaxe (obsolet, DNQP 2017) |
+| `AP-DEKUBITUS-HAUTMYTHOS` | HOCH | Franzbranntwein / „Eisen und Föhnen" der Haut — schädlich (Pflege Heute) |
+| `AP-OPIOID-ATEMDEPRESSION-MYTHOS` | HOCH | Opioide vorenthalten aus Angst vor Atemdepression / „beschleunigt das Sterben" (Aulbert) |
 
 **Quellenbindung (Pipeline v10):** Kernfakten brauchen verifizierte Verbatim-Belege (`scripts/zitat-verifizierer.ts --check-file`), Content darf keine ungedeckten Instrumente/Standards enthalten (`scripts/faktentreue-check.ts` — ab Kernfakten-Coverage ≥ 80 % scharf/exit 1). Grounding-Quellen: `recherche/dnqp-standards-index/` + `recherche/*-volltext/` (Lesereihenfolge-Extraktion, NICHT die `-layout`-Indexe).
 

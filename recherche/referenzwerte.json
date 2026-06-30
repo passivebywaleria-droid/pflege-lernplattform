@@ -1,0 +1,318 @@
+{
+  "version": 1,
+  "zweck": "Kuratierte Referenzwert-Range-DB fuer scripts/klinik-zahlen-check.ts (Pipeline-Haertung W1). Jeder Eintrag ist VERBATIM aus dem recherche/-Korpus belegt (Gruenderin-Regel: nichts erfinden). Geprueft werden NUR Autoritaets-Claims im Content ('Normalwert ist X'), nie Falldaten.",
+  "regeln": {
+    "bound": "min/max sind die korpus-belegten Grenzen zwischen normal und pathologisch. null = auf dieser Seite kein Korpus-Beleg → wird nicht geprueft (statt erfundener Grenze).",
+    "beleg": "Jeder Eintrag traegt quelle.datei + quelle.zeile + quelle.zitat (woertlich, per grep verifiziert 2026-06-30).",
+    "fehlend": "Was nicht belegbar war → recherche/BESCHAFFUNGSLISTE-REFERENZWERTE.md, nicht erfunden."
+  },
+  "werte": [
+    {
+      "id": "rr-syst-erwachsen",
+      "groesse": "Blutdruck systolisch",
+      "physEinheit": "mmHg",
+      "position": "systolisch",
+      "zielgruppe": "erwachsen",
+      "altersMarker": null,
+      "aliasse": ["blutdruck", "systolisch", "systolische", "systolischer", "rr"],
+      "min": 100,
+      "max": 139,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 10196,
+        "zitat": "physiologischer Blutdruck beim Erwachsenen: 120–129/80–89 mmHg ... Hypotonie: < 100/60 mmHg über längeren Zeitraum ... Hypertonie: > 140/90 mmHg über längeren Zeitraum"
+      },
+      "hinweis": "min=100 aus Hypotonie-Schwelle (<100/60), max=139 aus Hypertonie-Schwelle (>140/90). Physiologisch 120–129."
+    },
+    {
+      "id": "rr-diast-erwachsen",
+      "groesse": "Blutdruck diastolisch",
+      "physEinheit": "mmHg",
+      "position": "diastolisch",
+      "zielgruppe": "erwachsen",
+      "altersMarker": null,
+      "aliasse": ["blutdruck", "diastolisch", "diastolische", "diastolischer", "rr"],
+      "min": 60,
+      "max": 89,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 10196,
+        "zitat": "physiologischer Blutdruck beim Erwachsenen: 120–129/80–89 mmHg ... Hypotonie: < 100/60 mmHg über längeren Zeitraum ... Hypertonie: > 140/90 mmHg über längeren Zeitraum"
+      },
+      "hinweis": "min=60 aus Hypotonie-Schwelle (<100/60), max=89 aus Hypertonie-Schwelle (>140/90). Physiologisch 80–89."
+    },
+    {
+      "id": "puls-erwachsen",
+      "groesse": "Puls / Herzfrequenz in Ruhe",
+      "physEinheit": "/min",
+      "position": null,
+      "zielgruppe": "erwachsen",
+      "altersMarker": null,
+      "aliasse": ["puls", "pulsfrequenz", "herzfrequenz", "hf"],
+      "min": 60,
+      "max": 100,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 10191,
+        "zitat": "normale Pulsfrequenz beim Erwachsenen: 60–80/min ... Puls zu schnell (> 100/min): Tachykardie, Puls zu langsam (< 60/min): Bradykardie"
+      },
+      "hinweis": "Band 60–100 aus den Tachykardie/Bradykardie-Schwellen (>100 / <60); physiologischer Ruhewert 60–80."
+    },
+    {
+      "id": "atemfrequenz-erwachsen",
+      "groesse": "Atemfrequenz in Ruhe",
+      "physEinheit": "/min",
+      "position": null,
+      "zielgruppe": "erwachsen",
+      "altersMarker": null,
+      "aliasse": ["atemfrequenz", "atemzüge", "atemzuege", "eupnoe", "af"],
+      "min": 12,
+      "max": 20,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 10016,
+        "zitat": "Tachypnoe: beschleunigte Atmung (beim Erwachsenen > 20 Atemzüge/min) ... Bradypnoe: verlangsamte Atmung (beim Erwachsenen < 12 Atemzüge/min) ... Eupnoe: normale Atmung beim Erwachsenen: 14–18 Atemzüge/min"
+      },
+      "hinweis": "Band 12–20 aus Bradypnoe/Tachypnoe-Schwellen (<12 / >20); Eupnoe 14–18."
+    },
+    {
+      "id": "temperatur-erwachsen",
+      "groesse": "Körpertemperatur",
+      "physEinheit": "°C",
+      "position": null,
+      "zielgruppe": "erwachsen",
+      "altersMarker": null,
+      "aliasse": ["temperatur", "körpertemperatur", "koerpertemperatur", "kerntemperatur", "körperkerntemperatur"],
+      "min": 36.0,
+      "max": 37.5,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 10148,
+        "zitat": "Hypothermie: Werte unter 36,0°C ... Hyperthermie: Werte über 37,5°C ... Die Körperkerntemperatur sollte relativ konstant 37°C betragen."
+      },
+      "hinweis": "Band 36,0–37,5 aus Hypothermie/Hyperthermie-Schwellen; Kerntemperatur ~37. Messort-Normbereiche (sublingual 36,1–37,1; rektal 36,5–37,4; aurikulär 35,9–37,6) liegen innerhalb der Pathologie-Schwellen."
+    },
+    {
+      "id": "spo2-erwachsen",
+      "groesse": "Sauerstoffsättigung (SpO2)",
+      "physEinheit": "%",
+      "position": null,
+      "zielgruppe": "erwachsen",
+      "altersMarker": null,
+      "aliasse": ["spo2", "sao2", "sauerstoffsättigung", "sauerstoffsaettigung", "sättigung", "saettigung", "pulsoxymetrie", "pulsoximetrie"],
+      "min": 93,
+      "max": 100,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 32145,
+        "zitat": "Sauerstoffsättigung. Normwert liegt bei 97 %. Bei einem Wert unter 93 % muss von einem dramatischen Sauerstoffmangel ausgegangen werden."
+      },
+      "hinweis": "min=93 aus der kritischen Schwelle (<93 % = dramatischer Sauerstoffmangel); Normwert 97 %. max=100 ist das physikalische Maximum einer Sättigung (eine Sättigung kann 100 % nicht überschreiten)."
+    },
+    {
+      "id": "bz-nuechtern-erwachsen-mgdl",
+      "groesse": "Blutzucker nüchtern (mg/dl)",
+      "physEinheit": "mg/dl",
+      "position": null,
+      "zielgruppe": "erwachsen",
+      "altersMarker": null,
+      "aliasse": ["blutzucker", "blutglukose", "blutglucose", "nüchternblutzucker", "nuechternblutzucker", "glukosespiegel", "blutglukosespiegel", "nüchternblutglukose", "nüchtern-blutzucker"],
+      "min": null,
+      "max": 100,
+      "quelle": {
+        "datei": "recherche/pflege-heute-volltext/pflege-heute.txt",
+        "zeile": 195073,
+        "zitat": "Plasma (nüchtern) < 100 mg/dl (< 5,6 mmol/l)."
+      },
+      "hinweis": "max=100 aus dem Nüchtern-Normwert (<100 mg/dl; gestörte Glukosetoleranz ab 100–125, Diabetes ab ≥126 — icare-krankheitslehre Z. 59407–59413). min=null: kein unterer Normbereich/Hypoglykämie-Schwelle im Korpus erfasst → Beschaffungsliste."
+    },
+    {
+      "id": "bz-nuechtern-erwachsen-mmoll",
+      "groesse": "Blutzucker nüchtern (mmol/l)",
+      "physEinheit": "mmol/l",
+      "position": null,
+      "zielgruppe": "erwachsen",
+      "altersMarker": null,
+      "aliasse": ["blutzucker", "blutglukose", "blutglucose", "nüchternblutzucker", "nuechternblutzucker", "glukosespiegel", "blutglukosespiegel", "nüchternblutglukose", "nüchtern-blutzucker"],
+      "min": null,
+      "max": 5.6,
+      "quelle": {
+        "datei": "recherche/pflege-heute-volltext/pflege-heute.txt",
+        "zeile": 195073,
+        "zitat": "Plasma (nüchtern) < 100 mg/dl (< 5,6 mmol/l)."
+      },
+      "hinweis": "max=5,6 aus dem Nüchtern-Normwert (<5,6 mmol/l). min=null: keine untere Schwelle im Korpus erfasst → Beschaffungsliste."
+    },
+
+    {
+      "id": "puls-neugeborenes",
+      "groesse": "Puls Neugeborenes (0–4 Wochen)",
+      "physEinheit": "/min",
+      "position": null,
+      "zielgruppe": "kind",
+      "altersMarker": "neugeboren",
+      "aliasse": ["puls", "pulsfrequenz", "herzfrequenz", "hf"],
+      "min": 120,
+      "max": 140,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 9674,
+        "zitat": "Neugeborenes (0–4 Wochen) ... 120–140 (Tab. 14.3 Pulsfrequenz nach Altersstufen)"
+      },
+      "hinweis": null
+    },
+    {
+      "id": "puls-saeugling",
+      "groesse": "Puls Säugling (< 1 Jahr)",
+      "physEinheit": "/min",
+      "position": null,
+      "zielgruppe": "kind",
+      "altersMarker": "säugling|saeugling",
+      "aliasse": ["puls", "pulsfrequenz", "herzfrequenz", "hf"],
+      "min": 110,
+      "max": 130,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 9683,
+        "zitat": "Säugling (< 1 Jahr) ... 110–130 (Tab. 14.3 Pulsfrequenz nach Altersstufen)"
+      },
+      "hinweis": null
+    },
+    {
+      "id": "puls-kleinkind",
+      "groesse": "Puls Kleinkind (1–6 Jahre)",
+      "physEinheit": "/min",
+      "position": null,
+      "zielgruppe": "kind",
+      "altersMarker": "kleinkind",
+      "aliasse": ["puls", "pulsfrequenz", "herzfrequenz", "hf"],
+      "min": 100,
+      "max": 120,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 9691,
+        "zitat": "Kleinkind (1–6 Jahre) ... 100–120 (Tab. 14.3 Pulsfrequenz nach Altersstufen)"
+      },
+      "hinweis": null
+    },
+    {
+      "id": "puls-schulkind",
+      "groesse": "Puls Schulkind (7–12 Jahre)",
+      "physEinheit": "/min",
+      "position": null,
+      "zielgruppe": "kind",
+      "altersMarker": "schulkind",
+      "aliasse": ["puls", "pulsfrequenz", "herzfrequenz", "hf"],
+      "min": 80,
+      "max": 110,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 9699,
+        "zitat": "Schulkind (7–12 Jahre) ... 80–110 (Tab. 14.3 Pulsfrequenz nach Altersstufen)"
+      },
+      "hinweis": null
+    },
+    {
+      "id": "puls-jugendlich",
+      "groesse": "Puls Jugendlicher (13–18 Jahre)",
+      "physEinheit": "/min",
+      "position": null,
+      "zielgruppe": "kind",
+      "altersMarker": "jugendlich",
+      "aliasse": ["puls", "pulsfrequenz", "herzfrequenz", "hf"],
+      "min": 60,
+      "max": 80,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 9707,
+        "zitat": "Jugendlicher (13–18 Jahre) ... 60–80 (Tab. 14.3 Pulsfrequenz nach Altersstufen)"
+      },
+      "hinweis": null
+    },
+    {
+      "id": "atemfrequenz-neugeborenes",
+      "groesse": "Atemfrequenz Neugeborenes (0–4 Wochen)",
+      "physEinheit": "/min",
+      "position": null,
+      "zielgruppe": "kind",
+      "altersMarker": "neugeboren",
+      "aliasse": ["atemfrequenz", "atemzüge", "atemzuege", "af"],
+      "min": 30,
+      "max": 50,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 9960,
+        "zitat": "Neugeborenes (0–4 Wochen) 30–50 (Tab. 14.6 Atemfrequenz nach Altersstufen)"
+      },
+      "hinweis": null
+    },
+    {
+      "id": "atemfrequenz-saeugling",
+      "groesse": "Atemfrequenz Säugling (< 1 Jahr)",
+      "physEinheit": "/min",
+      "position": null,
+      "zielgruppe": "kind",
+      "altersMarker": "säugling|saeugling",
+      "aliasse": ["atemfrequenz", "atemzüge", "atemzuege", "af"],
+      "min": 20,
+      "max": 40,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 9964,
+        "zitat": "Säugling (< 1 Jahr) 20–40 (Tab. 14.6 Atemfrequenz nach Altersstufen)"
+      },
+      "hinweis": null
+    },
+    {
+      "id": "atemfrequenz-kleinkind",
+      "groesse": "Atemfrequenz Kleinkind (1–6 Jahre)",
+      "physEinheit": "/min",
+      "position": null,
+      "zielgruppe": "kind",
+      "altersMarker": "kleinkind",
+      "aliasse": ["atemfrequenz", "atemzüge", "atemzuege", "af"],
+      "min": 20,
+      "max": 30,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 9968,
+        "zitat": "Kleinkind (1–6 Jahre) 20–30 (Tab. 14.6 Atemfrequenz nach Altersstufen)"
+      },
+      "hinweis": null
+    },
+    {
+      "id": "atemfrequenz-schulkind",
+      "groesse": "Atemfrequenz Schulkind (7–12 Jahre)",
+      "physEinheit": "/min",
+      "position": null,
+      "zielgruppe": "kind",
+      "altersMarker": "schulkind",
+      "aliasse": ["atemfrequenz", "atemzüge", "atemzuege", "af"],
+      "min": 18,
+      "max": 25,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 9972,
+        "zitat": "Schulkind (7–12 Jahre) 18–25 (Tab. 14.6 Atemfrequenz nach Altersstufen)"
+      },
+      "hinweis": null
+    },
+    {
+      "id": "atemfrequenz-jugendlich",
+      "groesse": "Atemfrequenz Jugendlicher (13–18 Jahre)",
+      "physEinheit": "/min",
+      "position": null,
+      "zielgruppe": "kind",
+      "altersMarker": "jugendlich",
+      "aliasse": ["atemfrequenz", "atemzüge", "atemzuege", "af"],
+      "min": 16,
+      "max": 22,
+      "quelle": {
+        "datei": "recherche/icare-examen-kompakt-volltext/icare-examen-kompakt.txt",
+        "zeile": 9976,
+        "zitat": "Jugendlicher (13–18 Jahre) 16–22 (Tab. 14.6 Atemfrequenz nach Altersstufen)"
+      },
+      "hinweis": "Tab. 33.1 nennt fuer dieselbe Gruppe 10–22; Tab. 14.6 (16–22) als plausibler gewaehlt — bei Diskrepanz redaktionell geklaert."
+    }
+  ]
+}

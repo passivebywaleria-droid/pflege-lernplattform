@@ -168,6 +168,61 @@ export const ANTI_PATTERNS: AntiPattern[] = [
       /(\?|§\s*\d|BGB|richterlich|Betreuungsgericht|Einwilligung|Genehmigung|Anordnung|\bKEINE\b|keine\s+Fixierung|gilt\s+als\s+Fixierung|Lifestyle|Kollegin|möchte)/i,
     skipInDistraktor: true,
   },
+
+  // ── Stage 3 / W4: domänen-spezifische Anti-Patterns (korpus-belegt) ──────────
+  {
+    id: "AP-2H-LAGERUNG-STARR",
+    severity: "MITTEL",
+    regex:
+      /((?:2|zwei)\s*[-\s]?(?:h|stunden)[-\s]?regel)|((?:starre?s?|pauschale?s?|feste?s?)\s+(?:2|zwei)\s*[-\s]?(?:stünd|stunden)\w*)/i,
+    beschreibung:
+      "Starre/pauschale 2-Stunden-Lagerungsregel. DNQP Dekubitusprophylaxe: Für jeden Gefährdeten ist ein INDIVIDUELLES Intervall festzulegen und bei Zustandsänderung anzupassen — 2-stündlich ist nur der orientierende Startwert (Finger-Test), keine starre Regel für alle.",
+    empfehlung:
+      "Individuelles Lagerungsintervall statt starrer 2h-Regel; zusätzlich Mikrobewegungen. Quelle: DNQP Dekubitus (Gebrauchsanleitung Expertenstandards).",
+    // Korrektur-/Aufhebungs-Kontexte (Lehrinhalt ÜBER die obsolet gewordene Regel)
+    ignoreIf:
+      /(aufgegeben|aufgehoben|abgelöst|überholt|obsolet|veraltet|widerleg|nicht\s+mehr|individuell|Finger-?Test|Mythos|Startwert|gilt\s+nicht|\bvorbei\b|\?)/i,
+    skipInDistraktor: true,
+  },
+  {
+    id: "AP-DEKUBITUS-MASSAGE",
+    severity: "HOCH",
+    regex:
+      /(massier\w+|massage|kräftiges\s+reiben)[^.\n]{0,30}(gerötet\w*|geschwächt\w*|prädilektion\w*|druckstelle\w*|dekubitus|gefährdete[nr]?\s+haut)/i,
+    beschreibung:
+      "Massieren/kräftiges Reiben gefährdeter oder geröteter Hautstellen als Dekubitusprophylaxe. Belegt obsolet: schädigt bereits geschädigtes Gewebe zusätzlich (I care / DNQP 2017: „Massieren oder kräftiges Reiben der Prädilektionsstellen hilft nicht gegen Dekubitus“).",
+    empfehlung:
+      "Keine Massage gefährdeter Stellen. Stattdessen: Druckentlastung, Bewegungsförderung, Hautinspektion. Quelle: I care Pflege (DNQP 2017).",
+    // Korrektive Rahmung (verboten/kontraindiziert/widerlegt) ist Lehrinhalt, kein Fehler.
+    ignoreIf:
+      /(verboten|kontraindizier\w*|no-?go|obsolet|widerleg\w*|schäd\w*|nicht\s|kein\w*|vermeid\w*|tabu|hilft\s+nicht|\?)/i,
+    skipInDistraktor: true,
+  },
+  {
+    id: "AP-DEKUBITUS-HAUTMYTHOS",
+    severity: "HOCH",
+    regex: /(franzbranntwein|eisen\s+und\s+föhnen)/i,
+    beschreibung:
+      "Franzbranntwein bzw. „Eisen und Föhnen“ der Haut zur Dekubitusprophylaxe. Belegt schädlich: Alkohol entfettet/trocknet die Haut aus; Föhnen ist wirkungslos und erhöht Infektions-/Verbrennungsgefahr (Pflege Heute).",
+    empfehlung:
+      "Keine hautschädigenden Rituale. pH-neutrale Reinigung, bei trockener Haut W/O-Emulsion. Quelle: Pflege Heute (Pflegerituale-Warnung).",
+    ignoreIf:
+      /(verboten|kontraindizier\w*|no-?go|obsolet|widerleg\w*|schäd\w*|trocknet|nicht\s|kein\w*|vermeid\w*|tabu|\?)/i,
+    skipInDistraktor: true,
+  },
+  {
+    id: "AP-OPIOID-ATEMDEPRESSION-MYTHOS",
+    severity: "HOCH",
+    regex:
+      /((?:angst|sorge)\s+vor\s+(?:der\s+)?atemdepression)|((?:opioid\w*|morphin\w*)[^.\n]{0,50}(?:beschleunig\w*\s+(?:das\s+)?sterben|sterben\s+beschleunig\w*))/i,
+    beschreibung:
+      "Opioid-Mythos: Aus Angst vor Atemdepression Opioide vorenthalten/zu niedrig dosieren bzw. „Opioide beschleunigen das Sterben“. Belegt falsch: Bei Titration nach Schmerzreduktion ist eine Atemdepression nicht zu befürchten (Schmerz = physiologischer Antagonist); Untertherapie ist der eigentliche Fehler (Palliativmedizin Aulbert).",
+    empfehlung:
+      "Opioide nach Wirkung titrieren; sachgerechte Dosierung verursacht keine relevante Atemdepression und darf bei Tumorschmerz nicht vorenthalten werden. Quelle: Palliativmedizin (Aulbert).",
+    ignoreIf:
+      /(nicht\s|kein\w*|Mythos|Irrtum|falsch|unbegründet|widerleg\w*|Titration|titrier\w*|sachgerecht|physiologischer\s+Antagonist|\?)/i,
+    skipInDistraktor: true,
+  },
 ];
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
