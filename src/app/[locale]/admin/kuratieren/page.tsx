@@ -222,7 +222,7 @@ export default function KuratierenPage() {
               <div className="flex gap-3">
                 <button
                   onClick={handleSelect}
-                  className="flex-1 rounded-2xl bg-[var(--lern-accent)] px-4 py-3 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
+                  className="flex-1 rounded-2xl bg-[var(--lern-accent)] px-4 py-3 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52]"
                 >
                   Übernehmen (#{activeVariant})
                 </button>

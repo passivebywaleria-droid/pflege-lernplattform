@@ -52,6 +52,12 @@ export function LearningReminderBanner() {
     }
   }, [])
 
+  // Marketing-Landing (Locale-Root, z. B. /de) — kein App-Streak-Banner für Besucher
+  const segments = pathname ? pathname.split("/").filter(Boolean) : []
+  if (segments.length <= 1) {
+    return null
+  }
+
   // Banner auf aktiven Lern-/Prüfungs-/Karteikarten-Routen unterdrücken
   if (pathname && HIDDEN_ON_PATHS.some((p) => pathname.includes(p))) {
     return null

@@ -12,6 +12,11 @@ export function GlobalTabBar() {
 
   if (!pathname) return null
 
+  // Marketing-Landing (Locale-Root, z. B. /de) — keine App-Tab-Leiste.
+  // Recherche: "zero navigation distractions" ist Top-Hebel für Waitlist-Conversion.
+  const segments = pathname.split("/").filter(Boolean)
+  if (segments.length <= 1) return null
+
   // Hide patterns: route segments after the locale where the tab-bar should not appear
   const hidePatterns = [
     "/login",
@@ -24,6 +29,8 @@ export function GlobalTabBar() {
     "/demo-steps",
     "/onboarding",
     "/einstufung",
+    // Öffentlicher SEO-/Wissens-Bereich — keine App-Tab-Leiste (Landing-Charakter).
+    "/wissen",
     // Aktiver Lernfluss — User soll im Walkthrough bleiben, nicht zwischen Tabs wechseln.
     // Bundle-1:1 (claude-design-bundle FlowContainer hat ebenfalls keine Tab-Bar).
     // Macht Platz für fixen Step-Action-Bar (Weiter / Prüfen) unten.

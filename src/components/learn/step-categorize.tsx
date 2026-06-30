@@ -227,7 +227,7 @@ export function StepCategorize({
           <button
             onClick={() => setChecked(true)}
             aria-label="Zuordnung prüfen"
-            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
           >
             Prüfen
           </button>
@@ -239,7 +239,7 @@ export function StepCategorize({
           <button
             onClick={() => onNext(allCorrect)}
             aria-label="Weiter zum nächsten Schritt"
-            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
           >
             Weiter
           </button>

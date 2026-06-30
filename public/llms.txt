@@ -1,0 +1,21 @@
+# Carovia
+
+> Adaptive Lernplattform für die generalistische Pflegeausbildung (Deutschland).
+> Prüfungswissen, Fallbeispiele und Karteikarten — verständlich erklärt, fachlich
+> belegt nach Pflege-Expertenstandards (DNQP) und Leitlinien.
+
+Carovia richtet sich an Pflegeschülerinnen und -schüler. Inhalte sind in einfacher,
+fachlich korrekter deutscher Sprache verfasst und mit Primärquellen belegt.
+
+## Wissen (öffentlich, frei lesbar)
+
+- [Dekubitus-Stadien I–IV erklärt](https://carovia.de/de/wissen/dekubitus-stadien): Die 4 Dekubitus-Kategorien nach NPUAP/EPUAP, Fingertest, Sonderformen, Prädilektionsstellen.
+
+## Übersicht
+
+- [Wissens-Hub](https://carovia.de/de/wissen): Alle frei lesbaren Wissens-Beiträge.
+
+## Hinweis
+
+Die Inhalte dienen der Ausbildung und ersetzen keine ärztliche oder pflegerische
+Fachberatung im Einzelfall.

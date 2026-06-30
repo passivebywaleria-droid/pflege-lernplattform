@@ -222,7 +222,7 @@ export default function SituationLernenPage() {
               </p>
               <Link
                 href={`/${locale}/lernen/ce/${ceId}`}
-                className="inline-block rounded-xl bg-[var(--lern-accent)] px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[#1A7359]"
+                className="inline-block rounded-xl bg-[var(--lern-accent)] px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[#4C6A52]"
               >
                 {t("zurueckZurUebersicht")}
               </Link>
@@ -272,7 +272,7 @@ export default function SituationLernenPage() {
             <div className="text-center py-12">
               <button
                 onClick={handleNextStep}
-                className="rounded-xl bg-[var(--lern-accent)] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[#1A7359]"
+                className="rounded-xl bg-[var(--lern-accent)] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[#4C6A52]"
               >
                 {t("fortschritt")}
               </button>
@@ -377,7 +377,7 @@ export default function SituationLernenPage() {
 
             <button
               onClick={() => setPatientModalOpen(false)}
-              className="w-full rounded-xl bg-[var(--lern-accent)] px-6 py-3 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
+              className="w-full rounded-xl bg-[var(--lern-accent)] px-6 py-3 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52]"
             >
               Zurück
             </button>

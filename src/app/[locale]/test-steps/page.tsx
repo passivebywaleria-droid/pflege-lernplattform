@@ -40,7 +40,7 @@ function DoneScreen({ onReset }: { onReset: () => void }) {
         <button
           onClick={onReset}
           className="rounded-xl px-5 py-2.5 text-sm font-medium text-white transition-all active:scale-[0.98]"
-          style={{ backgroundColor: "#218C71" }}
+          style={{ backgroundColor: "#5A7D60" }}
         >
           Nochmal
         </button>
@@ -302,8 +302,8 @@ export default function TestStepsPage() {
                 onClick={() => switchTab(tab.id)}
                 className="whitespace-nowrap rounded-full px-3 py-1.5 text-xs font-medium transition-colors"
                 style={{
-                  backgroundColor: activeTab === tab.id ? "#218C7115" : "transparent",
-                  color: activeTab === tab.id ? "#218C71" : "var(--lern-text-secondary, #6b6b6b)",
+                  backgroundColor: activeTab === tab.id ? "#5A7D6015" : "transparent",
+                  color: activeTab === tab.id ? "#5A7D60" : "var(--lern-text-secondary, #6b6b6b)",
                   fontWeight: activeTab === tab.id ? 600 : 400,
                 }}
               >

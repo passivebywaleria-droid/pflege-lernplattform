@@ -197,9 +197,9 @@ function CarouselView({
                 role="tab"
                 aria-selected={i === activeCard}
                 aria-label={`Karte ${i + 1} von ${allCards.length}`}
-                className={`h-2 rounded-full transition-all focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2 ${
+                className={`h-2 rounded-full transition-all focus:outline-2 focus:outline-[#5A7D60] focus:outline-offset-2 ${
                   i === activeCard
-                    ? "w-6 bg-[#218C71]"
+                    ? "w-6 bg-[#5A7D60]"
                     : "w-2 bg-[var(--lern-border)]"
                 }`}
               />
@@ -217,7 +217,7 @@ function CarouselView({
         {isLast ? (
           <button
             onClick={onNext}
-            className="flex-1 rounded-xl bg-[#218C71] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
+            className="flex-1 rounded-xl bg-[#5A7D60] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52]"
           >
             Weiter
           </button>
@@ -553,7 +553,7 @@ export function StepText({
                 <ul className="space-y-2 pl-1">
                   {paragraph.split("\n").map((line, j) => (
                     <li key={j} className="flex gap-2">
-                      <span className="text-[#218C71] mt-1 shrink-0">
+                      <span className="text-[#5A7D60] mt-1 shrink-0">
                         {line.match(/^\d\./) ? line.match(/^\d\./)![0] : "•"}
                       </span>
                       <span><FachbegriffText glossar={glossar ?? []}>{line.replace(/^[-\d.]\s*/, "")}</FachbegriffText></span>
@@ -610,9 +610,9 @@ export function StepText({
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="rounded-2xl bg-[#218C71]/5 border border-[#218C71]/15 p-4"
+          className="rounded-2xl bg-[#5A7D60]/5 border border-[#5A7D60]/15 p-4"
         >
-          <p className="text-sm font-medium text-[#218C71] mb-1">
+          <p className="text-sm font-medium text-[#5A7D60] mb-1">
             Fallbezug
           </p>
           <p className="text-sm text-[var(--lern-text-primary)]/70">
@@ -638,7 +638,7 @@ export function StepText({
         <button
           onClick={onNext}
           aria-label="Weiter zum nächsten Schritt"
-          className="flex-1 rounded-xl bg-[#218C71] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2"
+          className="flex-1 rounded-xl bg-[#5A7D60] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52] focus:outline-2 focus:outline-[#5A7D60] focus:outline-offset-2"
         >
           Weiter
         </button>

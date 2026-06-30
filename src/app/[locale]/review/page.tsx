@@ -152,7 +152,7 @@ export default function ReviewPage() {
                     animate={{ rotateY: 0, opacity: 1 }}
                     exit={{ rotateY: 90, opacity: 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
-                    className="min-h-[250px] rounded-2xl bg-[#218C71] p-8 shadow-lg flex flex-col items-center justify-center"
+                    className="min-h-[250px] rounded-2xl bg-[#5A7D60] p-8 shadow-lg flex flex-col items-center justify-center"
                   >
                     <p className="text-xs uppercase tracking-wide text-white/70 mb-4">
                       Antwort
@@ -227,10 +227,10 @@ export default function ReviewPage() {
 
                   <button
                     onClick={() => handleBewertung("leicht")}
-                    className="rounded-2xl bg-[#218C71]/10 px-3 py-4 min-h-[44px] text-center transition-all active:scale-95"
+                    className="rounded-2xl bg-[#5A7D60]/10 px-3 py-4 min-h-[44px] text-center transition-all active:scale-95"
                   >
                     <span className="text-lg">🚀</span>
-                    <p className="mt-1 text-xs font-semibold text-[#218C71]">
+                    <p className="mt-1 text-xs font-semibold text-[#5A7D60]">
                       {t("easy")}
                     </p>
                     <p className="text-xs text-[var(--lern-text-tertiary)]">
@@ -267,7 +267,7 @@ export default function ReviewPage() {
             </p>
             <Link
               href={`/${locale}/lernen/le-01`}
-              className="mt-6 inline-block rounded-2xl bg-[#218C71] px-8 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+              className="mt-6 inline-block rounded-2xl bg-[#5A7D60] px-8 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
             >
               Weiterlernen
             </Link>

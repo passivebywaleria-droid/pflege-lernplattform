@@ -16,7 +16,7 @@ const BLOOM_DATA: Record<
   },
   2: {
     name: "Verstehen",
-    farbe: "#218C71",
+    farbe: "#5A7D60",
     erklaerung: "Du musstest etwas in eigenen Worten erklären können.",
   },
   3: {

@@ -115,7 +115,7 @@ export function StepBranching({
         <StepActionBar>
           <button
             onClick={() => onNext(options[selected].isCorrect)}
-            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52]"
           >
             Weiter
           </button>

@@ -85,7 +85,7 @@ export function StepSelfrating({
         <button
           onClick={() => rating !== null && onNext(rating)}
           disabled={rating === null}
-          className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] disabled:opacity-40 disabled:cursor-not-allowed"
+          className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52] disabled:opacity-40 disabled:cursor-not-allowed"
         >
           Weiter
         </button>

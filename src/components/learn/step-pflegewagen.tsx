@@ -52,10 +52,10 @@ const ZONE_VARIANTS: Record<
     label: "Auf den Wagen",
   },
   secondary: {
-    border: "border-[#218C71]/40",
-    bg: "bg-[#218C71]/8",
-    text: "text-[#1A7359]",
-    itemBg: "bg-[#218C71]/10",
+    border: "border-[#5A7D60]/40",
+    bg: "bg-[#5A7D60]/8",
+    text: "text-[#4C6A52]",
+    itemBg: "bg-[#5A7D60]/10",
     label: "Auf den Wagen",
   },
   discard: {
@@ -204,7 +204,7 @@ export function StepPflegewagen({
         ? "border-[#3E5A6A]"
         : "border-[#C96B5C]"
       : opts.selected
-        ? "border-[#218C71]"
+        ? "border-[#5A7D60]"
         : "border-[var(--lern-border)]";
 
     const bgColor = opts.submitted
@@ -212,7 +212,7 @@ export function StepPflegewagen({
         ? "bg-[#3E5A6A]/10"
         : "bg-[#C96B5C]/10"
       : opts.selected
-        ? "bg-[#218C71]/10"
+        ? "bg-[#5A7D60]/10"
         : "bg-[var(--lern-bg-primary)]";
 
     const iconColor = opts.submitted
@@ -451,7 +451,7 @@ export function StepPflegewagen({
         <StepActionBar>
           <button
             onClick={handleCheck}
-            className="flex-1 rounded-xl bg-[var(--lern-accent)] text-white font-semibold py-3.5 hover:bg-[#1A7359] transition-colors"
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] text-white font-semibold py-3.5 hover:bg-[#4C6A52] transition-colors"
           >
             Prüfen
           </button>
@@ -461,7 +461,7 @@ export function StepPflegewagen({
         <StepActionBar>
           <button
             onClick={() => onNext(allCorrect)}
-            className="flex-1 rounded-xl bg-[var(--lern-accent)] text-white font-semibold py-3.5 hover:bg-[#1A7359] transition-colors"
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] text-white font-semibold py-3.5 hover:bg-[#4C6A52] transition-colors"
           >
             Weiter
           </button>

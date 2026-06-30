@@ -190,7 +190,7 @@ export function StepMatrix({
     "",
     "bg-[#3E5A6A]/8 border-[#3E5A6A]/20",
     "bg-[#D4956A]/8 border-[#D4956A]/20",
-    "bg-[#218C71]/8 border-[#218C71]/20",
+    "bg-[#5A7D60]/8 border-[#5A7D60]/20",
     "bg-[#C96B5C]/8 border-[#C96B5C]/20",
   ];
 

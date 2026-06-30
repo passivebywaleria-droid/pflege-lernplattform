@@ -91,7 +91,7 @@ export function StepInlineWissen({
           // Universum: ChatGPT-Teal-Palette (gleiches Team wie Anwendungs-Steps,
           // aber dezent als „Lese-Modus" markiert via blasser Hintergrund).
           backgroundColor: "var(--lern-wissen-bg, #EAF4F0)",
-          borderColor: "var(--lern-accent, #218C71)",
+          borderColor: "var(--lern-accent, #5A7D60)",
           color: "var(--lern-text-primary)",
         }}
       >
@@ -99,12 +99,12 @@ export function StepInlineWissen({
         <div className="flex items-center gap-2">
           <BookOpen
             className="w-4 h-4"
-            style={{ color: "var(--lern-accent, #218C71)" }}
+            style={{ color: "var(--lern-accent, #5A7D60)" }}
             aria-hidden="true"
           />
           <span
             className="text-[10px] font-semibold tracking-wider uppercase"
-            style={{ color: "var(--lern-accent, #218C71)" }}
+            style={{ color: "var(--lern-accent, #5A7D60)" }}
           >
             Pflege-Wissen · {lesezeit}
           </span>
@@ -117,7 +117,7 @@ export function StepInlineWissen({
         <div
           className="text-sm italic leading-relaxed pl-3 border-l-[3px] whitespace-pre-line"
           style={{
-            borderColor: "var(--lern-accent, #218C71)",
+            borderColor: "var(--lern-accent, #5A7D60)",
             color: "var(--lern-text-secondary)",
           }}
         >
@@ -134,18 +134,18 @@ export function StepInlineWissen({
           className="rounded-xl p-3 flex items-start gap-2"
           style={{
             backgroundColor: "var(--lern-wissen-faustregel-bg, #F8F5F0)",
-            border: "1.5px solid var(--lern-accent, #218C71)",
+            border: "1.5px solid var(--lern-accent, #5A7D60)",
           }}
         >
           <Lightbulb
             className="w-4 h-4 mt-0.5 shrink-0"
-            style={{ color: "var(--lern-accent, #218C71)" }}
+            style={{ color: "var(--lern-accent, #5A7D60)" }}
             aria-hidden="true"
           />
           <div className="flex-1">
             <span
               className="text-[10px] font-semibold tracking-wider uppercase block mb-1"
-              style={{ color: "var(--lern-accent, #218C71)" }}
+              style={{ color: "var(--lern-accent, #5A7D60)" }}
             >
               Faustregel
             </span>
@@ -157,7 +157,7 @@ export function StepInlineWissen({
         {data.spektrum && data.spektrum.length > 0 && (
           <div
             className="rounded-xl border-[1.5px]"
-            style={{ borderColor: "var(--lern-accent, #218C71)" }}
+            style={{ borderColor: "var(--lern-accent, #5A7D60)" }}
           >
             <button
               type="button"
@@ -168,18 +168,18 @@ export function StepInlineWissen({
             >
               <Users
                 className="w-4 h-4"
-                style={{ color: "var(--lern-accent, #218C71)" }}
+                style={{ color: "var(--lern-accent, #5A7D60)" }}
                 aria-hidden="true"
               />
               <span
                 className="text-[10px] font-semibold tracking-wider uppercase flex-1"
-                style={{ color: "var(--lern-accent, #218C71)" }}
+                style={{ color: "var(--lern-accent, #5A7D60)" }}
               >
                 Spektrum: bei anderen Patient*innen anders
               </span>
               <ChevronDown
                 className={`w-4 h-4 transition-transform ${spektrumOpen ? "rotate-180" : ""}`}
-                style={{ color: "var(--lern-accent, #218C71)" }}
+                style={{ color: "var(--lern-accent, #5A7D60)" }}
                 aria-hidden="true"
               />
             </button>
@@ -205,7 +205,7 @@ export function StepInlineWissen({
         {sonst && (
           <div
             className="rounded-xl border-[1.5px] border-dashed"
-            style={{ borderColor: "var(--lern-accent, #218C71)" }}
+            style={{ borderColor: "var(--lern-accent, #5A7D60)" }}
           >
             <button
               type="button"
@@ -216,13 +216,13 @@ export function StepInlineWissen({
             >
               <span
                 className="text-[10px] font-semibold tracking-wider uppercase flex-1"
-                style={{ color: "var(--lern-accent, #218C71)" }}
+                style={{ color: "var(--lern-accent, #5A7D60)" }}
               >
                 Sonst noch wichtig (kommt in keinem Patienten-Fall vor)
               </span>
               <ChevronDown
                 className={`w-4 h-4 transition-transform ${sonstOpen ? "rotate-180" : ""}`}
-                style={{ color: "var(--lern-accent, #218C71)" }}
+                style={{ color: "var(--lern-accent, #5A7D60)" }}
                 aria-hidden="true"
               />
             </button>

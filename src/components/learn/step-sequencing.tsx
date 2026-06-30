@@ -60,7 +60,7 @@ function SortableItem({
       ? "border-[#3E5A6A]"
       : "border-[#C96B5C]"
     : isDragging
-      ? "border-[#218C71]"
+      ? "border-[#5A7D60]"
       : "border-[var(--lern-border)]";
 
   const bgColor = submitted
@@ -68,7 +68,7 @@ function SortableItem({
       ? "bg-[#3E5A6A]/5"
       : "bg-[#C96B5C]/5"
     : isDragging
-      ? "bg-[#218C71]/5"
+      ? "bg-[#5A7D60]/5"
       : "bg-[var(--lern-bg-primary)]";
 
   const numBg = submitted
@@ -242,9 +242,9 @@ export function StepSequencing({
           <button
             onClick={() => setSubmitted(true)}
             className="flex-1 rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98]"
-            style={{ backgroundColor: "#218C71" }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#1A7359")}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#218C71")}
+            style={{ backgroundColor: "#5A7D60" }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#4C6A52")}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#5A7D60")}
           >
             Prüfen
           </button>
@@ -254,9 +254,9 @@ export function StepSequencing({
           <button
             onClick={() => onNext(isFullyCorrect)}
             className="flex-1 rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98]"
-            style={{ backgroundColor: "#218C71" }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#1A7359")}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#218C71")}
+            style={{ backgroundColor: "#5A7D60" }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#4C6A52")}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#5A7D60")}
           >
             Weiter
           </button>

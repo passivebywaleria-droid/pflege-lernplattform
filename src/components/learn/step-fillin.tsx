@@ -98,7 +98,7 @@ export function StepFillIn({
                       : submitted && !isCorrect
                         ? "bg-[#C96B5C]/20 text-[var(--lern-text-primary)]"
                         : selected !== null
-                          ? "bg-[#218C71]/10 text-[#218C71]"
+                          ? "bg-[#5A7D60]/10 text-[#5A7D60]"
                           : "bg-[var(--lern-border)] text-[var(--lern-text-tertiary)]"
                   }`}
                 >
@@ -123,8 +123,8 @@ export function StepFillIn({
             borderColor = "border-[#C96B5C]";
             bgColor = "bg-[#C96B5C]/5";
           } else if (selected === i) {
-            borderColor = "border-[#218C71]";
-            bgColor = "bg-[#218C71]/5";
+            borderColor = "border-[#5A7D60]";
+            bgColor = "bg-[#5A7D60]/5";
           }
 
           return (
@@ -135,7 +135,7 @@ export function StepFillIn({
               role="radio"
               aria-checked={selected === i}
               aria-label={`Option: ${opt}`}
-              className={`w-full rounded-xl border-[1.5px] ${borderColor} ${bgColor} p-3 text-left text-sm font-medium text-[var(--lern-text-primary)] transition-colors focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2`}
+              className={`w-full rounded-xl border-[1.5px] ${borderColor} ${bgColor} p-3 text-left text-sm font-medium text-[var(--lern-text-primary)] transition-colors focus:outline-2 focus:outline-[#5A7D60] focus:outline-offset-2`}
             >
               {opt}
             </motion.button>
@@ -148,7 +148,7 @@ export function StepFillIn({
           onClick={handleSubmit}
           disabled={selected === null}
           aria-label="Antwort prüfen"
-          className="w-full rounded-2xl bg-[#218C71] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2"
+          className="w-full rounded-2xl bg-[#5A7D60] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[#5A7D60] focus:outline-offset-2"
         >
           Prüfen
         </button>
@@ -165,7 +165,7 @@ export function StepFillIn({
           <button
             onClick={() => onNext(isCorrect)}
             aria-label="Weiter zum nächsten Schritt"
-            className="w-full rounded-2xl bg-[#218C71] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2"
+            className="w-full rounded-2xl bg-[#5A7D60] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52] focus:outline-2 focus:outline-[#5A7D60] focus:outline-offset-2"
           >
             Weiter
           </button>

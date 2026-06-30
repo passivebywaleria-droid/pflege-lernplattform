@@ -202,7 +202,7 @@ function StationCard({
                         e.stopPropagation();
                         onStationStarten(fallId, station.stationId);
                       }}
-                      className="rounded-full bg-[var(--lern-accent)] px-3 py-1.5 text-xs font-semibold text-white active:scale-95 transition-transform hover:bg-[#1A7359]"
+                      className="rounded-full bg-[var(--lern-accent)] px-3 py-1.5 text-xs font-semibold text-white active:scale-95 transition-transform hover:bg-[#4C6A52]"
                     >
                       Starten
                     </button>

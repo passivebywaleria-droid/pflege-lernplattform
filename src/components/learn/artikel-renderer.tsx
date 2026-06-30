@@ -142,19 +142,19 @@ const ZEITSTRAHL_EVENTS: ZeitstrahlEvent[] = [
     jahr: "~500 v. Chr.",
     titel: "Erste Pflegende in Indien",
     detail: "In altindischen Schriften werden erstmals Menschen beschrieben, die Kranke organisiert versorgten — neben Ärzten, mit festen Aufgaben.",
-    farbe: "#218C71",
+    farbe: "#5A7D60",
   },
   {
     jahr: "1845",
     titel: "Nightingale in Kaiserswerth",
     detail: "Florence Nightingale lernt an der Kaiserswerther Diakonie bei Düsseldorf systematische Krankenpflege.",
-    farbe: "#218C71",
+    farbe: "#5A7D60",
   },
   {
     jahr: "1853–1856",
     titel: "Krimkrieg",
     detail: "Nightingale senkt die Sterblichkeitsrate verwundeter Soldaten von über 40 % auf unter 5 % — durch Hygiene und Organisation.",
-    farbe: "#218C71",
+    farbe: "#5A7D60",
   },
   {
     jahr: "1860",
@@ -198,7 +198,7 @@ function InteraktiverZeitstrahl() {
       </p>
       <div className="relative ml-6">
         {/* Vertikale Linie */}
-        <div className="absolute left-0 top-0 h-full w-0.5 bg-[#218C71]/30" />
+        <div className="absolute left-0 top-0 h-full w-0.5 bg-[#5A7D60]/30" />
 
         {ZEITSTRAHL_EVENTS.map((evt, i) => (
           <div key={i} className="relative mb-3 last:mb-0">
@@ -688,7 +688,7 @@ function KapitelAccordion({
   const tagColors: Record<string, string> = {
     anatomie: "bg-[#7A93A8]/10 text-[#7A93A8]",
     pflege: "bg-[#3E5A6A]/10 text-[#3E5A6A]",
-    krankheitslehre: "bg-[#218C71]/10 text-[#218C71]",
+    krankheitslehre: "bg-[#5A7D60]/10 text-[#5A7D60]",
   };
 
   // Filtere Glossar-Einträge auf dieses Kapitel

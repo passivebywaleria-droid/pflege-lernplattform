@@ -174,7 +174,7 @@ export function StepFreetext({
             onClick={() => setSubmitted(true)}
             disabled={wordCount < minWords}
             aria-label="Antwort abgeben"
-            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
           >
             Antwort abgeben
           </button>
@@ -184,7 +184,7 @@ export function StepFreetext({
           <button
             onClick={() => onNext(true)}
             aria-label="Weiter zum nächsten Schritt"
-            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
+            className="flex-1 rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
           >
             Weiter
           </button>

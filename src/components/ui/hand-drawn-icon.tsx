@@ -152,11 +152,11 @@ function kebabToPascal(str: string): string {
  * 3. Lucide-React (1700+ Icons, dynamisch per kebab-case Name)
  * 4. Fallback: als Text rendern
  *
- * Usage: <ContentIcon icon="stethoscope" size={20} color="#218C71" />
+ * Usage: <ContentIcon icon="stethoscope" size={20} color="#5A7D60" />
  *        <ContentIcon icon="graduation-cap" size={20} />
  *        <ContentIcon icon="heart" size={20} />  ← nutzt HandDrawn
  */
-export function ContentIcon({ icon, size = 20, color = "#218C71", className }: {
+export function ContentIcon({ icon, size = 20, color = "#5A7D60", className }: {
   icon?: string;
   size?: number;
   color?: string;

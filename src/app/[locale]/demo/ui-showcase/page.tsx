@@ -83,7 +83,7 @@ import {
 
 // ─── Color Palette (Beige → Rosa, 7 Abstufungen) ───
 const BLUSH = "#D4A9A2"   // Zart — hellstes Rosa
-const ROSE  = "#218C71"   // Primary — Dusty Rose (Hauptfarbe)
+const ROSE  = "#5A7D60"   // Primary — Dusty Rose (Hauptfarbe)
 const MAUVE = "#A06B63"   // Deep — tiefes Mauve
 const TAUPE = "#BFA48E"   // Neutral — warmes Taupe
 const OAK   = "#B09179"   // Warm — sandiges Braun
@@ -424,8 +424,8 @@ export default function UIShowcase() {
               </div>
             </BlurFade>
             <BlurFade delay={0.3}>
-              <div className="rounded-xl border border-[#218C71]/20 bg-[#218C71]/5 p-4">
-                <div className="mb-1 text-xs font-semibold text-[#218C71]">Richtig!</div>
+              <div className="rounded-xl border border-[#5A7D60]/20 bg-[#5A7D60]/5 p-4">
+                <div className="mb-1 text-xs font-semibold text-[#5A7D60]">Richtig!</div>
                 <p className="text-sm" style={{ color: "#A06B63" }}>Genau — Informationssammlung ist der erste Schritt.</p>
               </div>
             </BlurFade>
@@ -441,8 +441,8 @@ export default function UIShowcase() {
                 Der Pflegeprozess nach Fiechter & Meier umfasst <strong>6 Schritte</strong> und bildet die Grundlage professioneller Pflege.
               </p>
             </div>
-            <div className="rounded-xl border border-[#218C71]/20 bg-[#218C71]/5 p-4">
-              <div className="mb-1 text-xs font-semibold text-[#218C71]">Richtig!</div>
+            <div className="rounded-xl border border-[#5A7D60]/20 bg-[#5A7D60]/5 p-4">
+              <div className="mb-1 text-xs font-semibold text-[#5A7D60]">Richtig!</div>
               <p className="text-sm" style={{ color: "#A06B63" }}>Genau — Informationssammlung ist der erste Schritt.</p>
             </div>
           </div>
@@ -468,7 +468,7 @@ export default function UIShowcase() {
                   key={i}
                   className={`w-full rounded-xl border p-3 text-left text-sm transition-all ${
                     opt.correct
-                      ? "border-[#218C71]/30 bg-[#218C71]/5 font-medium"
+                      ? "border-[#5A7D60]/30 bg-[#5A7D60]/5 font-medium"
                       : "border-[#E5DFD6] hover:border-[#D1A9A5]/50 hover:bg-[#D1A9A5]/5"
                   }`}
                 >
@@ -498,7 +498,7 @@ export default function UIShowcase() {
                   key={i}
                   className={`rounded-2xl border-2 px-4 py-3 text-sm font-medium transition-all active:scale-[0.97] ${
                     opt.correct
-                      ? "border-[#218C71] bg-[#218C71]/10"
+                      ? "border-[#5A7D60] bg-[#5A7D60]/10"
                       : "border-[#E5DFD6] hover:border-[#AE6965]/40"
                   }`}
                   style={opt.correct ? { color: SAGE } : {}}
@@ -522,7 +522,7 @@ export default function UIShowcase() {
                 <button className="flex items-center gap-1.5 rounded-full border-2 border-[#A06B63]/20 px-5 py-2 text-sm font-semibold text-[#A06B63] transition-all hover:bg-[#A06B63]/5 active:scale-95">
                   <X className="h-4 w-4" /> Falsch
                 </button>
-                <button className="flex items-center gap-1.5 rounded-full border-2 border-[#218C71]/30 px-5 py-2 text-sm font-semibold text-[#218C71] transition-all hover:bg-[#218C71]/5 active:scale-95">
+                <button className="flex items-center gap-1.5 rounded-full border-2 border-[#5A7D60]/30 px-5 py-2 text-sm font-semibold text-[#5A7D60] transition-all hover:bg-[#5A7D60]/5 active:scale-95">
                   <Check className="h-4 w-4" /> Wahr
                 </button>
               </div>
@@ -613,14 +613,14 @@ export default function UIShowcase() {
         {/* Variante A: Inline Feedback */}
         <VariantCard label="A" name="Inline Feedback" description="Direkt unter der Frage, mit Erklärung">
           <div className="space-y-3 py-6">
-            <div className="rounded-xl border border-[#218C71]/20 bg-[#218C71]/5 p-4">
+            <div className="rounded-xl border border-[#5A7D60]/20 bg-[#5A7D60]/5 p-4">
               <div className="flex items-start gap-3">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#218C71]/15">
-                  <Check className="h-4 w-4 text-[#218C71]" />
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#5A7D60]/15">
+                  <Check className="h-4 w-4 text-[#5A7D60]" />
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-[#A06B63]">Richtig!</div>
-                  <p className="mt-1 text-xs leading-relaxed text-[#218C71]">
+                  <p className="mt-1 text-xs leading-relaxed text-[#5A7D60]">
                     Genau — die Informationssammlung ist der erste Schritt. Du erkennst die Struktur des Pflegeprozesses sehr gut!
                   </p>
                 </div>
@@ -647,10 +647,10 @@ export default function UIShowcase() {
           <div className="py-6">
             <div className="mx-auto max-w-sm overflow-hidden rounded-2xl border border-[#E5DFD6]">
               <div className="bg-[#fafaf9] p-6 text-center text-xs text-[#86868b]">[Frage darüber]</div>
-              <div className="border-t-2 border-[#218C71] bg-white p-5">
+              <div className="border-t-2 border-[#5A7D60] bg-white p-5">
                 <div className="mb-1 flex items-center gap-2">
-                  <Sparkles className="h-4 w-4 text-[#218C71]" />
-                  <span className="text-sm font-bold text-[#218C71]">Super gemacht!</span>
+                  <Sparkles className="h-4 w-4 text-[#5A7D60]" />
+                  <span className="text-sm font-bold text-[#5A7D60]">Super gemacht!</span>
                 </div>
                 <p className="mb-4 text-xs text-[#6e6e73]">
                   Informationssammlung steht immer am Anfang — so lernst du den Patienten zuerst kennen.
@@ -667,7 +667,7 @@ export default function UIShowcase() {
         <VariantCard label="C" name="Sandwich-Prinzip" description="Loben → Korrigieren → Ermutigen (VISION.md)">
           <div className="py-6">
             <div className="mx-auto max-w-sm space-y-2">
-              <div className="flex items-start gap-2 rounded-xl bg-[#218C71]/10 p-3">
+              <div className="flex items-start gap-2 rounded-xl bg-[#5A7D60]/10 p-3">
                 <span className="mt-0.5 text-base">👍</span>
                 <p className="text-xs leading-relaxed"><strong>Guter Ansatz!</strong> Du hast richtig erkannt, dass es um die Reihenfolge geht.</p>
               </div>
@@ -691,7 +691,7 @@ export default function UIShowcase() {
         {/* Variante A: Streak Banner */}
         <VariantCard label="A" name="Streak & XP Banner" description="Oben auf dem Dashboard, kompakt">
           <div className="py-6">
-            <div className="grid grid-cols-3 gap-3 rounded-2xl bg-gradient-to-r from-[#218C71]/10 via-[#A58B71]/10 to-[#AE6965]/10 p-4">
+            <div className="grid grid-cols-3 gap-3 rounded-2xl bg-gradient-to-r from-[#5A7D60]/10 via-[#A58B71]/10 to-[#AE6965]/10 p-4">
               <div className="flex flex-col items-center gap-1 text-center">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#AE6965]/15">
                   <Flame className="h-5 w-5" style={{ color: RUST }} />
@@ -707,7 +707,7 @@ export default function UIShowcase() {
                 <div className="text-xs text-[#86868b]">XP gesamt</div>
               </div>
               <div className="flex flex-col items-center gap-1 text-center">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#218C71]/15">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#5A7D60]/15">
                   <Target className="h-5 w-5" style={{ color: SAGE }} />
                 </div>
                 <div className="text-lg font-bold leading-tight" style={{ color: SAGE }}>87%</div>
@@ -801,7 +801,7 @@ export default function UIShowcase() {
         {/* Variante B: Soft Rounded */}
         <VariantCard label="B" name="Soft Rounded" description="Sanftere Ecken, leichter Schatten">
           <div className="flex flex-wrap items-center gap-3 py-6">
-            <button className="rounded-2xl px-6 py-3 text-sm font-semibold text-white shadow-md shadow-[#218C71]/20 transition-all hover:shadow-lg hover:shadow-[#218C71]/30 active:scale-95" style={{ backgroundColor: SAGE }}>
+            <button className="rounded-2xl px-6 py-3 text-sm font-semibold text-white shadow-md shadow-[#5A7D60]/20 transition-all hover:shadow-lg hover:shadow-[#5A7D60]/30 active:scale-95" style={{ backgroundColor: SAGE }}>
               <span className="flex items-center gap-2">Lektion starten <ArrowRight className="h-4 w-4" /></span>
             </button>
             <button className="rounded-2xl border border-[#E5DFD6] bg-white px-6 py-3 text-sm font-medium shadow-sm transition-all hover:shadow-md active:scale-95">
@@ -840,9 +840,9 @@ export default function UIShowcase() {
             <div className="mb-3 text-sm font-semibold">Welcher Schritt kommt zuerst im Pflegeprozess nach Fiechter & Meier?</div>
             <div className="space-y-2">
               {["A) Informationssammlung", "B) Pflegeplanung", "C) Durchführung", "D) Evaluation"].map((opt, i) => (
-                <div key={i} className={`rounded-xl border p-3 text-sm ${i === 0 ? "border-[#218C71]/30 bg-[#218C71]/5 font-medium" : "border-[#E5DFD6]"}`}>
+                <div key={i} className={`rounded-xl border p-3 text-sm ${i === 0 ? "border-[#5A7D60]/30 bg-[#5A7D60]/5 font-medium" : "border-[#E5DFD6]"}`}>
                   {opt}
-                  {i === 0 && <span className="ml-2 text-xs text-[#218C71]">✓ Richtig</span>}
+                  {i === 0 && <span className="ml-2 text-xs text-[#5A7D60]">✓ Richtig</span>}
                 </div>
               ))}
             </div>
@@ -856,7 +856,7 @@ export default function UIShowcase() {
               <div className="mb-1 text-xs font-semibold uppercase tracking-wider" style={{ color: RUST }}>Wahr oder Falsch?</div>
               <p className="mb-5 text-sm font-semibold">&quot;Florence Nightingale begründete die moderne Krankenpflege.&quot;</p>
               <div className="flex justify-center gap-3">
-                <button className="rounded-full border-2 border-[#218C71]/30 bg-[#218C71]/5 px-6 py-2 text-sm font-semibold text-[#218C71]">✓ Wahr</button>
+                <button className="rounded-full border-2 border-[#5A7D60]/30 bg-[#5A7D60]/5 px-6 py-2 text-sm font-semibold text-[#5A7D60]">✓ Wahr</button>
                 <button className="rounded-full border-2 border-[#E5DFD6] px-6 py-2 text-sm font-medium text-[#86868b]">✗ Falsch</button>
               </div>
             </div>
@@ -873,7 +873,7 @@ export default function UIShowcase() {
                   <button className="flex items-center gap-1 rounded-full border-2 border-[#A06B63]/20 px-4 py-1.5 text-xs font-semibold text-[#A06B63]">
                     <X className="h-3.5 w-3.5" /> Stimmt nicht
                   </button>
-                  <button className="flex items-center gap-1 rounded-full border-2 border-[#218C71]/30 px-4 py-1.5 text-xs font-semibold text-[#218C71]">
+                  <button className="flex items-center gap-1 rounded-full border-2 border-[#5A7D60]/30 px-4 py-1.5 text-xs font-semibold text-[#5A7D60]">
                     <Check className="h-3.5 w-3.5" /> Stimmt
                   </button>
                 </div>
@@ -893,12 +893,12 @@ export default function UIShowcase() {
           <div className="py-5">
             <div className="mb-3 text-sm font-semibold">Ordne die Definitionen den Organisationen zu:</div>
             {/* Matched pair — floats to top with green border */}
-            <div className="mb-2 flex items-stretch gap-2 rounded-xl border-2 border-[#218C71]/30 bg-[#218C71]/5 p-2">
-              <div className="flex flex-1 items-center justify-center rounded-lg bg-[#218C71]/10 p-2 text-center text-sm font-semibold text-[#218C71]">
+            <div className="mb-2 flex items-stretch gap-2 rounded-xl border-2 border-[#5A7D60]/30 bg-[#5A7D60]/5 p-2">
+              <div className="flex flex-1 items-center justify-center rounded-lg bg-[#5A7D60]/10 p-2 text-center text-sm font-semibold text-[#5A7D60]">
                 ICN
               </div>
-              <div className="flex items-center text-[#218C71]"><Check className="h-4 w-4" /></div>
-              <div className="flex flex-1 items-center justify-center rounded-lg bg-[#218C71]/10 p-2 text-center text-xs font-medium text-[#218C71]">
+              <div className="flex items-center text-[#5A7D60]"><Check className="h-4 w-4" /></div>
+              <div className="flex flex-1 items-center justify-center rounded-lg bg-[#5A7D60]/10 p-2 text-center text-xs font-medium text-[#5A7D60]">
                 International Council of Nurses
               </div>
             </div>
@@ -963,7 +963,7 @@ export default function UIShowcase() {
                 <div className="mb-2 text-center text-xs font-bold" style={{ color: SAGE }}>Grundpflege</div>
                 <div className="space-y-1">
                   {["Körperpflege", "Ernährung"].map((item, i) => (
-                    <div key={i} className="rounded-lg bg-[#218C71]/10 px-2 py-1.5 text-center text-[11px] font-medium">{item}</div>
+                    <div key={i} className="rounded-lg bg-[#5A7D60]/10 px-2 py-1.5 text-center text-[11px] font-medium">{item}</div>
                   ))}
                 </div>
               </div>
@@ -996,7 +996,7 @@ export default function UIShowcase() {
                     text === "?"
                       ? "border-2 border-[#E5DFD6] bg-[#E5DFD6]/30 text-[#86868b]"
                       : i < 2
-                        ? "border-2 border-[#218C71]/30 bg-[#218C71]/5 text-[#218C71]"
+                        ? "border-2 border-[#5A7D60]/30 bg-[#5A7D60]/5 text-[#5A7D60]"
                         : "border-2 border-[#BFA48E] bg-[#BFA48E]/10 text-[#BFA48E]"
                   }`}
                 >
@@ -1114,7 +1114,7 @@ export default function UIShowcase() {
               </div>
               <div className="flex justify-end gap-2">
                 <div className="rounded-2xl rounded-tr-sm px-3 py-2 text-xs text-white" style={{ backgroundColor: SAGE }}>Ich messe jetzt Ihren Blutdruck und Puls.</div>
-                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#218C71]/15 text-xs font-bold" style={{ color: SAGE }}>Du</div>
+                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#5A7D60]/15 text-xs font-bold" style={{ color: SAGE }}>Du</div>
               </div>
             </div>
             <div className="space-y-1.5">
@@ -1295,7 +1295,7 @@ export default function UIShowcase() {
                   <div className="mb-2 text-xs">{statement}</div>
                   <div className="flex gap-2">
                     {["😟", "😐", "🙂", "😊", "🤩"].map((emoji, j) => (
-                      <button key={j} className={`flex h-8 w-8 items-center justify-center rounded-full text-base transition-all ${j === 3 && i === 0 ? "bg-[#218C71]/15 ring-2 ring-[#218C71]" : "hover:bg-[#E5DFD6]/50"}`}>
+                      <button key={j} className={`flex h-8 w-8 items-center justify-center rounded-full text-base transition-all ${j === 3 && i === 0 ? "bg-[#5A7D60]/15 ring-2 ring-[#5A7D60]" : "hover:bg-[#E5DFD6]/50"}`}>
                         {emoji}
                       </button>
                     ))}
@@ -1386,7 +1386,7 @@ export default function UIShowcase() {
               <div className="mb-3 text-sm font-semibold">Wie viele Schritte hat der Pflegeprozess?</div>
               <div className="flex justify-center gap-2">
                 {["4", "5", "6", "8"].map((n) => (
-                  <button key={n} className="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-[#E5DFD6] text-sm font-bold transition-all hover:border-[#218C71] hover:bg-[#218C71]/5">
+                  <button key={n} className="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-[#E5DFD6] text-sm font-bold transition-all hover:border-[#5A7D60] hover:bg-[#5A7D60]/5">
                     {n}
                   </button>
                 ))}
@@ -1398,7 +1398,7 @@ export default function UIShowcase() {
         {/* Summary */}
         <VariantCard label="23" name="Zusammenfassung (summary)" description="Session-Rückblick mit Ergebnissen">
           <div className="py-5">
-            <div className="rounded-2xl bg-gradient-to-b from-[#218C71]/10 to-transparent p-5 text-center">
+            <div className="rounded-2xl bg-gradient-to-b from-[#5A7D60]/10 to-transparent p-5 text-center">
               <div className="mx-auto mb-2 flex h-12 w-12 items-center justify-center rounded-full" style={{ backgroundColor: `${SAGE}15` }}>
                 <Trophy className="h-6 w-6" style={{ color: SAGE }} />
               </div>
@@ -1415,8 +1415,8 @@ export default function UIShowcase() {
                 </div>
               </div>
               <div className="rounded-xl bg-white/80 p-3 text-left text-xs space-y-1">
-                <div className="flex items-center gap-2"><Check className="h-3 w-3 text-[#218C71]" /> Pflegeprozess — verstanden</div>
-                <div className="flex items-center gap-2"><Check className="h-3 w-3 text-[#218C71]" /> ICN-Ethikkodex — sicher</div>
+                <div className="flex items-center gap-2"><Check className="h-3 w-3 text-[#5A7D60]" /> Pflegeprozess — verstanden</div>
+                <div className="flex items-center gap-2"><Check className="h-3 w-3 text-[#5A7D60]" /> ICN-Ethikkodex — sicher</div>
                 <div className="flex items-center gap-2"><AlertCircle className="h-3 w-3" style={{ color: RUST }} /> WHO-Definition — wiederholen</div>
               </div>
             </div>
@@ -1520,7 +1520,7 @@ export default function UIShowcase() {
             <div className="mb-3 text-sm font-semibold">Fülle die Lücken aus dem Wortpool:</div>
             <div className="rounded-xl bg-[#fafaf9] border border-[#E5DFD6] p-4 text-xs leading-loose">
               Der Pflegeprozess nach{" "}
-              <span className="inline-flex min-w-[80px] items-center justify-center rounded-lg border-2 border-[#218C71]/30 bg-[#218C71]/5 px-2 py-0.5 text-[11px] font-semibold text-[#218C71]">
+              <span className="inline-flex min-w-[80px] items-center justify-center rounded-lg border-2 border-[#5A7D60]/30 bg-[#5A7D60]/5 px-2 py-0.5 text-[11px] font-semibold text-[#5A7D60]">
                 Fiechter & Meier
               </span>{" "}
               besteht aus{" "}
@@ -1563,7 +1563,7 @@ export default function UIShowcase() {
                 <div
                   key={i}
                   className={`flex items-center gap-2 rounded-xl border p-2.5 transition-all ${
-                    item.correct ? "border-[#218C71]/20 bg-[#218C71]/5" : "border-[#AE6965]/30 bg-[#AE6965]/5"
+                    item.correct ? "border-[#5A7D60]/20 bg-[#5A7D60]/5" : "border-[#AE6965]/30 bg-[#AE6965]/5"
                   }`}
                 >
                   <GripVertical className="h-4 w-4 shrink-0 cursor-grab text-[#86868b]" />
@@ -1587,9 +1587,9 @@ export default function UIShowcase() {
             <div className="rounded-xl bg-[#E5DFD6]/20 p-4">
               <div className="text-xs leading-relaxed">
                 Die Pflegeausbildung in Deutschland dauert seit dem PflBG 2020 insgesamt{" "}
-                <span className="inline-flex items-center gap-1 rounded-lg border-2 border-[#218C71] bg-white px-2 py-0.5">
+                <span className="inline-flex items-center gap-1 rounded-lg border-2 border-[#5A7D60] bg-white px-2 py-0.5">
                   <span className="text-[11px] font-bold" style={{ color: SAGE }}>3 Jahre</span>
-                  <Check className="h-3 w-3 text-[#218C71]" />
+                  <Check className="h-3 w-3 text-[#5A7D60]" />
                 </span>{" "}
                 und ist als{" "}
                 <span className="inline-flex items-center rounded-lg border-2 border-dashed border-[#86868b] bg-white px-2 py-0.5 text-[11px] font-medium text-[#86868b]">
@@ -1601,7 +1601,7 @@ export default function UIShowcase() {
                 {["generalistische", "duale", "schulische", "akademische"].map((opt, i) => (
                   <button key={i} className={`rounded-full border px-3 py-1 text-[11px] font-medium transition-all ${
                     i === 0
-                      ? "border-[#218C71]/50 bg-[#218C71]/10 font-semibold"
+                      ? "border-[#5A7D60]/50 bg-[#5A7D60]/10 font-semibold"
                       : "border-[#E5DFD6] hover:bg-[#E5DFD6]/30"
                   }`} style={i === 0 ? { color: SAGE } : {}}>
                     {opt}
@@ -1661,12 +1661,12 @@ export default function UIShowcase() {
                 <Mic className="h-6 w-6 text-white" />
               </button>
               <div className="mb-3 text-xs font-medium" style={{ color: RUST }}>Zum Sprechen tippen</div>
-              <div className="rounded-xl bg-[#218C71]/5 border border-[#218C71]/20 p-3">
+              <div className="rounded-xl bg-[#5A7D60]/5 border border-[#5A7D60]/20 p-3">
                 <div className="mb-1 flex items-center justify-center gap-1.5">
-                  <Check className="h-3.5 w-3.5 text-[#218C71]" />
-                  <span className="text-xs font-semibold text-[#218C71]">92% Übereinstimmung</span>
+                  <Check className="h-3.5 w-3.5 text-[#5A7D60]" />
+                  <span className="text-xs font-semibold text-[#5A7D60]">92% Übereinstimmung</span>
                 </div>
-                <div className="text-xs text-[#218C71]">Erkannt: &quot;Dekubitusprophylaxe&quot; — Super ausgesprochen!</div>
+                <div className="text-xs text-[#5A7D60]">Erkannt: &quot;Dekubitusprophylaxe&quot; — Super ausgesprochen!</div>
               </div>
             </div>
           </div>
@@ -1810,14 +1810,14 @@ export default function UIShowcase() {
                   { emoji: "💪", label: "Stark" },
                 ].map((mood, i) => (
                   <button key={i} className={`flex flex-col items-center gap-1 rounded-xl p-2 transition-all ${
-                    i === 3 ? "bg-[#218C71]/10 ring-2 ring-[#218C71]" : "hover:bg-[#E5DFD6]/30"
+                    i === 3 ? "bg-[#5A7D60]/10 ring-2 ring-[#5A7D60]" : "hover:bg-[#E5DFD6]/30"
                   }`}>
                     <span className="text-2xl">{mood.emoji}</span>
                     <span className="text-[9px] font-medium">{mood.label}</span>
                   </button>
                 ))}
               </div>
-              <div className="rounded-xl bg-[#218C71]/5 p-3 text-xs" style={{ color: SAGE }}>
+              <div className="rounded-xl bg-[#5A7D60]/5 p-3 text-xs" style={{ color: SAGE }}>
                 Super! Dann lass uns heute eine extra Challenge einbauen 🚀
               </div>
             </div>
@@ -1833,7 +1833,7 @@ export default function UIShowcase() {
                 {["Sprache", "Erfahrung", "Ziel", "Fertig"].map((step, i) => (
                   <div key={step} className="flex items-center gap-2">
                     <div className={`flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold ${
-                      i < 2 ? "bg-[#218C71] text-white" : i === 2 ? "border-2 border-[#218C71] text-[#218C71]" : "border-2 border-[#E5DFD6] text-[#86868b]"
+                      i < 2 ? "bg-[#5A7D60] text-white" : i === 2 ? "border-2 border-[#5A7D60] text-[#5A7D60]" : "border-2 border-[#E5DFD6] text-[#86868b]"
                     }`}>
                       {i < 2 ? <Check className="h-3.5 w-3.5" /> : i + 1}
                     </div>
@@ -1848,7 +1848,7 @@ export default function UIShowcase() {
                 <div className="space-y-2">
                   {["Prüfung bestehen", "Wissen vertiefen", "Sprache verbessern"].map((goal, i) => (
                     <button key={i} className={`w-full rounded-xl border p-3 text-left text-xs font-medium transition-all ${
-                      i === 0 ? "border-[#218C71] bg-[#218C71]/5" : "border-[#E5DFD6] hover:bg-[#E5DFD6]/20"
+                      i === 0 ? "border-[#5A7D60] bg-[#5A7D60]/5" : "border-[#E5DFD6] hover:bg-[#E5DFD6]/20"
                     }`} style={i === 0 ? { color: SAGE } : {}}>
                       {goal}
                     </button>
@@ -1894,7 +1894,7 @@ export default function UIShowcase() {
                 ].map((pair, i) => (
                   <>
                     <div key={`l${i}`} className={`rounded-xl border-2 p-2.5 text-center text-xs font-semibold ${
-                      pair.connected ? "border-[#218C71]/30 bg-[#218C71]/5 text-[#218C71]" : "border-[#E5DFD6]"
+                      pair.connected ? "border-[#5A7D60]/30 bg-[#5A7D60]/5 text-[#5A7D60]" : "border-[#E5DFD6]"
                     }`}>
                       {pair.left}
                     </div>
@@ -1906,7 +1906,7 @@ export default function UIShowcase() {
                       )}
                     </div>
                     <div key={`r${i}`} className={`rounded-xl border-2 p-2.5 text-center text-xs font-semibold ${
-                      pair.connected ? "border-[#218C71]/30 bg-[#218C71]/5 text-[#218C71]" : "border-[#E5DFD6]"
+                      pair.connected ? "border-[#5A7D60]/30 bg-[#5A7D60]/5 text-[#5A7D60]" : "border-[#E5DFD6]"
                     }`}>
                       {pair.right}
                     </div>
@@ -1963,7 +1963,7 @@ export default function UIShowcase() {
           <div className="py-5">
             <div className="mb-3 flex items-center justify-between">
               <div className="text-sm font-semibold">Dein Plan für heute</div>
-              <div className="rounded-full bg-[#218C71]/10 px-2.5 py-0.5 text-xs font-semibold" style={{ color: SAGE }}>4 Blöcke · ~2h</div>
+              <div className="rounded-full bg-[#5A7D60]/10 px-2.5 py-0.5 text-xs font-semibold" style={{ color: SAGE }}>4 Blöcke · ~2h</div>
             </div>
             <div className="space-y-2">
               {[
@@ -1973,8 +1973,8 @@ export default function UIShowcase() {
                 { time: "10:30", title: "Quiz: CE 01 Gesamt", duration: "30 Min", icon: "🧠" },
               ].map((block, i) => (
                 <div key={i} className={`flex items-center gap-3 rounded-xl border p-3 transition-all ${
-                  block.done ? "border-[#218C71]/20 bg-[#218C71]/5" :
-                  block.active ? "border-[#218C71] bg-[#218C71]/5 shadow-sm" :
+                  block.done ? "border-[#5A7D60]/20 bg-[#5A7D60]/5" :
+                  block.active ? "border-[#5A7D60] bg-[#5A7D60]/5 shadow-sm" :
                   block.pause ? "border-dashed border-[#E5DFD6]" :
                   "border-[#E5DFD6]"
                 }`}>
@@ -1984,7 +1984,7 @@ export default function UIShowcase() {
                     <div className={`text-xs font-medium ${block.done ? "line-through text-[#86868b]" : ""}`}>{block.title}</div>
                     <div className="text-xs text-[#86868b]">{block.duration}</div>
                   </div>
-                  {block.done && <Check className="h-4 w-4 text-[#218C71]" />}
+                  {block.done && <Check className="h-4 w-4 text-[#5A7D60]" />}
                   {block.active && <div className="h-2 w-2 animate-pulse rounded-full" style={{ backgroundColor: SAGE }} />}
                 </div>
               ))}
@@ -2003,7 +2003,7 @@ export default function UIShowcase() {
               ].map((notif, i) => (
                 <div key={i} className={`flex gap-3 rounded-xl border p-3 ${
                   notif.urgent ? "border-[#AE6965]/30 bg-[#AE6965]/5" :
-                  notif.highlight ? "border-[#218C71]/30 bg-[#218C71]/5" :
+                  notif.highlight ? "border-[#5A7D60]/30 bg-[#5A7D60]/5" :
                   "border-[#E5DFD6]"
                 }`}>
                   <span className="mt-0.5 text-lg">{notif.icon}</span>
@@ -2027,7 +2027,7 @@ export default function UIShowcase() {
               { q: "Was bedeutet PflBG?", open: false },
             ].map((item, i) => (
               <div key={i} className="rounded-xl border border-[#E5DFD6] overflow-hidden">
-                <div className={`flex items-center justify-between px-4 py-3 text-xs font-semibold ${item.open ? "bg-[#218C71]/5" : "bg-white"}`} style={item.open ? { color: SAGE } : {}}>
+                <div className={`flex items-center justify-between px-4 py-3 text-xs font-semibold ${item.open ? "bg-[#5A7D60]/5" : "bg-white"}`} style={item.open ? { color: SAGE } : {}}>
                   {item.q}
                   <ChevronRight className={`h-3.5 w-3.5 transition-transform ${item.open ? "rotate-90" : ""}`} />
                 </div>
@@ -2055,8 +2055,8 @@ export default function UIShowcase() {
                 <div key={i} className="flex flex-col items-center">
                   {i > 0 && <div className="h-6 w-0.5" style={{ backgroundColor: node.status === "locked" ? BONE : SAGE }} />}
                   <div className={`flex h-12 w-12 items-center justify-center rounded-full text-sm font-bold transition-all ${
-                    node.status === "done" ? "bg-[#218C71] text-white shadow-md" :
-                    node.status === "active" ? "border-3 border-[#218C71] bg-white text-[#218C71] shadow-lg ring-4 ring-[#218C71]/20" :
+                    node.status === "done" ? "bg-[#5A7D60] text-white shadow-md" :
+                    node.status === "active" ? "border-3 border-[#5A7D60] bg-white text-[#5A7D60] shadow-lg ring-4 ring-[#5A7D60]/20" :
                     "bg-[#E5DFD6] text-[#86868b]"
                   }`}>
                     {node.icon}
@@ -2213,7 +2213,7 @@ export default function UIShowcase() {
               +<NumberTicker value={240} /> XP
             </div>
             <div className="mb-4 flex justify-center gap-4">
-              <div className="flex items-center gap-1 text-xs"><Check className="h-3.5 w-3.5 text-[#218C71]" /> 19/22 richtig</div>
+              <div className="flex items-center gap-1 text-xs"><Check className="h-3.5 w-3.5 text-[#5A7D60]" /> 19/22 richtig</div>
               <div className="flex items-center gap-1 text-xs"><Flame className="h-3.5 w-3.5" style={{ color: RUST }} /> Streak +1</div>
               <div className="flex items-center gap-1 text-xs"><Clock className="h-3.5 w-3.5 text-[#86868b]" /> 34 Min</div>
             </div>
@@ -2234,7 +2234,7 @@ export default function UIShowcase() {
             <div className="overflow-hidden rounded-2xl bg-[#1c1c1e] p-5 text-white">
               <div className="mb-3 text-sm font-semibold">Session 1 — Was ist Pflege?</div>
               <div className="mb-3 h-1.5 overflow-hidden rounded-full bg-[#2c2c2e]">
-                <div className="h-full w-[65%] rounded-full bg-[#218C71]" />
+                <div className="h-full w-[65%] rounded-full bg-[#5A7D60]" />
               </div>
               <div className="mb-3 rounded-xl bg-[#2c2c2e] p-4 text-xs leading-relaxed text-[#a1a1a6]">
                 Der Pflegeprozess ist ein <strong className="text-white">systematisches Vorgehen</strong> zur Planung und Durchführung pflegerischer Maßnahmen.
@@ -2242,7 +2242,7 @@ export default function UIShowcase() {
               <div className="space-y-1.5">
                 {["Informationssammlung", "Pflegeplanung", "Evaluation"].map((opt, i) => (
                   <div key={i} className={`rounded-xl border p-2.5 text-xs ${
-                    i === 0 ? "border-[#218C71] bg-[#218C71]/10 text-[#218C71]" : "border-[#3a3a3c] text-[#a1a1a6]"
+                    i === 0 ? "border-[#5A7D60] bg-[#5A7D60]/10 text-[#5A7D60]" : "border-[#3a3a3c] text-[#a1a1a6]"
                   }`}>
                     {String.fromCharCode(65 + i)}) {opt}
                   </div>
@@ -2255,7 +2255,7 @@ export default function UIShowcase() {
         {/* 21. Story / Reel Format */}
         <VariantCard label="L21" name="Story-Format" description="Instagram-Stories für Micro-Learning, wischen zum Weiter">
           <div className="py-5 flex justify-center">
-            <div className="relative w-52 overflow-hidden rounded-3xl border border-[#E5DFD6] bg-gradient-to-b from-[#218C71]/10 to-[#A58B71]/5 shadow-lg">
+            <div className="relative w-52 overflow-hidden rounded-3xl border border-[#E5DFD6] bg-gradient-to-b from-[#5A7D60]/10 to-[#A58B71]/5 shadow-lg">
               <div className="flex gap-1 px-3 pt-3">
                 {[100, 100, 60, 0, 0].map((w, i) => (
                   <div key={i} className="h-0.5 flex-1 overflow-hidden rounded-full bg-black/10">
@@ -2329,7 +2329,7 @@ export default function UIShowcase() {
                 <Brain className="h-4 w-4 text-white" />
                 <span className="text-xs font-semibold text-white">KI-Tutor</span>
                 <div className="ml-auto flex items-center gap-1">
-                  <div className="h-1.5 w-1.5 rounded-full bg-[#218C71] animate-pulse" />
+                  <div className="h-1.5 w-1.5 rounded-full bg-[#5A7D60] animate-pulse" />
                   <span className="text-xs text-white/80">Online</span>
                 </div>
               </div>
@@ -2400,8 +2400,8 @@ export default function UIShowcase() {
                 const current = i === 12
                 return (
                   <div key={i} className={`flex h-7 w-7 items-center justify-center rounded-lg text-[9px] font-bold transition-all ${
-                    done ? "bg-[#218C71] text-white" :
-                    current ? "bg-white border-2 border-[#218C71] text-[#218C71] ring-2 ring-[#218C71]/20 shadow-sm" :
+                    done ? "bg-[#5A7D60] text-white" :
+                    current ? "bg-white border-2 border-[#5A7D60] text-[#5A7D60] ring-2 ring-[#5A7D60]/20 shadow-sm" :
                     "bg-[#E5DFD6]/50 text-[#86868b]"
                   }`}>
                     {types[i]}
@@ -2470,7 +2470,7 @@ export default function UIShowcase() {
               })}
             </div>
             <div className="grid grid-cols-3 gap-2">
-              <div className="rounded-xl bg-[#218C71]/5 p-2 text-center">
+              <div className="rounded-xl bg-[#5A7D60]/5 p-2 text-center">
                 <div className="text-base font-bold" style={{ color: SAGE }}>3:07h</div>
                 <div className="text-[9px] text-[#86868b]">Lernzeit</div>
               </div>
@@ -2502,7 +2502,7 @@ export default function UIShowcase() {
                   <button className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#A06B63]/20 text-[#A06B63]">
                     <X className="h-5 w-5" />
                   </button>
-                  <button className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#218C71]/30 text-[#218C71]">
+                  <button className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#5A7D60]/30 text-[#5A7D60]">
                     <Check className="h-5 w-5" />
                   </button>
                 </div>
@@ -2561,9 +2561,9 @@ export default function UIShowcase() {
                 </div>
                 <span className="text-xs font-mono text-[#86868b]">0:03</span>
               </div>
-              <div className="flex items-center gap-2 rounded-lg bg-[#218C71]/5 border border-[#218C71]/20 p-2">
-                <Check className="h-3.5 w-3.5 text-[#218C71] shrink-0" />
-                <span className="text-xs text-[#218C71]"><strong>94%</strong> — &quot;Dekubitusprophylaxe&quot;</span>
+              <div className="flex items-center gap-2 rounded-lg bg-[#5A7D60]/5 border border-[#5A7D60]/20 p-2">
+                <Check className="h-3.5 w-3.5 text-[#5A7D60] shrink-0" />
+                <span className="text-xs text-[#5A7D60]"><strong>94%</strong> — &quot;Dekubitusprophylaxe&quot;</span>
               </div>
             </div>
           </div>

@@ -383,7 +383,7 @@ export default function LernenPage() {
     return (
       <div className="min-h-screen bg-[var(--lern-bg)] flex items-center justify-center">
         <div className="text-center space-y-4">
-          <div className="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-[#218C71] border-t-transparent" />
+          <div className="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-[#5A7D60] border-t-transparent" />
           <p className="text-sm text-[var(--lern-text-secondary)]">Lektion wird geladen...</p>
         </div>
       </div>
@@ -424,7 +424,7 @@ export default function LernenPage() {
                 session.setShowWeitermachen(false);
                 setShowSessionIntro(false);
               }}
-              className="flex-1 rounded-2xl bg-[#218C71] px-5 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98]"
+              className="flex-1 rounded-2xl bg-[#5A7D60] px-5 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98]"
             >
               Weitermachen
             </button>
@@ -451,7 +451,7 @@ export default function LernenPage() {
           </p>
           <a
             href={`/${locale}/lernen`}
-            className="inline-block rounded-2xl bg-[#218C71] px-6 py-3 text-sm font-semibold text-white transition-all active:scale-[0.98]"
+            className="inline-block rounded-2xl bg-[#5A7D60] px-6 py-3 text-sm font-semibold text-white transition-all active:scale-[0.98]"
           >
             Zur Uebersicht
           </a>
@@ -475,7 +475,7 @@ export default function LernenPage() {
             className="rounded-3xl bg-[var(--lern-bg-primary)] border border-[var(--lern-border)] p-8 text-center space-y-6"
           >
             <div>
-              <HandDrawnIcon name={percentage >= 80 ? "celebration" : percentage >= 60 ? "clap" : "muscle"} size={56} color={percentage >= 80 ? "#3E5A6A" : percentage >= 60 ? "#D4956A" : "#218C71"} />
+              <HandDrawnIcon name={percentage >= 80 ? "celebration" : percentage >= 60 ? "clap" : "muscle"} size={56} color={percentage >= 80 ? "#3E5A6A" : percentage >= 60 ? "#D4956A" : "#5A7D60"} />
             </div>
             <h1 className="text-3xl font-bold text-[var(--lern-text-primary)]">
               Lerneinheit abgeschlossen!
@@ -565,14 +565,14 @@ export default function LernenPage() {
               {availableSessions.includes((activeSession + 1) as SessionNumber) ? (
                 <button
                   onClick={() => switchSession((activeSession + 1) as SessionNumber)}
-                  className="flex-1 rounded-2xl bg-[#218C71] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
+                  className="flex-1 rounded-2xl bg-[#5A7D60] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98]"
                 >
                   {hasPfadLabels ? "Pfad" : "Session"} {activeSession + 1}: {getSessionTitle(activeSession + 1)}
                 </button>
               ) : (
                 <a
                   href={`/${locale}/dashboard`}
-                  className="flex-1 rounded-2xl bg-[#218C71] px-6 py-4 text-base font-semibold text-white text-center transition-all active:scale-[0.98]"
+                  className="flex-1 rounded-2xl bg-[#5A7D60] px-6 py-4 text-base font-semibold text-white text-center transition-all active:scale-[0.98]"
                 >
                   Dashboard
                 </a>
@@ -603,7 +603,7 @@ export default function LernenPage() {
               {availableSessions.length > 1 && (
                 <>
                   <span className="text-[var(--lern-text-tertiary)] text-xs mx-0.5 shrink-0">·</span>
-                  <span className="text-xs font-semibold text-[#218C71] shrink-0">
+                  <span className="text-xs font-semibold text-[#5A7D60] shrink-0">
                     S{activeSession}
                   </span>
                   <span className="text-[var(--lern-text-tertiary)] text-[10px] shrink-0">▾</span>
@@ -618,7 +618,7 @@ export default function LernenPage() {
             <div className="flex items-center gap-1.5 shrink-0">
               <button
                 onClick={() => setShowStepNav(true)}
-                className="text-xs text-[#218C71] font-medium active:opacity-60 px-1 tabular-nums"
+                className="text-xs text-[#5A7D60] font-medium active:opacity-60 px-1 tabular-nums"
                 aria-label="Zu Step springen"
               >
                 {navigation.currentStep + 1}/{steps.length}
@@ -653,7 +653,7 @@ export default function LernenPage() {
           {/* Zeile 2: Progress-Bar */}
           <div className="h-1 rounded-full bg-[var(--lern-card-bg)] overflow-hidden">
             <motion.div
-              className="h-full rounded-full bg-[#218C71]"
+              className="h-full rounded-full bg-[#5A7D60]"
               initial={{ width: 0 }}
               animate={{ width: `${progress}%` }}
               transition={{ ease: [0.4, 0, 0.2, 1], duration: 0.35 }}
@@ -893,7 +893,7 @@ export default function LernenPage() {
                       }}
                       className={`flex items-center gap-3 rounded-xl p-3 transition-all ${
                         isCurrent
-                          ? "bg-[#218C71]/10 border border-[#218C71]/20"
+                          ? "bg-[#5A7D60]/10 border border-[#5A7D60]/20"
                           : hasContent
                             ? "bg-[var(--lern-card-bg)] active:scale-[0.98]"
                             : "bg-[var(--lern-card-bg)] opacity-50 cursor-not-allowed"
@@ -901,7 +901,7 @@ export default function LernenPage() {
                     >
                       <div className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ${
                         isCurrent
-                          ? "bg-[#218C71] text-white"
+                          ? "bg-[#5A7D60] text-white"
                           : hasContent
                             ? "bg-[#3E5A6A] text-white"
                             : "bg-[var(--lern-divider)] text-white"
@@ -910,7 +910,7 @@ export default function LernenPage() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className={`text-sm font-medium truncate ${
-                          isCurrent ? "text-[#218C71]" : "text-[var(--lern-text-primary)]"
+                          isCurrent ? "text-[#5A7D60]" : "text-[var(--lern-text-primary)]"
                         }`}>
                           {le.titleShort}
                         </p>
@@ -979,26 +979,26 @@ export default function LernenPage() {
                                                         }}
                       className={`w-full text-left rounded-xl px-3 py-2.5 flex items-center gap-3 transition-all active:scale-[0.98] ${
                         isCurrent
-                          ? "bg-[#218C71]/10 border border-[#218C71]/30"
+                          ? "bg-[#5A7D60]/10 border border-[#5A7D60]/30"
                           : "bg-[#f9f9fb] hover:bg-[#f0f0f5]"
                       }`}
                     >
                       <div className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold ${
                         isCurrent
-                          ? "bg-[#218C71] text-white"
+                          ? "bg-[#5A7D60] text-white"
                           : isAnswered
                             ? wasCorrect
                               ? "bg-[#3E5A6A]/20 text-[#3E5A6A]"
                               : wasCorrect === false
                                 ? "bg-[#C96B5C]/20 text-[#C96B5C]"
-                                : "bg-[#218C71]/20 text-[#218C71]"
+                                : "bg-[#5A7D60]/20 text-[#5A7D60]"
                             : "bg-[var(--lern-divider)] text-[var(--lern-text-secondary)]"
                       }`}>
                         {i + 1}
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className={`text-sm font-medium truncate ${
-                          isCurrent ? "text-[#218C71]" : "text-[var(--lern-text-primary)]"
+                          isCurrent ? "text-[#5A7D60]" : "text-[var(--lern-text-primary)]"
                         }`}>
                           {sContent.title}
                         </p>
@@ -1163,7 +1163,7 @@ export default function LernenPage() {
             {/* Start-Button */}
             <button
               onClick={() => setShowSessionIntro(false)}
-              className="w-full rounded-full bg-[var(--lern-accent)] py-3.5 text-base font-semibold text-white shadow-lg shadow-[var(--lern-accent)]/20 transition-all hover:bg-[#1A7359] hover:shadow-xl active:scale-[0.98]"
+              className="w-full rounded-full bg-[var(--lern-accent)] py-3.5 text-base font-semibold text-white shadow-lg shadow-[var(--lern-accent)]/20 transition-all hover:bg-[#4C6A52] hover:shadow-xl active:scale-[0.98]"
             >
               Los geht&apos;s
             </button>
@@ -1223,7 +1223,7 @@ export default function LernenPage() {
               ? "bg-[#3E5A6A]/10 border border-[#3E5A6A]/30"
               : navigation.answerHistory[navigation.currentStep].correct === false
                 ? "bg-[#C96B5C]/10 border border-[#C96B5C]/30"
-                : "bg-[#218C71]/10 border border-[#218C71]/30"
+                : "bg-[#5A7D60]/10 border border-[#5A7D60]/30"
           }`}>
             <span className="text-sm font-medium text-[var(--lern-text-primary)]">
               {navigation.answerHistory[navigation.currentStep].correct === true
@@ -1234,7 +1234,7 @@ export default function LernenPage() {
             </span>
             <button
               onClick={() => navigation.advanceStep()}
-              className="text-sm font-semibold text-[#218C71] active:opacity-60"
+              className="text-sm font-semibold text-[#5A7D60] active:opacity-60"
             >
               Weiter ›
             </button>
@@ -1364,15 +1364,15 @@ export default function LernenPage() {
 // === Phasen-Label ===
 const PHASE_LABELS: Record<string, { label: string; icon: string; color: string }> = {
   "BRÜCKE":              { label: "Vorwissen",            icon: "🔗", color: "#D4956A" },
-  "SZENE":               { label: "Szene",                icon: "🎬", color: "#1A7359" },
-  "ERKLÄRUNG":           { label: "Erklärung",            icon: "📖", color: "#218C71" },
+  "SZENE":               { label: "Szene",                icon: "🎬", color: "#4C6A52" },
+  "ERKLÄRUNG":           { label: "Erklärung",            icon: "📖", color: "#5A7D60" },
   "CHECKPOINT":          { label: "Checkpoint",           icon: "✅", color: "#3E5A6A" },
   "ANDERS_ERKLÄRT":      { label: "Anders erklärt",       icon: "🔄", color: "#9B7EA6" },
   "STORYTELLING":        { label: "Geschichte",           icon: "📚", color: "#D4956A" },
   "PRAXIS_DIALOG":       { label: "Praxis-Dialog",        icon: "💬", color: "#3E5A6A" },
-  "PATIENTEN_PERSPEKTIVE": { label: "Patienten-Sicht",    icon: "🎭", color: "#1A7359" },
+  "PATIENTEN_PERSPEKTIVE": { label: "Patienten-Sicht",    icon: "🎭", color: "#4C6A52" },
   "ANGEHÖRIGEN_BERATUNG": { label: "Beratung",            icon: "🤝", color: "#D4956A" },
-  "PFLEGEPLANUNG":       { label: "Pflegeplanung",        icon: "📋", color: "#218C71" },
+  "PFLEGEPLANUNG":       { label: "Pflegeplanung",        icon: "📋", color: "#5A7D60" },
   "ANWENDUNG":           { label: "Anwendung",            icon: "🔧", color: "#3E5A6A" },
   "REFLEXION":           { label: "Reflexion",            icon: "🪞", color: "#9B7EA6" },
 };
@@ -1413,12 +1413,12 @@ function LeitfallBanner({ fallbezug, stepType }: { fallbezug?: string; stepType:
         color: "var(--lern-text-primary)",
       }}
     >
-      <span className="mt-0.5 shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#218C71]/10 text-sm">
+      <span className="mt-0.5 shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#5A7D60]/10 text-sm">
         👤
       </span>
       <div className="min-w-0">
         {personName && (
-          <p className="text-xs font-semibold text-[#218C71] mb-0.5">
+          <p className="text-xs font-semibold text-[#5A7D60] mb-0.5">
             Leitfall: {personName}
           </p>
         )}

@@ -149,9 +149,9 @@ export function StepCloze({
                 ? "border-[#3E5A6A] bg-[#3E5A6A]/10 text-[#3E5A6A]"
                 : "border-[#C96B5C] bg-[#C96B5C]/10 text-[#C96B5C]"
               : isActive
-                ? "border-[#218C71] bg-[#218C71]/15 border-solid ring-2 ring-[#218C71]/30"
+                ? "border-[#5A7D60] bg-[#5A7D60]/15 border-solid ring-2 ring-[#5A7D60]/30"
                 : filled
-                  ? "border-[#218C71]/60 bg-[#218C71]/8 border-solid"
+                  ? "border-[#5A7D60]/60 bg-[#5A7D60]/8 border-solid"
                   : "border-dashed border-[var(--lern-text-tertiary)]/50 bg-[var(--lern-bg)]";
 
             return (
@@ -174,7 +174,7 @@ export function StepCloze({
                 ) : (
                   <span
                     className={`text-sm font-medium ${
-                      isActive ? "text-[#218C71]" : "text-[var(--lern-text-tertiary)]/60"
+                      isActive ? "text-[#5A7D60]" : "text-[var(--lern-text-tertiary)]/60"
                     }`}
                   >
                     {isActive ? "?" : "___"}
@@ -204,8 +204,8 @@ export function StepCloze({
                     transition={{ type: "spring", damping: 22, stiffness: 300 }}
                     className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors active:scale-95 ${
                       activeBlank !== null
-                        ? "bg-[#218C71] text-white shadow-md"
-                        : "bg-[#218C71]/12 text-[#218C71]"
+                        ? "bg-[#5A7D60] text-white shadow-md"
+                        : "bg-[#5A7D60]/12 text-[#5A7D60]"
                     }`}
                   >
                     {item.text}
@@ -260,9 +260,9 @@ export function StepCloze({
             onClick={() => setSubmitted(true)}
             disabled={!allFilled}
             className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed"
-            style={{ backgroundColor: "#218C71" }}
-            onMouseEnter={(e) => !e.currentTarget.disabled && (e.currentTarget.style.backgroundColor = "#1A7359")}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#218C71")}
+            style={{ backgroundColor: "#5A7D60" }}
+            onMouseEnter={(e) => !e.currentTarget.disabled && (e.currentTarget.style.backgroundColor = "#4C6A52")}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#5A7D60")}
           >
             Prüfen
           </button>

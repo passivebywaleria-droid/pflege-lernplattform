@@ -76,7 +76,7 @@ export default function AdminSchulenPage() {
           </div>
           <button
             onClick={() => setShowForm(!showForm)}
-            className="rounded-full bg-[var(--lern-accent)] px-4 py-2 text-sm font-semibold text-white hover:bg-[#1A7359]"
+            className="rounded-full bg-[var(--lern-accent)] px-4 py-2 text-sm font-semibold text-white hover:bg-[#4C6A52]"
           >
             + Neue Schule
           </button>
@@ -134,7 +134,7 @@ export default function AdminSchulenPage() {
               </div>
             </div>
             <div className="flex gap-3">
-              <button type="submit" className="rounded-full bg-[var(--lern-accent)] px-5 py-2 text-sm font-semibold text-white hover:bg-[#1A7359]">
+              <button type="submit" className="rounded-full bg-[var(--lern-accent)] px-5 py-2 text-sm font-semibold text-white hover:bg-[#4C6A52]">
                 Erstellen
               </button>
               <button type="button" onClick={() => setShowForm(false)} className="rounded-full border border-[var(--lern-border)] px-5 py-2 text-sm">

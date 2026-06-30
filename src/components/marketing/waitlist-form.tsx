@@ -93,7 +93,7 @@ export function WaitlistForm({
           <a
             href={pdfHref}
             download
-            className="mt-5 inline-flex items-center justify-center rounded-full bg-[var(--lern-accent)] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#9A6259]"
+            className="mt-5 inline-flex items-center justify-center rounded-full bg-[var(--lern-accent)] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#4C6A52]"
           >
             {labels.successDownload}
           </a>
@@ -137,7 +137,7 @@ export function WaitlistForm({
         <button
           type="submit"
           disabled={status === "loading"}
-          className="rounded-full bg-[var(--lern-accent)] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-[var(--lern-accent)]/25 transition-all hover:bg-[#9A6259] hover:shadow-xl disabled:opacity-60"
+          className="rounded-full bg-[var(--lern-accent)] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-[var(--lern-accent)]/25 transition-all hover:bg-[#4C6A52] hover:shadow-xl disabled:opacity-60"
         >
           {status === "loading" ? labels.ctaLoading : labels.cta}
         </button>

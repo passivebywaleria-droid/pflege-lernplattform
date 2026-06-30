@@ -89,7 +89,7 @@ export function StepMemory({
     "bg-[#C96B5C]/10 text-[#C96B5C] border-[#C96B5C]/30",
     "bg-[#8AABB5]/10 text-[#8AABB5] border-[#8AABB5]/30",
     "bg-[#BFA48E]/10 text-[#BFA48E] border-[#BFA48E]/30",
-    "bg-[#1A7359]/10 text-[#1A7359] border-[#1A7359]/30",
+    "bg-[#4C6A52]/10 text-[#4C6A52] border-[#4C6A52]/30",
   ];
 
   // Längsten Text messen um Spaltenanzahl zu berechnen
@@ -184,7 +184,7 @@ export function StepMemory({
           <button
             onClick={() => onNext(true)}
             aria-label="Weiter zum nächsten Schritt"
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52] focus:outline-2 focus:outline-[var(--lern-accent)] focus:outline-offset-2"
           >
             Weiter
           </button>

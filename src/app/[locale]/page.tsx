@@ -1,314 +1,271 @@
-import { useTranslations } from "next-intl"
+import type { Metadata } from "next"
+import { getTranslations } from "next-intl/server"
 import Link from "next/link"
+import { WaitlistForm } from "@/components/marketing/waitlist-form"
+import { FounderAvatar } from "@/components/marketing/founder-avatar"
+import { locales } from "@/lib/i18n/request"
 
-export default function LandingPage() {
-  const t = useTranslations("landing")
+// OG-Locale-Mapping für hreflang/openGraph
+const OG_LOCALE: Record<string, string> = { de: "de_DE", ar: "ar_AR", tr: "tr_TR" }
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "landing" })
+  const title = t("metaTitle")
+  const description = t("metaDescription")
+
+  return {
+    metadataBase: new URL("https://carovia.de"),
+    title,
+    description,
+    alternates: {
+      canonical: `/${locale}`,
+      languages: Object.fromEntries(locales.map((l) => [l, `/${l}`])),
+    },
+    openGraph: {
+      type: "website",
+      siteName: "Carovia",
+      title,
+      description,
+      locale: OG_LOCALE[locale] ?? "de_DE",
+      alternateLocale: locales.filter((l) => l !== locale).map((l) => OG_LOCALE[l]),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  }
+}
+
+export default async function LandingPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "landing" })
+
+  const demoHref = `/${locale}/lernen`
+  const loginHref = `/${locale}/login`
+
+  const waitlistLabels = {
+    emailLabel: t("waitlistEmailLabel"),
+    emailPlaceholder: t("waitlistEmailPlaceholder"),
+    cta: t("waitlistCta"),
+    ctaLoading: t("waitlistCtaLoading"),
+    privacy: t("waitlistPrivacy"),
+    successTitle: t("waitlistSuccessTitle"),
+    successBody: t("waitlistSuccessBody"),
+    errorGeneric: t("waitlistError"),
+  }
+
+  const previewLabels = {
+    badge: t("previewBadge"),
+    question: t("previewQuestion"),
+    correct: t("previewCorrect"),
+    wrong1: t("previewWrong1"),
+    wrong2: t("previewWrong2"),
+    feedback: t("previewFeedback"),
+  }
 
   return (
-    <div className="flex min-h-screen flex-col bg-[var(--lern-bg-primary)] text-[var(--lern-text-primary)]">
+    <div className="flex min-h-dvh flex-col bg-[var(--lern-bg)] text-[var(--lern-text-primary)]">
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-[var(--lern-border)]/60 bg-[var(--lern-bg-primary)]/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--lern-accent)] text-sm font-bold text-white">P</span>
-            <span className="text-lg font-bold">Pflege-Lernplattform</span>
+      <header className="sticky top-0 z-50 border-b-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg)]/85 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-5xl items-center justify-between px-5 py-3">
+          <Link href={`/${locale}`} className="flex items-center gap-2">
+            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--lern-accent)] text-sm font-bold text-white">
+              C
+            </span>
+            <span className="text-base font-bold">Carovia</span>
           </Link>
           <div className="flex items-center gap-3">
             <Link
-              href="#demo"
+              href={loginHref}
               className="hidden text-sm font-medium text-[var(--lern-text-secondary)] transition-colors hover:text-[var(--lern-text-primary)] sm:block"
             >
-              Demo ansehen
+              {t("navLogin")}
             </Link>
             <Link
-              href="/login"
-              className="text-sm font-medium text-[var(--lern-text-secondary)] transition-colors hover:text-[var(--lern-text-primary)]"
+              href={demoHref}
+              className="rounded-full bg-[var(--lern-accent)] px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#4C6A52]"
             >
-              Anmelden
-            </Link>
-            <Link
-              href="/register"
-              className="rounded-full bg-[var(--lern-accent)] px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-[#1A7359]"
-            >
-              Kostenlos testen
+              {t("navTryFree")}
             </Link>
           </div>
         </div>
       </header>
 
       {/* Hero */}
-      <section className="px-6 pb-20 pt-16 sm:pt-24">
-        <div className="mx-auto max-w-4xl text-center">
-          <div className="mb-6 inline-flex items-center rounded-full border border-[var(--lern-border)] bg-[var(--lern-bg)] px-4 py-1.5 text-sm text-[var(--lern-text-secondary)]">
-            Für Pflegeschulen und Pflegeschüler
+      <section className="px-5 pb-16 pt-14 sm:pt-20">
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="mb-6 inline-flex items-center rounded-full border-[1.5px] border-[var(--lern-accent)] bg-[var(--lern-accent-bg)] px-4 py-1.5 text-sm font-medium text-[var(--lern-accent)]">
+            {t("heroBadge")}
           </div>
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Theorieunterricht, der funktioniert — <span className="text-[var(--lern-accent)]">auch ohne Lehrer</span>
+          <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-5xl">
+            {t("heroTitle1")} {t("heroTitle2")}{" "}
+            <span className="text-[var(--lern-accent)]">{t("heroTitleAccent")}</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[var(--lern-text-secondary)]">
-            Die adaptive Lernplattform für die generalistische Pflegeausbildung.
-            KI-gestützt, mehrsprachig, mobil. Für jedes Sprachniveau, für jedes Wissenslevel.
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-[var(--lern-text-secondary)] sm:text-lg">
+            {t("heroSub")}
           </p>
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
+
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <Link
-              href="/register"
-              className="rounded-full bg-[var(--lern-accent)] px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-[var(--lern-accent)]/25 transition-all hover:bg-[#1A7359] hover:shadow-xl"
+              href={demoHref}
+              className="rounded-full bg-[var(--lern-accent)] px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-[var(--lern-accent)]/25 transition-all hover:bg-[#4C6A52] hover:shadow-xl"
             >
-              Kostenlos starten
+              {t("heroCtaPrimary")}
             </Link>
-            <Link
-              href="#schulen"
-              className="rounded-full border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-8 py-3.5 text-base font-semibold text-[var(--lern-text-primary)] transition-colors hover:bg-[var(--lern-bg)]"
+            <a
+              href="#warteliste"
+              className="rounded-full border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-8 py-3.5 text-base font-semibold text-[var(--lern-text-primary)] transition-colors hover:bg-[var(--lern-accent-bg)]"
             >
-              Für Schulen anfragen
-            </Link>
+              {t("heroCtaSecondary")}
+            </a>
           </div>
+
+          {/* Gründerin-Note: untermauert die kühne Headline mit ehrlicher Lehrer-Stimme */}
+          <p className="mx-auto mt-8 max-w-xl border-l-[2.5px] border-[var(--lern-sage)] pl-4 text-left text-sm italic leading-relaxed text-[var(--lern-text-secondary)] rtl:border-l-0 rtl:border-r-[2.5px] rtl:pl-0 rtl:pr-4 rtl:text-right">
+            {t("heroFounderNote")}
+          </p>
+
+          <p className="mt-8 text-xs text-[var(--lern-text-tertiary)]">{t("heroMicroTrust")}</p>
         </div>
       </section>
 
-      {/* Problem/Lösung */}
-      <section className="border-t border-[var(--lern-border)]/60 bg-[var(--lern-bg)] px-6 py-20">
+      {/* Drei Versprechen */}
+      <section className="border-t-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-5 py-16">
         <div className="mx-auto max-w-5xl">
-          <h2 className="mb-4 text-center text-sm font-semibold uppercase tracking-wider text-[var(--lern-accent)]">
-            Das Problem
+          <h2 className="mb-10 text-center text-sm font-bold uppercase tracking-wider text-[var(--lern-accent)]">
+            {t("promisesEyebrow")}
           </h2>
-          <p className="mx-auto mb-16 max-w-3xl text-center text-2xl font-semibold leading-relaxed sm:text-3xl">
-            Lehrerausfall. Heterogene Klassen. Sprachbarrieren.
-            <span className="text-[var(--lern-text-secondary)]"> Und 30 Schüler, die alle auf unterschiedlichem Niveau sind.</span>
-          </p>
-          <div className="grid gap-8 sm:grid-cols-3">
-            <ProblemCard
-              emoji="🏫"
-              title="Lehrerausfall"
-              problem="8 Unterrichtseinheiten ohne Lehrer — was tun?"
-              solution="Jeder Schüler öffnet die App. Die Plattform plant den Tag."
-            />
-            <ProblemCard
-              emoji="🌍"
-              title="Sprachbarrieren"
-              problem="B1-Schüler und Muttersprachler im selben Kurs"
-              solution="Zwei-Achsen-System: Sprache und Fachwissen getrennt messen und fördern."
-            />
-            <ProblemCard
-              emoji="📊"
-              title="Kein Überblick"
-              problem="Wer braucht Hilfe? Wer ist prüfungsreif?"
-              solution="Ampel-Dashboard: 30 Sekunden — und Sie wissen wo jeder Schüler steht."
-            />
+          <div className="grid gap-5 sm:grid-cols-3">
+            <PromiseCard icon="📚" title={t("promise1Title")} desc={t("promise1Desc")} />
+            <PromiseCard icon="🎯" title={t("promise2Title")} desc={t("promise2Desc")} />
+            <PromiseCard icon="🌐" title={t("promise3Title")} desc={t("promise3Desc")} />
           </div>
         </div>
       </section>
 
-      {/* Features für Schulen */}
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="mb-4 text-center text-sm font-semibold uppercase tracking-wider text-[var(--lern-accent)]">
-            Was die Plattform kann
+      {/* Demo-Tease */}
+      <section className="px-5 py-16">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-[var(--lern-sage)]">
+            {t("demoEyebrow")}
           </h2>
-          <p className="mx-auto mb-16 max-w-2xl text-center text-2xl font-semibold sm:text-3xl">
-            Gebaut für den Alltag an Pflegeschulen
+          <p className="mb-4 text-2xl font-bold sm:text-3xl">{t("demoTitle")}</p>
+          <p className="mx-auto mb-8 max-w-xl text-base leading-relaxed text-[var(--lern-text-secondary)]">
+            {t("demoBody")}
           </p>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <FeatureCard
-              icon="🧠"
-              title="KI-gestützte Didaktik"
-              description="Die KI erkennt, WARUM ein Schüler nicht versteht — und wechselt die Erklärungsstrategie. 6 verschiedene Wege zum selben Lernziel."
-            />
-            <FeatureCard
-              icon="📱"
-              title="27 Aufgabentypen"
-              description="Multiple Choice, Zuordnung, Kreuzworträtsel, Fallbeispiele, Branching Scenarios, Sprechübungen — nie langweilig, nie gleich."
-            />
-            <FeatureCard
-              icon="🌐"
-              title="Mehrsprachig (DE/AR/TR)"
-              description="Fachbegriffe auf Deutsch, Arabisch und Türkisch. Glossar mit Vorlesefunktion. B1/C1-Sprachumschalter."
-            />
-            <FeatureCard
-              icon="📊"
-              title="Lehrer-Dashboard"
-              description="Ampel-System: Grün/Gelb/Rot pro Schüler. Klassenübersicht in 30 Sekunden. Prüfungsreife auf einen Blick."
-            />
-            <FeatureCard
-              icon="🎯"
-              title="Adaptives Lernen"
-              description="Zwei Achsen — Sprachkompetenz × Fachwissen. Jeder Schüler bekommt andere Aufgaben. Automatisch angepasst."
-            />
-            <FeatureCard
-              icon="📋"
-              title="Lernzeit-Nachweis"
-              description="Aktive Lernzeit dokumentiert. PDF-Export für die Prüfungszulassung. Pro Schüler und pro Klasse."
-            />
-          </div>
-        </div>
-      </section>
 
-      {/* Demo-Bereich */}
-      <section id="demo" className="border-t border-[var(--lern-border)]/60 bg-[var(--lern-bg)] px-6 py-20">
-        <div className="mx-auto max-w-5xl text-center">
-          <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-[var(--lern-accent)]">
-            Jetzt ausprobieren
-          </h2>
-          <p className="mb-8 text-2xl font-semibold sm:text-3xl">
-            Eine echte Lerneinheit durchspielen
-          </p>
-          <p className="mx-auto mb-10 max-w-xl text-[var(--lern-text-secondary)]">
-            2 Lerneinheiten mit je 8 Sessions × 22 Steps.
-            Interaktiv, adaptiv, mit KI-Feedback.
-          </p>
+          {/* Produkt-Vorschau: illustrativer Session-Step (zeigt statt erzählt) */}
+          <SessionPreview labels={previewLabels} />
+
           <Link
-            href="/lernen"
-            className="inline-flex items-center gap-2 rounded-full bg-[var(--lern-accent)] px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-[var(--lern-accent)]/25 transition-all hover:bg-[#1A7359] hover:shadow-xl"
+            href={demoHref}
+            className="mt-10 inline-flex items-center gap-2 rounded-full bg-[var(--lern-accent)] px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-[var(--lern-accent)]/25 transition-all hover:bg-[#4C6A52] hover:shadow-xl"
           >
-            <span>Demo-Lektion starten</span>
-            <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <span>{t("demoCta")}</span>
+            <svg
+              className="h-4 w-4 rtl:rotate-180"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
               <path d="m9 18 6-6-6-6" />
             </svg>
           </Link>
         </div>
       </section>
 
-      {/* Lehrplan-Abdeckung */}
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="mb-4 text-center text-sm font-semibold uppercase tracking-wider text-[var(--lern-accent)]">
-            Lehrplan
-          </h2>
-          <p className="mx-auto mb-16 max-w-2xl text-center text-2xl font-semibold sm:text-3xl">
-            Alle 11 Curricularen Einheiten — Schritt für Schritt
-          </p>
-          <div className="grid gap-3 sm:grid-cols-2">
-            <CERow nr="01" title="Ausbildungsstart" status="verfuegbar" />
-            <CERow nr="02" title="Zu pflegende Menschen in der Bewegung" status="verfuegbar" />
-            <CERow nr="03" title="Erste Pflegeerfahrungen" status="geplant" />
-            <CERow nr="04" title="Gesundheit fördern" status="geplant" />
-            <CERow nr="05" title="Kurative Prozesse" status="geplant" />
-            <CERow nr="06" title="In Akutsituationen sicher handeln" status="geplant" />
-            <CERow nr="07" title="Rehabilitatives Pflegehandeln" status="geplant" />
-            <CERow nr="08" title="Menschen in kritischen Lebenssituationen" status="geplant" />
-            <CERow nr="09" title="Menschen bei der Lebensgestaltung leiten" status="geplant" />
-            <CERow nr="10" title="Entwicklung und Gesundheit" status="geplant" />
-            <CERow nr="11" title="Menschen in besonderen Lebenssituationen" status="geplant" />
-          </div>
-          <p className="mt-6 text-center text-sm text-[var(--lern-text-secondary)]">
-            CE 01 und CE 02 sind spielbar (LE-01 + LE-06). Weitere CEs werden laufend ergänzt.
-          </p>
-        </div>
-      </section>
-
-      {/* Preise */}
-      <section id="schulen" className="border-t border-[var(--lern-border)]/60 bg-[var(--lern-bg)] px-6 py-20">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="mb-4 text-center text-sm font-semibold uppercase tracking-wider text-[var(--lern-accent)]">
-            Preise
-          </h2>
-          <p className="mx-auto mb-16 max-w-2xl text-center text-2xl font-semibold sm:text-3xl">
-            Transparent, fair, monatlich kündbar
-          </p>
-          <div className="grid gap-8 sm:grid-cols-2">
-            {/* Schullizenz */}
-            <div className="rounded-2xl border-2 border-[var(--lern-accent)] bg-[var(--lern-bg-primary)] p-8 shadow-sm">
-              <div className="mb-2 inline-flex rounded-full bg-[var(--lern-accent)]/10 px-3 py-1 text-xs font-semibold text-[var(--lern-accent)]">
-                Empfohlen
-              </div>
-              <h3 className="mb-1 text-xl font-bold">Schullizenz</h3>
-              <p className="mb-6 text-sm text-[var(--lern-text-secondary)]">Für Pflegeschulen und Bildungsträger</p>
-              <div className="mb-6">
-                <span className="text-4xl font-bold">149 €</span>
-                <span className="text-[var(--lern-text-secondary)]"> / Schüler / Jahr</span>
-              </div>
-              <ul className="mb-8 space-y-3 text-sm">
-                <CheckItem text="Alle CEs und Lerneinheiten" />
-                <CheckItem text="Lehrer-Dashboard mit Ampel-System" />
-                <CheckItem text="Schulleiter-Übersicht" />
-                <CheckItem text="Klassen-Verwaltung + CSV-Import" />
-                <CheckItem text="Lernzeit-Nachweis + PDF-Export" />
-                <CheckItem text="Prüfungsmodus" />
-                <CheckItem text="DSGVO-konform, Server in Deutschland" />
-                <CheckItem text="Monatlich kündbar" />
-              </ul>
-              <a
-                href="mailto:info@pflege-lernplattform.de?subject=Schullizenz%20anfragen"
-                className="block w-full rounded-full bg-[var(--lern-accent)] py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-[#1A7359]"
-              >
-                Schullizenz anfragen
-              </a>
-            </div>
-            {/* Einzellizenz */}
-            <div className="rounded-2xl border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-8 shadow-sm">
-              <h3 className="mb-1 text-xl font-bold">Einzellizenz</h3>
-              <p className="mb-6 text-sm text-[var(--lern-text-secondary)]">Für Selbstlerner und Pflegeschüler</p>
-              <div className="mb-6">
-                <span className="text-4xl font-bold">14,90 €</span>
-                <span className="text-[var(--lern-text-secondary)]"> / Monat</span>
-              </div>
-              <ul className="mb-8 space-y-3 text-sm">
-                <CheckItem text="Alle CEs und Lerneinheiten" />
-                <CheckItem text="Persönliches Dashboard" />
-                <CheckItem text="KI-Feedback und Erklärungen" />
-                <CheckItem text="Glossar DE/AR/TR" />
-                <CheckItem text="Spaced Repetition" />
-                <CheckItem text="Prüfungsvorbereitung" />
-                <CheckItem text="Monatlich kündbar" />
-              </ul>
-              <Link
-                href="/register"
-                className="block w-full rounded-full border border-[var(--lern-border)] bg-[var(--lern-bg-primary)] py-3 text-center text-sm font-semibold text-[var(--lern-text-primary)] transition-colors hover:bg-[var(--lern-bg)]"
-              >
-                Kostenlos testen
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Trust-Signale */}
-      <section className="px-6 py-16">
-        <div className="mx-auto grid max-w-4xl gap-8 sm:grid-cols-4">
-          <TrustBadge icon="🇩🇪" title="Server in Deutschland" subtitle="DSGVO-konform" />
-          <TrustBadge icon="🔒" title="Keine Tracker" subtitle="Keine Werbung" />
-          <TrustBadge icon="🗑️" title="Löschrecht" subtitle="Jederzeit löschbar" />
-          <TrustBadge icon="👩‍⚕️" title="Von Dozentin geprüft" subtitle="Fachlich korrekt" />
-        </div>
-      </section>
-
-      {/* CTA + Kontakt */}
-      <section className="border-t border-[var(--lern-border)]/60 bg-[var(--lern-text-primary)] px-6 py-20 text-white">
+      {/* Für wen */}
+      <section className="border-t-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-5 py-14">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-4 text-2xl font-bold sm:text-3xl">
-            Bereit für besseren Theorieunterricht?
+          <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-[var(--lern-accent)]">
+            {t("forWhoEyebrow")}
           </h2>
-          <p className="mx-auto mb-10 max-w-xl text-[#a1a1a6]">
-            Lassen Sie uns gemeinsam herausfinden, ob die Plattform zu Ihrer Schule passt.
-            Unverbindlich, kostenlos, persönlich.
+          <p className="text-xl font-semibold leading-relaxed sm:text-2xl">{t("forWhoText")}</p>
+        </div>
+      </section>
+
+      {/* Gründerin */}
+      <section className="px-5 py-16">
+        <div className="mx-auto max-w-2xl">
+          <h2 className="mb-3 text-center text-sm font-bold uppercase tracking-wider text-[var(--lern-sage)]">
+            {t("founderEyebrow")}
+          </h2>
+          <p className="mb-6 text-center text-2xl font-bold sm:text-3xl">{t("founderTitle")}</p>
+          <blockquote className="rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg)] p-6 text-center">
+            <p className="text-base italic leading-relaxed text-[var(--lern-text-primary)]">
+              „{t("founderQuote")}"
+            </p>
+            <footer className="mt-5 flex flex-col items-center gap-2">
+              <FounderAvatar src="/founder-waleria.jpg" initials="W" alt={t("founderName")} />
+              <span className="text-sm font-bold text-[var(--lern-text-primary)]">
+                {t("founderName")}
+              </span>
+              <span className="text-xs text-[var(--lern-text-secondary)]">{t("founderRole")}</span>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Warteliste-Capture */}
+      <section
+        id="warteliste"
+        className="scroll-mt-20 border-t-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-5 py-16"
+      >
+        <div className="mx-auto max-w-xl">
+          <h2 className="mb-2 text-center text-sm font-bold uppercase tracking-wider text-[var(--lern-accent)]">
+            {t("waitlistEyebrow")}
+          </h2>
+          <p className="mb-3 text-center text-2xl font-bold sm:text-3xl">{t("waitlistTitle")}</p>
+          <p className="mx-auto mb-7 max-w-md text-center text-base leading-relaxed text-[var(--lern-text-secondary)]">
+            {t("waitlistBody")}
           </p>
-          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <a
-              href="mailto:info@pflege-lernplattform.de?subject=Schullizenz%20anfragen"
-              className="rounded-full bg-[var(--lern-accent)] px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-[#1A7359]"
-            >
-              Kontakt aufnehmen
-            </a>
-            <Link
-              href="/lernen"
-              className="rounded-full border border-[#424245] px-8 py-3.5 text-base font-semibold text-white transition-colors hover:border-[#6e6e73]"
-            >
-              Erst die Demo ansehen
-            </Link>
-          </div>
+          <WaitlistForm
+            locale={locale}
+            leadMagnet="pilot-warteliste"
+            labels={waitlistLabels}
+          />
+        </div>
+      </section>
+
+      {/* Trust-Leiste */}
+      <section className="px-5 py-12">
+        <div className="mx-auto grid max-w-3xl gap-7 sm:grid-cols-4">
+          <TrustBadge icon="🇩🇪" title={t("trust1Title")} sub={t("trust1Sub")} />
+          <TrustBadge icon="🔒" title={t("trust2Title")} sub={t("trust2Sub")} />
+          <TrustBadge icon="🗑️" title={t("trust3Title")} sub={t("trust3Sub")} />
+          <TrustBadge icon="👩‍⚕️" title={t("trust4Title")} sub={t("trust4Sub")} />
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-[var(--lern-border)]/60 bg-[var(--lern-bg)] px-6 py-8">
+      <footer className="border-t-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg)] px-5 py-8">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-sm text-[var(--lern-text-secondary)]">
-            &copy; {new Date().getFullYear()} Pflege-Lernplattform
+            &copy; {new Date().getFullYear()} Carovia
           </p>
           <div className="flex gap-6 text-sm text-[var(--lern-text-secondary)]">
-            <a href="mailto:info@pflege-lernplattform.de" className="hover:text-[var(--lern-text-primary)]">Kontakt</a>
-            <span className="cursor-default">Datenschutz</span>
-            <span className="cursor-default">Impressum</span>
+            <a
+              href="mailto:info@pflege-lernplattform.de"
+              className="transition-colors hover:text-[var(--lern-text-primary)]"
+            >
+              {t("footerContact")}
+            </a>
+            <span className="cursor-default">{t("footerPrivacy")}</span>
+            <span className="cursor-default">{t("footerImprint")}</span>
           </div>
         </div>
       </footer>
@@ -316,79 +273,83 @@ export default function LandingPage() {
   )
 }
 
-function ProblemCard({
-  emoji,
-  title,
-  problem,
-  solution,
-}: {
-  emoji: string
-  title: string
-  problem: string
-  solution: string
-}) {
-  return (
-    <div className="rounded-2xl bg-[var(--lern-bg-primary)] p-6 shadow-sm">
-      <span className="mb-3 block text-3xl">{emoji}</span>
-      <h3 className="mb-2 text-lg font-bold">{title}</h3>
-      <p className="mb-3 text-sm text-[#C96B5C]">{problem}</p>
-      <p className="text-sm text-[var(--lern-text-secondary)]">{solution}</p>
-    </div>
-  )
+interface PreviewLabels {
+  badge: string
+  question: string
+  correct: string
+  wrong1: string
+  wrong2: string
+  feedback: string
 }
 
-function FeatureCard({
-  icon,
-  title,
-  description,
-}: {
-  icon: string
-  title: string
-  description: string
-}) {
+function SessionPreview({ labels }: { labels: PreviewLabels }) {
   return (
-    <div className="rounded-2xl border border-[var(--lern-border)]/60 bg-[var(--lern-bg-primary)] p-6 transition-shadow hover:shadow-md">
-      <span className="mb-3 block text-2xl">{icon}</span>
-      <h3 className="mb-2 font-bold">{title}</h3>
-      <p className="text-sm leading-relaxed text-[var(--lern-text-secondary)]">{description}</p>
-    </div>
-  )
-}
-
-function CERow({ nr, title, status }: { nr: string; title: string; status: "verfuegbar" | "geplant" }) {
-  const isAvailable = status === "verfuegbar"
-  return (
-    <div className={`flex items-center justify-between rounded-xl border px-4 py-3 ${isAvailable ? "border-[#3E5A6A] bg-[#3E5A6A]/5" : "border-[var(--lern-border)]/60 bg-[var(--lern-bg-primary)]"}`}>
-      <div className="flex items-center gap-3">
-        <span className={`flex h-8 w-8 items-center justify-center rounded-lg text-xs font-bold text-white ${isAvailable ? "bg-[#3E5A6A]" : "bg-[#86868b]"}`}>
-          {nr}
-        </span>
-        <span className={`text-sm font-medium ${isAvailable ? "text-[var(--lern-text-primary)]" : "text-[var(--lern-text-secondary)]"}`}>{title}</span>
-      </div>
-      <span className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${isAvailable ? "bg-[#3E5A6A]/10 text-[#3E5A6A]" : "bg-[var(--lern-bg)] text-[var(--lern-text-tertiary)]"}`}>
-        {isAvailable ? "Spielbar" : "In Arbeit"}
+    <div className="mx-auto max-w-sm rounded-3xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-5 text-left shadow-lg shadow-[var(--lern-accent)]/10">
+      <span className="inline-flex rounded-full bg-[var(--lern-accent-bg)] px-3 py-1 text-xs font-semibold text-[var(--lern-accent)]">
+        {labels.badge}
       </span>
+      <p className="mt-3 text-sm font-bold text-[var(--lern-text-primary)]">{labels.question}</p>
+      <div className="mt-4 space-y-2">
+        <PreviewOption text={labels.correct} correct />
+        <PreviewOption text={labels.wrong1} />
+        <PreviewOption text={labels.wrong2} />
+      </div>
+      <div className="mt-4 flex items-start gap-2 rounded-xl bg-[var(--lern-accent-bg)] p-3">
+        <Check className="mt-0.5 shrink-0 text-[var(--lern-accent)]" />
+        <p className="text-xs leading-relaxed text-[var(--lern-text-secondary)]">{labels.feedback}</p>
+      </div>
     </div>
   )
 }
 
-function CheckItem({ text }: { text: string }) {
+function PreviewOption({ text, correct = false }: { text: string; correct?: boolean }) {
   return (
-    <li className="flex items-start gap-2">
-      <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#3E5A6A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M20 6 9 17l-5-5" />
-      </svg>
+    <div
+      className={`flex items-center justify-between rounded-xl border-[1.5px] px-4 py-2.5 text-sm ${
+        correct
+          ? "border-[var(--lern-accent)] bg-[var(--lern-accent-bg)] font-semibold text-[var(--lern-text-primary)]"
+          : "border-[var(--lern-border)] text-[var(--lern-text-secondary)]"
+      }`}
+    >
       <span>{text}</span>
-    </li>
+      {correct && <Check className="text-[var(--lern-accent)]" />}
+    </div>
   )
 }
 
-function TrustBadge({ icon, title, subtitle }: { icon: string; title: string; subtitle: string }) {
+function Check({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      className={`h-4 w-4 ${className}`}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M20 6 9 17l-5-5" />
+    </svg>
+  )
+}
+
+function PromiseCard({ icon, title, desc }: { icon: string; title: string; desc: string }) {
+  return (
+    <div className="rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg)] p-5 transition-shadow hover:shadow-md">
+      <span className="mb-3 block text-2xl">{icon}</span>
+      <h3 className="mb-2 text-base font-bold">{title}</h3>
+      <p className="text-sm leading-relaxed text-[var(--lern-text-secondary)]">{desc}</p>
+    </div>
+  )
+}
+
+function TrustBadge({ icon, title, sub }: { icon: string; title: string; sub: string }) {
   return (
     <div className="text-center">
       <span className="mb-2 block text-2xl">{icon}</span>
       <p className="text-sm font-semibold">{title}</p>
-      <p className="text-xs text-[var(--lern-text-secondary)]">{subtitle}</p>
+      <p className="text-xs text-[var(--lern-text-secondary)]">{sub}</p>
     </div>
   )
 }

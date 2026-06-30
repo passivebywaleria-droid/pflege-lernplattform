@@ -112,7 +112,7 @@ function erstelleLernzeitNachweis(
     .subtitle { color: #6e6e73; font-size: 14px; }
     .stats { display: flex; gap: 24px; margin: 24px 0; }
     .stat { text-align: center; }
-    .stat-value { font-size: 28px; font-weight: 700; color: #218C71; }
+    .stat-value { font-size: 28px; font-weight: 700; color: #5A7D60; }
     .stat-label { font-size: 12px; color: #6e6e73; }
     table { width: 100%; border-collapse: collapse; font-size: 13px; }
     th {
@@ -146,7 +146,7 @@ function erstelleLernzeitNachweis(
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #218C71;
+      background: #5A7D60;
       color: white;
       border: none;
       padding: 12px 24px;

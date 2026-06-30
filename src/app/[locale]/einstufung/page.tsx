@@ -158,7 +158,7 @@ export default function EinstufungPage() {
   if (!loaded) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-[var(--lern-bg-primary)]" role="status">
-        <div className="h-8 w-8 animate-spin rounded-full border-2 border-[#218C71] border-t-transparent" />
+        <div className="h-8 w-8 animate-spin rounded-full border-2 border-[#5A7D60] border-t-transparent" />
         <span className="sr-only">{t("welcome.loading")}</span>
       </div>
     )

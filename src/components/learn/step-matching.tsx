@@ -34,7 +34,7 @@ interface StepMatchingProps {
 }
 
 const MATCH_COLORS = [
-  "#218C71",
+  "#5A7D60",
   "#3E5A6A",
   "#D4956A",
   "#9B7EA6",
@@ -283,9 +283,9 @@ export function StepMatching({
                   role="option"
                   aria-selected={isSelected}
                   aria-label={`Begriff: ${pairs[idx].left}`}
-                  className={`w-full rounded-xl border-[1.5px] p-3 text-left text-sm font-medium transition-all focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2 ${
+                  className={`w-full rounded-xl border-[1.5px] p-3 text-left text-sm font-medium transition-all focus:outline-2 focus:outline-[#5A7D60] focus:outline-offset-2 ${
                     isSelected
-                      ? "border-[#218C71] bg-[#218C71]/10"
+                      ? "border-[#5A7D60] bg-[#5A7D60]/10"
                       : "border-[var(--lern-border)] bg-[var(--lern-card-bg)]"
                   }`}
                   style={{
@@ -310,9 +310,9 @@ export function StepMatching({
                 role="option"
                 aria-selected={false}
                 aria-label={`Zuordnung: ${pairs[origIdx].right}`}
-                className={`w-full rounded-xl border-[1.5px] p-3 text-left text-sm transition-all focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2 ${
+                className={`w-full rounded-xl border-[1.5px] p-3 text-left text-sm transition-all focus:outline-2 focus:outline-[#5A7D60] focus:outline-offset-2 ${
                   selectedLeft !== null
-                    ? "border-[#218C71]/40 bg-[#218C71]/5 hover:bg-[#218C71]/10"
+                    ? "border-[#5A7D60]/40 bg-[#5A7D60]/5 hover:bg-[#5A7D60]/10"
                     : "border-[var(--lern-border)] bg-[var(--lern-card-bg)]"
                 }`}
                 style={{
@@ -347,7 +347,7 @@ export function StepMatching({
             onClick={handleSubmit}
             disabled={matches.size < pairs.length}
             aria-label="Zuordnung prüfen"
-            className="w-full rounded-2xl bg-[#218C71] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2"
+            className="w-full rounded-2xl bg-[#5A7D60] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52] disabled:opacity-40 disabled:cursor-not-allowed focus:outline-2 focus:outline-[#5A7D60] focus:outline-offset-2"
           >
             Prüfen
           </button>
@@ -355,7 +355,7 @@ export function StepMatching({
           <button
             onClick={() => onNext(allCorrect)}
             aria-label="Weiter zum nächsten Schritt"
-            className="w-full rounded-2xl bg-[#218C71] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359] focus:outline-2 focus:outline-[#218C71] focus:outline-offset-2"
+            className="w-full rounded-2xl bg-[#5A7D60] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52] focus:outline-2 focus:outline-[#5A7D60] focus:outline-offset-2"
           >
             Weiter
           </button>

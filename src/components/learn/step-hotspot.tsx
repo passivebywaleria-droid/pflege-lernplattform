@@ -191,7 +191,7 @@ export function StepHotspot({
           </div>
           <button
             onClick={() => onNext(allFound)}
-            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
+            className="w-full rounded-2xl bg-[var(--lern-accent)] px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52]"
           >
             Weiter
           </button>

@@ -60,7 +60,7 @@ export default function TestMCPage() {
               <button
                 onClick={() => setStep(0)}
                 className="rounded-xl px-4 py-2 text-sm font-medium text-white"
-                style={{ backgroundColor: "#218C71" }}
+                style={{ backgroundColor: "#5A7D60" }}
               >
                 Nochmal
               </button>

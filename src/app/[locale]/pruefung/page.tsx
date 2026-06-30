@@ -345,7 +345,7 @@ export default function PruefungPage() {
                 <h1 className="text-2xl font-bold">Pr&uuml;fungsmodus</h1>
                 <p className="text-sm text-[var(--lern-text-secondary)]">Simulierte Pr&uuml;fungen im echten Format</p>
               </div>
-              <Link href={`/${locale}/dashboard`} className="text-sm text-[#218C71] font-medium">
+              <Link href={`/${locale}/dashboard`} className="text-sm text-[#5A7D60] font-medium">
                 Dashboard
               </Link>
             </div>
@@ -550,8 +550,8 @@ export default function PruefungPage() {
                     disabled={gewaehlt !== null}
                     className={`w-full text-left rounded-2xl border px-5 py-4 text-sm font-medium transition-all active:scale-[0.98] ${
                       gewaehlt === oi
-                        ? "border-[#218C71] bg-[var(--lern-accent)]/5"
-                        : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)] hover:border-[#1A7359]/40"
+                        ? "border-[#5A7D60] bg-[var(--lern-accent)]/5"
+                        : "border-[var(--lern-border)] bg-[var(--lern-bg-primary)] hover:border-[#4C6A52]/40"
                     }`}
                   >
                     <span className="text-[var(--lern-text-tertiary)] mr-2 font-semibold">

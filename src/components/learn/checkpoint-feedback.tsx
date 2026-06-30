@@ -77,7 +77,7 @@ export function CheckpointFeedback({ score, skippedCount, onDone }: CheckpointFe
                     key={i}
                     className="absolute w-2 h-2 rounded-full"
                     style={{
-                      backgroundColor: ["#3E5A6A", "#218C71", "#D4956A", "#9B7EA6", "#C96B5C"][i % 5],
+                      backgroundColor: ["#3E5A6A", "#5A7D60", "#D4956A", "#9B7EA6", "#C96B5C"][i % 5],
                       left: `${10 + (i * 7) % 80}%`,
                       top: "50%",
                     }}

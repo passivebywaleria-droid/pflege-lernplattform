@@ -87,8 +87,8 @@ export function BadgePopup({ profil }: BadgePopupProps) {
                 className="absolute w-3 h-3 rounded-full"
                 style={{
                   backgroundColor: [
-                    "#D4956A", "#218C71", "#3E5A6A", "#C96B5C",
-                    "#9B7EA6", "#BFA48E", "#1A7359",
+                    "#D4956A", "#5A7D60", "#3E5A6A", "#C96B5C",
+                    "#9B7EA6", "#BFA48E", "#4C6A52",
                   ][i % 7],
                 }}
               />

@@ -48,8 +48,8 @@ export function StepMC({
   const [fehlerAnalyse, setFehlerAnalyse] = useState<FehlerAnalyse | null>(null);
   const startTimeRef = useRef<number>(Date.now());
 
-  const accentColor = isAnticipation ? "#9B7EA6" : "#218C71";
-  const accentHover = isAnticipation ? "#8A6D95" : "#1A7359";
+  const accentColor = isAnticipation ? "#9B7EA6" : "#5A7D60";
+  const accentHover = isAnticipation ? "#8A6D95" : "#4C6A52";
 
   useEffect(() => {
     startTimeRef.current = Date.now();

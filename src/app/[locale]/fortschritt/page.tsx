@@ -217,7 +217,7 @@ export default function FortschrittPage() {
     return (
       <div className="min-h-screen bg-[var(--lern-bg)] flex items-center justify-center">
         <div className="text-center space-y-4">
-          <div className="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-[#218C71] border-t-transparent" />
+          <div className="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-[#5A7D60] border-t-transparent" />
           <p className="text-sm text-[var(--lern-text-secondary)]">{t("title")}...</p>
         </div>
       </div>
@@ -259,7 +259,7 @@ export default function FortschrittPage() {
               <circle
                 cx="18" cy="18" r="15"
                 fill="none"
-                stroke="#218C71"
+                stroke="#5A7D60"
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeDasharray={`${gesamtProzent * 0.942} 100`}

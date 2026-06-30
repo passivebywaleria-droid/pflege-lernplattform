@@ -11,6 +11,7 @@ import { NotificationPrompt } from "@/components/pwa/notification-prompt"
 import { ErrorBoundaryWrapper } from "@/components/error-boundary-wrapper"
 import { DarkModeInit } from "@/components/layout/dark-mode-init"
 import { GlobalTabBar } from "@/components/layout/global-tab-bar"
+import { SITE_URL } from "@/lib/seo/site"
 import "../globals.css"
 
 // Inter — Bundle-Font (claude-design-bundle), wirkt schmaler/kompakter als Poppins
@@ -22,6 +23,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Pflege-Lernplattform",
     template: "%s | Pflege-Lernplattform",
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
   description:
     "Adaptive Lernplattform für die generalistische Pflegeausbildung nach PflBG 2020",
   manifest: "/manifest.json",
-  themeColor: "#218C71",
+  themeColor: "#5A7D60",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",

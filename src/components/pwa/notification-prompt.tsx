@@ -1,11 +1,13 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { usePathname } from "next/navigation"
 import { Bell, X } from "lucide-react"
 
 const NOTIFICATION_ASKED_KEY = "pflege-notification-asked"
 
 export function NotificationPrompt() {
+  const pathname = usePathname()
   const [show, setShow] = useState(false)
 
   useEffect(() => {
@@ -55,6 +57,10 @@ export function NotificationPrompt() {
     setShow(false)
   }
 
+  // Marketing-Landing (Locale-Root, z. B. /de) — kein Notification-Prompt für Besucher
+  const segments = pathname ? pathname.split("/").filter(Boolean) : []
+  if (segments.length <= 1) return null
+
   if (!show) return null
 
   return (
@@ -76,7 +82,7 @@ export function NotificationPrompt() {
           <div className="mt-3 flex gap-2">
             <button
               onClick={requestPermission}
-              className="rounded-lg bg-[#218C71] px-3 py-1.5 text-sm font-medium text-white hover:bg-[#1A7359]"
+              className="rounded-lg bg-[#5A7D60] px-3 py-1.5 text-sm font-medium text-white hover:bg-[#4C6A52]"
             >
               Aktivieren
             </button>

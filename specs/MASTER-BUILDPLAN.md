@@ -122,3 +122,4 @@ Dozentin-Review, Pflege-Härtung. Diese drei lassen sich nicht beschleunigen.
 |-------|----------|----------|
 | 2026-06-14 | CE-04 Kommunikation | 5 Themen + 2 Situationen, 3 Review-Zyklen, 0 FEHLT, deployed |
 | 2026-06-29 | Master-Buildplan angelegt | diese Datei |
+| 2026-06-29 | Landing-Überarbeitung (Design-Chat) | B2C-Landing neu (Warteliste-first, Gründerin Waleria, DE/TR/AR, hreflang/OG); app-weit Teal→Dusty-Rose; Play-then-Gate als Spec (specs/SPEC-PLAY-THEN-GATE.md). tsc/build/vitest ✅. Offen: Commit+Deploy, Gate-Bau (eigener Chat) |

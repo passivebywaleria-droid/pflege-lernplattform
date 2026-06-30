@@ -111,7 +111,7 @@ export default function LernenUebersichtPage() {
             </div>
             <Link
               href={`/${locale}/lernen/${empfohleneLE.leId}`}
-              className="shrink-0 rounded-lg bg-[var(--lern-accent)] px-3 py-2 text-xs font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#1A7359]"
+              className="shrink-0 rounded-lg bg-[var(--lern-accent)] px-3 py-2 text-xs font-semibold text-white transition-all active:scale-[0.98] hover:bg-[#4C6A52]"
             >
               Starten
             </Link>
