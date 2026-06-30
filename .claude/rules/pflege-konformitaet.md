@@ -110,7 +110,26 @@
 
 ## Mechanisierte Checks (Pre-Filter, Pipeline v10)
 
-Diese Anti-Patterns sind als harte Regex-Checks in `scripts/pflege-anti-pattern-check.ts` umgesetzt (12 Patterns, inkl. NRS≥4-ok, Schellong-ohne-RR, Fixierung/Bettgitter-beidseitig, „Glück gehabt" vor Assessment, unter-Achseln, Heben/Ziehen). Der Check ist ein **Pre-Filter** — er kann „empfehlen" nicht von „über Falsches lehren" unterscheiden (Distraktoren/Fragen/Kommentare werden via `skipInDistraktor`/ignoreIf/Kommentar-Skip ausgenommen). Der semantische `pflege-validator` bleibt die letzte Instanz.
+Diese Anti-Patterns sind als harte Regex-Checks in `scripts/pflege-anti-pattern-check.ts` umgesetzt. Der Check ist ein **Pre-Filter** — er kann „empfehlen" nicht von „über Falsches lehren" unterscheiden (Distraktoren/Fragen/Kommentare werden via `skipInDistraktor`/ignoreIf/Kommentar-Skip ausgenommen). Der semantische `pflege-validator` bleibt die letzte Instanz.
+
+### Pattern-Register (Sync-Anker — Drift-Guard)
+
+Jede `id` im Skript MUSS hier stehen und umgekehrt. Der Test `tests/unit/pflege-anti-pattern-sync.test.ts` schlägt fehl, wenn Skript und dieses Register auseinanderlaufen (löst W8: zwei Wahrheitsquellen). Beim Hinzufügen/Entfernen eines Patterns BEIDE Stellen ändern.
+
+| AP-ID | Severity | Kurz |
+|-------|----------|------|
+| `AP-LICHT-INDIREKT` | HOCH | „Indirektes/gedämpftes Licht" bei Sturz verhindert Verletzungs-Inspektion |
+| `AP-SCHOCKMOMENT` | MITTEL | „Kein Schockmoment" — Pseudo-Empathie |
+| `AP-NRS-OK` | HOCH | NRS ≥ 4 als „ok" bagatellisiert moderaten Schmerz |
+| `AP-ICH-FUEHRE-NUR` | HOCH | „Ich führe die Bewegung" — kinästhetisch falsch |
+| `AP-HEBEN-ZIEHEN` | HOCH | „Ich hebe/ziehe Sie hoch" — kinästhetisch falsch |
+| `AP-UNTER-ACHSELN` | HOCH | „Unter den Achseln greifen" — Schultergelenk-Risiko |
+| `AP-SAGT-OHNE-ZITAT` | MITTEL | „Sie sagt:" am Zeilenende ohne Patientenzitat |
+| `AP-MIN-WARTE-OHNE-RR` | HOCH | „X Min warten" für Orthostase ohne RR = kein Schellong |
+| `AP-HUEFTE-SCHUETZEN-VAGE` | NIEDRIG | „Schützt die Hüfte" — zu vage |
+| `AP-SIE-STATT-DU-PFLEGE` | MITTEL | „Sie" statt „du" an Lernende |
+| `AP-GLUECK-VOR-ASSESSMENT` | HOCH | „Glück gehabt" vor abgeschlossenem Assessment |
+| `AP-BETTGITTER-BEIDSEITIG` | HOCH | Beidseitige Bettgitter ohne Genehmigung (FeM, § 1831 Abs. 4 BGB) |
 
 **Quellenbindung (Pipeline v10):** Kernfakten brauchen verifizierte Verbatim-Belege (`scripts/zitat-verifizierer.ts --check-file`), Content darf keine ungedeckten Instrumente/Standards enthalten (`scripts/faktentreue-check.ts`). Grounding-Quellen: `recherche/dnqp-standards-index/` + `recherche/*-volltext/` (Lesereihenfolge-Extraktion, NICHT die `-layout`-Indexe).
 

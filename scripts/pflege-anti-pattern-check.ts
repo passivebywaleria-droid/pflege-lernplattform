@@ -47,7 +47,7 @@ interface Match {
  *
  * Wenn du hier Patterns hinzufügst, ergänze auch die Regel-Datei.
  */
-const ANTI_PATTERNS: AntiPattern[] = [
+export const ANTI_PATTERNS: AntiPattern[] = [
   {
     id: "AP-LICHT-INDIREKT",
     severity: "HOCH",
@@ -327,4 +327,7 @@ function main() {
   process.exit(1);
 }
 
-main();
+// Nur bei Direktaufruf ausführen — nicht beim Import (z.B. durch den Drift-Guard-Test).
+if (process.argv[1]?.includes("pflege-anti-pattern-check")) {
+  main();
+}
