@@ -63,7 +63,9 @@ let md = ""
 md += `# CE-${NN} Lernergebnis-Coverage-Gerüst\n\n`
 md += `> **Generiert** aus \`${katalogPath}\` (${katalog.anzahl} Lernergebnisse, ${byLE.size} LEs). `
 md += `Quelle: ${katalog.quelle}.\n>\n`
-md += `> **Gate-Regel:** Erst wenn jedes Lernergebnis VOLL (oder begründet by-design-TEILWEISE) ist, gilt der CE als rahmenplan-vollständig. FEHLT = blockiert.\n>\n`
+md += `> **Gate-Regel (Präsenz):** Erst wenn jedes Lernergebnis VOLL (oder begründet by-design-TEILWEISE) ist, gilt der CE als rahmenplan-vollständig. FEHLT = blockiert.\n>\n`
+md += `> **Gate-Regel (Tiefe, W10):** „0 FEHLT" reicht NICHT — jedes Lernergebnis muss mind. Stufe „geübt" erreichen (Bloom ≥ 3 in einem zugeordneten Step). Berührt/fehlt = blockiert (außer motorisch/einstellung: by-design). Mess-Skript: \`npx tsx scripts/lernergebnis-tiefe.ts ${ce}\`.\n>\n`
+md += `> **Pflicht-Artefakt des Rechecks:** Schreibe das Step→LE-Mapping maschinenlesbar nach \`specs/ce-${NN}/lernergebnis-mapping.json\` im Format \`{ "<leId>": ["<stepId>", …] }\`. Erst damit kann das Tiefe-Gate (W10) messen.\n>\n`
 md += `> ⚠️ **Vor Gebrauch Katalog-Vollständigkeit prüfen:** Stichprobe gegen \`recherche/curriculum-generalistik-volltext/\` — stimmt Anzahl/Bloom je LE? (Heuristische Extraktion kann Bullets über Seitenumbrüche verlieren.)\n\n`
 
 md += `## Content-Orte (Stand Generierung)\n\n`
@@ -80,8 +82,8 @@ md += `| **Σ** | **${les.length}** |  |  |  |\n\n`
 for (const li of [...byLE.keys()].sort((a, b) => a - b)) {
   const items = byLE.get(li)!
   md += `## LE-Index ${li} (${items.length} Lernergebnisse)\n\n`
-  md += `| ID | Typ | Bloom-Soll | Lernergebnis | Status | Deckende Quelle (bausteinId/stepId) | Bloom erreicht? |\n`
-  md += `|----|-----|-----------|--------------|--------|--------------------------------------|------------------|\n`
+  md += `| ID | Typ | Bloom-Soll | Lernergebnis | Status | Deckende Quelle (stepId) | Tiefe (berührt/geübt/geprüft) |\n`
+  md += `|----|-----|-----------|--------------|--------|--------------------------|-------------------------------|\n`
   for (const x of items) {
     const flags = [x.altersbezug ? "👶 Alter" : "", x.motorisch ? "✋ motor." : ""].filter(Boolean).join(" ")
     md += `| ${x.id} | ${typLabel[x.typ]} | ${x.bloomStufe} (${x.bloomVerb}) | ${esc(x.text)}${flags ? " _" + flags + "_" : ""} |  |  |  |\n`
@@ -100,6 +102,8 @@ md += `- Katalog: ${katalogPath}\n`
 md += `- Content: content/ce-${NN}/themen/*/bausteine.ts, content/ce-${NN}/situationen/*/phase-*.ts\n`
 md += `- Grounding-Korpus zum Gegenprüfen: recherche/*-volltext/\n\n`
 md += `REGELN:\n`
+md += `- Trage je Lernergebnis die deckenden stepIds ein UND leite die Tiefe ab (Bloom 1-2 → berührt, 3-4 → geübt, 5-6 → geprüft).\n`
+md += `- Schreibe das Mapping zusätzlich maschinenlesbar nach specs/ce-${NN}/lernergebnis-mapping.json: { "<leId>": ["<stepId>", …] }. Dann misst scripts/lernergebnis-tiefe.ts ${ce} die Tiefe deterministisch.\n`
 md += `- "VOLL" nur wenn Inhalt UND Bloom-Verb des Lernergebnisses erreicht sind.\n`
 md += `- Einstellungs-/Reflexionsziele (diskutieren/reflektieren) brauchen ein reflection-/Diskussions-Format, nicht nur Lehrtext.\n`
 md += `- "👶 Alter"-Ziele: prüfe ob die geforderten Altersstufen (Kind/Säugling/alter Mensch) eingelöst sind.\n`

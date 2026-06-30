@@ -1,0 +1,35 @@
+{
+  "stand": "2026-06-30",
+  "zweck": "Standards-Currency-Registry (Pipeline-Härtung W6/Teil D). Listet Normen/Standards, deren AKTUELLE Fassung sich geändert hat. Der Check (scripts/standards-currency-check.ts) flaggt veraltete Fassungen im Content. Hätte §1906a→§1831 automatisch gefangen. Gründerin-Regel: jede Norm hier ist selbst belegt — Kandidaten ohne verifizierten Beleg gehören in BESCHAFFUNG, nicht hier.",
+  "feldsemantik": {
+    "id": "stabiler Schlüssel",
+    "norm": "Anzeigename der VERALTETEN Fassung",
+    "pattern": "Regex-Quelle (case-insensitive), die die veraltete Fassung im Text erkennt",
+    "status": "immer 'veraltet' (sonst gehört der Eintrag nicht in die Registry)",
+    "ersetztDurch": "die aktuell gültige Fassung",
+    "datumAbloesung": "ISO-Datum, ab dem die alte Fassung nicht mehr gilt",
+    "grund": "warum/wodurch abgelöst",
+    "severity": "HOCH | MITTEL | NIEDRIG — Veraltete Rechtsnorm = HOCH (Rechtssicherheit)",
+    "beleg": "Primärquelle, die die Ablösung belegt (quelle + zitat)"
+  },
+  "normen": [
+    {
+      "id": "FEM-BGB-1906",
+      "norm": "§ 1906 / § 1906a BGB (FeM/Unterbringung, alte Fassung)",
+      "pattern": "§\\s*1906\\s*a?\\b",
+      "status": "veraltet",
+      "ersetztDurch": "§ 1831 BGB (ärztliche Zwangsmaßnahme/FeM) bzw. § 1832 BGB (Unterbringung)",
+      "datumAbloesung": "2023-01-01",
+      "grund": "Reform des Betreuungs- und Vormundschaftsrechts (Gesetz vom 04.05.2021, in Kraft 01.01.2023): §§ 1906/1906a BGB wurden inhaltlich in §§ 1831/1832 BGB überführt. Der Paragraf 1906a existiert seit 01.01.2023 nicht mehr.",
+      "severity": "HOCH",
+      "beleg": {
+        "quelle": "Gesetze im Internet — BGB § 1831 (https://www.gesetze-im-internet.de/bgb/__1831.html); referenziert in scripts/fetch-leitlinien.sh:82-83",
+        "zitat": "§ 1831 BGB (FeM/Unterbringung, frueher § 1906)"
+      }
+    }
+  ],
+  "BESCHAFFUNG": [
+    "NPUAP → NPIAP (Umbenennung 2019) + EPUAP-Klassifikations-Terminologie: Umbenennung im Korpus noch nicht verbatim belegt — vor Aufnahme Primärquelle (NPIAP/EPUAP-Pressemitteilung 2019 bzw. Leitlinien-Volltext) beschaffen.",
+    "PRISCUS 1.0 → PRISCUS 2.0 (2023): Versionswechsel der Liste potenziell inadäquater Medikation. Vor Aufnahme als 'veraltet'-Eintrag verbatim-Beleg der 2.0-Ablösung beschaffen (aktuell wird in CE-02 bereits PRISCUS 2.0 zitiert)."
+  ]
+}

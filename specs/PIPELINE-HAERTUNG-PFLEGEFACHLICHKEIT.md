@@ -36,8 +36,10 @@ ist selbst quellenbelegt, sonst Beschaffungsliste.
 | W3 | Faktentreue-Gate faktisch AUS (exit 0) | KRITISCH | 2 | ✅ `9564c62` |
 | W1 | Keine klinische Zahlen-Validierung | KRITISCH | 3 | ✅ Stage 3 |
 | W4 | Anti-Pattern-Netz winzig + Sturz-zentriert | HOCH | 3 | ✅ Stage 3 |
-| W6 | Einzel-LLM-Validator, kein Mehr-Augen | HOCH | 4 | offen |
-| W10 | Coverage = Präsenz, nicht Korrektheit/Tiefe | MITTEL | 4 | offen |
+| W6 | Einzel-LLM-Validator, kein Mehr-Augen | HOCH | 4 | ✅ Stage 4 |
+| W10 | Coverage = Präsenz, nicht Korrektheit/Tiefe | MITTEL | 4 | ✅ Stage 4 |
+
+**Alle 10 Schwachstellen geschlossen (W1–W10 ✅).**
 
 ---
 
@@ -173,6 +175,39 @@ Gates grün: `tsc` ✅ · vitest 509 ✅ (+51 neu) · `build` ✅ · eslint ✅.
 - `lernergebnis-coverage` zählt heute Berührung. Ergänzung: pro Lernergebnis eine
   **Tiefe-Stufe** (berührt / geübt / geprüft) aus Bloom-Level der zugeordneten Steps ableiten.
 - „0 FEHLT" wird zu „0 FEHLT + jedes LE mind. auf Stufe ‚geübt'".
+
+### ✅ Stage 4 — umgesetzt (2026-06-30)
+
+**W6 — Adversariales Klinik-Panel** (ersetzt Einzel-Validator durch 4 parallele Lenses)
+- `scripts/klinik-panel.ts <ce> [--situation <id>] [--json]`: 4 unabhängige Lenses,
+  jeder Befund literaturbelegt, gemerged + dedupliziert (pure `mergeFindings`/`dedupKey`/
+  `panelVerdict`). K.O. (exit 1) bei ≥1 HOCH. Report `content/{ce}/klinik-panel-report.{md,json}`,
+  Befunde ohne Beleg → Beschaffungs-Sektion.
+  - Lens 1 Arzneimittel/Zahlen → reuse `analyzeText` (W1, `referenzwerte.json`)
+  - Lens 2 Recht & Ethik → reuse `scanTextForOutdatedNorms` (Currency-Registry)
+  - Lens 3 DNQP/Standard → reuse `checkSituation` (W2-Grounding)
+  - Lens 4 Konsistenz → neu (Dup-stepId, fremde patientId)
+- **Teil D — Standards-Currency-Registry**: `recherche/standards-currency.json`
+  (`{ norm, pattern, status, ersetztDurch, datumAbloesung, grund, beleg }`) +
+  `scripts/standards-currency-check.ts <ce> [--include-plans] [--json]`. Korrektiv-Kontext
+  („vormals §1906") wird ausgenommen. Erster belegter Eintrag §1906/1906a→§1831/1832
+  (Betreuungsrechtsreform 2023). **Demonstriert:** fängt §1906a in CE-01-Plänen (8×),
+  hätte W7 automatisch gefangen. CE-02 (.ts) sauber.
+- **5. Lens = semantisch**: `pflege-validator` bleibt (Distraktor-vs-Empfehlung), die
+  Gründerin der menschliche Backstop. AP-Regex-Pre-Filter gehört bewusst zum semantischen
+  Lens, nicht zu den deterministischen 4 (sonst over-fire auf Lehr-Distraktoren).
+  Neue Agent-Doku `.claude/agents/klinik-panel.md`.
+
+**W10 — Coverage-Tiefe statt Präsenz**
+- `scripts/lernergebnis-tiefe.ts <ce-nummer> [--strict]`: pure `bloomToTiefe`
+  (1-2 berührt · 3-4 geübt · 5-6 geprüft), `deriveLeTiefe` (höchste Stufe), `gateLe`
+  (min „geübt"; motorisch/einstellung by-design befreit), `bilanz`. JOINT Katalog ×
+  Mapping `specs/{ce}/lernergebnis-mapping.json` × Step-Blooms. Ohne Mapping Warn-Modus
+  (analog Grounding-Adoption). `lernergebnis-coverage-scaffold.ts` um Tiefe-Spalten,
+  Tiefe-Gate-Regel und Mapping-Pflicht-Artefakt erweitert.
+
+Gates grün: `tsc` ✅ · vitest **564** (+55 neu) ✅ · `build` ✅ · eslint (neue Dateien sauber) ✅.
+W8-Drift-Test grün (ANTI_PATTERNS unberührt). CE-02-Panel PASS.
 
 ---
 

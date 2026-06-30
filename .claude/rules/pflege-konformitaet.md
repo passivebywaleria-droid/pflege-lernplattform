@@ -139,6 +139,21 @@ Jede `id` im Skript MUSS hier stehen und umgekehrt. Der Test `tests/unit/pflege-
 
 **Step-Level-Grounding (W2/W5, Stage 2):** Jeder claim-tragende Step trägt `kernfaktId: ["F-XX"]`; geprüft mit `scripts/step-grounding-check.ts <ce>` (Auto-Strict pro Situation, Dangling-Refs = Fehler). Vor Live-Deploy zusätzlich der semantische Stützt-Check `scripts/stuetzt-check.ts --file <kernfakten.md>` (3 LLM-Lenses, Mehrheits-Entscheid „stützt das Zitat den KONKRETEN Claim?"; braucht `NEBIUS_API_KEY`).
 
+## Standards-Currency (W6 / Teil D, Stage 4)
+
+Normen/Standards ändern ihre gültige Fassung — veraltete Fassungen im Content sind ein Fehler (Rechtssicherheit). Die **Standards-Currency-Registry** `recherche/standards-currency.json` (`{ norm, pattern, status, ersetztDurch, datumAbloesung, grund, beleg }`) führt die abgelösten Fassungen; `scripts/standards-currency-check.ts <ce> [--include-plans]` flaggt deren autoritative Verwendung (Korrektiv-/historischer Kontext „vormals …" wird ausgenommen). Hätte den §1906a→§1831-Drift automatisch gefangen.
+
+- **Bekannt veraltet:** §§ 1906/1906a BGB → §§ 1831/1832 BGB (Betreuungsrechtsreform 01.01.2023). Immer die aktuelle Fassung verwenden.
+- **Neue Norm-Ablösung eintragen:** nur mit verifiziertem Beleg — sonst in die `BESCHAFFUNG`-Liste der Registry, NICHT erfinden.
+
+## Adversariales Klinik-Panel (W6, Stage 4)
+
+Der Einzel-Validator ist durch ein **Panel mit 4 parallelen, unabhängigen Lenses** ersetzt (`scripts/klinik-panel.ts <ce>` → `content/{ce}/klinik-panel-report.md`): (1) Arzneimittel/Zahlen (W1), (2) Recht & Ethik (Currency), (3) DNQP/Standard (Grounding W2), (4) Konsistenz. Jeder Befund literaturbelegt + dedupliziert; K.O. bei ≥1 HOCH. Der **semantische `pflege-validator`** ist der 5. Lens (Distraktor-vs-Empfehlung), die **Gründerin** der menschliche Backstop. Siehe `.claude/agents/klinik-panel.md`.
+
+## Coverage-Tiefe (W10, Stage 4)
+
+Präsenz reicht nicht: `scripts/lernergebnis-tiefe.ts <ce-nummer>` leitet pro Lernergebnis aus dem Bloom-Level der zugeordneten Steps eine **Tiefe-Stufe** ab (Bloom 1-2 → berührt, 3-4 → geübt, 5-6 → geprüft). Gate: jedes LE mind. „geübt" (motorisch/einstellung by-design befreit). Braucht das Recheck-Mapping `specs/{ce}/lernergebnis-mapping.json` (`{ "<leId>": ["<stepId>"] }`); ohne Mapping Warn-Modus.
+
 ## Trigger für pflege-validator
 
 - Bei JEDER neuen Situation (nach didaktik-pruefer)

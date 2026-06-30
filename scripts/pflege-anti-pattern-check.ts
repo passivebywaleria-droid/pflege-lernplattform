@@ -22,7 +22,7 @@
 import * as fs from "fs";
 import * as path from "path";
 
-interface AntiPattern {
+export interface AntiPattern {
   id: string;
   severity: "HOCH" | "MITTEL" | "NIEDRIG";
   regex: RegExp;
@@ -35,7 +35,7 @@ interface AntiPattern {
   skipInDistraktor?: boolean;
 }
 
-interface Match {
+export interface Match {
   file: string;
   line: number;
   text: string;
@@ -255,9 +255,14 @@ function* walkPhaseFiles(
   }
 }
 
-function checkFile(filePath: string): Match[] {
+/**
+ * Reiner String-Scanner — kein IO. Wendet ANTI_PATTERNS auf `content` an und
+ * liefert Matches (inkl. ignoreIf-, Distraktor- und Kommentar-Filter). Wird vom
+ * CLI (`checkFile`) UND vom Klinik-Panel (W6, Lens DNQP/Standard) wiederverwendet,
+ * damit es genau EINE Treffer-Logik gibt (kein zweiter, driftender Scanner).
+ */
+export function scanText(content: string, file: string): Match[] {
   const matches: Match[] = [];
-  const content = fs.readFileSync(filePath, "utf-8");
   const lines = content.split("\n");
 
   for (const pattern of ANTI_PATTERNS) {
@@ -294,7 +299,7 @@ function checkFile(filePath: string): Match[] {
       if (trimmed.startsWith("//") || trimmed.startsWith("*") || trimmed.startsWith("/*")) continue;
 
       matches.push({
-        file: filePath.replace(process.cwd() + "/", ""),
+        file,
         line: lineNumber,
         text: lineText.trim().slice(0, 120),
         pattern,
@@ -303,6 +308,11 @@ function checkFile(filePath: string): Match[] {
   }
 
   return matches;
+}
+
+function checkFile(filePath: string): Match[] {
+  const content = fs.readFileSync(filePath, "utf-8");
+  return scanText(content, filePath.replace(process.cwd() + "/", ""));
 }
 
 function main() {
