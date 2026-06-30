@@ -18,7 +18,7 @@
 ## Pro Block
 
 ### Block U (Urheberrecht) — 1 K.O.
-- **U1 Abstandstest I Care:** PASS — keine "I Care S.XX"-Referenzen in bausteine.ts/glossar.ts/karteikarten.ts. Quellen sind durchgehend Primärquellen: WHO 2007, DNQP 2022, PRISCUS 2.0 (Holt et al. 2023), Beers-Liste 2023, Cochrane Review 2023 (Sherrington et al.), § 1906a BGB, Podsiadlo 1991 (TUG), Tinetti 1986.
+- **U1 Abstandstest I Care:** PASS — keine "I Care S.XX"-Referenzen in bausteine.ts/glossar.ts/karteikarten.ts. Quellen sind durchgehend Primärquellen: WHO 2007, DNQP 2022, PRISCUS 2.0 (Holt et al. 2023), Beers-Liste 2023, Cochrane Review 2023 (Sherrington et al.), § 1831 BGB, Podsiadlo 1991 (TUG), Tinetti 1986.
 
 ### Block F (Fakten-Treue) — 3 K.O.
 - **F7 Fachliche Korrektheit:** PASS
@@ -28,7 +28,7 @@
   - Baustein 4: DNQP 2022 "kein Pflicht-Instrument", TUG >14s = Risiko ✓ (Podsiadlo-Cutoff)
   - Baustein 5: Cochrane 2023 Sherrington, 2-3x/Woche, ≥12 Wochen ✓
   - Baustein 6: Zolpidem +50-100% Sturzrisiko, 20-40% medikamentöse Mitursachen ✓
-  - Baustein 7: § 1906a BGB, 24h-Regel, beidseitige Bettgitter als Fixierung ✓
+  - Baustein 7: § 1831 BGB, 24h-Regel, beidseitige Bettgitter als Fixierung ✓
   - Baustein 9: 1-2%/Tag Muskelabbau bei Immobilität ✓ (belegbar)
   - Baustein 12: Hüftprotektor als Sekundärprophylaxe (Fraktur, nicht Sturz) ✓
   - Baustein 13: Cochrane -24% Sturzrate ✓
@@ -95,7 +95,7 @@
 
 ### Block CQ (Tonalität + Glossar) — 3 Kriterien
 - **CQ-T2 Verbotene Füllsätze:** PASS
-- **CQ-G1 Glossar-Vollständigkeit:** PASS — alle in `glossarBegriffe` referenzierten Begriffe haben Einträge in glossar.ts (Sturz, Near-Miss, Intrinsisch, Extrinsisch, Polypharmazie, Sarkopenie, TUG, Tinetti, Orthostase, Post-Fall-Syndrom, Fixierung, § 1906a BGB, Hüftprotektor, Sturzprotokoll, Interprofessionell = 15 Einträge)
+- **CQ-G1 Glossar-Vollständigkeit:** PASS — alle in `glossarBegriffe` referenzierten Begriffe haben Einträge in glossar.ts (Sturz, Near-Miss, Intrinsisch, Extrinsisch, Polypharmazie, Sarkopenie, TUG, Tinetti, Orthostase, Post-Fall-Syndrom, Fixierung, § 1831 BGB, Hüftprotektor, Sturzprotokoll, Interprofessionell = 15 Einträge)
 - **CQ-G2 B1-Alltagswörter:** PASS
 
 ### Block WB (Wissensbausteine) — 1 Kriterium

@@ -84,9 +84,9 @@
 - **AR:** متلازمة ما بعد السقوط
 
 ### 11. Fixierung
-- **Definition (C1):** Freiheitsentziehende Maßnahme (FeM), die die Bewegungsfreiheit eines Patienten einschränkt — z.B. Gurte, beidseitige Bettgitter ohne Zustimmung, sedierende Bedarfsmedikation. Nur zulässig mit richterlicher Genehmigung oder informierter Einwilligung (§ 1906a BGB). Keine Sturzprophylaxe — kann Verletzungen verschlimmern.
-- **Definition (B1):** Etwas, das den Patienten am freien Bewegen hindert — zum Beispiel Gurte oder beide Bettgitter hochziehen. Das ist nur erlaubt, wenn ein Richter oder der Patient selbst zustimmt (§ 1906a BGB). Fixierung ist keine Sturzprophylaxe — sie kann sogar gefährlicher sein.
-- **Quelle:** § 1906a BGB; DNQP (2022)
+- **Definition (C1):** Freiheitsentziehende Maßnahme (FeM), die die Bewegungsfreiheit eines Patienten einschränkt — z.B. Gurte, beidseitige Bettgitter ohne Zustimmung, sedierende Bedarfsmedikation. Nur zulässig mit richterlicher Genehmigung oder informierter Einwilligung (§ 1831 BGB). Keine Sturzprophylaxe — kann Verletzungen verschlimmern.
+- **Definition (B1):** Etwas, das den Patienten am freien Bewegen hindert — zum Beispiel Gurte oder beide Bettgitter hochziehen. Das ist nur erlaubt, wenn ein Richter oder der Patient selbst zustimmt (§ 1831 BGB). Fixierung ist keine Sturzprophylaxe — sie kann sogar gefährlicher sein.
+- **Quelle:** § 1831 BGB; DNQP (2022)
 - **TR:** Tespit (özgürlüğü kısıtlayıcı önlem)
 - **AR:** التقييد الجسدي
 
@@ -125,7 +125,7 @@
 - [x] **15 Glossar-Einträge** (Soll: 12-15) ✓
 - [x] **Alle Pflicht-Begriffe aus bausteine-plan.md** erfasst (Sturz, Near-Miss, TUG, Tinetti, Polypharmazie, Sarkopenie, Post-Fall-Syndrom, Fixierung, Hüftprotektor, Sturzprotokoll, Interprofessionell + weitere)
 - [x] **C1 + B1 Definition** pro Eintrag ✓
-- [x] **Primärquelle** pro Eintrag (DNQP 2022, WHO 2007, Tinetti 1986, Podsiadlo 1991, Beers 2023, § 1906a BGB) ✓
+- [x] **Primärquelle** pro Eintrag (DNQP 2022, WHO 2007, Tinetti 1986, Podsiadlo 1991, Beers 2023, § 1831 BGB) ✓
 - [x] **TR + AR** Übersetzungen ✓
 - [x] **Echte Umlaute** ä, ö, ü, ß ✓
 - [x] **Anrede "du"** in B1-Texten ✓

@@ -17,7 +17,7 @@
 **Bloom-Verteilung:** Bloom 1-2: 23%, Bloom 3-4: 54%, Bloom 5-6: 23%
 **Zeit-Summe (Stufen 2+3 aller Bausteine):** ~55 Min → Rest (~45 Min) für Übungs-Steps im Sessionplan.
 
-**Primärquellen:** DNQP (2022) Expertenstandard Sturzprophylaxe, 2. Aktualisierung; WHO (2007) Global Report on Falls Prevention; § 1906a BGB; Cochrane Review Falls Prevention 2023; Beers-Liste 2023.
+**Primärquellen:** DNQP (2022) Expertenstandard Sturzprophylaxe, 2. Aktualisierung; WHO (2007) Global Report on Falls Prevention; § 1831 BGB; Cochrane Review Falls Prevention 2023; Beers-Liste 2023.
 
 ---
 
@@ -180,8 +180,8 @@
 
 **D1: "Bettgitter verhindern Stürze"**
 - **Fachbegriff:** Bettgitter-Illusion
-- **Feedback (C1, 370 Zeichen):** "Nicht ganz — das ist einer der häufigsten Mythen. Bettgitter können Sturzhöhe erhöhen, wenn Patienten (besonders bei Demenz) darüber klettern. Dadurch werden Verletzungen schlimmer, nicht verhindert. Außerdem sind beidseitige Bettgitter ohne Zustimmung eine freiheitsentziehende Maßnahme (§ 1906a BGB). Merke: Bettgitter = keine Prophylaxe."
-- **Feedback (B1, 310 Zeichen):** "Nicht ganz — das glauben viele, ist aber falsch. Bettgitter können den Sturz schlimmer machen: Patienten klettern darüber und fallen tiefer. Außerdem ist das Festhalten im Bett ohne Erlaubnis rechtlich verboten (§ 1906a BGB). Merke: Bettgitter schützen nicht vor Stürzen."
+- **Feedback (C1, 370 Zeichen):** "Nicht ganz — das ist einer der häufigsten Mythen. Bettgitter können Sturzhöhe erhöhen, wenn Patienten (besonders bei Demenz) darüber klettern. Dadurch werden Verletzungen schlimmer, nicht verhindert. Außerdem sind beidseitige Bettgitter ohne Zustimmung eine freiheitsentziehende Maßnahme (§ 1831 BGB). Merke: Bettgitter = keine Prophylaxe."
+- **Feedback (B1, 310 Zeichen):** "Nicht ganz — das glauben viele, ist aber falsch. Bettgitter können den Sturz schlimmer machen: Patienten klettern darüber und fallen tiefer. Außerdem ist das Festhalten im Bett ohne Erlaubnis rechtlich verboten (§ 1831 BGB). Merke: Bettgitter schützen nicht vor Stürzen."
 
 **D2: "Ein Rutsch-Teppich unter den Füßen verhindert Stürze"**
 - **Fachbegriff:** Teppich-Trugschluss
@@ -200,7 +200,7 @@
 
 ### Verknüpfte Karteikarte
 - **Vorderseite:** "Sind beidseitige Bettgitter eine Sturzprophylaxe?"
-- **Rückseite:** "Nein — sie können Sturzhöhe erhöhen. Ohne Zustimmung: freiheitsentziehende Maßnahme (§ 1906a BGB)."
+- **Rückseite:** "Nein — sie können Sturzhöhe erhöhen. Ohne Zustimmung: freiheitsentziehende Maßnahme (§ 1831 BGB)."
 - **Kategorie:** handlung
 
 ---
@@ -403,22 +403,22 @@
 
 ### Stufe 2 — Hinweis
 
-**C1 (250 Zeichen):** "Fixierung (inkl. beidseitiger Bettgitter) ist eine **freiheitsentziehende Maßnahme**. Sie braucht richterliche Genehmigung (§ 1906a BGB) oder informierte Zustimmung des Patienten. Sie ist keine Sturzprophylaxe — sie kann Verletzungen verschlimmern."
+**C1 (250 Zeichen):** "Fixierung (inkl. beidseitiger Bettgitter) ist eine **freiheitsentziehende Maßnahme**. Sie braucht richterliche Genehmigung (§ 1831 BGB) oder informierte Zustimmung des Patienten. Sie ist keine Sturzprophylaxe — sie kann Verletzungen verschlimmern."
 
-**B1 (230 Zeichen):** "Fixierung (auch beidseitige Bettgitter) ist eine **freiheitsentziehende Maßnahme**. Dafür braucht man Erlaubnis vom Gericht (§ 1906a BGB) oder vom Patienten selbst. Fixierung schützt NICHT vor Stürzen. Sie kann Verletzungen schlimmer machen."
+**B1 (230 Zeichen):** "Fixierung (auch beidseitige Bettgitter) ist eine **freiheitsentziehende Maßnahme**. Dafür braucht man Erlaubnis vom Gericht (§ 1831 BGB) oder vom Patienten selbst. Fixierung schützt NICHT vor Stürzen. Sie kann Verletzungen schlimmer machen."
 
 - **Step-Typ:** text (displayFormat: procontra — Pro/Contra Fixierung mit rechtlichen Folgen)
 
 ### Stufe 3 — Erklärung
 
 **C1 (780 Zeichen):**
-"Die rechtliche und ethische Lage ist klar: **Fixierung ist keine Sturzprophylaxe**. Der Bundesgerichtshof und § 1906a BGB stellen fest: Freiheitsentziehende Maßnahmen — dazu gehören beidseitige Bettgitter (ohne Zustimmung), Gurte, Bett-am-Boden-Schranken, sedierende 'Bedarfs-Medikation' — sind nur zulässig mit **(a) richterlicher Genehmigung** oder **(b) informierter Einwilligung des Patienten**. In akuter Eigengefährdung darf Pflege notfallmäßig fixieren, muss aber **innerhalb von 24 Stunden** richterliche Genehmigung beantragen. Warum nicht als Prophylaxe? Weil sie das Gegenteil bewirken kann: **Dokumentierte Todesfälle durch Strangulation in Gurten und Bettgittern**; Verletzungen durch Überklettern (Sturzhöhe erhöht); Muskelabbau durch Immobilität; Delir durch Überforderung. Alternativen: Niederflur-Bett, Sturzmatte, Bewegungsmelder, bauliche Anpassung, Einzelbetreuung. Merke: Fixierung ist **ultima ratio**, nicht Erstmaßnahme. (§ 1906a BGB; DNQP 2022)"
+"Die rechtliche und ethische Lage ist klar: **Fixierung ist keine Sturzprophylaxe**. Der Bundesgerichtshof und § 1831 BGB stellen fest: Freiheitsentziehende Maßnahmen — dazu gehören beidseitige Bettgitter (ohne Zustimmung), Gurte, Bett-am-Boden-Schranken, sedierende 'Bedarfs-Medikation' — sind nur zulässig mit **(a) richterlicher Genehmigung** oder **(b) informierter Einwilligung des Patienten**. In akuter Eigengefährdung darf Pflege notfallmäßig fixieren, muss aber **innerhalb von 24 Stunden** richterliche Genehmigung beantragen. Warum nicht als Prophylaxe? Weil sie das Gegenteil bewirken kann: **Dokumentierte Todesfälle durch Strangulation in Gurten und Bettgittern**; Verletzungen durch Überklettern (Sturzhöhe erhöht); Muskelabbau durch Immobilität; Delir durch Überforderung. Alternativen: Niederflur-Bett, Sturzmatte, Bewegungsmelder, bauliche Anpassung, Einzelbetreuung. Merke: Fixierung ist **ultima ratio**, nicht Erstmaßnahme. (§ 1831 BGB; DNQP 2022)"
 
 **B1 (600 Zeichen):**
-"Die Regel ist klar: **Fixierung ist keine Sturzprophylaxe**. Der § 1906a BGB sagt: Jemanden festhalten (beide Bettgitter, Gurte, Bett am Boden, Schlafmittel zum Ruhigstellen) ist nur erlaubt mit **Erlaubnis vom Gericht** oder wenn der Patient selbst zustimmt. In einem Notfall (akute Gefahr) darf Pflege fixieren — aber in **24 Stunden muss man die Erlaubnis beim Gericht beantragen**. Warum ist Fixierung keine Prophylaxe? Sie macht es oft schlimmer: Patienten sind in Bettgittern gestorben (Strangulation); Patienten klettern über Bettgitter und fallen tiefer; Muskeln werden schwächer; Delir durch Überforderung. Bessere Alternativen: Bett niedrig stellen, Sturzmatte, Bewegungsmelder. Merke: Fixierung ist die **allerletzte Möglichkeit**, nie die erste."
+"Die Regel ist klar: **Fixierung ist keine Sturzprophylaxe**. Der § 1831 BGB sagt: Jemanden festhalten (beide Bettgitter, Gurte, Bett am Boden, Schlafmittel zum Ruhigstellen) ist nur erlaubt mit **Erlaubnis vom Gericht** oder wenn der Patient selbst zustimmt. In einem Notfall (akute Gefahr) darf Pflege fixieren — aber in **24 Stunden muss man die Erlaubnis beim Gericht beantragen**. Warum ist Fixierung keine Prophylaxe? Sie macht es oft schlimmer: Patienten sind in Bettgittern gestorben (Strangulation); Patienten klettern über Bettgitter und fallen tiefer; Muskeln werden schwächer; Delir durch Überforderung. Bessere Alternativen: Bett niedrig stellen, Sturzmatte, Bewegungsmelder. Merke: Fixierung ist die **allerletzte Möglichkeit**, nie die erste."
 
 - **Erklärungs-Step:** stepType `branching` (komplexes ethisches Dilemma mit 3 Optionen, je 1-2 Folge-Steps)
-- **Glossar-Begriffe:** [Fixierung, Freiheitsentziehende Maßnahme, § 1906a BGB, informierte Einwilligung, ultima ratio]
+- **Glossar-Begriffe:** [Fixierung, Freiheitsentziehende Maßnahme, § 1831 BGB, informierte Einwilligung, ultima ratio]
 
 ### Misconceptions → Distraktoren
 
@@ -429,8 +429,8 @@
 
 **D2: "Bei Demenz darf man fixieren — die verstehen es nicht"**
 - **Fachbegriff:** Demenz-Fixierungs-Rechtfertigung
-- **Feedback (C1, 530 Zeichen):** "Nicht ganz — und rechtlich gefährlich. Bei Demenz gelten dieselben Regeln. Weil der Patient nicht selbst einwilligen kann, braucht es: (1) einen **Betreuer** (gesetzlich bestellt) UND (2) **richterliche Genehmigung** (§ 1906a BGB). Beides muss vorliegen. Ausnahme nur: **akute Eigengefährdung** (z.B. Patient will aus dem 3. Stock) — dann darf Pflege kurzfristig fixieren, aber innerhalb von **24 Stunden** muss richterliche Genehmigung beantragt werden. Demenz = mehr Schutzbedarf, nicht weniger Rechte. Merke: Demenz rechtfertigt keine Fixierung. Ohne Genehmigung: strafbar."
-- **Feedback (B1, 410 Zeichen):** "Nicht ganz — das ist falsch und gefährlich. Auch bei Demenz gelten die Regeln. Weil der Patient nicht selbst 'Ja' sagen kann, braucht man: (1) einen **Betreuer** (vom Gericht bestimmt) UND (2) **Erlaubnis vom Gericht** (§ 1906a BGB). Beides muss da sein. Nur in akuter Gefahr (Patient rennt aus dem 3. Stock) darf Pflege kurz fixieren — aber in 24 Stunden muss man die Erlaubnis beantragen. Demenz = mehr Schutz, nicht weniger Rechte."
+- **Feedback (C1, 530 Zeichen):** "Nicht ganz — und rechtlich gefährlich. Bei Demenz gelten dieselben Regeln. Weil der Patient nicht selbst einwilligen kann, braucht es: (1) einen **Betreuer** (gesetzlich bestellt) UND (2) **richterliche Genehmigung** (§ 1831 BGB). Beides muss vorliegen. Ausnahme nur: **akute Eigengefährdung** (z.B. Patient will aus dem 3. Stock) — dann darf Pflege kurzfristig fixieren, aber innerhalb von **24 Stunden** muss richterliche Genehmigung beantragt werden. Demenz = mehr Schutzbedarf, nicht weniger Rechte. Merke: Demenz rechtfertigt keine Fixierung. Ohne Genehmigung: strafbar."
+- **Feedback (B1, 410 Zeichen):** "Nicht ganz — das ist falsch und gefährlich. Auch bei Demenz gelten die Regeln. Weil der Patient nicht selbst 'Ja' sagen kann, braucht man: (1) einen **Betreuer** (vom Gericht bestimmt) UND (2) **Erlaubnis vom Gericht** (§ 1831 BGB). Beides muss da sein. Nur in akuter Gefahr (Patient rennt aus dem 3. Stock) darf Pflege kurz fixieren — aber in 24 Stunden muss man die Erlaubnis beantragen. Demenz = mehr Schutz, nicht weniger Rechte."
 
 **D3: "Fixierung ist sicherer als kein Schutz — besser als ein Sturz"**
 - **Fachbegriff:** Sicherheits-Trugschluss
@@ -438,13 +438,13 @@
 - **Feedback (B1, 410 Zeichen):** "Nicht ganz — das ist ein gefährlicher Irrtum. **In Deutschland sind Menschen in Bettgittern und Gurten gestorben** (Strangulation, Ersticken). Manche klettern über Bettgitter und fallen tiefer, schlimmer. Außerdem: Muskeln werden schwächer, Verwirrtheit kommt dazu, die Würde leidet. Bessere Alternativen: Niedriges Bett + Matte am Boden + Bewegungsmelder. Merke: Fixierung ist NICHT sicher — sie ist oft gefährlicher."
 
 ### Richtig-Feedback
-**C1 (400 Zeichen):** "Hervorragend. Du hast die rechtliche und ethische Kernregel erkannt: Fixierung ist keine Sturzprophylaxe, sondern eine freiheitsentziehende Maßnahme (§ 1906a BGB). Richtiger Weg: Mit Kollegin über Alternativen sprechen (Niederflur-Bett, Sturzmatte, Bewegungsmelder, Einzelbetreuung), ggf. mit Arzt und Betreuung über rechtlich abgesichertes Vorgehen reden. Pflegefachperson hat hier Aufklärungs- und Widerspruchs-Pflicht."
+**C1 (400 Zeichen):** "Hervorragend. Du hast die rechtliche und ethische Kernregel erkannt: Fixierung ist keine Sturzprophylaxe, sondern eine freiheitsentziehende Maßnahme (§ 1831 BGB). Richtiger Weg: Mit Kollegin über Alternativen sprechen (Niederflur-Bett, Sturzmatte, Bewegungsmelder, Einzelbetreuung), ggf. mit Arzt und Betreuung über rechtlich abgesichertes Vorgehen reden. Pflegefachperson hat hier Aufklärungs- und Widerspruchs-Pflicht."
 
-**B1 (340 Zeichen):** "Hervorragend. Du hast die Regel verstanden: Fixierung ist keine Prophylaxe — sie ist eine freiheitsentziehende Maßnahme (§ 1906a BGB). Richtiger Weg: Mit der Kollegin über bessere Lösungen sprechen (niedriges Bett, Matte am Boden, Bewegungsmelder, jemand bleibt kurz da). Als Pflegefachkraft musst du aufklären und widersprechen."
+**B1 (340 Zeichen):** "Hervorragend. Du hast die Regel verstanden: Fixierung ist keine Prophylaxe — sie ist eine freiheitsentziehende Maßnahme (§ 1831 BGB). Richtiger Weg: Mit der Kollegin über bessere Lösungen sprechen (niedriges Bett, Matte am Boden, Bewegungsmelder, jemand bleibt kurz da). Als Pflegefachkraft musst du aufklären und widersprechen."
 
 ### Verknüpfte Karteikarte
 - **Vorderseite:** "Sind beidseitige Bettgitter ohne Zustimmung Fixierung?"
-- **Rückseite:** "Ja — freiheitsentziehende Maßnahme, braucht richterliche Genehmigung (§ 1906a BGB). Keine Sturzprophylaxe."
+- **Rückseite:** "Ja — freiheitsentziehende Maßnahme, braucht richterliche Genehmigung (§ 1831 BGB). Keine Sturzprophylaxe."
 - **Kategorie:** recht
 
 ---
@@ -839,7 +839,7 @@
 
 - DNQP (2022): Expertenstandard Sturzprophylaxe in der Pflege, 2. Aktualisierung
 - WHO (2007): Global Report on Falls Prevention in Older Age
-- § 1906a BGB — Genehmigung freiheitsentziehender Maßnahmen
+- § 1831 BGB — Genehmigung freiheitsentziehender Maßnahmen
 - Cochrane Database (2023): Exercise for preventing falls in older people (Sherrington et al.)
 - Beers-Liste (2023) — potenziell inadäquate Medikation im Alter
 - EPUAP/NPIAP/PPPIA (2019) — nur bei Dekubitus-Bezug
@@ -855,8 +855,8 @@
 | Polypharmazie | ≥ 4 Dauermedikamente, eigenständiger Sturzrisikofaktor | Beers 2023 |
 | Sarkopenie | Altersbedingter Muskelkraftverlust | WHO |
 | Post-Fall-Syndrom | Sturzangst → Bewegungsvermeidung → Muskelabbau → Sturzrisiko | DNQP 2022 |
-| Fixierung | Freiheitsentziehende Maßnahme, genehmigungspflichtig | § 1906a BGB |
-| § 1906a BGB | Rechtliche Grundlage freiheitsentziehender Maßnahmen | BGB |
+| Fixierung | Freiheitsentziehende Maßnahme, genehmigungspflichtig | § 1831 BGB |
+| § 1831 BGB | Rechtliche Grundlage freiheitsentziehender Maßnahmen | BGB |
 | Timed-Up-and-Go | Schneller Test: Steh-Gang, >14s = Sturzrisiko | Podsiadlo 1991 |
 | Tinetti-Test | Balance + Gang Assessment (max 28 Punkte) | Tinetti 1986 |
 | Orthostatische Dysregulation | Blutdruckabfall beim Aufstehen → Schwindel/Sturzrisiko | Klinik |
@@ -876,5 +876,5 @@ Siehe `karteikarten-plan.md` — 13 Karten, 1 pro Baustein, FSRS-kompatibel.
 - [ ] Feedback spezifisch zur Misconception (nicht generisch)?
 - [ ] B1-Sprache: Sätze <15 Wörter, einfache Wörter?
 - [ ] Längen im Rahmen (Stufe 3: 500-800 C1, 400-600 B1)?
-- [ ] Rechtliche Genauigkeit (§ 1906a, Dokumentationspflicht)?
+- [ ] Rechtliche Genauigkeit (§ 1831, Dokumentationspflicht)?
 - [ ] Keine veralteten Empfehlungen (Homans-Zeichen, 2-Stunden-Dogma, Bettgitter-Prophylaxe)?

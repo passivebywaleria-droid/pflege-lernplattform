@@ -23,7 +23,7 @@
 - Braden B.J., Bergstrom N. (1987): Original Braden Scale
 - Cochrane Review Moore Z. (2022): Repositioning for pressure ulcer prevention
 - RKI (2023): Krankenhaus-Hygiene-Daten Prävalenz
-- § 1906a BGB (Freiheitsentziehende Maßnahmen)
+- § 1831 BGB (Freiheitsentziehende Maßnahmen)
 
 ---
 

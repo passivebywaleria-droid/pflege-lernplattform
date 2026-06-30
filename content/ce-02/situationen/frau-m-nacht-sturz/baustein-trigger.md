@@ -27,7 +27,7 @@ Ein Baustein wird **getriggert**, wenn:
 | T-04 | Phase 2, Step 2.4 `beob-04-risikofaktoren-katz` | Extrinsische Risikofaktoren nicht vollständig erkannt (< 80 % richtig) | **sturz-prophylaxe-risiken-extrinsisch** | Stufe 2–3 | Umgebungsblick trainieren (Bett-Höhe, Boden, Licht) |
 | T-05 | Phase 2, keine spezifische Step — adaptiv | Sequencer erkennt: Schüler hat das Assessment-Thema in keiner früheren Situation gesehen | **sturz-prophylaxe-assessment** | Stufe 2 | Klinische Einschätzung vs. Screening-Tools — keine Tinetti-Pflicht |
 | T-06 | Phase 3, Step 3.2 `plan-02-umgebung-anpassen` | Sequencing falsch (≥ 2 Karten in falscher Reihenfolge) | **sturz-prophylaxe-umgebung** | Stufe 2 | Umgebungsanpassung Rhythmus: Bett → Licht → Weg → Klingel → Socken |
-| T-07 | Phase 3, Step 3.3 `plan-03-fixierung-nein` | Pfad A gewählt ("Bettgitter hoch") | **sturz-prophylaxe-fixierung** | Stufe 3 (voll) | Rechtliche Aspekte + Evidenz: Bettgitter erhöhen Verletzungsrisiko. BGB § 1906a. **K.O.-Wissen.** |
+| T-07 | Phase 3, Step 3.3 `plan-03-fixierung-nein` | Pfad A gewählt ("Bettgitter hoch") | **sturz-prophylaxe-fixierung** | Stufe 3 (voll) | Rechtliche Aspekte + Evidenz: Bettgitter erhöhen Verletzungsrisiko. BGB § 1831. **K.O.-Wissen.** |
 | T-07b | Phase 3, Step 3.3 `plan-03-fixierung-nein` | Pfad C gewählt ("frag den Arzt morgen") | **sturz-prophylaxe-fixierung** | Stufe 2 (Hinweis) | Kürzer als T-07 — der Schüler ist auf dem richtigen Weg, braucht nur rechtlichen Kontext |
 | T-08 | Phase 3, Step 3.4 `plan-04-angst-adressieren` | Nach Zitat Z4 — IMMER triggern (Brilliant-ähnlich) | **sturz-prophylaxe-post-fall** | Stufe 2–3 | Post-Fall-Syndrom verstehen: Teufelskreis Angst → Immobilität → Muskelabbau |
 | T-09 | Phase 3, Step 3.5 `plan-05-interprof-team` | Matching falsch (< 80 % richtig) | **sturz-prophylaxe-team** | Stufe 2 | Interprofessionelle Rollen klären (wer macht Medikamentenreview? wer Hilfsmittel?) |
@@ -87,7 +87,7 @@ ELSE:
 Zusätzlich zum Baustein-Trigger werden beim Abschluss der Situation **Karteikarten** in das FSRS-System geladen. Karten-IDs folgen den Baustein-IDs:
 
 - `fk-sturz-medikamente` (Zolpidem + PRISCUS)
-- `fk-sturz-fixierung` (Rechtliche Grundlage § 1906a BGB)
+- `fk-sturz-fixierung` (Rechtliche Grundlage § 1831 BGB)
 - `fk-sturz-post-fall` (Teufelskreis)
 - `fk-sturz-assessment` (Klinische Einschätzung, keine Tinetti-Pflicht)
 - `fk-sturz-umgebung` (5-Punkte-Umgebungscheck)

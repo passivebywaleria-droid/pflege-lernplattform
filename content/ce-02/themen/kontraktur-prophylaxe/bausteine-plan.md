@@ -35,7 +35,7 @@
 - Gnass, I. et al. (2010): Kontrakturprävalenz bei älteren Krankenhauspatienten
 - Sackley, C.M. et al. (2008): Contracture prevalence in stroke survivors
 - Bobath, B. (1990): Hemiplegie Erwachsener — Neutral-Null-Positionierung
-- § 1906a BGB (Freiheitsentziehende Maßnahmen — Kontrakturgefahr durch Fixierung)
+- § 1831 BGB (Freiheitsentziehende Maßnahmen — Kontrakturgefahr durch Fixierung)
 - § 4 PflBG (vorbehaltene Tätigkeiten — Pflegeprozess/Bewegungsplanung)
 
 ---
@@ -128,7 +128,7 @@
 **C1 (720 Zeichen):**
 "Die Entstehung folgt einer klaren Kette: **Immobilität → Muskelverkürzung → Bindegewebsumbau → Gelenksteife.**
 
-**Schritt 1 — Immobilität:** Ein Mensch reduziert seinen Bewegungsradius. Gründe: Bettruhe nach OP, Schlaganfall, Schmerzen, Schonhaltung, demenzielle Abbauprozesse, freiheitsentziehende Maßnahmen (FeM, § 1906a BGB).
+**Schritt 1 — Immobilität:** Ein Mensch reduziert seinen Bewegungsradius. Gründe: Bettruhe nach OP, Schlaganfall, Schmerzen, Schonhaltung, demenzielle Abbauprozesse, freiheitsentziehende Maßnahmen (FeM, § 1831 BGB).
 
 **Schritt 2 — Muskelverkürzung:** Wird ein Muskel nicht mehr in seiner vollen Länge beansprucht, passt er seine Sarkomerzahl an. Er wird **kürzer und schwächer**. Der Dehnungswiderstand steigt.
 
@@ -385,7 +385,7 @@ Die **Funktionsstellung** ist die **beste Notfall-Position**. Falls ein Gelenk w
 
 ### Stufe 2 — Hinweis
 
-**C1 (255 Zeichen):** "Hochrisikogruppen: **Schlaganfall** (Hemiplegie mit dysreguliertem Muskeltonus), **Intensivpatienten** (Sedierung, Beatmung), **Demenz** (Bewegungsreduktion), **Parkinson** (Rigor), **Fixierte** (FeM § 1906a BGB), **Multimorbide Pflegeheimbewohner**."
+**C1 (255 Zeichen):** "Hochrisikogruppen: **Schlaganfall** (Hemiplegie mit dysreguliertem Muskeltonus), **Intensivpatienten** (Sedierung, Beatmung), **Demenz** (Bewegungsreduktion), **Parkinson** (Rigor), **Fixierte** (FeM § 1831 BGB), **Multimorbide Pflegeheimbewohner**."
 
 **B1 (225 Zeichen):** "Besonders gefährdet sind: **Schlaganfall**-Patienten (halbseitige Lähmung), **Intensivpatienten** (Sedierung), Menschen mit **Demenz**, mit **Parkinson**, **fixierte** Patienten und Menschen im **Pflegeheim** mit vielen Krankheiten."
 
@@ -402,7 +402,7 @@ Die **Funktionsstellung** ist die **beste Notfall-Position**. Falls ein Gelenk w
 | **Intensivpatienten** | Sedierung, Beatmung, Immobilität. Häufig Spitzfuß + Schulter-/Ellenbogen-Kontrakturen |
 | **Demenz** | Reduktion des gewohnten Bewegungsradius, demenzielle Abbauprozesse, oft kombiniert mit Schmerzvermeidung |
 | **Parkinson** | Muskulärer Rigor, verminderte Mitbewegung, Schonhaltung |
-| **Fixierte Patienten** | Freiheitsentziehende Maßnahmen (§ 1906a BGB) reduzieren Bewegung — FeM können selbst Kontrakturen verursachen |
+| **Fixierte Patienten** | Freiheitsentziehende Maßnahmen (§ 1831 BGB) reduzieren Bewegung — FeM können selbst Kontrakturen verursachen |
 | **Multimorbide Pflegeheimbewohner** | Kombination aus Schmerz, Medikamenten, Schonhaltung, geringer Aktivität |
 | **Z.n. Mammaablatio** | Schulter-Arm-Syndrom durch fehlende Nutzung der betroffenen Seite |
 | **Kinder mit Zerebralparese, Klumpfuß** | Angeborene oder frühkindliche Kontrakturursachen |
@@ -436,8 +436,8 @@ Die **Funktionsstellung** ist die **beste Notfall-Position**. Falls ein Gelenk w
 
 **D1: "Fixierung schützt den Patienten vor Stürzen UND Kontrakturen"**
 - **Fachbegriff:** Fixierungs-Schutzmythos
-- **Feedback (C1, 310 Zeichen):** "Nicht ganz — Fixierung kann **selbst Kontrakturen verursachen**, weil die Bewegung reduziert wird. Freiheitsentziehende Maßnahmen (FeM, § 1906a BGB) brauchen strenge Indikation und richterliche Genehmigung. Alternative: Niederflurbett, Bewegungsförderung, 1:1-Begleitung. Merke: Fixierung schafft Immobilität, nicht Schutz."
-- **Feedback (B1, 275 Zeichen):** "Nicht ganz — **Fixierung kann Kontrakturen machen**. Der Patient kann sich nicht mehr bewegen. Das ist schlecht für die Gelenke. Fixierung ist nur in Ausnahmen erlaubt (§ 1906a BGB, Richter muss zustimmen). Besser: **Niederflurbett**, mehr Bewegung, jemand bleibt da."
+- **Feedback (C1, 310 Zeichen):** "Nicht ganz — Fixierung kann **selbst Kontrakturen verursachen**, weil die Bewegung reduziert wird. Freiheitsentziehende Maßnahmen (FeM, § 1831 BGB) brauchen strenge Indikation und richterliche Genehmigung. Alternative: Niederflurbett, Bewegungsförderung, 1:1-Begleitung. Merke: Fixierung schafft Immobilität, nicht Schutz."
+- **Feedback (B1, 275 Zeichen):** "Nicht ganz — **Fixierung kann Kontrakturen machen**. Der Patient kann sich nicht mehr bewegen. Das ist schlecht für die Gelenke. Fixierung ist nur in Ausnahmen erlaubt (§ 1831 BGB, Richter muss zustimmen). Besser: **Niederflurbett**, mehr Bewegung, jemand bleibt da."
 
 **D2: "Nur bewegungsunfähige Patienten brauchen Kontrakturprophylaxe"**
 - **Fachbegriff:** Vollmobilitäts-Mythos

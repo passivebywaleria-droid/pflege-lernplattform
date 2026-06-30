@@ -1129,7 +1129,7 @@ Oft verbirgt sich hinter 'Lass mich in Ruhe' ein anderes Bedürfnis:
 4. **Alternativen anbieten** — 'Vielleicht nur bis zur Bettkante? Nach dem Kaffee? Mit deiner Frau?'
 5. **Dokumentieren und Arzt informieren** — bei wiederholter Ablehnung: schriftliche Entscheidung, ärztliches Gespräch
 
-**Wann ist Zwang erlaubt?** Nur bei **Einwilligungsunfähigkeit** und Gefahr im Verzug, mit richterlichem Beschluss (§ 1906a BGB). Für eine routinemäßige Mobilisation: **nie**. (§ 630d BGB, § 1906a BGB, DNQP 2020)"
+**Wann ist Zwang erlaubt?** Nur bei **Einwilligungsunfähigkeit** und Gefahr im Verzug, mit richterlichem Beschluss (§ 1831 BGB). Für eine routinemäßige Mobilisation: **nie**. (§ 630d BGB, § 1831 BGB, DNQP 2020)"
 
 **B1 (745 Zeichen):**
 "Die Mobilisation ist ein **Angebot**, keine Pflicht. Nach **§ 630d BGB** muss der Patient **zustimmen**. Er darf Nein sagen — auch zu einer guten Idee.
@@ -1153,7 +1153,7 @@ Hinter 'Lass mich in Ruhe' steckt oft etwas anderes:
 4. **Alternativen geben** — 'Vielleicht nur zur Bettkante? Nach dem Kaffee? Mit deiner Frau?'
 5. **Aufschreiben und Arzt informieren** — wenn er öfter ablehnt: schriftlich festhalten, mit dem Arzt reden
 
-**Wann ist Zwang erlaubt?** Nur wenn der Patient **nicht selbst entscheiden kann** und Gefahr in Verzug ist — mit Gerichtsbeschluss (§ 1906a BGB). Normale Mobilisation: **nie mit Zwang**."
+**Wann ist Zwang erlaubt?** Nur wenn der Patient **nicht selbst entscheiden kann** und Gefahr in Verzug ist — mit Gerichtsbeschluss (§ 1831 BGB). Normale Mobilisation: **nie mit Zwang**."
 
 - **Erklärungs-Step:** stepType `dialog` (4 Phasen: Begrüßung → Ablehnung → Ursachenklärung → Alternative)
 - **Glossar-Begriffe:** [Einwilligung, Selbstbestimmung, Einwilligungsfähigkeit, Paternalismus, Freiheitsentziehende Maßnahme]

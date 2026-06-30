@@ -29,7 +29,7 @@
 - DNQP (2017, 2. Aktualisierung 2024): Expertenstandard Dekubitusprophylaxe in der Pflege
 - DNQP (2020): Expertenstandard Erhaltung und Förderung der Mobilität in der Pflege
 - NPUAP/EPUAP/PPPIA (2019): International Pressure Injury Guideline (30-Grad-Regel, Umlagerungsrhythmus)
-- § 1906a BGB (Freiheitsentziehende Maßnahmen — ärztliche Anordnung + richterliche Genehmigung)
+- § 1831 BGB (Freiheitsentziehende Maßnahmen — ärztliche Anordnung + richterliche Genehmigung)
 - Hatch F./Maietta L. (1970er Jahre): Kinaesthetik-Grundkonzept
 - Arbeitsschutzgesetz (ArbSchG) + TRBS 2121 (rückenschonendes Arbeiten)
 
@@ -991,11 +991,11 @@ Alles wird im **Positionierungsprotokoll** aufgeschrieben."
 
 ### Stufe 2 — Hinweis
 
-**C1 (265 Zeichen):** "**Bettgitter und Fixierungen sind freiheitsentziehende Maßnahmen (FeM)**. Sie dürfen nur mit **richterlicher Genehmigung** (§ 1906a BGB) oder mit freiem Willen des Patienten angewendet werden. Ausnahme: akute Gefahrenabwehr für kurze Zeit. Erster Schritt: Alternativen prüfen."
+**C1 (265 Zeichen):** "**Bettgitter und Fixierungen sind freiheitsentziehende Maßnahmen (FeM)**. Sie dürfen nur mit **richterlicher Genehmigung** (§ 1831 BGB) oder mit freiem Willen des Patienten angewendet werden. Ausnahme: akute Gefahrenabwehr für kurze Zeit. Erster Schritt: Alternativen prüfen."
 
-**B1 (235 Zeichen):** "**Bettgitter und Fixierungen** sind **freiheitsentziehende Maßnahmen**. Das heißt: Du nimmst dem Patienten seine Freiheit. Das geht nur mit Erlaubnis vom Richter (§ 1906a BGB). Oder wenn der Patient es wirklich selbst will. Zuerst immer Alternativen suchen."
+**B1 (235 Zeichen):** "**Bettgitter und Fixierungen** sind **freiheitsentziehende Maßnahmen**. Das heißt: Du nimmst dem Patienten seine Freiheit. Das geht nur mit Erlaubnis vom Richter (§ 1831 BGB). Oder wenn der Patient es wirklich selbst will. Zuerst immer Alternativen suchen."
 
-- **Step-Typ:** text (displayFormat: quote, § 1906a BGB)
+- **Step-Typ:** text (displayFormat: quote, § 1831 BGB)
 
 ### Stufe 3 — Erklärung
 
@@ -1004,7 +1004,7 @@ Alles wird im **Positionierungsprotokoll** aufgeschrieben."
 
 **Rechtliche Grundlage:**
 - **Art. 2 Grundgesetz** schützt die Freiheit der Person.
-- **§ 1906a BGB** regelt FeM bei Betreuten: Sie sind **genehmigungspflichtig** durch das **Betreuungsgericht**, außer in akuten Gefahrensituationen (dann kurzfristig, unverzüglich richterlich nachholen).
+- **§ 1831 BGB** regelt FeM bei Betreuten: Sie sind **genehmigungspflichtig** durch das **Betreuungsgericht**, außer in akuten Gefahrensituationen (dann kurzfristig, unverzüglich richterlich nachholen).
 - **§ 239 StGB** (Freiheitsberaubung) droht bei unzulässigen Maßnahmen.
 
 **Zulässig ohne Genehmigung sind FeM nur:**
@@ -1012,14 +1012,14 @@ Alles wird im **Positionierungsprotokoll** aufgeschrieben."
 2. **Kurzzeitig** in akuter Gefahr (Selbst- oder Fremdgefährdung).
 3. Wenn **mildere Mittel** geprüft und ausgeschlossen wurden.
 
-**Werdenfelser Weg** (bundesweit etabliert): Interdisziplinäres Modell zur Reduzierung von FeM. Erster Schritt: immer **Alternativen** prüfen — Niederflurbett, Sensormatte vor dem Bett, Bewegungsmelder, individuelle Betreuung, Tagesstruktur, Schmerzbehandlung, Delirmanagement. In der Pflege-Dokumentation muss die Prüfung alternativer Maßnahmen sichtbar werden. (§ 1906a BGB, Werdenfelser Weg)"
+**Werdenfelser Weg** (bundesweit etabliert): Interdisziplinäres Modell zur Reduzierung von FeM. Erster Schritt: immer **Alternativen** prüfen — Niederflurbett, Sensormatte vor dem Bett, Bewegungsmelder, individuelle Betreuung, Tagesstruktur, Schmerzbehandlung, Delirmanagement. In der Pflege-Dokumentation muss die Prüfung alternativer Maßnahmen sichtbar werden. (§ 1831 BGB, Werdenfelser Weg)"
 
 **B1 (750 Zeichen):**
 "**Freiheitsentziehende Maßnahmen (FeM)** schränken die Freiheit des Patienten ein. Beispiele: **Bett-Gitter hoch**, **Bauch-Gurte**, **Hand-Fesseln**, ruhigstellende Medikamente, abgeschlossene Türen.
 
 **Gesetz:**
 - **Art. 2 Grundgesetz**: Jeder Mensch hat das Recht auf Freiheit.
-- **§ 1906a BGB**: FeM bei Betreuten brauchen die **Erlaubnis vom Gericht** (Betreuungs-Gericht). Nur in akuter Gefahr darfst du kurz ohne Erlaubnis handeln — aber der Richter muss sofort danach eingeschaltet werden.
+- **§ 1831 BGB**: FeM bei Betreuten brauchen die **Erlaubnis vom Gericht** (Betreuungs-Gericht). Nur in akuter Gefahr darfst du kurz ohne Erlaubnis handeln — aber der Richter muss sofort danach eingeschaltet werden.
 - **§ 239 StGB**: Wer Freiheit beraubt, macht sich strafbar.
 
 **Wann ist FeM ok?**
@@ -1038,7 +1038,7 @@ Alles wird im **Positionierungsprotokoll** aufgeschrieben."
 Die Prüfung der Alternativen musst du in der Pflege-Akte dokumentieren."
 
 - **Erklärungs-Step:** stepType `text` (displayFormat: stepbystep)
-- **Glossar-Begriffe:** [Freiheitsentziehende Maßnahmen, FeM, § 1906a BGB, Werdenfelser Weg, Niederflurbett]
+- **Glossar-Begriffe:** [Freiheitsentziehende Maßnahmen, FeM, § 1831 BGB, Werdenfelser Weg, Niederflurbett]
 - **TTS-relevant:** ja
 
 ### Misconceptions → Distraktoren
@@ -1059,13 +1059,13 @@ Die Prüfung der Alternativen musst du in der Pflege-Akte dokumentieren."
 - **Feedback (B1, 265 Zeichen):** "Nicht ganz — bei akuter Gefahr darfst du **kurz** handeln (Stunden bis wenige Tage), aber nicht lange. Du musst **sofort** den Richter informieren. Bett-Gitter für Wochen ohne Erlaubnis ist strafbar (§ 239 StGB). Merke: Akut = kurz. Danach Richter."
 
 ### Richtig-Feedback
-**C1 (295 Zeichen):** "Sehr gut. Du zögerst zu Recht. Bettgitter ist eine FeM, die rechtlich genehmigt werden muss (§ 1906a BGB). Erste Schritte: Alternativen prüfen (Niederflurbett, Sensormatte, mehr Betreuung), Ursachen angehen (Delir? Schmerz? Angst?), im Team und mit Angehörigen besprechen, dokumentieren. Erst dann ggf. Betreuungsgericht."
+**C1 (295 Zeichen):** "Sehr gut. Du zögerst zu Recht. Bettgitter ist eine FeM, die rechtlich genehmigt werden muss (§ 1831 BGB). Erste Schritte: Alternativen prüfen (Niederflurbett, Sensormatte, mehr Betreuung), Ursachen angehen (Delir? Schmerz? Angst?), im Team und mit Angehörigen besprechen, dokumentieren. Erst dann ggf. Betreuungsgericht."
 
-**B1 (260 Zeichen):** "Sehr gut. Dein Zögern ist richtig. Bett-Gitter ist eine FeM. Das Gesetz (§ 1906a BGB) sagt: Erst Alternativen prüfen. Nieder-Flur-Bett, Sensor-Matte, mehr Betreuung. Auch: Ursache suchen (Schmerz? Verwirrung? Angst?). Alles dokumentieren. Am Ende: Richter entscheidet."
+**B1 (260 Zeichen):** "Sehr gut. Dein Zögern ist richtig. Bett-Gitter ist eine FeM. Das Gesetz (§ 1831 BGB) sagt: Erst Alternativen prüfen. Nieder-Flur-Bett, Sensor-Matte, mehr Betreuung. Auch: Ursache suchen (Schmerz? Verwirrung? Angst?). Alles dokumentieren. Am Ende: Richter entscheidet."
 
 ### Verknüpfte Karteikarte
 - **Vorderseite:** "Warum ist ein hochgezogenes Bettgitter eine freiheitsentziehende Maßnahme — und welche 3 Alternativen gibt es (Werdenfelser Weg)?"
-- **Rückseite:** "Bettgitter hindert den Patienten am Verlassen des Bettes ohne seine echte Zustimmung (FeM, § 1906a BGB). Alternativen: 1. Niederflurbett (nah am Boden). 2. Sensormatte vor dem Bett. 3. Mehr Betreuung/Aktivierung. Zusätzlich: Ursachensuche (Delir, Schmerz)."
+- **Rückseite:** "Bettgitter hindert den Patienten am Verlassen des Bettes ohne seine echte Zustimmung (FeM, § 1831 BGB). Alternativen: 1. Niederflurbett (nah am Boden). 2. Sensormatte vor dem Bett. 3. Mehr Betreuung/Aktivierung. Zusätzlich: Ursachensuche (Delir, Schmerz)."
 - **Kategorie:** recht
 
 ---
@@ -1183,7 +1183,7 @@ Die Prüfung der Alternativen musst du in der Pflege-Akte dokumentieren."
 1. **DNQP (2017, 2. Aktualisierung 2024)** — Expertenstandard Dekubitusprophylaxe in der Pflege
 2. **DNQP (2020)** — Expertenstandard Erhaltung und Förderung der Mobilität
 3. **NPUAP/EPUAP/PPPIA (2019)** — International Pressure Injury Clinical Practice Guideline
-4. **§ 1906a BGB** — Genehmigung freiheitsentziehender Maßnahmen durch Betreuungsgericht
+4. **§ 1831 BGB** — Genehmigung freiheitsentziehender Maßnahmen durch Betreuungsgericht
 5. **§ 630f BGB** — Dokumentationspflicht im Behandlungsvertrag
 6. **Hatch F. / Maietta L. (1970er Jahre)** — Kinaesthetik-Grundkonzept
 7. **§ 3, § 15 Arbeitsschutzgesetz (ArbSchG)** — Arbeitsschutzpflicht

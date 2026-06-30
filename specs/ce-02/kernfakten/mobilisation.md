@@ -333,7 +333,7 @@
 **Prüfungsrelevanz:** sehr hoch
 **Wissensart:** Recht + Entscheidung
 **Bloom-Potential:** 5 (Bewerten)
-**Primärquelle:** (Pflege heute 7. Aufl.; § 630d BGB; § 223 StGB; PflBG) — SACHKORREKTUR 2026-06-11: „§ 1906a BGB" entfernt (Norm seit 1.1.2023 aufgehoben; regelte ärztliche Zwangsmaßnahmen [heute § 1832 BGB], war hier ohnehin nicht einschlägig — der Fakt stützt sich auf Einwilligung § 630d BGB)
+**Primärquelle:** (Pflege heute 7. Aufl.; § 630d BGB; § 223 StGB; PflBG) — SACHKORREKTUR 2026-06-11: „§ 1831 BGB" entfernt (Norm seit 1.1.2023 aufgehoben; regelte ärztliche Zwangsmaßnahmen [heute § 1832 BGB], war hier ohnehin nicht einschlägig — der Fakt stützt sich auf Einwilligung § 630d BGB)
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "ihre Selbstständigkeit und Selbstbestimmung gefördert"

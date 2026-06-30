@@ -111,7 +111,7 @@ Diese sind ready für Weiterverarbeitung durch die Pipeline (Regisseur → Gener
 
 4. **Patient ist lebendig:** Frau M. ist medizinisch plausibel, emotional authentisch. 6 Zitate über Phasen verteilt zeigen Heilungsverlauf (Scham → Durchbruch).
 
-5. **Rechtliche Präzision:** § 1906a BGB, 24h-Notfallfrist, PRISCUS 2.0 (Zolpidem-Kritik) — alle aktuell korrekt.
+5. **Rechtliche Präzision:** § 1831 BGB, 24h-Notfallfrist, PRISCUS 2.0 (Zolpidem-Kritik) — alle aktuell korrekt.
 
 ### Was noch Raum hat
 

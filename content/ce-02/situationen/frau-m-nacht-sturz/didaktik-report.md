@@ -31,7 +31,7 @@
 ## Pro Block
 
 ### Block U (Urheberrecht) — 1 K.O.
-- **U1 Abstandstest I Care:** PASS — keine "I Care S.XX"-Referenzen. Quellen: DNQP 2022, PRISCUS 2.0 (Holt et al. 2023), Beers-Liste 2023, § 1906a BGB, SBAR-Standard, Kinästhetik-Prinzipien, Fiechter/Meier Pflegeprozess, Cochrane 2023, Leitlinien Herz-Kreislauf-Diagnostik
+- **U1 Abstandstest I Care:** PASS — keine "I Care S.XX"-Referenzen. Quellen: DNQP 2022, PRISCUS 2.0 (Holt et al. 2023), Beers-Liste 2023, § 1831 BGB, SBAR-Standard, Kinästhetik-Prinzipien, Fiechter/Meier Pflegeprozess, Cochrane 2023, Leitlinien Herz-Kreislauf-Diagnostik
 
 ### Block F (Fakten-Treue) — 3 K.O.
 - **F7 Fachliche Korrektheit:** PASS
@@ -40,7 +40,7 @@
   - Sturzrisiko 2-3x ✓ (konsistent mit Baustein 6)
   - Orthostase-Cutoff ≥20/10 mmHg ✓
   - TUG >14s ✓
-  - § 1906a BGB + 24h-Regel ✓
+  - § 1831 BGB + 24h-Regel ✓
   - Hüftfraktur-Zeichen (Verkürzung + Außenrotation) ✓
   - Muskelabbau 1-2%/Tag bei Immobilität (konsistent mit Baustein 9) ✓
   - Cochrane -24% Sturzrate ✓
@@ -140,7 +140,7 @@
 
 ### Block CQ (Tonalität + Glossar) — 3 Kriterien
 - **CQ-T2 Verbotene Füllsätze:** PASS
-- **CQ-G1 Glossar-Vollständigkeit:** PASS — Fachbegriffe in Steps haben Gegenstücke im Thema-Glossar (Polypharmazie, Orthostatische Dysregulation, Fixierung, § 1906a BGB, Post-Fall-Syndrom, Hüftprotektor, Sturzprotokoll, Intrinsisch/Extrinsisch, Interprofessionell)
+- **CQ-G1 Glossar-Vollständigkeit:** PASS — Fachbegriffe in Steps haben Gegenstücke im Thema-Glossar (Polypharmazie, Orthostatische Dysregulation, Fixierung, § 1831 BGB, Post-Fall-Syndrom, Hüftprotektor, Sturzprotokoll, Intrinsisch/Extrinsisch, Interprofessionell)
 - **CQ-G2 B1-Alltagswörter:** PASS
 
 ### Block WB (Wissensbausteine) — siehe separaten Thema-Report
@@ -197,6 +197,6 @@ Keine.
 
 **PASS — ready für Manifest-Status `"geprueft"`.**
 
-Die Lernsituation Frau M. ist fachlich exzellent, pflegedidaktisch strukturiert entlang des 6-Phasen-Pflegeprozesses, emotional differenziert und rechtlich präzise (§ 1906a BGB). Der Patient Marianne M. ist durchgehend konsistent, die 6 Zitate schaffen authentische Präsenz. Die zwei Haupt-Branchings (Bettgitter + Toilette) sind didaktische Herzstücke mit hohem Prüfungswert. Das Sturzprotokoll-Freetext (Bloom 6) bildet einen gerechten Session-Abschluss.
+Die Lernsituation Frau M. ist fachlich exzellent, pflegedidaktisch strukturiert entlang des 6-Phasen-Pflegeprozesses, emotional differenziert und rechtlich präzise (§ 1831 BGB). Der Patient Marianne M. ist durchgehend konsistent, die 6 Zitate schaffen authentische Präsenz. Die zwei Haupt-Branchings (Bettgitter + Toilette) sind didaktische Herzstücke mit hohem Prüfungswert. Das Sturzprotokoll-Freetext (Bloom 6) bildet einen gerechten Session-Abschluss.
 
 Das Brilliant-Prinzip (Step 2.1 Medikamenten-Highlight BEVOR Zolpidem erklärt wird) ist lehrbuchreif umgesetzt. Die Confidence-Vorher/Nachher-Spiegel-Struktur (Step 1.2 ↔ 5.3) macht Lernen sichtbar. Der Patient-Zitat-Bogen (erste Entschuldigung → "wie in Watte" → "Es waren die Tabletten") zeigt eine komplette Post-Fall-Erholung.

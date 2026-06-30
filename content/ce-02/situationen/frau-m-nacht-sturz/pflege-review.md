@@ -11,9 +11,9 @@
 ### F-01 (HOCH): Paragraphen-Inkonsistenz bei Fixierung/Bettgitter
 
 - **Stelle:** phase-planen.ts, Step `plan-02b-fixierung-recht` (inlineWissen) vs. Step `plan-03-fixierung-nein` (branching)
-- **Problem:** Der Inline-Wissen-Baustein referenziert korrekt **ss 1831 BGB** (Neufassung ab 01.01.2023, ersetzt ss 1906a). Der direkt folgende Branching-Step zitiert aber in `quellen`, `glossarBegriffe` und allen 3 Feedback-Texten noch den **alten ss 1906a BGB**. Schueler lesen im Wissensbaustein "ss 1831 BGB" und im naechsten Step "ss 1906a BGB" -- das erzeugt Verwirrung und ist juristisch inkorrekt (ss 1906a existiert seit 2023 nicht mehr in dieser Form).
-- **Standard-Verweis:** Betreuungsrechtsreform 2023, ss 1831 BGB (neu) ersetzt ss 1906a BGB (alt)
-- **Empfehlung:** In `plan-03-fixierung-nein` alle Vorkommen von "ss 1906a BGB" durch "ss 1831 BGB" ersetzen -- in `quellen`, `glossarBegriffe` (beide C1 und B1), und saemtlichen `feedback`/`feedbackB1`-Texten der 3 Branching-Optionen.
+- **Problem:** Der Inline-Wissen-Baustein referenziert korrekt **ss 1831 BGB** (Neufassung ab 01.01.2023, ersetzt ss 1831). Der direkt folgende Branching-Step zitiert aber in `quellen`, `glossarBegriffe` und allen 3 Feedback-Texten noch den **alten ss 1831 BGB**. Schueler lesen im Wissensbaustein "ss 1831 BGB" und im naechsten Step "ss 1831 BGB" -- das erzeugt Verwirrung und ist juristisch inkorrekt (ss 1831 existiert seit 2023 nicht mehr in dieser Form).
+- **Standard-Verweis:** Betreuungsrechtsreform 2023, ss 1831 BGB (neu) ersetzt ss 1831 BGB (alt)
+- **Empfehlung:** In `plan-03-fixierung-nein` alle Vorkommen von "ss 1831 BGB" durch "ss 1831 BGB" ersetzen -- in `quellen`, `glossarBegriffe` (beide C1 und B1), und saemtlichen `feedback`/`feedbackB1`-Texten der 3 Branching-Optionen.
 
 ### F-02 (HOCH): NRS-Werte inkonsistent zwischen Phasen
 
@@ -58,7 +58,7 @@
 ## Cross-Step-Probleme
 
 1. **NRS-Verlauf** (F-02): Hauptproblem. 6 -> 4 -> 5 -> 2 waere plausibel, aber Phase 5 behauptet "von 8 vorher" -- das stimmt mit keinem vorherigen Step ueberein.
-2. **Paragraphen-Widerspruch** (F-01): Inline-Wissen sagt ss 1831, Branching sagt ss 1906a -- direkt hintereinander.
+2. **Paragraphen-Widerspruch** (F-01): Inline-Wissen sagt ss 1831, Branching sagt ss 1831 -- direkt hintereinander.
 3. **Katarakt beidseits/rechts** (F-03): Minor, aber Patient-Daten muessen konsistent sein.
 4. **Pflegewagen ↔ MC Hueftprotektor**: Vorheriger Review-Fix (F-10 alt) korrekt umgesetzt -- Pflegewagen markiert Hueftprotektor als "weglegen", MC erklaert warum. Konsistenz jetzt gegeben.
 
@@ -84,13 +84,13 @@
 
 ## Zusammenfassung
 
-- **2 Findings HOCH** (ss 1831/1906a-Widerspruch + NRS-Inkonsistenz)
+- **2 Findings HOCH** (ss 1831/1831-Widerspruch + NRS-Inkonsistenz)
 - **3 Findings MITTEL** (Katarakt beidseits/rechts [GEFIXT], TrueFalse mehrdeutig [GEFIXT], Zolpidem-Dosis-Hinweis fehlt [GEFIXT])
 - **2 Findings NIEDRIG** (Schellong-Zeitspanne [GEFIXT], Cochrane-Referenz unbelegt [GEFIXT])
 - **11 Inline-Wissen-Bausteine:** Fachlich korrekt, gut eingebettet, Spektrum-Diversitaet stark
 - **Vorherige Findings (Pass 1):** Alle gefixt, keine Regressionen erkannt (Licht, Kinaesthetik, Schmerz-Bagatellisierung, Hueftprotektor-Cross-Step)
 - **Positiv:** SBAR durchgehend korrekt, Kinaesthetik-Anti-Patterns sauber, Sandwich-Feedback konsistent in B1, Dialog-Optionen realistisch (keine Karikaturen), Pflegewagen-Step fachlich korrekt, Fixierungs-Wissensbaustein juristisch praezise
 
-**K.O.-Verdikt: FAIL** (2 HOCH-Findings ungeloest: ss 1831/1906a-Widerspruch und NRS-Cross-Step-Inkonsistenz)
+**K.O.-Verdikt: FAIL** (2 HOCH-Findings ungeloest: ss 1831/1831-Widerspruch und NRS-Cross-Step-Inkonsistenz)
 
 *Nach Fix der 2 HOCH-Findings: Re-Review empfohlen, dann voraussichtlich PASS.*

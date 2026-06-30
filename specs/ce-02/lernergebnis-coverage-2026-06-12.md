@@ -13,7 +13,7 @@
 > | 9 Ausscheidung | 6 | 7 | 1 → **0** (W1 äußere Genitalorgane nachgebaut) |
 > | **Σ** | **~51** | **~24** | **13 → 0** |
 >
-> **Recheck-Fixes (2026-06-13):** LE8 W6 → `saeuglingspflege-saug-schluck-stoerung` (B21); LE9 W1 → `harnausscheidung-aeussere-genitalorgane` (B22); LE5 E1 „diskutieren" → echter reflection-Step `ce02-kovac-dok-035-aufwand-nutzen-reflexion`; Rechtsstand §1906a→§1831 BGB.
+> **Recheck-Fixes (2026-06-13):** LE8 W6 → `saeuglingspflege-saug-schluck-stoerung` (B21); LE9 W1 → `harnausscheidung-aeussere-genitalorgane` (B22); LE5 E1 „diskutieren" → echter reflection-Step `ce02-kovac-dok-035-aufwand-nutzen-reflexion`; Rechtsstand §1831→§1831 BGB.
 >
 > **Verbleibende TEILWEISE sind by-design / nicht-FEHLT:** (a) motorische Können-Ziele (Blutdruck messen, Katheter/Stoma/Beutel wechseln, UAG demonstrieren) — Plattform deckt nur kognitiv vor, Handausführung bleibt Praxis; (b) „aller Altersstufen"-Breite in einzelnen Ziele weiterhin erwachsenen-/geriatrie-betont; (c) wenige Wissens-Bündelungen (W5 Pflegediagnose-Funktion, W8 Mangelernährung↔Dekubitus-Kausalkette, soziale Dimension Bewegungseinschränkung) — Inhalt verstreut vorhanden, nicht als eigener Step gebündelt. Keine davon blockiert „0 FEHLT".
 

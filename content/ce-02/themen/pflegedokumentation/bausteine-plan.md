@@ -1122,9 +1122,9 @@ Danach weiter mit **S-B-A-R**: Situation, Background, Assessment, Recommendation
 
 ### Stufe 2 — Hinweis
 
-**C1 (290 Zeichen):** "Dieser Eintrag hat **mehrere Fehler**: (1) **Wertung** ('typisch'), (2) **unsachliche Sprache** ('gerast', 'hört nicht zu'), (3) **fehlende Zeit/Fakten** (wann, wo, wie), (4) **Spekulation statt Handlung** ('Hätten wir...'), (5) **Fixierungsfrage** ist **rechtlich heikel** (§ 1906a BGB)."
+**C1 (290 Zeichen):** "Dieser Eintrag hat **mehrere Fehler**: (1) **Wertung** ('typisch'), (2) **unsachliche Sprache** ('gerast', 'hört nicht zu'), (3) **fehlende Zeit/Fakten** (wann, wo, wie), (4) **Spekulation statt Handlung** ('Hätten wir...'), (5) **Fixierungsfrage** ist **rechtlich heikel** (§ 1831 BGB)."
 
-**B1 (255 Zeichen):** "Der Eintrag hat **viele Fehler**: (1) **Wertung** ('typisch'), (2) **unsachlich** ('gerast', 'hört nicht zu'), (3) **keine Zeit** oder **genaue Infos**, (4) **Frage statt Fakten** ('Hätten wir...'), (5) **Fixierung** ist **rechtlich schwierig** (§ 1906a BGB)."
+**B1 (255 Zeichen):** "Der Eintrag hat **viele Fehler**: (1) **Wertung** ('typisch'), (2) **unsachlich** ('gerast', 'hört nicht zu'), (3) **keine Zeit** oder **genaue Infos**, (4) **Frage statt Fakten** ('Hätten wir...'), (5) **Fixierung** ist **rechtlich schwierig** (§ 1831 BGB)."
 
 - **Step-Typ:** errorspot (Fehler markieren lassen)
 
@@ -1137,7 +1137,7 @@ Danach weiter mit **S-B-A-R**: Situation, Background, Assessment, Recommendation
 2. **'Gerast'** — **unsachlich**. Konkret: '9:30 Uhr im Flur zwischen Zimmer 12 und Schwesternzimmer mit Gehwagen in gesteigertem Tempo gegangen.'
 3. **'Hört einfach nicht zu'** — **Urteil**. Besser: 'Auf Ansprache, langsamer zu gehen, reagierte Herr S. nicht.'
 4. **'Hätten wir...'** — **Spekulation statt Dokumentation**. Gehört nicht in den Pflegebericht. Solche Fragen gehören in **Fallbesprechung oder Pflegevisite**.
-5. **'Fixieren'** — **Fixierung ist letzte Maßnahme** (§ 1906a BGB) und braucht richterliche Genehmigung bei länger als kurzzeitig. In der Dokumentation gehört **keine unreflektierte Fixierungsfrage**.
+5. **'Fixieren'** — **Fixierung ist letzte Maßnahme** (§ 1831 BGB) und braucht richterliche Genehmigung bei länger als kurzzeitig. In der Dokumentation gehört **keine unreflektierte Fixierungsfrage**.
 
 **Korrekte Dokumentation**:
 '**15.04.2026, 9:35 Uhr**: Herr S. fiel im Flur zwischen Zimmer 12 und Schwesternzimmer. Er ging mit seinem Rollator in zügigem Tempo. Auf meine Bitte, langsamer zu gehen, reagierte er nicht sofort. Er stolperte über die Türschwelle und fiel auf die rechte Seite. Keine sichtbaren Verletzungen, Blutdruck 130/80, Puls 78. Arzt Dr. Meyer informiert um 9:40. Sturzprotokoll ausgefüllt. (Schw. Demir)'"
@@ -1149,13 +1149,13 @@ Danach weiter mit **S-B-A-R**: Situation, Background, Assessment, Recommendation
 2. **'Gerast'** — **unsachlich**. Besser: 'ging schnell'. Und: **Wann**? **Wo**?
 3. **'Hört nicht zu'** — **Meinung**. Besser: 'Auf meine Bitte reagierte er nicht sofort.'
 4. **'Hätten wir...'** — **Fragen gehören nicht in den Bericht**. Solche Fragen besprichst du im **Team**, nicht im Bericht.
-5. **'Fixieren'** — **Fixierung ist letzte Maßnahme**. Das Gesetz (§ 1906a BGB) sagt: Man braucht einen **Richter**, wenn lange. Schreib so was **nicht** einfach in den Bericht.
+5. **'Fixieren'** — **Fixierung ist letzte Maßnahme**. Das Gesetz (§ 1831 BGB) sagt: Man braucht einen **Richter**, wenn lange. Schreib so was **nicht** einfach in den Bericht.
 
 **So sollte es richtig aussehen**:
 '**15.04.2026, 9:35 Uhr**: Herr S. fiel im Flur zwischen Zimmer 12 und Schwesternzimmer. Er ging mit dem Rollator **schnell**. Ich bat ihn, langsamer zu gehen. Er reagierte nicht sofort. Er **stolperte** über die Türschwelle und fiel auf die **rechte Seite**. **Keine Verletzungen sichtbar**. Blutdruck **130/80**, Puls **78**. Arzt **Dr. Meyer** informiert um **9:40**. **Sturzprotokoll** ausgefüllt. **(Schw. Demir)**'"
 
 - **Erklärungs-Step:** stepType `text` (displayFormat: beforeafter)
-- **Glossar-Begriffe:** [Fixierung, § 1906a BGB, Sturzprotokoll]
+- **Glossar-Begriffe:** [Fixierung, § 1831 BGB, Sturzprotokoll]
 - **TTS-relevant:** ja
 
 ### Misconceptions → Distraktoren
@@ -1216,7 +1216,7 @@ Gruppiert: **Bloom 1-2: 14%, Bloom 3-4: 64%, Bloom 5-6: 14%** — innerhalb Pipe
 - § 267 StGB (Baustein 11)
 - § 34 StGB (Baustein 12)
 - § 6 IfSG (Baustein 12)
-- § 1906a BGB (Baustein 14)
+- § 1831 BGB (Baustein 14)
 - § 132a SGB V (Baustein 1)
 - Leonard et al. 2004 (Baustein 6, 13)
 - WHO 2007 (Baustein 8)

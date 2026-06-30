@@ -104,7 +104,7 @@
 - **Rückseite (B1)**: Selbstbestimmung nach § 630d BGB. Vorgehen: zuhören → Grund fragen (Schmerz? Angst? Traurig?) → aufklären → Alternativen anbieten → aufschreiben → bei immer wieder Ablehnung: Arzt informieren. Kein Zwang — das wäre Körperverletzung (§ 223 StGB).
 - **Kategorie**: recht
 - **Prüfungsrelevant**: ja
-- **Quellenreferenz**: Vgl. § 630d BGB; § 1906a BGB; § 223 StGB
+- **Quellenreferenz**: Vgl. § 630d BGB; § 1831 BGB; § 223 StGB
 
 ## Karte 13 — SMART-Ziel formulieren
 - **Vorderseite**: Formuliere ein SMART-Mobilisationsziel für Frau M., 70 Jahre, 3 Tage nach Hüft-TEP.

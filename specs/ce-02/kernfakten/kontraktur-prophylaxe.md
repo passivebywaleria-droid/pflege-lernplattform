@@ -139,7 +139,7 @@
 - Zitat: "59,1 % der älteren pflegebedürftigen Menschen" ✅ MATCH (MDS 2018; im Quelltext: "Im ambulanten Be-" / "reich sind 59,1 % ...")
 - Zitat: "Bei Schlaganfallbetroﬀenen tritt eine Kontraktur häufiger" ✅ MATCH (Sackley et al. 2008; Forts.: "auf als ein Sturz")
 - Quelle: `leitlinien-volltext/bgb-1831.txt`
-- Zitat: "Bürgerliches Gesetzbuch (BGB) § 1831 Freiheitsentziehende Unterbringung und freiheitsentziehende Maßnahmen" — aktuelle FeM-Rechtsgrundlage (seit 1.1.2023; SACHKORREKTUR: vorher fälschlich „§ 1906a BGB" — diese Norm regelte ärztliche Zwangsmaßnahmen und ist aufgehoben)
+- Zitat: "Bürgerliches Gesetzbuch (BGB) § 1831 Freiheitsentziehende Unterbringung und freiheitsentziehende Maßnahmen" — aktuelle FeM-Rechtsgrundlage (seit 1.1.2023; SACHKORREKTUR: vorher fälschlich „§ 1831 BGB" — diese Norm regelte ärztliche Zwangsmaßnahmen und ist aufgehoben)
 **Praxisfehler:** Annahme "nur bewegungsunfähige Patienten brauchen Prophylaxe" — schon eine Reduktion des gewohnten Bewegungsradius reicht.
 **Transfer:** [Transfer] Wer früher spazieren ging und jetzt nur noch sitzt, ist bereits gefährdet — weniger Bewegung als früher = Risiko.
 

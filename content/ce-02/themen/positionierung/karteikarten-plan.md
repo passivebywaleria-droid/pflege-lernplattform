@@ -127,7 +127,7 @@
 ## Karteikarte 12 (K12) — verknüpft mit Baustein 12
 
 - **Vorderseite:** "Warum ist ein hochgezogenes Bettgitter eine freiheitsentziehende Maßnahme — und welche 3 Alternativen gibt es (Werdenfelser Weg)?"
-- **Rückseite:** "Bettgitter hindert den Patienten am Verlassen des Bettes ohne seine echte Zustimmung → FeM, genehmigungspflichtig nach § 1906a BGB. Alternativen: 1. Niederflurbett (nah am Boden). 2. Sensormatte vor dem Bett. 3. Mehr Betreuung/Aktivierung. Zusätzlich: Ursachensuche (Delir, Schmerz, Durst)."
+- **Rückseite:** "Bettgitter hindert den Patienten am Verlassen des Bettes ohne seine echte Zustimmung → FeM, genehmigungspflichtig nach § 1831 BGB. Alternativen: 1. Niederflurbett (nah am Boden). 2. Sensormatte vor dem Bett. 3. Mehr Betreuung/Aktivierung. Zusätzlich: Ursachensuche (Delir, Schmerz, Durst)."
 - **Kategorie:** recht
 - **Prüfungsrelevant:** ja
 
@@ -177,4 +177,4 @@
 - [x] **Kategorien** verteilt auf fachbegriff, fakt, handlung, recht (keine nur einer Kategorie)
 - [x] **Rückseite eigenständig verständlich** ohne Zugriff auf Baustein
 - [x] **ANREDE** — keine du/Sie-Dissonanz (Karten sind fragend, nicht anredend)
-- [x] **Primärquellen** in rechtlichen Karten genannt (§ 630f BGB, § 1906a BGB, § 3 ArbSchG)
+- [x] **Primärquellen** in rechtlichen Karten genannt (§ 630f BGB, § 1831 BGB, § 3 ArbSchG)

@@ -58,8 +58,8 @@
 
 #### F-P-06 (NIEDRIG): Plan-Wording „Bettgitter erhöhen Sturzhöhe"
 - **Stelle:** `phasen-plan.md` Zeile 73 (Step 3.3)
-- **Problem:** Sachlich richtig, aber unvollständig — Bettgitter beidseitig hoch ohne richterliche Genehmigung gilt als Fixierung (BGB § 1906a). Plan erwähnt das in Pfad B („richterliche Genehmigung oder Einwilligung"), aber Pfad A-Falsch-Feedback fokussiert nur auf Verletzungsrisiko. Rechtliche Komponente sollte stärker.
-- **Standard-Verweis:** BGB § 1906a, BGH-Rechtsprechung zur Fixierung.
+- **Problem:** Sachlich richtig, aber unvollständig — Bettgitter beidseitig hoch ohne richterliche Genehmigung gilt als Fixierung (BGB § 1831). Plan erwähnt das in Pfad B („richterliche Genehmigung oder Einwilligung"), aber Pfad A-Falsch-Feedback fokussiert nur auf Verletzungsrisiko. Rechtliche Komponente sollte stärker.
+- **Standard-Verweis:** BGB § 1831, BGH-Rechtsprechung zur Fixierung.
 - **Empfehlung:** Im Plan bereits OK abgedeckt — Generator hat nach didaktik-report.md F10 (PASS) auch rechtlichen Aspekt eingebaut. Kein K.O.
 
 ### Cross-Step Konsistenz

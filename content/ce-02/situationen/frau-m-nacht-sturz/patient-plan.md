@@ -137,4 +137,4 @@ Du bist **Pflegeschülerin im 2. Ausbildungsdrittel**. Es ist **Nachtdienst** (a
 - WHO (2007): Global Report on Falls Prevention in Older Age
 - Holt S., Schmiedl S., Thürmann P.A. (2023): PRISCUS-2.0-Liste
 - Hoehn M., Yahr M. (1967): Parkinsonism — onset, progression, and mortality, Neurology
-- BGB § 1906a (Genehmigung freiheitsentziehender Maßnahmen)
+- BGB § 1831 (Genehmigung freiheitsentziehender Maßnahmen)

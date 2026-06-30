@@ -105,9 +105,9 @@
 - **AR:** الطفح التقبضي
 
 ### 14. Freiheitsentziehende Maßnahme (FeM)
-- **Definition (C1):** Maßnahme, die die Bewegungsfreiheit eines Patienten einschränkt (Gurte, Bettgitter, Medikamente). Benötigt nach § 1906a BGB Einwilligung oder richterliche Genehmigung. Kann selbst Kontrakturen verursachen.
-- **Definition (B1):** Etwas, das den Patienten **festhält** — zum Beispiel Gurte, Bettgitter oder bestimmte Medikamente. Ein Richter muss zustimmen (§ 1906a BGB). FeM können **selbst Kontrakturen machen**.
-- **Quelle:** § 1906a BGB; BGB-Kommentar
+- **Definition (C1):** Maßnahme, die die Bewegungsfreiheit eines Patienten einschränkt (Gurte, Bettgitter, Medikamente). Benötigt nach § 1831 BGB Einwilligung oder richterliche Genehmigung. Kann selbst Kontrakturen verursachen.
+- **Definition (B1):** Etwas, das den Patienten **festhält** — zum Beispiel Gurte, Bettgitter oder bestimmte Medikamente. Ein Richter muss zustimmen (§ 1831 BGB). FeM können **selbst Kontrakturen machen**.
+- **Quelle:** § 1831 BGB; BGB-Kommentar
 - **TR:** Özgürlüğü kısıtlayıcı önlem
 - **AR:** إجراء مقيِّد للحرية
 
@@ -118,7 +118,7 @@
 - [x] **14 Glossar-Einträge** (Soll: 4-6 bei 3 UE — bewusst erweitert, weil das Thema viele Fachbegriffe hat)
 - [x] **Alle neuen Fachbegriffe aus den Bausteinen** erfasst
 - [x] **C1 + B1 Definition** pro Eintrag
-- [x] **Primärquelle** pro Eintrag (AAOS, Bobath 1990, § 1906a BGB, DNQP, MDS)
+- [x] **Primärquelle** pro Eintrag (AAOS, Bobath 1990, § 1831 BGB, DNQP, MDS)
 - [x] **TR + AR** Übersetzungen für später (Placeholder für Multilingual-Ausbau)
 - [x] **Echte Umlaute** ä, ö, ü, ß
 - [x] **Keine I-Care-Referenzen** im Text — eigene Formulierungen

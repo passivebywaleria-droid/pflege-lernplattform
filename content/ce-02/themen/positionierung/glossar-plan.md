@@ -245,9 +245,9 @@
 ## Eintrag 24: Freiheitsentziehende Maßnahmen (FeM)
 
 - **Begriff:** Freiheitsentziehende Maßnahmen (FeM)
-- **Definition (C1):** "Maßnahmen, die die Bewegungsfreiheit einer Person einschränken, z.B. hochgezogene Bettgitter, Bauchgurte, Handgelenks-Fixierungen, sedierende Medikamente zum Ruhigstellen. Genehmigungspflichtig durch das Betreuungsgericht (§ 1906a BGB). Alternativen nach dem Werdenfelser Weg: Niederflurbett, Sensormatte, Bewegungsmelder, individuelle Betreuung."
-- **Definition (B1):** "Maßnahmen, die einem Patienten die Freiheit nehmen. Zum Beispiel: Bett-Gitter hoch, Bauch-Gurt, Hand-Fesseln, ruhigstellende Medikamente. Erlaubnis kommt vom Richter (Betreuungs-Gericht, § 1906a BGB). Zuerst immer Alternativen prüfen."
-- **Quelle:** § 1906a BGB; Werdenfelser Weg
+- **Definition (C1):** "Maßnahmen, die die Bewegungsfreiheit einer Person einschränken, z.B. hochgezogene Bettgitter, Bauchgurte, Handgelenks-Fixierungen, sedierende Medikamente zum Ruhigstellen. Genehmigungspflichtig durch das Betreuungsgericht (§ 1831 BGB). Alternativen nach dem Werdenfelser Weg: Niederflurbett, Sensormatte, Bewegungsmelder, individuelle Betreuung."
+- **Definition (B1):** "Maßnahmen, die einem Patienten die Freiheit nehmen. Zum Beispiel: Bett-Gitter hoch, Bauch-Gurt, Hand-Fesseln, ruhigstellende Medikamente. Erlaubnis kommt vom Richter (Betreuungs-Gericht, § 1831 BGB). Zuerst immer Alternativen prüfen."
+- **Quelle:** § 1831 BGB; Werdenfelser Weg
 - **Verknüpft mit Baustein:** B12
 
 ---
@@ -262,6 +262,6 @@
 | Pathophysiologie | 1 | Kapillardruck |
 | Materialien | 2 | Wechseldruckmatratze, Weichlagerungsmatratze |
 | Assessment | 1 | Braden-Skala |
-| Recht | 1 (FeM) | § 1906a BGB |
+| Recht | 1 (FeM) | § 1831 BGB |
 
 **Total:** 24 Einträge (Zielbereich 7-10 für 5 UE überschritten — doppelt so viele, weil Thema stark terminologielastig ist und für Folgethemen Mobilisation/Dekubitus als Grundlage dient).

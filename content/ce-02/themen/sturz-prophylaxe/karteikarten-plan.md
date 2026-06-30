@@ -33,7 +33,7 @@
 
 ### Karte 3 — Extrinsische Risikofaktoren
 - **Vorderseite:** "Sind beidseitige Bettgitter eine Sturzprophylaxe? Begründe."
-- **Rückseite:** "Nein. Bettgitter können die Sturzhöhe erhöhen, wenn Patienten darüber klettern. Beidseitig ohne Zustimmung = freiheitsentziehende Maßnahme (§ 1906a BGB). Pflege entfernt Stolperfallen und passt Umgebung an — das ist wirksame Sturzprävention."
+- **Rückseite:** "Nein. Bettgitter können die Sturzhöhe erhöhen, wenn Patienten darüber klettern. Beidseitig ohne Zustimmung = freiheitsentziehende Maßnahme (§ 1831 BGB). Pflege entfernt Stolperfallen und passt Umgebung an — das ist wirksame Sturzprävention."
 - **Kategorie:** handlung
 - **Bloom-Level:** 4
 - **Pruefungsrelevant:** ja (AFB II — erklären/begründen)
@@ -65,7 +65,7 @@
 
 ### Karte 7 — Fixierung und Recht
 - **Vorderseite:** "Sind beidseitige Bettgitter ohne Zustimmung eine rechtlich zulässige Sturzprophylaxe?"
-- **Rückseite:** "Nein. Beidseitige Bettgitter ohne Einwilligung sind eine freiheitsentziehende Maßnahme (§ 1906a BGB) — sie benötigen richterliche Genehmigung oder informierte Einwilligung. Sie sind keine Sturzprophylaxe: Patienten klettern darüber, Sturzhöhe und Verletzungsrisiko steigen."
+- **Rückseite:** "Nein. Beidseitige Bettgitter ohne Einwilligung sind eine freiheitsentziehende Maßnahme (§ 1831 BGB) — sie benötigen richterliche Genehmigung oder informierte Einwilligung. Sie sind keine Sturzprophylaxe: Patienten klettern darüber, Sturzhöhe und Verletzungsrisiko steigen."
 - **Kategorie:** recht
 - **Bloom-Level:** 5
 - **Pruefungsrelevant:** ja (AFB III — beurteilen/begründen)
@@ -130,6 +130,6 @@
 - [x] **Alle Rückseiten prägnant** (max 3 Sätze bei komplexen Inhalten) ✓
 - [x] **Jede Karte hat einen verknüpften Baustein** ✓
 - [x] **Anrede "du"** — Fragen direkt an den Schüler gerichtet (wo nötig) ✓
-- [x] **Primärquellen zitiert:** WHO 2007, DNQP 2022, Tinetti 1986, Podsiadlo 1991, Cochrane 2023, Beers 2023, § 1906a BGB ✓
+- [x] **Primärquellen zitiert:** WHO 2007, DNQP 2022, Tinetti 1986, Podsiadlo 1991, Cochrane 2023, Beers 2023, § 1831 BGB ✓
 - [x] **Echte Umlaute** ä, ö, ü, ß ✓
 - [x] **Keine I-Care-Referenzen** — eigene Formulierungen ✓
