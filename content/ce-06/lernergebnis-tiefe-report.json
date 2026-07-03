@@ -1,0 +1,334 @@
+{
+  "ce": "ce-06",
+  "bilanz": {
+    "total": 35,
+    "pass": 3,
+    "fail": 31,
+    "byDesign": 1,
+    "fehlt": 31,
+    "verteilung": {
+      "fehlt": 31,
+      "berührt": 0,
+      "geübt": 1,
+      "geprüft": 3
+    }
+  },
+  "results": [
+    {
+      "id": "CE06-LE1-W1",
+      "typ": "wissen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 7,
+      "erreichteTiefe": "geprüft",
+      "status": "PASS",
+      "begruendung": "Erreicht „geprüft\" (≥ „geübt\")."
+    },
+    {
+      "id": "CE06-LE1-K1",
+      "typ": "koennen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE1-K2",
+      "typ": "koennen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 4,
+      "erreichteTiefe": "geprüft",
+      "status": "PASS",
+      "begruendung": "Erreicht „geprüft\" (≥ „geübt\")."
+    },
+    {
+      "id": "CE06-LE1-K3",
+      "typ": "koennen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE1-K4",
+      "typ": "koennen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE1-K5",
+      "typ": "koennen",
+      "bloomSoll": 4,
+      "zugeordneteSteps": 2,
+      "erreichteTiefe": "geübt",
+      "status": "PASS",
+      "begruendung": "Erreicht „geübt\" (≥ „geübt\")."
+    },
+    {
+      "id": "CE06-LE1-E1",
+      "typ": "einstellung",
+      "bloomSoll": 5,
+      "zugeordneteSteps": 1,
+      "erreichteTiefe": "geprüft",
+      "status": "BY-DESIGN",
+      "begruendung": "Einstellungsziel — Tiefe über Reflexion, nicht über Bloom-Stufe (semantischer Recheck)."
+    },
+    {
+      "id": "CE06-LE2-W1",
+      "typ": "wissen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE2-W2",
+      "typ": "wissen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE2-W3",
+      "typ": "wissen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE2-K1",
+      "typ": "koennen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE2-K2",
+      "typ": "koennen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE2-K3",
+      "typ": "koennen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE2-K4",
+      "typ": "koennen",
+      "bloomSoll": 6,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE2-E1",
+      "typ": "einstellung",
+      "bloomSoll": 5,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Einstellungsziel ohne jeden Berührungspunkt — Reflexionsformat fehlt."
+    },
+    {
+      "id": "CE06-LE3-W1",
+      "typ": "wissen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE3-W2",
+      "typ": "wissen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE3-W3",
+      "typ": "wissen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE3-W4",
+      "typ": "wissen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE3-K1",
+      "typ": "koennen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE3-K2",
+      "typ": "koennen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE3-E1",
+      "typ": "einstellung",
+      "bloomSoll": 5,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Einstellungsziel ohne jeden Berührungspunkt — Reflexionsformat fehlt."
+    },
+    {
+      "id": "CE06-LE4-W1",
+      "typ": "wissen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE4-K1",
+      "typ": "koennen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE4-K2",
+      "typ": "koennen",
+      "bloomSoll": 3,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE4-K3",
+      "typ": "koennen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE4-E1",
+      "typ": "einstellung",
+      "bloomSoll": 5,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Einstellungsziel ohne jeden Berührungspunkt — Reflexionsformat fehlt."
+    },
+    {
+      "id": "CE06-LE4-E2",
+      "typ": "einstellung",
+      "bloomSoll": 5,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Einstellungsziel ohne jeden Berührungspunkt — Reflexionsformat fehlt."
+    },
+    {
+      "id": "CE06-LE5-W1",
+      "typ": "wissen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE5-W2",
+      "typ": "wissen",
+      "bloomSoll": 1,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE5-W3",
+      "typ": "wissen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE5-W4",
+      "typ": "wissen",
+      "bloomSoll": 2,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE5-K1",
+      "typ": "koennen",
+      "bloomSoll": 1,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Kein Step zugeordnet — FEHLT."
+    },
+    {
+      "id": "CE06-LE5-E1",
+      "typ": "einstellung",
+      "bloomSoll": 5,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Einstellungsziel ohne jeden Berührungspunkt — Reflexionsformat fehlt."
+    },
+    {
+      "id": "CE06-LE5-E2",
+      "typ": "einstellung",
+      "bloomSoll": 5,
+      "zugeordneteSteps": 0,
+      "erreichteTiefe": "fehlt",
+      "status": "FAIL",
+      "begruendung": "Einstellungsziel ohne jeden Berührungspunkt — Reflexionsformat fehlt."
+    }
+  ],
+  "danglingSteps": []
+}

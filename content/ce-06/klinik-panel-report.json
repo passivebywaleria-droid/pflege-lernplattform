@@ -1,0 +1,13 @@
+{
+  "ce": "ce-06",
+  "verdict": {
+    "hoch": 0,
+    "mittel": 0,
+    "niedrig": 0,
+    "total": 0,
+    "belegt": 0,
+    "beschaffung": 0,
+    "ko": false
+  },
+  "findings": []
+}

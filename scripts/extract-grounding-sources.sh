@@ -27,6 +27,7 @@ extract() { # <pdf> <slug>
 
 echo "Grounding-Quellen (Lesereihenfolge):"
 extract "recherche/icare/pflegeheute-7nbsped-3437182315-9783437182310_compress.pdf" "pflege-heute"
+extract "recherche/icare/dokumen.pub_fallbuch-ansthesie-intensivmedizin-und-notfallmedizin-4-berarbeitetenbsped-3132422584-9783132422582.pdf" "notfallmedizin"
 # Weitere Lehrbuch-PDFs hier ergänzen, sobald als Grounding-Quelle gebraucht:
 # extract "recherche/icare/icare-pflege.pdf" "icare-pflege"
 # extract "recherche/icare/anatomie.pdf" "anatomie"

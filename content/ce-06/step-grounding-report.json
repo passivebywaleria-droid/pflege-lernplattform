@@ -1,0 +1,17 @@
+{
+  "ce": "ce-06",
+  "reports": [
+    {
+      "situationId": "ls-wagner-reanimation",
+      "claimBearingTotal": 8,
+      "grounded": 8,
+      "adopted": true,
+      "findings": []
+    }
+  ],
+  "totals": {
+    "totalFindings": 0,
+    "dangling": 0,
+    "missing": 0
+  }
+}

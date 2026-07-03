@@ -317,6 +317,7 @@ export async function loadPatientAcrossLEs(
 const CE_MODULES: Record<string, () => Promise<Record<string, unknown>>> = {
   "ce-02": () => import("./ce-02/index"),
   "ce-04": () => import("./ce-04/index"),
+  "ce-06": () => import("./ce-06/index"),
 };
 
 async function loadCeModule(ceId: string): Promise<Record<string, unknown> | null> {
