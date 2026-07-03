@@ -186,7 +186,7 @@ export const CE_MANIFEST: CEManifestEntry[] = [
       "notfallkommunikation-sbar",
       "suizidalitaet-erstintervention",
     ],
-    situationen: ["ls-wagner-reanimation", "ls-rios-synkope", "ls-lehmann-sturz-sht"], // akutsituation — Welle 1: LE1-Kern
+    situationen: ["ls-wagner-reanimation", "ls-rios-synkope", "ls-lehmann-sturz-sht", "ls-novak-erregung"], // akutsituation — Welle 1: LE1
     status: "steps",
     sortOrder: 6,
   },

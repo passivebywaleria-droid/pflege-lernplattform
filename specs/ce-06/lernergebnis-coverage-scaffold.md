@@ -24,12 +24,14 @@
 
 | LE | n | VOLL | TEILW | FEHLT |
 |----|---|------|-------|-------|
-| 1 | 7 | 5 | 1 | 1 |
+| 1 | 7 | 6 | 1 | 0 |
 | 2 | 8 | 0 | 0 | 8 |
 | 3 | 7 | 0 | 0 | 7 |
 | 4 | 6 | 0 | 0 | 6 |
 | 5 | 7 | 0 | 0 | 7 |
-| **Σ** | **35** | **5** | **1** | **29** |
+| **Σ** | **35** | **6** | **1** | **28** |
+
+> **LE1 vollständig** (7/7 Ziele mind. „geübt"/by-design; `lernergebnis-tiefe 6`: 0 FEHLT in LE1). LE2–LE5 offen.
 
 ## LE-Index 1 (7 Lernergebnisse)
 
@@ -39,7 +41,7 @@
 | CE06-LE1-K1 | K | 2 (fuehren) | führen Erste-Hilfemaßnahmen bei Wunden, Blutungen, Sturz, Hitzeerschöpfung, Verbrennungen, Erfrierungen, Verätzungen durch | **VOLL** (Sturz/Wunde/Blutung; Hitze/Verbrennung/Erfrierung/Verätzung offen) | lehmann-erk-01, erm-01, erm-02 | geprüft |
 | CE06-LE1-K2 | K | 2 (fuehren) | führen lebenserhaltende Sofortmaßnahmen durch | **VOLL** | ala-01, erm-01, erm-02, erm-03 | geprüft |
 | CE06-LE1-K3 | K | 2 (diagnostizieren) | diagnostizieren neurologische Akutsituationen (z.B. Synkopen, Apoplex, epileptischer Anfall) und leiten Maßnahmen der 1. Hilfe ein | **VOLL** | rios-erk-01, erk-02, ala-01, erm-01, erm-02, erm-03 | geprüft |
-| CE06-LE1-K4 | K | 2 (diagnostizieren) | diagnostizieren akute psychotische Erregungszustände und leiten Maßnahmen der 1. Hilfe ein | FEHLT | — (Welle 3: Psychiatrie-Akut, ggf. CE-11-Naht) | — |
+| CE06-LE1-K4 | K | 2 (diagnostizieren) | diagnostizieren akute psychotische Erregungszustände und leiten Maßnahmen der 1. Hilfe ein | **VOLL** | novak-erk-01, erk-02, erm-01, erm-02 | geprüft |
 | CE06-LE1-K5 | K | 4 (analysieren) | analysieren einrichtungsspezifische Notfallpläne und identifizieren das Aufgabenfeld von Pflegefachkräften | TEILW | ala-01 (Alarmierung/Rollen), ref-02 (CIRS/Defi-Standort) | geübt |
 | CE06-LE1-E1 | E | 5 (reflektieren) | reflektieren eigene Gefühle und erfahrene Hilfen in Not-/Unfallsituationen … empathisches Handeln | **VOLL** | ref-01 | geprüft |
 

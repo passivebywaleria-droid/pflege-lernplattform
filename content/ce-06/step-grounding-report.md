@@ -8,3 +8,6 @@
 
 ## ls-lehmann-sturz-sht — ✅ PASS
 - claim-tragende Steps: 7, gegroundet: 7, adoptiert: true
+
+## ls-novak-erregung — ✅ PASS
+- claim-tragende Steps: 6, gegroundet: 6, adoptiert: true

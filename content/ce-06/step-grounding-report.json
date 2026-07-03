@@ -21,6 +21,13 @@
       "grounded": 7,
       "adopted": true,
       "findings": []
+    },
+    {
+      "situationId": "ls-novak-erregung",
+      "claimBearingTotal": 6,
+      "grounded": 6,
+      "adopted": true,
+      "findings": []
     }
   ],
   "totals": {

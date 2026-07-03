@@ -29,6 +29,15 @@ import {
   CE06_SIT_LEHMANN_REFLEKTIEREN,
 } from "./situationen/ls-lehmann-sturz-sht";
 
+import {
+  CE06_SIT_NOVAK_PATIENT,
+  CE06_SIT_NOVAK_ERKENNEN,
+  CE06_SIT_NOVAK_ALARMIEREN,
+  CE06_SIT_NOVAK_ERSTMASSNAHMEN,
+  CE06_SIT_NOVAK_UEBERGEBEN,
+  CE06_SIT_NOVAK_REFLEKTIEREN,
+} from "./situationen/ls-novak-erregung";
+
 export const CE06_SITUATIONEN: Lernsituation[] = [
   {
     situationId: "ls-wagner-reanimation",
@@ -86,6 +95,26 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
       CE06_SIT_LEHMANN_ERSTMASSNAHMEN,
       CE06_SIT_LEHMANN_UEBERGEBEN,
       CE06_SIT_LEHMANN_REFLEKTIEREN,
+    ],
+    komplikationen: [],
+    bausteinTrigger: [],
+  },
+  {
+    situationId: "ls-novak-erregung",
+    ceId: "ce-06",
+    situationsTyp: "akutsituation",
+    patient: CE06_SIT_NOVAK_PATIENT,
+    titel: "Herr Novak — akute psychotische Erregung",
+    titelB1: "Herr Novak — akute Erregung",
+    themen: ["psychische-akutsituationen", "notfallkommunikation-sbar"],
+    spirale: 2,
+    geschaetzteUE: 1,
+    phasen: [
+      CE06_SIT_NOVAK_ERKENNEN,
+      CE06_SIT_NOVAK_ALARMIEREN,
+      CE06_SIT_NOVAK_ERSTMASSNAHMEN,
+      CE06_SIT_NOVAK_UEBERGEBEN,
+      CE06_SIT_NOVAK_REFLEKTIEREN,
     ],
     komplikationen: [],
     bausteinTrigger: [],
