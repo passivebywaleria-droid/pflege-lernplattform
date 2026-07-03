@@ -11,6 +11,15 @@ import {
   CE06_SIT_WAGNER_REFLEKTIEREN,
 } from "./situationen/ls-wagner-reanimation";
 
+import {
+  CE06_SIT_RIOS_PATIENT,
+  CE06_SIT_RIOS_ERKENNEN,
+  CE06_SIT_RIOS_ALARMIEREN,
+  CE06_SIT_RIOS_ERSTMASSNAHMEN,
+  CE06_SIT_RIOS_UEBERGEBEN,
+  CE06_SIT_RIOS_REFLEKTIEREN,
+} from "./situationen/ls-rios-synkope";
+
 export const CE06_SITUATIONEN: Lernsituation[] = [
   {
     situationId: "ls-wagner-reanimation",
@@ -28,6 +37,26 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
       CE06_SIT_WAGNER_ERSTMASSNAHMEN,
       CE06_SIT_WAGNER_UEBERGEBEN,
       CE06_SIT_WAGNER_REFLEKTIEREN,
+    ],
+    komplikationen: [],
+    bausteinTrigger: [],
+  },
+  {
+    situationId: "ls-rios-synkope",
+    ceId: "ce-06",
+    situationsTyp: "akutsituation",
+    patient: CE06_SIT_RIOS_PATIENT,
+    titel: "Herr Ríos — Synkope während der Dialyse",
+    titelB1: "Herr Ríos — Ohnmacht bei der Dialyse",
+    themen: ["neurologische-akutsituationen", "notfallkommunikation-sbar"],
+    spirale: 2,
+    geschaetzteUE: 1,
+    phasen: [
+      CE06_SIT_RIOS_ERKENNEN,
+      CE06_SIT_RIOS_ALARMIEREN,
+      CE06_SIT_RIOS_ERSTMASSNAHMEN,
+      CE06_SIT_RIOS_UEBERGEBEN,
+      CE06_SIT_RIOS_REFLEKTIEREN,
     ],
     komplikationen: [],
     bausteinTrigger: [],

@@ -2,3 +2,6 @@
 
 ## ls-wagner-reanimation — ✅ PASS
 - claim-tragende Steps: 8, gegroundet: 8, adoptiert: true
+
+## ls-rios-synkope — ✅ PASS
+- claim-tragende Steps: 7, gegroundet: 7, adoptiert: true

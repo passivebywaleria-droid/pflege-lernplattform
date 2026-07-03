@@ -498,7 +498,7 @@ export const CE06_SIT_WAGNER_REFLEKTIEREN: SituationsPhase = {
         mcVariant: "standard",
         optionen: [
           {
-            text: "Ich spreche es im Debriefing an und schreibe eine CIRS-Meldung — nicht um jemandem die Schuld zu geben, sondern damit der Defi-Standort systematisch überprüft wird.",
+            text: "Ich spreche es im Debriefing an und schreibe eine CIRS-Meldung.",
             isCorrect: true,
             explanation:
               "Richtig. Ein CIRS dient dem Lernen aus kritischen Ereignissen und Beinahe-Fehlern — anonym und ohne Schuldzuweisung. Ein zu weit entfernter Defibrillator ist ein Systemproblem, das man strukturell lösen kann (näherer Standort). Genau das ist konstruktive Nachbesprechungskultur.",

@@ -60,12 +60,19 @@ Leitsituation voll gegroundet und durch alle deterministischen Klinik-Gates.
 
 ## Offen — nächste Wellen (Reihenfolge-Vorschlag)
 
-**Welle 2 — LE1 komplettieren + LE-Nachbarschaft (höchster Demo-Wert):**
-- LE1-K3 neurologische Akutsituationen: Situation `ls-rios-synkope-dialyse` (Synkope/Hypoglykämie,
-  Differentialdiagnose FAST) — Grounding: pflege-heute (stabile Seitenlage F-03 vorhanden;
-  Hypoglykämie/Krampfanfall neu belegen), Fallbuch Neurologie.
+**✅ LE1-K3 GEBAUT (2026-07-03):** Situation `ls-rios-synkope` (Miguel Ríos, 63, Synkope/schwere
+Hypoglykämie während Dialyse). Kernfakten `neurologische-akutsituationen.md` (F-01..F-07, 9 Belege ✅).
+Kritisch entschärft ggü. altem Katalog-Plan: **kein FAST-Schema** (Korpus-Homonym Trauma-Sonografie),
+**keine pauschale Trendelenburg** (bei Hirndruck/Atemnot/Übelkeit kontraindiziert, F-07), **Shunt-
+Widerspruch gelöst** (G40% i.v. = ärztlich, Pflege punktiert Shunt nicht eigenmächtig), **keine
+ml-Dosis behauptet**, Hypoglykämie **<50 mg/dl** (pflege-heute-Beleg, nicht ADA <70). Kern-Wow:
+Branching „orale Glukose bei Bewusstseinstrübung → STOPP Aspiration". Alle Gates grün, Validator läuft.
+
+**Welle 2 (Rest) — LE1 komplettieren:**
 - LE1-K1 Erste Hilfe Wunden/Blutungen/Verbrennungen/Sturz: Situation `ls-lehmann-sht-sturz`
   (ABCDE F-01, GCS F-02 vorhanden; Trauma/Blutstillung neu). Nutzt Currency-Gate (§1831 FeM/Bettgitter).
+  ACHTUNG: „Cushing-Trias" (Hirndruck) im Korpus NICHT belegt (nur Cushing-Syndrom/Nebenniere) — nicht behaupten.
+- LE1-K4 akute psychotische Erregung: eigene Situation (ggf. Naht zu CE-11).
 
 **Welle 3 — LE2 Intensiv/Schock/Herz-Kreislauf (8 LE):** Anatomie Herz-Kreislauf, Schockarten
 (F-04/F-05 vorhanden), Notfallmedikamente, Infusion/Perfusor, O2-Gabe, ZVK/PVK-Material,

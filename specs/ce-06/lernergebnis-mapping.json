@@ -1,6 +1,14 @@
 {
-  "_hinweis": "Step->Lernergebnis-Mapping CE-06 (W10-Tiefe-Gate). Welle 1 = Reanimation (LE1-Kern) via Situation ls-wagner-reanimation. LE1-K1/K3/K4 + LE2-LE5 folgen in weiteren Wellen (siehe content/ce-06/BUILD-JOURNAL.md).",
+  "_hinweis": "Step->Lernergebnis-Mapping CE-06 (W10-Tiefe-Gate). Welle 1: Reanimation (ls-wagner-reanimation) + neurologische Akutsituationen (ls-rios-synkope). LE1-K1/K4 + LE2-LE5 folgen in weiteren Wellen (siehe content/ce-06/BUILD-JOURNAL.md).",
   "mapping": {
+    "CE06-LE1-K3": [
+      "ce06-rios-erk-01",
+      "ce06-rios-erk-02",
+      "ce06-rios-ala-01",
+      "ce06-rios-erm-01",
+      "ce06-rios-erm-02",
+      "ce06-rios-erm-03"
+    ],
     "CE06-LE1-W1": [
       "ce06-wagner-erk-01",
       "ce06-wagner-erk-02",

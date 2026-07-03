@@ -2,15 +2,15 @@
   "ce": "ce-06",
   "bilanz": {
     "total": 35,
-    "pass": 3,
-    "fail": 31,
+    "pass": 4,
+    "fail": 30,
     "byDesign": 1,
-    "fehlt": 31,
+    "fehlt": 30,
     "verteilung": {
-      "fehlt": 31,
+      "fehlt": 30,
       "berührt": 0,
       "geübt": 1,
-      "geprüft": 3
+      "geprüft": 4
     }
   },
   "results": [
@@ -45,10 +45,10 @@
       "id": "CE06-LE1-K3",
       "typ": "koennen",
       "bloomSoll": 2,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Kein Step zugeordnet — FEHLT."
+      "zugeordneteSteps": 6,
+      "erreichteTiefe": "geprüft",
+      "status": "PASS",
+      "begruendung": "Erreicht „geprüft\" (≥ „geübt\")."
     },
     {
       "id": "CE06-LE1-K4",

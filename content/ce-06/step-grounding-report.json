@@ -7,6 +7,13 @@
       "grounded": 8,
       "adopted": true,
       "findings": []
+    },
+    {
+      "situationId": "ls-rios-synkope",
+      "claimBearingTotal": 7,
+      "grounded": 7,
+      "adopted": true,
+      "findings": []
     }
   ],
   "totals": {
