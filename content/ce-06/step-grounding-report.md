@@ -5,3 +5,6 @@
 
 ## ls-rios-synkope — ✅ PASS
 - claim-tragende Steps: 7, gegroundet: 7, adoptiert: true
+
+## ls-lehmann-sturz-sht — ✅ PASS
+- claim-tragende Steps: 7, gegroundet: 7, adoptiert: true

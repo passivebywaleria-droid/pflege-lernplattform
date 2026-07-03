@@ -14,6 +14,13 @@
       "grounded": 7,
       "adopted": true,
       "findings": []
+    },
+    {
+      "situationId": "ls-lehmann-sturz-sht",
+      "claimBearingTotal": 7,
+      "grounded": 7,
+      "adopted": true,
+      "findings": []
     }
   ],
   "totals": {

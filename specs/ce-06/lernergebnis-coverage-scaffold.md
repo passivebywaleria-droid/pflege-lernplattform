@@ -24,19 +24,19 @@
 
 | LE | n | VOLL | TEILW | FEHLT |
 |----|---|------|-------|-------|
-| 1 | 7 | 4 | 1 | 2 |
+| 1 | 7 | 5 | 1 | 1 |
 | 2 | 8 | 0 | 0 | 8 |
 | 3 | 7 | 0 | 0 | 7 |
 | 4 | 6 | 0 | 0 | 6 |
 | 5 | 7 | 0 | 0 | 7 |
-| **Σ** | **35** | **4** | **1** | **30** |
+| **Σ** | **35** | **5** | **1** | **29** |
 
 ## LE-Index 1 (7 Lernergebnisse)
 
 | ID | Typ | Bloom-Soll | Lernergebnis | Status | Deckende Quelle (stepId) | Tiefe (berührt/geübt/geprüft) |
 |----|-----|-----------|--------------|--------|--------------------------|-------------------------------|
 | CE06-LE1-W1 | W | 2 (erlaeutern) | erläutern rechtliche und ethische Aspekte zur Ersten Hilfe … BLS/ALS/Kammerflimmern/KPR-Indikation/AED | **VOLL** | erk-01, erk-02, ala-01, erm-01, erm-02, erm-03, ueb-01 | geprüft |
-| CE06-LE1-K1 | K | 2 (fuehren) | führen Erste-Hilfemaßnahmen bei Wunden, Blutungen, Sturz, Hitzeerschöpfung, Verbrennungen, Erfrierungen, Verätzungen durch | FEHLT | — (Welle 2: Traumatologie/Erste Hilfe) | — |
+| CE06-LE1-K1 | K | 2 (fuehren) | führen Erste-Hilfemaßnahmen bei Wunden, Blutungen, Sturz, Hitzeerschöpfung, Verbrennungen, Erfrierungen, Verätzungen durch | **VOLL** (Sturz/Wunde/Blutung; Hitze/Verbrennung/Erfrierung/Verätzung offen) | lehmann-erk-01, erm-01, erm-02 | geprüft |
 | CE06-LE1-K2 | K | 2 (fuehren) | führen lebenserhaltende Sofortmaßnahmen durch | **VOLL** | ala-01, erm-01, erm-02, erm-03 | geprüft |
 | CE06-LE1-K3 | K | 2 (diagnostizieren) | diagnostizieren neurologische Akutsituationen (z.B. Synkopen, Apoplex, epileptischer Anfall) und leiten Maßnahmen der 1. Hilfe ein | **VOLL** | rios-erk-01, erk-02, ala-01, erm-01, erm-02, erm-03 | geprüft |
 | CE06-LE1-K4 | K | 2 (diagnostizieren) | diagnostizieren akute psychotische Erregungszustände und leiten Maßnahmen der 1. Hilfe ein | FEHLT | — (Welle 3: Psychiatrie-Akut, ggf. CE-11-Naht) | — |

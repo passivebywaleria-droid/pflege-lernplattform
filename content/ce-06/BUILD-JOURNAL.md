@@ -68,10 +68,16 @@ Widerspruch gelöst** (G40% i.v. = ärztlich, Pflege punktiert Shunt nicht eigen
 ml-Dosis behauptet**, Hypoglykämie **<50 mg/dl** (pflege-heute-Beleg, nicht ADA <70). Kern-Wow:
 Branching „orale Glukose bei Bewusstseinstrübung → STOPP Aspiration". Alle Gates grün, Validator läuft.
 
-**Welle 2 (Rest) — LE1 komplettieren:**
-- LE1-K1 Erste Hilfe Wunden/Blutungen/Verbrennungen/Sturz: Situation `ls-lehmann-sht-sturz`
-  (ABCDE F-01, GCS F-02 vorhanden; Trauma/Blutstillung neu). Nutzt Currency-Gate (§1831 FeM/Bettgitter).
-  ACHTUNG: „Cushing-Trias" (Hirndruck) im Korpus NICHT belegt (nur Cushing-Syndrom/Nebenniere) — nicht behaupten.
+**✅ LE1-K1 GEBAUT (2026-07-03):** Situation `ls-lehmann-sturz-sht` (Anneliese Lehmann, 86,
+Sturz + Kopfplatzwunde im Heim, Demenz, Osteoporose, Apixaban). Kernfakten
+`traumatologische-erstversorgung.md` (F-01..F-08, 11 Belege ✅, inkl. BGB §1831 aus bgb-1831.txt).
+Kern: SHT unter Antikoagulation → verzögerte Hirnblutung → zwingend 112/CT. Anti-Pattern nur als
+FALSCHE Optionen (gedämpftes Licht / „Glück gehabt" / unter Achseln / beidseitiges Bettgitter=FeM) →
+anti-pattern-check 0 Treffer. Currency §1831 (nicht §1906). „Cushing-Trias" bewusst vermieden.
+Deckt K1 für Sturz/Wunde/Blutung; Hitze/Verbrennung/Erfrierung/Verätzung noch offen.
+
+**Welle 2 (Rest):**
+- LE1-K1-Rest: Hitzeerschöpfung/Verbrennungen/Erfrierungen/Verätzungen (eigene Situation oder Bausteine).
 - LE1-K4 akute psychotische Erregung: eigene Situation (ggf. Naht zu CE-11).
 
 **Welle 3 — LE2 Intensiv/Schock/Herz-Kreislauf (8 LE):** Anatomie Herz-Kreislauf, Schockarten

@@ -20,6 +20,15 @@ import {
   CE06_SIT_RIOS_REFLEKTIEREN,
 } from "./situationen/ls-rios-synkope";
 
+import {
+  CE06_SIT_LEHMANN_PATIENT,
+  CE06_SIT_LEHMANN_ERKENNEN,
+  CE06_SIT_LEHMANN_ALARMIEREN,
+  CE06_SIT_LEHMANN_ERSTMASSNAHMEN,
+  CE06_SIT_LEHMANN_UEBERGEBEN,
+  CE06_SIT_LEHMANN_REFLEKTIEREN,
+} from "./situationen/ls-lehmann-sturz-sht";
+
 export const CE06_SITUATIONEN: Lernsituation[] = [
   {
     situationId: "ls-wagner-reanimation",
@@ -57,6 +66,26 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
       CE06_SIT_RIOS_ERSTMASSNAHMEN,
       CE06_SIT_RIOS_UEBERGEBEN,
       CE06_SIT_RIOS_REFLEKTIEREN,
+    ],
+    komplikationen: [],
+    bausteinTrigger: [],
+  },
+  {
+    situationId: "ls-lehmann-sturz-sht",
+    ceId: "ce-06",
+    situationsTyp: "akutsituation",
+    patient: CE06_SIT_LEHMANN_PATIENT,
+    titel: "Frau Lehmann — Sturz mit Kopfverletzung im Pflegeheim",
+    titelB1: "Frau Lehmann — Sturz mit Kopfverletzung",
+    themen: ["traumatologische-erstversorgung", "notfallassessment", "notfallkommunikation-sbar"],
+    spirale: 2,
+    geschaetzteUE: 1,
+    phasen: [
+      CE06_SIT_LEHMANN_ERKENNEN,
+      CE06_SIT_LEHMANN_ALARMIEREN,
+      CE06_SIT_LEHMANN_ERSTMASSNAHMEN,
+      CE06_SIT_LEHMANN_UEBERGEBEN,
+      CE06_SIT_LEHMANN_REFLEKTIEREN,
     ],
     komplikationen: [],
     bausteinTrigger: [],
