@@ -7,7 +7,8 @@
 
 ---
 
-## Status: Welle 1 gebaut (LE1-Kern Reanimation) — gate-green, deployed-ready
+## Status: Welle 1 gebaut (LE1-Kern Reanimation) — gate-green, DEPLOYED (Hetzner, HTTP 200)
+> Live: https://178-105-176-161.nip.io/de/lernen/situation/ls-wagner-reanimation?ce=ce-06
 
 CE-06 = das Demo-Wow-Stück (Branching unter Zeitdruck). Welle 1 liefert die Reanimations-
 Leitsituation voll gegroundet und durch alle deterministischen Klinik-Gates.
