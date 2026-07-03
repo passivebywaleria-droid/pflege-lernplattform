@@ -38,6 +38,15 @@ import {
   CE06_SIT_NOVAK_REFLEKTIEREN,
 } from "./situationen/ls-novak-erregung";
 
+import {
+  CE06_SIT_YILDIZ_PATIENT,
+  CE06_SIT_YILDIZ_ERKENNEN,
+  CE06_SIT_YILDIZ_ALARMIEREN,
+  CE06_SIT_YILDIZ_ERSTMASSNAHMEN,
+  CE06_SIT_YILDIZ_UEBERGEBEN,
+  CE06_SIT_YILDIZ_REFLEKTIEREN,
+} from "./situationen/ls-yildiz-thoraxschmerz";
+
 export const CE06_SITUATIONEN: Lernsituation[] = [
   {
     situationId: "ls-wagner-reanimation",
@@ -115,6 +124,26 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
       CE06_SIT_NOVAK_ERSTMASSNAHMEN,
       CE06_SIT_NOVAK_UEBERGEBEN,
       CE06_SIT_NOVAK_REFLEKTIEREN,
+    ],
+    komplikationen: [],
+    bausteinTrigger: [],
+  },
+  {
+    situationId: "ls-yildiz-thoraxschmerz",
+    ceId: "ce-06",
+    situationsTyp: "akutsituation",
+    patient: CE06_SIT_YILDIZ_PATIENT,
+    titel: "Frau Yıldız — akuter Thoraxschmerz (Verdacht Herzinfarkt)",
+    titelB1: "Frau Yıldız — Brustschmerz (Verdacht Herzinfarkt)",
+    themen: ["herz-kreislauf-akut", "notfallkommunikation-sbar"],
+    spirale: 2,
+    geschaetzteUE: 1,
+    phasen: [
+      CE06_SIT_YILDIZ_ERKENNEN,
+      CE06_SIT_YILDIZ_ALARMIEREN,
+      CE06_SIT_YILDIZ_ERSTMASSNAHMEN,
+      CE06_SIT_YILDIZ_UEBERGEBEN,
+      CE06_SIT_YILDIZ_REFLEKTIEREN,
     ],
     komplikationen: [],
     bausteinTrigger: [],

@@ -25,13 +25,13 @@
 | LE | n | VOLL | TEILW | FEHLT |
 |----|---|------|-------|-------|
 | 1 | 7 | 6 | 1 | 0 |
-| 2 | 8 | 0 | 0 | 8 |
+| 2 | 8 | 3 | 1 | 4 |
 | 3 | 7 | 0 | 0 | 7 |
 | 4 | 6 | 0 | 0 | 6 |
 | 5 | 7 | 0 | 0 | 7 |
-| **Σ** | **35** | **6** | **1** | **28** |
+| **Σ** | **35** | **9** | **2** | **24** |
 
-> **LE1 vollständig** (7/7 Ziele mind. „geübt"/by-design; `lernergebnis-tiefe 6`: 0 FEHLT in LE1). LE2–LE5 offen.
+> **LE1 vollständig** (7/7). **LE2 begonnen** via `ls-yildiz-thoraxschmerz` (Herzinfarkt): W3/K1/K3 VOLL, W2 (nur kardiogener Schock) TEILW; W1/K2/K4/E1 offen. LE3–LE5 offen. Coverage 11/35 zu „geübt"+.
 
 ## LE-Index 1 (7 Lernergebnisse)
 

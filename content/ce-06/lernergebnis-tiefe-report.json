@@ -2,15 +2,15 @@
   "ce": "ce-06",
   "bilanz": {
     "total": 35,
-    "pass": 6,
-    "fail": 28,
+    "pass": 10,
+    "fail": 24,
     "byDesign": 1,
-    "fehlt": 28,
+    "fehlt": 24,
     "verteilung": {
-      "fehlt": 28,
+      "fehlt": 24,
       "berührt": 0,
-      "geübt": 1,
-      "geprüft": 6
+      "geübt": 3,
+      "geprüft": 8
     }
   },
   "results": [
@@ -90,28 +90,28 @@
       "id": "CE06-LE2-W2",
       "typ": "wissen",
       "bloomSoll": 2,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Kein Step zugeordnet — FEHLT."
+      "zugeordneteSteps": 1,
+      "erreichteTiefe": "geprüft",
+      "status": "PASS",
+      "begruendung": "Erreicht „geprüft\" (≥ „geübt\")."
     },
     {
       "id": "CE06-LE2-W3",
       "typ": "wissen",
       "bloomSoll": 2,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Kein Step zugeordnet — FEHLT."
+      "zugeordneteSteps": 4,
+      "erreichteTiefe": "geprüft",
+      "status": "PASS",
+      "begruendung": "Erreicht „geprüft\" (≥ „geübt\")."
     },
     {
       "id": "CE06-LE2-K1",
       "typ": "koennen",
       "bloomSoll": 2,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Kein Step zugeordnet — FEHLT."
+      "zugeordneteSteps": 1,
+      "erreichteTiefe": "geübt",
+      "status": "PASS",
+      "begruendung": "Erreicht „geübt\" (≥ „geübt\")."
     },
     {
       "id": "CE06-LE2-K2",
@@ -126,10 +126,10 @@
       "id": "CE06-LE2-K3",
       "typ": "koennen",
       "bloomSoll": 2,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Kein Step zugeordnet — FEHLT."
+      "zugeordneteSteps": 1,
+      "erreichteTiefe": "geübt",
+      "status": "PASS",
+      "begruendung": "Erreicht „geübt\" (≥ „geübt\")."
     },
     {
       "id": "CE06-LE2-K4",

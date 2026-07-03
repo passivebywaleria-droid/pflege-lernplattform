@@ -11,3 +11,6 @@
 
 ## ls-novak-erregung — ✅ PASS
 - claim-tragende Steps: 6, gegroundet: 6, adoptiert: true
+
+## ls-yildiz-thoraxschmerz — ✅ PASS
+- claim-tragende Steps: 7, gegroundet: 7, adoptiert: true

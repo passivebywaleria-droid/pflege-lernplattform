@@ -76,9 +76,15 @@ FALSCHE Optionen (gedämpftes Licht / „Glück gehabt" / unter Achseln / beidse
 anti-pattern-check 0 Treffer. Currency §1831 (nicht §1906). „Cushing-Trias" bewusst vermieden.
 Deckt K1 für Sturz/Wunde/Blutung; Hitze/Verbrennung/Erfrierung/Verätzung noch offen.
 
+**✅ LE1-K4 GEBAUT (2026-07-03):** `ls-novak-erregung` (Novak, 34, paranoide Schizophrenie +
+Pneumonie/Fieber). Kernfakten `psychische-akutsituationen.md` (F-01..F-08, 15 Belege ✅).
+Leitplanke: akute Erregung nicht automatisch psychiatrisch (organische Ursachen zuerst).
+Recht: auf somat. Station **§1831 BGB / Gefahr im Verzug**, PsychKG nur bei psychiatrischer
+Unterbringung. **→ LE1 vollständig (7/7).**
+
 **Welle 2 (Rest):**
 - LE1-K1-Rest: Hitzeerschöpfung/Verbrennungen/Erfrierungen/Verätzungen (eigene Situation oder Bausteine).
-- LE1-K4 akute psychotische Erregung: eigene Situation (ggf. Naht zu CE-11).
+- LE2 Intensiv/Schock/Herz-Kreislauf (8 LE) · LE3 Abdomen/Stoma (7) · LE4 Katastrophen/Triage (6) · LE5 Organspende (7).
 
 **Welle 3 — LE2 Intensiv/Schock/Herz-Kreislauf (8 LE):** Anatomie Herz-Kreislauf, Schockarten
 (F-04/F-05 vorhanden), Notfallmedikamente, Infusion/Perfusor, O2-Gabe, ZVK/PVK-Material,
