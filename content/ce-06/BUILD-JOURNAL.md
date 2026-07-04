@@ -115,6 +115,23 @@ atemunterstützende Lagerung. Quellen: pflege-heute Kap. 14/16, I-Care Anatomie,
   NICHT blind aus pflege-heute übernehmen. Ggf. Beschaffungsliste.
 
 **Welle 4 — LE3 Abdomen/Stoma/Drainagen (7 LE):** Paetz Chirurgie, I-Care Krankheitslehre.
+> **LE3-Grounding vorab gescoutet (2026-07-04) — Quelle `recherche/paetz-chirurgie-volltext/paetz-chirurgie.txt`:**
+> - Akutes Abdomen Kap. 12.6 (Z. ~19124): „Sammelbegriff für verschiedene Krankheitsbilder, die eine akut
+>   bedrohliche, meist mit Schmerzen einhergehende Situation in der Bauchhöhle hervorrufen"; sofortiges Handeln,
+>   meist chirurgisch. Ursachen (Tab. 12.5): Entzündung (Appendizitis/Cholezystitis/Pankreatitis), Perforation
+>   von Hohlorganen, Ileus, intraabdominelle Blutung.
+> - Intraabdominelle Blutung Kap. 12.5 (Z. ~19140): postop Nachblutung häufigste Ursache; **Pflege-Zeichen:
+>   Blutverlust aus Drainagen >200 ml in der ersten Stunde → sofort Arzt** (verbatim „über 200 ml in der ersten Stunde").
+> - Ileostoma vs. Kolostoma (Z. ~33984): **Dünndarminhalt (ca. 1 Liter/Tag) viel aggressiver als Dickdarminhalt
+>   → Hautschäden durch Mazeration**; prominentes Nippel-Ileostoma (überragt Haut ~3 cm); exaktes Zuschneiden
+>   der Hautschutzplatte beim Ileostoma besonders wichtig. Loop-/doppelläufiges Ileostoma = temporär.
+> - Stomaversorgung (Z. ~34319): Hautschutz/Basisplatte 70–100 mm; ein-/zweiteilige Systeme; Komplikation
+>   Hautschäden bei zu groß geschnittener Lochöffnung (Ausscheidung umspült die Haut).
+> - Drainagesysteme (Z. ~11112): Redon-Drainage = geschlossene Saugdrainage mit unkontrolliertem Sog (nicht
+>   einstellbar); Robinson-Drainage; geschlossene Systeme reduzieren Infektionsrisiko. Sog vs. Schwerkraft.
+> Noch offen zu grounden: viszeraler/Kolik/abdominaler Schmerz, Dauerkatheter-Infektionsprophylaxe (eaun-2024-
+> volltext prüfen), postop Überwachung Gasaustausch/Obstipation/Urinausscheidung, Mobilisation mit Drainagen.
+> Patient-Vorschlag: neuer Name (nicht Gruber/Nguyen-CE02); Setting chirurgische Station post-OP (Kolon-OP/Stoma).
 **Welle 5 — LE4 Katastrophen/Triage/Brandschutz (6 LE) + LE5 Organspende/Hirntod (7 LE):**
 LE5 stark rechtlich/ethisch (TPG, Hirntoddiagnostik) — Currency-Gate wichtig.
 
