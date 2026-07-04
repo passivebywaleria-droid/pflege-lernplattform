@@ -3,11 +3,11 @@
 > Naht-Versicherung über Sessions (MASTER-BUILDPLAN §4). Was gebaut ist, was offen ist,
 > welche Patienten/Fakten fest verdrahtet sind. Nächster Chat bootet hieraus weiter.
 >
-> Stand: 2026-07-03 · Branch: pilot/frau-m-inline-wissen-v1
+> Stand: 2026-07-04 · Branch: pilot/frau-m-inline-wissen-v1
 
 ---
 
-## Status: Welle 1 gebaut (LE1-Kern Reanimation) — gate-green, DEPLOYED (Hetzner, HTTP 200)
+## Status: LE1 + LE2 KOMPLETT (6 Situationen) — gate-green, DEPLOYED (Hetzner, HTTP 200)
 > Live: https://178-105-176-161.nip.io/de/lernen/situation/ls-wagner-reanimation?ce=ce-06
 
 CE-06 = das Demo-Wow-Stück (Branching unter Zeitdruck). Welle 1 liefert die Reanimations-
@@ -82,9 +82,29 @@ Leitplanke: akute Erregung nicht automatisch psychiatrisch (organische Ursachen 
 Recht: auf somat. Station **§1831 BGB / Gefahr im Verzug**, PsychKG nur bei psychiatrischer
 Unterbringung. **→ LE1 vollständig (7/7).**
 
+**✅ LE2 BEGONNEN (2026-07-03):** `ls-yildiz-thoraxschmerz` (Yıldız, 62, Herzinfarkt/ACS).
+Kernfakten `herz-kreislauf-akut.md` (F-01..F-08, 14 Belege ✅). Deckt LE2-W3/K1/K3 (+W2 teilw).
+Kritisch: Oberkörper HOCH statt Schocklage (Preload), abflachen bei RR<90&Puls>100 (verbatim),
+O2/Nitro nur ärztlich, ACS bessert nicht auf Nitro.
+
+**✅ LE2 KOMPLETT (2026-07-04):** `ls-gruber-schock` (Herbert Gruber, 69, hypovolämischer Schock
+bei oberer GI-Blutung/Ulcus unter NSAR). Kernfakten `schock-und-kreislauf.md` (F-01..F-14, 52 Belege ✅
+zitat-verifizierer; Quellen pflege-heute Kap. 14.5/3.5/33.10.3 + I-care-Anatomie Kap. 6/7 + kommunikation).
+Deckt **W1** (Anatomie Herz-Kreislauf/Zentralisation), **W2** (Schocksysteme voll: hypovoläm/kardiogen/
+obstruktiv/distributiv), **W3-Rest** (Notfallmed/Katecholamin-Perfusor, Reizleitung Sinusknoten, Elektrolyte/
+Kalium, O2-Systeme, Infusion), **K1** (Monitor/Branching), **K2** (Pflegewagen PVK/ZVK-Material), **K4**
+(familiäres Coping Freetext bloom 6), **E1** (apparate-dominierter Intensiv-Kontext, reflection).
+Kern-Falle: **Autotransfusionslage-Ausnahme bei oberer GI-Blutung** (Beine-hoch ist hier FALSCH, F-06).
+Weitere Leitplanken: Katecholamine/Perfusor + Infusionsrate nur ärztlich (als Wirkstoff, keine Dosen),
+i.v.-Kalium langsam/ZVK (Bolus-Distraktor = gefährlich-falsch), Patient nüchtern (orale Distraktoren).
+12 Steps, alle claim-tragenden `kernfaktId`-gegroundet (11/11). pflege-validator PASS (0 HOCH); 1 MITTEL +
+4 NIEDRIG gefixt (durchgängig MC-Längen-Bias entschärft, Pflegewagen-Balance 5:3, Zeitangabe-Tell entfernt).
+Alle Gates grün. **Damit LE1 (7/7) + LE2 (8/8) komplett** — Coverage 19/35 LE. **Deployed (Hetzner, HTTP 200):**
+https://178-105-176-161.nip.io/de/lernen/situation/ls-gruber-schock?ce=ce-06
+
 **Welle 2 (Rest):**
 - LE1-K1-Rest: Hitzeerschöpfung/Verbrennungen/Erfrierungen/Verätzungen (eigene Situation oder Bausteine).
-- LE2 Intensiv/Schock/Herz-Kreislauf (8 LE) · LE3 Abdomen/Stoma (7) · LE4 Katastrophen/Triage (6) · LE5 Organspende (7).
+- LE3 Abdomen/Stoma (7) · LE4 Katastrophen/Triage (6) · LE5 Organspende (7).
 
 **Welle 3 — LE2 Intensiv/Schock/Herz-Kreislauf (8 LE):** Anatomie Herz-Kreislauf, Schockarten
 (F-04/F-05 vorhanden), Notfallmedikamente, Infusion/Perfusor, O2-Gabe, ZVK/PVK-Material,
@@ -102,5 +122,10 @@ LE5 stark rechtlich/ethisch (TPG, Hirntoddiagnostik) — Currency-Gate wichtig.
 - Antikoagulanzien immer als **Wirkstoff** (Apixaban), nicht Markenname.
 - Akut-Phasen-Set: `erkennen`/`alarmieren`/`erstmassnahmen`/`uebergeben`/`reflektieren` (AkutPhase).
 - Jeder claim-tragende Step MUSS `kernfaktId` tragen (Auto-Strict pro Situation aktiv, sobald ≥1 Grounding).
-- Patienten CE-06 bisher: Wagner (67, Rea). Frei/geplant: Jusufi, Ríos, Lehmann, Pfeiffer (Prüfung).
+- Patienten CE-06 bisher: Wagner (67, Rea), Ríos (63, Synkope), Lehmann (86, Sturz/SHT), Novak (34, Psychose),
+  Yıldız (62, Herzinfarkt), Gruber (69, hypovoläm. Schock/GI-Blutung). Frei/geplant: Jusufi (Anaphylaxie, Welle 3),
+  Pfeiffer (Prüfung).
+- Schock-Grounding: pflege-heute Kap. 14.5 sauber belegt (4 Schockformen, Autotransfusionslage + Ausnahme
+  Kopf/Lunge/oberer GI-Trakt, Schockindex >1 nur hypovoläm, O2 6–8 l/min, Katecholamin-Perfusor). Anatomie/
+  Reizleitung in I-care-Anatomie Kap. 6/7 (Sinusknoten→AV→His→Tawara→Purkinje, HZV ca. 5 l/min).
 - Reanimations-Zahlen sind in pflege-heute sauber belegt (5–6 cm, 100–120/min, 30:2, Adrenalin 3–5 min).

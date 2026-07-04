@@ -25,13 +25,16 @@
 | LE | n | VOLL | TEILW | FEHLT |
 |----|---|------|-------|-------|
 | 1 | 7 | 6 | 1 | 0 |
-| 2 | 8 | 3 | 1 | 4 |
+| 2 | 8 | 8 | 0 | 0 |
 | 3 | 7 | 0 | 0 | 7 |
 | 4 | 6 | 0 | 0 | 6 |
 | 5 | 7 | 0 | 0 | 7 |
-| **Σ** | **35** | **9** | **2** | **24** |
+| **Σ** | **35** | **14** | **1** | **20** |
 
-> **LE1 vollständig** (7/7). **LE2 begonnen** via `ls-yildiz-thoraxschmerz` (Herzinfarkt): W3/K1/K3 VOLL, W2 (nur kardiogener Schock) TEILW; W1/K2/K4/E1 offen. LE3–LE5 offen. Coverage 11/35 zu „geübt"+.
+> **LE1 vollständig** (7/7). **LE2 vollständig** (8/8): `ls-yildiz-thoraxschmerz` (Herzinfarkt: W3-Teil/K1/K3)
+> + `ls-gruber-schock` (hypovolämischer Schock: W1 Anatomie, W2 Schocksysteme voll, W3-Rest Katecholamin-
+> Perfusor/Reizleitung/Kalium/O2, K1 Monitor, K2 Pflegewagen PVK/ZVK, K4 Coping, E1 Intensiv). LE3–LE5 offen.
+> Coverage 19/35 zu „geübt"+. Tiefe-Gate (`lernergebnis-tiefe.ts 6`) bewusst FAIL (20 LE offen, Welle 4/5).
 
 ## LE-Index 1 (7 Lernergebnisse)
 

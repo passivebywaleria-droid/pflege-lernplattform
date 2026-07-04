@@ -14,3 +14,6 @@
 
 ## ls-yildiz-thoraxschmerz — ✅ PASS
 - claim-tragende Steps: 7, gegroundet: 7, adoptiert: true
+
+## ls-gruber-schock — ✅ PASS
+- claim-tragende Steps: 11, gegroundet: 11, adoptiert: true

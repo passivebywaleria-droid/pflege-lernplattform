@@ -47,6 +47,15 @@ import {
   CE06_SIT_YILDIZ_REFLEKTIEREN,
 } from "./situationen/ls-yildiz-thoraxschmerz";
 
+import {
+  CE06_SIT_GRUBER_PATIENT,
+  CE06_SIT_GRUBER_ERKENNEN,
+  CE06_SIT_GRUBER_ALARMIEREN,
+  CE06_SIT_GRUBER_ERSTMASSNAHMEN,
+  CE06_SIT_GRUBER_UEBERGEBEN,
+  CE06_SIT_GRUBER_REFLEKTIEREN,
+} from "./situationen/ls-gruber-schock";
+
 export const CE06_SITUATIONEN: Lernsituation[] = [
   {
     situationId: "ls-wagner-reanimation",
@@ -144,6 +153,26 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
       CE06_SIT_YILDIZ_ERSTMASSNAHMEN,
       CE06_SIT_YILDIZ_UEBERGEBEN,
       CE06_SIT_YILDIZ_REFLEKTIEREN,
+    ],
+    komplikationen: [],
+    bausteinTrigger: [],
+  },
+  {
+    situationId: "ls-gruber-schock",
+    ceId: "ce-06",
+    situationsTyp: "akutsituation",
+    patient: CE06_SIT_GRUBER_PATIENT,
+    titel: "Herr Gruber — hypovolämischer Schock bei Magenblutung",
+    titelB1: "Herr Gruber — Schock bei Magenblutung",
+    themen: ["schock-und-kreislauf", "notfallkommunikation-sbar"],
+    spirale: 2,
+    geschaetzteUE: 1,
+    phasen: [
+      CE06_SIT_GRUBER_ERKENNEN,
+      CE06_SIT_GRUBER_ALARMIEREN,
+      CE06_SIT_GRUBER_ERSTMASSNAHMEN,
+      CE06_SIT_GRUBER_UEBERGEBEN,
+      CE06_SIT_GRUBER_REFLEKTIEREN,
     ],
     komplikationen: [],
     bausteinTrigger: [],

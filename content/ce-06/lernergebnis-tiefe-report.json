@@ -2,15 +2,15 @@
   "ce": "ce-06",
   "bilanz": {
     "total": 35,
-    "pass": 10,
-    "fail": 24,
-    "byDesign": 1,
-    "fehlt": 24,
+    "pass": 13,
+    "fail": 20,
+    "byDesign": 2,
+    "fehlt": 20,
     "verteilung": {
-      "fehlt": 24,
+      "fehlt": 20,
       "berührt": 0,
-      "geübt": 3,
-      "geprüft": 8
+      "geübt": 4,
+      "geprüft": 11
     }
   },
   "results": [
@@ -81,16 +81,16 @@
       "id": "CE06-LE2-W1",
       "typ": "wissen",
       "bloomSoll": 2,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Kein Step zugeordnet — FEHLT."
+      "zugeordneteSteps": 1,
+      "erreichteTiefe": "geübt",
+      "status": "PASS",
+      "begruendung": "Erreicht „geübt\" (≥ „geübt\")."
     },
     {
       "id": "CE06-LE2-W2",
       "typ": "wissen",
       "bloomSoll": 2,
-      "zugeordneteSteps": 1,
+      "zugeordneteSteps": 3,
       "erreichteTiefe": "geprüft",
       "status": "PASS",
       "begruendung": "Erreicht „geprüft\" (≥ „geübt\")."
@@ -99,7 +99,7 @@
       "id": "CE06-LE2-W3",
       "typ": "wissen",
       "bloomSoll": 2,
-      "zugeordneteSteps": 4,
+      "zugeordneteSteps": 7,
       "erreichteTiefe": "geprüft",
       "status": "PASS",
       "begruendung": "Erreicht „geprüft\" (≥ „geübt\")."
@@ -108,19 +108,19 @@
       "id": "CE06-LE2-K1",
       "typ": "koennen",
       "bloomSoll": 2,
-      "zugeordneteSteps": 1,
-      "erreichteTiefe": "geübt",
+      "zugeordneteSteps": 2,
+      "erreichteTiefe": "geprüft",
       "status": "PASS",
-      "begruendung": "Erreicht „geübt\" (≥ „geübt\")."
+      "begruendung": "Erreicht „geprüft\" (≥ „geübt\")."
     },
     {
       "id": "CE06-LE2-K2",
       "typ": "koennen",
       "bloomSoll": 2,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Kein Step zugeordnet — FEHLT."
+      "zugeordneteSteps": 1,
+      "erreichteTiefe": "geübt",
+      "status": "PASS",
+      "begruendung": "Erreicht „geübt\" (≥ „geübt\")."
     },
     {
       "id": "CE06-LE2-K3",
@@ -135,19 +135,19 @@
       "id": "CE06-LE2-K4",
       "typ": "koennen",
       "bloomSoll": 6,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Kein Step zugeordnet — FEHLT."
+      "zugeordneteSteps": 1,
+      "erreichteTiefe": "geprüft",
+      "status": "PASS",
+      "begruendung": "Erreicht „geprüft\" (≥ „geübt\")."
     },
     {
       "id": "CE06-LE2-E1",
       "typ": "einstellung",
       "bloomSoll": 5,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Einstellungsziel ohne jeden Berührungspunkt — Reflexionsformat fehlt."
+      "zugeordneteSteps": 1,
+      "erreichteTiefe": "geprüft",
+      "status": "BY-DESIGN",
+      "begruendung": "Einstellungsziel — Tiefe über Reflexion, nicht über Bloom-Stufe (semantischer Recheck)."
     },
     {
       "id": "CE06-LE3-W1",

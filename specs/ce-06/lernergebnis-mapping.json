@@ -1,20 +1,38 @@
 {
-  "_hinweis": "Step->Lernergebnis-Mapping CE-06 (W10-Tiefe-Gate). Welle 1: Reanimation (ls-wagner-reanimation) + neurologische Akutsituationen (ls-rios-synkope). LE1-K1/K4 + LE2-LE5 folgen in weiteren Wellen (siehe content/ce-06/BUILD-JOURNAL.md).",
+  "_hinweis": "Step->Lernergebnis-Mapping CE-06 (W10-Tiefe-Gate). Welle 1: Reanimation (ls-wagner-reanimation) + neurologische Akutsituationen (ls-rios-synkope). LE2 via ls-yildiz-thoraxschmerz (Herzinfarkt) + ls-gruber-schock (hypovolämischer Schock). LE3-LE5 folgen in weiteren Wellen (siehe content/ce-06/BUILD-JOURNAL.md).",
   "mapping": {
+    "CE06-LE2-W1": [
+      "ce06-gruber-erk-01"
+    ],
     "CE06-LE2-W3": [
       "ce06-yildiz-erk-01",
       "ce06-yildiz-erm-01",
       "ce06-yildiz-erm-02",
-      "ce06-yildiz-erm-03"
+      "ce06-yildiz-erm-03",
+      "ce06-gruber-erm-03",
+      "ce06-gruber-erm-04",
+      "ce06-gruber-erm-06"
     ],
     "CE06-LE2-K1": [
-      "ce06-yildiz-erk-02"
+      "ce06-yildiz-erk-02",
+      "ce06-gruber-erm-05"
+    ],
+    "CE06-LE2-K2": [
+      "ce06-gruber-erm-02"
     ],
     "CE06-LE2-K3": [
       "ce06-yildiz-erm-01"
     ],
+    "CE06-LE2-K4": [
+      "ce06-gruber-ref-02"
+    ],
+    "CE06-LE2-E1": [
+      "ce06-gruber-ref-01"
+    ],
     "CE06-LE2-W2": [
-      "ce06-yildiz-erm-03"
+      "ce06-yildiz-erm-03",
+      "ce06-gruber-erk-02",
+      "ce06-gruber-erm-01"
     ],
     "CE06-LE1-K1": [
       "ce06-lehmann-erk-01",
