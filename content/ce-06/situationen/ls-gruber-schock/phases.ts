@@ -254,26 +254,26 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
         mcVariant: "fallstrick",
         optionen: [
           {
-            text: "Keine Beine-hoch-Lagerung — bei einer oberen GI-Blutung flach bzw. nach seinem Wunsch lagern und den Kopf bei Erbrechen zur Seite.",
+            text: "Keine Beine-hoch-Lagerung — bei einer oberen GI-Blutung nach seinem Wunsch lagern (Oberkörper eher leicht erhöht) und den Kopf bei Erbrechen zur Seite.",
             isCorrect: true,
             explanation:
-              "Richtig — und das ist die Falle. Die Autotransfusionslage (Beine hoch) hilft beim hypovolämischen Schock, das Blut aus den Beinvenen in den Kreislauf zu bringen. Aber sie ist ausdrücklich ausgenommen bei Blutungen an Kopf, Lunge und oberem Magen-Darm-Trakt. Herr Gruber blutet aus dem oberen GI-Trakt und erbricht — Beine hoch würde nicht helfen, und die Kopftieflage erhöht die Aspirationsgefahr. Deshalb: flach bzw. nach Wunsch, bei Erbrechen den Kopf zur Seite, Sauerstoff und venöse Zugänge parallel vorbereiten.",
+              "Richtig — und das ist die Falle. Die Autotransfusionslage (Kopf/Oberkörper flach, Beine hoch) hilft beim hypovolämischen Schock, das Blut aus den Beinvenen in den Kreislauf zu bringen. Aber sie ist ausdrücklich ausgenommen bei Blutungen an Kopf, Lunge und oberem Magen-Darm-Trakt. Herr Gruber blutet aus dem oberen GI-Trakt und erbricht — Beine hoch bringt bei der aktiven Blutung keinen Vorteil, und die flache Kopf-/Oberkörperlagerung erhöht bei ihm die Aspirationsgefahr. Deshalb: nach seinem Wunsch positionieren (Oberkörper eher leicht erhöht), bei Erbrechen den Kopf zur Seite, Sauerstoff und venöse Zugänge parallel vorbereiten.",
             explanationB1:
-              "Richtig — und das ist die Falle. Die Beine-hoch-Lagerung hilft bei Schock durch Volumenmangel. Aber NICHT bei Blutungen an Kopf, Lunge oder Magen-Darm-Trakt. Herr Gruber blutet aus dem Magen und erbricht. Beine hoch hilft nicht, und der tiefe Kopf erhöht die Gefahr des Verschluckens. Also: flach oder nach Wunsch, Kopf beim Erbrechen zur Seite.",
+              "Richtig — und das ist die Falle. Die Beine-hoch-Lagerung hilft bei Schock durch Volumenmangel. Aber NICHT bei Blutungen an Kopf, Lunge oder Magen-Darm-Trakt. Herr Gruber blutet aus dem Magen und erbricht. Beine hoch hilft nicht, und flach liegen erhöht beim Erbrechen die Gefahr des Verschluckens (Aspiration). Also: nach seinem Wunsch lagern (Oberkörper eher etwas höher), Kopf beim Erbrechen zur Seite.",
           },
           {
             text: "Autotransfusionslage: flach hinlegen und beide Beine hochlagern, damit das in den Beinvenen gespeicherte Blut zurück in den Kreislauf fließt und den Blutdruck stützt.",
             isCorrect: false,
             explanation:
-              "Falsch — hier die klassische Falle. Die Regel 'Beine hoch bei Volumenmangel' stimmt grundsätzlich, ist aber ausdrücklich ausgenommen bei Blutungen an Kopf, Lunge und oberem Magen-Darm-Trakt. Bei Herrn Grubers oberer GI-Blutung mit Erbrechen erhöht die Kopftieflage die Aspirationsgefahr und bringt keinen Vorteil. Fachwissen heißt hier: die Ausnahme kennen.",
+              "Falsch — hier die klassische Falle. Die Regel 'Beine hoch bei Volumenmangel' stimmt grundsätzlich, ist aber ausdrücklich ausgenommen bei Blutungen an Kopf, Lunge und oberem Magen-Darm-Trakt. Bei Herrn Grubers oberer GI-Blutung mit Erbrechen bringt die flache Lagerung mit hochgelagerten Beinen keinen Vorteil und erhöht die Aspirationsgefahr. Fachwissen heißt hier: die Ausnahme kennen.",
             explanationB1:
-              "Falsch — die Falle. 'Beine hoch bei Volumenmangel' stimmt oft. Aber NICHT bei Blutung im Magen-Darm-Trakt. Herr Gruber erbricht Blut — der tiefe Kopf erhöht die Gefahr des Verschluckens.",
+              "Falsch — die Falle. 'Beine hoch bei Volumenmangel' stimmt oft. Aber NICHT bei Blutung im Magen-Darm-Trakt. Herr Gruber erbricht Blut — flach liegen erhöht die Gefahr des Verschluckens.",
           },
           {
             text: "Den Oberkörper stark aufrichten und ihn zum Aufstehen bewegen, damit ihm nicht mehr übel wird.",
             isCorrect: false,
             explanation:
-              "Falsch. Im Schock darf jede Anstrengung vermieden werden, Aufstehen kann den Kreislauf vollends zum Kollaps bringen. Bei der oberen GI-Blutung wird flach bzw. nach Wunsch gelagert, der Kopf bei Erbrechen zur Seite — nicht aufgesetzt und schon gar nicht mobilisiert.",
+              "Falsch. Im Schock darf jede Anstrengung vermieden werden, Aufstehen kann den Kreislauf vollends zum Kollaps bringen. Bei der oberen GI-Blutung wird nach Wunsch gelagert (Oberkörper eher leicht erhöht), der Kopf bei Erbrechen zur Seite — nicht aufgesetzt und schon gar nicht mobilisiert.",
             explanationB1:
               "Falsch. Im Schock darf er sich nicht anstrengen. Aufstehen kann den Kreislauf zum Zusammenbruch bringen. Er bleibt liegen, der Kopf beim Erbrechen zur Seite.",
           },
