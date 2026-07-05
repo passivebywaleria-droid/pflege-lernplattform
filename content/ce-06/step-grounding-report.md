@@ -23,3 +23,6 @@
 
 ## ls-radtke-brand — ✅ PASS
 - claim-tragende Steps: 8, gegroundet: 8, adoptiert: true
+
+## ls-erlemann-organspende — ✅ PASS
+- claim-tragende Steps: 7, gegroundet: 7, adoptiert: true

@@ -7,8 +7,20 @@
 
 ---
 
-## Status: LE1–LE4 KOMPLETT (8 Situationen) — gate-green, LE1–LE3 DEPLOYED (carovia.de), LE4 Deploy folgt
-> Live: https://carovia.de/de/lernen/situation/ls-kortmann-abdomen?ce=ce-06 (LE3, deployed 2026-07-05)
+## Status: 🎉 CE-06 KOMPLETT — LE1–LE5 (9 Situationen), rahmenplan-vollständig, Tiefe-Gate GRÜN (35/35 LE)
+> LE1–LE4 deployed auf carovia.de. LE5 Deploy: siehe unten.
+> **✅ LE5 KOMPLETT (2026-07-05):** `ls-erlemann-organspende` (Tobias Erlemann, 24, Hirntod nach Motorradunfall,
+> postmortale Organspende). Kernfakten `organspende-hirntod.md` (F-01..F-09, 30 Belege verbatim ✅ aus I care Pflege
+> Kap. 7.6.5 [TPG] + pflege-heute Kap. 43.14/Kap. 6). Deckt alle 7 LE5-LE: W1 (Organmangel), W2 (häufige Transpl.),
+> W3 (Ablauf postmortale Spende/Entscheidungslösung), W4 (Pflege hirntoter Mensch), K1 (TPG/Recht+Ethik), E1
+> (kulturelle Bedeutung Herz/Hirn), E2 (Lebend- vs. postmortale Spende, Pro/Contra). Rechtsstand: ENTSCHEIDUNGS-
+> LÖSUNG (2012), Widerspruchslösung nur als Distraktor; TPG definiert nicht den Tod; Hirntod-Feststellung 2 unabh.
+> Ärzte; Pflege drängt nicht/stellt nichts fest/gibt nichts frei. 8 Steps, 7/7 gegroundet. Klinik-Panel PASS
+> (0 HOCH/0 MITTEL) + pflege-validator PASS (0 HOCH; 1 MITTEL + 3 NIEDRIG ALLE gefixt). Currency-Lens bestanden.
+> **Tiefe-Gate erstmals komplett GRÜN: 35/35 LE mind. „geübt" (18 geübt, 17 geprüft, 7 by-design).**
+> Reports: pflege-review-erlemann.md, klinik-panel-erlemann-report.{md,json}.
+>
+> Alt: https://carovia.de/de/lernen/situation/ls-kortmann-abdomen?ce=ce-06 (LE3, deployed 2026-07-05)
 > **✅ LE4 KOMPLETT (2026-07-05):** `ls-radtke-brand` (nächtlicher Heimbrand → MANV → Triage → Krisenintervention).
 > Kernfakten `katastrophe-triage-krise.md` (F-01..F-12, 37 Belege verbatim ✅ aus pflege-heute Kap. 14.4/14.6/14.7/16.4).
 > Deckt alle 6 LE4-LE: W1 (MANV/Katastrophe/ABCDE/Triage), K1 (Anlässe→Sichtung), K2 (Brand/Notfallplan/Kleiderbrand),
