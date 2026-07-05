@@ -17,3 +17,6 @@
 
 ## ls-gruber-schock — ✅ PASS
 - claim-tragende Steps: 11, gegroundet: 11, adoptiert: true
+
+## ls-kortmann-abdomen — ✅ PASS
+- claim-tragende Steps: 12, gegroundet: 12, adoptiert: true

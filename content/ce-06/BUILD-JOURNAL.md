@@ -7,8 +7,9 @@
 
 ---
 
-## Status: LE1 + LE2 KOMPLETT (6 Situationen) — gate-green, DEPLOYED (Hetzner, HTTP 200)
-> Live: https://178-105-176-161.nip.io/de/lernen/situation/ls-wagner-reanimation?ce=ce-06
+## Status: LE1 + LE2 KOMPLETT + LE3 KOMPLETT (7 Situationen) — gate-green (LE3-Deploy Hetzner offen)
+> Live (LE1/LE2): https://178-105-176-161.nip.io/de/lernen/situation/ls-wagner-reanimation?ce=ce-06
+> Neu (LE3, noch nicht deployed): ls-kortmann-abdomen
 
 CE-06 = das Demo-Wow-Stück (Branching unter Zeitdruck). Welle 1 liefert die Reanimations-
 Leitsituation voll gegroundet und durch alle deterministischen Klinik-Gates.
@@ -102,6 +103,30 @@ i.v.-Kalium langsam/ZVK (Bolus-Distraktor = gefährlich-falsch), Patient nüchte
 Alle Gates grün. **Damit LE1 (7/7) + LE2 (8/8) komplett** — Coverage 19/35 LE. **Deployed (Hetzner, HTTP 200):**
 https://178-105-176-161.nip.io/de/lernen/situation/ls-gruber-schock?ce=ce-06
 
+**✅ LE3 KOMPLETT (2026-07-05):** `ls-kortmann-abdomen` (Werner Kortmann, 72, 2. postop Tag nach Notfall-
+Hartmann-OP bei perforierter Sigmadivertikulitis → endständiges Kolostoma links + intraabdominelle Zieldrainage
+[ohne Sog] + subkutane Redon + Blasendauerkatheter). Kernfakten `abdomen-stoma-drainagen.md` (F-01..F-17,
+**59 Belege verbatim ✅** aus Paetz Chirurgie 23. Aufl. Kap. 7.5/9.2.4/9.5/12.5/12.6/23.8/23.9 + I-care
+Krankheitslehre Kap. 7.1 [Schmerzarten] + EAUN Catheterisation Guideline 2024 [Dauerkatheter]).
+Deckt **alle 7 LE3-Lernergebnisse**: W1 (akutes Abdomen Ursachen/Symptome/DD, erk-01), W2 (Ileo-/Kolostoma +
+Versorgungsanforderung, erk-03), W3 (Drainagesysteme, ala-01), W4 (Schmerzarten erk-02 + postop Überwachung/
+Mobilisation/Katheter erk-05), K1 (postop Stoma-Inspektion, erk-04), K2 (Drainagen-Verbandwechsel aseptisch,
+ala-01), E1 (Bedeutung von Information/Wissen für den akuterkrankten Menschen, ref-01/02).
+**Dramaturgie:** stabiler 2. postop Tag (Wissen/Routine) → Bauchdrainage-Nachblutung → Akutspur → Re-OP-SBAR →
+Reflexion. **Kritische Leitplanken:** Stoma livide → Arzt (Nekrose-Beurteilung ärztlich); Bauchhöhlendrainage
+OHNE Sog (Darmschädigung); **>200 ml frisches Blut/1 h aus Drainage → sofort Arzt** (F-06, als späte/sekundäre
+Nachblutung an Tag 2 gerahmt); nüchtern (mögliche Re-OP); Drainage nicht eigenmächtig ziehen; keine erfundenen
+Dosen. 13 Steps, alle 12 claim-tragenden `kernfaktId`-gegroundet.
+Gates: zitat-verifizierer 59/59 ✅, step-grounding 12/12 ✅, klinik-zahlen/currency/anti-pattern 0 ✅,
+faktentreue STRICT 100% ✅, lernergebnis-tiefe LE3 alle 7 PASS/by-design ✅, tsc/vitest(564)/build/eslint ✅.
+**Klinik-Panel:** PASS (0 HOCH, kein K.O.). **pflege-validator:** PASS (0 HOCH); 2 MITTEL (livide-Stoma-Framing →
+als hypothetische Vignette entschärft; MC-Längen-Bias → Begründungen in explanation verschoben, Distraktoren
+angeglichen) + 5 NIEDRIG (Wärmflasche-Begründung, TrueFalse-B1-Glossen, Sandwich-Falsch-Feedback, F-06-Metrik,
+F-07-Kollision) — ALLE gefixt. Reports: `content/ce-06/pflege-review-kortmann.md`-Inhalt im Agent-Output;
+`content/ce-06/klinik-panel-kortmann-report.{md,json}`.
+**Damit LE1 (7/7) + LE2 (8/8) + LE3 (7/7) komplett — Coverage 26/35 LE.** Deploy Hetzner offen.
+Neuer Patient: Kortmann (72, akutes Abdomen/Kolostoma/Drainagen). Neuer Kernfakten-Slug: `abdomen-stoma-drainagen`.
+
 **Welle 2 (Rest):**
 - LE1-K1-Rest: Hitzeerschöpfung/Verbrennungen/Erfrierungen/Verätzungen (eigene Situation oder Bausteine).
 - LE3 Abdomen/Stoma (7) · LE4 Katastrophen/Triage (6) · LE5 Organspende (7).
@@ -114,7 +139,8 @@ atemunterstützende Lagerung. Quellen: pflege-heute Kap. 14/16, I-Care Anatomie,
   = **Adrenalin i.m. 0,5 mg** first-line. Route/Dosis sauber gegen aktuelle Leitlinie grounden,
   NICHT blind aus pflege-heute übernehmen. Ggf. Beschaffungsliste.
 
-**Welle 4 — LE3 Abdomen/Stoma/Drainagen (7 LE):** Paetz Chirurgie, I-Care Krankheitslehre.
+**Welle 4 — LE3 Abdomen/Stoma/Drainagen (7 LE): ✅ ERLEDIGT (2026-07-05, `ls-kortmann-abdomen`, siehe „LE3 KOMPLETT" oben).**
+Ursprüngliche Scout-Notizen (belassen als Beleg-Nachweis):
 > **LE3-Grounding vorab gescoutet (2026-07-04) — Quelle `recherche/paetz-chirurgie-volltext/paetz-chirurgie.txt`:**
 > - Akutes Abdomen Kap. 12.6 (Z. ~19124): „Sammelbegriff für verschiedene Krankheitsbilder, die eine akut
 >   bedrohliche, meist mit Schmerzen einhergehende Situation in der Bauchhöhle hervorrufen"; sofortiges Handeln,
@@ -140,8 +166,13 @@ LE5 stark rechtlich/ethisch (TPG, Hirntoddiagnostik) — Currency-Gate wichtig.
 - Akut-Phasen-Set: `erkennen`/`alarmieren`/`erstmassnahmen`/`uebergeben`/`reflektieren` (AkutPhase).
 - Jeder claim-tragende Step MUSS `kernfaktId` tragen (Auto-Strict pro Situation aktiv, sobald ≥1 Grounding).
 - Patienten CE-06 bisher: Wagner (67, Rea), Ríos (63, Synkope), Lehmann (86, Sturz/SHT), Novak (34, Psychose),
-  Yıldız (62, Herzinfarkt), Gruber (69, hypovoläm. Schock/GI-Blutung). Frei/geplant: Jusufi (Anaphylaxie, Welle 3),
-  Pfeiffer (Prüfung).
+  Yıldız (62, Herzinfarkt), Gruber (69, hypovoläm. Schock/GI-Blutung), Kortmann (72, akutes Abdomen/Kolostoma/
+  Drainagen, post-OP). Frei/geplant: Jusufi (Anaphylaxie, Welle 3), Pfeiffer (Prüfung).
+- LE3-Grounding-Quelle: Paetz-Chirurgie Kap. 12.5 (Nachblutung, >200 ml/1 h), 12.6 (akutes Abdomen, nüchtern),
+  7.5 (Drainagen, kein Sog im Bauch), 23.8/23.9 (Ileo/Kolo, postop Stomapflege: rosig=vital/livide=Störung/
+  grau-schwarz=Nekrose, 1. Wechsel 3. postop Tag), 9.2.4/9.5 (Frühmobilisation, Pneumonie, Harnverhalt);
+  I-care-Krankheitslehre Kap. 7.1 (viszeral/Kolik-Schmerz); EAUN 2024 (Katheter: Händehygiene, Beutel unter
+  Blasenniveau, knickfrei). Kernfakten-Slug `abdomen-stoma-drainagen` (F-01..F-17).
 - Schock-Grounding: pflege-heute Kap. 14.5 sauber belegt (4 Schockformen, Autotransfusionslage + Ausnahme
   Kopf/Lunge/oberer GI-Trakt, Schockindex >1 nur hypovoläm, O2 6–8 l/min, Katecholamin-Perfusor). Anatomie/
   Reizleitung in I-care-Anatomie Kap. 6/7 (Sinusknoten→AV→His→Tawara→Purkinje, HZV ca. 5 l/min).

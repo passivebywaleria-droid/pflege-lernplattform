@@ -56,6 +56,15 @@ import {
   CE06_SIT_GRUBER_REFLEKTIEREN,
 } from "./situationen/ls-gruber-schock";
 
+import {
+  CE06_SIT_KORTMANN_PATIENT,
+  CE06_SIT_KORTMANN_ERKENNEN,
+  CE06_SIT_KORTMANN_ALARMIEREN,
+  CE06_SIT_KORTMANN_ERSTMASSNAHMEN,
+  CE06_SIT_KORTMANN_UEBERGEBEN,
+  CE06_SIT_KORTMANN_REFLEKTIEREN,
+} from "./situationen/ls-kortmann-abdomen";
+
 export const CE06_SITUATIONEN: Lernsituation[] = [
   {
     situationId: "ls-wagner-reanimation",
@@ -173,6 +182,26 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
       CE06_SIT_GRUBER_ERSTMASSNAHMEN,
       CE06_SIT_GRUBER_UEBERGEBEN,
       CE06_SIT_GRUBER_REFLEKTIEREN,
+    ],
+    komplikationen: [],
+    bausteinTrigger: [],
+  },
+  {
+    situationId: "ls-kortmann-abdomen",
+    ceId: "ce-06",
+    situationsTyp: "akutsituation",
+    patient: CE06_SIT_KORTMANN_PATIENT,
+    titel: "Herr Kortmann — akutes Abdomen, Kolostoma & Drainagen (post-OP)",
+    titelB1: "Herr Kortmann — nach der Bauch-OP: Stoma, Drainagen, Nachblutung",
+    themen: ["abdomen-stoma-drainagen", "notfallkommunikation-sbar"],
+    spirale: 2,
+    geschaetzteUE: 1,
+    phasen: [
+      CE06_SIT_KORTMANN_ERKENNEN,
+      CE06_SIT_KORTMANN_ALARMIEREN,
+      CE06_SIT_KORTMANN_ERSTMASSNAHMEN,
+      CE06_SIT_KORTMANN_UEBERGEBEN,
+      CE06_SIT_KORTMANN_REFLEKTIEREN,
     ],
     komplikationen: [],
     bausteinTrigger: [],

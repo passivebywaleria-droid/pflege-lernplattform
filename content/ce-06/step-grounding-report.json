@@ -42,6 +42,13 @@
       "grounded": 11,
       "adopted": true,
       "findings": []
+    },
+    {
+      "situationId": "ls-kortmann-abdomen",
+      "claimBearingTotal": 12,
+      "grounded": 12,
+      "adopted": true,
+      "findings": []
     }
   ],
   "totals": {

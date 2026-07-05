@@ -1,0 +1,83 @@
+{
+  "ce": "ce-06",
+  "situation": "ls-kortmann-abdomen",
+  "datum": "2026-07-05",
+  "verdikt": "PASS",
+  "ko": false,
+  "prefilter": {
+    "klinik-panel": { "hoch": 0, "mittel": 0, "niedrig": 0, "belegt": "0/0" },
+    "pflege-anti-pattern-check": { "hoch": 0, "mittel": 0, "niedrig": 0 },
+    "step-grounding-check": { "claimTragend": 12, "gegroundet": 12, "dangling": 0, "missing": 0 }
+  },
+  "lenses": {
+    "1_zahlen_arzneimittel": {
+      "status": "PASS",
+      "geprueft": [
+        ">200 ml/1 h Nachblutung (F-06) — belegt, in ala-02/erm-01/erm-02/ueb-01 korrekt verwendet",
+        "1 Liter/Tag Dünndarminhalt (F-11) — belegt, erk-03",
+        "3 cm prominentes Ileostoma (F-11) — belegt in Kernfakten, in Steps nicht als Zahl behauptet",
+        "6–8 h Miktion (F-16) — belegt in Kernfakten, in Steps nicht als Zahl behauptet",
+        "1. Wechsel 3. postop Tag (F-13) — belegt in Kernfakten, in Steps nicht als Zahl behauptet",
+        "Ileo ≤24 h / Kolo 2–3 Tage Ausscheidung (F-14) — belegt in Kernfakten, in Steps qualitativ (Darmgeräusche/Stoma-Ausscheidung) statt als Zahl",
+        "Keine erfundenen Medikamenten-Dosen: Analgesie/Volumen/Transfusion durchgehend 'nach ärztlicher Anordnung', ohne Dosis/Präparat"
+      ],
+      "befunde": []
+    },
+    "2_recht_ethik_currency": {
+      "status": "PASS",
+      "geprueft": [
+        "Nekrose-/Durchblutungsstörung-Beurteilung als ärztliche Aufgabe deklariert (erk-04, deckungsgleich F-13)",
+        "Drainage nicht eigenmächtig abklemmen/ziehen — als falsch markiert mit Begründung (ala-02 Option 3)",
+        "Einmalkatheter ins Stoma (ärztlich/delegiert) — in Steps NICHT behauptet, daher keine ungedeckte Delegationsaussage",
+        "Keine veralteten Normen: keine §-Verweise, kein §1906/1906a, keine FeM-Aussage in dieser Situation"
+      ],
+      "befunde": []
+    },
+    "3_dnqp_standard_grounding": {
+      "status": "PASS",
+      "geprueft": [
+        "12/12 claim-tragende Steps gegroundet (step-grounding-check)",
+        "kernfaktId-Zuordnung inhaltlich passend je Step (erk-01..ref-02)",
+        "ueb-01 kernfaktId F-07 löst gegen themaPrimaer 'notfallassessment' korrekt auf SBAR-Fakt auf (nicht Drainage-F-07 aus abdomen-stoma-drainagen.md) — VERIFIZIERT korrekt",
+        "Nichts über Ausbildungs-/Curriculum-Niveau hinaus: alle Claims aus Paetz Chirurgie / I care Krankheitslehre / EAUN belegbar"
+      ],
+      "befunde": []
+    },
+    "4_konsistenz": {
+      "status": "PASS",
+      "geprueft": [
+        "Patientendaten durchgängig (72, m, Hartmann, endständiges Kolostoma links, Zieldrainage ohne Sog + Redon subkutan, Blasenkatheter)",
+        "patientId pat-kortmann-abdomen einheitlich",
+        "Alle stepId eindeutig (keine Dubletten)",
+        "Timeline sauber: 2. postop Tag / 16:40 Spätdienst → stabile Routine (erkennen) → Nachblutung (alarmieren) → Erstmaßnahmen → Re-OP-Übergabe → Reflexion",
+        "Stabil vs. akut sauber getrennt: Frühmobilisation NUR in Phase erkennen (stabil); Routine-Stomawechsel in erm-02 explizit in 'weglegen' mit Prioritätsbegründung — keine Mobilisation/kein Routine-Wechsel während der akuten Blutung"
+      ],
+      "befunde": []
+    },
+    "5_semantisch": {
+      "status": "PASS",
+      "geprueft": [
+        "Distraktor-vs-Empfehlung: falsche MC-/Branching-Optionen sind über isCorrect:false + Feedback klar als Fehler markiert, nie als Empfehlung (livide massieren, Sog an Bauchdrainage, Drainage ziehen, oral trinken, Wärmflasche, hoher Katheterbeutel, 'Blut ist normal, 1 h abwarten')",
+        "Keine Pseudo-Empathie/Bagatellisierung: NRS wird nicht bagatellisiert; 'ein bisschen Bauchweh normal?' ist Patientenzitat (Realitätscheck), nicht Pflegeaussage",
+        "Kinästhetik/Heben nicht einschlägig (kein Mobilisations-Handling-Step)",
+        "Step-Typ-Pflichten: MC mit explanation je Option; Branching mit echten Konsequenz-Pfaden; TrueFalse eindeutig; freetext/reflection mit fachlichen Bewertungskriterien + Standards-Bezug; pflegewagen mit korrekter/kontraindiziert-Logik konsistent"
+      ],
+      "befunde": []
+    }
+  },
+  "beschaffung": [],
+  "hinweise_advisory": [
+    {
+      "severity": "NIEDRIG",
+      "art": "advisory (kein Fehler)",
+      "ort": "ala-02 / erm-01 / erm-02 / ueb-01",
+      "text": "F-06 belegt verbatim '>200 ml in der ERSTEN Stunde' (unmittelbar postop). Die Situation spielt am 2. postop Tag und nutzt >200 ml/1 h als Raten-Alarmschwelle. Klinisch tragfähig (sekundäre/späte Nachblutung; Rate als untrügliches Warnzeichen), aber der Verbatim-Beleg bezieht sich auf die erste postop Stunde. Optional: einen Halbsatz ergänzen, dass eine späte/sekundäre Nachblutung gemeint ist. Kein K.O., keine Korrekturpflicht."
+    },
+    {
+      "severity": "INFO",
+      "art": "Lesbarkeit (kein Fehler)",
+      "ort": "ueb-01",
+      "text": "Es existieren zwei verschiedene 'F-07' in zwei Kernfakten-Themen (abdomen-stoma-drainagen.md = Drainagen; notfallassessment.md = SBAR). ueb-01 referenziert korrekt das SBAR-F-07 über themaPrimaer 'notfallassessment'. Auf den ersten Blick verwechselbar — Auflösung ist verifiziert korrekt."
+    }
+  ]
+}

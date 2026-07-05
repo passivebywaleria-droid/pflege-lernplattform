@@ -1,6 +1,6 @@
 # Lernergebnis-Tiefe-Report — ce-06
 
-Mindeststufe: „geübt" (Bloom ≥ 3). PASS 13 · FAIL 20 · by-design 2 · total 35
+Mindeststufe: „geübt" (Bloom ≥ 3). PASS 19 · FAIL 13 · by-design 3 · total 35
 
 | LE | Typ | Bloom-Soll | Steps | Tiefe | Status |
 |----|-----|-----------|-------|-------|--------|
@@ -19,13 +19,13 @@ Mindeststufe: „geübt" (Bloom ≥ 3). PASS 13 · FAIL 20 · by-design 2 · tot
 | CE06-LE2-K3 | koennen | 2 | 1 | geübt | PASS |
 | CE06-LE2-K4 | koennen | 6 | 1 | geprüft | PASS |
 | CE06-LE2-E1 | einstellung | 5 | 1 | geprüft | BY-DESIGN |
-| CE06-LE3-W1 | wissen | 2 | 0 | fehlt | FAIL |
-| CE06-LE3-W2 | wissen | 2 | 0 | fehlt | FAIL |
-| CE06-LE3-W3 | wissen | 2 | 0 | fehlt | FAIL |
-| CE06-LE3-W4 | wissen | 2 | 0 | fehlt | FAIL |
-| CE06-LE3-K1 | koennen | 2 | 0 | fehlt | FAIL |
-| CE06-LE3-K2 | koennen | 2 | 0 | fehlt | FAIL |
-| CE06-LE3-E1 | einstellung | 5 | 0 | fehlt | FAIL |
+| CE06-LE3-W1 | wissen | 2 | 1 | geübt | PASS |
+| CE06-LE3-W2 | wissen | 2 | 1 | geübt | PASS |
+| CE06-LE3-W3 | wissen | 2 | 1 | geübt | PASS |
+| CE06-LE3-W4 | wissen | 2 | 2 | geübt | PASS |
+| CE06-LE3-K1 | koennen | 2 | 1 | geübt | PASS |
+| CE06-LE3-K2 | koennen | 2 | 1 | geübt | PASS |
+| CE06-LE3-E1 | einstellung | 5 | 2 | geprüft | BY-DESIGN |
 | CE06-LE4-W1 | wissen | 2 | 0 | fehlt | FAIL |
 | CE06-LE4-K1 | koennen | 2 | 0 | fehlt | FAIL |
 | CE06-LE4-K2 | koennen | 3 | 0 | fehlt | FAIL |
