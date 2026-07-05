@@ -20,3 +20,6 @@
 
 ## ls-kortmann-abdomen — ✅ PASS
 - claim-tragende Steps: 12, gegroundet: 12, adoptiert: true
+
+## ls-radtke-brand — ✅ PASS
+- claim-tragende Steps: 8, gegroundet: 8, adoptiert: true

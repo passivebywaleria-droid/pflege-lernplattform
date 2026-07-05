@@ -2,15 +2,15 @@
   "ce": "ce-06",
   "bilanz": {
     "total": 35,
-    "pass": 19,
-    "fail": 13,
-    "byDesign": 3,
-    "fehlt": 13,
+    "pass": 23,
+    "fail": 7,
+    "byDesign": 5,
+    "fehlt": 7,
     "verteilung": {
-      "fehlt": 13,
+      "fehlt": 7,
       "berührt": 0,
-      "geübt": 10,
-      "geprüft": 12
+      "geübt": 14,
+      "geprüft": 14
     }
   },
   "results": [
@@ -216,55 +216,55 @@
       "id": "CE06-LE4-W1",
       "typ": "wissen",
       "bloomSoll": 2,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Kein Step zugeordnet — FEHLT."
+      "zugeordneteSteps": 4,
+      "erreichteTiefe": "geübt",
+      "status": "PASS",
+      "begruendung": "Erreicht „geübt\" (≥ „geübt\")."
     },
     {
       "id": "CE06-LE4-K1",
       "typ": "koennen",
       "bloomSoll": 2,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Kein Step zugeordnet — FEHLT."
+      "zugeordneteSteps": 2,
+      "erreichteTiefe": "geübt",
+      "status": "PASS",
+      "begruendung": "Erreicht „geübt\" (≥ „geübt\")."
     },
     {
       "id": "CE06-LE4-K2",
       "typ": "koennen",
       "bloomSoll": 3,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Kein Step zugeordnet — FEHLT."
+      "zugeordneteSteps": 2,
+      "erreichteTiefe": "geübt",
+      "status": "PASS",
+      "begruendung": "Erreicht „geübt\" (≥ „geübt\")."
     },
     {
       "id": "CE06-LE4-K3",
       "typ": "koennen",
       "bloomSoll": 2,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Kein Step zugeordnet — FEHLT."
+      "zugeordneteSteps": 1,
+      "erreichteTiefe": "geübt",
+      "status": "PASS",
+      "begruendung": "Erreicht „geübt\" (≥ „geübt\")."
     },
     {
       "id": "CE06-LE4-E1",
       "typ": "einstellung",
       "bloomSoll": 5,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Einstellungsziel ohne jeden Berührungspunkt — Reflexionsformat fehlt."
+      "zugeordneteSteps": 2,
+      "erreichteTiefe": "geprüft",
+      "status": "BY-DESIGN",
+      "begruendung": "Einstellungsziel — Tiefe über Reflexion, nicht über Bloom-Stufe (semantischer Recheck)."
     },
     {
       "id": "CE06-LE4-E2",
       "typ": "einstellung",
       "bloomSoll": 5,
-      "zugeordneteSteps": 0,
-      "erreichteTiefe": "fehlt",
-      "status": "FAIL",
-      "begruendung": "Einstellungsziel ohne jeden Berührungspunkt — Reflexionsformat fehlt."
+      "zugeordneteSteps": 1,
+      "erreichteTiefe": "geprüft",
+      "status": "BY-DESIGN",
+      "begruendung": "Einstellungsziel — Tiefe über Reflexion, nicht über Bloom-Stufe (semantischer Recheck)."
     },
     {
       "id": "CE06-LE5-W1",

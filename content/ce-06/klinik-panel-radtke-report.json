@@ -1,0 +1,55 @@
+{
+  "situation": "ls-radtke-brand",
+  "ce": "ce-06",
+  "le": "LE4 (Katastrophe/Triage/Brand/Krisenintervention)",
+  "geprueft": "2026-07-05",
+  "rolle": "Adversariales Klinik-Panel (4 deterministische Lenses) + semantischer 5. Lens (pflege-validator)",
+  "grounding": "specs/ce-06/kernfakten/katastrophe-triage-krise.md (F-01..F-12, verbatim Pflege heute Kap. 14.4/14.6/14.7/16.4)",
+  "prefilter": {
+    "klinik-panel.ts": "PASS (0 HOCH / 0 MITTEL / 0 NIEDRIG)",
+    "pflege-anti-pattern-check.ts": "PASS (0 Funde)",
+    "step-grounding-check.ts": "PASS (8/8 claim-tragende Steps gegroundet, 0 dangling)"
+  },
+  "verdikt": "PASS",
+  "hochBefunde": 0,
+  "befunde": [
+    {
+      "id": "RADTKE-L3-01",
+      "lens": "3 — DNQP/Standard/Grounding",
+      "severity": "NIEDRIG",
+      "step": "ce06-radtke-erk-01",
+      "kernfaktId": ["F-04", "F-03", "F-09"],
+      "befund": "Die korrekte MC-Option nennt als konkrete Brandschutz-Taktik 'Brandabschnitt schließen'. Diese spezifische Tatktik ist weder in den Kernfakten (F-04 = allgemein 'Notfallpläne/Vorgaben der Einrichtung kennen') noch verbatim im Volltext auffindbar (grep 'Brandabschnitt' / 'Türen schließen' im Brandkontext = 0 Treffer; 'Schließen der Zimmertür' existiert nur im Aggressions-/Gewalt-Kapitel).",
+      "einordnung": "Kein sachlicher Fehler — Rauchabschnitts-/Türenschließen ist etablierte deutsche Brandschutz-Doktrin und Teil jeder Brandschutzordnung; durch die Rahmung 'nach dem Brandschutzplan meiner Einrichtung' (F-04) weitgehend gedeckt. Aber: keine erfundene Detailtaktik ohne Beleg (Gründerin-Regel).",
+      "empfehlung": "Entweder Verbatim-Beleg für 'Brandabschnitt/Brandschutztür schließen' beschaffen ODER auf die belegte Allgemeinaussage generalisieren ('nach der Brandschutzordnung der Einrichtung vorgehen'). → Beschaffung.",
+      "belegt": true,
+      "beleg": "F-04 (Rahmen), fehlende Verbatim-Deckung für die Spezifik → Beschaffungsliste"
+    },
+    {
+      "id": "RADTKE-L1-01",
+      "lens": "1 — Zahlen/Fakten (W1)",
+      "severity": "NIEDRIG",
+      "step": "ce06-radtke-erm-02",
+      "kernfaktId": ["F-07", "F-08"],
+      "befund": "Der interaktive Triage-Step (pflegewagen) lehrt nur SK I (rot) / SK II (gelb) / SK III (grün). SK IV (blau, ohne Überlebenschance → palliativ) und schwarz (Tote) fehlen im schülersichtbaren Teil; vollständig sind sie nur im Datei-Header-Kommentar und in Kernfakt F-07.",
+      "einordnung": "Kein Fehler: nichts Falsches behauptet, die gezeigten 3 Kategorien sind exakt und belegt (F-07). Die Auslassung von SK IV/schwarz ist eine bewusste, ethisch saubere didaktische Scoping-Entscheidung (kein Sortieren eines lebenden Menschen als 'blau/erwartend' oder als 'tot' durch Lernende). Restrisiko: Schüler könnte das System für dreistufig halten.",
+      "empfehlung": "Optional ein Info-Satz im body/begruendung, dass zusätzlich SK IV (blau) und schwarz existieren — ohne sie interaktiv sortieren zu lassen.",
+      "belegt": true,
+      "beleg": "F-07 (vollständige SK I–IV + schwarz)"
+    }
+  ],
+  "lensErgebnisse": {
+    "1_zahlen_fakten": "PASS — SK I–III exakt & belegt (F-07); ABCDE=Airway/Breathing/Circulation/Disability/Exposure korrekt (F-06); MANV/Katastrophe-Definition korrekt (F-01/F-02); Kleiderbrand-Erstmaßnahmen inkl. 'nicht ins Gesicht' korrekt (F-05). KEINE erfundenen Instrumente (kein ESI/Manchester), keine Dosen. 1x NIEDRIG (SK IV/schwarz-Auslassung, kein Fehler).",
+    "2_recht_ethik_currency": "PASS — 'Keine Auskunft an Dritte, nur Einsatzleitung' korrekt + sauberes Persönlichkeitsrecht-/Datenschutz-Framing (F-10). Keine veralteten Normen (kein §1906/1906a; keine FeM-Norm einschlägig). Triage ethisch als 'für möglichst viele das Beste' / 'nach Dringlichkeit, nicht nach Lautstärke' dargestellt — keine Wertung von Menschenleben.",
+    "3_dnqp_standard_grounding": "PASS — 8/8 claim-tragende Steps mit kernfaktId, alle gegroundet (step-grounding-check). 1x NIEDRIG (unbelegte Spezifik 'Brandabschnitt schließen').",
+    "4_konsistenz": "PASS — Radtke 84 / beginnende Demenz / schwerhörig / Rollator durchgängig; Setting (Heimbrand 02:10 → MANV) konsistent; 9 stepIds unique; keine fremde patientId; alle 6 Triage-Zuordnungen (erm-02) stimmig zu den SK-Definitionen.",
+    "5_semantisch": "PASS — kein Distraktor-als-Empfehlung (alle Falsch-Optionen isCorrect:false + korrektive explanation); keine Pseudo-Empathie (psych. Erste Hilfe fachlich korrekt, F-10/F-11); Realitätscheck ok (ausführliche Sacherklärung an demente/panische Patientin korrekt als falsch markiert); Step-Typ-Pflichten erfüllt (explanation je Option, Sandwich-Feedback, du-Anrede, truefalse eindeutig, freetext Kriterien+Musterantwort, reflection achtsam/sandwich)."
+  },
+  "beschaffung": [
+    {
+      "item": "Verbatim-Beleg für 'Brandabschnitt/Brandschutztür schließen' als Brandfall-Sofortmaßnahme",
+      "grund": "In erk-01 verwendet, aber nicht in Kernfakten/Volltext auffindbar.",
+      "quelle_vorschlag": "Pflege heute Kap. 14.6/14.7 (Verhalten im Brandfall) prüfen, sonst Brandschutzordnung/DIN 14096 — NICHT erfinden."
+    }
+  ]
+}

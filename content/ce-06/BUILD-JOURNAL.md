@@ -7,8 +7,15 @@
 
 ---
 
-## Status: LE1 + LE2 + LE3 KOMPLETT (7 Situationen) — gate-green, DEPLOYED (carovia.de / Hetzner)
+## Status: LE1–LE4 KOMPLETT (8 Situationen) — gate-green, LE1–LE3 DEPLOYED (carovia.de), LE4 Deploy folgt
 > Live: https://carovia.de/de/lernen/situation/ls-kortmann-abdomen?ce=ce-06 (LE3, deployed 2026-07-05)
+> **✅ LE4 KOMPLETT (2026-07-05):** `ls-radtke-brand` (nächtlicher Heimbrand → MANV → Triage → Krisenintervention).
+> Kernfakten `katastrophe-triage-krise.md` (F-01..F-12, 37 Belege verbatim ✅ aus pflege-heute Kap. 14.4/14.6/14.7/16.4).
+> Deckt alle 6 LE4-LE: W1 (MANV/Katastrophe/ABCDE/Triage), K1 (Anlässe→Sichtung), K2 (Brand/Notfallplan/Kleiderbrand),
+> K3 (Krisenintervention/KIT/psych. Erste Hilfe), E1 (Eigenschutz/eigenes Funktionieren), E2 (Supervision).
+> Showcase: 3-Zonen-Triage-Pflegewagen (SK I rot/II gelb/III grün). 9 Steps, 8/8 claim-tragend gegroundet.
+> Klinik-Panel PASS + pflege-validator PASS (2 MITTEL + 5 NIEDRIG + 2 Panel-NIEDRIG ALLE gefixt). Alle Gates grün.
+> Reports: pflege-review-radtke.md, klinik-panel-radtke-report.{md,json}. **Coverage 32/35 LE. Nur LE5 offen.**
 > carovia.de zeigt auf denselben Hetzner-Server (178.105.176.161) wie die nip.io-Preview.
 >
 > **Deploy-Learnings (2026-07-05):**

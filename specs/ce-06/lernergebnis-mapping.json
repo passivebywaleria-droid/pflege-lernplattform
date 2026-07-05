@@ -1,6 +1,30 @@
 {
   "_hinweis": "Step->Lernergebnis-Mapping CE-06 (W10-Tiefe-Gate). Welle 1: Reanimation (ls-wagner-reanimation) + neurologische Akutsituationen (ls-rios-synkope). LE2 via ls-yildiz-thoraxschmerz (Herzinfarkt) + ls-gruber-schock (hypovolämischer Schock). LE3-LE5 folgen in weiteren Wellen (siehe content/ce-06/BUILD-JOURNAL.md).",
   "mapping": {
+    "CE06-LE4-W1": [
+      "ce06-radtke-erk-01",
+      "ce06-radtke-ala-01",
+      "ce06-radtke-erm-01",
+      "ce06-radtke-erm-02"
+    ],
+    "CE06-LE4-K1": [
+      "ce06-radtke-erm-02",
+      "ce06-radtke-erm-03"
+    ],
+    "CE06-LE4-K2": [
+      "ce06-radtke-erk-01",
+      "ce06-radtke-erk-02"
+    ],
+    "CE06-LE4-K3": [
+      "ce06-radtke-ueb-01"
+    ],
+    "CE06-LE4-E1": [
+      "ce06-radtke-erm-03",
+      "ce06-radtke-ref-01"
+    ],
+    "CE06-LE4-E2": [
+      "ce06-radtke-ref-02"
+    ],
     "CE06-LE3-W1": [
       "ce06-kortmann-erk-01"
     ],

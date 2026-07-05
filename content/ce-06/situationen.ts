@@ -65,6 +65,15 @@ import {
   CE06_SIT_KORTMANN_REFLEKTIEREN,
 } from "./situationen/ls-kortmann-abdomen";
 
+import {
+  CE06_SIT_RADTKE_PATIENT,
+  CE06_SIT_RADTKE_ERKENNEN,
+  CE06_SIT_RADTKE_ALARMIEREN,
+  CE06_SIT_RADTKE_ERSTMASSNAHMEN,
+  CE06_SIT_RADTKE_UEBERGEBEN,
+  CE06_SIT_RADTKE_REFLEKTIEREN,
+} from "./situationen/ls-radtke-brand";
+
 export const CE06_SITUATIONEN: Lernsituation[] = [
   {
     situationId: "ls-wagner-reanimation",
@@ -202,6 +211,26 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
       CE06_SIT_KORTMANN_ERSTMASSNAHMEN,
       CE06_SIT_KORTMANN_UEBERGEBEN,
       CE06_SIT_KORTMANN_REFLEKTIEREN,
+    ],
+    komplikationen: [],
+    bausteinTrigger: [],
+  },
+  {
+    situationId: "ls-radtke-brand",
+    ceId: "ce-06",
+    situationsTyp: "akutsituation",
+    patient: CE06_SIT_RADTKE_PATIENT,
+    titel: "Nächtlicher Brand im Pflegeheim — Katastrophe, Triage & Krisenintervention",
+    titelB1: "Brand im Pflegeheim — Katastrophe, Triage, Krisenhilfe",
+    themen: ["katastrophe-triage-krise"],
+    spirale: 3,
+    geschaetzteUE: 1,
+    phasen: [
+      CE06_SIT_RADTKE_ERKENNEN,
+      CE06_SIT_RADTKE_ALARMIEREN,
+      CE06_SIT_RADTKE_ERSTMASSNAHMEN,
+      CE06_SIT_RADTKE_UEBERGEBEN,
+      CE06_SIT_RADTKE_REFLEKTIEREN,
     ],
     komplikationen: [],
     bausteinTrigger: [],
