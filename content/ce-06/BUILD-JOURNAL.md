@@ -7,9 +7,14 @@
 
 ---
 
-## Status: LE1 + LE2 KOMPLETT + LE3 KOMPLETT (7 Situationen) — gate-green (LE3-Deploy Hetzner offen)
-> Live (LE1/LE2): https://178-105-176-161.nip.io/de/lernen/situation/ls-wagner-reanimation?ce=ce-06
-> Neu (LE3, noch nicht deployed): ls-kortmann-abdomen
+## Status: LE1 + LE2 + LE3 KOMPLETT (7 Situationen) — gate-green, DEPLOYED (carovia.de / Hetzner)
+> Live: https://carovia.de/de/lernen/situation/ls-kortmann-abdomen?ce=ce-06 (LE3, deployed 2026-07-05)
+> carovia.de zeigt auf denselben Hetzner-Server (178.105.176.161) wie die nip.io-Preview.
+>
+> **Deploy-Learnings (2026-07-05):**
+> - `scripts/deploy-hetzner.sh` lud NUR messages/+src/ — content/ FEHLTE (wird vom App-Build importiert). Gefixt: content/ wird jetzt mit hochgeladen.
+> - Deploy geht per SSH (`~/.ssh/hetzner_key` → root@178.105.176.161), `/opt/pflege/deploy` → `docker compose --env-file .env up -d --build app`.
+> - **Verifikation NICHT per curl+grep auf Server-HTML** — Situationen rendern client-seitig (React-Hydration), Step-Text steht nicht im SSR-HTML (auch bei live-Situationen nicht). Stattdessen: `docker exec deploy-app-1 grep -rl "<Content-Marker>" /app/.next/server` (Bundle-Grep) oder Headless-Browser.
 
 CE-06 = das Demo-Wow-Stück (Branching unter Zeitdruck). Welle 1 liefert die Reanimations-
 Leitsituation voll gegroundet und durch alle deterministischen Klinik-Gates.
