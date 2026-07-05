@@ -13,13 +13,16 @@ LIVE="https://178-105-176-161.nip.io/de"
 cd "$REPO"
 echo "→ Projektordner: $REPO"
 
-echo "→ 1/3  messages/ hochladen …"
+echo "→ 1/4  messages/ hochladen …"
 rsync -az -e "$RSH" messages/ "$HOST:/opt/pflege/messages/"
 
-echo "→ 2/3  src/ hochladen …"
+echo "→ 2/4  content/ hochladen …  (Lerninhalte — wird vom App-Build direkt importiert)"
+rsync -az -e "$RSH" content/ "$HOST:/opt/pflege/content/"
+
+echo "→ 3/4  src/ hochladen …"
 rsync -az --exclude='.next' --exclude='node_modules' -e "$RSH" src/ "$HOST:/opt/pflege/src/"
 
-echo "→ 3/3  Build + Neustart auf dem Server (dauert ein paar Minuten) …"
+echo "→ 4/4  Build + Neustart auf dem Server (dauert ein paar Minuten) …"
 ssh -i "$KEY" "$HOST" 'cd /opt/pflege/deploy && docker compose --env-file .env up -d --build app'
 
 echo "→ Prüfe, ob die neue Version live ist …"
