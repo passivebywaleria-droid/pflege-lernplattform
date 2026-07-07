@@ -1,0 +1,24 @@
+{
+  "ce": "ce-04",
+  "reports": [
+    {
+      "situationId": "ls-demir-diabetes",
+      "claimBearingTotal": 5,
+      "grounded": 0,
+      "adopted": false,
+      "findings": []
+    },
+    {
+      "situationId": "ls-wagner-konflikt",
+      "claimBearingTotal": 5,
+      "grounded": 0,
+      "adopted": false,
+      "findings": []
+    }
+  ],
+  "totals": {
+    "totalFindings": 0,
+    "dangling": 0,
+    "missing": 0
+  }
+}
