@@ -1,0 +1,22 @@
+# Quellenabgleich für die Dozentin — LE5: Organspende & Hirntod (Tobias Erlemann)
+
+> Situation: `ls-erlemann-organspende` · Kernfakten: `specs/ce-06/kernfakten/organspende-hirntod.md`
+> **Links:** der Fakt, wie er im Content gelehrt wird. **Rechts:** die Literatur wortwörtlich (verbatim).
+> Alle Zitate maschinell geprüft (`zitat-verifizierer`). Quellen: I care Pflege (Kap. 7.6.5 TPG), Pflege heute (7. Aufl.) Kap. 43.14 + Kap. 6.
+>
+> **Rechtsstand-Hinweis:** Content lehrt die **Entscheidungslösung** (seit 2012). Das Organspende-Register (seit 03/2024) ist bewusst
+> NICHT erwähnt (Buchstand 2019/2020) — die Entscheidungslösung selbst gilt weiter. Bitte prüfen, ob du das Register ergänzt haben willst.
+
+| # | Fakt (so gelehrt) | Literatur — wortwörtlich | Quelle & Kapitel |
+|---|-------------------|--------------------------|------------------|
+| F-01 | TPG regelt Zulässigkeit/Vergabe/Wartelisten von Organspenden (Lebende + Verstorbene); nicht für Blut (Transfusionsgesetz). | „Das Transplantationsgesetz regelt, ob Organspenden zulässig sind und auf welche Weise die Organe vergeben" · „sowohl bei Lebenden als auch" | I care Pflege, Kap. 7.6.5 |
+| F-02 | Vor Organentnahme muss stets der Gesamthirntod festgestellt sein; das TPG definiert NICHT den Tod, sondern ein Mindestkriterium für die Entnahme. | „Vor einer Organentnahme muss stets der Gesamthirntod" · „definiert der Gesetzgeber nicht den Tod" · „ein Mindestkriterium für die Organentnahme fest" | I care Pflege, Kap. 7.6.5 |
+| F-03 | Entnahme nur zulässig bei Einwilligung + festgestelltem Hirntod (durch Arzt); unzulässig bei Widerspruch; Arzt unterrichtet nächste Angehörige. | „Die Entnahme von Organen ist nur zulässig, wenn der Organspender in die Entnahme eingewilligt hat" · „der Hirntod des Organspenders festgestellt ist" · „Der Arzt muss den nächsten Angehörigen des Organspenders über die beabsichtigte Organentnahme unterrichten" | I care Pflege, Kap. 7.6.5 |
+| F-04 | Hirntod-Feststellung: zwei Ärzte, die nichts mit der Transplantation zu tun haben, einer mit langjähriger Intensiverfahrung, unabhängig voneinander; plus Wartezeiten/technische Untersuchungen. | „So müssen zwei" · „untersuchende Ärzte, die nichts mit der" · „wenigstens einer über langjährige" · „unabhängig voneinander den Hirntod feststellen und dokumentieren" | Pflege heute, Kap. 43.14 |
+| F-05 | In Deutschland Entscheidungslösung (seit Ende 2012): Kassen informieren ab 16, Organspendeausweis; man kann zustimmen/einschränken/widersprechen/Vertrauensperson beauftragen. | „seit Ende 2012" · „die Entscheidungslösung" · „Die Krankenkassen informieren Versicherte, die älter als" · „zustimmen, sie einschränken," · „eine Person seines" · „Vertrauens mit der Entscheidung beauftragen" | Pflege heute, Kap. 43.14 |
+| F-06 | Es besteht Organmangel; deshalb haben Lebendspenden von Niere und Leberteilen deutlich zugenommen. | „Aufgrund des Organmangels" · „haben Lebendspenden von Niere und" · „Leberteilen deutlich zugenommen" | Pflege heute, Kap. 43.14 |
+| F-07 | Häufig transplantiert: Niere und Leber. Beispiel Leber 2017: 821 Lebertransplantationen, davon 760 postmortal. | „2017 erfolgten in Deutschland 821 Lebertransplantationen" · „760 nach postmortaler Organspende" · „Die Nierentransplantation" | Pflege heute, Kap. 43/33.5.8 |
+| F-08 | Kulturell/religiös unterschiedliche Bewertung: manche erkennen den Hirntod an / Spende als Nächstenliebe bzw. gottfällig; andere setzen Hirntod nicht mit dem Tod gleich → Entnahme nicht zulässig. | „Die Organspende gilt als gottfällige Haltung" · „ein Menschenleben zu retten, hat oberste Priorität" · „Hirntod ist daher nicht dem Tod des Menschen gleichzusetzen" · „Liberale Juden erkennen das Hirntodkonzept an" | Pflege heute, Kap. 6 |
+| F-09 | Pflege des hirntoten Menschen + Angehörigenbegleitung = ethische Grenzsituation: Körper wird intensivmed. weiterbehandelt trotz Hirntod; Arzt unterrichtet Angehörige; einfühlsame Begleitung, Abschied ermöglichen. | „Der Arzt muss den nächsten Angehörigen des Organspenders über die beabsichtigte Organentnahme unterrichten" · „Vor einer Organentnahme muss stets der Gesamthirntod" | I care Pflege, Kap. 7.6.5 |
+
+**Angewandtes Urteil (über die Verbatim-Belege hinaus, bitte besonders prüfen):** die Aussage „mutmaßlicher Wille der Angehörigen bei fehlender eigener Entscheidung" (fachlich/rechtlich § 4 TPG korrekt, im Kernfakten-Set über F-03/F-05 gestützt, nicht verbatim); die ergebnisoffene, nicht drängende Angehörigenbegleitung (ueb-01); die Pro/Contra-Ausgewogenheit der Musterantwort (ref-02).

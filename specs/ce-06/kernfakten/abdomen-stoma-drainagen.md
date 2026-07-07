@@ -55,7 +55,13 @@ Wichtige Ursachen sind Entzündungen (z. B. Appendizitis, Cholezystitis, Pankrea
 
 **Beleg:**
 - Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`
+- Zitat: "Entzündung von Organen in der Bauchhöhle"
+- Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`
 - Zitat: "Perforation von Hohlorganen"
+- Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`
+- Zitat: "Sigmaperforation bei Divertikulitis"
+- Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`
+- Zitat: "Zirkulationsstörung"
 - Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`
 - Zitat: "Prozesse außerhalb der Bauchhöhle können die Symptomatik eines akuten Abdomens"
 - Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`
