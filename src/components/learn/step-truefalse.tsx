@@ -10,7 +10,7 @@
  * - Inline-style color auf Container (shadcn-glass-ui Fix)
  */
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   motion,
   AnimatePresence,
@@ -37,6 +37,17 @@ interface StepTrueFalseProps {
   sprachLevel?: "c1" | "b1";
   cards: TrueFalseCard[];
   onNext: (correct: boolean) => void;
+  /**
+   * Play-then-Gate: wenn gesetzt, wird die ERSTE Antwort abgefangen — statt
+   * das Feedback zu zeigen, ruft die Komponente onGatedAnswer() auf (die Seite
+   * blendet dann das Gate ein). Die Antwort bleibt "pending".
+   */
+  onGatedAnswer?: () => void;
+  /**
+   * Sobald true, wird die abgefangene "pending" Antwort doch enthüllt
+   * (z. B. nachdem das soft-Gate weggetippt wurde).
+   */
+  gateReleased?: boolean;
 }
 
 export function StepTrueFalse({
@@ -46,6 +57,8 @@ export function StepTrueFalse({
   sprachLevel = "c1",
   cards,
   onNext,
+  onGatedAnswer,
+  gateReleased = false,
 }: StepTrueFalseProps) {
   const [cardIdx, setCardIdx] = useState(0);
   const [results, setResults] = useState<boolean[]>([]);
@@ -55,9 +68,26 @@ export function StepTrueFalse({
     explanation: string;
     wasTrue: boolean;
   } | null>(null);
+  // Play-then-Gate: abgefangene Antwort, die noch nicht enthüllt wurde.
+  const [pending, setPending] = useState<{
+    correct: boolean;
+    explanation: string;
+    wasTrue: boolean;
+  } | null>(null);
+  const gateFiredRef = useRef(false);
 
   const card = cards[cardIdx];
   const done = cardIdx >= cards.length;
+
+  // Reveal der abgefangenen Antwort, sobald das Gate weggetippt wurde.
+  useEffect(() => {
+    if (gateReleased && pending) {
+      setResults((r) => [...r, pending.correct]);
+      setLastAnswer(pending);
+      setShowResult(true);
+      setPending(null);
+    }
+  }, [gateReleased, pending]);
 
   const x = useMotionValue(0);
   const rotate = useTransform(x, [-200, 200], [-8, 8]);
@@ -78,6 +108,13 @@ export function StepTrueFalse({
       sprachLevel === "b1" && card.explanationB1
         ? card.explanationB1
         : card.explanation;
+    // Play-then-Gate: erste Antwort abfangen — Feedback zurückhalten, Gate zeigen.
+    if (onGatedAnswer && !gateFiredRef.current) {
+      gateFiredRef.current = true;
+      setPending({ correct, explanation, wasTrue: card.isTrue });
+      onGatedAnswer();
+      return;
+    }
     setResults((r) => [...r, correct]);
     setLastAnswer({ correct, explanation, wasTrue: card.isTrue });
     setShowResult(true);

@@ -64,6 +64,10 @@ export interface StepRendererProps {
   reflexionText: string | null;
   score: number;
   totalQuestions: number;
+  /** Play-then-Gate: nur am Gate-Step gesetzt — fängt die erste Antwort ab. */
+  onGatedAnswer?: () => void;
+  /** Play-then-Gate: gibt die abgefangene Antwort frei (Gate weggetippt). */
+  gateReleased?: boolean;
 }
 
 export function StepRenderer({
@@ -76,6 +80,8 @@ export function StepRenderer({
   reflexionText,
   score,
   totalQuestions,
+  onGatedAnswer,
+  gateReleased,
 }: StepRendererProps) {
   const content = sprachLevel === "b1" && step.contentB1 ? step.contentB1 : step.contentC1;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any -- v2 Steps nutzen kürzere Feldnamen, Fallback per runtime-check
@@ -360,6 +366,8 @@ export function StepRenderer({
           sprachLevel={sprachLevel}
           cards={tfCards}
           onNext={(correct) => onNext(correct)}
+          onGatedAnswer={onGatedAnswer}
+          gateReleased={gateReleased}
         />
       );
     }

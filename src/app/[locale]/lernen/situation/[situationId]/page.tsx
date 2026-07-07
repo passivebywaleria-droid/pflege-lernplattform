@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useParams, useSearchParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
@@ -16,6 +16,8 @@ import type {
 import { PhasenProgress } from "@/components/learn/phasen-progress";
 import { StepRenderer } from "@/components/learn/step-renderer";
 import { PatientAvatar } from "@/components/learn/patient-avatar";
+import { PlayGate } from "@/components/learn/play-gate";
+import { trackFunnel } from "@/lib/funnel/track";
 import { CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR } from "../../../../../../content/ce-02/themen/sturz-prophylaxe/glossar";
 
 /**
@@ -46,6 +48,17 @@ export default function SituationLernenPage() {
   // OBEN im nächsten Step angezeigt (vom vorherigen Step mitgegeben).
   const [transitionText, setTransitionText] = useState<string | null>(null);
 
+  // Play-then-Gate: Gast-Status + Gate-Zustand.
+  // isGuest: null = noch unbekannt, true = nicht eingeloggt, false = eingeloggt.
+  const [isGuest, setIsGuest] = useState<boolean | null>(null);
+  // "idle" = noch nicht gezeigt · "soft" = soft-Gate offen (wegtippbar) ·
+  // "dismissed" = einmal weggetippt, ab jetzt greift das harte Gate.
+  const [gateStatus, setGateStatus] = useState<"idle" | "soft" | "dismissed">(
+    "idle"
+  );
+  const hydratedRef = useRef(false);
+  const gastStartFiredRef = useRef(false);
+
   useEffect(() => {
     setLoading(true);
     staticLoadSituation(ceId, situationId)
@@ -61,6 +74,79 @@ export default function SituationLernenPage() {
       })
       .finally(() => setLoading(false));
   }, [ceId, situationId]);
+
+  // Gast-Status ermitteln (Session-Cookie ist httpOnly → nur via API lesbar).
+  useEffect(() => {
+    let cancelled = false;
+    fetch("/api/auth/me")
+      .then((r) => r.json())
+      .then((d) => {
+        if (!cancelled) setIsGuest(!d.authenticated);
+      })
+      .catch(() => {
+        // Fehler → als Gast behandeln (Pilot-Zielgruppe sind Nicht-Registrierte).
+        if (!cancelled) setIsGuest(true);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  // Gast-Fortschritt aus localStorage wiederherstellen (einmalig, nach Content + Gast-Status).
+  useEffect(() => {
+    if (hydratedRef.current) return;
+    if (!situation || isGuest === null) return;
+    hydratedRef.current = true;
+    if (!isGuest) return;
+    try {
+      const saved = JSON.parse(
+        window.localStorage.getItem(`pflege:guest:${situationId}`) ?? "null"
+      );
+      if (saved && saved.currentPhaseId) {
+        setCurrentPhaseId(saved.currentPhaseId);
+        setCompletedPhases(saved.completedPhases ?? []);
+        setCurrentStepIndex(saved.currentStepIndex ?? 0);
+        if (saved.gateStatus === "dismissed") setGateStatus("dismissed");
+      }
+    } catch {
+      // beschädigter/leerer Eintrag — frisch starten
+    }
+  }, [situation, isGuest, situationId]);
+
+  // Gast-Fortschritt persistieren (erst nach Hydration, um den gespeicherten
+  // Stand nicht mit den Default-Werten zu überschreiben).
+  useEffect(() => {
+    if (isGuest !== true || !situation || !hydratedRef.current) return;
+    try {
+      window.localStorage.setItem(
+        `pflege:guest:${situationId}`,
+        JSON.stringify({
+          currentPhaseId,
+          completedPhases,
+          currentStepIndex,
+          gateStatus,
+        })
+      );
+    } catch {
+      // localStorage nicht verfügbar (privater Modus) — ignorieren
+    }
+  }, [
+    isGuest,
+    situation,
+    situationId,
+    currentPhaseId,
+    completedPhases,
+    currentStepIndex,
+    gateStatus,
+  ]);
+
+  // Funnel: Gast öffnet die Situation (einmalig).
+  useEffect(() => {
+    if (isGuest === true && situation && !gastStartFiredRef.current) {
+      gastStartFiredRef.current = true;
+      trackFunnel("gast_start", { situationId });
+    }
+  }, [isGuest, situation, situationId]);
 
   // Reihenfolge der Phasen dieser Situation (situationsTyp-abhängig)
   const phaseOrder: AnyPhase[] = situation?.phasen.map((p) => p.phase) ?? [];
@@ -84,6 +170,7 @@ export default function SituationLernenPage() {
   );
 
   const advanceStep = useCallback(() => {
+    if (isGuest) trackFunnel("step_fertig", { situationId });
     if (currentStepIndex < phaseSteps.length - 1) {
       setCurrentStepIndex((prev) => prev + 1);
     } else {
@@ -96,7 +183,7 @@ export default function SituationLernenPage() {
         setCurrentStepIndex(0);
       }
     }
-  }, [currentStepIndex, phaseSteps.length, completedPhases, currentPhaseId, phaseOrder]);
+  }, [currentStepIndex, phaseSteps.length, completedPhases, currentPhaseId, phaseOrder, isGuest, situationId]);
 
   const handleNextStep = useCallback(() => {
     // Micro-Narration: wenn Step ein transition-Feld hat, kurzen
@@ -147,6 +234,23 @@ export default function SituationLernenPage() {
     phaseOrder.length > 0 && completedPhases.length === phaseOrder.length;
   const phaseLabel = t(`phasen.${currentPhaseId}`);
   const totalSteps = phaseSteps.length;
+
+  // Play-then-Gate: der Gate-Step ist der 2. Step der ERSTEN Phase.
+  // Step 1 gibt den vollen Reveal als Hook, an Step 2 greift das Gate.
+  const firstPhaseId = situation.phasen[0]?.phase;
+  const isGateStep =
+    !!firstPhaseId &&
+    currentPhaseId === firstPhaseId &&
+    currentStepIndex === 1;
+  // soft-Gate: offen, wegtippbar. Nur für Gäste.
+  const showSoftGate = isGuest === true && gateStatus === "soft";
+  // hartes Gate: nach einmaligem Wegtippen — greift ab dem nächsten Step,
+  // blockiert bis zur Registrierung.
+  const showHardGate =
+    isGuest === true &&
+    gateStatus === "dismissed" &&
+    !isGateStep &&
+    !allPhasesCompleted;
 
   return (
     <div className="h-dvh bg-[var(--lern-bg)] flex flex-col overflow-hidden">
@@ -265,6 +369,15 @@ export default function SituationLernenPage() {
                   reflexionText={null}
                   score={0}
                   totalQuestions={phaseSteps.length}
+                  onGatedAnswer={
+                    isGuest === true && isGateStep && gateStatus === "idle"
+                      ? () => {
+                          setGateStatus("soft");
+                          trackFunnel("gate_gezeigt", { situationId });
+                        }
+                      : undefined
+                  }
+                  gateReleased={gateStatus === "dismissed"}
                 />
               </motion.div>
             </AnimatePresence>
@@ -383,6 +496,17 @@ export default function SituationLernenPage() {
             </button>
           </motion.div>
         </div>
+      )}
+
+      {/* Play-then-Gate — soft (wegtippbar) bzw. hart (verpflichtend) */}
+      {(showSoftGate || showHardGate) && (
+        <PlayGate
+          locale={locale}
+          situationId={situationId}
+          ceId={ceId}
+          soft={showSoftGate}
+          onDismiss={() => setGateStatus("dismissed")}
+        />
       )}
     </div>
   );
