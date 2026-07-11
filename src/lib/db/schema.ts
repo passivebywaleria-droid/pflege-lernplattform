@@ -474,7 +474,8 @@ export const examCases = pgTable(
 export const users = pgTable("users", {
   id: uuid("id").defaultRandom().primaryKey(),
   email: varchar("email", { length: 255 }).notNull().unique(),
-  passwordHash: varchar("password_hash", { length: 255 }).notNull(),
+  // Nullable seit Pilot: passwortlose Accounts (Magic-Link / Google OAuth).
+  passwordHash: varchar("password_hash", { length: 255 }),
   name: varchar("name", { length: 255 }),
   role: userRoleEnum("role").notNull().default("student"),
   schoolId: uuid("school_id").references(() => schools.id, {
@@ -490,6 +491,9 @@ export const users = pgTable("users", {
   isActive: boolean("is_active").notNull().default(true),
   isMinor: boolean("is_minor").notNull().default(false),
   parentalConsentAt: timestamp("parental_consent_at"),
+  // Pilot: Geburtsjahr statt Klarname/Geburtsdatum (Datensparsamkeit) —
+  // ≥16-Check bei Registrierung.
+  birthYear: integer("birth_year"),
 
   // Zwei-Achsen-Profil (global)
   sprachLevel: real("sprach_level"),
@@ -502,6 +506,58 @@ export const users = pgTable("users", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 })
+
+// ──────────────────────────────────────────────
+// 15b. Auth Identities (Login-Methoden pro User) — Pilot
+// Ein User kann mehrere Login-Wege haben (Passwort + Google + Magic-Link).
+// ──────────────────────────────────────────────
+
+export const authProviderEnum = pgEnum("auth_provider", [
+  "password",
+  "google",
+  "apple",
+  "email", // Magic-Link (passwortlos per E-Mail)
+])
+
+export const authIdentities = pgTable(
+  "auth_identities",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    provider: authProviderEnum("provider").notNull(),
+    // Bei OAuth: die stabile Provider-User-ID (z. B. Google "sub").
+    // Bei email/password: die E-Mail.
+    providerAccountId: varchar("provider_account_id", { length: 255 }).notNull(),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (table) => [
+    uniqueIndex("idx_auth_identity_provider_account").on(
+      table.provider,
+      table.providerAccountId
+    ),
+    index("idx_auth_identity_user").on(table.userId),
+  ]
+)
+
+// ──────────────────────────────────────────────
+// 15c. Login Tokens (Magic-Link, einmalig) — Pilot
+// ──────────────────────────────────────────────
+
+export const loginTokens = pgTable(
+  "login_tokens",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    // Nur der Hash des Tokens wird gespeichert (nie das Klartext-Token).
+    tokenHash: varchar("token_hash", { length: 255 }).notNull().unique(),
+    email: varchar("email", { length: 255 }).notNull(),
+    expiresAt: timestamp("expires_at").notNull(),
+    usedAt: timestamp("used_at"),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (table) => [index("idx_login_token_email").on(table.email)]
+)
 
 // ──────────────────────────────────────────────
 // 16. User CE Profiles (Zwei-Achsen pro CE)

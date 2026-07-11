@@ -41,6 +41,15 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Passwortlose Accounts (Magic-Link / Google) haben keinen Hash —
+    // Passwort-Login ist für sie nicht möglich.
+    if (!user.passwordHash) {
+      return NextResponse.json(
+        { error: "Für dieses Konto ist kein Passwort hinterlegt. Melde dich per Magic-Link oder Google an." },
+        { status: 401 }
+      )
+    }
+
     // Verify password
     const valid = await verifyPassword(password, user.passwordHash)
     if (!valid) {
