@@ -5,8 +5,8 @@ import { routing } from "@/lib/i18n/routing"
 
 const SESSION_COOKIE = "pflege-session"
 
-const publicPaths = ["/", "/login", "/register", "/reset-password", "/demo", "/demo-steps", "/lernen", "/dashboard", "/review", "/glossar", "/test-mc", "/test-steps", "/dev", "/early", "/wissen", "/opengraph-image", "/twitter-image", "/icon", "/apple-icon"]
-const apiPublicPaths = ["/api/health", "/api/auth/", "/api/ki-feedback", "/api/ki-chat", "/api/tts", "/api/content/", "/api/stripe/webhook", "/api/waitlist"]
+const publicPaths = ["/", "/login", "/register", "/mitmachen", "/reset-password", "/demo", "/demo-steps", "/lernen", "/dashboard", "/review", "/glossar", "/test-mc", "/test-steps", "/dev", "/early", "/wissen", "/opengraph-image", "/twitter-image", "/icon", "/apple-icon"]
+const apiPublicPaths = ["/api/health", "/api/auth/", "/api/ki-feedback", "/api/ki-chat", "/api/tts", "/api/content/", "/api/stripe/webhook", "/api/waitlist", "/api/funnel"]
 
 const intlMiddleware = createMiddleware(routing)
 

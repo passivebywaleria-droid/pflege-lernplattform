@@ -43,7 +43,7 @@ export function PlayGate({
   onDismiss,
 }: PlayGateProps) {
   const nextUrl = `/${locale}/lernen/situation/${situationId}?ce=${ceId}`
-  const registerHref = `/${locale}/register?next=${encodeURIComponent(nextUrl)}`
+  const registerHref = `/${locale}/mitmachen?next=${encodeURIComponent(nextUrl)}`
 
   return (
     <motion.div
