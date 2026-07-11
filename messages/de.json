@@ -58,7 +58,7 @@
     "heroTitle2": "Auf einem Gerät.",
     "heroTitleAccent": "Besser als mit Lehrer.",
     "heroSub": "Die Lernplattform, die sich an dich anpasst — an deine Sprache und an dein Wissen. Alle 11 Themenbereiche der generalistischen Ausbildung, in deinem Tempo. Auf Deutsch, Türkisch und Arabisch.",
-    "heroFounderNote": "âIch bin selbst Pflege-Lehrerin und weiÃ, wie schwer es ist, in der vorgegebenen Zeit jeden SchÃ¼ler abzuholen. Hier lernt jeder in seinem eigenen Tempo.“ â Waleria",
+    "heroFounderNote": "„Ich bin selbst Pflege-Lehrerin und weiß, wie schwer es ist, in der vorgegebenen Zeit jeden Schüler abzuholen. Hier lernt jeder in seinem eigenen Tempo.“ — Waleria",
     "heroCtaPrimary": "Kostenlos ausprobieren",
     "heroCtaSecondary": "Auf die Warteliste",
     "heroMicroTrust": "Server in Deutschland · keine Werbung · jederzeit kündbar",
@@ -102,12 +102,31 @@
     "footerContact": "Kontakt",
     "footerPrivacy": "Datenschutz",
     "footerImprint": "Impressum",
-    "previewBadge": "Beispiel-Aufgabe",
-    "previewQuestion": "Wo entsteht ein Dekubitus beim liegenden Patienten am häufigsten?",
-    "previewCorrect": "Am Steißbein",
-    "previewWrong1": "An den Fingern",
-    "previewWrong2": "Am Bauch",
-    "previewFeedback": "Richtig! Im Liegen lastet über dem Steißbein der höchste Druck — hier entstehen die meisten Druckgeschwüre."
+    "phone": {
+      "appTitle": "Reanimation — Stillstand erkennen",
+      "appSubtitle": "CE 06 · Akut & Notfall · ERC 2021",
+      "question": "Sie schnappt nach Luft — atmet sie?",
+      "scenario": "Eine Person reagiert nicht auf Ansprechen. Du siehst einzelne, schnappende Atembewegungen. Was tust du jetzt?",
+      "optionWait": "Sie atmet noch — erstmal abwarten",
+      "optionCorrect": "Notruf 112 + sofort Herzdruckmassage",
+      "optionPulse": "Zuerst in Ruhe den Puls tasten",
+      "feedbackTitle": "Richtig",
+      "feedbackBody": "Schnappatmung ist keine echte Atmung — sie ist ein Zeichen des Herzkreislaufstillstands. Jede Minute ohne Herzdruckmassage senkt die Überlebenschance um 7–10 %.",
+      "nextButton": "Weiter"
+    },
+    "axes": {
+      "eyebrow": "Was uns einzigartig macht",
+      "title": "Zwei Achsen. Ein Profil. Dein Weg.",
+      "body": "Carovia misst Sprache (B1→C1) und Fachwissen getrennt — als einzige Plattform. Jede Antwort kalibriert dein Profil neu, und du bekommst genau die Aufgaben, die dich weiterbringen.",
+      "yLabel": "Sprache",
+      "yLow": "B1",
+      "yHigh": "C1",
+      "xLabel": "Fachwissen",
+      "xLow": "Neu",
+      "xHigh": "Examensreif",
+      "youLabel": "Du bist hier",
+      "caption": "Dein Startpunkt kommt aus der Einstufung — der Weg zum Examen passt sich jeder Antwort an."
+    }
   },
   "learn": {
     "allCE": "Alle Curricularen Einheiten",

@@ -1,9 +1,21 @@
 import type { Metadata } from "next"
 import { getTranslations } from "next-intl/server"
 import Link from "next/link"
+import { Newsreader } from "next/font/google"
 import { WaitlistForm } from "@/components/marketing/waitlist-form"
 import { FounderAvatar } from "@/components/marketing/founder-avatar"
+import { PhoneMockup } from "@/components/marketing/phone-mockup"
+import { ZweiAchsenDiagramm } from "@/components/marketing/zwei-achsen-diagramm"
 import { locales } from "@/lib/i18n/request"
+
+// Newsreader für Display-Headlines — selbst gehostet via next/font
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-newsreader",
+  display: "swap",
+})
 
 // OG-Locale-Mapping für hreflang/openGraph
 const OG_LOCALE: Record<string, string> = { de: "de_DE", ar: "ar_AR", tr: "tr_TR" }
@@ -50,7 +62,8 @@ export default async function LandingPage({
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: "landing" })
 
-  const demoHref = `/${locale}/lernen`
+  // Pilot-Einstieg: direkt in die Gast-Session (Play-then-Gate), SPEC-PILOT-FLOW-produktreif Kante 1
+  const demoHref = `/${locale}/lernen/situation/ls-wagner-reanimation?ce=ce-06`
   const loginHref = `/${locale}/login`
 
   const waitlistLabels = {
@@ -64,25 +77,42 @@ export default async function LandingPage({
     errorGeneric: t("waitlistError"),
   }
 
-  const previewLabels = {
-    badge: t("previewBadge"),
-    question: t("previewQuestion"),
-    correct: t("previewCorrect"),
-    wrong1: t("previewWrong1"),
-    wrong2: t("previewWrong2"),
-    feedback: t("previewFeedback"),
+  const phoneLabels = {
+    appTitle: t("phone.appTitle"),
+    appSubtitle: t("phone.appSubtitle"),
+    question: t("phone.question"),
+    scenario: t("phone.scenario"),
+    optionWait: t("phone.optionWait"),
+    optionCorrect: t("phone.optionCorrect"),
+    optionPulse: t("phone.optionPulse"),
+    feedbackTitle: t("phone.feedbackTitle"),
+    feedbackBody: t("phone.feedbackBody"),
+    nextButton: t("phone.nextButton"),
+  }
+
+  const axesLabels = {
+    yLabel: t("axes.yLabel"),
+    yLow: t("axes.yLow"),
+    yHigh: t("axes.yHigh"),
+    xLabel: t("axes.xLabel"),
+    xLow: t("axes.xLow"),
+    xHigh: t("axes.xHigh"),
+    youLabel: t("axes.youLabel"),
+    caption: t("axes.caption"),
   }
 
   return (
-    <div className="flex min-h-dvh flex-col bg-[var(--lern-bg)] text-[var(--lern-text-primary)]">
+    <div
+      className={`${newsreader.variable} flex min-h-dvh flex-col bg-[var(--lern-bg)] text-[var(--lern-text-primary)]`}
+    >
       {/* Header */}
       <header className="sticky top-0 z-50 border-b-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg)]/85 backdrop-blur-xl">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-5 py-3">
           <Link href={`/${locale}`} className="flex items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--lern-accent)] text-sm font-bold text-white">
+            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--lern-accent)] font-[family-name:var(--font-newsreader)] text-base font-semibold text-white">
               C
             </span>
-            <span className="text-base font-bold">Carovia</span>
+            <span className="font-[family-name:var(--font-newsreader)] text-lg font-semibold">Carovia</span>
           </Link>
           <div className="flex items-center gap-3">
             <Link
@@ -107,7 +137,7 @@ export default async function LandingPage({
           <div className="mb-6 inline-flex items-center rounded-full border-[1.5px] border-[var(--lern-accent)] bg-[var(--lern-accent-bg)] px-4 py-1.5 text-sm font-medium text-[var(--lern-accent)]">
             {t("heroBadge")}
           </div>
-          <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-5xl">
+          <h1 className="font-[family-name:var(--font-newsreader)] text-4xl font-medium leading-[1.1] tracking-tight sm:text-6xl">
             {t("heroTitle1")} {t("heroTitle2")}{" "}
             <span className="text-[var(--lern-accent)]">{t("heroTitleAccent")}</span>
           </h1>
@@ -130,8 +160,8 @@ export default async function LandingPage({
             </a>
           </div>
 
-          {/* Gründerin-Note: untermauert die kühne Headline mit ehrlicher Lehrer-Stimme */}
-          <p className="mx-auto mt-8 max-w-xl border-l-[2.5px] border-[var(--lern-sage)] pl-4 text-left text-sm italic leading-relaxed text-[var(--lern-text-secondary)] rtl:border-l-0 rtl:border-r-[2.5px] rtl:pl-0 rtl:pr-4 rtl:text-right">
+          {/* Gründerin-Note: untermauert die Headline mit ehrlicher Lehrer-Stimme */}
+          <p className="mx-auto mt-8 max-w-xl border-s-[2.5px] border-[var(--lern-sage)] ps-4 text-start font-[family-name:var(--font-newsreader)] text-[15px] italic leading-relaxed text-[var(--lern-text-secondary)]">
             {t("heroFounderNote")}
           </p>
 
@@ -153,19 +183,37 @@ export default async function LandingPage({
         </div>
       </section>
 
-      {/* Demo-Tease */}
+      {/* Zwei-Achsen-Adaptivität (USP) */}
       <section className="px-5 py-16">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-[var(--lern-sage)]">
+            {t("axes.eyebrow")}
+          </h2>
+          <p className="mb-4 font-[family-name:var(--font-newsreader)] text-2xl font-medium sm:text-3xl">
+            {t("axes.title")}
+          </p>
+          <p className="mx-auto mb-10 max-w-xl text-base leading-relaxed text-[var(--lern-text-secondary)]">
+            {t("axes.body")}
+          </p>
+          <ZweiAchsenDiagramm labels={axesLabels} />
+        </div>
+      </section>
+
+      {/* Demo-Tease mit Smartphone-Mockup */}
+      <section className="border-t-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-5 py-16">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-[var(--lern-sage)]">
             {t("demoEyebrow")}
           </h2>
-          <p className="mb-4 text-2xl font-bold sm:text-3xl">{t("demoTitle")}</p>
+          <p className="mb-4 font-[family-name:var(--font-newsreader)] text-2xl font-medium sm:text-3xl">
+            {t("demoTitle")}
+          </p>
           <p className="mx-auto mb-8 max-w-xl text-base leading-relaxed text-[var(--lern-text-secondary)]">
             {t("demoBody")}
           </p>
 
-          {/* Produkt-Vorschau: illustrativer Session-Step (zeigt statt erzählt) */}
-          <SessionPreview labels={previewLabels} />
+          {/* Produkt zeigen statt beschreiben: echter App-Zustand (CE 06, statisch) */}
+          <PhoneMockup labels={phoneLabels} />
 
           <Link
             href={demoHref}
@@ -189,7 +237,7 @@ export default async function LandingPage({
       </section>
 
       {/* Für wen */}
-      <section className="border-t-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-5 py-14">
+      <section className="px-5 py-14">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-[var(--lern-accent)]">
             {t("forWhoEyebrow")}
@@ -199,15 +247,17 @@ export default async function LandingPage({
       </section>
 
       {/* Gründerin */}
-      <section className="px-5 py-16">
+      <section className="border-t-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-5 py-16">
         <div className="mx-auto max-w-2xl">
           <h2 className="mb-3 text-center text-sm font-bold uppercase tracking-wider text-[var(--lern-sage)]">
             {t("founderEyebrow")}
           </h2>
-          <p className="mb-6 text-center text-2xl font-bold sm:text-3xl">{t("founderTitle")}</p>
+          <p className="mb-6 text-center font-[family-name:var(--font-newsreader)] text-2xl font-medium sm:text-3xl">
+            {t("founderTitle")}
+          </p>
           <blockquote className="rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg)] p-6 text-center">
-            <p className="text-base italic leading-relaxed text-[var(--lern-text-primary)]">
-              „{t("founderQuote")}"
+            <p className="font-[family-name:var(--font-newsreader)] text-base italic leading-relaxed text-[var(--lern-text-primary)]">
+              „{t("founderQuote")}“
             </p>
             <footer className="mt-5 flex flex-col items-center gap-2">
               <FounderAvatar src="/founder-waleria.jpg" initials="W" alt={t("founderName")} />
@@ -223,26 +273,24 @@ export default async function LandingPage({
       {/* Warteliste-Capture */}
       <section
         id="warteliste"
-        className="scroll-mt-20 border-t-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-5 py-16"
+        className="scroll-mt-20 border-t-[1.5px] border-[var(--lern-border)] px-5 py-16"
       >
         <div className="mx-auto max-w-xl">
           <h2 className="mb-2 text-center text-sm font-bold uppercase tracking-wider text-[var(--lern-accent)]">
             {t("waitlistEyebrow")}
           </h2>
-          <p className="mb-3 text-center text-2xl font-bold sm:text-3xl">{t("waitlistTitle")}</p>
+          <p className="mb-3 text-center font-[family-name:var(--font-newsreader)] text-2xl font-medium sm:text-3xl">
+            {t("waitlistTitle")}
+          </p>
           <p className="mx-auto mb-7 max-w-md text-center text-base leading-relaxed text-[var(--lern-text-secondary)]">
             {t("waitlistBody")}
           </p>
-          <WaitlistForm
-            locale={locale}
-            leadMagnet="pilot-warteliste"
-            labels={waitlistLabels}
-          />
+          <WaitlistForm locale={locale} leadMagnet="pilot-warteliste" labels={waitlistLabels} />
         </div>
       </section>
 
       {/* Trust-Leiste */}
-      <section className="px-5 py-12">
+      <section className="border-t-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-5 py-12">
         <div className="mx-auto grid max-w-3xl gap-7 sm:grid-cols-4">
           <TrustBadge icon="🇩🇪" title={t("trust1Title")} sub={t("trust1Sub")} />
           <TrustBadge icon="🔒" title={t("trust2Title")} sub={t("trust2Sub")} />
@@ -270,67 +318,6 @@ export default async function LandingPage({
         </div>
       </footer>
     </div>
-  )
-}
-
-interface PreviewLabels {
-  badge: string
-  question: string
-  correct: string
-  wrong1: string
-  wrong2: string
-  feedback: string
-}
-
-function SessionPreview({ labels }: { labels: PreviewLabels }) {
-  return (
-    <div className="mx-auto max-w-sm rounded-3xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-5 text-left shadow-lg shadow-[var(--lern-accent)]/10">
-      <span className="inline-flex rounded-full bg-[var(--lern-accent-bg)] px-3 py-1 text-xs font-semibold text-[var(--lern-accent)]">
-        {labels.badge}
-      </span>
-      <p className="mt-3 text-sm font-bold text-[var(--lern-text-primary)]">{labels.question}</p>
-      <div className="mt-4 space-y-2">
-        <PreviewOption text={labels.correct} correct />
-        <PreviewOption text={labels.wrong1} />
-        <PreviewOption text={labels.wrong2} />
-      </div>
-      <div className="mt-4 flex items-start gap-2 rounded-xl bg-[var(--lern-accent-bg)] p-3">
-        <Check className="mt-0.5 shrink-0 text-[var(--lern-accent)]" />
-        <p className="text-xs leading-relaxed text-[var(--lern-text-secondary)]">{labels.feedback}</p>
-      </div>
-    </div>
-  )
-}
-
-function PreviewOption({ text, correct = false }: { text: string; correct?: boolean }) {
-  return (
-    <div
-      className={`flex items-center justify-between rounded-xl border-[1.5px] px-4 py-2.5 text-sm ${
-        correct
-          ? "border-[var(--lern-accent)] bg-[var(--lern-accent-bg)] font-semibold text-[var(--lern-text-primary)]"
-          : "border-[var(--lern-border)] text-[var(--lern-text-secondary)]"
-      }`}
-    >
-      <span>{text}</span>
-      {correct && <Check className="text-[var(--lern-accent)]" />}
-    </div>
-  )
-}
-
-function Check({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      className={`h-4 w-4 ${className}`}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      <path d="M20 6 9 17l-5-5" />
-    </svg>
   )
 }
 

@@ -58,7 +58,7 @@
     "heroTitle2": "Tek bir cihazda.",
     "heroTitleAccent": "Öğretmenden bile daha iyi.",
     "heroSub": "Sana uyum sağlayan öğrenme platformu — diline ve bilgine. Genel bakım eğitiminin 11 konu alanının tamamı, kendi hızında. Almanca, Türkçe ve Arapça.",
-    "heroFounderNote": "âBen de bir bakÄ±m Ã¶Äretmeniyim ve verilen sÃ¼rede her Ã¶Ärenciye ulaÅmanÄ±n ne kadar zor olduÄunu biliyorum. Burada herkes kendi hÄ±zÄ±nda Ã¶Ärenir.“ â Waleria",
+    "heroFounderNote": "„Ben de bir bakım öğretmeniyim ve verilen sürede her öğrenciye ulaşmanın ne kadar zor olduğunu biliyorum. Burada herkes kendi hızında öğrenir.“ — Waleria",
     "heroCtaPrimary": "Ücretsiz dene",
     "heroCtaSecondary": "Bekleme listesine katıl",
     "heroMicroTrust": "Sunucu Almanya'da · reklam yok · istediğin zaman iptal",
@@ -102,12 +102,31 @@
     "footerContact": "İletişim",
     "footerPrivacy": "Gizlilik",
     "footerImprint": "Künye",
-    "previewBadge": "Örnek soru",
-    "previewQuestion": "Yatan bir hastada bası yarası en sık nerede oluşur?",
-    "previewCorrect": "Kuyruk sokumunda",
-    "previewWrong1": "Parmaklarda",
-    "previewWrong2": "Karında",
-    "previewFeedback": "Doğru! Sırtüstü yatarken en yüksek basınç kuyruk sokumuna biner — bası yaraları en çok burada oluşur."
+    "phone": {
+      "appTitle": "Reanimasyon — Durmayı tanı",
+      "appSubtitle": "CE 06 · Akut & Acil · ERC 2021",
+      "question": "Nefes almaya çabalıyor — nefes alıyor mu?",
+      "scenario": "Bir kişi seslenmeye tepki vermiyor. Tek tek, iç çeker gibi solunum hareketleri görüyorsun. Şimdi ne yaparsın?",
+      "optionWait": "Hâlâ nefes alıyor — önce bekle",
+      "optionCorrect": "112'yi ara + hemen kalp masajı",
+      "optionPulse": "Önce sakince nabzı kontrol et",
+      "feedbackTitle": "Doğru",
+      "feedbackBody": "Agonal solunum gerçek nefes alma değildir — kalp durmasının bir belirtisidir. Kalp masajı yapılmayan her dakika hayatta kalma şansını %7–10 azaltır.",
+      "nextButton": "Devam"
+    },
+    "axes": {
+      "eyebrow": "Bizi benzersiz yapan",
+      "title": "İki eksen. Bir profil. Senin yolun.",
+      "body": "Carovia dili (B1→C1) ve uzmanlık bilgisini ayrı ayrı ölçer — bunu yapan tek platform. Her cevap profilini yeniden ayarlar ve tam da seni ilerletecek görevleri alırsın.",
+      "yLabel": "Dil",
+      "yLow": "B1",
+      "yHigh": "C1",
+      "xLabel": "Uzmanlık bilgisi",
+      "xLow": "Yeni",
+      "xHigh": "Sınava hazır",
+      "youLabel": "Buradasın",
+      "caption": "Başlangıç noktan seviye testinden gelir — sınava giden yol her cevaba uyum sağlar."
+    }
   },
   "learn": {
     "allCE": "Tüm Müfredat Birimleri",
