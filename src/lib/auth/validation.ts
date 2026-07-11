@@ -61,6 +61,13 @@ export const magicRequestSchema = z.object({
   next: z.string().optional(),
 })
 
+// Rückkehrer-Login: nur E-Mail — Konto existiert schon, keine neuen Daten nötig.
+export const magicLoginSchema = z.object({
+  email: z.string().trim().toLowerCase().email("Ungültige E-Mail-Adresse"),
+  language: z.enum(["de", "ar", "tr"]).optional(),
+  next: z.string().optional(),
+})
+
 /** true, wenn das Geburtsjahr das Pilot-Mindestalter (16) erreicht. */
 export function isAtLeastPilotAge(birthYear: number): boolean {
   return CURRENT_YEAR - birthYear >= PILOT_MIN_AGE
@@ -69,3 +76,4 @@ export function isAtLeastPilotAge(birthYear: number): boolean {
 export type RegisterInput = z.input<typeof registerSchema>
 export type LoginInput = z.infer<typeof loginSchema>
 export type MagicRequestInput = z.infer<typeof magicRequestSchema>
+export type MagicLoginInput = z.infer<typeof magicLoginSchema>
