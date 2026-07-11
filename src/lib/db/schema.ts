@@ -1305,11 +1305,18 @@ export const situationFortschritt = pgTable(
       .references(() => users.id, { onDelete: "cascade" }),
     situationId: varchar("situation_id", { length: 100 }).notNull(),
     ceId: varchar("ce_id", { length: 20 }).notNull(),
-    currentPhase: pflegeProzessPhaseEnum("current_phase")
+    /**
+     * Phasenmodell-agnostisch (8 SituationsTypen haben verschiedene Phasen,
+     * z.B. akutsituation ≠ pflegeprozess) — daher varchar statt
+     * pflegeProzessPhaseEnum.
+     */
+    currentPhase: varchar("current_phase", { length: 40 })
       .notNull()
       .default("informieren"),
     /** Ergebnisse pro Phase: { informieren: { score: "A", stepsBearbeitet: 5 }, ... } */
     phaseResults: jsonb("phase_results").notNull().default({}),
+    /** Wiedereinstiegs-Zustand: { completedPhases: string[], currentStepIndex: number } */
+    resumeState: jsonb("resume_state").notNull().default({}),
     spirale: spiraleEnum("spirale").notNull().default("1"),
     isComplete: boolean("is_complete").notNull().default(false),
     gesamtXp: integer("gesamt_xp").notNull().default(0),

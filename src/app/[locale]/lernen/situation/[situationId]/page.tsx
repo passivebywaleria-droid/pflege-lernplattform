@@ -92,26 +92,101 @@ export default function SituationLernenPage() {
     };
   }, []);
 
-  // Gast-Fortschritt aus localStorage wiederherstellen (einmalig, nach Content + Gast-Status).
+  // Fortschritt wiederherstellen (einmalig, nach Content + Auth-Status).
+  // Gast: aus localStorage. Eingeloggt: frisch gespielter Gast-Stand gewinnt
+  // (Play-then-Gate-Rückkehr nach Signup) und wird zum Account gemergt —
+  // sonst Server-Stand laden (anderes Gerät / früherer Besuch).
   useEffect(() => {
     if (hydratedRef.current) return;
     if (!situation || isGuest === null) return;
     hydratedRef.current = true;
-    if (!isGuest) return;
+
+    const validPhases = situation.phasen.map((p) => p.phase);
+    const applySaved = (saved: {
+      currentPhaseId?: AnyPhase;
+      completedPhases?: AnyPhase[];
+      currentStepIndex?: number;
+      gateStatus?: string;
+    } | null): boolean => {
+      if (
+        !saved?.currentPhaseId ||
+        !validPhases.includes(saved.currentPhaseId)
+      ) {
+        return false;
+      }
+      setCurrentPhaseId(saved.currentPhaseId);
+      setCompletedPhases(
+        (saved.completedPhases ?? []).filter((p) => validPhases.includes(p))
+      );
+      setCurrentStepIndex(saved.currentStepIndex ?? 0);
+      if (isGuest && saved.gateStatus === "dismissed") {
+        setGateStatus("dismissed");
+      }
+      return true;
+    };
+
+    let localSaved: Parameters<typeof applySaved>[0] = null;
     try {
-      const saved = JSON.parse(
+      localSaved = JSON.parse(
         window.localStorage.getItem(`pflege:guest:${situationId}`) ?? "null"
       );
-      if (saved && saved.currentPhaseId) {
-        setCurrentPhaseId(saved.currentPhaseId);
-        setCompletedPhases(saved.completedPhases ?? []);
-        setCurrentStepIndex(saved.currentStepIndex ?? 0);
-        if (saved.gateStatus === "dismissed") setGateStatus("dismissed");
-      }
     } catch {
       // beschädigter/leerer Eintrag — frisch starten
     }
-  }, [situation, isGuest, situationId]);
+
+    if (isGuest) {
+      applySaved(localSaved);
+      return;
+    }
+
+    // Gast→Account-Merge: lokalen Stand übernehmen, zum Server schieben,
+    // lokal aufräumen (Fortschritt gehört jetzt dem Account).
+    if (applySaved(localSaved) && localSaved) {
+      const completed = (localSaved.completedPhases ?? []).filter((p) =>
+        validPhases.includes(p)
+      );
+      void fetch("/api/progress/situation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          situationId,
+          ceId,
+          currentPhase: localSaved.currentPhaseId,
+          completedPhases: completed,
+          currentStepIndex: localSaved.currentStepIndex ?? 0,
+          isComplete: validPhases.every((p) => completed.includes(p)),
+        }),
+      }).catch(() => {
+        // best effort — der Debounce-Sync unten versucht es erneut
+      });
+      try {
+        window.localStorage.removeItem(`pflege:guest:${situationId}`);
+      } catch {
+        // localStorage nicht verfügbar — ignorieren
+      }
+      return;
+    }
+
+    let cancelled = false;
+    fetch(
+      `/api/progress/situation?situationId=${encodeURIComponent(situationId)}`
+    )
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (cancelled || !d?.progress) return;
+        applySaved({
+          currentPhaseId: d.progress.currentPhase,
+          completedPhases: d.progress.resumeState?.completedPhases,
+          currentStepIndex: d.progress.resumeState?.currentStepIndex,
+        });
+      })
+      .catch(() => {
+        // offline/Fehler — frisch starten ist ok
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [situation, isGuest, situationId, ceId]);
 
   // Gast-Fortschritt persistieren (erst nach Hydration, um den gespeicherten
   // Stand nicht mit den Default-Werten zu überschreiben).
@@ -138,6 +213,39 @@ export default function SituationLernenPage() {
     completedPhases,
     currentStepIndex,
     gateStatus,
+  ]);
+
+  // Eingeloggten Fortschritt zum Server persistieren (debounced, best effort).
+  useEffect(() => {
+    if (isGuest !== false || !situation || !hydratedRef.current) return;
+    const validPhases = situation.phasen.map((p) => p.phase);
+    const timer = setTimeout(() => {
+      void fetch("/api/progress/situation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          situationId,
+          ceId,
+          currentPhase: currentPhaseId,
+          completedPhases,
+          currentStepIndex,
+          isComplete:
+            validPhases.length > 0 &&
+            validPhases.every((p) => completedPhases.includes(p)),
+        }),
+      }).catch(() => {
+        // offline — nächste Zustandsänderung versucht es erneut
+      });
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, [
+    isGuest,
+    situation,
+    situationId,
+    ceId,
+    currentPhaseId,
+    completedPhases,
+    currentStepIndex,
   ]);
 
   // Funnel: Gast öffnet die Situation (einmalig).
