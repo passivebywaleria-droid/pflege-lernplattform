@@ -1,11 +1,11 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useSearchParams } from "next/navigation"
 import { useLocale } from "next-intl"
-import { MailCheck } from "lucide-react"
+import { KeyRound } from "lucide-react"
 import {
   magicRequestSchema,
   magicLoginSchema,
@@ -19,18 +19,72 @@ import { Label } from "@/components/ui/label"
 
 /**
  * Magic-Signup (Pilot) — passwortlos, minimal: E-Mail + Spitzname +
- * Geburtsjahr + ≥16-Bestätigung. Fordert einen Login-Link an.
- * Rückkehrer wechseln in den Login-Modus (nur E-Mail).
+ * Geburtsjahr + ≥16-Bestätigung. Fordert einen 6-stelligen Login-Code an,
+ * der IM SELBEN Tab eingegeben wird (kein App-Wechsel → Gast-Fortschritt und
+ * Session bleiben im gleichen Browser). Rückkehrer wechseln in den Login-Modus.
  */
+
+/** Was zum erneuten Senden eines Codes nötig ist. */
+interface PendingSend {
+  email: string
+  endpoint: string
+  body: Record<string, unknown>
+  isSignup: boolean
+}
+
 export function MagicSignupForm() {
   const locale = useLocale()
   const searchParams = useSearchParams()
   const next = searchParams.get("next") ?? undefined
 
   const [mode, setMode] = useState<"signup" | "login">("signup")
+  const [pending, setPending] = useState<PendingSend | null>(null)
+
+  // Code-Eingabe-Schritt
+  if (pending) {
+    return (
+      <OtpCodeStep
+        pending={pending}
+        next={next}
+        onBack={() => setPending(null)}
+      />
+    )
+  }
+
+  if (mode === "login") {
+    return (
+      <MagicLoginForm
+        next={next}
+        locale={locale}
+        onCodeSent={setPending}
+        onSwitchToSignup={() => setMode("signup")}
+      />
+    )
+  }
+
+  return (
+    <MagicSignupFields
+      next={next}
+      locale={locale}
+      onCodeSent={setPending}
+      onSwitchToLogin={() => setMode("login")}
+    />
+  )
+}
+
+/** Signup-Formular (neuer Nutzer). */
+function MagicSignupFields({
+  next,
+  locale,
+  onCodeSent,
+  onSwitchToLogin,
+}: {
+  next?: string
+  locale: string
+  onCodeSent: (p: PendingSend) => void
+  onSwitchToLogin: () => void
+}) {
   const [serverError, setServerError] = useState<string | null>(null)
-  const [sent, setSent] = useState(false)
-  const [sentEmail, setSentEmail] = useState("")
 
   const {
     register,
@@ -46,73 +100,29 @@ export function MagicSignupForm() {
 
   async function onSubmit(data: MagicRequestInput) {
     setServerError(null)
+    const body = { ...data, language: locale, next }
     try {
       const res = await fetch("/api/auth/magic/request", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, language: locale, next }),
+        body: JSON.stringify(body),
       })
-      const body = await res.json().catch(() => ({}))
-
+      const resBody = await res.json().catch(() => ({}))
       if (!res.ok) {
         setServerError(
-          body.error ?? "Etwas ist schiefgelaufen. Bitte versuche es erneut."
+          resBody.error ?? "Etwas ist schiefgelaufen. Bitte versuche es erneut."
         )
         return
       }
-
-      trackFunnel("account_erstellt", { next })
-      setSentEmail(data.email)
-      setSent(true)
+      onCodeSent({
+        email: data.email,
+        endpoint: "/api/auth/magic/request",
+        body,
+        isSignup: true,
+      })
     } catch {
       setServerError("Netzwerkfehler. Bitte versuche es erneut.")
     }
-  }
-
-  if (sent) {
-    return (
-      <div className="space-y-4 text-center">
-        <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-          <MailCheck className="h-7 w-7" />
-        </span>
-        <h2 className="text-lg font-bold">Fast geschafft!</h2>
-        <p className="text-sm text-muted-foreground">
-          {mode === "login" ? (
-            <>
-              Wenn ein Konto mit <strong>{sentEmail}</strong> existiert, haben
-              wir dir einen Login-Link geschickt. Der Link gilt 30 Minuten.
-            </>
-          ) : (
-            <>
-              Wir haben dir einen Login-Link an <strong>{sentEmail}</strong>{" "}
-              geschickt. Tippe darauf, um weiterzulernen. Der Link gilt 30
-              Minuten.
-            </>
-          )}
-        </p>
-        <p className="text-xs text-muted-foreground">
-          Keine Mail bekommen? Schau im Spam-Ordner — oder fordere den Link
-          gleich noch einmal an.
-        </p>
-      </div>
-    )
-  }
-
-  if (mode === "login") {
-    return (
-      <MagicLoginForm
-        next={next}
-        locale={locale}
-        onSent={(email) => {
-          setSentEmail(email)
-          setSent(true)
-        }}
-        onSwitchToSignup={() => {
-          setServerError(null)
-          setMode("signup")
-        }}
-      />
-    )
   }
 
   return (
@@ -177,18 +187,18 @@ export function MagicSignupForm() {
       {serverError && <p className="text-sm text-destructive">{serverError}</p>}
 
       <Button type="submit" className="w-full" disabled={isSubmitting}>
-        {isSubmitting ? "Wird gesendet…" : "Login-Link schicken"}
+        {isSubmitting ? "Wird gesendet…" : "Code schicken"}
       </Button>
 
       <p className="text-center text-xs text-muted-foreground">
-        Kein Passwort nötig. Du bekommst einen Link per E-Mail.
+        Kein Passwort nötig. Du bekommst einen 6-stelligen Code per E-Mail.
       </p>
 
       <p className="text-center text-sm">
         <button
           type="button"
           className="font-medium text-primary underline-offset-2 hover:underline"
-          onClick={() => setMode("login")}
+          onClick={onSwitchToLogin}
         >
           Schon dabei? Einloggen — nur E-Mail nötig
         </button>
@@ -204,12 +214,12 @@ export function MagicSignupForm() {
 function MagicLoginForm({
   next,
   locale,
-  onSent,
+  onCodeSent,
   onSwitchToSignup,
 }: {
   next?: string
   locale: string
-  onSent: (email: string) => void
+  onCodeSent: (p: PendingSend) => void
   onSwitchToSignup: () => void
 }) {
   const [serverError, setServerError] = useState<string | null>(null)
@@ -228,22 +238,26 @@ function MagicLoginForm({
 
   async function onSubmit(data: MagicLoginInput) {
     setServerError(null)
+    const body = { ...data, language: locale, next }
     try {
       const res = await fetch("/api/auth/magic/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, language: locale, next }),
+        body: JSON.stringify(body),
       })
-      const body = await res.json().catch(() => ({}))
-
+      const resBody = await res.json().catch(() => ({}))
       if (!res.ok) {
         setServerError(
-          body.error ?? "Etwas ist schiefgelaufen. Bitte versuche es erneut."
+          resBody.error ?? "Etwas ist schiefgelaufen. Bitte versuche es erneut."
         )
         return
       }
-
-      onSent(data.email)
+      onCodeSent({
+        email: data.email,
+        endpoint: "/api/auth/magic/login",
+        body,
+        isSignup: false,
+      })
     } catch {
       setServerError("Netzwerkfehler. Bitte versuche es erneut.")
     }
@@ -268,11 +282,11 @@ function MagicLoginForm({
       {serverError && <p className="text-sm text-destructive">{serverError}</p>}
 
       <Button type="submit" className="w-full" disabled={isSubmitting}>
-        {isSubmitting ? "Wird gesendet…" : "Login-Link schicken"}
+        {isSubmitting ? "Wird gesendet…" : "Code schicken"}
       </Button>
 
       <p className="text-center text-xs text-muted-foreground">
-        Kein Passwort nötig. Du bekommst einen Link per E-Mail.
+        Kein Passwort nötig. Du bekommst einen 6-stelligen Code per E-Mail.
       </p>
 
       <p className="text-center text-sm">
@@ -285,5 +299,168 @@ function MagicLoginForm({
         </button>
       </p>
     </form>
+  )
+}
+
+const RESEND_COOLDOWN_SECONDS = 30
+
+/**
+ * Code-Eingabe — der Nutzer tippt den 6-stelligen Code ein. Bei Erfolg
+ * navigiert die Seite hart zu `next`, damit der Player im selben Tab neu lädt
+ * und den Gast-Stand mergt.
+ */
+function OtpCodeStep({
+  pending,
+  next,
+  onBack,
+}: {
+  pending: PendingSend
+  next?: string
+  onBack: () => void
+}) {
+  const [code, setCode] = useState("")
+  const [error, setError] = useState<string | null>(null)
+  const [submitting, setSubmitting] = useState(false)
+  const [cooldown, setCooldown] = useState(RESEND_COOLDOWN_SECONDS)
+  const [resendHint, setResendHint] = useState<string | null>(null)
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  // Cooldown-Countdown fürs erneute Senden.
+  useEffect(() => {
+    if (cooldown <= 0) return
+    const t = setTimeout(() => setCooldown((c) => c - 1), 1000)
+    return () => clearTimeout(t)
+  }, [cooldown])
+
+  // Fokus aufs Code-Feld beim Betreten.
+  useEffect(() => {
+    inputRef.current?.focus()
+  }, [])
+
+  async function verify(currentCode: string) {
+    setSubmitting(true)
+    setError(null)
+    try {
+      const res = await fetch("/api/auth/magic/verify", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: pending.email, code: currentCode, next }),
+      })
+      const body = await res.json().catch(() => ({}))
+      if (!res.ok) {
+        setError(body.error ?? "Code stimmt nicht.")
+        setCode("")
+        inputRef.current?.focus()
+        return
+      }
+      if (pending.isSignup) {
+        trackFunnel("account_erstellt", { next })
+      }
+      // Harte Navigation → Player lädt neu, /api/auth/me ist jetzt authentifiziert,
+      // Gast-localStorage wird gemergt.
+      window.location.href = body.next ?? next ?? "/"
+    } catch {
+      setError("Netzwerkfehler. Bitte versuche es erneut.")
+    } finally {
+      setSubmitting(false)
+    }
+  }
+
+  function onCodeChange(raw: string) {
+    const digits = raw.replace(/[^0-9]/g, "").slice(0, 6)
+    setCode(digits)
+    setError(null)
+    // Automatisch bestätigen, sobald 6 Ziffern eingegeben sind.
+    if (digits.length === 6 && !submitting) {
+      void verify(digits)
+    }
+  }
+
+  async function resend() {
+    if (cooldown > 0) return
+    setResendHint(null)
+    setError(null)
+    try {
+      const res = await fetch(pending.endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(pending.body),
+      })
+      if (res.ok) {
+        setResendHint("Neuer Code ist unterwegs.")
+        setCooldown(RESEND_COOLDOWN_SECONDS)
+      } else {
+        setError("Erneutes Senden fehlgeschlagen. Bitte versuche es später.")
+      }
+    } catch {
+      setError("Netzwerkfehler beim erneuten Senden.")
+    }
+  }
+
+  return (
+    <div className="space-y-5">
+      <div className="text-center">
+        <span className="mb-3 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+          <KeyRound className="h-7 w-7" />
+        </span>
+        <h2 className="text-lg font-bold">Code eingeben</h2>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Wir haben einen 6-stelligen Code an <strong>{pending.email}</strong>{" "}
+          geschickt. Gib ihn hier ein — bleib einfach in diesem Fenster.
+        </p>
+      </div>
+
+      <div className="space-y-2">
+        <Label htmlFor="otp" className="sr-only">
+          6-stelliger Code
+        </Label>
+        <Input
+          id="otp"
+          ref={inputRef}
+          type="text"
+          inputMode="numeric"
+          autoComplete="one-time-code"
+          maxLength={6}
+          value={code}
+          onChange={(e) => onCodeChange(e.target.value)}
+          placeholder="••••••"
+          className="text-center text-2xl font-bold tracking-[0.4em]"
+          disabled={submitting}
+        />
+        {error && <p className="text-sm text-destructive">{error}</p>}
+        {resendHint && (
+          <p className="text-sm text-[var(--lern-accent,#6B8F71)]">
+            {resendHint}
+          </p>
+        )}
+      </div>
+
+      <Button
+        type="button"
+        className="w-full"
+        disabled={submitting || code.length !== 6}
+        onClick={() => verify(code)}
+      >
+        {submitting ? "Wird geprüft…" : "Bestätigen"}
+      </Button>
+
+      <div className="flex items-center justify-between text-sm">
+        <button
+          type="button"
+          className="font-medium text-muted-foreground underline-offset-2 hover:underline"
+          onClick={onBack}
+        >
+          E-Mail ändern
+        </button>
+        <button
+          type="button"
+          disabled={cooldown > 0}
+          className="font-medium text-primary underline-offset-2 hover:underline disabled:text-muted-foreground disabled:no-underline"
+          onClick={resend}
+        >
+          {cooldown > 0 ? `Erneut senden (${cooldown}s)` : "Code erneut senden"}
+        </button>
+      </div>
+    </div>
   )
 }

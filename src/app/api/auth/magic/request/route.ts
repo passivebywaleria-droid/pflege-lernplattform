@@ -3,18 +3,17 @@ import { db } from "@/lib/db"
 import { users, authIdentities, loginTokens } from "@/lib/db/schema"
 import { magicRequestSchema, isAtLeastPilotAge } from "@/lib/auth/validation"
 import {
-  generateMagicToken,
-  hashMagicToken,
-  magicTokenExpiry,
-  MAGIC_LINK_TTL_MINUTES,
+  generateOtpCode,
+  hashOtpCode,
+  otpExpiry,
+  OTP_TTL_MINUTES,
 } from "@/lib/auth/magic-link"
 import { sendMail } from "@/lib/mail/send"
-import { magicLinkMail } from "@/lib/mail/templates/magic-link"
-import { SITE_URL } from "@/lib/seo/site"
-import { eq } from "drizzle-orm"
+import { otpCodeMail } from "@/lib/mail/templates/otp-code"
+import { eq, and, isNull } from "drizzle-orm"
 
 // Öffentlicher Endpunkt (middleware apiPublicPaths enthält "/api/auth/").
-// Signup + Login in einem: fordert einen Magic-Link an.
+// Signup + Login in einem: fordert einen 6-stelligen Login-Code an.
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json().catch(() => null)
@@ -27,7 +26,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const { email, spitzname, birthYear, next } = parsed.data
+    const { email, spitzname, birthYear } = parsed.data
     const language = parsed.data.language ?? "de"
 
     // Pilot-Regel: nur ab 16. <16 → freundlicher Stopp, KEIN Datensatz.
@@ -77,25 +76,21 @@ export async function POST(request: NextRequest) {
         .onConflictDoNothing()
     }
 
-    // Einmal-Token erzeugen; nur den Hash speichern.
-    const token = generateMagicToken()
+    // Ältere, noch offene Codes dieser E-Mail entwerten (nur der neueste gilt).
+    await db
+      .update(loginTokens)
+      .set({ usedAt: new Date() })
+      .where(and(eq(loginTokens.email, email), isNull(loginTokens.usedAt)))
+
+    // 6-stelligen Code erzeugen; nur den Hash speichern.
+    const code = generateOtpCode()
     await db.insert(loginTokens).values({
-      tokenHash: hashMagicToken(token),
+      codeHash: hashOtpCode(code),
       email,
-      expiresAt: magicTokenExpiry(),
+      expiresAt: otpExpiry(),
     })
 
-    // Verify-Link bauen (next wird durchgereicht, um zurück in die Situation zu leiten).
-    // Die Verify-Route liegt außerhalb von [locale] → ohne Locale-Präfix.
-    const url = new URL("/api/auth/magic/verify", SITE_URL)
-    url.searchParams.set("token", token)
-    if (next) url.searchParams.set("next", next)
-
-    const mail = magicLinkMail({
-      verifyUrl: url.toString(),
-      spitzname,
-      ttlMinutes: MAGIC_LINK_TTL_MINUTES,
-    })
+    const mail = otpCodeMail({ code, spitzname, ttlMinutes: OTP_TTL_MINUTES })
     const { stubbed } = await sendMail({
       to: email,
       subject: mail.subject,

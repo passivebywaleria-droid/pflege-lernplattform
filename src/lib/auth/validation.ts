@@ -68,6 +68,17 @@ export const magicLoginSchema = z.object({
   next: z.string().optional(),
 })
 
+// Code-Einlösung: E-Mail + 6-stelliger Code (Ziffern; Leerzeichen werden vorher
+// entfernt).
+export const magicVerifySchema = z.object({
+  email: z.string().trim().toLowerCase().email("Ungültige E-Mail-Adresse"),
+  code: z
+    .string()
+    .trim()
+    .regex(/^\d{6}$/, "Der Code besteht aus 6 Ziffern"),
+  next: z.string().optional(),
+})
+
 /** true, wenn das Geburtsjahr das Pilot-Mindestalter (16) erreicht. */
 export function isAtLeastPilotAge(birthYear: number): boolean {
   return CURRENT_YEAR - birthYear >= PILOT_MIN_AGE
@@ -77,3 +88,4 @@ export type RegisterInput = z.input<typeof registerSchema>
 export type LoginInput = z.infer<typeof loginSchema>
 export type MagicRequestInput = z.infer<typeof magicRequestSchema>
 export type MagicLoginInput = z.infer<typeof magicLoginSchema>
+export type MagicVerifyInput = z.infer<typeof magicVerifySchema>

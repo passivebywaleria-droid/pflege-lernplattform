@@ -542,16 +542,23 @@ export const authIdentities = pgTable(
 )
 
 // ──────────────────────────────────────────────
-// 15c. Login Tokens (Magic-Link, einmalig) — Pilot
+// 15c. Login Tokens (Einmal-Code, passwortloser Login) — Pilot
+// 6-stelliger Code per Mail (statt Klick-Link) — der Nutzer bleibt im Spiel-Tab
+// und tippt den Code ein. Umgeht die In-App-Browser-/WebView-Isolation.
 // ──────────────────────────────────────────────
 
 export const loginTokens = pgTable(
   "login_tokens",
   {
     id: uuid("id").defaultRandom().primaryKey(),
-    // Nur der Hash des Tokens wird gespeichert (nie das Klartext-Token).
-    tokenHash: varchar("token_hash", { length: 255 }).notNull().unique(),
+    // Nur der Hash des 6-stelligen Codes wird gespeichert (nie der Klartext).
+    // NICHT unique: verschiedene Nutzer können denselben Code haben — die
+    // Bindung ist (email, code).
+    codeHash: varchar("code_hash", { length: 255 }).notNull(),
     email: varchar("email", { length: 255 }).notNull(),
+    // Fehlversuche pro Code; ab 5 wird der Code invalide (Brute-Force-Schutz,
+    // 6 Ziffern = 1 Mio Möglichkeiten).
+    attempts: integer("attempts").notNull().default(0),
     expiresAt: timestamp("expires_at").notNull(),
     usedAt: timestamp("used_at"),
     createdAt: timestamp("created_at").defaultNow().notNull(),

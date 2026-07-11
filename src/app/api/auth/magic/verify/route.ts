@@ -1,51 +1,100 @@
 import { NextRequest, NextResponse } from "next/server"
+import { timingSafeEqual } from "crypto"
 import { db } from "@/lib/db"
 import { users, schools, loginTokens } from "@/lib/db/schema"
-import { hashMagicToken } from "@/lib/auth/magic-link"
+import { hashOtpCode, OTP_MAX_ATTEMPTS } from "@/lib/auth/magic-link"
 import { createSession } from "@/lib/auth/session"
-import { SITE_URL } from "@/lib/seo/site"
-import { eq } from "drizzle-orm"
+import { magicVerifySchema } from "@/lib/auth/validation"
+import { eq, and, isNull, desc } from "drizzle-orm"
 
 // Öffentlicher Endpunkt (middleware apiPublicPaths enthält "/api/auth/").
-// Wird aus der Magic-Link-Mail per GET aufgerufen.
+// POST { email, code, next } — löst den 6-stelligen Code ein und erstellt die
+// Session. KEIN Redirect: der Client (Code-Screen) navigiert selbst zu `next`,
+// damit der Player im selben Tab neu lädt und den Gast-Stand mergt.
 
 /**
  * Nur interne Pfade als Redirect-Ziel zulassen (Open-Redirect-Schutz).
  * Muss mit genau einem "/" beginnen (nicht "//", nicht "/\").
  */
-function safeNext(next: string | null): string | null {
+function safeNext(next: string | undefined): string | null {
   if (!next) return null
   if (!next.startsWith("/")) return null
   if (next.startsWith("//") || next.startsWith("/\\")) return null
   return next
 }
 
-function redirectTo(path: string): NextResponse {
-  return NextResponse.redirect(new URL(path, SITE_URL))
+/** Zeitkonstanter Vergleich zweier Hex-Hashes gleicher Länge. */
+function hashesEqual(a: string, b: string): boolean {
+  const bufA = Buffer.from(a, "hex")
+  const bufB = Buffer.from(b, "hex")
+  if (bufA.length !== bufB.length) return false
+  return timingSafeEqual(bufA, bufB)
 }
 
-export async function GET(request: NextRequest) {
-  const token = request.nextUrl.searchParams.get("token")
-  const next = safeNext(request.nextUrl.searchParams.get("next"))
-
-  if (!token) {
-    return redirectTo("/de/login?error=magic_invalid")
-  }
-
+export async function POST(request: NextRequest) {
   try {
-    const tokenHash = hashMagicToken(token)
+    const body = await request.json().catch(() => null)
+    const parsed = magicVerifySchema.safeParse(body)
+    if (!parsed.success) {
+      return NextResponse.json(
+        { error: parsed.error.issues[0].message },
+        { status: 400 }
+      )
+    }
+
+    const { email, code } = parsed.data
+    const next = safeNext(parsed.data.next)
+
+    // Neuesten offenen, nicht abgelaufenen Code dieser E-Mail holen.
     const [record] = await db
       .select()
       .from(loginTokens)
-      .where(eq(loginTokens.tokenHash, tokenHash))
+      .where(and(eq(loginTokens.email, email), isNull(loginTokens.usedAt)))
+      .orderBy(desc(loginTokens.createdAt))
       .limit(1)
 
-    // Ungültig / bereits benutzt / abgelaufen → freundlich zum Login.
-    if (!record || record.usedAt || record.expiresAt.getTime() < Date.now()) {
-      return redirectTo("/de/login?error=magic_expired")
+    if (!record || record.expiresAt.getTime() < Date.now()) {
+      return NextResponse.json(
+        { error: "Der Code ist abgelaufen. Fordere einen neuen an.", reason: "expired" },
+        { status: 401 }
+      )
     }
 
-    // Token einlösen (einmalig).
+    if (record.attempts >= OTP_MAX_ATTEMPTS) {
+      // Zu viele Fehlversuche → Code verbrennen.
+      await db
+        .update(loginTokens)
+        .set({ usedAt: new Date() })
+        .where(eq(loginTokens.id, record.id))
+      return NextResponse.json(
+        {
+          error: "Zu viele Fehlversuche. Fordere einen neuen Code an.",
+          reason: "locked",
+        },
+        { status: 401 }
+      )
+    }
+
+    // Code prüfen (zeitkonstant über die Hashes).
+    if (!hashesEqual(hashOtpCode(code), record.codeHash)) {
+      await db
+        .update(loginTokens)
+        .set({ attempts: record.attempts + 1 })
+        .where(eq(loginTokens.id, record.id))
+      const rest = OTP_MAX_ATTEMPTS - (record.attempts + 1)
+      return NextResponse.json(
+        {
+          error:
+            rest > 0
+              ? `Code stimmt nicht. Noch ${rest} Versuch${rest === 1 ? "" : "e"}.`
+              : "Zu viele Fehlversuche. Fordere einen neuen Code an.",
+          reason: "wrong",
+        },
+        { status: 401 }
+      )
+    }
+
+    // Richtig → Code einlösen (einmalig).
     await db
       .update(loginTokens)
       .set({ usedAt: new Date() })
@@ -66,7 +115,10 @@ export async function GET(request: NextRequest) {
       .limit(1)
 
     if (!user || !user.isActive) {
-      return redirectTo("/de/login?error=magic_invalid")
+      return NextResponse.json(
+        { error: "Konto nicht gefunden.", reason: "no_user" },
+        { status: 401 }
+      )
     }
 
     // Subscription-Status (Schule kann bezahlt haben).
@@ -90,10 +142,16 @@ export async function GET(request: NextRequest) {
     })
 
     // Zurück in die Situation (next) — NICHT /dashboard, sonst greift der
-    // EinstufungsGuard und leitet Pilot-Schüler auf /einstufung um.
-    return redirectTo(next ?? `/${user.language}/lernen`)
+    // EinstufungsGuard. Der Client navigiert anhand dieses Werts.
+    return NextResponse.json({
+      ok: true,
+      next: next ?? `/${user.language}/lernen`,
+    })
   } catch (err) {
     console.error("[magic/verify] failed:", err)
-    return redirectTo("/de/login?error=magic_error")
+    return NextResponse.json(
+      { error: "Etwas ist schiefgelaufen. Bitte versuche es erneut." },
+      { status: 500 }
+    )
   }
 }

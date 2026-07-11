@@ -3,19 +3,18 @@ import { db } from "@/lib/db"
 import { users, loginTokens } from "@/lib/db/schema"
 import { magicLoginSchema } from "@/lib/auth/validation"
 import {
-  generateMagicToken,
-  hashMagicToken,
-  magicTokenExpiry,
-  MAGIC_LINK_TTL_MINUTES,
+  generateOtpCode,
+  hashOtpCode,
+  otpExpiry,
+  OTP_TTL_MINUTES,
 } from "@/lib/auth/magic-link"
 import { sendMail } from "@/lib/mail/send"
-import { magicLinkMail } from "@/lib/mail/templates/magic-link"
-import { SITE_URL } from "@/lib/seo/site"
-import { eq } from "drizzle-orm"
+import { otpCodeMail } from "@/lib/mail/templates/otp-code"
+import { eq, and, isNull } from "drizzle-orm"
 
 // Öffentlicher Endpunkt (middleware apiPublicPaths enthält "/api/auth/").
-// Rückkehrer-Login: nur E-Mail — verschickt einen Magic-Link, WENN ein Konto
-// existiert. Die Antwort ist in beiden Fällen identisch (Anti-Enumeration:
+// Rückkehrer-Login: nur E-Mail — verschickt einen 6-stelligen Code, WENN ein
+// Konto existiert. Die Antwort ist in beiden Fällen identisch (Anti-Enumeration:
 // verrät nicht, ob eine E-Mail registriert ist).
 export async function POST(request: NextRequest) {
   try {
@@ -29,7 +28,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const { email, next } = parsed.data
+    const { email } = parsed.data
     const stubbed = !process.env.BREVO_API_KEY
 
     const existing = await db
@@ -43,22 +42,24 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ ok: true, stubbed })
     }
 
-    // Einmal-Token erzeugen; nur den Hash speichern.
-    const token = generateMagicToken()
+    // Ältere, noch offene Codes dieser E-Mail entwerten (nur der neueste gilt).
+    await db
+      .update(loginTokens)
+      .set({ usedAt: new Date() })
+      .where(and(eq(loginTokens.email, email), isNull(loginTokens.usedAt)))
+
+    // 6-stelligen Code erzeugen; nur den Hash speichern.
+    const code = generateOtpCode()
     await db.insert(loginTokens).values({
-      tokenHash: hashMagicToken(token),
+      codeHash: hashOtpCode(code),
       email,
-      expiresAt: magicTokenExpiry(),
+      expiresAt: otpExpiry(),
     })
 
-    const url = new URL("/api/auth/magic/verify", SITE_URL)
-    url.searchParams.set("token", token)
-    if (next) url.searchParams.set("next", next)
-
-    const mail = magicLinkMail({
-      verifyUrl: url.toString(),
+    const mail = otpCodeMail({
+      code,
       spitzname: existing[0].name ?? undefined,
-      ttlMinutes: MAGIC_LINK_TTL_MINUTES,
+      ttlMinutes: OTP_TTL_MINUTES,
     })
     await sendMail({
       to: email,
