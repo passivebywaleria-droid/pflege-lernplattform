@@ -31,7 +31,11 @@ export function EinstufungsGuard({ children }: { children: React.ReactNode }) {
       return
     }
 
-    if (!hatEinstufung) {
+    // Pilot-Modus: kein Einstufungstest (LOCKED-Entscheidung). Der Guard lässt
+    // Pilot-Schüler durch, statt sie auf /einstufung umzuleiten.
+    const pilotMode = process.env.NEXT_PUBLIC_PILOT_MODE === "true"
+
+    if (!pilotMode && !hatEinstufung) {
       router.replace(`/${locale}/einstufung`)
       return
     }
