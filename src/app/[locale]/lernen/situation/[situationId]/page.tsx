@@ -17,6 +17,7 @@ import { PhasenProgress } from "@/components/learn/phasen-progress";
 import { StepRenderer } from "@/components/learn/step-renderer";
 import { PatientAvatar } from "@/components/learn/patient-avatar";
 import { PlayGate } from "@/components/learn/play-gate";
+import { PaywallGate } from "@/components/learn/paywall-gate";
 import { trackFunnel } from "@/lib/funnel/track";
 import { CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR } from "../../../../../../content/ce-02/themen/sturz-prophylaxe/glossar";
 
@@ -58,6 +59,13 @@ export default function SituationLernenPage() {
   );
   const hydratedRef = useRef(false);
   const gastStartFiredRef = useRef(false);
+
+  // Freemium-Paywall (nur eingeloggt): gesetzt, wenn diese Situation über der
+  // freien Grenze liegt und kein aktiver Zugang besteht.
+  const [paywall, setPaywall] = useState<{
+    isAdult: boolean;
+    freeLimit: number;
+  } | null>(null);
 
   useEffect(() => {
     setLoading(true);
@@ -218,6 +226,9 @@ export default function SituationLernenPage() {
   // Eingeloggten Fortschritt zum Server persistieren (debounced, best effort).
   useEffect(() => {
     if (isGuest !== false || !situation || !hydratedRef.current) return;
+    // Paywall aktiv → diese (gesperrte) Situation NICHT als „begonnen"
+    // speichern, sonst zählte sie fälschlich zur Freemium-Grenze.
+    if (paywall) return;
     const validPhases = situation.phasen.map((p) => p.phase);
     const timer = setTimeout(() => {
       void fetch("/api/progress/situation", {
@@ -246,6 +257,7 @@ export default function SituationLernenPage() {
     currentPhaseId,
     completedPhases,
     currentStepIndex,
+    paywall,
   ]);
 
   // Funnel: Gast öffnet die Situation (einmalig).
@@ -254,6 +266,27 @@ export default function SituationLernenPage() {
       gastStartFiredRef.current = true;
       trackFunnel("gast_start", { situationId });
     }
+  }, [isGuest, situation, situationId]);
+
+  // Freemium-Grenze prüfen (nur eingeloggt). Gäste sind durch das Account-Gate
+  // begrenzt und haben keinen DB-Fortschritt.
+  useEffect(() => {
+    if (isGuest !== false || !situation) return;
+    let cancelled = false;
+    fetch(`/api/billing/access?situationId=${encodeURIComponent(situationId)}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (cancelled || !d) return;
+        if (d.canOpen === false) {
+          setPaywall({ isAdult: !!d.isAdult, freeLimit: d.freeLimit ?? 3 });
+        }
+      })
+      .catch(() => {
+        // Fehler → im Zweifel nicht sperren (Lernfluss geht vor).
+      });
+    return () => {
+      cancelled = true;
+    };
   }, [isGuest, situation, situationId]);
 
   // Reihenfolge der Phasen dieser Situation (situationsTyp-abhängig)
@@ -334,6 +367,26 @@ export default function SituationLernenPage() {
         >
           {t("zurueckZurUebersicht")}
         </Link>
+      </div>
+    );
+  }
+
+  // Freemium-Paywall: Situation-Inhalt gar nicht erst rendern (kein Leak),
+  // nur das Bezahl-Overlay zeigen. Zahlung führt zurück in genau diese Situation.
+  if (paywall) {
+    const situationNext = `/${locale}/lernen/situation/${situationId}?ce=${ceId}`;
+    return (
+      <div className="h-dvh bg-[var(--lern-bg)]">
+        <PaywallGate
+          locale={locale}
+          situationId={situationId}
+          next={situationNext}
+          isAdult={paywall.isAdult}
+          freeLimit={paywall.freeLimit}
+          onDismiss={() => {
+            window.location.href = `/${locale}/lernen/ce/${ceId}`;
+          }}
+        />
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import { db } from "@/lib/db"
 import { users, schools, situationFortschritt } from "@/lib/db/schema"
-import { FREE_SITUATION_LIMIT } from "@/lib/stripe/config"
+import { FREE_SITUATION_LIMIT, ADULT_AGE } from "@/lib/stripe/config"
 import { eq } from "drizzle-orm"
 
 /**
@@ -20,6 +20,8 @@ export interface AccessState {
   freeUsed: number
   freeLimit: number
   begonnene: string[]
+  // Für die Paywall-Anzeige: ≥18 → Abo, sonst Einmalkauf.
+  isAdult: boolean
 }
 
 /** Distinct situationIds, die der Nutzer bereits begonnen hat. */
@@ -38,10 +40,15 @@ export async function getAccessState(userId: string): Promise<AccessState> {
       subscriptionStatus: users.subscriptionStatus,
       accessUntil: users.accessUntil,
       schoolId: users.schoolId,
+      birthYear: users.birthYear,
     })
     .from(users)
     .where(eq(users.id, userId))
     .limit(1)
+
+  const currentYear = new Date().getFullYear()
+  const isAdult =
+    user?.birthYear != null && currentYear - user.birthYear >= ADULT_AGE
 
   let hasAccess = false
   if (user) {
@@ -67,6 +74,7 @@ export async function getAccessState(userId: string): Promise<AccessState> {
     freeUsed: begonnene.length,
     freeLimit: FREE_SITUATION_LIMIT,
     begonnene,
+    isAdult,
   }
 }
 

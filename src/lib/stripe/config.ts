@@ -18,6 +18,9 @@ export const FREE_SITUATION_LIMIT = 3
 /** Mindestalter für ein Auto-Abo (darunter: Einmalkauf). */
 export const ADULT_AGE = 18
 
+/** Anzeige-Preis (muss zum Stripe-Produkt passen). */
+export const DISPLAY_PRICE_EUR = "14,99 €"
+
 /** Checkout-Input: Schullizenz oder Einzellizenz */
 export const checkoutSchema = z.discriminatedUnion("type", [
   z.object({
