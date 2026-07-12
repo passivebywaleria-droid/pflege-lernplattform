@@ -485,11 +485,13 @@ export default function SituationLernenPage() {
               <p className="text-sm text-[var(--lern-text-secondary)] mb-4">
                 {situation.titel}
               </p>
+              {/* Post-Situation-Sog (Kante D3): nach vorn („Weiter lernen" →
+                  nächster Fall / ggf. Paywall) statt Sackgassen-„zurück". */}
               <Link
                 href={`/${locale}/lernen/ce/${ceId}`}
                 className="inline-block rounded-xl bg-[var(--lern-accent)] px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[#4C6A52]"
               >
-                {t("zurueckZurUebersicht")}
+                {t("continueSituation")}
               </Link>
             </motion.div>
           ) : transitionText ? (

@@ -64,7 +64,8 @@ export default async function LandingPage({
 
   // Pilot-Einstieg: direkt in die Gast-Session (Play-then-Gate), SPEC-PILOT-FLOW-produktreif Kante 1
   const demoHref = `/${locale}/lernen/situation/ls-wagner-reanimation?ce=ce-06`
-  const loginHref = `/${locale}/login`
+  // Kante 7: Rückkehrer melden sich passwortlos per Code an (nicht /login = Passwort).
+  const loginHref = `/${locale}/mitmachen`
 
   const waitlistLabels = {
     emailLabel: t("waitlistEmailLabel"),
