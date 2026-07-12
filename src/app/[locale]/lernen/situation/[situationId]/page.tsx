@@ -20,6 +20,7 @@ import { PlayGate } from "@/components/learn/play-gate";
 import { PaywallGate } from "@/components/learn/paywall-gate";
 import { trackFunnel } from "@/lib/funnel/track";
 import { CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR } from "../../../../../../content/ce-02/themen/sturz-prophylaxe/glossar";
+import { CE06_GLOSSAR } from "../../../../../../content/ce-06/glossar";
 
 /**
  * Glossar-Mapping pro Situation — welche Themen-Glossare relevant sind.
@@ -29,6 +30,7 @@ import { CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR } from "../../../../../../content/c
  */
 const SITUATION_GLOSSAR: Record<string, GlossarEntry[]> = {
   "frau-m-nacht-sturz": CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR,
+  "ls-wagner-reanimation": CE06_GLOSSAR,
 };
 
 export default function SituationLernenPage() {
@@ -396,13 +398,17 @@ export default function SituationLernenPage() {
   const phaseLabel = t(`phasen.${currentPhaseId}`);
   const totalSteps = phaseSteps.length;
 
-  // Play-then-Gate: der Gate-Step ist der 2. Step der ERSTEN Phase.
-  // Step 1 gibt den vollen Reveal als Hook, an Step 2 greift das Gate.
+  // Play-then-Gate: greift am 2. ANTWORT-Step der ersten Phase (der 1. ist der
+  // Hook mit vollem Reveal). Lese-Bausteine ohne `question` (z.B. inlineWissen)
+  // zählen NICHT mit — so lassen sich Wissens-Tabs frei zwischen die Fragen
+  // setzen, ohne das Gate zu verschieben.
   const firstPhaseId = situation.phasen[0]?.phase;
+  const zweiterAntwortStepId =
+    currentPhaseId === firstPhaseId
+      ? phaseSteps.filter((s) => !!s.question)[1]?.stepId
+      : undefined;
   const isGateStep =
-    !!firstPhaseId &&
-    currentPhaseId === firstPhaseId &&
-    currentStepIndex === 1;
+    !!zweiterAntwortStepId && currentStep?.stepId === zweiterAntwortStepId;
   // soft-Gate: offen, wegtippbar. Nur für Gäste.
   const showSoftGate = isGuest === true && gateStatus === "soft";
   // hartes Gate: nach einmaligem Wegtippen — greift ab dem nächsten Step,

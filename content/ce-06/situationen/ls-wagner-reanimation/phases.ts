@@ -73,6 +73,74 @@ export const CE06_SIT_WAGNER_ERKENNEN: SituationsPhase = {
       },
     },
     {
+      // Wissens-Tab (Gold-Standard, curriculum-first): kommt NACH dem Hook
+      // (Antizipation) und VOR der Puls-Frage (Anwendung). Literatur-belegt +
+      // paraphrasiert (Abstandstest: 0 Treffer). Kein Antwort-Step → verschiebt
+      // das Play-then-Gate nicht.
+      stepId: "ce06-wagner-erk-01b-hks-erkennen",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.3",
+      quellen: ["ERC-Leitlinien 2021"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-wagner-hks-erkennen",
+      tag: "pflege",
+      themaPrimaer: "reanimation-bls",
+      kernfaktId: ["F-01", "F-02", "F-03"],
+      transition: "Und wenn jetzt jemand ruft, du sollst erst den Puls suchen?",
+      contentC1: {
+        title: "Herz-Kreislauf-Stillstand erkennen",
+        body: "",
+        glossarBegriffe: [
+          "Schnappatmung",
+          "Herz-Kreislauf-Stillstand",
+          "Rettungskette",
+          "Synkope",
+        ],
+      },
+      inlineWissen: {
+        bausteinRef: "reanimation-bls-hks-erkennen",
+        themaPrimaer: "reanimation-bls",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Frühdienst, du kommst auf den Flur — und Herr Wagner sackt ein paar Meter vor dir zusammen. Du bist sofort bei ihm, sprichst ihn an, rüttelst an den Schultern. Nichts. Nur alle paar Sekunden ein einzelnes, schnappendes Luftholen. Und jetzt?",
+        kerntext:
+          "Zwei Fragen entscheiden alles, beide beantwortest du in Sekunden: Wacht er auf, wenn du ihn ansprichst und rüttelst? Und hebt sich sein Brustkorb ruhig und regelmäßig? Bleibt beides aus, behandelst du ihn als Herz-Kreislauf-Stillstand.\n\nDer Haken liegt genau bei der Atmung: Kurz nachdem der Kreislauf steht, ringt der Körper oft noch nach einzelnen, ruckartigen Atemzügen mit langen Pausen — der Schnappatmung. Sie wirkt wie ein letztes bisschen Leben, ist aber das Gegenteil: ein Zeichen, dass der Kreislauf bereits steht. Wer sie für Atmung hält, verliert die wichtigsten Minuten.\n\nUnd der Puls? Lass ihn. Nach ihm zu tasten führt selbst geübte Hände oft in die Irre und verschenkt Zeit, die das Gehirn nicht hat. Dieses Erkennen ist Glied 1 der Rettungskette: Erkennen, Alarmieren, Drücken, Defibrillator.",
+        faustregel:
+          "Keine Reaktion und kein ruhiges, gleichmäßiges Atmen — mehr brauchst du nicht, um zu handeln. Schnappen ist kein Atmen.",
+        spektrum: [
+          {
+            patientName: "Frau Ríos",
+            situationsId: "ls-rios-synkope",
+            hauptfaktor: "Synkope",
+            kurzbeschreibung:
+              "Kippt auch weg — aber ihr Gehirn wird nur kurz zu schwach durchblutet. Der Kreislauf läuft weiter, sie kommt von allein zu sich. Kein Stillstand.",
+          },
+          {
+            patientName: "Bewusstloser mit ruhiger Atmung",
+            hauptfaktor: "erhaltene Atmung",
+            kurzbeschreibung:
+              "Reagiert nicht, atmet aber gleichmäßig weiter — dann stabile Seitenlage, keine Wiederbelebung.",
+          },
+          {
+            patientName: "Herr Wagner",
+            situationsId: "ls-wagner-reanimation",
+            hauptfaktor: "Schnappatmung",
+            kurzbeschreibung:
+              "Genau dieses ruhige Atmen fehlt. Das Schnappen täuscht es nur vor. Das ist der Stillstand.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Herr Wagner reagiert nicht und schnappt nur nach Luft — handeln oder warten?",
+          rueckseite:
+            "Handeln. Keine Reaktion + kein ruhiges, gleichmäßiges Atmen = Herz-Kreislauf-Stillstand. Schnappen ist kein Atmen. Kein Pulstasten — direkt in die Rettungskette.",
+        },
+      },
+    },
+    {
       stepId: "ce06-wagner-erk-02",
       phase: 1,
       stepType: "truefalse",
