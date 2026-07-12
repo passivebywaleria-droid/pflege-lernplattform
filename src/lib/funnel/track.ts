@@ -22,6 +22,9 @@ export type FunnelEvent =
   | "gate_weggetippt"
   | "gate_konvertiert"
   | "account_erstellt"
+  // Monetarisierung (B2C-Paywall):
+  | "paywall_gezeigt"
+  | "paywall_konvertiert"
 
 const LS_KEY = "pflege:funnel"
 

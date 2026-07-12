@@ -494,6 +494,9 @@ export const users = pgTable("users", {
   // Pilot: Geburtsjahr statt Klarname/Geburtsdatum (Datensparsamkeit) —
   // ≥16-Check bei Registrierung.
   birthYear: integer("birth_year"),
+  // B2C-Einmalkauf (16–17, § 110): Zugangs-Ende. Auto-Abo (≥18) läuft dagegen
+  // über subscriptionStatus. accessUntil > now = aktiver Zugang.
+  accessUntil: timestamp("access_until"),
 
   // Zwei-Achsen-Profil (global)
   sprachLevel: real("sprach_level"),

@@ -3,6 +3,7 @@ import type Stripe from "stripe"
 import { stripe } from "@/lib/stripe"
 import { db } from "@/lib/db"
 import { users, schools } from "@/lib/db/schema"
+import { ONE_TIME_ACCESS_DAYS } from "@/lib/stripe/config"
 import { eq } from "drizzle-orm"
 
 export async function POST(request: Request) {
@@ -69,10 +70,39 @@ export async function POST(request: Request) {
 
 async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
   const metadata = session.metadata ?? {}
-  const { userId, type, schoolId, studentCount } = metadata
+  const { userId, type, schoolId, studentCount, kind } = metadata
   const customerId = typeof session.customer === "string" ? session.customer : session.customer?.id
 
   if (!userId || !customerId) return
+
+  // B2C-Pilot: Alters-abhängiges Ergebnis.
+  if (kind === "pilot_abo") {
+    // ≥18 Auto-Abo → aktiver Abo-Status.
+    await db
+      .update(users)
+      .set({
+        stripeCustomerId: customerId,
+        subscriptionStatus: "active",
+        updatedAt: new Date(),
+      })
+      .where(eq(users.id, userId))
+    return
+  }
+  if (kind === "pilot_einmal") {
+    // 16–17 Einmalkauf → 30 Tage Zugang (KEIN Abo-Status, kein Dauerschuldverh.).
+    const until = new Date(
+      Date.now() + ONE_TIME_ACCESS_DAYS * 24 * 60 * 60 * 1000
+    )
+    await db
+      .update(users)
+      .set({
+        stripeCustomerId: customerId,
+        accessUntil: until,
+        updatedAt: new Date(),
+      })
+      .where(eq(users.id, userId))
+    return
+  }
 
   if (type === "school" && schoolId) {
     await db

@@ -14,6 +14,8 @@ const funnelSchema = z.object({
     "gate_weggetippt",
     "gate_konvertiert",
     "account_erstellt",
+    "paywall_gezeigt",
+    "paywall_konvertiert",
   ]),
   props: z
     .record(z.string(), z.union([z.string(), z.number(), z.boolean()]))
