@@ -30,7 +30,18 @@ import { CE06_GLOSSAR } from "../../../../../../content/ce-06/glossar";
  */
 const SITUATION_GLOSSAR: Record<string, GlossarEntry[]> = {
   "frau-m-nacht-sturz": CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR,
+  // Alle CE-06-Situationen teilen das zentrale CE-06-Glossar (wächst mit jedem Wissens-Tab).
   "ls-wagner-reanimation": CE06_GLOSSAR,
+  "ls-rios-synkope": CE06_GLOSSAR,
+  "ls-lehmann-sturz-sht": CE06_GLOSSAR,
+  "ls-novak-erregung": CE06_GLOSSAR,
+  "ls-yildiz-thoraxschmerz": CE06_GLOSSAR,
+  "ls-gruber-schock": CE06_GLOSSAR,
+  "ls-kortmann-abdomen": CE06_GLOSSAR,
+  "ls-radtke-brand": CE06_GLOSSAR,
+  "ls-erlemann-organspende": CE06_GLOSSAR,
+  "ls-sander-verbruehung": CE06_GLOSSAR,
+  "ls-capstone-am-boden": CE06_GLOSSAR,
 };
 
 export default function SituationLernenPage() {

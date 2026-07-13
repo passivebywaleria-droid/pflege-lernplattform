@@ -1,0 +1,76 @@
+{
+  "situationId": "ls-lehmann-sturz-sht",
+  "geprueft": "2026-07-13",
+  "file": "content/ce-06/situationen/ls-lehmann-sturz-sht/phases.ts",
+  "grounding": [
+    "specs/ce-06/kernfakten/traumatologische-erstversorgung.md (F-01..F-08)",
+    "specs/ce-06/kernfakten/notfallassessment.md (F-07 = SBAR)"
+  ],
+  "fokus": "Akutsituation Sturz+SHT im Heim; 3 neue inlineWissen-Tabs (erk-01b, erm-00b, erm-02b); Anti-Pattern korrektiv (Licht, Bettgitter/FeM, Achselgriff, Glueck-vor-Assessment)",
+  "stepAnzahl": 9,
+  "stepTypen": "4 mc, 1 branching, 1 truefalse, 1 reflection, 3 inlineWissen (2 der mc/tf ueberlappen Phasen)",
+  "mechanisierteChecks": {
+    "zitatVerifizierer": "PASS (12/12 Belege verbatim-verifiziert)",
+    "stepGroundingCheck": "PASS (ls-lehmann-sturz-sht, 0 dangling / 0 missing)",
+    "antiPatternCheck": "PASS (keine Treffer in Lehmann)",
+    "standardsCurrencyCheck": "PASS (0 veraltete Normen; §1831 Fassung ab 2023 korrekt)",
+    "faktentreueCheck": "PASS (SBAR + ABCDE in Faktenbasis gedeckt, Coverage 100%)"
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "MITTEL",
+      "step": "ce06-lehmann-erm-00b-blutstillung / ce06-lehmann-erm-01",
+      "phase": "erstmassnahmen",
+      "titel": "Sub-Claim 'kein punktueller Druck ueber tastbarer Knochenstufe / Verdacht Schaedelbruch' ist klinisch korrekt, aber nicht gegroundet",
+      "stelle": "phases.ts Zeile 344 (kerntext), 362-365 (spektrum 'Verdacht auf Schaedelbruch'), 371 (karteikarte), 406 (erm-01 explanation)",
+      "problem": "Die Aussage 'ueber einer Knochenstufe / bei Verdacht auf Schaedelbruch KEIN punktueller Druck, sondern nur locker steril abdecken' ist fachlich richtiges Erste-Hilfe-Standardwissen (offene/imprimierte Schaedelverletzung nicht komprimieren). Sie ist aber NICHT von den zitierten Kernfakten F-06 (Druckverband/sterile Kompresse) oder F-07 (Waermeerhalt) gedeckt und im pflege-heute-Volltext nicht verbatim auffindbar. Damit ist ein claim-tragender Sub-Fakt ungegroundet — der step-grounding-check erkennt das nicht, weil F-06/F-07 als IDs existieren, aber die konkrete Aussage nicht abdecken. Verstoss gegen 'nichts Ungedecktes' (nicht gegen Fachlichkeit).",
+      "standardVerweis": "Erste-Hilfe-Doktrin (DRK/DGUV: bei Verdacht auf Schaedelbruch/offene Kopfverletzung keinen direkten Druck); im aktuellen CE-06-Korpus nicht verbatim belegt.",
+      "empfehlung": "Entweder (a) einen verifizierten Verbatim-Beleg als F-09 in traumatologische-erstversorgung.md nachtragen (z.B. aus notfallmedizin-index / DRK-Leitlinie), kernfaktId der beiden Steps um F-09 ergaenzen; ODER (b) falls kein Beleg im Korpus beschaffbar: den Sub-Claim auf das Belegte reduzieren ('sterile Kompresse, leichter Druck; bei starker Blutung Druckverband; nicht umlagern') und die Knochenstufe-Ausnahme entfernen. Da klinisch wertvoll: (a) bevorzugen."
+    },
+    {
+      "id": "F-02",
+      "severity": "NIEDRIG",
+      "step": "ce06-lehmann-erm-03",
+      "phase": "erstmassnahmen",
+      "titel": "truefalse mit nur einer Karte — Abgrenzung 'einseitiges Gitter = keine FeM' nicht als Gegenkarte geuebt",
+      "stelle": "phases.ts Zeile 576-583 (trueFalseCards)",
+      "problem": "Der truefalse-Step hat genau eine (falsche) Aussage. Die didaktisch wertvolle Abgrenzung — einseitiges Bettgitter, aus dem die Bewohnerin selbst heraus kann, ist KEINE genehmigungspflichtige FeM (steht bereits im Tab C, Zeile 537-541) — wird hier nicht als kontrastierende 'wahre' Karte geprueft. Kein Fehler, aber die Wahr/Falsch-Mechanik verschenkt die Trennschaerfe.",
+      "standardVerweis": "F-08 (BGB § 1831); Tab C spektrum 'Einseitiges Gitter'.",
+      "empfehlung": "Optional eine zweite Karte ergaenzen: statement 'Ein einseitiges Bettgitter, aus dem Frau Lehmann selbst heraus kann, ist keine genehmigungspflichtige freiheitsentziehende Massnahme.' → isTrue: true, mit Verweis auf § 1831 (keine Freiheitsentziehung, wenn Verlassen moeglich)."
+    },
+    {
+      "id": "F-03",
+      "severity": "NIEDRIG",
+      "step": "ce06-lehmann-erm-02",
+      "phase": "erstmassnahmen",
+      "titel": "Validation (Naomi Feil) im Glossar genannt, in der korrekten Option aber nur ueber Deeskalation abgebildet",
+      "stelle": "phases.ts Zeile 448 (glossarBegriffe 'Validation'), 459/461-462 (korrekte Option + feedback)",
+      "problem": "Frau Lehmann fragt in ihrer Desorientierung 'Wo ist Mutti?'. Die korrekte Option deeskaliert vorbildlich (Augenhoehe, Name, langsam sprechen, behutsam sichern), validiert den emotionalen Gehalt aber nicht explizit (Feil: das Gefuehl hinter der Aeusserung aufgreifen statt korrigieren). Glossar verspricht 'Validation'; inhaltlich wird eher 'Deeskalation' gelehrt. Kein Fehler — die Option korrigiert die Bewohnerin korrekt NICHT ('Ihre Mutter ist nicht hier').",
+      "standardVerweis": "Validation nach Naomi Feil (Beziehungsgestaltung/Demenz).",
+      "empfehlung": "Optional: im feedback der korrekten Option einen Halbsatz zur validierenden Haltung ergaenzen (Gefuehl aufgreifen, Realitaet nicht 'wegdiskutieren'), damit der Glossarbegriff 'Validation' inhaltlich eingeloest wird."
+    }
+  ],
+  "crossStepKonsistenz": {
+    "patientendaten": "OK — Alter 86 (nur in SBAR genannt, kein Widerspruch); Demenz/Osteoporose/Vorhofflimmern unter Apixaban durchgaengig; 'dritter Sturz in sechs Monaten' (SBAR + Reflexion) konsistent; Apixaban immer Wirkstoff, nie Markenname.",
+    "bettgitterFraming": "OK — beidseitiges Bettgitter durchgaengig als FALSCH/FeM (erm-02 Distraktor → erm-02b Wissen → erm-03 truefalse); keine Cross-Step-Umkehr.",
+    "licht": "OK — 'gedaempftes Nachtlicht' nur als Distraktor/Story-Reflex; korrekt gelehrt 'Licht voll einschalten'. Reflexion trennt sauber Orientierungslicht (Sturzprophylaxe, ok) vs. gedaempftes Licht bei Inspektion (falsch).",
+    "zeit": "OK — 02:45 Uhr durchgehend, Phasenlogik erkennen→alarmieren→RD unterwegs→RD eintrifft→Klinik ohne unerklaerte Zeitspruenge.",
+    "rechtBevollmaechtigte": "OK — Tochter mit Vorsorgevollmacht wird eingebunden UND Genehmigung des Betreuungsgerichts genannt; korrekt, da § 1831 Abs. 4 auch Bevollmaechtigte an die Gerichtsgenehmigung bindet."
+  },
+  "positiveBeobachtungen": [
+    "Anti-Patterns bewusst nur als FALSCHE Optionen + korrektiv gelehrt (Licht, Bettgitter, Achselgriff, 'Glueck gehabt') — Distraktor-vs-Empfehlung sauber getrennt.",
+    "'du'-Anrede an Lernende durchgaengig; 'Sie' nur in patientengerichteter Rede (korrekt).",
+    "Sandwich-Prinzip in Branching-Feedbacks (anerkennen→korrigieren→ermutigen) mit realistischer Patient-Reaktion + Koerpersprache.",
+    "Wiederbegegnung Wagner (Kreislauf da vs. Stillstand) fachlich korrekt kontrastiert (nicht bewegen vs. bewusst umlagern+reanimieren).",
+    "SHT unter Antikoagulation → Klinik/CT (F-04/F-05) korrekt und mehrfach konsistent; kein eigenmaechtiges Absetzen.",
+    "Cushing-Trias bewusst NICHT behauptet (nicht korpusbelegt) — dokumentierte Abgrenzung eingehalten."
+  ],
+  "zusammenfassung": {
+    "hoch": 0,
+    "mittel": 1,
+    "niedrig": 2,
+    "koVerdikt": "PASS",
+    "begruendung": "Kein HOCH-Finding — keine pflegerisch falsche Empfehlung, keine Inkonsistenz, keine erfundene Empfehlung. Alle Anti-Patterns korrektiv. Das einzige MITTEL (F-01) ist ein Grounding-/Nachvollziehbarkeits-Gap eines klinisch korrekten Sub-Claims, kein Fachfehler — vor Live-Deploy schliessen (F-09 nachtragen). Kein K.O."
+  }
+}

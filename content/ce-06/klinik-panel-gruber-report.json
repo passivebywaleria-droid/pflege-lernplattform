@@ -1,0 +1,36 @@
+{
+  "ce": "ce-06",
+  "situation": "ls-gruber-schock",
+  "datei": "content/ce-06/situationen/ls-gruber-schock/phases.ts",
+  "geprueft": "2026-07-13",
+  "verdikt": "PASS",
+  "ko": false,
+  "deterministischeChecks": {
+    "klinikPanel": { "exit": 0, "hoch": 0, "mittel": 0, "niedrig": 0, "lenses": { "zahlen": 0, "recht": 0, "dnqpStandard": 0, "konsistenz": 0 } },
+    "pflegeAntiPattern": { "exit": 0, "hoch": 0, "mittel": 0, "niedrig": 0 },
+    "stepGrounding": { "exit": 0, "situation": "PASS", "dangling": 0, "missing": 0 },
+    "standardsCurrency": { "exit": 0, "treffer": 0 },
+    "zitatVerifizierer": { "exit": 0, "belege": "alle verifiziert", "themaFile": "specs/ce-06/kernfakten/schock-und-kreislauf.md" }
+  },
+  "befunde": [
+    {
+      "id": "GRUBER-N1",
+      "lens": "semantisch (5.)",
+      "severity": "NIEDRIG",
+      "stepId": "ce06-gruber-erm-06",
+      "titel": "Beleg-Vollständigkeit: Zahl 40 mmol/l nicht verbatim gedeckt",
+      "beschreibung": "Die korrekte MC-Option und ihr explanation nennen 'Konzentrationen über 40 mmol/l dürfen nur über einen ZVK'. Die Zahl 40 mmol/l steht in der Kernfakt-Prosa (F-10), ist aber unter den verbatim-verifizierten Belegen von F-10 nicht als Token enthalten (die zitierten Belege lauten 'nur über einen ZVK infundiert werden' + 'Venenwandreizung'). Fachlich korrekt und Standard (Pflege heute Kap. 33.10.3), aber die konkrete Zahl ist nicht verbatim gegroundet.",
+      "beleg": "Pflege heute 2019, Kap. 33.10.3; F-10 in specs/ce-06/kernfakten/schock-und-kreislauf.md",
+      "empfehlung": "Verbatim-Beleg mit der 40-mmol/l-Angabe zu F-10 ergänzen ODER Zahl im Step generischer fassen ('hohe Konzentrationen'). Beschaffungs-Item, kein Faktfehler.",
+      "ko": false
+    }
+  ],
+  "semantischeBefunde": {
+    "distraktorVsEmpfehlung": "OK — alle gefährlichen Aussagen (Beine-hoch bei oberer GI-Blutung, eigenmächtig Perfusor/Infusion aufdrehen, Kalium-Bolus peripher, Monitor stummschalten, Oberkörper stark aufrichten bei RR 80/50, orale Gaben) erscheinen ausschließlich als isCorrect:false-Distraktoren mit korrektivem explanation. Kein Lehren von Falschem.",
+    "autotransfusionsFalle": "OK — F-06-Ausnahme (obere GI-Blutung) verbatim gegroundet und als zentraler Lernpunkt korrekt umgesetzt (erm-00b Tab B, erm-01 MC). Konsistent mit Pflegewagen erm-02 (Beine-hoch-Keil in 'weglegen').",
+    "keineErfundenenDosen": "OK — Katecholamine/Perfusor nur als Wirkstoffgruppe + nur Arztanordnung (ala-00b, erm-04). Adrenalin/Noradrenalin nur als körpereigene Stresshormone (Zentralisation, erk-01/erk-01b). Keine Med-Dosis erfunden.",
+    "crossStepKonsistenz": "OK — Vitalprogression konsistent (Puls 108→132, RR 100/70→80/50), Alter (69) nur in SBAR, kein Widerspruch. Kein Item in einem Step 'korrekt' und im nächsten 'falsch'.",
+    "kbMarker": "OK — LE2-Set korrekt: III.2 an Team/Grenze/Alarmieren (ala-00b, ala-01, erm-04), I.4 an Akut-Handeln, II.1 an SBAR (ueb-01), V.2 an Reflexion (ref-01), I.1 an Coping (ref-02).",
+    "stepTypPflichten": "OK — MC mit explanation je Option; pflegewagen mit erklaerung je Item; truefalse eindeutig; reflection/freetext mit Sandwich-systemPrompt bzw. Bewertungskriterien; alle B1-Varianten vorhanden."
+  }
+}

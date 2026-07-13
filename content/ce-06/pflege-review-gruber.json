@@ -1,0 +1,73 @@
+{
+  "situationId": "ls-gruber-schock",
+  "ce": "ce-06",
+  "le": "LE2",
+  "modus": "code",
+  "geprueft": "2026-07-13",
+  "files": ["phases.ts", "patient.ts", "index.ts", "glossar.ts"],
+  "mechanisierteChecks": {
+    "antiPatternCheck": { "gruberTreffer": 0, "hinweis": "32 CE-weite Treffer stammen aus anderen Situationen (bewusste Distraktoren)" },
+    "stepGroundingCheck": { "ergebnis": "PASS", "dangling": 0, "missing": 0 }
+  },
+  "stepAnzahl": { "mc": 7, "pflegewagen": 1, "truefalse": 1, "branching": 1, "reflection": 1, "freetext": 1, "inlineWissen": 3 },
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "NIEDRIG",
+      "phase": "erstmassnahmen",
+      "stepId": "ce06-gruber-erm-01",
+      "stepType": "mc",
+      "stelle": "Z.472 Option 3",
+      "titel": "Distraktor 'zum Aufstehen bewegen' grenzwertig plakativ",
+      "problem": "Schockpatient aktiv zum Aufstehen bewegen ist so grob falsch, dass es der Karikatur nahekommt.",
+      "standard": "Schock-Erstmaßnahmen F-04/F-06 (Anstrengung vermeiden)",
+      "fix": "Distraktor auf plausiblen Kern reduzieren: 'aufrecht hinsetzen lassen' ohne Mobilisation."
+    },
+    {
+      "id": "F-02",
+      "severity": "NIEDRIG",
+      "phase": "uebergeben",
+      "stepId": "ce06-gruber-ueb-01",
+      "stepType": "mc",
+      "stelle": "Z.875 vs Z.883/891",
+      "titel": "Länge der korrekten SBAR-Option als möglicher Tell",
+      "problem": "Vollständige SBAR-Antwort deutlich länger/dichter als Distraktoren; Länge kann Lösungshinweis werden.",
+      "standard": "MC-Qualitätsregel pflege-konformitaet.md",
+      "fix": "Optional Distraktoren anreichern; inhaltlich akzeptabel (SBAR naturgemäß umfangreich)."
+    },
+    {
+      "id": "F-03",
+      "severity": "NIEDRIG",
+      "phase": "erstmassnahmen",
+      "stepId": "ce06-gruber-erm-00b / ce06-gruber-erm-01",
+      "stepType": "inlineWissen/mc",
+      "stelle": "Z.396/409/456/459",
+      "titel": "Alternativlagerung 'Oberkörper leicht erhöht' ist klinische Inferenz über Verbatim-Beleg hinaus",
+      "problem": "F-06 belegt nur die Ausnahme, nicht die konkrete Alternativposition. Content ergänzt korrekt, aber ableitend.",
+      "standard": "Aspirationsprophylaxe obere GI-Blutung (F-04/F-06 sinngemäß)",
+      "fix": "Keine Korrektur nötig; Formulierung 'leicht/nach Wunsch/Kopf zur Seite' ist sauber abgesichert."
+    },
+    {
+      "id": "F-04",
+      "severity": "NIEDRIG",
+      "phase": "situationsuebergreifend",
+      "stepId": "diverse",
+      "stepType": "glossar",
+      "stelle": "glossar.ts vs contentC1",
+      "titel": "Mehrere C1-glossarBegriffe ohne Eintrag in glossar.ts",
+      "problem": "Fehlend u.a. ZVK, SBAR, Sinusknoten, Reizleitungssystem, Hypokaliämie, Kreuzblut, Coping, Körperkreislauf, Dekompensation, Überwachungsmonitor, Venenverweilkanüle. C1-Lernende erhalten keinen Tooltip.",
+      "standard": "VISION Achse 1 (Glossar/Sprachförderung) — kein Pflege-Fehler",
+      "fix": "Kernbegriffe in glossar.ts nachtragen; nicht deploymentblockierend."
+    }
+  ],
+  "crossStep": {
+    "beineHochVerbot": "konsistent (Tab B, erm-01, pflegewagen erm-02, branching erm-05)",
+    "nuechternGebot": "konsistent (erm-02, SBAR)",
+    "vitalProgression": "logisch (P108/100-70 -> P132/80-50)",
+    "kompetenzgrenze": "konsistent (Tab C, erm-04, erm-05, glossar)",
+    "patientBackground": "in patient.ts etabliert, SBAR/ref-02 gedeckt",
+    "kaliumIv": "konsistent (erm-06, pflegewagen)"
+  },
+  "zusammenfassung": { "hoch": 0, "mittel": 0, "niedrig": 4 },
+  "verdikt": "PASS"
+}

@@ -1,61 +1,70 @@
 # Adversariales Klinik-Panel — `ls-kortmann-abdomen` (CE-06, LE3)
 
-> Situation: Werner Kortmann, 72 — akutes Abdomen / Kolostoma / Drainagen (post-OP)
-> Datum: 2026-07-05 · Prüfer: semantischer Lens (pflege-validator-Rolle) + 4 deterministische Lenses
-> Grounding: `specs/ce-06/kernfakten/abdomen-stoma-drainagen.md` (F-01..F-17) + `notfallassessment.md` (SBAR)
+> Situation: Herr Kortmann, 72 — akutes Abdomen / Kolostoma / Drainagen (2. postop Tag Not-Hartmann → intraabdominelle Nachblutung)
+> Datum: 2026-07-13 · Lauf: **Redesign-Runde** (3 neue Wissens-Tabs, KB-Marker-Korrektur, 9 neue Glossar-Einträge)
+> Prüfer: 4 deterministische Lenses + semantischer 5. Lens (pflege-validator-Rolle)
+> Grounding: `specs/ce-06/kernfakten/abdomen-stoma-drainagen.md` (F-01..F-17) + `notfallassessment.md` (SBAR F-07)
 
-## Verdikt: ✅ PASS — kein HOCH-Befund (kein K.O.)
+## Verdikt: PASS — kein HOCH-Befund (kein K.O.)
 
-Gründerin bleibt Backstop. Das Panel liefert die Vorlage.
+Panel = Vorlage. Gründerin bleibt menschlicher Backstop.
 
 ## Pre-Filter (deterministisch)
 
 | Check | Ergebnis |
 |-------|----------|
-| `klinik-panel.ts ce-06 --situation ls-kortmann-abdomen` | 0 Befunde (HOCH 0 · MITTEL 0 · NIEDRIG 0) |
-| `pflege-anti-pattern-check.ts ce-06` | 0 Funde |
-| `step-grounding-check.ts ce-06` (kortmann) | claim-tragend 12 · gegroundet 12 · dangling 0 |
+| `klinik-panel.ts ce-06 --situation ls-kortmann-abdomen` | exit 0 · 0 Befunde (HOCH 0 · MITTEL 0 · NIEDRIG 0) |
+| `pflege-anti-pattern-check.ts ce-06` | exit 0 · 0 Funde |
+| `zitat-verifizierer.ts --check-file abdomen-stoma-drainagen.md` | exit 0 · alle Belege verifiziert (F-01..F-17) |
+| `step-grounding-check.ts ce-06` (kortmann) | exit 0 · claim-tragend **15** · gegroundet **15** · dangling 0 (12→15 durch die 3 neuen Wissens-Tabs) |
+| `standards-currency-check.ts ce-06` | exit 0 · 0 Treffer |
 
 ## Lens 1 — Arzneimittel-/Zahlen-Sicherheit (W1): PASS
 
-Alle geprüften Zahlen sind belegt und werden im Rahmen verwendet:
-
-- **>200 ml/1 h Nachblutung** → F-06 belegt; in ala-02, erm-01, erm-02, ueb-01 korrekt.
-- **1 Liter/Tag Dünndarminhalt** → F-11 belegt; erk-03.
-- **3 cm prominentes Ileostoma**, **6–8 h Miktion**, **1. Wechsel 3. postop Tag**, **Ileo ≤24 h / Kolo 2–3 Tage** → in den Kernfakten belegt; in den Steps nicht als harte Zahl behauptet (qualitativ umgesetzt), daher kein Out-of-range-Risiko.
-- **Keine erfundenen Medikamenten-Dosen:** Analgesie/Volumen/Transfusion durchgehend „nach ärztlicher Anordnung", ohne Dosis oder Präparat. Pflegewagen (erm-02) enthält nur Material (Monitoring, Zugang, Kreuzblut, steriles Verbandmaterial).
+- **>200 ml/1 h Nachblutung** (F-06) belegt; korrekt in ala-02, erm-01, erm-02, ueb-01, erm-00b.
+- **~1 L/Tag Dünndarminhalt** (F-11) belegt; erk-02b + erk-03.
+- 3 cm Ileostoma / 6–8 h Miktion / 1. Wechsel 3. postop Tag / Ileo ≤24 h / Kolo 2–3 Tage — in Kernfakten belegt, in Steps qualitativ statt als harte Zahl → kein Out-of-range-Risiko.
+- **Keine erfundenen Medikamenten-Dosen:** Analgesie/Volumen/Transfusion durchgehend „nach ärztlicher Anordnung".
 
 ## Lens 2 — Recht & Ethik / Currency: PASS
 
-- **Nekrose-/Durchblutungsbeurteilung = ärztlich** korrekt deklariert (erk-04, deckt F-13).
-- **Drainage nicht eigenmächtig abklemmen/ziehen** — als falsch markiert mit Begründung (ala-02 Option 3).
-- **Einmalkatheter ins Stoma (ärztlich/delegiert):** in den Steps NICHT behauptet → keine ungedeckte Delegationsaussage.
-- **Keine veralteten Normen:** keine §-Verweise, kein §1906/1906a, keine FeM-Aussage in dieser Situation.
+- Nekrose-/Durchblutungsbeurteilung = ärztlich (erk-04, erm-00b, F-13).
+- Drainage nicht eigenmächtig abklemmen/ziehen — Falsch-Option mit Begründung (ala-02 Opt3, erm-00b).
+- **Kompetenzgrenze III.2 korrekt als LE3-Primär** didaktisiert (Tab C erm-00b + ala-02 + erm-01).
+- Keine veralteten Normen (kein §1906/1906a; Currency-Check 0 Treffer).
 
 ## Lens 3 — DNQP-/Standard-Konformität (Grounding W2): PASS
 
-- 12/12 claim-tragende Steps gegroundet.
-- kernfaktId-Zuordnung je Step inhaltlich passend.
-- **ueb-01 `kernfaktId: ["F-07"]`** löst über `themaPrimaer: "notfallassessment"` korrekt auf den **SBAR-Fakt** (notfallassessment.md F-07) auf — NICHT auf den Drainage-F-07 aus abdomen-stoma-drainagen.md. Verifiziert korrekt.
-- Nichts über Ausbildungs-/Curriculum-Niveau hinaus: alle Claims aus Paetz Chirurgie 23. Aufl. / I care Krankheitslehre / EAUN 2024 belegbar.
+- 15/15 claim-tragende Steps gegroundet.
+- Die **3 neuen Wissens-Tabs** liegen jeweils **VOR** ihrer Anwendung, ohne Antwort-Step: `erk-02b` (F-10/11/12, Ileo vs. Kolo) vor `erk-03`; `ala-00b` (F-07/08/09, Drainagen ohne/mit Sog) vor `ala-01`; `erm-00b` (F-06/13, Team-Grenze) vor `erm-01`ff.
+- `ueb-01 kernfaktId F-07` löst über `themaPrimaer "notfallassessment"` korrekt auf den SBAR-Fakt auf.
+- Nichts über Curriculum-Niveau hinaus (Paetz Chirurgie / I care Krankheitslehre / EAUN 2024).
 
 ## Lens 4 — Konsistenz (Patient-Daten / Cross-Step): PASS
 
-- Patientendaten durchgängig (72, m, Hartmann, endständiges Kolostoma links, Zieldrainage ohne Sog + Redon subkutan, Blasenkatheter); `patientId` einheitlich; alle `stepId` eindeutig.
-- Timeline sauber: 2. postop Tag / 16:40 → stabile Routine (erkennen) → Nachblutung (alarmieren) → Erstmaßnahmen → Re-OP-Übergabe → Reflexion.
-- **Stabil vs. akut sauber getrennt:** Frühmobilisation nur in Phase *erkennen* (stabil); Routine-Stomawechsel in erm-02 explizit in „weglegen" mit Prioritätsbegründung. Keine Mobilisation / kein Routine-Wechsel während der akuten Blutung.
+- Patientendaten durchgängig; `patientId` einheitlich; alle `stepId` eindeutig.
+- Timeline sauber: stabiler 2. postop Tag → Nachblutung → Erstmaßnahmen → Re-OP-Übergabe → Reflexion.
+- **Stabil vs. akut getrennt:** Frühmobilisation nur in *erkennen*; Routine-Stomawechsel in erm-02 explizit „weglegen" mit Prioritätsbegründung. Keine Mobilisation / kein Routine-Wechsel während der Blutung.
+- Stoma livide nur hypothetisch („Angenommen…"), reales Stoma rosig-rot — kein Widerspruch.
 
-## Lens 5 — Semantisch (pflege-validator): PASS
+## Lens 5 — Semantisch (pflege-validator)
 
-- **Distraktor vs. Empfehlung:** alle falschen Optionen (livide Stelle massieren, Sog an Bauchdrainage, Drainage ziehen, oral trinken/Keks, Wärmflasche, Katheterbeutel hoch hängen, „Blut ist normal — 1 h abwarten") sind über `isCorrect:false` + konkretes Feedback eindeutig als Fehler markiert, nie als Empfehlung getarnt.
-- **Keine Pseudo-Empathie / Bagatellisierung:** „Ein bisschen Bauchweh, ist normal, oder?" ist Patientenzitat (Realitätscheck), keine Pflegeaussage; Schmerz wird nicht bagatellisiert.
-- **Step-Typ-Pflichten** erfüllt: MC mit `explanation` je Option; Branching mit echten Konsequenz-Pfaden; TrueFalse eindeutig; reflection/freetext mit fachlichen Bewertungskriterien + Standards-Bezug (Patientenedukation F-17); pflegewagen mit konsistenter korrekt/kontraindiziert-Logik.
+**Distraktor-vs-Empfehlung, Step-Typ-Pflichten: PASS.** Alle Anti-Patterns (Sog auf Bauchdrainage, Drainage abklemmen/ziehen, Stoma massieren/abtupfen, oral trotz nüchtern, Wärmflasche auf den Bauch, Routine-Stomawechsel in der Akutsituation, Katheterbeutel hoch, Abwarten) erscheinen ausschließlich als Falsch-Optionen mit korrigierendem Lehrtext — nie als getarnte Empfehlung. Sandwich-Feedback validiert den Impuls und korrigiert dann klar, ohne zu bagatellisieren. Bloom-Spread 2–6, erreicht „geprüft" (ref-01 Bloom 5, ref-02 Bloom 6). SBAR ueb-01 vollständig + priorisiert.
+
+### Befunde (kein K.O.)
+
+1. **MITTEL — KORT-SEM-01 — Glossar-Wiring (`page.tsx`, `SITUATION_GLOSSAR`).**
+   `ls-kortmann-abdomen` fehlt im Mapping (nur `frau-m-nacht-sturz` + `ls-wagner-reanimation` sind eingetragen) → die Situation bekommt `glossar={[]}`. Damit rendern **weder die 9 neu angelegten CE-06-Einträge** (Kolostoma, Ileostoma, Hautschutzplatte, Drainage, Redon-Drainage, aseptisch, Nachblutung, Kompetenzgrenze, nüchtern) **noch die weiteren 33 referenzierten Fachbegriffe** C1-Tooltips in dieser Situation. Die B1-Inline-„(= …)"-Annotationen greifen weiter. Kein fachlich falscher Inhalt (deshalb kein K.O.), aber die Redesign-Glossar-Arbeit bleibt in der Situation funktional tot. **Empfehlung:** `"ls-kortmann-abdomen": CE06_GLOSSAR` ergänzen (idealerweise alle 9 CE-06-Situationen mappen). Code-Fix, nicht Content — an Gründerin/Dev.
+
+2. **NIEDRIG — KORT-SEM-02 — erk-02.** „dumpf" für viszeralen Schmerz und die Gleichsetzung „neuropathisch (neurogen)" sind korrektes Lehrbuchstandardwissen, aber nicht verbatim in F-05. Fachlich in Ordnung; optional F-05 um „dumpf-drückend" ergänzen.
+
+3. **NIEDRIG — KORT-SEM-03 — erm-02/ala-02.** B1-Glosse „Kreuzblut (= Blut für die Blutgruppe)" verkürzt die Kreuzprobe (Verträglichkeitstest ≠ Blutgruppenbestimmung); C1-Erklärung korrekt. Optional B1 schärfen.
 
 ## Beschaffung
 
 Keine. Alle Befunde/Claims literaturbelegt.
 
-## Advisory-Hinweise (kein K.O., keine Korrekturpflicht)
+## Advisory (übernommen, kein K.O.)
 
-1. **NIEDRIG — ala-02 / erm-01 / erm-02 / ueb-01:** F-06 belegt verbatim „>200 ml in der **ersten** Stunde" (unmittelbar postop). Die Situation spielt am 2. postop Tag und nutzt >200 ml/1 h als Raten-Alarmschwelle. Klinisch tragfähig (sekundäre/späte Nachblutung; Rate als untrügliches Warnzeichen). Optional: ein Halbsatz, dass eine späte/sekundäre Nachblutung gemeint ist.
-2. **INFO — ueb-01:** Zwei verschiedene „F-07" existieren in zwei Kernfakten-Themen (Drainagen vs. SBAR). Auflösung über `themaPrimaer` ist verifiziert korrekt, auf den ersten Blick aber verwechselbar.
+- **NIEDRIG:** F-06 belegt verbatim „>200 ml in der **ersten** Stunde" (unmittelbar postop); die Situation spielt am 2. postop Tag und nutzt >200 ml/1 h als Raten-Alarmschwelle. Klinisch tragfähig (sekundäre/späte Nachblutung); erm-00b/ala-02 adressieren die späte Nachblutung inzwischen explizit.
+- **INFO:** Zwei verschiedene „F-07" (Drainagen vs. SBAR) in zwei Kernfakten-Themen — Auflösung über `themaPrimaer` verifiziert korrekt, für Maintainer notiert.

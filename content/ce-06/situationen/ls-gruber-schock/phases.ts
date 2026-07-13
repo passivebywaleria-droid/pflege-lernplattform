@@ -34,7 +34,8 @@ export const CE06_SIT_GRUBER_ERKENNEN: SituationsPhase = {
       phase: 1,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Akut-Einschätzung der Pathophysiologie als Handlungsgrundlage → I.4 (LE2-Set).
+      kompetenzbereich: "I.4",
       quellen: [
         "I care Anatomie, Kap. 6/7 (Herz als Blutpumpe, Herzzeitvolumen)",
         "Pflege heute 2019, Kap. 14.5.2 (Kreislaufzentralisation)",
@@ -87,11 +88,80 @@ export const CE06_SIT_GRUBER_ERKENNEN: SituationsPhase = {
       },
     },
     {
+      // Wissens-Tab A (curriculum-first): nach dem Hook (erk-01), VOR der Anwendung erk-02.
+      // Literatur-belegt (F-08/F-05/F-02/F-03, I care Anatomie Kap. 6/7 + Pflege heute Kap. 14.5)
+      // + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-gruber-erk-01b-schock-verstehen",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.4",
+      quellen: ["I care Anatomie, Kap. 6/7", "Pflege heute 2019, Kap. 14.5/14.5.2"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-gruber-schock-wissen",
+      tag: "krankheitslehre",
+      themaPrimaer: "schock-und-kreislauf",
+      // F-08 (Herz als Pumpe/HZV) · F-05 (hypovoläm + Zentralisation) · F-02 (4 Formen) · F-03 (Leitsymptome/Schockindex).
+      kernfaktId: ["F-08", "F-05", "F-02", "F-03"],
+      transition: "Ordne jetzt ein, welche Schockform bei Herrn Gruber droht.",
+      contentC1: {
+        title: "Warum kippt der Kreislauf? Schock verstehen",
+        body: "",
+        glossarBegriffe: ["hypovolämischer Schock", "Zentralisation", "Schockindex"],
+      },
+      inlineWissen: {
+        bausteinRef: "schock-und-kreislauf-schock-verstehen",
+        themaPrimaer: "schock-und-kreislauf",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Herr Gruber wird blass, die Stirn feuchtkalt, der Puls jagt. Sein Körper macht gerade etwas Kluges — und Gefährliches zugleich. Um im nächsten Moment richtig zu entscheiden, musst du verstehen, was ein Schock überhaupt ist und woran du seine Form erkennst.",
+        kerntext:
+          "Das Herz ist die Pumpe des Kreislaufs: Die rechte Herzkammer treibt das Blut zur Lunge, die linke in den übrigen Körper; in Ruhe bewegt es pro Minute rund fünf Liter. Diese Pumpe kann aber nur so viel weitergeben, wie an Blut zu ihr zurückfließt.\n\nEin Schock bedeutet: Der Kreislauf versagt so weit, dass die Organe zu wenig Sauerstoff bekommen. Bei Herrn Gruber ist die Ursache der Blutverlust — man nennt das Volumenmangelschock. Weil Volumen fehlt, kommt weniger zum Herzen zurück, die Auswurfmenge und der Blutdruck sinken. Der Körper wehrt sich: Stresshormone (Adrenalin, Noradrenalin) engen die Gefäße in Haut und Muskeln ein und lenken das verbliebene Blut zu Herz und Gehirn um. Daher die blasse, feuchtkalte Haut.\n\nEs gibt vier Grundformen: durch Volumenmangel (wie hier), durch ein pumpschwaches Herz, durch eine Blockade im Blutfluss und durch ein „Versacken\" des Blutes in weitgestellten Gefäßen (dann ist das Volumen zunächst normal). Die Warnzeichen ähneln sich: Unruhe, ein schneller und immer schwächerer Puls, sinkender Blutdruck, kühle blasse Haut mit feinem Schweiß. Eine grobe Orientierungszahl ist der Schockindex — Puls geteilt durch den oberen Blutdruckwert; beim Gesunden liegt er bei etwa 0,5, ein Wert Richtung 1 warnt (aussagekräftig nur beim Volumenmangel).",
+        faustregel:
+          "Schock = der Kreislauf versagt, die Organe hungern nach Sauerstoff. Bei Herrn Gruber: Volumenmangel durch Blutung. Zeichen: schneller schwacher Puls, fallender Druck, blass-kalt-schweißig. Schockindex Richtung 1 = Alarm.",
+        spektrum: [
+          {
+            patientName: "Herr Gruber",
+            situationsId: "ls-gruber-schock",
+            hauptfaktor: "Volumenmangel",
+            kurzbeschreibung:
+              "Blut fehlt — hier durch die Blutung. Der Körper zentralisiert; Beine-hoch kann stützen (mit einer wichtigen Ausnahme, gleich mehr).",
+          },
+          {
+            patientName: "Frau Yıldız",
+            situationsId: "ls-yildiz-thoraxschmerz",
+            hauptfaktor: "pumpschwaches Herz",
+            kurzbeschreibung:
+              "Das Herz selbst pumpt zu schwach (kardiogen, z. B. beim Infarkt). Hier wird NICHT flach mit Beinen hoch, sondern der Oberkörper hoch gelagert.",
+          },
+          {
+            patientName: "Blockade im Blutfluss",
+            hauptfaktor: "obstruktiv",
+            kurzbeschreibung:
+              "Etwas versperrt den Blutstrom, z. B. eine große Lungenembolie — das Herz kann nicht mehr genug fördern.",
+          },
+          {
+            patientName: "Weitgestellte Gefäße",
+            hauptfaktor: "distributiv (Versacken)",
+            kurzbeschreibung:
+              "Die Gefäße stellen sich weit, das Blut versackt — z. B. bei schwerer Allergie oder Sepsis; das Blutvolumen ist zunächst normal.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Warum wird Herr Gruber blass und feuchtkalt — und welche Schockform ist das?",
+          rueckseite:
+            "Volumenmangelschock durch Blutung: weniger Rückfluss → weniger Auswurf → Blutdruck fällt; der Körper zentralisiert (Gefäße eng, Blut zu Herz/Hirn) → blass-kalt-schweißig. Vier Formen: Volumenmangel, pumpschwaches Herz (kardiogen), Blockade (obstruktiv), Versacken (distributiv). Zeichen: schneller schwacher Puls, fallender Druck; Schockindex Richtung 1 warnt.",
+        },
+      },
+    },
+    {
       stepId: "ce06-gruber-erk-02",
       phase: 1,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14.5 (Schockformen, Leitsymptome, Schockindex)"],
       track: "basis",
       modus: "challenge",
@@ -157,11 +227,75 @@ export const CE06_SIT_GRUBER_ALARMIEREN: SituationsPhase = {
     "Herr Gruber blutet, der Kreislauf wird schlechter. Renate schaut dich an. Du musst schnell Hilfe holen — und bei den beiden bleiben.",
   kernSteps: [
     {
+      // Wissens-Tab C (curriculum-first, LE2-Primär III.2): interprofessionelles Zusammenspiel +
+      // Kompetenzgrenze + Angehörige. VOR ala-01. Literatur-belegt (F-04/F-06/F-12, Pflege heute
+      // Kap. 14.5.1/14.5.2/14.1) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-gruber-ala-00b-team-grenze",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // LE2-Primär-Schwerpunkt (Rahmenplan): intra-/interprofessionelles Handeln.
+      kompetenzbereich: "III.2",
+      quellen: ["Pflege heute 2019, Kap. 14.5.1/14.5.2/14.1"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-gruber-team-grenze-wissen",
+      tag: "pflege",
+      themaPrimaer: "schock-und-kreislauf",
+      // F-04 (Arzt + 2. Kraft, Intensivverlegung) · F-06 (Katecholamine nur Arztanordnung) · F-12 (Perfusor/Infusomat/Laufrate).
+      kernfaktId: ["F-04", "F-06", "F-12"],
+      transition: "Setz das jetzt in den ersten Sekunden bei Herrn Gruber um.",
+      contentC1: {
+        title: "Dein Part im Team, deine Grenze",
+        body: "",
+        glossarBegriffe: ["Katecholamine", "Perfusor", "Arztanordnung"],
+      },
+      inlineWissen: {
+        bausteinRef: "schock-und-kreislauf-team-grenze",
+        themaPrimaer: "schock-und-kreislauf",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Herr Gruber blutet, der Kreislauf kippt, Renate schaut dich an. Das Entscheidende jetzt schaffst du nicht allein — und einiges darfst du gar nicht allein. Was ist dein Part im Team, und wo endet deine Kompetenz?",
+        kerntext:
+          "Beim schockverdächtigen Notfall ist deine erste Handlung, sofort den Arzt zu rufen und eine zweite Pflegefachperson dazuzuholen. Zu zweit teilt ihr euch auf: Eine bleibt bei Herrn Gruber, überwacht und betreut, die andere richtet Material und bahnt an, dass er so schnell wie möglich auf die Intensivstation kommt. Allein bekommst du Überwachung, Zugänge und Zuwendung nicht gleichzeitig hin.\n\nDabei kennst du deine Grenze genau. Große venöse Zugänge, reichlich Volumen und — wenn der Kreislauf weiter absackt — kreislaufstützende Medikamente (Katecholamine über eine Spritzenpumpe, den Perfusor) ordnet der Arzt an. Wie schnell die Infusion läuft und wie der Perfusor eingestellt wird, entscheidet nicht die Pflege eigenmächtig. Dein Part: Material herrichten, assistieren, die angeordnete Laufrate exakt umsetzen, überwachen und dokumentieren.\n\nUnd Renate? Auch sie gehört dazu. Ein kurzer, klarer Satz — was gerade passiert und was als Nächstes kommt — gibt ihr Halt, während das Team arbeitet.",
+        faustregel:
+          "Zuerst: Arzt + zweite Pflegekraft, dann die Intensivverlegung anbahnen. Grenze: Zugänge, Volumen, Katecholamine/Perfusor und Laufraten ordnet der Arzt an — die Pflege richtet, assistiert, dosiert nach Anordnung, überwacht. Und: Renate mit einem klaren Satz mitnehmen.",
+        spektrum: [
+          {
+            patientName: "Die ersten Sekunden",
+            hauptfaktor: "Arzt + zweite Kraft",
+            kurzbeschreibung:
+              "Sofort den Arzt rufen und eine weitere Pflegefachperson holen — einer bleibt bei Herrn Gruber, einer organisiert.",
+          },
+          {
+            patientName: "Volumen, Katecholamine, Perfusor",
+            hauptfaktor: "Kompetenzgrenze",
+            kurzbeschreibung:
+              "Ordnet der Arzt an. Die Pflege richtet das Material, assistiert und stellt die verordnete Laufrate ein — nie eigenmächtig.",
+          },
+          {
+            patientName: "Frau Yıldız (Herzinfarkt)",
+            situationsId: "ls-yildiz-thoraxschmerz",
+            hauptfaktor: "dieselbe Grenze",
+            kurzbeschreibung:
+              "Auch dort galt: sofort Arzt + zweite Kraft, und O2/Nitro/Schmerzmittel nur auf Anordnung. Hier heißen die ärztlichen Mittel Volumen und Katecholamine.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Schockverdächtiger Notfall — was ist deine erste Handlung, und wo liegt deine Kompetenzgrenze?",
+          rueckseite:
+            "Erst: sofort Arzt + zweite Pflegefachperson, Intensivverlegung vorbereiten. Grenze: große Zugänge, Volumen, Katecholamine/Perfusor und die Laufraten ordnet der Arzt an — die Pflege richtet, assistiert, dosiert nach Anordnung, überwacht, dokumentiert. Angehörige (Renate) mit klarer, ruhiger Information mitnehmen.",
+        },
+      },
+    },
+    {
       stepId: "ce06-gruber-ala-01",
       phase: 2,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Interprofessionelles Alarmieren/Zusammenarbeit → III.2 (LE2-Primär).
+      kompetenzbereich: "III.2",
       quellen: ["Pflege heute 2019, Kap. 14.5.1 (Erstmaßnahmen: Arzt, Zugänge, Monitoring, Intensivverlegung)"],
       track: "basis",
       modus: "challenge",
@@ -227,11 +361,76 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
     "Der Arzt kommt gleich, eine Kollegin hilft. Jetzt zählt die richtige Erstversorgung. Die erste Frage: Wie lagerst du ihn?",
   kernSteps: [
     {
+      // Wissens-Tab B (curriculum-first): VOR erm-01. Die zentrale Falle — Autotransfusionslage,
+      // ABER Ausnahme obere GI-Blutung. Literatur-belegt (F-06/F-04, Pflege heute Kap. 14.5.1/14.5.2)
+      // + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-gruber-erm-00b-lagern-falle",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // Akut-Lagerung/Erstversorgung → I.4 (LE2-Set).
+      kompetenzbereich: "I.4",
+      quellen: ["Pflege heute 2019, Kap. 14.5.1/14.5.2"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-gruber-lagern-falle-wissen",
+      tag: "pflege",
+      themaPrimaer: "schock-und-kreislauf",
+      // F-06 (Autotransfusionslage + Ausnahme obere GI-Blutung) · F-04 (Erstmaßnahmen: O2, Zugänge, Monitoring, nüchtern).
+      kernfaktId: ["F-06", "F-04"],
+      transition: "Wende die richtige Lagerung jetzt bei Herrn Gruber an.",
+      contentC1: {
+        title: "Die Autotransfusions-Falle: Beine hoch — außer wann?",
+        body: "",
+        glossarBegriffe: ["Autotransfusionslage", "obere GI-Blutung", "Aspiration"],
+      },
+      inlineWissen: {
+        bausteinRef: "schock-und-kreislauf-lagern-falle",
+        themaPrimaer: "schock-und-kreislauf",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Volumenmangelschock — im Unterricht hast du gelernt: flach hinlegen, Beine hoch, dann fließt Blut aus den Beinen zurück. Der Reflex ist richtig … fast immer. Bei Herrn Gruber wäre er ein Fehler. Warum?",
+        kerntext:
+          "Beim Volumenmangelschock hilft die Autotransfusionslage: Der Mensch liegt flach, die Beine werden hochgelagert, so fließt Blut aus den Beinvenen zurück in den Kreislauf und stützt kurzfristig den Blutdruck. Das ist der Standard-Reflex — und er hat klare Ausnahmen.\n\nAusgenommen sind drei Orte der Blutung: der Kopf, die Lunge und der obere Verdauungstrakt. Genau das trifft auf Herrn Gruber zu: Er blutet oben im Magen-Darm-Bereich und erbricht. Beine hoch bringt bei der aktiven Blutung keinen Vorteil, und flach zu liegen erhöht beim Erbrechen die Gefahr, dass er Erbrochenes einatmet (Aspiration). Deshalb lagerst du ihn nach seinem Bedürfnis — den Oberkörper eher leicht erhöht — und drehst den Kopf beim Erbrechen zur Seite.\n\nParallel läuft der Rest der Erstversorgung: Sauerstoff nach Anordnung, große venöse Zugänge vorbereiten, engmaschig Puls, Blutdruck, Atmung, Bewusstsein und die Haut überwachen. Und wichtig: nichts zu essen oder zu trinken — er bleibt nüchtern, weil eine Magenspiegelung oder eine Operation folgen kann.",
+        faustregel:
+          "Beine hoch beim Volumenmangel — AUSSER bei Blutung an Kopf, Lunge oder oberem Magen-Darm-Trakt. Herr Gruber: Oberkörper leicht erhöht, Kopf beim Erbrechen zur Seite, nüchtern lassen. Sonst droht die Aspiration.",
+        spektrum: [
+          {
+            patientName: "Volumenmangel ohne obere Blutung",
+            hauptfaktor: "Beine hoch",
+            kurzbeschreibung:
+              "Hier stützt die Autotransfusionslage den Druck: flach liegen, Beine hoch.",
+          },
+          {
+            patientName: "Herr Gruber (obere GI-Blutung)",
+            situationsId: "ls-gruber-schock",
+            hauptfaktor: "Ausnahme!",
+            kurzbeschreibung:
+              "Beine hoch bringt nichts, flach liegen erhöht die Aspirationsgefahr. Oberkörper leicht hoch, Kopf zur Seite, nüchtern.",
+          },
+          {
+            patientName: "Frau Yıldız (kardiogen)",
+            situationsId: "ls-yildiz-thoraxschmerz",
+            hauptfaktor: "Oberkörper hoch",
+            kurzbeschreibung:
+              "Auch beim pumpschwachen Herzen keine Autotransfusionslage — der Oberkörper wird hoch gelagert, damit das Herz entlastet wird.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Volumenmangelschock — wann NICHT Beine hoch?",
+          rueckseite:
+            "Autotransfusionslage (flach, Beine hoch) stützt den Druck beim Volumenmangel — AUSGENOMMEN Blutungen an drei Orten — Kopf, Lunge, oberer Verdauungstrakt (und beim kardiogenen Schock). Herr Gruber blutet oben und erbricht → Oberkörper leicht erhöht, Kopf zur Seite, nüchtern; sonst Aspirationsgefahr.",
+        },
+      },
+    },
+    {
       stepId: "ce06-gruber-erm-01",
       phase: 3,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      // Akut-Lagerung (die Falle anwenden) → I.4 (LE2-Set).
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14.5.1/14.5.2 (Autotransfusionslage, Ausnahme obere GI-Blutung)"],
       track: "basis",
       modus: "challenge",
@@ -270,12 +469,12 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
               "Falsch — die Falle. 'Beine hoch bei Volumenmangel' stimmt oft. Aber NICHT bei Blutung im Magen-Darm-Trakt. Herr Gruber erbricht Blut — flach liegen erhöht die Gefahr des Verschluckens.",
           },
           {
-            text: "Den Oberkörper stark aufrichten und ihn zum Aufstehen bewegen, damit ihm nicht mehr übel wird.",
+            text: "Ihn ganz steil aufrecht hinsetzen, damit ihm nicht mehr übel wird.",
             isCorrect: false,
             explanation:
-              "Falsch. Im Schock darf jede Anstrengung vermieden werden, Aufstehen kann den Kreislauf vollends zum Kollaps bringen. Bei der oberen GI-Blutung wird nach Wunsch gelagert (Oberkörper eher leicht erhöht), der Kopf bei Erbrechen zur Seite — nicht aufgesetzt und schon gar nicht mobilisiert.",
+              "Falsch. Im Schock mit fallendem Blutdruck verschlechtert ein steiles Aufsetzen die Hirndurchblutung — er würde eher benommener. Bei der oberen GI-Blutung wird nach seinem Wunsch gelagert (Oberkörper eher leicht erhöht), der Kopf bei Erbrechen zur Seite; jede unnötige Anstrengung wird vermieden.",
             explanationB1:
-              "Falsch. Im Schock darf er sich nicht anstrengen. Aufstehen kann den Kreislauf zum Zusammenbruch bringen. Er bleibt liegen, der Kopf beim Erbrechen zur Seite.",
+              "Falsch. Im Schock mit niedrigem Blutdruck macht steiles Aufsetzen es schlimmer — er wird benommener. Er bleibt liegen (Oberkörper nur leicht erhöht), der Kopf beim Erbrechen zur Seite.",
           },
         ],
       },
@@ -285,7 +484,8 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "pflegewagen",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // K2: Material für venöse Zugänge richten = pflegerische Akut-Fertigkeit → I.4 (LE2-Set).
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14.1/14.5.2 (Material venöser Zugang, Notfallausstattung, Volumenersatz)"],
       track: "basis",
       modus: "praxis-sim",
@@ -421,7 +621,8 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Sauerstoffgabe im Schock (Akut-Erstversorgung) → I.4 (LE2-Set).
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 3.5/14.5.2 (Sauerstoffsysteme, O2 im Schock)"],
       track: "basis",
       modus: "challenge",
@@ -475,7 +676,8 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "truefalse",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Kompetenzgrenze / Zusammenarbeit mit dem Arzt (Perfusor/Infusion nach Anordnung) → III.2 (LE2-Primär).
+      kompetenzbereich: "III.2",
       quellen: ["Pflege heute 2019, Kap. 14.5.2/14.5.3 (Katecholamine/Perfusor auf Arztanordnung, Volumenersatz)"],
       track: "basis",
       modus: "checkpoint",
@@ -518,7 +720,8 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "branching",
       bloomLevel: 5,
-      kompetenzbereich: "II.1",
+      // Verschlechterung am Monitor erkennen und akut handeln → I.4 (LE2-Set).
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14.5.1 (Monitoring, Verschlechterung erkennen); Kap. 41 (Intensiv-Monitor)"],
       track: "basis",
       modus: "praxis-sim",
@@ -571,7 +774,8 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Reizleitung/Elektrolyte als Grundlage sicherer Akutversorgung → I.4 (LE2-Set).
+      kompetenzbereich: "I.4",
       quellen: [
         "I care Anatomie, Kap. 6.6 (Reizleitungssystem, Sinusknoten)",
         "Pflege heute 2019, Kap. 33.10.3 (Kalium, Herzrhythmus, i.v.-Gabe)",
@@ -600,7 +804,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
             text: "Kalium ist entscheidend für den Herzrhythmus — Über- wie Unterversorgung lösen Rhythmusstörungen aus; i.v.-Kalium wird langsam gegeben, hohe Konzentrationen nur über einen ZVK.",
             isCorrect: true,
             explanation:
-              "Richtig. Der Herzrhythmus entsteht im Sinusknoten (dem Taktgeber) und läuft über AV-Knoten, His-Bündel, Tawara-Schenkel und Purkinje-Fasern zum Kammermyokard. Kaliumstörungen greifen direkt in dieses System ein: sowohl die Hyperkaliämie als auch die Hypokaliämie können Herzrhythmusstörungen bis zum Herzstillstand auslösen. Deshalb wird i.v.-Kalium wegen der Gefahr lebensbedrohlicher Rhythmusstörungen langsam gegeben; Konzentrationen über 40 mmol/l dürfen nur über einen ZVK laufen (Kalium reizt die Venenwand).",
+              "Richtig. Der Herzrhythmus entsteht im Sinusknoten (dem Taktgeber) und läuft über AV-Knoten, His-Bündel, Tawara-Schenkel und Purkinje-Fasern zum Kammermyokard. Kaliumstörungen greifen direkt in dieses System ein: sowohl die Hyperkaliämie als auch die Hypokaliämie können Herzrhythmusstörungen bis zum Herzstillstand auslösen. Deshalb wird i.v.-Kalium wegen der Gefahr lebensbedrohlicher Rhythmusstörungen langsam gegeben; höher konzentrierte Lösungen dürfen nur über einen ZVK laufen (Kalium reizt die Venenwand).",
             explanationB1:
               "Richtig. Der Herzschlag beginnt im Sinusknoten, dem Taktgeber. Zu viel oder zu wenig Kalium stört den Rhythmus — bis zum Herzstillstand. Darum gibt man Kalium über die Vene nur langsam. Hohe Konzentrationen laufen nur über einen ZVK, weil Kalium die Venenwand reizt.",
           },
@@ -644,7 +848,8 @@ export const CE06_SIT_GRUBER_UEBERGEBEN: SituationsPhase = {
       phase: 4,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "I.1",
+      // SBAR = strukturierte Kommunikation → II.1 (konsistent zu Wagner/Ríos/Yıldız/Capstone).
+      kompetenzbereich: "II.1",
       quellen: ["Leonard et al. 2004 (SBAR)"],
       track: "basis",
       modus: "challenge",
@@ -714,7 +919,8 @@ export const CE06_SIT_GRUBER_REFLEKTIEREN: SituationsPhase = {
       phase: 5,
       stepType: "reflection",
       bloomLevel: 5,
-      kompetenzbereich: "I.2",
+      // Reflexion der eigenen Rolle/Haltung im apparativen Kontext → V.2 (LE2-Set; I.2 war NICHT im Set).
+      kompetenzbereich: "V.2",
       quellen: ["Pflege heute 2019, Kap. 41 (intensivmedizinischer Kontext)"],
       track: "basis",
       modus: "schreibtisch",

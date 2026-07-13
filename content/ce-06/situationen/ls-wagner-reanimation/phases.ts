@@ -23,7 +23,7 @@ export const CE06_SIT_WAGNER_ERKENNEN: SituationsPhase = {
       phase: 1,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14.3.1 (Erkennen des Herz-Kreislauf-Stillstands)", "ERC 2021"],
       track: "basis",
       modus: "challenge",
@@ -81,7 +81,9 @@ export const CE06_SIT_WAGNER_ERKENNEN: SituationsPhase = {
       phase: 1,
       stepType: "inlineWissen",
       bloomLevel: 2,
-      kompetenzbereich: "I.3",
+      // Kompetenzbereich aus dem Rahmenlehrplan (CE-06-LE1 = Schwerpunkt I.4),
+      // NICHT fachlich geraten. Grundlage für den Kompetenznachweis.
+      kompetenzbereich: "I.4",
       quellen: ["ERC-Leitlinien 2021"],
       track: "basis",
       modus: "entdecker",
@@ -145,7 +147,7 @@ export const CE06_SIT_WAGNER_ERKENNEN: SituationsPhase = {
       phase: 1,
       stepType: "truefalse",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14.3.1 (Pulskontrolle nicht mehr generell empfohlen)", "ERC 2021"],
       track: "basis",
       modus: "checkpoint",
@@ -190,6 +192,74 @@ export const CE06_SIT_WAGNER_ALARMIEREN: SituationsPhase = {
   kontextB1:
     "Du kniest bei Herrn Wagner. Am Flurende steht ein Zivi mit Wäschewagen, aus Zimmer 5 kommt eine Schülerin. Der Defibrillator hängt 30 Meter weg. Jede Sekunde zählt.",
   kernSteps: [
+    {
+      // Wissens-Tab A (Redesign, curriculum-first): kommt VOR ala-01 — der Schüler
+      // versteht die Rettungskette + phone-first + Einzelhelfer-Prinzip, BEVOR er es
+      // in ala-01 anwendet. Literatur-belegt (F-04/F-05/F-11, Pflege heute Kap. 14.3.1)
+      // + paraphrasiert (Abstandstest 0). Kein Antwort-Step → verschiebt das Gate nicht.
+      stepId: "ce06-wagner-ala-00b-rettungskette",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // LE1-Primär-Schwerpunkt (Rahmenlehrplan), Kernhandlung — nicht geraten.
+      kompetenzbereich: "I.4",
+      quellen: ["ERC-Leitlinien 2021"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-wagner-rettungskette",
+      tag: "pflege",
+      themaPrimaer: "reanimation-bls",
+      kernfaktId: ["F-04", "F-05", "F-11"],
+      transition: "Und wenn plötzlich zwei Leute in Rufweite sind — wer macht was?",
+      contentC1: {
+        title: "Die Rettungskette in der Hand",
+        body: "",
+        glossarBegriffe: [
+          "Rettungskette",
+          "Notfallteam",
+          "Kammerflimmern",
+          "No-Flow-Zeit",
+        ],
+      },
+      inlineWissen: {
+        bausteinRef: "reanimation-bls-rettungskette",
+        themaPrimaer: "reanimation-bls",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Herr Wagner liegt vor dir, du hast es erkannt: keine Reaktion, kein ruhiges Atmen — Stillstand. Dein eigener Puls rast. Und jetzt kommt die Frage, die über Minuten entscheidet: Was zuerst — Hilfe holen oder sofort drücken? Und darfst du ihn dafür überhaupt allein lassen?",
+        kerntext:
+          "Vier Schritte, immer in derselben Ordnung — das ist die Rettungskette (bei der Reanimation auch Überlebenskette genannt): erkennen, alarmieren, drücken, mit dem Defibrillator schocken. Glied 1 hast du hinter dir. Jetzt zählt Glied 2, und es geht allem anderen vor: Das Notfallteam muss sofort unterwegs sein — im Krankenhaus über den Reanimationsruf, draußen über die 112. Ohne diesen Anruf kommt weder das Gerät noch die erweiterte Hilfe rechtzeitig.\n\nDer erste Reflex ist oft, selbst loszurennen — zum Telefon, zum Defi. Doch bist du allein, gilt: Notruf absetzen, dann ohne Zögern die Herzdruckmassage aufnehmen und beim Patienten bleiben. Du läufst nicht weg, nur um ein Gerät zu holen. Der Grund ist die No-Flow-Zeit: Jede Sekunde ohne Drücken fließt kein Blut zum Gehirn. Ein Defibrillator dreißig Meter entfernt ist diese Pause nicht wert.\n\nBist du zu zweit, teilst du auf: Eine Person beginnt sofort mit dem Drücken, die andere ruft das Team und bringt das Gerät. Und du sprichst die Menschen einzeln und mit klarem Auftrag an — Sie rufen das Team, Sie holen den Defi —, denn ein allgemeines Hilferufen lässt oft jeden auf den anderen warten.\n\nWarum die Eile mit dem Defibrillator? Der häufigste Rhythmus, den das Herz bei einem plötzlichen Stillstand des Erwachsenen zeigt, ist das Kammerflimmern — ein wildes, ungeordnetes Zucken der Herzkammern, bei dem kein Blut mehr hinausgepumpt wird. Dagegen kommt das Drücken allein nicht an; nur der Stromstoß kann es durchbrechen. Je früher er gesetzt wird, desto größer die Chance.",
+        faustregel:
+          "Erst das Team rufen (lassen), dann sofort drücken — und nie den Patienten allein lassen, nur um ein Gerät zu holen.",
+        spektrum: [
+          {
+            patientName: "Allein bei Herrn Wagner",
+            situationsId: "ls-wagner-reanimation",
+            hauptfaktor: "Einzelhelfer",
+            kurzbeschreibung:
+              "Erst den Notruf absetzen, dann sofort drücken — und bei ihm bleiben. Kein Weglaufen zum Defi; die Kompression zählt mehr als das Gerät.",
+          },
+          {
+            patientName: "Zwei Helfer im Flur",
+            hauptfaktor: "Delegation",
+            kurzbeschreibung:
+              "Einer drückt sofort, einer ruft das Team und bringt den Defi. Du sprichst beide einzeln und namentlich an, damit sich jeder gemeint fühlt.",
+          },
+          {
+            patientName: "Kollaps direkt beobachtet",
+            hauptfaktor: "früher Schock",
+            kurzbeschreibung:
+              "Team rufen und den Defibrillator sofort holen lassen — beim Kammerflimmern entscheidet der frühe Stromstoß über die Chance.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Du bist allein bei Herrn Wagner, Stillstand erkannt, der Defi hängt 30 m weg — was zuerst, und darfst du ihn dafür allein lassen?",
+          rueckseite:
+            "Erst Notruf/Team (Priorität, phone-first). Dann sofort Herzdruckmassage — und beim Patienten bleiben, nicht zum Defi weglaufen. Zu zweit: einer drückt, einer holt den Defi. Jede Pause ist No-Flow-Zeit.",
+        },
+      },
+    },
     {
       stepId: "ce06-wagner-ala-01",
       phase: 2,
@@ -261,11 +331,74 @@ export const CE06_SIT_WAGNER_ERSTMASSNAHMEN: SituationsPhase = {
     "Das Notfallteam ist gerufen, der Defi kommt. Herr Wagner liegt auf dem harten Boden — gut für die Herzdruckmassage. Jetzt zählt jede Sekunde.",
   kernSteps: [
     {
+      // Wissens-Tab B (Redesign, curriculum-first): kommt VOR erm-01 — der Schüler
+      // versteht die Qualitäts-Kriterien + das No-Flow-Prinzip, BEVOR er die
+      // Herzdruckmassage sortiert (erm-01), den Schock setzt (erm-02) und den
+      // Helferwechsel plant (erm-03). Literatur-belegt (F-06/F-07/F-08, Pflege heute
+      // Kap. 14.3.2) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-wagner-erm-00b-no-flow",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // LE1-Primär-Schwerpunkt (Rahmenlehrplan), Kernhandlung — nicht geraten.
+      kompetenzbereich: "I.4",
+      quellen: ["ERC-Leitlinien 2021"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-wagner-no-flow",
+      tag: "pflege",
+      themaPrimaer: "reanimation-bls",
+      kernfaktId: ["F-06", "F-07", "F-08"],
+      transition: "Bring die Handgriffe jetzt in die richtige Reihenfolge.",
+      contentC1: {
+        title: "Warum Drücken alles ist: die No-Flow-Zeit",
+        body: "",
+        glossarBegriffe: ["Thoraxkompression", "No-Flow-Zeit"],
+      },
+      inlineWissen: {
+        bausteinRef: "reanimation-bls-no-flow",
+        themaPrimaer: "reanimation-bls",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Deine Handballen liegen auf Herrn Wagners Brustbein, die Arme gestreckt, du drückst. Aber einfach nur drücken und wirksam drücken sind zwei verschiedene Dinge — und dazwischen liegt seine Überlebenschance. Was macht den Unterschied?",
+        kerntext:
+          "Sobald sein Herz steht, übernimmst DU die Pumpe. Jede Kompression presst Blut in Richtung Gehirn — aber nur, wenn vier Dinge stimmen.\n\nTief genug: Der Brustkorb muss beim Erwachsenen fünf bis sechs Zentimeter nachgeben, sonst bewegst du zu wenig Blut. Vollständig loslassen: Nach jedem Druck nimmst du die Last ganz vom Brustkorb — erst dann füllt es sich erneut mit Blut. Die Hände bleiben dabei aufliegen, damit du den Druckpunkt nicht verlierst. Schnell genug: hundert bis hundertzwanzig Mal pro Minute, ein zügiger, gleichmäßiger Takt. Und die Unterlage muss hart sein — auf einer nachgiebigen Matratze versinkt der Betroffene nur, die Kraft verpufft. Deshalb liegt Herr Wagner richtig: auf dem harten Flurboden.\n\nDer rote Faden hinter allem heißt No-Flow-Zeit: jede Sekunde, in der du nicht drückst, steht auch der Blutfluss zum Gehirn. Genau darum ist der Takt von dreißig Kompressionen zu zwei Beatmungen so knapp gehalten, darum geht es nach einem Schock ohne Umweg sofort weiter, darum wird ein müder Helfer in Sekunden gewechselt. Nicht die perfekte einzelne Kompression rettet — sondern möglichst wenig Pause dazwischen.\n\nUnd du hörst nicht auf: weiter, bis er von allein wieder atmet, das Team übernimmt oder eine Ärztin es beendet.",
+        faustregel:
+          "Drücke tief, drücke schnell, lass vollständig los — und hör so gut wie nie auf. Jede Pause ist No-Flow-Zeit.",
+        spektrum: [
+          {
+            patientName: "Zu flach, zu langsam",
+            hauptfaktor: "Ermüdung",
+            kurzbeschreibung:
+              "Nach etwa zwei Minuten werden die Kompressionen flacher und langsamer — dann wird gewechselt, bevor die Qualität kippt.",
+          },
+          {
+            patientName: "Pause fürs Pulstasten",
+            hauptfaktor: "No-Flow-Falle",
+            kurzbeschreibung:
+              "Jede eingeschobene Kontrolle unterbricht den Blutfluss. Darum nach dem Schock ohne Pulscheck sofort weiterdrücken.",
+          },
+          {
+            patientName: "Patient im Bett",
+            hauptfaktor: "weiche Unterlage",
+            kurzbeschreibung:
+              "In der Matratze verpufft der Druck. Erst harte Unterlage schaffen (Reanimationsbrett oder Boden), dann drücken.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Was macht die Herzdruckmassage wirksam — und was ruiniert sie?",
+          rueckseite:
+            "Wirksam: 5–6 cm tief, 100–120/min, vollständig entlasten, harte Unterlage. Ruiniert: Pausen (No-Flow-Zeit). Darum 30:2 knapp, nach Schock sofort weiter, bei Ermüdung wechseln.",
+        },
+      },
+    },
+    {
       stepId: "ce06-wagner-erm-01",
       phase: 3,
       stepType: "sorting",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14.3.2 (Herzdruckmassage: Druckpunkt, Tiefe, Frequenz, 30:2)", "ERC 2021"],
       track: "basis",
       modus: "sortierstation",
@@ -300,7 +433,7 @@ export const CE06_SIT_WAGNER_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "branching",
       bloomLevel: 5,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: [
         "Pflege heute 2019, Kap. 14.3 (AED, Defibrillation, Sicherheit)",
         "Genzwürker/Hinkelbein 2019 (Kammerflimmern, Defibrillation)",
@@ -311,15 +444,15 @@ export const CE06_SIT_WAGNER_ERSTMASSNAHMEN: SituationsPhase = {
       lernziel: "ce06-wagner-aed-schock",
       tag: "pflege",
       themaPrimaer: "reanimation-bls",
-      kernfaktId: ["F-11", "F-05"],
+      kernfaktId: ["F-11", "F-05", "F-14"],
       contentC1: {
         title: "Der AED sagt: „Schock empfohlen.“",
-        body: "Die Schülerin bringt den AED. Du klebst die Elektroden auf (rechts unterhalb des Schlüsselbeins, links seitlich unter der Achsel), während eine Kollegin weiter drückt. Der AED analysiert und sagt mit ruhiger Stimme: \"Schock empfohlen. Laden.\" Alle sind angespannt, die Kollegin hat noch die Hände auf dem Brustkorb. Was tust du in diesem Moment?",
+        body: "Die Schülerin bringt den AED. Du klebst die Elektroden auf (rechts unterhalb des Schlüsselbeins, links seitlich unter der Achsel). Der AED meldet: \"Patienten nicht berühren, Analyse läuft.\" — kurz nehmen alle die Hände weg. Dann sagt er mit ruhiger Stimme: \"Schock empfohlen. Laden.\" Eine Kollegin hat schon wieder die Hände auf dem Brustkorb. Was tust du in diesem Moment?",
         glossarBegriffe: ["AED (automatisierter externer Defibrillator)", "Kammerflimmern", "defibrillierbarer Rhythmus"],
       },
       contentB1: {
         title: "Der AED sagt: „Schock empfohlen.“",
-        body: "Die Schülerin bringt den AED. Du klebst die Elektroden auf. Eine Kollegin drückt noch. Der AED sagt: \"Schock empfohlen. Laden.\" Die Kollegin hat noch die Hände auf dem Brustkorb. Was tust du?",
+        body: "Die Schülerin bringt den AED. Du klebst die Elektroden auf. Der AED sagt: \"Patienten nicht berühren, Analyse läuft.\" — alle nehmen kurz die Hände weg. Dann: \"Schock empfohlen. Laden.\" Eine Kollegin hat schon wieder die Hände auf dem Brustkorb. Was tust du?",
         glossarBegriffe: ["AED (= Defi, der selbst analysiert)", "Kammerflimmern (= gefährliche Herzrhythmusstörung)"],
       },
       question: {
@@ -365,7 +498,7 @@ export const CE06_SIT_WAGNER_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "branching",
       bloomLevel: 4,
-      kompetenzbereich: "I.1",
+      kompetenzbereich: "III.2",
       quellen: ["Pflege heute 2019, Kap. 14.3.2 (Kompressionsqualität, Helferwechsel)", "ERC 2021 (CRM/Team)"],
       track: "basis",
       modus: "praxis-sim",
@@ -437,7 +570,10 @@ export const CE06_SIT_WAGNER_UEBERGEBEN: SituationsPhase = {
       phase: 4,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "I.1",
+      // SBAR = strukturierte Kommunikation → II.1 (Set-KB). kernfaktId "F-07" löst über
+      // themaPrimaer "notfallassessment" auf notfallassessment/F-07 (SBAR, Leonard 2004) auf
+      // — NICHT reanimation-bls/F-07 (Kompressionsfrequenz). Korrekt gegroundet.
+      kompetenzbereich: "II.1",
       quellen: ["Leonard et al. 2004 (SBAR)", "Pflege heute 2019, Kap. 14 (Übergabe im Notfall)"],
       track: "basis",
       modus: "challenge",
@@ -486,9 +622,125 @@ export const CE06_SIT_WAGNER_UEBERGEBEN: SituationsPhase = {
         ],
       },
     },
+    {
+      // Wissens-Tab (Redesign): das ALS-Prinzip — leicht, auf Pflege-Assist-Niveau.
+      // Deckt W1 (Prinzipien des Advanced Life Support). Baut auf No-Flow-Tab auf:
+      // ALS ersetzt BLS nicht. Literatur-belegt (F-06/F-10/F-11/F-12/F-13, Pflege heute
+      // Kap. 14.3.2) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-wagner-ueb-01b-als",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // I.4 (Akut-Handlungswissen, LE1-Primär) — die pflegerische Rolle im ALS.
+      kompetenzbereich: "I.4",
+      quellen: ["Pflege heute 2019, Kap. 14.3.2 (ALS, Notfallmedikamente)", "ERC-Leitlinien 2021"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-wagner-als-prinzip",
+      tag: "pflege",
+      themaPrimaer: "reanimation-bls",
+      kernfaktId: ["F-12", "F-10", "F-11", "F-13"],
+      transition: "Minuten später hat das Team einen Kreislauf zurück.",
+      contentC1: {
+        title: "Das Team übernimmt — was jetzt?",
+        body: "",
+        glossarBegriffe: ["ALS (Advanced Life Support)", "Adrenalin"],
+      },
+      inlineWissen: {
+        bausteinRef: "reanimation-bls-als-prinzip",
+        themaPrimaer: "reanimation-bls",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Die Ärztin und die Intensivpflegekraft sind da, sie übernehmen. Du trittst einen halben Schritt zurück — und fragst dich vielleicht: Was machen die jetzt anders als du? Und war dein Teil damit unwichtig?",
+        kerntext:
+          "Kaum etwas ist anders — und das ist die wichtigste Erkenntnis. Der erweiterte Ablauf, den das Team jetzt fährt (ALS), ersetzt deine Basismaßnahmen nicht, er baut auf ihnen auf. Die hochwertige Herzdruckmassage läuft ununterbrochen weiter; sie bleibt das Fundament.\n\nWas dazukommt, sind ärztliche Schritte: Die Ärztin legt einen Zugang (in eine Vene, notfalls in den Knochen), um Medikamente geben zu können — allen voran Adrenalin, das etwa alle drei bis fünf Minuten wiederholt wird. Bei einem defibrillierbaren Rhythmus wird weiter geschockt. Und das Team sucht parallel nach einer behebbaren Ursache — zum Beispiel einer Unterkühlung oder einer Vergiftung —, denn ohne sie bleibt die Wiederbelebung oft erfolglos.\n\nDeine Rolle endet damit nicht, sie verschiebt sich: Du drückst weiter oder wechselst dich ab, hältst die Qualität hoch, reichst Material, ziehst Medikamente auf, dokumentierst die Zeiten. Das Medikament allein rettet niemanden — es wirkt nur, wenn dein Drücken das Blut überhaupt dorthin bringt. Dein Teil war und bleibt zentral.",
+        faustregel:
+          "ALS ersetzt BLS nicht — es baut darauf auf. Gute Herzdruckmassage bleibt das Fundament; Medikamente wirken nur, wenn das Blut fließt.",
+        spektrum: [
+          {
+            patientName: "Defibrillierbarer Rhythmus",
+            hauptfaktor: "Schock + Adrenalin",
+            kurzbeschreibung:
+              "Kammerflimmern → weiter schocken, Adrenalin alle drei bis fünf Minuten. Die Herzdruckmassage läuft zwischen allem durch.",
+          },
+          {
+            patientName: "Unterkühlung als Ursache",
+            hauptfaktor: "reversible Ursache",
+            kurzbeschreibung:
+              "Erst die Ursache behandeln (aufwärmen), sonst bleibt die Reanimation erfolglos. Bei Unterkühlung wird länger reanimiert.",
+          },
+          {
+            patientName: "Deine Rolle als Schülerin",
+            hauptfaktor: "assistieren",
+            kurzbeschreibung:
+              "Weiterdrücken oder abwechseln, Material reichen, Medikamente aufziehen, Zeiten dokumentieren — das Fundament hältst du.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Das Team übernimmt (ALS) — was ändert sich, und was bleibt dein Teil?",
+          rueckseite:
+            "ALS ersetzt BLS nicht, es baut darauf auf: gute Herzdruckmassage läuft weiter (Fundament). Arzt legt Zugang + gibt Adrenalin (alle 3–5 Min), schockt defibrillierbare Rhythmen, sucht reversible Ursachen. Du assistierst: drücken, Material, Medikamente aufziehen, Zeiten dokumentieren.",
+        },
+      },
+    },
+    {
+      // Anwendung zum ALS-Tab (Variante D: jeder Tab braucht eine Anwendung).
+      stepId: "ce06-wagner-ueb-02-als-rolle",
+      phase: 4,
+      stepType: "mc",
+      bloomLevel: 3,
+      kompetenzbereich: "III.2",
+      quellen: ["Pflege heute 2019, Kap. 14.3.2 (ALS, Aufgabenteilung Team)", "ERC 2021 (CRM/Team)"],
+      track: "basis",
+      modus: "checkpoint",
+      lernziel: "ce06-wagner-als-rolle",
+      tag: "pflege",
+      themaPrimaer: "reanimation-bls",
+      kernfaktId: ["F-12", "F-10"],
+      contentC1: {
+        title: "Deine Rolle im ALS-Team",
+        body: "Das Team fährt jetzt den erweiterten Ablauf. Was ist in diesem Moment deine wichtigste Aufgabe als Pflegeschülerin?",
+        glossarBegriffe: ["ALS (Advanced Life Support)"],
+      },
+      contentB1: {
+        title: "Deine Rolle im Team",
+        body: "Das Team macht jetzt die erweiterten Maßnahmen. Was ist jetzt deine wichtigste Aufgabe?",
+      },
+      question: {
+        fragetext: "Was ist während des ALS deine Kernaufgabe?",
+        mcVariant: "standard",
+        optionen: [
+          {
+            text: "Die Herzdruckmassage hochwertig weiterführen bzw. mich abwechseln, Material reichen, Medikamente nach Anordnung aufziehen und die Zeiten dokumentieren.",
+            isCorrect: true,
+            explanation:
+              "Richtig. ALS ersetzt die Basismaßnahmen nicht — es baut auf ihnen auf. Die durchgehende, hochwertige Herzdruckmassage bleibt das Fundament, und genau die sicherst du. Dazu assistierst du dem Team: Material reichen, Medikamente nach Anordnung aufziehen, Zeiten dokumentieren. So greifen Pflege und ärztliches Team ineinander.",
+            explanationB1:
+              "Richtig. Die gute Herzdruckmassage bleibt das Wichtigste — die machst du weiter oder wechselst dich ab. Außerdem hilfst du dem Team: Material reichen, Medikamente aufziehen, Zeiten aufschreiben.",
+          },
+          {
+            text: "Zur Seite treten und dem Ärzteteam das Feld überlassen — ALS ist ärztliche Sache.",
+            isCorrect: false,
+            explanation:
+              "Nein. Medikamente und Atemwegssicherung sind ärztliche Aufgaben — aber die Herzdruckmassage läuft ununterbrochen weiter, und genau die ist Pflegeaufgabe. Trittst du zurück, entsteht eine gefährliche Pause (No-Flow-Zeit). Das Team braucht dich als aktiven Teil, nicht als Zuschauerin.",
+            explanationB1:
+              "Nein. Die Herzdruckmassage muss ohne Pause weiterlaufen — das ist deine Aufgabe. Wenn du zurücktrittst, entsteht eine gefährliche Pause. Das Team braucht dich.",
+          },
+          {
+            text: "Selbst einen Zugang legen, Adrenalin aufziehen und eigenständig spritzen, um dem Arzt Zeit zu sparen.",
+            isCorrect: false,
+            explanation:
+              "Nein. Das Problem ist das Eigenmächtige: Ein Medikament wie Adrenalin anzuordnen und ohne ärztliche Anordnung zu spritzen ist nicht deine Entscheidung. Du ziehst nach Anordnung auf und reichst an. (Einen venösen Zugang zu legen kann durchaus an dich delegiert sein — die eigenmächtige Medikamentengabe aber nicht.) Deine sichere Zone bleibt die hochwertige Herzdruckmassage und die Assistenz.",
+            explanationB1:
+              "Nein. Zugang legen und Adrenalin geben ist Aufgabe des Arztes. Du ziehst Medikamente nach Anordnung auf und reichst sie an, aber spritzt sie nicht selbst. Deine Aufgabe ist die Herzdruckmassage und das Assistieren.",
+          },
+        ],
+      },
+    },
   ],
   optionaleSteps: [],
-  geschaetzteDauer: 6,
+  geschaetzteDauer: 8,
 };
 
 // ═══════════════════════════════════════════ 5) REFLEKTIEREN
@@ -503,11 +755,141 @@ export const CE06_SIT_WAGNER_REFLEKTIEREN: SituationsPhase = {
     "Das Team hat Herrn Wagner auf die Intensivstation gebracht. Sein Kreislauf ist zurück. Auf dem Flur ist es still. Die Schülerin, die den Defi geholt hat, weint — es war ihre erste Reanimation.",
   kernSteps: [
     {
+      // Wissens-Tab (Redesign): der ethisch-rechtliche Rahmen — Zoom-out von Wagners
+      // Fall zur Regel. Deckt W1 (rechtl./ethische Aspekte + KPR-Indikation).
+      // Literatur-belegt (Thema kpr-indikation-recht-ethik F-01..F-05, Pflege heute
+      // Kap. 9/14.3.2/48.2.6) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      // CROSS-CE-WIEDERBEGEGNUNG (siehe specs/CROSS-CE-KONZEPTREGISTER.md, Konzept
+      // „Ethik/Recht/Patientenverfügung"): Heimat CE-01 → hier CE-06 (KPR-Indikation)
+      // → CE-08 (Therapieziel/Lebensende). CE-08-Chat setzt später den Rück-Link
+      // (wiederbegegnung), sobald die CE-08-Situation im neuen Stil existiert.
+      stepId: "ce06-wagner-ref-00b-kpr-recht",
+      phase: 5,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // V.2 (eigenes Handeln auf rechtlich-ethischer Grundlage begründen) — ein
+      // LE1-Set-Schwerpunkt. Dieser Tab lehrt genuin Recht/Ethik, NICHT die
+      // Akuthandlung (I.4), darum V.2 statt Primär. Marker = tatsächlich trainierter KB.
+      kompetenzbereich: "V.2",
+      quellen: [
+        "§ 323c StGB (unterlassene Hilfeleistung)",
+        "§ 221 StGB (Aussetzung)",
+        "§ 1827 BGB (Patientenverfügung)",
+        "ERC-Leitlinien 2021",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-wagner-kpr-recht",
+      tag: "pflege",
+      themaPrimaer: "kpr-indikation-recht-ethik",
+      kernfaktId: ["F-01", "F-02", "F-03", "F-04", "F-05"],
+      transition: "Nimm diese Regel gleich mit in einen anderen Fall.",
+      contentC1: {
+        title: "Wann reanimieren — und wann nicht?",
+        body: "",
+        glossarBegriffe: ["Patientenverfügung", "unterlassene Hilfeleistung"],
+      },
+      inlineWissen: {
+        bausteinRef: "kpr-indikation-recht-ethik",
+        themaPrimaer: "kpr-indikation-recht-ethik",
+        themenSekundaer: ["reanimation-bls"],
+        storyAufhaenger:
+          "Herr Wagner ist versorgt, sein Kreislauf zurück. Vielleicht bleibt eine Frage: Musstest du das eigentlich tun — einfach so bei einem fremden Menschen? Und gäbe es einen Moment, in dem du gerade NICHT drückst?",
+        kerntext:
+          "Zwei Seiten, eine Entscheidung.\n\nDie erste Seite ist deine Pflicht. Bei einem Notfall muss jeder zumutbare Hilfe leisten — wer wegsieht, macht sich strafbar (unterlassene Hilfeleistung). Für dich als Pflegekraft wiegt das doppelt: Der Mensch ist dir anvertraut. Nichtstun ist hier keine Option, sondern eine Straftat. Dein Handeln bei Herrn Wagner war also nicht nur richtig — es war Pflicht.\n\nDie zweite Seite ist der Wille des Patienten. Der Grundsatz lautet: im Zweifel wird reanimiert. Nur wenn ein Arzt den Verzicht ausdrücklich angeordnet hat — etwa weil eine gültige Patientenverfügung genau das festlegt — wird nicht wiederbelebt. Ein Zettel im Nachttisch, ein Gerücht oder die Vermutung, er habe bestimmt nicht gewollt, reicht dafür NICHT: Ohne klare, gültige Grundlage handelst du.\n\nUnd es gibt Grenzen, an denen selbst Profis den Abbruch erwägen: wenn die eigene Sicherheit nicht mehr da ist, bei sicheren Todeszeichen, bei einer gültigen Patientenverfügung, wenn weitere Maßnahmen dem erklärten Willen des Menschen widersprechen — oder wenn sie aussichtslos sind. Diese Entscheidung trifft das ärztliche Team, nicht du allein.\n\nBei Herrn Wagner war nichts davon gegeben. Also galt das Einfachste und Wichtigste: handeln.",
+        faustregel:
+          "Im Zweifel immer reanimieren. Nur ein ärztlich angeordneter Verzicht — meist auf Basis einer gültigen Patientenverfügung — hält dich zurück. Nichtstun ist bei einem Notfall strafbar.",
+        spektrum: [
+          {
+            patientName: "Herr Wagner",
+            situationsId: "ls-wagner-reanimation",
+            hauptfaktor: "keine Verfügung",
+            kurzbeschreibung:
+              "Nichts spricht gegen die Reanimation — also wird sofort und vollständig gehandelt. Der Normalfall.",
+          },
+          {
+            patientName: "Gültige Patientenverfügung",
+            hauptfaktor: "erklärter Wille",
+            kurzbeschreibung:
+              "Eine wirksame Verfügung lehnt die Wiederbelebung ab und der Arzt hat den Verzicht angeordnet — dann wird dieser Wille respektiert, nicht überstimmt.",
+          },
+          {
+            patientName: "Nur eine Vermutung",
+            hauptfaktor: "unklare Grundlage",
+            kurzbeschreibung:
+              "Eine bloße Annahme oder ein ungültiger Zettel reicht nicht. Ohne klare ärztliche Anordnung gilt: reanimieren.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Ein fremder Mensch bricht zusammen — musst du helfen, und wann reanimierst du NICHT?",
+          rueckseite:
+            "Helfen ist Pflicht (Nichtstun = strafbar, § 323c). Im Zweifel immer reanimieren. Nicht reanimiert wird nur bei ärztlich angeordnetem Verzicht (meist gültige Patientenverfügung) oder an klaren Grenzen (sichere Todeszeichen, Aussichtslosigkeit). Die Entscheidung trifft das Ärzteteam.",
+        },
+      },
+    },
+    {
+      // Anwendung zum KPR-Tab (Variante D): Transfer auf den GEGENFALL — Wagner
+      // wird reanimiert, Frau Kellner (gültige Patientenverfügung) NICHT. Interleaving/
+      // Kontrast. Bloom 4 (entscheiden/beurteilen). Gegroundet F-01/F-03.
+      stepId: "ce06-wagner-ref-01b-kpr-fall",
+      phase: 5,
+      stepType: "mc",
+      bloomLevel: 4,
+      kompetenzbereich: "V.2",
+      quellen: ["§ 1827 BGB (Patientenverfügung)", "Pflege heute 2019, Kap. 14.3.2 + 48.3.4", "ERC 2021"],
+      track: "basis",
+      modus: "challenge",
+      lernziel: "ce06-wagner-kpr-transfer",
+      tag: "pflege",
+      themaPrimaer: "kpr-indikation-recht-ethik",
+      kernfaktId: ["F-01", "F-03"],
+      contentC1: {
+        title: "Ein anderer Fall — Frau Kellner",
+        body: "Anderer Tag, andere Patientin: Frau Kellner, 84, wird bewusstlos, keine normale Atmung. In ihrer Akte liegt eine gültige, unterschriebene Patientenverfügung, die eine Wiederbelebung ausdrücklich ablehnt — und der Arzt hat den Verzicht auf Reanimation angeordnet. Was tust du?",
+        glossarBegriffe: ["Patientenverfügung"],
+      },
+      contentB1: {
+        title: "Ein anderer Fall — Frau Kellner",
+        body: "Andere Patientin: Frau Kellner, 84, wird bewusstlos und atmet nicht normal. In ihrer Akte liegt eine gültige Patientenverfügung, die eine Wiederbelebung ablehnt. Der Arzt hat den Verzicht angeordnet. Was tust du?",
+      },
+      question: {
+        fragetext: "Wie handelst du bei Frau Kellner?",
+        mcVariant: "fallstrick",
+        optionen: [
+          {
+            text: "Ich respektiere die Patientenverfügung und beginne KEINE Reanimation. Ich bleibe bei ihr, informiere sofort das Team und sorge für Ruhe, Würde und Begleitung.",
+            isCorrect: true,
+            explanation:
+              "Richtig. Anders als bei Herrn Wagner gibt es hier eine klare, gültige Grundlage: eine wirksame Patientenverfügung, die die Wiederbelebung ablehnt, plus die ärztliche Verzichtsanordnung. Dieser Wille ist bindend — ihn zu übergehen wäre ein Eingriff gegen den erklärten Willen. Deine Aufgabe verschiebt sich vom Reanimieren zum Begleiten: da sein, das Team informieren, für Würde sorgen.",
+            explanationB1:
+              "Richtig. Hier ist der Wille klar: eine gültige Patientenverfügung lehnt die Wiederbelebung ab, der Arzt hat den Verzicht angeordnet. Das ist bindend. Du reanimierst nicht, sondern bist für Frau Kellner da und informierst das Team.",
+          },
+          {
+            text: "Ich reanimiere trotzdem sofort — im Zweifel wird immer reanimiert.",
+            isCorrect: false,
+            explanation:
+              "Der Grundsatz, im Zweifel zu reanimieren, stimmt — aber hier gibt es keinen Zweifel. Die Patientenverfügung ist gültig und der Arzt hat den Verzicht angeordnet. Zu reanimieren hieße, gegen den erklärten, rechtlich bindenden Willen von Frau Kellner zu handeln. Der Grundsatz greift nur, wenn die Grundlage unklar ist — das ist sie hier nicht.",
+            explanationB1:
+              "Der Satz, im Zweifel zu reanimieren, ist richtig — aber hier gibt es keinen Zweifel. Die Verfügung ist gültig und der Arzt hat den Verzicht angeordnet. Reanimieren wäre gegen ihren klaren Willen.",
+          },
+          {
+            text: "Ich rufe erst die Angehörigen an und frage, ob die Verfügung wirklich noch gilt, bevor ich etwas entscheide.",
+            isCorrect: false,
+            explanation:
+              "Nein. Eine gültige Patientenverfügung plus ärztliche Anordnung gelten aus sich heraus — Angehörige können den erklärten Willen der Patientin nicht nachträglich überstimmen. Die Entscheidung steht bereits fest: Es wird nicht reanimiert. Statt zu telefonieren bleibst du bei Frau Kellner und begleitest sie.",
+            explanationB1:
+              "Nein. Eine gültige Verfügung und die ärztliche Anordnung gelten. Angehörige können den Willen der Patientin nicht ändern. Du bleibst bei Frau Kellner und begleitest sie.",
+          },
+        ],
+      },
+    },
+    {
       stepId: "ce06-wagner-ref-01",
       phase: 5,
       stepType: "reflection",
       bloomLevel: 5,
-      kompetenzbereich: "I.2",
+      kompetenzbereich: "V.2",
       quellen: ["Pflege heute 2019, Kap. 14 (Nachbesprechung/Debriefing)", "CE06-LE1-E1 (eigene Gefühle reflektieren)"],
       track: "basis",
       modus: "schreibtisch",
@@ -541,7 +923,7 @@ export const CE06_SIT_WAGNER_REFLEKTIEREN: SituationsPhase = {
       phase: 5,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "I.2",
+      kompetenzbereich: "III.2",
       quellen: ["Pflege heute 2019, Kap. 14 (Nachbesprechung/Debriefing; CIRS)"],
       track: "basis",
       modus: "challenge",
@@ -592,7 +974,44 @@ export const CE06_SIT_WAGNER_REFLEKTIEREN: SituationsPhase = {
         ],
       },
     },
+    {
+      // Anwendung (Variante D) + K5-Abdeckung: Notfallpläne analysieren + Aufgabenfeld
+      // Pflege identifizieren (Bloom 4). Knüpft an die CIRS-Meldung an (Defi 30 m weg).
+      // Reflexion/Transfer auf den eigenen Einsatzort — keine faktische Behauptung, daher
+      // wie ref-01 ohne kernfaktId.
+      stepId: "ce06-wagner-ref-03-notfallplan",
+      phase: 5,
+      stepType: "reflection",
+      bloomLevel: 4,
+      kompetenzbereich: "III.2",
+      quellen: ["CE06-LE1-K5 (Notfallpläne analysieren, Aufgabenfeld Pflege)", "ERC 2021 (Rettungskette)"],
+      track: "basis",
+      modus: "schreibtisch",
+      lernziel: "ce06-wagner-notfallplan-analyse",
+      tag: "pflege",
+      themaPrimaer: "notfallassessment",
+      contentC1: {
+        title: "Der Notfallplan deiner Station",
+        body: "Herrn Wagners Fall hat eine Schwachstelle gezeigt: Der Defibrillator hing 30 Meter weg. Übertrage das auf deinen eigenen Einsatzort.",
+        glossarBegriffe: ["Notfallteam", "Rettungskette"],
+      },
+      contentB1: {
+        title: "Der Notfallplan deiner Station",
+        body: "Bei Herrn Wagner war der Defi 30 Meter weg. Denke an deine eigene Station.",
+      },
+      question: {
+        fragetext: "Analysiere den Notfallplan deines Einsatzortes.",
+        reflection: {
+          prompt:
+            "Schreibe 4–6 Sätze: 1) Wo hängt an deinem Einsatzort der nächste Defibrillator / steht der Notfallwagen — und wie schnell bist du dort? 2) Wie alarmierst du das Notfallteam (Nummer, Codewort, Ablauf)? 3) Was ist DEINE Rolle im Alarmplan, bis das Team eintrifft? 4) Welche Schwachstelle würdest du nach Herrn Wagners Fall ansprechen oder verbessern?",
+          placeholder:
+            "Der nächste Defi hängt … Das Team alarmiere ich über … Meine Rolle bis dahin ist … Verbessern würde ich …",
+          systemPrompt:
+            "Bewerte im Sandwich-Prinzip (loben → konkretisieren → ermutigen). Hat der Schüler den Notfallplan seines KONKRETEN Einsatzortes analysiert (Defi-/Notfallwagen-Standort, Alarmierungsweg, Codewort) statt allgemeiner Floskeln? Identifiziert er sein eigenes Aufgabenfeld bis zum Eintreffen des Teams (erkennen, alarmieren lassen, sofort mit Herzdruckmassage beginnen, Patienten nicht allein lassen)? Zieht er eine konkrete Verbesserung/Schwachstelle (z. B. Geräte-Standort, Wege, regelmäßige Übung)? Achte auf fachliche Fehler und benenne sie konkret — etwa selbst zum Defi weglaufen statt zu delegieren, oder den Notruf hinauszögern. Lob für ortsbezogene, konkrete Analyse.",
+        },
+      },
+    },
   ],
   optionaleSteps: [],
-  geschaetzteDauer: 8,
+  geschaetzteDauer: 12,
 };

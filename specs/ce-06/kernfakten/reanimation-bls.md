@@ -103,3 +103,27 @@ Kammerflimmern ist eine lebensbedrohliche Herzrhythmusstörung und der häufigst
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Nach Erkennen eines Herz-Kreislauf-Stillstands wird sofort der Rettungsdienst bzw. im Krankenhaus das Notfallteam alarmiert"
 - Primärquelle: (Genzwürker/Hinkelbein 2019; Pflege heute 2019; ERC 2021)
+
+### F-12: ALS baut auf BLS auf — Arzt legt Zugang für Notfallmedikamente
+Der erweiterte Reanimationsalgorithmus (ALS) ersetzt nicht die Basismaßnahmen, sondern setzt sie fort: Die hochwertige Herzdruckmassage läuft weiter, während der Arzt einen venösen (oder intraossären) Zugang legt, um Notfallmedikamente wie Adrenalin geben zu können. (Ärztliche Maßnahme; Pflege assistiert und hält die Kompressionen hochwertig.)
+
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "legt der Arzt einen venösen Zugang"
+- Primärquelle: (Pflege heute 2019, Kap. 14.3.2; ERC 2021)
+
+### F-13: Reversible Ursachen suchen und behandeln
+Parallel zur Reanimation sucht das Team nach einer behandelbaren (reversiblen) Ursache des Stillstands — etwa einer Unterkühlung oder einer Vergiftung — und behandelt sie, weil ohne Beseitigung der Ursache die Reanimation oft erfolglos bleibt.
+
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "ohne reversible Ursache (etwa Unterkühlung oder Intoxikation)"
+- Primärquelle: (Pflege heute 2019, Kap. 14.3.2; ERC 2021)
+
+### F-14: AED-Anwendung — Anweisungen folgen; bei Analyse und Schock niemand berühren
+Beim Einsatz des AED folgt man seinen Sprach- und Bildanweisungen. Während der AED den Herzrhythmus analysiert und während der Schockabgabe darf niemand den Patienten berühren — sonst wird die Analyse durch Bewegungsartefakte gestört und beim Schock besteht ein Stromrisiko für die Helfer. Vor dem Schock wird laut gewarnt („Alle weg!“); unmittelbar danach wird die Herzdruckmassage sofort fortgesetzt.
+
+**Beleg:**
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Bildanweisungen des AED gefolgt werden"
+- Primärquelle: (I care Pflege 2020, Kap. 8; ERC 2021 — „clear of the patient“ bei Analyse und Schockabgabe)

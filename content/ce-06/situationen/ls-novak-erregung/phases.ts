@@ -12,6 +12,14 @@
 //    Sedierung (Haloperidol) = ärztlich (F-07).
 //  - Wahn weder hart widerlegen noch bestätigen — Gefühl (Angst) ernst nehmen.
 //  - MC-Optionen vergleichbar kurz (Begründung in explanation).
+//
+// WISSENS-TABS (curriculum-first, Gold-Standard-Aufbau wie Wagner/Ríos/Lehmann): 3 inlineWissen-Tabs,
+// jeder VOR/BEI seiner Anwendung, literatur-belegt + paraphrasiert (Abstandstest 0), kein Antwort-Step:
+//  - Tab A „Erst du sicher — dann er ruhig" (Ph.1, nach erk-01) — F-08/F-02/F-03 (Eigenschutz + Deeskalationsgrundhaltung).
+//  - Tab B „Erregung ≠ automatisch Psychose" (Ph.1, nach erk-02) — F-01, Wiederbegegnung→Ríos (erst Körper, dann Psyche).
+//  - Tab C „Grenzen des Zwangs" (Ph.3, vor erm-02) — F-04/F-05/F-06/F-07 (Fixierung letzte Stufe, Recht, Sedierung ärztlich).
+// KB-Marker aus dem LE1-Schwerpunkt-Set korrigiert: I.4 (primär, Akut-Handeln) · I.1 (Deeskalation) · I.2 (Recht) ·
+//   II.1 (SBAR) · V.2 (Reflexion=E1). (I.4 primär statt I.1-Wand: Erkennen/Eigenschutz/organ. Ausschluss = Akut-Handeln.)
 
 import type { SituationsPhase } from "../../../_types";
 
@@ -31,7 +39,7 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
       phase: 1,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "I.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 16.6 (Deeskalation: ruhig, wenig Reize, nicht mit mehreren)"],
       track: "basis",
       modus: "challenge",
@@ -81,11 +89,77 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
       },
     },
     {
+      // Wissens-Tab A (curriculum-first): nach dem Hook (erk-01 Priorität Sicherheit),
+      // konsolidiert Eigenschutz + Deeskalationsgrundhaltung. Literatur-belegt (F-08/F-02/F-03,
+      // Pflege heute Kap. 16.6) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-novak-erk-01b-eigenschutz-deeskalation",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // LE1-Primär-Schwerpunkt (Rahmenlehrplan): Eigenschutz/Akut-Handeln — nicht geraten.
+      kompetenzbereich: "I.4",
+      quellen: ["Pflege heute 2019, Kap. 16.6"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-novak-eigenschutz-deeskalation",
+      tag: "pflege",
+      themaPrimaer: "psychische-akutsituationen",
+      kernfaktId: ["F-08", "F-02", "F-03"],
+      transition: "Und dann fällt dir sein hochrotes, fiebriges Gesicht auf.",
+      contentC1: {
+        title: "Erst du sicher — dann er ruhig",
+        body: "",
+        glossarBegriffe: [
+          "Eigenschutz",
+          "Deeskalation",
+          "Fluchtweg",
+        ],
+      },
+      inlineWissen: {
+        bausteinRef: "psychische-akutsituationen-eigenschutz-deeskalation",
+        themaPrimaer: "psychische-akutsituationen",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "23:30 Uhr, Herr Novak steht angespannt am Bett, weicht zurück, wird laut: „Sie wollen mich vergiften!“ Dein Herz klopft. Zwei Fragen zugleich: Wie bleibst DU sicher — und wie nimmst du ihm die Angst, ohne ihn in die Enge zu treiben?",
+        kerntext:
+          "Zuerst dein eigener Schutz — nicht aus Egoismus, sondern weil eine verletzte Pflegekraft niemandem mehr hilft. Halte sicheren Abstand, steh stabil, sorge dafür, dass dein Rückweg frei bleibt. Zeigt er erste Anzeichen, gewalttätig zu werden, verlässt du die Situation und holst Hilfe. Beobachte ihn dezent, ohne ihn mit Blicken zu fixieren, und sprich in normaler Lautstärke.\n\nParallel beginnt die Deeskalation — der Sammelbegriff für alles, was das Entstehen oder Hochschaukeln von Gewalt verhindert. Das Ziel ist schlicht: dass weder er noch du zu Schaden kommt.\n\nUnd ein Punkt, der sich falsch anfühlt, aber entscheidend ist: Geh nicht mit mehreren gleichzeitig auf ihn zu. Deeskalation gelingt besser, wenn EINE Person den Kontakt hält — die mit dem besten Zugang. Die Kollegen bleiben im Hintergrund und wirken unbeteiligt. Je mehr Menschen, Stimmen und Bewegung, desto größer seine Anspannung. Weniger Reiz ist hier mehr Sicherheit.",
+        faustregel:
+          "Erst dein Schutz: Abstand, fester Stand, freier Rückweg. Dann deeskalieren — allein, reizarm, ruhige Stimme. Bei Gewaltbereitschaft raus und Hilfe holen.",
+        spektrum: [
+          {
+            patientName: "Erste Anzeichen von Gewaltbereitschaft",
+            hauptfaktor: "raus & Hilfe",
+            kurzbeschreibung:
+              "Kein Held sein — lieber rechtzeitig aus dem Zimmer gehen und Verstärkung rufen, bevor etwas passiert.",
+          },
+          {
+            patientName: "Das ganze Team drängt mit rein",
+            hauptfaktor: "zu viele Reize",
+            kurzbeschreibung:
+              "Mehrere Menschen gleichzeitig steigern Angst und Eskalation. Einer bleibt im Kontakt, der Rest hält sich im Hintergrund.",
+          },
+          {
+            patientName: "Herr Novak",
+            situationsId: "ls-novak-erregung",
+            hauptfaktor: "reizarm, allein",
+            kurzbeschreibung:
+              "Eine Person, leise Stimme, Abstand, freier Rückweg — so bleibt der Kontakt bestehen, ohne ihn zu bedrängen.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Ein Patient ist akut erregt und misstrauisch, weicht zurück — was zuerst, und gehst du allein oder mit dem ganzen Team rein?",
+          rueckseite:
+            "Zuerst Eigenschutz: Abstand, stabiler Stand, freier Fluchtweg; bei Gewaltbereitschaft raus + Hilfe. Dann deeskalieren — allein (nicht mit mehreren), reizarm, ruhige Stimme, dezent beobachten. Kollegen im Hintergrund.",
+        },
+      },
+    },
+    {
       stepId: "ce06-novak-erk-02",
       phase: 1,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 12.3 (Delir), Fieber (Erregung/Sinnestäuschungen bei Fieber)"],
       track: "basis",
       modus: "challenge",
@@ -134,6 +208,78 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
         ],
       },
     },
+    {
+      // Wissens-Tab B (curriculum-first): konsolidiert nach dem organischen Hook (erk-02)
+      // die Leitplanke „Erregung ≠ automatisch Psychose". Literatur-belegt (F-01, Pflege heute
+      // Kap. 12.3/Fieber) + paraphrasiert (Abstandstest 0). Wiederbegegnung → Ríos (erst Körper,
+      // dann Psyche — dieselbe Logik wie „erst Blutzucker"). Kein Antwort-Step.
+      stepId: "ce06-novak-erk-02b-organisch",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.4",
+      quellen: ["Pflege heute 2019, Kap. 12.3 (Delir/Fieber)"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-novak-organische-ursachen",
+      tag: "pflege",
+      themaPrimaer: "psychische-akutsituationen",
+      kernfaktId: ["F-01"],
+      transition: "Jetzt brauchst du Hilfe — ohne ihn zu bedrängen.",
+      contentC1: {
+        title: "Erregung heißt nicht automatisch Psychose",
+        body: "",
+        glossarBegriffe: [
+          "Delir",
+          "Fieberdelir",
+          "diagnostic overshadowing",
+        ],
+      },
+      inlineWissen: {
+        bausteinRef: "psychische-akutsituationen-organische-ursachen",
+        themaPrimaer: "psychische-akutsituationen",
+        themenSekundaer: ["notfallassessment", "neurologische-akutsituationen"],
+        storyAufhaenger:
+          "Der naheliegende Gedanke bei einem Mann mit bekannter Schizophrenie: „Das ist sein Schub.“ Aber da sind 39,2 °C Fieber bei einer Pneumonie. Was, wenn hier nicht die Psychose spricht, sondern der Körper?",
+        kerntext:
+          "Eine akute Erregung kann körperliche Ursachen haben. Bei hohem Fieber entstehen motorische Unruhe, ängstliche Erregung, sogar Sinnestäuschungen — ein Fieberdelir. Eine Pneumonie bringt zusätzlich die Gefahr von Sauerstoffmangel.\n\nGenau hier liegt die Falle: Bei einem psychiatrisch vorerkrankten Menschen schiebt man eine Erregung schnell auf die Grunderkrankung. Dieses vorschnelle Zuschreiben (diagnostic overshadowing) übersieht leicht einen behandelbaren körperlichen Notfall — und der kann lebensbedrohlich sein.\n\nDeshalb gilt: nicht vorschnell „nur Psychose“ denken. Erst die körperlichen Ursachen prüfen — Vitalzeichen, Temperatur, Sauerstoffsättigung, Blutzucker. Das ist praktisch heikel, denn SpO2-Clip und Blutzucker-Stich brauchen Nähe; die Messung gelingt oft erst, wenn er dich heranlässt. Beliebig aufschieben lässt sie sich aber nicht: Bleibt er unzugänglich und ist die körperliche Gefahr hoch, holst du ohne Zögern den Arzt dazu. Deeskalation und Assessment gehen Hand in Hand.",
+        faustregel:
+          "Akute Erregung ist nicht automatisch Psychose. Erst an Fieber, Sauerstoffmangel, Unterzucker denken — Vitalzeichen, Temperatur, SpO2, Blutzucker. Sonst übersiehst du einen körperlichen Notfall.",
+        spektrum: [
+          {
+            patientName: "Herr Novak (39,2 °C)",
+            situationsId: "ls-novak-erregung",
+            hauptfaktor: "Fieberdelir",
+            kurzbeschreibung:
+              "Unruhe und Sinnestäuschungen können vom Fieber kommen. Ursache mitbehandeln (Fieber senken), nicht nur beruhigen.",
+          },
+          {
+            patientName: "Bekannte Schizophrenie",
+            hauptfaktor: "diagnostic overshadowing",
+            kurzbeschreibung:
+              "Die Gefahr, alles der Psyche zuzuschreiben. Körperliche Ursachen trotzdem konsequent ausschließen.",
+          },
+          {
+            patientName: "Erregung ohne Fieber, Blutzucker normal",
+            hauptfaktor: "organisch geklärt",
+            kurzbeschreibung:
+              "Körperlich unauffällig → jetzt gezielt psychiatrisch deeskalieren und behandeln.",
+          },
+        ],
+        wiederbegegnung: {
+          basisBausteinId: "neuro-differenzial",
+          basisPatient: "Herr Ríos",
+          vertiefung:
+            "Bei Herrn Ríos galt für jede unklare neurologische Akutsituation: zuerst den Blutzucker, weil die Unterzuckerung alle anderen Bilder imitiert. Dieselbe Logik trägt hier: Bevor du eine Erregung „der Psyche“ zuschreibst, schließt du die körperlichen Ursachen aus — Fieber, Sauerstoffmangel, Unterzucker. Der erste Blick geht zum Körper, dann zur Psyche.",
+        },
+        karteikarte: {
+          vorderseite:
+            "Ein Mann mit bekannter Schizophrenie ist akut erregt und hat 39,2 °C Fieber — ist das einfach „sein Schub“?",
+          rueckseite:
+            "Nicht vorschnell annehmen. Akute Erregung kann organisch sein (Fieberdelir, Hypoxie bei Pneumonie, Hypoglykämie). Bei psychisch Vorerkrankten Gefahr des diagnostic overshadowing. Erst Vitalzeichen/Temperatur/SpO2/Blutzucker, dann psychiatrisch einordnen.",
+        },
+      },
+    },
   ],
   optionaleSteps: [],
   geschaetzteDauer: 8,
@@ -155,7 +301,8 @@ export const CE06_SIT_NOVAK_ALARMIEREN: SituationsPhase = {
       phase: 2,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "I.1",
+      // Deeskalierende Annäherung (allein, reizarm) = Kommunikation → II.1 (LE1-Set; I.1 nicht im Set).
+      kompetenzbereich: "II.1",
       quellen: ["Pflege heute 2019, Kap. 16.6 (nicht mit mehreren zugehen); Kap. 38.8 (Sedierung ärztlich)"],
       track: "basis",
       modus: "challenge",
@@ -225,7 +372,8 @@ export const CE06_SIT_NOVAK_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "branching",
       bloomLevel: 5,
-      kompetenzbereich: "I.1",
+      // Deeskalierende Gesprächsführung = Kommunikation → II.1 (LE1-Set; I.1 nicht im Set).
+      kompetenzbereich: "II.1",
       quellen: ["Pflege heute 2019, Kap. 16.6 (deeskalierende Gesprächsführung: allein, wenig Reize)"],
       track: "basis",
       modus: "praxis-sim",
@@ -274,11 +422,77 @@ export const CE06_SIT_NOVAK_ERSTMASSNAHMEN: SituationsPhase = {
       },
     },
     {
+      // Wissens-Tab C (curriculum-first): nach dem Deeskalations-Branching (erm-01) und VOR der
+      // Zwang/Recht-Anwendung (erm-02). Literatur-belegt (F-04/F-05/F-06/F-07, Pflege heute Kap.
+      // 16.6/48.2.5/38.8 + BGB § 1831) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-novak-erm-01b-zwang-recht",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // Rechtlich-ethische Dimension (Zwang/§ 1831/PsychKG) → II.3 (LE1-Set; I.2 nicht im Set).
+      kompetenzbereich: "II.3",
+      quellen: ["Pflege heute 2019, Kap. 16.6/48.2.5/38.8", "BGB § 1831 (Fassung ab 2023)"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-novak-zwang-recht-wissen",
+      tag: "pflege",
+      themaPrimaer: "psychische-akutsituationen",
+      kernfaktId: ["F-04", "F-05", "F-06", "F-07"],
+      transition: "Deine Kollegin flüstert dir genau so einen Vorschlag zu.",
+      contentC1: {
+        title: "Wenn Deeskalation nicht reicht: die Grenzen des Zwangs",
+        body: "",
+        glossarBegriffe: [
+          "Fixierung",
+          "freiheitsentziehende Maßnahme",
+          "Gefahr im Verzug",
+          "PsychKG",
+        ],
+      },
+      inlineWissen: {
+        bausteinRef: "psychische-akutsituationen-zwang-recht",
+        themaPrimaer: "psychische-akutsituationen",
+        storyAufhaenger:
+          "Was, wenn das ruhige Reden nicht ausreicht und er sich oder andere ernsthaft gefährdet? Der schnelle Reflex im Team: fixieren und ein Beruhigungsmittel, dann ist Ruhe. Genau hier verläuft eine Grenze — fachlich und rechtlich. Wo?",
+        kerntext:
+          "Körperliche Fixierung ist die LETZTE Deeskalationsstufe — nie der erste, bequeme Griff. Wenn überhaupt, dann mit mehreren im Team, klarer Kommandostruktur und patientenschonend, während eine Person im sprechenden Kontakt bleibt.\n\nZwang darf nur bei echter Selbst- oder Fremdgefährdung eingesetzt werden, nie aggressiv und nur als allerletzter Ausweg, wenn kein milderer Weg mehr bleibt. Er muss rechtlich gedeckt sein und auf das unbedingt nötige Mindestmaß begrenzt bleiben.\n\nDie Rechtslage: Eine Freiheitsentziehung darf es nur geben, wenn der Betroffene einwilligt, wenn akute Gefahr keinen Aufschub erlaubt (Gefahr im Verzug) oder wenn ein Gericht sie beschlossen hat. Auf einer somatischen Station (hier die Innere) ist die richterliche Grundlage das Betreuungsrecht — die Genehmigung des Betreuungsgerichts (§ 1831 BGB). Bei Gefahr im Verzug ist die akute Sofortmaßnahme ohne Genehmigung erlaubt, sie ist aber unverzüglich nachzuholen. Das PsychKG der Länder ist eine zusätzliche Regelung nur für die Unterbringung in psychiatrischen Einrichtungen; auf der Inneren greift es nicht automatisch.\n\nUnd die Beruhigungsspritze? Eine medikamentöse Sedierung (etwa Haloperidol) ordnet der Arzt an. Die Pflege erkennt, deeskaliert, sichert und assistiert — sie gibt Sedativa nie eigenmächtig.",
+        faustregel:
+          "Fixierung ist die letzte Stufe, nie der erste Griff — nur bei echter Gefahr, legitimiert, Mindestmaß, im Team, eine Person spricht weiter. Rechtsgrundlage: Zustimmung / Gefahr im Verzug / Genehmigung (§ 1831 BGB); PsychKG nur in der Psychiatrie. Sedierung = ärztlich.",
+        spektrum: [
+          {
+            patientName: "Gefahr im Verzug",
+            hauptfaktor: "akute Sofortmaßnahme",
+            kurzbeschreibung:
+              "Das Nötigste zum Schutz ist sofort zulässig — die richterliche Genehmigung wird unverzüglich nachgeholt.",
+          },
+          {
+            patientName: "Nur Unruhe, kein akuter Notfall",
+            hauptfaktor: "keine Rechtsgrundlage",
+            kurzbeschreibung:
+              "Ohne echte Gefahr keine Fixierung. Weiter deeskalieren, Arzt einbinden — Zwang ist nicht das erste Mittel.",
+          },
+          {
+            patientName: "Team will Beruhigungsmittel geben",
+            hauptfaktor: "ärztliche Anordnung",
+            kurzbeschreibung:
+              "Haloperidol und andere Sedativa ordnet der Arzt an. Die Pflege assistiert und überwacht — gibt sie nicht selbst.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Die Kollegin will den erregten Patienten sofort fixieren und ein Beruhigungsmittel geben — geht das?",
+          rueckseite:
+            "Nein, nicht als erster/freier Schritt. Fixierung = letzte Deeskalationsstufe, nur bei echter Gefahr, legitimiert, Mindestmaß, im Team (eine Person spricht weiter). Rechtsgrundlage: Zustimmung / Gefahr im Verzug / richterliche Genehmigung (§ 1831 BGB; PsychKG nur in der Psychiatrie). Sedierung (Haloperidol) = ärztliche Anordnung.",
+        },
+      },
+    },
+    {
       stepId: "ce06-novak-erm-02",
       phase: 3,
       stepType: "mc",
       bloomLevel: 5,
-      kompetenzbereich: "I.2",
+      // Rechtlich-ethische Bewertung von Zwang/Fixierung → II.3 (LE1-Set; I.2 nicht im Set).
+      kompetenzbereich: "II.3",
       quellen: [
         "Pflege heute 2019, Kap. 16.6 (Fixierung letzte Stufe), Kap. 48.2.5 (Zwang/FeM: Zustimmung/Gefahr im Verzug/richterlich, PsychKG), Kap. 38.8 (Sedierung ärztlich)",
       ],
@@ -350,7 +564,8 @@ export const CE06_SIT_NOVAK_UEBERGEBEN: SituationsPhase = {
       phase: 4,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "I.1",
+      // SBAR = strukturierte Kommunikation → II.1 (konsistent zu Wagner/Ríos).
+      kompetenzbereich: "II.1",
       quellen: ["Leonard et al. 2004 (SBAR)"],
       track: "basis",
       modus: "challenge",
@@ -420,7 +635,8 @@ export const CE06_SIT_NOVAK_REFLEKTIEREN: SituationsPhase = {
       phase: 5,
       stepType: "reflection",
       bloomLevel: 5,
-      kompetenzbereich: "I.2",
+      // E1 (eigene Gefühle/Erfahrungen reflektieren) → V.2, konsistent zu Ríos/Lehmann.
+      kompetenzbereich: "V.2",
       quellen: ["Pflege heute 2019, Kap. 12.3/16.6 (Delir/Deeskalation); Reflexion diagnostic overshadowing"],
       track: "basis",
       modus: "schreibtisch",

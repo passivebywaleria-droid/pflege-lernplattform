@@ -90,3 +90,25 @@ Viele Herzpatienten plagen Ängste (Gesundheit, Familie, Beruf). Pflegende helfe
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Anteilnahme und Gesprächsbereitschaft"
 - Primärquelle: (Pflege heute 2019, Kap. 21.1.1)
+
+### F-09: Herzinfarkt — frühzeitige Wiedereröffnung des verschlossenen Gefäßes („Zeit ist Herzmuskel“)
+Beim Herzinfarkt ist eine frühzeitige Revaskularisationstherapie entscheidend: Der Patient wird möglichst schnell in eine Klinik (am besten mit Herzkatheterlabor) gebracht, wo das verschlossene Koronargefäß durch eine Ballondilatation (Herzkatheter/PTCA) wiedereröffnet und mit einem Stent offen gehalten wird. Je früher die Durchblutung wiederhergestellt ist, desto mehr Herzmuskel bleibt erhalten — der Merksatz dafür ist „Zeit ist Herzmuskel".
+
+**Beleg:**
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "Wichtig ist eine frühzeitige Revaskularisationstherapie"
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "möglichst schnell in eine Klinik"
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "verschlossene Koronargefäß durch eine Ballondilatation"
+- Primärquelle: (I care Krankheitslehre, Kap. 9 — ACS/Herzinfarkt-Therapie)
+
+### F-10: Atypische/stumme Symptome — besondere Wachsamkeit bei Diabetikern und Frauen
+Ein Herzinfarkt zeigt sich nicht immer typisch. Bei Menschen mit Diabetes mellitus kann er stumm (schmerzarm/schmerzlos) verlaufen; Frauen geben oft atypische Symptome an (z. B. nur Übelkeit, Schwindel, Atemnot). Das macht die Lage gefährlicher, nicht harmloser — bei diesen Gruppen ist erhöhte Wachsamkeit nötig.
+
+**Beleg:**
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "Bei Patienten mit Diabetes mellitus kann ein Infarkt auch stumm verlaufen"
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "Frauen geben oftmals atypische Symptome an"
+- Primärquelle: (I care Krankheitslehre, Kap. 9 — ACS/Herzinfarkt)

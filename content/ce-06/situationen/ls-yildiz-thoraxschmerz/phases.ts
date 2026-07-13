@@ -1,4 +1,4 @@
-// CE-06 Situation „Frau Yıldız — akuter Thoraxschmerz (Verdacht Herzinfarkt)"
+// CE-06 Situation „Frau Yıldız — akuter Thoraxschmerz (Verdacht Herzinfarkt)“
 // SituationsTyp: akutsituation — 5 Phasen: erkennen → alarmieren → erstmassnahmen → uebergeben → reflektieren
 // Deckt: CE06-LE2-W3 (Klinik/Therapie Herzinfarkt), K1 (Vitalzeichen/Monitor), K3 (atemunterstützende Lagerung),
 //        W2 (kardiogener Schock, angeschnitten).
@@ -7,10 +7,18 @@
 //
 // KRITISCH GEBAUT:
 //  - Diagnostische Leitplanke: ACS bessert sich NICHT auf Ruhe/Nitrat (vs. Angina pectoris) — Warnzeichen (F-01);
-//    jeder akute Thoraxschmerz bis zum Beweis des Gegenteils bedrohlich (F-02). „Nur ihre Angina" ist die Falle.
+//    jeder akute Thoraxschmerz bis zum Beweis des Gegenteils bedrohlich (F-02). „Nur ihre Angina“ ist die Falle.
 //  - Lagerung: Oberkörper HOCH (nicht flach/Schocklage) — bei RR < 90 & Puls > 100 abbrechen (F-07, verbatim).
 //  - O2/Nitro/Analgetika NUR auf Arztanordnung (F-06), keine erfundenen Dosen.
 //  - MC-Optionen vergleichbar kurz (Begründung in explanation).
+//
+// WISSENS-TABS (curriculum-first, Gold-Standard-Aufbau): 3 inlineWissen-Tabs, jeder vor/bei seiner Anwendung,
+// literatur-belegt + paraphrasiert (Abstandstest 0), kein Antwort-Step:
+//  - Tab A „‚Das kenne ich schon' — die gefährlichste Falle“ (Ph.1) — F-01/F-02 (ACS vs. Angina, Warnzeichen).
+//  - Tab C „Zeit ist Herzmuskel — dein Part im Team, deine Grenze, ihre Angst“ (Ph.2) — F-03/F-06/F-08 (interprofessionell + Kompetenzgrenze + Coping).
+//  - Tab B „Lagern und entlasten — Oberkörper hoch, nicht flach; und die Grenze“ (Ph.3) — F-04/F-05/F-07.
+// KB-Marker aus dem LE2-Schwerpunkt-Set (Rahmenplan: LE2-Primär = III.2): III.2 (interprofessionell) · I.4 (Akut-Handeln) ·
+//   II.1 (SBAR) · V.2 (Reflexion). III.2 an Alarmierung/Kompetenzgrenze/Team-Tab; I.4 an Erkennen/Lagern/Überwachen.
 
 import type { SituationsPhase } from "../../../_types";
 
@@ -30,14 +38,15 @@ export const CE06_SIT_YILDIZ_ERKENNEN: SituationsPhase = {
       phase: 1,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 21.2.1/21.5 (ACS vs. Angina pectoris; Thoraxschmerz ernst nehmen)"],
       track: "basis",
       modus: "challenge",
       lernziel: "ce06-yildiz-acs-erkennen",
       tag: "pflege",
       themaPrimaer: "herz-kreislauf-akut",
-      kernfaktId: ["F-01", "F-02"],
+      // F-01/F-02 (Warnzeichen) · F-10 (Diabetiker: atypisch/stumm — Distraktor B).
+      kernfaktId: ["F-01", "F-02", "F-10"],
       contentC1: {
         title: "Wirklich nur die Angina?",
         body: "Frau Yıldız deutet die Schmerzen als ihre bekannte Angina pectoris. Was ist an dieser Situation das entscheidende Warnzeichen?",
@@ -80,11 +89,72 @@ export const CE06_SIT_YILDIZ_ERKENNEN: SituationsPhase = {
       },
     },
     {
+      // Wissens-Tab A (curriculum-first): nach dem Hook (erk-01). Literatur-belegt (F-01/F-02,
+      // Pflege heute Kap. 21.2.1/21.5) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-yildiz-erk-01b-acs-falle",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.4",
+      quellen: ["Pflege heute 2019, Kap. 21.2.1/21.5"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-yildiz-acs-wissen",
+      tag: "pflege",
+      themaPrimaer: "herz-kreislauf-akut",
+      // F-01/F-02 (ACS vs. Angina, Warnzeichen) · F-10 (atypisch/stumm bei Diabetikern und Frauen).
+      kernfaktId: ["F-01", "F-02", "F-10"],
+      transition: "Jetzt zählt, was du bis zum Arzt engmaschig beobachtest.",
+      contentC1: {
+        title: "„Das kenne ich schon“ — die gefährlichste Falle",
+        body: "",
+        glossarBegriffe: ["Angina pectoris", "akutes Koronarsyndrom", "Nitrat"],
+      },
+      inlineWissen: {
+        bausteinRef: "herz-kreislauf-akut-acs-falle",
+        themaPrimaer: "herz-kreislauf-akut",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Frau Yıldız ist sich sicher: „Das ist meine Angina, gleich geht es weg.“ Sie hat sich hingelegt, ihr Nitrospray genommen — und trotzdem wird der Schmerz stärker. Genau dieser Satz, „das kenne ich schon“, ist die gefährlichste Falle. Warum?",
+        kerntext:
+          "Eine stabile Angina pectoris und ein Herzinfarkt (akutes Koronarsyndrom) fühlen sich am Anfang ähnlich an — und ein Zeichen trennt sie: Die Angina bessert sich auf Ruhe und auf das Nitrospray. Bleibt genau diese Besserung aus, obwohl die Patientin ruht und das Nitro schon genommen hat, ist das ein Warnzeichen für einen Infarkt.\n\nDazu kommen beim Infarkt oft heftigste Schmerzen hinter dem Brustbein — sie strahlen häufig aus, etwa in Arm, Hals oder Oberbauch —, begleitet von Übelkeit, kaltem Schweiß und Todesangst. Aber Vorsicht: Das Bild ist nicht immer typisch. Bei Diabetikern kann ein Herzinfarkt sogar stumm, also schmerzarm, verlaufen, und Frauen zeigen oft weniger typische Beschwerden (etwa nur Übelkeit, Schwindel oder Atemnot). Gerade bei ihnen ist die Lage gefährlicher, nicht harmloser — hier ist erhöhte Wachsamkeit nötig.\n\nDeshalb gilt eine einfache, strenge Grundregel: Jeder akute Thoraxschmerz gilt als bedrohlich, solange keine harmlose Ursache gesichert ist. Ohne EKG und Labor lässt sich die Ursache gar nicht sicher klären — also nimmst du ihn immer ernst und sorgst für Abklärung. Die vertraute Selbsteinschätzung „ist nur meine Angina“ darf dich niemals in Sicherheit wiegen.",
+        faustregel:
+          "Bessert sich der Brustschmerz auf Ruhe und Nitrat? Wenn NEIN — an Herzinfarkt denken. Jeder akute Thoraxschmerz ist bedrohlich, solange keine harmlose Ursache gesichert ist; „das kenne ich schon“ darf dich nicht beruhigen.",
+        spektrum: [
+          {
+            patientName: "Stabile Angina pectoris",
+            hauptfaktor: "bessert sich",
+            kurzbeschreibung:
+              "Der Schmerz lässt auf Ruhe und Nitrat nach — bekannt, meist kurz. Das ist das gutartige Muster.",
+          },
+          {
+            patientName: "Frau Yıldız",
+            situationsId: "ls-yildiz-thoraxschmerz",
+            hauptfaktor: "keine Besserung",
+            kurzbeschreibung:
+              "Ruhe und Nitro helfen diesmal NICHT, der Schmerz wird stärker und strahlt aus → Infarktverdacht, sofort handeln.",
+          },
+          {
+            patientName: "Erstmals Thoraxschmerz",
+            hauptfaktor: "unklar",
+            kurzbeschreibung:
+              "Ohne EKG/Labor nicht sicher einzuordnen — deshalb immer ernst nehmen und ärztlich abklären lassen.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Woran erkennst du, dass aus „nur meiner Angina“ ein Herzinfarkt geworden sein könnte?",
+          rueckseite:
+            "Das entscheidende Warnzeichen: KEINE Besserung auf Ruhe und Nitrat (obwohl genommen), oft mit heftigem Schmerz/Ausstrahlung, kaltem Schweiß, Todesangst. Grundregel: jeder akute Thoraxschmerz ist bedrohlich, solange keine harmlose Ursache gesichert ist — „das kenne ich schon“ ist die Falle.",
+        },
+      },
+    },
+    {
       stepId: "ce06-yildiz-erk-02",
       phase: 1,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 21.1.2 (Monitoring: Puls/RR/Hautfarbe/Bewusstsein, Pulsoximetrie)"],
       track: "basis",
       modus: "challenge",
@@ -150,18 +220,81 @@ export const CE06_SIT_YILDIZ_ALARMIEREN: SituationsPhase = {
     "Der Schmerz bleibt, Frau Yıldız hat große Angst. Du musst schnell Hilfe holen.",
   kernSteps: [
     {
+      // Wissens-Tab C (curriculum-first, LE2-Primär III.2): das interprofessionelle Zusammenspiel +
+      // Kompetenzgrenze + Angst/Coping. VOR ala-01. Literatur-belegt (F-03/F-06/F-08, Pflege heute
+      // Kap. 21.1.1/21.1.2/21.2.1) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-yildiz-ala-00b-team-zeit",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // LE2-Primär-Schwerpunkt (Rahmenplan): intra-/interprofessionelles Handeln.
+      kompetenzbereich: "III.2",
+      quellen: ["Pflege heute 2019, Kap. 21.1.1/21.1.2/21.2.1"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-yildiz-team-zeit-wissen",
+      tag: "pflege",
+      themaPrimaer: "herz-kreislauf-akut",
+      // F-03 (sofort Arzt+2. Pflegekraft) · F-06 (Kompetenzgrenze) · F-08 (Angst/Coping) · F-09 (Reperfusion „Zeit ist Herzmuskel").
+      kernfaktId: ["F-03", "F-06", "F-08", "F-09"],
+      transition: "Setz das jetzt in den ersten Sekunden um.",
+      contentC1: {
+        title: "Zeit ist Herzmuskel — dein Part im Team, deine Grenze, ihre Angst",
+        body: "",
+        glossarBegriffe: ["Zeit ist Herzmuskel", "Arztanordnung", "Herzkatheter"],
+      },
+      inlineWissen: {
+        bausteinRef: "herz-kreislauf-akut-team-zeit",
+        themaPrimaer: "herz-kreislauf-akut",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Der Verdacht steht: Herzinfarkt. Frau Yıldız hat Todesangst, der Schmerz hält an. Was du jetzt in den ersten Sekunden tust, entscheidet mit — und vieles davon tust du nicht allein, sondern im Zusammenspiel mit dem Arzt.",
+        kerntext:
+          "Beim Infarktverdacht zählt jede Minute — dafür steht der Merksatz „Zeit ist Herzmuskel“: Je schneller die ärztliche Versorgung (und im Krankenhaus die Eröffnung des verschlossenen Gefäßes im Herzkatheter) beginnt, desto mehr Herzmuskel bleibt erhalten. Deshalb ist deine erste Handlung: sofort den Arzt benachrichtigen und eine weitere Pflegefachperson dazuholen. Ihr teilt euch auf — eine bleibt bei der Patientin, überwacht und lagert, die andere organisiert.\n\nDabei kennst du deine Grenze genau: Sauerstoff, Nitrospray und Schmerzmittel werden nur auf ärztliche Anordnung gegeben — nie eigenmächtig. Gerade hier ist das wichtig: Dass Frau Yıldız' eigenes Nitro diesmal nicht half, ist das Warnzeichen; und bei niedrigem Blutdruck kann weiteres Nitro den Kreislauf gefährlich absacken lassen. Deine Aufgabe ist erkennen, alarmieren, lagern, überwachen, dokumentieren und die ärztlichen Anordnungen umsetzen.\n\nUnd mitten darin: ihre Angst. Viele Herzpatienten plagt Todesangst. Du hilfst nicht mit falscher Beruhigung („wird schon wieder“), sondern mit Anteilnahme, ruhigem Auftreten und verständlicher Information. Du bleibst bei ihr, während das Team arbeitet — dieses Dableiben gibt Sicherheit.",
+        faustregel:
+          "Zeit ist Herzmuskel: sofort Arzt + zweite Pflegekraft, dann lagern/überwachen. O2/Nitro/Schmerzmittel NUR auf Arztanordnung. Und: bei ihr bleiben, die Angst ernst nehmen — Sicherheit durch Ruhe, nicht durch falsches Beschwichtigen.",
+        spektrum: [
+          {
+            patientName: "Die ersten Sekunden",
+            hauptfaktor: "Arzt + zweite Kraft",
+            kurzbeschreibung:
+              "Sofort den Arzt benachrichtigen und eine weitere Pflegefachperson holen — ihr arbeitet parallel, einer bleibt bei der Patientin.",
+          },
+          {
+            patientName: "Sauerstoff, Nitro, Schmerzmittel",
+            hauptfaktor: "Kompetenzgrenze",
+            kurzbeschreibung:
+              "Nur auf ärztliche Anordnung. Die Pflege erkennt, überwacht, lagert, dokumentiert — sie gibt diese Mittel nicht eigenmächtig.",
+          },
+          {
+            patientName: "Todesangst",
+            hauptfaktor: "Sicherheit geben",
+            kurzbeschreibung:
+              "Ruhige Präsenz, Anteilnahme, ehrliche Information — nicht falsch beruhigen. Dableiben, während das Team versorgt.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Verdacht auf Herzinfarkt — was ist deine erste Handlung, wo liegt deine Kompetenzgrenze, und wie gehst du mit der Angst um?",
+          rueckseite:
+            "Erst: sofort Arzt + zweite Pflegefachperson (Zeit ist Herzmuskel). Grenze: O2/Nitro/Schmerzmittel nur auf Arztanordnung — Pflege erkennt/lagert/überwacht/dokumentiert. Angst: ruhige Präsenz, Anteilnahme, ehrliche Information, dableiben — nicht falsch beschwichtigen.",
+        },
+      },
+    },
+    {
       stepId: "ce06-yildiz-ala-01",
       phase: 2,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "III.2",
       quellen: ["Pflege heute 2019, Kap. 21.2.1 (Erstmaßnahmen: Arzt + weitere Pflegefachperson)"],
       track: "basis",
       modus: "challenge",
       lernziel: "ce06-yildiz-alarmieren",
       tag: "pflege",
       themaPrimaer: "herz-kreislauf-akut",
-      kernfaktId: ["F-03"],
+      // F-03 (sofort Arzt + weitere Pflegefachperson) · F-09 (Zeitkritik/Reperfusion — „Zeit ist Herzmuskel").
+      kernfaktId: ["F-03", "F-09"],
       contentC1: {
         title: "Wen alarmierst du?",
         body: "Verdacht auf akutes Koronarsyndrom. Wie handelst du beim Alarmieren?",
@@ -220,11 +353,70 @@ export const CE06_SIT_YILDIZ_ERSTMASSNAHMEN: SituationsPhase = {
     "Der Arzt kommt gleich. Frau Yıldız hat weiter starke Schmerzen. Jetzt zählt die richtige Erstversorgung.",
   kernSteps: [
     {
+      // Wissens-Tab B (curriculum-first): VOR erm-01. Literatur-belegt (F-04/F-05/F-07, Pflege heute
+      // Kap. 21.1.2/21.2.1) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-yildiz-erm-00b-lagern",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.4",
+      quellen: ["Pflege heute 2019, Kap. 21.1.2/21.2.1"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-yildiz-lagern-wissen",
+      tag: "pflege",
+      themaPrimaer: "herz-kreislauf-akut",
+      kernfaktId: ["F-04", "F-05", "F-07"],
+      transition: "Setz die Lagerung jetzt bei Frau Yıldız um.",
+      contentC1: {
+        title: "Lagern und entlasten — Oberkörper hoch, nicht flach; und die Grenze",
+        body: "",
+        glossarBegriffe: ["Oberkörperhochlagerung", "absolute Bettruhe", "kardiogener Schock"],
+      },
+      inlineWissen: {
+        bausteinRef: "herz-kreislauf-akut-lagern",
+        themaPrimaer: "herz-kreislauf-akut",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Frau Yıldız soll es leichter haben, bis der Arzt da ist. Dein Instinkt bei „Kreislauf schlecht“ sagt vielleicht: flach hinlegen, Beine hoch. Beim Herzen ist genau das falsch. Wie lagerst du richtig — und wo ist die Grenze?",
+        kerntext:
+          "Bei Herzbeschwerden wird der Oberkörper HOCH gelagert — das erleichtert die Atmung und entlastet das Herz. Die Schocklage (flach, Beine hoch) ist hier falsch: Sie schwemmt zusätzlich Blut zum ohnehin geschwächten Herzen zurück und kann eine Lungenstauung verstärken.\n\nDazu gilt absolute Bettruhe: Jede körperliche Anstrengung erhöht den Sauerstoffbedarf des Herzens und kann die Lage verschlechtern — also kein Aufstehen, kein Gehen, kein Zur-Toilette-Laufen. Parallel überwachst du engmaschig und dokumentierst: Puls (Frequenz, Rhythmus, Qualität), Blutdruck, Hautfarbe, Bewusstsein und die Sauerstoffsättigung per Pulsoximetrie. So bemerkst du eine Verschlechterung sofort.\n\nUnd jetzt die wichtige Grenze, die man leicht übersieht: Die Oberkörperhochlagerung hat einen Haken — bei ihr kann der Blutdruck gefährlich abfallen. Sinkt der Blutdruck unter 90 und steigt der Puls über 100, wird die Hochlagerung abgebrochen und flacher gelagert. Sonst drohen ein kardiogener Schock und eine Minderdurchblutung des Gehirns.",
+        faustregel:
+          "Oberkörper HOCH (nicht Schocklage), absolute Bettruhe, engmaschig überwachen. Aber: bei Blutdruck unter 90 UND Puls über 100 die Hochlagerung abflachen — sonst droht der kardiogene Schock.",
+        spektrum: [
+          {
+            patientName: "Blutdruck (noch) stabil",
+            hauptfaktor: "Oberkörper hoch",
+            kurzbeschreibung:
+              "Hochlagern entlastet das Herz und erleichtert die Atmung; dazu absolute Bettruhe und engmaschige Überwachung.",
+          },
+          {
+            patientName: "RR unter 90, Puls über 100",
+            hauptfaktor: "Grenze erreicht",
+            kurzbeschreibung:
+              "Hochlagerung abbrechen/abflachen und den Arzt informieren — sonst droht der kardiogene Schock.",
+          },
+          {
+            patientName: "Schocklage-Reflex",
+            hauptfaktor: "beim Herz falsch",
+            kurzbeschreibung:
+              "Flach mit Beinen hoch belastet das geschädigte Herz zusätzlich — beim kardialen Geschehen NICHT anwenden.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Wie lagerst du einen Menschen mit Verdacht auf Herzinfarkt — und wann brichst du die Lagerung ab?",
+          rueckseite:
+            "Oberkörper HOCH (nicht Schocklage — die belastet das Herz), absolute Bettruhe, engmaschig überwachen (Puls/RR/Hautfarbe/Bewusstsein/SpO2). Grenze: bei RR unter 90 UND Puls über 100 die Hochlagerung abflachen (kardiogener Schock droht).",
+        },
+      },
+    },
+    {
       stepId: "ce06-yildiz-erm-01",
       phase: 3,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 21.2.1 (Erstmaßnahmen: Oberkörper hoch, Bettruhe)"],
       track: "basis",
       modus: "challenge",
@@ -278,7 +470,8 @@ export const CE06_SIT_YILDIZ_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "truefalse",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Kompetenzgrenze / Zusammenarbeit mit dem Arzt → III.2 (LE2-Primär).
+      kompetenzbereich: "III.2",
       quellen: ["Pflege heute 2019, Kap. 21.1.2/21.2.1 (Sauerstoff/Nitro nur auf Arztanordnung)"],
       track: "basis",
       modus: "checkpoint",
@@ -313,7 +506,7 @@ export const CE06_SIT_YILDIZ_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "branching",
       bloomLevel: 5,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 21.1.2 (Lagerung abbrechen bei RR < 90 & Puls > 100; kardiogener Schock)"],
       track: "basis",
       modus: "praxis-sim",
@@ -382,7 +575,8 @@ export const CE06_SIT_YILDIZ_UEBERGEBEN: SituationsPhase = {
       phase: 4,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "I.1",
+      // SBAR = strukturierte Kommunikation → II.1 (konsistent zu Wagner/Ríos/Novak/Capstone).
+      kompetenzbereich: "II.1",
       quellen: ["Leonard et al. 2004 (SBAR)"],
       track: "basis",
       modus: "challenge",
@@ -452,13 +646,16 @@ export const CE06_SIT_YILDIZ_REFLEKTIEREN: SituationsPhase = {
       phase: 5,
       stepType: "reflection",
       bloomLevel: 5,
-      kompetenzbereich: "I.2",
+      // Reflexion eigener Haltung/Erfahrung (Wachsamkeit, Umgang mit Angst) → V.2 (LE2-Neben-Schwerpunkt).
+      kompetenzbereich: "V.2",
       quellen: ["Pflege heute 2019, Kap. 21.1.1 (Ängste der Herzpatienten; Beschwerden ernst nehmen)"],
       track: "basis",
       modus: "schreibtisch",
       lernziel: "ce06-yildiz-reflexion",
       tag: "pflege",
       themaPrimaer: "herz-kreislauf-akut",
+      // F-01 (Warnzeichen ausbleibende Besserung) · F-10 (Wachsamkeit Frauen/Diabetiker — bewertungsrelevant).
+      kernfaktId: ["F-01", "F-10"],
       contentC1: {
         title: "Was nimmst du mit?",
         body: "Zwischen der vertrauten Selbsteinschätzung der Patientin, der Zeitkritik und ihren Ängsten — reflektiere die Situation.",

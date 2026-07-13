@@ -34,7 +34,8 @@ export const CE06_SIT_RADTKE_ERKENNEN: SituationsPhase = {
       phase: 1,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Handeln nach Notfallplan + Eigenschutz = Notfall-Handeln → I.4 (LE4-Primär).
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14.7 (Notfallpläne/Notfall-Evakuierung der Einrichtung; Mitwirkung im Katastrophenfall; Eigenschutz)"],
       track: "basis",
       modus: "challenge",
@@ -88,7 +89,8 @@ export const CE06_SIT_RADTKE_ERKENNEN: SituationsPhase = {
       phase: 1,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Kleiderbrand löschen = Erste-Hilfe-Akuthandlung → I.4 (LE4-Primär).
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14.6 (Erstmaßnahmen bei Verbrennungen/Kleiderbrand)"],
       track: "basis",
       modus: "challenge",
@@ -127,7 +129,7 @@ export const CE06_SIT_RADTKE_ERKENNEN: SituationsPhase = {
               "Falsch. Wenn die Person weiterläuft, brennt es stärker. Erst aufhalten, dann sofort mit dem löschen, was da ist (Wasser, Tücher, Decke).",
           },
           {
-            text: "Ich sprühe den Feuerlöscher aus sicherer Entfernung direkt auf Kopf und Gesicht, weil dort die empfindlichste Haut ist.",
+            text: "In der Panik sprühe ich den Feuerlöscher von oben übers Gesicht, um die Flammen am Kopf möglichst schnell zu ersticken.",
             isCorrect: false,
             explanation:
               "Falsch. Ein Feuerlöscher darf gerade nicht ins Gesicht gesprüht werden (Verletzungs- und Erstickungsgefahr durch das Löschmittel). Man löscht am Körper und erstickt die Flammen; Wasser oder Decken sind bei einer Person oft schonender.",
@@ -154,11 +156,74 @@ export const CE06_SIT_RADTKE_ALARMIEREN: SituationsPhase = {
     "Die Feuerwehr ist alarmiert. Immer mehr Bewohner kommen auf den Sammelplatz — mit Rauch in der Lunge, Stürzen, Verbrennungen. Es sind mehr Menschen, als ihr im Nachtdienst allein versorgen könnt.",
   kernSteps: [
     {
+      // Wissens-Tab A (curriculum-first, LE4-Primär I.4): MANV/Katastrophe + das andere Leitprinzip.
+      // VOR der Anwendung ala-01. Literatur-belegt (F-01/F-02/F-08/F-04/F-09, Pflege heute Kap. 14.7)
+      // + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-radtke-ala-00b-manv",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // LE4-Primär: in Notfall-/Katastrophensituationen handeln.
+      kompetenzbereich: "I.4",
+      quellen: ["Pflege heute 2019, Kap. 14.7"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-radtke-manv-wissen",
+      tag: "pflege",
+      themaPrimaer: "katastrophe-triage-krise",
+      // F-01 (MANV) · F-02 (Katastrophe) · F-08 (Sichtung vor Einzelhilfe/Leitprinzip) · F-04 (eigener Notfallplan) · F-09 (Eigenschutz).
+      kernfaktId: ["F-01", "F-02", "F-08", "F-04", "F-09"],
+      transition: "Ordne die Lage jetzt selbst fachlich ein.",
+      contentC1: {
+        title: "Wenn viele gleichzeitig — MANV und das andere Prinzip",
+        body: "",
+        glossarBegriffe: ["Massenanfall (MANV)", "Katastrophe", "Eigenschutz"],
+      },
+      inlineWissen: {
+        bausteinRef: "katastrophe-triage-krise-manv",
+        themaPrimaer: "katastrophe-triage-krise",
+        storyAufhaenger:
+          "Vor wenigen Minuten war es ein Brand in einem Zimmer. Jetzt stehen mehr Verletzte am Sammelplatz, als ihr im Nachtdienst versorgen könnt. Ab diesem Moment gilt eine andere Logik als sonst — welche?",
+        kerntext:
+          "Solange du einen einzelnen Menschen versorgst, gibst du ihm alles, was er braucht. Sobald es aber mehr Betroffene gibt, als die vorhandenen Kräfte einzeln versorgen können, kippt die Lage in einen Massenanfall von Verletzten (kurz MANV). Wird das Ereignis so groß, dass die örtlichen Kräfte es allein nicht mehr bewältigen und viele Menschen an Leben und Gesundheit bedroht sind, heißt das Katastrophe oder Großschadensereignis.\n\nJetzt gilt ein anderes Leitprinzip: nicht mehr für den Einzelnen das Maximum, sondern für möglichst viele das Beste. Das klingt hart, rettet aber unterm Strich die meisten Leben — würdest du dich sofort ganz in die erste schwere Verletzung vertiefen, bliebe die Hilfe für alle anderen liegen. Deshalb wird zuerst gesichtet (nach Dringlichkeit eingeteilt) und erst dann geholfen.\n\nZwei Dinge trägst du durch die ganze Nacht: Handle nach dem Notfall- und Brandschutzplan deiner eigenen Einrichtung — du musst wissen, wo er zu finden ist und was er vorgibt. Und vergiss nie den Eigenschutz: Wer selbst in Rauch, Feuer oder einen einsturzgefährdeten Bereich läuft, wird schnell selbst zum Opfer und fällt als Helfer aus.",
+        faustregel:
+          "Mehr Betroffene als Kräfte = MANV. Jetzt gilt: für möglichst viele das Beste — erst sichten, dann helfen. Immer nach dem Plan der eigenen Einrichtung, und Eigenschutz zuerst.",
+        spektrum: [
+          {
+            patientName: "Einzelnotfall",
+            hauptfaktor: "volle Versorgung",
+            kurzbeschreibung:
+              "Ein Betroffener, genug Kräfte — du gibst ihm die ganze Aufmerksamkeit und Versorgung.",
+          },
+          {
+            patientName: "Massenanfall (MANV)",
+            situationsId: "ls-radtke-brand",
+            hauptfaktor: "sichten & priorisieren",
+            kurzbeschreibung:
+              "Mehr Verletzte als Kräfte → erst nach Dringlichkeit einteilen, dann helfen: für möglichst viele das Beste.",
+          },
+          {
+            patientName: "Katastrophe / Großschadensereignis",
+            hauptfaktor: "überörtliche Hilfe",
+            kurzbeschreibung:
+              "So groß, dass die örtlichen Kräfte es allein nicht schaffen — viele Menschen bedroht, Hilfe von außen nötig.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Am Sammelplatz sind mehr Verletzte als Helfer — welche Logik gilt jetzt?",
+          rueckseite:
+            "Massenanfall von Verletzten (MANV): mehr Betroffene als Kräfte. Das Leitprinzip wechselt von „für den Einzelnen das Maximum\" zu „für möglichst viele das Beste\" → erst sichten, dann helfen. Immer nach dem Notfallplan der eigenen Einrichtung, Eigenschutz zuerst. Katastrophe = örtliche Kräfte reichen allein nicht.",
+        },
+      },
+    },
+    {
       stepId: "ce06-radtke-ala-01",
       phase: 2,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Lage als MANV einordnen und danach handeln → I.4 (LE4-Primär).
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14.7 (MANV/Katastrophe: Definition, Leitprinzip)"],
       track: "basis",
       modus: "challenge",
@@ -224,11 +289,80 @@ export const CE06_SIT_RADTKE_ERSTMASSNAHMEN: SituationsPhase = {
     "Am Sammelplatz warten mehrere Betroffene. Bis der Rettungsdienst da ist, verschaffst du dir schnell einen Überblick: Wer braucht zuerst Hilfe?",
   kernSteps: [
     {
+      // Wissens-Tab B (curriculum-first, LE4-Primär I.4): Ersteinschätzung (ABCDE) + Sichtungskategorien.
+      // VOR den Anwendungen erm-01 (ABCDE) / erm-02 (Triage) / erm-03 (Prinzip). Literatur-belegt
+      // (F-06/F-07/F-08, Pflege heute Kap. 14.4.1/14.7.1) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-radtke-erm-00b-sichtung",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // LE4-Primär: schnell und strukturiert einschätzen + sichten = Notfall-Handeln.
+      kompetenzbereich: "I.4",
+      quellen: ["Pflege heute 2019, Kap. 14.4.1/14.7.1"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-radtke-sichtung-wissen",
+      tag: "pflege",
+      themaPrimaer: "katastrophe-triage-krise",
+      // F-06 (ABCDE-Ersteinschätzung) · F-07 (Sichtungskategorien SK I–IV + schwarz) · F-08 (sichten vor helfen).
+      kernfaktId: ["F-06", "F-07", "F-08"],
+      transition: "Wende Ersteinschätzung und Sichtung jetzt an.",
+      contentC1: {
+        title: "Erst der Blick, dann die Rangfolge: ABCDE & Sichtungsfarben",
+        body: "",
+        glossarBegriffe: ["Triage", "Sichtungskategorie", "ABCDE-Schema"],
+      },
+      inlineWissen: {
+        bausteinRef: "katastrophe-triage-krise-sichtung",
+        themaPrimaer: "katastrophe-triage-krise",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Am Sammelplatz warten mehrere Betroffene, der Rettungsdienst ist noch nicht da. Du kannst nicht allen zugleich helfen — also brauchst du erst einen schnellen, geordneten Blick und dann eine klare Rangfolge. Wie?",
+        kerntext:
+          "Zuerst der schnelle Blick auf den Einzelnen: Das ABCDE-Schema prüft in fester Reihenfolge das Lebensbedrohlichste zuerst — Atemweg (A), Atmung (B), Kreislauf (C), Bewusstsein (D) und zuletzt Entkleiden/Umgebung (E). Diese Reihenfolge kennst du schon aus der Ersteinschätzung; sie sorgt dafür, dass dir kein sofort tödliches Problem (etwa ein verlegter Atemweg) durchrutscht.\n\nAuf dieser Grundlage sichtest (triagierst) du: Du teilst die Betroffenen nach Dringlichkeit in Farbkategorien ein. Rot (SK I) heißt vitale Bedrohung — sofort behandeln (z. B. bedrohte Atmung, starke Blutung). Gelb (SK II) heißt schwer verletzt, aber kreislaufstabil — dringlich, aber nach den Roten. Grün (SK III) heißt leicht verletzt und gehfähig — kann warten. Blau (SK IV) kennzeichnet Betroffene ohne realistische Überlebenschance — sie werden betreuend und schmerzlindernd begleitet. Schwarz steht für Verstorbene.\n\nEntscheidend: Du sichtest nach Dringlichkeit, nicht nach Lautstärke. Wer laut ruft und umhergeht, ist meist grün; die stillen, kaum atmenden Betroffenen sind oft die roten. Und Grün heißt nicht „fertig\": Gerade nach dem Einatmen von Rauch kann sich ein Zustand verzögert verschlechtern — also weiter beobachten.",
+        faustregel:
+          "Erst ABCDE (Lebensbedrohlichstes zuerst), dann sichten nach Dringlichkeit: rot = sofort, gelb = dringlich, grün = kann warten, blau = ohne Überlebenschance (palliativ), schwarz = tot. Nach Dringlichkeit, nicht nach Lautstärke.",
+        spektrum: [
+          {
+            patientName: "SK I — rot",
+            hauptfaktor: "vitale Bedrohung",
+            kurzbeschreibung:
+              "Bedrohte Atmung, starke Blutung, Bewusstlosigkeit → sofort behandeln.",
+          },
+          {
+            patientName: "SK II — gelb",
+            hauptfaktor: "schwer, aber stabil",
+            kurzbeschreibung:
+              "Schwer verletzt, Kreislauf (noch) stabil → dringlich, kommt nach den Roten.",
+          },
+          {
+            patientName: "SK III — grün",
+            hauptfaktor: "leicht / gehfähig",
+            kurzbeschreibung:
+              "Leicht verletzt, läuft selbst umher → kann warten; trotzdem weiter beobachten (Rauchgas!).",
+          },
+          {
+            patientName: "SK IV blau (lebend) · schwarz (tot)",
+            hauptfaktor: "zwei verschiedene Zustände",
+            kurzbeschreibung:
+              "Blau = noch lebend, aber ohne realistische Überlebenschance → palliative Begleitung. Schwarz dagegen = bereits Verstorbene. Nicht verwechseln.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Wie verschaffst du dir Überblick und setzt Prioritäten am Sammelplatz?",
+          rueckseite:
+            "Erst ABCDE (A Atemweg, B Atmung, C Kreislauf, D Bewusstsein, E Entkleiden/Umgebung) — Lebensbedrohlichstes zuerst. Dann Sichtung in Farben: SK I rot = sofort (vital), SK II gelb = dringlich (schwer, stabil), SK III grün = kann warten (leicht/gehfähig), SK IV blau = ohne Überlebenschance (palliativ), schwarz = tot. Nach Dringlichkeit, nicht Lautstärke; grün weiter beobachten.",
+        },
+      },
+    },
+    {
       stepId: "ce06-radtke-erm-01",
       phase: 3,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Strukturierte Ersteinschätzung (ABCDE) anwenden → I.4 (LE4-Primär).
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14.4.1 (Ersteinschätzung nach ABCDE-Notfallschema)"],
       track: "basis",
       modus: "challenge",
@@ -282,7 +416,8 @@ export const CE06_SIT_RADTKE_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "pflegewagen",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      // Sichten/Triage = Notfall-Handeln unter Prioritäten → I.4 (LE4-Primär).
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14.7.1 (Triage/Sichtung, Sichtungskategorien SK I–IV)"],
       track: "basis",
       modus: "praxis-sim",
@@ -405,7 +540,8 @@ export const CE06_SIT_RADTKE_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "truefalse",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      // Prinzip „sichten vor Einzelhilfe" + Eigenschutz anwenden → I.4 (LE4-Primär).
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14.7.1/14.7.2 (Sichtung vor Einzelhilfe; Eigenschutz)"],
       track: "basis",
       modus: "checkpoint",
@@ -460,11 +596,74 @@ export const CE06_SIT_RADTKE_UEBERGEBEN: SituationsPhase = {
     "Frau Radtke steht zitternd draußen, ruft nach ihrer Schwester und will zurück ins Haus. Ein Reporter mit Kamera fragt dich nach Namen und Zustand der Bewohner. Du kümmerst dich um Frau Radtke.",
   kernSteps: [
     {
+      // Wissens-Tab C (curriculum-first, KB III.2): psychische Erste Hilfe + dein Part im System (Einsatzleitung/KIT,
+      // keine Auskunft an Dritte). VOR der Anwendung ueb-01. Literatur-belegt (F-10/F-11, Pflege heute Kap. 14.7.3)
+      // + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-radtke-ueb-00b-psych-erste-hilfe",
+      phase: 4,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // Zusammenarbeit im Einsatzsystem (Einsatzleitung, KIT/Seelsorge) + Rechtsrahmen Auskunft → III.2 (LE4-Set).
+      kompetenzbereich: "III.2",
+      quellen: ["Pflege heute 2019, Kap. 14.7.3"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-radtke-psych-erste-hilfe-wissen",
+      tag: "pflege",
+      themaPrimaer: "katastrophe-triage-krise",
+      // F-10 (psychische Erste Hilfe: abschirmen, Augenhöhe, Namen) · F-11 (keine Auskunft an Dritte, KIT/Notfallseelsorge).
+      kernfaktId: ["F-10", "F-11"],
+      transition: "Setz das jetzt bei Frau Radtke um.",
+      contentC1: {
+        title: "Psychische Erste Hilfe — und dein Part im System",
+        body: "",
+        glossarBegriffe: ["psychische Erste Hilfe", "Krisenintervention", "KIT"],
+      },
+      inlineWissen: {
+        bausteinRef: "katastrophe-triage-krise-psych-erste-hilfe",
+        themaPrimaer: "katastrophe-triage-krise",
+        storyAufhaenger:
+          "Frau Radtke steht zitternd am Sammelplatz, will zurück ins brennende Haus — und ein Reporter drängt sich mit der Kamera heran und fragt dich nach Namen. Zwei Dinge zugleich: der verängstigte Mensch und dein Platz im großen Ablauf.",
+        kerntext:
+          "Für Menschen wie Frau Radtke leistest du psychische Erste Hilfe. Das heißt: Betroffene abschirmen und vor Schaulustigen und Presse schützen, auf Augenhöhe gehen, Blickkontakt herstellen, sich mit Namen und der eigenen Funktion vorstellen und den Menschen ruhig mit Namen ansprechen. Bei einer schwerhörigen, verwirrten Frau ist besonders wichtig, deutlich von vorne zu sprechen, damit sie von den Lippen lesen kann, jede Berührung vorher anzukündigen und einfache Orientierung zu geben. Ziel ist, sie aus der hilflosen Opferrolle herauszuholen und ihr wieder ein Stück Handlungsfähigkeit zurückzugeben.\n\nGleichzeitig kennst du deinen Platz im System. Auskünfte über Betroffene gibst du nicht an Dritte — schon gar nicht an die Presse; dazu ist allein die Einsatzleitung berechtigt (Persönlichkeitsrecht, Datenschutz, Fürsorge). Und für die tiefergehende psychische Betreuung bist nicht du zuständig, sondern speziell ausgebildete Kräfte: das Kriseninterventionsteam (KIT) und die Notfallseelsorge, die auf solche Belastungen geschult sind. Dein Part ist die erste Zuwendung und das Weiterleiten an die Richtigen.",
+        faustregel:
+          "Psychische Erste Hilfe: abschirmen, auf Augenhöhe, mit Namen ruhig ansprechen, einfache Orientierung. Keine Auskunft an Dritte/Presse — nur die Einsatzleitung. Für die tiefe Betreuung: KIT/Notfallseelsorge informieren.",
+        spektrum: [
+          {
+            patientName: "Der verängstigte Mensch",
+            situationsId: "ls-radtke-brand",
+            hauptfaktor: "psychische Erste Hilfe",
+            kurzbeschreibung:
+              "Abschirmen, auf Augenhöhe gehen, mit Namen ansprechen, Orientierung geben — raus aus der Opferrolle.",
+          },
+          {
+            patientName: "Der Reporter",
+            hauptfaktor: "keine Auskunft",
+            kurzbeschreibung:
+              "Über Betroffene gibt nur die Einsatzleitung Auskunft — die Pflege nicht, erst recht nicht der Presse.",
+          },
+          {
+            patientName: "Die tiefe Aufarbeitung",
+            hauptfaktor: "KIT / Seelsorge",
+            kurzbeschreibung:
+              "Spezialisierte Kräfte (Kriseninterventionsteam, Notfallseelsorge) übernehmen die weitere psychische Betreuung.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Frau Radtke in Panik, ein Reporter fragt nach Namen — was tust du, was nicht?",
+          rueckseite:
+            "Psychische Erste Hilfe: abschirmen (auch vor Presse), auf Augenhöhe, mit Namen ruhig ansprechen, bei Schwerhörigkeit von vorne sprechen (Lippenlesen), einfache Orientierung. KEINE Auskunft an Dritte/Presse — nur die Einsatzleitung. Weitere Betreuung: KIT/Notfallseelsorge informieren.",
+        },
+      },
+    },
+    {
       stepId: "ce06-radtke-ueb-01",
       phase: 4,
       stepType: "branching",
       bloomLevel: 4,
-      kompetenzbereich: "I.1",
+      // Kommunikation/psychische Erste Hilfe am Menschen in der Krise → II.1 (LE4-Set).
+      kompetenzbereich: "II.1",
       quellen: ["Pflege heute 2019, Kap. 14.7.3 (Psychische Erste Hilfe, Krisenintervention, KIT, keine Auskunft an Dritte)"],
       track: "basis",
       modus: "praxis-sim",
@@ -533,7 +732,8 @@ export const CE06_SIT_RADTKE_REFLEKTIEREN: SituationsPhase = {
       phase: 5,
       stepType: "reflection",
       bloomLevel: 5,
-      kompetenzbereich: "I.2",
+      // Reflexion des eigenen Funktionierens/der eigenen Belastung → V.2 (LE4-Set; I.2 war nicht im Set).
+      kompetenzbereich: "V.2",
       quellen: ["Pflege heute 2019, Kap. 14.7.2/14.7.3 (Eigenschutz/eigenes Funktionieren; psychische Folgeschäden)"],
       track: "basis",
       modus: "schreibtisch",
@@ -568,7 +768,8 @@ export const CE06_SIT_RADTKE_REFLEKTIEREN: SituationsPhase = {
       phase: 5,
       stepType: "freetext",
       bloomLevel: 5,
-      kompetenzbereich: "I.2",
+      // Supervision zur eigenen Fassung diskutieren = Reflexion des eigenen Handelns → V.2 (LE4-Set).
+      kompetenzbereich: "V.2",
       quellen: [
         "Pflege heute 2019, Kap. 14.7.3 (professionelle Aufarbeitung nach Großschadensereignis)",
         "Pflege heute 2019, Kap. 16.4.4 (Supervision)",

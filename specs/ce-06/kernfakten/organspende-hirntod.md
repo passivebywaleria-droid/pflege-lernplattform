@@ -55,19 +55,19 @@ Die Entnahme von Organen ist nur zulässig, wenn der Organspender in die Entnahm
 - Zitat: "Der Arzt muss den nächsten Angehörigen des Organspenders über die beabsichtigte Organentnahme unterrichten"
 - Primärquelle: (I care Pflege 2020, Kap. 7.6.5)
 
-### F-04: Hirntod-Feststellung — zwei unabhängige Ärzte
-Zur Feststellung des Hirntods sind genaue Kriterien festgelegt: Zwei untersuchende Ärzte, die nichts mit der Transplantation zu tun haben und von denen wenigstens einer über langjährige Erfahrung in der Intensivmedizin verfügt, müssen unabhängig voneinander den Hirntod feststellen und dokumentieren. Zusätzlich sind Wartezeiten und/oder technische Untersuchungen erforderlich.
+### F-04: Hirntod-Feststellung — zwei qualifizierte, unabhängige Ärzte
+Zur Feststellung des Hirntods sind genaue Kriterien festgelegt: Alle Untersuchungen müssen zwei qualifizierte Ärzte durchführen und unabhängig voneinander dokumentieren; sie dürfen nicht in den Organspendeprozess (Entnahme/Übertragung) eingebunden sein. Nach der Richtlinie der Bundesärztekammer müssen beide über mehrjährige Erfahrung in der Intensivbehandlung von Patienten mit schweren Hirnschädigungen verfügen, und bei jedem Untersuchungsgang ist mindestens ein Facharzt für Neurologie oder Neurochirurgie beteiligt. Zusätzlich sind Wartezeiten und/oder technische Untersuchungen erforderlich.
 
 **Beleg:**
-- Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "So müssen zwei"
-- Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "untersuchende Ärzte, die nichts mit der"
-- Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "wenigstens einer über langjährige"
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "müssen 2 dafür qualifizierte Ärzte"
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "Sie dürfen nicht in den Organspendeprozess"
+- Quelle: `icare-pflege-volltext/icare-pflege.txt`
+- Zitat: "direkt eingebunden sein"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "unabhängig voneinander den Hirntod feststellen und dokumentieren"
-- Primärquelle: (Pflege heute 2019, Kap. 43.14)
+- Primärquelle: (I care Pflege 2020, Kap. 12.6.3; BÄK-Richtlinie zur Feststellung des irreversiblen Hirnfunktionsausfalls gemäß § 16 Abs. 1 S. 1 Nr. 1 TPG; Pflege heute 2019, Kap. 43.14)
 
 ### F-05: Entscheidungslösung (seit 2012) — Organspendeausweis, Wahlmöglichkeiten
 In Deutschland gilt seit Ende 2012 die Entscheidungslösung. Die Krankenkassen informieren Versicherte, die älter als 16 Jahre sind, über die Organspende und stellen einen Organspendeausweis bereit. Der Bürger kann einer Organspende nach seinem Tod zustimmen, sie einschränken, ihr widersprechen oder eine Person seines Vertrauens mit der Entscheidung beauftragen.
@@ -134,3 +134,10 @@ Die Begleitung von Angehörigen und die Pflege eines hirntoten Menschen sind ein
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "Vor einer Organentnahme muss stets der Gesamthirntod"
 - Primärquelle: (I care Pflege 2020, Kap. 7.6.5; Ethische Grenzsituationen)
+
+### F-10: Organspende-Register (seit 2024) — zusätzlicher Weg, die Entscheidung festzuhalten
+Seit dem 18. März 2024 gibt es in Deutschland ein zentrales Organspende-Register beim Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM). Dort kann jede Person ihre Erklärung für oder gegen eine Organspende online hinterlegen, ändern oder widerrufen — zusätzlich zum Organspendeausweis oder einer Patientenverfügung. Liegt bei einem möglichen Spender keine schriftliche Erklärung vor, wird auch das Register abgefragt. Die Entscheidungslösung selbst bleibt dadurch unverändert.
+
+**Beleg:**
+- Hinweis: Currency-Ergänzung nach Korpus-Stand (I care Pflege 2. Aufl. 2020 kennt das Register noch nicht) — belegt über amtliche Primärquelle, kein Korpus-Verbatim.
+- Primärquelle: (BfArM, Organspende-Register, Betriebsstart 18.03.2024, www.organspende-register.de; Gesetz zur Stärkung der Entscheidungsbereitschaft bei der Organspende, 2020)

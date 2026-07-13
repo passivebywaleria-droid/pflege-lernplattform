@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "ce": "ce-06",
+    "situation": "ls-rios-synkope",
+    "datei": "content/ce-06/situationen/ls-rios-synkope/phases.ts",
+    "titel": "Herr Ríos — Synkope während der Dialyse (Neuro-Differenzial)",
+    "generatedAt": "2026-07-13",
+    "erweiterung": "Hypoglykämie-Wissenstab + Neuro-Differenzial-Tab + Apoplex-Transfer-MC + Krampfanfall-Transfer-MC",
+    "kernfakten": "specs/ce-06/kernfakten/neurologische-akutsituationen.md (F-01..F-13, 19/19 Verbatim-Belege verifiziert)"
+  },
+  "verdikt": {
+    "status": "PASS",
+    "ko": false,
+    "hoch": 0,
+    "mittel": 0,
+    "niedrig": 1,
+    "begruendung": "Kein HOCH-Befund über alle vier deterministischen Lenses + 5. semantischer Lens. Eine informative NIEDRIG-Anmerkung (Status-epilepticus-Schwelle) für den Gründerin-Backstop — nicht blockierend."
+  },
+  "lenses": {
+    "1_arzneimittel_zahlen": {
+      "tool": "klinik-zahlen-check (W1) + referenzwerte.json",
+      "status": "PASS",
+      "out_of_range": 0,
+      "befunde": [],
+      "geprueft": [
+        {
+          "aspekt": "BZ-Schwelle Hypoglykämie < 50 mg/dl",
+          "ergebnis": "OK",
+          "beleg": "F-03 verbatim 'Blutzucker unter 50 mg/dl' (Pflege heute 2019, Kap. 26.6.5). Fallwert 48 mg/dl konsistent unterschwellig; erk-02-Explanation ergänzt korrekt die Leitlinien-Nuance (symptomatisch + Insulin schon bei niedrig-normal behandlungsbedürftig)."
+        },
+        {
+          "aspekt": "Keine erfundene ml-Dosis für Glukose i.v.",
+          "ergebnis": "OK",
+          "beleg": "Content nennt nur die Konzentration 'Glukose 40 % i.v.' (F-05 verbatim 'besteht in Glukose 40 % i. v.'). KEINE ml-/Volumen-/mg-Dosis behauptet — entspricht der bewussten Abgrenzung im Datei-Header."
+        },
+        {
+          "aspekt": "Status-epilepticus-Schwelle ~10-15 Min (Erwachsene)",
+          "ergebnis": "OK (mit NIEDRIG-Anmerkung N1)",
+          "beleg": "F-12 (Pflege heute 2019, Kap. 37.8.2). Content: 'Erwachsene über ~10–15 Min'. Korrekt-Antwort triggert Hilfe bereits bei 'wenige Minuten'."
+        },
+        {
+          "aspekt": "Kontroll-BZ 120 mg/dl nach Glukose",
+          "ergebnis": "OK",
+          "beleg": "Plausibler Normwert nach Therapie; keine Norm-Verletzung."
+        }
+      ]
+    },
+    "2_recht_ethik_currency": {
+      "tool": "standards-currency-check + standards-currency.json (Teil D)",
+      "status": "PASS",
+      "befunde": [],
+      "geprueft": [
+        {
+          "aspekt": "Rollenabgrenzung Glukose i.v. = ärztlich",
+          "ergebnis": "OK",
+          "beleg": "Durchgängig als ärztliche Aufgabe gelehrt (erk-01b, ala-01, erm-01, erm-02). F-05: 'Die ärztliche Behandlung besteht in Glukose 40 % i. v.'"
+        },
+        {
+          "aspekt": "Shunt nicht eigenmächtig punktieren",
+          "ergebnis": "OK",
+          "beleg": "erm-02 (ce06-rios-erm-02): Pflege punktiert Shunt nicht selbst für Medikamente, schützt ihn (Lebensader), assistiert dem Arzt. Kompetenzgrenze korrekt gelehrt (kompetenzbereich III.2)."
+        },
+        {
+          "aspekt": "Keine veralteten Normen/Standards",
+          "ergebnis": "OK",
+          "beleg": "standards-currency-check: Recht-Lens 0 Funde. Keine §-Verweise in der Situation; Beißkeil ausdrücklich als obsolet (aktueller Stand) gelehrt (F-11)."
+        }
+      ]
+    },
+    "3_dnqp_standard_grounding": {
+      "tool": "step-grounding-check (W2)",
+      "status": "PASS",
+      "claim_tragend": 11,
+      "gegroundet": 11,
+      "dangling": 0,
+      "befunde": [],
+      "geprueft": [
+        {
+          "aspekt": "Schlaganfall time-is-brain",
+          "ergebnis": "OK",
+          "beleg": "ref-00c/neuro-differenzial → F-08/F-09; verbatim 'time is brain' (Pflege heute 2019, Kap. 37.6.4)."
+        },
+        {
+          "aspekt": "Krampfanfall Erste-Hilfe (kein Beißkeil, schützen, nichts oral)",
+          "ergebnis": "OK",
+          "beleg": "ref-00d → F-11; verbatim 'Gummikeils o. Ä. zwischen die Zähne' (nicht mehr empfohlen) + 'scharfkantige Gegenstände aus der' (Umgebung entfernen), Kap. 37.8.2."
+        },
+        {
+          "aspekt": "Lagerung (stabile Seitenlage / Beine hoch, keine Kopftieflage)",
+          "ergebnis": "OK",
+          "beleg": "erm-03 → F-06 (Beine hoch/stabile Seitenlage, Kap. 14/5.5) + F-07 (Kopftieflage kontraindiziert bei Hirndruck/Atemnot/Übelkeit, Kap. 15)."
+        }
+      ]
+    },
+    "4_konsistenz": {
+      "tool": "Panel-Konsistenz (Patient-Daten / Cross-Step)",
+      "status": "PASS",
+      "doppelte_stepids": 0,
+      "fremde_patientids": 0,
+      "befunde": [],
+      "geprueft": [
+        {
+          "aspekt": "Ríos-Falldaten (63 / Dialyse seit 3 J. / Diabetes / Insulin) durchgängig",
+          "ergebnis": "OK",
+          "beleg": "patient.ts alter:63 == SBAR 'Herr Ríos, 63'. Dialysepflichtig, Insulin, heute kaum gegessen — konsistent über alle 5 Phasen. Shunt links (erm-02) konsistent mit 'Puls am freien Arm' (erkennen-Kontext)."
+        },
+        {
+          "aspekt": "Differenzial-Aussagen widerspruchsfrei zu den Falldaten",
+          "ergebnis": "OK",
+          "beleg": "Titel 'Synkope' ist die INITIALE Präsentation; Diagnose = Hypoglykämie (imitiert, F-04) — didaktisch intendiert, kein Widerspruch. Neuro-Differenzial-storyAufhaenger nennt Ríos explizit als Unterzucker-Fall, nicht als Synkope-Fall. Frau Béker (74, Apoplex) explizit als 'anderer Fall' eingeführt — keine Vermischung."
+        },
+        {
+          "aspekt": "Wiederbegegnung zu Wagner korrekt",
+          "ergebnis": "OK",
+          "beleg": "wiederbegegnung.basisBausteinId 'reanimation-bls-hks-erkennen' == bausteinRef in ls-wagner-reanimation/phases.ts. Aussage 'Wagner: Kreislauf weg → reanimieren; Neuro-Bilder: Kreislauf DA → nicht reanimieren, differenzieren' fachlich korrekt."
+        }
+      ]
+    }
+  },
+  "lens5_semantisch": {
+    "tool": "pflege-validator-Rolle + pflege-anti-pattern-check (Pre-Filter)",
+    "anti_pattern_prefilter": { "funde": 0, "hoch": 0, "mittel": 0, "niedrig": 0 },
+    "status": "PASS",
+    "distraktor_vs_empfehlung": [
+      {
+        "step": "ce06-rios-ref-00d-krampfanfall",
+        "bewertung": "Beißkeil/Festhalten erscheinen NUR als Distraktor (isCorrect:false) mit Erklärung, warum obsolet/gefährlich — 'lehrt über Falsches', nicht 'empfiehlt Falsches'. Korrekt."
+      },
+      {
+        "step": "ce06-rios-erm-01",
+        "bewertung": "Orale Glukose bei Bewusstseinsstörung erscheint nur als falscher Branching-Pfad mit Aspirations-Begründung. Korrekt."
+      },
+      {
+        "step": "ce06-rios-ref-00c-apoplex",
+        "bewertung": "Traubenzucker bei normalem BZ / Abwarten nur als Distraktoren mit korrekter Widerlegung (time is brain). Korrekt."
+      }
+    ],
+    "befunde": [
+      {
+        "id": "N1",
+        "severity": "NIEDRIG",
+        "lens": "1 (Zahlen) / 5 (semantisch)",
+        "step": "ce06-rios-ref-00d-krampfanfall",
+        "typ": "informativ, nicht blockierend",
+        "befund": "Status-epilepticus-Schwelle wird mit '~10-15 Min' gelehrt (gegroundet Pflege heute F-12). Die aktuelle operationale ILAE-2015-Definition setzt für den generalisiert tonisch-klonischen Status die Handlungsschwelle (t1) bei ≥5 Min an.",
+        "bewertung": "KEIN Fehler: Content ist verbatim-gegroundet an der Primärquelle Pflege heute, und die Korrekt-Antwort löst Hilfe bereits bei 'wenige Minuten' aus (deckt die 5-Min-Praxis ab). Gründerin-Option: optionalen Hinweis '(Handlungsschwelle in aktuellen Leitlinien ≥5 Min)' ergänzen — nur wenn eine belegte Sekundärquelle in die Kernfakten aufgenommen wird.",
+        "beleg": "Pflege heute 2019, Kap. 37.8.2 (F-12, '~10-15 Min') vs. Trinka et al., Epilepsia 2015 (ILAE-Definition Status epilepticus, t1 = 5 Min bei GTC).",
+        "beschaffung": "ILAE-2015-Beleg NICHT in den Kernfakten vorhanden — bei Übernahme erst verifizieren (zitat-verifizierer), sonst NICHT einbauen."
+      }
+    ]
+  },
+  "beschaffung": [
+    {
+      "aspekt": "ILAE-2015 5-Min-Handlungsschwelle Status epilepticus",
+      "status": "optional / nicht erforderlich für PASS",
+      "hinweis": "Nur relevant falls Gründerin N1 aufgreift. Beleg müsste vor Einbau verifiziert und in specs/ce-06/kernfakten/neurologische-akutsituationen.md ergänzt werden. Nichts erfinden."
+    }
+  ]
+}

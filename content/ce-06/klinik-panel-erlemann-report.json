@@ -3,82 +3,78 @@
   "ce": "ce-06",
   "situation": "ls-erlemann-organspende",
   "thema": "organspende-hirntod",
-  "grounding": "specs/ce-06/kernfakten/organspende-hirntod.md (F-01..F-09)",
-  "datum": "2026-07-05",
+  "titel": "Organspende & Hirntod — ein junger Mensch auf der Intensivstation (LE5)",
+  "datum": "2026-07-13",
   "verdikt": "PASS",
   "ko": false,
-  "prefilter": {
-    "klinik-panel.ts": { "hoch": 0, "mittel": 0, "niedrig": 0, "status": "PASS" },
-    "pflege-anti-pattern-check.ts": { "hoch": 0, "mittel": 0, "niedrig": 0, "status": "PASS" }
+  "zusammenfassung": { "hoch": 0, "mittel": 0, "niedrig": 2 },
+  "deterministischeChecks": {
+    "zitatVerifizierer": {
+      "datei": "specs/ce-06/kernfakten/organspende-hirntod.md",
+      "ergebnis": "PASS",
+      "detail": "28/28 Verbatim-Belege verifiziert (I care Pflege 7.6.5 + Pflege heute 43.14/6)"
+    },
+    "stepGroundingCheck": {
+      "ergebnis": "PASS",
+      "detail": "ls-erlemann-organspende: 10 claim-tragende Steps, 10 gegroundet, 0 Dangling, 0 Missing"
+    },
+    "pflegeAntiPatternCheck": {
+      "ergebnis": "PASS",
+      "detail": "0 Funde (HOCH 0 | MITTEL 0 | NIEDRIG 0)"
+    },
+    "standardsCurrencyCheck": {
+      "ergebnis": "PASS",
+      "detail": "0 Treffer — keine veraltete Norm autoritativ verwendet (Registry: 1 bekannt, §1906a→§1831)"
+    },
+    "klinikPanel4Lenses": {
+      "ergebnis": "PASS",
+      "detail": "Zahlen 0 · Recht 0 · DNQP/Standard 0 · Konsistenz 0 — kein HOCH-Befund"
+    }
   },
   "lenses": {
-    "1_zahlen": {
-      "status": "PASS",
-      "geprueft": [
-        "821 Lebertransplantationen 2017 -> F-07 verbatim ('2017 erfolgten in Deutschland 821 Lebertransplantationen')",
-        "760 postmortal -> F-07 verbatim ('760 nach postmortaler Organspende')",
-        "61 Leberteil-Lebendspende -> F-07 ('61 als Leberteil-Lebendspende'); Arithmetik 760+61=821 stimmig",
-        "Zwei-Aerzte-Regel + langjaehrige Intensiverfahrung + Unabhaengigkeit vom Transplantationsteam -> F-04 verbatim",
-        "Gesamthirntod = irreversibler Ausfall aller Hirnfunktionen -> F-02 verbatim",
-        "Keine erfundenen Register-/Statistik-Zahlen gefunden"
-      ]
+    "1_zahlen_arzneimittel": {
+      "befund": "keine",
+      "notiz": "Einzige belastbare Zahl (821 Lebertx 2017, davon 760 postmortal) ist verbatim aus F-07 (Pflege heute) belegt; korrekt als 'z. B.' historisiert."
     },
     "2_recht_ethik_currency": {
-      "status": "PASS",
-      "geprueft": [
-        "ENTSCHEIDUNGSLOESUNG korrekt und CURRENT (seit 2012, F-05) — Widerspruchsloesung NUR als Distraktor, jeweils explizit widerlegt (erm-01 Opt.2). Kein falsches Behaupten der Widerspruchsloesung.",
-        "Rechtsstand aktuell: Bundestag lehnte Widerspruchsloesung Jan 2020 ab, Entscheidungsloesung bleibt gueltig — Content entspricht 2026er-Rechtslage.",
-        "Keine erfundenen 2020er/2024er-Register-Details (Organspende-Register/OGR) — bewusst ausgelassen, kein Fabrizieren.",
-        "TPG definiert NICHT den Tod, sondern Mindestkriterium (Gesamthirntod) -> F-02, in erk-01 dreifach korrekt gelehrt.",
-        "Ethik (Pro/Contra, kulturell-religioeses Spektrum) wertneutral: systemPrompt/bewertungskriterien fordern 'keine Weltanschauung bewerten' (ref-01, ref-02) -> F-08.",
-        "Rollenklarheit Pflege durchgaengig: Pflege draengt nicht, stellt keinen Hirntod fest, gibt keine Entnahme frei (ala-01 Opt.3, erm-01 Opt.3, erm-02, ueb-01) -> F-03/F-09."
-      ]
+      "befund": "keine",
+      "notiz": "Rechtsstand ENTSCHEIDUNGSLÖSUNG (seit 2012) durchgehend korrekt. Widerspruchslösung/'automatisch Spender' erscheint NUR als klar markierter, in der Erklärung widerlegter Distraktor (erm-01, Option B) — lehrt ÜBER Falsches, empfiehlt es nicht. TPG-definiert-nicht-den-Tod konsistent (F-02). Hirntod-Feststellung = zwei unabhängige Ärzte ohne Transplantationsbezug (F-04) konsistent. Standards-Currency-Check 0 Treffer."
     },
-    "3_grounding": {
-      "status": "PASS",
-      "geprueft": [
-        "Alle 8 claim-tragenden Steps mit kernfaktId: erk-01[F-02,F-01], ala-01[F-04], erm-01[F-03,F-05], erm-02[F-09,F-02], erm-03[F-06,F-07], ueb-01[F-03,F-09], ref-01[F-08,F-02], ref-02[F-06,F-09].",
-        "Keine Dangling-Refs; kein Claim jenseits der Kernfakten.",
-        "Wartezeiten/technische Untersuchungen -> F-04 gedeckt."
-      ]
+    "3_dnqp_standard_grounding": {
+      "befund": "keine",
+      "notiz": "Alle 10 claim-tragenden Steps mit kernfaktId gegroundet (F-01..F-09), step-grounding-check PASS."
     },
     "4_konsistenz": {
-      "status": "PASS",
-      "geprueft": [
-        "Tobias Erlemann, 24, Gesamthirntod nach Motorrad-SHT durchgaengig (patient.ts + alle Phasen).",
-        "Kein Organspendeausweis auffindbar konsistent (patient.ts nebendiagnosen + erm-01 Kontext).",
-        "Eltern Sabine (Mutter) + Reinhard (Vater) in patient.ts benannt; in Phasen als 'Mutter'/'Vater' konsistent.",
-        "Setting Intensivstation/Einzelzimmer/beatmet durchgaengig.",
-        "stepIds eindeutig, keine fremde patientId."
-      ]
+      "befund": "keine",
+      "notiz": "Patient Tobias Erlemann, 24, Motorradunfall/Hirnblutung, kein Organspendeausweis — konsistent über alle 5 Phasen. Keine doppelten stepId, keine fremde patientId (Panel-Lens 4 = 0)."
     },
-    "5_semantisch": {
-      "status": "PASS",
-      "geprueft": [
-        "Distraktor-vs-Empfehlung: Widerspruchsloesung, Alleingang-Arzt, Pflege-Freigabe, Zeitdruck/Zustimmung-Draengen erscheinen NUR als isCorrect:false und werden explizit korrigiert — 'lehrt ueber Falsches', empfiehlt es nicht.",
-        "Keine Pseudo-Empathie; ergebnisoffene Angehoerigenbegleitung korrekt modelliert (ueb-01).",
-        "Step-Typ-Pflichten erfuellt: MC-Explanations je Option, truefalse unzweideutig + Beleg, branching mit differenzierten Konsequenzen, reflection ohne Wahr/Falsch-Validierung + wertneutral, freetext mit fachlichen bewertungskriterien + vorbildlicher Musterantwort.",
-        "Anrede: Angehoerige/Patient gesiezt, 'du' nur an Lernende."
-      ]
+    "5_semantisch_pflegeValidator": {
+      "befund": "2 NIEDRIG (nicht-blockierend)",
+      "notiz": "Distraktor-vs-Empfehlung sauber getrennt; Pflege-drängt-nicht + ergebnisoffene Begleitung durchgehend; E1/E2 wertneutral; Step-Typ-Pflichten erfüllt; Anrede korrekt (Lernende 'du', keine Siez-Fehler)."
     }
   },
-  "befunde": [],
-  "beschaffung": [
+  "befunde": [
     {
-      "id": "B-01",
+      "id": "N1",
+      "lens": "2_recht_ethik_currency",
       "severity": "NIEDRIG",
-      "lens": "Recht & Ethik / Grounding",
-      "titel": "Entscheidung der Angehoerigen nach mutmasslichem Willen (§ 4 TPG) nicht verbatim in Kernfakten",
-      "detail": "erm-01/ueb-01 lehren korrekt, dass bei fehlender eigener Entscheidung die naechsten Angehoerigen nach dem mutmasslichen Willen einbezogen werden. Das ist geltendes Recht (§ 4 TPG), aber in den Kernfakten nur ueber F-03 ('Arzt unterrichtet Angehoerige') + F-05 gestuetzt, nicht verbatim als 'mutmasslicher Wille'. Fachlich korrekt, kein Fehler — Grounding koennte mit § 4 TPG-Beleg praeziser werden. NICHT erfinden; bei Bedarf verifizierten Beleg beschaffen.",
-      "empfehlung": "Optional: Kernfaktum um § 4 TPG (Angehoerigen-Entscheidung nach mutmasslichem Willen) mit verifiziertem Verbatim-Beleg ergaenzen."
+      "typ": "Currency-Beobachtung (nicht-blockierend, bewusste Leitplanke)",
+      "ort": "erm-01 / ala-00b — 'kein Organspendeausweis gefunden' → Angehörige/mutmaßlicher Wille",
+      "beschreibung": "Seit März 2024 existiert das bundesweite Organspende-Register; in heutiger Praxis bedeutet 'kein Ausweis' zusätzlich einen Registerabgleich, bevor auf den mutmaßlichen Willen der Angehörigen zurückgegriffen wird. Der Content bleibt bewusst auf Buchstand 2019/2020 und erfindet keine Register-Details (dokumentierte Leitplanke). Inhaltlich NICHT falsch — Entscheidungslösung + mutmaßlicher Wille gelten unverändert. Vormerkung für spätere Aktualisierung.",
+      "beleg": "Gesetz zur Stärkung der Entscheidungsbereitschaft bei der Organspende (in Kraft 2022), Organ- und Gewebespenderegister seit 18.03.2024; Buchstand: Pflege heute 2019 Kap. 43.14 / I care Pflege 2020 Kap. 7.6.5.",
+      "empfehlung": "Keine Änderung erforderlich. Optional: generischer Hinweis 'Register-/Ausweisabgleich' ohne erfundene Details, sobald verifizierter Beleg vorliegt — sonst BESCHAFFUNG."
     },
     {
-      "id": "B-02",
+      "id": "N2",
+      "lens": "5_semantisch_pflegeValidator",
       "severity": "NIEDRIG",
-      "lens": "Recht & Ethik / Currency",
-      "titel": "Organspende-Register (OGR, seit Maerz 2024) bewusst nicht erwaehnt",
-      "detail": "Buchstand 2019/2020 kennt das bundesweite Online-Organspende-Register (live seit Maerz 2024) noch nicht. Der Content laesst es korrekt weg statt es zu erfinden (Gruenderin-Regel eingehalten). Kein Currency-FEHLER, da die Entscheidungsloesung selbst weiter gilt. Fuer eine kuenftige Aktualisierung als Beschaffung vormerken — nur mit verifiziertem Beleg eintragen.",
-      "empfehlung": "Optional/spaeter: Register-Hinweis mit verifiziertem Beleg (TPG-Novelle 2020, OGR-Start 2024) ergaenzen; standards-currency.json ggf. um 'Zustimmungs-/Entscheidungsloesung' als aktuellen Stand dokumentieren."
+      "typ": "Doku-Diskrepanz (kosmetisch)",
+      "ort": "content/ce-06/glossar.ts (Zeilen 480-518) vs. Task-Beschreibung",
+      "beschreibung": "Task nennt '9 neue Glossar-Einträge'; im Code sind 8 vorhanden (Gesamthirntod, Transplantationsgesetz, Entscheidungslösung, mutmaßlicher Wille, Transplantationsbeauftragte, Lebendspende, postmortale Spende, Organmangel). Alle 8 fachlich korrekt und currency-sauber. Reine Zähl-Diskrepanz zwischen Doku und Code.",
+      "beleg": "content/ce-06/glossar.ts",
+      "empfehlung": "Zählangabe in der Redesign-Doku auf 8 korrigieren ODER 9. Eintrag ergänzen, falls beabsichtigt."
     }
-  ]
+  ],
+  "beschaffung": [],
+  "hinweis": "Panel = umfassende Vorlage, nicht das letzte Wort. Gründerin bleibt menschlicher Backstop und kann jeden Befund overrulen."
 }

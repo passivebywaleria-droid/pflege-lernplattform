@@ -1,0 +1,57 @@
+{
+  "ce": "ce-06",
+  "situation": "ls-yildiz-thoraxschmerz",
+  "titel": "Frau Yıldız, 62 — akuter Thoraxschmerz / Verdacht Herzinfarkt (REDESIGN: 3 Wissens-Tabs + KB-Marker)",
+  "datum": "2026-07-13",
+  "grounding": ["specs/ce-06/kernfakten/herz-kreislauf-akut.md (F-01..F-08)", "specs/ce-06/kernfakten/notfallassessment.md (F-07 SBAR)"],
+  "verdikt": "PASS",
+  "ko": false,
+  "lenses": {
+    "1_zahlen_arzneimittel": {"status": "PASS", "befunde": 0},
+    "2_recht_ethik": {"status": "PASS", "befunde": 0},
+    "3_dnqp_standard_grounding": {"status": "PASS_MIT_HINWEIS", "befunde": 1},
+    "4_konsistenz": {"status": "PASS", "befunde": 0},
+    "5_semantisch": {"status": "PASS", "befunde": 0}
+  },
+  "deterministische_prefilter": {
+    "klinik-panel.ts": "PASS (0 Befunde, HOCH 0 / MITTEL 0 / NIEDRIG 0)",
+    "pflege-anti-pattern-check.ts": "PASS (0 Funde)",
+    "step-grounding-check.ts": "PASS (0 DANGLING / 0 MISSING)",
+    "klinik-zahlen-check.ts": "PASS (0 Out-of-Range)"
+  },
+  "befunde": [
+    {
+      "id": "YILDIZ-SEM-01",
+      "lens": "3 (DNQP/Standard-Grounding) + 5 (semantisch)",
+      "severity": "MITTEL",
+      "ko": false,
+      "titel": "\"Zeit ist Herzmuskel\" + Herzkatheter/Reperfusion-Mechanismus ist medizinisch korrekt, aber NICHT durch die zitierten Kernfakten gedeckt",
+      "fundstellen": [
+        "ce06-yildiz-ala-00b-team-zeit (Tab C, kerntext): \"...der Merksatz Zeit ist Herzmuskel: Je schneller die ärztliche Versorgung (und im Krankenhaus die Eröffnung des verschlossenen Gefäßes im Herzkatheter) beginnt, desto mehr Herzmuskel bleibt erhalten.\"",
+        "ce06-yildiz-erk-01 (Option C explanation): \"...verschenkt beim Infarkt wertvolle Zeit ('Zeit ist Herzmuskel')\"",
+        "ce06-yildiz-ala-01 (richtige Option explanation): \"...zeitkritisch ('Zeit ist Herzmuskel', rasche Reperfusion im Herzkatheter)\"",
+        "ce06-yildiz-ueb-01 (SBAR-Musterlösung R): \"...bitte EKG und Herzkatheter-Anmeldung\"",
+        "ce06-yildiz-ref-01 (glossarBegriffe/prompt): \"Zeit ist Herzmuskel\""
+      ],
+      "beleg_pruefung": "Grep über herz-kreislauf-akut.md + notfallassessment.md: 'Zeit ist Herzmuskel', 'Herzkatheter', 'Reperfusion', 'verschlossenes Gefäß', 'Eröffnung' — NICHT vorhanden. F-03 belegt nur 'sofort Arzt + weitere Pflegefachperson' (Zeitkritik implizit über 'sofort'), aber NICHT den Reperfusions-Mechanismus, die Methode Herzkatheter/PCI oder den Merksatz.",
+      "einordnung": "Kein fachlicher Fehler: 'time is muscle' und die PCI (Herzkatheter) als Reperfusionsverfahren sind kardiologisch korrekt und Lehrbuch-Standard. Der Step-Grounding-Check schlägt nicht an, weil kernfaktId=[F-03,F-06,F-08] existieren (nicht dangling) — die mechanische Prüfung testet Ref-Existenz, nicht die semantische Deckung des KONKRETEN Claims. Genau diese Lücke ist Aufgabe des 5. Lens. Der Merksatz + Herzkatheter/Reperfusion sind ein ungegroundeter Mechanismus-/Instrument-Zusatz relativ zu F-03 (Gründerin-Regel: fehlende Quelle → Beschaffung, nichts erfinden).",
+      "fix": "Beschaffung: neuen Kernfakt (z.B. F-09) in herz-kreislauf-akut.md mit Verbatim-Beleg für 'Zeit ist Herzmuskel', Reperfusionstherapie/PCI/Herzkatheter beim STEMI/ACS aufnehmen (Pflege heute Kap. 21.2.1/21.5 oder I-care-Krankheitslehre Herzinfarkt/Reperfusion). Danach kernfaktId der Steps ala-00b/erk-01/ala-01/ueb-01 um F-09 ergänzen. Alternativ (Minimalvariante): Formulierung auf 'sofort' + 'zeitkritisch' reduzieren und den PCI-Mechanismus entfernen — didaktisch aber Verlust, daher Beschaffung bevorzugt.",
+      "in_beschaffung": true
+    }
+  ],
+  "beschaffung": [
+    {
+      "item": "Verbatim-Beleg für 'Zeit ist Herzmuskel' + Reperfusionstherapie/Herzkatheter (PCI) beim akuten Koronarsyndrom",
+      "grund": "In Tab C, erk-01, ala-01, ueb-01 autoritativ verwendet, aber in F-01..F-08 nicht belegt.",
+      "kandidat_quelle": "Pflege heute (7. Aufl.) Kap. 21.2.1/21.5 bzw. I-care Krankheitslehre (Herzinfarkt/Reperfusion) — Volltext, dann zitat-verifizierer.ts --check-file"
+    }
+  ],
+  "geprueft_ok": [
+    "Zahlen: RR<90 UND Puls>100 als Abbruch-Schwelle = F-07 verbatim ('Blutdruck < 90 mmHg und einem Puls > 100/Min. muss die Lagerung abgebrochen werden'). Branching-Werte RR 85/50 + Puls 112 lösen die Schwelle konsistent aus (85<90, 112>100).",
+    "Keine erfundenen Medikamenten-Dosen: O2/Nitro/Analgetika durchgängig nur qualitativ + 'auf Arztanordnung'. 'zwei Hübe Nitro' steht ausschließlich in einer als FALSCH markierten, verurteilten Distraktor-Aussage (kein gelehrter Dosierungs-Claim).",
+    "Kompetenzgrenze Pflege vs. Arzt korrekt (F-06): erkennen/lagern/überwachen/dokumentieren ja; O2/Nitro/Analgetika nein — konsistent in Tab C, erm-02 (truefalse), ala-01.",
+    "Recht/Currency: keine veraltete Norm (FeM/§1831 hier nicht einschlägig); keine autoritative Fehlreferenz.",
+    "Konsistenz: 62 J. / bekannte KHK+Angina / Diabetes / Hypertonie / 'Nitro half diesmal nicht' durchgängig identisch (erk-01, Tab A, Tab C, erm-02, SBAR). Oberkörper-hoch (richtig) vs. Schocklage (Distraktor) ohne Widerspruch. 11 eindeutige stepIds, keine Duplikate, keine fremde patientId (spektrum situationsId = ls-yildiz-thoraxschmerz).",
+    "Semantisch: alle Falsch-Optionen (Schocklage beim Herz, eigenmächtig Nitro/O2, Abwarten, noch höher lagern, 'Diabetiker bekommen keine Infarkte', 'wird schon wieder') sind reine Distraktoren mit korrektiver, standardsbelegter Erklärung — keine als Empfehlung getarnte Falschaussage. Pseudo-Empathie ('wird schon wieder') konsequent als Anti-Beispiel geframt (F-08: nicht falsch beruhigen)."
+  ]
+}

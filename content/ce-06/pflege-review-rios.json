@@ -1,0 +1,70 @@
+{
+  "situationId": "ls-rios-synkope",
+  "geprueft": "2026-07-13",
+  "file": "content/ce-06/situationen/ls-rios-synkope/phases.ts",
+  "grounding": [
+    "specs/ce-06/kernfakten/neurologische-akutsituationen.md (F-01..F-13)",
+    "specs/ce-06/kernfakten/notfallassessment.md (F-07 = SBAR)"
+  ],
+  "fokus": "Variante-D-Redesign: erk-01b, ref-00b, ref-00c, ref-00d",
+  "stepAnzahl": 11,
+  "mechanisierteChecks": {
+    "zitatVerifizierer": "PASS (19/19 Belege verbatim-verifiziert)",
+    "stepGroundingCheck": "PASS (11 claim-tragend / 11 gegroundet, 0 dangling)",
+    "antiPatternCheck": "PASS (keine Treffer in Ríos)"
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "NIEDRIG",
+      "step": "ce06-rios-ref-00b-neuro-differenzial",
+      "phase": "reflektieren",
+      "titel": "Synkope-Beschreibung unterschlägt die gefährliche kardiale Synkope",
+      "stelle": "phases.ts Zeile 558 (kerntext) + 563-567 (spektrum Synkope)",
+      "problem": "'Der Kreislauf fängt sich von allein' reduziert die Synkope auf die harmlose vasovagale Form. F-01: Synkope ist Symptom, keine Diagnose, Ursache klären. F-02: kardiale Synkope ist gefährlich und muss abgeklärt werden.",
+      "standardVerweis": "F-01/F-02 (Pflege heute Kap. 21.2.3)",
+      "empfehlung": "Halbsatz ergänzen: '... wieder wach — aber die Ursache muss geklärt werden (kardiale Synkope kann gefährlich sein).'"
+    },
+    {
+      "id": "F-02",
+      "severity": "NIEDRIG",
+      "step": "ce06-rios-erm-03",
+      "phase": "erstmassnahmen",
+      "titel": "B1-Erklärung priorisiert die stabile Seitenlage schwächer als die C1-Option",
+      "stelle": "phases.ts Zeile 416 (Option C1) vs. 420-421 (explanationB1)",
+      "problem": "C1: 'stabile Seitenlage (Atemwegsschutz) hat Vorrang'. B1 dreht um: 'Flach lagern und Beine hoch ... Wenn er nicht sicher wach ist, kommt er in die stabile Seitenlage.' Er IST bereits bewusstseinsgetrübt (nur Schmerzreiz) → Seitenlage nach F-06 schon jetzt indiziert, nicht konditional.",
+      "standardVerweis": "F-06 (Pflege heute Kap. 14/5.5)",
+      "empfehlung": "B1 angleichen: 'Weil er nur auf Schmerz reagiert, kommt er in die stabile Seitenlage (Atemwege frei). Beine hoch hilft zusätzlich dem Kreislauf.'"
+    },
+    {
+      "id": "F-03",
+      "severity": "NIEDRIG",
+      "step": "ce06-rios-erm-03",
+      "phase": "erstmassnahmen",
+      "titel": "Realismus — Seitenlage am laufenden Dialysezugang",
+      "stelle": "phases.ts Zeile 416, 419",
+      "problem": "Stabile Seitenlage + Beine hoch am angeschlossenen Dialysestuhl (Shunt/Blutlinien) ist praktisch nur nach geordnetem Abbruch möglich. Zugangs-Vorbehalt nur beim Beine-Hochlegen genannt, nicht bei der Seitenlage.",
+      "standardVerweis": "Realitätscheck (kein DNQP-Verweis)",
+      "empfehlung": "Optional Zugangs-Vorbehalt auch auf Seitenlage beziehen bzw. erwähnen, dass Dialyse dafür nach ärztlicher Anordnung reduziert/beendet wird. Kein Fehler."
+    },
+    {
+      "id": "F-04",
+      "severity": "NIEDRIG",
+      "step": "ce06-rios-ref-00d-krampfanfall",
+      "phase": "reflektieren",
+      "titel": "Status-epilepticus-Schwelle (10-15 Min) ist die konservative Lehrbuch-Fassung",
+      "stelle": "phases.ts Zeile 680 (explanation)",
+      "problem": "'über ~10-15 Min' ist F-12/Pflege-heute-treu, aber nicht die aktuelle ILAE-Operationaldefinition (t1 = 5 Min). Handlungsanweisung bleibt sicher, da die richtige Option bereits 'über wenige Minuten' als Trigger nennt.",
+      "standardVerweis": "F-12 (Pflege heute Kap. 37.8.2); Hinweis ILAE 5 Min aktueller",
+      "empfehlung": "Belassen (quellenbelegt) oder relativieren: '(neuere Definitionen setzen bereits bei ~5 Min an)'. Kein Sicherheitsrisiko."
+    }
+  ],
+  "crossStep": "Keine Probleme. Patientendaten (63, Diabetiker/Insulin, BZ 48->120, Shunt intakt) durchgehend konsistent. Rollenabgrenzung (Glukose i.v. ärztlich, Shunt-Schutz) einheitlich. kernfaktId-Mapping korrekt (ueb-01 F-07 = notfallassessment/SBAR, nicht Kopftieflage-F-07).",
+  "zusammenfassung": {
+    "hoch": 0,
+    "mittel": 0,
+    "niedrig": 4,
+    "beobachtung": "Standardsbelegte Situation, vorbildliche Rollenabgrenzung, Beißkeil korrekt als obsolet gelehrt, keine Pseudo-Empathie, FAST bewusst vermieden. Alle 4 neuen Steps fachlich korrekt und gegroundet. NIEDRIG-Findings sind Feinschliff.",
+    "verdikt": "PASS"
+  }
+}

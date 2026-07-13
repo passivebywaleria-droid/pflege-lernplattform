@@ -1,0 +1,92 @@
+{
+  "situationId": "ls-kortmann-abdomen",
+  "ce": "ce-06",
+  "le": "LE3",
+  "geprueft": "2026-07-13",
+  "modus": "code",
+  "files": [
+    "content/ce-06/situationen/ls-kortmann-abdomen/phases.ts",
+    "specs/ce-06/kernfakten/abdomen-stoma-drainagen.md",
+    "specs/ce-06/kernfakten/notfallassessment.md",
+    "content/ce-06/glossar.ts"
+  ],
+  "stepCount": 14,
+  "stepBreakdown": {
+    "mc": 5,
+    "branching": 3,
+    "truefalse": 1,
+    "pflegewagen": 1,
+    "reflection": 1,
+    "freetext": 1,
+    "inlineWissen": 3
+  },
+  "mechanizedChecks": {
+    "antiPatternCheck": "PASS (keine Treffer für kortmann)",
+    "stepGrounding": "PASS (15 claim-tragend / 15 gegroundet)"
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "NIEDRIG",
+      "phase": "alarmieren",
+      "stepId": "ce06-kortmann-ala-00b-drainagen-verstehen",
+      "titel": "'niemals einen kräftigen Sog' schwächt Sog-Verbot minimal auf",
+      "problem": "kerntext-Schlusssatz sagt 'niemals einen kräftigen Sog' — impliziert unbeabsichtigt, milder Sog sei ok; faustregel/spektrum/ala-01 sagen konsequent 'OHNE Sog' (F-07).",
+      "standard": "Paetz Kap. 7.5.1 / F-07",
+      "fix": "'niemals einen kräftigen Sog' -> 'niemals einen Sog' / 'läuft grundsätzlich sogfrei'."
+    },
+    {
+      "id": "F-02",
+      "severity": "NIEDRIG",
+      "phase": "erstmassnahmen",
+      "stepId": "ce06-kortmann-erm-03",
+      "titel": "Schock-/Flachlagerung als pflegerische Sofortmaßnahme fehlt",
+      "problem": "Score-3-Option nennt melden/Volumen/überwachen, aber nicht Flach-/Schocklagerung (Autotransfusionslage) beim beginnenden hypovolämischen Schock; Distraktor 3 entlarvt 'aufsetzen' nur über nüchtern, nicht über falsche Lagerung.",
+      "standard": "Paetz Kap. 12.5/12.6 (Schock)",
+      "fix": "Flach lagern / Beine erhöht + warm halten in Musterantwort ergänzen; falsche aufrechte Lagerung im Distraktor benennen."
+    },
+    {
+      "id": "F-03",
+      "severity": "NIEDRIG",
+      "phase": "erstmassnahmen",
+      "stepId": "ce06-kortmann-erm-02",
+      "titel": "Wärmflasche-Begründung könnte Kernmechanismus benennen",
+      "problem": "Item korrekt in 'weglegen'; Begründung ausreichend, aber der eigentliche Grund (Wärme -> Vasodilatation kann Blutung verstärken/maskiert Bauchsymptome) fehlt.",
+      "standard": "Paetz Kap. 12.6",
+      "fix": "Ergänzen: 'Wärme kann Durchblutung/Blutung verstärken und Bauchsymptome verschleiern — bei akutem Abdomen kontraindiziert.'"
+    },
+    {
+      "id": "F-04",
+      "severity": "NIEDRIG",
+      "phase": "uebergeben",
+      "stepId": "ce06-kortmann-ueb-01",
+      "titel": "SBAR-Distraktor 2 grenzwertig karikiert",
+      "problem": "Falsch-Option 2 ('macht euch da unten mal bereit für ihn') rutscht sprachlich leicht ins Karikaturhafte; inhaltlich plausibler Fehler (fehlende Fakten).",
+      "standard": "SBAR (Leonard 2004)",
+      "fix": "Umgangssprachlichen Schluss optional neutraler fassen; belassbar."
+    }
+  ],
+  "crossStepKonsistenz": {
+    "patientDaten": "konsistent (72 J., 2. postop Tag Not-Hartmann, Kolostoma links, Zieldrainage ohne Sog + Redon, Blasenkatheter)",
+    "sogVerbotBauchdrainage": "konsistent (nur F-01 Wording NIEDRIG)",
+    "drainageNichtZiehen": "konsistent (Tab B/C explizit, ala-02 Distraktor)",
+    "nuechtern": "konsistent (F-04 durchgehend)",
+    "stomaFarblogik": "konsistent (Tab A/erk-04/Tab C: rosig-rot vital / livide Durchblutungsstörung / grau-schwarz Nekrose; kein Massieren)",
+    "timeline": "sauber (stabiler Tag + Frühmobilisation -> dann Nachblutung; kein Routine-Wechsel/Mobilisation während Blutung)"
+  },
+  "beobachtungen": {
+    "pseudoEmpathieBias": false,
+    "sandwichFeedback": true,
+    "distraktorRealismus": "hoch (Anti-Patterns nur als Falsch-Optionen)",
+    "standardsBezug": "durchgängig belegt, Grounding 15/15",
+    "duAnrede": "korrekt (Lernende du, Patient Sie)",
+    "b1Angemessenheit": "gut; truefalse ohne explanationB1 = projektweite CE-06-Konvention (kein Finding)",
+    "glossarChips": "mehrere glossarBegriffe ohne Glossar-Eintrag, aber nicht-interaktive Chips + projektweites Muster (auch gruber) -> kein kortmann-spezifischer Defekt; Empfehlung: zentrale Begriffe (viszeraler Schmerz, Nozizeptoren, Mazeration, Nekrose, Peristaltik, Patientenedukation) ergänzen"
+  },
+  "zusammenfassung": {
+    "hoch": 0,
+    "mittel": 0,
+    "niedrig": 4
+  },
+  "verdikt": "PASS"
+}

@@ -1,0 +1,94 @@
+{
+  "situationId": "ls-wagner-reanimation",
+  "ce": "ce-06",
+  "geprueft": "2026-07-12",
+  "modus": "code",
+  "fokus": "neue/geaenderte Wissens-Tabs + Anwendungs-Steps (4 inlineWissen, 2 mc, 1 reflection)",
+  "file": "content/ce-06/situationen/ls-wagner-reanimation/phases.ts",
+  "groundingQuellen": [
+    "specs/ce-06/kernfakten/reanimation-bls.md",
+    "specs/ce-06/kernfakten/kpr-indikation-recht-ethik.md",
+    "specs/ce-06/kernfakten/notfallassessment.md"
+  ],
+  "mechanisierteChecks": {
+    "pflege-anti-pattern-check": "0 Treffer in ls-wagner-reanimation",
+    "standards-currency-check": "PASS — keine veraltete Norm autoritativ verwendet (§1827/§323c/§221 aktuell)"
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "NIEDRIG",
+      "titel": "Terminologie: 'Rettungskette' vs. 'Ueberlebenskette' fuer die 4-Glieder-Kette",
+      "steps": ["ce06-wagner-erk-01b-hks-erkennen", "ce06-wagner-ala-00b-rettungskette"],
+      "stelle": "phases.ts Z. 112 (erk-01b kerntext), Z. 230-231 (ala-00b kerntext), Z. 215/221 glossarBegriffe",
+      "problem": "Der Content nennt die 4-gliedrige ERC-Kette (erkennen, alarmieren, druecken, defibrillieren) durchgehend 'Rettungskette'. Die repo-Quelle notfallmedizin-index/kap-rea.md nutzt 'Rettungskette' fuer den BLS-Ablauf (Deckung vorhanden), ABER pruefungswissen-index/kap-34.md fragt explizit 'die vier Schritte der Ueberlebenskette'. In Pruefungen ist die 4-Glieder-ERC-Kette meist 'Ueberlebenskette'; 'Rettungskette' bezeichnet klassisch (DRK-Erste-Hilfe) eine 5-gliedrige Kette. Ein pruefungsorientierter Schueler koennte den Begriff mit einer Pruefungsfrage nicht matchen.",
+      "standardVerweis": "ERC 2021 (Chain of Survival = Ueberlebenskette); pruefungswissen-index/kap-34.md",
+      "empfehlung": "Entweder 'Ueberlebenskette' verwenden ODER beide Begriffe einmal gleichsetzen ('Ueberlebenskette, auch Rettungskette genannt'). Inhaltlich (4 Glieder, phone-first-Reihenfolge) ist alles korrekt — nur die Benennung praezisieren.",
+      "harm": false
+    },
+    {
+      "id": "F-02",
+      "severity": "NIEDRIG",
+      "titel": "'haeufigster Ausloeser' Kammerflimmern — Praezision (Rhythmus vs. Ursache)",
+      "steps": ["ce06-wagner-ala-00b-rettungskette"],
+      "stelle": "phases.ts Z. 231 (ala-00b kerntext, letzter Absatz)",
+      "problem": "Formulierung: 'Der haeufigste Ausloeser eines ploetzlichen Stillstands beim Erwachsenen ist das Kammerflimmern.' Kammerflimmern ist ein RHYTHMUS, nicht die Ursache (Ausloeser ist meist Myokardischaemie/-infarkt). Kernfakt F-11 formuliert praeziser: 'haeufigste INITIALE Rhythmus beim ploetzlichen Herztod'. 'Ausloeser' koennte die Fehlvorstellung 'VF = Ursache' stuetzen. (Hinweis: innerklinisch/Normalstation sind nicht-schockbare Rhythmen sogar haeufiger — hier aber beobachteter ploetzlicher Kollaps + AED 'Schock empfohlen', VF also plausibel.)",
+      "standardVerweis": "reanimation-bls.md F-11 (haeufigster initialer Rhythmus beim ploetzlichen Herztod des Erwachsenen)",
+      "empfehlung": "Wortlaut an F-11 angleichen: 'der haeufigste (schockbare) initiale Herzrhythmus beim ploetzlichen Herztod des Erwachsenen ist das Kammerflimmern' statt 'Ausloeser'.",
+      "harm": false
+    },
+    {
+      "id": "F-03",
+      "severity": "NIEDRIG",
+      "titel": "quellen-Feld der Wissens-Tabs ala-00b/erm-00b listet nur 'ERC-Leitlinien 2021'",
+      "steps": ["ce06-wagner-ala-00b-rettungskette", "ce06-wagner-erm-00b-no-flow", "ce06-wagner-erk-01b-hks-erkennen"],
+      "stelle": "phases.ts Z. 87, 206, 345 (quellen-Arrays)",
+      "problem": "Die Tabs sind laut Code-Kommentar auf F-04/F-05/F-11 bzw. F-06/F-07/F-08 (Pflege heute Kap. 14.3.1/14.3.2) gegroundet, das quellen-Feld nennt aber nur 'ERC-Leitlinien 2021'. Kein Fachfehler, aber die Primaerquelle (Pflege heute), aus der die Kernfakten verbatim belegt sind, fehlt im sichtbaren Quellennachweis.",
+      "standardVerweis": "reanimation-bls.md (Verbatim-Belege aus pflege-heute-volltext)",
+      "empfehlung": "Pflege heute 2019, Kap. 14.3.1/14.3.2 in die quellen-Arrays ergaenzen (konsistent zu den uebrigen reanimation-Steps, die beide Quellen fuehren).",
+      "harm": false
+    },
+    {
+      "id": "F-04",
+      "severity": "NIEDRIG",
+      "titel": "Distraktor 'Zugang legen = aerztliche Aufgabe' — Vereinfachung",
+      "steps": ["ce06-wagner-ueb-02-als-rolle"],
+      "stelle": "phases.ts Z. 732-737 (Option 3 + explanation)",
+      "problem": "Die explanation stellt 'einen Zugang zu legen' pauschal als aerztliche Aufgabe dar. Ein periphervenoeser Zugang ist grundsaetzlich delegierbare Behandlungspflege (bei entsprechender Qualifikation/Anordnung). Fuer eine PflegeSCHUELERIN in der Reanimation ist eigenmaechtiges Zugang-Legen + eigenmaechtiges Spritzen von Adrenalin klar falsch — die Kernaussage (nicht eigenmaechtig spritzen/anordnen) bleibt korrekt und deckungsgleich mit F-12.",
+      "standardVerweis": "reanimation-bls.md F-12 ('legt der Arzt einen venoesen Zugang'); Rollenabgrenzung Anordnung/Durchfuehrung",
+      "empfehlung": "Optional praeziser: nicht 'Zugang legen ist aerztlich' absolut, sondern Kern auf 'eigenmaechtig anordnen + spritzen' legen ('Adrenalin anzuordnen und zu verabreichen ist aerztlich; du ziehst nach Anordnung auf, entscheidest/spritzt nicht eigenmaechtig'). Kein Muss.",
+      "harm": false
+    },
+    {
+      "id": "F-05",
+      "severity": "NIEDRIG",
+      "titel": "themenSekundaer doppelt gesetzt (Step-Ebene + inlineWissen)",
+      "steps": ["ce06-wagner-ueb-01b-als"],
+      "stelle": "phases.ts Z. 642 (Step-Ebene) und Z. 653 (im inlineWissen)",
+      "problem": "themenSekundaer: ['notfallassessment'] steht sowohl auf Step-Ebene als auch im inlineWissen-Objekt. Die anderen inlineWissen-Tabs fuehren es nur im inlineWissen. Reine Struktur-Redundanz, kein pflege-fachlicher Fehler.",
+      "standardVerweis": "-",
+      "empfehlung": "Doppelung entfernen (an einer Stelle belassen), Konsistenz zu den uebrigen Tabs. Fuer die deterministischen Lenses / Schema-Check relevant, nicht fuer den Fachinhalt.",
+      "harm": false
+    }
+  ],
+  "positivBefunde": [
+    "KPR-Indikation / Patientenwille (ref-00b-kpr-recht + Frau-Kellner-MC): fachlich UND rechtlich korrekt. 'Im Zweifel reanimieren', Verzicht nur bei gueltiger Patientenverfuegung + aerztlicher Anordnung; Pflege entscheidet NICHT allein. Frau-Kellner-Fall enthaelt bewusst beide Bedingungen (gueltige PV + aerztl. Verzichtsanordnung) → unzweideutiger Gegenfall zu Wagner.",
+    "Rechtsstand aktuell: § 1827 BGB (Patientenverfuegung, seit Betreuungsrechtsreform 2023 — NICHT § 1901a), § 323c StGB (unterlassene Hilfeleistung), § 221 StGB (Aussetzung, anvertraute Person). standards-currency-check PASS.",
+    "Rollenabgrenzung Pflege/Arzt (als-Tab + als-rolle-MC) sauber: HDM/Assistenz = Pflege; Zugang/Medikamenten-Anordnung = Arzt; Pflege zieht nach Anordnung auf und spritzt NICHT eigenmaechtig. 'ALS ersetzt BLS nicht, es baut darauf auf' korrekt (F-12).",
+    "BLS-Technik korrekt und ERC-2021-konform: 5-6 cm, 100-120/min, vollstaendige Entlastung, harte Unterlage, 30:2, nach Schock ohne Puls-Check sofort weiter, Helferwechsel ca. alle 2 Min (F-06/F-07/F-08).",
+    "Phone-first + Einzelhelfer-Prinzip korrekt (F-04/F-05): erst Notruf/Team, dann sofort HDM, Patient NICHT verlassen um AED zu holen; zu zweit Delegation namentlich (Zuschauer-Effekt adressiert).",
+    "Schnappatmung/keine Pulskontrolle (F-01/F-02/F-03) korrekt: agonale Atmung zaehlt NICHT als Atmung; keine routinemaessige Pulskontrolle vor Reanimationsbeginn.",
+    "AED durch Pflegeschuelerin/Laien ist bestimmungsgemaess (kein Rollenkonflikt); Elektrodenposition anterolateral korrekt; 'Alle weg!' + Sichtkontrolle vor Schock korrekt.",
+    "KB-Marker (kernfaktId) aller neuen Steps decken sich mit den Kernfakt-Inhalten; SBAR-Step loest korrekt ueber themaPrimaer notfallassessment/F-07 auf.",
+    "Distraktoren durchweg plausible Anfaengerfehler (kein Karikatur-Bias); explanation/feedback fuer JEDE Option gefuellt, Sandwich in B1-Feedback vorhanden.",
+    "Reflexions-Steps (ref-01 Belastung/Debriefing, ref-03 Notfallplan) mit fachlich fundierten systemPrompt-Bewertungskriterien; validierender, nicht bagatellisierender Umgang mit der weinenden Schuelerin gefordert."
+  ],
+  "crossStep": "Keine Inkonsistenzen. Patientendaten (Wagner 67, instab. Angina, 2 Infarkte, VHF unter Apixaban) nur in SBAR-Step, widerspruchsfrei. Rettungskette 4 Glieder in erk-01b und ala-00b identisch. No-Flow-Prinzip konsistent ueber alle Phasen. Cross-Link Frau Rios (ls-rios-synkope) existiert.",
+  "zusammenfassung": {
+    "hoch": 0,
+    "mittel": 0,
+    "niedrig": 5,
+    "beobachtungen": "Kein Pseudo-Empathie-Bias, kein Anti-Pattern-Treffer. Standards- und Rechtsbezug explizit und aktuell. Rollenabgrenzung Pflege/Arzt didaktisch sauber. Alle Findings sind Praezisions-/Doku-/Struktur-Feinschliff, keine sicherheitsrelevanten Fehler.",
+    "koVerdikt": "PASS"
+  }
+}

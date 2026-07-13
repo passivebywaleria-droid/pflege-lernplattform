@@ -74,3 +74,61 @@ Eine Kopftieflage ist bei akuter Atemnot, erhöhtem Hirndruck oder Übelkeit kon
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Kopftieflage sind bei Krankheitsbildern mit akuter Atemnot, erhöhtem Hirndruck oder bei Übelkeit kontraindiziert"
 - Primärquelle: (Pflege heute 2019, Kap. 15/Positionierung)
+
+### F-08: Schlaganfall — plötzlicher, schlagartiger Ausfall von Hirnfunktionen
+Typisch für einen Schlaganfall ist der plötzliche, „schlagartige" Ausfall von Hirnfunktionen. Leitsymptome beim häufigen Großhirninfarkt sind eine (meist unvollständige) Halbseitenlähmung, halbseitige Sensibilitätsstörungen, Sehstörungen und Sprachstörungen (Aphasie) — typischerweise auf einer Körperseite.
+
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Ausfall von Hirnfunktionen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "vollständige Halbseitenlähmung"
+- Primärquelle: (Pflege heute 2019, Kap. 37.6.2)
+
+### F-09: Schlaganfall ist ein Notfall — „time is brain"
+Bei Verdacht auf Schlaganfall gilt: sofort handeln. Je früher die Therapie beginnt, desto größer die Chance, dass sich das noch nicht abgestorbene Randgebiet (Penumbra) erholt — „time is brain". Erstmaßnahmen: Vitalzeichen/Atmung sichern, Arzt verständigen (lassen), Akutdiagnostik (CT/MRT) organisieren.
+
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Erstmaßnahmen bei Verdacht auf Schlaganfall sind"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "time is brain"
+- Primärquelle: (Pflege heute 2019, Kap. 37.6.4)
+
+### F-10: Grand-mal-Anfall — tonisch-klonischer Ablauf
+Ein generalisierter tonisch-klonischer Anfall (Grand mal) beginnt meist mit Sturz zu Boden, evtl. Initialschrei und Bewusstlosigkeit; es folgt die tonische Phase (steif gestreckte Glieder, kurzer Atemstillstand, Blauwerden) und danach die klonische Phase mit Zuckungen am ganzen Körper, evtl. Zungenbiss und Urin-/Stuhlabgang.
+
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "tonisch-klonischen Anfall"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "klonische Phase mit Zuckungen am ganzen Körper"
+- Primärquelle: (Pflege heute 2019, Kap. 37.8.2)
+
+### F-11: Erste Hilfe im Anfall — schützen, NICHTS in den Mund, nicht einflößen
+Im Anfall wird der Patient vor Verletzungen geschützt (scharfkantige Gegenstände aus der Umgebung entfernen, von Gefahren wegziehen), nicht allein gelassen und der Arzt benachrichtigt. Ein Gegenstand/Beißkeil zwischen die Zähne wird NICHT mehr empfohlen (Verletzungsgefahr), und es werden keine Flüssigkeiten oder Medikamente oral eingeflößt (Aspirationsgefahr).
+
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "scharfkantige Gegenstände aus der"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Gummikeils o. Ä. zwischen die Zähne"
+- Primärquelle: (Pflege heute 2019, Kap. 37.8.2)
+
+### F-12: Status epilepticus — lebensbedrohlicher Notfall (Handlungsschwelle 5 Min)
+Ein sehr langer Anfall oder eine Serie von Anfällen ohne zwischenzeitliche Erholung ist ein lebensbedrohlicher Status epilepticus und muss immer medikamentös unterbrochen werden. Als Handlungsschwelle gilt beim Erwachsenen ein generalisierter (tonisch-klonischer) Anfall, der länger als 5 Minuten dauert. Dann Notruf/Arzt und Notfallmaterial.
+
+**Beleg:**
+- Quelle: `icare-krankheitslehre-volltext/icare-krankheitslehre.txt`
+- Zitat: "Dauert der Anfall länger als 5 Minuten, handelt es sich um einen"
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "Der lebensbedrohliche Status epilepticus"
+- Primärquelle: (I care Krankheitslehre 2020, Kap. 17.8; ILAE-Definition Trinka et al. 2015, Epilepsia 56:1515–1523; Pflege heute 2019, Kap. 37.8.2)
+
+### F-13: Neuro-Differenzial — Synkope und Hypoglykämie können einen Anfall imitieren
+Nicht jeder Krampf ist Epilepsie und nicht jede Halbseitensymptomatik ein Schlaganfall: Auch eine Synkope kann mit Zuckungen einhergehen (konvulsive Synkope), und eine Hypoglykämie kann einen Schlaganfall imitieren. Deshalb bei jeder neurologischen Akutsituation den Blutzucker sofort messen (s. F-04) und an die Differenzialdiagnosen denken.
+
+**Beleg:**
+- Quelle: `pflege-heute-volltext/pflege-heute.txt`
+- Zitat: "konvulsive Synkope"
+- Primärquelle: (Pflege heute 2019, Kap. 37.8.2 + 26.6.5)

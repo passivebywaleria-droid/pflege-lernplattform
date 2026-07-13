@@ -1,0 +1,68 @@
+{
+  "situation": "ls-yildiz-thoraxschmerz",
+  "ce": "ce-06",
+  "geprueft": "2026-07-13",
+  "files": ["content/ce-06/situationen/ls-yildiz-thoraxschmerz/phases.ts"],
+  "grounding": "specs/ce-06/kernfakten/herz-kreislauf-akut.md",
+  "vorChecks": {
+    "antiPattern": "0 Treffer",
+    "stepGrounding": "PASS (10/10 claim-tragend)",
+    "standardsCurrency": "0 Treffer"
+  },
+  "stepAnzahl": 11,
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "MITTEL",
+      "step": "ce06-yildiz-ala-00b-team-zeit",
+      "typ": "inlineWissen",
+      "titel": "'Zeit ist Herzmuskel' + Herzkatheter-Reperfusion nicht durch zitierte kernfaktId (F-03/F-06/F-08) gedeckt",
+      "stelle": "phases.ts Z. 249-252; wiederkehrend Z. 312 (ala-01), Z. 83 (erk-01 Opt C)",
+      "problem": "Claim 'je schneller die Eroeffnung des verschlossenen Gefaesses im Herzkatheter, desto mehr Herzmuskel erhalten' + Merksatz 'Zeit ist Herzmuskel' ist fachlich korrekt, aber weder in F-03/F-06/F-08 noch in F-01..F-08 der Kernfakten enthalten. Step-grounding-check prueft nur Aufloesbarkeit, nicht Stuetzung des konkreten Claims.",
+      "standard": "Step-Level-Grounding W2/W5 + Stuetzt-Check; Regel 'Kein erfundener Content'",
+      "fix": "Kernfakt F-09 (Reperfusion/PCI/Zeit-ist-Herzmuskel) verbatim aus Pflege heute Kap. 21.5 ergaenzen, zitat-verifizierer gruen, dann kernfaktId in Tab C/ala-01/erk-01 um F-09 erweitern. Alternativ Reperfusions-Satz auf gegroundete Zeitkritik reduzieren."
+    },
+    {
+      "id": "F-02",
+      "severity": "MITTEL",
+      "step": "ce06-yildiz-erk-01 / ce06-yildiz-ref-01",
+      "typ": "mc / reflection",
+      "titel": "'Diabetiker/Frauen — erhoehtes Risiko + atypische/abgeschwaechte Symptome' nicht gegroundet",
+      "stelle": "phases.ts Z. 75-77 (erk-01 Opt B), Z. 667-671 (ref-01 prompt/systemPrompt)",
+      "problem": "Fachlich korrekt, aber nicht in F-01..F-08. Im Reflexions-systemPrompt sogar bewertungsrelevant (KI bewertet gegen ungegroundete Aussage).",
+      "standard": "Grounding-Disziplin; nichts Erfundenes in systemPrompt",
+      "fix": "Kernfakt zu stummem/atypischem Infarkt bei Diabetikern + atypischen Symptomen bei Frauen (Pflege heute Kap. 21.5) belegen und mappen; bis dahin fachlich unbedenklich, grounding-offen."
+    },
+    {
+      "id": "F-03",
+      "severity": "NIEDRIG",
+      "step": "ce06-yildiz-ala-00b-team-zeit / ce06-yildiz-erm-02",
+      "typ": "inlineWissen / truefalse",
+      "titel": "'Bei niedrigem RR kann erneutes Nitro den Kreislauf gefaehrlich absenken' — Herleitung, kein zitierter Fakt",
+      "stelle": "phases.ts Z. 250, Z. 495",
+      "problem": "Pharmakologisch korrekt (Nitrat-Kontraindikation bei Hypotonie), aber eigenstaendiger Claim nicht direkt gegroundet; plausibel aus F-01 + F-07 hergeleitet.",
+      "standard": "Grounding-Disziplin",
+      "fix": "Optional Kernfakt Nitrat-Kontraindikation Hypotonie ergaenzen; sonst als abgeleitete Begruendung belassen — keine fachliche Korrektur noetig."
+    },
+    {
+      "id": "F-04",
+      "severity": "NIEDRIG",
+      "step": "ce06-yildiz-ueb-01",
+      "typ": "mc",
+      "titel": "kernfaktId ['F-07'] fuer SBAR-Step semantisch lose",
+      "stelle": "phases.ts Z. 581-582",
+      "problem": "SBAR ueber Leonard 2004 belegt; F-07 (Lagerungs-Abbruch) deckt nur den Assessment-Teil der Musterantwort. Grounding-Check passt, aber loser Anker.",
+      "standard": "Grounding-Konsistenz",
+      "fix": "Falls SBAR-Kernfakt in notfallassessment.md existiert, zusaetzlich taggen; sonst belassen."
+    }
+  ],
+  "crossStep": "Keine Inkonsistenzen. Patientendaten (62, KHK/Angina/Diabetes/Hypertonie, Nitro ohne Besserung) und Vitalwert-Schwelle (F-07: RR<90 & Puls>100 -> 85/50 & 112 in erm-03/ueb-01) konsistent. Schocklage korrekt als kardial-falsch gelehrt.",
+  "kbMarker": "Plausibel: I.4 Erkennen/Lagern, III.2 Alarmierung/Kompetenzgrenze/Team, II.1 SBAR, V.2 Reflexion. Keine Fehlzuordnung.",
+  "zusammenfassung": {
+    "hoch": 0,
+    "mittel": 2,
+    "niedrig": 2,
+    "beobachtung": "Kein Pseudo-Empathie-Bias, kein fachlicher Fehler, du-Anrede durchgaengig, Sandwich-Feedback vorhanden, Distraktoren plausibel+widerlegt. Einziger systematischer Punkt: Grounding (nicht Fachlichkeit) — fachlich korrekte, aber in Kernfakten nicht hinterlegte Claims (Zeit-ist-Herzmuskel/Reperfusion, atypische Symptome Diabetiker/Frauen)."
+  },
+  "verdikt": "PASS"
+}

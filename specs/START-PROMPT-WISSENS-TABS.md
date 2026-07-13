@@ -13,15 +13,41 @@ Pflege-Lernplattform. Wir haben die Methodik gemeinsam festgelegt — halte dich
 exakt daran, keine Abkürzungen, nichts raten.
 
 PFLICHT-LEKTÜRE ZUERST (in dieser Reihenfolge, bevor du irgendetwas schreibst):
+0. specs/DIDAKTIK-WISSENSNETZ.md — der didaktische Leitfaden (Grundlagen + Leitprinzip
+   „ein Kern-Wissen, mehrere Begegnungen" + Ideen-Katalog). Gilt für JEDE CE.
+   Pro LE zuerst die Wissens-Verteilungs-Karte bauen (Muster: specs/ce-06/WISSENS-VERTEILUNG-LE1.md).
+0b. specs/CROSS-CE-KONZEPTREGISTER.md — das Spiralcurriculum über alle 11 CE. NUR LESEN,
+   nicht in die Master-Tabelle schreiben. Prüfe: Wo ist DEINE CE Heimat eines Querschnitts-
+   Konzepts (tief lehren)? Wo Wiederbegegnung (kurz anknüpfen + Bloom höher + Rückverweis
+   „kennst du aus CE-X")? Neue Querschnitts-Ideen unten in „Vorschläge (append-only)".
 1. specs/ce-06/PLAN-WISSENS-TABS-CE06.md  — die verbindliche Methodik (Abschnitte
    0-7 gelten für JEDE CE; Abschnitt 8 ist die CE-06-Landkarte als Beispiel).
 2. content/ce-06/situationen/ls-wagner-reanimation/phases.ts — der Step
    "ce06-wagner-erk-01b-hks-erkennen" ist der GOLD-STANDARD-BAUSTEIN. Bau GENAU so.
 3. content/ce-06/glossar.ts — so sieht ein Glossar-Eintrag aus.
-4. specs/curriculum/ce-XX-lernergebnisse.json — die Lernergebnisse (Wahrheitsquelle,
-   aus dem Fachkommissions-Rahmenlehrplan). Verifiziere jedes verwendete
-   Lernergebnis gegen recherche/curriculum-generalistik-volltext (quellzeile).
+4. specs/curriculum/ce-XX-lernergebnisse.json — die Lernergebnisse. Verifiziere jedes
+   verwendete Lernergebnis gegen recherche/curriculum-generalistik-volltext (quellzeile).
 5. specs/ce-XX/kernfakten/  — die bereits belegten Kernfakten (falls vorhanden).
+
+RECHTSHIERARCHIE — WAS IST BUNDESWEIT VERBINDLICH (nicht durcheinanderwerfen):
+- 5 KOMPETENZBEREICHE (KB I-V, PflBG § 5 + PflAPrV Anlagen 1-2) = RECHTSVERBINDLICH,
+  deutschlandweit. Der Kompetenz-Nachweis hängt hier dran. Feingliederung (I.1, I.4 …)
+  = der „Kompetenzschwerpunkt" aus den Anlagen.
+- 11 CE (Fachkommission § 53 PflBG) = bundeseinheitlich EMPFOHLEN (nicht verbindlich),
+  de-facto-Standard.
+- LERNEINHEITEN (LE) = UMSETZUNGSEBENE (Landes-/Schulcurriculum, unsere Quelle ist
+  NRW-geprägt). Das ist EINE curriculare Umsetzung, KEINE Bundesvorgabe. Andere Länder
+  schneiden die CE anders. → Aussagen/Nachweise auf KB + CE verankern, LE nur als
+  Umsetzung behandeln.
+
+KB-MARKER-REGEL (präzisiert — steuert den Kompetenznachweis): Der `kompetenzbereich`
+jedes Steps MUSS aus dem Schwerpunkt-SET der LE stammen (Katalog: kompetenzbereichPrimaer
++ …Sekundaer), nie außerhalb, nie geraten aus der LE-Nummer.
+  · Wissens-Tabs (inlineWissen) → immer der LE-PRIMÄR-Schwerpunkt.
+  · Anwendungs-Steps → der KB, den der Step TATSÄCHLICH trainiert, aber nur aus dem LE-Set
+    (Kern-Handlung → Primär-Schwerpunkt; echte Kommunikation → II.x; Team → III.x;
+    Reflexion des eigenen Handelns → V.x).
+  · Coverage-Ziel: über die Situation/LE die Schwerpunkte nachweisbar abdecken.
 
 K.O.-REGELN (Verstoß = Baustein geht nicht live):
 - CURRICULUM-FIRST: Erst aus den Lernergebnissen die Wissens-Landkarte ableiten
@@ -54,10 +80,33 @@ GATES (jeder Baustein muss bestehen, bevor er als fertig gilt):
 - pflege-validator + klinik-panel (fachlich korrekt, kein Anti-Pattern)
 - npx tsc --noEmit && npm run build müssen grün bleiben
 
-MENGE: Nicht "Ø 20 pro Situation" raten. Coverage ist das harte Ziel: JEDES
-Wissens-Lernergebnis abgedeckt, alle 5 Kompetenzbereiche getroffen, richtige
-Bloom-Stufen. Das Zeit-Budget (calculate-content-budget, Faktor ~0,27 an CE-02
-geeicht) ist nur ein grober Plausibilitäts-Check.
+CURRICULARE VOLLSTÄNDIGKEIT (die App wird deutschlandweit angeboten und muss sich
+an den Rahmenlehrplan halten — diese vier Achsen sind K.O.):
+
+1) COVERAGE (Umfang): JEDES Wissens-Lernergebnis der CE ist abgedeckt — das ist
+   das harte Ziel, nicht eine geratene Stückzahl. Mindestumfang leitet sich aus
+   den ZRW-Stunden der CE ab (im Rahmenlehrplan-Volltext nachschlagen): Zeit-Budget
+   = Stunden × Faktor ~0,27 (an CE-02 geeicht, calculate-content-budget). Das Budget
+   ist Plausibilitäts-Check, NICHT Ziel. Lieber üppig als knapp.
+
+2) BLOOM-STEIGERUNG: Innerhalb der CE muss eine sichtbare Progression von niedrigen
+   zu hohen Stufen entstehen. Wissens-Tabs liegen auf Stufe 1-2 (verstehen). Die
+   ANWENDUNG in den Situationen muss bis zur Ziel-Bloom-Stufe des jeweiligen
+   Lernergebnisses gehen (`bloomStufe` im Katalog, bis 6 = „entwerfen/entwickeln").
+   Prüfe pro LE: wird die im Katalog geforderte Stufe irgendwo tatsächlich erreicht?
+
+3) AUSBILDUNGSDRITTEL: Content muss zum Drittel der CE passen (im Rahmenlehrplan
+   nachschlagen — welches Drittel, wie viele Stunden). Kein Inhalt aus einem
+   späteren Drittel vorwegnehmen, kein Vorwissen voraussetzen, das dort noch nicht
+   vermittelt wurde.
+
+4) KOMPETENZBEREICH-NACHWEIS (unverzichtbar — Schulen weisen der Bezirksregierung
+   nach, in welchen KB Kompetenzen erworben wurden): Jeder Baustein UND jeder
+   Antwort-Step trägt `kompetenzbereich` = den im Katalog hinterlegten Schwerpunkt
+   der Lerneinheit (`kompetenzbereichPrimaer`), NICHT deine fachliche Vermutung.
+   Die Neben-Schwerpunkte (`kompetenzbereicheSekundaer`) dürfen zusätzlich getippt
+   werden. Fehlt der Marker oder ist er geraten → der Nachweis wird unbelegbar.
+   Prüfe am Ende: sind alle 5 KB der CE über die Bausteine/Steps abgedeckt?
 
 ARBEITSWEISE: Schritt für Schritt im Chat. Zeig mir zu JEDEM Baustein zuerst die
 gelesene Literatur-Stelle + den belegten Fakt, DANN den Text. Ich (Gründerin,

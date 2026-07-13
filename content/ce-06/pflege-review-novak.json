@@ -1,0 +1,72 @@
+{
+  "situationId": "ls-novak-erregung",
+  "ce": "ce-06",
+  "geprueft": "2026-07-13",
+  "validator": "pflege-validator (mode=code)",
+  "files": [
+    "content/ce-06/situationen/ls-novak-erregung/phases.ts",
+    "content/ce-06/situationen/ls-novak-erregung/patient.ts",
+    "content/ce-06/situationen/ls-novak-erregung/index.ts"
+  ],
+  "stepAnzahl": 10,
+  "stepTypen": { "mc": 5, "inlineWissen": 3, "branching": 1, "reflection": 1 },
+  "vorChecks": {
+    "pflegeAntiPattern": "PASS (keine Treffer novak)",
+    "stepGrounding": "PASS (keine Dangling-Refs)",
+    "standardsCurrency": "PASS (§ 1831 aktuell, kein § 1906/1906a)",
+    "zitatVerifizierer": "PASS (15/15 Zitate, 8/8 Belegblöcke)"
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "NIEDRIG",
+      "titel": "SpO2/BZ-Messung 'gelingt oft erst, wenn er dich heranlässt'",
+      "stelle": "phases.ts Z. 188 (erk-02 explanation), Z. 245 (Tab B kerntext)",
+      "problem": "Kein Fehler; realitaetsnah + durch 'notfalls unter aerztlicher Begleitung' abgesichert. Nur potenziell missverstaendlich, als duerfe man das Assessment beliebig aufschieben.",
+      "standard": "F-01 (Vitalzeichen/Temp/SpO2/BZ)",
+      "empfehlung": "Optional: '... je nach Kooperation; bei kritischem Verdacht auf Hypoxie/Sepsis aerztlich begleitet erzwungen, nicht beliebig verschoben.' Keine Pflichtkorrektur.",
+      "geloest": false
+    },
+    {
+      "id": "F-02",
+      "severity": "NIEDRIG",
+      "titel": "§ 1831 BGB setzt bestehende rechtliche Betreuung voraus",
+      "stelle": "phases.ts Z. 456 (Tab C kerntext), Z. 517/520 (erm-02 explanation)",
+      "problem": "§ 1831 greift nur bei bestelltem Betreuer/Bevollmaechtigten. 'Betreute Wohngruppe' (patient.ts Z. 19) ist Wohnform, kein Beleg fuer rechtliche Betreuung. Operativ korrekt, da akut Gefahr im Verzug gilt (im Text benannt); grounded in F-06; an der Grenze des Ausbildungsniveaus.",
+      "standard": "F-06; § 1831 BGB Betreuungsrecht",
+      "empfehlung": "Optional Halbsatz: '... sofern eine rechtliche Betreuung besteht; sonst Gefahr im Verzug / rechtfertigender Notstand, Betreuung veranlassen.' Keine Pflichtkorrektur.",
+      "geloest": false
+    },
+    {
+      "id": "F-03",
+      "severity": "NIEDRIG",
+      "titel": "kernfaktId ['F-07'] deckt SBAR-Kernaussage nur lose",
+      "stelle": "phases.ts Z. 572 (ueb-01 kernfaktId)",
+      "problem": "Step lehrt SBAR-Struktur (Leonard 2004); F-07 ist 'Sedierung aerztlich', trifft nur die R-Zeile. Kein SBAR-Fakt in dieser Kernfakten-Datei (SBAR via notfallassessment.md). Step-Grounding gruen, semantische Passung schwach.",
+      "standard": "SBAR (Leonard et al. 2004), II.1",
+      "empfehlung": "Falls SBAR-Kernfakt in notfallassessment.md existiert, dessen F-ID ergaenzen/ersetzen; sonst F-07 belassen. Kosmetisch.",
+      "geloest": false
+    }
+  ],
+  "crossStep": {
+    "alter": "34 konsistent (patient.ts Z.10 == SBAR Z.588)",
+    "diagnosen": "Pneumonie+Fieber 39,2 + paranoide Schizophrenie durchgaengig identisch",
+    "zeit": "23:30 durchgaengig",
+    "verlauf": "Infusion entfernt konsistent (Ph.3 == SBAR)",
+    "wahnHaltung": "Gefuehl ernst / Inhalt nicht bestaetigen/nicht hart widerlegen durchgaengig",
+    "recht": "§1831/Gefahr im Verzug/PsychKG-Abgrenzung konsistent (Tab C == erm-02)",
+    "sedierung": "aerztlich konsistent (ala-01/Tab C/erm-02)",
+    "status": "keine Inkonsistenzen"
+  },
+  "zusammenfassung": {
+    "hoch": 0,
+    "mittel": 0,
+    "niedrig": 3,
+    "antiPatternBias": "keiner (kein Pseudo-Empathie, kein Sie-an-Lernende, keine unrechtmaessige Fixierung/Bettgitter)",
+    "standardsBezug": "sauber + aktuell (§1831 statt 1906a; PsychKG-vs-Betreuungsrecht korrekt; F-01..F-08 gespiegelt)",
+    "b1Konsistenz": "durchgaengig du-Anrede, explanationB1/feedbackB1/contentB1 vollstaendig, Sandwich im Feedback",
+    "wissensTabs": "3 Tabs literatur-belegt, paraphrasiert, VOR/BEI Anwendung, ohne Antwort-Step — fachlich + didaktisch sauber"
+  },
+  "verdikt": "PASS",
+  "ko": false
+}

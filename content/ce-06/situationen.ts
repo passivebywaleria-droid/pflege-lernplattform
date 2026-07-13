@@ -83,6 +83,24 @@ import {
   CE06_SIT_ERLEMANN_REFLEKTIEREN,
 } from "./situationen/ls-erlemann-organspende";
 
+import {
+  CE06_SIT_SANDER_PATIENT,
+  CE06_SIT_SANDER_ERKENNEN,
+  CE06_SIT_SANDER_ALARMIEREN,
+  CE06_SIT_SANDER_ERSTMASSNAHMEN,
+  CE06_SIT_SANDER_UEBERGEBEN,
+  CE06_SIT_SANDER_REFLEKTIEREN,
+} from "./situationen/ls-sander-verbruehung";
+
+import {
+  CE06_SIT_PETROVA_PATIENT,
+  CE06_SIT_PETROVA_ERKENNEN,
+  CE06_SIT_PETROVA_ALARMIEREN,
+  CE06_SIT_PETROVA_ERSTMASSNAHMEN,
+  CE06_SIT_PETROVA_UEBERGEBEN,
+  CE06_SIT_PETROVA_REFLEKTIEREN,
+} from "./situationen/ls-capstone-am-boden";
+
 export const CE06_SITUATIONEN: Lernsituation[] = [
   {
     situationId: "ls-wagner-reanimation",
@@ -260,6 +278,46 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
       CE06_SIT_ERLEMANN_ERSTMASSNAHMEN,
       CE06_SIT_ERLEMANN_UEBERGEBEN,
       CE06_SIT_ERLEMANN_REFLEKTIEREN,
+    ],
+    komplikationen: [],
+    bausteinTrigger: [],
+  },
+  {
+    situationId: "ls-sander-verbruehung",
+    ceId: "ce-06",
+    situationsTyp: "akutsituation",
+    patient: CE06_SIT_SANDER_PATIENT,
+    titel: "Frau Sander — Verbrühung im ambulanten Pflegebesuch",
+    titelB1: "Frau Sander — Verbrühung mit heißem Wasser",
+    themen: ["thermisch-chemische-notfaelle", "notfallkommunikation-sbar"],
+    spirale: 2,
+    geschaetzteUE: 1,
+    phasen: [
+      CE06_SIT_SANDER_ERKENNEN,
+      CE06_SIT_SANDER_ALARMIEREN,
+      CE06_SIT_SANDER_ERSTMASSNAHMEN,
+      CE06_SIT_SANDER_UEBERGEBEN,
+      CE06_SIT_SANDER_REFLEKTIEREN,
+    ],
+    komplikationen: [],
+    bausteinTrigger: [],
+  },
+  {
+    situationId: "ls-capstone-am-boden",
+    ceId: "ce-06",
+    situationsTyp: "akutsituation",
+    patient: CE06_SIT_PETROVA_PATIENT,
+    titel: "Jemand liegt am Boden — was ist es? (Differenzierungs-Capstone)",
+    titelB1: "Jemand liegt am Boden — was ist es?",
+    themen: ["notfallassessment", "neurologische-akutsituationen", "reanimation-bls", "notfallkommunikation-sbar"],
+    spirale: 3,
+    geschaetzteUE: 1,
+    phasen: [
+      CE06_SIT_PETROVA_ERKENNEN,
+      CE06_SIT_PETROVA_ALARMIEREN,
+      CE06_SIT_PETROVA_ERSTMASSNAHMEN,
+      CE06_SIT_PETROVA_UEBERGEBEN,
+      CE06_SIT_PETROVA_REFLEKTIEREN,
     ],
     komplikationen: [],
     bausteinTrigger: [],

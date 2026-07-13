@@ -1,0 +1,65 @@
+{
+  "ce": "ce-06",
+  "situation": "ls-lehmann-sturz-sht",
+  "datei": "content/ce-06/situationen/ls-lehmann-sturz-sht/phases.ts",
+  "geprueftAm": "2026-07-13",
+  "panelVersion": "W6 4-Lens + 5. semantischer Lens (pflege-validator-Rolle)",
+  "fokus": "3 neue inlineWissen-Tabs (erk-01b, erm-00b, erm-02b)",
+  "deterministischeLenses": {
+    "klinikPanel": { "hoch": 0, "mittel": 0, "niedrig": 0, "urteil": "PASS" },
+    "antiPatternCheck": { "hoch": 0, "mittel": 0, "niedrig": 0, "urteil": "PASS" },
+    "stepGrounding": { "claimTragend": 10, "gegroundet": 10, "dangling": 0, "urteil": "PASS" },
+    "standardsCurrency": { "treffer": 0, "urteil": "PASS" },
+    "klinikZahlen": { "outOfRange": 0, "urteil": "PASS" },
+    "faktentreue": { "ungedeckteInstrumente": 0, "coverage": "100%", "urteil": "PASS" },
+    "zitatVerifizierer": { "zitate": 12, "verifiziert": 12, "urteil": "PASS" }
+  },
+  "befunde": [
+    {
+      "id": "L5-SEM-01",
+      "lens": "5 semantisch / DNQP-Grounding-Vollständigkeit",
+      "severity": "NIEDRIG",
+      "ko": false,
+      "step": "ce06-lehmann-erm-00b-blutstillung (+ Spiegelung in erm-01)",
+      "claim": "Bei tastbarer Knochenstufe / Verdacht auf Schädelbruch KEIN punktueller, kräftiger Druck auf die Stelle, sondern nur locker steril abdecken.",
+      "problem": "Medizinisch korrekt und sicherheits-konservativ (Standard-Erste-Hilfe-Prinzip: kein Druck auf mögliche Impressionsfraktur). Aber diese spezifische Aussage ist NICHT in den zugeordneten Kernfakten F-06/F-07 enthalten (die decken nur sterile Kompresse + leichter Druck + Druckverband + Wärmeerhalt) und findet KEINEN Verbatim-Beleg im Korpus (pflege-heute-volltext: kein Treffer für 'Schädelbruch' + 'kein Druck' / 'Knochenstufe' / 'Impression'). Gründerin-Regel 'nichts Ungedecktes lehren / fehlende Quelle -> Beschaffung' greift.",
+      "belegLage": "sterile Kompresse (Korpus: 'sterilen Kompressen' belegt), leichter Druck (Korpus: 'leichtem Druck' belegt), Druckverband (F-06 verbatim) = GEDECKT. Die Knochenstufen-Ausnahme = UNGEDECKT.",
+      "fix": "Verbatim-Beleg aus einer Erste-Hilfe-/Notfallquelle (z.B. pflege-heute Kap. 14 Wundversorgung Schädel/Kopf oder notfallmedizin-volltext) beschaffen und als F-06b/F-09 in traumatologische-erstversorgung.md ergaenzen; alternativ die Aussage weicher als allgemeinen Vorsichtshinweis formulieren. KEIN K.O. — Aussage ist fachlich richtig und schuetzt eher.",
+      "status": "BESCHAFFUNG"
+    },
+    {
+      "id": "L5-SEM-02",
+      "lens": "5 semantisch / Grounding-Herkunft",
+      "severity": "NIEDRIG",
+      "ko": false,
+      "step": "ce06-lehmann-erm-00b-blutstillung, ce06-lehmann-erm-01",
+      "claim": "'Licht voll einschalten' fuer die Verletzungs-Inspektion (statt gedaempftes Nachtlicht).",
+      "problem": "Kein Verbatim-Korpusbeleg fuer 'ausreichendes Licht/Beleuchtung' gefunden. ABER: durch die Projektregel .claude/rules/pflege-konformitaet.md ausdruecklich als KORREKTES Muster vorgeschrieben ('Licht voll einschalten — hell genug fuer Verletzungs-Inspektion') und aus ABCDE (E=Exposure, notfallassessment F-01) ableitbar. Damit regel-gedeckt, nicht erfunden.",
+      "belegLage": "GEDECKT via Projektregel + ABCDE. Nur zur Transparenz gelistet.",
+      "fix": "Keiner erforderlich. Optional Verweis auf ABCDE-E im quellen-Feld ergaenzen (ist in erm-01 bereits vorhanden).",
+      "status": "OK/HINWEIS"
+    },
+    {
+      "id": "L5-SEM-03",
+      "lens": "5 semantisch / Grounding-Herkunft",
+      "severity": "NIEDRIG",
+      "ko": false,
+      "step": "ce06-lehmann-erm-02 (branching, Deeskalation bei Demenz)",
+      "claim": "Deeskalation ueber ruhige, validierende Ansprache auf Augenhoehe wirkt besser als Kraft.",
+      "problem": "Der didaktisch tragende Kern des Steps (Lage nicht veraendern = F-01; beidseitiges Bettgitter = FeM = F-08) ist gegroundet. Der Deeskalations-Rahmen selbst stuetzt sich auf 'Grundprinzip Deeskalation bei Demenz' ohne Kernfakt-Beleg. Als unterstuetzende Kommunikations-Aussage vertretbar; kein falscher Fakt.",
+      "belegLage": "Kernaussagen gegroundet; Deeskalations-Framing allgemeinprinzip-gestuetzt.",
+      "fix": "Optional: Kommunikations-/Validation-Beleg (Watzlawick/Schulz von Thun bzw. Demenz-Kap.) fuer spaetere Kernfakt-Verankerung. Nicht blockierend.",
+      "status": "OK/HINWEIS"
+    }
+  ],
+  "positivBefunde": {
+    "arzneimittelZahlen": "Apixaban korrekt als Wirkstoff (DOAK/Faktor-Xa-Hemmer), kein Markenname; korpusbelegt (pflege-heute 3x + AWMF/notfallmedizin/paetz/icare). KEINE erfundenen Dosen. Marcumar bleibt nur im Kernfakt-Verbatim, im Content nicht verwendet. Alter 86 genau 1x (SBAR), kein Widerspruch.",
+    "rechtEthikCurrency": "Durchgaengig § 1831 BGB (Fassung ab 2023), KEIN §1906/1906a. FeM-Logik korrekt: Genehmigung Betreuungsgericht, akute Gefahr kurzfristig zulaessig + unverzueglich nachholen, Vorrang milderer Mittel, Einbindung Bevollmaechtigte. Standards-Currency-Lens: 0 Treffer.",
+    "dnqpGrounding": "10/10 claim-tragende Steps gegroundet, 0 dangling. Alle 12 Kernfakt-Zitate verbatim verifiziert. Tab A=F-01/02/03/04, Tab B=F-06/07, Tab C=F-08 sauber zugeordnet.",
+    "konsistenz": "Keine Dublette-stepIds (11 unique). Bettgitter durchgaengig als FeM/falsch (nie als Empfehlung). Apixaban, Osteoporose, Vorhofflimmern, 'dritter Sturz in 6 Monaten', bevollmaechtigte Tochter ueber alle Phasen konsistent. Kein Item hier korrekt/dort falsch.",
+    "semantischDistraktorVsEmpfehlung": "Alle Anti-Pattern (gedaempftes Licht, 'Glueck gehabt', unter den Achseln greifen, beidseitige Bettgitter, Hochheben) treten AUSSCHLIESSLICH als falsche Optionen auf und werden korrektiv gelehrt. Reflection disambiguiert Orientierungslicht vs. gedaempftes Inspektionslicht explizit. Cushing-Trias bewusst NICHT behauptet. Step-Typ-Pflichten erfuellt (MC: explanation je Option; branching: divergente Konsequenzen; truefalse: eindeutig + Standardverweis; reflection: Sandwich-systemPrompt). inlineWissen ohne Antwort-Step -> Play-then-Gate unveraendert."
+  },
+  "urteil": "PASS",
+  "koBefunde": 0,
+  "begruendung": "Kein HOCH-Befund in keinem der 5 Lenses. Alle 4 deterministischen Panel-Lenses + Zusatz-Skripte (Zahlen, Faktentreue, Zitat-Verifizierer) gruen. Semantischer 5. Lens: nur 1 echte Beschaffungs-Notiz (L5-SEM-01, NIEDRIG, fachlich korrekt aber ungegroundet) + 2 transparenz-Hinweise. Gruenderin bleibt Backstop."
+}

@@ -3,64 +3,78 @@
   "reports": [
     {
       "situationId": "ls-wagner-reanimation",
-      "claimBearingTotal": 8,
-      "grounded": 8,
+      "claimBearingTotal": 15,
+      "grounded": 15,
       "adopted": true,
       "findings": []
     },
     {
       "situationId": "ls-rios-synkope",
-      "claimBearingTotal": 7,
-      "grounded": 7,
-      "adopted": true,
-      "findings": []
-    },
-    {
-      "situationId": "ls-lehmann-sturz-sht",
-      "claimBearingTotal": 7,
-      "grounded": 7,
-      "adopted": true,
-      "findings": []
-    },
-    {
-      "situationId": "ls-novak-erregung",
-      "claimBearingTotal": 6,
-      "grounded": 6,
-      "adopted": true,
-      "findings": []
-    },
-    {
-      "situationId": "ls-yildiz-thoraxschmerz",
-      "claimBearingTotal": 7,
-      "grounded": 7,
-      "adopted": true,
-      "findings": []
-    },
-    {
-      "situationId": "ls-gruber-schock",
       "claimBearingTotal": 11,
       "grounded": 11,
       "adopted": true,
       "findings": []
     },
     {
+      "situationId": "ls-lehmann-sturz-sht",
+      "claimBearingTotal": 10,
+      "grounded": 10,
+      "adopted": true,
+      "findings": []
+    },
+    {
+      "situationId": "ls-novak-erregung",
+      "claimBearingTotal": 9,
+      "grounded": 9,
+      "adopted": true,
+      "findings": []
+    },
+    {
+      "situationId": "ls-yildiz-thoraxschmerz",
+      "claimBearingTotal": 10,
+      "grounded": 10,
+      "adopted": true,
+      "findings": []
+    },
+    {
+      "situationId": "ls-gruber-schock",
+      "claimBearingTotal": 14,
+      "grounded": 14,
+      "adopted": true,
+      "findings": []
+    },
+    {
       "situationId": "ls-kortmann-abdomen",
-      "claimBearingTotal": 12,
-      "grounded": 12,
+      "claimBearingTotal": 15,
+      "grounded": 15,
       "adopted": true,
       "findings": []
     },
     {
       "situationId": "ls-radtke-brand",
-      "claimBearingTotal": 8,
-      "grounded": 8,
+      "claimBearingTotal": 11,
+      "grounded": 11,
       "adopted": true,
       "findings": []
     },
     {
       "situationId": "ls-erlemann-organspende",
-      "claimBearingTotal": 7,
-      "grounded": 7,
+      "claimBearingTotal": 10,
+      "grounded": 10,
+      "adopted": true,
+      "findings": []
+    },
+    {
+      "situationId": "ls-sander-verbruehung",
+      "claimBearingTotal": 11,
+      "grounded": 11,
+      "adopted": true,
+      "findings": []
+    },
+    {
+      "situationId": "ls-capstone-am-boden",
+      "claimBearingTotal": 9,
+      "grounded": 9,
       "adopted": true,
       "findings": []
     }

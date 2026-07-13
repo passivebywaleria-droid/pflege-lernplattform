@@ -1,73 +1,85 @@
-# Adversariales Klinik-Panel — `ls-radtke-brand` (CE-06, LE4)
+# Adversariales Klinik-Panel — ce-06 · `ls-radtke-brand`
 
-**Geprüft:** 2026-07-05 · **Rolle:** 4 deterministische Panel-Lenses + semantischer 5. Lens (pflege-validator)
-**Grounding:** `specs/ce-06/kernfakten/katastrophe-triage-krise.md` (F-01..F-12, verbatim Pflege heute Kap. 14.4/14.6/14.7/16.4)
+**Geprüft:** 2026-07-13 · **Datei:** `content/ce-06/situationen/ls-radtke-brand/phases.ts`
+**Panel:** W6 4-Lens (deterministisch) + 5. semantischer Lens (pflege-validator-Rolle)
+**Fokus (Redesign-Runde):** 3 neue Wissens-Tabs `ce06-radtke-ala-00b-manv`, `ce06-radtke-erm-00b-sichtung`, `ce06-radtke-ueb-00b-psych-erste-hilfe` · KB-Marker-Korrektur (LE4-Set, Primär I.4) · 10 neue Glossar-Einträge
 
-## Verdikt: ✅ PASS — 0 HOCH-Befunde
+## Verdikt: ✅ PASS — 0 HOCH-Befunde (kein K.O.)
 
-Panel = umfassende Vorlage; Gründerin bleibt menschlicher Backstop.
-
-### Pre-Filter (deterministisch)
-
-| Filter | Ergebnis |
-|--------|----------|
-| `klinik-panel.ts ce-06 --situation ls-radtke-brand` | ✅ PASS (0/0/0) |
-| `pflege-anti-pattern-check.ts ce-06` | ✅ PASS (0 Funde) |
-| `step-grounding-check.ts ce-06` (ls-radtke-brand) | ✅ PASS (8/8 gegroundet, 0 dangling) |
+Panel = umfassende Vorlage. Gründerin bleibt menschlicher Backstop; die 4 NIEDRIG-Notizen unten sind Abwägungs-Hinweise, keine Fehler.
 
 ---
 
-## Lens-Ergebnisse
+## Deterministische Lenses (Skript, 0 Drift)
 
-### Lens 1 — Arzneimittel/Zahlen-Sicherheit (W1): ✅ PASS
-- **Sichtungskategorien** SK I (rot/vital→sofort) / SK II (gelb/schwer→dringlich) / SK III (grün/leicht→nichtdringlich) exakt und belegt (F-07).
-- **ABCDE** = Airway/Breathing/Circulation/Disability/Exposure → „Atemweg, Atmung, Kreislauf, Bewusstsein, Entkleiden/Umgebung" korrekt (F-06).
-- **MANV/Katastrophe** korrekt definiert (F-01/F-02); **Kleiderbrand** inkl. „Feuerlöscher nicht ins Gesicht" korrekt (F-05).
-- **Keine erfundenen Instrumente** (kein ESI, kein Manchester), **keine erfundenen Dosen**.
-- 🟡 NIEDRIG `RADTKE-L1-01`: siehe unten (SK IV/schwarz-Auslassung — kein Fehler).
-
-### Lens 2 — Recht & Ethik / Currency: ✅ PASS
-- „**Keine Auskunft an Dritte, nur die Einsatzleitung**" korrekt (F-10); Feedback-Framing „Persönlichkeitsrecht, Datenschutz, Fürsorge" ist rechtlich sauber (Presse-Auskunft über Namen/Zustand = Verstoß gegen Schweigepflicht/Datenschutz).
-- **Keine veralteten Normen** — kein §1906/1906a, keine FeM-Norm einschlägig (Currency-Registry nicht getriggert).
-- **Triage-Ethik korrekt gerahmt:** „für möglichst viele das Beste" / „nach Dringlichkeit, nicht nach Lautstärke" — keine Wertung von Menschenleben. Ethisch heikle SK IV (blau/„ohne Überlebenschance") wird bewusst nicht interaktiv sortiert.
-
-### Lens 3 — DNQP/Standard/Grounding: ✅ PASS
-- 8/8 claim-tragende Steps mit `kernfaktId`, alle gegroundet.
-- 🟡 NIEDRIG `RADTKE-L3-01`: siehe unten (unbelegte Spezifik „Brandabschnitt schließen").
-
-### Lens 4 — Konsistenz: ✅ PASS
-- Patientendaten durchgängig: Radtke, **84**, beginnende Demenz, Schwerhörigkeit beidseits, Rollator — konsistent in patient.ts + allen Phasen.
-- Setting (nächtlicher Heimbrand 02:10 → MANV → Sammelplatz) durchgängig.
-- **9 stepIds unique**, keine Duplikate; **keine fremde patientId**.
-- **Alle 6 Triage-Zuordnungen (erm-02) stimmig** zu den SK-Definitionen:
-  bewusstlos/Atemnot→SK I ✓ · arterielle Blutung+Schock→SK I ✓ · großfl. Arm-Verbrennung (stabil)→SK II ✓ · Unterschenkel-Fraktur (stabil)→SK II ✓ · Schürfwunde/gehfähig→SK III ✓ · leichte Rauchreizung (klar, keine Atemnot)→SK III ✓.
-
-### Lens 5 — Semantisch (pflege-validator): ✅ PASS
-- **Kein Distraktor-als-Empfehlung:** alle Falsch-Optionen `isCorrect:false` + korrektive `explanation`.
-- **Keine Pseudo-Empathie:** die korrekte Krisenintervention (abschirmen, Augenhöhe, mit Namen ansprechen, einfache Orientierung, KIT informieren) ist echte psychische Erste Hilfe (F-10/F-11), keine leere Floskel.
-- **Realitätscheck ok:** „ausführliche Sacherklärung der Brandursache an die demente/panische Patientin" ist korrekt als *falsch/überfordernd* markiert (nicht als empathisch verkauft).
-- **Step-Typ-Pflichten erfüllt:** MC mit `explanation` je Option + Sandwich im Falsch-Feedback + „du"-Anrede; truefalse eindeutig mit Standardbezug; freetext mit Bewertungskriterien + Musterantwort; reflection mit achtsamem Sandwich-systemPrompt (bei geschilderter eigener Belastung).
+| Lens / Skript | Ergebnis |
+|---|---|
+| Klinik-Panel (4 Lenses gesamt, `klinik-panel.ts --situation ls-radtke-brand`) | ✅ 0 HOCH · 0 MITTEL · 0 NIEDRIG (exit 0) |
+| L1 Arzneimittel/Zahlen (`klinik-zahlen-check`, W1) | ✅ 0 out-of-range |
+| L2 Recht & Ethik (`standards-currency-check ce-06`) | ✅ 0 Treffer (kein §1906/1906a-Drift) |
+| L3 DNQP/Standard (`step-grounding-check ce-06`) | ✅ ls-radtke-brand PASS · 0 DANGLING · 0 MISSING |
+| L4 Konsistenz (Patient-Daten / Cross-Step) | ✅ 0 Dubletten / Fremd-patientId |
+| Anti-Pattern-Regex (`pflege-anti-pattern-check ce-06`) | ✅ 0 Funde (HOCH/MITTEL/NIEDRIG je 0) |
+| Faktentreue (`faktentreue-check ce-06`) | ✅ Coverage 100% (STRICT) · ABCDE + SBAR gedeckt · 0 ungedeckt |
+| Zitat-Verifizierer (`--check-file katastrophe-triage-krise.md`) | ✅ Alle 28 Verbatim-Belege (F-01..F-12) verifiziert |
 
 ---
 
-## Befunde (dedupliziert, literaturbelegt)
+## Lens 1 — Arzneimittel-/Zahlen-Sicherheit → PASS
+- Keine Dosen, keine Wirkstoffe, keine erfundenen Instrumente/Scores. Sichtungskategorien werden qualitativ verwendet (rot/gelb/grün/blau/schwarz), nicht mit erfundenen Cut-off-Werten.
+- ABCDE korrekt als Prioritätenschema (F-06), keine Zahlen-Claims.
 
-### 🟡 NIEDRIG `RADTKE-L3-01` — „Brandabschnitt schließen" ohne Verbatim-Beleg
-- **Step:** `ce06-radtke-erk-01` · **kernfaktId:** F-04/F-03/F-09
-- **Befund:** Die korrekte Option nennt die konkrete Taktik „Brandabschnitt schließen". Weder in den Kernfakten (F-04 = allgemein „Vorgaben der Einrichtung kennen") noch verbatim im Volltext auffindbar (`grep` „Brandabschnitt"/„Türen schließen" im Brandkontext = 0; „Schließen der Zimmertür" existiert nur im Gewalt-/Aggressions-Kapitel).
-- **Einordnung:** Kein sachlicher Fehler — Rauchabschnitts-/Türenschließen ist etablierte deutsche Brandschutz-Doktrin und durch die Rahmung „nach dem Brandschutzplan meiner Einrichtung" (F-04) weitgehend gedeckt. Aber: Gründerin-Regel „keine unbelegte Detailtaktik".
-- **Empfehlung:** Verbatim-Beleg beschaffen ODER generalisieren („nach der Brandschutzordnung der Einrichtung vorgehen"). → Beschaffung.
+## Lens 2 — Recht & Ethik → PASS
+- Kein veralteter Normverweis. FeM/§1831-Thema kommt hier nicht vor (andere LE4-Situation).
+- Rechtlich sauber gebaut: **keine Auskunft an Dritte/Presse — nur die Einsatzleitung** (F-11, Persönlichkeitsrecht/Datenschutz) ist als Score-3-Verhalten gesetzt; Presse-Auskunft ausschließlich Falsch-Option (`ueb-01` Opt 2).
 
-### 🟡 NIEDRIG `RADTKE-L1-01` — SK IV (blau) und schwarz fehlen im interaktiven Step
-- **Step:** `ce06-radtke-erm-02` · **kernfaktId:** F-07/F-08
-- **Befund:** Der Triage-Step lehrt nur SK I/II/III; SK IV (blau, „ohne Überlebenschance"→palliativ) und schwarz (Tote) stehen nur im Header-Kommentar und in F-07.
-- **Einordnung:** Kein Fehler — die 3 gezeigten Kategorien sind exakt/belegt, nichts Falsches behauptet. Auslassung von SK IV/schwarz ist eine bewusste, ethisch saubere Scoping-Entscheidung (kein Sortieren eines lebenden Menschen als „blau/erwartend" oder „tot"). Restrisiko: Schüler hält System evtl. für dreistufig.
-- **Empfehlung:** Optional ein Info-Satz in `body`/`begruendung`, dass zusätzlich SK IV (blau) und schwarz existieren — ohne sie interaktiv sortieren zu lassen.
+## Lens 3 — DNQP-/Standard-Konformität → PASS
+- Alle claim-tragenden Steps mit `kernfaktId` gegroundet, keine Dangling-Refs.
+- Standard-Treue exakt: MANV-Definition/Leitprinzip (F-01/F-08), Katastrophe (F-02), ABCDE (F-06), Sichtungskategorien SK I rot / II gelb / III grün / IV blau / schwarz (F-07), Eigenschutz (F-09), psych. Erste Hilfe (F-10), KIT/Krisenintervention (F-11), PTBS/Supervision (F-12).
+
+## Lens 4 — Konsistenz → PASS
+- StepIds eindeutig, patientId konsistent (Radtke, 84).
+- **Cross-Step-Konsistenz Sichtung:** Tab B lehrt 5 Kategorien; `erm-02` (pflegewagen) bietet nur SK I/II/III als Zonen an — die `begruendung` erklärt ausdrücklich, dass blau/schwarz fehlen, weil „im Übungsbild alle sechs überlebend" sind. Sauber reconciled, kein Widerspruch. Ethisch stark: kein realer Bewohner wird in blau/schwarz einsortiert.
+- Item-Zuordnungen konsistent zu den Tab-B-Definitionen (bewusstlos/spritzende Blutung → SK I; großflächige Verbrennung *mit stabilem Kreislauf* + Fraktur stabil → SK II; gehfähig/leichte Rauchgasreizung → SK III).
 
 ---
 
-## Beschaffung (Gründerin-Regel: nichts erfinden)
+## Lens 5 — Semantisch (pflege-validator-Rolle)
 
-| Item | Grund | Quellen-Vorschlag |
-|------|-------|-------------------|
-| Verbatim-Beleg „Brandabschnitt/Brandschutztür schließen" als Brandfall-Sofortmaßnahme | In `erk-01` verwendet, aber nicht in Kernfakten/Volltext auffindbar | Pflege heute Kap. 14.6/14.7 (Verhalten im Brandfall) prüfen; sonst Brandschutzordnung/DIN 14096 — NICHT erfinden |
+Prüft, was Regex nicht kann: Distraktor-vs-Empfehlung, Pseudo-Empathie, Realitätscheck, Step-Typ-Pflichten.
+
+### Bestanden — Kernprüfungen
+- **Distraktor vs. Empfehlung:** Alle 4 kritischen Anti-Patterns liegen ausschließlich in Falsch-Optionen und lehren *über* das Falsche:
+  - „allein zum brennenden Zimmer, selbst löschen" → `erk-01` Opt 2 (`isCorrect:false`)
+  - „nur die Lautesten versorgen" / „Übungssituation" → `ala-01` Opt 3 (false)
+  - „reihum jeden vollständig versorgen" (Individualmedizin im MANV) → `ala-01` Opt 2 (false)
+  - „Feuerlöscher ins Gesicht" → `erk-02` Opt 3 (false); „weiterlaufen lassen" → `erk-02` Opt 2 (false)
+  - „Presse Auskunft geben + Betroffene allein lassen" → `ueb-01` Opt 2 (false); „ausführliche Sacherklärung an panisch-verwirrte Person" → `ueb-01` Opt 3 (false).
+- **Leitprinzip korrekt** „für möglichst viele das Beste — erst sichten, dann helfen" (F-08) durchgängig; Individualversorgung vor Sichtung nur als Falsch-Aussage (`erm-03` Card 1 = false).
+- **Realitätscheck / kein Kompetenz-Overreach:** Pflege macht **Vorsichtung bis der Rettungsdienst übernimmt** (kontext erstmassnahmen), löscht **nicht den Zimmerbrand** (Feuerwehr), leistet **psych. Erste Hilfe** und **informiert** KIT/Notfallseelsorge für die tiefe Betreuung (F-10/F-11). Rollenschärfe stimmt.
+- **Keine Pseudo-Empathie / Werte-über-Fachlichkeit:** psych. Erste Hilfe (Wert) steht neben, nicht über Eigenschutz + Sichtung (Fachlichkeit). Kein empathischer Filler ersetzt die Prioritätenlogik.
+- **Step-Typ-Pflichten:** MC mit `explanation`+`explanationB1` je Option; pflegewagen mit `erklaerung`+`erklaerungB1` je Item + plausiblen Distraktoren; truefalse unzweideutig mit Standard-Erklärung; branching mit differenzierten Konsequenzen + Patient-Reaktion; reflection/freetext mit Sandwich-`systemPrompt` bzw. `musterantwort`+`bewertungskriterien`. „du"-Anrede durchgängig.
+- **Kleiderbrand (F-05):** aufhalten → Wasser/Tücher/Wolldecke/wälzen → Feuerlöscher, nicht ins Gesicht. Korrekt gelehrt.
+- **KB-Marker (LE4-Set, Primär I.4)** stimmen mit der Vorgabe überein: I.4 (Tabs A/B, erk-01/02, ala-01, erm-01/02/03), III.2 (Tab C), II.1 (ueb-01), V.2 (ref-01/02). Kein Marker außerhalb des LE4-Sets (I.2 korrekt entfernt).
+- **10 Glossar-Einträge** fachlich korrekt und mit dem Content konsistent (SK-Farben, „nur Einsatzleitung gibt Auskunft", Notfallplan der eigenen Einrichtung).
+
+### NIEDRIG — Abwägungs-Notizen für die Gründerin (keine Fehler, kein K.O.)
+
+| # | Ort | Beobachtung | Beleg / Einordnung |
+|---|-----|-------------|--------------------|
+| N1 | Tab C `ueb-00b` + `ueb-01` | Frau Radtke wird als **„schwerhörig"** und **„demenzkrank"** behandelt (Lippenlesen, „demenzkranke Frau"), obwohl der Eröffnungs-`kontext` nur „verängstigt und orientierungslos" etabliert. Fachlich ist der Rat (deutlich von vorn sprechen, Berührung ankündigen) korrekt und schadet nie — nur narrativ nicht vorbereitet. Empfehlung: Schwerhörigkeit/Demenz in `patient.ts` bzw. Eröffnungskontext kurz setzen ODER Formulierung generalisieren. | Konsistenz (F-10 korrekt gestützt; Attribut nur unetabliert) |
+| N2 | `ueb-01` Branching | Die korrekte Option 1 bündelt mehrere Richtig-Handlungen und ist sichtbar länger/aktionsreicher als die beiden Distraktoren → milde Längen-Bias-Gefahr (Länge als Tell). Bei branching weniger kritisch als bei MC. Optional: Distraktoren gleich lang halten. | MC/Branching-Bias (didaktisch) |
+| N3 | Tab A `ala-00b` kerntext | „…heißt das **Katastrophe oder Großschadensereignis**" setzt beide Begriffe gleich, während Glossar/Spektrum sie differenzieren (Katastrophe = Teilmenge von Großschadensereignis, das örtl. Kräfte übersteigt). B1-Vereinfachung, deckungsgleich mit F-02, aber terminologisch etwas lose. | Terminologie (F-01/F-02 gestützt) |
+| N4 | `erk-01` Erklärung (Opt 2) vs. `erk-02` | Opt-2-Erklärung sagt „das Löschen macht die Feuerwehr" (Zimmerbrand mit Rauch), während `erk-02` die Pflege den **Kleiderbrand** löschen lässt (F-05). Fachlich konsistent (Personen-/Entstehungsbrand ≠ ausgebreiteter Zimmerbrand), für sehr wörtliche Lernende aber evtl. verwirrend. Optional: Unterschied Zimmerbrand vs. Kleiderbrand/Löschversuch am Entstehungsbrand explizit machen. | Cross-Step-Nuance (kein Widerspruch) |
+
+---
+
+## Beschaffung
+Keine — alle Befunde sind literaturbelegt (Pflege heute 2019, Kap. 14.4/14.6/14.7/16.4; F-01..F-12 verbatim verifiziert).
+
+## Zusammenfassung
+- **Deterministische 4 Lenses:** alle grün (0 HOCH/MITTEL/NIEDRIG). Zitate 28/28, Grounding 0 dangling, Faktentreue 100%.
+- **Semantischer 5. Lens:** PASS. Anti-Patterns sauber als Distraktoren isoliert; Leitprinzip, Sichtungskategorien, Eigenschutz, Rollenschärfe (Vorsichtung/Feuerwehr/KIT/Einsatzleitung) korrekt. 4 NIEDRIG-Abwägungsnotizen als Vorlage für die Gründerin.
+- **K.O.:** keiner (≥1 HOCH nötig).
+
+**Verdikt: ✅ PASS**

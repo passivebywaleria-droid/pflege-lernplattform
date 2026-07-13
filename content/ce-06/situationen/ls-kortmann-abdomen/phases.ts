@@ -39,7 +39,8 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
       phase: 1,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Akutes Abdomen erkennen als Handlungsgrundlage → I.4 (LE3-Set).
+      kompetenzbereich: "I.4",
       quellen: ["Paetz Chirurgie 2017, Kap. 12.6 (Akutes Abdomen: Definition, Ursachen, Differentialdiagnostik)"],
       track: "basis",
       modus: "challenge",
@@ -93,7 +94,8 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
       phase: 1,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Schmerzeinschätzung als Grundlage der Akutversorgung → I.4 (LE3-Set).
+      kompetenzbereich: "I.4",
       quellen: ["I care Krankheitslehre, Kap. 7.1 (Schmerzarten: somatisch, viszeral, neurogen; Kolik)"],
       track: "basis",
       modus: "challenge",
@@ -143,11 +145,74 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
       },
     },
     {
+      // Wissens-Tab A (curriculum-first): VOR der Anwendung erk-03 (Ileo/Kolo einordnen).
+      // Literatur-belegt (F-10/F-11/F-12, Paetz Chirurgie Kap. 23.8/23.9) + paraphrasiert (Abstandstest 0).
+      // Kein Antwort-Step.
+      stepId: "ce06-kortmann-erk-02b-stoma-verstehen",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // K1: postoperative Stoma-Versorgung = pflegerische Akut-Fertigkeit → I.4 (LE3-Set).
+      kompetenzbereich: "I.4",
+      quellen: ["Paetz Chirurgie 2017, Kap. 23.8/23.9"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-kortmann-stoma-wissen",
+      tag: "krankheitslehre",
+      themaPrimaer: "abdomen-stoma-drainagen",
+      // F-10 (Kolostoma) · F-11 (Ileostoma) · F-12 (Hautschutz/Mazeration/Hartmann temporär).
+      kernfaktId: ["F-10", "F-11", "F-12"],
+      transition: "Ordne jetzt Herrn Kortmanns Stoma selbst ein.",
+      contentC1: {
+        title: "Stoma verstehen: Ileo- oder Kolostoma?",
+        body: "",
+        glossarBegriffe: ["Kolostoma", "Ileostoma", "Hautschutzplatte"],
+      },
+      inlineWissen: {
+        bausteinRef: "abdomen-stoma-drainagen-stoma-verstehen",
+        themaPrimaer: "abdomen-stoma-drainagen",
+        storyAufhaenger:
+          "Herr Kortmann hat seit der Not-OP einen künstlichen Darmausgang am linken Unterbauch. Ob er später zurückverlegt werden kann und wie empfindlich die Haut drumherum ist, hängt an einer einzigen Frage: Welcher Darm wird da ausgeleitet?",
+        kerntext:
+          "Ein Stoma ist ein künstlich angelegter Darmausgang. Entscheidend ist, welcher Darmabschnitt ausgeleitet wird — Dickdarm oder Dünndarm.\n\nBei Herrn Kortmann ist es ein Kolostoma: die Ausleitung des Dickdarms, typischerweise im linken Unterbauch. Der Stuhl ist hier breiig bis fest. Weil bei der Hartmann-Operation nur ein Stück Darm vorübergehend stillgelegt wird, ist dieses endständige Kolostoma meist temporär — es kann später in einer weiteren Operation zurückverlegt werden.\n\nDas Gegenstück ist das Ileostoma: die Ausleitung des Dünndarms, meist im rechten Unterbauch. Sein Inhalt ist dünnflüssig, reichlich (rund ein Liter am Tag) und aggressiv — er greift die Haut an und weicht sie bei Kontakt wund auf (Mazeration). Deshalb wird ein Ileostoma vorstehend als kleiner Nippel angelegt und die Hautschutzplatte besonders genau zugeschnitten, damit möglichst wenig Haut mit dem Sekret in Berührung kommt.\n\nMerke dir Seite und Inhalt: links, breiig-fest = Kolostoma (Dickdarm); rechts, dünn und aggressiv = Ileostoma (Dünndarm).",
+        faustregel:
+          "Links, breiig-fest, oft nur vorübergehend = Kolostoma (Dickdarm) — so bei Herrn Kortmann. Rechts, dünnflüssig, hautaggressiv = Ileostoma (Dünndarm), Hautschutzplatte besonders exakt zuschneiden.",
+        spektrum: [
+          {
+            patientName: "Herr Kortmann",
+            situationsId: "ls-kortmann-abdomen",
+            hauptfaktor: "Kolostoma (Dickdarm)",
+            kurzbeschreibung:
+              "Links, Stuhl breiig bis fest. Nach der Hartmann-OP meist temporär — später rückverlegbar.",
+          },
+          {
+            patientName: "Ileostoma (Dünndarm)",
+            hauptfaktor: "hautaggressiv",
+            kurzbeschreibung:
+              "Rechts, dünnflüssig (~1 L/Tag), greift die Haut an → als Nippel angelegt, Hautschutzplatte exakt zugeschnitten.",
+          },
+          {
+            patientName: "Die Hautschutzplatte",
+            hauptfaktor: "schützt die Haut",
+            kurzbeschreibung:
+              "Sie deckt die Haut rund ums Stoma ab; je aggressiver der Inhalt, desto genauer muss sie zugeschnitten sein.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Herr Kortmann hat ein Stoma links im Unterbauch, Stuhl breiig-fest — welches ist es, und was heißt das?",
+          rueckseite:
+            "Kolostoma (Dickdarm, links, breiig-fest); nach Hartmann meist temporär, später rückverlegbar. Gegenstück Ileostoma (Dünndarm, rechts, dünnflüssig ~1 L/Tag, aggressiv → als Nippel angelegt, Hautschutzplatte exakt zuschneiden gegen Mazeration).",
+        },
+      },
+    },
+    {
       stepId: "ce06-kortmann-erk-03",
       phase: 1,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      // Stoma fachlich einordnen als Grundlage der postop Versorgung → I.4 (LE3-Set).
+      kompetenzbereich: "I.4",
       quellen: [
         "Paetz Chirurgie 2017, Kap. 23.8.2/23.8.3 (Ileostoma, Kolostoma, Hartmann)",
         "Paetz Chirurgie 2017, Kap. 23.9 (Versorgungsanforderungen)",
@@ -204,7 +269,8 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
       phase: 1,
       stepType: "branching",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      // Stoma-Inspektion (K1) = pflegerische Akut-Fertigkeit → I.4 (LE3-Set).
+      kompetenzbereich: "I.4",
       quellen: ["Paetz Chirurgie 2017, Kap. 23.9.2 (Postoperative Stomapflege: Inspektion, Durchblutung, Ödem)"],
       track: "basis",
       modus: "praxis-sim",
@@ -257,7 +323,8 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
       phase: 1,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Postop Überwachung/Frühmobilisation/Katheter (W4/K) = pflegerisches Handeln → I.4 (LE3-Set).
+      kompetenzbereich: "I.4",
       quellen: [
         "Paetz Chirurgie 2017, Kap. 9.2.4/9.5 (Frühmobilisierung, Pneumonieprophylaxe, Harnverhalt)",
         "Paetz Chirurgie 2017, Kap. 23.9.2 (postop Darmtätigkeit)",
@@ -327,11 +394,73 @@ export const CE06_SIT_KORTMANN_ALARMIEREN: SituationsPhase = {
     "Du erklärst Herrn Kortmann seine Schläuche. Da siehst du: Die Drainage im Bauch hat sich schnell mit frischem, hellrotem Blut gefüllt. Herr Kortmann ist blasser als vorhin. Jetzt musst du richtig reagieren.",
   kernSteps: [
     {
+      // Wissens-Tab B (curriculum-first): VOR der Anwendung ala-01 (Drainagen einordnen).
+      // Literatur-belegt (F-07/F-08/F-09, Paetz Chirurgie Kap. 7.5) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-kortmann-ala-00b-drainagen-verstehen",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // W3/K2: Wirkungsweise + Umgang mit Drainagen = pflegerische Fertigkeit → I.4 (LE3-Set).
+      kompetenzbereich: "I.4",
+      quellen: ["Paetz Chirurgie 2017, Kap. 7.5"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-kortmann-drainagen-wissen",
+      tag: "pflege",
+      themaPrimaer: "abdomen-stoma-drainagen",
+      // F-07 (Bauchdrainage ohne Sog) · F-08 (Sog-Systeme, Redon) · F-09 (geschlossenes System, aseptisch).
+      kernfaktId: ["F-07", "F-08", "F-09"],
+      transition: "Ordne jetzt Herrn Kortmanns Drainagen selbst ein.",
+      contentC1: {
+        title: "Drainagen: wofür — und warum kein Sog in den Bauch",
+        body: "",
+        glossarBegriffe: ["Drainage", "Redon-Drainage", "aseptisch"],
+      },
+      inlineWissen: {
+        bausteinRef: "abdomen-stoma-drainagen-drainagen-verstehen",
+        themaPrimaer: "abdomen-stoma-drainagen",
+        storyAufhaenger:
+          "Herr Kortmann fragt: „Wofür ist dieser Schlauch?“ Er hat zwei Drainagen — und ausgerechnet die im Bauch folgt einer Regel, die man leicht falsch macht.",
+        kerntext:
+          "Eine Drainage leitet Wundsekret, Blut oder Eiter aus einer Wunde oder Körperhöhle nach außen ab. So kann sich nichts stauen, und du siehst zugleich, was und wie viel herauskommt — ein wichtiges Frühwarnsystem.\n\nEs gibt Drainagen mit und ohne Sog. Die Redon-Drainage zum Beispiel liegt unter der Haut (subkutan) und saugt aktiv — sie ist die häufigste Weichteil-Saugdrainage. Ganz anders die Drainage in der Bauchhöhle: Sie läuft OHNE Sog. Der Grund ist wichtig: Ein Sog könnte den empfindlichen Darm ansaugen und schädigen (bis hin zu Loch oder Fistel). Deshalb bekommt eine Bauchhöhlendrainage niemals Sog.\n\nZwei Dinge gelten für alle Drainagen: Sie sind an ein geschlossenes Auffanggefäß angeschlossen — das hält Keime draußen. Und der Verbandwechsel erfolgt aseptisch (keimfrei), weil die Drainage eine direkte Verbindung ins Körperinnere ist. So schützt du Herrn Kortmann vor einer Infektion über den Schlauch.",
+        faustregel:
+          "Drainage = leitet Sekret/Blut/Eiter ab und warnt früh. Die Redon (unter der Haut) saugt — die Bauchdrainage läuft OHNE Sog (Sog schädigt den Darm). Immer geschlossenes System, Verbandwechsel immer aseptisch.",
+        spektrum: [
+          {
+            patientName: "Redon-Drainage",
+            hauptfaktor: "mit Sog (subkutan)",
+            kurzbeschreibung:
+              "Liegt unter der Haut und saugt aktiv — die häufigste Weichteil-Saugdrainage.",
+          },
+          {
+            patientName: "Bauchhöhlendrainage",
+            situationsId: "ls-kortmann-abdomen",
+            hauptfaktor: "OHNE Sog",
+            kurzbeschreibung:
+              "Herrn Kortmanns Bauchdrainage — Sog könnte den Darm ansaugen und schädigen (Loch/Fistel), deshalb sogfrei.",
+          },
+          {
+            patientName: "Jede Drainage",
+            hauptfaktor: "keimfrei halten",
+            kurzbeschreibung:
+              "Geschlossenes Auffanggefäß + aseptischer Verbandwechsel — sonst wandern Keime über den Schlauch nach innen.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Warum bekommt Herrn Kortmanns Bauchdrainage keinen Sog — die Redon aber schon?",
+          rueckseite:
+            "Drainagen leiten Sekret/Blut/Eiter ab und warnen früh. Redon (subkutan) = Saugdrainage. Bauchhöhlendrainage OHNE Sog, weil Sog den Darm ansaugen/schädigen kann (Loch/Fistel). Immer geschlossenes System + aseptischer Verbandwechsel.",
+        },
+      },
+    },
+    {
       stepId: "ce06-kortmann-ala-01",
       phase: 2,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Drainagen fachlich einordnen/handhaben → I.4 (LE3-Set).
+      kompetenzbereich: "I.4",
       quellen: [
         "Paetz Chirurgie 2017, Kap. 7.5.1/7.5.2 (Drainagen: Funktion, Sog, geschlossenes System, aseptischer Wechsel)",
       ],
@@ -387,7 +516,8 @@ export const CE06_SIT_KORTMANN_ALARMIEREN: SituationsPhase = {
       phase: 2,
       stepType: "branching",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      // Nachblutung sofort dem Arzt melden, Drainage nicht eigenmächtig ziehen = Zusammenarbeit/Kompetenzgrenze → III.2 (LE3-Primär).
+      kompetenzbereich: "III.2",
       quellen: ["Paetz Chirurgie 2017, Kap. 12.5 (Intraabdominelle Blutung: postop Nachblutung, Drainage >200 ml/1 h → Arzt)"],
       track: "basis",
       modus: "praxis-sim",
@@ -452,11 +582,76 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
     "Der Arzt ist informiert und kommt gleich, eine Kollegin hilft. Jetzt zählt die richtige Erstversorgung, bis Herr Kortmann untersucht und vielleicht wieder operiert wird.",
   kernSteps: [
     {
+      // Wissens-Tab C (curriculum-first, LE3-Primär III.2): dein Part im Team + Kompetenzgrenze in der Nachblutung.
+      // VOR den Erstmaßnahmen (erm-01..03). Literatur-belegt (F-06/F-13, Paetz Chirurgie Kap. 12.5/23.9.2)
+      // + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-kortmann-erm-00b-team-grenze",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // LE3-Primär-Schwerpunkt (Rahmenplan): intra-/interprofessionelles Handeln (melden, assistieren, Grenzen wahren).
+      kompetenzbereich: "III.2",
+      quellen: ["Paetz Chirurgie 2017, Kap. 12.5/23.9.2"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-kortmann-team-grenze-wissen",
+      tag: "pflege",
+      themaPrimaer: "abdomen-stoma-drainagen",
+      // F-06 (>200 ml/1 h → Arzt; Drainage nicht eigenmächtig ziehen) · F-13 (Stoma-Komplikation ist ärztliche Beurteilung).
+      kernfaktId: ["F-06", "F-13"],
+      transition: "Setz deinen Part jetzt in den Erstmaßnahmen um.",
+      contentC1: {
+        title: "Dein Part im Team: melden, nicht selbst behandeln",
+        body: "",
+        glossarBegriffe: ["Nachblutung", "Kompetenzgrenze", "nüchtern"],
+      },
+      inlineWissen: {
+        bausteinRef: "abdomen-stoma-drainagen-team-grenze",
+        themaPrimaer: "abdomen-stoma-drainagen",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Aus der Bauchdrainage kommt frisches Blut, Herr Kortmann wird blasser. Jetzt entscheidet nicht nur, DASS du reagierst, sondern was dein Part ist — und was ausdrücklich nicht.",
+        kerntext:
+          "In dieser Lage bist du das Frühwarnsystem und die rechte Hand des Chirurgen — aber du behandelst die Blutung nicht selbst. Drei Grenzen sind entscheidend.\n\nErstens die Drainage: Über 200 ml frisches Blut in der ersten Stunde sind ein untrügliches Zeichen einer Nachblutung — dann verständigst du sofort den Arzt. Abklemmen oder Ziehen der Drainage entscheidest du nicht eigenmächtig. Das Blut im Schlauch ist ein Warnhinweis, kein Leck zum Verschließen; die Blutung sitzt im Bauch und wird ärztlich, meist operativ, gestillt.\n\nZweitens das Stoma: Ob eine livide oder graue Verfärbung eine Durchblutungsstörung oder eine Nekrose bedeutet, beurteilt der Arzt. Du erkennst, meldest, dokumentierst und beobachtest — massieren oder eigenmächtig behandeln würde das frische Gewebe nur schädigen.\n\nDrittens die Vorbereitung: Herr Kortmann bleibt nüchtern, weil eine erneute Operation folgen kann (sonst droht in der Narkose eine Aspiration). Volumen, Transfusion und weitere Maßnahmen setzt du um — angeordnet werden sie ärztlich. Dein Part: früh erkennen, sofort melden, überwachen, dokumentieren, vorbereiten.",
+        faustregel:
+          "Über 200 ml frisches Blut/1 h aus der Drainage → sofort Arzt. Drainage NICHT selbst abklemmen/ziehen, Stoma-Verfärbung beurteilt der Arzt, Herr Kortmann bleibt nüchtern (mögliche Re-OP). Du erkennst, meldest, überwachst, bereitest vor.",
+        spektrum: [
+          {
+            patientName: "Drainage blutet (>200 ml/1 h)",
+            situationsId: "ls-kortmann-abdomen",
+            hauptfaktor: "sofort melden",
+            kurzbeschreibung:
+              "Untrügliches Nachblutungszeichen → sofort Arzt. Aber nicht selbst abklemmen/ziehen — gestillt wird im OP.",
+          },
+          {
+            patientName: "Stoma livide/grau",
+            hauptfaktor: "ärztliche Beurteilung",
+            kurzbeschreibung:
+              "Durchblutungsstörung/Nekrose beurteilt der Arzt. Du erkennst, meldest, beobachtest — massierst nicht.",
+          },
+          {
+            patientName: "Herr Gruber (obere GI-Blutung)",
+            situationsId: "ls-gruber-schock",
+            hauptfaktor: "dieselbe Grenze",
+            kurzbeschreibung:
+              "Auch dort: sofort Arzt, nüchtern, Volumen nur auf Anordnung — die Blutung stillt der Arzt, nicht die Pflege.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Bauchdrainage blutet, Stoma verfärbt — was ist dein Part, was ist ärztlich?",
+          rueckseite:
+            ">200 ml frisches Blut/1 h → sofort Arzt; Drainage NICHT selbst abklemmen/ziehen (die Blutung wird im OP gestillt). Stoma-Verfärbung (livide/grau) beurteilt der Arzt — du erkennst/meldest/beobachtest, massierst nicht. Nüchtern lassen (Re-OP möglich), Volumen/Transfusion nach Anordnung. Pflege: erkennen, melden, überwachen, vorbereiten.",
+        },
+      },
+    },
+    {
       stepId: "ce06-kortmann-erm-01",
       phase: 3,
       stepType: "truefalse",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Nüchtern lassen + Re-OP nach ärztlicher Anordnung vorbereiten = Zusammenarbeit/Kompetenzgrenze → III.2 (LE3-Primär).
+      kompetenzbereich: "III.2",
       quellen: [
         "Paetz Chirurgie 2017, Kap. 12.6 (akutes Abdomen: nüchtern)",
         "Paetz Chirurgie 2017, Kap. 12.5 (Nachblutung: Kreislauf-/Hb-Kontrolle, Volumenersatz)",
@@ -502,7 +697,8 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "pflegewagen",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Material für Überwachung/OP-Vorbereitung richten = pflegerische Fertigkeit → I.4 (LE3-Set).
+      kompetenzbereich: "I.4",
       quellen: [
         "Paetz Chirurgie 2017, Kap. 12.5 (Nachblutung: Volumen/Transfusion, Kreislaufkontrolle)",
         "Paetz Chirurgie 2017, Kap. 12.6 (akutes Abdomen: nüchtern)",
@@ -630,7 +826,8 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      // Beginnenden Schock erkennen und akut handeln → I.4 (LE3-Set).
+      kompetenzbereich: "I.4",
       quellen: [
         "Paetz Chirurgie 2017, Kap. 12.6 (akutes Abdomen: Kreislaufsymptome, evtl. Schock)",
         "Paetz Chirurgie 2017, Kap. 12.5 (Nachblutung: Volumenersatz unter Kreislaufkontrolle)",
@@ -703,7 +900,8 @@ export const CE06_SIT_KORTMANN_UEBERGEBEN: SituationsPhase = {
       phase: 4,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "I.1",
+      // SBAR = strukturierte Kommunikation → II.1 (konsistent zu allen CE-06-Situationen).
+      kompetenzbereich: "II.1",
       quellen: ["Leonard et al. 2004 (SBAR)"],
       track: "basis",
       modus: "challenge",
@@ -737,7 +935,7 @@ export const CE06_SIT_KORTMANN_UEBERGEBEN: SituationsPhase = {
               "Richtig. Vollständiges SBAR: was jetzt ist (Blutung aus der Drainage), der Hintergrund (2. Tag nach Not-OP, Kolostoma, Drainage), der kritische Zustand (über 200 ml Blut in 1 Stunde, schneller Puls, niedriger Blutdruck, nüchtern) und eine klare Bitte (sofort in den OP, Blutgruppe unterwegs).",
           },
           {
-            text: "\"Der Patient aus Zimmer 8 blutet aus einer Drainage, ich habe ihm schon frische Wäsche angezogen und alles ein bisschen sauber gemacht, damit es für den OP nicht so wüst aussieht — er kommt jetzt gleich zu euch runter, macht euch da unten mal bereit für ihn.\"",
+            text: "\"Der Patient aus Zimmer 8 blutet aus einer Drainage, ich habe ihn schon frisch gemacht und umgezogen — er kommt gleich zu euch, macht euch bitte bereit für ihn.\"",
             isCorrect: false,
             explanation:
               "Gefährlich verkürzt. Es fehlen die entscheidenden Fakten: welche OP/welcher Tag, welche Drainage, die Blutmenge pro Zeit, die Vitalzeichen, der Nüchternstatus und eine klare Empfehlung. So kann der OP nicht vorbereiten. SBAR verlangt die harten Fakten und eine konkrete Bitte.",
@@ -776,7 +974,8 @@ export const CE06_SIT_KORTMANN_REFLEKTIEREN: SituationsPhase = {
       phase: 5,
       stepType: "reflection",
       bloomLevel: 5,
-      kompetenzbereich: "I.1",
+      // Reflexion der eigenen Haltung (Bedeutung von Information, „was nimmst du mit") → V.2 (LE3-Set).
+      kompetenzbereich: "V.2",
       quellen: ["Paetz Chirurgie 2017, Kap. 23.9 (Information, Beratung, Patientenedukation; Sicherheit im Umgang mit dem Stoma)"],
       track: "basis",
       modus: "schreibtisch",

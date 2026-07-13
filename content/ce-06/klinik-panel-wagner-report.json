@@ -1,0 +1,101 @@
+{
+  "panel": "Adversariales Klinik-Panel (W6)",
+  "ce": "ce-06",
+  "situation": "ls-wagner-reanimation",
+  "datei": "content/ce-06/situationen/ls-wagner-reanimation/phases.ts",
+  "stand": "2026-07-12",
+  "gepruefteSteps": 17,
+  "verdikt": "PASS",
+  "kortsFund": false,
+  "hochBefunde": 0,
+  "quelle_normwerte": {
+    "5-6 cm Kompressionstiefe": "reanimation-bls.md F-06 (Verbatim: 'den Brustkorb mit gestreckten Armen 5–6 cm ein')",
+    "100-120/min Frequenz": "reanimation-bls.md F-07 (Verbatim: '100–120 Kompressionen/Min')",
+    "30:2": "reanimation-bls.md F-08 (Verbatim: '30 Thoraxkompressionen 2 Atemspenden')",
+    "Adrenalin alle 3-5 Min": "reanimation-bls.md F-10 (Verbatim: '1 mg Adrenalin unverdünnt gespritzt' / 'Adrenalin alle 3–5 Minuten')",
+    "Pulskontrolle max 10 Sek / nicht generell": "reanimation-bls.md F-03; ERC 2021"
+  },
+  "lenses": [
+    {
+      "nr": 1,
+      "lens": "Arzneimittel-/Zahlen-Sicherheit (W1)",
+      "tool": "klinik-zahlen-check.ts + referenzwerte.json",
+      "ergebnis": "PASS",
+      "befunde": 0,
+      "geprueft": [
+        "Kompressionstiefe 5–6 cm (erm-01, no-flow-Tab, Karteikarte) — korrekt, ERC 2021 / F-06",
+        "Frequenz 100–120/min (erm-01, no-flow-Tab, helferwechsel-Feedback) — korrekt, ERC 2021 / F-07",
+        "Verhältnis 30:2 (erm-01) — korrekt, ERC 2021 / F-08",
+        "Adrenalin alle 3–5 Min (als-Tab, Karteikarte) — korrekt, F-10; Dosis 1 mg bewusst nicht im Content behauptet (ärztl. Maßnahme), kein Fehler",
+        "Pulskontrolle max 10 Sek / nicht generell (erk-02) — korrekt, F-03",
+        "Helferwechsel ~alle 2 Min (erm-03) — als ERC-Organisationsempfehlung deklariert, nicht als Verbatim-Normwert behauptet — korrekt"
+      ]
+    },
+    {
+      "nr": 2,
+      "lens": "Recht & Ethik / Standards-Currency (W6 Teil D)",
+      "tool": "standards-currency-check.ts",
+      "ergebnis": "PASS",
+      "befunde": 0,
+      "geprueft": [
+        "§ 323c StGB (unterlassene Hilfeleistung) — korrekt, F-04",
+        "§ 221 StGB (Aussetzung, besondere Verantwortung für Anvertraute) — korrekt, F-05",
+        "§ 1827 BGB (Patientenverfügung) — AKTUELLE Fassung seit Betreuungsrechtsreform 01.01.2023 (vormals § 1901a BGB). Kein Drift.",
+        "KPR-Indikation 'im Zweifel reanimieren; Verzicht nur bei ärztlicher Anordnung/gültiger PV' (kpr-Tab, Kellner-Fall) — korrekt, F-01/F-02/F-03",
+        "Keine veraltete Norm (§ 1901a, § 1906/1906a, § 1904) im Content gefunden"
+      ]
+    },
+    {
+      "nr": 3,
+      "lens": "DNQP-/Standard-Konformität — Step-Grounding (W2)",
+      "tool": "step-grounding-check.ts",
+      "ergebnis": "PASS",
+      "befunde": 0,
+      "geprueft": [
+        "Alle claim-tragenden Steps tragen kernfaktId; 0 Dangling, 0 Missing",
+        "BLS/ALS-Ablauf (erkennen → alarmieren → drücken → defibrillieren) folgt ERC 2021 Rettungskette",
+        "SBAR-Übergabe (ueb-01) korrekt auf notfallassessment/F-07 (Leonard 2004) gegroundet, NICHT auf reanimation-bls/F-07 (Frequenz)",
+        "Elektroden-Position anterolateral (rechts unter Klavikula / links seitlich Achsel) — ERC-konform"
+      ]
+    },
+    {
+      "nr": 4,
+      "lens": "Konsistenz (Patient-Daten / Cross-Step)",
+      "tool": "pure",
+      "ergebnis": "PASS",
+      "befunde": 0,
+      "geprueft": [
+        "Wagner-Alter 67 in patient.ts = SBAR 'Herr Wagner, 67' (ueb-01) — konsistent",
+        "SBAR-Background (instabile Angina, 2 Infarkte, Vorhofflimmern/Apixaban) deckungsgleich mit patient.ts",
+        "17 stepIds, keine Duplikate",
+        "Cross-Step-Kontrast korrekt: Wagner (keine PV → reanimieren) vs. Frau Kellner (gültige PV + ärztl. Verzichtsanordnung → NICHT reanimieren) — didaktisch sauber, kein Widerspruch"
+      ]
+    },
+    {
+      "nr": 5,
+      "lens": "Semantisch (pflege-validator, dieser Agent)",
+      "tool": "pflege-anti-pattern-check.ts + semantische Prüfung",
+      "ergebnis": "PASS",
+      "befunde": 0,
+      "antiPatternRegex": 0,
+      "geprueft": [
+        "Distraktor-vs-Empfehlung: alle falschen Optionen isCorrect:false mit korrigierender explanation/feedback — keine als Empfehlung getarnten Fehlaussagen",
+        "'Stabile Seitenlage' zweifach verwendet: als Fallstrick-Distraktor bei Schnappatmung (erk-01, korrekt markiert falsch) UND korrekt im Spektrum bei erhaltener Atmung — semantisch sauber getrennt",
+        "Kellner-Distraktor 'reanimiere trotzdem' korrekt als Fallstrick markiert; 'im Zweifel reanimieren' greift NICHT bei eindeutiger Grundlage — fachlich präzise",
+        "Reflexion (ref-01) validierend, Sandwich-Prinzip im systemPrompt, keine Bagatellisierung der Belastung",
+        "Score-3-/korrekte Optionen tragen jeweils Standard-Verweis (ERC, SBAR, No-Flow, CIRS)"
+      ]
+    }
+  ],
+  "beobachtungen_niedrig": [
+    {
+      "id": "OBS-AED-ANALYSEPAUSE",
+      "severity": "NIEDRIG (Beobachtung, kein Defekt)",
+      "step": "ce06-wagner-erm-02",
+      "text": "Die Szene zeigt den korrekten Lade-/Schock-Moment ('Schock empfohlen. Laden.' → 'Alle weg!' → Schock → sofort weiter). Nicht explizit gezeigt wird die Hände-weg-Pause WÄHREND der AED-Rhythmusanalyse (Artefaktvermeidung). Keine fachlich falsche Aussage — nur ausgeblendet. Für die Gründerin als optionale didaktische Ergänzung notiert, nicht als Befund.",
+      "beleg": "ERC 2021 (AED-Analyse: 'Patient nicht berühren')"
+    }
+  ],
+  "beschaffung": [],
+  "gruenderin_backstop": "Panel = Vorlage, nicht letztes Wort. Ein optionaler NIEDRIG-Hinweis (AED-Analysepause) zur Erwägung — kein K.O., keine Pflicht."
+}

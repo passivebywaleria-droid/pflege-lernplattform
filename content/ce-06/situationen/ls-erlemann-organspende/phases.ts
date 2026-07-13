@@ -30,11 +30,73 @@ export const CE06_SIT_ERLEMANN_ERKENNEN: SituationsPhase = {
     "Auf der Intensivstation liegt Tobias Erlemann, 24, nach einem Motorradunfall mit schwerer Hirnblutung. Zwei unabhängige Ärzte haben den Gesamthirntod festgestellt. Sein Körper wird beatmet, das Herz schlägt mit Unterstützung. Seine Mutter sagt: \"Er ist doch noch warm — wie kann er tot sein?\"",
   kernSteps: [
     {
+      // Wissens-Tab A (curriculum-first): VOR der Anwendung erk-01. Literatur-belegt (F-01/F-02,
+      // I care Pflege Kap. 7.6.5) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-erlemann-erk-00b-hirntod-verstehen",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // Wissenschaftlich-ethisch fundiertes Einordnen des Hirntodkonzepts → II.3 (LE5-Set).
+      kompetenzbereich: "II.3",
+      quellen: ["I care Pflege 2020, Kap. 7.6.5"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-erlemann-hirntod-wissen",
+      tag: "krankheitslehre",
+      themaPrimaer: "organspende-hirntod",
+      // F-01 (Gesamthirntod = irreversibler Ausfall aller Hirnfunktionen) · F-02 (TPG definiert nicht den Tod).
+      kernfaktId: ["F-01", "F-02"],
+      transition: "Ordne den Zusammenhang von Hirntod und Gesetz jetzt selbst ein.",
+      contentC1: {
+        title: "Hirntod verstehen: tot — obwohl das Herz noch schlägt",
+        body: "",
+        glossarBegriffe: ["Gesamthirntod", "Transplantationsgesetz", "irreversibler Hirnfunktionsausfall"],
+      },
+      inlineWissen: {
+        bausteinRef: "organspende-hirntod-hirntod-verstehen",
+        themaPrimaer: "organspende-hirntod",
+        storyAufhaenger:
+          "Tobias' Mutter sitzt am Bett: „Er ist doch noch warm, sein Herz schlägt doch — wie kann er da tot sein?“ Ihr Satz trifft den Kern des Schwersten an dieser Situation. Um ihn zu verstehen, musst du zwei Dinge auseinanderhalten.",
+        kerntext:
+          "Der Gesamthirntod bedeutet: Alle Funktionen des Gehirns sind unumkehrbar (irreversibel) ausgefallen — Großhirn, Kleinhirn und Hirnstamm. Das Gehirn steuert nichts mehr, und es wird sich nie wieder erholen. Genau das ist bei Tobias festgestellt.\n\nDer Widerspruch, an dem seine Mutter verzweifelt: Herz und Kreislauf können durch die Intensivmedizin noch eine Weile weiterlaufen — der Körper ist warm, die Brust hebt sich, das Herz schlägt mit Unterstützung. Trotzdem ist der Mensch tot, weil sein Gehirn endgültig erloschen ist. Der warme Körper täuscht ein Leben vor, das nicht mehr da ist.\n\nUnd noch eine wichtige Unterscheidung: Das Transplantationsgesetz legt nicht fest, wann ein Mensch tot ist. Es bestimmt nur, dass vor einer Organentnahme der Gesamthirntod festgestellt sein muss — als Mindestbedingung. Den Tod selbst stellen Ärzte nach genauen Kriterien fest; er wird nicht per Gesetz definiert.",
+        faustregel:
+          "Gesamthirntod = alle Hirnfunktionen unumkehrbar erloschen — auch wenn das Herz mit Geräten schlägt und der Körper warm ist. Das Transplantationsgesetz definiert NICHT den Tod; es verlangt den festgestellten Hirntod nur als Mindestbedingung für eine Entnahme.",
+        spektrum: [
+          {
+            patientName: "Der warme, beatmete Körper",
+            situationsId: "ls-erlemann-organspende",
+            hauptfaktor: "täuscht Leben vor",
+            kurzbeschreibung:
+              "Herz und Kreislauf laufen mit Geräten weiter — für Angehörige der schwerste Widerspruch.",
+          },
+          {
+            patientName: "Das Gehirn",
+            hauptfaktor: "unumkehrbar erloschen",
+            kurzbeschreibung:
+              "Groß-, Kleinhirn und Hirnstamm sind endgültig ausgefallen — das ist der Tod des Menschen.",
+          },
+          {
+            patientName: "Das Transplantationsgesetz",
+            hauptfaktor: "definiert nicht den Tod",
+            kurzbeschreibung:
+              "Es verlangt nur den festgestellten Gesamthirntod als Mindestbedingung für eine Organentnahme.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Warum ist Tobias tot, obwohl sein Herz schlägt und er warm ist?",
+          rueckseite:
+            "Gesamthirntod = alle Hirnfunktionen (Groß-/Kleinhirn, Hirnstamm) sind unumkehrbar erloschen — der Tod des Menschen. Herz/Kreislauf können mit Intensivmedizin noch laufen (der warme Körper täuscht). Das Transplantationsgesetz definiert nicht den Tod, sondern verlangt den festgestellten Hirntod als Mindestbedingung für eine Entnahme.",
+        },
+      },
+    },
+    {
       stepId: "ce06-erlemann-erk-01",
       phase: 1,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Hirntod/TPG wissenschaftlich-rechtlich einordnen → II.3 (LE5-Set).
+      kompetenzbereich: "II.3",
       quellen: ["I care Pflege 2020, Kap. 7.6.5 (Transplantationsgesetz, Gesamthirntod als Mindestkriterium)"],
       track: "basis",
       modus: "challenge",
@@ -100,12 +162,89 @@ export const CE06_SIT_ERLEMANN_ALARMIEREN: SituationsPhase = {
     "Der Vater fragt: \"Woher wissen die Ärzte so sicher, dass nichts mehr kommt? Nicht dass die sich irren, weil sie an die Organe wollen.\"",
   kernSteps: [
     {
+      // Wissens-Tab B (curriculum-first, KB III.2): wie der Hirntod festgestellt wird + was erlaubt ist
+      // (Entscheidungslösung, Rollen). VOR den Anwendungen ala-01/erm-01. Literatur-belegt (F-04/F-03/F-05,
+      // Pflege heute 43.14 + I care Pflege 7.6.5) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-erlemann-ala-00b-feststellung-recht",
+      phase: 2,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // Interprofessionelles Zusammenspiel (ärztliche Feststellung, Unabhängigkeit, Rollen) + Kompetenzgrenze → III.2 (LE5-Set).
+      kompetenzbereich: "III.2",
+      quellen: [
+        "I care Pflege 2020, Kap. 12.6.3 (zwei qualifizierte Ärzte)",
+        "BÄK-Richtlinie IHA (§ 16 TPG — beide erfahren, mind. einer Neuro)",
+        "BfArM Organspende-Register (seit 18.03.2024)",
+        "Pflege heute 2019, Kap. 43.14",
+      ],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-erlemann-feststellung-recht-wissen",
+      tag: "pflege",
+      themaPrimaer: "organspende-hirntod",
+      // F-04 (zwei qualifizierte Ärzte) · F-03 (Rollen: Pflege gibt nicht frei) · F-05 (Entscheidungslösung) · F-10 (Organspende-Register 2024).
+      kernfaktId: ["F-04", "F-03", "F-05", "F-10"],
+      transition: "Wende das jetzt auf die Fragen der Eltern an.",
+      contentC1: {
+        title: "Doppelt geprüft — und nur mit Einwilligung",
+        body: "",
+        glossarBegriffe: ["Entscheidungslösung", "mutmaßlicher Wille", "Transplantationsbeauftragte"],
+      },
+      inlineWissen: {
+        bausteinRef: "organspende-hirntod-feststellung-recht",
+        themaPrimaer: "organspende-hirntod",
+        storyAufhaenger:
+          "Tobias' Vater ist misstrauisch: „Woher wollen die so sicher wissen, dass nichts mehr kommt — nicht dass die sich irren, weil sie an die Organe wollen.“ Eine berechtigte Frage. Wie wird der Hirntod festgestellt, und wer darf über eine Spende überhaupt entscheiden?",
+        kerntext:
+          "Die Feststellung des Hirntods ist streng geregelt und ärztlich. Zwei qualifizierte Ärzte untersuchen den Patienten unabhängig voneinander nach festen Kriterien; nach der Richtlinie der Bundesärztekammer sind beide seit mehreren Jahren in der Intensivbehandlung schwer hirngeschädigter Menschen erfahren, und mindestens einer ist Facharzt für Neurologie oder Neurochirurgie. Entscheidend: Beide haben nichts mit einer möglichen Transplantation zu tun. Genau das schließt den Interessenkonflikt aus, den der Vater befürchtet. Dazu gehören vorgeschriebene Wartezeiten und technische Untersuchungen. Sorgfalt geht vor Tempo.\n\nDavon getrennt steht die Frage, ob überhaupt Organe entnommen werden dürfen. In Deutschland gilt die Entscheidungslösung: Jeder Mensch entscheidet zu Lebzeiten selbst — er kann zustimmen, einschränken, widersprechen oder eine Vertrauensperson benennen. Niemand ist automatisch Spender. Eine Entnahme ist nur zulässig, wenn eingewilligt wurde und der Hirntod festgestellt ist; bei einem Widerspruch ist sie unzulässig.\n\nFehlt eine eigene Entscheidung — Tobias hat weder einen Ausweis noch einen Eintrag im seit 2024 bestehenden zentralen Organspende-Register —, werden die nächsten Angehörigen einbezogen, und zwar nach dem mutmaßlichen Willen des Verstorbenen, nicht nach ihrem eigenen Wunsch. Und eine Grenze für dich: Die Pflege gibt keine Organentnahme frei; das Aufklärungs- und Entscheidungsgespräch führen der Arzt und die Transplantationsbeauftragte.",
+        faustregel:
+          "Hirntod: zwei qualifizierte, unabhängige Ärzte (beide intensiverfahren, mind. einer Neuro, kein Bezug zur Transplantation), feste Kriterien + Wartezeit. Spende: Entscheidungslösung — niemand ist automatisch Spender; nur mit Einwilligung + festgestelltem Hirntod (im Ausweis oder seit 2024 im Organspende-Register). Ohne eigene Entscheidung: Angehörige nach dem mutmaßlichen Willen. Die Pflege gibt nichts frei.",
+        spektrum: [
+          {
+            patientName: "Die Feststellung",
+            hauptfaktor: "zwei qualifizierte Ärzte",
+            kurzbeschreibung:
+              "Beide qualifiziert und intensiverfahren (mind. einer Neuro), unabhängig vom Transplantationsteam, feste Kriterien + Wartezeit — schließt den Interessenkonflikt aus.",
+          },
+          {
+            patientName: "Die Entscheidungslösung",
+            hauptfaktor: "niemand automatisch Spender",
+            kurzbeschreibung:
+              "Jeder entscheidet zu Lebzeiten selbst; Entnahme nur mit Einwilligung und festgestelltem Hirntod.",
+          },
+          {
+            patientName: "Kein Ausweis",
+            hauptfaktor: "mutmaßlicher Wille",
+            kurzbeschreibung:
+              "Die Angehörigen werden gefragt, was der Verstorbene gewollt hätte — nicht nach ihrem eigenen Wunsch.",
+          },
+          {
+            patientName: "Die Rolle der Pflege",
+            hauptfaktor: "gibt nichts frei",
+            kurzbeschreibung:
+              "Das Aufklärungs- und Entscheidungsgespräch führen Arzt und Transplantationsbeauftragte.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Wie wird der Hirntod festgestellt — und wer entscheidet über eine Spende?",
+          rueckseite:
+            "Feststellung: zwei qualifizierte, vom Transplantationsteam unabhängige Ärzte (beide intensiverfahren, mind. einer Neurologe/Neurochirurg), unabhängig voneinander, feste Kriterien + Wartezeit/Technik. Spende: Entscheidungslösung — nur mit Einwilligung + festgestelltem Hirntod (Ausweis oder seit 2024 Organspende-Register), niemand automatisch Spender; ohne eigene Entscheidung Angehörige nach dem mutmaßlichen Willen. Die Pflege gibt keine Entnahme frei (Arzt/Transplantationsbeauftragte).",
+        },
+      },
+    },
+    {
       stepId: "ce06-erlemann-ala-01",
       phase: 2,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
-      quellen: ["Pflege heute 2019, Kap. 43.14 (Hirntod-Feststellung: zwei unabhängige Ärzte)"],
+      // Ärztliche Hirntod-Feststellung/Unabhängigkeit interprofessionell einordnen → III.2 (LE5-Set).
+      kompetenzbereich: "III.2",
+      quellen: [
+        "I care Pflege 2020, Kap. 12.6.3 (zwei qualifizierte Ärzte)",
+        "BÄK-Richtlinie IHA (§ 16 TPG — beide erfahren, mind. einer Neuro)",
+        "Pflege heute 2019, Kap. 43.14",
+      ],
       track: "basis",
       modus: "challenge",
       lernziel: "ce06-erlemann-feststellung",
@@ -127,12 +266,12 @@ export const CE06_SIT_ERLEMANN_ALARMIEREN: SituationsPhase = {
         mcVariant: "standard",
         optionen: [
           {
-            text: "Zwei Ärzte, die nichts mit der Transplantation zu tun haben und von denen einer langjährige Erfahrung in der Intensivmedizin hat, stellen den Hirntod unabhängig voneinander fest.",
+            text: "Zwei qualifizierte Ärzte, die nichts mit der Transplantation zu tun haben und beide intensivmedizinisch erfahren sind (mindestens einer aus Neurologie/Neurochirurgie), stellen den Hirntod unabhängig voneinander fest.",
             isCorrect: true,
             explanation:
-              "Richtig. Zur Feststellung des Hirntods sind genaue Kriterien festgelegt: Zwei untersuchende Ärzte, die nichts mit der Transplantation zu tun haben und von denen wenigstens einer über langjährige Erfahrung in der Intensivmedizin verfügt, müssen unabhängig voneinander den Hirntod feststellen und dokumentieren. Zusätzlich sind Wartezeiten und/oder technische Untersuchungen erforderlich. Die Unabhängigkeit vom Transplantationsteam schließt genau den vom Vater befürchteten Interessenkonflikt aus.",
+              "Richtig. Zur Feststellung des Hirntods sind genaue Kriterien festgelegt: Zwei qualifizierte Ärzte, die nichts mit der Transplantation zu tun haben und die nach der Richtlinie der Bundesärztekammer beide über mehrjährige Erfahrung in der Intensivbehandlung schwer hirngeschädigter Patienten verfügen (mindestens einer Facharzt für Neurologie oder Neurochirurgie), müssen unabhängig voneinander den Hirntod feststellen und dokumentieren. Zusätzlich sind Wartezeiten und/oder technische Untersuchungen erforderlich. Die Unabhängigkeit vom Transplantationsteam schließt genau den vom Vater befürchteten Interessenkonflikt aus.",
             explanationB1:
-              "Richtig. Zwei Ärzte prüfen den Hirntod unabhängig voneinander. Sie haben nichts mit der Transplantation zu tun, einer hat lange Intensiv-Erfahrung. Dazu kommen Wartezeiten und technische Untersuchungen. So ist ein Interessenkonflikt ausgeschlossen.",
+              "Richtig. Zwei qualifizierte Ärzte prüfen den Hirntod unabhängig voneinander. Sie haben nichts mit der Transplantation zu tun und sind beide erfahren in der Intensivbehandlung (einer aus der Neurologie oder Neurochirurgie). Dazu kommen Wartezeiten und technische Untersuchungen. So ist ein Interessenkonflikt ausgeschlossen.",
           },
           {
             text: "Der behandelnde Intensivarzt entscheidet allein und möglichst rasch, damit die Organe nicht durch langes Warten geschädigt werden und rechtzeitig zur Verfügung stehen.",
@@ -174,7 +313,8 @@ export const CE06_SIT_ERLEMANN_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Rechtliche Voraussetzungen der Entnahme (Entscheidungslösung) wissensbasiert einordnen → II.3 (LE5-Set).
+      kompetenzbereich: "II.3",
       quellen: [
         "I care Pflege 2020, Kap. 7.6.5 (Voraussetzungen der Organentnahme, Angehörige)",
         "Pflege heute 2019, Kap. 43.14 (Entscheidungslösung)",
@@ -227,11 +367,74 @@ export const CE06_SIT_ERLEMANN_ERSTMASSNAHMEN: SituationsPhase = {
       },
     },
     {
+      // Wissens-Tab C (curriculum-first, LE5-Primär I.4): Begleitung in der Grenzsituation — Würde/Abschied,
+      // Pflege drängt nicht. VOR den Anwendungen erm-02/ueb-01. Literatur-belegt (F-03/F-09, I care Pflege 7.6.5 +
+      // Pflege heute 43.14) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-erlemann-erm-00b-begleiten",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // LE5-Primär: Menschen in kritischer Lebenssituation/letzter Lebensphase begleiten (Würde, Abschied).
+      kompetenzbereich: "I.4",
+      quellen: ["I care Pflege 2020, Kap. 7.6.5", "Pflege heute 2019, Kap. 43.14"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-erlemann-begleiten-wissen",
+      tag: "pflege",
+      themaPrimaer: "organspende-hirntod",
+      // F-03 (Pflege begleitet, drängt nicht; Arzt/Transplantationsbeauftragte führen das Gespräch) · F-09 (Würde, Abschied).
+      kernfaktId: ["F-03", "F-09"],
+      transition: "Setz diese Haltung jetzt bei Tobias und seinen Eltern um.",
+      contentC1: {
+        title: "Begleiten, nicht drängen — Würde und Abschied",
+        body: "",
+        glossarBegriffe: ["Würde", "Abschied", "ethische Grenzsituation"],
+      },
+      inlineWissen: {
+        bausteinRef: "organspende-hirntod-begleiten",
+        themaPrimaer: "organspende-hirntod",
+        storyAufhaenger:
+          "Tobias liegt beatmet vor dir, seine Eltern sind fassungslos zwischen Hoffen und Abschied. Was ist jetzt deine Aufgabe an diesem jungen Menschen und seiner Familie — und was ausdrücklich nicht?",
+        kerntext:
+          "Auch ein hirntoter Mensch wird mit Würde behandelt. Tobias' Körper wird intensivmedizinisch weiterversorgt — beatmet, der Kreislauf gestützt. Für die Eltern ist der Anblick zutiefst widersprüchlich: Ihr Sohn wirkt schlafend und warm und ist doch tot. Deine Aufgabe ist die einfühlsame Begleitung: Zeit und Raum zum Abschiednehmen geben, behutsam und ehrlich erklären, nichts überstürzen, den Menschen achten.\n\nDabei kennst du deine Rolle genau. Du drängst nicht in eine Richtung und nimmst den Eltern die Entscheidung nicht ab. Das eigentliche Aufklärungs- und Entscheidungsgespräch zur Organspende führen der Arzt und die Transplantationsbeauftragte — du informierst nur im Rahmen deiner Aufgabe und begleitest.\n\nDas ist eine ethische Grenzsituation: Sie verlangt Fachwissen und Haltung zugleich — Ruhe, Ehrlichkeit, Respekt vor dem, was die Familie glaubt und braucht, und die Fähigkeit, den Widerspruch von warmem Körper und Tod mit auszuhalten, ohne ihn wegzureden.",
+        faustregel:
+          "Auch beim hirntoten Menschen: Würde, Zeit und Raum für den Abschied, behutsame ehrliche Information. Die Pflege begleitet und drängt NICHT — das Aufklärungs- und Entscheidungsgespräch führen Arzt und Transplantationsbeauftragte.",
+        spektrum: [
+          {
+            patientName: "Tobias' Körper",
+            situationsId: "ls-erlemann-organspende",
+            hauptfaktor: "Würde wahren",
+            kurzbeschreibung:
+              "Wird beatmet und kreislaufgestützt weiterversorgt — mit demselben Respekt wie bei jedem Menschen.",
+          },
+          {
+            patientName: "Die Eltern",
+            hauptfaktor: "Abschied ermöglichen",
+            kurzbeschreibung:
+              "Zeit und Raum geben, ehrlich und behutsam erklären, nichts überstürzen — den Widerspruch mit aushalten helfen.",
+          },
+          {
+            patientName: "Das Entscheidungsgespräch",
+            hauptfaktor: "nicht deine Aufgabe",
+            kurzbeschreibung:
+              "Arzt und Transplantationsbeauftragte klären auf; die Pflege drängt nicht und übernimmt diese Rolle nicht.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Was ist deine Aufgabe bei Tobias und seinen Eltern — und was nicht?",
+          rueckseite:
+            "Auch beim hirntoten Menschen die Würde wahren; die Eltern begleiten: Zeit/Raum für Abschied, behutsame ehrliche Information, nichts überstürzen. Die Pflege drängt NICHT zur Spende — das Aufklärungs- und Entscheidungsgespräch führen Arzt und Transplantationsbeauftragte. Ethische Grenzsituation: den Widerspruch warmer Körper/Tod mit aushalten helfen.",
+        },
+      },
+    },
+    {
       stepId: "ce06-erlemann-erm-02",
       phase: 3,
       stepType: "truefalse",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      // Pflege/Würde/Abschied beim hirntoten Menschen = Begleitung in Grenzsituation → I.4 (LE5-Primär).
+      kompetenzbereich: "I.4",
       quellen: ["I care Pflege 2020, Kap. 7.6.5; Pflege heute 2019, Kap. 43.14 (Pflege des hirntoten Menschen)"],
       track: "basis",
       modus: "checkpoint",
@@ -274,7 +477,8 @@ export const CE06_SIT_ERLEMANN_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      // Organmangel/häufige Transplantationen wissensbasiert einordnen → II.3 (LE5-Set).
+      kompetenzbereich: "II.3",
       quellen: ["Pflege heute 2019, Kap. 43.14 (Organmangel, Lebendspende); Transplantationszahlen"],
       track: "basis",
       modus: "challenge",
@@ -344,7 +548,8 @@ export const CE06_SIT_ERLEMANN_UEBERGEBEN: SituationsPhase = {
       phase: 4,
       stepType: "branching",
       bloomLevel: 5,
-      kompetenzbereich: "I.1",
+      // Kommunikative Angehörigenbegleitung in der Grenzsituation (ergebnisoffen, nicht drängen) → II.1 (LE5-Set).
+      kompetenzbereich: "II.1",
       quellen: ["I care Pflege 2020, Kap. 7.6.5 (Angehörige, Entscheidung nach mutmaßlichem Willen); Kommunikation in Grenzsituationen"],
       track: "basis",
       modus: "praxis-sim",
@@ -413,7 +618,8 @@ export const CE06_SIT_ERLEMANN_REFLEKTIEREN: SituationsPhase = {
       phase: 5,
       stepType: "reflection",
       bloomLevel: 5,
-      kompetenzbereich: "I.2",
+      // Reflexion der eigenen Haltung gegenüber unterschiedlichen Überzeugungen (Herz/Hirn) → V.2 (LE5-Set; I.2 nicht im Set).
+      kompetenzbereich: "V.2",
       quellen: ["Pflege heute 2019, Kap. 6 (kulturell-religiöse Sicht auf Hirntod/Organspende)"],
       track: "basis",
       modus: "schreibtisch",
@@ -448,7 +654,8 @@ export const CE06_SIT_ERLEMANN_REFLEKTIEREN: SituationsPhase = {
       phase: 5,
       stepType: "freetext",
       bloomLevel: 5,
-      kompetenzbereich: "I.2",
+      // Ethische Pro/Contra-Diskussion Lebend- vs. postmortale Spende, wissenschaftlich-ethisch fundiert → II.3 (LE5-Set).
+      kompetenzbereich: "II.3",
       quellen: [
         "Pflege heute 2019, Kap. 43.14 (Lebendspende vs. postmortale Spende)",
         "I care Pflege 2020, Kap. 7.6.5 (ethische Bezüge)",

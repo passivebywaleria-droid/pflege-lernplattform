@@ -1,81 +1,69 @@
-# Pflege-Review: ls-lehmann-sturz-sht (mode=code)
+# Pflege-Review: ls-lehmann-sturz-sht
 
-**Geprüft:** 2026-07-03
-**Files:** 3 (phases.ts [5 Phasen], patient.ts, index.ts)
-**Step-Anzahl:** 7 (5 MC, 1 Branching, 1 TrueFalse, 1 Reflection — MC-Zählung inkl. erm-01)
-**Deckt:** CE06-LE1-K1 (Erste-Hilfe bei Wunden, Blutungen, Sturz)
+**Geprüft:** 2026-07-13
+**File:** content/ce-06/situationen/ls-lehmann-sturz-sht/phases.ts (5 Phasen)
+**Grounding:** specs/ce-06/kernfakten/traumatologische-erstversorgung.md (F-01..F-08) + notfallassessment.md (F-07 = SBAR)
+**Fokus:** Akutsituation Sturz + SHT im Heim; 3 neue inlineWissen-Tabs (erk-01b · erm-00b · erm-02b) + Anti-Pattern korrektiv
+**Step-Anzahl:** 9 (4 mc, 1 branching, 1 truefalse, 1 reflection, 3 inlineWissen)
 
 ## Mechanisierte Vor-Checks
-- `standards-currency-check ce-06 --include-plans`: ✅ 0 Treffer (§1831 durchgängig, kein §1906/1906a)
-- `step-grounding-check ce-06`: ✅ PASS — ls-lehmann 7/7 claim-tragende Steps gegroundet, 0 dangling
-- `pflege-anti-pattern-check`: ✅ 0 Treffer in den Lehmann-Files (die 32 Repo-Treffer sind alle CE-02, Anti-Pattern hier nur als korrekt widerlegte Distraktoren)
-- Grep §1906 / „Cushing-Trias": ✅ nicht vorhanden
 
-## Prüf-Fokus — Ergebnis pro Punkt (alle 9 Punkte der Gründerin)
-
-1. **SHT unter Apixaban → 112/CT, verzögerte Blutung** — KORREKT & klar priorisiert (erk-02, ala-01, ueb-01). „Sie ist ja wach" als Falle in ala-01/Opt.2 und ueb-01/Opt.2 sauber widerlegt („'Wach' schließt eine sich entwickelnde Blutung nicht aus"). Grounding F-04/F-05.
-2. **Nicht-Bewegen / Lage belassen / ansprechen UND anfassen (Schwerhörigkeit)** — KORREKT (erk-01). Sinnvoll auf „leicht an der Schulter berühren" abgeschwächt statt „rütteln" wegen WS-Verdacht. Grounding F-01/F-03.
-3. **Wundversorgung: sterile Kompresse + leichter Druck / Druckverband bei starker Blutung; Wärmeerhalt** — KORREKT (erm-01). Grounding F-06/F-07. Siehe NIEDRIG F-06.
-4. **Anti-Pattern nur als FALSCHE Optionen** — VERIFIZIERT: (a) gedämpftes Licht = erm-01/Opt.2 falsch; (b) „Glück gehabt" = erm-01/Opt.3 + ueb-01/Opt.2 falsch; (c) unter den Achseln = erm-02/Opt.2 falsch; (d) beidseitiges Bettgitter = erm-02/Opt.3 + erm-03 falsch. KEINE versehentlich als richtig markiert (erk-01=Opt.1, erk-02=Opt.1, ala-01=Opt.1, erm-01=Opt.1, erm-02=Opt.1, erm-03=isTrue:false korrekt).
-5. **Recht §1831 BGB** — KORREKT und sogar präzise. Quelle bgb-1831.txt direkt geprüft: die Akut-Ausnahme („wenn mit dem Aufschub Gefahr verbunden ist; die Genehmigung ist unverzüglich nachzuholen") steht wörtlich in §1831 Abs. 2, gilt via Abs. 4 für FeM — die Zitierung „§1831 Abs. 2 u. 4" ist damit sachlich richtig. Bevollmächtigte Tochter (Vorsorgevollmacht) + Betreuungsgericht-Genehmigung ist konsistent mit §1831 Abs. 5 i.V.m. §1820 Abs. 2 Nr. 2 BGB. Milde Alternativen genannt (generisch in erm-03, konkret in Reflexion). Siehe NIEDRIG F-04 (nur Grounding-Hygiene).
-6. **Demenz-Deeskalation (erm-02)** — KORREKT: Augenhöhe, mit Namen vorstellen, langsam sprechen, behutsam sichern OHNE Kraft/Fixieren; Osteoporose → kein kraftvolles Festhalten explizit begründet. Fachlich vorbildlich.
-7. **„Cushing-Trias" vermieden** — BESTÄTIGT, taucht nicht auf.
-8. **MC-Längen-Bias** — überwiegend im Rahmen; zwei NIEDRIG-Hinweise (F-01, F-02).
-9. **Distraktoren/Sandwich/Cross-Step/„du"/Umlaute** — Patient-Daten konsistent (86 J., vaskuläre Demenz, Osteoporose, VHF/Apixaban, 3 Stürze/6 Mon., 02:45, 2 PK/48 Bew., Tochter Gudrun Vorsorgevollmacht) über alle Phasen. „du" an Lernende durchgehend, Optionen in Ich-Form. Echte Umlaute überall. Sandwich-Feedback vorhanden.
+| Gate | Ergebnis |
+|------|----------|
+| zitat-verifizierer (Kernfakten) | ✅ 12/12 Belege verbatim-verifiziert |
+| step-grounding-check ce-06 | ✅ PASS ls-lehmann-sturz-sht (0 dangling / 0 missing) |
+| pflege-anti-pattern-check | ✅ Keine Treffer in Lehmann |
+| standards-currency-check --include-plans | ✅ 0 veraltete Normen (§1831 Fassung ab 2023 korrekt) |
+| faktentreue-check | ✅ SBAR + ABCDE gedeckt (Coverage 100%) |
 
 ## Findings
 
-### erm-01 (mc, fallstrick) — Erstversorgung Wunde/Licht/Wärme
+### 3) erstmassnahmen — ce06-lehmann-erm-00b-blutstillung + ce06-lehmann-erm-01 (inlineWissen + mc)
 
-#### F-01 (NIEDRIG): Richtige Option ist die längste (Bündel aus 3 Aktionen)
-- **Stelle:** phases.ts:254 (correct) vs. :262/:270 (Distraktoren)
-- **Problem:** Die korrekte Option bündelt Licht + Kompresse/Druck + Zudecken + nicht-umlagern und ist dadurch merklich länger. Test-wise-Schüler könnten „die vollständigste = längste" wählen (Ríos-Lehre).
-- **Standard-Verweis:** MC-Bias-Kriterium (Ríos-Review).
-- **Empfehlung:** Mitigation vorhanden (Distraktoren sind selbst mehrteilig). Optional Distraktor 2 leicht verlängern oder korrekte Option auf 2 statt 3 Elemente straffen. Kein Blocker.
+#### F-01 (MITTEL): Sub-Claim „kein punktueller Druck über Knochenstufe / Verdacht Schädelbruch" klinisch korrekt, aber nicht gegroundet
+- **Stelle:** Zeile 344 (kerntext), 362-365 (spektrum „Verdacht auf Schädelbruch"), 371 (karteikarte), 406 (erm-01 explanation der richtigen Option)
+- **Problem:** Die Aussage „über einer Knochenstufe / bei Verdacht auf Schädelbruch KEIN punktueller, kräftiger Druck, sondern nur locker steril abdecken" ist fachlich **richtiges Erste-Hilfe-Standardwissen** (imprimierte/offene Schädelverletzung nicht komprimieren). Sie ist aber **nicht** von den zitierten Kernfakten F-06 (Druckverband/sterile Kompresse) oder F-07 (Wärmeerhalt) gedeckt und im `pflege-heute-volltext` nicht verbatim auffindbar (Suche nach „Knochenstufe/Schädelbruch/kein Druck" ohne Treffer). Der `step-grounding-check` schlägt nicht an, weil F-06/F-07 als IDs existieren — die konkrete Aussage aber nicht abdecken. Das verletzt die Projekt-Regel „nichts Ungedecktes", **nicht** die Fachlichkeit.
+- **Standard-Verweis:** Erste-Hilfe-Doktrin (DRK/DGUV: bei Verdacht auf Schädelbruch keinen direkten Druck); im aktuellen CE-06-Korpus nicht verbatim belegt.
+- **Empfehlung:** (a) bevorzugt — verifizierten Verbatim-Beleg als **F-09** in `traumatologische-erstversorgung.md` nachtragen (z.B. `notfallmedizin-index` / DRK-Leitlinie), `kernfaktId` der beiden Steps um `"F-09"` ergänzen. (b) falls kein Korpus-Beleg beschaffbar — den Sub-Claim auf das Belegte reduzieren: „Sterile Kompresse, leichter Druck; bei starker Blutung Druckverband; nicht umlagern" und die Knochenstufe-Ausnahme streichen. Da klinisch wertvoll: (a).
 
-### ueb-01 (mc) — SBAR-Übergabe
+### 3) erstmassnahmen — ce06-lehmann-erm-03 (truefalse)
 
-#### F-02 (NIEDRIG): SBAR-Vollantwort deutlich länger als Distraktoren
-- **Stelle:** phases.ts:415 (langer korrekter SBAR-Block) vs. :423/:431
-- **Problem:** Längen-Signal korreliert mit Korrektheit.
-- **Standard-Verweis:** MC-Bias / SBAR (Leonard 2004).
-- **Empfehlung:** By-design vertretbar — Vollständigkeit IST hier das Lernziel; ein unvollständiges SBAR MUSS kürzer sein. Belassen; ggf. einen Distraktor mit falschem, aber langem „SBAR" bauen, um das Längensignal zu neutralisieren.
+#### F-02 (NIEDRIG): truefalse mit nur einer Karte — Abgrenzung „einseitiges Gitter = keine FeM" nicht als Gegenkarte geübt
+- **Stelle:** Zeile 576-583 (trueFalseCards)
+- **Problem:** Nur eine (falsche) Aussage. Die trennscharfe Abgrenzung (einseitiges Gitter, aus dem die Bewohnerin selbst heraus kann = keine genehmigungspflichtige FeM — steht schon im Tab C, Zeile 537-541) wird als Wahr/Falsch-Mechanik nicht genutzt.
+- **Standard-Verweis:** F-08 (BGB § 1831); Tab C spektrum „Einseitiges Gitter".
+- **Empfehlung:** Optional zweite Karte: „Ein einseitiges Bettgitter, aus dem Frau Lehmann selbst heraus kann, ist keine genehmigungspflichtige freiheitsentziehende Maßnahme." → `isTrue: true`.
 
-### erm-03 (truefalse) — FeM-Recht
+### 3) erstmassnahmen — ce06-lehmann-erm-02 (branching)
 
-#### F-04 (NIEDRIG): Akut-Ausnahme rechtlich korrekt, aber nicht als Verbatim-Beleg in Kernfakt F-08
-- **Stelle:** phases.ts:366 (Explanation) + Kernfakten F-08 (traumatologische-erstversorgung.md:77–85)
-- **Problem:** Der Satz „In akuter Gefahr … Genehmigung … unverzüglich nachzuholen" ist inhaltlich exakt §1831 Abs. 2 S. 2 BGB und via Abs. 4 auf FeM anwendbar — also RICHTIG. Aber die verbatim Belege in F-08 decken nur die generelle Genehmigungspflicht + „längeren Zeitraum/regelmäßig" ab; die Akut-/Nachhol-Klausel ist nicht als Zitat aufgenommen, obwohl der Content sich darauf stützt.
-- **Standard-Verweis:** §1831 Abs. 2 u. 4 BGB; Grounding-Regel (Verbatim-Belege für autoritative Claims).
-- **Empfehlung:** In F-08 den Verbatim-Beleg ergänzen: „Ohne die Genehmigung ist die Unterbringung nur zulässig, wenn mit dem Aufschub Gefahr verbunden ist; die Genehmigung ist unverzüglich nachzuholen" (bgb-1831.txt, Abs. 2). Rein dokumentarisch, kein inhaltlicher Fehler.
+#### F-03 (NIEDRIG): Glossar nennt „Validation" (Feil), die korrekte Option bildet aber v.a. Deeskalation ab
+- **Stelle:** Zeile 448 (glossarBegriffe), 459/461-462 (korrekte Option + feedback)
+- **Problem:** Frau Lehmann fragt desorientiert „Wo ist Mutti?". Die richtige Option deeskaliert vorbildlich (Augenhöhe, Name, langsam, behutsam sichern) — greift den emotionalen Gehalt aber nicht explizit validierend auf (Feil: Gefühl hinter der Äußerung aufnehmen, Realität nicht korrigieren). Positiv: die Option korrigiert die Bewohnerin korrekt **nicht**. Glossar verspricht „Validation", gelehrt wird eher „Deeskalation".
+- **Standard-Verweis:** Validation nach Naomi Feil.
+- **Empfehlung:** Optional im feedback der korrekten Option einen Halbsatz zur validierenden Haltung ergänzen (Gefühl aufgreifen statt „wegdiskutieren").
 
-### erm-02 (branching) — Deeskalation
+## Cross-Step-Konsistenz
 
-#### F-05 (NIEDRIG): Branching nutzt Format nicht aus (keine divergente Patienten-Konsequenz)
-- **Stelle:** phases.ts:308–333
-- **Problem:** Die drei Pfade sind fachlich sauber differenziert, aber die Feedbacks erklären nur (wie MC) — sie zeigen keine unterschiedliche Patienten-Reaktion/Konsequenz („Frau Lehmann beruhigt sich" vs. „stürzt erneut / schreit lauter"). Das Schema `branchingOptions` hat kein `patientResponse`-Feld, daher strukturell limitiert.
-- **Standard-Verweis:** pflege-konformitaet.md — Branching: „unterschiedliche Konsequenzen pro Pfad".
-- **Empfehlung:** Konsequenz in den Feedback-Text einbetten (z.B. „…, Frau Lehmann lässt sich beruhigen und bleibt liegen" / „… sie reißt sich los und schlägt den Kopf erneut an"). Nur didaktische Schärfung.
+- **Patientendaten:** OK — Alter 86 (nur SBAR, kein Widerspruch); Demenz/Osteoporose/Vorhofflimmern unter Apixaban durchgängig; „dritter Sturz in sechs Monaten" (SBAR + Reflexion) konsistent; Apixaban immer Wirkstoff, nie Markenname.
+- **Bettgitter-Framing:** OK — beidseitig durchgängig FALSCH/FeM (erm-02 → erm-02b → erm-03), keine Umkehr.
+- **Licht:** OK — „gedämpftes Nachtlicht" nur Distraktor/Story-Reflex, korrekt gelehrt „Licht voll einschalten". Reflexion (Zeile 700) trennt sauber Orientierungslicht (Sturzprophylaxe, ok) vs. gedämpftes Licht bei Inspektion (falsch) — kein Selbstwiderspruch.
+- **Zeit:** OK — 02:45 Uhr durchgehend, Phasenlogik ohne unerklärte Sprünge.
+- **Recht/Bevollmächtigte:** OK — Tochter (Vorsorgevollmacht) einbinden UND Genehmigung Betreuungsgericht: korrekt, da § 1831 Abs. 4 auch Bevollmächtigte an die Gerichtsgenehmigung bindet.
 
-### Cross-Step
+## Positive Beobachtungen
 
-#### F-03 (NIEDRIG): Token-Kollision „Nachtlicht" — falsch in erm-01, empfohlen in Reflexion
-- **Stelle:** erm-01 (phases.ts:262/265, „gedämpftes Nachtlicht" = falsch) vs. reflektieren (phases.ts:483/487, „Nachtlicht" als Sturzprophylaxe-Alternative empfohlen)
-- **Problem:** Beide sind kontextuell KORREKT (Akut-Inspektion braucht Volllicht ≠ nächtliche Orientierungs-Beleuchtung zur Sturzprävention), aber dasselbe Wort wechselt die Wertung — für B1-Lernende potenziell verwirrend.
-- **Standard-Verweis:** Cross-Step-Konsistenz (pflege-konformitaet.md); DNQP Sturzprophylaxe (Orientierungslicht als Maßnahme).
-- **Empfehlung:** In der Reflexion einen halben Satz zur Abgrenzung ergänzen: „Nachtlicht zur nächtlichen Orientierung (≠ das gedämpfte Licht bei der akuten Wund-Inspektion)". Kein Fachfehler.
-
-### erm-01 (mc) — klinische Anmerkung
-
-#### F-06 (NIEDRIG): Druck auf Stirnwunde bei SHT-Verdacht — bereits sicher formuliert
-- **Stelle:** phases.ts:254/257
-- **Problem:** Bei möglichem Schädelbruch ist fester/direkter Druck auf die Wunde kontraindiziert (Impressionsgefahr). Der Content formuliert bewusst „leichtem Druck" für die Platzwunde und reserviert „Druckverband" für „starke Blutung" — das ist standardkonform und sicher. Nur zur Vollständigkeit erwähnt (Härte-Auftrag).
-- **Standard-Verweis:** Pflege heute Kap. 14.4 (Blutstillung); F-06.
-- **Empfehlung:** Keine Änderung nötig. Optional in der Explanation ergänzen: „kein punktueller, kräftiger Druck bei tastbarer Knochenstufe". Nice-to-have.
+- Anti-Patterns bewusst nur als FALSCHE Optionen + korrektiv gelehrt (Licht, beidseitige Bettgitter, Achselgriff, „Glück gehabt") — Distraktor-vs-Empfehlung sauber getrennt.
+- „du"-Anrede an Lernende durchgängig; „Sie" nur in patientengerichteter Rede (korrekt).
+- Sandwich-Prinzip in Branching-Feedbacks mit realistischer Patient-Reaktion + Körpersprache.
+- Wiederbegegnung Wagner (Kreislauf da vs. Stillstand) fachlich korrekt kontrastiert.
+- SHT unter Antikoagulation → Klinik/CT (F-04/F-05) konsistent; kein eigenmächtiges Absetzen.
+- Cushing-Trias bewusst NICHT behauptet (nicht korpusbelegt) — Abgrenzung eingehalten.
 
 ## Zusammenfassung
+
 - **0 Findings HOCH**
-- **0 Findings MITTEL**
-- **6 Findings NIEDRIG** (F-01/F-02 Längen-Bias, F-03 Nachtlicht-Kollision, F-04 Grounding-Hygiene, F-05 Branching-Format, F-06 klinische Nice-to-have)
-- **Allgemeine Beobachtungen:** Kein Pseudo-Empathie-Bias — im Gegenteil, „Glück gehabt"/gedämpftes Licht sind gezielt als Fallen verbaut und korrekt widerlegt. Standards-Bezug durchgehend belegt (Pflege heute, SBAR Leonard 2004, §1831 BGB verbatim). B1-Varianten vollständig und konsistent. Rechtlich präzise (Akut-Ausnahme, Bevollmächtigten-Kette). Klinische Priorisierung (Antikoagulation als „Notfall-Macher") didaktisch stark herausgearbeitet.
-- **K.O.-Verdikt: PASS** (0 HOCH). Live-Deploy-fähig. Die 6 NIEDRIG-Punkte sind Feinschliff, keine Blocker.
+- **1 Finding MITTEL** (F-01 — Grounding-Gap eines klinisch korrekten Sub-Claims)
+- **2 Findings NIEDRIG** (F-02 truefalse-Kontrast, F-03 Validation-Einlösung)
+- Kein Pseudo-Empathie-Bias, starker Standards-Bezug (DNQP/Erste Hilfe, § 1831, SBAR, Kinästhetik, Deeskalation), B1-Konsistenz durchgängig (jeder Text mit B1-Variante).
+
+**K.O.-Verdikt: PASS** — kein HOCH-Finding, keine pflegerisch falsche Empfehlung, keine Inkonsistenz. F-01 ist ein Nachvollziehbarkeits-/Grounding-Gap (kein Fachfehler); vor Live-Deploy F-09 nachtragen, dann ist die Situation auch grounding-vollständig.

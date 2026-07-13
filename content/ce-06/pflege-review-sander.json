@@ -1,0 +1,93 @@
+{
+  "situationId": "ls-sander-verbruehung",
+  "ce": "ce-06",
+  "geprueft": "2026-07-13",
+  "modus": "code",
+  "files": ["content/ce-06/situationen/ls-sander-verbruehung/phases.ts", "content/ce-06/situationen/ls-sander-verbruehung/patient.ts"],
+  "stepAnzahl": 11,
+  "stepTypen": { "mc": 5, "branching": 1, "truefalse": 1, "reflection": 1, "inlineWissen": 3 },
+  "vorChecks": {
+    "stepGrounding": "PASS",
+    "klinikPanel": "PASS (0 Befunde)",
+    "antiPattern": "0 Treffer in Sander-Dateien"
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "MITTEL",
+      "phase": "alarmieren",
+      "stepId": "ce06-sander-ala-01",
+      "stepType": "mc",
+      "titel": "Claim '2. Grad braucht ärztliche Versorgung' nicht wörtlich von zitiertem F-06 gedeckt",
+      "stelle": "phases.ts Z. 246-251, kernfaktId F-06",
+      "problem": "F-06 groundet nur Schwellen >10% KOF (Klinik) und Gesicht/Hände/Füße/Genital (Zentrum). Frau Sander (~1-2%) erfüllt keine. Die generalisierte Aussage 'zweitgradige Verbrennungen brauchen ärztliche Versorgung' ist Standard-EH-Wissen, steht aber nicht in F-01..F-13.",
+      "standard": "F-06; Pflege heute Kap. 14.6.5",
+      "fix": "Kernfakt ergänzen ('2.-gradige Wunden werden ärztlich beurteilt/versorgt') ODER explanation an F-06 anlehnen: Klinikpflicht ab >10% + Sonderlokalisationen, Sander darunter, aber offene 2.-Grad-Wunde bei allein lebender 74-Jähriger als klinische Einzelfallentscheidung zeitnah ärztlich versorgen."
+    },
+    {
+      "id": "F-02",
+      "severity": "NIEDRIG",
+      "phase": "alarmieren",
+      "stepId": "ce06-sander-ala-01",
+      "stepType": "mc",
+      "titel": "Triage-Stufe 'Rettungsdienst' bei ~1-2% 2.-Grad diskussionswürdig",
+      "stelle": "phases.ts Z. 246; Konsistenz ueb-01",
+      "problem": "Content lehrt 'kleine Fläche, Schock erst >10-15%', eskaliert dann auf Rettungsdienst — für handflächengroße Wunde eher Über-Triage. Vertretbar (Alter/allein/Schmerz), aber interne Spannung.",
+      "standard": "F-03/F-06",
+      "fix": "In explanation ergänzen, warum Rettungsdienst hier gerechtfertigt ist (Analgesie-Bedarf, keine sichere Selbsttransport-Option). 'oder Notaufnahme'-Alternative ist gut."
+    },
+    {
+      "id": "F-03",
+      "severity": "NIEDRIG",
+      "phase": "erstmassnahmen",
+      "stepId": "ce06-sander-erm-01",
+      "stepType": "branching",
+      "titel": "Sandwich-Abschluss in Distraktor-Feedbacks ohne ermutigen-Teil",
+      "stelle": "phases.ts Z. 393/401/409",
+      "problem": "Feedbacks würdigen Absicht + korrigieren präzise, enden aber ohne ermutigenden Abschluss (Sandwich Stufe 3). Fachlich korrekt, didaktischer Feinschliff.",
+      "standard": "Sandwich-Prinzip (pflege-konformitaet.md)",
+      "fix": "Optional ermutigenden Halbsatz anfügen, z.B. 'merk dir die Faustregel: auf die Brandwunde kommt nichts drauf'."
+    },
+    {
+      "id": "F-04",
+      "severity": "NIEDRIG",
+      "phase": "erstmassnahmen",
+      "stepId": "ce06-sander-erm-02",
+      "stepType": "truefalse",
+      "titel": "Beide TrueFalse-Aussagen falsch — Rate-Muster",
+      "stelle": "phases.ts Z. 441-455",
+      "problem": "2 Karten, beide false — 'alles-falsch'-Strategie erreicht 100%. Rein didaktisch, beide Widerlegungen korrekt.",
+      "standard": "TrueFalse-Muster",
+      "fix": "Optional dritte, wahre Karte ergänzen (z.B. 'Brandwunden werden steril/sauber abgedeckt' = wahr, F-05)."
+    },
+    {
+      "id": "F-05",
+      "severity": "NIEDRIG",
+      "phase": "reflektieren",
+      "stepId": "ce06-sander-ref-00d-hitze-kaelte",
+      "stepType": "mc",
+      "titel": "'stark unterkühlt (32 C)' + 'intensivmedizinisch' leicht über Kernfakt hinaus",
+      "stelle": "phases.ts Z. 680/711",
+      "problem": "32 C ist moderate (nicht starke) Hypothermie; F-12 setzt Lebensgefahr <30 C. Intern konsistent (Distraktor-3 nennt korrekt <30 C). 'intensivmedizinisch' nicht wörtlich in F-12/F-13.",
+      "standard": "F-12/F-13",
+      "fix": "'stark' -> 'deutlich' unterkühlt; 'intensivmedizinisch' zu 'engmaschig ueberwacht, bei Bewusstseins-/Kreislaufstoerung stationaer' entschaerfen."
+    }
+  ],
+  "crossStep": {
+    "patientKonsistenz": "OK (74 J., 2. Grad, Unterarm+Oberschenkel, Hypertonie, allein/ambulant durchgehend; SBAR deckt sich)",
+    "sieStattDu": "OK (Lernende du/Imperativ; Sie nur in Patienten-/Nachbarinnen-Rede)",
+    "distraktorDisziplin": "OK (alle 5 gebauten Fehler nur als isCorrect:false, mit Kernfakt widerlegt, nie in Musterloesung/Kerntext)",
+    "f07Kollision": "OK (thermisch-F-07 Inhalationstrauma vs notfallassessment-F-07 SBAR sauber ueber themaPrimaer aufgeloest, kein Dangling)"
+  },
+  "zusammenfassung": {
+    "hoch": 0,
+    "mittel": 1,
+    "niedrig": 4,
+    "pseudoEmpathieBias": false,
+    "groundingBezug": "vollstaendig (jeder EH-Schritt auf F-01..F-13 rueckfuehrbar; Kuehl-Temp/Flaechen/Hypothermie-Werte exakt aus Kernfakten)",
+    "b1Konsistenz": "vollstaendig, fachlich deckungsgleich"
+  },
+  "verdikt": "PASS",
+  "koKriterium": "kein HOCH-Befund",
+  "empfehlung": "F-01 (MITTEL) vor Live-Deploy adressieren (Kernfakt ergaenzen oder explanation an F-06 anlehnen); NIEDRIG optional."
+}

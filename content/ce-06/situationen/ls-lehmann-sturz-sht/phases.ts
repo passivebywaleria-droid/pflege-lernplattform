@@ -4,6 +4,15 @@
 // Grounding: specs/ce-06/kernfakten/traumatologische-erstversorgung.md + notfallassessment.md (verbatim-belegt).
 // Quellen: Pflege heute (7. Aufl.) Kap. 14 (Erste Hilfe), 37.13 (SHT); BGB § 1831 (Fassung ab 2023).
 //
+// WISSENS-TABS (curriculum-first, Gold-Standard-Aufbau wie Wagner/Ríos): 3 inlineWissen-Tabs,
+// jeder VOR/BEI seiner Anwendung, literatur-belegt (F-01..F-08) + paraphrasiert (Abstandstest 0),
+// kein Antwort-Step (verschiebt Play-then-Gate nicht):
+//  - Tab A „Bewusstlosen prüfen, ohne zu schaden" (Ph.1, vor erk-02) — F-01/02/03/04, Wiederbegegnung Wagner.
+//  - Tab B „Blutung stillen und warm halten" (Ph.3, vor erm-01) — F-06/F-07 (+ Licht/Inspektion).
+//  - Tab C „‚Zur Sicherheit ans Bett' — die rechtliche Falle" (Ph.3, vor erm-03) — F-08 (FeM §1831).
+// KB-Marker aus dem LE1-Schwerpunkt-Set korrigiert: I.4 (primär, Akut-Handeln), II.1, I.2, V.2.
+//   (I.4 primär statt II.1-Wand: Erkennen/Erstversorgung ist Akut-Handlungswissen wie bei Wagner/Ríos.)
+//
 // KRITISCH GEBAUT (Anti-Pattern bewusst nur als FALSCHE Optionen, korrektiv gelehrt):
 //  - „gedämpftes Licht" bei Verletzungs-Inspektion → Distraktor; korrekt: Licht voll einschalten.
 //  - „Glück gehabt / ist ja nichts passiert" vor Assessment → nicht als Empfehlung.
@@ -31,7 +40,7 @@ export const CE06_SIT_LEHMANN_ERKENNEN: SituationsPhase = {
       phase: 1,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: [
         "Pflege heute 2019, Kap. 14.6.1 (Bewusstsein prüfen: ansprechen + anfassen)",
         "Kap. 14.6.2 (Lage bei Wirbelsäulenverdacht nicht verändern)",
@@ -84,11 +93,85 @@ export const CE06_SIT_LEHMANN_ERKENNEN: SituationsPhase = {
       },
     },
     {
+      // Wissens-Tab A (Gold-Standard, curriculum-first): kommt NACH dem Hook (erk-01) und
+      // VOR der Anwendung (erk-02: was die Tablettenliste ändert). Literatur-belegt
+      // (F-01/02/03/04, Pflege heute Kap. 14.6/37.13) + paraphrasiert (Abstandstest 0).
+      // Kein Antwort-Step → verschiebt das Play-then-Gate nicht.
+      stepId: "ce06-lehmann-erk-01b-bewusstlos-check",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // LE1-Primär-Schwerpunkt (Rahmenlehrplan): Akut-Handlungswissen — nicht geraten.
+      kompetenzbereich: "I.4",
+      quellen: ["Pflege heute 2019, Kap. 14.6.1/14.6.2/37.13.1"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-lehmann-bewusstlos-check",
+      tag: "pflege",
+      themaPrimaer: "traumatologische-erstversorgung",
+      kernfaktId: ["F-01", "F-02", "F-03", "F-04"],
+      transition: "Und dann fällt dein Blick auf ihren Medikamentenplan.",
+      contentC1: {
+        title: "Jemand liegt am Boden — prüfen, ohne zu schaden",
+        body: "",
+        glossarBegriffe: [
+          "Bewusstseinsprüfung",
+          "Wirbelsäulenverdacht",
+          "Schädel-Hirn-Trauma",
+          "en bloc",
+        ],
+      },
+      inlineWissen: {
+        bausteinRef: "traumatologische-erstversorgung-bewusstlos-check",
+        themaPrimaer: "traumatologische-erstversorgung",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "02:45 Uhr, du kniest neben Frau Lehmann. Sie murmelt, bewegt sich, an der Stirn blutet es. Zwei Reflexe ziehen an dir: sie schnell hochheben und ins Bett, oder noch mal lauter von der Tür rufen. Beide sind falsch. Was stattdessen?",
+        kerntext:
+          "Zwei Handgriffe zuerst — beide in Sekunden. Erstens das Bewusstsein prüfen: ansprechen UND anfassen, ein leichtes Rütteln an den Schultern. Das Anfassen ist entscheidend, denn Schwerhörigkeit kann eine Bewusstseinsstörung nur vortäuschen — gerade bei alten oder verwirrten Menschen heißt keine Antwort nicht automatisch bewusstlos. Rufen aus der Tür genügt also nie.\n\nZweitens: Reagiert sie, bleibt sie zunächst dort liegen, wo du sie findest. Nach einem Sturz ist eine Wirbelsäulenverletzung nicht ausgeschlossen, und dann verschlechtert jedes Hochziehen die Lage. Also nicht ins Bett heben — gegen die Kälte deckst du sie zu. Nur wenn eine echte Gefahr am Ort sie zwingt, sich zu bewegen, dann mit vielen Helfern, Kopf und Rumpf als eine Einheit (en bloc), den Kopf nicht beugen und nicht strecken.\n\nUnd der blutende Kopf? Der ist mehr als eine Platzwunde. Ein Schädel-Hirn-Trauma birgt die Gefahr einer Hirnblutung, die sich auch verzögert entwickeln kann — Stunden später. Deshalb ist eine ärztliche Abklärung Pflicht, und eine Verschlechterung des Bewusstseins ist das wichtigste Warnzeichen.",
+        faustregel:
+          "Ansprechen UND anfassen — keine Antwort heißt nicht bewusstlos. Nach dem Sturz: liegen lassen, zudecken, nicht hochziehen. Kopfverletzung = mögliche (verzögerte) Hirnblutung → ärztlich abklären.",
+        spektrum: [
+          {
+            patientName: "Schwerhörige Bewohnerin",
+            hauptfaktor: "täuscht Bewusstlosigkeit vor",
+            kurzbeschreibung:
+              "Reagiert nicht auf Rufen aus der Distanz — ist aber wach. Erst hingehen, ansprechen UND anfassen zeigt: sie ist bei Bewusstsein.",
+          },
+          {
+            patientName: "Frau Lehmann",
+            situationsId: "ls-lehmann-sturz-sht",
+            hauptfaktor: "SHT unter Blutverdünner",
+            kurzbeschreibung:
+              "Reagiert, aber Kopf blutet und sie nimmt ein Antikoagulans. In der Lage belassen, zudecken — und trotzdem zwingend in die Klinik.",
+          },
+          {
+            patientName: "Sturz mit Gefahr am Ort",
+            hauptfaktor: "Bewegung unvermeidbar",
+            kurzbeschreibung:
+              "Muss sie doch weg (z.B. akute Gefahr), dann mit vielen Helfern, Kopf und Rumpf en bloc, Kopf nicht beugen/strecken.",
+          },
+        ],
+        wiederbegegnung: {
+          basisBausteinId: "reanimation-bls-hks-erkennen",
+          basisPatient: "Herr Wagner",
+          vertiefung:
+            "Bei Herrn Wagner fehlten Reaktion UND normale Atmung — das war der Herz-Kreislauf-Stillstand, da wird sofort reanimiert und die Lage bewusst verändert (auf den Rücken, harte Unterlage). Frau Lehmann reagiert und atmet — der Kreislauf läuft. Dann gilt das Gegenteil: möglichst NICHT bewegen, sondern dort lassen, wo du sie vorgefunden hast, weil die Wirbelsäule verletzt sein kann. Der erste Blick ist immer derselbe: Reaktion und Atmung da oder nicht?",
+        },
+        karteikarte: {
+          vorderseite:
+            "Frau Lehmann liegt nach einem Sturz am Boden, murmelt, reagiert nicht auf deine Frage von der Tür — was tust du, und darfst du sie hochheben?",
+          rueckseite:
+            "Hingehen, ansprechen UND anfassen (Schwerhörigkeit täuscht Bewusstlosigkeit vor). Reagiert sie: in der Lage belassen — nach Sturz mögliche Wirbelsäulenverletzung, nicht hochziehen; gegen Kälte zudecken. Kopfverletzung = Gefahr (verzögerter) Hirnblutung → ärztlich abklären.",
+        },
+      },
+    },
+    {
       stepId: "ce06-lehmann-erk-02",
       phase: 1,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 37.13 (SHT — Gefahr Hirnblutung), Kap. 12 (Antikoagulation/Blutungsgefahr)"],
       track: "basis",
       modus: "challenge",
@@ -224,11 +307,78 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
     "Der Rettungsdienst kommt. Frau Lehmann liegt am Boden, die Stirn blutet, sie wird unruhig. Jetzt zählt die richtige Erstversorgung.",
   kernSteps: [
     {
+      // Wissens-Tab B (curriculum-first): kommt VOR erm-01 — der Schüler versteht
+      // Blutstillung + Licht-fürs-Sehen + Wärmeerhalt, BEVOR er die Erstversorgung in
+      // erm-01 anwendet. Literatur-belegt (F-06/F-07, Pflege heute Kap. 14.4/14.5;
+      // Licht/Inspektion aus ABCDE) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-lehmann-erm-00b-blutstillung",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // LE1-Primär-Schwerpunkt (Rahmenlehrplan): Erstversorgung ist Akut-Handlungswissen.
+      kompetenzbereich: "I.4",
+      quellen: ["Pflege heute 2019, Kap. 14.4/14.5"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-lehmann-blutstillung-wissen",
+      tag: "pflege",
+      themaPrimaer: "traumatologische-erstversorgung",
+      kernfaktId: ["F-06", "F-07"],
+      transition: "Zurück zu Frau Lehmann: die Stirn blutet noch.",
+      contentC1: {
+        title: "Blutung stillen und warm halten",
+        body: "",
+        glossarBegriffe: [
+          "sterile Kompresse",
+          "Druckverband",
+          "Wärmeerhalt",
+        ],
+      },
+      inlineWissen: {
+        bausteinRef: "traumatologische-erstversorgung-blutstillung",
+        themaPrimaer: "traumatologische-erstversorgung",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Der Rettungsdienst ist unterwegs, die Stirn blutet weiter, im Zimmer brennt nur das gedämpfte Nachtlicht. Dein Impuls: schnell irgendetwas auf die Wunde drücken. Aber womit, wie fest — und reicht dieses Licht überhaupt, um zu sehen, was da ist?",
+        kerntext:
+          "Zuerst sehen können. Eine Verletzung lässt sich nur bei ausreichendem Licht beurteilen — das gedämpfte Nachtlicht genügt dafür nicht. Also das Licht voll einschalten, auch wenn es im ersten Moment unsanft wirkt; Rücksicht nimmst du über eine ruhige Stimme, nicht über Halbdunkel.\n\nDann die Blutung. Eine blutende Wunde wird mit einer sterilen Kompresse und leichtem Druck versorgt — kein unsteriles Taschentuch. Bei Frau Lehmanns Kopfplatzwunde genügt genau dieser leichte Druck. Ein fester Druckverband ist für starke Blutungen gedacht, etwa an Armen oder Beinen; er hält den Druck, ohne dass du dauernd mit der Hand zudrücken musst.\n\nUnd das Dritte, das leicht vergessen wird: Wärme. Verletzte kühlen aus, das belastet den Kreislauf zusätzlich. Deshalb zudecken und warm halten. Die Lage änderst du dabei nicht — der Wirbelsäulenverdacht nach dem Sturz bleibt.",
+        faustregel:
+          "Erst Licht voll an — sehen, was ist. Kopfwunde: sterile Kompresse mit leichtem Druck; starke Blutung: Druckverband. Zudecken gegen die Kälte, nicht umlagern.",
+        spektrum: [
+          {
+            patientName: "Frau Lehmann",
+            situationsId: "ls-lehmann-sturz-sht",
+            hauptfaktor: "Kopfplatzwunde",
+            kurzbeschreibung:
+              "Sterile Kompresse mit leichtem Druck — bei einer Platzwunde am Kopf reicht das meist, bis der Rettungsdienst da ist.",
+          },
+          {
+            patientName: "Stark blutende Wunde am Bein",
+            hauptfaktor: "starke Blutung",
+            kurzbeschreibung:
+              "Blutet es kräftig weiter, wird die Blutung mit einem Druckverband gestillt.",
+          },
+          {
+            patientName: "Unterkühlter Verletzter",
+            hauptfaktor: "Auskühlung",
+            kurzbeschreibung:
+              "Zusätzlich konsequent zudecken und warm halten — Auskühlung belastet den Kreislauf und verschlechtert die Lage.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Frau Lehmann blutet nachts an der Stirn, nur das Nachtlicht brennt — wie versorgst du die Wunde richtig?",
+          rueckseite:
+            "Licht voll einschalten (Inspektion braucht Licht). Kopfwunde: sterile Kompresse + leichter Druck; starke Blutung → Druckverband. Zudecken (Wärmeerhalt), nicht umlagern (Wirbelsäulenverdacht).",
+        },
+      },
+    },
+    {
       stepId: "ce06-lehmann-erm-01",
       phase: 3,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14.4 (Blutstillung Druckverband), Kap. 14.5 (Wärmeerhalt); ABCDE (Inspektion nur bei ausreichendem Licht möglich)"],
       track: "basis",
       modus: "challenge",
@@ -254,7 +404,7 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
             text: "Licht voll einschalten, sterile Kompresse mit leichtem Druck auf die Wunde, zudecken — nicht umlagern.",
             isCorrect: true,
             explanation:
-              "Richtig. Zur sicheren Verletzungs-Inspektion braucht es volles Licht (nicht das gedämpfte Nachtlicht). Die blutende Platzwunde wird mit steriler Kompresse und leichtem Druck versorgt (Druckverband bei starker Blutung) — bei tastbarer Knochenstufe / Verdacht auf Schädelbruch aber KEIN punktueller, kräftiger Druck. Wärmeerhalt durch Zudecken. Die Lage bleibt unverändert (Wirbelsäulenverdacht).",
+              "Richtig. Zur sicheren Verletzungs-Inspektion braucht es volles Licht (nicht das gedämpfte Nachtlicht). Die blutende Platzwunde wird mit steriler Kompresse und leichtem Druck versorgt; ein kräftiger Druckverband ist für starke Blutungen gedacht (z.B. an Extremitäten). Wärmeerhalt durch Zudecken. Die Lage bleibt unverändert (Wirbelsäulenverdacht).",
             explanationB1:
               "Richtig. Für die Inspektion brauchst du volles Licht — nicht das schwache Nachtlicht. Die Wunde: sterile Kompresse mit leichtem Druck. Sie zudecken gegen die Kälte. Nicht umlagern.",
           },
@@ -282,7 +432,8 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "branching",
       bloomLevel: 5,
-      kompetenzbereich: "I.1",
+      // Deeskalierende, validierende Ansprache bei Demenz = Kommunikation → II.1 (LE1-Set; I.1 nicht im Set).
+      kompetenzbereich: "II.1",
       quellen: [
         "Pflege heute 2019, Kap. 14.6.2 (Lage nicht verändern); BGB § 1831 (FeM)",
         "Grundprinzip Deeskalation bei Demenz (ruhige, validierende Ansprache auf Augenhöhe)",
@@ -310,9 +461,9 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
             text: "Ruhig auf Augenhöhe gehen, mich mit Namen vorstellen, langsam sprechen und sie behutsam am Aufstehen hindern, ohne sie festzuhalten oder zu zerren — bis der Rettungsdienst da ist.",
             isCorrect: true,
             feedback:
-              "Frau Lehmann hält inne, schaut dich an und wird ruhiger; sie bleibt liegen, bis der Rettungsdienst kommt. — Genau richtig. Bei Menschen mit Demenz wirkt Deeskalation über ruhige, wertschätzende Ansprache auf Augenhöhe besser als Kraft. Du verhinderst den erneuten Sturz durch Präsenz und behutsames Sichern — nicht durch Fixieren. Kraftvolles Festhalten würde die Panik steigern und bei Osteoporose Verletzungen riskieren. So schützt du sie und die (mögliche) Wirbelsäulenverletzung, ohne ihre Rechte zu verletzen.",
+              "Frau Lehmann hält inne, schaut dich an und wird ruhiger; sie bleibt liegen, bis der Rettungsdienst kommt. — Genau richtig. Bei Menschen mit Demenz wirkt Deeskalation über ruhige, wertschätzende Ansprache auf Augenhöhe besser als Kraft. Zu dieser Ansprache gehört, ihre Gefühlswelt ernst zu nehmen (Validation): Du korrigierst ihre Frage nach der Mutter nicht und stellst sie nicht bloß, sondern nimmst die Angst dahinter an und gibst ihr Sicherheit. Du verhinderst den erneuten Sturz durch Präsenz und behutsames Sichern — nicht durch Fixieren. Kraftvolles Festhalten würde die Panik steigern und bei Osteoporose Verletzungen riskieren. So schützt du sie und die (mögliche) Wirbelsäulenverletzung, ohne ihre Rechte zu verletzen.",
             feedbackB1:
-              "Frau Lehmann wird ruhiger und bleibt liegen. — Genau richtig. Bei Demenz hilft ruhiges, freundliches Reden auf Augenhöhe mehr als Kraft. Du hinderst sie sanft am Aufstehen — ohne sie festzuhalten. Festhalten würde die Panik verstärken und bei Osteoporose verletzen.",
+              "Frau Lehmann wird ruhiger und bleibt liegen. — Genau richtig. Bei Demenz hilft ruhiges, freundliches Reden auf Augenhöhe mehr als Kraft. Nimm ihre Angst ernst, statt ihre Frage nach der Mutter zu korrigieren (Validation). Du hinderst sie sanft am Aufstehen — ohne sie festzuhalten. Festhalten würde die Panik verstärken und bei Osteoporose verletzen.",
           },
           {
             text: "Sie fest unter den Achseln greifen und zurückhalten, damit sie sich nicht verletzt.",
@@ -334,11 +485,78 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
       },
     },
     {
+      // Wissens-Tab C (curriculum-first): kommt NACH dem Deeskalations-Hook (erm-02, in dem
+      // das beidseitige Bettgitter als falsche Option auftaucht) und VOR erm-03 (truefalse,
+      // das die FeM-Rechtslage direkt abfragt). Productive-Failure-Schleife: erst evtl. in die
+      // Bettgitter-Falle tappen, dann verstehen, warum. Literatur-belegt (F-08, BGB § 1831
+      // Fassung ab 2023) + paraphrasiert (Abstandstest 0). Kein Antwort-Step.
+      stepId: "ce06-lehmann-erm-02b-fem-bettgitter",
+      phase: 3,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      // Rechtlich-ethische Dimension (FeM/§ 1831) → II.3 (LE1-Set; I.2 nicht im Set).
+      kompetenzbereich: "II.3",
+      quellen: ["BGB § 1831 Abs. 2 u. 4 (Fassung ab 2023, FeM/Genehmigung)"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-lehmann-fem-wissen",
+      tag: "pflege",
+      themaPrimaer: "traumatologische-erstversorgung",
+      kernfaktId: ["F-08"],
+      transition: "Deine Kollegin schlägt genau das gleich noch einmal vor.",
+      contentC1: {
+        title: "„Zur Sicherheit ans Bett“ — die rechtliche Falle",
+        body: "",
+        glossarBegriffe: [
+          "freiheitsentziehende Maßnahme",
+          "Betreuungsgericht",
+          "Fixierung",
+        ],
+      },
+      inlineWissen: {
+        bausteinRef: "traumatologische-erstversorgung-fem-bettgitter",
+        themaPrimaer: "traumatologische-erstversorgung",
+        storyAufhaenger:
+          "In der Panik kam der schnelle, gut gemeinte Gedanke: ab ins Bett, beide Gitter hoch, dann liegt sie sicher und steht nicht wieder auf. Genau dieser Griff ist rechtlich heikel — warum eigentlich?",
+        kerntext:
+          "Wird einem Menschen durch mechanische Vorrichtungen — etwa beidseitige Bettgitter — über einen längeren Zeitraum oder regelmäßig die Freiheit entzogen, ist das eine freiheitsentziehende Maßnahme (FeM). Sie ist grundsätzlich nur mit Genehmigung des Betreuungsgerichts zulässig (§ 1831 BGB, Fassung ab 2023). „Das machen wir immer so“ oder „nur zur Sicherheit“ ist keine Rechtsgrundlage — beidseitiges Hochziehen, um jemanden am Aufstehen zu hindern, ist keine Erste-Hilfe-Maßnahme, sondern rechtlich eine Fixierung.\n\nEs gibt eine wichtige Ausnahme: Besteht eine akute Gefahr, ist ein kurzfristiges Handeln zulässig — die Genehmigung ist dann aber unverzüglich nachzuholen. Und immer gilt der Vorrang milderer Wege: erst Präsenz, ruhige Ansprache, behutsames Sichern, dazu Arzt und Bevollmächtigte einbinden (bei Frau Lehmann die Tochter mit Vorsorgevollmacht). Einsperren ist das letzte Mittel, nicht das erste.",
+        faustregel:
+          "Beidseitige Bettgitter gegen das Aufstehen sind eine freiheitsentziehende Maßnahme — grundsätzlich nur mit Gerichtsgenehmigung (§ 1831 BGB). „Zur Sicherheit“ ersetzt keine Rechtsgrundlage; erst mildere Wege.",
+        spektrum: [
+          {
+            patientName: "Beide Gitter dauerhaft hoch",
+            hauptfaktor: "regelmäßig / länger",
+            kurzbeschreibung:
+              "Um jemanden am Aufstehen zu hindern → freiheitsentziehende Maßnahme, braucht die Genehmigung des Betreuungsgerichts.",
+          },
+          {
+            patientName: "Akute Sturzgefahr jetzt",
+            hauptfaktor: "kurzfristige Gefahr",
+            kurzbeschreibung:
+              "Kurzfristiges Handeln zulässig, Genehmigung unverzüglich nachholen — und zuerst Arzt und Bevollmächtigte einbinden.",
+          },
+          {
+            patientName: "Einseitiges Gitter",
+            hauptfaktor: "Patient kann selbst heraus",
+            kurzbeschreibung:
+              "Wird sie nicht am Verlassen des Bettes gehindert, ist es keine Freiheitsentziehung — also keine genehmigungspflichtige FeM.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Darfst du im Heim beide Bettgitter hochziehen, damit Frau Lehmann nicht aufsteht?",
+          rueckseite:
+            "Nein, nicht einfach so. Beidseitige Bettgitter zum Am-Aufstehen-Hindern über längere Zeit/regelmäßig sind eine freiheitsentziehende Maßnahme — grundsätzlich nur mit Genehmigung des Betreuungsgerichts (§ 1831 BGB). In akuter Gefahr kurzfristig zulässig, Genehmigung unverzüglich nachholen; vorher mildere Wege + Arzt/Bevollmächtigte.",
+        },
+      },
+    },
+    {
       stepId: "ce06-lehmann-erm-03",
       phase: 3,
       stepType: "truefalse",
       bloomLevel: 3,
-      kompetenzbereich: "I.2",
+      // FeM/§ 1831 rechtlich-ethisch bewerten → II.3 (LE1-Set; I.2 nicht im Set).
+      kompetenzbereich: "II.3",
       quellen: ["BGB § 1831 Abs. 2 u. 4 (Fassung ab 2023, FeM/Genehmigung)"],
       track: "basis",
       modus: "checkpoint",
@@ -365,6 +583,12 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Falsch. Werden einem Menschen durch mechanische Vorrichtungen (beidseitiges Bettgitter) über einen längeren Zeitraum oder regelmäßig die Freiheit entzogen, ist das eine freiheitsentziehende Maßnahme und grundsätzlich nur mit Genehmigung des Betreuungsgerichts zulässig (§ 1831 BGB). In akuter Gefahr ist ein kurzfristiges Handeln möglich, die Genehmigung ist dann aber unverzüglich nachzuholen; zuerst sind mildere Alternativen und die Einbindung von Arzt und Bevollmächtigter (Tochter) zu prüfen. 'Das machen wir immer so' ersetzt keine Rechtsgrundlage.",
           },
+          {
+            statement: "Ein einzelnes, niedriges Bettgitter, über das Frau Lehmann selbst hinaussteigen kann, ist keine genehmigungspflichtige freiheitsentziehende Maßnahme.",
+            isTrue: true,
+            explanation:
+              "Richtig. Entscheidend ist, ob dem Menschen die Bewegungsfreiheit tatsächlich genommen wird. Kann Frau Lehmann das Bett selbst verlassen (einseitiges/niedriges Gitter, sie wird nicht am Aufstehen gehindert), liegt keine Freiheitsentziehung vor — also keine genehmigungspflichtige FeM. Zur FeM wird es erst, wenn sie durch die Vorrichtung über längere Zeit oder regelmäßig am Verlassen des Bettes gehindert wird (dann § 1831 BGB, Genehmigung des Betreuungsgerichts). Die mildere, freiheitswahrende Lösung ist immer vorzuziehen.",
+          },
         ],
       },
     },
@@ -389,7 +613,8 @@ export const CE06_SIT_LEHMANN_UEBERGEBEN: SituationsPhase = {
       phase: 4,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "I.1",
+      // SBAR = strukturierte Kommunikation → II.1 (LE1-Set; konsistent zu allen CE-06-SBAR-Steps).
+      kompetenzbereich: "II.1",
       quellen: ["Leonard et al. 2004 (SBAR)"],
       track: "basis",
       modus: "challenge",
@@ -459,7 +684,9 @@ export const CE06_SIT_LEHMANN_REFLEKTIEREN: SituationsPhase = {
       phase: 5,
       stepType: "reflection",
       bloomLevel: 5,
-      kompetenzbereich: "I.2",
+      // E1 (eigene Gefühle/Erfahrungen reflektieren) → V.2 (berufl. Selbstverständnis/Reflexion),
+      // parallel zu Ríos ref-01. Deckt den V.2-Schwerpunkt des LE1-Sets nachweisbar.
+      kompetenzbereich: "V.2",
       quellen: ["Pflege heute 2019, Kap. 14 (Nachbesprechung); Sturzanalyse + sturzfreundliche Alternativen (Niedrigbett, Sensormatte, Nachtlicht, Hüftprotektoren)"],
       track: "basis",
       modus: "schreibtisch",

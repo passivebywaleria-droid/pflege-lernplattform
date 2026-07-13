@@ -28,7 +28,7 @@ export const CE06_SIT_RIOS_ERKENNEN: SituationsPhase = {
       phase: 1,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 26.6.5 (Hypoglykämie — Blutzuckermessung sofort)", "Kap. 21.2.3 (Synkope)"],
       track: "basis",
       modus: "challenge",
@@ -78,11 +78,72 @@ export const CE06_SIT_RIOS_ERKENNEN: SituationsPhase = {
       },
     },
     {
+      // Wissens-Tab (Ríos-Kernwissen): Hypoglykämie — verstehen VOR der Anwendung
+      // (Productive Failure: erk-01 Hook → dieser Tab → erk-02/erm-01 Anwendung).
+      // Gegroundet F-03/F-04/F-05. Paraphrasiert (Abstand 0).
+      stepId: "ce06-rios-erk-01b-hypoglykaemie",
+      phase: 1,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.4",
+      quellen: ["Pflege heute 2019, Kap. 26.6.5 (Hypoglykämie)"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-rios-hypoglykaemie-wissen",
+      tag: "pflege",
+      themaPrimaer: "neurologische-akutsituationen",
+      kernfaktId: ["F-03", "F-04", "F-05"],
+      transition: "Zurück zu Herrn Ríos: Der Wert ist da.",
+      contentC1: {
+        title: "Die Unterzuckerung, die alles imitiert",
+        body: "",
+        glossarBegriffe: ["Hypoglykämie", "Insulin", "Aspiration"],
+      },
+      inlineWissen: {
+        bausteinRef: "hypoglykaemie",
+        themaPrimaer: "neurologische-akutsituationen",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Ein Stich, ein Wert: 48. Warum war genau dieser eine Handgriff bei Herrn Ríos wichtiger als jeder andere — und was macht die Unterzuckerung so tückisch?",
+        kerntext:
+          "Eine Hypoglykämie ist ein Blutzucker unter etwa 50 mg/dl. Beim Diabetiker entsteht sie klassisch aus einer Kombination: die gewohnte Insulindosis, aber zu wenig gegessen (oder mehr verbraucht, etwa durch Belastung).\n\nDas Gehirn lebt von Glukose. Fehlt sie, kommt es zu Unruhe, Schwitzen, Verwirrtheit, bis hin zu einseitigen Ausfällen. Und genau das ist die Falle: Die Unterzuckerung kann einen Schlaganfall täuschend imitieren. Deshalb ist der Blutzucker-Stich der erste — und oft vergessene — Schritt bei jeder unklaren neurologischen Akutsituation. Er klärt in Sekunden, ob eine sofort behebbare Ursache dahintersteckt.\n\nWie behandelt wird, hängt vom Bewusstsein ab. Wer wach ist und sicher schlucken kann, bekommt schnelle Kohlenhydrate zu essen oder trinken (etwa Traubenzucker). Wer bewusstseinsgetrübt ist, bekommt NICHTS oral — Aspirationsgefahr. Dann ist Glukose über die Vene die Behandlung, und die ordnet der Arzt an und verabreicht sie.",
+        faustregel:
+          "Insulin plus zu wenig gegessen = Unterzucker im Verdacht. Erst Blutzucker messen. Wach → etwas Süßes; benommen → nichts oral, Glukose i.v. durch den Arzt.",
+        spektrum: [
+          {
+            patientName: "Wacher Patient",
+            hauptfaktor: "schluckfähig",
+            kurzbeschreibung:
+              "Kann sicher schlucken → schnelle Kohlenhydrate zu essen/trinken (Traubenzucker, Saft), dann nachmessen.",
+          },
+          {
+            patientName: "Herr Ríos",
+            situationsId: "ls-rios-synkope",
+            hauptfaktor: "bewusstseinsgetrübt",
+            kurzbeschreibung:
+              "Reagiert nur auf Schmerzreiz → nichts oral (Aspiration). Glukose i.v. ist ärztliche Behandlung; du bereitest vor und assistierst.",
+          },
+          {
+            patientName: "Symptome, aber Blutzucker normal",
+            hauptfaktor: "andere Ursache",
+            kurzbeschreibung:
+              "Kein Unterzucker → weiterdenken: Synkope, Schlaganfall, kardiales Ereignis? Nicht bei der Hypoglykämie hängenbleiben.",
+          },
+        ],
+        karteikarte: {
+          vorderseite:
+            "Diabetiker unter Insulin wird plötzlich verwirrt/bewusstseinsgetrübt — was zuerst, und wie behandelst du je nach Bewusstsein?",
+          rueckseite:
+            "Zuerst Blutzucker messen (unter ~50 = Hypoglykämie, imitiert einen Schlaganfall). Wach + schluckfähig → schnelle Kohlenhydrate oral. Bewusstseinsgetrübt → nichts oral (Aspiration), Glukose i.v. durch den Arzt.",
+        },
+      },
+    },
+    {
       stepId: "ce06-rios-erk-02",
       phase: 1,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 26.6.5 (Hypoglykämie unter 50 mg/dl; Insulin + zu wenig KH)"],
       track: "basis",
       modus: "challenge",
@@ -222,7 +283,7 @@ export const CE06_SIT_RIOS_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "branching",
       bloomLevel: 5,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 26.6.5 (Behandlung nach Bewusstsein; orale Gabe/Aspiration)"],
       track: "basis",
       modus: "praxis-sim",
@@ -275,7 +336,7 @@ export const CE06_SIT_RIOS_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "III.2",
       quellen: ["Pflege heute 2019, Kap. 26.6.5 (Glukose 40 % i.v. = ärztliche Behandlung)"],
       track: "basis",
       modus: "challenge",
@@ -329,7 +390,7 @@ export const CE06_SIT_RIOS_ERSTMASSNAHMEN: SituationsPhase = {
       phase: 3,
       stepType: "mc",
       bloomLevel: 3,
-      kompetenzbereich: "II.1",
+      kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 14/5.5 (Lagerung); Kap. 15 (Kopftieflage kontraindiziert)"],
       track: "basis",
       modus: "challenge",
@@ -355,9 +416,9 @@ export const CE06_SIT_RIOS_ERSTMASSNAHMEN: SituationsPhase = {
             text: "Da er nur auf Schmerzreiz reagiert, hat die stabile Seitenlage (Atemwegsschutz) Vorrang; Beine hochlegen als Kreislaufhilfe, soweit die Dialyse-Zugänge es zulassen.",
             isCorrect: true,
             explanation:
-              "Richtig. Weil Herr Ríos bereits bewusstseinsgetrübt ist (reagiert nur auf Schmerzreiz), steht der Atemwegsschutz an erster Stelle: die stabile Seitenlage verhindert Aspiration. Das Hochlegen der Beine unterstützt bei niedrigem Blutdruck ergänzend den Kreislauf, soweit es die Blutlinien/Zugänge der Dialyse zulassen. Dazu kontinuierliche Überwachung von Atmung und Bewusstsein.",
+              "Richtig. Weil Herr Ríos bereits bewusstseinsgetrübt ist (reagiert nur auf Schmerzreiz), steht der Atemwegsschutz an erster Stelle: die stabile Seitenlage verhindert Aspiration. Das Hochlegen der Beine unterstützt bei niedrigem Blutdruck ergänzend den Kreislauf, soweit es die Blutlinien/Zugänge der Dialyse zulassen — in der Praxis heißt das oft, die Dialyse zuerst geordnet zu unterbrechen, damit eine sichere Lagerung überhaupt möglich ist. Dazu kontinuierliche Überwachung von Atmung und Bewusstsein.",
             explanationB1:
-              "Richtig. Flach lagern und Beine hoch hilft dem Kreislauf. Wenn er nicht sicher wach ist, kommt er in die stabile Seitenlage, damit die Atemwege frei bleiben. Dabei ständig überwachen.",
+              "Richtig. Weil Herr Ríos nur auf Schmerzreiz reagiert, kommt er zum Schutz der Atemwege in die stabile Seitenlage. Beine hochlegen hilft zusätzlich dem Kreislauf, soweit die Dialyse-Zugänge es zulassen. Dabei ständig überwachen.",
           },
           {
             text: "Sofort eine ausgeprägte Kopftieflage (Trendelenburg) — je tiefer der Kopf, desto mehr Blut kommt ins Gehirn.",
@@ -399,7 +460,7 @@ export const CE06_SIT_RIOS_UEBERGEBEN: SituationsPhase = {
       phase: 4,
       stepType: "mc",
       bloomLevel: 4,
-      kompetenzbereich: "I.1",
+      kompetenzbereich: "II.1",
       quellen: ["Leonard et al. 2004 (SBAR)"],
       track: "basis",
       modus: "challenge",
@@ -465,11 +526,186 @@ export const CE06_SIT_RIOS_REFLEKTIEREN: SituationsPhase = {
     "Später denkst du an seinen Satz: 'Heute fühle ich mich komisch.' War das schon ein Warnzeichen?",
   kernSteps: [
     {
+      // Wissens-Tab (Neuro-Differenzial, die didaktische Krone von K3): die vier Bilder
+      // Synkope/Hypoglykämie/Apoplex/Krampfanfall unterscheiden. Zoom-out von Ríos'
+      // Hypoglykämie-Fall auf das ganze Differenzial. Gegroundet F-01/F-04/F-08/F-10/F-13.
+      // Wiederbegegnung zu Wagner (Kreislauf da vs. Stillstand). Paraphrasiert (Abstand 0).
+      stepId: "ce06-rios-ref-00b-neuro-differenzial",
+      phase: 5,
+      stepType: "inlineWissen",
+      bloomLevel: 2,
+      kompetenzbereich: "I.4",
+      quellen: ["Pflege heute 2019, Kap. 21.2.3 / 26.6.5 / 37.6 / 37.8"],
+      track: "basis",
+      modus: "entdecker",
+      lernziel: "ce06-rios-neuro-differenzial",
+      tag: "pflege",
+      themaPrimaer: "neurologische-akutsituationen",
+      kernfaktId: ["F-01", "F-04", "F-08", "F-10", "F-13"],
+      transition: "Nimm das gleich mit in zwei andere Fälle.",
+      contentC1: {
+        title: "Vier Wege, plötzlich neben sich zu sein",
+        body: "",
+        glossarBegriffe: ["Synkope", "Hypoglykämie", "Apoplex (Schlaganfall)", "Krampfanfall"],
+      },
+      inlineWissen: {
+        bausteinRef: "neuro-differenzial",
+        themaPrimaer: "neurologische-akutsituationen",
+        themenSekundaer: ["notfallassessment"],
+        storyAufhaenger:
+          "Bei Herrn Ríos war es die Unterzuckerung. Aber genau dieselben Zeichen — plötzlich weg, verwirrt, Ausfälle — können vier ganz verschiedene Ursachen haben, und jede braucht eine andere erste Reaktion. Erkennst du sie auseinander?",
+        kerntext:
+          "Vier Bilder, die sich ähneln und doch verschieden sind:\n\nSynkope — eine kurze Ohnmacht. Der Kreislauf fängt sich von allein, der Mensch ist in Sekunden bis Minuten wieder wach. Erste Reaktion: hinlegen, Beine hoch, beobachten — und die Ursache klären, denn eine Synkope aus dem Herzen (kardial) kann gefährlich sein.\n\nUnterzucker (Hypoglykämie) — Diabetiker, Insulin, zu wenig gegessen. Das Tückische: sie imitiert alle anderen, sogar einen Schlaganfall. Erste Reaktion: sofort den Blutzucker messen.\n\nSchlaganfall (Apoplex) — ein plötzlicher, schlagartiger Ausfall von Hirnfunktionen, meist auf EINER Seite: hängender Mundwinkel, kraftloser Arm, verwaschene Sprache. Die Ausfälle bleiben. Erste Reaktion: Notfall, sofort Arzt, jede Minute zählt.\n\nKrampfanfall — Sturz, oft ein kurzer Schrei, Bewusstlosigkeit, dann Zuckungen am ganzen Körper. Erste Reaktion: vor Verletzungen schützen, nichts in den Mund, Zeit stoppen.\n\nÜber allem steht ein Handgriff: bei JEDER unklaren neurologischen Akutsituation zuerst den Blutzucker. Denn die Unterzuckerung ist die eine, die sich schnell beheben lässt — und die die anderen drei täuschend nachahmt.",
+        faustregel:
+          "Erst Blutzucker, dann weiterdenken. Einseitig + bleibend = Schlaganfall, solange nichts anderes gesichert ist; Zuckungen am ganzen Körper = Krampfanfall.",
+        spektrum: [
+          {
+            patientName: "Synkope",
+            hauptfaktor: "kommt von allein zurück",
+            kurzbeschreibung:
+              "Kurz weg, dann wieder da — keine bleibenden Ausfälle, kein Stillstand. Hinlegen, Beine hoch, beobachten.",
+          },
+          {
+            patientName: "Apoplex",
+            hauptfaktor: "einseitig + bleibend",
+            kurzbeschreibung:
+              "Ausfälle bleiben und betreffen eine Körperseite. Zeit zählt — sofort Arzt/Notruf, nicht abwarten.",
+          },
+          {
+            patientName: "Krampfanfall",
+            hauptfaktor: "Zuckungen am ganzen Körper",
+            kurzbeschreibung:
+              "Sturz, Zuckungen, danach oft verwirrt/müde. Schützen, nicht festhalten, nichts in den Mund.",
+          },
+        ],
+        wiederbegegnung: {
+          basisBausteinId: "reanimation-bls-hks-erkennen",
+          basisPatient: "Herr Wagner",
+          vertiefung:
+            "Bei Herrn Wagner fehlten Reaktion UND normale Atmung — ein Herz-Kreislauf-Stillstand, da wird reanimiert. Bei diesen vier Neuro-Bildern ist der Kreislauf DA (Puls und Atmung vorhanden) — also NICHT reanimieren, sondern unterscheiden und gezielt handeln. Der allererste Blick ist immer: Kreislauf da oder nicht?",
+        },
+        karteikarte: {
+          vorderseite:
+            "Jemand wird plötzlich bewusstseinsgestört — was prüfst du bei jeder unklaren neurologischen Akutsituation zuerst, und woran erkennst du einen Schlaganfall?",
+          rueckseite:
+            "Zuerst IMMER Blutzucker (Hypoglykämie imitiert alles). Schlaganfall = plötzliche, einseitige, bleibende Ausfälle (Mundwinkel/Arm/Sprache) → sofort Arzt, time is brain. Krampfanfall = Zuckungen am ganzen Körper → schützen, nichts in den Mund.",
+        },
+      },
+    },
+    {
+      // Anwendung 1 (Variante D): Apoplex-Transfer. Gegroundet F-08/F-09.
+      stepId: "ce06-rios-ref-00c-apoplex",
+      phase: 5,
+      stepType: "mc",
+      bloomLevel: 4,
+      kompetenzbereich: "I.4",
+      quellen: ["Pflege heute 2019, Kap. 37.6 (Schlaganfall, time is brain)"],
+      track: "basis",
+      modus: "challenge",
+      lernziel: "ce06-rios-apoplex-transfer",
+      tag: "pflege",
+      themaPrimaer: "neurologische-akutsituationen",
+      kernfaktId: ["F-08", "F-09"],
+      contentC1: {
+        title: "Anderer Fall — Frau Béker",
+        body: "Frau Béker, 74, sackt im Aufenthaltsraum plötzlich zusammen. Sie ist wach, aber der rechte Mundwinkel hängt, der rechte Arm sinkt kraftlos ab, ihre Sprache ist verwaschen. Du misst sofort den Blutzucker — er ist normal. Was tust du?",
+        glossarBegriffe: ["Apoplex (Schlaganfall)"],
+      },
+      contentB1: {
+        title: "Anderer Fall — Frau Béker",
+        body: "Frau Béker, 74, sackt plötzlich zusammen. Sie ist wach, aber ihr rechter Mundwinkel hängt, der rechte Arm ist kraftlos, die Sprache verwaschen. Der Blutzucker ist normal. Was tust du?",
+      },
+      question: {
+        fragetext: "Wie handelst du bei Frau Béker?",
+        mcVariant: "standard",
+        optionen: [
+          {
+            text: "Ich gehe von einem Schlaganfall aus und handle als Notfall: sofort Arzt/Notruf, Vitalzeichen und Atmung überwachen, den Zeitpunkt des Symptombeginns notieren, bei ihr bleiben. Jede Minute zählt.",
+            isCorrect: true,
+            explanation:
+              "Richtig. Plötzliche, einseitige, bleibende Ausfälle (hängender Mundwinkel, kraftloser Arm, verwaschene Sprache) bei normalem Blutzucker sind ein Schlaganfall bis zum Beweis des Gegenteils. Der Schlaganfall ist ein Notfall — je früher die Therapie beginnt, desto mehr Hirngewebe lässt sich retten (time is brain). Deshalb: sofort Arzt/Notruf, überwachen, Symptombeginn dokumentieren (wichtig fürs Zeitfenster).",
+            explanationB1:
+              "Richtig. Plötzliche einseitige Ausfälle (Mundwinkel, Arm, Sprache) bei normalem Blutzucker = Schlaganfall bis zum Beweis des Gegenteils. Das ist ein Notfall: sofort Arzt/Notruf, überwachen, den Zeitpunkt notieren. Jede Minute zählt.",
+          },
+          {
+            text: "Halbseitenzeichen bei normalem Blutzucker sind meist harmlos — ich lege sie hin und beobachte erst mal eine Stunde.",
+            isCorrect: false,
+            explanation:
+              "Gefährlich. Genau das Abwarten kostet beim Schlaganfall das Therapiefenster: Je länger die Durchblutung fehlt, desto mehr Nervenzellen sterben unwiderruflich ab (time is brain). Einseitige, bleibende Ausfälle gehören sofort ärztlich abgeklärt — nicht eine Stunde beobachtet.",
+            explanationB1:
+              "Gefährlich. Beim Schlaganfall kostet Abwarten wertvolle Zeit — je länger, desto mehr Hirnzellen sterben. Einseitige Ausfälle sofort zum Arzt, nicht eine Stunde warten.",
+          },
+          {
+            text: "Ich gebe ihr schnell Traubenzucker — das hilft bei solchen Ausfällen immer.",
+            isCorrect: false,
+            explanation:
+              "Nein. Der Blutzucker ist ja normal — eine Unterzuckerung ist ausgeschlossen, Traubenzucker bringt hier nichts und behandelt die falsche Ursache. Zudem ist orale Gabe bei möglicher Schluckstörung riskant (Aspiration). Richtig ist, den Schlaganfall als Notfall zu behandeln: sofort Arzt.",
+            explanationB1:
+              "Nein. Der Blutzucker ist normal, also ist es keine Unterzuckerung — Traubenzucker hilft nicht. Und bei Schluckstörung ist er gefährlich. Richtig: den Schlaganfall als Notfall behandeln, sofort Arzt.",
+          },
+        ],
+      },
+    },
+    {
+      // Anwendung 2 (Variante D): Krampfanfall-Transfer. Gegroundet F-10/F-11/F-12.
+      stepId: "ce06-rios-ref-00d-krampfanfall",
+      phase: 5,
+      stepType: "mc",
+      bloomLevel: 4,
+      kompetenzbereich: "I.4",
+      quellen: ["I care Krankheitslehre 2020, Kap. 17.8 (Status epilepticus, 5-Min-Schwelle); ILAE 2015 (Trinka et al.); Pflege heute 2019, Kap. 37.8.2 (Anfall: Erste Hilfe)"],
+      track: "basis",
+      modus: "challenge",
+      lernziel: "ce06-rios-krampfanfall-transfer",
+      tag: "pflege",
+      themaPrimaer: "neurologische-akutsituationen",
+      kernfaktId: ["F-10", "F-11", "F-12"],
+      contentC1: {
+        title: "Und noch ein Fall — der Krampfanfall",
+        body: "Ein Patient stürzt vor dir zu Boden, schreit kurz auf, wird bewusstlos und beginnt am ganzen Körper zu zucken. Was tust — und was lässt du?",
+        glossarBegriffe: ["Krampfanfall", "Status epilepticus"],
+      },
+      contentB1: {
+        title: "Und noch ein Fall — der Krampfanfall",
+        body: "Ein Patient stürzt, schreit kurz, wird bewusstlos und zuckt am ganzen Körper. Was tust du — und was nicht?",
+      },
+      question: {
+        fragetext: "Wie handelst du beim Krampfanfall?",
+        mcVariant: "fallstrick",
+        optionen: [
+          {
+            text: "Ich schütze ihn vor Verletzungen (scharfkantige Dinge weg, Kopf polstern), halte ihn NICHT fest, stecke NICHTS in den Mund, merke mir die Uhrzeit — und hole den Arzt, besonders wenn der Anfall über wenige Minuten dauert.",
+            isCorrect: true,
+            explanation:
+              "Richtig. Im Anfall kannst du den Ablauf nicht stoppen — du sorgst dafür, dass er sich nicht verletzt (Gefahrenquellen weg, Kopf schützen) und lässt ihn gewähren. NICHT festhalten und NICHTS zwischen die Zähne (der Beißkeil ist obsolet und verletzt eher). Die Uhrzeit ist wichtig: Dauert der Anfall länger als 5 Minuten oder folgt Anfall auf Anfall ohne Erholung, ist es ein lebensbedrohlicher Status epilepticus — dann sofort ärztliche Hilfe.",
+            explanationB1:
+              "Richtig. Du kannst den Anfall nicht stoppen — du schützt ihn vor Verletzungen und lässt ihn gewähren. Nicht festhalten, nichts in den Mund. Uhrzeit merken: Dauert der Anfall länger als 5 Minuten, ist es ein gefährlicher Status epilepticus — sofort Arzt.",
+          },
+          {
+            text: "Ich halte seine Arme und Beine fest, damit er sich nicht verletzt, und schiebe etwas zwischen die Zähne gegen den Zungenbiss.",
+            isCorrect: false,
+            explanation:
+              "Nein — beides ist überholt und gefährlich. Festhalten kann zu Verletzungen und Knochenbrüchen führen; ein Gegenstand zwischen den Zähnen verursacht eher Zahn- und Weichteilverletzungen und wird ausdrücklich nicht mehr empfohlen. Richtig ist: Umgebung sichern, Kopf schützen, gewähren lassen — nicht festhalten, nichts in den Mund.",
+            explanationB1:
+              "Nein. Festhalten kann Verletzungen verursachen, und etwas zwischen die Zähne zu schieben schadet mehr — das macht man nicht mehr. Richtig: Umgebung sichern, Kopf schützen, gewähren lassen.",
+          },
+          {
+            text: "Ich flöße ihm sofort etwas Zuckerwasser ein, damit er schneller zu sich kommt.",
+            isCorrect: false,
+            explanation:
+              "Nein. Ein bewusstloser, krampfender Mensch kann nicht schlucken — Flüssigkeit läuft in die Atemwege (Aspiration). Im Anfall wird nichts oral gegeben. Zuckerwasser hilft ohnehin nur bei einer nachgewiesenen Unterzuckerung beim wachen Patienten. Richtig: schützen, Zeit stoppen, bei langem Anfall Arzt.",
+            explanationB1:
+              "Nein. Ein krampfender, bewusstloser Mensch kann nicht schlucken — die Flüssigkeit läuft in die Lunge. Im Anfall nichts in den Mund. Richtig: schützen, Zeit stoppen, bei langem Anfall Arzt.",
+          },
+        ],
+      },
+    },
+    {
       stepId: "ce06-rios-ref-01",
       phase: 5,
       stepType: "reflection",
       bloomLevel: 5,
-      kompetenzbereich: "I.2",
+      kompetenzbereich: "V.2",
       quellen: ["Pflege heute 2019, Kap. 26.6.5 (Hypoglykämie-Frühzeichen; Prävention)"],
       track: "basis",
       modus: "schreibtisch",

@@ -1,0 +1,71 @@
+{
+  "ce": "ce-06",
+  "situation": "ls-sander-verbruehung",
+  "datei": "content/ce-06/situationen/ls-sander-verbruehung/phases.ts",
+  "fall": "Renate Sander, 74 — Verbrühung 2. Grades (kochendes Wasser) an rechtem Unterarm + Oberschenkel, ambulanter Pflegebesuch",
+  "deckt": "CE06-LE1-K1 (Rest) — Erste Hilfe Verbrennung/Verbrühung, Verätzung (Haut + Mund/Speiseröhre), Hitze- und Kältenotfälle",
+  "datum": "2026-07-13",
+  "verdikt": "PASS",
+  "ko": false,
+  "grounding": {
+    "kernfakten": "specs/ce-06/kernfakten/thermisch-chemische-notfaelle.md (F-01..F-13)",
+    "verbatimBelege": "32/32 verifiziert",
+    "sbar": "notfallassessment.md F-07 (Leonard 2004) verifiziert"
+  },
+  "preFilter": {
+    "klinikPanel": { "zahlen": 0, "recht": 0, "dnqpStandard": 0, "konsistenz": 0, "exit": 0 },
+    "antiPatternCheck": { "hoch": 0, "mittel": 0, "niedrig": 0 },
+    "stepGrounding": { "claimTragend": 11, "gegroundet": 11, "dangling": 0, "status": "PASS" },
+    "zitatVerifizierer": { "thermischChemisch": "32/32", "sbarF07": "verifiziert" }
+  },
+  "lenses": {
+    "1_zahlen": { "status": "PASS", "outOfRange": 0, "note": "Alle physiol. Werte verbatim gegroundet; Schockschwelle (F-03, >10-15%) sauber getrennt von Klinik-Indikation (F-06, >10%), keine Konflation" },
+    "2_recht_ethik": { "status": "PASS", "funde": 0, "note": "keine §-Verweise/veralteten Normen; Kompetenzgrenzen (Ersthelfer/Pflege) plausibel, keine ärztl. Maßnahme eigenmächtig" },
+    "3_dnqp_standard": { "status": "PASS", "note": "jeder gelehrte Erste-Hilfe-SCHRITT gegroundet (F-04/05/08/09/11/13 + F-07 SBAR); kein ungegroundeter Handlungs-Claim" },
+    "4_konsistenz": { "status": "PASS", "doppelteStepIds": 0, "fremdePatientIds": 0, "note": "74/Unterarm+Oberschenkel/2.Grad + Hypertonie/lebt-allein durchgängig; Blasen-zu und Kühl-Botschaft cross-step widerspruchsfrei; Transferfälle als Fremdfälle markiert" },
+    "5_semantisch": { "status": "PASS", "note": "alle Gefahren-Muster (Mehl/Butter, Blasen aufstechen, Eis großflächig, Erbrechen bei Verätzung, heiße Wärmflasche, Schmerz=Maßstab) NUR als FALSCHE Optionen, korrektiv aufgelöst — nichts Gefährliches empfohlen" }
+  },
+  "befunde": [
+    {
+      "id": "N1",
+      "severity": "NIEDRIG",
+      "typ": "informativ",
+      "lens": 3,
+      "steps": ["ce06-sander-erk-02", "ce06-sander-ala-01"],
+      "titel": "Konservative Arzt-/Klinik-Empfehlung bei kleiner 2.-grädiger Fläche",
+      "beschreibung": "Botschaft '2. Grad bei alter Frau gehört ärztlich versorgt, auch bei kleiner Fläche' ist kein wörtlicher F-01..F-13-Claim (F-06 bindet Klinikpflicht an >10% KOF/Sonderlokalisation).",
+      "bewertung": "KEIN Fehler — konservativ-sicher, pflegefachlich korrekt (offene Wunde/Infektion/Schmerz/Alter); bleibt bei 'ärztlich versorgen', nicht 'Klinikpflicht'. 10%-Zahl nur für Schockgefahr (F-03) genutzt, sauber abgegrenzt.",
+      "beleg": "F-06 (Pflege heute 2019, Kap. 14.6.5) vs. F-03 (Schockschwelle)",
+      "fix": "optional — nichts nötig; ggf. Formulierung 'ärztlich abklären' beibehalten",
+      "blockierend": false
+    },
+    {
+      "id": "N2",
+      "severity": "NIEDRIG",
+      "typ": "informativ",
+      "lens": 1,
+      "steps": ["ce06-sander-erm-00b-kuehlen"],
+      "titel": "'alte Menschen' als Zusatz zur Kühl-Zurückhaltung",
+      "beschreibung": "F-04 nennt 'große Flächen und Kinder'; Content ergänzt 'alte Menschen'.",
+      "bewertung": "KEIN Fehler — physiologisch begründete, sichere Extrapolation (Thermoregulation im Alter), Richtung konservativ (weniger auskühlen).",
+      "beleg": "F-04 (Pflege heute 2019, Kap. 14.6.5)",
+      "fix": "optional — keine Änderung nötig",
+      "blockierend": false
+    },
+    {
+      "id": "N3",
+      "severity": "NIEDRIG",
+      "typ": "informativ",
+      "lens": 3,
+      "steps": ["ce06-sander-ref-00c-veraetzung", "ce06-sander-ref-00d-hitze-kaelte"],
+      "titel": "Zusätze 'Giftnotruf' und 'intensivmedizinisch versorgen'",
+      "beschreibung": "Beide nicht wörtlich in F-09/F-12/F-13.",
+      "bewertung": "KEIN Fehler — Standard-Erste-Hilfe (Giftnotruf = Form der in F-09 geforderten sofortigen ärztl. Hilfe; Intensivversorgung bei schwerer Hypothermie unstrittig).",
+      "beleg": "F-09 / F-12 / F-13 (Pflege heute 2019)",
+      "fix": "optional — keine Änderung nötig",
+      "blockierend": false
+    }
+  ],
+  "beschaffung": [],
+  "zusammenfassung": { "hoch": 0, "mittel": 0, "niedrig": 3 }
+}

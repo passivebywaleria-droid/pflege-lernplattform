@@ -1,0 +1,53 @@
+{
+  "situationId": "ls-erlemann-organspende",
+  "ce": "ce-06",
+  "le": "LE5",
+  "thema": "organspende-hirntod",
+  "modus": "code",
+  "geprueft": "2026-07-13",
+  "files": ["phases.ts", "patient.ts", "index.ts"],
+  "stepCount": 11,
+  "stepTypes": { "inlineWissen": 3, "mc": 4, "truefalse": 1, "branching": 1, "reflection": 1, "freetext": 1 },
+  "mechanisierteChecks": {
+    "antiPattern": "PASS (0 Treffer in ls-erlemann-organspende)",
+    "stepGrounding": "PASS (0 dangling)",
+    "faktentreue": "PASS (STRICT)",
+    "standardsCurrency": "PASS",
+    "klinikPanel": "PASS (0 HOCH, 0 MITTEL, 2 NIEDRIG Beschaffung)"
+  },
+  "leitplankenGeprueft": {
+    "entscheidungsloesungKonsistent": true,
+    "tpgDefiniertNichtTod": true,
+    "hirntodZweiUnabhaengigeAerzte": true,
+    "pflegeBegleitetDraengtNicht": true,
+    "e1e2Wertneutral": true,
+    "anredeSiezenAngehoerige": true,
+    "crossStepKonsistenz": true
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "NIEDRIG",
+      "phase": "alarmieren",
+      "stepId": "ce06-erlemann-ala-00b-feststellung-recht / ce06-erlemann-ala-01",
+      "titel": "'wenigstens einer' intensivmedizinisch erfahren",
+      "problem": "Formulierung ist verbatim quellentreu zu F-04 (Pflege heute 2019); aktuelle BAEK-Richtlinie IHA verlangt strenggenommen mehrjaehrige Intensiverfahrung beider Aerzte.",
+      "standard": "BAEK-Richtlinie IHA; Projektregel I-care/Pflege-heute = Massstab",
+      "fix": "Kein Fix noetig — grounding-konform zur belegten Lehrbuchquelle. Nur informativ.",
+      "blocker": false
+    },
+    {
+      "id": "F-02",
+      "severity": "NIEDRIG",
+      "phase": "uebergeben",
+      "stepId": "ce06-erlemann-ueb-01",
+      "titel": "Branching-Distraktor 3 leicht kombinatorisch",
+      "problem": "Buendelt Zeitdruck + Alleinlassen; leicht ueberzeichnet, aber innerhalb der Score-0-Lizenz vertretbar. Option 2 ist der eigentliche plausible Anfaenger-Fehler.",
+      "standard": "pflege-konformitaet.md (Distraktoren keine Karikaturen)",
+      "fix": "Optional 'und lasse sie dann allein damit' streichen. Kein Blocker.",
+      "blocker": false
+    }
+  ],
+  "zusammenfassung": { "hoch": 0, "mittel": 0, "niedrig": 2 },
+  "verdikt": "PASS"
+}

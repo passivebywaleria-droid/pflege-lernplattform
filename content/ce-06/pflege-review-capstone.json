@@ -1,0 +1,79 @@
+{
+  "situationId": "ls-capstone-am-boden",
+  "ce": "ce-06",
+  "geprueft": "2026-07-13",
+  "modus": "code",
+  "files": ["phases.ts", "patient.ts"],
+  "stepAnzahl": 8,
+  "vorChecks": {
+    "stepGrounding": "PASS (0 DANGLING, 0 MISSING)",
+    "antiPattern": "0 Treffer in ls-capstone-am-boden",
+    "standardsCurrency": "PASS"
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "NIEDRIG",
+      "titel": "HKS-Ast in Tab 1 über Wiederbegegnung + dedizierten Fall gegroundet (sauber)",
+      "stepId": "ce06-petrova-erk-01b-erster-blick",
+      "stelle": "phases.ts Z.86-146",
+      "problem": "Tab 1 (kernfaktId F-01/F-03 notfallassessment) lehrt HKS-Claims, die nicht woertlich in F-01/F-03 stehen.",
+      "bewertung": "SAUBER, nichts erfunden. HKS-Claims sind gegroundet in reanimation-bls F-01/F-02(verbatim)/F-04; korrekt deklariert via themenSekundaer reanimation-bls + wiederbegegnung->Wagner + autoritativ getestet in erm-01. kernfaktId loest gegen themaPrimaer auf, daher kein reanimation-F-id im Array moeglich - gewaehlte Konstruktion ist schema-korrekt.",
+      "empfehlung": "Keine Aenderung noetig."
+    },
+    {
+      "id": "F-02",
+      "severity": "MITTEL",
+      "titel": "Delir-/Erregungs-Zeile in Tab 2 ohne deckenden kernfaktId und ohne Cross-Ref",
+      "stepId": "ce06-petrova-erk-02b-differenzieren",
+      "stelle": "phases.ts Z.230 (kerntext) + Z.252-257 (spektrum[3])",
+      "problem": "K4-Ast (Delir/organische Erregung) fachlich korrekt, aber die vier zitierten kernfaktId sind alle neuro und decken Delir nicht; anders als der HKS-Ast fehlt hier Wiederbegegnung/Cross-Ref zur autoritativen Quelle (Novak/psychische-akutsituationen).",
+      "standard": "Grounding-Disziplin W2/W5",
+      "empfehlung": "themenSekundaer um 'psychische-akutsituationen' ergaenzen + wiederbegegnung/Cross-Ref zu Novak (analog HKS->Wagner) ODER Zeile als knappen Merker halten. Kein fachlicher Fehler."
+    },
+    {
+      "id": "F-03",
+      "severity": "NIEDRIG",
+      "titel": "kernfaktId zu duenn fuer 'erst Blutzucker'-Claim",
+      "stepId": "ce06-petrova-erk-02",
+      "stelle": "phases.ts Z.149-201",
+      "problem": "kernfaktId ['F-01'] (Synkope-Def) traegt den 'erst Blutzucker'-Claim nicht; Home-Fact ist neuro F-04/F-13. Prosa-quellen (Kap. 26.6.5) korrekt.",
+      "empfehlung": "kernfaktId auf ['F-01','F-04'] bzw. ['F-04','F-13'] erweitern."
+    },
+    {
+      "id": "F-04",
+      "severity": "NIEDRIG",
+      "titel": "kernfaktId F-13 nicht bestes Home-Fact fuer Synkopen-Handlung",
+      "stepId": "ce06-petrova-ala-01",
+      "stelle": "phases.ts Z.290-342",
+      "problem": "Synkope-Handlung (Beine hoch, kardiale Abklaerung) am direktesten von neuro F-01/F-02/F-06 getragen; F-13 nur mittelbar.",
+      "empfehlung": "kernfaktId auf ['F-01','F-02','F-06'] setzen/ergaenzen."
+    },
+    {
+      "id": "F-05",
+      "severity": "NIEDRIG",
+      "titel": "'ueber wenige Minuten' vager als Status-epilepticus-Schwelle",
+      "stepId": "ce06-petrova-erm-03",
+      "stelle": "phases.ts Z.492",
+      "problem": "Kein Fehler; leichter Wording-Kontrast zu neuro F-12 (Status ~10-15 Min). explanation trennt Status korrekt.",
+      "empfehlung": "Optional praezisieren (>~5 Min = Zeit draengt; anhaltend/wiederholt = Status)."
+    }
+  ],
+  "crossStep": "Keine Probleme. Petrova-Stammdaten (68 J., Synkope, Hypertonie/Schwindel, BZ 108 normal, ~1 Min spontan orientiert, ~10:15) konsistent ueber patient.ts/Ph.2/SBAR/ala-01. BZ 108 korrekt als normal (neuro F-03 <50). Drei Fremdfaelle klar als andere Personen getrennt. Interleaving konsistent (BZ-Regel-Distraktor in Fall1 korrekt widerlegt).",
+  "beobachtungen": "glossarBegriffe SBAR/kardiale Synkope/diagnostische Vorsicht ohne CE-06-Glossar-Eintrag - CE-weites Coverage-Thema (SBAR in 9/11 CE-06-Situationen), nicht situationsspezifisch, nicht pflege-fachlich.",
+  "positiva": [
+    "Distraktoren realistisch + konkret widerlegt, keine Karikaturen, nichts erfunden",
+    "Kein Anti-Pattern (keine Pseudo-Empathie/Kinaesthetik-Verstoss/Bagatellisierung/Fixierung); Aspirationsschutz konsistent (neuro F-05)",
+    "'du'-Anrede durchgehend; 'Sie' nur beim Arzt (regelkonform)",
+    "Sandwich-Feedback vollstaendig (C1+B1), Reflection-systemPrompt fordert Sandwich",
+    "SBAR-Step nennt strukturierten Ausschluss - passgenau zum Capstone-Ziel"
+  ],
+  "zusammenfassung": {
+    "hoch": 0,
+    "mittel": 1,
+    "niedrig": 4,
+    "pseudoEmpathieBias": false,
+    "kernfrageHKS": "sauber - Framework via F-01/F-03, HKS-Inhalt via themenSekundaer + Wiederbegegnung->Wagner + gegroundeter Zwilling erm-01",
+    "verdikt": "PASS"
+  }
+}

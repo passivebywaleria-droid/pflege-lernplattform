@@ -1,0 +1,109 @@
+{
+  "ce": "ce-06",
+  "situation": "ls-novak-erregung",
+  "datei": "content/ce-06/situationen/ls-novak-erregung/phases.ts",
+  "fall": "Herr Novak, 34 — akute psychotische Erregung (paranoid) auf der Inneren, Fieber 39,2 °C bei Pneumonie",
+  "datum": "2026-07-13",
+  "grounding": {
+    "kernfakten": "specs/ce-06/kernfakten/psychische-akutsituationen.md",
+    "verbatimBelege": "15/15 verifiziert",
+    "fakten": "F-01..F-08"
+  },
+  "skriptLaeufe": {
+    "klinikPanel": { "befunde": 0, "hoch": 0, "mittel": 0, "niedrig": 0, "exit": 0 },
+    "antiPatternCheck": { "funde": 0, "hoch": 0, "mittel": 0, "niedrig": 0 },
+    "stepGroundingCheck": { "claimTragend": 9, "gegroundet": 9, "dangling": 0, "status": "PASS" },
+    "standardsCurrencyCheck": { "treffer": 0, "status": "PASS" },
+    "zitatVerifizierer": { "zitate": 15, "verifiziert": 15, "status": "PASS" }
+  },
+  "lenses": {
+    "lens1_zahlen": {
+      "status": "PASS",
+      "outOfRange": 0,
+      "punkte": [
+        "Haloperidol nur als Wirkstoff, KEINE erfundene Dosis (F-07 verbatim, PH 38.8)",
+        "Sedierung durchgaengig als aerztliche Anordnung",
+        "Fieber 39,2 C bei Pneumonie physiologisch plausibel, als Ursache Fieberdelir korrekt (F-01)",
+        "SpO2/BZ/Temp nur als Mess-Parameter, keine erfundenen Werte"
+      ]
+    },
+    "lens2_recht": {
+      "status": "PASS",
+      "punkte": [
+        "Durchgaengig § 1831 BGB (aktuelle Fassung ab 2023), NICHT §1906/§1906a",
+        "Quelltext-Abgleich bgb-1831.txt: Genehmigung des Betreuungsgerichts + Gefahr im Verzug/unverzueglich nachzuholen",
+        "PsychKG vs. Betreuungsrecht korrekt abgegrenzt: somatische Station -> § 1831 BGB; PsychKG nur psychiatrische Einrichtung (F-06)",
+        "FeM-Rechtsgrundlagen (Zustimmung/Gefahr im Verzug/richterlich) korrekt (F-06)",
+        "Zwang legitimiert/Mindestmass/nicht aggressiv (F-05)"
+      ]
+    },
+    "lens3_dnqp": {
+      "status": "PASS",
+      "claimTragend": 9,
+      "gegroundet": 9,
+      "neueTabs": [
+        { "step": "ce06-novak-erk-01b-eigenschutz-deeskalation", "kernfaktId": ["F-08", "F-02", "F-03"], "status": "OK" },
+        { "step": "ce06-novak-erk-02b-organisch", "kernfaktId": ["F-01"], "status": "OK", "anmerkung": "diagnostic overshadowing = beschreibend, Kern-Claim an F-01" },
+        { "step": "ce06-novak-erm-01b-zwang-recht", "kernfaktId": ["F-04", "F-05", "F-06", "F-07"], "status": "OK" }
+      ]
+    },
+    "lens4_konsistenz": {
+      "status": "PASS",
+      "doppelteStepIds": 0,
+      "fremdePatientIds": 0,
+      "punkte": [
+        "Fieber 39,2 C durchgaengig (erk-02, Tab B, SBAR)",
+        "Pneumonie / paranoide Schizophrenie durchgaengig",
+        "Entfernte Infusion konsistent (Kontext == SBAR)",
+        "Kein Item hier-korrekt/dort-falsch",
+        "Wiederbegegnung basisBausteinId 'neuro-differenzial' == bausteinRef in ls-rios-synkope; Rios lehrt 'erst Blutzucker'"
+      ]
+    },
+    "lens5_semantisch": {
+      "status": "PASS",
+      "antiPatternFunde": 0,
+      "punkte": [
+        "Fixieren/Sedieren/Wahn-frontal-widerlegen nur als FALSCHE Optionen (isCorrect:false)",
+        "Fixierung nur als 'letzte Stufe unter Recht' gelehrt = Lehre ueber Rechtsgrenze, keine Handlungsempfehlung",
+        "Deeskalation korrekt: Gefuehl ernst nehmen, Wahn weder bestaetigen noch hart widerlegen",
+        "Kritische Leitplanke 'Erregung nicht automatisch psychiatrisch — organische Ursachen zuerst' durchgehalten (erk-02, Tab B, Alarmieren, SBAR, Reflexion)",
+        "Keine Pseudo-Empathie"
+      ]
+    }
+  },
+  "befunde": [
+    {
+      "id": "N1",
+      "severity": "NIEDRIG",
+      "typ": "informativ",
+      "blockierend": false,
+      "steps": ["ce06-novak-erk-02", "ce06-novak-erk-02b-organisch"],
+      "lens": "3/5",
+      "beschreibung": "Praktische Ergaenzung 'SpO2-Clip/BZ-Stich brauchen Naehe' ist plausible Inferenz ueber den Wortlaut von F-01 hinaus.",
+      "bewertung": "KEIN Fehler — pflegerisch selbstevident, medizinisch nicht falsch, kein fachlicher Standard-Claim.",
+      "beleg": "F-01 (PH 12.3) belegt organische Ursache, nicht die Mess-Praktik",
+      "fix": "So belassen (Gruenderin-Option)."
+    },
+    {
+      "id": "N2",
+      "severity": "NIEDRIG",
+      "typ": "informativ",
+      "blockierend": false,
+      "steps": ["ce06-novak-ueb-01"],
+      "lens": "4",
+      "beschreibung": "Alter '34' erstmals in SBAR (Phase 4) genannt, in frueheren Phasen nicht etabliert.",
+      "bewertung": "KEIN Widerspruch (Attribut nur einmal, SBAR nennt Name+Alter regelhaft). Rein narrative Beobachtung.",
+      "beleg": "n/a",
+      "fix": "Optional Alter bereits im Erkennen-Kontext erwaehnen — kosmetisch."
+    }
+  ],
+  "beschaffung": [],
+  "verdikt": {
+    "status": "PASS",
+    "ko": false,
+    "hoch": 0,
+    "mittel": 0,
+    "niedrig": 2,
+    "begruendung": "Kein HOCH-Befund ueber alle 4 deterministischen Lenses + 5. semantischen Lens. 2 informative NIEDRIG-Anmerkungen, nicht blockierend. Gruenderin bleibt Backstop."
+  }
+}

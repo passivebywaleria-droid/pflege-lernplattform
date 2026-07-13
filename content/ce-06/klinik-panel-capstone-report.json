@@ -1,0 +1,61 @@
+{
+  "ce": "ce-06",
+  "situation": "ls-capstone-am-boden",
+  "datei": "content/ce-06/situationen/ls-capstone-am-boden/phases.ts",
+  "patient": "content/ce-06/situationen/ls-capstone-am-boden/patient.ts",
+  "fall": "Frau Wanda Petrova, 68 — Synkope (roter Faden), Differenzierungs-Capstone 'Jemand liegt am Boden'",
+  "datum": "2026-07-13",
+  "neuerKernfakt": false,
+  "genutzteKernfakten": [
+    "notfallassessment.md: F-01, F-03, F-07",
+    "reanimation-bls.md: F-01, F-02, F-04",
+    "neurologische-akutsituationen.md: F-01, F-02, F-04, F-06, F-08, F-09, F-10, F-11, F-13",
+    "psychische-akutsituationen.md: F-01, F-08"
+  ],
+  "verdikt": "PASS",
+  "ko": false,
+  "deterministischeChecks": {
+    "klinik-panel.ts": { "status": "PASS", "zahlen": 0, "recht": 0, "dnqp": 0, "konsistenz": 0 },
+    "pflege-anti-pattern-check.ts": { "funde": 0, "hoch": 0, "mittel": 0, "niedrig": 0 },
+    "step-grounding-check.ts": { "status": "PASS", "dangling": 0, "missing": 0 }
+  },
+  "zaehler": { "HOCH": 0, "MITTEL": 0, "NIEDRIG": 1 },
+  "lenses": {
+    "1_zahlen": {
+      "status": "PASS",
+      "notiz": "BZ 108 mg/dl konsistent (Kontext/B1/SBAR), normal (Hypoglykaemie <50 mg/dl per neuro F-03), keine erfundenen Dosen/Volumina, keine falsche Status-epilepticus-Schwelle"
+    },
+    "2_recht_currency": {
+      "status": "PASS",
+      "notiz": "n/a — keine FeM-/Betreuungsrechts-Claims, keine veraltete Norm"
+    },
+    "3_dnqp_grounding": {
+      "status": "PASS",
+      "notiz": "Alle claim-tragenden Steps gegroundet. HKS/Schnappatmung-Ast (Tab 1) via themenSekundaer reanimation-bls + Wiederbegegnung Wagner + Fall erm-01 (F-01/F-02/F-04). 'nichts in den Mund'/Krampf (Tab 2) via Fall erm-03 (F-10/F-11). Einziger nicht voll nachverfolgbarer Sub-Claim: Delir-Zeile (siehe N1)"
+    },
+    "4_konsistenz": {
+      "status": "PASS",
+      "notiz": "10 unique stepIds; patientId pat-petrova-kollaps nur Petrova; 3 Fremdfaelle klar als andere Personen; kein Item hier-korrekt/dort-falsch (erst-Blutzucker-Regel bewusst korrekt eingeschraenkt in erm-01)"
+    },
+    "5_semantisch": {
+      "status": "PASS",
+      "notiz": "Alle gefaehrlichen Aussagen (Zuckerwasser/Traubenzucker auf Verdacht, Reanimation trotz Atmung, Schnappatmung als Atmung, Beisskeil/Festhalten, Schlaganfall-Alarm auf Verdacht, Bagatellisieren) nur als korrektiv aufgeloeste Distraktoren. Interleaving-Algorithmus (Erstblick -> erst Blutzucker -> differenzieren) fachlich korrekt"
+    }
+  },
+  "befunde": [
+    {
+      "id": "N1",
+      "severity": "NIEDRIG",
+      "typ": "informativ/Grounding-Nachverfolgbarkeit",
+      "lens": "3 (DNQP/Grounding)",
+      "ort": "ce06-petrova-erk-02b-differenzieren (Tab 2), Spektrum-Zeile 'Erregt/verwirrt, evtl. Fieber -> an Delir denken' + Kerntext-Absatz",
+      "befund": "Sub-Claim fachlich korrekt und verbatim gegroundet in psychische-akutsituationen F-01 + F-08, aber geht ueber die 4 zitierten neuro-kernfaktId hinaus; themenSekundaer listet nur notfallassessment; kein dedizierter Phase-3-Fall/keine Wiederbegegnung fuer Delir -> im Datenmodell nicht so lueckenlos nachverfolgbar wie die uebrigen Differentiale",
+      "beleg": "psychische-akutsituationen.md F-01 (PH 2019 Kap. 12.3/Fieber), F-08 (PH 2019 Kap. 16)",
+      "blockierend": false,
+      "fix": "Optional: inlineWissen.themenSekundaer von erk-02b um 'psychische-akutsituationen' erweitern (analog Tab 1 mit reanimation-bls). Nur Metadaten, kein Eingriff in Step-Code."
+    }
+  ],
+  "optionaleNotiz": "ce06-petrova-ala-01 zitiert F-13 fuer 'kardiale Synkope gefaehrlich'; praeziser waere neuro F-02 (verbatim belegt). F-02 im selben Kernfakt, quellen-Zeile nennt Kap. 21.2.3 korrekt -> voll gegroundet, keine Aktion noetig.",
+  "beschaffung": [],
+  "fazit": "PASS. Interleaving fachlich korrekt, jeder claim-tragende Schritt gegroundet, alle Falsch-Optionen korrektiv, nichts Gefaehrliches empfohlen, Zahlen+Patient-Daten konsistent. Einzige Anmerkung N1 (NIEDRIG, nicht blockierend). Gruenderin bleibt Backstop."
+}

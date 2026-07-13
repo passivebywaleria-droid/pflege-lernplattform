@@ -1,92 +1,72 @@
-# Pflege-Review: ls-rios-synkope (Herr Ríos — Synkope während der Dialyse)
+# Pflege-Review: ls-rios-synkope (Variante-D-Redesign)
 
-**Geprüft:** 2026-07-03
-**Modus:** code (fertiger TypeScript-Content)
-**Files:** 2 (phases.ts mit 5 Akut-Phasen + patient.ts)
-**Step-Anzahl:** 8 (6 MC, 1 Branching, 1 Reflection)
-**Deckt:** CE06-LE1-K3 — neurologische Akutsituationen diagnostizieren + Erste Hilfe einleiten
+**Geprüft:** 2026-07-13
+**File:** content/ce-06/situationen/ls-rios-synkope/phases.ts (5 Phasen)
+**Grounding:** specs/ce-06/kernfakten/neurologische-akutsituationen.md (F-01..F-13) + notfallassessment.md (F-07 = SBAR)
+**Fokus:** 4 neue Steps (erk-01b Hypoglykämie · ref-00b Neuro-Differenzial · ref-00c Apoplex · ref-00d Krampfanfall)
+**Step-Anzahl gesamt:** 11 (7 MC, 1 branching, 2 inlineWissen, 1 reflection)
 
-## Mechanisierte Vor-Checks (alle PASS)
+## Mechanisierte Vor-Checks
 
-- `pflege-anti-pattern-check.ts content/ce-06` → 0 Treffer für ls-rios-synkope
-- `step-grounding-check.ts ce-06` → PASS, 7/7 claim-tragende Steps gegroundet, 0 DANGLING, 0 MISSING
-- `klinik-panel.ts ce-06` → 0 Befunde (Zahlen/Recht/DNQP/Konsistenz alle 0)
-
-Die semantische Prüfung unten ist die 5. Lens (Distraktor-vs-Empfehlung, Pseudo-Empathie, Realitätscheck).
-
----
-
-## Antworten auf die 7 Prüf-Fragen der Gründerin
-
-**1. Hypoglykämie-Grenzwert „unter 50 mg/dl" — vertretbar?**
-JA, grounding-belegt (Pflege heute Kap. 26.6.5, Verbatim „Blutzucker unter 50 mg/dl", F-03) und für Pflegeschüler vertretbar. Falldaten konsistent: 48 mg/dl < 50 → eindeutig Hypoglykämie unter JEDEM gängigen Schwellenwert. Einzige kleine Schwäche = didaktische Framing-Frage (siehe F-01, NIEDRIG). KEIN Fehler in den Falldaten.
-
-**2. KEINE orale Glukose bei Bewusstseinstrübung — korrekt/klar?**
-JA, vorbildlich. Mehrfach, unmissverständlich, mit Schluckfähigkeit als sauberem Kriterium umgesetzt (branching erm-01: „er ist nicht wach genug zum Schlucken", „reagiert nur auf Schmerzreiz — schluckt also nicht sicher"). Aspirationsgefahr korrekt benannt (F-05). Das ist die didaktische Kern-Sicherheitsentscheidung und sie sitzt.
-
-**3. Kompetenzgrenze Glukose 40 % i.v. = ärztlich, Shunt schützen — realistisch?**
-JA, korrekt (F-05). „Glukose 40 % i.v." = nur Konzentration genannt, KEINE ml-Dosis behauptet → grounding-sauber. Shunt als „Lebensader", nicht eigenmächtig punktieren, Pflegerolle „vorbereiten/melden/assistieren/überwachen" — fachlich und realistisch. Der Distraktor „selbst in den Shunt spritzen" ist ein realistischer Erfahrenen-Fehler, korrekt als falsch markiert.
-
-**4. Lagerung ohne pauschale Trendelenburg — korrekt?**
-JA, im Prinzip korrekt (F-06/F-07). Kopftieflage-Kontraindikation (Hirndruck/Atemnot/Übelkeit) sauber begründet, „Beine hoch + stabile Seitenlage" ist der richtige Weg. Eine kleine Prioritäts-Unschärfe in der Formulierung → siehe F-02 (NIEDRIG).
-
-**5. Differentialdiagnose (Hypoglykämie / kardiale Synkope / Dialyse-Hypotonie) — sauber?**
-JA. erk-01 stellt genau diese drei Ursachen gegenüber (BZ messen vs. Apoplex-Vorfestlegung vs. Dialyse-Hypotonie aussitzen) und priorisiert die Blutzuckermessung korrekt als schnellsten diagnostischen Handgriff (F-04: „bei jeder unklaren neurologischen Akutsituation zwingend"). ABCDE ist im Szenario bereits abgebildet (atmet, Puls tastbar) und wird im Korrekt-Feedback als „parallel" nicht vergessen — gut.
-
-**6. Kein fälschliches „FAST-Schema"?**
-KORREKT VERMIEDEN. Kein Vorkommen von „FAST" im Content; die Schlaganfall-Option heißt „Schlaganfall-Alarm/Apoplex". Homonym-Falle (Trauma-Sonografie) sauber umgangen.
-
-**7. Distraktoren / Sandwich / Konsistenz / Anrede / Umlaute?**
-- Distraktoren durchweg realistische Anfänger-/Erfahrenen-Fehler, KEIN gefährlicher als „richtig" markierter Distraktor.
-- Sandwich-Feedback vorhanden (anerkennen → korrigieren → ermutigen), besonders gut in erm-01 D2 (Hierarchie vs. Patientensicherheit).
-- Cross-Step-Konsistenz: Ríos 63 (patient ✓ / ueb-01 „63" ✓), Dialyse 2. Std ✓, Insulin ✓, Shunt links (patient „linker Unterarm" / erm-02 „linken Arm" ✓), BZ-Verlauf 48 → 120 (erk-02/ala-01 = 48, ueb-01 = 120 ✓). Alles konsistent.
-- „du"-Anrede durchgängig, keine „Sie"-Slips an Lernende.
-- Echte Umlaute überall (ä ö ü ß, Ríos mit í). Keine ae/oe/ue.
-
----
+| Gate | Ergebnis |
+|------|----------|
+| zitat-verifizierer (Kernfakten) | ✅ 19/19 Belege verbatim-verifiziert |
+| step-grounding-check ce-06 | ✅ PASS ls-rios-synkope (11 claim-tragend / 11 gegroundet, 0 dangling) |
+| pflege-anti-pattern-check | ✅ Keine Treffer in Ríos |
 
 ## Findings
 
-### 3) ERSTMASSNAHMEN — ce06-rios-erm-03 (mc, Lagerung)
+### 5) reflektieren — ce06-rios-ref-00b-neuro-differenzial (inlineWissen)
 
-#### F-02 (NIEDRIG): Prioritäts-Unschärfe „Beine hoch, DANN Seitenlage sobald nicht wach"
-- **Stelle:** phases.ts:355 (Korrekt-Option) + 358 (explanation)
-- **Problem:** Die Bedingung „sobald er wegen der Bewusstseinstrübung nicht sicher wach ist, in die stabile Seitenlage" ist logisch leicht schief — Herr Ríos ist im gesamten Szenario bereits bewusstseinsgetrübt (reagiert nur auf Schmerzreiz). Er ist JETZT schon nicht sicher wach. Damit hat die stabile Seitenlage (Aspirationsschutz) hier Priorität; Beine-Hoch ist ergänzende Kreislaufunterstützung, wo mit den Blutlinien machbar. Zudem sind „Beine hochlegen" und „stabile Seitenlage" praktisch schwer gleichzeitig. Die Antwort ist nicht falsch (beides gehört zum Repertoire), aber die konditionale Reihenfolge kann suggerieren, Seitenlage sei erst später/optional.
-- **Standard-Verweis:** F-06 (Beine hoch bei Ohnmacht; stabile Seitenlage bei anhaltender Bewusstlosigkeit mit erhaltener Atmung = Aspirationsschutz), notfallassessment F-03.
-- **Empfehlung:** Formulierung schärfen: „Da er bereits nur auf Schmerzreiz reagiert (nicht sicher wach), hat die stabile Seitenlage zum Atemwegsschutz Vorrang; Beine hochlegen als Kreislaufunterstützung, soweit mit den Dialyse-Zugängen möglich." Keine inhaltliche, nur Prioritäts-Klarstellung.
+#### F-01 (NIEDRIG): Synkope-Beschreibung unterschlägt die gefährliche kardiale Synkope
+- **Stelle:** Zeile 558 (kerntext) + Zeile 563-567 (spektrum „Synkope")
+- **Problem:** „Synkope — eine kurze Ohnmacht. Der Kreislauf fängt sich von allein … Erste Reaktion: hinlegen, Beine hoch, beobachten." Diese Darstellung reduziert die Synkope auf die harmlose (vasovagale) Form. F-01 hält aber fest, dass die Synkope ein *Symptom, keine Diagnose* ist und die Ursache geklärt werden muss; F-02 betont, dass die kardiale Synkope (gerade bei Älteren, im Liegen/unter Belastung) gefährlich ist und abgeklärt werden muss. In einem Differenzial-Baustein könnte „fängt sich von allein" fälschlich beruhigen — ausgerechnet in einer Situation, die mit Blutdruckabfall unter Dialyse begann.
+- **Standard-Verweis:** F-01/F-02 (Pflege heute Kap. 21.2.3) — Synkope ist Symptom, kardiale Form gefährlich.
+- **Empfehlung:** Einen Halbsatz ergänzen, z.B. „… wieder wach — aber die Ursache muss geklärt werden (eine kardiale Synkope kann gefährlich sein)." Der reflection-Step ref-01 und die Kontextszene tragen das teils schon; die Differenzial-Karte selbst sollte es nicht ganz weglassen.
 
-### 1) ERKENNEN — ce06-rios-erk-02 (mc, Blutzucker einordnen)
+### 3) erstmassnahmen — ce06-rios-erm-03 (mc, Lagerung)
 
-#### F-01 (NIEDRIG): „<50 mg/dl" als absolute Definition — Grauzone 50–70 nicht adressiert
-- **Stelle:** phases.ts:108 + 111 (Korrekt-Option/explanation), auch 116/119 (Distraktor „noch im Normbereich")
-- **Problem:** Der Content stellt „Hypoglykämie = Blutzucker unter 50 mg/dl" als harte Definition dar. Das ist grounding-belegt (Pflege heute, F-03) und für den konkreten Fall (48 mg/dl) völlig unkritisch. Kritisch nur als didaktisches Restrisiko: Ein Schüler könnte daraus ableiten, symptomatische Werte im Bereich 50–69 mg/dl seien „normal/unkritisch". Klinisch ist bei insulinbehandelten Patienten mit Symptomatik bereits < 70 mg/dl handlungsrelevant (internationaler Alert-Wert). Der Distraktor „48 … noch im Normbereich" ist korrekt als falsch markiert — das Restrisiko betrifft nur die nicht behandelte Grauzone.
-- **Standard-Verweis:** F-03 (Pflege heute „unter 50 mg/dl") vs. aktuelle Leitlinien-Alertschwelle < 70 mg/dl. Projekt-Grounding-Regel: Pflege heute = Maßstab → deliberate Wahl ist regelkonform.
-- **Empfehlung:** Optional einen Halbsatz ergänzen, ohne die belegte Schwelle zu verlassen: „(Grenzwerte werden teils höher angesetzt; bei Symptomen und Insulin gilt schon ein niedrig-normaler Wert als behandlungsbedürftig.)" — oder bewusst so belassen mit Verweis auf Grounding. Kein K.O.
+#### F-02 (NIEDRIG): B1-Erklärung priorisiert die stabile Seitenlage schwächer als die C1-Option
+- **Stelle:** Zeile 416 (Option C1) vs. Zeile 420-421 (explanationB1)
+- **Problem:** Die C1-Antwort stellt korrekt klar: „Da er nur auf Schmerzreiz reagiert, hat die stabile Seitenlage (Atemwegsschutz) Vorrang." Die B1-Erklärung dreht die Reihenfolge um: „Flach lagern und Beine hoch hilft dem Kreislauf. Wenn er nicht sicher wach ist, kommt er in die stabile Seitenlage." Weil Herr Ríos bereits bewusstseinsgetrübt IST (reagiert nur auf Schmerzreiz), ist die Seitenlage nach F-06 schon jetzt indiziert — nicht nur „falls". Die B1-Fassung könnte den Eindruck erwecken, erst flach+Beine hoch, dann konditional Seitenlage.
+- **Standard-Verweis:** F-06 (Pflege heute Kap. 14/5.5) — bei Bewusstlosigkeit/-trübung mit erhaltener Atmung stabile Seitenlage, Atemwegsschutz hat Vorrang.
+- **Empfehlung:** B1 angleichen: „Weil er nur auf Schmerz reagiert, kommt er in die stabile Seitenlage (Atemwege frei). Beine hoch hilft zusätzlich dem Kreislauf." Reihenfolge = Atemweg zuerst.
 
-### Cross-Step (alle MC-Steps) — Test-Design
+#### F-03 (NIEDRIG): Realismus — Seitenlage am laufenden Dialysezugang
+- **Stelle:** Zeile 416, 419
+- **Problem:** Herr Ríos liegt am Dialysestuhl, angeschlossen über Shunt und Blutlinien. Eine echte stabile Seitenlage mit erhöhten Beinen ist bei laufender Dialyse praktisch nur nach geordnetem Abbruch/Blutrückgabe möglich. Die Option berücksichtigt die Zugänge nur beim Beine-Hochlegen („soweit die Dialyse-Zugänge es zulassen"), nicht bei der Seitenlage.
+- **Standard-Verweis:** Realitätscheck (kein direkter DNQP-Verweis).
+- **Empfehlung:** Optional den Halbsatz auch auf die Seitenlage beziehen bzw. in der Erklärung erwähnen, dass die Dialyse dafür nach ärztlicher Anordnung reduziert/beendet wird. Kein fachlicher Fehler, nur Praxis-Feinheit.
 
-#### F-03 (MITTEL): Systematische Längen-/Ausführlichkeits-Bias (längste Option = korrekt)
-- **Stelle:** erk-01 (54 vs. 62/70), erk-02 (108 vs. 116/124), ala-01 (178 vs. 186/194), erm-02 (301 vs. 309/317), erm-03 (355 vs. 363/371) — in jedem MC-Step ist die korrekte Option merklich länger/ausführlicher begründet als die Distraktoren.
-- **Problem:** Die Score-korrekte Antwort trägt jeweils die umfangreichste Selbstbegründung im Optionstext. Ein prüfungserfahrener Schüler kann systematisch die längste Option wählen und liegt richtig — ohne den Fachinhalt zu kennen. Das untergräbt die Diagnostik-Funktion der MC-Steps (Bloom 3–4). Kein pflegefachlicher Fehler, aber ein reales, ausnutzbares Muster über die gesamte Situation.
-- **Standard-Verweis:** pflege-konformitaet.md — MC: „Distraktoren = realistische Anfänger-Fehler, keine Karikaturen" + ausgewogene Optionen (MC-Bias-Kriterium der Pipeline).
-- **Empfehlung:** Korrekt-Optionen auf den reinen Handlungskern kürzen (Begründung gehört in `explanation`, nicht in `text`) ODER Distraktoren um gleich lange Pseudo-Begründungen anreichern. Ziel: vergleichbare Optionslängen, damit die Länge kein Lösungssignal ist.
+### 5) reflektieren — ce06-rios-ref-00d-krampfanfall (mc)
 
----
+#### F-04 (NIEDRIG): Status-epilepticus-Schwelle (10-15 Min) ist die konservative Lehrbuch-Fassung
+- **Stelle:** Zeile 680 (explanation)
+- **Problem:** „Dauert der Anfall zu lange (Erwachsene über ~10–15 Min) … Status epilepticus." Das ist F-12/Pflege-heute-treu, entspricht aber nicht mehr der aktuellen operationalen ILAE-Definition (Behandlungsschwelle t1 = 5 Min beim generalisiert tonisch-klonischen Anfall). Da die richtige Antwort-Option praktisch bereits „hole den Arzt, besonders wenn der Anfall über wenige Minuten dauert" sagt, ist die Handlungsanweisung sicher — nur die genannte Zahl ist konservativ.
+- **Standard-Verweis:** F-12 (Pflege heute Kap. 37.8.2) — quellentreu; Hinweis: ILAE-Operationaldefinition 5 Min ist aktueller.
+- **Empfehlung:** Belassen (quellenbelegt) oder mit Klammer relativieren: „(neuere Definitionen setzen die Behandlungsschwelle bereits bei ~5 Min an)". Kein Sicherheitsrisiko, da früher gehandelt wird.
 
 ## Cross-Step-Probleme
 
-Keine inhaltlichen Inkonsistenzen. Patient-Daten, BZ-Verlauf, Shunt-Seite, Alter, Setting durchgängig konsistent (siehe Prüf-Frage 7). Einziger Cross-Step-Punkt ist das Test-Design-Muster F-03 (MITTEL).
+Keine. Geprüft und konsistent:
+- **Patientendaten** (Ríos, 63, dialysepflichtiger Diabetiker unter Insulin, heute kaum gegessen, BZ 48 → nach ärztl. Glukose 120, Shunt intakt) durchgehend widerspruchsfrei über alle 5 Phasen.
+- **BZ-Wert 48 mg/dl** in erk-01b (storyAufhaenger „48"), erk-02, ala-01, uebergeben konsistent; Reveal-Reihenfolge (erk-01 Hook → erk-01b Wissen mit 48 → erk-02 Einordnung) sauber.
+- **Rollenabgrenzung** durchgängig identisch gehalten: Glukose 40 % i.v. = ärztlich (erk-01b, ala-01, erm-01, erm-02); Shunt nicht eigenmächtig punktieren (erm-02); keine ml-Dosis behauptet (nur Konzentration 40 %, F-05-belegt).
+- **kernfaktId-Mapping** korrekt: erm-03 → F-06/F-07 (neuro: Lagerung/Kopftieflage); ueb-01 → F-07 aus themaPrimaer „notfallassessment" (= SBAR), NICHT die Kopftieflage-F-07. Kein Fehler.
 
-## Weitere Beobachtungen (kein Finding)
+## Fachliche Bestätigungen (die neuen Steps)
 
-- **Reflection-Step (ref-01)** trägt kein `kernfaktId` — bei einem offenen, nicht-claim-tragenden Schreib-Step by-design vertretbar; step-grounding-check zählt ihn korrekt nicht mit. OK.
-- **Dialysestuhl-Realität:** Positionierung eines an Maschine/Shunt angeschlossenen Patienten (Blutlinien, Drehung zur shunt-fernen Seite) wird nicht im Detail beschrieben — für das Lernziel-Niveau (LE1-K3) akzeptabel, nicht bemängelt. Reduktion des Flüssigkeitsentzugs als ärztliche Entscheidung ist in ala-01 sauber erwähnt.
-- **Glukagon** (in F-05 für Laien/Angehörige belegt) wird bewusst nicht genannt — im professionellen Dialyse-Setting mit anwesendem Arzt ist Glukose 40 % i.v. der richtige Weg. Korrekte Auslassung.
+- **erk-01b Hypoglykämie:** BZ <50 (F-03), Insulin+zu wenig gegessen (F-04), imitiert Schlaganfall (F-04), Behandlung nach Bewusstsein — wach oral / bewusstseinsgetrübt nichts oral + Aspirationsgefahr + Glukose i.v. ärztlich (F-05). Alles korrekt und gegroundet. (Glukagon aus F-05 bewusst weggelassen — im klinischen Dialyse-Setting mit anwesendem Arzt didaktisch vertretbar, kein Fehler.)
+- **ref-00b Neuro-Differenzial:** Vier Bilder sauber getrennt; Apoplex-Zeichen (Mundwinkel/Arm/Sprache, einseitig, bleibend) korrekt OHNE das im Korpus mehrdeutige „FAST" zu benennen — konsistent mit der bewussten Abgrenzung im Kernfakten-Header. Wiederbegegnung Wagner (Kreislauf da → NICHT reanimieren; Stillstand → reanimieren) fachlich richtig und didaktisch stark.
+- **ref-00c Apoplex:** Plötzliche einseitige bleibende Ausfälle + BZ normal → Schlaganfall-Notfall, sofort Arzt/Notruf, Symptombeginn dokumentieren, time is brain (F-08/F-09). Distraktoren (1 Std. abwarten / Traubenzucker) realistisch, Erklärungen korrekt.
+- **ref-00d Krampfanfall:** Schützen, NICHT festhalten, NICHTS in den Mund, Zeit stoppen, Status epilepticus (F-10/F-11/F-12). Beißkeil/Gegenstand zwischen die Zähne korrekt als obsolet dargestellt (F-11). Distraktor „Zuckerwasser einflößen" mit Aspirations-Erklärung korrekt.
+- **Distraktor-Qualität:** durchgehend plausible Anfänger-/Hierarchie-Fehler (z.B. „sie ist länger dabei, sie wird schon wissen" in erm-01; biografische SBAR-Antwort in ueb-01), keine Karikaturen.
+- **Pseudo-Empathie / Slang:** keine romantisierende Sprache, kein „indirektes Licht", keine NRS-Bagatellisierung, keine kinästhetisch falschen Formulierungen.
 
 ## Zusammenfassung
 
-- **0 Findings HOCH**
-- **1 Finding MITTEL** (F-03 — systematischer MC-Längen-Bias über alle MC-Steps)
-- **2 Findings NIEDRIG** (F-01 Hypoglykämie-Schwellen-Framing; F-02 Lagerungs-Prioritäts-Unschärfe)
-- **Allgemein:** Pflegefachlich stark und diszipliniert gebaut. Keine Pseudo-Empathie, kein romantisierender Slang, keine erfundenen Instrumente/Dosen. Alle sicherheitskritischen Entscheidungen (keine orale Gabe bei Bewusstseinstrübung, Kompetenzgrenze i.v.-Glukose, Shunt-Schutz, keine pauschale Trendelenburg, FAST-Vermeidung) sind korrekt und grounding-belegt. Distraktoren realistisch, Sandwich-Feedback konsequent, Konsistenz lückenlos. Einzige echte Schwäche ist das Test-Design (Optionslängen), nicht die Fachlichkeit.
-- **K.O.-Verdikt: PASS.** Kein HOCH-Finding. Live-Deploy-fähig; F-03 (MITTEL) und die zwei NIEDRIG-Punkte vor Deploy nachziehen (Gründerin-Regel: alle Severities fixen), aber kein Blocker.
+- 0 Findings HOCH
+- 0 Findings MITTEL
+- 4 Findings NIEDRIG (F-01 Synkope-Vollständigkeit, F-02 B1-Priorisierung Seitenlage, F-03 Realismus Dialysezugang, F-04 Status-epilepticus-Zahl)
+- **Allgemeine Beobachtung:** Sehr saubere, standardsbelegte Situation. Rollenabgrenzung Pflege/Arzt vorbildlich (Glukose i.v. ärztlich, Shunt-Schutz), obsolete Empfehlung (Beißkeil) korrekt als obsolet gelehrt, keine Pseudo-Empathie, keine erfundenen Instrumente (FAST bewusst vermieden). Alle 4 neuen Steps fachlich korrekt und gegroundet. Die NIEDRIG-Findings sind Feinschliff (Vollständigkeit/B1-Priorisierung), kein Sicherheitsrisiko.
+- **K.O.-Verdikt: PASS** (keine HOCH- oder MITTEL-Findings; alle NIEDRIG optional, live-deploy-tauglich)
