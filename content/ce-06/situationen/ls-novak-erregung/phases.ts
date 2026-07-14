@@ -457,7 +457,7 @@ export const CE06_SIT_NOVAK_ERSTMASSNAHMEN: SituationsPhase = {
         kerntext:
           "Körperliche Fixierung ist die LETZTE Deeskalationsstufe — nie der erste, bequeme Griff. Wenn überhaupt, dann mit mehreren im Team, klarer Kommandostruktur und patientenschonend, während eine Person im sprechenden Kontakt bleibt.\n\nZwang darf nur bei echter Selbst- oder Fremdgefährdung eingesetzt werden, nie aggressiv und nur als allerletzter Ausweg, wenn kein milderer Weg mehr bleibt. Er muss rechtlich gedeckt sein und auf das unbedingt nötige Mindestmaß begrenzt bleiben.\n\nDie Rechtslage: Eine Freiheitsentziehung darf es nur geben, wenn der Betroffene einwilligt, wenn akute Gefahr keinen Aufschub erlaubt (Gefahr im Verzug) oder wenn ein Gericht sie beschlossen hat. Auf einer somatischen Station (hier die Innere) ist die richterliche Grundlage das Betreuungsrecht — die Genehmigung des Betreuungsgerichts (§ 1831 BGB). Bei Gefahr im Verzug ist die akute Sofortmaßnahme ohne Genehmigung erlaubt, sie ist aber unverzüglich nachzuholen. Das PsychKG der Länder ist eine zusätzliche Regelung nur für die Unterbringung in psychiatrischen Einrichtungen; auf der Inneren greift es nicht automatisch.\n\nUnd die Beruhigungsspritze? Eine medikamentöse Sedierung (etwa Haloperidol) ordnet der Arzt an. Die Pflege erkennt, deeskaliert, sichert und assistiert — sie gibt Sedativa nie eigenmächtig.",
         faustregel:
-          "Fixierung ist die letzte Stufe, nie der erste Griff — nur bei echter Gefahr, legitimiert, Mindestmaß, im Team, eine Person spricht weiter. Rechtsgrundlage: Zustimmung / Gefahr im Verzug / Genehmigung (§ 1831 BGB); PsychKG nur in der Psychiatrie. Sedierung = ärztlich.",
+          "Fixierung ist die letzte Stufe, nie der erste Griff — nur bei echter Gefahr, legitimiert, Mindestmaß, im Team, eine Person spricht weiter. Die Fixierung selbst muss ärztlich angeordnet sein. Rechtsgrundlage: Zustimmung / Gefahr im Verzug / Genehmigung (§ 1831 BGB); PsychKG nur in der Psychiatrie. Sedierung = ärztlich.",
         spektrum: [
           {
             patientName: "Gefahr im Verzug",
@@ -482,7 +482,7 @@ export const CE06_SIT_NOVAK_ERSTMASSNAHMEN: SituationsPhase = {
           vorderseite:
             "Die Kollegin will den erregten Patienten sofort fixieren und ein Beruhigungsmittel geben — geht das?",
           rueckseite:
-            "Nein, nicht als erster/freier Schritt. Fixierung = letzte Deeskalationsstufe, nur bei echter Gefahr, legitimiert, Mindestmaß, im Team (eine Person spricht weiter). Rechtsgrundlage: Zustimmung / Gefahr im Verzug / richterliche Genehmigung (§ 1831 BGB; PsychKG nur in der Psychiatrie). Sedierung (Haloperidol) = ärztliche Anordnung.",
+            "Nein, nicht als erster/freier Schritt. Fixierung = letzte Deeskalationsstufe, nur bei echter Gefahr, legitimiert, Mindestmaß, im Team (eine Person spricht weiter). Die Fixierung selbst wird ärztlich angeordnet. Rechtsgrundlage: Zustimmung / Gefahr im Verzug / richterliche Genehmigung (§ 1831 BGB; PsychKG nur in der Psychiatrie). Sedierung (Haloperidol) = ärztliche Anordnung.",
         },
       },
     },

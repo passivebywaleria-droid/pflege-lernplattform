@@ -174,7 +174,7 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
         storyAufhaenger:
           "Herr Kortmann hat seit der Not-OP einen künstlichen Darmausgang am linken Unterbauch. Ob er später zurückverlegt werden kann und wie empfindlich die Haut drumherum ist, hängt an einer einzigen Frage: Welcher Darm wird da ausgeleitet?",
         kerntext:
-          "Ein Stoma ist ein künstlich angelegter Darmausgang. Entscheidend ist, welcher Darmabschnitt ausgeleitet wird — Dickdarm oder Dünndarm.\n\nBei Herrn Kortmann ist es ein Kolostoma: die Ausleitung des Dickdarms, typischerweise im linken Unterbauch. Der Stuhl ist hier breiig bis fest. Weil bei der Hartmann-Operation nur ein Stück Darm vorübergehend stillgelegt wird, ist dieses endständige Kolostoma meist temporär — es kann später in einer weiteren Operation zurückverlegt werden.\n\nDas Gegenstück ist das Ileostoma: die Ausleitung des Dünndarms, meist im rechten Unterbauch. Sein Inhalt ist dünnflüssig, reichlich (rund ein Liter am Tag) und aggressiv — er greift die Haut an und weicht sie bei Kontakt wund auf (Mazeration). Deshalb wird ein Ileostoma vorstehend als kleiner Nippel angelegt und die Hautschutzplatte besonders genau zugeschnitten, damit möglichst wenig Haut mit dem Sekret in Berührung kommt.\n\nMerke dir Seite und Inhalt: links, breiig-fest = Kolostoma (Dickdarm); rechts, dünn und aggressiv = Ileostoma (Dünndarm).",
+          "Ein Stoma ist ein künstlich angelegter Darmausgang. Entscheidend ist, welcher Darmabschnitt ausgeleitet wird — Dickdarm oder Dünndarm.\n\nBei Herrn Kortmann ist es ein Kolostoma: die Ausleitung des Dickdarms, typischerweise im linken Unterbauch. Der Stuhl ist hier breiig bis fest. Weil bei der Hartmann-Operation nur ein Stück Darm vorübergehend stillgelegt wird, ist dieses endständige Kolostoma meist temporär — es kann später in einer weiteren Operation zurückverlegt werden.\n\nDas Gegenstück ist das Ileostoma: die Ausleitung des Dünndarms, meist im rechten Unterbauch. Sein Inhalt ist dünnflüssig, reichlich (frisch nach der Anlage etwa 1–3 Liter am Tag) und aggressiv — er greift die Haut an und weicht sie bei Kontakt wund auf (Mazeration). Deshalb wird ein Ileostoma vorstehend als kleiner Nippel angelegt und die Hautschutzplatte besonders genau zugeschnitten, damit möglichst wenig Haut mit dem Sekret in Berührung kommt.\n\nMerke dir Seite und Inhalt: links, breiig-fest = Kolostoma (Dickdarm); rechts, dünn und aggressiv = Ileostoma (Dünndarm).",
         faustregel:
           "Links, breiig-fest, oft nur vorübergehend = Kolostoma (Dickdarm) — so bei Herrn Kortmann. Rechts, dünnflüssig, hautaggressiv = Ileostoma (Dünndarm), Hautschutzplatte besonders exakt zuschneiden.",
         spektrum: [
@@ -189,7 +189,7 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
             patientName: "Ileostoma (Dünndarm)",
             hauptfaktor: "hautaggressiv",
             kurzbeschreibung:
-              "Rechts, dünnflüssig (~1 L/Tag), greift die Haut an → als Nippel angelegt, Hautschutzplatte exakt zugeschnitten.",
+              "Rechts, dünnflüssig (frisch ~1–3 L/Tag), greift die Haut an → als Nippel angelegt, Hautschutzplatte exakt zugeschnitten.",
           },
           {
             patientName: "Die Hautschutzplatte",
@@ -202,7 +202,7 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
           vorderseite:
             "Herr Kortmann hat ein Stoma links im Unterbauch, Stuhl breiig-fest — welches ist es, und was heißt das?",
           rueckseite:
-            "Kolostoma (Dickdarm, links, breiig-fest); nach Hartmann meist temporär, später rückverlegbar. Gegenstück Ileostoma (Dünndarm, rechts, dünnflüssig ~1 L/Tag, aggressiv → als Nippel angelegt, Hautschutzplatte exakt zuschneiden gegen Mazeration).",
+            "Kolostoma (Dickdarm, links, breiig-fest); nach Hartmann meist temporär, später rückverlegbar. Gegenstück Ileostoma (Dünndarm, rechts, dünnflüssig, frisch ~1–3 L/Tag, aggressiv → als Nippel angelegt, Hautschutzplatte exakt zuschneiden gegen Mazeration).",
         },
       },
     },
@@ -241,7 +241,7 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
             text: "Es ist ein endständiges Kolostoma (Dickdarm, linker Unterbauch) — nach Hartmann meist temporär und später rückverlagerbar.",
             isCorrect: true,
             explanation:
-              "Richtig. Ein Kolostoma ist die Ausleitung des Dickdarms, meist im linken Unterbauch; die endständige Kolostomie fördert meist breiigen bis festen Stuhlgang. Nach einer Hartmann-Operation ist das endständige Kolostoma meist ein temporäres Stoma, das operativ zurückverlagert werden kann. Beim Ileostoma (Dünndarm, rechter Unterbauch) ist der austretende Dünndarminhalt (etwa 1 Liter/Tag) viel aggressiver — deshalb wird es prominent (Nippel) angelegt und die Hautschutzplatte besonders exakt zugeschnitten.",
+              "Richtig. Ein Kolostoma ist die Ausleitung des Dickdarms, meist im linken Unterbauch; die endständige Kolostomie fördert meist breiigen bis festen Stuhlgang. Nach einer Hartmann-Operation ist das endständige Kolostoma meist ein temporäres Stoma, das operativ zurückverlagert werden kann. Beim Ileostoma (Dünndarm, rechter Unterbauch) ist der austretende Dünndarminhalt (frisch etwa 1–3 Liter/Tag) viel aggressiver — deshalb wird es prominent (Nippel) angelegt und die Hautschutzplatte besonders exakt zugeschnitten.",
             explanationB1:
               "Richtig. Ein Kolostoma ist ein Dickdarm-Ausgang, meist links. Der Stuhl ist breiig bis fest. Nach der Hartmann-OP ist es meist nur vorübergehend und kann später zurückverlegt werden. Beim Ileostoma (Dünndarm, rechts) ist der Inhalt viel aggressiver für die Haut.",
           },
@@ -257,7 +257,7 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
             text: "Beim Kolostoma ist der austretende Darminhalt besonders aggressiv für die Haut — deshalb muss die Hautschutzplatte hier besonders exakt zugeschnitten werden.",
             isCorrect: false,
             explanation:
-              "Falsch — genau vertauscht. Besonders aggressiv ist der Dünndarminhalt beim Ileostoma (etwa 1 Liter/Tag), der bei Hautkontakt zu Mazeration führt; deshalb ist dort das exakte Zuschneiden der Hautschutzplatte besonders wichtig. Beim Kolostoma ist der Stuhl breiig bis fest und für die Haut weniger aggressiv.",
+              "Falsch — genau vertauscht. Besonders aggressiv ist der Dünndarminhalt beim Ileostoma (frisch etwa 1–3 Liter/Tag), der bei Hautkontakt zu Mazeration führt; deshalb ist dort das exakte Zuschneiden der Hautschutzplatte besonders wichtig. Beim Kolostoma ist der Stuhl breiig bis fest und für die Haut weniger aggressiv.",
             explanationB1:
               "Falsch — vertauscht. Aggressiv für die Haut ist der Dünndarminhalt beim Ileostoma. Beim Kolostoma ist der Stuhl breiig bis fest und schont die Haut mehr.",
           },

@@ -32,7 +32,7 @@ Das Transplantationsgesetz regelt, ob Organspenden zulässig sind und auf welche
 - Primärquelle: (I care Pflege 2020, Kap. 7.6.5)
 
 ### F-02: Gesamthirntod als Mindestkriterium — das TPG definiert nicht den Tod
-Vor einer Organentnahme muss stets der Gesamthirntod festgestellt werden. Mit dem Transplantationsgesetz definiert der Gesetzgeber nicht den Tod; er legt vielmehr ein Mindestkriterium für die Organentnahme fest.
+Vor einer Organentnahme muss stets der Gesamthirntod festgestellt werden. Mit dem Transplantationsgesetz definiert der Gesetzgeber nicht den Tod; er legt vielmehr ein Mindestkriterium für die Organentnahme fest. Fachsprachlich heißt der Gesamthirntod seit der aktuellen Terminologie irreversibler Hirnfunktionsausfall (IHA) — der endgültige, nicht behebbare Ausfall der Gesamtfunktion von Großhirn, Kleinhirn und Hirnstamm.
 
 **Beleg:**
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
@@ -41,10 +41,12 @@ Vor einer Organentnahme muss stets der Gesamthirntod festgestellt werden. Mit de
 - Zitat: "definiert der Gesetzgeber nicht den Tod"
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "ein Mindestkriterium für die Organentnahme fest"
-- Primärquelle: (I care Pflege 2020, Kap. 7.6.5)
+- Quelle: `icare-pflege-3aufl-volltext/icare-pflege-3aufl.txt`
+- Zitat: "Ein irreversibler Hirnfunktionsausfall ist der endgültige, nicht behebbare Ausfall der Gesamtfunktion des Großhirns, des"
+- Primärquelle: (I care Pflege 2025, Kap. 12.7.3 irreversibler Hirnfunktionsausfall; I care Pflege 2020, Kap. 7.6.5)
 
 ### F-03: Voraussetzungen der Organentnahme + Angehörige unterrichten
-Die Entnahme von Organen ist nur zulässig, wenn der Organspender in die Entnahme eingewilligt hat, der Hirntod des Organspenders festgestellt ist und der Eingriff durch einen Arzt erfolgt. Sie ist unzulässig, wenn die Person der Organentnahme widersprochen hat. Der Arzt muss den nächsten Angehörigen des Organspenders über die beabsichtigte Organentnahme unterrichten.
+Die Entnahme von Organen ist nur zulässig, wenn der Organspender in die Entnahme eingewilligt hat, der Hirntod des Organspenders festgestellt ist und der Eingriff durch einen Arzt erfolgt. Sie ist unzulässig, wenn die Person der Organentnahme widersprochen hat. Der Arzt muss den nächsten Angehörigen des Organspenders über die beabsichtigte Organentnahme unterrichten. Das Aufklärungsgespräch führen Arzt/Ärztin, eine Pflegefachperson oder eine Mitarbeiterin der Deutschen Stiftung Organtransplantation (DSO); ein DSO-Koordinator begleitet den gesamten Organspendeprozess.
 
 **Beleg:**
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
@@ -53,7 +55,11 @@ Die Entnahme von Organen ist nur zulässig, wenn der Organspender in die Entnahm
 - Zitat: "der Hirntod des Organspenders festgestellt ist"
 - Quelle: `icare-pflege-volltext/icare-pflege.txt`
 - Zitat: "Der Arzt muss den nächsten Angehörigen des Organspenders über die beabsichtigte Organentnahme unterrichten"
-- Primärquelle: (I care Pflege 2020, Kap. 7.6.5)
+- Quelle: `icare-pflege-3aufl-volltext/icare-pflege-3aufl.txt`
+- Zitat: "Ärztin, Pflegefachperson oder Mitarbeiter der DSO klären die Bezugspersonen"
+- Quelle: `icare-pflege-3aufl-volltext/icare-pflege-3aufl.txt`
+- Zitat: "trifft ein Koordinator der Deutschen Stiftung"
+- Primärquelle: (I care Pflege 2025, Kap. 12.7.3; I care Pflege 2020, Kap. 7.6.5)
 
 ### F-04: Hirntod-Feststellung — zwei qualifizierte, unabhängige Ärzte
 Zur Feststellung des Hirntods sind genaue Kriterien festgelegt: Alle Untersuchungen müssen zwei qualifizierte Ärzte durchführen und unabhängig voneinander dokumentieren; sie dürfen nicht in den Organspendeprozess (Entnahme/Übertragung) eingebunden sein. Nach der Richtlinie der Bundesärztekammer müssen beide über mehrjährige Erfahrung in der Intensivbehandlung von Patienten mit schweren Hirnschädigungen verfügen, und bei jedem Untersuchungsgang ist mindestens ein Facharzt für Neurologie oder Neurochirurgie beteiligt. Zusätzlich sind Wartezeiten und/oder technische Untersuchungen erforderlich.
@@ -99,17 +105,15 @@ Es besteht ein Organmangel. Aufgrund des Organmangels und der guten Ergebnisse h
 - Zitat: "Leberteilen deutlich zugenommen"
 - Primärquelle: (Pflege heute 2019, Kap. 43.14)
 
-### F-07: Häufige Organtransplantationen — Niere und Leber (Beispielzahl Leber 2017)
-Zu den in Deutschland transplantierten Organen zählen u. a. Niere und Leber. Beispiel Leber: 2017 erfolgten in Deutschland 821 Lebertransplantationen, davon 760 nach postmortaler Organspende und 61 als Leberteil-Lebendspende. Die Niere ist ein häufig transplantiertes Organ (Nierentransplantation als Nierenersatztherapie).
+### F-07: Häufige Organtransplantationen — Niere und Leber (aktuelle Zahl 2024)
+Zu den in Deutschland transplantierten Organen zählen u. a. Niere und Leber; die Niere ist ein häufig transplantiertes Organ (Nierentransplantation als Nierenersatztherapie). Zum Umfang: 2024 wurden in Deutschland 3.701 Organe transplantiert (3.013 nach postmortaler Spende, 688 aus Lebendspenden). (Historisch, Pflege heute: 2017 = 821 Lebertransplantationen, davon 760 nach postmortaler Spende und 61 als Leberteil-Lebendspende.)
 
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "2017 erfolgten in Deutschland 821 Lebertransplantationen"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "760 nach postmortaler Organspende"
-- Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Nierentransplantation"
-- Primärquelle: (Pflege heute 2019, Kap. 43/33.5.8)
+- Primärquelle: (DSO Jahresbericht „Organspende und Transplantation in Deutschland 2024"; Pflege heute 2019, Kap. 43/33.5.8)
 
 ### F-08: Kulturelle/religiöse Bedeutung — Hirntod und Organspende im Spektrum
 Die Bewertung von Hirntod und Organspende ist kulturell und religiös unterschiedlich. In manchen Traditionen wird das Konzept des Hirntods anerkannt und die Spende als Akt der Nächstenliebe verstanden; in einer Sicht gilt die Organspende als gottfällige Haltung, weil ein Menschenleben zu retten oberste Priorität hat. In anderer Auslegung ist der Hirntod nicht dem Tod des Menschen gleichzusetzen, weshalb eine Organentnahme bei Hirntoten nicht zulässig ist — während wieder andere (z. B. liberale Juden) das Hirntodkonzept anerkennen.

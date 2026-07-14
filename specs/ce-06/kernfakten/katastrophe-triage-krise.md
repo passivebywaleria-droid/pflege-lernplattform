@@ -22,14 +22,16 @@
 ---
 
 ### F-01: Großschadensereignis / MANV — Definition und Leitprinzip
-Ein Massenanfall von Verletzten, Erkrankten und Beteiligten (MANV) ist ein Notfall mit einer größeren Anzahl von Verletzten oder Erkrankten, der mit der vorhandenen Vorhaltung des Rettungsdienstes nicht bewältigt werden kann. Ziel der Bewältigung ist es, für möglichst viele Patienten das Beste zu tun (nicht die maximale Einzelversorgung).
+Ein Massenanfall von Verletzten, Erkrankten und Beteiligten (MANV) ist ein Notfall mit einer größeren Anzahl von Verletzten oder Erkrankten (als grobe Schwelle gilt ein Massenanfall ab etwa 5 Betroffenen), der mit der vorhandenen Vorhaltung des Rettungsdienstes nicht bewältigt werden kann. Ziel der Bewältigung ist es, für möglichst viele Patienten das Beste zu tun (nicht die maximale Einzelversorgung).
 
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Notfall mit einer größeren Anzahl von Verletzten oder Erkrankten"
+- Quelle: `icare-pflege-3aufl-volltext/icare-pflege-3aufl.txt`
+- Zitat: "Massenanfall (mindestens 5) an Verletzten oder Erkrankten"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "für möglichst viele Patienten das Beste tun"
-- Primärquelle: (Pflege heute 2019, Kap. 14.7)
+- Primärquelle: (I care Pflege 2025, Kap. 23.6.8 Großschadensereignisse; Pflege heute 2019, Kap. 14.7)
 
 ### F-02: Katastrophe (nach KatSG) — Definition
 Eine Katastrophe ist ein Großschadensereignis mit einer Gefahr für das Leben oder die Gesundheit vieler Menschen, für die Umwelt oder sonstige bedeutsame Rechtsgüter, das durch die örtlichen Behörden und Rettungsdienste nicht alleine bewältigt werden kann.

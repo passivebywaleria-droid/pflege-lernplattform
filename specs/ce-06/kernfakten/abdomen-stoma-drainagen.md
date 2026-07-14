@@ -149,11 +149,13 @@ Ein Stoma (künstlicher Darmausgang) ist die Ausleitung des Dünn- oder Dickdarm
 - Primärquelle: (Paetz Chirurgie 2017, Kap. 23.8.2/23.8.3)
 
 ### F-11: Ileo vs. Kolo — Versorgungsanforderung: Dünndarminhalt aggressiver, prominentes Stoma, exaktes Zuschneiden
-Der kontinuierlich austretende Dünndarminhalt (pro Tag etwa 1 Liter) ist viel aggressiver als der Dickdarminhalt und führt bei längerem Hautkontakt zu erheblichen Hautschäden durch Mazeration. Deshalb wird das Ileostoma so eingenäht, dass es die Haut ca. 3 cm überragt (prominentes Ileostoma/Nippel-Ileostoma); das exakte Zuschneiden der Hautschutzplatte ist beim Ileostoma besonders wichtig.
+Der kontinuierlich austretende Dünndarminhalt ist viel aggressiver als der Dickdarminhalt und führt bei längerem Hautkontakt zu erheblichen Hautschäden durch Mazeration. Frisch nach der Anlage läuft er in großen Mengen ab (etwa 1–3 Liter pro Tag); erst nach einigen Wochen wird die Ausscheidung breiiger und geringer. Deshalb wird das Ileostoma so eingenäht, dass es die Haut ca. 3 cm überragt (prominentes Ileostoma/Nippel-Ileostoma); das exakte Zuschneiden der Hautschutzplatte ist beim Ileostoma besonders wichtig.
 
 **Beleg:**
 - Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`
 - Zitat: "Der kontinuierlich austretende Dünndarminhalt (pro Tag etwa 1 Liter) ist viel aggressiver als"
+- Quelle: `icare-pflege-3aufl-volltext/icare-pflege-3aufl.txt`
+- Zitat: "der Stuhl läuft kontinuierlich in großen Mengen ab (1000"
 - Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`
 - Zitat: "zu erheblichen Hautschäden durch Mazeration"
 - Quelle: `paetz-chirurgie-volltext/paetz-chirurgie.txt`

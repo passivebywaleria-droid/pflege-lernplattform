@@ -42,12 +42,14 @@ Solange die Chance auf einen gewaltlosen Ausgang besteht, sollten Pflegende nie 
 - Primärquelle: (Pflege heute 2019, Kap. 16.6)
 
 ### F-04: Fixierung/körperliche Maßnahmen erst als LETZTE Deeskalationsstufe
-Erst in der letzten Deeskalationsstufe ist es hilfreich, wenn mehrere Teammitglieder patientenschonende Immobilisations- und Fixierungstechniken anwenden — mit klarer Kommandostruktur, während eine Person im sprechenden Kontakt bleibt. Körperliche Intervention ist nie der erste Schritt.
+Erst in der letzten Deeskalationsstufe ist es hilfreich, wenn mehrere Teammitglieder patientenschonende Immobilisations- und Fixierungstechniken anwenden — mit klarer Kommandostruktur, während eine Person im sprechenden Kontakt bleibt. Körperliche Intervention ist nie der erste Schritt. Die Fixierung selbst muss ärztlich angeordnet sein; ist sie regelmäßig oder absehbar länger nötig, ist zusätzlich eine richterliche Genehmigung erforderlich.
 
 **Beleg:**
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Erst in der letzten Deeskalationsstufe ist"
-- Primärquelle: (Pflege heute 2019, Kap. 16.6)
+- Quelle: `icare-pflege-3aufl-volltext/icare-pflege-3aufl.txt`
+- Zitat: "Die Fixierung muss ärztlich angeordnet sein"
+- Primärquelle: (I care Pflege 2025, Kap. 7.7.5 Freiheitsbeschränkende Maßnahmen; Pflege heute 2019, Kap. 16.6)
 
 ### F-05: Zwang nur legitimiert, auf das Mindestmaß beschränkt, nicht aggressiv
 Muss Gewalt zur Abwendung von Selbst- oder Fremdgefährdung angewendet werden, darf sie nicht aggressiv sein und nur, wenn es keinen anderen Weg gibt. Die Gewaltanwendung muss legitimiert sein und auf das Mindestmaß beschränkt bleiben.

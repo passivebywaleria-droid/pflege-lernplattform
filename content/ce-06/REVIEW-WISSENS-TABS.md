@@ -357,7 +357,7 @@ Die Rechtslage: Eine Freiheitsentziehung darf es nur geben, wenn der Betroffene 
 
 Und die Beruhigungsspritze? Eine medikamentöse Sedierung (etwa Haloperidol) ordnet der Arzt an. Die Pflege erkennt, deeskaliert, sichert und assistiert — sie gibt Sedativa nie eigenmächtig.
 
-**Faustregel:** Fixierung ist die letzte Stufe, nie der erste Griff — nur bei echter Gefahr, legitimiert, Mindestmaß, im Team, eine Person spricht weiter. Rechtsgrundlage: Zustimmung / Gefahr im Verzug / Genehmigung (§ 1831 BGB); PsychKG nur in der Psychiatrie. Sedierung = ärztlich.
+**Faustregel:** Fixierung ist die letzte Stufe, nie der erste Griff — nur bei echter Gefahr, legitimiert, Mindestmaß, im Team, eine Person spricht weiter. Die Fixierung selbst muss ärztlich angeordnet sein. Rechtsgrundlage: Zustimmung / Gefahr im Verzug / Genehmigung (§ 1831 BGB); PsychKG nur in der Psychiatrie. Sedierung = ärztlich.
 
 **Spektrum:**
 
@@ -365,7 +365,7 @@ Und die Beruhigungsspritze? Eine medikamentöse Sedierung (etwa Haloperidol) ord
 - **Nur Unruhe, kein akuter Notfall** (keine Rechtsgrundlage): Ohne echte Gefahr keine Fixierung. Weiter deeskalieren, Arzt einbinden — Zwang ist nicht das erste Mittel.
 - **Team will Beruhigungsmittel geben** (ärztliche Anordnung): Haloperidol und andere Sedativa ordnet der Arzt an. Die Pflege assistiert und überwacht — gibt sie nicht selbst.
 
-**Karteikarte:** _Die Kollegin will den erregten Patienten sofort fixieren und ein Beruhigungsmittel geben — geht das?_ → Nein, nicht als erster/freier Schritt. Fixierung = letzte Deeskalationsstufe, nur bei echter Gefahr, legitimiert, Mindestmaß, im Team (eine Person spricht weiter). Rechtsgrundlage: Zustimmung / Gefahr im Verzug / richterliche Genehmigung (§ 1831 BGB; PsychKG nur in der Psychiatrie). Sedierung (Haloperidol) = ärztliche Anordnung.
+**Karteikarte:** _Die Kollegin will den erregten Patienten sofort fixieren und ein Beruhigungsmittel geben — geht das?_ → Nein, nicht als erster/freier Schritt. Fixierung = letzte Deeskalationsstufe, nur bei echter Gefahr, legitimiert, Mindestmaß, im Team (eine Person spricht weiter). Die Fixierung selbst wird ärztlich angeordnet. Rechtsgrundlage: Zustimmung / Gefahr im Verzug / richterliche Genehmigung (§ 1831 BGB; PsychKG nur in der Psychiatrie). Sedierung (Haloperidol) = ärztliche Anordnung.
 
 ---
 
@@ -547,7 +547,7 @@ Ein Stoma ist ein künstlich angelegter Darmausgang. Entscheidend ist, welcher D
 
 Bei Herrn Kortmann ist es ein Kolostoma: die Ausleitung des Dickdarms, typischerweise im linken Unterbauch. Der Stuhl ist hier breiig bis fest. Weil bei der Hartmann-Operation nur ein Stück Darm vorübergehend stillgelegt wird, ist dieses endständige Kolostoma meist temporär — es kann später in einer weiteren Operation zurückverlegt werden.
 
-Das Gegenstück ist das Ileostoma: die Ausleitung des Dünndarms, meist im rechten Unterbauch. Sein Inhalt ist dünnflüssig, reichlich (rund ein Liter am Tag) und aggressiv — er greift die Haut an und weicht sie bei Kontakt wund auf (Mazeration). Deshalb wird ein Ileostoma vorstehend als kleiner Nippel angelegt und die Hautschutzplatte besonders genau zugeschnitten, damit möglichst wenig Haut mit dem Sekret in Berührung kommt.
+Das Gegenstück ist das Ileostoma: die Ausleitung des Dünndarms, meist im rechten Unterbauch. Sein Inhalt ist dünnflüssig, reichlich (frisch nach der Anlage etwa 1–3 Liter am Tag) und aggressiv — er greift die Haut an und weicht sie bei Kontakt wund auf (Mazeration). Deshalb wird ein Ileostoma vorstehend als kleiner Nippel angelegt und die Hautschutzplatte besonders genau zugeschnitten, damit möglichst wenig Haut mit dem Sekret in Berührung kommt.
 
 Merke dir Seite und Inhalt: links, breiig-fest = Kolostoma (Dickdarm); rechts, dünn und aggressiv = Ileostoma (Dünndarm).
 
@@ -556,10 +556,10 @@ Merke dir Seite und Inhalt: links, breiig-fest = Kolostoma (Dickdarm); rechts, d
 **Spektrum:**
 
 - **Herr Kortmann** (Kolostoma (Dickdarm)): Links, Stuhl breiig bis fest. Nach der Hartmann-OP meist temporär — später rückverlegbar.
-- **Ileostoma (Dünndarm)** (hautaggressiv): Rechts, dünnflüssig (~1 L/Tag), greift die Haut an → als Nippel angelegt, Hautschutzplatte exakt zugeschnitten.
+- **Ileostoma (Dünndarm)** (hautaggressiv): Rechts, dünnflüssig (frisch ~1–3 L/Tag), greift die Haut an → als Nippel angelegt, Hautschutzplatte exakt zugeschnitten.
 - **Die Hautschutzplatte** (schützt die Haut): Sie deckt die Haut rund ums Stoma ab; je aggressiver der Inhalt, desto genauer muss sie zugeschnitten sein.
 
-**Karteikarte:** _Herr Kortmann hat ein Stoma links im Unterbauch, Stuhl breiig-fest — welches ist es, und was heißt das?_ → Kolostoma (Dickdarm, links, breiig-fest); nach Hartmann meist temporär, später rückverlegbar. Gegenstück Ileostoma (Dünndarm, rechts, dünnflüssig ~1 L/Tag, aggressiv → als Nippel angelegt, Hautschutzplatte exakt zuschneiden gegen Mazeration).
+**Karteikarte:** _Herr Kortmann hat ein Stoma links im Unterbauch, Stuhl breiig-fest — welches ist es, und was heißt das?_ → Kolostoma (Dickdarm, links, breiig-fest); nach Hartmann meist temporär, später rückverlegbar. Gegenstück Ileostoma (Dünndarm, rechts, dünnflüssig, frisch ~1–3 L/Tag, aggressiv → als Nippel angelegt, Hautschutzplatte exakt zuschneiden gegen Mazeration).
 
 ---
 
@@ -628,7 +628,7 @@ _Quellen: Pflege heute 2019, Kap. 14.7_
 
 **Kerntext:**
 
-Solange du einen einzelnen Menschen versorgst, gibst du ihm alles, was er braucht. Sobald es aber mehr Betroffene gibt, als die vorhandenen Kräfte einzeln versorgen können, kippt die Lage in einen Massenanfall von Verletzten (kurz MANV). Wird das Ereignis so groß, dass die örtlichen Kräfte es allein nicht mehr bewältigen und viele Menschen an Leben und Gesundheit bedroht sind, heißt das Katastrophe oder Großschadensereignis.
+Solange du einen einzelnen Menschen versorgst, gibst du ihm alles, was er braucht. Sobald es aber mehr Betroffene gibt, als die vorhandenen Kräfte einzeln versorgen können, kippt die Lage in einen Massenanfall von Verletzten (kurz MANV; als grobe Schwelle gilt: ab etwa 5 Betroffenen). Wird das Ereignis so groß, dass die örtlichen Kräfte es allein nicht mehr bewältigen und viele Menschen an Leben und Gesundheit bedroht sind, heißt das Katastrophe oder Großschadensereignis.
 
 Jetzt gilt ein anderes Leitprinzip: nicht mehr für den Einzelnen das Maximum, sondern für möglichst viele das Beste. Das klingt hart, rettet aber unterm Strich die meisten Leben — würdest du dich sofort ganz in die erste schwere Verletzung vertiefen, bliebe die Hilfe für alle anderen liegen. Deshalb wird zuerst gesichtet (nach Dringlichkeit eingeteilt) und erst dann geholfen.
 
@@ -656,7 +656,7 @@ _Quellen: Pflege heute 2019, Kap. 14.4.1/14.7.1_
 
 Zuerst der schnelle Blick auf den Einzelnen: Das ABCDE-Schema prüft in fester Reihenfolge das Lebensbedrohlichste zuerst — Atemweg (A), Atmung (B), Kreislauf (C), Bewusstsein (D) und zuletzt Entkleiden/Umgebung (E). Diese Reihenfolge kennst du schon aus der Ersteinschätzung; sie sorgt dafür, dass dir kein sofort tödliches Problem (etwa ein verlegter Atemweg) durchrutscht.
 
-Auf dieser Grundlage sichtest (triagierst) du: Du teilst die Betroffenen nach Dringlichkeit in Farbkategorien ein. Rot (SK I) heißt vitale Bedrohung — sofort behandeln (z. B. bedrohte Atmung, starke Blutung). Gelb (SK II) heißt schwer verletzt, aber kreislaufstabil — dringlich, aber nach den Roten. Grün (SK III) heißt leicht verletzt und gehfähig — kann warten. Blau (SK IV) kennzeichnet Betroffene ohne realistische Überlebenschance — sie werden betreuend und schmerzlindernd begleitet. Schwarz steht für Verstorbene.
+Auf dieser Grundlage sichtest (triagierst) du: Du teilst die Betroffenen nach Dringlichkeit in Farbkategorien ein. Rot (SK I) heißt vitale Bedrohung — sofort behandeln (z. B. bedrohte Atmung, starke Blutung). Gelb (SK II) heißt schwer verletzt, aber kreislaufstabil — dringlich, aber nach den Roten. Grün (SK III) heißt leicht verletzt und gehfähig — kann warten. Blau (SK IV) kennzeichnet Betroffene ohne realistische Überlebenschance — sie werden betreuend und schmerzlindernd begleitet; diese Kategorie vergibt nur ein Arzt. Schwarz steht für Verstorbene.
 
 Entscheidend: Du sichtest nach Dringlichkeit, nicht nach Lautstärke. Wer laut ruft und umhergeht, ist meist grün; die stillen, kaum atmenden Betroffenen sind oft die roten. Und Grün heißt nicht „fertig": Gerade nach dem Einatmen von Rauch kann sich ein Zustand verzögert verschlechtern — also weiter beobachten.
 
@@ -708,7 +708,7 @@ _Quellen: I care Pflege 2020, Kap. 7.6.5_
 
 **Kerntext:**
 
-Der Gesamthirntod bedeutet: Alle Funktionen des Gehirns sind unumkehrbar (irreversibel) ausgefallen — Großhirn, Kleinhirn und Hirnstamm. Das Gehirn steuert nichts mehr, und es wird sich nie wieder erholen. Genau das ist bei Tobias festgestellt.
+Der Gesamthirntod — fachsprachlich heute irreversibler Hirnfunktionsausfall (IHA) — bedeutet: Alle Funktionen des Gehirns sind unumkehrbar (irreversibel) ausgefallen — Großhirn, Kleinhirn und Hirnstamm. Das Gehirn steuert nichts mehr, und es wird sich nie wieder erholen. Genau das ist bei Tobias festgestellt.
 
 Der Widerspruch, an dem seine Mutter verzweifelt: Herz und Kreislauf können durch die Intensivmedizin noch eine Weile weiterlaufen — der Körper ist warm, die Brust hebt sich, das Herz schlägt mit Unterstützung. Trotzdem ist der Mensch tot, weil sein Gehirn endgültig erloschen ist. Der warme Körper täuscht ein Leben vor, das nicht mehr da ist.
 
@@ -763,7 +763,7 @@ _Quellen: I care Pflege 2020, Kap. 7.6.5 · Pflege heute 2019, Kap. 43.14_
 
 Auch ein hirntoter Mensch wird mit Würde behandelt. Tobias' Körper wird intensivmedizinisch weiterversorgt — beatmet, der Kreislauf gestützt. Für die Eltern ist der Anblick zutiefst widersprüchlich: Ihr Sohn wirkt schlafend und warm und ist doch tot. Deine Aufgabe ist die einfühlsame Begleitung: Zeit und Raum zum Abschiednehmen geben, behutsam und ehrlich erklären, nichts überstürzen, den Menschen achten.
 
-Dabei kennst du deine Rolle genau. Du drängst nicht in eine Richtung und nimmst den Eltern die Entscheidung nicht ab. Das eigentliche Aufklärungs- und Entscheidungsgespräch zur Organspende führen der Arzt und die Transplantationsbeauftragte — du informierst nur im Rahmen deiner Aufgabe und begleitest.
+Dabei kennst du deine Rolle genau. Du drängst nicht in eine Richtung und nimmst den Eltern die Entscheidung nicht ab. Das eigentliche Aufklärungs- und Entscheidungsgespräch zur Organspende führen der Arzt, die Transplantationsbeauftragte oder ein Koordinator der DSO (der bundesweiten Organspende-Stiftung), der den Prozess begleitet — du informierst nur im Rahmen deiner Aufgabe und begleitest.
 
 Das ist eine ethische Grenzsituation: Sie verlangt Fachwissen und Haltung zugleich — Ruhe, Ehrlichkeit, Respekt vor dem, was die Familie glaubt und braucht, und die Fähigkeit, den Widerspruch von warmem Körper und Tod mit auszuhalten, ohne ihn wegzureden.
 
@@ -884,7 +884,7 @@ _Quellen: Pflege heute 2019, Kap. 14.3.1/14.4.1_
 
 Jede Ersteinschätzung folgt einer festen Reihenfolge nach Prioritäten (dem ABCDE-Gedanken): zuerst das, was am schnellsten tötet. Für den allerersten Blick heißt das zwei Fragen, beide in Sekunden beantwortet: Reagiert der Mensch auf Ansprache und Rütteln? Und hebt sich der Brustkorb ruhig und regelmäßig?
 
-Aus den Antworten ergeben sich drei Wege. Reagiert er nicht UND atmet er nicht normal, behandelst du ihn als Herz-Kreislauf-Stillstand: Rettungskette, sofort Herzdruckmassage — genau der Weg, den du bei Herrn Wagner gegangen bist. Ist er bewusstlos, atmet aber normal, bringst du ihn in die stabile Seitenlage, damit die Atemwege frei bleiben, und überwachst ihn. Reagiert er dagegen — und sei es nur schwach —, dann läuft sein Kreislauf; jetzt geht es nicht ums Wiederbeleben, sondern ums Unterscheiden, was dahintersteckt.
+Aus den Antworten ergeben sich drei Wege. Reagiert er nicht UND atmet er nicht normal, behandelst du ihn als Herz-Kreislauf-Stillstand: Rettungskette, sofort Herzdruckmassage — genau der Weg, den du bei Herrn Wagner gegangen bist. (Erfahrenes Fachpersonal darf zeitgleich zur Atemkontrolle höchstens 10 Sekunden den Karotispuls tasten — aber ohne Zeit zu verlieren; im Zweifel sofort drücken.) Ist er bewusstlos, atmet aber normal, bringst du ihn in die stabile Seitenlage, damit die Atemwege frei bleiben, und überwachst ihn. Reagiert er dagegen — und sei es nur schwach —, dann läuft sein Kreislauf; jetzt geht es nicht ums Wiederbeleben, sondern ums Unterscheiden, was dahintersteckt.
 
 Ein Stolperstein bleibt wichtig: Schnappatmung — einzelne, ruckartige Atemzüge mit langen Pausen — zählt NICHT als normale Atmung. Wer sie dafür hält, verpasst den Stillstand.
 
@@ -924,7 +924,7 @@ Und wenn jemand erregt und verwirrt ist, womöglich mit Fieber, denkst du an ein
 
 - **Kurz weg, kommt zurück** (Synkope): Keine bleibenden Ausfälle. Hinlegen, Beine hoch, Ursache klären (eine kardiale Ohnmacht ist gefährlich).
 - **Einseitig, bleibend** (Schlaganfall): Mundwinkel/Arm/Sprache, Ausfälle bleiben. Sofort Arzt/Notruf — time is brain.
-- **Zuckt am ganzen Körper** (Krampfanfall): Vor Verletzungen schützen, nichts in den Mund, Zeit stoppen, bei langem Anfall Arzt.
+- **Zuckt am ganzen Körper** (Krampfanfall): Vor Verletzungen schützen, nichts in den Mund, Zeit stoppen, unverzüglich den Arzt rufen (dauert es länger als 5 Minuten: Status epilepticus).
 - **Erregt/verwirrt, evtl. Fieber** (an Delir denken): Nicht vorschnell 'psychisch' — körperliche Ursache prüfen (Fieber, Sauerstoff, Zucker); erst der Eigenschutz. Das kennst du von Herrn Novak.
 
 **Karteikarte:** _Der Kreislauf läuft — was misst du zuerst, und wie unterscheidest du Synkope, Schlaganfall und Krampfanfall?_ → Zuerst IMMER Blutzucker (Unterzuckerung imitiert alles). Synkope = kurz weg, kommt zurück, keine Ausfälle. Schlaganfall = plötzlich, einseitig, bleibend → sofort Arzt (time is brain). Krampfanfall = Zuckungen am ganzen Körper → schützen, nichts in den Mund, Zeit stoppen.

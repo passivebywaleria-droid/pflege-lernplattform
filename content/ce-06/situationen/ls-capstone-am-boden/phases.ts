@@ -108,7 +108,7 @@ export const CE06_SIT_PETROVA_ERKENNEN: SituationsPhase = {
         storyAufhaenger:
           "Jemand liegt am Boden — das kann fast alles bedeuten. Und doch beginnt jede richtige Reaktion mit demselben, immer gleichen ersten Blick. Er sortiert in Sekunden, welchen von drei Wegen du gehst.",
         kerntext:
-          "Jede Ersteinschätzung folgt einer festen Reihenfolge nach Prioritäten (dem ABCDE-Gedanken): zuerst das, was am schnellsten tötet. Für den allerersten Blick heißt das zwei Fragen, beide in Sekunden beantwortet: Reagiert der Mensch auf Ansprache und Rütteln? Und hebt sich der Brustkorb ruhig und regelmäßig?\n\nAus den Antworten ergeben sich drei Wege. Reagiert er nicht UND atmet er nicht normal, behandelst du ihn als Herz-Kreislauf-Stillstand: Rettungskette, sofort Herzdruckmassage — genau der Weg, den du bei Herrn Wagner gegangen bist. Ist er bewusstlos, atmet aber normal, bringst du ihn in die stabile Seitenlage, damit die Atemwege frei bleiben, und überwachst ihn. Reagiert er dagegen — und sei es nur schwach —, dann läuft sein Kreislauf; jetzt geht es nicht ums Wiederbeleben, sondern ums Unterscheiden, was dahintersteckt.\n\nEin Stolperstein bleibt wichtig: Schnappatmung — einzelne, ruckartige Atemzüge mit langen Pausen — zählt NICHT als normale Atmung. Wer sie dafür hält, verpasst den Stillstand.",
+          "Jede Ersteinschätzung folgt einer festen Reihenfolge nach Prioritäten (dem ABCDE-Gedanken): zuerst das, was am schnellsten tötet. Für den allerersten Blick heißt das zwei Fragen, beide in Sekunden beantwortet: Reagiert der Mensch auf Ansprache und Rütteln? Und hebt sich der Brustkorb ruhig und regelmäßig?\n\nAus den Antworten ergeben sich drei Wege. Reagiert er nicht UND atmet er nicht normal, behandelst du ihn als Herz-Kreislauf-Stillstand: Rettungskette, sofort Herzdruckmassage — genau der Weg, den du bei Herrn Wagner gegangen bist. (Erfahrenes Fachpersonal darf zeitgleich zur Atemkontrolle höchstens 10 Sekunden den Karotispuls tasten — aber ohne Zeit zu verlieren; im Zweifel sofort drücken.) Ist er bewusstlos, atmet aber normal, bringst du ihn in die stabile Seitenlage, damit die Atemwege frei bleiben, und überwachst ihn. Reagiert er dagegen — und sei es nur schwach —, dann läuft sein Kreislauf; jetzt geht es nicht ums Wiederbeleben, sondern ums Unterscheiden, was dahintersteckt.\n\nEin Stolperstein bleibt wichtig: Schnappatmung — einzelne, ruckartige Atemzüge mit langen Pausen — zählt NICHT als normale Atmung. Wer sie dafür hält, verpasst den Stillstand.",
         faustregel:
           "Zwei Fragen zuerst: Reagiert er? Atmet er normal? Beides nein = reanimieren. Bewusstlos, aber atmet = stabile Seitenlage. Reagiert = Kreislauf da → jetzt unterscheiden. Schnappen ist kein Atmen.",
         spektrum: [
@@ -249,7 +249,7 @@ export const CE06_SIT_PETROVA_ERKENNEN: SituationsPhase = {
             patientName: "Zuckt am ganzen Körper",
             hauptfaktor: "Krampfanfall",
             kurzbeschreibung:
-              "Vor Verletzungen schützen, nichts in den Mund, Zeit stoppen, bei langem Anfall Arzt.",
+              "Vor Verletzungen schützen, nichts in den Mund, Zeit stoppen, unverzüglich den Arzt rufen (dauert es länger als 5 Minuten: Status epilepticus).",
           },
           {
             patientName: "Erregt/verwirrt, evtl. Fieber",
@@ -492,7 +492,7 @@ export const CE06_SIT_PETROVA_ERSTMASSNAHMEN: SituationsPhase = {
         mcVariant: "fallstrick",
         optionen: [
           {
-            text: "Ich schütze ihn vor Verletzungen (Gefährliches wegräumen, Kopf polstern), halte ihn NICHT fest, stecke NICHTS in den Mund, merke mir die Uhrzeit — und hole den Arzt, besonders wenn der Anfall über wenige Minuten dauert.",
+            text: "Ich schütze ihn vor Verletzungen (Gefährliches wegräumen, Kopf polstern), halte ihn NICHT fest, stecke NICHTS in den Mund, merke mir die Uhrzeit — und rufe unverzüglich den Arzt; dauert der Anfall länger als 5 Minuten, ist es ein Status epilepticus.",
             isCorrect: true,
             explanation:
               "Richtig. Den Anfall selbst kannst du nicht stoppen — du sorgst dafür, dass er sich nicht verletzt, und lässt ihn gewähren. NICHT festhalten und NICHTS zwischen die Zähne (der Beißkeil ist obsolet und verletzt eher). Die Uhrzeit ist wichtig: Dauert der Anfall zu lange oder folgt Anfall auf Anfall ohne Erholung, ist es ein lebensbedrohlicher Status epilepticus — dann sofort ärztliche Hilfe.",
@@ -511,9 +511,9 @@ export const CE06_SIT_PETROVA_ERSTMASSNAHMEN: SituationsPhase = {
             text: "Ich flöße ihm sofort etwas Zuckerwasser ein, damit er schneller zu sich kommt.",
             isCorrect: false,
             explanation:
-              "Nein. Ein bewusstloser, krampfender Mensch kann nicht schlucken — Flüssigkeit läuft in die Atemwege (Aspiration). Im Anfall wird nichts oral gegeben. Zuckerwasser hilft ohnehin nur bei einer nachgewiesenen Unterzuckerung beim wachen Patienten. Richtig: schützen, Zeit stoppen, bei langem Anfall Arzt.",
+              "Nein. Ein bewusstloser, krampfender Mensch kann nicht schlucken — Flüssigkeit läuft in die Atemwege (Aspiration). Im Anfall wird nichts oral gegeben. Zuckerwasser hilft ohnehin nur bei einer nachgewiesenen Unterzuckerung beim wachen Patienten. Richtig: schützen, Zeit stoppen, unverzüglich den Arzt rufen (dauert es länger als 5 Minuten: Status epilepticus).",
             explanationB1:
-              "Nein. Ein krampfender, bewusstloser Mensch kann nicht schlucken — die Flüssigkeit läuft in die Lunge. Im Anfall nichts in den Mund. Richtig: schützen, Zeit stoppen, bei langem Anfall Arzt.",
+              "Nein. Ein krampfender, bewusstloser Mensch kann nicht schlucken — die Flüssigkeit läuft in die Lunge. Im Anfall nichts in den Mund. Richtig: schützen, Zeit stoppen, unverzüglich den Arzt rufen (dauert es länger als 5 Minuten: Status epilepticus).",
           },
         ],
       },

@@ -5,7 +5,15 @@
 
 ## Offen
 
-_(aktuell nichts offen)_
+### DSO-Transplantationszahlen 2024 (Erlemann erm-03) — Final-Abgleich
+Beim 2025-Re-Grounding wurde die veraltete Beispielzahl „2017 = 821 Lebertransplantationen" auf die aktuellen
+DSO-Zahlen 2024 gehoben: **3.701 Organe transplantiert (3.013 postmortal, 688 Lebendspende)** (Kernfakt F-07 +
+erm-03-Content). Quelle: DSO-Jahresbericht „Organspende und Transplantation in Deutschland 2024" (Web-Recherche,
+BMG/DSO-Pressemeldung). Das ist eine **externe amtliche Primärquelle** (wie BfArM/BÄK) — der lokale zitat-verifizierer
+kann sie nicht bestätigen (nur die historische 2017-Zahl aus Pflege heute). Intern konsistent (3.013+688=3.701),
+jahres- und quellengetaggt.
+→ **Zu tun (Gründerin, vor Live):** das Zahlentripel einmal gegen den echten DSO-Jahresbericht-2024-PDF gegenlesen —
+der einzige nicht maschinell verifizierbare Wert der 2025-Runde. Kein Blocker.
 
 ## ✅ Erledigt — 2026-07-13 (Dozentin-Freigabe „passt so" + Web-Recherche + Korpus-Abgleich)
 

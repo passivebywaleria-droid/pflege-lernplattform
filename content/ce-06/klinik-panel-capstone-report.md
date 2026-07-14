@@ -2,96 +2,86 @@
 
 **Datei:** `content/ce-06/situationen/ls-capstone-am-boden/phases.ts` (+ `patient.ts`)
 **Fall:** Frau Wanda Petrova, 68 — Synkope (roter Faden) → Differenzierungs-Capstone „Jemand liegt am Boden — was ist es?" (Retrieval/Interleaving über LE1)
-**Geprüft:** 2 Synthese-Tabs (erster Blick · erst Blutzucker/differenzieren) + 3 interleavte Phase-3-Fälle (HKS · Apoplex · Krampfanfall) + Synkope-Einordnung + SBAR + Reflexion
-**Grounding (bestehend, KEIN neuer Kernfakt):** `notfallassessment.md` (F-01/F-03/F-07), `reanimation-bls.md` (F-01/F-02/F-04), `neurologische-akutsituationen.md` (F-01/F-04/F-08/F-09/F-10/F-11/F-13), `psychische-akutsituationen.md` (F-01/F-08)
-**Datum:** 2026-07-13
+**Re-Prüfung 2025-Ergänzungen:** (1) Tab 1 `erk-01b` kerntext — Karotispuls-Halbsatz (erfahrenes Fachpersonal, zeitgleich zur Atemkontrolle ≤10 s), gegroundet `reanimation-bls` **F-03/2025** (I care Pflege 2025). (2) Fall 3 `erm-03` Musterlösung — „unverzüglich den Arzt rufen; ab >5 Min Status epilepticus", gegroundet `neurologische-akutsituationen` **F-11** (I care Pflege 2025 „unverzüglich Arzt rufen") + Krankheitslehre („>5 Min = Status").
+**Grounding (KEIN neuer Kernfakt-Thema):** `notfallassessment.md`, `reanimation-bls.md` (**19/19** Verbatim-Belege, inkl. neu Karotispuls/10 s aus `icare-pflege-3aufl`), `neurologische-akutsituationen.md` (**23/23** Belege, inkl. neu „unverzüglich Arzt rufen"), `psychische-akutsituationen.md`
+**Datum:** 2026-07-14 (Re-Prüfung; Erst-Prüfung 2026-07-13)
 
 ## Verdikt: ✅ PASS (kein K.O.)
 
 | | HOCH | MITTEL | NIEDRIG |
 |---|---|---|---|
-| Befunde | **0** | 0 | 1 (informativ) |
+| Befunde | **0** | 0 | 2 (informativ) |
 
-Kein HOCH-Befund über die vier deterministischen Lenses + 5. semantischen Lens. Eine informative NIEDRIG-Anmerkung (N1: Grounding-Nachverfolgbarkeit) für den Gründerin-Backstop — **nicht blockierend**. Deterministische Skripte: `klinik-panel.ts` PASS (0/0/0/0), `pflege-anti-pattern-check.ts` 0 Funde, `step-grounding-check.ts` PASS (Dangling 0 · Missing 0).
+Kein HOCH-Befund über die vier deterministischen Lenses + 5. semantischen Lens. Die Karotispuls-Zeile führt **keine CPR-Verzögerung** ein; die Krampfanfall-Präzisierung ist korrekt und aktueller als zuvor. N1 (Grounding-Nachverfolgbarkeit Delir-Zeile, aus Erst-Prüfung) + N2 (neu: kleine interne Wortlaut-Harmonisierung Krampfanfall) — beide **nicht blockierend**.
 
-**Zentrale Frage beantwortet:** Ja — der „erst-Blick + erst-Blutzucker"-Algorithmus ist fachlich korrekt, und jeder claim-tragende Schritt ist gegroundet (Tabs zusätzlich abgesichert durch themenSekundaer + Wiederbegegnung + dedizierte Phase-3-Fälle mit eigenem kernfaktId).
+**Skript-Läufe (deterministisch, 0 Drift):**
+- `klinik-panel.ts --situation ls-capstone-am-boden` → 0 Befunde (Zahlen 0 · Recht 0 · DNQP 0 · Konsistenz 0) · exit 0
+- `pflege-anti-pattern-check.ts ce-06` → 0 Funde
+- `step-grounding-check.ts ce-06` → ls-capstone-am-boden: claim-tragend **9** · gegroundet **9** · dangling **0**
+- `standards-currency-check.ts ce-06 --include-plans` → 0 Treffer
+- `zitat-verifizierer.ts` → reanimation-bls **19/19**, neurologische-akutsituationen **23/23** verifiziert (inkl. beide neuen Zitate)
+
+---
+
+## Re-Prüfung der 2025-Ergänzungen
+
+### (1) Tab 1 `erk-01b` — Karotispuls-Halbsatz (Lens 1/3/5)
+
+**Wortlaut:** „(Erfahrenes Fachpersonal darf zeitgleich zur Atemkontrolle höchstens 10 Sekunden den Karotispuls tasten — aber ohne Zeit zu verlieren; im Zweifel sofort drücken.)" — eingebettet in den Satz „Reagiert er nicht UND atmet er nicht normal … Rettungskette, sofort Herzdruckmassage".
+
+| Prüffrage | Ergebnis | Beleg / Begründung |
+|---|---|---|
+| Fachlich korrekt? | **OK** | Deckt sich mit `reanimation-bls` F-03/2025: „Ausreichend erfahrenes Fachpersonal soll die Pulskontrolle an der A. carotis zeitgleich mit der Atemkontrolle durchführen (höchstens 10 Sekunden)". Verbatim I care Pflege 2025 „soll zeitgleich mit der Atemkontrolle eine Pulskontrolle an der Arteria carotis durchführen" + „max. 10 Sekunden … Karotispuls" (zitat-verifizierer ✅) |
+| Konsistent mit Wagner-Fix? | **OK** | Identische Formulierung/Logik wie in `ls-wagner-reanimation` — „erfahrenes Fachpersonal", „zeitgleich", „≤10 s", „im Zweifel sofort drücken". Keine Divergenz zwischen den beiden Situationen |
+| **Keine CPR-Verzögerung?** | **OK — kritischer Punkt bestanden** | Der Puls-Check ist syntaktisch UND fachlich der Herzdruckmassage untergeordnet: „**zeitgleich** zur Atemkontrolle" (nicht zusätzlich/sequenziell), „ohne Zeit zu verlieren", „**im Zweifel sofort drücken**". Als Parenthese für „erfahrenes Fachpersonal" markiert — für die Lernenden bleibt der Handlungsimperativ „sofort Herzdruckmassage". Entspricht ERC/GRC: keine reanimationsverzögernde Pulskontrolle |
+
+### (2) Fall 3 `erm-03` — „unverzüglich Arzt; ab >5 Min Status epilepticus" (Lens 1/3/5)
+
+**Wortlaut (Korrekt-Option):** „… merke mir die Uhrzeit — und rufe **unverzüglich den Arzt**; dauert der Anfall länger als 5 Minuten, ist es ein Status epilepticus."
+
+| Prüffrage | Ergebnis | Beleg / Begründung |
+|---|---|---|
+| Fachlich korrekt? | **OK** | „unverzüglich Arzt rufen" verbatim in `neuro` F-11 (I care Pflege 2025). Die >5-Minuten-Schwelle für den Status epilepticus ist die aktuelle operationale Definition (verbatim Krankheitslehre „Dauert der Anfall länger als 5 Minuten, handelt es sich um einen [Status epilepticus]"). Beide zitat-verifiziert ✅ |
+| Konsistent / echte Verbesserung? | **OK** | Ersetzt das frühere unpräzise „Arzt holen, besonders wenn länger" durch die korrekte Doppelaussage: (a) Arzt **immer unverzüglich** informieren, (b) >5 Min = lebensbedrohlicher Status. Fachlich schärfer und aktueller |
+| Widerspruch / keine Falschzahl? | **kein Widerspruch** | Kein Konflikt mit den „nichts in den Mund / nicht festhalten / Zeit stoppen"-Aussagen. Explanation (Z.498) trägt dieselbe Linie (Status = sehr lang / Serie ohne Erholung) |
+
+**Semantisches Urteil beider Ergänzungen:** korrekte, gut abgesicherte Präzisierungen. Kein HOCH/MITTEL-Befund.
 
 ---
 
 ## Lens 1 — Arzneimittel-/Zahlen-Sicherheit ✅
-`klinik-zahlen-check`: Out-of-Range **0** · keine erfundenen Werte · keine falsch gelehrten Normwerte.
-
 | Aspekt | Ergebnis | Beleg |
 |---|---|---|
-| BZ 108 mg/dl als „normal" | OK | Hypoglykämie-Schwelle < 50 mg/dl (neuro F-03 verbatim „Blutzucker unter 50 mg/dl"). 108 liegt klar im Normbereich → schließt Hypoglykämie korrekt aus |
-| BZ 108 durchgängig konsistent | OK | Identisch in Kontext (Z.285), Kontext-B1 (Z.287) und SBAR-Musterlösung (Z.562) |
-| Keine erfundene Dosis/Volumen | OK | Kein mg/ml-Wert für Glukose o. Ä. eingeführt; Traubenzucker nur als (korrekt widerlegter) Distraktor |
-| Status epilepticus | OK | erm-03 nennt keine falsche Zahlenschwelle; Hilfe wird konservativ schon bei „über wenige Minuten" ausgelöst, Definition (F-12: sehr lang/Serie ohne Erholung) korrekt paraphrasiert |
+| BZ 108 mg/dl als „normal" | OK | Hypoglykämie-Schwelle < 50 mg/dl (neuro verbatim); 108 im Normbereich → schließt Hypoglykämie korrekt aus |
+| BZ 108 durchgängig | OK | Identisch in Kontext, Kontext-B1 und SBAR-Musterlösung |
+| „≤10 Sekunden" Karotispuls (NEU) | OK | Keine erfundene Schwelle — verbatim aus F-03/2025 |
+| „>5 Minuten" Status epilepticus (NEU) | OK | Korrekte operationale Definition, verbatim gegroundet |
+| Keine erfundene Dosis/Volumen | OK | Traubenzucker nur als (korrekt widerlegter) Distraktor |
 
 ## Lens 2 — Recht & Ethik / Currency ✅
-`standards-currency-check`: Recht-Lens **0** Funde. Keine autoritativ verwendete veraltete Norm (Capstone enthält keine FeM-/Betreuungsrechts-Claims). n/a wie im Auftrag erwartet.
+`standards-currency-check`: **0** Funde. Capstone enthält keine FeM-/Betreuungsrechts-Claims — n/a wie erwartet.
 
 ## Lens 3 — DNQP-/Standard-Konformität (Grounding) ✅
-`step-grounding-check`: **PASS** — alle zitierten `kernfaktId` existieren, keine Dangling-/Missing-Refs. Semantische Tiefenprüfung der beiden Tabs (Sub-Claims, die über die zitierten kernfaktId hinausgehen):
-
-| Sub-Claim | Tab | Zitierte kernfaktId | Tatsächliche Deckung | Nachverfolgbar? |
-|---|---|---|---|---|
-| ABCDE-Prioritäten / 2-Fragen-Erstblick | Tab 1 | notfall F-01 | notfall F-01 ✅ | ja |
-| bewusstlos+atmet → stabile Seitenlage | Tab 1 | notfall F-03 | notfall F-03 ✅ | ja |
-| **Schnappatmung zählt nicht als Atmung / HKS→reanimieren** | Tab 1 | (nur notfall F-01/F-03) | reanimation F-02/F-01/F-04 | **ja** — via `themenSekundaer:["reanimation-bls"]` + Wiederbegegnung→Wagner (`reanimation-bls-hks-erkennen`) + dedizierter Fall erm-01 (F-01/F-02/F-04) |
-| Kreislauf da → zuerst Blutzucker | Tab 2 | neuro F-13 | neuro F-13 (verweist auf F-04) ✅ | ja |
-| Synkope: kurz weg, Beine hoch, kardial gefährlich | Tab 2 | neuro F-01 | neuro F-01 + F-02 + F-06 | ja — F-02/F-06 im selben Kernfakt, ala-01 klärt kardiale Abklärung |
-| Apoplex: einseitig/bleibend, time is brain | Tab 2 | neuro F-08 | neuro F-08 + F-09 | ja — dedizierter Fall erm-02 (F-08/F-09) + Wiederbegegnung→Ríos |
-| Krampfanfall: nichts in den Mund, Zeit stoppen | Tab 2 | neuro F-10 | neuro F-10 + F-11 (+ F-12) | ja — dedizierter Fall erm-03 (F-10/F-11) |
-| **„erregt+Fieber → an Delir denken; Eigenschutz zuerst"** | Tab 2 (Spektrum) | (keine — alle 4 zitierten sind neuro) | psychische F-01 + F-08 | **eingeschränkt → siehe N1** |
-
-**Ergebnis:** Alle Sub-Claims sind fachlich korrekt und im Korpus verbatim gegroundet. Der einzige Sub-Claim ohne durchgängige Nachverfolgbarkeit im Datenmodell (Delir-Zeile) ist N1 (NIEDRIG, informativ). Der im Auftrag als kritisch benannte HKS/Schnappatmung-Ast (Tab 1) und der „nichts in den Mund"-Ast (Tab 2) sind **vollständig abgedeckt** — beide durch themenSekundaer + Wiederbegegnung + eigene Phase-3-Fälle mit eigenem kernfaktId.
+`step-grounding-check`: **PASS** — alle zitierten `kernfaktId` existieren, keine Dangling-/Missing-Refs. Der im Auftrag kritische HKS/Schnappatmung-Ast (Tab 1) und der „nichts in den Mund"-Ast (Tab 2) sind vollständig abgedeckt (themenSekundaer + Wiederbegegnung + eigene Phase-3-Fälle). Beide 2025-Zusätze (Karotispuls, unverzüglich-Arzt) sind verbatim gegroundet — siehe Re-Prüfungs-Sektion.
 
 ## Lens 4 — Konsistenz (Patient-Daten / Cross-Step) ✅
-
-| Aspekt | Ergebnis |
-|---|---|
-| stepId-Eindeutigkeit | OK — 10 unique IDs (erk-01/-01b/-02/-02b, ala-01, erm-01/-02/-03, ueb-01, ref-01) |
-| patientId | OK — `pat-petrova-kollaps` nur für Petrova; 3 Fremdfälle klar als „ein anderer Bewohner / eine Bewohnerin / ein Bewohner" markiert, keine fremde patientId |
-| Petrova-Stammdaten | OK — 68 / w / Synkope / Hypertonie durchgängig (patient.ts ↔ SBAR ↔ Phasen) |
-| BZ 108 / Verlauf | OK — konsistent; „~1 Min spontan zurück, keine Ausfälle, keine Zuckungen" durchgängig |
-| Kein Item hier-korrekt/dort-falsch | OK — die „erst Blutzucker"-Regel wird in erm-01 bewusst korrekt eingeschränkt (gilt nur bei laufendem Kreislauf, NICHT beim Stillstand). Das ist eine gewollte, fachlich richtige Kontextualisierung, kein Widerspruch |
+stepId-Eindeutigkeit (10 unique IDs), patientId (`pat-petrova-kollaps` nur Petrova, 3 Fremdfälle als „ein anderer Bewohner" markiert), Petrova-Stammdaten (68/w/Synkope/Hypertonie), BZ 108 / Verlauf — alle konsistent. „erst Blutzucker"-Regel in erm-01 korrekt auf laufenden Kreislauf eingeschränkt (kein Widerspruch zum Stillstand-Ast).
 
 ## Lens 5 — Semantisch (pflege-validator) ✅
-Distraktor-vs-Empfehlung, Pseudo-Empathie, Interleaving-Fallen — alles korrektiv aufgelöst; nichts Gefährliches als richtig empfohlen.
-
-| Gefährliche Aussage | Vorkommen | semantische Einordnung |
-|---|---|---|
-| Zuckerwasser/Traubenzucker auf Verdacht (erk-01), bei Apoplex (erm-02), im Anfall (erm-03) | nur als **Distraktor** | korrektiv: Aspirationsgefahr; falsche Ursache bei normalem BZ; im Anfall nichts oral. ✅ (neuro F-05/F-11) |
-| Reanimation trotz Reaktion+Atmung (erk-02) | nur Distraktor | korrektiv: schadet, HDM nur bei fehlender Reaktion UND Atmung. ✅ |
-| Schnappatmung als Atmung deuten → SSL (erm-01) | nur Distraktor | korrektiv: klassische Fehldeutung, ist Stillstand → reanimieren. ✅ (reanimation F-02) |
-| „erst Blutzucker" beim Stillstand (erm-01) | nur Distraktor | korrektiv: BZ-Regel gilt nur bei laufendem Kreislauf; Reanimation hat Vorrang. ✅ — sauber aufgelöste Interleaving-Falle |
-| Beißkeil/Festhalten beim Krampf (erm-03) | nur Distraktor | korrektiv: obsolet, verletzt (Zahn/Weichteile/Frakturen). ✅ (neuro F-11) |
-| Schlaganfall-Alarm auf Verdacht (erk-01, ala-01) | nur Distraktor | korrektiv: erst Grundcheck/Differenzierung; keine bleibenden Ausfälle → kein Alarm auf Verdacht. ✅ |
-| Bagatellisieren der Synkope („wird schon wieder", „erledigt", „nur der Kreislauf") | nur Distraktor (erk-02, ala-01, ueb-01) | korrektiv: aktiv sichern/messen/abklären, kardiale Synkope gefährlich. ✅ — die Situation lehrt aktiv GEGEN Bagatellisierung |
-
-**Algorithmus-Urteil:** Der Interleaving-Kern stimmt fachlich. (1) Universeller Erstblick „Reaktion? / normale Atmung?" → drei Wege (Stillstand→reanimieren; bewusstlos+atmet→SSL; reagiert→differenzieren) entspricht ABCDE/ERC. (2) „Kreislauf da → zuerst Blutzucker" ist der korrekte, oft vergessene erste Handgriff (Hypoglykämie imitiert alles). (3) Leitzeichen Synkope/Apoplex/Krampfanfall/Delir korrekt getrennt. Kein Pseudo-Empathie-/Kommunikationsmodell-Fehler; Reflexions-`systemPrompt` bewertet exakt die richtigen Kriterien.
+Distraktor-vs-Empfehlung sauber: Zuckerwasser/Traubenzucker, Reanimation trotz Reaktion, Schnappatmung→SSL, „erst Blutzucker" beim Stillstand, Beißkeil/Festhalten, Schlaganfall-Alarm auf Verdacht, Synkope-Bagatellisierung — **alle nur als korrektiv aufgelöste Distraktoren**. Interleaving-Algorithmus fachlich korrekt (Erstblick → drei Wege; Kreislauf da → erst Blutzucker; Leitzeichen Synkope/Apoplex/Krampfanfall/Delir getrennt).
 
 ---
 
-## Befund N1 (NIEDRIG · informativ — Grounding-Nachverfolgbarkeit)
+## N1 — NIEDRIG (informativ, unverändert aus Erst-Prüfung)
+`erk-02b` (Tab 2) Spektrum-Zeile „Erregt/verwirrt, evtl. Fieber → an Delir denken": fachlich korrekt + verbatim gegroundet in `psychische-akutsituationen.md` F-01/F-08, aber nicht so lückenlos im Datenmodell nachverfolgbar wie die anderen Differentiale (`themenSekundaer` listet nur `["notfallassessment"]`, kein dedizierter Phase-3-Fall). Traceability-Hinweis, kein Faktenfehler. **Fix (optional):** `themenSekundaer` um `"psychische-akutsituationen"` erweitern (Metadaten, kein Step-Code).
 
-**Ort:** `ce06-petrova-erk-02b-differenzieren` (Tab 2), Spektrum-Zeile „Erregt/verwirrt, evtl. Fieber → an Delir denken" + zugehöriger Kerntext-Absatz („wenn jemand erregt und verwirrt ist, womöglich mit Fieber … körperliche Ursache … zuerst auf deine eigene Sicherheit").
-
-**Befund:** Der Sub-Claim ist fachlich **korrekt** und **verbatim gegroundet** in `psychische-akutsituationen.md` F-01 („Akute Erregung kann organisch sein — Delir/Fieber ausschließen … Vitalzeichen, Temperatur, SpO2, Blutzucker") und F-08 („Eigenschutz zuerst"). Er geht jedoch über die vier zitierten `kernfaktId` des Tabs hinaus (alle neuro: F-01/F-08/F-10/F-13 — Achtung: „F-08" ist hier der **neuro**-Apoplex-Fakt, nicht der psychische Eigenschutz-Fakt), `themenSekundaer` listet nur `["notfallassessment"]`, und — anders als bei den drei anderen Differentialen — gibt es **keinen dedizierten Phase-3-Fall** und keine Wiederbegegnung für „Delir/organische Erregung". Damit ist dieser eine Sub-Claim im Datenmodell nicht so lückenlos nachverfolgbar wie die übrigen.
-
-**Severity-Begründung:** NIEDRIG, nicht blockierend — es ist ein Traceability-/Vollständigkeits-Hinweis, KEIN Faktenfehler und KEINE gefährliche Empfehlung. `step-grounding-check` bleibt zu Recht grün (alle zitierten kernfaktId existieren).
-
-**Beleg:** `psychische-akutsituationen.md` F-01 (PH 2019, Kap. 12.3/Fieber) + F-08 (PH 2019, Kap. 16).
-
-**Fix (optional, Gründerin-Entscheid):** In `erk-02b` `inlineWissen.themenSekundaer` um `"psychische-akutsituationen"` erweitern (analog zu Tab 1, das `"reanimation-bls"` für den HKS-Ast führt). Damit wäre die Delir-Zeile ebenso explizit nachverfolgbar wie Schnappatmung/HKS in Tab 1. Alternativ: Delir-Zeile als reinen Awareness-Hinweis belassen (sie trainiert „nicht vorschnell psychisch") — dann genügt der themenSekundaer-Eintrag zur Dokumentation der Quelle. Kein Eingriff in Step-Code nötig, nur Metadaten.
-
-**Optionale Mini-Notiz (kein Befund):** `ce06-petrova-ala-01` zitiert für „kardiale Synkope gefährlich" `kernfaktId:["F-13"]`; der Claim ist präziser in neuro **F-02** belegt (verbatim „kardiale Synkopen … sind gefährlich und müssen abgeklärt werden"). F-02 liegt im selben Kernfakt und die `quellen`-Zeile nennt Kap. 21.2.3 korrekt — daher voll gegroundet, nur die kernfaktId-Zuordnung könnte um F-02 ergänzt werden. Keine Aktion erforderlich.
+## N2 — NIEDRIG (NEU, informativ — Wortlaut-Harmonisierung Krampfanfall)
+Nach der `erm-03`-Präzisierung („unverzüglich den Arzt rufen") tragen die vorgelagerte **Tab-2-Spektrumzeile** (Z.252) und zwei Distraktor-Feedbacks (Z.514/516) weiterhin die ältere, schwächere Formulierung „bei langem Anfall Arzt". **Kein Widerspruch im Handeln** (beide lenken zum Arzt; erm-03 ist präziser/aktueller). **Fix (optional, Gründerin-Entscheid):** Tab-2-Spektrum + Feedbacks an „unverzüglich Arzt; bei >5 Min Status" angleichen, damit Wissens-Tab und Anwendungs-Step denselben aktuellen Stand (I care 2025 / F-11) sprechen. Rein sprachlich, kein Faktenfehler.
 
 ---
 
 ## Beschaffung
-Keine offenen Belege — alle Aussagen sind durch bestehende, verifiziert-verbatim Kernfakten (notfallassessment · reanimation-bls · neurologische-akutsituationen · psychische-akutsituationen) gedeckt. Kein neuer Kernfakt nötig, keine externe Quelle zu beschaffen.
+Keine offenen Belege — alle Aussagen (inkl. beider 2025-Ergänzungen) sind durch bestehende, verbatim verifizierte Kernfakten gedeckt (notfallassessment · reanimation-bls F-03/2025 · neurologische-akutsituationen F-11/2025 · psychische-akutsituationen). Kein neuer Kernfakt, keine externe Quelle zu beschaffen.
 
 ## Fazit
-**PASS.** Der Differenzierungs-Capstone ist fachlich korrekt, das Interleaving (Erstblick → erst Blutzucker → differenzieren) stimmt, alle Falsch-Optionen sind korrektiv aufgelöst, nichts Gefährliches wird empfohlen, Zahlen (BZ 108) und Patient-Daten sind konsistent. Einzige Anmerkung: N1 (NIEDRIG) — Grounding-Nachverfolgbarkeit der Delir-Spektrumzeile via themenSekundaer verbessern. Gründerin bleibt Backstop.
+**PASS.** Beide 2025-Ergänzungen sind korrekt, verbatim gegroundet und konsistent (Karotispuls zum Wagner-Fix, unverzüglich-Arzt zu F-11). Die Karotispuls-Zeile führt keine CPR-Verzögerung ein. Zwei nicht-blockierende NIEDRIG-Anmerkungen (N1 Delir-Traceability, N2 Krampfanfall-Wortlaut-Harmonisierung) für den Gründerin-Backstop.

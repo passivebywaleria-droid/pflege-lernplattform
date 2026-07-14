@@ -117,7 +117,9 @@ Im Anfall wird der Patient vor Verletzungen geschützt (scharfkantige Gegenstän
 - Zitat: "scharfkantige Gegenstände aus der"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Gummikeils o. Ä. zwischen die Zähne"
-- Primärquelle: (Pflege heute 2019, Kap. 37.8.2)
+- Quelle: `icare-pflege-3aufl-volltext/icare-pflege-3aufl.txt`
+- Zitat: "unverzüglich Arzt rufen, Betroffenen nicht alleine lassen, vor Verletzung schützen"
+- Primärquelle: (I care Pflege 2025, Kap. Epilepsie/Anfall; Pflege heute 2019, Kap. 37.8.2)
 
 ### F-12: Status epilepticus — lebensbedrohlicher Notfall (Handlungsschwelle 5 Min)
 Ein sehr langer Anfall oder eine Serie von Anfällen ohne zwischenzeitliche Erholung ist ein lebensbedrohlicher Status epilepticus und muss immer medikamentös unterbrochen werden. Als Handlungsschwelle gilt beim Erwachsenen ein generalisierter (tonisch-klonischer) Anfall, der länger als 5 Minuten dauert. Dann Notruf/Arzt und Notfallmaterial.
