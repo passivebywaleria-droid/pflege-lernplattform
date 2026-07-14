@@ -20,7 +20,7 @@ Zwei Fragen entscheiden alles, beide beantwortest du in Sekunden: Wacht er auf, 
 
 Der Haken liegt genau bei der Atmung: Kurz nachdem der Kreislauf steht, ringt der Körper oft noch nach einzelnen, ruckartigen Atemzügen mit langen Pausen — der Schnappatmung. Sie wirkt wie ein letztes bisschen Leben, ist aber das Gegenteil: ein Zeichen, dass der Kreislauf bereits steht. Wer sie für Atmung hält, verliert die wichtigsten Minuten.
 
-Und der Puls? Lass ihn. Nach ihm zu tasten führt selbst geübte Hände oft in die Irre und verschenkt Zeit, die das Gehirn nicht hat. Dieses Erkennen ist Glied 1 der Rettungskette: Erkennen, Alarmieren, Drücken, Defibrillator.
+Und der Puls? Als erfahrene Pflegekraft darfst du ihn tasten — aber nur zeitgleich zur Atemkontrolle und höchstens zehn Sekunden lang, denn selbst geübte Hände liegen dabei oft daneben. Verschenk dafür keine extra Zeit: Bleiben Reaktion und normale Atmung aus, wird sofort reanimiert. Dieses Erkennen ist Glied 1 der Rettungskette: Erkennen, Alarmieren, Drücken, Defibrillator.
 
 **Faustregel:** Keine Reaktion und kein ruhiges, gleichmäßiges Atmen — mehr brauchst du nicht, um zu handeln. Schnappen ist kein Atmen.
 
@@ -151,13 +151,13 @@ Bei Herrn Wagner war nichts davon gegeben. Also galt das Einfachste und Wichtigs
 
 ### Die Unterzuckerung, die alles imitiert
 **KB I.4 · Bloom 2 · Kernfakten F-03, F-04, F-05 · Phase „erkennen"**
-_Quellen: Pflege heute 2019, Kap. 26.6.5 (Hypoglykämie)_
+_Quellen: I care Pflege 2025, Kap. Hypoglykämie (Definition < 50 mg/dl; Symptome/Behandlung schon < 70 mg/dl) · Pflege heute 2019, Kap. 26.6.5_
 
 **Aufhänger:** Ein Stich, ein Wert: 48. Warum war genau dieser eine Handgriff bei Herrn Ríos wichtiger als jeder andere — und was macht die Unterzuckerung so tückisch?
 
 **Kerntext:**
 
-Eine Hypoglykämie ist ein Blutzucker unter etwa 50 mg/dl. Beim Diabetiker entsteht sie klassisch aus einer Kombination: die gewohnte Insulindosis, aber zu wenig gegessen (oder mehr verbraucht, etwa durch Belastung).
+Eine Hypoglykämie ist definitionsgemäß ein Blutzucker unter etwa 50 mg/dl — erste Symptome und Behandlungsbedarf können aber schon bei Werten unter 70 mg/dl auftreten. Beim Diabetiker entsteht sie klassisch aus einer Kombination: die gewohnte Insulindosis, aber zu wenig gegessen (oder mehr verbraucht, etwa durch Belastung).
 
 Das Gehirn lebt von Glukose. Fehlt sie, kommt es zu Unruhe, Schwitzen, Verwirrtheit, bis hin zu einseitigen Ausfällen. Und genau das ist die Falle: Die Unterzuckerung kann einen Schlaganfall täuschend imitieren. Deshalb ist der Blutzucker-Stich der erste — und oft vergessene — Schritt bei jeder unklaren neurologischen Akutsituation. Er klärt in Sekunden, ob eine sofort behebbare Ursache dahintersteckt.
 
@@ -840,7 +840,7 @@ Und zuletzt an die Wärme denken: Nach dem kurzen Kühlen deckst du Frau Sander 
 
 ### Vier verwandte Notfälle — und die je andere erste Reaktion
 **KB I.4 · Bloom 2 · Kernfakten F-08, F-09, F-10, F-11, F-12, F-13 · Phase „reflektieren"**
-_Quellen: Pflege heute 2019, Kap. 14.6.4/14.6.5 (Verätzung), Kap. 5.4/5.5 (Hypo-/Hyperthermie)_
+_Quellen: I care Pflege 2025 (Verätzung Verdauungstrakt: „Leitungswasser oder Tee“, keine Milch) · Pflege heute 2019, Kap. 14.6.4/14.6.5 (Verätzung), Kap. 5.4/5.5 (Hypo-/Hyperthermie)_
 
 **Aufhänger:** Bei Frau Sander war es kochendes Wasser — Hitze auf der Haut. Aber dieselbe Familie von Notfällen hat vier Gesichter, und jedes braucht eine andere erste Reaktion. Erkennst du sie auseinander?
 
@@ -852,7 +852,7 @@ Hitze auf der Haut (Verbrennung/Verbrühung): kurz mit Wasser kühlen, steril ab
 
 Ätzendes auf der Haut (Verätzung durch Säure oder Lauge): zuerst alle benetzten Kleider entfernen, dann den Bereich lange und gründlich mit fließendem Wasser abspülen. Schütze dabei deine eigenen Finger vor dem Ätzstoff.
 
-Ätzendes geschluckt (Verätzung von Mund und Speiseröhre): gib kleine Schlucke Wasser, Tee oder Milch zu trinken — etwa 200 Milliliter, nicht mehr, sonst droht Erbrechen. Und der wichtigste Satz überhaupt: niemals Erbrechen auslösen, denn das würde die Speiseröhre ein zweites Mal verätzen.
+Ätzendes geschluckt (Verätzung von Mund und Speiseröhre): gib kleine Schlucke Wasser oder Tee zu trinken (keine Milch) — etwa 200 Milliliter, nicht mehr, sonst droht Erbrechen. Und der wichtigste Satz überhaupt: niemals Erbrechen auslösen, denn das würde die Speiseröhre ein zweites Mal verätzen.
 
 Überhitzt (Hitzschlag, Sonnenstich, Hitzekollaps): den Menschen raus aus der Hitze an einen kühlen Ort bringen, Kleidung öffnen, feuchte Tücher auflegen, kühle Getränke anbieten, passend lagern (bei Bewusstlosigkeit stabile Seitenlage) und die Vitalzeichen überwachen.
 
@@ -863,7 +863,7 @@ Unterkühlt (Hypothermie, unter 35 Grad, ab unter 30 Grad lebensbedrohlich): lan
 **Spektrum:**
 
 - **Säure/Lauge auf der Haut** (Verätzung Haut): Benetzte Kleider entfernen, dann ausgiebig mit fließendem Wasser spülen — die eigenen Finger vor dem Ätzstoff schützen.
-- **Ätzendes geschluckt** (Verätzung Mund/Speiseröhre): Kleine Schlucke Wasser/Tee/Milch (ca. 200 ml, nicht mehr). NIEMALS Erbrechen auslösen — das verätzt die Speiseröhre erneut.
+- **Ätzendes geschluckt** (Verätzung Mund/Speiseröhre): Kleine Schlucke Wasser oder Tee (ca. 200 ml, nicht mehr; keine Milch). NIEMALS Erbrechen auslösen — das verätzt die Speiseröhre erneut.
 - **Hitzschlag / Sonnenstich** (überhitzt): Aus der Hitze in eine kühle Umgebung, Kleidung öffnen, feuchte Tücher, kühle Getränke, lagern, Vitalzeichen überwachen.
 - **Unterkühlung** (Hypothermie): Langsam passiv wärmen (Decken, warme Getränke). KEINE heiße Wärmflasche/Wärmestrahler — sie senken den Blutdruck.
 

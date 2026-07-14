@@ -86,7 +86,7 @@ export const CE06_SIT_RIOS_ERKENNEN: SituationsPhase = {
       stepType: "inlineWissen",
       bloomLevel: 2,
       kompetenzbereich: "I.4",
-      quellen: ["Pflege heute 2019, Kap. 26.6.5 (Hypoglykämie)"],
+      quellen: ["I care Pflege 2025, Kap. Hypoglykämie (Definition < 50 mg/dl; Symptome/Behandlung schon < 70 mg/dl)", "Pflege heute 2019, Kap. 26.6.5"],
       track: "basis",
       modus: "entdecker",
       lernziel: "ce06-rios-hypoglykaemie-wissen",
@@ -106,7 +106,7 @@ export const CE06_SIT_RIOS_ERKENNEN: SituationsPhase = {
         storyAufhaenger:
           "Ein Stich, ein Wert: 48. Warum war genau dieser eine Handgriff bei Herrn Ríos wichtiger als jeder andere — und was macht die Unterzuckerung so tückisch?",
         kerntext:
-          "Eine Hypoglykämie ist ein Blutzucker unter etwa 50 mg/dl. Beim Diabetiker entsteht sie klassisch aus einer Kombination: die gewohnte Insulindosis, aber zu wenig gegessen (oder mehr verbraucht, etwa durch Belastung).\n\nDas Gehirn lebt von Glukose. Fehlt sie, kommt es zu Unruhe, Schwitzen, Verwirrtheit, bis hin zu einseitigen Ausfällen. Und genau das ist die Falle: Die Unterzuckerung kann einen Schlaganfall täuschend imitieren. Deshalb ist der Blutzucker-Stich der erste — und oft vergessene — Schritt bei jeder unklaren neurologischen Akutsituation. Er klärt in Sekunden, ob eine sofort behebbare Ursache dahintersteckt.\n\nWie behandelt wird, hängt vom Bewusstsein ab. Wer wach ist und sicher schlucken kann, bekommt schnelle Kohlenhydrate zu essen oder trinken (etwa Traubenzucker). Wer bewusstseinsgetrübt ist, bekommt NICHTS oral — Aspirationsgefahr. Dann ist Glukose über die Vene die Behandlung, und die ordnet der Arzt an und verabreicht sie.",
+          "Eine Hypoglykämie ist definitionsgemäß ein Blutzucker unter etwa 50 mg/dl — erste Symptome und Behandlungsbedarf können aber schon bei Werten unter 70 mg/dl auftreten. Beim Diabetiker entsteht sie klassisch aus einer Kombination: die gewohnte Insulindosis, aber zu wenig gegessen (oder mehr verbraucht, etwa durch Belastung).\n\nDas Gehirn lebt von Glukose. Fehlt sie, kommt es zu Unruhe, Schwitzen, Verwirrtheit, bis hin zu einseitigen Ausfällen. Und genau das ist die Falle: Die Unterzuckerung kann einen Schlaganfall täuschend imitieren. Deshalb ist der Blutzucker-Stich der erste — und oft vergessene — Schritt bei jeder unklaren neurologischen Akutsituation. Er klärt in Sekunden, ob eine sofort behebbare Ursache dahintersteckt.\n\nWie behandelt wird, hängt vom Bewusstsein ab. Wer wach ist und sicher schlucken kann, bekommt schnelle Kohlenhydrate zu essen oder trinken (etwa Traubenzucker). Wer bewusstseinsgetrübt ist, bekommt NICHTS oral — Aspirationsgefahr. Dann ist Glukose über die Vene die Behandlung, und die ordnet der Arzt an und verabreicht sie.",
         faustregel:
           "Insulin plus zu wenig gegessen = Unterzucker im Verdacht. Erst Blutzucker messen. Wach → etwas Süßes; benommen → nichts oral, Glukose i.v. durch den Arzt.",
         spektrum: [

@@ -31,13 +31,17 @@ Die vasovagale Synkope ist die häufigste Synkope und meist harmlos. Kardiale Sy
 - Zitat: "Vasovagale Synkope ist die häufigste"
 - Primärquelle: (Pflege heute 2019, Kap. 21.2.3)
 
-### F-03: Hypoglykämie — Blutzucker unter 50 mg/dl
-Eine Hypoglykämie (Unterzuckerung) liegt bei einem Blutzucker unter 50 mg/dl (2,8 mmol/l) vor. Bei milden Formen sind vegetative Symptome und Eigentherapie möglich; bei schweren Formen kommt es zu Bewusstseinsstörung und neurologischen Ausfällen, Fremdhilfe ist nötig.
+### F-03: Hypoglykämie — Definition unter 50 mg/dl, Symptome/Handeln schon unter 70 mg/dl
+Eine Hypoglykämie (Unterzuckerung) liegt definitionsgemäß bei einem Blutzucker unter 50 mg/dl (2,8 mmol/l) vor. Symptome und Behandlungsbedarf können jedoch bereits bei Werten unter 70 mg/dl (3,9 mmol/l) auftreten. Bei milden Formen sind vegetative Symptome und Eigentherapie möglich; bei schweren Formen kommt es zu Bewusstseinsstörung und neurologischen Ausfällen, Fremdhilfe ist nötig.
 
 **Beleg:**
+- Quelle: `icare-pflege-3aufl-volltext/icare-pflege-3aufl.txt`
+- Zitat: "Man spricht von einer Hypoglykämie, wenn der Blutzuckerspiegel bei Werten"
+- Quelle: `icare-pflege-3aufl-volltext/icare-pflege-3aufl.txt`
+- Zitat: "einer Hypoglykämie können allerdings bereits bei Werten"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Blutzucker unter 50 mg/dl"
-- Primärquelle: (Pflege heute 2019, Kap. 26.6.5)
+- Primärquelle: (I care Pflege 2025, Kap. Diabetes mellitus/Hypoglykämie; Pflege heute 2019, Kap. 26.6.5)
 
 ### F-04: Hypoglykämie imitiert einen Schlaganfall — Blutzucker sofort messen
 Der Glukosemangel im Gehirn kann psychische Veränderungen, Bewusstseinstrübung bis zur Bewusstlosigkeit, neurologische Ausfälle (z.B. Halbseitenlähmung, Sprachstörung) und Krampfanfälle auslösen — also einen Schlaganfall imitieren. Deshalb gehört bei jeder unklaren neurologischen Akutsituation die sofortige Blutzuckermessung zwingend dazu.

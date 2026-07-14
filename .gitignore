@@ -81,3 +81,8 @@ public/swe-worker-*.js
 recherche/leitlinien/*.pdf
 specs/curriculum/raw/
 rec
+
+# Lokaler Recherche-Korpus (Urheberrecht, groß) — nie committen
+recherche/_neu/
+recherche/*-volltext/
+*.epub

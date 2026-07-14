@@ -26,13 +26,17 @@ Vereinzelte, langsame oder „schnappende" (agonale) Atemzüge sind kein Zeichen
 - Zitat: "Atemzüge sind nicht normal, auch hier muss ein Herz-Kreislauf-Stillstand angenommen werden"
 - Primärquelle: (Pflege heute 2019, Kap. 14.3.1)
 
-### F-03: Keine routinemäßige Pulskontrolle vor Reanimationsbeginn
-Die Pulskontrolle vor Beginn der Wiederbelebung wird auch für professionelle Helfer nicht mehr generell empfohlen — sie ist fehleranfällig und kostet wertvolle Zeit. Nur Erfahrene tasten den Karotispuls, und das höchstens gleichzeitig mit der Suche nach anderen Lebenszeichen (max. 10 Sek.).
+### F-03: Pulskontrolle nur zeitgleich zur Atemkontrolle (max. 10 s), keine Zeit verlieren
+Eine routinemäßige Pulskontrolle, die den Reanimationsbeginn verzögert, wird nicht empfohlen — sie ist fehleranfällig und darf keine zusätzliche Zeit kosten. Ausreichend erfahrenes Fachpersonal soll die Pulskontrolle an der Arteria carotis jedoch zeitgleich mit der Atemkontrolle durchführen (höchstens 10 Sekunden). Bei fehlender normaler Atmung oder im Zweifel wird sofort mit der Wiederbelebung begonnen.
 
 **Beleg:**
+- Quelle: `icare-pflege-3aufl-volltext/icare-pflege-3aufl.txt`
+- Zitat: "soll zeitgleich mit der Atemkontrolle eine Pulskontrolle an der Arteria carotis durchführen"
+- Quelle: `icare-pflege-3aufl-volltext/icare-pflege-3aufl.txt`
+- Zitat: "max. 10 Sekunden versuchen, den Karotispuls zu"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Eine Prüfung des Kreislaufs vor Beginn der Wiederbelebung wird auch für professionelle Helfer nicht mehr generell empfohlen"
-- Primärquelle: (Pflege heute 2019, Kap. 14.3.1; ERC 2021)
+- Primärquelle: (I care Pflege 2025, Kap. 23 Reanimation; Pflege heute 2019, Kap. 14.3.1; ERC 2021)
 
 ### F-04: Notruf/Notfallteam sofort nach Erkennen (Phone first)
 Nach dem Erkennen des Herz-Kreislauf-Stillstands wird sofort der Rettungsdienst bzw. im Krankenhaus das Notfallteam alarmiert. Der Notruf hat Priorität vor allen weiteren Maßnahmen.

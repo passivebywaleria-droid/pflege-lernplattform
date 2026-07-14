@@ -550,7 +550,7 @@ export const CE06_SIT_SANDER_REFLEKTIEREN: SituationsPhase = {
       stepType: "inlineWissen",
       bloomLevel: 2,
       kompetenzbereich: "I.4",
-      quellen: ["Pflege heute 2019, Kap. 14.6.4/14.6.5 (Verätzung), Kap. 5.4/5.5 (Hypo-/Hyperthermie)"],
+      quellen: ["I care Pflege 2025 (Verätzung Verdauungstrakt: „Leitungswasser oder Tee“, keine Milch)", "Pflege heute 2019, Kap. 14.6.4/14.6.5 (Verätzung), Kap. 5.4/5.5 (Hypo-/Hyperthermie)"],
       track: "basis",
       modus: "entdecker",
       lernziel: "ce06-sander-thermisch-chemisch-spektrum",
@@ -570,7 +570,7 @@ export const CE06_SIT_SANDER_REFLEKTIEREN: SituationsPhase = {
         storyAufhaenger:
           "Bei Frau Sander war es kochendes Wasser — Hitze auf der Haut. Aber dieselbe Familie von Notfällen hat vier Gesichter, und jedes braucht eine andere erste Reaktion. Erkennst du sie auseinander?",
         kerntext:
-          "Vier verwandte Bilder, vier verschiedene erste Handgriffe:\n\nHitze auf der Haut (Verbrennung/Verbrühung): kurz mit Wasser kühlen, steril abdecken, nichts draufschmieren.\n\nÄtzendes auf der Haut (Verätzung durch Säure oder Lauge): zuerst alle benetzten Kleider entfernen, dann den Bereich lange und gründlich mit fließendem Wasser abspülen. Schütze dabei deine eigenen Finger vor dem Ätzstoff.\n\nÄtzendes geschluckt (Verätzung von Mund und Speiseröhre): gib kleine Schlucke Wasser, Tee oder Milch zu trinken — etwa 200 Milliliter, nicht mehr, sonst droht Erbrechen. Und der wichtigste Satz überhaupt: niemals Erbrechen auslösen, denn das würde die Speiseröhre ein zweites Mal verätzen.\n\nÜberhitzt (Hitzschlag, Sonnenstich, Hitzekollaps): den Menschen raus aus der Hitze an einen kühlen Ort bringen, Kleidung öffnen, feuchte Tücher auflegen, kühle Getränke anbieten, passend lagern (bei Bewusstlosigkeit stabile Seitenlage) und die Vitalzeichen überwachen.\n\nUnterkühlt (Hypothermie, unter 35 Grad, ab unter 30 Grad lebensbedrohlich): langsam und passiv wärmen — Decken, warme Getränke, warmer Raum. Und ausgerechnet hier der häufigste Fehler: keine heiße Wärmflasche und keinen Wärmestrahler direkt auf die Haut. Das weitet die oberflächlichen Gefäße und lässt den Blutdruck abfallen.",
+          "Vier verwandte Bilder, vier verschiedene erste Handgriffe:\n\nHitze auf der Haut (Verbrennung/Verbrühung): kurz mit Wasser kühlen, steril abdecken, nichts draufschmieren.\n\nÄtzendes auf der Haut (Verätzung durch Säure oder Lauge): zuerst alle benetzten Kleider entfernen, dann den Bereich lange und gründlich mit fließendem Wasser abspülen. Schütze dabei deine eigenen Finger vor dem Ätzstoff.\n\nÄtzendes geschluckt (Verätzung von Mund und Speiseröhre): gib kleine Schlucke Wasser oder Tee zu trinken (keine Milch) — etwa 200 Milliliter, nicht mehr, sonst droht Erbrechen. Und der wichtigste Satz überhaupt: niemals Erbrechen auslösen, denn das würde die Speiseröhre ein zweites Mal verätzen.\n\nÜberhitzt (Hitzschlag, Sonnenstich, Hitzekollaps): den Menschen raus aus der Hitze an einen kühlen Ort bringen, Kleidung öffnen, feuchte Tücher auflegen, kühle Getränke anbieten, passend lagern (bei Bewusstlosigkeit stabile Seitenlage) und die Vitalzeichen überwachen.\n\nUnterkühlt (Hypothermie, unter 35 Grad, ab unter 30 Grad lebensbedrohlich): langsam und passiv wärmen — Decken, warme Getränke, warmer Raum. Und ausgerechnet hier der häufigste Fehler: keine heiße Wärmflasche und keinen Wärmestrahler direkt auf die Haut. Das weitet die oberflächlichen Gefäße und lässt den Blutdruck abfallen.",
         faustregel:
           "Hitze auf der Haut → kühlen; Ätzendes auf der Haut → Kleider weg + fließend spülen; Ätzendes geschluckt → kleine Schlucke, NIE Erbrechen; überhitzt → aus der Hitze + kühlen; unterkühlt → langsam passiv wärmen, keine Wärmflasche.",
         spektrum: [
@@ -584,7 +584,7 @@ export const CE06_SIT_SANDER_REFLEKTIEREN: SituationsPhase = {
             patientName: "Ätzendes geschluckt",
             hauptfaktor: "Verätzung Mund/Speiseröhre",
             kurzbeschreibung:
-              "Kleine Schlucke Wasser/Tee/Milch (ca. 200 ml, nicht mehr). NIEMALS Erbrechen auslösen — das verätzt die Speiseröhre erneut.",
+              "Kleine Schlucke Wasser oder Tee (ca. 200 ml, nicht mehr; keine Milch). NIEMALS Erbrechen auslösen — das verätzt die Speiseröhre erneut.",
           },
           {
             patientName: "Hitzschlag / Sonnenstich",
@@ -614,7 +614,7 @@ export const CE06_SIT_SANDER_REFLEKTIEREN: SituationsPhase = {
       stepType: "mc",
       bloomLevel: 4,
       kompetenzbereich: "I.4",
-      quellen: ["Pflege heute 2019, Kap. 14.6.5 (Verätzung Mund/Speiseröhre: schluckweise, nie Erbrechen)"],
+      quellen: ["I care Pflege 2025 (Verätzung: schluckweise Wasser/Tee, keine Milch)", "Pflege heute 2019, Kap. 14.6.5 (Verätzung Mund/Speiseröhre: nie Erbrechen)"],
       track: "basis",
       modus: "challenge",
       lernziel: "ce06-sander-veraetzung-transfer",
@@ -635,18 +635,18 @@ export const CE06_SIT_SANDER_REFLEKTIEREN: SituationsPhase = {
         mcVariant: "fallstrick",
         optionen: [
           {
-            text: "Ich gebe ihm kleine Schlucke Wasser oder Milch (etwa 200 ml, nicht mehr) zu trinken, löse auf KEINEN Fall Erbrechen aus und alarmiere sofort Arzt/Giftnotruf.",
+            text: "Ich gebe ihm kleine Schlucke Wasser oder Tee (etwa 200 ml, nicht mehr) zu trinken, löse auf KEINEN Fall Erbrechen aus und alarmiere sofort Arzt/Giftnotruf.",
             isCorrect: true,
             explanation:
-              "Richtig. Bei Verätzung von Mund und Speiseröhre gibt man in kleinen Schlucken etwas zu trinken (Wasser, Tee, Milch), etwa 200 ml — nicht mehr, sonst droht Erbrechen. Erbrechen wird NIEMALS ausgelöst: Die ätzende Flüssigkeit würde die Schleimhäute, vor allem die Speiseröhre, ein zweites Mal schädigen. Parallel sofort ärztliche Hilfe/Giftnotruf.",
+              "Richtig. Bei Verätzung von Mund und Speiseröhre gibt man in kleinen Schlucken etwas zu trinken (Leitungswasser oder Tee, keine Milch), etwa 200 ml — nicht mehr, sonst droht Erbrechen. Erbrechen wird NIEMALS ausgelöst: Die ätzende Flüssigkeit würde die Schleimhäute, vor allem die Speiseröhre, ein zweites Mal schädigen. Parallel sofort ärztliche Hilfe/Giftnotruf.",
             explanationB1:
-              "Richtig. Kleine Schlucke Wasser oder Milch (ca. 200 ml, nicht mehr). Niemals Erbrechen auslösen — das verätzt die Speiseröhre noch einmal. Sofort Arzt/Giftnotruf.",
+              "Richtig. Kleine Schlucke Wasser oder Tee (ca. 200 ml, nicht mehr; keine Milch). Niemals Erbrechen auslösen — das verätzt die Speiseröhre noch einmal. Sofort Arzt/Giftnotruf.",
           },
           {
             text: "Ich stecke ihm den Finger in den Hals, damit er das Gift schnell wieder auswürgt.",
             isCorrect: false,
             explanation:
-              "Gefährlich falsch. Bei einer Verätzung darf niemals Erbrechen ausgelöst werden — die ätzende Substanz läuft dann ein zweites Mal durch die Speiseröhre und verschlimmert die Schädigung massiv. Richtig ist: kleine Schlucke Wasser/Milch, kein Erbrechen, sofort Arzt/Giftnotruf.",
+              "Gefährlich falsch. Bei einer Verätzung darf niemals Erbrechen ausgelöst werden — die ätzende Substanz läuft dann ein zweites Mal durch die Speiseröhre und verschlimmert die Schädigung massiv. Richtig ist: kleine Schlucke Wasser oder Tee, kein Erbrechen, sofort Arzt/Giftnotruf.",
             explanationB1:
               "Gefährlich falsch. Bei Verätzung niemals Erbrechen auslösen — das Gift verätzt die Speiseröhre dann noch einmal. Richtig: kleine Schlucke, kein Erbrechen, sofort Arzt.",
           },

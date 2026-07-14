@@ -103,15 +103,15 @@ Bei Verätzungen der Haut (z. B. durch Chemikalien) werden alle benetzten Kleide
 - Zitat: "wird der Schadstoff abgetupft"
 - Primärquelle: (Pflege heute 2019, Kap. 14.6.4/14.6.5)
 
-### F-09: Verätzung von Mund/Speiseröhre — schluckweise trinken, NIEMALS Erbrechen auslösen
-Bei Verdacht auf Verätzung von Mund und Speiseröhre gibt man als Erstmaßnahme etwa 200 ml Flüssigkeit (Wasser, Tee, Milch) in kleinen Schlucken zu trinken — nicht mehr, sonst droht Erbrechen. Niemals Erbrechen auslösen: Das würde die Schleimhäute, besonders die Speiseröhre, erneut schädigen.
+### F-09: Verätzung von Mund/Speiseröhre — schluckweise Wasser/Tee (KEINE Milch), NIEMALS Erbrechen auslösen
+Bei Verdacht auf Verätzung des Verdauungstrakts lässt man den Betroffenen in kleinen Schlucken trinken — Leitungswasser oder Tee, **keine Milch** (die neuere Empfehlung hat Milch gestrichen: sie kann die spätere Beurteilung erschweren und die Aufnahme mancher Stoffe fördern). Etwa 200 ml, nicht mehr, sonst droht Erbrechen. Niemals Erbrechen auslösen: Das würde die Schleimhäute, besonders die Speiseröhre, erneut schädigen.
 
 **Beleg:**
-- Quelle: `pflege-heute-volltext/pflege-heute.txt`
-- Zitat: "in kleinen Schlucken zu"
+- Quelle: `icare-pflege-3aufl-volltext/icare-pflege-3aufl.txt`
+- Zitat: "Bei Verätzungen des Verdauungstrakts den Betroffenen in kleinen Schlucken trinken lassen"
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Niemals Erbrechen auslösen"
-- Primärquelle: (Pflege heute 2019, Kap. 14.6.5)
+- Primärquelle: (I care Pflege 2025, Kap. Vergiftungen/Verätzungen — „Leitungswasser oder Tee“, keine Milch; DRK/Giftnotruf; Pflege heute 2019, Kap. 14.6.5)
 
 ### F-10: Hitzenotfälle — Hitzschlag, Sonnenstich, Hitzekollaps
 Hyperthermie durch Hitzeeinwirkung tritt als Hitzekollaps, Hitzschlag oder Sonnenstich auf. Der Hitzschlag entsteht, wenn der Körper nicht mehr in der Lage ist, Wärme abzugeben (Bewusstseinseintrübung bis Bewusstlosigkeit durch Hirnschwellung). Der Sonnenstich entsteht durch lang andauernde direkte Sonneneinwirkung auf Kopf und Nacken (heißer, hochroter Kopf, Nackensteifigkeit). Der Hitzekollaps (Hitzeerschöpfung) entsteht durch einen Flüssigkeits- und/oder Mineralienverlust (Zeichen eines hypovolämischen Schocks).
